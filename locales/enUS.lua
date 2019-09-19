@@ -1000,6 +1000,7 @@ app.L = {
 		[-112] = select(2,C_Garrison.GetBuildingInfo(42)), 						-- Menagerie
 		[-113] = select(2,C_Garrison.GetBuildingInfo(52)), 						-- Salvage Yard
 		[-114] = select(2,C_Garrison.GetBuildingInfo(95)), 						-- Scribe's Quaters
+		[-116] = select(2,C_Garrison.GetBuildingInfo(94)),						-- Tailoring Emporium
 		[-117] = select(2,C_Garrison.GetBuildingInfo(60)), 						-- The Forge
 		[-118] = select(2,C_Garrison.GetBuildingInfo(90)), 						-- The Tannery
 		[-119] = select(2,C_Garrison.GetBuildingInfo(111)), 					-- Trading Post

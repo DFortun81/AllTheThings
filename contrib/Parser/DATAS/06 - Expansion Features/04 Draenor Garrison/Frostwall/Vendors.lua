@@ -494,47 +494,91 @@ _.ExpansionFeatures =
 				n(95471, {	-- Trader Darakk <Local Supplies>
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(127868),	-- Crusher
-						i(127864),	-- Personal Spotlight
-						i(116667),	-- Rocktusk Battleboar
-						i(116655),	-- Witherhide Cliffstomper
+						i(127868, {	-- Crusher (PET!)
+							["cost"] = 10000000,	-- 1,000g
+						}),
+						i(127864),	-- Personal Spotlight (TOY!)
+						i(116667, {	-- Rocktusk Battleboar (MOUNT!)
+							["cost"] = 100000000,	-- 10,000g
+						}),
+						i(116655, {	-- Witherhide Cliffstomper (MOUNT!)
+							["cost"] = 200000000,	-- 20,000g
+						}),
 					},
 				}),
-				n(91030, {	-- Trixxy Volt - Ore Trader
+				n(91030, {	-- Trixxy Volt <Ore Trader>
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(120945),	-- Primal Spirit
-						i(127725),	-- Recipe: Mighty Steelforged Essence
-						i(127726),	-- Recipe: Mighty Taladite Amplifier
-						i(127727),	-- Recipe: Mighty Truesteel Essence
+						i(120945, {	-- Primal Spirit
+							["cost"] = { { "i", 109118, 5 }, },		-- 5x Blackrock Ore
+						}),
+						i(127725, {	-- Recipe: Mighty Steelforged Essence
+							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
+						}),
+						i(127726, {	-- Recipe: Mighty Taladite Amplifier
+							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
+						}),
+						i(127727, {	-- Recipe: Mighty Truesteel Essence
+							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
+						}),
 						un(2, i(122551)),	-- Recipe: Powerful Taladite Amplifier
-						i(122714),	-- Recipe: Primal Gemcutting
-						i(122705),	-- Recipe: Riddle of Truesteel
-						i(127743),	-- Recipe: Savage Steelforged Essence
-						i(127744),	-- Recipe: Savage Taladite Amplifier
-						i(127745),	-- Recipe: Savage Truesteel Essence
-						i(127729),	-- Schematic: Advanced Muzzlesprocket
-						i(127721),	-- Schematic: Bi-Directional Fizzle Reducer
-						i(127739),	-- Schematic: Infrablue-Blocker Lenses
-						i(122712),	-- Schematic: Primal Welding
-						i(127747),	-- Schematic: Taladite Firing Pin
+						i(122714, {	-- Recipe: Primal Gemcutting
+							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
+						}),
+						i(122705, {	-- Recipe: Riddle of Truesteel
+							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
+						}),
+						i(127743, {	-- Recipe: Savage Steelforged Essence
+							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
+						}),
+						i(127744, {	-- Recipe: Savage Taladite Amplifier
+							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
+						}),
+						i(127745, {	-- Recipe: Savage Truesteel Essence
+							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
+						}),
+						i(127729, {	-- Schematic: Advanced Muzzlesprocket
+							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
+						}),
+						i(127721, {	-- Schematic: Bi-Directional Fizzle Reducer
+							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
+						}),
+						i(127739, {	-- Schematic: Infrablue-Blocker Lenses
+							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
+						}),
+						i(122712, {	-- Schematic: Primal Welding
+							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
+						}),
+						i(127747, {	-- Schematic: Taladite Firing Pin
+							["cost"] = { { "i", 109119, 60 }, },	-- 60x True Iron Ore
+						}),
 					},
 				}),
-				n(91033, {	-- Zeezu - Leather Trader
+				n(91033, {	-- Zeezu <Leather Trader>
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(120945),	-- Primal Spirit
-						i(127722),	-- Recipe: Mighty Burnished Essence
+						i(120945, {	-- Primal Spirit
+							["cost"] = { { "i", 110609, 5 }, },		-- 5x Raw Beast Hide
+						}),
+						i(127722, {	-- Recipe: Mighty Burnished Essence
+							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
+						}),
 						un(2, i(122547)),	-- Recipe: Powerful Burnished Essence
-						i(127740),	-- Recipe: Savage Burnished Essence
-						i(122715),	-- Recipe: Spiritual Leathercraft
+						i(127740, {	-- Recipe: Savage Burnished Essence
+							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
+						}),
+						i(122715, {	-- Recipe: Spiritual Leathercraft
+							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
+						}),
 					},
 				}),
 				n(-104, {	-- Barracks
 					n(79812, {	-- Moz'def
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(122298),	-- Bodyguard Miniaturization Device
+							i(122298, {	-- Bodyguard Miniaturization Device (TOY!)
+								["cost"] = { { "c", 824, 250 }, },	-- 250x Garrison Resources
+							}),
 						},
 					}),
 				}),
@@ -584,29 +628,39 @@ _.ExpansionFeatures =
 					n(85984, {	--  Nat Pagle <Master Fisherman>
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(117397, {	-- Nat's Lucky Coin
-								i(117404),	-- Land Shark
-								--i(117401),	-- Nat's Draenic Fishing Journal [Missing icon - may not need to be in listing]
-								i(117405),	-- Nat's Drinking Hat
-								i(87791),	-- Reins of the Crimson Water Strider
-								i(116825),	-- Savage Fishing Pole [Horde only]
-								i(114919),	-- Sea Calf
-							}),
 							i(168416),	-- Angler's Water Striders
-							i(86596),	-- Nat's Fishing Chair
+							i(117404, {	-- Land Shark (PET!)
+								["cost"] = { { "i", 117397, 50 }, },	-- 50x Nat's Lucky Coin
+							}),
+						--	i(117401),	-- Nat's Draenic Fishing Journal [Missing icon - may not need to be in listing]
+							i(117405, {	-- Nat's Drinking Hat
+								["cost"] = { { "i", 117397, 25 }, },	-- 25x Nat's Lucky Coin
+							}),
+							i(86596),	-- Nat's Fishing Chair (TOY!)
+							i(87791, {	-- Reins of the Crimson Water Strider
+								["cost"] = { { "i", 117397, 100 }, },	-- 100x Nat's Lucky Coin
+							}),
+							i(116825, {	-- Savage Fishing Pole [Horde only]
+								["cost"] = { { "i", 117397, 25 }, },	-- 25x Nat's Lucky Coin
+							}),
+							i(114919, {	-- Sea Calf (PET!)
+								["cost"] = { { "i", 117397, 50 }, },	-- 50x Nat's Lucky Coin
+							}),
 						},
 					}),
 				}),
 				n(-121, {	-- Frostwall Tavern
-					n(87302, {	-- Murg
+					n(87302, {	-- Murg <Cook>
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(119207),
+							i(119207, {	-- Meat Cleaver
+								["cost"] = 50000000,	-- 5,000g
+							}),
 						},
 					}),
 				}),
 				n(-108, { 	-- Gem Boutique
-					n(79832, {	-- Dorogarr
+					n(79832, {	-- Dorogarr <Jewelcrafter>
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(115359, {	-- Draenor Jewelcrafting
@@ -623,27 +677,65 @@ _.ExpansionFeatures =
 									recipe(170700),	-- Taladite Crystal
 								}),
 							}),
-							i(118723, {	-- Secret of Draenor Jewelcrafting
-								i(116096),	-- Recipe: Critical Strike Taladite
-								i(116093),	-- Recipe: Glowing Taladite Pendant
-								i(116090),	-- Recipe: Glowing Taladite Ring
-								i(116102),	-- Recipe: Greater Critical Strike Taladite
-								i(116103),	-- Recipe: Greater Haste Taladite
-								i(116104),	-- Recipe: Greater Mastery Taladite
-								i(116107),	-- Recipe: Greater Stamina Taladite
-								i(116106),	-- Recipe: Greater Versatility Taladite
-								i(116097),	-- Recipe: Haste Taladite
-								i(116098),	-- Recipe: Mastery Taladite
-								i(116109),	-- Recipe: Prismatic Focusing Lens
-								i(116108),	-- Recipe: Reflecting Prism
-								i(116094),	-- Recipe: Shifting Taladite Pendant
-								i(116091),	-- Recipe: Shifting Taladite Ring
-								i(116101),	-- Recipe: Stamina Taladite
-								i(116079),	-- Recipe: Taladite Amplifier
-								i(116078),	-- Recipe: Taladite Recrystalizer
-								i(116100),	-- Recipe: Versatility Taladite
-								i(116095),	-- Recipe: Whispering Taladite Pendant
-								i(116092),	-- Recipe: Whispering Taladite Ring
+							i(116096, {	-- Recipe: Critical Strike Taladite
+								["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+							}),
+							i(116093, {	-- Recipe: Glowing Taladite Pendant
+								["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+							}),
+							i(116090, {	-- Recipe: Glowing Taladite Ring
+								["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+							}),
+							i(116102, {	-- Recipe: Greater Critical Strike Taladite
+								["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
+							}),
+							i(116103, {	-- Recipe: Greater Haste Taladite
+								["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
+							}),
+							i(116104, {	-- Recipe: Greater Mastery Taladite
+								["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
+							}),
+							i(116107, {	-- Recipe: Greater Stamina Taladite
+								["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
+							}),
+							i(116106, {	-- Recipe: Greater Versatility Taladite
+								["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
+							}),
+							i(116097, {	-- Recipe: Haste Taladite
+								["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+							}),
+							i(116098, {	-- Recipe: Mastery Taladite
+								["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+							}),
+							i(116109, {	-- Recipe: Prismatic Focusing Lens
+								["cost"] = { { "i", 118723, 3 }, },	-- 3x Secret of Draenor Jewelcrafting
+							}),
+							i(116108, {	-- Recipe: Reflecting Prism
+								["cost"] = { { "i", 118723, 3 }, },	-- 3x Secret of Draenor Jewelcrafting
+							}),
+							i(116094, {	-- Recipe: Shifting Taladite Pendant
+								["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+							}),
+							i(116091, {	-- Recipe: Shifting Taladite Ring
+								["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+							}),
+							i(116101, {	-- Recipe: Stamina Taladite
+								["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+							}),
+							i(116079, {	-- Recipe: Taladite Amplifier
+								["cost"] = { { "i", 118723, 5 }, },	-- 5x Secret of Draenor Jewelcrafting
+							}),
+							i(116078, {	-- Recipe: Taladite Recrystalizer
+								["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+							}),
+							i(116100, {	-- Recipe: Versatility Taladite
+								["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+							}),
+							i(116095, {	-- Recipe: Whispering Taladite Pendant
+								["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
+							}),
+							i(116092, {	-- Recipe: Whispering Taladite Ring
+								["cost"] = { { "i", 118723, 1 }, },	-- 1x Secret of Draenor Jewelcrafting
 							}),
 						},
 					}),
@@ -652,13 +744,38 @@ _.ExpansionFeatures =
 					n(81981, {	-- Tarnon
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(116053, {	-- Draenic Seeds
-								i(110721),	-- Crazy Carrot
-								i(118568),	-- Garden Hoe
-								i(118560),	-- Garden Pitchfork
-								i(118562),	-- Garden Scythe
-								i(118559),	-- Garden Shovel
-								i(118563),	-- Garden Sickle
+							i(110721, {	-- Crazy Carrot
+								["cost"] = { { "i", 116053, 1000 }, },	-- 1,000x Draenic Seeds
+							}),
+							i(118568, {	-- Garden Hoe
+								["cost"] = {
+									{ "g", 25000000 },		-- 2,500g
+									{ "i", 116053, 500 },	-- 500x Draenic Seeds
+								},
+							}),
+							i(118560, {	-- Garden Pitchfork
+								["cost"] = {
+									{ "g", 50000000 },		-- 5,000g
+									{ "i", 116053, 1000 },	-- 1,000x Draenic Seeds
+								},
+							}),
+							i(118562, {	-- Garden Scythe
+								["cost"] = {
+									{ "g", 50000000 },		-- 5,000g
+									{ "i", 116053, 1000 },	-- 1,000x Draenic Seeds
+								},
+							}),
+							i(118559, {	-- Garden Shovel
+								["cost"] = {
+									{ "g", 50000000 },		-- 5,000g
+									{ "i", 116053, 1000 },	-- 1,000x Draenic Seeds
+								},
+							}),
+							i(118563, {	-- Garden Sickle
+								["cost"] = {
+									{ "g", 25000000 },		-- 2,500g
+									{ "i", 116053, 500 },	-- 500x Draenic Seeds
+								},
 							}),
 						},
 					}),
@@ -667,20 +784,32 @@ _.ExpansionFeatures =
 					n(94516, {	-- Giada Goldleash
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(116415, {	-- Pet Charm
-								i(127704),	-- Bloodthorn Hatchling
-								i(127703),	-- Dusty Sporewing
-								i(127701),	-- Glowing Sporebat
-								i(127707),	-- Indestructible Bone
-								i(127705),	-- Lost Netherpup
-								i(127696),	-- Magic Pet Mirror
-								i(127695),	-- Spirit Wand
+							i(127704, {	-- Bloodthorn Hatchling (PET!)
+								["cost"] = { { "i", 116415, 50 }, },	-- 50x Pet Charm
+							}),
+							i(127703, {	-- Dusty Sporewing (PET!)
+								["cost"] = { { "i", 116415, 50 }, },	-- 50x Pet Charm
+							}),
+							i(127701, {	-- Glowing Sporebat (PET!)
+								["cost"] = { { "i", 116415, 100 }, },	-- 100x Pet Charm
+							}),
+							i(127707, {	-- Indestructible Bone (TOY!)
+								["cost"] = { { "i", 116415, 50 }, },	-- 50x Pet Charm
+							}),
+							i(127705, {	-- Lost Netherpup (PET!)
+								["cost"] = { { "i", 116415, 200 }, },	-- 200x Pet Charm
+							}),
+							i(127696, {	-- Magic Pet Mirror (TOY!)
+								["cost"] = { { "i", 116415, 500 }, },	-- 500x Pet Charm
+							}),
+							i(127695, {	-- Spirit Wand (TOY!)
+								["cost"] = { { "i", 116415, 100 }, },	-- 100x Pet Charm
 							}),
 						},
 					}),
 				}),
 				n(-114, { 	-- Scribe's Quarters
-					n(79829, {	-- Urgra
+					n(79829, {	-- Urgra <Scribe>
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(111923, {	-- Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
@@ -695,14 +824,30 @@ _.ExpansionFeatures =
 								recipe(166669),	-- Card of Omens
 								recipe(178497),	-- Warbinder's Ink
 							}),
-							i(118605),	-- Technique: Crystalfire Spellstaff
-							i(118606),	-- Technique: Darkmoon Card of Draenor
-							i(120265),	-- Technique: Ensorcelled Tarot
-							i(118607),	-- Technique: Etched-Blade Warstaff
-							i(118613),	-- Technique: Shadowtome
-							i(118614),	-- Technique: Volatile Crystal
-							i(118615),	-- Technique: Warmaster's Firestick
-							i(118610),	-- Technique: Weapon Crystal
+							i(118605, {	-- Technique: Crystalfire Spellstaff
+								["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+							}),
+							i(118606, {	-- Technique: Darkmoon Card of Draenor
+								["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
+							}),
+							i(120265, {	-- Technique: Ensorcelled Tarot
+								["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
+							}),
+							i(118607, {	-- Technique: Etched-Blade Warstaff
+								["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+							}),
+							i(118613, {	-- Technique: Shadowtome
+								["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+							}),
+							i(118614, {	-- Technique: Volatile Crystal
+								["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+							}),
+							i(118615, {	-- Technique: Warmaster's Firestick
+								["cost"] = { { "i", 119297, 1 }, },	-- 1x Secret of Draenor Inscription
+							}),
+							i(118610, {	-- Technique: Weapon Crystal
+								["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
+							}),
 							un(1, i(118608)),	-- Technique: Greater Weapon Crystal
 							un(1, i(120266)),	-- Technique: Greater Ensorcelled Tarot
 							un(1, i(122548)),	-- Technique: Powerful Ensorcelled Tarot
@@ -710,40 +855,68 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
-				n(-99, {	-- Stables
-					n(79860, {	-- Zagara <Stable Master>
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(45022),	-- Argent Gruntling
-						},
-					}),
-				}),
---[[
 				n(-116, {	-- Tailoring Emporium
-					n(79864, {	-- 	Warra the Weaver
+					n(79864, {	-- 	Warra the Weaver <Tailor>
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(115357),	-- Teaches Sumptious cowl,leggings, robes, hexweave cloth, secrets of draenor tailoring
-							i(114852),
-							i(114853),
-							i(114854),
-							i(114855),
-							i(114856),
-							i(114857),
-							i(114858),
-							i(114859),
-							i(114860),
-							i(114861),
-							i(114862),
-							i(114863),
-							i(114864),
-							i(114865),
-							i(114866),
-							i(114871),
+							i(115357, {	-- Draenor Tailoring
+								i(114868),	-- Pattern: Sumptuous Cowl
+								i(114870),	-- Pattern: Sumptuous Leggings
+								i(114869),	-- Pattern: Sumptuous Robes
+								i(114851),	-- Recipe: Hexweave Cloth
+								i(120128),	-- Recipe: Secrets of Draenor Tailoring
+							}),
+							i(114863, {	-- Pattern: Brilliant Hexweave Cloak
+								["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
+							}),
+							i(114866, {	-- Pattern: Creeping Carpet
+								["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
+							}),
+							i(114865, {	-- Pattern: Elekk Plushie
+								["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
+							}),
+							i(114864, {	-- Pattern: Hexweave Bag
+								["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
+							}),
+							i(114860, {	-- Pattern: Hexweave Belt
+								["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
+							}),
+							i(114858, {	-- Pattern: Hexweave Bracers
+								["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
+							}),
+							i(114854, {	-- Pattern: Hexweave Cowl
+								["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
+							}),
+							i(114852, {	-- Pattern: Hexweave Embroidery
+								["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
+							}),
+							i(114856, {	-- Pattern: Hexweave Gloves
+								["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
+							}),
+							i(114855, {	-- Pattern: Hexweave Leggings
+								["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
+							}),
+							i(114853, {	-- Pattern: Hexweave Mantle
+								["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
+							}),
+							i(114857, {	-- Pattern: Hexweave Robe
+								["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
+							}),
+							i(114859, {	-- Pattern: Hexweave Slippers
+								["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
+							}),
+							i(114862, {	-- Pattern: Nimble Hexweave Cloak
+								["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
+							}),
+							i(114861, {	-- Pattern: Powerful Hexweave Cloak
+								["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring
+							}),
+							i(114871, {	-- Recipe: Hexweave Essence
+								["cost"] = { { "i", 118722, 5 }, },	-- 5x Secret of Draenor Tailoring
+							}),
 						},
 					}),
 				}),
---]]
 				n(-117, {	-- The Forge
 					n(79867, {	-- Orgek Ironhand
 						["races"] = HORDE_ONLY,
@@ -755,30 +928,68 @@ _.ExpansionFeatures =
 								i(120129),	-- Recipe: Secrets of Draenor Blacksmithing
 								recipe(171690),	-- Truesteel Ingot
 							}),
-							i(118720, {	-- Secret of Draenor Blacksmithing
-								i(119329),	-- Recipe: Soul of the Forge
-								i(120262),	-- Recipe: Steelforged Aegis
-								i(120260),	-- Recipe: Steelforged Axe
-								i(116731),	-- Recipe: Steelforged Dagger
-								i(116745),	-- Recipe: Steelforged Essence
-								i(116729),	-- Recipe: Steelforged Greataxe
-								i(116732),	-- Recipe: Steelforged Hammer
-								i(116730),	-- Recipe: Steelforged Saber
-								i(116733),	-- Recipe: Steelforged Shield
-								i(116740),	-- Recipe: Truesteel Armguards
-								i(116741),	-- Recipe: Truesteel Boots
-								i(116739),	-- Recipe: Truesteel Breastplate
-								i(116743),	-- Recipe: Truesteel Essence
-								i(116738),	-- Recipe: Truesteel Gauntlets
-								i(116737),	-- Recipe: Truesteel Greaves
-								i(116734),	-- Recipe: Truesteel Grinder
-								i(116736),	-- Recipe: Truesteel Helm
-								i(116735),	-- Recipe: Truesteel Pauldrons
-								i(118044),	-- Recipe: Truesteel Reshaper
-								i(116742),	-- Recipe: Truesteel Waistguard
-								i(116764, {	-- Small Pouch of Coins
-									["description"] = "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)",
-								}),
+							i(119329, {	-- Recipe: Soul of the Forge
+								["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing
+							}),
+							i(120262, {	-- Recipe: Steelforged Aegis
+								["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing
+							}),
+							i(120260, {	-- Recipe: Steelforged Axe
+								["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing
+							}),
+							i(116731, {	-- Recipe: Steelforged Dagger
+								["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing
+							}),
+							i(116745, {	-- Recipe: Steelforged Essence
+								["cost"] = { { "i", 118720, 5 }, },	-- 5x Secret of Draenor Blacksmithing
+							}),
+							i(116729, {	-- Recipe: Steelforged Greataxe
+								["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing
+							}),
+							i(116732, {	-- Recipe: Steelforged Hammer
+								["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing
+							}),
+							i(116730, {	-- Recipe: Steelforged Saber
+								["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing
+							}),
+							i(116733, {	-- Recipe: Steelforged Shield
+								["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing
+							}),
+							i(116740, {	-- Recipe: Truesteel Armguards
+								["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing
+							}),
+							i(116741, {	-- Recipe: Truesteel Boots
+								["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing
+							}),
+							i(116739, {	-- Recipe: Truesteel Breastplate
+								["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing
+							}),
+							i(116743, {	-- Recipe: Truesteel Essence
+								["cost"] = { { "i", 118720, 5 }, },	-- 5x Secret of Draenor Blacksmithing
+							}),
+							i(116738, {	-- Recipe: Truesteel Gauntlets
+								["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing
+							}),
+							i(116737, {	-- Recipe: Truesteel Greaves
+								["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing
+							}),
+							i(116734, {	-- Recipe: Truesteel Grinder
+								["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing
+							}),
+							i(116736, {	-- Recipe: Truesteel Helm
+								["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing
+							}),
+							i(116735, {	-- Recipe: Truesteel Pauldrons
+								["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing
+							}),
+							i(118044, {	-- Recipe: Truesteel Reshaper
+								["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing
+							}),
+							i(116742, {	-- Recipe: Truesteel Waistguard
+								["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing
+							}),
+							i(116764, {	-- Small Pouch of Coins
+								["description"] = "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)",
 							}),
 							un(1, i(108421)),	-- Plans: Blackrock Crucibles and Their Uses
 							un(1, i(122550)),	-- Recipe: Powerful Steelforged Essence
