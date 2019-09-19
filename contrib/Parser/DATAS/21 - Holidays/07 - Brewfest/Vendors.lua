@@ -84,8 +84,15 @@ _.Holidays = bubbleDown({["u"] = 24},
 								ach(2796),	-- Brew of the Month
 							},
 						}),
-						i(122339, {	-- Ancient Heirloom Scabbard
-							["cost"] = { { "i", 37829, 300 }, },	-- 300x Brewfest Prize Token
+						i(122338, {	-- Ancient Heirloom Armor Casing
+							["cost"] = {
+								{ "i", 37829, 300 },	-- 300x Brewfest Prize Token
+								{ "c", 241, 65 },		-- 65x Champion's Seal
+								{ "c", 515, 120 },		-- 120x Darkmoon Prize Ticket
+								{ "i", 49927, 200 },	-- 200 Love Token
+								{ "i", 137642, 14 },	-- 14x Mark of Honor
+								{ "c", 1166, 900 },		-- 900x Timewarped Badge
+							},
 						}),
 						i(119209, {	-- Angry Brewfest Letter
 							["cost"] = { { "i", 37829, 50 }, },		-- 50x Brewfest Prize Token
@@ -132,7 +139,11 @@ _.Holidays = bubbleDown({["u"] = 24},
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 						}),
 						i(122341, {	-- Timeworn Heirloom Scabbard
-							["cost"] = { { "i", 37829, 500 }, },	-- 500x Brewfest Prize Token
+							["cost"] = {
+								{ "i", 37829, 500 },	-- 500x   Brewfest Token
+								{ "i", 49927, 450 },	-- 450x   Love Token
+								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
+							},
 						}),
 						i(151615, {	-- Weathered Heirloom Scabbard
 							["cost"] = { { "i", 37829, 500 }, },	-- 500x Brewfest Prize Token
@@ -203,8 +214,15 @@ _.Holidays = bubbleDown({["u"] = 24},
 								ach(2796),	-- Brew of the Month
 							},
 						}),
-						i(122339, {	-- Ancient Heirloom Scabbard
-							["cost"] = { { "i", 37829, 300 }, },	-- 300x Brewfest Prize Token
+						i(122338, {	-- Ancient Heirloom Armor Casing
+							["cost"] = {
+								{ "i", 37829, 300 },	-- 300x Brewfest Prize Token
+								{ "c", 241, 65 },		-- 65x Champion's Seal
+								{ "c", 515, 120 },		-- 120x Darkmoon Prize Ticket
+								{ "i", 49927, 200 },	-- 200 Love Token
+								{ "i", 137642, 14 },	-- 14x Mark of Honor
+								{ "c", 1166, 900 },		-- 900x Timewarped Badge
+							},
 						}),
 						i(119209, {	-- Angry Brewfest Letter
 							["cost"] = { { "i", 37829, 50 }, },		-- 50x Brewfest Prize Token
@@ -251,7 +269,11 @@ _.Holidays = bubbleDown({["u"] = 24},
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 						}),
 						i(122341, {	-- Timeworn Heirloom Scabbard
-							["cost"] = { { "i", 37829, 500 }, },	-- 500x Brewfest Prize Token
+							["cost"] = {
+								{ "i", 37829, 500 },	-- 500x   Brewfest Token
+								{ "i", 49927, 450 },	-- 450x   Love Token
+								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
+							},
 						}),
 						i(151615, {	-- Weathered Heirloom Scabbard
 							["cost"] = { { "i", 37829, 500 }, },	-- 500x Brewfest Prize Token

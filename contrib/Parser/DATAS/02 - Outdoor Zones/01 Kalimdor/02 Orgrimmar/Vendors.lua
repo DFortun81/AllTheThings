@@ -612,7 +612,14 @@ _.Zones =
 							["cost"] = { { "i", 137642, 12 }, },	-- 12x Mark of Honor
 						}),
 						i(122339, {	-- Ancient Heirloom Scabbard
-							["cost"] = { { "i", 137642, 14 }, },	-- 14x Mark of Honor
+							["cost"] = {
+								{ "i", 37829, 300 },	-- 300x Brewfest Prize Token
+								{ "c", 241, 65 },		-- 65x Champion's Seal
+								{ "c", 515, 120 },		-- 120x Darkmoon Prize Ticket
+								{ "i", 49927, 200 },	-- 200 Love Token
+								{ "i", 137642, 14 },	-- 14x Mark of Honor
+								{ "c", 1166, 900 },		-- 900x Timewarped Badge
+							},
 						}),
 						i(122369, {	-- Battleworn Thrash Blade
 							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor

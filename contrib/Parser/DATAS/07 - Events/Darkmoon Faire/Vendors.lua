@@ -556,6 +556,7 @@ _.WorldEvents =
 					}),
 					i(122339, {	-- Ancient Heirloom Scabbard
 						["cost"] = {
+							{ "i", 37829, 300 },	-- 300x Brewfest Prize Token
 							{ "c", 241, 65 },		-- 65x Champion's Seal
 							{ "c", 515, 120 },		-- 120x Darkmoon Prize Ticket
 							{ "i", 49927, 200 },	-- 200 Love Token

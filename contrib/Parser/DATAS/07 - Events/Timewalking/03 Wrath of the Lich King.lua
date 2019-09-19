@@ -64,7 +64,16 @@ _.WorldEvents =
 						
 						-- Heirloom / Reputation Items
 						i(122338),	-- Ancient Heirloom Armor Casing
-						i(122339),	-- Ancient Heirloom Scabbard
+						i(122338, {	-- Ancient Heirloom Armor Casing
+							["cost"] = {
+								{ "i", 37829, 300 },	-- 300x Brewfest Prize Token
+								{ "c", 241, 65 },		-- 65x Champion's Seal
+								{ "c", 515, 120 },		-- 120x Darkmoon Prize Ticket
+								{ "i", 49927, 200 },	-- 200 Love Token
+								{ "i", 137642, 14 },	-- 14x Mark of Honor
+								{ "c", 1166, 900 },		-- 900x Timewarped Badge
+							},
+						}),
 						a(i(129955)),	-- Commendation of the Alliance Vanguard
 						i(129942),	-- Commendation of the Argent Crusade
 						i(129941),	-- Commendation of the Ebon Blade
@@ -73,7 +82,13 @@ _.WorldEvents =
 						i(129943),	-- Commendation of the Sons of Hodir
 						i(129944),	-- Commendation of the Wyrmrest Accord
 						i(122340),	-- Timeworn Heirloom Armor Casing
-						i(122341),	-- Timeworn Heirloom Scabbard
+						i(122341, {	-- Timeworn Heirloom Scabbard
+							["cost"] = {
+								{ "i", 37829, 500 },	-- 500x   Brewfest Token
+								{ "i", 49927, 450 },	-- 450x   Love Token
+								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
+							},
+						}),
 						i(151614),	-- Weathered Heirloom Armor Casing
 						i(151615),	-- Weathered Heirloom Scabbard
 						

@@ -52,7 +52,16 @@ _.WorldEvents =
 						
 						-- Heirloom / Reputation Items
 						i(122338),	-- Ancient Heirloom Armor Casing
-						i(122339),	-- Ancient Heirloom Scabbard
+						i(122338, {	-- Ancient Heirloom Armor Casing
+							["cost"] = {
+								{ "i", 37829, 300 },	-- 300x Brewfest Prize Token
+								{ "c", 241, 65 },		-- 65x Champion's Seal
+								{ "c", 515, 120 },		-- 120x Darkmoon Prize Ticket
+								{ "i", 49927, 200 },	-- 200 Love Token
+								{ "i", 137642, 14 },	-- 14x Mark of Honor
+								{ "c", 1166, 900 },		-- 900x Timewarped Badge
+							},
+						}),
 						i(143947),	-- Commendation of Emperor Shaohao
 						a(i(143944)),	-- Commendation of Operation: Shieldwall
 						i(143946),	-- Commendation of The Anglers
@@ -67,7 +76,13 @@ _.WorldEvents =
 						h(i(143939)),	-- Commendation of the Sunreaver Onslaught
 						i(143941),	-- Commendation of The Tillers
 						i(122340),	-- Timeworn Heirloom Armor Casing
-						i(122341),	-- Timeworn Heirloom Scabbard
+						i(122341, {	-- Timeworn Heirloom Scabbard
+							["cost"] = {
+								{ "i", 37829, 500 },	-- 500x   Brewfest Token
+								{ "i", 49927, 450 },	-- 450x   Love Token
+								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
+							},
+						}),
 						i(151614),	-- Weathered Heirloom Armor Casing
 						i(151615),	-- Weathered Heirloom Scabbard
 						

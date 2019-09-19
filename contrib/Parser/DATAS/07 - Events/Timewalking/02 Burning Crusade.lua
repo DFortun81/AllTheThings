@@ -71,8 +71,16 @@ _.WorldEvents =
 							i(129849),	-- Gnomeregan Auto-Blocker 601
 							
 							-- Heirloom / Reputation Items
-							i(122338),	-- Ancient Heirloom Armor Casing
-							i(122339),	-- Ancient Heirloom Scabbard
+							i(122338, {	-- Ancient Heirloom Armor Casing
+								["cost"] = {
+									{ "i", 37829, 300 },	-- 300x Brewfest Prize Token
+									{ "c", 241, 65 },		-- 65x Champion's Seal
+									{ "c", 515, 120 },		-- 120x Darkmoon Prize Ticket
+									{ "i", 49927, 200 },	-- 200 Love Token
+									{ "i", 137642, 14 },	-- 14x Mark of Honor
+									{ "c", 1166, 900 },		-- 900x Timewarped Badge
+								},
+							}),
 							a(i(129948)),	-- Commendation of Honor Hold
 							i(129951);	-- Commendation of Lower City
 							i(129949);	-- Commendation of the Cenarion Expedition
