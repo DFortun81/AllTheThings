@@ -7,9 +7,7 @@ _.Craftables =
 		n(-181, {	-- Blacksmithing
 			filter(100, {	-- Mounts
 				i(158887, {	-- Monelite Reinforced Chassis
-					["g"] = {
-						i(153594),	-- Xiwyllag ATV
-					},
+					i(153594),	-- Xiwyllag ATV
 				}),
 			}),
 			n(114, {	-- Mount Equipment
@@ -133,24 +131,16 @@ _.Craftables =
 				i(167973),	-- Notorious Combatant's Plate Waistguard [Alliance]
 				i(167972),	-- Notorious Combatant's Plate Waistguard [Horde]
 				i(168680, {	-- Osmenite Girdle [Alliance]
-					["g"] = {
-						i(168761),	-- Recipe: Reinforced Osmenite Girdle
-					},
+					i(168761),	-- Recipe: Reinforced Osmenite Girdle
 				}),
 				i(168686, {	-- Osmenite Girdle [Horde]
-					["g"] = {
-						i(168761),	-- Recipe: Reinforced Osmenite Girdle
-					},
+					i(168761),	-- Recipe: Reinforced Osmenite Girdle
 				}),
 				i(168681, {	-- Reinforced Osmenite Girdle [Alliance]
-					["g"] = {
-						i(168762),	-- Recipe: Banded Osmenite Girdle
-					},
+					i(168762),	-- Recipe: Banded Osmenite Girdle
 				}),
 				i(168687, {	-- Reinforced Osmenite Girdle [Horde]
-					["g"] = {
-						i(168762),	-- Recipe: Banded Osmenite Girdle
-					},
+					i(168762),	-- Recipe: Banded Osmenite Girdle
 				}),
 				i(164688),	-- Sinister Combatant's Plate Waistguard [Alliance]
 				i(164656),	-- Sinister Combatant's Plate Waistguard [Horde]
@@ -177,24 +167,16 @@ _.Craftables =
 				i(167971),	-- Notorious Combatant's Plate Greaves [Alliance]
 				i(167970),	-- Notorious Combatant's Plate Greaves [Horde]
 				i(168677, {	-- Osmenite Legguards [Alliance]
-					["g"] = {
-						i(168759),	-- Recipe: Reinforced Osmenite Legguards
-					},
+					i(168759),	-- Recipe: Reinforced Osmenite Legguards
 				}),
 				i(168683, {	-- Osmenite Legguards [Horde]
-					["g"] = {
-						i(168759),	-- Recipe: Reinforced Osmenite Legguards
-					},
+					i(168759),	-- Recipe: Reinforced Osmenite Legguards
 				}),
 				i(168678, {	-- Reinforced Osmenite Legguards [Alliance]
-					["g"] = {
-						i(168760),	-- Recipe: Banded Osmenite Legguards
-					},
+					i(168760),	-- Recipe: Banded Osmenite Legguards
 				}),
 				i(168684, {	-- Reinforced Osmenite Legguards [Horde]
-					["g"] = {
-						i(168760),	-- Recipe: Banded Osmenite Legguards
-					},
+					i(168760),	-- Recipe: Banded Osmenite Legguards
 				}),
 				i(164687),	-- Sinister Combatant's Plate Greaves [Alliance]
 				i(164655),	-- Sinister Combatant's Plate Greaves [Horde]

@@ -8,9 +8,7 @@ _.Craftables =
 			filter(100, {	-- Mounts
 				i(161134),	-- Mecha-Mogul Mk2
 				i(158886, {	-- Super-Charged Engine
-					["g"] = {
-						i(153594),	-- Xiwyllag ATV
-					},
+					i(153594),	-- Xiwyllag ATV
 				}),
 			}),
 			filter(101, {	-- Battle Pets
@@ -36,127 +34,87 @@ _.Craftables =
 			n(-320,	{ 		-- Head
 				filter(4, {	-- Cloth
 					i(168689, {	-- Abyssal Synthetic Specs
-						["g"] = {
-							i(168763),	-- Schematic: A5C-3N-D3D Synthetic Specs
-						},
+						i(168763),	-- Schematic: A5C-3N-D3D Synthetic Specs
 					}),
 					i(168690, {	-- A5C-3N-D3D Synthetic Specs
-						["g"] = {
-							i(168764),	-- Schematic: Charged A5C-3N-D3D Synthetic Specs
-						},
+						i(168764),	-- Schematic: Charged A5C-3N-D3D Synthetic Specs
 					}),
 					i(160488),	-- AZ3-R1-T3 Synthetic Specs
 					i(168691),	-- Charged A5C-3N-D3D Synthetic Specs
 					i(165895),	-- Charged SP1-R1-73D Synthetic Specs
 					i(166980),	-- Emblazoned Synthetic Specs
 					i(166979, {	-- Imbued Synthetic Specs
-						["g"] = {
-							i(166987),	-- Schematic: Emblazoned Synthetic Specs
-						},
+						i(166987),	-- Schematic: Emblazoned Synthetic Specs
 					}),
 					i(165890, {	-- SP1-R1-73D Synthetic Specs
-						["g"] = {
-							i(165918),	-- Schematic: Charged SP1-R1-73D Synthetic Specs
-						},
+						i(165918),	-- Schematic: Charged SP1-R1-73D Synthetic Specs
 					}),
 					i(165885, {	-- Surging Synthetic Specs
-						["g"] = {
-							i(165917),	-- Schematic: SP1-R1-73D Synthetic Specs
-						},
+						i(165917),	-- Schematic: SP1-R1-73D Synthetic Specs
 					}),
 				}),
 				filter(5, {	-- Leather
 					i(168692, {	-- Abyssal Gearspun Goggles
-						["g"] = {
-							i(168765),	-- Schematic: A5C-3N-D3D Gearspun Goggles
-						},
+						i(168765),	-- Schematic: A5C-3N-D3D Gearspun Goggles
 					}),
 					i(168693, {	-- A5C-3N-D3D Gearspun Goggles
-						["g"] = {
-							i(168766),	-- Schematic: Charged A5C-3N-D3D Gearspun Goggles
-						},
+						i(168766),	-- Schematic: Charged A5C-3N-D3D Gearspun Goggles
 					}),
 					i(160489),	-- AZ3-R1-T3 Gearspun Goggles
 					i(168694),	-- Charged A5C-3N-D3D Gearspun Goggles
 					i(165896),	-- Charged SP1-R1-73D Gearspun Goggles
 					i(166982),	-- Emblazoned Gearspun Goggles
 					i(166981, {	-- Imbued Gearspun Goggles
-						["g"] = {
-							i(166988),	-- Schematic: Emblazoned Gearspun Goggles
-						},
+						i(166988),	-- Schematic: Emblazoned Gearspun Goggles
 					}),
 					i(165891, {	-- SP1-R1-73D Gearspun Goggles
-						["g"] = {
-							i(165914),	-- Schematic: Charged SP1-R1-73D Gearspun Goggles
-						},
+						i(165914),	-- Schematic: Charged SP1-R1-73D Gearspun Goggles
 					}),
 					i(165886, {	-- Surging Gearspun Goggles
-						["g"] = {
-							i(165913),	-- Schematic: SP1-R1-73D Gearspun Goggles
-						},
+						i(165913),	-- Schematic: SP1-R1-73D Gearspun Goggles
 					}),
 				}),
 				filter(6, {	-- Mail
 					i(168695, {	-- Abyssal Bionic Bifocals
-						["g"] = {
-							i(168767),	-- Schematic: A5C-3N-D3D Bionic Bifocals
-						},
+						i(168767),	-- Schematic: A5C-3N-D3D Bionic Bifocals
 					}),
 					i(168696, {	-- A5C-3N-D3D Bionic Bifocals
-						["g"] = {
-							i(168768),	-- Schematic: Charged A5C-3N-D3D Bionic Bifocals
-						},
+						i(168768),	-- Schematic: Charged A5C-3N-D3D Bionic Bifocals
 					}),
 					i(160490),	-- AZ3-R1-T3 Bionic Bifocals
 					i(168697),	-- Charged A5C-3N-D3D Bionic Bifocals
 					i(165897),	-- Charged SP1-R1-73D Bionic Bifocals
 					i(166984),	-- Emblazoned Bionic Bifocals
 					i(166983, {	-- Imbued Bionic Bifocals
-						["g"] = {
-							i(166989),	-- Schematic: Emblazoned Bionic Bifocals
-						},
+						i(166989),	-- Schematic: Emblazoned Bionic Bifocals
 					}),
 					i(165892, {	-- SP1-R1-73D Bionic Bifocals
-						["g"] = {
-							i(165912),	-- Schematic: Charged SP1-R1-73D Bionic Bifocals
-						},
+						i(165912),	-- Schematic: Charged SP1-R1-73D Bionic Bifocals
 					}),
 					i(165887, {	-- Surging Bionic Bifocals
-						["g"] = {
-							i(165911),	-- Schematic: SP1-R1-73D Bionic Bifocals
-						},
+						i(165911),	-- Schematic: SP1-R1-73D Bionic Bifocals
 					}),
 				}),
 
 				filter(7, {	-- Plate
 					i(168698, {	-- Abyssal Orthogonal Optics
-						["g"] = {
-							i(168769),	-- Schematic: A5C-3N-D3D Orthogonal Optics
-						},
+						i(168769),	-- Schematic: A5C-3N-D3D Orthogonal Optics
 					}),
 					i(168699, {	-- A5C-3N-D3D Orthogonal Optics
-						["g"] = {
-							i(168770),	-- Schematic: Charged A5C-3N-D3D Orthogonal Optics
-						},
+						i(168770),	-- Schematic: Charged A5C-3N-D3D Orthogonal Optics
 					}),
 					i(160491),	-- AZ3-R1-T3 Orthogonal Optics
 					i(168700),	-- Charged A5C-3N-D3D Orthogonal Optics
 					i(165898),	-- Charged SP1-R1-73D Orthogonal Optics
 					i(166986),	-- Emblazoned Orthogonal Optics
 					i(166985, {	-- Imbued Orthogonal Optics
-						["g"] = {
-							i(166990),	-- Schematic: Emblazoned Orthogonal Optics
-						},
+						i(166990),	-- Schematic: Emblazoned Orthogonal Optics
 					}),
 					i(165893, {	-- SP1-R1-73D Orthogonal Optics
-						["g"] = {
-							i(165916),	-- Schematic: Charged SP1-R1-73D Orthogonal Optics
-						},
+						i(165916),	-- Schematic: Charged SP1-R1-73D Orthogonal Optics
 					}),
 					i(165888, {	-- Surging Orthogonal Optics
-						["g"] = {
-							i(165915),	-- Schematic: SP1-R1-73D Orthogonal Optics
-						},
+						i(165915),	-- Schematic: SP1-R1-73D Orthogonal Optics
 					}),
 				}),
 			}),
@@ -165,27 +123,6 @@ _.Craftables =
 					i(168740, {	-- Blingtron 7000 Gift Package
 						["questID"] = 56042,
 						["isDaily"] = true,
-						--[[ TODO:: determine contents
-						["g"] = {
-							i(87250),	-- Depleted-Kyparium Rocket Mount
-							i(87251),	-- Geosynchronous World Spinner Mount
-							i(41508),	-- Mechano-Hog Mount
-							i(44413),	-- Mekgineer's Chopper Mount
-							i(136911),	-- Knockoff Blingtron
-							i(103670),	-- Lil'Bling Pet
-							i(15996),	-- Lifelike Mechanical Toad Pet
-							i(11826),	-- Lil' Smoky Pet
-							i(4401),	-- Mechanical Squirrel Box Pet
-							i(11825),	-- Pet Bombling
-							i(115483),	-- Sky-Bo Pet
-							i(21277),	-- Tranquil Mechanical Yeti Pet
-							i(123851),	-- Photo B.O.M.B. Toy
-							i(136631),	-- Surface-to-Infernal Rocket Launcher
-							i(136630),	-- "Twirling Bottom" Repeaater"
-							i(136629),	-- Felgibber Shotgun
-							i(136632),	-- Chaos Blaster
-						},
-						]]--
 					}),
 				}),
 			}),

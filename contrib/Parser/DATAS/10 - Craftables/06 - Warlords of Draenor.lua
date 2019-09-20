@@ -21,18 +21,10 @@ _.Craftables =
 		}),
 		n(-181, { 	-- Blacksmithing
 			-- Cleaned up by Crieve, 2019-07-03. Do NOT touch this. The previous version was an abomination.
-			{	-- Soul of the Forge
-				["itemID"] = 119328,	-- Soul of the Forge
-			},
-			{	-- Smoldering Helm
-				["itemID"] = 116426,	-- Smoldering Helm
-			},
-			{	-- Smoldering Breastplate
-				["itemID"] = 116427,	-- Smoldering Breastplate
-			},
-			{	-- Smoldering Greaves
-				["itemID"] = 116425,	-- Smoldering Greaves
-			},
+			i(119328),	-- Soul of the Forge
+			i(116426),	-- Smoldering Helm
+			i(116427),	-- Smoldering Breastplate
+			i(116425),	-- Smoldering Greaves
 			i(128016, {	-- Steelforged Essence
 				WOD_CRAFTED_ITEM(120261),	-- Steelforged Aegis
 				WOD_CRAFTED_ITEM(120259),	-- Steelforged Axe
@@ -102,7 +94,6 @@ _.Craftables =
 			}),
 		}),
 		n(-185, { 	-- Inscription
-		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, {	-- Tarot Cards
 				sp(163294, {	-- Darkmoon Card of Draenor
 					i(112303, {	-- Iron Deck
@@ -139,42 +130,23 @@ _.Craftables =
 			}),
 		}),
 		n(-186, { 	-- Jewelcrafting
-		-- Reviewed and updated as of 11.27.2018 BfA 8.0
 			filter(51, {	-- Neck
-				{	-- Glowing Iron Choker
-					["itemID"] = 115990,	-- Glowing Iron Choker
-				},
+				i(115990),					-- Glowing Iron Choker
 				WOD_CRAFTED_ITEM(115799),	-- Glowing Taladite Pendant
-				{	-- Shifting Iron Choker
-					["itemID"] = 115991,	-- Shifting Iron Choker
-				},
+				i(115991),					-- Shifting Iron Choker
 				WOD_CRAFTED_ITEM(115800),	-- Shifting Taladite Pendant
-				{	-- Whispering Iron Choker
-					["itemID"] = 115992,	-- Whispering Iron Choker
-				},
+				i(115992),					-- Whispering Iron Choker
 				WOD_CRAFTED_ITEM(115801),	-- Whispering Taladite Pendant
 			}),
 			filter(52, {	-- Finger
-				{	-- Glowing Blackrock Band
-					["itemID"] = 115993,	-- Glowing Blackrock Band
-				},
-				{	-- Glowing Iron Band
-					["itemID"] = 115987,	-- Glowing Iron Band
-				},
+				i(115993),					-- Glowing Blackrock Band
+				i(115987),					-- Glowing Iron Band
 				WOD_CRAFTED_ITEM(115794),	-- Glowing Taladite Ring
-				{	-- Shifting Blackrock Band
-					["itemID"] = 115994,	-- Shifting Blackrock Band
-				},
-				{	-- Shifting Iron Band
-					["itemID"] = 115988,	-- Shifting Iron Band
-				},
+				i(115994),					-- Shifting Blackrock Band
+				i(115988),					-- Shifting Iron Band
 				WOD_CRAFTED_ITEM(115796),	-- Shifting Taladite Ring
-				{	-- Whispering Blackrock Band
-					["itemID"] = 115995,	-- Whispering Blackrock Band
-				},
-				{	-- Whispering Iron Band
-					["itemID"] = 115989,	-- Whispering Iron Band
-				},
+				i(115995),					-- Whispering Blackrock Band
+				i(115989),					-- Whispering Iron Band
 				WOD_CRAFTED_ITEM(115798),	-- Whispering Taladite Ring
 			}),
 		}),

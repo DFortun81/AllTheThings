@@ -50,14 +50,10 @@ _.Craftables =
 				i(165410),	-- Fortified Deep Sea Gloves [Alliance]
 				i(165411),	-- Fortified Deep Sea Gloves [Horde]
 				i(168728, {	-- Gilded Seaweave Gloves [Alliance]
-					["g"] = {
-						i(168781),	-- Pattern: Reinforced Seaweave Gloves
-					},
+					i(168781),	-- Pattern: Reinforced Seaweave Gloves
 				}),
 				i(168734, {	-- Gilded Seaweave Gloves [Horde]
-					["g"] = {
-						i(168781),	-- Pattern: Reinforced Seaweave Gloves
-					},
+					i(168781),	-- Pattern: Reinforced Seaweave Gloves
 				}),
 				i(161994),	-- Honorable Combatant's Satin Mittens [Alliance]
 				i(159913),	-- Honorable Combatant's Satin Mittens [Horde]
@@ -66,14 +62,10 @@ _.Craftables =
 				i(167985),	-- Notorious Combatant's Satin Mittens [Alliance]
 				i(167984),	-- Notorious Combatant's Satin Mittens [Horde]
 				i(168729, {	-- Reinforced Seaweave Gloves [Alliance]
-					["g"] = {
-						i(168782),	-- Pattern: Banded Seaweave Gloves
-					},
+					i(168782),	-- Pattern: Banded Seaweave Gloves
 				}),
 				i(168735, {	-- Reinforced Seaweave Gloves [Horde]
-					["g"] = {
-						i(168782),	-- Pattern: Banded Seaweave Gloves
-					},
+					i(168782),	-- Pattern: Banded Seaweave Gloves
 				}),
 				i(164713),	-- Sinister Combatant's Satin Mittens [Alliance]
 				i(164672),	-- Sinister Combatant's Satin Mittens [Horde]
@@ -98,14 +90,10 @@ _.Craftables =
 				i(165385),	-- Fortified Deep Sea Breeches [Alliance]
 				i(165386),	-- Fortified Deep Sea Breeches [Horde]
 				i(168731, {	-- Gilded Seaweave Breeches [Alliance]
-					["g"] = {
-						i(168783),	-- Pattern: Reinforced Seaweave Breeches
-					},
+					i(168783),	-- Pattern: Reinforced Seaweave Breeches
 				}),
 				i(168737, {	-- Gilded Seaweave Breeches [Horde]
-					["g"] = {
-						i(168783),	-- Pattern: Reinforced Seaweave Breeches
-					},
+					i(168783),	-- Pattern: Reinforced Seaweave Breeches
 				}),
 				i(161995),	-- Honorable Combatant's Satin Pants [Alliance]
 				i(159914),	-- Honorable Combatant's Satin Pants [Horde]
@@ -114,14 +102,10 @@ _.Craftables =
 				i(167987),	-- Notorious Combatant's Satin Pants [Alliance]
 				i(167986),	-- Notorious Combatant's Satin Pants [Horde]
 				i(168732, {	-- Reinforced Seaweave Breeches [Alliance]
-					["g"] = {
-						i(168784),	-- Pattern: Banded Seaweave Breeches
-					},
+					i(168784),	-- Pattern: Banded Seaweave Breeches
 				}),
 				i(168738, {	-- Reinforced Seaweave Breeches [Horde]
-					["g"] = {
-						i(168784),	-- Pattern: Banded Seaweave Breeches
-					},
+					i(168784),	-- Pattern: Banded Seaweave Breeches
 				}),
 				i(164714),	-- Sinister Combatant's Satin Pants [Alliance]
 				i(164673),	-- Sinister Combatant's Satin Pants [Horde]

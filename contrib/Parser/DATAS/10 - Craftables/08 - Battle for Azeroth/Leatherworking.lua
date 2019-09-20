@@ -108,24 +108,16 @@ _.Craftables =
 				i(161942),	-- Coarse Leather Greaves [Alliance]
 				i(154142),	-- Coarse Leather Leggings [Horde]
 				i(168719, {	-- Cragscale Greaves [Alliance]
-					["g"] = {
-						i(168779),	-- Pattern: Reinforced Cragscale Greaves
-					},
+					i(168779),	-- Pattern: Reinforced Cragscale Greaves
 				}),
 				i(168725, {	-- Cragscale Greaves [Horde]
-					["g"] = {
-						i(168779),	-- Pattern: Reinforced Cragscale Greaves
-					},
+					i(168779),	-- Pattern: Reinforced Cragscale Greaves
 				}),
 				i(168707, {	-- Dredged Leather Leggings [Alliance]
-					["g"] = {
-						i(168775),	-- Recipe: Reinforced Dredged Leggings
-					},
+					i(168775),	-- Recipe: Reinforced Dredged Leggings
 				}),
 				i(168713, {	-- Dredged Leather Leggings [Horde]
-					["g"] = {
-						i(168775),	-- Recipe: Reinforced Dredged Leggings
-					},
+					i(168775),	-- Recipe: Reinforced Dredged Leggings
 				}),
 				i(162482),	-- Emblazoned Mistscale Greaves [Alliance]
 				i(162474),	-- Emblazoned Mistscale Leggings [Horde]
@@ -150,38 +142,26 @@ _.Craftables =
 				i(162494),	-- Imbued Tempest Leggings [Alliance]
 				i(162469),	-- Imbued Tempest Leggings [Horde]
 				i(161962, {	-- Mistscale Leggings [Alliance]
-					["g"] = {
-						i(162505),	-- Recipe: Imbued Mistscale Leggings
-					},
+					i(162505),	-- Recipe: Imbued Mistscale Leggings
 				}),
 				i(154157, {	-- Mistscale Greaves [Horde]
-					["g"] = {
-						i(162505),	-- Recipe: Imbued Mistscale Leggings
-					},
+					i(162505),	-- Recipe: Imbued Mistscale Leggings
 				}),
 				i(167949),	-- Notorious Combatant's Leather Leggings [Alliance]
 				i(167948),	-- Notorious Combatant's Leather Leggings [Horde]
 				i(167959),	-- Notorious Combatant's Mail Leggings [Alliance]
 				i(167958),	-- Notorious Combatant's Mail Leggings [Horde]
 				i(168720, {	-- Reinforced Cragscale Greaves [Alliance]
-					["g"] = {
-						i(168780),	-- Pattern: Banded Cragscale Greaves
-					},
+					i(168780),	-- Pattern: Banded Cragscale Greaves
 				}),
 				i(168726, {	-- Reinforced Cragscale Greaves [Horde]
-					["g"] = {
-						i(168780),	-- Pattern: Banded Cragscale Greaves
-					},
+					i(168780),	-- Pattern: Banded Cragscale Greaves
 				}),
 				i(168708, {	-- Reinforced Dredged Leggings [Alliance]
-					["g"] = {
-						i(168776),	-- Pattern: Banded Dredged Leggings
-					},
+					i(168776),	-- Pattern: Banded Dredged Leggings
 				}),
 				i(168714, {	-- Reinforced Dredged Leggings [Horde]
-					["g"] = {
-						i(168776),	-- Pattern: Banded Dredged Leggings
-					},
+					i(168776),	-- Pattern: Banded Dredged Leggings
 				}),
 				i(161957),	-- Shimmerscale Greaves [Alliance]
 				i(154150),	-- Shimmerscale Leggings [Horde]
@@ -202,24 +182,16 @@ _.Craftables =
 				i(161939),	-- Coarse Leather Treads [Alliance]
 				i(154139),	-- Coarse Leather Treads [Horde]
 				i(168716, {	-- Cragscale Boots [Alliance]
-					["g"] = {
-						i(168777),	-- Recipe: Reinforced Cragscale Boots
-					},
+					i(168777),	-- Recipe: Reinforced Cragscale Boots
 				}),
 				i(168722, {	-- Cragscale Boots [Horde]
-					["g"] = {
-						i(168777),	-- Recipe: Reinforced Cragscale Boots
-					},
+					i(168777),	-- Recipe: Reinforced Cragscale Boots
 				}),
 				i(168704, {	-- Dredged Leather Boots [Alliance]
-					["g"] = {
-						i(168773),	-- Recipe: Reinforced Dredged Boots
-					},
+					i(168773),	-- Recipe: Reinforced Dredged Boots
 				}),
 				i(168710, {	-- Dredged Leather Boots [Horde]
-					["g"] = {
-						i(168773),	-- Recipe: Reinforced Dredged Boots
-					},
+					i(168773),	-- Recipe: Reinforced Dredged Boots
 				}),
 				i(162481),	-- Emblazoned Mistscale Boots [Alliance]
 				i(162472),	-- Emblazoned Mistscale Boots [Horde]
@@ -244,38 +216,26 @@ _.Craftables =
 				i(162493),	-- Imbued Tempest Boots [Alliance]
 				i(162467),	-- Imbued Tempest Boots [Horde]
 				i(161961, {	-- Mistscale Boots [Alliance]
-					["g"] = {
-						i(162503),	-- Recipe: Imbued Mistscale Boots
-					},
+					i(162503),	-- Recipe: Imbued Mistscale Boots
 				}),
 				i(154156, {	-- Mistscale Boots [Horde]
-					["g"] = {
-						i(162503),	-- Recipe: Imbued Mistscale Boots
-					},
+					i(162503),	-- Recipe: Imbued Mistscale Boots
 				}),
 				i(167951),	-- Notorious Combatant's Leather Treads [Alliance]
 				i(167950),	-- Notorious Combatant's Leather Treads [Horde]
 				i(167961),	-- Notorious Combatant's Mail Treads [Alliance]
 				i(167960),	-- Notorious Combatant's Mail Treads [Horde]
 				i(168717, {	-- Reinforced Cragscale Boots [Alliance]
-					["g"] = {
-						i(168778),	-- Recipe: Banded Cragscale Boots
-					},
+					i(168778),	-- Recipe: Banded Cragscale Boots
 				}),
 				i(168723, {	-- Reinforced Cragscale Boots [Horde]
-					["g"] = {
-						i(168778),	-- Recipe: Banded Cragscale Boots
-					},
+					i(168778),	-- Recipe: Banded Cragscale Boots
 				}),
 				i(168705, {	-- Reinforced Dredged Boots [Alliance]
-					["g"] = {
-						i(168774),	-- Recipe: Banded Dredge Boots
-					},
+					i(168774),	-- Recipe: Banded Dredge Boots
 				}),
 				i(168711, {	-- Reinforced Dredged Boots [Horde]
-					["g"] = {
-						i(168774),	-- Recipe: Banded Dredge Boots
-					},
+					i(168774),	-- Recipe: Banded Dredge Boots
 				}),
 				i(161954),	-- Shimmerscale Treads [Alliance]
 				i(154147),	-- Shimmerscale Treads [Horde]

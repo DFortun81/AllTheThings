@@ -15,529 +15,331 @@ _.Craftables =
 			}),
 		}),
 		n(-181, { 	-- Blacksmithing
-		-- Reviewed and updated as of 12.03.2018 BfA 8.0
 			filter(20, {	-- Daggers
-				{	-- Adamantite Dagger
-					["itemID"] = 23504,	-- Adamantite Dagger
-				},
-				{	-- Dirge
-					["itemID"] = 23555,	-- Dirge
-				},
-				{	-- Eternium Runed Blade
-					["itemID"] = 23554,	-- Eternium Runed Blade
-				},
+				i(23504),	-- Adamantite Dagger
+				i(23555),	-- Dirge
+				i(23554),	-- Eternium Runed Blade
 			}),
 			filter(21, {	-- 1H Axes
-				{	-- Black Planar Edge
-					["itemID"] = 28432,	-- Black Planar Edge
+				i(28432, {	-- Black Planar Edge
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Fel Edged Battleaxe
-					["itemID"] = 23542,	-- Fel Edged Battleaxe
-				},
-				{	-- Fel Iron Hatchet
-					["itemID"] = 23497,	-- Fel Iron Hatchet
-				},
-				{	-- Light Skyforged Axe
-					["itemID"] = 30072,	-- Light Skyforged Axe
+				}),
+				i(23542),	-- Fel Edged Battleaxe
+				i(23497),	-- Fel Iron Hatchet
+				i(30072, {	-- Light Skyforged Axe
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Stormforged Axe
-					["itemID"] = 30087,	-- Stormforged Axe
-				},
-				{	-- The Planar Edge
-					["itemID"] = 28431,	-- The Planar Edge
+				}),
+				i(30087),	-- Stormforged Axe
+				i(28431, {	-- The Planar Edge
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Wicked Edge of the Planes
-					["itemID"] = 28433,	-- Wicked Edge of the Planes
+				}),
+				i(28433, {	-- Wicked Edge of the Planes
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
+				}),
 			}),
 			filter(22, {	-- 2H Axes
-				{	-- Adamantite Cleaver
-					["itemID"] = 23503,	-- Adamantite Cleaver
-				},
-				{	-- Bloodmoon
-					["itemID"] = 28436,	-- Bloodmoon
+				i(23503),	-- Adamantite Cleaver
+				i(28436, {	-- Bloodmoon
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Felsteel Reaper
-					["itemID"] = 23543,	-- Felsteel Reaper
-				},
-				{	-- Lunar Crescent
-					["itemID"] = 28434,	-- Lunar Crescent
+				}),
+				i(23543),	-- Felsteel Reaper
+				i(28434, {	-- Lunar Crescent
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Mooncleaver
-					["itemID"] = 28435,	-- Mooncleaver
+				}),
+				i(28435, {	-- Mooncleaver
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Skyforged Great Axe
-					["itemID"] = 30088,	-- Skyforged Great Axe
+				}),
+				i(30088, {	-- Skyforged Great Axe
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 						"added 7.1.5.23360",
 					},
-				},
+				}),
 			}),
 			filter(23, {	-- 1H Maces
-				{	-- Dragonmaw
-					["itemID"] = 28438,	-- Dragonmaw
+				i(28438, {	-- Dragonmaw
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Dragonstrike
-					["itemID"] = 28439,	-- Dragonstrike
+				}),
+				i(28439, {	-- Dragonstrike
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Drakefist Hammer
-					["itemID"] = 28437,	-- Drakefist Hammer
+				}),
+				i(28437, {	-- Drakefist Hammer
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Fel Iron Hammer
-					["itemID"] = 23498,	-- Fel Iron Hammer
-				},
-				{	-- Hand of Eternity
-					["itemID"] = 23556,	-- Hand of Eternity
-				},
-				{	-- Lavaforged Warhammer
-					["itemID"] = 30089,	-- Lavaforged Warhammer
+				}),
+				i(23498),	-- Fel Iron Hammer
+				i(23556),	-- Hand of Eternity
+				i(30089, {	-- Lavaforged Warhammer
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 						"added 7.1.5.23360",
 					},
-				},
-				{	-- Light Emberforged Hammer
-					["itemID"] = 30073,	-- Light Emberforged Hammer
+				}),
+				i(30073, {	-- Light Emberforged Hammer
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Runic Hammer
-					["itemID"] = 23544,	-- Runic Hammer
-				},
+				}),
+				i(23544),	-- Runic Hammer
 			}),
 			filter(24, {	-- 2H Maces
-				{	-- Adamantite Maul
-					["itemID"] = 23502,	-- Adamantite Maul
-				},
-				{	-- Deep Thunder
-					["itemID"] = 28441,	-- Deep Thunder
+				i(23502),	-- Adamantite Maul
+				i(28441, {	-- Deep Thunder
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Fel Hardened Maul
-					["itemID"] = 23546,	-- Fel Hardened Maul
-				},
-				{	-- Great Earthforged Hammer
-					["itemID"] = 30093,	-- Great Earthforged Hammer
+				}),
+				i(23546),	-- Fel Hardened Maul
+				i(30093, {	-- Great Earthforged Hammer
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 						"added 7.1.5.23360",
 					},
-				},
-				{	-- Hammer of Righteous Might
-					["itemID"] = 32854,	-- Hammer of Righteous Might
-				},
-				{	-- Stormherald
-					["itemID"] = 28442,	-- Stormherald
+				}),
+				i(32854),	-- Hammer of Righteous Might
+				i(28442, {	-- Stormherald
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Thunder
-					["itemID"] = 28440,	-- Thunder
+				}),
+				i(28440, {	-- Thunder
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
+				}),
 			}),
 			filter(25, {	-- 1H Swords
-				{	-- Adamantite Rapier
-					["itemID"] = 23505,	-- Adamantite Rapier
-				},
-				{	-- Blazefury
-					["itemID"] = 28427,	-- Blazefury
+				i(23505),	-- Adamantite Rapier
+				i(28427, {	-- Blazefury
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Blazeguard
-					["itemID"] = 28426,	-- Blazeguard
+				}),
+				i(28426, {	-- Blazeguard
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Felsteel Longblade
-					["itemID"] = 23540,	-- Felsteel Longblade
-				},
-				{	-- Fireguard
-					["itemID"] = 28425,	-- Fireguard
+				}),
+				i(23540),	-- Felsteel Longblade
+				i(28425, {	-- Fireguard
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Windforged Rapier
-					["itemID"] = 30077,	-- Windforged Rapier
+				}),
+				i(30077, {	-- Windforged Rapier
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 						"added 7.1.5.23360",
 					},
-				},
+				}),
 			}),
 			filter(26, {	-- 2H Swords
-				{	-- Fel Iron Greatsword
-					["itemID"] = 23499,	-- Fel Iron Greatsword
-				},
-				{	-- Khorium Champion
-					["itemID"] = 23541,	-- Khorium Champion
-				},
-				{	-- Lionheart Blade
-					["itemID"] = 28428,	-- Lionheart Blade
+				i(23499),	-- Fel Iron Greatsword
+				i(23541),	-- Khorium Champion
+				i(28428, {	-- Lionheart Blade
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Lionheart Champion
-					["itemID"] = 28429,	-- Lionheart Champion
+				}),
+				i(28429, {	-- Lionheart Champion
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Lionheart Executioner
-					["itemID"] = 28430,	-- Lionheart Executioner
+				}),
+				i(28430, {	-- Lionheart Executioner
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Stoneforged Claymore
-					["itemID"] = 30086,	-- Stoneforged Claymore
+				}),
+				i(30086, {	-- Stoneforged Claymore
 					["timeline"] = {
 						"added 2.1.0.6692",
 						"removed 4.0.1.13287",
 						"added 7.1.5.23360",
 					},
-				},
+				}),
 			}),
 			n(-320, {		-- Head
-				{	-- Fel Iron Chain Coif
-					["itemID"] = 23493,	-- Fel Iron Chain Coif
-				},
-				{	-- Felsteel Helm
-					["itemID"] = 23519,	-- Felsteel Helm
-				},
-				{	-- Flamebane Helm
-					["itemID"] = 23516,	-- Flamebane Helm
-				},
-				{	-- Helm of the Stalwart Defender
-					["itemID"] = 23535,	-- Helm of the Stalwart Defender
-				},
-				{	-- Iceguard Helm
-					["itemID"] = 31371,	-- Iceguard Helm
-				},
-				{	-- Oathkeeper's Helm
-					["itemID"] = 23536,	-- Oathkeeper's Helm
-				},
-				{	-- Ragesteel Helm
-					["itemID"] = 23521,	-- Ragesteel Helm
-				},
-				{	-- Storm Helm
-					["itemID"] = 23534,	-- Storm Helm
-				},
-				{	-- Wildguard Helm
-					["itemID"] = 31368,	-- Wildguard Helm
-				},
+				i(23493),	-- Fel Iron Chain Coif
+				i(23519),	-- Felsteel Helm
+				i(23516),	-- Flamebane Helm
+				i(23535),	-- Helm of the Stalwart Defender
+				i(31371),	-- Iceguard Helm
+				i(23536),	-- Oathkeeper's Helm
+				i(23521),	-- Ragesteel Helm
+				i(23534),	-- Storm Helm
+				i(31368),	-- Wildguard Helm
 			}),
 			n(-321, {		-- Shoulders
-				{	-- Dawnsteel Shoulders
-					["itemID"] = 32573,	-- Dawnsteel Shoulders
-				},
-				{	-- Ragesteel Shoulders
-					["itemID"] = 33173,	-- Ragesteel Shoulders
-				},
-				{	-- Swiftsteel Shoulders
-					["itemID"] = 32570,	-- Swiftsteel Shoulders
-				},
+				i(32573),	-- Dawnsteel Shoulders
+				i(33173),	-- Ragesteel Shoulders
+				i(32570),	-- Swiftsteel Shoulders
 			}),
 			n(-323, {		-- Chest
-				{	-- Adamantite Breastplate
-					["itemID"] = 23507,	-- Adamantite Breastplate
-				},
-				{	-- Breastplate of Kings
-					["itemID"] = 28483,	-- Breastplate of Kings
+				i(23507),	-- Adamantite Breastplate
+				i(28483, {	-- Breastplate of Kings
 					["timeline"] = {
 						"added 2.1.0.6655",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Bulwark of Kings
-					["itemID"] = 28484,	-- Bulwark of Kings
+				}),
+				i(28484, {	-- Bulwark of Kings
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Bulwark of the Ancient Kings
-					["itemID"] = 28485,	-- Bulwark of the Ancient Kings
+				}),
+				i(28485, {	-- Bulwark of the Ancient Kings
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Earthpeace Breastplate
-					["itemID"] = 23527,	-- Earthpeace Breastplate
-				},
-				{	-- Embrace of the Twisting Nether
-					["itemID"] = 23565,	-- Embrace of the Twisting Nether
+				}),
+				i(23527),	-- Earthpeace Breastplate
+				i(23565, {	-- Embrace of the Twisting Nether
 					["timeline"] = {
 						"added 2.1.0.6692",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Enchanted Adamantite Breastplate
-					["itemID"] = 23509,	-- Enchanted Adamantite Breastplate
-				},
-				{	-- Fel Iron Breastplate
-					["itemID" ] = 23489,	-- Fel Iron Breastplate
-				},
-				{	-- Fel Iron Chain Tunic
-					["itemID"] = 23490,	-- Fel Iron Chain Tunic
-				},
-				{	-- Flamebane Breastplate
-					["itemID"] = 23513,	-- Flamebane Breastplate
-				},
-				{	-- Hard Khorium Battleplate
-					["itemID"] = 34377,	-- Hard Khorium Battleplate
-				},
-				{	-- Heavy Earthforged Breastplate
-					["itemID"] = 30074,	-- Heavy Earthforged Breastplate
+				}),
+				i(23509),	-- Enchanted Adamantite Breastplate
+				i(23489),	-- Fel Iron Breastplate
+				i(23490),	-- Fel Iron Chain Tunic
+				i(23513),	-- Flamebane Breastplate
+				i(34377),	-- Hard Khorium Battleplate
+				i(30074, {	-- Heavy Earthforged Breastplate
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Iceguard Breastplate
-					["itemID"] = 31369,	-- Iceguard Breastplate
-				},
-				{	-- Nether Plate Shirt
-					["itemID"] = 23563,	-- Nether Plate Shirt
+				}),
+				i(31369),	-- Iceguard Breastplate
+				i(23563, {	-- Nether Plate Shirt
 					["timeline"] = {
 						"added 2.1.0.6655",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Ragesteel Breastplate
-					["itemID"] = 23522,	-- Ragesteel Breastplate
-				},
-				{	-- Stormforged Hauberk
-					["itemID"] = 30076,	-- Stormforged Hauberk
+				}),
+				i(23522),	-- Ragesteel Breastplate
+				i(30076, {	-- Stormforged Hauberk
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Sunblessed Breastplate
-					["itemID"] = 34379,	-- Sunblessed Breastplate
-				},
-				{	-- Twisting Nether Plate Shirt
-					["itemID"] = 23564,	-- Twisting Nether Plate Shirt
+				}),
+				i(34379),	-- Sunblessed Breastplate
+				i(23564, {	-- Twisting Nether Plate Shirt
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Wildguard Breastplate
-					["itemID"] = 31364,	-- Wildguard Breastplate
-				},
+				}),
+				i(31364),	-- Wildguard Breastplate
 			}),
 			n(-327, {		-- Hands
-				{	-- Adamantite Plate Gloves
-					["itemID"] = 23508,	-- Adamantite Plate Gloves
-				},
-				{	-- Fel Iron Chain Gloves
-					["itemID"] = 23491,	-- Fel Iron Chain Gloves
-				},
-				{	-- Fel Iron Plate Gloves
-					["itemID"] = 23482,	-- Fel Iron Plate Gloves
-				},
-				{	-- Felfury Gauntlets
-					["itemID"] = 23531,	-- Felfury Gauntlets
-				},
-				{	-- Felsteel Gloves
-					["itemID"] = 23517,	-- Felsteel Gloves
-				},
-				{	-- Flamebane Gloves
-					["itemID"] = 23514,	-- Flamebane Gloves
-				},
-				{	-- Gauntlets of the Iron Tower
-					["itemID"] = 23532,	-- Gauntlets of the Iron Tower
-				},
-				{	-- Hard Khorium Battlefists
-					["itemID"] = 34378,	-- Hard Khorium Battlefists
-				},
-				{	-- Ragesteel Gloves
-					["itemID"] = 23520,	-- Ragesteel Gloves
-				},
-				{	-- Steelgrip Gauntlets
-					["itemID"] = 23533,	-- Steelgrip Gauntlets
-				},
-				{	-- Sunblessed Gauntlets
-					["itemID"] = 34380,	-- Sunblessed Gauntlets
-				},
-				{	-- Swiftsteel Gloves
-					["itemID"] = 23526,	-- Swiftsteel Gloves
-				},
+				i(23508),	-- Adamantite Plate Gloves
+				i(23491),	-- Fel Iron Chain Gloves
+				i(23482),	-- Fel Iron Plate Gloves
+				i(23531),	-- Felfury Gauntlets
+				i(23517),	-- Felsteel Gloves
+				i(23514),	-- Flamebane Gloves
+				i(23532),	-- Gauntlets of the Iron Tower
+				i(34378),	-- Hard Khorium Battlefists
+				i(23520),	-- Ragesteel Gloves
+				i(23533),	-- Steelgrip Gauntlets
+				i(34380),	-- Sunblessed Gauntlets
+				i(23526),	-- Swiftsteel Gloves
 			}),
 			n(-326, {		-- Wrist
-				{	-- Adamantite Plate Bracers
-					["itemID"] = 23506,	-- Adamantite Plate Bracers
-				},
-				{	-- Black Felsteel Bracers
-					["itemID"] = 23537,	-- Black Felsteel Bracers
-				},
-				{	-- Blessed Bracers
-					["itemID"] = 23539,	-- Blessed Bracers
-				},
-				{	-- Bracers of the Green Fortress
-					["itemID"] = 23538,	-- Bracers of the Green Fortress
-				},
-				{	-- Dawnsteel Bracers
-					["itemID"] = 32571,	-- Dawnsteel Bracers
-				},
-				{	-- Fel Iron Chain Bracers
-					["itemID"] = 23494,	-- Fel Iron Chain Bracers
-				},
-				{	-- Flamebane Bracers
-					["itemID"] = 23515,	-- Flamebane Bracers
-				},
-				{	-- Shadesteel Bracers
-					["itemID"] = 32403,	-- Shadesteel Bracers
-				},
-				{	-- Swiftsteel Bracers
-					["itemID"] = 32568,	-- Swiftsteel Bracers
-				},
+				i(23506),	-- Adamantite Plate Bracers
+				i(23537),	-- Black Felsteel Bracers
+				i(23539),	-- Blessed Bracers
+				i(23538),	-- Bracers of the Green Fortress
+				i(32571),	-- Dawnsteel Bracers
+				i(23494),	-- Fel Iron Chain Bracers
+				i(23515),	-- Flamebane Bracers
+				i(32403),	-- Shadesteel Bracers
+				i(32568),	-- Swiftsteel Bracers
 			}),
 			n(-328, {		-- Waist
-				{	-- Belt of the Guardian
-					["itemID"] = 30034,	-- Belt of the Guardian
-				},
-				{	-- Enchanted Adamantite Belt
-					["itemID"] = 23510,	-- Enchanted Adamantite Belt
-				},
-				{	-- Fel Iron Plate Belt
-					["itemID"] = 23484,	-- Fel Iron Plate Belt
-				},
-				{	-- Khorium Belt
-					["itemID"] = 23524,	-- Khorium Belt
-				},
-				{	-- Red Belt of Battle
-					["itemID"] = 30032,	-- Red Belt of Battle
-				},
-				{	-- Shadesteel Girdle
-					["itemID"] = 32401,	-- Shadesteel Girdle
-				},
+				i(30034),	-- Belt of the Guardian
+				i(23510),	-- Enchanted Adamantite Belt
+				i(23484),	-- Fel Iron Plate Belt
+				i(23524),	-- Khorium Belt
+				i(30032),	-- Red Belt of Battle
+				i(32401),	-- Shadesteel Girdle
 			}),
 			n(-329, {		-- Legs
-				{	-- Earthforged Leggings
-					["itemID"] = 30069,	-- Earthforged Leggings
+				i(30069, {	-- Earthforged Leggings
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Enchanted Adamantite Leggings
-					["itemID"] = 23512,	-- Enchanted Adamantite Leggings
-				},
-				{	-- Fel Iron Plate Pants
-					["itemID"] = 23488,	-- Fel Iron Plate Pants
-				},
-				{	-- Felsteel Leggings
-					["itemID"] = 23518,	-- Felsteel Leggings
-				},
-				{	-- Iceguard Leggings
-					["itemID"] = 31370,	-- Iceguard Leggings
-				},
-				{	-- Khorium Pants
-					["itemID"] = 23523,	-- Khorium Pants
-				},
-				{	-- Shadesteel Greaves
-					["itemID"] = 32404,	-- Shadesteel Greaves
-				},
-				{	-- Wildguard Leggings
-					["itemID"] = 31367,	-- Wildguard Leggings
-				},
-				{	-- Windforged Leggings
-					["itemID"] = 30070,	-- Windforged Leggings
+				}),
+				i(23512),	-- Enchanted Adamantite Leggings
+				i(23488),	-- Fel Iron Plate Pants
+				i(23518),	-- Felsteel Leggings
+				i(31370),	-- Iceguard Leggings
+				i(23523),	-- Khorium Pants
+				i(32404),	-- Shadesteel Greaves
+				i(31367),	-- Wildguard Leggings
+				i(30070, {	-- Windforged Leggings
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
+				}),
 			}),
 			n(-330, {		-- Feet
-				{	-- Boots of the Protector
-					["itemID"] = 30033,	-- Boots of the Protector
-				},
-				{	-- Enchanted Adamantite Boots
-					["itemID"] = 23511,	-- Enchanted Adamantite Boots
-				},
-				{	-- Fel Iron Plate Boots
-					["itemID"] = 23487,	-- Fel Iron Plate Boots
-				},
-				{	-- Khorium Boots
-					["itemID"] = 23525,	-- Khorium Boots
-				},
-				{	-- Red Havoc Boots
-					["itemID"] = 30031,	-- Red Havoc Boots
-				},
-				{	-- Shadesteel Sabots
-					["itemID"] = 32402,	-- Shadesteel Sabots
-				},
+				i(30033),	-- Boots of the Protector
+				i(23511),	-- Enchanted Adamantite Boots
+				i(23487),	-- Fel Iron Plate Boots
+				i(23525),	-- Khorium Boots
+				i(30031),	-- Red Havoc Boots
+				i(32402),	-- Shadesteel Sabots
 			}),
 		}),
 		n(-183, { 	-- Engineering
@@ -603,7 +405,6 @@ _.Craftables =
 			}),
 		}),
 		n(-185, { 	-- Inscription
-		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, {	-- Tarot Cards
 				-- Blessings Deck
 				i(31882),	-- Ace of Blessings
@@ -646,249 +447,134 @@ _.Craftables =
 				i(31893),	-- Eight of Storms
 			}),
 			filter(1, {	-- Off-hand
-				{	-- Book of Clever Tricks
-					["itemID"] = 43667,	-- Book of Clever Tricks
-				},
-				{	-- Hellfire Tome
-					["itemID"] = 43666,	-- Hellfire Tome
-				},
+				i(43667),	-- Book of Clever Tricks
+				i(43666),	-- Hellfire Tome
 			}),
 		}),
 		n(-186, { 	-- Jewelcrafting
-		-- Reviewed and updated as of 11.26.2018 BfA 8.0
 			n(-320, {		-- Head
-				{	-- Circlet of Arcane Might
-					["itemID"] = 24123,	-- Circlet of Arcane Might
-				},
-				{	-- Coronet of Verdant Flame
-					["itemID"] = 24122,	-- Coronet of Verdant Flame
-				},
-				{	-- Crown of the Sea Witch
-					["itemID"] = 32776,	-- Crown of the Sea Witch
-				},
+				i(24123),	-- Circlet of Arcane Might
+				i(24122),	-- Coronet of Verdant Flame
+				i(32776),	-- Crown of the Sea Witch
 			}),
 			filter(51, {	-- Neck
-				{	-- Amulet of Flowing Life
-					["itemID" ] = 34360,	-- Amulet of Flowing Life
-				},
-				{	-- Braided Eternium Chain
-					["itemID"] = 24114,	-- Braided Eternium Chain
-				},
-				{	-- Chain of the Twilight Owl
-					["itemID"] = 24121,	-- Chain of the Twilight Owl
-				},
-				{	-- Embrace of the Dawn
-					["itemID"] = 24117,	-- Embrace of the Dawn
-				},
-				{	-- Eye of the Night
-					["itemID"] = 24116,	-- Eye of the Night
-				},
-				{	-- Hard Khorium Choker
-					["itemID" ] = 34358,	-- Hard Khorium Choker
-				},
-				{	-- Living Ruby Pendant
-					["itemID"] = 24110,	-- Living Ruby Pendant
-				},
-				{	-- Necklace of the Deep
-					["itemID"] = 32508,	-- Necklace of the Deep
-				},
-				{	-- Pendant of Frozen Flame
-					["itemID"] = 24092,	-- Pendant of Frozen Flame
-				},
-				{	-- Pendant of Shadow's End
-					["itemID"] = 24097,	-- Pendant of Shadow's End
-				},
-				{	-- Pendant of Sunfire
-					["itemID"] = 34359,	-- Pendant of Sunfire
-				},
-				{	-- Pendant of Thawing
-					["itemID"] = 24093,	-- Pendant of Thawing
-				},
-				{	-- Pendant of the Null Rune
-					["itemID"] = 24098,	-- Pendant of the Null Rune
-				},
-				{	-- Thick Adamantite Necklace
-					["itemID"] = 24077,	-- Thick Adamantite Necklace
-				},
-				{	-- Thick Felsteel Necklace
-					["itemID"] = 24106,	-- Thick Felsteel Necklace
-				},
-				{	-- Pendant of Withering
-					["itemID"] = 24095,	-- Pendant of Withering
-				},
+				i(34360),	-- Amulet of Flowing Life
+				i(24114),	-- Braided Eternium Chain
+				i(24121),	-- Chain of the Twilight Owl
+				i(24117),	-- Embrace of the Dawn
+				i(24116),	-- Eye of the Night
+				i(34358),	-- Hard Khorium Choker
+				i(24110),	-- Living Ruby Pendant
+				i(32508),	-- Necklace of the Deep
+				i(24092),	-- Pendant of Frozen Flame
+				i(24097),	-- Pendant of Shadow's End
+				i(34359),	-- Pendant of Sunfire
+				i(24093),	-- Pendant of Thawing
+				i(24098),	-- Pendant of the Null Rune
+				i(24077),	-- Thick Adamantite Necklace
+				i(24106),	-- Thick Felsteel Necklace
+				i(24095),	-- Pendant of Withering
 			}),
 			filter(52, {	-- Finger
-				{	-- Arcane Khorium Band
-					["itemID"] = 24086,	-- Arcane Khorium Band
-				},
-				{	-- Azure Moonstone Ring
-					["itemID"] = 24076,	-- Azure Moonstone Ring
-				},
-				{	-- Band of Natural Fire
-					["itemID"] = 21779,	-- Band of Natural Fire
-				},
-				{	-- Blazing Eternium Band
-					["itemID"] = 24089,	-- Blazing Eternium Band
-				},
-				{	-- Brilliant Pearl Band
-					["itemID"] = 32772,	-- Brilliant Pearl Band
-				},
-				{	-- Delicate Eternium Ring
-					["itemID"] = 24088,	-- Delicate Eternium Ring
-				},
-				{	-- Fel Iron Blood Ring
-					["itemID"] = 24074,	-- Fel Iron Blood Ring
-				},
-				{	-- Golden Draenite Ring
-					["itemID"] = 24075,	-- Golden Draenite Ring
-				},
-				{	-- Hard Khorium Band
-					["itemID"] = 34361,	-- Hard Khorium Band
-				},
-				{	-- Heavy Adamantite Ring
-					["itemID"] = 24078,	-- Heavy Adamantite Ring
-				},
-				{	-- Heavy Felsteel Ring
-					["itemID"] = 24087,	-- Heavy Felsteel Ring
-				},
-				{	-- Khorium Band of Frost
-					["itemID"] = 24080,	-- Khorium Band of Frost
-				},
-				{	-- Khorium Band of Leaves
-					["itemID"] = 24085,	-- Khorium Band of Leaves
-				},
-				{	-- Khorium Band of Shadows
-					["itemID"] = 24079,	-- Khorium Band of Shadows
-				},
-				{	-- Khorium Inferno Band
-					["itemID"] = 24082,	-- Khorium Inferno Band
-				},
-				{	-- Loop of Forged Power
-					["itemID"] = 34362,	-- Loop of Forged Power
-				},
-				{	-- Ring of Arcane Shielding
-					["itemID"] = 30825,	-- Ring of Arcane Shielding
-				},
-				{	-- Ring of Flowing Life
-					["itemID"] = 34363,	-- Ring of Flowing Life
-				},
-				{	-- The Black Pearl
-					["itemID"] = 32774,	-- The Black Pearl
-				},
-				{	-- The Frozen Eye
-					["itemID"] = 31398,	-- The Frozen Eye
-				},
-				{	-- The Natural Ward
-					["itemID"] = 31399,	-- The Natural Ward
-				},
+				i(24086),	-- Arcane Khorium Band
+				i(24076),	-- Azure Moonstone Ring
+				i(21779),	-- Band of Natural Fire
+				i(24089),	-- Blazing Eternium Band
+				i(32772),	-- Brilliant Pearl Band
+				i(24088),	-- Delicate Eternium Ring
+				i(24074),	-- Fel Iron Blood Ring
+				i(24075),	-- Golden Draenite Ring
+				i(34361),	-- Hard Khorium Band
+				i(24078),	-- Heavy Adamantite Ring
+				i(24087),	-- Heavy Felsteel Ring
+				i(24080),	-- Khorium Band of Frost
+				i(24085),	-- Khorium Band of Leaves
+				i(24079),	-- Khorium Band of Shadows
+				i(24082),	-- Khorium Inferno Band
+				i(34362),	-- Loop of Forged Power
+				i(30825),	-- Ring of Arcane Shielding
+				i(34363),	-- Ring of Flowing Life
+				i(32774),	-- The Black Pearl
+				i(31398),	-- The Frozen Eye
+				i(31399),	-- The Natural Ward
 			}),
 			filter(53, {	-- Trinket
-				{	-- Figurine - Crimson Serpent
-					["itemID"] = 35700,	-- Figurine - Crimson Serpent
-				},
-				{	-- Figurine - Dawnstone Crab
-					["itemID"] = 24125,	-- Figurine - Dawnstone Crab
-				},
-				{	-- Figurine - Empyrean Tortoise
-					["itemID"] = 35693,	-- Figurine - Empyrean Tortoise
-				},
-				{	-- Figurine - Felsteel Boar
-					["itemID"] = 24124,	-- Figurine - Felsteel Boar
-				},
-				{	-- Figurine - Khorium Boar
-					["itemID"] = 35694,	-- Figurine - Khorium Boar
-				},
-				{	-- Figurine - Living Ruby Serpent
-					["itemID"] = 24126,	-- Figurine - Living Ruby Serpent
-				},
-				{	-- Figurine - Nightseye Panther
-					["itemID"] = 24128,	-- Figurine - Nightseye Panther
-				},
-				{	-- Figurine - Seaspray Albatross
-					["itemID"] = 35703,	-- Figurine - Seaspray Albatross
-				},
-				{	-- Figurine - Shadowsong Panther
-					["itemID"] = 35702,	-- Figurine - Shadowsong Panther
-				},
-				{	-- Figurine - Talasite Owl
-					["itemID"] = 24127,	-- Figurine - Talasite Owl
-				},
+				i(35700),	-- Figurine - Crimson Serpent
+				i(24125),	-- Figurine - Dawnstone Crab
+				i(35693),	-- Figurine - Empyrean Tortoise
+				i(24124),	-- Figurine - Felsteel Boar
+				i(35694),	-- Figurine - Khorium Boar
+				i(24126),	-- Figurine - Living Ruby Serpent
+				i(24128),	-- Figurine - Nightseye Panther
+				i(35703),	-- Figurine - Seaspray Albatross
+				i(35702),	-- Figurine - Shadowsong Panther
+				i(24127),	-- Figurine - Talasite Owl
 			}),
 		}),
 		n(-187, { 	-- Leatherworking
 			filter(113, {	-- Bags
-				{	-- Knothide Ammo Pouch
-					["itemID"] = 34099,	-- Knothide Ammo Pouch
+				i(34099, {	-- Knothide Ammo Pouch
 					["timeline"] = {
 						"added 2.3.0.7382",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Quiver of a Thousand Feathers
-					["itemID"] = 34105,	-- Quiver of a Thousand Feathers
+				}),
+				i(34105, {	-- Quiver of a Thousand Feathers
 					["timeline"] = {
 						"added 2.3.0.7382",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Reinforced Mining Bag
-					["itemID"] = 29540,	-- Reinforced Mining Bag
+				}),
+				i(29540, {	-- Reinforced Mining Bag
 					["timeline"] = {
 						"added 2.0.1.6180",
 					},
-				},
+				}),
 			}),	
 			n(-322, { 	-- Cloak
-				{	-- Cloak of Darkness
-					["itemID"] = 33122,	-- Cloak of Darkness
+				i(33122, {	-- Cloak of Darkness
 					["timeline"] = {
 						"added 2.2.0.6983",
 					},
-				},
+				}),
 			}),
 			n(-44, { 	-- Leather
-				{	-- Primalstrike Belt
-					["itemID"] = 29526,	-- Primalstrike Belt
+				i(29526, {	-- Primalstrike Belt
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Primalstrike Bracers
-					["itemID"] = 29527,	-- Primalstrike Bracers
+				}),
+				i(29527, {	-- Primalstrike Bracers
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Primalstrike Vest
-					["itemID"] = 29525,	-- Primalstrike Vest
+				}),
+				i(29525, {	-- Primalstrike Vest
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Windhawk Belt
-					["itemID"] = 29524,	-- Windhawk Belt
+				}),
+				i(29524, {	-- Windhawk Belt
 					["timeline"] = {
 						"added 2.1.0.6655",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Windhawk Bracers
-					["itemID"] = 29523,	-- Windhawk Bracers
+				}),
+				i(29523, {	-- Windhawk Bracers
 					["timeline"] = {
 						"added 2.1.0.6655",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Windhawk Hauberk
-					["itemID"] = 29522,	-- Windhawk Hauberk
+				}),
+				i(29522, {	-- Windhawk Hauberk
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
+				}),
 				i(30040),	-- Belt of Deep Shadow
 				i(30042),	-- Belt of Natural Power
 				i(29964),	-- Blackstorm Leggings
@@ -941,48 +627,42 @@ _.Craftables =
 				i(29507),	-- Windslayer Wraps
 			}),
 			n(-45, { 	-- Mail
-				{	-- Ebon Netherscale Belt
-					["itemID"] = 29516,	-- Ebon Netherscale Belt
+				i(29516, {	-- Ebon Netherscale Belt
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Ebon Netherscale Bracers
-					["itemID"] = 29517,	-- Ebon Netherscale Bracers
+				}),
+				i(29517, {	-- Ebon Netherscale Bracers
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Ebon Netherscale Breastplate
-					["itemID"] = 29515,	-- Ebon Netherscale Breastplate
+				}),
+				i(29515, {	-- Ebon Netherscale Breastplate
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Netherstrike Belt
-					["itemID"] = 29520,	-- Netherstrike Belt
+				}),
+				i(29520, {	-- Netherstrike Belt
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Netherstrike Bracers
-					["itemID"] = 29521,	-- Netherstrike Bracers
+				}),
+				i(29521, {	-- Netherstrike Bracers
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Netherstrike Breastplate
-					["itemID"] = 29519,	-- Netherstrike Breastplate
+				}),
+				i(29519, {	-- Netherstrike Breastplate
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 					},
-				},
+				}),
 				i(30046),	-- Belt of the Black Eagle
 				i(32574),	-- Bindings of Lightning Reflexes
 				i(32398),	-- Boots of Shackled Souls

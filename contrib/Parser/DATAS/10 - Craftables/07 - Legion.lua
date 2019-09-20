@@ -6,6 +6,7 @@ _.Craftables =
 	tier(7, {	-- Legion
 		n(-180, {	-- Alchemy
 			n(-37, {	-- Discovery
+				["requireSkill"] = 171,	-- Alchemy
 				["groups"] = {
 					spell(188299, {	-- Ancient Healing Potion (Rank 2)
 						i(127935),	-- Recipe: Ancient Healing Potion (Rank 3)
@@ -78,22 +79,19 @@ _.Craftables =
 						i(127946),	-- Recipe: Unbending Potion (Rank 3)
 					}),
 					spell(188800, {	-- Wild Transformation
-						["groups"] = {
-							i(128210),	-- Recipe: Wild Transmutation (Rank 2)
-							i(128211),	-- Recipe: Wild Transmutation (Rank 3)
-							recipe(213257),	-- Transmute: Blood of Sargeras
-							recipe(213252),	-- Transmute: Cloth to Herbs
-							recipe(213249),	-- Transmute: Cloth to Skins
-							recipe(213254),	-- Transmute: Fish to Gems
-							recipe(213255),	-- Transmute: Meat to Pants
-							recipe(213256),	-- Transmute: Meat to Pet
-							recipe(213248),	-- Transmute: Ore to Cloth
-							recipe(213251),	-- Transmute: Ore to Herbs
-							recipe(213253),	-- Transmute: Skins to Herbs
-						},
+						i(128210),	-- Recipe: Wild Transmutation (Rank 2)
+						i(128211),	-- Recipe: Wild Transmutation (Rank 3)
+						recipe(213257),	-- Transmute: Blood of Sargeras
+						recipe(213252),	-- Transmute: Cloth to Herbs
+						recipe(213249),	-- Transmute: Cloth to Skins
+						recipe(213254),	-- Transmute: Fish to Gems
+						recipe(213255),	-- Transmute: Meat to Pants
+						recipe(213256),	-- Transmute: Meat to Pet
+						recipe(213248),	-- Transmute: Ore to Cloth
+						recipe(213251),	-- Transmute: Ore to Herbs
+						recipe(213253),	-- Transmute: Skins to Herbs
 					}),
 				},
-				["requireSkill"] = 171,	-- Alchemy
 			}),
 			filter(101, { 	-- Pet Battle
 				i(137599, {	-- Pulsating Sac
@@ -130,95 +128,48 @@ _.Craftables =
 			}),
 		}),
 		n(-181, {	-- Blacksmithing
-		-- Reviewed and updated as of 12.14.2018 BfA 8.0
 			filter(100, {	-- Mounts
-				{	-- Steelbound Harness
-					["itemID"] = 137686,	-- Steelbound Harness
-				},
+				i(137686),	-- Steelbound Harness
 			}),
 			filter(54, {	-- Relics
-				{	-- Consecrated Spike
-					["itemID"] = 136685,	-- Consecrated Spike
-				},
-				{	-- Flamespike
-					["itemID"] = 136686,	-- Flamespike
-				},
-				{	-- Gleaming Iron Spike
-					["itemID"] = 136684,	-- Gleaming Iron Spike
-				},
-				{	-- Terrorspike
-					["itemID"] = 136683,	-- Terrorspike
-				},
+				i(136685),	-- Consecrated Spike
+				i(136686),	-- Flamespike
+				i(136684),	-- Gleaming Iron Spike
+				i(136683),	-- Terrorspike
 			}),
 			n(-320, {		-- Head
-				{	-- Demonsteel Helm
-					["itemID"] = 123913,	-- Demonsteel Helm
-				},
-				{	-- Leystone Helm
-					["itemID"] = 123894,	-- Leystone Helm
-				},
+				i(123913),	-- Demonsteel Helm
+				i(123894),	-- Leystone Helm
 			}),
 			n(-321, {		-- Shoulders
-				{	-- Demonsteel Pauldrons
-					["itemID"] = 123915,
-				},
-				{	-- Leystone Pauldrons
-					["itemID"] = 123896,	-- Leystone Pauldrons
-				},
+				i(123915),	-- Demonsteel Pauldrons
+				i(123896),	-- Leystone Pauldrons
 			}),
 			n(-323, {		-- Chest
-				{	-- Demonsteel Breastplate
-					["itemID"] = 123910,	-- Demonsteel Breastplate
-				},
-				{	-- Empyrial Breastplate
-					["itemID"] = 151576,	-- Empyrial Breastplate
-				},
-				{	-- Leystone Breastplate
-					["itemID"] = 123891,	-- Leystone Breastplate
-				},
+				i(123910),	-- Demonsteel Breastplate
+				i(151576),	-- Empyrial Breastplate
+				i(123891),	-- Leystone Breastplate
 			}),
 			n(-327, {		-- Hands
-				{	-- Demonsteel Gauntlets
-					["itemID"] = 123912,	-- Demonsteel Gauntlets
-				},
-				{	-- Leystone Gauntlets
-					["itemID"] = 123893,	-- Leystone Gauntlets
-				},
+				i(123912),	-- Demonsteel Gauntlets
+				i(123893),	-- Leystone Gauntlets
 			}),
 			n(-326, {		-- Wrist
-				{	-- Demonsteel Armguards
-					["itemID"] = 123917,	-- Demonsteel Armguards
-				},
-				{	-- Leystone Armguards
-					["itemID"] = 123898,	-- Leystone Armguards
-				},
+				i(123917),	-- Demonsteel Armguards
+				i(123898),	-- Leystone Armguards
 			}),
 			n(-328, {		-- Waist
-				{	-- Demonsteel Waistguard
-					["itemID"] = 123916,	-- Demonsteel Waistguard
-				},
-				{	-- Leystone Waistguard
-					["itemID"] = 123897,	-- Leystone Waistguard
-				},
-				{	-- Rethu's Incessant Courage
-					["itemID"] = 146667,	-- Rethu's Incessant Courage
-				},
+				i(123916),	-- Demonsteel Waistguard
+				i(123897),	-- Leystone Waistguard
+				i(146667),	-- Rethu's Incessant Courage
 			}),
 			n(-329, {		-- Legs
-				{	-- Demonsteel Greaves
-					["itemID"] = 123914,	-- Demonsteel Greaves
-				},
-				{	-- Leystone Greaves
-					["itemID"] = 123895,	-- Leystone Greaves
-				},
+				i(123914),	-- Demonsteel Greaves
+				i(123895),	-- Leystone Greaves
 			}),
 			n(-330, {		-- Feet
-				{	-- Demonsteel Boots
-					["itemID"] = 123911,	-- Demonsteel Boots
-				},
-				{	-- Leystone Boots
-					["itemID"] = 123892,	-- Leystone Boots
-				},
+				i(123911),	-- Demonsteel Boots
+				i(123892),	-- Leystone Boots
 			}),
 		}),
 		n(-182, { 	-- Enchanting
@@ -260,6 +211,8 @@ _.Craftables =
 			n(-494, {	-- Miscellaneous
 				n(101527, {	-- Blingtron 6000
 					i(132892, {	-- Blingtron 6000 Gift Package
+						["questID"] = 40753,
+						["isDaily"] = true,
 						["groups"] = {
 							i(87250),	-- Depleted-Kyparium Rocket Mount
 							i(87251),	-- Geosynchronous World Spinner Mount
@@ -279,14 +232,11 @@ _.Craftables =
 							i(136629),	-- Felgibber Shotgun
 							i(136632),	-- Chaos Blaster
 						},
-						["questID"] = 40753,
-						["isDaily"] = true,
 					}),
 				}),
 			}),
 		}),
 		n(-185, {	-- Inscription
-		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, {	-- Tarot Cards
 				sp(191659, {	-- Darkmoon Card of the Legion
 					sp(191654, {	-- Dominion Deck
@@ -318,104 +268,43 @@ _.Craftables =
 			}),
 		}),
 		n(-186, {	-- Jewelcrafting
-		-- Reviewed and updated as of 11.27.2018 BfA 8.0
 			filter(102, {	-- Toy
-				{	-- Chatterstone
-					["itemID"] = 130254,	-- Chatterstone
-				},
-				{	-- JewelCraft
-					["itemID"] = 130251,	-- JewelCraft
-				},
+				i(130254),	-- Chatterstone
+				i(130251),	-- JewelCraft
 			}),
 			n(-320, {		-- Head
-				{	-- Empyrial Cosmic Crown
-					["itemID"] = 151587,	-- Empyrial Cosmic Crown
-				},
-				{	-- Empyrial Deep Crown
-					["itemID"] = 151588,	-- Empyrial Deep Crown
-				},
-				{	-- Empyrial Elemental Crown
-					["itemID"] = 151589,	-- Empyrial Elemental Crown
-				},
-				{	-- Empyrial Titan Crown
-					["itemID"] = 151590,	-- Empyrial Titan Crown
-				},
+				i(151587),	-- Empyrial Cosmic Crown
+				i(151588),	-- Empyrial Deep Crown
+				i(151589),	-- Empyrial Elemental Crown
+				i(151590),	-- Empyrial Titan Crown
 			}),
 			filter(51, {	-- Neck
-				{	-- Ancient Maelstrom Amulet
-					["itemID"] = 130241,	-- Ancient Maelstrom Amulet
-				},
-				{	-- Azsunite Pendant
-					["itemID"] = 130228,	-- Azsunite Pendant
-				},
-				{	-- Blessed Dawnlight Medallion
-					["itemID"] = 130234,	-- Blessed Dawnlight Medallion
-				},
-				{	-- Deep Amber Pendant
-					["itemID"] = 130226,	-- Deep Amber Pendant
-				},
-				{	-- Grim Furystone Gorget
-					["itemID"] = 130244,	-- Grim Furystone Gorget
-				},
-				{	-- Intrepid Necklace of Prophecy
-					["itemID"] = 130240,	-- Intrepid Necklace of Prophecy
-				},
-				{	-- Queen's Opal Pendant
-					["itemID"] = 136712,	-- Queen's Opal Pendant
-				},
-				{	-- Raging Furystone Gorget
-					["itemID"] = 130243,	-- Raging Furystone Gorget
-				},
-				{	-- Righteous Dawnlight Medallion
-					["itemID"]	= 130242,	-- Righteous Dawnlight Medallion
-				},
-				{	-- Skystone Pendant
-					["itemID"] = 130227,	-- Skystone Pendant
-				},
-				{	-- Sorcerous Shadowruby Pendant
-					["itemID"] = 130233,	-- Sorcerous Shadowruby Pendant
-				},
-				{	-- Subtle Shadowruby Pendant
-					["itemID"] = 130236,	-- Subtle Shadowruby Pendant
-				},
-				{	-- Slyvan Maelstrom Amulet
-					["itemID"] = 130239,	-- Slyvan Maelstrom Amulet
-				},
-				{	-- Tranquil Necklace of Prophecy
-					["itemID"] = 130237,	-- Tranquil Necklace of Prophecy
-				},
-				{	-- Twisted Pandemonite Choker
-					["itemID"] = 130235,	-- Twisted Pandemonite Choker
-				},
-				{	-- Vindictive Pandemonite Choker
-					["itemID"] = 130238,	-- Vindictive Pandemonite Choker
-				},
+				i(130241),	-- Ancient Maelstrom Amulet
+				i(130228),	-- Azsunite Pendant
+				i(130234),	-- Blessed Dawnlight Medallion
+				i(130226),	-- Deep Amber Pendant
+				i(130244),	-- Grim Furystone Gorget
+				i(130240),	-- Intrepid Necklace of Prophecy
+				i(136712),	-- Queen's Opal Pendant
+				i(130243),	-- Raging Furystone Gorget
+				i(130242),	-- Righteous Dawnlight Medallion
+				i(130227),	-- Skystone Pendant
+				i(130233),	-- Sorcerous Shadowruby Pendant
+				i(130236),	-- Subtle Shadowruby Pendant
+				i(130239),	-- Slyvan Maelstrom Amulet
+				i(130237),	-- Tranquil Necklace of Prophecy
+				i(130235),	-- Twisted Pandemonite Choker
+				i(130238),	-- Vindictive Pandemonite Choker
 			}),
 			filter(52, {	-- Finger
-				{	-- Azsunite Loop
-					["itemID"] = 130225,	-- Azsunite Loop
-				},
-				{	-- Dawnlight Band
-					["itemID" ] = 130231,	-- Dawnlight Band
-				},
-				{	-- Deep Amber Loop
-					["itemID"] = 130223,	-- Deep Amber Loop
-				},
-				{	-- Maelstrom Band
-					["itemID"] = 130230,	-- Maelstrom Band
-				},
-				{	-- Prophetic Band
-					["itemID"] = 130229,	-- Prophetic Band
-				},
-				{	-- Queen's Opal Loop
-					["itemID"] = 136711,	-- Queen's Opal Loop
-				},
-				{	-- Shadowruby Band
-					["itemID"] = 136713,	-- Shadowruby Band
-				},
-				{	-- Skystone Loop
-					["itemID"] = 130224,	-- Skystone Loop
-				},
+				i(130225),	-- Azsunite Loop
+				i(130231),	-- Dawnlight Band
+				i(130223),	-- Deep Amber Loop
+				i(130230),	-- Maelstrom Band
+				i(130229),	-- Prophetic Band
+				i(136711),	-- Queen's Opal Loop
+				i(136713),	-- Shadowruby Band
+				i(130224),	-- Skystone Loop
 			}),
 		}),
 		n(-187, {	-- Leatherworking

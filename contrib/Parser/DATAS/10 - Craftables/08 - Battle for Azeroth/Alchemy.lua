@@ -21,15 +21,11 @@ _.Craftables =
 			}),
 			filter(53, {	-- Trinkets
 				i(168674, {	-- Abyssal Alchemist Stone
-					["g"] = {
-						i(168757),	-- Recipe: Crushing Alchemist Stone
-					},
+					i(168757),	-- Recipe: Crushing Alchemist Stone
 				}),
 				i(168676),	-- Ascended Alchemist Stone
 				i(168675, {	-- Crushing Alchemist Stone
-					["g"] = {
-						i(168758),	-- Recipe: Ascended Alchemist Stone
-					},
+					i(168758),	-- Recipe: Ascended Alchemist Stone
 				}),
 				i(166976),	-- Emblazoned Alchemist Stone
 				i(152636),	-- Endless Tincture of Fractional Power

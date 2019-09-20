@@ -6,712 +6,338 @@ _.Craftables =
 	tier(1, {	-- Classic
 		n(-180, {	-- Alchemy
 			filter(53, {	-- Trinket
-				{	-- Philosopher's Stone
-					["itemID"] = 9149,	-- Philosopher's Stone
-				},
+				i(9149),	-- Philosopher's Stone
 			}),
 		}),
 		n(-181, { 	-- Blacksmithing
-		-- Reviewed and updated as of 12.01.2018 BfA 8.0
 			filter(20, {	-- Daggers
-				{	-- Big Bronze Knife
-					["itemID"] = 3848,	-- Big Bronze Knife
-				},
-				{	-- Black Amnesty
-					["itemID"] = 19166,	-- Black Amnesty
-				},
-				{	-- Deadly Bronze Poniard
-					["itemID"] = 3490,	-- Deadly Bronze Poniard
-				},
-				{	-- Ebon Shiv
-					["itemID"] = 7947,	-- Ebon Shiv
-				},
-				{	-- Glinting Steel Dagger
-					["itemID"] = 12259,	-- Glinting Steel Dagger
-				},
-				{	-- Heartseeker
-					["itemID"] = 12783,	-- Heartseeker
-				},
-				{	-- Pearl-Handled Dagger
-					["itemID"] = 5540,	-- Pearl-Handled Dagger
-				},
-				{	-- Searing Golden Blade
-					["itemID"] = 12260,	-- Searing Golden Blade
-				},
+				i(3848),	-- Big Bronze Knife
+				i(19166),	-- Black Amnesty
+				i(3490),	-- Deadly Bronze Poniard
+				i(7947),	-- Ebon Shiv
+				i(12259),	-- Glinting Steel Dagger
+				i(12783),	-- Heartseeker
+				i(5540),	-- Pearl-Handled Dagger
+				i(12260),	-- Searing Golden Blade
 			}),
 			filter(21, {	-- 1H Axes
-				{	-- Annihilator
-					["itemID"] = 12798,	-- Annihilator
-				},
-				{	-- Blue Glittering Axe
-					["itemID"] = 7942,	-- Blue Glittering Axe
-				},
-				{	-- Bronze Axe
-					["itemID"] = 2849,	-- Bronze Axe
-				},
-				{	-- Dawn's Edge
-					["itemID"] = 12774,	-- Dawn's Edge
-				},
-				{	-- Dark Iron Destroyer
-					["itemID"] = 17016,	-- Dark Iron Destroyer
-				},
-				{	-- Edge of Winter
-					["itemID"] = 17704,	-- Edge of Winter
-				},
-				{	-- Heavy Mithril Axe
-					["itemID"] = 7941,	-- Heavy Mithril Axe
-				},
-				{	-- Ornate Thorium Handaxe
-					["itemID"] = 12773,	-- Ornate Thorium Handaxe
-				},
-				{	-- Thick War Axe
-					["itemID"] = 3489,	-- Thick War Axe
-				},
+				i(12798),	-- Annihilator
+				i(7942),	-- Blue Glittering Axe
+				i(2849),	-- Bronze Axe
+				i(12774),	-- Dawn's Edge
+				i(17016),	-- Dark Iron Destroyer
+				i(17704),	-- Edge of Winter
+				i(7941),	-- Heavy Mithril Axe
+				i(12773),	-- Ornate Thorium Handaxe
+				i(3489),	-- Thick War Axe
 			}),
 			filter(22, {	-- 2H Axes
-				{	-- Arcanite Reaper
-					["itemID"] = 12784,	-- Arcanite Reaper
-				},
-				{	-- Bleakwood Hew
-					["itemID"] = 12769,	-- Bleakwood Hew
+				i(12784),	-- Arcanite Reaper
+				i(12769, {	-- Bleakwood Hew
 					["timeline"] = {
 						"created 1.11.1.5462",	-- Was originally never implemented.
 						"added 7.1.5.23360",
 					},
-				},
-				{	-- Bronze Battle Axe
-					["itemID"] = 7958,	-- Bronze Battle Axe
-				},
-				{	-- Copper Battle Axe
-					["itemID"] = 3488,	-- Copper Battle Axe
-				},
-				{	-- Dark Iron Sunderer
-					["itemID"] = 11607,	-- Dark Iron Sunderer
-				},
-				{	-- Huge Thorium Battleaxe
-					["itemID"] = 12775,	-- Huge Thorium Battleaxe
-				},
-				{	-- Massive Iron Axe
-					["itemID"] = 3855,	-- Massive Iron Axe
-				},
-				{	-- Nightfall
-					["itemID"] = 19169,	-- Nightfall
-				},
-				{	-- Shadow Crescent Axe
-					["itemID"] = 3856,	-- Shadow Crescent Axe
-				},
+				}),
+				i(7958),	-- Bronze Battle Axe
+				i(3488),	-- Copper Battle Axe
+				i(11607),	-- Dark Iron Sunderer
+				i(12775),	-- Huge Thorium Battleaxe
+				i(3855),	-- Massive Iron Axe
+				i(19169),	-- Nightfall
+				i(3856),	-- Shadow Crescent Axe
 			}),
 			filter(23, {	-- 1H Maces
-				{	-- Big Black Mace
-					["itemID"] = 7945,	-- Big Black Mace
-				},
-				{	-- Bronze Mace
-					["itemID"] = 2848,	-- Bronze Mace
-				},
-				{	-- Ebon Hand
-					["itemID"] = 19170,	-- Ebon Hand
-				},
-				{	-- Heavy Bronze Mace
-					["itemID"] = 3491,	-- Heavy Bronze Mace
-				},
-				{	-- Iridescent Hammer
-					["itemID"] = 5541,	-- Iridescent Hammer
-				},
-				{	-- Masterwork Stormhammer
-					["itemID"] = 12794,	-- Masterwork Stormhammer
+				i(7945),	-- Big Black Mace
+				i(2848),	-- Bronze Mace
+				i(19170),	-- Ebon Hand
+				i(3491),	-- Heavy Bronze Mace
+				i(5541),	-- Iridescent Hammer
+				i(12794, {	-- Masterwork Stormhammer
 					["u"] = 8,
-				},
-				{	-- Mighty Iron Hammer
-					["itemID"] = 3492,	-- Mighty Iron Hammer
-				},
-				{	-- Persuader
-					["itemID"] = 22384,	-- Persuader
-				},
-				{	-- Runed Mithril Hammer
-					["itemID"] = 7946,	-- Runed Mithril Hammer
-				},
-				{	-- Serenity	
-					["itemID"] = 12781,	-- Serenity
-				},
-				{	-- The Shatterer
-					["itemID"] = 7954,	-- The Shatterer
+				}),
+				i(3492),	-- Mighty Iron Hammer
+				i(22384),	-- Persuader
+				i(7946),	-- Runed Mithril Hammer
+				i(12781),	-- Serenity
+				i(7954, {	-- The Shatterer
 					["u"] = 8,
-				},
-				{	-- Volcanic Hammer
-					["itemID"] = 12792,	-- Volcanic Hammer
-				},
+				}),
+				i(12792),	-- Volcanic Hammer
 			}),
 			filter(24, {	-- 2H Maces
-				{	-- Bronze Warhammer
-					["itemID"] = 7956,	-- Bronze Warhammer
-				},
-				{	-- Dark Iron Pulverizer
-					["itemID"] = 11608,	-- Dark Iron Pulverizer
-				},
-				{	-- Enchanted Battlehammer
-					["itemID"] = 12776,	-- Enchanted Battlehammer
+				i(7956),	-- Bronze Warhammer
+				i(11608),	-- Dark Iron Pulverizer
+				i(12776, {	-- Enchanted Battlehammer
 					["u"] = 8,
-				},
-				{	-- Golden Iron Destroyer
-					["itemID"] = 3852,	-- Golden Iron Destroyer
-				},
-				{	-- Hammer of the Titans
-					["itemID"] = 12796,	-- Hammer of the Titans
-				},
-				{	-- Heavy Copper Maul
-					["itemID"] = 6214,	-- Heavy Copper Maul
-				},
-				{	-- Solid Iron Maul
-					["itemID"] = 3851,	-- Solid Iron Maul
-				},
-				{	-- Sulfuron Hammer
-					["itemID"] = 17193,	-- Sulfuron Hammer
-				},
+				}),
+				i(3852),	-- Golden Iron Destroyer
+				i(12796),	-- Hammer of the Titans
+				i(6214),	-- Heavy Copper Maul
+				i(3851),	-- Solid Iron Maul
+				i(17193),	-- Sulfuron Hammer
 			}),
 			filter(25, {	-- 1H Swords
-				{	-- Blackguard
-					["itemID"] = 19168,	-- Blackguard
-				},
-				{	-- Blazing Rapier
-					["itemID"] = 12777,	-- Blazing Rapier
+				i(19168),	-- Blackguard
+				i(12777, {	-- Blazing Rapier
 					["timeline"] = {
 						"added 1.11.1.5462",
 						"removed 4.0.1.13287",
 						"added 7.1.5.23360",
 					},
-				},
-				{	-- Bronze Shortsword
-					["itemID"] = 2850,	-- Bronze Shortsword
-				},
-				{	-- Dark Iron Reaver
-					["itemID"] = 17015,	-- Dark Iron Reaver
-				},
-				{	-- Dazzling Mithril Rapier
-					["itemID"] = 7944,	-- Dazzling Mithril Rapier
-				},
-				{	-- Frostguard
-					["itemID"] = 12797,	-- Frostguard
-				},
-				{	-- Hardened Iron Shortsword
-					["itemID"] = 3849,	-- Hardened Iron Shortsword
-				},
-				{	-- Heavy Copper Longsword
-					["itemID"] = 33791,	-- Heavy Copper Longsword
-				},
-				{	-- Jade Serpentblade
-					["itemID"] = 3850,	-- Jade Serpentblade
-				},
-				{	-- Light Earthforged Blade
-					["itemID"] = 30071,	-- Light Earthforged Blade
+				}),
+				i(2850),	-- Bronze Shortsword
+				i(17015),	-- Dark Iron Reaver
+				i(7944),	-- Dazzling Mithril Rapier
+				i(12797),	-- Frostguard
+				i(3849),	-- Hardened Iron Shortsword
+				i(33791),	-- Heavy Copper Longsword
+				i(3850),	-- Jade Serpentblade
+				i(30071, {	-- Light Earthforged Blade
 					["timeline"] = {
 						"added 2.0.1.6180",
 						"removed 4.0.1.13287",
 						"added 7.1.5.23360",
 					},
-				},
-				{	-- Phantom Blade
-					["itemID"] = 7961,	-- Phantom Blade
-				},
-				{	-- Sageblade
-					["itemID"] = 22383,	-- Sageblade
-				},
-				{	-- Wicked Mithril Blade
-					["itemID"] = 7943,	-- Wicked Mithril Blade
-				},
+				}),
+				i(7961),	-- Phantom Blade
+				i(22383),	-- Sageblade
+				i(7943),	-- Wicked Mithril Blade
 			}),
 			filter(26, {	-- 2H Swords
-				{	-- Arcanite Champion
-					["itemID"] = 12790,	-- Arcanite Champion
+				i(12790, {	-- Arcanite Champion
 					["timeline"] = {
 						"added 1.11.1.5462",
 						"removed 4.0.1.13287",
 						"added 7.1.5.23360",
 					},
-				},
-				{	-- Bronze Greatsword
-					["itemID"] = 7957,	-- Bronze Greatsword
-				},
-				{	-- Corruption
-					["itemID"] = 12782,	-- Corruption
-				},
-				{	-- Frost Tiger Blade
-					["itemID"] = 3854,	-- Frost Tiger Blade
-				},
-				{	-- Heavy Copper Broadsword
-					["itemID"] = 3487,	-- Heavy Copper Broadsword
-				},
-				{	-- Moonsteel Broadsword
-					["itemID"] = 3853,	-- Moonsteel Broadsword
-				},
-				{	-- Truesilver Champion
-					["itemID"] = 7960,	-- Truesilver Champion
+				}),
+				i(7957),	-- Bronze Greatsword
+				i(12782),	-- Corruption
+				i(3854),	-- Frost Tiger Blade
+				i(3487),	-- Heavy Copper Broadsword
+				i(3853),	-- Moonsteel Broadsword
+				i(7960, {	-- Truesilver Champion
 					["u"] = 8,
-				},
+				}),
 			}),
 			filter(29, {	-- Polearms
-				{	-- Blackfury
-					["itemID"] = 19167,	-- Blackfury
-				},
-				{	-- Blight
-					["itemID"] = 7959,	-- Blight
+				i(19167),	-- Blackfury
+				i(7959, {	-- Blight
 					["timeline"] = {
 						"added 1.11.1.5462",
 						"removed 4.0.1.13287",
 						"added 7.1.5.23360",
 					},
-				},
-				{	-- Darkspear
-					["itemID"] = 12802,	-- Darkspear
+				}),
+				i(12802, {	-- Darkspear
 					["timeline"] = {
 						"created 1.12.1.6898",	-- Was originally never implemented.
 						"added 7.1.5.23360",
 					},
-				},
+				}),
 			}),
 			filter(8, {		-- Shield
-				{	-- Jagged Obsidian Shield
-					["itemID"] = 22198,	-- Jagged Obsidian Shield
-				},
+				i(22198),	-- Jagged Obsidian Shield
 			}),
 			n(-320, {		-- Head
-				{	-- Barbaric Iron Helm
-					["itemID"] = 7915,	-- Barbaric Iron Helm
-				},
-				{	-- Dark Iron Helm
-					["itemID"] = 19148,	-- Dark Iron Helm
-				},
-				{	-- Darkrune Helm
-					["itemID"] = 20551,	-- Darkrune Helm
-				},
-				{	-- Enchanted Thorium Helm
-					["itemID"] = 12620,	-- Enchanted Thorium Helm
+				i(7915),	-- Barbaric Iron Helm
+				i(19148),	-- Dark Iron Helm
+				i(20551),	-- Darkrune Helm
+				i(12620, {	-- Enchanted Thorium Helm
 					["u"] = 8,
-				},
-				{	-- Golden Scale Coif
-					["itemID"] = 3837,	-- Golden Scale Coif
-				},
-				{	-- Green Iron Helm
-					["itemID"] = 3836,	-- Green Iron Helm
-				},
-				{	-- Heavy Mithril Helm
-					["itemID"] = 7934,	-- Heavy Mithril Helm
-				},
-				{	-- Helm of the Great Chief
-					["itemID"] = 12636,	-- Helm of the Great Chief
-				},
-				{	-- Imperial Plate Helm
-					["itemID"] = 12427,	-- Imperial Plate Helm
-				},
-				{	-- Lionheart Helm
-					["itemID"] = 12640,	-- Lionheart Helm
-				},
-				{	-- Mithril Coif
-					["itemID"] = 7931,	-- Mithril Coif
-				},
-				{	-- Ornate Mithril Helm
-					["itemID"] = 7937,	-- Ornate Mithril Helm
+				}),
+				i(3837),	-- Golden Scale Coif
+				i(3836),	-- Green Iron Helm
+				i(7934),	-- Heavy Mithril Helm
+				i(12636),	-- Helm of the Great Chief
+				i(12427),	-- Imperial Plate Helm
+				i(12640),	-- Lionheart Helm
+				i(7931),	-- Mithril Coif
+				i(7937, {	-- Ornate Mithril Helm
 					["u"] = 8,
-				},
-				{	-- Radiant Circlet
-					["itemID"] = 12417,	-- Radiant Circlet
-				},
-				{	-- Runic Plate Helm
-					["itemID"] = 12612,	-- Runic Plate Helm
-				},
-				{	-- Steel Plate Helm
-					["itemID"] = 7922,	-- Steel Plate Helm
-				},
-				{	-- Thorium Helm
-					["itemID"] = 12410,	-- Thorium Helm
-				},
-				{	-- Whitesoul Helm
-					["itemID"] = 12633,	-- Whitesoul Helm
-				},
+				}),
+				i(12417),	-- Radiant Circlet
+				i(12612),	-- Runic Plate Helm
+				i(7922),	-- Steel Plate Helm
+				i(12410),	-- Thorium Helm
+				i(12633),	-- Whitesoul Helm
 			}),
 			n(-321, {		-- Shoulders
-				{	-- Barbaric Iron Shoulders
-					["itemID"] = 7913,	-- Barbaric Iron Shoulders
-				},
-				{	-- Bloodsoul Shoulders
-					["itemID"] = 19691,	-- Bloodsoul Shoulders
+				i(7913),	-- Barbaric Iron Shoulders
+				i(19691, {	-- Bloodsoul Shoulders
 					["u"]= 8,
-				},
-				{	-- Dark Iron Shoulders
-					["itemID"] = 11605,	-- Dark Iron Shoulders
-				},
-				{	-- Darksoul Shoulders
-					["itemID"] = 19695,	-- Darksoul Shoulders
+				}),
+				i(11605),	-- Dark Iron Shoulders
+				i(19695, {	-- Darksoul Shoulders
 					["u"] = 8,
-				},
-				{	-- 12625,	-- Dawnbringer Shoulders
-					["itemID"] = 12625,	-- Dawnbringer Shoulders
-				},
-				{	-- Fiery Chain Shoulders
-					["itemID"] = 16988,	-- Fiery Chain Shoulders
-				},
-				{	-- Golden Scale Shoulders
-					["itemID"] = 3841,	-- Golden Scale Shoulders
-				},
-				{	-- Green Iron Shoulders
-					["itemID"] = 3840,	-- Green Iron Shoulders
-				},
-				{	-- Heavy Mithril Shoulder
-					["itemID"] = 7918,	-- Heavy Mithril Shoulder
-				},
-				{	-- Imperial Plate Shoulders
-					["itemID"] = 12428,	-- Imperial Plate Shoulders
-				},
-				{	-- Mithril Scale Shoulders
-					["itemID"] = 7932,	-- Mithril Scale Shoulders
-				},
-				{	-- Ornate Mithril Shoulder
-					["itemID"] = 7928,	-- Ornate Mithril Shoulder
+				}),
+				i(12625),	-- Dawnbringer Shoulders
+				i(16988),	-- Fiery Chain Shoulders
+				i(3841),	-- Golden Scale Shoulders
+				i(3840),	-- Green Iron Shoulders
+				i(7918),	-- Heavy Mithril Shoulder
+				i(12428),	-- Imperial Plate Shoulders
+				i(7932),	-- Mithril Scale Shoulders
+				i(7928, {	-- Ornate Mithril Shoulder
 					["u"] = 8,
-				},
-				{	-- Rough Bronze Shoulders
-					["itemID"] = 3480,	-- Rough Bronze Shoulders
-				},
-				{	-- Runic Plate Shoulders
-					["itemID"] = 12610,	-- Runic Plate Shoulders
-				},
-				{	-- Silvered Bronze Shoulders
-					["itemID"] = 3481,	-- Silvered Bronze Shoulders
-				},
+				}),
+				i(3480),	-- Rough Bronze Shoulders
+				i(12610),	-- Runic Plate Shoulders
+				i(3481),	-- Silvered Bronze Shoulders
 			}),
 			n(-323, {		-- Chest
-				{	-- Barbaric Iron Breastplate
-					["itemID"] = 7914,	-- Barbaric Iron Breastplate
-				},
-				{	-- Barbaric Iron Hauberk
-					["itemID"] = 163964,	-- Barbaric Iron Hauberk
-				},
-				{	-- Bloodsoul Breastplate
-					["itemID"] = 19690,	-- Bloodsoul Breastplate
+				i(7914),	-- Barbaric Iron Breastplate
+				i(163964),	-- Barbaric Iron Hauberk
+				i(19690, {	-- Bloodsoul Breastplate
 					["u"] = 8,
-				},
-				{	-- Copper Chain Vest
-					["itemID"] = 3471,	-- Copper Chain Vest
-				},
-				{	-- Dark Iron Plate
-					["itemID"] = 11604,	-- Dark Iron Plate
-				},
-				{	-- Dark Iron Plate
-					["itemID"] = 11606,	-- Dark Iron Plate
-				},
-				{	-- Darkrune Breastplate
-					["itemID"] = 20550,	-- Darkrune Breastplate
-				},
-				{	-- Darksoul Breastplate
-					["itemID"] = 19693,	-- Darksoul Breastplate
+				}),
+				i(3471),	-- Copper Chain Vest
+				i(11604),	-- Dark Iron Plate
+				i(11606),	-- Dark Iron Plate
+				i(20550),	-- Darkrune Breastplate
+				i(19693, {	-- Darksoul Breastplate
 					["u"] = 8,
-				},
-				{	-- Demon Forged Breastplate
-					["itemID"] = 12628,	-- Demon Forged Breastplate
+				}),
+				i(12628, {	-- Demon Forged Breastplate
 					["u"] = 8,
-				},
-				{	-- Enchanted Thorium Breastplate
-					["itemID"] = 12618,	-- Enchanted Thorium Breastplate
+				}),
+				i(12618, {	-- Enchanted Thorium Breastplate
 					["u"] = 8,
-				},
-				{	-- Golden Scale Cuirass
-					["itemID"] = 3845,	-- Golden Scale Cuirass
-				},
-				{	-- Green Iron Hauberk
-					["itemID"] = 3844,	-- Green Iron Hauberk
-				},
-				{	-- Heavy Mithril Breastplate
-					["itemID"] = 7930,	-- Heavy Mithril Breastplate
-				},
-				{	-- Icebane Breastplate
-					["itemID"] = 22669,	-- Icebane Breastplate
+				}),
+				i(3845),	-- Golden Scale Cuirass
+				i(3844),	-- Green Iron Hauberk
+				i(7930),	-- Heavy Mithril Breastplate
+				i(22669, {	-- Icebane Breastplate
 					["u"] = 8,
-				},
-				{	-- Imperial Plate Chest
-					["itemID"] = 12422,	-- Imperial Plate Chest
-				},
-				{	-- Invulnerable Mail
-					["itemID"] = 12641,	-- Invulnerable Mail
-				},
-				{	-- Ironforge Breastplate
-					["itemID"] = 6731,	-- Ironforge Breastplate
-				},
-				{	-- Ironvine Breastplate
-					["itemID"] = 22762,	-- Ironvine Breastplate
-				},
-				{	-- Obsidian Plate Tunic
-					["itemID" ] = 22191,	-- Obsidian Plate Tunic
-				},
-				{	-- Ornate Mithril Breastplate
-					["itemID"] = 7935,	-- Ornate Mithril Breastplate
+				}),
+				i(12422),	-- Imperial Plate Chest
+				i(12641),	-- Invulnerable Mail
+				i(6731),	-- Ironforge Breastplate
+				i(22762),	-- Ironvine Breastplate
+				i(22191),	-- Obsidian Plate Tunic
+				i(7935, {	-- Ornate Mithril Breastplate
 					["u"] = 8,
-				},
-				{	-- Radiant Breastplate
-					["itemID"] = 12415,	-- Radiant Breastplate
-				},
-				{	-- Rough Bronze Cuirass
-					["itemID"] = 2866,	-- Rough Bronze Cuirass
-				},
-				{	-- Runed Copper Breastplate
-					["itemID"] = 2864,	-- Runed Copper Breastplate
-				},
-				{	-- Runic Breastplate
-					["itemID"] = 12613,	-- Runic Breastplate
+				}),
+				i(12415),	-- Radiant Breastplate
+				i(2866),	-- Rough Bronze Cuirass
+				i(2864),	-- Runed Copper Breastplate
+				i(12613, {	-- Runic Breastplate
 					["u"] = 8,
-				},
-				{	-- Shining Silver Breastplate
-					["itemID"] = 2870,	-- Shining Silver Breastplate
-				},
-				{	-- Silvered Bronze Breastplate
-					["itemID"] = 2869,	-- Silvered Bronze Breastplate
-				},
-				{	-- Steel Breastplate
-					["itemID"] = 7963,	-- Steel Breastplate
-				},
-				{	-- Thick Obsidian Breastplate
-					["itemID"] = 22196,	-- Thick Obsidian Breastplate
-				},
-				{	-- Thorium Armor
-					["itemID"] = 12405,	-- Thorium Armor
-				},
-				{	-- Truesilver Breastplate
-					["itemID"] = 7939,	-- Truesilver Breastplate
+				}),
+				i(2870),	-- Shining Silver Breastplate
+				i(2869),	-- Silvered Bronze Breastplate
+				i(7963),	-- Steel Breastplate
+				i(22196),	-- Thick Obsidian Breastplate
+				i(12405),	-- Thorium Armor
+				i(7939, {	-- Truesilver Breastplate
 					["u"] = 8,
-				},
-				{	-- Wildthorn Mail
-					["itemID"] = 12624,	-- Wildthorn Mail
-				},
+				}),
+				i(12624),	-- Wildthorn Mail
 			}),
 			n(-327, {		-- Hands
-				{	-- Barbaric Iron Gloves
-					["itemID"] = 7917,	-- Barbaric Iron Gloves
-				},
-				{	-- Black Grasp of the Destroyer
-					["itemID"] = 22194,	-- Black Grasp of the Destroyer
-				},
-				{	-- Bloodsoul Gauntlets
-					["itemID"] = 19692,	-- Bloodsoul Gauntlets
+				i(7917),	-- Barbaric Iron Gloves
+				i(22194),	-- Black Grasp of the Destroyer
+				i(19692, {	-- Bloodsoul Gauntlets
 					["u"] = 8,
-				},
-				{	-- Dark Iron Gauntlets
-					["itemID"] = 19164,	-- Dark Iron Gauntlets
-				},
-				{	-- Darkrune Gauntlets
-					["itemID"] = 20549,	-- Darkrune Gauntlets
-				},
-				{	-- Fiery Plate Gauntlets
-					["itemID"] = 12631,	-- Fiery Plate Gauntlets
+				}),
+				i(19164),	-- Dark Iron Gauntlets
+				i(20549),	-- Darkrune Gauntlets
+				i(12631, {	-- Fiery Plate Gauntlets
 					["u"] = 8,
-				},
-				{	-- Gemmed Copper Gauntlets
-					["itemID"] = 3474,	-- Gemmed Copper Gauntlets
-				},
-				{	-- Gloves of the Dawn
-					["itemID"] = 19057,	-- Gloves of the Dawn
-				},
-				{	-- Golden Scale Gauntlets
-					["itemID"] = 9366,	-- Golden Scale Gauntlets
+				}),
+				i(3474),	-- Gemmed Copper Gauntlets
+				i(19057),	-- Gloves of the Dawn
+				i(9366, {	-- Golden Scale Gauntlets
 					["u"] = 8,
-				},
-				{	-- Green Iron Gauntlets
-					["itemID"] = 3485,	-- Green Iron Gauntlets
-				},
-				{	-- Heavy Mithril Gauntlet
-					["itemID"] = 7919,	-- Heavy Mithril Gauntlet
-				},
-				{	-- Icebane Gauntlets
-					["itemID"] = 22670,	-- Icebane Gauntlets
+				}),
+				i(3485),	-- Green Iron Gauntlets
+				i(7919),	-- Heavy Mithril Gauntlet
+				i(22670, {	-- Icebane Gauntlets
 					["u"] = 8,
-				},
-				{	-- Ironvine Gloves
-					["itemID"] = 22763,	-- Ironvine Gloves
-				},
-				{	-- Ornate Mithril Gloves
-					["itemID"] = 7927,	-- Ornate Mithril Gloves
+				}),
+				i(22763),	-- Ironvine Gloves
+				i(7927, {	-- Ornate Mithril Gloves
 					["u"] = 8,
-				},
-				{	-- Radiant Gloves
-					["itemID"] = 12418,	-- Radiant Gloves
-				},
-				{	-- Runed Copper Gauntlets
-					["itemID"] = 3472,	-- Runed Copper Gauntlets
-				},
-				{	-- Silvered Bronze Gauntlets
-					["itemID"] = 3483,	-- Silvered Bronze Gauntlets
-				},
-				{	-- Storm Gauntlets
-					["itemID"] = 12632,	-- Storm Gauntlets
-				},
-				{	-- Stronghold Gauntlets
-					["itemID"] = 12639,	-- Stronghold Gauntlets
-				},
-				{	-- Truesilver Gauntlets
-					["itemID"] = 7938,	-- Truesilver Gauntlets
+				}),
+				i(12418),	-- Radiant Gloves
+				i(3472),	-- Runed Copper Gauntlets
+				i(3483),	-- Silvered Bronze Gauntlets
+				i(12632),	-- Storm Gauntlets
+				i(12639),	-- Stronghold Gauntlets
+				i(7938, {	-- Truesilver Gauntlets
 					["u"] = 8,
-				},
+				}),
 			}),
 			n(-326, {		-- Wrist
-				{	-- Dark Iron Bracers
-					["itemID"] = 17014,	-- Dark Iron Bracers
-				},
-				{	--	Golden Scale Bracers
-					["itemID"] = 6040,	-- Golden Scale Bracers
-				},
-				{	-- Green Iron Bracers
-					["itemID"] = 3835,	-- Green Iron Bracers
-				},
-				{	-- Icebane Bracers
-					["itemID"] = 22671,	-- Icebane Bracers
+				i(17014),	-- Dark Iron Bracers
+				i(6040),	-- Golden Scale Bracers
+				i(3835),	-- Green Iron Bracers
+				i(22671, {	-- Icebane Bracers
 					["u"] = 8,
-				},
-				{	-- Imperial Plate Bracers
-					["itemID"] = 12425,	-- Imperial Plate Bracers
-				},
-				{	-- Mithril Scale Bracers
-					["itemID"] = 7924,	-- Mithril Scale Bracers
-				},
-				{	-- Patterned Bronze Bracers
-					["itemID"] = 2868,	-- Patterned Bronze Bracers
-				},
-				{	-- Runed Copper Bracers
-					["itemID"] = 2854,	-- Runed Copper Bracers
-				},
-				{	-- Thorium Bracers
-					["itemID"] = 12408,	-- Thorium Bracers
-				},
+				}),
+				i(12425),	-- Imperial Plate Bracers
+				i(7924),	-- Mithril Scale Bracers
+				i(2868),	-- Patterned Bronze Bracers
+				i(2854),	-- Runed Copper Bracers
+				i(12408),	-- Thorium Bracers
 			}),
 			n(-328, {		-- Waist
-				{	-- Fiery Chain Girdle
-					["itemID"] = 16989,	-- Fiery Chain Girdle
-				},
-				{	-- Girdle of the Dawn
-					["itemID"] = 19051,	-- Girdle of the Dawn
-				},
-				{	-- Heavy Obsidian Belt
-					["itemID"] = 22197,	-- Heavy Obsidian Belt
-				},
-				{	-- Heavy Timbermaw Belt
-					["itemID"] = 19043,	-- Heavy Timbermaw Belt
-				},
-				{	-- Imperial Plate Belt
-					["itemID"] = 12424,	-- Imperial Plate Belt
-				},
-				{	-- Ironvine Belt
-					["itemID"] = 22764,	-- Ironvine Belt
-				},
-				{	-- Light Obsidian Belt
-					["itemID"] = 22195,	-- Light Obsidian Belt
-				},
-				{	-- Radiant Belt
-					["itemID"] = 12416,	-- Radiant Belt
-				},
-				{	-- Runed Copper Belt
-					["itemID"] = 2857,	-- Runed Copper Belt
-				},
-				{	-- Thorium Belt
-					["itemID"] = 12406,	-- Thorium Belt
-				},
+				i(16989),	-- Fiery Chain Girdle
+				i(19051),	-- Girdle of the Dawn
+				i(22197),	-- Heavy Obsidian Belt
+				i(19043),	-- Heavy Timbermaw Belt
+				i(12424),	-- Imperial Plate Belt
+				i(22764),	-- Ironvine Belt
+				i(22195),	-- Light Obsidian Belt
+				i(12416),	-- Radiant Belt
+				i(2857),	-- Runed Copper Belt
+				i(12406),	-- Thorium Belt
 			}),
 			n(-329, {		-- Legs
-				{	-- Dark Iron Leggings
-					["itemID"] = 17013,	-- Dark Iron Leggings
-				},
-				{	-- Darksoul Leggings
-					["itemID"] = 19694,	-- Darksoul Leggings
+				i(17013),	-- Dark Iron Leggings
+				i(19694, {	-- Darksoul Leggings
 					["u"] = 8,
-				},
-				{	-- Enchanted Thorium Leggings
-					["itemID"] = 12619,	-- Enchanted Thorium Leggings
+				}),
+				i(12619, {	-- Enchanted Thorium Leggings
 					["u"] = 8,
-				},
-				{	-- Golden Scale Leggings
-					["itemID"] = 3843,	-- Golden Scale Leggings
-				},
-				{	-- Green Iron Leggings
-					["itemID"] = 3842,	-- Green Iron Leggings
-				},
-				{	-- Heavy Mithril Pants
-					["itemID"] = 7921,	-- Heavy Mithril Pants
-				},
-				{	-- Imperial Plate Leggings
-					["itemID"] = 12429,	-- Imperial Plate Leggings
-				},
-				{	-- Mithril Scale Pants
-					["itemID"] = 7920,	-- Mithril Scale Pants
-				},
-				{	-- Orcish War Leggings
-					["itemID"] = 7929,	-- Orcish War Leggings
+				}),
+				i(3843),	-- Golden Scale Leggings
+				i(3842),	-- Green Iron Leggings
+				i(7921),	-- Heavy Mithril Pants
+				i(12429),	-- Imperial Plate Leggings
+				i(7920),	-- Mithril Scale Pants
+				i(7929, {	-- Orcish War Leggings
 					["u"] = 8,
-				},
-				{	-- Ornate Mithril Pants
-					["itemID"] = 7926,	-- Ornate Mithril Pants
+				}),
+				i(7926, {	-- Ornate Mithril Pants
 					["u"] = 8,
-				},
-				{	-- Radiant Leggings
-					["itemID"] = 12420,	-- Radiant Leggings
-				},
-				{	-- Rough Bronze Leggings
-					["itemID"] = 2865,	-- Rough Bronze Leggings
-				},
-				{	-- Runed Copper Pants
-					["itemID"] = 3473,	-- Runed Copper Pants
-				},
-				{	-- Runic Plate Leggings
-					["itemID"] = 12614,	-- Runic Plate Leggings
-				},
-				{	-- Silvered Bronze Leggings
-					["itemID"] = 10423,	-- Silvered Bronze Leggings
-				},
-				{	-- Thorium Leggings
-					["itemID"] = 12414,	-- Thorium Leggings
-				},
-				{	-- Titanic Leggings
-					["itemID"] = 22385,	-- Titanic Leggings
-				},
+				}),
+				i(12420),	-- Radiant Leggings
+				i(2865),	-- Rough Bronze Leggings
+				i(3473),	-- Runed Copper Pants
+				i(12614),	-- Runic Plate Leggings
+				i(10423),	-- Silvered Bronze Leggings
+				i(12414),	-- Thorium Leggings
+				i(22385),	-- Titanic Leggings
 			}),
 			n(-330, {		-- Feet
-				{	-- Barbaric Iron Boots
-					["itemID"] = 7916,	-- Barbaric Iron Boots
-				},
-				{	-- Dark Iron Boots
-					["itemID"] = 20039,	-- Dark Iron Boots
-				},
-				{	-- Golden Scale Boots
-					["itemID"] = 3847,	-- Golden Scale Boots
-				},
-				{	-- Green Iron Boots
-					["itemID"] = 3484,	-- Green Iron Boots
-				},
-				{	-- Heavy Mithril Boots
-					["itemID"] = 7933,	-- Heavy Mithril Boots
-				},
-				{	-- Heavy Timbermaw Boots
-					["itemID"] = 19048,	-- Heavy Timbermaw Boots
-				},
-				{	-- Imperial Plate Boots
-					["itemID"] = 12426,	-- Imperial Plate Boots
-				},
-				{	-- Ornate Mithril Boots
-					["itemID"] = 7936,	-- Ornate Mithril Boots
+				i(7916),	-- Barbaric Iron Boots
+				i(20039),	-- Dark Iron Boots
+				i(3847),	-- Golden Scale Boots
+				i(3484),	-- Green Iron Boots
+				i(7933),	-- Heavy Mithril Boots
+				i(19048),	-- Heavy Timbermaw Boots
+				i(12426),	-- Imperial Plate Boots
+				i(7936, {	-- Ornate Mithril Boots
 					["u"] = 8,
-				},
-				{	-- Polished Steel Boots
-					["itemID"] = 3846,	-- Polished Steel Boots
-				},
-				{	-- Radiant Boots
-					["itemID"] = 12419,	-- Radiant Boots
-				},
-				{	-- Rough Bronze Boots
-					["itemID"] = 6350,	-- Rough Bronze Boots
-				},
-				{	-- Runic Plate Boots
-					["itemID"] = 12611,	-- Runic Plate Boots
-				},
-				{	-- Silvered Bronze Boots
-					["itemID"] = 3482,	-- Silvered Bronze Boots
-				},
-				{	-- Thorium Boots
-					["itemID"] = 12409,	-- Thorium Boots
-				},
+				}),
+				i(3846),	-- Polished Steel Boots
+				i(12419),	-- Radiant Boots
+				i(6350),	-- Rough Bronze Boots
+				i(12611),	-- Runic Plate Boots
+				i(3482),	-- Silvered Bronze Boots
+				i(12409),	-- Thorium Boots
 			}),
 		}),
 		n(-182, { 	-- Enchanting
@@ -730,14 +356,12 @@ _.Craftables =
 				i(34060),	-- Flying Machine*
 			}),
 			filter(200, {	-- Recipes
-				{	-- Recipe: Goblin Rocket Fuel*
-					["itemID"] = 10644,	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
+				i(10644, {	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
 					["description"] = "This recipe is crafted by Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
-				},
-				{	-- Plans: Inlaid Mithril Cylinder*
-					["itemID"] = 10713,	-- Plans: Inlaid Mithril Cylinder
+				}),
+				i(10713, {	-- Plans: Inlaid Mithril Cylinder
 					["description"] = "This recipe is crafted by Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
-				},
+				}),
 			}),
 			filter(101, {	-- Pets
 				i(15996),	-- Lifelike Mechanical Toad*
@@ -752,7 +376,7 @@ _.Craftables =
 				i(18986),	-- Ultrasafe Transporter: Gadgetzan*
 				i(18660),	-- World Enlarger*
 			}),
-			n(-319, {	-- Weapons	
+			n(-319, {	-- Weapons
 				-- Guns
 				i(18282),	-- Core Marksman Rifle*
 				i(16004),	-- Dark Iron Rifle*
@@ -817,558 +441,285 @@ _.Craftables =
 			}),
 		}),
 		n(-185, { 	-- Inscription
-		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, {	-- Tarot Cards
-				{	-- Arcane Tarot
-					["itemID"] = 44161,	-- Arcane Tarot
-					["g"] = {
-						{	-- Mages Deck
-							["itemID"] = 44148,	-- Mages Deck
-							["g"] = {
-								{	-- Darkmoon Necklace
-									["itemID"] = 44215,	-- Darkmoon Necklace
-								},
-								{	-- Darkmoon Pendant
-									["itemID"] = 44213,	-- Darkmoon Pendant
-								},
-							},
-						},
-						{	-- Ace of Mages
-							["itemID"] = 44165,									-- Ace of Mages
-							["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
-						},
-						{	-- Two of Mages
-							["itemID"] = 44144,									-- Two of Mages
-							["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
-						},
-						{	-- Three of Mages
-							["itemID"] = 44145,									-- Three of Mages
-							["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
-						},
-						{	-- Four of Mages
-							["itemID"] = 44146,									-- Four of Mages
-							["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
-						},
-						{	-- Five of Mages
-							["itemID"] = 44147,									-- Five of Mages
-							["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
-						},
-					},
-				},
-				{	-- Darkmoon Card
-					["itemID"] = 44316,	-- Darkmoon Card
-					["g"] = {
-						{	-- Beasts Deck
-							["itemID"] = 19228,	-- Beasts Deck
-							["g"] = {
-								{	-- Darkmoon Card: Blue Dragon
-									["itemID"] = 19288,	-- Darkmoon Card: Blue Dragon
-								},
-							},
-						},
-						{	-- Elementals Deck
-							["itemID"] = 19267,	-- Elementals Deck
-							["g"] = {
-								{	-- Darkmoon Card: Maelstrom
-									["itemID"] = 19289,	-- Darkmoon Card: Maelstrom
-								},
-							},
-						},
-						{	-- Portals Deck
-							["itemID"] = 19277,	-- Portals Deck
-							["g"] = {
-								{	-- Darkmoon Card: Twisting Nether
-									["itemID"] = 19290,	-- Darkmoon Card: Twisting Nether
-								},
-							},
-						},
-						{	-- Warlords Deck
-							["itemID"] = 19257,	-- Warlords Deck
-							["g"] = {
-								{	-- Darkmoon Card: Heroism
-									["itemID"] = 19287,	-- Darkmoon Card: Heroism
-								},
-							},
-						},
-						{	-- Ace of Beasts
-							["itemID"] = 19227,									-- Ace of Beasts
-							["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
-						},
-						{	-- Two of Beasts
-							["itemID"] = 19230,									-- Two of Beasts
-							["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
-						},
-						{	-- Three of Beasts
-							["itemID"] = 19231,									-- Three of Beasts
-							["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
-						},
-						{	-- Four of Beasts
-							["itemID"] = 19232,									-- Four of Beasts
-							["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
-						},
-						{	-- Five of Beasts
-							["itemID"] = 19233,									-- Five of Beasts
-							["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
-						},
-						{	-- Six of Beasts
-							["itemID"] = 19234,									-- Six of Beasts
-							["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
-						},
-						{	-- Seven of Beasts
-							["itemID"] = 19235,									-- Seven of Beasts
-							["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
-						},
-						{	-- Eight of Beasts
-							["itemID"] = 19236,									-- Eight of Beasts
-							["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
-						},
-						{	-- Ace of Elementals
-							["itemID"] = 19268,									-- Ace of Elementals
-							["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
-						},
-						{	-- Two of Elementals
-							["itemID"] = 19269,									-- Two of Elementals
-							["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
-						},
-						{	-- Three of Elementals
-							["itemID"] = 19270,									-- Three of Elementals
-							["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
-						},
-						{	-- Four of Elementals
-							["itemID"] = 19271,									-- Four of Elementals
-							["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
-						},
-						{	-- Five of Elementals
-							["itemID"] = 19272,									-- Five of Elementals
-							["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
-						},
-						{	-- Six of Elementals
-							["itemID"] = 19273,									-- Six of Elementals
-							["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
-						},
-						{	-- Seven of Elementals
-							["itemID"] = 19274,									-- Seven of Elementals
-							["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
-						},
-						{	-- Eight of Elementals
-							["itemID"] = 19275,									-- Eight of Elementals
-							["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
-						},
-						{	-- Ace of Portals
-							["itemID"] = 19276,									-- Ace of Portals
-							["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
-						},
-						{	-- Two of Portals
-							["itemID"] = 19278,									-- Two of Portals
-							["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
-						},
-						{	-- Three of Portals
-							["itemID"] = 19279,									-- Three of Portals
-							["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
-						},
-						{	-- Four of Portals
-							["itemID"] = 19280,									-- Four of Portals
-							["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
-						},
-						{	-- Five of Portals
-							["itemID"] = 19281,									-- Five of Portals
-							["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
-						},
-						{	-- Six of Portals
-							["itemID"] = 19282,									-- Six of Portals
-							["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
-						},
-						{	-- Seven of Portals
-							["itemID"] = 19283,									-- Seven of Portals
-							["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
-						},
-						{	-- Eight of Portals
-							["itemID"] = 19284,									-- Eight of Portals
-							["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
-						},
-						{	-- Ace of Warlords
-							["itemID"] = 19258,									-- Ace of Warlords
-							["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
-						},
-						{	-- Two of Warlords
-							["itemID"] = 19259,									-- Two of Warlords
-							["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
-						},
-						{	-- Three of Warlords
-							["itemID"] = 19260,									-- Three of Warlords
-							["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
-						},
-						{	-- Four of Warlords
-							["itemID"] = 19261,									-- Four of Warlords
-							["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
-						},
-						{	-- Five of Warlords
-							["itemID"] = 19262,									-- Five of Warlords
-							["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
-						},
-						{	-- Six of Warlords
-							["itemID"] = 19263,									-- Six of Warlords
-							["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
-						},
-						{	-- Seven of Warlords
-							["itemID"] = 19264,									-- Seven of Warlords
-							["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
-						},
-						{	-- Eight of Warlords
-							["itemID"] = 19265,									-- Eight of Warlords
-							["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
-						},
-					},
-				},
-				{	-- Mysterious Tarot
-					--["spellID"] = 48247,	-- Mysterious Tarot
-					["itemID"] = 37168,	-- Mysterious Tarot
-					["g"] = {
-						{	-- Rogues Deck
-							["itemID"] = 37163,	-- Rogues Deck
-							["g"] = {
-								{	-- Darkmoon Breastplate
-									["itemID"] = 39507,		-- Darkmoon Breastplate
-								},
-								{	-- Darkmoon Chainmail
-									["itemID"] = 131276,	-- Darkmoon Chainmail
-								},
-								{	-- Darkmoon Robe
-									["itemID"] = 38318,		-- Darkmoon Robe
-								},
-								{	-- Darkmoon Vest
-									["itemID"] = 39509,		-- Darkmoon Vest
-								},
-							},
-						},
-						{	-- Ace of Rogues
-							["itemID"] = 37140,									-- Ace of Rogues
-							["sym"] = {{"select", "itemID", 37163}, {"pop"}},	-- Rogues Deck
-						},
-						{	-- Two of Rogues
-							["itemID"] = 37143,									-- Two of Rogues
-							["sym"] = {{"select", "itemID", 37163}, {"pop"}},	-- Rogues Deck
-						},
-						{	-- Three of Rogues
-							["itemID"] = 37156,									-- Three of Rogues
-							["sym"] = {{"select", "itemID", 37163}, {"pop"}},	-- Rogues Deck
-						},
-					},
-				},
-				{	-- Shadowy Tarot
-					["itemID"] = 44163,	-- Shadowy Tarot
-					["g"] = {
-						{	-- Demons Deck
-							["itemID"] = 44158,	-- Demons Deck
-							["g"] = {
-								{	-- Darkmoon Dirk
-									["itemID"] = 44217,	-- Darkmoon Dirk
-								},
-								{	-- Darkmoon Executioner
-									["itemID"] = 44218,	-- Darkmoon Executioner
-								},
-								{	-- Darkmoon Magestaff
-									["itemID"] = 44219	-- Darkmoon Magestaff
-								},
-							},
-						},
-						{	-- Ace of Demons
-							["itemID"] = 44143,									-- Ace of Demons
-							["sym"] = {{"select", "itemID", 44158}, {"pop"}},	-- Demons Deck
-						},
-						{	-- Two of Demons
-							["itemID"] = 44154,									-- Two of Demons
-							["sym"] = {{"select", "itemID", 44158}, {"pop"}},	-- Demons Deck
-						},
-						{	-- Three of Demons
-							["itemID"] = 44155,									-- Three of Demons
-							["sym"] = {{"select", "itemID", 44158}, {"pop"}},	-- Demons Deck
-						},
-						{	-- Four of Demons
-							["itemID"] = 44156,									-- Four of Demons
-							["sym"] = {{"select", "itemID", 44158}, {"pop"}},	-- Demons Deck
-						},
-						{	-- Five of Demons
-							["itemID"] = 44157,									-- Five of Demons
-							["sym"] = {{"select", "itemID", 44158}, {"pop"}},	-- Demons Deck
-						},
-					},
-				},
-				{	-- Strange Tarot
-					["itemID"] = 44142,	-- Strange Tarot
-					["g"] = {
-						{	-- Swords Deck
-							["itemID"] = 37164,	-- Swords Deck
-							["g"] = {
-								{	-- Azure Shoulderguards
-									["itemID"] = 39897,	-- Azure Shoulderguards
-								},
-								{	-- Cloaked Shoulderpads
-									["itemID"] = 39895,	-- Cloaked Shoulderpads
-								},
-								{	-- Darkcloth Shoulders
-									["itemID"] = 39894,	-- Darkcloth Shoulders
-								},
-								{	-- Veiled Pauldrons
-									["itemID"] = 131277,	-- Veiled Pauldrons
-								},
-							},
-						},
-						{	-- Ace of Swords
-							["itemID"] = 37145,									-- Ace of Swords
-							["sym"] = {{"select", "itemID", 37164}, {"pop"}},	-- Swords Deck
-						},
-						{	-- Two of Swords
-							["itemID"] = 37147,									-- Two of Swords
-							["sym"] = {{"select", "itemID", 37164}, {"pop"}},	-- Swords Deck
-						},
-						{	-- Three of Swords
-							["itemID"] = 37159,									-- Three of Swords
-							["sym"] = {{"select", "itemID", 37164}, {"pop"}},	-- Swords Deck
-						},
-						{	-- Four of Swords
-							["itemID"] = 37160,									-- Four of Swords
-							["sym"] = {{"select", "itemID", 37164}, {"pop"}},	-- Swords Deck
-						},
-					},
-				},
+				i(44161, {	-- Arcane Tarot
+					i(44148, {	-- Mages Deck
+						i(44215),	-- Darkmoon Necklace
+						i(44213),	-- Darkmoon Pendant
+					}),
+					i(44165, {	-- Ace of Mages
+						["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
+					}),
+					i(44144, {	-- Two of Mages
+						["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
+					}),
+					i(44145, {	-- Three of Mages
+						["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
+					}),
+					i(44146, {	-- Four of Mages
+						["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
+					}),
+					i(44147, {	-- Five of Mages
+						["sym"] = {{"select", "itemID", 44148}, {"pop"}},	-- Mages Deck
+					}),
+				}),
+				i(44316, {	-- Darkmoon Card
+					i(19228, {	-- Beasts Deck
+						i(19288),	-- Darkmoon Card: Blue Dragon
+					}),
+					i(19267, {	-- Elementals Deck
+						i(19289),	-- Darkmoon Card: Maelstrom
+					}),
+					i(19277, {	-- Portals Deck
+						i(19290),	-- Darkmoon Card: Twisting Nether
+					}),
+					i(19257, {	-- Warlords Deck
+						i(19287),	-- Darkmoon Card: Heroism
+					}),
+					i(19227, {	-- Ace of Beasts
+						["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
+					}),
+					i(19230, {	-- Two of Beasts
+						["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
+					}),
+					i(19231, {	-- Three of Beasts
+						["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
+					}),
+					i(19232, {	-- Four of Beasts
+						["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
+					}),
+					i(19233, {	-- Five of Beasts
+						["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
+					}),
+					i(19234, {	-- Six of Beasts
+						["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
+					}),
+					i(19235, {	-- Seven of Beasts
+						["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
+					}),
+					i(19236, {	-- Eight of Beasts
+						["sym"] = {{"select", "itemID", 19228}, {"pop"}},	-- Beasts Deck
+					}),
+					i(19268, {	-- Ace of Elementals
+						["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
+					}),
+					i(19269, {	-- Two of Elementals
+						["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
+					}),
+					i(19270, {	-- Three of Elementals
+						["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
+					}),
+					i(19271, {	-- Four of Elementals
+						["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
+					}),
+					i(19272, {	-- Five of Elementals
+						["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
+					}),
+					i(19273, {	-- Six of Elementals
+						["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
+					}),
+					i(19274, {	-- Seven of Elementals
+						["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
+					}),
+					i(19275, {	-- Eight of Elementals
+						["sym"] = {{"select", "itemID", 19267}, {"pop"}},	-- Elementals Deck
+					}),
+					i(19276, {	-- Ace of Portals
+						["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
+					}),
+					i(19278, {	-- Two of Portals
+						["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
+					}),
+					i(19279, {	-- Three of Portals
+						["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
+					}),
+					i(19280, {	-- Four of Portals
+						["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
+					}),
+					i(19281, {	-- Five of Portals
+						["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
+					}),
+					i(19282, {	-- Six of Portals
+						["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
+					}),
+					i(19283, {	-- Seven of Portals
+						["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
+					}),
+					i(19284, {	-- Eight of Portals
+						["sym"] = {{"select", "itemID", 19277}, {"pop"}},	-- Portals Deck
+					}),
+					i(19258, {	-- Ace of Warlords
+						["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
+					}),
+					i(19259, {	-- Two of Warlords
+						["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
+					}),
+					i(19260, {	-- Three of Warlords
+						["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
+					}),
+					i(19261, {	-- Four of Warlords
+						["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
+					}),
+					i(19262, {	-- Five of Warlords
+						["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
+					}),
+					i(19263, {	-- Six of Warlords
+						["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
+					}),
+					i(19264, {	-- Seven of Warlords
+						["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
+					}),
+					i(19265, {	-- Eight of Warlords
+						["sym"] = {{"select", "itemID", 19287}, {"pop"}},	-- Warlords Deck
+					}),
+				}),
+				i(37168, {	-- Mysterious Tarot
+					i(37163, {	-- Rogues Deck
+						i(39507),		-- Darkmoon Breastplate
+						i(131276),	-- Darkmoon Chainmail
+						i(38318),		-- Darkmoon Robe
+						i(39509),		-- Darkmoon Vest
+					}),
+					i(37140, {	-- Ace of Rogues
+						["sym"] = {{"select", "itemID", 37163}, {"pop"}},	-- Rogues Deck
+					}),
+					i(37143, {	-- Two of Rogues
+						["sym"] = {{"select", "itemID", 37163}, {"pop"}},	-- Rogues Deck
+					}),
+					i(37156, {	-- Three of Rogues
+						["sym"] = {{"select", "itemID", 37163}, {"pop"}},	-- Rogues Deck
+					}),
+				}),
+				i(44163, {	-- Shadowy Tarot
+					i(44158, {	-- Demons Deck
+						i(44217),	-- Darkmoon Dirk
+						i(44218),	-- Darkmoon Executioner
+						i(44219),	-- Darkmoon Magestaff
+					}),
+					i(44143, {	-- Ace of Demons
+						["sym"] = {{"select", "itemID", 44158}, {"pop"}},	-- Demons Deck
+					}),
+					i(44154, {	-- Two of Demons
+						["sym"] = {{"select", "itemID", 44158}, {"pop"}},	-- Demons Deck
+					}),
+					i(44155, {	-- Three of Demons
+						["sym"] = {{"select", "itemID", 44158}, {"pop"}},	-- Demons Deck
+					}),
+					i(44156, {	-- Four of Demons
+						["sym"] = {{"select", "itemID", 44158}, {"pop"}},	-- Demons Deck
+					}),
+					i(44157, {	-- Five of Demons
+						["sym"] = {{"select", "itemID", 44158}, {"pop"}},	-- Demons Deck
+					}),
+				}),
+				i(44142, {	-- Strange Tarot
+					i(37164, {	-- Swords Deck
+						i(39897),	-- Azure Shoulderguards
+						i(39895),	-- Cloaked Shoulderpads
+						i(39894),	-- Darkcloth Shoulders
+						i(131277),	-- Veiled Pauldrons
+					}),
+					i( 37145, {	-- Ace of Swords
+						["sym"] = {{"select", "itemID", 37164}, {"pop"}},	-- Swords Deck
+					}),
+					i(37147, {	-- Two of Swords
+						["sym"] = {{"select", "itemID", 37164}, {"pop"}},	-- Swords Deck
+					}),
+					i(37159, {	-- Three of Swords
+						["sym"] = {{"select", "itemID", 37164}, {"pop"}},	-- Swords Deck
+					}),
+					i(37160, {	-- Four of Swords
+						["sym"] = {{"select", "itemID", 37164}, {"pop"}},	-- Swords Deck
+					}),
+				}),
 			}),
 			filter(1, {	-- Off-hand
-				{	-- Book of Stars
-					["itemID"] = 43661,	-- Book of Stars
-				},
-				{	-- Book of Survival
-					["itemID"] = 43655,	-- Book of Survival
-				},
-				{	-- Fire Eater's Guide
-					["itemID"] = 43660,	-- Fire Eater's Guide
-				},
-				{	-- Manual of Clouds
-					["itemID"] = 43664,	-- Manual of Clouds
-				},
-				{	-- Mystic Tome
-					["itemID"] = 43515,	-- Mystic Tome
-				},
-				{	-- Royal Guide of Escape Routes
-					["itemID"] = 43657,	-- Royal Guide of Escape Routes
-				},
-				{	-- Stormbound Tome
-					["itemID"] = 43663,	-- Stormbound Tome
-				},
-				{	-- Tome of Kings
-					["itemID"] = 43656,	-- Tome of Kings
-				},
-				{	-- Tome of the Dawn
-					["itemID"] = 43654,	-- Tome of the Dawn
-				},
+				i(43661),	-- Book of Stars
+				i(43655),	-- Book of Survival
+				i(43660),	-- Fire Eater's Guide
+				i(43664),	-- Manual of Clouds
+				i(43515),	-- Mystic Tome
+				i(43657),	-- Royal Guide of Escape Routes
+				i(43663),	-- Stormbound Tome
+				i(43656),	-- Tome of Kings
+				i(43654),	-- Tome of the Dawn
 			}),
 		}),
 		n(-186, { 	-- Jewelcrafting
-		-- Reviewed and updated as of 11.26.2018 BfA 8.0
 			filter(34, {	-- Fist Weapons
-				{	-- Heavy Iron Knuckles
-					["itemID"] = 20954,	-- Heavy Iron Knuckles
-				},
+				i(20954),	-- Heavy Iron Knuckles
 			}),
 			n(-320, {		-- Head
-				{	-- Emerald Crown of Destruction
-					["itemID"] = 21774,	-- Emerald Crown of Destruction
-				},
-				{	-- Moonsoul Crown
-					["itemID"] = 20832,	-- Moonsoul Crown
-				},
-				{	-- Ruby Crown of Restoration
-					["itemID"] = 20969,	-- Ruby Crown of Restoration
-				},
+				i(21774),	-- Emerald Crown of Destruction
+				i(20832),	-- Moonsoul Crown
+				i(20969),	-- Ruby Crown of Restoration
 			}),
 			filter(51, {	-- Neck
-				{	-- Amulet of the Moon
-					["itemID"] = 20830,	-- Amulet of the Moon
-				},
-				{	-- Amulet of Truesight
-					["itemID"] = 45627,	-- Amulet of Truesight
-				},
-				{	-- Aquamarine Pendant of the Warrior
-					["itemID"] = 21755,	-- Aquamarine Pendant of the Warrior
-				},
-				{	-- Barbaric Iron Collar
-					["itemID"] = 20909,	-- Barbaric Iron Collar
-				},
-				{	-- Brilliant Necklace
-					["itemID"] = 30419,	-- Brilliant Necklace
-				},
-				{	-- Bronze Torc
-					["itemID"] = 31154,	-- Bronze Torc
-				},
-				{	-- Citrine Pendant of Golden Healing
-					["itemID"] = 20967,	-- Citrine Pendant of Golden Healing
-				},
-				{	-- Heavy Golden Necklace of Battle
-					["itemID"] = 20831,	-- Heavy Golden Necklace of Battle
-				},
-				{	-- Jade Pendant of Blasting
-					["itemID"] = 20966,	-- Jade Pendant of Blasting
-				},
-				{	-- Living Emerald Pendant
-					["itemID"] = 21791,	-- Living Emerald Pendant
-				},
-				{	-- Malachite Pendant
-					["itemID"] = 25438,	-- Malachite Pendant
-				},
-				{	-- Necklace of the Diamond Tower
-					["itemID"] = 21792,	-- Necklace of the Diamond Tower
-				},
-				{	-- Opal Necklace of Impact
-					["itemID"] = 21766,	-- Opal Necklace of Impact
-				},
-				{	-- Ornate Tigerseye Necklace
-					["itemID"] = 21934,	-- Ornate Tigerseye Necklace
-				},
-				{	-- Pendant of the Agate Shield
-					["itemID"] = 20950,	-- Pendant of the Agate Shield
-				},
-				{	-- Ruby Pendant of Fire
-					["itemID"] = 21764,	-- Ruby Pendant of Fire
-				},
-				{	-- Sapphire Pendant of Winter Night
-					["itemID"] = 21790,	-- Sapphire Pendant of Winter Night
-				},
-				{	-- Thick Bronze Necklace
-					["itemID"] = 21933,	-- Thick Bronze Necklace
-				},
+				i(20830),	-- Amulet of the Moon
+				i(45627),	-- Amulet of Truesight
+				i(21755),	-- Aquamarine Pendant of the Warrior
+				i(20909),	-- Barbaric Iron Collar
+				i(30419),	-- Brilliant Necklace
+				i(31154),	-- Bronze Torc
+				i(20967),	-- Citrine Pendant of Golden Healing
+				i(20831),	-- Heavy Golden Necklace of Battle
+				i(20966),	-- Jade Pendant of Blasting
+				i(21791),	-- Living Emerald Pendant
+				i(25438),	-- Malachite Pendant
+				i(21792),	-- Necklace of the Diamond Tower
+				i(21766),	-- Opal Necklace of Impact
+				i(21934),	-- Ornate Tigerseye Necklace
+				i(20950),	-- Pendant of the Agate Shield
+				i(21764),	-- Ruby Pendant of Fire
+				i(21790),	-- Sapphire Pendant of Winter Night
+				i(21933),	-- Thick Bronze Necklace
 			}),
 			filter(52, {	-- Finger
-				{	-- Aquamarine Signet
-					["itemID"] = 20964,	-- Aquamarine Signet
-				},
-				{	-- Blazing Citrine Ring
-					["itemID"] = 20958,	-- Blazing Citrine Ring
-				},
-				{	-- Braided Copper Ring
-					["itemID"] = 20906,	-- Braided Copper Ring
-				},
-				{	-- Bronze Band of Force
-					["itemID"] = 30804,	-- Bronze Band of Force
-				},
-				{	-- Citrine Ring of Rapid Healing
-					["itemID"] = 20961,	-- Citrine Ring of Rapid Healing
-				},
-				{	-- Diamond Focus Ring
-					["itemID"] = 30422,	-- Diamond Focus Ring
-				},
-				{	-- Elegant Silver Ring
-					["itemID"] = 20818,	-- Elegant Silver Ring
-				},
-				{	-- Emerald Lion Ring
-					["itemID"] = 29160,	-- Emerald Lion Ring
-				},
-				{	-- Engraved Truesilver Ring
-					["itemID"] = 20960,	-- Engraved Truesilver Ring
-				},
-				{	-- Gem Studded Band
-					["itemID"] = 21753,	-- Gem Studded Band
-				},
-				{	-- Gloom Band
-					["itemID"] = 20823,	-- Gloom Band
-				},
-				{	-- Glowing Thorium Band
-					["itemID"] = 29159,	-- Glowing Thorium Band
-				},
-				{	-- Golden Dragon Ring
-					["itemID"] = 20955,	-- Golden Dragon Ring
-				},
-				{	-- Golden Ring of Power
-					["itemID"] = 29157,	-- Golden Ring of Power
-				},
-				{	-- Heavy Cooper Ring
-					["itemID"] = 21932,	-- Heavy Cooper Ring
-				},
-				{	-- Heavy Jade Ring
-					["itemID"] = 30420,	-- Heavy Jade Ring
-				},
-				{	-- Heavy Silver Ring
-					["itemID"] = 20826,	-- Heavy Silver Ring
-				},
-				{	-- Inlaid Malachite Ring
-					["itemID"] = 20821,	-- Inlaid Malachite Ring
-				},
-				{	-- Onslaught Ring
-					["itemID"] = 21775,	-- Onslaught Ring
-				},
-				{	-- Red Ring of Destruction
-					["itemID"] = 30421,	-- Red Ring of Destruction
-				},
-				{	-- Ring of Bitter Shadows
-					["itemID"] = 21778,	-- Ring of Bitter Shadows
-				},
-				{	-- Ring of Silver Might
-					["itemID"] = 20827,	-- Ring of Silver Might
-				},
-				{	-- Ring of Twilight Shadows
-					["itemID"] = 20828,	-- Ring of Twilight Shadows
-				},
-				{	-- Sapphire Signet
-					["itemID"] = 21768,	-- Sapphire Signet
-				},
-				{	-- Simple Opal Ring
-					["itemID"] = 21767,	-- Simple Opal Ring
-				},
-				{	-- Simple Pearl Ring
-					["itemID"] = 20820,	-- Simple Pearl Ring
-				},
-				{	-- Solid Bronze Ring
-					["itemID"] = 20907,	-- Solid Bronze Ring
-				},
-				{	-- The Aquamarine Ward
-					["itemID"] = 21754,	-- The Aquamarine Ward
-				},
-				{	-- The Jade Eye
-					["itemID"] = 20959,	-- The Jade Eye
-				},
-				{	-- Tigerseye Band
-					["itemID"] = 25439,	-- Tigerseye Band
-				},
-				{	-- Truesilver Commander's Ring
-					["itemID"] = 29158,	-- Truesilver Commander's Ring
-				},
-				{	-- Truesilver Healing Ring
-					["itemID"] = 21765,	-- Truesilver Healing Ring
-				},
-				{	-- Wicked Moonstone Ring
-					["itemID"] = 20833,	-- Wicked Moonstone Ring
-				},
-				{	-- Woven Copper Ring
-					["itemID"] = 21931,	-- Woven Copper Ring
-				},
+				i(20964),	-- Aquamarine Signet
+				i(20958),	-- Blazing Citrine Ring
+				i(20906),	-- Braided Copper Ring
+				i(30804),	-- Bronze Band of Force
+				i(20961),	-- Citrine Ring of Rapid Healing
+				i(30422),	-- Diamond Focus Ring
+				i(20818),	-- Elegant Silver Ring
+				i(29160),	-- Emerald Lion Ring
+				i(20960),	-- Engraved Truesilver Ring
+				i(21753),	-- Gem Studded Band
+				i(20823),	-- Gloom Band
+				i(29159),	-- Glowing Thorium Band
+				i(20955),	-- Golden Dragon Ring
+				i(29157),	-- Golden Ring of Power
+				i(21932),	-- Heavy Cooper Ring
+				i(30420),	-- Heavy Jade Ring
+				i(20826),	-- Heavy Silver Ring
+				i(20821),	-- Inlaid Malachite Ring
+				i(21775),	-- Onslaught Ring
+				i(30421),	-- Red Ring of Destruction
+				i(21778),	-- Ring of Bitter Shadows
+				i(20827),	-- Ring of Silver Might
+				i(20828),	-- Ring of Twilight Shadows
+				i(21768),	-- Sapphire Signet
+				i(21767),	-- Simple Opal Ring
+				i(20820),	-- Simple Pearl Ring
+				i(20907),	-- Solid Bronze Ring
+				i(21754),	-- The Aquamarine Ward
+				i(20959),	-- The Jade Eye
+				i(25439),	-- Tigerseye Band
+				i(29158),	-- Truesilver Commander's Ring
+				i(21765),	-- Truesilver Healing Ring
+				i(20833),	-- Wicked Moonstone Ring
+				i(21931),	-- Woven Copper Ring
 			}),
 			filter(53, {	-- Trinket
-				{	-- Figurine - Black Diamond Crab
-					["itemID"] = 21784,	-- Figurine - Black Diamond Crab
-				},
-				{	-- Figurine - Black Pearl Panther
-					["itemID"] = 21758,	-- Figurine - Black Pearl Panther
-				},
-				{	-- Figurine - Dark Iron Scorpid
-					["itemID"] = 21789,	-- Figurine - Dark Iron Scorpid
-				},
-				{	-- Figurine - Emerald Owl
-					["itemID"] = 21777,	-- Figurine - Emerald Owl
-				},
-				{	-- Figurine - Golden Hare
-					["itemID"] = 21756,	-- Figurine - Golden Hare
-				},
-				{	-- Figurine - Jade Owl
-					["itemID"] = 21748,	-- Figurine - Jade Owl
-				},
-				{	-- Figurine - Ruby Serpent
-					["itemID"] = 21769,	-- Figurine - Ruby Serpent
-				},
-				{	-- Figurine - Truesilver Boar
-					["itemID"] = 21763,	-- Figurine - Truesilver Boar
-				},
-				{	-- Figurine - Truesilver Crab
-					["itemID"] = 21760,	-- Figurine - Truesilver Crab
-				},
+				i(21784),	-- Figurine - Black Diamond Crab
+				i(21758),	-- Figurine - Black Pearl Panther
+				i(21789),	-- Figurine - Dark Iron Scorpid
+				i(21777),	-- Figurine - Emerald Owl
+				i(21756),	-- Figurine - Golden Hare
+				i(21748),	-- Figurine - Jade Owl
+				i(21769),	-- Figurine - Ruby Serpent
+				i(21763),	-- Figurine - Truesilver Boar
+				i(21760),	-- Figurine - Truesilver Crab
 			}),
 		}),
 		n(-187, {	-- Leatherworking
@@ -1472,7 +823,7 @@ _.Craftables =
 					un(8, i(21278)),	-- Stormshroud Gloves
 					i(15091),	-- Runic Leather Gauntlets (Trainable now, old Pattern id 15731 used to teach this.)
 					i(15083),	-- Wicked Leather Gauntlets (Trainable now, old Pattern id 15725 used to teach this.)
-					un(8, i(15074)),	-- Chimeric Gloves	
+					un(8, i(15074)),	-- Chimeric Gloves
 					i(8346),	-- Gauntlets of the Sea
 					i(18238),	-- Shadowskin Gloves
 					un(29, i(17721)),	-- Gloves of the Greatfather
@@ -1547,7 +898,7 @@ _.Craftables =
 					i(2315),	-- Dark Leather Boots
 					i(2307),	-- Fine Leather Boots
 					i(2309),	-- Embossed Leather Boots
-				}),	
+				}),
 			}),
 			n(-45, {	-- Mail
 				n(-320, {	-- Head
@@ -1599,7 +950,7 @@ _.Craftables =
 					i(8187),	-- Turtle Scale Gloves
 					i(7348),	-- Fletcher's Gloves
 				}),
-				n(-328, {	-- Waist	
+				n(-328, {	-- Waist
 					i(15082),	-- Heavy Scorpid Belt
 				}),
 				n(-329, {	-- Legs
@@ -1636,17 +987,16 @@ _.Craftables =
 				i(4245),	-- Small Silk Pack
 				i(21340),	-- Soul Pouch
 				i(4240),	-- Woolen Bag
-			}),	
+			}),
 			n(-323, {	-- Chest
 				un(8, i(19682)),	-- Bloodvine Vest
 				un(8, i(22652)),	-- Glacial Vest
-				{	-- Robe of the Void
-					["itemID"] = 14153,	-- Robe of the Void
+				i(14153, {	-- Robe of the Void
 					["timeline"] = {
 						"added 1.11.1.5462",
 						"removed 5.0.4.15890",
 					},
-				},
+				}),
 				i(4324),	-- Azure Silk Vest
 				i(2578),	-- Barbaric Linen Vest
 				i(10001),	-- Black Mageweave Robe

@@ -12,408 +12,175 @@ _.Craftables =
 			}),
 		}),
 		n(-181, { 	-- Blacksmithing
-		-- Reviewed and updated as of 12.04.2018 BfA 8.0
 			filter(20, {	-- Daggers
-				{	-- Saronite Ambusher
-					["itemID"] = 41183,	-- Saronite Ambusher
-				},
-				{	-- Saronite Shiv
-					["itemID"] = 41184,	-- Saronite Shiv
-				},
-				{	-- Titansteel Shanker
-					["itemID"] = 42435,	-- Titansteel Shanker
-				},
-				{	-- Titansteel Spellblade
-					["itemID"] = 45085,	-- Titansteel Spellblade
-				},
+				i(41183),	-- Saronite Ambusher
+				i(41184),	-- Saronite Shiv
+				i(42435),	-- Titansteel Shanker
+				i(45085),	-- Titansteel Spellblade
 			}),
 			filter(21, {	-- 1H Axes
-				{	-- Notched Cobalt War Axe
-					["itemID"] = 41243,	-- Notched Cobalt War Axe
-				},
+				i(41243),	-- Notched Cobalt War Axe
 			}),
 			filter(22, {	-- 2H Axes
-				{	-- Honed Cobalt Cleaver
-					["itemID"] = 41181,	-- Honed Cobalt Cleaver
-				},
+				i(41181),	-- Honed Cobalt Cleaver
 			}),
 			filter(23, {	-- 1H Maces
-				{	-- Cobalt Tenderizer
-					["itemID"] = 41240,	-- Cobalt Tenderizer
-				},
-				{	-- Cudgel of Saronite Justice
-					["itemID"] = 42443,	-- Cudgel of Saronite Justice
-				},
-				{	-- Furious Saronite Beatstick
-					["itemID"] = 41185,	-- Furious Saronite Beatstick
-				},
-				{	-- Titansteel Bonecrusher
-					["itemID"] = 41383,	-- Titansteel Bonecrusher
-				},
-				{	-- Titansteel Guardian
-					["itemID"] = 41384,	-- Titansteel Guardian
-				},
+				i(41240),	-- Cobalt Tenderizer
+				i(42443),	-- Cudgel of Saronite Justice
+				i(41185),	-- Furious Saronite Beatstick
+				i(41383),	-- Titansteel Bonecrusher
+				i(41384),	-- Titansteel Guardian
 			}),
 			filter(24, {	-- 2H Maces
-				{	-- Saronite Mindcrusher
-					["itemID"] = 41188,	-- Saronite Mindcrusher
-				},
-				{	-- Titansteel Destroyer
-					["itemID"] = 41257,	-- Titansteel Destroyer
-				},
+				i(41188),	-- Saronite Mindcrusher
+				i(41257),	-- Titansteel Destroyer
 			}),
 			filter(25, {	-- 1H Swords
-				{	-- Corroded Saronite Edge
-					["itemID"] = 41186,	-- Corroded Saronite Edge
+				i(41186, {	-- Corroded Saronite Edge
 					["timeline"] = {
 						"added 3.0.1.8770",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Corroded Saronite Woundbringer
-					["itemID"] = 41187,	-- Corroded Saronite Woundbringer
+				}),
+				i(41187, {	-- Corroded Saronite Woundbringer
 					["timeline"] = {
 						"added 3.0.1.8770",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Saronite Spellblade
-					["itemID"] = 43871,	-- Saronite Spellblade
-				},
-				{	-- Savage Cobalt Slicer
-					["itemID"] = 41182,	-- Savage Cobalt Slicer
-				},
-				{	-- Sturdy Cobalt Quickblade
-					["itemID"] = 41239,	-- Sturdy Cobalt Quickblade
-				},
+				}),
+				i(43871),	-- Saronite Spellblade
+				i(41182),	-- Savage Cobalt Slicer
+				i(41239),	-- Sturdy Cobalt Quickblade
 			}),
 			filter(26, {	-- 2H Swords
-				{	-- Forged Cobalt Claymore
-					["itemID"] = 41242,	-- Forged Cobalt Claymore
-				},
+				i(41242),	-- Forged Cobalt Claymore
 			}),
 			filter(8, {		-- Shield
-				{	-- Cobalt Triangle Shield
-					["itemID"] = 40668,	-- Cobalt Triangle Shield
-				},
-				{	-- Saronite Bulwark
-					["itemID"] = 41113,	-- Saronite Bulwark
-				},
-				{	-- Saronite Defender
-					["itemID"] = 40670,	-- Saronite Defender
-				},
-				{	-- Saronite Protector
-					["itemID"] = 41117,	-- Saronite Protector
-				},
-				{	-- Titansteel Shield Wall
-					["itemID"] = 42508,	-- Titansteel Shield Wall
-				},
+				i(40668),	-- Cobalt Triangle Shield
+				i(41113),	-- Saronite Bulwark
+				i(40670),	-- Saronite Defender
+				i(41117),	-- Saronite Protector
+				i(42508),	-- Titansteel Shield Wall
 			}),
 			n(-320, {		-- Head
-				{	-- Brilliant Saronite Helm
-					["itemID"] = 43870,	-- Brilliant Saronite Helm
-				},
-				{	-- Brilliant Titansteel Helm
-					["itemID"] = 41388,	-- Brilliant Titansteel Helm
-				},
-				{	-- Cobalt Helm
-					["itemID"] = 39084,	-- Cobalt Helm
-				},
-				{	-- Helm of Command
-					["itemID"] = 41344,	-- Helm of Command
-				},
-				{	-- Horned Cobalt Helm
-					["itemID"] = 40955,	-- Horned Cobalt Helm
-				},
-				{	-- Ornate Saronite Skullshield
-					["itemID"] = 42728,	-- Ornate Saronite Skullshield
-				},
-				{	-- Reinforced Cobalt Helm
-					["itemID"] = 40957,	-- Reinforced Cobalt Helm
-				},
-				{	-- Savage Saronite Skullshield
-					["itemID"] = 41350,	-- Savage Saronite Skullshield
-				},
-				{	-- Spiked Cobalt Helm
-					["itemID"] = 40942,	-- Spiked Cobalt Helm
-				},
-				{	-- Spiked Titansteel Helm
-					["itemID"] = 41386,	-- Spiked Titansteel Helm
-				},
-				{	-- Tempered Saronite Helm
-					["itemID"] = 40673,	-- Tempered Saronite Helm
-				},
-				{	-- Tempered Titansteel Helm
-					["itemID"] = 41387,	-- Tempered Titansteel Helm
-				},
+				i(43870),	-- Brilliant Saronite Helm
+				i(41388),	-- Brilliant Titansteel Helm
+				i(39084),	-- Cobalt Helm
+				i(41344),	-- Helm of Command
+				i(40955),	-- Horned Cobalt Helm
+				i(42728),	-- Ornate Saronite Skullshield
+				i(40957),	-- Reinforced Cobalt Helm
+				i(41350),	-- Savage Saronite Skullshield
+				i(40942),	-- Spiked Cobalt Helm
+				i(41386),	-- Spiked Titansteel Helm
+				i(40673),	-- Tempered Saronite Helm
+				i(41387),	-- Tempered Titansteel Helm
 			}),
 			n(-321, {		-- Shoulders
-				{	-- Brilliant Saronite Pauldrons
-					["itemID"] = 43865,	-- Brilliant Saronite Pauldrons
-				},
-				{	-- Cobalt Shoulders
-					["itemID"] = 39083,	-- Cobalt Shoulders
-				},
-				{	-- Ornate Saronite Pauldrons
-					["itemID"] = 42727,	-- Ornate Saronite Pauldrons
-				},
-				{	-- Reinforced Cobalt Shoulders
-					["itemID"] = 40956,	-- Reinforced Cobalt Shoulders
-				},
-				{	-- Savage Saronite Pauldrons
-					["itemID"] = 41351,	-- Savage Saronite Pauldrons
-				},
-				{	-- Spiked Cobalt Shoulders
-					["itemID"] = 40950,	-- Spiked Cobalt Shoulders
-				},
-				{	-- Tempered Saronite Shoulders
-					["itemID"] = 40675,	-- Tempered Saronite Shoulders
-				},
+				i(43865),	-- Brilliant Saronite Pauldrons
+				i(39083),	-- Cobalt Shoulders
+				i(42727),	-- Ornate Saronite Pauldrons
+				i(40956),	-- Reinforced Cobalt Shoulders
+				i(41351),	-- Savage Saronite Pauldrons
+				i(40950),	-- Spiked Cobalt Shoulders
+				i(40675),	-- Tempered Saronite Shoulders
 			}),
 			n(-323, {		-- Chest
-				{	-- Breastplate of the White Knight [Alliance]
-					["itemID"] = 47591,	-- Breastplate of the White Knight
-				},
-				{	-- Breastplate of the White Knight [Horde]
-					["itemID"] = 47592,	-- Breastplate of the White Knight
-				},
-				{	-- Brilliant Saronite Breastplate
-					["itemID"] = 41129,	-- Brilliant Saronite Breastplate
-				},
-				{	-- Chestplate of Conquest
-					["itemID"] = 41189,	-- Chestplate of Conquest
+				i(47591),	-- Breastplate of the White Knight
+				i(47592),	-- Breastplate of the White Knight
+				i(41129),	-- Brilliant Saronite Breastplate
+				i(41189, {	-- Chestplate of Conquest
 					["timeline"] = {
 						"added 3.0.1.8770",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Cobalt Chestpiece
-					["itemID"] = 39085,	-- Cobalt Chestpiece
-				},
-				{	-- Icebane Chestguard
-					["itemID"] = 43586,	-- Icebane Chestguard
-				},
-				{	-- Ornate Saronite Hauberk
-					["itemID"] = 42725,	-- Ornate Saronite Hauberk
-				},
-				{	-- Reinforced Cobalt Chestpiece
-					["itemID"] = 40959,	-- Reinforced Cobalt Chestpiece
-				},
-				{	-- Savage Saronite Hauberk
-					["itemID"] = 41353,	-- Savage Saronite Hauberk
-				},
-				{	-- Spiked Cobalt Chestpiece
-					["itemID"] = 40951,	-- Spiked Cobalt Chestpiece
-				},
-				{	-- Sunforged Breastplate [Alliance]
-					["itemID"] = 47593,	-- Sunforged Breastplate
-				},
-				{	-- Sunforged Breastplate [Horde]
-					["itemID"] = 47594,	-- Sunforged Breastplate
-				},
-				{	--	 Tempered Saronite Breastplate
-					["itemID"] = 40672,	-- Tempered Saronite Breastplate
-				},
-				{	-- Titanium Razorplate [Alliance]
-					["itemID"] = 47589,	-- Titanium Razorplate
-				},
-				{	-- Titanium Razorplate [Horde]
-					["itemID"] = 47590,	-- Titanium Razorplate
-				},
+				}),
+				i(39085),	-- Cobalt Chestpiece
+				i(43586),	-- Icebane Chestguard
+				i(42725),	-- Ornate Saronite Hauberk
+				i(40959),	-- Reinforced Cobalt Chestpiece
+				i(41353),	-- Savage Saronite Hauberk
+				i(40951),	-- Spiked Cobalt Chestpiece
+				i(47593),	-- Sunforged Breastplate
+				i(47594),	-- Sunforged Breastplate
+				i(40672),	-- Tempered Saronite Breastplate
+				i(47589),	-- Titanium Razorplate
+				i(47590),	-- Titanium Razorplate
 			}),
 			n(-327, {		-- Hands
-				{	-- Brilliant Saronite Gauntlets
-					["itemID"] = 41127,	-- Brilliant Saronite Gauntlets
-				},
-				{	-- Cobalt Gauntlets
-					["itemID"] = 41975,	-- Cobalt Gauntlets
-				},
-				{	-- Daunting Handguards
-					["itemID"] = 41357,	-- Daunting Handguards
-				},
-				{	-- Ornate Saronite Gauntlets
-					["itemID"] = 42724,	-- Ornate Saronite Gauntlets
-				},
-				{	-- Righteous Gauntlets
-					["itemID"] = 41356,	-- Righteous Gauntlets
-				},
-				{	-- Savage Saronite Gauntlets
-					["itemID"] = 41349,	-- Savage Saronite Gauntlets
-				},
-				{	-- Spiked Cobalt Gauntlets
-					["itemID"] = 40952,	-- Spiked Cobalt Gauntlets
-				},
-				{	-- Tempered Saronite Gauntlets
-					["itemID"] = 41114,	-- Tempered Saronite Gauntlets
-				},
+				i(41127),	-- Brilliant Saronite Gauntlets
+				i(41975),	-- Cobalt Gauntlets
+				i(41357),	-- Daunting Handguards
+				i(42724),	-- Ornate Saronite Gauntlets
+				i(41356),	-- Righteous Gauntlets
+				i(41349),	-- Savage Saronite Gauntlets
+				i(40952),	-- Spiked Cobalt Gauntlets
+				i(41114),	-- Tempered Saronite Gauntlets
 			}),
 			n(-326, {		-- Wrist
-				{	-- Brilliant Saronite Bracers
-					["itemID"] = 43864,	-- Brilliant Saronite Bracers
-				},
-				{	-- Cobalt Bracers
-					["itemID"] = 41974,	-- Cobalt Bracers
-				},
-				{	-- Ornate Saronite Bracers
-					["itemID"] = 42723,	-- Ornate Saronite Bracers
-				},
-				{	-- Saronite Swordbreakers [Alliance]
-					["itemID"] = 47570,	-- Saronite Swordbreakers
-				},
-				{	-- Saronite Swordbreakers [Horde]
-					["itemID"] = 47571,	-- Saronite Swordbreakers
-				},
-				{	-- Savage Saronite Bracers
-					["itemID"] = 41354,	-- Savage Saronite Bracers
-				},
-				{	-- Spiked Cobalt Bracers
-					["itemID"] = 40954,	-- Spiked Cobalt Bracers
-				},
-				{	-- Sunforged Bracers [Alliance]
-					["itemID"] = 47574,	-- Sunforged Bracers
-				},
-				{	-- Sunforged Bracers [Horde]
-					["itemID"] = 47575,	-- Sunforged Bracers
-				},
-				{	-- Tempered Saronite Bracers
-					["itemID"] = 41116,	-- Tempered Saronite Bracers
-				},
-				{	-- Titanium Spikeguards [Alliance]
-					["itemID"] = 47572,	-- Titanium Spikeguards
-				},
-				{	-- Titanium Spikeguards [Horde]
-					["itemID"] = 47573,	-- Titanium Spikeguards
-				},
-				{	-- Vengeance Bindings
-					["itemID"] = 41355,	-- Vengeance Bindings
-				},
+				i(43864),	-- Brilliant Saronite Bracers
+				i(41974),	-- Cobalt Bracers
+				i(42723),	-- Ornate Saronite Bracers
+				i(47570),	-- Saronite Swordbreakers
+				i(47571),	-- Saronite Swordbreakers
+				i(41354),	-- Savage Saronite Bracers
+				i(40954),	-- Spiked Cobalt Bracers
+				i(47574),	-- Sunforged Bracers
+				i(47575),	-- Sunforged Bracers
+				i(41116),	-- Tempered Saronite Bracers
+				i(47572),	-- Titanium Spikeguards
+				i(47573),	-- Titanium Spikeguards
+				i(41355),	-- Vengeance Bindings
 			}),
 			n(-328, {		-- Waist
-				{	-- Belt of the Titans
-					["itemID"] = 45550,	-- Belt of the Titans
-				},
-				{	-- Brilliant Saronite Belt
-					["itemID"] = 43860,	-- Brilliant Saronite Belt
-				},
-				{	-- Cobalt Belt
-					["itemID"] = 39087,	-- Cobalt Belt
-				},
-				{	-- Icebane Girdle
-					["itemID"] = 43587,	-- Icebane Girdle
-				},
-				{	-- Indestructible Plate Girdle
-					["itemID"] = 45551,	-- Indestructible Plate Girdle
-				},
-				{	-- Ornate Saronite Waistguard
-					["itemID"] = 42729,	-- Ornate Saronite Waistguard
-				},
-				{	-- Plate Girdle of Righteousness
-					["itemID"] = 45552,	-- Plate Girdle of Righteousness
-				},
-				{	-- Savage Saronite Waistguard
-					["itemID"] = 41352,	-- Savage Saronite Waistguard
-				},
-				{	-- Spiked Cobalt Belt
-					["itemID"] = 40953,	-- Spiked Cobalt Belt
-				},
-				{	-- Tempered Saronite Belt
-					["itemID"] = 40669,	-- Tempered Saronite Belt
-				},
+				i(45550),	-- Belt of the Titans
+				i(43860),	-- Brilliant Saronite Belt
+				i(39087),	-- Cobalt Belt
+				i(43587),	-- Icebane Girdle
+				i(45551),	-- Indestructible Plate Girdle
+				i(42729),	-- Ornate Saronite Waistguard
+				i(45552),	-- Plate Girdle of Righteousness
+				i(41352),	-- Savage Saronite Waistguard
+				i(40953),	-- Spiked Cobalt Belt
+				i(40669),	-- Tempered Saronite Belt
 			}),
 			n(-329, {		-- Legs
-				{	-- Brilliant Saronite Legplates
-					["itemID"] = 41126,	-- Brilliant Saronite Legplates
-				},
-				{	-- Cobalt Legplates
-					["itemID"] = 39086,	-- Cobalt Legplates
-				},
-				{	-- Daunting Legplates
-					["itemID"] = 41345,	-- Daunting Legplates
-				},
-				{	-- Icebane Treads
-					["itemID"] = 43588,	-- Icebane Treads
-				},
-				{	-- Legplates of Conquest
-					["itemID"] = 41190,	-- Legplates of Conquest
+				i(41126),	-- Brilliant Saronite Legplates
+				i(39086),	-- Cobalt Legplates
+				i(41345),	-- Daunting Legplates
+				i(43588),	-- Icebane Treads
+				i(41190, {	-- Legplates of Conquest
 					["timeline"] = {
 						"added 3.0.1.8770",
 						"removed 4.0.1.13287",
 					},
-				},
-				{	-- Legplates of Painful Death
-					["itemID"] = 49903,	-- Legplates of Painful Death
-				},
-				{	-- Ornate Saronite Legplates
-					["itemID"] = 42726,	-- Ornate Saronite Legplates
-				},
-				{	-- Pillars of Might
-					["itemID"] = 49904,	-- Pillars of Might
-				},
-				{	-- Puresteel Legplates
-					["itemID"] = 49902,	-- Puresteel Legplates
-				},
-				{	-- Reinforced Cobalt Legplates
-					["itemID"] = 40958,	-- Reinforced Cobalt Legplates
-				},
-				{	-- Righteous Greaves
-					["itemID"] = 41346,	-- Righteous Greaves
-				},
-				{	-- Savage Saronite Legplates
-					["itemID"] = 41347,	-- Savage Saronite Legplates
-				},
-				{	-- Spiked Cobalt Legplates
-					["itemID"] = 40943,	-- Spiked Cobalt Legplates
-				},
-				{	-- Tempered Saronite Legplates
-					["itemID"] = 40674,	-- Tempered Saronite Legplates
-				},
+				}),
+				i(49903),	-- Legplates of Painful Death
+				i(42726),	-- Ornate Saronite Legplates
+				i(49904),	-- Pillars of Might
+				i(49902),	-- Puresteel Legplates
+				i(40958),	-- Reinforced Cobalt Legplates
+				i(41346),	-- Righteous Greaves
+				i(41347),	-- Savage Saronite Legplates
+				i(40943),	-- Spiked Cobalt Legplates
+				i(40674),	-- Tempered Saronite Legplates
 			}),
 			n(-330, {		-- Feet
-				{	-- Battlelord's Plate Boots
-					["itemID"] = 45559,	-- Battlelord's Plate Boots
-				},
-				{	-- Boots of Kingly Upheaval
-					["itemID"] = 49907,	-- Boots of Kingly Upheaval
-				},
-				{	-- Brilliant Saronite Boots
-					["itemID"] = 41128,	-- Brilliant Saronite Boots
-				},
-				{	-- Brilliant Titansteel Treads
-					["itemID"] = 41394,	-- Brilliant Titansteel Treads
-				},
-				{	-- Cobalt Boots
-					["itemID"] = 39088,	-- Cobalt Boots
-				},
-				{	-- Hellfrozen Bonegrinders
-					["itemID"] = 49906,	-- Hellfrozen Bonegrinders
-				},
-				{	-- Ornate Saronite Walkers
-					["itemID"] = 42730,	-- Ornate Saronite Walkers
-				},
-				{	-- Protectors of Life
-					["itemID"] = 49905,	-- Protectors of Life
-				},
-				{	-- Savage Saronite Walkers
-					["itemID"] = 41348,	-- Savage Saronite Walkers
-				},
-				{	-- Spiked Cobalt Boots
-					["itemID"] = 40949,	-- Spiked Cobalt Boots
-				},
-				{	-- Spiked Deathdealers
-					["itemID"] = 45560,	-- Spiked Deathdealers
-				},
-				{	-- Spiked Titansteel Treads
-					["itemID"] = 41391,	-- Spiked Titansteel Treads
-				},
-				{	-- Tempered Saronite Boot
-					["itemID"] = 40671,	-- Tempered Saronite Boot
-				},
-				{	-- Tempered Titansteel Treads
-					["itemID"] = 41392,	-- Tempered Titansteel Treads
-				},
-				{	-- Treads of Destiny
-					["itemID"] = 45561,	-- Treads of Destiny
-				},
+				i(45559),	-- Battlelord's Plate Boots
+				i(49907),	-- Boots of Kingly Upheaval
+				i(41128),	-- Brilliant Saronite Boots
+				i(41394),	-- Brilliant Titansteel Treads
+				i(39088),	-- Cobalt Boots
+				i(49906),	-- Hellfrozen Bonegrinders
+				i(42730),	-- Ornate Saronite Walkers
+				i(49905),	-- Protectors of Life
+				i(41348),	-- Savage Saronite Walkers
+				i(40949),	-- Spiked Cobalt Boots
+				i(45560),	-- Spiked Deathdealers
+				i(41391),	-- Spiked Titansteel Treads
+				i(40671),	-- Tempered Saronite Boot
+				i(41392),	-- Tempered Titansteel Treads
+				i(45561),	-- Treads of Destiny
 			}),
 		}),
 		n(-183, { 	-- Engineering
@@ -456,7 +223,6 @@ _.Craftables =
 			}),
 		}),
 		n(-185, { 	-- Inscription
-		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, {	-- Tarot Cards
 				sp(59504, {	-- Darkmoon Card of the North
 					i(44260, {["f"] = 55}),    -- Ace of Prisms
@@ -517,111 +283,44 @@ _.Craftables =
 			}),
 		}),
 		n(-186, { 	-- Jewelcrafting
-		-- Reviewed and updated as of 11.27.2018 BfA 8.0
 			filter(51, {	-- Neck
-				{	-- Blood Sun Necklace
-					["itemID"] = 42339,	-- Blood Sun Necklace
-				},
-				{	-- Crystal Chalcedony Amulet
-					["itemID"] = 43245,	-- Crystal Chalcedony Amulet
-				},
-				{	-- Crystal Citrine Necklace
-					["itemID"] = 43244,	-- Crystal Citrine Necklace
-				},
-				{	-- Emerald Choker
-					["itemID"] = 45812,	-- Emerald Choker
-				},
-				{	-- Jade Dagger Pendant
-					["itemID"] = 42338,	-- Jade Dagger Pendant
-				},
-				{	-- Sky Sapphire Amulet
-					["itemID"] = 45813,	-- Sky Sapphire Amulet
-				},
-				{	-- Titanium Earthguard Chain
-					["itemID"] = 42646,	-- Titanium Earthguard Chain
-				},
-				{	-- Titanium Impact Choker
-					["itemID"] = 42645,	-- Titanium Impact Choker
-				},
-				{	-- Titanium Spellshock Necklace
-					["itemID"] = 42647,	-- Titanium Spellshock Necklace
-				},
+				i(42339),	-- Blood Sun Necklace
+				i(43245),	-- Crystal Chalcedony Amulet
+				i(43244),	-- Crystal Citrine Necklace
+				i(45812),	-- Emerald Choker
+				i(42338),	-- Jade Dagger Pendant
+				i(45813),	-- Sky Sapphire Amulet
+				i(42646),	-- Titanium Earthguard Chain
+				i(42645),	-- Titanium Impact Choker
+				i(42647),	-- Titanium Spellshock Necklace
 			}),
 			filter(52, {	-- Finger
-				{	-- Bloodstone Band
-					["itemID"] = 42336,	-- Bloodstone Band
-				},
-				{	-- Dream Signet
-					["itemID"] = 42340,	-- Dream Signet
-				},
-				{	-- Earthshadow Ring
-					["itemID"] = 43246,	-- Earthshadow Ring
-				},
-				{	-- Jade Ring of Slaying
-					["itemID"] = 43247,	-- Jade Ring of Slaying
-				},
-				{	-- Ring of Earthen Might
-					["itemID"] = 43250,	-- Ring of Earthen Might
-				},
-				{	-- Ring of Northern Tears
-					["itemID"] = 43253,	-- Ring of Northern Tears
-				},
-				{	-- Ring of Scarlet Shadows
-					["itemID"] = 43251,	-- Ring of Scarlet Shadows
-				},
-				{	-- Runed Mana Band
-					["itemID"] = 45808,	-- Runed Mana Band
-				},
-				{	-- Savage Titanium Band
-					["itemID"] = 43498,	-- Savage Titanium Band
-				},
-				{	-- Savage Titanium Ring
-					["itemID"] = 43482,	-- Savage Titanium Ring
-				},
-				{	-- Scarlet Signet
-					["itemID"] = 45809,	-- Scarlet Signet
-				},
-				{	-- Shadowmight Ring
-					["itemID"] = 43249,	-- Shadowmight Ring
-				},
-				{	-- Stoneguard Band
-					["itemID"] = 43248,	-- Stoneguard Band
-				},
-				{	-- Sun Rock Ring
-					["itemID"] = 42337,	-- Sun Rock Ring
-				},
-				{	-- Titanium Earthguard Ring
-					["itemID"] = 42643,	-- Titanium Earthguard Ring
-				},
-				{	-- Titanium Frostguard Ring
-					["itemID"] = 43582,	-- Titanium Frostguard Ring
-				},
-				{	-- Titanium Impact Band
-					["itemID"] = 42642,	-- Titanium Impact Band
-				},
-				{	-- Titanium Spellshock Ring
-					["itemID"] = 42644,	-- Titanium Spellshock Ring
-				},
-				{	-- Windfire Band
-					["itemID"] = 43252,	-- Windfire Band
-				},
+				i(42336),	-- Bloodstone Band
+				i(42340),	-- Dream Signet
+				i(43246),	-- Earthshadow Ring
+				i(43247),	-- Jade Ring of Slaying
+				i(43250),	-- Ring of Earthen Might
+				i(43253),	-- Ring of Northern Tears
+				i(43251),	-- Ring of Scarlet Shadows
+				i(45808),	-- Runed Mana Band
+				i(43498),	-- Savage Titanium Band
+				i(43482),	-- Savage Titanium Ring
+				i(45809),	-- Scarlet Signet
+				i(43249),	-- Shadowmight Ring
+				i(43248),	-- Stoneguard Band
+				i(42337),	-- Sun Rock Ring
+				i(42643),	-- Titanium Earthguard Ring
+				i(43582),	-- Titanium Frostguard Ring
+				i(42642),	-- Titanium Impact Band
+				i(42644),	-- Titanium Spellshock Ring
+				i(43252),	-- Windfire Band
 			}),
 			filter(53, {	-- Trinket
-				{	-- Figurine - Emerald Boar
-					["itemID"] = 42418,	-- Figurine - Emerald Boar
-				},
-				{	-- Figurine - Monarch Crab
-					["itemID"] = 44063,	-- Figurine - Monarch Crab
-				},
-				{	-- Figurine - Ruby Hare
-					["itemID"] = 42341,	-- Figurine - Ruby Hare
-				},
-				{	-- Figurine - Sapphire Owl
-					["itemID"] = 42413,	-- Figurine - Sapphire Owl
-				},
-				{	-- Figurine - Twilight Serpent
-					["itemID"] = 42395,	-- Figurine - Twilight Serpent
-				},
+				i(42418),	-- Figurine - Emerald Boar
+				i(44063),	-- Figurine - Monarch Crab
+				i(42341),	-- Figurine - Ruby Hare
+				i(42413),	-- Figurine - Sapphire Owl
+				i(42395),	-- Figurine - Twilight Serpent
 			}),
 		}),
 		n(-187, { 	-- Leatherworking

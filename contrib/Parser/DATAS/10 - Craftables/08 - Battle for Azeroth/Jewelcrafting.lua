@@ -18,9 +18,7 @@ _.Craftables =
 				i(153686),	-- Amberblaze Loop
 				i(168703),	-- Ascended Leviathan's Eye Loop
 				i(168702, {	-- Crushing Leviathan's Eye Loop
-					["g"] = {
-						i(168772),	-- Recipe: Ascended Leviathan's Eye Loop
-					},
+					i(168772),	-- Recipe: Ascended Leviathan's Eye Loop
 				}),
 				i(166521),	-- Emblazoned Kraken's Eye Loop
 				i(166524),	-- Eternal Kraken's Eye Loop
@@ -30,9 +28,7 @@ _.Craftables =
 				i(153688),	-- Kubiline Ring
 				i(153687),	-- Kyanite Ring
 				i(168701, {	-- Leviathan's Eye Loop
-					["g"] = {
-						i(168771),	-- Recipe: Crushing Leviathan's Eye Loop
-					},
+					i(168771),	-- Recipe: Crushing Leviathan's Eye Loop
 				}),
 				i(153685),	-- Owlseye Loop
 				i(153683),	-- Royal Quartz Loop

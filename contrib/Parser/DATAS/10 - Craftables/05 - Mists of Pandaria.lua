@@ -49,533 +49,202 @@ _.Craftables =
 			}),
 		}),
 		n(-181, { 	-- Blacksmithing
-		-- Reviewed and updated as of 12.13.2018 BfA 8.0
 			filter(20, {	-- Daggers
-				{	-- Ghost Shard
-					["itemID"] = 82967,	-- Ghost Shard
-				},
-				{	-- Masterwork Ghost Shard
-					["itemID"] = 82974,	-- Masterwork Ghost Shard
-				},
+				i(82967),	-- Ghost Shard
+				i(82974),	-- Masterwork Ghost Shard
 			}),
 			filter(21, {	-- 1H Axes
-				{	-- Black Planar Edge, Reborn
-					["itemID"] = 94577,	-- Black Planar Edge, Reborn
-				},
-				{	-- Forgewire Axe
-					["itemID"] = 82963,	-- Forgewire Axe
-				},
-				{	-- Masterwork Forgewire Axe
-					["itemID"] = 82970,	-- Masterwork Forgewire Axe
-				},
-				{	-- The Planar Edge, Reborn
-					["itemID"] = 94575,	-- The Planar Edge, Reborn
-				},
-				{	-- Wicked Edge of the Planes, Reborn
-					["itemID"] = 94579,	-- Wicked Edge of the Planes, Reborn
-				},
+				i(94577),	-- Black Planar Edge, Reborn
+				i(82963),	-- Forgewire Axe
+				i(82970),	-- Masterwork Forgewire Axe
+				i(94575),	-- The Planar Edge, Reborn
+				i(94579),	-- Wicked Edge of the Planes, Reborn
 			}),
 			filter(22, {	-- 2H Axes
-				{	-- Bloodmoon, Reborn
-					["itemID"] = 94580,	-- Bloodmoon, Reborn
-				},
-				{	-- Lunar Crescent, Reborn
-					["itemID"] = 94576,	-- Lunar Crescent, Reborn
-				},
-				{	-- Masterwork Spiritblade Decimator
-					["itemID"] = 82973,	-- Masterwork Spiritblade Decimator
-				},
-				{	-- Mooncleaver, Reborn
-					["itemID"] = 94578,	-- Mooncleaver, Reborn
-				},
-				{	-- Spiritblade Decimator
-					["itemID"] = 82966,	-- Spiritblade Decimator
-				},
+				i(94580),	-- Bloodmoon, Reborn
+				i(94576),	-- Lunar Crescent, Reborn
+				i(82973),	-- Masterwork Spiritblade Decimator
+				i(94578),	-- Mooncleaver, Reborn
+				i(82966),	-- Spiritblade Decimator
 			}),
 			filter(23, {	-- 1H Maces
-				{	-- Dragonmaw, Reborn
-					["itemID"] = 94584,	-- Dragonmaw, Reborn
-				},
-				{	-- Dragonstrike, Reborn
-					["itemID"] = 94585,	-- Dragonstrike, Reborn
-				},
-				{	-- Drakefist Hammer, Reborn
-					["itemID"] = 94581,	-- Drakefist Hammer, Reborn
-				},
-				{	-- Masterwork Phantasmal Hammer
-					["itemID"] = 82972,	-- Masterwork Phantasmal Hammer
-				},
-				{	-- Phantasmal Hammer
-					["itemID"] = 82965,	-- Phantasmal Hammer
-				},
+				i(94584),	-- Dragonmaw, Reborn
+				i(94585),	-- Dragonstrike, Reborn
+				i(94581),	-- Drakefist Hammer, Reborn
+				i(82972),	-- Masterwork Phantasmal Hammer
+				i(82965),	-- Phantasmal Hammer
 			}),
 			filter(24, {	-- 2H Maces
-				{	-- Deep Thunder, Reborn
-					["itemID"] = 94583,	-- Deep Thunder, Reborn
-				},
-				{	-- Stormherald, Reborn
-					["itemID"] = 94586,	-- Stormherald, Reborn
-				},
-				{	-- Thunder, Reborn
-					["itemID"] = 94582,	-- Thunder, Reborn
-				},
+				i(94583),	-- Deep Thunder, Reborn
+				i(94586),	-- Stormherald, Reborn
+				i(94582),	-- Thunder, Reborn
 			}),
 			filter(25, {	-- 1H Swords
-				{	-- Blazefury, Reborn
-					["itemID"] = 94591,	-- Blazefury, Reborn
-				},
-				{	-- Blazeguard, Reborn
-					["itemID"] = 94589,	-- Blazeguard, Reborn
-				},
-				{	-- Fireguard, Reborn
-					["itemID"] = 94587,	-- Fireguard, Reborn
-				},
-				{	-- Ghost-Forged Blade
-					["itemID"] = 82964,	-- Ghost-Forged Blade
-				},
-				{	-- Masterwork Ghost-Forged Blade
-					["itemID"] = 82971,	-- Masterwork Ghost-Forged Blade
-				},
+				i(94591),	-- Blazefury, Reborn
+				i(94589),	-- Blazeguard, Reborn
+				i(94587),	-- Fireguard, Reborn
+				i(82964),	-- Ghost-Forged Blade
+				i(82971),	-- Masterwork Ghost-Forged Blade
 			}),
 			filter(26, {	-- 2H Swords
-				{	-- Lionheart Blade, Reborn
-					["itemID"] = 94588,	-- Lionheart Blade, Reborn
-				},
-				{	-- Lionheart Champion, Reborn
-					["itemID"] = 94590,	-- Lionheart Champion, Reborn
-				},
-				{	-- Lionheart Executioner, Reborn
-					["itemID"] = 94592,	-- Lionheart Executioner, Reborn
-				},
+				i(94588),	-- Lionheart Blade, Reborn
+				i(94590),	-- Lionheart Champion, Reborn
+				i(94592),	-- Lionheart Executioner, Reborn
 			}),
 			filter(8, {		-- Shield
-				{	-- Crafted Malevolent Gladiator's Barrier
-					["itemID"] = 98776,	-- Crafted Malevolent Gladiator's Barrier
-				},
-				{	-- Crafted Malevolent Gladiator's Redoubt
-					["itemID"] = 98810,	-- Crafted Malevolent Gladiator's Redoubt
-				},
-				{	-- Crafted Malevolent Gladiator's Shield Wall
-					["itemID"] = 98920,	-- Crafted Malevolent Gladiator's Shield Wall
-				},
-				{	-- Lightsteel Shield
-					["itemID"] = 82961,	-- Lightsteel Shield
-				},
-				{	-- Masterwork Lightsteel Shield
-					["itemID"] = 82968,	-- Masterwork Lightsteel Shield
-				},
-				{	-- Masterwork Spiritguard Shield
-					["itemID"] = 82969,	-- Masterwork Spiritguard Shield
-				},
-				{	-- Spiritguard Shield
-					["itemID"] = 82962,	-- Spiritguard Shield
-				},
+				i(98776),	-- Crafted Malevolent Gladiator's Barrier
+				i(98810),	-- Crafted Malevolent Gladiator's Redoubt
+				i(98920),	-- Crafted Malevolent Gladiator's Shield Wall
+				i(82961),	-- Lightsteel Shield
+				i(82968),	-- Masterwork Lightsteel Shield
+				i(82969),	-- Masterwork Spiritguard Shield
+				i(82962),	-- Spiritguard Shield
 			}),
 			n(-320, {		-- Head
-				{	-- Contender's Revenant Helm
-					["itemID"] = 82943,	-- Contender's Revenant Helm
-				},
-				{	-- Contender's Spirit Helm
-					["itemID"] = 82951,	-- Contender's Spirit Helm
-				},
-				{	-- Crafted Dreadful Gladiator's Dreadplate Helm
-					["itemID"] = 93455,	-- Crafted Dreadful Gladiator's Dreadplate Helm
-				},
-				{	-- Crafted Dreadful Gladiator's Ornamented Headcover
-					["itemID"] = 93540,	-- Crafted Dreadful Gladiator's Ornamented Headcover
-				},
-				{	-- Crafted Dreadful Gladiator's Plate Helm
-					["itemID"] = 93622,	-- Crafted Dreadful Gladiator's Plate Helm
-				},
-				{	-- Crafted Dreadful Gladiator's Scaled Helm
-					["itemID"] = 93529,	-- Crafted Dreadful Gladiator's Scaled Helm
-				},
-				{	-- Crafted Malevolent Gladiator's Dreadplate Helm
-					["itemID"] = 98786,	-- Crafted Malevolent Gladiator's Dreadplate Helm
-				},
-				{	-- Crafted Malevolent Gladiator's Ornamented Headcover
-					["itemID"] = 98856,	-- Crafted Malevolent Gladiator's Ornamented Headcover
-				},
-				{	-- Crafted Malevolent Gladiator's Plate Helm
-					["itemID"] = 98928,	-- Crafted Malevolent Gladiator's Plate Helm
-				},
-				{	-- Crafted Malevolent Gladiator's Scaled Helm
-					["itemID"] = 98845,	-- Crafted Malevolent Gladiator's Scaled Helm
-				},
-				{	-- Ghost-Forged Helm [Green]
-					["itemID"] = 82903,	-- Ghost-Forged Helm
-				},
-				{	-- Ghost-Forged Helm [Blue]
-					["itemID"] = 82927,	-- Ghost-Forged Helm
-				},
-				{	-- Haunted Steel Greathelm
-					["itemID"] = 94266,	-- Haunted Steel Greathelm
-				},
-				{	-- Haunted Steel Headcover
-					["itemID"] = 94264,	-- Haunted Steel Headcover
-				},
-				{	-- Haunted Steel Headguard
-					["itemID"] = 94268,	-- Haunted Steel Headguard
-				},
-				{	-- Masterwork Spiritguard Helm
-					["itemID"] = 82919,	-- Masterwork Spiritguard Helm
-				},
+				i(82943),	-- Contender's Revenant Helm
+				i(82951),	-- Contender's Spirit Helm
+				i(93455),	-- Crafted Dreadful Gladiator's Dreadplate Helm
+				i(93540),	-- Crafted Dreadful Gladiator's Ornamented Headcover
+				i(93622),	-- Crafted Dreadful Gladiator's Plate Helm
+				i(93529),	-- Crafted Dreadful Gladiator's Scaled Helm
+				i(98786),	-- Crafted Malevolent Gladiator's Dreadplate Helm
+				i(98856),	-- Crafted Malevolent Gladiator's Ornamented Headcover
+				i(98928),	-- Crafted Malevolent Gladiator's Plate Helm
+				i(98845),	-- Crafted Malevolent Gladiator's Scaled Helm
+				i(82903),	-- Ghost-Forged Helm
+				i(82927),	-- Ghost-Forged Helm
+				i(94266),	-- Haunted Steel Greathelm
+				i(94264),	-- Haunted Steel Headcover
+				i(94268),	-- Haunted Steel Headguard
+				i(82919),	-- Masterwork Spiritguard Helm
 			}),
 			n(-321, {		-- Shoulders
-				{	-- Contender's Revenant Shoulders
-					["itemID"] = 82944,	-- Contender's Revenant Shoulders
-				},
-				{	-- Contender's Spirit Shoulders
-					["itemID"] = 82952,	-- Contender's Spirit Shoulders
-				},
-				{	-- Crafted Dreadful Gladiator's Dreadplate Shoulders
-					["itemID"] = 93457,	-- Crafted Dreadful Gladiator's Dreadplate Shoulders
-				},
-				{	-- Crafted Dreadful Gladiator's Ornamented Spaulders
-					["itemID"] = 93542,	-- Crafted Dreadful Gladiator's Ornamented Spaulders
-				},
-				{	-- Crafted Dreadful Gladiator's Plate Shoulders
-					["itemID"] = 93624,	-- Crafted Dreadful Gladiator's Plate Shoulders
-				},
-				{	-- Crafted Dreadful Gladiator's Scaled Shoulders
-					["itemID"] = 93531,	-- Crafted Dreadful Gladiator's Scaled Shoulders
-				},
-				{	-- Crafted Malevolent Gladiator's Dreadplate Shoulders
-					["itemID"] = 98788,	-- Crafted Malevolent Gladiator's Dreadplate Shoulders
-				},
-				{	-- Crafted Malevolent Gladiator's Ornamented Spaulders
-					["itemID"] = 98858,	-- Crafted Malevolent Gladiator's Ornamented Spaulders
-				},
-				{	-- Crafted Malevolent Gladiator's Plate Shoulders
-					["itemID"] = 98930,	-- Crafted Malevolent Gladiator's Plate Shoulders
-				},
-				{	-- Crafted Malevolent Gladiator's Scaled Shoulders
-					["itemID"] = 98847,	-- Crafted Malevolent Gladiator's Scaled Shoulders
-				},
-				{	-- Ghost-Forged Shoulders [Green]
-					["itemID"] = 82904,	-- Ghost-Forged Shoulders
-				},
-				{	-- Ghost-Forged Shoulders [Blue]
-					["itemID"] = 82928,	-- Ghost-Forged Shoulders
-				},
-				{	-- Masterwork Spiritguard Shoulders
-					["itemID"] = 82920,	-- Masterwork Spiritguard Shoulders
-				},
+				i(82944),	-- Contender's Revenant Shoulders
+				i(82952),	-- Contender's Spirit Shoulders
+				i(93457),	-- Crafted Dreadful Gladiator's Dreadplate Shoulders
+				i(93542),	-- Crafted Dreadful Gladiator's Ornamented Spaulders
+				i(93624),	-- Crafted Dreadful Gladiator's Plate Shoulders
+				i(93531),	-- Crafted Dreadful Gladiator's Scaled Shoulders
+				i(98788),	-- Crafted Malevolent Gladiator's Dreadplate Shoulders
+				i(98858),	-- Crafted Malevolent Gladiator's Ornamented Spaulders
+				i(98930),	-- Crafted Malevolent Gladiator's Plate Shoulders
+				i(98847),	-- Crafted Malevolent Gladiator's Scaled Shoulders
+				i(82904),	-- Ghost-Forged Shoulders
+				i(82928),	-- Ghost-Forged Shoulders
+				i(82920),	-- Masterwork Spiritguard Shoulders
 			}),
 			n(-323, {		-- Chest
-				{	-- Breastplate of Ancient Steel
-					["itemID"] = 82979,	-- Breastplate of Ancient Steel
-				},
-				{	-- Chestplate of Limitless Faith
-					["itemID"] = 87403,	-- Chestplate of Limitless Faith
-				},
-				{	-- Contender's Revenant Breastplate
-					["itemID"] = 82945,	-- Contender's Revenant Breastplate
-				},
-				{	-- Contender's Spirit Breastplate
-					["itemID"] = 82953,	-- Contender's Spirit Breastplate
-				},
-				{	-- Crafted Dreadful Gladiator's Dreadplate Chestpiece
-					["itemID"] = 93453,	-- Crafted Dreadful Gladiator's Dreadplate Chestpiece
-				},
-				{	-- Crafted Dreadful Gladiator's Ornamented Chestguard
-					["itemID"] = 93538,	-- Crafted Dreadful Gladiator's Ornamented Chestguard
-				},
-				{	-- Crafted Dreadful Gladiator's Plate Chestpiece
-					["itemID"] = 93620,	-- Crafted Dreadful Gladiator's Plate Chestpiece
-				},
-				{	-- Crafted Dreadful Gladiator's Scaled Chestpiece
-					["itemID"] = 93527,	-- Crafted Dreadful Gladiator's Scaled Chestpiece
-				},
-				{	-- Crafted Malevolent Gladiator's Dreadplate Chestpiece
-					["itemID"] = 98784,	-- Crafted Malevolent Gladiator's Dreadplate Chestpiece
-				},
-				{	-- Crafted Malevolent Gladiator's Ornamented Chestguard
-					["itemID"] = 98854,	-- Crafted Malevolent Gladiator's Ornamented Chestguard
-				},
-				{	-- Crafted Malevolent Gladiator's Plate Chestpiece
-					["itemID"] = 98926,	-- Crafted Malevolent Gladiator's Plate Chestpiece
-				},
-				{	-- Crafted Malevolent Gladiator's Scaled Chestpiece
-					["itemID"] = 98843,	-- Crafted Malevolent Gladiator's Scaled Chestpiece
-				},
-				{	-- Ghost Reaver's Breastplate
-					["itemID"] = 82975,	-- Ghost Reaver's Breastplate
-				},
-				{	-- Ghost-Forged Breastplate [Green]
-					["itemID"] = 82905,	-- Ghost-Forged Breastplate
-				},
-				{	-- Ghost-Forged Breastplate [Blue]
-					["itemID"] = 82929,	-- Ghost-Forged Breastplate
-				},
-				{	-- Living Steel Breastplate
-					["itemID"] = 82977,	-- Living Steel Breastplate
-				},
-				{	-- Masterwork Spiritguard Breastplate
-					["itemID"] = 82921,	-- Masterwork Spiritguard Breastplate
-				},
-				{	-- Ornate Battleplate of the Master
-					["itemID"] = 87402,	-- Ornate Battleplate of the Master
-				},
-				{	-- Unyielding Bloodplate
-					["itemID"] = 87405,	-- Unyielding Bloodplate
-				},
+				i(82979),	-- Breastplate of Ancient Steel
+				i(87403),	-- Chestplate of Limitless Faith
+				i(82945),	-- Contender's Revenant Breastplate
+				i(82953),	-- Contender's Spirit Breastplate
+				i(93453),	-- Crafted Dreadful Gladiator's Dreadplate Chestpiece
+				i(93538),	-- Crafted Dreadful Gladiator's Ornamented Chestguard
+				i(93620),	-- Crafted Dreadful Gladiator's Plate Chestpiece
+				i(93527),	-- Crafted Dreadful Gladiator's Scaled Chestpiece
+				i(98784),	-- Crafted Malevolent Gladiator's Dreadplate Chestpiece
+				i(98854),	-- Crafted Malevolent Gladiator's Ornamented Chestguard
+				i(98926),	-- Crafted Malevolent Gladiator's Plate Chestpiece
+				i(98843),	-- Crafted Malevolent Gladiator's Scaled Chestpiece
+				i(82975),	-- Ghost Reaver's Breastplate
+				i(82905),	-- Ghost-Forged Breastplate
+				i(82929),	-- Ghost-Forged Breastplate
+				i(82977),	-- Living Steel Breastplate
+				i(82921),	-- Masterwork Spiritguard Breastplate
+				i(87402),	-- Ornate Battleplate of the Master
+				i(87405),	-- Unyielding Bloodplate
 			}),
 			n(-327, {		-- Hands
-				{	-- Bloodforged Warfists
-					["itemID"] = 87407,	-- Bloodforged Warfists
-				},
-				{	-- Contender's Revenant Gauntlets
-					["itemID"] = 82946,	-- Contender's Revenant Gauntlets
-				},
-				{	-- Contender's Spirit Gauntlets
-					["itemID"] = 82954,	-- Contender's Spirit Gauntlets
-				},
-				{	-- Crafted Dreadful Gladiator's Dreadplate Gauntlets
-					["itemID"] = 93454,	-- Crafted Dreadful Gladiator's Dreadplate Gauntlets
-				},
-				{	-- Crafted Dreadful Gladiator's Ornamented Gloves
-					["itemID"] = 93539,	-- Crafted Dreadful Gladiator's Ornamented Gloves
-				},
-				{	-- Crafted Dreadful Gladiator's Plate Gauntlets
-					["itemID"] = 93621,	-- Crafted Dreadful Gladiator's Plate Gauntlets
-				},
-				{	-- Crafted Dreadful Gladiator's Scaled Gauntlets
-					["itemID"] = 93528,	-- Crafted Dreadful Gladiator's Scaled Gauntlets
-				},
-				{	-- Crafted Malevolent Gladiator's Dreadplate Gauntlets
-					["itemID"] = 98785,	-- Crafted Malevolent Gladiator's Dreadplate Gauntlets
-				},
-				{	-- Crafted Malevolent Gladiator's Ornamented Gloves
-					["itemID"] = 98855,	-- Crafted Malevolent Gladiator's Ornamented Gloves
-				},
-				{	-- Crafted Malevolent Gladiator's Plate Gauntlets
-					["itemID"] = 98927,	-- Crafted Malevolent Gladiator's Plate Gauntlets
-				},
-				{	-- Crafted Malevolent Gladiator's Scaled Gauntlets
-					["itemID"] = 98844,	-- Crafted Malevolent Gladiator's Scaled Gauntlets
-				},
-				{	-- Gauntlets of Ancient Steel
-					["itemID"] = 82980,	-- Gauntlets of Ancient Steel
-				},
-				{	-- Gauntlets of Battle Command
-					["itemID"] = 87406,	-- Gauntlets of Battle Command
-				},
-				{	-- Gauntlets of Unbound Devotion
-					["itemID"] = 87404,	-- Gauntlets of Unbound Devotion
-				},
-				{	-- Ghost Reaver's Gauntlets
-					["itemID"] = 82976,	-- Ghost Reaver's Gauntlets
-				},
-				{	-- Ghost-Forged Gauntlets [Green]
-					["itemID"] = 82906,	-- Ghost-Forged Gauntlets
-				},
-				{	-- Ghost-Forged Gauntlets [Blue]
-					["itemID"] = 82930,	-- Ghost-Forged Gauntlets
-				},
-				{	-- Living Steel Gauntlets
-					["itemID"] = 82978,	-- Living Steel Gauntlets
-				},
-				{	-- Masterwork Spiritguard Gauntlets
-					["itemID"] = 82922,	-- Masterwork Spiritguard Gauntlets
-				},
+				i(87407),	-- Bloodforged Warfists
+				i(82946),	-- Contender's Revenant Gauntlets
+				i(82954),	-- Contender's Spirit Gauntlets
+				i(93454),	-- Crafted Dreadful Gladiator's Dreadplate Gauntlets
+				i(93539),	-- Crafted Dreadful Gladiator's Ornamented Gloves
+				i(93621),	-- Crafted Dreadful Gladiator's Plate Gauntlets
+				i(93528),	-- Crafted Dreadful Gladiator's Scaled Gauntlets
+				i(98785),	-- Crafted Malevolent Gladiator's Dreadplate Gauntlets
+				i(98855),	-- Crafted Malevolent Gladiator's Ornamented Gloves
+				i(98927),	-- Crafted Malevolent Gladiator's Plate Gauntlets
+				i(98844),	-- Crafted Malevolent Gladiator's Scaled Gauntlets
+				i(82980),	-- Gauntlets of Ancient Steel
+				i(87406),	-- Gauntlets of Battle Command
+				i(87404),	-- Gauntlets of Unbound Devotion
+				i(82976),	-- Ghost Reaver's Gauntlets
+				i(82906),	-- Ghost-Forged Gauntlets
+				i(82930),	-- Ghost-Forged Gauntlets
+				i(82978),	-- Living Steel Gauntlets
+				i(82922),	-- Masterwork Spiritguard Gauntlets
 			}),
 			n(-326, {		-- Wrist
-				{	-- Contender's Revenant Bracers
-					["itemID"] = 82948,	-- Contender's Revenant Bracers
-				},
-				{	-- Contender's Spirit Bracers
-					["itemID"] = 82956,	-- Contender's Spirit Bracers
-				},
-				{	-- Crafted Dreadful Gladiator's Armplates of Alacrity
-					["itemID"] = 93548,	-- Crafted Dreadful Gladiator's Armplates of Alacrity
-				},
-				{	-- Crafted Dreadful Gladiator's Armplates of Proficiency
-					["itemID"] = 93547,	-- Crafted Dreadful Gladiator's Armplates of Proficiency
-				},
-				{	-- Crafted Dreadful Gladiator's Bracers of Meditation
-					["itemID"] = 93537,	-- Crafted Dreadful Gladiator's Bracers of Meditation
-				},
-				{	-- Crafted Dreadful Gladiator's Bracers of Prowess
-					["itemID"] = 93536,	-- Crafted Dreadful Gladiator's Bracers of Prowess
-				},
-				{	-- Crafted Malevolent Gladiator's Armplates of Alacrity
-					["itemID"] = 98864,	-- Crafted Malevolent Gladiator's Armplates of Alacrity
-				},
-				{	-- Crafted Malevolent Gladiator's Armplates of Proficiency
-					["itemID"] = 98863,	-- Crafted Malevolent Gladiator's Armplates of Proficiency
-				},
-				{	-- Crafted Malevolent Gladiator's Bracers of Meditation
-					["itemID"] = 98853,	-- Crafted Malevolent Gladiator's Bracers of Meditation
-				},
-				{	-- Crafted Malevolent Gladiator's Bracers of Prowess
-					["itemID"] = 98852,	-- Crafted Malevolent Gladiator's Bracers of Prowess
-				},
-				{	-- Ghost-Forged Bracers [Green]
-					["itemID"] = 82908,	-- Ghost-Forged Bracers
-				},
-				{	-- Ghost-Forged Bracers [Blue]
-					["itemID"] = 82932,	-- Ghost-Forged Bracers
-				},
-				{	-- Lightsteel Bracers
-					["itemID"] = 82916,	-- Lightsteel Bracers
-				},
-				{	-- Masterwork Spiritguard Bracers
-					["itemID"] = 82924,	-- Masterwork Spiritguard Bracers
-				},
-				{	-- Spiritguard Bracers
-					["itemID"] = 82900,	-- Spiritguard Bracers
-				},
+				i(82948),	-- Contender's Revenant Bracers
+				i(82956),	-- Contender's Spirit Bracers
+				i(93548),	-- Crafted Dreadful Gladiator's Armplates of Alacrity
+				i(93547),	-- Crafted Dreadful Gladiator's Armplates of Proficiency
+				i(93537),	-- Crafted Dreadful Gladiator's Bracers of Meditation
+				i(93536),	-- Crafted Dreadful Gladiator's Bracers of Prowess
+				i(98864),	-- Crafted Malevolent Gladiator's Armplates of Alacrity
+				i(98863),	-- Crafted Malevolent Gladiator's Armplates of Proficiency
+				i(98853),	-- Crafted Malevolent Gladiator's Bracers of Meditation
+				i(98852),	-- Crafted Malevolent Gladiator's Bracers of Prowess
+				i(82908),	-- Ghost-Forged Bracers
+				i(82932),	-- Ghost-Forged Bracers
+				i(82916),	-- Lightsteel Bracers
+				i(82924),	-- Masterwork Spiritguard Bracers
+				i(82900),	-- Spiritguard Bracers
 			}),
 			n(-328, {		-- Waist
-				{	-- Avenger's Trillium Waistplate
-					["itemID"] = 98616,	-- Avenger's Trillium Waistplate
-				},
-				{	-- Blessed Trillium Belt
-					["itemID"] = 98611,	-- Blessed Trillium Belt
-				},
-				{	-- Contender's Revenant Belt
-					["itemID"] = 82950,	-- Contender's Revenant Belt
-				},
-				{	-- Contender's Spirit Belt
-					["itemID"] = 82958,	-- Contender's Spirit Belt
-				},
-				{	-- Crafted Dreadful Gladiator's Clasp of Cruelty
-					["itemID"] = 93532,	-- Crafted Dreadful Gladiator's Clasp of Cruelty
-				},
-				{	-- Crafted Dreadful Gladiator's Clasp of Meditation
-					["itemID"] = 93533,	-- Crafted Dreadful Gladiator's Clasp of Meditation
-				},
-				{	-- Crafted Dreadful Gladiator's Girdle of Accuracy
-					["itemID"] = 93543,	-- Crafted Dreadful Gladiator's Girdle of Accuracy
-				},
-				{	-- Crafted Dreadful Gladiator's Girdle of Prowess
-					["itemID"] = 93544,	-- Crafted Dreadful Gladiator's Girdle of Prowess
-				},
-				{	-- Crafted Malevolent Gladiator's Clasp of Cruelty
-					["itemID"] = 98848,	-- Crafted Malevolent Gladiator's Clasp of Cruelty
-				},
-				{	-- Crafted Malevolent Gladiator's Clasp of Meditation
-					["itemID"] = 98849,	-- Crafted Malevolent Gladiator's Clasp of Meditation
-				},
-				{	-- Crafted Malevolent Gladiator's Girdle of Accuracy
-					["itemID"] = 98859,	-- Crafted Malevolent Gladiator's Girdle of Accuracy
-				},
-				{	-- Crafted Malevolent Gladiator's Girdle of Prowess
-					["itemID"] = 98860,	-- Crafted Malevolent Gladiator's Girdle of Prowess
-				},
-				{	-- Ghost-Forged Belt [Green]
-					["itemID"] = 82910,	-- Ghost-Forged Belt
-				},
-				{	-- Ghost-Forged Belt [Blue]
-					["itemID"] = 82934,	-- Ghost-Forged Belt
-				},
-				{	-- Masterwork Spiritguard Belt
-					["itemID"] = 82926,	-- Masterwork Spiritguard Belt
-				},
-				{	-- Protector's Trillium Waistguard
-					["itemID"] = 98615,	-- Protector's Trillium Waistguard
-				},
+				i(98616),	-- Avenger's Trillium Waistplate
+				i(98611),	-- Blessed Trillium Belt
+				i(82950),	-- Contender's Revenant Belt
+				i(82958),	-- Contender's Spirit Belt
+				i(93532),	-- Crafted Dreadful Gladiator's Clasp of Cruelty
+				i(93533),	-- Crafted Dreadful Gladiator's Clasp of Meditation
+				i(93543),	-- Crafted Dreadful Gladiator's Girdle of Accuracy
+				i(93544),	-- Crafted Dreadful Gladiator's Girdle of Prowess
+				i(98848),	-- Crafted Malevolent Gladiator's Clasp of Cruelty
+				i(98849),	-- Crafted Malevolent Gladiator's Clasp of Meditation
+				i(98859),	-- Crafted Malevolent Gladiator's Girdle of Accuracy
+				i(98860),	-- Crafted Malevolent Gladiator's Girdle of Prowess
+				i(82910),	-- Ghost-Forged Belt
+				i(82934),	-- Ghost-Forged Belt
+				i(82926),	-- Masterwork Spiritguard Belt
+				i(98615),	-- Protector's Trillium Waistguard
 			}),
 			n(-329, {		-- Legs
-				{	-- Avenger's Trillium Legplates
-					["itemID"] = 98607,	-- Avenger's Trillium Legplates
-				},
-				{	-- Blessed Trillium Greaves
-					["itemID"] = 98602,	-- Blessed Trillium Greaves
-				},
-				{	-- Contender's Revenant Legplates
-					["itemID"] = 82947,	-- Contender's Revenant Legplates
-				},
-				{	-- Contender's Spirit Legplates
-					["itemID"] = 82955,	-- Contender's Spirit Legplates
-				},
-				{	-- Crafted Dreadful Gladiator's Dreadplate Legguards
-					["itemID"] = 93456,	-- Crafted Dreadful Gladiator's Dreadplate Legguards
-				},
-				{	-- Crafted Dreadful Gladiator's Ornamented Legplates
-					["itemID"] = 93541,	-- Crafted Dreadful Gladiator's Ornamented Legplates
-				},
-				{	-- Crafted Dreadful Gladiator's Plate Legguards
-					["itemID"] = 93623,	-- Crafted Dreadful Gladiator's Plate Legguards
-				},
-				{	-- Crafted Dreadful Gladiator's Scaled Legguards
-					["itemID"] = 93530,	-- Crafted Dreadful Gladiator's Scaled Legguards
-				},
-				{	-- Crafted Malevolent Gladiator's Dreadplate Legguards
-					["itemID"] = 98787,	-- Crafted Malevolent Gladiator's Dreadplate Legguards
-				},
-				{	-- Crafted Malevolent Gladiator's Ornamented Legplates
-					["itemID"] = 98857,	-- Crafted Malevolent Gladiator's Ornamented Legplates
-				},
-				{	-- Crafted Malevolent Gladiator's Plate Legguards
-					["itemID"] = 98929,	-- Crafted Malevolent Gladiator's Plate Legguards
-				},
-				{	-- Crafted Malevolent Gladiator's Scaled Legguards
-					["itemID"] = 98846,	-- Crafted Malevolent Gladiator's Scaled Legguards
-				},
-				{	-- Ghost-Forged Legplates [Green]
-					["itemID"] = 82907,	-- Ghost-Forged Legplates
-				},
-				{	-- Ghost-Forged Legplates [Blue]
-					["itemID"] = 82931,	-- Ghost-Forged Legplates
-				},
-				{	-- Masterwork Spiritguard Legplates
-					["itemID"] = 82923,	-- Masterwork Spiritguard Legplates
-				},
-				{	--	 Protector's Trillium Legguards
-					["itemID"] = 98606,	-- Protector's Trillium Legguards
-				},
+				i(98607),	-- Avenger's Trillium Legplates
+				i(98602),	-- Blessed Trillium Greaves
+				i(82947),	-- Contender's Revenant Legplates
+				i(82955),	-- Contender's Spirit Legplates
+				i(93456),	-- Crafted Dreadful Gladiator's Dreadplate Legguards
+				i(93541),	-- Crafted Dreadful Gladiator's Ornamented Legplates
+				i(93623),	-- Crafted Dreadful Gladiator's Plate Legguards
+				i(93530),	-- Crafted Dreadful Gladiator's Scaled Legguards
+				i(98787),	-- Crafted Malevolent Gladiator's Dreadplate Legguards
+				i(98857),	-- Crafted Malevolent Gladiator's Ornamented Legplates
+				i(98929),	-- Crafted Malevolent Gladiator's Plate Legguards
+				i(98846),	-- Crafted Malevolent Gladiator's Scaled Legguards
+				i(82907),	-- Ghost-Forged Legplates
+				i(82931),	-- Ghost-Forged Legplates
+				i(82923),	-- Masterwork Spiritguard Legplates
+				i(98606),	-- Protector's Trillium Legguards
 			}),
 			n(-330, {		-- Feet
-				{	-- Contender's Revenant Boots
-					["itemID"] = 82949,	-- Contender's Revenant Boots
-				},
-				{	-- Contender's Spirit Boots
-					["itemID"] = 82957,	-- Contender's Spirit Boots
-				},
-				{	-- Crafted Dreadful Gladiator's Greaves of Alacrity
-					["itemID"] = 93534,	-- Crafted Dreadful Gladiator's Greaves of Alacrity
-				},
-				{	-- Crafted Dreadful Gladiator's Greaves of Meditation
-					["itemID"] = 93535,	-- Crafted Dreadful Gladiator's Greaves of Meditation
-				},
-				{	-- Crafted Dreadful Gladiator's Warboots of Alacrity
-					["itemID"] = 93546,	-- Crafted Dreadful Gladiator's Warboots of Alacrity
-				},
-				{	-- Crafted Dreadful Gladiator's Warboots of Cruelty
-					["itemID"] = 93545,	-- Crafted Dreadful Gladiator's Warboots of Cruelty
-				},
-				{	-- Crafted Malevolent Gladiator's Greaves of Alacrity
-					["itemID"] = 98850,	-- Crafted Malevolent Gladiator's Greaves of Alacrity
-				},
-				{	-- Crafted Malevolent Gladiator's Greaves of Meditation
-					["itemID"] = 98851,	-- Crafted Malevolent Gladiator's Greaves of Meditation
-				},
-				{	-- Crafted Malevolent Gladiator's Warboots of Alacrity
-					["itemID"] = 98862,	-- Crafted Malevolent Gladiator's Warboots of Alacrity
-				},
-				{	-- Crafted Malevolent Gladiator's Warboots of Cruelty
-					["itemID"] = 98861,	-- Crafted Malevolent Gladiator's Warboots of Cruelty
-				},
-				{	-- Ghost-Forged Boots [Green]
-					["itemID"] = 82909,	-- Ghost-Forged Boots
-				},
-				{	-- Ghost-Forged Boots [Blue]
-					["itemID"] = 82933,	-- Ghost-Forged Boots
-				},
-				{	-- Haunted Steel Greaves
-					["itemID"] = 94263,	-- Haunted Steel Greaves
-				},
-				{	-- Haunted Steel Treads
-					["itemID"] = 94265,	-- Haunted Steel Treads
-				},
-				{	-- Haunted Steel Warboots
-					["itemID"] = 94267,	-- Haunted Steel Warboots
-				},
-				{	-- Masterwork Spiritguard Boots
-					["itemID"] = 82925,	-- Masterwork Spiritguard Boots
-				},
+				i(82949),	-- Contender's Revenant Boots
+				i(82957),	-- Contender's Spirit Boots
+				i(93534),	-- Crafted Dreadful Gladiator's Greaves of Alacrity
+				i(93535),	-- Crafted Dreadful Gladiator's Greaves of Meditation
+				i(93546),	-- Crafted Dreadful Gladiator's Warboots of Alacrity
+				i(93545),	-- Crafted Dreadful Gladiator's Warboots of Cruelty
+				i(98850),	-- Crafted Malevolent Gladiator's Greaves of Alacrity
+				i(98851),	-- Crafted Malevolent Gladiator's Greaves of Meditation
+				i(98862),	-- Crafted Malevolent Gladiator's Warboots of Alacrity
+				i(98861),	-- Crafted Malevolent Gladiator's Warboots of Cruelty
+				i(82909),	-- Ghost-Forged Boots
+				i(82933),	-- Ghost-Forged Boots
+				i(94263),	-- Haunted Steel Greaves
+				i(94265),	-- Haunted Steel Treads
+				i(94267),	-- Haunted Steel Warboots
+				i(82925),	-- Masterwork Spiritguard Boots
 			}),
 		}),
 		n(-183, { 	-- Engineering
@@ -641,7 +310,6 @@ _.Craftables =
 			}),
 		}),
 		n(-185, { 	-- Inscription
-		-- Reviewed and updated as of 11.21.2018 BfA 8.0
 			n(-491, {	-- Tarot Cards
 				sp(111830, {	-- Darkmoon Card of Mists
 					i(79299, {["f"] = 55}),    -- Ace of Crane
@@ -715,77 +383,34 @@ _.Craftables =
 			}),
 		}),
 		n(-186, { 	-- Jewelcrafting
-		-- Reviewed and updated as of 11.27.2018 BfA 8.0
 			filter(100, {	-- Mount
-				{	-- Jade Panther
-					["itemID"] = 83088,	-- Jade Panther
-				},
-				{	-- Jeweled Onyx Panther
-					["itemID"] = 82453,	-- Jeweled Onyx Panther
-				},
-				{	-- Ruby Panther
-					["itemID"] = 83087,	-- Ruby Panther
-				},
-				{	-- Sapphire Panther
-					["itemID"] = 83090,	-- Sapphire Panther
-				},
-				{	-- Sunstone Panther
-					["itemID"] = 83089,	-- Sunstone Panther
-				},
+				i(83088),	-- Jade Panther
+				i(82453),	-- Jeweled Onyx Panther
+				i(83087),	-- Ruby Panther
+				i(83090),	-- Sapphire Panther
+				i(83089),	-- Sunstone Panther
 			}),
 			filter(102, {	-- Toy
-				{	-- Jade Owl
-					["itemID"] = 82774,	-- Jade Owl
-				},
-				{	-- Sapphire Cub
-					["itemID"] = 82775,	-- Sapphire Cub
-				},
+				i(82774),	-- Jade Owl
+				i(82775),	-- Sapphire Cub
 			}),
 			filter(51, {	-- Neck
-				{	-- Golembreaker Amulet
-					["itemID"] = 83803,	-- Golembreaker Amulet
-				},
-				{	-- Reflection of the Sea
-					["itemID"] = 83802,	-- Reflection of the Sea
-				},
-				{	-- Shadowfire Necklace (green)
-					["itemID"] = 83794,	-- Shadowfire Necklace
-				},
-				{	-- Shadowfire Necklace (blue)
-					["itemID"] = 90905,	-- Shadowfire Necklace
-				},
-				{	-- Skymage Circle
-					["itemID"] = 83805,	-- Skymage Circle
-				},
-				{	-- Tiger Opal Pendant
-					["itemID"] = 83806,	-- Tiger Opal Pendant
-				},
-				{	-- Widow Chain
-					["itemID"] = 83804,	-- Widow Chain
-				},
+				i(83803),	-- Golembreaker Amulet
+				i(83802),	-- Reflection of the Sea
+				i(83794),	-- Shadowfire Necklace
+				i(90905),	-- Shadowfire Necklace
+				i(83805),	-- Skymage Circle
+				i(83806),	-- Tiger Opal Pendant
+				i(83804),	-- Widow Chain
 			}),
 			filter(52, {	-- Finger
-				{	-- Band of Blood
-					["itemID"] = 83801,	-- Band of Blood
-				},
-				{	-- Heart of the Earth
-					["itemID"] = 83796,	-- Heart of the Earth
-				},
-				{	-- Lionsfall Ring
-					["itemID"] = 83800,	-- Lionsfall Ring
-				},
-				{	-- Lord's Signet
-					["itemID"] = 83799,	-- Lord's Signet
-				},
-				{	-- Ornate Band (green)
-					["itemID"] = 83793,	-- Ornate Band
-				},
-				{	-- Ornate Band (blue)
-					["itemID"] = 90904,	-- Ornate Band
-				},
-				{	-- Roguestone Shadowband
-					["itemID"] = 83798,	-- Roguestone Shadowband
-				},
+				i(83801),	-- Band of Blood
+				i(83796),	-- Heart of the Earth
+				i(83800),	-- Lionsfall Ring
+				i(83799),	-- Lord's Signet
+				i(83793),	-- Ornate Band
+				i(90904),	-- Ornate Band
+				i(83798),	-- Roguestone Shadowband
 			}),
 		}),
 		n(-187, { 	-- Leatherworking
@@ -1044,8 +669,6 @@ _.Craftables =
 			}),
 		}),
 		n(-190, { 	-- Tailoring
-			--[[n(-37, {	-- Discovery
-			}),]]
 			filter(101, { 	-- Pet Battle
 				i(92960, {	-- Silkworm Cocoon
 					i(90900),	-- Imperial Moth
