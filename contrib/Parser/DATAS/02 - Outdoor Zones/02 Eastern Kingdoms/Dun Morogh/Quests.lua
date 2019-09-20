@@ -92,6 +92,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(308,   {	-- Distracting Jarven
+					["repeatable"] = true,
 					["u"] = 40,
 					["provider"] = { "n", 1373 },	-- Jarven Thunderbrew
 					["races"] = ALLIANCE_ONLY,
@@ -170,6 +171,7 @@ _.Zones =
 					},
 				}),
 				q(403,   {	-- Guarded Thunderbrew Barrel
+					["repeatable"] = true,
 					["u"] = 40,
 				}),
 				q(25933, {	-- Help for the Quarry
