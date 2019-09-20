@@ -35,6 +35,24 @@ _.Holidays = bubbleDown({["u"] = 24},
 						504,	-- Isle of Thunder
 					},
 				}),
+				q(56764, {	-- Brewfest Chowdown (A)
+					["provider"] = { "n", 153574 },	-- Britta Steinheart
+					["coord"] = { 54.8, 38.6, 27 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 27 },	-- Dun Morogh
+					["g"] = {
+						un(24, i(37829)),	-- Brewfest Prize Token
+					},
+				}),
+				q(56748, {	-- Brewfest Chowdown (H)
+					["provider"] = { "n", 155133 },	-- Etga
+					["coord"] = { 42.3, 18.4, 1 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1 },	-- Durotar
+					["g"] = {
+						un(24, i(37829)),	-- Brewfest Prize Token
+					},
+				}),
 				q(11117, {	-- Catch the Wild Wolpertinger! (Alliance)
 					["provider"] = { "n", 23486 },	-- Goldark Snipehunter
 					["races"] = ALLIANCE_ONLY,

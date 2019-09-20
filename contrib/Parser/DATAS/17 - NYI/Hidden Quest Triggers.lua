@@ -30,6 +30,9 @@ _.NeverImplemented =
 		q(42878),	-- Tome of Illusions - Secrets of the Shado-Pan
 		q(42879),	-- Tome of Illusions - Draenor
 		q(42943),	-- Illusion - Frostbrand
+		
+		-- Events/Holidays
+		q(11320),	-- [NYI] Now this is Ram Racing... Almost. (Brewfest)
 
 
 		-------------------

@@ -2220,7 +2220,7 @@ _.Zones =
 				["sourceQuest"] = 56314,	-- The Warbringer
 			}),
 			q(56219, {	--	Tome of Tears
-				["provider"] = { "n", 149906 },	-- Vim Brineheart		-- npcID need to be confirmed
+				["provider"] = { "n", 151309 },	-- Vim Brineheart
 				["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches rank 20.",
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,

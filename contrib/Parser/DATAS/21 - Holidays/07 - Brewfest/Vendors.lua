@@ -78,11 +78,23 @@ _.Holidays = bubbleDown({["u"] = 24},
 								}),
 							},
 						}),
+						i(169448, {	-- Bottomless Brewfest Stein
+							["cost"] = { { "i", 37829, 10 }, },	-- 10x Brewfest Prize Token
+						}),
+						i(169461, {	-- Garland of Grain
+							["cost"] = { { "i", 37829, 150 }, },	-- 150x Brewfest Prize Token
+						}),
+						i(168915, {	-- Tabard of Brew
+							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
+						}),
 						i(37571, {	-- "Brew of the Month" Club Membership Form
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 							["g"] = {
 								ach(2796),	-- Brew of the Month
 							},
+						}),
+						i(166747, {	-- Brewfest Reveler's Hearthstone
+							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 						}),
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {
@@ -183,7 +195,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 							["icon"] = "Interface\\Icons\\inv_misc_beer_01",
 							["g"] = {
 								i(33968, { 	-- Blue Brewfest Hat
-									["cost"] = { { "i", 37829, 50 }, },		-- 50x Brewfest Prize Token
+									["cost"] = { { "i", 37829, 50 }, },	-- 50x Brewfest Prize Token
 								}),
 								i(33868, {	-- Brewfest Boots
 									["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
@@ -198,21 +210,33 @@ _.Holidays = bubbleDown({["u"] = 24},
 									["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 								}),
 								i(33864, { 	-- Brown Brewfest Hat
-									["cost"] = { { "i", 37829, 50 }, },		-- 50x Brewfest Prize Token
+									["cost"] = { { "i", 37829, 50 }, },	-- 50x Brewfest Prize Token
 								}),
 								i(33967, { 	-- Green Brewfest Hat
-									["cost"] = { { "i", 37829, 50 }, },		-- 50x Brewfest Prize Token
+									["cost"] = { { "i", 37829, 50 }, },	-- 50x Brewfest Prize Token
 								}),
 								i(33969, { 	-- Purple Brewfest Hat
-									["cost"] = { { "i", 37829, 50 }, },		-- 50x Brewfest Prize Token
+									["cost"] = { { "i", 37829, 50 }, },	-- 50x Brewfest Prize Token
 								}),
 							},
+						}),
+						i(169448, {	-- Bottomless Brewfest Stein
+							["cost"] = { { "i", 37829, 10 }, },	-- 10x Brewfest Prize Token
+						}),
+						i(169461, {	-- Garland of Grain
+							["cost"] = { { "i", 37829, 150 }, },	-- 150x Brewfest Prize Token
+						}),
+						i(168915, {	-- Tabard of Brew
+							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 						}),
 						i(37599, {	-- "Brew of the Month" Club Membership Form
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 							["g"] = {
 								ach(2796),	-- Brew of the Month
 							},
+						}),
+						i(166747, {	-- Brewfest Reveler's Hearthstone
+							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 						}),
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {
@@ -286,6 +310,16 @@ _.Holidays = bubbleDown({["u"] = 24},
 						}),
 					}),
 				}),
+				n(153574, {	-- Britta Steinheart
+					["coord"] = { 54.8, 38.6, 27 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 27 },	-- Dun Morogh
+					["g"] = bubbleDown({["u"] = 24}, {
+						i(169865, {	-- Brewfest Chowdown Trophy
+							["cost"] = { { "i", 169599, 5 }, },	-- 5x Chowdown Champion Token
+						}),
+					}),
+				}),
 				n(24501, {	-- Drohn's Distillery Apprentice <Drohn's Distillery Brew Vendor>
 					["coord"] = { 40.6, 18.0, 1 },
 					["races"] = HORDE_ONLY,
@@ -296,6 +330,16 @@ _.Holidays = bubbleDown({["u"] = 24},
 						i(34019),	-- Path of Brew
 						i(46402),	-- Promise of the Pandaren
 						i(34017),	-- Small Step Brew
+					}),
+				}),
+				n(155133, {	-- Etga
+					["coord"] = { 42.3, 18.4, 1 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1 },	-- Durotar
+					["g"] = bubbleDown({["u"] = 24}, {
+						i(169865, {	-- Brewfest Chowdown Trophy
+							["cost"] = { { "i", 169599, 5 }, },	-- 5x Chowdown Champion Token
+						}),
 					}),
 				}),
 				n(23511, {	-- Gordok Brew Apprentice <Gordok Brew Vendor>

@@ -332,7 +332,7 @@ _.Zones =
 						}),
 --[[					
 						-- Heart of Azeroth Level 70
-						q(56401, {	--
+						q(56401, {	-- A Bolt from the Blue
 						--	["provider"] = { "n",  },	--
 						--	["coord"] = { },
 						--	["sourceQuest"] = ,	--
