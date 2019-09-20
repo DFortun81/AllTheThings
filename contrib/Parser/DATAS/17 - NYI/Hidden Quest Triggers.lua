@@ -208,6 +208,22 @@ _.NeverImplemented =
 		q(32922),	-- Short-Supply Reward (Oondasta bonus roll)
 		q(33225),	-- Short-Supply Reward (Ordos bonus roll)
 		q(32924),	-- Short-Supply Reward (Sha of Anger bonus roll)
+		
+	--	TIMELESS ISLE
+		-- RARES
+		q(44696),	-- Tracking Quest - Daily - Watcher Osu — alternate Watcher Osu daily quest
+		q(33290),	-- Tracking Quest - First - Dread Ship Vazuvius — presumably first kill only.  didn't pop on my first kill of the week.
+		q(33162),	-- Weekly Vignette Boss Kill - Tracking Quest — popped upon arriving to timeless isle and killing evermaw (first rare of the week)
+		q(33164),	-- Weekly Vignette Event Compeltion - Tracking Quest — popped when killing chelon, along with daily questID.  didn't pop from just interacting with shell.
+		-- TREASURES
+		q(32969),	-- Pillar Hopping Tracking Quest — looting treasure chest on top of pillar at (49.7, 69.4)
+		q(32970),	-- Pirate Ship Mast Tracking Quest — looting treasure chest at (70.6, 80.8)
+		q(32968),	-- Rope Drop Tracking Quest — looting treasure chest on top of pillar at (54.0, 47.2)
+		q(32957),	-- Sunken Hozen Treasure - Tracking Quest — looting treasure chest with barnacle-encrusted key at (40.3, 92.9) — this + below popped at same time
+		q(33163),	-- Weekly Vignette Loot Chest - Tracking Quest — looting treasure chest with barnacle-encrusted key at (40.3, 92.9)
+		-- VARIOUS
+		q(33348),	-- "Tom" Bone Apart - Intro Tracking Quest — approaching Zarhym inside the cavern of lost spirits
+		q(32962),	-- "Tom" Bone Apart - Tracking Quest — looting first chest after speaking with Zarhym.  second chest didn't have a quest, but didn't finish so not sure if there are other quests
 
 
 		-------------------

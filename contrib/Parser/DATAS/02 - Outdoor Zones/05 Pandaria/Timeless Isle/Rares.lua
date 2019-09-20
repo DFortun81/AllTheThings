@@ -128,7 +128,9 @@ _.Zones =
 					},
 				}),
 				n(72049,  {	-- Cranegnasher
-					["description"] = "Locate the bloodied red crane corpse, Fishgorged Crane at coords ~44, 70. If it's not present then the rare can't be spawned yet. It can be inspected, and the flavour text suggests it must be the favourite food of some creature.\n\nHead south and aggro one of the living Fishgorged Cranes by the ocean at coords ~45, 84. Kite it back to the corpse. Cranegnasher should then appear and attack!",
+					["description"] = "Locate the bloodied red crane corpse, Fishgorged Crane at ~44, 70. If it's not present, then the rare can't be spawned yet.\n\nIf the corpse is there, head south and aggro one of the Fishgorged Cranes by the ocean at ~45, 84. Kite it back to the corpse, and Cranegnasher should appear and attack!",
+					["questID"] = 32967,
+					["isDaily"] = true,
 					["coord"] = { 44.0, 70.0, 554 },
 					["g"] = {
 						i(104268, {	-- Pristine Stalker Hide
@@ -140,7 +142,7 @@ _.Zones =
 				}),
 				n(73281,  {	-- Dread Ship Vazuvius
 					["description"] = "You need to have a Mist-Filled Spirit Lantern from Evermaw to summon this boss when the Cursed Gravestone is active.",
-					["questID"] = 33290,	-- Note!! Quest 33314 also fires off on first kill of the week.  Need to check on another day if both fire off still
+					["questID"] = 33314,	-- Note!! Quest 33314 also fires off on first kill of the week.  Need to check on another day if both fire off still
 					["isDaily"] = true,
 					["coord"] = { 26.5, 27.8, 554 },
 					["g"] = {
@@ -151,11 +153,10 @@ _.Zones =
 						}),
 					},
 				}),
-				n(73281,  {	-- Dread Ship Vazuvius
-					["questID"] = 33314,
-				}),
 				n(73158,  {	-- Emerald Gander
 					["description"] = "Travel around the area where the Celestial bosses spawn and kill Brilliant Windfeathers — whenever one respawns, there's a chance it will respawn as an Emerald Gander instead of the normal mob.",
+					["questID"] = 33295,
+					["isDaily"] = true,
 					["coords"] = {
 						{ 44.2, 61.6, 554 },
 						{ 45.0, 53.5, 554 },
@@ -182,14 +183,18 @@ _.Zones =
 					},
 				}),
 				n(73279,  {	-- Evermaw <Gnawing Hunger of the Deep>
-					i(104115, {	-- Mist-Filled Spirit Lantern
-						["description"] = "Use this item at the Cursed Gravestone to summon the Dread Ship Vazuvius. This item will mark itself collected when you get the Rime of the Time-Lost Mariner criteria for the Bigger Bag achievement.",
-						["g"] = {
-							crit(31, {	-- Rime of the Time-Lost Mariner
-								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
-							}),
-						},
-					}),
+					["questID"] = 33313,
+					["isDaily"] = true,
+					["g"] = {
+						i(104115, {	-- Mist-Filled Spirit Lantern
+							["description"] = "Use this item at the Cursed Gravestone to summon the Dread Ship Vazuvius. This item will mark itself collected when you get the Rime of the Time-Lost Mariner criteria for the Bigger Bag achievement.",
+							["g"] = {
+								crit(31, {	-- Rime of the Time-Lost Mariner
+									["achievementID"] = 8728,	-- Going To Need A Bigger Bag
+								}),
+							},
+						}),
+					},
 				}),
 				n(73172,  {	-- Flintlord Gairan
 					["questID"] = 33309,
@@ -360,8 +365,8 @@ _.Zones =
 					},
 				}),
 				n(72193,  {	-- Karkanos
-				--	["questID"] = ,
-				--	["isDaily"] = true,
+					["questID"] = 33292,
+					["isDaily"] = true,
 					["coord"] = { 33.8, 85.8, 554 },
 					["g"] = {
 						i(104035, {	-- Giant Purse of Timeless Coins
@@ -410,8 +415,7 @@ _.Zones =
 					},
 				}),
 				n(72048,  {	-- Rattleskew
-				--	["questID"] = ,
-				--	["isDaily"] = true,
+				--	no daily questID popped.  may have a one-time questID?
 					["coord"] = { 60.6, 87.8, 554 },	-- mapID needs verification
 					["g"] = {
 						i(104321, {	-- Captain Zvezdan's Lost Leg
@@ -423,12 +427,12 @@ _.Zones =
 					},
 				}),
 				n(73157,  {	-- Rock Moss
-				--	["questID"] = ,
-				--	["isDaily"] = true,
-			--[[	["coords"] = {
-						{ , , 554 },	-- entrance
-						{ , ,  },	-- actual spawn (get correct mapID)
-					},	--]]
+					["questID"] = 33307,
+					["isDaily"] = true,
+					["coords"] = {
+						{ 44.0, 30.9, 555 },	-- actual spawn, in Cavern of Lost Spirits
+						{ 43.1, 41.2, 554 },	-- entrance
+					},	
 					["g"] = {
 						i(104312, {	-- Strange Glowing Mushroom
 							crit(19, {	-- Strange Glowing Mushroom
@@ -444,8 +448,7 @@ _.Zones =
 				}),
 				n(71864,  {	-- Spelurk
 					["description"] = "You will need to either Blink (Mage) or Displacer Beast (Druid) in order to get inside the cave and open it up to spawn the rare.  Using a toy chair like the Mushroom Chair or the Leather Love Seat may also work.",
-					["questID"] = 32960,	-- Says Cave-In, but should be KillID
-				--	["questID"] = 33164,	-- Says killID but should be cave in
+					["questID"] = 32960,
 					["isDaily"] = true,
 					["coord"] = { 59.5, 48.9, 554 },
 					["g"] = {

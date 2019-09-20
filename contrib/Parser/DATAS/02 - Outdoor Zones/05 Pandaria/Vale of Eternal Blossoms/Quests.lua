@@ -43,6 +43,13 @@ _.Zones =
 				q(32678, {	-- Thunder Calls (H)
 					["races"] = HORDE_ONLY,
 				}),
+				q(33134, {	-- Warforged Seals
+					["repeatable"] = true,
+					["provider"] = { "n", 64029 },	-- Elder Lin
+					["coord"] = { 85.2, 62.6, 390 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 85,
+				}),
 				--[[
 				q(31382, {	-- Defense At Niuzao Temple
 					["races"] = ALLIANCE_ONLY
