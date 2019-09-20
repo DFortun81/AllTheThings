@@ -1421,6 +1421,13 @@ namespace ATT
                                         if (dict == null) return;
                                         else list = dict.Values.ToList();
                                     }
+
+                                    // if the cost is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
+                                    if (list[0].ToString() == "i")
+                                    {
+                                        int itemID = Convert.ToInt32(list[1]);
+                                        Items.MarkItemAsReferenced(itemID);
+                                    }
                                     newListOfLists.Add(list);
                                 }
                             }
