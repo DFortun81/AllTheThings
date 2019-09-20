@@ -8,7 +8,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 			--["u"] = 24,	-- Brewfest
 			["g"] = {
 				n(23604,  {	-- Agnes Farwithers <Cheese Vendor>
-					["coord"] = { 40.2, 17.6, 1 },
+					["coord"] = { 41.0, 18.3, 1 },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
 					["g"] = bubbleDown({["u"] = 24}, {
@@ -102,7 +102,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 							["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 						}),
 						i(169448, {	-- Bottomless Brewfest Stein
-							["description"] = "\nEach Brewfest Stein has five different filled appearances. Fill up the stein with one brew, relog, and then refresh your collection by shift+clicking on this achievement. Once it has registered, move on to the next brew and repeat.\n",
+							["description"] = "\nEach Brewfest Stein has five different filled appearances. Fill up the stein with one brew, relog, and then refresh your collection by shift+clicking on a main or mini list header. Once it has registered, move on to the next brew and repeat.\n",
 							["cost"] = { { "i", 37829, 10 }, },		-- 10x Brewfest Prize Token
 							["g"] = {
 								i(169450),	-- Filled Bottomless Brewfest Stein [Barleybrew Clear - Alliance]
@@ -177,7 +177,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					}),
 				}),
 				n(23605,  {	-- Bron <Sausage Vendor>
-					["coord"] = { 41.2, 17.6, 1 },
+					["coord"] = { 41.6, 17.8, 1 },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
 					["g"] = bubbleDown({["u"] = 24}, {
@@ -195,7 +195,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 				}),
 				n(24495,  {	-- Blix Fixwidget <Token Redeemer>
 					["description"] = "|cff66ccffRay'ma <Brew of the Month Club> in Orgrimmar also sells these items.|r",
-					["coord"] = { 57.4, 47.4, 1 },
+					["coord"] = { 41.0, 17.0, 1 },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
 					["g"] = bubbleDown({["u"] = 24}, {
@@ -337,7 +337,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					}),
 				}),
 				n(24501,  {	-- Drohn's Distillery Apprentice <Drohn's Distillery Brew Vendor>
-					["coord"] = { 40.6, 18.0, 1 },
+					["coord"] = { 40.4, 18.1, 1 },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
 					["g"] = bubbleDown({["u"] = 24}, {
@@ -349,7 +349,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					}),
 				}),
 				n(155133, {	-- Etga <Chowdown Organizer>
-					["coord"] = { 42.3, 18.4, 1 },
+					["coord"] = { 42.2, 18.5, 1 },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
 					["g"] = bubbleDown({["u"] = 24}, {
@@ -361,7 +361,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 				n(23511,  {	-- Gordok Brew Apprentice <Gordok Brew Vendor>
 					["coords"] = {
 						{ 55.6, 36.6, 27 },	-- Dun Morogh
-						{ 40.8, 17.0, 1 },	-- Durotar
+						{ 40.9, 16.8, 1 },	-- Durotar
 					},
 					["maps"] = { 27, 1 },	-- Dun Morogh, Durotar
 					["g"] = bubbleDown({["u"] = 24}, {
@@ -390,7 +390,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					}),
 				}),
 				n(23533,  {	-- T'chali's Voodoo Brewery Apprentice <Voodoo Brew Vendor>
-					["coord"] = { 40.2, 17.0, 1 },
+					["coord"] = { 40.3, 16.9, 1 },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
 					["g"] = bubbleDown({["u"] = 24}, {
@@ -414,7 +414,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					}),
 				}),
 				n(23603,  {	-- Uta Roughdough <Bread Vendor>
-					["coord"] = { 41.0, 18.2, 1 },
+					["coord"] = { 41.6, 17.8, 1 },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
 					["g"] = bubbleDown({["u"] = 24}, {
