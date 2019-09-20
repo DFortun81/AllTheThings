@@ -103,6 +103,13 @@ _.Holidays = bubbleDown({["u"] = 24},
 						}),
 						i(169448, {	-- Bottomless Brewfest Stein
 							["cost"] = { { "i", 37829, 10 }, },		-- 10x Brewfest Prize Token
+							["groups"] = {
+								i(169450),	-- Filled Bottomless Brewfest Stein [Barleybrew Clear - Alliance]
+								i(169452),	-- Filled Bottomless Brewfest Stein [Thunder 45 - Alliance]
+								i(169453),	-- Filled Bottomless Brewfest Stein [Gordok Brew - Alliance/Horde]
+								i(169454),	-- Filled Bottomless Brewfest Stein [Small Step Brew - Horde]
+								i(169455),	-- Filled Bottomless Brewfest Stein [Jungle River Brew - Horde]
+							},
 						}),
 						i(116758, {	-- Brewfest Banner (TOY!)
 							["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
@@ -222,6 +229,13 @@ _.Holidays = bubbleDown({["u"] = 24},
 						}),
 						i(169448, {	-- Bottomless Brewfest Stein
 							["cost"] = { { "i", 37829, 10 }, },		-- 10x Brewfest Prize Token
+							["groups"] = {
+								i(169450),	-- Filled Bottomless Brewfest Stein [Barleybrew Clear - Alliance]
+								i(169452),	-- Filled Bottomless Brewfest Stein [Thunder 45 - Alliance]
+								i(169453),	-- Filled Bottomless Brewfest Stein [Gordok Brew - Alliance/Horde]
+								i(169454),	-- Filled Bottomless Brewfest Stein [Small Step Brew - Horde]
+								i(169455),	-- Filled Bottomless Brewfest Stein [Jungle River Brew - Horde]
+							},
 						}),
 						i(169461, {	-- Garland of Grain
 							["cost"] = { { "i", 37829, 150 }, },	-- 150x Brewfest Prize Token

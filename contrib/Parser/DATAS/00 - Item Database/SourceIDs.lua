@@ -69,6 +69,11 @@ i(15932, 1, 6515);		-- Disciple's Stein
 i(4696, 1, 1802);		-- Lapidis Tankard of Tidesippe
 i(4090, 1, 1614);		-- Mug O'Hurt
 i(169448, 1, 105140);	-- Bottomless Brewfest Stein
+i(169450, 1, 105141);	-- Filled Bottomless Brewfest Stein
+i(169452, 1, 105142);	-- Filled Bottomless Brewfest Stein
+i(169453, 1, 105143);	-- Filled Bottomless Brewfest Stein
+i(169454, 1, 105144);	-- Filled Bottomless Brewfest Stein
+i(169455, 1, 105145);	-- Filled Bottomless Brewfest Stein
 
 
 ----------------------------------
