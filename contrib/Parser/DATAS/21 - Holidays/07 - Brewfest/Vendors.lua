@@ -45,7 +45,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 				}),
 				n(23710,  {	-- Belbi Quikswitch <Token Redeemer>
 					["description"] = "|cff66ccffLarkin Thunderbrew <Brew of the Month Club> in Ironforge also sells these items.|r",
-					["coord"] = { 56.2, 37.8, 27 },
+					["coord"] = { 56.3, 37.5, 27 },
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
 					["g"] = bubbleDown({["u"] = 24}, {
@@ -78,23 +78,11 @@ _.Holidays = bubbleDown({["u"] = 24},
 								}),
 							},
 						}),
-						i(169448, {	-- Bottomless Brewfest Stein
-							["cost"] = { { "i", 37829, 10 }, },		-- 10x Brewfest Prize Token
-						}),
-						i(169461, {	-- Garland of Grain
-							["cost"] = { { "i", 37829, 150 }, },	-- 150x Brewfest Prize Token
-						}),
-						i(168915, {	-- Tabard of Brew
-							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
-						}),
 						i(37571, {	-- "Brew of the Month" Club Membership Form
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 							["g"] = {
 								ach(2796),	-- Brew of the Month
 							},
-						}),
-						i(166747, {	-- Brewfest Reveler's Hearthstone
-							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 						}),
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {
@@ -113,6 +101,9 @@ _.Holidays = bubbleDown({["u"] = 24},
 							["collectible"] = false,	-- Needs marked because for some reason ATT thinks it is a collectible
 							["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 						}),
+						i(169448, {	-- Bottomless Brewfest Stein
+							["cost"] = { { "i", 37829, 10 }, },		-- 10x Brewfest Prize Token
+						}),
 						i(116758, {	-- Brewfest Banner (TOY!)
 							["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 						}),
@@ -122,6 +113,9 @@ _.Holidays = bubbleDown({["u"] = 24},
 						i(33927, {	-- Brewfest Pony Keg (TOY!)
 							["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 						}),
+						i(166747, {	-- Brewfest Reveler's Hearthstone
+							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
+						}),
 						i(90426, {	-- Brewhelm
 							["cost"] = { { "i", 37829, 2 }, },		-- 2x Brewfest Prize Token
 						}),
@@ -130,6 +124,9 @@ _.Holidays = bubbleDown({["u"] = 24},
 						}),
 						i(39476, {	-- Fresh Goblin Brewfest Hops
 							["cost"] = { { "i", 37829, 5 }, },		-- 5x Brewfest Prize Token
+						}),
+						i(169461, {	-- Garland of Grain
+							["cost"] = { { "i", 37829, 150 }, },	-- 150x Brewfest Prize Token
 						}),
 						i(90427, {	-- Pandaren Brewpack (TOY!)
 							["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
@@ -148,6 +145,9 @@ _.Holidays = bubbleDown({["u"] = 24},
 						}),
 						i(138730, {	-- Synthebrew Goggles XL
 							["collectible"] = false,
+							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
+						}),
+						i(168915, {	-- Tabard of Brew
 							["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 						}),
 						i(122341, {	-- Timeworn Heirloom Scabbard

@@ -68,6 +68,7 @@ i(56836, 1, 27941);		-- Overflowing Purple Brewfest Stein
 i(15932, 1, 6515);		-- Disciple's Stein
 i(4696, 1, 1802);		-- Lapidis Tankard of Tidesippe
 i(4090, 1, 1614);		-- Mug O'Hurt
+i(169448, 1, 105140);	-- Bottomless Brewfest Stein
 
 
 ----------------------------------
