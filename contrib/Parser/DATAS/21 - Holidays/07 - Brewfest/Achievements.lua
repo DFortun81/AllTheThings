@@ -48,7 +48,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 				})),
 				un(24, ach(1260)),	-- Almost Blind Luck
 				un(2, ach(1293, {	-- Blue Brewfest Stein [Removed]
-					["description"] = "\nEach Brewfest Stein has five different filled appearances. You want to fill up the stein with one brew, log off, and then refresh your collection by shift+clicking on this achievement. Once it has registered, then you can move on to the next brew and repeat.\n",
+					["description"] = "\nEach Brewfest Stein has five different filled appearances. Fill up the stein with one brew, relog, and then refresh your collection by shift+clicking on this achievement. Once it has registered, move on to the next brew and repeat.\n",
 					["g"] = bubbleDown({["u"] = 2}, {
 						i(33016, {	-- Blue Brewfest Stein
 							i(33017),	-- Filled Blue Brewfest Stein [Barleybrew Clear]

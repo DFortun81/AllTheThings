@@ -102,8 +102,9 @@ _.Holidays = bubbleDown({["u"] = 24},
 							["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 						}),
 						i(169448, {	-- Bottomless Brewfest Stein
+							["description"] = "\nEach Brewfest Stein has five different filled appearances. Fill up the stein with one brew, relog, and then refresh your collection by shift+clicking on this achievement. Once it has registered, move on to the next brew and repeat.\n",
 							["cost"] = { { "i", 37829, 10 }, },		-- 10x Brewfest Prize Token
-							["groups"] = {
+							["g"] = {
 								i(169450),	-- Filled Bottomless Brewfest Stein [Barleybrew Clear - Alliance]
 								i(169452),	-- Filled Bottomless Brewfest Stein [Thunder 45 - Alliance]
 								i(169453),	-- Filled Bottomless Brewfest Stein [Gordok Brew - Alliance/Horde]
@@ -228,8 +229,9 @@ _.Holidays = bubbleDown({["u"] = 24},
 							},
 						}),
 						i(169448, {	-- Bottomless Brewfest Stein
+							["description"] = "\nEach Brewfest Stein has five different filled appearances. Fill up the stein with one brew, relog, and then refresh your collection by shift+clicking on a main or mini list header. Once it has registered, move on to the next brew and repeat.\n",
 							["cost"] = { { "i", 37829, 10 }, },		-- 10x Brewfest Prize Token
-							["groups"] = {
+							["g"] = {
 								i(169450),	-- Filled Bottomless Brewfest Stein [Barleybrew Clear - Alliance]
 								i(169452),	-- Filled Bottomless Brewfest Stein [Thunder 45 - Alliance]
 								i(169453),	-- Filled Bottomless Brewfest Stein [Gordok Brew - Alliance/Horde]
