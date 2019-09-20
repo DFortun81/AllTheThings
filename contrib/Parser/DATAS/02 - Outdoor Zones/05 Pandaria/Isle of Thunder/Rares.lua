@@ -131,10 +131,7 @@ _.Zones =
 						i(94159),	-- Small Bag of Zandalari Supplies
 					},
 				}),
-				{			-- Incantation of Deng
-					["itemID"] = 94233,			-- Incantation of Deng
-					["achievementID"] = 8110,	-- These Mogu Have Gotta Go-gu
-					["criteriaID"] = 2,			-- Forgemaster Deng
+				i(94233, {	-- Incantation of Deng
 					["crs"] = {
 						70000,	-- Al'tabim the All-Seeing
 						70001,	-- Backbreaker Uru
@@ -148,21 +145,16 @@ _.Zones =
 						69997,	-- Progenitus
 					},
 					["g"] = {
-						{	-- Forgemaster Deng
-							["criteriaID"] = 2,		-- Forgemaster Deng
+						crit(2, {	-- Forgemaster Deng
+							["achievementID"] = 8110,	-- These Mogu Have Gotta Go-gu
 							["creatureID"] = 69809,	-- Forgemaster Deng
 							["g"] = {
-								{	-- Fortuitous Coffer
-									["itemID"] = 94566,	-- Fortuitous Coffer
-								},
+								i(94566),	-- Fortuitous Coffer
 							},
-						},
+						}),
 					},
-				},
-				{			-- Incantation of Haqin
-					["itemID"] = 94130,			-- Incantation of Haqin
-					["achievementID"] = 8110,	-- These Mogu Have Gotta Go-gu
-					["criteriaID"] = 1,			-- Haqin of the Hundred Spears
+				}),
+				i(94130, {	-- Incantation of Haqin
 					["crs"] = {
 						70000,	-- Al'tabim the All-Seeing
 						70001,	-- Backbreaker Uru
@@ -176,21 +168,16 @@ _.Zones =
 						69997,	-- Progenitus
 					},
 					["g"] = {
-						{	-- Haqin of the Hundred Spears
-							["criteriaID"] = 1,		-- Haqin of the Hundred Spears
+						crit(1, {	-- Haqin of the Hundred Spears
+							["achievementID"] = 8110,	-- These Mogu Have Gotta Go-gu
 							["creatureID"] = 69800,	-- Haqin of the Hundred Spears
 							["g"] = {
-								{	-- Fortuitous Coffer
-									["itemID"] = 94566,	-- Fortuitous Coffer
-								},
+								i(94566),	-- Fortuitous Coffer
 							},
-						},
+						}),
 					},
-				},
-				{			-- Incantation of Vu
-					["itemID"] = 95350,			-- Incantation of Vu
-					["achievementID"] = 8110,	-- These Mogu Have Gotta Go-gu
-					["criteriaID"] = 3,			-- Sparkmancer Vu
+				}),
+				i(95350, {	-- Incantation of Vu
 					["crs"] = {
 						70000,	-- Al'tabim the All-Seeing
 						70001,	-- Backbreaker Uru
@@ -204,19 +191,16 @@ _.Zones =
 						69997,	-- Progenitus
 					},
 					["g"] = {
-						{	-- Sparkmancer Vu
-							["criteriaID"] = 3,		-- Sparkmancer Vu
+						crit(3, {	-- Sparkmancer Vu
+							["achievementID"] = 8110,	-- These Mogu Have Gotta Go-gu
 							["creatureID"] = 69961,	-- Sparkmancer Vu
 							["g"] = {
-								{	-- Fortuitous Coffer
-									["itemID"] = 94566,	-- Fortuitous Coffer
-								},
+								i(94566),	-- Fortuitous Coffer
 							},
-						},
+						}),
 					},
-				},
-				{			-- Sealed Tome of the Lost Legion
-					["itemID"] = 92426,		-- Sealed Tome of the Lost Legion
+				}),
+				i(92426, {	-- Sealed Tome of the Lost Legion
 					["spellID"] = 101508,	-- The Codex of Zerrath(added the spellID here until the full questline is put in)
 					["collectible"] = true,
 					["classes"] = { 9 },	-- Warlock
@@ -232,7 +216,7 @@ _.Zones =
 						69664,	-- Mumta
 						69997,	-- Progenitus
 					},
-				},
+				}),
 				i(94221, {	-- Shan'ze Ritual Stone
 					["description"] = "You will need 3 stones to summon these rares at their specific spawn points.",
 					["crs"] = {

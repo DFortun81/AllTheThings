@@ -205,9 +205,17 @@ _.NeverImplemented =
 		q(33226),	-- Short-Supply Reward (Celestials bonus roll)
 		q(32923),	-- Short-Supply Reward (Galleon bonus roll)
 		q(32919),	-- Short-Supply Reward (Nalak bonus roll)
+		q(33109),	-- Short-Supply Reward (Nalak secondary killID, popped along with 32518)
 		q(32922),	-- Short-Supply Reward (Oondasta bonus roll)
 		q(33225),	-- Short-Supply Reward (Ordos bonus roll)
 		q(32924),	-- Short-Supply Reward (Sha of Anger bonus roll)
+		
+	--	ISLE OF THUNDER
+		-- RARES
+		q(32626),	-- Loot Room Key Tracking Quest — popped when looting haywire sunreaver construct (first rare kill of the week)
+		q(32611),	-- Rare Drop Tracking Quest — progenitus (second rare kill of the week, dropped incantation of deng)
+		-- TREASURES
+		q(32609),	-- Rare Chest Tracking Quest — popped after looting trove of the thunder king.  it took a while to show up, but i didn't do anything else meaningful in the interim
 		
 	--	TIMELESS ISLE
 		-- RARES

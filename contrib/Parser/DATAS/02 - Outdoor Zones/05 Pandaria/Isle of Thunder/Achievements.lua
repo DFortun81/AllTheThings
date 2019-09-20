@@ -107,47 +107,36 @@ _.Zones =
 					},
 				},
 				ach(8110, {	-- These Mogu Have Gotta Go-gu
-					{
-						["achievementID"] = 8109,	-- The Mogu Below-gu
-					},
-					{
-						["criteriaID"] = 1,	-- Haqin of the Hundred Spears slain [Criteria]
-						["itemID"] = 94130,	-- Incantation of Haqin [Item]
-					},
-					{
-						["criteriaID"] = 2,	-- Forgemaster Deng slain [Criteria]
-						["itemID"] = 94233,	-- Incantation of Deng [Item]
-					},
-					{
-						["criteriaID"] = 3,	-- Sparkmancer Vu slain [Criteria]
-						["itemID"] = 95350,	-- Incantation of Vu [Item]
-					},
+					ach(8109),	-- The Mogu Below-gu
+					crit(1),	-- Haqin of the Hundred Spears slain
+					crit(2),	-- Forgemaster Deng slain
+					crit(3),	-- Sparkmancer Vu slain
 					i(94566, {	-- Fortuitous Coffer
 						currency(697),	-- Elder Charm of Good Fortune
 						{
 							["achievementID"] = 8212,	-- Zandalari Library Card
-							["criteriaID"] = 1,	-- Iron-Bound Zandalari Journal [Criteria]
-							["itemID"] = 95409,	-- Iron-Bound Zandalari Journal [Item]
+							["criteriaID"] = 1,	-- Iron-Bound Zandalari Journal
+							["itemID"] = 95409,	-- Iron-Bound Zandalari Journal
 						},
 						{
 							["achievementID"] = 8212,	-- Zandalari Library Card
-							["criteriaID"] = 2,	-- Blood-Spattered Zandalari Journal [Criteria]
-							["itemID"] = 95410,	-- Blood-Spattered Zandalari Journal [Item]
+							["criteriaID"] = 2,	-- Blood-Spattered Zandalari Journal
+							["itemID"] = 95410,	-- Blood-Spattered Zandalari Journal
 						},
 						{
 							["achievementID"] = 8212,	-- Zandalari Library Card
-							["criteriaID"] = 3,	-- Torn Zandalari Journal [Criteria]
-							["itemID"] = 95411,	-- Torn Zandalari Journal [Item]
+							["criteriaID"] = 3,	-- Torn Zandalari Journal
+							["itemID"] = 95411,	-- Torn Zandalari Journal
 						},
 						{
 							["achievementID"] = 8212,	-- Zandalari Library Card
-							["criteriaID"] = 4,	-- Frayed Zandalari Journal [Criteria]
-							["itemID"] = 95412,	-- Frayed Zandalari Journal [Item]
+							["criteriaID"] = 4,	-- Frayed Zandalari Journal
+							["itemID"] = 95412,	-- Frayed Zandalari Journal
 						},
 						{
 							["achievementID"] = 8212,	-- Zandalari Library Card
-							["criteriaID"] = 5,	-- Waterlogged Zandalari Journal [Criteria]
-							["itemID"] = 95408,	-- Waterlogged Zandalari Journal [Item]
+							["criteriaID"] = 5,	-- Waterlogged Zandalari Journal
+							["itemID"] = 95408,	-- Waterlogged Zandalari Journal
 						},
 					}),
 				}),
@@ -162,24 +151,24 @@ _.Zones =
 				ach(8116),	-- You Made Me Bleed My Own Blood
 				ach(8212, {	-- Zandalari Library Card
 					{
-						["criteriaID"] = 1,	-- Iron-Bound Zandalari Journal [Criteria]
-						["itemID"] = 95409,	-- Iron-Bound Zandalari Journal [Item]
+						["criteriaID"] = 1,	-- Iron-Bound Zandalari Journal
+						["itemID"] = 95409,	-- Iron-Bound Zandalari Journal
 					},
 					{
-						["criteriaID"] = 2,	-- Blood-Spattered Zandalari Journal [Criteria]
-						["itemID"] = 95410,	-- Blood-Spattered Zandalari Journal [Item]
+						["criteriaID"] = 2,	-- Blood-Spattered Zandalari Journal
+						["itemID"] = 95410,	-- Blood-Spattered Zandalari Journal
 					},
 					{
-						["criteriaID"] = 3,	-- Torn Zandalari Journal [Criteria]
-						["itemID"] = 95411,	-- Torn Zandalari Journal [Item]
+						["criteriaID"] = 3,	-- Torn Zandalari Journal
+						["itemID"] = 95411,	-- Torn Zandalari Journal
 					},
 					{
-						["criteriaID"] = 4,	-- Frayed Zandalari Journal [Criteria]
-						["itemID"] = 95412,	-- Frayed Zandalari Journal [Item]
+						["criteriaID"] = 4,	-- Frayed Zandalari Journal
+						["itemID"] = 95412,	-- Frayed Zandalari Journal
 					},
 					{
-						["criteriaID"] = 5,	-- Waterlogged Zandalari Journal [Criteria]
-						["itemID"] = 95408,	-- Waterlogged Zandalari Journal [Item]
+						["criteriaID"] = 5,	-- Waterlogged Zandalari Journal
+						["itemID"] = 95408,	-- Waterlogged Zandalari Journal
 					},
 				}),
 			}),
