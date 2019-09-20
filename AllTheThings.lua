@@ -2992,7 +2992,9 @@ fieldConverters = {
 		else
 			for k,v in pairs(value) do
 				if v[1] == "i" and v[2] > 0 then
-					CacheField(group, "itemID", v[2]);
+					if v[2] ~= 137642 then	-- NO MARKS OF HONOR!
+						CacheField(group, "itemID", v[2]);
+					end
 				elseif v[1] == "c" and v[2] > 0 then
 					CacheField(group, "currencyID", v[2]);
 				end
