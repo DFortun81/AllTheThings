@@ -42,29 +42,13 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["maps"] = { 242, },	-- Blackrock Depths
 					}),
 					--]]
-					q(11442, {	-- Welcome to Brewfest! (Alliance)
-						
-						["provider"] = { "n", 24710 },	-- Ipfelkofer Ironkeg
-						["maps"] = { 27, },	-- Dun Morogh
-						["races"] = ALLIANCE_ONLY,
-						["u"] = 40,	-- Legacy Quest/Quest Item
-					}),
-					q(11447, {	-- Welcome to Brewfest! (Horde)
-						
-						["provider"] = { "n", 24711 },	-- Tapper Swindlekeg
-						["maps"] = { 1, },	-- Durotar
-						["races"] = HORDE_ONLY,
-						["u"] = 40,	-- Legacy Quest/Quest Item
-					}),
 					q(12318, {	-- Save Brewfest! (Alliance)
-						
 						["provider"] = { "n", 27584 },	-- Darna Honeybock
 						["maps"] = { 27, },	-- Dun Morogh
 						["sourceQuests"] = { 11442, },	-- Welcome to Brewfest! (Alliance)
 						["u"] = 40,	-- Legacy Quest/Quest Item
 					}),
 					q(12318, {	-- Save Brewfest! (Horde)
-						
 						["provider"] = { "n", 28329 },	-- Slurpo Fizzykeg
 						["maps"] = { 1, },	-- Durotar
 						["sourceQuests"] = { 11447, },	-- Welcome to Brewfest! (Horde)

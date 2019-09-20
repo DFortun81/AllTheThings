@@ -17,7 +17,27 @@ _.Holidays = bubbleDown({["u"] = 24},
 						un(24, i(56836)), 	-- Overflowing Purple Brewfest Stein
 					},
 				}),
-				q(11441, {	-- Brewfest!
+				q(11293, {	-- Bark for the Barleybrews!
+					["provider"] = { "n", 23627 },	-- Becan Barleybrew
+					["coord"] = { 56.0, 38.0, 27 },
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 27 },	-- Dun Morogh
+					["g"] = {
+						un(24, i(37829)),	-- Brewfest Prize Token
+					},
+				}),
+				q(11294, {	-- Bark for the Thunderbrews!
+					["provider"] = { "n", 23628 },	-- Daran Thunderbrew
+					["coord"] = { 56.6, 36.8, 27 },
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 27 },	-- Dun Morogh
+					["g"] = {
+						un(24, i(37829)),	-- Brewfest Prize Token
+					},
+				}),
+				q(11441, {	-- Brewfest! (A)
 					["providers"] = {
 						{ "n", 18927 },	-- Human Commoner
 						{ "n", 19148 },	-- Dwarf Commoner
@@ -44,14 +64,20 @@ _.Holidays = bubbleDown({["u"] = 24},
 						un(24, i(37829)),	-- Brewfest Prize Token
 					},
 				}),
-				q(56748, {	-- Brewfest Chowdown (H)
-					["provider"] = { "n", 155133 },	-- Etga
-					["coord"] = { 42.3, 18.4, 1 },
-					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
-					["g"] = {
-						un(24, i(37829)),	-- Brewfest Prize Token
-					},
+				q(29394, {	-- Brew For Brewfest (A)
+					["provider"] = { "n", 23558 },	-- Neill Ramstein
+					["coord"] = { 53.6, 38.6, 27 },
+					["sourceQuest"] = 11122,	-- There and Back Again (A)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 27 },	-- Dun Morogh
+				}),
+				q(56341, {	-- Direbrew Cog (A)
+				--	["provider"] = { "o", ??? },	-- ???
+					["coord"] = { 55.5, 37.7, 27 },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["maps"] = { 27 },	-- Dun Morogh
 				}),
 				q(11117, {	-- Catch the Wild Wolpertinger! (Alliance)
 					["provider"] = { "n", 23486 },	-- Goldark Snipehunter
@@ -70,20 +96,46 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["maps"] = { 27 },	-- Dun Morogh
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(11318, {	-- Now This is Ram Racing... Almost. (Alliance)
-					["provider"] = { "n", 23558 },	-- Neill Ramstein
-					["maps"] = { 27 },	-- Dun Morogh
+				q(56322, {	-- Contained Alemental (A)
+				--	["provider"] = { "o", ??? },	-- ???
+					["coord"] = { 55.5, 37.7, 27 },
+					["isDaily"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 27 },	-- Dun Morogh
+				}),
+				q(56372, {	-- Hozen Totem (A)
+				--	["provider"] = { "o", ??? },	-- Hozen Totem
+					["coord"] = { 55.5, 37.7, 27 },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["maps"] = { 27 },	-- Dun Morogh
+				}),
+				q(11318, {	-- Now This is Ram Racing... Almost. (A)
+					["provider"] = { "n", 23558 },	-- Neill Ramstein
+					["coord"] = { 53.6, 38.6, 27 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 27 },	-- Dun Morogh
 				}),
 				q(11118, {	-- Pink Elekks On Parade (Alliance)
 					["provider"] = { "n", 23486 },	-- Goldark Snipehunter
 					["maps"] = { 27 },	-- Dun Morogh
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(11122, {	-- There and Back Again (Alliance)
+				q(11122, {	-- There and Back Again (A)
 					["provider"] = { "n", 23558 },	-- Neill Ramstein
-					["maps"] = { 27 },	-- Dun Morogh
+					["coord"] = { 53.6, 38.6, 27 },
+					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
 					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 27 },	-- Dun Morogh
+					["g"] = {
+						un(24, i(37829)),	-- Brewfest Prize Token
+					},
+				}),
+				q(11442, {	-- Welcome to Brewfest! (A)	
+					["provider"] = { "n", 24710 },	-- Ipfelkofer Ironkeg
+					["coord"] = { 55.1, 38.1, 27 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 27 },	-- Dun Morogh
 				}),
 				-- HORDE QUESTS --
 				q(29396, {	-- A New Supplier of Souvenirs (Horde)
@@ -95,7 +147,27 @@ _.Holidays = bubbleDown({["u"] = 24},
 						un(24, i(56836)),	-- Overflowing Purple Brewfest Stein
 					},
 				}),
-				q(11446, {	-- Brewfest!
+				q(11407, {	-- Bark for Drohn's Distillery!
+					["provider"] = { "n", 24498 },	-- Cort Gorestein
+					["coord"] = { 40.5, 18.3, 1 },
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1 },	-- Durotar
+					["g"] = {
+						un(24, i(37829)),	-- Brewfest Prize Token
+					},
+				}),
+				q(11408, {	-- Bark for T'chali's Voodoo Brewery!
+					["provider"] = { "n", 24498 },	-- Cort Gorestein
+					["coord"] = { 40.2, 17.0, 1 },
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1 },	-- Durotar
+					["g"] = {
+						un(24, i(37829)),	-- Brewfest Prize Token
+					},
+				}),
+				q(11446, {	-- Brewfest! (H)
 					["providers"] = {
 						{ "n", 19169 },	-- Blood Elf Commoner
 						{ "n", 19175 },	-- Orc Commoner
@@ -122,6 +194,30 @@ _.Holidays = bubbleDown({["u"] = 24},
 						210,	-- The Cape of Stranglethorn
 					},
 				}),
+				q(56748, {	-- Brewfest Chowdown (H)
+					["provider"] = { "n", 155133 },	-- Etga
+					["coord"] = { 42.3, 18.4, 1 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1 },	-- Durotar
+					["g"] = {
+						un(24, i(37829)),	-- Brewfest Prize Token
+					},
+				}),
+				q(29393, {	-- Brew For Brewfest (H)
+					["provider"] = { "n", 24497 },	-- Ram Master Ray
+					["coord"] = { 42.6, 17.8, 1 },
+					["sourceQuest"] = 11412,	-- There and Back Again (H)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1 },	-- Durotar
+				}),
+				q(56716, {	-- Direbrew Cog (H)
+				--	["provider"] = { "o", ??? },	-- ???
+					["coord"] = { 41.0, 17.8, 1 },
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1 },	-- Durotar
+				}),
 				q(11431, {	-- Catch the Wild Wolpertinger! (Horde)
 					["provider"] = { "n", 24657 },	-- Glodrak Huntsniper
 					["races"] = HORDE_ONLY,
@@ -139,20 +235,46 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["maps"] = { 1 },	-- Durotar
 					["races"] = HORDE_ONLY,
 				}),
-				q(11409, {	-- Now This is Ram Racing... Almost. (Horde)
-					["provider"] = { "n", 24497 },	-- Ram Master Ray
-					["maps"] = { 1 },	-- Durotar
+				q(56714, {	-- Contained Alemental (H)
+				--	["provider"] = { "o", ??? },	-- ???
+					["coord"] = { 41.0, 17.8, 1 },
+					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
+					["maps"] = { 1 },	-- Durotar
+				}),
+				q(56715, {	-- Hozen Totem (H)
+				--	["provider"] = { "o", ??? },	-- Hozen Totem
+					["coord"] = { 41.0, 17.8, 1 },
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1 },	-- Durotar
+				}),
+				q(11409, {	-- Now This is Ram Racing... Almost. (H)
+					["provider"] = { "n", 24497 },	-- Ram Master Ray
+					["coord"] = { 42.6, 17.8, 1 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1 },	-- Durotar
 				}),
 				q(11120, {	-- Pink Elekks On Parade (Horde)
 					["provider"] = { "n", 24657 },	-- Glodrak Huntsniper
 					["maps"] = { 1 },	-- Durotar
 					["races"] = HORDE_ONLY,
 				}),
-				q(11412, {	-- There and Back Again (Horde)
+				q(11412, {	-- There and Back Again (H)
 					["provider"] = { "n", 24497 },	-- Ram Master Ray
-					["maps"] = { 1 },	-- Durotar
+					
+					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
 					["races"] = HORDE_ONLY,
+					["maps"] = { 1 },	-- Durotar
+					["g"] = {
+						un(24, i(37829)),	-- Brewfest Prize Token
+					},
+				}),
+				q(11447, {	-- Welcome to Brewfest! (H)
+					["provider"] = { "n", 155194 },	-- La'gar Brewshout
+					["coord"] = { 41.6, 18.4, 1 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1 },	-- Durotar
 				}),
 			},
 		}),
