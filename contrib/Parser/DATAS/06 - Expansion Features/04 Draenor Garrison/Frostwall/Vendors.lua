@@ -22,7 +22,13 @@ _.ExpansionFeatures =
 							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
 						}),
 						i(120945, {	-- Primal Spirit
-							["cost"] = { { "i", 111557, 5 }, },		-- 5x Sumptuous Fur
+							["cost"] = { 
+								{ "i", 109118, 5 },					-- 5x Blackrock Ore
+								{ "i", 109693, 5 },					-- 5x Draenic Dust
+								{ "i", 109125, 5 },					-- 5x Fireweed
+								{ "i", 110609, 5 },					-- 5x Raw Beast Hide
+								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
+							},
 						}),
 						i(127724, {	-- Recipe: Mighty Hexweave Essence
 							["cost"] = { { "i", 111557, 60 }, },	-- 60x Sumptuous Fur
@@ -130,7 +136,13 @@ _.ExpansionFeatures =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(120945, {	-- Primal Spirit
-							["cost"] = { { "i", 109125, 5 }, },	-- 5x Fireweed
+							["cost"] = { 
+								{ "i", 109118, 5 },					-- 5x Blackrock Ore
+								{ "i", 109693, 5 },					-- 5x Draenic Dust
+								{ "i", 109125, 5 },					-- 5x Fireweed
+								{ "i", 110609, 5 },					-- 5x Raw Beast Hide
+								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
+							},
 						}),
 						i(128161, {	-- Recipe: Elemental Distillate
 							["cost"] = { { "i", 108996, 10 }, },	-- 10x Alchemical Catalyst
@@ -217,7 +229,13 @@ _.ExpansionFeatures =
 							["cost"] = { { "i", 111245, 5 }, },	-- 5x Luminous Shard
 						}),
 						i(120945, {	-- Primal Spirit
-							["cost"] = { { "i", 109693, 5 }, },	-- 5x Draenic Dust
+							["cost"] = { 
+								{ "i", 109118, 5 },					-- 5x Blackrock Ore
+								{ "i", 109693, 5 },					-- 5x Draenic Dust
+								{ "i", 109125, 5 },					-- 5x Fireweed
+								{ "i", 110609, 5 },					-- 5x Raw Beast Hide
+								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
+							},
 						}),
 					},
 				}),
@@ -510,7 +528,13 @@ _.ExpansionFeatures =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(120945, {	-- Primal Spirit
-							["cost"] = { { "i", 109118, 5 }, },		-- 5x Blackrock Ore
+							["cost"] = { 
+								{ "i", 109118, 5 },					-- 5x Blackrock Ore
+								{ "i", 109693, 5 },					-- 5x Draenic Dust
+								{ "i", 109125, 5 },					-- 5x Fireweed
+								{ "i", 110609, 5 },					-- 5x Raw Beast Hide
+								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
+							},
 						}),
 						i(127725, {	-- Recipe: Mighty Steelforged Essence
 							["cost"] = { { "i", 109118, 60 }, },	-- 60x Blackrock Ore
@@ -558,7 +582,13 @@ _.ExpansionFeatures =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(120945, {	-- Primal Spirit
-							["cost"] = { { "i", 110609, 5 }, },		-- 5x Raw Beast Hide
+							["cost"] = { 
+								{ "i", 109118, 5 },					-- 5x Blackrock Ore
+								{ "i", 109693, 5 },					-- 5x Draenic Dust
+								{ "i", 109125, 5 },					-- 5x Fireweed
+								{ "i", 110609, 5 },					-- 5x Raw Beast Hide
+								{ "i", 111557, 5 },					-- 5x Sumptuous Fur
+							},
 						}),
 						i(127722, {	-- Recipe: Mighty Burnished Essence
 							["cost"] = { { "i", 110609, 60 }, },	-- 60x Raw Beast Hide
@@ -594,29 +624,77 @@ _.ExpansionFeatures =
 					n(79826, {	-- Pozzlow
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(111921),	-- Draenor Engineering
-							i(119299, {	-- Secret of Draenor Engineering
-								i(118493),	-- Schematic: Didi's Delicate Assembly
-								i(118490),	-- Schematic: Blingtron 5000
-								i(118480),	-- Schematic: Findle's Loot-a-Rang
-								i(118495),	-- Schematic: Hemet's Heartseeker
-								i(118485),	-- Schematic: Lifelike Mechanical Frostboar
-								i(118484),	-- Schematic: Mechanical Axebeak
-								i(119177),	-- Schematic: Mechanical Scorpid
-								i(118478),	-- Schematic: Megawatt Filament
-								i(118477),	-- Schematic: Oglethorpe's Missle Splitter
-								i(118487),	-- Schematic: Personal Hologram
-								i(118491),	-- Schematic: Linkgrease Locksprocket
-								i(118497),	-- Schematic: Cybergenetic Mechshades
-								i(118498),	-- Schematic: Night-Vision Mechshades
-								i(118499),	-- Schematic: Plasma Mechshades
-								i(118500),	-- Schematic: Razorguard Mechshades
-								i(118476),	-- Schematic: Shrediron's Shredder
-								i(120268),	-- Schematic: True Iron Trigger
-								i(118489),	-- Schematic: Swapblaster
-								i(118481),	-- Schematic: World Shrinker
-								i(118488),	-- Schematic: Wormhole Centrifuge
-								i(128327),	-- Small Pouch of Coins
+							i(111921, {	-- Draenor Engineering
+								recipe(169080),	-- Gearspring Parts
+								recipe(162204),	-- Goblin Glider Kit
+								recipe(173308),	-- Mecha-Blast Rocket
+								i(120134),		-- Recipe: Secrets of Draenor Engineering
+								recipe(173309),	-- Shieldtronic Shield
+								recipe(162207),	-- Stealthman 54
+								recipe(162208),	-- Ultimate Gnomish Army Knife
+							}),
+							i(118490, {	-- Schematic: Blingtron 5000
+								["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+							}),
+							i(118497, {	-- Schematic: Cybergenetic Mechshades
+								["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+							}),
+							i(118493, {	-- Schematic: Didi's Delicate Assembly
+								["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+							}),
+							i(118480, {	-- Schematic: Findle's Loot-a-Rang
+								["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+							}),
+							i(118495, {	-- Schematic: Hemet's Heartseeker
+								["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+							}),
+							i(118485, {	-- Schematic: Lifelike Mechanical Frostboar
+								["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+							}),
+							i(118491, {	-- Schematic: Linkgrease Locksprocket
+								["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
+							}),
+							i(118484, {	-- Schematic: Mechanical Axebeak
+								["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+							}),
+							i(119177, {	-- Schematic: Mechanical Scorpid
+								["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+							}),
+							i(118478, {	-- Schematic: Megawatt Filament
+								["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+							}),
+							i(118498, {	-- Schematic: Night-Vision Mechshades
+								["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+							}),
+							i(118477, {	-- Schematic: Oglethorpe's Missle Splitter
+								["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+							}),
+							i(118487, {	-- Schematic: Personal Hologram
+								["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+							}),
+							i(118499, {	-- Schematic: Plasma Mechshades
+								["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+							}),
+							i(118500, {	-- Schematic: Razorguard Mechshades
+								["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+							}),
+							i(118476, {	-- Schematic: Shrediron's Shredder
+								["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+							}),
+							i(118489, {	-- Schematic: Swapblaster
+								["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+							}),
+							i(120268, {	-- Schematic: True Iron Trigger
+								["cost"] = { { "i", 119299, 5 }, },	-- 5x Secret of Draenor Engineering
+							}),
+							i(118481, {	-- Schematic: World Shrinker
+								["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+							}),
+							i(118488, {	-- Schematic: Wormhole Centrifuge
+								["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
+							}),
+							i(128327, {	-- Small Pouch of Coins
+								["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering
 							}),
 							un(2, i(120267)),	-- Schematic: Blackrock Rifling	-- Deprecated and removed in 6.2.0
 							un(2, i(122546)),	-- Schematic: Oglethorpe's Octagonal Lenses	-- Deprecated and removed in 6.2.0
@@ -998,7 +1076,7 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(-118, {	-- The Tannery
-					n(79834, {	-- Murne Greenhoof
+					n(79834, {	-- Murne Greenhoof <Leatherworker>
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(115358, {	-- Draenor Leatherworking
@@ -1011,61 +1089,149 @@ _.ExpansionFeatures =
 								i(116324),	-- Recipe: Traveling Leggings
 								i(116323),	-- Recipe: Traveling Tunic
 							}),
-							i(118721, {	-- Secret of Draenor Leatherworking
-								i(116328),	-- Recipe: Brilliant Burnished Cloak
-								i(116345),	-- Recipe: Burnished Essence
-								i(116349),	-- Recipe: Burnished Inscription Bag
-								i(116347),	-- Recipe: Burnished Leather Bag
-								i(116348),	-- Recipe: Burnished Mining Bag
-								i(120258),	-- Recipe: Drums of Fury
-								i(116325),	-- Recipe: Leather Refurbishing Kit
-								i(116327),	-- Recipe: Nimble Burnished Cloak
-								i(116326),	-- Recipe: Powerful Burnished Cloak
-								i(116350),	-- Recipe: Riding Harness
-								i(116335),	-- Recipe: Supple Boots
-								i(116334),	-- Recipe: Supple Bracers
-								i(116332),	-- Recipe: Supple Gloves
-								i(116330),	-- Recipe: Supple Helm
-								i(116331),	-- Recipe: Supple Leggings
-								i(116329),	-- Recipe: Supple Shoulderguards
-								i(116333),	-- Recipe: Supple Vest
-								i(116336),	-- Recipe: Supple Waistguard
-								i(116344),	-- Recipe: Wayfaring Belt
-								i(116343),	-- Recipe: Wayfaring Boots
-								i(116342),	-- Recipe: Wayfaring Bracers
-								i(116340),	-- Recipe: Wayfaring Gloves
-								i(116338),	-- Recipe: Wayfaring Helm
-								i(116339),	-- Recipe: Wayfaring Leggings
-								i(116337),	-- Recipe: Wayfaring Shoulderguards
-								i(116341),	-- Recipe: Wayfaring Tunic
-								i(116376, {	-- Small Pouch of Coins
-									["description"] = "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)",
-								}),
+							i(116328, {	-- Recipe: Brilliant Burnished Cloak
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116345, {	-- Recipe: Burnished Essence
+								["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
+							}),
+							i(116349, {	-- Recipe: Burnished Inscription Bag
+								["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
+							}),
+							i(116347, {	-- Recipe: Burnished Leather Bag
+								["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
+							}),
+							i(116348, {	-- Recipe: Burnished Mining Bag
+								["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
+							}),
+							i(120258, {	-- Recipe: Drums of Fury
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116325, {	-- Recipe: Leather Refurbishing Kit
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116327, {	-- Recipe: Nimble Burnished Cloak
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116326, {	-- Recipe: Powerful Burnished Cloak
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116350, {	-- Recipe: Riding Harness
+								["cost"] = { { "i", 118721, 5 }, },	-- 5x Secret of Draenor Leatherworking
+							}),
+							i(116335, {	-- Recipe: Supple Boots
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116334, {	-- Recipe: Supple Bracers
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116332, {	-- Recipe: Supple Gloves
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116330, {	-- Recipe: Supple Helm
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116331, {	-- Recipe: Supple Leggings
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116329, {	-- Recipe: Supple Shoulderguards
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116333, {	-- Recipe: Supple Vest
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116336, {	-- Recipe: Supple Waistguard
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116344, {	-- Recipe: Wayfaring Belt
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116343, {	-- Recipe: Wayfaring Boots
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116342, {	-- Recipe: Wayfaring Bracers
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116340, {	-- Recipe: Wayfaring Gloves
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116338, {	-- Recipe: Wayfaring Helm
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116339, {	-- Recipe: Wayfaring Leggings
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116337, {	-- Recipe: Wayfaring Shoulderguards
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116341, {	-- Recipe: Wayfaring Tunic
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
+							}),
+							i(116376, {	-- Small Pouch of Coins
+								["description"] = "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)",
+								["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking
 							}),
 						},
 					}),
 				}),
 				n(-119, {	-- Trading Post
-					n(87015, {	-- Kil'rip - Laughing Skull Quartermaster
+					n(87015, {	-- Kil'rip <Laughing Skull Quartermaster>
 						["races"] = HORDE_ONLY,
 						["crs"] = { 86698 },	-- Kil'rip
 						["g"] = {
-							currency(823, {	-- Apexis Crystals
-								i(118672),	-- Bloody Visage of the Laughing Skull
-								i(119146), 	-- Bone Wasp
-								i(118671),	-- Frozen Visage of the Laughing Skull
-								i(118673),	-- Golden Visage of the Laughing Skull
-								i(116782),	-- Ironside Warwolf
-								i(118668),	-- Laughing Skull Elixir
-								i(118674),	-- Visage of the Laughing Skull
+							i(118672, {	-- Bloody Visage of the Laughing Skull
+								["cost"] = {
+									{ "g", 10000000 },	-- 1,000g
+									{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
+								},
+							}),
+							i(119146, {	-- Bone Wasp (PET!)
+								["cost"] = {
+									{ "g", 10000000 },	-- 1,000g
+									{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
+								},
 							}),
 							i(119166, {	-- Contract: Cacklebone
-								follower(458),	-- Cacklebone
+								["cost"] = 50000000,	-- 5,000x
+								["g"] = {
+									follower(458),	-- Cacklebone
+								},
 							}),
-							i(119159),	-- Happy Fun Skull
+							i(118671, {	-- Frozen Visage of the Laughing Skull
+								["cost"] = {
+									{ "g", 10000000 },	-- 1,000g
+									{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
+								},
+							}),
+							i(118673, {	-- Golden Visage of the Laughing Skull
+								["cost"] = {
+									{ "g", 50000000 },	-- 5,000g
+									{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
+								},
+							}),
+							i(119159, {	-- Happy Fun Skull
+								["cost"] = 5000000,		-- 500g
+							}),
+							i(116782, {	-- Ironside Warwolf (MOUNT!)
+								["cost"] = {
+									{ "g", 50000000 },	-- 5,000g
+									{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+								},
+							}),
+							i(118668),	-- Laughing Skull Elixir
 							i(119138), 	-- Laughing Skull Orc Tabard
-							i(118684),	-- Maniacal Grimace
-							i(119160), 	-- Tickle Totem
+							i(118684, {	-- Maniacal Grimace
+								["cost"] = 5000000,		-- 500g
+							}),
+							i(119160, {	-- Tickle Totem (TOY!)
+								["cost"] = 12500000,	-- 1,250g
+							}),
+							i(118674, {	-- Visage of the Laughing Skull
+								["cost"] = {
+									{ "g", 10000000 },	-- 1,000g
+									{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
+								},
+							}),
 						},
 					}),
 				}),
@@ -1073,52 +1239,164 @@ _.ExpansionFeatures =
 					n(79815, {	-- Grun'lek - Quartermaster	-- War Mill
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(113681, {	-- Iron Horde Scraps
-								i(113821, {	-- Battered Iron Horde Helmet
-									i(113801),	-- Shadowmoon Cowl
-									i(113817),	-- Warsong Hood
-									i(113793),	-- Thunderlord Helm
-									i(113809),	-- Blackrock Greathelm
-								}),
-								i(113823, {	-- Crusted Iron Horde Pauldrons
-									i(113803),	-- Shadowmoon Shoulderguards
-									i(113819),	-- Warsong Spaulders
-									i(113811),	-- Blackrock Pauldrons
-									i(118366),	-- Orgrimmar Spaulders
-								}),
-								i(113822, {	-- Ravaged Iron Horde Belt
-									i(113797),	-- Shadowmoon Sash
-									i(113813),	-- Warsong Cord
-									i(113789),	-- Thunderlord Girdle
-									i(113805),	-- Blackrock Girth
-									i(118369),	-- Orgrimmar Belt
-								}),
-								i(113799),	-- Shadowmoon Robes
-								i(113804),	-- Shadowmoon Bracers
-								i(113800),	-- Shadowmoon Grips
-								i(113802),	-- Shadowmoon Leggings
-								i(113798),	-- Shadowmoon Treads
-								i(113815),	-- Warsong Wraps
-								i(113820),	-- Warsong Bracers
-								i(113816),	-- Warsong Gloves
-								i(113818),	-- Warsong Leggings
-								i(113814),	-- Warsong Boots
-								i(113795),	-- Thunderlord Shoulderguards
-								i(113796),	-- Thunderlord Bracers
-								i(113791),	-- Thunderlord Chestguard
-								i(113792),	-- Thunderlord Gloves
-								i(113794),	-- Thunderlord Leggings
-								i(113790),	-- Thunderlord Sabatons
-								i(113807),	-- Blackrock Chestplate
-								i(113812),	-- Blackrock Wristguards
-								i(113808),	-- Blackrock Gauntlets
-								i(113810),	-- Blackrock Legplates
-								i(113806),	-- Blackrock Greaves
-								i(118400),	-- Orgrimmar Axe
-								i(118367),	-- Orgrimmar Chestguard
-								i(118368),	-- Orgrimmar Gloves
-								i(118370),	-- Orgrimmar Leggings
-								i(118371),	-- Orgrimmar Boots
+							i(113807, {	-- Blackrock Chestplate
+								["cost"] = { { "i", 113681, 80 }, },	-- 80x Iron Horde Scraps
+							}),
+							i(113808, {	-- Blackrock Gauntlets
+								["cost"] = { { "i", 113681, 50 }, },	-- 50x Iron Horde Scraps
+							}),
+							i(113805, {	-- Blackrock Girth
+								["cost"] = {
+									{ "i", 113681, 50 },				-- 50x Iron Horde Scraps
+									{ "i", 113822, 1 },					-- Ravaged Iron Horde Belt
+								},
+							}),
+							i(113809, {	-- Blackrock Greathelm
+								["cost"] = {
+									{ "i", 113681, 50 },				-- 50x Iron Horde Scraps
+									{ "i", 113821, 1 },					-- Battered Iron Horde Helmet
+								},
+							}),
+							i(113806, {	-- Blackrock Greaves
+								["cost"] = { { "i", 113681, 50 }, },	-- 50x Iron Horde Scraps
+							}),
+							i(113810, {	-- Blackrock Legplates
+								["cost"] = { { "i", 113681, 80 }, },	-- 80x Iron Horde Scraps
+							}),
+							i(113811, {	-- Blackrock Pauldrons
+								["cost"] = {
+									{ "i", 113681, 50 },				-- 50x Iron Horde Scraps
+									{ "i", 113823, 1 },					-- Crusted Iron Horde Pauldrons
+								},
+							}),
+							i(113812, {	-- Blackrock Wristguards
+								["cost"] = { { "i", 113681, 50 }, },	-- 50x Iron Horde Scraps
+							}),
+							i(118400, {	-- Orgrimmar Axe
+								["cost"] = { { "i", 113681, 80 }, },	-- 80x Iron Horde Scraps
+							}),
+							i(118369, {	-- Orgrimmar Belt
+								["cost"] = {
+									{ "i", 113681, 50 },				-- 50x Iron Horde Scraps
+									{ "i", 113822, 1 },					-- Ravaged Iron Horde Belt
+								},
+							}),
+							i(118371, {	-- Orgrimmar Boots
+								["cost"] = { { "i", 113681, 50 }, },	-- 50x Iron Horde Scraps
+							}),
+							i(118367, {	-- Orgrimmar Chestguard
+								["cost"] = { { "i", 113681, 80 }, },	-- 80x Iron Horde Scraps
+							}),
+							i(118368, {	-- Orgrimmar Gloves
+								["cost"] = { { "i", 113681, 50 }, },	-- 50x Iron Horde Scraps
+							}),
+							i(118370, {	-- Orgrimmar Leggings
+								["cost"] = { { "i", 113681, 80 }, },	-- 80x Iron Horde Scraps
+							}),
+							i(118366, {	-- Orgrimmar Spaulders
+								["cost"] = {
+									{ "i", 113681, 50 },				-- 50x Iron Horde Scraps
+									{ "i", 113823, 1 },					-- Crusted Iron Horde Pauldrons
+								},
+							}),
+							i(113804, {	-- Shadowmoon Bracers
+								["cost"] = { { "i", 113681, 50 }, },	-- 50x Iron Horde Scraps
+							}),
+							i(113801, {	-- Shadowmoon Cowl
+								["cost"] = {
+									{ "i", 113681, 50 },				-- 50x Iron Horde Scraps
+									{ "i", 113821, 1 },					-- Battered Iron Horde Helmet
+								},
+							}),
+							i(113800, {	-- Shadowmoon Grips
+								["cost"] = { { "i", 113681, 50 }, },	-- 50x Iron Horde Scraps
+							}),
+							i(113802, {	-- Shadowmoon Leggings
+								["cost"] = { { "i", 113681, 80 }, },	-- 80x Iron Horde Scraps
+							}),
+							i(113799, {	-- Shadowmoon Robes
+								["cost"] = { { "i", 113681, 80 }, },	-- 80x Iron Horde Scraps
+							}),
+							i(113797, {	-- Shadowmoon Sash
+								["cost"] = {
+									{ "i", 113681, 50 },				-- 50x Iron Horde Scraps
+									{ "i", 113822, 1 },					-- Ravaged Iron Horde Belt
+								},
+							}),
+							i(113803, {	-- Shadowmoon Shoulderguards
+								["cost"] = {
+									{ "i", 113681, 50 },				-- 50x Iron Horde Scraps
+									{ "i", 113823, 1 },					-- Crusted Iron Horde Pauldrons
+								},
+							}),
+							i(113798, {	-- Shadowmoon Treads
+								["cost"] = { { "i", 113681, 50 }, },	-- 50x Iron Horde Scraps
+							}),
+							i(113796, {	-- Thunderlord Bracers
+								["cost"] = { { "i", 113681, 50 }, },	-- 50x Iron Horde Scraps
+							}),
+							i(113791, {	-- Thunderlord Chestguard
+								["cost"] = { { "i", 113681, 80 }, },	-- 80x Iron Horde Scraps
+							}),
+							i(113789, {	-- Thunderlord Girdle
+								["cost"] = {
+									{ "i", 113681, 50 },				-- 50x Iron Horde Scraps
+									{ "i", 113822, 1 },					-- Ravaged Iron Horde Belt
+								},
+							}),
+							i(113792, {	-- Thunderlord Gloves
+								["cost"] = { { "i", 113681, 50 }, },	-- 50x Iron Horde Scraps
+							}),
+							i(113793, {	-- Thunderlord Helm
+								["cost"] = {
+									{ "i", 113681, 50 },				-- 50x Iron Horde Scraps
+									{ "i", 113821, 1 },					-- Battered Iron Horde Helmet
+								},
+							}),
+							i(113794, {	-- Thunderlord Leggings
+								["cost"] = { { "i", 113681, 80 }, },	-- 80x Iron Horde Scraps
+							}),
+							i(113790, {	-- Thunderlord Sabatons
+								["cost"] = { { "i", 113681, 50 }, },	-- 50x Iron Horde Scraps
+							}),
+							i(113795, {	-- Thunderlord Shoulderguards
+								["cost"] = {
+									{ "i", 113681, 50 },				-- 50x Iron Horde Scraps
+									{ "i", 113823, 1 },					-- Crusted Iron Horde Pauldrons
+								},
+							}),
+							i(113814, {	-- Warsong Boots
+								["cost"] = { { "i", 113681, 50 }, },	-- 50x Iron Horde Scraps
+							}),
+							i(113820, {	-- Warsong Bracers
+								["cost"] = { { "i", 113681, 50 }, },	-- 50x Iron Horde Scraps
+							}),
+							i(113813, {	-- Warsong Cord
+								["cost"] = {
+									{ "i", 113681, 50 },				-- 50x Iron Horde Scraps
+									{ "i", 113822, 1 },					-- Ravaged Iron Horde Belt
+								},
+							}),
+							i(113816, {	-- Warsong Gloves
+								["cost"] = { { "i", 113681, 50 }, },	-- 50x Iron Horde Scraps
+							}),
+							i(113817, {	-- Warsong Hood
+								["cost"] = {
+									{ "i", 113681, 50 },				-- 50x Iron Horde Scraps
+									{ "i", 113821, 1 },					-- Battered Iron Horde Helmet
+								},
+							}),
+							i(113818, {	-- Warsong Leggings
+								["cost"] = { { "i", 113681, 80 }, },	-- 80x Iron Horde Scraps
+							}),
+							i(113819, {	-- Warsong Spaulders
+								["cost"] = {
+									{ "i", 113681, 50 },				-- 50x Iron Horde Scraps
+									{ "i", 113823, 1 },					-- Crusted Iron Horde Pauldrons
+								},
+							}),
+							i(113815, {	-- Warsong Wraps
+								["cost"] = { { "i", 113681, 80 }, },	-- 80x Iron Horde Scraps
 							}),
 						},
 					}),
