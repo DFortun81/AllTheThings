@@ -5,6 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
 		cl(3, {	-- Trueshot Lodge (Hunter)
+			["classes"] = { 3 },	-- Hunter
 			["lvl"] = 98,
 			["mapID"] = 739,
 			["groups"] = {

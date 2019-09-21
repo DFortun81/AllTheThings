@@ -5,6 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
 		cl(10, {	-- The Wandering Isle (Monk)
+			["classes"] = { 10 },	-- Monk
 			["lvl"] = 98,
 			["mapID"] = 709,
 			["g"] = {

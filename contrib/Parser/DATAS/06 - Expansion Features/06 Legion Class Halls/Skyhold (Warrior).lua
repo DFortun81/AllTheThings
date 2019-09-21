@@ -5,6 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
 		cl(1, {	-- Skyhold (Warrior)
+			["classes"] = { 1 },	-- Warrior
 			["lvl"] = 98,
 			["mapID"] = 695,	-- Skyhold (Warrior)
 			["groups"] = {

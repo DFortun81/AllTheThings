@@ -5,6 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
 		cl(5, {	-- Netherlight Temple (Priest)
+			["classes"] = { 5 },	-- Priest
 			["lvl"] = 98,
 			["mapID"] = 702,	-- Netherlight Temple (Priest)
 			["g"] =  {

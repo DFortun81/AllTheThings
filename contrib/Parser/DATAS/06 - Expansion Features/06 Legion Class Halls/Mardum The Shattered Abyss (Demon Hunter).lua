@@ -5,6 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
 		cl(12, {	-- Mardum, The Shattered Abyss (Demon Hunter)
+			["classes"] = { 12 },	-- Demon Hunter
 			["mapID"] = 720,	-- Mardum, The Shattered Abyss (Demon Hunter)
 			["maps"] = { 721 },	-- Lower Command Center
 			["lvl"] = 98,	-- add ["lvl"] to any quests with a higher level requirement!

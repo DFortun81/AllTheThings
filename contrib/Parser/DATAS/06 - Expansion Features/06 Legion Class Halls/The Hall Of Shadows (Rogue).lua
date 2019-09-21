@@ -5,6 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
 		cl(4, {	-- The Hall of Shadows (Rogue)
+			["classes"] = { 4 },	-- Rogue
 			["lvl"] = 98,
 			["maps"] = {
 				626,	-- The Hall of Shadows (Rogue)

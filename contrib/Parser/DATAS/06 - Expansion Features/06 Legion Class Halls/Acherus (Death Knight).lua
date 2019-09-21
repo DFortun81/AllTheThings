@@ -5,6 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
 		cl(6, { 	-- Acherus: The Ebon Hold (Death Knight)
+			["classes"] = { 6 },	-- Death Knight
 			["maps"] = {
 				647,	-- Acherus: The Ebon Hold (Death Knight) (Upper Level)
 				648,	-- Acherus: The Ebon Hold (Death Knight) (Lower Level)

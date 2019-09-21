@@ -5,6 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
 		cl(9, {	-- Dreadscar Rift (Warlock)
+			["classes"] = { 9 },	-- Warlock
 			["mapID"] = 717,	-- Dreadscar Rift (Warlock)
 			["maps"] = 718,	-- Dreadscar Rift (scenario version at the beginning of class campaign)
 			["lvl"] = 98,

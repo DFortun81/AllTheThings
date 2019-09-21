@@ -5,6 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
 		cl(7, {	-- The Heart of Azeroth (Shaman)
+			["classes"] = { 7 },	-- Shaman
 			["lvl"] = 98,
 			["mapID"] = 726,
 			["groups"] = {

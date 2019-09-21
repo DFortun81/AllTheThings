@@ -5,6 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
 		cl(8, {	-- Hall of the Guardian (Mage)
+			["classes"] = { 8 },	-- Mage
 			["lvl"] = 98,
 			["maps"] = {
 				734,	-- Hall of the Guardian (Mage)

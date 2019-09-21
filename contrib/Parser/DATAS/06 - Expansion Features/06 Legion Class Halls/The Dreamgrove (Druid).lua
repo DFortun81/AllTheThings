@@ -5,6 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
 		cl(11, {	-- The Dreamgrove (Druid)
+			["classes"] = { 11 },	-- Druid
 			["lvl"] = 98,
 			["mapID"] = 747,	-- The Dreamgrove (Druid)
 			["groups"] = {
