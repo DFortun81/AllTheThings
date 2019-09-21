@@ -10,7 +10,9 @@ end
 -- The numbers listed here are written as follows: (pet itemID, speciesID);
 -- For example, for A Jubling's Tiny Home, the first number is the item that teaches you how to summon the companion.
 -- This number can be found in the "Summoned by" tab on Wowhead.
--- The speciesID can be found via various addons — the slumber-approved addon is Rematch.  
+-- To manually collect the speciesID in-game (live or PTR):
+	-- /dump C_PetJournal.FindPetIDByName("petName")
+-- The speciesID can also be found via various addons — the slumber-approved addon is Rematch.  
 	-- In the Rematch options, make sure "Show Species ID & Ability ID" is checked.
 	-- The speciesID is the number by the icon that looks like a cogwheel on the card that pops up when you hover over a pet.
 
@@ -412,6 +414,7 @@ pet(169358, 2692);	-- Lightless Ambusher
 pet(103670, 1320);	-- Lil' Bling
 pet(163502, 2416);	-- Lil Ben'fon
 pet(62540, 268);	-- Lil' Deathwing
+--	pet(172016, 2621);	-- Lil' Nefarian
 pet(49693, 249);	-- Lil' Phylactery (Lil' K.T.)
 pet(68385, 297);	-- Lil' Ragnaros
 pet(163778, 2443);	-- Lil' Siege Tower
@@ -590,6 +593,7 @@ pet(142095, 1964); 	-- Remains of A Blood Beast (Blood Boil)
 pet(141352, 1938);	-- Rescued Fawn
 pet(161089, 2199);	-- Restored Revenant
 pet(136905, 1756); 	-- Ridgeback Piglet
+--	pet(173296, );	-- Rikki (not available on PTR as of 9/20/19)
 pet(130166, 1804); 	-- Risen Saber Kitten
 pet(140274, 1453);	-- River Calf
 pet(34492, 168); 	-- Rocket Chicken

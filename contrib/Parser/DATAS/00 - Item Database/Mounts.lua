@@ -6,6 +6,9 @@ local i = function(itemID, mountID)
 	return item;
 end
 
+-- first number = the item that teaches you to use the mount. ("taught by" tab on wowhead)
+-- second number = the spellID you learn from the mount. ("teaches" tab on wowhead)
+
 i(8586, 16084);		-- Whistle of the Mottled Red Raptor
 i(8628, 10792);		-- Reins of the Spotted Nightsaber
 i(12325, 16058);	-- Reins of the Primal Leopard
@@ -153,10 +156,10 @@ i(151626, 239766);	-- Sapphire Qiraji Resonating Crystal
 i(164762, 282682);	-- Kul Tiran Charger (Kul Tiran Allied Race)
 i(161330, 267274);	-- Mag'har Direwolf
 
+
 ---------------
 -- PATCH 8.1 --
 ---------------
-
 i(166432, 288495);	-- Ashenvale Chimaera
 i(166465, 288736);	-- Azureshell Krolusk
 i(166428, 288438);	-- Blackpaw
@@ -193,19 +196,19 @@ i(166775, 290133);	-- Vulpine Familiar
 i(166443, 288589);	-- Yellow Marsh Hopper
 i(142233, 238454);	-- Shadowy Reins of the Accursed Wrathsteed
 
+
 -----------------
 -- PATCH 8.1.5 --
 -----------------
-
 i(167894, 294568);	-- Beastlord's Irontusk
 i(167895, 294569);	-- Beastlord's Warwolf
 i(168055, 295387);	-- Bloodflank Charger
 i(168056, 295386);	-- Ironclad Frostclaw
 
+
 -----------------
 -- PATCH 8.2.0 --
 -----------------
-
 i(168830, 290718);	-- Aerial Unit R-21/X
 i(167167, 292407);	-- Ankoan Waveray
 i(167171, 292419);	-- Azshari Bloatray
@@ -238,3 +241,16 @@ i(161667, 275840);	-- Voldunai Dunescraper
 i(169162, 290328);	-- Wonderwing 2.0
 i(167751, 294143);	-- X-995 Mechanocat
 i(153594, 256123);	-- Xiwyllag-ATV
+
+
+-----------------
+-- PATCH 8.2.5 --
+-----------------
+--[[
+i(173297, 307263);	-- Explorer's Dunetrekker
+i(173299, 307256);	-- Explorer's Jungle Hopper
+i(172023, 306421);	-- Frostwolf Snarler
+i(170069, 259741);	-- Honeyback Harvester
+i(172012, 294197);	-- Obsidian Worldbreaker
+i(172022, 308250);	-- Stormpike Battle Ram
+--]]

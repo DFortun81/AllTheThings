@@ -4,7 +4,9 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
-		["groups"] = {
+		["icon"] = "Interface\\Icons\\achievement_general",
+		["u"] = 3,	-- Blizzard Promotion
+		["g"] = {
 			n(-546, { 	-- Recruit A Friend
 				ach(1436, {	-- Friends In High Places
 					i(37719), 	-- Swift Zhevra
@@ -30,9 +32,30 @@ _.WorldEvents =
 					}),
 				}),
 				i(49664), 	-- Zipao Tiger
+			--[[
+				i(173300, {	-- Ensemble: Renowned Explorer's Attire
+					["u"] = 3,	-- Blizzard Promotion
+					["g"] = {
+						un(3, i(171324)),	-- Renowned Explorer's Akubra
+						un(3, i(171329)),	-- Renowned Explorer's Canteen Pouch
+						un(3, i(171332)),	-- Renowned Explorer's Dustcover
+						un(3, i(171328)),	-- Renowned Explorer's Lucky Bangle
+						un(3, i(171327)),	-- Renowned Explorer's Mantle
+						un(3, i(171325)),	-- Renowned Explorer's Muckwaders
+						un(3, i(171330)),	-- Renowned Explorer's Treasure-Snatchers
+						un(3, i(171326)),	-- Renowned Explorer's Trousers
+						un(3, i(171331)),	-- Renowned Explorer's Versatile Vest
+					},
+				}),
+				un(3, i(171363)),	-- Illusion: Stinging Sands
+				un(3, i(173299)),	-- Keys to the Explorer's Jungle Hopper (MOUNT!)
+				un(3, i(173297)),	-- Reins of the Explorer's Dunetrekker (MOUNT!)
+				un(3, title(662)),	-- Renowned Explorer <Name>
+				un(3, i(171333)),	-- Renowned Explorer's Rucksack
+				un(3, i(171361)),	-- Renowned Explorer's Tabard
+				un(3, i(173296)),	-- Rikki (PET!)
+				--]]
 			}),
 		},
-		["u"] = 3,	-- Blizzard Promotion
-		["icon"] = "Interface\\Icons\\achievement_general",
 	}),
 };

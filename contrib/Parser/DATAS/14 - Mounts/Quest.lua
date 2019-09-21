@@ -4,7 +4,7 @@
 _.Mounts =
 {
 	n(-17, { 	-- Quest
-		i(142436),	-- Arcanist's Manasaber
+		i(142436),		-- Arcanist's Manasaber
 		mount(48778, {	-- Acherus Deathcharger
 			["classes"] = {6},
 		}),
@@ -76,6 +76,9 @@ _.Mounts =
 		i(142224, {		-- High Priest's Lightsworn Seeker
 			["classes"] = {5},
 		}),
+--		i(170069, {		-- Honeyback Harvester
+--			["races"] = ALLIANCE_ONLY,
+--		}),
 		i(142227, {		-- Huntmaster's Loyal Wolfhawk
 			["classes"] = {3},
 		}),
