@@ -597,8 +597,6 @@ _.ExpansionFeatures =
 					q(53065, {	-- Operation: Grave Digger
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["sourceQuest"] = 51601,	-- The Bridgeport Ride
-						["description"] = "This Quest automatically pop up when you reach a Reputation of 4500 Friendly with the Honorbound.",
-						["minReputation"] = { 2157, FRIENDLY+4500 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
@@ -664,8 +662,6 @@ _.ExpansionFeatures =
 					q(53066, {	-- Operation: Water Wise
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["sourceQuest"] = 51789,	-- What Remains of Marshal M. Valentine
-						["description"] = "This Quest automatically pop up when you reach a Reputation of 3000 Honored with the Honorbound.",
-						["minReputation"] = { 2157, HONORED+3000 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
@@ -748,8 +744,6 @@ _.ExpansionFeatures =
 					q(53067, {	-- Operation: Bottom Feeder
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["sourceQuest"] = 52122,	-- To Be Forsaken
-						["description"] = "This Quest automatically pop up when you reach a Reputation of 7500 Honored with the Honorbound.",
-						["minReputation"] = { 2157, HONORED+7500 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
@@ -865,9 +859,7 @@ _.ExpansionFeatures =
 					q(53068, {	-- Operation: Hook and Line
 						["provider"] = { "n", 141644 },	-- Nathanos Blightcaller
 						["sourceQuest"] = 52978,	-- With Prince in Tow
-						["description"] = "This Quest automatically pop up when you reach Revered with the Honorbound. If this Quest does not show up you need to relog.",
 						["isBreadcrumb"] = true,
-						["minReputation"] = { 2157, REVERED },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
@@ -1116,8 +1108,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
 						["sourceQuest"] = 53981,	-- The Day is Won
-						["description"] = "You need to reach a Reputation of 7000 Revered with the Honorbound to get this Quest offered.",
-						["minReputation"] = { 2157, REVERED+7000 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
@@ -1228,8 +1218,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
 						["sourceQuest"] = 54094,	-- A Goblin's Definition of Success
-						["description"] = "You need to reach a Reputation of 14000 Revered with the Honorbound to get this Quest offered.",
-						["minReputation"] = { 2157, REVERED+14000 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound

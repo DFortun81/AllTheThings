@@ -592,7 +592,6 @@ _.ExpansionFeatures =
 				--	BETWEEN BLOOD ON THE SAND / CHASING DARKNESS
 					q(53069, {	-- Operation: Blood Arrow
 						["races"] = ALLIANCE_ONLY,
-						["description"] = "This quest will automatically be offered when you reach 4,500 Friendly reputation with 7th Legion (75% of Friendly).",
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 52146 },	-- Blood on the Sand
 					}),
@@ -655,7 +654,6 @@ _.ExpansionFeatures =
 				--	BETWEEN CHASING DARKNESS AND A GOLDEN OPPORTUNITY
 					q(53070, {	-- Operation: Cutpurse
 						["races"] = ALLIANCE_ONLY,
-						["description"] = "This quest will automatically be offered when you reach 3,000 Honored reputation with 7th Legion (25% of Honored).",
 						["sourceQuests"] = { 52219 },	-- Target: Blood Prince Dreven
 					}),
 					q(52154, {	-- Our Next Target
@@ -724,7 +722,6 @@ _.ExpansionFeatures =
 				--	BETWEEN A GOLDEN OPPORTUNITY AND BLOOD IN THE WATER
 					q(53071, {	-- Operation: Gryphon's Claw
 						["races"] = ALLIANCE_ONLY,
-						["description"] = "This quest will automatically be offered when you reach 7,500 Honored reputation with 7th Legion (62% of Honored).",
 						["sourceQuests"] = { 52261 },	-- Gallywix Got Away
 					}),
 					q(52308, {	-- Intercepted Orders
@@ -787,7 +784,6 @@ _.ExpansionFeatures =
 				--	BETWEEN BLOOD IN THE WATER AND THE STRIKE ON ZULDAZAR
 					q(53072, {	-- Operation: Heartstrike
 						["races"] = ALLIANCE_ONLY,
-						["description"] = "This quest will automatically be offered when you reach Revered with 7th Legion.",
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 52496 },	-- A Clean Escape
 					}),
@@ -1013,7 +1009,6 @@ _.ExpansionFeatures =
 				--	BETWEEN WAR MARCHES ON AND THE SLEEPER AGENT
 					q(54191, {	-- Changing Course
 						["races"] = ALLIANCE_ONLY,
-						["description"] = "This quest will automatically be offered when you reach 7,000 Revered reputation with 7th Legion (33.3% of Revered).",
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 53887 },	-- War Marches On
 					}),
@@ -1118,7 +1113,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
-						["description"] = "This quest will be available in Boralus when you reach 14,000 Revered reputation with 7th Legion (66.6% of Revered).",
 						["sourceQuests"] = { 54206 },	-- The Sleeper Agent
 					}),
 				--	MISCHIEF MANAGED STARTS HERE	— NEED TO DO ON CLOTH/LEATHER/PLATE
