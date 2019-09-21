@@ -8429,7 +8429,7 @@ local function StartMovingOrSizing(self, fromChild)
 					return true;
 				end
 			end);
-		else
+		elseif self:IsMovable() then
 			self:StartMoving();
 			Push(app, "StartMovingOrSizing (Moving)", function()
 				-- This fixes a bug where the window will get stuck on the mouse until you reload.
