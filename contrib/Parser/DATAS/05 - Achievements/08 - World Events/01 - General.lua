@@ -21,9 +21,8 @@ _.Achievements =
 						crit(1),				-- The Brewfest Diet
 						crit(2),				-- Brew of the Month
 						crit(3),				-- Direbrewfest
-						crit(4),				-- Down With The Dark Iron
-						crit(5),				-- Have Keg, Will Travel
-						crit(6),				-- Does Your Wolpertinger Linger?
+						crit(4),				-- Have Keg, Will Travel
+						crit(5),				-- Does Your Wolpertinger Linger?
 					})),
 					un(27, ach(9428)),		-- Calavera (Day of the Dead)
 					un(27, ach(3456)),		-- Dead Man's Party (Day of the Dead)

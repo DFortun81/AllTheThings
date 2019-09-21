@@ -15,7 +15,6 @@ _.Holidays = bubbleDown({["u"] = 24},
 					un(24, ach(2796)),	-- Brew of the Month
 					un(24, ach(295)),	-- Direbrewfest
 					un(24, ach(1936)),	-- Does Your Wolpertinger Linger?
-					un(24, ach(1186)),	-- Down With The Dark Iron
 					un(24, ach(303)),	-- Have Keg, Will Travel
 					un(24, ach(1185, {	-- The Brewfest Diet
 						["g"] = bubbleDown({["u"] = 24}, {
@@ -98,6 +97,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					}),
 				})),
 				un(24, ach(293)),	-- Disturbing the Peace
+				un(2, ach(1186)),	-- Down With The Dark Iron
 				un(2, ach(4782, {	-- Green Brewfest Stein [Removed]
 					["g"] = bubbleDown({["u"] = 2}, {
 						i(37892, {	-- Green Brewfest Stein

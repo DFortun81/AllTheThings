@@ -35,7 +35,6 @@ _.Achievements =
 					ach(295),		-- Direbrewfest (Blackrock Depths)
 					ach(293),		-- Disturbing the Peace (Dalaran - NR)
 					ach(1936),		-- Does Your Wolpertinger Linger?
-					ach(1186),		-- Down With The Dark Iron
 					ach(303),		-- Have Keg, Will Travel
 					{	-- Strange Brew
 						["allianceAchievementID"] = 1184,	-- Strange Brew [Alliance]
