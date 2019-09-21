@@ -9,8 +9,9 @@ _.Holidays = bubbleDown({["u"] = 24},
 			["g"] = {
 				-- ALLIANCE QUESTS --
 				q(29397, {	-- A New Supplier of Souvenirs
-					["sourceQuests"] = { 11318, },	-- Now This is Ram Racing... Almost. (Alliance)
 					["provider"] = { "n", 24468 },	-- Pol Amberstill
+					["coord"] = { 53.6, 38.6, 27 },
+					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
 					["g"] = {
@@ -20,6 +21,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 				q(11293, {	-- Bark for the Barleybrews!
 					["provider"] = { "n", 23627 },	-- Becan Barleybrew
 					["coord"] = { 56.0, 38.0, 27 },
+					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
 					["isDaily"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
@@ -30,6 +32,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 				q(11294, {	-- Bark for the Thunderbrews!
 					["provider"] = { "n", 23628 },	-- Daran Thunderbrew
 					["coord"] = { 56.6, 36.8, 27 },
+					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
 					["isDaily"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
@@ -79,8 +82,9 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["isDaily"] = true,
 					["maps"] = { 27 },	-- Dun Morogh
 				}),
-				q(11117, {	-- Catch the Wild Wolpertinger! (Alliance)
+				q(11117, {	-- Catch the Wild Wolpertinger! (A)
 					["provider"] = { "n", 23486 },	-- Goldark Snipehunter
+					["coord"] = { 55.2, 37.8, 27 },
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
 					["g"] = {
@@ -91,10 +95,18 @@ _.Holidays = bubbleDown({["u"] = 24},
 						}),
 					},
 				}),
-				q(12022, {	-- Chug and Chuck! (Alliance)
+				q(12022, {	-- Chug and Chuck! (A)
 					["provider"] = { "n", 27215 },	-- Boxey Boltspinner
-					["maps"] = { 27 },	-- Dun Morogh
+					["coord"] = { 54.7, 38.0, 27 },
+					["sourceQuests"] = {
+						11441,	-- Brewfest! (A)
+						11442,	-- Welcome to Brewfest! (A)	
+					},
 					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 27 },	-- Dun Morogh
+					["g"] = {
+						un(24, i(37829)),	-- Brewfest Prize Token
+					},
 				}),
 				q(56322, {	-- Contained Alemental (A)
 				--	["provider"] = { "o", ??? },	-- ???
@@ -113,13 +125,18 @@ _.Holidays = bubbleDown({["u"] = 24},
 				q(11318, {	-- Now This is Ram Racing... Almost. (A)
 					["provider"] = { "n", 23558 },	-- Neill Ramstein
 					["coord"] = { 53.6, 38.6, 27 },
+					["sourceQuests"] = {
+						11441,	-- Brewfest! (A)
+						11442,	-- Welcome to Brewfest! (A)	
+					},
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
 				}),
-				q(11118, {	-- Pink Elekks On Parade (Alliance)
+				q(11118, {	-- Pink Elekks On Parade (A)
 					["provider"] = { "n", 23486 },	-- Goldark Snipehunter
-					["maps"] = { 27 },	-- Dun Morogh
+					["coord"] = { 55.2, 37.8, 27 },
 					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 27 },	-- Dun Morogh
 				}),
 				q(11122, {	-- There and Back Again (A)
 					["provider"] = { "n", 23558 },	-- Neill Ramstein
@@ -138,9 +155,10 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["maps"] = { 27 },	-- Dun Morogh
 				}),
 				-- HORDE QUESTS --
-				q(29396, {	-- A New Supplier of Souvenirs (Horde)
-					["sourceQuests"] = { 11409, },	-- Now This is Ram Racing... Almost. (Horde)
+				q(29396, {	-- A New Supplier of Souvenirs (H)
 					["provider"] = { "n", 24497 },	-- Ram Master Ray
+					["coord"] = { 42.6, 17.6, 1 },
+					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
 					["g"] = {
@@ -150,6 +168,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 				q(11407, {	-- Bark for Drohn's Distillery!
 					["provider"] = { "n", 24498 },	-- Cort Gorestein
 					["coord"] = { 40.5, 18.3, 1 },
+					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
@@ -160,6 +179,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 				q(11408, {	-- Bark for T'chali's Voodoo Brewery!
 					["provider"] = { "n", 24498 },	-- Cort Gorestein
 					["coord"] = { 40.2, 17.0, 1 },
+					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
@@ -218,8 +238,9 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
 				}),
-				q(11431, {	-- Catch the Wild Wolpertinger! (Horde)
+				q(11431, {	-- Catch the Wild Wolpertinger! (H)
 					["provider"] = { "n", 24657 },	-- Glodrak Huntsniper
+					["coord"] = { 41.2, 18.4, 1 },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
 					["g"] = {
@@ -230,10 +251,18 @@ _.Holidays = bubbleDown({["u"] = 24},
 						}),
 					},
 				}),
-				q(12191, {	-- Chug and Chuck! (Horde)
+				q(12191, {	-- Chug and Chuck! (H)
 					["provider"] = { "n", 27216 },	-- Bizzle Quicklift
-					["maps"] = { 1 },	-- Durotar
+					["coord"] = { 41.4, 17.6, 1 },
+					["sourceQuests"] = {
+						11446,	-- Brewfest! (H)
+						11447,	-- Welcome to Brewfest! (H)
+					},
 					["races"] = HORDE_ONLY,
+					["maps"] = { 1 },	-- Durotar
+					["g"] = {
+						un(24, i(37829)),	-- Brewfest Prize Token
+					},
 				}),
 				q(56714, {	-- Contained Alemental (H)
 				--	["provider"] = { "o", ??? },	-- ???
@@ -252,17 +281,22 @@ _.Holidays = bubbleDown({["u"] = 24},
 				q(11409, {	-- Now This is Ram Racing... Almost. (H)
 					["provider"] = { "n", 24497 },	-- Ram Master Ray
 					["coord"] = { 42.6, 17.8, 1 },
+					["sourceQuests"] = {
+						11446,	-- Brewfest! (H)
+						11447,	-- Welcome to Brewfest! (H)
+					},
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
 				}),
-				q(11120, {	-- Pink Elekks On Parade (Horde)
+				q(11120, {	-- Pink Elekks On Parade (H)
 					["provider"] = { "n", 24657 },	-- Glodrak Huntsniper
-					["maps"] = { 1 },	-- Durotar
+					["coord"] = { 41.2, 18.4, 1 },
 					["races"] = HORDE_ONLY,
+					["maps"] = { 1 },	-- Durotar
 				}),
 				q(11412, {	-- There and Back Again (H)
 					["provider"] = { "n", 24497 },	-- Ram Master Ray
-					
+					["coord"] = { 42.6, 17.8, 1 },
 					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
