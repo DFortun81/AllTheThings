@@ -323,6 +323,10 @@ _.Zones =
 					["collectible"] = false,
 					["requireSkill"] = 356,	-- Fishing
 				}),
+				q(45495, {	-- Immolian
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
 				q(42277, {	-- Interlopers!
 					["lvl"] = 110,
 					["collectible"] = false,

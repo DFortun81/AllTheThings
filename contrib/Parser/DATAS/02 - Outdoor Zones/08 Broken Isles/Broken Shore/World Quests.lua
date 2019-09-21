@@ -13,7 +13,6 @@ _.Zones =
 					q(46104),	-- Arachnid Toxicity
 					q(46761),	-- Brew Bandits
 					q(46947),	-- Brutallus
-					q(46068),	-- Brute Wrangling
 					q(45358),	-- Contagion Containment
 					q(45531),	-- Creeping Fel
 					q(45969),	-- Defense of the Ancient
@@ -79,6 +78,10 @@ _.Zones =
 					["collectible"] = false,
 				}),
 				q(46073, {	-- Break Their Garrison
+					["lvl"] = 110,
+					["collectible"] = false,
+				}),
+				q(46068, {	-- Brute Wrangling
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),

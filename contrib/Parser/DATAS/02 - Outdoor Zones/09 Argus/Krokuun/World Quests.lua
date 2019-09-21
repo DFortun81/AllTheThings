@@ -59,6 +59,11 @@ _.Zones =
 					["lvl"] = 110,
 					["collectible"] = false,
 				}),
+				q(49042, {	-- Foulclaw
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["lvl"] = 110,
+				}),
 				q(48287, {	-- Harvesters of Sorrow
 					["lvl"] = 110,
 					["collectible"] = false,
@@ -169,6 +174,11 @@ _.Zones =
 					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(48318, {	-- Work Order: Lightblood Elixirs
+					["lvl"] = 110,
+					["collectible"] = false,
+					["requireSkill"] = 171,	-- Alchemy
+				}),
+				q(48323, {	-- Work Order: Tears of the Naaru
 					["lvl"] = 110,
 					["collectible"] = false,
 					["requireSkill"] = 171,	-- Alchemy

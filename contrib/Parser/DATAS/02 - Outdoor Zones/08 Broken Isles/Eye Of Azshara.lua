@@ -27,7 +27,7 @@ _.Zones =
 						["description"] = "For a detailed explanation on how to get this world quest to be available, go to Outdoor Zones - Broken Isles - Broken Shore and look under Special at |cFFFFD700Kosumoth the Hungering|r.",
 						["questID"] = 45479,
 						["g"] = {
-							q(43798, {
+							q(43798, {	-- DANGER: Kosumoth the Hungering
 								["repeatable"] = true,
 								["g"] = {
 									i(140261),	-- Pet

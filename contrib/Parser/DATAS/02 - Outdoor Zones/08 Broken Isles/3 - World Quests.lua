@@ -435,10 +435,11 @@ _.Zones =
 					i(134279),	-- Nightborne Signet Ring
 					i(121799),	-- Tel'anor Magister's Ring
 				}),
-				n(-386,  {	-- Trinkets
+				n(-386, {	-- Trinkets
 					i(134204),	-- Bleached Skull Talisman
+					i(134336),	-- Stolen Mana Crystal
 				}),
-				n(-387,  {	-- Relics
+				n(-387, {	-- Relics
 					i(143695),	-- Ambition of the Forlorn
 					i(143694),	-- Aristocratic Menace
 					i(141275),	-- Fertile Soil
