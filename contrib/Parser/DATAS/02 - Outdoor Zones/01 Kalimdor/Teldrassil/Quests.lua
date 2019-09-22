@@ -136,6 +136,7 @@ _.Zones =
 					},
 				}),
 				q(6344,  {	-- Reminders of Home
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 4265 },	-- Nyoma
 					["coord"] = { 56.7, 53.5, 57 },
 					["races"] = { 4 },	-- Night Elf
