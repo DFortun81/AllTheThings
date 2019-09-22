@@ -340,6 +340,7 @@ namespace ATT
                     case "isWeekly":
                     case "isMonthly":
                     case "isYearly":
+                    case "isWorldQuest":
                     case "isToy":
                     case "ignoreSource":
                         {
@@ -666,6 +667,7 @@ namespace ATT
                     case "isWeekly":
                     case "isDaily":
                     case "isYearly":
+                    case "isWorldQuest":
                         {
                             data[field] = value;
                             break;
