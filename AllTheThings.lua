@@ -1135,6 +1135,51 @@ local IsQuestFlaggedCompletedForObject = function(t)
 		if t.altQuestID and GetTempDataSubMember("CollectedQuests", t.altQuestID) then
 			return 1;
 		end
+		if Grail then 
+			-- Import previously completed repeatable quest from Grail addon data
+			if Grail:HasQuestEverBeenCompleted(t.questID) then
+				SetDataSubMember("CollectedQuests", t.questID, 1);
+				SetTempDataSubMember("CollectedQuests", t.questID, 1);
+				return 1;
+			end
+			if Grail:HasQuestEverBeenCompleted(t.altQuestID) then
+				SetDataSubMember("CollectedQuests", t.altQuestID, 1);
+				SetTempDataSubMember("CollectedQuests", t.altQuestID, 1);
+				return 1;
+			end
+		end
+		if WorldQuestTrackerAddon then
+			-- Import previously completed repeatable quest from WorldQuestTracker addon data
+			local wqt_questDoneHistory = WorldQuestTrackerAddon.db.profile.history.quest
+			local wqt_global = wqt_questDoneHistory.global
+			local wqt_local = wqt_questDoneHistory.character[app.GUID]
+			
+			if wqt_local and wqt_local[questID] and wqt_local[questID] > 0 then
+				SetDataSubMember("CollectedQuests", t.questID, 1);
+				SetTempDataSubMember("CollectedQuests", t.questID, 1);
+				return 1;
+			end
+			
+			if wqt_local and wqt_local[altQuestID] and wqt_local[altQuestID] > 0 then
+				SetDataSubMember("CollectedQuests", t.altQuestID, 1);
+				SetTempDataSubMember("CollectedQuests", t.altQuestID, 1);
+				return 1;
+			end
+			
+			if wqt_global and wqt_global[questID] and wqt_global[questID] > 0 then
+				SetDataSubMember("CollectedQuests", t.questID, 1);
+				if app.AccountWideQuests then
+					return 2;
+				end
+			end
+		
+			if wqt_global and wqt_global[altQuestID] and wqt_global[altQuestID] > 0 then
+				SetDataSubMember("CollectedQuests", t.altQuestID, 1);
+				if app.AccountWideQuests then
+					return 2;
+				end
+			end
+		end
 		if app.AccountWideQuests then
 			if t.questID and GetDataSubMember("CollectedQuests", t.questID) then
 				return 2;
