@@ -17,6 +17,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["g"] = {
 						un(24, i(56836)), 	-- Overflowing Purple Brewfest Stein
 					},
+					["isYearly"] = true,
 				}),
 				q(11293, {	-- Bark for the Barleybrews!
 					["provider"] = { "n", 23627 },	-- Becan Barleybrew
@@ -57,6 +58,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						103,	-- The Exodar
 						504,	-- Isle of Thunder
 					},
+					["isYearly"] = true,
 				}),
 				q(56764, {	-- Brewfest Chowdown (A)
 					["provider"] = { "n", 153574 },	-- Britta Steinheart
@@ -66,6 +68,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["g"] = {
 						un(24, i(37829)),	-- Brewfest Prize Token
 					},
+					["isYearly"] = true,
 				}),
 				q(29394, {	-- Brew For Brewfest (A)
 					["provider"] = { "n", 23558 },	-- Neill Ramstein
@@ -94,6 +97,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 							}),
 						}),
 					},
+					["isYearly"] = true,
 				}),
 				q(12022, {	-- Chug and Chuck! (A)
 					["provider"] = { "n", 27215 },	-- Boxey Boltspinner
@@ -107,6 +111,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["g"] = {
 						un(24, i(37829)),	-- Brewfest Prize Token
 					},
+					["isYearly"] = true,
 				}),
 				q(56322, {	-- Contained Alemental (A)
 				--	["provider"] = { "o", ??? },	-- ???
@@ -131,12 +136,14 @@ _.Holidays = bubbleDown({["u"] = 24},
 					},
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
+					["isYearly"] = true,
 				}),
 				q(11118, {	-- Pink Elekks On Parade (A)
 					["provider"] = { "n", 23486 },	-- Goldark Snipehunter
 					["coord"] = { 55.2, 37.8, 27 },
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
+					["isYearly"] = true,
 				}),
 				q(11122, {	-- There and Back Again (A)
 					["provider"] = { "n", 23558 },	-- Neill Ramstein
@@ -147,12 +154,14 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["g"] = {
 						un(24, i(37829)),	-- Brewfest Prize Token
 					},
+					["isYearly"] = true,
 				}),
 				q(11442, {	-- Welcome to Brewfest! (A)	
 					["provider"] = { "n", 24710 },	-- Ipfelkofer Ironkeg
 					["coord"] = { 55.1, 38.1, 27 },
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 27 },	-- Dun Morogh
+					["isYearly"] = true,
 				}),
 				-- HORDE QUESTS --
 				q(29396, {	-- A New Supplier of Souvenirs (H)
@@ -164,6 +173,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["g"] = {
 						un(24, i(56836)),	-- Overflowing Purple Brewfest Stein
 					},
+					["isYearly"] = true,
 				}),
 				q(11407, {	-- Bark for Drohn's Distillery!
 					["provider"] = { "n", 24498 },	-- Cort Gorestein
@@ -213,6 +223,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						125,	-- Dalaran (Northrend)
 						210,	-- The Cape of Stranglethorn
 					},
+					["isYearly"] = true,
 				}),
 				q(56748, {	-- Brewfest Chowdown (H)
 					["provider"] = { "n", 155133 },	-- Etga
@@ -222,6 +233,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["g"] = {
 						un(24, i(37829)),	-- Brewfest Prize Token
 					},
+					["isYearly"] = true,
 				}),
 				q(29393, {	-- Brew For Brewfest (H)
 					["provider"] = { "n", 24497 },	-- Ram Master Ray
@@ -250,6 +262,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 							}),
 						}),
 					},
+					["isYearly"] = true,
 				}),
 				q(12191, {	-- Chug and Chuck! (H)
 					["provider"] = { "n", 27216 },	-- Bizzle Quicklift
@@ -263,6 +276,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["g"] = {
 						un(24, i(37829)),	-- Brewfest Prize Token
 					},
+					["isYearly"] = true,
 				}),
 				q(56714, {	-- Contained Alemental (H)
 				--	["provider"] = { "o", ??? },	-- ???
@@ -287,6 +301,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					},
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
+					["isYearly"] = true,
 				}),
 				q(11120, {	-- Pink Elekks On Parade (H)
 					["provider"] = { "n", 24657 },	-- Glodrak Huntsniper
@@ -303,12 +318,14 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["g"] = {
 						un(24, i(37829)),	-- Brewfest Prize Token
 					},
+					["isYearly"] = true,
 				}),
 				q(11447, {	-- Welcome to Brewfest! (H)
 					["provider"] = { "n", 155194 },	-- La'gar Brewshout
 					["coord"] = { 41.6, 18.4, 1 },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
+					["isYearly"] = true,
 				}),
 			},
 		}),
