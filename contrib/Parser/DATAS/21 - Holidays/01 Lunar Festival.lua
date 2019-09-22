@@ -131,7 +131,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					["questID"] = 8870,	-- The Lunar Festival
 					["provider"] = { "n", 15892 },	-- Lunar Festival Emissary
 					["isBreadcrumb"] = true,
-					["repeatable"] = true,
+					["isYearly"] = true,
 					["maps"] = {
 						87,	-- Ironforge
 					},
@@ -140,7 +140,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					["questID"] = 8871,	-- The Lunar Festival
 					["provider"] = { "n", 15892 },	-- Lunar Festival Emissary
 					["isBreadcrumb"] = true,
-					["repeatable"] = true,
+					["isYearly"] = true,
 					["maps"] = {
 						37,	-- Elwynn Forest
 					},
@@ -149,7 +149,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					["questID"] = 8872,	-- The Lunar Festival
 					["provider"] = { "n", 15892 },	-- Lunar Festival Emissary
 					["isBreadcrumb"] = true,
-					["repeatable"] = true,
+					["isYearly"] = true,
 					["maps"] = {
 						89,	-- Darnassus
 					},
@@ -158,7 +158,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					["questID"] = 8873,	-- The Lunar Festival
 					["provider"] = { "n", 15891 },	-- Lunar Festival Herald
 					["isBreadcrumb"] = true,
-					["repeatable"] = true,
+					["isYearly"] = true,
 					["maps"] = {
 						85,	-- Orgrimmar
 					},
@@ -167,7 +167,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					["questID"] = 8874,	-- The Lunar Festival
 					["provider"] = { "n", 15891 },	-- Lunar Festival Herald
 					["isBreadcrumb"] = true,
-					["repeatable"] = true,
+					["isYearly"] = true,
 					["maps"] = {
 						90,	-- Undercity
 					},
@@ -176,7 +176,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					["questID"] = 8875,	-- The Lunar Festival
 					["provider"] = { "n", 15891 },	-- Lunar Festival Herald
 					["isBreadcrumb"] = true,
-					["repeatable"] = true,
+					["isYearly"] = true,
 					["maps"] = {
 						88,	-- Thunder Bluff
 					},
@@ -192,7 +192,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 						8875,	-- The Lunar Festival
 					},
 					["provider"] = { "n", 15895 },	-- Lunar Festival Harbinger
-					["repeatable"] = true,
+					["isYearly"] = true,
 					["maps"] = {
 						37,	-- Elwynn Forest
 						90,	-- Undercity
@@ -215,7 +215,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					["sourceQuest"] = 8867,	-- Lunar Fireworks
 					["provider"] = { "n", 15895 },	-- Lunar Festival Harbinger
 					["isBreadcrumb"] = true,
-					["repeatable"] = true,
+					["isYearly"] = true,
 					["maps"] = {
 						37,	-- Elwynn Forest
 						90,	-- Undercity
@@ -234,7 +234,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					["questID"] = 8868,	-- Elune's Blessing
 					["sourceQuest"] = 8883,	-- Valadar Starsong
 					["provider"] = { "n", 15864 },	-- Valadar Starsong <Coin of Ancestry Collector>
-					["repeatable"] = true,
+					["isYearly"] = true,
 					["groups"] = {
 						un(17, i(21540)),	-- Elune's Lantern
 						i(21640),	-- Lunar Festival Fireworks Pack
@@ -252,7 +252,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 5,	-- Elder Arp in D.E.H.T.A
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Beldak the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -266,7 +266,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 2,	-- Elder Beldak in Westfall Brigade
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Bellowrage the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -280,7 +280,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 2,	-- Elder Bellowrage in Blasted Lands
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 					["description"] = "In order to view this Elder, visit Zidormi at 48.1, 7.3 to see Blasted Lands before the invasion.",
 				},
 				{	-- Bladeleaf the Elder
@@ -296,7 +296,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 6,	-- Elder Bladeleaf in Dolanaar
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Bladesing the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -311,7 +311,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 21,	-- Elder Bladesing in Cenarion Hold
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Bladeswift the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -326,7 +326,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 1,	-- Elder Bladeswift in Darnassus
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Bloodhoof the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -340,7 +340,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 8,	-- Elder Bloodhoof in Bloodhoof Village
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Bluewolf the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -354,7 +354,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 10,	-- Elder Bluewolf in Wintergrasp
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Brightspear the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -368,7 +368,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 18,	-- Elder Brightspear in Winterspring
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Bronzebeard the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -383,7 +383,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 2,	-- Elder Bronzebeard in Ironforge
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Chogan'gada the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -401,7 +401,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 13,	-- Elder Chogan'gada in Utgarde Pinnacle
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Darkcore the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -416,7 +416,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 3,	-- Elder Darkcore in Undercity
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Darkfeather the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -430,7 +430,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 5,	-- Elder Darkfeather in Twilight Highlands
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Darkhorn the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -445,7 +445,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 1,	-- Elder Darkhorn in Orgrimmar
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Dawnstrider the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -459,7 +459,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 10,	-- Elder Dawnstrider in Flame Crest
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Deepforge the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -473,7 +473,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 9,	-- Elder Deepforge in Deepholm
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Dreamseer the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -487,7 +487,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 16,	-- Dreamseer in Gadgetzan
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Evershade the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -501,7 +501,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 7,	-- Elder Evershade in Nordrassil
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Fargal the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -515,7 +515,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 4,	-- Elder Fargal in Frosthold
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Farwhisper the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -533,7 +533,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 6,	-- Elder Farwhisper in Stratholme
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Firebeard the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -547,7 +547,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 4,	-- Elder Firebeard in Twilight Highlands
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Goldwell the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -561,7 +561,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 1,	-- Elder Goldwell in Kharanos
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Graveborn the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -576,7 +576,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 13,	-- Elder Graveborn in Brill
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Graymane the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -590,7 +590,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 13,	-- Elder Graymane in K3
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Grimtotem the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -604,7 +604,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 10,	-- Elder Grimtotem in Feralas
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Hammershout the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -618,7 +618,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 3,	-- Elder Hammershout in Stormwind
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- High Mountain the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -632,7 +632,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 4,	-- Elder High Mountain in Vendetta Point
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Highpeak the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -646,7 +646,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 11,	-- Elder Highpeak in The Hinterlands
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Igasho the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -664,7 +664,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 8,	-- Elder Igasho in The Nexus
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Ironband the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -678,7 +678,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 12,	-- Elder Ironband in Searing Gorge
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Jarten the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -696,7 +696,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 7,	-- Elder Jarten in Utgarde Keep
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Kilias the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -714,7 +714,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 10,	-- Elder Kilias in Drak'Tharon Keep
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Lunaro the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -728,7 +728,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 9,	-- Elder Lunaro in Ruins of Tethys
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Meadowrun the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -742,7 +742,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 4,	-- Elder Meadowrun in Western Plaguelands
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Menkhaf the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -756,7 +756,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 2,	-- Elder Menkhaf in Uldum
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Mistwalker the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -770,7 +770,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 11,	-- Elder Mistwalker in Dire Maul
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Moonlance the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -784,7 +784,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 8,	-- Elder Moonlance in Vashj'ir
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Moonstrike the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -798,7 +798,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 17,	-- Elder Moonstrike in Scholomance
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Moonwarden the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -812,7 +812,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 3,	-- Elder Moonwarden in The Crossroads
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Morndeep the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -830,7 +830,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 5,	-- Elder Morndeep in Blackrock Depths
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Morningdew the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -844,7 +844,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 14,	-- Elder Morningdew in Fizzle and Pozzik's Speedbarge
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Morthie the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -858,7 +858,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 3,	-- Elder Morthie in Star's Rest
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Muraco the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -872,7 +872,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 18,	-- Elder Muraco in Camp Tunka'lo
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Nightwind the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -886,7 +886,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 12,	-- Elder Nightwind in Felwood
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Northal the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -900,7 +900,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 6,	-- Elder Northal in Transitus Shield
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Nurgen the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -918,7 +918,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 9,	-- Elder Nurgen in Azjol-Nerub
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Obsidian the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -932,7 +932,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 14,	-- Elder Obsidian in The Sepulcher
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Ohanzee the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -950,7 +950,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 11,	-- Elder Ohanzee in Gundrak
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Pamuya the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -964,7 +964,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 15,	-- Elder Pamuya in Warsong Hold
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Primestone the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -979,7 +979,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 20,	-- Elder Primestone in Silithus
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Ragetotem the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -993,7 +993,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 15,	-- Elder Ragetotem in Tanaris
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Riversong the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1007,7 +1007,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 9,	-- Elder Riversong in Astranaar
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Rumblerock the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1021,7 +1021,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 9,	-- Elder Rumblerock in Burning Steppes
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Runetotem the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1035,7 +1035,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 1,	-- Elder Runetotem in Razor Hill
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Sandrene the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1049,7 +1049,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 7,	-- Elder Sandrene in Lakeside Landing
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Sardis the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1063,7 +1063,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 1,	-- Elder Sardis in Valiance Keep
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Sekhemi the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1077,7 +1077,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 3,	-- Elder Sekhemi in Uldum
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Silvervein the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1091,7 +1091,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 7,	-- Elder Silvervein in Thelsamar
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Skychaser the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1105,7 +1105,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 8,	-- Elder Skychaser in Sentinel Hill
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Skygleam the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1119,7 +1119,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 2,	-- Elder Skygleam in Azshara
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Skyseer the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1133,7 +1133,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 13,	-- Elder Skyseer in Freewind Post
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Skywarden the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1147,7 +1147,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 17,	-- Elder Skywarden in Agmar's Hammer
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Snowcrown the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1161,7 +1161,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 16,	-- Elder Snowcrown in Light's Hope Chapel
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Splitrock the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1179,7 +1179,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 3,	-- Elder Splitrock in Maraudon
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Starglade the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1193,7 +1193,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 5,	-- Elder Starglade in Zul'Gurub
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Starsong the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1211,7 +1211,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 2,	-- Elder Starsong in Sunken Temple
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Starweave the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1226,7 +1226,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 7,	-- Elder Starweave in Lor'danel
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Stonebeard the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1240,7 +1240,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 14,	-- Elder Stonebeard in Bouldercrag's Refuge
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Stonebrand the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1254,7 +1254,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 1,	-- Elder Stonebrand in the Temple of the Earth
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Stonefort the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1272,7 +1272,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 4,	-- Elder Stonefort in Blackrock Spire
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Stonespire the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1286,7 +1286,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 19,	-- Elder Stonespire in Everlook
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Stormbrow the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1300,7 +1300,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 3,	-- Elder Stormbrow in Goldshire
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Tauros the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1314,7 +1314,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 11,	-- Elder Tauros in Zim'Torga
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Thoim the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1328,7 +1328,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 12,	-- Elder Thoim in Moa'ki Harbor
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Thunderhorn the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1342,7 +1342,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 17,	-- Elder Thunderhorn in Un'Goro
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Wanikaya the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1356,7 +1356,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 8,	-- Elder Wanikaya in Rainspeaker Rapids
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Wheathoof the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1371,7 +1371,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 2,	-- Elder Wheathoof in Thunder Bluff
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Whurain the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1385,7 +1385,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 16,	-- Elder Whurain in Camp Oneqwah
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Wildmane the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1403,7 +1403,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 1,	-- Elder Wildmane in Zul'Farrak
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Windrun the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1417,7 +1417,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 15,	-- Elder Windrun in Eastern Plaguelands
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Windsong the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1431,7 +1431,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 6,	-- Elder Windsong in Hyjal
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Windtotem the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1445,7 +1445,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 5,	-- Elder Windtotem in Ratchet
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Winterhoof the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1459,7 +1459,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 6,	-- Elder Winterhoof in Booty Bay
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 				{	-- Yurauk the Elder
 					["u"] = 17,	-- Lunar Festival
@@ -1477,7 +1477,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 							["criteriaID"] = 12,	-- Elder Yurauk in the Halls of Stone
 						},
 					},
-					["repeatable"] = true,
+					["isYearly"] = true,
 				},
 			}),
 			n(-2, {	-- Vendors
