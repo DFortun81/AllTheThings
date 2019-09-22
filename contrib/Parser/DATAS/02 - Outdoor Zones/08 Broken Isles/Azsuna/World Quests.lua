@@ -96,10 +96,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
-				q(43193, {	-- Calamitous Intent
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
-				}),
 				q(41438, {	-- Charged Leystone Deposits
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
@@ -578,10 +574,6 @@ _.Zones =
 					},
 				}),
 				q(42112, {	-- The Withered Return
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
-				}),
-				q(43192, {	-- Terror of the Deep
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 				}),
