@@ -582,6 +582,12 @@ _.NeverImplemented =
 		q(52999),	-- Hailstone Construct kill
 		q(52268),	-- Hailstone Construct bonus roll
 		
+	--	RARES
+		q(52000),	-- Matron Morana killID
+		q(52002),	-- Soul Goliath killID
+		q(51999),	-- Stone Golem killID
+	
+	--	TREASURES
 		q(51871),	-- Drustvar repeatable random chest
 		q(51875),	-- Drustvar repeatable random chest
 		q(51878),	-- Drustvar repeatable random chest
@@ -691,7 +697,7 @@ _.NeverImplemented =
 		q(49918),	-- Gorilla Gorge
 		q(50178),	-- Trouble in the Rootway
 		
-	-- Chests
+		-- Chests
 		q(50710),	-- Zuldazar repeatable random chest
 		q(50711),	-- Zuldazar repeatable random chest
 		q(50712),	-- Zuldazar repeatable random chest

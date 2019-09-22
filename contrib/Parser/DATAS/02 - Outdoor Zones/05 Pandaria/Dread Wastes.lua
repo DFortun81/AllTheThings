@@ -469,6 +469,7 @@ _.Zones =
 						["sourceQuests"] = { 31727 },	-- Gambling Problem
 					}),
 					q(31727, {	-- Gambling Problem
+						["isBreadcrumb"] = true,
 						["provider"] = { "n", 64599 },	-- Ambersmith Zikk
 					}),
 					o(214062, {	-- Glowing Amber
