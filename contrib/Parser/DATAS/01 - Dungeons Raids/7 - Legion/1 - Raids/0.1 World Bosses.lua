@@ -7,17 +7,14 @@ _.Instances = { tier(7, {	-- Legion
 		["isRaid"] = true,
 		["lvl"] = 110,
 		["modID"] = 3,
-		["groups"] = {
+		["g"] = {
 			cr(109943, e(1790, {	-- Ana-Mouz 
 				["questID"] = 43512,	-- Change to tracking quest later.
 				["isRaid"] = true,
 				["maps"] = { 680 },	-- Suramar
 				["coord"] = { 31.0, 65.5, 680 },
-				["groups"] = {
-					{
-						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
-						["criteriaID"] = 5,	-- Ana-Mouz slain [Criteria]
-					},
+				["g"] = {
+					ach(11160, crit(5)),	-- Unleashed Monstrosities / Ana-Mouz
 					i(137778),	-- Vantus Rune Technique: Tichondrius [Rank 3]
 					i(141448),	-- Imp Mother's Loincloth
 					i(141423),	-- Crop Top Chain Hauberk
@@ -33,11 +30,8 @@ _.Instances = { tier(7, {	-- Legion
 				["isRaid"] = true,
 				["maps"] = { 646 },	-- The Broken Shore
 				["coord"] = { 59.2, 62.6, 646 },
-				["groups"] = {
-					{
-						["achievementID"] = 11786,	-- Terrors of the Shore [Achievement]
-						["criteriaID"] = 4,	-- 	Apocron slain [Criteria]
-					},
+				["g"] = {
+					ach(11786, crit(4)),	-- Terrors of the Shore / Apocron
 					i(147766),	-- Band of Dark Millennia
 					i(147734),	-- Spaulders of Forgotten Worlds
 					i(147743),	-- Harness of Devouring Flame
@@ -53,11 +47,8 @@ _.Instances = { tier(7, {	-- Legion
 				["isRaid"] = true,
 				["maps"] = { 646 },	-- The Broken Shore
 				["coord"] = { 59.2, 28.4, 646 },
-				["groups"] = {
-					{
-						["achievementID"] = 11786,	-- Terrors of the Shore [Achievement]
-						["criteriaID"] = 1,	-- 	Brutallus slain [Criteria]
-					},
+				["g"] = {
+					ach(11786, crit(1)),	-- Terrors of the Shore / Brutallus
 					i(147749),	-- Polished Felfury Helmet
 					i(147765),	-- Clasp of Burning Demise
 					i(147742),	-- Violent Zealot's Shoulderpads
@@ -70,16 +61,12 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			})),
 			cr(109331, e(1774, {	-- Calamir 
-				--["questID"] = 44502,	-- !KillID
-				["questID"] = 43193,	-- Calamitous Intent
+				["questID"] = 44502,
 				["isRaid"] = true,
 				["maps"] = { 630 },	-- Azsuna
 				["coord"] = { 37.7, 83.6, 630 },
-				["groups"] = {
-					{
-						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
-						["criteriaID"] = 9,	-- Calamir slain [Criteria]
-					},
+				["g"] = {
+					ach(11160, crit(9)),	-- Unleashed Monstrosities / Calamir
 					i(137847),	-- Design: Sorcerous Shadowruby Pendant [Rank 3]
 					i(141438),	-- Pendant of Cold Flame
 					i(141432),	-- Frostburned Sabatons
@@ -95,11 +82,8 @@ _.Instances = { tier(7, {	-- Legion
 				["isRaid"] = true,
 				["maps"] = { 650 },	-- Highmountain
 				["coord"] = { 58.4, 72.6, 650 },
-				["groups"] = {
-					{
-						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
-						["criteriaID"] = 7,	-- Drugon the Frostblood slain [Criteria]
-					},
+				["g"] = {
+					ach(11160, crit(7)),	-- Unleashed Monstrosities / Drugon the Frostblood
 					i(142108),	-- Vantus Rune Technique: Guarm [Rank 3]
 					i(141538),	-- Giant's Handkerchief
 					i(141433),	-- Assorted Dragonscale Bracers
@@ -115,11 +99,8 @@ _.Instances = { tier(7, {	-- Legion
 				["isRaid"] = true,
 				["maps"] = { 650 },	-- Highmountain
 				["coord"] = { 49.2, 7.60, 650 },
-				["groups"] = {
-					{
-						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
-						["criteriaID"] = 4,	-- Flotsam slain [Criteria]
-					},
+				["g"] = {
+					ach(11160, crit(4)),	-- Unleashed Monstrosities / Flotsam
 					i(139573, {	-- The Warmace of Shirvallah (Shaman Artifact)
 						artifact(880),	-- Find Hidden Artifact Skin
 					}),
@@ -137,18 +118,14 @@ _.Instances = { tier(7, {	-- Legion
 				["isRaid"] = true,
 				["maps"] = { 641 },	-- Val'sharah
 				["coord"] = { 24.6, 69.6, 641 },
-				["groups"] = {
-					{
-						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
-						["criteriaID"] = 3,	-- Humongris slain [Criteria]
-					},
-					{
-						["itemID"] = 139895,	-- Skinning Technique: Legion Butchery
+				["g"] = {
+					ach(11160, crit(3)),	-- Unleashed Monstrosities / Humongris
+					i(139895, {	-- Skinning Technique: Legion Butchery
 						["collectible"] = false,
-						["groups"] = {
+						["g"] = {
 							recipe(194173),	-- Legion Butchery
 						},
-					},
+					}),
 					i(141540),	-- Coerced Wizard's Cloak
 					i(141445),	-- Mantle of the Aspiring Spellgiant
 					i(141416),	-- Padawsen's Squished Pauldrons
@@ -159,15 +136,12 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			})),
 			cr(108829, e(1769, {	-- Levantus 
-				["questID"] = 43192,	-- Change to tracking quest later.
+				["questID"] = 44506,
 				["isRaid"] = true,
 				["maps"] = { 630 },	-- Azsuna
 				["coord"] = { 43.0, 67.6, 630 },
-				["groups"] = {
-					{
-						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
-						["criteriaID"] = 6,	-- Levantus slain [Criteria]
-					},
+				["g"] = {
+					ach(11160, crit(6)),	-- Unleashed Monstrosities / Levantus
 					i(142109),	-- Vantus Rune Technique: Helya [Rank 3]
 					i(139573, {	-- The Warmace of Shirvallah (Shaman Artifact)
 						artifact(880),	-- Find Hidden Artifact Skin
@@ -186,11 +160,8 @@ _.Instances = { tier(7, {	-- Legion
 				["isRaid"] = true,
 				["maps"] = { 646 },	-- The Broken Shore
 				["coord"] = { 59.8, 27.8, 646 },
-				["groups"] = {
-					{
-						["achievementID"] = 11786,	-- Terrors of the Shore [Achievement]
-						["criteriaID"] = 2,	-- 	Malificus slain [Criteria]
-					},
+				["g"] = {
+					ach(11786, crit(2)),	-- Terrors of the Shore / Malificus
 					i(147740),	-- Plague-Resistant Headcover
 					i(147764),	-- Cloak of Growing Mistrust
 					i(147733),	-- Doomsayer's Ritualistic Vestment
@@ -208,11 +179,8 @@ _.Instances = { tier(7, {	-- Legion
 				["isRaid"] = true,
 				["maps"] = { 680 },	-- Suramar
 				["coord"] = { 36.0, 66.4, 685 },
-				["groups"] = {
-					{
-						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
-						["criteriaID"] = 1,	-- Na'zak the Fiend slain [Criteria]
-					},
+				["g"] = {
+					ach(11160, crit(1)),	-- Unleashed Monstrosities / Na'zak the Fiend
 					i(142121),	-- Recipe: Potion of Prolonged Power [Rank 3]
 					i(141425),	-- Avalanche Resistant Legplates
 					i(141417),	-- Desiccated Leather Pants
@@ -223,20 +191,14 @@ _.Instances = { tier(7, {	-- Legion
 					i(141515),	-- Leystone Nugget
 				},
 			})),	
-			e(1749, {				-- Nithogg 
+			cr(107544, e(1749, {	-- Nithogg 
 				["questID"] = 42270,	-- Change to tracking quest later.
 				["isRaid"] = true,
 				["maps"] = { 634 },	-- Stormheim
 				["coord"] = { 46.6, 30.0, 634 },
-				["crs"] = {
-					107544, 
-					107023,
-				},
-				["groups"] = {
-					{
-						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
-						["criteriaID"] = 2,	-- Nithogg slain [Criteria]
-					},
+				["crs"] = { 107023 },
+				["g"] = {
+					ach(11160, crit(2)),	-- Unleashed Monstrosities / Nithogg
 					i(142107),	-- Vantus Rune Technique: Odyn [Rank 3]
 					i(140658),	-- Skull of Nithogg
 					i(141420),	-- Coif of Unstable Discharge
@@ -247,17 +209,14 @@ _.Instances = { tier(7, {	-- Legion
 					i(141546),	-- Cursed Warden's Keepsake
 					i(141519),	-- Pillaged Titan Disc
 				},
-			}),
+			})),
 			cr(108678, e(1763, {	-- Shar'thos
 				["questID"] = 42779,	-- Change to tracking quest later.
 				["isRaid"] = true,
 				["maps"] = { 641 },	-- Val'sharah 
 				["coord"] = { 55.6, 43.2, 641 },
-				["groups"] = {
-					{
-						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
-						["criteriaID"] = 10,	-- Shar'thos slain [Criteria]
-					},
+				["g"] = {
+					ach(11160, crit(10)),	-- Unleashed Monstrosities / Shar'thos
 					i(140659),	-- Skull of Shar'thos
 					i(141547),	-- Choker of Dreamthorns
 					i(141542),	-- Despoiled Dreamthread Cloak
@@ -273,11 +232,8 @@ _.Instances = { tier(7, {	-- Legion
 				["isRaid"] = true,
 				["maps"] = { 646 },	-- The Broken Shore
 				["coord"] = { 89.6, 33.0, 646 },
-				["groups"] = {
-					{
-						["achievementID"] = 11786,	-- Terrors of the Shore [Achievement]
-						["criteriaID"] = 3,	-- 	Si'vash slain [Criteria]
-					},
+				["g"] = {
+					ach(11786, crit(3)),	-- Terrors of the Shore / Si'vash
 					i(147731),	-- Cowl of Plumbed Depths
 					i(147752),	-- Pauldrons of the Engulfing Tide
 					i(147737),	-- Shorebreaker Robes
@@ -289,7 +245,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(147761),	-- Sandblasted Conch
 				},
 			})),
-			e(1756, {				-- The Soultakers
+			e(1756, {	-- The Soultakers
 				["questID"] = 42269,	-- Change to tracking quest later.
 				["isRaid"] = true,
 				["maps"] = {
@@ -302,11 +258,8 @@ _.Instances = { tier(7, {	-- Legion
 					106982,	-- Reaver Jdorn
 					106984,	-- Soultrapper Mevra
 				},
-				["groups"] = {
-					{
-						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
-						["criteriaID"] = 8,	-- The Soultakers slain [Criteria]
-					},
+				["g"] = {
+					ach(11160, crit(8)),	-- Unleashed Monstrosities / The Soultakers
 					i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 						artifact(870),	-- Find Hidden Artifact Skin
 					}),
@@ -324,11 +277,8 @@ _.Instances = { tier(7, {	-- Legion
 				["isRaid"] = true,
 				["maps"] = { 630 },	-- Azsuna
 				["coord"] = { 52.6, 80.8, 630 },
-				["groups"] = {
-					{
-						["achievementID"] = 11160,	-- Unleashed Monstrosities [Achievement]
-						["criteriaID"] = 11,	-- Withered J'im slain [Criteria]
-					},
+				["g"] = {
+					ach(11160, crit(11)),	-- Unleashed Monstrosities / Withered J'im
 					i(141455),	-- Cave Skulker's Helm
 					i(141453),	-- Magic-Warped Hood
 					i(141459),	-- Manacrystal-Adorned Helmet

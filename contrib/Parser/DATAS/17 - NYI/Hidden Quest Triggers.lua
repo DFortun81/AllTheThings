@@ -434,10 +434,8 @@ _.NeverImplemented =
 		-------------------
 		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
 	--	Various tracking quests
-		q(44502),	-- Calamir loot tracking quest? Need to confirm if this or 43193 is the weekly credit
-		q(49177),	-- Sotanathor kill or bonus roll (?)
 		q(45533),	-- Legion Dungeon Reward Quest
-		q(44437),	-- Legion dungeon reward quest (Wrath of Azshara)
+		q(44437),	-- Legion Sungeon Reward quest (Wrath of Azshara)
 		q(38305),	-- Cenarius, Keeper of the Grove — unused version of quest 40122
 		q(47661),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
 		q(47699),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
@@ -461,15 +459,24 @@ _.NeverImplemented =
 		q(46775),	-- Campaign Cooldown - triggers during the legionfall campaign
 		q(47133),	-- Rare Mob Daily Bonus. Triggered after killing Doombringer Zar'thoz. Possible killID?
 		
+	-- World Boss
+		q(44901),	-- Levantus Bonus Roll
+		
+	-- Invasions
+		q(47065),	-- Highmountain Invasion / Fel Commander Erixtol Kill
+		q(47185),	-- Invasion Boss Weekly Bonus
+		
 	--	Invasion points
 	--	secondary quests trigger multiple times throughout the week (aka if you complete it on tuesday and wednesday, both official + secondary quest pop both days).
 	--	secondary quests don't seem to be tied to which boss you kill OR loot (have gotten them when receiving rep tokens, unsullied tokens, blue drops, and even just AP/a grey item).
+		
 		q(48982),	-- Invasion Point: Aurinor
 		q(49099),	-- Invasion Point: Bonich
 		q(49098),	-- Invasion Point: Cen'gar
 		q(49096),	-- Invasion Point: Naigtal
 		q(49097),	-- Invasion Point: Sangua
 		q(49091),	-- Invasion Point: Val
+		q(49177),	-- Greater Invasion Point: Sotanathor or Sotanathor Bonus Roll (?)
 		q(49213),	-- triggered upon completing Aurinor, but not the official quest.
 		q(49215),	-- triggered upon completing Bonich, but not the official quest.
 		q(49211),	-- triggered upon completing Cen'gar, but not the official quest.
@@ -485,8 +492,11 @@ _.NeverImplemented =
 		q(42285),	-- Azsuna - Treasure 029 - Nar'thalas 05 - Small — opened a treasure in Nar'thalas Academy near the Tidestone
 		q(42291),	-- Azsuna - Treasure 033 - Oceanus Cove 02 - Small — looted Small Treasure Chest inside Oceanus Cove
 		q(42297),	-- Azsuna - Treasure 039 (Large) - Mountain Top — looted treasure chest near Felwing encounter
-		q(38369),	-- 7.0 Val'sharah - Treasure 006 - Ravencourt - twh — Small Treasure Chest (39.9, 54.6)
-		q(39080),	-- 7.0 Val'sharah - Treasure 032 - Heathrow Manor - twh — Small Treasure Chest inside the cellar of Heathrow Manor
+		q(38277),	-- Val'shara Treasure: Honey Hive (46.5, 86.3, 641)
+		q(38369),	-- Val'sharah - Treasure 006 - Ravencourt - twh — Small Treasure Chest (39.9, 54.6)
+		q(38387),	-- Val'sharah - Treasure 009 - Sabermaw Bluff (44.9, 82.6, 641)
+		q(39080),	-- Val'sharah - Treasure 032 - Heathrow Manor - twh — Small Treasure Chest inside the cellar of Heathrow Manor
+		q(40491),	-- Highmountain - Treasure 084 - Thunder Totem (13.6, 55.4, 750)
 		q(49264),	-- opening a Void-Seeped Cache in Mac'Aree
 		q(48361),	-- opening a Void-Seeped Cache in Mac'Aree
 		
@@ -636,6 +646,7 @@ _.NeverImplemented =
 		q(48607),	-- Tirigarde Sound repeatable random chest
 		q(48608),	-- Tirigarde Sound repeatable random chest
 		q(48609),	-- Tirigarde Sound repeatable random chest
+		q(48612),	-- Tirigarde Sound repeatable random chest
 		q(48617),	-- Tirigarde Sound repeatable random chest
 		q(48618),	-- Tirigarde Sound repeatable random chest
 		q(48619),	-- Tirigarde Sound repeatable random chest
@@ -863,7 +874,7 @@ _.NeverImplemented =
 		q(55923),	-- Sparkqueen P'Emp first kill
 		q(55933),	-- Steel Singer Freza first kill
 		q(55931),	-- The Kleptoboss first kill
-					-- The Rusty Prince first kill
+					-- The Rusty Prince first kill -- maybe 56713
 		q(55908),	-- The Scrap King first kill
 		q(55921),	-- Uncle T'Rogg first kill
 		q(57081),	-- First Mechanized Chest of the week(Minipack: Mechagon)-- Still need to narrow down exact trigger
