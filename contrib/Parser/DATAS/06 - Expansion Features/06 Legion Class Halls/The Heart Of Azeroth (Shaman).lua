@@ -8,16 +8,16 @@ _.ExpansionFeatures =
 			["classes"] = { 7 },	-- Shaman
 			["lvl"] = 98,
 			["mapID"] = 726,
-			["groups"] = {
+			["g"] = {
 				n(103004, {	-- Puzzlemaster Lo <The Earthen Ring>
 					["description"] = "Completing all five levels of the puzzle will grant you a chest that contains the toy.\n\nBoard Design (standing on top, facing him):\n\n\n A B C D E\n F G H I J\n K L M N O\n P Q R S T\n U V W X Y\n\n\n Level 1: A, E, M, U, Y\n\n Level 2: C, K, M, O, W\n\n Level 3: B, K, L, O, V\n\n Level 4: A, E, F, G, H, I, J, K, O, Q, S, W\n\n Level 5: D, E, F, G, I, J, K, L, M, Q, R, S, U, W, X",
-					["groups"] = {
+					["g"] = {
 						i(140632),	-- Lava Fountain
 					},
 				}),
 				n(114065, {	-- Snowsong
 					["description"] = "Defeating this NPC in a pet battle awards the pet Snowfang",
-					["groups"] = {
+					["g"] = {
 						i(141530),	-- Snowfang's Trust Pet
 					},
 				}),
@@ -25,7 +25,7 @@ _.ExpansionFeatures =
 					q(46792, {	-- Gathering of the Storms
 						["lvl"] = 110,
 						["classes"] = {7},
-						["groups"] = {
+						["g"] = {
 							i(143489),	-- Raging Tempest Totem
 						},
 					}),
@@ -71,55 +71,55 @@ _.ExpansionFeatures =
 					}),
 					q(41747, {	-- Champion: Avalanchion
 						["provider"] = { "n", 106524 },	-- Avalanchion the Unbroken <Fist of the Stonemother>
-						["groups"] = {
+						["g"] = {
 							follower(615),	-- Avalanchion the Unbroken
 						},
 					}),
 					q(41745, {	-- Champion: Scaldius
 						["provider"] = { "n", 106649 },	-- Baron Scaldius <Emissary of the Firelord>
-						["groups"] = {
+						["g"] = {
 							follower(613),	-- Baron Scaldius
 						},
 					}),
 					q(41742, {	-- Champion: Celestos
 						["provider"] = { "n", 106521 },	-- Consular Celestos <Emissary of the Windlord>
-						["groups"] = {
+						["g"] = {
 							follower(610),	-- Consular Celestos
 						},
 					}),
 					q(42197, {	-- Champion: Duke Hydraxis
 						["provider"] = { "n", 106520 },	-- Duke Hydraxis <Emissary of the Waterlord>
-						["groups"] = {
+						["g"] = {
 							follower(609),	-- Duke Hydraxis
 						},
 					}),
 					q(41743, {	-- Champion: Nobundo
 						["provider"] = { "n", 106519 },	-- Farseer Nobundo <The Earthen Ring>
-						["groups"] = {
+						["g"] = {
 							follower(611),	-- Farseer Nobundo
 						},
 					}),
 					q(46057, {	-- Champion: Magatha Grimtotem
 						["provider"] = { "n", 120245 },	-- Magatha Grimtotem <Elder Crone>
-						["groups"] = {
+						["g"] = {
 							follower(992),	-- Magatha Grimtotem
 						},
 					}),
 					q(41746, {	-- Champion: Muln Earthfury
 						["provider"] = { "n", 106518 },	-- Muln Earthfury <Earthen Ring>
-						["groups"] = {
+						["g"] = {
 							follower(614),	-- Muln Earthfury
 						},
 					}),
 					q(41744, {	-- Champion: Rehgar Earthfury
 						["provider"] = { "n", 106517 },	-- Rehgar Earthfury <Hero of the Storm>
-						["groups"] = {
+						["g"] = {
 							follower(612),	-- Rehgar Earthfury
 						},
 					}),
 					q(42198, {	-- Champion: Stormcaller Mylra
 						["provider"] = { "n", 106312 },	-- Stormcaller Mylra <The Earthen Ring>
-						["groups"] = {
+						["g"] = {
 							follower(608),	-- Stormcaller Mylra
 						},
 					}),
@@ -148,7 +148,7 @@ _.ExpansionFeatures =
 				}),
 				--[[
 				n(99428, {	-- Scouting Map
-					["groups"] = {
+					["g"] = {
 						-- Blank for Class Only Missions in the future
 					},
 					["achievementID"] = 11217,
@@ -170,7 +170,7 @@ _.ExpansionFeatures =
 						}),
 						{
 							["itemID"] = 139701,		-- Helm
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
@@ -179,7 +179,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139703,		-- Shoulders
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
@@ -188,7 +188,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139698,		-- Chestpiece
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
@@ -197,7 +197,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139705,		-- Bracers
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
@@ -206,7 +206,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139700,		-- Gloves
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
@@ -215,7 +215,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139704,		-- Belt
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
@@ -224,7 +224,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139702,		-- Leggings
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
@@ -233,7 +233,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139699,		-- Boots
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)

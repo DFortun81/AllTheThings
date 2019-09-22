@@ -147,7 +147,7 @@ _.ExpansionFeatures =
 					q(41087, {	-- Storm Brew
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 32442 },	-- Impending Danger
-						["groups"] = {
+						["g"] = {
 							title(329),	-- Grandmaster %s
 							i(139731),	-- Grandmaster's Tunic
 							i(142056),	-- Arcanum of the Order

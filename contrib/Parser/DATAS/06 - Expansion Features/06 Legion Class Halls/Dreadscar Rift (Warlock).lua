@@ -10,7 +10,7 @@ _.ExpansionFeatures =
 			["maps"] = 718,	-- Dreadscar Rift (scenario version at the beginning of class campaign)
 			["lvl"] = 98,
 			["g"] = {
-				gt(366, { 	-- Demonic Offering Class Hall Ability
+				gt(366, {	-- Demonic Offering Class Hall Ability
 					["description"] = "This class hall ability allows you and two other members to summon a demon that you must kill. As part of the ritual, one of your party members (or you) will be sacrificed, so make sure to Soulstone yourself prior to summoning. Upon killing them they have a chance of dropping these items. This also has a chance to drop the destruction Hidden Appearance item.",
 					["questID"] = 42481,	-- Daily Quest
 					["lvl"] = 105,
@@ -367,95 +367,53 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
-				n(-2, {	--  Vendors
+				n(-2,  {	-- Vendors
 					n(101097, {	-- Calydus
-						["classes"] = {9},
-						["description"] = "|c808080FAThis mount is only available to warlocks who have completed|r |cFFFFD700The Wrathsteed of Xoroth|r |c808080FAquest from the class mount campaign.",
-						["sourceQuest"] = 46243,	-- The Wrathsteed of Xoroth
+						["sourceQuests"] = { 46243 },	-- The Wrathsteed of Xoroth
+						["classes"] = { 9 },	-- Warlock
 						["g"] = {
-							i(143637),	-- Hellblazing Reins of the Brimstone Wrathsteed
+							i(143637, {	-- Hellblazing Reins of the Brimstone Wrathsteed (MOUNT!)
+								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+							}),
 						},
 					}),
 					n(112434, {	-- Gigi Gigavoid <Black Harvest Quartermaster>
+						i(139768, {	-- Amice of the Black Harvest
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(143727, {	-- Champion's Salute Toy
+							["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+						}),
+						i(139769, {	-- Cinch of the Black Harvest
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139764, {	-- Gloves of the Black Harvest
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139766, {	-- Leggings of the Black Harvest
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(140945, {	-- Netherlord's Armor Kit
+							["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
+						}),
+						i(140983, {	-- Netherlord's Greater Armor Kit
+							["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
+						}),
+						i(140982, {	-- Netherlord's Lesser Armor Kit
+							["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
+						}),
 						i(140553),	-- Netherlord's Staff of Summoning
-						{
-							["itemID"] = 139765,		-- Helm
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139768,		-- Shoulders
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139767,		-- Chestpiece
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139770,		-- Bracers
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
-								}
-							},
-						},
-						{
-							["itemID"] = 139764,		-- Gloves
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139769,		-- Belt
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139766,		-- Leggings
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139763,		-- Boots
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
-								},
-							},
-						},
-						currency(1220, {	-- Order Resources
-							i(143727),	-- Champion's Salute Toy
-							i(124124),	-- Blood of Sargeras
-							i(140982),	-- Netherlord's Lesser Armor Kit
-							i(140945),	-- Netherlord's Armor Kit
-							i(140983),	-- Netherlord's Greater Armor Kit
+						i(139763, {	-- Path of the Black Harvest
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139767, {	-- Robes of the Black Harvest
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139765, {	-- Visage of the Black Harvest
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139770, {	-- Wristbands of the Black Harvest
+							["cost"] = 5000000,	-- 500g
 						}),
 					}),
 				}),

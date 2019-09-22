@@ -90,7 +90,7 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				gt(386, {	-- Teleportation Nexus
+				gt(386, {		-- Teleportation Nexus
 					["description"] = "A set of 5 portals is generated in the Class Hall; there is a small daily chance instead you will be phased to Frostfire Ridge where you can loot Everburning Crystal. You will be alerted to this chance by an emote when walking around on the stairs of your class hall.",
 					["classes"] = { 8 },
 					["maps"] = {
@@ -119,7 +119,7 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				n(-17, {	-- Quests
+				n(-17,  {		-- Quests
 					q(41141, { 	-- A Conjuror's Duty (mage class hall)
 						["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 						["classes"] = {8},
@@ -264,7 +264,7 @@ _.ExpansionFeatures =
 						i(139751),	-- Robes of Tirisgarde
 					}),
 					q(42520, {	-- A Terrible Loss
-						i(139754),	-- Bracers of Tirisgard
+						i(139754),	-- Bracers of Tirisgarde
 					}),
 					--[[ Artifact Appearance  Quests Commented Out For Now
 					q(43415, {	-- A Hero's Weapon
@@ -342,96 +342,52 @@ _.ExpansionFeatures =
 					["modelScale"] = 2.5,
 				}),
 				]]--
-				n(-2, {	--  Vendors
+				n(-2,   {		-- Vendors
 					n(112440, {	-- Jackson Watkins <Tirisgarde Quartermaster>
+						i(140939, {	-- Archmage's Armor Kit
+							["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
+						}),
 						i(140550),	-- Archmage's Battle Staff
-						{
-							["itemID"] = 139749,		-- Helm
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139752,		-- Shoulders
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139751,		-- Chestpiece
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139754,		-- Bracers
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
-								}
-							},
-						},
-						{
-							["itemID"] = 139748,		-- Gloves
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139753,		-- Belt
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139750,		-- Leggings
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139747,		-- Boots
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
-								},
-							},
-						},
-						currency(1220, {	-- Order Resources
-							i(143727),	-- Champion's Salute Toy
-							i(124124),	-- Blood of Sargeras
-							i(140970),	-- Archmage's Lesser Armor Kit
-							i(140939),	-- Archmage's Armor Kit
-							i(140971),	-- Archmage's Greater Armor Kit
+						i(140971, {	-- Archmage's Greater Armor Kit
+							["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
+						}),
+						i(140970, {	-- Archmage's Lesser Armor Kit
+							["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
+						}),
+						i(139747, {	-- Boots of Tirisgarde
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139754, {	-- Bracers of Tirisgarde
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(143727, {	-- Champion's Salute Toy
+							["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+						}),
+						i(139749, {	-- Cowl of Tirisgarde
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139753, {	-- Girdle of Tirisgarde
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139748, {	-- Gloves of Tirisgarde
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139750, {	-- Leggings of Tirisgarde
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139752, {	-- Mantle of Tirisgarde
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139751, {	-- Robes of Tirisgarde
+							["cost"] = 5000000,	-- 500g
 						}),
 					}),
 					n(103169, {	-- Uthel'nay
+						["sourceQuests"] = { 45354 },	-- Dispersion of the Discs
 						["classes"] = {8},
-						["description"] = "|c808080FAThis toy is only available to mages who have completed|r |cFFFFD700Dispersion of the Discs|r |c808080FAquest from the class mount campaign.",
-						["sourceQuest"] = 45354,	-- Dispersion of the Discs
 						["g"] = {
-							currency(1220, {	-- Order Resources
-								i(147832),	-- Magical Saucer Toy
+							i(147832, {	-- Magical Saucer Toy
+								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 							}),
 						},
 					}),

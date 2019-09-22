@@ -47,7 +47,7 @@ _.ExpansionFeatures =
 						i(141961),	-- Soul Flame of Rejuvenation
 					},
 				}),
-				n(-17, {	-- Quests
+				n(-17,  {	-- Quests
 					-- confirmed/sourced
 					q(42682, {	-- Additional Accoutrements
 						["sourceQuests"] = { 42683 },	-- Demonic Improvements
@@ -463,139 +463,97 @@ _.ExpansionFeatures =
 					["modelScale"] = 1.5,
 				}),
 				]]--
-				n(-2, {	--  Vendors
+				n(-2,   {	-- Vendors
 					n(116621, {	--Demissya Gladestrider <Illidari Provisioner's Assistant>
+						i(123960),	-- Charm of Demonic Fire
+						i(123959),	-- Demon Trophy
+						i(128950),	-- Demon-Rend Shoulderblades (A)
+						i(133311),	-- Demon-Rend Shoulderblades (H)
+						i(128956),	-- Fel-Etched Glaive
+						i(132243),	-- Fel-Etched Glaive
+						i(138970),	-- Helm of Reaffirmed Purpose (A)
+						i(141650),	-- Helm of Reaffirmed Purpose (H)
+						i(112460),	-- Illidari Band
+						i(133325),	-- Illidari Belt (A)
+						i(112453),	-- Illidari Belt (H)
+						i(133320),	-- Illidari Blindfold (A)
+						i(112450),	-- Illidari Blindfold (H)
+						i(133324),	-- Illidari Boots (A)
+						i(112457),	-- Illidari Boots (H)
+						i(133323),	-- Illidari Bracers (A)
+						i(112452),	-- Illidari Bracers (H)
+						i(112461),	-- Illidari Chain
+						i(112462),	-- Illidari Drape
+						i(133321),	-- Illidari Gloves (A)
+						i(112455),	-- Illidari Gloves (H)
+						i(133319),	-- Illidari Leggings (A)
+						i(112451),	-- Illidari Leggings (H)
+						i(112459),	-- Illidari Ring
+						i(133322),	-- Illidari Robe (A)
+						i(112454),	-- Illidari Robe (H)
+						i(133318),	-- Illidari Shoulders (A)
+						i(112456),	-- Illidari Shoulders (H)
 						i(112458),	-- Illidari Warglaive
 						i(129181),	-- Illidari Warglaive
-						i(112450),	-- Illidari Blindfold
-						i(112461),	-- Illidari Chain
-						i(112456),	-- Illidari Shoulders
-						i(112462),	-- Illidari Drape
-						i(112454),	-- Illidari Robe
-						i(112452),	-- Illidari Bracers
-						i(112455),	-- Illidari Gloves
-						i(112453),	-- Illidari Belt
-						i(112451),	-- Illidari Leggings
-						i(112457),	-- Illidari Boots
-						i(112459),	-- Illidari Ring
-						i(112460),	-- Illidari Band
-						i(123959),	-- Demon Trophy
-						i(123960),	-- Charm of Demonic 
-						i(133320),	-- Illidari Blindfold
-						i(133318),	-- Illidari Shoulders
-						i(112462),	-- Illidari Drape
-						i(133322),	-- Illidari Robe
-						i(133323),	-- Illidari Bracers
-						i(133321),	-- Illidari Gloves
-						i(133325),	-- Illidari Belt
-						i(133319),	-- Illidari Leggings
-						i(133324),	-- Illidari Boots
-						i(128955),	-- The Brood Queen's Veil
-						i(133310),	-- The Brood Queen's Veil
-						i(138970),	-- Helm of Reaffirmed Purpose
-						i(141650),	-- Helm of Reaffirmed Purpose
-						i(128950),	-- Demon-Rend Shoulderblades
-						i(133311),	-- Demon-Rend Shoulderblades
-						i(128952),	-- Torment Ender's Chestguard
-						i(133312),	-- Torment Ender's Chestguard
-						i(128947),	-- Pit Lord's Cuffs
-						i(133313),	-- Pit Lord's Cuffs
-						i(128954),	-- Power Handler's Gloves	
-						i(133314),	-- Power Handler's Gloves
-						i(128949),	-- Infernal Firecord Sash
-						i(133315),	-- Infernal Firecord Sash
-						i(128951),	-- Leggings of Sacrifice
-						i(133316),	-- Leggings of Sacrifice
-						i(128953),	-- Treads of Illidari Supremacy
-						i(133317),	-- Treads of Illidari
+						i(128949),	-- Infernal Firecord Sash (A)
+						i(133315),	-- Infernal Firecord Sash (H)
+						i(128951),	-- Leggings of Sacrifice (A)
+						i(133316),	-- Leggings of Sacrifice (H)
+						i(128947),	-- Pit Lord's Cuffs (A)
+						i(133313),	-- Pit Lord's Cuffs (H)
+						i(128954),	-- Power Handler's Gloves (A)
+						i(133314),	-- Power Handler's Gloves (H)
+						i(128955),	-- The Brood Queen's Veil (A)
+						i(133310),	-- The Brood Queen's Veil (H)
+						i(128952),	-- Torment Ender's Chestguard (A)
+						i(133312),	-- Torment Ender's Chestguard (H)
+						i(128953),	-- Treads of Illidari Supremacy (A)
+						i(133317),	-- Treads of Illidari Supremacy (H)
 						i(128944),	-- Voras' Silk Drape
-						i(128956),	-- Fel-Etched Glaive
-						i(132243),	-- Fel-Etched Flaive
 					}),
 					n(112407, {	-- Falara Nightsong <Illidari Provisioner>
 						["description"] = "|c808080FAIn order to purchase the toy|r |c00FF96AFTiny Set of Warglaives|r|c808080FA, you must have completed the class mount quest|r |cFFFFD700To Fel and Black|r|c808080FA.\n|c808080FAOnce completed you have to unlock all 52 traits on either spec to be able purchase it.|r",
 						["g"] = {
-							i(147537), 	-- A Tiny Set of Warglaives Toy
+							i(147537, {	-- A Tiny Set of Warglaives (TOY!)
+								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+							}),
+							i(139721, {	-- Belt of the Shattered Abyss
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139716, {	-- Boots of the Shattered Abyss
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139719, {	-- Breeches of the Shattered Abyss
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(143727, {	-- Champion's Salute (TOY!)
+								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+							}),
+							i(139717, {	-- Gloves of the Shattered Abyss
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139718, {	-- Helm of the Shattered Abyss
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(140936, {	-- Slayer's Armor Kit
+								["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
+							}),
+							i(140965, {	-- Slayer's Greater Armor Kit
+								["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
+							}),
+							i(140964, {	-- Slayer's Lesser Armor Kit
+								["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
+							}),
 							i(133670),  -- Slayer's Tabard
+							i(139720, {	-- Spaulders of the Shattered Abyss
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139715, {	-- Vest of the Shattered Abyss
+								["cost"] = 5000000,	-- 500g
+							}),
 							i(140560),	-- Warglaive of the Fel Hammer
-							{
-								["itemID"] = 139718,		-- Helm
-								["g"] = {
-									{
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
-									},
-								},
-							},
-							{
-								["itemID"] = 139720,		-- Shoulders
-								["g"] = {
-									{
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
-									},
-								},
-							},
-							{
-								["itemID"] = 139715,		-- Chestpiece
-								["g"] = {
-									{
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
-									},
-								},
-							},
-							{
-								["itemID"] = 139722,		-- Bracers
-								["g"] = {
-									{
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
-									}
-								},
-							},
-							{
-								["itemID"] = 139717,		-- Gloves
-								["g"] = {
-									{
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
-									},
-								},
-							},
-							{
-								["itemID"] = 139721,		-- Belt
-								["g"] = {
-									{
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
-									},
-								},
-							},
-							{
-								["itemID"] = 139719,		-- Leggings
-								["g"] = {
-									{
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
-									},
-								},
-							},
-							{
-								["itemID"] = 139716,		-- Boots
-								["g"] = {
-									{
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
-									},
-								},
-							},
-							currency(1220, {	-- Order Resources
-								i(143727),	-- Champion's Salute Toy
-								i(124124),	-- Blood of Sargeras
-								i(140964),	-- Slayer's Lesser Armor Kit
-								i(140936),	-- Slayer's Armor Kit
-								i(140965),	-- Slayer's Greater Armor Kit
+							i(139722, {	-- Wristwraps of the Shattered Abyss
+								["cost"] = 5000000,	-- 500g
 							}),
 						},
 					}),	

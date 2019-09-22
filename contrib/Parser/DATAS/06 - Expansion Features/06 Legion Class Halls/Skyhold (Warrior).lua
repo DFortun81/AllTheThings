@@ -8,14 +8,14 @@ _.ExpansionFeatures =
 			["classes"] = { 1 },	-- Warrior
 			["lvl"] = 98,
 			["mapID"] = 695,	-- Skyhold (Warrior)
-			["groups"] = {
+			["g"] = {
 				gt(408, {	-- For Honor and Glory
 					i(141069, {	-- Skyhold Chest of Riches
 						["lvl"] = 103,
 						["questID"] = 43763,	-- Chest of Riches Weekly Lockout
 						["classes"]  = {1},
 						["description"] = "\nThe chests spawn every 3 hours in the Arena of Glory, starting at 0:00 Realm Time or 02:00 Realm Time if Daylight Savings Time is active. You must research the 2nd tier order hall upgrade |cFFFFD700For Honor and Glory|r from Einar the Runecaster to see the chest. You can only loot it once per week.\n\nIt can contain the Fury Hidden Appearance items, however, you're better off gathering those items from their respective sources in the outdoor world due to the number of Warriors going for the toy. (IE: Do not open this chest if you already have the toy)",
-						["groups"] = {
+						["g"] = {
 							i(140160),	-- Stormforged Vrykul Horn
 							i(140161),	-- Hargal's Favorite Trinket
 							i(141071),	-- Badge of Honor
@@ -26,7 +26,7 @@ _.ExpansionFeatures =
 				n(97389, {	-- Eye of Odin
 					["achievementID"] = 11217,
 					["modelScale"] = 4,
-					["groups"] = {
+					["g"] = {
 						-- Blank for Class Only Missions in the future
 					},
 				}),
@@ -34,7 +34,7 @@ _.ExpansionFeatures =
 				n(-17, {	-- Quests
 					i(144436, {	-- Lost Legend of Odyn
 						["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
-						["groups"] = {
+						["g"] = {
 							q(46223, {	-- Odyn Lore Unlock 1
 								["description"] = "Great Odyn and the Firelord",
 							}),
@@ -57,7 +57,7 @@ _.ExpansionFeatures =
 					}),
 					i(144437, {	-- Lost Legend of the Valarjar
 						["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
-						["groups"] = {
+						["g"] = {
 							q(46229, {	-- Valarjar Lore Unlock 1
 								["description"] = "His Name Is Dragonblood",
 							}),
@@ -81,7 +81,7 @@ _.ExpansionFeatures =
 					q(43643, {	-- Secrets of the Axes
 						["description"] = "Every day, there is a chance that speaking to Master Smith Helgar will offer a dialogue option, \"Is there an axe the equal to Strom'kar?\", which will end with being offered the quest Secrets of the Axes. When this quest is active, it is active region-wide, and everyone will have access to it for that day.\n\nThis sends you to speak to High Overlord Saurfang at Krasus' Landing in Dalaran. When done, jump back up to Skyhold and speak again to Master Smith Helgar, who will send you to the Circle of Wills to duel Saurfang.",
 						["provider"] = { "n", 96586 },	-- Master Smith Helgar
-						["groups"] = {
+						["g"] = {
 							i(139578, {	-- The Arcanite Bladebreaker
 								artifact(908),	-- Arms Warrior Hidden Artifact Skin
 							}),
@@ -201,63 +201,63 @@ _.ExpansionFeatures =
 					--Followers Sort later
 					q(42616, {	-- Champion: Dvalen Ironrune
 						["provider"] = { "n", 112766 },	-- Dvalen Ironrune
-						["groups"] = {
+						["g"] = {
 							follower(714),	-- Dvalen Ironrune
 						},
 					}),
 					q(42606, {	-- Champion: Finna Bjornsdottir
 						["provider"] = { "n", 107985 },	-- Finna Bjornsdottir
-						["groups"] = {
+						["g"] = {
 							follower(709),	-- Finna Bjornsdottir
 						},
 					}),
 					q(42619, {	-- Champion: Hodir
 						["provider"] = { "n", 113583 },	-- Hodir
-						["groups"] = {
+						["g"] = {
 							follower(715),	-- Hodir
 						},
 					}),
 					q(42204, {	-- Jorhuttam
 						["provider"] = { "n", 106271 },	-- Jarum Skymane
-						["groups"] = {
+						["g"] = {
 							follower(711),	-- Hymdall
 						},
 					}),
 					q(43604, {	-- Maw of Souls: Ymiron's Broken Blade
 						--["provider"] = { "n",  },	-- Autoaccept while on the chain
-						["groups"] = {
+						["g"] = {
 							follower(712),	-- King Ymiron
 						},
 					}),
 					q(45876, {	-- Champion: Lord Darius Crowley
 						["provider"] = { "n", 117480 },	-- Lord Darius Crowley
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
+						["g"] = {
 							follower(989),	-- Lord Darius Crowley / Eitrigg
 						},
 					}),
 					q(45873, {	-- Champion: Eitrigg
 						["provider"] = { "n", 117479 },	-- Eitrigg
 						["races"] = HORDE_ONLY,
-						["groups"] = {
+						["g"] = {
 							follower(989),	-- Lord Darius Crowley / Eitrigg
 						},
 					}),
 					q(42605, {	-- Champion: Ragnvald Drakeborn
 						["provider"] = { "n", 107984 },	-- Ragnvald Drakeborn
-						["groups"] = {
+						["g"] = {
 							follower(708),	-- Ragnvald Drakeborn
 						},
 					}),
 					q(42614, {	-- Champion: Svergan Stormcloak
 						["provider"] = { "n", 107986 },	-- Svergan Stormcloak
-						["groups"] = {
+						["g"] = {
 							follower(710),	-- Svergan Stormcloak
 						},
 					}),
 					q(42618, {	-- Champion: Thorim
 						["provider"] = { "n", 112765 },	-- Thorim
-						["groups"] = {
+						["g"] = {
 							follower(713),	-- Thorim
 						},
 					}),
@@ -269,7 +269,7 @@ _.ExpansionFeatures =
 						i(140557),	-- Skyhold Quickblade
 						{
 							["itemID"] = 139684,		-- Helm
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
@@ -278,7 +278,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139686,		-- Shoulders
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
@@ -287,7 +287,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139681,		-- Chestpiece
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
@@ -296,7 +296,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139688,		-- Bracers
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
@@ -305,7 +305,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139683,		-- Gloves
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
@@ -314,7 +314,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139687,		-- Belt
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
@@ -323,7 +323,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139685,		-- Leggings
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
@@ -332,7 +332,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139682,		-- Boots
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)

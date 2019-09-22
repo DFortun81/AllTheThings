@@ -8,11 +8,11 @@ _.ExpansionFeatures =
 			["classes"] = { 11 },	-- Druid
 			["lvl"] = 98,
 			["mapID"] = 747,	-- The Dreamgrove (Druid)
-			["groups"] = {
+			["g"] = {
 				o(253161, {	-- Grove Vine
 					["classes"] = {11},
 					["description"] = "|c808080FAThese pets are obtained by picking them from the|r |cFFFFD700Evergreen|r |c808080FAclass hall ability that druids get on Tier 2.\nOnce the ability is learned you will gain access to two plots where you grow plants every three days and it will randomly pick amongst six plots.  When Grove Vine spawns it has a chance for these two pets.|r",
-					["groups"] = {
+					["g"] = {
 						i(139554, {	-- Acorn of the Endless
 							artifact(62),	-- Restoration Druid Hidden Artifact Appearance
 						}),
@@ -39,7 +39,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 106299 },	-- Thisalee Crow
 							["sourceQuests"] = { 46318 },	-- Defense of Aviana
 							["classes"] = {11},
-							["groups"] = {
+							["g"] = {
 								{
 									["itemID"] = 143638, 
 									["mountID"] = 231437, 
@@ -182,7 +182,7 @@ _.ExpansionFeatures =
 					q(41918),	-- The Dreamer Returns
 				--[[
 					q(46319, {	-- You Can't Take the Sky from Me
-						["groups"] = {
+						["g"] = {
 							{ ["itemID"] = 143638, ["mountID"] = 231437, ["questID"] = 46319 },	-- Moon-Kissed Feather
 						},
 						["lvl"] = 110,
@@ -224,62 +224,62 @@ _.ExpansionFeatures =
 					--Followers Sort later
 					q(42047, {	-- Champion: Hamuul Runetotem
 						["provider"] = { "n", 107025 },	-- Archdruid Hamuul Runetotem
-						["groups"] = {
+						["g"] = {
 							follower(643),	-- Archdruid Hamuul Runetotem
 						},
 					}),
 					q(43368, {	-- Champion: Brightwing
 						["provider"] = { "n", 98008 },		-- Brightwing
-						["groups"] = {
+						["g"] = {
 							follower(645),	-- Brightwing
 						},
 					}),
 					q(42038, {	-- Champion: Broll Bearmantle
 						["provider"] = { "n", 106091 },	-- Broll Bearmantle
-						["groups"] = {
+						["g"] = {
 							follower(641),	-- Broll Bearmantle
 						},
 					}),
 					q(42056, {	-- Champion: Remulos
 						["provider"] = { "n", 103832 },	-- Keeper Remulos
-						["groups"] = {
+						["g"] = {
 							follower(646),	-- Keeper Remulos
 						},
 					}),
 					q(42048, {	-- Champion: Mylune
 						["provider"] = { "n", 107026 },	-- Mylune
-						["groups"] = {
+						["g"] = {
 							follower(644),	-- Mylune
 						},
 					}),
 					q(42096, {	-- Champion: Naralex
 						["provider"] = { "n", 103778 },	-- Naralex
-						["groups"] = {
+						["g"] = {
 							follower(639),	-- Naralex
 						},
 					}),
 					q(42039, {	-- Champion: Sylendra Gladesong
 						["provider"] = { "n", 106093 },	-- Sylendra Gladesong
-						["groups"] = {
+						["g"] = {
 							follower(642),	-- Sylendra Gladesong
 						},
 					}),
 					q(46044, {	-- Champion: Thisalee Crow
 						["provider"] = { "n", 106299 },	-- Thisalee Crow
-						["groups"] = {
+						["g"] = {
 							follower(999),	-- Thisalee Crow
 						},
 					}),
 					q(40650, {	-- Champion: Zen'tabra
 						["provider"] = { "n", 98013 },		-- Zen'tabra
-						["groups"] = {
+						["g"] = {
 							follower(640),	-- Zen'tabra
 						},
 					}),
 				}),
 				--[[
 				n(98000, {	-- Scouting Map
-					["groups"] = {
+					["g"] = {
 						-- Blank for Class Only Missions in the future
 					},
 					["achievementID"] = 11217,
@@ -293,7 +293,7 @@ _.ExpansionFeatures =
 						i(140549),	-- Pillar of the Dreamgrove
 						{
 							["itemID"] = 139726,		-- Helm
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
@@ -302,7 +302,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139728,		-- Shoulders
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
@@ -311,7 +311,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139723,		-- Chestpiece
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
@@ -320,7 +320,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139730,		-- Bracers
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
@@ -329,7 +329,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139725,		-- Gloves
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
@@ -338,7 +338,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139729,		-- Belt
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
@@ -347,7 +347,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139727,		-- Leggings
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
@@ -356,7 +356,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139724,		-- Boots
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
@@ -394,7 +394,7 @@ _.ExpansionFeatures =
 				}),
 				m(715, {	-- Emerald Dreamway
 					["icon"] = "Interface\\Icons\\spell_arcane_portalshattrath",	-- Dream Portal Icon
-					["groups"] = {
+					["g"] = {
 						n(-17, {	-- Quests
 							{	-- Communing With Malorne
 								["questID"] = 42045,
@@ -408,7 +408,7 @@ _.ExpansionFeatures =
 							["questID"] = 44326,	-- "daily dreamway event roll" on WoWHead
 							["description"] = "If this quest has a checkmark next to it, then check below which stone is active. If none of them are checked, that means that none of the owlcat stones can be interacted with today and that you should come back tomorrow.",
 							["icon"] = "Interface\\Icons\\inv_misc_druidstone04",
-							["groups"] = {
+							["g"] = {
 								n(-130, {	-- Duskwood Active
 									["isDaily"] = true,
 									["isBreadcrumb"] = true,
@@ -456,7 +456,7 @@ _.ExpansionFeatures =
 						n(113663, {	-- Ela'lothen <The Moonspirit>
 							["description"] = "Turn on \"Show Incomplete Quests\" to see which stones you are still missing.  Each quest has a descripton added to it on it's location.\n\nOnce all 3 of the Owlcat stones are activated, you will be able to see Ela'lothen. Type /sit at him for the Feather of the Moonspirit to appear in your inventory.",
 							["sourceQuests"] = { 44330, 44331, 44332 },	-- 
-							["groups"] = {
+							["g"] = {
 								i(139552, {	-- Feather of the Moonspirit
 									artifact(830),	-- Feral Druid Hidden Artifact Appearance
 								}),

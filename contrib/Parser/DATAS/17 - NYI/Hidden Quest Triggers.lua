@@ -562,6 +562,9 @@ _.NeverImplemented =
 		q(57096),	-- 
 		]]--
 		
+	--	VARIOUS
+		q(54411),	-- triggers when speaking with Zidormi in Darkshore to travel back in time
+		
 	--	INCURSIONS
 		-- all 3 'secret supply chest' quests trigger at once.  possibly for 3 potential chests in the zone?  not sure why horde/alliance would have one shared quest and two different quests, though.
 		q(54720),	-- Zuldazar Secret Supply Chest (playing as Horde)

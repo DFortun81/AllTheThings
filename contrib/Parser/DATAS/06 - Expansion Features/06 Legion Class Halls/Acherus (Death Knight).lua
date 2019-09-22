@@ -11,22 +11,21 @@ _.ExpansionFeatures =
 				648,	-- Acherus: The Ebon Hold (Death Knight) (Lower Level)
 			},
 			["lvl"] = 98,
-			["groups"] = {
+			["g"] = {
 				n(-17, {	-- Quests
-					{
-						["npcID"] = 111093,	-- Stitchwork
+					n(111093, {	-- Stitchwork
 						["questID"] = 44188,	-- Hidden Tracking
 						["classes"] = { 6 },	-- Death Knight Only!
 						["maps"] = { 186, 187, 188, 189, 190, 191, 192, 193 },	-- Icecrown Citadel
 						["lvl"] = 110,
 						["collectible"] = false,
 						["description"] = "\"Professor Putricide's Lost Journal\" drops from ghouls summoned by your Apocalypse or Army of the Dead spells anywhere in the world. If this is checked off as completed, you will be eligible to enter the trap door in Putricide's room under the Green Slime Pipe. You do not have to interact with the book to be eligible.",
-						["groups"] = {
+						["g"] = {
 							i(139548, {	-- The Bonereaper's Hook
 								artifact(404),	-- Find Hidden Artifact Skin
 							}),
 						},
-					},
+					}),
 					q(46813, {	-- The Lost Glacier
 						i(142231),	-- Decaying Reins of the Vilebrood Vanquisher
 					}),
@@ -42,190 +41,158 @@ _.ExpansionFeatures =
 					--Followers Sort Later
 					q(44247, {	-- Champion: Amal'thazad
 						["provider"] = { "n", 93555 },		-- Amal'thazad
-						["groups"] = {
+						["g"] = {
 							follower(854),	-- Amal'thazad
 						},
 					}),
 					q(44245, {	-- Champion: High Inquisitor Whitemane
 						["provider"] = { "n", 113481 },	-- High Inquisitor Whitemane
-						["groups"] = {
+						["g"] = {
 							follower(839),	-- High Inquisitor Whitemane
 						},
 					}),
 					q(44248, {	-- Champion: Darion Mograine
 						["provider"] = { "n", 113695 },	-- Highlord Darion Mograine
-						["groups"] = {
+						["g"] = {
 							follower(855),	-- Highlord Darion Mograine
 						},
 					}),
 					q(44244, {	-- Champion: Koltira Deathweaver
 						["provider"] = { "n", 93453 },		-- Koltira Deathweaver
-						["groups"] = {
+						["g"] = {
 							follower(599),	-- Koltira Deathweaver
 						},
 					}),
 					q(46050, {	-- Champion: Minerva Ravensorrow
 						["provider"] = { "n", 95900 },		-- Minerva Ravensorrow
-						["groups"] = {
+						["g"] = {
 							follower(1003),	-- Minerva Ravensorrow
 						},
 					}),
 					q(39818, {	-- Champion: Nazgrim
 						["provider"] = { "n", 108975 },	-- Rottgut
-						["groups"] = {
+						["g"] = {
 							follower(586),	-- Nazgrim
 						},
 					}),
 					q(44246, {	-- Champion: Rottgut
 						--["provider"] = { "n",  },		-- Cant find QG
-						["groups"] = {
+						["g"] = {
 							follower(853),	-- Rottgut
 						},
 					}),
 					q(39816, {	-- Champion: Thassarian
 						--["provider"] = { "n",  },		-- Cant find QG
-						["groups"] = {
+						["g"] = {
 							follower(584),	-- Thassarian
 						},
 					}),
 					q(44243, {	-- Champion: Thoras Trollbane
 						["provider"] = { "n", 113419 },	-- King Thoras Trollbane
-						["groups"] = {
+						["g"] = {
 							follower(838),	-- Thoras Trollbane
 						},
 					}),
 				}),
 				--[[
 				n(97379, {	-- Scouting Map
-					["groups"] = {
+					["g"] = {
 						-- Blank for Class Only Missions in the future
 					},
 					["achievementID"] = 11217,
 					["modelScale"] = 1.95,
 				}),
 				]]--
-				n(-2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					n(93550, {	-- Quartermaster Ozorg
-						i(40775),	-- Winged Steed of the Ebon Blade Mount
-						i(136796, {	-- Necrophile Tome: Corpse Exploder
-							["spellID"] = 127344,	-- Corpse Exploder
-						}),
-						i(140538),	-- Broadaxe of the Ebon Blade
-						i(140554),	-- Warsword of the Ebon Blade
-						{
-							["itemID"] = 139676,		-- Helm
-							["groups"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139678,		-- Shoulders
-							["groups"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139673,		-- Chestpiece
-							["groups"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139680,		-- Bracers
-							["groups"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
-								}
-							},
-						},
-						{
-							["itemID"] = 139675,		-- Gloves
-							["groups"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139679,		-- Belt
-							["groups"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139677,		-- Leggings
-							["groups"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139674,		-- Boots
-							["groups"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
-								},
-							},
-						},
-						i(38633),	-- Greataxe of the Ebon Blade
-						i(38632),	-- Greatsword of the Ebon Blade
-						i(34661),	-- Massacre Sword
-						i(38707),	-- Runed Spellblade
+						i(34649),	-- Archerus Knight's Gauntlets
+						i(34651),	-- Archerus Knight's Girdle
+						i(34648),	-- Archerus Knight's Greaves
 						i(34652),	-- Archerus Knight's Hood
+						i(34656),	-- Archerus Knight's Legplates
 						i(34655),	-- Archerus Knight's Pauldrons
 						i(34659),	-- Archerus Knight's Shroud
 						i(34650),	-- Archerus Knight's Tunic
 						i(34653),	-- Archerus Knight's Wristguard
-						i(34649),	-- Archerus Knight's Gauntlets
-						i(34651),	-- Archerus Knight's Girdle
-						i(34656),	-- Archerus Knight's Legplates
-						i(34648),	-- Archerus Knight's Greaves
-						i(34657),	-- Choker of Damnation
-						i(34658),	-- Plague Band
-						i(38147),	-- Corrupted Band
-						i(38661),	-- Greathelm of the Scourge Champion
+						i(38662),	-- Bladed Ebon Amulet
 						i(38663),	-- Blood-Soaked Saronite Plated Spaulders
+						i(38667),	-- Bloodbane's Gauntlets of Command
+						i(140538),	-- Broadaxe of the Ebon Blade
+						i(143727, {	-- Champion's Salute (TOY!)
+							["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+						}),
+						i(34657),	-- Choker of Damnation
+						i(38147),	-- Corrupted Band
+						i(140935, {	-- Deathlord's Armor Kit
+							["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
+						}),
+						i(139680, {	-- Deathlord's Bracers
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139673, {	-- Deathlord's Chestguard
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139675, {	-- Deathlord's Gauntlets
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139679, {	-- Deathlord's Girdle
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139674, {	-- Deathlord's Greatboots
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(140963, {	-- Deathlord's Greater Armor Kit
+							["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
+						}),
+						i(139676, {	-- Deathlord's Helm
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139677, {	-- Deathlord's Legguards
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(140962, {	-- Deathlord's Lesser Armor Kit
+							["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
+						}),
+						i(139678, {	-- Deathlord's Mantle
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(38669),	-- Engraved Saronite Legplates
+						i(38633),	-- Greataxe of the Ebon Blade
+						i(38661),	-- Greathelm of the Scourge Champion
+						i(38632),	-- Greatsword of the Ebon Blade
+						i(38670),	-- Greaves of the Slaughter
+						i(38672),	-- Keleseth's Signet Ring
+						i(34661),	-- Massacre Sword
+						i(136796, {	-- Necrophile Tome: Corpse Exploder
+							["spellID"] = 127344,	-- Corpse Exploder
+						}),
+						i(34658),	-- Plague Band
+						i(38666),	-- Plated Saronite Bracers
+						i(38707),	-- Runed Spellblade
+						i(38665),	-- Saronite War Plate
 						i(39322),	-- Shroud of the North Wind
+						i(38675),	-- Signet of the Dark Brotherhood
 						i(39320),	-- Sky Darkener's Shroud of Blood
 						i(38664),	-- Sky Darkener's Shroud of the Unholy
-						i(38665),	-- Saronite War Plate
-						i(38666),	-- Plated Saronite Bracers
-						i(38667),	-- Bloodbane's Gauntlets of Command
+						i(38674),	-- Soul Harvester's Charm
 						i(38668),	-- The Plaguebringer's Girdle
-						i(38669),	-- Engraved Saronite Legplates
-						i(38670),	-- Greaves of the Slaughter
-						currency(1220, {	-- Order Resources
-							i(143727),	-- Champion's Salute Toy
-							i(124124),	-- Blood of Sargeras
-							i(140962),	-- Deathlord's Lesser Armor Kit
-							i(140935),	-- Deathlord's Armor Kit
-							i(140963),	-- Deathlord's Greater Armor Kit
+						i(38671),	-- Valanar's Signet Ring
+						i(140554),	-- Warsword of the Ebon Blade
+						i(40775, {	-- Winged Steed of the Ebon Blade (MOUNT!)
+							["cost"] = 10000000,	-- 1,000g
 						}),
 					}),
 					n(121752, {	-- Slimy
 						["sourceQuest"] = 46813,	-- The Lost Glacier
-						["groups"] = {
-							currency(1220, {	-- Order Resources
-								i(147539),	-- Bloodbrood Whelpling (PET!)
-								i(147540),	-- Frostbrood Whelpling (PET!)
-								i(147541),	-- Vilebrood Whelpling (PET!)
+						["g"] = {
+							i(147539, {	-- Bloodbrood Whelpling (PET!)
+								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+							}),
+							i(147540, {	-- Frostbrood Whelpling (PET!)
+								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+							}),
+							i(147541, {	-- Vilebrood Whelpling (PET!)
+								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 							}),
 						},
 					}),

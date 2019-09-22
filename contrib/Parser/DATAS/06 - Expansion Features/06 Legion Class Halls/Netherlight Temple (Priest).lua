@@ -420,81 +420,46 @@ _.ExpansionFeatures =
 					}),
 					--]]
 				}),
-				n(-2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					n(112401, {	-- Meridelle Lightspark <Logistics>
 						["coord"] = { 39.0, 24.6, 702 },
 						["g"] = {
-							i(140552),	-- Netherlight Spire
-							i(139757, {	-- Miter of the High Priest
-								["g"] = {
-									{	-- Class Hall Helm Earned (A Classy Outfit)
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
-									},
-								},
-							}),
-							i(139760, {	-- Spaulders of the High Priest
-								["g"] = {
-									{	-- Class Hall Shoulders Earned (A Classy Outfit)
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
-									},
-								},
-							}),
-							i(139759, {	-- Robes of the High Priest
-								["g"] = {
-									{	-- Class Hall Chestpiece Earned (A Classy Outfit)
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
-									},
-								},
-							}),
 							i(139762, {	-- Bracers of the High Priest
-								["g"] = {
-									{	-- Class Hall Bracers Earned (A Classy Outfit)
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
-									}
-								},
+								["cost"] = 5000000,	-- 500g
 							}),
-							i(139756, {	-- Gloves of the High Priest
-								["g"] = {
-									{	-- Class Hall Gloves Earned (A Classy Outfit)
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
-									},
-								},
+							i(143727, {	-- Champion's Salute (TOY!)
+								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 							}),
 							i(139761, {	-- Cord of the High Priest
-								["g"] = {
-									{	-- Class Hall Belt Earned (A Classy Outfit)
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
-									},
-								},
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139756, {	-- Gloves of the High Priest
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(140942, {	-- High Priest's Armor Kit
+								["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
+							}),
+							i(140977, {	-- High Priest's Greater Armor Kit
+								["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
+							}),
+							i(140976, {	-- High Priest's Lesser Armor Kit
+								["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
 							}),
 							i(139758, {	-- Leggings of the High Priest
-								["g"] = {
-									{	-- Class Hall Leggings Earned (A Classy Outfit)
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
-									},
-								},
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139757, {	-- Miter of the High Priest
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(140552),	-- Netherlight Spire
+							i(139759, {	-- Robes of the High Priest
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139760, {	-- Spaulders of the High Priest
+								["cost"] = 5000000,	-- 500g
 							}),
 							i(139755, {	-- Steps of the High Priest
-								["g"] = {
-									{	-- Class Hall Boots Earned (A Classy Outfit)
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
-									},
-								},
-							}),
-							currency(1220, {	-- Order Resources
-								i(143727),	-- Champion's Salute Toy
-								i(124124),	-- Blood of Sargeras
-								i(140976),	-- High Priest's Lesser Armor Kit
-								i(140942),	-- High Priest's Armor Kit
-								i(140977),	-- High Priest's Greater Armor Kit
+								["cost"] = 5000000,	-- 500g
 							}),
 						},
 					}),

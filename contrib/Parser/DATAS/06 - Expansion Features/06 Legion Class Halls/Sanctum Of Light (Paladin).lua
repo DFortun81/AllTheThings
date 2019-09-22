@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 			cl(2, {	-- Sanctum of Light (Paladin)
 				["classes"] = { 2 },	-- Paladin
 				["lvl"] = 98,
-				["groups"] = {
+				["g"] = {
 					n(-17, {	-- Quests
 						--[[
 						q(43424),	-- A Hero's Weapon
@@ -88,7 +88,7 @@ _.ExpansionFeatures =
 						q(45770, {	-- Stirring in the Shadows
 							["lvl"] = 110,
 							["classes"] = {2},
-							["groups"] = {
+							["g"] = {
 								i(143502),	-- Highlord's Golden Charge
 							},
 						}),
@@ -104,7 +104,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 							["description"] = "You must have the Shard of Darkness in your inventory in order for him to give you this quest. Once you have it, go to the Legion version of Acherus: The Ebon Hold using the Dalaran flight master.",
 							["sourceQuests"] = { 43685 },	-- Phylactery Used
-							["groups"] = {
+							["g"] = {
 								i(139566, {	-- Heart of Corruption
 									artifact(865),	-- Retribution Hidden Artifact Appearance
 								}),
@@ -119,80 +119,80 @@ _.ExpansionFeatures =
 						--Followers  Sort to other quests later.
 						q(43492, {	-- Champion: Aponi Brightmane
 							["provider"] = { "n", 90251 },		-- Aponi Brightmane <Sunwalker Chieftain>
-							["groups"] = {
+							["g"] = {
 								follower(757),	-- Aponi Brightmane
 							},
 						}),
 						q(43785, {	-- Champion: Arator the Redeemer
 							["provider"] = { "n", 99997 },		-- Arator the Redeemer
-							["groups"] = {
+							["g"] = {
 								follower(758),	-- Arator the Redeemer
 							},
 						}),
 						q(43933, {	-- Champion: Delas Moonfang
 							["provider"] = { "n", 113299 },	-- Delas Moonfang <Priestess of the Moon>
-							["groups"] = {
+							["g"] = {
 								follower(756),	-- Delas Moonfang
 							},
 						}),
 						q(42852, {	-- Champion: Justicar Julia Celeste
 							["provider"] = { "n", 99995 },		-- Justicar Julia Celeste
-							["groups"] = {
+							["g"] = {
 								follower(755),	-- Justicar Julia Celeste
 							},
 						}),
 						q(42881, {	-- Champion: Lady Liadrin
 							["provider"] = { "n", 92346 },		-- Lady Liadrin <Blood Knight Matriarch>
-							["groups"] = {
+							["g"] = {
 								follower(478),	-- Lady Liadrin
 							},
 						}),
 						q(39696, {	-- Rise, Champions
 							["provider"] = { "n", 90259 },		-- Lord Maxwell Tyrosus
-							["groups"] = {
+							["g"] = {
 								follower(480),	-- Lord Maxwell Tyrosus
 							},
 						}),
 						q(43701, {	-- Champion: Lothraxion
 							["provider"] = { "n", 109105 },	-- Lothraxion <High Commander>
-							["groups"] = {
+							["g"] = {
 								follower(759),	-- Lothraxion
 							},
 						}),
 						q(45813, {	-- Where Art Thou, My Sweet
 							["provider"] = { "n", 118088 },	-- Maximillian of Northshire <Knight-Errant>
-							["groups"] = {
+							["g"] = {
 								follower(1001),	-- Maximillian of Northshire
 							},
 						}),
 						q(46045, {	-- Champion: Nerus Moonfang
 							["provider"] = { "n", 119545 },	-- Nerus Moonfang
-							["groups"] = {
+							["g"] = {
 								follower(1000),	-- Nerus Moonfang
 							},
 						}),
 						q(42851, {	-- Champion: Vindicator Boros
 							["provider"] = { "n", 94175 },		-- Vindicator Boros <Triumvirate of the Hand>
-							["groups"] = {
+							["g"] = {
 								follower(479),	-- Vindicator Boros
 							},
 						}),
 					}),
 					--[[
 					n(93787, {	-- Scouting Map
-						["groups"] = {
+						["g"] = {
 							-- Blank for Class Only Missions in the future
 						},
 						["achievementID"] = 11217,
 						["modelScale"] = 2.5,
 					}),
 					]]--
-					n(-2, {	--  Vendors
+					n(-2,  {	-- Vendors
 						n(99976, {	--  Crusader Lord Dalfors
 							["classes"] = {2},
 							["description"] = "|c808080FAThese mounts are only available to paladins who have completed|r |cFFFFD700Stirring in the Shadows|r |c808080FAquest from the class mount campaign.",
 							["sourceQuest"] = 45770,	-- Stirring in the Shadows
-							["groups"] = {
+							["g"] = {
 								currency(1220, {	-- Order Resources
 									i(143503),	-- Harsh Reins of the Vengeful Charger
 									i(143505),	-- Heraldic Reins of the Valorous Charger
@@ -214,7 +214,7 @@ _.ExpansionFeatures =
 							i(140547),	-- Warhammer of the Silver Hand
 							{
 								["itemID"] = 139693,		-- Helm
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 										["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
@@ -223,7 +223,7 @@ _.ExpansionFeatures =
 							},
 							{
 								["itemID"] = 139695,		-- Shoulders
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 										["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
@@ -232,7 +232,7 @@ _.ExpansionFeatures =
 							},
 							{
 								["itemID"] = 139690,		-- Chestpiece
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 										["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
@@ -241,7 +241,7 @@ _.ExpansionFeatures =
 							},
 							{
 								["itemID"] = 139697,		-- Bracers
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 										["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
@@ -250,7 +250,7 @@ _.ExpansionFeatures =
 							},
 							{
 								["itemID"] = 139692,		-- Gloves
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 										["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
@@ -259,7 +259,7 @@ _.ExpansionFeatures =
 							},
 							{
 								["itemID"] = 139696,		-- Belt
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 										["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
@@ -268,7 +268,7 @@ _.ExpansionFeatures =
 							},
 							{
 								["itemID"] = 139694,		-- Leggings
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 										["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
@@ -277,7 +277,7 @@ _.ExpansionFeatures =
 							},
 							{
 								["itemID"] = 139691,		-- Boots
-								["groups"] = {
+								["g"] = {
 									{
 										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 										["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
@@ -294,7 +294,7 @@ _.ExpansionFeatures =
 						}),		
 						n(91190, {	-- Sister Elda <Keeper of the Ancient Tomes>
 							["description"] = "Your spec must be Retribution for her to respond to your books. Bring both of the books to her and she'll give you the completed book to use in the next part.",
-							["groups"] = {
+							["g"] = {
 								i(139620, {	-- A Complete Copy of "Nat Pagle's Guide to Extreme Anglin'."
 									i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
 										["description"] = "Looted from A Dusty Tome in Dire Maul.",

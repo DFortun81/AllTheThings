@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 			["classes"] = { 3 },	-- Hunter
 			["lvl"] = 98,
 			["mapID"] = 739,
-			["groups"] = {
+			["g"] = {
 				n(-228, {	-- Flight Paths
 					fp(1760, {	-- Trueshot Lodge, Highmountain
 						["coord"] = { 36.0, 27.8 },
@@ -134,7 +134,7 @@ _.ExpansionFeatures =
 					q(46337, {	-- Night of the Wilds
 						["lvl"] = 110,
 						["classes"] = {3},
-						["groups"] = {
+						["g"] = {
 							{ ["mountID"] = 229386 },	-- Huntmaster's Loyal Wolfhawk
 						},
 					}),
@@ -152,55 +152,55 @@ _.ExpansionFeatures =
 					--Followers  Sort to other quests later
 					q(42414, {	-- Champion: Addie Fizzlebog
 						["provider"] = { "n", 99095 },	-- Addie Fizzlebog
-						["groups"] = {
+						["g"] = {
 							follower(746),	-- Addie Fizzlebog
 						},
 					}),
 					q(42411, {	-- Champion: Beastmaster Hilaire
 						["provider"] = { "n", 107316 },	-- Beastmaster Hilaire <Unseen Path>
-						["groups"] = {
+						["g"] = {
 							follower(744),	-- Beastmaster Hilaire
 						},
 					}),
 					q(42519, {	-- Rise, Champions
 						["provider"] = { "n", 102940 },	-- Altar Keeper Biehn
-						["groups"] = {
+						["g"] = {
 							follower(593),	-- Emmarel Shadewarden
 						},
 					}),
 					q(42415, {	-- Champion: Halduron Brightwing
 						["provider"] = { "n", 108620 },	-- Halduron Brightwing <Ranger-General of the Farstriders>
-						["groups"] = {
+						["g"] = {
 							follower(748),	-- Halduron Brightwing
 						},
 					}),
 					q(42413, {	-- Champion: Hemet Nesingwary
 						["provider"] = { "n", 94409 },		-- Hemet Nesingwary <Hemet's Hunting Party>
-						["groups"] = {
+						["g"] = {
 							follower(745),	-- Hemet Nesingwary
 						},
 					}),
 					q(42412, {	-- Champion: Huntsman Blake
 						["provider"] = { "n", 107981 },	-- Huntsman Blake <Beastmaster>
-						["groups"] = {
+						["g"] = {
 							follower(747),	-- Huntsman Blake
 						},
 					}),
 					q(42409, {	-- Champion: Loren Stormhoof
 						["provider"] = { "n", 107315 },	-- Loren Stormhoof <Skyhorn Emissary>
-						["groups"] = {
+						["g"] = {
 							follower(742),	-- Loren Stormhoof
 						},
 					}),
 					q(46048, {	-- Champion: Nighthuntress Syrenne
 						["provider"] = { "n", 117246 },	-- Nighthuntress Syrenne
-						["groups"] = {
+						["g"] = {
 							follower(996),	-- Nighthuntress Syrenne
 						},
 					}),
 					q(42410, {	-- Champion: Rexxar
 						["provider"] = { "n", 107425 },	-- Rexxar
-						["groups"] = {
+						["g"] = {
 							follower(743),	-- Rexxar
 						},
 					}),
@@ -209,7 +209,7 @@ _.ExpansionFeatures =
 				n(102669, {	-- Scouting Map
 					["achievementID"] = 11217,
 					["modelScale"] = 0.5,
-					["groups"] = {
+					["g"] = {
 						-- Blank for Class Only Missions in the future
 					},
 				}),
@@ -218,14 +218,14 @@ _.ExpansionFeatures =
 					n(105099, {	-- Dark Ranger Velonara
 						["classes"] = {3},
 						["description"] = "|c808080FAHunters will need to have completed the hidden quest|r |cFFFFD700Dark Memento|r |c808080FAin order to see items on this vendor.|r\n\n|cffff0000How to activate the quest:|r\n|c0070DEFFStep 1:|r\n|c808080FASpeak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA and complete the dialogue with him.\n|c0070DEFFStep 2:|r\n|c808080FABuy 13x|r |cFFFFFFFFBlack Roses|r|c808080FA from him.\n|c0070DEFFStep 3:|r\n|c808080FASpeak to|r |cABD473FFDark Ranger Velonara|r |c808080FA and complete the dialogue with her.  Afterwards she will take the 13 |r|cFFFFFFFFBlack Roses|r|c808080FA from you.\n|c0070DEFFStep 4:|r\n|c808080FAGo back and speak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA who will finish the story between the two.  Once doing this he will no longer sell you anything.\n|c0070DEFFStep 5:|r\n|c808080FFFind|r |cABD473FFDark Ranger Velonara|r |c808080FA who will offer the quest, |r|cFFFFD700Dark Memento|r.\n|c0070DEFFStep 6:|r\n|c808080FAAccept the quest and then deliver the hood to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA.\n|c0070DEFFStep 7:|r\n|c808080FAUpon finishing that quest he will now offer you the two items.",
-						["groups"] = {
+						["g"] = {
 							i(143663),	-- Dark Ranger's Hood
 						},
 					}),
 					n(100633, {	-- Death Hunter Moorgoth <Hunters of Death>
 						["classes"] = {3},
 						["description"] = "|c808080FAHunters will need to have completed the hidden quest|r |cFFFFD700Dark Memento|r |c808080FAin order to see items on this vendor.|r\n\n|cffff0000How to activate the quest:|r\n|c0070DEFFStep 1:|r\n|c808080FASpeak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA and complete the dialogue with him.\n|c0070DEFFStep 2:|r\n|c808080FABuy 13x|r |cFFFFFFFFBlack Roses|r|c808080FA from him.\n|c0070DEFFStep 3:|r\n|c808080FASpeak to|r |cABD473FFDark Ranger Velonara|r |c808080FA and complete the dialogue with her.  Afterwards she will take the 13 |r|cFFFFFFFFBlack Roses|r|c808080FA from you.\n|c0070DEFFStep 4:|r\n|c808080FAGo back and speak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA who will finish the story between the two.  Once doing this he will no longer sell you anything.\n|c0070DEFFStep 5:|r\n|c808080FFFind|r |cABD473FFDark Ranger Velonara|r |c808080FA who will offer the quest, |r|cFFFFD700Dark Memento|r.\n|c0070DEFFStep 6:|r\n|c808080FAAccept the quest and then deliver the hood to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA.\n|c0070DEFFStep 7:|r\n|c808080FAUpon finishing that quest he will now offer you the two items.",
-						["groups"] = {
+						["g"] = {
 							i(143663),	-- Dark Ranger's Hood
 						},
 					}),
@@ -236,7 +236,7 @@ _.ExpansionFeatures =
 						i(140544),	-- Huntmaster's Rifle
 						{
 							["itemID"] = 139710,		-- Helm
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
@@ -245,7 +245,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139712,		-- Shoulders
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
@@ -254,7 +254,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139707,		-- Chestpiece
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
@@ -263,7 +263,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139714,		-- Bracers
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
@@ -272,7 +272,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139709,		-- Gloves
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
@@ -281,7 +281,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139713,		-- Belt
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
@@ -290,7 +290,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139711,		-- Leggings
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
@@ -299,7 +299,7 @@ _.ExpansionFeatures =
 						},
 						{
 							["itemID"] = 139708,		-- Boots
-							["groups"] = {
+							["g"] = {
 								{
 									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
 									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
@@ -323,7 +323,7 @@ _.ExpansionFeatures =
 					n(100661, {	--  Pan the Kind Hand <Stable Master>
 						["classes"] = {3},
 						["description"] = "|c808080FAThese mounts are only available to hunters who have completed|r |cFFFFD700Night of the Wilds|r |c808080FAquest from the class mount campaign.",
-						["groups"] = {
+						["g"] = {
 							i(142228),	-- Trust of a Dire Wolfhawk
 							i(142226),	-- Trust of a Fierce Wolfhawk
 							i(147580, {	-- Tome of the Hybrid Beast
