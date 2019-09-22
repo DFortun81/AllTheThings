@@ -262,90 +262,47 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
-				n(-2, {	--  Vendors
+				n(-2,  {	-- Vendors
 					n(112392, {	-- Quartermaster Durnolf
+						i(140946, {	-- Battlelord's Armor Kit
+							["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
+						}),
+						i(139681, {	-- Battlelord's Chestplate
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139683, {	-- Battlelord's Gauntlets
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139687, {	-- Battlelord's Girdle
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(140985, {	-- Battlelord's Greater Armor Kit
+							["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
+						}),
+						i(139684, {	-- Battlelord's Greathelm
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139685, {	-- Battlelord's Legplates
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(140984, {	-- Battlelord's Lesser Armor Kit
+							["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
+						}),
+						i(139686, {	-- Battlelord's Pauldrons
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139682, {	-- Battlelord's Warboots
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139688, {	-- Battlelord's Wristguards
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(143727, {	-- Champion's Salute (TOY!)
+							["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+						}),
 						i(140537),	-- Skyhold Bulwark
 						i(140559),	-- Skyhold Claymore
 						i(140557),	-- Skyhold Quickblade
-						{
-							["itemID"] = 139684,		-- Helm
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139686,		-- Shoulders
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139681,		-- Chestpiece
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139688,		-- Bracers
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
-								}
-							},
-						},
-						{
-							["itemID"] = 139683,		-- Gloves
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139687,		-- Belt
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139685,		-- Leggings
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139682,		-- Boots
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
-								},
-							},
-						},
-						currency(1220, {	-- Order Resources
-							i(143727),	-- Champion's Salute Toy
-							i(124124),	-- Blood of Sargeras
-							i(140984),	-- Battlelord's Lesser Armor Kit
-							i(140946),	-- Battlelord's Armor Kit
-							i(140985),	-- Battlelord's Greater Armor Kit
-						}),
 					}),
 				}),
 			},

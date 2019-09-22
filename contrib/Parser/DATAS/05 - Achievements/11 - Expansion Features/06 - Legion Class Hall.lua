@@ -29,16 +29,16 @@ _.Achievements =
 						["sourceQuests"] = {
 							44217,	-- Armor Fit For A Deathlord (Death Knight)
 							44213,	-- You Will Be Prepared! (Demon Hunter)
-						--	,	--  (Druid)
+							44232,	-- The Grove Provides (Druid)
 						--	,	--  (Hunter)
 							44240,	-- Orange is the New Purple (Mage)
 						--	,	--  (Monk)
-						--	,	--  (Paladin)
+							44250,	-- Champion of the Light (Paladin)
 							44251,	-- Power Word: Armor (Priest)
 						--	,	--  (Rogue)
 						--	,	--  (Shaman)
 							44254,	-- Gazing Into Oblivion (Warlock)
-						--	,	--  (Warrior)
+							44255,	-- Axe and You Shall Receive (Warrior)
 						},
 						["description"] = "Rewarded by a level-110 quest in your class's Order Hall campaign.",
 					}),
@@ -46,16 +46,16 @@ _.Achievements =
 						["sourceQuests"] = {
 							44246,	-- Champion: Rottgut (Death Knight)
 							42776,	-- Two Worthies (Demon Hunter)
-						--	,	--  (Druid)
+							42046,	-- A New Beginning (Druid)
 						--	,	--  (Hunter)
 							42520,	-- A Terrible Loss (Mage)
 						--	,	--  (Monk)
-						--	,	--  (Paladin)
+							43541,	-- United As One (Paladin)
 							43381,	-- Champion: Mariella Ward (Priest)
 						--	,	--  (Rogue)
 						--	,	--  (Shaman)
 							41784,	-- Borrowed Time (Warlock)
-						--	,	--  (Warrior)
+							43090,	-- Ulduar's Oath (Warrior)
 						},
 						["description"] = "Recruit 6 Champions for your class's Order Hall.",
 					}),
@@ -69,16 +69,16 @@ _.Achievements =
 						["sourceQuests"] = {
 							43686,	-- The Fourth Horseman (Death Knight)
 							43186,	-- I Am the Slayer! (Demon Hunter)
-						--	,	--  (Druid)
+							42055,	-- The Demi-God's Return (Druid)
 						--	,	--  (Hunter)
 							42734,	-- Into the Oculus (Mage)
 						--	,	--  (Monk)
-						--	,	--  (Paladin)
+							43697,	-- Warriors of Light (Paladin)
 							43402,	-- High Priest of Netherlight (Priest)
 						--	,	--  (Rogue)
 						--	,	--  (Shaman)
 							41796,	-- Selecting a Sixth (Warlock)
-						--	,	--  (Warrior)
+							42974,	-- The Fate of Hodir (Warrior)
 						},
 						["description"] = "Complete your class's Order Hall campaign.",
 					}),

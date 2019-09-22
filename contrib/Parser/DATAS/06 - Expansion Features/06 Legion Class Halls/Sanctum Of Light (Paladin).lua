@@ -188,109 +188,78 @@ _.ExpansionFeatures =
 					}),
 					]]--
 					n(-2,  {	-- Vendors
-						n(99976, {	--  Crusader Lord Dalfors
+						n(99976,  {	--  Crusader Lord Dalfors
 							["classes"] = {2},
 							["description"] = "|c808080FAThese mounts are only available to paladins who have completed|r |cFFFFD700Stirring in the Shadows|r |c808080FAquest from the class mount campaign.",
 							["sourceQuest"] = 45770,	-- Stirring in the Shadows
 							["g"] = {
-								currency(1220, {	-- Order Resources
-									i(143503),	-- Harsh Reins of the Vengeful Charger
-									i(143505),	-- Heraldic Reins of the Valorous Charger
-									i(143504),	-- Stoic Reins of the Vigilant Charger
-									i(153177),	-- Golden Charger's Birdle
-									i(153174),	-- Valorous Charger's Bridle
-									i(153175),	-- Vengeful Charger's Bridle
-									i(153176),	-- Vigilant Charger's Bridle
+								i(153177, {	-- Golden Charger's Birdle
+									["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
+								}),
+								i(143503, {	-- Harsh Reins of the Vengeful Charger
+									["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+								}),
+								i(143505, {	-- Heraldic Reins of the Valorous Charger
+									["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+								}),
+								i(143504, {	-- Stoic Reins of the Vigilant Charger
+									["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+								}),
+								i(153174, {	-- Valorous Charger's Bridle
+									["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
+								}),
+								i(153175, {	-- Vengeful Charger's Bridle
+									["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
+								}),
+								i(153176, {	-- Vigilant Charger's Bridle
+									["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
 								}),
 							},
 						}),
 						n(100196, {	-- Eadric the Pure <Quartermaster>
+							i(139697, {	-- Bindings of the Silver Hand
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(140555),	-- Blade of the Silver Hand
+							i(139690, {	-- Breastplate of the Silver Hand
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(140535),	-- Bulwark of the Silver hand
+							i(143727, {	-- Champion's Salute (TOY!)
+								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+							}),
+							i(139693, {	-- Crown of the Silver Hand
+								["cost"] = 5000000,	-- 500g
+							}),
 							i(136801, {	-- Divine Tome: Contemplation
 								["spellID"] = 121183,	-- Contemplation
 							}),
-							i(140555),	-- Blade of the Silver Hand
-							i(140535),	-- Bulwark of  the Silver hand
-							i(140558),	-- Greatsword of the Silver Hand
-							i(140547),	-- Warhammer of the Silver Hand
-							{
-								["itemID"] = 139693,		-- Helm
-								["g"] = {
-									{
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
-									},
-								},
-							},
-							{
-								["itemID"] = 139695,		-- Shoulders
-								["g"] = {
-									{
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
-									},
-								},
-							},
-							{
-								["itemID"] = 139690,		-- Chestpiece
-								["g"] = {
-									{
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
-									},
-								},
-							},
-							{
-								["itemID"] = 139697,		-- Bracers
-								["g"] = {
-									{
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
-									}
-								},
-							},
-							{
-								["itemID"] = 139692,		-- Gloves
-								["g"] = {
-									{
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
-									},
-								},
-							},
-							{
-								["itemID"] = 139696,		-- Belt
-								["g"] = {
-									{
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
-									},
-								},
-							},
-							{
-								["itemID"] = 139694,		-- Leggings
-								["g"] = {
-									{
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
-									},
-								},
-							},
-							{
-								["itemID"] = 139691,		-- Boots
-								["g"] = {
-									{
-										["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-										["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
-									},
-								},
-							},
-							currency(1220, {	-- Order Resources
-								i(143727),	-- Champion's Salute Toy
-								i(124124),	-- Blood of Sargeras
-								i(140974),	-- Highlord's Lesser Armor Kit
-								i(140941),	-- Highlord's Armor Kit
-								i(140975),	-- Highlord's Greater Armor Kit
+							i(139692, {	-- Gauntlets of the Silver Hand
+								["cost"] = 5000000,	-- 500g
 							}),
+							i(139696, {	-- Girdle of the Silver Hand
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(140558),	-- Greatsword of the Silver Hand
+							i(140941, {	-- Highlord's Armor Kit
+								["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
+							}),
+							i(140975, {	-- Highlord's Greater Armor Kit
+								["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
+							}),
+							i(140974, {	-- Highlord's Lesser Armor Kit
+								["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
+							}),
+							i(139694, {	-- Legplates of the Silver Hand
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139691, {	-- Sabatons of the Silver Hand
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139695, {	-- Spaulders of the Silver Hand
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(140547),	-- Warhammer of the Silver Hand
 						}),		
 						n(91190, {	-- Sister Elda <Keeper of the Ancient Tomes>
 							["description"] = "Your spec must be Retribution for her to respond to your books. Bring both of the books to her and she'll give you the completed book to use in the next part.",
