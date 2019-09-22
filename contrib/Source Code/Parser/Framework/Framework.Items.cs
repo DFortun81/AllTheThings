@@ -334,7 +334,7 @@ namespace ATT
                     // Boolean Data Type Fields
                     case "collectible":
                     case "equippable":
-                    case "repeatable":
+                    case "isRepeatable":
                     case "isLimited":
                     case "isDaily":
                     case "isWeekly":
@@ -662,7 +662,7 @@ namespace ATT
                     case "specs":
                     case "sourceQuests":
                     case "altQuests":
-                    case "repeatable":
+                    case "isRepeatable":
                     case "isLimited":
                     case "isWeekly":
                     case "isDaily":
