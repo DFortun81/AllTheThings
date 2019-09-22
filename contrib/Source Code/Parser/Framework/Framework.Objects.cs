@@ -1008,6 +1008,8 @@ namespace ATT
                         case "isLimited":
                         case "isDaily":
                         case "isWeekly":
+                        case "isMonthly":
+                        case "isYearly":
                         case "isWorldQuest":
                         case "repeatable":
                         case "factionID":
@@ -1210,6 +1212,7 @@ namespace ATT
                     case "isLimited":
                     case "isDaily":
                     case "isWeekly":
+                    case "isMonthly":
                     case "isYearly":
                     case "isWorldQuest":
                     case "isWQ":

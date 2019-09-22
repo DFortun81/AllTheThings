@@ -884,6 +884,13 @@ namespace ATT
                         return "isMonthly";
                     }
 
+                case "isYearly":
+                case "yearly":
+                case "yearlyQuest":
+                    {
+                        return "isYearly";
+                    }
+
                 case "isLockoutShared":
                 case "isSharedLockout":
                 case "sharedLockout":
