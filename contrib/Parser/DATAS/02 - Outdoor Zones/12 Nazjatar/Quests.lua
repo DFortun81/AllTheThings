@@ -1318,13 +1318,22 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 154245 },	-- Apprentice Unato
 			}),
-			q(56159, {	-- Plug the Geysers
+			q(56159, {	-- Plug the Geysers (A)
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade (maybe add 57041 for selecting Farseer Ori for the day?)
 				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 				["isDaily"] = true,
 				["coord"] = { 44.6, 45.2, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 154244 },	-- Apprentice Uataro
+			}),
+			q(56877, {	-- Plug the Geysers (H)
+				["provider"] = { "n", 153522 },	-- Scout Tuli
+				["coord"] = { 48.0, 46.5, 1355 },
+				["sourceQuest"] = 55500,	-- Save a Friend
+				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+				["isDaily"] = true,
+				["races"] = HORDE_ONLY,
+				
 			}),
 			q(56160, {	-- Plug the Geysers
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade

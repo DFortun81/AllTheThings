@@ -7,6 +7,24 @@ _.Holidays = bubbleDown({["u"] = 24},
 		n(-40, {	-- Legacy
 			["g"] = {
 				n(-17, {	-- Quests
+					q(13931, {	-- Another Year, Another Souvenir.
+						["providers"] = {
+							{ "n", 24497 },	-- Ram Master Ray
+							{ "n", 24468 },	-- Pol Amberstill
+						},
+						["coords"] = {
+							{ 42.6, 17.6, 1 },
+							{ 53.6, 38.6, 27 },
+						},
+						["u"] = 40,	-- Legacy Quests
+						["maps"] = {
+							1,	-- Durotar
+							27,	-- Dun Morogh
+						},
+						["g"] = {
+							un(2, i(37892)),	-- Green Brewfest Stein
+						},
+					}),
 					q(11454, {	-- Seek the Saboteurs
 						["u"] = 40,	-- Legacy Quests
 						["provider"] = { "o", 186881 },	-- Dark Iron Sabotage Plans
