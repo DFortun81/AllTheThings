@@ -21,7 +21,7 @@ _.Zones =
 						q(9886, {	-- Membership Benefits
 							["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
-							["repeatable"] = true,
+							["isMonthly"] = true,
 							["minReputation"] = { 933, NEUTRAL },
 							["maxReputation"] = { 933, FRIENDLY },
 							["g"] = {
@@ -31,7 +31,7 @@ _.Zones =
 						q(9884, {	-- Membership Benefits
 							["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
-							["repeatable"] = true,
+							["isMonthly"] = true,
 							["minReputation"] = { 933, FRIENDLY },
 							["maxReputation"] = { 933, HONORED },
 							["g"] = {
@@ -41,7 +41,7 @@ _.Zones =
 						q(9885, {	-- Membership Benefits	
 							["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
-							["repeatable"] = true,
+							["isMonthly"] = true,
 							["minReputation"] = { 933, HONORED },
 							["maxReputation"] = { 933, REVERED },
 							["g"] = {
@@ -51,7 +51,7 @@ _.Zones =
 						q(9887, {	-- Membership Benefits
 							["provider"] = { "n", 18265 },	-- Gezhe <The Consortium>
 							["coord"] = { 31.4, 57.8, 107 },
-							["repeatable"] = true,
+							["isMonthly"] = true,
 							["minReputation"] = { 933, REVERED },
 							["g"] = {
 								i(25423),	-- Bag of Premium Gems
