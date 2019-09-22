@@ -22,6 +22,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 						["itemID"] = 46831,	-- Macabre Marionette
 					},
 				},
+				["isYearly"] = true,
 			},
 			{	-- The Grateful Dead [Dalaran - All]
 				["questID"] = 14166,	-- The Grateful Dead
@@ -39,6 +40,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 						["itemID"] = 46831,	-- Macabre Marionette
 					},
 				},
+				["isYearly"] = true,
 			},
 			{	-- The Grateful Dead [Darnassus - Night Elf]
 				["questID"] = 14170,	-- The Grateful Dead
@@ -58,6 +60,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 						["itemID"] = 46831,	-- Macabre Marionette
 					},
 				},
+				["isYearly"] = true,
 			},
 			{	-- The Grateful Dead [Darnassus - Worgen]
 				["questID"] = 27846,	-- The Grateful Dead
@@ -76,6 +79,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 						["itemID"] = 46831,	-- Macabre Marionette
 					},
 				},
+				["isYearly"] = true,
 			},
 			{	-- The Grateful Dead [Dun Morogh - Dwarf]
 				["questID"] = 14167,	-- The Grateful Dead
@@ -94,6 +98,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 						["itemID"] = 46831,	-- Macabre Marionette
 					},
 				},
+				["isYearly"] = true,
 			},
 			{	-- The Grateful Dead [Dun Morogh - Gnome]
 				["questID"] = 14168,	-- The Grateful Dead
@@ -112,6 +117,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 						["itemID"] = 46831,	-- Macabre Marionette
 					},
 				},
+				["isYearly"] = true,
 			},
 			{	-- The Grateful Dead [Durotar - Goblin]
 				["questID"] = 27841,	-- The Grateful Dead
@@ -130,6 +136,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 						["itemID"] = 46831,	-- Macabre Marionette
 					},
 				},
+				["isYearly"] = true,
 			},
 			{	-- The Grateful Dead [Durotar - Orc]
 				["questID"] = 14175,	-- The Grateful Dead
@@ -148,6 +155,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 						["itemID"] = 46831,	-- Macabre Marionette
 					},
 				},
+				["isYearly"] = true,
 			},
 			{	-- The Grateful Dead [Durotar - Troll]
 				["questID"] = 14177,	-- The Grateful Dead
@@ -166,6 +174,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 						["itemID"] = 46831,	-- Macabre Marionette
 					},
 				},
+				["isYearly"] = true,
 			},
 			{	-- The Grateful Dead [Silvermoon City - Blood Elf]
 				["questID"] = 14171,	-- The Grateful Dead
@@ -185,6 +194,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 						["itemID"] = 46831,	-- Macabre Marionette
 					},
 				},
+				["isYearly"] = true,
 			},
 			{	-- The Grateful Dead [Stormwind City - Humans]
 				["questID"] = 13952,	-- The Grateful Dead
@@ -203,6 +213,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 						["itemID"] = 46831,	-- Macabre Marionette
 					},
 				},
+				["isYearly"] = true,
 			},
 			{	-- The Grateful Dead [Terokkar Forest - Aldor - All]
 				["questID"] = 14172,	-- The Grateful Dead
@@ -218,6 +229,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 						["itemID"] = 46831,	-- Macabre Marionette
 					},
 				},
+				["isYearly"] = true,
 			},
 			{	-- The Grateful Dead [Terokkar Forest - Scryer - All]
 				["questID"] = 14173,	-- The Grateful Dead
@@ -233,6 +245,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 						["itemID"] = 46831,	-- Macabre Marionette
 					},
 				},
+				["isYearly"] = true,
 			},
 			{	-- The Grateful Dead [Tirisfal Glades - Undead]
 				["questID"] = 14174,	-- The Grateful Dead
@@ -251,6 +264,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 						["itemID"] = 46831,	-- Macabre Marionette
 					},
 				},
+				["isYearly"] = true,
 			},
 			{	-- The Grateful Dead [Thunder Bluff - Tauren]
 				["questID"] = 14176,	-- The Grateful Dead
@@ -270,6 +284,7 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 						["itemID"] = 46831,	-- Macabre Marionette
 					},
 				},
+				["isYearly"] = true,
 			},
 		}),
 	}),
