@@ -17,7 +17,7 @@ _.Holidays =
 						["u"] = 22,						-- Micro-Holiday Filter
 						["description"] = "Call of the Scarab must be available for these World Quests to display.",
 						["lvl"] = 60,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["coords"] = {
 							{ 46.76, 7.53, 327 },	-- Temple of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
 						},
@@ -33,7 +33,7 @@ _.Holidays =
 						["u"] = 22,						-- Micro-Holiday Filter
 						["description"] = "Call of the Scarab must be available for these World Quests to display.",
 						["lvl"] = 60,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["coords"] = {
 							{ 58.93, 14.26, 327 },	-- Ruins of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
 						},
@@ -47,7 +47,7 @@ _.Holidays =
 						["u"] = 22,						-- Micro-Holiday Filter
 						["description"] = "Call of the Scarab must be available for these World Quests to display.",
 						["lvl"] = 40,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["coords"] = {
 							{ 22.43, 41.09, 81 },		-- Twilight Base Camp
 							{ 26.89, 75.59, 81 },		-- Twilight Outpost
@@ -60,7 +60,7 @@ _.Holidays =
 						["u"] = 22,						-- Micro-Holiday Filter
 						["description"] = "Call of the Scarab must be available for these World Quests to display.",
 						["lvl"] = 40,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["coords"] = {
 							{ 39.04, 46.86, 81 },		-- Alliance Collector
 							{ 54.86, 63.41, 81 },		-- Horde Collector
@@ -73,7 +73,7 @@ _.Holidays =
 						["description"] = "Call of the Scarab must be available for these World Quests to display.",
 						["provider"] = { "n", 117491 },				-- Colossus of Ashi
 						["lvl"] = 40,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["coords"] = {
 							{ 47.33, 22.16, 81 },	-- Hive'Ashi
 						},
@@ -85,7 +85,7 @@ _.Holidays =
 						["description"] = "Call of the Scarab must be available for these World Quests to display.",
 						["provider"] = { "n", 117490 },				-- Colossus of Regal
 						["lvl"] = 40,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["coords"] = {
 							{ 55.61, 71.94, 81 },	-- Hive'Regal
 						},
@@ -97,7 +97,7 @@ _.Holidays =
 						["description"] = "Call of the Scarab must be available for these World Quests to display.",
 						["provider"] = { "n", 117489 },				-- Colossus of Zora
 						["lvl"] = 40,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["coords"] = {
 							{ 33.28, 52.18, 81 },		-- Hive'Zora
 						},

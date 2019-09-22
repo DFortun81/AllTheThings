@@ -1128,6 +1128,67 @@ local IsQuestFlaggedCompletedForObject = function(t)
 	if IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID) then
 		return 1;
 	end
+	if t.repeatable and app.Settings:GetTooltipSetting("RepeatableFirstTime") then
+		if t.questID and GetTempDataSubMember("CollectedQuests", t.questID) then
+			return 1;
+		end
+		if t.altQuestID and GetTempDataSubMember("CollectedQuests", t.altQuestID) then
+			return 1;
+		end
+		if Grail then 
+			-- Import previously completed repeatable quest from Grail addon data
+			if Grail:HasQuestEverBeenCompleted(t.questID) then
+				SetDataSubMember("CollectedQuests", t.questID, 1);
+				SetTempDataSubMember("CollectedQuests", t.questID, 1);
+				return 1;
+			end
+			if Grail:HasQuestEverBeenCompleted(t.altQuestID) then
+				SetDataSubMember("CollectedQuests", t.altQuestID, 1);
+				SetTempDataSubMember("CollectedQuests", t.altQuestID, 1);
+				return 1;
+			end
+		end
+		if WorldQuestTrackerAddon then
+			-- Import previously completed repeatable quest from WorldQuestTracker addon data
+			local wqt_questDoneHistory = WorldQuestTrackerAddon.db.profile.history.quest
+			local wqt_global = wqt_questDoneHistory.global
+			local wqt_local = wqt_questDoneHistory.character[app.GUID]
+			
+			if wqt_local and wqt_local[questID] and wqt_local[questID] > 0 then
+				SetDataSubMember("CollectedQuests", t.questID, 1);
+				SetTempDataSubMember("CollectedQuests", t.questID, 1);
+				return 1;
+			end
+			
+			if wqt_local and wqt_local[altQuestID] and wqt_local[altQuestID] > 0 then
+				SetDataSubMember("CollectedQuests", t.altQuestID, 1);
+				SetTempDataSubMember("CollectedQuests", t.altQuestID, 1);
+				return 1;
+			end
+			
+			if wqt_global and wqt_global[questID] and wqt_global[questID] > 0 then
+				SetDataSubMember("CollectedQuests", t.questID, 1);
+				if app.AccountWideQuests then
+					return 2;
+				end
+			end
+		
+			if wqt_global and wqt_global[altQuestID] and wqt_global[altQuestID] > 0 then
+				SetDataSubMember("CollectedQuests", t.altQuestID, 1);
+				if app.AccountWideQuests then
+					return 2;
+				end
+			end
+		end
+		if app.AccountWideQuests then
+			if t.questID and GetDataSubMember("CollectedQuests", t.questID) then
+				return 2;
+			end
+			if t.altQuestID and GetDataSubMember("CollectedQuests", t.altQuestID) then
+				return 2;
+			end
+		end
+	end
 	if not t.repeatable and app.AccountWideQuests then
 		if t.questID and GetDataSubMember("CollectedQuests", t.questID) then
 			return 2;
@@ -1166,7 +1227,7 @@ local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
 			return title;
 		else
 			rawset(questRetries, id, (retries or 0) + 1);
-		end
+	end
 		return RETRIEVING_DATA;
 	end
 end })
@@ -5629,7 +5690,7 @@ local itemFields = {
 		return link and GetItemInfo(link);
 	end,
 	["repeatable"] = function(t)
-		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isYearly");
+		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isYearly") or rawget(t, "isMonthly") or rawget(t, "isWorldQuest");
 	end,
 	["trackable"] = function(t)
 		return rawget(t, "questID");
@@ -5859,8 +5920,8 @@ app.BaseMusicRoll = {
 			return app.CollectibleMusicRolls;
 		elseif key == "collected" or key == "saved" then
 			if IsQuestFlaggedCompleted(t.questID) then
-				return 1;
-			end
+					return 1;
+				end
 			if app.AccountWideMusicRolls then
 				if t.questID and GetDataSubMember("CollectedQuests", t.questID) then
 					return 2;
@@ -5945,7 +6006,7 @@ local npcFields = {
 		return (_cache > 0 and NPCNameFromID or L["NPC_ID_NAMES"])[_cache];
 	end,
 	["repeatable"] = function(t)
-		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isYearly");
+		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isYearly") or rawget(t, "isMonthly")  or rawget(t, "isWorldQuest");
 	end,
 	["text"] = function(t)
 		_cache = t.name;
@@ -6146,9 +6207,9 @@ app.BaseQuest = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "collectible" then
-			return app.CollectibleQuests and not t.isBreadcrumb and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"));
+			return app.CollectibleQuests and not t.isBreadcrumb and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable")) and (not t.isWorldQuest or app.Settings:GetTooltipSetting("RepeatableFirstTime"));
 		elseif key == "repeatable" then
-			return t.isDaily or t.isWeekly or t.isYearly;
+			return t.isDaily or t.isWeekly or t.isYearly or t.isMonthly or t.isWorldQuest;
 		elseif key == "saved" or key == "collected" then
 			return IsQuestFlaggedCompletedForObject(t);
 		else
@@ -6254,15 +6315,15 @@ app.BaseSelfieFilter = {
 			return app.CollectibleSelfieFilters;
 		elseif key == "saved" or key == "collected" then
 			if IsQuestFlaggedCompleted(t.questID) then
-				return 1;
-			end
+					return 1;
+				end
 			if app.AccountWideSelfieFilters then
 				if t.questID and GetDataSubMember("CollectedQuests", t.questID) then
 					return 2;
 				end
 				if t.altQuestID and GetDataSubMember("CollectedQuests", t.altQuestID) then
 					return 2;
-				end
+			end
 			end
 		elseif key == "description" then
 			if t.crs and #t.crs > 0 then
@@ -6699,7 +6760,7 @@ app.BaseVignette = {
 		elseif key == "collected" then
 			return t.collectible and t.saved;
 		elseif key == "repeatable" then
-			return t.isDaily or t.isWeekly or t.isYearly;
+			return t.isDaily or t.isWeekly or t.isYearly or t.isMonthly or t.isWorldQuest;
 		elseif key == "saved" then
 			return IsQuestFlaggedCompletedForObject(t);
 		elseif key == "isVignette" then
@@ -8894,8 +8955,10 @@ local function RowOnEnter(self)
 				GameTooltip:AddDoubleLine("Races", (reference.r == 2 and ITEM_REQ_ALLIANCE) or (reference.r == 1 and ITEM_REQ_HORDE) or "Unknown");
 			end
 		end
+		if reference.isWorldQuest then GameTooltip:AddLine("This can be completed when the world quest is active."); end
 		if reference.isDaily then GameTooltip:AddLine("This can be completed daily."); end
 		if reference.isWeekly then GameTooltip:AddLine("This can be completed weekly."); end
+		if reference.isMontly then GameTooltip:AddLine("This can be completed monthly."); end
 		if reference.isYearly then GameTooltip:AddLine("This can be completed yearly."); end
 		if not GameTooltipModel:TrySetModel(reference) and reference.icon then
 			if app.Settings:GetTooltipSetting("iconPath") then

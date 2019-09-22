@@ -18,7 +18,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52180, {	-- A Brennadam Shame
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -42,14 +42,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52935, {	-- A New Era
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(56108),	-- A New Queen
 
 				q(51855, {	-- A Pirate's Life For Me
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -74,11 +74,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52236, {	-- A Thorny Problem
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52140, {	-- A Thorny Problem
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -86,11 +86,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52986, {	-- A Wicked Vessel
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(54647, {	-- Ale Intent
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -116,38 +116,38 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52940, {	-- Arms Deal
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52165, {	-- Automated Chaos
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51205, {	-- Aww, Rats!
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52871, {	-- Azerite Empowerment
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51617, {	-- Azerite Empowerment
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51618, {	-- Azerite Madness
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52873, {	-- Azerite Mining
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51644, {	-- Azerite Mining
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51623, {	-- Azerite Wounds
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(49908, {	-- Back to Brennadam
@@ -168,32 +168,32 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51639, {	-- Beachhead
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(54442, {	-- Beast Tamer Watkins
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
 				q(52330, {	-- Beehemoth
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(50594, {	-- Beneath the Veil
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52865, {	-- Blockade Runner
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				
 				q(52063, {	-- Boarder Patrol
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52045, {	-- Boarder Patrol
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -218,12 +218,12 @@ _.Zones =
 				q(51545),	-- Breaker Bad
 
 				q(52071, {	-- Briarback Mountain
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52117, {	-- Briarback Mountain
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51159, {	-- Bring out the Big Gun
@@ -236,7 +236,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51828, {	-- Burning the Legion
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52782, {	-- Call to Arms: Stormsong Valley
@@ -246,21 +246,21 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(55341, {	-- Calligraphy
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53857, {	-- Cap'n Gorok
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51782, {	-- Captain Razorspine
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52325, {	-- Captured Evil
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51401, {	-- Carry On
@@ -275,12 +275,12 @@ _.Zones =
 				q(51353),	-- Cave of Ai'twen
 
 				q(53106, {	-- Censership
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53343, {	-- Censership
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(50158, {	-- Checking Out the Collapse
@@ -298,7 +298,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52882, {	-- Controlled Burn
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51504, {	-- Cookie Delivery
@@ -308,26 +308,26 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52310, {	-- Corrupted Tideskipper
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52004, {	-- Counter Intelligence
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52306, {	-- Croaker
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51901, {	-- Crushtacean
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51203, {	-- Cry Wolf
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51777, {	-- Dagrus the Scorned
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(50910, {	-- Dangerous Game
@@ -351,7 +351,7 @@ _.Zones =
 				q(51220),	-- Deep Sea Venture
 
 				q(51778, {	-- Deepfang
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(56109),	-- Defender of the Hive
@@ -362,7 +362,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53804, {	-- Dinomancer Zakuru
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -378,23 +378,23 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53318, {	-- Ductile Platinum
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(50753, {	-- Earl-E Bot Gets the Worm
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51981, {	-- Earthcaller's Abode
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51996, {	-- Earthcaller's Abode
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(53027, {	-- Edge of Glory
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(50645, {	-- Eeling in a Big One
@@ -404,7 +404,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52947, {	-- Ettin Outta Here
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -426,7 +426,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52972, {	-- Favored Grandchild
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -434,26 +434,26 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52011, {	-- Fiendish Fields
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52064, {	-- Fiendish Fields
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(50649, {	-- Filching from Thieves
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53715, {	-- Firewarden Viton Darkflare
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51371),	-- Flavorable Offering
 
 				q(53283, {	-- Flourishing Sea Stalks
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(50386),	-- Flush Them Out
@@ -468,11 +468,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51781, {	-- Foreman Scripps
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52179, {	-- Fortified Resistance
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -492,23 +492,23 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53768, {	-- Furious Fracas
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53769, {	-- Furious Fracas
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
 				q(50134, {	-- Gadgets and Gizmos Aplenty
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(54414, {	-- Gale's Unrest
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
 				q(51776, {	-- Galestorm
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(50610, {	-- Gathering Storm
@@ -527,7 +527,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52133, {	-- Good Boy!
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -535,7 +535,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51779, {	-- Grimscowl the Hairbrained
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51752, {	-- Grizzled
@@ -545,16 +545,16 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53771, {	-- Gurin Stonebinder
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52463, {	-- Haegol the Hammer
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(53316, {	-- Hardened Monelite
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51711, {	-- Having a Blast
@@ -570,7 +570,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53717, {	-- Hold the Highland
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -578,7 +578,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52988, {	-- House Cleaning
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -586,7 +586,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51854, {	-- I Am the Shark
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -596,16 +596,16 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52328, {	-- Ice Sickle
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(53344, {	-- Iconoclasm
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				
 				q(52115, {	-- In the Shadow of the Kraken
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(50385),	-- Indefatigable Purpose
@@ -618,11 +618,11 @@ _.Zones =
 				}),
 				
 				q(52321, {	-- Kickers
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(54328, {	-- Knight-Captain Joesiph
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
 				q(53371, {	-- Let's Bee Friends
@@ -630,12 +630,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52987, {	-- Let's Burn!
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52941, {	-- Light in the Darkness
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -644,12 +644,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52230, {	-- Loose Change
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52239, {	-- Loose Change
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51278, {	-- Lost and Forgotten
@@ -665,7 +665,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51633, {	-- Make Loh Go
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(50389),	-- Malign Inspiration
@@ -674,7 +674,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52924, {	-- Mead Some Help?
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -689,12 +689,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52982, {	-- Mine or Trouble
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(54308, {	-- Mine Your Business
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
 				q(53105),	-- Misplaced Faith
@@ -703,20 +703,20 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(54266, {	-- Mortar Master Zapfritz
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53773, {	-- Naga Attack!
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
 				q(53945, {	-- Naga Attack!
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
 				q(54468, {	-- Nalaess Featherseeker
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
 				q(50909, {	-- Never Outgunned
@@ -735,68 +735,68 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51840, {	-- Oily Mess
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51820, {	-- Oily Mess
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(56107),	-- One of the Hive
 
 				q(52939, {	-- Ordnance Orders
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				
 				q(53288, {	-- Overgrown Anchor Weed
 					["requireSkill"] = 182,	-- Herbalism
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["g"] = {
 						i(163601),	-- Overgrown Anchor Weed (QI)
 					},	
 				}),
 				q(54437, {	-- Owynn Graddock
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
 				q(54628, {	-- Paragon of the Storm's Wake
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52964, {	-- Pest Problem
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51806, {	-- Pest Remover Mk. II
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(50679, {	-- Piercing the Shield
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51886, {	-- Pinku'shon
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52936, {	-- Plagued Earth Policy
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(53107, {	-- Plunder and Provisions
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53345, {	-- Plunder and Provisions
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52474, {	-- Poacher Zane
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(50698, {	-- Problem Solving with Gunpowder
@@ -806,12 +806,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53012, {	-- Put Away Your Toys
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51774, {	-- Ragna
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51310, {	-- Raiders of the Lost Crop
@@ -827,12 +827,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52211, {	-- Red Sunrise
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51905, {	-- Reinforced Hullbreaker
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51554, {	-- Reloading
@@ -844,16 +844,16 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52160, {	-- Restocking
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52142, {	-- Restocking
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52979, {	-- Ritual Cleansing
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -863,72 +863,72 @@ _.Zones =
 				q(50417),	-- Ruin Has Come
 
 				q(52164, {	-- Rum- Paaaage!
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52199, {	-- Rum- Paaaage!
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(50365, {	-- Run For the Hills
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51977, {	-- Sabertron
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51978, {	-- Sabertron
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51976, {	-- Sabertron
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51974, {	-- Sabertron
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51947, {	-- Sabertron
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(53008, {	-- Sage Wisdom
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(53706, {	-- Salvage the Supplies
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52309, {	-- SandFang
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52889, {	-- Sandscour
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51723, {	-- Saw Dusted
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52316, {	-- Sea Creatures Are Weird
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52280, {	-- Sea Salt Flavored
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52271, {	-- Sea Salt Flavored
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51759, {	-- Seabreaker Skoloth
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51320, {	-- Sealed Fate
@@ -938,7 +938,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52315, {	-- Severus the Outcast
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				
@@ -946,15 +946,15 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51627, {	-- Shell Game
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(53752, {	-- Shell Outs
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
 				q(53753, {	-- Shell Outs
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -962,18 +962,18 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52446, {	-- Sister Absinthe
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51921, {	-- Slickspill
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(50908, {	-- Smells Like Trouble
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53707, {	-- Smoke the Supplies
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
 				
@@ -981,20 +981,20 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50591, {	-- Son of a Bee
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52452, {	-- Song Mistress Dadalea
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52432, {	-- Squall
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(53040, {	-- Squall Squelching
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1002,7 +1002,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52507, {	-- Sticky Mess
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1010,7 +1010,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52879, {	-- Stiff Policy
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1030,14 +1030,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53042, {	-- Stormcaller
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(54457, {	-- Supplies from Storm's Wake
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52380, {	-- Supplies Needed: Frenzied Fangtooth
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1050,11 +1050,11 @@ _.Zones =
 				q(51343),	-- Swimming Lessons
 
 				q(52322, {	-- Taja the Tidehowler
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52198, {	-- Tank and Spank
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1074,19 +1074,19 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53025, {	-- The Culling
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(55301, {	-- The Cycle of Life
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51552, {	-- The Days Are Just Packed
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52166, {	-- The Faceless Herald
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51319, {	-- The Final Ascent
@@ -1096,7 +1096,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52476, {	-- The Lichen King
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51881, {	-- The Mine Sweeper
@@ -1128,30 +1128,30 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51827, {	-- They Came From Behind!
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52126, {	-- This Little Piggy Has Sharp Tusks
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(54403, {	-- Tidesage Clarissa
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
 				q(52968, {	-- Time for a Little Blood
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(51489, {	-- Time to Leave
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52229, {	-- Too Much To Bear
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52054, {	-- Too Much To Bear
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1159,12 +1159,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51817, {	-- Trapped Tortollans
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51811, {	-- Trapped Tortollans
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(50675, {	-- Treasure Hunting
@@ -1176,11 +1176,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52209, {	-- Turtle Tactics
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52200, {	-- Turtle Tactics
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1194,7 +1194,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53712, {	-- Unfriendly Skies
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1205,18 +1205,18 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52301, {	-- Vinespeaker Ratha
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(49998, {	-- Voices Below
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(54434, {	-- Voidmaster Evenshade
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
 				q(52300, {	-- Wagga Snarltusk
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(50956, {	-- Walking-Around Money
@@ -1254,7 +1254,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52891, {	-- Wendigo to Sleep
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1264,54 +1264,54 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52299, {	-- Whiplash
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52459, {	-- Whirlwing
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(52422, {	-- Work Order: Battle Flag: Spirit of Freedom
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50993, {	-- Work Order: Coarse Leather
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52415, {	-- Work Order: Coarse Leather Barding
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52400, {	-- Work Order: Kyanite
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50996, {	-- Work Order: Mistscale
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52345, {	-- Work Order: Ravenberry Tarts
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
 				q(50989, {	-- Work Order: Storm Silver Ore
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50997, {	-- Work Order: Tidespray Linen
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52402, {	-- Work Order: Viridium
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1328,38 +1328,38 @@ _.Zones =
 					q(52180, {	-- A Brennadam Shame
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52935, {	-- A New Era
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51855, {	-- A Pirate's Life For Me
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52140, {	-- A Thorny Problem
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52236, {	-- A Thorny Problem
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(54647, {	-- Ale Intent (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52165, {	-- Automated Chaos
 						["provider"] = { "n", 140315 },	-- Eddie Fixit
 						["lvl"] = 120,
 						["coord"] = { 36.61, 33.61, 942 },
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["g"] = {
 							crit(3, {	-- Battle on Zandalar and Kul Tiras (Automated Chaos)
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
@@ -1368,41 +1368,41 @@ _.Zones =
 					}),
 					q(52871, {	-- Azerite Empowerment
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51617, {	-- Azerite Empowerment
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51618, { 	-- Azerite Madness
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51644, {	-- Azerite Mining
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52873, {	-- Azerite Mining
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51623, {	-- Azerite Wounds
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51639, {	-- Beachhead
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(54442, {	-- Beast Tamer Watkins (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52330, {	-- Beehemoth
 						["lvl"] = 120,
 						["npcID"] = 134147,		-- Beehemoth
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["g"] = {
 							i(160459, { 	-- Apiarist's Stingproof Belt
 								["bonusID"] = 4803,		-- WQ Bonus ID
@@ -1412,32 +1412,32 @@ _.Zones =
 					q(52865, {	-- Blockade Runner
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(53286, {	-- Blooming Siren's Sting
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["requireSkill"] = 182,	-- Herbalism
 					}),
 					q(53285, {	-- Blooming Star Moss
 						["requireSkill"] = 182,	-- Herbalism
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
 					q(52045, {	-- Boarder Patrol
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52071, {	-- Briarback Mountain
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(55341, {	-- Calligraphy
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["g"] = {
 							crit(3, {	-- Master Calligrapher (Triangle)
 								["achievementID"] = 13512,	-- Master Calligrapher
@@ -1447,16 +1447,16 @@ _.Zones =
 					q(53857, {	-- Cap'n Gorok (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51782, {	-- Captain Razorspine
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52325, {	-- Captured Evil
 						["provider"] = { "n", 141046 },	-- Leana Darkwind
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["g"] = {
 							crit(8, {	-- Battle on Zandalar and Kul Tiras (Captured Evil)
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
@@ -1466,102 +1466,102 @@ _.Zones =
 					q(53106, {	-- Censership
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["g"] = {
 							i(163212, {	-- Cleansing Thurible
-								["collectible"] = false,	-- putting it here so it doesn't show as unsorted
+								["isWorldQuest"] = true,	-- putting it here so it doesn't show as unsorted
 							}),
 						},
 					}),
 					q(52310, {	-- Corrupted Tideskipper
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52306, {	-- Croaker
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51777, {	-- Dagrus the Scorned
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51778, {	-- Deepfang
 						["lvl"] = 120,
 						["provider"] = { "n", 139385 },	-- Deepfang
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(53804, {	-- Dinomancer Zakuru (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51981, {	-- Earthcaller's Abode
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(53878, {	-- Emergency Extrication (Faction Assault WQ)
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
 					}),
 					q(52947, {	-- Ettin Outta Here
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(51781, {	-- Foreman Scripps
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52179, {	-- Fortified Resistance
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(53768, {	-- Furious Fracas (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(53769, {	-- Furious Fracas (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(54414, {	-- Gale's Unrest (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51776, {	-- Galestorm
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52133, {	-- Good Boy!
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51779, {	-- Grimscowl the Harebrained
 						["coord"] = { 62.0, 73.9, 942 },
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(53771, {	-- Gurin Stonebinder (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52463, {	-- Haegol the Hammer
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(54132, {	-- Horde of Heroes (Faction Assault WQ)
 						["provider"] = { "n", 135447 },	-- Ransa Greyfeather <The Honorbound Emissary>
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["groups"] = {
 							{
 								["achievementID"] = 13284,	-- Frontline Warrior
@@ -1576,85 +1576,85 @@ _.Zones =
 					q(52988, {	-- House Cleaning
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51854, {	-- I Am the Shark
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52328, {	-- Ice Sickle
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(53108, {	-- Iconoclasm
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52168, {	-- It's Lit
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52321, {	-- Kickers
 						["npcID"] = 141029,	-- Kickers
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(54328, {	-- Knight-Captain Joesiph (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52794, {	-- Lizards and Ledgers
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52230, {	-- Loose Change
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51633, {	-- Make Loh Go
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52924, {	-- Mead Some Help?
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52880, {	-- Milden Mud Snout
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
 					q(52982, {	-- Mine or Trouble
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(54308, {	-- Mine Your Business (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(54266, {	-- Mortar Master Zapfritz (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(53773, {	-- Naga Attack!
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["g"] = {
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
 					q(53945, {	-- Naga Attack!
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["g"] = {
 							i(165605),  -- Azsharan Medallion
 						},
@@ -1662,79 +1662,79 @@ _.Zones =
 					q(54468, {	-- Nalaess Featherseeker (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51820, {	-- Oily Mess
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52939, {	-- Ordnance Orders
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52464, {	-- Osca the Bloodied
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
 					q(54437, {	-- Owynn Graddock (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52964, {	-- Pest Problem
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51806, {	-- Pest Remover Mk. II
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51886, {	-- Pinku'shon
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(53107, {	-- Plunder and Provisions
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52474, {	-- Poacher Zane
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51774, {	-- Ragna
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52211, {	-- Red Sunrise
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51905, {	-- Reinforced Hullbreaker
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52142, {	-- Restocking
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52979, {	-- Ritual Cleansing
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52164, {	-- Rum- Paaaage!
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51974, { 	-- Sabertron (COPPER)
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["g"] = {
 							crit(5, {	-- Copper Sabertron
 								["achievementID"] = 13054,	-- Sabertron Assemble
@@ -1742,7 +1742,7 @@ _.Zones =
 						},
 					}),
 					q(51976, {	-- Sabertron (GREEN)
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["g"] = {
 							crit(4, {	-- Green Sabertron
 								["achievementID"] = 13054,	-- Sabertron Assemble
@@ -1750,7 +1750,7 @@ _.Zones =
 						},
 					}),
 					q(51978, {	-- Sabertron (ORANGE)
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["g"] = {
 							crit(3, {	--  Sabertron
 								["achievementID"] = 13054,	-- Sabertron Assemble
@@ -1758,7 +1758,7 @@ _.Zones =
 						},
 					}),
 					q(51947, {	-- Sabertron (RED)
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["g"] = {
 							crit(1, {	-- Red Sabertron
 								["achievementID"] = 13054,	-- Sabertron Assemble
@@ -1766,7 +1766,7 @@ _.Zones =
 						},
 					}),
 					q(51977, {	-- Sabertron (YELLOW)
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["g"] = {
 							crit(2, {	-- Yellow Sabertron
 								["achievementID"] = 13054,	-- Sabertron Assemble
@@ -1776,20 +1776,20 @@ _.Zones =
 					q(53706, {	-- Salvage the Supplies (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52889, {	-- Sandscour
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52309, {	-- SandFang
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52316, {	-- Sea Creatures Are Weird
 						["provider"] = { "n", 141002 },	-- Ellie Vern
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["g"] = {
 							crit(7, {	-- Battle on Zandalar and Kul Tiras (Sea Creatures Are Weird)
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
@@ -1799,86 +1799,86 @@ _.Zones =
 					q(52271, {	-- Sea Salt Flavored
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51759, {	-- Seabreaker Skoloth
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
 					q(52315, {	-- Severus the Outcast
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(53724, {	-- Shadow Hunter Mutumba
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(51627, {	-- Shell Game
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(53753, {	-- Shell Outs (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(53752, {	-- Shell Outs (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52446, {	-- Sister Absinthe
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51921, {	-- Slickspill
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(53707, {	-- Smoke the Supplies (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52174, {	-- Snakes in the Shallows
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(50591, {	-- Son of a Bee
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52452, {	-- Song Mistress Dadalea
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52432, {	-- Squall
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(53040, {	-- Squall Squelching
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52507, {	-- Sticky Mess
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52879, {	-- Stiff Policy
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51982, {	-- Storm's Rage (Faction Assault WQ)
 						["provider"] = { "n", 135800 },	-- Sister Lilyana <Storm's Wake Emissary>
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["groups"] = {
 							crit(2, {	-- Storm's Rage
 								["achievementID"] = 13283,	-- Frontline Warrior
@@ -1890,40 +1890,40 @@ _.Zones =
 					}),
 					q(52322, {	-- Taja the Tidehowler
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52198, {	-- Tank and Spank
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(55301, {	-- The Cycle of Life
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(53025, {	-- The Culling
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52166, {	-- The Faceless Herald
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52476, {	-- The Lichen King
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51827, {	-- They Came From Behind!
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52126, {	-- This Little Piggy Has Sharp Tusks
 						["provider"] = { "n", 139987 },	-- Bristlespine
 						["lvl"] = 120,
 						["coord"] = { 42.41, 76.61, 942 },
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["filter"] = 101,	-- Pet Battles
 						["g"] = {
 							crit(2, {	-- Battle on Zandalar and Kul Tiras (This Little Piggy Has Sharp Tusks)
@@ -1934,61 +1934,61 @@ _.Zones =
 					q(54403, {	-- Tidesage Clarissa (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52054, {	-- Too Much To Bear
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(51817, {	-- Trapped Tortollans
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52209, {	-- Turtle Tactics
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(53712, {	-- Unfriendly Skies (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52301, {	-- Vinespeaker Ratha
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(54434, {	-- Voidmaster Evenshade (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52300, {	-- Wagga Snarltusk
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(52891, {	-- Wendigo to Sleep
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 					q(53983, {	-- Wet Work: Fort Knight (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["g"] = {
 							i(164731)	-- Enchanted Shroud (QI)
 						},
 					}),
 					q(53287, {	-- Winter's Kiss Cluster
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["requireSkill"] = 182,	-- Herbalism
 					}),
 					q(52394, {	-- Work Order: Contract: Champions of Azeroth [Rank 3]
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["requireSkill"] = 773,	-- Inscription
 						["g"] = {
 							i(162374),	-- Recipe: Contract: Champions of Azeroth [Rank 3]
@@ -1997,7 +1997,7 @@ _.Zones =
 					q(52391, {	-- Work Order: Contract: Storm's Wake
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["requireSkill"] = 773,	-- Inscription
 						["g"] = {
 							i(162364), 	-- Recipe: Contract: Storm's Wake [Rank 3]
@@ -2006,7 +2006,7 @@ _.Zones =
 					q(52347, {	-- Work Order: Honey-Glazed Haunchs [Rank 3]
 						["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["requireSkill"] = 185,	-- Cooking
 						["g"] = {
 							i(162286),	-- Recipe: Honey-Glazed Haunchs [Rank 3]
@@ -2015,7 +2015,7 @@ _.Zones =
 					q(52367, {	-- Work Order: Electroshock Mount Motivator
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["requireSkill"] = 202,	-- Engineering
 						["g"] = {
 							i(162340),	-- Schematic: Electroshock Mount Motivator
@@ -2024,7 +2024,7 @@ _.Zones =
 					q(52353, {	-- Work Order: Enchant Ring - Seal of Haste
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["requireSkill"] = 333,	-- Enchanting
 						["g"] = {
 							i(162299), 	-- Formula: Enchant Ring - Seal of Haste [Rank 3]
@@ -2033,7 +2033,7 @@ _.Zones =
 					q(52354, {	-- Work Order: Enchant Ring - Seal of Mastery
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["requireSkill"] = 333,	-- Enchanting
 						["g"] = {
 							i(162300), 	-- Formula: Enchant Ring - Seal of Mastery [Rank 3]
@@ -2042,7 +2042,7 @@ _.Zones =
 					q(52344, {	-- Work Order: Kul Tiramisu [Rank 3]
 						["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["requireSkill"] = 185,	-- Cooking
 						["g"] = {
 							i(162285),	-- Recipe: Kul Tiramisu [Rank 3]
@@ -2051,14 +2051,14 @@ _.Zones =
 					q(52332, {	-- Work Order: Lightfoot Potion
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["requireSkill"] = 171,	-- Alchemy
 						["g"] = {
 							i(162258),	-- Recipe: Lightfoot Potion (Rank 3)
 						},
 					}),
 					q(50981, {	-- Work Order: Riverbud
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["requireSkill"] = 182,	-- Herbalism
@@ -2066,7 +2066,7 @@ _.Zones =
 					q(52346, {	-- Work Order: Sailor's Pie [Rank 3]
 						["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["requireSkill"] = 185,	-- Cooking
 						["g"] = {
 							i(162295),	-- Recipe: Sailor's Pie [Rank 3]
@@ -2075,12 +2075,12 @@ _.Zones =
 					q(50982, {	-- Work Order: Star Moss
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 						["requireSkill"] = 182,	-- Herbalism
 					}),
 					q(52352, {	-- Zeritarj
 						["lvl"] = 120,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 				}),
 				{

@@ -7,41 +7,41 @@ _.Zones =
 		m(1462, {	-- Mechagon
 			n(-34,  {	-- World Quests
 				q(56396, {	-- Creakclank
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 120,
 				}),
 				q(56397, {	-- CK-9 Micro-Oppression Unit
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 120,
 				}),
 				q(56393, {	-- Gnomefeaster
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 120,
 				}),
 				q(56395, {	-- Goldenbot XD
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 120,
 				}),
 				q(56139, {	-- Junkyard Treasures
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["g"] = {
 						i(168832),	-- Galvanic Oscillator
 					},
 				}),
 				q(55901, {	-- Rustbolt Rebellion
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
 					["g"] = {
 						i(168832),	-- Galvanic Oscillator
 					},
 				}),
 				q(56131, {	-- Security First
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 					["g"] = {
@@ -49,7 +49,7 @@ _.Zones =
 					},
 				}),
 				q(56141, {	-- Security First
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 120,
 					["g"] = {
@@ -57,22 +57,22 @@ _.Zones =
 					},
 				}),
 				q(56394, {	-- Sputtertube
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 120,
 				}),
 				q(56399, {	-- Unit 6
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 120,
 				}),
 				q(56400, {	-- Unit 17
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 120,
 				}),	
 				q(56398, {	-- Unit 35
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 120,
 				}),	

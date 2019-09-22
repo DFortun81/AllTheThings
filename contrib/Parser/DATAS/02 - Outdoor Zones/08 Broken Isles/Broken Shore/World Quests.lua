@@ -43,182 +43,182 @@ _.Zones =
 ]]--
 				q(45473, {	-- A Giant Problem
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46932, {	-- A Tad More Corruption
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45988, {	-- Ancient Bones
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46105, {	-- Arachnid Superiority
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45694, {	-- Arachnicide
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46750, {	-- Battery Backup
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45559, {	-- Behind Enemy Portals
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45542, {	-- Behind Enemy Portals
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45520, {	-- Behind Enemy Portals
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46073, {	-- Break Their Garrison
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46068, {	-- Brute Wrangling
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46201, {	-- By Water Be Purged
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46814, {	-- Call of the Frostwyrm
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(44846, {	-- Clearing the Path
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45178, {	-- Contagion Containment
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45837, {	-- Creeping Fel
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46821, {	-- Creepy Crawlies
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45970, {	-- Duty's End
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45878, {	-- Exterminating with Impunity
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45744, {	-- Fall of the Felskorn
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(47132, {	-- Fel Fire and Ice
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46126, {	-- Fel-Corrupted Feathers
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46933, {	-- Felrglrglrglrgl
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45934, {	-- Fowl Play
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46072, {	-- Full Fel
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46198, {	-- Gems of Destruction
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46212, {	-- Get Them Up
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45985, {	-- Hellish Scavengers
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46066, {	-- I Fel Bat For You
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46112, {	-- Illidari Masters: Madam Viciosa
 					["lvl"] = 110,
 					["filterID"] = 101,	-- Battle Pet
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46113, {	-- Illidari Masters: Nameless Mystic
 					["lvl"] = 110,
 					["filterID"] = 101,	-- Battle Pet
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46111, {	-- Illidari Masters: Sissix
 					["lvl"] = 110,
 					["filterID"] = 101,	-- Battle Pet
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45472, {	-- Kraken Eggs
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46948, {	-- Malificus
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46707, {	-- Minion! Kill That One Too!
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46756, {	-- Mission: Felrage Destruction
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46825, {	-- Mud Mucking
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46822, {	-- Natural Selection
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(44751, {	-- No Soldier Left Behind
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45792, {	-- Occultist Onslaught
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46180, {	-- Power of Our Enemy
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46075, {	-- Relic Hunting
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46076, {	-- Restless Spirits
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46175, {	-- Rolling Thunder
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["g"] = {
 						ach(11607, {	-- They See Me Rolling
 							["description"] = "This achievement is only active with this World Quest.  If you take damage on your barrel you can let it regenerate before turning in."
@@ -227,79 +227,79 @@ _.Zones =
 				}),
 				q(46001, {	-- Rules of the Hunt
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45550, {	-- Salving the Corruption
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45626, {	-- Set You Up the Bomb!
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46360, {	-- Simply Stunning
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46109, {	-- Stand!
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46236, {	-- Stonebound Soldiers
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45805, {	-- The Burning Keys
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45035, {	-- The Call of Battle
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46942, {	-- The Cost of Power
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46160, {	-- The Shackled Void
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46032, {	-- The Tormented Return
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46063, {	-- The Wailing Dead
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46866, {	-- Torture Chamber
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45379, {	-- Treasure Master Iks'reeged
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45973, {	-- Unchecked Power
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45791, {	-- War Materiel
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45930, {	-- We Didn't Start the Fire
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45977, {	-- Where There is a Whip...
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(44748, {	-- Winged Terrors
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				n(-322, {	-- Cloak
 					i(146886),	-- Felknight Greatcloak
