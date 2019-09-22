@@ -443,6 +443,7 @@ _.Zones =
 					i(143695),	-- Ambition of the Forlorn
 					i(143694),	-- Aristocratic Menace
 					i(141275),	-- Fertile Soil
+					i(141270),	-- Restless Dreams
 				}),
 				i(135511),	-- Thick Slab of Bacon. You get it for a split second after completing a bacon wq
 				i(137212),	-- Cut Skystone. You get it for a split second after completing the jewelcrafter daily
