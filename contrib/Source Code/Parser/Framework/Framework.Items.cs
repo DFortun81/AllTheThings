@@ -666,6 +666,7 @@ namespace ATT
                     case "isLimited":
                     case "isWeekly":
                     case "isDaily":
+                    case "isMonthly":
                     case "isYearly":
                     case "isWorldQuest":
                         {

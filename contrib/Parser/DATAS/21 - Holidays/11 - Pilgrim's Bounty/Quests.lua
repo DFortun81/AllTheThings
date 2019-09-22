@@ -32,46 +32,54 @@ _.Holidays = bubbleDown({["u"] = 28},
 						504,	-- Isle of Thunder
 					},
 					["races"] = ALLIANCE_ONLY,
+					["isYearly"] = true,
 				}),
 				q(14064, {	-- Sharing a Bountiful Feast (Alliance)
 					["provider"] = { "n", 34653 },	-- Bountiful Table Hostess
 					["maps"] = { 37, },	-- Elwynn Forest
 					["races"] = ALLIANCE_ONLY,
+					["isYearly"] = true,
 				}),
 				q(14023, {	-- Spice Bread Stuffing (Alliance)
 					["provider"] = { "n", 34675 },	-- Gregory Tabor
 					["maps"] = { 37, },	-- Elwynn Forest
 					["races"] = ALLIANCE_ONLY,
+					["isYearly"] = true,
 				}),
 				q(14024, {	-- Pumpkin Pie (Alliance)
 					["provider"] = { "n", 34744 },	-- Jasper Moore
 					["maps"] = { 37, },	-- Elwynn Forest
 					["sourceQuests"] = { 14023, },	-- Spice Bread Stuffing (Alliance)
 					["races"] = ALLIANCE_ONLY,
+					["isYearly"] = true,
 				}),
 				q(14028, {	-- Cranberry Chutney (Alliance)
 					["provider"] = { "n", 34644 },	-- Edward Winslow
 					["maps"] = { 27, },	-- Dun Morogh
 					["sourceQuests"] = { 14024, },	-- Pumpkin Pie (Alliance)
 					["races"] = ALLIANCE_ONLY,
+					["isYearly"] = true,
 				}),
 				q(14030, {	-- They're Ravenous In Darnassus (Alliance)
 					["provider"] = { "n", 34744 },	-- Jasper Moore
 					["maps"] = { 37, },	-- Elwynn Forest
 					["sourceQuests"] = { 14028, },	-- Cranberry Chutney (Alliance)
 					["races"] = ALLIANCE_ONLY,
+					["isYearly"] = true,
 				}),
 				q(14033, {	-- Candied Sweet Potatoes (Alliance)
 					["provider"] = { "n", 34676 },	-- Isaac Allerton
 					["maps"] = { 89, },	-- Darnassus
 					["sourceQuests"] = { 14030, },	-- They're Ravenous In Darnassus (Alliance)
 					["races"] = ALLIANCE_ONLY,
+					["isYearly"] = true,
 				}),
 				q(14035, {	-- Slow-roasted Turkey (Alliance)
 					["provider"] = { "n", 34675 },	-- Gregory Tabor
 					["maps"] = { 37, },	-- Elwynn Forest
 					["sourceQuests"] = { 14033, },	-- Candied Sweet Potatoes (Alliance)
 					["races"] = ALLIANCE_ONLY,
+					["isYearly"] = true,
 				}),
 				-- ALLIANCE DAILIES --
 				q(14048, {	-- Can't Get Enough Turkey (Alliance)
@@ -192,6 +200,7 @@ _.Holidays = bubbleDown({["u"] = 28},
 						210,	-- The Cape of Stranglethorn
 					},
 					["races"] = HORDE_ONLY,
+					["isYearly"] = true,
 				}),
 				q(14065, {	-- Sharing a Bountiful Feast (Horde)
 					["provider"] = { "n", 34654 },	-- Bountiful Feast Hostess
@@ -202,41 +211,48 @@ _.Holidays = bubbleDown({["u"] = 28},
 						100,	-- Hellfire Peninsula
 					},
 					["races"] = HORDE_ONLY,
+					["isYearly"] = true,
 				}),
 				q(14037, {	-- Spice Bread Stuffing (Horde)
 					["provider"] = { "n", 34677 },	-- Miles Standish
 					["maps"] = { 90, },	-- Undercity
 					["races"] = HORDE_ONLY,
+					["isYearly"] = true,
 				}),
 				q(14040, {	-- Pumpkin Pie (Horde)
 					["provider"] = { "n", 34768 },	-- William Mullins
 					["maps"] = { 90, },	-- Undercity
 					["sourceQuests"] = { 14037, },	-- Spice Bread Stuffing (Horde)
 					["races"] = HORDE_ONLY,
+					["isYearly"] = true,
 				}),
 				q(14041, {	-- Cranberry Chutney (Horde)
 					["provider"] = { "n", 34679 },	-- Francis Eaton
 					["maps"] = { 1, },	-- Durotar
 					["sourceQuests"] = { 14040, },	-- Pumpkin Pie (Horde)
 					["races"] = HORDE_ONLY,
+					["isYearly"] = true,
 				}),
 				q(14043, {	-- Candied Sweet Potatoes (Horde)
 					["provider"] = { "n", 34678 },	-- Dokin Farplain
 					["maps"] = { 88, },	-- Thunder Bluff
 					["sourceQuests"] = { 14041, },	-- Cranberry Chutney (Horde)
 					["races"] = HORDE_ONLY,
+					["isYearly"] = true,
 				}),
 				q(14044, {	-- Undersupplied in the Undercity (Horde)
 					["provider"] = { "n", 34679 },	-- Francis Eaton
 					["maps"] = { 1, },	-- Durotar
 					["sourceQuests"] = { 14043, },	-- Candied Sweet Potatoes (Horde)
 					["races"] = HORDE_ONLY,
+					["isYearly"] = true,
 				}),
 				q(14047, {	-- Slow-roasted Turkey (Horde)
 					["provider"] = { "n", 34677 },	-- Miles Standish
 					["maps"] = { 90, },	-- Undercity
 					["sourceQuests"] = { 14044, },	-- Undersupplied in the Undercity (Horde)
 					["races"] = HORDE_ONLY,
+					["isYearly"] = true,
 				}),
 				-- HORDE DAILIES --
 				q(14058, {	-- She Says Potato (Horde)

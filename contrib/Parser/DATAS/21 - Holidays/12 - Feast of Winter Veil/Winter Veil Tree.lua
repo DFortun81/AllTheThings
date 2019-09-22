@@ -21,6 +21,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 							}),
 						},
 						["lvl"] = 1,
+						["isYearly"] = true,
 					}),
 					q(8803,	{	-- A Festive Gift
 						["groups"] = {
@@ -29,6 +30,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 							}),
 						},
 						["lvl"] = 10,
+						["isYearly"] = true,
 					}),
 					q(8768, { 	-- A Gaily Wrapped Present
 						["groups"] = {
@@ -40,6 +42,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 							}),
 						},
 						["lvl"] = 20,
+						["isYearly"] = true,
 					}),
 					q(50420, { 	-- A Gently Shaken Gift
 						["groups"] = {
@@ -115,6 +118,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 							},
 						},
 						["lvl"] = 10,
+						["isYearly"] = true,
 					}),
 					q(8769, { 	-- A Ticking Present
 						["groups"] = {
@@ -132,6 +136,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 							}),
 						},
 						["lvl"] = 40,
+						["isYearly"] = true,
 					}),
 					q(47751, { 	-- A Winter Veil Gift
 						["groups"] = {
@@ -238,6 +243,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 							},
 						},
 						["lvl"] = 10,
+						["isYearly"] = true,
 					}),
 				},
 			}),

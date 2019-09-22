@@ -27,6 +27,7 @@ _.Holidays =
 							111,	-- Shattrath City
 						},
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- A Trip to the Dark Portal [Horde - Blood Elf]
 						["questID"] = 10951,	-- A Trip to the Dark Portal
@@ -44,6 +45,7 @@ _.Holidays =
 							111,	-- Shattrath City
 						},
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- A Trip To The Wonderworks [Neutral - Oracles]
 						["questID"] = 13937,	-- A Trip To The Wonderworks
@@ -68,6 +70,7 @@ _.Holidays =
 							125,	-- Dalaran [Northrend]
 							625,	-- Dalaran [Broken Isles]
 						},
+						["isYearly"] = true,
 					},
 					{	-- A Trip To The Wonderworks [Neutral - Wolvar]
 						["questID"] = 13938,	-- A Trip To The Wonderworks
@@ -92,6 +95,7 @@ _.Holidays =
 							125,	-- Dalaran [Northrend]
 							625,	-- Dalaran [Broken Isles]
 						},
+						["isYearly"] = true,
 					},
 					{	-- A Warden of the Alliance [Alliance - Human - FINAL]
 						["questID"] = 171,	-- A Warden of the Alliance
@@ -193,6 +197,7 @@ _.Holidays =
 								["description"] = "Contains 5 gold.",
 							},
 						},
+						["isYearly"] = true,
 					},
 					{	-- A Warden of the Horde [Horde - Orc - FINAL]
 						["questID"] = 5502,	-- A Warden of the Horde
@@ -277,6 +282,7 @@ _.Holidays =
 								["description"] = "Contains 5 gold.",
 							},
 						},
+						["isYearly"] = true,
 					},
 					{	-- Auchindoun and the Ring of Observance [Alliance - Draenei]
 						["questID"] = 10950,	-- Auchindoun and the Ring of Observance
@@ -374,8 +380,8 @@ _.Holidays =
 									},
 								},
 							},
-
 						},
+						["isYearly"] = true,
 					},
 					{	-- Back to the Orphanage [Horde - Blood Elf - FINAL]
 						["questID"] = 10967,	-- Back to the Orphanage
@@ -453,8 +459,8 @@ _.Holidays =
 									},
 								},
 							},
-
 						},
+						["isYearly"] = true,
 					},
 					{	-- Back To The Orphanage [Neutral - Oracles - FINAL]
 						["questID"] = 28879,	-- Back to the Orphanage	Note!! 13959 depracated
@@ -524,6 +530,7 @@ _.Holidays =
 								["description"] = "Contains 5 gold.",
 							},
 						},
+						["isYearly"] = true,
 					},
 					{	-- Back To The Orphanage [Neutral - Wolvar - FINAL]
 						["questID"] = 28880,	-- Back To The Orphanage	Note!! 13960 depracated
@@ -593,6 +600,7 @@ _.Holidays =
 								["description"] = "Contains 5 gold.",
 							},
 						},
+						["isYearly"] = true,
 					},
 					{	-- Bird Friends [Alliance - Kul Tiran]
 						["questID"] = 53863, 	-- Bird Friends
@@ -612,6 +620,7 @@ _.Holidays =
 							1161,	-- Boralus
 						},
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Call on the Farseer [Alliance - Draenei]
 						["questID"] = 10968,	-- Call on the Farseer
@@ -632,6 +641,7 @@ _.Holidays =
 							111,	-- Shattrath City
 						},
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Children's Week [Alliance - Draenei - START]
 						["questID"] = 10943,	-- Children's Week [Alliance - Draenei Orphan]
@@ -644,6 +654,7 @@ _.Holidays =
 							111,	-- Shattrath City
 						},
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Children's Week [Alliance - Human - START]
 						["questID"] = 1468,		-- Children's Week
@@ -657,6 +668,7 @@ _.Holidays =
 							{ 56.31, 53.99, 84 },	-- Orphan Matron Nightingale
 						},
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Children's Week [Alliance - Kul Tiran - START]
 						["questID"] = 53811,	-- Children's Week
@@ -670,6 +682,7 @@ _.Holidays =
 							{ 48.01, 40.28, 1161 },	-- Orphan Matron Westerson
 						},
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Children's Week [Horde - Blood Elf - START]
 						["questID"] = 10942,	-- Children's Week [Horde - Blood Elf Orphan]
@@ -683,6 +696,7 @@ _.Holidays =
 							111,	-- Shattrath City
 						},
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Children's Week [Horde - Orc - START]
 						["questID"] = 172,	-- Children's Week [Horde]
@@ -697,6 +711,7 @@ _.Holidays =
 							86,	-- Orgrimmar: The Drag
 						},
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Children's Week [Horde - Zandalari - START]
 						["questID"] = 131346,	-- Children's Week
@@ -712,6 +727,7 @@ _.Holidays =
 							{ 54.64, 84.61, 1165 },	-- Caretaker Padae
 						},
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Cruisin' the Chasm [Alliance - Human]
 						["questID"] = 29093,	-- Cruisin' the Chasm
@@ -730,6 +746,7 @@ _.Holidays =
 							84,	-- Stormwind City
 						},
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Hch'uu and the Mushroom People [Horde - Blood Elf]
 						["questID"] = 10945,	-- Hch'uu and the Mushroom People
@@ -748,6 +765,7 @@ _.Holidays =
 							111,	-- Shattrath City
 						},
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Home Of The Bear-Men [Neutral - Wolvar]
 						["questID"] = 13930,	-- Home Of The Bear-Men
@@ -766,6 +784,7 @@ _.Holidays =
 							116,	-- Grizzly Hills
 							125,	-- Dalaran (Northrend)
 						},
+						["isYearly"] = true,
 					},
 					{	-- Hunting For Gold [Horde - Zandalari]
 						["questID"] = 53969,	-- Hunting for Gold
@@ -787,6 +806,7 @@ _.Holidays =
 							{ 28.91, 88.76, 864 },	-- The Golden Isle
 						},
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Jheel is at Aeris Landing! [Alliance - Draenei]
 						["questID"] = 10954,	-- Jheel is at Aeris Landing!
@@ -805,6 +825,7 @@ _.Holidays =
 							111,	-- Shattrath City
 						},
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Let's Go Fly a Kite [Alliance - Human]
 						["questID"] = 29117,	-- Let's Go Fly a Kite
@@ -840,6 +861,7 @@ _.Holidays =
 							84,	-- Stormwind City
 						},
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Let's Go Fly a Kite [Horde - Orc]
 						["questID"] = 29190,	-- Let's Go Fly a Kite
@@ -872,6 +894,7 @@ _.Holidays =
 							86,	-- Orgrimmar: The Drag
 						},
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Loa of Winds [Horde - Zandalari]
 						["questID"] = 53966,	-- Loa of Winds
@@ -892,6 +915,7 @@ _.Holidays =
 							{ 70.54, 49.11, 865 },	-- Pterror Rise
 						},
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Little Orphan Kekek Of The Wolvar [Neutral - Wolvar - START]
 						["questID"] = 13927,	-- Little Orphan Kekek Of The Wolvar
@@ -904,6 +928,7 @@ _.Holidays =
 						["maps"] = {
 							125,	-- Dalaran (Northrend)
 						},
+						["isYearly"] = true,
 					},
 					{	-- Little Orphan Roo Of The Oracles [Neutral - Oracles - START]
 						["questID"] = 13926,	-- Little Orphan Roo Of The Oracles
@@ -931,6 +956,7 @@ _.Holidays =
 						},
 						["maps"] = { 89, },	-- Darnassus
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Meeting a Great One [Neutral - Oracles]
 						["questID"] = 13956,	-- Meeting a Great One
@@ -952,6 +978,7 @@ _.Holidays =
 							119,	-- Sholazar Basin
 							125,	-- Dalaran (Northrend)
 						},
+						["isYearly"] = true,
 					},
 					{	-- Now, When I Grow Up... [Horde - Blood Elf]
 						["questID"] = 11975,	-- Now, When I Grow Up...
@@ -971,6 +998,7 @@ _.Holidays =
 							111,	-- Shattrath City
 						},
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Our New Friends [Alliance - Human]
 						["questID"] = 54130,	-- Our New Friends
@@ -987,6 +1015,7 @@ _.Holidays =
 							84,	-- Stormwind City
 						},
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Playmates! [Neutral - Oracles]
 						["questID"] = 13950,	-- Playmates!
@@ -1005,6 +1034,7 @@ _.Holidays =
 							114,	-- Borean Tundra
 							125,	-- Dalaran (Northrend)
 						},
+						["isYearly"] = true,
 					},
 					{	-- Playmates! [Neutral - Wolvar]
 						["questID"] = 13951,	-- Playmates!
@@ -1021,6 +1051,7 @@ _.Holidays =
 							115,	-- Dragonblight
 							125,	-- Dalaran (Northrend)
 						},
+						["isYearly"] = true,
 					},
 					{	-- Return to the Hall of Castes [Horde - Zandalari - FINAL]
 						["questID"] = 53971,	-- Return to the Hall of Castes
@@ -1107,6 +1138,7 @@ _.Holidays =
 								["description"] = "Contains 5 gold.",
 							},
 						},
+						["isYearly"] = true,
 					},
 					{	-- Return to the Orphanage [Alliance - Kul Tiran - FINAL]
 						["questID"] = 53865, 	-- Return to the Orphanage
@@ -1191,6 +1223,7 @@ _.Holidays =
 								["description"] = "Contains 5 gold.",
 							},
 						},
+						["isYearly"] = true,
 					},
 					{	-- Ridin' the Rocketway [Horde - Orc]
 						["questID"] = 29146,	-- Ridin' the Rocketway
@@ -1209,6 +1242,7 @@ _.Holidays =
 							86,	-- Orgrimmar: The Drag
 						},
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Shapeshifters [Alliance - Kul Tiran]
 						["questID"] = 53864,	-- Shapeshifters
@@ -1230,6 +1264,7 @@ _.Holidays =
 							1161,	-- Boralus
 						},
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Strong New Allies [Horde - Orc]
 						["questID"] = 54146,	-- Strong New Allies
@@ -1247,6 +1282,7 @@ _.Holidays =
 							86,	-- Orgrimmar: The Drag
 						},
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- The Banshee Queen [Horde - Orc] REMOVED
 						["questID"] = 29167,	-- The Banshee Queen
@@ -1262,6 +1298,7 @@ _.Holidays =
 							90,	-- Undercity
 						},
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- The Biggest Diamond Ever! [Alliance - Human]
 						["questID"] = 29106,	-- The Biggest Diamond Ever!
@@ -1283,6 +1320,7 @@ _.Holidays =
 						},
 						["maps"] = { 87, },	-- Ironforge
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- The Biggest Tree Ever! [Neutral - Oracles]
 						["questID"] = 13929,	-- The Biggest Tree Ever!
@@ -1318,6 +1356,7 @@ _.Holidays =
 							115,	-- Dragonblight
 							125,	-- Dalaran (Northrend)
 						},
+						["isYearly"] = true,
 					},
 					{	-- The Bronze Dragonshrine [Neutral - Wolvar]
 						["questID"] = 13934,	-- The Bronze Dragonshrine
@@ -1335,6 +1374,7 @@ _.Holidays =
 							115,	-- Dragonblight
 							125,	-- Dalaran (Northrend)
 						},
+						["isYearly"] = true,
 					},
 					{	-- The Dragon Queen [Neutral - Oracles]
 						["questID"] = 13954,	-- The Dragon Queen
@@ -1353,6 +1393,7 @@ _.Holidays =
 							115,	-- Dragonblight
 							125,	-- Dalaran (Northrend)
 						},
+						["isYearly"] = true,
 					},
 					{	-- The Dragon Queen [Neutral - Wolvar]
 						["questID"] = 13955,	-- The Dragon Queen
@@ -1371,6 +1412,7 @@ _.Holidays =
 							115,	-- Dragonblight
 							125,	-- Dalaran (Northrend)
 						},
+						["isYearly"] = true,
 					},
 					{	-- The Fallen Chieftain [Horde - Orc]
 						["questID"] = 29176,	-- The Fallen Chieftain
@@ -1390,6 +1432,7 @@ _.Holidays =
 							88,	-- Thunder Bluff
 						},
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- The Frogmarsh [Horde - Zandalari]
 						["questID"] = 53967,	-- The Frogmarsh
@@ -1410,6 +1453,7 @@ _.Holidays =
 							{ 73.26, 53.42, 863 },	-- The Frogmarsh
 						},
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- The Mighty Hemet Nesingwary [Neutral - Wolvar]
 						["questID"] = 13957,	-- The Mighty Hemet Nesingwary
@@ -1428,6 +1472,7 @@ _.Holidays =
 							119,	-- Sholazar Basin
 							125,	-- Dalaran (Northrend)
 						},
+						["isYearly"] = true,
 					},
 					{	-- The Mountain Folk [Alliance - Kul Tiran]
 						["questID"] = 53859, 	-- The Mountain Folk
@@ -1445,6 +1490,7 @@ _.Holidays =
 							895,	-- Tiragarde Sound
 						},
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- The Seat of the Naaru [Alliance - Draenei]
 						["questID"] = 10956,	-- The Seat of the Naaru
@@ -1465,6 +1511,7 @@ _.Holidays =
 							111,	-- Shattrath City
 						},
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- The Sethrak Queen [Horde - Zandalari]
 						["questID"] = 53970,	-- The Sethrak Queen
@@ -1488,6 +1535,7 @@ _.Holidays =
 							{ 26.77, 52.57, 864 },	-- Sanctuary of the Devoted
 						},
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- The Shifting Pack [Horde - Zandalari]
 						["questID"] = 53968,	-- The Shifting Pack
@@ -1508,6 +1556,7 @@ _.Holidays =
 							{ 48.69, 31.76, 862 },	-- Lair of Gonk
 						},
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- The Squid Shrine [Alliance - Kul Tiran]
 						["questID"] = 53862, 	-- The Squid Shrine
@@ -1525,6 +1574,7 @@ _.Holidays =
 							942,	-- Stormsong Valley
 						},
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Time to Visit the Caverns [Alliance - Draenei]
 						["questID"] = 10962,	-- Time to Visit the Caverns
@@ -1546,6 +1596,7 @@ _.Holidays =
 							111,	-- Shattrath City
 						},
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Time to Visit the Caverns [Horde - Blood Elf]
 						["questID"] = 10963,	-- Time to Visit the Caverns
@@ -1568,6 +1619,7 @@ _.Holidays =
 							111,	-- Shattrath City
 						},
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Visit the Throne of the Elements [Horde - Blood Elf]
 						["questID"] = 10953,	-- Visit the Throne of the Elements
@@ -1589,6 +1641,7 @@ _.Holidays =
 							111,	-- Shattrath City
 						},
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- Yo Ho, Yo Ho! [Alliance - Kul Tiran]
 						["questID"] = 53861, 	-- Yo Ho, Yo Ho!
@@ -1606,6 +1659,7 @@ _.Holidays =
 							895,	-- Tiragarde Sound
 						},
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- You Scream, I Scream... [Alliance - Human]
 						["questID"] = 29119,	-- You Scream, I Scream...
@@ -1629,6 +1683,7 @@ _.Holidays =
 							84,	-- Stormwind City
 						},
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					},
 					{	-- You Scream, I Scream... [Horde - Orc]
 						["questID"] = 29191,	-- You Scream, I Scream...
@@ -1651,6 +1706,7 @@ _.Holidays =
 							86,	-- Orgrimmar: The Drag
 						},
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					},
 					-- To Dorn
 					--[[

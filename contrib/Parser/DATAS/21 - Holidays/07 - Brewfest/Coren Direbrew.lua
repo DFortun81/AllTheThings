@@ -76,11 +76,13 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["provider"] = { "i", 38280 },	-- Direbrew's Dire Brew
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 24,
+					["isYearly"] = true,
 				}),
 				q(12492, {	-- Direbrew's Dire Brew
 					["provider"] = { "i", 38281 },	-- Direbrew's Dire Brew
 					["races"] = HORDE_ONLY,
 					["u"] = 24,
+					["isYearly"] = true,
 				}),
 			},
 		}),

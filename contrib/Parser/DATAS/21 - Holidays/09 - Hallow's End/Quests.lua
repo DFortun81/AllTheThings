@@ -207,7 +207,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					{	-- Hallow's End Treats for Spoops!
 						["questID"] = 8312,	-- Hallow's End Treats for Spoops!
 						["repeatable"] = true,
-						["isDaily"] = true,
+						["isYearly"] = true,
 						["provider"] = { "n", 15309 },			-- Spoops
 						["coords"] = {
 							{ 62.13, 66.44 },
@@ -464,6 +464,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["races"] = ALLIANCE_ONLY,
 						["u"] = 26,				-- Hallow's End Filter
 						["sourceQuests"] = { 8311 },	-- Hallow's End Treats for Jesper!
+						["repeatable"] = true,
 					}),
 					q(8355, {	-- Incoming Gumdrop (Alliance)
 						["provider"] = { "n", 5111 },	-- Innkeeper Firebrew
@@ -471,6 +472,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["races"] = ALLIANCE_ONLY,
 						["u"] = 26,				-- Hallow's End Filter
 						["sourceQuests"] = { 8311 },	-- Hallow's End Treats for Jesper!
+						["repeatable"] = true,
 					}),
 					q(8353, {	-- Chicken Clucking for a Mint (Alliance)
 						["provider"] = { "n", 6740 },	-- Innkeeper Allison
@@ -478,6 +480,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["races"] = ALLIANCE_ONLY,
 						["u"] = 26,				-- Hallow's End Filter
 						["sourceQuests"] = { 8311 },	-- Hallow's End Treats for Jesper!
+						["repeatable"] = true,
 					}),
 					q(8357, {	-- Dancing for Marzipan (Alliance)
 						["provider"] = { "n", 6735 },	-- Innkeeper Saelienne
@@ -485,6 +488,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["races"] = ALLIANCE_ONLY,
 						["u"] = 26,				-- Hallow's End Filter
 						["sourceQuests"] = { 8311 },	-- Hallow's End Treats for Jesper!
+						["repeatable"] = true,
 					}),
 					q(8311, {	-- Hallow's End Treats for Jesper!
 						["provider"] = { "n", 15310 },	-- Jesper
@@ -492,6 +496,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["races"] = ALLIANCE_ONLY,
 						["u"] = 26,				-- Hallow's End Filter
 						["sourceQuests"] = { 8356, 8355, 8353, 8357 },	-- Flexing for Nougat, Incoming Gumdrop, Chicken Clucking for a Mint, Dancing for Marzipan (Alliance)
+						["isYearly"] = true,
 					}),
 					q(8359, {	-- Flexing for Nougat (Horde)
 						["provider"] = { "n", 6929 },	-- Innkeeper Gryshka
@@ -499,6 +504,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["races"] = HORDE_ONLY,
 						["u"] = 26,				-- Hallow's End Filter
 						["sourceQuests"] = { 8312 },	-- Hallow's End Treats for Spoops!
+						["repeatable"] = true,
 					}),
 					q(8358, {	-- Incoming Gumdrop (Horde)
 						["provider"] = { "n", 11814 },	-- Kali Remik
@@ -506,6 +512,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["races"] = HORDE_ONLY,
 						["u"] = 26,				-- Hallow's End Filter
 						["sourceQuests"] = { 8312 },	-- Hallow's End Treats for Spoops!
+						["repeatable"] = true,
 					}),
 					q(8354, {	-- Chicken Clucking for a Mint (Horde)
 						["provider"] = { "n", 6741 },	-- Innkeeper Norman
@@ -513,6 +520,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["races"] = HORDE_ONLY,
 						["u"] = 26,				-- Hallow's End Filter
 						["sourceQuests"] = { 8312 },	-- Hallow's End Treats for Spoops!
+						["repeatable"] = true,
 					}),
 					q(8360, {	-- Dancing for Marzipan (Horde)
 						["provider"] = { "n", 6746 },	-- Innkeeper Pala
@@ -520,6 +528,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["races"] = HORDE_ONLY,
 						["u"] = 26,				-- Hallow's End Filter
 						["sourceQuests"] = { 8312 },	-- Hallow's End Treats for Spoops!
+						["repeatable"] = true,
 					}),
 					q(8312, {	-- Hallow's End Treats for Spoops!
 						["provider"] = { "n", 15309 },	-- Spoops
@@ -527,6 +536,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						["races"] = HORDE_ONLY,
 						["u"] = 26,				-- Hallow's End Filter
 						["sourceQuests"] = { 8359, 8358, 8354, 8360 },	-- Flexing for Nougat, Incoming Gumdrop, Chicken Clucking for a Mint, Dancing for Marzipan (Horde)
+						["isYearly"] = true,
 					}),
 --[[				-- To Do
 					q(29400, {	-- A Season for Celebration

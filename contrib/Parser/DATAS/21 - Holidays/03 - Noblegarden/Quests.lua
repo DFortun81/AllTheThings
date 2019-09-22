@@ -27,6 +27,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 						["itemID"] = 45067,	-- Egg Basket
 					},
 				},
+				["isYearly"] = true,
 			},
 			{	--	A Tisket, a Tasket, a Noblegarden Basket [Horde]
 				["questID"] = 13503,	-- A Tisket, a Tasket, a Noblegarden Basket
@@ -50,6 +51,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 						["itemID"] = 45067,	-- Egg Basket
 					},
 				},
+				["isYearly"] = true,
 			},
 			{	--	Spring Gathers [Alliance]
 				["questID"] = 13484,	-- Spring Gatherers
@@ -115,6 +117,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 					83,		-- Winterspring
 				},
 				["races"] = ALLIANCE_ONLY,
+				["isYearly"] = true,
 			},
 			{	--	Spring Gathers [Horde]
 				["questID"] = 13483,	-- Spring Gatherers
@@ -188,6 +191,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 					83,		-- Winterspring
 				},
 				["races"] = HORDE_ONLY,
+				["isYearly"] = true,
 			},
 			{	--	The Great Egg Hunt [Alliance]
 				["questID"] = 13480,	-- The Great Egg Hunt

@@ -244,7 +244,7 @@ _.WorldEvents =
 				},
 			}),
 			q(29456, {	-- A Captured Banner
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "i", 71951 },	-- Banner of the Fallen
 				["coord"] = { 51.9, 60.9, 407 },
 				["lvl"] = 10,
@@ -261,7 +261,7 @@ _.WorldEvents =
 				["u"] = 40,	-- Legacy Quests
 			}),
 			q(29443, {	-- A Curious Crystal
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "i", 71635 },	-- Imbued Crystal
 				["coord"] = { 51.9, 60.9, 407 },
 				["lvl"] = 10,
@@ -277,7 +277,7 @@ _.WorldEvents =
 			q(29506, {	-- A Fizzy Fusion
 				["requireSkill"] = 171,	-- Alchemy
 				["description"] = "Requires |CFFFFD7005 Moonberry Juice|r to complete.",
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "n", 14844 },	-- Sylvannia
 				["coord"] = { 50.5, 69.5, 407 },
 				["g"] = {
@@ -287,7 +287,7 @@ _.WorldEvents =
 				},
 			}),
 			q(29444, {	-- An Exotic Egg
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "i", 71636 },	-- Monstrous Egg
 				["coord"] = { 51.1, 82.0, 407 },
 				["lvl"] = 10,
@@ -304,7 +304,7 @@ _.WorldEvents =
 				["u"] = 40,	-- Legacy Quests
 			}),
 			q(29445, {	-- An Intriguing Grimoire
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "i", 71637 },	-- Mysterious Grimoire
 				["coord"] = { 53.2, 75.8, 407 },
 				["lvl"] = 10,
@@ -318,7 +318,7 @@ _.WorldEvents =
 				},
 			}),
 			q(29446, {	-- A Wondrous Weapon
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "i", 71638 },	-- Ornate Weapon
 				["coord"] = { 51.9, 60.9, 407 },
 				["lvl"] = 10,
@@ -333,7 +333,7 @@ _.WorldEvents =
 			}),
 			q(29508, {	-- Baby Needs Two Pair of Shoes
 				["requireSkill"] = 164,	-- Blacksmithing
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "n", 14829 },	-- Yebb Neblegear
 				["coord"] = { 51.1, 82.0, 407 },
 				["g"] = {
@@ -349,7 +349,7 @@ _.WorldEvents =
 			q(29520, {	-- Banners, Banners Everywhere!
 				["requireSkill"] = 165,	-- Leatherworking
 				["description"] = "Requires |CFFFFD70010 Shiny Bauble|r, |CFFFFD7005 Coarse Thread|r, |CFFFFD7005 Blue Dye|r to complete.",
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "n", 10445 },	-- Selina Dourman
 				["coord"] = { 55.56, 55.03, 407 },
 				["g"] = {
@@ -363,14 +363,14 @@ _.WorldEvents =
 			}),
 			q(33354, {	-- Den Mother's Demise
 				["creatureID"] = 71992,	-- Moonfang
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "i", 105891 },	-- Moonfang's Pelt
 				["coord"] = { 39.3, 43.6, 407 },
 			}),
 			q(29517, {	-- Eyes on the Prizes
 				["requireSkill"] = 197,	-- Tailoring
 				["description"] = "Requires |CFFFFD7001 Coarse Thread|r, |CFFFFD7001 Red Dye|r, |CFFFFD7001 Blue Dye|r, to complete.",
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "n", 14841 },	-- Rinling
 				["coord"] = { 49.2, 60.7, 407 },
 				["g"] = {
@@ -381,7 +381,7 @@ _.WorldEvents =
 			}),
 			q(36481, {	-- Firebird's Challenge
 				["provider"] = { "n", 85546 },	-- Ziggie Sparks
-				["isDaily"] = true,
+				["isMonthly"] = true,
 				["coord"] = { 48.3, 71.3, 407 },
 				["g"] = {
 					ach(9252, {	-- Brood of Alysrazor
@@ -393,7 +393,7 @@ _.WorldEvents =
 			q(29507, {	-- Fun for the Little Ones
 				["requireSkill"] = 794,	-- Archaeology
 				["description"] = "Requires |CFFFFD70050 Fossil Archaeology Fragments|r to complete.",
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "n", 14847 },	-- Professor Thaddeus
 				["coord"] = { 51.9, 60.9, 407 },
 				["g"] = {
@@ -407,7 +407,7 @@ _.WorldEvents =
 			}),
 			q(29514, {	-- Herbs for Healing
 				["requireSkill"] = 182,	-- Herbalism
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "n", 14833 },	-- Chronos
 				["coord"] = { 54.9, 70.7, 407 },
 				["g"] = {
@@ -448,7 +448,7 @@ _.WorldEvents =
 			}),
 			q(29516, {	-- Keeping the Faire Sparkling
 				["requireSkill"] = 755,	-- Jewelcrafting
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "n", 14833 },	-- Chronos
 				["coord"] = { 54.9, 70.7, 407 },
 				["g"] = {
@@ -475,7 +475,7 @@ _.WorldEvents =
 			}),
 			q(29761, {	-- Master Pit Fighter
 				["sourceQuests"] = { 29760 },	-- Pit Fighter
-				["collectible"] = false,
+				["repeatable"] = true,
 				["provider"] = { "n", 55402 },	-- Korgol Crushskull
 				["coord"] = { 47.3, 78.9, 407 },
 				["g"] = {
@@ -506,7 +506,6 @@ _.WorldEvents =
 				["coord"] = { 53.2, 87.6, 407 },
 			}),
 			q(29760, {	-- Pit Fighter
-				["collectible"] = false,
 				["provider"] = { "n", 55402 },	-- Korgol Crushskull
 				["coord"] = { 47.3, 78.9, 407 },
 				["g"] = {
@@ -519,7 +518,7 @@ _.WorldEvents =
 			}),
 			q(29512, {	-- Putting the Carnies Back Together Again
 				["requireSkill"] = 129,	-- First Aid
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "n", 14833 },	-- Chronos
 				["coord"] = { 54.9, 70.7, 407 },
 				["u"] = 40,	-- Legacy Quests — First Aid removed in 8.0.1 BfA Prepatch
@@ -530,7 +529,7 @@ _.WorldEvents =
 			q(29509, {	-- Putting the Crunch in the Frog
 				["requireSkill"] = 185,	-- Cooking
 				["description"] = "Requires |CFFFFD7005 Simple Flour|r to complete.",
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "n", 14845 },	-- Stamp Thunderhorn
 				["coord"] = { 52.8, 67.9, 407 },
 				["g"] = {
@@ -544,7 +543,7 @@ _.WorldEvents =
 			}),
 			q(29510, {	-- Putting Trash to Good Use
 				["requireSkill"] = 333,	-- Enchanting
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "n", 14822 },	-- Sayge
 				["coord"] = { 53.2, 75.8, 407 },
 				["g"] = {
@@ -558,7 +557,7 @@ _.WorldEvents =
 			}),
 			q(29518, {	-- Rearm, Reuse, Recycle
 				["requireSkill"] = 186,	-- Mining
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "n", 14841 },	-- Rinling
 				["coord"] = { 49.2, 60.7, 407 },
 				["g"] = {
@@ -606,7 +605,7 @@ _.WorldEvents =
 			}),
 			q(29513, {	-- Spoilin' for Salty Sea Dogs
 				["requireSkill"] = 356,	-- Fishing
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "n", 14845 },	-- Stamp Thunderhorn
 				["coord"] = { 52.8, 67.9, 407 },
 				["g"] = {
@@ -620,7 +619,7 @@ _.WorldEvents =
 			}),
 			q(29511, {	-- Talking' Tonks
 				["requireSkill"] = 202,	-- Engineering
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "n", 14841 },	-- Rinling
 				["coord"] = { 49.2, 60.7, 407 },
 				["g"] = {
@@ -631,7 +630,7 @@ _.WorldEvents =
 			}),
 			q(29519, {	-- Tan My Hide
 				["requireSkill"] = 393,	-- Skinning
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "n", 14833 },	-- Chronos
 				["coord"] = { 54.9, 70.7, 407 },
 				["g"] = {
@@ -655,12 +654,12 @@ _.WorldEvents =
 				},
 			}),
 			q(29433, {	-- Test Your Strength
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "n", 14832 },	-- Kerri Hicks
 				["coord"] = { 47.9, 67.1, 407 },
 			}),
 			q(29458, {	-- The Captured Journal
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "i", 71953 },	-- Fallen Adventurer's Journal
 				["coord"] = { 51.9, 60.9, 407 },
 				["lvl"] = 10,
@@ -674,7 +673,7 @@ _.WorldEvents =
 				},
 			}),
 			q(29457, {	-- The Enemy's Insignia
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "i", 71952 },	-- Captured Insignia
 				["coord"] = { 51.9, 60.9, 407 },
 				["lvl"] = 10,
@@ -700,7 +699,7 @@ _.WorldEvents =
 				},
 			}),
 			q(29451, {	-- The Master Strategist
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "i", 71715 },	-- A Treatise on Strategy
 				["coord"] = { 51.9, 60.9, 407 },
 				["lvl"] = 10,
@@ -821,7 +820,7 @@ _.WorldEvents =
 				},
 			}),
 			q(29464, { 	-- Tools of Divination
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "i", 71716 },	-- Soothsayer's Runes
 				["coord"] = { 51.9, 60.9, 407 },
 				["lvl"] = 60,
@@ -842,7 +841,7 @@ _.WorldEvents =
 			q(29515, {	-- Writing the Future
 				["requireSkill"] = 773,	-- Inscription
 				["description"] = "Requires |CFFFFD7005 Light Parchment|r to complete.",
-				["repeatable"] = true,
+				["isMonthly"] = true,
 				["provider"] = { "n", 14822 },	-- Sayge
 				["coord"] = { 53.2, 75.8, 407 },
 				["g"] = {

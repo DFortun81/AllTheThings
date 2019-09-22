@@ -14,6 +14,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["provider"] = { "n", 13433 },	-- Wulmort Jinglepocket
 						["maps"] = { 87 },	-- Ironforge
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					}),
 					q(7023,  {	-- Greatfather Winter is Here!
 						["providers"] = {
@@ -27,6 +28,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 							579,	-- Lunarfall
 						},
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					}),
 					q(7025,  {	-- Treats for Greatfather Winter
 						["provider"] = { "n", 13444 },	-- Greatfather Winter
@@ -36,6 +38,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 							7023,	-- Greatfather Winter is Here!
 						},	
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					}),
 					q(7043,  {	-- You're a Mean One... (Alliance)
 						["providers"] = {
@@ -126,33 +129,39 @@ _.Holidays = bubbleDown({["u"] = 29},
 								},
 							}),
 						},
+						["isYearly"] = true,
 					}),
 					q(7062,  {	-- The Reason for the Season (Alliance)					
 						["provider"] = { "n", 1365 },	-- Goli Krumn
 						["maps"] = { 87 },	-- Ironforge
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					}),
 					q(7063,  {	-- The Feast of Winter Veil (Alliance)
 						["provider"] = { "n", 2916 },	-- Historian Karnik
 						["maps"] = { 87 },	-- Ironforge
 						["sourceQuest"] = 7062,	-- The Reason for the Season (Alliance)
 						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true,
 					}),
 					-- HORDE QUESTS --
 					q(6961,  {	-- Great-father Winter is Here!
 						["provider"] = { "n", 13418 },	-- Kaymard Copperpinch
 						["maps"] = { 85 },	-- Orgrimmar
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					}),
 					q(7021,  {	-- Great-father Winter is Here!
 						["provider"] = { "n", 13431 },	-- Whulwert Copperpinch
 						["maps"] = { 88 },	-- Thunder Bluff
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					}),
 					q(7024,  {	-- Great-father Winter is Here!
 						["provider"] = { "n", 13429 },	-- Nardstrum Copperpinch
 						["maps"] = { 90 },	-- Undercity
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					}),
 					q(39651, {	-- Grumpus
 						["provider"] = { "n", 96735 },	-- Pizzle
@@ -184,11 +193,13 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["maps"] = { 85 },	-- Orgrimmar
 						["sourceQuest"] = 6964,	-- The Reason for the Season (Horde)
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					}),
 					q(6964,  {	-- The Reason for the Season (Horde)
 						["provider"] = { "n", 9550 },	-- Furmund
 						["maps"] = { 85 },	-- Orgrimmar
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					}),
 					q(6962,  {	-- Treats for Great-father Winter
 						["provider"] = { "n", 13445 },	-- Great-father Winter
@@ -199,6 +210,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 							7024,	-- Great-father Winter is Here!
 						},
 						["races"] = HORDE_ONLY,
+						["isYearly"] = true,
 					}),
 					q(6983,  {	-- You're a Mean One... (Horde)
 						["providers"] = {
@@ -307,6 +319,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 								},
 							}),
 						},
+						["isYearly"] = true,
 					}),
 --[[				-- Legacy Winter Veil Quests
 					q(8799, {	-- The Hero of the Day
@@ -315,6 +328,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["races"] = HORDE_ONLY,
 						["maps"] = { 85 },	-- Orgrimmar
 						["u"] = 40,
+						["isYearly"] = true,
 						}),
 					q(8763, {	-- The Hero of the Day
 						["provider"] = { "n", 13433 },	-- Wulmort Jinglepocket
@@ -322,6 +336,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["races"] = ALLIANCE_ONLY,
 						["maps"] = { 87 },	-- Ironforge
 						["u"] = 40,
+						["isYearly"] = true,
 					}),
 ]]--
 				},
