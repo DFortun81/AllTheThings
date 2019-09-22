@@ -459,7 +459,6 @@ _.WorldEvents =
 			}),
 			q(33756, {	-- Let's Keep Racing
 				["sourceQuests"] = { 37910 },	-- Welcome to the Darkmoon Races
-				["repeatable"] = true,
 				["provider"] = { "n", 74056 },	-- Malle Earnhard
 				["isDaily"] = true,
 				["coord"] = { 48.9, 88.3, 407 },
@@ -500,7 +499,6 @@ _.WorldEvents =
 			}),
 			q(37868, {	-- More Big Racing!
 				["sourceQuests"] = { 37911 },	-- The Real Big Race
-				["repeatable"] = true,
 				["provider"] = { "n", 90473 },	-- Patti Earnhard
 				["isDaily"] = true,
 				["coord"] = { 53.2, 87.6, 407 },

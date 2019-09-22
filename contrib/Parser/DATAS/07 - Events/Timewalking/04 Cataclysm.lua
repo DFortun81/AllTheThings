@@ -11,7 +11,6 @@ _.WorldEvents =
 					["itemID"] = 133378,	-- Smoldering Timewarped Ember [Alliance]
 					["questID"] = 40786,	-- The Smoldering Ember
 					["provider"] = { "n", 101759 },	-- Kiatke
-					["repeatable"] = true,
 					["isWeekly"] = true,
 					["races"] = ALLIANCE_ONLY,
 				},
@@ -19,7 +18,6 @@ _.WorldEvents =
 					["itemID"] = 133377, 	-- Smoldering Timewarped Ember [Horde]
 					["questID"] = 40787, 	-- The Smoldering Ember
 					["provider"] = { "n", 101759 },	-- Kiatke
-					["repeatable"] = true,
 					["isWeekly"] = true,
 					["races"] = HORDE_ONLY,
 				},

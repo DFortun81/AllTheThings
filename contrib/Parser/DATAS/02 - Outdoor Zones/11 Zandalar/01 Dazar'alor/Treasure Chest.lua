@@ -10,7 +10,6 @@ _.Zones =
 				o(9999999, {	-- Treasure Chest
 					["questID"] = 49142,
 					["isDaily"] = true,
-					["repeatable"] = true,
 					["coord"] = { 52.24, 12.36, 1163 },
 				}),
 			}),

@@ -366,7 +366,6 @@ _.Zones =
 				}),
 		--[[	Listed under Expansion Features>Island>Quests
 				q(53435, {	-- Azerite for the Horde
-					["repeatable"] = true,
 					["isWeekly"] = true,
 					["races"] = HORDE_ONLY,
 					["coord"] = { 44.60, 95.40, 1163 },

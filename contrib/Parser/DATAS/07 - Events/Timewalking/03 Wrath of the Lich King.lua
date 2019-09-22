@@ -10,14 +10,12 @@ _.WorldEvents =
 				{	-- Disturbance Detected: Ulduar
 					["questID"] = 50316,	-- Disturbance Detected: Ulduar
 					["provider"] = { "n", 130654 },	-- Vormu
-					["repeatable"] = true,
 					["isWeekly"] = true,
 				},
 				{	-- Frigid Timewarped Prism
 					["itemID"] = 129928,	-- Frigid Timewarped Prism
 					["questID"] = 40173,	-- The Unstable Prism
 					["provider"] = { "n", 98690 },	-- Auzin
-					["repeatable"] = true,
 					["isWeekly"] = true,
 				},
 				n(98690, { 	-- Auzin <Timewalking Vendor>

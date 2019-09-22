@@ -215,7 +215,6 @@ _.Zones =
 							["coords"] = {
 								{ 51.71, 95.55, 1165 },
 							},
-							["repeatable"] = true,
 							["isWeekly"] = true,
 						}),
 						q(53335, {	-- Wartime Donation: War Resources

@@ -18,7 +18,6 @@ _.ExpansionFeatures =
 			n(-17, {	-- Quests
 				["groups"] = {
 					q(53436, { 	-- Azerite for the Alliance
-						["repeatable"] = true,
 						["isWeekly"] = true,
 						["coord"] = { 66.6, 35.5, 1161 },
 						["races"] = ALLIANCE_ONLY,
@@ -36,7 +35,6 @@ _.ExpansionFeatures =
 						["maps"] = { 1161 },	-- Boralus
 					}),
 					q(53435, {	-- Azerite for the Horde
-						["repeatable"] = true,
 						["isWeekly"] = true,
 						["races"] = HORDE_ONLY,
 						["coord"] = { 44.60, 95.40, 1163 },

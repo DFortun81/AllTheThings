@@ -13,7 +13,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["g"] = {
 					{	--  Under the Crooked Tree
 						["questID"] = 43162,	-- Under the Crooked Tree
-						["repeatable"] = true,
 						["isDaily"] = true,
 						["provider"] = { "n", 109734 },		-- Hag of the Crooked Tree
 						["sourceQuests"] = {
@@ -137,7 +136,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 					--Dailes!! UC
 					{	-- Clean Up in Undercity
 						["questID"] = 29375,	-- Clean Up in Undercity
-						["repeatable"] = true,
 						["isDaily"] = true,
 						["provider"] = { "n", 53763 },			-- Candace Fenlow
 						["coords"] = {
@@ -155,7 +153,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 					},
 					{	-- Stink Bombs Away!
 						["questID"] = 29374,	--- Stink Bombs Away!
-						["repeatable"] = true,
 						["isDaily"] = true,
 						["provider"] = { "n", 53763 },			-- Candace Fenlow
 						["coords"] = {
@@ -206,7 +203,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 					--Quests!! UC
 					{	-- Hallow's End Treats for Spoops!
 						["questID"] = 8312,	-- Hallow's End Treats for Spoops!
-						["repeatable"] = true,
 						["isYearly"] = true,
 						["provider"] = { "n", 15309 },			-- Spoops
 						["coords"] = {
@@ -227,7 +223,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 					{	-- Fire Training [Durotaur]
 						["questID"] = 11361,	-- Fire Training
 						["provider"] = { "n", 23973 },			-- Masked Oprhan Matron
-						["repeatable"] = true,
 						["isDaily"] = true,
 						["coords"] = {
 							{ 52.58, 41.21 },	-- Durotaur
@@ -250,7 +245,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 					{	-- Fire Training [Elwynn Forest]
 						["questID"] = 11450,	-- Fire Training
 						["provider"] = { "n", 23973 },			-- Masked Oprhan Matron
-						["repeatable"] = true,
 						["isDaily"] = true,
 						["coords"] = {
 							{ 52.58, 41.21 },	-- Durotaur
@@ -273,7 +267,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 					{	-- Fire Training [Tirisfal Glades]
 						["questID"] = 11449,	-- Fire Training
 						["provider"] = { "n", 23973 },			-- Masked Oprhan Matron
-						["repeatable"] = true,
 						["isDaily"] = true,
 						["coords"] = {
 							{ 52.58, 41.21 },	-- Durotaur
@@ -292,7 +285,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 					{	-- "Let the Fires Come!"
 						["questID"] = 12139,	-- "Let the Fires Come!"
 						["provider"] = { "n", 23973 },			-- Masked Oprhan Matron
-						["repeatable"] = true,
 						["isDaily"] = true,
 						["coords"] = {
 							{ 47.21, 46.61 },	-- Eversong Woods
@@ -318,7 +310,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 					{	-- Stop the Fires!
 						["questID"] = 11219,	-- Stop the Fires!
 						["provider"] = { "n", 23973 },			-- Masked Oprhan Matron
-						["repeatable"] = true,
 						["isDaily"] = true,
 						["coords"] = {
 							{ 60.81, 53.61 },	-- Tirisfal Glades
