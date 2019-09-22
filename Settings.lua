@@ -79,6 +79,7 @@ local GeneralSettingsBase = {
 		["MainOnly"] = false,
 		["DebugMode"] = false,
 		["Repeatable"] = false,
+		["RepeatableFirstTime"] = false,
 		["AccountWide:Achievements"] = true,
 		-- ["AccountWide:BattlePets"] = true,
 		["AccountWide:FlightPaths"] = true,
@@ -1336,7 +1337,7 @@ function(self)
 	end
 end);
 ShowMinimapButtonCheckBox:SetATTTooltip("Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.");
-ShowMinimapButtonCheckBox:SetPoint("TOPLEFT", AchievementsAccountWideCheckBox, "TOPLEFT", 160, 16);
+ShowMinimapButtonCheckBox:SetPoint("TOPLEFT", AchievementsAccountWideCheckBox, "TOPLEFT", 160, 24);
 
 local MinimapButtonStyleCheckBox = settings:CreateCheckBox("Use the Old Minimap Style",
 function(self)
@@ -1425,6 +1426,25 @@ end);
 ShowRepeatableThingsCheckBox:SetATTTooltip("Enable this option if you want to treat repeatable daily, weekly, and yearly quests as collectible. They will appear in the list like a regular collectible quest.\n\nNOTE: This is NOT intended to be used all the time, but if you're doing a set of dailies in a zone you've otherwise completed and need to be reminded of what is there, you can use this to see them.");
 ShowRepeatableThingsCheckBox:SetPoint("TOPLEFT", ShowIncompleteThingsCheckBox, "BOTTOMLEFT", 4, 4);
 
+local ShowRepeatableThingsFirstTimeCheckBox = settings:CreateCheckBox("Only first time",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("RepeatableFirstTime"));
+	if not settings:Get("Thing:Quests") or not settings:GetTooltipSetting("Repeatable") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("RepeatableFirstTime", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+ShowRepeatableThingsFirstTimeCheckBox:SetATTTooltip("Enable this option if you want to treat repeatable daily, weekly, yearly and world quests as collected if completed at least once, ignoring quest previously completed that has been reset.\n\nNOTE: Previously completed repeatable quest are only stored if you completed the quest with the addon active and that data will be lost if removed the addon data from WTF folder.");
+ShowRepeatableThingsFirstTimeCheckBox:SetPoint("TOPLEFT", ShowRepeatableThingsCheckBox, "BOTTOMLEFT", 4, 4);
+
 local FilterThingsByLevelCheckBox = settings:CreateCheckBox("Filter Things By Level",
 function(self)
 	self:SetChecked(settings:Get("Filter:ByLevel"));
@@ -1442,7 +1462,7 @@ function(self)
 	app:RefreshData();
 end);
 FilterThingsByLevelCheckBox:SetATTTooltip("Enable this setting if you only want to see content available to your current level character.\n\nNOTE: This is especially useful on Starter Accounts.");
-FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", ShowRepeatableThingsCheckBox, "BOTTOMLEFT", 0, -4);
+FilterThingsByLevelCheckBox:SetPoint("TOPLEFT", ShowRepeatableThingsFirstTimeCheckBox, "BOTTOMLEFT", 0, -4);
 
 local HideBoEItemsCheckBox = settings:CreateCheckBox("Hide BoE Items",
 function(self)
