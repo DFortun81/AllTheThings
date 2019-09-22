@@ -495,35 +495,35 @@ _.Zones =
 ]]--			
 				q(45924, {	-- Abyssal Monstrosity (Invasion WQ)
 					["lvl"] = 98,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45922, {	-- Agmozuul (Invasion wq)
 					["lvl"] = 98,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45812, {	-- Assault on Val'sharah (Invasion WQ "wrapper" - the one you get by zoning in)
 					["lvl"] = 98,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(44033, {	-- Aw, Nuts!
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45070, {	-- Barrels o' Fun
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(42080, {	-- Bastion of Bradensbrook
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(41961, {	-- Black Rook Holdings
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
 				q(42023, {	-- Black Rook Rumble
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["g"] = {
 						crit(3, {	-- Off the Top Rook
 							["achievementID"] = 11474,	-- Free For All, More For Me
@@ -532,96 +532,96 @@ _.Zones =
 				}),
 				q(41955, {	-- Bloodline of Stone
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(42075, {	-- Botanical Backlash
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(41484, {	-- Brimstone Destroyer
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 186,	-- Mining
 				}),
 				q(41486, {	-- Brimstone Destroyer
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 186,	-- Mining
 				}),
 				q(41487, {	-- Brimstone Destroyer
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 186,	-- Mining
 				}),
 				q(41336, {	-- Bristly Musken Hide
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 393,	-- Skinning
 				}),
 				q(41273, {	-- Buoy Fishing
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 356,	-- Fishing
 				}),
 				q(41532, {	-- Bushy Dreamleaf
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(42174, {	-- Champions of Elune
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43738, {	-- Coastal Gloom
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43344, {	-- DANGER: Aodh Witherpetal (rare wq)
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43346, {	-- DANGER: Ealdis (rare wq)
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43345, {	-- DANGER: Harbinger of Screams (rare wq)
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(42870, {	-- DANGER: Kathaw the Savage (rare wq)
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43152, {	-- DANGER: Lytheron (rare wq)
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(42927, {	-- DANGER: Malisandra (rare wq)
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43333, {	-- DANGER: Nylaathria the Forgotten (rare wq)
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43347, {	-- DANGER: Rabxach (rare wq)
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(41700, {	-- DANGER: Shalas'aman (rare wq)
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43101, {	-- DANGER: Witchdoctor Grgl-Brgl (rare wq)
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(41995, {	-- Dark Corruption
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
 				q(41860, {	-- Dealing with Satyrs
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
 					["groups"] = {
@@ -632,200 +632,200 @@ _.Zones =
 				}),
 				q(44884, {	-- Defense of Emerald Bay (Invasion WQ)
 					["lvl"] = 98,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(41291, {	-- Dreamleaf Cluster
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(41546, {	-- Dreamleaf Cluster
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(41295, {	-- Dreamleaf-Covered Ancient
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(46763, {	-- Drol'maz (Invasion WQ)
 					["lvl"] = 98,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43756, {	-- Enigmatic
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(41439, {	-- Exquisite Leystone Deposits
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 186,	-- Mining
 				}),
 				q(41567, {	-- Felhide
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 393,	-- Skinning
 				}),
 				q(41565, {	-- Felhide
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 393,	-- Skinning
 				}),
 				q(41566, {	-- Felhide
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 393,	-- Skinning
 				}),
 				q(41516, {	-- Felwort
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(41517, {	-- Felwort
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(41518, {	-- Felwort
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(41294, {	-- Flourishing Dreamleaf
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(41533, {	-- Fragrant Dreamleaf
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(45928, {	-- Gelthrak (Invasion wq)
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 98,
 				}),
 				q(45923, {	-- Gloth (Invasion wq)
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 98,
 				}),
 				q(42087, {	-- Green Horror
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43332, {	-- Grell in a Handbasket
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(42124, {	-- Hags and Hexes
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(41458, {	-- Hardened Leystone Outcropping
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 186,	-- Mining
 				}),
 				q(41612, {	-- Huge Mossgill Perch
 					["requireSkill"] = 356,	-- Fishing
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
 				q(41613, {	-- Huge Mossgill Perch
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 356,	-- Fishing
 				}),
 				q(41270, {	-- Huge Mossgill Perch
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 356,	-- Fishing
 				}),
 				q(45804, {	-- Impvasion! (Invasion wq)
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 98,
 				}),
 				q(42028, {	-- Into the Nightmare
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(41271, {	-- Into the Whirlpool
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 356,	-- Fishing
 				}),
 				q(41531, {	-- Iridescent Dreamleaf
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(42150, {	-- Kal'delar Naga Incursion
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(42094, {	-- Keepers of the Dream
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
 				q(43753, {	-- Ley Race
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(41503, {	-- Leystone Basilisks
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 186,	-- Mining
 				}),
 				q(41504, {	-- Leystone Basilisks
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 186,	-- Mining
 				}),
 				q(41502, {	-- Leystone Basilisks
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 186,	-- Mining
 				}),
 				q(45047, {	-- Like the Wind
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(41530, {	-- Lively Dreamleaf
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(41601, {	-- Lively Mossgill Perch
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 356,	-- Fishing
 				}),
 				q(41600, {	-- Lively Mossgill Perch
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 356,	-- Fishing
 				}),
 				q(41269, {	-- Lively Mosgill Perch
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 356,	-- Fishing
 				}),
 				q(44011, {	-- Lost Wisp
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(41965, {	-- Lunarwing Liberation
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(41440, {	-- Magnificent Leystone Deposits
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 186,	-- Mining
 				}),
 				q(41861, {	-- Meet The Maw
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
 					["groups"] = {
@@ -835,16 +835,16 @@ _.Zones =
 					},
 				}),
 				q(41334, {	-- Musky Bear Hide
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 393,	-- Skinning
 				}),
 				q(45925, {	-- Nez'val (Invasion wq)
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 98,
 				}),
 				q(41862, {	-- Only Pets Can Prevent Forest Fires
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
 					["groups"] = {
@@ -855,81 +855,81 @@ _.Zones =
 				}),
 				q(42145, {	-- Out of the Woodwork
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(41956, {	-- Petrified Acolytes
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(42819, {	-- Pocket Wizard
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
 				q(41964, {	-- Poisoned Waters
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(41337, {	-- Pristine Stag Hide
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 393,	-- Skinning
 				}),
 				q(43336, {	-- Purge of the Nightmare
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(41457, {	-- Radiant Leystone Outcropping
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 186,	-- Mining
 				}),
 				q(43324, {	-- Rage of the Owlbeasts
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(44730, {	-- Ravaged Dreams (Invasion WQ)
 					["lvl"] = 98,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(41496, {	-- Raw Leystone Seams
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 186,	-- Mining
 				}),
 				q(41333, {	-- Rugged Wolf Hide
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 393,	-- Skinning
 				}),
 				q(43709, {	-- Seal Clubbing
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(42076, {	-- Shadowfen Village
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(44895, {	-- Sharptalon Swarm!
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(41553, {	-- Slab of Bacon
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 185,	-- Cooking
 				}),
 				q(41554, {	-- Slab of Bacon
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 185,	-- Cooking
 				}),
 				q(41260, {	-- Slab of Bacon
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 185,	-- Cooking
 				}),
 				q(41855, {	-- Stand Up to Bullies
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
 					["groups"] = {
@@ -939,63 +939,63 @@ _.Zones =
 					},
 				}),
 				q(41441, {	-- Superior Leystone Deposits
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 186,	-- Mining
 				}),
 				q(41293, {	-- Supplies Needed: Dreamleaf
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(41316, {	-- Supplies Needed: Leystone
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 186,	-- Mining
 				}),
 				q(41339, {	-- Supplies Needed: Stonehide Leather
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["requireSkill"] = 393,	-- Skinning
 				}),
 				q(41996, {	-- Tangeld Nightmare
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(41980, {	-- Temple Defense
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(45921, {	-- Thal'xur (Invasion wq)
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 98,
 				}),
 				q(46265, {	-- The Fel and the Fawns (Invasion wq)
 					["lvl"] = 98,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43755, {	-- The Magic of Flight
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(42779, {	-- The Sleeping Corruption (Epic elite - Shar'thos)
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46261, {	-- The Taste of Corruption (Invasion WQ)
 					["lvl"] = 98,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(44759, {	-- The Vale of Dread (Invasion WQ)
 					["lvl"] = 98,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43303, {	-- Time to Rumble!
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(40279, {	-- Training with Durian
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
 					["groups"] = {
@@ -1006,16 +1006,16 @@ _.Zones =
 				}),
 				q(41992, {	-- Twisted Ash
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(46766, {	-- Ulgthax (Invasion wq)
 					["lvl"] = 98,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(41664, {	-- Vantus Rune Work Order: Dragons of Nightmare
 					["provider"] = { "n", 106901 },	-- Sylvia Hartshorn <Dreamweaver Emissary>
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 773,	-- Inscription
 					["groups"] = {
 						i(137770),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 3]
@@ -1023,114 +1023,114 @@ _.Zones =
 				}),
 				q(42077, {	-- Waking Nightmares
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(44301, {	-- WANTED: Bahagar
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(44305, {	-- WANTED: Bahagar (rare wq)
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(44299, {	-- WANTED: Darkshade
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(44304, {	-- WANTED: Darkshade (rare wq)
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(44298, {	-- WANTED: Dreadbog
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(44303, {	-- WANTED: Dreadbog (rare wq)
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
 				q(43460, {	-- WANTED: Kiranys Duskwhisper
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43629, {	-- WANTED: Kiranys Duskwhisper (rare wq)
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43458, {	-- WANTED: Perrexx
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43630, {	-- WANTED: Perrexx (rare wq)
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(44300, {	-- WANTED: Seersei
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(44302, {	-- WANTED: Seersei (rare wq)
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
 				q(43456, {	-- WANTED: Skul'vrax
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43631, {	-- WANTED: Skul'vrax (rare wq)
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43457, {	-- WANTED: Theryssia
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43632, {	-- WANTED: Theryssia (rare wq)
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43459, {	-- WANTED: Thondrax
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43633, {	-- WANTED: Thondrax (rare wq)
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43248, {	-- Warden Tower Assault: Darkfollow's Spire [A]
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43247, {	-- Warden Tower Assault: Darkfollow's Spire (H)
 					["lvl"] = 110,
 					["races"] = HORDE_ONLY,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43183, {	-- Warden Tower Assault: Starstalker's Point [A]
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(42070, {	-- Warden Tower Assault: Starstalker's Point (H)
 					["lvl"] = 110,
 					["races"] = HORDE_ONLY,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43784, {	-- What a Nightmare
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43759, {	-- Where's the Reef?
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(43758, {	-- Wherever I May Gloam
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(42190, {	-- Wildlife Conservationist
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
 					["groups"] = {
@@ -1141,7 +1141,7 @@ _.Zones =
 				}),
 				q(41652, {	-- Work Order: Deep Amber Loop
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 755,	-- Jewelcrafting
 					["g"] = {
 						i(137838),	-- Design: Deep Amber Loop (Rank 3)
@@ -1149,17 +1149,17 @@ _.Zones =
 				}),
 				q(41292, {	-- Work Order: Dreamleaf
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(41312, {	-- Work Order: Leystone
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 186,	-- Mining
 				}),
 				q(41634, {	-- Work Order: Leystone Armguards
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 164,	-- Blacksmithing
 					["g"] = {
 						i(123936),	-- Recipe: Leystone Armguards (Rank 3)
@@ -1167,13 +1167,13 @@ _.Zones =
 				}),
 				q(41272, {	-- Work Order: Mossgill Perch
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 356,	-- Fishing
 				}),
 				q(41676, {	-- Work Order: Pump-Action Bandage Gun
 					["requireSkill"] = 202,	-- Engineering
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["groups"] = {
 						i(137721),	-- Schematic: Pump-Action Bandage Gun (Rank 3)
 					},
@@ -1181,19 +1181,19 @@ _.Zones =
 				q(41646, {	-- Work Order: Silkweave Gloves
 					["requireSkill"] = 197,	-- Tailoring
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["groups"] = {
 						i(138012),	-- Pattern: Silkweave Gloves (Rank 3)
 					},
 				}),
 				q(41338, {	-- Work Order: Stonehide Leather
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 393,	-- Skinning
 				}),
 				q(41658, {	-- Work Order: Sylvan Elixirs
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 171,	-- Alchemy
 					["g"] = {
 						i(127921),	-- Ripe: Sylvan Elixir (Rank 2)
@@ -1202,7 +1202,7 @@ _.Zones =
 				q(41640, {	-- Work Order: Warhide Mask
 					["requireSkill"] = 165,	-- Leatherworking
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["groups"] = {
 						i(137878),	-- Recipe: Warhide Mask (Rank 3)
 					},
@@ -1210,19 +1210,19 @@ _.Zones =
 				q(41670, {	-- Work Order: Word of Agility
 					["requireSkill"] = 333,	-- Enchanting
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["provider"] = { "n", 106901 },	-- Sylvia Hartshorn
 					["groups"] = {
 						i(128605),	-- Formula: Enchant Cloak - Word of Agility (Rank 3)
 					},
 				}),
 				q(45927, {	-- Zagmothar (Invasion WQ)
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["lvl"] = 98,
 				}),
 				q(45926, {	-- Zar'teth (Invasion WQ)
 					["lvl"] = 98,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				n(-322,  {	-- Cloak
 					i(139074),	-- Dreamwalker's Cloak

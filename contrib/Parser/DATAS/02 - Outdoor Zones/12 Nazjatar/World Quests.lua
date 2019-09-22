@@ -8,19 +8,19 @@ _.Zones =
 			q(55664, {	-- A Blow to Morale
 				["lvl"] = 120,
 				["races"] = HORDE_ONLY,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 			}),
 			q(56036, {	-- A Steamy Situation
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 			}),
 			q(55970, {	-- Attrition
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 			}),
 			q(55893, {	-- Azanz, the Slitherblade
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(6, {	-- Azanz, the Slitherblade
 						["achievementID"] = 13690,	-- Nazjatarget Eliminated
@@ -32,11 +32,11 @@ _.Zones =
 			}),
 			q(57334, {	-- Cave of Murlocs
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 			}),
 			q(55891, {	-- Champion Aldrantiss, Defender of Her Kingdom
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(10, {	-- Champion Aldrantiss, Defender of Her Kingdom
 						["achievementID"] = 13690,	-- Nazjatarget Eliminated
@@ -48,7 +48,7 @@ _.Zones =
 			}),
 			q(55887, {	-- Champion Alzana, Arrow of Thunder
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(11, {	-- Champion Alzana, Arrow of Thunder
 						["achievementID"] = 13690,	-- Nazjatarget Eliminated
@@ -60,7 +60,7 @@ _.Zones =
 			}),
 			q(55892, {	-- Champion Eldanar, Shield of Her Glory
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(12, {	-- Champion Eldanar, Shield of Her Glory
 						["achievementID"] = 13690,	-- Nazjatarget Eliminated
@@ -72,7 +72,7 @@ _.Zones =
 			}),
 			q(55889, {	-- Champion Kyx'zhul the Deepspeaker
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(13, {	-- Champion Kyx'zhul the Deepspeaker
 						["achievementID"] = 13690,	-- Nazjatarget Eliminated
@@ -84,7 +84,7 @@ _.Zones =
 			}),
 			q(55888, {	-- Champion Qalina, Spear of Ice
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(14, {	-- Champion Qalina, Spear of Ice
 						["achievementID"] = 13690,	-- Nazjatarget Eliminated
@@ -96,7 +96,7 @@ _.Zones =
 			}),
 			q(55890, {	-- Champion Vyz'olgo the Mind-Taker
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(15, {	-- Champion Vyz'olgo the Mind-Taker
 						["achievementID"] = 13690,	-- Nazjatarget Eliminated
@@ -107,43 +107,43 @@ _.Zones =
 				},
 			}),
 			q(56382, {	-- Chomp
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["filterID"] = 101,	-- Battle Pet
 				["lvl"] = 120,
 			}),
 			q(57353, {	-- Deepcoil Cleansing
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["lvl"] = 120,
 			}),
 			q(55973, {	-- Deepcoil Experiments
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 			}),
 			q(57338, {	-- Depopulation Effort
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 			}),
 			q(56032, {	-- Dirty Dozen
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 			}),
 			q(56386, {	-- Elderspawn of Nalaada
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["filterID"] = 101,	-- Battle Pet
 				["lvl"] = 120,
 			}),
 			q(57340, {	-- Fathom Ray Feast
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["lvl"] = 120,
 			}),
 			q(56391, {	-- Frenzied Knifefang
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["filterID"] = 101,	-- Battle Pet
 				["lvl"] = 120,
 			}),
 			q(55895, {	-- Frozen Winds of Zhiela
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(4, {	-- Defeat one of Azshara's Champions
 						["achievementID"] = 13635,	-- Tour of the Depths
@@ -154,29 +154,29 @@ _.Zones =
 				},
 			}),
 			q(56392, {	-- Giant Opaline Conch
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["filterID"] = 101, -- Battle Pets
 				["lvl"] = 120,
 			}),
 			q(56041, {	-- Give 'Em Shell
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 			}),
 			q(55997, {	-- Hungry Hungry Hydras
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 			}),
 			q(55884, {	-- Infestation of Madness
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 			}),
 			q(56121, {	-- Jumping Jellies
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 			}),
 			q(55900, {	-- Kassar, Wielder of Dark Blades
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(4, {	-- Defeat one of Azshara's Champions
 						["achievementID"] = 13635,	-- Tour of the Depths
@@ -187,13 +187,13 @@ _.Zones =
 				},
 			}),
 			q(56389, {	-- Kelpstone
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["filterID"] = 101,	-- Battle Pet
 				["lvl"] = 120,
 			}),
 			q(56023, {	-- Leylocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(3, {	-- Hard Leylocked Chest
 						["achievementID"] = 13764,	-- Puzzle Performer
@@ -202,7 +202,7 @@ _.Zones =
 			}),
 			q(56024, {	-- Leylocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(2, {	-- Medium Leylocked Chest
 						["achievementID"] = 13764,	-- Puzzle Performer
@@ -211,7 +211,7 @@ _.Zones =
 			}),
 			q(56025, {	-- Leylocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(1, {	-- Easy Leylocked Chest
 						["achievementID"] = 13764,	-- Puzzle Performer
@@ -219,40 +219,40 @@ _.Zones =
 				},
 			}),
 			q(56388, {	-- Mindshackle
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["filterID"] = 101,	-- Battle Pet
 				["lvl"] = 120,
 			}),
 			q(57335, {	-- Murloc Mayhem
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["lvl"] = 120,
 			}),
 			q(57354, {	-- Overdue
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["lvl"] = 120,
 			}),
 			q(56385, {	-- Pearlhusk Crawler
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["filterID"] = 101,	-- Battle Pet
 				["lvl"] = 120,
 			}),
 			q(56381, {	-- Prince Wiggletail
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["filterID"] = 101,	-- Battle Pet
 				["lvl"] = 120,
 			}),
 			q(57336, {	-- Putting the Past to Rest
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["lvl"] = 120,
 			}),
 			q(56387, {	-- Ravenous Scalespawn
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["filterID"] = 101,	-- Battle Pet
 				["lvl"] = 120,
 			}),
 			q(56003, {	-- Runelocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
 					crit(21, {	-- Medium Runelocked Chest: Green
@@ -262,7 +262,7 @@ _.Zones =
 			}),
 			q(56006, {	-- Runelocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
 					crit(20, {	-- Medium Runelocked Chest: Orange
@@ -272,7 +272,7 @@ _.Zones =
 			}),
 			q(56007, {	-- Runelocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
 					crit(11, {	-- Easy Runelocked Chest: Red
@@ -282,7 +282,7 @@ _.Zones =
 			}),
 			q(56008, {	-- Runelocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
 					crit(18, {	-- Medium Runelocked Chest: Yellow
@@ -292,7 +292,7 @@ _.Zones =
 			}),
 			q(56009, {	-- Runelocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
 					crit(17, {	-- Medium Runelocked Chest: Purple
@@ -302,7 +302,7 @@ _.Zones =
 			}),
 			q(56010, {	-- Runelocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
 					crit(16, {	-- Medium Runelocked Chest: Blue
@@ -312,7 +312,7 @@ _.Zones =
 			}),
 			q(56011, {	-- Runelocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
 					crit(15, {	-- Easy Runelocked Chest: Blue
@@ -322,7 +322,7 @@ _.Zones =
 			}),
 			q(56012, {	-- Runelocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
 					crit(14, {	-- Easy Runelocked Chest: Green
@@ -332,7 +332,7 @@ _.Zones =
 			}),
 			q(56013, {	-- Runelocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
 					crit(13, {	-- Easy Runelocked Chest: Orange
@@ -342,7 +342,7 @@ _.Zones =
 			}),
 			q(56014, {	-- Runelocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
 					crit(12, {	-- Easy Runelocked Chest: Purple
@@ -352,7 +352,7 @@ _.Zones =
 			}),
 			q(56015, {	-- Runelocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
 					crit(19, {	-- Medium Runelocked Chest: Red
@@ -362,7 +362,7 @@ _.Zones =
 			}),
 			q(56016, {	-- Runelocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
 					crit(10, {	-- Easy Runelocked Chest: Yellow
@@ -372,7 +372,7 @@ _.Zones =
 			}),
 			q(56017, {	-- Runelocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
 					crit(9, {	-- Hard Runelocked Chest: Blue
@@ -382,7 +382,7 @@ _.Zones =
 			}),
 			q(56018, {	-- Runelocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
 					crit(8, {	-- Hard Runelocked Chest: Green
@@ -392,7 +392,7 @@ _.Zones =
 			}),
 			q(56019, {	-- Runelocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
 					crit(7, {	-- Hard Runelocked Chest: Orange
@@ -402,7 +402,7 @@ _.Zones =
 			}),
 			q(56020, {	-- Runelocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
 					crit(6, {	-- Hard Runelocked Chest: Purple
@@ -412,7 +412,7 @@ _.Zones =
 			}),
 			q(56021, {	-- Runelocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["sourceQuest"] = 56248,	-- Treasure Tale
 				["g"] = {
 					crit(5, {	-- Hard Runelocked Chest: Red
@@ -422,7 +422,7 @@ _.Zones =
 			}),
 			q(56022, {	-- Runelocked Chest
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(4, {	-- Hard Runelocked Chest: Yellow
 						["achievementID"] = 13764,	-- Puzzle Performer
@@ -430,22 +430,22 @@ _.Zones =
 				},
 			}),
 			q(57331, {	-- Salvage Operations
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["lvl"] = 120,
 			}),
 			q(56384, {	-- Shadowspike Lurker
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["filterID"] = 101,	-- Battle Pet
 				["lvl"] = 120,
 			}),
 			q(56383, {	-- Silence
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["filterID"] = 101,	-- Battle Pet
 				["lvl"] = 120,
 			}),
 			q(55899, {	-- Starseeker of the Shirakess
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(4, {	-- Defeat one of Azshara's Champions
 						["achievementID"] = 13635,	-- Tour of the Depths
@@ -457,7 +457,7 @@ _.Zones =
 			}),
 			q(55897, {	-- Szun, Breaker of Slaves
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(4, {	-- Defeat one of Azshara's Champions
 						["achievementID"] = 13635,	-- Tour of the Depths
@@ -469,7 +469,7 @@ _.Zones =
 			}),
 			q(55898, {	-- Tempest-Speaker Shalan'ali
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(4, {	-- Defeat one of Azshara's Champions
 						["achievementID"] = 13635,	-- Tour of the Depths
@@ -480,28 +480,28 @@ _.Zones =
 				},
 			}),
 			q(57333, {	-- Terrace Terrors
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["lvl"] = 120,
 			}),
 			q(56056, {	-- Terror of the Depths
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 			}),
 			q(56048, {	-- The Drowned Oracles
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 			}),
 			q(55982, {	-- The Lords of Water
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 			}),
 			q(56057, {	-- The Soulbinder
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 			}),
 			q(55886, {	-- The Zanj'ir Brutalizer
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(4, {	-- Defeat one of Azshara's Champions
 						["achievementID"] = 13635,	-- Tour of the Depths
@@ -513,15 +513,15 @@ _.Zones =
 			}),
 			q(57330, {	-- Time for Revenge
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 			}),
 			q(56078, {	-- Time to Krill
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 			}),
 			q(55896, {	-- Undana, Chilling Assassin
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(4, {	-- Defeat one of Azshara's Champions
 						["achievementID"] = 13635,	-- Tour of the Depths
@@ -532,7 +532,7 @@ _.Zones =
 				},
 			}),
 			q(56390, {	-- Voltgorger
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["filterID"] = 101,	-- Battle Pet
 				["lvl"] = 120,
 			}),
@@ -540,7 +540,7 @@ _.Zones =
 				["requireSkill"] = 185,	-- Cooking
 				["lvl"] = 120,
 				["races"] = ALLIANCE_ONLY,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					i(168332),	-- Recipe: Abyssal-Fried Rissole (Rank 3)
 				},
@@ -549,14 +549,14 @@ _.Zones =
 				["requireSkill"] = 185,	-- Cooking
 				["lvl"] = 120,
 				["races"] = HORDE_ONLY,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					i(168332),	-- Recipe: Abyssal-Fried Rissole (Rank 3)
 				},
 			}),
 			q(56794, {	-- Work Order: Baked Port Tato (A)
 				["requireSkill"] = 185,	-- Cooking
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -565,7 +565,7 @@ _.Zones =
 			}),
 			q(56801, {	-- Work Order: Baked Port Tato (H)
 				["requireSkill"] = 185,	-- Cooking
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -574,7 +574,7 @@ _.Zones =
 			}),
 			q(56797, {	-- Work Order: Bil'Tong (A)
 				["requireSkill"] = 185,	-- Cooking
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -583,7 +583,7 @@ _.Zones =
 			}),
 			q(56798, {	-- Work Order: Bil'Tong (H)
 				["requireSkill"] = 185,	-- Cooking
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -591,7 +591,7 @@ _.Zones =
 				},
 			}),
 			q(56826, {	-- Work Order: Enchant Weapon - Force Multiplier (A)
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["requireSkill"] = 333,	-- Enchanting
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
@@ -600,7 +600,7 @@ _.Zones =
 				},
 			}),
 			q(56820, {	-- Work Order: Enchant Weapon - Force Multiplier (H)
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["requireSkill"] = 333,	-- Enchanting
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
@@ -609,7 +609,7 @@ _.Zones =
 				},
 			}),
 			q(56824, {	-- Work Order: Enchant Weapon - Machinist's Brilliance (A)
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["requireSkill"] = 333,	-- Enchanting
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
@@ -618,7 +618,7 @@ _.Zones =
 				},
 			}),
 			q(56821, {	-- Work Order: Enchant Weapon - Machinist's Brilliance (H)
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["requireSkill"] = 333,	-- Enchanting
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
@@ -627,7 +627,7 @@ _.Zones =
 				},
 			}),
 			q(56827, {	-- Work Order: Enchant Weapon - Naga Hide (A)
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["requireSkill"] = 333,	-- Enchanting
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
@@ -636,7 +636,7 @@ _.Zones =
 				},
 			}),
 			q(56818, {	-- Work Order: Enchant Weapon - Naga Hide (H)
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["requireSkill"] = 333,	-- Enchanting
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
@@ -645,7 +645,7 @@ _.Zones =
 				},
 			}),
 			q(56825, {	-- Work Order: Enchant Weapon - Oceanic Restoration (A)
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["requireSkill"] = 333,	-- Enchanting
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
@@ -654,7 +654,7 @@ _.Zones =
 				},
 			}),
 			q(56819, {	-- Work Order: Enchant Weapon - Oceanic Restoration (H)
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["requireSkill"] = 333,	-- Enchanting
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
@@ -663,7 +663,7 @@ _.Zones =
 				},
 			}),
 			q(56570, {	-- Work Order: Greater Flask of the Currents (A)
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["requireSkill"] = 171,	-- Alchemy
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
@@ -672,7 +672,7 @@ _.Zones =
 				},
 			}),
 			q(56770, {	-- Work Order: Greater Flask of the Currents (H)
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["requireSkill"] = 171,	-- Alchemy
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
@@ -681,7 +681,7 @@ _.Zones =
 				},
 			}),
 			q(56767, {	-- Work Order: Greater Flask of Endless Fathoms (A)
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["requireSkill"] = 171,	-- Alchemy
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
@@ -690,7 +690,7 @@ _.Zones =
 				},
 			}),
 			q(56772, {	-- Work Order: Greater Flask of Endless Fathoms (H)
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["requireSkill"] = 171,	-- Alchemy
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
@@ -699,7 +699,7 @@ _.Zones =
 				},
 			}),
 			q(56768, {	-- Work Order: Greater Flask of the Undertow (A)
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["requireSkill"] = 171,	-- Alchemy
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
@@ -708,7 +708,7 @@ _.Zones =
 				},
 			}),
 			q(56774, {	-- Work Order: Greater Flask of the Undertow (H)
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["requireSkill"] = 171,	-- Alchemy
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
@@ -717,7 +717,7 @@ _.Zones =
 				},
 			}),
 			q(56769, {	-- Work Order: Greater Flask of the Vast Horizon (A)
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["requireSkill"] = 171,	-- Alchemy
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
@@ -726,7 +726,7 @@ _.Zones =
 				},
 			}),
 			q(56773, {	-- Work Order: Greater Flask of the Vast Horizon (h)
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["requireSkill"] = 171,	-- Alchemy
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
@@ -735,7 +735,7 @@ _.Zones =
 				},
 			}),
 			q(56796, {	-- Work Order: Fragrant Kakavia (A)
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -743,7 +743,7 @@ _.Zones =
 				},
 			}),
 			q(56799, {	-- Work Order: Fragrant Kakavia (H)
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -751,7 +751,7 @@ _.Zones =
 				},
 			}),
 			q(56793, {	-- Work Order: Mech-Dowel's "Big Mech" (A)
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -759,7 +759,7 @@ _.Zones =
 				},
 			}),
 			q(56802, {	-- Work Order: Mech-Dowel's "Big Mech" (H)
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -768,7 +768,7 @@ _.Zones =
 			}),
 			q(55894, {	-- Zoko, Her Iron Defender
 				["lvl"] = 120,
-				["collectible"] = false,
+				["isWorldQuest"] = true,
 				["g"] = {
 					crit(4, {	-- Defeat one of Azshara's Champions
 						["achievementID"] = 13635,	-- Tour of the Depths

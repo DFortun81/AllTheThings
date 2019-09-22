@@ -40,7 +40,7 @@ _.Zones =
 				n(-34, {	-- World Quests
 					q(43805, {	-- Aquatic Assassination
 						["lvl"] = 110,
-						["collectible"] = false,
+						["isWorldQuest"] = true,
 					}),
 				}),
 			},

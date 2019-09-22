@@ -21,7 +21,7 @@ _.Zones =
 					q(41650),	-- Work Order: Silkweave Hood
 --]]
 				q(42442, {	-- Fight Night: Amalia
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
 					["g"] = {
@@ -31,7 +31,7 @@ _.Zones =
 					},
 				}),
 				q(40299, {	-- Fight Night: Bodhi Sunwayver
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
 					["g"] = {
@@ -41,7 +41,7 @@ _.Zones =
 					},
 				}),
 				q(41881, {	-- Fight Night: Heliosus
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
 					["g"] = {
@@ -51,7 +51,7 @@ _.Zones =
 					},
 				}),
 				q(41886, {	-- Fight Night: Rats!
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
 					["g"] = {
@@ -61,7 +61,7 @@ _.Zones =
 					},
 				}),
 				q(40298, {	-- Fight Night: Sir Galveston
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
 					["g"] = {
@@ -71,7 +71,7 @@ _.Zones =
 					},
 				}),
 				q(42062, {	-- Fight Night: Stitches Jr. Jr.
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
 					["g"] = {
@@ -81,7 +81,7 @@ _.Zones =
 					},
 				}),
 				q(40277, {	-- Fight Night: Tiffany Nelson
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
 					["g"] = {
@@ -92,7 +92,7 @@ _.Zones =
 				}),
 				q(41668, {	-- Vantus Rune Work Order: Il'gynoth, The Heart of Corruption
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 					["requireSkill"] = 773,	-- Inscription
 					["g"] = {
 						i(137769),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 3]
