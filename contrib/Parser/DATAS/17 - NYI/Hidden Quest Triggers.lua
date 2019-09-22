@@ -460,7 +460,11 @@ _.NeverImplemented =
 		q(47133),	-- Rare Mob Daily Bonus. Triggered after killing Doombringer Zar'thoz. Possible killID?
 		
 	-- World Boss
+		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
+		q(44502),	-- Calamir Kill ID
+		q(44506),	-- Levantus Kill ID
 		q(44901),	-- Levantus Bonus Roll
+		q(47086),	-- Malificus Kill ID
 		
 	-- Invasions
 		q(47065),	-- Highmountain Invasion / Fel Commander Erixtol Kill
@@ -589,11 +593,31 @@ _.NeverImplemented =
 		q(53639),	-- Looting a bounty in Stormsong as Horde
 		
 	--	WORLD BOSSES
-		q(56058),	-- Ulmath, the Soulbinder kill
-		q(56055),	-- Wekemara kill questID (secondary to WQ, which needs to be attached for /attwq)
-		q(56899),	-- Wekemara bonus roll
-		q(52999),	-- Hailstone Construct kill
-		q(52268),	-- Hailstone Construct bonus roll
+		q(52997),	-- Azurethos, The Winged Typhoon Kill ID
+					-- Azurethos, The Winged Typhoon Bonus Roll
+		q(53002),	-- Doom's Howl Kill ID
+					-- Doom's Howl Bonus Roll
+					-- Dunegorger Kraulok Kill ID
+					-- Dunegorger Kraulok Bonus Roll
+		q(52999),	-- Hailstone Construct Kill ID
+		q(52268),	-- Hailstone Construct Bonus Roll
+		q(54862),	-- Ivus the Decayed Kill ID
+					-- Ivus the Decayed Bonus Roll
+		q(54861),	-- Ivus the Forest Lord Kill ID
+					-- Ivus the Forest Lord Bonus Roll
+		q(52998),	-- Ji'arak Kill ID
+					-- Ji'arak Bonus Roll
+		q(52996),	-- T'zane Kill ID
+					-- T'zane Bonus Roll
+		q(53001),	-- The Lion's Roar Kill ID
+		q(52274),	-- The Lion's Roar Bonus Roll
+		q(56058),	-- Ulmath, the Soulbinder Kill ID
+					-- Ulmath, the Soulbinder Bonus Roll
+		q(52995),	-- Warbringer Yenajz Kill ID
+					-- Warbringer Yenajz Bonus Roll
+		q(56055),	-- Wekemara Kill ID
+		q(56899),	-- Wekemara Bonus Roll
+		
 		
 	--	RARES
 		q(52000),	-- Matron Morana killID

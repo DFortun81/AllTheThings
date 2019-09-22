@@ -9,7 +9,7 @@ _.Instances = { tier(7, {	-- Legion
 		["modID"] = 3,
 		["g"] = {
 			cr(109943, e(1790, {	-- Ana-Mouz 
-				["questID"] = 43512,	-- Change to tracking quest later.
+				["questID"] = 43512,	-- Ana-Mouz (WQ)
 				["isRaid"] = true,
 				["maps"] = { 680 },	-- Suramar
 				["coord"] = { 31.0, 65.5, 680 },
@@ -26,7 +26,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			})),	
 			cr(121124, e(1956, {	-- Apocron 
-				["questID"] = 47061,	-- Change to tracking quest later
+				["questID"] = 47061,	-- Apocron (WQ)
 				["isRaid"] = true,
 				["maps"] = { 646 },	-- The Broken Shore
 				["coord"] = { 59.2, 62.6, 646 },
@@ -43,7 +43,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			})),
 			cr(117239, e(1883, {	-- Brutallus 
-				["questID"] = 46947,	-- Change to tracking quest later.
+				["questID"] = 46947,	-- Brutallus (WQ)
 				["isRaid"] = true,
 				["maps"] = { 646 },	-- The Broken Shore
 				["coord"] = { 59.2, 28.4, 646 },
@@ -61,7 +61,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			})),
 			cr(109331, e(1774, {	-- Calamir 
-				["questID"] = 44502,
+				["questID"] = 43193,	-- Calamitous Intent (WQ)
 				["isRaid"] = true,
 				["maps"] = { 630 },	-- Azsuna
 				["coord"] = { 37.7, 83.6, 630 },
@@ -78,7 +78,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			})),
 			cr(110378, e(1789, {	-- Drugon the Frostblood 
-				["questID"] = 43448,	-- Change to tracking quest later.
+				["questID"] = 43448,	-- The Frozen King (WQ)
 				["isRaid"] = true,
 				["maps"] = { 650 },	-- Highmountain
 				["coord"] = { 58.4, 72.6, 650 },
@@ -95,7 +95,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			})),
 			cr(99929, e(1795,  {	-- Flotsam
-				["questID"] = 43985,	-- Change to tracking quest later.
+				["questID"] = 43985,	-- A Dark Tide (WQ)
 				["isRaid"] = true,
 				["maps"] = { 650 },	-- Highmountain
 				["coord"] = { 49.2, 7.60, 650 },
@@ -114,7 +114,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			})),
 			cr(108879, e(1770, {	-- Humongris <The Wizard>
-				["questID"] = 42819,	-- Change to tracking quest later.
+				["questID"] = 42819,	-- Pocket Wizard (WQ)
 				["isRaid"] = true,
 				["maps"] = { 641 },	-- Val'sharah
 				["coord"] = { 24.6, 69.6, 641 },
@@ -136,7 +136,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			})),
 			cr(108829, e(1769, {	-- Levantus 
-				["questID"] = 44506,
+				["questID"] = 43192,	-- Terror of the Deep (WQ)
 				["isRaid"] = true,
 				["maps"] = { 630 },	-- Azsuna
 				["coord"] = { 43.0, 67.6, 630 },
@@ -156,7 +156,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			})),
 			cr(117303, e(1884, {	-- Malificus
-				["questID"] = 47086,
+				["questID"] = 46948,	-- Malificus (WQ)
 				["isRaid"] = true,
 				["maps"] = { 646 },	-- The Broken Shore
 				["coord"] = { 59.8, 27.8, 646 },
@@ -175,7 +175,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			})),	
 			cr(110321, e(1783, {	-- Na'zak the Fiend 
-				["questID"] = 43513,	-- Change to tracking quest later.
+				["questID"] = 43513,	-- Na'zak the Fiend(WQ)
 				["isRaid"] = true,
 				["maps"] = { 680 },	-- Suramar
 				["coord"] = { 36.0, 66.4, 685 },
@@ -192,7 +192,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			})),	
 			cr(107544, e(1749, {	-- Nithogg 
-				["questID"] = 42270,	-- Change to tracking quest later.
+				["questID"] = 42270,	-- Scourge of the Skies (WQ)
 				["isRaid"] = true,
 				["maps"] = { 634 },	-- Stormheim
 				["coord"] = { 46.6, 30.0, 634 },
@@ -211,7 +211,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			})),
 			cr(108678, e(1763, {	-- Shar'thos
-				["questID"] = 42779,	-- Change to tracking quest later.
+				["questID"] = 42779,	-- The Sleeping Corruption (WQ)
 				["isRaid"] = true,
 				["maps"] = { 641 },	-- Val'sharah 
 				["coord"] = { 55.6, 43.2, 641 },
@@ -228,7 +228,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			})),
 			cr(117470, e(1885, {	-- Si'vash 
-				["questID"] = 46945,	-- Change to tracking quest later.
+				["questID"] = 46945,	-- Si'vash (WQ)
 				["isRaid"] = true,
 				["maps"] = { 646 },	-- The Broken Shore
 				["coord"] = { 89.6, 33.0, 646 },
@@ -246,7 +246,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			})),
 			e(1756, {	-- The Soultakers
-				["questID"] = 42269,	-- Change to tracking quest later.
+				["questID"] = 42269,	-- The Soultakers (WQ)
 				["isRaid"] = true,
 				["maps"] = {
 					634,	-- Stormheim
@@ -273,7 +273,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			}),
 			cr(112350, e(1796, {	-- Withered J'im 
-				["questID"] = 44287,	-- Change to tracking quest later.
+				["questID"] = 44287,	-- DEADLY: Withered J'im (WQ)
 				["isRaid"] = true,
 				["maps"] = { 630 },	-- Azsuna
 				["coord"] = { 52.6, 80.8, 630 },

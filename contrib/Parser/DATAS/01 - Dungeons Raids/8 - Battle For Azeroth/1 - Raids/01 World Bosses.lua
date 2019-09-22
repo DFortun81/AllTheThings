@@ -9,8 +9,6 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		["g"] = {
 			e(2199, {	-- Azurethos, The Winged Typhoon
 				["questID"] = 52163,	-- The Matriarch (WQ)
-				-- Note!! Kill ID: 52997
-				-- Note!! WQ ID: 52163
 				["isRaid"] = true,
 				["coord"] = { 62.0, 24.0, 895 },	-- Tiragarde Sound
 				["maps"] = { 895 },	-- Tiragarde Sound
@@ -34,8 +32,6 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2213, {	-- Doom's Howl [Warfront]
 				["questID"] = 52847,	-- Doom's Howl (WQ)
-				-- Note!! Kill ID: 53002
-				-- Note!! WQ ID: 52847,	-- Doom's Howl
 				["isRaid"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 37.8, 40.2, 14 },
@@ -96,8 +92,6 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2197, {	-- Hailstone Construct
 				["questID"] = 52157,	-- A Chilling Encounter (WQ)
-				-- Note!! WQ ID: 52157,	-- A Chilling Encounter
-				-- Note!! Kill ID: 52999
 				["isRaid"] = true,
 				["coords"] = {
 					{ 62.4, 69.1, 896 },	-- east road
@@ -125,7 +119,6 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2345, {	-- Ivus the Decayed [Alliance Only]
 				["questID"] = 54895,	-- Ivus the Decayed (WQ)
-				-- Note!! Kill ID: 54862
 				["isRaid"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 41.47, 35.97, 62 },
@@ -147,7 +140,6 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2329, {	-- Ivus the Forest Lord [Horde Only]
 				["questID"] = 54896,	-- Ivus the Forest Lord (WQ)
-				-- Note!! Kill ID: 54861
 				["isRaid"] = true,
 				["races"] = HORDE_ONLY,
 				["coord"] = { 41.47, 35.97, 62 },
@@ -169,8 +161,6 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2141, {	-- Ji'arak
 				["questID"] = 52169,	-- The Matriarch (WQ)
-				-- Note!! Kill ID: 52998
-				-- Note!! WQ ID: 52169,	-- The Matriarch
 				["isRaid"] = true,
 				["coord"] = { 69.0, 31.0, 862 },
 				["maps"] = { 862 },	-- Zuldazar
@@ -192,8 +182,6 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2139, {	-- T'zane <The Soul Terror>
 				["questID"] = 52181,	-- Smoke and Shadow (WQ)
-				-- Note!! Kill ID: 52996
-				-- Note!! WQ ID: 52181,	-- Smoke and Shadow
 				["isRaid"] = true,
 				["coord"] = { 35.6, 33.6, 863 },
 				["maps"] = { 863 },	-- Nazmir
@@ -217,8 +205,6 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2212, {	-- The Lion's Roar [Warfront]
 				["questID"] = 52848,	-- The Lion's Roar (WQ)
-				-- Note!! Kill ID: 53001
-				-- Note!! WQ ID: 52848,	-- The Lion's Roar
 				["isRaid"] = true,
 				["races"] = HORDE_ONLY,
 				["coord"] = { 35.55, 38.91, 14 },
@@ -272,8 +258,6 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			e(2198, {	-- Warbringer Yenajz
 				["questID"] = 52166,	-- The Faceless Herald (WQ)
-				-- Note!! Kill ID: 52995
-				-- Note!! WQ ID: 52166,	-- The Faceless Herald
 				["isRaid"] = true,
 				["coord"] = { 83.2, 49.6, 942 },
 				["maps"] = { 942 },	-- Stormsong Valley
