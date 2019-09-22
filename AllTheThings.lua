@@ -5690,7 +5690,7 @@ local itemFields = {
 		return link and GetItemInfo(link);
 	end,
 	["repeatable"] = function(t)
-		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isYearly") or rawget(t, "isMonthly") or rawget(t, "isWorldQuest");
+		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest") or rawget(t, "isRepeatable");
 	end,
 	["trackable"] = function(t)
 		return rawget(t, "questID");
@@ -6006,7 +6006,7 @@ local npcFields = {
 		return (_cache > 0 and NPCNameFromID or L["NPC_ID_NAMES"])[_cache];
 	end,
 	["repeatable"] = function(t)
-		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isYearly") or rawget(t, "isMonthly")  or rawget(t, "isWorldQuest");
+		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly")  or rawget(t, "isWorldQuest") or rawget(t, "isRepeatable");
 	end,
 	["text"] = function(t)
 		_cache = t.name;
@@ -6051,7 +6051,7 @@ app.BaseObject = {
 		elseif key == "collectible" then
 			return app.CollectibleQuests and t.questID and not t.isBreadcrumb and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"));
 		elseif key == "repeatable" then
-			return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isYearly");
+			return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest") or rawget(t, "isRepeatable");
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "saved" or key == "collected" then
@@ -6207,9 +6207,9 @@ app.BaseQuest = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "collectible" then
-			return app.CollectibleQuests and not t.isBreadcrumb and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable")) and (not t.isWorldQuest or app.Settings:GetTooltipSetting("RepeatableFirstTime"));
+			return app.CollectibleQuests and not t.isBreadcrumb and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable")) and ((not t.isWorldQuest and not t.isRepeatable) or app.Settings:GetTooltipSetting("RepeatableFirstTime"));
 		elseif key == "repeatable" then
-			return t.isDaily or t.isWeekly or t.isYearly or t.isMonthly or t.isWorldQuest;
+			return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest or t.isRepeatable;
 		elseif key == "saved" or key == "collected" then
 			return IsQuestFlaggedCompletedForObject(t);
 		else
@@ -6760,7 +6760,7 @@ app.BaseVignette = {
 		elseif key == "collected" then
 			return t.collectible and t.saved;
 		elseif key == "repeatable" then
-			return t.isDaily or t.isWeekly or t.isYearly or t.isMonthly or t.isWorldQuest;
+			return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest or t.isRepeatable;
 		elseif key == "saved" then
 			return IsQuestFlaggedCompletedForObject(t);
 		elseif key == "isVignette" then
@@ -8960,6 +8960,7 @@ local function RowOnEnter(self)
 		if reference.isWeekly then GameTooltip:AddLine("This can be completed weekly."); end
 		if reference.isMontly then GameTooltip:AddLine("This can be completed monthly."); end
 		if reference.isYearly then GameTooltip:AddLine("This can be completed yearly."); end
+		if reference.isRepeatable then GameTooltip:AddLine("This can be completed multiple times."); end
 		if not GameTooltipModel:TrySetModel(reference) and reference.icon then
 			if app.Settings:GetTooltipSetting("iconPath") then
 				GameTooltip:AddDoubleLine("Icon", reference.icon);

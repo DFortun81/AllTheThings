@@ -856,7 +856,7 @@ namespace ATT
                 case "isRepeatable":
                 case "repeatable":
                     {
-                        return "repeatable";
+                        return "isRepeatable";
                     }
                 case "isLimited":
                     {

@@ -10,8 +10,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 			{	--  Arachnis
 				["npcID"] = 96323,	-- Arachnis
 				["questID"] = 39617,
-				
-				["repeatable"] = true,
 				["isDaily"] = true,
 				["coords"] = {
 					{ 56.53, 87.91 },	-- Horde Garrison

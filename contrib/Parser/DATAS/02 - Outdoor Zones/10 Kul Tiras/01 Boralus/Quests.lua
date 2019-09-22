@@ -11,7 +11,6 @@ _.Zones =
 					["lvl"] = 120,
 					["g"] = {
 						q(52944, { 	-- Call to Arms: Drustvar
-							["repeatable"] = true,
 							["isWeekly"] = true,
 							["coord"] = { 56.4, 26.0, 1161 },
 							["races"] = ALLIANCE_ONLY,
@@ -23,7 +22,6 @@ _.Zones =
 							},
 						}),
 						q(52949, { 	-- Call to Arms: Nazmir
-							["repeatable"] = true,
 							["isWeekly"] = true,
 							["coord"] = { 56.4, 26.0, 1161 },
 							["races"] = ALLIANCE_ONLY,
@@ -35,7 +33,6 @@ _.Zones =
 							},
 						}),
 						q(52782, { 	-- Call to Arms: Stormsong Valley
-							["repeatable"] = true,
 							["isWeekly"] = true,
 							["coord"] = { 56.4, 26.0, 1161 },
 							["races"] = ALLIANCE_ONLY,
@@ -47,7 +44,6 @@ _.Zones =
 							},
 						}),
 						q(52950, { 	-- Call to Arms: Vol'dun
-							["repeatable"] = true,
 							["isWeekly"] = true,
 							["coord"] = { 56.4, 26.0, 1161 },
 							["races"] = ALLIANCE_ONLY,
@@ -59,7 +55,6 @@ _.Zones =
 							},
 						}),
 						q(53295, { 	-- Do Your Part
-							["repeatable"] = true,
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 							["coord"] = { 56.4, 25.8, 1161 },
@@ -101,7 +96,6 @@ _.Zones =
 				}),
 		--[[	Listed under Expansion Features>Island>Quests
 				q(53436, { 	-- Azerite for the Alliance
-					["repeatable"] = true,
 					["isWeekly"] = true,
 					["coord"] = { 66.6, 35.5, 1161 },
 					["races"] = ALLIANCE_ONLY,

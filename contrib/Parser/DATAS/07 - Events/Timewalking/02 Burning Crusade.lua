@@ -15,14 +15,12 @@ _.WorldEvents =
 					{	-- Disturbance Detected: Black Temple
 						["questID"] = 47523,	-- Disturbance Detected: Black Temple
 						["provider"] = { "n", 123252 },	-- Vormu
-						["repeatable"] = true,
 						["isWeekly"] = true,
 					},
 					{	-- Swirling Timewarped Vial
 						["itemID"] = 129747,	-- Swirling Timewarped Vial
 						["questID"] = 40168,	-- The Swirling Vial
 						["provider"] = { "n", 98685 },	-- Cupri
-						["repeatable"] = true,
 						["isWeekly"] = true,
 					},
 					n(98685, {	-- Cupri

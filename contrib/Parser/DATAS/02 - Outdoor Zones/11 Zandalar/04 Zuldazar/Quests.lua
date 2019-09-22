@@ -10,7 +10,6 @@ _.Zones =
 					["lvl"] = 120,	-- Don't become available until this level.
 					["g"] = {
 						q(52958, { 	-- Call to Arms: Drustvar
-							["repeatable"] = true,
 							["isWeekly"] = true,
 							["coord"] = { 51.54, 58.21 },
 							["races"] = HORDE_ONLY,
@@ -22,7 +21,6 @@ _.Zones =
 							},
 						}),
 						q(52954, { 	-- Call to Arms: Nazmir
-							["repeatable"] = true,
 							["isWeekly"] = true,
 							["coord"] = { 51.54, 58.21 },
 							["races"] = HORDE_ONLY,
@@ -34,7 +32,6 @@ _.Zones =
 							},
 						}),
 						q(52957, { 	-- Call to Arms: Stormsong Valley
-							["repeatable"] = true,
 							["isWeekly"] = true,
 							["coord"] = { 51.54, 58.21 },
 							["races"] = HORDE_ONLY,
@@ -46,7 +43,6 @@ _.Zones =
 							},
 						}),
 						q(52953, { 	-- Call to Arms: Vol'dun
-							["repeatable"] = true,
 							["isWeekly"] = true,
 							["coord"] = { 51.54, 58.21 },
 							["races"] = HORDE_ONLY,
@@ -58,7 +54,6 @@ _.Zones =
 							},
 						}),
 						q(52952, { 	-- Call to Arms: Zuldazar
-							["repeatable"] = true,
 							["isWeekly"] = true,
 							["coord"] = { 51.54, 58.21 },
 							["races"] = HORDE_ONLY,
@@ -70,7 +65,6 @@ _.Zones =
 							},
 						}),
 						q(53338, { 	-- Prove Your Worth
-							["repeatable"] = true,
 							["isWeekly"] = true,
 							["coord"] = { 51.56, 58.06 },
 							["races"] = HORDE_ONLY,
