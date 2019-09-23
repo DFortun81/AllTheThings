@@ -24,19 +24,19 @@ _.Achievements =
 			},
 			["lvl"] = 100,
 			["g"] = {
-				ach(11298, {		-- A Classy Outfit
+				ach(11298, {	-- A Classy Outfit
 					crit(1, {	-- Class Hall Helm Earned
 						["sourceQuests"] = {
 							44217,	-- Armor Fit For A Deathlord (Death Knight)
 							44213,	-- You Will Be Prepared! (Demon Hunter)
 							44232,	-- The Grove Provides (Druid)
-						--	,	--  (Hunter)
+							44233,	-- Walk This Way (Hunter)
 							44240,	-- Orange is the New Purple (Mage)
-						--	,	--  (Monk)
+							44249,	-- Inner Sanctuary (Monk)
 							44250,	-- Champion of the Light (Paladin)
 							44251,	-- Power Word: Armor (Priest)
-						--	,	--  (Rogue)
-						--	,	--  (Shaman)
+							44252,	-- A Sheath For Every Blade (Rogue)
+							44253,	-- A Vision of Triumph (Shaman)
 							44254,	-- Gazing Into Oblivion (Warlock)
 							44255,	-- Axe and You Shall Receive (Warrior)
 						},
@@ -47,13 +47,13 @@ _.Achievements =
 							44246,	-- Champion: Rottgut (Death Knight)
 							42776,	-- Two Worthies (Demon Hunter)
 							42046,	-- A New Beginning (Druid)
-						--	,	--  (Hunter)
+							42414,	-- Champion: Addie Fizzlebog (Hunter)
 							42520,	-- A Terrible Loss (Mage)
-						--	,	--  (Monk)
+							41854,	-- Brick By Brick (Monk)
 							43541,	-- United As One (Paladin)
 							43381,	-- Champion: Mariella Ward (Priest)
-						--	,	--  (Rogue)
-						--	,	--  (Shaman)
+							42680,	-- Deciphering the Letter (Rogue)
+							41900,	-- A Promise of Earth (Shaman)
 							41784,	-- Borrowed Time (Warlock)
 							43090,	-- Ulduar's Oath (Warrior)
 						},
@@ -70,13 +70,13 @@ _.Achievements =
 							43686,	-- The Fourth Horseman (Death Knight)
 							43186,	-- I Am the Slayer! (Demon Hunter)
 							42055,	-- The Demi-God's Return (Druid)
-						--	,	--  (Hunter)
+							42659,	-- In Defense of Dalaran (Hunter)
 							42734,	-- Into the Oculus (Mage)
-						--	,	--  (Monk)
+							41087,	-- Storm Brew (Monk)
 							43697,	-- Warriors of Light (Paladin)
 							43402,	-- High Priest of Netherlight (Priest)
-						--	,	--  (Rogue)
-						--	,	--  (Shaman)
+							37689,	-- The Imposter (Rogue)
+							41888,	-- Allegiance of Flame (Shaman)
 							41796,	-- Selecting a Sixth (Warlock)
 							42974,	-- The Fate of Hodir (Warrior)
 						},

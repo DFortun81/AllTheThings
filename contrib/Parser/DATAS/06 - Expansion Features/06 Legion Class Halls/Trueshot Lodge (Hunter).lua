@@ -4,7 +4,7 @@
 _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
-		cl(3, {	-- Trueshot Lodge (Hunter)
+		cl(3, {		-- Trueshot Lodge (Hunter)
 			["classes"] = { 3 },	-- Hunter
 			["lvl"] = 98,
 			["mapID"] = 739,
@@ -230,109 +230,73 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(103693, {	-- Outfitter Reynolds <Unseen Path>
-						i(136855),	-- Hunter's Call Toy
+						i(139713, {	-- Belt of the Unseen Path
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(143727, {	-- Champion's Salute (TOY!)
+							["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+						}),
+						i(139709, {	-- Grips of the Unseen Path
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139707, {	-- Hauberk of the Unseen Path
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(136855),	-- Hunter's Call (TOY!)
+						i(140938, {	-- Huntmaster's Armor Kit
+							["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
+						}),
+						i(140969, {	-- Huntmaster's Greater Armor Kit
+							["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
+						}),
 						i(140548),	-- Huntmaster's Halberd
+						i(140968, {	-- Huntmaster's Lesser Armor Kit
+							["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
+						}),
 						i(140539),	-- Huntmaster's Longbow
 						i(140544),	-- Huntmaster's Rifle
-						{
-							["itemID"] = 139710,		-- Helm
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139712,		-- Shoulders
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139707,		-- Chestpiece
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139714,		-- Bracers
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
-								}
-							},
-						},
-						{
-							["itemID"] = 139709,		-- Gloves
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139713,		-- Belt
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139711,		-- Leggings
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139708,		-- Boots
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
-								},
-							},
-						},
-						i(136780, {	-- Pet Training Manual: Play Dead
-							["spellID"] = 209997,	-- Play Dead
+						i(139711, {	-- Leggings of the Unseen Path
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139710, {	-- Mask of the Unseen Path
+							["cost"] = 5000000,	-- 500g
 						}),
 						i(136781, {	-- Pet Training Manual: Fetch
 							["spellID"] = 125050,	-- Fetch
 						}),
-						currency(1220, {	-- Order Resources
-							i(143727),	-- Champion's Salute Toy
-							i(124124),	-- Blood of Sargeras
-							i(140968),	-- Huntmaster's Lesser Armor Kit
-							i(140938),	-- Huntmaster's Armor Kit
-							i(140969),	-- Huntmaster's Greater Armor Kit
+						i(136780, {	-- Pet Training Manual: Play Dead
+							["spellID"] = 209997,	-- Play Dead
+						}),
+						i(139712, {	-- Spaulders of the Unseen Path
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139708, {	-- Treads of the Unseen Path
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139714, {	-- Wristwraps of the Unseen Path
+							["cost"] = 5000000,	-- 500g
 						}),
 					}),
 					n(100661, {	--  Pan the Kind Hand <Stable Master>
+						["sourceQuests"] = { 46337 },	-- Night of the Wilds
 						["classes"] = {3},
-						["description"] = "|c808080FAThese mounts are only available to hunters who have completed|r |cFFFFD700Night of the Wilds|r |c808080FAquest from the class mount campaign.",
 						["g"] = {
-							i(142228),	-- Trust of a Dire Wolfhawk
-							i(142226),	-- Trust of a Fierce Wolfhawk
 							i(147580, {	-- Tome of the Hybrid Beast
 								--["spellID"] = 242155,	-- Hybrid Kinship
+								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+							}),
+							i(142228, {	-- Trust of a Dire Wolfhawk (MOUNT!)
+								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+							}),
+							i(142226, {	-- Trust of a Fierce Wolfhawk (MOUNT!)
+								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 							}),
 						},
 					}),
 					n(103325, {	-- Uthrok
-						i(11304),	-- Fine Bow
+						i(11304, {	-- Fine Bow
+							["isLimited"] = true,
+						}),
 					}),
 				}),
 			},

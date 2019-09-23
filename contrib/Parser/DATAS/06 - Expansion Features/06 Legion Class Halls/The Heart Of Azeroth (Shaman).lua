@@ -16,7 +16,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(114065, {	-- Snowsong
-					["description"] = "Defeating this NPC in a pet battle awards the pet Snowfang",
+					["description"] = "Defeating this NPC in a pet battle awards the pet.",
 					["g"] = {
 						i(141530),	-- Snowfang's Trust Pet
 					},
@@ -155,98 +155,55 @@ _.ExpansionFeatures =
 					["modelScale"] = 0.5,
 				}),
 				]]--
-				n(-2, {	-- Vendors
+				n(-2,  {	-- Vendors
 					n(112318, {	-- Flamesmith Lanying <Earthen Ring Quartermaster>
-						i(136934),	-- Raging Elemental Stone
-						i(136935),	-- Tadpole Cloudseeder
-						i(136937),	-- Vol'jin's Serpent Totem
-						i(138490),	-- Waterspeaker's Totem
+						i(143727, {	-- Champion's Salute (TOY!)
+							["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+						}),
 						i(140536),	-- Earthen Ring Aegis
 						i(140545),	-- Earthen Ring Mace
 						i(140546),	-- Earthen Ring Scepter
+						i(140944, {	-- Farseer's Armor Kit
+							["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
+						}),
+						i(139704, {	-- Farseer's Belt
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139699, {	-- Farseer's Footwraps
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139700, {	-- Farseer's Gauntlets
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(140981, {	-- Farseer's Greater Armor Kit
+							["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
+						}),
+						i(139698, {	-- Farseer's Harness
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139702, {	-- Farseer's Leggings
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(140980, {	-- Farseer's Lesser Armor Kit
+							["cost"] = { { "c", 1220, 500 }, },	-- 500x Order Resources
+						}),
+						i(139701, {	-- Farseer's Mask
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139703, {	-- Farseer's Shoulderguards
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139705, {	-- Farseer's Wristwraps
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(136934),	-- Raging Elemental Stone (TOY!)
+						i(136935),	-- Tadpole Cloudseeder (TOY!)
 						i(136938, {	-- Tome of Hex: Compy
 							["spellID"] = 210873,	-- Hex(Compy)
 							["classes"] = { 7 },	-- Shaman
 						}),
-						{
-							["itemID"] = 139701,		-- Helm
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139703,		-- Shoulders
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139698,		-- Chestpiece
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139705,		-- Bracers
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
-								}
-							},
-						},
-						{
-							["itemID"] = 139700,		-- Gloves
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139704,		-- Belt
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139702,		-- Leggings
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139699,		-- Boots
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
-								},
-							},
-						},
-						currency(1220, {	-- Order Resources
-							i(143727),	-- Champion's Salute Toy
-							i(124124),	-- Blood of Sargeras
-							i(140980),	-- Farseer's Lesser Armor Kit
-							i(140944),	-- Farseer's Armor Kit
-							i(140981),	-- Farseer's Greater Armor Kit
-						}),
+						i(136937),	-- Vol'jin's Serpent Totem (TOY!)
+						i(138490),	-- Waterspeaker's Totem (TOY!)
 					}),
 				}),
 			},

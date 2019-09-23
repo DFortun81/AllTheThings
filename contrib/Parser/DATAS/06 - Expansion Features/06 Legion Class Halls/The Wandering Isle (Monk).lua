@@ -292,64 +292,55 @@ _.ExpansionFeatures =
 					["modelScale"] = 2.5,
 				}),
 				]]--
-				n(-2, {	--  Vendors
+				n(-2,  {	-- Vendors
 					n(112338, {	-- Caydori Brightstar <Purveyor of Rare Goods>
+						i(143727, {	-- Champion's Salute (TOY!)
+							["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+						}),
+						i(140543),	-- Fist of the Broken Temple
+						i(140940, {	-- Grandmaster's Armor Kit
+							["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
+						}),
+						i(139734, {	-- Grandmaster's Crown
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139738, {	-- Grandmaster's Cuffs
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139732, {	-- Grandmaster's Footwraps
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(140973, {	-- Grandmaster's Greater Armor Kit
+							["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
+						}),
+						i(139735, {	-- Grandmaster's Legguards
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(140972, {	-- Grandmaster's Lesser Armor Kit
+							["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
+						}),
+						i(139733, {	-- Grandmaster's Palms
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139736, {	-- Grandmaster's Shoulderguards
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139731, {	-- Grandmaster's Tunic
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139737, {	-- Grandmaster's Waistband
+							["cost"] = 5000000,	-- 500g
+						}),
 						i(136800, {	-- Meditation Manual: Zen Flight
 							["spellID"] = 125883,	-- Zen Flight
 						}),
-						i(140543),	-- Fist of the Broken Temple
-						i(140551),	-- Staff of the Broken Temple
 						i(140564),	-- Rod of the Broken Temple
-						i(139734, {	-- Helm
-							crit(1, {	-- Class Hall Helm Earned
-								["achievementID"] = 11298,	-- A Classy Outfit
-							}),
-						}),
-						i(139736, {	-- Shoulders
-							crit(8, {	-- Class Hall Shoulders Earned
-								["achievementID"] = 11298,	-- A Classy Outfit
-							}),
-						}),
-						i(139731, {	-- Chestpiece
-							crit(5, {	-- Class Hall Chestpiece Earned 
-								["achievementID"] = 11298,	-- A Classy Outfit
-							}),
-						}),
-						i(139738, {	-- Bracers
-							crit(2, {	-- Class Hall Bracers Earned
-								["achievementID"] = 11298,	-- A Classy Outfit
-							}),
-						}),
-						i(139733, {	-- Gloves
-							crit(3, {	-- Class Hall Gloves Earned
-								["achievementID"] = 11298,	-- A Classy Outfit
-							}),
-						}),
-						i(139737, {	-- Belt
-							crit(7, {	-- Class Hall Belt Earned
-								["achievementID"] = 11298,	-- A Classy Outfit
-							}),
-						}),
-						i(139735, {	-- Leggings
-							crit(4, {	-- Class Hall Leggings Earned
-								["achievementID"] = 11298,	-- A Classy Outfit
-							}),
-						}),
-						i(139732, {	-- Boots
-							crit(6, {	-- Class Hall Boots Earned
-								["achievementID"] = 11298,	-- A Classy Outfit
-							}),
-						}),
-						currency(1220, {	-- Order Resources
-							i(143727),	-- Champion's Salute Toy
-							i(124124),	-- Blood of Sargeras
-							i(140972),	-- Grandmaster's Lesser Armor Kit
-							i(140940),	-- Grandmaster's Armor Kit
-							i(140973),	-- Grandmaster's Greater Armor Kit
-						}),
+						i(140551),	-- Staff of the Broken Temple
 					}),
 					n(99154, {	-- Mei Chele
-						i(147542),	-- Ban-Fu, Cub of Ban-Lu (PET!)
+						i(147542, {	-- Ban-Fu, Cub of Ban-Lu (PET!)
+							["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+						}),
 					}),
 				}),
 			},

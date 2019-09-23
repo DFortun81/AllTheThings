@@ -207,130 +207,124 @@ _.ExpansionFeatures =
 					["modelScale"] = 1.5,
 				}),
 				]]--
-				n(-2, {	--  Vendors
+				n(-2,  {	-- Vendors
 					n(103792, {	-- Griftah <Amazing Amulets>
-						currency(1416, {	-- Coins of Air
-							i(138954),	-- Illusion: Poisoned
-							i(120857),	-- Barrel of Bandanas
-							i(151877),	-- Barrel of Eyepatches
-							i(151633),	-- Dig Rat Pet
-							i(151569),	-- Sneaky Marmot Pet
-							i(120858),	-- Crimson Shadowcap
-							i(120439),	-- Embroidered Crimson and Gold Mask
-							i(120861),	-- Fancy Crimson Shadowcap
-							i(120437),	-- Forboding Black Mask
-							i(120433),	-- Glamorous Purple Mask
-							i(120434),	-- Immaculate White Mask
-							i(120435),	-- Mossy Green Mask
-							i(120431),	-- Rakish Orange Mask
-							i(120432),	-- Sinister Rogue Mask
+						i(120857, {	-- Barrel of Bandanas (TOY!)
+							["cost"] = { { "c", 1416, 50000 }, },	-- 50,000x Coin of Air
 						}),
-						i(151181),	-- Certified Organic Lamp Shining Kit
+						i(151877, {	-- Barrel of Eyepatches (TOY!)
+							["cost"] = { { "c", 1416, 50000 }, },	-- 50,000x Coin of Air
+						}),
+						i(151181, {	-- Certified Organic Lamp Shining Kit
+							["cost"] = 5000000,	-- 500g
+						}),
 						i(27982),	-- Charm of Potent and Powerful Passions
 						i(27941),	-- Compassionate Critter's Friend
+						i(120858, {	-- Crimson Shadowcap
+							["cost"] = { { "c", 1416, 25000 }, },	-- 25,000x Coin of Air
+						}),
+						i(151633, {	-- Dig Rat (PET!)
+							["cost"] = { { "c", 1416, 10000 }, },	-- 10,000x Coin of Air
+						}),
 						i(151749),	-- Dubious Lamp
-						i(151144),	-- Gleaming Lamp of Al'Abas
-						i(151180),	-- Grimy Lamp
+						i(120439, {	-- Embroidered Crimson and Gold Mask
+							["cost"] = { { "c", 1416, 25000 }, },	-- 25,000x Coin of Air
+						}),
+						i(120861, {	-- Fancy Crimson Shadowcap
+							["cost"] = { { "c", 1416, 50000 }, },	-- 50,000x Coin of Air
+						}),
+						i(120437, {	-- Forboding Black Mask
+							["cost"] = { { "c", 1416, 5000 }, },	-- 5,000x Coin of Air
+						}),
+						i(120433, {	-- Glamorous Purple Mask
+							["cost"] = { { "c", 1416, 5000 }, },	-- 5,000x Coin of Air
+						}),
+						i(151144, {	-- Gleaming Lamp of Al'Abas
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(151180, {	-- Grimy Lamp
+							["cost"] = 5000000,	-- 500g
+						}),
 						i(34249),	-- Hula Girl Doll
+						i(138954, {	-- Illusion: Poisoned
+							["cost"] = { { "c", 1416, 25000 }, },	-- 25,000x Coin of Air
+						}),
+						i(120434, {	-- Immaculate White Mask
+							["cost"] = { { "c", 1416, 5000 }, },	-- 5,000x Coin of Air
+						}),
 						i(27992),	-- Infallible Tikbalang Ward
+						i(151131, {	-- Lamp of Al'Abas
+							["cost"] = 5000000,	-- 500g
+						}),
 						i(27940),	-- Marvelous Madstone of Immortality
+						i(120435, {	-- Mossy Green Mask
+							["cost"] = { { "c", 1416, 5000 }, },	-- 5,000x Coin of Air
+						}),
 						i(27976),	-- Polished Pendant of Edible Energy
 						i(74918),	-- Problem Solving Pendant
+						i(120431, {	-- Rakish Orange Mask
+							["cost"] = { { "c", 1416, 5000 }, },	-- 5,000x Coin of Air
+						}),
 						i(27945),	-- Shark's Tooth of Bona Fide Fluidic Mobility
-						i(151143),	-- Shining Lamp of Al'Abas
+						i(151143, {	-- Shining Lamp of Al'Abas
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(120432, {	-- Sinister Rogue Mask
+							["cost"] = { { "c", 1416, 25000 }, },	-- 25,000x Coin of Air
+						}),
+						i(151569, {	-- Sneaky Marmot (PET!)
+							["cost"] = { { "c", 1416, 10000 }, },	-- 10,000x Coin of Air
+						}),
 						i(27978),	-- Soap on a Rope
 						i(27979),	-- Stone of Stupendous Springing Strides
 						i(27944),	-- Talisman of True Treasure Tracking
 					}),
-					n(99863, {	-- Jenri <Spymaster>
+					n(99863,  {	-- Jenri <Spymaster>
 						i(130329),	-- Gloves of Artful Dodging
 						i(130325),	-- Shoulder of Artful Dodging
 						i(130323),	-- Vest of Artful Dodging
 					}),
 					n(105986, {	-- Kelsey Steelspark <Quartermaster>
+						i(139745, {	-- Belt of the Uncrowned
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(143727, {	-- Champion's Salute (TOY!)
+							["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+						}),
+						i(139739, {	-- Chestguard of the Uncrowned
+							["cost"] = 5000000,	-- 500g
+						}),
 						i(136803, {	-- Dirty Tricks, Vol 1: Detection
 							--["spellID"] = 210108,	-- Detection
 						}),
+						i(139740, {	-- Footpads of the Uncrowned
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139741, {	-- Gloves of the Uncrowned
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139743, {	-- Leggings of the Uncrowned
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139742, {	-- Mask of the Uncrowned
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(140943, {	-- Shadowstalker's Armor Kit
+							["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
+						}),
+						i(140979, {	-- Shadowstalker's Greater Armor Kit
+							["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
+						}),
+						i(140978, {	-- Shadowstalker's Lesser Armor Kit
+							["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
+						}),
 						i(140541),	-- Shiv of the Uncrowned
 						i(140556),	-- Shortblade of the Uncrowned
-						{
-							["itemID"] = 139742,		-- Helm
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 1,			-- Class Hall Helm Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139744,		-- Shoulders
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 8,			-- Class Hall Shoulders Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139739,		-- Chestpiece
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 5,			-- Class Hall Chestpiece Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139746,		-- Bracers
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 2,			-- Class Hall Bracers Earned (Criteria)
-								}
-							},
-						},
-						{
-							["itemID"] = 139741,		-- Gloves
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 3,			-- Class Hall Gloves Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139745,		-- Belt
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 7,			-- Class Hall Belt Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139743,		-- Leggings
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 4,			-- Class Hall Leggings Earned (Criteria)
-								},
-							},
-						},
-						{
-							["itemID"] = 139740,		-- Boots
-							["g"] = {
-								{
-									["achievementID"] = 11298,	-- A Classy Outfit (Achievement)
-									["criteriaID"] = 6,			-- Class Hall Boots Earned (Criteria)
-								},
-							},
-						},
-						currency(1220, {	-- Order Resources
-							i(143727),	-- Champion's Salute Toy
-							i(124124),	-- Blood of Sargeras
-							i(140978),	-- Shadowstalker's Lesser Armor Kit
-							i(140943),	-- Shadowstalker's Armor Kit
-							i(140979),	-- Shadowstalker's Greater Armor Kit
+						i(139744, {		-- Shoulderblades of the Uncrowned
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(139746, {	-- Wristbands of the Uncrowned
+							["cost"] = 5000000,	-- 500g
 						}),
 					}),
 					n(105982, {	-- Smudge Thunderwood <Herbal Concoctions>
@@ -339,9 +333,15 @@ _.ExpansionFeatures =
 					n(121282, {	-- Zan Shivsproket
 						["sourceQuest"] = 46178,	-- Hiding In Plain Sight
 						["g"] = {
-							i(143490),	-- Bloody Reins of Dark Portent (MOUNT!)
-							i(143491),	-- Mephitic Reins of Dark Portent (MOUNT!)
-							i(143492),	-- Midnight Black Reins of Dark Portent (MOUNT!)
+							i(143490, {	-- Bloody Reins of Dark Portent (MOUNT!)
+								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+							}),
+							i(143491, {	-- Mephitic Reins of Dark Portent (MOUNT!)
+								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+							}),
+							i(143492, {	-- Midnight Black Reins of Dark Portent (MOUNT!)
+								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+							}),
 						},
 					}),
 				}),
