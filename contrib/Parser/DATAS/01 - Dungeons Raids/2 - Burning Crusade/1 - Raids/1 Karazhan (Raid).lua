@@ -154,7 +154,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 			cr(16812, e(1556, {	-- Opera Hall
 				n(-1, {	-- Common Boss Drops
-					["description"] = "These items can drop for completing the Opera Hall for the week.",
+					["description"] = "These items can drop from any of the Opera Hall bosses.",
 					["crs"] = {
 						17603,	-- Grandmother
 						17521,	-- The Big Bad Wolf
@@ -178,7 +178,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 				n(17521, {		-- The Big Bad Wolf [Red Riding Hood]
-					["description"] = "The Big Bad Wolf is initially a harmless Grandmother, though speaking to her will reveal the truth...\n\n\"Run away little girl!\"",
+					["description"] = "The Big Bad Wolf is initially a harmless Grandmother, but speaking to her will reveal the truth...\n\n\"Run away, little girl!\"",
 					["crs"] = {
 						17603,	-- Grandmother
 					},
@@ -191,7 +191,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 				n(17534, {		-- Julianne [Romulo and Julianne]
-					["description"] = "Julianne will appear first alone, then after defeating her, Romulo will join the fight. After dispatching him, they will both rise and begin the fight again.",
+					["description"] = "Julianne will appear first alone.  After she is defeated, Romulo will join the fight. After you dispatch, they will both rise and begin the fight again.",
 					["crs"] = {
 						17533,	-- Romulo
 					},

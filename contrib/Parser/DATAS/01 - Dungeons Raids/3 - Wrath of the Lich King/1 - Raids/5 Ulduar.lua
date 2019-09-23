@@ -9,7 +9,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["mapID"] = 147,
 		["maps"] = { 148, 149, 150, 151, 152 },
 		["coord"] = { 41.5, 17.9, 120 },	-- Ulduar, The Storm Peaks
-		["groups"] = {
+		["g"] = {
 			i(45038, {	-- Fragment of Val'anyr
 				["classes"] = { 2, 5, 7, 10, 11 },
 				["crs"] = {
@@ -29,16 +29,15 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					33271,	-- General Vezax
 					33288,	-- Yogg-Saron
 				},
-				["groups"] = {
+				["g"] = {
 					i(45039, {	-- Shattered Fragments of Val'anyr
 						q(13622),	-- Ancient History
-						{
-							["questID"] = 13629,	-- Val'anyr, Hammer of Ancient Kings
+						q(13629, {	-- Val'anyr, Hammer of Ancient Kings
 							["sourceQuest"] = 13622,	-- Ancient History
-							["groups"] = {
+							["g"] = {
 								i(46017) 	-- Val'anyr, Hammer of Ancient Kings
 							},
-						},
+						}),
 					})
 				},
 			}),
@@ -79,7 +78,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						34271,	-- XD-175 Compactobot
 						34269,	-- XR-949 Salvagebot
 					},
-					["groups"] = {
+					["g"] = {
 						i(46351),	-- Bloodcrush Cudgel
 						i(45605),	-- Daschal's Bite
 						i(46350),	-- Pillar of Fortitude
@@ -122,7 +121,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						33271,	-- General Vezax
 						33288,	-- Yogg-Saron
 					},
-					["groups"] = {
+					["g"] = {
 						i(45087),	-- Runed Orb
 						i(45100),	-- Pattern: Belt of Arctic Life
 						i(45094),	-- Pattern: Belt of Dragons
@@ -145,74 +144,56 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				}),
 				n(-17, {	-- Quests
-					{	-- The Celestial Planetarium
-						["questID"] = 13607,	-- The Celestial Planetarium
+					q(13607, {	-- The Celestial Planetarium
 						["sourceQuest"] = 13604,	-- Archivum Data Disc
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["u"] = 40,
-					},
-					{	-- Freya's Sigil
-						["questID"] = 13606,	-- Freya's Sigil
+					}),
+					q(13606, {	-- Freya's Sigil
 						["sourceQuest"] = 13607,	-- The Celestial Planetarium
 						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["crs"] = {
-							32906,	-- Freya
-						},
-						["groups"] = {
-							{
-								["itemID"] = 45788,	-- Freya's Sigil
+						["crs"] = { 32906 },	-- Freya
+						["u"] = 40,
+						["g"] = {
+							i(45788, {	-- Freya's Sigil
 								["questID"] = 13606,	-- Freya's Sigil
-							},
+							}),
 						},
-						["u"] = 40,
-					},
-					{	-- Hodir's Sigil
-						["questID"] = 13609,	-- Hodir's Sigil
+					}),
+					q(13609, {	-- Hodir's Sigil
 						["sourceQuest"] = 13607,	-- The Celestial Planetarium
 						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["crs"] = {
-							32845,	-- Hodir
-						},
-						["groups"] = {
-							{
-								["itemID"] = 45786,	-- Hodir's Sigil
+						["crs"] = { 32845 },	-- Hodir
+						["u"] = 40,
+						["g"] = {
+							i(45786, {	-- Hodir's Sigil
 								["questID"] = 13609,	-- Hodir's Sigil
-							},
+							}),
 						},
-						["u"] = 40,
-					},
-					{	-- Mimiron's Sigil
-						["questID"] = 13611,	-- Mimiron's Sigil
+					}),
+					q(13611, {	-- Mimiron's Sigil
 						["sourceQuest"] = 13607,	-- The Celestial Planetarium
 						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["crs"] = {
-							33350,	-- Mimiron
-						},
-						["groups"] = {
-							{
-								["itemID"] = 45787,	-- Mimiron's Sigil
+						["crs"] = { 33350 },	-- Mimiron
+						["u"] = 40,
+						["g"] = {
+							i(45787, {	-- Mimiron's Sigil
 								["questID"] = 13611,	-- Mimiron's Sigil
-							},
+							}),
 						},
-						["u"] = 40,
-					},
-					{	-- Thorim's Sigil
-						["questID"] = 13610,	-- Thorim's Sigil
+					}),
+					q(13610, {	-- Thorim's Sigil
 						["sourceQuest"] = 13607,	-- The Celestial Planetarium
 						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["crs"] = {
-							32865,	-- Thorim
-						},
-						["groups"] = {
-							{
-								["itemID"] = 45784,	-- Thorim's Sigil
-								["questID"] = 13610,	-- Thorim's Sigil
-							},
-						},
+						["crs"] = { 32865 },	-- Thorim
 						["u"] = 40,
-					},
-					{	-- Algalon
-						["questID"] = 13614,	-- Algalon
+						["g"] = {
+							i(45784, {	-- Thorim's Sigil
+								["questID"] = 13610,	-- Thorim's Sigil
+							}),
+						},
+					}),
+					q(13614, {	-- Algalon
 						["sourceQuests"] = {
 							13606,	-- Freya's Sigil
 							13609,	-- Hodir's Sigil
@@ -220,82 +201,59 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							13610,	-- Thorim's Sigil
 						},
 						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["crs"] = {
-							32871,	-- Algalon the Observer
-						},
-						["groups"] = {
-							{
-								["itemID"] = 45875,	-- Sack of Ulduar Spoils
-								["groups"] = {
-									i(45087),	-- Runed Orb
-								},
-							},
-						},
+						["crs"] = { 32871 },	-- Algalon the Observer
 						["u"] = 40,
-					},
-					{	-- Heroic: The Celestial Planetarium
-						["questID"] = 13816,	-- Heroic: The Celestial Planetarium
+						["g"] = {
+							i(45875, {	-- Sack of Ulduar Spoils
+								i(45087),	-- Runed Orb
+							}),
+						},
+					}),
+					q(13816, {	-- Heroic: The Celestial Planetarium
 						["sourceQuest"] = 13817,	-- Heroic: Archivum Data Disc
 						["provider"] = { "n", 33957 },	-- Prospector Loren
-					},
-					{	-- Heroic: Freya's Sigil
-						["questID"] = 13821,	-- Heroic: Freya's Sigil
+					}),
+					q(13821, {	-- Heroic: Freya's Sigil
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
 						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["crs"] = {
-							32906,	-- Freya
-						},
-						["groups"] = {
-							{
-								["itemID"] = 45814,	-- Freya's Sigil
+						["crs"] = { 32906 },	-- Freya
+						["g"] = {
+							i(45814, {	-- Freya's Sigil
 								["questID"] = 13821,	-- Heroic: Freya's Sigil
-							},
+							}),
 						},
-					},
-					{	-- Heroic: Hodir's Sigil
-						["questID"] = 13822,	-- Heroic: Hodir's Sigil
+					}),
+					q(13822, {	-- Heroic: Hodir's Sigil
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
 						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["crs"] = {
-							32845,	-- Hodir
-						},
-						["groups"] = {
-							{
-								["itemID"] = 45815,	-- Hodir's Sigil
+						["crs"] = { 32845 },	-- Hodir
+						["g"] = {
+							i(45815, {	-- Hodir's Sigil
 								["questID"] = 13822,	-- Heroic: Hodir's Sigil
-							},
+							}),
 						},
-					},
-					{	-- Heroic: Mimiron's Sigil
-						["questID"] = 13824,	-- Heroic: Mimiron's Sigil
+					}),
+					q(13824, {	-- Heroic: Mimiron's Sigil
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
 						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["crs"] = {
-							33350,	-- Mimiron
-						},
-						["groups"] = {
-							{
-								["itemID"] = 45816,	-- Mimiron's Sigil
+						["crs"] = { 33350 },	-- Mimiron
+						["g"] = {
+							i(45816, {	-- Mimiron's Sigil
 								["questID"] = 13824,	-- Heroic: Mimiron's Sigil
-							},
+							}),
 						},
-					},
-					{	-- Heroic: Thorim's Sigil
-						["questID"] = 13823,	-- Heroic: Thorim's Sigil
+					}),
+					q(13823, {	-- Heroic: Thorim's Sigil
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
 						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["crs"] = {
-							32865,	-- Thorim
-						},
-						["groups"] = {
-							{
-								["itemID"] = 45817,	-- Thorim's Sigil
+						["crs"] = { 32865 },	-- Thorim
+						["g"] = {
+							i(45817, {	-- Thorim's Sigil
 								["questID"] = 13823,	-- Heroic: Thorim's Sigil
-							},
+							}),
 						},
-					},
-					{	-- Heroic: Algalon
-						["questID"] = 13818,	-- Heroic: Algalon
+					}),
+					q(13818, {	-- Heroic: Algalon
 						["sourceQuests"] = {
 							13821,	-- Heroic: Freya's Sigil
 							13822,	-- Heroic: Hodir's Sigil
@@ -303,116 +261,62 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							13823,	-- Heroic: Thorim's Sigil
 						},
 						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["crs"] = {
-							32871,	-- Algalon the Observer
-						},
-						["groups"] = {
-							{
-								["itemID"] = 45798,	-- Heroic Celestial Planetarium Key
-								["questID"] = 13818,	-- Heroic: Algalon
-							},
-							{
-								["itemID"] = 45878,	-- Large Sack of Ulduar Spoils
-								["groups"] = {
-									i(45087),	-- Runed Orb
-									i(45100),	-- Pattern: Belt of Arctic Life
-									i(45094),	-- Pattern: Belt of Dragons
-									i(45096),	-- Pattern: Blue Belt of Chaos
-									i(45095),	-- Pattern: Boots of Living Scale
-									i(45101),	-- Pattern: Boots of Wintry Endurance
-									i(45104),	-- Pattern: Cord of the White Dawn
-									i(45098),	-- Pattern: Death-Warmed Belt
-									i(45099),	-- Pattern: Footpads of Silence
-									i(45097),	-- Pattern: Lightning Grounded Boots
-									i(45102),	-- Pattern: Sash of Ancient Power
-									i(45105),	-- Pattern: Savior's Slippers
-									i(45103),	-- Pattern: Spellslinger's Slippers
-									i(45089),	-- Plans: Battlelord's Plate Boots
-									i(45088),	-- Plans: Belt of the Titans
-									i(45092),	-- Plans: Indestructible Plate Girdle
-									i(45090),	-- Plans: Plate Girdle of Righteousness
-									i(45093),	-- Plans: Spiked Deathdealers
-									i(45091),	-- Plans: Treads of Destiny
-								},
-							},
-						},
-					},
-				}),
-				{	-- Dwarfageddon
-					["achievementID"] = 12312,	-- Dwarfageddon
-				},
-				cr(33113, e(1637, {	-- Flame Leviathan
-					{	-- The Siege of Ulduar: Flame Leviathan
-						["achievementID"] = 12297,	-- The Siege of Ulduar
-						["criteriaID"] = 1,		-- Flame Leviathan
-					},
-					{	-- Orbit-uary
-						["achievementID"] = 12320,	-- Orbit-uary
-						["g"] = {	-- 
-							{	-- Golden Saronite Dragon
-								["itemID"] = 45132,	-- Golden Saronite Dragon
-							},
-							{	-- Pendant of Fiery Havoc
-								["itemID"] = 45133,	-- Pendant of Fiery Havoc
-							},
-							{	-- Mantle of Fiery Vengeance
-								["itemID"] = 45300,	-- Mantle of Fiery Vengeance
-							},
-							{	-- Shoulderpads of Dormant Energies
-								["itemID"] = 45136,	-- Shoulderpads of Dormant Energies
-							},
-							{	-- Handguards of Potent Cures
-								["itemID"] = 45293,	-- Handguards of Potent Cures
-							},
-							{	-- Gilded Steel Legplates
-								["itemID"] = 45295,	-- Gilded Steel Legplates
-							},
-							{	-- Plated Leggings of Ruination
-								["itemID"] = 45134,	-- Plated Leggings of Ruination
-							},
-							{	-- Boots of Fiery Resolution
-								["itemID"] = 45135,	-- Boots of Fiery Resolution
-							},
-							{	-- Shimmering Seal
-								["itemID"] = 45297,	-- Shimmering Seal
-							},
-						},
-					},
-					{	-- Nuked from Orbit
-						["achievementID"] = 12319,	-- Nuked from Orbit
-					},
-					{	-- Orbital Devastation
-						["achievementID"] = 12318,	-- Orbital Devastation
-					},
-					{	-- Orbital Bombardment
-						["achievementID"] = 12317,	-- Orbital Bombardment
-					},
-					{	-- Shutout
-						["achievementID"] = 12316,	-- Shutout
-					},
-					{	-- Take Out Those Turret
-						["achievementID"] = 12315,	-- Take Out Those Turret
-					},
-					{	-- Three Car Garage
-						["achievementID"] = 12314,	-- Three Car Garage
+						["crs"] = { 32871 },	-- Algalon the Observer
 						["g"] = {
-							{	-- Salvaged Chopper
-								["achievementID"] = 12314,	-- Three Car Garage
-								["criteriaID"] = 1,	-- Salvaged Chopper
-							},
-							{	-- Salvaged Siege Engine
-								["achievementID"] = 12314,	-- Three Car Garage
-								["criteriaID"] = 2,	-- Salvaged Siege Engine
-							},
-							{	-- Salvaged Demolisher
-								["achievementID"] = 12314,	-- Three Car Garage
-								["criteriaID"] = 3,	-- Salvaged Demolisher
-							},
+							i(45798, {	-- Heroic Celestial Planetarium Key
+								["questID"] = 13818,	-- Heroic: Algalon
+							}),
+							i(45878, {	-- Large Sack of Ulduar Spoils
+								i(45087),	-- Runed Orb
+								i(45100),	-- Pattern: Belt of Arctic Life
+								i(45094),	-- Pattern: Belt of Dragons
+								i(45096),	-- Pattern: Blue Belt of Chaos
+								i(45095),	-- Pattern: Boots of Living Scale
+								i(45101),	-- Pattern: Boots of Wintry Endurance
+								i(45104),	-- Pattern: Cord of the White Dawn
+								i(45098),	-- Pattern: Death-Warmed Belt
+								i(45099),	-- Pattern: Footpads of Silence
+								i(45097),	-- Pattern: Lightning Grounded Boots
+								i(45102),	-- Pattern: Sash of Ancient Power
+								i(45105),	-- Pattern: Savior's Slippers
+								i(45103),	-- Pattern: Spellslinger's Slippers
+								i(45089),	-- Plans: Battlelord's Plate Boots
+								i(45088),	-- Plans: Belt of the Titans
+								i(45092),	-- Plans: Indestructible Plate Girdle
+								i(45090),	-- Plans: Plate Girdle of Righteousness
+								i(45093),	-- Plans: Spiked Deathdealers
+								i(45091),	-- Plans: Treads of Destiny
+							}),
 						},
-					},
-					{	-- Unbroken
-						["achievementID"] = 12313,	-- Unbroken
-					},
+					}),
+				}),
+				ach(12312),	-- Dwarfageddon
+				cr(33113, e(1637, {	-- Flame Leviathan
+					crit(1, {	-- Flame Leviathan
+						["achievementID"] = 12297,	-- The Siege of Ulduar
+					}),
+					ach(12320, {	-- Orbit-uary
+						i(45132),	-- Golden Saronite Dragon
+						i(45133),	-- Pendant of Fiery Havoc
+						i(45300),	-- Mantle of Fiery Vengeance
+						i(45136),	-- Shoulderpads of Dormant Energies
+						i(45293),	-- Handguards of Potent Cures
+						i(45295),	-- Gilded Steel Legplates
+						i(45134),	-- Plated Leggings of Ruination
+						i(45135),	-- Boots of Fiery Resolution
+						i(45297),	-- Shimmering Seal
+					}),
+					ach(12319),	-- Nuked from Orbit
+					ach(12318),	-- Orbital Devastation
+					ach(12317),	-- Orbital Bombardment
+					ach(12316),	-- Shutout
+					ach(12315),	-- Take Out Those Turret
+					ach(12314, {	-- Three Car Garage
+						crit(1),	-- Salvaged Chopper
+						crit(2),	-- Salvaged Siege Engine
+						crit(3),	-- Salvaged Demolisher
+					}),
+					ach(12313),	-- Unbroken
 					i(45282),	-- Ironsoul
 					i(45287),	-- Firesoul
 					i(45284),	-- Kinetic Ripper
@@ -440,19 +344,12 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(46348),	-- Formula: Enchant Weapon - Blood Draining
 				})),
 				cr(33118, e(1638, {	-- Ignis the Furnace Master
-					{	-- Hot Pocket
-						["achievementID"] = 12324,	-- Hot Pocket
-					},
-					{	-- The Siege of Ulduar: Ignis the Furnace Master
+					crit(3, {	-- Ignis the Furnace Master
 						["achievementID"] = 12297,	-- The Siege of Ulduar
-						["criteriaID"] = 3,		-- Ignis the Furnace Master
-					},
-					{	-- Shattered
-						["achievementID"] = 12323,	-- Shattered
-					},
-					{	-- Stokin' the Furnace
-						["achievementID"] = 12325,	-- Stokin' the Furnace
-					},
+					}),
+					ach(12324),	-- Hot Pocket
+					ach(12323),	-- Shattered
+					ach(12325),	-- Stokin' the Furnace
 					i(142086),	-- Red-Hot Coal (PET!)
 					i(45171),	-- Intensity
 					i(45311),	-- Relentless Edge
@@ -482,16 +379,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(46348),	-- Formula: Enchant Weapon - Blood Draining
 				})),
 				cr(33186, e(1639, {	-- Razorscale
-					{	-- A Quick Shave
-						["achievementID"] = 12321,	-- A Quick Shave
-					},
-					{	-- Iron Dwarf, Medium Rare
-						["achievementID"] = 12322,	-- Iron Dwarf, Medium Rare
-					},
-					{	-- The Siege of Ulduar: Razorscale
+					crit(2, {	-- Razorscale
 						["achievementID"] = 12297,	-- The Siege of Ulduar
-						["criteriaID"] = 2,		-- Razorscale
-					},
+					}),
+					ach(12321),	-- A Quick Shave
+					ach(12322),	-- Iron Dwarf, Medium Rare
 					i(142087),	-- Ironbound Collar (PET!)
 					i(45147),	-- Guiding Star
 					i(45298),	-- Razorscale Talon
@@ -518,57 +410,25 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(45148),	-- Living Flame
 				})),
 				cr(33293, e(1640, {	-- XT-002 Deconstructor
-					{	-- Heartbreaker
-						["achievementID"] = 12330,	-- Heartbreaker
-						["g"] = {
-							{	-- Aesir's Edge
-								["itemID"] = 45868,	-- Aesir's Edge
-							},
-							{	-- Sorthalis, Hammer of the Watchers
-								["itemID"] = 45442,	-- Sorthalis, Hammer of the Watchers
-							},
-							{	-- Magnetized Projectile Emitter
-								["itemID"] = 45870,	-- Magnetized Projectile Emitter
-							},
-							{	-- Charm of Meticulous Timing
-								["itemID"] = 45443,	-- Charm of Meticulous Timing
-							},
-							{	-- Breastplate of the Devoted
-								["itemID"] = 45445,	-- Breastplate of the Devoted
-							},
-							{	-- Breastplate of the Stoneshaper
-								["itemID"] = 45867,	-- Breastplate of the Stoneshaper
-							},
-							{	-- Fluxing Energy Coils
-								["itemID"] = 45869,	-- Fluxing Energy Coils
-							},
-							{	-- Grasps of Reason
-								["itemID"] = 45446,	-- Grasps of Reason
-							},
-							{	-- Gloves of the Steady Hand
-								["itemID"] = 45444,	-- Gloves of the Steady Hand
-							},
-							{	-- Seal of Ulduar
-								["itemID"] = 45871,	-- Seal of Ulduar
-							},
-						},
-					},
-					{	-- Must Deconstruct Faster
-						["achievementID"] = 12329,	-- Must Deconstruct Faster
-					},
-					{	-- Nerf Engineering
-						["achievementID"] = 12326,	-- Nerf Engineering
-					},
-					{	-- Nerf Gravity Bombs
-						["achievementID"] = 12328,	-- Nerf Gravity Bombs
-					},
-					{	-- Nerf Scrapbots
-						["achievementID"] = 12327,	-- Nerf Scrapbots
-					},
-					{	-- The Siege of Ulduar: XT-002 Deconstructor
+					crit(4, {	-- XT-002 Deconstructor
 						["achievementID"] = 12297,	-- The Siege of Ulduar
-						["criteriaID"] = 4,		-- XT-002 Deconstructor
-					},
+					}),
+					ach(12330, {	-- Heartbreaker
+						i(45868),	-- Aesir's Edge
+						i(45442),	-- Sorthalis, Hammer of the Watchers
+						i(45870),	-- Magnetized Projectile Emitter
+						i(45443),	-- Charm of Meticulous Timing
+						i(45445),	-- Breastplate of the Devoted
+						i(45867),	-- Breastplate of the Stoneshaper
+						i(45869),	-- Fluxing Energy Coils
+						i(45446),	-- Grasps of Reason
+						i(45444),	-- Gloves of the Steady Hand
+						i(45871),	-- Seal of Ulduar
+					}),
+					ach(12329),	-- Must Deconstruct Faster
+					ach(12326),	-- Nerf Engineering
+					ach(12328),	-- Nerf Gravity Bombs
+					ach(12327),	-- Nerf Scrapbots
 					i(45256),	-- Twisted Visage
 					i(45246),	-- Golem-Shard Sticker
 					i(45685),	-- Plasma Foil
@@ -596,34 +456,18 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(46348),	-- Formula: Enchant Weapon - Blood Draining
 				})),
 				cr(32871, e(1650, {	-- Algalon the Observer
-					{	-- Observed
-						["achievementID"] = 12399,	-- Observed
-						["g"] = {
-							{	-- Starcaller
-								["titleID"] = 129,	-- Starcaller
-							},
-							{	-- the Astral Walker
-								["titleID"] = 130,	-- the Astral Walker
-							},
-						},
-					},
-					{	-- Supermassive
-						["achievementID"] = 12400,	-- Supermassive
-						["g"] = {
-							{	-- Close 3 Black Holes within 10 seconds
-								["achievementID"] = 12400,	-- Supermassive
-								["criteriaID"] = 1,		-- Close 3 Black Holes within 10 seconds
-							},
-							{	-- Defeat Algalon the Observer
-								["achievementID"] = 12400,	-- Supermassive
-								["criteriaID"] = 2,		-- Defeat Algalon the Observer
-							},
-						},
-					},
+					ach(12399, {	-- Observed
+						title(129),	-- Starcaller
+						title(130),	-- the Astral Walker
+					}),
+					ach(12400, {	-- Supermassive
+						crit(1),	-- Close 3 Black Holes within 10 seconds
+						crit(2),	-- Defeat Algalon the Observer
+					}),
 					i(46052, {	-- Reply-Code Alpha
 						q(13631, {	-- All Is Well That Ends Well
 							["provider"] = { "n", 16128 },	-- Rhonin <Leader of the Kirin Tor>
-							["groups"] = {
+							["g"] = {
 								i(46320),	-- Drape of the Skyherald
 								i(46321),	-- Sunglimmer Drape
 								i(46322),	-- Brann's Sealing Ring
@@ -634,7 +478,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(46053, {	-- Reply-Code Alpha
 						q(13819, {	-- Heroic: All Is Well That Ends Well
 							["provider"] = { "n", 16128 },	-- Rhonin <Leader of the Kirin Tor>
-							["groups"] = {
+							["g"] = {
 								i(45588),	-- Drape of the Skyborn
 								i(45618),	-- Sunglimmer Cloak
 								i(45608),	-- Brann's Signet Ring
@@ -675,69 +519,34 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(46051),	-- Meteorite Crystal
 				})),
 				cr(32867, e(1641, {	-- Assembly of Iron 32927, 32857
-					{	-- The Antechamber of Ulduar: Assembly of Iron
+					crit(1, {	-- Assembly of Iron
 						["achievementID"] = 12302,	-- The Antechamber of Ulduar
-						["criteriaID"] = 1,		-- Assembly of Iron
-					},
-					{	-- But I'm On Your Side!
-						["achievementID"] = 12335,	-- But I'm On Your Side!
+					}),
+					ach(12335, {	-- But I'm On Your Side!
 						["description"] = "Use the \"Iron Boot Flask\" toy before engaging the boss.",
-					},
-					{	-- Can't Do That While Stunned
-						["achievementID"] = 12336,	-- Can't Do That While Stunned
-					},
-					{	-- I Choose You, Runemaster Molgeim
-						["achievementID"] = 12332,	-- I Choose You, Runemaster Molgeim
-					},
-					{	-- I Choose You, Steelbreaker
-						["achievementID"] = 12334,	-- I Choose You, Steelbreaker
-						["g"] = {
-							{	-- Fang of Oblivion
-								["itemID"] = 45607,	-- Fang of Oblivion
-							},
-							{	-- Perilous Bite
-								["itemID"] = 45448,	-- Perilous Bite
-							},
-							{	-- The Masticator
-								["itemID"] = 45449,	-- The Masticator
-							},
-							{	-- Sapphire Amulet of Renewal
-								["itemID"] = 45243,	-- Sapphire Amulet of Renewal
-							},
-							{	-- Watchful Eye of Fate
-								["itemID"] = 45447,	-- Watchful Eye of Fate
-							},
-							{	-- Shoulderpads of the Intruder
-								["itemID"] = 45245,	-- Shoulderpads of the Intruder
-							},
-							{	-- Drape of Mortal Downfall
-								["itemID"] = 45242,	-- Drape of Mortal Downfall
-							},
-							{	-- Belt of Colossal Rage
-								["itemID"] = 45241,	-- Belt of Colossal Rage
-							},
-							{	-- Belt of the Crystal Tree
-								["itemID"] = 45455,	-- Belt of the Crystal Tree
-							},
-							{	-- Greaves of Swift Vengeance
-								["itemID"] = 45244,	-- Greaves of Swift Vengeance
-							},
-							{	-- Loop of the Agile
-								["itemID"] = 45456,	-- Loop of the Agile
-							},
-							{	-- Archivum Data Disc
-								["itemID"] = 45506,	-- Archivum Data Disc
-								["questID"] = 13604,	-- Archivum Data Disc
-							},
-							{	-- Archivum Data Disc
-								["itemID"] = 45857,	-- Archivum Data Disc
-								["questID"] = 13817,	-- Heroic: Archivum Data Disc
-							},
-						},
-					},
-					{	-- I Choose You, Stormcaller Brundir
-						["achievementID"] = 12333,	-- I Choose You, Stormcaller Brundir
-					},
+					}),
+					ach(12336),	-- Can't Do That While Stunned
+					ach(12332),	-- I Choose You, Runemaster Molgeim
+					ach(12334, {	-- I Choose You, Steelbreaker
+						i(45607),	-- Fang of Oblivion
+						i(45448),	-- Perilous Bite
+						i(45449),	-- The Masticator
+						i(45243),	-- Sapphire Amulet of Renewal
+						i(45447),	-- Watchful Eye of Fate
+						i(45245),	-- Shoulderpads of the Intruder
+						i(45242),	-- Drape of Mortal Downfall
+						i(45241),	-- Belt of Colossal Rage
+						i(45455),	-- Belt of the Crystal Tree
+						i(45244),	-- Greaves of Swift Vengeance
+						i(45456),	-- Loop of the Agile
+						i(45506, {	-- Archivum Data Disc
+							["questID"] = 13604,	-- Archivum Data Disc
+						}),
+						i(45857, {	-- Archivum Data Disc
+							["questID"] = 13817,	-- Heroic: Archivum Data Disc
+						}),
+					}),
+					ach(12333),	-- I Choose You, Stormcaller Brundir
 					i(142088),	-- Stormforged Rune (PET!)
 					i(45234),	-- Rapture
 					i(45233),	-- Stormrune Edge
@@ -768,22 +577,13 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(46348),	-- Formula: Enchant Weapon - Blood Draining
 				})),
 				cr(32930, e(1642, {	-- Kologarn
-					{	-- Disarmed
-						["achievementID"] = 12338,	-- Disarmed
-					},
-					{	-- If Looks Could Kill
-						["achievementID"] = 12339,	-- If Looks Could Kill
-					},
-					{	-- The Antechamber of Ulduar: Kologarn
+					crit(2, {	-- Kologarn
 						["achievementID"] = 12302,	-- The Antechamber of Ulduar
-						["criteriaID"] = 2,		-- Kologarn
-					},
-					{	-- Rubble and Roll
-						["achievementID"] = 12340,	-- Rubble and Roll
-					},
-					{	-- With Open Arms
-						["achievementID"] = 12337,	-- With Open Arms
-					},
+					}),
+					ach(12338),	-- Disarmed
+					ach(12339),	-- If Looks Could Kill
+					ach(12340),	-- Rubble and Roll
+					ach(12337),	-- With Open Arms
 					i(45695),	-- Spire of Withering Dreams
 					i(45266),	-- Malice
 					i(45700),	-- Stoneguard
@@ -810,16 +610,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(45263),	-- Wrathstone
 				})),
 				cr(33515, e(1643, {	-- Auriaya
-					{	-- The Antechamber of Ulduar: Auriaya
+					crit(3, {	-- Auriaya
 						["achievementID"] = 12302,	-- The Antechamber of Ulduar
-						["criteriaID"] = 3,		-- Auriaya
-					},
-					{	-- Crazy Cat Lady
-						["achievementID"] = 12341,	-- Crazy Cat Lady
-					},
-					{	-- Nine Lives
-						["achievementID"] = 12342,	-- Nine Lives
-					},
+					}),
+					ach(12341),	-- Crazy Cat Lady
+					ach(12342),	-- Nine Lives
 					i(142089),	-- Glittering Ball of Yarn (PET!)
 					i(45437),	-- Runescribed Blade
 					i(45315),	-- Stonerender
@@ -849,60 +644,26 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(46348),	-- Formula: Enchant Weapon - Blood Draining
 				})),
 				cr(32845, e(1644, {	-- Hodir
-					{	-- Cheese the Freeze
-						["achievementID"] = 12343,	-- Cheese the Freeze
-					},
-					{	-- Getting Cold in Here
-						["achievementID"] = 12345,	-- Getting Cold in Here
-					},
-					{	-- The Keepers of Ulduar: Hodir
+					crit(1, {	-- Hodir
 						["achievementID"] = 12309,	-- The Keepers of Ulduar
-						["criteriaID"] = 1,		-- Hodir
-					},
-					{	-- I Could Say That This Cache Was Rare
-						["achievementID"] = 12347,	-- I Could Say That This Cache Was Rare
-						["g"] = {
-							{	-- Icecore Staff
-								["itemID"] = 45886,	-- Icecore Staff
-							},
-							{	-- Staff of Endless Winter
-								["itemID"] = 45457,	-- Staff of Endless Winter
-							},
-							{	-- Constellus
-								["itemID"] = 45612,	-- Constellus
-							},
-							{	-- Shiver
-								["itemID"] = 45876,	-- Shiver
-							},
-							{	-- Ice Layered Barrier
-								["itemID"] = 45887,	-- Ice Layered Barrier
-							},
-							{	-- The Boreal Guard
-								["itemID"] = 45877,	-- The Boreal Guard
-							},
-							{	-- Frigid Strength of Hodir
-								["itemID"] = 45459,	-- Frigid Strength of Hodir
-							},
-							{	-- Drape of Icy Intent
-								["itemID"] = 45461,	-- Drape of Icy Intent
-							},
-							{	-- Bindings of Winter Gale
-								["itemID"] = 45460,	-- Bindings of Winter Gale
-							},
-							{	-- Bitter Cold Armguards
-								["itemID"] = 45888,	-- Bitter Cold Armguards
-							},
-							{	-- Gloves of the Frozen Glade
-								["itemID"] = 45462,	-- Gloves of the Frozen Glade
-							},
-						},
-					},
-					{	-- I Have the Coolest Friends
-						["achievementID"] = 12344,	-- I Have the Coolest Friends
-					},
-					{	-- Staying Buffed All Winter
-						["achievementID"] = 12346,	-- Staying Buffed All Winter
-					},
+					}),
+					ach(12343),	-- Cheese the Freeze
+					ach(12345),	-- Getting Cold in Here
+					ach(12347, {	-- I Could Say That This Cache Was Rare
+						i(45886),	-- Icecore Staff
+						i(45457),	-- Staff of Endless Winter
+						i(45612),	-- Constellus
+						i(45876),	-- Shiver
+						i(45887),	-- Ice Layered Barrier
+						i(45877),	-- The Boreal Guard
+						i(45459),	-- Frigid Strength of Hodir
+						i(45461),	-- Drape of Icy Intent
+						i(45460),	-- Bindings of Winter Gale
+						i(45888),	-- Bitter Cold Armguards
+						i(45462),	-- Gloves of the Frozen Glade
+					}),
+					ach(12344),	-- I Have the Coolest Friends
+					ach(12346),	-- Staying Buffed All Winter
 					i(45632, {	-- Breastplate of the Wayward Conqueror
 						i(46154),	-- Conqueror's Aegis Battleplate
 						i(46173),	-- Conqueror's Aegis Breastplate
@@ -967,71 +728,30 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(45874),	-- Signet of Winter
 				})),
 				cr(32865, e(1645, {	-- Thorim
-					{	-- Don't Stand in the Lightning
-						["achievementID"] = 12348,	-- Don't Stand in the Lightning
-					},
-					{	-- I'll Take You All On
-						["achievementID"] = 12349,	-- I'll Take You All On
-						["g"] = {
-							{	-- Defeat Thorim
-								["criteriaID"] = 1,	-- Defeat Thorim
-							},
-							{	-- Participate in slaying Runic Colossus
-								["criteriaID"] = 2,	-- Participate in slaying Runic Colossus
-							},
-							{	-- Participate in slaying Ancient Rune Giant
-								["criteriaID"] = 3,	-- Participate in slaying Ancient Rune Giant
-							},
-						},
-					},
-					{	-- Lose Your Illusion
-						["achievementID"] = 12352,	-- Lose Your Illusion
-						["g"] = {
-							{	-- Combatant's Bootblade
-								["itemID"] = 45930,	-- Combatant's Bootblade
-							},
-							{	-- Skyforge Crossbow
-								["itemID"] = 45570,	-- Skyforge Crossbow
-							},
-							{	-- Wisdom's Hold
-								["itemID"] = 45470,	-- Wisdom's Hold
-							},
-							{	-- Warhelm of the Champion
-								["itemID"] = 45472,	-- Warhelm of the Champion
-							},
-							{	-- Pendant of the Shallow Grave
-								["itemID"] = 45933,	-- Pendant of the Shallow Grave
-							},
-							{	-- Pauldrons of the Combatant
-								["itemID"] = 45474,	-- Pauldrons of the Combatant
-							},
-							{	-- Embrace of the Gladiator
-								["itemID"] = 45473,	-- Embrace of the Gladiator
-							},
-							{	-- Gauntlets of the Thunder Lord
-								["itemID"] = 45928,	-- Gauntlets of the Thunder Lord
-							},
-							{	-- Fate's Clutch
-								["itemID"] = 45471,	-- Fate's Clutch
-							},
-							{	-- Mjolnir Runestone
-								["itemID"] = 45931,	-- Mjolnir Runestone
-							},
-							{	-- Sif's Remembrance
-								["itemID"] = 45929,	-- Sif's Remembrance
-							},
-						},
-					},
-					{	-- Siffed
-						["achievementID"] = 12351,	-- Siffed
-					},
-					{	-- The Keepers of Ulduar: Thorim
+					crit(2, {	-- Thorim
 						["achievementID"] = 12309,	-- The Keepers of Ulduar
-						["criteriaID"] = 2,		-- Thorim
-					},
-					{	-- Who Needs Bloodlust?
-						["achievementID"] = 12350,	-- Who Needs Bloodlust?
-					},
+					}),
+					ach(12348),	-- Don't Stand in the Lightning
+					ach(12349, {	-- I'll Take You All On
+						crit(1),	-- Defeat Thorim
+						crit(2),	-- Participate in slaying Runic Colossus
+						crit(3),	-- Participate in slaying Ancient Rune Giant
+					}),
+					ach(12352, {	-- Lose Your Illusion
+						i(45930),	-- Combatant's Bootblade
+						i(45570),	-- Skyforge Crossbow
+						i(45470),	-- Wisdom's Hold
+						i(45472),	-- Warhelm of the Champion
+						i(45933),	-- Pendant of the Shallow Grave
+						i(45474),	-- Pauldrons of the Combatant
+						i(45473),	-- Embrace of the Gladiator
+						i(45928),	-- Gauntlets of the Thunder Lord
+						i(45471),	-- Fate's Clutch
+						i(45931),	-- Mjolnir Runestone
+						i(45929),	-- Sif's Remembrance
+					}),
+					ach(12351),	-- Siffed
+					ach(12350),	-- Who Needs Bloodlust?
 					i(45638, {	-- Crown of the Wayward Conqueror
 						i(46175),	-- Conqueror's Aegis Faceguard
 						i(46180),	-- Conqueror's Aegis Headpiece
@@ -1094,68 +814,31 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(45469),	-- Sif's Promise
 					i(45466),	-- Scale of Fates
 				})),
-				{	-- Lumberjacked
-					["achievementID"] = 12360,	-- Lumberjacked
+				ach(12360, {	-- Lumberjacked
 					["description"] = "Must be killed before killing Freya or they will despawn.",
-				},
+				}),
 				cr(32906, e(1646, {	-- Freya
-					{	-- Con-speed-atory
-						["achievementID"] = 12361,	-- Con-speed-atory
-					},
-					{	-- Deforestation
-						["achievementID"] = 12362,	-- Deforestation
-					},
-					{	-- The Keepers of Ulduar: Freya
+					crit(3, {	-- Freya
 						["achievementID"] = 12309,	-- The Keepers of Ulduar
-						["criteriaID"] = 3,		-- Freya
-					},
-					{	-- Getting Back to Nature
-						["achievementID"] = 12363,	-- Getting Back to Nature
-					},
-					{	-- Knock,Knock, Knock on Wood
-						["achievementID"] = 12366,	-- Knock,Knock, Knock on Wood
-						["g"] = {
-							{	-- Knock, Knock on Wood
-								["achievementID"] = 12365,	-- Knock, Knock on Wood
-							},
-							{	-- Knock on Wood
-								["achievementID"] = 12364,	-- Knock on Wood
-							},
-							{	-- Dreambinder
-								["itemID"] = 45613,	-- Dreambinder
-							},
-							{	-- Bladetwister
-								["itemID"] = 45484,	-- Bladetwister
-							},
-							{	-- Serilas, Blood Blade of Invar One-Arm
-								["itemID"] = 45947,	-- Serilas, Blood Blade of Invar One-Arm
-							},
-							{	-- Petrified Ivy Sprig
-								["itemID"] = 45294,	-- Petrified Ivy Sprig
-							},
-							{	-- Bronze Pendant of the Vanir
-								["itemID"] = 45485,	-- Bronze Pendant of the Vanir
-							},
-							{	-- Seed of Budding Carnage
-								["itemID"] = 45945,	-- Seed of Budding Carnage
-							},
-							{	-- Drape of the Sullen Goddess
-								["itemID"] = 45486,	-- Drape of the Sullen Goddess
-							},
-							{	-- Gloves of Whispering Winds
-								["itemID"] = 45943,	-- Gloves of Whispering Winds
-							},
-							{	-- Handguards of Revitalization
-								["itemID"] = 45487,	-- Handguards of Revitalization
-							},
-							{	-- Leggings of the Enslaved Idol
-								["itemID"] = 45488,	-- Leggings of the Enslaved Idol
-							},
-							{	-- Fire Orchid Signet
-								["itemID"] = 45946,	-- Fire Orchid Signet
-							},
-						},
-					},
+					}),
+					ach(12361),	-- Con-speed-atory
+					ach(12362),	-- Deforestation
+					ach(12363),	-- Getting Back to Nature
+					ach(12366, {	-- Knock, Knock, Knock on Wood
+						ach(12365),	-- Knock, Knock on Wood
+						ach(12364),	-- Knock on Wood
+						i(45613),	-- Dreambinder
+						i(45484),	-- Bladetwister
+						i(45947),	-- Serilas, Blood Blade of Invar One-Arm
+						i(45294),	-- Petrified Ivy Sprig
+						i(45485),	-- Bronze Pendant of the Vanir
+						i(45945),	-- Seed of Budding Carnage
+						i(45486),	-- Drape of the Sullen Goddess
+						i(45943),	-- Gloves of Whispering Winds
+						i(45487),	-- Handguards of Revitalization
+						i(45488),	-- Leggings of the Enslaved Idol
+						i(45946),	-- Fire Orchid Signet
+					}),
 					i(142091),	-- Blessed Seed (PET!)
 					i(45644, {	-- Gloves of the Wayward Conqueror
 						i(45376),	-- Valorous Aegis Gauntlets
@@ -1228,69 +911,29 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						33651,	-- VX-001
 						33670,	-- Aerial Command Unit
 					},
-					["groups"] = {
-						{	-- Firefighter
-							["achievementID"] = 12369,	-- Firefighter
-							["g"] = {
-								{	-- Delirium's Touch
-									["itemID"] = 45494,	-- Delirium's Touch
-								},
-								{	-- Fusion Blade
-									["itemID"] = 45990,	-- Fusion Blade
-								},
-								{	-- Starshard Edge
-									["itemID"] = 45620,	-- Starshard Edge
-								},
-								{	-- Crown of Luminescence
-									["itemID"] = 45497,	-- Crown of Luminescence
-								},
-								{	-- Mimiron's Flight Goggles
-									["itemID"] = 45993,	-- Mimiron's Flight Goggles
-								},
-								{	-- Titanskin Cloak
-									["itemID"] = 45496,	-- Titanskin Cloak
-								},
-								{	-- Armbands of Bedlam
-									["itemID"] = 45663,	-- Armbands of Bedlam
-								},
-								{	-- Fused Alloy Legplates
-									["itemID"] = 45982,	-- Fused Alloy Legplates
-								},
-								{	-- Greaves of the Iron Army
-									["itemID"] = 45988,	-- Greaves of the Iron Army
-								},
-								{	-- Tempered Mercury Greaves
-									["itemID"] = 45989,	-- Tempered Mercury Greaves
-								},
-								{	-- Conductive Seal
-									["itemID"] = 45495,	-- Conductive Seal
-								},
-							},
-						},
-						{	-- The Keepers of Ulduar: Mimiron
+					["g"] = {
+						crit(4, {	-- Mimiron
 							["achievementID"] = 12309,	-- The Keepers of Ulduar
-							["criteriaID"] = 4,		-- Mimiron
-						},
-						{	-- Not-So-Friendly Fire
-							["achievementID"] = 12368,	-- Not-So-Friendly Fire
-						},
-						{	-- Set Up Us the Bomb
-							["achievementID"] = 12367,	-- Set Up Us the Bomb
-							["g"] = {
-								{	-- A Proximity Mine
-									["achievementID"] = 12367,	-- Set Up Us the Bomb
-									["criteriaID"] = 1,		-- A Proximity Mine
-								},
-								{	-- A Rocket Strike
-									["achievementID"] = 12367,	-- Set Up Us the Bomb
-									["criteriaID"] = 2,		-- A Rocket Strike
-								},
-								{	-- A Bomb Bot
-									["achievementID"] = 12367,	-- Set Up Us the Bomb
-									["criteriaID"] = 3,		-- A Bomb Bot
-								},
-							},
-						},
+						}),
+						ach(12369, {	-- Firefighter
+							i(45494),	-- Delirium's Touch
+							i(45990),	-- Fusion Blade
+							i(45620),	-- Starshard Edge
+							i(45497),	-- Crown of Luminescence
+							i(45993),	-- Mimiron's Flight Goggles
+							i(45496),	-- Titanskin Cloak
+							i(45663),	-- Armbands of Bedlam
+							i(45982),	-- Fused Alloy Legplates
+							i(45988),	-- Greaves of the Iron Army
+							i(45989),	-- Tempered Mercury Greaves
+							i(45495),	-- Conductive Seal
+						}),
+						ach(12368),	-- Not-So-Friendly Fire
+						ach(12367, {	-- Set Up Us the Bomb
+							crit(1),	-- A Proximity Mine
+							crit(2),	-- A Rocket Strike
+							crit(3),	-- A Bomb Bot
+						}),
 						i(45641, {	-- Gauntlets of the Wayward Conqueror
 							i(46163),	-- 
 							i(46188),	-- 
@@ -1356,48 +999,22 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				})),
 				cr(33271, e(1648, {	-- General Vezax
-					{	-- The Descent into Madness: General Vezax
+					crit(1, {	-- General Vezax
 						["achievementID"] = 12310,	-- The Descent into Madness
-						["criteriaID"] = 1,		-- General Vezax
-					},
-					{	-- I Love the Smell of Saronite in the Morning
-						["achievementID"] = 12373,	-- I Love the Smell of Saronite in the Morning
-						["g"] = {
-							{	-- Tortured Earth
-								["itemID"] = 46033,	-- Tortured Earth
-							},
-							{	-- Voidrethar, Dark Blade of Oblivion
-								["itemID"] = 45516,	-- Voidrethar, Dark Blade of Oblivion
-							},
-							{	-- Aesuga, Hand of the Argent Champion
-								["itemID"] = 46035,	-- Aesuga, Hand of the Argent Champion
-							},
-							{	-- Void Sabre
-								["itemID"] = 46036,	-- Void Sabre
-							},
-							{	-- Pendulum of Infinity
-								["itemID"] = 45517,	-- Pendulum of Infinity
-							},
-							{	-- Drape of the Faceless General
-								["itemID"] = 46032,	-- Drape of the Faceless General
-							},
-							{	-- Vestments of the Blind Denizen
-								["itemID"] = 45519,	-- Vestments of the Blind Denizen
-							},
-							{	-- Handwraps of the Vigilant
-								["itemID"] = 45520,	-- Handwraps of the Vigilant
-							},
-							{	-- Leggings of Profound Darkness
-								["itemID"] = 46034,	-- Leggings of Profound Darkness
-							},
-							{	-- Flare of the Heavens
-								["itemID"] = 45518,	-- Flare of the Heavens
-							},
-						},
-					},
-					{	-- Shadowdodger
-						["achievementID"] = 12372,	-- Shadowdodger
-					},
+					}),
+					ach(12373, {	-- I Love the Smell of Saronite in the Morning
+						i(46033),	-- Tortured Earth
+						i(45516),	-- Voidrethar, Dark Blade of Oblivion
+						i(46035),	-- Aesuga, Hand of the Argent Champion
+						i(46036),	-- Void Sabre
+						i(45517),	-- Pendulum of Infinity
+						i(46032),	-- Drape of the Faceless General
+						i(45519),	-- Vestments of the Blind Denizen
+						i(45520),	-- Handwraps of the Vigilant
+						i(46034),	-- Leggings of Profound Darkness
+						i(45518),	-- Flare of the Heavens
+					}),
+					ach(12372),	-- Shadowdodger
 					i(45996),	-- Hoperender
 					i(45498),	-- Lotrafen, Spear of the Damned
 					i(46011),	-- Shadowbite
@@ -1425,95 +1042,39 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(45507),	-- The General's Heart
 				})),
 				cr(33288, e(1649, {	-- Yogg-Saron
-					{	-- Alone in the Darkness
-						["achievementID"] = 12388,	-- Alone in the Darkness
-						["g"] = {
-							{	-- Mimiron's Head (MOUNT!)
-								["itemID"] = 45693,	-- Mimiron's Head (MOUNT!)
-							},
-							{	-- Vanquished Clutches of Yogg-Saron
-								["itemID"] = 46312,	-- Vanquished Clutches of Yogg-Saron
-							},
-						},
-					},	
-					{	-- Drive Me Crazy
-						["achievementID"] = 12395,	-- Drive Me Crazy
-					},
-					{	-- He's Not Getting Any Older
-						["achievementID"] = 12396,	-- He's Not Getting Any Older
-					},
-					{	-- In His House He Waits Dreaming
-						["achievementID"] = 12398,	-- In His House He Waits Dreaming
-						["g"] = {
-							{	-- The Assassination of King Llane
-								["achievementID"] = 12398,	-- In His House He Waits Dreaming
-								["criteriaID"] = 1,	-- The Assassination of King Llane
-							},
-							{	-- The Forging of the Demon Soul
-								["achievementID"] = 12398,	-- In His House He Waits Dreaming
-								["criteriaID"] = 2,	-- The Forging of the Demon Soul
-							},
-							{	-- The Tortured Champion
-								["achievementID"] = 12398,	-- In His House He Waits Dreaming
-								["criteriaID"] = 3,	-- The Tortured Champion
-							},
-						},
-					},
-					{	-- Kiss and Make Up
-						["achievementID"] = 12384,	-- Kiss and Make Up
-						["description"] = "During phase 2 Sara is flying above Yogg-Saron, /kiss her while she's angry.",
-						["crs"] = {
-							33134,	-- Sara
-						},
-					},
-					{	-- One Light in the Darkness
-						["achievementID"] = 12387,	-- One Light in the Darkness
-						["g"] = {
-							{	-- Dark Edge of Depravity
-								["itemID"] = 45533,	-- Dark Edge of Depravity
-							},
-							{	-- Hammer of Crushing Whispers
-								["itemID"] = 46067,	-- Hammer of Crushing Whispers
-							},
-							{	-- Caress of Insanity
-								["itemID"] = 46097,	-- Caress of Insanity
-							},
-							{	-- Amice of Inconceivable Horror
-								["itemID"] = 46068,	-- Amice of Inconceivable Horror
-							},
-							{	-- Soul-Devouring Cinch
-								["itemID"] = 46095,	-- Soul-Devouring Cinch
-							},
-							{	-- Legguards of Cunning Deception
-								["itemID"] = 45536,	-- Legguards of Cunning Deception
-							},
-							{	-- Treads of the False Oracle
-								["itemID"] = 45537,	-- Treads of the False Oracle
-							},
-							{	-- Seal of the Betrayed King
-								["itemID"] = 45534,	-- Seal of the Betrayed King
-							},
-							{	-- Signet of Soft Lament
-								["itemID"] = 46096,	-- Signet of Soft Lament
-							},
-							{	-- Show of Faith
-								["itemID"] = 45535,	-- Show of Faith
-							},
-						},
-					},
-					{	-- Two Lights in the Darkness
-						["achievementID"] = 12386,	-- Two Lights in the Darkness
-					},
-					{	-- Three Lights in the Darkness
-						["achievementID"] = 12385,	-- Three Lights in the Darkness
-					},
-					{	-- The Descent into Madness: Yogg-Saron
+					crit(2, {	-- Yogg-Saron
 						["achievementID"] = 12310,	-- The Descent into Madness
-						["criteriaID"] = 2,		-- Yogg-Saron
-					},
-					{	-- They're Coming Out of the Walls
-						["achievementID"] = 12397,	-- They're Coming Out of the Walls
-					},
+					}),
+					ach(12388, {	-- Alone in the Darkness
+						i(45693),	-- Mimiron's Head (MOUNT!)
+						i(46312),	-- Vanquished Clutches of Yogg-Saron
+					}),	
+					ach(12395),	-- Drive Me Crazy
+					ach(12396),	-- He's Not Getting Any Older
+					ach(12398, {	-- In His House He Waits Dreaming
+						crit(1),	-- The Assassination of King Llane
+						crit(2),	-- The Forging of the Demon Soul
+						crit(3),	-- The Tortured Champion
+					}),
+					ach(12384, {	-- Kiss and Make Up
+						["description"] = "During phase 2, when Sara is flying above Yogg-Saron, /kiss her while she's angry.",
+						["crs"] = { 33134 },	-- Sara
+					}),
+					ach(12387, {	-- One Light in the Darkness
+						i(45533),	-- Dark Edge of Depravity
+						i(46067),	-- Hammer of Crushing Whispers
+						i(46097),	-- Caress of Insanity
+						i(46068),	-- Amice of Inconceivable Horror
+						i(46095),	-- Soul-Devouring Cinch
+						i(45536),	-- Legguards of Cunning Deception
+						i(45537),	-- Treads of the False Oracle
+						i(45534),	-- Seal of the Betrayed King
+						i(46096),	-- Signet of Soft Lament
+						i(45535),	-- Show of Faith
+					}),
+					ach(12386),	-- Two Lights in the Darkness
+					ach(12385),	-- Three Lights in the Darkness
+					ach(12397),	-- They're Coming Out of the Walls
 					i(45635, {	-- Chestguard of the Wayward Conqueror
 						i(45375),	-- Valorous Aegis Battleplate
 						i(45381),	-- Valorous Aegis Breastplate
@@ -1591,10 +1152,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			d(24, {	-- Timewalking
 				["lvl"] = 81,
-				["crs"] = {
-					130654,	-- Vormu
-				},
-				["groups"] = {
+				["crs"] = { 130654 },	-- Vormu
+				["g"] = {
 					n(0, {		-- Zone Drop
 						i(156462),	-- Drape of the Spellweaver
 						-- i(156468),	-- Cloak of the Dormant Blaze	(no equivalent in TW, 'Retrieving Data' on possible item, no data on WoWHead)
@@ -1943,7 +1502,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							33651,	-- VX-001
 							33670,	-- Aerial Command Unit
 						},
-						["groups"] = {
+						["g"] = {
 							i(138800),	-- Illusion: Blade Ward
 							i(142092),	-- Overcomplicated Controller
 							i(156211),	-- Delirium's Touch

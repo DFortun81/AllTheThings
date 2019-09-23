@@ -12,35 +12,16 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["groups"] = {
 			d(3, {	-- 10-Player
 				cr(28860, e(1616, {	-- Sartharion
-					{	-- Besting the Black Dragonflight [10 player]
-						["achievementID"] = 1876,	-- Besting the Black Dragonflight [10 player]
-					},
-					{	-- Gonna Go When the Volcano Blows [10 player]
-						["achievementID"] = 2047,	-- Gonna Go When the Volcano Blows [10 player]
-					},
-					{	-- Less Is More [10 player]
-						["achievementID"] = 624,	-- Less Is More [10 player]
-						["g"] = {
-							{	-- Less Is More [10 player]: Vesperon
-								["achievementID"] = 624,	-- Less Is More [10 player]
-								["criteriaID"] = 1,	-- Vesperon
-							},
-							{	-- Less Is More [10 player]: Tenebron
-								["achievementID"] = 624,	-- Less Is More [10 player]
-								["criteriaID"] = 2,	-- Tenebron
-							},
-							{	-- Less Is More [10 player]: Shadron
-								["achievementID"] = 624,	-- Less Is More [10 player]
-								["criteriaID"] = 3,	-- Shadron
-							},
-							{	-- Less Is More [10 player]: Sartharion
-								["achievementID"] = 624,	-- Less Is More [10 player]
-								["criteriaID"] = 4,	-- Sartharion
-							},
-						},
-					},
+					ach(1876),	-- Besting the Black Dragonflight [10 player]
+					ach(2047),	-- Gonna Go When the Volcano Blows [10 player]
+					ach(624, {	-- Less Is More [10 player]
+						crit(1),	-- Vesperon
+						crit(2),	-- Tenebron
+						crit(3),	-- Shadron
+						crit(4),	-- Sartharion
+					}),
 					ach(2049, {	-- Twilight Assist [10 player]
-						["description"] = "With only 1 drake up loot from this table isn't always guaranteed.",
+						["description"] = "These pieces can drop when you leave one or more drakes up, but loot from this table is not guaranteed.",
 						["g"] = {
 							i(43992),	-- Volitant Amulet			//** Confirmed Drop 4/19/19 [1/3 Drake(s) up]
 							i(43988),	-- Gale-Proof Cloak			//** Confirmed Drop 4/19/19 [1 Drake up]
@@ -50,7 +31,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					}),					
 					ach(2050, {	-- Twilight Duo [10 player]
-						["description"] = "With only 2 drakes up loot from this table isn't always guaranteed.",
+						["description"] = "These pieces can drop when you leave two or more drakes up, but loot from this table is not guaranteed.",
 						["g"] = {
 							i(43995),	-- Enamored Cowl
 							i(43998),	-- Chestguard of Flagrant Prowess
@@ -60,15 +41,12 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					}),
 					ach(2051, {	-- The Twilight Zone [10 player]
-						{	-- of the Nightfall
-							["titleID"] = 107,	-- of the Nightfall
-						},
+						title(107),	-- of the Nightfall
 						i(43986)	-- Reins of the Black Drake 	//** Confirmed Drop 4/19/19 [3 Drakes up]
 					}),
-					{	-- Champion of the Frozen Wastes: Sartharion
+					crit(1, {	-- Sartharion (10 or 25 player) slain
 						["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-						["criteriaID"] = 1,			-- Sartharion (10 or 25 player) slain
-					},
+					}),
 					i(40613, {	-- Gloves of the Lost Conqueror		//** Confirmed Drop 4/19/19 [1 Drake up]
 						i(39634),	-- Heroes' Redemption Gauntlets
 						i(39632),	-- Heroes' Redemption Gloves
@@ -100,44 +78,24 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(40426),	-- Signet of the Accord		//** Confirmed Drop 4/19/19 [2/3 Drakes(s) up]
 					i(40430),	-- Majestic Dragon Figurine	//** Confirmed Drop 4/19/19 [1 Drake up]
 					i(43345),	-- Dragon Hide Bag			//** Confirmed Drop 4/19/19 [1/2/3 Drakes(s) up]
-					{	-- Satchel of Spoils				//** Confirmed Drop 4/19/19 [1/2/3 Drakes(s) up]
-						["itemID"] = 43347,	-- Satchel of Spoils
+					i(43347, {	-- Satchel of Spoils
 						["description"] = "Contains gold.",						
-					},
+					}),
 				})),
 			}),
 			d(4, {	-- 25-Player
 				cr(28860, e(1616, {	-- Sartharion
-					{	-- Besting the Black Dragonflight [25 player]
-						["achievementID"] = 625,	-- Besting the Black Dragonflight [25 player]
-					},
-					{	-- Gonna Go When the Volcano Blows [25 player]
-						["achievementID"] = 2048,	-- Gonna Go When the Volcano Blows [25 player]
-					},
-					{	-- Less Is More [25 player]
-						["achievementID"] = 1877,	-- Less Is More [25 player]
-						["g"] = {
-							{	-- Less Is More [25 player]: Vesperon
-								["achievementID"] = 1877,	-- Less Is More [25 player]
-								["criteriaID"] = 1,	-- Vesperon
-							},
-							{	-- Less Is More [25 player]: Tenebron
-								["achievementID"] = 1877,	-- Less Is More [25 player]
-								["criteriaID"] = 2,	-- Tenebron
-							},
-							{	-- Less Is More [25 player]: Shadron
-								["achievementID"] = 1877,	-- Less Is More [25 player]
-								["criteriaID"] = 3,	-- Shadron
-							},
-							{	-- Less Is More [25 player]: Sartharion
-								["achievementID"] = 1877,	-- Less Is More [25 player]
-								["criteriaID"] = 4,	-- Sartharion
-							},
-						},
-					},
+					ach(625),	-- Besting the Black Dragonflight [25 player]
+					ach(2048),	-- Gonna Go When the Volcano Blows [25 player]
+					ach(1877, {	-- Less Is More [25 player]
+						crit(1),	-- Vesperon
+						crit(2),	-- Tenebron
+						crit(3),	-- Shadron
+						crit(4),	-- Sartharion
+					}),
 					ach(2052, {	-- Twilight Assist [25 player]
 						-- Note!! Even with 1 drake up you can still get 0 loot from the table 4/19/19
-						["description"] = "With only 1 drake up loot from this table isn't always guaranteed.",
+						["description"] = "These pieces can drop when you leave one or more drakes up, but loot from this table is not guaranteed.",
 						["g"] = {
 							i(44003),	-- Upstanding Spaulders				//** Confirmed Drop 4/19/19 [2 Drakes up]
 							i(44000),	-- Dragonstorm Breastplate			//** Confirmed Drop 4/19/19 [2/3 Drakes up]
@@ -146,7 +104,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					}),
 					ach(2053, {	-- Twilight Duo [25 player]
-						["description"] = "With only 2 drakes up loot from this table isn't always guaranteed.",
+						["description"] = "These pieces can drop when you leave two or more drakes up, but loot from this table is not guaranteed.",
 						["g"] = {
 							i(44007),	-- Headpiece of Reconciliation	//** Confirmed Drop 4/19/19 [2/3 Drakes up]
 							i(44006),	-- Obsidian Greathelm			//** Confirmed Drop 4/19/19 [2 Drakes up]
@@ -156,15 +114,12 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					}),
 					ach(2054, {	-- The Twilight Zone [25 player]
-						{	-- Twilight Vanquisher
-							["titleID"] = 89,	-- Twilight Vanquisher
-						},
+						title(89),	-- Twilight Vanquisher
 						i(43954)	-- Reins of the Twilight Drake		//** Confirmed Drop 4/19/19 [3 Drakes up]
 					}),
-					{	-- Champion of the Frozen Wastes: Sartharion
+					crit(1, {	-- Sartharion (10 or 25 player) slain
 						["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-						["criteriaID"] = 1,			-- Sartharion (10 or 25 player) slain
-					},
+					}),
 					i(40628, {	-- Gauntlets of the Lost Conqueror		//** Confirmed Drop 4/19/19 [3 Drakes up]
 						i(40575),	-- Valorous Redemption Gauntlets
 						i(40570),	-- Valorous Redemption Gloves
@@ -202,10 +157,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(40431),	-- Fury of the Five Flights				//** Confirmed Drop 4/19/19 [1/3 Drakes up]
 					i(40432),	-- Illustration of the Dragon Soul		//** Confirmed Drop 4/19/19 [1 Drake up]
 					i(43345),	-- Dragon Hide Bag						//** Confirmed Drop 4/19/19 [1/2/3 Drakes up]
-					{	-- Large Satchel of Spoils						//** Confirmed Drop 4/19/19 [1/2/3 Drakes up]
-						["itemID"] = 43346,	-- Large Satchel of Spoils
+					i(43346, {	-- Large Satchel of Spoils
 						["description"] = "Contains gold.",						
-					},
+					}),
 				})),
 			}),
 		},

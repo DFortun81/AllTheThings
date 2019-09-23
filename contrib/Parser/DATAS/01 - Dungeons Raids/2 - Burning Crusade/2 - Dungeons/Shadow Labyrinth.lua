@@ -9,79 +9,47 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		},
 		["coord"] = { 39.63, 73.55, 108 },	-- Shadow Labyrinth, Terokkar Forest
 		["g"] = {
-			{	-- Quests
-				["npcID"] = -17,	-- Quests
+			n(-17, {	-- Quests
 				["g"] = {
-					{	-- Ambassador Hellmaw
-						["questID"] = 29645,	-- Ambassador Hellmaw
-						["provider"] = { "n", 54890 },			-- Field Commander Mahfuun
-					},
-					{	-- Find Spy To'gun
-						["questID"] = 29640,	-- Find Spy To'gun
-						["provider"] = { "n", 54891 },			-- Spy Grik'tha
-					},
-					{	-- Into the Heart of the Labyrinth
-						["questID"] = 29644,	-- Into the Heart of the Labyrinth
-						--["objectID"] = 182947,	-- The Codex of Blood	--Note!! Temporarily commenting out so quest title shows up
+					q(29645, {	-- Ambassador Hellmaw
+						["provider"] = { "n", 54890 },	-- Field Commander Mahfuun
+					}),
+					q(29640, {	-- Find Spy To'gun
+						["provider"] = { "n", 54891 },	-- Spy Grik'tha
+					}),
+					q(29644, {	-- Into the Heart of the Labyrinth
+						["provider"] = { "o", 182947 },	-- The Codex of Blood
 						["icon"] = "Interface\\Icons\\ability_warlock_ancientgrimoire",
-						["sourceQuests"] = {
-							29643,	-- The Codex of Blood
-						},
+						["sourceQuests"] = { 29643 },	-- The Codex of Blood
 						["g"] = {
-							{	-- Shattrath Jumpers
-								["itemID"] = 28179,	-- Shattrath Jumpers
-							},
-							{	-- Spymistress' Boots
-								["itemID"] = 28178,	-- Spymistress' Boots
-							},
-							{	-- Auchenai Boots
-								["itemID"] = 28177,	-- Auchenai Boots
-							},
-							{	-- Sha'tari Wrought Greaves
-								["itemID"] = 28176,	-- Sha'tari Wrought Greaves
-							},
+							i(28179),	-- Shattrath Jumpers
+							i(28178),	-- Spymistress' Boots
+							i(28177),	-- Auchenai Boots
+							i(28176),	-- Sha'tari Wrought Greaves
 						},
-					},
-					{	-- The Soul Devices
-						["questID"] = 29641,	-- The Soul Devices
-						["provider"] = { "n", 18891 },			-- Spy To'gun
-						["sourceQuests"] = {
-							29640,	-- Find Spy To'gun
-						},
+					}),
+					q(29641, {	-- The Soul Devices
+						["provider"] = { "n", 18891 },	-- Spy To'gun
+						["sourceQuests"] = { 29640 },	-- Find Spy To'gun
 						["g"] = {
-							{	-- Shattrath Wraps
-								["itemID"] = 28174,	-- Shattrath Wraps
-							},
-							{	-- Spymistress' Wristguards
-								["itemID"] = 28171,	-- Spymistress' Wristguards
-							},
-							{	-- Auchenai Bracers
-								["itemID"] = 28170,	-- Auchenai Bracers
-							},
-							{	-- Sha'tari Wrought Armguards
-								["itemID"] = 28167,	-- Sha'tari Wrought Armguards
-							},
+							i(28174),	-- Shattrath Wraps
+							i(28171),	-- Spymistress' Wristguards
+							i(28170),	-- Auchenai Bracers
+							i(28167),	-- Sha'tari Wrought Armguards
 						},
-					},
-					{	-- The Codex of Blood
-						["questID"] = 29643,	-- The Codex of Blood
-						["provider"] = { "n", 54890 },			-- Field Commander Mahfuun
-					},
+					}),
+					q(29643, {	-- The Codex of Blood
+						["provider"] = { "n", 54890 },	-- Field Commander Mahfuun
+					}),
 				},
-			},
-			{	-- Zone Drops
-				["npcID"] = 0,	-- Zone Drops
-				["g"] = {
-					{	-- Plans: Felsteel Helm
-						["itemID"] = 23607,	-- Plans: Felsteel Helm
-						["crs"] = {
-							18830,	-- Cabal Fanatic
-						},
-					},
-				},
-			},
+			}),
+			n(0, {	-- Zone Drops
+				i(23607, {	-- Plans: Felsteel Helm
+					["crs"] = { 18830 },	-- Cabal Fanatic
+				}),
+			}),
 			d(1, {	-- Normal
-				["description"] = "Epic items in this dungeon are listed in the Dungeon Journal as dropping in both Normal and Heroic. Odds of getting the epics in Normal are low to non-existant. Strongly recommend if you are after these items, you run the instance on Heroic.",
+				["description"] = "Epic items in this dungeon are listed in the Dungeon Journal as dropping in both Normal and Heroic. Odds of getting the epics in Normal are low to non-existant. If you are after these items, it is strongly recommended that you run the instance on Heroic.",
 				["groups"] = {
 					e(544, {	-- Ambassador Hellmaw
 						["creatureID"] = 18731,
@@ -198,7 +166,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							i(24309),	-- Pattern: Spellstrike Pants
 						},
 					}),
-				}
+				},
 			}),
 		},
 	}),

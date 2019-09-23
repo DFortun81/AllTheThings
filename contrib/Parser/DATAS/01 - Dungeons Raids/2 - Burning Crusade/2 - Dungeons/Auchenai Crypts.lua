@@ -93,20 +93,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(27413),	-- Ring of the Exarchs
 					i(27869),	-- Soulpriest's Ring of Resolve
 					i(27416),	-- Fetish of the Fallen
-					--[[ Only drops items in Heroic as normal is trash items.
-					-- Confirmed 8.1 by Lucetia on Dec. 18, 2018
-					n(18478, {		-- Avatar of the Fallen
-						["groups"] = {
-							i(27876),	-- Will of the Fallen Exarch**
-							i(27877),	-- Draenic Wildstaff**
-							i(27878),	-- Auchenai Death Shroud**
-							i(28268),	-- Natural Mender's Wraps**
-							i(27937),	-- Sky Breakeer**
-							i(27797),	-- Wastewalker Shoulderpads**
-						},
-						["description"] = "This mob will spawn if you slowly dps Exarch to 30%. No recorded loot has dropped from this mob on Normal difficulty despite having its own loot table on Heroic. You will more than likely need to run Heroic for these items and even then.",
-					}),
-					--]]
 				})),
 			}),
 			d(2, {	-- Heroic
@@ -143,7 +129,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(27869),	-- Soulpriest's Ring of Resolve
 						i(27416),	-- Fetish of the Fallen
 						n(18478, {		-- Avatar of the Fallen
-							["description"] = "This mob will spawn if you slowly dps Exarch to 30%.",
+							["description"] = "This mob will spawn if you slowly DPS Exarch to 30%.",
 							["groups"] = {
 								i(27876),	-- Will of the Fallen Exarch**
 								i(27877),	-- Draenic Wildstaff**
