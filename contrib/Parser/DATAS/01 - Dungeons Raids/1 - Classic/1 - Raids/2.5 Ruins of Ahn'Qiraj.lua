@@ -411,7 +411,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			n(15471, {	-- Lieutenant General Andorov
-				["description"] = "In order to interact with this vendor, you must first talk to him to start the encounter with General Rajaxx and allow him to get at least one hit on the boss after the waves have completed.",
+				["description"] = "In order to interact with this vendor, you must talk to him to start the encounter with General Rajaxx and allow him to get at least one hit on the boss after the waves have completed.",
 				["groups"] = {
 					i(22221),	-- Plans: Obsidian Mail Tunic
 					i(22219),	-- Plans: Jagged Obsidian Shield
@@ -850,7 +850,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			n(15333, {	-- Silicate Feeder
-				["description"] = "These bugs are like loot pinatas. Their loot tables for random greens is insanely long and despite the individual % for each piece being low, they have an overall common drop rate for rare world drops. If you're going for 100%, we advise that you kill these guys whenever you see them.",
+				["description"] = "These bugs are like loot piñatas. Their loot tables for random greens is insanely long and despite the individual % for each piece being low, they have an overall common drop rate for rare world drops. If you're going for 100%, we advise that you kill these guys whenever you see them.",
 				["groups"] = {
 					i(14304),	-- Bonecaster's Belt
 					i(15295),	-- Quillfire Bow

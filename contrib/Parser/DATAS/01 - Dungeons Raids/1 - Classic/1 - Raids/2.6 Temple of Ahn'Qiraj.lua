@@ -760,7 +760,7 @@ _.Instances = { tier(1, {	-- Classic
 				["description"] = "This can be a fairly -buggy- encounter if you don't do it right. Kill 1 boss at a time and allow it to get consumed. Then kill the next one and allow it to also get consumed. The last boss you leave alive determines the loot that can drop.",
 				["groups"] = {
 					n(-1, {	-- Common Boss Drops
-						["description"] = "These items can drop from killing the Silithid Royalty bosses regardless of order. For the other items, refer to their individual listings",
+						["description"] = "These items can drop from killing the Silithid Royalty bosses regardless of order. For the other items, refer to their individual listings.",
 						["crs"] = {
 							15511,	-- Lord Kri
 							15543,	-- Princess Yauj
@@ -840,7 +840,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			e(1548, {	-- Viscidus
-				["description"] = "This boss requires 20 frost hits to freeze. A fast dagger or one-hander with enchant weapon - elemental force or endothermic blaster toy (boss at 0%) to do this. Once frozen, you need 30 melee hits to shatter him. Equipping crate of kidnapped puppies or barov peasant caller trinket and using it after boss freezes will help to do this.",
+				["description"] = "This boss requires 20 frost hits to freeze. Once frozen, you need 30 melee hits to shatter him. Equipping the Crate of Kidnapped Puppies or Barov Peasant Caller and using it after the boss freezes will help.",
 				["creatureID"] = 15299,
 				["groups"] = {
 					i(20928, {	-- Qiraji Bindings of Command

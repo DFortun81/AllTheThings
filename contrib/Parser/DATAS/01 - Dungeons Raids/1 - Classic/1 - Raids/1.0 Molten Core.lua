@@ -79,7 +79,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 					["groups"] = {
 						n(14435, {	-- Prince Thunderaan <The Wind Seeker>
-							["description"] = "This is a 40 man raid boss. He will drop as many Dormant Wind Kissed Blade as there are people with the quest.\n\nWARNING: Do not have Master Looter turned on, the item will only drop in Group Loot.",
+							["description"] = "This is a 40 man raid boss. He will drop as many Dormant Wind Kissed Blades as there are people with the quest.",
 							["groups"] = {
 								{
 									["itemID"] = 19018,	-- Dormant Wind Kissed Blade

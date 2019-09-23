@@ -32,7 +32,7 @@ _.Instances = { tier(1, {	-- Classic
 					un(2, i(18547)),	-- Unmelting Ice Girdle
 				},
 				["isRaid"] = true,
-				["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
+				["description"] = "This version of the NPC is the Legacy world boss from Vanilla.",
 				["maps"] = { 76 },	-- Azshara
 				["u"] = 2,
 			}),
@@ -82,7 +82,7 @@ _.Instances = { tier(1, {	-- Classic
 					un(2, i(18543)),	-- Ring of Entropy
 				},
 				["isRaid"] = true,
-				["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
+				["description"] = "This version of the NPC is the Legacy world boss from Vanilla.",
 				["maps"] = { 17 },	-- Blasted Lands
 				["u"] = 2,
 			}),
@@ -109,7 +109,7 @@ _.Instances = { tier(1, {	-- Classic
 					un(2, i(20624)),	-- Ring of the Unliving
 				},
 				["isRaid"] = true,
-				["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
+				["description"] = "This version of the NPC is the Legacy world boss from Vanilla.",
 				["maps"] = { 63, 69, 47, 26 },	-- Ashenvale / Feralas / Duskwood / The Hinterlands
 				["u"] = 2,
 			}),
@@ -137,7 +137,7 @@ _.Instances = { tier(1, {	-- Classic
 					un(2, i(20629)),	-- Malignant Footguards
 				},
 				["isRaid"] = true,
-				["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
+				["description"] = "This version of the NPC is the Legacy world boss from Vanilla.",
 				["maps"] = { 63, 69, 47, 26 },	-- Ashenvale / Feralas / Duskwood / The Hinterlands
 				["u"] = 2,
 			}),
@@ -164,7 +164,7 @@ _.Instances = { tier(1, {	-- Classic
 					un(2, i(20632)),	-- Mindtear Band
 				},
 				["isRaid"] = true,
-				["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
+				["description"] = "This version of the NPC is the Legacy world boss from Vanilla.",
 				["maps"] = { 63, 69, 47, 26 },	-- Ashenvale / Feralas / Duskwood / The Hinterlands
 				["u"] = 2,
 			}),
@@ -192,7 +192,7 @@ _.Instances = { tier(1, {	-- Classic
 					un(2, i(20636)),	-- Hibernation Crystal
 				},
 				["isRaid"] = true,
-				["description"] = "This npc version is the Legacy World Dragon boss from Vanilla",
+				["description"] = "This version of the NPC is the Legacy world boss from Vanilla.",
 				["maps"] = { 63, 69, 47, 26 },	-- Ashenvale / Feralas / Duskwood / The Hinterlands
 				["u"] = 2,
 			}),

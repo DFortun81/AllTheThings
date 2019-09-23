@@ -40,7 +40,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(18401, {	-- Foror's Compendium of Dragon Slaying
 							["u"] = 2,
 							["classes"] = { 1, 2 },
-							["description"] = "Item used to drop from any boss in Dire Maul.",
+							["description"] = "This item used to drop from any boss in Dire Maul.",
 							["g"] = {
 								un(40, q(7507)),	-- Furor's Compendium
 								un(40, q(7508)),	-- The Forging of Quel'Serrar
@@ -94,7 +94,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					n(0, {	-- Zone Drop
 						i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
-							["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nEastern Wall of Garden\nLedge Above Garden\nBeside Lethtendris\nBeside Alzzin the Wildshaper",
+							["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.  It can be found in various places throughout all the wings of Dire Maul.\n\nDire Maul North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\nDire Maul East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\nDire Maul West: By the southern generator in Immol'thar's room.\n",
 						}),
 						i(17682),	-- Book: Gift of the Wild Rank 1
 						i(17683, {	-- Book: Gift of the Wild Rank 2
@@ -184,7 +184,7 @@ _.Instances = { tier(1, {	-- Classic
 								un(11, i(22304)), 	-- Ironweave Gloves
 							}),
 						},
-						["description"] = "|cff66ccffRequires Brazier of Invocation|r |cff3399ff(Dungeon Set 2 Questline)|r |cff66ccffto summon this boss.|r",
+						["description"] = "|cff66ccffBrazier of Invocation|r |cff3399ff(Dungeon Set 2 questline)|r |cff66ccffis required to summon this boss.|r",
 					}),
 					cr(11492, e(405, {	-- Alzzin the Wildshaper
 						{
@@ -239,7 +239,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(18401, {	-- Foror's Compendium of Dragon Slaying
 							["u"] = 2,
 							["classes"] = {1,2},
-							["description"] = "Item used to drop from any boss in Dire Maul.",
+							["description"] = "This item used to drop from any boss in Dire Maul.",
 							["g"] = {
 								un(40, q(7507)),	-- Furor's Compendium
 								un(40, q(7508)),	-- The Forging of Quel'Serrar
@@ -251,7 +251,7 @@ _.Instances = { tier(1, {	-- Classic
 						q(5525, {	-- Free Knot!
 							["u"] = 40,
 							["provider"] = { "n", 14338 },	-- Knott
-							["description"] = "This quest was removed with the Cataclym with the rest of the fun things in the game. You would obtain the key from one of the guards, turn it in, and he would present you with Knot Thimblejack's Cache.",
+							["description"] = "This quest was removed with Cataclym, along with the rest of the fun things in the game. You would obtain the key from one of the guards, turn it in, and he would present you with Knot Thimblejack's Cache.",
 							["g"] = {
 								un(2, i(18250)),	-- Gordok Shackle Key
 							},
@@ -345,7 +345,7 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						q(27114, {	-- The Gordok Taste Test
 							["provider"] = { "n", 14322 },	-- Stomper Kreeg
-							["description"] = "Kill |cFFFFD700King Gordok|r to become king, then the courtyard.",
+							["description"] = "Kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.",
 						}),
 						q(7503, {	-- The Greatest Race of Hunters
 							["u"] = 40,
@@ -363,7 +363,7 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						q(27124, {	-- Unfinished Gordok Business
 							["provider"] = { "n", 14325 },	-- Captain Kromcrush
-							["description"] = "Kill |cFFFFD700King Gordok|r then return to the courtyard.",
+							["description"] = "Kill |cFFFFD700King Gordok|r, and then return to the courtyard.",
 							["g"] = {
 								i(18367),	-- Gordok's Gauntlets
 								i(18368),	-- Gordok's Gloves
@@ -374,7 +374,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					n(0, {	-- Zone Drop
 						i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
-							["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nSW Corner of Guard Fengus's courtyard\nBeside King Gordok and Cho'Rush the Observer",
+							["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.  It can be found in various places throughout all the wings of Dire Maul.\n\nDire Maul North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\nDire Maul East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\nDire Maul West: By the southern generator in Immol'thar's room.\n",
 						}),
 						i(17682),	-- Book: Gift of the Wild Rank 1
 						i(17683, {	-- Book: Gift of the Wild Rank 2
@@ -460,7 +460,7 @@ _.Instances = { tier(1, {	-- Classic
 						["description"] = "Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.",
 						["g"] = {
 							o(179564, {	-- Gordok Tribute Chest (No Localization)
-								["description"] =  " A full Tribute Run (5 Items) requires no killing of any of bosses besides King Gordok, activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the Trap.",
+								["description"] =  "A full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",
 								["model"] = 200953,
 								["modelScale"] = 3,
 								["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
@@ -512,7 +512,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(18401, {	-- Foror's Compendium of Dragon Slaying
 							["u"] = 2,
 							["classes"] = { 1, 2 },
-							["description"] = "Item used to drop from any boss in Dire Maul.",
+							["description"] = "This item used to drop from any boss in Dire Maul.",
 							["g"] = {
 								un(40, q(7507)),	-- Furor's Compendium
 								un(40, q(7508)),	-- The Forging of Quel'Serrar
@@ -622,7 +622,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					n(0, {	-- Zone Drop
 						i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
-							["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nSouthern Generator in Immol'thar's room",
+							["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.  It can be found in various places throughout all the wings of Dire Maul.\n\nDire Maul North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\nDire Maul East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\nDire Maul West: By the southern generator in Immol'thar's room.\n",
 						}),
 						i(17682),	-- Book: Gift of the Wild Rank 1
 						i(17683, {	-- Book: Gift of the Wild Rank 2
@@ -748,7 +748,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(18395),	-- Emerald Flame Ring
 						i(139620, {	-- A Complete Copy of "Nat Pagle's Guide to Extreme Anglin'."
 							["questID"] = 43682,	-- Book Presented [Retribution Paladin Hidden Artifact Appearance]
-							["description"] = "You need to bring the Complete Copy of Nat Pagle's Fishing Guide and the Head of Nefarian for him to grant you this interaction.\n\nAlliance: Go to Western Plaguelands and talk to Alexia Ironknife.\n\nHorde: Go to Tirisfall Glades and talk to Bardu Sharpeye.",
+							["description"] = "You need to bring the Complete Copy of Nat Pagle's Fishing Guide and the Head of Nefarian for him to grant you this interaction.\n\nAlliance: Go to Western Plaguelands and talk to Alexia Ironknife.\n\nHorde: Go to Tirisfal Glades and talk to Bardu Sharpeye.",
 							["classes"] = { 2 },	-- Paladin Only
 							["sourceQuests"] = { -91190 },	-- Special Quest ID for Sister Elda <Keeper of the Ancient Tomes>
 							["lvl"] = 110,

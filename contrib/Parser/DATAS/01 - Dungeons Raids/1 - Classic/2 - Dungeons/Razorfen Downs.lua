@@ -177,7 +177,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			n(75813, {	-- Sah'rhee
-				["description"] = "Sah'rhee doesn't spawn in every instance run. Whenever he spawns, he's trackable as a green dot on the mini-map, and you click the body to start this optional boss.",
+				["description"] = "Sah'rhee doesn't spawn in every instance run. Whenever he spawns, he's trackable as a green dot on the mini-map, and you can click his body to start the encounter.",
 				["coord"] = { 80.0, 26.0, 300 },	-- The Murder Pens
 				["crs"] = { 75329 },	-- Sah'rhee (prior to clicking)
 				["g"] = {
@@ -234,7 +234,7 @@ _.Instances = { tier(1, {	-- Classic
 				["u"] = 43,	-- Removed NPCs
 				["g"] = {
 					un(2, recipe(13028, {	-- Goldthorn Tea
-						["description"] = "Henry Stern, who is currently the only source of acquiring Goldthorn Tea, is still unavailable. Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, takes the recipe off the list, or gives us another way to obtain it.",
+						["description"] = "Henry Stern, who is currently the only source for Goldthorn Tea, is still unavailable. Goldthorn Tea will still tease us on our Unlearned tab until Blizzard brings Henry back, takes the recipe off the list, or gives us another way to obtain it.",
 					})),
 				},
 			}),

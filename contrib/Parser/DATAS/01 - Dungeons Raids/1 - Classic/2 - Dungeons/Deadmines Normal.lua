@@ -13,7 +13,7 @@ _.Instances = { tier(1, {	-- Classic
 				q(44930,{ -- Deadmines: Sea'in Red
 					["provider"] = { "n", 115818 },	-- Captain Bramblebeard
 					["classes"] = { 4 },
-					["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Rogue in Outlaw Specialization.|r \n|cff3399ffSTEP 2:|r|cff66ccff Go to Ironclad Cove (Wooden Catwalk & Boat)|r \n|cff3399ffSTEP 3:|r|cff66ccff Locate the Ghostly Parrot (36.5,17).|r \n|cff3399ffSTEP 4:|r|cff66ccff Summon Green Wing Macaw (Extra Action Button will appear, grapple up the wall).|r \n|cff3399ffSTEP 5:|r|cff66ccff Accept quest and kill pirates for the 100 bandanas.|r \n|cff3399ffSTEP 6:|r|cff66ccff Repeat process to get back to questgiver to turn in.|r",
+					["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Must be playing a Rogue in Outlaw Specialization, and you must have a Green Wing Macaw pet.|r \n|cff3399ffSTEP 2:|r|cff66ccff Go to Ironclad Cove, near the end of the dungeon (the area with the dock and ship).|r \n|cff3399ffSTEP 3:|r|cff66ccff Locate the Ghostly Parrot (36.5, 17.0).|r \n|cff3399ffSTEP 4:|r|cff66ccff Summon your Green Wing Macaw.  An Extra Action Button will appear, allowing you to grapple up the wall.|r \n|cff3399ffSTEP 5:|r|cff66ccff Accept the quest and kill pirates to collect 100 bandanas.|r \n|cff3399ffSTEP 6:|r|cff66ccff Repeat the process to get back to questgiver to turn it in.|r",
 					["g"] = {
 						i(142273, {	-- Ensemble: Blackened Defias Armor
 							["classes"] = { 4 },	-- Rogue
@@ -190,17 +190,17 @@ _.Instances = { tier(1, {	-- Classic
 					n(0, {	-- Zone Drops -- TODO:: These are all from the original version of deadmines. Should these be merged into the rest of this file or left in a dedicated header?
 						un(43, n(647, { 	-- Captain Greenskin
 							i(10403, {	-- Blackened Defias Belt **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
-								["description"] = "You can obtain this appearance by doing a rogue-only quest in the current Deadmines instance.",
+								["description"] = "You can obtain this appearance by doing a Rogue-only quest in the current Deadmines instance.",
 							}),
 						})),
 						un(43, n(4416, { 	-- Defias Strip Miner
 							i(10402, {	-- Blackend Defias Boots **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
-								["description"] = "You can obtain this appearance by doing a rogue-only quest in the current Deadmines instance.",
+								["description"] = "You can obtain this appearance by doing a Rogue-only quest in the current Deadmines instance.",
 							}),
 						})),
 						un(43, n(639, { 	-- Edwin Van Cleef
 							i(10399, {	-- Blackened Defias Armor **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
-								["description"] = "You can obtain this appearance by doing a rogue-only quest in the current Deadmines instance.",
+								["description"] = "You can obtain this appearance by doing a Rogue-only quest in the current Deadmines instance.",
 							}),
 						})),
 						un(43, n(1731, { 	-- Goblin Craftsman

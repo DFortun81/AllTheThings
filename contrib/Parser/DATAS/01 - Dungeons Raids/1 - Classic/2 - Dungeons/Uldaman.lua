@@ -368,9 +368,9 @@ _.Instances = { tier(1, {	-- Classic
 				i(151401),	-- Titanic Stone Legguards
 				i(151400),	-- Sand-Scoured Treads
 			})),
-			o(131979, {				-- Large Darkwood Chest
+			o(131979, {			-- Large Darkwood Chest
 				["modelID"] = 64648,
-				["description"] = "These chests are scattered around the instance. They are usually locked, but sometimes spawn unlocked. Has a very long loot list, but drop chances are significantly less than Ancient Treasure.",
+				["description"] = "These chests are scattered around the instance. They are usually locked, but sometimes spawn unlocked. They have a very long loot list, but drop chances are significantly lower than Ancient Treasure.",
 				--["icon"] = "Interface\\Icons\\INV_Box_01"
 				["groups"] = {
 					i(9967),	-- Embossed Plate Gauntlets
@@ -400,24 +400,18 @@ _.Instances = { tier(1, {	-- Classic
 				i(11118),	-- Archaedic Stone
 			})),
 			o(141979, {				-- Ancient Treasure (No Localization)
-				["description"] = "Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items. Has a very large loot table far exceeding those listed.",
+				["description"] = "Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items. Has a very large loot table, far exceeding what we have listed.",
 				["model"] = 199748,
 				["modelScale"] = 3,
 				["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 				["groups"] = {
 					i(20976),	-- Design: Citrine Pendant of Golden Healing
-					{	-- Plans: Heavy Mithril Helm
-						["itemID"] = 7990,	-- Plans: Heavy Mithril Helm
-					},
-					{	-- Plans: Mithril Shield Spike
-						["itemID"] = 7976,	-- Plans: Mithril Shield Spike
-					},
-					{	-- Plans: Mithril Spurs
-						["itemID"] = 7989,	-- Plans: Mithril Spurs
-					},
+					i(7990),	-- Plans: Heavy Mithril Helm
+					i(7976),	-- Plans: Mithril Shield Spike
+					i(7989),	-- Plans: Mithril Spurs
 					i(4063),	-- Imperial Leather Gloves
 					i(7475),	-- Regal Cuffs
-					i(866),	-- Monk's Staff
+					i(866),		-- Monk's Staff
 					i(1640),	-- Monstrous War Axe
 					i(15244),	-- Razor Blade
 					i(3430),	-- Sniper Rifle

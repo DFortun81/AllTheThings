@@ -52,7 +52,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				n(9257, {		-- Scarshield Warlock
-					["description"] = "DO NOT KILL this mob if trying to get the Burning Felguard to spawn.",
+					["description"] = "DO NOT KILL this mob if you are trying to get the Burning Felguard to spawn.",
 					["groups"] = {
 						n(10263, {	-- Burning Felguard
 							["description"] = "This mob is infinitely farmable if you don't kill all of the Scarshield Warlocks.",
@@ -123,7 +123,7 @@ _.Instances = { tier(1, {	-- Classic
 				un(7, i(16712)), 	-- Shadowcraft Gloves
 			})),
 			n(16080, {	-- Mor Grayhoof Summonable Read Description
-				["description"] = "Requires Brazier of Invocation (Dungeon Set 2 Questline) to summon this boss.",
+				["description"] = "Brazier of Invocation (Dungeon Set 2 questline) is required to summon this boss.",
 				["groups"] = {
 					i(22057, {
 						un(11, i(22325)),	-- Belt of the Trickster
@@ -178,7 +178,7 @@ _.Instances = { tier(1, {	-- Classic
 				un(2, i(16715)),	-- Wildheart Boots
 			})),
 			cr(10584, e(392, {	-- Urok Doomhowl
-				["description"] = "Summonable Boss. Loot a Roughshod Pike, it will be on the left wall after crossing the second bridge before heading to Highlord Omokk. Then kill Highlord Omokk and loot his head. After killing Mother Smolderweb head up and use the pike at the pile of skulls located at the corner of the square platform. This will summon waves of enemies and finally the boss.",
+				["description"] = "Summonable Boss. Loot a Roughshod Pike, found on the left wall after crossing the second bridge before heading to Highlord Omokk. Kill Highlord Omokk and loot his head. After killing Mother Smolderweb, head up and use the pike at the pile of skulls located at the corner of the square platform. This will summon waves of enemies and finally the boss.",
 				["groups"] = {
 					i(13258),	-- Slaghide Gauntlets
 					i(22232),	-- Marksman's Girdle

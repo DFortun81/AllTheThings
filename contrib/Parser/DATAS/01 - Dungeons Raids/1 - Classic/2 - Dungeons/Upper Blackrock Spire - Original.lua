@@ -170,7 +170,7 @@ _.Instances = { tier(1, {	-- Classic
 					["u"] = 12,	-- Legacy Boss
 					["g"] = {
 						i(18779, { 	-- Bottom Half of Advanced Armorsmithing: Volume 1
-							["description"] = "Combine with the Top Half of Advanced Armorsmithing: Volume 1",
+							["description"] = "Combine with the Top Half of Advanced Armorsmithing: Volume 1.",
 							["g"] = {
 								i(18769, { 	-- Enchanted Thorium Platemail [Item was removed from the game and turned into gray item Torn Scroll]
 									q(7649, { 	-- Enchanted Thorium Platemail: Volume 1

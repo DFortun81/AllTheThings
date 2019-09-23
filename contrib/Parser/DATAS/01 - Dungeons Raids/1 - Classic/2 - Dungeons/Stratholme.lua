@@ -8,25 +8,21 @@ _.Instances = { tier(1, {	-- Classic
 		["groups"] = {
 			ach(646),	-- Stratholme
 			n(-388, {	-- Main Gate
-				["description"] = "Stratholme is divided by several gates that ultimately make for two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
+				["description"] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
 				["maps"] = { 317 },	-- Stratholme Living Side
 				["coord"] = { 27.66, 11.64, 23 },	-- Stratholme [Main Gate], Eastern Plaguelands
 				["groups"] = {
 					n(-17, {	-- Quests
-						{
-							["questID"] = 27185,	-- Cutting the Competition
+						q(27185, {	-- Cutting the Competition
 							["provider"] = { "n", 45201 },	-- Master Craftsman Wilhelm
-						},
-						{
-							["questID"] = 27305,	-- Of Love and Family
+						}),
+						q(27305, {	-- Of Love and Family
 							["provider"] = { "n", 45200 },	-- Crusade Commander Eligor Dawnbringer
-						},
-						{
-							["questID"] = 27223,	-- Retribution
+						}),
+						q(27223, {	-- Retribution
 							["provider"] = { "n", 45200 },	-- Crusade Commander Eligor Dawnbringer
-						},
-						{
-							["questID"] = 27208,	-- The Dreadlord Balnazzar
+						}),
+						q(27208, {	-- The Dreadlord Balnazzar
 							["provider"] = { "n", 45200 },	-- Crusade Commander Eligor Dawnbringer
 							["groups"] = {
 								i(65998),	-- Balnazzar's Hide
@@ -34,11 +30,10 @@ _.Instances = { tier(1, {	-- Classic
 								i(65953),	-- Dathrohan's Mace
 								i(65928),	-- Leggings of Stratholme
 							},
-						},
-						{
-							["questID"] = 27223,	-- The Great Fras Siabi
+						}),
+						q(27223, {	-- The Great Fras Siabi
 							["provider"] = { "n", 45323 },	-- Packmaster Stonebruiser
-						},
+						}),
 					}),
 					n(0, {	-- Zone Drop
 						i(17683, {	-- Book: Gift of the Wild Rank 2
@@ -287,7 +282,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			n(-389, {	-- Service Entrance
-				["description"] = "Stratholme is divided by several gates that ultimately make for two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.",
+				["description"] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.",
 				["maps"] = { 318 },	-- Undead Side
 				["coord"] = { 43.76, 17.52, 23 },	-- Stratholme [Undead Side], Eastern Plaguelands
 				["groups"] = {

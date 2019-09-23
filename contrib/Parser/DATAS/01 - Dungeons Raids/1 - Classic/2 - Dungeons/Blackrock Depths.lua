@@ -286,13 +286,13 @@ _.Instances = { tier(1, {	-- Classic
 					["modelScale"] = 2.30,
 					["g"] = {
 						i(11614, { 	-- Plans: Dark Iron Mail
-							["description"] = "\n|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables.  It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it.  This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room.  When you walk into the room it will be in the back left corner where in between barrels.  There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r.  Once you enter the room you will continue straight until you see the ramp.  Instead of going down the ramp you will jump off the ledge to the right of the ramp.  After landing on the ground you will see the plans located here.\n",
+							["description"] = "\n|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located, there are some tables on your left.  It will be located in the back corner where the Fireguard Destroyer is, two tables in front of it.  This table is close to the table near the keg that has vases on it.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room.  When you walk into the room, it will be in the back left corner in between barrels.  There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r, you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r.  Once you enter the room, you will continue straight until you see the ramp.  Instead of going down the ramp, you will jump off the ledge to the right of the ramp.  After landing on the ground, you will see the plans.\n",
 						}),
 						i(11615, { 	-- Plans: Dark Iron Shoulders
-							["description"] = "\n|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room.  They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort you will continue down into the room.  When you come across the first split into two rooms you will enter the room on the left.  They will be located on the seat behind the bench which is located next to the 3 red jugs.\n",
+							["description"] = "\n|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room.  They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort, you will continue down into the room.  When you come across the first split into two rooms, you will enter the room on the left.  They will be located on the seat behind the bench, which is located next to 3 red jugs.\n",
 						}),
 					},
-					["description"] = "There are 6 spawn points for this object.\n\n|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables.  It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it.  This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room.  When you walk into the room it will be in the back left corner where in between barrels.  There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r.  Once you enter the room you will continue straight until you see the ramp.  Instead of going down the ramp you will jump off the ledge to the right of the ramp.  After landing on the ground you will see the plans located here.\n\n|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room.  They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort you will continue down into the room.  When you come across the first split into two rooms you will enter the room on the left.  They will be located on the seat behind the bench which is located next to the 3 red jugs.\n",  -- Since writing to the item delays sometimes we are also going to add the description to the headers just so we know they are seen.
+					["description"] = "There are 6 spawn points for this object.\n\n|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located, there are some tables on your left.  It will be located in the back corner where the Fireguard Destroyer is, two tables in front of it.  This table is close to the table near the keg that has vases on it.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room.  When you walk into the room, it will be in the back left corner in between barrels.  There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r, you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r.  Once you enter the room, you will continue straight until you see the ramp.  Instead of going down the ramp, you will jump off the ledge to the right of the ramp.  After landing on the ground, you will see the plans.\n\n|cFFFFD700Plans: Dark Iron Shoulders|r spawn in one of two spots.\n\n|cFFFFFFFFLocation 1:|r In |cFFFFD700General Angerforge's|r room.  They are sitting on the bottom shelf next to the floating crystal.\n\n|cFFFFFFFFLocation 2:|r On the ground in the |cFFFFD700Detention Block|r. After passing Lexlort, you will continue down into the room.  When you come across the first split into two rooms, you will enter the room on the left.  They will be located on the seat behind the bench, which is located next to 3 red jugs.\n",  -- Since writing to the item delays sometimes we are also going to add the description to the headers just so we know they are seen.
 				}),
 				i(12552, {	-- Blisterbane Wrap
 					["crs"] = {
@@ -497,7 +497,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(18235, {	-- Schematic: Field Repair Bot 74A
 					["requireSkill"] = 202,	-- Engineering
-					["description"] = "On the floor next to Golem Lord Argelmach",
+					["description"] = "On the floor next to Golem Lord Argelmach.",
 				}),
 				i(18654, {	-- Schematic: Gnomish Alarm-o-Bot
 					["crs"] = {
@@ -621,7 +621,7 @@ _.Instances = { tier(1, {	-- Classic
 							un(11, i(22330)), 		-- Shroud of Arcane Mastery
 						}),
 					},
-					["description"] = "Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot grey chest on grey grate after killing the mobs.",
+					["description"] = "Banner of Provocation (Dungeon Set 2 questline) is required to summon this boss. Loot the grey chest on the grey grate after killing the mobs.",
 				}),
 				cr(10096, e(372, {	-- Ring of Law
 					n(9031, { 	-- Anub'shiah
@@ -727,10 +727,10 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 					})),
 					n(9476, {	-- Watchman Doomgrip
-						["description"] = "Watchman Doomgrip spawns once all twelve Relic Coffers have been opened using Relic Coffer Keys that can drop from any Dark Iron mob in the instance. Upon defeating all enemies, a hidden door beneath the Dark Coffer will open allowing access to the Secret Safe as well as the Heart of the Mountain.",
+						["description"] = "Watchman Doomgrip spawns once all twelve Relic Coffers have been opened using Relic Coffer Keys, which can drop from any Dark Iron mob in the instance. Upon defeating all enemies, a hidden door beneath the Dark Coffer will open, allowing access to the Secret Safe as well as the Heart of the Mountain.",
 						["g"] = {
 							o(160836, {	-- Relic Coffer
-								["description"] = "Relic Coffer Keys that can drop from any Dark Iron mob in the instance.",
+								["description"] = "Relic Coffer Keys can drop from any Dark Iron mob in the instance.",
 								["model"] = 196976,
 								["g"] = {
 									i(11946),	-- Fire Opal Necklace
@@ -750,7 +750,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					o(164820, {	-- Dark Keeper Nameplate
-						["description"] = "Inspect the portrait in front of the coffer room. Opening it will tell you the name of the Dark Keeper you need and where he is located. Only one will spawn each reset.\n\n|cff3399ffDark Keepers:|r\n\n|cFFFFD700Dark Keeper Bethek|r: spawns inside the vault room as soon as you open the portrait\n\n|cFFFFD700Dark Keeper Ofgut|r: Located in |cFFFFD700General Angerforge's|r room.  When you come down the stairs and are looking straight at |cFFFFD700General Angerforge|r you will then see him located directly to the left near the crystal.\n\n|cFFFFD700Dark Keeper Pelver|r: Located in |cFFFFD700The Domicile|r.  For quicker access you can take any of the mole machines and click |cFFFFD700Into the Domicile|r and he will be on top of it.\n\n|cFFFFD700Dark Keeper Uggel|r: quite a close walk; walk outside the vault room and go right to the last room. He is near the entrance where all the golems are.\n\n|cFFFFD700Dark Keeper Vorfalk|r: Located at the |cFFFFD700Grim Guzzler|r.  When you first enter the room after coming from the bridge he will be located on your right side in the corner (in front of the band's playing spot).\n\n|cFFFFD700Dark Keeper Zimrel|r: Located on the second floor of the |cFFFFD700Ring of Law|r.  When entering this floor from the |cFFFFD700East Garrison|r (room with the Shadowforge Lock) you will go around to your right where he will be sitting in the middle of the seats.\n",
+						["description"] = "Inspect the portrait in front of the coffer room. Opening it will tell you the name of the Dark Keeper you need and where he is located. Only one will spawn each reset.\n\n|cff3399ffDark Keepers:|r\n\n|cFFFFD700Dark Keeper Bethek|r spawns inside the vault room as soon as you open the portrait.\n\n|cFFFFD700Dark Keeper Ofgut|r is located in |cFFFFD700General Angerforge's|r room.  When you come down the stairs and are looking straight at |cFFFFD700General Angerforge|r, you will see him located directly to the left near the crystal.\n\n|cFFFFD700Dark Keeper Pelver|r is located in |cFFFFD700The Domicile|r.  For quicker access, you can take any of the mole machines and click |cFFFFD700Into the Domicile|r and he will be on top of it.\n\n|cFFFFD700Dark Keeper Uggel|r is quite a close walk; go outside the vault room and turn right to the last room. He is near the entrance where all the golems are.\n\n|cFFFFD700Dark Keeper Vorfalk|r is located at the |cFFFFD700Grim Guzzler|r.  When you first enter the room after coming from the bridge, he will be located on your right side in the corner (in front of the band's playing spot).\n\n|cFFFFD700Dark Keeper Zimrel|r is located on the second floor of the |cFFFFD700Ring of Law|r.  When entering this floor from the |cFFFFD700East Garrison|r (room with the Shadowforge Lock), you will go around to your right and he will be sitting in the middle of the seats.\n",
 						["model"] = 203051,
 						["g"] = {
 							i(11197, {	-- Dark Keeper Key
@@ -847,7 +847,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(18043), 		-- Coal Miner Boots
 						i(22275), 		-- Firemoss Boots
 					},
-					["description"]	= "Break the 3 Thunderbrew Lager Kegs to start the event.",
+					["description"]	= "Break the 3 Thunderbrew Lager Kegs to start the encounter.",
 				})),
 				cr(9543, n(9543, {	-- Ribbly Screwspigot
 					["g"] = {
@@ -856,7 +856,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(2662)),	-- Ribbly's Quiver
 						i(11742),	-- Wayfarer's Knapsack
 					},
-					["description"]	= "Speak to him to start the event.",
+					["description"]	= "Speak to him to start the encounter.",
 				})),
 				cr(9499, e(383, {	-- Plugger Spazzring
 					n(-2, { 	-- Vendors
@@ -877,7 +877,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(151409), 		-- Ferrous Cord
 						un(2, i(11743)),	-- Rockfist
 					},
-					["description"]	= "Private Rocknot must be sent into a drunken rage to aggro Phalanx. \nTo do that, feed him 6 dark iron ale mugs, which can be bought from Plugger Spazzring. \nRocknot will break one of the kegs, it'll blow the door open and Phalanx will be angry.",
+					["description"]	= "Private Rocknot must be sent into a drunken rage to aggro Phalanx. \nTo do that, feed him 6 Dark Iron Ale Mugs, which can be purchased from Plugger Spazzring. \nRocknot will break one of the kegs, it'll blow the door open, and Phalanx will be angry.",
 				})),
 				n(45843, {			-- Yuka Screwspigot <Engineering Supplies>
 						i(10602),   -- Schematic: Deadly Scope
@@ -938,7 +938,7 @@ _.Instances = { tier(1, {	-- Classic
 					["description"] = "This is a rare that is not always present.",
 				}),
 				n(9037, {			-- Gloom'rel
-					["description"] = "If you are a miner, speak with Gloom'rel so he will summon the Spectral Chalice to learn to smelt Dark Iron Ore.\nThe quest requires 2x Star Ruby, 20x Gold Bar, and 10x Truesilver Bar to complete.",
+					["description"] = "If you are a miner, speak with Gloom'rel to have him summon the Spectral Chalice so you can learn to smelt Dark Iron Ore.\nThe quest requires 2x Star Ruby, 20x Gold Bar, and 10x Truesilver Bar to complete.",
 					["requireSkill"] = 186,	-- Mining
 					["g"] = {
 						{
