@@ -59,7 +59,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 									["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 								}),
 								i(33863, { 	-- Brewfest Dress
-									["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
+									["cost"] = { { "i", 37829, 200 }, },	-- 100x Brewfest Prize Token
 								}),
 								i(33862, { 	-- Brewfest Regalia
 									["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
@@ -102,7 +102,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 							["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 						}),
 						i(169448, {	-- Bottomless Brewfest Stein
-							["description"] = "\nEach Brewfest Stein has five different filled appearances. Fill up the stein with one brew, relog, and then refresh your collection by shift+clicking on a main or mini list header. Once it has registered, move on to the next brew and repeat.\n",
+							["description"] = "\nEach Brewfest Stein has five different filled appearances. Fill up the stein with one brew, relog, and then refresh your collection by shift+clicking on a main or mini list header. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Brew can be only found in Durotar.  Gordok Brew is in both areas.  Alliance and Horde players can use the opposite faction's kegs; it just requires a little traveling!\n",
 							["cost"] = { { "i", 37829, 10 }, },		-- 10x Brewfest Prize Token
 							["g"] = {
 								i(169450),	-- Filled Bottomless Brewfest Stein [Barleybrew Clear - Alliance]
@@ -209,7 +209,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 									["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 								}),
 								i(33863, { 	-- Brewfest Dress
-									["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
+									["cost"] = { { "i", 37829, 200 }, },	-- 100x Brewfest Prize Token
 								}),
 								i(33862, { 	-- Brewfest Regalia
 									["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
@@ -252,7 +252,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 							["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 						}),
 						i(169448, {	-- Bottomless Brewfest Stein
-							["description"] = "\nEach Brewfest Stein has five different filled appearances. Fill up the stein with one brew, relog, and then refresh your collection by shift+clicking on a main or mini list header. Once it has registered, move on to the next brew and repeat.\n",
+							["description"] = "\nEach Brewfest Stein has five different filled appearances. Fill up the stein with one brew, relog, and then refresh your collection by shift+clicking on a main or mini list header. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Brew can be only found in Durotar.  Gordok Brew is in both areas.  Alliance and Horde players can use the opposite faction's kegs; it just requires a little traveling!\n",
 							["cost"] = { { "i", 37829, 10 }, },		-- 10x Brewfest Prize Token
 							["g"] = {
 								i(169450),	-- Filled Bottomless Brewfest Stein [Barleybrew Clear - Alliance]
