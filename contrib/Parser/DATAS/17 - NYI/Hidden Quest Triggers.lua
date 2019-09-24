@@ -848,12 +848,13 @@ _.NeverImplemented =
 		q(55145),	-- Killed Burning Amalgamation
 		q(56481),	-- Killed Burning Amalgamation
 		q(56725),	-- Killed Burning Amalgamation
-		q(56891),	-- Killed Burning Amalgamation and Xue
+		q(56891),	-- Killed Burning Amalgamation, Spawn of Salgos, and Xue
 		q(56485),	-- Killed Dusty Amalgamation
 		q(56488),	-- Killed Herald of Salgos
 		q(55891),	-- Killed Herald of Salgos
-		q(56892),	-- Killed Herald of Burning Amalgamation, Salgos, Xue, and Zomera
+		q(56892),	-- Killed Herald of Burning Amalgamation, Salgos, Spawn of Salgos, Xue, and Zomera
 		q(56486),	-- Killed Spawn of Salgos
+		q(56731),	-- Killed Spawn of Salgos
 		q(56482),	-- Killed Xue
 		q(56726),	-- Killed Xue
 		q(56480),	-- Killed Zomera
