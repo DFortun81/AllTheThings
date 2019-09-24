@@ -59,7 +59,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 									["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 								}),
 								i(33863, { 	-- Brewfest Dress
-									["cost"] = { { "i", 37829, 200 }, },	-- 100x Brewfest Prize Token
+									["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 								}),
 								i(33862, { 	-- Brewfest Regalia
 									["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
@@ -209,7 +209,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 									["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 								}),
 								i(33863, { 	-- Brewfest Dress
-									["cost"] = { { "i", 37829, 200 }, },	-- 100x Brewfest Prize Token
+									["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 								}),
 								i(33862, { 	-- Brewfest Regalia
 									["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
