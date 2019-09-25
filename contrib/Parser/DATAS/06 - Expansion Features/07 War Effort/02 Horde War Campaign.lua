@@ -57,6 +57,17 @@ _.ExpansionFeatures =
 							}),
 						},
 					}),
+					ach(13924, {	-- The Fourth War
+						["sourceQuests"] = { 
+							57095,	-- Old Soldier
+							57152,	-- Most Loyal
+						},	
+						["g"] = {
+							crit(1),	-- Ready for War
+							crit(2),	-- Tides of Vengeance
+							title(412),	-- Veteran of the Fourth War
+						},
+					}),
 				}),
 				n(-6015, {	-- Rewards
 					["description"] = "You'll be offered these rewards at the end of your first foothold.",
@@ -1654,6 +1665,92 @@ _.ExpansionFeatures =
 							1479,	-- Baine Rescue (Scenario)
 						},
 					}),
+					-- End of the fourth War
+					q(56496, {	-- The Eve of Battle
+						["provider"] = { "n", 155789 },	-- Lor'themar Theron
+						["coord"] = { 50.2, 96.0, 1165 },
+						["sourceQuests"] = {
+							55779,	-- Stay of Execution
+							55782,	-- Stay of Execution (Sylvanas Version)
+						},
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 1165 },	-- Dazar'alor
+					}),
+					q(57088, {	-- This Ain't Mine
+						["provider"] = { "n", 155786 },	-- Varok Saurfang
+						["coord"] = { 54.1, 42.4, 1 },
+						["sourceQuest"] = 56496,	-- The Eve of Battle
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 1 },	-- Durotar
+					}),
+					q(57090, {	-- Saving the Siege
+						["provider"] = { "n", 155786 },	-- Varok Saurfang
+						["coord"] = { 41.7, 55.7, 1535 },
+						["sourceQuest"] = 57088,	-- This Ain't Mine
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 1535 },	-- Durotar (Scenario)
+					}),
+					q(57091, {	-- Already Among Us
+						["provider"] = { "n", 155786 },	-- Varok Saurfang
+						["coord"] = { 41.7, 55.7, 1535 },
+						["sourceQuest"] = 57088,	-- This Ain't Mine
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 1535 },	-- Durotar (Scenario)
+					}),
+					q(57092, {	-- Strategic Deployment
+						["provider"] = { "n", 155786 },	-- Varok Saurfang
+						["coord"] = { 41.7, 55.7, 1535 },
+						["sourceQuest"] = 57088,	-- This Ain't Mine
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 1535 },	-- Durotar (Scenario)
+					}),
+					q(57093, {	-- Before the Gates of Orgrimmar
+						["provider"] = { "n", 155786 },	-- Varok Saurfang
+						["coord"] = { 41.7, 55.7, 1535 },
+						["sourceQuests"] = {
+							57090,	-- Saving the Siege
+							57091,	-- Already Among Us
+							57092,	-- Strategic Deployment
+						},
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 1535 },	-- Durotar (Scenario)
+					}),
+					q(57094, {	-- The Price of Victory
+						["provider"] = { "n", 155789 },	-- Lor'themar Theron
+						["coord"] = { 36.1, 64.1, 1535 },
+						["sourceQuest"] = 57093,	-- Before the Gates of Orgrimmar
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 1535 },	-- Durotar (Scenario)
+					}),
+					q(57095, {	-- Old Soldier
+						["provider"] = { "n", 155789 },	-- Lor'themar Theron
+						["coord"] = { 34.9, 60.1, 1535 },
+						["sourceQuest"] = 57094,	-- The Price of Victory
+						["altQuests"] = { 57152 },	-- Most Loyal (Sylvanas Version)
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 1535 },	-- Durotar (Scenario)
+					}),
+					q(57152, {	-- Most Loyal (Sylvanas Version)
+					--	["provider"] = { "n", 155789 },	-- Lor'themar Theron
+					--	["coord"] = { 34.9, 60.1, 1535 },
+						["sourceQuests"] = {
+							57094,	-- The Price of Victory
+							55782,	-- Stay of Execution (Sylvanas Version)
+						},
+						["altQuests"] = { 57095 },	-- Old Soldier
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["maps"] = { 1535 },	-- Durotar (Scenario)
+					}),
+					
 					--	unsorted below this point
 				
 					-- Escape of Saurfang

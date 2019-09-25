@@ -63,15 +63,14 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-			--[[	ach(, {	-- The Fourth War (unknown achievementID)
-				--	not nesting 'ready for war' and 'tides of vengeance' achievements inside, because when you try to utilize the sourceQuests on 'the fourth war' it does not display properly.
+				ach(13924, {	-- The Fourth War
 					["sourceQuests"] = { 57002 },	-- Old Soldier
 					["g"] = {
 						crit(1),	-- Ready for War
 						crit(2),	-- Tides of Vengeance
-					--	title(),	-- Veteran of the Fourth War
+						title(412),	-- Veteran of the Fourth War
 					},
-				}),--]] 
+				}),
 				n(-6015, {	-- Rewards
 					["description"] = "You'll be offered these rewards at the end of your first foothold.",
 					["modID"] = 25,
@@ -1338,9 +1337,6 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["maps"] = { 1535 },	-- Durotar (instanced version)
 						["lvl"] = 120,
-						["g"] = {
-						--	title(),	-- Veteran of the Fourth War (unknown titleID)
-						},
 					}),
 				}),
 			},

@@ -12,23 +12,13 @@ _.Zones =
 						["provider"] = { "n", 132347 },	-- Quintin Whalgrene <Master of Transmutations>
 						["coord"] = { 30.6, 49.6, 896 },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 50125,
-					}),
-					q(50129, {	-- A Recipe for Success
-					--	["objectID"] = 280755,	-- Quintin's Satchel
-						["coord"] = { 62.9, 28.9, 896 },
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 50128,
-						["requireSkill"] = 171,	-- Alchemy
-						["g"] = {
-							recipe(260403),	-- Recipe: Silus' Sphere of Transmutation
-						},
+						["sourceQuest"] = 50125,	-- A Possible Solution
 					}),
 					q(50127, {	-- A Stone's Throw
 						["provider"] = { "n", 132347 },	-- Quintin Whalgrene <Master of Transmutations>
 						["coord"] = { 30.6, 49.6, 896 },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 50125,
+						["sourceQuest"] = 50125,	-- A Possible Solution
 					}),
 					q(50128, {	-- Chemically Compounded
 						["provider"] = { "n", 132347 },	-- Quintin Whalgrene <Master of Transmutations>
@@ -39,45 +29,70 @@ _.Zones =
 							50126,	-- A Stone's Throw
 						},
 					}),
+					q(50129, {	-- A Recipe for Success
+						["provider"] = { "n", 280755 },	-- Quintin's Satchel
+						["coord"] = { 62.9, 28.9, 896 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 50128,
+						["requireSkill"] = 171,	-- Alchemy
+						["g"] = {
+							recipe(260403),	-- Recipe: Silus' Sphere of Transmutation
+						},
+					}),
 				}),
 				prof(333, {	-- Enchanting
-					q(53998, {	-- Exhumed
-						["sourceQuests"] = { 53997 },	-- The Sixth Sense
-						["coord"] = { 55.3, 46.0, 896 },
-						["provider"] = { "n", 146091 },	-- Sef Iwen
-					}),
 					q(53996, {	-- Pick Up Sticks
-						["sourceQuests"] = { 53996, 55635 },	-- A Voice on the Wind (A, H)
-						["coord"] = { 53.3, 40.0, 896 },
 						["provider"] = { "n", 146053 },	-- Sef Iwen
+						["coord"] = { 53.4, 40.1, 896 },
+						["sourceQuests"] = {
+							53993,	-- A Voice on the Wind (A)
+							55635,	-- A Voice on the Wind (H)
+						},
+						["requireSkill"] = 333,	-- Enchanting
 					}),
-					q(54002, {	-- Putting it All Together
-						["sourceQuests"] = { 54001 },	-- We're Going In
-						["coord"] = { 57.8, 80.8, 896 },
+					q(53997, {	-- The Sixth Sense
+						["provider"] = { "n", 146053 },	-- Sef Iwen
+						["coord"] = { 53.4, 40.1, 896 },
+						["sourceQuest"] = 53996,	-- Pick Up Sticks
+						["requireSkill"] = 333,	-- Enchanting
+					}),
+					q(53998, {	-- Exhumed
+						["provider"] = { "n", 146091 },	-- Sef Iwen
+						["coord"] = { 55.3, 46.1, 896 },
+						["sourceQuest"] = 53997,	-- The Sixth Sense
+						["requireSkill"] = 333,	-- Enchanting
+					}),
+					q(53999, {	-- The Threads That Bind
+						["provider"] = { "n", 146091 },	-- Sef Iwen
+						["coord"] = { 55.3, 46.1, 896 },
+						["sourceQuest"] = 53998,	-- Exhumed
+						["requireSkill"] = 333,	-- Enchanting
+					}),
+					q(54000, {	-- The Beat Goes On
+						["provider"] = { "n", 146093 },	-- Sef Iwen
+						["coord"] = { 63.0, 59.4, 896 },
+						["sourceQuest"] = 53999,	-- Exhumed
+						["requireSkill"] = 333,	-- Enchanting
+						["g"] = {
+							recipe(284415, {	-- Enchant Runic Power Core
+								["u"] = 15,	-- Training
+							}),
+						},
+					}),
+					q(54001, {	-- We're Going In
+						["provider"] = { "n", 146094 },	-- Sef Iwen
+						["coord"] = { 58.9, 62.9, 896 },
+						["sourceQuest"] = 54000,	-- The Beat Goes On
+						["requireSkill"] = 333,	-- Enchanting
+					}),
+					q(54002, {	-- Putting it All Togethereeee
 						["provider"] = { "n", 152255 },	-- Sef Iwen
+						["coord"] = { 57.8, 80.8, 896 },
+						["sourceQuest"] = 54001,	-- We're Going In
+						["requireSkill"] = 333,	-- Enchanting
 						["g"] = {
 							recipe(287494),	-- Iwen's Enchanting Rod
 						},
-					}),
-					q(54000, {	-- The Beat Goes On
-						["sourceQuests"] = { 53999 },	-- Exhumed
-						["coord"] = { 62.9, 59.5, 896 },
-						["provider"] = { "n", 146093 },	-- Sef Iwen
-					}),
-					q(53997, {	-- The Sixth Sense
-						["sourceQuests"] = 53996,	-- Pick Up Sticks
-						["coord"] = { 53.3, 40.0, 896 },
-						["provider"] = { "n", 146053 },	-- Sef Iwen
-					}),
-					q(53999, {	-- The Threads That Bind
-						["sourceQuests"] = { 53998 },	-- Exhumed
-						["coord"] = { 55.3, 46.0, 896 },
-						["provider"] = { "n", 146091 },	-- Sef Iwen
-					}),
-					q(54001, {	-- We're Going In
-						["sourceQuests"] = { 54000 },	-- The Beat Goes On
-						["coord"] = { 58.9, 62.7, 896 },
-						["provider"] = { "n", 146094 },	-- Sef Iwen
 					}),
 				}),
 				prof(182, {	-- Herbalism

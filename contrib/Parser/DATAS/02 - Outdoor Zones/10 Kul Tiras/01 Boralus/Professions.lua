@@ -37,16 +37,19 @@ _.Zones =
 					}),
 				}),
 				prof(333, {	-- Enchanting
-					q(53993, {	-- A Voice on the Wind
-						["sourceQuests"] = { 54005 },	-- What the Drust Knew
+					q(54005, {	-- What the Drust Knew (A)
+						["provider"] = { "n", 136041 },	-- Emily Fairweather
 						["coord"] = { 74.2, 11.3, 1161 },
+						["requireSkill"] = 333,	-- Enchanting
+						["description"] = "This quest chain requires 150 in Kul Tiran Enchanting.",
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(54005, {	-- What the Drust Knew
-						["description"] = "This quest chain requires 150 in Kul Tiran Enchanting.",
-						["coord"] = { 74.2, 11.3, 1161 },
+					q(53993, {	-- A Voice on the Wind (A)
+						["provider"] = { "n", 147014 },	-- Ancient Drust Relic Dust
+						["coord"] = { 74.2, 11.4, 1161 },
+						["sourceQuest"] = 54005,	-- What the Drust Knew (A)
+						["requireSkill"] = 333,	-- Enchanting
 						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 136041 },	-- Emily Fairweather
 					}),
 				}),
 				prof(182, {	-- Herbalism

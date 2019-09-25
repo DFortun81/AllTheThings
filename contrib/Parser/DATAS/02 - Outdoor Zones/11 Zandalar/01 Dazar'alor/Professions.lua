@@ -63,16 +63,15 @@ _.Zones =
 						},
 						["requireSkill"] = 171,	-- Alchemy
 					}),
-					o(280957, {	-- Zukashi's Satchel
-						q(50120, {	-- A Recipe for Success
-							["coord"] = { 62.9, 28.9, 863 },
-							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 50119,	-- Chemically Compounded
-							["requireSkill"] = 171,	-- Alchemy
-							["g"] = {
-								recipe(260403),	-- Recipe: Silus' Sphere of Transmutation
-							},
-						}),
+					q(50120, {	-- A Recipe for Success
+						["provider"] = { "o", 280957 },	-- Zukashi's Satchel
+						["coord"] = { 62.9, 28.9, 863 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 50119,	-- Chemically Compounded
+						["requireSkill"] = 171,	-- Alchemy
+						["g"] = {
+							recipe(260403),	-- Recipe: Silus' Sphere of Transmutation
+						},
 					}),
 				}),
 				prof(164, {	-- Blacksmithing
@@ -98,17 +97,22 @@ _.Zones =
 					}),
 				}),
 				prof(333, {	-- Enchanting
-					q(55635, {	-- A Voice on the Wind
-						["sourceQuests"] = { 54161 },	-- What the Drust Knew
-						["coord"] = { 46.9, 35.8, 1165 },
-						["races"] = HORDE_ONLY,
-					}),
+					-- Tools of Trade Questline
 					q(54161, {	-- What the Drust Knew
-						["description"] = "This quest chain requires 150 in Zandalari Enchanting.",
-						["coord"] = { 46.9, 35.8, 1165 },
-						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 122702 },	-- Enchantress Quinni
+						["coord"] = { 47.1, 35.7, 1165 },
+						["requireSkill"] = 333,	-- Enchanting
+						["description"] = "This quest chain requires 150 in Zandalari Enchanting.",
+						["races"] = HORDE_ONLY,
 					}),
+					q(55635, {	-- A Voice on the Wind (H)
+						["provider"] = { "n", 147014 },	-- Ancient Drust Relic Dust
+						["coord"] = { 47.1, 35.3, 1165 },
+						["sourceQuest"] = 54161,	-- What the Drust Knew
+						["requireSkill"] = 333,	-- Enchanting
+						["races"] = HORDE_ONLY,
+					}),
+				
 				}),
 				prof(186, {	-- Mining
 					q(51962, {	-- Lumbering Away
