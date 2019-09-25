@@ -344,6 +344,42 @@ _.Zones =
 							},
 						}),
 ]]--
+						q(56186, {	-- Spies to the Left and Right
+							["sourceQuests"] = { 56185, 56267 },	-- Whispers of N'zoth (A, H)
+							["provider"] = { "n", 152365 },	-- Kalecgos
+							["coord"] = { 52.4, 68.9, 1473 }, -- Chamber of Heart
+							["lvl"] = 120,
+						}),
+						q(56187, {	-- Black Winged Shadow
+							["sourceQuests"] = { 56186 },	-- Spies to the Left and Right
+							["provider"] = { "n", 154500 },	-- Left
+							["coord"] = { 54.6, 72.7, 433 },	-- The Veiled Stair
+							["lvl"] = 120,
+						}),
+						q(56188, {	-- To the Catacombs!
+							["sourceQuests"] = { 56187 },	-- Black Winged Shadow
+							["provider"] = { "n", 154874 },	-- Blacktalon Watcher
+							["coord"] = { 47.7, 68.7, 13 },	-- Eastern Kingdoms (Burning Steppes, outside BWD)
+							["lvl"] = 120,
+						}),
+						q(56189, {	-- On the Trail of the Black Prince
+							["sourceQuests"] = { 56188 },	-- To the Catacombs!
+							["provider"] = { "n", 154870 },	-- Slain Blacktalon Lookout
+							["coord"] = { 47.1, 69.4, 42 },	-- Deadwind Pass
+							["lvl"] = 120,
+						}),
+						q(56190, {	-- Save Ebonhorn
+							["sourceQuests"] = { 56189 },	-- On the Trail of the Black Prince
+							["provider"] = { "n", 155191 },	-- Potion of Mental Clarity
+							["coord"] = { 68.9, 17.5, 46 },	-- Karazhan Catacombs
+							["lvl"] = 120,
+						}),
+						q(56504, {	-- Wrathion's Journal
+							["sourceQuests"] = { 56190 },	-- Save Ebonhorn
+							["provider"] = { "n", 151964 },	-- Spiritwalker Ebonhorn
+							["coord"] = { 46.2, 66.4, 1473 },	-- Chamber of Heart
+							["lvl"] = 120,
+						}),
 					}),
 					n(-2,   {	-- Vendors
 						["lvl"] = 120,

@@ -578,6 +578,7 @@ _.NeverImplemented =
 		
 	--	VARIOUS
 		q(54411),	-- triggers when speaking with Zidormi in Darkshore to travel back in time
+		q(58013),	-- Alliance war campaign, triggers when speaking to Anduin while on "This Ain't Mine"
 		
 	--	INCURSIONS
 		-- all 3 'secret supply chest' quests trigger at once.  possibly for 3 potential chests in the zone?  not sure why horde/alliance would have one shared quest and two different quests, though.
@@ -623,6 +624,7 @@ _.NeverImplemented =
 		q(52000),	-- Matron Morana killID
 		q(52002),	-- Soul Goliath killID
 		q(51999),	-- Stone Golem killID
+		q(53612),	-- Pest Remover Mk. II killID
 	
 	--	TREASURES
 		q(51871),	-- Drustvar repeatable random chest

@@ -251,10 +251,6 @@ _.Zones =
 						},
 					}),
 				}),
-				n(137649, {	-- Pest Remover Mk. II
-					["questID"] = 53612,	-- WQ is 51806
-					["coord"] = { 38.4, 37.2, 942 },	-- pats, but detection range is enormous, so one point should suffice
-				}),
 				n(139298, {	-- Pinku'shon
 					["questID"] = 51959,
 					["coord"] = { 38.6, 51.0, 942 },

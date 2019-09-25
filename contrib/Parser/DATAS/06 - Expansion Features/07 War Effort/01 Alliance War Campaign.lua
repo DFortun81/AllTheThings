@@ -63,6 +63,15 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
+			--[[	ach(, {	-- The Fourth War (unknown achievementID)
+				--	not nesting 'ready for war' and 'tides of vengeance' achievements inside, because when you try to utilize the sourceQuests on 'the fourth war' it does not display properly.
+					["sourceQuests"] = { 57002 },	-- Old Soldier
+					["g"] = {
+						crit(1),	-- Ready for War
+						crit(2),	-- Tides of Vengeance
+					--	title(),	-- Veteran of the Fourth War
+					},
+				}),--]] 
 				n(-6015, {	-- Rewards
 					["description"] = "You'll be offered these rewards at the end of your first foothold.",
 					["modID"] = 25,
@@ -951,7 +960,7 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							53916,	-- Outrigger Outfitters (definitely required)
-							53906,	-- Besieged Allies
+							53909,	-- Besieged Allies
 							54519,	-- Squad Goals
 							54518,	-- Zero Zeppelins
 						},
@@ -962,7 +971,7 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							53916,	-- Outrigger Outfitters (definitely required)
-							53906,	-- Besieged Allies
+							53909,	-- Besieged Allies
 							54519,	-- Squad Goals
 							54518,	-- Zero Zeppelins
 						},
@@ -973,7 +982,7 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							53916,	-- Outrigger Outfitters (definitely required)
-							53906,	-- Besieged Allies
+							53909,	-- Besieged Allies
 							54519,	-- Squad Goals
 							54518,	-- Zero Zeppelins
 						},
@@ -1260,6 +1269,78 @@ _.ExpansionFeatures =
 						},
 						["lvl"] = 120,
 						["provider"] = { "n", 107574 },	-- Anduin Wrynn
+					}),
+				--	8.2.5
+					q(56494, {	-- The Eye of Battle
+						["sourceQuests"] = { 55783 },	-- Stay of Execution
+						["provider"] = { "n", 135614 },	-- Master Mathias Shaw
+						["coord"] = { 70.5, 27.0, 1161 },	-- Boralus
+						["races"] = ALLIANCE_ONLY,
+						["maps"] = { 1161 },	-- Boralus
+						["lvl"] = 120,
+					}),
+					q(56719, {	-- This Ain't Mine
+						["sourceQuests"] = { 56494 },	-- The Eye of Battle
+						["provider"] = { "n", 155784 },	-- Anduin Wrynn
+						["coord"] = { 54.0, 42.6, 1 },	-- Durotar
+						["races"] = ALLIANCE_ONLY,
+						["maps"] = { 1 },	-- Durotar
+						["lvl"] = 120,
+					}),
+					q(56979, {	-- Saving the Siege
+						["sourceQuests"] = { 56719 },	-- This Ain't Mine
+						["provider"] = { "n", 155784 },	-- Anduin Wrynn
+						["coord"] = { 41.7, 56.2, 1535 },	-- Durotar (instanced version)
+						["races"] = ALLIANCE_ONLY,
+						["maps"] = { 1535 },	-- Durotar (instanced version)
+						["lvl"] = 120,
+					}),
+					q(56980, {	-- Already Among Us
+						["sourceQuests"] = { 56719 },	-- This Ain't Mine
+						["provider"] = { "n", 155784 },	-- Anduin Wrynn
+						["coord"] = { 41.7, 56.2, 1535 },	-- Durotar (instanced version)
+						["races"] = ALLIANCE_ONLY,
+						["maps"] = { 1535 },	-- Durotar (instanced version)
+						["lvl"] = 120,
+					}),
+					q(56981, {	-- Strategic Deployment
+						["sourceQuests"] = { 56719 },	-- This Ain't Mine
+						["provider"] = { "n", 155784 },	-- Anduin Wrynn
+						["coord"] = { 41.7, 56.2, 1535 },	-- Durotar (instanced version)
+						["races"] = ALLIANCE_ONLY,
+						["maps"] = { 1535 },	-- Durotar (instanced version)
+						["lvl"] = 120,
+					}),
+					q(56982, {	-- Before the Gates of Orgrimmar
+						["sourceQuests"] = {
+							56980,	-- Already Among Us
+							56979,	-- Saving the Siege
+							56981,	-- Strategic Deployment
+						},
+						["provider"] = { "n", 155784 },	-- Anduin Wrynn
+						["coord"] = { 41.7, 56.2, 1535 },	-- Durotar (instanced version)
+						["races"] = ALLIANCE_ONLY,
+						["maps"] = { 1535 },	-- Durotar (instanced version)
+						["lvl"] = 120,
+					}),
+					q(56993, {	-- The Price of Victory
+						["sourceQuests"] = { 56982 },	-- Before the Gates of Orgrimmar
+						["provider"] = { "n", 155785 },	-- Lady Jaina Proudmoore
+						["coord"] = { 36.0, 64.0, 1535 },	-- Durotar (instanced version)
+						["races"] = ALLIANCE_ONLY,
+						["maps"] = { 1535 },	-- Durotar (instanced version)
+						["lvl"] = 120,
+					}),
+					q(57002, {	-- Old Soldier
+						["sourceQuests"] = { 56993 },	-- The Price of Victory
+						["provider"] = { "n", 155785 },	-- Lady Jaina Proudmoore
+						["coord"] = { 36.0, 64.0, 1535 },	-- Durotar (instanced version)
+						["races"] = ALLIANCE_ONLY,
+						["maps"] = { 1535 },	-- Durotar (instanced version)
+						["lvl"] = 120,
+						["g"] = {
+						--	title(),	-- Veteran of the Fourth War (unknown titleID)
+						},
 					}),
 				}),
 			},

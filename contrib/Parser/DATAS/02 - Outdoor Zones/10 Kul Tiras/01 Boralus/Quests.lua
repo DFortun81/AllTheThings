@@ -67,6 +67,13 @@ _.Zones =
 						}),
 					},
 				}),
+				q(57126, {	-- ...And Following Seas
+					["sourceQuests"] = { 57002 },	-- Old Soldier
+					["provider"] = { "n", 150633 },	-- Lady Jaina Proudmoore
+					["coord"] = { 69.5, 27.1, 1161 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(51144, {	-- A Bundle of Furs
 					["sourceQuests"] = { 47189 },	-- A Nation Divided
 					["races"] = ALLIANCE_ONLY,
@@ -359,6 +366,14 @@ _.Zones =
 					["coord"] = { 67.8, 26.2, 1161 },	-- Boralus
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 143851 },	-- Kelsey Steelspark
+				}),
+				q(56185, {	-- Whispers of N'zoth
+					["sourceQuests"] = { 57002 },	-- Old Soldier
+					["description"] = "According to a CM, this quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
+					["provider"] = { "n", 154464 },	-- Earthen Guardian
+					["coord"] = { 74.9, 15.1, 1161 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
 				}),
 				o(311218, {	-- Xal'atath, Blade of the Black Empire
 					q(54113, {	-- Every Little Death Helps
