@@ -13957,7 +13957,6 @@ app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("CHAT_MSG_ADDON");
 app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("VARIABLES_LOADED");
-app:RegisterEvent("TOYS_UPDATED");
 app:RegisterEvent("COMPANION_LEARNED");
 app:RegisterEvent("COMPANION_UNLEARNED");
 app:RegisterEvent("NEW_PET_ADDED");
@@ -14251,6 +14250,7 @@ app.events.VARIABLES_LOADED = function()
 	-- Tooltip Settings
 	app.CurrentMapID = app.GetCurrentMapID();
 	app.Settings:Initialize();
+	app:RegisterEvent("TOYS_UPDATED");
 	
 	-- Attempt to register for the addon message prefix.
 	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
