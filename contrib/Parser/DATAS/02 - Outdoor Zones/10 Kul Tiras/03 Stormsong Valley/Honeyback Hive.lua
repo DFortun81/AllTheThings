@@ -10,13 +10,86 @@ _.Zones =
 		m(942, {	-- Stormsong Valley
 			faction(2395, {	-- Honeyback Hive
 				["races"] = ALLIANCE_ONLY,
+				["icon"] = "Interface\\Icons\\inv_cooking_80_choralhoney3",
 				["g"] = {
-					q(56108, {	-- Leaving the Hive
-						i(170069),	-- Honeyback Harvester's Harness
+					n(-17, {	-- Quests
+						q(56473, {	-- Envenomed Spider Fang
+							["provider"] = { "i", 169656 },	-- Envenomed Spider Fang
+							["isWeekly"] = true,	-- according to wowhead!
+							["races"] = ALLIANCE_ONLY,
+							["cr"] = 155172,	-- Trapdoor Bee Hunter
+						}),
+						q(56474, {	-- Hivekiller Stinger
+							["provider"] = { "i", 169655 },	-- Hivekiller Stinger
+							["isWeekly"] = true,	-- according to wowhead!
+							["races"] = ALLIANCE_ONLY,
+							["cr"] = 155171,	-- The Hivekiller
+						}),
+			--[[		q(, {	-- Hivethief's Jelly Stash (unknown questID)
+							["provider"] = { "i", 169657 },	-- Hivethief's Jelly Stash
+							["isWeekly"] = true,	-- according to wowhead!
+							["races"] = ALLIANCE_ONLY,
+							["cr"] = 155055,	-- Gurg the Hivethief
+						}),	--]]
+						q(56108, {	-- Leaving the Hive
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(170069),	-- Honeyback Harvester's Harness
+							},
+						}),
+						q(56144, {	-- Old Nasha's Paw
+							["provider"] = { "i", 169659 },	-- Old Nasha's Paw
+							["isWeekly"] = true,	-- according to wowhead!
+							["races"] = ALLIANCE_ONLY,
+							["cr"] = 155176,	-- Old Nasha
+						}),
+						q(56475, {	-- Spiral Yeti Horn
+							["provider"] = { "i", 169654 },	-- Spiral Yeti Horn
+							["isWeekly"] = true,	-- according to wowhead!
+							["races"] = ALLIANCE_ONLY,
+							["cr"] = 155059,	-- Yorag the Jelly Feaster
+						}),
+						q(56091, {	-- Usurper's Scent Gland
+							["provider"] = { "i", 169658 },	-- Usurper's Scent Gland
+							["isWeekly"] = true,	-- according to wowhead!
+							["races"] = ALLIANCE_ONLY,
+							["cr"] = 155173,	-- Honeyback Usurper
+						}),
 					}),
-					i(170175),	-- Technique: Glyph of Dire Bees
-					i(169106, {	-- Thin Jelly
-					--n(143730, {	-- Bumbles
+					n(-16, {	-- Rares
+						n(158518, {	-- Honeyback Harvester
+							["coords"] = {
+								{ 25.66, 72.24, 942 },
+								{ 63.01, 21.31, 942 },
+								{ 61.89, 31.95, 942 },
+								{ 33.05, 32.43, 942 },
+								{ 57.17, 51.25, 942 },
+								{ 40.93, 62.14, 942 },
+							},
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(172491),	-- Papi (PET!)
+								i(172492),	-- Sunsoaked Flitter (PET!)
+								i(170175),	-- Technique: Glyph of Dire Bees
+							},
+						}),
+						n(154154, {	-- Honey Smasher
+						-- questID = 57674 or 57726 (or both?)
+							["coords"] = {
+								{ 59.6, 18.4, 942 },
+								{ 62.0, 15.4, 942 },
+							},
+							["g"] = {
+								i(169133, {	-- Crystallized Jelly
+									i(168825),	-- Rich Jelly
+									i(168828),	-- Royal Jelly
+									i(168822),	-- Thin Jelly
+								}),
+								i(172493),	-- Snarling Butterfly Crate (PET!)
+							},
+						}),
+					}),
+					o(327230, {	-- Jelly Deposit
 						["coords"] = {
 							{ 33.12, 71.66, 942 },
 							{ 31.71, 74.54, 942 },
@@ -130,15 +203,9 @@ _.Zones =
 							{ 68.10, 68.29, 942 },
 							{ 61.18, 29.41, 942 },
 						},
-					}),
-					n(158518, {	-- Honeyback Harvester
-						["coords"] = {
-							{ 25.66, 72.24, 942 },
-							{ 63.01, 21.31, 942 },
-							{ 61.89, 31.95, 942 },
-							{ 33.05, 32.43, 942 },
-							{ 57.17, 51.25, 942 },
-							{ 40.93, 62.14, 942 },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(168822),	-- Thin Jelly
 						},
 					}),
 				},

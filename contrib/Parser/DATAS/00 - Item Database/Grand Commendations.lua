@@ -233,6 +233,9 @@ i(163617, 2159);	-- Rusted Alliance Insignia [7th Legion]
 i(163621, 2157);	-- Rusted Horde Insignia [Honorbound]
 i(163618, 2158);	-- Shimmering Shell [Voldunai]
 i(166501, 2163);	-- Soggy Page [Tortollan Seekers]
+i(168825, 2395);	-- Rich Jelly, Honeyback Hive (+80)
+i(168828, 2395);	-- Royal Jelly, Honeyback Hive (+160)
+i(168822, 2395);	-- Thin Jelly, Honeyback Hive (+20)
 
 
 -- in BFA the reputation rewards from the mission table / quests are actually currencies, not items like in legion

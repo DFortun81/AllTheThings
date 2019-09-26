@@ -64,6 +64,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				ach(13924, {	-- The Fourth War
+				--	not nesting 'ready for war' and 'tides of vengeance' achievements inside, because when you try to utilize the sourceQuests on 'the fourth war' it does not display properly.
 					["sourceQuests"] = { 57002 },	-- Old Soldier
 					["g"] = {
 						crit(1),	-- Ready for War
@@ -1337,6 +1338,9 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["maps"] = { 1535 },	-- Durotar (instanced version)
 						["lvl"] = 120,
+						["g"] = {
+							title(412),	-- Veteran of the Fourth War
+						},
 					}),
 				}),
 			},

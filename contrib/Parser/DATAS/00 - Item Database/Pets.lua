@@ -528,6 +528,7 @@ pet(92798, 1124);	-- Pandaren Fire Spirit
 pet(49665, 248);	-- Pandaren Monk
 pet(90173, 868);	-- Pandaren Water Spirit
 pet(68833, 301); 	-- Panther Cub
+pet(172491, 2792);	-- Papi
 pet(143954, 2018);	-- Paradox Spirit
 pet(8496, 47); 		-- Parrot Cage (Cockatiel) - (Cockatiel)
 pet(8492, 50); 		-- Parrot Cage (Green Wing Macaw) - (Green Wing Macaw)
@@ -671,6 +672,7 @@ pet(160708, 2189);	-- Smoochums
 pet(66073, 289);	-- Snail Shell (Scooter the Snail)
 pet(160847, 2190);	-- Snake Charmer's Flute [Guardian Cobra Hatchling]
 pet(163816, 2472);	-- Snapper
+pet(172493, 2794);	-- Snarling Butterfly Crate (Crimson Skipper)
 pet(35349, 173); 	-- Snarly's Bucket (Snarly)
 pet(151569, 2063); 	-- Sneaky Marmot
 pet(163819, 2459);	-- Snort
@@ -723,6 +725,7 @@ pet(119468, 1570); 	-- Sunfire Kaliri
 pet(94208, 1196);	-- Sunfur Panda
 pet(94124, 1178);	-- Sunreaver Micro-Sentry
 pet(163817, 2473);	-- Sunscale Hatchling
+pet(172492, 2793);	-- Sunsoaked Flitter
 pet(104291, 1345); 	-- Swarmling of Gu'chi (Gu'chi Swarmling)
 pet(116064, 1478); 	-- Syd the Squid
 pet(97553, 1231); 	-- Tainted Core (Tainted Waveling)

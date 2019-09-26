@@ -1595,9 +1595,6 @@ _.NeverImplemented =
 		un(1, i(165904)),	-- Treasure Map of havenswood
 		un(1, i(165905)),	-- Treasure Map of jorundall
 		un(1, i(165906)),	-- Treasure Map of skittering hollow
-		un(1, i(168822)),	-- Unknown
-		un(1, i(168825)),	-- Unknown
-		un(1, i(168828)),	-- Unknown
 		un(1, i(169192)),	-- Unknown
 		un(1, i(78892)),	-- Perfect Geode (PTR Only)
 		un(1, i(31503)),	-- Unknown

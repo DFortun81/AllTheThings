@@ -580,6 +580,24 @@ _.NeverImplemented =
 		q(54411),	-- triggers when speaking with Zidormi in Darkshore to travel back in time
 		q(58013),	-- Alliance war campaign, triggers when speaking to Anduin while on "This Ain't Mine"
 		
+	--	HONEYBACK HIVE
+		q(55906),	-- triggers when pulling out Seabreeze Bumblebee or Bumbles next to Barry at 69.1, 64.2 in Stormsong Valley
+		q(55904),	-- triggers when arriving at the hive at 62.9, 26.5 in Stormsong Valley
+		q(56104),	-- triggers when feeding Thin Jelly to Honeyback Hive Mother
+		q(56105),	-- triggers after Barry dances with Honeyback Hive Mother and you can enter the cave
+		q(57704),	-- triggered shortly after 56105 when I entered the cave
+		q(56735),	-- triggers after going through Barry's initial dialogue after entering the cave
+		q(57528),	-- triggers after feeding first Thin Jelly to Nascent Harvester
+		q(57707),	-- triggered shortly after 57528
+		q(56413),	-- seemed to trigger when Lush Flower Bed summoned Honeyback Usurper -- rare/daily event?
+		q(56170),	-- \
+		q(56414),	-- 	\	all 4 triggered at the same time after i looted the jelly at the end of the Lush Flower Bed event.  treasure/daily event?
+		q(57702),	-- 	/
+		q(57703),	-- /
+		q(57674),	-- triggered after killing Honey Smasher, first time
+		q(57726),	-- triggered after killing Honey Smasher, first time
+	--	58013 ALSO triggered after my first time killing Honey Smasher, but that also popped for me while doing the Alliance war campaign "This Ain't Mine."  so wtf lol
+		
 	--	INCURSIONS
 		-- all 3 'secret supply chest' quests trigger at once.  possibly for 3 potential chests in the zone?  not sure why horde/alliance would have one shared quest and two different quests, though.
 		q(54720),	-- Zuldazar Secret Supply Chest (playing as Horde)
