@@ -9924,7 +9924,7 @@ function app:RefreshData(lazy, got, manual)
 	app.countdown = manual and 0 or 30;
 	StartCoroutine("RefreshData", function()
 		-- While the player is in combat, wait for combat to end.
-		while InCombatLockdown() do coroutine.yield(); end
+		while InCombatLockdown() or not app.IsReady do coroutine.yield(); end
 		
 		-- Wait 1/2 second. For multiple simultaneous requests, each one will reapply the delay. [This should fix a lot of lag with ensembles.]
 		while app.countdown > 0 do
@@ -13964,11 +13964,9 @@ app:RegisterEvent("PET_JOURNAL_PET_DELETED");
 app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
 app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
 app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
-app:RegisterEvent("HEIRLOOMS_UPDATED");
 app:RegisterEvent("PET_BATTLE_OPENING_START")
 app:RegisterEvent("PET_BATTLE_CLOSE")
 app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
-app:RegisterEvent("ARTIFACT_UPDATE");
 
 -- Define Event Behaviours
 app.events.ARTIFACT_UPDATE = function(...)
@@ -14250,7 +14248,6 @@ app.events.VARIABLES_LOADED = function()
 	-- Tooltip Settings
 	app.CurrentMapID = app.GetCurrentMapID();
 	app.Settings:Initialize();
-	app:RegisterEvent("TOYS_UPDATED");
 	
 	-- Attempt to register for the addon message prefix.
 	C_ChatInfo.RegisterAddonMessagePrefix("ATT");
@@ -14286,6 +14283,10 @@ app.events.VARIABLES_LOADED = function()
 		RefreshSaves();
 		
 		app.CacheFlightPathData();
+		app:RegisterEvent("HEIRLOOMS_UPDATED");
+		app:RegisterEvent("ARTIFACT_UPDATE");
+		app:RegisterEvent("TOYS_UPDATED");
+		app.IsReady = true;
 		
 		-- NOTE: The auto refresh only happens once.
 		if not app.autoRefreshedCollections then
