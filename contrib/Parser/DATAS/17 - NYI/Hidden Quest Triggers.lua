@@ -589,9 +589,9 @@ _.NeverImplemented =
 		q(56735),	-- triggers after going through Barry's initial dialogue after entering the cave
 		q(57528),	-- triggers after feeding first Thin Jelly to Nascent Harvester
 		q(57707),	-- triggered shortly after 57528
-		q(56413),	-- seemed to trigger when Lush Flower Bed summoned Honeyback Usurper -- rare/daily event?
+		q(56413),	-- seemed to trigger when Lush Flower Bed summoned Honeyback Usurper (on a kill when i had not interacted with the bee to start the event) -- rare/daily event?  also popped again specifically when i interacted with the bee (npcID 155069) to summon it at 57.1, 51.2.  so maybe just "you're in the area when the event starts," or something?
 		q(56170),	-- \
-		q(56414),	-- 	\	all 4 triggered at the same time after i looted the jelly at the end of the Lush Flower Bed event.  treasure/daily event?
+		q(56414),	-- 	\	all 4 triggered at the same time after i looted the jelly at the end of the Lush Flower Bed event.  appears to be repeatable
 		q(57702),	-- 	/
 		q(57703),	-- /
 		q(57674),	-- triggered after killing Honey Smasher, first time

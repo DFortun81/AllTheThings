@@ -57,7 +57,7 @@ _.Zones =
 						}),
 					}),
 					n(-16, {	-- Rares
-						n(158518, {	-- Honeyback Harvester
+						n(155069, {	-- Honeyback Harvester
 							["coords"] = {
 								{ 25.66, 72.24, 942 },
 								{ 63.01, 21.31, 942 },

@@ -246,11 +246,9 @@ i(153594, 256123);	-- Xiwyllag-ATV
 -----------------
 -- PATCH 8.2.5 --
 -----------------
---[[
 i(173297, 307263);	-- Explorer's Dunetrekker
 i(173299, 307256);	-- Explorer's Jungle Hopper
 i(172023, 306421);	-- Frostwolf Snarler
 i(170069, 259741);	-- Honeyback Harvester
 i(172012, 294197);	-- Obsidian Worldbreaker
 i(172022, 308250);	-- Stormpike Battle Ram
---]]

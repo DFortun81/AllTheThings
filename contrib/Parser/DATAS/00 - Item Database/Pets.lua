@@ -414,7 +414,7 @@ pet(169358, 2692);	-- Lightless Ambusher
 pet(103670, 1320);	-- Lil' Bling
 pet(163502, 2416);	-- Lil Ben'fon
 pet(62540, 268);	-- Lil' Deathwing
---	pet(172016, 2621);	-- Lil' Nefarian
+pet(172016, 2621);	-- Lil' Nefarian
 pet(49693, 249);	-- Lil' Phylactery (Lil' K.T.)
 pet(68385, 297);	-- Lil' Ragnaros
 pet(163778, 2443);	-- Lil' Siege Tower

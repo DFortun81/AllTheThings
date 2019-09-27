@@ -34,11 +34,9 @@ _.PetJournal =
 		p(268, {	-- Lil' Deathwing
 			["u"] = 6,	-- Collector's Edition
 		}),
---[[
 		p(2621, {	-- Lil' Nefarian
 			["u"] = 31,	-- WoW Anniversary
 		}),
---]]
 		p(320),		-- Lil' Tarecgosa
 		p(557),		-- Nether Faerie Dragon
 		p(131, {	-- Netherwhelp
