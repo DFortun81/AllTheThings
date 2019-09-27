@@ -432,8 +432,8 @@ _.NeverImplemented =
 		-------------------
 		--    Legion     --
 		-------------------
-		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
 	--	Various tracking quests
+		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
 		q(45533),	-- Legion Dungeon Reward Quest
 		q(44437),	-- Legion Sungeon Reward quest (Wrath of Azshara)
 		q(38305),	-- Cenarius, Keeper of the Grove — unused version of quest 40122
@@ -465,6 +465,8 @@ _.NeverImplemented =
 		q(44506),	-- Levantus Kill ID
 		q(44901),	-- Levantus Bonus Roll
 		q(47086),	-- Malificus Kill ID
+		q(44507),	-- Nazak the Fiend killID
+		q(44902),	-- Nazak the Fiend bonus roll
 		
 	-- Invasions
 		q(47065),	-- Highmountain Invasion / Fel Commander Erixtol Kill
@@ -864,10 +866,13 @@ _.NeverImplemented =
 	--	The Laboratory of Mardivas
 		q(56708),	-- Lesser Lithic Arcanocrystal Selection	-- Needs confirmation
 		q(55202),	-- Elemental Essence Amalgamator Selection	-- Needs confirmation
+		q(56428),	-- Summoned Arcane Amalgamation
 		q(55144),	-- Summoned Dusty Amalgamation
 		q(55205),	-- Summoned Moghiea
 		q(55201),	-- Summoned Spawn of Salgos
 		q(55204),	-- Summoned Xue
+		q(56476),	-- Killed Arcane Amalgamation
+		q(56892),	-- Killed Arcane Amalgamation, Burning Amalgamation, Herald of Salgos, Moghiea, Salgos, Spawn of Salgos, Xue, and Zomera
 		q(55145),	-- Killed Burning Amalgamation
 		q(56481),	-- Killed Burning Amalgamation
 		q(56725),	-- Killed Burning Amalgamation
@@ -875,7 +880,6 @@ _.NeverImplemented =
 		q(56485),	-- Killed Dusty Amalgamation
 		q(56488),	-- Killed Herald of Salgos
 		q(55891),	-- Killed Herald of Salgos
-		q(56892),	-- Killed Herald of Burning Amalgamation, Moghiea, Salgos, Spawn of Salgos, Xue, and Zomera
 		q(56484),	-- Killed Moghiea
 		q(56486),	-- Killed Spawn of Salgos
 		q(56731),	-- Killed Spawn of Salgos

@@ -177,7 +177,11 @@ _.Instances = { tier(7, {	-- Legion
 			cr(110321, e(1783, {	-- Na'zak the Fiend 
 				["questID"] = 43513,	-- Na'zak the Fiend(WQ)
 				["isRaid"] = true,
-				["maps"] = { 680 },	-- Suramar
+				["maps"] = {
+					680,	-- Suramar
+					684,	-- Shattered Locus (Floor #1)
+					685,	-- Shattered Locus (Floor #2)
+				},
 				["coord"] = { 36.0, 66.4, 685 },
 				["g"] = {
 					ach(11160, crit(1)),	-- Unleashed Monstrosities / Na'zak the Fiend
