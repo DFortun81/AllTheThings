@@ -865,16 +865,18 @@ _.NeverImplemented =
 		q(56708),	-- Lesser Lithic Arcanocrystal Selection	-- Needs confirmation
 		q(55202),	-- Elemental Essence Amalgamator Selection	-- Needs confirmation
 		q(55144),	-- Summoned Dusty Amalgamation
+		q(55205),	-- Summoned Moghiea
 		q(55201),	-- Summoned Spawn of Salgos
 		q(55204),	-- Summoned Xue
 		q(55145),	-- Killed Burning Amalgamation
 		q(56481),	-- Killed Burning Amalgamation
 		q(56725),	-- Killed Burning Amalgamation
-		q(56891),	-- Killed Burning Amalgamation, Spawn of Salgos, and Xue
+		q(56891),	-- Killed Burning Amalgamation, Moghiea, Spawn of Salgos, and Xue
 		q(56485),	-- Killed Dusty Amalgamation
 		q(56488),	-- Killed Herald of Salgos
 		q(55891),	-- Killed Herald of Salgos
-		q(56892),	-- Killed Herald of Burning Amalgamation, Salgos, Spawn of Salgos, Xue, and Zomera
+		q(56892),	-- Killed Herald of Burning Amalgamation, Moghiea, Salgos, Spawn of Salgos, Xue, and Zomera
+		q(56484),	-- Killed Moghiea
 		q(56486),	-- Killed Spawn of Salgos
 		q(56731),	-- Killed Spawn of Salgos
 		q(56482),	-- Killed Xue
