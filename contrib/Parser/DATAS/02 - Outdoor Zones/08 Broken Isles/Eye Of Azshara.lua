@@ -9,17 +9,17 @@ _.Zones =
 			["icon"] = "Interface\\Icons\\achievement_dungeon_eyeofazshara",
 			["lvl"] = 110,
 			["g"] = {
-				n(-228, {	-- Flight Paths
-					fp(1870, {	-- Eye of Azshara, Azsuna
-						["coord"] = { 38.2, 46.0, 790 },
-					}),
-				}),
 				filter(101, {	-- Battle Pet
 					p(1914, {	-- Coastal Sandpiper
 						["crs"] = { 110826 },	-- Coastal Sandpiper
 					}),
 					p(1728, {	-- Juvenile Scuttleback
 						["crs"] = { 97283 },	-- Juvenile Scuttleback
+					}),
+				}),
+				n(-228, {	-- Flight Paths
+					fp(1870, {	-- Eye of Azshara, Azsuna
+						["coord"] = { 38.2, 46.0, 790 },
 					}),
 				}),
 				n(-16, {	-- Rares
