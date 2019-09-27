@@ -191,6 +191,7 @@ _.Zones =
 					["crs"] = { 143049 },	-- Leafy Flutterwing
 				}),
 				o(311903, {	-- Loose Parts (A)
+					["repeatable"] = true,
 					["questID"] = 54272,	-- Battle Bots (Alliance)
 					["icon"] = "Interface\\Icons\\INV_Engineering_ReavesBattery",
 					["races"] = ALLIANCE_ONLY,	-- Only Alliance can collect the parts from this.
@@ -220,6 +221,7 @@ _.Zones =
 					},
 				}),
 				o(311902, {	-- Loose Parts (H)
+					["repeatable"] = true,
 					["questID"] = 54273,	-- Battle Bots (Horde)
 					["icon"] = "Interface\\Icons\\INV_Engineering_ReavesBattery",
 					["races"] = HORDE_ONLY,	-- Only Horde can collect the parts from this.

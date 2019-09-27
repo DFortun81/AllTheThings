@@ -443,6 +443,7 @@ _.Zones =
 				n(-387, {	-- Relics
 					i(143695),	-- Ambition of the Forlorn
 					i(143694),	-- Aristocratic Menace
+					i(141264),	-- Bitestone Fury
 					i(141275),	-- Fertile Soil
 					i(141270),	-- Restless Dreams
 					i(143700),	-- Stoic Hibernation

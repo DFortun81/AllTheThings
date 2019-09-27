@@ -385,7 +385,7 @@ _.Zones =
 							i(164761),	-- Xal'atath, Blade of the Black Empire (QI)
 						},
 					}),
-					q(54118, {	-- Every Little Death Helps
+					q(54114, {	-- Every Little Death Helps
 						["sourceQuests"] = {
 							54265,	-- Orders from Azshara
 							54433,	-- Orders from Azshara
