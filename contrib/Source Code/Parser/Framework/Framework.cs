@@ -970,7 +970,7 @@ namespace ATT
                 case "isRepeatable":
                 case "repeatable":
                     {
-                        return "isRepeatable";
+                        return "repeatable";
                     }
                 case "isLimited":
                     {

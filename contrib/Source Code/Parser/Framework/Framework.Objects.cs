@@ -1011,7 +1011,7 @@ namespace ATT
                         case "isMonthly":
                         case "isYearly":
                         case "isWorldQuest":
-                        case "isRepeatable":
+                        case "repeatable":
                         case "factionID":
                         case "requireSkill":
                         case "followerID":
@@ -1207,7 +1207,7 @@ namespace ATT
                     // Boolean Data Type Fields
                     case "collectible":
                     case "equippable":
-                    case "isRepeatable":
+                    case "repeatable":
                     case "isBreadcrumb":
                     case "isLimited":
                     case "isDaily":

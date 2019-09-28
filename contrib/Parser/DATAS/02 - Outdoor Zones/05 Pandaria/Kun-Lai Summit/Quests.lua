@@ -705,7 +705,7 @@ _.Zones =
 				}),
 				q(30821, {	-- The Burlap Grind (daily)
 					["provider"] = { "n", 60679 },	-- Nephew Burrberry
-					["isRepeatable"] = true,
+					["repeatable"] = true,
 				}),
 				q(30592, {	-- The Burlap Trail: To Burlap Waystation
 					["provider"] = { "n", 59701 },	-- Brother Lintpocket
