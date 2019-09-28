@@ -3258,6 +3258,9 @@ _.NeverImplemented =
 			un(1, i(64775)),	-- Bloodthirsty Gladiator's Fleshslicer (Epic BG item never made it out of beta))
 			un(1, i(64825)),	-- Bloodthirsty Gladiator's Right Render (Epic BG item never made it out of beta))
 			un(1, i(64926)),	-- Bloodthirsty Gladiator's Ripper (Epic BG item never made it out of beta)))
+			un(1, i(140708)),	-- Earthmenders talons (probably first try for party sync)
+			un(1, i(150603)),	-- Earthmenders talons (probably first try for party sync)
+			un(1, i(157640)),	-- Earthmenders talons (probably first try for party sync)
 		}),
 		n(-345, {	-- Guns
 			un(1, i(49455)),	-- Blunderbuss of Deforestation
