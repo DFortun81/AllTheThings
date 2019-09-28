@@ -8,7 +8,7 @@ _.GroupFinder =
 	--	["description"] = "",	-- Add a description here about how to get rewards when we figure it out!  
 		["g"] = {
 			cl(6,  {	-- Death Knight
-				["classes"] = { 6 },	-- Death Knight
+			--	["classes"] = { 6 },	-- Death Knight
 				["g"] = {
 					i(173566),	-- Bloodcaked Runeblade
 					i(173567),	-- Frost-Etched Runeblade
@@ -24,7 +24,7 @@ _.GroupFinder =
 				},
 			}),
 			cl(12, {	-- Demon Hunter (Alliance)
-				["classes"] = { 12 },	-- Demon Hunter
+			--	["classes"] = { 12 },	-- Demon Hunter
 				["g"] = bubbleDown({ ["races"] = ALLIANCE_ONLY, }, {
 					i(173688),	-- Illidari Belt
 					i(173683),	-- Illidari Blindfold (probably Alliance version?  model is not available on wowhead to check)
@@ -37,7 +37,7 @@ _.GroupFinder =
 				}),
 			}),
 			cl(12, {	-- Demon Hunter (Horde)
-				["classes"] = { 12 },	-- Demon Hunter
+			--	["classes"] = { 12 },	-- Demon Hunter
 				["g"] = bubbleDown({ ["races"] = HORDE_ONLY, }, {
 					i(173676),	-- Illidari Belt
 					i(173673),	-- Illidari Blindfold (probably Horde version?  model is not available on wowhead to check)
@@ -50,13 +50,13 @@ _.GroupFinder =
 				}),
 			}),
 			cl(12, {	-- Demon Hunter (neutral — parser merges all 3 DH headers but keeps appropriate faction tagging due to bubbleDown!  OH, OH, IT'S MAGIC, YOU KNO-O-OW)
-				["classes"] = { 12 },	-- Demon Hunter
+			--	["classes"] = { 12 },	-- Demon Hunter
 				["g"] = {
 					i(173672),	-- Illidari Warglaive
 				},
 			}),
 			cl(11, {	-- Druid
-				["classes"] = { 11 },	-- Druid
+			--	["classes"] = { 11 },	-- Druid
 				["g"] = {
 					i(173568),	-- Guardian's Oaken Spear
 					i(173541),	-- Pike of Feral Rage
@@ -73,7 +73,7 @@ _.GroupFinder =
 				},
 			}),
 			cl(3,  {	-- Hunter
-				["classes"] = { 3 },	-- Hunter
+			--	["classes"] = { 3 },	-- Hunter
 				["g"] = {
 					i(173569),	-- Marksman's Recurve Bow
 					i(173543),	-- Packmaster's Rifle
@@ -89,7 +89,7 @@ _.GroupFinder =
 				},
 			}),
 			cl(8,  {	-- Mage
-				["classes"] = { 8 },	-- Mage
+			--	["classes"] = { 8 },	-- Mage
 				["g"] = {
 					i(173544),	-- Frostcore Staff
 					i(173608),	-- Mountainsage Cord
@@ -105,7 +105,7 @@ _.GroupFinder =
 				},
 			}),
 			cl(10, {	-- Monk
-				["classes"] = { 10 },	-- Monk
+			--	["classes"] = { 10 },	-- Monk
 				["g"] = {
 					i(173546),	-- Brewmasher's Staff
 					i(173616),	-- Mistdancer Cord
@@ -121,7 +121,7 @@ _.GroupFinder =
 				},
 			}),
 			cl(2,  {	-- Paladin
-				["classes"] = { 2 },	-- Paladin
+			--	["classes"] = { 2 },	-- Paladin
 				["g"] = {
 					i(173574),	-- Defender's Bulwark
 					i(173550),	-- Defender's Longsword
@@ -139,7 +139,7 @@ _.GroupFinder =
 				},
 			}),
 			cl(5,  {	-- Priest
-				["classes"] = { 5 },	-- Priest
+			--	["classes"] = { 5 },	-- Priest
 				["g"] = {
 					i(173552),	-- Staff of Dual Convictions
 					i(173553),	-- Staff of Radiance
@@ -155,10 +155,10 @@ _.GroupFinder =
 				},
 			}),
 			cl(4,  {	-- Rogue
-				["classes"] = { 4 },	-- Rogue
+			--	["classes"] = { 4 },	-- Rogue
 				["g"] = {
 					i(173556),	-- Assassin's Serrated Dagger
-					i(173555),	-- Duskfall Daggers
+					un(1, i(173555)),	-- Duskfall Daggers	-- Tagging unavailable until someone confirms. Currently you only get the Assassin's Dagger
 					i(173557),	-- Outlaw's Cutlass
 					i(173641),	-- Lightdrinker Bindings
 					i(173635),	-- Lightdrinker Boots
@@ -171,7 +171,7 @@ _.GroupFinder =
 				},
 			}),
 			cl(7,  {	-- Shaman
-				["classes"] = { 7 },	-- Shaman
+			--	["classes"] = { 7 },	-- Shaman
 				["g"] = {
 					i(173576),	-- Earthmender's Shield
 					i(173560),	-- Earthmender's Talons
@@ -189,7 +189,7 @@ _.GroupFinder =
 				},
 			}),
 			cl(9,  {	-- Warlock
-				["classes"] = { 9 },	-- Warlock
+			--	["classes"] = { 9 },	-- Warlock
 				["g"] = {
 					i(173562),	-- Demonologist's Staff
 					i(173561),	-- Destructive Spellstaff
@@ -205,7 +205,7 @@ _.GroupFinder =
 				},
 			}),
 			cl(1,  {	-- Warrior
-				["classes"] = { 1 },	-- Warrior
+			--	["classes"] = { 1 },	-- Warrior
 				["g"] = {
 					i(173563),	-- Armsmaster's Greataxe
 					i(173564),	-- Greataxe of Fury
