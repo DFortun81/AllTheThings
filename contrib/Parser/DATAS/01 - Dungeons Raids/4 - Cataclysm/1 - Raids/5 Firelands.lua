@@ -906,7 +906,27 @@ _.Instances = { tier(4, {	-- Cataclysm
 					"added 8.2.5.31337"
 				},
 				["g"] = {
-					-- Common Boss Drops do not drop in Timewalking, from the looks of it.
+					n(-1,  {	-- Common Boss Drops
+						["crs"] = {
+							53691,	-- Shannox
+							52498,	-- Beth'tilac <The Red Widow>
+							52530,	-- Alysrazor
+							52558,	-- Lord Rhyolith
+							53494,	-- Baleroc <The Gatekeeper>
+							52571,	-- Majordomo Staghelm <Archdruid of the Flame>
+							52409,	-- Ragnaros
+						},
+						["g"] = {
+							i(173277),	-- Avool's Incendiary Shanker
+							i(173276),	-- Entrail Disgorger
+							i(173274),	-- Eye of Purification
+							i(173275),	-- Firethorn Mindslicer
+							i(173278),	-- Shatterskull Bonecrusher
+							i(173273),	-- Smoldering Censer of Purity
+							i(173272),	-- Zoid's Firelit Greatsword
+							i(69237),	-- Living Ember
+						},
+					}),
 					e(192, {	-- Beth'tilac
 						["creatureID"] = 52498,
 						["g"] = {
