@@ -228,8 +228,9 @@ _.Zones =
 							["coord"] = { 61.9, 94.6, 1475 },
 							["lvl"] = 120,
 							["maps"] = { 1475 },	-- The Emerald Dream
+							["collectible"] = false,
 							["g"] = {
-								i(167873),	-- Remnant of the Void (white item — not sure what this is used for.  mysteryyyyyyy!)
+								i(167873),	-- Remnant of the Void
 							},
 						}),
 						q(55396, {	-- The Stuff Dreams Are Made Of
@@ -253,6 +254,22 @@ _.Zones =
 							["maps"] = { 1475 },	-- The Emerald Dream
 						}),
 						-- Heart of Azeroth Level 55
+						q(56261, {	-- Return to the Heart (A)
+							["provider"] = { "n", 154464 },	-- Earthen Guardian <Messenger of the Speaker>
+							["coord"] = { 74.8, 15.2, 1161 },
+							["isBreadcrumb"] = true,
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 120,
+							["maps"] = { 1161 },	-- Boralus
+						}),
+						q(55522, {	-- Return to the Heart (H)
+							["provider"] = { "n", 154465 },	-- Earthen Guardian <Messenger of the Speaker>
+							["coord"] = { 51.0, 88.8, 1165 },
+							["isBreadcrumb"] = true,
+							["races"] = HORDE_ONLY,
+							["lvl"] = 120,
+							["maps"] = { 1165 },	-- Dazar'alor
+						}),
 						q(55519, {	-- A Fresh Trauma
 							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["coord"] = { 50.0, 59.2, 1473 },
@@ -344,40 +361,67 @@ _.Zones =
 							},
 						}),
 ]]--
+						q(56185, {	-- Whispers of N'zoth (A)
+							["provider"] = { "n", 154464 },	-- Earthen Guardian
+							["coord"] = { 74.9, 15.1, 1161 },
+							["sourceQuest"] = 57002,	-- Old Soldier
+							["description"] = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 120,
+							["maps"] = { 1161 },	-- Boralus
+						}),
+						q(56267, {	-- Whispers of N'zoth (H)
+							["provider"] = { "n", 154465 },	-- Earthen Guardian
+							["coord"] = { 51.0, 88.8, 1165 },
+							["sourceQuests"] = {
+								57095,	-- Old Soldier
+								57152,	-- Most Loyal (Sylvanas Version)
+							},
+							["description"] = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
+							["races"] = HORDE_ONLY,
+							["lvl"] = 120,
+							["maps"] = { 1165 },	-- Dazar'alor
+						}),
 						q(56186, {	-- Spies to the Left and Right
-							["sourceQuests"] = { 56185, 56267 },	-- Whispers of N'zoth (A, H)
 							["provider"] = { "n", 152365 },	-- Kalecgos
 							["coord"] = { 52.4, 68.9, 1473 }, -- Chamber of Heart
+							["sourceQuests"] = {
+								56185,	-- Whispers of N'zoth (A)
+								56267,	-- Whispers of N'zoth (H)
+							},
 							["lvl"] = 120,
 						}),
 						q(56187, {	-- Black Winged Shadow
-							["sourceQuests"] = { 56186 },	-- Spies to the Left and Right
 							["provider"] = { "n", 154500 },	-- Left
-							["coord"] = { 54.6, 72.7, 433 },	-- The Veiled Stair
+							["coord"] = { 54.5, 72.5, 433 },
+							["sourceQuest"] = 56186,	-- Spies to the Left and Right
 							["lvl"] = 120,
+							["maps"] = { 433 },	-- The Veiled Stair
 						}),
 						q(56188, {	-- To the Catacombs!
-							["sourceQuests"] = { 56187 },	-- Black Winged Shadow
 							["provider"] = { "n", 154874 },	-- Blacktalon Watcher
-							["coord"] = { 47.7, 68.7, 13 },	-- Eastern Kingdoms (Burning Steppes, outside BWD)
+							["coord"] = { 47.8, 68.8, 13 },	-- Eastern Kingdoms (Burning Steppes, outside BWD)
+							["sourceQuest"] = 56187,	-- Black Winged Shadow
 							["lvl"] = 120,
 						}),
 						q(56189, {	-- On the Trail of the Black Prince
-							["sourceQuests"] = { 56188 },	-- To the Catacombs!
 							["provider"] = { "n", 154870 },	-- Slain Blacktalon Lookout
-							["coord"] = { 47.1, 69.4, 42 },	-- Deadwind Pass
+							["coord"] = { 47.0, 69.2, 42 },
+							["sourceQuest"] = 56188,	-- To the Catacombs!
 							["lvl"] = 120,
+							["maps"] = { 42 },	-- Deadwind Pass
 						}),
 						q(56190, {	-- Save Ebonhorn
-							["sourceQuests"] = { 56189 },	-- On the Trail of the Black Prince
 							["provider"] = { "n", 155191 },	-- Potion of Mental Clarity
-							["coord"] = { 68.9, 17.5, 46 },	-- Karazhan Catacombs
+							["coord"] = { 69.5, 16.5, 46 },
+							["sourceQuest"] = 56189,	-- On the Trail of the Black Prince
 							["lvl"] = 120,
+							["maps"] = { 46 },	-- Karazhan Catacombs
 						}),
 						q(56504, {	-- Wrathion's Journal
-							["sourceQuests"] = { 56190 },	-- Save Ebonhorn
 							["provider"] = { "n", 151964 },	-- Spiritwalker Ebonhorn
-							["coord"] = { 46.2, 66.4, 1473 },	-- Chamber of Heart
+							["coord"] = { 46.3, 67.2, 1473 },	-- Chamber of Heart
+							["sourceQuest"] = 56190,	-- Save Ebonhorn
 							["lvl"] = 120,
 						}),
 					}),

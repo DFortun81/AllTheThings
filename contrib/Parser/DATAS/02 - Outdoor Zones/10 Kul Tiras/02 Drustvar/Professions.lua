@@ -133,6 +133,16 @@ _.Zones =
 						},
 					}),
 				}),
+				prof(755, {	-- Jewelcrafting
+					q(55580, {	-- High Prospects (H)
+						["provider"] = { "n", 150896 },	-- Shrine of the Eventide
+						["coord"] = { 34.1, 35.5, 896 },
+						["modelScale"] = 2,
+						["sourceQuest"] = 49599,	-- The Missing Chapter (H)
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = HORDE_ONLY,
+					}),
+				}),
 				prof(186, {	-- Mining
 					q(52050, {	-- A More Challenging Career
 						["provider"] = { "n", 139746 },		-- First Mate Cinderfuse

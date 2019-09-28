@@ -26,6 +26,16 @@ _.Zones =
 						},
 					}),
 				}),
+				prof(755, {	-- Jewelcrafting
+					q(55583, {	-- Out With the Old (A)
+						["provider"] = { "n", 150897 },	-- Shrine of the Dawning
+						["coord"] = { 61.4, 37.2, 863 },
+						["modelScale"] = 2,
+						["sourceQuest"] = 49584,	-- The Missing Chapter (A)
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
 				prof(186, {	-- Mining
 					q(52044, {	-- An Exceptional Platinum Shard
 						["requireSkill"] = 186,	-- Mining

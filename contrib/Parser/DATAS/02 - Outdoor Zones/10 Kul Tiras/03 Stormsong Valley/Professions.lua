@@ -29,6 +29,16 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
+				prof(755, {	-- Jewelcrafting
+					q(55579, {	-- Cracking the Surface (H)
+						["provider"] = { "n", 150898 },	-- Shrine of Storms
+						["coord"] = { 60.7, 58.5, 942 },
+						["modelScale"] = 2,
+						["sourceQuest"] = 49599,	-- The Missing Chapter (H)
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = HORDE_ONLY,
+					}),
+				}),
 				prof(186, {	-- Mining
 					q(52044, {	-- An Exceptional Platinum Shard
 						["requireSkill"] = 186,	-- Mining

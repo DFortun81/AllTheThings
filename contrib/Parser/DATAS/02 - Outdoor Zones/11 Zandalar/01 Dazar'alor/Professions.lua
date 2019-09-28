@@ -112,7 +112,105 @@ _.Zones =
 						["requireSkill"] = 333,	-- Enchanting
 						["races"] = HORDE_ONLY,
 					}),
-				
+				}),
+				prof(755, {	-- Jewelcrafting
+					-- Tools of Trade Questline
+					q(49585, {	-- A Rocky Start (H)
+						["provider"] = { "o", 278570 },	-- Ancient Journal
+						["coord"] = { 46.9, 38.0, 1165 },
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["description"] = "This quest chain requires 150 in Zandalari Jewelcrafting.",
+						["races"] = HORDE_ONLY,
+					}),
+					q(49586, {	-- Digging Through the Past (H)
+						["provider"] = { "n", 130901 },	-- Chronicler Grazzul
+						["coord"] = { 42.3, 39.7, 1165 },
+						["sourceQuest"] = 49585,	-- A Rocky Start (H)
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = HORDE_ONLY,
+					}),
+					q(49589, {	-- The Shrine of the Dawning
+						["provider"] = { "n", 122695 },	-- Seshuli
+						["coord"] = { 47.1, 37.9, 1165 },
+						["sourceQuest"] = 49586,	-- Digging Through the Past (H)
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = HORDE_ONLY,
+					}),
+					q(49583, {	-- Out With the Old (H)
+						["provider"] = { "n", 150897 },	-- Shrine of the Dawning
+						["coord"] = { 61.4, 37.2, 863 },
+						["modelScale"] = 2,
+						["sourceQuest"] = 49589,	-- The Shrine of the Dawning
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = HORDE_ONLY,
+					}),
+					q(55592, {	-- A Promising Beginning (H)
+						["provider"] = { "n", 152490 },	-- Shrine of the Dawning
+						["coord"] = { 61.4, 37.2, 863 },
+						["modelScale"] = 2,
+						["sourceQuest"] = 49583,	-- Out With the Old (H)
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = HORDE_ONLY,
+					}),
+					q(49587, {	-- The Shrine of Nature
+						["provider"] = { "n", 122695 },	-- Seshuli
+						["coord"] = { 47.1, 37.9, 1165 },
+						["sourceQuest"] = 55592,	-- A Promising Beginning (H)
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = HORDE_ONLY,
+					}),
+					q(49582, {	-- Atal'Dazar: Not All That Glitters... (H)
+						["provider"] = { "n", 150894 },	-- Shrine of Nature
+						["coord"] = { 43.2, 64.3, 862 },
+						["modelScale"] = 2,
+						["sourceQuest"] = 49587,	-- The Shrine of Nature
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = HORDE_ONLY,
+					}),
+					q(55596, {	-- Setting Things Right (H)
+						["provider"] = { "n", 152496 },	-- Shrine of Nature
+						["coord"] = { 43.2, 64.3, 862 },
+						["modelScale"] = 2,
+						["sourceQuest"] = 49582,	-- Atal'Dazar: Not All That Glitters... (H)
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = HORDE_ONLY,
+					}),
+					q(49588, {	-- The Shrine of the Sands
+						["provider"] = { "n", 122695 },	-- Seshuli
+						["coord"] = { 47.1, 37.9, 1165 },
+						["sourceQuest"] = 55592,	-- A Promising Beginning
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = HORDE_ONLY,
+					}),
+					q(49581, {	-- Sun-Speckled Dunes (H)
+						["provider"] = { "n", 150895 },	-- Shrine of the Sands
+						["coord"] = { 44.2, 38.0, 864 },
+						["modelScale"] = 2,
+						["sourceQuest"] = 49588,	-- The Shrine of the Sands
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = HORDE_ONLY,
+					}),
+					q(55594, {	-- Polished Up (H)
+						["provider"] = { "n", 152493 },	-- Shrine of the Sands
+						["coord"] = { 44.2, 38.0, 864 },
+						["modelScale"] = 2,
+						["sourceQuest"] = 49581,	-- Sun-Speckled Dunes (H)
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = HORDE_ONLY,
+					}),
+					q(49599, {	-- The Missing Chapter (H)
+						["provider"] = { "n", 122695 },	-- Seshuli
+						["coord"] = { 47.1, 37.9, 1165 },
+						["sourceQuests"] = {
+							55596,	-- Setting Things Right (H)
+							55594,	-- Polished Up (H)
+						},
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							recipe(256703),	-- Design: Jewelhammer's Focus
+						},
+					}),
 				}),
 				prof(186, {	-- Mining
 					q(51962, {	-- Lumbering Away

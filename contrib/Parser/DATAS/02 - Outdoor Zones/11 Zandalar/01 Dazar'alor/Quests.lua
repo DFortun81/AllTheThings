@@ -352,12 +352,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 122817 },	-- Bladeguard Kaja
 				}),
-				q(55522, {	-- Return to the Heart
-					["isBreadcrumb"] = true,
-					["coord"] = { 51.0, 88.8, 1165 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 154465 },	-- Earthen Guardian <Messenger of the Speaker>
-				}),
 				q(47315, {	-- Into the Dunes
 					["sourceQuests"] = { 47314 },	-- Rumors of Exile
 					["coord"] = { 49.9, 31.6 },

@@ -214,12 +214,6 @@ _.Zones =
 						i(155020),	-- Sea Raider's Breastplate
 					},
 				}),
-				q(56261, {	-- Return to the Heart
-					["isBreadcrumb"] = true,
-					["coord"] = { 74.8, 15.2, 1161 },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
-				}),
 				q(51487, {	-- Searching for Answers
 					["sourceQuests"] = { 47952 },	-- The Missing Fleet
 					["coord"] = { 65.2, 68.7, 1161 },
@@ -366,14 +360,6 @@ _.Zones =
 					["coord"] = { 67.8, 26.2, 1161 },	-- Boralus
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 143851 },	-- Kelsey Steelspark
-				}),
-				q(56185, {	-- Whispers of N'zoth
-					["sourceQuests"] = { 57002 },	-- Old Soldier
-					["description"] = "According to a CM, this quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
-					["provider"] = { "n", 154464 },	-- Earthen Guardian
-					["coord"] = { 74.9, 15.1, 1161 },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
 				}),
 				o(311218, {	-- Xal'atath, Blade of the Black Empire
 					q(54113, {	-- Every Little Death Helps
