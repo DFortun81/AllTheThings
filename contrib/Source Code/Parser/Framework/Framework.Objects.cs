@@ -856,7 +856,7 @@ namespace ATT
 
             public static void ExportDB(string directory)
             {
-                foreach(var container in AllContainers.Values) ProcessDB(container);
+                foreach (var container in AllContainers.Values) ProcessDB(container);
                 ExportDB(directory, "ITEMDB", ITEM_DB);
                 ExportDB(directory, "NPCDB", NPC_DB);
             }

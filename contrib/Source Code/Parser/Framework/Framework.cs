@@ -60,6 +60,8 @@ namespace ATT
         /// </summary>
         private static IDictionary<int, Dictionary<string, object>> QUESTS = new Dictionary<int, Dictionary<string, object>>();
 
+        private static IDictionary<int, bool> QUESTS_WITH_REFERENCES = new Dictionary<int, bool>();
+
         /// <summary>
         /// All of the names stored for each data type.
         /// </summary>
@@ -169,6 +171,10 @@ namespace ATT
             if (data.TryGetValue("crs", out qgs))
             {
                 foreach (var qg in qgs) NPCS_WITH_REFERENCES[Convert.ToInt32(qg)] = true;
+            }
+            if (data.TryGetValue("questID", out int questID))
+            {
+                QUESTS_WITH_REFERENCES[questID] = true;
             }
 
             // Cache whether or not this entry had an explicit spellID assignment already.
@@ -709,6 +715,24 @@ namespace ATT
                         Objects.AllContainers["Unsorted"] = list;
                     }
                 }
+            }
+
+            var unsortedQuests = new List<object>();
+            int maxQuestID = QUESTS.Max(x => x.Key);
+            for(int i = 1;i <= maxQuestID; i++)
+            {
+                if(!QUESTS_WITH_REFERENCES.ContainsKey(i) && QUESTS.TryGetValue(i, out Dictionary<string, object> questRef) && questRef.ContainsKey("text"))
+                {
+                    unsortedQuests.Add(new Dictionary<string, object>() { { "questID", i } });
+                }
+            }
+            if(unsortedQuests.Count > 0)
+            {
+                unsorted.Add(new Dictionary<string, object>
+                    {
+                        { "npcID", -17 },
+                        { "g", unsortedQuests },
+                    });
             }
         }
 
