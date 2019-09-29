@@ -591,13 +591,12 @@ _.NeverImplemented =
 		q(56735),	-- triggers after going through Barry's initial dialogue after entering the cave
 		q(57528),	-- triggers after feeding first Thin Jelly to Nascent Harvester
 		q(57707),	-- triggered shortly after 57528
-		q(56413),	-- seemed to trigger when Lush Flower Bed summoned Honeyback Usurper (on a kill when i had not interacted with the bee to start the event) -- rare/daily event?  also popped again specifically when i interacted with the bee (npcID 155069) to summon it at 57.1, 51.2.  so maybe just "you're in the area when the event starts," or something?
+		q(56413),	-- seemed to trigger when Lush Flower Bed summoned Honeyback Usurper (on a kill when i had not interacted with the bee to start the event) -- rare/daily event?  also popped again specifically when i interacted with the bee (npcID 155069) to summon it at 57.1, 51.2.  so maybe just "you're in the area when the event starts," or something?  ETA: ALSO TRIGGERS WHILE ENGAGED WITH HONEY SMASHER.  wtf is this quest!!!!!
+	--	( 57.1, 51.2 )	-- looting honey triggered 56170, 56414, 57702, 57703	
 		q(56170),	-- \
 		q(56414),	-- 	\	all 4 triggered at the same time after i looted the jelly at the end of the Lush Flower Bed event.  appears to be repeatable
 		q(57702),	-- 	/
 		q(57703),	-- /
-		q(57674),	-- triggered after killing Honey Smasher, first time
-		q(57726),	-- triggered after killing Honey Smasher, first time
 	--	58013 ALSO triggered after my first time killing Honey Smasher, but that also popped for me while doing the Alliance war campaign "This Ain't Mine."  so wtf lol
 		q(56171),	-- not sure -- i had just done a Honeyback Harvester event and Gurg the Hivethief spawned but ran away because there wasn't enough DPS to kill him.  looted the jelly after the event, then ran to turn in since i was closeby.  fed the bee ~13 - 14 Thin Jelly (brought me to 1700 Friendly) and ran out of the cave and saw this and 57701 pop in chat.
 		q(57701),	-- same as above

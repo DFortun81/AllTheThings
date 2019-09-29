@@ -74,7 +74,9 @@ _.Zones =
 							},
 						}),
 						n(154154, {	-- Honey Smasher
-						-- questID = 57674 or 57726 (or both?)
+							["altQuests"] = { 57726 },
+							["questID"] = 57674,
+							["isDaily"] = true,
 							["coords"] = {
 								{ 59.6, 18.4, 942 },
 								{ 62.0, 15.4, 942 },

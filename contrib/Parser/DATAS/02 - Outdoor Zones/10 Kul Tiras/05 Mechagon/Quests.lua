@@ -241,6 +241,7 @@ _.Zones =
 				q(56049, {	-- Deck 'Em
 					["sourceQuests"] = { 55717 },	-- Time for Heroics
 					["provider"] = { "n", 153538 },	-- Adalin Halfheight
+					["isDaily"] = true,
 					["coord"] = { 75.2, 69.8, 862 },
 					["g"] = {
 						crit(8, {	-- Deck 'Em
