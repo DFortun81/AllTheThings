@@ -44,6 +44,7 @@ _.Zones =
 			q(28667),	-- Warchief's Command: Burning Steppes!
 			q(27722),	-- Warchief's Command: Deepholm!
 			q(28548),	-- Warchief's Command: Desolace!
+			q(49543),	-- Warchief's Command: Dread Wastes!
 			q(28554),	-- Warchief's Command: Dustwallow Marsh!
 			q(28577),	-- Warchief's Command: Eastern Plaguelands!
 			q(28542),	-- Warchief's Command: Felwood!
@@ -51,9 +52,13 @@ _.Zones =
 			q(39206),	-- Warchief's Command: Grizzly Hills!
 			q(28560),	-- Warchief's Command: Ghostlands!
 			q(28571),	-- Warchief's Command: Hillsbrad Foothills!
+			q(49533),	-- Warchief's Command: Howling Fjord!
 			q(49537),	-- Warchief's Command: Icecrown!
 			q(49538),	-- Warchief's Command: Jade Forest!
+			q(49540),	-- Warchief's Command: Krasarang Wilds!
+			q(49541),	-- Warchief's Command: Kun-Lai Summit!
 			q(27721),	-- Warchief's Command: Mount Hyjal!
+			q(49549),	-- Warchief's Command: Nagrand!
 			q(39201),	-- Warchief's Command: Netherstorm!
 			q(28494),	-- Warchief's Command: Northern Barrens!
 			q(28688),	-- Warchief's Command: Northern Stranglethorn Vale!
@@ -64,6 +69,7 @@ _.Zones =
 			q(28527),	-- Warchief's Command: Silithus!
 			q(28568),	-- Warchief's Command: Silverpine Forest!
 			q(28549),	-- Warchief's Command: Southern Barrens!
+			q(49548),	-- Warchief's Command: Spires of Arak!
 			q(49536),	-- Warchief's Command: Storm Peaks!
 			q(28532),	-- Warchief's Command: Stonetalon Mountains!
 			q(28677),	-- Warchief's Command: Swamp of Sorrows!
@@ -73,9 +79,11 @@ _.Zones =
 			q(28704),	-- Warchief's Command: The Cape of Stranglethorn!
 			q(28574),	-- Warchief's Command: The Hinterlands!
 			q(28504),	-- Warchief's Command: Thousand Needles!
+			q(49542),	-- Warchief's Command: Townlong Steppes!
 			q(28717),	-- Warchief's Command: Twilight Highlands!
 			q(28557),	-- Warchief's Command: Uldum!
 			q(28526),	-- Warchief's Command: Un'Goro Crater!
+			q(49539),	-- Warchief's Command: Valley of the Four Winds!
 			q(27718),	-- Warchief's Command: Vashj'ir!
 			q(28575),	-- Warchief's Command: Western Plaguelands!
 			q(28545),	-- Warchief's Command: Winterspring!
@@ -109,22 +117,31 @@ _.Zones =
 			q(28490),	-- Hero's Call: Darkshore! (breadcrumb quest for 13518, not available if 26383, 26385 are completed) (max level 13)
 			q(27727),	-- Hero's Call: Deepholm! (breadcrumb quest for 27203) (max level 93)
 			q(28531),	-- Hero's Call: Desolace! (breadcrumb quest for 14384, not available if 25938 is completed) (max level 33)
+			q(49561),	-- Hero's Call: Dread Wastes!
 			q(28552),	-- Hero's Call: Dustwallow Marsh! (breadcrumb quest for 27210, not available if 26702 is completed) (max level 38)
 			q(28578),	-- Hero's Call: Eastern Plaguelands!
 			q(28543),	-- Hero's Call: Felwood! (breadcrumb quest for 27997) (max level 48)
 			q(28511),	-- Hero's Call: Feralas! (breadcrumb quest for 25447, not available if 14410 is completed) (max level 38)
+			q(49564),	-- Hero's Call: Gorgrond!
 			q(39207),	-- Hero's Call: Grizzly Hills!
+			q(49551),	-- Hero's Call: Howling Fjord!
 			q(49555),	-- Hero's Call: Icecrown!
+			q(49556),	-- Hero's Call: Jade Forest!
+			q(49558),	-- Hero's Call: Krasarang Wilds!
+			q(49559),	-- Hero's Call: Kun-Lai Summit!
 			q(28567),	-- Hero's Call: Loch Modan!
 			q(27726),	-- Hero's Call: Mount Hyjal! (max level 100)
+			q(49567),	-- Hero's Call: Nagrand!
 			q(39202),	-- Hero's Call: Netherstorm!
 			q(28709),	-- Hero's Call: Northrend! (breadcrumb quest for 11672) (max level 78)
 			q(28708),	-- Hero's Call: Outland!(breadcrumb quest for 10288) (max level 68)
 			q(28582),	-- Hero's Call: Searing Gorge!
 			q(49550),	-- Hero's Call: Shadowmoon Valley!
 			q(49553),	-- Hero's Call: Sholazar Basin!
+			q(49562),	-- Hero's Call: Shadowmoon Valley!
 			q(28528),	-- Hero's Call: Silithus! (breadcrumb quest for 8280, not available if 28859,28856,28527 are completed) (max level 58)
 			q(28550),	-- Hero's Call: Southern Barrens! (breadcrumb quest for 24862) (max level 33)
+			q(49566),	-- Hero's Call: Spires of Arak!
 			q(49554),	-- Hero's Call: Storm Peaks!
 			q(28539), 	-- Hero's Call: Stonetalon Mountains!  (max level 28)
 			q(28675),	-- Hero's Call: Swamp of Sorrows!
@@ -138,9 +155,11 @@ _.Zones =
 			}),
 			q(26542),	-- Hero's Call: The Hinterlands!
 			q(28503),	-- Hero's Call: Thousand Needles! (breadcrumb quest for 25486, not available if 25479,25481 are completed) (max level 43)
+			q(49560),	-- Hero's Call: Townlong Steppes!
 			q(28716),	-- Hero's Call: Twilight Highlands! (breadcrumb quest for 26960) (max level 93)
 			q(28558),	-- Hero's Call: Uldum!
 			q(28525),	-- Hero's Call: Un'Goro Crater! (breadcrumb quest for 24740, not available if 24911 is completed) (max level 53)
+			q(49557),	-- Hero's Call: Valley of the Four Winds!
 			q(27724),	-- Hero's Call: Vashj'ir!
 			q(28576),	-- Hero's Call: Western Plaguelands!
 			q(28562),	-- Hero's Call: Westfall!
