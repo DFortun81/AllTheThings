@@ -10266,6 +10266,14 @@ end
 app.ModelViewer.SetScale = function(number)
 	GameTooltipModel.Model:SetCamDistanceScale(number or 1);
 end
+-- CLEU binding only happens when debugger is enabled because of how expensive it can get in large mob farms
+app:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
+app.events.COMBAT_LOG_EVENT_UNFILTERED = function()
+	local _,event = CombatLogGetCurrentEventInfo();
+	if event == "UNIT_DIED" or event == "UNIT_DESTROYED" then
+		RefreshQuestCompletionState()
+	end
+end
 app:GetWindow("Debugger", UIParent, function(self)
 	if not self.initialized then
 		self.initialized = true;
