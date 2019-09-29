@@ -1108,7 +1108,7 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 		SetDataSubMember("CollectedQuests", key, 1);
 		SetTempDataSubMember("CollectedQuests", key, 1);
 		if app.Settings:GetTooltipSetting("Report:CompletedQuests") then
-			local searchResults = AllTheThings.isquestdone(key)
+			local searchResults = app.SearchForField("questID", key)
 			if not searchResults or #searchResults <= 0 or (searchResults[1].parent and searchResults[1].parent.parent.text == "Unsorted") then
 			   key = key .. " (Missing in ATT)";
 			else
