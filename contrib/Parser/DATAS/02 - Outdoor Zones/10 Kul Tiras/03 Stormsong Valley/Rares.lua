@@ -262,6 +262,7 @@ _.Zones =
 				}),
 				n(132047, {	-- Reinforced Hullbreaker
 					["questID"] = 53611,
+					["repeatable"] = true,
 					["coord"] = { 69.6, 51.0, 942 },
 				}),
 				n(139328, {	-- Sabertron	
@@ -404,6 +405,7 @@ _.Zones =
 				n(129803, {	-- Whiplash
 					["description"] = "This rare only spawns during its associated world quest.",
 					["questID"] = 52299,	-- Whiplash
+					["repeatable"] = true,
 					["coord"] = { 47.32, 65.81, 942 },
 					["g"] = {
 						crit(27, {	-- Whiplash

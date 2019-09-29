@@ -1318,9 +1318,10 @@ _.Zones =
 					["coord"] = { 70.8, 39.1, 1462 },
 					["sourceQuest"] = 55210,	-- Batteries Not Included
 				}),
-				q(56324, {	-- Your First Charge Ain't Free! -- the NPC quest marker shows repeatable, but it isn't. Possibly a daily? Not marking until we know
+				q(56324, {	-- Your First Charge Ain't Free! 
 					["provider"] = { "n", 154534 },	-- Flux
 					["coord"] = { 61.2, 37.4, 1462 },
+					["repeatable"] = true,	-- repeatable when the tower is up to craft filled energy cells
 				}),
 			}),
 		}),

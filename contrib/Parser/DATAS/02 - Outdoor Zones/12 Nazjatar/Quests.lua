@@ -601,6 +601,8 @@ _.Zones =
 				["provider"] = { "n", 154640 },	-- Grand Marshal Tremblade
 				["coord"] = { 38.0, 55.3, 1355 },
 				["races"] = ALLIANCE_ONLY,
+				["altQuests"] = { 56648 },
+				["isWeekly"] = true,
 				["sourceQuest"] = 55175,	-- Where the Road Leads
 			}),
 			q(56650, {	-- Call to Arms: Mechagon
@@ -612,6 +614,8 @@ _.Zones =
 				["provider"] = { "n", 154640 },	-- Grand Marshall Tremblade
 				["coord"] = { 38.0, 55.3, 1355 },
 				["races"] = ALLIANCE_ONLY,
+				["altQuests"] = { 56649 },
+				["isWeekly"] = true,
 				["sourceQuest"] = 55175,	-- Where the Road Leads
 			}),
 			q(56148, {	-- Call to Arms: Nazjatar
@@ -623,6 +627,8 @@ _.Zones =
 				["provider"] = { "n", 154640 },	-- Grand Marshall Tremblade
 				["coord"] = { 38.0, 55.3, 1355 },
 				["races"] = ALLIANCE_ONLY,
+				["altQuests"] = { 55175 },
+				["isWeekly"] = true,
 				["sourceQuest"] = 55175,	-- Where the Road Leads
 			}),
 			q(52956, {	-- Call to Arms: Tirigarde Sound
@@ -634,6 +640,8 @@ _.Zones =
 				["provider"] = { "n", 154640 },	-- Grand Marshall Tremblade
 				["coord"] = { 38.0, 55.3, 1355 },
 				["races"] = ALLIANCE_ONLY,
+				["altQuests"] = { 52948 },
+				["isWeekly"] = true,
 				["sourceQuest"] = 55175,	-- Where the Road Leads
 			}),
 			q(56325, {	-- Changing Tides
