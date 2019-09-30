@@ -24,6 +24,7 @@ _.Zones =
 				}), 
 				n(82085, {	-- Bashiok
 					["questID"] = 35335,
+					["isDaily"] = true,
 					["coord"] = { 40.0, 79.0, 543 },
 					["g"] = {	
 						i(118222),	-- Spirit of Bashiok Toy
@@ -48,6 +49,7 @@ _.Zones =
 				}),
 				n(85907, {	-- Berthora
 					["questID"] = 36597,
+					["isDaily"] = true,
 					["coord"] = { 39.4, 74.6, 543 },
 					["g"] = {	
 						i(118232),	-- Scaled Riverbeast Spaulders
@@ -70,6 +72,7 @@ _.Zones =
 				}),
 				n(82311, {	-- Char the Burning
 					["questID"] = 35503,
+					["isDaily"] = true,
 					["coord"] = { 53.4, 44.6, 543 },
 					["g"] = {	
 						i(118212),	-- Char's Smoldering Fist
@@ -127,6 +130,7 @@ _.Zones =
 				}), 
 				n(85250, {	-- Fossilwood the Petrified
 					["questID"] = 36387,
+					["isDaily"] = true,
 					["coord"] = { 57.4, 68.6, 543 },
 					["g"] = {	
 						i(118221),	-- Petrification Stone Toy
@@ -135,6 +139,7 @@ _.Zones =
 				n(81038, {	-- Gelgor of the Blue Flame
 					["description"] = "Located in the cave.",
 					["questID"] = 36391,
+					["isDaily"] = true,
 					["coords"] = { 
 						{ 43.5, 48.1, 543 },	-- Cave Entrance
 						{ 32.6, 38.2, 546 },	-- Gelgor
@@ -145,6 +150,7 @@ _.Zones =
 				}),
 				n(80868, {	-- Glut
 					["questID"] = 36204,
+					["isDaily"] = true,
 					["coords"] = { 
 						{ 44.5, 50.8, 543 },	-- Cave Entrance
 						{ 46.0, 50.8, 543 },	-- Glut
@@ -167,6 +173,7 @@ _.Zones =
 				}),
 				n(84431, {	-- Greldrok the Cunning
 					["questID"] = 36186,
+					["isDaily"] = true,
 					["coords"] = { 
 						{ 46.4, 45.4, 543 },	-- Cave Entrance
 						{ 46.8, 43.2, 543 },	-- Greldrok the Cunning
@@ -188,6 +195,7 @@ _.Zones =
 				}),
 				n(83522, {	-- Hive Queen Skrikka
 					["questID"] = 35908,
+					["isDaily"] = true,
 					["coord"] = { 52.2, 70.2, 543 },						
 					["g"] = {	
 						i(118209),	-- Skrikka's Mandible
@@ -245,6 +253,7 @@ _.Zones =
 				}),
 				n(84406, {	-- Mandrakor
 					["questID"] = 36178,
+					["isDaily"] = true,
 					["coord"] = { 50.6, 53.2, 543 },
 					["g"] = {		
 						i(118709),	-- Doom Bloom Pet
@@ -290,6 +299,7 @@ _.Zones =
 				}),
 				n(76473, {	-- Mother Araneae
 					["questID"] = 34726,
+					["isDaily"] = true,
 					["coords"] = { 
 						{ 53.4, 78.2, 543 },	-- Mother Araneae
 						{ 52.2, 76.7, 543 },	-- Cave Entrance
@@ -312,6 +322,7 @@ _.Zones =
 				}),
 				n(85970, {	-- Riptar
 					["questID"] = 36600,
+					["isDaily"] = true,
 					["coord"] = { 37.6, 81.4, 543 },
 					["g"] = {	
 						i(118231),	-- Riptar's Clever Claw
@@ -319,6 +330,7 @@ _.Zones =
 				}),
 				n(85264, {	-- Rolkor
 					["questID"] = 36393,
+					["isDaily"] = true,
 					["coord"] = { 47.8, 41.6, 543 },
 					["g"] = {
 						i(118211),	-- Rolkor's Rage
@@ -326,6 +338,7 @@ _.Zones =
 				}),
 				n(86520, {	-- Stompalupagus
 					["questID"] = 36837,
+					["isDaily"] = true,
 					["coords"] = {
 						{ 55.0, 71.0, 543 },
 						{ 54.3, 72.0, 543 },
@@ -337,6 +350,7 @@ _.Zones =
 				}),
 				n(79629, {	-- Stomper Kreego
 					["questID"] = 35910,
+					["isDaily"] = true,
 					["coord"] = { 38.2, 66.2, 543 },
 					["g"] = {
 						i(118224),	-- Ogre Brewing Kit
@@ -344,6 +358,7 @@ _.Zones =
 				}),
 				n(80725, {	-- Sulfurious
 					["questID"] = 36394,
+					["isDaily"] = true,
 					["coords"] = {
 						{ 39.4, 60.6, 543 },
 						{ 41.2, 60.8, 543 },
@@ -354,6 +369,7 @@ _.Zones =
 				}),
 				n(86137, {	-- Sunclaw
 					["questID"] = 36656,
+					["isDaily"] = true,
 					["coord"] = { 44.6, 92.2, 543 },
 					["g"] = {	
 						i(118223),	-- Sunclaw
@@ -372,6 +388,7 @@ _.Zones =
 				}),
 				n(86410, {	-- Sylldross
 					["questID"] = 36794,
+					["isDaily"] = true,
 					["coords"] = {
 						{ 63.0, 61.6, 543 },
 						{ 63.9, 61.8, 543 },
