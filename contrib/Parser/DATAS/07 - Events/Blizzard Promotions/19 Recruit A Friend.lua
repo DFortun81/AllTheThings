@@ -8,31 +8,30 @@ _.WorldEvents =
 		["u"] = 3,	-- Blizzard Promotion
 		["g"] = {
 			n(-546, { 	-- Recruit A Friend
-				ach(1436, {	-- Friends In High Places
-					i(37719), 	-- Swift Zhevra
-				}),
-				ach(4832, {	-- Friends In Even Higher Places
-					i(54860), 	-- X-53 Touring Rocket
-				}),
-				ach(8213, {	-- Friends In Places Higher Yet
-					i(83086), 	-- Heart of the Nightwing
-				}),
-				ach(8794, {	-- Friends In Places Even Higher Than That
-					i(106246), 	-- Emerald Hippogryph
-				}),
-				ach(9925, {	-- Friends In Places Yet Even Higher Than That
-					i(118515), 	-- Cindermane Charger
-				}),
-				i(34518), 	-- Golden Pig
-				i(34519), 	-- Silver Pig
-				i(46894),	-- Jade Tiger
+				un(2, ach(1436, {	-- Friends In High Places
+					un(2, i(37719)), 	-- Swift Zhevra
+				})),
+				un(2, ach(4832, {	-- Friends In Even Higher Places
+					un(2, i(54860)), 	-- X-53 Touring Rocket
+				})),
+				un(2, ach(8213, {	-- Friends In Places Higher Yet
+					un(2, i(83086)), 	-- Heart of the Nightwing
+				})),
+				un(2, ach(8794, {	-- Friends In Places Even Higher Than That
+					un(2, i(106246)), 	-- Emerald Hippogryph
+				})),
+				un(2, ach(9925, {	-- Friends In Places Yet Even Higher Than That
+					un(2, i(118515)), 	-- Cindermane Charger
+				})),
+				un(2, i(34518)), 	-- Golden Pig
+				un(2, i(34519)), 	-- Silver Pig
+				un(2, i(46894)),	-- Jade Tiger
 				n(-548, {	-- China Only
 					ach(3636, {	-- Jade Tiger
 						["collectible"] = false,
 					}),
 				}),
-				i(49664), 	-- Zipao Tiger
-			--[[
+				un(2, i(49664)), 	-- Zipao Tiger
 				i(173300, {	-- Ensemble: Renowned Explorer's Attire
 					["u"] = 3,	-- Blizzard Promotion
 					["g"] = {
@@ -54,7 +53,6 @@ _.WorldEvents =
 				un(3, i(171333)),	-- Renowned Explorer's Rucksack
 				un(3, i(171361)),	-- Renowned Explorer's Tabard
 				un(3, i(173296)),	-- Rikki (PET!)
-				--]]
 			}),
 		},
 	}),

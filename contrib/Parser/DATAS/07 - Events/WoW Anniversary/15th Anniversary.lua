@@ -16,6 +16,43 @@ _.WorldEvents =
 			{	-- Alterac Valley
 				["npcID"] = -9987,	-- Alterac Valley
 				["g"] = {
+					n(-322, {	-- Cloaks
+						un(31, i(172098)),	-- frostwolf legionaire's cloak
+						un(31, i(172099)),	-- stormpike soldiers cloak
+						un(31, i(172100)),	-- frostwolf advisors cloak
+						un(31, i(172101)),	-- stormpike sage's cloak
+					}),
+					n(-43, {	-- Cloth
+						un(31, i(172105)),	-- Frostwolf cloth Belt
+						un(31, i(172109)),	-- stormpike cloth girdle
+						un(31, i(172120)),	-- frost runed headdress
+					}),
+					filter(52, {	-- Finger
+						un(31, i(172124)),	-- deep rooted ring
+						un(31, i(172139)),	-- don julio's band
+						un(31, i(172140)),	-- don rodrigo's band
+					}),
+					n(-44, {	-- Leather
+						un(31, i(172104)),	-- Frostwolf Leather Belt
+						un(31, i(172109)),	-- stormpike leather girdle
+						un(31, i(172120)),	-- yeti hide bracers
+					}),
+					n(-45, {	-- Mail
+						un(31, i(172103)),	-- Frostwolf mail Belt
+						un(31, i(172107)),	-- stormpike mail girdle
+						un(31, i(172126)),	-- winteraxe epaulets
+					}),
+					filter(51, {	-- Neck
+						un(31, i(172110)),	-- frostwolf legionaire's pendant
+						un(31, i(172111)),	-- frostwolf advisors pendant
+						un(31, i(172112)),	-- stormpike soldiers pendant
+						un(31, i(172113)),	-- stormpike sage's pendant
+					}),
+					n(-46, {	-- Plate
+						un(31, i(172102)),	-- Frostwolf plate belt
+						un(31, i(172106)),	-- stormpike plate girdle
+						un(31, i(172127)),	-- frozen steel vambraces
+					}),
 					n(-319, {	-- Weapons
 						un(31, i(172114)),	-- glacial blade
 						un(31, i(172115)),	-- electricified dagger
@@ -36,7 +73,7 @@ _.WorldEvents =
 						un(31, i(172133)),	-- lei of the life giver
 						un(31, i(172134)),	-- therezane's touch
 						un(31, i(172135)),	-- the immovable object
-						un(31, i(17216)),	-- the unstoppable force
+						un(31, i(172136)),	-- the unstoppable force
 					}),
 				},
 			},

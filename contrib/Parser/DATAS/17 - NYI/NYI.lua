@@ -3246,6 +3246,7 @@ _.NeverImplemented =
 			un(1, i(108788)),   	-- Unknown
 			un(1, i(108789)),   	-- Unknown
 			un(1, i(109361)),   	-- Unknown
+			un(1, i(157639)),	-- Spiritbreaker Talons
 			un(1, i(105955)),	-- Wrathful Gladiator's Razor (Elite, added in 5.4 ????)
 			un(1, i(109535)),   	-- Unknown
 			un(1, i(109534)),   	-- Unknown
@@ -3348,6 +3349,8 @@ _.NeverImplemented =
 			un(1, i(166889)),	-- Unknown
 			un(1, i(134067)),	-- Unknown
 			un(1, i(167143)),	-- Unknown
+			un(1, i(157630)),	-- Stalwart's longsword
+			un(1, i(157647)),	-- Frost-Etched Runeblade
 			un(1, i(43922)),	-- Honed Lightblade
 			--un(1, i(134067)),	-- Unknown
 			un(1, i(162447)),	-- Marrow Render
