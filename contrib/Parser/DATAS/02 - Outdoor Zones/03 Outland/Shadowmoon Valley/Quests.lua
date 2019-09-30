@@ -832,6 +832,12 @@ _.Zones =
 					["coord"] = { 42.1, 45.0, 104 },
 					["sourceQuests"] = { 10458 },	-- Enraged Spirits of Fire and Earth
 				}),
+				q(10754, {	-- Entry Into the Citadel (removed, old BT key questline)
+					["u"] = 40,
+					["crs"] = { 22037 },	-- Smith Gorlunk
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "i", 31239 },	-- Primed Key Mold
+				}),
 				q(10451, {	-- Escape from Coilskar Cistern
 					["provider"] = { "n", 21027 },	-- Earthmender Wilda
 					["coord"] = { 52.1, 18.8, 104 },
@@ -1315,10 +1321,6 @@ _.Zones =
 					["sourceQuests"] = { 10751 },	-- Breaching the Path
 				}),
 				--[[
-					q(10754, {	-- Entry Into the Citadel (removed, old BT key questline)
-						["u"] = 40,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(11498, {	-- Learning to Fly (REMOVED)
 						["u"] = 40,
 						["races"] = HORDE_ONLY,
