@@ -58,12 +58,15 @@ _.Zones =
 					}),
 					n(-16, {	-- Rares
 						n(155069, {	-- Honeyback Harvester
+							["description"] = "You can participate in Honeyback Harvester events as many times a day as you want, but there is a one-hour cooldown on being able to loot the final jelly left behind after the event ends.  If you can see the vignette star for the Harvester or a treasure icon surrounded by a spiky star, you are eligible for hourly loot.\n\nThe quests that drop from rares are weekly, but the rares may drop jelly even during the one-hour cooldown and even if you have already completed the specific rare's weekly quest.",
 							["coords"] = {
-								{ 25.66, 72.24, 942 },
+								{ 25.6, 73.2, 942 },	-- *
+								{ 33.4, 32.8, 942 },	-- *
+								{ 57.1, 51.2, 942 },	-- *
+								{ 61.8, 30.9, 942 },	-- *
+								{ 66.3, 69.9, 942 },	-- *
+								{ 72.3, 52.2, 942 },	-- *
 								{ 63.01, 21.31, 942 },
-								{ 61.89, 31.95, 942 },
-								{ 33.05, 32.43, 942 },
-								{ 57.17, 51.25, 942 },
 								{ 40.93, 62.14, 942 },
 							},
 							["races"] = ALLIANCE_ONLY,
