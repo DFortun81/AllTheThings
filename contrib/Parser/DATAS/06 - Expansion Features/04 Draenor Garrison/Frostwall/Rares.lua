@@ -5,21 +5,15 @@ _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(590, {	-- Frostwall
-			n(-16, { 	-- Rares
-				n(-103, {	-- Barn
-					["races"] = HORDE_ONLY,
-					["g"] = {
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				n(-16, { 	-- Rares
+					n(-103, {	-- Barn
 						o(239143, {		-- Glass of Warm Milk
-							["groups"] = {
-								i(120309),	-- Pet
-							},
-							["icon"] = "Interface\\Icons\\inv_drink_milk_01",
+							i(120309),	-- Glass of Warm Milk (Pygmy Cow pet)
 						}),
-					},
-				}),
-				n(-107, {	-- Fishing Shack
-					["races"] = HORDE_ONLY,
-					["g"] = {
+					}),
+					n(-107, {	-- Fishing Shack
 						i(118380, {	-- Hightfish Cap
 							["collectible"] = false,
 							["u"] = 15,
@@ -37,15 +31,15 @@ _.ExpansionFeatures =
 								85715,	-- Lunarfall Cavedweller
 							},
 						}),
-						i(112633, {
-							n(81171, {
-								i(46109), 	-- Mount
-								i(23720), 	-- Mount
+						i(112633, {	-- Frostdeep Minnow
+							n(81171, {	-- Frostdeep Cavedweller
+								i(46109), 	-- Sea Turtle
+								i(23720), 	-- Riding Turtle
 							}),
 						}),
-					},
+					}),
 				}),
-			}),
+			},
 		}),	
 	}),
 };

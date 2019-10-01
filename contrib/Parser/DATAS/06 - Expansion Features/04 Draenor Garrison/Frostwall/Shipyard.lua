@@ -99,9 +99,9 @@ _.ExpansionFeatures =
 					}),
 				},
 			--[[ Too mean
-				["groups"] = {
+				["g"] = {
 					i(128302, {	-- Ship: Battleship
-						["groups"] = {
+						["g"] = {
 							follower(512),	-- Algalon's Watch
 							follower(515),	-- Arthas's Downfall
 							follower(545),	-- Boughs of Cenarius
@@ -126,7 +126,7 @@ _.ExpansionFeatures =
 						["collectible"] = false,
 					}),
 					i(126986, {	-- Ship: Carrier
-						["groups"] = {
+						["g"] = {
 							follower(505),	-- Hammer of Justice
 							follower(488),	-- Hoard of Gallywix
 							follower(472),	-- Liadrin's Shield
@@ -151,7 +151,7 @@ _.ExpansionFeatures =
 						["collectible"] = false,
 					}),
 					i(128303, {	-- Ship: Destroyer
-						["groups"] = {
+						["g"] = {
 							follower(564),	-- Bad Juju
 							follower(511),	-- Bladefist's Undoing
 							follower(473),	-- Durotan's Pride
@@ -177,7 +177,7 @@ _.ExpansionFeatures =
 						["collectible"] = false,
 					}),
 					i(128301, {	-- Ship: Submarine
-						["groups"] = {
+						["g"] = {
 							follower(518),	-- Aviana's Feather
 							follower(559),	-- Brgrggrgl Mark II
 							follower(521),	-- Cheap Shot
@@ -202,7 +202,7 @@ _.ExpansionFeatures =
 						["collectible"] = false,
 					}),
 					i(127135, {	-- Ship: Transport
-						["groups"] = {
+						["g"] = {
 							follower(579),	-- A Free Kill
 							follower(578),	-- Bonus Roll
 							follower(575),	-- Booty Bay's Bounty

@@ -4,22 +4,19 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		h(m(590, {	-- Frostwall
-			["groups"] = {
-				{	-- Treasure Chest
-					["npcID"] = -212,	-- Treasure Chest
-					["groups"] = {
-						{	-- Lady Sena's Other Materials Sash
-							["objectID"] = 231064,
-							["questID"] = 34937,
-							["coord"] = { 74.7, 56.8, 590 },
-							["g"] = {
-								currency(824),	-- Garrison Resources
-							},
+		m(590, {	-- Frostwall
+			n(-212, {	-- Treasure Chest
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					o(231064, {	-- Lady Sena's Other Materials Sash
+						["questID"] = 34937,
+						["coord"] = { 74.7, 56.8, 590 },
+						["g"] = {
+							currency(824),	-- Garrison Resources
 						},
-					},
+					}),
 				},
-			},
-		})),	
+			}),
+		}),	
 	}),
 };

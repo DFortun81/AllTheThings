@@ -9,8 +9,8 @@ _.ExpansionFeatures =
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					ach(10365, {	-- A Frightening Friend
-						["description"] = "Halloween Decorations must be up in a Tier 3 garrison.",
 						["coord"] = { 70.71, 90.21, 590 },	-- Pepe Location (Horde)
+						["description"] = "Halloween Decorations must be up in a Tier 3 garrison.",
 					}),
 					ach(9630, 9248),	-- Defender of Draenor [A] / [H]
 					ach(9928, 9901, {		-- Don't Call Me Junior (Horde)
@@ -82,17 +82,14 @@ _.ExpansionFeatures =
 						ach(9126),		-- Master Draftsman (40)
 						ach(9125),		-- Draftsman (20)
 					}),
-					{	-- In Pursuit of Gul'dan (Horde) (Garrison)
-						-- Note!! Spans 3 zones Garrison, Tanaan Jungle, and Talador.
-						["achievementID"] = 10074,	-- In Pursuit of Gul'dan (Horde) (Garrison)
+					ach(10074, {	-- In Pursuit of Gul'dan (Horde) (Garrison)
 						["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 						["g"] = {
-							{	-- All Hands On Deck
+							crit(1, {	-- All Hands On Deck
 								["achievementID"] = 10074,	-- In Pursuit of Gul'dan (Horde) (Garrison)
-								["criteriaID"] = 1,		-- All Hands On Deck
-							},
+							}),
 						},
-					},
+					}),
 					ach(9097, {		-- Keepin' Busy
 						crit(1),		-- Mine
 						crit(2),		-- Fishing Shack
@@ -161,13 +158,13 @@ _.ExpansionFeatures =
 							ach(9107),		-- Follow the Leader (5)
 						}),
 						ach(9129, {		-- Filling the Ranks (20 - lvl 100)
-							["groups"] = {
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["g"] = {
 								a(i(111967)),	-- Dwarven Bunker, Level 3 [Blueprints]
 								h(i(116186)),	-- War Mill, Level 3 [Blueprints]
 								ach(9111),		-- Raising the Bar (10 - lvl 100)
 								ach(9110),		-- Following Up (1 - lvl 100)
 							},
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 						ach(9243, {		-- Item Level Force (20 - lvl 650)
 							ach(9213),		-- Item Level Army (10 - lvl 650)
@@ -199,10 +196,10 @@ _.ExpansionFeatures =
 							title(265),		-- Worgen Hunter
 						}),
 						ach(9495, {		-- The Bone Collector
-							["groups"] = {
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["g"] = {
 								i(111981),		-- Gladiator's Sanctum, Level 3 [Blueprints]
 							},
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 						ach(9508, {	-- Warlord of Draenor (Horde) achievements used instead of criteria as criteria are behaving strangely with debug mode on
 							title(269),		-- ,Warlord of Draenor
@@ -218,7 +215,8 @@ _.ExpansionFeatures =
 					}),
 					n(-126, {	-- Goblin Workshop
 						ach(9527, {		-- Terrific Technology
-							["groups"] = {
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["g"] = {
 								a(i(111985)),	-- Gnomish Gearworks, Level 3 [Blueprints]
 								h(i(116201)),	-- Goblin Workshop, Level 3 [Blueprints]
 								crit(1),		-- Robo-Rooster
@@ -231,28 +229,28 @@ _.ExpansionFeatures =
 								crit(8),		-- XD-57 "Bullseye" Guided Rocket
 								crit(9),		-- Paint Target
 							},
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 					}),
 					n(-110, {	-- Herb Garden
 						ach(9454, {		-- Draenic Seed Collector
-							["groups"] = {
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["g"] = {
 								i(111997),	-- Herb Garden, Level 3
 							},
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 					}),
 					n(-127, {	-- Frostwall Mines
 						ach(9453, {		-- Draenic Stone Collector
-							["groups"] = {
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["g"] = {
 								i(116249),	-- Frostwall Mines, Level 3
 							},
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 					}),
 					n(-128, { 	-- Frostwall Tavern
 						ach(9703, {		-- Stay Awhile and Listen
-							["groups" ] = {
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["g"] = {
 								a(i(109065)),	-- Lunarfall Inn, Level 3 [Blueprints]
 								h(i(116432)),	-- Frostwall Tavern, Level 3 [Blueprints]
 								crit(1),		-- Cro's Revenge (H Bloodmaul Slag Mines - Gug'rokk)
@@ -276,7 +274,6 @@ _.ExpansionFeatures =
 								crit(19),		-- For the Birds (H Everbloom - Yalnu)
 								crit(20),		-- Cold Steel (H Grimrail Depot - Skylord Tovra)
 							},
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 					}),
 					n(-10040, {	-- Shipyard
@@ -307,15 +304,15 @@ _.ExpansionFeatures =
 					}),
 					n(-129, {	-- Spirit Lodge
 						ach(9497, {		-- Finding Your Waystones
-							["groups"] = {
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["g"] = {
 								a(i(109063)),	-- Mage Tower, Level 3 [Blueprints]
 								h(i(116197)),	-- Spirit Lodge, Level 3 [Blueprints]
 							},
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 					}),
 					n(-99, { 	-- Stables
-						["groups"] = {
+						["g"] = {
 							ach(9705, {	-- Advanced Husbandry (Horde)
 								i(116668),		-- Armored Frostboar
 								crit(1),		-- Maimclaw Killed
@@ -326,7 +323,8 @@ _.ExpansionFeatures =
 								crit(6),		-- Karak Killed
 							}),
 							ach(9526, {	-- Master of Mounts
-								["groups"] = {
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+								["g"] = {
 									i(112003),		-- Stables, Level 3 [Blueprints]
 									crit(1),		-- Wolf Trained
 									crit(2),		-- Talbuk Trained
@@ -343,7 +341,6 @@ _.ExpansionFeatures =
 										crit(6),		-- Entangling an Elekk
 									}),
 								},
-								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							}),
 							ach(9706, {	-- The Stable Master (Horde)
 								i(116781),		-- Armored Frostwolf

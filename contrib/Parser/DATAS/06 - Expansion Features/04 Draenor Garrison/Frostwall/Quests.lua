@@ -146,11 +146,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					garrisonBuilding(133, {	-- Barn (rank 1: 24, rank 2: 25, rank 3: 133)
-						{	-- Feeding An Army
-							["questID"] = 36344,
+						q(36344, {	-- Feeding An Army
 							["provider"] = { "n", 85048 },	-- Farmer Lok'lub
 							["races"] = HORDE_ONLY,
-						},
+						}),
 					}),
 					garrisonBuilding(28,  {	-- Barracks (rank 1: 26, rank 2: 27, rank 3: 28)
 						q(37070, {	-- Power of the Nether
@@ -227,9 +226,8 @@ _.ExpansionFeatures =
 								}),
 							}
 						}),
-						q(37182, {	-- Scrying Hard or Hardly Scrying(H)--Seems to count both Horde/Alli when you do one.
+						q(37182, {	-- Scrying Hard or Hardly Scrying(H)
 							["provider"] = { "n", 86946 },	-- Outcast Talonpriest(Talonpriest Ishaal)
-							--["altQuestID"] = 37137,	-- Scrying Hard or Hardly Scrying(A)
 							["g"] = {
 								spell(174927, {	-- Ishaal Perk: Courier Raven
 									["collectible"] = false,
@@ -244,8 +242,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					garrisonBuilding(135, {	-- Fishing Shack (rank 1: 64, rank 2: 134, rank 3: 135)
-						{	-- Abyssal Gulper Eel
-							["questID"] = 35075,
+						q(35075, {	-- Abyssal Gulper Eel
 							["provider"] = { "n", 79892 },	-- Mak'jin
 							["coord"] = { 38.0, 72.2, 590 },
 							["isDaily"] = true,
@@ -260,9 +257,8 @@ _.ExpansionFeatures =
 									i(45992),	-- Jeweled Fishing Pole
 								}),
 							},
-						},
-						{	-- Blackwater Whiptail
-							["questID"] = 35074,
+						}),
+						q(35074, {	-- Blackwater Whiptail
 							["provider"] = { "n", 79892 },	-- Mak'jin
 							["coord"] = { 38.0, 72.2, 590 },
 							["isDaily"] = true,
@@ -271,9 +267,8 @@ _.ExpansionFeatures =
 							["g"] = {
 								i(112623),	-- Pack of Fishing Supplies
 							},
-						},
-						{	-- Blind Lake Sturgeon
-							["questID"] = 35073,
+						}),
+						q(35073, {	-- Blind Lake Sturgeon
 							["provider"] = { "n", 79892 },	-- Mak'jin
 							["coord"] = { 38.0, 72.2, 590 },
 							["isDaily"] = true,
@@ -282,9 +277,8 @@ _.ExpansionFeatures =
 							["g"] = {
 								i(112623),	-- Pack of Fishing Supplies
 							},
-						},
-						{	-- Fat Sleeper
-							["questID"] = 35072,
+						}),
+						q(35072, {	-- Fat Sleeper
 							["provider"] = { "n", 79892 },	-- Mak'jin
 							["coord"] = { 38.0, 72.2, 590 },
 							["isDaily"] = true,
@@ -293,9 +287,8 @@ _.ExpansionFeatures =
 							["g"] = {
 								i(112623),	-- Pack of Fishing Supplies
 							},
-						},
-						{	-- Fire Ammonite
-							["questID"] = 35066,
+						}),
+						q(35066, {	-- Fire Ammonite
 							["provider"] = { "n", 79892 },	-- Mak'jin
 							["coord"] = { 38.0, 72.2, 590 },
 							["isDaily"] = true,
@@ -304,9 +297,8 @@ _.ExpansionFeatures =
 							["g"] = {
 								i(112623),	-- Pack of Fishing Supplies
 							},
-						},
-						{	-- Jawless Skulker
-							["questID"] = 35071,
+						}),
+						q(35071, {	-- Jawless Skulker
 							["provider"] = { "n", 79892 },	-- Mak'jin
 							["coord"] = { 38.0, 72.2, 590 },
 							["isDaily"] = true,
@@ -315,14 +307,13 @@ _.ExpansionFeatures =
 							["g"] = {
 								i(112623),	-- Pack of Fishing Supplies
 							},
-						},
-						{	-- Looking For Help
-							["questID"] = 34758,
+						}),
+						q(34758, {	-- Looking For Help
 							["provider"] = { "n", 79892 },	-- Mak'jin
 							["coord"] = { 38.1, 72.2, 590 },
 							["races"] = HORDE_ONLY,
 							["requireSkill"] = 356,	-- Fishing
-						},
+						}),
 					}),
 					garrisonBuilding(36,  {	-- Frostwall Tavern (rank 1: 34, rank 2: 35, rank 3: 36)
 						i(119036, {	-- Box of Storied Treasures [4]
@@ -735,44 +726,41 @@ _.ExpansionFeatures =
 								i(109953),	-- Windseal Necklace
 							},
 						}),
-						q(37228, {	-- A Fruitful Proposition			
-							["g"] = {
-								i(119037),	-- Supply of Storied Rarities
-							},		
-							["provider"] = { "n", 87991 },	-- Cro Threadstrong	
+						q(37228, {	-- A Fruitful Proposition
+							["provider"] = { "n", 87991 },	-- Cro Threadstrong
 							["sourceQuests"] = { 37152 },	-- Cro's Revenge
-							["modID"] = 2,
 							["repeatable"] = true,
-						}),	
-						q(37237, {	-- A Hero's Quest is Never Complete			
 							["g"] = {
 								i(119037),	-- Supply of Storied Rarities
 							},
+						}),
+						q(37237, {	-- A Hero's Quest is Never Complete
 							["provider"] = { "n", 88001 },	-- Maximillian of Northshire
 							["sourceQuests"] = { 37162 },	-- Damsels and Dragons
-							["modID"] = 2,
 							["repeatable"] = true,
-						}),
-						q(37235, {	-- A Plea to the Sky			
 							["g"] = {
 								i(119037),	-- Supply of Storied Rarities
 							},
+						}),
+						q(37235, {	-- A Plea to the Sky
 							["provider"] = { "n", 87999 },	--  Skylord Omnuron
 							["sourceQuests"] = { 37159 },	-- Aviana's Request
-							["modID"] = 2,
 							["repeatable"] = true,
-						}),
-						q(37243, {	-- An Axe to Grind			
 							["g"] = {
 								i(119037),	-- Supply of Storied Rarities
-							},	
+							},
+						}),
+						q(37243, {	-- An Axe to Grind
 							["provider"] = { "n", 88007 },	-- Gamon
 							["sourceQuests"] = { 37160 },	--  Cleaving Time
-							["modID"] = 2,
 							["repeatable"] = true,
+							["g"] = {
+								i(119037),	-- Supply of Storied Rarities
+							},
 						}),
 						q(37167, {	-- And No Maces!
-							["g"] = {							
+							["provider"] = { "n", 88006 },	-- Lonika Stillblade
+							["g"] = {
 								i(118924, {	-- Cache of Arms
 									i(114073, {	-- Turbulent Hood
 										i(114448),	-- Fireflash Hood
@@ -801,24 +789,24 @@ _.ExpansionFeatures =
 									}),
 								}),
 							},
-							["provider"] = { "n", 88006 },	-- Lonika Stillblade
 						}),
 						q(37159, {	-- Aviana's Request
-							["group"] = {
+							["provider"] = { "n", 87999 },	--  Skylord Omnuron
+							["g"] = {
 								i(119093),	-- Aviana's Feather
 							},
-							["provider"] = { "n", 87999 },	--  Skylord Omnuron
 						}),
-						q(37230, {	-- Bloody Expensive			
-							["g"] = {
-								i(119037),	-- Supply of Storied Rarities
-							},	
+						q(37230, {	-- Bloody Expensive
 							["provider"] = { "n", 87994 },	--  Moroes
 							["sourceQuests"] = { 37157 },	-- Feeling A Bit Morose
-							["modID"] = 2,
 							["repeatable"] = true,
+							["g"] = {
+								i(119037),	-- Supply of Storied Rarities
+							},
 						}),
 						q(37145, { 	-- Budd's Gambit
+							["provider"] = { "n", 88017 },	-- Budd
+							["repeatable"] = true,
 							["g"] = {
 								i(119041, {	-- Strongbox of Mysterious Treasures
 									i(109829),	-- Belt of Burning Focus
@@ -907,93 +895,89 @@ _.ExpansionFeatures =
 									i(109877),	-- Verdant Plate Wristguards
 								}),
 							},
-							["provider"] = { "n", 88017 },	-- Budd
-							["modID"] = 2,
-							["repeatable"] = true,
 						}),
 						q(37165, {	-- Cenarion Concerns
-							["g"]  = {
-								i(118935),	-- Ever-Blooming Frond 
-							},
 							["provider"] = { "n", 88004 },	--  Zen'kiki
+							["g"]  = {
+								i(118935),	-- Ever-Blooming Frond
+							},
 						}),
 						q(37160, {	-- Cleaving Time
+							["provider"] = { "n", 88007 },	-- Gamon
 							["g"] = {
 								i(118937), 	-- Gamon's Braid
-							},	
-							["provider"] = { "n", 88007 },	-- Gamon
-						}),	
+							},
+						}),
 						q(37151, {	-- Cold Steel
+							["provider"] = { "n", 88026 },	-- John J. Keeshan
 							["g"] = {
 								i(118918), 	-- Bloody Bandanna
 							},
-							["provider"] = { "n", 88026 },	-- John J. Keeshan
-						}),	
+						}),
 						q(37209, {	-- Cold Steel Part II
+							["provider"] = { "n", 88026 },	-- John J. Keeshan
+							["sourceQuests"] = { 37151 },	-- Cold Steel
+							["repeatable"] = true,
 							["g"] = {
 								i(119036), 	-- Box of Storied Treasures
 							},
-							["provider"] = { "n", 88026 },	-- John J. Keeshan
-							["sourceQuests"] = { 37151 },	-- Cold Steel
-							["modID"] = 2,
-							["repeatable"] = true,
 						}),
 						q(37152, {	-- Cro's Revenge
+							["provider"] = { "n", 87991 },	-- Cro Threadstrong
 							["g"] = {
 								i(119083), 	-- Fruit Basket
-							},	
-							["provider"] = { "n", 87991 },	-- Cro Threadstrong
+							},
 						}),
 						q(37162, {	-- Damsels and Dragons
+							["provider"] = { "n", 88001 },	-- Maximillian of Northshire
 							["g"] = {
 								i(118927),	-- Maximillian's Laundry
 							},
-							["provider"] = { "n", 88001 },	-- Maximillian of Northshire
 						}),
 						q(37161, {	-- Family Traditions
+							["provider"] = { "n", 88000 },	--  Finkle Einhorn
 							["g"] = {
 								i(118926),	-- Huge Pile of Skins
-							},	
-							["provider"] = { "n", 88000 },	--  Finkle Einhorn
+							},
 						}),
-						q(37239, {	-- Fate of the Fallen			
+						q(37239, {	-- Fate of the Fallen
+							["provider"] = { "n", 88003 },	--  Cowled Ranger
+							["sourceQuests"] = { 37164 },	-- The Huntress
+							["repeatable"] = true,
 							["g"] = {
 								i(119037), 	-- Supply of Storied Rarities
 							},
-							["provider"] = { "n", 88003 },	--  Cowled Ranger
-							["sourceQuests"] = { 37164 },	-- The Huntress
-							["modID"] = 2,
-							["repeatable"] = true,
 						}),
 						q(37157, {	-- Feeling A Bit Morose
-							["g"] = {
-								i(119092),	-- Moroes' Famous Polish 
-							},
 							["provider"] = { "n", 87994 },	-- Moroes <Tower Steward>
-						}),	
+							["g"] = {
+								i(119092),	-- Moroes' Famous Polish
+							},
+						}),
 						q(37244, {	-- Flamefly Trap
+							["provider"] = { "n", 88024 },	-- Oralius
+							["sourceQuests"] = { 37148 },	-- Oralius' Adventure
+							["repeatable"] = true,
 							["g"] = {
 								i(119036), 	-- Box of Storied Treasures
 							},
-							["provider"] = { "n", 88024 },	-- Oralius
-							["sourceQuests"] = { 37148 },	-- Oralius' Adventure
-							["modID"] = 2,
-							["repeatable"] = true,
 						}),
 						q(37150, {	-- For the Birds
+							["provider"] = { "n", 88025 },	-- Mylune
 							["g"] = {
 								i(118921),	-- Everbloom Peachick
 							},
-							["provider"] = { "n", 88025 },	-- Mylune
 						}),
 						q(37179, {	-- For the Children!
+							["provider"] = { "n", 88009 },	-- Millhouse Manastorm
 							["g"] = {
-								i(118938),	-- Manastorm's Duplicator 
+								i(118938),	-- Manastorm's Duplicator
 								follower(455),	-- Millhouse Manastorm
 							},
-							["provider"] = { "n", 88009 },	-- Millhouse Manastorm
 						}),
 						q(37146, {	-- Go Fetch
+							["provider"] = { "n", 88022 },	-- Johnny Awesome
+							["repeatable"] = true,
 							["g"] = {
 								i(119042, {	-- Crate of Valuable Treasures
 									i(109957),	-- Alc's Pendant of Fiery Dreams
@@ -1171,51 +1155,44 @@ _.ExpansionFeatures =
 									i(109953),	-- Windseal Necklace
 								}),
 							},
-							["provider"] = { "n", 88022 },	-- Johnny Awesome
-							["modID"] = 2,
-							["repeatable"] = true,
 						}),
 						q(37158, { 	-- Gloriously Incandescent
+							["provider"] = { "n", 87998 },	--  Sunwalker Dezco
 							["g"] = {
 								i(118928),	-- Faintly-Sparkling Cache
-							},	
-							["provider"] = { "n", 87998 },	--  Sunwalker Dezco
+							},
 						}),
-						q(37242, {	-- Learning Is Painful			
-							["g"] = {
-								i(119037), 	-- Supply of Storied Rarities
-							},	
+						q(37242, {	-- Learning Is Painful
 							["provider"] = { "n", 88006 },	--  Lonika Stillblade
 							["sourceQuests"] = { 37167 },	-- And No Maces!
-							["modID"] = 2,
 							["repeatable"] = true,
+							["g"] = {
+								i(119037), 	-- Supply of Storied Rarities
+							},
 						}),
-						q(37241, {	-- Lessons of the Past			
+						q(37241, {	-- Lessons of the Past
+							["provider"] = { "n", 88005 },	--  Lorewalker Cho
+							["sourceQuests"] = { 37166 },	-- Titanic Evolution
+							["repeatable"] = true,
 							["g"] = {
 								i(119037),	-- Supply of Storied Rarities
 							},
-							["provider"] = { "n", 88005 },	--  Lorewalker Cho
-							["sourceQuests"] = { 37166 },	-- Titanic Evolution
-							["modID"] = 2,
-							["repeatable"] = true,
 						}),
-						q(37229, {	-- Like A Dwarf In A Mine			
-							["g"] = {
-								i(119037),	-- Supply of Storied Rarities
-							},		
+						q(37229, {	-- Like A Dwarf In A Mine
 							["provider"] = { "n", 87992 },	--  Olaf
 							["sourceQuests"] = { 37153 },	-- Time-Lost Vikings
-							["modID"] = 2,
 							["repeatable"] = true,
-						}),
-						q(37236, {	-- Like Father, Like Son			
 							["g"] = {
 								i(119037),	-- Supply of Storied Rarities
-							},	
+							},
+						}),
+						q(37236, {	-- Like Father, Like Son
 							["provider"] = { "n", 88000 },	--  Finkle Einhorn
 							["sourceQuests"] = { 37161 },	-- Family Traditions
-							["modID"] = 2,
 							["repeatable"] = true,
+							["g"] = {
+								i(119037),	-- Supply of Storied Rarities
+							},
 						}),
 						q(37142, {	-- Ogre Ancestry
 							["provider"] = { "n", 88013 },	-- Lunk
@@ -1311,36 +1288,36 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(37148, {	-- Oralius' Adventure
+							["provider"] = { "n", 88024 },	-- Oralius
 							["g"] = {
 								i(118922),	-- Oralius' Whispering Crystal
 							},
-							["provider"] = { "n", 88024 },	-- Oralius
 						}),
 						q(37227, {	-- Put a Bird on It
+							["provider"] = { "n", 88025 },	-- Mylune
+							["sourceQuests"] = { 37150 },	-- For the Birds
+							["repeatable"] = true,
 							["g"] = {
 								i(119036), 	-- Box of Storied Treasures
 							},
-							["provider"] = { "n", 88025 },	-- Mylune
-							["sourceQuests"] = { 37150 },	-- For the Birds
-							["modID"] = 2,
-							["repeatable"] = true,
 						}),
-						q(37238, {	-- Secrets of Soulbinding			
-							["g"] = {
-								i(119037),	-- Supply of Storied Rarities
-							},	
+						q(37238, {	-- Secrets of Soulbinding
 							["provider"] = { "n", 88002 },	--  Highlord Darion Mograine
 							["sourceQuests"] = { 37163 },	-- Shadowy Secrets
-							["modID"] = 2,
 							["repeatable"] = true,
+							["g"] = {
+								i(119037),	-- Supply of Storied Rarities
+							},
 						}),
 						q(37163, {	-- Shadowy Secrets
-							["g"] = {
-								i(119003),	-- Void Totem 
-							},
 							["provider"] = { "n", 88002 },	-- Highlord Darion Mograine
+							["g"] = {
+								i(119003),	-- Void Totem
+							},
 						}),
 						q(37147, {	-- Sky Dancers
+							["provider"] = { "n", 88023 },	-- Taoshi
+							["repeatable"] = true,
 							["g"] = {
 								i(119043, {	-- Trove of Smoldering Treasures
 									i(109957),	-- Alc's Pendant of Fiery Dreams
@@ -1528,105 +1505,96 @@ _.ExpansionFeatures =
 									i(109877),	-- Verdant Plate Wristguards
 								}),
 							},
-							["provider"] = { "n", 88023 },	-- Taoshi
-							["modID"] = 2,
-							["repeatable"] = true,
 						}),
-						q(37232, {	-- Soulcarver Voss			
-							["g"] = {
-								i(119037), 	-- Supply of Storied Rarities
-							},	
+						q(37232, {	-- Soulcarver Voss
 							["provider"] = { "n", 87996 },	--  Lillian Voss
 							["sourceQuests"] = { 37156 },	-- The Soulcutter
-							["modID"] = 2,
 							["repeatable"] = true,
-						}),
-						q(37155, { 	-- The Brass Compass
-							["g"] = {
-								i(118925),	-- Plundered Booty
-							},	
-							["provider"] = { "n", 87995 },	--  Fleet Master Seahorn
-						}),
-						q(37154, {	-- The Cure For Death
-							["g"] = {
-								i(118931),	-- Leonid's Bag of Supplies
-							},	
-							["provider"] = { "n", 87997 },	--  Leonid Barthalomew the Revered
-						}),
-						q(37234, {	-- The Dark Within			
 							["g"] = {
 								i(119037), 	-- Supply of Storied Rarities
-							},	
+							},
+						}),
+						q(37155, { 	-- The Brass Compass
+							["provider"] = { "n", 87995 },	--  Fleet Master Seahorn
+							["g"] = {
+								i(118925),	-- Plundered Booty
+							},
+						}),
+						q(37154, {	-- The Cure For Death
+							["provider"] = { "n", 87997 },	--  Leonid Barthalomew the Revered
+							["g"] = {
+								i(118931),	-- Leonid's Bag of Supplies
+							},
+						}),
+						q(37234, {	-- The Dark Within
 							["provider"] = { "n", 87998 },	--  Sunwalker Dezco
 							["sourceQuests"] = { 37158 },	-- Gloriously Incandescent
-							["modID"] = 2,
 							["repeatable"] = true,
+							["g"] = {
+								i(119037), 	-- Supply of Storied Rarities
+							},
 						}),
 						q(37164, {	-- The Huntresses
+							["provider"] = { "n", 88003 },	--  Cowled Ranger
 							["g"] = {
 								i(118923),	-- Sentinel's Companion
 							},
-							["provider"] = { "n", 88003 },	--  Cowled Ranger
 						}),
-						q(37240, {	-- The Leaf-Reader			
-							["g"] = {
-								i(119037), 	-- Supply of Storied Rarities
-							},	
+						q(37240, {	-- The Leaf-Reader
 							["provider"] = { "n", 88004 },	--  Zen'kiki
 							["sourceQuests"] = { 37165 },	-- Cenarion Concerns
-							["modID"] = 2,
 							["repeatable"] = true,
-						}),
-						q(37231, {	-- The Search Continues			
 							["g"] = {
-								i(119037),	-- Supply of Storied Rarities
-							},	
+								i(119037), 	-- Supply of Storied Rarities
+							},
+						}),
+						q(37231, {	-- The Search Continues
 							["provider"] = { "n", 87995 },	--  Fleet Master Seahorn
 							["sourceQuests"] = { 37155 },	-- The Brass Compass
-							["modID"] = 2,
 							["repeatable"] = true,
+							["g"] = {
+								i(119037),	-- Supply of Storied Rarities
+							},
 						}),
 						q(37156, {	-- The Soulcutter
+							["provider"] = { "n", 87996 },	--  Lillian Voss
 							["g"] = {
 								i(119039),	-- Lilian's Warning Sign
 							},
-							["provider"] = { "n", 87996 },	--  Lillian Voss
 						}),
 						q(37149, {	-- The Void-Gate
+							["provider"] = { "n", 88027 },	-- Impsy
 							["g"] = {
 								i(118936),	-- Manual of Void-Calling
 							},
-							["provider"] = { "n", 88027 },	-- Impsy
 						}),
 						q(37153, {	-- Time-Lost Vikings
+							["provider"] = { "n", 87992 },	--  Olaf
 							["g"] = {
 								i(118929),	-- Sack of Mined Ore
 							},
-							["provider"] = { "n", 87992 },	--  Olaf
 						}),
 						q(37166, {	-- Titanic Evolution
+							["provider"] = { "n", 88005 },	--  Lorewalker Cho
 							["g"] = {
 								i(118930),	-- Bag of Everbloom Herbs
 							},
-							["provider"] = { "n", 88005 },	--  Lorewalker Cho
 						}),
-						q(37233, {	-- Vessel of Virtue			
-							["g"] = {
-								i(119037),	-- Supply of Storied Rarities
-							},	
+						q(37233, {	-- Vessel of Virtue
 							["provider"] = { "n", 87997 },	--  Leonid Barthalomew the Revered
 							["sourceQuests"] = { 37154 },	-- The Cure For Death
-							["modID"] = 2,
 							["repeatable"] = true,
+							["g"] = {
+								i(119037),	-- Supply of Storied Rarities
+							},
 						}),
 						q(37245, {	-- Whispers in the Darkness
+							["provider"] = { "n", 88027 },	-- Impsy
+							["sourceQuests"] = { 37149 },	-- The Void-Gate
+							["repeatable"] = true,
 							["g"] = {
 								i(119036),	-- Box of Storied Treasures
 							},
-							["provider"] = { "n", 88027 },	-- Impsy
-							["sourceQuests"] = { 37149 },	-- The Void-Gate
-							["modID"] = 2,
-							["repeatable"] = true,
 						}),
 					}),
 					garrisonBuilding(93,  {	-- Enchanter's Study (rank 1: 93, rank 2: 125, rank 3: 126)
@@ -1650,428 +1618,351 @@ _.ExpansionFeatures =
 						}),
 					}),
 					garrisonBuilding(138, {	-- Lumber Mill (rank 1: 40, rank 2: 41, rank 3: 138)
-						{	-- Easing into Lumberjacking
-							["questID"] = 36137,
+						q(36137, {	-- Easing into Lumberjacking
 							["provider"] = { "n", 84247 },	-- Lumber Lord Oktron <Work Orders>
-						},
-						{	-- Turning Timber into Profit
-							["questID"] = 36138,
-							["sourceQuest"] = 36137,	-- Easing into Lumberjacking
-							["provider"] = { "n", 84247 },	-- Lumber Lord Oktron <Work Orders>
-						},
-						{	-- Phylarch the Evergreen
-							["questID"] = 36296,
+						}),
+						q(36296, {	-- Phylarch the Evergreen
 							["description"] = "Chance to spawn when you cut down trees with a rank 3 lumbermill in your garrison. After spawning 3 times, he will become your follower.",
-							["groups"] = {
+							["g"] = {
 								follower(194),	-- Phylarch the Evergreen
 							},
-						},
-						{	-- Reduction in Force
-							["questID"] = 36449,
+						}),
+						q(36449, {	-- Reduction in Force
 							["provider"] = { "n", 85414 },	-- Alexi Barov <Barov Industries>
 							["g"] = {
 								i(116154),	-- Barov Lumberjack Caller
 							},
-						},
-						{	-- Sharper Blades, Bigger Timber
-							["questID"] = 36142,
+						}),
+						q(36142, {	-- Sharper Blades, Bigger Timber
 							["provider"] = { "n", 84247 },	-- Lumber Lord Oktron <Work Orders>
-						},
-						{	-- Subversive Infestation
-							["questID"] = 36813,
+						}),
+						q(36813, {	-- Subversive Infestation
 							["provider"] = { "n", 84889 },	-- Phylarch the Evergreen
 							["description"] = "This Quest requires a Level 3 Lumber Mill as well as the Follower Phylarch the Green either active or attached to the Lumber Mill.",
 							["g"] = {
 								i(117398),	-- Everbloom Seed Pouch
 							},
-						},
-						{	-- The Rise and Fall of Barov Industries: Alexi Barov
-							["questID"] = 36427,
+						}),
+						q(36427, {	-- The Rise and Fall of Barov Industries: Alexi Barov
 							["provider"] = { "n", 85379 },	-- Alexi Barov <Barov Industries>
 							["description"] = "Alexi Barov is found at 51.30, 61.98 in Gorgrond. He is stuck under a log and it seems you need lumber mill to be able to get him out of there.",
 							["g"] = {
 								follower(195),	-- Weldon Barov / Alexi Barov
 							},
-						},
-						{	-- Tree-i-cide
-							["questID"] = 36182,
+						}),
+						q(36182, {	-- Tree-i-cide
 							["provider"] = { "n", 84247 },	-- Lumber Lord Oktron <Work Orders>
-						},
-						{	-- Petrified Ancient
-							["npcID"] = 85199,
+						}),
+						q(36138, {	-- Turning Timber into Profit
+							["sourceQuest"] = 36137,	-- Easing into Lumberjacking
+							["provider"] = { "n", 84247 },	-- Lumber Lord Oktron <Work Orders>
+						}),
+						n(85199, {	-- Petrified Ancient
 							["description"] = "These will appear as nodes on your mini-map as trees do after you have built your Level 2 Lumber Mill.",
 							["g"] = {
-								{
-									["itemID"] = 115467,	-- Barkskin Tome
-									["questID"] = 36385,	-- Legacy of the Ancients
+								q(36385, {	-- Legacy of the Ancients
+									["provider"] = { "i", 115467 },	-- Barkskin Tome
 									["g"] = {
 										i(115506),	-- Treessassin's Guise
 									},
-								},
+								}),
 							},
-						},
+						}),
 					}),
 					garrisonBuilding(130, {	-- Scribe's quarters (rank 1: 95, rank 2: 129, rank 3: 130)
-						{	-- Your First Inscription Work Order
-							["questID"] = 37572,
+						q(37572, {	-- Your First Inscription Work Order
 							["provider"] = { "n", 79829 },	-- Urgra
-						},
+						}),
 					}),
 					garrisonBuilding(67,  {	-- Stables (rank 1: 65, rank 2: 66, rank 3: 67)
-						{	-- Besting a Boar
-							["questID"] = 36944,
+						q(36944, {	-- Besting a Boar
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
+						}),
 						q(36346, {	-- Bigger Trap, Better Rewards
 							["provider"] = { "n", 85048 },	-- Farmer Lok'lub
 							["races"] = HORDE_ONLY,
 						}),
-						{	-- Boar Training: Bulbapore
-							["questID"] = 37034,
+						q(37034, {	-- Boar Training: Bulbapore
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Boar Training: Cruel Ogres
-							["questID"] = 37035,
+						}),
+						q(37035, {	-- Boar Training: Cruel Ogres
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Boar Training: Darkwing Roc
-							["questID"] = 37036,
+						}),
+						q(37036, {	-- Boar Training: Darkwing Roc
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Boar Training: Gezz'ran
-							["questID"] = 37033,
+						}),
+						q(37033, {	-- Boar Training: Gezz'ran
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Boar Training: Ironbore
-							["questID"] = 37039,
+						}),
+						q(37039, {	-- Boar Training: Ironbore
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Boar Training: Moth of Wrath
-							["questID"] = 37037,
+						}),
+						q(37037, {	-- Boar Training: Moth of Wrath
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Boar Training: Orc Hunters
-							["questID"] = 37040,
+						}),
+						q(37040, {	-- Boar Training: Orc Hunters
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Boar Training: Riplash
-							["questID"] = 37032,
+						}),
+						q(37032, {	-- Boar Training: Riplash
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Boar Training: The Garn
-							["questID"] = 37041,
+						}),
+						q(37041, {	-- Boar Training: The Garn
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(116675),	-- Trained Rocktusk
 							},
-						},
-						{	-- Boar Training: Thundercall
-							["questID"] = 37038,
+						}),
+						q(37038, {	-- Boar Training: Thundercall
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Capturing a Clefthoof
-							["questID"] = 36912,
+						}),
+						q(36912, {	-- Capturing a Clefthoof
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Clefthoof Training: Bulbapore
-							["questID"] = 37052,
+						}),
+						q(37052, {	-- Clefthoof Training: Bulbapore
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Clefthoof Training: Cruel Ogres
-							["questID"] = 37053,
+						}),
+						q(37053, {	-- Clefthoof Training: Cruel Ogres
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Clefthoof Training: Darkwing Roc
-							["questID"] = 37054,
+						}),
+						q(37054, {	-- Clefthoof Training: Darkwing Roc
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Clefthoof Training: Gezz'ran
-							["questID"] = 37051,
+						}),
+						q(37051, {	-- Clefthoof Training: Gezz'ran
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Clefthoof Training: Great-Tusk
-							["questID"] = 37048,
+						}),
+						q(37048, {	-- Clefthoof Training: Great-Tusk
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Clefthoof Training: Ironbore
-							["questID"] = 37057,
+						}),
+						q(37057, {	-- Clefthoof Training: Ironbore
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Clefthoof Training: Moth of Wrath
-							["questID"] = 37055,
+						}),
+						q(37055, {	-- Clefthoof Training: Moth of Wrath
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Clefthoof Training: Orc Hunters
-							["questID"] = 37058,
+						}),
+						q(37058, {	-- Clefthoof Training: Orc Hunters
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Clefthoof Training: Rakkiri
-							["questID"] = 37049,
+						}),
+						q(37049, {	-- Clefthoof Training: Rakkiri
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Clefthoof Training: Riplash
-							["questID"] = 37050,
+						}),
+						q(37050, {	-- Clefthoof Training: Riplash
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Clefthoof Training: The Garn
-							["questID"] = 37059,
+						}),
+						q(37059, {	-- Clefthoof Training: The Garn
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(116656),	-- Trained Icehoof
 							},
-						},
-						{	-- Clefthoof Training: Thundercall
-							["questID"] = 37056,
+						}),
+						q(37056, {	-- Clefthoof Training: Thundercall
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Elekk Training: Cruel Ogres
-							["questID"] = 37063,
+						}),
+						q(37063, {	-- Elekk Training: Cruel Ogres
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Elekk Training: Darkwing Roc
-							["questID"] = 37064,
+						}),
+						q(37064, {	-- Elekk Training: Darkwing Roc
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Elekk Training: Ironbore
-							["questID"] = 37067,
+						}),
+						q(37067, {	-- Elekk Training: Ironbore
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Elekk Training: Moth of Wrath
-							["questID"] = 37065,
+						}),
+						q(37065, {	-- Elekk Training: Moth of Wrath
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Elekk Training: Orc Hunters
-							["questID"] = 37068,
+						}),
+						q(37068, {	-- Elekk Training: Orc Hunters
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Elekk Training: The Garn
-							["questID"] = 37069,
+						}),
+						q(37069, {	-- Elekk Training: The Garn
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(116662),	-- Trained Meadowstomper
 							},
-						},
-						{	-- Elekk Training: Thundercall
-							["questID"] = 37066,
+						}),
+						q(37066, {	-- Elekk Training: Thundercall
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Entangling an Elekk
-							["questID"] = 36946,
+						}),
+						q(36946, {	-- Entangling an Elekk
 							["provider"] = { "n", 86979 },	-- Tormak the Scarred
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Requisition a Riverbeast
-							["questID"] = 36945,
+						}),
+						q(36945, {	-- Requisition a Riverbeast
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Riverbeast Training: Bulbapore
-							["questID"] = 37072,
+						}),
+						q(37072, {	-- Riverbeast Training: Bulbapore
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Riverbeast Training: Cruel Ogres
-							["questID"] = 37073,
+						}),
+						q(37073, {	-- Riverbeast Training: Cruel Ogres
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Riverbeast Training: Darkwing Roc
-							["questID"] = 37074,
+						}),
+						q(37074, {	-- Riverbeast Training: Darkwing Roc
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Riverbeast Training: Gezz'ran
-							["questID"] = 37071,
+						}),
+						q(37071, {	-- Riverbeast Training: Gezz'ran
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Riverbeast Training: Ironbore
-							["questID"] = 37077,
+						}),
+						q(37077, {	-- Riverbeast Training: Ironbore
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Riverbeast Training: Moth of Wrath
-							["questID"] = 37075,
+						}),
+						q(37075, {	-- Riverbeast Training: Moth of Wrath
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Riverbeast Training: Orc Hunters
-							["questID"] = 37078,
+						}),
+						q(37078, {	-- Riverbeast Training: Orc Hunters
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Riverbeast Training: The Garn
-							["questID"] = 37079,
+						}),
+						q(37079, {	-- Riverbeast Training: The Garn
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(116676),	-- Trained Riverwallow
 							},
-						},
-						{	-- Riverbeast Training: Thundercall
-							["questID"] = 37076,
+						}),
+						q(37076, {	-- Riverbeast Training: Thundercall
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Talbuk Training: Bulbapore
-							["questID"] = 37097,
+						}),
+						q(37097, {	-- Talbuk Training: Bulbapore
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Talbuk Training: Cruel Ogres
-							["questID"] = 37098,
+						}),
+						q(37098, {	-- Talbuk Training: Cruel Ogres
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Talbuk Training: Darkwing Roc
-							["questID"] = 37099,
+						}),
+						q(37099, {	-- Talbuk Training: Darkwing Roc
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Talbuk Training: Gezz'ran
-							["questID"] = 37096,
+						}),
+						q(37096, {	-- Talbuk Training: Gezz'ran
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Talbuk Training: Great-Tusk
-							["questID"] = 37093,
+						}),
+						q(37093, {	-- Talbuk Training: Great-Tusk
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Talbuk Training: Ironbore
-							["questID"] = 37102,
+						}),
+						q(37102, {	-- Talbuk Training: Ironbore
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Talbuk Training: Moth of Wrath
-							["questID"] = 37100,
+						}),
+						q(37100, {	-- Talbuk Training: Moth of Wrath
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Talbuk Training: Orc Hunters
-							["questID"] = 37103,
+						}),
+						q(37103, {	-- Talbuk Training: Orc Hunters
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Talbuk Training: Rakkiri
-							["questID"] = 37094,
+						}),
+						q(37094, {	-- Talbuk Training: Rakkiri
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Talbuk Training: Riplash
-							["questID"] = 37095,
+						}),
+						q(37095, {	-- Talbuk Training: Riplash
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Talbuk Training: The Garn
-							["questID"] = 37104,
+						}),
+						q(37104, {	-- Talbuk Training: The Garn
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(116774),	-- Trained Silverpelt
 							},
-						},
-						{	-- Talbuk Training: Thundercall
-							["questID"] = 37101,
+						}),
+						q(37101, {	-- Talbuk Training: Thundercall
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Taming a Talbuk
-							["questID"] = 36917,
+						}),
+						q(36917, {	-- Taming a Talbuk
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Teeth of a Predator
-							["questID"] = 37124,
+						}),
+						q(37124, {	-- Teeth of a Predator
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- The Black Claw
-							["questID"] = 37123,
+						}),
+						q(37123, {	-- The Black Claw
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Wolf Training: Cruel Ogres
-							["questID"] = 37105,
+						}),
+						q(37105, {	-- Wolf Training: Cruel Ogres
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Wolf Training: Darkwing Roc
-							["questID"] = 37106,
+						}),
+						q(37106, {	-- Wolf Training: Darkwing Roc
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Wolf Training: Ironbore
-							["questID"] = 37109,
+						}),
+						q(37109, {	-- Wolf Training: Ironbore
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Wolf Training: Moth of Wrath
-							["questID"] = 37107,
+						}),
+						q(37107, {	-- Wolf Training: Moth of Wrath
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Wolf Training: Orc Hunters
-							["questID"] = 37110,
+						}),
+						q(37110, {	-- Wolf Training: Orc Hunters
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Wolf Training: The Garn
-							["questID"] = 37111,
+						}),
+						q(37111, {	-- Wolf Training: The Garn
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(116784),	-- Trained Snarler
 							},
-						},
-						{	-- Wolf Training: Thundercall
-							["questID"] = 37108,
+						}),
+						q(37108, {	-- Wolf Training: Thundercall
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
-						{	-- Wrangling a Wolf
-							["questID"] = 36950,
+						}),
+						q(36950, {	-- Wrangling a Wolf
 							["provider"] = { "n", 87242 },	-- Sage Paluna
 							["races"] = HORDE_ONLY,
-						},
+						}),
 					}),
 					garrisonBuilding(143, {	-- Storehouse (rank 1: 51, rank 2: 142, rank 3: 143)
-						{	-- Lost In Transition
-							["questID"] = 37060,
+						q(37060, {	-- Lost In Transition
 							["provider"] = { "n", 79862 },	-- Yorn Longhoof
 							["races"] = HORDE_ONLY,
-						},
+						}),
 					}),
 					garrisonBuilding(145, {	-- Trading Post (rank 1: 111, rank 2: 144, rank 3: 145)
 						q(37014, {	-- Auctioning for Parts
@@ -2113,37 +2004,213 @@ _.ExpansionFeatures =
 						}),
 					}),
 					garrisonBuilding(10,  {	-- War Mill (rank 1: 8, rank 2: 9, rank 3: 10)
-						{	-- Scraps of Iron
-							["questID"] = 37043,
+						q(37043, {	-- Scraps of Iron
 							["provider"] = { "n", 79815 },	-- Gun'lek
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(118372),	-- Orgrimmar Tabard
 							},
-						},
+						}),
 					}),
-					{	-- All Hands on Deck
-						["questID"] = 38574,
+					q(38574, {	-- All Hands on Deck
 						["provider"] = { "n", 92400 },	-- Vol'jin
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 38573,	-- Nothing Remains
-					},
-					q(34653,  {	-- Arakkoa Exodus
+					}),
+					q(34653, {	-- Arakkoa Exodus
 						["sourceQuests"] = { 35537 },	-- News from Spires of Arak
 						["isBreadcrumb"] = true,
 						["coord"] = { 45.6, 43.2, 590 },
 						["lvl"] = 96,
 						["provider"] = { "n", 78487 },	-- Rokhan
 					}),
-					{	-- Ashran Appearance
-						["questID"] = 36706,
+					q(36706, {	-- Ashran Appearance
 						["provider"] = { "n", 78466 },	-- Gazlowe
 						["coord"] = { 52.4, 53.3, 590 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34775,	-- Mission Probable
-					},
-					{	-- Bringing the Bass
-						["questID"] = 37961,
+					}),
+					q(36692, {	-- Assault on Darktide Roost
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(10, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36697, {	-- Assault on Magnarok
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(3, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36693, {	-- Assault on Mok'gol Watchpost
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(8, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36689, {	-- Assault on Pillars of Fate
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(11, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36667, {	-- Assault on Shattrath Harbor
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(7, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36688, {	-- Assault on Skettis
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(12, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36691, {	-- Assault on Socrethar's Rise
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(9, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36669, {	-- Assault on Stonefury Cliffs
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(2, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36694, {	-- Assault on the Broken Precipice
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(6, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36695, {	-- Assault on the Everbloom Wilds
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(5, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36696, {	-- Assault on the Iron Siegeworks
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(1, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36701, {	-- Assault on the Pit
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(4, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x1000
+						},
+					}),
+					q(37961, {	-- Bringing the Bass
 						["provider"] = { "n", 91072 },	-- Drix Bassbolter
 						["coord"] = { 40.9, 47.8, 590 },
 						["races"] = HORDE_ONLY,
@@ -2160,67 +2227,88 @@ _.ExpansionFeatures =
 								i(122215),	-- Music Roll: Zul'Gurub Voodoo
 							}),
 						},
-					},
-					{	-- Building For Professions
-						["questID"] = 37669,
+					}),
+					q(37669, {	-- Building For Professions
 						["provider"] = { "n", 78466 },	-- Gazlowe
+						["races"] = HORDE_ONLY,
 						["coords"] = {
 							{ 52.4, 53.3, 590 },	-- lvl 1
 							{ 37.6, 50.3, 590 },	-- lvl 3
 						},
-						["races"] = HORDE_ONLY,
-					},
-					{	-- Call of the Archmage
-						["questID"] = 35988,
-						["provider"] = { "n", 83858 },	-- Khadgar's Servant
+					}),
+					q(35988, {	-- Call of the Archmage
 						["u"] = 40,
-					},
-					{	-- Clearing the Garden
-						["questID"] = 34193,
+						["provider"] = { "n", 83858 },	-- Khadgar's Servant
+					}),
+					q(34193, {	-- Clearing the Garden
 						["provider"] = { "n", 81981 },	-- Tarnon
 						["coord"] = { 43.4, 83.2, 590 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 36567,	-- Bigger is Better
 						["g"] = {
-							{	-- Herb Garden lvl 1
-								["buildingID"] = 29,
-							},
-						},
-					},
-					o(232416, {	-- Command Board	-- 233291 and 237022 also valid depending on garrison level
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							q(35557, {	-- The Secrets of Gorgrond
-								["races"] = HORDE_ONLY,
-								["isBreadcrumb"] = true,
-							}),
-							q(36953, {	-- It's a Matter of Strategy
-								["races"] = HORDE_ONLY,
-								["isBreadcrumb"] = true,
-							}),
+							garrisonBuilding(29),	-- Herb Garden lvl 1
 						},
 					}),
-					{	-- Den of Wolves
-						["questID"] = 34379,
+					q(37813, {	-- Death to Amethon!
+						["coord"] = { 40.2, 56.7, 590 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+					}),
+					q(37814, {	-- Death to Gor'thul!
+						["coord"] = { 40.2, 56.7, 590 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+					}),
+					q(37818, {	-- Death to Hivelord Ik'rix!
+						["coord"] = { 40.2, 56.7, 590 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+					}),
+					q(37815, {	-- Death to Nullifier Darkoor!
+						["coord"] = { 40.2, 56.7, 590 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+					}),
+					q(37949, {	-- Death to Nullifier Darkoor!
+						["coord"] = { 40.2, 56.7, 590 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+					}),
+					q(37817, {	-- Death to Tremor!
+						["coord"] = { 40.2, 56.7, 590 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+					}),
+					q(37816, {	-- Death to Undertow!
+						["coord"] = { 40.2, 56.7, 590 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+					}),
+					q(34379, {	-- Den of Wolves
 						["provider"] = { "n", 76411 },	-- Farseer Drek'Thar
 						["coord"] = { 49.7, 49.5, 590 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34775,	-- Mission Probable
-					},
-					{	-- Garrison Campaign: Awakening
-						["questID"] = 36136,
+					}),
+					q(36136, {	-- Garrison Campaign: Awakening
 						["provider"] = { "n", 78487 },	-- Rokhan
 						["races"] = HORDE_ONLY,
-					},
-					{	-- Gems of the Apexis
-						["questID"] = 39175,
+					}),
+					q(39175, {	-- Gems of the Apexis
 						["provider"] = { "n", 78466 },	-- Gazlowe
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 755,	-- Jewelcrafting
 						["g"] = {
 							recipe(187639),	-- Immaculate Versatility Taladite
 						},
-					},
+					}),
 					n(89753, { 	-- High Overlord Saurfang
 						["description"] = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
 						["coord"] = { 40.2, 56.7, 590 },
@@ -2306,7 +2394,7 @@ _.ExpansionFeatures =
 										i(114565),	-- Crimson Carapace Greaves
 										i(114564),	-- Sickened Scale Boots
 										i(114563),	-- Yeti-Hide Boots
-									}),											
+									}),
 									i(114112, {	-- Grandiose Armament
 										i(115327),	-- Grandiose Axe
 										i(115330),	-- Grandiose Dagger
@@ -2523,7 +2611,7 @@ _.ExpansionFeatures =
 							}),
 						},
 					}),
-					n(-152, {	-- Garrison Campaign
+					n(-152,  {	-- Garrison Campaign
 						q(34335, {	-- Garrison Campaign: Crows In The Field
 							["races"] = HORDE_ONLY,
 						}),
@@ -2559,48 +2647,53 @@ _.ExpansionFeatures =
 							["description"] = "Automatically granted upon upgrading your garrison to Rank 3.",
 						}),
 					}),
+					q(36953, {	-- It's a Matter of Strategy
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+						["providers"] = {
+							{ "o", 232416 },	-- Command Board lvl 1
+							{ "o", 233291 },	-- Command Board lvl 2
+							{ "o", 237022 },	-- Command Board lvl 3
+						},
+					}),
 					q(34681, {	-- It's a Matter of Strategy
-						["provider"] = { "n", 78487 },	-- Rokhan
 						["coord"] = { 45.9, 42.7, 590 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 78487 },	-- Rokhan
 						["sourceQuest"] = 36494,	-- News from Talador
 					}),
-					{	-- My Very Own Fortress
-						["questID"] = 36614,
-						["provider"] = { "n", 78466 },	-- Gazlowe
+					q(36614, {	-- My Very Own Fortress
 						["coord"] = { 42.1, 55.5, 590 },	-- Rank 2
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 78466 },	-- Gazlowe
 						["sourceQuest"] = 36567,	-- Bigger is Better
-					},
-					q(38306, {	-- Mystery Notebook
-						["provider"] = { "n", 91072 },	-- Drix Bassbolter
-						["coord"] = { 40.9, 47.8, 590 },
-						["description"] = "Requires Garrison Rank 3.",
-						["races"] = HORDE_ONLY,
-						["lvl"] = 100,
 					}),
-					{	-- New Goods
-						["questID"] = 38427,
-						["provider"] = { "n", 79740 },	-- Warmaster Zog
+					q(38306, {	-- Mystery Notebook
+						["lvl"] = 100,
+						["coord"] = { 40.9, 47.8, 590 },
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 91072 },	-- Drix Bassbolter
+						["description"] = "Requires Garrison Rank 3.",
+					}),
+					q(38427, {	-- New Goods
 						["coord"] = { 39.2, 55.3, 590 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 79740 },	-- Warmaster Zog
 						["description"] = "Requires Garrison Rank 3.",
-					},
-					{	-- Pinchwhistle Gearworks
-						["questID"] = 36862,
-						["altQuestID"] = 35620,
+					}),
+					q(36862, {	-- Pinchwhistle Gearworks
+						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 86614 },	-- Pinchwhistle Gearworks
+						["altQuestID"] = 35620,
+						["sourceQuest"] = 34378,	-- Establish Your Garrison
 						["coords"] = {
 							{ 50.8, 50.7, 590 },	-- lvl 1 garrison
 							{ 46.8, 45.8, 590 },	-- lvl 2 garrison
 						},
+					}),
+					q(37434, {	-- Proving Grounds
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34378,	-- Establish Your Garrison
-					},
-					{	-- Proving Grounds
-						["questID"] = 37434,
 						["provider"] = { "n", 79740 },	-- Warmaster Zog
-						["races"] = HORDE_ONLY,
 						["coords"] = {
 							{ 53.8, 54.9, 590 },	-- lvl 1 garrison
 							{ 40.5, 54.8, 590 },	-- lvl 2 garrison
@@ -2615,50 +2708,8 @@ _.ExpansionFeatures =
 							i(119464),	-- Cudgel of Trials
 							i(119457),	-- Handaxe of Trials
 						},
-					},
-					n(89806, {	-- Shadow Hunter Ty'jin
-						["coord"] = { 40.2, 56.7, 590 },
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							{	-- Death to Amethon!
-								["questID"] = 37813,
-								["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-								["isDaily"] = true,
-							},
-							{	-- Death to Gor'thul!
-								["questID"] = 37814,
-								["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-								["isDaily"] = true,
-							},
-							{	-- Death to Hivelord Ik'rix!
-								["questID"] = 37818,
-								["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-								["isDaily"] = true,
-							},
-							{	-- Death to Nullifier Darkoor!
-								["questID"] = 37815,
-								["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-								["isDaily"] = true,
-							},
-							{	-- Death to Nullifier Darkoor!
-								["questID"] = 37949,
-								["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-								["isDaily"] = true,
-							},
-							{	-- Death to Tremor!
-								["questID"] = 37817,
-								["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-								["isDaily"] = true,
-							},
-							{	-- Death to Undertow!
-								["questID"] = 37816,
-								["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-								["isDaily"] = true,
-							},
-						},
 					}),
-					{	-- Shamanstone: Blessing of the Wolf
-						["objectID"] = 233263,	-- Blessing of the Wolf // Frostwolf Shamanstone
+					o(233263,{	-- Shamanstone: Blessing of the Wolf
 						["questID"] = 33977,	-- Blessing of the Wolf
 						["races"] = HORDE_ONLY,
 						["coords"] = {
@@ -2666,7 +2717,7 @@ _.ExpansionFeatures =
 							{ 48.47, 52.12, 590 },	-- Tier 2 Garrison
 							{ 48.67, 52.21, 590 },	-- Tier 3 Garrison
 						},
-					},
+					}),
 					q(36522, {	-- Solidarity in Death
 						["provider"] = { "n", 85777 },	-- Ahm
 						["sourceQuest"] = 33973,	-- Dying Wish
@@ -2684,32 +2735,40 @@ _.ExpansionFeatures =
 						["lvl"] = 98,
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
-						--["objectID"] = 232416,	-- Command Board (237022 extra object, same name)
+						["providers"] = {
+							{ "o", 232416 },	-- Command Board lvl 1
+							{ "o", 233291 },	-- Command Board lvl 2
+							{ "o", 237022 },	-- Command Board lvl 3
+						},
 					}),
-					{	-- The Mysterious Flask	-- depends on alchemy lab and/or alchemy profession?
-						["questID"] = 35058,
+					q(35058, {	-- The Mysterious Flask	-- depends on alchemy lab and/or alchemy profession?
 						["races"] = HORDE_ONLY,
-					},
-					{	-- Things Are Not Goren Our Way
-						["questID"] = 35154,
-						["provider"] = { "n", 81688 },	-- Gorsol
+					}),
+					q(35557, {	-- The Secrets of Gorgrond
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+						["providers"] = {
+							{ "o", 232416 },	-- Command Board lvl 1
+							{ "o", 233291 },	-- Command Board lvl 2
+							{ "o", 237022 },	-- Command Board lvl 3
+						},
+					}),
+					q(35154, {	-- Things Are Not Goren Our Way
 						["coord"] = { 62.0, 73.9, 590 },	-- lvl 2 garrison
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 81688 },	-- Gorsol
 						["sourceQuest"] = 36567,	-- Bigger is Better
 						["g"] = {
-							{	-- Frostwall Mines lvl 1
-								["buildingID"] = 61,
-							},
+							garrisonBuilding(61),	-- Frostwall Mines lvl 1
 						},
-					},
-					{	-- Treasure Contract: The Infected Orc
-						["questID"] = 37941,
+					}),
+					q(37941, {	-- Treasure Contract: The Infected Orc
 						["isDaily"] = true,
 						["providers"] = {
 							{ "n", 89793 },	-- Harrison Jones
 							{ "n", 92223 },	-- Surveyor Daltry
 						},
-					},
+					}),
 					q(37788, {	-- Treasure Contract: Gutrek's Cleaver
 						["isDaily"] = true,
 						["providers"] = {
@@ -2717,193 +2776,33 @@ _.ExpansionFeatures =
 							{ "n", 92223 },	-- Surveyor Daltry
 						},
 					}),
-					{	-- Upgrades in Ashran
-						["questID"] = 37290,
+					q(37290, {	-- Upgrades in Ashran
 						["provider"] = { "n", 78466 },	-- Gazlowe
 						["coord"] = { 37.5, 50.3, 590 },	-- lvl 3
 						["races"] = HORDE_ONLY,
-					},
-					{	-- War Planning Map
-						["objectID"] = 236206,
-						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
-						},
-						["g"] = {
-							{	-- Assault on Darktide Roost
-								["questID"] = 36692,
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									{
-										["achievementID"] = 9562,	-- Securing Draenor
-										["criteriaID"] = 10,
-									},
-									currency(823),	-- Apexis Crystal x800
-								},
-							},
-							{	-- Assault on Magnarok
-								["questID"] = 36697,
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									{
-										["achievementID"] = 9562,	-- Securing Draenor
-										["criteriaID"] = 3,
-									},
-									currency(823),	-- Apexis Crystal x800
-								},
-							},
-							{	-- Assault on Mok'gol Watchpost
-								["questID"] = 36693,
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									{
-										["achievementID"] = 9562,	-- Securing Draenor
-										["criteriaID"] = 8,
-									},
-									currency(823),	-- Apexis Crystal x800
-								},
-							},
-							{	-- Assault on Pillars of Fate
-								["questID"] = 36689,
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									{
-										["achievementID"] = 9562,	-- Securing Draenor
-										["criteriaID"] = 11,
-									},
-									currency(823),	-- Apexis Crystal x800
-								},
-							},
-							{	-- Assault on Shattrath Harbor
-								["questID"] = 36667,
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									{
-										["achievementID"] = 9562,	-- Securing Draenor
-										["criteriaID"] = 7,
-									},
-									currency(823),	-- Apexis Crystal x800
-								},
-							},
-							{	-- Assault on Skettis
-								["questID"] = 36688,
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									{
-										["achievementID"] = 9562,	-- Securing Draenor
-										["criteriaID"] = 12,
-									},
-									currency(823),	-- Apexis Crystal x800
-								},
-							},
-							{	-- Assault on Socrethar's Rise
-								["questID"] = 36691,
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									{
-										["achievementID"] = 9562,	-- Securing Draenor
-										["criteriaID"] = 9,
-									},
-									currency(823),	-- Apexis Crystal x800
-								},
-							},
-							{	-- Assault on Stonefury Cliffs
-								["questID"] = 36669,
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									{
-										["achievementID"] = 9562,	-- Securing Draenor
-										["criteriaID"] = 2,
-									},
-									currency(823),	-- Apexis Crystal x800
-								},
-							},
-							{	-- Assault on the Broken Precipice
-								["questID"] = 36694,
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									{
-										["achievementID"] = 9562,	-- Securing Draenor
-										["criteriaID"] = 6,
-									},
-									currency(823),	-- Apexis Crystal x800
-								},
-							},
-							{	-- Assault on the Everbloom Wilds
-								["questID"] = 36695,
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									{
-										["achievementID"] = 9562,	-- Securing Draenor
-										["criteriaID"] = 5,
-									},
-									currency(823),	-- Apexis Crystal x800
-								},
-							},
-							{	-- Assault on the Iron Siegeworks
-								["questID"] = 36696,
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									{
-										["achievementID"] = 9562,	-- Securing Draenor
-										["criteriaID"] = 1,
-									},
-									currency(823),	-- Apexis Crystal x800
-								},
-							},
-							{	-- Assault on the Pit
-								["questID"] = 36701,
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									{
-										["achievementID"] = 9562,	-- Securing Draenor
-										["criteriaID"] = 4,
-									},
-									currency(823),	-- Apexis Crystal x1000
-								},
-							},
-						},
-					},
-					{	-- We Be Needin' Supplies
-						["questID"] = 34736,
+					}),
+					q(34736, {	-- We Be Needin' Supplies
+						["coord"] = { 51.2, 51.3, 590 },	-- lvl 1
+						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 78487 },	-- Rokhan
-						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
-						["coords"] = {
-							{ 51.2, 51.3, 590 },	-- lvl 1
-						},
-					},
-					{	-- We Need a Shipwright
-						["questID"] = 38568,
-						["provider"] = { "n", 92400 },	-- Vol'jin
+					}),
+					q(38568, {	-- We Need a Shipwright
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 92400 },	-- Vol'jin
 						["sourceQuests"] = {
 							38567,	-- Garrison Campaign: War Council
 							40417,	-- To Tanaan!
 						},
-					},
-					{	-- Vouchsafe Our Arrival
-						["questID"] = 34209,
-						["provider"] = { "n", 79252 },	-- Cordana Felsong
+					}),
+					q(34209, {	-- Vouchsafe Our Arrival
 						["coord"] = { 49.4, 36.5, 590 },
 						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 34378 },	-- Establish Your Garrison
-						-- Not required to turn quest in, just fulfill its requirements.
-					},
-				}),			
+						["provider"] = { "n", 79252 },	-- Cordana Felsong
+						["sourceQuest"] = 34378,	-- Establish Your Garrison
+					}),
+				}),
 			},
-		}),	
+		}),
 	}),
 };

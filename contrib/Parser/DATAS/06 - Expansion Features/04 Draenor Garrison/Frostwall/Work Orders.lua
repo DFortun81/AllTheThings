@@ -10,7 +10,7 @@ _.ExpansionFeatures =
 				["g"] = {
 					ach(9407, {	-- Working Many Orders (750)
 						ach(9406, {		-- Working More Orders (250)
-							["groups"] = {
+							["g"] = {
 								i(111930),		-- Alchemy Lab, Level 3 [Blueprints]
 								i(111973),		-- Enchanter's Study, Level 3 [Blueprints]
 								i(109257),		-- Engineering Works, Level 3 [Blueprints]
@@ -25,7 +25,8 @@ _.ExpansionFeatures =
 						ach(9405),		-- Working Some Orders (125)
 					}),
 					n(86639, {	-- Altar of Bones
-						["groups"] = {
+						["description"] = "Gladiator's Sanctum",
+						["g"] = {
 							i(118043, {	-- Broken Bones
 								i(126461),	-- Warmongering Gladiator's Accolade of Conquest
 								i(126462),	-- Warmongering Gladiator's Accolade of Dominance
@@ -455,16 +456,15 @@ _.ExpansionFeatures =
 								i(126706),	-- Warmongering Aspirant's Warboots of Cruelty
 							}),
 						},
-						["description"] = "Gladiator's Sanctum",
 					}),
 					n(-103, {	-- Barn
 						ach(9452, {		-- Trap Superstar (500)
 							ach(9451),		-- Trapper's Delight (250)
 							ach(9565, {		-- Master Trapper (125)
-								["groups"] = {
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+								["g"] = {
 									i(111969),		-- Barn, Level 3 [Blueprints]
 								},
-								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							}),
 							ach(9450),		-- The Trap Game (50)
 						}),
@@ -478,13 +478,13 @@ _.ExpansionFeatures =
 							ach(9076),		-- Choppin' Some Logs (10)
 						}),
 						ach(9429, {		-- Upgrading the Mill
-							["groups"] = {
+							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+							["g"] = {
 								i(109255),		-- Lumber Mill, Level 3 [Blueprints]
 								crit(1), 		-- Place 75 Work Order at the Lumber Mill
 								crit(2),		-- Legacy of the Ancients
 								--crit(3),		-- Reduction in Force
 							},
-							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 						}),
 					}),
 				},

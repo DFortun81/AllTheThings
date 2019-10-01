@@ -4,8 +4,9 @@
 _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
-		h(m(590, {	-- Frostwall
-			["groups"] = {
+		m(590, {	-- Frostwall
+			["races"] = HORDE_ONLY,
+			["g"] = {
 				garrisonBuilding(35, {	-- Frostwall Tavern
 					follower(342),	-- "Doc" Schweitzer
 					follower(271),	-- Abigail Wilson
@@ -252,6 +253,6 @@ _.ExpansionFeatures =
 					follower(256),	-- Zen'tiki
 				}),
 			},
-		})),	
+		}),
 	}),
 };

@@ -47,9 +47,8 @@ _.ExpansionFeatures =
 							}),
 						}
 					}),
-					q(37126, {	-- An Ogre Without His Sword...(A)--Seems to count both Horde/Alli when you do one.
+					q(37126, {	-- An Ogre Without His Sword...(A)
 						["provider"] = { "n", 86682 },	-- Retired Gorian Centurion(Tormmok)
-						--["altQuestID"] = 37180,	-- An Ogre Without His Sword...(H)
 						["g"] = {
 							spell(174886, {	-- Tormmok Perk: Master of Arms
 								["collectible"] = false,

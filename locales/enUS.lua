@@ -2140,6 +2140,7 @@ app.L = {
 		[236178] = "Interface\\Icons\\Ability_Skyreach_Empower",
 		[236715] = "Interface\\Icons\\INV_Misc_Skull_08",
 		[237511] = "Interface\\Icons\\priest_icon_chakra_red",
+		[239143] = "Interface\\Icons\\inv_drink_milk_01",
 		[239828] = "Interface\\Icons\\Spell_Warlock_DemonicPortal_Purple",
 		[239901] = "Interface\\Icons\\INV_Egg_09",
 		[239925] = "Interface\\Icons\\trade_archaeology_nerubian_obelisk",		-- Ogrish Fortitude
