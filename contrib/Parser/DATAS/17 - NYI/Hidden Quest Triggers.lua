@@ -1049,6 +1049,8 @@ _.NeverImplemented =
 		q(56956),	-- Mesh of Expanding Vitality (Rank 2)
 		q(56957),	-- Grid of Bursting Vitality (Rank 3)
 		q(56958),	-- Tempered Azerite Formation (Rank 3)
+		q(56943),	-- Animated Elemental Heart (Rank 1)
+		q(56947),	-- Animated Elemental Heart (Rank 1) — this + quest above popped at the same time after assembly.  was my first one, if that matters!
 		
 		
 	}),
