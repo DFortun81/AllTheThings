@@ -651,6 +651,22 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = 186,	-- Mining
 				}),
+				q(41678, {	-- Work Order: Gunpack
+					["requireSkill"] = 202,	-- Engineering
+					["isWorldQuest"] = true,
+					["provider"] = { "n", 106904 },	-- Valdemar Stormseeker
+					["groups"] = {
+						i(137722),	-- Schematic: Gunpack [Rank 3]
+					},
+				}),
+				q(41636, {	-- Work Order: Leystone Breastplate
+					["requireSkill"] = 164,	-- Blacksmithing
+					["isWorldQuest"] = true,
+					["provider"] = { "n", 106904 },	-- Valdemar Stormseeker
+					["groups"] = {
+						i(123939),	-- Recipe: Leystone Breastplate [Rank 3]
+					},
+				}),
 				q(41654, {	-- Work Order: Queen's Opal Loop
 					["requireSkill"] = 755,	-- Jewelcrafting
 					["isWorldQuest"] = true,

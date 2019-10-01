@@ -569,10 +569,12 @@ _.Zones =
 				q(25623, {	-- Into the Maw!
 					["provider"] = { "n", 39433 },	-- Ian Duran
 					["races"] = ALLIANCE_ONLY,
+					["altQuests"] = { 25618 },
 				}),
 				q(25618, {	-- Into the Maw!
 					["provider"] = { "n", 39627 },	-- Spirit of Goldrinn
 					["races"] = ALLIANCE_ONLY,
+					["altQuests"] = { 25623 },
 				}),
 				q(25940, {	-- Last Stand at Whistling Grove
 					["provider"] = { "n", 39927 },	-- Laina Nightsky

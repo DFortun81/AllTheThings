@@ -867,6 +867,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			})),
 			n(-10061, {	-- The Four Celestials
 				["questID"] = 33117,
+				["isWeekly"] = true,
 				["maps"] = { 554 },	-- Timeless Isle
 				["isRaid"] = true,
 				["lvl"] = 80,		-- Confirmed by Lucetia November 5, 2018

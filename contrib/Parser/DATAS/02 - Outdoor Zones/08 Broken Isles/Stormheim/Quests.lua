@@ -739,6 +739,7 @@ _.Zones =
 				q(46340,  {	-- The Gates Are Closed
 					["provider"] = { "n", 93628 },	-- Eyir
 					["lvl"] = 110,
+					["u"] = 40,		-- Mage Tower Questline
 				}),
 				q(38057, {	-- The Lost Legion
 					["sourceQuests"] = {
@@ -957,17 +958,6 @@ _.Zones =
 					["provider"] = { "n", 91158 },	-- Nathanos Blightcaller
 				}),
 				n(-38, {	-- Professions
-					n(-181, {	-- Blacksmithing
-						["requireSkill"] = 164,	-- Blacksmithing
-						["groups"] = {
-							q(41636, {	-- Work Order: Leystone Breastplate
-								["provider"] = { "n", 106904 },	-- Valdemar Stormseeker
-								["groups"] = {
-									i(123939),	-- Recipe: Leystone Breastplate [Rank 3]
-								},
-							}),
-						},
-					}),
 					n(-182, {	-- Enchanting
 						["requireSkill"] = 333,	-- Enchanting
 						["groups"] = {
@@ -982,12 +972,6 @@ _.Zones =
 					n(-183, {	-- Engineering
 						["requireSkill"] = 202,	-- Engineering
 						["groups"] = {
-							q(41678, {	-- Work Order: Gunpack
-								["provider"] = { "n", 106904 },	-- Valdemar Stormseeker
-								["groups"] = {
-									i(137722),	-- Schematic: Gunpack [Rank 3]
-								},
-							}),
 							q(40866, {	-- The Shell, You Say?
 								["provider"] = { "n", 102198 },	-- Fargo Flintlocke
 								["groups"] = {
