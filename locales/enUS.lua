@@ -349,7 +349,7 @@ app.L = {
 		[-97] = "Interface\\Icons\\ability_rogue_dirtydeeds",								-- Never Implemented
 		[-98] = "Interface\\Icons\\inv_garrison_resource",									-- Garrisons
 		[-99] = "Interface\\Icons\\garrison_building_stables", 								-- Stables
-		[-100] = "Interface\\Icons\\Inv_misc_book_17", 										-- Legacy
+		[-100] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheHERO", 					-- Blizzcon 2019 (temporary)
 		[-101] = "Interface\\Icons\\Achievement_GarrisonFollower_LevelUp",					-- Followers
 		[-102] = "Interface\\Icons\\trade_alchemy", 										-- Alchemy Lab
 		[-103] = "Interface\\Icons\\garrison_building_barn", 								-- Barn
@@ -990,7 +990,7 @@ app.L = {
 		[-94] = "Black Market Auction House",									-- Black Market Auction House"
 -- Garrison Note: These will be changed into a new class soon(TM)
 		[-99] = select(2,C_Garrison.GetBuildingInfo(65) ), 						-- Stables
-		[-100] = LFG_LIST_LEGACY, 												-- Legacy (Unassociated with shortcut)
+		[-100] = "Blizzcon 2019", 												-- Blizzcon (temporary)
 		[-103] = select(2,C_Garrison.GetBuildingInfo(24)),						-- Barn
 		[-104] = select(2,C_Garrison.GetBuildingInfo(26)),						-- Barracks
 		[-106] = select(2,C_Garrison.GetBuildingInfo(91)), 						-- Engineering Works

@@ -30,7 +30,13 @@ _.PetJournal =
 		p(119),				-- Father Winter's Helper
 		p(821),				-- Feral Vermling
 		p(1229),			-- Fiendish Imp
+		un(16, p(2778, {	-- Finduin (Blizzcon 2019)
+			["races"] = ALLIANCE_ONLY,
+		})),
 		p(514),				-- Flayer Youngling
+		un(16, p(2777, {	-- Gillvanas (Blizzcon 2019)
+			["races"] = HORDE_ONLY,
+		})),
 		p(2114),			-- Globe Yeti
 		un(10, p(333)),		-- Gregarious Grell
 		un(4, p(1602)),		-- Grommloc
