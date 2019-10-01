@@ -13,6 +13,21 @@ _.Zones =
 						i(108735),	-- Arena Master's War Horn (TOY!)
 					},
 				}),
+				n(74575, {	-- Bladespire Brute
+					["questID"] = 33439,
+					["coord"] = { 30.3, 50.6, 525 },
+					["description"] = "Loot the brute at the base of Mor'dul Tower.",
+				}),
+				n(74924, {	-- Bladespire Brute
+					["questID"] = 33440,
+					["coord"] = { 30.6, 50.8, 525 },
+					["description"] = "Loot the falling brute halfway up Mor'dul Tower.",
+				}),
+				n(74918, {	-- Bladespire Brute
+					["questID"] = 33497,
+					["coord"] = { 30.5, 50.9, 525 },
+					["description"] = "Loot the falling brute at the top of Mor'dul Tower.",
+				}),
 				o(230252, {	-- Burning Pearl
 					["questID"] = 34520,
 					["coord"] = { 42.1, 19.3, 525 },

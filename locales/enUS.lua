@@ -2085,6 +2085,7 @@ app.L = {
 		[228018] = "Interface\\Icons\\INV_TreasureChest_FelfireCitadel",
 		[228026] = "Interface\\Icons\\INV_Enchanting_WOD_dust",
 		[228570] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
+		[229333] = "Interface\\Icons\\inv_boots_cloth_19",
 		[229354] = "Interface\\Icons\\INV_Misc_Coin_17",
 		[229367] = "Interface\\Icons\\INV_Fishing_Innards_Bones",
 		[229640] = "Interface\\Icons\\inv_axe_1h_draenorquest95_b_01",

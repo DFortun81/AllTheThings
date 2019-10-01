@@ -6,18 +6,6 @@ _.Zones =
 	m(572, {	-- Draenor
 		m(525, {	-- Frostfire Ridge
 			n(-17, {	-- Quests
-				--[[ Tracking/Flags
-					33847 - Flag: Seen Ga'nar Rolling Out - triggered going into Chillfang's cave immediately upon getting to Draenor
-					33909 - Flag: Seen Ga'nar Rolling Out to Bladespire - triggers shortly after reaching Wor'gol during "Den of Wolves"
-					33846 - Flag: Seen Thrall Cyclone - triggers during "These Colors Don't Run"
-					33443 - Barrier Destroyed - triggers upon reaching the top of the walkway with rolling fireballs in Bladespire Citadel during "Great Balls of Fire!"
-					34510 - Tracking Event: Catapuls 'n' Clefthoof - triggered after riding the wolf down Bladespire Citadel during "Moving In"
-					34511 - Tracking Event: Ogre Drag - triggered after riding the wolf down Bladespire Citadel during "Moving In"
-					34654 - Tracking Flag: Dagg Found at Daggermaw Ravine - triggers when you open Dagg's cage at 39.6, 28.1
-					34312 - The Magma Lord - triggered when Molthron first appears at 43.6, 15.6
-					37544 - Garrison Follower: Greatmother Geyah - triggers if you pick Greatmother Geyah during "The Frostwolves Stand Ready"
-					37545 - Garrison Follower: Kal'gor the Honorable - triggers if you pick Kal'gor during "The Frostwolves Stand Ready"
-				]]--
 				ach(8671, {	-- Frostfire Ridge
 					["groups"] = {
 						crit(1, {	-- Foothold in a Savage Land
@@ -816,31 +804,26 @@ _.Zones =
 					["objectID"] = 226468,	-- Buffeting Galefury // Frostwolf Shamanstone
 					["questID"] = 33979,	-- Buffeting Galefury
 					["coord"] = { 65.14, 79.11, 525 },
-					["races"] = HORDE_ONLY,
 				},
 				{	-- Shamanstone: Ogrish Fortitude
 					["objectID"] = 239925,	-- Ogrish Fortitude // Frostwolf Shamanstone
 					["questID"] = 33980,	-- Ogrish Fortitude
 					["coord"] = { 43.84, 12.32, 525 },
-					["races"] = HORDE_ONLY,
 				},
 				{	-- Shamanstone: Spirit of the Wolf
 					["objectID"] = 226469,	-- Spirit of the Wolf // Frostwolf Shamanstone
 					["questID"] = 33978,	-- Spirit of the Wolf
 					["coord"] = { 17.47, 56.68, 525 },
-					["races"] = HORDE_ONLY,
 				},
 				{	-- Shamanstone: Touched by Fire
 					["objectID"] = 239926,	-- Touched By Fire // Frostwolf Shamanstone
 					["questID"] = 33981,	-- Touched By Fire
 					["coord"] = { 36.98, 33.11, 525 },
-					["races"] = HORDE_ONLY,
 				},
 				{	-- Shamanstone: Touched By Ice
 					["objectID"] = 230544,	-- Touched By Ice // Frostwolf Shamanstone
 					["questID"] = 33982,	-- Touched By Ice
 					["coord"] = { 60.35, 13.65, 525 },
-					["races"] = HORDE_ONLY,
 				},
 				{	-- Shivertail's Den
 					["questID"] = 33929,
