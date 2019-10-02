@@ -103,72 +103,255 @@ _.Zones =
 					Darnasses: 207321
 					Ironforge: 207320
 			]]--
-			q(28825),	-- A Personal Summons (Vashj'ir Starter Quest)
-			q(29391),	-- Guardians of Hyjal: Call of the Ancients
-			q(29387),	-- Guardians of Hyjal: Firelands Invasion!
-			q(28573),	-- Hero's Call: Arathi Highlands!
-			q(28492),	-- Hero's Call: Ashenvale! (breadcrumb quest for 13594, not available if 26408 is completed) (max level 23)
-			q(28579),	-- Hero's Call: Badlands!
-			q(28673),	-- Hero's Call: Blasted Lands!
-			q(39199),	-- Hero's Call: Blade's Edge Mountains!
-			q(28559),	-- Hero's Call: Bloodmyst Isle
-			q(28709),	-- Hero's Call: Borean Tundra!
-			q(28666),	-- Hero's Call: Burning Steppes!
-			q(28490),	-- Hero's Call: Darkshore! (breadcrumb quest for 13518, not available if 26383, 26385 are completed) (max level 13)
-			q(27727),	-- Hero's Call: Deepholm! (breadcrumb quest for 27203) (max level 93)
-			q(28531),	-- Hero's Call: Desolace! (breadcrumb quest for 14384, not available if 25938 is completed) (max level 33)
-			q(49561),	-- Hero's Call: Dread Wastes!
-			q(28552),	-- Hero's Call: Dustwallow Marsh! (breadcrumb quest for 27210, not available if 26702 is completed) (max level 38)
-			q(28578),	-- Hero's Call: Eastern Plaguelands!
-			q(28543),	-- Hero's Call: Felwood! (breadcrumb quest for 27997) (max level 48)
-			q(28511),	-- Hero's Call: Feralas! (breadcrumb quest for 25447, not available if 14410 is completed) (max level 38)
-			q(49564),	-- Hero's Call: Gorgrond!
-			q(39207),	-- Hero's Call: Grizzly Hills!
-			q(49551),	-- Hero's Call: Howling Fjord!
-			q(49555),	-- Hero's Call: Icecrown!
-			q(49556),	-- Hero's Call: Jade Forest!
-			q(49558),	-- Hero's Call: Krasarang Wilds!
-			q(49559),	-- Hero's Call: Kun-Lai Summit!
-			q(28567),	-- Hero's Call: Loch Modan!
-			q(27726),	-- Hero's Call: Mount Hyjal! (max level 100)
-			q(49567),	-- Hero's Call: Nagrand!
-			q(39202),	-- Hero's Call: Netherstorm!
-			q(28709),	-- Hero's Call: Northrend! (breadcrumb quest for 11672) (max level 78)
-			q(28708),	-- Hero's Call: Outland!(breadcrumb quest for 10288) (max level 68)
-			q(28582),	-- Hero's Call: Searing Gorge!
-			q(49550),	-- Hero's Call: Shadowmoon Valley!
-			q(49553),	-- Hero's Call: Sholazar Basin!
-			q(49562),	-- Hero's Call: Shadowmoon Valley!
-			q(28528),	-- Hero's Call: Silithus! (breadcrumb quest for 8280, not available if 28859,28856,28527 are completed) (max level 58)
-			q(28550),	-- Hero's Call: Southern Barrens! (breadcrumb quest for 24862) (max level 33)
-			q(49566),	-- Hero's Call: Spires of Arak!
-			q(49554),	-- Hero's Call: Storm Peaks!
-			q(28539), 	-- Hero's Call: Stonetalon Mountains!  (max level 28)
-			q(28675),	-- Hero's Call: Swamp of Sorrows!
-			q(49565),	-- Hero's Call: Talador!
-			q(28507),	-- Hero's Call: Tanaris! (breadcrumb quest for 25048, not available if 27446 is completed) (max level 48)
-			q(39188),	-- Hero's Call: Terokkar Forest!
+			q(28825, {	-- A Personal Summons (Vashj'ir Starter Quest)
+				["isBreadcrumb"] = true,
+				["lvl"] = 80,
+			}),
+			q(29391, {	-- Guardians of Hyjal: Call of the Ancients
+				["isBreadcrumb"] = true,
+				["lvl"] = 85,
+			}),
+			q(29387, {	-- Guardians of Hyjal: Firelands Invasion!
+				["isBreadcrumb"] = true,
+				["lvl"] = 85,
+			}),
+			q(28573, {	-- Hero's Call: Arathi Highlands!
+				["isBreadcrumb"] = true,
+				["lvl"] = 25,
+			}),
+			q(28492, {	-- Hero's Call: Ashenvale! (breadcrumb quest for 13594, not available if 26408 is completed) (max level 23)
+				["isBreadcrumb"] = true,
+				["lvl"] = 15,
+			}),
+			q(28579, {	-- Hero's Call: Badlands!
+				["isBreadcrumb"] = true,
+				["lvl"] = 40,
+			}),
+			q(28673, {	-- Hero's Call: Blasted Lands!
+				["isBreadcrumb"] = true,
+				["lvl"] = 40,
+			}),
+			q(39199, {	-- Hero's Call: Blade's Edge Mountains!
+				["isBreadcrumb"] = true,
+				["lvl"] = 65,
+			}),
+			q(28559, {	-- Hero's Call: Bloodmyst Isle
+				["isBreadcrumb"] = true,
+				["lvl"] = 10,
+			}),
+			q(28709, {	-- Hero's Call: Borean Tundra!
+				["isBreadcrumb"] = true,
+				["lvl"] = 58,
+			}),
+			q(28666, {	-- Hero's Call: Burning Steppes!
+				["isBreadcrumb"] = true,
+				["lvl"] = 40,
+			}),
+			q(28490, {	-- Hero's Call: Darkshore! (breadcrumb quest for 13518, not available if 26383, 26385 are completed) (max level 13)
+				["isBreadcrumb"] = true,
+				["lvl"] = 10,
+			}),
+			q(27727, {	-- Hero's Call: Deepholm! (breadcrumb quest for 27203) (max level 93)
+				["isBreadcrumb"] = true,
+				["lvl"] = 82,
+			}),
+			q(28531, {	-- Hero's Call: Desolace! (breadcrumb quest for 14384, not available if 25938 is completed) (max level 33)
+				["isBreadcrumb"] = true,
+				["lvl"] = 30,
+			}),
+			q(49561, {	-- Hero's Call: Dread Wastes!
+				["isBreadcrumb"] = true,
+				["lvl"] = 84,
+			}),
+			q(28552, {	-- Hero's Call: Dustwallow Marsh! (breadcrumb quest for 27210, not available if 26702 is completed) (max level 38)
+				["isBreadcrumb"] = true,
+				["lvl"] = 35,
+			}),
+			q(28578, {	-- Hero's Call: Eastern Plaguelands!
+				["isBreadcrumb"] = true,
+				["lvl"] = 40,
+			}),
+			q(28543, {	-- Hero's Call: Felwood! (breadcrumb quest for 27997) (max level 48)
+				["isBreadcrumb"] = true,
+				["lvl"] = 40,
+			}),
+			q(28511, {	-- Hero's Call: Feralas! (breadcrumb quest for 25447, not available if 14410 is completed) (max level 38)
+				["isBreadcrumb"] = true,
+				["lvl"] = 35,
+			}),
+			q(49564, {	-- Hero's Call: Gorgrond!
+				["isBreadcrumb"] = true,
+				["lvl"] = 92,
+			}),
+			q(39207, {	-- Hero's Call: Grizzly Hills!
+				["isBreadcrumb"] = true,
+				["lvl"] = 63,
+			}),
+			q(49551, {	-- Hero's Call: Howling Fjord!
+				["isBreadcrumb"] = true,
+				["lvl"] = 58,
+			}),
+			q(49555, {	-- Hero's Call: Icecrown!
+				["isBreadcrumb"] = true,
+				["lvl"] = 67,
+			}),
+			q(49556, {	-- Hero's Call: Jade Forest!
+				["isBreadcrumb"] = true,
+				["lvl"] = 80,
+			}),
+			q(49558, {	-- Hero's Call: Krasarang Wilds!
+				["isBreadcrumb"] = true,
+				["lvl"] = 81,
+			}),
+			q(49559, {	-- Hero's Call: Kun-Lai Summit!
+				["isBreadcrumb"] = true,
+				["lvl"] = 82,
+			}),
+			q(28567, {	-- Hero's Call: Loch Modan!
+				["isBreadcrumb"] = true,
+				["lvl"] = 10,
+			}),
+			q(27726, {	-- Hero's Call: Mount Hyjal! (max level 100)
+				["isBreadcrumb"] = true,
+				["lvl"] = 80,
+			}),
+			q(49567, {	-- Hero's Call: Nagrand!
+				["isBreadcrumb"] = true,
+				["lvl"] = 98,
+			}),
+			q(39202, {	-- Hero's Call: Netherstorm!
+				["isBreadcrumb"] = true,
+				["lvl"] = 67,
+			}),
+			q(28709, {	-- Hero's Call: Northrend! (breadcrumb quest for 11672) (max level 78)
+				["isBreadcrumb"] = true,
+				["lvl"] = 58,
+			}),
+			q(28708, {	-- Hero's Call: Outland!(breadcrumb quest for 10288) (max level 68)
+				["isBreadcrumb"] = true,
+				["lvl"] = 58,
+			}),
+			q(28582, {	-- Hero's Call: Searing Gorge!
+				["isBreadcrumb"] = true,
+				["lvl"] = 40,
+			}),
+			q(49550, {	-- Hero's Call: Shadowmoon Valley!
+				["isBreadcrumb"] = true,
+				["lvl"] = 67,
+			}),
+			q(49553, {	-- Hero's Call: Sholazar Basin!
+				["isBreadcrumb"] = true,
+				["lvl"] = 66,
+			}),
+			q(49562, {	-- Hero's Call: Shadowmoon Valley!
+				["isBreadcrumb"] = true,
+				["lvl"] = 90,
+			}),
+			q(28528, {	-- Hero's Call: Silithus! (breadcrumb quest for 8280, not available if 28859,28856,28527 are completed) (max level 58)
+				["isBreadcrumb"] = true,
+				["lvl"] = 40,
+			}),
+			q(28550, {	-- Hero's Call: Southern Barrens! (breadcrumb quest for 24862) (max level 33)
+				["isBreadcrumb"] = true,
+				["lvl"] = 25,
+			}),
+			q(49566, {	-- Hero's Call: Spires of Arak!
+				["isBreadcrumb"] = true,
+				["lvl"] = 96,
+			}),
+			q(49554, {	-- Hero's Call: Storm Peaks!
+				["isBreadcrumb"] = true,
+				["lvl"] = 67,
+			}),
+			q(28539, { 	-- Hero's Call: Stonetalon Mountains!  (max level 28)
+				["isBreadcrumb"] = true,
+				["lvl"] = 20,
+			}),
+			q(28675, {	-- Hero's Call: Swamp of Sorrows!
+				["isBreadcrumb"] = true,
+				["lvl"] = 40,
+			}),
+			q(49565, {	-- Hero's Call: Talador!
+				["isBreadcrumb"] = true,
+				["lvl"] = 94,
+			}),
+			q(28507, {	-- Hero's Call: Tanaris! (breadcrumb quest for 25048, not available if 27446 is completed) (max level 48)
+				["isBreadcrumb"] = true,
+				["lvl"] = 40,
+			}),
+			q(39188, {	-- Hero's Call: Terokkar Forest!
+				["isBreadcrumb"] = true,
+				["lvl"] = 62,
+			}),
 			q(28702, {	-- Hero's Call: The Cape of Stranglethorn!
 				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 30,
 			}),
-			q(26542),	-- Hero's Call: The Hinterlands!
-			q(28503),	-- Hero's Call: Thousand Needles! (breadcrumb quest for 25486, not available if 25479,25481 are completed) (max level 43)
-			q(49560),	-- Hero's Call: Townlong Steppes!
-			q(28716),	-- Hero's Call: Twilight Highlands! (breadcrumb quest for 26960) (max level 93)
-			q(28558),	-- Hero's Call: Uldum!
-			q(28525),	-- Hero's Call: Un'Goro Crater! (breadcrumb quest for 24740, not available if 24911 is completed) (max level 53)
-			q(49557),	-- Hero's Call: Valley of the Four Winds!
-			q(27724),	-- Hero's Call: Vashj'ir!
-			q(28576),	-- Hero's Call: Western Plaguelands!
-			q(28562),	-- Hero's Call: Westfall!
-			q(28565),	-- Hero's Call: Wetlands!
-			q(28544),	-- Hero's Call: Winterspring! (breadcrumb quest for ???, not available if 28524,28545,28768 are completed) (max level 53)
-			q(39181),	-- Hero's Call: Zangarmarsh!
-			q(49552),	-- Hero's Call: Zul'Drak!
-			q(36498),	-- Iron Horde Invasion
-			q(29156),	-- The Troll Incursion
+			q(26542, {	-- Hero's Call: The Hinterlands!
+				["isBreadcrumb"] = true,
+				["lvl"] = 30,
+			}),
+			q(28503, {	-- Hero's Call: Thousand Needles! (breadcrumb quest for 25486, not available if 25479,25481 are completed) (max level 43)
+				["isBreadcrumb"] = true,
+				["lvl"] = 40,
+			}),
+			q(49560, {	-- Hero's Call: Townlong Steppes!
+				["isBreadcrumb"] = true,
+				["lvl"] = 83,
+			}),
+			q(28716, {	-- Hero's Call: Twilight Highlands! (breadcrumb quest for 26960) (max level 93)
+				["isBreadcrumb"] = true,
+				["lvl"] = 84,
+			}),
+			q(28558, {	-- Hero's Call: Uldum!
+				["isBreadcrumb"] = true,
+				["lvl"] = 83,
+			}),
+			q(28525, {	-- Hero's Call: Un'Goro Crater! (breadcrumb quest for 24740, not available if 24911 is completed) (max level 53)
+				["isBreadcrumb"] = true,
+				["lvl"] = 40,
+			}),
+			q(49557, {	-- Hero's Call: Valley of the Four Winds!
+				["isBreadcrumb"] = true,
+				["lvl"] = 81,
+			}),
+			q(27724, {	-- Hero's Call: Vashj'ir!
+				["isBreadcrumb"] = true,
+				["lvl"] = 80,
+			}),
+			q(28576, {	-- Hero's Call: Western Plaguelands!
+				["isBreadcrumb"] = true,
+				["lvl"] = 35,
+			}),
+			q(28562, {	-- Hero's Call: Westfall!
+				["isBreadcrumb"] = true,
+				["lvl"] = 10,
+			}),
+			q(28565, {	-- Hero's Call: Wetlands!
+				["isBreadcrumb"] = true,
+				["lvl"] = 20,
+			}),
+			q(28544, {	-- Hero's Call: Winterspring! (breadcrumb quest for ???, not available if 28524,28545,28768 are completed) (max level 53)
+				["isBreadcrumb"] = true,
+				["lvl"] = 40,
+			}),
+			q(39181, {	-- Hero's Call: Zangarmarsh!
+				["isBreadcrumb"] = true,
+				["lvl"] = 60,
+			}),
+			q(49552, {	-- Hero's Call: Zul'Drak!
+				["isBreadcrumb"] = true,
+				["lvl"] = 64,
+			}),
+			q(36498, {	-- Iron Horde Invasion
+				["isBreadcrumb"] = true,
+				["lvl"] = 90,
+			}),
+			q(29156, {	-- The Troll Incursion
+				["isBreadcrumb"] = true,
+				["lvl"] = 85,
+			}),
 			--
 			q(26365, {	-- Hero's Call: Redridge Mountains!
 				["description"] = "This is a breadcrumb quest and is mutually exclusive with other Redridge Mountains breadcrumbs.  It also seems to be unobtainable at higher levels, so if you want to collect the transmog from this quest then you'll need to do it early.",
@@ -185,37 +368,40 @@ _.Zones =
 				},
 			}),
 			q(40519, {	-- The Legion Returns (Alliance)
+				["isBreadcrumb"] = true,
 				["description"] = "This quest is automatically offered when you reach level 98.  To get it to pop up, you may need to relog.",
 			}),
 			q(49846, {	-- Wars on Two Fronts [Cataclysm]
-				["g"] = {
-					q(49865, {	-- Cataclysm First Responder (Alliance)
-						["isBreadcrumb"] = true,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(49851, {	-- Cataclysm First Responder (Horde)
-						["isBreadcrumb"] = true,
-						["races"] = HORDE_ONLY,
-					}),
-				},
-				["itemID"] = 156477,	-- Special Duty Assignments
+				["isBreadcrumb"] = true,
 				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
+				["provider"] = { "i", 156477 },	-- Special Duty Assignments
 				-- The same item is used to start Cataclysm or Pandaria content (your choice).
 				-- Received 49846 on Alliance Warlock when I hit 80, so it isn't the Horde version item as a previous comment speculated. - slumber
 			}),
+			q(49865, {	-- Cataclysm First Responder (Alliance)
+				["sourceQuests"] = { 49846 },	-- War on Two Fronts (Cataclysm)
+				["isBreadcrumb"] = true,
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(49851, {	-- Cataclysm First Responder (Horde)
+				["sourceQuests"] = { 49846 },	-- War on Two Fronts (Cataclysm)
+				["isBreadcrumb"] = true,
+				["races"] = HORDE_ONLY,
+			}),
 			q(49864, {	-- Wars on Two Fronts [Pandaria]
-				["groups"] = {
-					q(49866, {	-- To Pandaria! (Alliance)
-						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,
-					}),
-					q(49852, {	-- To Pandaria! (Horde)
-						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,
-					}),
-				},
-				["itemID"] = 156477,	-- Special Duty Assignments
+				["isBreadcrumb"] = true,
 				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
+				["provider"] = { "i", 156477 },	-- Special Duty Assignments
+			}),
+			q(49866, {	-- To Pandaria! (Alliance)
+				["sourceQuests"] = { 49864 },	-- Wars on Two Fronts (Pandaria)
+				["isBreadcrumb"] = true,
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(49852, {	-- To Pandaria! (Horde)
+				["sourceQuests"] = { 49864 },	-- Wars on Two Fronts (Pandaria)
+				["isBreadcrumb"] = true,
+				["races"] = HORDE_ONLY,
 			}),
 		},
 	}),
