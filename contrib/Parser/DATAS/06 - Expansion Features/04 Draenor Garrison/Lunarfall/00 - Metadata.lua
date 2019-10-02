@@ -14,7 +14,6 @@ _.ExpansionFeatures =
 			["isRaid"] = true,
 			["icon"] = "Interface\\Icons\\achievement_garrison_tier01_alliance",
 			["description"] = "|cff66ccffLunarfall is the Alliance Garrison, located in Shadowmoon Valley. Several Shadowmoon clan ruins dotted the area before the garrison was built. A fully-upgraded Lunrfall garrison is considered to be a castle.|r",
-			["races"] = ALLIANCE_ONLY,
 		}),
 	}),
 };

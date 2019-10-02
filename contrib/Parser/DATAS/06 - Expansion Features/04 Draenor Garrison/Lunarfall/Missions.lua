@@ -6,6 +6,7 @@ _.ExpansionFeatures =
 	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
 			n(-299, { 	-- Missions
+				["races"] = ALLIANCE_ONLY,
 				["description"] = "|cff66ccffVarious missions at your garrison, shipyard, or class hall offer these rewards.|r",
 				["g"] = {
 					n(84698, {	-- Command Table

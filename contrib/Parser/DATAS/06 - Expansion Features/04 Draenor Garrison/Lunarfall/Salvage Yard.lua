@@ -5,13 +5,14 @@ _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
-			["groups"] = {	
-				n(-113, { 	-- Salvage Yard
+			n(-113, { 	-- Salvage Yard
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
 					ach(9468, {		-- Salvaging Pays Off
-						["groups"] = {
+						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
+						["g"] = {
 							i(111977),		-- Salvage Yard, Level 3 [Blueprints]
 						},
-						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 					}),
 					un(2, i(114120, {	-- Big Crate of Salvage
 					-- Only adding items where Salvage Crates was the only source
@@ -66,7 +67,7 @@ _.ExpansionFeatures =
 					})),
 					i(140590, {	-- Large Crate of Salvage
 						n(-140, { 	-- Communl
-							["groups"] = {
+							["g"] = {
 								i(119665),
 								i(119680),
 								i(119682),
@@ -82,7 +83,7 @@ _.ExpansionFeatures =
 							["classes"] = {5}
 						}),
 						n(-141, { 	-- Felsoul
-							["groups"] = {
+							["g"] = {
 								i(119760),
 								i(119761),
 								i(119762),
@@ -97,7 +98,7 @@ _.ExpansionFeatures =
 							["classes"] = {9}
 						}),
 						n(-142, { 	-- Heart-Lesion
-							["groups"] = {
+							["g"] = {
 								i(119469),
 								i(119470),
 								i(119471),
@@ -113,7 +114,7 @@ _.ExpansionFeatures =
 							["classes"] = {6}
 						}),
 						n(-143, { 	-- Lightdrinker
-							["groups"] = {
+							["g"] = {
 								i(119697),
 								i(119698),
 								i(119699),
@@ -129,7 +130,7 @@ _.ExpansionFeatures =
 							["classes"] = {4}
 						}),
 						n(-144, { 	-- Mistdancer
-							["groups"] = {
+							["g"] = {
 								i(119581),
 								i(119583),
 								i(119584),
@@ -145,7 +146,7 @@ _.ExpansionFeatures =
 							["classes"] = {10}
 						}),
 						n(-145, { 	-- Mountainsage
-							["groups"] = {
+							["g"] = {
 								i(119566),
 								i(119567),
 								i(119568),
@@ -158,9 +159,9 @@ _.ExpansionFeatures =
 								i(119576),
 							},
 							["classes"] = {8}
-						}),		
+						}),
 						n(-146, { 	-- Oathsworn
-							["groups"] = {
+							["g"] = {
 								i(119771),
 								i(119772),
 								i(119773),
@@ -175,9 +176,9 @@ _.ExpansionFeatures =
 								i(119782),
 							},
 							["classes"] = {1}
-						}),		
+						}),
 						n(-147, { 	-- Springrain
-							["groups"] = {
+							["g"] = {
 								i(119506),
 								i(119507),
 								i(119508),
@@ -191,10 +192,10 @@ _.ExpansionFeatures =
 								i(119544),
 							},
 							["classes"] = {11}
-						}),		
+						}),
 						n(-148, { 	-- Streamtalker
 							["classes"] = { 7 },	-- Shaman Only
-							["groups"] = {
+							["g"] = {
 								{	-- Streamtalker Aegis [Elemental]
 									["itemID"] = 119725,	-- Streamtalker Aegis
 								},
@@ -217,10 +218,10 @@ _.ExpansionFeatures =
 									["itemID"] = 119749,	-- Streamtalker Cowl
 								},
 								{	-- Streamtalker Helm [Enhancement]
-									["itemID"] = 119733,	-- Streamtalker Helm	
+									["itemID"] = 119733,	-- Streamtalker Helm
 								},
 								{	-- Streamtalker Choker [Enhancement]
-									["itemID"] = 119709,	-- Streamtalker Choker	
+									["itemID"] = 119709,	-- Streamtalker Choker
 								},
 								{	-- Streamtalker Medallion [Elemental]
 									["itemID"] = 119714,	-- Streamtalker Medallion
@@ -232,7 +233,7 @@ _.ExpansionFeatures =
 									["itemID"] = 119726,	-- Streamtalker Pauldrons
 								},
 								{	-- Streamtalker Shoulderguards [Enhancement]
-									["itemID"] = 119735,	-- Streamtalker Shoulderguards	
+									["itemID"] = 119735,	-- Streamtalker Shoulderguards
 								},
 								{	-- Streamtalker Spaulders [Restoration]
 									["itemID"] = 119752,	-- Streamtalker Spaulders
@@ -241,13 +242,13 @@ _.ExpansionFeatures =
 									["itemID"] = 119744,	-- Streamtalker Cloak of Destruction
 								},
 								{	-- Streamtalker Cloak of Rage [Enhancement]
-									["itemID"] = 119708,	-- Streamtalker Cloak of Rage	
+									["itemID"] = 119708,	-- Streamtalker Cloak of Rage
 								},
 								{	-- Streamtalker Cloak of Wisdom [Restoration]
 									["itemID"] = 119738,	-- Streamtalker Cloak of Wisdom
 								},
 								{	-- Streamtalker Chestguard [Enhancement]
-									["itemID"] = 119730,	-- Streamtalker Chestguard	
+									["itemID"] = 119730,	-- Streamtalker Chestguard
 								},
 								{	-- Streamtalker Tunic [Elemental]
 									["itemID"] = 119720,	-- Streamtalker Tunic
@@ -259,7 +260,7 @@ _.ExpansionFeatures =
 									["itemID"] = 119728,	-- Streamtalker Armbands
 								},
 								{	-- Streamtalker Armguard [Enhancement]
-									["itemID"] = 119737,	-- Streamtalker Armguard	
+									["itemID"] = 119737,	-- Streamtalker Armguard
 								},
 								{	-- Streamtalker Bracers [Restoration]
 									["itemID"] = 119754,	-- Streamtalker Bracers
@@ -271,7 +272,7 @@ _.ExpansionFeatures =
 									["itemID"] = 119748,	-- Streamtalker Grips
 								},
 								{	-- Streamtalker Handguards [Enhancement]
-									["itemID"] = 119732,	-- Streamtalker Handguards	
+									["itemID"] = 119732,	-- Streamtalker Handguards
 								},
 								{	-- Streamtalker Belt [Elemental]
 									["itemID"] = 119727,	-- Streamtalker Belt
@@ -280,13 +281,13 @@ _.ExpansionFeatures =
 									["itemID"] = 119753,	-- Streamtalker Girdle
 								},
 								{	-- Streamtalker Waistguard [Enhancement]
-									["itemID"] = 119736,	-- Streamtalker Waistguard	
+									["itemID"] = 119736,	-- Streamtalker Waistguard
 								},
 								{	-- Streamtalker Leggings [Restoration]
 									["itemID"] = 119750,	-- Streamtalker Leggings
 								},
 								{	-- Streamtalker Legguards [Enhancement]
-									["itemID"] = 119734,	-- Streamtalker Legguards	
+									["itemID"] = 119734,	-- Streamtalker Legguards
 								},
 								{	-- Streamtalker Legwraps [Elemental]
 									["itemID"] = 119724,	-- Streamtalker Legwraps
@@ -295,7 +296,7 @@ _.ExpansionFeatures =
 									["itemID"] = 119721,	-- Streamtalker Boots
 								},
 								{	-- Streamtalker Greaves [Enhancement]
-									["itemID"] = 119731,	-- Streamtalker Greaves	
+									["itemID"] = 119731,	-- Streamtalker Greaves
 								},
 								{	-- Streamtalker Sabatons [Restoration]
 									["itemID"] = 119747,	-- Streamtalker Sabatons
@@ -337,9 +338,9 @@ _.ExpansionFeatures =
 									["itemID"] = 119743,	-- Streamtalker Stone of Wisdom
 								},
 							},
-						}),	
+						}),
 						n(-149, { 	-- Sunsoul
-							["groups"] = {
+							["g"] = {
 								i(119620),
 								i(119613),
 								i(119614),
@@ -352,12 +353,12 @@ _.ExpansionFeatures =
 								i(119636),
 								i(119637),
 								i(119638),
-								i(119639),	
+								i(119639),
 							},
 							["classes"] = {2}
-						}),		
+						}),
 						n(-150, { 	-- Trailseeker
-							["groups"] = {
+							["g"] = {
 								i(119545),
 								i(119551),
 								i(119552),
@@ -372,8 +373,8 @@ _.ExpansionFeatures =
 							["classes"] = {3}
 						}),
 					}),
-				}),
-			},
+				}
+			}),
 		}),
 	}),
 };

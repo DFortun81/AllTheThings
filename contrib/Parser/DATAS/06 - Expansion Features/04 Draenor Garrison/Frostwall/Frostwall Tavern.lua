@@ -5,9 +5,9 @@ _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(590, {	-- Frostwall
-			["races"] = HORDE_ONLY,
-			["g"] = {
-				garrisonBuilding(35, {	-- Frostwall Tavern
+			garrisonBuilding(35, {	-- Frostwall Tavern
+				["races"] = HORDE_ONLY,
+				["g"] = {
 					follower(342),	-- "Doc" Schweitzer
 					follower(271),	-- Abigail Wilson
 					follower(277),	-- Aesin Sunstalker
@@ -197,7 +197,12 @@ _.ExpansionFeatures =
 					follower(326),	-- Skah
 					follower(370),	-- Skalliz Skullslice
 					follower(387),	-- Soozee
-					follower(172),	-- Soulare of Andorhal
+					follower(172, {	-- Soulare of Andorhal
+						i(117573, {	-- Wayfarer's Bonfire
+							["crs"] = { 82717 },	-- Soulare of Andorhal
+							["description"] = "|cff3399ffStep 1:|r |cff66ccffRecruit |cFFFFD700Soulare of Andorhal|r from the Inn using either Magic Debuff or Wild Aggression.|r \n|cff3399ffStep 2:|r |cff66ccffDo a /tired emote and he will award the toy.|r \n|cff3399ffNote:|r |cff66ccffCan get by visiting someone's Garrison.|r",
+						}),
+					}),
 					follower(120),	-- Su-Lai Snowpetal
 					follower(265),	-- Su'tila
 					follower(96),	-- Sul'aka
@@ -251,8 +256,8 @@ _.ExpansionFeatures =
 					follower(259),	-- Zen'tenbi
 					follower(263),	-- Zen'tika
 					follower(256),	-- Zen'tiki
-				}),
-			},
+				},
+			}),
 		}),
 	}),
 };

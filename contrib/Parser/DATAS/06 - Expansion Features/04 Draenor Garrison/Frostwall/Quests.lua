@@ -5,9 +5,9 @@ _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(590, {	-- Frostwall
-			["races"] = HORDE_ONLY,
-			["g"] = {
-				n(-17, { 	-- Quests
+			n(-17, { 	-- Quests
+				["races"] = HORDE_ONLY,
+				["g"] = {
 					ach(8671, {	-- You'll Get Caught Up In The... Frostfire!
 						["races"] = HORDE_ONLY,
 						["g"] = {
@@ -2801,8 +2801,8 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 79252 },	-- Cordana Felsong
 						["sourceQuest"] = 34378,	-- Establish Your Garrison
 					}),
-				}),
-			},
+				},
+			}),
 		}),
 	}),
 };

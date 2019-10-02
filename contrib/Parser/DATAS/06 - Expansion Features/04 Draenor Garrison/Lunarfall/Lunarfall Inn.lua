@@ -5,8 +5,9 @@ _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
-			["groups"] = {	
-				garrisonBuilding(35, {	-- Lunarfall Inn
+			garrisonBuilding(35, {	-- Lunarfall Inn
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
 					follower(342),	-- "Doc" Schweitzer
 					follower(227),	-- Adelaide Kane
 					follower(406),	-- Aerik Matthews
@@ -217,7 +218,12 @@ _.ExpansionFeatures =
 					follower(425),	-- Shieldmaster Daeun
 					follower(293),	-- Skip Burnbright
 					follower(344),	-- Songla
-					follower(172),	-- Soulare of Andorhal
+					follower(172, {	-- Soulare of Andorhal
+						i(117573, {	-- Wayfarer's Bonfire
+							["crs"] = { 82717 },	-- Soulare of Andorhal
+							["description"] = "|cff3399ffStep 1:|r |cff66ccffRecruit |cFFFFD700Soulare of Andorhal|r from the Inn using either Magic Debuff or Wild Aggression.|r \n|cff3399ffStep 2:|r |cff66ccffDo a /tired emote and he will award the toy.|r \n|cff3399ffNote:|r |cff66ccffCan get by visiting someone's Garrison.|r",
+						}),
+					}),
 					follower(452),	-- Sprynt Starkflange
 					follower(281),	-- Stigander Ironsnare
 					follower(381),	-- Stormsinger Taalos
@@ -250,8 +256,8 @@ _.ExpansionFeatures =
 					follower(240),	-- Yvette Blackheart
 					follower(369),	-- Zelena Moonbreak
 					follower(389),	-- Zian
-				}),
-			},
+				},
+			}),
 		}),
 	}),
 };

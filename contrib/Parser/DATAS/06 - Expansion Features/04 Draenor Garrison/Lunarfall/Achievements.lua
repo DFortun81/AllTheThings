@@ -5,11 +5,12 @@ _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
-			["groups"] = {	
-				n(-4, { 	-- Achievements
+			n(-4, { 	-- Achievements
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
 					ach(10365, {	-- A Frightening Friend
-						["description"] = "Halloween Decorations must be up in a Tier 3 garrison.",
 						["coord"] = { 40.12, 70.06, 582 },	-- Pepe Location [Alliance]
+						["description"] = "Halloween Decorations must be up in a Tier 3 garrison.",
 					}),
 					ach(9630, 9248),	-- Defender of Draenor [A] / [H]
 					ach(9928, 9901, {	-- Don't Call Me Junior
@@ -72,7 +73,7 @@ _.ExpansionFeatures =
 					ach(9210, 9132),		-- Garrison Buddies [A] / [H]
 					--ach(9210),		-- Garrison Buddies (Alliance)
 					ach(9487, {		-- Got My Mind On My Draenor Money (10,000)
-						["groups"] = {
+						["g"] = {
 							i(111983),		-- Storehouse, Level 3 [Blueprints]
 						},
 						["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
@@ -150,9 +151,9 @@ _.ExpansionFeatures =
 							ach(9498),		-- Wingman
 						}),
 					}),
-					
+
 					n(-107, {	-- Fishing Hut
-						ach(7274, {  -- Learning From The Best	
+						ach(7274, {  -- Learning From The Best
 							i(86596), 	-- Nat's Fishing Chair
 						}),
 					}),
@@ -165,7 +166,7 @@ _.ExpansionFeatures =
 							ach(9107),		-- Follow the Leader (5)
 						}),
 						ach(9129, {		-- Filling the Ranks (20 - lvl 100)
-							["groups"] = {
+							["g"] = {
 								a(i(111967)),	-- Dwarven Bunker, Level 3 [Blueprints]
 								h(i(116186)),	-- War Mill, Level 3 [Blueprints]
 							ach(9111),		-- Raising the Bar (10 - lvl 100)
@@ -203,7 +204,7 @@ _.ExpansionFeatures =
 							title(274),		-- Troll Hunter
 						}),
 						ach(9495, {		-- The Bone Collector
-							["groups"] = {
+							["g"] = {
 								i(111981),		-- Gladiator's Sanctum, Level 3 [Blueprints]
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
@@ -222,7 +223,7 @@ _.ExpansionFeatures =
 					}),
 					n(-126, {	-- Gnomish Gearworks
 						ach(9527, {		-- Terrific Technology
-							["groups"] = {
+							["g"] = {
 								a(i(111985)),	-- Gnomish Gearworks, Level 3 [Blueprints]
 								h(i(116201)),	-- Goblin Workshop, Level 3 [Blueprints]
 								crit(1),		-- Robo-Rooster
@@ -240,7 +241,7 @@ _.ExpansionFeatures =
 					}),
 					n(-110, {	-- Herb Garden
 						ach(9454, {	 -- Draenic Seed Collector
-							["groups"] = {
+							["g"] = {
 								i(111997),	-- Herb Garden, Level 3
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
@@ -248,7 +249,7 @@ _.ExpansionFeatures =
 					}),
 					m(579, {	-- Lunarfall Excavation
 						ach(9453, {	 -- Draenic Stone Collector
-							["groups"] = {
+							["g"] = {
 								i(111996),	-- Lunarfall Excavation, Level 3
 							},
 							["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
@@ -285,7 +286,7 @@ _.ExpansionFeatures =
 					}),
 					n(-129, {	-- Mage Tower
 						ach(9497, {		-- Finding Your Waystones
-							["groups"] = {
+							["g"] = {
 								a(i(109063)),	-- Mage Tower, Level 3 [Blueprints]
 								h(i(116197)),	-- Spirit Lodge, Level 3 [Blueprints]
 							},
@@ -319,7 +320,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(-99, { 	-- Stables
-						["groups"] = {
+						["g"] = {
 							ach(9539, {	-- Advanced Husbandry (Alliance)
 								i(116668),		-- Armored Frostboar
 								crit(1),		-- Maimclaw Killed
@@ -330,7 +331,7 @@ _.ExpansionFeatures =
 								crit(6),		-- Karak Killed
 							}),
 							ach(9526, {	-- Master of Mounts
-								["groups"] = {
+								["g"] = {
 									i(112003),		-- Stables, Level 3 [Blueprints]
 									crit(1),		-- Wolf Trained
 									crit(2),		-- Talbuk Trained
@@ -361,8 +362,8 @@ _.ExpansionFeatures =
 							}),
 						},
 					}),
-				}),
-			},
+				},
+			}),
 		}),
 	}),
 };

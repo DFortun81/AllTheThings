@@ -5,15 +5,15 @@ _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(590, {	-- Frostwall
-			["races"] = HORDE_ONLY,
-			["g"] = {
-				n(-16, { 	-- Rares
-					n(-103, {	-- Barn
+			n(-16, { 	-- Rares
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					garrisonBuilding(133, {	-- Barn (rank 1: 24, rank 2: 25, rank 3: 133)
 						o(239143, {		-- Glass of Warm Milk
 							i(120309),	-- Glass of Warm Milk (Pygmy Cow pet)
 						}),
 					}),
-					n(-107, {	-- Fishing Shack
+					garrisonBuilding(135, {	-- Fishing Shack (rank 1: 64, rank 2: 134, rank 3: 135)
 						i(118380, {	-- Hightfish Cap
 							["collectible"] = false,
 							["u"] = 15,
@@ -38,8 +38,8 @@ _.ExpansionFeatures =
 							}),
 						}),
 					}),
-				}),
-			},
+				},
+			}),
 		}),	
 	}),
 };
