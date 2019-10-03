@@ -218,6 +218,11 @@ _.NeverImplemented =
 				un(1, i(96264)), -- Leggings of the Chromatic Hydra
 				un(1, i(96265)), -- Robes of the Chromatic Hydra
 				un(1, i(96266)), -- Mantle of the Chromatic Hydra
+				un(1, i(88251)),	-- gladiators silk amice
+				un(1, i(88252)),	-- gladiators silk cowl
+				un(1, i(88253)),	-- gladiators silk handguards
+				un(1, i(88254)),	-- gladiators silk robe
+				un(1, i(88255)),	-- gladiators silk trousers
 			}),
 			cl(5, {	-- Priest
 				un(1, i(46230)),    -- Circlet of Sanctification
@@ -230,11 +235,21 @@ _.NeverImplemented =
 				un(1, i(46257)),    -- Rainments of Sanctification
 				un(1, i(46258)),    -- Robe of Sanctification
 				un(1, i(46259)),    -- Shoulderpads of Sanctification
+				un(1, i(88241)),	-- gladiators satin gloves
+				un(1, i(88242)),	-- gladiators satin hood
+				un(1, i(88243)),	-- gladiators satin leggings
+				un(1, i(88244)),	-- gladiators satin mantle
+				un(1, i(88245)),	-- gladiators satin robe
 				un(1, i(48745)),	-- Velen's Cowl
 				un(1, i(48746)),	-- Velen's Gloves
 				un(1, i(48747)),	-- Velen's Leggings
 				un(1, i(48748)),	-- Velen's Robe
 				un(1, i(48749)),	-- Velen's Shoulderpads
+				un(1, i(88221)),	-- gladiators mooncloth gloves
+				un(1, i(88222)),	-- gladiators mooncloth helm
+				un(1, i(88223)),	-- gladiators mooncloth leggings
+				un(1, i(88224)),	-- gladiators mooncloth mantle
+				un(1, i(88225)),	-- gladiators mooncloth robe
 				un(1, i(48750)),	-- Zabra's Cowl of Conquest
 				un(1, i(48751)),	-- Zabra's Gloves of Conquest
 				un(1, i(48752)),	-- Zabra's Leggings of Conquest
@@ -954,6 +969,15 @@ _.NeverImplemented =
 			un(1, i(166410)),	-- Flaskzertauren Mail Shoulderguards
 			un(1, i(12105)),	-- Pridemail Leggings
 			un(1, i(37420)),	-- Sharkproof Boots
+			un(1, i(54551)),	-- Unknown
+			un(1, i(56492)),	-- Unknown
+			un(1, i(56493)),	-- Unknown
+			un(1, i(56496)),	-- Unknown
+			un(1, i(56497)),	-- Unknown
+			un(1, i(56500)),	-- Unknown
+			un(1, i(56501)),	-- Unknown
+			un(1, i(56506)),	-- Unknown
+			un(1, i(56510)),	-- Unknown
 			un(1, i(106166)),	-- Frostwolf Ringmail Armor (Beta only, was reward from https://www.wowhead.com/quest=32985/fury-of-frostfire )
 			un(1, i(30289)),	-- Cenarion warden's belt
 			un(1, i(106178)),	-- Rangari Initiate Wristwraps (Beta only)

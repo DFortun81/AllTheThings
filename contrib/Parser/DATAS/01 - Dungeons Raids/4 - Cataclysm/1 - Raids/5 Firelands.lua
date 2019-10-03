@@ -969,6 +969,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["creatureID"] = 52530,
 						["g"] = {
 							i(71665),	-- Flametalon of Alysrazor (MOUNT!)
+							un(1, i(171796)),	-- Robes oF the cleansing Flame
+							un(1, i(171801)),	-- Vestment oF the cleansing Flame
+							un(1, i(171777)),	-- Flamewakers Tunic
+							un(1, i(171813)),	-- Erupting Volcanic Hauberk
 							i(171649),	-- Alysra's Razor
 							i(171650),	-- Greathelm of the Voracious Maw
 							i(171665),	-- Craterflame Spaulders
@@ -989,6 +993,13 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["creatureID"] = 53691,
 						["g"] = {
 							i(152975),	-- Smoldering Treat (PET!)
+							un(1, i(171734)),	-- Elementium Deathplate Legguards
+							un(1, i(171759)),	-- LegGuards o the molten giant
+							un(1, i(171810)),	-- FireHawk Leggings
+							un(1, i(171805)),	-- Balespiders Leggings
+							un(1, i(171800)),	-- Leggings oF the cleansing Flame
+							un(1, i(171795)),	-- Legwraps oF the cleansing Flame
+							un(1, i(171781)),	-- ImmolatiOn Legplates
 							i(171684),	-- Skullstealer Greataxe
 							i(171683),	-- Feeding Frenzy
 							i(171689),	-- Goblet of Anger

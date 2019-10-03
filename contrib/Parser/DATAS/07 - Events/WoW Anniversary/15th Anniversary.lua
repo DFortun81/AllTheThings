@@ -198,21 +198,21 @@ _.WorldEvents =
 						--	ach(5312),	-- The Abyss Will Gaze Back Into You
 						-- Old tier Items
 								i(171856),	-- Shadowflame Mantle
-								--i(60358),	-- Reinforced Sapphirium Shoulderguards
-								--i(60348),	-- Reinforced Sapphirium Pauldrons
-								--i(60362),	-- Reinforced Sapphirium Mantle
+								i(171872),	-- Reinforced Sapphirium Shoulderguards
+								i(171870),	-- Reinforced Sapphirium Pauldrons
+								i(171873),	-- Reinforced Sapphirium Mantle
 								i(171857),	-- Mercurial Shoulderwraps
 								i(171858),	-- Mercurial Mantle	
-								--i(60322),	-- Spaulders of the Raging Elements
-								--i(60317),	-- Shoulderwraps of the Raging Elements
-								--i(60311),	-- Mantle of the Raging Elements
-								i(171882),	-- Lightning-Charged Spulders
+								i(171866),	-- Spaulders of the Raging Elements
+								i(171865),	-- Shoulderwraps of the Raging Elements
+								i(171864),	-- Mantle of the Raging Elements
+								i(171863),	-- Lightning-Charged Spaulders
 								i(171868),	-- Earthen Shoulderguards
 								i(171867),	-- Earthen Pauldrons
-								--i(60302),	-- Wind Dancer's Spaulders
-								--i(60289),	-- Stormrider's Spaulders
-								--i(60284),	-- Stormrider's Shoulderwraps
-								--i(60279),	-- Stormrider's Mantle
+								i(171862),	-- Wind Dancer's Spaulders
+								i(171861),	-- Stormrider's Spaulders
+								i(171860),	-- Stormrider's Shoulderwraps
+								i(171859),	-- Stormrider's Mantle
 								--i(60353),	-- Magma Plated Shoulderguards
 								--i(60343),	-- Magma Plated Pauldrons
 								i(17155),	-- Firelord's Mantle
@@ -253,7 +253,7 @@ _.WorldEvents =
 							i(171878),	-- Stormrider's Helm
 							i(171880),	-- Stormrider's Headpiece
 							i(171879),	-- Stormrider's Cover
-							i(171888),	-- Magma Plated Faceguard
+							i(171890),	-- Magma Plated Faceguard
 						--	i(60243),	-- Firelord's Hood
 							--
 							i(171639),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
@@ -263,13 +263,51 @@ _.WorldEvents =
 							i(171632),	-- Rage of Ages
 							i(171629),	-- Mantle of Nefarius
 							i(171630),	-- Pauldrons of the Apocalypse
-						--	i(59222),	-- Spaulders of the Scarred Lady
+							i(171627),	-- Spaulders of the Scarred Lady
 							i(171637),	-- Shadow of Dread
-							i(171875),	-- Shadowblaze Robes
+							i(171636),	-- Shadowblaze Robes
 							i(171635),	-- Belt of the Blackhand
 							i(171628),	-- Belt of the Nightmare
 							i(171631),	-- Prestor's Talisman of Machination
 						--	i(122195),	-- Music Roll: Legends of Azeroth		
+						},
+					}),
+					e(198, {	-- Ragnaros
+						["creatureID"] = 52409,
+						["g"] = {
+							i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
+							i(171804),	-- Balespider's Hood
+							i(171794),	-- Cowl of the Cleansing Flame
+							i(171770),	-- Dark Phoenix Helmet
+							i(171736),	-- Elementium Deathplate Faceguard
+							i(171740),	-- Elementium Deathplate Helmet
+							i(171820),	-- Erupting Volcanic Faceguard
+							i(171815),	-- Erupting Volcanic Headpiece
+							i(171825),	-- Erupting Volcanic Helmet
+							i(171761),	-- Faceguard of the Molten Giant
+							i(171809),	-- Firehawk Hood
+							i(171774),	-- Flamewaker's Headguard
+							i(171785),	-- Helmet of the Molten Giant
+							i(171799),	-- Hood of the Cleansing Flame
+							i(171765),	-- Immolation Faceguard
+							i(171790),	-- Immolation Headguard
+							i(171780),	-- Immolation Helmet
+							i(171754),	-- Obsidian Arborweave Cover
+							i(171744),	-- Obsidian Arborweave Headpiece
+							i(171749),	-- Obsidian Arborweave Helm
+							un(1, i(171731)),	-- Sho'ravon, Greatstaff of Annihilation [Heroic? WTF Blizzard]
+							i(171732),	-- Sho'ravon, Greatstaff of Annihilation
+							i(171724),	-- Sulfuras, the Extinguished Hand
+							i(171727),	-- Ko'gun, Hammer of the Firelord
+							i(171725),	-- Arathar, the Eye of Flame
+							i(171728),	-- Crown of Flame
+							i(171726),	-- Choker of the Vanquished Lord
+							i(171663),	-- Pauldrons of Roaring Flame
+							i(171730),	-- Fingers of Incineration
+							i(171729),	-- Majordomo's Chain of Office
+							i(171646),	-- Matrix Restabilizer
+							i(171640),	-- Variable Pulse Lightning Capacitor
+							i(171647),	-- Vessel of Acceleration
 						},
 					}),
 				}),
