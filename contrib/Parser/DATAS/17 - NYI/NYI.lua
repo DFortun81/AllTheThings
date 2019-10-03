@@ -656,6 +656,14 @@ _.NeverImplemented =
 			un(1, i(107882)),	-- Unknown
 			un(1, i(107889)),	-- Unknown
 			un(1, i(107893)),	-- Unknown
+			un(1, i(37385)),	-- Unknown
+			un(1, i(37386)),	-- Unknown
+			un(1, i(37400)),	-- Unknown
+			un(1, i(39707)),	-- Unknown
+			un(1, i(37385)),	-- Unknown
+			un(1, i(37385)),	-- Unknown
+			un(1, i(37385)),	-- Unknown
+			un(1, i(37385)),	-- Unknown
 			un(1, i(109264)),	-- Unknown
 			un(1, i(19986)),	-- Pirate's Eye Patch (Leather)
 			un(1, i(54696)),	-- Scorpashi Breastplate
@@ -726,7 +734,7 @@ _.NeverImplemented =
 			un(1, i(54673)),	-- Unknown
 			un(1, i(54677)),	-- Unknown
 			un(1, i(54680)),	-- Unknown
-			un(1, i(7187)),	-- VanCleef's Boots (Leather)
+			un(1, i(7187)),		-- VanCleef's Boots (Leather)
 			un(1, i(41757)),	-- Vest of Unyielding Companionship (was in Wrath beta)
 			un(1, i(26029)),	-- Watchman's Bracers
 			un(1, i(54711)),	-- Wendigo Collar

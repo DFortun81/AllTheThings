@@ -29,13 +29,13 @@ _.WorldEvents =
 					}),
 					filter(52, {	-- Finger
 						un(31, i(172124)),	-- deep rooted ring
-						un(31, i(172139)),	-- don julio's band
+						un(31, i(172138)),	-- don julio's band
 						un(31, i(172140)),	-- don rodrigo's band
 					}),
 					n(-44, {	-- Leather
 						un(31, i(172104)),	-- Frostwolf Leather Belt
 						un(31, i(172108)),	-- stormpike leather girdle
-						un(31, i(172120)),	-- yeti hide bracers
+						un(31, i(172128)),	-- yeti hide bracers
 					}),
 					n(-45, {	-- Mail
 						un(31, i(172103)),	-- Frostwolf mail Belt
@@ -128,6 +128,7 @@ _.WorldEvents =
 						i(171889),	-- Deathmantle Chestguard
 						i(171894),	-- Destroyer Breastplate
 						i(171893),	-- Destroyer Chestguard
+						i(171899),	-- Deathmantle Chestguard
 						i(171907),	-- Nordrassil Chestguard
 						i(171909),	-- Nordrassil Chestpiece
 						i(171908),	-- Nordrassil Chestplate
@@ -156,6 +157,7 @@ _.WorldEvents =
 						--	ach(695),	-- The Battle for Mount Hyjal
 							-- Old Token Items
 							i(171942),	-- Cowl of Absolution
+							i(171941),	-- Cowl o the Tempest
 							i(171943),	-- Hood of Absolution
 							i(171940),	-- Hood of the Malefic
 							i(171929),	-- Lightbringer Faceguard
@@ -186,6 +188,90 @@ _.WorldEvents =
 							i(171497),	-- Legguards of Endless Rage
 						},
 					})
+				}),
+			}),
+			tier(4, {	-- Cataclysm
+				d(24, {	-- Timewalking
+					e(167, {	-- Cho'gall
+						["creatureID"] = 43324,
+						["groups"] = {
+						--	ach(5312),	-- The Abyss Will Gaze Back Into You
+						-- Old tier Items
+								i(171856),	-- Shadowflame Mantle
+								--i(60358),	-- Reinforced Sapphirium Shoulderguards
+								--i(60348),	-- Reinforced Sapphirium Pauldrons
+								--i(60362),	-- Reinforced Sapphirium Mantle
+								i(171857),	-- Mercurial Shoulderwraps
+								i(171858),	-- Mercurial Mantle	
+								--i(60322),	-- Spaulders of the Raging Elements
+								--i(60317),	-- Shoulderwraps of the Raging Elements
+								--i(60311),	-- Mantle of the Raging Elements
+								i(171882),	-- Lightning-Charged Spulders
+								i(171868),	-- Earthen Shoulderguards
+								i(171867),	-- Earthen Pauldrons
+								--i(60302),	-- Wind Dancer's Spaulders
+								--i(60289),	-- Stormrider's Spaulders
+								--i(60284),	-- Stormrider's Shoulderwraps
+								--i(60279),	-- Stormrider's Mantle
+								--i(60353),	-- Magma Plated Shoulderguards
+								--i(60343),	-- Magma Plated Pauldrons
+								i(17155),	-- Firelord's Mantle
+							--i(152972),	-- Twilight Summoning Portal (PET!)
+							i(171842),	-- Shalug'doom, the Axe of Unmaking
+							i(171847),	-- "Uhn'agh Fash, the Darkest Betrayal"
+							i(171854),	-- Twilight's Hammer
+							i(171845),	-- Helm of Maddening Whispers
+							i(171846),	-- Membrane of C'Thun
+							i(171844),	-- Battleplate of the Apocalypse
+							i(171849),	-- Shackles of the End of Days
+							i(171850),	-- Hands of the Twilight Council
+							i(171843),	-- Coil of Ten-Thousand Screams
+							i(171851),	-- Kilt of the Forgotten Battle
+							i(171848),	-- Treads of Hideous Transformation
+							i(171853),	-- Signet of the Fifth Circle
+						--	i(59500),	-- Fall of Mortality
+						},
+					}),
+					e(174, {	-- Nefarian's End
+						["creatureID"] = 41376,
+						["groups"] = {
+						--	ach(4849),	-- Keeping it in the Family	
+							-- Old tier Items
+						--	i(60249),	-- Shadowflame Hood
+						--	i(60346),	-- Reinforced Sapphirium Helmet
+							i(171892),	-- Reinforced Sapphirium Headguard
+							i(171891),	-- Reinforced Sapphirium Faceguard
+							i(171876),	-- Mercurial Hood
+							i(171877),	-- Mercurial Cowl	
+							i(171882),	-- Lightning-Charged Headguard
+							i(171885),	-- Helmet of the Raging Elements
+							i(171884),	-- Headpiece of the Raging Elements
+							i(171883),	-- Faceguard of the Raging Elements
+							i(171886),	-- Earthen Helemt
+							i(171887),	-- Earthen Faceguard
+							i(171881),	-- Wind Dancer's Helmet
+							i(171878),	-- Stormrider's Helm
+							i(171880),	-- Stormrider's Headpiece
+							i(171879),	-- Stormrider's Cover
+							i(171888),	-- Magma Plated Faceguard
+						--	i(60243),	-- Firelord's Hood
+							--
+							i(171639),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
+							i(171638),	-- Andoros, Fist of the Dragon King
+							i(171633),	-- Crul'korak, the Lightning's Arc
+							i(171634),	-- Akmin-Kurai, Dominion's Shield
+							i(171632),	-- Rage of Ages
+							i(171629),	-- Mantle of Nefarius
+							i(171630),	-- Pauldrons of the Apocalypse
+						--	i(59222),	-- Spaulders of the Scarred Lady
+							i(171637),	-- Shadow of Dread
+							i(171875),	-- Shadowblaze Robes
+							i(171635),	-- Belt of the Blackhand
+							i(171628),	-- Belt of the Nightmare
+							i(171631),	-- Prestor's Talisman of Machination
+						--	i(122195),	-- Music Roll: Legends of Azeroth		
+						},
+					}),
 				}),
 			}),
 			{	-- Mailbox
