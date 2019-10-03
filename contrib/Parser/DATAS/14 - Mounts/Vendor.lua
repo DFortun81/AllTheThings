@@ -88,7 +88,7 @@ _.Mounts =
 		i(89307),	-- Blue Shado-Pan Riding Tiger
 		i(13332),	-- Blue Skeletal Horse
 		i(25475),	-- Blue Wind Rider
-		un(2, i(116775)),	-- Breezestrider Stallion --Note!! Rep removed from Medallion of the Legion in hotfix for 8.0
+		i(116775),	-- Breezestrider Stallion 
 		i(128481),	-- Bristling Hellboar
 		un(1, i(128480)),	-- Bristling Hellboar
 		i(91005, {	-- Brown Dragon Turtle [Panda Only]
@@ -335,7 +335,7 @@ _.Mounts =
 		}),
 		i(47101),	-- Ochre Skeletal Warhorse
 		i(45595),	-- Orgrimmar Wolf
-		un(2, i(116776)),	-- Pale Thorngrazer --Note!! Rep removed from Medallion of the Legion in hotfix for 8.0
+		i(116776),	-- Pale Thorngrazer 
 		i(163589),	-- Reins of the Palehide Direhorn
 		i(2414),	-- Pinto
 		i(161879),	-- Proudmoore Sea Scout
