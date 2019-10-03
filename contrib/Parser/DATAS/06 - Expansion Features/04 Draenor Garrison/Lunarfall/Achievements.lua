@@ -17,12 +17,9 @@ _.ExpansionFeatures =
 						follower(465),	-- Harrison Jones
 						crit(1),		-- Master Relic Hunter
 					}),
-					ach(9101, 9546, {		-- Even More Plots [A] / [H]
-						ach(9100, 9545),		-- More Plots [A] / [H]
+					ach(9101, {		-- Even More Plots (A)
+						ach(9100),		-- More Plots (A)
 					}),
-					--[[ach(9101, {		-- Even More Plots (Alliance)
-						ach(9100),		-- More Plots (Alliance)
-					}),]]
 					ach(10015, 10016, {	-- Full Discography
 						--[[
 						crit(1),		-- The Burning Legion (Black Temple - Illidan Stormrage)
