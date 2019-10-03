@@ -3717,7 +3717,7 @@ app.L = {
 		{21, "|CFFFF0000These appearances are only available during the weekly Timewalking Event.\nOnly dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}; -- 42
 		{1, "|CFFFF0000This NPC or creature has been removed from the game.|r", "Removed NPCs (43)"}; -- 43
 		{2, "|CFFFF0000This Item was only available from the BMAH for a limited Time.|r", "BMAH Limited Time (44)"}; -- 44
-		{1, "|CFFFF0000Blizzard's Legacy Loot changes broke several Items and made them Unobtainable.\nAngerforge (BRD), Warpwood (DM West), Kara (Chess Event), and Halls of Stone (Tribunal of Ages)\nare all currently broken and need to be fixed.|r", "Broken Loot (45)"}; -- 45
+		{1, "|CFFFF0000Blizzard's Legacy Loot changes broke several Items and made them Unobtainable.\nWarpwood (DM West) & Kara (Chess Event)\nare currently broken and need to be fixed.|r", "Broken Loot (45)"}; -- 45
 	--	{3, "|CFFFF0000This item is only available from War Chests while under max level.|r", "Incursion Loot (46)"}; -- 46
 	--	{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation broke Gruul' loot table.|r", "Gruul Non-Tier Loot (47)"}; -- 47
 	};
