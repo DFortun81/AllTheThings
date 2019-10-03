@@ -670,7 +670,8 @@ _.NeverImplemented =
 	--	VARIOUS
 		q(54411),	-- triggers when speaking with Zidormi in Darkshore to travel back in time
 		q(58013),	-- Alliance war campaign, triggers when speaking to Anduin while on "This Ain't Mine"
-		
+
+
 	--	HONEYBACK HIVE
 		q(55906),	-- triggers when pulling out Seabreeze Bumblebee or Bumbles next to Barry at 69.1, 64.2 in Stormsong Valley
 		q(55904),	-- triggers when arriving at the hive at 62.9, 26.5 in Stormsong Valley
@@ -690,6 +691,7 @@ _.NeverImplemented =
 		q(56171),	-- not sure -- i had just done a Honeyback Harvester event and Gurg the Hivethief spawned but ran away because there wasn't enough DPS to kill him.  looted the jelly after the event, then ran to turn in since i was closeby.  fed the bee ~13 - 14 Thin Jelly (brought me to 1700 Friendly) and ran out of the cave and saw this and 57701 pop in chat.
 		q(57701),	-- same as above
 		q(56107),	-- when nascent bee changed into Juvenile Harvester (~11,000 Friendly rep)
+
 		
 	--	INCURSIONS
 		-- all 3 'secret supply chest' quests trigger at once.  possibly for 3 potential chests in the zone?  not sure why horde/alliance would have one shared quest and two different quests, though.
@@ -699,11 +701,21 @@ _.NeverImplemented =
 		q(54714),	-- Tiragarde Sound Secret Supply Chest
 		q(55347),	-- Tiragarde Sound Secret Supply Chest
 		
+
+	--	ISLAND EXPEDITIONS
+		q(55687),	-- Expedition GG-118 Micro-Jetpack — assembling a jetpack in Island Expeditions
+		q(55713),	-- Expedition A.T.O.M.I.K. Mk. II — rebuilding a robot in Island Expeditions
+		q(55686),	-- Upgrade Your Jetpack (Optional) — clicking on box of Azerite-Imbued Powder in Island Expeditions
+		q(56998),	-- triggered when turning in "Azerite for the Alliance," (53436) which also triggered "Azerite for the Horde" (53435).  i also got Rank 1 Volatile Worldvein from the quest, so maybe this is for receiving that?
+		q(57063),	-- triggered when using Zem'lan's Lost Treasure Map (created from combining fragments from Island Expeditions)
+		
+
 	--	PVP / WAR MODE
 		q(53636),	-- Looting a bounty in Stormsong as Horde (all 3 trigger at the same time)
 		q(53638),	-- Looting a bounty in Stormsong as Horde
 		q(53639),	-- Looting a bounty in Stormsong as Horde
 		
+
 	--	WORLD BOSSES
 		q(52997),	-- Azurethos, The Winged Typhoon Kill ID
 					-- Azurethos, The Winged Typhoon Bonus Roll
@@ -737,6 +749,7 @@ _.NeverImplemented =
 		q(51999),	-- Stone Golem killID
 		q(53612),	-- Pest Remover Mk. II killID
 	
+
 	--	TREASURES
 		q(51871),	-- Drustvar repeatable random chest
 		q(51875),	-- Drustvar repeatable random chest
