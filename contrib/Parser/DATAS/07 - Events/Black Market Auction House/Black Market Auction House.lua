@@ -6,28 +6,40 @@ _.WorldEvents =
 	n(-94, { 	-- Black Market AH
 		["groups"] = {
 			n(-160, {	-- Mounts
+				i(143643),	-- Abyss Worm
+				i(68823),	-- Armored Razzashi Raptor 
 				i(32458),	-- Ashes of Alar
 				i(95059),	-- Clutch of Ji-Kun
 				un(9, i(115484)),	-- Core Hound Chain
 				i(13335),	-- Deathcharger's Reins
 				i(78919),	-- Experiment 12-B
+				i(123890),	-- Felsteel Annihilator 
 				i(30480),	-- Fiery Warhorse's Reins
 				i(71665),	-- Flametalon of Alysrazor
 				i(50818),	-- Invincible's Reins
+				i(116660),	--  Ironhoof Destroyer
 				i(104253),	-- Kor'kron Juggernaut
+				i(143764),	-- Leywoven Flying Carpet
 				i(77069),	-- Life-Binder's Handmaiden
+				i(137574),	-- Living Infernal Core
 				i(45693),	-- Mimiron's Head
+				i(94230),	-- Reins of the Amber Primordial Direhorn
 				i(87777),	-- Reins of the Astral Cloud Serpent
 				i(43952),	-- Reins of the Azure Drake
 				i(77067),	-- Reins of the Blazing Drake
 				i(43953),	-- Reins of the Blue Drake
 				i(44151),	-- Reins of the Blue Proto-Drake
+				i(94228),	-- Reins of the Cobalt Primordial Direhorn 
 				i(63040),	-- Reins of the Drake of the North Wind
 				i(63041),	-- Reins of the Drake of the South Wind
+				i(43959),	-- Reins of the Grand Black War Mammoth (A)
+				i(44083),	-- Reins of the Grand Black War Mammoth (H)
 				i(44707),	-- Reins of the Green Proto-Drake
 				i(87771),	-- Reins of the Heavenly Onyx Cloud Serpent
+				i(94231),	-- Reins of the Jade Primordial Direhorn 
 				i(49636),	-- Reins of the Onyxian Drake
 				un(9, i(44175)),	-- Reins of the Plagued Proto-Drake
+				i(94229),	-- Reins of the Slate Primordial Direhorn
 				i(32768),	-- Reins of the Raven Lord
 				i(45802),	-- Reins of the Rusted Proto-Drake
 				i(95057),	-- Reins of the Thundering Cobalt Cloud Serpent
@@ -36,12 +48,18 @@ _.WorldEvents =
 				i(63043),	-- Reins of the Vitreous Stone Drake
 				i(43962),	-- Reins of the White Polar Bear
 				i(23720),	-- Riding Turtle
+				i(152789),	-- Shackled Ur'zul
+				i(116771),	-- Solar Spirehawk 
+				i(93666),	-- Spawn of Horridon 
 				i(69224),	-- Smoldering Egg of Millagazor
 				i(89783),	-- Son of Galleon's Saddle
 				un(9, i(19872)),	-- Swift Razzashi Raptor
+				i(68824),	-- Swift Zulian Panther
 				i(35513),	-- Swift White Hawkstrider
 				un(9, i(19902)),	-- Swift Zulian Tiger
 				i(54068),	-- Wooly White Rhino
+				i(147805),	-- Valarjar Stormwing
+				i(152790),	-- Vile Fiend
 				i(49286),	-- X-51 Nether-Rocket X-TREME
 
 			}),
