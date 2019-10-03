@@ -141,14 +141,48 @@ _.WorldEvents =
 					}),
 					cr(19622, e(1576, {	-- Kael'thas Sunstrider
 					--	ach(696),	-- Tempest Keep
+						--[[i(30236, {	-- Chestguard of the Vanquished Champion
+							i(30164),	-- Cataclysm Chestguard
+							i(30169),	-- Cataclysm Chestpiece
+							i(30185),	-- Cataclysm Chestplate
+							i(30129),	-- Crystalforge Breastplate
+							i(30123),	-- Crystalforge Chestguard
+							i(30134),	-- Crystalforge Chestpiece
+							i(30144),	-- Deathmantle Chestguard
+							i(31992),	-- Merciless Gladiator's Lamellar Chestpiece
+							i(32002),	-- Merciless Gladiator's Leather Tunic
+							i(32004),	-- Merciless Gladiator's Linked Armor
+							i(32009),	-- Merciless Gladiator's Mail Armor
+							i(32020),	-- Merciless Gladiator's Ornamented Chestguard
+							i(32029),	-- Merciless Gladiator's Ringmail Armor
+							i(32039),	-- Merciless Gladiator's Scaled Chestpiece
+						}),
+						i(30237, {	-- Chestguard of the Vanquished Defender
+							i(30118),	-- Destroyer Breastplate
+							i(30113),	-- Destroyer Chestguard
+							i(31972),	-- Merciless Gladiator's Dragonhide Tunic
+							i(31991),	-- Merciless Gladiator's Kodohide Tunic
+							i(32019),	-- Merciless Gladiator's Mooncloth Robe
+							i(30486),	-- Merciless Gladiator's Plate Chestpiece
+							i(32038),	-- Merciless Gladiator's Satin Robe
+							i(32060),	-- Merciless Gladiator's Wyrmhide Tunic
+							i(30216),	-- Nordrassil Chestguard
+							i(30231),	-- Nordrassil Chestpiece
+							i(30222),	-- Nordrassil Chestplate
+							i(30159),	-- Shroud of the Avatar
+							i(30150),	-- Vestments of the Avatar
+						}),--]]
+						i(171898),	-- Rift Stalker Hauberk
+						i(171906),	-- Robe of the Corruptor
+						i(171905),	-- Robes of Tirisfal##
 						i(171494),	-- Band of the Ranger-General
-					--[[	i(29990),	-- Crown of the Sun
+					--[[i(29990),	-- Crown of the Sun
 						i(29987),	-- Gauntlets of the Sun King
 						i(29995),	-- Leggings of Murderous Intent
 						i(29996),	-- Rod of the Sun King
 						i(29992),	-- Royal Cloak of the Sunstriders
 						i(29998),	-- Royal Gauntlets of Silvermoon
-						i(29991),	-- Sunhawk Leggings
+						i(171488),	-- Sunhawk Leggings
 						i(29989),	-- Sunshower Light Cloak
 						i(29994),	-- Thalassian Wildercloak--]]
 						i(171485),	-- The Nexus Key
@@ -158,18 +192,36 @@ _.WorldEvents =
 						["creatureID"] = 17968,
 						["groups"] = {
 						--	ach(695),	-- The Battle for Mount Hyjal
+							-- Old Token Items
+							i(171942),	-- Cowl of Absolution
+							i(171943),	-- Hood of Absolution
+							i(171940),	-- Hood of the Malefic
+							i(171929),	-- Lightbringer Faceguard
+							i(171930),	-- Lightbringer Greathelm
+							i(171931),	-- Lightbringer War-Helm
+							i(171932),	-- Gronnstalker's Helmet
+							i(171927),	-- Onslaught Battle-Helm
+							i(171928),	-- Onslaught Greathelm
+							i(171935),	-- Skyshatter Cover
+							i(171934),	-- Skyshatter Headguard
+							i(171933),	-- Skyshatter Helmet
+							i(171936),	-- Slayer's Helm
+							i(171938),	-- Thunderheart Cover
+							i(171939),	-- Thunderheart Headguard
+							i(171937),	-- Thunderheart Helmet
+							--
 							i(171502),	-- Apostle of Argus
 							i(171496),	-- Cataclysm's Edge
 							i(171504),	-- Tempest of Chaos
 							i(171500),	-- Bristleblitz Striker
 							i(171503),	-- Antonidas' Aegis of Rapt Concentration
 							i(171505),	-- Scepter of Purification
-							i(30907),	-- Mail of Fevered Pursuit
-							i(30905),	-- Midnight Chestguard
-							i(30913),	-- Robes of Rhonin
-							i(30904),	-- Savior's Grasp
-							i(30912),	-- Leggings of Eternity
-							i(30903),	-- Legguards of Endless Rage
+							i(171501),	-- Mail of Fevered Pursuit
+							i(171499),	-- Midnight Chestguard
+							i(171507),	-- Robes of Rhonin
+							i(171498),	-- Savior's Grasp
+							i(171506),	-- Leggings of Eternity
+							i(171497),	-- Legguards of Endless Rage
 						},
 					})
 				}),
