@@ -41,6 +41,7 @@ _.GroupFinder =
 				i(113735),	-- Drifting Cloud Necklace*
 				i(113755),	-- Ring of Flowing Water*
 				i(113734),	-- Tranquil Breeze Pendant of the Peerless
+				i(113756),	-- Loop of Inner Clarity
 			},
 		}),
 		i(114662, {	-- Tranquil Satchel of Helpful Goods 85-87, 88-90

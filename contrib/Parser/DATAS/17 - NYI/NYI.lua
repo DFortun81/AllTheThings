@@ -632,6 +632,8 @@ _.NeverImplemented =
 			un(1, i(37176)),	-- Cavern Leather Treads
 			un(1, i(30288)),	-- Cenarion wardens gloves
 			un(1, i(54698)),	-- Ceremonial Leather Loincloth
+			un(1, i(166403)),	-- Flaskzertauren's Leather Vest#
+			un(1, i(166404)),	-- Flaskzertaurens Leather Tunic
 			un(1, i(5821)),		-- Darkstalker Boots (Leather)
 			un(1, i(54683)),	-- Dusky Leather Armor
 			un(1, i(39410)),	-- Gauntlets of Rampant Destruction

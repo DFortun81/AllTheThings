@@ -34,7 +34,7 @@ _.WorldEvents =
 					}),
 					n(-44, {	-- Leather
 						un(31, i(172104)),	-- Frostwolf Leather Belt
-						un(31, i(172109)),	-- stormpike leather girdle
+						un(31, i(172108)),	-- stormpike leather girdle
 						un(31, i(172120)),	-- yeti hide bracers
 					}),
 					n(-45, {	-- Mail
@@ -77,6 +77,103 @@ _.WorldEvents =
 					}),
 				},
 			},
+			tier(2, { 	-- Burning Crusade
+				d(24, {	-- Timewalking
+					e(1572, {	-- Lady Vashj
+						["creatureID"] = 21212,
+						["groups"] = {
+						--[[	ach(694),	-- Serpentshrine Cavern
+							i(97554),	-- Dripping Strider Egg (PET!)
+							i(30242, {	-- Helm of the Vanquished Champion
+								i(30125),	-- Crystalforge Faceguard
+								i(30136),	-- Crystalforge Greathelm
+								i(30131),	-- Crystalforge War-Helm
+								i(31997),	-- Merciless Gladiator's Lamellar Helm
+								i(32022),	-- Merciless Gladiator's Ornamented Headcover
+								i(32041),	-- Merciless Gladiator's Scaled Helm
+								i(30146),	-- Deathmantle Helm
+								i(31999),	-- Merciless Gladiator's Leather Helm
+								i(30166),	-- Cataclysm Headguard
+								i(30171),	-- Cataclysm Headpiece
+								i(30190),	-- Cataclysm Helm
+								i(32006),	-- Merciless Gladiator's Linked Helm
+								i(32011),	-- Merciless Gladiator's Mail Helm
+								i(32031),	-- Merciless Gladiator's Ringmail Helm
+							}),
+							i(30243, {	-- Helm of the Vanquished Defender
+								i(31968),	-- Merciless Gladiator's Dragonhide Helm
+								i(31988),	-- Merciless Gladiator's Kodohide Helm
+								i(32057),	-- Merciless Gladiator's Wyrmhide Helm
+								i(30228),	-- Nordrassil Headdress
+								i(30219),	-- Nordrassil Headguard
+								i(30233),	-- Nordrassil Headpiece
+								i(30152),	-- Cowl of the Avatar
+								i(30161),	-- Hood of the Avatar
+								i(32016),	-- Merciless Gladiator's Mooncloth Hood
+								i(32035),	-- Merciless Gladiator's Satin Hood
+								i(30120),	-- Destroyer Battle-Helm
+								i(30115),	-- Destroyer Greathelm
+								i(30488),	-- Merciless Gladiator's Plate Helm
+							}),
+							i(30244, {	-- Helm of the Vanquished Hero
+								i(31962),	-- Merciless Gladiator's Chain Helm
+								i(30141),	-- Rift Stalker Helm
+								i(30206),	-- Cowl of Tirisfall
+								i(32048),	-- Merciless Gladiator's Silk Cowl
+								i(30212),	-- Hood of the Corruptor
+								i(31974),	-- Merciless Gladiator's Dreadweave Hood
+								i(31980),	-- Merciless Gladiator's Felweave Cowl
+							}),--]]
+							i(171481),	-- Glorious Gauntlets of Crestfall
+							i(171471),	-- Krakken-Heart Breastplate
+							i(171472),	-- Fang of Vashj
+							i(171474),	-- Serpent Spine Longbow
+							i(171477),	-- Lightfathom Scepter
+						--[[
+							i(30111),	-- Runetotem's Mantle
+							i(30107),	-- Vestments of the Sea-Witch
+							i(30106),	-- Belt of One-Hundred Deaths
+							i(30104),	-- Cobta-Lash Boots
+							i(30110),	-- Coral Band of the Revived
+							i(30109),	-- Ring of Endless Coils
+							i(30621),	-- Prism of Inner Calm--]]
+						},
+					}),
+					cr(19622, e(1576, {	-- Kael'thas Sunstrider
+					--	ach(696),	-- Tempest Keep
+						i(171494),	-- Band of the Ranger-General
+					--[[	i(29990),	-- Crown of the Sun
+						i(29987),	-- Gauntlets of the Sun King
+						i(29995),	-- Leggings of Murderous Intent
+						i(29996),	-- Rod of the Sun King
+						i(29992),	-- Royal Cloak of the Sunstriders
+						i(29998),	-- Royal Gauntlets of Silvermoon
+						i(29991),	-- Sunhawk Leggings
+						i(29989),	-- Sunshower Light Cloak
+						i(29994),	-- Thalassian Wildercloak--]]
+						i(171485),	-- The Nexus Key
+						i(171490),	-- Twinblade of the Phoenix
+					})),
+					e(1581, {	-- Archimonde
+						["creatureID"] = 17968,
+						["groups"] = {
+						--	ach(695),	-- The Battle for Mount Hyjal
+							i(171502),	-- Apostle of Argus
+							i(171496),	-- Cataclysm's Edge
+							i(171504),	-- Tempest of Chaos
+							i(171500),	-- Bristleblitz Striker
+							i(171503),	-- Antonidas' Aegis of Rapt Concentration
+							i(171505),	-- Scepter of Purification
+							i(30907),	-- Mail of Fevered Pursuit
+							i(30905),	-- Midnight Chestguard
+							i(30913),	-- Robes of Rhonin
+							i(30904),	-- Savior's Grasp
+							i(30912),	-- Leggings of Eternity
+							i(30903),	-- Legguards of Endless Rage
+						},
+					})
+				}),
+			}),
 			{	-- Mailbox
 				["npcID"] = -297,	-- Mailbox
 				["g"] = {
@@ -84,11 +181,11 @@ _.WorldEvents =
 						["itemID"] = 172014,	-- Anniversary Gift
 						["u"] = 31,				-- WoW Anniversary Filter
 						["g"] = {
-						--[[	{	-- Celebration Package
-								["itemID"] = 162636,	-- Celebration Package
+							{	-- Lil' Nefarian
+								["itemID"] = 172016,	-- Lil' Nefarian
 								["u"] = 31,				-- WoW Anniversary Filter
 							},
-							{	-- A Slightly More Urgent Letter from the Timewalkers [Horde]
+						--[[{	-- A Slightly More Urgent Letter from the Timewalkers [Horde]
 								["itemID"] = 147881,	-- A Slightly More Urgent Letter from the Timewalkers
 								["questID"] = 47251,	-- Interesting Things
 								["races"] = HORDE_ONLY,
