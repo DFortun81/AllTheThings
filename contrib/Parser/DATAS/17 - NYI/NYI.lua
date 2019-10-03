@@ -1227,7 +1227,12 @@ _.NeverImplemented =
 			un(1, i(163457)),	-- Honorbound Centurion's Helmet
 			un(1, i(163454)),	-- Honorbound Centurion's Pauldrons
 			un(1, i(163462)),	-- Honorbound Centurion's Girdle
-			
+			un(1, i(39649)),	-- unknown
+			un(1, i(41759)),	-- unknown
+			un(1, i(42885)),	-- unknown
+			un(1, i(43848)),	-- unknown
+			un(1, i(43938)),	-- unknown
+			un(1, i(54544)),	-- unknown
 			un(1, i(166400)),	-- flaskzertaurens plate chestguards
 			un(1, i(166401)),	-- flaskzertaurens plate cuirass
 			un(1, i(166411)),	-- flaskzertaurens plate shoulderguards
@@ -1588,6 +1593,19 @@ _.NeverImplemented =
 		un(1, i(31498)),	-- Unknown
 		un(1, i(31500)),	-- Unknown
 		un(1, i(31502)),	-- Unknown
+		un(1, i(169177)),	-- Blueprint: TK32(DNT))
+		un(1, i(169178)),	-- Blueprint: TK33(DNT))
+		un(1, i(169179)),	-- Blueprint: TK34(DNT))
+		un(1, i(169180)),	-- Blueprint: TK35(DNT))
+		un(1, i(169181)),	-- Blueprint: TK36(DNT))
+		un(1, i(169182)),	-- Blueprint: TK37(DNT))
+		un(1, i(169183)),	-- Blueprint: TK38(DNT))
+		un(1, i(169184)),	-- Blueprint: TK39(DNT))
+		un(1, i(169185)),	-- Blueprint: TK40(DNT))
+		un(1, i(169186)),	-- Blueprint: TK41(DNT))
+		un(1, i(169187)),	-- Blueprint: TK42(DNT))
+		un(1, i(169188)),	-- Blueprint: TK43(DNT))
+		un(1, i(169189)),	-- Blueprint: TK44(DNT))
 		un(1, i(165884)),	-- Treasure Map of molten clay
 		un(1, i(165899)),	-- Treasure Map of whispering reef
 		un(1, i(165900)),	-- Treasure Map of verdant wilds
@@ -3183,6 +3201,7 @@ _.NeverImplemented =
 		n(-347, {	-- Bows
 			un(1, i(5748)),	-- Centaur Longbow
 			un(1, i(108783)),   	-- Unknown
+			un(1, i(167144)),   	-- Unknown
 			un(1, i(115294)),	-- Spectral Longbow
 			un(1, i(109283)),   	-- 6.0 QA Combat Test Hunter Bow
 			un(1, i(140717)),	-- Marksman Recurve Bow
@@ -3294,6 +3313,7 @@ _.NeverImplemented =
 			un(1, i(93440)),	-- crafted dreadful gladiator's endgame
 			un(1, i(93450)),	-- crafted dreadful gladiator's reprieve
 			un(1, i(159941)),	-- Unknown
+			un(1, i(153642)),	-- Unknown
 			un(1, i(161933)),	-- Unknown
 			un(1, i(161937)),	-- Unknown
 			un(1, i(165277)),	-- Unknown
@@ -3356,6 +3376,11 @@ _.NeverImplemented =
 			un(1, i(43922)),	-- Honed Lightblade
 			--un(1, i(134067)),	-- Unknown
 			un(1, i(162447)),	-- Marrow Render
+			un(1, i(158508)),	-- Scalawag's Cutlass
+			un(1, i(158567)),	-- Necropolis sentry sword
+			un(1, i(161305)),	-- ashvane capatains shortsword
+			un(1, i(161308)),	-- ashvane capatains quickblade
+			un(1, i(161309)),	-- ashvane capatains gladius
 			un(1, i(93145)),	-- Scavenged Pandaren Sword
 			un(1, i(64817)),	-- Bloodthirsty Gladiator's Quickblade (Epic BG Item, never made it out of beta)
 			un(1, i(64858)),	-- Bloodthirsty Gladiator's Slicer (Epic BG Item, never made it out of beta))
@@ -3542,6 +3567,8 @@ _.NeverImplemented =
 			un(1, i(161926)),	-- Talanji's Salutary Scepter (never added)
 			un(1, i(159923)),	-- Unknown
 			un(1, i(161929)),	-- Unknown
+			un(1, i(152871)),	-- Seapriest's Wand
+			un(1, i(152873)),	-- Talanji's Salutary Scepter
 			un(1, i(64694)),	-- Bloodthirsty Gladiator's Baton of Light
 			un(1, i(64861)),	-- Bloodthirsty Gladiator's Touch of Defeat
 			un(1, i(165275)),	-- Unknown
