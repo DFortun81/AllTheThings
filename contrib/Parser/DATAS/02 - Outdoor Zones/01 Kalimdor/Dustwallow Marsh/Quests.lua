@@ -404,7 +404,7 @@ _.Zones =
 				q(6607,  {	-- Nat Pagle, Angler Extreme
 					["provider"] = { "n", 12919 },	-- Nat Pagle
 					["coord"] = { 58.6, 60.2, 70 },
-					["requireSkill"] = 129,	-- Fishing
+					["requireSkill"] = 356,	-- Fishing
 					["g"] = {
 						i(45858)	-- Nat's Lucky Fishing Pole
 					},
@@ -413,7 +413,7 @@ _.Zones =
 					["provider"] = { "n", 12919 },	-- Nat Pagle
 					["coord"] = { 58.6, 60.2, 70 },
 					["description"] = "If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",
-					["requireSkill"] = 129,	-- Fishing
+					["requireSkill"] = 356,	-- Fishing
 					["g"] = {
 						i(45858),	-- Nat's Lucky Fishing Pole
 					},

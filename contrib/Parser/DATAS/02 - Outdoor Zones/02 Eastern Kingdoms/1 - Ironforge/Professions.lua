@@ -116,6 +116,7 @@ _.Zones =
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 35,
+							["u"] = 40,    -- Legacy Quests
 						}),
 						q(29353, {	-- Keepin' the Haggis Flowin'
 							["provider"] = { "n", 5159 },	-- Daryl Riknussun
@@ -241,9 +242,10 @@ _.Zones =
 							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
 							["coord"] = { 48.4, 8.2, 87 },
 							["isBreadcrumb"] = true,
-							["requireSkill"] = 129,	-- Fishing
+							["requireSkill"] = 356,	-- Fishing
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 35,
+							["u"] = 40,    -- Legacy Quests
 						}),
 						q(29347, {	-- Live Bait
 							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand

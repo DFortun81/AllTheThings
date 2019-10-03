@@ -349,7 +349,7 @@ _.Zones =
 							["provider"] = { "n", 3332 },	-- Lumak
 							["coord"] = { 66.6, 41.6, 85 },
 							["races"] = HORDE_ONLY,
-							["requireSkill"] = 129,	-- Fishing
+							["requireSkill"] = 356,	-- Fishing
 							["isBreadcrumb"] = true,
 						}),
 					}),
