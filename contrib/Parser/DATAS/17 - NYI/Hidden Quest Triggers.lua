@@ -706,8 +706,11 @@ _.NeverImplemented =
 		q(55687),	-- Expedition GG-118 Micro-Jetpack — assembling a jetpack in Island Expeditions
 		q(55713),	-- Expedition A.T.O.M.I.K. Mk. II — rebuilding a robot in Island Expeditions
 		q(55686),	-- Upgrade Your Jetpack (Optional) — clicking on box of Azerite-Imbued Powder in Island Expeditions
+		q(55617),	-- Expedition Siege Engine — assembling siege engine in Island Expeditions
 		q(56998),	-- triggered when turning in "Azerite for the Alliance," (53436) which also triggered "Azerite for the Horde" (53435).  i also got Rank 1 Volatile Worldvein from the quest, so maybe this is for receiving that?
 		q(57063),	-- triggered when using Zem'lan's Lost Treasure Map (created from combining fragments from Island Expeditions)
+		q(56520),	-- IE-related mission — not sure if this is the Stalwart Worldvein Rank 2 one or one that awarded Saurok Scale Headgear
+		q(57060),	-- IE-related mission — not sure if this is the Stalwart Worldvein Rank 2 one or one that awarded Saurok Scale Headgear
 		
 
 	--	PVP / WAR MODE

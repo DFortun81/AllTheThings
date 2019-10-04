@@ -45,6 +45,562 @@ _.Holidays = bubbleDown({["u"] = 26},
 					["maps"] = { 90 },	-- Undercity
 					["u"] = 26,	-- Hallow's End
 				}),
+				q(12380, {	-- Candy Bucket — Arathi Highlands, Hammerfall, Horde
+					["isYearly"] = true,
+					["coord"] = { 69.0, 33.4, 14 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 14 },	-- Arathi Highlands
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28954, {	-- Candy Bucket — Arathi Highlands, Refuge Point, Alliance
+					["isYearly"] = true,
+					["coord"] = { 40.1, 49, 14 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 14 },	-- Arathi Highlands
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28956, {	-- Candy Bucket — Badlands, Dragon's Mouth, Alliance
+					["isYearly"] = true,
+					["coord"] = { 20.9, 56.2, 15 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 15 },	-- Badlands
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28955, {	-- Candy Bucket — Badlands, Fuselight, neutral
+					["isYearly"] = true,
+					["coord"] = { 65.9, 35.8, 15 },
+					["maps"] = { 15 },	-- Badlands
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28957, {	-- Candy Bucket — Badlands, New Kargath, Horde
+					["isYearly"] = true,
+					["coord"] = { 18.3, 42.8, 15 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 15 },	-- Badlands
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28959, {	-- Candy Bucket — Blasted Lands, Dreadmaul Hold, Horde
+					["isYearly"] = true,
+					["coord"] = { 40.5, 11.4, 17 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 17 },	-- Blasted Lands
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28960, {	-- Candy Bucket — Blasted Lands, Nethergarde Keep, Alliance
+					["isYearly"] = true,
+					["coord"] = { 60.7, 14.2, 17 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 17 },	-- Blasted Lands
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28961, {	-- Candy Bucket — Blasted Lands, Surwich, Alliance
+					["isYearly"] = true,
+					["coord"] = { 44.4, 87.7, 17 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 17 },	-- Blasted Lands
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12397, {	-- Candy Bucket — Cape of Stranglethorn, Booty Bay, neutral
+					["isYearly"] = true,
+					["coord"] = { 27.1, 77.3, 210 },
+					["maps"] = { 210 },	-- The Cape of Stranglethorn
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28969, {	-- Candy Bucket — Cape of Stranglethorn, Hardwrench Hideaway, Horde
+					["isYearly"] = true,
+					["coord"] = { 35.1, 27.2, 210 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 210 },	-- The Cape of Stranglethorn
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12332, {	-- Candy Bucket — Dun Morogh, Kharanos, Alliance
+					["isYearly"] = true,
+					["coord"] = { 54.5, 50.7, 27 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 27 },	-- Dun Morogh
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12344, {	-- Candy Bucket — Duskwood, Darkshire, Alliance
+					["isYearly"] = true,
+					["coord"] = { 73.9, 44.4, 47 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 47 },	-- Duskwood
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12402, {	-- Candy Bucket — Eastern Plaguelands, Light's Hope Chapel, neutral
+					["isYearly"] = true,
+					["coord"] = { 75.6, 52.4, 23 },
+					["maps"] = { 23 },	-- Eastern Plaguelands
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12286, {	-- Candy Bucket — Elwynn Forest, Goldshire, Alliance
+					["isYearly"] = true,
+					["coord"] = { 43.7, 66.0, 37 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 37 },	-- Elwynn Forest
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12365, {	-- Candy Bucket — Eversong Woods, Fairbreeze Village, Horde
+					["isYearly"] = true,
+					["coord"] = { 43.7, 71.1, 94 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 94 },	-- Eversong Woods
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12364, {	-- Candy Bucket — Eversong Woods, Falconwing Square, Horde
+					["isYearly"] = true,
+					["coord"] = { 48.1, 47.8, 94 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 94 },	-- Eversong Woods
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12373, {	-- Candy Bucket — Ghostlands, Tranquillien, Horde
+					["isYearly"] = true,
+					["coord"] = { 48.1, 47.8, 94 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 95 },	-- Ghostlands
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28962, {	-- Candy Bucket — Hillsbrad Foothills, Eastpoint Tower, Horde
+					["isYearly"] = true,
+					["coord"] = { 60.3, 63.8, 25 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 25 },	-- Hillsbrad Foothills
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12376, {	-- Candy Bucket — Hillsbrad Foothills, Tarren Hill
+					["isYearly"] = true,
+					["coord"] = { 57.9, 47.3, 25 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 25 },	-- Hillsbrad Foothills
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12351, {	-- Candy Bucket — Hinterlands, Aerie Peak, Alliance
+					["isYearly"] = true,
+					["coord"] = { 14.2, 44.7, 26 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 26 },	-- The Hinterlands
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28971, {	-- Candy Bucket — Hinterlands, Hiri'watha Research Station, Horde
+					["isYearly"] = true,
+					["coord"] = { 31.9, 57.9, 26 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 26 },	-- The Hinterlands
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12387, {	-- Candy Bucket — Hinterlands, Revantusk Village, Horde
+					["isYearly"] = true,
+					["coord"] = { 78.2, 81.4, 26 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 26 },	-- The Hinterlands
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28970, {	-- Candy Bucket — Hinterlands, Stormfeather Outpost, Alliance
+					["isYearly"] = true,
+					["coord"] = { 66.2, 44.4, 26 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 26 },	-- The Hinterlands
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12335, {	-- Candy Bucket — Ironforge, The Commons, Alliance
+					["isYearly"] = true,
+					["coord"] = { 18.6, 51.3, 87 },
+					["maps"] = { 87 },	-- Ironforge
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28963, {	-- Candy Bucket — Loch Modan, Farstrider Lodge, Alliance
+					["isYearly"] = true,
+					["coord"] = { 82.9, 63.6, 48 },
+					["maps"] = { 48 },	-- Loch Modan
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12339, {	-- Candy Bucket — Loch Modan, Thelsamar, Alliance
+					["isYearly"] = true,
+					["coord"] = { 35.5, 48.4, 48 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 48 },	-- Loch Modan
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28964, {	-- Candy Bucket — Northern Stranglethorn, Fort Livingston, Alliance
+					["isYearly"] = true,
+					["coord"] = { 53.1, 66.9, 50 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 50 },	-- Northern Stranglethorn
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12382, {	-- Candy Bucket — Northern Stranglethorn, Grom'gol Base Camp, Horde
+					["isYearly"] = true,
+					["coord"] = { 37.3, 51.7, 50 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 50 },	-- Northern Stranglethorn
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12342, {	-- Candy Bucket — Redridge Mountains, Lakeshire, Alliance
+					["isYearly"] = true,
+					["coord"] = { 26.4, 41.6, 49 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 49 },	-- Redridge Mountains
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28965, {	-- Candy Bucket — Searing Gorge, Iron Summit, neutral
+					["isYearly"] = true,
+					["coord"] = { 39.4, 66.1, 32 },
+					["maps"] = { 32 },	-- Searing Gorge
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12370, {	-- Candy Bucket — Silvermoon City, The Bazaar, Horde
+					["isYearly"] = true,
+					["coord"] = { 67.6, 73.2, 110 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 110 },	-- Silvermoon City
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12369, {	-- Candy Bucket — Silvermoon City, The Royal Exchange, Horde
+					["isYearly"] = true,
+					["coord"] = { 79.6, 57.9, 110 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 110 },	-- Silvermoon City
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28966, {	-- Candy Bucket — Silverpine Forest, Forsaken Rear Guard, Horde
+					["isYearly"] = true,
+					["coord"] = { 44.3, 20.4, 21 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 21 },	-- Silverpine Forest
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12371, {	-- Candy Bucket — Silverpine Forest, The Sepulcher, Horde
+					["isYearly"] = true,
+					["coord"] = { 46.4, 42.8, 21 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 21 },	-- Silverpine Forest
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12336, {	-- Candy Bucket — Stormwind, The Trade District, Alliance
+					["isYearly"] = true,
+					["coord"] = { 60.5, 75.2, 84 },
+					["maps"] = { 84 },	-- Stormwind City
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28967, {	-- Candy Bucket — Swamp of Sorrows, Bogpaddle, neutral
+					["isYearly"] = true,
+					["coord"] = { 71.7, 14.0, 51 },
+					["maps"] = { 51 },	-- Swamp of Sorrows
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12384, {	-- Candy Bucket — Swamp of Sorrows, Stonard, Horde
+					["isYearly"] = true,
+					["coord"] = { 46.9, 56.7, 51 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 51 },	-- Swamp of Sorrows
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28968, {	-- Candy Bucket — Swamp of Sorrows, The Harborage, Alliance
+					["isYearly"] = true,
+					["coord"] = { 29.0, 32.6, 51 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 51 },	-- Swamp of Sorrows
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12363, {	-- Candy Bucket — Tirisfal Glades, Brill, Horde
+					["isYearly"] = true,
+					["coord"] = { 60.9, 51.5, 18 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 18 },	-- Tirisfal Glades
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28972, {	-- Candy Bucket — Tirisfal Glades, The Bulwark, Horde
+					["isYearly"] = true,
+					["coord"] = { 83.0, 72.0, 18 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 18 },	-- Tirisfal Glades
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12368, {	-- Candy Bucket — Undercity, The Trade Quarter, Horde
+					["isYearly"] = true,
+					["coord"] = { 67.7, 37.9, 90 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 90 },	-- Undercity
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28987, {	-- Candy Bucket — Western Plaguelands, Andorhal, Horde
+					["isYearly"] = true,
+					["coord"] = { 48.2, 63.7, 22 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 22 },	-- Western Plaguelands
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28988, {	-- Candy Bucket — Western Plaguelands, Chillwind Camp, Alliance
+					["isYearly"] = true,
+					["coord"] = { 43.4, 84.5, 22 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 22 },	-- Western Plaguelands
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12343, {	-- Candy Bucket — Wetlands, Menethil Harbor, Alliance
+					["isYearly"] = true,
+					["coord"] = { 10.8, 60.9, 56 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 56 },	-- Wetlands
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28990, {	-- Candy Bucket — Wetlands, Swiftgear Station, Alliance
+					["isYearly"] = true,
+					["coord"] = { 26.1, 25.9, 56 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 56 },	-- Wetlands
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12340, {	-- Candy Bucket — Westfall, Sentinel Hill, Alliance
+					["isYearly"] = true,
+					["coord"] = { 52.9, 53.6, 52 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 52 },	-- Westfall
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(28991, {	-- Candy Bucket — Wetlands, Greenwarden's Grove, Alliance
+					["isYearly"] = true,
+					["coord"] = { 58.1, 39.2, 56 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 56 },	-- Wetlands
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
 				q(8353,  {	-- Chicken Clucking for a Mint (Alliance)
 					["sourceQuests"] = { 8311 },	-- Hallow's End Treats for Jesper!
 					["repeatable"] = true,
