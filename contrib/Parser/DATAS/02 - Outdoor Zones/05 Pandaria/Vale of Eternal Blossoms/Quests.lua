@@ -24,6 +24,7 @@ _.Zones =
 				}),
 				{	---------- Journey to the Timeless Isle
 					["allianceQuestID"] = 33231,	-- Journey to the Timeless Isle
+					["isBreadcrumb"] = true, 	-- Possible to skip if you just fly to the Isle after picking up Flash of Bronze
 					["hordeQuestID"] = 33232,	-- Journey to the Timeless Isle
 					["sourceQuests"] = {
 						33229,	-- A Flash of Bronze...

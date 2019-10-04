@@ -1099,6 +1099,7 @@ _.Zones =
 				}),
 				q(52070, {	-- Bauer Backup
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,	-- Crumb for 50614 -- Freedom of the Sea
 				}),
 				q(51214, {	-- Be A Dear
 					["races"] = ALLIANCE_ONLY,
@@ -1203,6 +1204,7 @@ _.Zones =
 				q(51371),	-- Flavorable Offering
 				q(50614, {	-- Freedom for the Sea
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 50614 },
 				}),
 				q(49831, {	-- From the Depths
 					["races"] = ALLIANCE_ONLY,
