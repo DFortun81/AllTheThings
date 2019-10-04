@@ -806,7 +806,7 @@ _.Zones =
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-						i(67275, {	-- Formula: Magic Lamp
+						i(67312, {	-- Formula: Magic Lamp
 							["races"] = ALLIANCE_ONLY,
 							["cost"] = { { "i", 52555, 20 }, },	-- 20x Hypnotic Dust
 						}),
