@@ -6,39 +6,19 @@ _.Zones =
 	m(572, {	-- Draenor
 		m(525, {	-- Frostfire Ridge
 			n(-4, {	-- Achievements
-				{	-- Breaker of Chains (Bloodmaul Stronghold)
-					["achievementID"] = 9533,	-- Breaker of Chains (Bloodmaul Stronghold)
-				},
-				{	-- By Fire Be... Merged? (Magnarok)
-					["achievementID"] = 9537,	-- By Fire Be... Merged? (Magnarok)
-				},
-				{	-- Delectable Ogre Delicacies (Bloodmaul Stronghold)
-					["achievementID"] = 9534,	-- Delectable Ogre Delicacies (Bloodmaul Stronghold)
-				},
-				{	-- Frostfire Fridge
-					["achievementID"] = 9606,	-- Frostfire Fridge
+				ach(9533),	-- Breaker of Chains (Bloodmaul Stronghold)
+				ach(9537),	-- By Fire Be... Merged? (Magnarok)
+				ach(9534),	-- Delectable Ogre Delicacies (Bloodmaul Stronghold)
+				ach(9606, {	-- Frostfire Fridge
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						{	-- Bonus Objective: Forbidden Glacier
-							["achievementID"] = 9606,	-- Frostfire Fridge
-							["criteriaID"] = 1,	-- Bonus Objective: Forbidden Glacier
-						},
-						{	-- Bonus Objective: Frostbite Hollow
-							["achievementID"] = 9606,	-- Frostfire Fridge
-							["criteriaID"] = 2,	-- Bonus Objective: Frostbite Hollow
-						},
-						{	-- Bonus Objective: Grimfrost Hill
-							["achievementID"] = 9606,	-- Frostfire Fridge
-							["criteriaID"] = 3,	-- Bonus Objective: Grimfrost Hill
-						},
+						crit(1),	-- Bonus Objective: Forbidden Glacier
+						crit(2),	-- Bonus Objective: Frostbite Hollow
+						crit(3),	-- Bonus Objective: Grimfrost Hill
 					},
-				},
-				{	-- Planned to Fail (Iron Siegeworks)
-					["achievementID"] = 9711,	-- Planned to Fail (Iron Siegeworks)
-				},
-				{	-- Poisoning the Well (Iron Siegeworks)
-					["achievementID"] = 9710,	-- Poisoning the Well (Iron Siegeworks)
-				},
+				}),
+				ach(9711),	-- Planned to Fail (Iron Siegeworks)
+				ach(9710),	-- Poisoning the Well (Iron Siegeworks)
 				{	-- Securing Draenor [A] / [H]
 					-- Note!! Spans 3 zones Garrison, Tanaan Jungle, and Talador.
 					["allianceAchievementID"] = 9564,	-- Securing Draenor [A]
@@ -102,12 +82,8 @@ _.Zones =
 						},
 					},
 				},]]
-				{	-- Slagnarok (Magnarok)
-					["achievementID"] = 9536,	-- Slagnarok (Magnarok)
-				},
-				{	-- That Was Entirely Unnecessary (Magnarok)
-					["achievementID"] = 9535,	-- That Was Entirely Unnecessary (Magnarok)
-				},
+				ach(9536),	-- Slagnarok (Magnarok)
+				ach(9535),	-- That Was Entirely Unnecessary (Magnarok)
 				ach(9530, 9531),	-- Writing in the Snow(Bloodmaul Stronghold) [A] / [H]
 				--[[{	-- Writing in the Snow (Alliance) (Bloodmaul Stronghold)
 					["achievementID"] = 9530,	-- Writing in the Snow (Alliance) (Bloodmaul Stronghold)
@@ -117,6 +93,29 @@ _.Zones =
 					["achievementID"]= 9531,	-- Writing in the Snow (Horde) (Bloodmaul Stronghold)
 					["races"] = HORDE_ONLY,
 				},]]
+				ach(8671, {	-- You'll Get Caught Up In The... Frostfire!
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(1, {	-- Foothold in a Savage Land
+							["sourceQuest"] = 34775,	-- Mission Probable
+						}),
+						crit(2, {	-- Siege of Bladespire Citadel
+							["sourceQuest"] = 33527,	-- Last Steps
+						}),
+						crit(3, {	-- Defense of Wor'gol
+							["sourceQuest"] = 33473,	-- Back to Bladespire Citadel
+						}),
+						crit(4, {	-- Ga'nar's Vengeance
+							["sourceQuest"] = 32796,	-- To the Garrison
+						}),
+						crit(5, {	-- Thunder's Fall
+							["sourceQuest"] = 33828,	-- The Master Siegesmith
+						}),
+						crit(6, {	-- The Battle of Thunder Pass
+							["sourceQuest"] = 34124,	-- The Battle of Thunder Pass
+						}),
+					},
+				}),
 			}),
 		}),
 	}),

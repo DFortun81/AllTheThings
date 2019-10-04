@@ -171,6 +171,26 @@ _.Zones =
 						i(111407),	-- Waterlogged Journal
 					},
 				}),
+				o(226468, {	-- Shamanstone: Buffeting Galefury
+					["questID"] = 33979,	-- Buffeting Galefury
+					["coord"] = { 65.14, 79.11, 525 },
+				}),
+				o(239925, {	-- Shamanstone: Ogrish Fortitude
+					["questID"] = 33980,	-- Ogrish Fortitude
+					["coord"] = { 43.84, 12.32, 525 },
+				}),
+				o(226469, {	-- Shamanstone: Spirit of the Wolf
+					["questID"] = 33978,	-- Spirit of the Wolf
+					["coord"] = { 17.47, 56.68, 525 },
+				}),
+				o(239926, {	-- Shamanstone: Touched by Fire
+					["questID"] = 33981,	-- Touched By Fire
+					["coord"] = { 36.98, 33.11, 525 },
+				}),
+				o(230544, {	-- Shamanstone: Touched By Ice
+					["questID"] = 33982,	-- Touched By Ice
+					["coord"] = { 60.35, 13.65, 525 },
+				}),
 				o(224392, {	-- Slave's Stash
 					["questID"] = 33500,
 					["coord"] = { 27.7, 42.8, 525 },
