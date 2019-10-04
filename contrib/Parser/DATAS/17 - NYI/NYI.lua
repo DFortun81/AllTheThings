@@ -933,6 +933,16 @@ _.NeverImplemented =
 				un(1, i(48821)),	-- Windrunner's Legguards
 				un(1, i(48822)),	-- Windrunner's Spaulders
 				un(1, i(48823)),	-- Windrunner's Tunic
+				un(1, i(88181)),	-- Gladiator's Chain Armor
+				un(1, i(88182)),	-- Gladiator's Chain Gauntlets
+				un(1, i(88183)),	-- Gladiator's Chain Helm
+				un(1, i(88184)),	-- Gladiator's Chain Leggings
+				un(1, i(88185)),	-- Gladiator's Chain Spaulders
+				un(1, i(64992)),	-- Gladiator's Chain Armor
+				un(1, i(64991)),	-- Gladiator's Chain Gauntlets
+				un(1, i(64990)),	-- Gladiator's Chain Helm
+				un(1, i(64989)),	-- Gladiator's Chain Leggings
+				un(1, i(64988)),	-- Gladiator's Chain Spaulders
 				un(1, i(46274)),	-- Scourgestalker Headpiece
 				un(1, i(51707)),	-- Ahn'kahar Blood Hunter's tunic
 				un(1, i(51708)),	-- Ahn'kahar Blood Hunter's spaulders
@@ -971,6 +981,7 @@ _.NeverImplemented =
 			un(1, i(37420)),	-- Sharkproof Boots
 			un(1, i(54551)),	-- Unknown
 			un(1, i(56492)),	-- Unknown
+			un(1, i(65744)),	-- Unknown
 			un(1, i(56493)),	-- Unknown
 			un(1, i(56496)),	-- Unknown
 			un(1, i(56497)),	-- Unknown

@@ -237,7 +237,7 @@ _.WorldEvents =
 						["groups"] = {
 						--	ach(4849),	-- Keeping it in the Family	
 							-- Old tier Items
-						--	i(60249),	-- Shadowflame Hood
+							i(171875),	-- Shadowflame Hood
 						--	i(60346),	-- Reinforced Sapphirium Helmet
 							i(171892),	-- Reinforced Sapphirium Headguard
 							i(171891),	-- Reinforced Sapphirium Faceguard
@@ -254,7 +254,8 @@ _.WorldEvents =
 							i(171880),	-- Stormrider's Headpiece
 							i(171879),	-- Stormrider's Cover
 							i(171890),	-- Magma Plated Faceguard
-						--	i(60243),	-- Firelord's Hood
+							i(171888),	-- Magma Plated Helmet
+							i(171874),	-- Firelord's Hood
 							--
 							i(171639),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
 							i(171638),	-- Andoros, Fist of the Dragon King
