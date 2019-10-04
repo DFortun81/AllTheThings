@@ -15,6 +15,7 @@ _.Zones =
 						un(7, i(3223)),	-- Frostmane Scepter
 					}),
 					n(107431, {	-- Weaponized Rabbot
+						["coord"] = { 66.0, 27.0, 469 },
 						["g"] = {
 							i(10135),	-- High Councillor's Tunic
 							i(9840),	-- Banded Girdle
