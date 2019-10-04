@@ -400,6 +400,102 @@ _.ExpansionFeatures =
 					},
 				}),
 				-- repeatable "_____ needs help!" quests
+				q(52559, {	-- Aerin Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52558, {	-- Aerin Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52557, {	-- Aerin Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52555, {	-- Aerin Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52556, {	-- Aerin Needs Help! (Sharpened Knife)
+					["repeatable"] = true,
+				}),
+				q(52554, {	-- Aerin Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52553, {	-- Aerin Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52560, {	-- Aerin Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
+				q(52575, {	-- Arwan Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52574, {	-- Arwan Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52573, {	-- Arwan Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52571, {	-- Arwan Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52572, {	-- Arwan Needs Help! (Sharpened Knife)
+					["repeatable"] = true,
+				}),
+				q(52570, {	-- Arwan Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52569, {	-- Arwan Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52576, {	-- Arwan Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
+				q(52583, {	-- Brunold Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52582, {	-- Brunold Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52581, {	-- Brunold Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52579, {	-- Brunold Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52580, {	-- Brunold Needs Help! (Sharpened Knife)
+					["repeatable"] = true,
+				}),
+				q(52578, {	-- Brunold Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52577, {	-- Brunold Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52584, {	-- Brunold Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
+				q(52591, {	-- Burgle Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52590, {	-- Burgle Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52589, {	-- Burgle Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52587, {	-- Burgle Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52588, {	-- Burgle Needs Help! (Sharpened Knife)
+					["repeatable"] = true,
+				}),
+				q(52586, {	-- Burgle Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52585, {	-- Burgle Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52592, {	-- Burgle Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
 				q(52736, {	-- Deshi Needs Help! (no item)
 					["repeatable"] = true,
 				}),
@@ -422,6 +518,30 @@ _.ExpansionFeatures =
 					["repeatable"] = true,
 				}),
 				q(52737, {	-- Deshi Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
+				q(52599, {	-- Flickerwick Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52598, {	-- Flickerwick Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52597, {	-- Flickerwick Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52595, {	-- Flickerwick Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52596, {	-- Flickerwick Needs Help! (Sharpened Knife)
+					["repeatable"] = true,
+				}),
+				q(52594, {	-- Flickerwick Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52593, {	-- Flickerwick Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52600, {	-- Flickerwick Needs Help! (Volatile Cure-All)
 					["repeatable"] = true,
 				}),
 				q(52615, {	-- Frankie Needs Help! (no item)
@@ -448,6 +568,126 @@ _.ExpansionFeatures =
 				q(52616, {	-- Frankie Needs Help! (Volatile Cure-All)
 					["repeatable"] = true,
 				}),
+				q(52607, {	-- Gimzy Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52606, {	-- Gimzy Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52605, {	-- Gimzy Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52603, {	-- Gimzy Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52604, {	-- Gimzy Needs Help! (Sharpened Knife)
+					["repeatable"] = true,
+				}),
+				q(52602, {	-- Gimzy Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52601, {	-- Gimzy Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52608, {	-- Gimzy Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
+				q(52623, {	-- Gregg Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52622, {	-- Gregg Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52621, {	-- Gregg Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52619, {	-- Gregg Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52620, {	-- Gregg Needs Help! (Sharpened Knife)
+					["repeatable"] = true,
+				}),
+				q(52618, {	-- Gregg Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52617, {	-- Gregg Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52624, {	-- Gregg Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
+				q(52631, {	-- Grubby Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52630, {	-- Grubby Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52629, {	-- Grubby Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52627, {	-- Grubby Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52628, {	-- Grubby Needs Help! (Sharpened Knife)
+					["repeatable"] = true,
+				}),
+				q(52626, {	-- Grubby Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52625, {	-- Grubby Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52632, {	-- Grubby Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
+				q(52567, {	-- Karyn Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52566, {	-- Karyn Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52565, {	-- Karyn Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52563, {	-- Karyn Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52564, {	-- Karyn Needs Help! (Sharpened Knife)
+					["repeatable"] = true,
+				}),
+				q(52562, {	-- Karyn Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52561, {	-- Karyn Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52568, {	-- Karyn Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
+				q(52639, {	-- Longpaws Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52638, {	-- Longpaws Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52637, {	-- Longpaws Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52635, {	-- Longpaws Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52636, {	-- Longpaws Needs Help! (Sharpened Knife)
+					["repeatable"] = true,
+				}),
+				q(52634, {	-- Longpaws Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52633, {	-- Longpaws Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52640, {	-- Longpaws Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
 				q(52647, {	-- Manape Needs Help! (no item)
 					["repeatable"] = true,
 				}),
@@ -472,6 +712,198 @@ _.ExpansionFeatures =
 				q(52648, {	-- Manape Needs Help! (Volatile Cure-All)
 					["repeatable"] = true,
 				}),
+				q(52656, {	-- Nizhoni Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52655, {	-- Nizhoni Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52653, {	-- Nizhoni Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52651, {	-- Nizhoni Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52652, {	-- Nizhoni Needs Help! (Sharpened Knife)
+					["repeatable"] = true,
+				}),
+				q(52650, {	-- Nizhoni Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52649, {	-- Nizhoni Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52657, {	-- Nizhoni Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
+				q(52664, {	-- Old Li Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52663, {	-- Old Li Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52662, {	-- Old Li Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52660, {	-- Old Li Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52661, {	-- Old Li Needs Help! (Sharpened Knife)
+					["repeatable"] = true,
+				}),
+				q(52659, {	-- Old Li Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52658, {	-- Old Li Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52665, {	-- Old Li Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
+				q(52545, {	-- Royston Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52547, {	-- Royston Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52548, {	-- Royston Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52550, {	-- Royston Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52549, {	-- Royston Needs Help! (Sharpened Knife)
+					["repeatable"] = true,
+				}),
+				q(52551, {	-- Royston Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52552, {	-- Royston Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52546, {	-- Royston Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
+				q(52672, {	-- Spooner Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52671, {	-- Spooner Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52670, {	-- Spooner Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52668, {	-- Spooner Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52669, {	-- Spooner Needs Help! (Sharpened Knife)
+					["repeatable"] = true,
+				}),
+				q(52667, {	-- Spooner Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52666, {	-- Spooner Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52673, {	-- Spooner Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
+				q(52680, {	-- Sylvester Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52679, {	-- Sylvester Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52678, {	-- Sylvester Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52676, {	-- Sylvester Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52677, {	-- Sylvester Needs Help! (Sharpened Knife)
+					["repeatable"] = true,
+				}),
+				q(52675, {	-- Sylvester Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52674, {	-- Sylvester Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52681, {	-- Sylvester Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
+				q(52688, {	-- Taz'anga Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52687, {	-- Taz'anga Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52686, {	-- Taz'anga Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52684, {	-- Taz'anga Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52685, {	-- Taz'anga Needs Help! (Sharpened Knife)
+					["repeatable"] = true,
+				}),
+				q(52683, {	-- Taz'anga Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52682, {	-- Taz'anga Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52689, {	-- Taz'anga Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
+				q(52696, {	-- Tinny Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52695, {	-- Tinny Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52694, {	-- Tinny Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52692, {	-- Tinny Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52693, {	-- Tinny Needs Help! (Sharpened Knife)
+					["repeatable"] = true,
+				}),
+				q(52691, {	-- Tinny Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52690, {	-- Tinny Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52697, {	-- Tinny Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
+				q(52704, {	-- Tweets Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52703, {	-- Tweets Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52702, {	-- Tweets Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52700, {	-- Tweets Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52701, {	-- Tweets Needs Help! (Sharpened Knife)
+					["repeatable"] = true,
+				}),
+				q(52699, {	-- Tweets Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52698, {	-- Tweets Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52705, {	-- Tweets Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
 				q(52712, {	-- Two-Socks Needs Help! (no item)
 					["repeatable"] = true,
 				}),
@@ -494,6 +926,78 @@ _.ExpansionFeatures =
 					["repeatable"] = true,
 				}),
 				q(52713, {	-- Two-Socks Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
+				q(52720, {	-- Valero Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52719, {	-- Valero Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52717, {	-- Valero Needs Help! (Knife)
+					["repeatable"] = true,
+				}),
+				q(52718, {	-- Valero Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52716, {	-- Valero Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52715, {	-- Valero Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52714, {	-- Valero Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52721, {	-- Valero Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
+				q(52728, {	-- Vizio Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52727, {	-- Vizio Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52725, {	-- Vizio Needs Help! (Knife)
+					["repeatable"] = true,
+				}),
+				q(52726, {	-- Vizio Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52724, {	-- Vizio Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52723, {	-- Vizio Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52722, {	-- Vizio Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52729, {	-- Vizio Needs Help! (Volatile Cure-All)
+					["repeatable"] = true,
+				}),
+				q(52744, {	-- Yuke Needs Help! (no item)
+					["repeatable"] = true,
+				}),
+				q(52743, {	-- Yuke Needs Help! (Key)
+					["repeatable"] = true,
+				}),
+				q(52741, {	-- Yuke Needs Help! (Knife)
+					["repeatable"] = true,
+				}),
+				q(52742, {	-- Yuke Needs Help! (Pickaxe)
+					["repeatable"] = true,
+				}),
+				q(52740, {	-- Yuke Needs Help! (Runestone)
+					["repeatable"] = true,
+				}),
+				q(52739, {	-- Yuke Needs Help! (Shovel)
+					["repeatable"] = true,
+				}),
+				q(52738, {	-- Yuke Needs Help! (Torch)
+					["repeatable"] = true,
+				}),
+				q(52745, {	-- Yuke Needs Help! (Volatile Cure-All)
 					["repeatable"] = true,
 				}),
 			}),
