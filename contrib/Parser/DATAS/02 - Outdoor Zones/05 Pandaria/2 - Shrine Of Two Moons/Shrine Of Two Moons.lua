@@ -44,11 +44,16 @@ _.Zones =
 							i(98134),	-- Heroic Cache of Treasures
 						},
 					}),
+					]]--
 					q(32242, {	-- Buried Secrets
+						["coord"] = { 32.1, 84.9, 392 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 67840 },	-- Garrosh Hellscream
+						["sourceQuest"] = 32256,	-- Rise Of An Empire
 					}),
+					--[[
 					q(31279),	-- Everything I Know About Cooking
---]]
+					--]]
 					q(32901, {	-- Heroic Deeds
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 66998 },	-- Jinho the Wind Breaker

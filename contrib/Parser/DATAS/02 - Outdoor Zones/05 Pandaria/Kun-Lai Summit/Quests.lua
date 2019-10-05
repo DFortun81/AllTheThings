@@ -1025,12 +1025,6 @@ _.Zones =
 				q(32384, {	-- Trapping the Leader
 					["races"] = HORDE_ONLY,
 				}),
-				q(31380, {	-- Trial At The Temple of the White Tiger
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(31381, {	-- Trial At The Temple of the White Tiger
-					["races"] = HORDE_ONLY,
-				}),
 				q(30826),	-- Trouble Brewing
 				q(30745),	-- Trouble Brewing
 				q(30670),	-- Turnabout

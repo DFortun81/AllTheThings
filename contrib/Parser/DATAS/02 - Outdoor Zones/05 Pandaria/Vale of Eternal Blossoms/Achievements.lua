@@ -9,6 +9,14 @@ _.Zones =
 				ach(7318),	-- A Taste of History
 				ach(7323),	-- Collateral Damage
 				ach(7320),	-- Dog Pile
+				ach(7929, {	-- Dominance Offensive Campaign
+					["collectible"] = false,
+					["g"] = {
+						crit(2, {	-- The Voice of the Gods
+							["sourceQuest"] = 32257,	-- Voice of the Gods
+						}),
+					},
+				}),
 				ach(7317, {	-- One Many Army (Vale of Eternal Blossoms)
 					crit(5),	-- Aetha
 					crit(14),	-- Bai-Jin the Butcher

@@ -197,6 +197,8 @@ _.NeverImplemented =
 		q(33901),	-- Tracking Quest: Activated Arkonite 4
 		q(33903),	-- Tracking Quest: Romuul & Yrel Leave for Teluuna
 		q(33899),	-- Tracking Quest: Turn on the Holograms
+		q(31484),	-- Hisek tracking quest
+		q(32012),	-- Kovok tracking [GROWING]
 		
 	--	DUNGEONS
 		q(35316),	-- Gate of the Setting Sun Reward Quest
