@@ -1634,6 +1634,7 @@ _.Zones =
 						{ "n", 66247 },	-- Tigermaster Liu-Do
 					},
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(29933, {	-- The Bees' Knees
 					["provider"] = { "n", 56351 },	-- Bo Bo
@@ -1849,6 +1850,7 @@ _.Zones =
 				}),
 				q(29617, {	-- Tian Monastery
 					["provider"] = { "n", 54998 },	-- Apprentice Yufi
+					["isBreadcrumb"] = true,
 				}),
 				q(29754, {	-- To Bridge Earth and Sky
 					["provider"] = { "n", 55614 },	-- Pei-Zhi
