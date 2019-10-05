@@ -13,47 +13,52 @@ _.Zones =
 				n(-4, {	-- Achievements
 					ach(7287),	-- Champion of Chi-Ji (Cradle of Chi-Ji)
 					ach(7284, {	-- Is Another Man's Treasure
-						o(214439, {		-- Barrel of Banana Infused Rum
-							["g"] = {
-								i(87266),	-- Recipe: Banana Infused Rum
-							},
-							["questID"] = 31411,	-- Barrel of Banana Infused Rum Quest Tracker
-						}),
-						o(213651, { 	-- Equipment Locker
-							["g"] = {
-								i(86122),	-- Plankwalking Greaves
-								i(86115),	-- Swashbuckling Boots
-								i(86117),	-- Seafarer's Treads of Precision
-								i(86116),	-- Agile Seafarer's Jackboots
-								i(86123),	-- Seafarer's Sturdy Boots
-								i(86118),	-- Seafaring Advisor's Slippers
-								i(86119),	-- Seafarer's Boots of Meditation
-								i(86120),	-- Seafaring Sabatons of Meditation
-								i(86121),	-- Radiant Seafarer's Boots
-							},
-							["coord"] = { 42.3, 92.0 },
-							["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
-							["modelScale"] = 1.5,
-							["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
-							["questID"] = 31410,
-							["description"] = "On the bottom level of the ship — you will have to go down two sets of stairs.",
-						}),
-						o(213653, {		-- Pandaren Fishing Spear
-							["g"] = {
-								i(86124),	-- Pandaren Fishing Spear
-							},
-							["questID"] = 31409,
-						}),
+						["collectible"] = false,
+						["g"] = {
+							o(214439, {		-- Barrel of Banana Infused Rum
+								["questID"] = 31411,	-- Barrel of Banana Infused Rum Quest Tracker
+								["g"] = {
+									i(87266),	-- Recipe: Banana Infused Rum
+								},
+							}),
+							o(213651, { 	-- Equipment Locker
+								["coord"] = { 42.3, 92.0, 418 },
+								["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
+								["modelScale"] = 1.5,
+								["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
+								["questID"] = 31410,
+								["description"] = "On the bottom level of the ship — you will have to go down two sets of stairs.",
+								["g"] = {
+									i(86122),	-- Plankwalking Greaves
+									i(86115),	-- Swashbuckling Boots
+									i(86117),	-- Seafarer's Treads of Precision
+									i(86116),	-- Agile Seafarer's Jackboots
+									i(86123),	-- Seafarer's Sturdy Boots
+									i(86118),	-- Seafaring Advisor's Slippers
+									i(86119),	-- Seafarer's Boots of Meditation
+									i(86120),	-- Seafaring Sabatons of Meditation
+									i(86121),	-- Radiant Seafarer's Boots
+								},
+							}),
+							o(213653, {		-- Pandaren Fishing Spear
+								["questID"] = 31409,
+								["g"] = {
+									i(86124),	-- Pandaren Fishing Spear
+								},
+							}),
+						},
 					}),
 					ach(7997, {	-- Riches of Pandaria
-						o(213750, {	-- Saurok Stone Tablet
-							["g"] = {
-								i(86220, {	-- Saurok Stone Tablet
-									["questID"] = 31408,
-								}),
-							},
-							["description"] = "Located in a cave at (71,9)",
-						}),
+						["collectible"] = false,
+						["g"] = {
+							o(213750, {	-- Saurok Stone Tablet
+								["questID"] = 31408,
+								["description"] = "Located in a cave at (71,9)",
+								["g"] = {
+									i(86220),	-- Saurok Stone Tablet
+								},
+							}),
+						},
 					}),
 				}),
 				filter(101, {	-- Battle Pet

@@ -20,12 +20,15 @@ _.Zones =
 					crit(7),	-- Yalia Sagewhisper
 				}),
 				ach(7284, {	-- Is Another Man's Treasure
-					o(213960, {		-- Yaungol Fire Carrier
-						["questID"] = 31425,
-						["g"] = {
-							i(86518),	-- Yaungol Fire Carrier
-						},
-					}),
+					["collectible"] = false,
+					["g"] = {
+						o(213960, {		-- Yaungol Fire Carrier
+							["questID"] = 31425,
+							["g"] = {
+								i(86518),	-- Yaungol Fire Carrier
+							},
+						}),
+					},
 				}),
 				ach(7308, {	-- Know Your Role
 					crit(2),	-- Assault Deadtalker's Plateau
@@ -53,36 +56,34 @@ _.Zones =
 					crit(3),	-- Yalia Sagewhisper
 				}),
 				ach(7997, {	-- Riches of Pandaria
-					o(213961, {	-- Abandoned Crate of Goods
-						["description"] = "Located in a small tent northwest of Fire Camp Osul at (62.8,34.1)",
-						["g"] = {
-							q(31427),	-- Abandoned Crate of Goods
-						},
-					}),
-					o(213844, {	-- Amber Encased Moth
-						["description"] = "Located in the Ambermarsh at (65.8,86.1)",
-						["g"] = {
-							i(86472, {	-- Amber Encased Moth
-								["questID"] = 31426,
-							}),
-						},
-					}),
-					o(213956, {	-- Fragment of Dread
-						["description"] = "Located in the Niuzao Catacombs at (35.8,65.3)",
-						["g"] = {
-							i(86516, {	-- Fragment of Dread
-								["questID"] = 31423,
-							}),
-						},
-					}),
-					o(213959, {	-- Hardened Sap of Kri'vess
-						["description"] = "Located all around Kri'vess",
-						["g"] = {
-							i(86517, {	-- Hardened Sap of Kri'vess
-								["questID"] = 31424,
-							}),
-						},
-					}),
+					["collectible"] = false,
+					["g"] = {
+						o(213961, {	-- Abandoned Crate of Goods
+							["questID"] = 31427,	-- Abandoned Crate of Goods
+							["coord"] = { 62.8, 34.1, 388 },
+						}),
+						o(213844, {	-- Amber Encased Moth
+							["questID"] = 31426,
+							["coord"] = { 65.8, 86.1, 388 },
+							["g"] = {
+								i(86472),	-- Amber Encased Moth
+							},
+						}),
+						o(213956, {	-- Fragment of Dread
+							["questID"] = 31423,
+							["coord"] = { 35.8, 65.3, 388 },
+							["g"] = {
+								i(86516),	-- Fragment of Dread
+							},
+						}),
+						o(213959, {	-- Hardened Sap of Kri'vess
+							["questID"] = 31424,
+							["description"] = "Located all around Kri'vess",
+							["g"] = {
+								i(86517),	-- Hardened Sap of Kri'vess
+							},
+						}),
+					},
 				}),
 				ach(7307),	-- Silent Assassin (Townlong Steppes)
 				ach(7288),	-- Yak Attack (Niuzao Temple)

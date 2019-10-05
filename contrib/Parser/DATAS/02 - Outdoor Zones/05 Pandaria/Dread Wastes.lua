@@ -23,77 +23,80 @@ _.Zones =
 						crit(10),		-- Xaril the Poisoned Mind
 					}),
 					ach(7284, {	-- Is Another Man's Treasure
-						o(213972, {		-- Blade of the Poisoned Mind
-							["coord"] = { 28.9, 41.9, 422 },
-							["questID"] = 31438,
-							["g"] = {
-								i(86527),	-- Blade of the Poisoned Mind
-							},
-						}),
-						o(213967, {		-- Blade of the Prime
-							["coords"] = { 
-								{ 66.3, 66.5, 422 },	-- Blade
-								{ 66.74, 63.76, 422 },	-- Cave
-							},								
-							["description"] = "Enter cave at 66.74, 63.76.",
-							["questID"] = 31433,
-							["g"] = {
-								i(86522),	-- Blade of the Prime
-							},
-						}),
-						o(213970, {	-- Bloodsoaked Chitin Fragment
-							["coord"] = { 26.0, 50.3, 422 },
-							["questID"] = 31436,
-							["g"] = {
-								i(86525),	-- Blood Soaked Chiten Fragment
-							},
-						}),
-						o(213969, {		-- Dissector's Staff of Mutation
-							["coord"] = { 30.2, 90.8, 422 },
-							["questID"] = 31435,
-							["g"] = {
-								i(86524),	-- Dissector's Staff of Mutation
-							},
-						}),
-						o(213966, {	-- Lucid Amulet
-							["coord"] = { 33.0, 30.1, 422 },
-							["questID"] = 31431,
-							["g"] = {
-								i(86521),	-- Lucid Amulet of the Agile Mind
-							},
-						}),
-						o(213964, {		-- Malik's Stalwart Spear
-							["coord"] = { 48.8, 30.0, 422 },
-							["questID"] = 31430,
-							["g"] = {
-								i(86520),	-- Malik's Stalwart Spear
-							},
-						}),
-						i(86529, {
-							["provider"] = { "n", 65552 },	-- Glinting Rapana Whelk
-							["questID"] = 31432,
-						}),
-						o(213968, {		-- Swarming Cleaver of Ka'roz
-							["coord"] = { 56.7, 77.7, 422 },
-							["questID"] = 31434,
-							["g"] = {
-								i(86523),	-- Swarming Cleaver of Ka'roz
-							},
-						}),
-						o(213971, {	-- Swarmkeeper's Medallion
-							["coord"] = { 54.3, 56.5, 422 },
-							["questID"] = 31437,
-							["g"] = {
-								i(86526),	-- Swarmkeeper's Medallion
-							},
-						}),
-						o(213962, {		-- Wind-Reaver's Dagger of Quick Strikes
-							["coord"] = { 71.8, 36.1, 422 },
-							["questID"] = 31429,
-							["g"] = {
-								i(86519),	-- Wind-Reaver's Dagger of Quick Strikes
-							},
-						}),
+						["collectible"] = false,
+						["g"] = {
+							o(213972, {		-- Blade of the Poisoned Mind
+								["coord"] = { 28.9, 41.9, 422 },
+								["questID"] = 31438,
+								["g"] = {
+									i(86527),	-- Blade of the Poisoned Mind
+								},
+							}),
+							o(213967, {		-- Blade of the Prime
+								["coords"] = { 
+									{ 66.3, 66.5, 422 },	-- Blade
+									{ 66.74, 63.76, 422 },	-- Cave
+								},								
+								["description"] = "Enter cave at 66.74, 63.76.",
+								["questID"] = 31433,
+								["g"] = {
+									i(86522),	-- Blade of the Prime
+								},
+							}),
+							o(213970, {	-- Bloodsoaked Chitin Fragment
+								["coord"] = { 26.0, 50.3, 422 },
+								["questID"] = 31436,
+								["g"] = {
+									i(86525),	-- Blood Soaked Chiten Fragment
+								},
+							}),
+							o(213969, {		-- Dissector's Staff of Mutation
+								["coord"] = { 30.2, 90.8, 422 },
+								["questID"] = 31435,
+								["g"] = {
+									i(86524),	-- Dissector's Staff of Mutation
+								},
+							}),
+							o(213966, {	-- Lucid Amulet
+								["coord"] = { 33.0, 30.1, 422 },
+								["questID"] = 31431,
+								["g"] = {
+									i(86521),	-- Lucid Amulet of the Agile Mind
+								},
+							}),
+							o(213964, {		-- Malik's Stalwart Spear
+								["coord"] = { 48.8, 30.0, 422 },
+								["questID"] = 31430,
+								["g"] = {
+									i(86520),	-- Malik's Stalwart Spear
+								},
+							}),
+							i(86529, {
+								["provider"] = { "n", 65552 },	-- Glinting Rapana Whelk
+								["questID"] = 31432,
+							}),
+							o(213968, {		-- Swarming Cleaver of Ka'roz
+								["coord"] = { 56.7, 77.7, 422 },
+								["questID"] = 31434,
+								["g"] = {
+									i(86523),	-- Swarming Cleaver of Ka'roz
+								},
+							}),
+							o(213971, {	-- Swarmkeeper's Medallion
+								["coord"] = { 54.3, 56.5, 422 },
+								["questID"] = 31437,
+								["g"] = {
+									i(86526),	-- Swarmkeeper's Medallion
+								},
+							}),
+							o(213962, {		-- Wind-Reaver's Dagger of Quick Strikes
+								["coord"] = { 71.8, 36.1, 422 },
+								["questID"] = 31429,
+								["g"] = {
+									i(86519),	-- Wind-Reaver's Dagger of Quick Strikes
+								},
+							}),
+						},
 					}),
 					ach(7316, {	-- Over Their Heads (Dread Wastes)
 						crit(4),	-- Amber-Shaper Un'sok
