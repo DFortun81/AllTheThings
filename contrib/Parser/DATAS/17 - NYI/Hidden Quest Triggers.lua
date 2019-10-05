@@ -178,6 +178,26 @@ _.NeverImplemented =
 		-------------------
 		--      MOP      --
 		-------------------
+		q(31153),	-- Tracking Event - Saved Diaani
+		q(31154),	-- Tracking Event - Saved Zuulo
+		q(30531),	-- Tracking Event: Finished First Expansion
+		q(30533),	-- Tracking Event: Finished Second Expansion
+		q(30574),	-- Tracking Event: Finished Third Expansion
+		q(30530),	-- Tracking Event: Started First Expansion
+		q(30532),	-- Tracking Event: Started Second Expansion
+		q(30573),	-- Tracking Event: Started Third Expansion
+		q(30564),	-- Tracking Event: Talked to Dog at Farm
+		q(31960),	-- Tracking Event: Vote #1 Complete
+		q(31961),	-- Tracking Event: Vote #2 Complete
+		q(31962),	-- Tracking Event: Vote #3 Complete
+		q(31963),	-- Tracking Event: Vote #4 Complete
+		q(31964),	-- Tracking Event: Vote #5 Complete
+		q(31965),	-- Tracking Event: Vote #6 Complete
+		q(33900),	-- Tracking Quest: Activated Arkonite 3
+		q(33901),	-- Tracking Quest: Activated Arkonite 4
+		q(33903),	-- Tracking Quest: Romuul & Yrel Leave for Teluuna
+		q(33899),	-- Tracking Quest: Turn on the Holograms
+		
 	--	DUNGEONS
 		q(35316),	-- Gate of the Setting Sun Reward Quest
 		q(31631),	-- Gate of the Setting Sun Challenge Mode - Bronze Addition (Nth)
