@@ -621,64 +621,262 @@ _.Holidays = bubbleDown({["u"] = 26},
 										}),
 									},
 								}),
-								crit(2, {	-- Tricks and Treaats of Kalimdor
-									["achievementID"] = 971,	-- Tricks and Treats of Azeroth
+								ach(963, {	-- Tricks and Treats of Kalimdor (A)
+									["races"] = ALLIANCE_ONLY,
+									["u"] = 26,	-- Hallow's End
+									["g"] = {
+										crit(1,  {	-- Ashenvale, Astranaar
+											["coord"] = { 37.0, 49.3, 63 },
+											["maps"] = { 63 },	-- Ashenvale
+										}),
+										crit(2,  {	-- Azuremyst Isle, Azure Watch
+											["coord"] = { 48.5, 49.1, 97 },
+											["maps"] = { 97 },	-- Azuremyst Isle
+										}),
+										crit(3,  {	-- Bloodmyst Isle, Blood Watch
+											["coord"] = { 55.7, 59.9, 106 },
+											["maps"] = { 106 },	-- Bloodmyst Isle
+										}),
+										crit(4,  {	-- Darkshore, Lor'danel
+											["coord"] = { 50.8, 18.8, 62 },
+											["maps"] = { 62 },	-- Darkshore
+										}),
+										crit(5,  {	-- Darnassus, Craftsmen's Terrace
+											["coord"] = { 62.2, 33.0, 89 },
+											["maps"] = { 89 },	-- Darnassus
+										}),
+										crit(6,  {	-- Desolace, Karnum's Glade
+											["coord"] = { 56.8, 50.0, 66 },
+											["maps"] = { 66 },	-- Desolace
+										}),
+										crit(7,  {	-- Desolace, Nijel's Point
+											["coord"] = { 66.3, 6.70, 66 },
+											["maps"] = { 66 },	-- Desolace
+										}),
+										crit(8,  {	-- Dustwallow Marsh, Mudsprocket
+											["coord"] = { 41.0, 73.0, 70 },
+											["maps"] = { 70 },	-- Dustwallow Marsh
+										}),
+										crit(9,  {	-- Exodar, Seat of the Naaru
+											["coord"] = { 59.3, 19.2, 103 },
+											["maps"] = { 103 },	-- The Exodar
+										}),
+										crit(10, {	-- Felwood - Talonbranch Glade
+											["coord"] = { 61.8, 26.7, 77 },
+											["maps"] = { 77 },	-- Felwood
+										}),
+										crit(11, {	-- Felwood - Whisperwind Grove
+											["coord"] = { 44.6, 28.9, 77 },
+											["maps"] = { 77 },	-- Felwood
+										}),
+										crit(12, {	-- Feralas, Dreamer's Rest
+											["coord"] = { 51.1, 17.8, 69 },
+											["maps"] = { 69 },	-- Feralas
+										}),
+										crit(13, {	-- Feralas, Feathermoon Stronghold
+											["coord"] = { 46.3, 45.2, 69 },
+											["maps"] = { 69 },	-- Feralas
+										}),
+										crit(14, {	-- Northern Barrens, Ratchet
+											["coord"] = { 67.3, 74.7, 10 },
+											["maps"] = { 10 },	-- Northern Barrens
+										}),
+										crit(15, {	-- Silithus, Cenarion Hold
+											["coord"] = { 55.5, 36.7, 81 },
+											["maps"] = { 81 },	-- Silithus
+										}),
+										crit(16, {	-- Southern Barrens, Fort Triumph
+											["coord"] = { 49.1, 68.5, 199 },
+											["maps"] = { 199 },	-- Southern Barrens
+										}),
+										crit(17, {	-- Southern Barrens, Honor's Stand
+											["coord"] = { 39.0, 11.0, 199 },
+											["maps"] = { 199 },	-- Southern Barrens
+										}),
+										crit(18, {	-- Southern Barrens, Northwatch Hold
+											["coord"] = { 65.6, 46.6, 199 },
+											["maps"] = { 199 },	-- Southern Barrens
+										}),
+										crit(19, {	-- Stonetalon Mountains, Farwatcher's Glen
+											["coord"] = { 31.5, 60.7, 65 },
+											["maps"] = { 65 },	-- Stonetalon Mountains
+										}),
+										crit(20, {	-- Stonetalon Mountains, Northwatch Expedition Base
+											["coord"] = { 71.0, 79.1, 65 },
+											["maps"] = { 65 },	-- Stonetalon Mountains
+										}),
+										crit(21, {	-- Stonetalon Mountains, Thal'darah Overlook
+											["coord"] = { 39.5, 32.8, 65 },
+											["maps"] = { 65 },	-- Stonetalon Mountains
+										}),
+										crit(22, {	-- Stonetalon Mountains, Windshear Hold
+											["coord"] = { 59.1, 56.3, 65 },
+											["maps"] = { 65 },	-- Stonetalon Mountains
+										}),
+										crit(23, {	-- Tanaris, Bootlegger Outpost
+											["coord"] = { 55.7, 60.9, 71 },
+											["maps"] = { 71 },	-- Tanaris
+										}),
+										crit(24, {	-- Tanaris, Gadgetzan
+											["coord"] = { 52.6, 27.1, 71 },
+											["maps"] = { 71 },	-- Tanaris
+										}),
+										crit(25, {	-- Teldrassil, Dolanaar
+											["coord"] = { 55.4, 52.3, 57 },
+											["maps"] = { 57 },	-- Teldrassil
+										}),
+										crit(26, {	-- Un'Goro Crater, Marshal's Stand
+											["coord"] = { 55.2, 62.1, 78 },
+											["maps"] = { 78 },	-- Un'Goro Crater
+										}),
+										crit(27, {	-- Winterspring, Everlook
+											["coord"] = { 59.8, 51.2, 83 },
+											["maps"] = { 83 },	-- Winterspring
+										}),
+									},
 								}),
-								crit(3, {	-- Tricks and Treaats of Eastern Outlands
-									["achievementID"] = 971,	-- Tricks and Treats of Azeroth
+								ach(965, {	-- Tricks and Treats of Kalimdor (H)
+									["races"] = HORDE_ONLY,
+									["u"] = 26,	-- Hallow's End
+									["g"] = {
+										crit(1,  {	-- Ashenvale, Hellscream's Watch
+											["coord"] = { 38.6, 42.4, 63 },
+											["maps"] = { 63 },	-- Ashenvale
+										}),
+										crit(2,  {	-- Ashenvale, Silverwind Refuge
+											["coord"] = { 50.2, 67.2, 63 },
+											["maps"] = { 63 },	-- Ashenvale
+										}),
+										crit(3,  {	-- Ashenvale, Splintertree Post
+											["coord"] = { 73.9, 60.7, 63 },
+											["maps"] = { 63 },	-- Ashenvale
+										}),
+										crit(4,  {	-- Ashenvale, Zoram'gar Outpost
+											["coord"] = { 13.0, 34.1, 63 },
+											["maps"] = { 63 },	-- Ashenvale
+										}),
+										crit(5,  {	-- Azshara, Bilgewater Harbor
+											["coord"] = { 57.1, 50.2, 76 },
+											["maps"] = { 76 },	-- Azshara
+										}),
+										crit(6,  {	-- Desolace, Karnum's Glade
+											["coord"] = { 56.8, 50.0, 66 },
+											["maps"] = { 66 },	-- Desolace
+										}),
+										crit(7,  {	-- Desolace, Shadowprey Village
+											["coord"] = { 24.1, 68.3, 66 },
+											["maps"] = { 66 },	-- Desolace
+										}),
+										crit(8,  {	-- Durotar, Razor Hill
+											["coord"] = { 51.6, 41.7, 1 },
+											["maps"] = { 1 },	-- Durotar
+										}),
+										crit(9,  {	-- Dustwallow Marsh, Brackenwall Village
+											["coord"] = { 36.8, 32.4, 70 },
+											["maps"] = { 70 },	-- Dustwallow Marsh
+										}),
+										crit(10, {	-- Dustwallow Marsh, Mudsprocket
+											["coord"] = { 41.0, 73.0, 70 },
+											["maps"] = { 70 },	-- Dustwallow Marsh
+										}),
+										crit(11, {	-- Felwood, Whisperwind Grove
+											["coord"] = { 44.6, 28.9, 77 },
+											["maps"] = { 77 },	-- Felwood
+										}),
+										crit(12, {	-- Feralas, Camp Ataya
+											["coord"] = { 41.4, 15.6, 69 },
+											["maps"] = { 69 },	-- Feralas
+										}),
+										crit(13, {	-- Feralas, Camp Mojache
+											["coord"] = { 74.8, 45.1, 69 },
+											["maps"] = { 69 },	-- Feralas
+										}),
+										crit(14, {	-- Feralas, Stonemaul Hold
+											["coord"] = { 52.0, 47.7, 69 },
+											["maps"] = { 69 },	-- Feralas
+										}),
+										crit(15, {	-- Mulgore, Bloodhoof Village
+											["coord"] = { 46.8, 60.4, 7 },
+											["maps"] = { 7 },	-- Mulgore
+										}),
+										crit(16, {	-- Northern Barrens, The Crossroads
+											["coord"] = { 49.5, 58.0, 10 },
+											["maps"] = { 10 },	-- Northern Barrens
+										}),
+										crit(17, {	-- Northern Barrens, Grol'dom Farm
+											["coord"] = { 56.3, 40.1, 10 },
+											["maps"] = { 10 },	-- Northern Barrens
+										}),
+										crit(18, {	-- Northern Barrens, Nozzlepot's Outpost
+											["coord"] = { 62.5, 16.6, 10 },
+											["maps"] = { 10 },	-- Northern Barrens
+										}),
+										crit(19, {	-- Northern Barrens, Ratchet
+											["coord"] = { 67.3, 74.7, 10 },
+											["maps"] = { 10 },	-- Northern Barrens
+										}),
+										crit(20, {	-- Orgrimmar, Valley of Strength
+											["coord"] = { 53.8, 78.8, 85 },
+											["maps"] = { 85 },	-- Orgrimmar
+										}),
+										crit(21, {	-- Silithus, Cenarion Hold
+											["coord"] = { 55.5, 36.7, 81 },
+											["maps"] = { 81 },	-- Silithus
+										}),
+										crit(22, {	-- Southern Barrens, Desolation Hold
+											["coord"] = { 40.7, 69.3, 199 },
+											["maps"] = { 199 },	-- Southern Barrens
+										}),
+										crit(23, {	-- Southern Barrens, Hunter's Hill
+											["coord"] = { 39.3, 20.1, 199 },
+											["maps"] = { 199 },	-- Southern Barrens
+										}),
+										crit(24, {	-- Stonetalon Mountains, Krom'gar Fortress
+											["coord"] = { 66.5, 64.2, 65 },
+											["maps"] = { 65 },	-- Stonetalon Mountains
+										}),
+										crit(25, {	-- Stonetalon Mountains, Sun Rock Retreat
+											["coord"] = { 50.4, 63.8, 65 },
+											["maps"] = { 65 },	-- Stonetalon Mountains
+										}),
+										crit(26, {	-- Tanaris, Bootlegger Outpost
+											["coord"] = { 55.7, 60.9, 71 },
+											["maps"] = { 71 },	-- Tanaris
+										}),
+										crit(27, {	-- Tanaris, Gadgetzan
+											["coord"] = { 52.6, 27.1, 71 },
+											["maps"] = { 71 },	-- Tanaris
+										}),
+										crit(28, {	-- Thunder Bluff, Lower Rise
+											["coord"] = { 45.7, 64.5, 88 },
+											["maps"] = { 88 },	-- Thunder Bluff
+										}),
+										crit(29, {	-- Un'Goro Crater, Marshal's Stand
+											["coord"] = { 55.2, 62.1, 78 },
+											["maps"] = { 78 },	-- Un'Goro Crater
+										}),
+										crit(30, {	-- Winterspring, Everlook
+											["coord"] = { 59.8, 51.2, 83 },
+											["maps"] = { 83 },	-- Winterspring
+										}),
+									},
+								}),
+								ach(969, {	-- Tricks and Treats of Outlands (A)
+									["races"] = ALLIANCE_ONLY,
+									["u"] = 26,	-- Hallow's End
+									["g"] = {
+									},
+								}),
+								ach(968, {	-- Tricks and Treats of Outlands (H)
+									["races"] = HORDE_ONLY,
+									["u"] = 26,	-- Hallow's End
+									["g"] = {
+									},
 								}),
 							},
 						}),
 					},
 				}),
-				{	-- Tricks and Treats of Kalimdor [Alliance]
-				-- Note!! This is blank here because we are going to put all this relevant information in a separate file
-				-- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
-					["achievementID"] = 963,	-- Tricks and Treats of Kalimdor
-					["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
-					["g"] = {
-					},
-				},
-				{	-- Tricks and Treats of Kalimdor [Horde]
--- Note!! This is blank here because we are going to put all this relevant information in a separate file
--- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
-					["achievementID"] = 965,	-- Tricks and Treats of Kalimdor
-					["races"] = HORDE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
-					["g"] = {
-					},
-				},
-				{	-- Tricks and Treats of Eastern Kingdoms [Alliance]
--- Note!! This is blank here because we are going to put all this relevant information in a separate file
--- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
-					["achievementID"] = 966,	-- Tricks and Treats of Eastern Kingdoms
-					["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
-					["g"] = {
-					},
-				},
-				{	-- Tricks and Treats of Eastern Kingdoms [Horde]
--- Note!! This is blank here because we are going to put all this relevant information in a separate file
--- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
-					["achievementID"] = 967,	-- Tricks and Treats of Eastern Kingdoms
-					["races"] = HORDE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
-					["g"] = {
-					},
-				},
-				{	-- Tricks and Treats of Outlands [Alliance]
--- Note!! This is blank here because we are going to put all this relevant information in a separate file
--- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
-					["achievementID"] = 969,	-- Tricks and Treats of Outlands
-					["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
-					["g"] = {
-					},
-				},
-				{	-- Tricks and Treats of Outlands [Horde]
--- Note!! This is blank here because we are going to put all this relevant information in a separate file
--- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
-					["achievementID"] = 968,	-- Tricks and Treats of Outlands
-					["races"] = HORDE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
-					["g"] = {
-					},
-				},
 				{	-- Tricks and Treats of Northrend [Alliance]
 -- Note!! This is blank here because we are going to put all this relevant information in a separate file
 -- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
