@@ -1400,6 +1400,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["coord"] = { 55.8, 51.8, 376 },
 					["provider"] = { "n", 64448 },	-- Hopsmaster Chang
+					["isBreadcrumb"] = true,
 				}),
 				q(29992, {	-- Tenderpaw By Name, Tender Paw By Reputation
 					["sourceQuests"] = { 29984 },	-- Unyielding Fists: Trial of Bamboo

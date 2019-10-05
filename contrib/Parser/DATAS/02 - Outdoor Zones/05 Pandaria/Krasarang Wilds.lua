@@ -589,6 +589,7 @@ _.Zones =
 					}),
 					q(32130, {	-- Good Luck, Have Fun
 						["provider"] = { "n", 67402 },	-- Zazzix "Toasty" Sparkrocket
+						["coord"] = { 79.7, 30.0, 418 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -620,6 +621,7 @@ _.Zones =
 					}),
 					q(32135, {	-- Hero Killer
 						["provider"] = { "n", 67628 },	-- Shademaster Kiryn
+						["coord"] = { 79.7, 30.4, 418 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 32450 },	-- The Time is Now!
 						["isDaily"] = true,
@@ -905,8 +907,9 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(32256, {	-- Rise Of An Empire
-						["provider"] = { "n", 67939 },	-- General Nazgrim
+						["coord"] = { 9.3, 51.1, 418 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 67939 },	-- General Nazgrim
 					}),
 					q(32137, {	-- Runnin' On Empty
 						["provider"] = { "n", 67542 },	-- Grizzle Gearslip
@@ -943,6 +946,7 @@ _.Zones =
 					q(32133, {	-- Sentry Wards
 						["provider"] = { "n", 67628 },	-- Shademaster Kiryn
 						["races"] = HORDE_ONLY,
+						["coord"] = { 79.7, 30.4, 418 },
 						["isDaily"] = true,
 					}),
 					q(30356, {	-- Sever Their Supply Line
@@ -1305,6 +1309,7 @@ _.Zones =
 					}),
 					q(32450, {	-- The Time Is Now!
 						["provider"] = { "n", 67880 },	-- Blood Guard Gro'tash
+						["coord"] = { 9.0, 51.3, 418 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -1432,6 +1437,12 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 30174 },	-- For Family
 					}),
+					q(32131, {	-- We Require More Minerals!
+						["provider"] = { "n", 67402 },	-- Zazzix "Toasty" Sparkrocket
+						["coord"] = { 79.7, 30.0, 418 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					}),
 					q(32142, {	-- We Will Rock You
 						["provider"] = { "n", 67386 },	-- Sky Admiral Rogers
 						["races"] = ALLIANCE_ONLY,
@@ -1504,6 +1515,7 @@ _.Zones =
 					}),
 					q(32132, {	-- Worker Harassment
 						["provider"] = { "n", 67628 },	-- Shademaster Kiryn
+						["coord"] = { 79.7, 30.4, 418 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -1547,10 +1559,6 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					q(32223, {	-- Wanted: Lieutenant Ethan Jacobson
-						["u"] = 40,
-						["races"] = HORDE_ONLY,
-					}),
-					q(32131, {	-- We Require More Minerals!
 						["u"] = 40,
 						["races"] = HORDE_ONLY,
 					}),
@@ -1606,6 +1614,9 @@ _.Zones =
 						},
 					}),
 					n(68318, {	-- Dalan Nightbreaker
+						["questID"] = 34062,
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
 						["coords"] = {
 							{ 85.0, 27.6, 418 },
 							{ 89.6, 22.4, 418 },
@@ -1627,6 +1638,9 @@ _.Zones =
 						},
 					}),
 					n(68319, {	-- Disha Fearwarden
+						["questID"] = 34061,
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
 						["coord"] = { 87.4, 29.2, 418 },
 						["g"] = {
 							i(92787),	-- Horde Insignia of Conquering
@@ -1689,6 +1703,9 @@ _.Zones =
 						},
 					}),
 					n(68317, {	-- Mavis Harms
+						["questID"] = 34060,
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
 						["coords"] = {
 							{ 89, 26.8, 418 },
 							{ 84.6, 31, 418 },
