@@ -40,6 +40,7 @@ _.Zones =
 				q(33815, {	-- A Song of Frost and Fire
 					["provider"] = { "n", 76411 },	-- Farseer Drek'Thar
 					["coord"] = { 40.7, 67.0, 525 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33868,	-- The Home of the Frostwolves
 				}),
 				q(34280, {	-- All is Revealed
@@ -66,6 +67,7 @@ _.Zones =
 				q(33344, {	-- Armed and Dangerous
 					["provider"] = { "n", 75186 },	-- Thrall
 					["coord"] = { 70.7, 78.5, 527 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33410,	-- The Butcher of Bladespire
 				}),
 				q(32804, {	-- Articles of the Fallen
@@ -93,6 +95,7 @@ _.Zones =
 				q(33473, {	-- Back to Bladespire Citadel
 					["provider"] = { "n", 74272 },	-- Farseer Drek'Thar
 					["coord"] = { 16.7, 57.8, 525 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33470,	-- Pool of Visions
 				}),
 				q(34375, {	-- Back to Work
@@ -153,6 +156,7 @@ _.Zones =
 				q(33546, {	-- Deeds Left Undone
 					["provider"] = { "n", 74273 },	-- Durotan
 					["coord"] = { 43.5, 23.2, 526 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33526,	-- These Colors Don't Run
 				}),
 				q(35341, {	-- Defection of Gronnstalker Rokash
@@ -246,6 +250,7 @@ _.Zones =
 				}),
 				q(33807, {	-- Free Our Brothers and Sisters
 					["coord"] = { 21.7, 56.3, 525 },
+					["races"] = HORDE_ONLY,
 					["providers"] = {
 						{ "n", 74507 },	-- Wor'gol Defender
 						{ "n", 79415 },	-- Durotan
@@ -275,6 +280,7 @@ _.Zones =
 				q(32783, {	-- Ga'nar's Vengeance
 					["provider"] = { "n", 70860 },	-- Durotan
 					["coord"] = { 43.1, 41.3, 526 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33473,	-- Back to Bladespire Citadel
 				}),
 				q(34069, {	-- Getting the Points
@@ -290,6 +296,7 @@ _.Zones =
 				q(33784, {	-- Gormaul Tower
 					["provider"] = { "n", 76557 },	-- Durotar
 					["coord"] = { 20.9, 57.9, 525 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34380,	-- Rally the Frostwolves
 					["g"] = {
 						i(106168),	-- Frostwolf Ringmail Boots
@@ -301,6 +308,7 @@ _.Zones =
 				q(33408, {	-- Great Balls of Fire!
 					["provider"] = { "n", 75177 },	-- Durotan
 					["coord"] = { 34.2, 72.9, 526 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33546,	-- Deeds Left Undone
 				}),
 				q(33145, {	-- Grimfrost Hill
@@ -337,6 +345,7 @@ _.Zones =
 				q(32991, {	-- Into the Boneslag
 					["provider"] = { "n", 72274 },	-- Lokra
 					["coord"] = { 38.5, 52.4, 525 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32990,	-- They Who Held Fast
 				}),
 				q(33785, {	-- Karg Unchained
@@ -348,6 +357,7 @@ _.Zones =
 				q(33527, {	-- Last Steps
 					["provider"] = { "n", 75177 },	-- Durotar
 					["coord"] = { 50.4, 32.6, 527 },
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						33344,	-- Armed and Dangerous
 						33622,	-- To the Slaughter
@@ -362,6 +372,7 @@ _.Zones =
 				q(32792, {	-- Leave Nothing Behind!
 					["provider"] = { "n", 74000 },	-- Ga'nar
 					["coord"] = { 35.9, 25.7, 525 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32791,	-- Let the Hunt Begin!
 					["g"] = {
 						i(111917),	-- Frostwolf Arrow-Swallower
@@ -375,6 +386,7 @@ _.Zones =
 				q(32791, {	-- Let the Hunt Begin!
 					["provider"] = { "n", 70909 },	-- Ga'nar
 					["coord"] = { 30.8, 25.8, 525 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32783,	-- Ga'nar's Vengeance
 				}),
 				q(34344, {	-- Lurkers
@@ -435,6 +447,7 @@ _.Zones =
 				q(32992, {	-- Moving Target
 					["provider"] = { "n", 72274 },	-- Lokra
 					["coord"] = { 47.5, 45.5, 525 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32991,	-- Into the Boneslag
 				}),
 				q(34732, {	-- Mulverick's Offer of Service
@@ -478,6 +491,7 @@ _.Zones =
 				q(34402, {	-- Of Wolves and  Warriors
 					["provider"] = { "n", 78272 },	-- Durotan
 					["coord"] = { 41.8, 69.6, 525 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33815,	-- A Song of Frost and Fire
 				}),
 				q(32981, {	-- Only the Winner
@@ -493,6 +507,7 @@ _.Zones =
 				q(33470, {	-- Pool of Visions
 					["provider"] = { "n", 74272 },	-- Farseer Drek'Thar
 					["coord"] = { 16.7, 57.8, 525 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33469,	-- The Farseer
 					["g"] = {
 						i(106173),	-- Frostwolf Ringmail Pauldrons
@@ -524,6 +539,7 @@ _.Zones =
 				q(34380, {	-- Rally the Frostwolves
 					["provider"] = { "n", 70860 },	-- Durotan
 					["coord"] = { 20.7, 57.9, 525 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34379,	-- Den of Wolves
 				}),
 				q(33493, {	-- Return to the Pack
@@ -563,11 +579,13 @@ _.Zones =
 				q(33468, {	-- Save Wolf Home
 					["provider"] = { "n", 70860 },	-- Durotan
 					["coord"] = { 43.1, 41.3, 526 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33527,	-- Last Steps
 				}),
 				q(32989, {	-- Securing the South
 					["provider"] = { "n", 70860 },	-- Durotan
 					["coord"] = { 43.1, 41.2, 526 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33473,	-- Back to Bladespire Citadel
 				}),
 				q(33929, {	-- Shivertail's Den
@@ -633,6 +651,7 @@ _.Zones =
 				q(34124, {	-- The Battle of Thunder Pass
 					["provider"] = { "n", 76487 },	-- Lokra
 					["coord"] = { 73.4, 58.8, 525 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34123,	-- To Thunder Pass
 					["g"]  = {
 						i(106169),	-- Frostwolf Ringmail Cap
@@ -644,6 +663,7 @@ _.Zones =
 				q(34123, {	-- To Thunder Pass
 					["provider"] = { "n", 76720 },	-- Thrall
 					["coord"] = { 53.3, 56.7, 530 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33010,	-- The Iron Wolf
 				}),
 				q(35251, {	-- The Bounty of Bladespire	-- never implemented
@@ -652,6 +672,7 @@ _.Zones =
 				q(33410, {	-- The Butcher of Bladespire
 					["provider"] = { "n", 75186 },	-- Thrall
 					["coord"] = { 70.7, 78.5, 527 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33408,	-- Great Balls of Fire!
 					["g"] = {
 						i(106170),	-- Frostwolf Ringmail Gauntlet
@@ -684,6 +705,7 @@ _.Zones =
 				q(32795, {	-- The Eldest
 					["provider"] = { "n", 70941 },	-- Ga'nar
 					["coord"] = { 50.5, 54.3, 532 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32794,	-- Wrath of Gronn
 					["g"] = {
 						i(117504),	-- Grimfrost Arcanist Robe
@@ -709,6 +731,7 @@ _.Zones =
 				q(33469, {	-- The Farseer
 					["provider"] = { "n", 74651 },	-- Draka
 					["coord"] = { 20.7, 57.9, 525 },
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						33807,	-- Free Our Brothers and Sisters
 						33468,	-- Save Wolf Home
@@ -742,6 +765,7 @@ _.Zones =
 					},
 				}),
 				q(33868, {	-- The Home of the Frostwolves
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34446,	-- The Home Stretch
 				}),
 				q(33010, {	-- The Iron Wolf
@@ -779,6 +803,7 @@ _.Zones =
 				}),
 				q(33828, {	-- The Master Siegesmith
 					["provider"] = { "n", 72940 },	-- Frostwolf Champion
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33826,	-- Where's My Wolf?!
 					["g"] = {
 						i(113249),	-- Grom'gar Chain Boots
@@ -835,6 +860,7 @@ _.Zones =
 				q(32993, {	-- The Strength of Our Bonds
 					["provider"] = { "n", 72274 },	-- Lokra
 					["coord"] = { 55.4, 56.6, 525 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32992,	-- Moving Target
 					["g"] = {
 						i(113255),	-- Asha's Fang
@@ -856,6 +882,7 @@ _.Zones =
 				}),
 				q(33526, {	-- These Colors Don't Run
 					["coord"] = { 19.7, 44.7, 525 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33784,	-- Gormaul Tower
 					["providers"] = {
 						{ "n", 70860 },	-- Durotan
@@ -871,6 +898,7 @@ _.Zones =
 				q(32990, {	-- They Who Held Fast
 					["provider"] = { "n", 72274 },	-- Lokra
 					["coord"] = { 38.5, 52.4, 525 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32989,	-- Securing the South
 				}),
 				q(33462, {	-- Thunderlord for a Day
@@ -906,11 +934,13 @@ _.Zones =
 				q(32796, {	-- To the Garrison
 					["provider"] = { "n", 70941 },	-- Ga'nar
 					["coord"] = { 52.6, 66.9, 532 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32795,	-- The Eldest
 				}),
 				q(33622, {	-- To the Slaughter
 					["provider"] = { "n", 75186 },	-- Thrall
 					["coord"] = { 70.7, 78.5, 527 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33410,	-- The Butcher of Bladespire
 				}),
 				q(36435, {	-- Unintelligible Intelligence
@@ -990,6 +1020,7 @@ _.Zones =
 				q(33826, {	-- Where's My Wolf?!
 					["provider"] = { "n", 73097 },	-- Frostwolf Champion
 					["coord"] = { 63.1, 60.0, 525 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32993,	-- The Strength of Our Bonds
 				}),
 				q(34462, {	-- Winds of Change
@@ -1005,6 +1036,7 @@ _.Zones =
 				q(32794, {	-- Wrath of Gronn
 					["provider"] = { "n", 70910 },	-- Ga'nar
 					["coord"] = { 46.3, 32.1, 525 },
+					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32792,	-- Leave Nothing Behind!
 				}),
 				q(33915, {	-- Young Hearts -- verify if this has a source
