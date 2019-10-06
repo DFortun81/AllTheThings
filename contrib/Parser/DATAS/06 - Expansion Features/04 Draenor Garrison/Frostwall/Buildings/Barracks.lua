@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(28,  {	-- Barracks (rank 1: 26, rank 2: 27, rank 3: 28)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(-4, {	-- Achievements
+						n(-4, {		-- Achievements
 							ach(9499, {		-- Wingmen
 								crit(1),		-- Leorajh
 								crit(2),		-- Talonpriest Ishaal
@@ -99,6 +99,16 @@ _.ExpansionFeatures =
 										["collectible"] = false,
 									}),
 								}
+							}),
+						}),
+						n(-2, {		-- Vendors
+							n(79812, {	-- Moz'def
+								["races"] = HORDE_ONLY,
+								["g"] = {
+									i(122298, {	-- Bodyguard Miniaturization Device (TOY!)
+										["cost"] = { { "c", 824, 250 }, },	-- 250x Garrison Resources
+									}),
+								},
 							}),
 						}),
 					},

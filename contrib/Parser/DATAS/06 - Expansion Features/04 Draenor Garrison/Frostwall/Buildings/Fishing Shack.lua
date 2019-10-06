@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(135, {	-- Fishing Shack (rank 1: 64, rank 2: 134, rank 3: 135)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(-4, {	-- Achievements
+						n(-4,  {	-- Achievements
 							ach(7274, { 	-- Learning From The Best
 								i(86596), 	-- Nat's Fishing Chair
 							}),
@@ -111,6 +111,31 @@ _.ExpansionFeatures =
 									i(46109), 	-- Sea Turtle
 									i(23720), 	-- Riding Turtle
 								}),
+							}),
+						}),
+						n(-2,  {	-- Vendors
+							n(85984, {	--  Nat Pagle <Master Fisherman>
+								["races"] = HORDE_ONLY,
+								["g"] = {
+									i(168416),	-- Angler's Water Striders
+									i(117404, {	-- Land Shark (PET!)
+										["cost"] = { { "i", 117397, 50 }, },	-- 50x Nat's Lucky Coin
+									}),
+								--	i(117401),	-- Nat's Draenic Fishing Journal [Missing icon - may not need to be in listing]
+									i(117405, {	-- Nat's Drinking Hat
+										["cost"] = { { "i", 117397, 25 }, },	-- 25x Nat's Lucky Coin
+									}),
+									i(86596),	-- Nat's Fishing Chair (TOY!)
+									i(87791, {	-- Reins of the Crimson Water Strider
+										["cost"] = { { "i", 117397, 100 }, },	-- 100x Nat's Lucky Coin
+									}),
+									i(116825, {	-- Savage Fishing Pole [Horde only]
+										["cost"] = { { "i", 117397, 25 }, },	-- 25x Nat's Lucky Coin
+									}),
+									i(114919, {	-- Sea Calf (PET!)
+										["cost"] = { { "i", 117397, 50 }, },	-- 50x Nat's Lucky Coin
+									}),
+								},
 							}),
 						}),
 					},

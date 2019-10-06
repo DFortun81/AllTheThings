@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(36, {	-- Frostwall Tavern (rank 1: 34, rank 2: 35, rank 3: 36)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(-4, {	-- Achievements
+						n(-4,  {	-- Achievements
 							ach(9703, {		-- Stay Awhile and Listen
 								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 								["g"] = {
@@ -1318,6 +1318,16 @@ _.ExpansionFeatures =
 								["repeatable"] = true,
 								["g"] = {
 									i(119036),	-- Box of Storied Treasures
+								},
+							}),
+						}),
+						n(-2,  {	-- Vendors
+							n(87302, {	-- Murg <Cook>
+								["races"] = HORDE_ONLY,
+								["g"] = {
+									i(119207, {	-- Meat Cleaver
+										["cost"] = 50000000,	-- 5,000g
+									}),
 								},
 							}),
 						}),

@@ -371,13 +371,11 @@ app.L = {
 		[-118] = "Interface\\Icons\\inv_misc_armorkit_17", 									-- The Tannery
 		[-119] = "Interface\\Icons\\garrison_building_tradingpost", 						-- Trading Post
 		[-120] = "Interface\\Icons\\inv_pick_02", 											-- Frostwall Mine
-		[-121] = "Interface\\Icons\\inv_misc_rune_01", 										-- Frostwall Tavern
 		[-122] = "Interface\\Icons\\garrison_building_workshop", 							-- Goblin Workshop
 		[-123] = "Interface\\Icons\\garrison_building_magetower", 							-- Spirit Lodge
 		[-124] = "Interface\\Icons\\garrison_building_armory", 								-- Garrison Sets
 		[-125] = "Interface\\Icons\\garrison_building_armory", 								-- Dwarven Bunker
 		[-126] = "Interface\\Icons\\garrison_building_workshop", 							-- Gnomish Gearworks
-		[-127] = "Interface\\Icons\\inv_pick_02", 											-- Lunarfall Excavation
 		[-128] = "Interface\\Icons\\inv_misc_rune_01", 										-- Lunarfall Inn
 		[-129] = "Interface\\Icons\\garrison_building_magetower", 							-- Mage Tower
 		[-134] = "Interface\\Icons\\inv_bannerpvp_01", 										-- Orgrimmar Set
@@ -1010,12 +1008,10 @@ app.L = {
 		[-118] = select(2,C_Garrison.GetBuildingInfo(90)), 						-- The Tannery
 		[-119] = select(2,C_Garrison.GetBuildingInfo(111)), 					-- Trading Post
 --Horde [Swaps based on faction ONLY after a reloadui]
-		[-121] = select(2,C_Garrison.GetBuildingInfo(34)), 						-- Lunarfall Inn / Frostwall Tavern
 		[-124] = "Garrison Sets", 												-- Garrison Sets
 -- Alliance [Swaps based on faction ONLY after a reloadui]
 		[-125] = select(2,C_Garrison.GetBuildingInfo(8)), 						-- Dwarven Bunker / War Mill
 		[-126] = select(2,C_Garrison.GetBuildingInfo(162)), 					-- Gnomish Gearworks / Goblin Workshop
-		[-127] = select(2,C_Garrison.GetBuildingInfo(61)),	 					-- Lunarfall Excavation / Frostwall Mine
 		[-128] = select(2,C_Garrison.GetBuildingInfo(34)), 						-- Lunarfall Inn / Frostwall Tavern
 		[-129] = select(2,C_Garrison.GetBuildingInfo(37)),	 					-- Mage Tower / Spirit Lodge
 		[-130] = "Duskwood "..GetSpellInfo(133137),								-- Duskwood Active

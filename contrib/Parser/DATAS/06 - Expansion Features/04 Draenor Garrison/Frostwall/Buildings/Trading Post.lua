@@ -48,6 +48,67 @@ _.ExpansionFeatures =
 								})),
 							}),
 						}),
+						n(-2,  {	-- Vendors
+							n(87015, {	-- Kil'rip <Laughing Skull Quartermaster>
+								["races"] = HORDE_ONLY,
+								["crs"] = { 86698 },	-- Kil'rip
+								["g"] = {
+									i(118672, {	-- Bloody Visage of the Laughing Skull
+										["cost"] = {
+											{ "g", 10000000 },	-- 1,000g
+											{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
+										},
+									}),
+									i(119146, {	-- Bone Wasp (PET!)
+										["cost"] = {
+											{ "g", 10000000 },	-- 1,000g
+											{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
+										},
+									}),
+									i(119166, {	-- Contract: Cacklebone
+										["cost"] = 50000000,	-- 5,000x
+										["g"] = {
+											follower(458),	-- Cacklebone
+										},
+									}),
+									i(118671, {	-- Frozen Visage of the Laughing Skull
+										["cost"] = {
+											{ "g", 10000000 },	-- 1,000g
+											{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
+										},
+									}),
+									i(118673, {	-- Golden Visage of the Laughing Skull
+										["cost"] = {
+											{ "g", 50000000 },	-- 5,000g
+											{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
+										},
+									}),
+									i(119159, {	-- Happy Fun Skull
+										["cost"] = 5000000,		-- 500g
+									}),
+									i(116782, {	-- Ironside Warwolf (MOUNT!)
+										["cost"] = {
+											{ "g", 50000000 },	-- 5,000g
+											{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+										},
+									}),
+									i(118668),	-- Laughing Skull Elixir
+									i(119138), 	-- Laughing Skull Orc Tabard
+									i(118684, {	-- Maniacal Grimace
+										["cost"] = 5000000,		-- 500g
+									}),
+									i(119160, {	-- Tickle Totem (TOY!)
+										["cost"] = 12500000,	-- 1,250g
+									}),
+									i(118674, {	-- Visage of the Laughing Skull
+										["cost"] = {
+											{ "g", 10000000 },	-- 1,000g
+											{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
+										},
+									}),
+								},
+							}),
+						}),
 					},
 				}),
 			}),

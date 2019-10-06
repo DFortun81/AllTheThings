@@ -17,6 +17,46 @@ _.ExpansionFeatures =
 								},
 							}),
 						}),
+						n(-2, {	-- Vendors
+							n(81981, {	-- Tarnon
+								["races"] = HORDE_ONLY,
+								["g"] = {
+									i(110721, {	-- Crazy Carrot
+										["cost"] = { { "i", 116053, 1000 }, },	-- 1,000x Draenic Seeds
+									}),
+									i(118568, {	-- Garden Hoe
+										["cost"] = {
+											{ "g", 25000000 },		-- 2,500g
+											{ "i", 116053, 500 },	-- 500x Draenic Seeds
+										},
+									}),
+									i(118560, {	-- Garden Pitchfork
+										["cost"] = {
+											{ "g", 50000000 },		-- 5,000g
+											{ "i", 116053, 1000 },	-- 1,000x Draenic Seeds
+										},
+									}),
+									i(118562, {	-- Garden Scythe
+										["cost"] = {
+											{ "g", 50000000 },		-- 5,000g
+											{ "i", 116053, 1000 },	-- 1,000x Draenic Seeds
+										},
+									}),
+									i(118559, {	-- Garden Shovel
+										["cost"] = {
+											{ "g", 50000000 },		-- 5,000g
+											{ "i", 116053, 1000 },	-- 1,000x Draenic Seeds
+										},
+									}),
+									i(118563, {	-- Garden Sickle
+										["cost"] = {
+											{ "g", 25000000 },		-- 2,500g
+											{ "i", 116053, 500 },	-- 500x Draenic Seeds
+										},
+									}),
+								},
+							}),
+						}),
 					},
 				}),
 			}),
