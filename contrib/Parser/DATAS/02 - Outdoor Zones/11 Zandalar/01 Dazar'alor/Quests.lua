@@ -226,6 +226,15 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56030,	-- The Warchief's Order
 				}),
+				q(57198, {	-- Sense of Obligation
+					["coord"] = { 51.5, 99.4, 1165 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 141961 },	-- Lilian Voss
+						["sourceQuests"] = { 
+							57095,	-- Old Soldier (Saurfang loyalist)
+							57152,	-- Most Loyal (Sylvanas loyalist)
+						},	
+				}),
 				q(46926, {	-- Shakedown
 					["sourceQuests"] = { 50835 },	-- The Port of Zandalar
 					["coord"] = { 50.0, 84.9, 1165 },
