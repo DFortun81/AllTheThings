@@ -698,6 +698,7 @@ _.Zones =
 				q(12794, {	-- The Magical Kingdom of Dalaran [Alliance]
 					["provider"] = { "n", 29161 }, --	Magistrix Haelenai
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(12791, {	-- The Magical Kingdom of Dalaran
 					["provider"] = { "n", 29160 },	-- Magistrix Phaelista

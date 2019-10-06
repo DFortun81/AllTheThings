@@ -964,6 +964,7 @@ _.Zones =
 				q(12794, {	--  The Magical Kingdom of Dalaran [Alliance]
 					["provider"] = { "n", 23729 },	-- Baron Ulrik von Stromhearth
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(11167, {	-- The New Plague
 					["races"] = HORDE_ONLY,
@@ -1352,7 +1353,7 @@ _.Zones =
 				q(12791, {	--  The Magical Kingdom of Dalaran
 					["provider"] = { "n", 29159 },	-- Magister Varenthas
 					["races"] = HORDE_ONLY,
-				--	["isBreadcrumb"] = true,
+					["isBreadcrumb"] = true,
 				}),
 				q(11167, {	--  The New Plague
 					["provider"] = { "n", 24126 },	-- Apothecary Lysander

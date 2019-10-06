@@ -9,12 +9,15 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["coord"] = { 66.6, 67.9, 125 },
 		["groups"] = {
 			n(-17, {	-- Quests
-				q(29829),	-- Discretion is Key
 				q(29830,{ 	-- Containment
-					i(44343), 	-- Conferred Pantaloons
-					i(44345),	-- Dalaran Warden's Legplates
-					i(44344), 	-- Labyrinthine Legguards
-					i(44342), 	-- Tattooed Deerskin Leggings
+					["provider"] = { "n", 30658 },	-- Lieutenant Sinclari
+					["sourceQuest"] = 29829,	-- Discretion is Key
+					["g"] = {
+						i(44343), 	-- Conferred Pantaloons
+						i(44345),	-- Dalaran Warden's Legplates
+						i(44344), 	-- Labyrinthine Legguards
+						i(44342), 	-- Tattooed Deerskin Leggings
+					},
 				}),
 			}),
 			d(1,   {	-- Normal

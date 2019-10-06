@@ -1937,19 +1937,14 @@ _.Zones =
 					["questID"] = 12794,
 					["provider"] = { "n", 29158 },	-- Magister Dath'omere
 					["races"] = ALLIANCE_ONLY,
-				},
-				{	-- The Magical Kingdom of Dalaran	-- aa
 					["isBreadcrumb"] = true,
-					["questID"] = 12791,
-					["provider"] = { "n", 29155 },	-- Magistrix Kaelana
-					["coord"] = { 41.5, 53.5, 114 },
-					["races"] = HORDE_ONLY,
 				},
 				{	-- The Mechagnomes
 					["questID"] = 11708,
 					["provider"] = { "n", 25590 },	-- Fizzcrank Fullthrottle
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11707,	-- Distress Call
+					["isBreadcrumb"] = true,
 				},
 				{	-- The Nefarious Clam Master...
 					["questID"] = 11872,

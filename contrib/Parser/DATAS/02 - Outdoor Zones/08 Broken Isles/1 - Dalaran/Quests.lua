@@ -1560,7 +1560,6 @@ _.Zones =
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 					["u"] = 40,
 				}),
-			--	q(14166),	-- The Grateful Dead -- Day of the Dead event quest
 				q(41112,  {	-- The Great Akazamzarak
 					["sourceQuests"] = { 41125 },	-- Unlocked Potential
 					["classes"] = { 8 },

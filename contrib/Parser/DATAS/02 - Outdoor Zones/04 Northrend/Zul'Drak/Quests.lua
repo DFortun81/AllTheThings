@@ -125,7 +125,9 @@ _.Zones =
 				q(12936),	-- The Amphitheater of Anguish: Korrak the Bloodrager!
 				q(12933),	-- The Amphitheater of Anguish: Magnataur!
 				q(12935),	-- The Amphitheater of Anguish: Tuskarrmageddon!
-				q(12932),	-- The Amphitheater of Anguish: Yggdras!
+				q(12932, {	-- The Amphitheater of Anguish: Yggdras!
+					["sourceQuest"] = 12974,	-- The Champion's Call
+				}),
 				q(12565),	-- The Blessing of Zim'Abwa
 				q(12655),	-- The Blessing of Zim'Rhuk
 				q(12615),	-- The Blessing of Zim'Torga
@@ -137,7 +139,9 @@ _.Zones =
 				q(12729),	-- The Gods Have Spoken
 				q(12712),	-- The Key of Warlord Zol'Maz
 				q(12622),	-- The Leaders at Jin'Alai
-				q(12796),	-- The Magical Kingdom of Dalaran
+				q(12796, {	-- The Magical Kingdom of Dalaran
+					["isBreadcrumb"] = true,
+				}),
 				q(12919),	-- The Storm King's Vengeance
 				q(12598),	-- Throwing Down
 				q(12628),	-- To Speak With Har'koa

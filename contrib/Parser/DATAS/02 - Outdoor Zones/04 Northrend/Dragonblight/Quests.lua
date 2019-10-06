@@ -1056,6 +1056,7 @@ _.Zones =
 				q(12794, {	-- The Magical Kingdom of Dalaran
 					["provider"] = { "n", 26673 },	-- Image of Archmage Modera
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(12053, {	-- The Might of the Horde [Horde]
 					["provider"] = { "n", 26415 },	-- Senior Sergeant Juktok
@@ -1398,6 +1399,7 @@ _.Zones =
 				-- q(12791, {	-- The Magical Kingdom of Dalaran [Horde]
 				--	["isBreadcrumb"] = true,
 				-- 	["provider"] = { "n", 26471 },	-- Image of Archmage Aethas Sunreaver
+				--	["isBreadcrumb"] = true,
 				-- }),
 				-- q(12260, {	-- The Perfect Dissemblance [Horde]
 				-- 	["provider"] = { "n", 27350 },	-- Agent Skully

@@ -92,6 +92,7 @@ _.WorldEvents =
 						
 						-- Containers
 						i(46007,  {  --  Bag of Fishing Treasure
+							i(46004),	-- Sealed Vial of Poison
 							i(44983),	-- Strand Crawler Pet
 							i(45984),	-- Unusual Compass Toy
 							i(33820),	-- Weather-Beaten Fishing Hat

@@ -11,20 +11,19 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				--[[
-				q(29400, {	-- A Season for Celebration
-					["races"] = HORDE_ONLY,
-				}),
 				q(32406, {	-- A Tactical Assault
 					["races"] = HORDE_ONLY,
 				}),
-				q(29608, {	-- Allies in Dalaran
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(24580),	-- Anub'Rekhan Must Die!
 				]]--
+				q(24580, {	-- Anub'Rekhan Must Die!
+					["coord"] = { 57.3, 66.7, 125 },
+					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["isWeekly"] = true,
+				}),
 				i(46007,  {	-- Bag of Fishing Treasures
 					["description"] = "|cff66ccffFishing Daily Quest Reward|r",
 					["g"] = {
+						i(46004),	-- Sealed Vial of Poison
 						i(44983),	-- Strand Crawler Pet
 						i(45984),	-- Unusual Compass Toy
 						i(33820),	-- Weather-Beaten Fishing Hat
@@ -41,9 +40,18 @@ _.Zones =
 						}),
 					},
 				}),
-				--[[
-				q(13833),	-- Blood Is Thicker
-				]]--
+				q(13833, {	-- Blood Is Thicker
+					["coord"] = { 53.0, 64.9, 125 },
+					["isDaily"] = true,
+					["provider"] = { "n", 28742 },	-- Marcia Chase
+					["requireSkill"] = 356,	-- Fishing
+					["g"] = {
+						i(46007),	-- Bag of Fishing Treasures
+						crit(4, {	-- Chasing Marcia (Blood is Thicker)
+							["achievementID"] = 3217,	-- Chasing Marcia
+						}),
+					},
+				}),
 				q(14151, {	-- Cardinal Ruby
 					["provider"] = { "n", 28703 },	-- Quest Giver: Linzy Blackbolt <Alchemy Trainer>
 					["coord"] = { 42.4, 32.0 },
@@ -53,21 +61,66 @@ _.Zones =
 						recipe(66659),	-- Transmute: Cardinal Ruby
 					},
 				}),
-				--[[
-				q(13272),	-- Cloth Scavenging
-				q(13834),	-- Dangerously Delicious
-				q(13836),	-- Disarmed!
-				q(29829),	-- Discretion is Key
-				q(13041),	-- Finish the Shipment
-				q(24585),	-- Flame Leviathan Must Die!
-				q(29609, {	-- Friends in Dalaran
-					["races"] = HORDE_ONLY,
+				q(13272, {	-- Cloth Scavenging
+					["coord"] = { 36.1, 33.5, 125 },
+					["provider"] = { "n", 28699 },	-- Charles Worth
+					["requireSkill"] = 197,	-- Tailoring
+					["g"] = {
+						spell(59390),	-- Cloth Scavenging -- NOTE: there doesn't appear to be a recipe for this
+					},
 				}),
+				q(13834, {	-- Dangerously Delicious
+					["coord"] = { 53.0, 64.9, 125 },
+					["isDaily"] = true,
+					["provider"] = { "n", 28742 },	-- Marcia Chase
+					["requireSkill"] = 356,	-- Fishing
+					["g"] = {
+						i(46007),	-- Bag of Fishing Treasures
+						crit(3, {	-- Chasing Marcia (Dangerously Delicious)
+							["achievementID"] = 3217,	-- Chasing Marcia
+						}),
+					},
+				}),
+				q(13836, {	-- Disarmed!
+					["coord"] = { 53.0, 64.9, 125 },
+					["isDaily"] = true,
+					["provider"] = { "n", 28742 },	-- Marcia Chase
+					["requireSkill"] = 356,	-- Fishing
+					["g"] = {
+						i(46007),	-- Bag of Fishing Treasures
+						crit(5, {	-- Chasing Marcia (Disarmed!)
+							["achievementID"] = 3217,	-- Chasing Marcia
+						}),
+					},
+				}),
+				q(29829, {	-- Discretion is Key
+					["coord"] = { 30.6, 48.6, 125 },
+					["provider"] = { "n", 16128 },	-- Rhonin
+					["isBreadcrumb"] = true,
+				}),
+				q(13041, {	-- Finish the Shipment
+					["coord"] = { 40.7, 35.4, 125 },
+					["provider"] = { "n", 28701 },	-- Timothy Jones
+					["requireSkill"] = 755,	-- Jewelcrafting
+					["g"] = {
+						currency(61),	-- Dalaran Jewelcrafter's Token
+					},
+				}),
+				q(24585, {	-- Flame Leviathan Must Die!
+					["coord"] = { 57.3, 66.7, 125 },
+					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["isWeekly"] = true,
+				}),
+				--[[
 				q(32405, {	-- Hand of the Silver Covenant
 					["races"] = HORDE_ONLY,
 				}),
-				q(24587),	-- Ignis the Furnace Master Must Die!
 				--]]
+				q(24587, {	-- Ignis the Furnace Master Must Die!
+					["coord"] = { 57.3, 66.7, 125 },
+					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["isWeekly"] = true,
+				}),
 				q(24510, {	-- Inside the Frozen Citadel
 					["provider"] = { "n", 37776 },	-- Apprentice Nelphi <Kirin Tor>
 					["races"] = ALLIANCE_ONLY,
@@ -78,19 +131,53 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				q(24582, {	-- Instructor Razuvious Must Die!
+					["coord"] = { 57.3, 66.7, 125 },
+					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["isWeekly"] = true,
+				}),
 				--[[
-				q(24582),	-- Instructor Razuvious Must Die!
 				q(32403, {	-- It Starts in the Sewers
 					["races"] = HORDE_ONLY,
 				}),
-				q(13832),	-- Jewel Of The Sewers
+				]]--
+				q(13832, {	-- Jewel Of The Sewers
+					["coord"] = { 53.0, 64.9, 125 },
+					["isDaily"] = true,
+					["provider"] = { "n", 28742 },	-- Marcia Chase
+					["requireSkill"] = 356,	-- Fishing
+					["g"] = {
+						i(46007),	-- Bag of Fishing Treasures
+						crit(2, {	-- Chasing Marcia (The Jewel of the Sewers)
+							["achievementID"] = 3217,	-- Chasing Marcia
+						}),
+					},
+				}),
+				--[[
 				q(32410, {	-- Krasus' Landing
 					["races"] = HORDE_ONLY,
 				}),
-				q(12790),	-- Learning to Leave and Return: the Magical Way
-				q(24589),	-- Lord Jaraxxus Must Die!
-				q(24590),	-- Lord Marrowgar Must Die!
 				--]]
+				q(12790, {	-- Learning to Leave and Return: the Magical Way
+					["coord"] = { 56.3, 46.7, 125 },
+					["provider"] = { "n", 29156 },	-- Archmage Celindra
+					["sourceQuests"] = {
+						12791,	-- The Magical Kingdom of Dalaran (Horde only - Grizzly Hills, Dragonblight, Borean Tundra, Howling Fjord)
+						12794,	-- The Magical Kingdom of Dalaran (Alliance only - Grizzly Hills, Dragonblight, Borean Tundra, Howling Fjord)
+						12796,	-- The Magical Kingdom of Dalaran (Zul'Drak)
+						39210,	-- The Magical Kingdom of Dalaran (Crystalsong Forest)
+					},
+				}),
+				q(24589, {	-- Lord Jaraxxus Must Die!
+					["coord"] = { 57.3, 66.7, 125 },
+					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["isWeekly"] = true,
+				}),
+				q(24590, {	-- Lord Marrowgar Must Die!
+					["coord"] = { 57.3, 66.7, 125 },
+					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["isWeekly"] = true,
+				}),
 				q(12853, {	-- Luxurious Getaway!
 					["provider"] = { "n", 30490 },	-- Rin Duoctane
 					["coord"] = { 31.2, 49.6 },
@@ -99,60 +186,139 @@ _.Zones =
 						49536,	-- Warchief's Command: Storm Peaks!
 					},
 				}),
-				--[[
 				q(29073, {	-- Make Haste to Orgrimmar!
+					["u"] = 40,
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 208317 },	-- Warchief's Command Board
 				}),
 				q(29071, {	-- Make Haste to Stormwind!
+					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 208316 },	-- Hero's Call Board
 				}),
-				q(24584),	-- Malygos Must Die!
-				q(11357, {	-- Masked Orphan Matron
-					["races"] = HORDE_ONLY,
+				q(24584, {	-- Malygos Must Die!
+					["coord"] = { 57.3, 66.7, 125 },
+					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["isWeekly"] = true,
 				}),
-				q(13148),	-- Necklace Repair
-				q(24581),	-- Noth the Plaguebringer Must Die!
+				q(24581, {	-- Noth the Plaguebringer Must Die!
+					["coord"] = { 57.3, 66.7, 125 },
+					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["isWeekly"] = true,
+				}),
+				--[[
 				q(32412, {	-- One Last Grasp
 					["races"] = HORDE_ONLY,
 				}),
-				q(24583),	-- Patchwerk Must Die!
-				q(14036, {	-- Pilgrim's Bounty
-					["races"] = HORDE_ONLY,
+				]]--
+				q(24583, {	-- Patchwerk Must Die!
+					["coord"] = { 57.3, 66.7, 125 },
+					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["isWeekly"] = true,
 				}),
 				q(13418, {	-- Preparations for War
+					["coord"] = { 67.7, 47.2, 125 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 31081 },	-- Officer Van Rossem
 					["sourceQuests"] = { 49555 }	-- Hero's Call: Icecrown!
 				}),
 				q(13419, {	-- Preparations for War
+					["coord"] = { 69.4, 40.7, 125 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 31085 },	-- Sky-Reaver Klum
 					["sourceQuests"] = { 49537 }	-- Warchief's Command: Icecrown!
 				}),
-				q(24586),	-- Razorscale Must Die!
-				q(24579),	-- Sartharion Must Die!
-				q(13845),	-- Sealed Vial of Poison
-				q(12958),	-- Shipment: Blood Jade Amulet
-				q(12962),	-- Shipment: Bright Armor Relic
-				q(12959),	-- Shipment: Glowing Ivory Figurine
-				q(12961),	-- Shipment: Intricate Bone Figurine
-				q(12963),	-- Shipment: Shifting Sun Curio
-				q(12960),	-- Shipment: Wicked Sun Brooch
-				q(13483, {	-- Spring Gatherers
-					["races"] = HORDE_ONLY,
+				q(24586, {	-- Razorscale Must Die!
+					["coord"] = { 57.3, 66.7, 125 },
+					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["isWeekly"] = true,
 				}),
-				q(12974),	-- The Champion's Call!
-				q(13830),	-- The Ghostfish
-				q(14166),	-- The Grateful Dead
+				q(24579, {	-- Sartharion Must Die!
+					["coord"] = { 57.3, 66.7, 125 },
+					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["isWeekly"] = true,
+				}),
+				q(13845, {	-- Sealed Vial of Poison
+					["provider"] = { "i", 46004 },	-- Sealed Vial of Poison
+					["repeatable"] = true,
+					["requireSkill"] = 356,	-- Fishing
+				}),
+				q(12958, {	-- Shipment: Blood Jade Amulet
+					["coord"] = { 40.7, 35.4, 125 },
+					["isDaily"] = true,
+					["provider"] = { "n", 28701 },	-- Timothy Jones
+					["requireSkill"] = 755,	-- Jewelcrafting
+					["g"] = {
+						currency(61),	-- Dalaran Jewelcrafter's Token
+					},
+				}),
+				q(12962, {	-- Shipment: Bright Armor Relic
+					["coord"] = { 40.7, 35.4, 125 },
+					["isDaily"] = true,
+					["provider"] = { "n", 28701 },	-- Timothy Jones
+					["requireSkill"] = 755,	-- Jewelcrafting
+					["g"] = {
+						currency(61),	-- Dalaran Jewelcrafter's Token
+					},
+				}),
+				q(12959, {	-- Shipment: Glowing Ivory Figurine
+					["coord"] = { 40.7, 35.4, 125 },
+					["isDaily"] = true,
+					["provider"] = { "n", 28701 },	-- Timothy Jones
+					["requireSkill"] = 755,	-- Jewelcrafting
+					["g"] = {
+						currency(61),	-- Dalaran Jewelcrafter's Token
+					},
+				}),
+				q(12961, {	-- Shipment: Intricate Bone Figurine
+					["coord"] = { 40.7, 35.4, 125 },
+					["isDaily"] = true,
+					["provider"] = { "n", 28701 },	-- Timothy Jones
+					["requireSkill"] = 755,	-- Jewelcrafting
+					["g"] = {
+						currency(61),	-- Dalaran Jewelcrafter's Token
+					},
+				}),
+				q(12963, {	-- Shipment: Shifting Sun Curio
+					["coord"] = { 40.7, 35.4, 125 },
+					["isDaily"] = true,
+					["provider"] = { "n", 28701 },	-- Timothy Jones
+					["requireSkill"] = 755,	-- Jewelcrafting
+					["g"] = {
+						currency(61),	-- Dalaran Jewelcrafter's Token
+					},
+				}),
+				q(12960, {	-- Shipment: Wicked Sun Brooch
+					["coord"] = { 40.7, 35.4, 125 },
+					["isDaily"] = true,
+					["provider"] = { "n", 28701 },	-- Timothy Jones
+					["requireSkill"] = 755,	-- Jewelcrafting
+					["g"] = {
+						currency(61),	-- Dalaran Jewelcrafter's Token
+					},
+				}),
+				q(12974, {	-- The Champion's Call!
+					["coord"] = { 49.3, 45.9, 125 },
+					["provider"] = { "n", 30137 },	-- Shifty Vickers
+					["description"] = "Patrols the center area of Underbelly.",
+					["isBreadcrumb"] = true,
+				}),
+				q(13830, {	-- The Ghostfish
+					["coord"] = { 53.0, 64.9, 125 },
+					["isDaily"] = true,
+					["provider"] = { "n", 28742 },	-- Marcia Chase
+					["requireSkill"] = 356,	-- Fishing
+					["g"] = {
+						i(46007),	-- Bag of Fishing Treasures
+						crit(1, {	-- Chasing Marcia (The Ghostfish)
+							["achievementID"] = 3217,	-- Chasing Marcia
+						}),
+					},
+				}),
+				--[[
 				q(32409, {	-- The Kirin Tor's True Colors
 					["races"] = HORDE_ONLY,
 				}),
-				q(12796),	-- The Magical Kingdom of Dalaran
-				q(12791, {	-- The Magical Kingdom of Dalaran
-					["races"] = HORDE_ONLY,
-				}),
-				q(12794, {	-- The Magical Kingdom of Dalaran
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(39210),	-- The Magical Kingdom of Dalaran
 				q(32411, {	-- The Remaining Sunreavers
 					["races"] = HORDE_ONLY,
 				}),
@@ -162,27 +328,44 @@ _.Zones =
 				q(32402, {	-- The Situation In Dalaran
 					["races"] = HORDE_ONLY,
 				}),
-				q(11971, {	-- The Spinner of Summer Tales
-					["races"] = HORDE_ONLY,
+				]]--
+				q(14103, {	-- Titanium Powder
+					["coord"] = { 40.7, 35.4, 125 },
+					["provider"] = { "n", 28701 },	-- Timothy Jones
+					["repeatable"] = true,
+					["requireSkill"] = 755,	-- Jewelcrafting
+					["g"] = {
+						currency(61),	-- Dalaran Jewelcrafter's Token
+					},
 				}),
-				q(40173),	-- The Unstable Prism
-				q(14103),	-- Titanium Powder
+				--[[
 				q(26012),	-- Trouble at Wyrmrest
-				q(8883),	-- Valadar Starsong
 				q(32404, {	-- Violence in the Arena
 					["races"] = HORDE_ONLY,
 				}),
+				]]--
 				q(14203, {	-- Waterlogged Recipe
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(12521, {	-- Where in the World is Hemet Nesingwary?
-					["sourceQuests"] = {
-						{ 49535 }	-- Warchief's Command: Sholazar Basin!
-						{ 49553 }	-- Hero's Call: Sholazar Basin!
+					["provider"] = { "i", 48681 },	-- Waterlogged Recipe
+					["repeatable"] = true,
+					["requireSkill"] = 356,	-- Fishing
+					["g"] = {
+						currency(81),	-- Epicurean's Award 5x
 					},
 				}),
-				q(24588),	-- XT-002 Deconstructor Must Die!
-				--]]
+				q(12521, {	-- Where in the World is Hemet Nesingwary?
+					["coord"] = { 68.5, 42.0, 125 },
+					["provider"] = { "n", 28160 },	-- Achmage Pentarus
+					["sourceQuests"] = {
+						49553,	-- Hero's Call: Sholazar Basin!
+						49535,	-- Warchief's Command: Sholazar Basin!
+					},
+				}),
+				q(24588, {	-- XT-002 Deconstructor Must Die!
+					["coord"] = { 57.3, 66.7, 125 },
+					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
+					["isWeekly"] = true,
+				}),
 			}),
 		}),
 	}),
