@@ -37,10 +37,17 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							},
 						},
 					}),
+					q(29607, {	-- Eyes of Desire
+						["provider"] = { "n", 54847 },	-- Dealer Vijaad
+						["description"] = "Dealer Vijaad appears upon defeating Darkweaver Syth.",
+					}),
 					q(29606, {	-- Terokk's Legacy
-						i(29330),	-- The Saga of Terokk
-						i(29332),	-- Terokk's Mask
-						i(29329),	-- Terokk's Quill
+						["provider"] = { "n", 54840 },	-- Isfar
+						["g"] = {
+							i(29330),	-- The Saga of Terokk
+							i(29332),	-- Terokk's Mask
+							i(29329),	-- Terokk's Quill
+						},
 					}),	
 				}),
 			d(1, {	-- Normal
