@@ -621,7 +621,21 @@ _.NeverImplemented =
 		q(49096),	-- Invasion Point: Naigtal
 		q(49097),	-- Invasion Point: Sangua
 		q(49091),	-- Invasion Point: Val
-		q(49177),	-- Greater Invasion Point: Sotanathor or Sotanathor Bonus Roll (?)
+		q(49195),	-- Greater Invasion Point: Occularus - weekly completion
+		q(49176),	-- Greater Invasion Point: Occularus - bonus roll used
+		q(49170),	-- Greater Invasion Point: Occularus - Occularus kill credit
+		q(49196),	-- Greater Invasion Point: Pit Lord Vilemus - weekly completion
+		q(49174),	-- Greater Invasion Point: Pit Lord Vilemus - bonus roll used
+		q(49168),	-- Greater Invasion Point: Pit Lord Vilemus - Vilemus kill credit
+		q(49197),	-- Greater Invasion Point: Sotanathor - weekly completion
+		q(49177),	-- Greater Invasion Point: Sotanathor - bonus roll used
+		--q(),	-- Greater Invasion Point: Sotanathor - sotanathor kill credit
+		q(49198),	-- Greater Invasion Point: Inquisitor Meto - weekly completion
+		q(49175),	-- Greater Invasion Point: Inquisitor Meto - bonus roll used
+		--q(),	-- Greater Invasion Point: Inquisitor Meto - meto kill credit
+		q(49199),	-- Greater Invasion Point: Matron Folnuna - weekly completion
+		q(49173),	-- Greater Invasion Point: Matron Folnuna - folnuna bonus roll
+		q(49167),	-- Greater Invasion Point: Matron Folnuna - folnuna kill credit
 		q(49213),	-- triggered upon completing Aurinor, but not the official quest.
 		q(49215),	-- triggered upon completing Bonich, but not the official quest.
 		q(49211),	-- triggered upon completing Cen'gar, but not the official quest.
