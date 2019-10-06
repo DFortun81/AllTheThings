@@ -5,7 +5,17 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(107, {	-- Nagrand (Outland)
-			n(-4, {	-- Achievements
+			n(-4, {		-- Achievements
+				ach(9069, {	-- An Awfully Big Adventure
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["g"] = {
+						crit(26, {	-- Narrok
+							["coord"] = { 61.0, 49.4, 107 },
+							["cr"] = 66552,	-- Narrok <Master Pet Tamer>
+						}),
+					},
+				}),
 				ach(939, {	-- Hills Like White Elekk
 					["sourceQuest"] = 9852,	-- The Ultimate Bloodsport
 				}),

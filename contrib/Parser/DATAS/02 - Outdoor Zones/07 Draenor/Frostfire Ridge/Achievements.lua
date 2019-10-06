@@ -5,7 +5,17 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(525, {	-- Frostfire Ridge
-			n(-4, {	-- Achievements
+			n(-4, {		-- Achievements
+				ach(9069, {	-- An Awfully Big Adventure
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["g"] = {
+						crit(16, {	-- Gargra
+							["coord"] = { 68.6, 64.6, 525 },
+							["cr"] = 87122,	-- Gargra <Grand Master Pet Tamer>
+						}),
+					},
+				}),
 				ach(9533),	-- Breaker of Chains (Bloodmaul Stronghold)
 				ach(9537),	-- By Fire Be... Merged? (Magnarok)
 				ach(9534),	-- Delectable Ogre Delicacies (Bloodmaul Stronghold)

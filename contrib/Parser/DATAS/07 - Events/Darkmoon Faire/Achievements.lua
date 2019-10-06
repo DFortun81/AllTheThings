@@ -4,7 +4,21 @@
 _.WorldEvents =
 {
 	m(407, {	-- Darkmoon Island
-		n(-4, {	 -- Achievements
+		n(-4, {		-- Achievements
+			ach(9069, {	-- An Awfully Big Adventure
+				["collectible"] = false,
+				["filterID"] = 101,	-- Battle Pet
+				["g"] = {
+					crit(10, {	-- Christoph VonFeasel
+						["coord"] = { 47.4, 62.2, 407 },
+						["cr"] = 85519,	-- Christoph VonFeasel <Grand Master Pet Tamer>
+					}),
+					crit(20, {	-- Jeremy Feasel
+						["coord"] = { 47.8, 62.6, 407 },
+						["cr"] = 67370,	-- Jeremy Feasel <Master Pet Tamer>
+					}),
+				},
+			}),
 			ach(6019),	-- Come One, Come All!
 			ach(6028),	-- Darkmoon Defender
 			ach(6029),	-- Darkmoon Despoiler

@@ -6,6 +6,16 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(83, {	-- Winterspring
 			n(-4, {	-- Achievements
+				ach(9069, {	-- An Awfully Big Adventure
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["g"] = {
+						crit(34, {	-- Stone Cold Trixy
+							["coord"] = { 65.6, 64.6, 83 },
+							["cr"] = 66466,	-- Stone Cold Trixxy <Grand Master Pet Tamer>
+						}),
+					},
+				}),
 				ach(5443, {	-- E'ko Madness (Winterspring)
 					crit(1),	-- Winterspring Furbolg
 					crit(2),	-- Wildkin

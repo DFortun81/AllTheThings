@@ -5,7 +5,21 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(379, {	-- Kun-Lai Summit
-			n(-4, {	-- Achievement
+			n(-4, {		-- Achievement
+				ach(9069, {	-- An Awfully Big Adventure
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["g"] = {
+						crit(11, {	-- Courageous Yon
+							["coord"] = { 35.8, 73.6, 379 },
+							["cr"] = 66738,	-- Courageous Yon <Grand Master Pet Tamer>
+						}),
+						crit(39, {	-- Thundering Pandaren Spirit
+							["coord"] = { 64.8, 93.6, 379 },
+							["cr"] = 68465,	-- Thundering Pandaren Spirit <Grand Master Pet Tamer>
+						}),
+					},
+				}),
 				ach(7286, {		-- Finish Them! (Temple of the White Tiger)
 					crit(1),		-- Brewmaster Chani
 					crit(3),		-- Clever Ashyo

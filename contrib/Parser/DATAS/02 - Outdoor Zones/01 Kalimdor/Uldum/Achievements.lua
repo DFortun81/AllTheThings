@@ -5,7 +5,17 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(249, {	-- Uldum
-			n(-4, {	-- Achievements
+			n(-4, {		-- Achievements
+				ach(9069, {	-- An Awfully Big Adventure
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["g"] = {
+						crit(29, {	-- Obalis
+							["coord"] = { 56.6, 41.8, 249 },
+							["cr"] = 66824,	-- Obalis <Grand Master Pet Tamer>
+						}),
+					},
+				}),
 				ach(4872, {	-- Unearthing Uldum
 					crit(1, {	-- Rescued by Outsiders
 						["sourceQuest"] = 28112,	-- Escape From the Lost City

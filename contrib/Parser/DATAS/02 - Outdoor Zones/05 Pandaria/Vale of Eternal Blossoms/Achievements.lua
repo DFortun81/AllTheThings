@@ -5,7 +5,17 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(390, {	-- Vale of Eternal Blossoms
-			n(-4, {	-- Achievement
+			n(-4, {		-- Achievement
+				ach(9069, {	-- An Awfully Big Adventure
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["g"] = {
+						crit(1, {	-- Aki the Chosen
+							["coord"] = { 31.2, 74.2, 390 },
+							["cr"] = 66741,	-- Aki the Chosen <Grand Master Pet Tamer>
+						}),
+					},
+				}),
 				ach(7318),	-- A Taste of History
 				ach(7323),	-- Collateral Damage
 				ach(7320),	-- Dog Pile

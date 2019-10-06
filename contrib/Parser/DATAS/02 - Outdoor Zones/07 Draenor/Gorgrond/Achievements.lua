@@ -5,7 +5,17 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(543, {	-- Gorgrond
-			n(-4, {	-- Achievements
+			n(-4, {		-- Achievements
+				ach(9069, {	-- An Awfully Big Adventure
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["g"] = {
+						crit(12, {	-- Cymre Brightblade
+							["coord"] = { 51.0, 70.6, 543 },
+							["cr"] = 83837,	-- Cymre Brightblade <Grand Master Pet Tamer>
+						}),
+					},
+				}),
 				ach(9678,  {	-- Ancient No More
 					crit(1),	-- Swift Onyx Flayer
 					crit(2),	-- Mogarnago

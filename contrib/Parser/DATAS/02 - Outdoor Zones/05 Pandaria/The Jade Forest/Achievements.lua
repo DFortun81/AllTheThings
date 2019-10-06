@@ -5,7 +5,21 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(371, {	-- The Jade Forest
-			n(-4, {	-- Achievements
+			n(-4, {		-- Achievements
+				ach(9069, {	-- An Awfully Big Adventure
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["g"] = {
+						crit(19, {	-- Hyuna of the Shrines
+							["coord"] = { 48.0, 54.0, 371 },
+							["cr"] = 66730,	-- Hyuna of the Shrines <Grand Master Pet Tamer>
+						}),
+						crit(42, {	-- Whispering Pandaren Spirit
+							["coord"] = { 28.8, 36.0, 371 },
+							["cr"] = 68464,	-- Whispering Pandaren Spirit <Grand Master Pet Tamer>
+						}),
+					},
+				}),
 				ach(7290),	-- How To Strain Your Dragon
 				ach(7291),	-- In a Trail of Smoke
 				ach(7284, {	-- Is Another Man's Treasure

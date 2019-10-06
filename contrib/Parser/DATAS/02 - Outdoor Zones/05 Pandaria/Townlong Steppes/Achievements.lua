@@ -5,7 +5,21 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(388, {	-- Townlong Steppes
-			n(-4, {	-- Achievements
+			n(-4, {		-- Achievements
+				ach(9069, {	-- An Awfully Big Adventure
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["g"] = {
+						crit(8, {	-- Burning Pandaren Spirit
+							["coord"] = { 57.0, 42.2, 388 },
+							["cr"] = 68463,	-- Burning Pandaren Spirit <Grand Master Pet Tamer>
+						}),
+						crit(32, {	-- Seeker Zusshi
+							["coord"] = { 36.2, 52.2, 388 },
+							["cr"] = 66918,	-- Seeker Zusshi <Grand Master Pet Tamer>
+						}),
+					},
+				}),
 				ach(7310),	-- Defender of Gods (Townlong Steppes)
 				ach(7309),	-- Fire in the Yaung-hole! (Townlong Steppes)
 				ach(7298, {	-- Getting Around with the Shado-Pan

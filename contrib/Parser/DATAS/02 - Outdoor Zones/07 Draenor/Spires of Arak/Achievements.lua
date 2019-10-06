@@ -5,7 +5,17 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(542, {	-- Spires of Arak
-			n(-4, {	-- Achievements
+			n(-4, {		-- Achievements
+				ach(9069, {	-- An Awfully Big Adventure
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["g"] = {
+						crit(40, {	-- Vesharr
+							["coord"] = { 46.4, 45.2, 542 },
+							["cr"] = 87123,	-- Vesharr <Grand Master Pet Tamer>
+						}),
+					},
+				}),
 				ach(9605, {		-- Arak Star
 					crit(1, {	-- The Howling Crag
 						["sourceQuest"] = 36590,	-- The Howling Crag

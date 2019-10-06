@@ -5,7 +5,17 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(102, {	-- Zangarmarsh
-			n(-4, {	-- Achievements
+			n(-4, {		-- Achievements
+				ach(9069, {	-- An Awfully Big Adventure
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["g"] = {
+						crit(31, {	-- Ras'an
+							["coord"] = { 17.2, 50.6, 102 },
+							["cr"] = 66551,	-- Ras'an <Master Pet Tamer>
+						}),
+					},
+				}),
 				ach(1190, {	-- Mysteries of the Marsh
 					crit(1, {	-- Draenei Diplomacy (A)
 						["races"] = ALLIANCE_ONLY,

@@ -26,6 +26,20 @@ _.Zones =
 							["sourceQuest"] = 31211,	-- The Poisoned Mind
 						}),
 					}),
+					ach(9069, {	-- An Awfully Big Adventure
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["g"] = {
+							crit(15, {	-- Flowing Pandaren Spirit
+								["coord"] = { 61.2, 87.6, 422 },
+								["cr"] = 68462,	-- Flowing Pandaren Spirit <Grand Master Pet Tamer>
+							}),
+							crit(41, {	-- Wastewalker Shu
+								["coord"] = { 55.0, 37.6, 422 },
+								["cr"] = 66739,	-- Wastewalker Shu <Grand Master Pet Tamer>
+							}),
+						},
+					}),
 					ach(7284, {	-- Is Another Man's Treasure
 						["collectible"] = false,
 						["g"] = {

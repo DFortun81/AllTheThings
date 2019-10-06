@@ -11,6 +11,16 @@ _.Zones =
 			["g"] = {
 			--	if you add coordinates to any part of this file, make sure you verify them manually!  the coordinates listed on wowhead (as of september 2019) are incorrect and probably based on an older version of the krasarang map.  if you use those coordinates instead of manually confirming them, they'll place you outside of /tar range.
 				n(-4, {	-- Achievements
+					ach(9069, {	-- An Awfully Big Adventure
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["g"] = {
+							crit(24, {	-- Mo'ruk
+								["coord"] = { 65.0, 42.7, 418 },
+								["cr"] = 66733,	-- Mo'ruk <Grand Master Pet Tamer>
+							}),
+						},
+					}),
 					ach(7287),	-- Champion of Chi-Ji (Cradle of Chi-Ji)
 					ach(7284, {	-- Is Another Man's Treasure
 						["collectible"] = false,

@@ -5,7 +5,17 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(100, {	-- Hellfire Peninsula
-			n(-4, {	-- Achievements
+			n(-4, {		-- Achievements
+				ach(9069, {	-- An Awfully Big Adventure
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["g"] = {
+						crit(28, {	-- Nicki Tinytech
+							["coord"] = { 64.4, 49.2, 100 },
+							["cr"] = 66550,	-- Nicki Tinytech <Master Pet Tamer>
+						}),
+					},
+				}),
 				ach(1189, {	-- To Hellfire and Back [Alliance Version]
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

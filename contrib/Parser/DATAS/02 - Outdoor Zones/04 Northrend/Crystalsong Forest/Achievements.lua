@@ -4,20 +4,18 @@
 _.Zones =
 {
 	m(113, {	-- Northrend
-		m(115, {	-- Dragonblight
-			n(-4, {		-- Achievements
+		m(127, {	-- Crystalsong Forest
+			n(-4, {		-- Achievement
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
-						crit(30, {	-- Okrut Dragonwaste
-							["coord"] = { 59.0, 77.0, 115 },
-							["cr"] = 66638,	-- Okrut Dragonwaste <Master Pet Tamer>
+						crit(27, {	-- Nearly Headless Jacob
+							["coord"] = { 50.2, 59.0, 127 },
+							["cr"] = 66636,	-- Nearly Headless Jacob <Master Pet Tamer>
 						}),
 					},
 				}),
-				ach(1277),	-- Rapid Defense
-				ach(547),	-- Veteran of the Wrathgate
 			}),
 		}),
 	}),

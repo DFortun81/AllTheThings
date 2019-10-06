@@ -5,7 +5,17 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(241, {	-- Twilight Highlands
-			n(-4,   {	-- Achievements
+			n(-4, {		-- Achievements
+				ach(9069, {	-- An Awfully Big Adventure
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["g"] = {
+						crit(17, {	-- Goz Banefury
+							["coord"] = { 56.6, 56.8, 241 },
+							["cr"] = 66822,	-- Goz Banefury <Master Pet Tamer>
+						}),
+					},
+				}),
 				ach(5451, {	-- Consumed by Nightmare
 					["sourceQuests"] = { 27380 },	-- Nightmare
 				}),

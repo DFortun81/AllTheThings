@@ -5,7 +5,17 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(376, {	-- Valley of the Four Winds				
-			n(-4, {	-- Achievement
+			n(-4, {		-- Achievement
+				ach(9069, {	-- An Awfully Big Adventure
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["g"] = {
+						crit(14, {	-- Farmer Nishi
+							["coord"] = { 46.0, 43.6, 376 },
+							["cr"] = 66734,	-- Farmer Nishi <Grand Master Pet Tamer>
+						}),
+					},
+				}),
 				ach(7294),	-- A Taste of Things to Come (Halfhill)
 				ach(7292),	-- Green Acres (Halfhill)
 				ach(7284, {	-- Is Another Man's Treasure

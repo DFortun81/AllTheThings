@@ -7,6 +7,16 @@ _.Zones =
 		m(539, {	-- Shadowmoon Valley (Draenor)
 			n(-4, {	-- Achievements
 				ach(9437),	-- A Demidos of Reality
+				ach(9069, {	-- An Awfully Big Adventure
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["g"] = {
+						crit(2, {	-- Ashlei
+							["coord"] = { 50.0, 31.2, 539 },
+							["cr"] = 87124,	-- Ashlei <Grand Master Pet Tamer>
+						}),
+					},
+				}),
 				ach(8845, {	-- As I Walk Through the Valley of the Shadow of Moon
 				--	unlocks ability to buy Shadowmoon Valley Treasure Map from Grakis in Stormshield
 					["races"] = ALLIANCE_ONLY,

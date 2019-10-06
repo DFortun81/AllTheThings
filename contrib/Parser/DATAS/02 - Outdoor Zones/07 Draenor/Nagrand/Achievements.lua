@@ -5,7 +5,17 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(550, {	-- Nagrand (Draenor)
-			n(-4, {	-- Achievements
+			n(-4, {		-- Achievements
+				ach(9069, {	-- An Awfully Big Adventure
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["g"] = {
+						crit(38, {	-- Tarr the Terrible
+							["coord"] = { 56.2, 9.80, 550 },
+							["cr"] = 87110,	-- Tarr the Terrible <Grand Master Pet Tamer>
+						}),
+					},
+				}),
 				ach(9548,  {	-- Buried Treasures (Mok'gol Watchpost)
 					crit(1, {	-- Garrosh's Shackles
 						["questID"] = 37130,
