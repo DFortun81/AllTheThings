@@ -64,6 +64,7 @@ _.Zones =
 				n(136183, {	-- Crushtacean
 					["questID"] = 52466,
 					["coord"] = { 51.1, 54.4, 942 },	-- entrance
+					["isDaily"] = true,
 					["g"] = {
 						i(154857, {	-- Bonesplinter Band
 							["bonusID"] = 4776,		-- Indicates Leveling item
