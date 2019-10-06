@@ -308,6 +308,7 @@ _.ExpansionFeatures =
 					n(89753, { 	-- High Overlord Saurfang
 						["description"] = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
 						["coord"] = { 40.2, 56.7, 590 },
+						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(123975, {	-- Greater Bounty Spoils
 								["description"] = "This satchel is an award from some of the weekly garrison raid quests that can be picked up from High Overlord Saurfang and Muradin Bronzebeard.",
@@ -608,40 +609,43 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(-152,  {	-- Garrison Campaign
-						q(34335, {	-- Garrison Campaign: Crows In The Field
-							["races"] = HORDE_ONLY,
-						}),
-						q(35680, {	-- Garrison Campaign: The Fall of Shattrath
-							["races"] = HORDE_ONLY,
-						}),
-						q(35843, {	-- Garrison Campaign: Deep Recon
-							["races"] = HORDE_ONLY,
-						}),
-						q(36117, {	-- Garrison Campaign: The Broken Precipice
-							["provider"] = { "n", 88892 },	-- Nixxie
-							["races"] = HORDE_ONLY,
-						}),
-						q(36219, {	-- Garrison Campaign: The Ring of Blood
-							["description"] = "Offered if you have NOT completed |cFFFFD700The Ring of Trials|r in Nagrand or the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
-						}),
-						q(36280, {	-- Garrison Campaign: The Ring of Blood
-							["description"] = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand.",
-						}),
-						q(36281, {	-- Garrison Campaign: The Ring of Blood
-							["description"] = "Offered if you complete the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
-						}),
-						q(36282, {	-- Garrison Campaign: The Ring of Blood
-							["description"] = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand and the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
-						}),
-						q(35195, {
-							i(119134),	-- Toy
-						}),
-						q(32985, {
-							i(119145),	-- Toy
-						}),
-						q(38567, {	-- Garrison Campaign: War Council
-							["description"] = "Automatically granted upon upgrading your garrison to Rank 3.",
-						}),
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							q(34335, {	-- Garrison Campaign: Crows In The Field
+								["races"] = HORDE_ONLY,
+							}),
+							q(35680, {	-- Garrison Campaign: The Fall of Shattrath
+								["races"] = HORDE_ONLY,
+							}),
+							q(35843, {	-- Garrison Campaign: Deep Recon
+								["races"] = HORDE_ONLY,
+							}),
+							q(36117, {	-- Garrison Campaign: The Broken Precipice
+								["provider"] = { "n", 88892 },	-- Nixxie
+								["races"] = HORDE_ONLY,
+							}),
+							q(36219, {	-- Garrison Campaign: The Ring of Blood
+								["description"] = "Offered if you have NOT completed |cFFFFD700The Ring of Trials|r in Nagrand or the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+							}),
+							q(36280, {	-- Garrison Campaign: The Ring of Blood
+								["description"] = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand.",
+							}),
+							q(36281, {	-- Garrison Campaign: The Ring of Blood
+								["description"] = "Offered if you complete the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+							}),
+							q(36282, {	-- Garrison Campaign: The Ring of Blood
+								["description"] = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand and the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+							}),
+							q(35195, {
+								i(119134),	-- Toy
+							}),
+							q(32985, {
+								i(119145),	-- Toy
+							}),
+							q(38567, {	-- Garrison Campaign: War Council
+								["description"] = "Automatically granted upon upgrading your garrison to Rank 3.",
+							}),
+						},
 					}),
 					q(36953, {	-- It's a Matter of Strategy
 						["races"] = HORDE_ONLY,
