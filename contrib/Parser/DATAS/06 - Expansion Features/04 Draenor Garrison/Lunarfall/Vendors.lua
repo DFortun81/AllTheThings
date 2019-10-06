@@ -363,45 +363,73 @@ _.ExpansionFeatures =
 						}),
 						i(122423, {	-- Scouting Missive: Broken Precipice
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+							["questID"] = 38193,
+							["repeatable"] = true,
 						}),
 						i(122417, {	-- Scouting Missive: Darktide Roost
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+							["questID"] = 38196,
+							["repeatable"] = true,
 						}),
 						i(122404, {	-- Scouting Missive: Everbloom Wilds
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+							["questID"] = 38192,
+							["repeatable"] = true,
 						}),
 						i(122406, {	-- Scouting Missive: Iron Siegeworks
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+							["questID"] = 38191,
+							["repeatable"] = true,
 						}),
 						i(122414, {	-- Scouting Missive: Lost Veil Anzu
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+							["questID"] = 38198,
+							["repeatable"] = true,
 						}),
 						i(122399, {	-- Scouting Missive: Magnarok
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+							["questID"] = 38190,
+							["repeatable"] = true,
 						}),
 						i(122422, {	-- Scouting Missive: Mok'gol Watchpost
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+							["questID"] = 38195,
+							["repeatable"] = true,
 						}),
 						i(122409, {	-- Scouting Missive: Pillars of Fate
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+							["questID"] = 38199,
+							["repeatable"] = true,
 						}),
 						i(122410, {	-- Scouting Missive: Shattrath Harbor
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+							["questID"] = 38201,
+							["repeatable"] = true,
 						}),
 						i(122407, {	-- Scouting Missive: Skettis
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+							["questID"] = 38200,
+							["repeatable"] = true,
 						}),
 						i(122415, {	-- Scouting Missive: Socrethar's Rise
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+							["questID"] = 38197,
+							["repeatable"] = true,
 						}),
 						i(122401, {	-- Scouting Missive: Stonefury Cliffs
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+							["questID"] = 38189,
+							["repeatable"] = true,
 						}),
 						i(133883, {	-- Scouting Missive: The Heart of Shattrath
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+							["questID"] = 40944,
+							["repeatable"] = true,
 						}),
 						i(133878, {	-- Scouting Missive: The Pit
 							["cost"] = { { "c", 824, 200 }, },	-- 200x Garrison Resources
+							["questID"] = 40942,
+							["repeatable"] = true,
 						}),
 						i(141642, {	-- Technique: Tome of the Clear Mind
 							["cost"] = { { "i", 114931, 20 }, },	-- 20x Cerulean Pigment
