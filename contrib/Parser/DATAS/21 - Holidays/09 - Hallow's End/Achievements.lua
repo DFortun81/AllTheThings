@@ -865,34 +865,346 @@ _.Holidays = bubbleDown({["u"] = 26},
 									["races"] = ALLIANCE_ONLY,
 									["u"] = 26,	-- Hallow's End
 									["g"] = {
+										crit(1,  {	-- Blade's Edge Mountains, Evergrove
+											["coord"] = { 62.9, 38.3, 105 },
+											["maps"] = { 105 },	-- Blade's Edge Mountains
+										}),
+										crit(2,  {	-- Blade's Edge Mountains, Sylvanaar
+											["coord"] = { 35.8, 63.8, 105 },
+											["maps"] = { 105 },	-- Blade's Edge Mountains
+										}),
+										crit(3,  {	-- Blade's Edge Mountains, Toshley's Station
+											["coord"] = { 61.0, 68.1, 105 },
+											["maps"] = { 105 },	-- Blade's Edge Mountains
+										}),
+										crit(4,  {	-- Hellfire Peninsula, Honor Hold
+											["coord"] = { 54.3, 63.6, 100 },
+											["maps"] = { 100 },	-- Hellfire Peninsula
+										}),
+										crit(5,  {	-- Hellfire Peninsula, Temple of Telhamat
+											["coord"] = { 23.4, 36.5, 100 },
+											["maps"] = { 100 },	-- Hellfire Peninsula
+										}),
+										crit(6,  {	-- Nagrand, Telaar
+											["coord"] = { 54.2, 75.8, 107 },
+											["maps"] = { 107 },	-- Nagrand
+										}),
+										crit(7,  {	-- Netherstorm, Area 52
+											["coord"] = { 32.0, 64.4, 109 },
+											["maps"] = { 109 },	-- Netherstorm
+										}),
+										crit(8,  {	-- Netherstorm, The Stormspire
+											["coord"] = { 43.4, 36.1, 109 },
+											["maps"] = { 109 },	-- Netherstorm
+										}),
+										crit(9,  {	-- Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars
+											["coords"] = {
+												{ 30.3, 27.8, 104 },	-- Scryer
+												{ 61.0, 28.2, 104 },	-- Aldor
+											},
+											["maps"] = { 104 },	-- Shadowmoon Valley
+										}),
+										crit(10, {	-- Shadowmoon Valley, Wildhammer Stronghold
+											["coord"] = { 37.1, 58.2, 104 },
+											["maps"] = { 104 },	-- Shadowmoon Valley
+										}),
+										crit(11, {	-- Shattrath City, Aldor Rise or Scryer's Tier
+											["coords"] = {
+												{ 56.2, 81.8, 111 },	-- Scryer
+												{ 28.1, 49.0, 111 },	-- Aldor
+											},
+											["maps"] = { 111 },	-- Shattrath City
+										}),
+										crit(12, {	-- Terokkar Forest, Allerian Stronghold
+											["coord"] = { 56.6, 53.2, 108 },
+											["maps"] = { 108 },	-- Terrokar Forest
+										}),
+										crit(13, {	-- Zangarmarsh, Cenarion Refuge
+											["coord"] = { 78.5, 62.9, 102 },
+											["maps"] = { 102 },	-- Zangarmarsh
+										}),
+										crit(14, {	-- Zangarmarsh, Orebor Harborage
+											["coord"] = { 41.9, 26.2, 102 },
+											["maps"] = { 102 },	-- Zangarmarsh
+										}),
+										crit(15, {	-- Zangarmarsh, Telredor
+											["coord"] = { 67.2, 49.0, 102 },
+											["maps"] = { 102 },	-- Zangarmarsh
+										}),
 									},
 								}),
 								ach(968, {	-- Tricks and Treats of Outlands (H)
 									["races"] = HORDE_ONLY,
 									["u"] = 26,	-- Hallow's End
 									["g"] = {
+										crit(1, {	-- Blade's Edge Mountains, Evergrove
+											["coord"] = { 62.9, 38.3, 105 },
+											["maps"] = { 105 },	-- Blade's Edge Mountain
+										}),
+										crit(2, {	-- Blade's Edge Mountains, Mok'Nathal Village
+											["coord"] = { 76.2, 60.4, 105 },
+											["maps"] = { 105 },	-- Blade's Edge Mountain
+										}),
+										crit(3, {	-- Blade's Edge Mountains, Thunderlord Stronghold
+											["coord"] = { 53.4, 55.5, 105 },
+											["maps"] = { 105 },	-- Blade's Edge Mountain
+										}),
+										crit(4, {	-- Hellfire Peninsula, Falcon Watch
+											["coord"] = { 26.9, 59.6, 100 },
+											["maps"] = { 100 },	-- Hellfire Peninsula
+										}),
+										crit(5, {	-- Hellfire Peninsula, Thrallmar
+											["coord"] = { 56.8, 37.5, 100 },
+											["maps"] = { 100 },	-- Hellfire Peninsula
+										}),
+										crit(6, {	-- Nagrand, Garadar
+											["coord"] = { 56.7, 34.6, 107 },
+											["maps"] = { 107 },	-- Nagrand
+										}),
+										crit(7, {	-- Netherstorm, Area 52
+											["coord"] = { 32.0, 64.4, 109 },
+											["maps"] = { 109 },	-- Netherstorm
+										}),
+										crit(8, {	-- Netherstorm, The Stormspire
+											["coord"] = { 43.4, 36.1, 109 },
+											["maps"] = { 109 },	-- Netherstorm
+										}),
+										crit(9, {	-- Shadowmoon Valley, Altar of Sha'tar or Sanctum of the Stars
+											["coords"] = {
+												{ 30.3, 27.8, 104 },	-- Scryer
+												{ 61.0, 28.2, 104 },	-- Aldor
+											},
+											["maps"] = { 104 },	-- Shadowmoon Valley
+										}),
+										crit(10, {	-- Shadowmoon Valley, Shadowmoon Village
+											["coord"] = { 30.3, 27.8, 104 },
+											["maps"] = { 104 },	-- Shadowmoon Valley
+										}),
+										crit(11, {	-- Shattrath City, Aldor Rise or Scryer's Tier
+											["coords"] = {
+												{ 56.2, 81.8, 111 },	-- Scryer
+												{ 28.1, 49.0, 111 },	-- Aldor
+											},
+											["maps"] = { 111 },	-- Shattrath City
+										}),
+										crit(12, {	-- Terokkar Forest, Stonebreaker Hold
+											["coord"] = { 48.8, 45.2, 108 },
+											["maps"] = { 108 },	-- Terrokar Forest
+										}),
+										crit(13, {	-- Zangarmarsh, Zabra'jin
+											["coord"] = { 30.7, 50.9, 102 },
+											["maps"] = { 102 },	-- Zangarmarsh
+										}),
+										crit(14, {	-- Zangarmarsh, Cenarion Refuge
+											["coord"] = { 78.5, 62.9, 102 },
+											["maps"] = { 102 },	-- Zangarmarsh
+										}),
 									},
 								}),
 							},
 						}),
 					},
 				}),
-				{	-- Tricks and Treats of Northrend [Alliance]
--- Note!! This is blank here because we are going to put all this relevant information in a separate file
--- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
-					["achievementID"] = 5836,	-- Tricks and Treats of Northrend
-					["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
+				ach(5836, {	-- Tricks and Treats of Northrend
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+						crit(1,  {	-- Borean Tundra, Fizzcrank Airstrip
+							["coord"] = { 57.1, 18.8, 114 },
+							["maps"] = { 114 },	-- Borean Tundra
+						}),
+						crit(2,  {	-- Borean Tundra, Unu'pe
+							["coord"] = { 78.4, 49.2, 114 },
+							["maps"] = { 114 },	-- Borean Tundra
+						}),
+						crit(3,  {	-- Borean Tundra, Valiance Keep
+							["coord"] = { 58.5, 67.9, 114 },
+							["maps"] = { 114 },	-- Borean Tundra
+						}),
+						crit(4,  {	-- Dalaran, The Legerdemain Lounge
+							["coord"] = { 66.6, 30.1, 125 },
+							["maps"] = { 125 },	-- Dalaran
+						}),
+						crit(5,  {	-- Dalaran, Silver Enclave
+							["coord"] = { 42.5, 63.5, 125 },
+							["maps"] = { 125 },	-- Dalaran
+						}),
+						crit(6,  {	-- Dalaran, The Underbelly
+							["coord"] = { 27.2, 41.4, 126 },
+							["maps"] = {
+								125,	-- Dalaran, upper level
+								126,	-- Dalaran, Underbelly
+							},
+						}),
+						crit(7,  {	-- Dragonblight, Moa'ki Harbor
+							["coord"] = { 48.2, 74.7, 115 },
+							["maps"] = { 115 },	-- Dragonblight
+						}),
+						crit(8,  {	-- Dragonblight, Stars' Rest
+							["coord"] = { 29.0, 56.2, 115 },
+							["maps"] = { 115 },	-- Dragonblight
+						}),
+						crit(9,  {	-- Dragonblight, Wintergarde Keep
+							["coord"] = { 77.5, 51.3, 115 },
+							["maps"] = { 115 },	-- Dragonblight
+						}),
+						crit(10, {	-- Dragonblight, Wyrmrest Temple
+							["coord"] = { 60.1, 53.5, 115 },
+							["maps"] = { 115 },	-- Dragonblight
+						}),
+						crit(11, {	-- Grizzly Hills, Amberpine Lodge
+							["coord"] = { 32.0, 60.2, 116 },
+							["maps"] = { 116 },	-- Grizzly Hills
+						}),
+						crit(12, {	-- Grizzly Hills, Westfall Brigade
+							["coord"] = { 59.6, 26.4, 116 },
+							["maps"] = { 116 },	-- Grizzly Hills
+						}),
+						crit(13, {	-- Howling Fjord, Fort Wildevar
+							["coord"] = { 60.5, 15.9, 117 },
+							["maps"] = { 117 },	-- Howling Fjord
+						}),
+						crit(14, {	-- Howling Fjord, Kamagua
+							["coord"] = { 25.4, 59.8, 117 },
+							["maps"] = { 117 },	-- Howling Fjord
+						}),
+						crit(15, {	-- Howling Fjord, Valgarde
+							["coord"] = { 58.4, 62.8, 117 },
+							["maps"] = { 117 },	-- Howling Fjord
+						}),
+						crit(16, {	-- Howling Fjord, Westguard Keep
+							["coord"] = { 30.8, 41.5, 117 },
+							["maps"] = { 117 },	-- Howling Fjord
+						}),
+						crit(17, {	-- Sholazar Basin, Nesingwary Base Camp
+							["coord"] = { 26.7, 59.2, 119 },
+							["maps"] = { 119 },	-- Sholazar Basin
+						}),
+						crit(18, {	-- Storm Peaks, Bouldercrag's Refuge
+							["coord"] = { 30.9, 37.2, 120 },
+							["maps"] = { 120 },	-- The Storm Peaks
+						}),
+						crit(19, {	-- Storm Peaks, Frosthold
+							["coord"] = { 28.7, 74.3, 120 },
+							["maps"] = { 120 },	-- The Storm Peaks
+						}),
+						crit(20, {	-- Storm Peaks, K3
+							["coord"] = { 41.1, 85.9, 120 },
+							["maps"] = { 120 },	-- The Storm Peaks
+						}),
+						crit(21, {	-- Zul'Drak, The Argent Stand
+							["coord"] = { 40.8, 66.0, 121 },
+							["maps"] = { 121 },	-- Zul'Drak
+						}),
+						crit(22, {	-- Zul'Drak, Zim'Torga
+							["coord"] = { 59.3, 57.2, 121 },
+							["maps"] = { 121 },	-- Zul'Drak
+						}),
 					},
-				},
-				{	-- Tricks and Treats of Northrend [Horde]
--- Note!! This is blank here because we are going to put all this relevant information in a separate file
--- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
-					["achievementID"] = 5835,	-- Tricks and Treats of Northrend
+				}),
+				ach(5835, {	-- Tricks and Treats of Northrend
 					["races"] = HORDE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
 					["g"] = {
+						crit(1,  {	-- Borean Tundra, Bor'gorok Outpost
+							["coord"] = { 49.7, 10.0, 114 },
+							["maps"] = { 114 },	-- Borean Tundra
+						}),
+						crit(2,  {	-- Borean Tundra, Taunka'le Village
+							["coord"] = { 76.7, 37.4, 114 },
+							["maps"] = { 114 },	-- Borean Tundra
+						}),
+						crit(3,  {	-- Borean Tundra, Unu'pe
+							["coord"] = { 78.4, 49.2, 114 },
+							["maps"] = { 114 },	-- Borean Tundra
+						}),
+						crit(4,  {	-- Borean Tundra, Warsong Hold
+							["coord"] = { 41.8, 54.4, 114 },
+							["maps"] = { 114 },	-- Borean Tundra
+						}),
+						crit(5,  {	-- Dalaran, The Legerdemain Lounge
+							["coord"] = { 66.6, 30.1, 125 },
+							["maps"] = { 125 },	-- Dalaran
+						}),
+						crit(6,  {	-- Dalaran, Sunreaver's Sanctuary
+							["coord"] = { 48.3, 40.8, 125 },
+							["maps"] = { 125 },	-- Dalaran
+						}),
+						crit(7,  {	-- Dalaran, The Underbelly
+							["coord"] = { 27.2, 41.4, 126 },
+							["maps"] = {
+								125,	-- Dalaran, upper
+								126,	-- Dalaran, Underbelly
+							},
+						}),
+						crit(8,  {	-- Dragonblight, Agmar's Hammer
+							["coord"] = { 37.8, 46.4, 115 },
+							["maps"] = { 115 },	-- Dragonblight
+						}),
+						crit(9,  {	-- Dragonblight, Moa'ki Harbor
+							["coord"] = { 48.2, 74.7, 115 },
+							["maps"] = { 115 },	-- Dragonblight
+						}),
+						crit(10, {	-- Dragonblight, Venomspite
+							["coord"] = { 76.8, 63.2, 115 },
+							["maps"] = { 115 },	-- Dragonblight
+						}),
+						crit(11, {	-- Dragonblight, Wyrmrest Temple
+							["coord"] = { 60.1, 53.5, 115 },
+							["maps"] = { 115 },	-- Dragonblight
+						}),
+						crit(12, {	-- Grizzly Hills, Camp Oneqwah
+							["coord"] = { 65.4, 47.0, 116 },
+							["maps"] = { 116 },	-- Grizzly Hills
+						}),
+						crit(13, {	-- Grizzly Hills, Conquest Hold
+							["coord"] = { 20.9, 64.7, 116 },
+							["maps"] = { 116 },	-- Grizzly Hills
+						}),
+						crit(14, {	-- Howling Fjord, Camp Winterhoof
+							["coord"] = { 49.5, 10.8, 117 },
+							["maps"] = { 117 },	-- Howling Fjord
+						}),
+						crit(15, {	-- Howling Fjord, Kamagua
+							["coord"] = { 25.4, 59.8, 117 },
+							["maps"] = { 117 },	-- Howling Fjord
+						}),
+						crit(16, {	-- Howling Fjord, New Agamand
+							["coord"] = { 52.1, 66.2, 117 },
+							["maps"] = { 117 },	-- Howling Fjord
+						}),
+						crit(17, {	-- Howling Fjord, Vengeance Landing
+							["coord"] = { 79.2, 30.6, 117 },
+							["maps"] = { 117 },	-- Howling Fjord
+						}),
+						crit(18, {	-- Sholazar Basin, Nesingwary Base Camp
+							["coord"] = { 26.7, 59.2, 119 },
+							["maps"] = { 119 },	-- Sholazar Basin
+						}),
+						crit(19, {	-- Storm Peaks, Bouldercrag's Refuge
+							["coord"] = { 30.9, 37.2, 120 },
+							["maps"] = { 120 },	-- The Storm Peaks
+						}),
+						crit(20, {	-- Storm Peaks, Camp Tunka'lo
+							["coord"] = { 67.6, 50.6, 120 },
+							["maps"] = { 120 },	-- The Storm Peaks
+						}),
+						crit(21, {	-- Storm Peaks, Grom'arsh Crash Site
+							["coord"] = { 37.1, 49.6, 120 },
+							["maps"] = { 120 },	-- The Storm Peaks
+						}),
+						crit(22, {	-- Storm Peaks, K3
+							["coord"] = { 41.1, 85.9, 120 },
+							["maps"] = { 120 },	-- The Storm Peaks
+						}),
+						crit(23, {	-- Zul'Drak, The Argent Stand
+							["coord"] = { 40.8, 66.0, 121 },
+							["maps"] = { 121 },	-- Zul'Drak
+						}),
+						crit(24, {	-- Zul'Drak, Zim'Torga
+							["coord"] = { 59.3, 57.2, 121 },
+							["maps"] = { 121 },	-- Zul'Drak
+						}),
 					},
-				},
+				}),
 				{	-- Tricks and Treats of Cataclysm [Alliance]
 -- Note!! This is blank here because we are going to put all this relevant information in a separate file
 -- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
