@@ -65,15 +65,13 @@ _.Zones =
 			},
 			{	-- Frostwolf Battle Tabard
 				["itemID"] = 19031,	-- Frostwolf Battle Tabard
+				["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
 			},
 			{	-- Green Trophy Tabard of the Illidari
 				["itemID"] = 31404,	-- Green Trophy Tabard of the Illidari
 				["sourceQuests"] = {
 					10781,	-- Battle of the Crimson Watch
 				},
-			},
-			{	-- Mag'har Tabard
-				["itemID"] = 31773,	-- Mag'har Tabard
 			},
 			{	-- Guild Tabard
 				["itemID"] = 5976,	-- Guild Tabard
@@ -86,9 +84,10 @@ _.Zones =
 			},
 			{	-- Knight's Colors
 				["itemID"] = 15198,	-- Knight's Colors
+				["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 			},
-			{	-- Kurenai Tabrd
-				["itemID"] = 31774,	-- Kurenai Tabrd
+			{	-- Kurenai Tabard
+				["itemID"] = 31774,	-- Kurenai Tabard
 			},
 			{	-- Loremaster's Colors
 				["itemID"] = 43300,	-- Loremaster's Colors
@@ -96,11 +95,16 @@ _.Zones =
 			{	-- Lower City Tabard
 				["itemID"] = 31778,	-- Lower City Tabard
 			},
+			{	-- Mag'har Tabard
+				["itemID"] = 31773,	-- Mag'har Tabard
+			},
 			{	-- Ogri'la Tabard
 				["itemID"] = 32828,	-- Ogri'la Tabard
+				["cost"] = { { "i", 32569, 10 } },	-- 10x Apexis Shard
 			},
 			{	-- Private's Tabard
 				["itemID"] = 15196,	-- Private's Tabard
+				["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 			},
 			{	-- Purple Trophy Tabard of the Illidari
 				["itemID"] = 31405,	-- Purple Trophy Tabard of the Illidari
@@ -119,18 +123,21 @@ _.Zones =
 			},
 			{	-- Silverwing Battle Tabard
 				["itemID"] = 19506,	-- Silverwing Battle Tabard
+				["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
 			},
 			{	-- Skyguard Tabard
 				["itemID"] = 32445,	-- Skyguard Tabard
 			},
 			{	-- Sporeggar Tabard
 				["itemID"] = 31775,	-- Sporeggar Tabard
+				["cost"] = { { "i", 24245, 10 }, },	-- 10x Glowcap
 			},
 			{	-- Stone Guard's Herald
 				["itemID"] = 15199,	-- Stone Guard's Herald
 			},
 			{	-- Stormpike Battle Tabard
 				["itemID"] = 19032,	-- Stormpike Battle Tabard
+				["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
 			},
 			{	-- Tabard of Brute Force
 				["itemID"] = 43349,	-- Tabard of Brute Force
@@ -175,6 +182,7 @@ _.Zones =
 			},
 			{	-- Warsong Battle Tabard
 				["itemID"] = 19505,	-- Warsong Battle Tabard
+				["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
 			},
 		},
 	},
