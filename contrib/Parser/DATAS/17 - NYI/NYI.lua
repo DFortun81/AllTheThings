@@ -1274,8 +1274,14 @@ _.NeverImplemented =
 			un(1, i(41759)),	-- unknown
 			un(1, i(42885)),	-- unknown
 			un(1, i(43848)),	-- unknown
+			un(1, i(39460)),	-- unknown
+			un(1, i(54552)),	-- unknown
+			un(1, i(54751)),	-- unknown
 			un(1, i(43938)),	-- unknown
 			un(1, i(54544)),	-- unknown
+			un(1, i(59768)),	-- unknown
+			un(1, i(59772)),	-- unknown
+			un(1, i(65743)),	-- unknown
 			un(1, i(166400)),	-- flaskzertaurens plate chestguards
 			un(1, i(166401)),	-- flaskzertaurens plate cuirass
 			un(1, i(166411)),	-- flaskzertaurens plate shoulderguards

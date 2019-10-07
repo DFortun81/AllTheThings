@@ -1024,6 +1024,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 							un(1, i(171750)),	-- Obsidian Arborweave legwraps
 							un(1, i(171755)),	-- Obsidian Arborweave leggings
 							un(1, i(171771)),	-- Dark Phoenix Legguards
+							un(1, i(171764)),	-- Immolation legguards
+							un(1, i(171786)),	-- legplates of the molten giant
+							un(1, i(171791)),	-- Immolation Greaves
 							i(171684),	-- Skullstealer Greataxe
 							i(171683),	-- Feeding Frenzy
 							i(171689),	-- Goblet of Anger
@@ -1051,7 +1054,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 							un(1, i(171735)),	-- Elementium Deathplate Handguards
 							un(1, i(171739)),	-- Elementium Deathplate Gauntlets
 							un(1, i(171766)),	-- Immolation Handguards
+							un(1, i(171779)),	-- immolation gauntlets
 							un(1, i(171784)),	-- Gauntlets of the molten giant
+							un(1, i(171760)),	-- Handguards of the molten giant
 							un(1, i(171789)),	-- Immolation Gloves
 							un(1, i(171773)),	-- Flamewakers Gloves
 							un(1, i(171814)),	-- Erupting Volcanic Gloves

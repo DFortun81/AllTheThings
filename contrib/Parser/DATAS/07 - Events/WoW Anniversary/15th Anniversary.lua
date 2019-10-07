@@ -229,7 +229,7 @@ _.WorldEvents =
 							i(171851),	-- Kilt of the Forgotten Battle
 							i(171848),	-- Treads of Hideous Transformation
 							i(171853),	-- Signet of the Fifth Circle
-						--	i(59500),	-- Fall of Mortality
+							i(171852),	-- Fall of Mortality
 						},
 					}),
 					e(174, {	-- Nefarian's End
