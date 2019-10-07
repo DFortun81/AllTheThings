@@ -1,5 +1,5 @@
 ## Author: Crieve-Sargeras
-## Interface: 80205
+## Interface: 80300
 ## X-Curse-Project-ID: 267285
 ## Title: AllTheThings
 ## Name: AllTheThings
