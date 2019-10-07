@@ -177,6 +177,7 @@ _.PetJournal =
 		p(2569, {	-- Violet Abyssal Eel
 			["races"] = ALLIANCE_ONLY,
 		}),
+		p(2796),	-- Void-Scarred Toad
 		p(1013), 	-- Wanderer's Festival Hatchling
 		p(64),	 	-- Wood Frog
 		p(752), 	-- Yellow-Bellied Bullfrog

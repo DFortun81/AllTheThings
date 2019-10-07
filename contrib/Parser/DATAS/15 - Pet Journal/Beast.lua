@@ -225,6 +225,7 @@ _.PetJournal =
 		p(1344),			-- Vengeful Porcupette
 		p(506),				-- Venomspitter Hatchling
 		p(1807),			-- Vicious Broodling
+		p(2797),			-- Void-Scarred Pup
 		p(2129),			-- Voidstalker Runt
 		p(517),				-- Warpstalker Hatchling
 		p(2128),			-- Warpstalker Runt
