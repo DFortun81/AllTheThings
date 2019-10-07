@@ -5,24 +5,6 @@ _.NeverImplemented =
 {
 	n(-10052, {	-- BFA - Stuff that might gets added later duo changes/hotfixes/patches and/or similar
 		-- Future Emsembles!!
-		-- Mail Horde (you probably will learn both after learning one)
-		un(1, i(166923)),	-- Dread Gladiator's Chain armor
-		un(1, i(166924)),	-- Dread Gladiator's Chain sabatons
-		un(1, i(166925)),	-- Dread Gladiator's Chain gauntlets
-		un(1, i(166926)),	-- Dread Gladiator's Chain helm
-		un(1, i(166927)),	-- Dread Gladiator's Chain leggings
-		un(1, i(166928)),	-- Dread Gladiator's Chain spaulders
-		un(1, i(166929)),	-- Dread Gladiator's Chain waistguard
-		un(1, i(166930)),	-- Dread Gladiator's Chain armbands
-		-- Mail Ally (you probably will learn both after learning one)
-		un(1, i(166954)),	-- Dread Gladiator's Chain armor
-		un(1, i(166955)),	-- Dread Gladiator's Chain sabatons
-		un(1, i(166956)),	-- Dread Gladiator's Chain gauntlets
-		un(1, i(166957)),	-- Dread Gladiator's Chain helm
-		un(1, i(166958)),	-- Dread Gladiator's Chain leggings
-		un(1, i(166959)),	-- Dread Gladiator's Chain spaulders
-		un(1, i(166960)),	-- Dread Gladiator's Chain waistguard
-		un(1, i(166961)),	-- Dread Gladiator's Chain armbands
 		-- Leather Horde (you probably will learn both after learning one)
 		un(1, i(166915)),	-- Dread Gladiator's leather tunic
 		un(1, i(166916)),	-- Dread Gladiator's leather boots
@@ -975,6 +957,38 @@ _.NeverImplemented =
 				un(1, i(96257)), -- Saurok Stalker's Legguards
 				un(1, i(96258)), -- Saurok Stalker's Spaulders
 			}),
+			n(-10052, {	-- BFA
+				-- Future Emsembles!!
+				-- Mail Horde (you probably will learn both after learning one)
+				un(1, i(166923)),	-- Dread Gladiator's Chain armor
+				un(1, i(166924)),	-- Dread Gladiator's Chain sabatons
+				un(1, i(166925)),	-- Dread Gladiator's Chain gauntlets
+				un(1, i(166926)),	-- Dread Gladiator's Chain helm
+				un(1, i(166927)),	-- Dread Gladiator's Chain leggings
+				un(1, i(166928)),	-- Dread Gladiator's Chain spaulders
+				un(1, i(166929)),	-- Dread Gladiator's Chain waistguard
+				un(1, i(166930)),	-- Dread Gladiator's Chain armbands
+				-- Mail Ally (you probably will learn both after learning one)
+				un(1, i(166954)),	-- Dread Gladiator's Chain armor
+				un(1, i(166955)),	-- Dread Gladiator's Chain sabatons
+				un(1, i(166956)),	-- Dread Gladiator's Chain gauntlets
+				un(1, i(166957)),	-- Dread Gladiator's Chain helm
+				un(1, i(166958)),	-- Dread Gladiator's Chain leggings
+				un(1, i(166959)),	-- Dread Gladiator's Chain spaulders
+				un(1, i(166960)),	-- Dread Gladiator's Chain waistguard
+				un(1, i(166961)),	-- Dread Gladiator's Chain armbands
+				--
+				un(1, i(163286)),	-- honorbound vanguard's footguards
+				un(1, i(163291)),	-- honorbound vanguard's strikers
+				un(1, i(163293)),	-- honorbound vanguard's warhelm
+				un(1, i(163297)),	-- honorbound vanguard's legguards
+				un(1, i(163302)),	-- honorbound vanguard's spaulders
+				un(1, i(163304)),	-- honorbound vanguard's waistcord
+				un(1, i(163392)),	-- 7th legionnaires vestments
+				un(1, i(163393)),	-- 7th legionnaires raiment
+				un(1, i(163443)),	-- honorbound vanguard's vestments
+				un(1, i(163450)),	-- honorbound vanguard's raiment
+			}),
 			un(1, i(166402)),	-- Flaskzertauren Mail Hauberk
 			un(1, i(166410)),	-- Flaskzertauren Mail Shoulderguards
 			un(1, i(12105)),	-- Pridemail Leggings
@@ -1405,6 +1419,7 @@ _.NeverImplemented =
 			un(1, i(168665)), 	-- Hidden bracers
 			un(1, i(48945)),	-- Gnomish THinking Cap (Mind Amplification Disk was added for it)
 			un(1, i(158329)), 	-- Hidden Gloves
+			un(1 ,i(116399)),	-- Emerald Sunglasses
 			un(1, i(162638)), 	-- Wooden Toy Helm (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 			un(1, i(162639)), 	-- Wooden Toy Helm (A) (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 			un(1, i(163922)), 	-- Used for a toy, you never can get the actual item
@@ -3372,6 +3387,7 @@ _.NeverImplemented =
 			un(1, i(109311)),	-- Unknown
 			un(1, i(109380)),	-- Unknown
 			un(1, i(167146)),	-- Unknown
+			un(1, i(167998)),	-- Dark Iron Tankard
 		}),
 		n(-336, { 	-- One-Handed Maces
 			un(1, i(64700)),	-- Bloodthirsty Gladiator's Bonecracker (Epic BG Item, never made it out of beta)

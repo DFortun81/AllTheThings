@@ -629,6 +629,8 @@ _.PVP =
 					un(2, i(125686)),	-- Wild Gladiator's Chain Helm
 					un(2, i(125687)),	-- Wild Gladiator's Chain Leggings
 					un(2, i(125688)),	-- Wild Gladiator's Chain Spaulders
+					un(2, i(125680)),	-- Wild Gladiator's Chain chain links
+					un(2, i(125682)),	-- Wild Gladiator's Chain Sabatons
 				}),
 				cl(8, {	-- Mage
 					un(2, i(125693)),	-- Wild Gladiator's Silk Amice
