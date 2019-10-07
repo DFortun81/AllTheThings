@@ -445,11 +445,13 @@ _.Zones =
 				q(1338,  {	-- Stormpike's Order
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
+					["altQuests"] = { 13636 },
 				}),
 				q(13636, {	-- Stormpike's Orders
 					["coord"] = { 35.0, 46.5, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1340 },	-- Mountaineer Kadrell
+					["altQuests"] = { 1338 },
 				}),
 				q(26927, {	-- Suddenly, Murlocs!
 					["sourceQuests"] = { 26864 },	-- The Bearer of Gnoll-edge

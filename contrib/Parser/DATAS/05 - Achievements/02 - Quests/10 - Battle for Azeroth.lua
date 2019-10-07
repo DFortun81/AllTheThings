@@ -258,9 +258,9 @@ _.Achievements =
 						crit(8),		-- Bleeding the Blood Trolls
 					})),
 					h(ach(12481)),	-- The Final Seal
-					ach(13924, {	-- The Fourth War
+					h(ach(13924, {	-- The Fourth War
 						title(412),	-- Veteran of the Fourth War, <Name>
-					}),
+					})),
 					a(ach(13049, {	-- The Long Con
 						crit(1),		-- Aged to Perfection
 						crit(2),		-- Trixie Business
