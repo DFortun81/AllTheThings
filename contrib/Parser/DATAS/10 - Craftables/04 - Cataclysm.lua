@@ -402,6 +402,7 @@ _.Craftables =
 			n(-323, {		-- Chest
 				un(7, i(70060)),	-- Bloodthirsty Embersilk Robe
 				un(7, i(70058)),	-- Bloodthirsty Fireweave Robe
+				un(7, i(54494)),	-- Fireweave Robe
 				i(54475),	 		-- Deathsilk Robe
 				i(54486),			-- Spiritmend Robe
 				i(75093),			-- Vicious Embersilk Robe
@@ -415,6 +416,7 @@ _.Craftables =
 				i(69954),	-- Boots of the Black Flame
 				un(7, i(70061)),	-- Bloodthirsty Embersilk Boots
 				un(7, i(70053)),	-- Bloodthirsty Fireweave Boots
+				un(7, i(54490)),	-- Fireweave Boots
 				i(54477),			-- Deathsilk Boots
 				i(69953),			-- Endless Dream Walkers
 				i(54482),			-- Spiritmend Boots
@@ -424,6 +426,7 @@ _.Craftables =
 			n(-327, {		-- Hands
 				un(7, i(70065)),	-- Bloodthirsty Embersilk Gloves
 				un(7, i(70056)),	-- Bloodthirsty Fireweave Gloves
+				un(7, i(54492)),	-- Fireweave gloves
 				i(54478),			-- Deathsilk Gloves
 				i(69945),			-- Don Tayo's Inferno Mittens
 				i(69944),			-- Grips of Altered Reality
@@ -434,6 +437,7 @@ _.Craftables =
 			n(-320, {		-- Head
 				un(7, i(70067)),	-- Bloodthirsty Embersilk Cowl
 				un(7, i(70055)),	-- Bloodthirsty Fireweave Cowl
+				un(7, i(54493)),	-- Fireweave cowl
 				i(54476),			-- Deathsilk Cowl
 				i(54485),			-- Spiritmend Cowl
 				i(75073),			-- Vicious Embersilk Cowl
@@ -442,6 +446,7 @@ _.Craftables =
 			n(-329, {		-- Legs
 				un(7, i(70066)),	-- Bloodthirsty Embersilk Pants
 				un(7, i(70057)),	-- Bloodthirsty Fireweave Pants
+				un(7, i(54491)),	-- Fireweave Pants
 				i(54505),			-- Breeches of Mended Nightmares
 				i(54472),			-- Deathsilk Leggings
 				i(54506),			-- Flame-Ascended Pantaloons
@@ -454,6 +459,7 @@ _.Craftables =
 			n(-321, {		-- Shoulders
 				un(7, i(70064)),	-- Bloodthirsty Embersilk Shoulders
 				un(7, i(70059)),	-- Bloodthirsty Fireweave Shoulders
+				un(7, i(54487)),	-- Fireweave Shoulders
 				i(54474),			-- Deathsilk Shoulders
 				i(54479),			-- Spiritmend Shoulders
 				i(75064),			-- Vicious Embersilk Shoulders
@@ -463,6 +469,7 @@ _.Craftables =
 				i(54504),			-- Belt of the Depths
 				un(7, i(70062)),	-- Bloodthirsty Embersilk Belt
 				un(7, i(70052)),	-- Bloodthirsty Fireweave Belt
+				un(7, i(54489)),	-- Fireweave belt
 				i(54471),			-- Deathsilk Belt
 				i(54503),			-- Dreamless Belt
 				i(54481),			-- Spiritmend Belt
@@ -472,6 +479,7 @@ _.Craftables =
 			n(-326, {		-- Wrist
 				un(7, i(70063)),	-- Bloodthirsty Embersilk Bracers
 				un(7, i(70054)),	-- Bloodthirsty Fireweave Bracers
+				un(7, i(54488)),	-- Fireweave Bracers
 				i(71989),			-- Bracers of Unconquered Power
 				i(54473),			-- Deathsilk Bracers
 				i(71990),			-- Dreamwraps of the Light

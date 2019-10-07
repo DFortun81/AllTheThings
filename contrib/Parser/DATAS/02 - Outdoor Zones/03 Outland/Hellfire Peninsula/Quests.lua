@@ -1143,6 +1143,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 16845 },	-- Gorkan Bloodfish
 					["sourceQuest"] = 9410,	-- A Spirit Guide
+					["g"] = {
+						i(25510),	-- Ceremonial Robes
+						i(25512),	-- Tribal Hauberk
+						i(25511),	-- Thunderforge Leggings
+						i(25513),	-- Clefthoof Hide Mask
+					},
 				}),
 				q(10099, {  -- The Mastermind
 					["coord"] = { 52.0, 62.5, 100 },

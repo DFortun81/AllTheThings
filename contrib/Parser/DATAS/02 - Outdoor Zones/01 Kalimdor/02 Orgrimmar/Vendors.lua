@@ -3823,6 +3823,7 @@ _.Zones =
 						i(18874, {	-- High Warlord's War Staff
 							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
 						}),
+						un(2, i(90819)),	-- High Warlord's Razor
 					},
 				}),
 				n(46708,  {	-- Suja <Cooking Supplies>
