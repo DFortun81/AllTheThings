@@ -1363,7 +1363,7 @@ _.Zones =
 				q(51200, {	-- The Black Sheep
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(50743, {	-- The Immediate Problem (possible this did not make it out or beta, cannot locate more info than the quest name on wowhead and no info on wowpedia)
+				q(50743, {	-- The Immediate Problem (possible this did not make it out of beta, cannot locate more info than the quest name on wowhead and no info on wowpedia)
 					["u"] = 1,
 				}),
 				q(51881, {	-- The Mine Sweeper
