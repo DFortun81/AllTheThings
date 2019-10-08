@@ -1205,38 +1205,318 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
-				{	-- Tricks and Treats of Cataclysm [Alliance]
--- Note!! This is blank here because we are going to put all this relevant information in a separate file
--- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
-					["achievementID"] = 5837,	-- Tricks and Treats of Cataclysm
+				ach(5837, {	-- Tricks and Treats of Cataclysm
 					["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
 					["g"] = {
+						crit(1,  {	-- Deepholm, Temple of Earth
+							["coord"] = { 47.4, 51.7, 207 },
+							["maps"] = { 207 },	-- Deepholm
+						}),
+						crit(2,  {	-- Mount Hyjal, Grove of Aessina
+							["coord"] = { 18.7, 37.3, 198 },
+							["maps"] = { 198 },	-- Mount Hyjal
+						}),
+						crit(3,  {	-- Mount Hyjal, Nordrassil
+							["coord"] = { 63.0, 24.1, 198 },
+							["maps"] = { 198 },	-- Mount Hyjal
+						}),
+						crit(4,  {	-- Mount Hyjal, Shrine of Aviana
+							["coord"] = { 42.7, 45.6, 198 },
+							["maps"] = { 198 },	-- Mount Hyjal
+						}),
+						crit(5,  {	-- Twilight Highlands, Firebeard's Patrol
+							["coord"] = { 60.4, 58.2, 241 },
+							["maps"] = { 241 },	-- Twilight Highlands
+						}),
+						crit(6,  {	-- Twilight Highlands, Highbank
+							["coord"] = { 79.5, 78.5, 241 },
+							["maps"] = { 241 },	-- Twilight Highlands
+						}),
+						crit(7,  {	-- Twilight Highlands, Thundermar
+							["coord"] = { 49.6, 30.4, 241 },
+							["maps"] = { 241 },	-- Twilight Highlands
+						}),
+						crit(8,  {	-- Twilight Highlands, Victor's Point
+							["coord"] = { 43.6, 57.3, 241 },
+							["maps"] = { 241 },	-- Twilight Highlands
+						}),
+						crit(9,  {	-- Uldum, Oasis of Vir'sar
+							["coord"] = { 26.6, 7.30, 249 },
+							["maps"] = { 249 },	-- Uldum
+						}),
+						crit(10, {	-- Uldum, Ramkahen
+							["coord"] = { 54.7, 33.0, 249 },
+							["maps"] = { 249 },	-- Uldum
+						}),
+						crit(11, {	-- Vashj'ir, Darkbreak Cove
+							["coord"] = { 54.7, 72.2, 203 },
+							["maps"] = { 203 },	-- Vashj'ir
+						}),
+						crit(12, {	-- Vashj'ir, Deepmist Grotto
+							["coord"] = { 63.4, 60.2, 203 },
+							["maps"] = { 203 },	-- Vashj'ir
+						}),
+						crit(13, {	-- Vashj'ir, Silver Tide Hollow
+							["coord"] = { 49.2, 41.9, 203 },
+							["maps"] = { 203 },	-- Vashj'ir
+						}),
+						crit(14, {	-- Vashj'ir, Tranquil Wash
+							["coord"] = { 49.7, 57.4, 203 },
+							["maps"] = { 203 },	-- Vashj'ir
+						}),
 					},
-				},
-				{	-- Tricks and Treats of Cataclysm [Horde]
--- Note!! This is blank here because we are going to put all this relevant information in a separate file
--- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
-					["achievementID"] = 5838,	-- Tricks and Treats of Cataclysm
+				}),
+				ach(5838, {	-- Tricks and Treats of Cataclysm
 					["races"] = HORDE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
 					["g"] = {
+						crit(1,  {	-- Deepholm, Temple of Earth
+							["coord"] = { 51.2, 50.0, 207 },
+							["maps"] = { 207 },	-- Deepholm
+						}),
+						crit(2,  {	-- Mount Hyjal, Grove of Aessina
+							["coord"] = { 18.7, 37.3, 198 },
+							["maps"] = { 198 },	-- Mount Hyjal
+						}),
+						crit(3,  {	-- Mount Hyjal, Nordrassil
+							["coord"] = { 63.0, 24.1, 198 },
+							["maps"] = { 198 },	-- Mount Hyjal
+						}),
+						crit(4,  {	-- Mount Hyjal, Shrine of Aviana
+							["coord"] = { 42.7, 45.6, 198 },
+							["maps"] = { 198 },	-- Mount Hyjal
+						}),
+						crit(5,  {	-- Twilight Highlands, Bloodgulch
+							["coord"] = { 53.4, 42.9, 241 },
+							["maps"] = { 241 },	-- Twilight Highlands
+						}),
+						crit(6,  {	-- Twilight Highlands, Crushblow
+							["coord"] = { 45.1, 76.7, 241 },
+							["maps"] = { 241 },	-- Twilight Highlands
+						}),
+						crit(7,  {	-- Twilight Highlands, The Krazzworks
+							["coord"] = { 75.4, 16.5, 241 },
+							["maps"] = { 241 },	-- Twilight Highlands
+						}),
+						crit(8,  {	-- Uldum, Oasis of Vir'sar
+							["coord"] = { 26.6, 7.30, 249 },
+							["maps"] = { 249 },	-- Uldum
+						}),
+						crit(9,  {	-- Uldum, Ramkahen
+							["coord"] = { 54.7, 33.0, 249 },
+							["maps"] = { 249 },	-- Uldum
+						}),
+						crit(10, {	-- Vashj'ir, Deepmist Grotto
+							["coord"] = { 63.4, 60.2, 203 },
+							["maps"] = { 203 },	-- Vashj'ir
+						}),
+						crit(11, {	-- Vashj'ir, Legion's Rest
+							["coord"] = { 51.5, 62.5, 203 },
+							["maps"] = { 203 },	-- Vashj'ir
+						}),
+						crit(12, {	-- Vashj'ir, Silver Tide Hollow
+							["coord"] = { 49.2, 41.9, 203 },
+							["maps"] = { 203 },	-- Vashj'ir
+						}),
+						crit(13, {	-- Vashj'ir, Tenebrous Cavern
+							["coord"] = { 51.3, 60.6, 203 },
+							["maps"] = { 203 },	-- Vashj'ir
+						}),
 					},
-				},
-				{	-- Tricks and Treats of Pandaria [Alliance]
--- Note!! This is blank here because we are going to put all this relevant information in a separate file
--- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
-					["achievementID"] = 7601,	-- Tricks and Treats of Pandaria
+				}),
+				ach(7601, {	-- Tricks and Treats of Pandaria
 					["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
 					["g"] = {
+						crit(1, {	-- Dread Wastes, Klaxi'vess
+							["coord"] = { 55.9, 32.3, 422 },
+							["maps"] = { 422 },	-- Dread Wastes
+						}),
+						crit(2, {	-- Dread Wastes, Soggy's Gamble
+							["coord"] = { 55.2, 71.1, 422 },
+							["maps"] = { 422 },	-- Dread Wastes
+						}),
+						crit(3, {	-- Jade Forest, Dawn's Blossom
+							["coord"] = { 45.7, 43.6, 371 },
+							["maps"] = { 371 },	-- Jade Forest
+						}),
+						crit(4, {	-- Jade Forest, Greenstone Village
+							["coord"] = { 48.0, 34.6, 371 },
+							["maps"] = { 371 },	-- Jade Forest
+						}),
+						crit(5, {	-- Jade Forest, Jade Temple Grounds
+							["coord"] = { 54.6, 63.3, 371 },
+							["maps"] = { 371 },	-- Jade Forest
+						}),
+						crit(6, {	-- Jade Forest, Paw'don Village
+							["coord"] = { 44.8, 84.4, 371 },
+							["maps"] = { 371 },	-- Jade Forest
+						}),
+						crit(7, {	-- Jade Forest, Pearlfin Village
+							["coord"] = { 59.6, 83.2, 371 },
+							["maps"] = { 371 },	-- Jade Forest
+						}),
+						crit(8, {	-- Jade Forest, Sri-La Village
+							["coord"] = { 55.7, 24.4, 371 },
+							["maps"] = { 371 },	-- Jade Forest
+						}),
+						crit(9, {	-- Jade Forest, Tian Monastery
+							["coord"] = { 41.6, 23.1, 371 },
+							["maps"] = { 371 },	-- Jade Forest
+						}),
+						crit(10, {	-- Krasarang Wilds, Marista
+							["coord"] = { 51.5, 77.3, 418 },
+							["maps"] = { 418 },	-- Krasarang Wilds
+						}),
+						crit(11, {	-- Krasarang Wilds, Zhu's Watch
+							["coord"] = { 75.9, 7.00, 418 },
+							["maps"] = { 418 },	-- Krasarang Wilds
+						}),
+						crit(12, {	-- Kun-Lai Summit, Binan Village
+							["coord"] = { 72.7, 92.2, 379 },
+							["maps"] = { 379 },	-- Kun-Lai Summit
+						}),
+						crit(13, {	-- Kun-Lai Summit, The Grummle Bazaar
+							["coord"] = { 57.4, 59.9, 379 },
+							["maps"] = { 379 },	-- Kun-Lai Summit
+						}),
+						crit(14, {	-- Kun-Lai Summit, One Keg
+							["coord"] = { 64.2, 61.2, 379 },
+							["maps"] = { 379 },	-- Kun-Lai Summit
+						}),
+						crit(15, {	-- Kun-Lai Summit, Westwind Rest
+							["coord"] = { 54.1, 82.8, 379 },
+							["maps"] = { 379 },	-- Kun-Lai Summit
+						}),
+						crit(16, {	-- Kun-Lai Summit, Zouchin Village
+							["coord"] = { 62.3, 29.0, 379 },
+							["maps"] = { 379 },	-- Kun-Lai Summit
+						}),
+						crit(17, {	-- The Veiled Stair, Tavern in the Mists
+							["coord"] = { 54.9, 72.3, 433 },
+							["maps"] = { 433 },	-- The Veiled Stair
+						}),
+						crit(18, {	-- Townlong Steppes, Longying Outpost
+							["coord"] = { 71.1, 57.8, 388 },
+							["maps"] = { 388 },	-- Townlong Steppes
+						}),
+						crit(19, {	-- Vale of Eternal Blossoms, Mistfall Village
+							["coord"] = { 35.1, 77.7, 390 },
+							["maps"] = { 390 },	-- Vale of Eternal Blossoms
+						}),
+						crit(20, {	-- Vale of Eternal Blossoms, Shrine of Seven Stars
+							["coord"] = { 37.7, 66.1, 393 },
+							["maps"] = { 393 },	-- Shrine of the Seven Stars
+						}),
+						crit(21, {	-- Valley of the Four Winds, Pang's Stead
+							["coord"] = { 83.6, 20.3, 376 },
+							["maps"] = { 376 },	-- Valley of the Four Winds
+						}),
+						crit(22, {	-- Valley of the Four Winds, Stoneplow
+							["coord"] = { 19.8, 55.7, 376 },
+							["maps"] = { 376 },	-- Valley of the Four Winds
+						}),
 					},
-				},
-				{	-- Tricks and Treats of Pandaria [Horde]
--- Note!! This is blank here because we are going to put all this relevant information in a separate file
--- It will then merge here into this exact spot that we want it to.  This will help make it easier to edit
-					["achievementID"] = 7602,	-- Tricks and Treats of Pandaria
+				}),
+				ach(7602, {	-- Tricks and Treats of Pandaria
 					["races"] = HORDE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
 					["g"] = {
+						crit(1,  {	-- Dread Wastes, Klaxxi'vess
+							["coord"] = { 55.9, 32.3, 422 },
+							["maps"] = { 422 },	-- Dread Wastes
+						}),
+						crit(2,  {	-- Dread Wastes, Soggy's Gamble
+							["coord"] = { 55.2, 71.1, 422 },
+							["maps"] = { 422 },	-- Dread Wastes
+						}),
+						crit(3,  {	-- Jade Forest, Dawn's Blossom
+							["coord"] = { 45.7, 43.6, 371 },
+							["maps"] = { 371 },	-- Jade Forest
+						}),
+						crit(4,  {	-- Jade Forest, Greenstone Village
+							["coord"] = { 48.0, 34.6, 371 },
+							["maps"] = { 371 },	-- Jade Forest
+						}),
+						crit(5,  {	-- Jade Forest, Grookin, Hill
+							["coord"] = { 28.0, 47.4, 371 },
+							["maps"] = { 371 },	-- Jade Forest
+						}),
+						crit(6,  {	-- Jade Forest, Honeydew Village
+							["coord"] = { 28.5, 13.3, 371 },
+							["maps"] = { 371 },	-- Jade Forest
+						}),
+						crit(7,  {	-- Jade Forest, Jade Temple Grounds
+							["coord"] = { 54.6, 63.3, 371 },
+							["maps"] = { 371 },	-- Jade Forest
+						}),
+						crit(8,  {	-- Jade Forest, Sri-La Village
+							["coord"] = { 55.7, 24.4, 371 },
+							["maps"] = { 371 },	-- Jade Forest
+						}),
+						crit(9,  {	-- Jade Forest, Tian Monastery
+							["coord"] = { 41.6, 23.1, 371 },
+							["maps"] = { 371 },	-- Jade Forest
+						}),
+						crit(10, {	-- Krasarang Wilds, Dawnchaser Retreat
+							["coord"] = { 28.3, 50.7, 418 },
+							["maps"] = { 418 },	-- Krasarang Wilds
+						}),
+						crit(11, {	-- Krasarang Wilds, Marista
+							["coord"] = { 51.5, 77.3, 418 },
+							["maps"] = { 418 },	-- Krasarang Wilds
+						}),
+						crit(12, {	-- Krasarang Wilds, Thunder Cleft
+							["coord"] = { 61.0, 25.1, 418 },
+							["maps"] = { 418 },	-- Krasarang Wilds
+						}),
+						crit(13, {	-- Krasarang Wilds, Zhu's Watch
+							["coord"] = { 75.9, 7.00, 418 },
+							["maps"] = { 418 },	-- Krasarang Wilds
+						}),
+						crit(14, {	-- Kun-Lai Summit, Binan Village
+							["coord"] = { 72.7, 92.2, 379 },
+							["maps"] = { 379 },	-- Kun-Lai Summit
+						}),
+						crit(15, {	-- Kun-Lai Summit, Eastwind Rest
+							["coord"] = { 62.7, 80.5, 379 },
+							["maps"] = { 379 },	-- Kun-Lai Summit
+						}),
+						crit(16, {	-- Kun-Lai Summit, The Grummle Bazaar
+							["coord"] = { 57.4, 59.9, 379 },
+							["maps"] = { 379 },	-- Kun-Lai Summit
+						}),
+						crit(17, {	-- Kun-Lai Summit, One Keg
+							["coord"] = { 64.2, 61.2, 379 },
+							["maps"] = { 379 },	-- Kun-Lai Summit
+						}),
+						crit(18, {	-- Kun-Lai Summit, Zouchin Village
+							["coord"] = { 62.3, 29.0, 379 },
+							["maps"] = { 379 },	-- Kun-Lai Summit
+						}),
+						crit(19, {	-- The Veiled Stair, Tavern in the Mists
+							["coord"] = { 54.9, 72.3, 433 },
+							["maps"] = { 433 },	-- The Veiled Stair
+						}),
+						crit(20, {	-- Townlong Steppes, Longying Outpost
+							["coord"] = { 71.1, 57.8, 388 },
+							["maps"] = { 388 },	-- Townlong Steppes
+						}),
+						crit(21, {	-- Vale of Eternal Blossoms, Mistfall Village
+							["coord"] = { 35.1, 77.7, 390 },
+							["maps"] = { 390 },	-- Vale of Eternal Blossoms
+						}),
+						crit(22, {	-- Vale of Eternal Blossoms, Shrine of Two Moons
+							["coord"] = { 61.9, 16.1, 391 },
+							["maps"] = { 391 },	-- Shrine of Two Moons
+						}),
+						crit(23, {	-- Valley of the Four Winds, Pang's Stead
+							["coord"] = { 83.6, 20.3, 376 },
+							["maps"] = { 376 },	-- Valley of the Four Winds
+						}),
+						crit(24, {	-- Valley of the Four Winds, Stoneplow
+							["coord"] = { 19.8, 55.7, 376 },
+							["maps"] = { 376 },	-- Valley of the Four Winds
+						}),
 					},
-				},
+				}),
 			}),
 		},
 	}),

@@ -22,11 +22,9 @@ _.ExpansionFeatures =
 					i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
 					i(166999),	-- Treasure Map
 					i(169764, {	-- Worldvein Intelligence Reports
-						["g"] = {
-							q(56533), 	-- Worldvein Rumors
-						},
+						q(56533), 	-- Worldvein Rumors
 					}),
-					i(170150),	-- Map to the Last WOrldvein
+					i(170150),	-- Map to the Last Worldvein
 				},
 				["maps"] = { 1161 },	-- Boralus
 			}),

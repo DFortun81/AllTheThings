@@ -3,19 +3,14 @@
 --------------------------------------------
 _.Holidays = bubbleDown({["u"] = 26},
 {
-	{	-- Hallow's End
-		["holidayID"] = 235462,	-- Hallow's End
-		["u"] = 26,				-- Hallow's End Filter
-		["g"] =  {
-			{	--  Zone Drops
-				["npcID"] = 0,	-- Zone Drops
-				["maps"] = {
-					539,	-- Shadowmoon Valley [Draenor]
-				},
+	holiday(235462, {	-- Hallow's End
+		["u"] = 26,	-- Hallow's End
+		["g"] = {
+			n(0, {	-- Zone Drops
+				["maps"] = { 539 },	-- Shadowmoon Valley (Draenor)
 				["g"] = {
-					{	-- Coin of Many Faces
-						["itemID"] = 128807,	-- Coin of Many Faces
-						["u"] = 26,				-- Hallow's End Filter
+					i(128807, {	-- Coin of Many Faces (TOY!)
+						["u"] = 26,	-- Hallow's End
 						["crs"] = {
 							96637,	-- Boneship Reveler
 							96538,	-- Brackish Cultivator
@@ -23,9 +18,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 							96545,	-- Growing Squashling
 							96536,	-- Salty Dreg
 						},
-					},
+					}),
 				},
-			},
+			}),
 		},
-	},
+	}),
 });

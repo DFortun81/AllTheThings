@@ -91,23 +91,31 @@ _.WorldEvents =
 							["itemID"] = 133539,	-- Reflection of the Light
 						},
 					-- Heirlooms!!
-						{	-- Ancient Heirloom Armor Casing
-							["itemID"] = 122338,	-- Ancient Heirloom Armor Casing
-						},
-						{	-- Timeworn Heirlom Armor Casing
-							["itemID"] = 122340,	-- Timeworn Heirlom Armor Casing
-						},
-						{	-- Weathered Heirlom Armor Casing
-							["itemID"] = 151614,	-- Weathered Heirlom Armor Casing
-						},
+						i(122340, {	-- Timeworn Heirloom Armor Casing
+							["cost"] = {
+								{ "i", 23247, 600 },	-- 600x   Burning Blossom
+								{ "i", 21100, 75 },		-- 75x    Coin of Ancestry
+								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
+								{ "i", 33226, 450 },	-- 450x   Tricky Treat
+							},
+						}),
+						i(151614, {	-- Weathered Heirloom Armor Casing
+							["cost"] = {
+								{ "i", 23247, 600 },	-- 600x   Burning Blossom
+								{ "i", 21100, 75 },		-- 75x    Coin of Ancestry
+								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
+								{ "i", 33226, 450 },	-- 450x   Tricky Treat
+							},
+						}),
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {
-								{ "i", 37829, 300 },	-- 300x Brewfest Prize Token
-								{ "c", 241, 65 },		-- 65x Champion's Seal
-								{ "c", 515, 120 },		-- 120x Darkmoon Prize Ticket
-								{ "i", 49927, 200 },	-- 200 Love Token
-								{ "i", 137642, 14 },	-- 14x Mark of Honor
-								{ "c", 1166, 900 },		-- 900x Timewarped Badge
+								{ "i", 23247, 350},		-- 350x Burning Blossom
+								{ "c", 241, 55 },		-- 55x Champion's Seal
+								{ "i", 21100, 40 },		-- 40x Coin of Ancestry
+								{ "c", 515, 100 },		-- 100x Darkmoon Prize Ticket
+								{ "i", 137642, 12 },	-- 12x Mark of Honor
+								{ "c", 1166, 750 },		-- 750x Timewarped Badge
+								{ "i", 33226, 250 },	-- 250x Tricky Treat
 							},
 						}),
 						i(122341, {	-- Timeworn Heirloom Scabbard

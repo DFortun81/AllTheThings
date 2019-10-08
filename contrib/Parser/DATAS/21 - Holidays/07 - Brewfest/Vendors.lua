@@ -86,12 +86,13 @@ _.Holidays = bubbleDown({["u"] = 24},
 						}),
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {
-								{ "i", 37829, 300 },	-- 300x Brewfest Prize Token
-								{ "c", 241, 65 },		-- 65x Champion's Seal
-								{ "c", 515, 120 },		-- 120x Darkmoon Prize Ticket
-								{ "i", 49927, 200 },	-- 200 Love Token
-								{ "i", 137642, 14 },	-- 14x Mark of Honor
-								{ "c", 1166, 900 },		-- 900x Timewarped Badge
+								{ "i", 23247, 350},		-- 350x Burning Blossom
+								{ "c", 241, 55 },		-- 55x Champion's Seal
+								{ "i", 21100, 40 },		-- 40x Coin of Ancestry
+								{ "c", 515, 100 },		-- 100x Darkmoon Prize Ticket
+								{ "i", 137642, 12 },	-- 12x Mark of Honor
+								{ "c", 1166, 750 },		-- 750x Timewarped Badge
+								{ "i", 33226, 250 },	-- 250x Tricky Treat
 							},
 						}),
 						i(119209, {	-- Angry Brewfest Letter
@@ -236,12 +237,13 @@ _.Holidays = bubbleDown({["u"] = 24},
 						}),
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {
-								{ "i", 37829, 300 },	-- 300x Brewfest Prize Token
-								{ "c", 241, 65 },		-- 65x Champion's Seal
-								{ "c", 515, 120 },		-- 120x Darkmoon Prize Ticket
-								{ "i", 49927, 200 },	-- 200 Love Token
-								{ "i", 137642, 14 },	-- 14x Mark of Honor
-								{ "c", 1166, 900 },		-- 900x Timewarped Badge
+								{ "i", 23247, 350},		-- 350x Burning Blossom
+								{ "c", 241, 55 },		-- 55x Champion's Seal
+								{ "i", 21100, 40 },		-- 40x Coin of Ancestry
+								{ "c", 515, 100 },		-- 100x Darkmoon Prize Ticket
+								{ "i", 137642, 12 },	-- 12x Mark of Honor
+								{ "c", 1166, 750 },		-- 750x Timewarped Badge
+								{ "i", 33226, 250 },	-- 250x Tricky Treat
 							},
 						}),
 						i(119209, {	-- Angry Brewfest Letter
