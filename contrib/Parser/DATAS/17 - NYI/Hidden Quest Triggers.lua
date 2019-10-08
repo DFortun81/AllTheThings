@@ -1151,6 +1151,8 @@ _.NeverImplemented =
 		q(56943),	-- Animated Elemental Heart (Rank 1)
 		q(56947),	-- Animated Elemental Heart (Rank 1) — this + quest above popped at the same time after assembly.  was my first one, if that matters!
 		
-		
+		-- Patch 8.3
+		-- 58013 triggered randomly during a Black Empire assault in uldum
+		q(58000),	-- Procs when obtaining the Experimental Blacktalon Shroud legendary cloak
 	}),
 };

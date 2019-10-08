@@ -3,6 +3,7 @@
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle for Azeroth
 	inst(1180, { 	-- Ny'alotha
+		["coord"] = { 55.1, 43.8, 1527 },	-- Uldum
 		["isRaid"] = true,
 		["lvl"] = 120,
 		["maps"] = {
