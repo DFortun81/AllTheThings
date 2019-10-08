@@ -891,6 +891,8 @@ app.L = {
 		[-10070] = "Interface\\Icons\\Paladin_Protection",							--
 		[-10071] = "Interface\\Icons\\Paladin_Protection",							-- 
 		[-10072] = "Interface\\Icons\\Paladin_Protection",							-- 
+		[-10073] = "Interface\\Icons\\Paladin_Protection",							-- 
+		[-10074] = "Interface\\Icons\\Paladin_Protection",							-- 
 
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -1755,7 +1757,9 @@ app.L = {
 		[-10069] = "Scenarios",
 		[-10070] = select(1, GetCategoryInfo(15417)),		-- Heart of Azeroth
 		[-10071] = "Horrific Visions",
-		[-10071] = "N'Zoth Assaults",
+		[-10072] = "N'Zoth Assaults",
+		[-10073] = "Horrific Vision of Orgrimmar",
+		[-10074] = "Horrific Vision of Stormwind",
 	},
 
 	["OBJECT_ID_ICONS"] = {
