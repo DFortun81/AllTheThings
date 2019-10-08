@@ -11,6 +11,7 @@ _.Zones =
 				716,	-- Skywall
 				737,	-- The Vortex Pinnacle
 				857,	-- Throne of the Four Winds
+				1527,	-- Uldum (n'zoth assault)
 			},
 			["lvl"] = 83,
 		}),

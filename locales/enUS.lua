@@ -889,6 +889,8 @@ app.L = {
 		[-10060] = "Interface\\Icons\\achievement_arena_3v3_1",						-- Arena of Annihilation (Scenario)
 		[-10061] = "Interface\\Icons\\achievement_faction_celestials",				-- The Four Celestials
 		[-10070] = "Interface\\Icons\\Paladin_Protection",							--
+		[-10071] = "Interface\\Icons\\Paladin_Protection",							-- 
+		[-10072] = "Interface\\Icons\\Paladin_Protection",							-- 
 
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -1752,6 +1754,8 @@ app.L = {
 		[-10068] = OPTION_TOOLTIP_ANIMATION,			-- PLACE_HOLDER
 		[-10069] = "Scenarios",
 		[-10070] = select(1, GetCategoryInfo(15417)),		-- Heart of Azeroth
+		[-10071] = "Horrific Visions",
+		[-10071] = "N'Zoth Assaults",
 	},
 
 	["OBJECT_ID_ICONS"] = {
