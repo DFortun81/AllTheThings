@@ -597,6 +597,7 @@ _.NeverImplemented =
 		q(40612),	-- 7.0 Highmountain - Vignette - Amateur Hunters - Tracking Quest Credit - See Treasure (JAP) - NYI. Triggered after killing Irewing during Scout It Out
 		q(46775),	-- Campaign Cooldown - triggers during the legionfall campaign
 		q(47133),	-- Rare Mob Daily Bonus. Triggered after killing Doombringer Zar'thoz. Possible killID?
+		q(48974),	-- Paragon of the Army of the Light — looks like this is an unused version and 48977 is the one that pops in-game
 		
 	-- World Boss
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
@@ -614,7 +615,6 @@ _.NeverImplemented =
 	--	Invasion points
 	--	secondary quests trigger multiple times throughout the week (aka if you complete it on tuesday and wednesday, both official + secondary quest pop both days).
 	--	secondary quests don't seem to be tied to which boss you kill OR loot (have gotten them when receiving rep tokens, unsullied tokens, blue drops, and even just AP/a grey item).
-		
 		q(48982),	-- Invasion Point: Aurinor
 		q(49099),	-- Invasion Point: Bonich
 		q(49098),	-- Invasion Point: Cen'gar

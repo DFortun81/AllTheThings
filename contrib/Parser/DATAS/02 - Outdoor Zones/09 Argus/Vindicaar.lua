@@ -209,9 +209,10 @@ _.Zones =
 								}),
 							},
 						}),
-						q(48974, {	-- Paragon of the Army of the Light
-							["provider"] = { "n", 127120 },	-- Vindicator Jaelaana
+						q(48977, {	-- Paragon of the Army of the Light
 							["repeatable"] = true,
+							["altQuests"] = { 48974 },	-- Supplies From the Army of the Light
+							["provider"] = { "n", 127120 },	-- Vindicator Jaelaana
 							["g"] = {
 								i(152923, {	-- Gleaming Footlocker
 									i(153044),	-- Avenging Felcrusher (MOUNT!)

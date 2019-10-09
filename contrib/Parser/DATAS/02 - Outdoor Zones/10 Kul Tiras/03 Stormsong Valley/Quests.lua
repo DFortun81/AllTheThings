@@ -1655,128 +1655,21 @@ _.Zones =
 				q(50694, {	-- A Bloody Mess
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(52180, {	-- A Brennadam Shame
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50781, {	-- A Bridge Too Far
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(50779, {	-- A Clean Slate
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(56110),	-- A Defender Emerges
-
-				q(50814, {	-- A Horrible Place
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(53099),	-- A Mote of Cosmic Truth
-
-				q(50733, {	-- A New Dawn
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52935, {	-- A New Era
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(56108),	-- A New Queen
-
-				q(51855, {	-- A Pirate's Life For Me
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50041, {	-- A Pocketful of Shells
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50640, {	-- A Question of Quillpower
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50065, {	-- A Reason to Stay
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(56112),	-- A Royal Awakening
-				q(50705, {	-- A Snake with Three Heads
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52236, {	-- A Thorny Problem
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(52140, {	-- A Thorny Problem
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50797, {	-- A Turtle's Invitation
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52986, {	-- A Wicked Vessel
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(54647, {	-- Ale Intent
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50742, {	-- All Laid Out For Us
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49832, {	-- An Illegible Scroll
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50704, {	-- Anchors Aweigh Too Much
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(51354, {	-- Anger in a Bottle
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50367, {	-- Anger in a Bottle
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(50672, {	-- Any Ammo Will Do
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(51488, {	-- Archived Knowledge
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52940, {	-- Arms Deal
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(52165, {	-- Automated Chaos
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51205, {	-- Aww, Rats!
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52871, {	-- Azerite Empowerment
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51617, {	-- Azerite Empowerment
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51618, {	-- Azerite Madness
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(52873, {	-- Azerite Mining
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51644, {	-- Azerite Mining
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51623, {	-- Azerite Wounds
-					["collectible"] = false,
-					["lvl"] = 120,
 				}),
 				q(49908, {	-- Back to Brennadam
 					["races"] = ALLIANCE_ONLY,
