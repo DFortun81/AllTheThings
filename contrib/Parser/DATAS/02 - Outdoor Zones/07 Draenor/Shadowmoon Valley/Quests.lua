@@ -6,6 +6,12 @@ _.Zones =
 	m(572, {	-- Draenor
 		m(539, {	-- Shadowmoon Valley (Draenor)
 			n(-17, {	-- Quests
+				q(36176, {	-- A Call for Huntsman
+					["provider"] = { "i", 114877 },	-- Dirty Note
+					["cr"] = 75043,	-- Karnoth
+					["races"] = ALLIANCE_ONLY,
+					["requireSkill"] = 165,	-- Leatherworking
+				}),
 				q(33795, {	-- Across the Stars
 					["sourceQuests"] = { 34043 },	-- Darkest Night
 					["coord"] = { 35.4, 36.8, 539 },
@@ -129,7 +135,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 76204 },	-- Fiona
 				}),
-				q(44488,  {	-- Cursed Tome
+				q(44488, {	-- Cursed Tome
 					["itemID"] = 141361,	-- Cursed Tome
 					--["objectID"] = 258980,	-- Cursed Tome
 					["coord"] = { 37.6, 59.3, 539 },
@@ -187,16 +193,6 @@ _.Zones =
 				q(33267, {	-- [Deprecated}
 					["u"] = 1,
 				}),
-				i(114877, {	-- Dirty Note
-					["crs"] = { 75043 },	-- Karnoth
-					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = 165,	-- Leatherworking
-					["g"] = {
-						q(36176, {	-- A Call for Huntsman
-							["races"] = ALLIANCE_ONLY,
-						}),
-					},
-				}),
 				q(34786, {	-- Engorged Goren
 					["sourceQuests"] = { 34785 },	-- Hataaru, the Artificer
 					["coord"] = { 61.8, 29.1, 539 },
@@ -246,7 +242,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 81153 },	-- Scout Valdez
 				}),
-				q(36311, { -- Father and Son
+				q(36311, {	-- Father and Son
 					["sourceQuests"] = { 36309 },	-- The Strength of Iron
 					["requireSkill"] = 164,	-- Blacksmithing
 					["races"] = ALLIANCE_ONLY,
@@ -325,13 +321,13 @@ _.Zones =
 					["requireSkill"] = 165,	-- Leatherworking
 				}),
 				q(37332, {	-- Fungal Bundle
-					["itemID"] = 119317,	-- Curious Growth
+					["provider"] = { "i", 119317 },	-- Curious Growth
 					["coords"] = {
 						{ 51.8, 19.0, 539 },
 						{ 57.4, 21.6, 539 },
 					},
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 82318 },	-- Umbraspore Giant
+					["cr"] = 82318,	-- Umbraspore Giant
 				}),
 				q(34784, {	-- Fun with Fungus
 					["sourceQuests"] = { 34783 },	-- Naielle, the Rangari
