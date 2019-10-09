@@ -30,11 +30,6 @@ _.Zones =
 					q(49869, {	-- A Desperate Defense
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(50322, {	-- A Feathery Fad
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(48104, {	-- A Greater Challenge
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1520,6 +1515,11 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(50322, {	-- A Feathery Fad
+						["isWorldQuest"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(53711, {	-- A Sound Defense (Faction Assault WQ)
 						["provider"] = { "n", 135808 },	-- Provisioner Fray <Proudmoore Admiralty Emissary>

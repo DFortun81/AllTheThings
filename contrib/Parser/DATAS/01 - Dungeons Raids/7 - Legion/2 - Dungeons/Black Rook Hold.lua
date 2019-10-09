@@ -40,16 +40,16 @@ _.Instances = { tier(7, {	-- Legion
 			}),
 			n(-34, {	-- World Quests
 				q(43711, {	-- Black Rook Hold: ... With Fire!
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["collectible"] = false,
 				}),
 				q(43642, {	-- Black Rook Hold: The Sorrow
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["collectible"] = false,
 				}),
 				q(43762, {	-- Black Rook Hold: Traitor's Demise
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["collectible"] = false,
 				}),
 			}),
 			d(1, {	-- Normal

@@ -603,6 +603,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(43943, {	-- Withered Army Training
+					["isWorldQuest"] = true,
 					["providers"] = {
 						{ "n", 97140 },	-- First Arcanist Thalyssra (Frail)
 						{ "n", 115736 },	-- First Arcanist Thalyssra (Kinda Hot)

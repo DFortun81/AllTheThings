@@ -179,9 +179,9 @@ _.Zones =
 					["requireSkill"] = 171,	-- Alchemy
 				}),
 				q(48323, {	-- Work Order: Tears of the Naaru
-					["lvl"] = 110,
-					["collectible"] = false,
 					["requireSkill"] = 171,	-- Alchemy
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 			}),
 		}),

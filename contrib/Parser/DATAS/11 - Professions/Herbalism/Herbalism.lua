@@ -47,6 +47,7 @@ profession(182, {	-- Herbalism
 			{
 				["itemID"] = 151856,	-- Withered Astral Glory
 				["questID"] = 48027,	-- The Glory of Argus (Quest)
+				["requireSkill"] = 182,	-- Herbalism
 				["groups"] = {
 					recipe(247812),	-- Astral Glory [Rank 1]
 				},
@@ -54,6 +55,7 @@ profession(182, {	-- Herbalism
 			{
 				["itemID"] = 151857,	-- Adolescent Astral Glory
 				["questID"] = 48028,	-- Youthful Resistance (Quest)
+				["requireSkill"] = 182,	-- Herbalism
 				["sourceQuest"] = 48027,	-- Source Quest: The Glory of Argus (Quest)
 				["groups"] = {
 					recipe(247813),	-- Astral Glory [Rank 2]
@@ -62,6 +64,7 @@ profession(182, {	-- Herbalism
 			{
 				["itemID"] = 151858,	-- Astral Glory Root Cluster
 				["questID"] = 48029,	-- The Heart of It (Quest)
+				["requireSkill"] = 182,	-- Herbalism
 				["sourceQuest"] = 48028,	-- Youthful Resistance (Quest)
 				["groups"] = {
 					recipe(247814),	-- Astral Glory [Rank 3]

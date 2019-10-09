@@ -13,7 +13,6 @@ _.Zones =
 					q(46104),	-- Arachnid Toxicity
 					q(46761),	-- Brew Bandits
 					q(46947),	-- Brutallus
-					q(45358),	-- Contagion Containment
 					q(45531),	-- Creeping Fel
 					q(45969),	-- Defense of the Ancient
 					q(46829),	-- Elemental Abuse
@@ -98,8 +97,12 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(45178, {	-- Contagion Containment
-					["lvl"] = 110,
 					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(45358, {	-- Contagion Containment
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 				q(45837, {	-- Creeping Fel
 					["lvl"] = 110,
