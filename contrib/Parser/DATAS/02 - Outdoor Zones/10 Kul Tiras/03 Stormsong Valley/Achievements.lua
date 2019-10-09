@@ -59,6 +59,10 @@ _.Zones =
 							["sourceQuests"] = { 50640 },	-- A Question of Quillpower
 						}),
 						crit(8, {	-- Treasure in Deadwash
+						--	may also require the following quests, which i picked up at the same time:
+							-- 50803,	-- I Want It All Now
+							-- 52132,	-- The Proof of Piracy
+							-- 50955,	-- We're Not Friends
 							["sourceQuests"] = { 50742 },	-- All Laid Out for Us
 						}),
 					},

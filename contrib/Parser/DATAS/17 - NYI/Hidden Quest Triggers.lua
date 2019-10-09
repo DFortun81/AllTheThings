@@ -843,34 +843,6 @@ _.NeverImplemented =
 		q(49913),	-- Nazmir repeatable random chest
 		q(49914),	-- Nazmir repeatable random chest
 		q(49899),	-- Nazmir repeatable random chest
-		q(51184),	-- Stormsong Valley repeatable random chest
-		q(51927),	-- Stormsong Valley repeatable random chest
-		q(51930),	-- Stormsong Valley repeatable random chest
-		q(51935),	-- Stormsong Valley repeatable random chest
-		q(51938),	-- Stormsong Valley repeatable random chest
-		q(51939),	-- Stormsong Valley repeatable random chest
-		q(51940),	-- Stormsong Valley repeatable random chest
-		q(51941),	-- Stormsong Valley repeatable random chest
-		q(51942),	-- Stormsong Valley repeatable random chest
-		q(51943),	-- Stormsong Valley repeatable random chest
-		q(51944),	-- Stormsong Valley repeatable random chest
-		q(51945),	-- Stormsong Valley repeatable random chest
-		q(51946),	-- Stormsong Valley repeatable random chest
-		q(52989),	-- Stormsong Valley repeatable random chest
-		q(48593),	-- Tirigarde Sound repeatable random chest
-		q(48595),	-- Tirigarde Sound repeatable random chest
-		q(48596),	-- Tirigarde Sound repeatable random chest
-		q(48598),	-- Tirigarde Sound repeatable random chest
-		q(48599),	-- Tirigarde Sound repeatable random chest
-		q(48607),	-- Tirigarde Sound repeatable random chest
-		q(48608),	-- Tirigarde Sound repeatable random chest
-		q(48609),	-- Tirigarde Sound repeatable random chest
-		q(48612),	-- Tirigarde Sound repeatable random chest
-		q(48617),	-- Tirigarde Sound repeatable random chest
-		q(48618),	-- Tirigarde Sound repeatable random chest
-		q(48619),	-- Tirigarde Sound repeatable random chest
-		q(48621),	-- Tirigarde Sound repeatable random chest
-		q(50166),	-- Tirigarde Sound repeatable random chest
 		q(50922),	-- Vol'dun repeatable random chest
 		q(50920),	-- Vol'dun repeatable random chest
 		q(51673),	-- Vol'dun repeatable random chest
@@ -892,7 +864,6 @@ _.NeverImplemented =
 		q(54880),	-- Opening a Darkshore chest
 		q(54881),	-- Opening a Darkshore chest
 		q(54911),	-- Opening a Darkshore chest
-		
 		q(53534),	-- when entering The Necropolis for the first time during "The Necropolis"
 		q(49695),	-- immediately after channeling on the drum finishes during "A Tribute For Death"
 		q(49367),	-- when returning to Zo'bal Ruins during "We'll Meet Again"
@@ -919,18 +890,63 @@ _.NeverImplemented =
 		q(53421),	-- for clicking on Lost Spawn of Krag'wa at { 33.46, 61.54, 863 }, in Nazmir
 		q(53426),	-- for clicking on Lost Spawn of Krag'wa at { 25.68, 40.57, 863 }, in Nazmir
 		q(53423),	-- for clicking on Lost Spawn of Krag'wa at { 28.89, 83.16, 863 }, in Nazmir
-		q(51163),	-- ??? plays during the cutscene when you walk across the bridge north of Brennadam in Stormsong Valley		
+		q(51163),	-- ??? plays during the cutscene when you walk across the bridge north of Brennadam in Stormsong Valley	
+		q(53202),	-- triggered when turning in #50264, "Free the Farmhands"
 
-	-- Zuldazar
+
+	--	Stormsong Valley
+		-- Bonus Objectives
+		q(50779),	-- A Clean Slate
+		q(51534),	-- The Battle for Brennadam
+		q(50133),	-- Weed Whacking
+		-- Chests
+		q(51184),	-- Stormsong Valley repeatable random chest
+		q(51927),	-- Stormsong Valley repeatable random chest
+		q(51930),	-- Stormsong Valley repeatable random chest
+		q(51935),	-- Stormsong Valley repeatable random chest
+		q(51938),	-- Stormsong Valley repeatable random chest
+		q(51939),	-- Stormsong Valley repeatable random chest
+		q(51940),	-- Stormsong Valley repeatable random chest
+		q(51941),	-- Stormsong Valley repeatable random chest
+		q(51942),	-- Stormsong Valley repeatable random chest
+		q(51943),	-- Stormsong Valley repeatable random chest
+		q(51944),	-- Stormsong Valley repeatable random chest
+		q(51945),	-- Stormsong Valley repeatable random chest
+		q(51946),	-- Stormsong Valley repeatable random chest
+		q(52989),	-- Stormsong Valley repeatable random chest
+		
+		
+	--	Tiragarde Sound
+		-- Bonus Objectives
+		q(49300),	-- Creature Corruption
+		q(49739),	-- Enemies at the Gate
+		q(50009),	-- Shipwreck Recovery Crew
+		q(49529),	-- Spring Cleaning
+		-- Chests
+		q(48593),	-- Tiragarde Sound repeatable random chest
+		q(48595),	-- Tiragarde Sound repeatable random chest
+		q(48596),	-- Tiragarde Sound repeatable random chest
+		q(48598),	-- Tiragarde Sound repeatable random chest
+		q(48599),	-- Tiragarde Sound repeatable random chest
+		q(48607),	-- Tiragarde Sound repeatable random chest
+		q(48608),	-- Tiragarde Sound repeatable random chest
+		q(48609),	-- Tiragarde Sound repeatable random chest
+		q(48612),	-- Tiragarde Sound repeatable random chest
+		q(48617),	-- Tiragarde Sound repeatable random chest
+		q(48618),	-- Tiragarde Sound repeatable random chest
+		q(48619),	-- Tiragarde Sound repeatable random chest
+		q(48621),	-- Tiragarde Sound repeatable random chest
+		q(50166),	-- Tiragarde Sound repeatable random chest
+
+
+	--	Zuldazar
 		q(55259),	-- Triggers after turning 'Sleep, Eat, Repeat' (ID 55258) in to finish the achievement criteria 'Sleep, Eat, Repeat' (3) for How to Train Your Direhorn (ID 13542)
-
 		-- Bonus Objectives
 		q(47527),	-- Rituals of Heresy
 		q(47797),	-- Occupation Hazard
 		q(49315),	-- Dreadpearl Collusion
 		q(49918),	-- Gorilla Gorge
 		q(50178),	-- Trouble in the Rootway
-		
 		-- Chests
 		q(50710),	-- Zuldazar repeatable random chest
 		q(50711),	-- Zuldazar repeatable random chest
