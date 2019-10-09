@@ -7,8 +7,10 @@ _.Zones =
 		m(539, {	-- Shadowmoon Valley (Draenor)
 			n(-17, {	-- Quests
 				q(36176, {	-- A Call for Huntsman
-					["provider"] = { "i", 114877 },	-- Dirty Note
-					["cr"] = 75043,	-- Karnoth
+					["providers"] = {
+						{ "i", 114877 },	-- Dirty Note
+						{ "n", 75043 },		-- Karnoth
+					},
 					["races"] = ALLIANCE_ONLY,
 					["requireSkill"] = 165,	-- Leatherworking
 				}),
@@ -321,13 +323,15 @@ _.Zones =
 					["requireSkill"] = 165,	-- Leatherworking
 				}),
 				q(37332, {	-- Fungal Bundle
-					["provider"] = { "i", 119317 },	-- Curious Growth
+					["providers"] = {
+						{ "i", 119317 },	-- Curious Growth
+						{ "n", 82318 },		-- Umbraspore Giant
+					},
 					["coords"] = {
 						{ 51.8, 19.0, 539 },
 						{ 57.4, 21.6, 539 },
 					},
 					["races"] = ALLIANCE_ONLY,
-					["cr"] = 82318,	-- Umbraspore Giant
 				}),
 				q(34784, {	-- Fun with Fungus
 					["sourceQuests"] = { 34783 },	-- Naielle, the Rangari
