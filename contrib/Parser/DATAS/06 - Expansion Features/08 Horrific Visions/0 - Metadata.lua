@@ -15,19 +15,16 @@ _.ExpansionFeatures =
 					1469,	-- Start of vision from the heart chamber
 				},
 				--[[ notes:
-					5 maps circle around the room
-					
-					questIDs:
-					57039 - Valley of Spirits cleansed
-					57029 - looted the chest from cleansing Valley of Spirits at the end of the scenario
-					57129 - Valley of Wisdom cleansed
-					57031 - looted the chest from cleansing Valley of Wisdom at the end of the scenario
-					57372 - The Drag cleansed
-					57028 - looted the chest from cleansing The Drag at the end of the scenario
-					57027 - looted the small chest in front of Thrall's image. Probably the "booby prize" version?
+				repeatable, but tracking IDs only trigger once per daily
 				]]--
 			}),
 			n(-10074, {	-- Horrific Vision of Stormwind
+				["maps"] = {
+					1470,	-- Start of vision from the heart chamber
+				},
+				--[[ notes:
+				repeatable, but tracking IDs only trigger once per daily
+				]]--
 			}),
 		},
 	}),

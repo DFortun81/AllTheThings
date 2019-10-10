@@ -1153,6 +1153,26 @@ _.NeverImplemented =
 		
 		-- Patch 8.3
 		-- 58013 triggered randomly during a Black Empire assault in uldum
-		q(58000),	-- Procs when obtaining the Experimental Blacktalon Shroud legendary cloak
+		q(58000),	-- Combining Coalescing Visions 1x
+		q(58001),	-- Combining Coalescing Visions 2x
+		q(58002),	-- Combining Coalescing Visions 3x
+		q(58409),	-- Combining Coalescing Visions 4x
+		
+		-- Horrific Visions
+		q(57039),	-- Valley of Spirits cleansed (Orgrimmar)
+		q(57129),	-- Valley of Wisdom cleansed (Orgrimmar)
+		q(57001),	-- Valley of Strength cleansed (Orgrimmar)
+		q(57372),	-- The Drag cleansed (Orgrimmar)
+		q(57153),	-- Dwarven District cleansed (Stormwind)
+		q(57216),	-- Old Town cleansed (Stormwind)
+		q(57271),	-- Trade District cleansed (Stormwind)
+		q(27282),	-- Mage Quarter cleansed (Stormwind)
+		-- TODO:: Need to determine the alliance zones for the 4 area chests. They appear to be shared with horde except for the main boss chest
+		q(57029),	-- looted the chest from cleansing Valley of Spirits at the end of the scenario
+		q(57031),	-- looted the chest from cleansing Valley of Wisdom at the end of the scenario
+		q(57028),	-- looted the chest from cleansing The Drag at the end of the scenario
+		q(57030),	-- looted the chest from cleansing the Valley of Strength at the end of the scenario
+		q(57027),	-- looted the chest in front of Thrall's image at the end of the scenario. Doesn't matter if you defeat him or not
+		q(57360),	-- looted the chest in front of Alleria's image at the end of the scenario. Doesn't matter if you defeat her or not
 	}),
 };
