@@ -16,7 +16,16 @@ _.Zones =
 				}),
 				q(9612,  {	-- A Hearty Thanks!
 					["provider"] = { "n", 17587 },	-- Draenei Youngling
-					["coord"] = { 58.0, 41.6, 97 },
+					["coords"] = {
+						{ 37.6, 18.6, 97 },
+						{ 40.6, 71.0, 97 },
+						{ 42.0, 57.4, 97 },
+						{ 46.2, 31.8, 97 },
+						{ 53.4, 42.4, 97 },
+						{ 55.6, 47.8, 97 },
+						{ 56.8, 59.6, 97 },
+						{ 58.0, 41.6, 97 },
+					},
 					["races"] = { 11 },	-- Draenei
 					["description"] = "1. Find a |cFFFFD700Draenei Youngling|r\n2. Get them to engage in combat with an aggressive mob\n3. Once they take damage, use |cFFFFD700Gift of the Naaru.|r\n4. Kill the creature for the quest to be offered.",
 				}),
@@ -227,6 +236,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9514,  {	-- Rune Covered Tablet
+					["sourceQuests"] = { 9506 },	-- A Small Start
 					["provider"] = { "i", 23759 },	-- Rune Covered Tablet
 					["races"] = ALLIANCE_ONLY,
 					["coords"] = {	-- Drops from multiple mobs in an area
@@ -280,7 +290,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 				}),
-				q(9671,  {	-- The Bloodcurse Legacy
+				q(9672,  {	-- The Bloodcurse Legacy
 					["provider"] = { "n", 17240 },	-- Admiral Odesyus
 					["coord"] = { 47.0, 70.2, 97 },
 					["races"] = ALLIANCE_ONLY,
