@@ -122,6 +122,7 @@ _.Zones =
 				n(85572, {	-- Grrbrrgle
 					["description"] = "Click on the Restless Crate.",
 					["questID"] = 36919,
+					["isDaily"] = true,
 					["coord"] = { 22.2, 74.2, 535 },
 					["g"] = {
 						i(120436),	-- Mrglrgirdle
@@ -385,6 +386,7 @@ _.Zones =
 				}),
 				n(80524, {	-- Underseer Bloodmane
 					["questID"] = 34945,
+					["isDaily"] = true,
 					["coord"] = { 63.6, 20.8, 535 },
 					["g"] = {
 						i(112475),	-- Prize's Horn-Ring

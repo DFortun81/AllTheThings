@@ -22,6 +22,7 @@ _.Zones =
 						},
 					}),
 					o(236265, {	-- Aged Stone Container
+						["description"] = "When you're inside the Fissure of Fury cave, follow the spiral path to the bottom.  The treasure is in little corner nubbin in the upper-right section of the map (across from the part of the map with water on it).",
 						["questID"] = 36723,
 						["coord"] = { 60.5, 43.1, 547 },
 						["g"] = {
