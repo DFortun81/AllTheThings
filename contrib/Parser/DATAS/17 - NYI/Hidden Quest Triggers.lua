@@ -601,12 +601,36 @@ _.NeverImplemented =
 		
 	-- World Boss
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
-		q(44502),	-- Calamir Kill ID
-		q(44506),	-- Levantus Kill ID
-		q(44901),	-- Levantus Bonus Roll
-		q(47086),	-- Malificus Kill ID
+	--	q(),	-- Ana-Mouz killID
+	--	q(),	-- Ana-Mouz bonus roll
+	--	q(),	-- Apocron killID
+	--	q(),	-- Apocron bonus roll
+	--	q(),	-- Brutallus killID
+	--	q(),	-- Brutallus bonus roll
+		q(44502),	-- Calamir killID
+	--	q(),	-- Calamir bonus roll
+	--	q(),	-- Drugon the Frostblood 
+	--	q(),	-- Drugon the Frostblood 
+	--	q(),	-- Flotsam killID
+	--	q(),	-- Flotsam bonus roll
+	--	q(),	-- Humongris killID
+	--	q(),	-- Humongris bonus roll
+		q(44506),	-- Levantus killID
+		q(44901),	-- Levantus bonus roll
+		q(47086),	-- Malificus killID
+	--	q(),	-- Malificus bonus roll
 		q(44507),	-- Nazak the Fiend killID
 		q(44902),	-- Nazak the Fiend bonus roll
+		q(44508),	-- Nithogg killID
+		q(44903),	-- Nithogg bonus roll
+	--	q(),	-- Shar'thos killID
+	--	q(),	-- Shar'thos bonus roll
+	--	q(),	-- Si'vash killID
+	--	q(),	-- Si'vash bonus roll
+	--	q(),	-- The Soultakers killID
+	--	q(),	-- The Soultakers bonus roll
+	--	q(),	-- Withered J'im killID
+	--	q(),	-- Withered J'im bonus roll
 		
 	-- Invasions
 		q(47065),	-- Highmountain Invasion / Fel Commander Erixtol Kill

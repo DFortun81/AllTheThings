@@ -74,46 +74,49 @@ _.Zones =
 							["sourceQuests"] = { 46247 },	-- Defending Broken Isles
 							["g"] = {
 								cl(10, {	-- Monk
-									q(45440, {	-- A Brewing Situation
-										["provider"] = { "n", 116929 },	-- Brewmaster Blancee
-										["sourceQuests"] = { 47137 },	-- Champions of Legionfall
-									}),
-									q(45404, {	-- Panic at the Brewery
-										["provider"] = { "n", 119664 },	-- Brewmaster Almai
-										["sourceQuests"] = { 45440 },	-- A Brewing Situation
-									}),
-									q(45459, {	-- Storming the Legion
-										["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
-										["sourceQuests"] = { 45404 },	-- Panic at the Brewery
-									}),
-									q(45574, {	-- Fel Ingredients
-										["provider"] = { "n", 117305 },	-- Brewmaster Almai
-										["sourceQuests"] = { 45459 },	-- Storming the Legion
-									}),
-									q(45449, {	-- Alchemist Koryla
-										["provider"] = { "n", 117305 },	-- Brewer Almai
-										["sourceQuests"] = { 45459 },	-- Storming the Legion
-									}),
-									q(45545, {	-- Barrel Toss
-										["provider"] = { "n", 117305 },	-- Brewer Almai
-										["sourceQuests"] = { 45459 },	-- Storming the Legion
-									}),
-									q(46320, {	-- Hope For a Cure
-										["provider"] = { "n", 117305 },	-- Brewer Almai
-										["sourceQuests"] = { 45574, 45449, 45545 },	-- Fel Ingredients / Alchemist Koryla / Barrel Toss
-									}),
-									q(45442, {	-- Not Felling Well
-										["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
-										["sourceQuests"] = { 46320 },	-- Hope For a Cure
-									}),
-									q(45771, {	-- A Time for Everything
-										["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
-										["sourceQuests"] = { 45442 },	-- Not Felling Well
-									}),
-									q(45790, {	-- Champion: Almai
-										["provider"] = { "n", 117504 },	-- Brewer Almai
-										["sourceQuests"] = { 45771 },	-- A Time for Everything
-									}),
+									["classes"] = { 10 },	-- Monk
+									["g"] = {
+										q(45440, {	-- A Brewing Situation
+											["provider"] = { "n", 116929 },	-- Brewmaster Blancee
+											["sourceQuests"] = { 47137 },	-- Champions of Legionfall
+										}),
+										q(45404, {	-- Panic at the Brewery
+											["provider"] = { "n", 119664 },	-- Brewmaster Almai
+											["sourceQuests"] = { 45440 },	-- A Brewing Situation
+										}),
+										q(45459, {	-- Storming the Legion
+											["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
+											["sourceQuests"] = { 45404 },	-- Panic at the Brewery
+										}),
+										q(45574, {	-- Fel Ingredients
+											["provider"] = { "n", 117305 },	-- Brewmaster Almai
+											["sourceQuests"] = { 45459 },	-- Storming the Legion
+										}),
+										q(45449, {	-- Alchemist Koryla
+											["provider"] = { "n", 117305 },	-- Brewer Almai
+											["sourceQuests"] = { 45459 },	-- Storming the Legion
+										}),
+										q(45545, {	-- Barrel Toss
+											["provider"] = { "n", 117305 },	-- Brewer Almai
+											["sourceQuests"] = { 45459 },	-- Storming the Legion
+										}),
+										q(46320, {	-- Hope For a Cure
+											["provider"] = { "n", 117305 },	-- Brewer Almai
+											["sourceQuests"] = { 45574, 45449, 45545 },	-- Fel Ingredients / Alchemist Koryla / Barrel Toss
+										}),
+										q(45442, {	-- Not Felling Well
+											["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
+											["sourceQuests"] = { 46320 },	-- Hope For a Cure
+										}),
+										q(45771, {	-- A Time for Everything
+											["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
+											["sourceQuests"] = { 45442 },	-- Not Felling Well
+										}),
+										q(45790, {	-- Champion: Almai
+											["provider"] = { "n", 117504 },	-- Brewer Almai
+											["sourceQuests"] = { 45771 },	-- A Time for Everything
+										}),
+									},
 								}),
 							},
 						}),
