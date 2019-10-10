@@ -330,6 +330,7 @@ _.Zones =
 				}),
 				q(26447, {	-- Diabolical Plans
 					["provider"] = { "i", 23798 },	-- Diabolical Plans
+					["coord"] = { 81.5, 69.1, 63 },
 					["races"] = HORDE_ONLY,
 					["crs"] = {
 						11697,	-- Mannoroc Lasher

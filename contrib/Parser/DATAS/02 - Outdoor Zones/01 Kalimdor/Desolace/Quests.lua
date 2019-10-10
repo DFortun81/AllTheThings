@@ -444,11 +444,13 @@ _.Zones =
 					["sourceQuest"] = 14332,	-- Time for Change
 				}),
 				q(14376, {	-- Jugkar's Undoing (A)
+					["coord"] = { 51.2, 75.4, 66 },
 					["crs"] = { 35591 },	-- Lesser Infernal
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 49220 },	-- Infernal Power Core
 				}),
 				q(14344, {	-- Jugkar's Undoing (H)
+					["coord"] = { 51.2, 75.4, 66 },
 					["crs"] = { 35591 },	-- Lesser Infernal
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 49200 },	-- Infernal Power Core
