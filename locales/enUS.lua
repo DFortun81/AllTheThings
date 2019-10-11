@@ -349,7 +349,6 @@ app.L = {
 		[-97] = "Interface\\Icons\\ability_rogue_dirtydeeds",								-- Never Implemented
 		[-98] = "Interface\\Icons\\inv_garrison_resource",									-- Garrisons
 		[-99] = "Interface\\Icons\\inv_garrison_resource",									-- Buildings
-		[-100] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheHERO", 					-- Blizzcon 2019 (temporary)
 		[-101] = "Interface\\Icons\\Achievement_GarrisonFollower_LevelUp",					-- Followers
 		[-124] = "Interface\\Icons\\garrison_building_armory", 								-- Garrison Sets
 		[-134] = "Interface\\Icons\\inv_bannerpvp_01", 										-- Orgrimmar Set
@@ -964,7 +963,6 @@ app.L = {
 -- Garrison Note: These will be changed into a new class soon(TM)
 		--[-99] = select(2,C_Garrison.GetBuildingInfo(65) ), 						-- Stables
 		[-99] = "Buildings",
-		[-100] = "Blizzcon 2019", 												-- Blizzcon (temporary)
 		[-101] = "Followers",
 --Horde [Swaps based on faction ONLY after a reloadui]
 		[-124] = "Garrison Sets", 												-- Garrison Sets
