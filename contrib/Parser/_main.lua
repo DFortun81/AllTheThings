@@ -66,6 +66,7 @@ ALLIANCE_ONLY = {
 	30,	-- Lightforged
 	32,	-- Kul Tiran
 	34,	-- Dark Iron
+	37,	-- Mechagnome
 };
 HORDE_ONLY = {
 	2,	-- Orc
@@ -79,6 +80,7 @@ HORDE_ONLY = {
 	28,	-- Highmountain
 	31,	-- Zandalari
 	36,	-- Mag'har
+	35,	-- Vulpera
 };
 ALL_RACES = {	-- NOTE: Use this with the exclude function.
 	1,	-- Human
@@ -103,7 +105,9 @@ ALL_RACES = {	-- NOTE: Use this with the exclude function.
 	31,	-- Zandalari
 	32,	-- Kul Tiran
 	34,	-- Dark Iron
+	35,	-- Vulpera
 	36,	-- Mag'har
+	37,	-- Mechagnome
 };
 ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 	1,	-- Warrior
