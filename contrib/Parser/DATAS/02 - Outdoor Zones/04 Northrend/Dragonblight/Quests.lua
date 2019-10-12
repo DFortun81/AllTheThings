@@ -478,7 +478,7 @@ _.Zones =
 					crit(8, {	--Oacha'noa
 						q(11958, {	-- Let Nothing Go To Waste
 							["provider"] = { "n", 26194 },	-- Elder Ko'nani
-							["description"] = "The breadcream quests have collectible rewards. Make sure to do one of them before picking up this quest!",
+							["description"] = "The breadcrumb quests have collectible rewards. Make sure to do one of them before picking up this quest!",
 							["sourceQuests"] = {
 								12117,	-- Travel to Mo'aki Harbor (Borean Tundra)
 								12118,	-- Travel to Mo'aki Harbor (Howling Fjord)

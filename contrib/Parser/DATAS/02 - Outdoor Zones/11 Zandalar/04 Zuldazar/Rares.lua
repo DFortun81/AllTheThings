@@ -141,7 +141,7 @@ _.Zones =
 					}),
 				}),
 				n(126637, {	-- Kandak [CLQS]
-					["questID"] = 48453,
+					["questID"] = 48543,
 					["coord"] = { 68.74, 48.41, 862 },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(160984),	-- Sauroscale Cloak of Adaptation
@@ -240,7 +240,7 @@ _.Zones =
 					}),
 				}),
 				n(130643, {	-- Twisted Child of Rezan [MCLQ]
-					["questID"] = 50847,
+					["questID"] = 50333,
 					["coord"] = { 76.4, 27.1, 862 },
 					["g"] = { -- Level 120 mob which means no gear scaling
 						i(162620),	-- Devilbone Shoulderguards
