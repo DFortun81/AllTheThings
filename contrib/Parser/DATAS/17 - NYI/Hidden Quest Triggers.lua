@@ -149,7 +149,7 @@ _.NeverImplemented =
 		-------------------
 		--     WOTLK     --
 		-------------------
-		
+		-- dungeons
 		q(35489),	-- Ahn'Kahet: The Old Kingdom normal completion
 		q(35490),	-- Ahn'Kahet: The Old Kingdom heroic completion
 		q(35493),	-- Ahn'Kahet: The Old Kingdom bonus objective completed (kill Amanitar, heroic only)
@@ -186,6 +186,8 @@ _.NeverImplemented =
 		q(35449),	-- Utgarde Pinnacle normal completion
 		q(35453),	-- Utgarde Pinnacle heroic completion
 		
+		-- Zones
+		q(12485),	-- Howling Fjord - triggers during "The Echo of Ymiron" when you see the RP between two vrykul in Wyrmskull Village
 		
 		-------------------
 		--   CATACLYSM   --
