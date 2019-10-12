@@ -111,6 +111,7 @@ _.NeverImplemented =
 		-------------------
 	--	QUESTING / LEVELING
 		q(10454),	-- Hellfire Peninsula - Flag: OFF THE RAILS. Triggered just after turning in Forward Base: Reaver's Fall as horde
+		q(11517),	-- Report to Nasuun — looks like an unused version of #11534 (triggers when you turn it in, but has no data on wowhead)
 	
 	--	DUNGEONS
 		q(35544),	-- Auchinai Crypts normal completion

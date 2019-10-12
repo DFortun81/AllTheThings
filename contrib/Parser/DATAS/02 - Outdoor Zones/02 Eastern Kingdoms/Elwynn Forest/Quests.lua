@@ -91,6 +91,7 @@ _.Zones =
 					["sourceQuest"] = 37,	-- Find the Lost Guards
 				}),
 				q(1097,  {	-- Elmore's Task
+					["isBreadcrumb"] = true,	-- for "Stormpike's Delivery" in Stormwind
 					["provider"] = { "n", 514 },	-- Smith Argus
 					["coord"] = { 41.7, 65.5, 37 },
 					["races"] = ALLIANCE_ONLY,

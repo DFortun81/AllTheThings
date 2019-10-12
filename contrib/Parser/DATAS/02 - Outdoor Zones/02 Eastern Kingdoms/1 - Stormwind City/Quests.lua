@@ -554,6 +554,7 @@ _.Zones =
 					["lvl"] = 80,
 				}),
 				q(14446, {	-- Cataclysm!
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 36674 },	-- Nambria
 					["coord"] = { 41.4, 47.6, 84 },
 					["races"] = ALLIANCE_ONLY,
