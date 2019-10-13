@@ -50,6 +50,12 @@ namespace ATT
             {
                 return AllContainers.TryGetValue(containerName, out List<object> obj) ? obj : null;
             }
+
+            /// <summary>
+            /// All of the Quests that are in the database.
+            /// </summary>
+            public static IDictionary<string, Dictionary<string, object>> AllQuests { get; } = new Dictionary<string, Dictionary<string, object>>();
+
             #endregion
             #region Filters
             /// <summary>
@@ -1819,6 +1825,21 @@ namespace ATT
 
                 // Merge the entry with the data.
                 Merge(entry, data2);
+                // Add quest entry to AllQuest collection
+                if (entry.TryGetValue("questID", out string questID))
+                {
+                    if (!AllQuests.ContainsKey(questID))
+                    {
+                        AllQuests.Add(questID, entry);
+                    }
+                }
+                if (entry.TryGetValue("altQuestID", out string altQuestID))
+                {
+                    if (!AllQuests.ContainsKey(altQuestID))
+                    {
+                        AllQuests.Add(altQuestID, entry);
+                    }
+                }
             }
 
             /// <summary>
