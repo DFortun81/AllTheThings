@@ -12,7 +12,10 @@ _.Zones =
 					["sourceQuest"] = 11459,	-- Zeh'gehn Sez
 				}),
 				q(11282, {	-- A Lesson in Fear
+					["coord"] = { 71.1, 39.0, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24027 },	-- Sergeant Gorth
+					["sourceQuest"] = 11295,	-- The Offensive Begins
 					["g"] = {
 						i(35868),	-- Grounded Pants
 						i(35869),	-- Hex-Linked Stronghelm
@@ -30,10 +33,11 @@ _.Zones =
 						11567,	-- The Ancient Armor of the Kvaldir
 					},
 				}),
-				q(11272,{ 	-- A Score to Settle
+				q(11272, { 	-- A Score to Settle (Note: the version in the dungeon is a different ID so this needs to stay)
+					["coord"] = { 78.6, 31.2, 117 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 23780 },	-- High Executor Anselm
-					["sourceQuest"] = 11234,
+					["sourceQuest"] = 11234,	-- Report to Anselm
 					["groups"] = {
 						i(39679), 	-- Runecaster's Bracers
 						i(39680),	-- Vambraces of the Vengeance Bringer
@@ -42,7 +46,10 @@ _.Zones =
 					},
 				}),
 				q(11305, {	-- A Tailor-Made Formula
+					["coord"] = { 53.5, 66.3, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24251 },	-- Chief Plaguebringer Harris
+					["sourceQuest"] = 11304,	-- New Agamand
 					["g"] = {
 						i(35851),	-- Acid-Etched Knuckles
 						i(35849),	-- Featherweight Claymore
@@ -62,13 +69,21 @@ _.Zones =
 					["sourceQuest"] = 11328,	-- Mission: Forsaken Intel
 				}),
 				q(12481, {	-- Adding Injury to Insult
+					["coord"] = { 65.8, 36.7, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24458 },	-- Lydell
+					["sourceQuest"] = 11303,	-- The Ambush
 					["g"] = {
 						i(35889),	-- Bone-Inlaid Bracers
 						i(35888),	-- Embossed Ermine Girdle
 						i(35890),	-- Magdun Spaulders
 						i(35891),	-- Runeplate Helm
 					},
+				}),
+				q(12482, {	-- Against Nifflevar
+					["coord"] = { 67.4, 60.5, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 27922 },	-- Ranger Captain Areiel
 				}),
 				q(11250, {	-- All Hail the Conqueror of Skorn!
 					["coord"] = { 44.8, 31.4, 117 },
@@ -85,7 +100,7 @@ _.Zones =
 						i(35905),	-- Vinewoven Tunic
 					},
 				}),
-				q(29608, {	-- Allies in Dalaran -- aa -- TODO:: figure out where this leads
+				q(29608, {	-- Allies in Dalaran -- TODO:: figure out where this leads
 					["provider"] = { "n", 23736 },	-- Pricilla Winterwind
 					["coord"] = { 59.7, 63.2, 117 },
 					["races"] = ALLIANCE_ONLY,
@@ -104,7 +119,10 @@ _.Zones =
 					},
 				}),
 				q(11324, {	-- Alpha Worg (H)
+					["coord"] = { 29.6, 5.6, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24261 },	-- Ulfang
+					["sourceQuest"] = 11417,	-- Eyes of the Eagle
 					["g"] = {
 						i(35913),	-- Gholamweave Leggings
 						i(35915),	-- Darksteel Ringmail Greaves
@@ -113,7 +131,10 @@ _.Zones =
 					},
 				}),
 				q(11230, {	-- Ambushed!
+					["coord"] = { 84.6, 36.4, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24037 },	-- Captain Harker
+					["sourceQuest"] = 11229,	-- The Windrunner Fleet
 					["g"] = {
 						i(35815),	-- Bone-Threaded Harness
 						i(35814),	-- Benevolent Hood
@@ -126,11 +147,16 @@ _.Zones =
 					["provider"] = { "n", 24145 },	-- Zedd
 					["sourceQuest"] = 11274,	-- Zedd's Probably Dead
 				}),
-				q(11394, {	-- And You Thought Murlocs Smelled Bad!
+				q(11394, {	-- And You Thought Murlocs Smelled Bad! (A)
 					["provider"] = { "n", 23833 },	-- Explorer Jaren
 					["coord"] = { 24.2, 32.4, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11393,	-- Where is Explorer Jaren?
+				}),
+				q(11397, {	-- And You Thought Murlocs Smelled Bad! (H)
+					["coord"] = { 26.2, 24.6, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24359 },	-- Apothecary Anastasia
 				}),
 				q(11344, {	-- Anguish of Nifflevar
 					["coord"] = { 59.8, 61.4, 117 },
@@ -144,6 +170,12 @@ _.Zones =
 						i(35833),	-- Imperious Worghide Cap
 					},
 				}),
+				q(11306, {	-- Apply Heat and Stir
+					["coord"] = { 53.5, 66.3, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24251 },	-- Chief Plaguebringer Harris
+					["sourceQuest"] = 11305,	-- A Tailor-Made Formula
+				}),
 				q(11457, {	-- Arming Kamagua
 					["coord"] = { 25.0, 56.9, 117 },
 					["provider"] = { "n", 24755 },	-- Elder Atuik
@@ -155,7 +187,10 @@ _.Zones =
 					["sourceQuest"] = 11457,	-- Arming Kamagua
 				}),
 				q(11283, {	-- Baleheim Bodycount
+					["coord"] = { 71.1, 39.0, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24027 },	-- Sergeant Gorth
+					["sourceQuest"] = 11282,	-- A Lesson in Fear
 					["g"] = {
 						i(35820),	-- Deacon's Wraps
 						i(35818),	-- Stretch-Hide Spaulders
@@ -163,8 +198,16 @@ _.Zones =
 						i(35822),	-- Scavenged Tirasian Plate
 					},
 				}),
-				q(11301, {	-- Brains! Brains! Brains!
+				q(11285, {	-- Baleheim Must Burn!
+					["coord"] = { 71.1, 39.0, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24027 },	-- Sergeant Gorth
+					["sourceQuest"] = 11282,	-- A Lesson in Fear
+				}),
+				q(11301, {	-- Brains! Brains! Brains!
+					["coord"] = { 25.9, 24.4, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24218 },	-- Apothecary Grick
 					["g"] = {
 						i(35864),	-- Fizznik's Patented Earwarmer
 						i(35863),	-- Earth-Infused Leggings
@@ -178,7 +221,7 @@ _.Zones =
 					["coord"] = { 28.9, 41.9, 117 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(11396, {	-- Bring Down Those Shields
+				q(11396, {	-- Bring Down Those Shields (A)
 					["coord"] = { 24.2, 32.4, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 23833 },	-- Explorer Jaren
@@ -190,8 +233,11 @@ _.Zones =
 						i(35935),	-- Infused Coldstone Rune
 					},
 				}),
-				q(11399, {	-- Bring Down Those Shields
+				q(11399, {	-- Bring Down Those Shields (H)
+					["coord"] = { 26.2, 24.6, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24359 },	-- Apothecary Anastasia
+					["sourceQuest"] = 11398,	-- It's a Scourge Device
 					["g"] = {
 						i(35932),	-- Earthbinder's Regenerating Band
 						i(35933),	-- Ramshorn Greathelm
@@ -199,22 +245,46 @@ _.Zones =
 						i(35935),	-- Infused Coldstone Rune
 					},
 				}),
-				q(11414, {	-- Brother Betrayers
+				q(11414, {	-- Brother Betrayers (A)
 					["coord"] = { 29.6, 5.6, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 24261 },	-- Ulfang
 					["sourceQuest"] = 11325,	-- In Worg's Clothing
 				}),
-				q(11247, {	-- Burn Skorn, Burn!
+				q(11415, {	-- Brother Betrayers (H)
+					["coord"] = { 29.6, 5.6, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24261 },	-- Ulfang
+					["sourceQuest"] = 11323,	-- In Worg's Clothing
+				}),
+				q(11247, {	-- Burn Skorn, Burn! (A)
 					["coord"] = { 44.8, 31.4, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 24060 },	-- Westguard Sergeant
 					["sourceQuest"] = 11248,	-- Operation: Skornful Wrath
 				}),
-				q(13268, {	-- Cloth Scavenging
+				q(11258, {	-- Burn Skorn, Burn! (H)
+					["coord"] = { 44.7, 29.9, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24130 },	-- Winterhoof Brave
+					["sourceQuest"] = 11256,	-- Skorn Must Fall!
+				}),
+				q(11411, {	-- Camp Winterhoof
+					["coord"] = { 53.0, 66.0, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24125 },	-- Cormath the Courier
+					["isBreadcrumb"] = true,
+				}),
+				q(13268, {	-- Cloth Scavenging (A)
 					["coord"] = { 58.6, 62.6, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26914 },	-- Benjamin Clegg
+					["requireSkill"] = 197,	-- Tailoring
+				}),
+				q(13269, {	-- Cloth Scavenging (H)
+					["coord"] = { 79.4, 30.8, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26964 },	-- Alexandra McQueen
 					["requireSkill"] = 197,	-- Tailoring
 				}),
 				q(11479, {	-- "Crowleg" Dan
@@ -238,11 +308,17 @@ _.Zones =
 					["coord"] = { 36.3, 80.4, 117 },
 					["sourceQuest"] = 11466,	-- Jack Likes His Drink
 				}),
-				q(11235, {	-- Dealing With Gjalerbron
+				q(11235, {	-- Dealing With Gjalerbron (A)
 					["coord"] = { 28.8, 44.1, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 23749 },	-- Captain Adams
 					["sourceQuest"] = 11250,	-- All Hail the Conqueror of Skorn!
+				}),
+				q(11263, {	-- Dealing With Gjalerbron (H)
+					["coord"] = { 48.0, 10.7, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24129 },	-- Chieftain Ashtotem
+					["sourceQuest"] = 11261,	-- The Conqueror of Skorn!
 				}),
 				q(11359, {	-- Demolishing Megalith (A)
 					["provider"] = { "n", 24376 },	-- Researcher Aderan
@@ -251,8 +327,9 @@ _.Zones =
 					["sourceQuest"] = 11358,	-- The Lodestone
 				}),
 				q(11367, {	-- Demolishing Megalith (H)
-					["provider"] = { "n", 24390 },	-- Sage Edan
+					["coord"] = { 48.0, 10.4, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24390 },	-- Sage Edan
 					["sourceQuest"] = 11366,	-- The Lodestone
 				}),
 				q(11269, {	-- Down to the Wire
@@ -267,7 +344,10 @@ _.Zones =
 					},
 				}),
 				q(11280, {	-- Draconis Gastritis
+					["coord"] = { 53.0, 66.9, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24157 },	-- Plaguebringer Tillinghast
+					["sourceQuest"] = 11279,	-- Green Eggs and Whelps
 					["g"] = {
 						i(35871),	-- Indigo Robe of Replenishment
 						i(35873),	-- Interlinked Chain Girdle
@@ -304,11 +384,17 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11332,	-- Mission: Plague This!
 				}),
-				q(11416, {	-- Eyes of the Eagle
+				q(11416, {	-- Eyes of the Eagle (A)
 					["coord"] = { 29.6, 5.6, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 24261 },	-- Ulfang
 					["sourceQuest"] = 11414,	-- Brother Betrayers
+				}),
+				q(11417, {	-- Eyes of the Eagle (H)
+					["coord"] = { 29.6, 5.6, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24261 },	-- Ulfang
+					["sourceQuest"] = 11415,	-- Brother Betrayers
 				}),
 				q(11468, {	-- Falcon Versus Hawk
 					["coord"] = { 75.2, 64.9, 117 },
@@ -316,16 +402,26 @@ _.Zones =
 					["provider"] = { "n", 24750 },	-- Hidalgo the Master Falconer
 					["sourceQuest"] = 11465,	-- The Ransacked Caravan
 				}),
-				q(11456, {	-- Feeding the Survivors -- aa
+				q(11456, {	-- Feeding the Survivors
 					["provider"] = { "n", 24755 },	-- Elder Atuik
 					["coord"] = { 25.0, 56.9, 117 },
 				}),
 				q(11307, {	-- Field Test
+					["coord"] = { 53.5, 66.3, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24251 },	-- Chief Plaguebringer Harris
+					["sourceQuest"] = 11306,	-- Apply Heat and Stir
 					["g"] = {
 						i(35857),	-- Munificent Bulwark
 						i(35858),	-- Tome of Alacrity
 					},
+				}),
+				q(11287, {	-- Find Sage Mistwalker
+					["coord"] = { 48.2, 10.7, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24135 },	-- Greatmother Ankha
+					["sourceQuest"] = 11261,	-- The Conqueror of Skorn!
+					["isBreadcrumb"] = true,
 				}),
 				q(11434, {	-- Forgotten Treasure
 					["provider"] = { "n", 24537 },	-- Handsome Terry
@@ -337,12 +433,22 @@ _.Zones =
 					["coord"] = { 55.9, 55.7, 117 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(29609, {	-- Friends in Dalaran
+					["coord"] = { 79.0, 29.7, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 27344 },	-- Adeline Chambers
+				}),
 				q(11464, {	-- Gambling Debt
 					["provider"] = { "n", 24541 },	-- Taruk
 					["coord"] = { 36.3, 80.4, 117 },
 					["sourceQuest"] = 11434,	-- Forgotten Treasure
 				}),
-				q(11237, {	-- Gjalerbron Attack Plans
+				q(12181, {	-- Give it a Name
+					["coord"] = { 53.5, 66.3, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24251 },	-- Chief Plaguebringer Harris
+				}),
+				q(11237, {	-- Gjalerbron Attack Plans (A) -- TODO: Verify if this drops all the time
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 33289 },	-- Gjalerbron Attack Plans
 					["crs"] = {
@@ -352,16 +458,43 @@ _.Zones =
 						24014,	-- Necrolord
 					},
 				}),
+				q(11266, {	-- Gjalerbron Attack Plans (H) -- TODO: Verify if this drops all the time
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 33347 },	-- Gjalerbron Attack Plans
+					["crs"] = {
+						23990,	-- Gjalerbron Rune-Caster
+						23989,	-- Gjalerbron Sleep-Watcher
+						23991,	-- Gjalerbron Warrior
+						24014,	-- Necrolord
+					},
+				}),
+				q(11279, {	-- Green Eggs and Whelps
+					["coord"] = { 53.0, 66.9, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24157 },	-- Plaguebringer Tillinghast
+				}),
 				q(11508, {	-- Grezzix Spindlesnap
-					["provider"] = { "n", 24755 },	-- Elder Atuik
 					["coord"] = { 25.0, 56.9, 117 },
+					["provider"] = { "n", 24755 },	-- Elder Atuik
 					["sourceQuest"] = 11507,	-- Elder Atuik and Kamagua
 				}),
-				q(11246, {	-- Gruesome, But Necessary
+				q(11246, {	-- Gruesome, But Necessary (A)
 					["coord"] = { 44.8, 31.4, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 24060 },	-- Westguard Sergeant
 					["sourceQuest"] = 11248,	-- Operation: Skornful Wrath
+				}),
+				q(11257, {	-- Gruesome, But Necessary (H)
+					["coord"] = { 44.7, 29.9, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24130 },	-- Winterhoof Brave
+					["sourceQuest"] = 11256,	-- Skorn Must Fall!
+				}),
+				q(11232, {	-- Guide Our Sights
+					["coord"] = { 84.6, 36.4, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24037 },	-- Captain Harker
+					["sourceQuest"] = 11230,	-- Ambushed!
 				}),
 				q(11289, {	-- Guided by Honor
 					["races"] = ALLIANCE_ONLY,
@@ -380,7 +513,9 @@ _.Zones =
 					["sourceQuest"] = 11429,	-- Drop it then Rock It!
 				}),
 				q(11271, {	-- Hasty Preparations
+					["coord"] = { 48.3, 11.0, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24127 },	-- Ahota Whitefrost
 					["g"] = {
 						i(35926),	-- Artfully Tooled Leggings
 						i(35927),	-- Songscale Breastplate
@@ -392,6 +527,11 @@ _.Zones =
 					["coord"] = { 60.7, 62.5, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 23547 },	-- Macalroy
+				}),
+				q(12566, {	-- Help for Camp Winterhoof
+					["coord"] = { 71.4, 39.2, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 28314 },	-- Longrunner Nanik
 				}),
 				q(12298, {	-- High Commander Halford Wyrmbane
 					["coord"] = { 31.2, 43.9, 117 },
@@ -433,11 +573,17 @@ _.Zones =
 						i(35886),	-- Worgtooth Pendant
 					},
 				}),
-				q(11325, {	-- In Worg's Clothing
+				q(11325, {	-- In Worg's Clothing (A)
 					["provider"] = { "n", 24273 },	-- Watcher Moonleaf
 					["coord"] = { 30.0, 28.5, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11322,	-- The Cleansing
+				}),
+				q(11323, {	-- In Worg's Clothing (H)
+					["coord"] = { 31.1, 24.5, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24186 },	-- Sage Mistwalker
+					["sourceQuest"] = 11317,	-- The Cleansing
 				}),
 				q(11333, {	-- Into the World of Spirits
 					["coord"] = { 59.8, 61.4, 117 },
@@ -478,6 +624,28 @@ _.Zones =
 						i(35839),	-- Runed Clamshell Choker
 					},
 				}),
+				q(11395, {	-- It's a Scourge Device (A)
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "i", 33961 },	-- Scourge Device
+					["crs"] = {
+						23645,	-- Mur'ghoul Corrupter
+						23644,	-- Mur'ghoul Flesheater
+						24540,	-- Necrotech
+						24485,	-- Servitor Shade
+						23643,	-- Unstable Mur'ghoul
+					},
+				}),
+				q(11398, {	-- It's a Scourge Device (H)
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 33962 },	-- Scourge Device
+					["crs"] = {
+						23645,	-- Mur'ghoul Corrupter
+						23644,	-- Mur'ghoul Flesheater
+						24540,	-- Necrotech
+						24485,	-- Servitor Shade
+						23643,	-- Unstable Mur'ghoul
+					},
+				}),
 				q(11466, {	-- Jack Likes His Drink
 					["provider"] = { "n", 24541 },	-- Taruk
 					["coord"] = { 36.3, 80.4, 117 },
@@ -491,8 +659,18 @@ _.Zones =
 						11319,	-- Seeds of the Blacksouled Keepers
 					},
 				}),
-				q(11233, {	-- Land the Killing Blow
+				q(11297, {	-- Keeping Watch on the Interlopers
+					["coord"] = { 48.4, 10.4, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24234 },	-- Junat the Wanderer
+					["sourceQuest"] = 11275,	-- Making the Horn
+					["isBreadcrumb"] = true,
+				}),
+				q(11233, {	-- Land the Killing Blow
+					["coord"] = { 78.6, 37.1, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 23778 },	-- Dark Ranger Lyana
+					["sourceQuest"] = 11232,	-- Guide Our Sights
 					["g"] = {
 						i(35807),	-- Bramblethorn Greatstaff
 						i(35808),	-- Coldstone Cutlass
@@ -513,6 +691,11 @@ _.Zones =
 						i(35920),	-- Feather-Lined Shoulderpads
 						i(35918),	-- Spiked Skullguard
 					},
+				}),
+				q(11227, {	-- Let Them Eat Crow
+					["coord"] = { 79.1, 31.2, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 23938 },	-- Pontius
 				}),
 				q(11436, {	-- Let's Go Surfing Now
 					["coord"] = { 64.4, 46.9, 117 },
@@ -543,6 +726,11 @@ _.Zones =
 					["provider"] = { "n", 23749 },	-- Captain Adams
 					["sourceQuest"] = 11157,	-- The Clutches of Evil
 				}),
+				q(11275, {	-- Making the Horn
+					["coord"] = { 49.3, 11.9, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24123 },	-- Nokoma Snowseer
+				}),
 				q(11355, {	-- March of the Giants (A)
 					["provider"] = { "n", 24376 },	-- Researcher Aderan
 					["coord"] = { 62.5, 16.5, 117 },
@@ -550,8 +738,10 @@ _.Zones =
 					["sourceQuest"] = 11329,	-- I'll Try Anything!
 				}),
 				q(11365, {	-- March of the Giants (H)
-					["provider"] = { "n", 24390 },	-- Sage Edan
+					["coord"] = { 48.0, 10.4, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24390 },	-- Sage Edan
+					["sourceQuest"] = 11275,	-- Making the Horn
 				}),
 				q(11349, {	-- Mastering the Runes (A)
 					["provider"] = { "n", 24328 },	-- Prospector Belvar
@@ -560,8 +750,9 @@ _.Zones =
 					["sourceQuest"] = 11346,	-- The Book of Runes
 				}),
 				q(11351, {	-- Mastering the Runes (H)
-					["provider"] = { "n", 24362 },	-- Longrunner Pembe
+					["coord"] = { 49.2, 12.2, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24362 },	-- Longrunner Pembe
 					["sourceQuest"] = 11350,	-- The Book of Runes
 				}),
 				q(11427, {	-- Meet Lieutenant Icehammer...
@@ -576,7 +767,10 @@ _.Zones =
 					["sourceQuest"] = 11479,	-- "Crowleg" Dan
 				}),
 				q(11281, {	-- Mimicking Nature's Call
+					["coord"] = { 49.3, 11.9, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24123 },	-- Nokoma Snowseer
+					["sourceQuest"] = 11275,	-- Making the Horn
 					["g"] = {
 						i(35937),	-- Braxley's Backyard Moonshine
 						i(35929),	-- Gholamcloth Wrap
@@ -660,13 +854,22 @@ _.Zones =
 					},
 				}),
 				q(11264, {	-- Necro Overlord Mezhen (H)
+					["coord"] = { 48.0, 10.7, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24129 },	-- Chieftain Ashtotem
+					["sourceQuest"] = 11263,	-- Dealing With Gjalerbron
 					["g"] = {
 						i(35938),	-- Drape of Munificence
 						i(35878),	-- Dusk-Linked Leggings
 						i(35879),	-- Gold-Plated Coldsteel Girdle
 						i(35877),	-- Worgskin Shoulders
 					},
+				}),
+				q(11304, {	-- New Agamand
+					["coord"] = { 78.5, 28.9, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24126 },	-- Apothecary Lysander
+					["sourceQuest"] = 11170,	-- Test at Sea
 				}),
 				q(11501, {	-- News From the East
 					["coord"] = { 75.0, 65.5, 117 },
@@ -692,18 +895,26 @@ _.Zones =
 					},
 				}),
 				q(13089, {	-- Northern Cooking (H)
+					["coord"] = { 78.6, 29.4, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26953 },	-- Thomas Kolichio
 					["description"] = "Requires |cFFFFD700Northrend Cooking|r.",
 					["requireSkill"] = 185,	-- Cooking
 					["g"] = {
 						recipe(57421),	-- Northern Stew
 					},
 				}),
-				q(11231, {	-- Of Keys and Cages
+				q(11231, {	-- Of Keys and Cages (A)
 					["coord"] = { 28.8, 43.9, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 24038 },	-- Father Levariol
 					["sourceQuest"] = 11250,	-- All Hail the Conqueror of Skorn!
+				}),
+				q(11265, {	-- Of Keys and Cages (H)
+					["coord"] = { 48.1, 10.6, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24135 },	-- Greatmother Ankha
+					["sourceQuest"] = 11261,	-- The Conqueror of Skorn!
 				}),
 				q(12297, {	-- Of Traitors and Treason
 					["provider"] = { "n", 23749 },	-- Captain Adams
@@ -740,7 +951,10 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(11309, {	-- Parts for the Job
+					["coord"] = { 53.6, 65.2, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24252 },	-- "Hacksaw" Jenny
+					["sourceQuest"] = 11308,	-- Time for Cleanup
 					["g"] = {
 						i(35844),	-- Shock-Resistant Hood
 						i(35846),	-- Banded Chain Gloves
@@ -771,11 +985,23 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 11448,	-- The Explorers' League Outpost
 				}),
+				q(11234, {	-- Report to Anselm
+					["coord"] = { 78.6, 37.1, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 23778 },	-- Dark Ranger Lyana
+					["sourceQuest"] = 11233,	-- Landing the Killing Blow
+				}),
 				q(11199, {	-- Report to Scout Knowles
 					["coord"] = { 28.8, 44.1, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 23749 },	-- Captain Adams
 					["sourceQuests"] = 11188,	-- Two Wrongs...
+				}),
+				q(11221, {	-- Reports from the Field
+					["coord"] = { 78.6, 31.2, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 23780 },	-- High Executor Anselm
+					["sourceQuest"] = 11270,	-- War is Hell
 				}),
 				q(11244, {	-- Rescuing the Rescuers
 					["races"] = ALLIANCE_ONLY,
@@ -817,7 +1043,9 @@ _.Zones =
 					},
 				}),
 				q(11296, {	-- Rivenwood Captives
+					["coord"] = { 31.2, 24.3, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24209 },	-- Longrunner Skycloud
 					["g"] = {
 						i(35896),	-- Icestriker Bands
 						i(35898),	-- Reinforced Tuskhide Hauberk
@@ -825,7 +1053,7 @@ _.Zones =
 						i(35897),	-- Ice-Crusted Cape
 					},
 				}),
-				q(11182, {	-- Root Causes -- aa
+				q(11182, {	-- Root Causes
 					["coord"] = { 41.2, 49.4, 117 },
 					["provider"] = { "n", 23870 },	-- Ember Clutch Ancient
 					["g"] = {
@@ -850,17 +1078,6 @@ _.Zones =
 					["provider"] = { "n", 24539 },	-- "Silvermoon" Harry
 					["coord"] = { 35.0, 80.9, 117 },
 					["sourceQuest"] = 11509,	-- Street "Cred"
-				}),
-				q(11395, {	-- It's a Scourge Device
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "i", 33961 },	-- Scourge Device
-					["crs"] = {
-						23645,	-- Mur'ghoul Corrupter
-						23644,	-- Mur'ghoul Flesheater
-						24540,	-- Necrotech
-						24485,	-- Servitor Shade
-						23643,	-- Unstable Mur'ghoul
-					},
 				}),
 				q(11176, {	-- See to the Operations
 					["provider"] = { "n", 23891 },	-- Overseer Irena Stonemantle
@@ -888,7 +1105,9 @@ _.Zones =
 					["sourceQuest"] = 11188,	-- Two Wrongs...
 				}),
 				q(11424, {	-- Shield Hill
+					["coord"] = { 53.6, 65.2, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24252 },	-- "Hacksaw" Jenny
 					["g"] = {
 						i(35893),	-- Coldstone-Inlaid Waistguard
 						i(35892),	-- Flamebinder Handwraps
@@ -901,11 +1120,29 @@ _.Zones =
 					["coord"] = { 31.1, 40.8, 117 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(11432, {	-- Sleeping Giants
+				q(11256, {	-- Skorn Must Fall!
+					["coord"] = { 48.0, 10.7, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24129 },	-- Chieftain Ashtotem
+					["sourceQuest"] = 11281,	-- Mimicking Nature's Call -- TODO:: verify
+				}),
+				q(11432, {	-- Sleeping Giants (A)
 					["coord"] = { 28.9, 44.2, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 23888 },	-- Mage-Lieutenant Malister
 					["sourceQuest"] = 11231,	-- Of Keys and Cages
+				}),
+				q(11433, {	-- Sleeping Giants (H)
+					["coord"] = { 48.3, 11.0, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24127 },	-- Ahota Whitefrost
+					["sourceQuest"] = 11265,	-- Of Keys and Cages
+				}),
+				q(11253, {	-- Sniff Out the Enemy
+					["coord"] = { 79.1, 31.2, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 23938 },	-- Pontius
+					["sourceQuest"] = 11227,	-- Let Them Eat Crow
 				}),
 				q(11529, {	-- Sorlof's Booty
 					["provider"] = { "n", 24910 },	-- Captain Ellis
@@ -934,10 +1171,19 @@ _.Zones =
 						11315,	-- Wild Vines
 					},
 				}),
-				q(11313, {	-- Spirits of the Ice -- aa
+				q(11168, {	-- Spiking the Mix
+					["coord"] = { 78.5, 28.9, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24126 },	-- Apothecary Lysander
+					["sourceQuest"] = 11167,	-- The New Plague
+				}),
+				q(11313, {	-- Spirits of the Ice
 					["provider"] = { "n", 24117 },	-- Lurielle
 					["coord"] = { 61.4, 22.8, 117 },
-					["sourceQuest"] = 11302,	-- The Enigmatic Frost Nymphs
+					["sourceQuests"] = {
+						11302,	-- The Enigmatic Frost Nymphs (A)
+						11312,	-- The Frozen Glade (H)
+					},
 				}),
 				q(11391, {	-- Steel Gate Patrol
 					["coord"] = { 30.8, 28.5, 117 },
@@ -946,7 +1192,7 @@ _.Zones =
 					["provider"] = { "n", 24399 },	-- Steel Gate Chief Archaeologist
 					["sourceQuest"] = 11390,	-- I've Got a Flying Machine!
 				}),
-				q(11249, {	-- Stop the Ascension! (A)
+				q(11249, {	-- Stop the Ascension! (A) -- TODO: Verify if this drops all the time
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 33314 },	-- Vrykul Scroll of Ascension
 					["crs"] = {
@@ -968,8 +1214,21 @@ _.Zones =
 						i(35901),	-- Rejuvenating Cord
 					},
 				}),
-				q(11260, {	-- Stop the Ascension!
+				q(11260, {	-- Stop the Ascension! (H) -- TODO: Verify if this drops all the time
 					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 33345 },	-- Vrykul Scroll of Ascension
+					["crs"] = {
+						23662,	-- Winterskorn Woodsman
+						23661,	-- Winterskorn Tribesman
+						23664,	-- Winterskorn Warrior
+						23663,	-- Winterskorn Shield-Maiden
+						23665,	-- Winterskorn Raider
+						23666,	-- Winterskorn Berserker
+						23670,	-- Winterskorn Elder
+						23667,	-- Winterskorn Rune-Seer
+						23668,	-- Winterskorn Rune-Caster
+						23669,	-- Winterskorn Oracle
+					},
 					["crs"] = {
 						23662,	-- Winterskorn Woodsman
 						23661,	-- Winterskorn Tribesman
@@ -1003,18 +1262,35 @@ _.Zones =
 						{ 55.6, 57.3, 117 },	-- NPC
 					},
 				}),
+				q(11311, {	-- Suppressing the Elements
+					["coord"] = { 48.9, 11.9, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24256 },	-- Wind Tamer Kagan
+				}),
 				q(11469, {	-- Swabbin' Soap
 					["provider"] = { "n", 24784 },	-- Scuttle Frostprow
 					["coord"] = { 37.7, 79.5, 117 },
 					["sourceQuest"] = 11509,	-- Street "Cred" -- TODO:: verify
 				}),
 				q(11170, {	-- Test at Sea
+					["coord"] = { 78.5, 28.9, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24126 },	-- Apothecary Lysander
+					["sourceQuest"] = 11168,	-- Spiking the Mix
 					["g"] = {
 						i(35841),	-- Frost-Trimmed Gauntlets
 						i(35842),	-- Azure Chain Hauberk
 						i(35843),	-- Ramshorn-Inlaid Shoulders
 						i(35839),	-- Runed Clamshell Choker
+					},
+				}),
+				q(11303, {	-- The Ambush
+					["coord"] = { 71.1, 39.0, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24027 },	-- Sergeant Gorth
+					["sourceQuests"] = {
+						11283,	-- Baleheim Bodycount
+						11285,	-- Baleheim Must Burn!
 					},
 				}),
 				q(11567, {	-- The Ancient Armor of the Kvaldir
@@ -1023,7 +1299,10 @@ _.Zones =
 					["sourceQuest"] = 11510,	--	"Scoodles"
 				}),
 				q(11286, {	-- The Artifacts of Steel Gate
+					["coord"] = { 31.1, 24.5, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24186 },	-- Sage Mistwalker
+					["sourceQuest"] = 11287,	-- Find Sage Mistwalker
 					["g"] = {
 						i(35912),	-- Crackling Cloak
 						i(35911),	-- Unsparing Band
@@ -1037,13 +1316,21 @@ _.Zones =
 					["sourceQuest"] = 11329,	-- I'll Try Anything!
 				}),
 				q(11350, {	-- The Book of Runes (H)
-					["provider"] = { "n", 24362 },	-- Longrunner Pembe
+					["coord"] = { 49.2, 12.2, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24362 },	-- Longrunner Pembe
+					["sourceQuest"] = 11275,	-- Making the Horn
 				}),
-				q(11322, {	-- The Cleansing -- aa
+				q(11322, {	-- The Cleansing (A)
 					["coord"] = { 30.0, 28.5, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 24273 },	-- Watcher Moonleaf
+				}),
+				q(11317, {	-- The Cleansing (H)
+					["coord"] = { 31.1, 24.5, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24186 },	-- Sage Mistwalker
+					["sourceQuest"] = 11286,	-- The Artifacts of Steel Gate
 				}),
 				q(11157, {	-- The Clutches of Evil
 					["coord"] = { 28.8, 44.1, 117 },
@@ -1051,7 +1338,14 @@ _.Zones =
 					["provider"] = { "n", 23749 },	-- Captain Adams
 				}),
 				q(11261, {	-- The Conqueror of Skorn!
+					["coord"] = { 44.7, 29.9, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24130 },	-- Winterhoof Brave
+					["sourceQuests"] = {
+						11258,	-- Burn Skorn, Burn!
+						11257,	-- Gruesome, But Necessary
+						11259,	-- Towers of Certain Doom
+					},
 					["g"] = {
 						i(35909),	-- Sun-Fired Striders
 						i(35910),	-- Shaleground Bracers
@@ -1059,7 +1353,7 @@ _.Zones =
 						i(35905),	-- Vinewoven Tunic
 					},
 				}),
-				q(11504, {	-- The Dead Rise! -- aa
+				q(11504, {	-- The Dead Rise!
 					["provider"] = { "n", 23804 },	-- Orfus of Kamagua
 					["coord"] = { 40.2, 60.2, 117 },
 					["sourceQuest"] = 11573,	-- Orfus of Kamagua
@@ -1086,11 +1380,22 @@ _.Zones =
 						{ 56.9, 53.7, 117 },	-- NPC
 					},
 				}),
+				q(11254, {	-- The Dragonskin Map
+					["coord"] = { 75.9, 19.7, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 186585 },	-- Dragonskin Scroll
+					["sourceQuest"] = 11253,	-- Sniff Out the Enemy
+				}),
 				q(11343, {	-- The Echo of Ymiron
 					["coord"] = { 59.8, 61.4, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 23975 },	-- Thoralius the Wise
 					["sourceQuest"] = 11333,	-- Into the World of Spirits
+				}),
+				q(11423, {	-- The Enemy's Legacy
+					["coord"] = { 67.3, 60.3, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24548 },	-- Scribe Seguine
 				}),
 				q(11302, {	-- The Enigmatic Frost Nymphs
 					["provider"] = { "n", 24282 },	-- Lieutenant Maeve
@@ -1128,7 +1433,10 @@ _.Zones =
 					},
 				}),
 				q(11267, {	-- The Frost Wyrm and its Master (H)
+					["coord"] = { 49.5, 11.5, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24032 },	-- Celea Frozenmane
+					["sourceQuest"] = 11266,	-- Gjalerbron Attack Plans
 					["g"] = {
 						i(35880),	-- Earthwell Footwraps
 						i(35882),	-- Magispike Helm
@@ -1137,9 +1445,11 @@ _.Zones =
 					},
 				}),
 				q(11312, {	-- The Frozen Glade
-					["provider"] = { "n", 24123 },	-- Nokoma Snowseer
+					["coord"] = { 49.3, 12.0, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24123 },	-- Nokoma Snowseer
 					["isBreadcrumb"] = true,
+					["sourceQuest"] = 11275,	-- Making the Horn
 				}),
 				q(11512, {	-- The Frozen Heart of Isuldof
 					["provider"] = { "n", 24539 },	-- "Silvermoon" Harry
@@ -1169,8 +1479,9 @@ _.Zones =
 					["sourceQuest"] = 11355,	-- March of the Giants
 				}),
 				q(11366, {	-- The Lodestone (H)
-					["provider"] = { "n", 24390 },	-- Sage Edan
+					["coord"] = { 48.0, 10.4, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24390 },	-- Sage Edan
 					["sourceQuest"] = 11365,	-- March of the Giants
 				}),
 				q(11519, {	-- The Lost Shield of the Aesirites
@@ -1178,20 +1489,34 @@ _.Zones =
 					["coord"] = { 35.0, 80.9, 117 },
 					["sourceQuest"] = 11510,	-- "Scoodles"
 				}),
-				q(12794, {	-- The Magical Kingdom of Dalaran
+				q(12794, {	-- The Magical Kingdom of Dalaran (A)
 					["provider"] = { "n", 23729 },	-- Baron Ulrik von Stromhearth
 					["coord"] = { 58.8, 62.8, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(11167, {	-- The New Plague
+				q(12791, {	-- The Magical Kingdom of Dalaran (H)
+					["coord"] = { 79.4, 29.4, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 29159 },	-- Magister Varenthas
+					["isBreadcrumb"] = true,
+				}),
+				q(11167, {	-- The New Plague
+					["coord"] = { 78.5, 28.9, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24126 },	-- Apothecary Lysander
 					["g"] = {
 						i(35832),	-- Blauvelt's Special Occasion Gloves
 						i(35834),	-- Nimblefinger Scaled Gloves
 						i(35835),	-- Antique Reinforced Legguards
 						i(35833),	-- Imperious Worghide Cap
 					},
+				}),
+				q(11295, {	-- The Offensive Begins
+					["coord"] = { 78.6, 31.2, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 23780 },	-- High Executor Anselm
+					["sourceQuest"] = 11254,	-- The Dragonskin Map
 				}),
 				q(11410, {	-- The One That Got Away
 					["provider"] = { "n", 24056 },	-- Christopher Sloan
@@ -1228,8 +1553,9 @@ _.Zones =
 					["sourceQuest"] = 11349,	-- Mastering the Runes
 				}),
 				q(11352, {	-- The Rune of Command (H)
-					["provider"] = { "n", 24362 },	-- Longrunner Pembe
+					["coord"] = { 49.2, 12.2, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24362 },	-- Longrunner Pembe
 					["sourceQuest"] = 11351,	-- Mastering the Runes
 				}),
 				q(11530, {	-- The Shield of the Aesirites
@@ -1269,10 +1595,15 @@ _.Zones =
 						i(35830),	-- Worn Vrykul Smasher
 					},
 				}),
-				q(11452, {	-- The Slumbering King
+				q(11452, {	-- The Slumbering King (A)
 					["crs"] = { 24018 },	-- Necro Overlord Mezhen
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 34090 },	-- Mezhen's Writings
+				}),
+				q(11453, {	-- The Slumbering King (H)
+					["crs"] = { 24018 },	-- Necro Overlord Mezhen
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 34083 },	-- Awakening Rod
 				}),
 				q(11511, {	-- The Staff of Storm's Fury
 					["provider"] = { "n", 24539 },	-- "Silvermoon" Harry
@@ -1280,7 +1611,10 @@ _.Zones =
 					["sourceQuest"] = 11510,	-- "Scoodles"
 				}),
 				q(11268, {	-- The Walking Dead
+					["coord"] = { 48.1, 10.6, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24135 },	-- Greatmother Ankha
+					["sourceQuest"] = 11265,	-- Of Keys and Cages
 					["g"] = {
 						i(35884),	-- Regal Pantaloons
 						i(35887),	-- Loam-Stained Greaves
@@ -1293,6 +1627,12 @@ _.Zones =
 					["provider"] = { "n", 24810 },	-- Anuniaq
 					["isDaily"] = true,
 					["sourceQuest"] = 11469,	-- Swabbin' Soap
+				}),
+				q(11229, {	-- The Windrunner Fleet
+					["coord"] = { 26.2, 24.6, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 23780 },	-- High Executor Anselm
+					["sourceQuest"] = 11221,	-- Reports from the Field
 				}),
 				q(11284, {	-- The Yeti Next Door
 					["provider"] = { "n", 24176 },	-- Foreman Colbey
@@ -1317,6 +1657,19 @@ _.Zones =
 						i(35862),	-- Light-Bound Chestguard
 					},
 				}),
+				q(11308, {	-- Time for Cleanup
+					["coord"] = { 53.5, 66.3, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24251 },	-- Chief Plaguebringer Harris
+					["sourceQuest"] = 11307,	-- Field Test
+				}),
+				q(12182, {	-- To Venomspite!
+					["coord"] = { 52.0, 67.3, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24155 },	-- Tobias Sarkhoff
+					["sourceQuest"] = 12181,	-- Give it a Name
+					["isBreadcrumb"] = true,
+				}),
 				q(11291, {	-- To Westguard Keep!
 					["coord"] = { 60.4, 61.1, 117 },
 					["races"] = ALLIANCE_ONLY,
@@ -1332,14 +1685,23 @@ _.Zones =
 						11474,	-- Problems on the High Bluff
 					},
 				}),
-				q(11245, {	-- Towers of Certain Doom
+				q(11245, {	-- Towers of Certain Doom (A)
 					["coord"] = { 44.8, 31.4, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 24060 },	-- Westguard Sergeant
 					["sourceQuest"] = 11248,	-- Operation: Skornful Wrath
 				}),
-				q(11241, {	-- Trail of Fire
+				q(11259, {	-- Towers of Certain Doom (H)
+					["coord"] = { 44.7, 29.9, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24130 },	-- Winterhoof Brave
+					["sourceQuest"] = 11256,	-- Skorn Must Fall!
+				}),
+				q(11241, {	-- Trail of Fire
+					["coord"] = { 83.2, 43.1, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 23784 },	-- Apothecary Hanes
+					["sourceQuest"] = 11232,	-- Guide Our Sights
 					["g"] = {
 						i(35829),	-- Coldspike Longbow
 						i(35827),	-- Regal Sceptre
@@ -1361,7 +1723,7 @@ _.Zones =
 						i(37319),	-- Grips of the Windswept Plains
 					},
 				}),
-				q(11422, {	-- Trident of the Son -- aa
+				q(11422, {	-- Trident of the Son
 					["provider"] = { "n", 24544 },	-- Old Icefin
 					["coord"] = { 19.7, 22.2, 117 }
 				}),
@@ -1382,8 +1744,16 @@ _.Zones =
 						i(35872),	-- Iron-Studded Leggings
 					},
 				}),
-				q(11310, {	-- Warning: Some Assembly Required
+				q(11270, {	-- War is Hell
+					["coord"] = { 78.6, 31.2, 117 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 23780 },	-- High Executor Anselm
+				}),
+				q(11310, {	-- Warning: Some Assembly Required
+					["coord"] = { 53.6, 65.2, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24252 },	-- "Hacksaw" Jenny
+					["sourceQuest"] = 11309,	-- Parts for the Job
 					["g"] = {
 						i(35860),	-- Flexible Leather Footwraps
 						i(35859),	-- Fire-Purifying Tunic
@@ -1408,6 +1778,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 24807 },	-- Walt
 					["sourceQuest"] = 11475,	-- Tools to Get the Job Done
+				}),
+				q(11298, {	-- What's in That Brew?
+					["coord"] = { 26.4, 24.5, 117 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 24152 },	-- Apothecary Malthus
+					["sourceQuest"] = 11297,	-- Keeping Watch on the Interlopers
 				}),
 				q(11393, {	-- Where is Explorer Jaren?
 					["provider"] = { "n", 23891 },	-- Overseer Irena Stonemantle
@@ -1437,303 +1813,6 @@ _.Zones =
 					["coord"] = { 35.5, 80.6, 117 },
 					["sourceQuest"] = 11473,	-- A Traitor Among Us
 				}),
-				--[[
-				ach(1356,	{	-- I've Toured the Fjord [Horde]
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						crit(1, {	--Visitors from the Keep
-						}),
-						crit(2, {	--Assassinating Bjorn Halgurdsson
-						}),
-						crit(3, {	--A New Plague
-						}),
-						crit(4, {	--Doom Approaches
-							["sourceQuest"] = 11572,	-- Return to Atuik
-						}),
-						crit(5, {	--The End of Jonah Sterling
-							["sourceQuest"] = 11471,	-- The Jig is Up
-						}),
-						crit(6, {	--The Debt Collector
-							["sourceQuest"] = 11467,	-- Dead Man's Debt
-						}),
-						crit(7, {	--Volatile Viscera
-						}),
-						crit(8, {	--Sisters of the Fjord
-							["sourceQuest"] = 11428,	-- Keeper Witherleaf
-						}),
-						crit(9, {	--The Iron Dwarves
-							["sourceQuests"] = {
-								11367,	-- Demolishing Megalith
-								11352,	-- The Rune of Command
-							},
-						}),
-						crit(10, {	--The Conqueror of Skorn
-						}),
-						crit(11, {	--The Scourge and the Vrykul
-						}),
-						crit(12, {	--Alpha Worg
-							["sourceQuest"] = 11324,	-- Alpha Worg
-						}),
-					},
-				}),
-				q(11272, {	-- A Score to Settle
-					["provider"] = { "n", 23780 },	-- High Executor Anselm
-					["races"] = HORDE_ONLY,
-				}),
-				q(11305, {	-- A Tailor-Made Formula
-					["provider"] = { "n", 24251 },	-- Chief Plaguebringer Harris
-					["races"] = HORDE_ONLY,
-				}),
-				q(12481, {	-- Adding Injury to Insult
-					["provider"] = { "n", 24458 },	-- Lydell
-					["races"] = HORDE_ONLY,
-				}),
-				q(12482, {	-- Against Nifflevar
-					["provider"] = { "n", 27922 },	-- Ranger Captain Areiel
-					["races"] = HORDE_ONLY,
-				}),
-				q(11324, {	-- Alpha Worg
-					["provider"] = { "n", 24261 },	-- Ulfang
-					["races"] = HORDE_ONLY,
-				}),
-				q(11230, {	-- Ambushed!
-					["provider"] = { "n", 24037 },	-- Captain Harker
-					["races"] = HORDE_ONLY,
-				}),
-				q(11397, {	-- And You Thought Murlocs Smelled Bad!
-					["provider"] = { "n", 24359 },	-- Apothecary Anastasia
-					["races"] = HORDE_ONLY,
-				}),
-				q(11306, {	-- Apply Heat and Stir
-					["provider"] = { "n", 24251 },	-- Chief Plaguebringer Harris
-					["races"] = HORDE_ONLY,
-				}),
-				q(11283, {	-- Baleheim Bodycount
-					["provider"] = { "n", 24027 },	-- Sergeant Gorth
-					["races"] = HORDE_ONLY,
-				}),
-				q(11285, {	-- Baleheim Must Burn!
-					["provider"] = { "n", 24027 },	-- Sergeant Gorth
-					["races"] = HORDE_ONLY,
-				}),
-				q(11301, {	-- Brains! Brains! Brains!
-					["provider"] = { "n", 24218 },	-- Apothecary Grick
-					["races"] = HORDE_ONLY,
-				}),
-				q(11415, {	-- Brother Betrayers
-					["provider"] = { "n", 24261 },	-- Ulfang
-					["races"] = HORDE_ONLY,
-				}),
-				q(11258, {	-- Burn Skorn, Burn!
-					["provider"] = { "n", 24130 },	-- Winterhoof Brave
-					["races"] = HORDE_ONLY,
-				}),
-				q(13269, {	-- Cloth Scavenging
-					["provider"] = { "n", 26964 },	-- Alexandra McQueen
-					["races"] = HORDE_ONLY,
-				}),
-				q(11263, {	-- Dealing With Gjalerbron
-					["provider"] = { "n", 24129 },	-- Chieftain Ashtotem
-					["races"] = HORDE_ONLY,
-				}),
-				q(13206, {	-- Disarmament
-					["provider"] = { "n", 24137 },	-- Dark Ranger Marrah
-					["races"] = HORDE_ONLY,
-				}),
-				q(11280, {	-- Draconis Gastritis
-					["provider"] = { "n", 24157 },	-- Plaguebringer Tillinghast
-					["races"] = HORDE_ONLY,
-				}),
-				q(11417, {	-- Eyes of the Eagle
-					["provider"] = { "n", 24261 },	-- Ulfang
-					["races"] = HORDE_ONLY,
-				}),
-				q(11307, {	-- Field Test
-					["provider"] = { "n", 24251 },	-- Chief Plaguebringer Harris
-					["races"] = HORDE_ONLY,
-				}),
-				q(11287, {	-- Find Sage Mistwalker
-					["provider"] = { "n", 24135 },	-- Greatmother Ankha
-					["races"] = HORDE_ONLY,
-				}),
-				q(29609, {	-- Friends in Dalaran
-					["provider"] = { "n", 0 },	-- Unable to pull from Wowhead.
-					["races"] = HORDE_ONLY,
-				}),
-				q(12181, {	-- Give it a Name
-					["provider"] = { "n", 24251 },	-- Chief Plaguebringer Harris
-					["races"] = HORDE_ONLY,
-				}),
-				q(11266, {	-- Gjalerbron Attack Plans
-					["provider"] = { "n", 0 },	-- Unable to pull from Wowhead.
-					["races"] = HORDE_ONLY,
-				}),
-				q(11279, {	-- Green Eggs and Whelps
-					["provider"] = { "n", 24157 },	-- Plaguebringer Tillinghast
-					["races"] = HORDE_ONLY,
-				}),
-				q(11257, {	-- Gruesome, But Necessary
-					["provider"] = { "n", 24130 },	-- Winterhoof Brave
-					["races"] = HORDE_ONLY,
-				}),
-				q(11232, {	-- Guide Our Sights
-					["provider"] = { "n", 24037 },	-- Captain Harker
-					["races"] = HORDE_ONLY,
-				}),
-				q(12566, {	-- Help for Camp Winterhoof
-					["provider"] = { "n", 28314 },	-- Longrunner Nanik
-					["races"] = HORDE_ONLY,
-				}),
-				q(11323, {	-- In Worg's Clothing
-					["provider"] = { "n", 24186 },	-- Sage Mistwalker
-					["races"] = HORDE_ONLY,
-				}),
-				q(11262, {	-- Ingvar Must Die!
-					["provider"] = { "n", 24137 },	-- Dark Ranger Marrah
-					["races"] = HORDE_ONLY,
-				}),
-				q(11398, {	-- It's a Scourge Device
-					["provider"] = { "n", 0 },	-- Unable to pull from Wowhead.
-					["races"] = HORDE_ONLY,
-				}),
-				q(11297, {	-- Keeping Watch on the Interlopers
-					["provider"] = { "n", 24234 },	-- Junat the Wanderer
-					["races"] = HORDE_ONLY,
-				}),
-				q(11233, {	-- Landing the Killing Blow
-					["provider"] = { "n", 23778 },	-- Dark Ranger Lyana
-					["races"] = HORDE_ONLY,
-				}),
-				q(11227, {	-- Let Them Eat Crow
-					["provider"] = { "n", 23938 },	-- Pontius
-					["races"] = HORDE_ONLY,
-				}),
-				q(11275, {	-- Making the Horn
-					["provider"] = { "n", 24123 },	-- Nokoma Snowseer
-					["races"] = HORDE_ONLY,
-				}),
-				q(11264, {	-- Necro Overlord Mezhen
-					["provider"] = { "n", 24129 },	-- Chieftain Ashtotem
-					["races"] = HORDE_ONLY,
-				}),
-				q(11304, {	-- New Agamand
-					["provider"] = { "n", 24126 },	-- Apothecary Lysander
-					["races"] = HORDE_ONLY,
-				}),
-				q(11265, {	-- Of Keys and Cages
-					["provider"] = { "n", 24135 },	-- Greatmother Ankha
-					["races"] = HORDE_ONLY,
-				}),
-				q(11309, {	-- Parts for the Job
-					["provider"] = { "n", 24252 },	-- "Hacksaw" Jenny
-					["races"] = HORDE_ONLY,
-				}),
-				q(11234, {	-- Report to Anselm
-					["provider"] = { "n", 23778 },	-- Dark Ranger Lyana
-					["races"] = HORDE_ONLY,
-				}),
-				q(11221, {	-- Reports from the Field
-					["provider"] = { "n", 23780 },	-- High Executor Anselm
-					["races"] = HORDE_ONLY,
-				}),
-				q(11296, {	-- Rivenwood Captives
-					["provider"] = { "n", 24209 },	-- Longrunner Skycloud
-					["races"] = HORDE_ONLY,
-				}),
-				q(11424, {	-- Shield Hill
-					["provider"] = { "n", 24252 },	-- "Hacksaw" Jenny
-					["races"] = HORDE_ONLY,
-				}),
-				q(11256, {	-- Skorn Must Fall!
-					["provider"] = { "n", 24129 },	-- Chieftain Ashtotem
-					["races"] = HORDE_ONLY,
-				}),
-				q(11433, {	-- Sleeping Giants
-					["provider"] = { "n", 24127 },	-- Ahota Whitefrost
-					["races"] = HORDE_ONLY,
-				}),
-				q(11253, {	-- Sniff Out the Enemy
-					["provider"] = { "n", 23938 },	-- Pontius
-					["races"] = HORDE_ONLY,
-				}),
-				q(11168, {	-- Spiking the Mix
-					["provider"] = { "n", 24126 },	-- Apothecary Lysander
-					["races"] = HORDE_ONLY,
-				}),
-				q(11260, {	-- Stop the Ascension!
-					["provider"] = { "n", 0 },	-- Unable to pull from Wowhead.
-					["races"] = HORDE_ONLY,
-				}),
-				q(11311, {	-- Suppressing the Elements
-					["provider"] = { "n", 24256 },	-- Wind Tamer Kagan
-					["races"] = HORDE_ONLY,
-				}),
-				q(11303, {	-- The Ambush
-					["provider"] = { "n", 24027 },	-- Sergeant Gorth
-					["races"] = HORDE_ONLY,
-				}),
-				q(11317, {	-- The Cleansing
-					["provider"] = { "n", 24186 },	-- Sage Mistwalker
-					["races"] = HORDE_ONLY,
-				}),
-				q(11254, {	-- The Dragonskin Map
-					["provider"] = { "n", 0 },	-- Unable to pull from Wowhead.
-					["races"] = HORDE_ONLY,
-				}),
-				q(11423, {	-- The Enemy's Legacy
-					["provider"] = { "n", 24548 },	-- Scribe Seguine
-					["races"] = HORDE_ONLY,
-				}),
-				q(12791, {	-- The Magical Kingdom of Dalaran
-					["provider"] = { "n", 29159 },	-- Magister Varenthas
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
-				q(11167, {	-- The New Plague
-					["provider"] = { "n", 24126 },	-- Apothecary Lysander
-					["races"] = HORDE_ONLY,
-				}),
-				q(11295, {	-- The Offensive Begins
-					["provider"] = { "n", 23780 },	-- High Executor Anselm
-					["races"] = HORDE_ONLY,
-				}),
-				q(11453, {	-- The Slumbering King
-					["provider"] = { "n", 0 },	-- Unable to pull from Wowhead.
-					["races"] = HORDE_ONLY,
-				}),
-				q(11229, {	-- The Windrunner Fleet
-					["provider"] = { "n", 23780 },	-- High Executor Anselm
-					["races"] = HORDE_ONLY,
-				}),
-				q(11308, {	-- Time for Cleanup
-					["provider"] = { "n", 24251 },	-- Chief Plaguebringer Harris
-					["races"] = HORDE_ONLY,
-				}),
-				q(12182, {	-- To Venomspite!
-					["provider"] = { "n", 24155 },	-- Tobias Sarkhoff
-					["races"] = HORDE_ONLY,
-				}),
-				q(11259, {	-- Towers of Certain Doom
-					["provider"] = { "n", 24130 },	-- Winterhoof Brave
-					["races"] = HORDE_ONLY,
-				}),
-				q(11241, {	-- Trail of Fire
-					["provider"] = { "n", 23784 },	-- Apothecary Hanes
-					["races"] = HORDE_ONLY,
-				}),
-				q(11270, {	-- War is Hell
-					["provider"] = { "n", 23780 },	-- High Executor Anselm
-					["races"] = HORDE_ONLY,
-				}),
-				q(11310, {	-- Warning: Some Assembly Required
-					["provider"] = { "n", 24252 },	-- "Hacksaw" Jenny
-					["races"] = HORDE_ONLY,
-				}),
-				q(11298, {	-- What's in That Brew?
-					["provider"] = { "n", 24152 },	-- Apothecary Malthus
-					["races"] = HORDE_ONLY,
-				}),
-				]]--
 			}),
 		}),
 	}),

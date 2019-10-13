@@ -761,6 +761,10 @@ _.Zones =
 						i(44661),	-- Wyrmrest Necklace of Power
 					},
 				}),
+				q(12189, {	-- Imbeciles Abound! (Note: triggered when turning in "Give it a Name" in howling fjord)
+					["provider"] = { "n", 26505 },	-- Doctor Sintar Malefious
+					["races"] = HORDE_ONLY,
+				}),
 				q(12789, {	-- Into the Breach!
 					["provider"] = { "n", 28228 },	-- Crusader Valus
 					["sourceQuest"] = 12545,	-- The Cleansing of Jintha'kalar
@@ -1024,8 +1028,12 @@ _.Zones =
 					},
 				}),
 				q(12188, {	-- The Forsaken Blight and You: How Not to Die [Horde]
-					["provider"] = { "n", 27172 },	-- Chief Plaguebringer Middleton
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 27172 },	-- Chief Plaguebringer Middleton
+					["sourceQuests"] = {
+						12189,	-- Imbeciles Abound!
+						12182,	-- To Venomspite!
+					},
 					["g"] = {
 						i(37963),	-- Wastewind Handwraps
 						i(38005),	-- Spiritfury Bands
@@ -1309,9 +1317,6 @@ _.Zones =
 				-- }),
 				-- q(12448, {	-- Heated Battle [Horde]
 				-- 	["provider"] = { "n", 27763 },	-- Vargastrasz
-				-- }),
-				-- q(12189, {	-- Imbeciles Abound! [Horde]
-				-- 	["provider"] = { "n", 26505 },	-- Doctor Sintar Malefious
 				-- }),
 				-- q(12102, {	-- In Search of the Ruby Lilac [Horde]
 				-- 	["provider"] = { "n", 26505 },	-- Doctor Sintar Malefious

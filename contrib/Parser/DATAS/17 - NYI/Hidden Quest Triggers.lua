@@ -733,6 +733,7 @@ _.NeverImplemented =
 		q(47934),	-- Tracking Quest - kill Dregmar Runebrand
 		q(47937),	-- Tracking Quest - kill Iceshatter
 		q(47935),	-- Tracking Quest - kill Icefist
+		q(47921),	-- Tracking Quest. Triggered after using the cloth ensemble
 
 		-------------------
 		--      BFA      --
