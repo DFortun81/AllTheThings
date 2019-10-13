@@ -152,6 +152,7 @@ _.Zones =
 					["races"] = { 10 },	-- Blood Elf
 					["description"] = "This quest is automatically offered to Blood Elves upon reaching Level 20.",
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 				}),
 				q(14081, {	-- Learn to Ride in the Eversong Woods
 					["u"] = 40,

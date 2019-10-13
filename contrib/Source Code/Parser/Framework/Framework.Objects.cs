@@ -1215,6 +1215,7 @@ namespace ATT
                     case "equippable":
                     case "repeatable":
                     case "isBreadcrumb":
+                    case "DisablePartySync":
                     case "isLimited":
                     case "isDaily":
                     case "isWeekly":

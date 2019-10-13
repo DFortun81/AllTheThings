@@ -741,6 +741,7 @@ _.Zones =
 				q(32675, {	-- I Believe You Can Fly
 					["description"] = "This quest is automatically offered to Alliance players upon reaching level 60.",
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
 				}),
@@ -787,6 +788,7 @@ _.Zones =
 					["description"] = "This quest is available to Pandaren upon reaching level 20.",
 					["races"] = { 25 },	-- Pandaren (A)
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["lvl"] = 20,
 				}),
 				q(32470, {	-- Light Camera Action

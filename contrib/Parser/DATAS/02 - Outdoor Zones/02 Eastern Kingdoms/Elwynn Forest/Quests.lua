@@ -165,6 +165,7 @@ _.Zones =
 					["description"] = "This quest is available to Humans upon reaching level 20.",
 					["races"] = { 1 },	-- Human
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 				}),
 				q(14079, {	-- Learn to Ride in Elwynn Forest
 					["u"] = 40,

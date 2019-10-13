@@ -86,6 +86,7 @@ _.Zones =
 				q(32664, {	-- Learn to Ride
 					["description"] = "This quest is available to Night Elves upon reaching level 20.",
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["races"] = { 4 },	-- Night Elf
 					["lvl"] = 20,
 				}),

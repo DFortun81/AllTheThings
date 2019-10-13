@@ -53,6 +53,7 @@ _.Zones =
 				q(32661, {	-- Learn To Ride
 					["description"] = "This quest is available to Draenei upon reaching level 20.",
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["races"] = { 11 },	-- Draenei
 					["lvl"] = 20,
 				}),

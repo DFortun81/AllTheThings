@@ -223,11 +223,13 @@ _.Zones =
 					["races"] = { 7 },
 					["description"] = "This quest is available to Gnomes upon reaching level 20.",
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 				}),
 				q(32662, {	-- Learn To Ride
 					["races"] = { 3 },
 					["description"] = "This quest is available to Dwarves upon reaching level 20.",
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 				}),
 				q(14084, {	-- Learn to Ride in Dun Morogh
 					["u"] = 40,

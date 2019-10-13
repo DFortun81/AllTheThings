@@ -932,6 +932,7 @@ _.Zones =
 				q(32674, {	-- I Believe You Can Fly
 					["description"] = "This quest is automatically offered to Horde players upon reaching level 60.",
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 60,
 				}),
@@ -1091,18 +1092,21 @@ _.Zones =
 					["description"] = "This quest is available to Goblins upon reaching level 20.",
 					["races"] = { 9 },	-- Goblin
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["lvl"] = 20,
 				}),
 				q(32669, {	-- Learn To Ride
 					["description"] = "This quest is available to Orcs upon reaching level 20.",
 					["races"] = { 2 },	-- Orc
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["lvl"] = 20,
 				}),
 				q(32667,{	-- Learn To Ride
 					["description"] = "This quest is available to Pandaren upon reaching level 20.",
 					["races"] = { 26 },	-- Pandaren
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["lvl"] = 20,
 				}),
 				q(32471, {	-- Light Camera Action
