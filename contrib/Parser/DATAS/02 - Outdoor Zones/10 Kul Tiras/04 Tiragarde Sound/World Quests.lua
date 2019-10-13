@@ -1773,6 +1773,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
+					q(51318, {	-- Go For the Boat
+						["isWorldQuest"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
+					}),
 					q(51317, {	-- Grounding the Grimestone
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
