@@ -1122,11 +1122,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52200, {	-- Turtle Tactics
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(50778, {	-- Twisted Intentions
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1891,6 +1886,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(52200, {	-- Turtle Tactics
+						["isWorldQuest"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(52209, {	-- Turtle Tactics
 						["lvl"] = 120,
