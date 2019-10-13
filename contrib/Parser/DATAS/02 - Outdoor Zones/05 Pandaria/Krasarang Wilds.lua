@@ -27,6 +27,7 @@ _.Zones =
 						["g"] = {
 							o(214439, {		-- Barrel of Banana Infused Rum
 								["questID"] = 31411,	-- Barrel of Banana Infused Rum Quest Tracker
+								["coord"] = { 54.0, 88.0, 418 },
 								["g"] = {
 									i(87266),	-- Recipe: Banana Infused Rum
 								},
