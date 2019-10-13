@@ -1248,11 +1248,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(50997, {	-- Work Order: Tidespray Linen
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(52402, {	-- Work Order: Viridium
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -2029,13 +2024,17 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = 182,	-- Herbalism
 					}),
+					q(50997, {	-- Work Order: Tidespray Linen
+						["isWorldQuest"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
+					}),
 					q(52352, {	-- Zeritarj
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
 				}),
-				{
-					["itemID"] = 165868,	-- Storm's Wake Equipment Cache
+				i(165868, {	-- Storm's Wake Equipment Cache
 					["sym"] = {
 						-- Include the cloak.
 						{"select", "itemID", 166668},	-- Battalion Veteran's Greatcloak
@@ -2053,7 +2052,7 @@ _.Zones =
 						{"merge"},	-- Merge the finalized items back into the processing queue.
 						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 					},
-				},
+				}),
 				i(158092),	-- Colscale Cudgel
 				i(159819),	-- Coldscale Lantern
 				i(158098),	-- Coralshell Halberd

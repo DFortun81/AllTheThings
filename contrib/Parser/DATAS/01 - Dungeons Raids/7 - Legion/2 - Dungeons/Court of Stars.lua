@@ -10,19 +10,19 @@ _.Instances = { tier(7, {	-- Legion
 			n(-34, {	-- World Quests
 				q(42769, {	-- Court of Stars: Bring Me the Eyes
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(42781, {	-- Court of Stars: Disarmning the Watch
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(42783, {	-- Court of Stars: They Bloom at Night
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(42764, {	-- Court of Stars: Wraith in the Machine
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 			}),
 			d(2, {	-- Heroic
