@@ -7,6 +7,10 @@ _.Zones =
 		m(418, {	-- Krasarang Wilds
 			["achievementID"] = 6975,
 			["description"] = "|cff66ccffThe Krasarang Wilds along Pandaria's southern coast conceal many ancient secrets of a lost dynasty that have drawn the attention of prophecy-seekers among the Alliance and Horde. The Wilds are also home to the vicious, domineering mogu, and a more insidious danger still: the Sha of Despair is believed to have escaped from its bindings in the Temple of the Red Crane, and stifling gloom has begun to blanket the land in its path.|r",
+			["maps"] = {
+				419,	-- Ruins of Ogudei
+				420,	-- Ruins of Ogudei #2
+			},
 			["lvl"] = 81,
 			["g"] = {
 			--	if you add coordinates to any part of this file, make sure you verify them manually!  the coordinates listed on wowhead (as of september 2019) are incorrect and probably based on an older version of the krasarang map.  if you use those coordinates instead of manually confirming them, they'll place you outside of /tar range.
