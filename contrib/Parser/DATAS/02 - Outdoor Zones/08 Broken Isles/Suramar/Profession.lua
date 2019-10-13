@@ -6,6 +6,40 @@ _.Zones =
 	m(619, { 	-- The Broken Isles
 		m(680, {	-- Suramar
 			n(-38, { 	-- Profession
+				prof(794, {	-- Archaeology
+					q(41173, {	-- A Beacon of Hope
+						["isWeekly"] = true,
+						["g"] = {
+							i(131717),	-- Starlight Beacon
+						},
+					}),
+					q(41166, {	-- Dark Secrets
+						["isWeekly"] = true,
+					}),
+					q(41172, {	-- Echoes of My Ancestors
+						["isWeekly"] = true,
+					}),
+					q(41175, {	-- Fit for an Elven Queen
+						["isWeekly"] = true,
+					}),
+					q(41181, {	-- Narrowing Down
+						["isWeekly"] = true,
+					}),
+					q(41176, {	-- Sifting Through the Rubble
+						["isWeekly"] = true,
+					}),
+					q(41182, {	-- Uncovering the Orb of Sciallax
+						["isWeekly"] = true,
+						["g"] = {
+							i(131731),	-- Glinting Shard of Sciallax
+							i(134076),	-- Crystallized Shard of Sciallax
+							i(134077),	-- Glowing Shard of Sciallax
+							i(134078),	-- Dark Shard of Sciallax
+							i(134079),	-- Ardent Shard of Sciallax
+							i(134081),	-- Adamant Shard of Sciallax
+						},
+					}),
+				}),
 				prof(164, {	-- Blacksmithing
 					q(38525, {	-- Part of the Team
 						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
@@ -241,8 +275,26 @@ _.Zones =
 							i(140644),	-- Recipe: Gravenscale Armbands (Rank 1)
 						},
 					}),
+					q(40213),	-- Hounds Abound
+				}),
+				prof(186, {	-- Mining
+					q(38799),	-- Darkheart Thicket: Nal'ryssa's Sisters
+					q(38804),	-- Lyrelle
+					q(38801),	-- Lyrelle's Right Arm
+					q(38805),	-- Ondri
+					q(38802),	-- Ondri's Still-Beating Heart
+					q(38794),	-- Rethu's Sacrifice
+					q(38803),	-- Rin'thissa
+					q(38800),	-- Rin'thissa's Eye
 				}),
 				prof(393, {	-- Skinning
+					q(40158),	-- Darkheart Thicket: Demons Be Different
+					q(40154),	-- Eye of Azshara: The Scales of Serpentrix
+					q(40139),	-- Halls of Valor: The Hide of Fenryr
+					q(40151),	-- Immaculate Stormscale
+					q(40137),	-- Leather for Ske'rit
+					q(40153),	-- Return to Karazhan: Scales of Legend
+					q(40152),	-- Scales for Ske'rit
 					q(40140, {	-- Ske'rit's Leather Handbook
 						["requireSkill"] = 393,	-- Skinning
 						["sourceQuests"] = {
@@ -294,6 +346,8 @@ _.Zones =
 							i(127028),	-- Pattern: Imbued Silkwave Robes (Rank 1)
 						},
 					}),
+					q(38969),	-- Master of Silkweave
+					q(38968),	-- Proof of Loyalty
 					q(44741, {	-- Return to Karazhan: The Big Bag Theory
 						["requireSkill"] = 197,	-- Tailoring
 						["coord"] = { 40.4, 69.4 },
@@ -302,6 +356,7 @@ _.Zones =
 							i(142076),	-- Pattern: Imbued Silkweave Bag (Rank 1)
 						},
 					}),
+					q(38970),	-- The Queen's Grace Loom
 				}),
 			}),
 		}),

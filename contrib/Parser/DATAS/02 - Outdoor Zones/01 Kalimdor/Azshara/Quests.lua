@@ -53,6 +53,13 @@ _.Zones =
 				}),
 				q(46177, {	-- A Portal Away -- possibly legacy now that mage tower is unavailable?
 					["provider"] = { "n", 116048 },	-- Joanna
+					["classes"] = {
+						6,	-- Death Knight (Frost)
+						12,	-- Demon Hunter (Havoc)
+						3,	-- Hunter (Survival)
+						4,	-- Rogue (Subtlety)
+						1,	-- Warrior (Arms)
+					},
 					["coord"] = { 25.2, 38.0, 76 },
 					["lvl"] = 110,
 				}),

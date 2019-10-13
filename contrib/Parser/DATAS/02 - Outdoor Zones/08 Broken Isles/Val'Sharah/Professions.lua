@@ -12,6 +12,17 @@ _.Zones =
 						["sourceQuests"] = { 44112 },	-- Trading for Dreams
 					}),
 				}),
+				prof(794, {	-- Archaeology
+					q(41178, {	-- Explosive Results
+						["isWeekly"] = true,
+					}),
+					q(41168, {	-- The Purple Hills of Mac'Aree
+						["isWeekly"] = true,
+					}),
+					q(41179, {	-- What Once Was Lost
+						["isWeekly"] = true,
+					}),
+				}),
 				prof(164, {	-- Blacksmithing
 					q(39680, {	-- Between the Hammer...
 						["sourceQuests"] = { 39702 },	-- Legend of Black Rook Hold

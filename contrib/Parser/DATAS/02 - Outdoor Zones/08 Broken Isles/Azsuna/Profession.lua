@@ -13,6 +13,26 @@ _.Zones =
 						}),
 					}),
 				}),
+				prof(794, {	-- Archaeology
+					q(41162, {	-- And Into the Fel Fire
+						["isWeekly"] = true,
+					}),
+					q(41163, {	-- The Apocalypse Bringer
+						["isWeekly"] = true,
+						["g"] = {
+							i(136922),	-- Wyrmy Tunkins (PET!)
+						},
+					}),
+					q(41185, {	-- The Keys to Success
+						["isWeekly"] = true,
+						["g"] = {
+							i(131744),	-- Key to Nar'thalas Academy
+						},
+					}),
+					q(41184, {	-- Tried and True
+						["isWeekly"] = true,
+					}),
+				}),
 				prof(164, {	-- Blacksmithing
 					q(41633, {	-- Work Order: Leystone Greaves (WQ)
 						["lvl"] = 110,	-- WQ is 110+ only

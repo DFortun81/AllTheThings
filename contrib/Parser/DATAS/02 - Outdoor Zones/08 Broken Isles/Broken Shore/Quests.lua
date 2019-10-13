@@ -199,29 +199,70 @@ _.Zones =
 					},
 				}),
 				q(47032, {	-- Legion Threat: Azshara
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["classes"] = { 1 },	-- Warrior (Arms)
 				}),
 				q(47030, {	-- Legion Threat: Dalaran Infiltration
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["classes"] = {
+						6,	-- Death Knight (Blood)
+						12,	-- Demon Hunter (Vengeance)
+						11,	-- Druid (Guardian)
+						10,	-- Monk (Brewmaster)
+						2,	-- Paladin (Protection)
+						1,	-- Warrior (Protection)
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47031, {	-- Legion Threat: Highmountain
+					["isBreadcrumb"] = true,
+					["altQuests"] = { 47035 },	-- Legion Threat: The Missing Mage
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["classes"] = {
+						3,	-- Hunter (Beast Mastery)
+						10,	-- Monk (Windwalker)
+						5,	-- Priest (Discipline)
+						9,	-- Warlock (Destruction)
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47033, {	-- Legion Threat: Suramar
+					["isBreadcrumb"] = true,
+					["altQuests"] = { 47034 },	-- Legion Threat: The Necromancer
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["classes"] = { 8 },	-- Mage (Arcane)
 				}),
 				q(47035, {	-- Legion Threat: The Missing Mage
+					["isBreadcrumb"] = true,
+					["altQuests"] = { 47031 },	-- Legion Threat: Highmountain
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["classes"] = {
+						3,	-- Hunter (Beast Mastery)
+						10,	-- Monk (Windwalker)
+						5,	-- Priest (Discipline)
+						9,	-- Warlock (Destruction)
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47034, {	-- Legion Threat: The Necromancer
+					["isBreadcrumb"] = true,
+					["altQuests"] = { 47033 },	-- Legion Threat: Suramar
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["classes"] = { 8 },	-- Mage (Arcane)
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47027, {	-- Legion Threat: Val'sharah
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["classes"] = {
+						11,	-- Druid (Restoration)
+						10,	-- Monk (Mistweaver)
+						2,	-- Paladin (Holy)
+						5,	-- Priest (Holy)
+						7,	-- Shaman (Restoration)
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(46827, {	-- Meld Into the Shadows
@@ -587,7 +628,11 @@ _.Zones =
 				q(41993),	-- Salvation From On High
 				q(45344),	-- Sampling the Source
 				q(45187),	-- Secrets in the Underbelly
-				q(46235),	-- Secured Surroundings
+--]]
+				q(46235, {	-- Secured Surroundings
+					["classes"] = { 3 },	-- Hunter
+				}),
+--[[
 				q(47067),	-- Seeking Lost Knowledge
 				q(46248),	-- Self-Fulfilling Prophecy
 				q(47042, {	-- Shadow: The Twisted Twin

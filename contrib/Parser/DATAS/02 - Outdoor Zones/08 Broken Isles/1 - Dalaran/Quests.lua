@@ -181,9 +181,6 @@ _.Zones =
 				q(40930,  {	-- Apocalypse
 					["classes"] = { 6 },	-- Death Knight
 				}),
-				q(46177,  {	-- A Portal Away
-					["provider"] = { "n", 116048 },
-				}),
 				q(39746, {	-- A Ring Unbroken
 					["classes"] = { 7 },
 					["races"] = HORDE_ONLY,
@@ -267,9 +264,6 @@ _.Zones =
 					["classes"] = { 8 },
 					["provider"] = { "n", 102700 },	-- Meryl Felstorm
 				}),
-				q(40157,  {	-- An Unseemly Task
-					["provider"] = { "n", 93541 },	-- Kondal Huntsworn
-				}),
 				q(38710,  {	-- An Urgent Gathering
 					["classes"] = { 2 },
 					["provider"] = { "n", 92909 },	-- Lord Maxwell Tyrosus
@@ -294,6 +288,7 @@ _.Zones =
 				}),
 				q(42423, {	-- Archmage Vargoth's Retreat
 					["sourceQuests"] = { 42416 },	-- The Council is in Session
+					["classes"] = { 8 },	-- Mage
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 90431 },	-- Archmage Ansirem Runeweaver
 				}),
@@ -403,6 +398,14 @@ _.Zones =
 				}),
 				q(46327, {	-- Bargaining with Shadows
 					["provider"] = { "n", 90418 },	-- Archmage Modera
+					["classes"] = {
+						11,	-- Druid (Feral)
+						6,	-- Death Knight (Unholy)
+						8,	-- Mage (Fire)
+						4,	-- Rogue (Outlaw)
+						7,	-- Shaman (Elemental)
+						1,	-- Warrior (Fury)
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47018, {	-- Beast Mastery: Rumblings Near Feltotem
@@ -569,6 +572,14 @@ _.Zones =
 				}),
 				q(45843, {	-- Dark Omens
 					["provider"] = { "n", 116880 },	-- Kor'vas Bloodthorn
+					["classes"] = {	-- tank classes
+						6,	-- Death Knight
+						12,	-- Demon Hunter
+						11,	-- Druid
+						10,	-- Monk
+						2,	-- Paladin
+						1,	-- Warrior
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42125,  {	-- Dark Whispers
@@ -597,9 +608,9 @@ _.Zones =
 				}),
 			--	q(47079)	-- Delivering Lost Knowledge -- removed?
 				q(47049,  {	-- Demonology: Fate of the Tideskorn
-					["classes"] = { 9 },
+					["classes"] = { 9 },	-- Warlock
 					["providers"] = {
-						{ "n", 90417 },	-- Archmage Khadgar
+						{ "n", 90417 },		-- Archmage Khadgar
 						{ "n", 115464 },	-- Archmage Khadgar
 					},
 				}),
@@ -654,9 +665,9 @@ _.Zones =
 					},
 				}),
 				q(47050,  {	-- Enhancement: Fate of the Tideskorn
-					["classes"] = { 7 },
+					["classes"] = { 7 },	-- Shaman
 					["providers"] = {
-						{ "n", 90417 },	-- Archmage Khadgar
+						{ "n", 90417 },		-- Archmage Khadgar
 						{ "n", 115464 },	-- Archmage Khadgar
 					},
 				}),
@@ -679,25 +690,27 @@ _.Zones =
 				}),
 				q(43473,  {	-- Experimental Potion: Test Subjects Needed
 					["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
+					["isDaily"] = true,
 				}),
 				q(43474,  {	-- Experimental Potion: Test Subjects Needed
 					["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
-				--	["u"] = 40,	-- No Server response, quest is removed
+					["isDaily"] = true,
 				}),
 				q(43475,  {	-- Experimental Potion: Test Subjects Needed
 					["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
-				--	["u"] = 40,	-- No Server response, quest is removed
+					["isDaily"] = true,
 				}),
 				q(43477,  {	-- Experimental Potion: Test Subjects Needed
 					["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
+					["isDaily"] = true,
 				}),
 				q(43476,  {	-- Experimental Potion: Test Subjects Needed
 					["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
-				--	["u"] = 40,	-- No Server response, quest is removed
+					["isDaily"] = true,
 				}),
 				q(43478,  {	-- Experimental Potion: Test Subjects Needed
 					["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
-				--	["u"] = 40,	-- No Server response, quest is removed
+					["isDaily"] = true,
 				}),
 			--	q(44271)	-- Eye of Azshara -- mission board
 			--	q(44270)	-- Eye of Azshara -- mission board
@@ -1268,7 +1281,7 @@ _.Zones =
 					},
 				}),
 				q(47052,  {	-- Retribution: Fate of the Tideskorn
-					["classes"] = { 2 },
+					["classes"] = { 2 },	-- Paladin
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 				}),
 				q(46290,  {	-- Return of the Archmage
@@ -1805,7 +1818,7 @@ _.Zones =
 					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 				}),
 				q(43535,  {	-- Translation: Danger!
-					["classes"] = { 1, 2, 5 },
+					["classes"] = { 2 },	-- Paladin
 					["provider"] = { "n", 110571 },	-- Delas Moonfang
 				}),
 				q(39861,  {	-- Tying Up Loose Ends

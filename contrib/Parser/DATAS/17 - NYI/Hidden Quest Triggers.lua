@@ -603,6 +603,7 @@ _.NeverImplemented =
 		q(46775),	-- Campaign Cooldown - triggers during the legionfall campaign
 		q(47133),	-- Rare Mob Daily Bonus. Triggered after killing Doombringer Zar'thoz. Possible killID?
 		q(48974),	-- Paragon of the Army of the Light — looks like this is an unused version and 48977 is the one that pops in-game
+		q(44455),	-- Downfall tracking — in Suramar, possibly tied to a Demon Hunter artifact?
 		
 	-- World Boss
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
