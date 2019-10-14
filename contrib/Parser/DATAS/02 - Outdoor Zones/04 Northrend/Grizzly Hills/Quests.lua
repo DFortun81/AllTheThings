@@ -7,6 +7,7 @@ _.Zones =
 		m(116, {	-- Grizzly Hills
 			n(-17, {	-- Quests
 				q(12138, {	-- ... Or Maybe We Don't (A)
+					["coord"] = { 77.0, 48.6, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26883 },	-- Raegar Breakbrow
 					["sourceQuest"] = 12131,	-- We Have the Power
@@ -22,6 +23,7 @@ _.Zones =
 					["provider"] = { "n", 26484 },	-- Hugh Glass
 				}),
 				q(12220, {	-- A Dark Influence
+					["coord"] = { 31.1, 59.4, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27295 },	-- Hierophant Thayreen
 					["sourceQuest"] = 12310,	-- A Swift Response
@@ -39,11 +41,13 @@ _.Zones =
 					},
 				}),
 				q(12160, {	-- A Name from the Past
+					["coord"] = { 55.1, 23.3, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26932 },	-- Petrov
 					["sourceQuest"] = 12159,	-- Souls at Unrest
 				}),
 				q(12246, {	-- A Possible Link
+					["coord"] = { 31.1, 59.4, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27295 },	-- Hierophant Thayreen
 					["sourceQuests"] = {
@@ -84,11 +88,13 @@ _.Zones =
 					["sourceQuest"] = 12330,	-- Anatoly Will Talk
 				}),
 				q(12310, {	-- A Swift Response
+					["coord"] = { 31.8, 60.1, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26875 },	-- Lieutenant Dumont
-					["sourceQuest"] = 12308,
+					["sourceQuest"] = 12308,	-- Escape from Silverbrook
 				}),
 				q(12294, {	-- A Tentative Pact
+					["coord"] = { 34.7, 55.6, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27469 },	-- Ivan
 					["sourceQuest"] = 12293,	-- Close the Deal
@@ -113,6 +119,7 @@ _.Zones =
 					["sourceQuest"] = 12433,	-- Seeking Solvent
 				}),
 				q(12295, {	-- An Exercise in Diplomacy
+					["coord"] = { 31.8, 60.1, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26875 },	-- Lieutenant Dumont
 					["sourceQuest"] = 12294,	-- A Tentative Pact
@@ -153,9 +160,10 @@ _.Zones =
 					},
 				}),
 				q(12154, {	-- Blackout
+					["coord"] = { 77.0, 48.6, 116 },
 					["provider"] = { "n", 26883 },	-- Raegar Breakbrow
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = {12138},
+					["sourceQuest"] = 12138,	-- ... Or Maybe We Don't
 				}),
 				q(12170, {	-- Blackriver Brawl
 					["coord"] = { 26.4, 65.8, 116 },
@@ -168,7 +176,8 @@ _.Zones =
 						}),
 					},
 				}),
-				q(12444, {	-- Blackriver Skirmish
+				q(12444, {	-- Blackriver Skirmish -- aa
+					["coord"] = { 29.9, 59.7, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 27783 },	-- Scout Captain Carter
@@ -178,7 +187,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(12199,  {  -- Bringing Down the Iron Thane
+				q(12199, {  -- Bringing Down the Iron Thane
 					["coord"] = { 65.1, 47.2, 116 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27227 },	-- Prospector Rokar
@@ -191,16 +200,19 @@ _.Zones =
 					},
 				}),
 				q(12002, {	-- Brothers in Battle
+					["coord"] = { 59.8, 27.5, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26226 },	-- Brugar Stoneshear
 					["sourceQuest"] = 11998,	-- Softening the Blow
 				}),
 				q(12128, {	-- Check Up on Raegar
+					["coord"] = { 59.8, 27.5, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26226 },	-- Brugar Stoneshear
 					["sourceQuest"] = 12014,	-- Steady as a Rock?
 				}),
 				q(12247, {	-- Children of Ursoc
+					["coord"] = { 31.1, 59.4, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27295 },	-- Hierophant Thayreen
 					["sourceQuests"] = {
@@ -225,6 +237,7 @@ _.Zones =
 					},
 				}),
 				q(12293, {	-- Close the Deal
+					["coord"] = { 31.8, 60.1, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26875 },	-- Lieutenant Dumont
 					["sourceQuest"] = 12292,	-- Local Support
@@ -241,6 +254,7 @@ _.Zones =
 					},
 				}),
 				q(12184, {	-- Cultivating an Image (A)
+					["coord"] = { 76.9, 48.4, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26885 },	-- Mountaineer Kilian
 					["sourceQuest"] = 12183,	-- Looking the Part
@@ -284,16 +298,18 @@ _.Zones =
 					},
 				}),
 				q(12227, {	-- Doing Your Duty
-					["provider"] = { "n", 27277 },	-- Master Woodsman Anderhol
+					["coord"] = { 32.1, 59.9, 116 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = {12226},
+					["provider"] = { "n", 27277 },	-- Master Woodsman Anderhol
+					["sourceQuest"] = 12226,	-- Just Passing Through
 					["g"] = {
 						i(38745),	-- Fetid Loop
 						i(38746),	-- Rancid Signet
 						i(38747),	-- Mildly Tarnished Ring
 					},
 				}),
-				q(12314, {	-- Down With Captain Zorna!
+				q(12314, {	-- Down With Captain Zorna! -- aa
+					["coord"] = { 22.1, 81.2, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 27520 },	-- Baron Freeman
@@ -326,11 +342,13 @@ _.Zones =
 					},
 				}),
 				q(12217, {	-- Eagle Eyes
-					["provider"] = { "n", 27277 },	-- Master Woodsman Anderhol
+					["coord"] = { 32.0, 59.9, 116 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = {12215},
+					["provider"] = { "n", 27277 },	-- Master Woodsman Anderhol
+					["sourceQuest"] = 12215,	-- Them or Us!
 				}),
 				q(12308, {	-- Escape from Silverbrook
+					["coord"] = { 26.4, 31.8, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27499 },	-- Caged Prisoner
 					["sourceQuest"] = 12302,	-- Words of Warning
@@ -341,6 +359,9 @@ _.Zones =
 						i(39097),	-- Sabatons of Crushed Humanity
 						i(38750),	-- Worgslayer's Ring
 					},
+				}),
+				q(13524, {	-- Escape from Silverbrook (NYI - appears to be a duplicate)
+					["u"] = 1,
 				}),
 				q(12453, {	-- Eyes Above
 					["coord"] = { 22.5, 62.8, 116 },
@@ -374,7 +395,7 @@ _.Zones =
 						i(39132),	-- Sword of the Caged Mind
 					},
 				}),
-				q(11981, {	-- Find Kurun!
+				q(11981, {	-- Find Kurun! -- aa
 					["coord"] = { 63.6, 23.1, 116 },
 					["provider"] = { "n", 26335 },	-- Fallen Earthen Warrior
 					["isBreadcrumb"] = true,
@@ -432,9 +453,13 @@ _.Zones =
 					["sourceQuest"] = 12007,	-- Sacrifices Must be Made
 				}),
 				q(12158, {	-- Hollowstone Mine
+					["coord"] = { 59.4, 26.0, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26212 },	-- Captain Gryan Stoutmantle
-					["sourceQuest"] = 12109,	-- Report to Gryan Stoutmantle... Again
+					["sourceQuests"] = {
+						12105,	-- Descent into Darkness
+						12109,	-- Report to Gryan Stoutmantle... Again
+					},
 				}),
 				q(12164, {	-- Hour of the Worg
 					["coord"] = { 64.9, 43.4, 116 },
@@ -489,9 +514,10 @@ _.Zones =
 					["sourceQuest"] = 12176,	-- A Minor Substitution
 				}),
 				q(12226, {	-- Just Passing Through
-					["provider"] = { "n", 27277 },	-- Master Woodsman Anderhol
+					["coord"] = { 32.0, 59.9, 116 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = {12225},
+					["provider"] = { "n", 27277 },	-- Master Woodsman Anderhol
+					["sourceQuest"] = 12225,	-- Mmm... Amberseeds!
 				}),
 				q(12284, {	-- Keep 'Em on Their Heels
 					["coord"] = { 34.4, 33.0, 116 },
@@ -504,7 +530,8 @@ _.Zones =
 						}),
 					},
 				}),
-				q(12316, {	-- Keep Them at Bay! (A)
+				q(12316, {	-- Keep Them at Bay! (A) -- aa
+					["coord"] = { 22.0, 81.3, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 27562 },	-- Lieutenant Stuart
@@ -525,7 +552,8 @@ _.Zones =
 						}),
 					},
 				}),
-				q(12289, {	-- Kick 'Em While They're Down
+				q(12289, {	-- Kick 'Em While They're Down -- aa
+					["coord"] = { 39.3, 43.8, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 27468 },	-- Sergeant Hartsman
@@ -540,7 +568,8 @@ _.Zones =
 					["provider"] = { "n", 26420 },	-- Gavrock
 					["sourceQuest"] = 12093,	-- Runes of Compulsion
 				}),
-				q(12296, {	-- Life or Death
+				q(12296, {	-- Life or Death -- aa
+					["coord"] = { 40.4, 42.6, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 27484 },	-- Rheanna
@@ -550,7 +579,8 @@ _.Zones =
 						}),
 					},
 				}),
-				q(12292, {	-- Local Support
+				q(12292, {	-- Local Support -- aa
+					["coord"] = { 31.8, 60.1, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26875 },	-- Lieutenant Dumont
 					["sourceQuests"] = {
@@ -572,6 +602,7 @@ _.Zones =
 					["sourceQuest"] = 12202,	-- Cultivating an Image
 				}),
 				q(12183, {	-- Looking the Part
+					["coord"] = { 76.9, 48.4, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26885 },	-- Mountaineer Kilian
 					["sourceQuest"] = 12180,	-- The Captive Prospectors
@@ -592,16 +623,19 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 37830 },	-- Mikhail's Journal
 				}),
-				q(12225, {	-- Mmm... Amberseeds!
+				q(12225, {	-- Mmm... Amberseeds! -- aa
+					["coord"] = { 31.8, 59.5, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["model"] = 202297,
 					["provider"] = { "o", 188667 },	-- Amberseed
 				}),
-				q(12414, {	-- Mounting Up
+				q(12414, {	-- Mounting Up -- aa
+					["coord"] = { 59.0, 26.6, 116 },
 					["provider"] = { "n", 26377 },	-- Squire Percy
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(12027, {	-- Mr. Floppy's Perilous Adventure
+				q(12027, {	-- Mr. Floppy's Perilous Adventure -- aa
+					["coord"] = { 49.2, 34.1, 116 },
 					["provider"] = { "n", 26588 },	-- Emily
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -635,6 +669,7 @@ _.Zones =
 					["provider"] = { "n", 26884 },	-- Harkor
 				}),
 				q(12299, {	-- Northern Hospitality
+					["coord"] = { 26.4, 35.7, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27486 },	-- Sergei
 					["sourceQuest"] = 12295,	-- An Exercise in Diplomacy
@@ -666,7 +701,8 @@ _.Zones =
 						}),
 					},
 				}),
-				q(12268, {	-- Pieces Parts
+				q(12268, {	-- Pieces Parts -- aa
+					["coord"] = { 39.6, 43.3, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 27416 },	-- Pipthwack
@@ -683,6 +719,7 @@ _.Zones =
 					["sourceQuest"] = 12054,	-- Deciphering the Journal
 				}),
 				q(12185, {	-- Put on Your Best Face for Loken
+					["coord"] = { 76.9, 48.4, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26885 },	-- Mountaineer Kilian
 					["sourceQuest"] = 12184,	-- Cultivating an Image
@@ -706,21 +743,26 @@ _.Zones =
 					["provider"] = { "n", 26260 },	-- Kurun
 					["sourceQuest"] = 11982,	-- Raining Down Destruction
 				}),
-				q(12770, {	-- Reallocating Resources
+				q(12770, {	-- Reallocating Resources -- aa
 					-- NOTE: This quest is mutually exclusive with 12789 (Into the Breach) from Dragonblight
+					["coord"] = { 59.4, 26.0, 116 },
+					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26212 },	-- Captain Gryan Stoutmantle
-					["races"] = ALLIANCE_ONLY,
 				}),
-				q(12212, {	-- Replenishing the Storehouse
-					["provider"] = { "n", 27277 },	-- Master Woodsman Anderhol
+				q(12212, {	-- Replenishing the Storehouse -- aa
+					["coord"] = { 32.0, 59.9, 116 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 27277 },	-- Master Woodsman Anderhol
 				}),
 				q(12109, {	-- Report to Gryan Stoutmantle... Again
-					["provider"] = { "n", 26875 },	-- Lieutenant Dumont
+					["coord"] = { 31.8, 60.1, 116 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26875 },	-- Lieutenant Dumont
+					["sourceQuest"] = 12105,	-- Descent into Darkness
 					["isBreadcrumb"] = true,
 				}),
 				q(12437, {	-- Riding the Red Rocket (A)
+					["coord"] = { 14.8, 86.4, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 27759 },	-- Commander Howser
@@ -747,6 +789,7 @@ _.Zones =
 					["sourceQuest"] = 12081,	-- Gavrock
 				}),
 				q(12161, {	-- Ruuna the Blind (A)
+					["coord"] = { 59.1, 26.1, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27582 },	-- Private Arun
 					["sourceQuest"] = 12160,	-- A Name from the Past
@@ -819,18 +862,20 @@ _.Zones =
 					["sourceQuest"] = 12029,	-- Seared Scourge
 				}),
 				q(12222, {	-- Secrets of the Flamebinders
+					["coord"] = { 32.4, 59.9, 116 },
 					["provider"] = { "n", 27391 },	-- Woodsman Drake
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = {12294},
+					["sourceQuest"] = 12294,	-- A Tentative Pact
 				}),
 				q(12121, {	-- See You on the Other Side
 					["coord"] = { 73.9, 34.1, 116 },
 					["provider"] = { "n", 26886 },	-- Kraz
 					["sourceQuest"] = 12120,	-- Drak'aguul's Mallet
 				}),
-				q(12443, {	-- Seeking Solvent (A)
-					["provider"] = { "n", 27495 },	-- Barblefink
+				q(12443, {	-- Seeking Solvent (A) -- aa
+					["coord"] = { 23.0, 80.1, 116 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 27495 },	-- Barblefink
 				}),
 				q(12433, {	-- Seeking Solvent (H) -- aa
 					["coord"] = { 11.1, 76.6, 116 },
@@ -858,7 +903,8 @@ _.Zones =
 						}),
 					},
 				}),
-				q(12244, {	-- Shredder Repair
+				q(12244, {	-- Shredder Repair -- aa
+					["coord"] = { 39.5, 43.5, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 27371 },	-- Synipus
@@ -868,7 +914,8 @@ _.Zones =
 						}),
 					},
 				}),
-				q(12323, {	-- Smoke 'Em Out (A)
+				q(12323, {	-- Smoke 'Em Out (A) -- aa
+					["coord"] = { 21.9, 80.7, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 27602 },	-- Sergeant Downey
@@ -889,11 +936,13 @@ _.Zones =
 						}),
 					},
 				}),
-				q(11998, {	-- Softening the Blow
+				q(11998, {	-- Softening the Blow -- aa
+					["coord"] = { 59.4, 26.0, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26212 },	-- Captain Gryan Stoutmantle
 				}),
 				q(12159, {	-- Souls at Unrest
+					["coord"] = { 55.1, 23.4, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26932 },	-- Petrov
 					["sourceQuest"] = 12158,	-- Hollowstone Mine
@@ -905,8 +954,9 @@ _.Zones =
 					},
 				}),
 				q(12014, {	-- Steady as a Rock?
-					["provider"] = { "n", 26514 },	-- Surveyor Orlond
+					["coord"] = { 67.4, 15.2, 116 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26514 },	-- Surveyor Orlond
 					["sourceQuest"] = 12010,	-- The Fate of Orlond
 					["g"] = {
 						i(38717),	-- Dusty Miner's Leggings
@@ -938,11 +988,13 @@ _.Zones =
 					["sourceQuest"] = 12424,	-- Gorgonna
 				}),
 				q(12216, {	-- Take Their Rear!
-					["provider"] = { "n", 27277 },	-- Master Woodsman Anderhol
+					["coord"] = { 32.0, 59.9, 116 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = {12212},
+					["provider"] = { "n", 27277 },	-- Master Woodsman Anderhol
+					["sourceQuest"] = 12212,	-- Replenishing the Storehouse
 				}),
 				q(12300, {	-- Test of Mettle
+					["coord"] = { 26.4, 35.7, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27486 },	-- Sergei
 					["sourceQuests"] = {
@@ -960,6 +1012,7 @@ _.Zones =
 					},
 				}),
 				q(12180, {	-- The Captive Prospectors
+					["coord"] = { 76.9, 48.4, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26885 },	-- Mountaineer Kilian
 					["sourceQuest"] = 12014,	-- Steady as a Rock?
@@ -1033,11 +1086,13 @@ _.Zones =
 					["sourceQuest"] = 12413,	-- Attack on Silverbrook -- TODO: verify
 				}),
 				q(12010, {	-- The Fate of Orlond
+					["coord"] = { 59.8, 27.5, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26226 },	-- Brugar Stoneshear
 					["sourceQuest"] = 12003,	-- Uncovering the Tunnels
 				}),
 				q(12219, {	-- The Failed World Tree
+					["coord"] = { 31.1, 59.4, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27295 },	-- Hierophant Thayreen
 					["sourceQuest"] = 12310,	-- A Swift Response
@@ -1060,6 +1115,7 @@ _.Zones =
 					["provider"] = { "n", 26944 },	-- Soulok Stormfury
 				}),
 				q(12153, {	-- The Iron Thane and His Anvil
+					["coord"] = { 77.0, 48.6, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26883 },	-- Raegar Breakbrow
 					["sourceQuest"] = 12138,	-- ... Or Maybe We Don't
@@ -1070,12 +1126,13 @@ _.Zones =
 						i(39076),	-- Golem-Rider's Greaves
 					},
 				}),
-				q(12794, {	-- The Magical Kingdom of Dalaran
-					["provider"] = { "n", 29161 }, --	Magistrix Haelenai
+				q(12794, {	-- The Magical Kingdom of Dalaran -- aa
+					["coord"] = { 32.0, 59.8, 116 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29161 }, --	Magistrix Haelenai
 					["isBreadcrumb"] = true,
 				}),
-				q(12791, {	-- The Magical Kingdom of Dalaran
+				q(12791, {	-- The Magical Kingdom of Dalaran -- aa
 					["coord"] = { 20.6, 64.2, 116 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 29160 },	-- Magistrix Phaelista
@@ -1088,19 +1145,22 @@ _.Zones =
 					["sourceQuest"] = 12204,	-- in the Name of Loken
 				}),
 				q(12129, {	-- The Perfect Plan
+					["coord"] = { 77.0, 48.6, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26883 },	-- Raegar Breakbrow
 					["sourceQuest"] = 12128,	-- Check Up on Raegar
 				}),
 				q(11988, {	-- The Runic Keystone
+					["coord"] = { 59.7, 27.4, 116 },
 					["provider"] = { "n", 26361 },	-- Torthen Deepdig
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = {11986},
+					["sourceQuest"] = 11986,	-- The Damaged Journal
 				}),
 				q(11993, {	-- The Runic Prophecies
-					["provider"] = { "n", 26361 },	-- Torthen Deepdig
+					["coord"] = { 59.7, 27.4, 116 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = {11988},
+					["provider"] = { "n", 26361 },	-- Torthen Deepdig
+					["sourceQuest"] = 11988,	-- The Runic Keystone
 					["g"] = {
 						i(38710),	-- Wayfinder's Bracers
 						i(39013),	-- Discoverer's Mitts
@@ -1108,7 +1168,7 @@ _.Zones =
 						i(39075),	-- Waywalker's Girdle
 					},
 				}),
-				q(12058,  {  -- The Runic Prophecies
+				q(12058, {  -- The Runic Prophecies
 					["coord"] = { 65.1, 47.7, 116 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26584 },	-- Sage Paluna
@@ -1121,9 +1181,13 @@ _.Zones =
 					},
 				}),
 				q(12255, {	-- The Thane of Voldrune (A)
-					["provider"] = { "n", 27391 },	-- Woodsman Drake
+					["coord"] = { 32.4, 59.9, 116 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = {12222,12223},
+					["provider"] = { "n", 27391 },	-- Woodsman Drake
+					["sourceQuests"] = {
+						12222,	-- Secrets of the Flamebinders
+						12223,	-- Thinning the Ranks
+					},
 					["g"] = {
 						i(38712),	-- Headbinder's Crown
 						i(39016),	-- Tunic of the Rectified Thane
@@ -1153,9 +1217,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27221 },	-- Tormak the Scarred
 				}),
-				q(12215, {	-- Them or Us!
-					["provider"] = { "n", 27277 },	-- Master Woodsman Anderhol
+				q(12215, {	-- Them or Us! -- aa
+					["coord"] = { 32.0, 59.9, 116 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 27277 },	-- Master Woodsman Anderhol
 				}),
 				q(12114, {	-- Therapy -- aa
 					["coord"] = { 73.7, 34.0, 116 },
@@ -1169,14 +1234,16 @@ _.Zones =
 					},
 				}),
 				q(12223, {	-- Thinning the Ranks
-					["provider"] = { "n", 27391 },	-- Woodsman Drake
+					["coord"] = { 32.4, 59.9, 116 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = {12294},
+					["provider"] = { "n", 27391 },	-- Woodsman Drake
+					["sourceQuest"] = 12294,	-- A Tentative Pact
 				}),
 				q(12210, {	-- Troll Season!
-					["provider"] = { "n", 26875 },	-- Lieutenant Dumont
+					["coord"] = { 31.8, 60.1, 116 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = {12212},
+					["provider"] = { "n", 26875 },	-- Lieutenant Dumont
+					["sourceQuest"] = 12212,	-- Replenishing the Storehouse
 					["isBreadcrumb"] = true,
 				}),
 				q(11989, {	-- Truce?
@@ -1190,6 +1257,7 @@ _.Zones =
 					["sourceQuest"] = 12002,	-- Brothers in Battle
 				}),
 				q(12249, {	-- Ursoc, the Bear God
+					["coord"] = { 31.1, 59.4, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27295 },	-- Hierophant Thayreen
 					["sourceQuests"] = {
@@ -1252,6 +1320,7 @@ _.Zones =
 					},
 				}),
 				q(12248, {	-- Vordrassil's Sapling
+					["coord"] = { 31.1, 59.4, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27295 },	-- Hierophant Thayreen
 					["sourceQuests"] = {
@@ -1260,6 +1329,7 @@ _.Zones =
 					},
 				}),
 				q(12250, {	-- Vordrassil's Seeds
+					["coord"] = { 31.1, 59.4, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27295 },	-- Hierophant Thayreen
 					["sourceQuests"] = {
@@ -1272,7 +1342,7 @@ _.Zones =
 						i(38757),	-- Drape of the Possessive Soul
 					},
 				}),
-				q(12242,  {  -- Vordrassil's Seeds
+				q(12242, {  -- Vordrassil's Seeds
 					["coord"] = { 22.5, 62.8, 116 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27262 },	-- Windseer Grayhorn
@@ -1287,6 +1357,7 @@ _.Zones =
 					},
 				}),
 				q(12131, {	-- We Have the Power (A)
+					["coord"] = { 77.0, 48.6, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26883 },	-- Raegar Breakbrow
 					["sourceQuest"] = 12130,	-- Why Fabricate When You Can Appropriate
@@ -1298,13 +1369,15 @@ _.Zones =
 					["sourceQuest"] = 12196,	-- From the Ground Up
 				}),
 				q(12130, {	-- Why Fabricate When You Can Appropriate?
+					["coord"] = { 77.0, 48.6, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26883 },	-- Raegar Breakbrow
 					["sourceQuest"] = 12129,	-- The Perfect Plan
 				}),
-				q(12307, {	-- Wolfsbane Root
-					["provider"] = { "n", 27545 },	-- Katja
+				q(12307, {	-- Wolfsbane Root -- aa
+					["coord"] = { 25.6, 33.3, 116 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 27545 },	-- Katja
 					["g"] = {
 						i(39062),	-- Herbalist's Pauldrons
 						i(39105),	-- Girdle of Growing Vines
@@ -1313,6 +1386,7 @@ _.Zones =
 					},
 				}),
 				q(12302, {	-- Words of Warning
+					["coord"] = { 21.9, 29.9, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27497 },	-- Captured Trapper
 					["sourceQuest"] = 12300,	-- Test of Mettle
