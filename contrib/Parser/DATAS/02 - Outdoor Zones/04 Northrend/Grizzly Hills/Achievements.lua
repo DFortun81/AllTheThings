@@ -32,19 +32,26 @@ _.Zones =
 				ach(1357, {	-- Fo' Grizzle My Shizzle (H)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						crit(1, {	--Ursoc, the Bear God
+						crit(1, {	-- Ursoc, the Bear God
+							["sourceQuest"] = 12236,	-- Ursoc, the Bear God
 						}),
-						crit(2, {	--The Final Showdown
+						crit(2, {	-- The Final Showdown
+							["sourceQuest"] = 12431,	-- The Conquest Pit: Final Showdown
 						}),
-						crit(3, {	--The Iron Thane
+						crit(3, {	-- The Iron Thane
+							["sourceQuest"] = 12199,	-- Bringing Down the Iron Thane
 						}),
-						crit(4, {	--Loken's Orders
+						crit(4, {	-- Loken's Orders
+							["sourceQuest"] = 12203,	-- Loken's Orders
 						}),
-						crit(5, {	--Hour of the Worg
+						crit(5, {	-- Hour of the Worg
+							["sourceQuest"] = 12164,	-- Hour of the Worg
 						}),
-						crit(6, {	--Revelation!
+						crit(6, {	-- Revelation!
+							["sourceQuest"] = 12068,	-- Voices From the Dust
 						}),
-						crit(7, {	--Eons of Misery
+						crit(7, {	-- Eons of Misery
+							["sourceQuest"] = 12152,	-- Jin'arrak's End
 						}),
 					},
 				}),
@@ -53,6 +60,14 @@ _.Zones =
 				}),
 				ach(2017, {	-- Grizzled Veteran (H)
 					["races"] = HORDE_ONLY,
+				}),
+				ach(1596, {	-- Guru of Drakuru
+					["collectible"] = false,
+					["g"] = {
+						crit(1, {	-- Cleansing Drak'Tharon
+							["sourceQuest"] = 12238,	-- Cleansing Drak'Tharon
+						}),
+					},
 				}),
 			}),
 		}),

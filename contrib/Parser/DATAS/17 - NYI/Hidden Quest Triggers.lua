@@ -18,6 +18,7 @@ _.NeverImplemented =
 		q(48674),	-- Lockout Tracking - Normal - Islands. Possibly used in multiple situations
 		q(54740),	-- [DNT] REUSE ME
 		q(57917),	-- [DNT] Test - JAM
+		q(8274),	-- Test Kill Quest - triggered after The Conquest Pit: Final Showdown (12431)
 		
 		-------------------
 		--    VARIOUS    --

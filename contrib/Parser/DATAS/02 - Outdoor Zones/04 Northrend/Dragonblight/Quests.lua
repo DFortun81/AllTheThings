@@ -1125,6 +1125,12 @@ _.Zones =
 						i(38108),	-- Conscript's Ruby Waistguard
 					},
 				}),
+				q(12487, {	-- To Conquest Hold, But Be Careful! [Horde]
+					["coord"] = { 76.8, 63.2, 115 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 27243 },	-- High Executor Wroth
+					["isBreadcrumb"] = true,
+				}),
 				q(12440, {	-- To Stars' Rest! [Alliance]
 					["provider"] = { "n", 26878 },	-- Rodney Wells
 					["races"] = ALLIANCE_ONLY,
@@ -1430,9 +1436,6 @@ _.Zones =
 				-- }),
 				-- q(12283, {	-- The Truth Will Out [Horde]
 				-- 	["provider"] = { "n", 27350 },	-- Agent Skully
-				-- }),
-				-- q(12487, {	-- To Conquest Hold, But Be Careful! [Horde]
-				-- 	["provider"] = { "n", 27243 },	-- High Executor Wroth
 				-- }),
 				-- q(12095, {	-- To Dragon's Fall [Horde]
 				-- 	["provider"] = { "n", 26618 },	-- Captain Gort

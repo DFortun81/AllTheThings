@@ -51,7 +51,7 @@ _.Zones =
 				q(13556),	-- Eggs for Dubra'Jin
 				q(12708),	-- Enchanted Tiki Warriors
 				q(12652),	-- Feedin' Da Goolz
-				q(12792),	-- First Things First
+				q(12792),	-- First Things First -- completes along with 12763, 12770, 12789, 12793 (probably a breadcrumb)
 				q(12668),	-- Foundation for Revenge
 				q(12690),	-- Fuel for the Fire
 				q(12527),	-- Gluttonous Lurkers
@@ -110,7 +110,7 @@ _.Zones =
 				q(12643),	-- Silver Lining
 				q(12799),	-- Siphoning the Spirits
 				q(12553),	-- Skimmer Spinnerets
-				q(12793),	-- Smoke on the Horizon
+				q(12793),	-- Smoke on the Horizon -- completes along with 12763, 12770, 12789, 12792 (probably a breadcrumb)
 				q(12669),	-- So Far, So Bad
 				q(12597),	-- Something for the Pain
 				q(12642),	-- Spirit of Rhunok

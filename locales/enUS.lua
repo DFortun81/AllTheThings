@@ -1867,6 +1867,7 @@ app.L = {
 		[188085] = "Interface\\Icons\\inv_misc_food_wheat_01",
 		[188128] = "Interface\\Icons\\INV_SummerFest_FireSpirit",
 		[188129] = "Interface\\Icons\\INV_SummerFest_FireSpirit",
+		[188365] = "Interface\\Icons\\inv_jewelcrafting_livingruby_01",
 		[188418] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[189989] = "Interface\\Icons\\INV_Misc_WartornScrap_Plate",
 		[189990] = "Interface\\Icons\\INV_Misc_WartornScrap_Plate",
