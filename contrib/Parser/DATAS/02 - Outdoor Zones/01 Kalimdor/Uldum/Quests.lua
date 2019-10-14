@@ -341,6 +341,7 @@ _.Zones =
 				q(27627, {	-- Just a Fancy Cockroach
 					["sourceQuest"] = 27431,	-- Tipping the Balance
 					["description"] = "This quest is auto-accepted when you kill any color Scarab after completing Tipping the Balance.",
+					["coord"] = { 64.4, 29.6, 249 },
 					["crs"] = {
 						46129,	-- Amethyst Scarab
 						46128,	-- Emerald Scarab
@@ -435,7 +436,7 @@ _.Zones =
 					["crs"] = { 48428 },	-- Myzerian
 					["coord"] = { 40.59, 22.19, 249 },
 					["provider"] = { "i", 63700 },
-					["sourceQuest"] = 48431,	-- Shroud of the Makers!
+					["sourceQuest"] = 28367,	-- Shroud of the Makers!
 				}),
 				q(28561, {	-- Nahom Must Hold
 					["provider"] = { "n", 47684 },	-- King Phaoris

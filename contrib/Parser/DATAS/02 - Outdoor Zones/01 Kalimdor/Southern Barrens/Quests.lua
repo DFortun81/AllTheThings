@@ -8,6 +8,7 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(25183, {	-- ...And Bury the Rest
 					["provider"] = { "n", 39118 },	-- General Twinbraid
+					["coord"] = { 43.5, 78.3, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25174,	-- Twinbraid Needs to Know
 				}),
@@ -103,6 +104,7 @@ _.Zones =
 				}),
 				q(24606, {	-- Blood of the Barrens
 					["provider"] = { "i", 49932 },	-- Carved Boar Idol
+					["coord"] = { 42.2, 83.4, 199 },
 					["crs"] = {
 						37560,	-- Razormane Pathfinder
 						37661,	-- Razormane Seer
@@ -321,6 +323,7 @@ _.Zones =
 				}),
 				q(25182, {	-- Kill 'em All!
 					["provider"] = { "n", 39118 },	-- General Twinbraid
+					["coord"] = { 43.5, 78.3, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25174,	-- Twinbraid Needs to Know
 				}),
@@ -463,6 +466,7 @@ _.Zones =
 				}),
 				q(26687, {	-- Reinforcements From Theramore (UNTESTED - unavailable on lv100 and don't have any Alliance at 35 to test)
 					["provider"] = { "n", 39119 },	-- General Twinbraid
+					["coord"] = { 43.5, 78.3, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 					["sourceQuest"] = 25182,	-- Kill 'em All!
@@ -669,6 +673,7 @@ _.Zones =
 					},
 				}),
 				q(25185, {	-- The Deed Is Done
+					["coord"] = { 40.3, 77.8, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 202598 },	-- Big Nasty Plunger
 					["sourceQuest"] = 25183,	-- ...And Bury the Rest
@@ -733,6 +738,7 @@ _.Zones =
 				}),
 				q(25174, {	-- Twinbraid Needs to Know
 					["provider"] = { "n", 38152 },	-- Weezil Slipshadow
+					["coord"] = { 50.2, 87.1, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25163,	-- Who Did This?
 				}),
@@ -763,6 +769,7 @@ _.Zones =
 				}),
 				q(25163, {	-- Who Did This?
 					["provider"] = { "n", 39220 },	-- Wounded Bael'dun Officer
+					["coord"] = { 49.6, 87.1, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25120,	-- Marley's Final Flight
 				}),

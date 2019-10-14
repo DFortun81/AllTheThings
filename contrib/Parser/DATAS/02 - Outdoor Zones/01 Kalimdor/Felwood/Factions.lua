@@ -35,18 +35,18 @@ _.Zones =
 								},
 							}),
 							q(6031, {	-- Runecloth
+								["minReputation"] = { 576, FRIENDLY },
 								["provider"] = { "n", 11557 },	-- Meilosh
 								["coord"] = { 64.8, 5.2, 77 },
-								["description"] = "You must be Friendly with Timbermaw Hold to pick up this quest.",
 								["g"] = {
 									i(15822),	-- Shadowskin Spaulders
 									i(15823),	-- Bricksteel Gauntlets
 								},
 							}),
 							q(6032, {	-- Sacred Cloth
+								["minReputation"] = { 576, FRIENDLY },
 								["provider"] = { "n", 11557 },	-- Meilosh
 								["coord"] = { 64.8, 5.2, 77 },
-								["description"] = "You must be Friendly with Timbermaw Hold to pick up this quest.",
 								["requireSkill"] = 197,	-- Requires: Tailoring
 								["g"] = {
 									recipe(19435),	-- Mooncloth Boots
@@ -62,9 +62,9 @@ _.Zones =
 								},
 							}),
 							q(8481, {	-- The Root of All Evil
+								["minReputation"] = { 576, EXALTED },
 								["provider"] = { "n", 11555 },	-- Gorn One Eye
 								["coord"] = { 64.4, 5.1, 77 },
-								["description"] = "Requires Exalted with Timberbaw Hold.",
 								["g"] = {
 									i(21326),	-- Defender of the Timbermaw
 								},
