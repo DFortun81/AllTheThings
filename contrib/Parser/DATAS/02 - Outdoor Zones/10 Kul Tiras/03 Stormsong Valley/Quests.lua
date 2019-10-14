@@ -8,6 +8,21 @@ _.Zones =
 			n(-17,	{	-- Quests [Finalized]
 			--	NEED LEATHER / MAIL AZERITE REWARDS FOR "STORM'S JUDGMENT" QUEST.  it looks like the leather chest was added, but the shoulders are still missing.
 			--	NEED LEATHER / MAIL AZERITE REWARDS FOR "STORM'S END" QUEST.  same as above, leather helm is added but shoulders are missing.
+				q(50616, {	-- A Bit of a Bind
+					["sourceQuests"] = { 49818 },	-- Trouble at Fort Daelin
+					["provider"] = { "n", 131002 },
+					["coord"] = { 30.2, 59.2, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(160345),	-- Zeth'jir Seacaller Signet
+						i(160371),	-- Tidespeaker Belt
+						i(160374),	-- Darkwater Waistcord
+						i(160377),	-- Stormchaser Chain
+						i(160380),	-- Dread Corsair Warbelt
+					},
+				}),
+				
+				
 				q(50593, {	-- A Bloody Mess
 					["sourceQuests"] = { 49998 },	-- Voices Below
 					["provider"] = { "i", 158195 },	-- Frothing Vial
@@ -90,6 +105,17 @@ _.Zones =
 				}),
 				
 				
+				q(50672, {	-- Any Ammo Will Do
+					["sourceQuests"] = {
+						50644,	-- Facing the Invaders
+						50653,	-- Reclaiming Our Defenses
+					},
+					["provider"] = { "n", 131003 },
+					["coord"] = { 34.5, 47.2, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(50041, {	-- A Pocket Full of Shells
 					["sourceQuests"] = { 50157 },	-- There's Gold in Them There Fields
 					["provider"] = { "n", 129808 },	-- Farmer Goldfield
@@ -129,11 +155,30 @@ _.Zones =
 				}),
 				
 				
+				q(50705, {	-- A Snake with Three Heads
+					["sourceQuests"] = {
+						50672,	-- Any Ammo Will Do
+						50679,	-- Piercing the Shield
+						50698,	-- Problem Solving With Gunpowder
+					},
+					["provider"] = { "n", 131003 },
+					["coord"] = { 34.5, 47.2, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(50797, {	-- A Turtle's Invitation
 					["sourceQuests"] = { 50753 },	-- Earl-E Bot Gets the Worm
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 135033 },	-- Maokka
 					["coord"] = { 42.5, 54.3, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(51205, {	-- Aww, Rats!
+					["provider"] = { "n", 136574 },	-- Charles Davenport
+					["coord"] = { 29.8, 67.1, 942 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				
@@ -153,11 +198,26 @@ _.Zones =
 				}),
 				
 				
+				q(51251, {	-- Basement Dwellers
+					["provider"] = { "n", 136574 },	-- Charles Davenport
+					["coord"] = { 29.8, 67.1, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(52070, {	-- Bauer Backup
 					["sourceQuests"] = { 51712 },	-- Eye For an Eye
-					["isBreadcrumb"] = true,
+					["isBreadcrumb"] = true,	-- for "Freedom for the Sea"
 					["provider"] = { "n", 138735 },	-- Felecia Gladstone
 					["coord"] = { 51.2, 36.9, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(51214, {	-- Be A Dear
+					["sourceQuests"] = { 51218 },	-- Undelivered Package
+					["provider"] = { "n", 136658 },	-- Marie Davenport
+					["coord"] = { 30.3, 66.7, 942 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				
@@ -253,6 +313,14 @@ _.Zones =
 				}),
 				
 				
+				q(50621, {	-- Caught in the Net
+					["sourceQuests"] = { 49818 },	-- Trouble at Fort Daelin
+					["provider"] = { "n", 131002 },
+					["coord"] = { 30.2, 59.2, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(50793, {	-- Cave Commotion
 					["sourceQuests"] = { 50774 },	-- No Bot Left Behind
 					["provider"] = { "n", 135067 },	-- Moxie Lockspinner
@@ -303,6 +371,41 @@ _.Zones =
 					["sourceQuests"] = { 50343 },	-- Mayhem at Mildenhall Meadery
 					["provider"] = { "n", 132017 },	-- Ancel Mildenhall
 					["coord"] = { 68.5, 67.7, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(50706, {	-- Clearing the Delta
+					["sourceQuests"] = {
+						50672,	-- Any Ammo Will Do
+						50679,	-- Piercing the Shield
+						50698,	-- Problem Solving With Gunpowder
+					},
+					["provider"] = { "n", 131003 },
+					["coord"] = { 34.5, 47.2, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(51504, {	-- Cookie Delivery
+					["sourceQuests"] = { 51335 },	-- Cookies and Cream
+					["provider"] = { "n", 136658 },	-- Marie Davenport
+					["coord"] = { 30.2, 66.7, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(51335, {	-- Cookies and Cream
+					["sourceQuests"] = { 51215 },	-- Milking Goats
+					["provider"] = { "n", 136658 },	-- Marie Davenport
+					["coord"] = { 30.3, 66.7, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(51203, {	-- Cry Wolf
+					["provider"] = { "n", 136414 },
+					["coord"] = { 31.8, 69.4, 942 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				
@@ -389,6 +492,32 @@ _.Zones =
 				}),
 				
 				
+				q(50645, {	-- Eeling in a Big One
+					["sourceQuests"] = { 50635 },	-- The Shifting Tides
+					["provider"] = { "n", 131014 },	-- Rikal
+					["coord"] = { 34.9, 47.7, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(51207, {	-- Ettin It Done
+					["sourceQuests"] = { 51335 },	-- Cookies and Cream
+					["provider"] = { "n", 136658 },	-- Marie Davenport
+					["coord"] = { 30.2, 66.7, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(160333),	-- Tidespeaker Shoes
+						i(160336),	-- Darkwater Footwraps
+						i(160339),	-- Stormchaser Footguards
+						i(160342),	-- Dread Corsair Footguards
+						i(160383),	-- Tidespeaker Wristwraps
+						i(160386),	-- Darkwater Wristwraps
+						i(160389),	-- Stormchaser Bindings
+						i(160392),	-- Dread Corsair Armguards
+					},
+				}),
+				
+				
 				q(51712, {	-- Eye for an Eye
 					["sourceQuests"] = {
 						51728,	-- Burn it All Down
@@ -420,6 +549,14 @@ _.Zones =
 				}),
 				
 				
+				q(50644, {	-- Facing the Invaders
+					["sourceQuests"] = { 50635 },	-- The Shifting Tides
+					["provider"] = { "n", 131003 },	-- Specialist Wembley
+					["coord"] = { 34.5, 47.2, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(50136, {	-- Farming Stimulator
 					["sourceQuests"] = {
 						50134,	-- Gadgets and Gizmos Aplenty
@@ -446,8 +583,16 @@ _.Zones =
 				}),
 				
 				
+				q(50649, {	-- Filching from Thieves
+					["sourceQuests"] = { 50635 },	-- The Shifting Tides
+					["provider"] = { "n", 131014 },	-- Rikal
+					["coord"] = { 34.9, 47.7, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(51371, {	-- Flavorable Offering
-					["sourceQuests"] = { 513553 },	-- Cave of Ai'twen
+					["sourceQuests"] = { 51353 },	-- Cave of Ai'twen
 					["provider"] = { "n", 137453 },	-- Loroja
 					["coord"] = { 35.7, 31.2, 942 },
 				}),
@@ -485,11 +630,40 @@ _.Zones =
 				}),
 				
 				
+				q(50614, {	-- Freedom for the Sea
+					["sourceQuests"] = { 50614 },	-- Bauer Backup
+					["provider"] = { "n", 131002 },	-- Lieutenant Bauer
+					["coord"] = { 30.2, 59.2, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(50264, {	-- Free the Farmhands
 					["sourceQuests"] = { 50504 },	-- Honey Glazed Sam
 					["provider"] = { "n", 134028 },	-- Sam Robinson
 					["coord"] = { 72.7, 72.2, 942 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(49831, {	-- From the Depths
+					["sourceQuests"] = {
+						50705,	-- A Snake With Three Heads
+						50706,	-- Clearing the Delta
+					},
+					["provider"] = { "n", 131000 },	-- Commander Kellam
+					["coord"] = { 34.1, 54.8, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(160519),	-- Fort Daelin Speargun
+						i(155219),	-- Zeth'jir Scaleguard Pillar
+						i(160521),	-- Kellam's Longknife
+						i(155198),	-- Fort Daelin Handaxe
+						i(155211),	-- Storm's Wake Truncheon
+						i(155217),	-- Proudmoore Battalion Pike
+						i(155226),	-- Storm's Wake Baton
+						i(155212),	-- Zeth'jir Tidemaiden Scepter
+					},
 				}),
 				
 				
@@ -596,6 +770,23 @@ _.Zones =
 						i(158688),	-- Darkwater Treads
 						i(158687),	-- Stormchaser Striders
 						i(158685),	-- Dread Corsair Warboots
+					},
+				}),
+				
+				
+				q(51492, {	-- Gunpowder Plot
+					["provider"] = { "n", 136574 },	-- Charles Davenport
+					["coord"] = { 29.8, 67.1, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(160350),	-- Darkwater Handwraps
+						i(160356),	-- Dread Corsair Gloves
+						i(160353),	-- Stormchaser Handguards
+						i(160347),	-- Tidespeaker Grips
+						i(160362),	-- Darkwater Britches
+						i(160368),	-- Dread Corsair Pants
+						i(160365),	-- Stormchaser Pants
+						i(160359),	-- Tidespeaker Pantaloons
 					},
 				}),
 				
@@ -736,6 +927,26 @@ _.Zones =
 				}),
 				
 				
+				q(51209, {	-- Mighty Grokkfist
+					["sourceQuests"] = { 51504 },	-- Cookie Delivery
+					["provider"] = { "n", 136574 },	-- Charles Davenport
+					["coord"] = { 36.1, 74.6, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(51215, {	-- Milking Goats
+					["sourceQuests"] = {
+						51205,	-- Aww, Rats!
+						51251,	-- Basement Dwellers
+						51492,	-- Gunpowder Plot
+					},
+					["provider"] = { "n", 136658 },	-- Marie Davenport
+					["coord"] = { 30.3, 66.7, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(50909, {	-- Never Outgunned
 					["sourceQuests"] = { 52067 },	-- Survivors
 					["provider"] = { "n", 135874 },	-- Lea Martinel
@@ -776,6 +987,35 @@ _.Zones =
 				}),
 				
 				
+				q(50679, {	-- Piercing the Shield
+					["sourceQuests"] = {
+						50644,	-- Facing the Invaders
+						50653,	-- Reclaiming Our Defenses
+					},
+					["provider"] = { "n", 131003 },
+					["coord"] = { 34.5, 47.2, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(160885),	-- Fort Daelin Lantern
+						i(160360),	-- Tidespeaker Legwarmers
+						i(160363),	-- Darkwater Pants
+						i(160366),	-- Stormchaser Leggings
+						i(160369),	-- Dread Corsair Legguards
+					},
+				}),
+				
+				
+				q(50698, {	-- Problem Solving with Gunpowder
+					["sourceQuests"] = {
+						50644,	-- Facing the Invaders
+						50653,	-- Reclaiming Our Defenses
+					},
+					["provider"] = { "n", 131003 },
+					["coord"] = { 34.5, 47.2, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(49706, {	-- Proclamation Investigation
 					["sourceQuests"] = { 49703 },	-- House Stormsong
 					["provider"] = { "n", 130714 },	-- Brother Pike
@@ -809,6 +1049,21 @@ _.Zones =
 				}),
 				
 				
+				q(50653, {	-- Reclaiming our Defenses
+					["sourceQuests"] = { 50635 },	-- The Shifting Tides
+					["provider"] = { "n", 131003 },	-- Specialist Wembley
+					["coord"] = { 34.5, 47.2, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(160337),	-- Darkwater Footpads
+						i(160343),	-- Dread Corsair Boots
+						i(155232),	-- Proudmoore Battalion Cloak
+						i(160340),	-- Stormchaser Treads
+						i(160334),	-- Tidespeaker Footwraps
+					},
+				}),
+				
+				
 				q(50161, {	-- Recovering Raimond
 					["sourceQuests"] = { 50064 },	-- Don't Go in the Basement
 					["provider"] = { "n", 132647 },	-- Ancel Mildenhall
@@ -828,7 +1083,7 @@ _.Zones =
 				
 				
 				q(51221, {	-- Response Required
-					["sourceQuests"] = { 513553 },	-- Cave of Ai'twen
+					["sourceQuests"] = { 51353 },	-- Cave of Ai'twen
 					["provider"] = { "n", 137453 },	-- Loroja
 					["coord"] = { 35.7, 31.2, 942 },
 				}),
@@ -1012,6 +1267,15 @@ _.Zones =
 				}),
 				
 				
+				q(53045, {	-- Surveying the Wharf
+					["sourceQuests"] = { 49831 },	-- From the Depths
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 131001 },	-- Lieutenant Harris
+					["coord"] = { 34.7, 47.5, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(52067, {	-- Survivors
 					["sourceQuests"] = { 49755 },	-- Heavy Artillery
 					["isBreadcrumb"] = true,
@@ -1074,6 +1338,13 @@ _.Zones =
 					["sourceQuests"] = { 50504 },	-- Honey Glazed Sam
 					["provider"] = { "n", 134447 },	-- Lost Farmhand
 					["coord"] = { 72.7, 72.2, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(51200, {	-- The Black Sheep
+					["provider"] = { "n", 136414 },
+					["coord"] = { 31.8, 69.4, 942 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				
@@ -1169,6 +1440,18 @@ _.Zones =
 				}),
 				
 				
+				q(50635, {	-- The Shifting Tides
+					["sourceQuests"] = {
+						50616,	-- A Bit of a Bind
+						50621,	-- Caught in the Net
+						50614,	-- Freedom For the Sea
+					},
+					["provider"] = { "n", 131002 },	-- Lieutenant Bauer
+					["coord"] = { 30.2, 59.2, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(50777, {	-- The Storm Awakens
 					["sourceQuests"] = { 50612 },	-- A House Divided
 					["provider"] = { "n", 135534 },	-- Brother Pike
@@ -1202,7 +1485,7 @@ _.Zones =
 						49746,	-- Dousing the Flames
 						49745,	-- You Have Their Orders
 					},
-					["isBreadcrumb"] = true,
+					["isBreadcrumb"] = true,	-- for "A Bit of a Bind" and "Caught in the Net"
 					["provider"] = { "n", 131004 },	-- Squire Augustus III
 					["coord"] = { 59.4, 69.9, 942 },
 					["races"] = ALLIANCE_ONLY,
@@ -1221,6 +1504,14 @@ _.Zones =
 					["sourceQuests"] = { 51554 },	-- Reloading
 					["provider"] = { "n", 134720 },	-- Leo Shealds
 					["coord"] = { 42.9, 56.6, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(51218, {	-- Undelivered Package
+					["isBreadcrumb"] = true,	-- for "Be a Dear"
+					["provider"] = { "o", 288167 },	-- Marie's Package
+					["coord"] = { 38.4, 62.9, 942 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				
@@ -1255,6 +1546,21 @@ _.Zones =
 					["sourceQuests"] = { 50742 },	-- All Laid Out For Us
 					["provider"] = { "n", 134720 },	-- Leo Shealds
 					["isWeekly"] = true,
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(51204, {	-- WANTED: Razorclaw Alpha
+					["provider"] = { "o", 287958 },	-- Bulletin Board
+					["coord"] = { 30.6, 68.1, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(49730, {	-- WANTED: Thundersnout
+				--	unknown SQ
+					["provider"] = { "o", 287958 },	-- Bulletin Board
+					["coord"] = { 30.6, 68.1, 942 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				
@@ -1300,6 +1606,14 @@ _.Zones =
 				}),
 				
 				
+				q(51208, {	-- Wheat A Minute
+					["sourceQuests"] = { 51504 },	-- Cookie Delivery
+					["provider"] = { "n", 136574 },	-- Charles Davenport
+					["coord"] = { 36.1, 74.6, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(52065, {	-- Worse Than it Looks
 				--	may also require 'smells like trouble' and 'dangerous game'
 					["sourceQuests"] = { 50909 },	-- Never Outgunned
@@ -1317,6 +1631,23 @@ _.Zones =
 				}),
 				
 				
+				q(50773, {	-- You're a Shark
+					["sourceQuests"] = {
+						50645,	-- Eeling in a Big One
+						50649,	-- Filching From Thieves
+					},
+					["provider"] = { "n", 131014 },	-- Rikal
+					["coord"] = { 34.9, 47.7, 942 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(158680),	-- Rikal's Ritual Beads
+					},
+				}),
+
+
+
+
+
 			--[[
 				
 					["sourceQuests"] = {  },	-- 
@@ -1345,12 +1676,6 @@ _.Zones =
 					-- ["sourceQuests"] = { 51552 },	-- The Days Are Just Packed ??? (verification required)
 					["coord"] = { 57.6, 66.4, 942 },
 				})),
-				a(o(282448, {	-- Wanted Poster
-					["coord"] = { 46.0, 61.8, 942 },
-					["g"] = {
-						a(q(49730)),	-- WANTED: Thundersnout [Source Quest Unknown]
-					},
-				})),
 				a(q(50133, {	-- Weed Whacking (Objective)
 					["provider"] = { "n", 132118 },	-- Farmer Burton
 					["sourceQuests"] = { 50158 },	-- Checking Out the Collapse ??? This isn't required)
@@ -1358,20 +1683,7 @@ _.Zones =
 				})),
 			}),
 			n(-17,  {	-- Quests
-				q(50616, {	-- A Bit of a Bind
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(160345),	-- Zeth'jir Seacaller Signet
-						i(160371),	-- Tidespeaker Belt
-						i(160374),	-- Darkwater Waistcord
-						i(160377),	-- Stormchaser Chain
-						i(160380),	-- Dread Corsair Warbelt
-					},
-				}),
 				q(50694, {	-- A Bloody Mess
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50705, {	-- A Snake with Three Heads
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50132, {	-- A Sticky Proposition (looks like this never made it out of beta)
@@ -1385,16 +1697,7 @@ _.Zones =
 				q(51354, {	-- Anger in a Bottle
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(50672, {	-- Any Ammo Will Do
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51205, {	-- Aww, Rats!
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(49908, {	-- Back to Brennadam
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51251, {	-- Basement Dwellers
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51386, {	-- Battle Victorious
@@ -1407,9 +1710,6 @@ _.Zones =
 					i(160379),	-- Stormchaser Buckle
 					i(160382), -- Dread Corsair Cincture
 				}),
-				q(51214, {	-- Be A Dear
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(51545),	-- Breaker Bad
 				{	-- Bumbles the Bee
 					["questID"] = 53347,
@@ -1417,23 +1717,8 @@ _.Zones =
 					["provider"] = { "n", 131793 },	-- Ancel Mildenhall
 					["description"] = "First obtain an Annealed Honey Amulet from mobs in the Mildenhall Meadery area in Stormsong Valley.  Give the amulet to Rosaline Mildenhall in Boralus.  She will give you a letter.  Give the letter to Ancel Mildenhall, and this questline will then become available.",
 				},
-				q(50621, {	-- Caught in the Net
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50706, {	-- Clearing the Delta
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(51110, {	-- Clearing the Skies (looks like this never made it out of beta)
 					["u"] = 1,
-				}),
-				q(51504, {	-- Cookie Delivery
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51335, {	-- Cookies and Cream
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51203, {	-- Cry Wolf
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52130, {	-- Deadliest Cache: Carpe Diem
 					["races"] = ALLIANCE_ONLY,
@@ -1458,51 +1743,12 @@ _.Zones =
 				q(51756, {	-- Economic Downturn (looks like this never made it out of beta)
 					["u"] = 1,
 				}),
-				q(50645, {	-- Eeling in a Big One
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51207, {	-- Ettin It Done
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(160333),	-- Tidespeaker Shoes
-						i(160336),	-- Darkwater Footwraps
-						i(160339),	-- Stormchaser Footguards
-						i(160342),	-- Dread Corsair Footguards
-						i(160383),	-- Tidespeaker Wristwraps
-						i(160386),	-- Darkwater Wristwraps
-						i(160389),	-- Stormchaser Bindings
-						i(160392),	-- Dread Corsair Armguards
-					},
-				}),
 				q(49732, {	-- Evacuate! (looks like this never made it out of beta)
 					["u"] = 1,
 				}),
 				q(51540),	-- Explosive Situation
-				q(50644, {	-- Facing the Invaders
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(51750, {	-- Field Promotions (looks like this never made it out of beta)
 					["u"] = 1,
-				}),
-				q(50649, {	-- Filching from Thieves
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50614, {	-- Freedom for the Sea
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 50614 },
-				}),
-				q(49831, {	-- From the Depths
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(160519),	-- Fort Daelin Speargun
-						i(155219),	-- Zeth'jir Scaleguard Pillar
-						i(160521),	-- Kellam's Longknife
-						i(155198),	-- Fort Daelin Handaxe
-						i(155211),	-- Storm's Wake Truncheon
-						i(155217),	-- Proudmoore Battalion Pike
-						i(155226),	-- Storm's Wake Baton
-						i(155212),	-- Zeth'jir Tidemaiden Scepter
-					},
 				}),
 				i(160897, {	-- Grizz's Lunchbox (poosible this did not make it out of beta, cannot find info on where item is found but is linked to assoicated quest on wowpedia)
 					["u"] = 1,
@@ -1512,21 +1758,6 @@ _.Zones =
 						}),
 					},
 				}),
-				{	-- Gunpowder Plot
-					["questID"] = 51492,	-- Gunpowder Plot
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 136574 },	-- Charles Davenport
-					["g"] = {
-						i(160350),	-- Darkwater Handwraps
-						i(160356),	-- Dread Corsair Gloves
-						i(160353),	-- Stormchaser Handguards
-						i(160347),	-- Tidespeaker Grips
-						i(160362),	-- Darkwater Britches
-						i(160368),	-- Dread Corsair Pants
-						i(160365),	-- Stormchaser Pants
-						i(160359),	-- Tidespeaker Pantaloons
-					},
-				},
 				q(52068, {	-- Helping Out, Somewhere Else (appears to be a breadcrumb based on wowpedia)
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -1559,12 +1790,6 @@ _.Zones =
 				q(50383, {	-- Mankrik's Wrath (looks like this never made it out of beta)
 					["u"] = 1,
 				}),
-				q(51209, {	-- Mighty Grokkfist
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51215, {	-- Milking Goats
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(51202, {	-- Millstone Hamlet Quest Template (looks like this never made it out of beta)
 					["u"] = 1,
 				}),
@@ -1575,28 +1800,11 @@ _.Zones =
 				q(50815, {	-- Orcs Versus Humans (looks like this never made it out of beta)
 					["u"] = 1,
 				}),
-				q(50679, {	-- Piercing the Shield
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(50907, {	-- Poor Souls (looks like this never made it out of beta)
 					["u"] = 1,
 				}),
 				q(51724, {	-- Powered Up (looks like this never made it out of beta)
 					["u"] = 1,
-				}),
-				q(50698, {	-- Problem Solving with Gunpowder
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50653, {	-- Reclaiming our Defenses
-					["provider"] = { "n", 131003 },	-- Specialist Wembley
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(160337),	-- Darkwater Footpads
-						i(160343),	-- Dread Corsair Boots
-						i(155232),	-- Proudmoore Battalion Cloak
-						i(160340),	-- Stormchaser Treads
-						i(160334),	-- Tidespeaker Footwraps
-					},
 				}),
 				q(49742, {	-- Respect Your Elders (looks like this never made it out of beta)
 					["u"] = 1,
@@ -1610,24 +1818,8 @@ _.Zones =
 				q(49743, {	-- Shoot First, Questions Later (looks like this never made it out of beta)
 					["u"] = 1,
 				}),
-				q(53045, {	-- Surveying the Wharf  (appears to be a breadcrumb based on wowpedia)
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
-				q(51200, {	-- The Black Sheep
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(50743, {	-- The Immediate Problem (possible this did not make it out of beta, cannot locate more info than the quest name on wowhead and no info on wowpedia)
 					["u"] = 1,
-				}),
-				q(50635, {	-- The Shifting Tides
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51218, {	-- Undelivered Package
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51204, {	-- WANTED: Razorclaw Alpha
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53330, {	-- WANTED: Razorclaw Alpha
 					["races"] = HORDE_ONLY,
@@ -1639,12 +1831,6 @@ _.Zones =
 					["u"] = 1,
 				}),
 				q(51222, {	-- What's Yours is Mined
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51208, {	-- Wheat A Minute
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50773, {	-- You're a Shark
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),

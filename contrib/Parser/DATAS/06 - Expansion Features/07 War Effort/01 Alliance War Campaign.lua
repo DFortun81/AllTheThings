@@ -488,6 +488,7 @@ _.ExpansionFeatures =
 					}),
 				--	ALL 3 FOOTHOLDS END Here
 					q(51918, {	-- Uniting Kul Tiras
+						["altQuests"] = { 52450 },	-- Uniting Kul Tiras (version that alts unlock at 120)
 						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["lvl"] = 120,
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
@@ -496,9 +497,6 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(141605),	-- Flight Master Whistle
 						},
-						-- Grants credit for Horde Equivalent quests 51916 (probably main quest requiring rep) 52451 (probably alt quest)
-						-- Grants credit for Alliance whistle unlock, 51722
-						-- Turning in 52450, the alt version (once you've unlocked 51918 on your main via rep) grants credit for 51918 on the alt
 					}),
 				--	BLOOD ON THE SAND STARTS HERE
 					q(52027, {	-- The Vol'dun Plan
