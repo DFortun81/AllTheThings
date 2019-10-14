@@ -6,22 +6,6 @@ _.Zones =
 	m(113, {	-- Northrend
 		m(121, {	-- Zul'Drak
 			n(-17, {	-- Quests
---[[	Achievement info for Loremaster related zone quests or other quest achievements
-				ach(1596, {		-- Guru of Drakuru
-					crit(1),		-- Cleansing Drak'Tharon
-					crit(2),		-- Betrayal
-				}),
-				ach(36, {		-- The Empire of Zul'Drak
-					crit(1),		-- Sseratus
-					crit(2),		-- Quetz'lun
-					crit(3),		-- Akali
-					crit(4),		-- The Amphitheater of Anguish
-					crit(5),		-- Finding Allies
-					crit(6),		-- The Storm King's Crusade
-					crit(7),		-- Betrayal
-					crit(8),		-- The Argent Patrol
-				}),
-]]--
 --[[
 				q(12912),	-- A Great Storm Approaches
 				q(12555),	-- A Tangled Skein
@@ -86,17 +70,11 @@ _.Zones =
 				q(12916),	-- Our Only Hope
 				q(12596),	-- Pa'Troll
 				q(12740),	-- Parachutes for the Argent Crusade
-				q(11882, {	-- Playing with Fire
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(12650),	-- Plundering Their Own
 				q(12510),	-- Precious Elemental Fluids
 				q(12666),	-- Preparations for the Underworld
 				q(12584),	-- Pure Evil
 				q(12721),	-- Rampage
-				q(12770, {	-- Reallocating Resources
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(12635),	-- Relics of the Snow Leopard Goddess
 				q(12663),	-- Reunited
 				q(12676),	-- Sabotage
@@ -104,9 +82,6 @@ _.Zones =
 				q(12640),	-- Sealing the Rifts
 				q(12667),	-- Seek the Wind Serpent Goddess
 				q(12672),	-- Setting the Stage
-				q(12763, {	-- Shifting Priorities
-					["races"] = HORDE_ONLY,
-				}),
 				q(12643),	-- Silver Lining
 				q(12799),	-- Siphoning the Spirits
 				q(12553),	-- Skimmer Spinnerets

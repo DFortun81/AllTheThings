@@ -16,6 +16,30 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(1596, {	-- Guru of Drakuru
+					["collectible"] = false,
+					["g"] = {
+						crit(2),	-- Betrayal
+					},
+				}),
+				ach(36, {	-- The Empire of Zul'Drak
+					crit(1, {	-- Sseratus
+					}),
+					crit(2, {	-- Quetz'lun
+					}),
+					crit(3, {	-- Akali
+					}),
+					crit(4, {	-- The Amphitheater of Anguish
+					}),
+					crit(5, {	-- Finding Allies
+					}),
+					crit(6, {	-- The Storm King's Crusade
+					}),
+					crit(7, {	-- Betrayal
+					}),
+					crit(8, {	-- The Argent Patrol
+					}),
+				}),
 			}),
 		}),
 	}),
