@@ -37,7 +37,6 @@ _.Zones =
 					q(46945),	-- Si'vash
 					q(46762),	-- Storm Brew Hustle
 					q(46811),	-- The Broodmother's Wrath
-					q(46325),	-- The United Front
 				}),
 ]]--
 				q(45473, {	-- A Giant Problem
@@ -271,6 +270,10 @@ _.Zones =
 				q(46032, {	-- The Tormented Return
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
+				}),
+				q(46325, {	-- The United Front
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 				q(46063, {	-- The Wailing Dead
 					["lvl"] = 110,

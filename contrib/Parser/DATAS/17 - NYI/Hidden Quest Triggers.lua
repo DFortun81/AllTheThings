@@ -718,7 +718,7 @@ _.NeverImplemented =
 	--	Various non-zone bonus objectives
 		q(43483),	-- Fel Annihilation — bonus objective in "In Defense of the Exodar" scenario, unavailable afterwards
 		
-	-- Deaths of Chromie scenario
+	--	Deaths of Chromie scenario
 		q(48032),	-- FLAG - Hyjal Scene Seen - immediately upon entering Hyjal
 		q(47829),	-- FLAG - Hyjal complete - kill the fiery behemoth
 		q(47830),	-- FLAG - Andorhal Complete

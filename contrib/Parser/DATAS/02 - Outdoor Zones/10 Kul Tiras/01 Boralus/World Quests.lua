@@ -307,6 +307,12 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
+					q(50984, {	-- Work Order: Winter's Kiss
+						["isWorldQuest"] = true,
+						["requireSkill"] = 182,	-- Herbalism
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
+					}),
 					q(52366, {	-- Work Order: XA-1000 Surface Skimmer
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

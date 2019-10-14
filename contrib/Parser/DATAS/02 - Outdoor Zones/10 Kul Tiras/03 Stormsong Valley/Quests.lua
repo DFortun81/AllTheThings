@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
-			n(-17,	{	-- Quests [Finalized]
+			n(-17, {	-- Quests [Finalized]
 			--	NEED LEATHER / MAIL AZERITE REWARDS FOR "STORM'S JUDGMENT" QUEST.  it looks like the leather chest was added, but the shoulders are still missing.
 			--	NEED LEATHER / MAIL AZERITE REWARDS FOR "STORM'S END" QUEST.  same as above, leather helm is added but shoulders are missing.
 				q(50616, {	-- A Bit of a Bind
@@ -205,6 +205,26 @@ _.Zones =
 				}),
 				
 				
+				q(51386, {	-- Battle Victorious
+					["sourceQuests"] = {
+						51220,	-- Deep Sea Venture
+						51222,	-- What's Yours is Mined
+					},
+					["provider"] = { "n", 137554 },	-- Toki
+					["coord"] = { 34.3, 26.2, 942 },
+					["g"] = {
+						i(160335),	-- Tidespeaker Soles
+						i(160338),	-- Darkwater Waders
+						i(160341),	-- Stormchaser Footgear
+						i(160344),	-- Dread Corsair Stompers
+						i(160373),	-- Tidespeaker Waistwrap
+						i(160376),	-- Darkwater Clasp
+						i(160379),	-- Stormchaser Buckle
+						i(160382), -- Dread Corsair Cincture
+					},
+				}),
+				
+				
 				q(52070, {	-- Bauer Backup
 					["sourceQuests"] = { 51712 },	-- Eye For an Eye
 					["isBreadcrumb"] = true,	-- for "Freedom for the Sea"
@@ -282,6 +302,13 @@ _.Zones =
 					["provider"] = { "n", 134720 },	-- Leo Shealds
 					["coord"] = { 42.9, 56.6, 942 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(51545, {	-- Breaker Bad
+					["sourceQuests"] = { 51540 },	-- Explosive Situation
+					["provider"] = { "n", 137453 },	-- Loroja
+					["coord"] = { 35.7, 31.1, 942 },
 				}),
 				
 				
@@ -418,6 +445,38 @@ _.Zones =
 				}),
 				
 				
+				q(52130, {	-- Deadliest Cache: Carpe Diem
+					["sourceQuests"] = { 50418 },	-- Deadliest Cache: Sink and Swim
+					["provider"] = { "n", 133576 },	-- Coxswain Hook
+					["coord"] = { 26.0, 55.1, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(50391, {	-- Deadliest Cache: Gun Fishin'
+					["sourceQuests"] = { 50376 },	-- Deadliest Cache: Reel Big Fish
+					["provider"] = { "n", 133577 },	-- Master Gunner Line
+					["coord"] = { 25.9, 55.1, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(50376, {	-- Deadliest Cache: Reel Big Fish
+					["sourceQuests"] = { 53045 },	-- Surveying the Wharf
+					["provider"] = { "n", 133576 },	-- Coxswain Hook
+					["coord"] = { 26.0, 55.1, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(50418, {	-- Deadliest Cache: Sink and Swim
+					["sourceQuests"] = { 50391 },	-- Deadliest Cache: Gun Fishin'
+					["provider"] = { "n", 133578 },	-- "Sinker"
+					["coord"] = { 25.8, 55.2, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(50622, {	-- Deal's Off
 				--	according to wowhead you can pick this up from two separate NPCs.  i had done the goldfield's war/golden fields forever quests already, before finishing the chain that ends with 'farming stimulator,' so you might be able to pick it up from either 'farmer' depending on which of these chains you finish second.  the quest text says 'there's only one farm left,' so it'd make sense writing-wise if you had to complete the other two farms first.
 					["sourceQuests"] = {
@@ -427,6 +486,13 @@ _.Zones =
 					["provider"] = { "n", 132118 },	-- Farmer Burton
 					["coord"] = { 51.6, 66.0, 942 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(51220, {	-- Deep Sea Venture
+					["sourceQuests"] = { 51427 },	-- I Like Turtles
+					["provider"] = { "n", 137453 },
+					["coord"] = { 35.7, 31.2, 942 },
 				}),
 				
 				
@@ -518,6 +584,14 @@ _.Zones =
 				}),
 				
 				
+				q(51540, {	-- Explosive Situation
+				--	SQ needs confirmation
+					["sourceQuests"] = { 51353 },	-- Cave of Ai'twen
+					["provider"] = { "o", 290138 },	-- Bot Buster Bomb
+					["coord"] = { 37.8, 28.5, 942 },
+				}),
+				
+				
 				q(51712, {	-- Eye for an Eye
 					["sourceQuests"] = {
 						51728,	-- Burn it All Down
@@ -597,6 +671,13 @@ _.Zones =
 					["coord"] = { 35.7, 31.2, 942 },
 				}),
 				
+				
+				q(50386, {	-- Flush Them Out
+					["sourceQuests"] = { 50417 },	-- Ruin Has Come
+					["providers"] = { 133640, 143565 },	-- Wayne the Ancestral (A, H)
+					["coord"] = { 78.6, 54.8, 942 },
+				}),
+
 				
 				q(49886, {	-- Follow Your Nose
 				--	UNKNOWN SOURCE.  unavailable prior to doing BFA/zone intro.  first noticed after doing 'heavy artillery' but could just require zone intro.
@@ -845,6 +926,24 @@ _.Zones =
 					["provider"] = { "n", 130576 },	-- Brother Pike
 					["coord"] = { 59.2, 68.6, 942 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(51427, {	-- I like Turtles
+					["sourceQuests"] = {
+						51371,	-- Flavorable Offering
+						51221,	-- Response Required
+					},
+					["provider"] = { "n", 137453 },	-- Loroja <Watcher of Ai'twen>
+					["coord"] = { 35.7, 31.2, 942 },
+					["g"] = {
+						i(160395),	-- Ai'twen's Light
+						i(160396),	-- Ai'twen's Defender
+						i(160352),	-- Darkwater Grasps
+						i(160358),	-- Dread Corsair Grips
+						i(160355),	-- Stormchaser Handcovers
+						i(160349),	-- Tidespeaker Mittens
+					},
 				}),
 				
 				
@@ -1268,8 +1367,8 @@ _.Zones =
 				
 				
 				q(53045, {	-- Surveying the Wharf
+				--	may be a breadcrumb.  if it is, its follow-up ("Deadliest Catch: Reel Big Fish") has an unknown SQ, possibly "From the Depths"
 					["sourceQuests"] = { 49831 },	-- From the Depths
-					["isBreadcrumb"] = true,
 					["provider"] = { "n", 131001 },	-- Lieutenant Harris
 					["coord"] = { 34.7, 47.5, 942 },
 					["races"] = ALLIANCE_ONLY,
@@ -1606,6 +1705,14 @@ _.Zones =
 				}),
 				
 				
+				q(51222, {	-- What's Yours is Mined
+					["sourceQuests"] = { 51427 },	-- I Like Turtles
+					["provider"] = { "n", 137453 },
+					["coord"] = { 35.7, 31.2, 942 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
 				q(51208, {	-- Wheat A Minute
 					["sourceQuests"] = { 51504 },	-- Cookie Delivery
 					["provider"] = { "n", 136574 },	-- Charles Davenport
@@ -1660,27 +1767,11 @@ _.Zones =
 
 			}),
 			n(-17,  {	-- Quests [Crieve]
-				a(q(50779, {	-- A Clean Slate
-					["provider"] = { "n", 135415 },	-- Umbral Hulk
-					["sourceQuests"] = { 50612 },	-- A House Divided
-					["coord"] = { 63.2, 41.2, 942 },
-					["description"] = "The Umbral Hulks will ruin your day unless you have a group. Do NOT try soloing them.",
-				})),
 				q(50385, {	-- Indefatigable Purpose
 					["g"] = {
 						i(157771),	-- Holy Water
 					},
 				}),
-				a(q(51534, {	-- The Battle for Brennadam (Objective)
-					["provider"] = { "n", 130694 },	-- Mayor Roz
-					-- ["sourceQuests"] = { 51552 },	-- The Days Are Just Packed ??? (verification required)
-					["coord"] = { 57.6, 66.4, 942 },
-				})),
-				a(q(50133, {	-- Weed Whacking (Objective)
-					["provider"] = { "n", 132118 },	-- Farmer Burton
-					["sourceQuests"] = { 50158 },	-- Checking Out the Collapse ??? This isn't required)
-					["coord"] = { 51.5, 65.9, 942 },
-				})),
 			}),
 			n(-17,  {	-- Quests
 				q(50694, {	-- A Bloody Mess
@@ -1700,39 +1791,14 @@ _.Zones =
 				q(49908, {	-- Back to Brennadam
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(51386, {	-- Battle Victorious
-					i(160335),	-- Tidespeaker Soles
-					i(160338),	-- Darkwater Waders
-					i(160341),	-- Stormchaser Footgear
-					i(160344),	-- Dread Corsair Stompers
-					i(160373),	-- Tidespeaker Waistwrap
-					i(160376),	-- Darkwater Clasp
-					i(160379),	-- Stormchaser Buckle
-					i(160382), -- Dread Corsair Cincture
-				}),
-				q(51545),	-- Breaker Bad
-				{	-- Bumbles the Bee
-					["questID"] = 53347,
+				q(53347, {	-- Bumbles the Bee
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 131793 },	-- Ancel Mildenhall
 					["description"] = "First obtain an Annealed Honey Amulet from mobs in the Mildenhall Meadery area in Stormsong Valley.  Give the amulet to Rosaline Mildenhall in Boralus.  She will give you a letter.  Give the letter to Ancel Mildenhall, and this questline will then become available.",
-				},
+				}),
 				q(51110, {	-- Clearing the Skies (looks like this never made it out of beta)
 					["u"] = 1,
 				}),
-				q(52130, {	-- Deadliest Cache: Carpe Diem
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50391, {	-- Deadliest Cache: Gun Fishin'
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50376, {	-- Deadliest Cache: Reel Big Fish
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50418, {	-- Deadliest Cache: Sink and Swim
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51220),	-- Deep Sea Venture
 				q(53097),	-- Despondent Ablutions
 				q(51066, {	-- Destroy Mine Carts (looks like this never made it out of beta)
 					["u"] = 1,
@@ -1746,7 +1812,6 @@ _.Zones =
 				q(49732, {	-- Evacuate! (looks like this never made it out of beta)
 					["u"] = 1,
 				}),
-				q(51540),	-- Explosive Situation
 				q(51750, {	-- Field Promotions (looks like this never made it out of beta)
 					["u"] = 1,
 				}),
@@ -1765,18 +1830,6 @@ _.Zones =
 				q(50060, {	-- Honey, Slimes! (looks like this never made it out of beta)
 					["u"] = 1,
 				}),
-				{	-- I like Turtles
-					["questID"] = 51427,	-- I like Turtles
-					["provider"] = { "n", 137453 },	-- Loroja <Watcher of Ai'twen>
-					["g"] = {
-						i(160395),	-- Ai'twen's Light
-						i(160396),	-- Ai'twen's Defender
-						i(160352),	-- Darkwater Grasps
-						i(160358),	-- Dread Corsair Grips
-						i(160355),	-- Stormchaser Handcovers
-						i(160349),	-- Tidespeaker Mittens
-					},
-				},
 				q(51557, {	-- Irontide Warning (possible this did not make it out or beta, cannot locate more info than the quest name on wowhead and no info on wowpedia)
 					["u"] = 1,
 				}),
@@ -1830,14 +1883,8 @@ _.Zones =
 				q(51708, {	-- Warfang Hold Quest Template (looks like this never made it out of beta)
 					["u"] = 1,
 				}),
-				q(51222, {	-- What's Yours is Mined
-					["races"] = ALLIANCE_ONLY,
-				}),
 			}),
 		--[[	raw quest list to check against
-				q(50616, {	-- A Bit of a Bind
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(50694, {	-- A Bloody Mess
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1849,9 +1896,6 @@ _.Zones =
 				q(56108),	-- A New Queen
 				q(56112),	-- A Royal Awakening
 				q(51354, {	-- Anger in a Bottle
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50367, {	-- Anger in a Bottle
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51488, {	-- Archived Knowledge
@@ -2145,7 +2189,6 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(50386),	-- Flush Them Out
 
 				q(49886, {	-- Follow Your Nose
 					["races"] = ALLIANCE_ONLY,
