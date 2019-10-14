@@ -444,9 +444,13 @@ _.Zones =
 					i(143695),	-- Ambition of the Forlorn
 					i(143694),	-- Aristocratic Menace
 					i(141264),	-- Bitestone Fury
+					i(140080),	-- Everchill Pearl
 					i(141275),	-- Fertile Soil
+					i(141265),	-- Gift of Flame
 					i(141270),	-- Restless Dreams
 					i(143700),	-- Stoic Hibernation
+					i(141263),	-- Stonedark Idol
+					i(140079),	-- Stormforged Fist
 				}),
 				i(135511),	-- Thick Slab of Bacon. You get it for a split second after completing a bacon wq
 				i(137212),	-- Cut Skystone. You get it for a split second after completing the jewelcrafter daily
