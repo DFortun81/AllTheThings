@@ -18,7 +18,7 @@ _.Zones =
 					["provider"] = { "n", 27227 },	-- Prospector Rokar
 					["sourceQuest"] = 12197,	-- We Have the Power
 				}),
-				q(12279, {	-- A Bear of an Appetite -- aa
+				q(12279, {	-- A Bear of an Appetite
 					["coord"] = { 69.0, 40.0, 116 },
 					["provider"] = { "n", 26484 },	-- Hugh Glass
 				}),
@@ -46,7 +46,7 @@ _.Zones =
 					["provider"] = { "n", 26932 },	-- Petrov
 					["sourceQuest"] = 12159,	-- Souls at Unrest
 				}),
-				q(12246, {	-- A Possible Link
+				q(12246, {	-- A Possible Link (A)
 					["coord"] = { 31.1, 59.4, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27295 },	-- Hierophant Thayreen
@@ -61,7 +61,7 @@ _.Zones =
 						i(39091),	-- Blood-Spattered Spaulders
 					},
 				}),
-				q(12229, {  -- A Possible Link
+				q(12229, {  -- A Possible Link (H)
 					["coord"] = { 22.5, 62.8, 116 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27262 },	-- Windseer Grayhorn
@@ -124,7 +124,7 @@ _.Zones =
 					["provider"] = { "n", 26875 },	-- Lieutenant Dumont
 					["sourceQuest"] = 12294,	-- A Tentative Pact
 				}),
-				q(12074, {	-- An Expedient Ally -- aa
+				q(12074, {	-- An Expedient Ally
 					["coord"] = { 65.1, 47.6, 116 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26666 },	-- Scout Vor'takh
@@ -176,7 +176,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(12444, {	-- Blackriver Skirmish -- aa
+				q(12444, {	-- Blackriver Skirmish
 					["coord"] = { 29.9, 59.7, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -308,7 +308,7 @@ _.Zones =
 						i(38747),	-- Mildly Tarnished Ring
 					},
 				}),
-				q(12314, {	-- Down With Captain Zorna! -- aa
+				q(12314, {	-- Down With Captain Zorna!
 					["coord"] = { 22.1, 81.2, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -330,7 +330,7 @@ _.Zones =
 						i(39095),	-- Hammer-Holder's Gauntlets
 					},
 				}),
-				q(12082, {	-- Dun-da-Dun-tah! -- aa
+				q(12082, {	-- Dun-da-Dun-tah!
 					["coord"] = { 69.4, 17.4, 116 },
 					["provider"] = { "n", 26814 },	-- Harrison Jones
 					["description"] = "Inside the |cFFFFD700Drakil'jin Ruins|r.",
@@ -379,7 +379,7 @@ _.Zones =
 					["provider"] = { "n", 27581 },	-- Ruuna the Blind
 					["sourceQuest"] = 12327,	-- Out of Body Experience
 				}),
-				q(11984, {	-- Filling the Cages -- aa
+				q(11984, {	-- Filling the Cages
 					["coord"] = { 16.1, 47.6, 116 },
 					["provider"] = { "n", 26424 },	-- Samir
 					["sourceQuests"] = {
@@ -395,7 +395,7 @@ _.Zones =
 						i(39132),	-- Sword of the Caged Mind
 					},
 				}),
-				q(11981, {	-- Find Kurun! -- aa
+				q(11981, {	-- Find Kurun!
 					["coord"] = { 63.6, 23.1, 116 },
 					["provider"] = { "n", 26335 },	-- Fallen Earthen Warrior
 					["isBreadcrumb"] = true,
@@ -436,7 +436,7 @@ _.Zones =
 					["provider"] = { "n", 26860 },	-- Conqueror Krenna
 					["sourceQuest"] = 12423,	-- Mikhail's Journal
 				}),
-				q(12175, {  -- Grey Worg Hides -- aa
+				q(12175, {  -- Grey Worg Hides
 					["coord"] = { 22.0, 65.1, 116 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27037 },	-- Hidetrader Jun'ik
@@ -490,7 +490,7 @@ _.Zones =
 						i(39080),	-- Grips of Flawed Temper
 					},
 				}),
-				q(12116, {	-- It Takes Guts.... -- aa
+				q(12116, {	-- It Takes Guts....
 					["coord"] = { 73.9, 34.1, 116 },
 					["provider"] = { "n", 26886 },	-- Kraz
 				}),
@@ -530,7 +530,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(12316, {	-- Keep Them at Bay! (A) -- aa
+				q(12316, {	-- Keep Them at Bay! (A)
 					["coord"] = { 22.0, 81.3, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -552,7 +552,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(12289, {	-- Kick 'Em While They're Down -- aa
+				q(12289, {	-- Kick 'Em While They're Down
 					["coord"] = { 39.3, 43.8, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -568,7 +568,7 @@ _.Zones =
 					["provider"] = { "n", 26420 },	-- Gavrock
 					["sourceQuest"] = 12093,	-- Runes of Compulsion
 				}),
-				q(12296, {	-- Life or Death -- aa
+				q(12296, {	-- Life or Death
 					["coord"] = { 40.4, 42.6, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -579,7 +579,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(12292, {	-- Local Support -- aa
+				q(12292, {	-- Local Support
 					["coord"] = { 31.8, 60.1, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26875 },	-- Lieutenant Dumont
@@ -623,18 +623,18 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 37830 },	-- Mikhail's Journal
 				}),
-				q(12225, {	-- Mmm... Amberseeds! -- aa
+				q(12225, {	-- Mmm... Amberseeds!
 					["coord"] = { 31.8, 59.5, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["model"] = 202297,
 					["provider"] = { "o", 188667 },	-- Amberseed
 				}),
-				q(12414, {	-- Mounting Up -- aa
+				q(12414, {	-- Mounting Up
 					["coord"] = { 59.0, 26.6, 116 },
 					["provider"] = { "n", 26377 },	-- Squire Percy
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(12027, {	-- Mr. Floppy's Perilous Adventure -- aa
+				q(12027, {	-- Mr. Floppy's Perilous Adventure
 					["coord"] = { 49.2, 34.1, 116 },
 					["provider"] = { "n", 26588 },	-- Emily
 					["races"] = ALLIANCE_ONLY,
@@ -664,7 +664,7 @@ _.Zones =
 					["provider"] = { "o", 188365 },	-- Heart of the Ancients
 					["sourceQuest"] = 12042,	-- Heart of the Ancients
 				}),
-				q(12113, {	-- Nice to Meat You -- aa
+				q(12113, {	-- Nice to Meat You
 					["coord"] = { 73.7, 34.0, 116 },
 					["provider"] = { "n", 26884 },	-- Harkor
 				}),
@@ -701,7 +701,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(12268, {	-- Pieces Parts -- aa
+				q(12268, {	-- Pieces Parts
 					["coord"] = { 39.6, 43.3, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -730,7 +730,7 @@ _.Zones =
 						i(39078),	-- Whispering Stompers
 					},
 				}),
-				q(11982, {	-- Raining Down Destruction -- aa
+				q(11982, {	-- Raining Down Destruction
 					["coord"] = { 65.7, 17.7, 116 },
 					["provider"] = { "n", 26260 },	-- Kurun
 					["sourceQuests"] = {
@@ -743,13 +743,13 @@ _.Zones =
 					["provider"] = { "n", 26260 },	-- Kurun
 					["sourceQuest"] = 11982,	-- Raining Down Destruction
 				}),
-				q(12770, {	-- Reallocating Resources -- aa
+				q(12770, {	-- Reallocating Resources
 					-- NOTE: This quest is mutually exclusive with 12789 (Into the Breach) from Dragonblight
 					["coord"] = { 59.4, 26.0, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26212 },	-- Captain Gryan Stoutmantle
 				}),
-				q(12212, {	-- Replenishing the Storehouse -- aa
+				q(12212, {	-- Replenishing the Storehouse
 					["coord"] = { 32.0, 59.9, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27277 },	-- Master Woodsman Anderhol
@@ -872,17 +872,17 @@ _.Zones =
 					["provider"] = { "n", 26886 },	-- Kraz
 					["sourceQuest"] = 12120,	-- Drak'aguul's Mallet
 				}),
-				q(12443, {	-- Seeking Solvent (A) -- aa
+				q(12443, {	-- Seeking Solvent (A)
 					["coord"] = { 23.0, 80.1, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27495 },	-- Barblefink
 				}),
-				q(12433, {	-- Seeking Solvent (H) -- aa
+				q(12433, {	-- Seeking Solvent (H)
 					["coord"] = { 11.1, 76.6, 116 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27565 },	-- Gurtor
 				}),
-				q(12763, {	-- Shifting Priorities -- aa
+				q(12763, {	-- Shifting Priorities
 					["coord"] = { 65.1, 47.6, 116 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26666 },	-- Scout Vor'takh
@@ -903,7 +903,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(12244, {	-- Shredder Repair -- aa
+				q(12244, {	-- Shredder Repair
 					["coord"] = { 39.5, 43.5, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -914,7 +914,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(12323, {	-- Smoke 'Em Out (A) -- aa
+				q(12323, {	-- Smoke 'Em Out (A)
 					["coord"] = { 21.9, 80.7, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -925,7 +925,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(12324, {	-- Smoke 'Em Out (H) -- aa
+				q(12324, {	-- Smoke 'Em Out (H)
 					["coord"] = { 11.3, 76.7, 116 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -936,7 +936,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(11998, {	-- Softening the Blow -- aa
+				q(11998, {	-- Softening the Blow
 					["coord"] = { 59.4, 26.0, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26212 },	-- Captain Gryan Stoutmantle
@@ -976,7 +976,7 @@ _.Zones =
 						i(39081),	-- Spiritforged Helm
 					},
 				}),
-				q(12436, {	-- Supplemental Income -- aa
+				q(12436, {	-- Supplemental Income
 					["coord"] = { 22.6, 66.1, 116 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26868 },	-- Provisioner Lorkran
@@ -1068,13 +1068,13 @@ _.Zones =
 					["provider"] = { "n", 27719 },	-- Grennix Shivwiggle
 					["sourceQuest"] = 12427,	-- The Conquest Pit: Bear Wrestling!
 				}),
-				q(11986, {	-- The Damaged Journal (A) -- aa
+				q(11986, {	-- The Damaged Journal (A)
 					["coord"] = { 64.2, 19.7, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["model"] = 200908,
 					["provider"] = { "o", 188261 },	-- Battered Journal
 				}),
-				q(12026, {	-- The Damaged Journal (H) -- aa
+				q(12026, {	-- The Damaged Journal (H)
 					["coord"] = { 64.2, 19.7, 116 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 188261 },	-- Battered Journal
@@ -1109,7 +1109,7 @@ _.Zones =
 					["provider"] = { "n", 27388 },	-- Sergeant Nazgrim
 					["sourceQuest"] = 12468,	-- The Conqueror's Task
 				}),
-				q(12415, {	-- The Horse Hollerer -- aa
+				q(12415, {	-- The Horse Hollerer
 					["coord"] = { 65.0, 47.8, 116 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26944 },	-- Soulok Stormfury
@@ -1126,13 +1126,13 @@ _.Zones =
 						i(39076),	-- Golem-Rider's Greaves
 					},
 				}),
-				q(12794, {	-- The Magical Kingdom of Dalaran -- aa
+				q(12794, {	-- The Magical Kingdom of Dalaran (A)
 					["coord"] = { 32.0, 59.8, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 29161 }, --	Magistrix Haelenai
 					["isBreadcrumb"] = true,
 				}),
-				q(12791, {	-- The Magical Kingdom of Dalaran -- aa
+				q(12791, {	-- The Magical Kingdom of Dalaran (H)
 					["coord"] = { 20.6, 64.2, 116 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 29160 },	-- Magistrix Phaelista
@@ -1156,7 +1156,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11986,	-- The Damaged Journal
 				}),
-				q(11993, {	-- The Runic Prophecies
+				q(11993, {	-- The Runic Prophecies (A)
 					["coord"] = { 59.7, 27.4, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26361 },	-- Torthen Deepdig
@@ -1168,7 +1168,7 @@ _.Zones =
 						i(39075),	-- Waywalker's Girdle
 					},
 				}),
-				q(12058, {  -- The Runic Prophecies
+				q(12058, {  -- The Runic Prophecies (H)
 					["coord"] = { 65.1, 47.7, 116 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26584 },	-- Sage Paluna
@@ -1212,17 +1212,17 @@ _.Zones =
 						i(38749),	-- Thane-Reaper's Signet
 					},
 				}),
-				q(12195, {	-- The Unexpected 'Guest' -- aa
+				q(12195, {	-- The Unexpected 'Guest'
 					["coord"] = { 65.2, 47.5, 116 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27221 },	-- Tormak the Scarred
 				}),
-				q(12215, {	-- Them or Us! -- aa
+				q(12215, {	-- Them or Us!
 					["coord"] = { 32.0, 59.9, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27277 },	-- Master Woodsman Anderhol
 				}),
-				q(12114, {	-- Therapy -- aa
+				q(12114, {	-- Therapy
 					["coord"] = { 73.7, 34.0, 116 },
 					["provider"] = { "n", 26884 },	-- Harkor
 					["g"] = {
@@ -1256,7 +1256,7 @@ _.Zones =
 					["provider"] = { "n", 26226 },	-- Brugar Stoneshear
 					["sourceQuest"] = 12002,	-- Brothers in Battle
 				}),
-				q(12249, {	-- Ursoc, the Bear God
+				q(12249, {	-- Ursoc, the Bear God (A)
 					["coord"] = { 31.1, 59.4, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27295 },	-- Hierophant Thayreen
@@ -1273,7 +1273,7 @@ _.Zones =
 						i(39173),	-- Bulwark of the Tormented God
 					},
 				}),
-				q(12236, {  -- Ursoc, the Bear God
+				q(12236, {  -- Ursoc, the Bear God (H)
 					["coord"] = { 22.5, 62.8, 116 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27262 },	-- Windseer Grayhorn
@@ -1328,7 +1328,7 @@ _.Zones =
 						12247,	-- Children of Ursoc
 					},
 				}),
-				q(12250, {	-- Vordrassil's Seeds
+				q(12250, {	-- Vordrassil's Seeds (A)
 					["coord"] = { 31.1, 59.4, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27295 },	-- Hierophant Thayreen
@@ -1342,7 +1342,7 @@ _.Zones =
 						i(38757),	-- Drape of the Possessive Soul
 					},
 				}),
-				q(12242, {  -- Vordrassil's Seeds
+				q(12242, {  -- Vordrassil's Seeds (H)
 					["coord"] = { 22.5, 62.8, 116 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27262 },	-- Windseer Grayhorn
@@ -1374,7 +1374,7 @@ _.Zones =
 					["provider"] = { "n", 26883 },	-- Raegar Breakbrow
 					["sourceQuest"] = 12129,	-- The Perfect Plan
 				}),
-				q(12307, {	-- Wolfsbane Root -- aa
+				q(12307, {	-- Wolfsbane Root
 					["coord"] = { 25.6, 33.3, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27545 },	-- Katja
