@@ -24,6 +24,11 @@ _.Zones =
 				p(535, {	-- Water Waveling
 					["crs"] = { 62820 },
 				}),
+				q(31934, {	-- Gutretch
+					["coord"] = { 13.2, 66.7, 121 },
+					["isDaily"] = true,
+					["provider"] = { "n", 66639 },
+				}),
 			}),
 		}),
 	}),
