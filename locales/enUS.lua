@@ -336,6 +336,7 @@ app.L = {
 		[-73] = "Interface\\Icons\\achievement_zone_silithus_01",							-- Call of the Scarab
 		[-75] = "Interface\\Icons\\Achievement_Zone_Blackrock_01", 							-- Detention Block
 		[-76] = "Interface\\Icons\\Achievement_Zone_Blackrock_01", 							-- Shadowforge City
+		[-77] = "Interface\\Icons\\Inv_archaeology_70_starlightbeacon",						-- Special
 		[-85] = "Interface\\Icons\\Achievement_BG_Xkills_AVgraveyard",						-- Graveyard (SM)
 		[-86] = "Interface\\Icons\\INV_Misc_Book_13",										-- Library (SM)
 		[-87] = "Interface\\Icons\\Garrison_Building_Armory",								-- Armory (SM)
