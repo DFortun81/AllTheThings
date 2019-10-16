@@ -211,7 +211,7 @@ _.Zones =
 				q(38052, {	-- Boarded!
 					["provider"] = { "n", 90749 },	-- Sky Admiral Rogers
 					["coord"] = { 33.7, 50.9, 634 },
-					["sourceQuest"] = 39800,	-- Greymane's Gambit
+					["sourceQuests"] = { 39800 },	-- Greymane's Gambit
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38816, {	-- Breaking the Bonespeakers
@@ -277,7 +277,7 @@ _.Zones =
 					["lvl"] = 120,
 					["coord"] = { 61.2, 68.1, 634 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 53781,	-- Eyir
+					["sourceQuests"] = { 53781 },	-- Eyir
 				}),
 				q(38624, {	-- Cry Thunder!
 					["provider"] = { "n", 92218 },	-- Thymjaris
@@ -549,6 +549,35 @@ _.Zones =
 					["coord"] = { 51.2, 57.1, 634 },
 					["provider"] = { "n", 107674 },		-- Snaggle Sixtrigger
 				}),
+				q(42736, {	-- Rune Ruination
+					["sourceQuests"] = { 42735 },	-- Malace in Vrykul Land
+					["provider"] = { "n", 108576 },	-- Malace Shade
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 64.9, 59.0, 634 },
+					["lvl"] = 110,
+				}),
+				q(42738, {	-- Rune Ruination: Runelord Ragnar
+					["sourceQuests"] = { 42736 },	-- Rune Ruination (must be in log)
+					["provider"] = { "o", 251220 },	-- Ragnar's Runestone
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 64.9, 58.9, 634 },
+					["lvl"] = 110,
+				}),
+				q(42739, {	-- Rune Ruination: Runesage Floki
+					["sourceQuests"] = { 42736 },	-- Rune Ruination (must be in log)
+					["provider"] = { "o", 251221 },	-- Floki's Runestone
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 64.9, 58.9, 634 },
+					["lvl"] = 110,
+				}),
+				q(42737, {	-- Rune Ruination: Runeskeld Rollo
+					["sourceQuests"] = { 42736 },	-- Rune Ruination (must be in log)
+					["description"] = "If the game doesn't properly display the mob's location, Rollo can be found in the cliffside room at 71.4, 39.0.",
+					["provider"] = { "o", 251218 },	-- Rollo's Runestone
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 64.9, 58.9, 634 },
+					["lvl"] = 110,
+				}),
 				q(40046, {	-- Scavenging the Shallows
 					["sourceQuests"] = { 39984 },	-- Remnants of the Past
 					["coord"] = { 59.0, 42.9, 634 },
@@ -663,6 +692,17 @@ _.Zones =
 						i(132852),	-- Horn of Helheim
 						i(132854),	-- Fel-Tainted Haze
 					},
+				}),
+				q(42749, {	-- Strange Bedfellows
+					["sourceQuests"] = {
+						42738,	-- Rune Ruination: Runelord Ragnar
+						42739,	-- Rune Ruination: Runesage Floki
+						42737,	-- Rune Ruination: Runeskelt Rollo
+					},
+					["provider"] = { "n", 108576 },	-- Malace Shade
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 64.9, 58.9, 634 },
+					["lvl"] = 110,
 				}),
 				q(38036, {	-- Supplies From the Skies
 					["sourceQuests"] = { 39800 },	-- Greymane's Gambit
@@ -884,6 +924,16 @@ _.Zones =
 						7,	-- Shaman (Enhancement)
 						9,	-- Warlock (Demonology)
 					},
+				}),
+				q(42752, {	-- Vault of the Wardens: Vault Break-In (not sure why there are 2 versions, but they complete each other)
+					["sourceQuests"] = { 42749 },	-- Strange Bedfellows
+					["classes"] = { 12 },	-- Demon Hunter
+					["lvl"] = 110,
+				}),
+				q(42753, {	-- Vault of the Wardens: Vault Break-In (not sure why there are 2 versions, but they complete each other)
+					["sourceQuests"] = { 42749 },	-- Strange Bedfellows
+					["classes"] = { 12 },	-- Demon Hunter
+					["lvl"] = 110,
 				}),
 				q(38815, {	-- Waking the Shieldmaiden
 					["sourceQuests"] = {
@@ -1128,10 +1178,6 @@ _.Zones =
 				q(47052),	-- Retribution: Fate of the Tideskorn
 				q(39946),	-- Right Tool for the Job
 				q(38803),	-- Rin'thissa
-				q(42736),	-- Rune Ruination
-				q(42738),	-- Rune Ruination: Runelord Ragnar
-				q(42739),	-- Rune Ruination: Runesage Floki
-				q(42737),	-- Rune Ruination: Runeskeld Rollo
 				q(39945),	-- Runes Within the Ruins
 				q(44155),	-- Searching For Clues
 				q(40603),	-- Seeking the Valkyra
@@ -1141,7 +1187,6 @@ _.Zones =
 				q(42194),	-- Stolen Honor
 				q(41039),	-- Stolen Knowledge
 				q(40131),	-- Stonehide Leather Sample
-				q(42749),	-- Strange Bedfellows
 				q(42651),	-- Svergan's Promise
 				q(38424),	-- Thane's Mead Hall
 				q(41163),	-- The Apocalypse Bringer

@@ -606,6 +606,7 @@ _.NeverImplemented =
 		q(48974),	-- Paragon of the Army of the Light — looks like this is an unused version and 48977 is the one that pops in-game
 		q(44455),	-- Downfall tracking — in Suramar, possibly tied to a Demon Hunter artifact?
 		q(41694),	-- World Quests Available — triggers when turning in "Uniting the Isles," along with the original "have all friendly reps" and present "just be 110" versions
+		q(42117),	-- Tracking Quest: Chapter 3 Completed — triggered when turning in "two worthies" after recruiting Belath Dawnblade and Matron Mother Malevolence on DH
 		
 	-- World Boss
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
@@ -683,11 +684,12 @@ _.NeverImplemented =
 		q(42285),	-- Azsuna - Treasure 029 - Nar'thalas 05 - Small — opened a treasure in Nar'thalas Academy near the Tidestone
 		q(42291),	-- Azsuna - Treasure 033 - Oceanus Cove 02 - Small — looted Small Treasure Chest inside Oceanus Cove
 		q(42297),	-- Azsuna - Treasure 039 (Large) - Mountain Top — looted treasure chest near Felwing encounter
+		q(40491),	-- Highmountain - Treasure 084 - Thunder Totem (13.6, 55.4, 750)
+		q(43868),	-- Treasure 033 - City - Lower City Boat — looted treasure chest on boat at (51.8, 82.2, 680)
 		q(38277),	-- Val'shara Treasure: Honey Hive (46.5, 86.3, 641)
 		q(38369),	-- Val'sharah - Treasure 006 - Ravencourt - twh — Small Treasure Chest (39.9, 54.6)
 		q(38387),	-- Val'sharah - Treasure 009 - Sabermaw Bluff (44.9, 82.6, 641)
 		q(39080),	-- Val'sharah - Treasure 032 - Heathrow Manor - twh — Small Treasure Chest inside the cellar of Heathrow Manor
-		q(40491),	-- Highmountain - Treasure 084 - Thunder Totem (13.6, 55.4, 750)
 		q(49264),	-- opening a Void-Seeped Cache in Mac'Aree
 		q(48361),	-- opening a Void-Seeped Cache in Mac'Aree
 		
@@ -854,20 +856,6 @@ _.NeverImplemented =
 	
 
 	--	TREASURES
-		q(51871),	-- Drustvar repeatable random chest
-		q(51875),	-- Drustvar repeatable random chest
-		q(51878),	-- Drustvar repeatable random chest
-		q(51882),	-- Drustvar repeatable random chest
-		q(51885),	-- Drustvar repeatable random chest
-		q(51896),	-- Drustvar repeatable random chest
-		q(51899),	-- Drustvar repeatable random chest
-		q(51902),	-- Drustvar repeatable random chest
-		q(51907),	-- Drustvar repeatable random chest
-		q(51910),	-- Drustvar repeatable random chest
-		q(51911),	-- Drustvar repeatable random chest
-		q(51912),	-- Drustvar repeatable random chest
-		q(51913),	-- Drustvar repeatable random chest
-		q(51914),	-- Drustvar repeatable random chest
 		q(50855),	-- Nazmir repeatable random chest
 		q(49885),	-- Nazmir repeatable random chest
 		q(50895),	-- Nazmir repeatable random chest
@@ -927,6 +915,27 @@ _.NeverImplemented =
 		q(53423),	-- for clicking on Lost Spawn of Krag'wa at { 28.89, 83.16, 863 }, in Nazmir
 		q(51163),	-- ??? plays during the cutscene when you walk across the bridge north of Brennadam in Stormsong Valley	
 		q(53202),	-- triggered when turning in #50264, "Free the Farmhands"
+		
+		
+	--	Drustvar
+		-- Bonus Objectives
+		q(48181),	-- Nooooope
+		q(50959),	-- Plundering Pirates
+		-- Chests
+		q(51871),	-- Drustvar repeatable random chest
+		q(51875),	-- Drustvar repeatable random chest
+		q(51878),	-- Drustvar repeatable random chest
+		q(51882),	-- Drustvar repeatable random chest
+		q(51885),	-- Drustvar repeatable random chest
+		q(51896),	-- Drustvar repeatable random chest
+		q(51899),	-- Drustvar repeatable random chest
+		q(51902),	-- Drustvar repeatable random chest
+		q(51907),	-- Drustvar repeatable random chest
+		q(51910),	-- Drustvar repeatable random chest
+		q(51911),	-- Drustvar repeatable random chest
+		q(51912),	-- Drustvar repeatable random chest
+		q(51913),	-- Drustvar repeatable random chest
+		q(51914),	-- Drustvar repeatable random chest
 
 
 	--	Stormsong Valley

@@ -447,6 +447,7 @@ _.Zones =
 					i(140080),	-- Everchill Pearl
 					i(141275),	-- Fertile Soil
 					i(141265),	-- Gift of Flame
+					i(143696),	-- Perilous Bargain
 					i(141270),	-- Restless Dreams
 					i(143700),	-- Stoic Hibernation
 					i(141263),	-- Stonedark Idol
