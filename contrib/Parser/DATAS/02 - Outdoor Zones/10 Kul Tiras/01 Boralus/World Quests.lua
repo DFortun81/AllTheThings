@@ -301,6 +301,12 @@ _.Zones =
 						["provider"] = { "n", 135808 },	-- Provisioner Fray
 						["coord"] = { 67.61, 21.81, 1161 },
 					}),
+					q(50995, {	-- Work Order: Shimmerscale
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = 393,	-- Skinning
+					}),
 					q(52392, {	-- Work Order: Ultramarine Pigment
 						["requireSkill"] = 773,	-- Inscription
 						["lvl"] = 120,

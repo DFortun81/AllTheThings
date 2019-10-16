@@ -1461,11 +1461,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(50995, {	-- Work Order: Shimmerscale
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(52417, {	-- Work Order: Shimmerscale Diving Helmet
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
