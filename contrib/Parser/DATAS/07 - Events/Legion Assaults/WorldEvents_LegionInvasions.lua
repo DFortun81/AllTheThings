@@ -15,6 +15,7 @@ _.WorldEvents =
 					118840,	-- Lord Commander Alexius
 					118975,	-- Xeritas
 				},
+				["isWorldQuest"] = true,
 				["repeatable"] = true,
 				["maps"] = {
 					619,	-- Stormheim Invasion Scenario

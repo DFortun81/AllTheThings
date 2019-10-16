@@ -14,6 +14,14 @@ _.ExpansionFeatures =
 								["races"] = HORDE_ONLY,
 								["provider"] = { "i", 115008 },	-- Enchanted Highmaul Bracer
 							}),
+							q(38290, {	-- Some Dust
+								["providers"] = {
+									{ "n", 91020 },	-- Enchantress Ismae
+									{ "n", 91029 },	-- Rath'thul Moonvale
+								},
+								["isDaily"] = true,
+								["cost"] = { "i", 109693, 50 },	-- 50x Draenic Dust
+							}),
 						}),
 					},
 				}),

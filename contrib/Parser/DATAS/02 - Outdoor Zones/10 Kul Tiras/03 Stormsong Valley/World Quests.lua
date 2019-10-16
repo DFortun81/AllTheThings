@@ -1238,11 +1238,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(50989, {	-- Work Order: Storm Silver Ore
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(52402, {	-- Work Order: Viridium
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -2023,6 +2018,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = 182,	-- Herbalism
+					}),
+					q(50989, {	-- Work Order: Storm Silver Ore
+						["isWorldQuest"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(50997, {	-- Work Order: Tidespray Linen
 						["isWorldQuest"] = true,

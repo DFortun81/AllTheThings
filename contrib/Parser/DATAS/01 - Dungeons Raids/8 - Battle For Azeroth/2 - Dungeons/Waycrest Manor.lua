@@ -14,21 +14,21 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		},
 		["g"] = {
 			n(-17, {	-- Quests
-				n(-34, {	-- World Quests
-					q(51213, {	-- Waycrest Manor: No need to Hag-gle
-						["collectible"] = false,
-						["lvl"] = 120,
-					}),
-					q(51212, {	-- Waycrest Manor: Witchy Kithcen
-						["collectible"] = false,
-						["lvl"] = 120,
-					}),
-				}),
 				q(50990, {	-- Cutting Edge Poultry Science
 					["description"] = "This quest pops up when killing mobs in the kitchen.  It is unknown for certain if the World Quest \"Witchy Kitchen\"  is required.",
 					["g"] = {
 						i(160940),	-- Intact Chicken Brain
 					},
+				}),
+			}),
+			n(-34, {	-- World Quests
+				q(51213, {	-- Waycrest Manor: No need to Hag-gle
+					["isWorldQuest"] = true,
+					["lvl"] = 120,
+				}),
+				q(51212, {	-- Waycrest Manor: Witchy Kithcen
+					["isWorldQuest"] = true,
+					["lvl"] = 120,
 				}),
 			}),
 			d(1,  {	-- Normal

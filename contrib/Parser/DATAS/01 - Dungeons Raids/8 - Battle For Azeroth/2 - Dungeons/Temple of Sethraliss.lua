@@ -11,12 +11,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		["groups"] = {
 			n(-34, {	-- World Quests
 				q(51378, {	-- Temple of Sethraliss: A Bazaar Menagerie
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
-					["collectible"] = false,
 				}),
 				q(51379, {	-- Temple of Sethraliss: Navigating Currents
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
-					["collectible"] = false,
 				}),
 			}),
 			d(1, {	-- Normal

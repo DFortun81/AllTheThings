@@ -11,7 +11,6 @@ _.Zones =
 
 					q(46136),	-- Gemcutter Needed
 					q(46134),	-- Gemcutter Needed
-					q(46139),	-- Gemcutter Needed
 					q(46135),	-- Gemcutter Needed
 					q(46138),	-- Gemcutter Needed
 					q(46137),	-- Gemcutter Needed
@@ -88,6 +87,11 @@ _.Zones =
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
 					},
+				}),
+				q(46139, {	-- Gemcutter Needed
+					["isWorldQuest"] = true,
+					["requireSkill"] = 755,	-- Jewelcrafting
+					["lvl"] = 110,
 				}),
 				q(41668, {	-- Vantus Rune Work Order: Il'gynoth, The Heart of Corruption
 					["lvl"] = 110,

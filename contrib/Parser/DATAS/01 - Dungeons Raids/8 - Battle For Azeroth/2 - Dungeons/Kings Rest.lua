@@ -10,12 +10,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		["groups"] = {
 			n(-34, {	-- World Quests
 				q(51501, {	-- King's Rest: Malfunction Junction
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
-					["collectible"] = false,
 				}),
 				q(51500, {	-- King's Rest: The Weaponmaster Walks Again
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
-					["collectible"] = false,
 				}),
 			}),
 			d(2,   {	-- Heroic

@@ -900,7 +900,10 @@ _.NeverImplemented =
 		q(54911),	-- Opening a Darkshore chest
 		q(53534),	-- when entering The Necropolis for the first time during "The Necropolis"
 		q(49695),	-- immediately after channeling on the drum finishes during "A Tribute For Death"
-		q(49367),	-- when returning to Zo'bal Ruins during "We'll Meet Again"
+		q(49367, {	-- when returning to Zo'bal Ruins during "We'll Meet Again"
+			["isWorldQuest"] = true,	-- without this field, this quest inexplicably shows up in /attwq for some characters
+			["races"] = HORDE_ONLY,	-- presumably, based on the description provided
+		}),
 		q(52294),	-- triggers with Krag'wa after accepting "The Last Witch Doctor of Krag'wa"
 		q(47530),	-- ???? [The Necropolis] (completed after soulbound, but not known)
 		q(47531),	-- triggered when turning in "Krag'wa the Terrible"

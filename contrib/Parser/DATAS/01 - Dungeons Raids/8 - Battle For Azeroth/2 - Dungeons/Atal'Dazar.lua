@@ -35,12 +35,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			n(-34, {	-- World Quests
 				q(49809, {	--  Atal'Dazar: From the Shadows
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
-					["collectible"] = false,
 				}),
 				q(49800, {	--  Atal'Dazar: Spiders!
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
-					["collectible"] = false,
 				}),
 			}),
 			d(1, {	-- Normal
