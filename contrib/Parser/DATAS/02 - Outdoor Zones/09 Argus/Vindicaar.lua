@@ -248,6 +248,12 @@ _.Zones =
 							i(151733),	-- Design: Empyrial Titan Crown (Rank 1)
 						},
 					}),
+					q(46938, {	-- Alone in the Abyss
+						["sourceQuests"] = { 48440 },	-- Into the Night
+						["provider"] = { "n", 126307 },	-- Prophet Velen
+						["coord"] = { 41.1, 24.3, 831 },
+						["lvl"] = 110,
+					}),
 					q(48078, {	-- Counterbalancing
 						["requireSkill"] = 165,	-- Leatherworking
 						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
@@ -283,6 +289,12 @@ _.Zones =
 						["isWeekly"] = true,
 						["coord"] = { 40.1, 21.3, 831 },
 					}),
+					q(48513, {	-- Invasion Point Offensive
+					--	might unlock differently/have different SQ(s) on main character vs alts.
+						["sourceQuests"] = { 48440 },	-- Into the Night
+						["provider"] = { "n", 120978 },	-- Illidan Stormrage
+						["coord"] = { 40.2, 21.4, 831 },
+					}),
 					q(48074, {	-- Looming Over Me
 						["requireSkill"] = 197,	-- Tailoring
 						["sourceQuests"] = { 46941 },	-- The Path Forward
@@ -297,7 +309,9 @@ _.Zones =
 						},
 					}),
 					q(49445, {	-- The Prime Exchange
+						["sourceQuests"] = { 48440 },	-- Into the Night
 						["provider"] = { "n", 129674 },	-- Maras
+						["coord"] = { 40.4, 64.7, 832 },
 					}),
 					q(48069, {	-- The Wrench Calls
 						["requireSkill"] = 202,	-- Engineering

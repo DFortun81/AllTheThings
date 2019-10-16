@@ -87,7 +87,6 @@ _.Zones =
 				q(48448),	-- Hindering the Legion War Machine
 				q(47104),	-- Imprisoned Inquisitor
 				q(49293),	-- Invasion Onslaught
-				q(48513),	-- Invasion Point Offensive
 				q(47688),	-- Invasive Species
 				q(46834),	-- Khazaduum, First of His Name
 				q(48668),	-- Lightforged Beacon: City Center

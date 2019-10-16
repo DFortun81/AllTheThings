@@ -10,9 +10,6 @@ _.Zones =
 			["maps"] = {
 				98,		-- Tides' Hollow
 				99,		-- Stillpine Hold
-				892,	-- Azuremyst Isle (Vindicaar)
-				893,	-- Azuremyst Isle (Vindicaar)
-				894,	-- Azuremyst Isle
 			},
 			["lvl"] = 1,
 		}),

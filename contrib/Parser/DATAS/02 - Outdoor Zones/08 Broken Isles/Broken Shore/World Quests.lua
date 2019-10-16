@@ -15,12 +15,10 @@ _.Zones =
 					q(46947),	-- Brutallus
 					q(45531),	-- Creeping Fel
 					q(45969),	-- Defense of the Ancient
-					q(46829),	-- Elemental Abuse
 					q(46288),	-- Everyone to the Front
 					q(46077),	-- Felbound Spirits
 					q(40390),	-- Hallowed Ground
 					q(45541),	-- How Do YOU Like It?!
-					q(46817),	-- Infernal Downfall
 					q(45743),	-- Judgment of Odyn
 					q(45776),	-- Keys are a Crutch
 					q(45653),	-- Kill it with Fire!
@@ -115,6 +113,10 @@ _.Zones =
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 				}),
+				q(46829, {	-- Elemental Abuse
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 				q(45878, {	-- Exterminating with Impunity
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
@@ -173,6 +175,10 @@ _.Zones =
 					["lvl"] = 110,
 					["filterID"] = 101,	-- Battle Pet
 					["isWorldQuest"] = true,
+				}),
+				q(46817, {	-- Infernal Downfall
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 				q(45472, {	-- Kraken Eggs
 					["lvl"] = 110,

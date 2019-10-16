@@ -106,7 +106,6 @@ _.Zones =
 				q(49189),	-- Intact Demon Eyes
 				q(49029),	-- Invasion of Space
 				q(49293),	-- Invasion Onslaught
-				q(48513),	-- Invasion Point Offensive
 				q(47182),	-- Long Overdue
 				q(48074),	-- Looming Over Me
 				q(49191),	-- Many More Intact Demon Eyes

@@ -293,6 +293,7 @@ _.Zones =
 					["provider"] = { "n", 90431 },	-- Archmage Ansirem Runeweaver
 				}),
 				q(46730, {	-- Armies of Legionfall
+					["sourceQuests"] = { 45727 },	-- Uniting the Isles
 					["provider"] = { "n", 120215 },	-- Archmage Khadgar
 					["coord"] = { 66.2, 42.6, 627 },
 					["lvl"] = 110,
@@ -352,6 +353,9 @@ _.Zones =
 				q(46734, {	-- Assault on Broken Shore
 					["sourceQuests"] = { 46730 },	-- Armies of the Legionfall
 					["provider"] = { "n", 120215 },	-- Archmage Khadgar
+					["coord"] = { 69.4, 43.5, 627 },
+					["maps"] = { 858 },	-- Assault on Broken Shore (scenario)
+					["lvl"] = 110,
 				}),
 				q(44400, {	-- Assault on Violet Hold: Purple Pain
 					["provider"] = { "n", 113813 },	-- Lieutenant Sinclari
@@ -382,8 +386,10 @@ _.Zones =
 						45061,	-- Scrolls of the Faldrottin
 						47000,	-- The Council's Call
 					},
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
+					["coord"] = { 28.8, 48.4, 627 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
 				}),
 				q(44766, {	-- Backup Plan
 					["sourceQuests"] = { 45437 },	-- An Urgent Situation
@@ -870,12 +876,14 @@ _.Zones =
 					},
 					["u"] = 40,
 				}),
-				q(47043, {	-- Havoc: The Thieving Apprentice (QG in Dalaran, secondary QG ID Archmage Kalec 115081, Havoc DH only)
+				q(47043, {	-- Havoc: The Thieving Apprentice
+					["sourceQuests"] = { 44821 },	-- In Dire Need
 					["providers"] = {
 						{ "n", 115467 },	-- Archmage Kalec
 						{ "n", 105081 },	-- Archmage Kalec
 					},
-					["classes"] = { 12 },
+					["classes"] = { 12 },	-- Demon Hunter (Havoc)
+					["lvl"] = 110,
 				}),
 				q(46178, {	-- Hiding In Plain Sight
 					["classes"] = { 4 },
@@ -946,8 +954,10 @@ _.Zones =
 				}),
 				q(44821, {	-- In Dire Need
 					["sourceQuests"] = { 44782 },	-- Away From Prying Eyes
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 115465 },	-- Archmage Modera
+					["coord"] = { 22.5, 39.2, 627 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
 				}),
 				q(44184, {	-- In the Blink of an Eye
 					["u"] = 2,	-- Changed to make the Tranquil Mind item Bop to stop abusing of class trials
@@ -986,10 +996,15 @@ _.Zones =
 					["provider"] = { "n", 97666 },	-- Warbrave Oro
 				}),
 				q(44555, {	-- Khadgar's Discovery
-					["description"] = "Automatically given to you in Dalaran upon reaching lvl 110.";
+				--	["description"] = "Automatically given to you in Dalaran upon reaching lvl 110.";	-- doesn't seem to be the case (as of mid-October 2019)
+					["lvl"] = 110,
+					["u"] = 40,	-- Legacy Quests — version that was given automatically?
 				}),
 				q(39985, {	-- Khadgar's Discovery
-					["description"] = "Automatically given to you in Dalaran upon reaching lvl 110.";
+					["isBreadcrumb"] = true,	-- for "Magic Message"
+					["provider"] = { "n", 90417 },	-- Archmage Khadgar
+					["coord"] = { 28.8, 48.4, 627 },
+					["lvl"] = 110,
 				}),
 				q(45905, {	-- Kruul's Gift
 					["sourceQuests"] = { 45416 },	-- The Highlord's Return
@@ -1031,6 +1046,8 @@ _.Zones =
 						44555,	-- Khadgar's Discovery
 					},
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
+					["coord"] = { 28.8, 48.4, 627 },
+					["lvl"] = 110,
 				}),
 				q(40819, {	-- Making Arrangements
 					["sourceQuests"] = {
@@ -1581,6 +1598,15 @@ _.Zones =
 					["classes"] = { 8 },
 					["provider"] = { "n", 102700 },	-- Meryl Felstorm
 				}),
+				q(48506, {	-- The Hand of Fate (A)
+					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
+					["provider"] = { "n", 90417 },	-- Archmage Khadgar
+					["coord"] = { 28.8, 48.4, 627 },
+					["lvl"] = 110,
+				}),
+				q(47221, {	-- The Hand of Fate (A)
+					["u"] = 40,	-- Legacy Quests — old version that used to be automatically provided
+				}),
 				q(40731, {	-- The Heart of the Dreadscar
 					["sourceQuests"] = {
 						40712,	-- The Power Possessed
@@ -1886,13 +1912,13 @@ _.Zones =
 				}),
 				q(46314, {	-- Vengeance: Seeking Kor'vas
 					["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
-					["classes"] = { 12 },
-					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
-						{ "n", 90431 },	-- Archmage Ansirem Runeweaver
+						{ "n", 90431 },		-- Archmage Ansirem Runeweaver
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
 					},
-					["u"] = 40,
+					["classes"] = { 12 },	-- Demon Hunter (Vengeance)
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
 				}),
 			--	q(44259),	-- Violet Hold -- granted by mission board
 			--	q(44058),	-- Volpin the Elusive -- starts from all order halls
@@ -1942,11 +1968,14 @@ _.Zones =
 					["provider"] = { "n", 90463 },	-- Archmage Karlain
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(46206, {	-- Whispers of a Frightened World
-					["description"] = "Automatically given to you by Magni Bronzebeard in Dalaran.",
-				}),
 				q(47330, {	-- Whispers of a Frightened World
+				--	unsure if there are prerequisites for this quest.
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
+					["coord"] = { 28.8, 48.4, 627 },
+					["lvl"] = 110,
+				}),
+				q(46206, {	-- Whispers of a Frightened World
+					["u"] = 40,	-- Legacy Quests — version that used to be automatically given?
 				}),
 			--	q(45179),	-- Win the Crowd -- granted by mission board
 				q(47019, {	-- Windwalker: Rumblings Near Feltotem
@@ -1974,8 +2003,6 @@ _.Zones =
 					["provider"] = { "n", 99531 },	-- Aggra
 				}),
 --[[			Need to be added
-				q(47221)),	-- The Hand of Fate (A)
-				q(48506)),	-- The Hand of Fate (A)
 				q(47835)),	-- The Hand of Fate (H)
 				q(48507)),	-- The Hand of Fate (H)
 ]]--

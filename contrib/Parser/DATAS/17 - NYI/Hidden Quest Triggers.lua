@@ -607,6 +607,14 @@ _.NeverImplemented =
 		q(44455),	-- Downfall tracking — in Suramar, possibly tied to a Demon Hunter artifact?
 		q(41694),	-- World Quests Available — triggers when turning in "Uniting the Isles," along with the original "have all friendly reps" and present "just be 110" versions
 		q(42117),	-- Tracking Quest: Chapter 3 Completed — triggered when turning in "two worthies" after recruiting Belath Dawnblade and Matron Mother Malevolence on DH
+		q(46735),	-- Contribute to Command Center — during "Begin Construction" quest, not sure if that matters
+		q(46277),	-- Contribute to Mage Tower
+		q(46736),	-- Contribute to Nether Disruptor
+		q(46751),	-- Tracking Quest — triggered when turning in "A Found Memento" (#46268)
+		q(47869),	-- triggered when turning in "Light's Exodus," no info in wowhead
+		q(48668),	-- Lightforged Beacon: City Center — triggers during the cutscene while on "Into the Night"
+		q(47888),	-- triggered when turning in "Alone in the Abyss," no info on wowhead
+		q(44602),	-- Tracking Quest: Preparations for Invasion 1 — completing first mission on DH class campaign quest "Preparations for Invasion"
 		
 	-- World Boss
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq

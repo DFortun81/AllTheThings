@@ -6,66 +6,20 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(646, {	-- Broken Shore
 			n(-17, {	-- Quests
+			--[[	putting this in achievements file, commenting out until quests have been confirmed and moved
 				ach(11546, {	-- Breaching the Tomb
-					crit(1, {	-- Armies of Legionfall
-						q(46734, {	-- Assault on Broken Shore
-							--["g"] = {
-							--	{
-									--["spellID"] = 242180,	-- Broken Shore World Quests
-							--	},
-							--},
-							["provider"] = { "n", 120215 },	-- Archmage Khadgar
-							["sourceQuests"] = { 45727 },	-- Uniting the Isles
-						}),
-					}),
-					crit(2, {	-- Assault on Broken Shore
-						q(46734, {	-- Assault on Broken Shore
-							["provider"] = { "n", 120215 },	-- Archmage Khadgar
-							["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
-						}),
-					}),
 					crit(3, {	-- Begin Construction
-						q(46286, {	-- Legionfall Supplies
+						q(46773, {	-- The Command Center
 							["provider"] = { "n", 120183 },	-- Commander Chambers
-							["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
-							["g"] = {
-								q(46245, {	-- Begin Construction
-									["provider"] = { "n", 120183 },	-- Commander Chambers
-									["sourceQuests"] = { 46286 },	-- Legionfall Supplies
-									["g"] = {
-										q(46773, {	-- The Command Center
-											["provider"] = { "n", 120183 },	-- Commander Chambers
-											["sourceQuests"] = { 46245 },	-- Begin Construction
-										}),
-										q(46772, {	-- The Mage Tower
-											["provider"] = { "n", 120183 },	-- Commander Chambers
-											["sourceQuests"] = { 46245 },	-- Begin Construction
-										}),
-										q(46774, {	-- The Nether Disruptor
-											["provider"] = { "n", 120183 },	-- Commander Chambers
-											["sourceQuests"] = { 46245 },	-- Begin Construction
-										}),
-									},
-								}),
-							},
+							["sourceQuests"] = { 46245 },	-- Begin Construction
 						}),
-					}),
-					crit(4, {	-- Aalgen Point
-						q(46832, {	-- Aalgen Point
+						q(46772, {	-- The Mage Tower
 							["provider"] = { "n", 120183 },	-- Commander Chambers
-							["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
+							["sourceQuests"] = { 46245 },	-- Begin Construction
 						}),
-					}),
-					crit(5, {	-- Vengeance Point
-						q(46845, {	-- Vengeance Point
-							["provider"] = { "n", 120118 },	-- Heidirk the Scalekeeper
-							["sourceQuests"] = { 46832 },	-- Aalgen Point
-						}),
-					}),
-					crit(6, {	-- Defending Broken Isles
-						q(46247, {	-- Defending Broken Isles
-							["provider"] = { "n", 116576 },	-- Maiev Shadowsong
-							["sourceQuests"] = { 46286 },	-- Legionfall Supplies
+						q(46774, {	-- The Nether Disruptor
+							["provider"] = { "n", 120183 },	-- Commander Chambers
+							["sourceQuests"] = { 46245 },	-- Begin Construction
 						}),
 					}),
 					crit(7, {	-- Champions of Legionfall
@@ -170,9 +124,29 @@ _.Zones =
 						}),
 					}),
 				}),
-				q(46244, {	-- Cathedral of Eternal Night: Altar of the Aegis
-					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+			--]]
+				q(46832, {	-- Aalgen Point
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
+					["provider"] = { "n", 120183 },	-- Commander Chambers
+					["coord"] = { 44.4, 63.0, 646 },
+					["lvl"] = 110,
+				}),
+				q(46268, {	-- A Found Memento
+					["provider"] = { "o", 268478 },	-- Battered Trinket
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
+				}),
+				q(46245, {	-- Begin Construction
+					["sourceQuests"] = { 46286 },	-- Legionfall Supplies
+					["provider"] = { "n", 120183 },	-- Commander Chambers
+					["coord"] = { 44.4, 63.0, 646 },
+					["lvl"] = 110,
+				}),
+				q(46244, {	-- Cathedral of Eternal Night: Altar of the Aegis
+					["sourceQuests"] = { 46286 },	-- Legionfall Supplies
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["coord"] = { 44.6, 63.2, 646 },
+					["lvl"] = 110,
 					["g"] = {
 						i(146932),	-- Condensed Storm's Fury
 						i(146926),	-- Fel Command Beacon
@@ -186,8 +160,103 @@ _.Zones =
 						i(146934),	-- Untouched Holy Candle
 					},
 				}),
+				q(46247, {	-- Defending Broken Isles
+					["sourceQuests"] = { 46286 },	-- Legionfall Supplies
+					["provider"] = { "n", 116576 },	-- Maiev Shadowsong
+					["coord"] = { 44.4, 63.4, 646 },
+					["lvl"] = 110,
+				}),
+				q(46501, {	-- Grave Robbin'
+					["sourceQuests"] = { 46499 },	-- Spiders, Huh?
+					["provider"] = { "n", 119886 },	-- Excavator Karla
+					["coord"] = { 39.6, 71.7, 646 },
+					["lvl"] = 110,
+				}),
+				q(46286, {	-- Legionfall Supplies
+					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
+					["provider"] = { "n", 120183 },	-- Commander Chambers
+					["coord"] = { 44.4, 63.0, 646 },
+					["lvl"] = 110,
+				}),
+				q(46253, {	-- Pillars of Creation
+					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["coord"] = { 44.6, 63.1, 646 },
+					["lvl"] = 110,
+				}),
+				q(46510, {	-- Ship Graveyard
+					["sourceQuests"] = { 46509 },	-- Tomb Raidering
+					["provider"] = { "n", 119886 },	-- Excavator Karla
+					["coord"] = { 39.6, 71.7, 646 },
+					["lvl"] = 110,
+				}),
+				q(46499, {	-- Spiders, Huh?
+					["sourceQuests"] = { 46734 },	-- Assault on Brokeen Shore
+					["provider"] = { "n", 119886 },	-- Excavator Karla
+					["coord"] = { 39.6, 71.7, 646 },
+					["lvl"] = 110,
+				}),
+				q(46765, {	-- The Broken Shore: Investigating the Legion
+					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["coord"] = { 44.6, 63.2, 646 },
+					["lvl"] = 110,
+				}),
+				q(47000, {	-- The Council's Call
+					["sourceQuests"] = {
+						45030,	-- The Fel-Etched Bone
+						46765,	-- The Broken Shore: Investigating the Legion
+					},
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["coord"] = { 44.6, 63.2, 646 },
+					["lvl"] = 110,
+				}),
+				q(46805, {	-- The Deceiver's Downfall
+					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
+					["provider"] = { "n", 120372 },	-- Prophet Velen
+					["coord"] = { 44.6, 63.2, 646 },
+					["lvl"] = 110,
+				}),
+				q(46509, {	-- Tomb Raidering
+					["sourceQuests"] = { 46501 },	-- Grave Robbin'
+					["provider"] = { "n", 119886 },	-- Excavator Karla
+					["coord"] = { 39.6, 71.7, 646 },
+					["lvl"] = 110,
+				}),
+				q(46845, {	-- Vengeance Point
+					["sourceQuests"] = { 46832 },	-- Aalgen Point
+					["provider"] = { "n", 120118 },	-- Heidirk the Scalekeeper
+					["coord"] = { 70.6, 47.5, 646 },
+					["lvl"] = 110,
+				}),
+				q(46511, {	-- We're Treasure Hunters
+					["sourceQuests"] = { 46510 },	-- Ship Graveyard
+					["provider"] = { "n", 119886 },	-- Excavator Karla
+					["coord"] = { 39.6, 71.7, 646 },
+					["lvl"] = 110,
+				}),
+				q(46666, {	-- The Motherlode
+					["sourceQuests"] = { 46511 },	-- We're Treasure Hunters
+					["provider"] = { "n", 119886 },	-- Excavator Karla
+					["coord"] = { 39.6, 71.7, 646 },
+					["lvl"] = 110,
+					["g"] = {
+						i(143559),	-- Wyrmtongue's Cache Key
+					},
+				}),
+
+
+
+
+
+
+
+
+
+
+			-- unconfirmed or old af data that needs to be re-confirmed anyway
 				q(45425, {	-- Grovebound
-					["sourceQuest"] = 46677,	-- Prick of a Thistle
+					["sourceQuests"] = { 46677 },	-- Prick of a Thistle
 					["classes"]= { 11 },	-- Druid
 					["lvl"] = 110,
 					["providers"] = {
@@ -273,15 +342,11 @@ _.Zones =
 				q(46676, {	-- Nature's Touch
 					["lvl"] = 110,
 					["classes"]= { 11 },	-- Druid
-					["sourceQuest"]	= 46674,	-- The Preservation of Nature
+					["sourceQuests"]	= { 46674 },	-- The Preservation of Nature
 					["providers"] = {
 						{ "n", 120070 },	-- Thisalee Crow
 						{ "n", 120084 },	-- Druid of the Talon
 					},
-				}),
-				q(46253, {	-- Pillars of Creation
-					["provider"] = { "n", 116302 },	-- Archmage Khadgar
-					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 				}),
 				q(46677, {	-- Prick of a Thistle
 					["lvl"] = 110,
@@ -308,24 +373,17 @@ _.Zones =
 					["sourceQuests"] = { 46246 },	-- Strike Them Down
 					["classes"] = { 11 },  -- Druid
 				}),
-				q(47000, {	-- The Council's Call
-					["provider"] = { "n", 116302 },	-- Archmage Khadgar
-					["sourceQuests"] = {
-						45030,	-- The Fel-Etched Bone
-						46765,	-- The Broken Shore: Investigating the Legion
-					},
-				}),
 				q(54120, {	-- To Orgrimmar
 					["provider"] = { "n", 145965 },	-- Spirit of Vol'jin
 					["lvl"] = 120,
 					["coord"] = { 62.3, 30.4, 646 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 53778,	-- Where He Felll
+					["sourceQuests"] = { 53778 },	-- Where He Felll
 				}),
 				q(46675, {	-- To Track a Demon
 					["lvl"] = 110,
 					["classes"]= { 11 },	-- Druid
-					["sourceQuest"]	= 46674,	-- The Preservation of Nature
+					["sourceQuests"] = { 46674 },	-- The Preservation of Nature
 					["providers"] = {
 						{ "n", 120070 },	-- Thisalee Crow
 						{ "n", 120084 },	-- Druid of the Talon
@@ -336,33 +394,7 @@ _.Zones =
 					["lvl"] = 120,
 					["coord"] = { 63.2, 33.3, 646 },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 53776,	-- To the Broken Shore
-				}),
-				i(143559, {	-- Wyrmtongue's Cache Key
-					q(46499, {	-- Spiders, Huh?
-						["provider"] = { "n", 119886 },	-- Excavator Karla
-						["sourceQuests"] = { 46734 },	-- Assault on Brokeen Shore
-					}),
-					q(46501, {	-- Grave Robbin'
-						["provider"] = { "n", 119886 },	-- Excavator Karla
-						["sourceQuests"] = { 46499 },	-- Spiders, Huh?
-					}),
-					q(46509, {	-- Tomb Raidering
-						["provider"] = { "n", 119886 },	-- Excavator Karla
-						["sourceQuests"] = { 46501 },	-- Grave Robbin'
-					}),
-					q(46510, {	-- Ship Graveyard
-						["provider"] = { "n", 119886 },	-- Excavator Karla
-						["sourceQuests"] = { 46509 },	-- Tomb Raidering
-					}),
-					q(46511, {	-- We're Treasure Hunters
-						["provider"] = { "n", 119886 },	-- Excavator Karla
-						["sourceQuests"] = { 46510 },	-- Ship Graveyard
-					}),
-					q(46666, {	-- The Motherlode
-						["provider"] = { "n", 119886 },	-- Excavator Karla
-						["sourceQuests"] = { 46511 },	-- We're Treasure Hunters
-					}),
+					["sourceQuests"] = { 53776 },	-- To the Broken Shore
 				}),
 				--[[
 				q(44057),	-- A "Noble" Event
@@ -371,9 +403,6 @@ _.Zones =
 					["provider"] = { "n", 119531 },	-- Muninn
 				}),
 				q(45343),	-- A Curious Contagion
-				q(46268, {	-- A Found Memento
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(46208),	-- A Godly Invitation
 				q(46336),	-- A Golden Ticket
 				q(43407),	-- A Hero's Weapon
@@ -386,13 +415,12 @@ _.Zones =
 				q(47097, {	-- A Walk to Remember
 					["provider"] = { "n", 121224 },	-- Anduin Wrynn
 					["coord"] = { 41.4, 59.4, 646 },
-					["sourceQuest"] = 47202,	-- A Personal Message
+					["sourceQuests"] = { 47202 },	-- A Personal Message
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
 --[[
 				q(44401),	-- A Weapon For Every Occasion
-				q(46832),	-- Aalgen Point
 				q(45342),	-- Administering Aid
 				q(39761),	-- Advanced Runecarving
 				q(43573),	-- Advancing the War Effort
@@ -420,7 +448,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(45545),	-- Barrel Toss
-				q(46245),	-- Begin Construction
 				q(42678),	-- Black Rook Hold: Into Black Rook Hold
 				q(43962),	-- Blades of Destiny
 				q(43468),	-- Blood for the Wolfe
@@ -539,13 +566,12 @@ _.Zones =
 				q(45634),	-- Kvaldir on Call
 				q(45614),	-- Lady Remor'za
 				q(46688),	-- Leather of the Ancients
-				q(46286),	-- Legionfall Supplies
 				q(46333),	-- Livin' on the Ledge
 ]]--
 				q(47112, {	-- Lost Souls
 					["provider"] = { "n", 121226 },	-- Anduin Wrynn
 					["coord"] = { 52.6, 48.4, 646 },
-					["sourceQuest"] = 47097,	-- A Walk to Remember
+					["sourceQuests"] = { 47097 },	-- A Walk to Remember
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
@@ -655,7 +681,7 @@ _.Zones =
 				q(46272, {	-- Summons to the Keep
 					["provider"] = { "n", 120281 },	-- Captain Shwayder
 					["coord"] = { 41.6, 59.6, 646 },
-				--	["sourceQuest"] = 40755,	-- Hiding in the Stacks		-- Need to be confirmed
+				--	["sourceQuests"] = { 40755 },	-- Hiding in the Stacks		-- Need to be confirmed
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
@@ -667,7 +693,6 @@ _.Zones =
 				q(44263),	-- The Arcway
 				q(44787),	-- The Bonemother
 				q(46777),	-- The Bounties of Legionfall
-				q(46765),	-- The Broken Shore: Investigating the Legion
 				q(38990),	-- The Call of Icecrown
 				q(40987),	-- The Call of Vengeance
 				q(40935),	-- The Call of Vengeance
@@ -677,7 +702,6 @@ _.Zones =
 				q(47126),	-- The Deceiver
 				q(47129),	-- The Deceiver
 				q(47128),	-- The Deceiver
-				q(46805),	-- The Deceiver's Downfall
 				q(46698),	-- The Dragonhunter
 				q(47122),	-- The Fallen Avatar
 				q(47123),	-- The Fallen Avatar
@@ -698,7 +722,7 @@ _.Zones =
 				q(46282, {	-- The King's Path
 					["provider"] = { "n", 121237 },	-- Anduin Wrynn
 					["coord"] = { 58.2, 26.6, 646 },
-					["sourceQuest"] = 47112,	-- Lost Souls
+					["sourceQuests"] = { 47112 },	-- Lost Souls
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
@@ -754,7 +778,6 @@ _.Zones =
 				q(45557),	-- Unnatural Consequences
 				q(44261),	-- Vault of the Wardens
 				q(44260),	-- Vault of the Wardens
-				q(46845),	-- Vengeance Point
 				q(44259),	-- Violet Hold
 				q(44258),	-- Violet Hold
 				q(44058),	-- Volpin the Elusive

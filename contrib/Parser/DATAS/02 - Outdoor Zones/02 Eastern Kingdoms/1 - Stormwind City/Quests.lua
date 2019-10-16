@@ -1307,7 +1307,7 @@ _.Zones =
 						48506,	-- The Hand of Fate
 					},
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 84,
+					["lvl"] = 110,
 				}),
 				q(1938,  {	-- Ur's Treatise on Shadow Magic
 					["provider"] = { "n", 5694 },	-- High Sorcerer Andromath

@@ -427,6 +427,7 @@ _.Zones =
 					i(140017),	-- Boots of the Felsword
 				}),
 				n(-384, {	-- Neck
+					i(139101),	-- An'she's Pendant
 					i(139063),	-- Dreamwalker's Pendant
 					i(134249),	-- Manapearl Choker
 				}),
