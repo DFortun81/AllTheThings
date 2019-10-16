@@ -635,8 +635,8 @@ _.NeverImplemented =
 	--	q(),	-- Shar'thos bonus roll
 	--	q(),	-- Si'vash killID
 	--	q(),	-- Si'vash bonus roll
-	--	q(),	-- The Soultakers killID
-	--	q(),	-- The Soultakers bonus roll
+		q(44510),	-- The Soultakers killID
+		q(44905),	-- The Soultakers bonus roll
 	--	q(),	-- Withered J'im killID
 	--	q(),	-- Withered J'im bonus roll
 		

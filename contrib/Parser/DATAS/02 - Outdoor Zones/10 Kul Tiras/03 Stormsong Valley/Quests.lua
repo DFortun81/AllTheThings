@@ -1566,7 +1566,7 @@ _.Zones =
 			--]]
 
 			}),
-			n(-17,  {	-- Quests [Crieve]
+			n(-17, {	-- Quests [Crieve]
 				q(50385, {	-- Indefatigable Purpose
 					["g"] = {
 						i(157771),	-- Holy Water
