@@ -388,11 +388,6 @@ _.Zones =
 					q(50649, {	-- Filching from Thieves
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(53715, {	-- Firewarden Viton Darkflare
-						["isWorldQuest"] = true,
-						["lvl"] = 110,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(51371),	-- Flavorable Offering
 
 					q(53283, {	-- Flourishing Sea Stalks
@@ -510,11 +505,6 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52068, {	-- Helping Out, Somewhere Else
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53717, {	-- Hold the Highland
-						["isWorldQuest"] = true,
-						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(50504, {	-- Honey Glazed Sam
@@ -1205,10 +1195,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52459, {	-- Whirlwing
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(52422, {	-- Work Order: Battle Flag: Spirit of Freedom
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -1446,6 +1432,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
+					q(53715, {	-- Firewarden Viton Darkflare
+						["isWorldQuest"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 110,
+					}),
 					q(51781, {	-- Foreman Scripps
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
@@ -1493,20 +1484,23 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
+					q(53717, {	-- Hold the Highland
+						["isWorldQuest"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 110,
+					}),
 					q(54132, {	-- Horde of Heroes (Faction Assault WQ)
 						["provider"] = { "n", 135447 },	-- Ransa Greyfeather <The Honorbound Emissary>
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 						["groups"] = {
-							{
+							crit(6, {	-- Horde of Heroes
 								["achievementID"] = 13284,	-- Frontline Warrior
-								["criteriaID"] = 6,	-- Horde of Heroes
-							},
-							{
+							}),
+							crit(6, {	-- Horde of Heroes
 								["achievementID"] = 13388,	-- Frontline Veteran
-								["criteriaID"] = 6,	-- Horde of Heroes
-							},
+							}),
 						},
 					}),
 					q(52988, {	-- House Cleaning
@@ -1921,6 +1915,10 @@ _.Zones =
 						["g"] = {
 							i(164731)	-- Enchanted Shroud (QI)
 						},
+					}),
+					q(52459, {	-- Whirlwing
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
 					}),
 					q(53287, {	-- Winter's Kiss Cluster
 						["lvl"] = 120,
