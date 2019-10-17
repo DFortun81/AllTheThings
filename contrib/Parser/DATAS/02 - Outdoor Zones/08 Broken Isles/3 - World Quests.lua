@@ -430,6 +430,7 @@ _.Zones =
 					i(139101),	-- An'she's Pendant
 					i(139063),	-- Dreamwalker's Pendant
 					i(134249),	-- Manapearl Choker
+					i(121796),	-- Pendant of the Kaldorei
 				}),
 				n(-385, {	-- Finger
 					i(134367),	-- Legionnaire's Band

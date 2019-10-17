@@ -626,9 +626,11 @@ _.NeverImplemented =
 		q(47194),	-- Battle for Highmountain — popped alongside the normal "Battle for Highmountain" final invasion quest.  possibly first-time quest?
 		q(48281),	-- getting into the Lightforged Warframe during Dawn of Justice
 		q(44602),	-- Tracking Quest: Preparations for Invasion 1 — completing first mission on DH class campaign quest "Preparations for Invasion"
+		q(43746),	-- Currency Treasure - Moon Guard — looting Shimmering Ancient Mana Cluster (?) at (41.9, 19.2) in Suramar
 		q(44604),	-- Tracking Quest: Preparations for Invasion 2
 		q(44605),	-- Tracking Quest: Preparations for Invasion 3
 		q(44606),	-- Tracking Quest: Preparations for Invasion 4
+		q(44607),	-- Tracking Quest: Preparations for Invasion 5
 		
 	-- World Boss
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq

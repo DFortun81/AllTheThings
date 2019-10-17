@@ -225,6 +225,12 @@ _.ExpansionFeatures =
 						["coord"] = { 57.6, 53.3, 720 },
 						["lvl"] = 110,
 					}),
+					q(44694, {	-- One Battle at a Time
+						["sourceQuests"] = { 42669 },	-- Preparations for Invasion
+						["provider"] = { "n", 98646 },	-- Jace Darkweaver
+						["coord"] = { 59.0, 73.8, 721 },
+						["lvl"] = 110,
+					}),
 					q(39718, {	-- Paradise Lost
 						["sourceQuests"] = {
 							41099,	-- Direct Our Wrath (Altruis)
@@ -433,7 +439,6 @@ _.ExpansionFeatures =
 					q(44265),	-- Neltharion's Lair
 					q(44269),	-- Odyn's Challenge
 					q(44268),	-- Odyn's Challenge
-					q(44694),	-- One Battle at a Time
 					q(44214),	-- One More Thing...
 					q(45329),	-- Operation: Portals
 					q(46266),	-- Return of the Slayer

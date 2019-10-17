@@ -46,6 +46,21 @@ _.Zones =
 					["provider"] = { "n", 120533 },	-- Prophet Velen
 					["coord"] = { 54.5, 78.0, 882 },
 				}),
+				q(47685, {	-- Gatekeeper's Challenge: Cunning
+					["sourceQuests"] = { 47883 },	-- The Longest Vigil
+					["provider"] = { "n", 124070 },	-- Vigilant Quoram
+					["coord"] = { 59.8, 50.5, 882 },
+				}),
+				q(47687, {	-- Gatekeeper's Challenge: Mastery
+					["sourceQuests"] = { 47883 },	-- The Longest Vigil
+					["provider"] = { "n", 124070 },	-- Vigilant Quoram
+					["coord"] = { 59.8, 50.5, 882 },
+				}),
+				q(47689, {	-- Gatekeeper's Challenge: Tenacity
+					["sourceQuests"] = { 47883 },	-- The Longest Vigil
+					["provider"] = { "n", 124070 },	-- Vigilant Quoram
+					["coord"] = { 59.8, 50.5, 882 },
+				}),
 				q(47688, {	-- Invasive Species
 					["sourceQuests"] = { 47686 },	-- Not-So-Humble Beginnings
 					["provider"] = { "n", 123413 },	-- Archmage Y'mera
@@ -60,6 +75,14 @@ _.Zones =
 					["sourceQuests"] = { 46941 },	-- The Path Forward
 					["provider"] = { "n", 120533 },	-- Prophet Velen
 					["coord"] = { 52.8, 76.0, 882 },
+				}),
+				q(47883, {	-- The Longest Vigil
+					["sourceQuests"] = {
+						47882,	-- Conservation of Magic
+						47688,	-- Invasive Species
+					},
+					["provider"] = { "n", 123413 },
+					["coord"] = { 59.5, 50.5, 882 },
 				}),
 				q(46941, {	-- The Path Forward
 					["sourceQuests"] = { 47066 },	-- Consecrating Ground
@@ -100,9 +123,6 @@ _.Zones =
 				q(48230),	-- Fragment of the Past
 				q(48799),	-- Fuel of a Doomed World
 				q(48636),	-- Fueling the Antoran Campaign
-				q(47685),	-- Gatekeeper's Challenge: Cunning
-				q(47687),	-- Gatekeeper's Challenge: Mastery
-				q(47689),	-- Gatekeeper's Challenge: Tenacity
 				q(48448),	-- Hindering the Legion War Machine
 				q(47104),	-- Imprisoned Inquisitor
 				q(49293),	-- Invasion Onslaught
@@ -133,7 +153,6 @@ _.Zones =
 				q(48345),	-- Talgath's Forces
 				q(48864),	-- The Broken Blacksmith
 				q(47690),	-- The Defiler's Legacy
-				q(47883),	-- The Longest Vigil
 				q(49224),	-- The Netherlight Crucible
 				q(48261),	-- The Power to Reforge
 				q(49445),	-- The Prime Exchange
