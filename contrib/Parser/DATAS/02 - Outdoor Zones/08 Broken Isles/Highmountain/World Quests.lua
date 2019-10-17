@@ -10,10 +10,6 @@ _.Zones =
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 				}),
-				q(45840, {	-- Assault on Highmountain (Invasion "wrapper" quest)
-					["lvl"] = 98,
-					["isWorldQuest"] = true,
-				}),
 				q(41705, {	-- Assault on Thunder Totem
 					["lvl"] = 110,
 					["isWorldQuest"] = true,

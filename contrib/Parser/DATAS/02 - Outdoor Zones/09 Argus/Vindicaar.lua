@@ -20,65 +20,31 @@ _.Zones =
 			["g"] = {
 				n(-4,   {	-- Achievement
 					ach(12073, {	-- Locked and Loaded
-						i(151830, {		-- Light's Judgement
-							["sourceQuest"] = 47287,	-- The Vindicaar Matrix Core
-							["g"] = {
-								crit(1, {	-- Light's Judgement
-									["achievementID"] = 12073,	-- Locked and Loaded
-								}),
-								spell(247427),	-- Light's Judgement
-								q(48451, {	-- First Time Tracking Quest?
-									["repeatable"] = true,
-								}),
-								q(48858, {	-- Tracking Quest - Active?
-									["repeatable"] = true,
-								}),
+						crit(1, {	-- Light's Judgement
+							["sourceQuests"] = { 47287 },	-- The Vindicaar Matrix Core
+						}),
+						crit(2, {	-- Lightforged Warframe
+							["sourceQuests"] = { 47994 },	-- Forming a Bond
+						}),
+						crit(3, {	-- Fel Heart of Argus
+							["sourceQuests"] = { 47182 },	-- Long Overdue
+						}),
+						crit(4, {	-- Shroud of Arcane Echoes
+							["sourceQuests"] = { 48107 },	-- The Sigil of Awakening
+						}),
+					}),
+					ach(12066, {	-- You Are Now Prepared!
+						crit(1, {	-- The Assault Begins
+							["sourceQuests"] = {
+								47473,	-- Sizing Up the Opposition (Light's Purchase)
+								48929,	-- Sizing Up the Opposition (The Veiled Den)
 							},
 						}),
-						i(152098, {		-- Lightforged Warframe
-							["sourceQuest"] = 47994,	-- Forming a Bond
-							["g"] = {
-								crit(2, {	-- Lightforged Warframe
-									["achievementID"] = 12073,	-- Locked and Loaded
-								}),
-								spell(250436),	-- Lightforged Warframe
-								q(48449, {	-- First Time Tracking Quest?
-									["repeatable"] = true,
-								}),
-								q(48859, {	-- Tracking Quest - Active?
-									["repeatable"] = true,
-								}),
-							},
+						crit(2, {	-- Dark Awakenings
+							["sourceQuests"] = { 48107 },	-- The Sigil of Awakening
 						}),
-						i(147496, {		-- Fel Heart of Argus
-							["sourceQuest"] = 47182,	-- Long Overdue
-							["g"] = {
-								crit(3, {	-- Fel Heart of Argus
-									["achievementID"] = 12073,	-- Locked and Loaded
-								}),
-								spell(248011),	-- Fel Heart of Argus
-								q(48450, {	-- First Time Tracking Quest?
-									["repeatable"] = true,
-								}),
-								q(48860, {	-- Tracking Quest - Active?
-									["repeatable"] = true,
-								}),
-							},
-						}),
-						i(151912, {		-- Shroud of Arcane Echoes
-							["sourceQuest"] = 48107,	-- The Sigil of Awakening
-							["g"] = {
-								crit(4, {	-- Shroud of Arcane Echoes
-									["achievementID"] = 12073,	-- Locked and Loaded
-								}),
-								spell(248779),	-- Shroud of Arcane Echoes
-								q(48450, {	-- First Time Tracking Quest?
-									["repeatable"] = true,
-								}),
-								q(48579, {	-- Tracking Quest - Active?
-									["repeatable"] = true,
-								}),
-							},
+						crit(3, {	-- War of Light and Shadow
+							["sourceQuests"] = { 47220 },	-- A Beacon in the Dark
 						}),
 					}),
 				}),
@@ -259,6 +225,11 @@ _.Zones =
 						["provider"] = { "n", 126307 },	-- Prophet Velen
 						["coord"] = { 40.9, 24.7, 831 },
 					}),
+					q(48559, {	-- An Offering of Light
+						["sourceQuests"] = { 49143 },	-- Essence of the Light Mother
+						["provider"] = { "n", 126307 },	-- Prophet Velen
+						["coord"] = { 46.0, 36.7, 831 },
+					}),
 					q(48078, {	-- Counterbalancing
 						["requireSkill"] = 165,	-- Leatherworking
 						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
@@ -275,6 +246,11 @@ _.Zones =
 							i(151711),	-- Plans: Empyrial Breastplate [Rank 1]
 						},
 					}),
+					q(49143, {	-- Essence of the Light Mother
+						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
+						["provider"] = { "n", 126307 },	-- Prophet Velen
+						["coord"] = { 45.9, 34.0, 831 },
+					}),
 					q(48065, {	-- Extraterrestrial Exploration
 						["requireSkill"] = 202,	-- Engineering
 						["sourceQuests"] = { 48069 },	-- The Wrench Calls
@@ -283,10 +259,18 @@ _.Zones =
 						},
 					}),
 					q(48799, {	-- Fuel of a Doomed World
-					--	["sourceQuests"] = {  },	-- ???
+						["sourceQuests"] = {
+							47473,	-- Sizing Up the Opposition (Light's Purchase)
+							48929,	-- Sizing Up the Opposition (The Veiled Den)
+						},
 						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
 						["isWeekly"] = true,
 						["coord"] = { 46.7, 24.6, 831 },
+					}),
+					q(47431, {	-- Gathering Light
+						["sourceQuests"] = { 48500 },	-- A Moment of Respite
+						["provider"] = { "n", 122378 },	-- High Exarch Turalyon
+						["coord"] = { 42.9, 26.4, 831 },
 					}),
 					q(49293, {	-- Invasion Onslaught
 					--	["sourceQuests"] = {  },	-- ???
@@ -307,16 +291,66 @@ _.Zones =
 							i(151571),	-- Lightweave Breeches
 						},
 					}),
+					q(48201, {	-- Reinforce Light's Purchase
+						["sourceQuests"] = { 48200 },	-- Securing a Foothold
+						["altQuests"] = { 48202 },	-- Reinforce the Veiled Den — you get one of two quests depending on which camp is up at the time
+						["provider"] = { "n", 126954 },	-- High Exarch Turalyon
+						["coord"] = { 34.4, 57.2, 831 },
+					}),
+					q(48202, {	-- Reinforce the Veiled Den
+						["sourceQuests"] = { 48200 },	-- Securing a Foothold
+						["altQuests"] = { 48201 },	-- Reinforce Light's Purchase — you get one of two quests depending on which camp is up at the time
+						["provider"] = { "n", 126954 },	-- High Exarch Turalyon
+						["coord"] = { 34.4, 57.2, 831 },
+					}),
+					q(48200, {	-- Securing a Foothold
+						["sourceQuests"] = { 48199 },	-- The Burning Heart
+						["provider"] = { "n", 126954 },	-- High Exarch Turalyon
+						["coord"] = { 34.4, 57.2, 831 },
+					}),
+					q(47892, {	-- Storming the Citadel
+						["sourceQuests"] = { 47891 },	-- Dire News
+						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
+						["coord"] = { 40.1, 25.6, 831 },
+					}),
 					q(48912, {	-- Supplying the Antoran Campaign
 						["isWeekly"] = true,
 						["g"] = {
 							i(152097),	-- Lightforged Bulwark
 						},
 					}),
+					q(48199, {	-- The Burning Heart
+						["sourceQuests"] = { 48559 },	-- An Offering of Light
+						["provider"] = { "n", 126307 },	-- Prophet Velen
+						["coord"] = { 40.1, 25.2, 831 },
+					}),
+					q(49014, {	-- The Burning Throne
+						["sourceQuests"] = { 48559 },	-- An Oferring of Light
+						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
+						["coord"] = { 40.1, 25.2, 831 },
+					}),
+					q(47743, {	-- The Child of Light and Shadow
+						["sourceQuests"] = { 47653 },	-- Light's Return
+						["provider"] = { "n", 122378 },	-- High Exarch Turalyon
+						["coord"] = { 42.9, 26.5, 831 },
+					}),
 					q(49445, {	-- The Prime Exchange
 						["sourceQuests"] = { 48440 },	-- Into the Night
 						["provider"] = { "n", 129674 },	-- Maras
 						["coord"] = { 40.4, 64.7, 832 },
+					}),
+					q(47889, {	-- The Speaker Calls
+						["sourceQuests"] = {
+							47473,	-- Sizing Up the Opposition (Light's Purchase)
+							48929,	-- Sizing Up the Opposition (The Veiled Den)
+						},
+						["provider"] = { "n", 126954 },	-- High Exarch Turalyon
+						["coord"] = { 34.1, 57.1, 831 },
+					}),
+					q(47287, {	-- The Vindicaar Matrix Core
+						["sourceQuests"] = { 47743 },	-- Child of Light and Shadow
+						["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
+						["coord"] = { 43.7, 29.2, 831 },
 					}),
 					q(48069, {	-- The Wrench Calls
 						["requireSkill"] = 202,	-- Engineering

@@ -14,6 +14,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
+				q(51377, {	-- Temple of Sethraliss: Ecological Research
+					["isWorldQuest"] = true,
+					["lvl"] = 120,
+				}),
 				q(51379, {	-- Temple of Sethraliss: Navigating Currents
 					["isWorldQuest"] = true,
 					["lvl"] = 120,

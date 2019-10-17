@@ -501,10 +501,6 @@ _.Zones =
 					["lvl"] = 98,
 					["isWorldQuest"] = true,
 				}),
-				q(45812, {	-- Assault on Val'sharah (Invasion WQ "wrapper" - the one you get by zoning in)
-					["lvl"] = 98,
-					["isWorldQuest"] = true,
-				}),
 				q(44033, {	-- Aw, Nuts!
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
