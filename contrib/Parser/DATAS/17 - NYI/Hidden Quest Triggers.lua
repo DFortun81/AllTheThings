@@ -624,8 +624,11 @@ _.NeverImplemented =
 		q(48579),	-- Shroud of Arcane Echoes active tracking quest?
 		q(46808),	-- Ship - Highmountain — part of a Highmountain invasion.  i refreshed after killing the NPC for "Holding Our Ground" and this quest popped
 		q(47194),	-- Battle for Highmountain — popped alongside the normal "Battle for Highmountain" final invasion quest.  possibly first-time quest?
+		q(48281),	-- getting into the Lightforged Warframe during Dawn of Justice
 		q(44602),	-- Tracking Quest: Preparations for Invasion 1 — completing first mission on DH class campaign quest "Preparations for Invasion"
 		q(44604),	-- Tracking Quest: Preparations for Invasion 2
+		q(44605),	-- Tracking Quest: Preparations for Invasion 3
+		q(44606),	-- Tracking Quest: Preparations for Invasion 4
 		
 	-- World Boss
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
@@ -938,8 +941,12 @@ _.NeverImplemented =
 		
 	--	Drustvar
 		-- Bonus Objectives
-		q(48181),	-- Nooooope
-		q(50959),	-- Plundering Pirates
+		q(48181, {	-- Nooooope
+			["isWorldQuest"] = true,
+		}),
+		q(50959, {	-- Plundering Pirates
+			["isWorldQuest"] = true,
+		}),
 		-- Chests
 		q(51871),	-- Drustvar repeatable random chest
 		q(51875),	-- Drustvar repeatable random chest
@@ -959,9 +966,15 @@ _.NeverImplemented =
 
 	--	Stormsong Valley
 		-- Bonus Objectives
-		q(50779),	-- A Clean Slate
-		q(51534),	-- The Battle for Brennadam
-		q(50133),	-- Weed Whacking
+		q(50779, {	-- A Clean Slate
+			["isWorldQuest"] = true,
+		}),
+		q(51534, {	-- The Battle for Brennadam
+			["isWorldQuest"] = true,
+		}),
+		q(50133, {	-- Weed Whacking
+			["isWorldQuest"] = true,
+		}),
 		-- Chests
 		q(51184),	-- Stormsong Valley repeatable random chest
 		q(51927),	-- Stormsong Valley repeatable random chest
@@ -981,10 +994,18 @@ _.NeverImplemented =
 		
 	--	Tiragarde Sound
 		-- Bonus Objectives
-		q(49300),	-- Creature Corruption
-		q(49739),	-- Enemies at the Gate
-		q(50009),	-- Shipwreck Recovery Crew
-		q(49529),	-- Spring Cleaning
+		q(49300, {	-- Creature Corruption
+			["isWorldQuest"] = true,
+		}),
+		q(49739, {	-- Enemies at the Gate
+			["isWorldQuest"] = true,
+		}),
+		q(50009, {	-- Shipwreck Recovery Crew
+			["isWorldQuest"] = true,
+		}),
+		q(49529, {	-- Spring Cleaning
+			["isWorldQuest"] = true,
+		}),
 		-- Chests
 		q(48593),	-- Tiragarde Sound repeatable random chest
 		q(48595),	-- Tiragarde Sound repeatable random chest
@@ -1005,11 +1026,21 @@ _.NeverImplemented =
 	--	Zuldazar
 		q(55259),	-- Triggers after turning 'Sleep, Eat, Repeat' (ID 55258) in to finish the achievement criteria 'Sleep, Eat, Repeat' (3) for How to Train Your Direhorn (ID 13542)
 		-- Bonus Objectives
-		q(47527),	-- Rituals of Heresy
-		q(47797),	-- Occupation Hazard
-		q(49315),	-- Dreadpearl Collusion
-		q(49918),	-- Gorilla Gorge
-		q(50178),	-- Trouble in the Rootway
+		q(47527, {	-- Rituals of Heresy
+			["isWorldQuest"] = true,
+		}),
+		q(47797, {	-- Occupation Hazard
+			["isWorldQuest"] = true,
+		}),
+		q(49315, {	-- Dreadpearl Collusion
+			["isWorldQuest"] = true,
+		}),
+		q(49918, {	-- Gorilla Gorge
+			["isWorldQuest"] = true,
+		}),
+		q(50178, {	-- Trouble in the Rootway
+			["isWorldQuest"] = true,
+		}),
 		-- Chests
 		q(50710),	-- Zuldazar repeatable random chest
 		q(50711),	-- Zuldazar repeatable random chest

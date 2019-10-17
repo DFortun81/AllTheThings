@@ -134,6 +134,9 @@ _.Zones =
 						["provider"] = { "n", 121578 },	-- Archmage Y'mera
 						["coord"] = { 31.7, 71.9, 830 },
 					}),
+					q(47993, {	-- Lord of the Spire
+						["sourceQuests"] = { 47992 },	-- Dawn of Justice
+					}),
 					q(46297, {	-- Overwhelming Power
 						["sourceQuests"] = { 46938 },	-- Alone in the Abyss
 						["provider"] = { "n", 119535 },	-- Illidan Stormrage

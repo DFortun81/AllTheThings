@@ -96,7 +96,6 @@ _.Zones =
 				q(48037),	-- Empyrium Seam Chunk
 				q(48601),	-- Felfire Shattering
 				q(47134),	-- Foiling the Legion's Jailbreak
-				q(47994),	-- Forming a Bond
 				q(49030),	-- Fragments of the Abyss
 				q(48799),	-- Fuel of a Doomed World
 				q(48636),	-- Fueling the Antoran Campaign

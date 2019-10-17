@@ -214,6 +214,11 @@ _.Zones =
 							i(151733),	-- Design: Empyrial Titan Crown (Rank 1)
 						},
 					}),
+					q(48081, {	-- A Floating Ruin
+						["sourceQuests"] = { 47994 },	-- Forming a Bond
+						["provider"] = { "n", 126307 },	-- Prophet Velen
+						["coord"] = { 41.3, 24.9, 831 },
+					}),
 					q(46938, {	-- Alone in the Abyss
 						["sourceQuests"] = { 48440 },	-- Into the Night
 						["provider"] = { "n", 126307 },	-- Prophet Velen
@@ -258,6 +263,11 @@ _.Zones =
 							recipe(247744),	-- Wormhole Generator: Argus
 						},
 					}),
+					q(47994, {	-- Forming a Bond
+						["sourceQuests"] = { 47993 },	-- Lord of the Spire
+						["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
+						["coord"] = { 43.2, 25.5, 831 },
+					}),
 					q(48799, {	-- Fuel of a Doomed World
 						["sourceQuests"] = {
 							47473,	-- Sizing Up the Opposition (Light's Purchase)
@@ -290,6 +300,11 @@ _.Zones =
 						["g"] = {
 							i(151571),	-- Lightweave Breeches
 						},
+					}),
+					q(46815, {	-- Mac'Aree, Jewel of Argus
+						["sourceQuests"] = { 48081 },	-- A Floating Ruin
+						["provider"] = { "n", 128725 },	-- Prophet Velen
+						["coord"] = { 47.4, 24.5, 831 },
 					}),
 					q(48201, {	-- Reinforce Light's Purchase
 						["sourceQuests"] = { 48200 },	-- Securing a Foothold

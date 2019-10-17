@@ -13,6 +13,7 @@ _.ExpansionFeatures =
 			143967,	--  Expedition Map [Horde Side]
 		},
 		["maps"] = {
+			1501,	-- Crestfall
 			1036,	-- Dread Chain
 			1336,	-- Havenswood
 			1337,	-- Jorundall
