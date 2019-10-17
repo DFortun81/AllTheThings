@@ -8,6 +8,7 @@ _.Achievements =
 		["groups"] = {
 			n(-10056, {	-- Island Expeditions
 				["maps"] = {
+					1501,	-- Crestfall
 					1036,	-- Dread Chain
 					1336,	-- Havenswood
 					1337,	-- Jorundall
