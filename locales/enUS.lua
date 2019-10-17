@@ -508,6 +508,7 @@ app.L = {
 		[-392] = "Interface\\Icons\\achievement_guildperk_hastyhearth",				-- Hearthfire Tavern (horde)
 		[-491] = "Interface\\Icons\\inv_misc_ticket_tarot_rogue",					-- Tarot Cards
 		[-494] = "Interface\\Icons\\Ability_Shaman_Ascendance",						-- Miscellaneous
+		[-498] = "Interface\\Icons\\inv_offhand_hyjal_d_01",						-- Twisting Nether (Demon Hunter Order Hall advancement)
 		[-500] = "Interface\\Icons\\inv_misc_celebrationcake_01",					-- WoW Anniversary
 		[-501] = "Interface\\Icons\\ability_racial_molemachine",					-- Mole Machine
 		[-518] = "Interface\\Icons\\inv_misc_tabard_explorersguild",				-- Kul Tiras and Zandalar
@@ -1148,6 +1149,7 @@ app.L = {
 		[-492] = "Illusions",
 		[-494] = MAC_OPTIONS_MISC, 												-- Miscellaneous
 		[-496] = DUNGEON_FLOOR_DEEPRUNTRAM2,									-- Bizmo's Brawlpub
+		[-498] = "Twisting Nether",												-- Twisting Nether (Demon Hunter Order Hall advancement)
 		-- Dark Iron Dwarves Mole Machine
 		[-501] = C_Map.GetAreaInfo(5039),										-- Sulfuron Spire
 		[-502] = C_Map.GetAreaInfo(348),										-- Aerie Peak

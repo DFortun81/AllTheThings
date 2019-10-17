@@ -10,6 +10,7 @@ _.Achievements =
 				647,	-- Death Knight — Acherus: The Ebon Hold (Upper Level)
 				648,	-- Death Knight — Acherus: The Ebon Hold (Lower Level)
 				720,	-- Demon Hunter — Mardum, The Shattered Abyss
+				721,	-- Demon Hunter — Lower Command Center
 				747,	-- Druid — The Dreamgrove
 				739,	-- Hunter — Trueshot Lodge
 				734,	-- Mage — Hall of the Guardian (1st Floor)

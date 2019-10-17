@@ -371,6 +371,11 @@ _.Zones =
 						["requireSkill"] = 202,	-- Engineering
 						["sourceQuests"] = { 46941 },	-- The Path Forward
 					}),
+					q(48461, {	-- Where They Least Expect It
+						["sourceQuests"] = { 48107 },	-- The Sigil of Awakening
+						["provider"] = { "n", 126408 },	-- Illidan Stormrage
+						["coord"] = { 47.0, 21.7, 831 },
+					}),
 				}),
 				n(127476, {	-- Scouting Map
 					["achievementID"] = 11217,

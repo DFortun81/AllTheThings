@@ -6,11 +6,14 @@ _.ExpansionFeatures =
 	n(-9965, {	-- Legion Class Hall
 		cl(12, {	-- Mardum, The Shattered Abyss (Demon Hunter)
 			["classes"] = { 12 },	-- Demon Hunter
-			["mapID"] = 720,	-- Mardum, The Shattered Abyss (Demon Hunter)
-			["maps"] = { 721 },	-- Lower Command Center
+			["maps"] = {
+				720,	-- Mardum, The Shattered Abyss
+				721,	-- Lower Command Center
+			},
 			["lvl"] = 98,	-- add ["lvl"] to any quests with a higher level requirement!
 			["g"] = {
-				n(-498, {	-- Twisting Nether Class Hall Ability
+				n(-498, {	-- Twisting Nether
+					["description"] = "These items are only accessible to Demon Hunters who have chosen the Twisting Nether Order Advancement in their Class Hall.",
 					["questID"] = 44707,
 					["lvl"] = 105,
 					["crs"] = {
@@ -39,7 +42,7 @@ _.ExpansionFeatures =
 						i(139550, {	-- Bulwark of the Iron Warden [Hidden Artifact Appearance]
 							artifact(571),	-- Find Hidden Artifact Skin
 						}),
-						i(136900),	-- Hateful Eye Pet
+						i(136900),	-- Hateful Eye (PET!)
 						i(141959),	-- Soul Flame of Alacrity
 						i(141962),	-- Soul Flame of Castigation
 						i(141958),	-- Soul Flame of Fortification
@@ -65,6 +68,12 @@ _.ExpansionFeatures =
 						},
 						["classes"] = { 12 },	-- Demon Hunter
 						["coord"] = { 58.6, 56.5, 720 },
+					}),
+					q(42733, {	-- A Very Special Kind of Fuel
+						["sourceQuests"] = { 44694 },	-- One Battle at a Time
+						["provider"] = { "n", 98648 },	-- Allari the Souleater
+						["coord"] = { 55.6, 50.1, 721 },
+						["lvl"] = 110,
 					}),
 					q(42801, {	-- Back in Black
 						["sourceQuests"] = { 42593 },	-- The Arcane Way
@@ -164,6 +173,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 						["coord"] = { 59.4, 50.5, 720 },
 						["lvl"] = 103,
+					}),
+					q(42732, {	-- Deadlier Warglaives
+						["sourceQuests"] = { 44694 },	-- One Battle at a Time
+						["provider"] = { "n", 98648 },	-- Allari the Souleater
+						["coord"] = { 55.6, 50.1, 721 },
+						["lvl"] = 110,
 					}),
 					q(42787, {	-- Deal With It Personally
 						["sourceQuests"] = { 42731 },	-- Working With the Wardens
@@ -373,7 +388,6 @@ _.ExpansionFeatures =
 					q(44057),	-- A "Noble" Event
 					q(42810),	-- A Final Offer
 					q(43412),	-- A Hero's Weapon
-					q(42733),	-- A Very Special Kind of Fuel
 					q(45180),	-- An Island of War
 					q(46159),	-- An Urgent Message
 					q(45993),	-- An Urgent Warning
@@ -410,7 +424,6 @@ _.ExpansionFeatures =
 					q(41064),	-- Cursed Forge of the Nathrezim
 					q(44273),	-- Darkheart Thicket
 					q(44272),	-- Darkheart Thicket
-					q(42732),	-- Deadlier Warglaives
 					q(45339),	-- Defense of the Fel Hammer
 					q(47078),	-- Delivering Lost Knowledge
 					q(45173),	-- Desperate Times
@@ -501,15 +514,6 @@ _.ExpansionFeatures =
 					}),
 					--]]
 				}),
-				--[[
-				n(98613, {	-- Scouting Map
-					["g"] = {
-						-- Blank for Class Only Missions in the future
-					},
-					["achievementID"] = 11217,
-					["modelScale"] = 1.5,
-				}),
-				]]--
 				n(-2,   {	-- Vendors
 					n(116621, {	--Demissya Gladestrider <Illidari Provisioner's Assistant>
 						i(123960),	-- Charm of Demonic Fire

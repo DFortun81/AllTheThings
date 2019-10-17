@@ -76,6 +76,15 @@ _.Zones =
 					["provider"] = { "n", 120533 },	-- Prophet Velen
 					["coord"] = { 52.8, 76.0, 882 },
 				}),
+				q(47690, {	-- The Defiler's Legacy
+					["sourceQuests"] = {
+						47685,	-- Gatekeeper's Challenge: Cunning
+						47687,	-- Gatekeeper's Challenge: Mastery
+						47689,	-- Gatekeeper's Challenge: Tenacity
+					},
+					["provider"] = { "n", 124070 },	-- Vigilant Quoram
+					["coord"] = { 59.8, 50.5, 882 },
+				}),
 				q(47883, {	-- The Longest Vigil
 					["sourceQuests"] = {
 						47882,	-- Conservation of Magic
@@ -88,6 +97,11 @@ _.Zones =
 					["sourceQuests"] = { 47066 },	-- Consecrating Ground
 					["provider"] = { "n", 120533 },	-- Prophet Velen
 					["coord"] = { 52.8, 76.0, 882 },
+				}),
+				q(48107, {	-- The Sigil of Awakening
+					["sourceQuests"] = { 47690 },	-- The Defiler's Legacy
+					["provider"] = { "n", 123413 },	-- Archmage Y'mera
+					["coord"] = { 63.3, 39.8, 882 },
 				}),
 
 				
@@ -152,7 +166,6 @@ _.Zones =
 				q(48600),	-- Take the Edge Off
 				q(48345),	-- Talgath's Forces
 				q(48864),	-- The Broken Blacksmith
-				q(47690),	-- The Defiler's Legacy
 				q(49224),	-- The Netherlight Crucible
 				q(48261),	-- The Power to Reforge
 				q(49445),	-- The Prime Exchange
@@ -160,7 +173,6 @@ _.Zones =
 				q(48445),	-- The Ruins of Oronaar
 				q(47238),	-- The Seat of the Triumvirate
 				q(47218),	-- The Shadowguard Incursion
-				q(48107),	-- The Sigil of Awakening
 				q(47889),	-- The Speaker Calls
 				q(48273),	-- The Speaker Listens
 				q(48277),	-- The Speaker Seeks
@@ -171,7 +183,6 @@ _.Zones =
 				q(48911),	-- Void Inoculation
 				q(48344),	-- We Have a Problem
 				q(47855),	-- What Might Have Been
-				q(48461),	-- Where They Least Expect It
 				q(40761),	-- Whispers from Oronaar
 				q(47854),	-- Wrath of the High Exarch
 --]]
