@@ -9,18 +9,6 @@ _.Zones =
 				["g"] = {
 					ach(12066, {	-- You Are Now Prepared!
 						crit(1, {	-- The Assault Begins
-							q(46842, {	-- A Strike at the Heart
-								["provider"] = { "n", 120953 },	-- High Exarch Turalyon
-								["sourceQuests"] = { 46840, 46841 },	-- Prisoners No More / Threat Reduction
-							}),
-							q(46843, {	-- Return to the Vindicaar
-								["provider"] = { "n", 120738 },	-- High Exarch Turalyon
-								["sourceQuests"] = { 46842 },	-- A Strike at the Heart
-							}),
-							q(48500, {	-- A Moment of Respite
-								["provider"] = { "n", 126307 },	-- Prophet Velen
-								["sourceQuests"] = { 46843 },	-- Return to the Vindicaar
-							}),
 							q(47431, {	-- Gathering Light
 								["provider"] = { "n", 122378 },	-- High Exarch Turalyon
 								["sourceQuests"] = { 48500 },	-- A Moment of Respite
@@ -100,6 +88,14 @@ _.Zones =
 						["provider"] = { "n", 126239 },	-- Chieftain Hatuun
 						["coord"] = { 58.8, 78.4, 830 },
 					}),
+					q(46842, {	-- A Strike at the Heart
+						["sourceQuests"] = {
+							46840,	-- Prisoners No More
+							46841,	-- Threat Reduction
+						},
+						["provider"] = { "n", 120953 },	-- High Exarch Turalyon
+						["coord"] = { 50.3, 53.8, 830 },
+					}),
 					q(46839, {	-- From Darkness
 						["sourceQuests"] = { 46816 },	-- Rendezvous
 						["provider"] = { "n", 120529 },	-- High Exarch Turalyon
@@ -163,6 +159,11 @@ _.Zones =
 						["sourceQuests"] = { 46732 },	-- The Prophet's Gambit
 						["provider"] = { "n", 120529 },	-- High Exarch Turalyon
 						["coord"] = { 56.7, 67.4, 830 },
+					}),
+					q(46843, {	-- Return to the Vindicaar
+						["sourceQuests"] = { 46842 },	-- A Strike at the Heart
+						["provider"] = { "n", 120738 },	-- High Exarch Turalyon
+						["coord"] = { 51.5, 52.9, 830 },
 					}),
 					q(47589, {	-- Righteous Fury
 						["sourceQuests"] = { 46938 },	-- Alone in the Abyss

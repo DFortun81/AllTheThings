@@ -6,10 +6,15 @@ _.Instances = { tier(4, {	-- Cataclysm
 	n(-7, {	-- World Bosses
 		["isRaid"] = true,
 		["lvl"] = 85,
-		["groups"] = { 
+		["g"] = { 
 			n(50063, {	-- Akma'hat
-				["maps"] = { 249 },	-- Uldum
-				["groups"] = {
+				["maps"] = {	-- all Uldum maps
+					249,	-- Uldum
+					716,	-- Skywall
+					737,	-- The Vortex Pinnacle
+					857,	-- Throne of the Four Winds
+				},
+				["g"] = {
 					i(69877),	-- Belt of a Thousand Gaping Mouths
 					un(7, i(67240)),	-- Belt of A Thousand Mouths [Replaced with 69877]
 					i(67143),	-- Icebone Hauberk
@@ -33,8 +38,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 				},
 			}), 
 			n(50056, {	-- Garr
-				["maps"] = { 198 },	-- Mount Hyjal
-				["groups"] = {
+				["maps"] = {	-- all Mount Hyjal maps
+					198,	-- Mount Hyjal
+					738,	-- Firelands
+					760,	-- Malorne's Nightmare
+				},
+				["g"] = {
 					i(69842),	-- Garr's Reinforced Girdle of Memories
 					un(7, i(67235)), --	Garr's Girdle of Memories [Replaced with 69842]
 					i(67147),	-- Je'Tze's Sparkling Tiara
@@ -59,7 +68,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			}), 
 			n(50089, {	-- Julak-Doom
 				["maps"] = { 241 },	-- Twilight Highlands
-				["groups"] = {
+				["g"] = {
 					i(69844),	-- Vitreous Beak of Julak-Doom
 					un(7, i(67246)),	-- Beak of Julak-Doom [Replaced with 69844]
 					i(67150),	-- Arrowsinger Legguards
@@ -83,8 +92,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 				},
 			}), 
 			n(50009, {	-- Mobus
-				["maps"] = { 204 },	-- Vashj'ir
-				["groups"] = {
+				["maps"] = { 204 },	-- Vashj'ir (Abyssal Depths)
+				["g"] = {
 					i(69843),	-- Mobus's Dripping Halberd
 					i(67135),	-- Morrie's Waywalker Wrap
 					i(67133),	-- Dizze's Whirling Robe
@@ -96,7 +105,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			}), 
 			n(50061, {	-- Xariona
 				["maps"] = { 207 },	-- Deepholm
-				["groups"] = {
+				["g"] = {
 					i(69876),	-- Xariona's Spectral Gauntlets
 					un(7, i(67239)),	-- Xariona's Spectral Claws [Replaced with 69876]
 					i(67132),	-- Grips of the Failed Immortal

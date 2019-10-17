@@ -5,16 +5,35 @@
 _.Instances = { tier(7, {	-- Legion
 	n(-7, {	-- World Bosses
 		["isRaid"] = true,
-		["lvl"] = 110,
 		["modID"] = 3,
+		["lvl"] = 110,
 		["g"] = {
-			cr(109943, e(1790, {	-- Ana-Mouz 
+			e(1790, {	-- Ana-Mouz 
 				["questID"] = 43512,	-- Ana-Mouz (WQ)
 				["isRaid"] = true,
-				["maps"] = { 680 },	-- Suramar
 				["coord"] = { 31.0, 65.5, 680 },
+				["maps"] = {	-- all Suramar maps
+					680,	-- Suramar
+					681,	-- The Arcway Vaults #1
+					682,	-- Felsoul Hold
+					683,	-- The Arcway Vaults #2
+					684,	-- Shattered Locus (Floor #1)
+					685,	-- Shattered Locus (Floor #2)
+					686,	-- Elor'shan
+					687,	-- Kel'balor
+					688,	-- Ley Station Anora
+					689,	-- Ley Station Moonfall
+					690,	-- Ley Station Aethenar
+					691,	-- Nyell's Workshop
+					692,	-- Falanaar Arcway
+					693,	-- Falanaar Arcway
+					798,	-- The Arcway
+				},
+				["cr"] = 109943,	-- Ana-Mouz
 				["g"] = {
-					ach(11160, crit(5)),	-- Unleashed Monstrosities / Ana-Mouz
+					crit(5, {	-- Ana-Mouz
+						["achievementID"] = 11160,	-- Unleashed Monstrosities
+					}),
 					i(137778),	-- Vantus Rune Technique: Tichondrius [Rank 3]
 					i(141448),	-- Imp Mother's Loincloth
 					i(141423),	-- Crop Top Chain Hauberk
@@ -24,14 +43,17 @@ _.Instances = { tier(7, {	-- Legion
 					i(141486),	-- Demonic Birthstone Ring
 					i(141520),	-- Imp-Eye Diamond
 				},
-			})),	
-			cr(121124, e(1956, {	-- Apocron 
+			}),	
+			e(1956, {	-- Apocron 
 				["questID"] = 47061,	-- Apocron (WQ)
 				["isRaid"] = true,
-				["maps"] = { 646 },	-- The Broken Shore
 				["coord"] = { 59.2, 62.6, 646 },
+				["maps"] = { 646 },	-- The Broken Shore
+				["cr"] = 121124,	-- Apocron
 				["g"] = {
-					ach(11786, crit(4)),	-- Terrors of the Shore / Apocron
+					crit(4, {	-- Apocron
+						["achievementID"] = 11786,	-- Terrors of the Shore
+					}),
 					i(147766),	-- Band of Dark Millennia
 					i(147734),	-- Spaulders of Forgotten Worlds
 					i(147743),	-- Harness of Devouring Flame
@@ -41,14 +63,17 @@ _.Instances = { tier(7, {	-- Legion
 					i(147760),	-- Apocron's Energy Core
 					i(147759),	-- Charged Felfire Casing
 				},
-			})),
-			cr(117239, e(1883, {	-- Brutallus 
+			}),
+			e(1883, {	-- Brutallus 
 				["questID"] = 46947,	-- Brutallus (WQ)
 				["isRaid"] = true,
-				["maps"] = { 646 },	-- The Broken Shore
 				["coord"] = { 59.2, 28.4, 646 },
+				["maps"] = { 646 },	-- The Broken Shore
+				["cr"] = 117239,	-- Brutallus
 				["g"] = {
-					ach(11786, crit(1)),	-- Terrors of the Shore / Brutallus
+					crit(1, {	-- Brutallus
+						["achievementID"] = 11786,	-- Terrors of the Shore
+					}),
 					i(147749),	-- Polished Felfury Helmet
 					i(147765),	-- Clasp of Burning Demise
 					i(147742),	-- Violent Zealot's Shoulderpads
@@ -59,14 +84,17 @@ _.Instances = { tier(7, {	-- Legion
 					i(147755),	-- Brutallus's Wretched Heart
 					i(147756),	-- Crashing Ember
 				},
-			})),
-			cr(109331, e(1774, {	-- Calamir 
+			}),
+			e(1774, {	-- Calamir
 				["questID"] = 43193,	-- Calamitous Intent (WQ)
 				["isRaid"] = true,
-				["maps"] = { 630 },	-- Azsuna
 				["coord"] = { 37.7, 83.6, 630 },
+				["maps"] = { 630 },	-- Azsuna
+				["cr"] = 109331,	-- Calamir
 				["g"] = {
-					ach(11160, crit(9)),	-- Unleashed Monstrosities / Calamir
+					crit(9, {	-- Calamir
+						["achievementID"] = 11160,	-- Unleashed Monstrosities
+					}),
 					i(137847),	-- Design: Sorcerous Shadowruby Pendant [Rank 3]
 					i(141438),	-- Pendant of Cold Flame
 					i(141432),	-- Frostburned Sabatons
@@ -76,14 +104,33 @@ _.Instances = { tier(7, {	-- Legion
 					i(141533),	-- Ring of Frozen Magic
 					i(141522),	-- Calamir's Jaw
 				},
-			})),
-			cr(110378, e(1789, {	-- Drugon the Frostblood 
+			}),
+			e(1789, {	-- Drugon the Frostblood 
 				["questID"] = 43448,	-- The Frozen King (WQ)
 				["isRaid"] = true,
-				["maps"] = { 650 },	-- Highmountain
 				["coord"] = { 58.4, 72.6, 650 },
+				["maps"] = {	-- all Highmountain maps
+					650,	-- Highmountain
+					651,	-- Bitestone Enclave
+					652,	-- Thunder Totem
+					653,	-- Cave of the Blood Trial
+					654,	-- Mucksnout Den
+					655,	-- Lifespring Cavern
+					656,	-- Lifespring Cavern
+					657,	-- Path of Huln (Floor 1)
+					658,	-- Path of Huln (Floor 2)
+					659, 	-- Stonedark Grotto
+					660,	-- Feltotem Caverns
+					750,	-- Thunder Totem
+					826,	-- Cave of the Bloodtotem (Probably was Artefact Scenario for Mage Tower)
+					869,	-- Highmountain (Legion Invasion Ship 1)
+					870,	-- Highmountain (Legion Invasion Ship 2)
+				},
+				["cr"] = 110378,	-- Drugon the Frostblood
 				["g"] = {
-					ach(11160, crit(7)),	-- Unleashed Monstrosities / Drugon the Frostblood
+					crit(7, {	-- Drugon the Frostblood
+						["achievementID"] = 11160,	-- Unleashed Monstrosities
+					}),
 					i(142108),	-- Vantus Rune Technique: Guarm [Rank 3]
 					i(141538),	-- Giant's Handkerchief
 					i(141433),	-- Assorted Dragonscale Bracers
@@ -93,14 +140,33 @@ _.Instances = { tier(7, {	-- Legion
 					i(141535),	-- Ettin Fingernail
 					i(141517),	-- Drugon's Snowglobe
 				},
-			})),
-			cr(99929, e(1795,  {	-- Flotsam
+			}),
+			e(1795, {	-- Flotsam
 				["questID"] = 43985,	-- A Dark Tide (WQ)
 				["isRaid"] = true,
-				["maps"] = { 650 },	-- Highmountain
 				["coord"] = { 49.2, 7.60, 650 },
+				["maps"] = {	-- all Highmountain maps
+					650,	-- Highmountain
+					651,	-- Bitestone Enclave
+					652,	-- Thunder Totem
+					653,	-- Cave of the Blood Trial
+					654,	-- Mucksnout Den
+					655,	-- Lifespring Cavern
+					656,	-- Lifespring Cavern
+					657,	-- Path of Huln (Floor 1)
+					658,	-- Path of Huln (Floor 2)
+					659, 	-- Stonedark Grotto
+					660,	-- Feltotem Caverns
+					750,	-- Thunder Totem
+					826,	-- Cave of the Bloodtotem (Probably was Artefact Scenario for Mage Tower)
+					869,	-- Highmountain (Legion Invasion Ship 1)
+					870,	-- Highmountain (Legion Invasion Ship 2)
+				},
+				["cr"] = 99929,	-- Flotsam
 				["g"] = {
-					ach(11160, crit(4)),	-- Unleashed Monstrosities / Flotsam
+					crit(4, {	-- Flotsam
+						["achievementID"] = 11160,	-- Unleashed Monstrosities
+					}),
 					i(139573, {	-- The Warmace of Shirvallah (Shaman Artifact)
 						artifact(880),	-- Find Hidden Artifact Skin
 					}),
@@ -112,14 +178,24 @@ _.Instances = { tier(7, {	-- Legion
 					i(141544),	-- Marshstomper Oracle's Loop
 					i(141516),	-- "Liberated" Un'goro Relic
 				},
-			})),
-			cr(108879, e(1770, {	-- Humongris <The Wizard>
+			}),
+			e(1770, {	-- Humongris <The Wizard>
 				["questID"] = 42819,	-- Pocket Wizard (WQ)
 				["isRaid"] = true,
-				["maps"] = { 641 },	-- Val'sharah
 				["coord"] = { 24.6, 69.6, 641 },
+				["maps"] = {	-- all Val'sharah maps
+					641,	-- Val'sharah
+					642,	-- Darkpens
+					643,	-- Sleeper's Barrow
+					644,	-- Sleeper's Barrow #2
+					758,	-- Gloaming Reef
+					868,	-- Val'sharah (Legion Invasion)
+				},
+				["cr"] = 108879,	-- Humongris
 				["g"] = {
-					ach(11160, crit(3)),	-- Unleashed Monstrosities / Humongris
+					crit(3, {	-- Humongris
+						["achievementID"] = 11160,	-- Unleashed Monstrosities
+					}),
 					i(139895, {	-- Skinning Technique: Legion Butchery
 						["collectible"] = false,
 						["g"] = {
@@ -134,14 +210,23 @@ _.Instances = { tier(7, {	-- Legion
 					i(141536),	-- Padawsen's Unlucky Charm
 					i(141521),	-- Sea Giant Toothpick Fragment
 				},
-			})),
-			cr(108829, e(1769, {	-- Levantus 
+			}),
+			e(1769, {	-- Levantus 
 				["questID"] = 43192,	-- Terror of the Deep (WQ)
 				["isRaid"] = true,
-				["maps"] = { 630 },	-- Azsuna
 				["coord"] = { 43.0, 67.6, 630 },
+				["maps"] = {	-- all Azsuna maps
+					630,	-- Azsuna
+					631,	-- Nar'thalas Academy
+					632,	-- Oceanus Cove
+					633,	-- Temple of a Thousand Lights
+					867,	-- Azsuna Invasion Map
+				},
+				["cr"] = 108829,	-- Levantus
 				["g"] = {
-					ach(11160, crit(6)),	-- Unleashed Monstrosities / Levantus
+					crit(6, {	-- Levantus
+						["achievementID"] = 11160,	-- Unleashed Monstrosities
+					}),
 					i(142109),	-- Vantus Rune Technique: Helya [Rank 3]
 					i(139573, {	-- The Warmace of Shirvallah (Shaman Artifact)
 						artifact(880),	-- Find Hidden Artifact Skin
@@ -154,14 +239,17 @@ _.Instances = { tier(7, {	-- Legion
 					i(141545),	-- Ring of Deep Sea Pearls
 					i(141523),	-- Fel-Scented Bait
 				},
-			})),
-			cr(117303, e(1884, {	-- Malificus
+			}),
+			e(1884, {	-- Malificus
 				["questID"] = 46948,	-- Malificus (WQ)
 				["isRaid"] = true,
-				["maps"] = { 646 },	-- The Broken Shore
 				["coord"] = { 59.8, 27.8, 646 },
+				["maps"] = { 646 },	-- The Broken Shore
+				["cr"] = 117303,	-- Malificus
 				["g"] = {
-					ach(11786, crit(2)),	-- Terrors of the Shore / Malificus
+					crit(2, {	-- Malificus
+						["achievementID"] = 11786,	-- Terrors of the Shore
+					}),
 					i(147740),	-- Plague-Resistant Headcover
 					i(147764),	-- Cloak of Growing Mistrust
 					i(147733),	-- Doomsayer's Ritualistic Vestment
@@ -173,18 +261,33 @@ _.Instances = { tier(7, {	-- Legion
 					i(147758),	-- Beguiling Revelation
 					i(147754),	-- Gory Dreadlord Horn
 				},
-			})),	
-			cr(110321, e(1783, {	-- Na'zak the Fiend 
+			}),
+			e(1783, {	-- Na'zak the Fiend 
 				["questID"] = 43513,	-- Na'zak the Fiend(WQ)
 				["isRaid"] = true,
-				["maps"] = {
+				["coord"] = { 36.0, 66.4, 685 },
+				["maps"] = {	-- all Suramar maps
 					680,	-- Suramar
+					681,	-- The Arcway Vaults #1
+					682,	-- Felsoul Hold
+					683,	-- The Arcway Vaults #2
 					684,	-- Shattered Locus (Floor #1)
 					685,	-- Shattered Locus (Floor #2)
+					686,	-- Elor'shan
+					687,	-- Kel'balor
+					688,	-- Ley Station Anora
+					689,	-- Ley Station Moonfall
+					690,	-- Ley Station Aethenar
+					691,	-- Nyell's Workshop
+					692,	-- Falanaar Arcway
+					693,	-- Falanaar Arcway
+					798,	-- The Arcway
 				},
-				["coord"] = { 36.0, 66.4, 685 },
+				["cr"] = 110321,	-- Na'zak the Fiend
 				["g"] = {
-					ach(11160, crit(1)),	-- Unleashed Monstrosities / Na'zak the Fiend
+					crit(1, {	-- Na'zak the Fiend
+						["achievementID"] = 11160,	-- Unleashed Monstrosities
+					}),
 					i(142121),	-- Recipe: Potion of Prolonged Power [Rank 3]
 					i(141425),	-- Avalanche Resistant Legplates
 					i(141417),	-- Desiccated Leather Pants
@@ -194,15 +297,32 @@ _.Instances = { tier(7, {	-- Legion
 					i(141488),	-- Mana-Dowsing Ring
 					i(141515),	-- Leystone Nugget
 				},
-			})),	
-			cr(107544, e(1749, {	-- Nithogg 
+			}),	
+			e(1749, {	-- Nithogg 
 				["questID"] = 42270,	-- Scourge of the Skies (WQ)
 				["isRaid"] = true,
-				["maps"] = { 634 },	-- Stormheim
 				["coord"] = { 46.6, 30.0, 634 },
-				["crs"] = { 107023 },
+				["maps"] = {	-- all Stormheim maps
+					634,	-- Stormheim
+					635,	-- Shield's Rest
+					636,	-- Stormscale Cavern
+					637,	-- Thorignir Refuge
+					638,	-- Thorignir Refuge
+					639,	-- Aggramar's Vault
+					640,	-- Vault of Eyir
+					649,	-- Helheim
+					671,	-- The Cove of Nashal (used in introductory scenario)
+					694,	-- Helmouth Shallows
+					829,	-- Halls of Valor
+					865,	-- Stormheim (Legion Invasion)
+					866,	-- Stormheim (Legion Invasion)
+					877,	-- Fields of the Eternal Hunt
+				},
+				["cr"] = 107544,	-- Nithogg
 				["g"] = {
-					ach(11160, crit(2)),	-- Unleashed Monstrosities / Nithogg
+					crit(2, {	-- Nithogg
+						["achievementID"] = 11160,	-- Unleashed Monstrosities
+					}),
 					i(142107),	-- Vantus Rune Technique: Odyn [Rank 3]
 					i(140658),	-- Skull of Nithogg
 					i(141420),	-- Coif of Unstable Discharge
@@ -213,14 +333,24 @@ _.Instances = { tier(7, {	-- Legion
 					i(141546),	-- Cursed Warden's Keepsake
 					i(141519),	-- Pillaged Titan Disc
 				},
-			})),
-			cr(108678, e(1763, {	-- Shar'thos
+			}),
+			e(1763, {	-- Shar'thos
 				["questID"] = 42779,	-- The Sleeping Corruption (WQ)
 				["isRaid"] = true,
-				["maps"] = { 641 },	-- Val'sharah 
 				["coord"] = { 55.6, 43.2, 641 },
+				["maps"] = {	-- all Val'sharah maps
+					641,	-- Val'sharah
+					642,	-- Darkpens
+					643,	-- Sleeper's Barrow
+					644,	-- Sleeper's Barrow #2
+					758,	-- Gloaming Reef
+					868,	-- Val'sharah (Legion Invasion)
+				},
+				["cr"] = 108678,	-- Shar'thos
 				["g"] = {
-					ach(11160, crit(10)),	-- Unleashed Monstrosities / Shar'thos
+					crit(10, {	-- Shar'thos
+						["achievementID"] = 11160,	-- Unleashed Monstrosities
+					}),
 					i(140659),	-- Skull of Shar'thos
 					i(141547),	-- Choker of Dreamthorns
 					i(141542),	-- Despoiled Dreamthread Cloak
@@ -230,14 +360,17 @@ _.Instances = { tier(7, {	-- Legion
 					i(141495),	-- Robe of Fever Dreams
 					i(141518),	-- Decaying Dragonfang
 				},
-			})),
-			cr(117470, e(1885, {	-- Si'vash 
+			}),
+			e(1885, {	-- Si'vash 
 				["questID"] = 46945,	-- Si'vash (WQ)
 				["isRaid"] = true,
-				["maps"] = { 646 },	-- The Broken Shore
 				["coord"] = { 89.6, 33.0, 646 },
+				["maps"] = { 646 },	-- The Broken Shore
+				["cr"] = 117470,	-- Si'vash
 				["g"] = {
-					ach(11786, crit(3)),	-- Terrors of the Shore / Si'vash
+					crit(3, {	-- Si'vash
+						["achievementID"] = 11786,	-- Terrors of the Shore
+					}),
 					i(147731),	-- Cowl of Plumbed Depths
 					i(147752),	-- Pauldrons of the Engulfing Tide
 					i(147737),	-- Shorebreaker Robes
@@ -248,22 +381,36 @@ _.Instances = { tier(7, {	-- Legion
 					i(147757),	-- Globule of Submersion
 					i(147761),	-- Sandblasted Conch
 				},
-			})),
+			}),
 			e(1756, {	-- The Soultakers
 				["questID"] = 42269,	-- The Soultakers (WQ)
 				["isRaid"] = true,
-				["maps"] = {
+				["coord"] = { 78.2, 8.60, 634 },
+				["maps"] = {	-- all Stormheim maps
 					634,	-- Stormheim
 					635,	-- Shield's Rest
+					636,	-- Stormscale Cavern
+					637,	-- Thorignir Refuge
+					638,	-- Thorignir Refuge
+					639,	-- Aggramar's Vault
+					640,	-- Vault of Eyir
+					649,	-- Helheim
+					671,	-- The Cove of Nashal (used in introductory scenario)
+					694,	-- Helmouth Shallows
+					829,	-- Halls of Valor
+					865,	-- Stormheim (Legion Invasion)
+					866,	-- Stormheim (Legion Invasion)
+					877,	-- Fields of the Eternal Hunt
 				},
-				["coord"] = { 78.2, 8.60, 634 },
 				["crs"] = {
 					106981,	-- Captain Hring
 					106982,	-- Reaver Jdorn
 					106984,	-- Soultrapper Mevra
 				},
 				["g"] = {
-					ach(11160, crit(8)),	-- Unleashed Monstrosities / The Soultakers
+					crit(8, {	-- The Soultakers
+						["achievementID"] = 11160,	-- Unleashed Monstrosities
+					}),
 					i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 						artifact(870),	-- Find Hidden Artifact Skin
 					}),
@@ -276,13 +423,22 @@ _.Instances = { tier(7, {	-- Legion
 					i(141514),	-- Barnacled Mistcaller Orb
 				},
 			}),
-			cr(112350, e(1796, {	-- Withered J'im 
+			e(1796, {	-- Withered J'im 
 				["questID"] = 44287,	-- DEADLY: Withered J'im (WQ)
 				["isRaid"] = true,
-				["maps"] = { 630 },	-- Azsuna
 				["coord"] = { 52.6, 80.8, 630 },
+				["maps"] = {	-- all Azsuna maps
+					630,	-- Azsuna
+					631,	-- Nar'thalas Academy
+					632,	-- Oceanus Cove
+					633,	-- Temple of a Thousand Lights
+					867,	-- Azsuna Invasion Map
+				},
+				["cr"] = 112350,	-- Withered J'im
 				["g"] = {
-					ach(11160, crit(11)),	-- Unleashed Monstrosities / Withered J'im
+					crit(11, {	-- Withered J'im
+						["achievementID"] = 11160,	-- Unleashed Monstrosities
+					}),
 					i(141455),	-- Cave Skulker's Helm
 					i(141453),	-- Magic-Warped Hood
 					i(141459),	-- Manacrystal-Adorned Helmet
@@ -291,7 +447,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(141492),	-- Dingy Suramar Mercantile Signet
 					i(141482),	-- Unstable Arcanocrystal
 				},
-			})),
+			}),
 		},
 	}),
 })};

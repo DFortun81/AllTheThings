@@ -254,6 +254,11 @@ _.Zones =
 						["coord"] = { 41.1, 24.3, 831 },
 						["lvl"] = 110,
 					}),
+					q(48500, {	-- A Moment of Respite
+						["sourceQuests"] = { 46843 },	-- Return to the Vindicaar
+						["provider"] = { "n", 126307 },	-- Prophet Velen
+						["coord"] = { 40.9, 24.7, 831 },
+					}),
 					q(48078, {	-- Counterbalancing
 						["requireSkill"] = 165,	-- Leatherworking
 						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
