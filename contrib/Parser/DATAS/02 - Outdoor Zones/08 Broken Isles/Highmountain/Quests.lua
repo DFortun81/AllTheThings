@@ -50,8 +50,14 @@ _.Zones =
 					["provider"] = { "n", 95410 },	-- Lasan Skyhorn
 				}),
 				q(45841, {	-- A Triumphant Report
-				--	it looks like this is part of an artifact questline.  not sure if there are class requirements.  there isn't much info on wowhead.
+					["classes"] = {
+						3,	-- Hunter (Beast Mastery)
+						10,	-- Monk (Windwalker)
+						5,	-- Priest (Discipline)
+						9,	-- Warlock (Destruction)
+					},
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
 				}),
 				q(40000, {	-- A True Hunter
 					["coord"] = { 57.5, 56.4, 650 },
