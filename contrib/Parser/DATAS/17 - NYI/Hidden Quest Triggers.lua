@@ -624,13 +624,15 @@ _.NeverImplemented =
 		q(48579),	-- Shroud of Arcane Echoes active tracking quest?
 		q(46808),	-- Ship - Highmountain — part of a Highmountain invasion.  i refreshed after killing the NPC for "Holding Our Ground" and this quest popped
 		q(47194),	-- Battle for Highmountain — popped alongside the normal "Battle for Highmountain" final invasion quest.  possibly first-time quest?
+		q(47195),	-- Battle for Stormheim — same as above, first time i did the Stormheim invasion on that character
 		q(48281),	-- getting into the Lightforged Warframe during Dawn of Justice
-		q(44602),	-- Tracking Quest: Preparations for Invasion 1 — completing first mission on DH class campaign quest "Preparations for Invasion"
 		q(43746),	-- Currency Treasure - Moon Guard — looting Shimmering Ancient Mana Cluster (?) at (41.9, 19.2) in Suramar
+		q(44602),	-- Tracking Quest: Preparations for Invasion 1 — completing first mission on DH class campaign quest "Preparations for Invasion"
 		q(44604),	-- Tracking Quest: Preparations for Invasion 2
 		q(44605),	-- Tracking Quest: Preparations for Invasion 3
 		q(44606),	-- Tracking Quest: Preparations for Invasion 4
 		q(44607),	-- Tracking Quest: Preparations for Invasion 5
+		q(49161),	-- triggered when turning in #48461, "Where They Least Expect It"
 		
 	-- World Boss
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
@@ -697,6 +699,7 @@ _.NeverImplemented =
 		q(49215),	-- triggered upon completing Bonich, but not the official quest.
 		q(49211),	-- triggered upon completing Cen'gar, but not the official quest.
 		q(49214),	-- triggered upon completing Naigtal, but not the official quest.
+		q(48675),	-- Lockout Tracking - Normal - Marsh — triggered on character's first completion of Naigtal
 		q(49212),	-- triggered upon completing Sangua, but not the official quest.
 		q(49210),	-- triggered upon completing Val, but not the official quest.
 		

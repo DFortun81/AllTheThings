@@ -7,8 +7,7 @@ _.WorldEvents =
 		["achievementID"] = 11544,	-- Defender of the Broken Isles
 		["maps"] = { 641, 650, 634, 630 },
 		["groups"] = {
-			{
-				["vignetteID"] = 47063,
+			v(47063, {	-- Tracking Quest
 				["crs"] = {
 					118180,	-- Dread Vizier Gra'tork <Legion Commander>
 					119579,	-- Fel Commander Erixtol
@@ -56,7 +55,7 @@ _.WorldEvents =
 					i(139165),	-- Bloodseeker's Bulwark
 					i(139166),	-- Soulstealer's Barrier
 				},
-			},
+			}),
 			n(-17, {	-- Quests
 				q(46205, {	-- A Conduit No More
 					["sourceQuests"] = { 45795 },	-- Presence of Power
@@ -89,6 +88,11 @@ _.WorldEvents =
 					["sourceQuests"] = { 44789 },	-- Holding the Ramparts
 					["repeatable"] = true,
 					["provider"] = { "n", 118250 },	-- Commander Jarod Shadowsong
+				}),
+				q(46110, {	-- Battle for Stormheim
+					["sourceQuests"] = { 45406 },	-- The Storm's Fury
+					["repeatable"] = true,
+					["provider"] = { "n", 118778 },	-- Val'kyr of Odyn
 				}),
 				q(45572, {	-- Holding Our Ground
 					["sourceQuests"] = { 45840 },	-- Assault on Highmountain

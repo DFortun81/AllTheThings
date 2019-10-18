@@ -222,6 +222,15 @@ _.ExpansionFeatures =
 						["coord"] = { 58.5, 56.4, 720 },
 						["lvl"] = 103,
 					}),
+					q(42754, {	-- Jump-Capable
+						["sourceQuests"] = {
+							42733,	-- A Very Special Kind of Fuel
+							42732,	-- Deadlier Warglaives
+						},
+						["provider"] = { "n", 98646 },	-- Jace Darkweaver
+						["coord"] = { 59.0, 74.0, 721 },
+						["lvl"] = 110,
+					}),
 					q(42522, {	-- Leader of the Illidari
 						["sourceQuests"] = { 42510 },
 						["provider"] = { "n", 107724 },	-- Kayn Sunfury
@@ -440,7 +449,6 @@ _.ExpansionFeatures =
 					}),
 					q(44379),	-- In Pursuit of Power
 					q(45994),	-- Investigate the Broken Shore
-					q(42754),	-- Jump-Capable
 					q(42132),	-- Last, But Not Least
 					q(46333),	-- Livin' on the Ledge
 					q(40819),	-- Making Arrangements

@@ -244,6 +244,16 @@ _.Zones =
 						["provider"] = { "n", 123148 },	-- Illidan Stormrage
 						["coord"] = { 54.3, 75.3, 830 },
 					}),
+					q(48280, {	-- Visions of Another
+						["sourceQuests"] = { 48277 },	-- The Speaker Seeks
+						["provider"] = { "n", 124595 },	-- Magni Bronzebeard
+						["coord"] = { 57.0, 65.6, 830 },
+					}),
+					q(48272, {	-- Visions of Fear
+						["sourceQuests"] = { 48273 },	-- The Speaker Listens
+						["provider"] = { "n", 124595 },	-- Magni Bronzebeard
+						["coord"] = { 57.0, 65.6, 830 },
+					}),
 					q(47890, {	-- Visions of Torment
 						["sourceQuests"] = { 47889 },	-- The Speaker Calls
 						["provider"] = { "n", 124595 },	-- Magni Bronzebeard
@@ -344,14 +354,6 @@ _.Zones =
 								i(151703),	-- Recipe: Tears of the Naaru (Rank 1)
 							},
 							["requireSkill"] = 171,	-- Alchemy
-						}),
-						q(48280, {	-- Visions of Another
-							["coord"] = { 57.0, 65.6, 830 },
-							["provider"] = { "n", 124595 },	-- Magni Bronzebeard
-						}),
-						q(48272, {	-- Visions of Fear
-							["coord"] = { 57.0, 65.6, 830 },
-							["provider"] = { "n", 124595 },	-- Magni Bronzebeard
 						}),
 					}),
 				},

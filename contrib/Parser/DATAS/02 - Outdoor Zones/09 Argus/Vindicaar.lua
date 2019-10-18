@@ -18,35 +18,7 @@ _.Zones =
 			["lvl"] = 110,
 			["isRaid"] = true,
 			["g"] = {
-				n(-4,   {	-- Achievement
-					ach(12073, {	-- Locked and Loaded
-						crit(1, {	-- Light's Judgement
-							["sourceQuests"] = { 47287 },	-- The Vindicaar Matrix Core
-						}),
-						crit(2, {	-- Lightforged Warframe
-							["sourceQuests"] = { 47994 },	-- Forming a Bond
-						}),
-						crit(3, {	-- Fel Heart of Argus
-							["sourceQuests"] = { 47182 },	-- Long Overdue
-						}),
-						crit(4, {	-- Shroud of Arcane Echoes
-							["sourceQuests"] = { 48107 },	-- The Sigil of Awakening
-						}),
-					}),
-					ach(12066, {	-- You Are Now Prepared!
-						crit(1, {	-- The Assault Begins
-							["sourceQuests"] = {
-								47473,	-- Sizing Up the Opposition (Light's Purchase)
-								48929,	-- Sizing Up the Opposition (The Veiled Den)
-							},
-						}),
-						crit(2, {	-- Dark Awakenings
-							["sourceQuests"] = { 48107 },	-- The Sigil of Awakening
-						}),
-						crit(3, {	-- War of Light and Shadow
-							["sourceQuests"] = { 47220 },	-- A Beacon in the Dark
-						}),
-					}),
+				n(-4,   {	-- Achievement					
 				}),
 				n(-169, {	-- Emissary Quests
 					q(48642, {	-- Argussian Reach
@@ -235,6 +207,11 @@ _.Zones =
 						["provider"] = { "n", 126307 },	-- Prophet Velen
 						["coord"] = { 46.0, 36.7, 831 },
 					}),
+					q(48560, {	-- An Offering of Shadow
+						["sourceQuests"] = { 47220 },	-- A Beacon in the Dark
+						["provider"] = { "n", 128722 },	-- Prophet Velen
+						["coord"] = { 53.1, 48.8, 883 },
+					}),
 					q(48078, {	-- Counterbalancing
 						["requireSkill"] = 165,	-- Leatherworking
 						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
@@ -318,6 +295,11 @@ _.Zones =
 						["provider"] = { "n", 126954 },	-- High Exarch Turalyon
 						["coord"] = { 34.4, 57.2, 831 },
 					}),
+					q(47654, {	-- Seat of the Triumvirate: The Crest of Knowledge
+						["sourceQuests"] = { 47220 },	-- A Beacon in the Dark
+						["provider"] = { "n", 128722 },	-- Prophet Velen
+						["coord"] = { 53.1, 48.8, 883 },
+					}),
 					q(48200, {	-- Securing a Foothold
 						["sourceQuests"] = { 48199 },	-- The Burning Heart
 						["provider"] = { "n", 126954 },	-- High Exarch Turalyon
@@ -354,6 +336,11 @@ _.Zones =
 						["provider"] = { "n", 129674 },	-- Maras
 						["coord"] = { 40.4, 64.7, 832 },
 					}),
+					q(47238, {	-- The Seat of the Triumvirate
+						["sourceQuests"] = { 47416 },	-- Shadow of the Triumvirate
+						["provider"] = { "n", 128735 },	-- Prophet Velen
+						["coord"] = { 57.8, 61.5, 883 },
+					}),
 					q(47889, {	-- The Speaker Calls
 						["sourceQuests"] = {
 							47473,	-- Sizing Up the Opposition (Light's Purchase)
@@ -361,6 +348,16 @@ _.Zones =
 						},
 						["provider"] = { "n", 126954 },	-- High Exarch Turalyon
 						["coord"] = { 34.1, 57.1, 831 },
+					}),
+					q(48273, {	-- The Speaker Listens
+						["sourceQuests"] = { 48560 },	-- An Offering of Shadow
+						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
+						["coord"] = { 46.7, 25.0, 883 },
+					}),
+					q(48277, {	-- The Speaker Seeks
+						["sourceQuests"] = { 48272 },	-- Visions of Fear
+						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
+						["coord"] = { 40.1, 25.6, 831 },
 					}),
 					q(47287, {	-- The Vindicaar Matrix Core
 						["sourceQuests"] = { 47743 },	-- Child of Light and Shadow
@@ -371,10 +368,20 @@ _.Zones =
 						["requireSkill"] = 202,	-- Engineering
 						["sourceQuests"] = { 46941 },	-- The Path Forward
 					}),
+					q(48344, {	-- We Have a Problem
+						["sourceQuests"] = { 48461 },	-- Where They Least Expect It
+						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
+						["coord"] = { 44.9, 24.0, 831 },
+					}),
 					q(48461, {	-- Where They Least Expect It
 						["sourceQuests"] = { 48107 },	-- The Sigil of Awakening
 						["provider"] = { "n", 126408 },	-- Illidan Stormrage
 						["coord"] = { 47.0, 21.7, 831 },
+					}),
+					q(40761, {	-- Whispers from Oronaar
+						["sourceQuests"] = { 47238 },	-- The Seat of the Triumvirate
+						["provider"] = { "n", 121230 },	-- Alleria Windrunner
+						["coord"] = { 58.2, 61.1, 883 },
 					}),
 				}),
 				n(127476, {	-- Scouting Map

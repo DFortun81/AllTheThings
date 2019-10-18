@@ -4,8 +4,9 @@
 
 _.Instances = { tier(7, {	-- Legion
 	inst(721, {	-- Halls of Valor
-		["lvl"] = 98,
+		["coord"] = { 70.4, 69.4, 634 },
 		["maps"] = { 703, 704, 705 },
+		["lvl"] = 98,
 		["g"] = {
 			n(-17, {	-- Quests
 				o(251991, {	-- The Aegis of Aggramar
@@ -26,16 +27,16 @@ _.Instances = { tier(7, {	-- Legion
 			}),
 			n(-34, {	-- World Quests
 				q(42243, {	-- Halls of Valor: Deeds of the Past
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["collectible"] = false,
 				}),
 				q(42240, {	-- Halls of Valor: Ponderous Poaching
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["collectible"] = false,
 				}),
 				q(42239, {	-- Halls of Valor: The Bear King
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["collectible"] = false,
 				}),
 			}),
 			d(1,  {	-- Normal
