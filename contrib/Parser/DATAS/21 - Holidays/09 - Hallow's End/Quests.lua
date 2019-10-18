@@ -2645,7 +2645,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						i(33226),	-- Tricky Treat
 					},
 				}),
-				q(11461, {	-- Fire Training (Tirisfal Glades)
+				q(11316, {	-- Fire Training (Tirisfal Glades)
 					["sourceQuests"] = { 11357 },	-- Masked Orphan Matron
 					["provider"] = { "n", 23973 },	-- Masked Orphan Matron
 					["coord"] = { 52.5, 41.2, 18 },	-- Tirisfal Glades
