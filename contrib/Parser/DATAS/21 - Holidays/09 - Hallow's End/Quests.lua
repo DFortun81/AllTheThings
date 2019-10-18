@@ -389,10 +389,10 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
-				q(13473, {	-- Candy Bucket — Dalaran, Legerdemain Lounge, neutral
+				q(43055, {	-- Candy Bucket — Dalaran : Broken Shores, Legerdemain Lounge, neutral
 					["isYearly"] = true,
-					["coord"] = { 66.6, 30.1, 125 },
-					["maps"] = { 125 },	-- Dalaran
+					["coord"] = { 48.1, 41.3, 627 },
+					["maps"] = { 625 },	-- Dalaran : Broken Shores
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
 						i(37586, {	-- Handful of Treats
@@ -400,11 +400,46 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
-				q(13463, {	-- Candy Bucket — Dalaran, Silver Enclave, Alliance
+				q(43056, {	-- Candy Bucket — Dalaran : Broken Shores, Silver Enclave, Alliance
+					["isYearly"] = true,
+					["coord"] = { 41.8, 64.1, 627 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 626 },	-- Dalaran : Broken Shores
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(43057, {	-- Candy Bucket — Dalaran : Broken Shores, Sunreaver's Sanctuary, Horde
+					["isYearly"] = true,
+					["coord"] = { 66.7, 30.1, 627 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 625 },	-- Dalaran : Broken Shores
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(13473, {	-- Candy Bucket — Dalaran : Northrend, Legerdemain Lounge, neutral
+					["isYearly"] = true,
+					["coord"] = { 66.6, 30.1, 125 },
+					["maps"] = { 125 },	-- Dalaran : Northrend
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(13463, {	-- Candy Bucket — Dalaran : Northrend, Silver Enclave, Alliance
 					["isYearly"] = true,
 					["coord"] = { 42.5, 63.5, 125 },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 125 },	-- Dalaran
+					["maps"] = { 125 },	-- Dalaran : Northrend
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
 						i(37586, {	-- Handful of Treats
@@ -412,11 +447,11 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
-				q(13463, {	-- Candy Bucket — Dalaran, Sunreaver's Sanctuary, Horde
+				q(13463, {	-- Candy Bucket — Dalaran : Northrend, Sunreaver's Sanctuary, Horde
 					["isYearly"] = true,
 					["coord"] = { 48.3, 40.8, 125 },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 125 },	-- Dalaran
+					["maps"] = { 125 },	-- Dalaran : Northrend
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
 						i(37586, {	-- Handful of Treats
@@ -424,12 +459,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
-				q(13472, {	-- Candy Bucket — Dalaran, Underbelly, neutral
+				q(13472, {	-- Candy Bucket — Dalaran : Northrend, Underbelly, neutral
 					["isYearly"] = true,
 					["coord"] = { 27.2, 41.4, 126 },
 					["maps"] = {
-						125,	-- Dalaran, upper level
-						126,	-- Dalaran, Underbelly
+						125,	-- Dalaran : Northrend, upper level
+						126,	-- Dalaran : Northrend, Underbelly
 					},
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
@@ -2372,6 +2407,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					},
 				}),
 				q(12390, {	-- Candy Bucket — Zangarmarsh, Zabra'jin, Horde
+					["isYearly"] = true,
 					["coord"] = { 30.7, 50.9, 102 },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 102 },	-- Zangarmarsh
@@ -2702,6 +2738,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 					["g"] = {
 						un(26, i(71076)),	-- Creepy Crate (Pet)
 					},
+				}),
+				q(43259, {	-- Beware of the Crooked Tree
+					["provider"] = { "n", 109854 },	-- Duroc Ironjaw
+					["maps"] = { 625 },	-- Dalaran : Broken Shores
+					["coord"] = { 47.4, 40.6, 627 },	-- Dalaran : Broken Shores
+					["u"] = 26,	-- Hallow's End
+					["isYearly"] = true,
 				}),
 				q(43162, {	-- Under the Crooked Tree
 					["sourceQuests"] = { 43259 },	-- Beware of the Crooked Tree
