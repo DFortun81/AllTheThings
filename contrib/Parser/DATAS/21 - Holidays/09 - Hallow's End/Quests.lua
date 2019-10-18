@@ -2579,8 +2579,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 					["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
 					["coord"] = { 49.2, 51.4, 97 },	-- Azuremyst Isle
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 94 },	-- Eversong Woods
-					["u"] = 97,	-- Azuremyst Isle
+					["maps"] = { 97 },	-- Azuremyst Isle
+					["u"] = 26,	-- Hallow's End
 					["g"] = {
 						i(33226),	-- Tricky Treat
 					},
