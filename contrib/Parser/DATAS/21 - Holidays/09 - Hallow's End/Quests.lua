@@ -11,12 +11,49 @@ _.Holidays = bubbleDown({["u"] = 26},
 		["u"] = 26,	-- Hallow's End
 		["g"] = {
 			n(-17, {	-- Quests
-				q(12139, {	-- "Let the Fires Come!"
-					["provider"] = { "n", 23973 },	-- Masked Oprhan Matron
+				q(12135, {	-- "Let the Fires Come!" (Alliance)
+					["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
 					["isDaily"] = true,
-					["coord"] = { 47.2, 46.6, 94 },	-- Eversong Woods
+					["coords"] = {
+						{ 60.8, 53.6, 97 },	-- Azuremyst Isle
+						{ 53.4, 51.5, 27 },	-- Dun Morogh
+						{ 42.6, 64.6, 37 },	-- Elwynn Forest 
+					},
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 
+						97, -- Azuremyst Isle
+						27, -- Dun Morogh
+						37, -- Elwynn Forest 
+					},
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(20557, {	-- Hallow's End Pumpkin Treat
+							["u"] = 26,	-- Hallow's End
+						}),
+						i(34068, {	-- Weighted Jack-o'-Lantern
+							["u"] = 26,	-- Hallow's End
+							["g"] = {
+								crit(8, {	-- Check Your Head
+									["achievementID"] = 1656,	-- Hallowed Be Thy Name
+								}),
+							},
+						}),
+					},
+				}),
+				q(12139, {	-- "Let the Fires Come!" (Horde)
+					["provider"] = { "n", 23973 },	-- Masked Orphan Matron
+					["isDaily"] = true,
+					["coords"] = {
+						{ 52.6, 41.5, 1  },	-- Durotar
+						{ 47.2, 46.4, 94 },	-- Eversong Woods
+						{ 60.8, 53.6, 18 }	-- Tirisfal Glades
+					},
 					["races"] = HORDE_ONLY,
-					["maps"] = { 94 },	-- Eversong Woods
+					["maps"] = { 
+						1,  -- Durotar
+						27, -- Eversong Woods
+						94 -- Tirisfal Glades
+					},	
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
 						i(20557, {	-- Hallow's End Pumpkin Treat
@@ -2509,9 +2546,97 @@ _.Holidays = bubbleDown({["u"] = 26},
 					["maps"] = { 85 },	-- Orgrimmar
 					["u"] = 26,	-- Hallow's End
 				}),
-				q(11361, {	-- Fire Training (Durotar)
-					["provider"] = { "n", 23973 },	-- Masked Oprhan Matron
-					["isDaily"] = true,
+				q(11356, {	-- Costumed Orphan Matron
+					["providers"] = {
+						{ "n", 18927 },	-- Human Commoner
+						{ "n", 19148 },	-- Dwarf Commoner
+						{ "n", 19169 },	-- Blood Elf Commoner
+						{ "n", 19171 },	-- Draenei Commoner
+						{ "n", 19172 },	-- Gnome Commoner
+						{ "n", 19173 },	-- Night Elf Commoner
+						{ "n", 20102 },	-- Goblin Commoner
+					},
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = {
+						10,  -- Northern Barrens
+						71,  -- Tanaris
+						83,  -- Winterspring
+						87,  -- Ironforge
+						84,  -- Stormwind City
+						89,  -- Darnassus
+						103, -- The Exodar
+						109, -- Netherstorm
+						111, -- Shattrath City
+						120, -- The Storm Peaks
+						210, -- The Cape of Stranglethorn
+						125, -- Dalaran: Northrend
+					},	
+					["u"] = 26,	-- Hallow's End
+					["isBreadcrumb"] = true
+				}),
+				q(11439, {	-- Fire Brigade Practice (Kharanos)
+					["sourceQuests"] = { 11356 },	-- Costumed Orphan Matron
+					["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
+					["coord"] = { 53.2, 51.4, 27 },	-- Dun Morogh
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 27 },	-- Dun Morogh
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(33226),	-- Tricky Treat
+					},
+				}),
+				q(11440, {	-- Fire Brigade Practice (Azuremyst Isle)
+					["sourceQuests"] = { 11356 },	-- Costumed Orphan Matron
+					["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
+					["coord"] = { 49.2, 51.4, 97 },	-- Azuremyst Isle
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 94 },	-- Eversong Woods
+					["u"] = 97,	-- Azuremyst Isle
+					["g"] = {
+						i(33226),	-- Tricky Treat
+					},
+				}),
+				q(11360, {	-- Fire Brigade Practice (Elwynn Forest)
+					["sourceQuests"] = { 11356 },	-- Costumed Orphan Matron
+					["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
+					["coord"] = { 42.6, 64.4, 37 },	-- Elwynn Forest
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 37 },	-- Elwynn Forest
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(33226),	-- Tricky Treat
+					},
+				}),
+				q(11357, {	-- Masked Orphan Matron
+					["providers"] = {
+						{ "n", 19169 },	-- Blood Elf Commoner
+						{ "n", 19175 },	-- Orc Commoner
+						{ "n", 19176 },	-- Tauren Commoner
+						{ "n", 19177 },	-- Troll Commoner
+						{ "n", 19178 },	-- Forsaken Commoner
+						{ "n", 20102 },	-- Goblin Commoner
+					},
+					["races"] = HORDE_ONLY,
+					["maps"] = {
+						10,  -- Northern Barrens
+						71,  -- Tanaris
+						83,  -- Winterspring
+						85,  -- Orgrimmar
+						88,  -- Thunder Bluff
+						90,  -- Undercity
+						94,  -- Eversong Woods
+						109, -- Netherstorm
+						111, -- Shattrath City
+						120, -- The Storm Peaks
+						210, -- The Cape of Stranglethorn
+						125, -- Dalaran: Northrend
+					},	
+					["u"] = 26,	-- Hallow's End
+					["isBreadcrumb"] = true
+				}),
+				q(11449, {	-- Fire Training (Durotar)
+					["sourceQuests"] = { 11357 },	-- Masked Orphan Matron
+					["provider"] = { "n", 23973 },	-- Masked Orphan Matron
 					["coord"] = { 52.5, 41.2, 1 },	-- Durotar
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1 },	-- Durotar
@@ -2521,8 +2646,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 					},
 				}),
 				q(11450, {	-- Fire Training (Eversong Woods)
-					["provider"] = { "n", 23973 },	-- Masked Oprhan Matron
-					["isDaily"] = true,
+					["sourceQuests"] = { 11357 },	-- Masked Orphan Matron
+					["provider"] = { "n", 23973 },	-- Masked Orphan Matron
 					["coord"] = { 47.2, 46.6, 94 },	-- Eversong Woods
 					["races"] = HORDE_ONLY,
 					["maps"] = { 94 },	-- Eversong Woods
@@ -2531,9 +2656,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 						i(33226),	-- Tricky Treat
 					},
 				}),
-				q(11449, {	-- Fire Training (Tirisfal Glades)
-					["provider"] = { "n", 23973 },	-- Masked Oprhan Matron
-					["isDaily"] = true,
+				q(11461, {	-- Fire Training (Tirisfal Glades)
+					["sourceQuests"] = { 11357 },	-- Masked Orphan Matron
+					["provider"] = { "n", 23973 },	-- Masked Orphan Matron
 					["coord"] = { 52.5, 41.2, 18 },	-- Tirisfal Glades
 					["races"] = HORDE_ONLY,
 					["maps"] = { 18 },	-- Tirisfal Glades
@@ -2670,12 +2795,20 @@ _.Holidays = bubbleDown({["u"] = 26},
 						i(33226),	-- Tricky Treat
 					},
 				}),
-				q(11219, {	-- Stop the Fires!
-					["provider"] = { "n", 23973 },	-- Masked Oprhan Matron
+				q(11219, {	-- Stop the Fires! (Horde)
+					["provider"] = { "n", 23973 },	-- Masked Orphan Matron
 					["isDaily"] = true,
-					["coord"] = { 60.8, 53.6, 18 },	-- Tirisfal Glades
+					["coords"] = {
+						{ 52.6, 41.5, 1  },	-- Durotar
+						{ 47.2, 46.4, 94 },	-- Eversong Woods
+						{ 60.8, 53.6, 18 }	-- Tirisfal Glades
+					},
 					["races"] = HORDE_ONLY,
-					["maps"] = { 18 },	-- Tirisfal Glades
+					["maps"] = { 
+						1,  -- Durotar
+						27, -- Eversong Woods
+						94, -- Tirisfal Glades
+					},	
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
 						i(20557, {	-- Hallow's End Pumpkin Treat
@@ -2688,6 +2821,77 @@ _.Holidays = bubbleDown({["u"] = 26},
 									["achievementID"] = 1656,	-- Hallowed Be Thy Name
 								}),
 							},
+						}),
+					},
+				}),
+				q(11131, {	-- Stop the Fires! (Alliance)
+					["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
+					["isDaily"] = true,
+					["coords"] = {
+						{ 60.8, 53.6, 97 },	-- Azuremyst Isle
+						{ 53.4, 51.5, 27 },	-- Dun Morogh
+						{ 42.6, 64.6, 37 },	-- Elwynn Forest 
+					},
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 
+						97, -- Azuremyst Isle
+						27, -- Dun Morogh
+						37  -- Elwynn Forest 
+					},	
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(20557, {	-- Hallow's End Pumpkin Treat
+							["u"] = 26,	-- Hallow's End
+						}),
+						i(34068, {	-- Weighted Jack-o'-Lantern
+							["u"] = 26,	-- Hallow's End
+							["g"] = {
+								crit(8, {	-- Check Your Head
+									["achievementID"] = 1656,	-- Hallowed Be Thy Name
+								}),
+							},
+						}),
+					},
+				}),
+				q(12133, {	-- Smash the Pumpkin (Alliance)
+					["provider"] = { "o", 186887 },	-- Large Jack-o'-Lantern
+					["isDaily"] = true,
+					["coords"] = {
+						{ 60.8, 53.6, 97 },	-- Azuremyst Isle
+						{ 53.4, 51.5, 27 },	-- Dun Morogh
+						{ 42.6, 64.6, 37 },	-- Elwynn Forest 
+					},
+					["races"] = HORDE_ONLY,
+					["maps"] = { 
+						97, -- Azuremyst Isle
+						27, -- Dun Morogh
+						37  -- Elwynn Forest 
+					},	
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(34077, {	-- Crudely Wrapped Gift
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12155, {	-- Smash the Pumpkin (Horde)
+					["provider"] = { "o", 186887 },	-- Large Jack-o'-Lantern
+					["isDaily"] = true,
+					["coords"] = {
+						{ 52.6, 41.5, 1  },	-- Durotar
+						{ 47.2, 46.4, 94 },	-- Eversong Woods
+						{ 60.8, 53.6, 18 }	-- Tirisfal Glades
+					},
+					["races"] = HORDE_ONLY,
+					["maps"] = { 
+						1,  -- Durotar
+						27, -- Eversong Woods
+						94, -- Tirisfal Glades
+					},	
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(34077, {	-- Crudely Wrapped Gift
+							["u"] = 26,	-- Hallow's End
 						}),
 					},
 				}),
