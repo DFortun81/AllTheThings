@@ -429,6 +429,7 @@ _.Zones =
 						{ "n", 143565 },	-- Wayne the Ancestral (H)
 					},
 					["coord"] = { 78.5, 54.8, 942 },
+					["lvl"] = 120,
 				}),
 				q(51066, {	-- Destroy Mine Carts
 					["u"] = 1,	-- Never Available
@@ -1395,6 +1396,15 @@ _.Zones =
 					["coord"] = { 42.9, 56.6, 942 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(50387, {	-- Trinkets and Baubles
+					["sourceQuests"] = { 53097 },	-- Despondent Ablutions
+					["providers"] = {
+						{ "n", 133640 },	-- Wayne the Ancestral (A)
+						{ "n", 143565 },	-- Wayne the Ancestral (H)
+					},
+					["coord"] = { 78.5, 54.8, 942 },
+					["lvl"] = 120,
+				}),
 				q(49818, {	-- Trouble at Fort Daelin
 					["sourceQuests"] = {	-- needs confirmation.  may open as early as walking across the bridge north of brennadam.  it wasn't here prior to doing that, though.  it was available after turning these 3 in but before picking up or doing 'heavy artillery,' so the SQ is either these 3 or walking across the brennadam bridge to pick these 3 up.
 						49744,	-- Bombs, Away
@@ -1578,7 +1588,6 @@ _.Zones =
 				q(50389),	-- Malign Inspiration
 				q(53105),	-- Misplaced Faith
 				q(50388),	-- The Weight of My Ambition
-				q(50387),	-- Trinkets and Baubles
 		--]]
 		}),
 	}),

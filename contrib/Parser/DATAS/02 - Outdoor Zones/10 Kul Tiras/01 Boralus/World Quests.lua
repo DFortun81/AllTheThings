@@ -248,6 +248,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
+					q(51758, {	-- Weapons Shipment
+						["isWorldQuest"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
+					}),
 					q(52389, {	-- Work Order: Contract: Proudmoore Admiralty
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

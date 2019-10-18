@@ -428,6 +428,7 @@ _.Zones =
 				}),
 				n(-384, {	-- Neck
 					i(139101),	-- An'she's Pendant
+					i(134161),	-- Brulstone Pendant
 					i(139063),	-- Dreamwalker's Pendant
 					i(134249),	-- Manapearl Choker
 					i(121796),	-- Pendant of the Kaldorei

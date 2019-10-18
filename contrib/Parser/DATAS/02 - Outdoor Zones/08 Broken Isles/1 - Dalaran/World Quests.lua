@@ -9,7 +9,6 @@ _.Zones =
 				-- WQs moved from Quest file but double check Quest file to be sure
 --[[
 
-					q(46136),	-- Gemcutter Needed
 					q(46134),	-- Gemcutter Needed
 					q(46135),	-- Gemcutter Needed
 					q(46138),	-- Gemcutter Needed
@@ -87,6 +86,11 @@ _.Zones =
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
 					},
+				}),
+				q(46136, {	-- Gemcutter Needed
+					["isWorldQuest"] = true,
+					["requireSkill"] = 755,	-- Jewelcrafting
+					["lvl"] = 110,
 				}),
 				q(46139, {	-- Gemcutter Needed
 					["isWorldQuest"] = true,
