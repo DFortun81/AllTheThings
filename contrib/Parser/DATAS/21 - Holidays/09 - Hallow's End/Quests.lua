@@ -82,6 +82,117 @@ _.Holidays = bubbleDown({["u"] = 26},
 					["maps"] = { 90 },	-- Undercity
 					["u"] = 26,	-- Hallow's End
 				}),
+				q(29074, {	-- A Season for Celebration (Alliance)
+					["providers"] = {
+						{ "n", 18927 },	-- Human Commoner
+						{ "n", 19148 },	-- Dwarf Commoner
+						{ "n", 19171 },	-- Draenei Commoner
+						{ "n", 19172 },	-- Gnome Commoner
+						{ "n", 19173 },	-- Night Elf Commoner
+						{ "n", 20102 },	-- Goblin Commoner
+					},
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = {
+						10,  -- Northern Barrens
+						71,  -- Tanaris
+						83,  -- Winterspring
+						87,  -- Ironforge
+						84,  -- Stormwind City
+						89,  -- Darnassus
+						103, -- The Exodar
+						109, -- Netherstorm
+						111, -- Shattrath City
+						120, -- The Storm Peaks
+						210, -- The Cape of Stranglethorn
+						125, -- Dalaran: Northrend
+					},	
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 26,
+				}),
+				q(29400, {	-- A Season for Celebration (Horde)
+					["providers"] = {
+						{ "n", 19169 },	-- Blood Elf Commoner
+						{ "n", 19175 },	-- Orc Commoner
+						{ "n", 19176 },	-- Tauren Commoner
+						{ "n", 19177 },	-- Troll Commoner
+						{ "n", 19178 },	-- Forsaken Commoner
+						{ "n", 20102 },	-- Goblin Commoner
+					},
+					["races"] = HORDE_ONLY,
+					["maps"] = {
+						10,  -- Northern Barrens
+						71,  -- Tanaris
+						83,  -- Winterspring
+						85,  -- Orgrimmar
+						88,  -- Thunder Bluff
+						90,  -- Undercity
+						94,  -- Eversong Woods
+						109, -- Netherstorm
+						111, -- Shattrath City
+						120, -- The Storm Peaks
+						210, -- The Cape of Stranglethorn
+						125, -- Dalaran: Northrend
+					},
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+					["u"] = 26,
+				}),
+				q(29377, {	-- A Time to Break Down
+					["provider"] = { "n", 15197 },	-- Darkcaller Yanka
+					["sourceQuest"] = 29400,	-- A Season for Celebration
+					["coord"] = { 62.0, 67.8, 18 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["maps"] = { 18 }, -- Tirisfal Glades
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(33226),	-- Tricky Treat
+					},
+				}),
+				q(29376, {	-- A Time to Build Up
+					["provider"] = { "n", 15197 },	-- Darkcaller Yanka
+					["sourceQuest"] = 29400,	-- A Season for Celebration
+					["coord"] = { 62.0, 67.8, 18 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["maps"] = { 18 }, -- Tirisfal Glades
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(33226),	-- Tricky Treat
+					},
+				}),
+				q(29075, {	-- A Time to Gain
+					["provider"] = { "n", 51665 },	-- Celestine of the Harvest
+					["coord"] = { 32, 50.4, 37 },	
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 29074,	-- A Season for Celebration
+					["isDaily"] = true,
+					["maps"] = { 37 }, -- Elwynn Forest 
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(33226),	-- Tricky Treat
+					},
+				}),
+				q(29371, {	-- A Time to Lose
+					["provider"] = { "n", 52064 },	-- Keira
+					["coord"] = { 32, 50.4, 37 },	
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 29074,	-- A Season for Celebration
+					["isDaily"] = true,
+					["maps"] = { 37 }, -- Elwynn Forest 
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(33226),	-- Tricky Treat
+					},
+				}),
+				q(43259, {	-- Beware of the Crooked Tree
+					["provider"] = { "n", 109854 },	-- Duroc Ironjaw
+					["maps"] = { 625 },	-- Dalaran : Broken Shores
+					["coord"] = { 47.4, 40.6, 627 },	-- Dalaran : Broken Shores
+					["u"] = 26,	-- Hallow's End
+					["isYearly"] = true,
+				}),
 				q(12380, {	-- Candy Bucket — Arathi Highlands, Hammerfall, Horde
 					["isYearly"] = true,
 					["coord"] = { 69.0, 33.4, 14 },
@@ -586,6 +697,19 @@ _.Holidays = bubbleDown({["u"] = 26},
 					["coord"] = { 24.1, 68.3, 66 },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 66 },	-- Desolace
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(39657, {	-- Candy Bucket — Draenor Garrison (Frostwall or Lunarfall), neutral
+					["isYearly"] = true,
+					["maps"] = {
+						590,	-- Frostwall
+						582,	-- Lunarfall
+					},
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
 						i(37586, {	-- Handful of Treats
@@ -2493,6 +2617,56 @@ _.Holidays = bubbleDown({["u"] = 26},
 					["maps"] = { 90 },	-- Undercity
 					["u"] = 26,	-- Hallow's End
 				}),
+				q(29144, {	-- Clean Up in Stormwind
+					["provider"] = { "n", 51934 },	-- Gretchen Fenlow
+					["coord"] = { 32.2, 50.8, 37 },	
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["maps"] = { 37 }, -- Elwynn Forest 
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(33226),	-- Tricky Treat
+					},
+				}),
+				q(29375, {	-- Clean Up in Undercity
+					["provider"] = { "n", 53763 },	-- Candace Fenlow
+					["sourceQuest"] = 29400,	-- A Season for Celebration
+					["coord"] = { 62.4, 66.7, 18 },	-- Tirisfal Glades
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["maps"] = { 18 },	-- Tirisfal Glades
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(33226),	-- Tricky Treat
+					},
+				}),
+				q(11356, {	-- Costumed Orphan Matron
+					["providers"] = {
+						{ "n", 18927 },	-- Human Commoner
+						{ "n", 19148 },	-- Dwarf Commoner
+						{ "n", 19171 },	-- Draenei Commoner
+						{ "n", 19172 },	-- Gnome Commoner
+						{ "n", 19173 },	-- Night Elf Commoner
+						{ "n", 20102 },	-- Goblin Commoner
+					},
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = {
+						10,  -- Northern Barrens
+						71,  -- Tanaris
+						83,  -- Winterspring
+						87,  -- Ironforge
+						84,  -- Stormwind City
+						89,  -- Darnassus
+						103, -- The Exodar
+						109, -- Netherstorm
+						111, -- Shattrath City
+						120, -- The Storm Peaks
+						210, -- The Cape of Stranglethorn
+						125, -- Dalaran: Northrend
+					},	
+					["u"] = 26,	-- Hallow's End
+					["isBreadcrumb"] = true
+				}),
 				q(39721, {	-- Culling the Crew
 					["provider"] = { "n", 96705 },	-- Orukan
 					["isDaily"] = true,
@@ -2501,7 +2675,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						582,	-- Lunarfall
 					},
 					["lvl"] = 100,
-					["u"] = 26,
+					["u"] = 26,	-- Hallow's End
 					["g"] = {
 						i(128658),	-- Spooky Supplies
 					},
@@ -2536,44 +2710,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 					["maps"] = { 85 },	-- Orgrimmar
 					["u"] = 26,	-- Hallow's End
 				}),
-				q(11356, {	-- Costumed Orphan Matron
-					["providers"] = {
-						{ "n", 18927 },	-- Human Commoner
-						{ "n", 19148 },	-- Dwarf Commoner
-						{ "n", 19171 },	-- Draenei Commoner
-						{ "n", 19172 },	-- Gnome Commoner
-						{ "n", 19173 },	-- Night Elf Commoner
-						{ "n", 20102 },	-- Goblin Commoner
-					},
-					["races"] = ALLIANCE_ONLY,
-					["maps"] = {
-						10,  -- Northern Barrens
-						71,  -- Tanaris
-						83,  -- Winterspring
-						87,  -- Ironforge
-						84,  -- Stormwind City
-						89,  -- Darnassus
-						103, -- The Exodar
-						109, -- Netherstorm
-						111, -- Shattrath City
-						120, -- The Storm Peaks
-						210, -- The Cape of Stranglethorn
-						125, -- Dalaran: Northrend
-					},	
-					["u"] = 26,	-- Hallow's End
-					["isBreadcrumb"] = true
-				}),
-				q(11439, {	-- Fire Brigade Practice (Kharanos)
-					["sourceQuests"] = { 11356 },	-- Costumed Orphan Matron
-					["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
-					["coord"] = { 53.2, 51.4, 27 },	-- Dun Morogh
-					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 27 },	-- Dun Morogh
-					["u"] = 26,	-- Hallow's End
-					["g"] = {
-						i(33226),	-- Tricky Treat
-					},
-				}),
 				q(11440, {	-- Fire Brigade Practice (Azuremyst Isle)
 					["sourceQuests"] = { 11356 },	-- Costumed Orphan Matron
 					["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
@@ -2596,32 +2732,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 						i(33226),	-- Tricky Treat
 					},
 				}),
-				q(11357, {	-- Masked Orphan Matron
-					["providers"] = {
-						{ "n", 19169 },	-- Blood Elf Commoner
-						{ "n", 19175 },	-- Orc Commoner
-						{ "n", 19176 },	-- Tauren Commoner
-						{ "n", 19177 },	-- Troll Commoner
-						{ "n", 19178 },	-- Forsaken Commoner
-						{ "n", 20102 },	-- Goblin Commoner
-					},
-					["races"] = HORDE_ONLY,
-					["maps"] = {
-						10,  -- Northern Barrens
-						71,  -- Tanaris
-						83,  -- Winterspring
-						85,  -- Orgrimmar
-						88,  -- Thunder Bluff
-						90,  -- Undercity
-						94,  -- Eversong Woods
-						109, -- Netherstorm
-						111, -- Shattrath City
-						120, -- The Storm Peaks
-						210, -- The Cape of Stranglethorn
-						125, -- Dalaran: Northrend
-					},
+				q(11439, {	-- Fire Brigade Practice (Kharanos)
+					["sourceQuests"] = { 11356 },	-- Costumed Orphan Matron
+					["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
+					["coord"] = { 53.2, 51.4, 27 },	-- Dun Morogh
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 27 },	-- Dun Morogh
 					["u"] = 26,	-- Hallow's End
-					["isBreadcrumb"] = true
+					["g"] = {
+						i(33226),	-- Tricky Treat
+					},
 				}),
 				q(11449, {	-- Fire Training (Durotar)
 					["sourceQuests"] = { 11357 },	-- Masked Orphan Matron
@@ -2720,6 +2840,33 @@ _.Holidays = bubbleDown({["u"] = 26},
 					["maps"] = { 85 },	-- Orgrimmar
 					["u"] = 26,	-- Hallow's End
 				}),
+				q(11357, {	-- Masked Orphan Matron
+					["providers"] = {
+						{ "n", 19169 },	-- Blood Elf Commoner
+						{ "n", 19175 },	-- Orc Commoner
+						{ "n", 19176 },	-- Tauren Commoner
+						{ "n", 19177 },	-- Troll Commoner
+						{ "n", 19178 },	-- Forsaken Commoner
+						{ "n", 20102 },	-- Goblin Commoner
+					},
+					["races"] = HORDE_ONLY,
+					["maps"] = {
+						10,  -- Northern Barrens
+						71,  -- Tanaris
+						83,  -- Winterspring
+						85,  -- Orgrimmar
+						88,  -- Thunder Bluff
+						90,  -- Undercity
+						94,  -- Eversong Woods
+						109, -- Netherstorm
+						111, -- Shattrath City
+						120, -- The Storm Peaks
+						210, -- The Cape of Stranglethorn
+						125, -- Dalaran: Northrend
+					},
+					["u"] = 26,	-- Hallow's End
+					["isBreadcrumb"] = true
+				}),
 				q(29392, {	-- Missing Heirlooms (Alliance)
 					["sourceQuests"] = { 29430 },	-- A Friend in Need (Alliance)
 					["provider"] = { "n", 53949 },	-- Anson Hastings
@@ -2772,6 +2919,72 @@ _.Holidays = bubbleDown({["u"] = 26},
 					["u"] = 26,
 					["g"] = {
 						i(128658),	-- Spooky Supplies
+					},
+				}),
+				q(12133, {	-- Smash the Pumpkin (Alliance)
+					["provider"] = { "o", 186887 },	-- Large Jack-o'-Lantern
+					["isDaily"] = true,
+					["coords"] = {
+						{ 60.8, 53.6, 97 },	-- Azuremyst Isle
+						{ 53.4, 51.5, 27 },	-- Dun Morogh
+						{ 42.6, 64.6, 37 },	-- Elwynn Forest 
+					},
+					["races"] = HORDE_ONLY,
+					["maps"] = { 
+						97, -- Azuremyst Isle
+						27, -- Dun Morogh
+						37  -- Elwynn Forest 
+					},	
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(34077, {	-- Crudely Wrapped Gift
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(12155, {	-- Smash the Pumpkin (Horde)
+					["provider"] = { "o", 186887 },	-- Large Jack-o'-Lantern
+					["isDaily"] = true,
+					["coords"] = {
+						{ 52.6, 41.5, 1  },	-- Durotar
+						{ 47.2, 46.4, 94 },	-- Eversong Woods
+						{ 60.8, 53.6, 18 }	-- Tirisfal Glades
+					},
+					["races"] = HORDE_ONLY,
+					["maps"] = { 
+						1,  -- Durotar
+						27, -- Eversong Woods
+						94, -- Tirisfal Glades
+					},	
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(34077, {	-- Crudely Wrapped Gift
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(29374, {	-- Stink Bombs Away! (Alliance)
+					["provider"] = { "n", 51934 },	-- Gretchen Fenlow
+					["coord"] = { 32.2, 50.8, 37 },	
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 29074,	-- A Season for Celebration
+					["isDaily"] = true,
+					["maps"] = { 37 }, -- Elwynn Forest 
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(33226),	-- Tricky Treat
+					},
+				}),
+				q(29374, {	-- Stink Bombs Away! (Horde)
+					["provider"] = { "n", 53763 },	-- Candace Fenlow
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 29400,	-- A Season for Celebration
+					["coord"] = { 62.4, 66.7, 18 },
+					["isDaily"] = true,
+					["maps"] = { 18 },	-- Tirisfal Glades
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(33226),	-- Tricky Treat
 					},
 				}),
 				q(11219, {	-- Stop the Fires! (Horde)
@@ -2832,48 +3045,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
-				q(12133, {	-- Smash the Pumpkin (Alliance)
-					["provider"] = { "o", 186887 },	-- Large Jack-o'-Lantern
-					["isDaily"] = true,
-					["coords"] = {
-						{ 60.8, 53.6, 97 },	-- Azuremyst Isle
-						{ 53.4, 51.5, 27 },	-- Dun Morogh
-						{ 42.6, 64.6, 37 },	-- Elwynn Forest 
-					},
-					["races"] = HORDE_ONLY,
-					["maps"] = { 
-						97, -- Azuremyst Isle
-						27, -- Dun Morogh
-						37  -- Elwynn Forest 
-					},	
-					["u"] = 26,	-- Hallow's End
-					["g"] = {
-						i(34077, {	-- Crudely Wrapped Gift
-							["u"] = 26,	-- Hallow's End
-						}),
-					},
-				}),
-				q(12155, {	-- Smash the Pumpkin (Horde)
-					["provider"] = { "o", 186887 },	-- Large Jack-o'-Lantern
-					["isDaily"] = true,
-					["coords"] = {
-						{ 52.6, 41.5, 1  },	-- Durotar
-						{ 47.2, 46.4, 94 },	-- Eversong Woods
-						{ 60.8, 53.6, 18 }	-- Tirisfal Glades
-					},
-					["races"] = HORDE_ONLY,
-					["maps"] = { 
-						1,  -- Durotar
-						27, -- Eversong Woods
-						94, -- Tirisfal Glades
-					},	
-					["u"] = 26,	-- Hallow's End
-					["g"] = {
-						i(34077, {	-- Crudely Wrapped Gift
-							["u"] = 26,	-- Hallow's End
-						}),
-					},
-				}),
 				q(29402, {	-- Taking Precautions (Alliance)
 					["sourceQuests"] = { 29399 },	-- Shopping Around (Alliance)
 					["provider"] = { "n", 54021 },	-- Hudson Barnes
@@ -2921,13 +3092,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 					["g"] = {
 						un(26, i(71076)),	-- Creepy Crate (Pet)
 					},
-				}),
-				q(43259, {	-- Beware of the Crooked Tree
-					["provider"] = { "n", 109854 },	-- Duroc Ironjaw
-					["maps"] = { 625 },	-- Dalaran : Broken Shores
-					["coord"] = { 47.4, 40.6, 627 },	-- Dalaran : Broken Shores
-					["u"] = 26,	-- Hallow's End
-					["isYearly"] = true,
 				}),
 				q(43162, {	-- Under the Crooked Tree
 					["sourceQuests"] = { 43259 },	-- Beware of the Crooked Tree
@@ -3041,157 +3205,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 					["races"] = HORDE_ONLY,
 					["maps"] = { 85 },	-- Orgrimmar
 					["u"] = 26,	-- Hallow's End
-				}),
-				q(29074, {	-- A Season for Celebration (Alliance)
-					["providers"] = {
-						{ "n", 18927 },	-- Human Commoner
-						{ "n", 19148 },	-- Dwarf Commoner
-						{ "n", 19171 },	-- Draenei Commoner
-						{ "n", 19172 },	-- Gnome Commoner
-						{ "n", 19173 },	-- Night Elf Commoner
-						{ "n", 20102 },	-- Goblin Commoner
-					},
-					["races"] = ALLIANCE_ONLY,
-					["maps"] = {
-						10,  -- Northern Barrens
-						71,  -- Tanaris
-						83,  -- Winterspring
-						87,  -- Ironforge
-						84,  -- Stormwind City
-						89,  -- Darnassus
-						103, -- The Exodar
-						109, -- Netherstorm
-						111, -- Shattrath City
-						120, -- The Storm Peaks
-						210, -- The Cape of Stranglethorn
-						125, -- Dalaran: Northrend
-					},	
-					["isBreadcrumb"] = true,
-					["races"] = ALLIANCE_ONLY,
-					["u"] = 26,
-				}),
-				q(29075, {	-- A Time to Gain
-					["provider"] = { "n", 51665 },	-- Celestine of the Harvest
-					["coord"] = { 32, 50.4, 37 },	
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 29074,	-- A Season for Celebration
-					["isDaily"] = true,
-					["maps"] = { 37 }, -- Elwynn Forest 
-					["u"] = 26,	-- Hallow's End
-					["g"] = {
-						i(33226),	-- Tricky Treat
-					},
-				}),
-				q(29371, {	-- A Time to Lose
-					["provider"] = { "n", 52064 },	-- Keira
-					["coord"] = { 32, 50.4, 37 },	
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 29074,	-- A Season for Celebration
-					["isDaily"] = true,
-					["maps"] = { 37 }, -- Elwynn Forest 
-					["u"] = 26,	-- Hallow's End
-					["g"] = {
-						i(33226),	-- Tricky Treat
-					},
-				}),
-				q(29375, {	-- Clean Up in Stormwind
-					["provider"] = { "n", 51934 },	-- Gretchen Fenlow
-					["coord"] = { 32.2, 50.8, 37 },	
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-					["maps"] = { 37 }, -- Elwynn Forest 
-					["u"] = 26,	-- Hallow's End
-					["g"] = {
-						i(33226),	-- Tricky Treat
-					},
-				}),
-				q(29374, {	-- Stink Bombs Away! (Alliance)
-					["provider"] = { "n", 51934 },	-- Gretchen Fenlow
-					["coord"] = { 32.2, 50.8, 37 },	
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 29074,	-- A Season for Celebration
-					["isDaily"] = true,
-					["maps"] = { 37 }, -- Elwynn Forest 
-					["u"] = 26,	-- Hallow's End
-					["g"] = {
-						i(33226),	-- Tricky Treat
-					},
-				}),
-				q(29400, {	-- A Season for Celebration (Horde)
-					["providers"] = {
-						{ "n", 19169 },	-- Blood Elf Commoner
-						{ "n", 19175 },	-- Orc Commoner
-						{ "n", 19176 },	-- Tauren Commoner
-						{ "n", 19177 },	-- Troll Commoner
-						{ "n", 19178 },	-- Forsaken Commoner
-						{ "n", 20102 },	-- Goblin Commoner
-					},
-					["races"] = HORDE_ONLY,
-					["maps"] = {
-						10,  -- Northern Barrens
-						71,  -- Tanaris
-						83,  -- Winterspring
-						85,  -- Orgrimmar
-						88,  -- Thunder Bluff
-						90,  -- Undercity
-						94,  -- Eversong Woods
-						109, -- Netherstorm
-						111, -- Shattrath City
-						120, -- The Storm Peaks
-						210, -- The Cape of Stranglethorn
-						125, -- Dalaran: Northrend
-					},
-					["isBreadcrumb"] = true,
-					["races"] = HORDE_ONLY,
-					["u"] = 26,
-				}),
-				q(29377, {	-- A Time to Break Down
-					["provider"] = { "n", 15197 },	-- Darkcaller Yanka
-					["sourceQuest"] = 29400,	-- A Season for Celebration
-					["coord"] = { 62.0, 67.8, 18 },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["maps"] = { 18 }, -- Tirisfal Glades
-					["u"] = 26,	-- Hallow's End
-					["g"] = {
-						i(33226),	-- Tricky Treat
-					},
-				}),
-				q(29376, {	-- A Time to Build Up
-					["provider"] = { "n", 15197 },	-- Darkcaller Yanka
-					["sourceQuest"] = 29400,	-- A Season for Celebration
-					["coord"] = { 62.0, 67.8, 18 },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["maps"] = { 18 }, -- Tirisfal Glades
-					["u"] = 26,	-- Hallow's End
-					["g"] = {
-						i(33226),	-- Tricky Treat
-					},
-				}),
-				q(29375, {	-- Clean Up in Undercity
-					["provider"] = { "n", 53763 },	-- Candace Fenlow
-					["sourceQuest"] = 29400,	-- A Season for Celebration
-					["coord"] = { 62.4, 66.7, 18 },	-- Tirisfal Glades
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["maps"] = { 18 },	-- Tirisfal Glades
-					["u"] = 26,	-- Hallow's End
-					["g"] = {
-						i(33226),	-- Tricky Treat
-					},
-				}),
-				q(29374, {	-- Stink Bombs Away! (Horde)
-					["provider"] = { "n", 53763 },	-- Candace Fenlow
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 29400,	-- A Season for Celebration
-					["coord"] = { 62.4, 66.7, 18 },
-					["isDaily"] = true,
-					["maps"] = { 18 },	-- Tirisfal Glades
-					["u"] = 26,	-- Hallow's End
-					["g"] = {
-						i(33226),	-- Tricky Treat
-					},
 				}),
 			}),
 		},
