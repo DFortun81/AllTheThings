@@ -195,6 +195,12 @@ _.Zones =
 						i(146934),	-- Untouched Holy Candle
 					},
 				}),
+				q(46249, {	-- Championing Our Cause
+					["sourceQuests"] = { 46250 },	-- Take Out the Head
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["coord"] = { 44.6, 63.2, 646 },
+					["lvl"] = 110,
+				}),
 				q(47137, {	-- Champions of Legionfall
 					["sourceQuests"] = { 46247 },	-- Defending Broken Isles
 					["description"] = "In addition to the prerequisite quests listed, you must complete your class's Order Hall Campaign to pick up this quest.",
@@ -610,7 +616,6 @@ _.Zones =
 				q(39816),	-- Champion: Thassarian
 				q(44243),	-- Champion: Thoras Trollbane
 				q(42800),	-- Champion: Valeera Sanguinar
-				q(46249),	-- Championing Our Cause
 				q(45816),	-- Choose Order Hall to Support
 				q(40403, {	-- Clandestine Operation
 					["races"] = HORDE_ONLY,

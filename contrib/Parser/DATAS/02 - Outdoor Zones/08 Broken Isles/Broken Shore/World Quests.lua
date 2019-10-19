@@ -11,7 +11,6 @@ _.Zones =
 					q(46209),	-- A Flare In The Dark
 					q(47061),	-- Apocron
 					q(46104),	-- Arachnid Toxicity
-					q(46761),	-- Brew Bandits
 					q(46947),	-- Brutallus
 					q(45531),	-- Creeping Fel
 					q(45969),	-- Defense of the Ancient
@@ -76,6 +75,10 @@ _.Zones =
 				q(46073, {	-- Break Their Garrison
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
+				}),
+				q(46761, {	-- Brew Bandits
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 				q(46068, {	-- Brute Wrangling
 					["lvl"] = 110,
