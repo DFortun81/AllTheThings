@@ -601,7 +601,7 @@ _.NeverImplemented =
 		q(44382),	-- Vengeance Chosen — chose to pursue Vengeance artifact while on quest 44383, "In Pursuit of Power"
 		q(48570),	-- Antorus, The Burning Throne - Triggers when the door opens to Kin'garoth
 		q(40612),	-- 7.0 Highmountain - Vignette - Amateur Hunters - Tracking Quest Credit - See Treasure (JAP) - NYI. Triggered after killing Irewing during Scout It Out
-		q(46775),	-- Campaign Cooldown - triggers during the legionfall campaign
+		q(46775),	-- Campaign Cooldown - triggers after turning in "Champions of Legionfall" during the legionfall campaign
 		q(47133),	-- Rare Mob Daily Bonus. Triggered after killing Doombringer Zar'thoz. Possible killID?
 		q(48974),	-- Paragon of the Army of the Light — looks like this is an unused version and 48977 is the one that pops in-game
 		q(44455),	-- Downfall tracking — in Suramar, possibly tied to a Demon Hunter artifact?
@@ -633,6 +633,8 @@ _.NeverImplemented =
 		q(44606),	-- Tracking Quest: Preparations for Invasion 4
 		q(44607),	-- Tracking Quest: Preparations for Invasion 5
 		q(49161),	-- triggered when turning in #48461, "Where They Least Expect It"
+		q(42118),	-- Tracking Quest: Chapter 4 Completed — finished order hall campaign on DH
+		q(45117),	-- TRACKING — triggered when returning to the Fel Hammer while on "Defense of the Fel Hammer"
 		
 	-- World Boss
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq

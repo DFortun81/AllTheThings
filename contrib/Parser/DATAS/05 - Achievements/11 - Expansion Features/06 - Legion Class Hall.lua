@@ -109,16 +109,31 @@ _.Achievements =
 				}),
 				ach(10750),			-- Fighting with Style: Hidden
 				ach(10747, {		-- Fighting with Style: Upgraded
-					crit(1),		-- Forged for Battle
-					crit(2),		-- Power Realized
-					crit(3),		-- Part of History
-					crit(4),		-- This Side Up
+					ach(10746, {	-- Forged for Battle
+						["sourceQuests"] = {
+							43407,	-- A Hero's Weapon (Death Knight)
+							43412,	-- A Hero's Weapon (Demon Hunter)
+							43409,	-- A Hero's Weapon (Druid)
+							43423,	-- A Hero's Weapon (Hunter)
+							43415,	-- A Hero's Weapon (Mage)
+							43359,	-- A Hero's Weapon (Monk)
+							43424,	-- A Hero's Weapon (Paladin)
+							43420,	-- A Hero's Weapon (Priest)
+							43422,	-- A Hero's Weapon (Rogue)
+							43418,	-- A Hero's Weapon (Shaman)
+							43414,	-- A Hero's Weapon (Warlock)
+							43425,	-- A Hero's Weapon (Warrior)
+						},
+					}),
+					ach(11144),		-- Power Realized
+					ach(10853),		-- Part of History
+					ach(10602),		-- This Side Up
 				}),
 				ach(10748, {		-- Fighting with Style: Valorous
-					crit(1),		-- Improving on History
-					crit(2),		-- Unleashed Monstrosities
-					crit(3),		-- Keystone Master
-					crit(4),		-- Glory of the Legion Hero
+					ach(10459),		-- Improving on History
+					ach(11160),		-- Unleashed Monstrosities
+					ach(11162),		-- Keystone Master
+					ach(11163),		-- Glory of the Legion Hero
 				}),
 				ach(10749, 11173, {	-- Fighting with Style: War-torn (A, H)
 					crit(1),		-- The Prestige
@@ -126,9 +141,7 @@ _.Achievements =
 					crit(3),		-- Crest of Carnage
 					crit(4),		-- Crest of Devastation
 				}),
-				ach(10746),			-- Forged for Battle
 				ach(10460),			-- Hidden Potential
-				ach(10459),			-- Improving on History
 				ach(11213, {		-- Lead a Legion (100)
 					ach(11212),		-- Raise an Army (20)
 					ach(10706),		-- Training the Troops (5)

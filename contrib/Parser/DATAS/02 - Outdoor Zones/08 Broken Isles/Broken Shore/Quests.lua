@@ -142,6 +142,34 @@ _.Zones =
 					["coord"] = { 44.4, 63.0, 646 },
 					["lvl"] = 110,
 				}),
+				q(46904, {	-- Boon of the Command Center (Heavily Augmented)
+					["sourceQuests"] = { 46773 },	-- The Command Center
+					["repeatable"] = true,	-- technically isOccasional, lol
+					["provider"] = { "n", 120183 },	-- Commander Chambers
+					["coord"] = { 44.4, 63.1, 646 },
+					["lvl"] = 110,
+				}),
+				q(46998, {	-- Boon of the Command Center (War Effort)
+					["sourceQuests"] = { 46773 },	-- The Command Center
+					["repeatable"] = true,	-- technically isOccasional, lol
+					["provider"] = { "n", 120183 },	-- Commander Chambers
+					["coord"] = { 44.4, 63.1, 646 },
+					["lvl"] = 110,
+				}),
+				q(46999, {	-- Boon of the Command Center (Well Prepared)
+					["sourceQuests"] = { 46773 },	-- The Command Center
+					["repeatable"] = true,	-- technically isOccasional, lol
+					["provider"] = { "n", 120183 },	-- Commander Chambers
+					["coord"] = { 44.4, 63.1, 646 },
+					["lvl"] = 110,
+				}),
+				q(46997, {	-- Boon of the Command Center (Worthy Champions)
+					["sourceQuests"] = { 46773 },	-- The Command Center
+					["repeatable"] = true,	-- technically isOccasional, lol
+					["provider"] = { "n", 120183 },	-- Commander Chambers
+					["coord"] = { 44.4, 63.1, 646 },
+					["lvl"] = 110,
+				}),
 				q(46244, {	-- Cathedral of Eternal Night: Altar of the Aegis
 					["sourceQuests"] = { 46286 },	-- Legionfall Supplies
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
@@ -160,6 +188,13 @@ _.Zones =
 						i(146934),	-- Untouched Holy Candle
 					},
 				}),
+				q(47137, {	-- Champions of Legionfall
+					["sourceQuests"] = { 46247 },	-- Defending Broken Isles
+					["description"] = "In addition to the prerequisite quests listed, you must complete your class's Order Hall Campaign to pick up this quest.",
+					["provider"] = { "n", 116576 },	-- Maiev Shadowsong
+					["coord"] = { 44.4, 63.4, 646 },
+					["lvl"] = 110,
+				}),
 				q(46247, {	-- Defending Broken Isles
 					["sourceQuests"] = { 46286 },	-- Legionfall Supplies
 					["provider"] = { "n", 116576 },	-- Maiev Shadowsong
@@ -172,16 +207,72 @@ _.Zones =
 					["coord"] = { 39.6, 71.7, 646 },
 					["lvl"] = 110,
 				}),
+				q(46252, {	-- Intolerable Infestation
+					["sourceQuests"] = { 46248 },	-- Self-Fulfilling Prophecy
+					["provider"] = { "n", 116576 },	-- Maiev Shadowsong
+					["coord"] = { 44.4, 63.4, 646 },
+					["lvl"] = 110,
+				}),
 				q(46286, {	-- Legionfall Supplies
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 					["provider"] = { "n", 120183 },	-- Commander Chambers
 					["coord"] = { 44.4, 63.0, 646 },
 					["lvl"] = 110,
 				}),
+				q(47139, {	-- Mark of the Sentinax
+					["sourceQuests"] = { 46251 },	-- Shard Times
+					["provider"] = { "n", 117873 },	-- Illidan Stormrage
+					["coord"] = { 44.6, 63.1, 646 },
+					["lvl"] = 110,
+				}),
 				q(46253, {	-- Pillars of Creation
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["coord"] = { 44.6, 63.1, 646 },
+					["lvl"] = 110,
+				}),
+				q(46725, {	-- Power Outage
+					["sourceQuests"] = { 45385 },	-- We Must be Prepared!
+					["provider"] = { "n", 117709 },	-- Lady S'theno
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 52.1, 21.3, 646 },
+					["lvl"] = 110,
+				}),
+				q(46769, {	-- Relieved of Their Valuables
+					["sourceQuests"] = { 46252 },	-- Intolerable Infestation
+					["provider"] = { "n", 44.6, 63.1, 646 },
+					["coord"] = { 44.6, 63.1, 646 },
+					["lvl"] = 110,
+				}),
+				q(45764, {	-- Restoring Equilibrium
+					["sourceQuests"] = { 45385 },	-- We Must be Prepared!
+					["provider"] = { "n", 117709 },	-- Lady S'theno
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 52.1, 21.3, 646 },
+					["lvl"] = 110,
+				}),
+				q(46266, {	-- Return of the Slayer
+					["sourceQuests"] = {
+						46725,	-- Power Outage
+						45764,	-- Restoring Equilibrium
+						45798,	-- War'zuul the Provoker
+					},
+					["provider"] = { "n", 117709 },	-- Lady S'theno
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 52.1, 21.3, 646 },
+					["lvl"] = 110,
+				}),
+				q(46248, {	-- Self-Fulfilling Prophecy
+					["sourceQuests"] = { 47139 },	-- Mark of the Sentinax
+					["provider"] = { "n", 120372 },	-- Prophet Velen
+					["coord"] = { 44.4, 63.3, 646 },
+					["lvl"] = 110,
+				}),
+				q(46251, {	-- Shard Times
+				--	could theoretically attach each class's champion recruitment to this, which would possibly make more sense?  DH's is 45391
+					["sourceQuests"] = { 47137 },	-- Champions of Legionfall
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["coord"] = { 44.6, 63.2, 646 },
 					["lvl"] = 110,
 				}),
 				q(46510, {	-- Ship Graveyard
@@ -196,10 +287,23 @@ _.Zones =
 					["coord"] = { 39.6, 71.7, 646 },
 					["lvl"] = 110,
 				}),
+				q(46250, {	-- Take Out the Head...
+					["sourceQuests"] = { 46769 },	-- Relieved of Their Valuables
+					["provider"] = { "n", 116576 },	-- Maiev Shadowsong
+					["coord"] = { 44.4, 63.5, 646 },
+					["lvl"] = 110,
+				}),
 				q(46765, {	-- The Broken Shore: Investigating the Legion
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["coord"] = { 44.6, 63.2, 646 },
+					["lvl"] = 110,
+				}),
+				q(46773, {	-- The Command Center
+					["sourceQuests"] = { 46245 },	-- Begin Construction (probably?  i didn't pick it up until after doing 'defending broken isles' and finishing my class campaign)
+					["repeatable"] = true,	-- technically isOccasional, lol
+					["provider"] = { "n", 120183 },	-- Commander Chambers
+					["coord"] = { 44.4, 63.1, 646 },
 					["lvl"] = 110,
 				}),
 				q(47000, {	-- The Council's Call
@@ -217,6 +321,21 @@ _.Zones =
 					["coord"] = { 44.6, 63.2, 646 },
 					["lvl"] = 110,
 				}),
+				q(46666, {	-- The Motherlode
+					["sourceQuests"] = { 46511 },	-- We're Treasure Hunters
+					["provider"] = { "n", 119886 },	-- Excavator Karla
+					["coord"] = { 39.6, 71.7, 646 },
+					["lvl"] = 110,
+					["g"] = {
+						i(143559),	-- Wyrmtongue's Cache Key
+					},
+				}),
+				q(46935, {	-- The Shadow of the Sentinax
+				--	unsure if this has any other prerequisites aside from unlocking broken shore in general.
+					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
+					["provider"] = { "i", 147356 },	-- Broken Sentinax Beacon
+					["lvl"] = 110,
+				}),
 				q(46509, {	-- Tomb Raidering
 					["sourceQuests"] = { 46501 },	-- Grave Robbin'
 					["provider"] = { "n", 119886 },	-- Excavator Karla
@@ -229,21 +348,20 @@ _.Zones =
 					["coord"] = { 70.6, 47.5, 646 },
 					["lvl"] = 110,
 				}),
+				q(45798, {	-- War'zuul the Provoker
+					["sourceQuests"] = { 45385 },	-- We Must be Prepared!
+					["provider"] = { "n", 117709 },	-- Lady S'theno
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 52.1, 21.3, 646 },
+					["lvl"] = 110,
+				}),
 				q(46511, {	-- We're Treasure Hunters
 					["sourceQuests"] = { 46510 },	-- Ship Graveyard
 					["provider"] = { "n", 119886 },	-- Excavator Karla
 					["coord"] = { 39.6, 71.7, 646 },
 					["lvl"] = 110,
 				}),
-				q(46666, {	-- The Motherlode
-					["sourceQuests"] = { 46511 },	-- We're Treasure Hunters
-					["provider"] = { "n", 119886 },	-- Excavator Karla
-					["coord"] = { 39.6, 71.7, 646 },
-					["lvl"] = 110,
-					["g"] = {
-						i(143559),	-- Wyrmtongue's Cache Key
-					},
-				}),
+				
 
 
 
@@ -452,10 +570,6 @@ _.Zones =
 				q(43962),	-- Blades of Destiny
 				q(43468),	-- Blood for the Wolfe
 				q(46237),	-- Bloodbringer's Missive
-				q(46997),	-- Boon of the Command Center
-				q(46998),	-- Boon of the Command Center
-				q(46999),	-- Boon of the Command Center
-				q(46904),	-- Boon of the Command Center
 				q(47008),	-- Boon of the Mage Tower
 				q(47007),	-- Boon of the Mage Tower
 				q(47010),	-- Boon of the Mage Tower
@@ -478,7 +592,6 @@ _.Zones =
 				q(44243),	-- Champion: Thoras Trollbane
 				q(42800),	-- Champion: Valeera Sanguinar
 				q(46249),	-- Championing Our Cause
-				q(47137),	-- Champions of Legionfall
 				q(45816),	-- Choose Order Hall to Support
 				q(40403, {	-- Clandestine Operation
 					["races"] = HORDE_ONLY,
@@ -559,7 +672,6 @@ _.Zones =
 				q(40151),	-- Immaculate Stormscale
 				q(45971),	-- Infernal Phenomena
 				q(45794),	-- Informing the Council
-				q(46252),	-- Intolerable Infestation
 				q(46031),	-- Investigate the Broken Shore
 				q(39757),	-- Keeping Your Edge
 				q(44082),	-- Knights of the Ebon Blade
@@ -580,7 +692,6 @@ _.Zones =
 				q(45817),	-- Mage
 				q(46694),	-- Mail of the Ancients
 				q(45240),	-- Making Preparations
-				q(47139),	-- Mark of the Sentinax
 				q(47039, {	-- Marksmanship: The Twisted Twin
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -620,22 +731,18 @@ _.Zones =
 				q(46802),	-- Paragon of the Legionfall Armies
 				q(46253),	-- Pillars of Creation
 				q(39832),	-- Plans and Preparations
-				q(46725),	-- Power Outage
 				q(45823),	-- Priest
 				q(46695),	-- Prime Wardenscale
 				q(45556),	-- Ready to Strike
 				q(43266),	-- Recruiting the Troops
 				q(45251),	-- Redundancy
-				q(46769),	-- Relieved of Their Valuables
 				q(40419),	-- Rescue Mission
 				q(44889),	-- Resource Management
-				q(45764),	-- Restoring Equilibrium
 				q(38793),	-- Rethu's Experience
 				q(38792),	-- Rethu's Lesson
 				q(38794),	-- Rethu's Sacrifice
 				q(46267),	-- Return of the Battlelord
 				q(42449),	-- Return of the Four Horsemen
-				q(46266),	-- Return of the Slayer
 				q(45331),	-- Return to Acherus
 				q(44917),	-- Return to Karazhan: The Tower of Power
 				q(38803),	-- Rin'thissa
@@ -660,13 +767,11 @@ _.Zones =
 				}),
 --[[
 				q(47067),	-- Seeking Lost Knowledge
-				q(46248),	-- Self-Fulfilling Prophecy
 				q(47042, {	-- Shadow: The Twisted Twin
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(45830),	-- Shaman
 				q(45346),	-- Shambling Specimens
-				q(46251),	-- Shard Times
 				q(45586),	-- Shield Amplification
 				q(46510),	-- Ship Graveyard
 				q(46499),	-- Spiders, Huh?
@@ -686,7 +791,6 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 --[[
-				q(46250),	-- Take Out the Head...
 				q(45554),	-- Taking Control
 				q(46317),	-- Talon's Call
 				q(43268),	-- Tech It Up A Notch
@@ -696,7 +800,6 @@ _.Zones =
 				q(38990),	-- The Call of Icecrown
 				q(40987),	-- The Call of Vengeance
 				q(40935),	-- The Call of Vengeance
-				q(46773),	-- The Command Center
 				q(40740),	-- The Dead and the Damned
 				q(47127),	-- The Deceiver
 				q(47126),	-- The Deceiver
@@ -746,7 +849,6 @@ _.Zones =
 				q(43249),	-- The Raven's Eye
 				q(42533),	-- The Ruined Kingdom
 				q(42818),	-- The Scarlet Assault
-				q(46935),	-- The Shadow of the Sentinax
 				q(41919),	-- The Shadows Reveal
 				q(45788),	-- The Speaker Awaits
 				q(46679),	-- The Thread of Shadow
@@ -781,7 +883,6 @@ _.Zones =
 				q(44259),	-- Violet Hold
 				q(44258),	-- Violet Hold
 				q(44058),	-- Volpin the Elusive
-				q(45798),	-- War'zuul the Provoker
 				q(45826),	-- Warlock
 				q(45822),	-- Warrior
 				q(45385),	-- We Must be Prepared!
