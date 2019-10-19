@@ -7,6 +7,8 @@ _.PetJournal =
 		p(487),		-- Alpine Chipmunk
 		p(441),		-- Alpine Hare
 		p(2697),	-- Amethyst Softshell
+		p(2834),	-- Aqir Hivespawn
+		p(2848),	-- Aqir Tunneler
 		p(641),		-- Arctic Hare
 		p(272),		-- Armadillo Pup
 		p(1738),	-- Auburn Ringtail
@@ -149,6 +151,9 @@ _.PetJournal =
 		p(469),		-- Twilight Beetle
 		p(55),		-- Undercity Cockroach
 		p(454),		-- Undercity Rat
+		p(2843),	-- Void-Scarred Beetle
+		p(2839),	-- Void-Scarred Hare
+		p(2841),	-- Void-Scarred Rat
 		p(410),		-- Wharf Rat
 		un(20, p(127)),		-- Whiskers the Rat
 		p(118),		-- Winter Reindeer

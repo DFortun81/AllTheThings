@@ -19,6 +19,7 @@ _.PetJournal =
 		p(1688),			-- Crusher
 		un(20, p(225)),		-- Curious Oracle Hatchling
 		un(20, p(226)),		-- Curious Wolvar Hatchling
+		p(2850),			-- Cursed Dune Watcher
 		p(1329),			-- Dandelion Frolicker
 		un(16, p(294)),		-- Deathy
 		p(1979, {			-- Dutiful Gruntling
@@ -62,6 +63,7 @@ _.PetJournal =
 		p(1919, {			-- Horde Fanatic (Horde)
 			["races"] = HORDE_ONLY,
 		}),
+		p(2845),			-- K'uddly
 		p(2683),			-- Kelpfin
 		p(1940, {			-- Knight-Captain Murky (Alliance)
 			["u"] = 3,
@@ -112,6 +114,7 @@ _.PetJournal =
 		un(6, p(1365)),		-- Treasure Goblin
 		p(2022),			-- Tylarr Gronnden
 		p(2136), 			-- Uuna
+		p(2833),			-- Void-Scarred Anubisath
 		un(35, p(2184)),	-- Whomper
 		p(120),				-- Winter's Little Helper
 		p(1634),			-- Wretched Servant

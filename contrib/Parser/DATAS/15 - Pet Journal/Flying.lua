@@ -144,6 +144,7 @@ _.PetJournal =
 		un(1, p(2541)),		-- Proper Parrot
 		p(309),				-- Pterrordax Hatchling
 		p(1907),			-- Pygmy Owl
+		p(2835),			-- Ra'kim
 		p(139),				-- Red Moth
 		p(1587),			-- Royal Moth
 		p(1411),			-- Royal Peachick
@@ -199,6 +200,7 @@ _.PetJournal =
 		p(141),				-- White Moth
 		p(195),				-- White Tickbird Hatchling
 		p(548),				-- Wildhammer Gryphon Hatchling
+		p(2853),			-- Windfeather Chick
 		p(2482),			-- Wolf Balloon
 		p(1463),			-- Wood Wasp
 		p(140),				-- Yellow Moth

@@ -38,6 +38,7 @@ _.PetJournal =
 		p(77),				-- Brown Snake
 		p(380),				-- Bucktooth Flapper
 		p(1726),			-- Burrow Spiderling
+		p(2838),			-- C'Thuffer
 		p(224),				-- Calico Cat
 		p(459),				-- Cat
 		p(1999),			-- Cavern Moccasin
@@ -103,6 +104,7 @@ _.PetJournal =
 		p(317),				-- Hyjal Bear Cub
 		p(1457),			-- Icespine Hatchling
 		p(2089),			-- Infernal Pyreclaw
+		p(2852),			-- Jade Defender
 		p(699),				-- Jumping Spider
 		p(678),				-- Jungle Grub
 		p(438),				-- King Snake
@@ -146,6 +148,7 @@ _.PetJournal =
 		p(726),				-- Plains Monitor
 		p(2188),			-- Poda
 		un(3, p(124)),		-- Poley
+		p(2849),			-- Pygmy Camel
 		p(1200),			-- Pygmy Direhorn
 		p(2437),			-- Ragepeep
 		p(399),				-- Rat Snake
@@ -165,6 +168,7 @@ _.PetJournal =
 		p(1453),			-- River Calf
 		p(482),				-- Rock Viper
 		p(1749),			-- Rose Taipan
+		p(2847),			-- Rotbreath
 		p(2661),			-- Rustyroot Snooter
 		p(491),				-- Sand Kitten
 		p(1692),			-- Savage Cub
@@ -225,12 +229,14 @@ _.PetJournal =
 		p(1344),			-- Vengeful Porcupette
 		p(506),				-- Venomspitter Hatchling
 		p(1807),			-- Vicious Broodling
+		p(2840),			-- Void-Scarred Cat
 		p(2797),			-- Void-Scarred Pup
 		p(2129),			-- Voidstalker Runt
 		p(517),				-- Warpstalker Hatchling
 		p(2128),			-- Warpstalker Runt
 		p(418),				-- Water Snake
 		p(46),				-- White Kitten
+		p(2851),			-- Wicked Lurker
 		p(400),				-- Widow Spiderling
 		un(2, p(246)),		-- Wind Rider Cub
 		p(306),				-- Winterspring Cub

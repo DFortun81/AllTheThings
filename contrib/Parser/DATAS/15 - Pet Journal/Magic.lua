@@ -6,6 +6,7 @@ _.PetJournal =
 	pa(243, { 	-- Magic
 		p(1624),	-- Abyssius
 		p(2420),	-- Accursed Hexxer
+		p(2842),	-- Anomalus
 		p(1160),	-- Arcane Eye
 		p(2131),	-- Arcane Gorger
 		p(2439), 	-- Azerite Puddle
@@ -17,6 +18,7 @@ _.PetJournal =
 		p(1633),	-- Chaos Pup
 		p(1232),	-- Coilfang Stalker
 		p(2581),	-- Comet
+		p(2846),	-- Corrupted Tentacle
 		p(1931),	-- Court Scribe
 		p(1962),	-- Creeping Tentacle
 		p(2115), 	-- Cross Gazer
@@ -37,6 +39,7 @@ _.PetJournal =
 		p(1773),	-- Erudite Manafiend
 		un(10, p(183)),		-- Ethereal Soul-Trader
 		p(1717),	-- Extinguished Eye
+		p(2836),	-- Eye of Corruption
 		p(1719),	-- Eye of Inquisition
 		p(1576),	-- Eye of Observation
 		p(2090), 	-- Faceless Mindlasher
@@ -45,6 +48,7 @@ _.PetJournal =
 		p(342),		-- Festival Lantern
 		p(1245),	-- Filthling
 		p(2187),	-- Filthy Slime
+		p(2837),	-- Gloop
 		p(2120), 	-- Grasping Manifestation
 		un(10, p(1174)),	-- Gusting Grimoire
 		p(1346),	-- Harmonious Porcupette
@@ -68,6 +72,7 @@ _.PetJournal =
 		p(500),		-- Minfernal
 		un(6, p(93)),	-- Mini Diablo
 		p(1156),	-- Mini Mindslayer
+		p(2832),	-- Muar
 		p(1604),	-- Nethaera's Light
 		p(1228),	-- Netherspace Abyssal
 		p(1524),	-- Netherspawn, Spawn of Netherspawn
