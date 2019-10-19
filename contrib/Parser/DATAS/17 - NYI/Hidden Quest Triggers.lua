@@ -1281,6 +1281,8 @@ _.NeverImplemented =
 		q(58002),	-- Combining Coalescing Visions 3x
 		q(58409),	-- Combining Coalescing Visions 4x
 		
+		q(58085),	-- Triggered upon entering the vision to the Shrine of Seven Stars
+		
 		-- Horrific Visions
 		q(57039),	-- Valley of Spirits cleansed (Orgrimmar)
 		q(57129),	-- Valley of Wisdom cleansed (Orgrimmar)

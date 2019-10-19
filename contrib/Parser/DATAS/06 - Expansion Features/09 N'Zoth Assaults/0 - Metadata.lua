@@ -19,8 +19,9 @@ _.ExpansionFeatures =
 				q(58151, {	-- Minions of N'Zoth
 					["coord"] = { 56.6, 31.7, 1527 },
 					["provider"] = { "n", 160252 },	-- Blacktalon Agent
+					["isDaily"] = true,
 					["g"] = {
-						i(169293),	-- Coalescing Visions x50
+						i(169293),	-- Coalescing Visions x10
 					},
 				}),
 				q(57874, {	-- Visions of a Dark Destiny
