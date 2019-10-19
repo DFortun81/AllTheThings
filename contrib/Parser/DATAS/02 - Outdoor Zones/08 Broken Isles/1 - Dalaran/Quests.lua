@@ -112,9 +112,16 @@ _.Zones =
 					["provider"] = { "n", 117438 },	-- Doloria
 				}),
 				q(45865, {	-- A Gift From the Six
-					["classes"] = { 1, 3, 4, 6, 12 },
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 90418 },	-- Archmage Modera
+					["classes"] = {
+						6,	-- Death Knight (Frost)
+						12,	-- Demon Hunter (Havoc)
+						3,	-- Hunter (Survival)
+						4,	-- Rogue (Subtlety)
+						1,	-- Warrior (Arms)
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
 				}),
 				q(45864, {	-- A Gift From the Six
 					["classes"] = { 2, 5, 7, 10, 11 },
@@ -142,9 +149,18 @@ _.Zones =
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 				}),
 				q(45863, {	-- A Gift From the Six
-					["classes"] = { 1, 4, 6, 7, 8, 11,},
-					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 45843 },	-- Dark Omens
 					["provider"] = { "n", 90418 },	-- Archmage Modera
+					["classes"] = {
+						6,	-- Death Knight (Blood)
+						12,	-- Demon Hunter (Vengeance)
+						11,	-- Druid (Guardian)
+						10,	-- Monk (Brewmaster)
+						2,	-- Paladin (Protection)
+						1,	-- Warrior (Protection)
+					},
+					["coord"] = { 28.8, 48.8, 627 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(41632, {	-- A Gift of Time
 					["classes"] = { 5 },
@@ -426,9 +442,17 @@ _.Zones =
 				}),
 				q(45415, {	-- Between Worlds
 					["sourceQuests"] = { 45414 },	-- Confirming Suspicions
-					["classes"] = { 1, 2, 6, 10, 11, 12 },
 					["provider"] = { "n", 117042 },	-- Prophet Velen
-					["u"] = 40,
+					["classes"] = {
+						6,	-- Death Knight (Blood)
+						12,	-- Demon Hunter (Vengeance)
+						11,	-- Druid (Guardian)
+						10,	-- Monk (Brewmaster)
+						2,	-- Paladin (Protection)
+						1,	-- Warrior (Protection)
+					},
+					["coord"] = { 74.3, 45.6, 627 },
+					["lvl"] = 110,
 				}),
 				q(42678, {	-- Black Rook Hold: Into Black Rook Hold
 					["sourceQuests"] = {
@@ -538,9 +562,17 @@ _.Zones =
 				}),
 				q(45414, {	-- Confirming Suspicions
 					["sourceQuests"] = { 45413 },	-- Gathering Information
-					["classes"] = { 1, 2, 6, 10, 11, 12 },
 					["provider"] = { "n", 116880 },	-- Kor'vas Bloodthorn
-					["u"] = 40,
+					["classes"] = {
+						6,	-- Death Knight (Blood)
+						12,	-- Demon Hunter (Vengeance)
+						11,	-- Druid (Guardian)
+						10,	-- Monk (Brewmaster)
+						2,	-- Paladin (Protection)
+						1,	-- Warrior (Protection)
+					},
+					["coord"] = { 51.9, 20.1, 627 },
+					["lvl"] = 110,
 				}),
 				q(43841, {	-- Convincin' Old Yancey
 					["classes"] = { 4 },
@@ -838,16 +870,24 @@ _.Zones =
 				}),
 				q(45413, {	-- Gathering Information
 					["sourceQuests"] = {
-						45412,	-- Protection: Aid of the Illidari
-						46314,	-- Vengeance: Seeking Kor'vas
-						47022,	-- Protection: Aid of the Illidari
-						47023,	-- Guardian: Aid of the Illidari
-						47024,	-- Brewmaster: Aid of the Illidari
 						47025,	-- Blood: Aid of the Illidari
+						47024,	-- Brewmaster: Aid of the Illidari
+						47023,	-- Guardian: Aid of the Illidari
+						45412,	-- Protection: Aid of the Illidari
+						47022,	-- Protection: Aid of the Illidari
+						46314,	-- Vengeance: Seeking Kor'vas
 					},
-					["classes"] = { 1, 2, 6, 10, 11, 12 },
 					["provider"] = { "n", 116880 },	-- Kor'vas Bloodthorn
-					["u"] = 40,
+					["classes"] = {
+						6,	-- Death Knight (Blood)
+						12,	-- Demon Hunter (Vengeance)
+						11,	-- Druid (Guardian)
+						10,	-- Monk (Brewmaster)
+						2,	-- Paladin (Protection)
+						1,	-- Warrior (Protection)
+					},
+					["coord"] = { 51.9, 20.1, 627 },
+					["lvl"] = 110,
 				}),
 				q(44337, {	-- Goddess Watch Over You
 					["provider"] = { "n", 113686 },	-- Archmage Khadgar
@@ -1635,7 +1675,7 @@ _.Zones =
 				q(37689, {	-- The Imposter
 					["provider"] = { "n", 111049 },	-- Master Mathias Shaw
 					["coord"] = { 35.6, 60.0, 84 },
-					["sourceQuest"] = 37494,	-- Under Cover of Darkness
+					["sourceQuests"] = { 37494 },	-- Under Cover of Darkness
 					["classes"] = { 4 },	-- Rogue
 					["maps"] = { 84 },	 -- Stormwind City
 					["lvl"] = 98,

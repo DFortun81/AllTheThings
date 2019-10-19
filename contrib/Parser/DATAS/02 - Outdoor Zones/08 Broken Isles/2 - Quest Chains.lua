@@ -402,11 +402,25 @@ _.Zones =
 							["lvl"] = 110,
 						}),
 						q(44496, {	-- Destiny Unfulfilled
-							["provider"] = { "n", 113857 },	-- Light's Heart
-							["sourceQuest"] = 44480,	-- In My Father's House
 							["description"] = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for players that haven't killed him.",
+							["sourceQuest"] = 44480,	-- In My Father's House
+							["provider"] = { "n", 113857 },	-- Light's Heart
+							["maps"] = {
+								647, 648,	-- Acherus (Death Knight)
+								717,		-- Dreadscar Rift (Warlock)
+								734, 735,	-- Hall of the Guardian (Mage)
+								720, 721,	-- Mardum, the Shattered Abyss (Demon Hunter)
+								702,		-- Netherlight Temple (Priest)
+								24,			-- Sanctum of Light (Paladin)
+								698,		-- Skyhold (Warrior)
+								747,		-- The Dreamgrove (Druid)
+								626,		-- The Hall of Shadows (Rogue)
+								726,		-- The Heart of Azeroth (Shaman)
+								709,		-- The Wandering Isle (Monk)
+								739,		-- Trueshot Lodge (Hunter)
+							},
 							["lvl"] = 110,
-							["groups"] = {
+							["g"] = {
 								i(121745),	-- Helm of the Betrayed
 								i(139909),	-- Illidari High Lord's Cowl
 								i(140005),	-- Impenetrable Faceplate
@@ -414,12 +428,16 @@ _.Zones =
 							},
 						}),
 						q(44497, {	-- Destiny Unfulfilled
-							["provider"] = { "n", 113857 },	-- Light's Heart
-							["sourceQuest"] = 44480,	-- In My Father's House
 							["description"] = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for Hunters and Demon Hunters only.",
-							["lvl"] = 110,
+							["sourceQuest"] = 44480,	-- In My Father's House
+							["provider"] = { "n", 113857 },	-- Light's Heart
 							["classes"] = { 3, 12 },	-- Hunters / Demon Hunters Only
-							["groups"] = {
+							["maps"] = {
+								720, 721,	-- Mardum, the Shattered Abyss (Demon Hunter)
+								739,		-- Trueshot Lodge (Hunter)
+							},
+							["lvl"] = 110,
+							["g"] = {
 								i(121745),	-- Helm of the Betrayed
 								i(139909),	-- Illidari High Lord's Cowl
 								i(140005),	-- Impenetrable Faceplate
@@ -427,11 +445,25 @@ _.Zones =
 							},
 						}),
 						q(44481, {	-- Destiny Unfulfilled
-							["provider"] = { "n", 113857 },	-- Light's Heart
-							["sourceQuest"] = 44480,	-- In My Father's House
 							["description"] = "There are three versions of this quest: One for Demon Hunters, one for players that have defeated Illidan in the Black Temple, and one for players that haven't.\n\nThis one is for players that have defeated him.",
+							["sourceQuest"] = 44480,	-- In My Father's House
+							["provider"] = { "n", 113857 },	-- Light's Heart
+							["maps"] = {
+								647, 648,	-- Acherus (Death Knight)
+								717,		-- Dreadscar Rift (Warlock)
+								734, 735,	-- Hall of the Guardian (Mage)
+								720, 721,	-- Mardum, the Shattered Abyss (Demon Hunter)
+								702,		-- Netherlight Temple (Priest)
+								24,			-- Sanctum of Light (Paladin)
+								698,		-- Skyhold (Warrior)
+								747,		-- The Dreamgrove (Druid)
+								626,		-- The Hall of Shadows (Rogue)
+								726,		-- The Heart of Azeroth (Shaman)
+								709,		-- The Wandering Isle (Monk)
+								739,		-- Trueshot Lodge (Hunter)
+							},
 							["lvl"] = 110,
-							["groups"] = {
+							["g"] = {
 								i(121745),	-- Helm of the Betrayed
 								i(139909),	-- Illidari High Lord's Cowl
 								i(140005),	-- Impenetrable Faceplate

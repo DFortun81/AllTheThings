@@ -180,6 +180,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 46266 },	-- Return of the Slayer
 						["provider"] = { "n", 117481 },	-- Lady S'theno
 						["coord"] = { 61.1, 55.4, 720 },
+						["lvl"] = 110,
 						["g"] = {
 							follower(990),	-- Champion: Lady S'theno
 						},
@@ -253,6 +254,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 95240 },	-- Kayn Sunfury
 						["classes"] = { 12 },	-- Demon Hunter
 						["coord"] = { 59.5, 58.0, 720 },
+					}),
+					q(46780, {	-- Further Advancement
+						["sourceQuests"] = { 45391 },	-- Champion: Lady S'theno
+						["provider"] = { "n", 103732 },	-- Tylos Darksight
+						["coord"] = { 54.0, 46.7, 721 },
+						["lvl"] = 110,
 					}),
 					q(42808, {	-- Green Adepts
 						["sourceQuests"] = { 42802 },	-- Securing Mardum
@@ -550,7 +557,6 @@ _.ExpansionFeatures =
 					q(44270),	-- Eye of Azshara
 					q(44271),	-- Eye of Azshara
 					q(44226),	-- Fate Favors Us
-					q(46780),	-- Further Advancement
 					q(46152),	-- Furthering Knowledge
 					q(44383, {	-- In Pursuit of Power
 						["lvl"] = 102,

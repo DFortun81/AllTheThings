@@ -51,7 +51,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14431,	-- The Blackmaw Scar
 				}),
-				q(46177, {	-- A Portal Away -- possibly legacy now that mage tower is unavailable?
+				q(46177, {	-- A Portal Away
 					["provider"] = { "n", 116048 },	-- Joanna
 					["classes"] = {
 						6,	-- Death Knight (Frost)
@@ -60,7 +60,7 @@ _.Zones =
 						4,	-- Rogue (Subtlety)
 						1,	-- Warrior (Arms)
 					},
-					["coord"] = { 25.2, 38.0, 76 },
+					["coord"] = { 25.2, 37.9, 76 },
 					["lvl"] = 110,
 				}),
 				q(14197, {	-- A Quota to Meet
@@ -584,16 +584,17 @@ _.Zones =
 					},
 				}),
 				q(44920, {	-- Order of Incantations
-					["provider"] = { "n", 115791 },	-- Joanna
-					["coord"] = { 25.0, 38.6, 76 },
 					["sourceQuest"] = 44915,	-- Professionally Good looking
+					["provider"] = { "n", 115791 },	-- Joanna
 					["classes"] = {
-						1,	-- Warrior
-						3,	-- Hunter
-						4,	-- Rogue
-						6,	-- Death Knight
-						12,	-- Demon Hunter
+						6,	-- Death Knight (Frost)
+						12,	-- Demon Hunter (Havoc)
+						3,	-- Hunter (Survival)
+						4,	-- Rogue (Subtlety)
+						1,	-- Warrior (Arms)
 					},
+					["coord"] = { 25.0, 38.6, 76 },
+					["lvl"] = 110,
 				}),
 				q(6804,  {	-- Poisoned Water
 					["u"] = 40,
@@ -629,15 +630,6 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(44915, {	-- Professionally Good Looking
-					["provider"] = { "n", 115791 },	-- Joanna
-					["coord"] = { 25.0, 38.6, 76 },
-					["classes"] = {
-						1,	-- Warrior
-						3,	-- Hunter
-						4,	-- Rogue
-						6,	-- Death Knight
-						12,	-- Demon Hunter
-					},
 					["sourceQuests"] = {
 						44914,	-- Arms: The Thieving Apprentice
 						47046,	-- Frost: The Thieving Apprentice
@@ -645,6 +637,16 @@ _.Zones =
 						47048,	-- Subtlety: The Thieving Apprentice
 						47047,	-- Survival: The Thieving Apprentice
 					},
+					["provider"] = { "n", 115791 },	-- Joanna
+					["classes"] = {
+						6,	-- Death Knight (Frost)
+						12,	-- Demon Hunter (Havoc)
+						3,	-- Hunter (Survival)
+						4,	-- Rogue (Subtlety)
+						1,	-- Warrior (Arms)
+					},
+					["coord"] = { 25.0, 38.6, 76 },
+					["lvl"] = 110,
 				}),
 				q(24452, {	-- Profitability Scouting
 					["provider"] = { "n", 36749 },	-- Commander Molotov
@@ -875,16 +877,16 @@ _.Zones =
 					["sourceQuest"] = 14130,	-- Friends Come in All Colors
 				}),
 				q(44924, {	-- The Archmage Accosted
-					["provider"] = { "n", 115791 },	-- Joanna
-					["coord"] = { 25.0, 38.6, 76 },
 					["sourceQuest"] = 44920,	-- Order of Incantations
 					["classes"] = {
-						1,	-- Warrior
-						3,	-- Hunter
-						4,	-- Rogue
-						6,	-- Death Knight
-						12,	-- Demon Hunter
+						6,	-- Death Knight (Frost)
+						12,	-- Demon Hunter (Havoc)
+						3,	-- Hunter (Survival)
+						4,	-- Rogue (Subtlety)
+						1,	-- Warrior (Arms)
 					},
+					["coord"] = { 25.1, 38.5, 76 },
+					["lvl"] = 110,
 				}),
 				q(14435, {	-- The Blackmaw Doublecross
 					["provider"] = { "n", 8586 },	-- Haggrum Bloodfist

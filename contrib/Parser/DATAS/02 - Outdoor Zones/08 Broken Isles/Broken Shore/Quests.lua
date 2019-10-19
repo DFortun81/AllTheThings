@@ -136,6 +136,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
+				q(47097, {	-- A Walk to Remember
+					["sourceQuests"] = { 47202 },	-- A Personal Message
+					["provider"] = { "n", 121224 },	-- Anduin Wrynn
+					["coord"] = { 41.4, 59.4, 646 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
+				}),
 				q(46245, {	-- Begin Construction
 					["sourceQuests"] = { 46286 },	-- Legionfall Supplies
 					["provider"] = { "n", 120183 },	-- Commander Chambers
@@ -219,6 +226,13 @@ _.Zones =
 					["coord"] = { 44.4, 63.0, 646 },
 					["lvl"] = 110,
 				}),
+				q(47112, {	-- Lost Souls
+					["sourceQuests"] = { 47097 },	-- A Walk to Remember
+					["provider"] = { "n", 121226 },	-- Anduin Wrynn
+					["coord"] = { 52.5, 48.4, 646 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
+				}),
 				q(47139, {	-- Mark of the Sentinax
 					["sourceQuests"] = { 46251 },	-- Shard Times
 					["provider"] = { "n", 117873 },	-- Illidan Stormrage
@@ -287,6 +301,13 @@ _.Zones =
 					["coord"] = { 39.6, 71.7, 646 },
 					["lvl"] = 110,
 				}),
+				q(46272, {	-- Summons to the Keep
+					["sourceQuests"] = { 46268 },	-- A Found Memento
+					["provider"] = { "n", 120281 },	-- Captain Shwayder
+					["coord"] = { 41.6, 59.6, 646 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
+				}),
 				q(46250, {	-- Take Out the Head...
 					["sourceQuests"] = { 46769 },	-- Relieved of Their Valuables
 					["provider"] = { "n", 116576 },	-- Maiev Shadowsong
@@ -319,6 +340,13 @@ _.Zones =
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 					["provider"] = { "n", 120372 },	-- Prophet Velen
 					["coord"] = { 44.6, 63.2, 646 },
+					["lvl"] = 110,
+				}),
+				q(46282, {	-- The King's Path
+					["sourceQuests"] = { 47112 },	-- Lost Souls
+					["provider"] = { "n", 121237 },	-- Anduin Wrynn
+					["coord"] = { 58.2, 26.6, 646 },
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
 				q(46666, {	-- The Motherlode
@@ -529,15 +557,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42708),	-- A Personal Request
-]]--				
-				q(47097, {	-- A Walk to Remember
-					["provider"] = { "n", 121224 },	-- Anduin Wrynn
-					["coord"] = { 41.4, 59.4, 646 },
-					["sourceQuests"] = { 47202 },	-- A Personal Message
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 110,
-				}),
---[[
 				q(44401),	-- A Weapon For Every Occasion
 				q(45342),	-- Administering Aid
 				q(39761),	-- Advanced Runecarving
@@ -679,15 +698,6 @@ _.Zones =
 				q(45614),	-- Lady Remor'za
 				q(46688),	-- Leather of the Ancients
 				q(46333),	-- Livin' on the Ledge
-]]--
-				q(47112, {	-- Lost Souls
-					["provider"] = { "n", 121226 },	-- Anduin Wrynn
-					["coord"] = { 52.6, 48.4, 646 },
-					["sourceQuests"] = { 47097 },	-- A Walk to Remember
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 110,
-				}),
---[[
 				q(38804),	-- Lyrelle
 				q(45817),	-- Mage
 				q(46694),	-- Mail of the Ancients
@@ -782,15 +792,6 @@ _.Zones =
 				q(46145),	-- Sterile Surroundings
 				q(45459),	-- Storming the Legion
 				q(46246),	-- Strike Them Down
-]]--
-				q(46272, {	-- Summons to the Keep
-					["provider"] = { "n", 120281 },	-- Captain Shwayder
-					["coord"] = { 41.6, 59.6, 646 },
-				--	["sourceQuests"] = { 40755 },	-- Hiding in the Stacks		-- Need to be confirmed
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 110,
-				}),
---[[
 				q(45554),	-- Taking Control
 				q(46317),	-- Talon's Call
 				q(43268),	-- Tech It Up A Notch
@@ -821,15 +822,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42537),	-- The King Rises
-]]--
-				q(46282, {	-- The King's Path
-					["provider"] = { "n", 121237 },	-- Anduin Wrynn
-					["coord"] = { 58.2, 26.6, 646 },
-					["sourceQuests"] = { 47112 },	-- Lost Souls
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 110,
-				}),
---[[
 				q(46684),	-- The Legend of the Elderhide
 				q(46696),	-- The Legend of the Four Hammers
 				q(46678),	-- The Legend of the Threads

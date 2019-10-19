@@ -370,9 +370,9 @@ _.Zones =
 					},
 				}),
 				q(46275, {	-- A Kingdom's Heart
-					["provider"] = { "n", 119357 },	-- Anduin Wrynn
-					["coord"] = { 49.8, 45.0, 84 },
 					["sourceQuest"] = 46274,	-- Consoling the King
+					["provider"] = { "n", 119357 },	-- Anduin Wrynn
+					["coord"] = { 49.8, 45.2, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
@@ -392,9 +392,9 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(47202, {	-- A Personal Message
-					["provider"] = { "n", 119357 },	-- Anduin Wrynn
-					["coord"] = { 49.8, 45.0, 84 },
 					["sourceQuest"] = 46275,	-- A Kingdom's Heart
+					["provider"] = { "n", 119357 },	-- Anduin Wrynn
+					["coord"] = { 85.9, 34.3, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
@@ -572,9 +572,9 @@ _.Zones =
 					},
 				}),
 				q(46274, {	-- Consoling the King
-					["provider"] = { "n", 119338 },	-- Genn Greymane
-					["coord"] = { 85.8, 32.0, 84 },
 					["sourceQuest"] = 46272,	-- Summons to the Keep
+					["provider"] = { "n", 119338 },	-- Genn Greymane
+					["coord"] = { 85.7, 32.1, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),

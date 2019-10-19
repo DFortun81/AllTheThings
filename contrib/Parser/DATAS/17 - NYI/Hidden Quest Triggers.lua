@@ -635,6 +635,12 @@ _.NeverImplemented =
 		q(49161),	-- triggered when turning in #48461, "Where They Least Expect It"
 		q(42118),	-- Tracking Quest: Chapter 4 Completed — finished order hall campaign on DH
 		q(45117),	-- TRACKING — triggered when returning to the Fel Hammer while on "Defense of the Fel Hammer"
+		q(46176),	-- triggered when turning in #44924, "The Archmage Accosted," in azshara on DH
+		q(45853),	-- Melee DPS Trait Complete — triggered when raising weapon during "A Gift From the Six," #45865, on havoc DH
+		q(45518),	-- First Aid Shop Searched — triggered after searching first aid shop during "Confirming Suspicions," 45414
+		q(47282),	-- First Aid Shop Searched — triggered after searching first aid shop during "Confirming Suspicions," 45414
+		q(46321),	-- Krasus Landing Searched — triggered when finding velen during "Confirming Suspicions," 45414
+		q(45855),	-- Tank Trait Complete — triggered when raising weapon during "A Gift From the Six," #45863, on vengeance DH
 		
 	-- World Boss
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
