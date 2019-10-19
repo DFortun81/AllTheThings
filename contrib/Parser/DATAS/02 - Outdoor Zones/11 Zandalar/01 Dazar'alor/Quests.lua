@@ -280,6 +280,11 @@ _.Zones =
 					["sourceQuest"] = 47439,	-- Gonk, Lord of the Pack
 					["races"] = HORDE_ONLY,	
 				}),
+				q(57376, {	-- The Hidden Need
+					["coord"] = { 51.5, 99.4, 1165 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 141961 },	-- Lilian Voss
+				}),
 				q(50835, {	-- The Port of Zandalar
 					["sourceQuests"] = { 47514 },	-- Zuldazar
 					["isBreadcrumb"] = true,	-- for "Shakedown"
