@@ -14,7 +14,6 @@ _.Zones =
 					q(46947),	-- Brutallus
 					q(45531),	-- Creeping Fel
 					q(45969),	-- Defense of the Ancient
-					q(46288),	-- Everyone to the Front
 					q(46077),	-- Felbound Spirits
 					q(40390),	-- Hallowed Ground
 					q(45541),	-- How Do YOU Like It?!
@@ -117,6 +116,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(46829, {	-- Elemental Abuse
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(46288, {	-- Everyone to the Front
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
