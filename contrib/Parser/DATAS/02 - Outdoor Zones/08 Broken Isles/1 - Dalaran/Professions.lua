@@ -99,7 +99,16 @@ _.Zones =
 					}),
 					q(39566, {	-- The Search for Knowledge
 						["provider"] = { "n", 92458 },	-- Deucus Valdera
-						["races"] = ALLIANCE_ONLY,
+						["classes"] = {	-- not sure if this is a breadcrumb, or if it's mandatory for the classes/races below!
+							12,	-- Demon Hunter
+							5,	-- Priest
+							4,	-- Rogue
+						},
+						["races"] = {
+							4,	-- Night Elf
+							29,	-- Void Elf
+							22,	-- Worgen
+						},
 					}),
 					q(39327, {	-- There's a Scribe for That
 						["sourceQuests"] = { 39390 },	-- A Mysterious Text
@@ -1247,6 +1256,10 @@ _.Zones =
 					}),
 				}),
 				prof(393, {	-- Skinning
+					q(40157,  {	-- An Unseemly Task
+						["requireSkill"] = 393,	-- Skinning
+						["provider"] = { "n", 93541 },	-- Kondal Huntsworn
+					}),
 				--	q(40156)	-- Felhide Sample -- granted by i(129863)
 				--	q(40136)	-- Immaculate Stonehide Leather -- granted by i(129866)
 				--	q(40151)	-- Immaculate Stormscale -- granted by i(129867)

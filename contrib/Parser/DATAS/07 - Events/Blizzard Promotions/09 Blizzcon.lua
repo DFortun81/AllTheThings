@@ -64,7 +64,7 @@ _.WorldEvents =
 						["f"] = 3,	-- Cloak
 					}),
 				})),
-				un(16, n(-100, {	-- Blizzcon 2019 (temporary. surely they'll add an achievement for this like they have every other year)
+				un(16, ach(14027, {	-- Blizzcon 2019 - Battle for Mrrglroth
 					un(16, i(171341)),	-- Wooly Wendigo Pullover
 					un(16, i(171340)),	-- Wooly Wendigo Hood
 					un(16, i(171339)),	-- Wooly Wendigo Sweatpants

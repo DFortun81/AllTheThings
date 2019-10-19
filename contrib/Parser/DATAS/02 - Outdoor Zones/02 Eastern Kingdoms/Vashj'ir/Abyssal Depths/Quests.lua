@@ -77,7 +77,7 @@ _.Zones =
 						["provider"] = { "n", 41665 },	-- Jorlan Trueblade
 						["coord"] = { 54.4, 72.9, 204 },
 						["races"] = ALLIANCE_ONLY,
-						["description"] = "This version is provided if you abandon the quest granted by killing an |cFFFFD700Hellscream Seadog|r.",
+						["description"] = "This version is provided if you abandon the quest granted by killing a |cFFFFD700Hellscream Seadog|r.",
 					}),
 					q(26070, {	-- Clearing the Defiled (A)
 						["provider"] = { "n", 41598 },	-- Captain Taylor

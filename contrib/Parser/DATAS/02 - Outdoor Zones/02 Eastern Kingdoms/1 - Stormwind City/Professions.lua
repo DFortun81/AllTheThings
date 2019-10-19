@@ -175,7 +175,7 @@ _.Zones =
 					n(-17, {	-- Quests
 						q(26488, {	-- Big Gulp
 							["provider"] = { "n", 5494 },	-- Catherine Leland
-							["coord"] = { 55.0, 69.6, 85 },
+							["coord"] = { 55.0, 69.6, 84 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
 							["races"] = ALLIANCE_ONLY,
@@ -191,7 +191,7 @@ _.Zones =
 						}),
 						q(26420, {	-- Diggin' For Worms
 							["provider"] = { "n", 5494 },	-- Catherine Leland
-							["coord"] = { 55.0, 69.6, 85 },
+							["coord"] = { 55.0, 69.6, 84 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
 							["races"] = ALLIANCE_ONLY,
@@ -207,7 +207,7 @@ _.Zones =
 						}),
 						q(26414, {	-- Hitting a Walleye
 							["provider"] = { "n", 5494 },	-- Catherine Leland
-							["coord"] = { 55.0, 69.6, 85 },
+							["coord"] = { 55.0, 69.6, 84 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
 							["races"] = ALLIANCE_ONLY,
@@ -223,7 +223,7 @@ _.Zones =
 						}),
 						q(26442, {	-- Rock Lobster
 							["provider"] = { "n", 5494 },	-- Catherine Leland
-							["coord"] = { 55.0, 69.6, 85 },
+							["coord"] = { 55.0, 69.6, 84 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
 							["races"] = ALLIANCE_ONLY,
@@ -239,7 +239,7 @@ _.Zones =
 						}),
 						q(26536, {	-- Thunder Falls
 							["provider"] = { "n", 5494 },	-- Catherine Leland
-							["coord"] = { 55.0, 69.6, 85 },
+							["coord"] = { 55.0, 69.6, 84 },
 							["isDaily"] = true,
 							["requireSkill"] = 356,	-- Fishing
 							["races"] = ALLIANCE_ONLY,

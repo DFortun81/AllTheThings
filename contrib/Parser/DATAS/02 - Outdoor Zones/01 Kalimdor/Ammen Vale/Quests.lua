@@ -7,8 +7,10 @@ _.Zones =
 		m(468, {	-- Ammen Vale
 			n(-17, {	-- Quests
 				q(9798,  {	-- Blood Elf Plans
+					["sourceQuests"] = { 9309 },	-- The Missing Scout
 					["crs"] = { 16522 },	-- Surveyor Candress
 					["provider"] = { "i", 24414 },	-- Blood Elf Plans
+					["coord"] = { 69.0, 65.4, 468 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9311,  {	-- Blood Elf Spy

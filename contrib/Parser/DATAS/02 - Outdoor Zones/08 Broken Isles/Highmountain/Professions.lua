@@ -17,21 +17,19 @@ _.Zones =
 					q(41190, {	-- Crystal Eyes
 						["sourceQuests"] = { 41189 },	-- A New Lead
 						["requireSkill"] = 794,	-- Archaeology
-						["coord"] = { 46.9, 60.2, 750 },	-- Thunder Totem
 						["provider"] = { "n", 103485 },	-- Lessah Moonwater
-						--Note!! This resets either bi-weekly or when it comes up against
-						--It does NOT receive repeatable/daily/weekly filter due to this.
+						["isWeekly"] = true,
+						["coord"] = { 46.9, 60.2, 750 },	-- Thunder Totem
 					}),
 					q(41191, {	-- Drogbar Deception
 						["sourceQuests"] = { 41190 },	-- Crystal Eyes
 						["requireSkill"] = 794,	-- Archaeology
-						["coord"] = { 46.9, 60.2, 750 },	-- Thunder Totem
 						["provider"] = { "n", 103485 },	-- Lessah Moonwater
-						["groups"] = {
+						["isWeekly"] = true,
+						["coord"] = { 46.9, 60.2, 750 },	-- Thunder Totem
+						["g"] = {
 							i(131736),	-- Prizerock Neckband
 						},
-						--Note!! This resets either bi-weekly or when it comes up against
-						--It does NOT receive repeatable/daily/weekly filter due to this.
 					}),
 				}),
 				prof(164, {	-- Blacksmithing

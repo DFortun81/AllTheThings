@@ -287,8 +287,18 @@ _.Zones =
 					["sourceQuest"] = 10483,	-- Ill Omens
 				}),
 				q(45843, {	-- Dark Omens
-					["u"] = 40,
+					["sourceQuests"] = { 45415 },	-- Between Worlds
+					["classes"] = {
+						6,	-- Death Knight (Blood)
+						12,	-- Demon Hunter (Vengeance)
+						11,	-- Druid (Guardian)
+						10,	-- Monk (Brewmaster)
+						2,	-- Paladin (Protection)
+						1,	-- Warrior (Protection)
+					},
+					["coord"] = { 85.2, 50.1, 100 },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
 				}),
 				q(9398,  {	-- Deadly Predators
 					["coord"] = { 23.3, 38.1, 100 },

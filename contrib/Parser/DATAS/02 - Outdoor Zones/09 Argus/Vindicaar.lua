@@ -18,69 +18,7 @@ _.Zones =
 			["lvl"] = 110,
 			["isRaid"] = true,
 			["g"] = {
-				n(-4,   {	-- Achievement
-					ach(12073, {	-- Locked and Loaded
-						i(151830, {		-- Light's Judgement
-							["sourceQuest"] = 47287,	-- The Vindicaar Matrix Core
-							["g"] = {
-								crit(1, {	-- Light's Judgement
-									["achievementID"] = 12073,	-- Locked and Loaded
-								}),
-								spell(247427),	-- Light's Judgement
-								q(48451, {	-- First Time Tracking Quest?
-									["repeatable"] = true,
-								}),
-								q(48858, {	-- Tracking Quest - Active?
-									["repeatable"] = true,
-								}),
-							},
-						}),
-						i(152098, {		-- Lightforged Warframe
-							["sourceQuest"] = 47994,	-- Forming a Bond
-							["g"] = {
-								crit(2, {	-- Lightforged Warframe
-									["achievementID"] = 12073,	-- Locked and Loaded
-								}),
-								spell(250436),	-- Lightforged Warframe
-								q(48449, {	-- First Time Tracking Quest?
-									["repeatable"] = true,
-								}),
-								q(48859, {	-- Tracking Quest - Active?
-									["repeatable"] = true,
-								}),
-							},
-						}),
-						i(147496, {		-- Fel Heart of Argus
-							["sourceQuest"] = 47182,	-- Long Overdue
-							["g"] = {
-								crit(3, {	-- Fel Heart of Argus
-									["achievementID"] = 12073,	-- Locked and Loaded
-								}),
-								spell(248011),	-- Fel Heart of Argus
-								q(48450, {	-- First Time Tracking Quest?
-									["repeatable"] = true,
-								}),
-								q(48860, {	-- Tracking Quest - Active?
-									["repeatable"] = true,
-								}),
-							},
-						}),
-						i(151912, {		-- Shroud of Arcane Echoes
-							["sourceQuest"] = 48107,	-- The Sigil of Awakening
-							["g"] = {
-								crit(4, {	-- Shroud of Arcane Echoes
-									["achievementID"] = 12073,	-- Locked and Loaded
-								}),
-								spell(248779),	-- Shroud of Arcane Echoes
-								q(48450, {	-- First Time Tracking Quest?
-									["repeatable"] = true,
-								}),
-								q(48579, {	-- Tracking Quest - Active?
-									["repeatable"] = true,
-								}),
-							},
-						}),
-					}),
+				n(-4,   {	-- Achievement					
 				}),
 				n(-169, {	-- Emissary Quests
 					q(48642, {	-- Argussian Reach
@@ -209,9 +147,10 @@ _.Zones =
 								}),
 							},
 						}),
-						q(48974, {	-- Paragon of the Army of the Light
-							["provider"] = { "n", 127120 },	-- Vindicator Jaelaana
+						q(48977, {	-- Paragon of the Army of the Light
 							["repeatable"] = true,
+							["altQuests"] = { 48974 },	-- Supplies From the Army of the Light
+							["provider"] = { "n", 127120 },	-- Vindicator Jaelaana
 							["g"] = {
 								i(152923, {	-- Gleaming Footlocker
 									i(153044),	-- Avenging Felcrusher (MOUNT!)
@@ -247,6 +186,32 @@ _.Zones =
 							i(151733),	-- Design: Empyrial Titan Crown (Rank 1)
 						},
 					}),
+					q(48081, {	-- A Floating Ruin
+						["sourceQuests"] = { 47994 },	-- Forming a Bond
+						["provider"] = { "n", 126307 },	-- Prophet Velen
+						["coord"] = { 41.3, 24.9, 831 },
+					}),
+					q(46938, {	-- Alone in the Abyss
+						["sourceQuests"] = { 48440 },	-- Into the Night
+						["provider"] = { "n", 126307 },	-- Prophet Velen
+						["coord"] = { 41.1, 24.3, 831 },
+						["lvl"] = 110,
+					}),
+					q(48500, {	-- A Moment of Respite
+						["sourceQuests"] = { 46843 },	-- Return to the Vindicaar
+						["provider"] = { "n", 126307 },	-- Prophet Velen
+						["coord"] = { 40.9, 24.7, 831 },
+					}),
+					q(48559, {	-- An Offering of Light
+						["sourceQuests"] = { 49143 },	-- Essence of the Light Mother
+						["provider"] = { "n", 126307 },	-- Prophet Velen
+						["coord"] = { 46.0, 36.7, 831 },
+					}),
+					q(48560, {	-- An Offering of Shadow
+						["sourceQuests"] = { 47220 },	-- A Beacon in the Dark
+						["provider"] = { "n", 128722 },	-- Prophet Velen
+						["coord"] = { 53.1, 48.8, 883 },
+					}),
 					q(48078, {	-- Counterbalancing
 						["requireSkill"] = 165,	-- Leatherworking
 						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
@@ -263,6 +228,11 @@ _.Zones =
 							i(151711),	-- Plans: Empyrial Breastplate [Rank 1]
 						},
 					}),
+					q(49143, {	-- Essence of the Light Mother
+						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
+						["provider"] = { "n", 126307 },	-- Prophet Velen
+						["coord"] = { 45.9, 34.0, 831 },
+					}),
 					q(48065, {	-- Extraterrestrial Exploration
 						["requireSkill"] = 202,	-- Engineering
 						["sourceQuests"] = { 48069 },	-- The Wrench Calls
@@ -270,17 +240,36 @@ _.Zones =
 							recipe(247744),	-- Wormhole Generator: Argus
 						},
 					}),
+					q(47994, {	-- Forming a Bond
+						["sourceQuests"] = { 47993 },	-- Lord of the Spire
+						["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
+						["coord"] = { 43.2, 25.5, 831 },
+					}),
 					q(48799, {	-- Fuel of a Doomed World
-					--	["sourceQuests"] = {  },	-- ???
+						["sourceQuests"] = {
+							47473,	-- Sizing Up the Opposition (Light's Purchase)
+							48929,	-- Sizing Up the Opposition (The Veiled Den)
+						},
 						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
 						["isWeekly"] = true,
 						["coord"] = { 46.7, 24.6, 831 },
+					}),
+					q(47431, {	-- Gathering Light
+						["sourceQuests"] = { 48500 },	-- A Moment of Respite
+						["provider"] = { "n", 122378 },	-- High Exarch Turalyon
+						["coord"] = { 42.9, 26.4, 831 },
 					}),
 					q(49293, {	-- Invasion Onslaught
 					--	["sourceQuests"] = {  },	-- ???
 						["provider"] = { "n", 126408 },	-- Illidan Stormrage
 						["isWeekly"] = true,
 						["coord"] = { 40.1, 21.3, 831 },
+					}),
+					q(48513, {	-- Invasion Point Offensive
+					--	might unlock differently/have different SQ(s) on main character vs alts.
+						["sourceQuests"] = { 48440 },	-- Into the Night
+						["provider"] = { "n", 120978 },	-- Illidan Stormrage
+						["coord"] = { 40.2, 21.4, 831 },
 					}),
 					q(48074, {	-- Looming Over Me
 						["requireSkill"] = 197,	-- Tailoring
@@ -289,18 +278,110 @@ _.Zones =
 							i(151571),	-- Lightweave Breeches
 						},
 					}),
+					q(46815, {	-- Mac'Aree, Jewel of Argus
+						["sourceQuests"] = { 48081 },	-- A Floating Ruin
+						["provider"] = { "n", 128725 },	-- Prophet Velen
+						["coord"] = { 47.4, 24.5, 831 },
+					}),
+					q(48201, {	-- Reinforce Light's Purchase
+						["sourceQuests"] = { 48200 },	-- Securing a Foothold
+						["altQuests"] = { 48202 },	-- Reinforce the Veiled Den — you get one of two quests depending on which camp is up at the time
+						["provider"] = { "n", 126954 },	-- High Exarch Turalyon
+						["coord"] = { 34.4, 57.2, 831 },
+					}),
+					q(48202, {	-- Reinforce the Veiled Den
+						["sourceQuests"] = { 48200 },	-- Securing a Foothold
+						["altQuests"] = { 48201 },	-- Reinforce Light's Purchase — you get one of two quests depending on which camp is up at the time
+						["provider"] = { "n", 126954 },	-- High Exarch Turalyon
+						["coord"] = { 34.4, 57.2, 831 },
+					}),
+					q(47654, {	-- Seat of the Triumvirate: The Crest of Knowledge
+						["sourceQuests"] = { 47220 },	-- A Beacon in the Dark
+						["provider"] = { "n", 128722 },	-- Prophet Velen
+						["coord"] = { 53.1, 48.8, 883 },
+					}),
+					q(48200, {	-- Securing a Foothold
+						["sourceQuests"] = { 48199 },	-- The Burning Heart
+						["provider"] = { "n", 126954 },	-- High Exarch Turalyon
+						["coord"] = { 34.4, 57.2, 831 },
+					}),
+					q(47892, {	-- Storming the Citadel
+						["sourceQuests"] = { 47891 },	-- Dire News
+						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
+						["coord"] = { 40.1, 25.6, 831 },
+					}),
 					q(48912, {	-- Supplying the Antoran Campaign
 						["isWeekly"] = true,
 						["g"] = {
 							i(152097),	-- Lightforged Bulwark
 						},
 					}),
+					q(48199, {	-- The Burning Heart
+						["sourceQuests"] = { 48559 },	-- An Offering of Light
+						["provider"] = { "n", 126307 },	-- Prophet Velen
+						["coord"] = { 40.1, 25.2, 831 },
+					}),
+					q(49014, {	-- The Burning Throne
+						["sourceQuests"] = { 48559 },	-- An Oferring of Light
+						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
+						["coord"] = { 40.1, 25.2, 831 },
+					}),
+					q(47743, {	-- The Child of Light and Shadow
+						["sourceQuests"] = { 47653 },	-- Light's Return
+						["provider"] = { "n", 122378 },	-- High Exarch Turalyon
+						["coord"] = { 42.9, 26.5, 831 },
+					}),
 					q(49445, {	-- The Prime Exchange
+						["sourceQuests"] = { 48440 },	-- Into the Night
 						["provider"] = { "n", 129674 },	-- Maras
+						["coord"] = { 40.4, 64.7, 832 },
+					}),
+					q(47238, {	-- The Seat of the Triumvirate
+						["sourceQuests"] = { 47416 },	-- Shadow of the Triumvirate
+						["provider"] = { "n", 128735 },	-- Prophet Velen
+						["coord"] = { 57.8, 61.5, 883 },
+					}),
+					q(47889, {	-- The Speaker Calls
+						["sourceQuests"] = {
+							47473,	-- Sizing Up the Opposition (Light's Purchase)
+							48929,	-- Sizing Up the Opposition (The Veiled Den)
+						},
+						["provider"] = { "n", 126954 },	-- High Exarch Turalyon
+						["coord"] = { 34.1, 57.1, 831 },
+					}),
+					q(48273, {	-- The Speaker Listens
+						["sourceQuests"] = { 48560 },	-- An Offering of Shadow
+						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
+						["coord"] = { 46.7, 25.0, 883 },
+					}),
+					q(48277, {	-- The Speaker Seeks
+						["sourceQuests"] = { 48272 },	-- Visions of Fear
+						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
+						["coord"] = { 40.1, 25.6, 831 },
+					}),
+					q(47287, {	-- The Vindicaar Matrix Core
+						["sourceQuests"] = { 47743 },	-- Child of Light and Shadow
+						["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
+						["coord"] = { 43.7, 29.2, 831 },
 					}),
 					q(48069, {	-- The Wrench Calls
 						["requireSkill"] = 202,	-- Engineering
 						["sourceQuests"] = { 46941 },	-- The Path Forward
+					}),
+					q(48344, {	-- We Have a Problem
+						["sourceQuests"] = { 48461 },	-- Where They Least Expect It
+						["provider"] = { "n", 124312 },	-- High Exarch Turalyon
+						["coord"] = { 44.9, 24.0, 831 },
+					}),
+					q(48461, {	-- Where They Least Expect It
+						["sourceQuests"] = { 48107 },	-- The Sigil of Awakening
+						["provider"] = { "n", 126408 },	-- Illidan Stormrage
+						["coord"] = { 47.0, 21.7, 831 },
+					}),
+					q(40761, {	-- Whispers from Oronaar
+						["sourceQuests"] = { 47238 },	-- The Seat of the Triumvirate
+						["provider"] = { "n", 121230 },	-- Alleria Windrunner
+						["coord"] = { 58.2, 61.1, 883 },
 					}),
 				}),
 				n(127476, {	-- Scouting Map

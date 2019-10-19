@@ -51,9 +51,16 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14431,	-- The Blackmaw Scar
 				}),
-				q(46177, {	-- A Portal Away -- possibly legacy now that mage tower is unavailable?
+				q(46177, {	-- A Portal Away
 					["provider"] = { "n", 116048 },	-- Joanna
-					["coord"] = { 25.2, 38.0, 76 },
+					["classes"] = {
+						6,	-- Death Knight (Frost)
+						12,	-- Demon Hunter (Havoc)
+						3,	-- Hunter (Survival)
+						4,	-- Rogue (Subtlety)
+						1,	-- Warrior (Arms)
+					},
+					["coord"] = { 25.2, 37.9, 76 },
 					["lvl"] = 110,
 				}),
 				q(14197, {	-- A Quota to Meet
@@ -428,40 +435,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24448,	-- Field Promotion
 				}),
-				q(40112, {	-- Huln's War - Malorne's Favored
-					["sourceQuests"] = { 39983 },	-- Huln's War: The Arrival
-					["coord"] = { 29.5, 39.2, 697 },
-					["lvl"] = 98,
-					["provider"] = { "n", 97891 },	-- Unng Ak
-				}),
-				q(39990, {	-- Huln's War - Reinforcements
-					["sourceQuests"] = { 39988 },	-- Huln's War - Stormrage
-					["coord"] = { 27.8, 51.6, 697 },
-					["lvl"] = 98,
-					["provider"] = { "n", 97892 },	-- Malfurion Stormrage
-				}),
-				q(40388, {	-- Huln's War - Shadowsong
-					["sourceQuests"] = { 39990 },	-- Huln's War - Reinforcements
-					["coord"] = { 27.8, 51.7, 697 },
-					["lvl"] = 98,
-					["provider"] = { "n", 97892 },	-- Malfurion Stormrage
-				}),
-				q(39988, {	-- Huln's War - Stormrage
-					["sourceQuests"] = { 40112 },	-- Huln's War - Malorne's Favored
-					["coord"] = { 27.9, 47.2, 697 },
-					["lvl"] = 98,
-					["provider"] = { "n", 98794 },	-- Eche'ro
-				}),
-				q(39992, {	-- Huln's War - The Nathrezim
-					["sourceQuests"] = { 40388 },	-- Huln's War - Shadowsong
-					["coord"] = { 31.2, 52.4, 697 },
-					["lvl"] = 98,
-					["provider"] = { "n", 97903 },	-- Jarod Shadowsong
-					["g"] = {
-						i(130282),	-- Highmountain Trueshot Cape
-						i(130309),	-- Band of Malorne's Chosen
-					},
-				}),
 				q(14261, {	-- Ice Cold
 					["provider"] = { "n", 37064 },	-- Feno Blastnoggin
 					["coord"] = { 66.5, 19.6, 76 },
@@ -611,16 +584,17 @@ _.Zones =
 					},
 				}),
 				q(44920, {	-- Order of Incantations
-					["provider"] = { "n", 115791 },	-- Joanna
-					["coord"] = { 25.0, 38.6, 76 },
 					["sourceQuest"] = 44915,	-- Professionally Good looking
+					["provider"] = { "n", 115791 },	-- Joanna
 					["classes"] = {
-						1,	-- Warrior
-						3,	-- Hunter
-						4,	-- Rogue
-						6,	-- Death Knight
-						12,	-- Demon Hunter
+						6,	-- Death Knight (Frost)
+						12,	-- Demon Hunter (Havoc)
+						3,	-- Hunter (Survival)
+						4,	-- Rogue (Subtlety)
+						1,	-- Warrior (Arms)
 					},
+					["coord"] = { 25.0, 38.6, 76 },
+					["lvl"] = 110,
 				}),
 				q(6804,  {	-- Poisoned Water
 					["u"] = 40,
@@ -656,15 +630,6 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(44915, {	-- Professionally Good Looking
-					["provider"] = { "n", 115791 },	-- Joanna
-					["coord"] = { 25.0, 38.6, 76 },
-					["classes"] = {
-						1,	-- Warrior
-						3,	-- Hunter
-						4,	-- Rogue
-						6,	-- Death Knight
-						12,	-- Demon Hunter
-					},
 					["sourceQuests"] = {
 						44914,	-- Arms: The Thieving Apprentice
 						47046,	-- Frost: The Thieving Apprentice
@@ -672,6 +637,16 @@ _.Zones =
 						47048,	-- Subtlety: The Thieving Apprentice
 						47047,	-- Survival: The Thieving Apprentice
 					},
+					["provider"] = { "n", 115791 },	-- Joanna
+					["classes"] = {
+						6,	-- Death Knight (Frost)
+						12,	-- Demon Hunter (Havoc)
+						3,	-- Hunter (Survival)
+						4,	-- Rogue (Subtlety)
+						1,	-- Warrior (Arms)
+					},
+					["coord"] = { 25.0, 38.6, 76 },
+					["lvl"] = 110,
 				}),
 				q(24452, {	-- Profitability Scouting
 					["provider"] = { "n", 36749 },	-- Commander Molotov
@@ -902,16 +877,16 @@ _.Zones =
 					["sourceQuest"] = 14130,	-- Friends Come in All Colors
 				}),
 				q(44924, {	-- The Archmage Accosted
-					["provider"] = { "n", 115791 },	-- Joanna
-					["coord"] = { 25.0, 38.6, 76 },
 					["sourceQuest"] = 44920,	-- Order of Incantations
 					["classes"] = {
-						1,	-- Warrior
-						3,	-- Hunter
-						4,	-- Rogue
-						6,	-- Death Knight
-						12,	-- Demon Hunter
+						6,	-- Death Knight (Frost)
+						12,	-- Demon Hunter (Havoc)
+						3,	-- Hunter (Survival)
+						4,	-- Rogue (Subtlety)
+						1,	-- Warrior (Arms)
 					},
+					["coord"] = { 25.1, 38.5, 76 },
+					["lvl"] = 110,
 				}),
 				q(14435, {	-- The Blackmaw Doublecross
 					["provider"] = { "n", 8586 },	-- Haggrum Bloodfist

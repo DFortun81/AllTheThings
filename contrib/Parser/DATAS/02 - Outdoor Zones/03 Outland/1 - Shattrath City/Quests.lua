@@ -172,6 +172,7 @@ _.Zones =
 				q(10550, {	-- The Bundle of Bloodthistle
 					["provider"] = { "n", 21411 },	-- Tobias the Filth Gorger
 					["sourceQuests"] = { 10547 },	-- Of Thistleheads and Eggs...
+					["coord"] = { 63.8, 69.7, 111 },
 				}),
 				q(10251, {	-- The Master's Grand Design?
 					["provider"] = { "n", 19720 },	-- "Dirty" Larry

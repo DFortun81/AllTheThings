@@ -212,11 +212,18 @@ _.Zones =
 					["provider"] = { "n", 106915 },	-- Marius Felbane
 				}),
 				q(45127, {	-- Fel-Crossed Lovers
-				--	this is an artifact quest, but i'm not sure for which one(s).
+					["provider"] = { "n", 116189 },	-- Levia Laurence
+					["classes"] = {
+						11,	-- Druid (Feral)
+						4,	-- Rogue (Outlaw)
+						6,	-- Death Knight (Unholy)
+						1,	-- Warrior (Fury)
+						8,	-- Mage (Fire)
+						7,	-- Shaman (Elemental)
+					},
 					["coord"] = { 25.6, 57.6, 630 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
-					["provider"] = { "n", 116189 },	-- Levia Laurence
 				}),
 				q(37656, {	-- Fel Machinations
 					["sourceQuests"] = {

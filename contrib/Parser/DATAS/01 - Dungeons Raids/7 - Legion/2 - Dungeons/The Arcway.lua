@@ -9,12 +9,12 @@ _.Instances = { tier(7, {	-- Legion
 		["groups"] = {
 			n(-34, {	-- World Quests
 				q(43640, {	-- The Arcway: Creeping Suspicions
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["collectible"] = false,
 				}),
 				q(43641, {	-- The Arcway: Wandering Plague
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["collectible"] = false,
 				}),
 			}),
 			n(111057, {	-- The Rat King

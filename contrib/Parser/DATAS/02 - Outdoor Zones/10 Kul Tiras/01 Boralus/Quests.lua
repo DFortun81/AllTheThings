@@ -4,10 +4,10 @@
 
 _.Zones =
 {
-	m(876, { 	-- Kul'Tiras
+	m(876, {	-- Kul'Tiras
 		m(1161, {	-- Boralus
 			n(-17, {	-- Quests
-				n(-9, {	-- PvP
+				n(-9, {		-- PvP
 					["lvl"] = 120,
 					["g"] = {
 						q(52944, { 	-- Call to Arms: Drustvar
@@ -63,6 +63,16 @@ _.Zones =
 								i(163604, {	-- Net-O-Matic 5000
 									["f"] = 55,	-- Consumable
 								}),
+							},
+						}),
+						q(56499, {	-- Storming the Battlefields!
+							["provider"] = { "n", 143560 },	-- Marshal Gabriel
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 56.4, 25.8, 1161 },
+							["g"] = {
+								i(168920),	-- Azerite-Encrusted Timequartz (Rank 1)
+								i(168442),	-- Roiling Blood of the Vanquished (Rank 1)
+								i(168578),	-- Sphere of Suppressed Force (Rank 1)
 							},
 						}),
 					},

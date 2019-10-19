@@ -53,9 +53,8 @@ _.Zones =
 							o(213967, {		-- Blade of the Prime
 								["coords"] = {
 									{ 66.3, 66.5, 422 },	-- Blade
-									{ 66.74, 63.76, 422 },	-- Cave
+									{ 66.7, 63.7, 422 },	-- Cave
 								},
-								["description"] = "Enter cave at 66.74, 63.76.",
 								["questID"] = 31433,
 								["g"] = {
 									i(86522),	-- Blade of the Prime
@@ -681,11 +680,11 @@ _.Zones =
 						["sourceQuests"] = { 31003 },	-- Psycho Mantid
 					}),
 					q(31083, {	-- Promises of Gold
+						["provider"] = { "n", 62767 },	-- Gokk'lok
+						["coord"] = { 27.4, 16.2, 422 },
 						["g"] = {
 							i(88417),	-- Gokk'lok's Shell
 						},
-						["provider"] = { "n", 62767 },	-- Gokk'lok
-						["description"] = "Found underwater in the north-east of the zone.",
 					}),
 					q(31003, {	-- Psycho Mantid
 						["provider"] = { "n", 62166 },	-- Marksman Lann
@@ -1062,8 +1061,7 @@ _.Zones =
 						},
 					}),
 					n(50836, {	-- Ik-Ik the Nimble
-						["coord"] = { 55.4, 63.4, 422 },
-						["description"] = "Burrow entrance at 54.9, 65.7",
+						["coord"] = { 54.9, 65.7, 422 },
 						["g"] = {
 							i(87634),	-- Mazu's Robe
 							i(87630),	-- Chestpiece of Twinkling Stars

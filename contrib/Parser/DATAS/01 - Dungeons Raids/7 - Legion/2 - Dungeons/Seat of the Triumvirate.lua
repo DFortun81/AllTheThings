@@ -109,20 +109,20 @@ _.Instances = { tier(7, {	-- Legion
 			}),
 			n(-34, {	-- World Quests
 				q(48959, {	-- Seat of the Triumvirate: Dark Fissures
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["collectible"] = false,
 				}),
 				q(48953, {	-- Seat of the Triumvirate: Darkcaller
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["collectible"] = false,
 				}),
 				q(48985, {	-- Seat of the Triumvirate: Twilight-Harbinger Tharuul
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["collectible"] = false,
 				}),
 				q(48957, {	-- Seat of the Triumvirate: Void-Blade Zedaat
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["collectible"] = false,
 				}),
 			}),
 			d(2, {	-- Heroic

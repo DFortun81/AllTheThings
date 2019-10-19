@@ -223,7 +223,6 @@ _.Zones =
 						673,	-- Cryptic Hollow
 						678,	-- Second Floor
 						679,	-- Third Floor
-						721,	-- Mardum, the Shattered Abyss
 					},
 					["g"] = {
 						n(-17, {	-- Quests

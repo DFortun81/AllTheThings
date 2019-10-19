@@ -51,6 +51,7 @@ _.Zones =
 					i(150963),	-- Garothi Sabatons
 				}),
 				n(-384, {	-- Neck
+					i(150990),	-- Krokul-Bone Pendant
 					i(136733),	-- Warden Pendant
 				}),
 				--[[

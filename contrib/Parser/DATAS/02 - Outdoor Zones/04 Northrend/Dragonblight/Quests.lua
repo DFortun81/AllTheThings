@@ -478,7 +478,11 @@ _.Zones =
 					crit(8, {	--Oacha'noa
 						q(11958, {	-- Let Nothing Go To Waste
 							["provider"] = { "n", 26194 },	-- Elder Ko'nani
-							["sourceQuests"] = {12117},
+							["description"] = "The breadcrumb quests have collectible rewards. Make sure to do one of them before picking up this quest!",
+							["sourceQuests"] = {
+								12117,	-- Travel to Mo'aki Harbor (Borean Tundra)
+								12118,	-- Travel to Mo'aki Harbor (Howling Fjord)
+							},
 						}),
 						q(11959, {	-- Slay Loguhn
 							["g"] = {
@@ -757,6 +761,10 @@ _.Zones =
 						i(44661),	-- Wyrmrest Necklace of Power
 					},
 				}),
+				q(12189, {	-- Imbeciles Abound! (Note: triggered when turning in "Give it a Name" in howling fjord)
+					["provider"] = { "n", 26505 },	-- Doctor Sintar Malefious
+					["races"] = HORDE_ONLY,
+				}),
 				q(12789, {	-- Into the Breach!
 					["provider"] = { "n", 28228 },	-- Crusader Valus
 					["sourceQuest"] = 12545,	-- The Cleansing of Jintha'kalar
@@ -1020,8 +1028,12 @@ _.Zones =
 					},
 				}),
 				q(12188, {	-- The Forsaken Blight and You: How Not to Die [Horde]
-					["provider"] = { "n", 27172 },	-- Chief Plaguebringer Middleton
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 27172 },	-- Chief Plaguebringer Middleton
+					["sourceQuests"] = {
+						12189,	-- Imbeciles Abound!
+						12182,	-- To Venomspite!
+					},
 					["g"] = {
 						i(37963),	-- Wastewind Handwraps
 						i(38005),	-- Spiritfury Bands
@@ -1112,6 +1124,12 @@ _.Zones =
 						i(38046),	-- Wyrmfire Gloves
 						i(38108),	-- Conscript's Ruby Waistguard
 					},
+				}),
+				q(12487, {	-- To Conquest Hold, But Be Careful! [Horde]
+					["coord"] = { 76.8, 63.2, 115 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 27243 },	-- High Executor Wroth
+					["isBreadcrumb"] = true,
 				}),
 				q(12440, {	-- To Stars' Rest! [Alliance]
 					["provider"] = { "n", 26878 },	-- Rodney Wells
@@ -1306,9 +1324,6 @@ _.Zones =
 				-- q(12448, {	-- Heated Battle [Horde]
 				-- 	["provider"] = { "n", 27763 },	-- Vargastrasz
 				-- }),
-				-- q(12189, {	-- Imbeciles Abound! [Horde]
-				-- 	["provider"] = { "n", 26505 },	-- Doctor Sintar Malefious
-				-- }),
 				-- q(12102, {	-- In Search of the Ruby Lilac [Horde]
 				-- 	["provider"] = { "n", 26505 },	-- Doctor Sintar Malefious
 				-- }),
@@ -1421,9 +1436,6 @@ _.Zones =
 				-- }),
 				-- q(12283, {	-- The Truth Will Out [Horde]
 				-- 	["provider"] = { "n", 27350 },	-- Agent Skully
-				-- }),
-				-- q(12487, {	-- To Conquest Hold, But Be Careful! [Horde]
-				-- 	["provider"] = { "n", 27243 },	-- High Executor Wroth
 				-- }),
 				-- q(12095, {	-- To Dragon's Fall [Horde]
 				-- 	["provider"] = { "n", 26618 },	-- Captain Gort

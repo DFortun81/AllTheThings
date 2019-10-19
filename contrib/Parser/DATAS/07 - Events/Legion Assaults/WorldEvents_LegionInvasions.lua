@@ -7,14 +7,14 @@ _.WorldEvents =
 		["achievementID"] = 11544,	-- Defender of the Broken Isles
 		["maps"] = { 641, 650, 634, 630 },
 		["groups"] = {
-			{
-				["vignetteID"] = 47063,
+			v(47063, {	-- Tracking Quest
 				["crs"] = {
 					118180,	-- Dread Vizier Gra'tork <Legion Commander>
 					119579,	-- Fel Commander Erixtol
 					118840,	-- Lord Commander Alexius
 					118975,	-- Xeritas
 				},
+				["isWorldQuest"] = true,
 				["repeatable"] = true,
 				["maps"] = {
 					619,	-- Stormheim Invasion Scenario
@@ -40,7 +40,7 @@ _.WorldEvents =
 					{"select", "itemID", 147223},	-- Dauntless Trinket
 					{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 				},
-				["groups"] = {
+				["g"] = {
 					i(139158),	-- Battle Mace of the Niskaran Guard
 					i(139163),	-- Star of Niskara
 					i(138762),	-- Niskaran Morning Star
@@ -55,7 +55,66 @@ _.WorldEvents =
 					i(139165),	-- Bloodseeker's Bulwark
 					i(139166),	-- Soulstealer's Barrier
 				},
-			},
+			}),
+			n(-17, {	-- Quests
+				q(46205, {	-- A Conduit No More
+					["sourceQuests"] = { 45795 },	-- Presence of Power
+					["repeatable"] = true,
+					["provider"] = { "n", 117774 }, -- Prince Farondis
+				}),
+				q(45838, {	-- Assault on Azsuna
+					["repeatable"] = true,
+				}),
+				q(45840, {	-- Assault on Highmountain
+					["repeatable"] = true,
+				}),
+				q(45839, {	-- Assault on Stormheim
+					["repeatable"] = true,
+				}),
+				q(45812, {	-- Assault on Val'sharah
+					["repeatable"] = true,
+				}),
+				q(46199, {	-- Battle for Azsuna
+					["sourceQuests"] = { 46205 },	-- A Conduit No More
+					["repeatable"] = true,
+					["provider"] = { "n", 119002 },	-- Prince Farondis
+				}),
+				q(46182, {	-- Battle for Highmountain
+					["sourceQuests"] = { 45572 },	-- Holding Our Ground
+					["repeatable"] = true,
+					["provider"] = { "n", 119676 },	-- Lasan Skyhorn
+				}),
+				q(45856, {	-- Battle for Val'sharah
+					["sourceQuests"] = { 44789 },	-- Holding the Ramparts
+					["repeatable"] = true,
+					["provider"] = { "n", 118250 },	-- Commander Jarod Shadowsong
+				}),
+				q(46110, {	-- Battle for Stormheim
+					["sourceQuests"] = { 45406 },	-- The Storm's Fury
+					["repeatable"] = true,
+					["provider"] = { "n", 118778 },	-- Val'kyr of Odyn
+				}),
+				q(45572, {	-- Holding Our Ground
+					["sourceQuests"] = { 45840 },	-- Assault on Highmountain
+					["repeatable"] = true,
+					["provider"] = { "n", 119944 },	-- Lasan Skyhorn
+				}),
+				q(44789, {	-- Holding the Ramparts
+					["sourceQuests"] = { 45812 },	-- Assault on Val'sharah
+					["repeatable"] = true,
+					["provider"] = { "n", 118183 },	-- Commander Jarod Shadowsong
+				}),
+				q(45795, {	-- Presence of Power
+					["sourceQuests"] = { 45838 },	-- Assault on Azsuna
+					["repeatable"] = true,
+					["provider"] = { "n", 118942 },	-- Prince Farondis
+				}),
+				q(45406, {	-- The Storm's Fury
+					["sourceQuests"] = { 45839 },	-- Assault on Stormheim
+					["repeatable"] = true,
+					["provider"] = { "n", 116868 },	-- Vethir
+				}),
+			}),
 			n(-34, { 	-- World Quests
 				i(146766),  -- Nethercaller Cloak
 				i(146786),	-- Vileweave Cap

@@ -28,6 +28,14 @@ _.Zones =
 					["coord"] = { 30.5, 50.9, 525 },
 					["description"] = "Loot the falling brute at the top of Mor'dul Tower.",
 				}),
+				n(74574, {	-- Bladespire Primalist
+					["description"] = "Loot the cowering ogre at the top of Mor'dul Tower.",
+					["questID"] = 33438,
+					["coord"] = { 30.3, 51.1, 525 },
+					["g"] = {
+						i(107662),	-- Primalist's Prismatic Pendant
+					},
+				}),
 				o(230252, {	-- Burning Pearl
 					["questID"] = 34520,
 					["coord"] = { 42.1, 19.3, 525 },

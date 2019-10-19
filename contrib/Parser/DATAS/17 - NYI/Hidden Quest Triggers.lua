@@ -18,6 +18,7 @@ _.NeverImplemented =
 		q(48674),	-- Lockout Tracking - Normal - Islands. Possibly used in multiple situations
 		q(54740),	-- [DNT] REUSE ME
 		q(57917),	-- [DNT] Test - JAM
+		q(8274),	-- Test Kill Quest - triggered after The Conquest Pit: Final Showdown (12431)
 		
 		-------------------
 		--    VARIOUS    --
@@ -32,6 +33,7 @@ _.NeverImplemented =
 		q(42878),	-- Tome of Illusions - Secrets of the Shado-Pan
 		q(42879),	-- Tome of Illusions - Draenor
 		q(42943),	-- Illusion - Frostbrand
+		q(45435),	-- First Win of the Day (Random BG)
 		
 		-- Events/Holidays
 		q(11320),	-- [NYI] Now this is Ram Racing... Almost. (Brewfest)
@@ -67,6 +69,7 @@ _.NeverImplemented =
 		---   CLASSIC   ---
 		-------------------
 	--	QUESTING / LEVELING
+		q(9611),	-- Azuremyst: aa - A - Quest Flag 000 — triggered after healing the NPC/killing the mob before you can pick up "A Hearty Thanks!" on Azuremyst Isle
 		q(27224),	-- Andorhal Phase Flag — Western Plaguelands — triggers during "The Depravity of the Forsaken"
 		q(25040),	-- FLAG - Worgen Attacked — Tirisfal Glades — attacked by a worgen during "Darkhound Pounding" to trigger the "Escaped From Gilneas" quest
 		q(28855),	-- Northern Stranglethorn 4.x: PRK - E - Just Hatched FLAG (Triggers when you collect the 7th "Jungle Remedy" during the Bad Medicine quest. A Lashtail Hatchling will start following you)
@@ -109,6 +112,7 @@ _.NeverImplemented =
 		-------------------
 	--	QUESTING / LEVELING
 		q(10454),	-- Hellfire Peninsula - Flag: OFF THE RAILS. Triggered just after turning in Forward Base: Reaver's Fall as horde
+		q(11517),	-- Report to Nasuun — looks like an unused version of #11534 (triggers when you turn it in, but has no data on wowhead)
 	
 	--	DUNGEONS
 		q(35544),	-- Auchinai Crypts normal completion
@@ -147,7 +151,7 @@ _.NeverImplemented =
 		-------------------
 		--     WOTLK     --
 		-------------------
-		
+		-- dungeons
 		q(35489),	-- Ahn'Kahet: The Old Kingdom normal completion
 		q(35490),	-- Ahn'Kahet: The Old Kingdom heroic completion
 		q(35493),	-- Ahn'Kahet: The Old Kingdom bonus objective completed (kill Amanitar, heroic only)
@@ -184,6 +188,8 @@ _.NeverImplemented =
 		q(35449),	-- Utgarde Pinnacle normal completion
 		q(35453),	-- Utgarde Pinnacle heroic completion
 		
+		-- Zones
+		q(12485),	-- Howling Fjord - triggers during "The Echo of Ymiron" when you see the RP between two vrykul in Wyrmskull Village
 		
 		-------------------
 		--   CATACLYSM   --
@@ -595,17 +601,79 @@ _.NeverImplemented =
 		q(44382),	-- Vengeance Chosen — chose to pursue Vengeance artifact while on quest 44383, "In Pursuit of Power"
 		q(48570),	-- Antorus, The Burning Throne - Triggers when the door opens to Kin'garoth
 		q(40612),	-- 7.0 Highmountain - Vignette - Amateur Hunters - Tracking Quest Credit - See Treasure (JAP) - NYI. Triggered after killing Irewing during Scout It Out
-		q(46775),	-- Campaign Cooldown - triggers during the legionfall campaign
+		q(46775),	-- Campaign Cooldown - triggers after turning in "Champions of Legionfall" during the legionfall campaign
 		q(47133),	-- Rare Mob Daily Bonus. Triggered after killing Doombringer Zar'thoz. Possible killID?
+		q(48974),	-- Paragon of the Army of the Light — looks like this is an unused version and 48977 is the one that pops in-game
+		q(44455),	-- Downfall tracking — in Suramar, possibly tied to a Demon Hunter artifact?
+		q(41694),	-- World Quests Available — triggers when turning in "Uniting the Isles," along with the original "have all friendly reps" and present "just be 110" versions
+		q(42117),	-- Tracking Quest: Chapter 3 Completed — triggered when turning in "two worthies" after recruiting Belath Dawnblade and Matron Mother Malevolence on DH
+		q(46735),	-- Contribute to Command Center — during "Begin Construction" quest, not sure if that matters
+		q(46277),	-- Contribute to Mage Tower
+		q(46736),	-- Contribute to Nether Disruptor
+		q(46751),	-- Tracking Quest — triggered when turning in "A Found Memento" (#46268)
+		q(47869),	-- triggered when turning in "Light's Exodus," no info in wowhead
+		q(48668),	-- Lightforged Beacon: City Center — triggers during the cutscene while on "Into the Night"
+		q(47888),	-- triggered when turning in "Alone in the Abyss," no info on wowhead
+		q(48451),	-- Light's Judgment first time tracking quest?
+		q(48858),	-- Light's Judgment active tracking quest?
+		q(48449),	-- Lightforged Warframe first time tracking quest?
+		q(48859),	-- Lightforged Warframe active tracking quest?
+		q(48450),	-- Fel Heart of Argus first time tracking quest?
+		q(48860),	-- Fel Heart of Argus active tracking quest?
+		q(48450),	-- Shroud of Arcane Echoes first time tracking quest?
+		q(48579),	-- Shroud of Arcane Echoes active tracking quest?
+		q(46808),	-- Ship - Highmountain — part of a Highmountain invasion.  i refreshed after killing the NPC for "Holding Our Ground" and this quest popped
+		q(47194),	-- Battle for Highmountain — popped alongside the normal "Battle for Highmountain" final invasion quest.  possibly first-time quest?
+		q(47195),	-- Battle for Stormheim — same as above, first time i did the Stormheim invasion on that character
+		q(48281),	-- getting into the Lightforged Warframe during Dawn of Justice
+		q(43746),	-- Currency Treasure - Moon Guard — looting Shimmering Ancient Mana Cluster (?) at (41.9, 19.2) in Suramar
+		q(44602),	-- Tracking Quest: Preparations for Invasion 1 — completing first mission on DH class campaign quest "Preparations for Invasion"
+		q(44604),	-- Tracking Quest: Preparations for Invasion 2
+		q(44605),	-- Tracking Quest: Preparations for Invasion 3
+		q(44606),	-- Tracking Quest: Preparations for Invasion 4
+		q(44607),	-- Tracking Quest: Preparations for Invasion 5
+		q(49161),	-- triggered when turning in #48461, "Where They Least Expect It"
+		q(42118),	-- Tracking Quest: Chapter 4 Completed — finished order hall campaign on DH
+		q(45117),	-- TRACKING — triggered when returning to the Fel Hammer while on "Defense of the Fel Hammer"
+		q(46176),	-- triggered when turning in #44924, "The Archmage Accosted," in azshara on DH
+		q(45853),	-- Melee DPS Trait Complete — triggered when raising weapon during "A Gift From the Six," #45865, on havoc DH
+		q(45518),	-- First Aid Shop Searched — triggered after searching first aid shop during "Confirming Suspicions," 45414
+		q(47282),	-- First Aid Shop Searched — triggered after searching first aid shop during "Confirming Suspicions," 45414
+		q(46321),	-- Krasus Landing Searched — triggered when finding velen during "Confirming Suspicions," 45414
+		q(45855),	-- Tank Trait Complete — triggered when raising weapon during "A Gift From the Six," #45863, on vengeance DH
 		
 	-- World Boss
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
-		q(44502),	-- Calamir Kill ID
-		q(44506),	-- Levantus Kill ID
-		q(44901),	-- Levantus Bonus Roll
-		q(47086),	-- Malificus Kill ID
+	--	q(),	-- Ana-Mouz killID
+	--	q(),	-- Ana-Mouz bonus roll
+	--	q(),	-- Apocron killID
+	--	q(),	-- Apocron bonus roll
+	--	q(),	-- Brutallus killID
+	--	q(),	-- Brutallus bonus roll
+		q(44502),	-- Calamir killID
+	--	q(),	-- Calamir bonus roll
+	--	q(),	-- Drugon the Frostblood 
+	--	q(),	-- Drugon the Frostblood 
+	--	q(),	-- Flotsam killID
+	--	q(),	-- Flotsam bonus roll
+	--	q(),	-- Humongris killID
+	--	q(),	-- Humongris bonus roll
+		q(44506),	-- Levantus killID
+		q(44901),	-- Levantus bonus roll
+		q(47086),	-- Malificus killID
+	--	q(),	-- Malificus bonus roll
 		q(44507),	-- Nazak the Fiend killID
 		q(44902),	-- Nazak the Fiend bonus roll
+		q(44508),	-- Nithogg killID
+		q(44903),	-- Nithogg bonus roll
+	--	q(),	-- Shar'thos killID
+	--	q(),	-- Shar'thos bonus roll
+	--	q(),	-- Si'vash killID
+	--	q(),	-- Si'vash bonus roll
+		q(44510),	-- The Soultakers killID
+		q(44905),	-- The Soultakers bonus roll
+	--	q(),	-- Withered J'im killID
+	--	q(),	-- Withered J'im bonus roll
 		
 	-- Invasions
 		q(47065),	-- Highmountain Invasion / Fel Commander Erixtol Kill
@@ -614,7 +682,6 @@ _.NeverImplemented =
 	--	Invasion points
 	--	secondary quests trigger multiple times throughout the week (aka if you complete it on tuesday and wednesday, both official + secondary quest pop both days).
 	--	secondary quests don't seem to be tied to which boss you kill OR loot (have gotten them when receiving rep tokens, unsullied tokens, blue drops, and even just AP/a grey item).
-		
 		q(48982),	-- Invasion Point: Aurinor
 		q(49099),	-- Invasion Point: Bonich
 		q(49098),	-- Invasion Point: Cen'gar
@@ -640,6 +707,7 @@ _.NeverImplemented =
 		q(49215),	-- triggered upon completing Bonich, but not the official quest.
 		q(49211),	-- triggered upon completing Cen'gar, but not the official quest.
 		q(49214),	-- triggered upon completing Naigtal, but not the official quest.
+		q(48675),	-- Lockout Tracking - Normal - Marsh — triggered on character's first completion of Naigtal
 		q(49212),	-- triggered upon completing Sangua, but not the official quest.
 		q(49210),	-- triggered upon completing Val, but not the official quest.
 		
@@ -651,11 +719,12 @@ _.NeverImplemented =
 		q(42285),	-- Azsuna - Treasure 029 - Nar'thalas 05 - Small — opened a treasure in Nar'thalas Academy near the Tidestone
 		q(42291),	-- Azsuna - Treasure 033 - Oceanus Cove 02 - Small — looted Small Treasure Chest inside Oceanus Cove
 		q(42297),	-- Azsuna - Treasure 039 (Large) - Mountain Top — looted treasure chest near Felwing encounter
+		q(40491),	-- Highmountain - Treasure 084 - Thunder Totem (13.6, 55.4, 750)
+		q(43868),	-- Treasure 033 - City - Lower City Boat — looted treasure chest on boat at (51.8, 82.2, 680)
 		q(38277),	-- Val'shara Treasure: Honey Hive (46.5, 86.3, 641)
 		q(38369),	-- Val'sharah - Treasure 006 - Ravencourt - twh — Small Treasure Chest (39.9, 54.6)
 		q(38387),	-- Val'sharah - Treasure 009 - Sabermaw Bluff (44.9, 82.6, 641)
 		q(39080),	-- Val'sharah - Treasure 032 - Heathrow Manor - twh — Small Treasure Chest inside the cellar of Heathrow Manor
-		q(40491),	-- Highmountain - Treasure 084 - Thunder Totem (13.6, 55.4, 750)
 		q(49264),	-- opening a Void-Seeped Cache in Mac'Aree
 		q(48361),	-- opening a Void-Seeped Cache in Mac'Aree
 		
@@ -686,7 +755,7 @@ _.NeverImplemented =
 	--	Various non-zone bonus objectives
 		q(43483),	-- Fel Annihilation — bonus objective in "In Defense of the Exodar" scenario, unavailable afterwards
 		
-	-- Deaths of Chromie scenario
+	--	Deaths of Chromie scenario
 		q(48032),	-- FLAG - Hyjal Scene Seen - immediately upon entering Hyjal
 		q(47829),	-- FLAG - Hyjal complete - kill the fiery behemoth
 		q(47830),	-- FLAG - Andorhal Complete
@@ -703,6 +772,7 @@ _.NeverImplemented =
 		q(47934),	-- Tracking Quest - kill Dregmar Runebrand
 		q(47937),	-- Tracking Quest - kill Iceshatter
 		q(47935),	-- Tracking Quest - kill Icefist
+		q(47921),	-- Tracking Quest. Triggered after using the cloth ensemble
 
 		-------------------
 		--      BFA      --
@@ -734,6 +804,7 @@ _.NeverImplemented =
 	--	VARIOUS
 		q(54411),	-- triggers when speaking with Zidormi in Darkshore to travel back in time
 		q(58013),	-- Alliance war campaign, triggers when speaking to Anduin while on "This Ain't Mine"
+		q(51722),	-- triggers when completing "Uniting Kul Tiras" (Alliance WQ unlock).  Completing one triggers all 4 WQ unlock quests (main/alt quests for both Alliance and Horde)
 
 
 	--	HONEYBACK HIVE
@@ -790,8 +861,8 @@ _.NeverImplemented =
 					-- Azurethos, The Winged Typhoon Bonus Roll
 		q(53002),	-- Doom's Howl Kill ID
 					-- Doom's Howl Bonus Roll
-					-- Dunegorger Kraulok Kill ID
-					-- Dunegorger Kraulok Bonus Roll
+		q(53000),	-- Dunegorger Kraulok Kill ID
+		q(52265),	-- Dunegorger Kraulok Bonus Roll
 		q(52999),	-- Hailstone Construct Kill ID
 		q(52268),	-- Hailstone Construct Bonus Roll
 		q(54862),	-- Ivus the Decayed Kill ID
@@ -820,20 +891,6 @@ _.NeverImplemented =
 	
 
 	--	TREASURES
-		q(51871),	-- Drustvar repeatable random chest
-		q(51875),	-- Drustvar repeatable random chest
-		q(51878),	-- Drustvar repeatable random chest
-		q(51882),	-- Drustvar repeatable random chest
-		q(51885),	-- Drustvar repeatable random chest
-		q(51896),	-- Drustvar repeatable random chest
-		q(51899),	-- Drustvar repeatable random chest
-		q(51902),	-- Drustvar repeatable random chest
-		q(51907),	-- Drustvar repeatable random chest
-		q(51910),	-- Drustvar repeatable random chest
-		q(51911),	-- Drustvar repeatable random chest
-		q(51912),	-- Drustvar repeatable random chest
-		q(51913),	-- Drustvar repeatable random chest
-		q(51914),	-- Drustvar repeatable random chest
 		q(50855),	-- Nazmir repeatable random chest
 		q(49885),	-- Nazmir repeatable random chest
 		q(50895),	-- Nazmir repeatable random chest
@@ -843,34 +900,6 @@ _.NeverImplemented =
 		q(49913),	-- Nazmir repeatable random chest
 		q(49914),	-- Nazmir repeatable random chest
 		q(49899),	-- Nazmir repeatable random chest
-		q(51184),	-- Stormsong Valley repeatable random chest
-		q(51927),	-- Stormsong Valley repeatable random chest
-		q(51930),	-- Stormsong Valley repeatable random chest
-		q(51935),	-- Stormsong Valley repeatable random chest
-		q(51938),	-- Stormsong Valley repeatable random chest
-		q(51939),	-- Stormsong Valley repeatable random chest
-		q(51940),	-- Stormsong Valley repeatable random chest
-		q(51941),	-- Stormsong Valley repeatable random chest
-		q(51942),	-- Stormsong Valley repeatable random chest
-		q(51943),	-- Stormsong Valley repeatable random chest
-		q(51944),	-- Stormsong Valley repeatable random chest
-		q(51945),	-- Stormsong Valley repeatable random chest
-		q(51946),	-- Stormsong Valley repeatable random chest
-		q(52989),	-- Stormsong Valley repeatable random chest
-		q(48593),	-- Tirigarde Sound repeatable random chest
-		q(48595),	-- Tirigarde Sound repeatable random chest
-		q(48596),	-- Tirigarde Sound repeatable random chest
-		q(48598),	-- Tirigarde Sound repeatable random chest
-		q(48599),	-- Tirigarde Sound repeatable random chest
-		q(48607),	-- Tirigarde Sound repeatable random chest
-		q(48608),	-- Tirigarde Sound repeatable random chest
-		q(48609),	-- Tirigarde Sound repeatable random chest
-		q(48612),	-- Tirigarde Sound repeatable random chest
-		q(48617),	-- Tirigarde Sound repeatable random chest
-		q(48618),	-- Tirigarde Sound repeatable random chest
-		q(48619),	-- Tirigarde Sound repeatable random chest
-		q(48621),	-- Tirigarde Sound repeatable random chest
-		q(50166),	-- Tirigarde Sound repeatable random chest
 		q(50922),	-- Vol'dun repeatable random chest
 		q(50920),	-- Vol'dun repeatable random chest
 		q(51673),	-- Vol'dun repeatable random chest
@@ -892,10 +921,12 @@ _.NeverImplemented =
 		q(54880),	-- Opening a Darkshore chest
 		q(54881),	-- Opening a Darkshore chest
 		q(54911),	-- Opening a Darkshore chest
-		
 		q(53534),	-- when entering The Necropolis for the first time during "The Necropolis"
 		q(49695),	-- immediately after channeling on the drum finishes during "A Tribute For Death"
-		q(49367),	-- when returning to Zo'bal Ruins during "We'll Meet Again"
+		q(49367, {	-- when returning to Zo'bal Ruins during "We'll Meet Again"
+			["isWorldQuest"] = true,	-- without this field, this quest inexplicably shows up in /attwq for some characters
+			["races"] = HORDE_ONLY,	-- presumably, based on the description provided
+		}),
 		q(52294),	-- triggers with Krag'wa after accepting "The Last Witch Doctor of Krag'wa"
 		q(47530),	-- ???? [The Necropolis] (completed after soulbound, but not known)
 		q(47531),	-- triggered when turning in "Krag'wa the Terrible"
@@ -903,8 +934,6 @@ _.NeverImplemented =
 		q(51825),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
 		q(51826),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
 		q(54991),	-- Khaz'gorian Smithing Hammer - Anvil created
-		q(53111),	-- triggered when leaving the mob area of Mildenhall Meadery in Stormsong Valley after completing Bumbles the Bee and first daily of Let's Bee Friends
-		q(53200),	-- triggered when leaving the mob area of Mildenhall Meadery in Stormsong Valley after completing Bumbles the Bee and first daily of Let's Bee Friends
 		q(50950),	-- for using the Incense prior to opening Gift of the Brokenhearted for achievement Treasures of Zuldazar
 		q(50311),	-- for giving Jani the Golden Ravasaur Egg in Zuldazar as part of the Get Hek'd achievement
 		q(50340),	-- for giving Jani the Feathered Viper Scale in Zuldazar as part of the Get Hek'd achievement
@@ -919,18 +948,112 @@ _.NeverImplemented =
 		q(53421),	-- for clicking on Lost Spawn of Krag'wa at { 33.46, 61.54, 863 }, in Nazmir
 		q(53426),	-- for clicking on Lost Spawn of Krag'wa at { 25.68, 40.57, 863 }, in Nazmir
 		q(53423),	-- for clicking on Lost Spawn of Krag'wa at { 28.89, 83.16, 863 }, in Nazmir
-		q(51163),	-- ??? plays during the cutscene when you walk across the bridge north of Brennadam in Stormsong Valley		
-
-	-- Zuldazar
-		q(55259),	-- Triggers after turning 'Sleep, Eat, Repeat' (ID 55258) in to finish the achievement criteria 'Sleep, Eat, Repeat' (3) for How to Train Your Direhorn (ID 13542)
-
-		-- Bonus Objectives
-		q(47527),	-- Rituals of Heresy
-		q(47797),	-- Occupation Hazard
-		q(49315),	-- Dreadpearl Collusion
-		q(49918),	-- Gorilla Gorge
-		q(50178),	-- Trouble in the Rootway
+		q(51163),	-- ??? plays during the cutscene when you walk across the bridge north of Brennadam in Stormsong Valley	
+		q(53202),	-- triggered when turning in #50264, "Free the Farmhands"
 		
+		
+	--	Drustvar
+		-- Bonus Objectives
+		q(48181, {	-- Nooooope
+			["isWorldQuest"] = true,
+		}),
+		q(50959, {	-- Plundering Pirates
+			["isWorldQuest"] = true,
+		}),
+		-- Chests
+		q(51871),	-- Drustvar repeatable random chest
+		q(51875),	-- Drustvar repeatable random chest
+		q(51878),	-- Drustvar repeatable random chest
+		q(51882),	-- Drustvar repeatable random chest
+		q(51885),	-- Drustvar repeatable random chest
+		q(51896),	-- Drustvar repeatable random chest
+		q(51899),	-- Drustvar repeatable random chest
+		q(51902),	-- Drustvar repeatable random chest
+		q(51907),	-- Drustvar repeatable random chest
+		q(51910),	-- Drustvar repeatable random chest
+		q(51911),	-- Drustvar repeatable random chest
+		q(51912),	-- Drustvar repeatable random chest
+		q(51913),	-- Drustvar repeatable random chest
+		q(51914),	-- Drustvar repeatable random chest
+
+
+	--	Stormsong Valley
+		-- Bonus Objectives
+		q(50779, {	-- A Clean Slate
+			["isWorldQuest"] = true,
+		}),
+		q(51534, {	-- The Battle for Brennadam
+			["isWorldQuest"] = true,
+		}),
+		q(50133, {	-- Weed Whacking
+			["isWorldQuest"] = true,
+		}),
+		-- Chests
+		q(51184),	-- Stormsong Valley repeatable random chest
+		q(51927),	-- Stormsong Valley repeatable random chest
+		q(51930),	-- Stormsong Valley repeatable random chest
+		q(51935),	-- Stormsong Valley repeatable random chest
+		q(51938),	-- Stormsong Valley repeatable random chest
+		q(51939),	-- Stormsong Valley repeatable random chest
+		q(51940),	-- Stormsong Valley repeatable random chest
+		q(51941),	-- Stormsong Valley repeatable random chest
+		q(51942),	-- Stormsong Valley repeatable random chest
+		q(51943),	-- Stormsong Valley repeatable random chest
+		q(51944),	-- Stormsong Valley repeatable random chest
+		q(51945),	-- Stormsong Valley repeatable random chest
+		q(51946),	-- Stormsong Valley repeatable random chest
+		q(52989),	-- Stormsong Valley repeatable random chest
+		
+		
+	--	Tiragarde Sound
+		-- Bonus Objectives
+		q(49300, {	-- Creature Corruption
+			["isWorldQuest"] = true,
+		}),
+		q(49739, {	-- Enemies at the Gate
+			["isWorldQuest"] = true,
+		}),
+		q(50009, {	-- Shipwreck Recovery Crew
+			["isWorldQuest"] = true,
+		}),
+		q(49529, {	-- Spring Cleaning
+			["isWorldQuest"] = true,
+		}),
+		-- Chests
+		q(48593),	-- Tiragarde Sound repeatable random chest
+		q(48595),	-- Tiragarde Sound repeatable random chest
+		q(48596),	-- Tiragarde Sound repeatable random chest
+		q(48598),	-- Tiragarde Sound repeatable random chest
+		q(48599),	-- Tiragarde Sound repeatable random chest
+		q(48607),	-- Tiragarde Sound repeatable random chest
+		q(48608),	-- Tiragarde Sound repeatable random chest
+		q(48609),	-- Tiragarde Sound repeatable random chest
+		q(48612),	-- Tiragarde Sound repeatable random chest
+		q(48617),	-- Tiragarde Sound repeatable random chest
+		q(48618),	-- Tiragarde Sound repeatable random chest
+		q(48619),	-- Tiragarde Sound repeatable random chest
+		q(48621),	-- Tiragarde Sound repeatable random chest
+		q(50166),	-- Tiragarde Sound repeatable random chest
+
+
+	--	Zuldazar
+		q(55259),	-- Triggers after turning 'Sleep, Eat, Repeat' (ID 55258) in to finish the achievement criteria 'Sleep, Eat, Repeat' (3) for How to Train Your Direhorn (ID 13542)
+		-- Bonus Objectives
+		q(47527, {	-- Rituals of Heresy
+			["isWorldQuest"] = true,
+		}),
+		q(47797, {	-- Occupation Hazard
+			["isWorldQuest"] = true,
+		}),
+		q(49315, {	-- Dreadpearl Collusion
+			["isWorldQuest"] = true,
+		}),
+		q(49918, {	-- Gorilla Gorge
+			["isWorldQuest"] = true,
+		}),
+		q(50178, {	-- Trouble in the Rootway
+			["isWorldQuest"] = true,
+		}),
 		-- Chests
 		q(50710),	-- Zuldazar repeatable random chest
 		q(50711),	-- Zuldazar repeatable random chest

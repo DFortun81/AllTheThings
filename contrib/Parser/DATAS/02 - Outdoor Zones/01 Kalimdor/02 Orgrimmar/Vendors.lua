@@ -609,7 +609,15 @@ _.Zones =
 							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
 						}),
 						i(122338, {	-- Ancient Heirloom Armor Casing
-							["cost"] = { { "i", 137642, 12 }, },	-- 12x Mark of Honor
+							["cost"] = {
+								{ "i", 23247, 350},		-- 350x Burning Blossom
+								{ "c", 241, 55 },		-- 55x Champion's Seal
+								{ "i", 21100, 40 },		-- 40x Coin of Ancestry
+								{ "c", 515, 100 },		-- 100x Darkmoon Prize Ticket
+								{ "i", 137642, 12 },	-- 12x Mark of Honor
+								{ "c", 1166, 750 },		-- 750x Timewarped Badge
+								{ "i", 33226, 250 },	-- 250x Tricky Treat
+							},
 						}),
 						i(122339, {	-- Ancient Heirloom Scabbard
 							["cost"] = {

@@ -6,15 +6,36 @@ _.Zones =
 	m(619, { 	-- The Broken Isles
 		m(680, {	-- Suramar
 			n(-17, { 	-- Quests
+			--	POSSIBLE TRACKING QUESTS!  commenting out for now, so if they pop we can document exactly what they're for in the NYI file/it'll be more apparent that we don't have any data for them.  if, after someone quests through the zone, they have not been discovered, we can mark them NYI instead.
+			--	q(42649),	-- Arluin Bribe Tracker 2
+			--	q(40975),	-- Arluin Bribe Tracking
+			--	q(42443),	-- Arluin Wants In (Tracking Quest)
+			--	q(40749),	-- A Token of Remembrance
+			--	q(43783),	-- Field Rations
+			--	q(44080),	-- Friend of the Animals
+			--	q(44073),	-- Help from Within
+			--	q(43589),	-- Leyline 03
+			--	q(44732),	-- Morgalash
+			--	q(40346),	-- Pilfered Provisions
+			--	q(40637),	-- Proof of Honor
+			--	q(40129),	-- Repairing the Source
+			--	q(40635),	-- Sashj'tar Slayer
+			--	q(40659),	-- Seeing Stars
+			--	q(40906),	-- Serpents from the Deep
+			--	q(44078),	-- Supporting Cast
+			--	q(40342),	-- Surprise the Sashj'tar
+			--	q(44669),	-- Vicious Whale Shark
+			--	q(40779),	-- We Need Even More Power!
+			--	q(43566),	-- Withered Progress
+
+
+			--	real quests begin here!
 				q(41138),	-- Feeding Shal'Aran
 				q(42230),	-- The Valewalker's Burden
 				q(42488),	-- Thalyssra's Abode
 				q(42833),	-- How It's Made: Arcwinee
 				q(42792),	-- Make Your Mark
 				q(44057),	-- A "Noble" Event
-				q(41173, {	-- A Beacon of Hope
-					i(131717),	-- Starlight Beacon
-				}),
 				q(41916),	-- A Better Future
 				q(42841),	-- A Big Score
 				q(43485, {	-- A Burning Distraction
@@ -40,13 +61,9 @@ _.Zones =
 				q(42520, {	-- A Terrible Loss
 					["classes"] = { 8 },
 				}),
-				q(40749),	-- A Token of Remembrance
 				q(43526),	-- A True Test
 				q(45266),	-- A United Front
 				q(40401),	-- A Way Back In
-				q(41183, {	-- Academic Exploration
-					["requireSkill"] = 794, -- Archaeology
-				}),
 				q(41426),	-- Against Their Will
 				q(40727),	-- All Along the Waterways
 				q(43567),	-- All In
@@ -66,7 +83,6 @@ _.Zones =
 						i(141652),	-- Mana Divining Stone
 					},
 				}),
-				q(41162),	-- And Into the Fel Fire
 				q(44052),	-- And They Will Tremble
 				q(44156),	-- Another Arcan'dor Closes...
 				q(38692),	-- Answering Aggression
@@ -76,10 +92,9 @@ _.Zones =
 				q(45482, {	-- Arcane: Fate of the Tideskorn
 					["classes"] = { 8 },
 				}),
-				q(40725),	-- Arganax
-				q(42649),	-- Arluin Bribe Tracker 2
-				q(40975),	-- Arluin Bribe Tracking
-				q(42443),	-- Arluin Wants In (Tracking Quest)
+				q(40725, {	-- Arganax (not implemented?)
+					["isDaily"] = true,
+				}),
 				q(43569),	-- Arluin's Request
 				q(44862, {	-- Arming the Rebels
 					["races"] = HORDE_ONLY,
@@ -99,9 +114,6 @@ _.Zones =
 				q(40332),	-- Beach Bonfire
 				q(45267),	-- Before the Siege
 				q(40331),	-- Bite of the Sashj'tar
-				q(40857, {	-- Bits and Pieces
-					["requireSkill"] = 794, -- Archaeology
-				}),
 				q(41256),	-- Blast of Spice Fish
 				q(41989),	-- Blood of My Blood
 				q(40125),	-- Branch of the Arcan'dor
@@ -114,34 +126,41 @@ _.Zones =
 				q(44670),	-- Broodmother Lizax
 				q(40364),	-- Bubble Trouble
 				q(44636),	-- Building an Army
-				q(40763),	-- Casual Redistribution
-				q(46048),	-- Champion: Nighthuntress Syrenne
+				q(40763, {	-- Casual Redistribution
+					["u"] = 1,	-- Never Available — likely replaced with #40730 "Redistribution"
+				}),
+				q(46048, {	-- Champion: Nighthuntress Syrenne
+					["classes"] = { 3 },	-- Hunter
+				}),
 				q(44827),	-- Citizens' Army
 				q(40798),	-- Cling to Hope
 				q(42224),	-- Cloaked in Moonshade
 				q(40830),	-- Close Enough
 				q(45261),	-- Continuing the Cure
-				q(41157),	-- Corrupted Studies
 				q(43314),	-- Court of Stars: Beware the Fury of a Patient Elf
 				q(43524),	-- Court of Stars: Literary Perfection
 				q(38695),	-- Crackdown
-				q(40973),	-- Creating Time
+				q(40973, {	-- Creating Time
+					["u"] = 40,	-- Legacy Quests
+				}),
 				q(44843, {	-- Crystal Clearing
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(45160),	-- Cubic Currents
-				q(41166),	-- Dark Secrets
-				q(40158),	-- Darkheart Thicket: Demons Be Different
-				q(38799),	-- Darkheart Thicket: Nal'ryssa's Sisters
-				q(41169),	-- Darkheart Thicket: Through the Fog
+				q(41169, {	-- Darkheart Thicket: Through the Fog
+					["requireSkill"] = 794,	-- Archaeology
+					["isWeekly"] = true,	-- not sure where this quest is actually picked up, so leaving it here for the time being
+				}),
 				q(43315),	-- Death Becomes Him
-				q(41165),	-- Deciphering Demonology
+				q(41165, {	-- Deciphering Demonology
+					["requireSkill"] = 794,	-- Archaeology
+					["isWeekly"] = true,	-- not sure where this quest is actually picked up, so leaving it here for the time being
+				}),
 				q(43792),	-- Degren
-				q(40211),	-- Demon Flesh
-				q(47049),	-- Demonology: Fate of the Tideskorn
-				q(45551),	-- Devastating Effects
-				q(40683),	-- Discovery Requires Experimentation
-				q(44722),	-- Disillusioned Defector
+				q(40683),	-- Discovery Requires Experimentation (not sure if this is a profession quest?)
+				q(44722, {	-- Disillusioned Defector
+					["isBreadcrumb"] = true,
+				}),
 				q(41148),	-- Dispensing Compassion
 				q(42396),	-- Do The Thing!
 				q(43812, {	-- Down to Business
@@ -150,22 +169,17 @@ _.Zones =
 				q(43810, {	-- Down to Business
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(44455),	-- Downfall Tracking
 				q(41410),	-- Dry Powder
 				q(45263),	-- Eating Before the Meeting
-				q(41172),	-- Echoes of My Ancestors
 				q(43310),	-- Either With Us
 				q(41146),	-- Elegant Design
 				q(41494),	-- Eminent Grow-main
 				q(40315),	-- End of the Line
-				q(47050),	-- Enhancement: Fate of the Tideskorn
 				q(43563),	-- Ephemeral Manastorm Projector
 				q(44752),	-- Essence Triangulation
 				q(41465),	-- Estate Jewelry: A Braggart's Brooch
 				q(41466),	-- Estate Jewelry: Haute Claw-ture
 				q(45066),	-- Experimental Instability
-				q(41178),	-- Explosive Results
-				q(40154),	-- Eye of Azshara: The Scales of Serpentrix
 				q(41137),	-- Fall of the King
 				q(40883),	-- Fate of the Guard
 				q(45372, {	-- Fate of the Nightborne
@@ -176,34 +190,39 @@ _.Zones =
 					},
 				}),
 				q(40321),	-- Feathersong's Redemption
-				q(43106),	-- Feed Oculeth
-				q(43994),	-- Feed Thalyssra
-				q(43995),	-- Feed Valtrois
+				q(43106, {	-- Feed Oculeth
+					["isDaily"] = true,
+				}),
+				q(43994, {	-- Feed Thalyssra
+					["isDaily"] = true,
+				}),
+				q(43995, {	-- Feed Valtrois
+					["isDaily"] = true,
+				}),
 				q(45265),	-- Feeding the Rebellion
 				q(40919),	-- Fel Bent for Leather
-				q(41167),	-- Fel Fragments
 				q(45064),	-- Felborne No More
-				q(45555),	-- Felbound Beasts
+				q(45555, {	-- Felbound Beasts
+					["classes"] = { 3 },	-- Hunter
+				}),
 				q(41452),	-- Feline Frantic
 				q(41575),	-- Felsoul Teleporter Online!
 				q(41474),	-- Fertilizing the Future
-				q(43783),	-- Field Rations
 				q(45317),	-- Fighting on All Fronts
 				q(40469),	-- Final Preparations
 				q(41606),	-- Finding Brytag
 				q(42147),	-- First Contact
 				q(40334),	-- Fisherman's Tonic
-				q(41175),	-- Fit for an Elven Queen
 				q(43564),	-- Flow Control
 				q(43938, {	-- Focusing Our Efforts
 					["races"] = HORDE_ONLY,
 				}),
-				q(41031),	-- For the People
+				q(41031, {	-- For the People
+					["u"] = 1,	-- Never Available	-- replaced with #42859, "A Draught of Hope"
+				}),
 				q(43361),	-- Fragments of Disaster
 				q(40308),	-- Fragments of Memory
-				q(41158),	-- Fragments of the Fjords
 				q(40898),	-- Fresh Meat
-				q(44080),	-- Friend of the Animals
 				q(42487),	-- Friends On the Outside
 				q(44053),	-- Friends With Benefits
 				q(41258),	-- Fruit of the Doom
@@ -226,23 +245,20 @@ _.Zones =
 				q(44736),	-- Gates of the Nighthold
 				q(43562),	-- Giving It All We've Got
 				q(40307),	-- Glaive Circumstances
-				q(41177),	-- Goblin Archaeology
 				q(43992),	-- Gorgroth
 				q(44490),	-- Grimwing the Devourer
 				q(40901),	-- Grimwing the Devourer
 				q(44562),	-- Growing Strong
-				q(40139),	-- Halls of Valor: The Hide of Fenryr
-				q(44073),	-- Help from Within
 				q(43993),	-- Hertha Grimdottir
 				q(43969),	-- Hired Help
 				q(41453),	-- Homeward Bounding
 				q(44725),	-- Hostage Situation
-				q(40213),	-- Hounds Abound
 				q(44691),	-- Hungry Work
 				q(44964),	-- I'll Just Leave This Here
 				q(42840),	-- If Words Don't Work...
-				q(40151),	-- Immaculate Stormscale
-				q(42493),	-- Impending Dooooooom!
+				q(42493, {	-- Impending Dooooooom!
+					["classes"] = { 8 },	-- Mage
+				}),
 				q(43317),	-- In the Bag
 				q(44726),	-- In the Business of Souls
 				q(11964, {	-- Incense for the Summer Scorchlings
@@ -250,39 +266,73 @@ _.Zones =
 				}),
 				q(44569),	-- Inquisitor Volitix
 				q(45271),	-- Insurrection
-				q(45278),	-- Insurrection: An Elven Problem
-				q(45285),	-- Insurrection: As Strong As Our Will
-				q(45287),	-- Insurrection: Breaking the Nighthold
-				q(45280),	-- Insurrection: Crafting War
-				q(45282),	-- Insurrection: Elisande's Retort
-				q(45281),	-- Insurrection: March on Suramar
-				q(45272),	-- Insurrection: Missing Persons
-				q(45277),	-- Insurrection: Waxing Crescent
-				q(42834),	-- Intense Concentration
+				q(45278, {	-- Insurrection: An Elven Problem
+					["isBreadcrumb"] = true,
+				}),
+				q(45285, {	-- Insurrection: As Strong As Our Will
+					["isBreadcrumb"] = true,
+				}),
+				q(45287, {	-- Insurrection: Breaking the Nighthold
+					["isBreadcrumb"] = true,
+				}),
+				q(45280, {	-- Insurrection: Crafting War
+					["isBreadcrumb"] = true,
+				}),
+				q(45282, {	-- Insurrection: Elisande's Retort
+					["isBreadcrumb"] = true,
+				}),
+				q(45281, {	-- Insurrection: March on Suramar
+					["isBreadcrumb"] = true,
+				}),
+				q(45272, {	-- Insurrection: Missing Persons
+					["isBreadcrumb"] = true,
+				}),
+				q(45277, {	-- Insurrection: Waxing Crescent
+					["isBreadcrumb"] = true,
+				}),
+				q(42834, {	-- Intense Concentration
+					["classes"] = { 8 },	-- Mage
+				}),
 				q(42227),	-- Into the Crevasse
-				q(46345),	-- Into the Hornet's Nest
+				q(46345, {	-- Into the Hornet's Nest
+					["classes"] = { 8 },	-- Mage
+				}),
 				q(43531),	-- Into the Nighthold
 				q(41222),	-- Into The Pit!
 				q(40927),	-- Jandvik's Last Hope
 				q(40908),	-- Jarl Come Back Now
-				q(40674),	-- Jars for Jandvik
-				q(42451),	-- Kalec's Plan
-				q(40776),	-- Kazok'thul
-				q(46351),	-- Keep it Secret, Keep it Safe
+				q(40674, {	-- Jars for Jandvik
+					["u"] = 1,	-- Never Available — presumably!  no data on wowhead and all attached items also have no attached data
+				}),
+				q(42451, {	-- Kalec's Plan
+					["classes"] = { 8 },	-- Mage
+				}),
+				q(40776, {	-- Kazok'thul
+					["u"] = 1,	-- Never Available — presumably!  no data on wowhead.  it's also a daily, which is weird af
+				}),
+				q(46351, {	-- Keep it Secret, Keep it Safe
+					["classes"] = { 8 },	-- Mage
+				}),
 				q(41760),	-- Kel'danath's Legacy
-				q(46339),	-- Keymaster Orlis
+				q(46339, {	-- Keymaster Orlis
+					["classes"] = { 8 },	-- Mage
+				}),
 				q(39985),	-- Khadgar's Discovery
 				q(44555),	-- Khadgar's Discovery
-				q(41000),	-- King Forgalash's Burden
+				q(41000, {	-- King Forgalash's Burden
+					["u"] = 1,	-- Never Available
+				}),
 				q(41877),	-- Lady Lunastre
 				q(44675),	-- Lady Rivantas
 				q(40972),	-- Last Stand of the Moon Guard
-				q(40974),	-- Latosius' Trial
+				q(40974, {	-- Latosius' Trial
+					["u"] = 1,	-- Never Available — presumably!  no data on wowhead.
+				}),
 				q(40965),	-- Lay Waste, Lay Mines
 				q(44830),	-- Learning From the Dead
-				q(40137),	-- Leather for Ske'rit
-				q(40121),	-- Ley Line Influences
-				q(43589),	-- Leyline 03
+				q(40121, {	-- Ley Line Influences
+					["u"] = 1,	-- Never Available — presumably!  no data on wowhead.
+				}),
 				q(44492),	-- Leyline Apprentice
 				q(43587),	-- Leyline Feed: Elor'shan
 				q(43592),	-- Leyline Feed: Falanaar Arcway
@@ -305,70 +355,71 @@ _.Zones =
 				q(43318),	-- Ly'leth's Champion
 				q(44489),	-- Lyana Darksorrow
 				q(40297),	-- Lyana Darksorrow
-				q(38804),	-- Lyrelle
-				q(38801),	-- Lyrelle's Right Arm
-				q(40160),	-- Magic Clams
+				q(40160, {	-- Magic Clams
+					["u"] = 1,	-- Never Available
+				}),
 				q(39986),	-- Magic Message
 				q(42829),	-- Make an Entrance
 				q(41480),	-- Managazer
 				q(41309),	-- Mangelrath
 				q(42079),	-- Masquerade
-				q(38969),	-- Master of Silkweave
 				q(43793),	-- Miasu
 				q(41463),	-- Missing Along the Way
 				q(42400, {	-- Missing Mages
 					["sourceQuest"] = 42399,  -- Ready to Work
-					["classes"] = { 3 },
-					
+					["classes"] = { 3 },	-- Hunter
 				}),
 				q(42401, {	-- The Scent of Magic
 					["sourceQuest"] = 42400,  -- Missing Mages
-					["classes"] = { 3 },
+					["classes"] = { 3 },	-- Hunter
 				}),
 				q(42404, {	-- Assisting the Archmage
 					["sourceQuest"] = 42401,  -- The Scent of Magic
-					["classes"] = { 3 },
+					["classes"] = { 3 },	-- Hunter
 				}),			
 				q(44724),	-- Missing Persons
 				q(43808),	-- Moon Guard Teleporter Online!
 				q(42226),	-- Moonshade Holdout
 				q(41485),	-- Moonwhisper Rescue
 				q(44723),	-- More Like Me
-				q(42494),	-- More Than Just A Food Vendor
-				q(44732),	-- Morgalash
+				q(42494, {	-- More Than Just A Food Vendor
+					["classes"] = { 8 },	-- Mage
+				}),
 				q(42828),	-- Moths to a Flame
 				q(44870),	-- Mouths to Feed
 				q(42688),	-- Mrgls of Endearment
-				q(41181),	-- Narrowing Down
 				q(41479),	-- Natural Adversaries
 				q(40748),	-- Network Security
 				q(38720),	-- No Reason to Stay
 				q(45056),	-- Noressa
-				q(42508),	-- Not A Toothless Dragon
+				q(42508, {	-- Not A Toothless Dragon
+					["classes"] = { 8 },	-- Mage
+				}),
 				q(41464),	-- Not Here, Not Now, Not Ever
 				q(40949),	-- Not Their Last Stand
 				q(44834, {	-- Nullified
 					["races"] = HORDE_ONLY,
 				}),
-				q(44768),	-- Nyell's Workshop
+				q(44768, {	-- Nyell's Workshop
+					["classes"] = { 8 },	-- Mage
+				}),
 				q(44873),	-- Oculeth Ex Machina
 				q(40011),	-- Oculeth's Workshop
 				q(44753),	-- On Public Display
-				q(38805),	-- Ondri
-				q(38802),	-- Ondri's Still-Beating Heart
 				q(45260),	-- One Day at a Time
-				q(41027),	-- One Last Breath
+				q(41027, {	-- One Last Breath
+					["u"] = 1,	-- Never Available — replaced with #40334, "Fisherman's Tonic
+				}),
 				q(40746),	-- One of the People
 				q(40694),	-- One Small Step for Magic
-				q(41164),	-- One Step Closer
 				q(43311),	-- Or Against Us
-				q(41161),	-- Out of the Frying Pan
 				q(40971),	-- Overwhelming Distraction
 				q(46799),	-- Paragon of the Nightfallen
 				q(41214),	-- Parts Unknown
 				q(40578),	-- Paying Respects
-				q(37666),	-- Picking a Fight
-				q(40346),	-- Pilfered Provisions
+				q(37666, {	-- Picking a Fight
+					["classes"] = { 4 },	-- Rogue
+				}),
 				q(43968),	-- Pinchshank
 				q(43528),	-- Planning the Assault
 				q(41028),	-- Power Grid
@@ -378,10 +429,7 @@ _.Zones =
 				}),
 				q(40967),	-- Precious Little Left
 				q(43898),	-- Preparing to Move
-				q(41159),	-- Process of Elimination
 				q(41475),	-- Prongs and Fangs
-				q(40637),	-- Proof of Honor
-				q(38968),	-- Proof of Loyalty
 				q(41320),	-- Pry It From Their Cold, Feral Claws
 				q(40370),	-- Purge the Unclean
 				q(40470),	-- Quality of Life
@@ -390,7 +438,9 @@ _.Zones =
 				}),
 				q(41111),	-- Rain Death Upon Them
 				q(44739),	-- Ready for Battle
-				q(45556),	-- Ready to Strike
+				q(45556, {	-- Ready to Strike
+					["classes"] = { 3 },	-- Hunter
+				}),
 				q(40968),	-- Recovering Stolen Power
 				q(44563),	-- Redemption for the Fallen
 				q(41473),	-- Redhoof the Ancient
@@ -399,34 +449,27 @@ _.Zones =
 				q(38694),	-- Regroup
 				q(40907),	-- Removing Obstacles
 				q(43523),	-- Repaid Debt
-				q(40129),	-- Repairing the Source
 				q(45062),	-- Resisting Arrest
-				q(46705),	-- Retaliation
-				q(38794),	-- Rethu's Sacrifice
-				q(47052),	-- Retribution: Fate of the Tideskorn
+				q(46705, {	-- Retaliation
+					["classes"] = { 8 },	-- Mage
+				}),
 				q(41469),	-- Return to Irongrove Retreat
 				q(45238),	-- Return to Karazhan: Cubic Cynosure
-				q(40153),	-- Return to Karazhan: Scales of Legend
 				q(42838),	-- Reversal
-				q(38803),	-- Rin'thissa
-				q(38800),	-- Rin'thissa's Eye
 				q(43313),	-- Rumor Has It
 				q(43813),	-- Sanctum of Order Teleporter Online!
-				q(40635),	-- Sashj'tar Slayer
 				q(43527),	-- Saving the Guard
-				q(40152),	-- Scales for Ske'rit
 				q(40326),	-- Scattered Memories
 				q(40325),	-- Scenes from a Memory
 				q(44832),	-- Scouting the Breach
 				q(42223),	-- Scouting the Crimson Thicket
 				q(41140),	-- Search and Rescue!
-				q(44770),	-- Secrets of the Shal'dorei
-				q(46235),	-- Secured Surroundings
+				q(44770, {	-- Secrets of the Shal'dorei
+					["classes"] = { 8 },	-- Mage
+				}),
 				q(44561),	-- Seed of Hope
-				q(40659),	-- Seeing Stars
 				q(42839),	-- Seek the Unsavory
 				q(40603),	-- Seeking the Valkyra
-				q(40906),	-- Serpents from the Deep
 				q(42229),	-- Shal'Aran
 				q(43582),	-- Shalassic Park
 				q(41098),	-- Shard of Kozak
@@ -436,16 +479,16 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(40745),	-- Shift Change
-				q(41176),	-- Sifting Through the Rubble
 				q(41030),	-- Sigil Reclamation
 				q(44756),	-- Sign of the Dusk Lily
-				q(42395),	-- Signaling Trouble
 				q(38649),	-- Silence in the City
 				q(42836),	-- Silkwing Sabotage
 				q(44727),	-- Smuggled!
 				q(40348),	-- Something in the Water
 				q(44928),	-- Something's Not Quite Right...
-				q(45552),	-- Soothing Wounds
+				q(45552, {	-- Soothing Wounds
+					["classes"] = { 3 },	-- Hunter
+				}),
 				q(40947),	-- Special Delivery
 				q(41499),	-- Squid Out of Water
 				q(45316),	-- Stabilizing Suramar
@@ -454,9 +497,6 @@ _.Zones =
 				q(41032),	-- Stop the Spell Seekers
 				q(41704),	-- Subject 16
 				q(41425),	-- Sunken Foes
-				q(46748),	-- Supplies From the Nightfallen
-				q(44078),	-- Supporting Cast
-				q(40342),	-- Surprise the Sashj'tar
 				q(40956),	-- Survey Says...
 				q(45065),	-- Survey the City
 				q(41216),	-- Survival of the Fittest
@@ -476,9 +516,13 @@ _.Zones =
 				q(44831, {	-- Taking a Promenade
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(45554),	-- Taking Control
+				q(45554, {	-- Taking Control
+					["classes"] = { 3 },	-- Hunter
+				}),
 				q(40010),	-- Tapping the Leylines
-				q(40161),	-- Tapping the Underground
+				q(40161, {	-- Tapping the Underground
+					["u"] = 1,	-- Never Available
+				}),
 				q(44742),	-- Tavernkeeper's Fate
 				q(43809),	-- Tel'anor'eporter Online!
 				q(45067),	-- Telemantic Expanse
@@ -486,51 +530,56 @@ _.Zones =
 				q(41034),	-- Testing the Waters
 				q(42489),	-- Thalyssra's Drawers
 				q(45268),	-- The Advisor and the Arcanist
-				q(41163),	-- The Apocalypse Bringer
 				q(42491),	-- The Arcway: Long Buried Knowledge
 				q(42490),	-- The Arcway: Opening the Arcway
 				q(40675),	-- The Arcway: Rite of the Captain
 				q(42366),	-- The Bigger They Are, The Harder They Fel
 				q(40713),	-- The Black Tome
-				q(43508),	-- The Captive Spymaster
+				q(43508, {	-- The Captive Spymaster
+					["classes"] = { 4 },	-- Rogue
+				}),
 				q(44176),	-- The Conveniences of Home
 				q(40747),	-- The Delicate Art of Telemancy
 				q(43362),	-- The Emerald Nightmare: The Stuff of Dreams
-				q(42521),	-- The Enemy of My Enemy...
-				q(38901),	-- The Felsmiths
+				q(42521, {	-- The Enemy of My Enemy...
+					["classes"] = { 8 },	-- Mage
+				}),
 				q(45063),	-- The Felsoul Experiments
 				q(41478),	-- The Final Blessing
 				q(40319),	-- The Final Ingredient
-				q(38530),	-- The Firmament Stone
-				q(45524),	-- The Forgotten Heir
 				q(42832),	-- The Fruit of Our Efforts
 				q(41878),	-- The Gondolier
 				q(42228),	-- The Hidden City
 				q(41139),	-- The Key Is Around Here Somewhere...
-				q(41185),	-- The Keys to Success
 				q(40306),	-- The Last Chapter
 				q(40266),	-- The Lost Advisor
 				q(41834),	-- The Masks We Wear
 				q(41915),	-- The Master's Legacy
-				q(43182),	-- The Missing Vessel
-				q(45207),	-- The Nightborne Apprentice
-				q(38967),	-- The Nightborne Connection
+				q(45207, {	-- The Nightborne Apprentice
+					["classes"] = { 8 },	-- Mage
+				}),
 				q(40123),	-- The Nightborne Pact
-				q(42421),	-- The Nightfallen
 				q(43532),	-- The Nighthold: Darkness Calls
 				q(43530),	-- The Nighthold: Delusions of Grandeur
 				q(45417),	-- The Nighthold: Lord of the Shadow Council
-				q(45553),	-- The Nighthuntress Beckons
+				q(45553, {	-- The Nighthuntress Beckons
+					["classes"] = { 3 },	-- Hunter
+				}),
 				q(42835),	-- The Old Fashioned Way
 				q(41467),	-- The Only Choice We Can Make
 				q(40008),	-- The Only Way Out is Through
 				q(40970),	-- The Orchestrator of Our Demise
 				q(43309),	-- The Perfect Opportunity
-				q(41168),	-- The Purple Hills of Mac'Aree
-				q(38970),	-- The Queen's Grace Loom
 				q(41170),	-- The Relic Renewed
-				q(41171),	-- The Reliquary Calls
-				q(45486),	-- The Reluctant Queen
+				q(45486, {	-- The Reluctant Queen
+					["classes"] = {
+						8,	-- Mage (Arcane)
+						2,	-- Paladin (Retribution)
+						4,	-- Rogue (Assassination)
+						7,	-- Shaman (Enhancement)
+						9,	-- Warlock (Demonology)
+					},
+				}),
 				q(40964),	-- The Rift Between
 				q(40657),	-- The Road to Fel
 				q(44833),	-- The Seal's Power
@@ -541,19 +590,21 @@ _.Zones =
 				q(43312),	-- Thinly Veiled Threats
 				q(45209),	-- Those Scrying Eyes
 				q(41409),	-- Timing Is Everything
-				q(45523),	-- To Tame the Drekirjar
 				q(40300),	-- Tools of the Trade
 				q(39987),	-- Trail of Echoes
 				q(41230),	-- Trapping Evolved
 				q(44790),	-- Trial by Demonfire
-				q(41184),	-- Tried and True
 				q(44858, {	-- Trolling Them
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(44860, {	-- Trolling Them
 					["races"] = HORDE_ONLY,
 				}),
-				q(41462),	-- Trouble Has Huge Feet
+				q(41462, {	-- Trouble Has Huge Feet
+					["provider"] = { "i", 137179 },	-- Grotesque Ettin Leather
+					["coord"] = { 21.7, 28.7, 680 },
+					["cr"] = 104220,	-- Starving Ettin
+				}),
 				q(40617),	-- Turn Around, Nighteyes
 				q(40336),	-- Turning the Tidemistress
 				q(40368),	-- Turtle Powered
@@ -561,12 +612,8 @@ _.Zones =
 				q(44743, {	-- Tyrande's Command
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(45525),	-- Unanswered Questions
-				q(41182),	-- Uncovering the Orb of Sciallax
-				q(41180),	-- Unspeakable Power
 				q(43525),	-- Vault of the Wardens: Borrowing Without Asking
 				q(44084),	-- Vengeance for Margaux
-				q(44669),	-- Vicious Whale Shark
 				q(44955),	-- Visitor in Shal'Aran
 				q(44040),	-- Vote of Confidence
 				q(41109),	-- Waiting for Revenge
@@ -574,11 +621,7 @@ _.Zones =
 				q(44814),	-- Waning Refuge
 				q(44051),	-- Wasted Potential
 				q(44754),	-- Waxing Crescent
-				q(40779),	-- We Need Even More Power!
 				q(44829),	-- We Need Weapons
-				q(41179),	-- What Once Was Lost
-				q(43566),	-- Withered Progress
-				q(41174),	-- Worth Its Weight
 				q(41702),	-- Written in Stone
 				q(40762),	-- Zealot's Dues
 				q(40009,  {  -- Arcane Thirst

@@ -91,6 +91,14 @@ _.Zones =
 						}),
 					},
 				}),
+				n(14742, {	-- Zap Farflinger <Unbalanced Engineer>
+					["requireSkill"] = 202,	-- Engineering
+					["description"] = "Goblin Engineers can speak to Zap to learn the recipe.",
+					["coord"] = { 59.6, 49.8, 83 },
+					["g"] = {
+						recipe(23486),	-- Dimensional Ripper - Everlook
+					},
+				}),
 			}),
 		}),
 	}),

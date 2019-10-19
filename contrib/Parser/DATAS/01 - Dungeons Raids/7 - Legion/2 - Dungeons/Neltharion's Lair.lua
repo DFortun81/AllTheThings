@@ -70,16 +70,16 @@ _.Instances = { tier(7, {	-- Legion
 			}),
 			n(-34, {	-- World Quests
 				q(41866, {	-- Neltharion's Lair: Blighted Bat
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["collectible"] = false,
 				}),
 				q(41864, {	-- Neltharion's Lair: Crystalline Crusher
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["collectible"] = false,
 				}),
 				q(41865, {	-- Neltharion's Lair: Mother of Stone
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["collectible"] = false,
 				}),
 			}),
 			d(1,  {		-- Normal

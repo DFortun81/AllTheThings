@@ -5600,7 +5600,7 @@ local itemFields = {
 	end,
 	["collectible"] = function(t)
 		return (rawget(t, "s") and app.CollectibleTransmog)
-			or (rawget(t, "questID") and app.CollectibleQuests and not rawget(t, "isBreadcrumb") and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable")))
+			or (rawget(t, "questID") and app.CollectibleQuests and ((not rawget(t, "isBreadcrumb") and not rawget(t, "DisablePartySync")) or app.AccountWideQuests) and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable")))
 			or (rawget(t, "factionID") and app.CollectibleReputations);
 	end,
 	["collected"] = function(t)
@@ -5984,7 +5984,7 @@ local npcFields = {
 		end
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleQuests and rawget(t, "questID") and not rawget(t, "isBreadcrumb") and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"));
+		return app.CollectibleQuests and rawget(t, "questID") and ((not rawget(t, "isBreadcrumb") and not rawget(t, "DisablePartySync")) or app.AccountWideQuests) and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"));
 	end,
 	["collected"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t);
@@ -6049,7 +6049,7 @@ app.BaseObject = {
 		elseif key == "icon" then
 			return L["OBJECT_ID_ICONS"][t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
 		elseif key == "collectible" then
-			return app.CollectibleQuests and t.questID and not t.isBreadcrumb and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"));
+			return app.CollectibleQuests and t.questID and ((not t.isBreadcrumb and not t.DisablePartySync) or app.AccountWideQuests) and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"));
 		elseif key == "repeatable" then
 			return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly") or rawget(t, "isWorldQuest");
 		elseif key == "trackable" then
@@ -6207,7 +6207,7 @@ app.BaseQuest = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "collectible" then
-			return app.CollectibleQuests and not t.isBreadcrumb and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable")) and ((not t.isWorldQuest and not t.repeatable) or app.Settings:GetTooltipSetting("RepeatableFirstTime"));
+			return app.CollectibleQuests and ((not t.isBreadcrumb and not t.DisablePartySync) or app.AccountWideQuests) and (not t.repeatable or app.Settings:GetTooltipSetting("Repeatable")) and ((not t.isWorldQuest and not t.repeatable) or app.Settings:GetTooltipSetting("RepeatableFirstTime"));
 		elseif key == "repeatable" then
 			return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly or t.isWorldQuest;
 		elseif key == "saved" or key == "collected" then
@@ -9039,14 +9039,50 @@ local function RowOnEnter(self)
 			if prereqs and #prereqs > 0 then
 				GameTooltip:AddLine("This quest has an incomplete prerequisite quest that you need to complete first.");
 				for i,prereq in ipairs(prereqs) do
-					GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA));
+					GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or QuestTitleFromID[prereq.questID]));
 				end
 			end
 			if bc and #bc > 0 then
 				GameTooltip:AddLine("This quest has a breadcrumb quest that you may be unable to complete after completing this one.");
 				for i,prereq in ipairs(bc) do
-					GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA));
+					GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or QuestTitleFromID[prereq.questID]));
 				end
+			end
+		end
+		
+		-- Show Breadcrumb information
+		if reference.isBreadcrumb then 
+			GameTooltip:AddLine("This quest is a breadcrumb for another quest."); 
+			if reference.nextQuests then
+				local isBreadcrumbAvailable = true;
+				local nextq = {};
+				for i,nextQuestID in ipairs(reference.nextQuests) do
+					if nextQuestID > 0 then
+						local nqs = SearchForField("questID", nextQuestID);
+						if nqs and #nqs > 0 then
+							local nq = nqs[1];
+							table.insert(nextq, nqs[1]);
+						else
+							table.insert(nextq, {questID = nextQuestID});
+						end
+						if IsQuestFlaggedCompleted(nextQuestID) then
+							isBreadcrumbAvailable = false;
+						end
+					end
+				end
+				if isBreadcrumbAvailable then
+					-- The character is able to accept the breadcrumb quest without Party Sync
+					GameTooltip:AddLine("You may be unable to complete it without Party Sync after completing any of these quests.");
+				else
+					-- The character wont be able to accept this quest without the help of a lower level character using Party Sync
+					GameTooltip:AddLine("You will need to Party Sync with a character that has not completed any of these quests."); 
+				end
+				for i,nquest in ipairs(nextq) do
+					GameTooltip:AddLine("   " .. nquest.questID .. ": " .. (nquest.text or QuestTitleFromID[nquest.questID]));
+				end
+			elseif not reference.DisablePartySync then
+				-- There is no information about next quests that invalidates the breadcrumb
+				GameTooltip:AddLine("You may need to Party Sync with a character that is able to accept this quest."); 
 			end
 		end
 		

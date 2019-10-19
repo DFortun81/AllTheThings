@@ -11,15 +11,15 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			n(-34, {	-- World Quests
 				q(52295, {	-- The MOTHERLODE!!: Elementals on the Payroll
 					["lvl"] = 120,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(52302, {	-- The MOTHERLODE!!: He's Got Really Big Bombs
 					["lvl"] = 120,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(52298, {	-- The MOTHERLODE!!: The Smarts Are In His Horn!
 					["lvl"] = 120,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 			}),
 			d(1, {	-- Normal

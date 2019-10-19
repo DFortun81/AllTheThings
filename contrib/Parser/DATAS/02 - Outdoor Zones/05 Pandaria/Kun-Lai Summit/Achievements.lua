@@ -20,24 +20,25 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(7286, {		-- Finish Them! (Temple of the White Tiger)
-					crit(1),		-- Brewmaster Chani
-					crit(3),		-- Clever Ashyo
-					crit(9),		-- Hackiss
-					crit(10),		-- Healiss
-					crit(5),		-- Kang Bramblestaff
-					crit(4),		-- Ken-Ken
-					crit(2),		-- Lun-Chi
-					crit(7),		-- Master Boom Boom
-					crit(8),		-- Master Windfur
-					crit(11),		-- Tankiss
-					crit(6),		-- The Wrestler
+				ach(7286, {	-- Finish Them! (Temple of the White Tiger)
+					crit(1),	-- Brewmaster Chani
+					crit(2),	-- Lun-Chi
+					crit(3),	-- Clever Ashyo
+					crit(4),	-- Ken-Ken
+					crit(5),	-- Kang Bramblestaff
+					crit(6),	-- The Wrestler
+					crit(7),	-- Master Boom Boom
+					crit(8),	-- Master Windfur
+					crit(9),	-- Hackiss
+					crit(10),	-- Healiss
+					crit(11),	-- Tankiss
 				}),
 				ach(7284, {	-- Is Another Man's Treasure
 					["collectible"] = false,
 					["g"] = {
 						o(213768, {	-- Hozen Warrior Spear
 							["questID"] = 31413,
+							["coord"] = { 51.50, 74.0, 379 },
 							["g"] = {
 								i(86394),	-- Hozen Warrior Spear
 							},
@@ -51,7 +52,7 @@ _.Zones =
 							["modelScale"] = 1.5,
 							["questID"] = 31412,
 							["model"] = "World\\SkillActivated\\Containers\\TreasureChest04.mdx",
-							["coord"] = { 74.6, 74.8 },
+							["coord"] = { 74.6, 74.8 },	-- needs mapID, probably separate map for cave
 							["icon"] = "Interface\\Icons\\inv_misc_treasurechest01a",
 							["g"] = {
 								i(86223),	-- Agile Sprite Cloak
@@ -64,6 +65,10 @@ _.Zones =
 						o(213842, {	-- Stash of Yaungol Weapons
 							["modelScale"] = 3.2,
 							["questID"] = 31421,
+							["coords"] = {
+								{ 70.1, 63.9, 379 },
+								{ 71.1, 62.6, 379 },
+							},
 							["model"] = "World\\Expansion04\\Doodads\\Yakmen\\Yakmen_WeaponRack_01.mdx",
 							["icon"] = "Interface\\Icons\\inv_misc_ornatebox",
 							["g"] = {

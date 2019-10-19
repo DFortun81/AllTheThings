@@ -248,6 +248,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
+					q(51758, {	-- Weapons Shipment
+						["isWorldQuest"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
+					}),
 					q(52389, {	-- Work Order: Contract: Proudmoore Admiralty
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -301,11 +306,23 @@ _.Zones =
 						["provider"] = { "n", 135808 },	-- Provisioner Fray
 						["coord"] = { 67.61, 21.81, 1161 },
 					}),
+					q(50995, {	-- Work Order: Shimmerscale
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = 393,	-- Skinning
+					}),
 					q(52392, {	-- Work Order: Ultramarine Pigment
 						["requireSkill"] = 773,	-- Inscription
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(50984, {	-- Work Order: Winter's Kiss
+						["isWorldQuest"] = true,
+						["requireSkill"] = 182,	-- Herbalism
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(52366, {	-- Work Order: XA-1000 Surface Skimmer
 						["lvl"] = 120,

@@ -717,6 +717,53 @@ namespace ATT
                 }
             }
 
+            // Include in breadcrumb quests the list of next quests that may make the breadcrumb unable to complete
+            foreach (var QuestID in Objects.AllQuests.Keys)
+            {
+                var Quest = Objects.AllQuests[QuestID];
+                if (Quest.TryGetValue("sourceQuests", out List<object> sourceQuests))
+                {
+                    foreach(int source in sourceQuests)
+                    {
+                        Dictionary<string, object> sourceQuest = null;
+                        if (Objects.AllQuests.TryGetValue(source.ToString(), out sourceQuest))
+                        {
+                            sourceQuest.TryGetValue("isBreadcrumb", out bool isBreadcrumb);
+                            if (isBreadcrumb)
+                            {
+                                // Source Quest is a breadcrumb, add current quest into breadcrumb's next quests list
+                                if (sourceQuest.TryGetValue("nextQuests", out List<object> nextQuests))
+                                {
+                                    if (!nextQuests.Contains(Convert.ToInt32(QuestID)))
+                                        nextQuests.Add(Convert.ToInt32(QuestID));
+                                }
+                                else
+                                {
+                                    sourceQuest.Add("nextQuests", new List<object>() { Convert.ToInt32(QuestID) });
+                                }
+                            }
+                        }
+                        else
+                        {
+                            // Source Quest not in database
+                        }
+                    }
+                }
+            }
+
+            foreach (var QuestID in Objects.AllQuests.Keys)
+            {
+                var Quest = Objects.AllQuests[QuestID];
+                Quest.TryGetValue("isBreadcrumb", out bool isBreadcrumb);
+                if (isBreadcrumb)
+                {
+                    if (!Quest.TryGetValue("nextQuests", out List<object> nextQuests))
+                    {
+                        // Breadcrumb quest without next quests information
+                    }
+                }
+            }
+
             var unsortedQuests = new List<object>();
             int maxQuestID = QUESTS.Max(x => x.Key);
             for(int i = 1;i <= maxQuestID; i++)

@@ -38,6 +38,10 @@ _.Zones =
 					["g"] = {
 						o(213960, {		-- Yaungol Fire Carrier
 							["questID"] = 31425,
+							["coords"] = {
+								{ 66.2, 44.7, 388 },
+								{ 66.8, 48.0, 388 },
+							},
 							["g"] = {
 								i(86518),	-- Yaungol Fire Carrier
 							},

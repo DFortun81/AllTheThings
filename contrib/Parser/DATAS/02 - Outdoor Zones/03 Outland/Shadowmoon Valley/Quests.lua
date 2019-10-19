@@ -1076,6 +1076,7 @@ _.Zones =
 				q(10588, {	-- The Cipher of Damnation (awarded "The Cipher of Damnation" criteria)
 					["provider"] = { "n", 21183 },	-- Oronok Torn-heart
 					["sourceQuests"] = { 10523, 10541, 10579 },	-- The Cipher of Damnation, the First/Second/Third Fragment Recovered
+					["coord"] = { 53.8, 23.4, 104 },
 					["g"] = {
 						i(31073),	-- Borak's Reminder
 						i(31071),	-- Grom'tor's Charge

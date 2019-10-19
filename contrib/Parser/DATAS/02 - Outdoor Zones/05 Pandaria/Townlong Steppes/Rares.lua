@@ -25,11 +25,11 @@ _.Zones =
 				n(66467, {	-- G'nathus
 					["coords"] = {
 						{ 17.8, 11.6, 388 },
-						{ 20.4, 7.4, 388 },
-						{ 36.4, 7.8, 388 },
+						{ 20.4, 7.40, 388 },
+						{ 36.4, 7.80, 388 },
 					},
 					["g"] = {
-						i(94595),	-- Spawn of G'nathus
+						i(94595),	-- Spawn of G'nathus (PET!)
 					},
 				}),
 				n(66900, {	-- Huggalon the Heart Watcher

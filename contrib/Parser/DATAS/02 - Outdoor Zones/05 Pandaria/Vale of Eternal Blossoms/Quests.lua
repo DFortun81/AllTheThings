@@ -57,6 +57,18 @@ _.Zones =
 					["isDaily"] = true,
 					["provider"] = { "n", 58962 },	-- Hai-Me Heavyhands
 				}),
+				q(32806, {	-- The King and the Council
+					["providers"] = {
+						{ "n", 61962 },	-- Lorewalker Cho
+						{ "n", 63577 },	-- Lorewalker Cho
+					},
+					["coord"] = { 83.2, 29.6, 390 },
+					["maps"] = { 523 },	-- Dun Morogh (Blood in the Snow scenario)
+					["lvl"] = 90,
+					["g"] = {
+						i(98133),	-- Greater Cache of Treasures
+					},
+				}),
 				q(32815, {	-- The Old Seer
 					["sourceQuest"] = 32807,	-- The Warchief and the Darkness
 					["provider"] = { "n", 61962 },	-- Lorewalker Cho
@@ -65,6 +77,16 @@ _.Zones =
 					["coord"] = { 21.4, 71.5, 390 },
 					["isDaily"] = true,
 					["provider"] = { "n", 58919 },	-- Anji Autumnlight
+				}),
+				q(32807, {	-- The Warchief and the Darkness
+					["sourceQuest"] = 32806,	-- The King and the Council
+					["provider"] = { "n", 61962 },	-- Lorewalker Cho
+					["coord"] = { 83.2, 29.6, 390 },
+					["maps"] = { 520 },	-- Vale of Eternal Blossoms (Dark Heart of Pandaria scenario)
+					["lvl"] = 90,
+					["g"] = {
+						i(98133),	-- Greater Cache of Treasures
+					},
 				}),
 				q(32679, {	-- Thunder Calls (A)
 					["races"] = ALLIANCE_ONLY,

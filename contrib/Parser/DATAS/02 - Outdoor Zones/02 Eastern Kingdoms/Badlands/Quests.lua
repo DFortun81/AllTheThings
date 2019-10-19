@@ -116,7 +116,7 @@ _.Zones =
 				q(27930, {	-- Devastation
 					["coord"] = { 15.9, 33.2, 15 },
 					["description"] = "If you abandon this quest, leave the area then return to the cave.",
-					["sourceQuests"] = { 27898 },	-- Rheastrasza's Gift
+					["sourceQuests"] = { 27858, 27898 },	-- Rheastrasza's Gift (A, H)
 				}),
 				q(27927, {	-- Down to the Scar
 					["isBreadcrumb"] = true,

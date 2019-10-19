@@ -4,20 +4,19 @@
 _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 {
 	holiday(307365, {	-- Day of the Dead
-		{	-- Catrina
-			["npcID"] = 34383,	-- Catrina
+		n(34383, {	-- Catrina
 			["coords"] = {
-				{ 47.88, 55.95, 97 },	-- Azuremyst Isle [Exodar]
-				{ 33.92, 39.34, 627 },	-- Dalaran: Broken Isles
-				{ 34.47, 39.12, 125 },	-- Dalaran: Northrend
-				{ 69.40, 40.54, 89 },	-- Darnassus
-				{ 61.08, 36.94, 27 },	-- Dun Morogh [IF]
-				{ 47.26, 17.83, 1 },	-- Durotar [Org]
-				{ 47.72, 49.72, 94 },	-- Eversong Woods [SMC]
-				{ 46.68, 25.81, 84 },	-- Stormwind City
-				{ 56.49, 18.41, 88 },	-- Thunder Bluff
-				{ 39.96, 21.89, 108 },	-- Terokkar Forest [Shatt]
-				{ 62.27, 67.42, 18 },	-- Tirisfal Glades [UC]
+				{ 47.8, 55.9, 97 },		-- Azuremyst Isle [Exodar]
+				{ 33.9, 39.3, 627 },	-- Dalaran: Broken Isles
+				{ 34.4, 39.1, 125 },	-- Dalaran: Northrend
+				{ 69.4, 40.5, 89 },		-- Darnassus
+				{ 61.0, 36.9, 27 },		-- Dun Morogh [IF]
+				{ 47.2, 17.8, 1 },		-- Durotar [Org]
+				{ 47.7, 49.7, 94 },		-- Eversong Woods [SMC]
+				{ 46.6, 25.8, 84 },		-- Stormwind City
+				{ 56.4, 18.4, 88 },		-- Thunder Bluff
+				{ 39.9, 21.8, 108 },	-- Terokkar Forest [Shatt]
+				{ 62.2, 67.4, 18 },		-- Tirisfal Glades [UC]
 			},
 			["maps"] = {
 				97,		-- Azuremyst Isle [Exodar]
@@ -35,6 +34,6 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 			["g"] = {
 				ach(3456),	-- Dead Man's Party
 			},
-		},
+		}),
 	}),
 });

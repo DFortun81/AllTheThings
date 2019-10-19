@@ -16,6 +16,7 @@ _.Zones =
 				}),
 				n(82826, {	-- Berserk T-300 Series Mark II
 					["questID"] = 35735,
+					["isDaily"] = true,
 					["coord"] = { 76.9, 64.3, 550 },
 					["description"] = "Use the plunger next to the cave.",
 					["g"] = {
@@ -101,10 +102,8 @@ _.Zones =
 				}),
 				n(80122, {	-- Gaz'orda
 					["questID"] = 34725,
-					["coords"] = {
-						{ 42.1, 78.8, 550 },	-- cave
-						{ 43.8, 77.7, 550 },
-					},
+					["isDaily"] = true,
+					["coord"] = { 42.1, 78.8, 550 },	-- cave
 					["g"] = {
 						i(116798),	-- Gaz'orda's Grim Gaze
 					},
@@ -118,6 +117,7 @@ _.Zones =
 				}),
 				n(83509, {	-- Gorepetal
 					["questID"] = 35898,
+					["isDaily"] = true,
 					["coord"] = { 93.2, 28.2, 550 },
 					["g"] = {
 						i(116916),	-- Gorepetal's Gentle Grasp
@@ -348,6 +348,7 @@ _.Zones =
 				}),
 				n(80057, {	-- Soulfang
 					["questID"] = 36128,
+					["isDaily"] = true,
 					["coord"] = { 75.6, 65.2, 550 },
 					["g"] = {
 						i(116806),	-- Soul Fang

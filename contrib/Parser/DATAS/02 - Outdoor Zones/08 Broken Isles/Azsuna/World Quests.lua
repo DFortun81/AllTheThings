@@ -45,10 +45,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
-				q(45838, {	-- Assault on Azsuna (Invasion "wrapper" quest)
-					["lvl"] = 98,
-					["isWorldQuest"] = true,
-				}),
 				q(42165, {	-- Azsuna Specimens
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet

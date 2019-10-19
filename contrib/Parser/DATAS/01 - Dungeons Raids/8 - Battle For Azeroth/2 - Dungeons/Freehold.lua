@@ -10,8 +10,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		["groups"] = {
 			n(-34, {	-- World Quests
 				q(52454, {	-- Freehold: Dread Captain Vandegrim
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
-					["collectible"] = false,
 				}),
 			}),
 			d(1, {	-- Normal

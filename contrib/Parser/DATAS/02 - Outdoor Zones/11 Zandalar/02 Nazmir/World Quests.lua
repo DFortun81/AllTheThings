@@ -243,6 +243,7 @@ _.Zones =
 					}),
 					q(51127, {	-- Getting Out of Hand (A)
 						["hordeQuestID"] = 50559,	-- Getting Out of Hand (H)
+						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["g"] = {
 							ach(13023),	-- It's Really Getting Out of Hand

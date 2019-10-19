@@ -202,7 +202,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					i(34028, {	-- "Honorary Brewer" Hand Stamp (Alliance)
 						["g"] = {
 							q(11419, {	-- Brewfest Riding Rams
-								
+								["u"] = 40,	-- Legacy Quests
 								["maps"] = { 27, },	-- Dun Morogh
 								["races"] = ALLIANCE_ONLY,
 							}),

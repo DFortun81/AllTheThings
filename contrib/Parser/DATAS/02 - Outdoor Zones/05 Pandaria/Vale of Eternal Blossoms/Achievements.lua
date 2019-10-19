@@ -21,6 +21,7 @@ _.Zones =
 				ach(7320),	-- Dog Pile
 				ach(7929, {	-- Dominance Offensive Campaign
 					["collectible"] = false,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(2, {	-- The Voice of the Gods
 							["sourceQuest"] = 32257,	-- Voice of the Gods

@@ -277,10 +277,18 @@ _.Zones =
 				n(18756,  {	-- Haris Pilton <Socialite>
 					["coord"] = { 75.6, 30.6, 111 },
 					["g"] = {
-						i(38082),	-- "Gigantique" Bag
-						i(134007),	-- Eternal Black Diamond Ring (TOY!)
-						i(134004),	-- Noble's Eternal Elementium Signet (TOY!)
-						i(51809),	-- Portable Hole
+						i(38082, {	-- "Gigantique" Bag
+							["cost"] = 12000000,	-- 1,200g
+						}),
+						i(134007, {	-- Eternal Black Diamond Ring (TOY!)
+							["cost"] = 50000000,	-- 5,000g
+						}),
+						i(134004, {	-- Noble's Eternal Elementium Signet (TOY!)
+							["cost"] = 30000000,	-- 3,000g
+						}),
+						i(51809, {	-- Portable Hole
+							["cost"] = 30000000,	-- 3,000g
+						}),
 					},
 				}),
 				n(19065,  {	-- Inessera <Jewelcrafting Supplies Vendor>
