@@ -11,9 +11,8 @@ _.ExpansionFeatures =
 		},
 		["g"] = {
 			n(-17, {	-- Quests
-				q(57592, {	-- Assault: The Black Empire
+				q(57157, {	-- Assault: The Black Empire
 					--[[
-						completing this assault in Uldum triggered 57157 (world quest ID?)
 						refreshing after the boss fight in Uldum triggered 57736 (weekly/daily id?)
 					]]--
 					["g"] = {
@@ -93,6 +92,12 @@ _.ExpansionFeatures =
 					},
 				}),
 				]]--
+			}),
+			n(-34, {
+				q(57592, {	-- Executor of N'Zoth
+					["lvl"] = 120,
+					["isWorldQuest"] = true,
+				}),
 			}),
 		},
 	}),
