@@ -124,6 +124,10 @@ _.ExpansionFeatures =
 						["questID"] = 57364,
 						["coord"] = { 9.5, 67.4, 1530 },
 					}),
+					n(157443, {	-- Xiln the Mountain
+						["questID"] = 57358,
+						["coord"] = { 42.2, 43.5, 1530 },
+					}),
 				}),
 				n(-212, {	-- Treasures
 				--[[
