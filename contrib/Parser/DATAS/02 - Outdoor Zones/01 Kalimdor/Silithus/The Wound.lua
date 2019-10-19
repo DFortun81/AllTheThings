@@ -124,8 +124,11 @@ _.Zones =
 								50056,	-- The Speaker's Call
 							},
 							["provider"] = { "n", 133388 },	-- Magni Bronzebeard
+							["u"] = 40,	-- Legacy Quests
 							["g"] = {
-								ach(12071),	-- Crucible's Promise
+								ach(12071, {	-- Crucible's Promise
+									["u"] = 2,	-- BoP / BoA Item
+								}),
 							},
 						}),
 						q(50226, {	-- The Source of Power
@@ -140,8 +143,9 @@ _.Zones =
 						}),
 						q(50056, {	-- The Speaker's Call
 							["sourceQuest"] = 50374,	-- The Blood of Azeroth
-							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 131963 },	-- Nolan Speed
+							["races"] = ALLIANCE_ONLY,
+							["u"] = 40,	-- Legacy Quests
 						}),
 						q(50300, {	-- The Speaker's Call
 							["sourceQuest"] = 50364,	-- The Blood of Azeroth

@@ -868,6 +868,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
+				q(12349, {	-- Candy Bucket — Dustwallow Marsh, Theramore, Alliance
+					["isYearly"] = true,
+					["coord"] = { 66.6, 45.3, 70 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 70 },	-- Dustwallow Marsh
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
 				q(12402, {	-- Candy Bucket — Eastern Plaguelands, Light's Hope Chapel, neutral
 					["isYearly"] = true,
 					["coord"] = { 75.6, 52.4, 23 },
@@ -1937,6 +1949,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
+				q(12347, {	-- Candy Bucket — Stonetalon Mountains, Stonetalon Peak, Alliance
+					["isYearly"] = true,
+					["coord"] = { 40.6, 17.7, 65 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 65 },	-- Stonetalon Mountains
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
 				q(12378, {	-- Candy Bucket — Stonetalon Mountains, Sun Rock Retreat, Horde
 					["isYearly"] = true,
 					["coord"] = { 50.4, 63.8, 65 },
@@ -2991,7 +3015,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
-				q(29054, {	-- Stink Bombs Away! (Alliance)
+				q(29374, {	-- Stink Bombs Away! (Alliance)
 					["provider"] = { "n", 51934 },	-- Gretchen Fenlow
 					["coord"] = { 32.2, 50.8, 37 },	
 					["races"] = ALLIANCE_ONLY,
