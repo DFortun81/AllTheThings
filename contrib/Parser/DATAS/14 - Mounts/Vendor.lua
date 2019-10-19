@@ -389,6 +389,7 @@ _.Mounts =
 		i(87783),	-- Regal Riding Crane
 		i(116667),	-- Rocktusk Battleboar
 		i(168829),	-- Rustbolt Resistor
+		i(166436),	-- Sandy Nightsaber
 		i(143491, {	-- Shadowblade's Baneful Omen (Rogue)
 			["classes"] = { 4 },	-- Rogue
 		}),

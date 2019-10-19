@@ -252,3 +252,13 @@ i(172023, 306421);	-- Frostwolf Snarler
 i(170069, 259741);	-- Honeyback Harvester
 i(172012, 294197);	-- Obsidian Worldbreaker
 i(172022, 308250);	-- Stormpike Battle Ram
+
+-----------------
+-- PATCH 8.3.0 --
+-----------------
+i(173887, 312751);	-- Clutch of Ha-Li
+i(166436, 288506);	-- Sandy Nightsaber
+i(174066, 306423);	-- Caravan Hyena
+i(174067, 305592);	-- Mechagon Mechanostrider
+i(173713, 281889);	-- Vicious White Bonesteed
+i(173714, 281888);	-- Vicious White Warsaber

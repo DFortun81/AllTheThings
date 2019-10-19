@@ -31,6 +31,7 @@ _.Mounts =
 		i(163576),	-- Captured Dune Scavenger
 		i(163574),	-- Chewed-On Reins of the Terrified Pack Mule
 		i(147806),	-- Cloudwing Hippogryph
+		i(173887),	-- Clutch of Ha-Li
 		i(95059),	-- Clutch of Ji-Kun
 		i(94228),	-- Cobalt Primordial Direhorn
 		i(163583),  -- Craghorn Chasm-Leaper

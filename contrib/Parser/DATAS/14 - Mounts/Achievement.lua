@@ -19,6 +19,9 @@ _.Mounts =
 		i(168055),	-- Bloodflank Charger
 		i(163216), 	-- Bloodgorged Crawg
 		i(44843),	-- Blue Dragonhawk
+		i(174066, {	-- Caravan Hyena
+			["races"] = HORDE_ONLY,
+		}),
 		i(120968),	-- Chauffeured Mekgineer's Chopper (Alliance)
 		i(122703),	-- Chauffeured Mekgineer's Chopper (Horde)
 		i(163577),	-- Conquerer's Scythemaw
@@ -51,6 +54,9 @@ _.Mounts =
 		i(141217),	-- Leyfeather Hippogryph
 		i(155656),	-- Lightforged Felcrusher (Alliance)
 		i(168329),	-- Mechacycle Model W
+		i(174067, {	-- Mechagon Mechanostrider
+			["races"] = ALLIANCE_ONLY,
+		}),
 		i(140500),	-- Mechanized Lumber Extractor
 		i(156487),	-- Nightborne Manasaber (Horde)
 		i(156881),	-- Notoroious Gladiator's Proto-Drake
@@ -99,6 +105,12 @@ _.Mounts =
 		i(143648),	-- Vicious War Turtle (Alliance)*
 		i(143649),	-- Vicious War Turtle (Horde)*
 		i(70910),	-- Vicious War Wolf*
+		i(173713, {	-- Vicious White Bonesteed
+			["races"] = HORDE_ONLY,
+		}),
+		i(173714, {	-- Vicious White Warsaber
+			["races"] = ALLIANCE_ONLY,
+		}),
 		i(44177),	-- Violet Proto-Drake
 		i(62900),	-- Volcanic Stone Drake
 		i(169162),	-- Wonderwing 2.0
