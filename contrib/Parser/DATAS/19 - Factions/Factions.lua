@@ -355,6 +355,7 @@ _.Factions =
 	}),
 	tier(8, {	-- Battle For Azeroth
 		faction(2164), 	-- Champions of Azeroth
+		faction(2415),	-- Rajani
 		faction(2163), 	-- Tortollan Seekers
 		faction(2391),	-- Rustbolt Resistance
 	}),
