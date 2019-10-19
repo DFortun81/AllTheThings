@@ -12,8 +12,16 @@ _.ExpansionFeatures =
 		["g"] = {
 			n(-17, {	-- Quests
 				q(57592, {	-- Assault: The Black Empire
+					--[[
+						completing this assault in Uldum triggered 57157 (world quest ID?)
+						refreshing after the boss fight in Uldum triggered 57736 (weekly/daily id?)
+					]]--
 					["g"] = {
-						i(173372),	-- Cache of the Black Empire
+						i(173372, {	-- Cache of the Black Empire
+							currency(1755),	-- Echoes of Oblivion
+							i(169293),	-- Coalescing Visions x50
+							i(173178),	-- Corrupted Greaves -- TODO:: almost certainly a full ilvl 415 set for all armor types. Same ones sold by blacktalon guards for visions?
+						}),
 					},
 				}),
 				q(58151, {	-- Minions of N'Zoth
@@ -33,6 +41,15 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-16, {	-- Rares
+				n(158706, {	-- Congealed Corruption -- no questID from this even though the map says its rare
+					["coords"] = {
+						{ 59.5, 32.1, 1527 },
+						{ 54.7, 32.1, 1527 },
+					},
+					["g"] = {
+						i(173178),	-- Corrupted Greaves -- TODO: potential zone drop set from rares?
+					},
+				}),
 				n(159087, {	-- Corrupted Bonestripper
 					["questID"] = 57834,
 					["coord"] = { 56.6, 21.0, 1527 },
@@ -41,6 +58,25 @@ _.ExpansionFeatures =
 					["questID"] = 57666,
 					["coord"] = { 51.3, 32.0, 1527 },
 				}),
+				n(158594, {	-- Doomsayer Vathiris
+					["questID"] = 57672,
+					["coord"] = { 49.4, 38.3, 1527 },
+				}),
+				n(156299, {	-- R'khuzj the Unfathomable
+					["questID"] = 57430,
+					["description"] = "Roams around the southern half of Uldum.", -- TODO:: his path is HUGE. do we want to add coords?
+				}),
+				n(156654, {	-- Shol'thoss the Doomspeaker
+					["questID"] = 57432,
+					["coord"] = { 58.6, 82.8, 1527 },
+				}),
+				n(160532, {	-- Shoth the Darkened
+					["questID"] = 58169,
+					["coord"] = { 61.3, 74.9, 1527 },
+				}),
+				--[[
+				consuming maw: 62.4, 79.3
+				]]--
 			}),
 			n(-212, {	-- Treasures
 				--[[
@@ -48,7 +84,9 @@ _.ExpansionFeatures =
 					["coords"] = {
 						{ 58.4, 15.4, 1527 },	-- questID 57623
 						{ 50.8, 31.4, 1527 },	-- questID 57624
-						{ 59.2, 67.5, 1527 },	-- questID 57626
+						{ 55.6, 83.5, 1527 },	-- questID 57635
+						{ 62.6, 81.9, 1527 },	-- questID 57626
+						{ 59.8, 66.1, 1527 },	-- questID 57627
 					},
 					["g"] = {
 						i(169293),	-- Coalescing Visions
