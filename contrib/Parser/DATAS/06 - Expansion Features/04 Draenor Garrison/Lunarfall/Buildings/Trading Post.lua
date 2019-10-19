@@ -48,6 +48,23 @@ _.ExpansionFeatures =
 									}),
 								})),
 							}),
+							q(37088, {	-- Tricks of the Trade
+								["providers"] = {	-- @blizzard ANSWER FOR YOUR CRIMES
+									{ "n", 87207 },	-- Trader Joseph
+									{ "n", 87208 },	-- Trader Joseph
+									{ "n", 87209 },	-- Trader Joseph
+									{ "n", 87210 },	-- Trader Joseph
+									{ "n", 87211 },	-- Trader Joseph
+									{ "n", 87212 },	-- Trader Joseph
+									{ "n", 87213 },	-- Trader Joseph
+									{ "n", 87214 },	-- Trader Joseph
+									{ "n", 87215 },	-- Trader Joseph
+									{ "n", 87216 },	-- Trader Joseph
+									{ "n", 87217 },	-- Trader Joseph
+									{ "n", 91071 },	-- Trader Joseph
+								},
+								["races"] = ALLIANCE_ONLY,
+							}),
 						}),
 						n(-2,  {	-- Vendors
 							n(85427, { 	-- Maaria <Sha'tari Defense Quartermaster>

@@ -2591,6 +2591,22 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
+				q(54709, {	-- Candy Bucket — Zuldazar, Dazar'alor, Horde
+					["isYearly"] = true,
+					["coord"] = { 49.6, 82.3, 1163 },
+					["races"] = HORDE_ONLY,
+					["maps"] = {
+						1163,	-- Dazar'alor
+						1164,	-- Dazar'alor
+						1165,	-- Dazar'alor
+					},
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
 				q(12941, {	-- Candy Bucket — Zul'Drak, The Argent Stand, neutral
 					["isYearly"] = true,
 					["coord"] = { 40.8, 66.0, 121 },
