@@ -411,6 +411,9 @@ _.Zones =
 						i(166464, {	-- Rubyshell Krolusk (MOUNT!)
 							["cost"] = { { "c", 1716, 200 }, },	-- 200x Honorbound Service Medal
 						}),
+						i(166436, {	-- Sandy Nightsaber
+							["cost"] = { { "c", 1716, 350 }, },	-- 350x Honorbound Service Medal
+						}),
 						i(166752, {	-- Stone Guard's Bladed Cloak
 							["cost"] = { { "c", 1716, 75 }, },	-- 75x Honorbound Service Medal
 						}),

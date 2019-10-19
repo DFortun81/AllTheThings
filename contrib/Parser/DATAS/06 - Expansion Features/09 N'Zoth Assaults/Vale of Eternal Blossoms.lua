@@ -64,6 +64,9 @@ _.ExpansionFeatures =
 							{ 30.6, 37.8, 1530 },
 							{ 32.4, 44.0, 1530 },
 						},
+						["g"] = {
+							i(173887),	-- Clutch of Ha-Li
+						},
 					}),
 					n(157171, {	-- Heixi the Stonelord
 						["questID"] = 57347,

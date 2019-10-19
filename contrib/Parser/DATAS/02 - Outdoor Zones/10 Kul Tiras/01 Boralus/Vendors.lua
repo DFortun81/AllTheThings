@@ -797,6 +797,9 @@ _.Zones =
 						i(166550, {	-- Royal Blue Cloak
 							["cost"] = { { "c", 1717, 125 }, },	-- 125x Legion Service Medal
 						}),
+						i(166436, {	-- Sandy Nightsaber
+							["cost"] = { { "c", 1717, 350 }, },	-- 350x Legion Service Medal
+						}),
 						i(166766, {	-- Tidesages' Warscroll
 							["cost"] = { { "c", 1717, 75 }, },	-- 75x Legion Service Medal
 						}),
