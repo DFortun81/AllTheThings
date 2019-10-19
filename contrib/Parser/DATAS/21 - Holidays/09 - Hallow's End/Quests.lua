@@ -2158,6 +2158,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
+				q(54710, {	-- Candy Bucket — Tiragarde Sound, Boralus, Alliance
+					["isYearly"] = true,
+					["coord"] = { 73.7, 12.4, 1161 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 1161 },	-- Boralus
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
 				q(12363, {	-- Candy Bucket — Tirisfal Glades, Brill, Horde
 					["isYearly"] = true,
 					["coord"] = { 60.9, 51.5, 18 },
