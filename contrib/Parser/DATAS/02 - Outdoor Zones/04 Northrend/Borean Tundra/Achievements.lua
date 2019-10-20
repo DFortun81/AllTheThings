@@ -6,6 +6,9 @@ _.Zones =
 	m(113, {	-- Northrend
 		m(114, {	-- Borean Tundra
 			n(-4, {	-- Achievements
+				ach(561, {	-- D.E.H.T.A's Little P.I.T.A.
+					["sourceQuest"] = 11892,	-- The Assassination of Harold Lane
+				}),
 				ach(33, {	-- Nothing Boring About Borean (A)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

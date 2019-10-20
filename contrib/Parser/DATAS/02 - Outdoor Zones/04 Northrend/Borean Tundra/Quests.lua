@@ -71,7 +71,7 @@ _.Zones =
 					["provider"] = { "n", 25292 },	-- Etaruk
 					["coord"] = { 54.2, 36.0, 114 },
 					["sourceQuest"] = 11617,	-- Hampering Their Escape
-					["groups"] = {
+					["g"] = {
 						i(37378),	-- Sealskin Bindings
 						i(37436),	-- Seaspeaker Gloves
 						i(37521),	-- Icechill Buckler
@@ -87,7 +87,7 @@ _.Zones =
 					["provider"] = { "n", 32548 },	-- Corastrasza
 					["coord"] = { 29.4, 24.8, 114 },
 					["sourceQuest"] = 13412,	-- Corastrasza
-					["groups"] = {
+					["g"] = {
 						i(44354),	-- Assault Hauberk
 						i(44355),	-- Incursion Vestments
 						i(44356),	-- Vest of the Assailant
@@ -114,7 +114,7 @@ _.Zones =
 					["provider"] = { "n", 25705 },	-- Bixie Wrenchshanker
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11700,
-					["groups"] = {
+					["g"] = {
 						i(37354),	-- Reinforced Caribou-Hide Boots
 						i(37440),	-- Spiked Magmoth Chestpiece
 						i(37519),	-- Amberplate Headguard
@@ -141,7 +141,7 @@ _.Zones =
 					["coord"] = { 75.8, 37.2, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11640,	-- Words of Power
-					["groups"] = {
+					["g"] = {
 						i(38230),	-- Clutch of Undying Will
 						i(38231),	-- Choker of Forceful Redemption
 						i(38232),	-- Chain of Vigilant Thought
@@ -158,7 +158,7 @@ _.Zones =
 					["coord"] = { 37.9, 52.3, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11688,	-- Damned Filthy Swine
-					["groups"] = {
+					["g"] = {
 						i(36884),	-- Transborean Cover
 						i(36885),	-- Marshwalker Chestpiece
 						i(36886),	-- Westrift Leggings
@@ -170,7 +170,7 @@ _.Zones =
 					["coord"] = { 32.3, 54.2, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11655,	-- Into the Mist
-					["groups"] = {
+					["g"] = {
 						i(37207),	-- Seafarer Boots
 						i(37418),	-- Seaspeaker Legguards
 						i(37483),	-- Seabone Heaume
@@ -182,7 +182,7 @@ _.Zones =
 					["coord"] = { 43.3, 55.3, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11606,	-- Patience is a Virtue that We Don't Need
-					["groups"] = {
+					["g"] = {
 						i(36888),	-- Marshwalker Legguards
 						i(36937),	-- Tundrastrider Coif
 						i(36938),	-- Mightstone Breastplate
@@ -193,7 +193,7 @@ _.Zones =
 					["provider"] = { "n", 26170 },	-- Thassarian
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11956,	-- Finding the Phylactery
-					["groups"] = {
+					["g"] = {
 						i(37271),	-- Dusk Watcher's Belt
 						i(37393),	-- Shadewrap Gloves
 						i(37425),	-- Tundrastrider Boots
@@ -204,7 +204,7 @@ _.Zones =
 					["provider"] = { "n", 26083 },	-- Gerald Green
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11963,	-- Weapons for Farshire
-					["groups"] = {
+					["g"] = {
 						i(38226),	-- Chain of the Tolling Bell
 						i(38227),	-- Indomitable Choker of Light
 						i(38228),	-- Pendant of Revolutionary Thought
@@ -226,7 +226,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["coord"] = { 76.9, 37.6, 114 },
 					["sourceQuest"] = 11895,	-- Master the Storm
-					["groups"] = {
+					["g"] = {
 						i(37275),	-- Mantle of Congealed Anger
 						i(37351),	-- Reinforced Caribou-Hide Leggings
 						i(37443),	-- Spiked Magmoth Helm
@@ -278,7 +278,7 @@ _.Zones =
 					["coord"] = { 43.1, 54.9, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11598,	-- Taking Back Mightstone Quarry
-					["groups"] = {
+					["g"] = {
 						i(36883),	-- Combatant Greatsword
 						i(36882),	-- Warsong Longbow
 						i(36878),	-- Writhing Longstaff
@@ -302,7 +302,7 @@ _.Zones =
 					["coord"] = { 77.3, 36.8, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11899,	-- Souls of the Decursed
-					["groups"] = {
+					["g"] = {
 						i(37122),	-- Taut Driftwood Bow
 						i(37537),	-- Stave of the Spiritcaller
 						i(37522),	-- Earthborn Greaves
@@ -314,7 +314,7 @@ _.Zones =
 					["provider"] = { "n", 25780 },	-- Abner Fizzletorque
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11718,
-					["groups"] = {
+					["g"] = {
 						i(37228),	-- Sweltering Cuffs
 						i(37375),	-- Rhinohide Gloves
 						i(37437),	-- Plainhunter's Chestpiece
@@ -329,7 +329,7 @@ _.Zones =
 				q(11707, {	-- Distress Call
 					["provider"] = { "n", 25737 },	-- Airman Skyhopper
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11897,	-- 
+					["sourceQuest"] = 11897,	--
 				}),
 				q(11682, {	-- Dragonspeak
 					["provider"] = { "n", 25785 },	-- Archmage Evanor
@@ -340,7 +340,7 @@ _.Zones =
 					["provider"] = { "n", 26117 },	-- Raelorasz
 					["coord"] = { 33.3, 34.5, 114 },
 					["sourceQuest"] = 11936,	-- Hatching a Plan
-					["groups"]	= {
+					["g"]	= {
 						i(37382),	-- Charred Drakehide Belt
 						i(37435),	-- Flame Infused Bindings
 						i(37513),	-- Helm of the Crimson Drakonid
@@ -377,7 +377,7 @@ _.Zones =
 					["provider"] = { "n", 25285 },	-- Harbinger Vurenn
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11791,	-- Notify Arlos
-					["groups"] = {
+					["g"] = {
 						i(36888),	-- Marshwalker Legguards
 						i(36937),	-- Tundrastrider Coif
 						i(36938),	-- Mightstone Breastplate
@@ -393,7 +393,7 @@ _.Zones =
 					["provider"] = { "n", 25208 },	-- Lurgglbr
 					["coord"] = { 37.7, 23.0, 114 },
 					["sourceQuest"] = 11571,	-- Learning to Communicate
-					["groups"] = {
+					["g"] = {
 						i(37046),	-- Shell Smasher
 						i(37044),	-- Amphibious Speargun
 						i(37041),	-- Scepter of the Winterfin
@@ -406,7 +406,7 @@ _.Zones =
 					["provider"] = { "n", 25504 },	-- Mootoo the Younger
 					["coord"] = { 31.8, 52.3, 114 },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(37212),	-- Transborean Wraps
 						i(37399),	-- Floodplain Shoulderpads
 						i(37422),	-- Westrift Wristguards
@@ -417,7 +417,7 @@ _.Zones =
 					["coord"] = { 74.6, 23.6, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11677,	-- Stop the Plague
-					["groups"] = {
+					["g"] = {
 						i(37239),	-- Layered Frost Sandals
 						i(37355),	-- Reinforced Caribou-Hide Chestguard
 						i(37518),	-- Amberplate Waistguard
@@ -456,7 +456,7 @@ _.Zones =
 					["coord"] = { 34.5, 46.4, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11703,	-- Get to Getry
-					["groups"] = {
+					["g"] = {
 						i(37447),	-- Reinforced Mendicant's Cowl
 						i(37475),	-- Benign Crusader's Plate
 						i(37277),	-- Ermine Ruff Cloak
@@ -487,7 +487,7 @@ _.Zones =
 					["provider"] = { "n", 25435 },	-- Karuk
 					["coord"] = { 47.1, 75.4, 114 },
 					["sourceQuest"] = 11613,	-- Karuk's Oath
-					["groups"] = {
+					["g"] = {
 						i(37209),	-- Wharfmaster's Hat
 						i(37419),	-- Seaspeaker Mantle
 						i(37541),	-- Giant Turtle Collar
@@ -503,7 +503,7 @@ _.Zones =
 				q(11673, {	-- Get Me Outa Here!
 					["provider"] = { "n", 25589 },	-- Bonker Togglevolt
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(37049),	-- Lost Marksman's Rifle
 						i(37047),	-- Branch of Everlasting Flame
 						i(37528),	-- Dry Earth Circle
@@ -519,7 +519,7 @@ _.Zones =
 					["provider"] = { "n", 25807 },	-- Iggy "Tailspin" Cogtoggle
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11796,
-					["groups"] = {
+					["g"] = {
 						i(37275),	-- Mantle of Congealed Anger
 						i(37351),	-- Reinforced Caribou-Hide Leggings
 						i(37443),	-- Spiked Magmoth Helm
@@ -535,7 +535,7 @@ _.Zones =
 					["provider"] = { "n", 25477 },	-- Crafty Wobblesprocket
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11650,
-					["groups"] = {
+					["g"] = {
 						i(37272),	-- Wizzlenob Shoulder Covers
 						i(37388),	-- Reinforced Elastic Band
 						i(37428),	-- Ring-Ridden Wrist Protectors
@@ -560,7 +560,7 @@ _.Zones =
 				q(11916, {	-- Hellscream's Champion
 					["provider"] = { "n", 25237 },	-- Garrosh Hellscream
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(38238),	-- Borean Smasher
 						i(38237),	-- Axe of Frozen Death
 						i(38240),	-- Staff of the Purposeful Mendicant
@@ -625,7 +625,7 @@ _.Zones =
 					["provider"] = { "n", 25477 },	-- Crafty Wobblesprocket
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11658,
-					["groups"] = {
+					["g"] = {
 						i(37054),	-- Frostbiter
 						i(37073),	-- Hungering Greatstaff
 						i(37357),	-- Shivering Healer's Cloak
@@ -637,7 +637,7 @@ _.Zones =
 					["provider"] = { "n", 26083 },	-- Gerald Green
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11902,	-- Pernicious Evidence
-					["groups"] = {
+					["g"] = {
 						i(37208),	-- Transborean Bracers
 						i(37402),	-- Floodplain Vest
 						i(37484),	-- Mendicant's Treads
@@ -658,7 +658,7 @@ _.Zones =
 				q(11613, {	-- Karuk's Oath
 					["provider"] = { "n", 25435 },	-- Karuk
 					["coord"] = { 47.1, 75.4, 114 },
-					["groups"] = {
+					["g"] = {
 						i(37025),	-- Blubber Carver
 						i(37023),	-- Compact Arrow Launcher
 						i(37024),	-- Medicine Stick
@@ -675,7 +675,7 @@ _.Zones =
 					["provider"] = { "n", 25862 },	-- Khu'nok the Behemoth
 					["coord"] = { 59.4, 30.4, 114 },
 					["sourceQuest"] = 11878,	-- Khu'nok Will Know
-					["groups"] = {
+					["g"] = {
 						i(37005),	-- D.E.H.T.A. Overshirt
 						i(37007),	-- Faux Leather Hood
 						i(37008),	-- Ethical Epaulettes
@@ -686,7 +686,7 @@ _.Zones =
 					["provider"] = { "n", 26110 },	-- Librarian Serrah
 					["coord"] = { 33.4, 34.3, 114 },
 					["sourceQuest"] = 11912,	-- Nuts for Berries
-					["groups"] = {
+					["g"] = {
 						i(37434),	-- Cauterizing Chain Strand
 						i(37383),	-- Seared Scale Cape
 						i(37512),	-- Gauntlets of the Crimson Guardian
@@ -725,7 +725,7 @@ _.Zones =
 					["provider"] = { "n", 26170 },	-- Thassarian
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11942,	-- Words of Power
-					["groups"] = {
+					["g"] = {
 						i(38238),	-- Borean Smasher
 						i(38237),	-- Axe of Frozen Death
 						i(38240),	-- Staff of the Purposeful Mendicant
@@ -738,7 +738,7 @@ _.Zones =
 					["coord"] = { 54.6, 35.7, 114 },
 					["provider"] = { "o", 187565 },	-- Elder Atkanok
 					["sourceQuest"] = 11609,	-- Picking Up the Pieces
-					["groups"] = {
+					["g"] = {
 						i(37227),	-- Seafarer Mantle
 						i(37380),	-- Whalehunter Leggings
 						i(37514),	-- Freed Shackles
@@ -793,7 +793,7 @@ _.Zones =
 					["provider"] = { "n", 25477 },	-- Crafty Wobblesprocket
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11729,
-					["groups"] = {
+					["g"] = {
 						i(37270),	-- Layered Frost Robes
 						i(37353),	-- Reinforced Caribou-Hide Helm
 						i(37441),	-- Spiked Magmoth Mantle
@@ -822,7 +822,7 @@ _.Zones =
 					["provider"] = { "n", 25705 },	-- Bixie Wrenchshanker
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11694,
-					["groups"] = {
+					["g"] = {
 						i(37239),	-- Layered Frost Sandals
 						i(37355),	-- Reinforced Caribou-Hide Chestguard
 						i(37518),	-- Amberplate Waistguard
@@ -853,7 +853,7 @@ _.Zones =
 					["provider"] = { "n", 25291 },	-- Librarian Garren
 					["coord"] = { 44.9, 33.3, 114 },
 					["sourceQuest"] = 11582,	-- Monitoring the Rift: Sundered Chasm
-					["groups"] = {
+					["g"] = {
 						i(37282),	-- Cavernous Gauntlets
 						i(37320),	-- Spaulders of Echoing Truth
 						i(37458),	-- Wristguards of Rocky Horror
@@ -879,7 +879,7 @@ _.Zones =
 					["provider"] = { "n", 25812 },	-- Killinger the Den Watcher
 					["coord"] = { 57.1, 43.9, 114 },
 					["sourceQuest"] = 11864,	-- A Mission Statement
-					["groups"] = {
+					["g"] = {
 						i(37203),	-- Regenerative Cloth
 						i(37406),	-- Denwatcher's Leggings
 						i(37414),	-- Farseer's Headpiece
@@ -897,7 +897,7 @@ _.Zones =
 					["coord"] = { 75.8, 37.2, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11633,	-- Blending In
-					["groups"] = {
+					["g"] = {
 						i(37234),	-- Layered Frost Hood
 						i(37356),	-- Rhinohide Wristwraps
 						i(37439),	-- Spiked Magmoth Gloves
@@ -923,7 +923,7 @@ _.Zones =
 				q(11949, {	-- Not Without a Fight!
 					["provider"] = { "n", 26169 },	-- Ataika
 					["coord"] = { 63.7, 46.1, 114 },
-					["groups"] = {
+					["g"] = {
 						i(37211),	-- Iceflow Footwraps
 						i(37421),	-- Waverunner Waistband
 						i(37486),	-- Landlocked Wristguards
@@ -948,7 +948,7 @@ _.Zones =
 					["provider"] = { "n", 25197 },	-- King Mrgl-Mrgl
 					["coord"] = { 43.4, 13.9, 114 },
 					["sourceQuest"] = 11559,	-- Winterfin Commerce
-					["groups"] = {
+					["g"] = {
 						i(37034),	-- Lobstrock Slicer
 						i(37508),	-- Sinking Pauldrons
 						i(37558),	-- Tidal Boon
@@ -965,7 +965,7 @@ _.Zones =
 					["coord"] = { 32.3, 54.2, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11660,	-- Horn of the Ancient Mariner
-					["groups"] = {
+					["g"] = {
 						i(37208),	-- Transborean Bracers
 						i(37402),	-- Floodplain Vest
 						i(37484),	-- Mendicant's Treads
@@ -977,7 +977,7 @@ _.Zones =
 					["coord"] = { 77.4, 36.9, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11893,	-- The Power of the Elements
-					["groups"] = {
+					["g"] = {
 						i(37272),	-- Wizzlenob Shoulder Covers
 						i(37388),	-- Reinforced Elastic Band
 						i(37428),	-- Ring-Ridden Wrist Protectors
@@ -1013,7 +1013,7 @@ _.Zones =
 					["provider"] = { "n", 25816 },	-- Sergeant Hammerhill
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11889,	-- Death From Above
-					["groups"] = {
+					["g"] = {
 						i(36884),	-- Transborean Cover
 						i(36885),	-- Marshwalker Chestpiece
 						i(36886),	-- Westrift Leggings
@@ -1058,7 +1058,7 @@ _.Zones =
 					["provider"] = { "n", 25747 },	-- Jinky Wingnut
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11708,
-					["groups"] = {
+					["g"] = {
 						i(37234),	-- Layered Frost Hood
 						i(37356),	-- Rhinohide Wristwraps
 						i(37439),	-- Spiked Magmoth Gloves
@@ -1099,7 +1099,7 @@ _.Zones =
 					["provider"] = { "n", 26084 },	-- Jeremiah Hawning
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11908,	-- Reference Material
-					["groups"] = {
+					["g"] = {
 						i(37206),	-- Weathered Worker Cloak
 						i(37403),	-- Marshwalker Boots
 						i(37417),	-- Westrift Handcovers
@@ -1110,7 +1110,7 @@ _.Zones =
 					["provider"] = { "n", 25356 },	-- Warmage Anzim
 					["coord"] = { 46.3, 37.3, 114 },
 					["sourceQuest"] = 11680,	-- Taking Wing
-					["groups"] = {
+					["g"] = {
 						i(37224),	-- Sweltering Belt
 						i(37387),	-- Charred Treads
 						i(37429),	-- Glimmering Ringmail Gloves
@@ -1122,7 +1122,7 @@ _.Zones =
 					["coord"] = { 56.1, 9.1, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11637,	-- Kaganishu
-					["groups"] = {
+					["g"] = {
 						i(37049),	-- Lost Marksman's Rifle
 						i(37047),	-- Branch of Everlasting Flame
 						i(37528),	-- Dry Earth Circle
@@ -1139,7 +1139,7 @@ _.Zones =
 					["coord"] = { 74.6, 23.6, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11687,	-- The Doctor and the Lich-Lord
-					["groups"] = {
+					["g"] = {
 						i(37354),	-- Reinforced Caribou-Hide Boots
 						i(37440),	-- Spiked Magmoth Chestpiece
 						i(37519),	-- Amberplate Headguard
@@ -1152,7 +1152,7 @@ _.Zones =
 					["coord"] = { 50.0, 10.1, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11631,	-- Vision of Air
-					["groups"] = {
+					["g"] = {
 						i(37270),	-- Layered Frost Robes
 						i(37353),	-- Reinforced Caribou-Hide Helm
 						i(37441),	-- Spiked Magmoth Mantle
@@ -1178,7 +1178,7 @@ _.Zones =
 				q(11957, {	-- Saragosa's End
 					["provider"] = { "n", 26206 },	-- Keristrasza
 					["sourceQuest"] = 11951,	-- Bait and Switch
-					["groups"] = {
+					["g"] = {
 						i(37280),	-- Flame Hardened Waistband
 						i(37322),	-- Flame Hardened Wristbindings
 						i(37456),	-- Cauterizing Chain Leggings
@@ -1240,7 +1240,7 @@ _.Zones =
 					["provider"] = { "n", 26117 },	-- Raelorasz
 					["coord"] = { 33.3, 34.5, 114 },
 					["sourceQuest"] = 11967,	-- Mustering the Reds
-					["groups"] = {
+					["g"] = {
 						i(37080),	-- Crimson Will
 						i(37075),	-- Serrated Scale Shank
 						i(37076),	-- Fiery Prod
@@ -1254,7 +1254,7 @@ _.Zones =
 					["coord"] = { 74.6, 23.6, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11675,	-- A Proper Death
-					["groups"] = {
+					["g"] = {
 						i(37223),	-- Sweltering Handwraps
 						i(37391),	-- Rhinohide Mask
 						i(37427),	-- Plainhunter's Waistband
@@ -1276,7 +1276,7 @@ _.Zones =
 					["provider"] = { "n", 25197 },	-- King Mrgl-Mrgl
 					["coord"] = { 43.4, 13.9, 114 },
 					["sourceQuest"] = 11565,	-- The Spare Suit
-					["groups"] = {
+					["g"] = {
 						i(37215),	-- Lost Sea Oculus
 						i(37392),	-- Soggy Hide Pauldrons
 						i(37426),	-- Rusty Mesh Leggings
@@ -1287,7 +1287,7 @@ _.Zones =
 					["provider"] = { "n", 26187 },	-- Corporal Venn
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 12086,	-- The Son of Karkut
-					["groups"] = {
+					["g"] = {
 						i(37214),	-- Sweltering Leggings
 						i(37394),	-- Marshwalker Waistguard
 						i(37424),	-- Plainhunter's Epaulettes
@@ -1298,7 +1298,7 @@ _.Zones =
 					["provider"] = { "n", 26085 },	-- Wendy Darren
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11902,	-- Pernicious Evidence
-					["groups"] = {
+					["g"] = {
 						i(37205),	-- Transborean Mantle
 						i(37404),	-- Floodplain Cover
 						i(37481),	-- Chestguard of Salved Wounds
@@ -1309,7 +1309,7 @@ _.Zones =
 					["provider"] = { "n", 25280 },	-- Foreman Mortuus
 					["coord"] = { 42.0, 56.1, 114 },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(37206),	-- Weathered Worker Cloak
 						i(37403),	-- Marshwalker Boots
 						i(37417),	-- Westrift Handcovers
@@ -1374,8 +1374,7 @@ _.Zones =
 				q(11892, {	-- The Assassination of Harold Lane
 					["provider"] = { "n", 25809 },	-- Archdruid Lathorius
 					["coord"] = { 57.1, 44.3, 114 },
-					["groups"] = {
-						ach(561),	-- D.E.H.T.A's Little P.I.T.A.
+					["g"] = {
 						i(38252),	-- Band of Wholesome Preservation
 						i(38251),	-- Ring of Indignant Rage
 						i(38250),	-- Activist's Signet of Blasting
@@ -1408,7 +1407,7 @@ _.Zones =
 					["provider"] = { "n", 25811 },	-- Zaza
 					["coord"] = { 56.7, 44.0, 114 },
 					["sourceQuest"] = 11865,	-- Unfit for Death
-					["groups"] = {
+					["g"] = {
 						i(36939),	-- Nymph Stockings
 						i(37002),	-- Binder's Links
 						i(36998),	-- Assailant Shroud
@@ -1420,7 +1419,7 @@ _.Zones =
 					["coord"] = { 75.5, 35.7, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11695,	-- The Horn of Elemental Fury
-					["groups"] = {
+					["g"] = {
 						i(37228),	-- Sweltering Cuffs
 						i(37375),	-- Rhinohide Gloves
 						i(37437),	-- Plainhunter's Chestpiece
@@ -1467,7 +1466,7 @@ _.Zones =
 					["provider"] = { "n", 25450 },	-- Veehja
 					["coord"] = { 43.6, 80.55, 114 },
 					["sourceQuest"] = 11625,	-- The Tirdent of Naz'jan
-					["groups"] = {
+					["g"] = {
 						i(37213),	-- Iceflow Wristwraps
 						i(37396),	-- Whalehunter Gloves
 						i(37423),	-- Sharkproof Coif
@@ -1484,7 +1483,7 @@ _.Zones =
 					["provider"] = { "n", 25747 },	-- Jinky Wingnut
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11788,
-					["groups"] = {
+					["g"] = {
 						i(37274),	-- Mender's Cover
 						i(37352),	-- Regenerative Hide Harness
 						i(37442),	-- Chilled Mail Boots
@@ -1516,7 +1515,7 @@ _.Zones =
 					["provider"] = { "n", 25826 },	-- Vindicator Yaala
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11793,	-- Further Investigation
-					["groups"] = {
+					["g"] = {
 						i(37204),	-- Transborean Leggings
 						i(37405),	-- Marshwalker Pauldrons
 						i(37405),	-- Marshwalker Pauldrons
@@ -1533,7 +1532,7 @@ _.Zones =
 					["provider"] = { "n", 25385 },	-- William Allerton
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11599,	-- Thassarian, My Brother
-					["groups"] = {
+					["g"] = {
 						i(37207),	-- Seafarer Boots
 						i(37418),	-- Seaspeaker Legguards
 						i(37483),	-- Seabone Heaume
@@ -1565,7 +1564,7 @@ _.Zones =
 					["provider"] = { "n", 25838 },	-- Hierophant Liandra
 					["coord"] = { 57.7, 55.1, 114 },
 					["sourceQuest"] = 11871,	-- Not On Our Watch
-					["groups"] = {
+					["g"] = {
 						i(37017),	-- Nimble Blade
 						i(37014),	-- Rod of Poacher Punishment
 						i(37018),	-- G.E.H.T.A.
@@ -1579,7 +1578,7 @@ _.Zones =
 					["coord"] = { 32.2, 54.0, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11651,	-- Tanks a lot...
-					["groups"] = {
+					["g"] = {
 						i(37276),	-- Gorge's Loungewear
 						i(37325),	-- Warsong Scout Spaulders
 						i(37446),	-- Tank Commander's Treads
@@ -1595,7 +1594,7 @@ _.Zones =
 				q(11797, {	-- The Siege
 					["provider"] = { "n", 25816 },	-- Sergeant Hammerhill
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(36883),	-- Combatant Greatsword
 						i(38208),	-- Valiance Longbow
 						i(36878),	-- Writhing Longstaff
@@ -1625,7 +1624,7 @@ _.Zones =
 					["coord"] = { 77.2, 38.4, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11896,	-- Weakness to Lightning
-					["groups"] = {
+					["g"] = {
 						i(37054),	-- Frostbiter
 						i(37073),	-- Hungering Greatstaff
 						i(37072),	-- Jagged Icefist
@@ -1637,7 +1636,7 @@ _.Zones =
 					["provider"] = { "n", 26218 },	-- Elder Muahit
 					["coord"] = { 67.2, 54.8, 114 },
 					["sourceQuest"] = 11961,	-- Spirits Watch Over Us
-					["groups"] = {
+					["g"] = {
 						i(37030),	-- Blubber Grinder
 						i(37031),	-- Zook's Walking Stick
 						i(37029),	-- Fin Carver
@@ -1674,7 +1673,7 @@ _.Zones =
 					["provider"] = { "n", 25705 },	-- Bixie Wrenchshanker
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 11693,
-					["groups"] = {
+					["g"] = {
 						i(37223),	-- Sweltering Handwraps
 						i(37391),	-- Rhinohide Mask
 						i(37427),	-- Plainhunter's Waistband
@@ -1708,7 +1707,7 @@ _.Zones =
 					["coord"] = { 67.2, 54.8, 114 },
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 11968,	-- The Tides Turn
-					["groups"] = {
+					["g"] = {
 						i(37283),	-- Wandering Healer's Kilt
 						i(37566),	-- Durable Worghide Cape
 						i(37546),	-- Choker of the Northern Wind
@@ -1725,7 +1724,7 @@ _.Zones =
 					["coord"] = { 52.1, 52.8, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11721,	-- Gammothra the Tormentor
-					["groups"] = {
+					["g"] = {
 						i(37204),	-- Transborean Leggings
 						i(37405),	-- Marshwalker Pauldrons
 						i(37415),	-- Tundrastrider Ringmail
@@ -1748,7 +1747,7 @@ _.Zones =
 					["coord"] = { 52.9, 51.6, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11711,	--	Coward Delivery... Under 30 Minutes or it's Free
-					["groups"] = {
+					["g"] = {
 						i(37205),	-- Transborean Mantle
 						i(37404),	-- Floodplain Cover
 						i(37481),	-- Chestguard of Salved Wounds
@@ -1765,7 +1764,7 @@ _.Zones =
 					["coord"] = { 50.2, 9.7, 114 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11629,	-- Return to the Spirit Talker
-					["groups"] = {
+					["g"] = {
 						i(37274),	-- Mender's Cover
 						i(37352),	-- Regenerative Hide Harness
 						i(37442),	-- Chilled Mail Boots
@@ -1776,7 +1775,7 @@ _.Zones =
 					["provider"] = { "n", 25335 },	-- Longrunner Proudhoof
 					["coord"] = { 48.3, 19.7, 114 },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(37271),	-- Dusk Watcher's Belt
 						i(37393),	-- Shadewrap Gloves
 						i(37425),	-- Tundrastrider Boots
@@ -1804,7 +1803,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 34777 },	-- Ith'rix's Hardened Carapace
 					["description"] = "Must kill |cFFFFD700Ith'rix the Harvester|r during the Warsong Hold attack, then loot the carapace.",
-					["groups"] = {
+					["g"] = {
 						i(37214),	-- Sweltering Leggings
 						i(37394),	-- Marshwalker Waistguard
 						i(37424),	-- Plainhunter's Epaulettes
@@ -1844,10 +1843,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11633,	-- Blending In
 				}),
-				-- q(46049),	-- A Gift From Your Tadpole
-				-- q(46062),	-- A Tadpole's Request
-				-- q(46061),	-- Adopt a Tadpole
-				-- q(46064),	-- The Ways of the World
 			}),
 		}),
 	}),
