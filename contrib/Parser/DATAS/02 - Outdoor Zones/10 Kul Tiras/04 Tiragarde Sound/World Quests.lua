@@ -1401,11 +1401,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(50992, {	-- Work Order: Calcified Bone
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(52389, {	-- Work Order: Contract: Proudmoore Admiralty
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
