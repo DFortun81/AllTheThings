@@ -83,7 +83,7 @@ profession(20222, {	-- Goblin Engineering
 						{
 							["name"] = "Dimensional Ripper - Area 52",
 							["recipeID"] = 36954,
-							["description"] = "Speak to Kablamm Farflinger in Netherstorm at 38.8, 63.6 to learn this recipe.",
+							["description"] = "Speak to Kablamm Farflinger in Netherstorm at 32.9, 63.7 to learn this recipe.",
 						},
 						{
 							["name"] = "Foreman's Enchanted Helmet",
