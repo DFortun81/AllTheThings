@@ -31,64 +31,176 @@ _.Zones =
 			q(43926, {	-- The Legion Returns
 				["description"] = "This quest is automatically offered when you reach level 98.  To get it to pop up, you may need to relog.",
 			}),
-			q(28790),	-- A Personal Summons (Vashj'ir Starter Quest)
+			q(28790, {
+				["isBreadcrumb"] = true,
+			}),	-- A Personal Summons (Vashj'ir Starter Quest)
 			q(36499),	-- Iron Horde Invasion
 			q(29157),	-- The Zandalari Menace
-			q(28572),	-- Warchief's Command: Arathi Highlands!
-			q(28493),	-- Warchief's Command: Ashenvale!
-			q(28496),	-- Warchief's Command: Azshara!
-			q(28580),	-- Warchief's Command: Badlands!
-			q(28711),	-- Warchief's Command: Borean Tundra!
-			q(39198),	-- Warchief's Command: Blade's Edge Mountains!
-			q(28671),	-- Warchief's Command: Blasted Lands!
-			q(28667),	-- Warchief's Command: Burning Steppes!
-			q(27722),	-- Warchief's Command: Deepholm!
-			q(28548),	-- Warchief's Command: Desolace!
-			q(49543),	-- Warchief's Command: Dread Wastes!
-			q(28554),	-- Warchief's Command: Dustwallow Marsh!
-			q(28577),	-- Warchief's Command: Eastern Plaguelands!
-			q(28542),	-- Warchief's Command: Felwood!
-			q(28510),	-- Warchief's Command: Feralas!
-			q(39206),	-- Warchief's Command: Grizzly Hills!
-			q(28560),	-- Warchief's Command: Ghostlands!
-			q(28571),	-- Warchief's Command: Hillsbrad Foothills!
-			q(49533),	-- Warchief's Command: Howling Fjord!
-			q(49537),	-- Warchief's Command: Icecrown!
-			q(49538),	-- Warchief's Command: Jade Forest!
-			q(49540),	-- Warchief's Command: Krasarang Wilds!
-			q(49541),	-- Warchief's Command: Kun-Lai Summit!
-			q(27721),	-- Warchief's Command: Mount Hyjal!
-			q(49549),	-- Warchief's Command: Nagrand!
-			q(39201),	-- Warchief's Command: Netherstorm!
-			q(28494),	-- Warchief's Command: Northern Barrens!
-			q(28688),	-- Warchief's Command: Northern Stranglethorn Vale!
-			q(28711),	-- Warchief's Command: Northrend!
-			q(28705),	-- Warchief's Command: Outland!
-			q(49532),	-- Warchief's Command: Shadowmoon Valley!
-			q(49535),	-- Warchief's Command: Sholazar Basin!
-			q(28527),	-- Warchief's Command: Silithus!
-			q(28568),	-- Warchief's Command: Silverpine Forest!
-			q(28549),	-- Warchief's Command: Southern Barrens!
-			q(49548),	-- Warchief's Command: Spires of Arak!
-			q(49536),	-- Warchief's Command: Storm Peaks!
-			q(28532),	-- Warchief's Command: Stonetalon Mountains!
-			q(28677),	-- Warchief's Command: Swamp of Sorrows!
-			q(49547),	-- Warchief's Command: Talador!
-			q(28509),	-- Warchief's Command: Tanaris!
-			q(39182),	-- Warchief's Command: Terokkar Forest!
-			q(28704),	-- Warchief's Command: The Cape of Stranglethorn!
-			q(28574),	-- Warchief's Command: The Hinterlands!
-			q(28504),	-- Warchief's Command: Thousand Needles!
-			q(49542),	-- Warchief's Command: Townlong Steppes!
-			q(28717),	-- Warchief's Command: Twilight Highlands!
-			q(28557),	-- Warchief's Command: Uldum!
-			q(28526),	-- Warchief's Command: Un'Goro Crater!
-			q(49539),	-- Warchief's Command: Valley of the Four Winds!
-			q(27718),	-- Warchief's Command: Vashj'ir!
-			q(28575),	-- Warchief's Command: Western Plaguelands!
-			q(28545),	-- Warchief's Command: Winterspring!
-			q(39180),	-- Warchief's Command: Zangarmarsh!
-			q(49534),	-- Warchief's Command: Zul'Drak!
+			q(28572, {	-- Warchief's Command: Arathi Highlands!
+				["isBreadcrumb"] = true,
+			}),
+			q(28493, {	-- Warchief's Command: Ashenvale!
+				["isBreadcrumb"] = true,
+			}),
+			q(28496, {	-- Warchief's Command: Azshara!
+				["isBreadcrumb"] = true,
+			}),
+			q(28580, {	-- Warchief's Command: Badlands!
+				["isBreadcrumb"] = true,
+			}),
+			q(28711, {	-- Warchief's Command: Borean Tundra!
+				["isBreadcrumb"] = true,
+			}),
+			q(39198, {	-- Warchief's Command: Blade's Edge Mountains!
+				["isBreadcrumb"] = true,
+			}),
+			q(28671, {	-- Warchief's Command: Blasted Lands!
+				["isBreadcrumb"] = true,
+			}),
+			q(28667, {	-- Warchief's Command: Burning Steppes!
+				["isBreadcrumb"] = true,
+			}),
+			q(27722, {	-- Warchief's Command: Deepholm!
+				["isBreadcrumb"] = true,
+			}),
+			q(28548, {	-- Warchief's Command: Desolace!
+				["isBreadcrumb"] = true,
+			}),
+			q(49543, {	-- Warchief's Command: Dread Wastes!
+				["isBreadcrumb"] = true,
+			}),
+			q(28554, {	-- Warchief's Command: Dustwallow Marsh!
+				["isBreadcrumb"] = true,
+			}),
+			q(28577, {	-- Warchief's Command: Eastern Plaguelands!
+				["isBreadcrumb"] = true,
+			}),
+			q(28542, {	-- Warchief's Command: Felwood!
+				["isBreadcrumb"] = true,
+			}),
+			q(28510, {	-- Warchief's Command: Feralas!
+				["isBreadcrumb"] = true,
+			}),
+			q(39206, {	-- Warchief's Command: Grizzly Hills!
+				["isBreadcrumb"] = true,
+			}),
+			q(28560, {	-- Warchief's Command: Ghostlands!
+				["isBreadcrumb"] = true,
+			}),
+			q(28571, {	-- Warchief's Command: Hillsbrad Foothills!
+				["isBreadcrumb"] = true,
+			}),
+			q(49533, {	-- Warchief's Command: Howling Fjord!
+				["isBreadcrumb"] = true,
+			}),
+			q(49537, {	-- Warchief's Command: Icecrown!
+				["isBreadcrumb"] = true,
+			}),
+			q(49538, {	-- Warchief's Command: Jade Forest!
+				["isBreadcrumb"] = true,
+			}),
+			q(49540, {	-- Warchief's Command: Krasarang Wilds!
+				["isBreadcrumb"] = true,
+			}),
+			q(49541, {	-- Warchief's Command: Kun-Lai Summit!
+				["isBreadcrumb"] = true,
+			}),
+			q(27721, {	-- Warchief's Command: Mount Hyjal!
+				["isBreadcrumb"] = true,
+			}),
+			q(49549, {	-- Warchief's Command: Nagrand!
+				["isBreadcrumb"] = true,
+			}),
+			q(39201, {	-- Warchief's Command: Netherstorm!
+				["isBreadcrumb"] = true,
+			}),
+			q(28494, {	-- Warchief's Command: Northern Barrens!
+				["isBreadcrumb"] = true,
+			}),
+			q(28688, {	-- Warchief's Command: Northern Stranglethorn Vale!
+				["isBreadcrumb"] = true,
+			}),
+			q(28711, {	-- Warchief's Command: Northrend!
+				["isBreadcrumb"] = true,
+			}),
+			q(28705, {	-- Warchief's Command: Outland!
+				["isBreadcrumb"] = true,
+			}),
+			q(49532, {	-- Warchief's Command: Shadowmoon Valley!
+				["isBreadcrumb"] = true,
+			}),
+			q(49535, {	-- Warchief's Command: Sholazar Basin!
+				["isBreadcrumb"] = true,
+			}),
+			q(28527, {	-- Warchief's Command: Silithus!
+				["isBreadcrumb"] = true,
+			}),
+			q(28568, {	-- Warchief's Command: Silverpine Forest!
+				["isBreadcrumb"] = true,
+			}),
+			q(28549, {	-- Warchief's Command: Southern Barrens!
+				["isBreadcrumb"] = true,
+			}),
+			q(49548, {	-- Warchief's Command: Spires of Arak!
+				["isBreadcrumb"] = true,
+			}),
+			q(49536, {	-- Warchief's Command: Storm Peaks!
+				["isBreadcrumb"] = true,
+			}),
+			q(28532, {	-- Warchief's Command: Stonetalon Mountains!
+				["isBreadcrumb"] = true,
+			}),
+			q(28677, {	-- Warchief's Command: Swamp of Sorrows!
+				["isBreadcrumb"] = true,
+			}),
+			q(49547, {	-- Warchief's Command: Talador!
+				["isBreadcrumb"] = true,
+			}),
+			q(28509, {	-- Warchief's Command: Tanaris!
+				["isBreadcrumb"] = true,
+			}),
+			q(39182, {	-- Warchief's Command: Terokkar Forest!
+				["isBreadcrumb"] = true,
+			}),
+			q(28704, {	-- Warchief's Command: The Cape of Stranglethorn!
+				["isBreadcrumb"] = true,
+			}),
+			q(28574, {	-- Warchief's Command: The Hinterlands!
+				["isBreadcrumb"] = true,
+			}),
+			q(28504, {	-- Warchief's Command: Thousand Needles!
+				["isBreadcrumb"] = true,
+			}),
+			q(49542, {	-- Warchief's Command: Townlong Steppes!
+				["isBreadcrumb"] = true,
+			}),
+			q(28717, {	-- Warchief's Command: Twilight Highlands!
+				["isBreadcrumb"] = true,
+			}),
+			q(28557, {	-- Warchief's Command: Uldum!
+				["isBreadcrumb"] = true,
+			}),
+			q(28526, {	-- Warchief's Command: Un'Goro Crater!
+				["isBreadcrumb"] = true,
+			}),
+			q(49539, {	-- Warchief's Command: Valley of the Four Winds!
+				["isBreadcrumb"] = true,
+			}),
+			q(27718, {	-- Warchief's Command: Vashj'ir!
+				["isBreadcrumb"] = true,
+			}),
+			q(28575, {	-- Warchief's Command: Western Plaguelands!
+				["isBreadcrumb"] = true,
+			}),
+			q(28545, {	-- Warchief's Command: Winterspring!
+				["isBreadcrumb"] = true,
+			}),
+			q(39180, {	-- Warchief's Command: Zangarmarsh!
+				["isBreadcrumb"] = true,
+			}),
+			q(49534, {	-- Warchief's Command: Zul'Drak!
+				["isBreadcrumb"] = true,
+			}),
 		},
 	}),
 	i(156474, {	-- Special Duty Assignments
