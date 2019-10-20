@@ -736,6 +736,14 @@ _.Zones =
 						i(32821),	-- Veteran's Wyrmhide Bracers
 					},
 				}),
+				n(21493,  {	-- Kablamm Farflinger <Transportation Engineer>
+					["requireSkill"] = 202,	-- Engineering
+					["description"] = "Goblin Engineers can speak to Kablamm to learn the recipe.",
+					["coord"] = { 32.9, 63.7, 109 },
+					["g"] = {
+						recipe(36954),	-- Dimensional Ripper - Area 52
+					},
+				}),
 				n(20242,  {	-- Karaaz <Consortium Quartermaster>
 					["coord"] = { 43.6, 34.4, 109 },
 					["g"] = {

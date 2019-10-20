@@ -314,6 +314,14 @@ _.Zones =
 						i(18046),	-- Recipe: Tender Wolf Steak
 					},
 				}),
+				n(14743,  {	-- Jhordy Lapforge <Engineer>
+					["requireSkill"] = 202,	-- Engineering
+					["description"] = "Gnomish Engineers can speak to Jhordy to learn the recipe.",
+					["coord"] = { 52.2, 27.8, 71 },
+					["g"] = {
+						recipe(23489),	-- Ultrasafe Transporter - Gadgetzan
+					},
+				}),
 				n(155944, {	-- Otela
 					["coord"] = { 42.4, 71.6, 71 },
 					["g"] = {

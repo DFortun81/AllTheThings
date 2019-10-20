@@ -143,6 +143,7 @@ _.Zones =
 				}),
 				q(25057, {	-- Clap 'Em In Irons
 					["provider"] = { "n", 38323 },	-- General Hawthorne
+					["coord"] = { 49.8, 49.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25045,	-- A Line in the Dirt
@@ -417,6 +418,7 @@ _.Zones =
 				}),
 				q(25074, {	-- Meet Me at Triumph
 					["provider"] = { "n", 38323 },	-- General Hawthorne
+					["coord"] = { 49.8, 49.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25057,	-- Clap 'em In Irons
 				}),
@@ -732,6 +734,7 @@ _.Zones =
 				}),
 				q(25059, {	-- The Taurajo Briefs
 					["provider"] = { "n", 38986 },	-- Ambassador Gaines
+					["coord"] = { 49.9, 49.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25045,	-- A Line in the Dirt
