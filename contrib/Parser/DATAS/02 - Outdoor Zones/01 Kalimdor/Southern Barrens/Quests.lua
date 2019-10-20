@@ -20,6 +20,7 @@ _.Zones =
 				}),
 				q(25022, {	-- A Failure to Communicate
 					["provider"] = { "n", 38871 },	-- Corporal Teegan
+					["coord"] = { 56.1, 42.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24543, {	-- A Family Divided
@@ -35,6 +36,7 @@ _.Zones =
 				}),
 				q(25045, {	-- A Line in the Dirt
 					["provider"] = { "n", 38323 },	-- General Hawthorne
+					["coord"] = { 49.8, 49.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(53301),	-- Taurajo Leggings
@@ -63,10 +65,11 @@ _.Zones =
 				}),
 				q(24570, {	-- Adder Subtraction
 					["provider"] = { "n", 38314 },	-- Muyoh
-					["coord"] = { 50.3, 40.3, 199 },
+					["coord"] = { 50.3, 40.4, 199 },
 				}),
 				q(24944, {	-- Back in the Fight
 					["provider"] = { "n", 38804 },	-- Tolliver Houndstooth
+					["coord"] = { 66.9, 46.7, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 24941,	-- Langridge Shot
 				}),
@@ -100,7 +103,7 @@ _.Zones =
 				}),
 				q(24565, {	-- Biological Intervention
 					["provider"] = { "n", 37570 },	-- Naralex
-					["coord"] = { 50.4, 40.6, 199 },
+					["coord"] = { 50.4, 40.7, 199 },
 				}),
 				q(24606, {	-- Blood of the Barrens
 					["provider"] = { "i", 49932 },	-- Carved Boar Idol
@@ -113,6 +116,7 @@ _.Zones =
 				}),
 				q(24863, {	-- Breaking the Siege
 					["provider"] = { "n", 38378 },	-- Commander Walpole
+					["coord"] = { 29.8, 9.00, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24591, {	-- Changing of the Gar'dul
@@ -182,6 +186,7 @@ _.Zones =
 				}),
 				q(25044, {	-- Diplomacy By Another Means
 					["provider"] = { "n", 38986 },	-- Ambassador Gaines
+					["coord"] = { 49.9, 49.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25022,	-- A Failure to Communicate
 					["g"] = {
@@ -236,10 +241,12 @@ _.Zones =
 				}),
 				q(25043, {	-- Fields of Blood
 					["provider"] = { "n", 38323 },	-- General Hawthorne
+					["coord"] = { 49.8, 49.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25008, {	-- Filthy Animals
 					["provider"] = { "n", 38873 },	-- Goucho
+					["coord"] = { 56.1, 42.4, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(53276),	-- Hecklefang Hide Belt
@@ -271,6 +278,7 @@ _.Zones =
 				}),
 				q(25186, {	-- Futile Resistance
 					["provider"] = { "n", 38380 },	-- Janice Mattingly
+					["coord"] = { 34.9, 9.50, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						24863,	-- Breaking the Siege
@@ -329,19 +337,22 @@ _.Zones =
 				}),
 				q(24941, {	-- Langridge Shot
 					["provider"] = { "n", 38620 },	-- Thomas Paxton
+					["coord"] = { 67.0, 46.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24571, {	-- Lashvine Seeds
 					["provider"] = { "n", 38314 },	-- Muyoh
-					["coord"] = { 50.3, 40.3, 199 },
+					["coord"] = { 50.3, 40.4, 199 },
 				}),
 				q(24948, {	-- Lifting the Siege
 					["provider"] = { "n", 38620 },	-- Thomas Paxton
+					["coord"] = { 67.0, 46.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 24943,	-- Re-Take the Courtyard
 				}),
 				q(25041, {	-- Lion's Pride
 					["provider"] = { "n", 39003 },	-- Sam Trawley
+					["coord"] = { 49.7, 50.4, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24552, {	-- Lion's Pride
@@ -357,6 +368,7 @@ _.Zones =
 				}),
 				q(25015, {	-- Make 'em Squeal
 					["provider"] = { "n", 38871 },	-- Corporal Teegan
+					["coord"] = { 56.1, 42.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25036,	-- Teegan's Troubles
 				}),
@@ -384,6 +396,7 @@ _.Zones =
 				}),
 				q(25042, {	-- Marching On Our Stomachs
 					["provider"] = { "n", 39003 },	-- Sam Trawley
+					["coord"] = { 49.7, 50.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25041,	-- Lion's Pride
 					["g"] = {
@@ -459,17 +472,18 @@ _.Zones =
 						i(131371),  -- Steel-Patched Armbands
 					},
 				}),
-				q(24934, {	-- Repel Boarders!
-					["provider"] = { "n", 38619 },	-- Admiral Aubrey
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 24921,	-- Report to Aubrey
-				}),
-				q(26687, {	-- Reinforcements From Theramore (UNTESTED - unavailable on lv100 and don't have any Alliance at 35 to test)
+				q(26687, {	-- Reinforcements From Theramore
 					["provider"] = { "n", 39119 },	-- General Twinbraid
 					["coord"] = { 43.5, 78.3, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 					["sourceQuest"] = 25182,	-- Kill 'em All!
+				}),
+				q(24934, {	-- Repel Boarders!
+					["provider"] = { "n", 38619 },	-- Admiral Aubrey
+					["coord"] = { 69.2, 49.0, 199 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 24921,	-- Report to Aubrey
 				}),
 				q(24921, {	-- Report to Aubrey
 					["provider"] = { "n", 38623 },	-- Dockmaster Lewis
@@ -487,6 +501,7 @@ _.Zones =
 				}),
 				q(24943, {	-- Re-Take the Courtyard
 					["provider"] = { "n", 38620 },	-- Thomas Paxton
+					["coord"] = { 67.0, 46.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 24941,	-- Langridge Shot
 					["g"] = {
@@ -512,10 +527,12 @@ _.Zones =
 				}),
 				q(24862, {	-- Running the Gauntlet
 					["provider"] = { "n", 38378 },	-- Commander Walpole
+					["coord"] = { 29.8, 9.00, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24939, {	-- Run Out the Guns
 					["provider"] = { "n", 3454 },	-- Cannoneer Smythe
+					["coord"] = { 68.6, 44.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 24938,	-- The Guns of Northwatch
 					["g"] = {
@@ -539,6 +556,7 @@ _.Zones =
 				}),
 				q(25002, {	-- Scavenged
 					["provider"] = { "n", 38878 },	-- Mangled Body
+					["coord"] = { 61.8, 42.0, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24569, {	-- Siegebreaker
@@ -564,6 +582,7 @@ _.Zones =
 				}),
 				q(24956, {	-- Silencing Rageroar
 					["provider"] = { "n", 38804 },	-- Tolliver Houndstooth
+					["coord"] = { 66.9, 46.7, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 24944,	-- Back in the Fight
 					["g"] = {
@@ -621,6 +640,7 @@ _.Zones =
 				}),
 				q(25191, {	-- Survey the Destruction
 					["provider"] = { "n", 38383 },	-- Nibb Spindlegear
+					["coord"] = { 39.0, 11.4, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24572, {	-- Taking Back Taurajo
@@ -638,16 +658,19 @@ _.Zones =
 				}),
 				q(25000, {	-- Teegan's People
 					["provider"] = { "n", 38621 },	-- Jeffrey Long
+					["coord"] = { 64.8, 46.0, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25036, {	-- Teegan's Troubles
 					["provider"] = { "n", 38620 },	-- Thomas Paxton
+					["coord"] = { 67.0, 46.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 24948,	-- Lifting the Siege
 				}),
 				q(25197, {	-- The Admiral Won't Back Down
 					["provider"] = { "n", 39322 },	-- Horton Gimbleheart
+					["coord"] = { 68.6, 49.0, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "The only way to do both this and 'Report to Aubrey' is if you do it before accepting and completing 'Repel Boarders.'",
 					["sourceQuest"] = 25191,	-- Survey the Destruction
@@ -690,6 +713,7 @@ _.Zones =
 				}),
 				q(24938, {	-- The Guns of Northwatch
 					["provider"] = { "n", 38619 },	-- Admiral Aubrey
+					["coord"] = { 69.2, 49.0, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 24934,	-- Repel Boarders!
 				}),
@@ -721,15 +745,17 @@ _.Zones =
 				}),
 				q(25034, {	-- To the Front!
 					["provider"] = { "n", 38871 },	-- Corporal Teegan
+					["coord"] = { 56.1, 42.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25027,	-- You Flicked a Fine Vine to Leaf Me
 				}),
 				q(24568, {	-- To the Walls!
-					["u"] = 1,	-- beta only
+					["u"] = 1,	-- Never Available — beta only
 					["provider"] = { "n", 37717 },	-- Winnoa Pineforest
 				}),
 				q(25028, {	-- Trouble From the Ground Up
 					["provider"] = { "n", 38876 },	-- Hannah Bridgewater
+					["coord"] = { 56.2, 42.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25022,	-- A Failure to Communicate
@@ -785,6 +811,7 @@ _.Zones =
 				}),
 				q(25027, {	-- You Flicked a Fine Vine to Leaf Me
 					["provider"] = { "n", 38871 },	-- Corporal Teegan
+					["coord"] = { 56.1, 42.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25022,	-- A Failure to Communicate
