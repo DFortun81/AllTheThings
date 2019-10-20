@@ -32,6 +32,7 @@ _.Zones =
 				}),
 				q(25084, {	-- A Growing Threat
 					["provider"] = { "n", 37835 },	-- Dorn Redearth
+					["coord"] = { 45.0, 85.2, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25045, {	-- A Line in the Dirt
@@ -80,6 +81,7 @@ _.Zones =
 				}),
 				q(25153, {	-- Bael'dun Rescue
 					["provider"] = { "n", 39218 },	-- Bael'dun Survivor
+					["coord"] = { 49.3, 86.9, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25120,	-- Marley's Final Flight
 					["g"] = {
@@ -91,6 +93,7 @@ _.Zones =
 				}),
 				q(25080, {	-- Batteries Not Yet Included
 					["provider"] = { "n", 39084 },	-- Mizzy Pistonhammer
+					["coord"] = { 49.4, 67.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25079,	-- Powder Play
 					["g"] = {
@@ -139,6 +142,7 @@ _.Zones =
 				}),
 				q(25081, {	-- Claim the Battlescar
 					["provider"] = { "n", 39083 },	-- Commander Roberts
+					["coord"] = { 49.1, 66.9, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25057, {	-- Clap 'Em In Irons
@@ -183,6 +187,7 @@ _.Zones =
 				}),
 				q(25104, {	-- Digsite Status
 					["provider"] = { "n", 39118 },	-- General Twinbraid
+					["coord"] = { 43.5, 78.3, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25044, {	-- Diplomacy By Another Means
@@ -226,6 +231,7 @@ _.Zones =
 				}),
 				q(25108, {	-- Feegly the Exiled
 					["provider"] = { "n", 39155 },	-- Marley Twinbraid
+					["coord"] = { 47.1, 88.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25104,	-- Digsite Status
 					["g"] = {
@@ -237,8 +243,8 @@ _.Zones =
 				}),
 				q(26908, {	-- Feeling Thorny
 					["provider"] = { "n", 37812 },	-- Mahka
-					["lvl"] = 30,
 					["coord"] = { 45.1, 85.4, 199 },
+					["lvl"] = 30,
 				}),
 				q(25043, {	-- Fields of Blood
 					["provider"] = { "n", 38323 },	-- General Hawthorne
@@ -257,6 +263,7 @@ _.Zones =
 				}),
 				q(25086, {	-- Firestone Point
 					["provider"] = { "n", 39085 },	-- Logan Talonstrike
+					["coord"] = { 49.1, 67.8, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25082,	-- Working the Bugs Out
 				}),
@@ -293,11 +300,13 @@ _.Zones =
 				}),
 				q(25106, {	-- Hands Off Me Dig!
 					["provider"] = { "n", 39155 },	-- Marley Twinbraid
+					["coord"] = { 47.1, 88.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25104,	-- Digsite Status
 				}),
 				q(25151, {	-- He Needs Ale!
 					["provider"] = { "n", 39188 },	-- Marley Twinbraid
+					["coord"] = { 49.2, 86.7, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25120,	-- Marley's Final Flight
 				}),
@@ -375,6 +384,7 @@ _.Zones =
 				}),
 				q(25085, {	-- Mangletooth
 					["provider"] = { "n", 37835 },	-- Dorn Redearth
+					["coord"] = { 45.0, 85.3, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25084,	-- A Growing Threat
 					["g"] = {
@@ -410,6 +420,7 @@ _.Zones =
 				}),
 				q(25120, {	-- Marley's Final Flight
 					["provider"] = { "n", 39155 },	-- Marley Twinbraid
+					["coord"] = { 47.1, 88.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25108,	-- Feegly the Exiled
@@ -436,6 +447,7 @@ _.Zones =
 				}),
 				q(25102, {	-- No Bull
 					["provider"] = { "n", 39154 },	-- Hurlston Stonesthrow
+					["coord"] = { 43.4, 78.3, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(53298),	-- Stonesthrow Sword
@@ -451,10 +463,12 @@ _.Zones =
 				}),
 				q(25075, {	-- Pick-a-Part
 					["provider"] = { "n", 39084 },	-- Mizzy Pistonhammer
+					["coord"] = { 49.4, 67.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25079, {	-- Powder Play
 					["provider"] = { "n", 39084 },	-- Mizzy Pistonhammer
+					["coord"] = { 49.4, 67.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25075,	-- Pick-a-Part
 				}),
@@ -489,6 +503,7 @@ _.Zones =
 				}),
 				q(24921, {	-- Report to Aubrey
 					["provider"] = { "n", 38623 },	-- Dockmaster Lewis
+					["coord"] = { 71.0, 50.0, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
@@ -498,6 +513,7 @@ _.Zones =
 				}),
 				q(25087, {	-- Report to Twinbraid
 					["provider"] = { "n", 39083 },	-- Commander Roberts
+					["coord"] = { 49.1, 66.9, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25081,	-- Claim the Battlescar
 				}),
@@ -679,6 +695,7 @@ _.Zones =
 				}),
 				q(25175, {	-- The Bad News
 					["provider"] = { "n", 39188 },	-- Marley Twinbraid
+					["coord"] = { 49.2, 86.7, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25151,	-- He Needs Ale!
 				}),
@@ -810,6 +827,7 @@ _.Zones =
 				}),
 				q(25082, {	-- Working the Bugs Out
 					["provider"] = { "n", 39085 },	-- Logan Talonstrike
+					["coord"] = { 49.1, 67.8, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25027, {	-- You Flicked a Fine Vine to Leaf Me
