@@ -6,45 +6,64 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 	inst(274, { 	-- Gundrak
 		["lvl"] = 63,
 		["maps"] = { 153, 154 },
-		["groups"] = {
+		["g"] = {
 			n(-17, {	-- Quests
 				q(29844, {	-- For Posterity
-					["providers"] = {
-						{ "n", 55738 },	-- Tol'mar
-						{ "n", 55737 },	-- Chronicler Bah'Kini
-					},
-					["groups"] = {
+					["provider"] = { "n", 55737 },	-- Chronicler Bah'Kini
+					["g"] = {
 						i(43180),	-- Lion's Head Ring
 						i(43178),	-- Ring of Foul Mojo
 						i(43179),	-- Solid Platinum Band
 						i(43177),	-- Voodoo Signet
 					},
 				}),
-				q(29835, {	-- Gal'darah Must Pay
-					["providers"] = {
-						{ "n", 55738 },	-- Tol'mar
-						{ "n", 55737 },	-- Chronicler Bah'Kini
+				q(29844, {	-- For Posterity
+					["provider"] = { "n", 55738 },	-- Tol'mar
+					["g"] = {
+						i(43180),	-- Lion's Head Ring
+						i(43178),	-- Ring of Foul Mojo
+						i(43179),	-- Solid Platinum Band
+						i(43177),	-- Voodoo Signet
 					},
-					["groups"] = {
+				}),
+				q(29834, {	-- Gal'darah Must Pay
+					["provider"] = { "n", 55738 },	-- Tol'mar
+					["g"] = {
 						i(43164),	-- Sly Mojo Sash
 						i(43165),	-- Strange Voodoo Belt
 						i(43167),	-- Ranger's Beelt of the Fallen Empire
 						i(43168),	-- Clasp of the Fallen Demi-God
 					},
 				}),
-				q(29839, {	-- One of a Kind
-					["providers"] = {
-						{ "n", 55738 },	-- Tol'mar
-						{ "n", 55737 },	-- Chronicler Bah'Kini
+				q(29835, {	-- Gal'darah Must Pay
+					["provider"] = { "n", 55737 },	-- Chronicler Bah'Kini
+					["g"] = {
+						i(43164),	-- Sly Mojo Sash
+						i(43165),	-- Strange Voodoo Belt
+						i(43167),	-- Ranger's Beelt of the Fallen Empire
+						i(43168),	-- Clasp of the Fallen Demi-God
 					},
-					["groups"] = {
+				}),
+				q(29838, {	-- One of a Kind
+					["provider"] = { "n", 55737 },	-- Chronicler Bah'Kini
+					["g"] = {
 						i(43171),	-- Fur-Lined Moccasins
 						i(43172),	-- Rhino Hide Kneeboots
 						i(43173),	-- Scaled Boots of Fallen Hope
 						i(43176),	-- Slippers of the Mojo Dojo
-						i(43174),	-- Trollkickers	
+						i(43174),	-- Trollkickers
 					},
-				}),					
+				}),
+				q(29839, {	-- One of a Kind
+					["provider"] = { "n", 55738 },	-- Tol'mar
+					["g"] = {
+						i(43171),	-- Fur-Lined Moccasins
+						i(43172),	-- Rhino Hide Kneeboots
+						i(43173),	-- Scaled Boots of Fallen Hope
+						i(43176),	-- Slippers of the Mojo Dojo
+						i(43174),	-- Trollkickers
+					},
+				}),
 			}),
 			d(  1, {	-- Normal
 				n(0, {	-- Zone Drop
@@ -142,7 +161,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			d(  2, {	-- Heroic
 				["lvl"] = 80,
-				["groups"] = {
+				["g"] = {
 					n(0, {	-- Zone Drop
 						i(37646, {	-- Burning Skull Pendant
 							["crs"] = {
@@ -280,7 +299,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			d( 24, {	-- Timewalking
 				["lvl"] = 81,
-				["groups"] = {
+				["g"] = {
 					cr(29304, e(592, {	-- Slad'ran
 						i(127527),	-- Witch Doctor's Wildstaff
 						i(127538),	-- Wand of Sseratus
