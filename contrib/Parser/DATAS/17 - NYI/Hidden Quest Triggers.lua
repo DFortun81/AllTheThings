@@ -190,8 +190,13 @@ _.NeverImplemented =
 		q(35453),	-- Utgarde Pinnacle heroic completion
 		
 		-- Zones
+		q(46051),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 01
+		q(46052),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 02
+		q(46053),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 03
+		q(46054),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 04
+		q(46055),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 05
 		q(12485),	-- Howling Fjord - triggers during "The Echo of Ymiron" when you see the RP between two vrykul in Wyrmskull Village
-		
+
 		-------------------
 		--   CATACLYSM   --
 		-------------------
