@@ -192,7 +192,7 @@ _.Zones =
 					["description"] = "Must be on |cFFFFD700Infiltrating Voltarus|r to see this quest.",
 					["sourceQuest"] = 12649,	-- Suit Up!
 				}),
-				q(12633, {	-- Darkness Calling -- TODO: verify if this drops all the time or after something
+				q(12633, {	-- Darkness Calling
 					["crs"] = { 28519 },	-- Withered Troll
 					["provider"] = { "i", 38673 },	-- Writhing Choker
 					["altQuests"] = { 12631 },	-- An Invitation, of Sorts... (Available if you DON'T complete "Cleansing Drak'Tharon")
@@ -444,7 +444,7 @@ _.Zones =
 				q(12510, {	-- Precious Elemental Fluids
 					["coord"] = { 40.5, 65.6, 121 },
 					["provider"] = { "n", 28062 },	-- Hexxer Ubungo
-					["sourceQuest"] = 12507,	-- Strange Mojo -- TODO: verify
+					["sourceQuest"] = 12507,	-- Strange Mojo
 					["g"] = {
 						i(39781),	-- Bloodbinder's Raiment
 						i(39842),	-- Bloodletter's Boots
@@ -460,7 +460,7 @@ _.Zones =
 				q(12584, {	-- Pure Evil
 					["coord"] = { 58.0, 72.4, 121 },
 					["provider"] = { "n", 28044 },	-- Captain Rupert
-					["sourceQuest"] = 12552,	-- Death to the Necromagi -- TODO: verify
+					["sourceQuest"] = 12552,	-- Death to the Necromagi
 					["g"] = {
 						i(39773),	-- Soothsayer's Shoulderpads
 						i(39837),	-- Gloves of Swift Death
@@ -575,7 +575,7 @@ _.Zones =
 						i(39829),	-- High-Strung Bow
 					},
 				}),
-				q(12507, {	-- Strange Mojo -- TODO:: Verify if this drops all the time
+				q(12507, {	-- Strange Mojo
 					["crs"] = {
 						28036,	-- Champion of Sseratus
 						28034,	-- Drakkari Snake Handler
@@ -651,7 +651,7 @@ _.Zones =
 				q(12615, {	-- The Blessing of Zim'Torga
 					["coord"] = { 59.5, 58.0, 121 },
 					["provider"] = { "n", 28479 },	-- Witch Doctor Khufu
-					["sourceQuest"] = 12516,	-- Too Much of a Good Thing -- TODO: verify
+					["sourceQuest"] = 12516,	-- Too Much of a Good Thing
 				}),
 				q(12948, {	-- The Champion of Anguish
 					["coord"] = { 48.4, 56.3, 121 },
@@ -669,7 +669,7 @@ _.Zones =
 				q(12562, {	-- The Drakkari Do Not Need Water Elementals!
 					["coord"] = { 40.1, 68.9, 121 },
 					["provider"] = { "n", 28309 },	-- Sub-Lieutenant Jax
-					["sourceQuest"] = 12507,	-- Strange Mojo -- TODO: verify
+					["sourceQuest"] = 12507,	-- Strange Mojo
 				}),
 				q(12884, {	-- The Ebon Watch
 					["coord"] = { 32.1, 75.1, 121 },
