@@ -322,6 +322,8 @@ _.NeverImplemented =
 		-- RARES
 		q(44696),	-- Tracking Quest - Daily - Watcher Osu — alternate Watcher Osu daily quest
 		q(33290),	-- Tracking Quest - First - Dread Ship Vazuvius — presumably first kill only.  didn't pop on my first kill of the week.
+		q(32997),	-- Tracking Quest - First - Zesqua
+		q(33317),	-- Tracking Quest - First - Zhu-Gon the Bitter/Skunky Beer
 		q(33162),	-- Weekly Vignette Boss Kill - Tracking Quest — popped upon arriving to timeless isle and killing evermaw (first rare of the week)
 		q(33164),	-- Weekly Vignette Event Compeltion - Tracking Quest — popped when killing chelon, along with daily questID.  didn't pop from just interacting with shell.
 		-- TREASURES
@@ -531,6 +533,7 @@ _.NeverImplemented =
 		q(34812),	-- Nagrand - Horde Stables Tracking Event
 		q(34813),	-- Nagrand - Horde Workshop Tracking Event
 		q(34518),	-- Nagrand - Nagrand Corral
+		q(36898),	-- Tracking Quest: Delvar Ironfist
 
 	--	TREASURES
 		q(34521),	-- Treasure: Glowing Obsidian Shard (secondary quest triggered when looting Burning Pearl in Frostfire Ridge)

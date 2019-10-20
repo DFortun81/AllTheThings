@@ -25,12 +25,12 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["cr"] = 155171,	-- The Hivekiller
 						}),
-			--[[		q(, {	-- Hivethief's Jelly Stash (unknown questID)
+						q(56092, {	-- Hivethief's Jelly Stash (unknown questID)
 							["provider"] = { "i", 169657 },	-- Hivethief's Jelly Stash
 							["isWeekly"] = true,	-- according to wowhead!
 							["races"] = ALLIANCE_ONLY,
 							["cr"] = 155055,	-- Gurg the Hivethief
-						}),	--]]
+						}),
 						q(56108, {	-- Leaving the Hive
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
