@@ -30,6 +30,7 @@ _.Zones =
 				}),
 				q(25852, {	-- All's Clear
 					["provider"] = { "n", 41229 },	-- Force Commander Valen
+					["coord"] = { 71.0, 79.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25851,	-- Dances with Grimtotem
 				}),
@@ -245,6 +246,7 @@ _.Zones =
 				}),
 				q(25851, {	-- Dances with Grimtotem
 					["provider"] = { "n", 11858 },	-- Grundig Darkcloud
+					["coord"] = { 72.2, 83.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25848,	-- Downfall
 					["g"] = {
@@ -269,6 +271,7 @@ _.Zones =
 				}),
 				q(25848, {	-- Downfall
 					["provider"] = { "n", 11858 },	-- Grundig Darkcloud
+					["coord"] = { 72.2, 83.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25847,	-- Grimtotem Supremacy
 				}),
@@ -355,16 +358,19 @@ _.Zones =
 				}),
 				q(25847, {	-- Grimtotem Supremacy
 					["provider"] = { "n", 11858 },	-- Grundig Darkcloud
+					["coord"] = { 72.2, 83.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25846,	-- Grundig Darkcloud, Chieftain of the Grimtotem
 				}),
 				q(25846, {	-- Grundig Darkcloud, Chieftain of the Grimtotem
 					["provider"] = { "n", 41229 },	-- Force Commander Valen
+					["coord"] = { 71.0, 79.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25822,	-- Armaments for War
 				}),
 				q(25938, {	-- Help for Desolace (mutually exclusive with Rerouted! and Hero's Call: Desolace!)
 					["provider"] = { "n", 41487 },	-- Hierophant Malyk
+					["coord"] = { 33.0, 59.6, 65 },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 				}),
