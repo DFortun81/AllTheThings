@@ -3015,7 +3015,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
-				q(29374, {	-- Stink Bombs Away! (Alliance)
+				q(29054, {	-- Stink Bombs Away! (Alliance)
 					["provider"] = { "n", 51934 },	-- Gretchen Fenlow
 					["coord"] = { 32.2, 50.8, 37 },	
 					["races"] = ALLIANCE_ONLY,
