@@ -113,8 +113,6 @@ _.ExpansionFeatures =
 					un(40, q(44277)),	-- The Lord of Black Rook Hold
 					q(43182),	-- The Missing Vessel
 					q(42407),	-- The Nature of the Beast
-					q(43496),	-- The Power Within
-					q(43501),	-- The Power Within
 					q(42401),	-- The Scent of Magic
 					q(40385),	-- The Spear in the Shadow
 					q(40954),	-- The Unseen Path

@@ -252,8 +252,6 @@ _.ExpansionFeatures =
 					q(44276),	-- The Lord of Black Rook Hold
 					q(44277),	-- The Lord of Black Rook Hold
 					q(41038),	-- The Mead Master
-					q(43496),	-- The Power Within
-					q(43501),	-- The Power Within
 					q(42765),	-- The Trial at the Temple
 					q(42762),	-- The Wanderer's Companion
 					q(43319),	-- The Way of the Tiger

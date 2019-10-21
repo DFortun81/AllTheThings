@@ -590,8 +590,6 @@ _.ExpansionFeatures =
 					q(41119),	-- The Hunt
 					q(44276),	-- The Lord of Black Rook Hold
 					q(44277),	-- The Lord of Black Rook Hold
-					q(43501),	-- The Power Within
-					q(43496),	-- The Power Within
 					q(41096),	-- Time is of the Essence
 					q(45172),	-- To Battle!
 					q(46334),	-- To Fel and Back

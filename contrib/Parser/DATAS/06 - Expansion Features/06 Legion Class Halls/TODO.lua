@@ -23,8 +23,6 @@
 	q(44263),	-- The Arcway: Into the Arcway
 	q(45173),	-- Desperate Times
 	q(44917),	-- Return to Karazhan: The Tower of Power
-	q(43496),	-- The Power Within
-	q(43501),	-- The Power Within
 	q(45172),	-- To Battle!
 	q(44058),	-- Volpin the Elusive
 	q(45179),	-- Win the Crowd

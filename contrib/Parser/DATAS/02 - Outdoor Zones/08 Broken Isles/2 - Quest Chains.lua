@@ -13,25 +13,64 @@ _.Zones =
 					}),
 				}),
 				n(-170, {	-- Balance of Power
+					["description"] = "The only known requirement to start this questline is the completion of your class campaign.  It may also require advancement into the Legionfall campaign.",
 					["lvl"] = 110,
 					["g"] = {
 						q(43496, {	-- The Power Within
-						  ["classes"] = {1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12},
-						  ["description"] = "This quest is available if you *have* completed the quests at Azurewing Repose in Azsuna."
-						  }),
-						q(43501, {	-- The Power Within
-						  ["classes"] = {1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12},
-						  ["description"] = "This quest is available if you have *not* completed the quests at Azurewing Repose in Azsuna."
-						  }),
-						q(43503, {	-- The Power Within
-						  ["classes"] = {8},
-						  ["description"] = "This quest is available if you *have* completed the quests at Azurewing Repose in Azsuna."
-						  }),
-						q(43505, {	-- The Power Within
-						  ["classes"] = {8},
-						  ["description"] = "This quest is available if you have *not* completed the quests at Azurewing Repose in Azsuna." -- NOTE: This quest does not flag properly when the other version is completed.
+							["description"] = "This quest is available if you *have* completed the quests at Azurewing Repose in Azsuna.",
+							["provider"] = { "n", 110768 },	-- Image of Kalec
+							["classes"] = exclude( { 8 }, ALL_CLASSES ),	-- all classes, excluding Mage
+							["maps"] = {	-- all class hall maps, excluding those for Mages
+								647, 648,	-- Acherus (Death Knight)
+								717,		-- Dreadscar Rift (Warlock)
+								720, 721,	-- Mardum, the Shattered Abyss (Demon Hunter)
+								702,		-- Netherlight Temple (Priest)
+								24,			-- Sanctum of Light (Paladin)
+								698,		-- Skyhold (Warrior)
+								747,		-- The Dreamgrove (Druid)
+								626,		-- The Hall of Shadows (Rogue)
+								726,		-- The Heart of Azeroth (Shaman)
+								709,		-- The Wandering Isle (Monk)
+								739,		-- Trueshot Lodge (Hunter)
+							},
 						}),
-						q(40668),	-- The Heart of Zin-Azshari
+						q(43501, {	-- The Power Within
+							["description"] = "This quest is available if you *have not* completed the quests at Azurewing Repose in Azsuna.",
+							["provider"] = { "n", 110768 },	-- Image of Kalec
+							["classes"] = exclude( { 8 }, ALL_CLASSES ),	-- all classes, excluding Mage
+							["maps"] = {	-- all class hall maps, excluding those for Mages
+								647, 648,	-- Acherus (Death Knight)
+								717,		-- Dreadscar Rift (Warlock)
+								720, 721,	-- Mardum, the Shattered Abyss (Demon Hunter)
+								702,		-- Netherlight Temple (Priest)
+								24,			-- Sanctum of Light (Paladin)
+								698,		-- Skyhold (Warrior)
+								747,		-- The Dreamgrove (Druid)
+								626,		-- The Hall of Shadows (Rogue)
+								726,		-- The Heart of Azeroth (Shaman)
+								709,		-- The Wandering Isle (Monk)
+								739,		-- Trueshot Lodge (Hunter)
+							},
+						}),
+						q(43503, {	-- The Power Within
+							["description"] = "This quest is available if you *have* completed the quests at Azurewing Repose in Azsuna.",
+							["provider"] = { "n", 108247 },	-- Image of Kalec
+							["classes"] = { 8 },	-- Mage
+							["maps"] = { 734, 735 },	-- Hall of the Guardian (Mage)
+						}),
+						q(43505, {	-- The Power Within
+							["description"] = "This quest is available if you have *not* completed the quests at Azurewing Repose in Azsuna.",
+							["altQuests"] = { 43503 },	-- The Power Within (this is the only version that doesn't autocomplete with the others when you turn one in)
+							["provider"] = { "n", 108247 },	-- Image of Kalec
+							["classes"] = { 8 },	-- Mage
+							["maps"] = { 734, 735 },	-- Hall of the Guardian (Mage)
+						}),
+						q(40668, {	-- Eye of Azshara: The Heart of Zin-Azshari
+							["sourceQuests"] = { 43496, 43501, 43503, 43505 },	-- The Power Within (4 versions)
+							["provider"] = { "n", 100482 },	-- Senegos
+							["coord"] = { 48.0, 25.7, 630 },
+							["maps"] = { 630 },	-- Azsuna
+						}),
 						q(43514),	-- A Vainglorious Past
 						q(43517),	-- Fallen Power
 						q(43518),	-- Tempering Darkness
