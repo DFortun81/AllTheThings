@@ -11,7 +11,6 @@ _.Zones =
 
 					q(46134),	-- Gemcutter Needed
 					q(46135),	-- Gemcutter Needed
-					q(46138),	-- Gemcutter Needed
 					q(46137),	-- Gemcutter Needed
 					q(41656),	-- Work Order: Azsunite Loop
 					q(41638),	-- Work Order: Leystone Gauntlets
@@ -88,6 +87,11 @@ _.Zones =
 					},
 				}),
 				q(46136, {	-- Gemcutter Needed
+					["isWorldQuest"] = true,
+					["requireSkill"] = 755,	-- Jewelcrafting
+					["lvl"] = 110,
+				}),
+				q(46138, {	-- Gemcutter Needed
 					["isWorldQuest"] = true,
 					["requireSkill"] = 755,	-- Jewelcrafting
 					["lvl"] = 110,
