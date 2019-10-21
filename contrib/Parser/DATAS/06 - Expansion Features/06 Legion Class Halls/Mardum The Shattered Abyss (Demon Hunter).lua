@@ -476,6 +476,17 @@ _.ExpansionFeatures =
 						["classes"] = { 12 },	-- Demon Hunter
 						["coord"] = { 58.8, 51.2, 721 },
 					}),
+					q(46334, {	-- To Fel and Back
+						["sourceQuests"] = { 46333 },	-- Livin' on the Ledge
+						["provider"] = { "n", 108784 },	-- Maton Mother Malevolence
+						["classes"] = { 12 },	-- Demon Hunter
+						["coord"] = { 60.1, 50.8, 720 },
+						["maps"] = { 861 },	-- Mardum, the Shattered Abyss (scenario)
+						["lvl"] = 110,
+						["g"] = {
+							mount(229417),	-- Slayer's Felbroken Shrieker
+						},
+					}),
 					q(42776, {	-- Two Worthies
 						["sourceQuests"] = { 42775 },	-- The Crux of the Plan
 						["providers"] = {
@@ -592,7 +603,6 @@ _.ExpansionFeatures =
 					q(44277),	-- The Lord of Black Rook Hold
 					q(41096),	-- Time is of the Essence
 					q(45172),	-- To Battle!
-					q(46334),	-- To Fel and Back
 					q(41060),	-- Unbridled Power
 					q(42131),	-- Unexpected Visitors
 					q(44224),	-- Unleashing our Wrath
@@ -606,13 +616,6 @@ _.ExpansionFeatures =
 					}),
 					q(44058),	-- Volpin the Elusive
 					q(45179),	-- Win the Crowd
-					q(46334, {	-- To Fel and Back
-						["lvl"] = 110,
-						["classes"] = {12},
-						["g"] = {
-							{ ["mountID"] = 229417 },	-- Slayer's Felbroken Shrieker
-						},
-					}),
 					q(43186, {	-- I Am the Slayer!
 						i(139715),	-- Robes of
 					}),

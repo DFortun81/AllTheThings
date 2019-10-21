@@ -232,6 +232,13 @@ _.Zones =
 					["coord"] = { 44.4, 63.0, 646 },
 					["lvl"] = 110,
 				}),
+				q(46333, {	-- Livin' on the Ledge
+					["sourceQuests"] = { 46246 },	-- Strike Them Down
+					["provider"] = { "n", 118316 },	-- Illidari Enforcer
+					["classes"] = { 12 },	-- Demon Hunter
+					["coord"] = { 44.0, 62.7, 646 },
+					["lvl"] = 110,
+				}),
 				q(47112, {	-- Lost Souls
 					["sourceQuests"] = { 47097 },	-- A Walk to Remember
 					["provider"] = { "n", 121226 },	-- Anduin Wrynn
@@ -305,6 +312,12 @@ _.Zones =
 					["sourceQuests"] = { 46734 },	-- Assault on Brokeen Shore
 					["provider"] = { "n", 119886 },	-- Excavator Karla
 					["coord"] = { 39.6, 71.7, 646 },
+					["lvl"] = 110,
+				}),
+				q(46246, {	-- Strike Them Down
+					["sourceQuests"] = { 46249 },	-- Championing Our Cause
+					["provider"] = { "n", 116576 },	-- Maiev Shadowsong
+					["coord"] = { 44.4, 63.4, 646 },
 					["lvl"] = 110,
 				}),
 				q(46272, {	-- Summons to the Keep
@@ -530,7 +543,7 @@ _.Zones =
 					["lvl"] = 120,
 					["coord"] = { 62.3, 30.4, 646 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 53778 },	-- Where He Felll
+					["sourceQuests"] = { 53778 },	-- Where He Fell
 				}),
 				q(46675, {	-- To Track a Demon
 					["lvl"] = 110,
@@ -702,7 +715,6 @@ _.Zones =
 				q(45634),	-- Kvaldir on Call
 				q(45614),	-- Lady Remor'za
 				q(46688),	-- Leather of the Ancients
-				q(46333),	-- Livin' on the Ledge
 				q(38804),	-- Lyrelle
 				q(45817),	-- Mage
 				q(46694),	-- Mail of the Ancients
@@ -796,7 +808,6 @@ _.Zones =
 				q(43899),	-- Steeds of the Damned
 				q(46145),	-- Sterile Surroundings
 				q(45459),	-- Storming the Legion
-				q(46246),	-- Strike Them Down
 				q(45554),	-- Taking Control
 				q(46317),	-- Talon's Call
 				q(43268),	-- Tech It Up A Notch
