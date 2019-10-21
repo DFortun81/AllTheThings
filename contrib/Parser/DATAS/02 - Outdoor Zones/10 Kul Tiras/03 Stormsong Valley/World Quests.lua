@@ -969,11 +969,6 @@ _.Zones =
 					q(54457, {	-- Supplies from Storm's Wake
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(52380, {	-- Supplies Needed: Frenzied Fangtooth
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(53045, {	-- Surveying the Wharf
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1817,6 +1812,11 @@ _.Zones =
 								["achievementID"] = 13387,	-- Frontline Veteran
 							}),
 						},
+					}),
+					q(52380, {	-- Supplies Needed: Frenzied Fangtooth
+						["isWorldQuest"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(52322, {	-- Taja the Tidehowler
 						["lvl"] = 120,
