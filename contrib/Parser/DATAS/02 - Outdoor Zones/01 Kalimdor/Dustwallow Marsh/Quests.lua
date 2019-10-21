@@ -6,6 +6,10 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(70, {	-- Dustwallow Marsh
 			n(-17, {	-- Quests
+				q(11214, {	-- [DEPRECATED]Mission to Mudsprocket
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+				}),
 				q(1258,  {	-- ... and Bugs
 					["provider"] = { "n", 4794 },	-- Morgan Stern
 					["coord"] = { 68.2, 48.6, 70 },
@@ -77,13 +81,11 @@ _.Zones =
 				q(27408, {	-- Banner of the Stonemaul
 					["provider"] = { "n", 23579 },	-- Brogg
 					["coord"] = { 41.8, 73.9, 70 },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27407,	-- Bloodfen Feathers
 				}),
 				q(27407, {	-- Bloodfen Feathers
 					["provider"] = { "n", 23579 },	-- Brogg
 					["coord"] = { 41.8, 73.9, 70 },
-					["races"] = HORDE_ONLY,
 				}),
 				q(27247, {	-- Captain Vimes
 					["provider"] = { "n", 23951 },	-- Lieutenant Aden
@@ -671,26 +673,26 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27261,	-- Questioning Reethe
 				}),
-				q(27252, {	-- The Black Shield (#1)
+				q(27252, {	-- The Black Shield (#1, A)
 					["coord"] = { 29.6, 48.5, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 20992 },	-- Black Shield
 				}),
-				q(27254, {	-- The Black Shield (#1)
+				q(27254, {	-- The Black Shield (#1, H)
 					["coord"] = { 29.6, 48.5, 70 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 20992 },	-- Black Shield
 				}),
-				q(27255, {	-- The Black Shield (#2)
+				q(27284, {	-- The Black Shield (#2, A)
+					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 27252,	-- The Black Shield (#1)
+				}),
+				q(27255, {	-- The Black Shield (#2, H)
 					["provider"] = { "n", 4926 },	-- Krog
 					["coord"] = { 36.4, 31.8, 70 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27254,	-- The Black Shield (#1)
-				}),
-				q(27284, {	-- The Black Shield (#2)
-					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 27252,	-- The Black Shield (#1)
 				}),
 				q(27285, {	-- The Black Shield (#3)
 					["provider"] = { "n", 4941 },	-- Caz Twosprocket
@@ -776,7 +778,6 @@ _.Zones =
 				q(27409, {	-- The Essence of Enmity
 					["provider"] = { "n", 23579 },	-- Brogg
 					["coord"] = { 41.8, 73.9, 70 },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27407,	-- Bloodfen Feathers
 				}),
 				q(27293, {	-- The Grimtotem Plot
@@ -923,8 +924,8 @@ _.Zones =
 					},
 				}),
 				q(27412, {	-- WANTED: Goreclaw the Ravenous
-					["coord"] = { 41.7, 73.1, 70 },
 					["provider"] = { "o", 186426 },	-- Wanted Poster (Goreclaw)
+					["coord"] = { 41.7, 73.1, 70 },
 					["g"] = {
 						i(33258),	-- Protective Engineer's Leggings
 						i(33263),	-- Raptor Eye Ring
