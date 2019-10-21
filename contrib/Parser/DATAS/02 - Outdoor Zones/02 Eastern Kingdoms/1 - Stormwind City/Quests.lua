@@ -954,12 +954,8 @@ _.Zones =
 					["lvl"] = 4,
 				}),
 				q(27241, {	-- Return to Jaina
-					["providers"] = {
-						{ "n", 1750 },	-- Grand Admiral Jes-Tereth
-						{ "n", 29611 },	-- King Varian Wrynn
-						{ "n", 107574 },	-- Anduin Wrynn
-					},
-					["coord"] = { 71.0, 72.6, 84 },
+					["provider"] = { "n", 1750 },	-- Grand Admiral Jes-Tereth
+					["coord"] = { 85.6, 32.9, 84 },
 					["sourceQuest"] = 27240,	-- Proof of Treachery
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
