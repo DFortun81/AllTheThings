@@ -7,9 +7,10 @@ _.Zones =
 		m(114, {	-- Borean Tundra
 			n(-17, {	-- Quests
 				q(11718, {	-- A Bot in Mammoth's Clothing
-					["provider"] = { "n", 25780 },	-- Abner Fizzletorque
+					["coord"] = { 57.0, 20.1, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11715,
+					["provider"] = { "n", 25780 },	-- Abner Fizzletorque
+					["sourceQuest"] = 11715,	-- Fueling the Project
 				}),
 				q(11641, {	-- A Courageous Strike
 					["provider"] = { "n", 24706 },	-- Durm Icehide
@@ -18,13 +19,16 @@ _.Zones =
 					["sourceQuest"] = 11633,	-- Blending In
 				}),
 				q(11604, {	-- A Deserter
-					["provider"] = { "n", 25302 },	-- Old Man Colburn
+					["coord"] = { 58.5, 68.0, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25302 },	-- Old Man Colburn
 					["sourceQuest"] = 11603,	-- In Wine, Truth
 				}),
 				q(12141, {	-- A Diplomatic Mission
-					["provider"] = { "n", 25301 },	-- Counselor Talbot
+					["coord"] = { 56.7, 72.6, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25301 },	-- Counselor Talbot
+					["sourceQuest"] = 11791,	-- Notify Arlos
 					["isBreadcrumb"] = true,
 				}),
 				q(11620, {	-- A Father's Words
@@ -33,9 +37,10 @@ _.Zones =
 					["sourceQuest"] = 11619,	-- Gamel the Cruel
 				}),
 				q(11726, {	-- A Little Bit of Spice
-					["provider"] = { "n", 25807 },	-- Iggy "Tailspin" Cogtoggle
+					["coord"] = { 61.6, 35.7, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11725,
+					["provider"] = { "n", 25807 },	-- Iggy "Tailspin" Cogtoggle
+					["sourceQuest"] = 11725,	-- Finding Pilot Tailspin
 				}),
 				q(11864, {	-- A Mission Statement
 					["provider"] = { "n", 25809 },	-- Archdruid Lathorius
@@ -53,8 +58,10 @@ _.Zones =
 					["sourceQuest"] = 11663,	-- Sharing Intelligence
 				}),
 				q(11789, {	-- A Soldier in Need
-					["provider"] = { "n", 25825 },	-- Medic Hawthorn
+					["coord"] = { 55.0, 68.9, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25825 },	-- Medic Hawthorn
+					["sourceQuest"] = 11797,	-- The Siege
 				}),
 				q(11719, {	-- A Suitable Test Subject
 					["provider"] = { "n", 25381 },	-- Bloodmage Laurith
@@ -63,8 +70,9 @@ _.Zones =
 					["sourceQuest"] = 11717,	-- Pollen from the Source
 				}),
 				q(11727, {	-- A Time for Heroes
-					["provider"] = { "n", 25250 },	-- General Arlos
+					["coord"] = { 56.6, 72.6, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25250 },	-- General Arlos
 					["sourceQuest"] = 11672,	-- Enlistment Day
 				}),
 				q(11623, {	-- A Visit to the Curator
@@ -107,13 +115,15 @@ _.Zones =
 					["sourceQuest"] = 11929,	-- The Fall of Taunka'le Village
 				}),
 				q(29608, {	-- Allies in Dalaran
-					["provider"] = { "n", 26879 },	-- Tomas Riverwell
+					["coord"] = { 58.9, 68.2, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26879 },	-- Tomas Riverwell
 				}),
 				q(11701, {	-- Back to the Airstrip
-					["provider"] = { "n", 25705 },	-- Bixie Wrenchshanker
+					["coord"] = { 73.4, 18.7, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11700,
+					["provider"] = { "n", 25705 },	-- Bixie Wrenchshanker
+					["sourceQuest"] = 11700,	-- Let Bixie Know
 					["g"] = {
 						i(37354),	-- Reinforced Caribou-Hide Boots
 						i(37440),	-- Spiked Magmoth Chestpiece
@@ -190,8 +200,9 @@ _.Zones =
 					},
 				}),
 				q(11938, {	-- Buying Some Time
-					["provider"] = { "n", 26170 },	-- Thassarian
+					["coord"] = { 84.7, 41.6, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26170 },	-- Thassarian
 					["sourceQuest"] = 11956,	-- Finding the Phylactery
 					["g"] = {
 						i(37271),	-- Dusk Watcher's Belt
@@ -201,8 +212,9 @@ _.Zones =
 					},
 				}),
 				q(11965, {	-- Call to Arms!
-					["provider"] = { "n", 26083 },	-- Gerald Green
+					["coord"] = { 58.2, 62.8, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26083 },	-- Gerald Green
 					["sourceQuest"] = 11963,	-- Weapons for Farshire
 					["g"] = {
 						i(38226),	-- Chain of the Tolling Bell
@@ -217,14 +229,15 @@ _.Zones =
 					["sourceQuest"] = 11866,	-- Ears of Our Enemies
 				}),
 				q(11692, {	-- Check in With Bixie
-					["provider"] = { "n", 25702 },	-- Mordle Cogspinner
+					["coord"] = { 57.5, 18.6, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11710,
+					["provider"] = { "n", 25702 },	-- Mordle Cogspinner
+					["sourceQuest"] = 11710,	-- What's the Matter with the Transmatter?
 				}),
 				q(11906, {	-- Cleaning Up the Pools
-					["provider"] = { "n", 26104 },	-- Iron Eyes
-					["races"] = HORDE_ONLY,
 					["coord"] = { 76.9, 37.6, 114 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26104 },	-- Iron Eyes
 					["sourceQuest"] = 11895,	-- Master the Storm
 					["g"] = {
 						i(37275),	-- Mantle of Congealed Anger
@@ -233,14 +246,16 @@ _.Zones =
 						i(37478),	-- Amberplate Grips
 					},
 				}),
-				q(13270, {	-- Cloth Scavenging
-					["provider"] = { "n", 26969 },	-- Raenah
-					["races"] = HORDE_ONLY,
-					["requireSkill"] = 197,	-- Tailoring
-				}),
-				q(13265, {	-- Cloth Scavenging
+				q(13265, {	-- Cloth Scavenging (A)
+					["coord"] = { 57.4, 72.2, 114 },
 					["provider"] = { "n", 27001 },	-- Darin Goodstitch
 					["races"] = ALLIANCE_ONLY,
+					["requireSkill"] = 197,	-- Tailoring
+				}),
+				q(13270, {	-- Cloth Scavenging (H)
+					["coord"] = { 41.6, 53.4, 114 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26969 },	-- Raenah
 					["requireSkill"] = 197,	-- Tailoring
 				}),
 				q(13412, {	-- Corastrasza
@@ -254,8 +269,9 @@ _.Zones =
 					["sourceQuest"] = 11709,	-- Nork Bloodfrenzy's Charge
 				}),
 				q(11932, {	-- Cowards and Fools
-					["provider"] = { "n", 25395 },	-- Private Brau
+					["coord"] = { 56.6, 71.4, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25395 },	-- Private Brau
 					["sourceQuest"] = 11604,	-- A Deserter
 				}),
 				q(11931, {	-- Cracking the Code
@@ -269,9 +285,14 @@ _.Zones =
 					["description"] = "Offered once you kill the |cFFFFD700Riplash Myrmidon|r attacking the prisoner.",
 				}),
 				q(11920, {	-- Cultists Among Us
+					["coord"] = { 57.5, 69.1, 114 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 187851 },	-- Cultist Shrine
+					["description"] = "Must have or complete |cFFFFD700A Soldier in Need|r to see this quest.",
 					["sourceQuest"] = 11789,	-- A Soldier In Need
+				}),
+				q(11790, {	-- Cultists Among Us (NYI - duplicate)
+					["u"] = 1,
 				}),
 				q(11602, {	-- Cutting Off the Source
 					["provider"] = { "n", 25279 },	-- Overlord Razgor
@@ -293,8 +314,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(11889, {	-- Death From Above
-					["provider"] = { "n", 25816 },	-- Sergeant Hammerhill
+					["coord"] = { 56.3, 69.5, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25816 },	-- Sergeant Hammerhill
 					["sourceQuest"] = 11797,	-- The Siege
 				}),
 				q(11909, {	-- Defeat the Gearmaster
@@ -311,9 +333,10 @@ _.Zones =
 					},
 				}),
 				q(11723, {	-- Deploy the Shake-n-Quake!
-					["provider"] = { "n", 25780 },	-- Abner Fizzletorque
+					["coord"] = { 57.0, 20.1, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11718,
+					["provider"] = { "n", 25780 },	-- Abner Fizzletorque
+					["sourceQuest"] = 11718,	-- A Bot in Mammoth's Clothing
 					["g"] = {
 						i(37228),	-- Sweltering Cuffs
 						i(37375),	-- Rhinohide Gloves
@@ -322,14 +345,17 @@ _.Zones =
 					},
 				}),
 				q(11645, {	-- Dirty, Stinkin' Snobolds!
-					["provider"] = { "n", 25477 },	-- Crafty Wobblesprocket
+					["coord"] = { 58.1, 18.3, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11708,
+					["provider"] = { "n", 25477 },	-- Crafty Wobblesprocket
+					["sourceQuest"] = 11708,	-- The Mechagnomes
 				}),
 				q(11707, {	-- Distress Call
-					["provider"] = { "n", 25737 },	-- Airman Skyhopper
+					["coord"] = { 58.8, 68.7, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11897,	--
+					["provider"] = { "n", 25737 },	-- Airman Skyhopper
+					["sourceQuest"] = 11897,	-- Plug the Sinkholes -- TODO: this doesn't appear to be correct but I didn't catch exactly when it became available
+					["isBreadcrumb"] = true,
 				}),
 				q(11682, {	-- Dragonspeak
 					["provider"] = { "n", 25785 },	-- Archmage Evanor
@@ -359,14 +385,16 @@ _.Zones =
 					["sourceQuest"] = 11864,	-- A Mission Statement
 				}),
 				q(11795, {	-- Emergency Protocol: Section 8.2, Paragraph C
-					["provider"] = { "n", 25807 },	-- Iggy "Tailspin" Cogtoggle
+					["coord"] = { 61.6, 35.7, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11728,
+					["provider"] = { "n", 25807 },	-- Iggy "Tailspin" Cogtoggle
+					["sourceQuest"] = 11728,	-- Lupus Pupus
 				}),
 				q(11796, {	-- Emergency Protocol: Section 8.2, Paragraph D
-					["provider"] = { "n", 25807 },	-- Iggy "Tailspin" Cogtoggle
+					["coord"] = { 61.6, 35.7, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11795,
+					["provider"] = { "n", 25807 },	-- Iggy "Tailspin" Cogtoggle
+					["sourceQuest"] = 11795,	-- Emergency Protocol: Section 8.2, Paragraph C
 				}),
 				q(11887, {	-- Emergency Supplies
 					["provider"] = { "n", 25984 },	-- Crashed Recon Pilot
@@ -374,8 +402,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(11792, {	-- Enemies of the Light
-					["provider"] = { "n", 25285 },	-- Harbinger Vurenn
+					["coord"] = { 56.6, 72.4, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25285 },	-- Harbinger Vurenn
 					["sourceQuest"] = 11791,	-- Notify Arlos
 					["g"] = {
 						i(36888),	-- Marshwalker Legguards
@@ -385,8 +414,9 @@ _.Zones =
 					},
 				}),
 				q(11672, {	-- Enlistment Day
-					["provider"] = { "n", 25307 },	-- Recruitment Officer Blythe
+					["coord"] = { 57.8, 67.5, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25307 },	-- Recruitment Officer Blythe
 					["sourceQuest"] = 28709,	-- Hero's Call: Borean Tundra!
 				}),
 				q(11570, {	-- Escape from the Winterfin Caverns
@@ -431,8 +461,9 @@ _.Zones =
 					["sourceQuest"] = 11631,	-- Vision of Air
 				}),
 				q(11928, {	-- Farshire
-					["provider"] = { "n", 25816 },	-- Sergeant Hammerhill
+					["coord"] = { 56.3, 69.5, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25816 },	-- Sergeant Hammerhill
 					["sourceQuest"] = 11897,	-- Plug the Sinkholes
 					["isBreadcrumb"] = true,
 				}),
@@ -443,13 +474,15 @@ _.Zones =
 					["sourceQuest"] = 11677,
 				}),
 				q(11725, {	-- Finding Pilot Tailspin
+					["coord"] = { 56.9, 18.7, 114 },
+					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 25590 },	-- Fizzcrank Fullthrottle
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11712,
+					["sourceQuest"] = 11712,	-- Re-Cursive
 				}),
-				q(11956, {	-- Finding the Phylactery
-					["provider"] = { "n", 26170 },	-- Thassarian
+				q(11956, {	-- Finding the Phylactery -- aa
+					["coord"] = { 84.7, 41.6, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26170 },	-- Thassarian
 				}),
 				q(11705, {	-- Foolish Endeavors
 					["provider"] = { "n", 25729 },	-- Shadowstalker Getry
@@ -469,18 +502,21 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(11904, {	-- Fruits of Our Labor
-					["provider"] = { "n", 26083 },	-- Gerald Green
+					["coord"] = { 58.2, 62.8, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26083 },	-- Gerald Green
 					["sourceQuest"] = 11903,	-- It's Time for Action
 				}),
 				q(11715, {	-- Fueling the Project
-					["provider"] = { "n", 25780 },	-- Abner Fizzletorque
+					["coord"] = { 57.0, 20.1, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11713,
+					["provider"] = { "n", 25780 },	-- Abner Fizzletorque
+					["sourceQuest"] = 11713,	-- Scouting the Sinkholes
 				}),
 				q(11793, {	-- Further Investigation
-					["provider"] = { "n", 25285 },	-- Harbinger Vurenn
+					["coord"] = { 56.6, 72.4, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25285 },	-- Harbinger Vurenn
 					["sourceQuest"] = 11792,	-- Enemies of the Light
 				}),
 				q(11619, {	-- Gamel the Cruel
@@ -501,8 +537,9 @@ _.Zones =
 					["sourceQuest"] = 11720,	-- The Invasion of Gammoth
 				}),
 				q(11673, {	-- Get Me Outa Here!
-					["provider"] = { "n", 25589 },	-- Bonker Togglevolt
+					["coord"] = { 55.5, 12.5, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25589 },	-- Bonker Togglevolt
 					["g"] = {
 						i(37049),	-- Lost Marksman's Rifle
 						i(37047),	-- Branch of Everlasting Flame
@@ -516,9 +553,10 @@ _.Zones =
 					["sourceQuest"] = 11686,	-- The Warsong Farms
 				}),
 				q(11873, {	-- Give Fizzcrank the News
-					["provider"] = { "n", 25807 },	-- Iggy "Tailspin" Cogtoggle
+					["coord"] = { 61.6, 35.7, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11796,
+					["provider"] = { "n", 25807 },	-- Iggy "Tailspin" Cogtoggle
+					["sourceQuest"] = 11796,	-- Emergency Protocol: Section 8.2, Paragraph D
 					["g"] = {
 						i(37275),	-- Mantle of Congealed Anger
 						i(37351),	-- Reinforced Caribou-Hide Leggings
@@ -532,9 +570,10 @@ _.Zones =
 					["sourceQuest"] = 11562,	-- I'm Being Blackmailed By My Cleaner
 				}),
 				q(11653, {	-- Hah... You're Not So Big Now!
-					["provider"] = { "n", 25477 },	-- Crafty Wobblesprocket
+					["coord"] = { 58.1, 18.3, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11650,
+					["provider"] = { "n", 25477 },	-- Crafty Wobblesprocket
+					["sourceQuest"] = 11650,	-- Just a Few More Things...
 					["g"] = {
 						i(37272),	-- Wizzlenob Shoulder Covers
 						i(37388),	-- Reinforced Elastic Band
@@ -607,13 +646,15 @@ _.Zones =
 					["sourceQuest"] = 11560,	-- Oh Noes, the Tadpoles!
 				}),
 				q(11699, {	-- I'm Stuck in this Damned Cage... But Not For Long!
-					["provider"] = { "n", 25714 },	-- Tinky Wickwhistle
+					["coord"] = { 69.8, 14.7, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11697,
+					["provider"] = { "n", 25714 },	-- Tinky Wickwhistle
+					["sourceQuest"] = 11697,	-- Rats, Tinky Went into the Necropolis!
 				}),
 				q(11603, {	-- In Wine, Truth
-					["provider"] = { "n", 25245 },	-- James Deacon
+					["coord"] = { 58.2, 68.0, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25245 },	-- James Deacon
 					["sourceQuest"] = 11601,	-- Lost and Found
 				}),
 				q(11655, {	-- Into the Mist
@@ -622,9 +663,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(11670, {	-- It Was The Orcs, Honest!
-					["provider"] = { "n", 25477 },	-- Crafty Wobblesprocket
+					["coord"] = { 58.1, 18.3, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11658,
+					["provider"] = { "n", 25477 },	-- Crafty Wobblesprocket
+					["sourceQuest"] = 11658,	-- Plan B
 					["g"] = {
 						i(37054),	-- Frostbiter
 						i(37073),	-- Hungering Greatstaff
@@ -634,8 +676,9 @@ _.Zones =
 					},
 				}),
 				q(11903, {	-- It's Time for Action
-					["provider"] = { "n", 26083 },	-- Gerald Green
+					["coord"] = { 58.2, 62.8, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26083 },	-- Gerald Green
 					["sourceQuest"] = 11902,	-- Pernicious Evidence
 					["g"] = {
 						i(37208),	-- Transborean Bracers
@@ -645,9 +688,10 @@ _.Zones =
 					},
 				}),
 				q(11650, {	-- Just a Few More Things...
-					["provider"] = { "n", 25477 },	-- Crafty Wobblesprocket
+					["coord"] = { 58.1, 18.3, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11645,
+					["provider"] = { "n", 25477 },	-- Crafty Wobblesprocket
+					["sourceQuest"] = 11645,	-- Dirty, Stinkin' Snobolds!
 				}),
 				q(11637, {	-- Kaganishu
 					["provider"] = { "n", 25425 },	-- Farseer Grimwalker's Spirit
@@ -656,8 +700,12 @@ _.Zones =
 					["sourceQuest"] = 11635,	-- Farseer Grimwalker's Spirit
 				}),
 				q(11613, {	-- Karuk's Oath
-					["provider"] = { "n", 25435 },	-- Karuk
 					["coord"] = { 47.1, 75.4, 114 },
+					["provider"] = { "n", 25435 },	-- Karuk
+					["sourceQuests"] = {
+						12141,	-- A Diplomatic Mission
+						11662,	-- Seek Out Karuk!
+					},
 					["g"] = {
 						i(37025),	-- Blubber Carver
 						i(37023),	-- Compact Arrow Launcher
@@ -665,10 +713,6 @@ _.Zones =
 						i(37022),	-- Shark Stabber
 						i(37021),	-- Claw of the Tuskarr
 						i(37026),	-- Spirit Channeller's Rod
-					},
-					["sourceQuests"] = {
-						12141,	-- A Diplomatic Mission
-						11662,	-- Seek Out Karuk!
 					},
 				}),
 				q(11879, {	-- Kaw the Mammoth Destroyer
@@ -709,21 +753,23 @@ _.Zones =
 					["coord"] = { 57.1, 44.3, 114 },
 					["sourceQuest"] = 11876,	-- Help Those That Cannot Help Themselves
 				}),
-				q(11704, {	-- King Mrgl-Mrgl
-					["provider"] = { "n", 25702 },	-- Mordle Cogspinner
+				q(11704, {	-- King Mrgl-Mrgl (A)
+					["coord"] = { 57.5, 18.6, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25702 },	-- Mordle Cogspinner
 					["sourceQuest"] = 11708,	-- The Mechagnomes
 					["isBreadcrumb"] = true,
 				}),
-				q(11702, {	-- King Mrgl-Mrgl
+				q(11702, {	-- King Mrgl-Mrgl (H)
 					["provider"] = { "n", 25736 },	-- Supply Master Taz'ishi
 					["coord"] = { 48.9, 10.2, 114 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(12019, {	-- Last Rites
-					["provider"] = { "n", 26170 },	-- Thassarian
+					["coord"] = { 84.7, 41.6, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26170 },	-- Thassarian
 					["sourceQuest"] = 11942,	-- Words of Power
 					["g"] = {
 						i(38238),	-- Borean Smasher
@@ -754,14 +800,16 @@ _.Zones =
 					},
 				}),
 				q(11788, {	-- Lefty Loosey, Righty Tighty
-					["provider"] = { "n", 25747 },	-- Jinky Wingnut
+					["coord"] = { 57.4, 18.7, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11712,
+					["provider"] = { "n", 25747 },	-- Jinky Wingnut
+					["sourceQuest"] = 11712,	-- Re-Cursive
 				}),
 				q(11700, {	-- Let Bixie Know
-					["provider"] = { "n", 25714 },	-- Tinky Wickwhistle
+					["coord"] = { 69.8, 14.7, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11699,
+					["provider"] = { "n", 25714 },	-- Tinky Wickwhistle
+					["sourceQuest"] = 11699,	-- I'm Stuck in this Damned Cage... But Not For long!
 				}),
 				q(11881, {	-- Load'er Up!
 					["provider"] = { "n", 25849 },	-- Fezzix Geartwist
@@ -769,14 +817,16 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(11601, {	-- Lost and Found
-					["provider"] = { "n", 25251 },	-- Leryssa
+					["coord"] = { 58.7, 68.3, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25251 },	-- Leryssa
 					["sourceQuest"] = 11600,	-- The Late William Allerton
 				}),
 				q(11728, {	-- Lupus Pupus
-					["provider"] = { "n", 25807 },	-- Iggy "Tailspin" Cogtoggle
+					["coord"] = { 61.6, 35.7, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11726,
+					["provider"] = { "n", 25807 },	-- Iggy "Tailspin" Cogtoggle
+					["sourceQuest"] = 11726,	-- A Little Bit of Spice
 				}),
 				q(11636, {	-- Magic Carpet Ride
 					["provider"] = { "n", 25289 },	-- Wind Master To'bor
@@ -790,9 +840,10 @@ _.Zones =
 					["provider"] = { "o", 187905 },	-- Massive Glowing Egg
 				}),
 				q(11730, {	-- Master and Servant
-					["provider"] = { "n", 25477 },	-- Crafty Wobblesprocket
+					["coord"] = { 58.1, 18.3, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11729,
+					["provider"] = { "n", 25477 },	-- Crafty Wobblesprocket
+					["sourceQuest"] = 11729,	-- The Ultrasonic Screwdriver
 					["g"] = {
 						i(37270),	-- Layered Frost Robes
 						i(37353),	-- Reinforced Caribou-Hide Helm
@@ -819,9 +870,10 @@ _.Zones =
 					["sourceQuest"] = 11615,	-- Nerub'ar Secrets
 				}),
 				q(11698, {	-- Might As Well Wipe Out the Scourge
-					["provider"] = { "n", 25705 },	-- Bixie Wrenchshanker
+					["coord"] = { 73.4, 18.7, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11694,
+					["provider"] = { "n", 25705 },	-- Bixie Wrenchshanker
+					["sourceQuest"] = 11694,	-- There's Something Going On In Those Caves
 					["g"] = {
 						i(37239),	-- Layered Frost Sandals
 						i(37355),	-- Reinforced Caribou-Hide Chestguard
@@ -830,8 +882,9 @@ _.Zones =
 					},
 				}),
 				q(11901, {	-- Military? What Military?
-					["provider"] = { "n", 26083 },	-- Gerald Green
+					["coord"] = { 58.2, 62.8, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26083 },	-- Gerald Green
 					["sourceQuest"] = 11928,	-- Farshire
 				}),
 				q(11643, {	-- Mobu's Pneumatic Tank Transjigamarig
@@ -905,9 +958,10 @@ _.Zones =
 					},
 				}),
 				q(11575, {	-- Nick of Time
-					["provider"] = { "n", 25249 },	-- Midge
+					["coord"] = { 58.4, 67.7, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11897,
+					["provider"] = { "n", 25249 },	-- Midge
+					["sourceQuest"] = 11897,	-- Plug the Sinkholes
 				}),
 				q(11709, {	-- Nork Bloodfrenzy's Charge
 					["provider"] = { "n", 25237 },	-- Garrosh Hellscream
@@ -931,8 +985,9 @@ _.Zones =
 					},
 				}),
 				q(11791, {	-- Notify Arlos
-					["provider"] = { "n", 25299 },	-- Admiral Cantlebree
+					["coord"] = { 57.7, 69.1, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25299 },	-- Admiral Cantlebree
 					["sourceQuest"] = 11920,	-- Cultists Among Us
 				}),
 				q(11912, {	-- Nuts for Berries
@@ -940,9 +995,10 @@ _.Zones =
 					["coord"] = { 33.4, 34.3, 114 },
 				}),
 				q(11693, {	-- Oh Great... Plagued Magnataur!
-					["provider"] = { "n", 25705 },	-- Bixie Wrenchshanker
+					["coord"] = { 73.4, 18.7, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11692,
+					["provider"] = { "n", 25705 },	-- Bixie Wrenchshanker
+					["sourceQuest"] = 11692,	-- Check in With Bixie
 				}),
 				q(11560, {	-- Oh Noes, the Tadpoles!
 					["provider"] = { "n", 25197 },	-- King Mrgl-Mrgl
@@ -956,8 +1012,9 @@ _.Zones =
 					},
 				}),
 				q(11962, {	-- One Last Delivery
-					["provider"] = { "n", 26083 },	-- Gerald Green
+					["coord"] = { 58.2, 62.8, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26083 },	-- Gerald Green
 					["sourceQuest"] = 11904,	-- Fruits of Our Labor
 				}),
 				q(11661, {	-- Orabus the Helmsman
@@ -995,6 +1052,7 @@ _.Zones =
 					},
 				}),
 				q(11902, {	-- Pernicious Evidence
+					["coord"] = { 56.8, 55.5, 114 },
 					["races"] = ALLIANCE_ONLY,
 					["objectID"] = 188085,	-- Plagued Grain
 					["sourceQuest"] = 11901,	-- Military? What Military?
@@ -1005,13 +1063,15 @@ _.Zones =
 					["sourceQuest"] = 11607,	-- The Lost Spirits
 				}),
 				q(11658, {	-- Plan B
-					["provider"] = { "n", 25477 },	-- Crafty Wobblesprocket
+					["coord"] = { 58.1, 18.3, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11653,
+					["provider"] = { "n", 25477 },	-- Crafty Wobblesprocket
+					["sourceQuest"] = 11653,	-- Hah... You're Not So Big Now!
 				}),
 				q(11897, {	-- Plug the Sinkholes
-					["provider"] = { "n", 25816 },	-- Sergeant Hammerhill
+					["coord"] = { 56.3, 69.5, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25816 },	-- Sergeant Hammerhill
 					["sourceQuest"] = 11889,	-- Death From Above
 					["g"] = {
 						i(36884),	-- Transborean Cover
@@ -1050,14 +1110,16 @@ _.Zones =
 					["provider"] = { "i", 35648 },	-- Scintillating Fragment
 				}),
 				q(11697, {	-- Rats, Tinky Went into the Necropolis!
-					["provider"] = { "n", 25705 },	-- Bixie Wrenchshanker
+					["coord"] = { 73.4, 18.7, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11694,
+					["provider"] = { "n", 25705 },	-- Bixie Wrenchshanker
+					["sourceQuest"] = 11694,	-- There's Something Going On In Those Caves
 				}),
 				q(11712, {	-- Re-Cursive
-					["provider"] = { "n", 25747 },	-- Jinky Wingnut
+					["coord"] = { 57.4, 18.7, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11708,
+					["provider"] = { "n", 25747 },	-- Jinky Wingnut
+					["sourceQuest"] = 11708,	-- The Mechagnomes
 					["g"] = {
 						i(37234),	-- Layered Frost Hood
 						i(37356),	-- Rhinohide Wristwraps
@@ -1074,8 +1136,9 @@ _.Zones =
 					["coord"] = { 54.2, 36.0, 114 },
 				}),
 				q(11908, {	-- Reference Material
-					["provider"] = { "n", 26084 },	-- Jeremiah Hawning
+					["coord"] = { 58.1, 62.9, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26084 },	-- Jeremiah Hawning
 					["sourceQuest"] = 11902,	-- Pernicious Evidence
 				}),
 				q(11679, {	-- Reforging the Key
@@ -1096,8 +1159,9 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(12035, {	-- Repurposed Technology
-					["provider"] = { "n", 26084 },	-- Jeremiah Hawning
+					["coord"] = { 58.1, 62.9, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26084 },	-- Jeremiah Hawning
 					["sourceQuest"] = 11908,	-- Reference Material
 					["g"] = {
 						i(37206),	-- Weathered Worker Cloak
@@ -1185,12 +1249,13 @@ _.Zones =
 						i(37562),	-- Fury of the Crimson Drake
 					},
 				}),
-				q(11713, {	-- Scouting the Sinkholes
-					["provider"] = { "n", 25780 },	-- Abner Fizzletorque
+				q(11713, {	-- Scouting the Sinkholes (A)
+					["coord"] = { 57.0, 20.1, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11873,
+					["provider"] = { "n", 25780 },	-- Abner Fizzletorque
+					["sourceQuest"] = 11873,	-- Give Fizzcrank the News
 				}),
-				q(11684, {	-- Scouting the Sinkholes
+				q(11684, {	-- Scouting the Sinkholes (H)
 					["provider"] = { "n", 24702 },	-- Greatfather Mahan
 					["races"] = HORDE_ONLY,
 					["coord"] = { 77.0, 37.8, 114 },
@@ -1284,8 +1349,9 @@ _.Zones =
 					},
 				}),
 				q(11944, {	-- Surrounded!
-					["provider"] = { "n", 26187 },	-- Corporal Venn
+					["coord"] = { 82.0, 46.4, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26187 },	-- Corporal Venn
 					["sourceQuest"] = 12086,	-- The Son of Karkut
 					["g"] = {
 						i(37214),	-- Sweltering Leggings
@@ -1295,8 +1361,9 @@ _.Zones =
 					},
 				}),
 				q(11913, {	-- Take No Chances
-					["provider"] = { "n", 26085 },	-- Wendy Darren
+					["coord"] = { 58.2, 62.7, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26085 },	-- Wendy Darren
 					["sourceQuest"] = 11902,	-- Pernicious Evidence
 					["g"] = {
 						i(37205),	-- Transborean Mantle
@@ -1352,13 +1419,18 @@ _.Zones =
 					},
 				}),
 				q(11599, {	-- Thassarian, My Brother
-					["provider"] = { "n", 25251 },	-- Leryssa
+					["coord"] = { 58.7, 68.3, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11927,	-- Word on the Street
+					["provider"] = { "n", 25251 },	-- Leryssa
+					["sourceQuests"] = {
+						11897,	-- Plug the Sinkholes
+						11927,	-- Word on the Street
+					},
 				}),
 				q(12088, {	-- Thassarian, the Death Knight
-					["provider"] = { "n", 26187 },	-- Corporal Venn
+					["coord"] = { 82.0, 46.4, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26187 },	-- Corporal Venn
 					["sourceQuest"] = 11944,	-- Surrounded!
 				}),
 				q(11870, {	-- The Abandoned Reach
@@ -1480,9 +1552,10 @@ _.Zones =
 					["sourceQuest"] = 11898,	-- Breaking Through
 				}),
 				q(11798, {	-- The Gearmaster
-					["provider"] = { "n", 25747 },	-- Jinky Wingnut
+					["coord"] = { 57.4, 18.7, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11788,
+					["provider"] = { "n", 25747 },	-- Jinky Wingnut
+					["sourceQuest"] = 11788,	-- Lefty Loosey, Righty Tighty
 					["g"] = {
 						i(37274),	-- Mender's Cover
 						i(37352),	-- Regenerative Hide Harness
@@ -1512,8 +1585,9 @@ _.Zones =
 					["sourceQuest"] = 11685,	-- The Heart of the Elements
 				}),
 				q(11794, {	-- The Hunt is On
-					["provider"] = { "n", 25826 },	-- Vindicator Yaala
+					["coord"] = { 58.5, 67.3, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25826 },	-- Vindicator Yaala
 					["sourceQuest"] = 11793,	-- Further Investigation
 					["g"] = {
 						i(37204),	-- Transborean Leggings
@@ -1529,8 +1603,9 @@ _.Zones =
 					["sourceQuest"] = 11719,	-- A Suitable Test Subject
 				}),
 				q(11600, {	-- The Late William Allerton
-					["provider"] = { "n", 25385 },	-- William Allerton
+					["coord"] = { 56.0, 55.4, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25385 },	-- William Allerton
 					["sourceQuest"] = 11599,	-- Thassarian, My Brother
 					["g"] = {
 						i(37207),	-- Seafarer Boots
@@ -1540,8 +1615,9 @@ _.Zones =
 					},
 				}),
 				q(12157, {	-- The Lost Courier
-					["provider"] = { "n", 26186 },	-- Private Casey
+					["coord"] = { 82.0, 46.4, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26186 },	-- Private Casey
 					["isBreadcrumb"] = true,
 				}),
 				q(11607, {	-- The Lost Spirits
@@ -1550,15 +1626,16 @@ _.Zones =
 					["sourceQuest"] = 11605,	-- The Honored Ancestors
 				}),
 				q(12794, {	-- The Magical Kingdom of Dalaran
-					["provider"] = { "n", 29158 },	-- Magister Dath'omere
+					["coord"] = { 58.6, 68.2, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29158 },	-- Magister Dath'omere
 					["isBreadcrumb"] = true,
 				}),
 				q(11708, {	-- The Mechagnomes
-					["provider"] = { "n", 25590 },	-- Fizzcrank Fullthrottle
+					["coord"] = { 56.9, 18.7, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25590 },	-- Fizzcrank Fullthrottle
 					["sourceQuest"] = 11707,	-- Distress Call
-					["isBreadcrumb"] = true,
 				}),
 				q(11872, {	-- The Nefarious Clam Master...
 					["provider"] = { "n", 25838 },	-- Hierophant Liandra
@@ -1592,8 +1669,10 @@ _.Zones =
 					["sourceQuest"] = 11881,	-- Load'er Up!
 				}),
 				q(11797, {	-- The Siege
-					["provider"] = { "n", 25816 },	-- Sergeant Hammerhill
+					["coord"] = { 56.3, 69.5, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25816 },	-- Sergeant Hammerhill
+					["sourceQuest"] = 11727,	-- A Time for Heroes
 					["g"] = {
 						i(36883),	-- Combatant Greatsword
 						i(38208),	-- Valiance Longbow
@@ -1610,8 +1689,9 @@ _.Zones =
 					["sourceQuest"] = 12486,	-- To Bor'gorok Outpost, Quickly!
 				}),
 				q(12086, {	-- The Son of Karkut
-					["provider"] = { "n", 26169 },	-- Ataika
+					["coord"] = { 63.8, 46.1, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26169 },	-- Ataika
 					["sourceQuest"] = 11932,	-- Cowards and Fools
 				}),
 				q(11565, {	-- The Spare Suit
@@ -1652,6 +1732,12 @@ _.Zones =
 				q(11729, {	-- The Ultrasonic Screwdriver
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 34984 },	-- The Ultrasonic Screwdriver
+					["crs"] = {
+						25753,	-- Sentry-Bot 57-K
+						25752,	-- Scavenge-bot 004-A8
+						25758,	-- Defendo-tank 66D
+						25793,	-- 55-D Collect-A-Tron
+					},
 				}),
 				q(11686, {	-- The Warsong Farms
 					["provider"] = { "n", 25437 },	-- Shadowstalker Ickoris
@@ -1670,9 +1756,10 @@ _.Zones =
 					["sourceQuest"] = 11559,	-- Winterfin Commerce
 				}),
 				q(11694, {	-- There's Something Going On In Those Caves
-					["provider"] = { "n", 25705 },	-- Bixie Wrenchshanker
+					["coord"] = { 73.4, 18.7, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11693,
+					["provider"] = { "n", 25705 },	-- Bixie Wrenchshanker
+					["sourceQuest"] = 11693,	-- Oh Great... Plagued Magnataur!
 					["g"] = {
 						i(37223),	-- Sweltering Handwraps
 						i(37391),	-- Rhinohide Mask
@@ -1789,8 +1876,9 @@ _.Zones =
 					["sourceQuest"] = 11895,	-- Master the Storm
 				}),
 				q(11963, {	-- Weapons for Farshire
-					["provider"] = { "n", 25235 },	-- Hilda Stoneforge
+					["coord"] = { 57.3, 66.6, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 25235 },	-- Hilda Stoneforge
 					["sourceQuest"] = 11962,	-- One Last Delivery
 				}),
 				q(11890, {	-- What Are They Up To?
@@ -1811,9 +1899,10 @@ _.Zones =
 					},
 				}),
 				q(11710, {	-- What's the Matter with the Transmatter?
-					["provider"] = { "n", 25702 },	-- Mordle Cogspinner
+					["coord"] = { 57.5, 18.6, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11708,
+					["provider"] = { "n", 25702 },	-- Mordle Cogspinner
+					["sourceQuest"] = 11708,	-- The Mechagnomes
 				}),
 				q(11634, {	-- Wind Master To'bor
 					["provider"] = { "n", 25279 },	-- Overlord Razgor
@@ -1827,17 +1916,19 @@ _.Zones =
 					["sourceQuest"] = 11571,	-- Learning to Communicate
 				}),
 				q(11927, {	-- Word on the Street
-					["provider"] = { "n", 26155 },	-- Mark Hanes
+					["coord"] = { 56.7, 69.5, 114 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 11897,
+					["provider"] = { "n", 26155 },	-- Mark Hanes
+					["sourceQuest"] = 11897,	-- Plug the Sinkholes
 					["isBreadcrumb"] = true,
 				}),
-				q(11942, {	-- Words of Power
-					["provider"] = { "n", 26170 },	-- Thassarian
+				q(11942, {	-- Words of Power (A)
+					["coord"] = { 84.7, 41.6, 114 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26170 },	-- Thassarian
 					["sourceQuest"] = 11938,	-- Buying Some Time
 				}),
-				q(11640, {	-- Words of Power
+				q(11640, {	-- Words of Power (H)
 					["provider"] = { "n", 24703 },	-- Chieftain Wintergale
 					["coord"] = { 75.8, 37.2, 114 },
 					["races"] = HORDE_ONLY,
