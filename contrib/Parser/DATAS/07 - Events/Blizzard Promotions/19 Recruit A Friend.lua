@@ -49,7 +49,7 @@ _.WorldEvents =
 				un(3, i(171363)),	-- Illusion: Stinging Sands
 				un(3, i(173299)),	-- Keys to the Explorer's Jungle Hopper (MOUNT!)
 				un(3, i(173297)),	-- Reins of the Explorer's Dunetrekker (MOUNT!)
-				un(3, title(662)),	-- Renowned Explorer <Name>
+				un(3, title(410)),	-- Renowned Explorer <Name>
 				un(3, i(171333)),	-- Renowned Explorer's Rucksack
 				un(3, i(171361)),	-- Renowned Explorer's Tabard
 				un(3, i(173296)),	-- Rikki (PET!)

@@ -157,11 +157,9 @@ _.PetJournal =
 		p(1176),			-- Red Panda
 		p(2525),			-- Redridge Tarantula
 		p(1756),			-- Ridgeback Piglet
---[[
-		p(, {				-- Rikki
+		p(2776, {			-- Rikki
 			["u"] = 3,	-- Blizzard Promotion (RAF)
 		}),
---]]
 		p(1453),			-- River Calf
 		p(482),				-- Rock Viper
 		p(1749),			-- Rose Taipan

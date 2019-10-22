@@ -491,10 +491,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(53316, {	-- Hardened Monelite
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(51711, {	-- Having a Blast
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1473,6 +1469,11 @@ _.Zones =
 					q(52463, {	-- Haegol the Hammer
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
+					}),
+					q(53316, {	-- Hardened Monelite
+						["isWorldQuest"] = true,
+						["requireSkill"] = 186,	-- Mining
+						["lvl"] = 120,
 					}),
 					q(53717, {	-- Hold the Highland
 						["isWorldQuest"] = true,
