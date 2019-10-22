@@ -27,7 +27,6 @@ _.Zones =
 					q(46833),	-- Nature Unshackled
 					q(45793),	-- Occultist Onslaught
 					q(46752),	-- On Borrowed Wings
-					q(45797),	-- Playing with Green Fire
 					q(45929),	-- Purging the Flames
 					q(45549),	-- Salving the Corruption
 					q(46945),	-- Si'vash
@@ -217,6 +216,10 @@ _.Zones =
 				q(45792, {	-- Occultist Onslaught
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
+				}),
+				q(45797, {	-- Playing with Green Fire
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 				q(46180, {	-- Power of Our Enemy
 					["lvl"] = 110,
