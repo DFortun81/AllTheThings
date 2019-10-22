@@ -1736,7 +1736,10 @@ _.ExpansionFeatures =
 						["altQuests"] = { 57152 },	-- Most Loyal (Sylvanas Version)
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
-						["maps"] = { 1535 },	-- Durotar (Scenario)
+						["maps"] = {
+							1534,	-- Orgrimmar (Scenario)
+							1535,	-- Durotar (Scenario)
+						},
 					}),
 					q(57152, {	-- Most Loyal (Sylvanas Version)
 					--	["provider"] = { "n", 155789 },	-- Lor'themar Theron
@@ -1748,7 +1751,10 @@ _.ExpansionFeatures =
 						["altQuests"] = { 57095 },	-- Old Soldier
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
-						["maps"] = { 1535 },	-- Durotar (Scenario)
+						["maps"] = {
+							1534,	-- Orgrimmar (Scenario)
+							1535,	-- Durotar (Scenario)
+						},
 					}),
 					
 					--	unsorted below this point
