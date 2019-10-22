@@ -1532,6 +1532,10 @@ _.ExpansionFeatures =
 									i(119037),  -- Supply of Storied Rarities
 								},
 							}),
+							q(37119, {	-- The Headhunter's Harvest
+								["provider"] = { "n", 84947 },	-- Lysa Serion
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(37164, {	-- The Huntresses
 								["provider"] = { "n", 88003 },	--  Cowled Ranger
 								["g"] = {

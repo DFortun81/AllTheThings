@@ -1508,6 +1508,10 @@ _.ExpansionFeatures =
 									i(119037), 	-- Supply of Storied Rarities
 								},
 							}),
+							q(37046, {	-- The Headhunter's Harvest
+								["provider"] = { "n", 87305 },	-- Akanja
+								["races"] = HORDE_ONLY,
+							}),
 							q(37164, {	-- The Huntresses
 								["provider"] = { "n", 88003 },	--  Cowled Ranger
 								["g"] = {
