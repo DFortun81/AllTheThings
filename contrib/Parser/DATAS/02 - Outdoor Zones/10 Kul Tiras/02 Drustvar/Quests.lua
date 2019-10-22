@@ -1256,10 +1256,11 @@ _.Zones =
 					-- Not required for "Drust Do It."
 				}),
 				q(47945, {	-- To Market, To Market
+					["sourceQuests"] = { 47982 },	-- The Final Effigy
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 128467 },	-- Elijah Eggleton
 					["coord"] = { 55.5, 34.8, 896 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 47982 },	-- The Final Effigy
 				}),
 				q(48182, {	-- Total Cairnage
 					["provider"] = { "n", 139926 },	-- Thornspeaker Birchgrove

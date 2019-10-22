@@ -3,11 +3,9 @@
 -----------------------------------------------------
 _.Instances = { tier(4, {	-- Cataclysm
 	inst(78, { 	-- Firelands
-		["sharedLockout"] = 1,
 		["isRaid"] = true,
 		["coord"] = { 47.3, 78.1, 198 },
-		["mapID"] = 367,
-		["maps"] = { 368, 369 },
+		["maps"] = { 367, 368, 369 },
 		["lvl"] = 85,
 		["g"] = {
 			ach(5802),	-- Firelands
@@ -296,8 +294,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(71367), 	-- Theck's Emberseal
 				},
 			}),
-			d(1,  {	-- Normal
-				["difficulties"] = { 3, 4 },
+			d(14, {	-- Normal
+				["difficulties"] = { 1, 3, 4 },
 				["g"] = {
 					n(-1,  {	-- Common Boss Drops
 						["crs"] = {
@@ -526,8 +524,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),	
 				},
 			}),
-			d(2,  {	-- Heroic
-				["difficulties"] = { 5, 6 },
+			d(15,  {	-- Heroic
+				["difficulties"] = { 2, 5, 6 },
 				["g"] = {
 					n(-2, {	-- Vendors
 						n(54402, {	-- Lurah Wrathvine
