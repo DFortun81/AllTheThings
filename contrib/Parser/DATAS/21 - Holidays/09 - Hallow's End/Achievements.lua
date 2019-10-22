@@ -1125,7 +1125,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { 125 },	-- Dalaran
 						}),
 						crit(6,  {	-- Dalaran, Sunreaver's Sanctuary
-							["coord"] = { 48.3, 40.8, 125 },
+							["coord"] = { 66.6, 30.1, 125 },
 							["maps"] = { 125 },	-- Dalaran
 						}),
 						crit(7,  {	-- Dalaran, The Underbelly
