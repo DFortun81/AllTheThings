@@ -76,6 +76,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25845,	-- Terms of Service
 					["g"] = {
+						i(57450),	-- Northwatch Amulet
 						i(57449),	-- Diplomat's Chestguard
 						i(57448),	-- Basecamp Leggings
 						i(131447),	-- Basecamp Breeches
@@ -95,6 +96,7 @@ _.Zones =
 					["g"] = {
 						i(57479),	-- Flamethrower's Gloves
 						i(57478),	-- Vest of Ashes
+						i(57477),	-- Overlord's Favor
 						i(131464),	-- Tunic of Ashes
 					},
 				}),
@@ -153,8 +155,10 @@ _.Zones =
 					["provider"] = { "o", 203186 },	-- STAY OUT!
 					["sourceQuest"] = 26004,	-- Krom'gar Fortress
 					["g"] = {
+						i(57483),	-- Cragpool Band
 						i(57482),	-- Anara's Belt
 						i(57481),	-- Fisherman's Gloves
+						i(57480),	-- Spy-Mistress' Necklace
 						i(131471),	-- Anara's Cord
 					},
 				}),
@@ -718,6 +722,7 @@ _.Zones =
 					["g"] = {
 						i(57491),	-- Spare Part Leggings
 						i(57490),	-- Blastgineer's Belt
+						i(57489),	-- Bombgutz Band
 						i(131472),	-- Blastgineer's Waistband
 					},
 				}),
@@ -727,6 +732,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26075,	-- The Turd Problem
 					["g"] = {
+						i(57500),	-- Crawling Amulet
 						i(57499),	-- Infested Breastplate
 						i(57498),	-- Bow of Invisible Aim
 					},
@@ -869,6 +875,7 @@ _.Zones =
 						i(57512),	-- Cliffwalker Boots
 						i(57511),	-- Belt of the Grieving Father
 						i(57510),	-- Masha's Armbands
+						i(57509),	-- Orthus' Amulet
 						i(131486),	-- Cinch of the Grieving Father
 					},
 				}),
@@ -899,6 +906,8 @@ _.Zones =
 					["g"] = {
 						i(57422),	-- Quiet Slippers
 						i(57423),	-- Overseer's Gloves
+						i(57421),	-- Amulet of Shrill Screams
+						i(57424),	-- Heliana's Ring
 						i(131878),	-- Overseer's Handguards
 					},
 				}),

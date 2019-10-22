@@ -37,18 +37,31 @@ _.Zones =
 					["coord"] = { 55.6, 60.8, 71 },
 					["sourceQuest"] = 24933,	-- Chicken of the Desert
 				}),
+				q(8925,  {	-- A Portable Power Source
+					["provider"] = { "n", 16014 },	-- Mux Manascrambler
+					["coord"] = { 52.0, 27.0 , 71 },
+					["sourceQuest"] = 8924,	-- Hunting for Ectoplasm
+					["lvl"] = 58,
+					["u"] = 40,
+				}),
+				q(8928,  {	-- A Shifty Merchant
+					["provider"] = { "n", 16014 },	-- Mux Manascrambler
+					["coord"] = { 52.0, 27.0 , 71 },
+					["sourceQuest"] = 8925,	-- A Portable Power Source
+					["lvl"] = 58,
+					["u"] = 40,
+				}),
 				q(26889, {	-- All Cheered Out
 					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
+					["coord"] = { 72.1, 45.2, 71 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25166,	-- Captain Dreadbeard
 				}),
 				q(25420, {	-- Ancient Obstacles
 					["provider"] = { "n", 40109 },	-- Prospector Gunstan
+					["coord"] = { 40.1, 76.8, 71 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = {
-						25565,	-- Fragments of Language
-						25559,	-- Laying Claim
-					},
+					["sourceQuests"] = { 28881 },	-- Prospector Gunstan
 					["g"] = {
 						i(56903),	-- Gatewatcher Belt
 						i(56904),	-- Decomissioner's Monnions
@@ -82,28 +95,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(2, i(8524)),	-- Model 4711-FTZ Power Source
-					},
-				}),
-				q(25421, {	-- The Grand Tablet
-					["coord"] = { 37.8, 82.4, 71 },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 202474 },	-- Antediluvean Chest
-					["sourceQuest"] = 25070,	-- What Lies Within
-					["g"] = {
-						i(56897),	-- Hieroglyphic Helm
-						i(56898),	-- Translation Boots
-						i(56899),	-- Rosy Tablet Belt
-					},
-				}),
-				q(25107, {	-- The Grand Tablet
-					["coord"] = { 37.8, 82.4, 71 },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
-					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 202474 },	-- Antediluvean Chest
-					["sourceQuest"] = 25070,	-- What Lies Within
-					["g"] = {
-						i(56900),	-- Hieroglyphic Helm
-						i(56901),	-- Translation Boots
-						i(56902),	-- Rosy Tablet Belt
 					},
 				}),
 				q(9269,  {	-- Atiesh, Greatstaff of the Guardian
@@ -169,22 +160,23 @@ _.Zones =
 					["provider"] = { "n", 39178 },	-- Driz Plunkbow
 					["coord"] = { 52.2, 28.0, 71 },
 				}),
-				q(4509,  {	-- Calm Before the Storm [Horde]
-					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
-					["coord"] = { 50.8, 27.0, 71 },
-					["sourceQuest"] = 4507,	-- Pawn Captures Queen
-					["races"] = HORDE_ONLY,
-					["u"] = 40,
-				}),
-				q(4508,  {	-- Calm Before the Storm [Alliance]
+				q(4508,  {	-- Calm Before the Storm (A)
 					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
 					["coord"] = { 50.8, 27.0, 71 },
 					["sourceQuest"] = 4507,	-- Pawn Captures Queen
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,
 				}),
-				q(25166, {	-- Captain Dreadbeard
+				q(4509,  {	-- Calm Before the Storm (H)
+					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
+					["coord"] = { 50.8, 27.0, 71 },
+					["sourceQuest"] = 4507,	-- Pawn Captures Queen
+					["races"] = HORDE_ONLY,
+					["u"] = 40,
+				}),
+				q(25166, {	-- Captain Dreadbeard (A)
 					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
+					["coord"] = { 72.1, 45.1, 71 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						26887,	-- Filling Our Pockets
@@ -198,7 +190,7 @@ _.Zones =
 						i(56870),	-- Impatient Boots
 					},
 				}),
-				q(24950, {	-- Captain Dreadbeard
+				q(24950, {	-- Captain Dreadbeard (H)
 					["provider"] = { "n", 38703 },	-- Megs Dreadshredder
 					["coord"] = { 71.8, 45.4, 71 },
 					["races"] = HORDE_ONLY,
@@ -260,6 +252,7 @@ _.Zones =
 				}),
 				q(25052, {	-- Dead Man's Chest
 					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
+					["coord"] = { 72.1, 45.1, 71 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25050,	-- Rocket Rescue
 					["g"] = {
@@ -283,6 +276,7 @@ _.Zones =
 				}),
 				q(25060, {	-- Define "Crazy"
 					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
+					["coord"] = { 49.9, 82.8, 71 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2874,  {	-- Deliver to MacKinley
@@ -320,6 +314,7 @@ _.Zones =
 				}),
 				q(26887, {	-- Filling Our Pockets
 					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
+					["coord"] = { 72.1, 45.1, 71 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25052,	-- Dead Man's Chest
@@ -333,11 +328,13 @@ _.Zones =
 					["sourceQuest"] = 24949,	-- Booty Duty
 				}),
 				q(351,   {	-- Find OOX-17/TN!
-					["provider"] = { "i", 8623 },	-- OOX-17/TN Distress Beacon
 					["description"] = "The item that starts this quest can be found as a zone drop in Tanaris or in Zul'Farrak.",
+					["provider"] = { "i", 8623 },	-- OOX-17/TN Distress Beacon
 				}),
 				q(25565, {	-- Fragments of Language
+					["sourceQuests"] = { 28881 },	-- Prospector Gunstan
 					["provider"] = { "n", 40109 },	-- Prospector Gunstan
+					["coord"] = { 40.1, 76.8, 71 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25020, {	-- Fragments of Language
@@ -385,6 +382,7 @@ _.Zones =
 				}),
 				q(26886, {	-- Going Off-Task
 					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
+					["coord"] = { 72.1, 45.1, 71 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25052,	-- Dead Man's Chest
@@ -406,6 +404,16 @@ _.Zones =
 					["g"] = {
 						i(165845),	-- Feathers (PET!)
 					},
+				}),
+				q(8924,  {	-- Hunting for Ectoplasm
+					["provider"] = { "n", 16014 },	-- Mux Manascrambler
+					["coord"] = { 52.0, 27.0 , 71 },
+					["sourceQuests"] = {
+						8922,	-- A Supernatural Device [Alliance]
+						8921,	-- The Ectoplasmic Distiller [Horde]
+					},
+					["lvl"] = 58,
+					["u"] = 40,
 				}),
 				q(25521, {	-- I'm With Scorpid
 					["provider"] = { "n", 40580 },	-- Gus Rustflutter
@@ -511,14 +519,18 @@ _.Zones =
 					},
 				}),
 				q(25061, {	-- Land's End
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 11811 },	-- Narain Soothfancy
+					["coord"] = { 55.2, 60.2, 71 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(25559, {	-- Laying Claim
+				q(25559, {	-- Laying Claim (A)
+					["sourceQuests"] = { 28881 },	-- Prospector Gunstan
 					["provider"] = { "n", 40109 },	-- Prospector Gunstan
+					["coord"] = { 40.1, 76.8, 71 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(25019, {	-- Laying Claim
+				q(25019, {	-- Laying Claim (H)
 					["provider"] = { "n", 38922 },	-- Examiner Andoren Dawnrise
 					["coord"] = { 33.2, 77.0, 71 },
 					["races"] = HORDE_ONLY,
@@ -530,6 +542,7 @@ _.Zones =
 				}),
 				q(25054, {	-- Lootin' Plunder
 					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
+					["coord"] = { 72.1, 45.1, 71 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25050,	-- Rocket Rescue
 				}),
@@ -541,6 +554,7 @@ _.Zones =
 				}),
 				q(25121, {	-- Momentum
 					["provider"] = { "n", 38535 },	-- Kelsey Steelspark
+					["coord"] = { 51.2, 29.8, 71 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25050,	-- Rocket Rescue
 					["isBreadcrumb"] = true,
@@ -601,7 +615,9 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(28881, {	-- Prospector Gunstan
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 39059 },	-- Kelsey steelspark
+					["coord"] = { 50.0, 82.8, 71 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25065,	-- You Too, Brute?
 				}),
@@ -644,6 +660,14 @@ _.Zones =
 						un(2, i(9634)),	-- Skilled Handling Gloves
 					},
 				}),
+				q(8977,  {	-- Return to Deliana
+					["provider"] = { "n", 16014 },	-- Mux Manascrambler
+					["coord"] = { 52.0, 27.0, 71 },
+					["sourceQuest"] = 8928,	-- A Shifty Merchant
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 58,
+					["u"] = 40,
+				}),
 				q(2977,  {	-- Return to Ironforge
 					["model"] = 201041,
 					["coord"] = { 37.6, 81.4, 71 },
@@ -651,6 +675,14 @@ _.Zones =
 					["sourceQuest"] = 2954,	-- The Stone Watcher
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
+					["u"] = 40,
+				}),
+				q(8978,  {	-- Return to Mokvar
+					["provider"] = { "n", 16014 },	-- Mux Manascrambler
+					["coord"] = { 52.0, 27.0, 71 },
+					["sourceQuest"] = 8928,	-- A Shifty Merchant
+					["races"] = HORDE_ONLY,
+					["lvl"] = 58,
 					["u"] = 40,
 				}),
 				q(53819, {	-- Return to the Nest
@@ -770,12 +802,12 @@ _.Zones =
 				q(38892, {	-- Scouting Report -- never went live
 					["u"] = 1,
 				}),
-				q(25048, {	-- Seaside Salvage
+				q(25048, {	-- Seaside Salvage (A)
 					["provider"] = { "n", 38535 },	-- Kelsey Steelspark
 					["coord"] = { 51.2, 29.9, 71 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(24906, {	-- Seaside Salvage
+				q(24906, {	-- Seaside Salvage (H)
 					["provider"] = { "n", 38534 },	-- Megs Dreadshredder
 					["coord"] = { 51.2, 29.9, 71 },
 					["races"] = HORDE_ONLY,
@@ -828,6 +860,7 @@ _.Zones =
 				}),
 				q(25063, {	-- Terrapination
 					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
+					["coord"] = { 49.9, 82.8, 71 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10296, {	-- The Black Morass
@@ -840,27 +873,27 @@ _.Zones =
 					["sourceQuest"] = 10279,	-- To The Master's Lair
 				}),
 				q(8766,  {	-- The Changing of Paths - Conqueror No More
+					["minReputation"] = { 910, EXALTED },
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["repeatable"] = true,
-					["description"] = "Only available when Exalted with the Brood of Nozdormu",
 					["g"] = {
 						i(21200),	-- Signet Ring of the Bronze Dragonflight
 						i(21210),	-- Signet Ring of the Bronze Dragonflight
 					},
 				}),
 				q(8765,  {	-- The Changing of Paths - Invoker No More
+					["minReputation"] = { 910, EXALTED },
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["repeatable"] = true,
-					["description"] = "Only available when Exalted with the Brood of Nozdormu",
 					["g"] = {
 						i(21200),	-- Signet Ring of the Bronze Dragonflight
 						i(21205),	-- Signet Ring of the Bronze Dragonflight
 					},
 				}),
 				q(8764,  {	-- The Changing of Paths - Protector No More
+					["minReputation"] = { 910, EXALTED },
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["repeatable"] = true,
-					["description"] = "Only available when Exalted with the Brood of Nozdormu",
 					["g"] = {
 						i(21210),	-- Signet Ring of the Bronze Dragonflight
 						i(21205),	-- Signet Ring of the Bronze Dragonflight
@@ -880,12 +913,42 @@ _.Zones =
 						un(2, i(16738)),	-- Witherseed Gloves
 					},
 				}),
+				q(8921,  {	-- The Ectoplasmic Distiller
+					["provider"] = { "n", 16014 },	-- Mux Manascrambler
+					["coord"] = { 52.0, 27.0, 71 },
+					["sourceQuest"] = 8923,	-- A Supernatural Device
+					["lvl"] = 58,
+					["u"] = 40,
+				}),
 				q(8761,  {	-- The Grand Invoker
+					["minReputation"] = { 910, EXALTED },
 					["isBreadcrumb"] = true,	-- Exalted Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8760,	-- The Path of the Invoker
 					["g"] = {
 						i(21210),	-- Signet Ring of the Bronze Dragonflight
+					},
+				}),
+				q(25421, {	-- The Grand Tablet (A)
+					["coord"] = { 37.8, 82.4, 71 },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 202474 },	-- Antediluvean Chest
+					["sourceQuest"] = 25070,	-- What Lies Within
+					["g"] = {
+						i(56897),	-- Hieroglyphic Helm
+						i(56898),	-- Translation Boots
+						i(56899),	-- Rosy Tablet Belt
+					},
+				}),
+				q(25107, {	-- The Grand Tablet (H)
+					["coord"] = { 37.8, 82.4, 71 },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 202474 },	-- Antediluvean Chest
+					["sourceQuest"] = 25070,	-- What Lies Within
+					["g"] = {
+						i(56900),	-- Hieroglyphic Helm
+						i(56901),	-- Translation Boots
+						i(56902),	-- Rosy Tablet Belt
 					},
 				}),
 				q(2773,  {	-- The Mithril Kid
@@ -899,6 +962,7 @@ _.Zones =
 					},
 				}),
 				q(8754,  {	-- The Path of the Conqueror
+					["minReputation"] = { 910, HONORED },
 					["isBreadcrumb"] = true,	-- Honored Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8753,	-- The Path of the Conquerer
@@ -907,6 +971,7 @@ _.Zones =
 					},
 				}),
 				q(8755,  {	-- The Path of the Conqueror
+					["minReputation"] = { 910, REVERED },
 					["isBreadcrumb"] = true,	-- Revered Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8754,	-- The Path of the Conquerer
@@ -915,6 +980,7 @@ _.Zones =
 					},
 				}),
 				q(8753,  {	-- The Path of the Conqueror
+					["minReputation"] = { 910, FRIENDLY },
 					["isBreadcrumb"] = true,	-- Friendly Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8752,	-- The Path of the Conquerer
@@ -923,6 +989,7 @@ _.Zones =
 					},
 				}),
 				q(8752,  {	-- The Path of the Conqueror
+					["minReputation"] = { 910, NEUTRAL },
 					["isBreadcrumb"] = true,	-- Neutral Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["g"] = {
@@ -930,6 +997,7 @@ _.Zones =
 					},
 				}),
 				q(8760,  {	-- The Path of the Invoker
+					["minReputation"] = { 910, REVERED },
 					["isBreadcrumb"] = true,	-- Revered Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8759,	-- The Path of the Invoker
@@ -938,6 +1006,7 @@ _.Zones =
 					},
 				}),
 				q(8759,  {	-- The Path of the Invoker
+					["minReputation"] = { 910, HONORED },
 					["isBreadcrumb"] = true,	-- Honored Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8758,	-- The Path of the Invoker
@@ -946,6 +1015,7 @@ _.Zones =
 					},
 				}),
 				q(8758,  {	-- The Path of the Invoker
+					["minReputation"] = { 910, FRIENDLY },
 					["isBreadcrumb"] = true,	-- Friendly Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8757,	-- The Path of the Invoker
@@ -954,6 +1024,7 @@ _.Zones =
 					},
 				}),
 				q(8757,  {	-- The Path of the Invoker
+					["minReputation"] = { 910, NEUTRAL },
 					["isBreadcrumb"] = true,	-- Neutral Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["g"] = {
@@ -961,6 +1032,7 @@ _.Zones =
 					},
 				}),
 				q(8747,  {	-- The Path of the Protector
+					["minReputation"] = { 910, NEUTRAL },
 					["isBreadcrumb"] = true,	-- Neutral Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["g"] = {
@@ -968,6 +1040,7 @@ _.Zones =
 					},
 				}),
 				q(8748,  {	-- The Path of the Protector
+					["minReputation"] = { 910, FRIENDLY },
 					["isBreadcrumb"] = true,	-- Friendly Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8747,	-- The Path of the Protector
@@ -976,6 +1049,7 @@ _.Zones =
 					},
 				}),
 				q(8749,  {	-- The Path of the Protector
+					["minReputation"] = { 910, HONORED },
 					["isBreadcrumb"] = true,	-- Honored Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8748,	-- The Path of the Protector
@@ -984,6 +1058,7 @@ _.Zones =
 					},
 				}),
 				q(8750,  {	-- The Path of the Protector
+					["minReputation"] = { 910, REVERED },
 					["isBreadcrumb"] = true,	-- Revered Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8749,	-- The Path of the Protector
@@ -992,6 +1067,7 @@ _.Zones =
 					},
 				}),
 				q(8751,  {	-- The Protector of Kalimdor
+					["minReputation"] = { 910, EXALTED },
 					["isBreadcrumb"] = true,	-- Exalted Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 8750,	-- The Path of the Protector
@@ -1000,6 +1076,7 @@ _.Zones =
 					},
 				}),
 				q(8756,  {	-- The Qiraji Conqueror
+					["minReputation"] = { 910, EXALTED },
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["isBreadcrumb"] = true,	-- Exalted Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
 					["sourceQuest"] = 8755,	-- The Path of the Conqueror
@@ -1012,6 +1089,7 @@ _.Zones =
 				}),
 				q(25566, {	-- The Secrets of Uldum
 					["provider"] = { "n", 40109 },	-- Prospector Gunstan
+					["coord"] = { 40.1, 76.8, 71 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25420,	-- Ancient Obstacles
 				}),
@@ -1020,6 +1098,16 @@ _.Zones =
 					["coord"] = { 33.2, 77.0, 71 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25017,	-- Ancient Obstacles
+				}),
+				q(2954,  {	-- The Stone Watcher
+					["provider"] = { "n", 7918 },	-- Stone Watcher of Norgannon
+					["coord"] = { 37.6, 81.4, 71 },
+					["sourceQuests"] = { 
+						2966,	-- Seeing What Happens [Horde]
+						2946,	-- Seeing What Happens [Alliance]
+					},
+					["lvl"] = 45,
+					["u"] = 40,
 				}),
 				q(26896, {	-- The Thunderdrome!
 					["provider"] = { "n", 44374 },	-- Sherm
@@ -1034,11 +1122,12 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(13432, {	-- The Vials of Eternity
-					["description"] = "Can be found walking around the Caverns of Time.",
+					["description"] = "The questgiver can be found walking around the Caverns of Time.",
 					["providers"] = {
 						{ "n", 19935 },	-- Soridormi
 						{ "n", 19936 },	-- Arazmodu
 					},
+					["lvl"] = 70,
 				}),
 				q(2772,  {	-- The World At Your Feet
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
@@ -1098,6 +1187,7 @@ _.Zones =
 				}),
 				q(25053, {	-- To The Ground!
 					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
+					["coord"] = { 72.1, 45.1, 71 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25052,	-- Dead Man's Chest
@@ -1156,10 +1246,12 @@ _.Zones =
 				}),
 				q(25062, {	-- What We Came For
 					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
+					["coord"] = { 49.9, 82.8, 71 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25065, {	-- You Too, Brute?
 					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
+					["coord"] = { 49.9, 82.8, 71 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25063,	-- Terrapination
 					["g"] = {
@@ -1209,6 +1301,7 @@ _.Zones =
 				}),
 				-- Scale of Sands / Agility/Strength Rings
 				q(10474, {	-- Champion's Covenant
+					["minReputation"] = { 990, EXALTED },
 					["isBreadcrumb"] = true,	-- Exalted Agility/Strength. Only 1 out of 4 Quests per reputation level can be done.
 					["sourceQuest"] = 10470,	-- Champion's Oath
 					["providers"] = {
@@ -1220,6 +1313,7 @@ _.Zones =
 					},
 				}),
 				q(10470, {	-- Champion's Oath
+					["minReputation"] = { 990, REVERED },
 					["isBreadcrumb"] = true,	-- Revered Agility/Strength. Only 1 out of 4 Quests per reputation level can be done.
 					["sourceQuest"] = 10466,	-- Champion's Vow
 					["providers"] = {
@@ -1231,6 +1325,7 @@ _.Zones =
 					},
 				}),
 				q(10462, {	-- Champion's Pledge
+					["minReputation"] = { 990, FRIENDLY },
 					["isBreadcrumb"] = true,	-- Prequest/Friendly Agility/Strength. Only 1 out of 4 Quests per reputation level can be done.
 					["provider"] = { "n", 19936 },	-- Arazmodu
 					["g"] = {
@@ -1238,6 +1333,7 @@ _.Zones =
 					},
 				}),
 				q(10466, {	-- Champion's Vow
+					["minReputation"] = { 990, HONORED },
 					["isBreadcrumb"] = true,	-- Honored Agility/Strength. Only 1 out of 4 Quests per reputation level can be done.
 					["providers"] = {
 						{ "n", 19935 },	-- Soridormi
@@ -1249,6 +1345,7 @@ _.Zones =
 				}),
 				-- Scale of Sands / Tank Ring
 				q(10475, {	-- Defender's Covenant
+					["minReputation"] = { 990, EXALTED },
 					["isBreadcrumb"] = true,	-- Exalted Tank Ring. Only 1 out of 4 Quests per reputation level can be done.
 					["sourceQuest"] = 10471,	-- Defender's Oath
 					["providers"] = {
@@ -1260,6 +1357,7 @@ _.Zones =
 					},
 				}),
 				q(10471, {	-- Defender's Oath
+					["minReputation"] = { 990, REVERED },
 					["isBreadcrumb"] = true,	-- Revered Tank Ring. Only 1 out of 4 Quests per reputation level can be done.
 					["sourceQuest"] = 10467,	-- Defender's Vow
 					["providers"] = {
@@ -1271,6 +1369,7 @@ _.Zones =
 					},
 				}),
 				q(10460, {	-- Defender's Pledge
+					["minReputation"] = { 990, FRIENDLY },
 					["isBreadcrumb"] = true,	-- Prequest/Friendly Tank Ring. Only 1 out of 4 Quests per reputation level can be done.
 					["provider"] = { "n", 19936 },	-- Arazmodu
 					["g"] = {
@@ -1278,6 +1377,7 @@ _.Zones =
 					},
 				}),
 				q(10467, {	-- Defender's Vow
+					["minReputation"] = { 990, HONORED },
 					["isBreadcrumb"] = true,	-- Honored Tank Ring. Only 1 out of 4 Quests per reputation level can be done.
 					["providers"] = {
 						{ "n", 19935 },	-- Soridormi
@@ -1289,6 +1389,7 @@ _.Zones =
 				}),
 				-- Scale of Sands / Healer Ring
 				q(10473, {	-- Restorer's Covenant
+					["minReputation"] = { 990, EXALTED },
 					["isBreadcrumb"] = true,	-- Exalted Healer Ring. Only 1 out of 4 Quests per reputation level can be done.
 					["provider"] = { "n", 19935 },	-- Soridormi
 					["sourceQuest"] = 10469,	-- Restorer's Oath
@@ -1297,6 +1398,7 @@ _.Zones =
 					},
 				}),
 				q(10469, {	-- Restorer's Oath
+					["minReputation"] = { 990, REVERED },
 					["isBreadcrumb"] = true,	-- Revered Healer Ring. Only 1 out of 4 Quests per reputation level can be done.
 					["provider"] = { "n", 19935 },	-- Soridormi
 					["sourceQuest"] = 10465,	-- Restorer's Vow
@@ -1305,6 +1407,7 @@ _.Zones =
 					},
 				}),
 				q(10461, {	-- Restorer's Pledge
+					["minReputation"] = { 990, FRIENDLY },
 					["isBreadcrumb"] = true,	-- Prequest/Friendly Healer Ring. Only 1 out of 4 Quests per reputation level can be done.
 					["provider"] = { "n", 19936 },	-- Arazmodu
 					["g"] = {
@@ -1312,6 +1415,7 @@ _.Zones =
 					},
 				}),
 				q(10465, {	-- Restorer's Vow
+					["minReputation"] = { 990, HONORED },
 					["isBreadcrumb"] = true,	-- Honored Healer Ring. Only 1 out of 4 Quests per reputation level can be done.
 					["providers"] = {
 						{ "n", 19935 },	-- Soridormi
@@ -1323,6 +1427,7 @@ _.Zones =
 				}),
 				-- Scale of Sands / Caster Ring
 				q(10472, {	-- Sage's Covenant
+					["minReputation"] = { 990, EXALTED },
 					["isBreadcrumb"] = true,	-- Exalted Caster Ring. Only 1 out of 4 Quests per reputation level can be done.
 					["provider"] = { "n", 19935 },	-- Soridormi
 					["sourceQuest"] = 10468,	-- Sage's Oath
@@ -1331,6 +1436,7 @@ _.Zones =
 					},
 				}),
 				q(10468, {	-- Sage's Oath
+					["minReputation"] = { 990, REVERED },
 					["isBreadcrumb"] = true,	-- Revered Caster Ring. Only 1 out of 4 Quests per reputation level can be done.
 					["sourceQuest"] = 10464,	-- Sage's Vow
 					["providers"] = {
@@ -1342,6 +1448,7 @@ _.Zones =
 					},
 				}),
 				q(10463, {	-- Sage's Pledge
+					["minReputation"] = { 990, FRIENDLY },
 					["isBreadcrumb"] = true,	-- Prequest/Friendly Caster Ring. Only 1 out of 4 Quests per reputation level can be done.
 					["provider"] = { "n", 19936 },	-- Arazmodu
 					["g"] = {
@@ -1349,6 +1456,7 @@ _.Zones =
 					},
 				}),
 				q(10464, {	-- Sage's Vow
+					["minReputation"] = { 990, HONORED },
 					["isBreadcrumb"] = true,	-- Honored Caster Ring. Only 1 out of 4 Quests per reputation level can be done.
 					["providers"] = {
 						{ "n", 19935 },	-- Soridormi
@@ -1357,65 +1465,6 @@ _.Zones =
 					["g"] = {
 						i(29303),	-- Band of Eternity
 					},
-				}),
-				-- Leagacy (need to put in a own file)
-				-- Part of the Dungeon 2 Set Questline
-				q(8925, {	-- A Portable Power Source
-					["provider"] = { "n", 16014 },	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0 , 71 },
-					["sourceQuest"] = 8924,	-- Hunting for Ectoplasm
-					["lvl"] = 58,
-					["u"] = 40,
-				}),
-				q(8928, {	-- A Shifty Merchant
-					["provider"] = { "n", 16014 },	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0 , 71 },
-					["sourceQuest"] = 8925,	-- A Portable Power Source
-					["lvl"] = 58,
-					["u"] = 40,
-				}),
-				q(8924, {	-- Hunting for Ectoplasm
-					["provider"] = { "n", 16014 },	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0 , 71 },
-					["sourceQuests"] = {
-						8922,	-- A Supernatural Device [Alliance]
-						8921,	-- The Ectoplasmic Distiller [Horde]
-					},
-					["lvl"] = 58,
-					["u"] = 40,
-				}),
-				q(8977, {	-- Return to Deliana
-					["provider"] = { "n", 16014 },	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0, 71 },
-					["sourceQuest"] = 8928,	-- A Shifty Merchant
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 58,
-					["u"] = 40,
-				}),
-				q(8978, {	-- Return to Mokvar
-					["provider"] = { "n", 16014 },	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0, 71 },
-					["sourceQuest"] = 8928,	-- A Shifty Merchant
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["u"] = 40,
-				}),	
-				q(8921, {	-- The Ectoplasmic Distiller
-					["provider"] = { "n", 16014 },	-- Mux Manascrambler
-					["coord"] = { 52.0, 27.0, 71 },
-					["sourceQuest"] = 8923,	-- A Supernatural Device
-					["lvl"] = 58,
-					["u"] = 40,
-				}),
-				q(2954, {	-- The Stone Watcher
-					["provider"] = { "n", 7918 },	-- Stone Watcher of Norgannon
-					["coord"] = { 37.6, 81.4, 71 },
-					["sourceQuests"] = { 
-						2966,	-- Seeing What Happens [Horde]
-						2946,	-- Seeing What Happens [Alliance]
-					},
-					["lvl"] = 45,
-					["u"] = 40,
 				}),
 			}),
 		}),
