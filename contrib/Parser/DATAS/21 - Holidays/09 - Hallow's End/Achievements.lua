@@ -1021,7 +1021,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { 114 },	-- Borean Tundra
 						}),
 						crit(4,  {	-- Dalaran, The Legerdemain Lounge
-							["coord"] = { 66.6, 30.1, 125 },
+							["coord"] = { 48.3, 40.8, 125 },
 							["maps"] = { 125 },	-- Dalaran
 						}),
 						crit(5,  {	-- Dalaran, Silver Enclave
@@ -1121,7 +1121,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { 114 },	-- Borean Tundra
 						}),
 						crit(5,  {	-- Dalaran, The Legerdemain Lounge
-							["coord"] = { 66.6, 30.1, 125 },
+							["coord"] = { 48.3, 40.8, 125 },
 							["maps"] = { 125 },	-- Dalaran
 						}),
 						crit(6,  {	-- Dalaran, Sunreaver's Sanctuary
