@@ -670,8 +670,8 @@ _.NeverImplemented =
 	--	q(),	-- Drugon the Frostblood 
 	--	q(),	-- Flotsam killID
 	--	q(),	-- Flotsam bonus roll
-	--	q(),	-- Humongris killID
-	--	q(),	-- Humongris bonus roll
+		q(44505),	-- Humongris killID
+		q(44900),	-- Humongris bonus roll
 		q(44506),	-- Levantus killID
 		q(44901),	-- Levantus bonus roll
 		q(47086),	-- Malificus killID

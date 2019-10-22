@@ -1205,11 +1205,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(52400, {	-- Work Order: Kyanite
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(50996, {	-- Work Order: Mistscale
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -1986,6 +1981,12 @@ _.Zones =
 						["g"] = {
 							i(162285),	-- Recipe: Kul Tiramisu [Rank 3]
 						},
+					}),
+					q(52400, {	-- Work Order: Kyanite
+						["isWorldQuest"] = true,
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(52332, {	-- Work Order: Lightfoot Potion
 						["lvl"] = 120,
