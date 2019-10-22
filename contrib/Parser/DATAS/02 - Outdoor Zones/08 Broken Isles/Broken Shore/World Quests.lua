@@ -238,7 +238,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["g"] = {
 						ach(11607, {	-- They See Me Rolling
-							["description"] = "This achievement is only active with this World Quest.  If you take damage on your barrel you can let it regenerate before turning in."
+							["description"] = "You can only get this achievement when this quest is active.  If your barrel takes damage, you can let it regenerate before rolling to the end of the path and completing the quest.",
 						}),
 					},
 				}),
