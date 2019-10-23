@@ -1363,7 +1363,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { 371 },	-- Jade Forest
 						}),
 						crit(10, {	-- Krasarang Wilds, Marista
-							["coord"] = { 51.5, 77.3, 418 },
+							["coord"] = { 53.4, 76.5, 418 },
 							["maps"] = { 418 },	-- Krasarang Wilds
 						}),
 						crit(11, {	-- Krasarang Wilds, Zhu's Watch
@@ -1456,15 +1456,15 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { 371 },	-- Jade Forest
 						}),
 						crit(10, {	-- Krasarang Wilds, Dawnchaser Retreat
-							["coord"] = { 28.3, 50.7, 418 },
+							["coord"] = { 28.5, 47.9, 418 },
 							["maps"] = { 418 },	-- Krasarang Wilds
 						}),
 						crit(11, {	-- Krasarang Wilds, Marista
-							["coord"] = { 51.5, 77.3, 418 },
+							["coord"] = { 53.4, 76.5, 418 },
 							["maps"] = { 418 },	-- Krasarang Wilds
 						}),
 						crit(12, {	-- Krasarang Wilds, Thunder Cleft
-							["coord"] = { 61.0, 25.1, 418 },
+							["coord"] = { 63.8, 20.4, 418 },
 							["maps"] = { 418 },	-- Krasarang Wilds
 						}),
 						crit(13, {	-- Krasarang Wilds, Zhu's Watch
