@@ -445,13 +445,17 @@ _.Zones =
 				}),
 				n(-387, {	-- Relics
 					i(143695),	-- Ambition of the Forlorn
+					i(143701),	-- Ancient Flamewaking
 					i(143694),	-- Aristocratic Menace
 					i(141264),	-- Bitestone Fury
+					i(141277),	-- Bloodtotem Brand
 					i(140080),	-- Everchill Pearl
 					i(141275),	-- Fertile Soil
 					i(141265),	-- Gift of Flame
+					i(143704),	-- Harpybane Fetish
 					i(143696),	-- Perilous Bargain
 					i(141270),	-- Restless Dreams
+					i(143703),	-- Snowmane Totem
 					i(143700),	-- Stoic Hibernation
 					i(141263),	-- Stonedark Idol
 					i(140079),	-- Stormforged Fist
