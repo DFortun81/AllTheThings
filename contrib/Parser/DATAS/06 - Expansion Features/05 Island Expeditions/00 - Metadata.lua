@@ -12,7 +12,7 @@ _.ExpansionFeatures =
 			143968,	--  Expedition Map [Alliance Side]
 			143967,	--  Expedition Map [Horde Side]
 		},
-		["maps"] = {
+		["maps"] = {	-- if you add a map here, also add it to the islands achievements file!
 			1501,	-- Crestfall
 			1036,	-- Dread Chain
 			1336,	-- Havenswood
@@ -21,6 +21,7 @@ _.ExpansionFeatures =
 			1033,	-- Rotting Mire
 			981,	-- Un'gol Ruins
 			1032,	-- Skittering Hollow
+			1502,	-- Snowblossom Village
 			1034,	-- Verdant Wilds
 			1037,	-- Whispering Reef
 		},
