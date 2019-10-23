@@ -558,11 +558,6 @@ _.Zones =
 						["isDaily"] = true,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(52987, {	-- Let's Burn!
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(52941, {	-- Light in the Darkness
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -1527,6 +1522,11 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(52987, {	-- Let's Burn!
+						["isWorldQuest"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(52794, {	-- Lizards and Ledgers
 						["isWorldQuest"] = true,

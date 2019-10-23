@@ -7,13 +7,20 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		["maps"] = {
 			1162,	-- Siege of Boralus
 		},
-		["groups"] = {
+		["g"] = {
+			n(-34, {	-- World Quests
+				q(52778, {	-- Siege of Boralus: Crushing the Horde
+					["isWorldQuest"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
+				}),
+			}),
 			d(2,  {	-- Heroic
 				e(2132, {	-- Chopper Redhook [1st Encounter - Alliance]
 					-- This fight is Alliance-only.  We are going to set the boss as such, but leave the items not marked Alliance due to the fact that Horde should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
 					["crs"] = { 128650 },	-- Chopper Redhook
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(159972),	-- Mutineer's Fate
 						i(159973),	-- Boarder's Billy Club
 						i(159968),	-- Gloves of the Iron Reavers
@@ -28,7 +35,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					-- This fight is Horde-only.  We are going to set the boss as such, but leave the items not marked Horde due to the fact that Alliance should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
 					["crs"] = { 144158 },	-- Sergeant Bainbridge
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(159647),	-- Siegebreaker's Halberd
 						i(159648),	-- Bainbridge's Blackjack
 						i(159328),	-- Wharf Warden's Gloves
@@ -41,7 +48,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 				e(2173, {	-- Dread Captain Lockwood [2nd Encounter - Both Factions]
 					["crs"] = { 129208 },	-- Dread Captain Lockwood
-					["groups"] = {
+					["g"] = {
 						i(159649),	-- Saber of Dread Pirate Lockwood
 						i(159372),	-- Dread Captain's Irons
 						i(159237),	-- Captain's Dustfinders
@@ -56,7 +63,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 				e(2134, {	-- Hadal Darkfathom [3rd Encounter - Both Factions]
 					["crs"] = { 128651 },	-- Hadal Darkfathom
-					["groups"] = {
+					["g"] = {
 						i(159650),	-- Dismembered Submersible Claw
 						i(159386),	-- Anchor Chain Girdle
 						i(159322),	-- Seawalker's Pantaloons
@@ -67,7 +74,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 				e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
 					["crs"] = { 128652 },-- Viq'Goth
-					["groups"] = {
+					["g"] = {
 						ach(12847),	-- Siege of Boralus
 						i(159651),	-- Coral-Edged Crescent
 						i(159310),	-- Circlet of the Enveloping Leviathan
@@ -100,7 +107,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					-- This fight is Alliance-only.  We are going to set the boss as such, but leave the items not marked Alliance due to the fact that Horde should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
 					["crs"] = { 128650 },	-- Chopper Redhook
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(159972),	-- Mutineer's Fate
 						i(159973),	-- Boarder's Billy Club
 						i(159968),	-- Gloves of the Iron Reavers
@@ -115,7 +122,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					-- This fight is Horde-only.  We are going to set the boss as such, but leave the items not marked Horde due to the fact that Alliance should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
 					["crs"] = { 144158 },	-- Sergeant Bainbridge
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(159647),	-- Siegebreaker's Halberd
 						i(159648),	-- Bainbridge's Blackjack
 						i(159328),	-- Wharf Warden's Gloves
@@ -128,7 +135,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 				e(2173, {	-- Dread Captain Lockwood [2nd Encounter - Both Factions]
 					["crs"] = { 129208 },	-- Dread Captain Lockwood
-					["groups"] = {
+					["g"] = {
 						ach(12727),	-- Stand by Me
 						i(159649),	-- Saber of Dread Pirate Lockwood
 						i(159372),	-- Dread Captain's Irons
@@ -144,7 +151,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 				e(2134, {	-- Hadal Darkfathom [3rd Encounter - Both Factions]
 					["crs"] = { 128651 },	-- Hadal Darkfathom
-					["groups"] = {
+					["g"] = {
 						i(159650),	-- Dismembered Submersible Claw
 						i(159386),	-- Anchor Chain Girdle
 						i(159322),	-- Seawalker's Pantaloons
@@ -155,7 +162,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 				e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
 					["crs"] = { 128652 },-- Viq'Goth
-					["groups"] = {
+					["g"] = {
 						ach(12726),	-- A Fish Out of Water
 						ach(12847),	-- Siege of Boralus
 						i(159651),	-- Coral-Edged Crescent

@@ -455,6 +455,7 @@ _.Zones =
 					i(143700),	-- Stoic Hibernation
 					i(141263),	-- Stonedark Idol
 					i(140079),	-- Stormforged Fist
+					i(141276),	-- Vision of An'she
 				}),
 				i(135511),	-- Thick Slab of Bacon. You get it for a split second after completing a bacon wq
 				i(137212),	-- Cut Skystone. You get it for a split second after completing the jewelcrafter daily
