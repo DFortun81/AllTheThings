@@ -218,6 +218,7 @@ _.NeverImplemented =
 		-------------------
 		--      MOP      --
 		-------------------
+		q(30087),	-- FLAG - Kung Fu Intro — wowhead info for this is possibly irrelevant, seems to trigger either when flying close to the magical barrier or after accepting The Arcanic Oubliette in Krasarang Wilds
 		q(31153),	-- Tracking Event - Saved Diaani
 		q(31154),	-- Tracking Event - Saved Zuulo
 		q(30531),	-- Tracking Event: Finished First Expansion
