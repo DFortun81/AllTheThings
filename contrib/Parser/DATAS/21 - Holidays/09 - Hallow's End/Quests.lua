@@ -1085,6 +1085,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				q(12389, {	-- Candy Bucket — Hellfire Peninsula, Falcon Watch, Horde
 					["isYearly"] = true,
 					["coord"] = { 26.9, 59.6, 100 },
+					["races"] = HORDE_ONLY,
 					["maps"] = { 100 },	-- Hellfire Peninsula
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
@@ -1332,6 +1333,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				q(32050, {	-- Candy Bucket — Jade Forest, Honeydew Village, Horde
 					["isYearly"] = true,
 					["coord"] = { 28.5, 13.3, 371 },
+					["races"] = HORDE_ONLY,
 					["maps"] = { 371 },	-- Jade Forest
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
