@@ -1367,7 +1367,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { 418 },	-- Krasarang Wilds
 						}),
 						crit(11, {	-- Krasarang Wilds, Zhu's Watch
-							["coord"] = { 75.9, 7.00, 418 },
+							["coord"] = { 79.8, 0.71, 418 },
 							["maps"] = { 418 },	-- Krasarang Wilds
 						}),
 						crit(12, {	-- Kun-Lai Summit, Binan Village
@@ -1468,7 +1468,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { 418 },	-- Krasarang Wilds
 						}),
 						crit(13, {	-- Krasarang Wilds, Zhu's Watch
-							["coord"] = { 75.9, 7.00, 418 },
+							["coord"] = { 79.8, 0.71, 418 },
 							["maps"] = { 418 },	-- Krasarang Wilds
 						}),
 						crit(14, {	-- Kun-Lai Summit, Binan Village
