@@ -13,123 +13,6 @@ _.Holidays = bubbleDown({["u"] = 26},
 						title(92, {	-- %s the Hallowed
 							["u"] = 26,	-- Hallow's End
 						}),
-						ach(255,  {	-- Bring Me The Head of... Oh Wait
-							["u"] = 26,	-- Hallow's End
-						}),
-						ach(291,  {	-- Check Your Head
-							["u"] = 26,	-- Hallow's End
-							["g"] = {
-								crit(1, {	-- Blood Elf
-									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
-								}),
-								crit(2, {	-- Draenei
-									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
-								}),
-								crit(3, {	-- Dwarf
-									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
-								}),
-								crit(4, {	-- Gnome
-									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
-								}),
-								crit(5, {	-- Goblin
-									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
-								}),
-								crit(6, {	-- Human
-									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
-								}),
-								crit(7, {	-- Night Elf
-									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
-								}),
-								crit(8, {	-- Orc
-									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
-								}),
-								crit(9, {	-- Tauren
-									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
-								}),
-								crit(10, {	-- Troll
-									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
-								}),
-								crit(11, {	-- Undead
-									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
-								}),
-								crit(12, {	-- Worgen
-									["achievementID"] = 291,	-- Check Your Head
-									["u"] = 26,	-- Hallow's End
-								}),
-							},
-						}),
-						ach(1261, {	-- G.N.E.R.D. Rage
-							["u"] = 26,	-- Hallow's End
-						}),
-						ach(288,  {	-- Out With It
-							["u"] = 26,	-- Hallow's End
-						}),
-						ach(1040, {	-- Rotten Hallow
-							["races"] = ALLIANCE_ONLY,
-							["u"] = 26,	-- Hallow's End
-							--Note!! The individual criteria for this will be attached to the actual quest rather than here.  By linking it to the quest we give a better represenation of the criteria and avoid duplicity.
-						}),
-						ach(1041, {	-- Rotten Hallow
-							["races"] = HORDE_ONLY,
-							["u"] = 26,	-- Hallow's End
-							--Note!! The individual criteria for this will be attached to the actual quest rather than here.  By linking it to the quest we give a better represenation of the criteria and avoid duplicity.
-						}),
-						ach(292,  {	-- Sinister Calling
-							["u"] = 26,	-- Hallow's End
-							--Note!! The individual criteria for this will be attached to the actual item rather than here.  By linking it to the item we give a better represenation of the criteria and avoid duplicity.
-						}),
-						ach(981,  {	-- That Sparkling Smile
-							["u"] = 26,	-- Hallow's End
-						}),
-						ach(283,  {	-- The Masquerade
-							["u"] = 26,	-- Hallow's End
-							--Note!! We are linking these here as it is an easy way to track what you need done.
-							--Since we aren't utilizing maps technique it won't provide clutter in mini list for each zone
-							["g"] = {
-								crit(1, {	-- Transformed by Hallowed Wand - Bat
-									["itemID"] = 20410,	-- Hallowed Wand - Bat
-									["u"] = 26,	-- Hallow's End
-								}),
-								crit(2, {	-- Transformed by Hallowed Wand - Ghost
-									["itemID"] = 20409,	-- Hallowed Wand - Ghost
-									["u"] = 26,	-- Hallow's End
-								}),
-								crit(3, {	-- Transformed by Hallowed Wand - Leper Gnome
-									["itemID"] = 20399,	-- Hallowed Wand - Leper Gnome
-									["u"] = 26,	-- Hallow's End
-								}),
-								crit(4, {	-- Transformed by Hallowed Wand - Ninja
-									["itemID"] = 20398,	-- Hallowed Wand - Ninja
-									["u"] = 26,	-- Hallow's End
-								}),
-								crit(5, {	-- Transformed by Hallowed Wand - Pirate
-									["itemID"] = 20397,	-- Hallowed Wand - Pirate
-									["u"] = 26,	-- Hallow's End
-								}),
-								crit(6, {	-- Transformed by Hallowed Wand - Skeleton
-									["itemID"] = 20411,	-- Hallowed Wand - Skeleton
-									["u"] = 26,	-- Hallow's End
-								}),
-								crit(7, {	-- Transformed by Hallowed Wand - Wisp
-									["itemID"] = 20414,	-- Hallowed Wand - Wisp
-									["u"] = 26,	-- Hallow's End
-								}),
-							},
-						}),
-						ach(289,  {	-- The Savior of Hallow's End
-							["u"] = 26,	-- Hallow's End
-						}),
 						ach(972,  {	-- Trick or Treat!
 							["u"] = 26,	-- Hallow's End
 							["g"] = {
@@ -397,6 +280,123 @@ _.Holidays = bubbleDown({["u"] = 26},
 									},
 								}),
 							},
+						}),
+						ach(288,  {	-- Out With It
+							["u"] = 26,	-- Hallow's End
+						}),
+						ach(255,  {	-- Bring Me The Head of... Oh Wait
+							["u"] = 26,	-- Hallow's End
+						}),
+						ach(289,  {	-- The Savior of Hallow's End
+							["u"] = 26,	-- Hallow's End
+						}),
+						ach(981,  {	-- That Sparkling Smile
+							["u"] = 26,	-- Hallow's End
+						}),
+						ach(1040, {	-- Rotten Hallow (A)
+							["races"] = ALLIANCE_ONLY,
+							["u"] = 26,	-- Hallow's End
+							--Note!! The individual criteria for this will be attached to the actual quest rather than here.  By linking it to the quest we give a better represenation of the criteria and avoid duplicity.
+						}),
+						ach(1041, {	-- Rotten Hallow (H)
+							["races"] = HORDE_ONLY,
+							["u"] = 26,	-- Hallow's End
+							--Note!! The individual criteria for this will be attached to the actual quest rather than here.  By linking it to the quest we give a better represenation of the criteria and avoid duplicity.
+						}),
+						ach(1261, {	-- G.N.E.R.D. Rage
+							["u"] = 26,	-- Hallow's End
+						}),
+						ach(291,  {	-- Check Your Head
+							["u"] = 26,	-- Hallow's End
+							["g"] = {
+								crit(1, {	-- Blood Elf
+									["achievementID"] = 291,	-- Check Your Head
+									["u"] = 26,	-- Hallow's End
+								}),
+								crit(2, {	-- Draenei
+									["achievementID"] = 291,	-- Check Your Head
+									["u"] = 26,	-- Hallow's End
+								}),
+								crit(3, {	-- Dwarf
+									["achievementID"] = 291,	-- Check Your Head
+									["u"] = 26,	-- Hallow's End
+								}),
+								crit(4, {	-- Gnome
+									["achievementID"] = 291,	-- Check Your Head
+									["u"] = 26,	-- Hallow's End
+								}),
+								crit(5, {	-- Goblin
+									["achievementID"] = 291,	-- Check Your Head
+									["u"] = 26,	-- Hallow's End
+								}),
+								crit(6, {	-- Human
+									["achievementID"] = 291,	-- Check Your Head
+									["u"] = 26,	-- Hallow's End
+								}),
+								crit(7, {	-- Night Elf
+									["achievementID"] = 291,	-- Check Your Head
+									["u"] = 26,	-- Hallow's End
+								}),
+								crit(8, {	-- Orc
+									["achievementID"] = 291,	-- Check Your Head
+									["u"] = 26,	-- Hallow's End
+								}),
+								crit(9, {	-- Tauren
+									["achievementID"] = 291,	-- Check Your Head
+									["u"] = 26,	-- Hallow's End
+								}),
+								crit(10, {	-- Troll
+									["achievementID"] = 291,	-- Check Your Head
+									["u"] = 26,	-- Hallow's End
+								}),
+								crit(11, {	-- Undead
+									["achievementID"] = 291,	-- Check Your Head
+									["u"] = 26,	-- Hallow's End
+								}),
+								crit(12, {	-- Worgen
+									["achievementID"] = 291,	-- Check Your Head
+									["u"] = 26,	-- Hallow's End
+								}),
+							},
+						}),
+						ach(283,  {	-- The Masquerade
+							["u"] = 26,	-- Hallow's End
+							--Note!! We are linking these here as it is an easy way to track what you need done.
+							--Since we aren't utilizing maps technique it won't provide clutter in mini list for each zone
+							["g"] = {
+								crit(1, {	-- Transformed by Hallowed Wand - Bat
+									["itemID"] = 20410,	-- Hallowed Wand - Bat
+									["u"] = 26,	-- Hallow's End
+								}),
+								crit(2, {	-- Transformed by Hallowed Wand - Ghost
+									["itemID"] = 20409,	-- Hallowed Wand - Ghost
+									["u"] = 26,	-- Hallow's End
+								}),
+								crit(3, {	-- Transformed by Hallowed Wand - Leper Gnome
+									["itemID"] = 20399,	-- Hallowed Wand - Leper Gnome
+									["u"] = 26,	-- Hallow's End
+								}),
+								crit(4, {	-- Transformed by Hallowed Wand - Ninja
+									["itemID"] = 20398,	-- Hallowed Wand - Ninja
+									["u"] = 26,	-- Hallow's End
+								}),
+								crit(5, {	-- Transformed by Hallowed Wand - Pirate
+									["itemID"] = 20397,	-- Hallowed Wand - Pirate
+									["u"] = 26,	-- Hallow's End
+								}),
+								crit(6, {	-- Transformed by Hallowed Wand - Skeleton
+									["itemID"] = 20411,	-- Hallowed Wand - Skeleton
+									["u"] = 26,	-- Hallow's End
+								}),
+								crit(7, {	-- Transformed by Hallowed Wand - Wisp
+									["itemID"] = 20414,	-- Hallowed Wand - Wisp
+									["u"] = 26,	-- Hallow's End
+								}),
+							},
+						}),
+						ach(292,  {	-- Sinister Calling
+							["u"] = 26,	-- Hallow's End
+							--Note!! The individual criteria for this will be attached to the actual item rather than here.  By linking it to the item we give a better represenation of the criteria and avoid duplicity.
 						}),
 						ach(971,  {	-- Tricks and Treats of Azeroth
 							["u"] = 26,	-- Hallow's End
@@ -1005,7 +1005,23 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
-				ach(5836, {	-- Tricks and Treats of Northrend
+				ach(10365, {	-- A Frightening Friend
+					["description"] = "Halloween Decorations must be up in a Tier 3 garrison.",
+					["coords"] = {
+						{ 40.1, 70.0, 582 },	-- Pepe Location (Alliance)
+						{ 70.7, 90.2, 590 },	-- Pepe Location (Horde)
+					},
+					["maps"] = {
+						582,	-- Lunarfall
+						590,	-- Frostwall
+					},
+				}),
+				ach(284,   {	-- A Mask for All Occasions
+					["description"] = "You can collect masks from the Headless Horseman event or from trick-or-treating, or you can purchase them from your faction's Hallow's End vendor.",
+					["u"] = 26,	-- Hallow's End
+				--	hey y'all these masks are linked in roughly 19,000 places already to show where you can actually collect them, so i'm not going to put them here
+				}),
+				ach(5836,  {	-- Tricks and Treats of Northrend
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						crit(1,  {	-- Borean Tundra, Fizzcrank Airstrip
@@ -1101,7 +1117,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
-				ach(5835, {	-- Tricks and Treats of Northrend
+				ach(5835,  {	-- Tricks and Treats of Northrend
 					["races"] = HORDE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
 					["g"] = {
 						crit(1,  {	-- Borean Tundra, Bor'gorok Outpost
@@ -1205,7 +1221,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
-				ach(5837, {	-- Tricks and Treats of Cataclysm
+				ach(5837,  {	-- Tricks and Treats of Cataclysm
 					["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
 					["g"] = {
 						crit(1,  {	-- Deepholm, Temple of Earth
@@ -1266,7 +1282,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
-				ach(5838, {	-- Tricks and Treats of Cataclysm
+				ach(5838,  {	-- Tricks and Treats of Cataclysm
 					["races"] = HORDE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
 					["g"] = {
 						crit(1,  {	-- Deepholm, Temple of Earth
@@ -1323,7 +1339,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
-				ach(7601, {	-- Tricks and Treats of Pandaria
+				ach(7601,  {	-- Tricks and Treats of Pandaria
 					["races"] = ALLIANCE_ONLY,	-- Note!! We are marking this as Alliance only at the meta level only
 					["g"] = {
 						crit(1, {	-- Dread Wastes, Klaxi'vess
@@ -1416,7 +1432,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
-				ach(7602, {	-- Tricks and Treats of Pandaria
+				ach(7602,  {	-- Tricks and Treats of Pandaria
 					["races"] = HORDE_ONLY,	-- Note!! We are marking this as Horde only at the meta level only
 					["g"] = {
 						crit(1,  {	-- Dread Wastes, Klaxxi'vess
