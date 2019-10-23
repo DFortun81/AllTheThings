@@ -211,7 +211,7 @@ app.L = {
 
 		-- "Non-Equipment Types"
 		[100] = GetItemSubClassInfo(15,5),						-- Mounts
-		[101] = TOOLTIP_BATTLE_PET,								-- Battle Pets
+		[101] = TOOLTIP_BATTLE_PET,								-- Battle Pet
 		[102] = TOY,											-- Toy
 		[103] = "Illusions",
 		[104] = ITEM_BIND_QUEST, 								-- Quest Items
@@ -266,7 +266,7 @@ app.L = {
 		[55] = "Interface\\Icons\\INV_Drink_25_HoneyTea",					-- Consumables
 		[59] = "Interface\\Icons\\INV_Misc_Book_03",						-- Class Books
 		[100] = "Interface\\Icons\\ability_mount_fireravengodmountgreen",	-- Mounts
-		[101] = "Interface\\Icons\\Tracking_WildPet", 						-- Battle Pets
+		[101] = "Interface\\Icons\\Tracking_WildPet", 						-- Battle Pet
 		[102] = "Interface\\Icons\\INV_Misc_Toy_10",						-- Toy
 		[113] = "Interface\\Icons\\INV_Misc_Bag_08",						-- Bag
 		[200] = "Interface\\Icons\\inv_scroll_05",							-- Recipes

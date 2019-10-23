@@ -1,17 +1,32 @@
 -- Archaeology - Skill ID 794 / Spell ID 158762
 profession(794, {	-- Archaeology
 	currency(829,  {	-- Arakkoa
-		n(-17, {	-- Quests
+		f(101,  {	-- Battle Pet
+			sp(172460, { i(117354) }),	-- Ancient Nest Guardian
+		}),
+		f(50,   {	-- Miscellaneous
+			i(114204),	-- Apexis Crystal
+			i(114205),	-- Apexis Hieroglyph
+			i(114206),	-- Apexis Scroll
+			i(114198),	-- Burial Urn
+			i(114199),	-- Decree Scrolls
+			i(114197),	-- Dreamcatcher
+			i(114203),	-- Outcast Dreamcatcher
+			i(114200),	-- Solar Orb
+			i(114201),	-- Sundial
+			i(114202),	-- Talonpriest Mask
+		}),
+		n(-17,  {	-- Quests
 			q(36778, {	-- Pristine Apexis Crystal
 				["lvl"] = 100,
 				["provider"] = { "i", 114222 },	-- Pristine Apexis Crystal
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(8, {	-- Arakkoa Archivist (Pristine Apexis Crystal)
-						["achievementID"] = 9412,
+					crit(8, {	-- Pristine Apexis Crystal
+						["achievementID"] = 9412,	-- Arakkoa Archivist
 					}),
-					crit(8, {	-- Draenor Curator (Pristine Apexis Crystal)
-						["achievementID"] = 9419,
+					crit(8, {	-- Pristine Apexis Crystal
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 				},
 			}),
@@ -20,11 +35,11 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114223 },	-- Pristine Apexis Heiroglyph
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(9, {	-- Arakkoa Archivist (Pristine Apexis Heiroglyph)
-						["achievementID"] = 9412,
+					crit(9, {	-- Pristine Apexis Heiroglyph
+						["achievementID"] = 9412,	-- Arakkoa Archivist
 					}),
-					crit(9, {	-- Draenor Curator (Pristine Apexis Heiroglyph)
-						["achievementID"] = 9419,
+					crit(9, {	-- Pristine Apexis Heiroglyph
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 				},
 			}),
@@ -33,11 +48,11 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114224 },	-- Pristine Apexis Scroll
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(10, {	-- Arakkoa Archivist (Pristine Apexis Scroll)
-						["achievementID"] = 9412,
+					crit(10, {	-- Pristine Apexis Scroll
+						["achievementID"] = 9412,	-- Arakkoa Archivist
 					}),
-					crit(10, {	-- Draenor Curator (Pristine Apexis Scroll)
-						["achievementID"] = 9419,
+					crit(10, {	-- Pristine Apexis Scroll
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 				},
 			}),
@@ -46,11 +61,11 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114216 },	-- Pristine Burial Urn
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(2, {	-- Arakkoa Archivist (Pristine Burial Urn)
-						["achievementID"] = 9412,
+					crit(2, {	-- Pristine Burial Urn
+						["achievementID"] = 9412,	-- Arakkoa Archivist
 					}),
-					crit(2, {	-- Draenor Curator (Pristine Burial Urn)
-						["achievementID"] = 9419,
+					crit(2, {	-- Pristine Burial Urn
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 				},
 			}),
@@ -59,11 +74,11 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114217 },	-- Pristine Decree Scrolls
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(3, {	-- Arakkoa Archivist (Pristine Decree Scrolls)
-						["achievementID"] = 9412,
+					crit(3, {	-- Pristine Decree Scrolls
+						["achievementID"] = 9412,	-- Arakkoa Archivist
 					}),
-					crit(3, {	-- Draenor Curator (Pristine Decree Scrolls)
-						["achievementID"] = 9419,
+					crit(3, {	-- Pristine Decree Scrolls
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 				},
 			}),
@@ -72,11 +87,11 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114215 },	-- Pristine Dreamcatcher
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(1, {	-- Arakkoa Archivist (Pristine Dreamcatcher)
-						["achievementID"] = 9412,
+					crit(1, {	-- Pristine Dreamcatcher
+						["achievementID"] = 9412,	-- Arakkoa Archivist
 					}),
-					crit(1, {	-- Draenor Curator (Pristine Dreamcatcher)
-						["achievementID"] = 9419,
+					crit(1, {	-- Pristine Dreamcatcher
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 				},
 			}),
@@ -85,11 +100,11 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114221 },	-- Pristine Outcast Dreamcatcher
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(7, {	-- Arakkoa Archivist (Pristine Outcast Dreamcatcher)
-						["achievementID"] = 9412,
+					crit(7, {	-- Pristine Outcast Dreamcatcher
+						["achievementID"] = 9412,	-- Arakkoa Archivist
 					}),
-					crit(7, {	-- Draenor Curator (Pristine Outcast Dreamcatcher)
-						["achievementID"] = 9419,
+					crit(7, {	-- Pristine Outcast Dreamcatcher
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 				},
 			}),
@@ -98,11 +113,11 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114218 },	-- Pristine Solar Orb
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(4, {	-- Arakkoa Archivist (Pristine Solar Orb)
-						["achievementID"] = 9412,
+					crit(4, {	-- Pristine Solar Orb
+						["achievementID"] = 9412,	-- Arakkoa Archivist
 					}),
-					crit(4, {	-- Draenor Curator (Pristine Solar Orb)
-						["achievementID"] = 9419,
+					crit(4, {	-- Pristine Solar Orb
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 				},
 			}),
@@ -111,11 +126,11 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114219 },	-- Pristine Sundial
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(5, {	-- Arakkoa Archivist (Pristine Sundial)
-						["achievementID"] = 9412,
+					crit(5, {	-- Pristine Sundial
+						["achievementID"] = 9412,	-- Arakkoa Archivist
 					}),
-					crit(5, {	-- Draenor Curator (Pristine Sundial)
-						["achievementID"] = 9419,
+					crit(5, {	-- Pristine Sundial
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 				},
 			}),
@@ -124,27 +139,24 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114220 },	-- Pristine Talonpriest Mask
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(6, {	-- Arakkoa Archivist (Pristine Talonpriest Mask)
-						["achievementID"] = 9412,
+					crit(6, {	-- Pristine Talonpriest Mask
+						["achievementID"] = 9412,	-- Arakkoa Archivist
 					}),
-					crit(6, {	-- Draenor Curator (Pristine Talonpriest Mask)
-						["achievementID"] = 9419,
+					crit(6, {	-- Pristine Talonpriest Mask
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 				},
 			}),
-		}),
-		n(-162, {	-- Pets
-			sp(172460, { i(117354) }),	-- Ancient Nest Guardian
 		}),
 		n(-319, {	-- Weapons
 			sp(168331, { i(117382) }),	-- Beakbreaker of Terokk
 		}),
 	}),
-	i(64657, {	-- Canopic Jar
-		["groups"] = {
+	i(64657,       {	-- Canopic Jar
+		["requireSkill"] = 171,	-- Alchemy,
+		["g"] = {
 			i(67538),	-- Recipe: Vial of the Sands
 		},
-		["requireSkill"] = 171,	-- Alchemy,
 	}),
 	currency(1174, {	-- Demonic
 		n(-17, {	-- Quests
@@ -156,8 +168,8 @@ profession(794, {	-- Archaeology
 				["sourceQuest"] = 40857,	-- Bits and Pieces
 				["g"] = {
 					i(136362, {	-- Ancient War Remnants
-						i(131724), 	-- Crystalline Eye of Undravius
-						crit(1, {
+						i(131724), 	-- Crystalline Eye of Undravius (TOY!)
+						crit(1, {	-- Crystalline Eye of Undravius
 							["achievementID"] = 10603,	-- A Keen Eye
 						}),
 					}),
@@ -177,7 +189,7 @@ profession(794, {	-- Archaeology
 				["sourceQuest"] = 41159,	-- Process of Elimination
 				["g"] = {
 					i(131735),	-- Imp Generator
-					crit(5, {
+					crit(5, {	-- Imp Generator
 						["achievementID"] = 10603,	-- A Keen Eye
 					}),
 				},
@@ -196,7 +208,7 @@ profession(794, {	-- Archaeology
 				["sourceQuest"] = 41162,	-- And Into the Fel Fire
 				["g"] = {
 					i(136922),	-- Wyrmy Tunkins
-					crit(7, {
+					crit(7, {	-- Wyrmy Tunkins
 						["achievementID"] = 10603,	-- A Keen Eye
 					}),
 				},
@@ -215,7 +227,7 @@ profession(794, {	-- Archaeology
 				["sourceQuest"] = 41165,	-- Deciphering Demonology
 				["g"] = {
 					i(131743),	-- Blood of Young Mannoroth
-					crit(10, {
+					crit(10, {	-- Blood of Young Mannoroth
 						["achievementID"] = 10603,	-- A Keen Eye
 					}),
 				},
@@ -234,7 +246,7 @@ profession(794, {	-- Archaeology
 				["sourceQuest"] = 41168,	-- The Purple Hills of Mac'Aree
 				["g"] = {
 					i(131732),	-- Purple Hills of Mac'Aree
-					crit(12, {
+					crit(12, {	-- Purple Hills of Mac'Aree
 						["achievementID"] = 10603,	-- A Keen Eye
 					}),
 				},
@@ -252,12 +264,12 @@ profession(794, {	-- Archaeology
 					ach(10606),	-- The Dwarven Dream
 				},
 			}),
-			q(40359, {	-- Pristine Imps Cup
+			q(40359, {	-- Pristine Imp's Cup
 				["lvl"] = 98,
-				["provider"] = { "i", 130931 },	-- Pristine Imps Cup
+				["provider"] = { "i", 130931 },	-- Pristine Imp's Cup
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(1, {	-- Legion Curator (Pristine Imps Cup)
+					crit(1, {	-- Pristine Imp's Cup
 						["achievementID"] = 10604,	-- Legion Curator
 					}),
 				},
@@ -267,7 +279,7 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 130932 },	-- Pristine Flayed Skin Chronicle
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(2, {	-- Legion Curator (Pristine Flayed Skin Chronicle)
+					crit(2, {	-- Pristine Flayed Skin Chronicle)
 						["achievementID"] = 10604,	-- Legion Curator
 					}),
 				},
@@ -277,7 +289,7 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 130933 },	-- Pristine Malformed Abyssal
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(3, {	-- Legion Curator (Pristine Malformed Abyssal)
+					crit(3, {	-- Pristine Malformed Abyssal)
 						["achievementID"] = 10604,	-- Legion Curator
 					}),
 				},
@@ -287,7 +299,7 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 130934 },	-- Pristine Orb of Inner Chaos
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(4, {	-- Legion Curator (Pristine Malformed Abyssal)
+					crit(4, {	-- Pristine Malformed Abyssal)
 						["achievementID"] = 10604,	-- Legion Curator
 					}),
 				},
@@ -327,8 +339,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114172 },	-- Pristine Ancestral Talisman
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(25, {	-- Draenor Curator (Pristine Ancestral Talisman)
-						["achievementID"] = 9419,
+					crit(25, {	-- Pristine Ancestral Talisman)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(15, {	-- Unite the Clans (Pristine Ancestral Talisman)
 						["achievementID"] = 9410,
@@ -340,8 +352,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114164 },	-- Pristine Barbed Fishing Hook
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(22, {	-- Draenor Curator (Pristine Barbed Fishing Hook)
-						["achievementID"] = 9419,
+					crit(22, {	-- Pristine Barbed Fishing Hook)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(12, {	-- Unite the Clans (Pristine Barbed Fishing Hook)
 						["achievementID"] = 9410,
@@ -353,8 +365,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114158 },	-- Pristine Blackrock Razor
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(19, {	-- Draenor Curator (Pristine Blackrock Razor)
-						["achievementID"] = 9419,
+					crit(19, {	-- Pristine Blackrock Razor)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(9, {	-- Unite the Clans (Pristine Blackrock Razor)
 						["achievementID"] = 9410,
@@ -366,8 +378,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114166 },	-- Pristine Calcified Eye In A Jar
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(23, {	-- Draenor Curator (Pristine Calcified Eye In A Jar)
-						["achievementID"] = 9419,
+					crit(23, {	-- Pristine Calcified Eye In A Jar)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(13, {	-- Unite the Clans (Pristine Calcified Eye In A Jar)
 						["achievementID"] = 9410,
@@ -379,8 +391,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114168 },	-- Pristine Ceremonial Tattoo Needles
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(24, {	-- Draenor Curator (Pristine Ceremonial Tattoo Needles)
-						["achievementID"] = 9419,
+					crit(24, {	-- Pristine Ceremonial Tattoo Needles)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(14, {	-- Unite the Clans (Pristine Ceremonial Tattoo Needles)
 						["achievementID"] = 9410,
@@ -392,8 +404,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114170 },	-- Pristine Cracked Ivory Idol
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(26, {	-- Draenor Curator (Pristine Cracked Ivory Idol)
-						["achievementID"] = 9419,
+					crit(26, {	-- Pristine Cracked Ivory Idol)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(16, {	-- Unite the Clans (Pristine Cracked Ivory Idol)
 						["achievementID"] = 9410,
@@ -405,8 +417,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114178 },	-- Pristine Doomsday Prophecy
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(29, {	-- Draenor Curator (Pristine Doomsday Prophecy)
-						["achievementID"] = 9419,
+					crit(29, {	-- Pristine Doomsday Prophecy)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(19, {	-- Unite the Clans (Pristine Doomsday Prophecy)
 						["achievementID"] = 9410,
@@ -418,8 +430,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114156 },	-- Pristine Elemental Bellows
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(18, {	-- Draenor Curator (Pristine Elemental Bellows)
-						["achievementID"] = 9419,
+					crit(18, {	-- Pristine Elemental Bellows)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(8, {	-- Unite the Clans (Pristine Elemental Bellows)
 						["achievementID"] = 9410,
@@ -431,8 +443,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114142 },	-- Pristine Fang-Scarred Frostwolf Axe
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(11, {	-- Draenor Curator (Pristine Fang-Scarred Frostwolf Axe)
-						["achievementID"] = 9419,
+					crit(11, {	-- Pristine Fang-Scarred Frostwolf Axe)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(1, {	-- Unite the Clans (Pristine Fang-Scarred Frostwolf Axe)
 						["achievementID"] = 9410,
@@ -444,8 +456,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114174 },	-- Pristine Flask of Blazegrease
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(27, {	-- Draenor Curator (Pristine Flask of Blazegrease)
-						["achievementID"] = 9419,
+					crit(27, {	-- Pristine Flask of Blazegrease)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(17, {	-- Unite the Clans (Pristine Flask of Blazegrease)
 						["achievementID"] = 9410,
@@ -457,8 +469,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114144 },	-- Pristine Frostwolf Ancestry Scrimshaw
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(12, {	-- Draenor Curator (Pristine Frostwolf Ancestry Scrimshaw)
-						["achievementID"] = 9419,
+					crit(12, {	-- Pristine Frostwolf Ancestry Scrimshaw)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(2, {	-- Unite the Clans (Pristine Frostwolf Ancestry Scrimshaw)
 						["achievementID"] = 9410,
@@ -470,8 +482,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114176 },	-- Pristine Gronn-Tooth Necklace
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(28, {	-- Draenor Curator (Pristine Gronn-Tooth Necklace)
-						["achievementID"] = 9419,
+					crit(28, {	-- Pristine Gronn-Tooth Necklace)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(18, {	-- Unite the Clans (Pristine Gronn-Tooth Necklace)
 						["achievementID"] = 9410,
@@ -483,8 +495,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114162 },	-- Pristine Hooked Dagger
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(21, {	-- Draenor Curator (Pristine Hooked Dagger)
-						["achievementID"] = 9419,
+					crit(21, {	-- Pristine Hooked Dagger)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(11, {	-- Unite the Clans (Pristine Hooked Dagger)
 						["achievementID"] = 9410,
@@ -496,8 +508,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114154 },	-- Pristine Metalworker's Hammer
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(17, {	-- Draenor Curator (Pristine Metalworker's Hammer)
-						["achievementID"] = 9419,
+					crit(17, {	-- Pristine Metalworker's Hammer)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(7, {	-- Unite the Clans (Pristine Metalworker's Hammer)
 						["achievementID"] = 9410,
@@ -509,8 +521,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114150 },	-- Pristine Screaming Bullroarer
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(15, {	-- Draenor Curator (Pristine Screaming Bullroarer)
-						["achievementID"] = 9419,
+					crit(15, {	-- Pristine Screaming Bullroarer)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(5, {	-- Unite the Clans (Pristine Screaming Bullroarer)
 						["achievementID"] = 9410,
@@ -522,8 +534,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114148 },	-- Pristine Warsinger's Drums
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(14, {	-- Draenor Curator (Pristine Warsinger's Drums)
-						["achievementID"] = 9419,
+					crit(14, {	-- Pristine Warsinger's Drums)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(4, {	-- Unite the Clans (Pristine Warsinger's Drums)
 						["achievementID"] = 9410,
@@ -535,8 +547,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114152 },	-- Pristine Warsong Ceremonial Pike
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(16, {	-- Draenor Curator (Pristine Warsong Ceremonial Pike)
-						["achievementID"] = 9419,
+					crit(16, {	-- Pristine Warsong Ceremonial Pike)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(6, {	-- Unite the Clans (Pristine Warsong Ceremonial Pike)
 						["achievementID"] = 9410,
@@ -548,8 +560,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114160 },	-- Pristine Weighted Chopping Axe
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(20, {	-- Draenor Curator (Pristine Weighted Chopping Axe)
-						["achievementID"] = 9419,
+					crit(20, {	-- Pristine Weighted Chopping Axe)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(10, {	-- Unite the Clans (Pristine Weighted Chopping Axe)
 						["achievementID"] = 9410,
@@ -561,8 +573,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114146 },	-- Pristine Wolfskin Snowshoes
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(13, {	-- Draenor Curator (Pristine Wolfskin Snowshoes)
-						["achievementID"] = 9419,
+					crit(13, {	-- Pristine Wolfskin Snowshoes)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(3, {	-- Unite the Clans (Pristine Wolfskin Snowshoes)
 						["achievementID"] = 9410,
@@ -823,7 +835,7 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 130922 },	-- Pristine Inert Leystone Charm
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(7, {	-- Legion Curator (Pristine Inert Leystone Charm)
+					crit(7, {	-- Pristine Inert Leystone Charm)
 						["achievementID"] = 10604,	-- Legion Curator
 					}),
 				},
@@ -833,7 +845,7 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 130925 },	-- Pristine Nobleman's Letter Opener
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(10, {	-- Legion Curator (Pristine Nobleman's Letter Opener)
+					crit(10, {	-- Pristine Nobleman's Letter Opener)
 						["achievementID"] = 10604,	-- Legion Curator
 					}),
 				},
@@ -843,7 +855,7 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 130924 },	-- Pristine
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(9, {	-- Legion Curator (Pristine Pre-War Highborne Tapestry)
+					crit(9, {	-- Pristine Pre-War Highborne Tapestry)
 						["achievementID"] = 10604,	-- Legion Curator
 					}),
 				},
@@ -853,7 +865,7 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 130923 },	-- Pristine Quietwine Vial
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(8, {	-- Legion Curator (Pristine Quietwine Vial)
+					crit(8, {	-- Pristine Quietwine Vial)
 						["achievementID"] = 10604,	-- Legion Curator
 					}),
 				},
@@ -863,7 +875,7 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 130921 },	-- Pristine Violetglass Vessel
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(6, {	-- Legion Curator (Pristine Violetglass Vessel)
+					crit(6, {	-- Pristine Violetglass Vessel)
 						["achievementID"] = 10604,	-- Legion Curator
 					}),
 				},
@@ -951,7 +963,7 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 130929 },	-- Pristine Drogbar Gem-Roller
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(14, {	-- Legion Curator (Pristine Drogbar Gem-Roller)
+					crit(14, {	-- Pristine Drogbar Gem-Roller)
 						["achievementID"] = 10604,	-- Legion Curator
 					}),
 				},
@@ -961,7 +973,7 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 130928 },	-- Pristine Hand-Smoothed Pyrestone
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(13, {	-- Legion Curator (Pristine Hand-Smoothed Pyrestone)
+					crit(13, {	-- Pristine Hand-Smoothed Pyrestone)
 						["achievementID"] = 10604,	-- Legion Curator
 					}),
 				},
@@ -971,7 +983,7 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 130927 },	-- Pristine Moosebone Fish-Hook
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(12, {	-- Legion Curator (Pristine Moosebone Fish-Hook)
+					crit(12, {	-- Pristine Moosebone Fish-Hook)
 						["achievementID"] = 10604,	-- Legion Curator
 					}),
 				},
@@ -981,7 +993,7 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 130930 },	-- Pristine Stonewood Bow
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(15, {	-- Legion Curator (Pristine Stonewood Bow)
+					crit(15, {	-- Pristine Stonewood Bow)
 						["achievementID"] = 10604,	-- Legion Curator
 					}),
 				},
@@ -991,7 +1003,7 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 130926 },	-- Pristine Trailhead Drum
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(11, {	-- Legion Curator (Pristine Trailhead Drum)
+					crit(11, {	-- Pristine Trailhead Drum)
 						["achievementID"] = 10604,	-- Legion Curator
 					}),
 				},
@@ -1165,8 +1177,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114210 },	-- Pristine Eye of Har'guun the Blind
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(36, {	-- Draenor Curator (Pristine Eye of Har'guun)
-						["achievementID"] = 9419,
+					crit(36, {	-- Pristine Eye of Har'guun)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(7, {	-- Highmaul Historian (Pristine Eye of Har'guun)
 						["achievementID"] = 9411,
@@ -1178,8 +1190,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114208 },	-- Pristine Gladiator's Shield
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(34, {	-- Draenor Curator (Pristine Gladiator's Shield)
-						["achievementID"] = 9419,
+					crit(34, {	-- Pristine Gladiator's Shield)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(5, {	-- Highmaul Historian (Pristine Gladiator's Shield)
 						["achievementID"] = 9411,
@@ -1191,8 +1203,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114213 },	-- Pristine Imperial Decree Stele
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(39, {	-- Draenor Curator (Pristine Imperial Decree Stele)
-						["achievementID"] = 9419,
+					crit(39, {	-- Pristine Imperial Decree Stele)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(10, {	-- Highmaul Historian (Pristine Imperial Decree Stele)
 						["achievementID"] = 9411,
@@ -1204,8 +1216,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114209 },	-- Pristine Mortar and Pestle
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(35, {	-- Draenor Curator (Pristine Mortar and Pestle)
-						["achievementID"] = 9419,
+					crit(35, {	-- Pristine Mortar and Pestle)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(6, {	-- Highmaul Historian (Pristine Mortar and Pestle)
 						["achievementID"] = 9411,
@@ -1217,8 +1229,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114186 },	-- Pristine Ogre Figurine
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(32, {	-- Draenor Curator (Pristine Ogre Figurine)
-						["achievementID"] = 9419,
+					crit(32, {	-- Pristine Ogre Figurine)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(3, {	-- Highmaul Historian (Pristine Ogre Figurine)
 						["achievementID"] = 9411,
@@ -1230,8 +1242,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114188 },	-- Pristine Pictogram Carving
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(33, {	-- Draenor Curator (Pristine Pictogram Carving)
-						["achievementID"] = 9419,
+					crit(33, {	-- Pristine Pictogram Carving)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(4, {	-- Highmaul Historian (Pristine Pictogram Carving)
 						["achievementID"] = 9411,
@@ -1243,8 +1255,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114212 },	-- Pristine Rylak Riding Harness
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(38, {	-- Draenor Curator (Pristine Rylak Riding Harness)
-						["achievementID"] = 9419,
+					crit(38, {	-- Pristine Rylak Riding Harness)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(9, {	-- Highmaul Historian (Pristine Rylak Riding Harness)
 						["achievementID"] = 9411,
@@ -1256,8 +1268,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114211 },	-- Pristine Stone Dentures
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(37, {	-- Draenor Curator (Pristine Stone Dentures)
-						["achievementID"] = 9419,
+					crit(37, {	-- Pristine Stone Dentures)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(8, {	-- Highmaul Historian (Pristine Stone Dentures)
 						["achievementID"] = 9411,
@@ -1269,8 +1281,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114184 },	-- Pristine Stone Manacles
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(31, {	-- Draenor Curator (Pristine Stone Manacles)
-						["achievementID"] = 9419,
+					crit(31, {	-- Pristine Stone Manacles)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(2, {	-- Highmaul Historian (Pristine Stone Manacles)
 						["achievementID"] = 9411,
@@ -1282,8 +1294,8 @@ profession(794, {	-- Archaeology
 				["provider"] = { "i", 114182 },	-- Pristine Stonemaul Succession Stone
 				["requireSkill"] = 794,	-- Archaeology
 				["g"] = {
-					crit(30, {	-- Draenor Curator (Pristine Stonemaul Succession Stone)
-						["achievementID"] = 9419,
+					crit(30, {	-- Pristine Stonemaul Succession Stone)
+						["achievementID"] = 9419,	-- Draenor Curator
 					}),
 					crit(1, {	-- Highmaul Historian (Pristine Stonemaul Succession Stone)
 						["achievementID"] = 9411,

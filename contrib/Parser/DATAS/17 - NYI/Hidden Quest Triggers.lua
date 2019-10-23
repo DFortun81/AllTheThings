@@ -819,6 +819,7 @@ _.NeverImplemented =
 		q(54411),	-- triggers when speaking with Zidormi in Darkshore to travel back in time
 		q(58013),	-- Alliance war campaign, triggers when speaking to Anduin while on "This Ain't Mine"
 		q(51722),	-- triggers when completing "Uniting Kul Tiras" (Alliance WQ unlock).  Completing one triggers all 4 WQ unlock quests (main/alt quests for both Alliance and Horde)
+		q(53800),	-- Battle for Darkshore — triggered after defeating Sira Moonwarden in Darkshore warfront
 
 
 	--	HONEYBACK HIVE
@@ -1270,6 +1271,7 @@ _.NeverImplemented =
 		q(55758),	-- Lady Ashvane HC LootID
 		q(55760),	-- Queen's Court HC LootID
 		q(55761),	-- Queen Azshara HC LootID
+		q(55759),	-- Za'qul post-encounter RP
 		
 		-- Aqueous Reliquary LootIDs (This is a guess ... have to determine which ID is for which difficulty, - sadidorf)
 		q(56961),	-- Radiance of Azshara Aqueous Reliquary LFR? LootID 
