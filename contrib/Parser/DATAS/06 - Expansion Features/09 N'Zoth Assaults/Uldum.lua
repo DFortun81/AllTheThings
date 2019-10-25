@@ -9,6 +9,12 @@ _.ExpansionFeatures =
 		["g"] = {
 			n(-10072, {	-- N'Zoth Assaults
 				n(-17,  {	-- Quests
+					q(58638, {	-- A Deeper Dive
+						["lvl"] = 120,
+						["coord"] = { 54.9, 32.9, 1527 },
+						["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+						["sourceQuest"] = 58636,	-- Eyes on the Amathet
+					}),
 					q(58281, {	-- Ancient Armaments
 						["lvl"] = 120,
 						["coord"] = { 54.8, 32.9, 1527 },
@@ -73,7 +79,12 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(-16,  {	-- Rares
+					n(157170, {	-- Acolyte Taspu
+						["questID"] = 57281,
+						["coord"] = { 64.5, 25.6, 1527 },
+					}),
 					n(158706, {	-- Congealed Corruption -- no questID from this even though the map says its rare
+						 -- note: seen when Assault: The Black Empire was up
 						["coords"] = {
 							{ 59.5, 32.1, 1527 },
 							{ 54.7, 32.1, 1527 },
@@ -82,37 +93,54 @@ _.ExpansionFeatures =
 							i(173178),	-- Corrupted Greaves -- TODO: potential zone drop set from rares?
 						},
 					}),
-					n(159087, {	-- Corrupted Bonestripper
+					n(159087, {	-- Corrupted Bonestripper -- note: seen when Assault: The Black Empire was up
 						["questID"] = 57834,
 						["coord"] = { 56.6, 21.0, 1527 },
 					}),
-					n(156709, {	-- Corrupted Sanity Despoiler
+					n(156709, {	-- Corrupted Sanity Despoiler -- note: seen when Assault: The Black Empire was up
 						["questID"] = 57666,
 						["coord"] = { 51.3, 32.0, 1527 },
 					}),
-					n(158594, {	-- Doomsayer Vathiris
+					n(158594, {	-- Doomsayer Vathiris -- note: seen when Assault: The Black Empire was up
 						["questID"] = 57672,
 						["coord"] = { 49.4, 38.3, 1527 },
 					}),
-					n(156299, {	-- R'khuzj the Unfathomable
+					n(157157, {	-- Muminah the Incandescent -- note: seen when Assault: Amathet Advance was up
+						["questID"] = 57277,
+						["coord"] = { 66.8, 20.3, 1527 },
+					}),
+					n(152677, {	-- Nebet the Ascended -- note: seen when Assault: Amathet Advance was up
+						["questID"] = 55684,
+						["coord"] = { 62.0, 24.5, 1527 },
+					}),
+					n(156299, {	-- R'khuzj the Unfathomable -- note: seen when Assault: The Black Empire was up
 						["questID"] = 57430,
 						["description"] = "Roams around the southern half of Uldum.", -- TODO:: his path is HUGE. do we want to add coords?
 					}),
-					n(156654, {	-- Shol'thoss the Doomspeaker
+					n(152040, {	-- Scoutmaster Moswen -- note: seen when Assault: Amathet Advance was up
+						["questID"] = 55518,
+						["coord"] = { 69.7, 42.2, 1527 },
+					}),
+					n(156654, {	-- Shol'thoss the Doomspeaker -- note: seen when Assault: The Black Empire was up
 						["questID"] = 57432,
 						["coord"] = { 58.6, 82.8, 1527 },
 					}),
-					n(160532, {	-- Shoth the Darkened
+					n(160532, {	-- Shoth the Darkened -- note: seen when Assault: The Black Empire was up
 						["questID"] = 58169,
 						["coord"] = { 61.3, 74.9, 1527 },
 					}),
+					n(157164, {	-- Zealot Tekem -- note: seen when Assault: Amathet Advance was up
+						["questID"] = 57279,
+						["coord"] = { 80.2, 57.0, 1527 },
+					}),
 					--[[
 					consuming maw: 62.4, 79.3
+					rumbling pit surrounded by venomscale scorplings: (65.0, 51.3). probably a rare, unknown activation
 					]]--
 				}),
 				n(-212, {	-- Treasures
 					--[[
-					o(, {	-- Black Empire Cache
+					o(, {	-- Black Empire Cache -- available when Assault: The Black Empire is up
 						["coords"] = {
 							{ 58.4, 15.4, 1527 },	-- questID 57623
 							{ 50.8, 31.4, 1527 },	-- questID 57624
@@ -124,10 +152,37 @@ _.ExpansionFeatures =
 							currency(1755),	-- Coalescing Visions
 						},
 					}),
+					o(, {	-- Amathet Coffer -- available when Assault: Amathet Advance is up
+						["coords"] = {
+							{ 65.9, 21.5, 1527 },	-- questID 55700
+							{ 66.9, 24.1, 1527 },	-- questID 55692
+							{ 71.9, 43.9, 1527 },	-- questID 55698
+							{ 75.3, 55.8, 1527 },	-- questID 55691
+							{ 85.3, 51.4, 1527 },	-- questID 55689
+						},
+					}),
 					]]--
 				}),
+				n(-2, {	-- Vendors
+					n(160714, {	-- Provisioner Qorra
+						["coord"] = { 55.1, 32.9, 1527 },
+						["g"] = {
+							i(172011, {	-- Recipe: Contract: Uldum Accord
+								["cost"] = 12600000,	-- 1,260 gold
+							}),
+						},
+					}),
+				}),
 				n(-34,  {	-- World Quests
+					q(55356, {	-- Beacon of the Sun King
+						["lvl"] = 120,
+						["isWorldQuest"] = true,
+					}),
 					q(57592, {	-- Executor of N'Zoth
+						["lvl"] = 120,
+						["isWorldQuest"] = true,
+					}),
+					q(55359, {	-- 
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
