@@ -12,8 +12,7 @@ _.ExpansionFeatures =
 				n(-17,  {	-- Quests
 					q(57008, {	-- Assault: The Warring Clans
 						i(173372, {	-- Cache of the Black Empire
-							currency(1755),	-- Echoes of Oblivion
-							i(169293),	-- Coalescing Visions x50
+							currency(1755),	-- Coalescing Visions
 							i(173178),	-- Corrupted Greaves -- TODO:: almost certainly a full ilvl 415 set for all armor types. Same ones sold by blacktalon guards for visions?
 						}),
 					}),
