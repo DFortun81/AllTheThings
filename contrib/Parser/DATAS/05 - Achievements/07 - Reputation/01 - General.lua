@@ -38,8 +38,10 @@ _.Achievements =
 					a(ach(13163)),	-- Allied Races: Kul Tiran
 					a(ach(12243)),	-- Allied Races: Lightforged Draenei
 					h(ach(12518)),	-- Allied Races: Mag'har Orc
+					a(ach(14013)),	-- Allied Races: Mechagnome
 					h(ach(12244)),	-- Allied Races: Nightborne
 					a(ach(12242)),	-- Allied Races: Void Elf
+					a(ach(13206)),	-- Allied Races: Vulpera
 					h(ach(13161)),	-- Allied Races: Zandalari Troll
 					a(ach(948, {	-- Ambassador of the Alliance
 						title(98),		-- Ambassador
