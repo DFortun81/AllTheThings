@@ -186,6 +186,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126560 },	-- Wardruid Loti
 				}),
+				q(58582, {	-- Return of the Black Prince
+					["races"] = HORDE_ONLY,
+					["description"] = "Automatically granted.",
+				}),
 				q(50881, {	-- Royal Report
 					["sourceQuests"] = {
 						46929,	-- Deterrent
@@ -353,6 +357,11 @@ _.Zones =
 					["coord"] = { 41.1, 64.4, 1164 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 133050 },	-- Princess Talanji
+				}),
+				q(58583, {	-- Where the Heart Is
+					["coord"] = { 57.8, 64.5, 1165 },
+					["provider"] = { "n", 161458 },	-- Valeera Sanguinar
+					["sourceQuest"] = 58582,	-- Return of the Black Prince
 				}),
 				q(48456, {	-- Witch Doctor Jala
 					["sourceQuests"] = { 46926 },	-- Shakedown

@@ -437,6 +437,18 @@ _.Zones =
 							["sourceQuest"] = 56190,	-- Save Ebonhorn
 							["lvl"] = 120,
 						}),
+						q(58506, {	-- Network Diagnostics
+							["lvl"] = 120,
+							["coord"] = { 50.1, 59.1, 1473 },
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
+							["sourceQuest"] = 58583,	-- Where the Heart Is
+						}),
+						q(56374, {	-- A Titanic Problem
+							["lvl"] = 120,
+							["coord"] = { 50.1, 59.1, 1473 },
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
+							["sourceQuest"] = 58506,	-- Network Diagnostics
+						}),
 					}),
 					n(-2,   {	-- Vendors
 						["lvl"] = 120,
