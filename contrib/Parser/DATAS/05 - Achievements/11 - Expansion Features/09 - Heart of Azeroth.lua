@@ -16,6 +16,7 @@ _.Achievements =
 					ach(13770),	-- Power Creep
 					ach(13771),	-- Power Is Beautiful
 					ach(13769),	-- Power Progression
+					ach(13998),	-- Pure of Heart
 					ach(13572),	-- The Heart Forge
 				},
 			}),
