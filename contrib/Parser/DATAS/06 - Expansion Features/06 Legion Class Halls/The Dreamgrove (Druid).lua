@@ -141,8 +141,6 @@ _.ExpansionFeatures =
 					q(44232),	-- The Grove Provides
 					q(44277),	-- The Lord of Black Rook Hold
 					q(44276),	-- The Lord of Black Rook Hold
-					q(43501),	-- The Power Within
-					q(43496),	-- The Power Within
 					{
 						["questID"] = 46674,	-- The Preservation of Nature
 						["provider"] = { "n", 101195 },	-- Quest Giver: Rensar Greathoof <Archdruid of the Grove>

@@ -40,6 +40,12 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 				}),
+				q(55739, {	-- Back to the Chamber
+					["coord"] = { 50.9, 88.8, 1165 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 154465 },	-- Earthen Guardian
+					["description"] = "Requires Heart of Azeroth level 65.",
+				}),
 				q(47437, {	-- Competitive Devotion
 					["sourceQuests"] = {
 						47434,	-- Restraining Order

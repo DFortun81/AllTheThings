@@ -9,58 +9,8 @@ _.GearSets =
 				tier(2, {	-- Burning Crusade
 					["g"] = {  -- COMPLETE
 						i(146650, {	-- Arsenal: Merciless Gladiator's Weapons [Horde / Alliance / Tested ] { Note: Contains Gladiator/Merciless Sets }
-							["g"] = {
-								i(28302),	-- Gladiator's Bonecracker
-								i(28299),	-- Gladiator's Bonegrinder
-								i(28308),	-- Gladiator's Cleaver
-								i(28298),	-- Gladiator's Decapitator
-								i(28346),	-- Gladiator's Endgame
-								i(28314),	-- Gladiator's Fleshslicer
-								i(32450),	-- Gladiator's Gavel
-								i(24550),	-- Gladiator's Greatsword
-								i(28309),	-- Gladiator's Hacker
-								i(28294),	-- Gladiator's Heavy Crossbow
-								i(28476),	-- Gladiator's Maul
-								i(28300),	-- Gladiator's Painsaw
-								i(28305),	-- Gladiator's Pummeler
-								i(28307),	-- Gladiator's Quickblade
-								i(32452),	-- Gladiator's Reprieve
-								i(28313),	-- Gladiator's Ripper
-								i(32451),	-- Gladiator's Salvation
-								i(28312),	-- Gladiator's Shanker
-								i(28358),	-- Gladiator's Shield Wall
-								i(28310),	-- Gladiator's Shiv
-								i(28295),	-- Gladiator's Slicer
-								i(28297),	-- Gladiator's Spellblade
-								i(28320),	-- Gladiator's Touch of Defeat
-								i(24557),	-- Gladiator's War Staff
-								i(33313),	-- Merciless Gladiator's Barrier
-								i(31958),	-- Merciless Gladiator's Bonecracker
-								i(31959),	-- Merciless Gladiator's Bonegrinder
-								i(31965),	-- Merciless Gladiator's Cleaver
-								i(31986),	-- Merciless Gladiator's Crossbow of the Phoenix
-								i(31966),	-- Merciless Gladiator's Decapitator
-								i(31978),	-- Merciless Gladiator's Endgame
-								i(32003),	-- Merciless Gladiator's Fleshslicer
-								i(32963),	-- Merciless Gladiator's Gavel
-								i(31984),	-- Merciless Gladiator's Greatsword
-								i(31985),	-- Merciless Gladiator's Hacker
-								i(32014),	-- Merciless Gladiator's Maul
-								i(32025),	-- Merciless Gladiator's Painsaw
-								i(32026),	-- Merciless Gladiator's Pummeler
-								i(32027),	-- Merciless Gladiator's Quickblade
-								i(33309),	-- Merciless Gladiator's Redoubt
-								i(32961),	-- Merciless Gladiator's Reprieve
-								i(32028),	-- Merciless Gladiator's Ripper
-								i(32964),	-- Merciless Gladiator's Salvation
-								i(32044),	-- Merciless Gladiator's Shanker
-								i(32045),	-- Merciless Gladiator's Shield Wall
-								i(32046),	-- Merciless Gladiator's Shiv
-								i(32052),	-- Merciless Gladiator's Slicer
-								i(32053),	-- Merciless Gladiator's Spellblade
-								i(32962),	-- Merciless Gladiator's Touch of Defeat
-								i(32055),	-- Merciless Gladiator's War Staff
-							},
+							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+							["sym"] = { {"sub", "pvp_weapons_ensemble", -10003, -665, -661 }, },
 						}),
 						i(146649, {	-- Arsenal: Vengeful Gladiator's Weapons [ Horde / Alliance / Tested ]
 							["g"] = {

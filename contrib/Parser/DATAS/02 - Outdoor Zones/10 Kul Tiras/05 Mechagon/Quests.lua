@@ -579,9 +579,10 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(56746, {	-- Our Direct Line
-					["provider"] = { "n", 152575 },	-- Steelsage Gao
-					["coord"] = { 73.6, 34.3, 1462 },
 					["description"] = "Quest is offered once you have completed the daily |cFFFFD700Other Interests|r three times.",
+					["provider"] = { "n", 152575 },	-- Steelsage Gao
+					["isDaily"] = true,	-- collection status for the quest resets over time
+					["coord"] = { 73.6, 34.3, 1462 },
 					["g"] = {
 						i(169176, {	-- Blueprint: Encrypted Black Market Radio
 							["questID"] = 55084,	-- Blueprint: Encrypted Black Market Radio

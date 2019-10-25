@@ -75,14 +75,6 @@ _.Zones =
 						}),
 					},
 				}),
-				n(21113, {	-- Sassa Weldwell <Trade Goods>
-					["coord"] = { 61.2, 68.8, 105 },
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(31674),	-- Recipe: Crunchy Serpent
-						i(31675),	-- Recipe: Mok'Nathal Shortribs
-					},
-				}),
 				n(19837, {	-- Daga Ramba <Potions>
 					["coord"] = { 51.0, 57.8, 105 },
 					["races"] = HORDE_ONLY,
@@ -96,6 +88,22 @@ _.Zones =
 						i(22907, {	-- Recipe: Super Mana Potion
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(21113, {	-- Sassa Weldwell <Trade Goods>
+					["coord"] = { 61.2, 68.8, 105 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(31674),	-- Recipe: Crunchy Serpent
+						i(31675),	-- Recipe: Mok'Nathal Shortribs
+					},
+				}),
+				n(21494, {	-- Smiles O'Byron <Engineer>
+					["requireSkill"] = 202,	-- Engineering
+					["description"] = "Gnomish Engineers can speak to Smiles to learn the recipe.",
+					["coord"] = { 60.2, 65.2, 105 },
+					["g"] = {
+						recipe(36955),	-- Ultrasafe Transporter - Toshley's Station
 					},
 				}),
 				n(22099, {	-- Wyrmcult Provisioner

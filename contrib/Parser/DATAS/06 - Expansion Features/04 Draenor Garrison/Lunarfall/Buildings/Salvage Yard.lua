@@ -9,12 +9,18 @@ _.ExpansionFeatures =
 				garrisonBuilding(141, {	-- Salvage Yard (rank 1: 52, rank 2: 140, rank 3: 141)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-4, {	-- Achievements
+						n(-4,  {	-- Achievements
 							ach(9468, {		-- Salvaging Pays Off
 								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 								["g"] = {
 									i(111977),		-- Salvage Yard, Level 3 [Blueprints]
 								},
+							}),
+						}),
+						n(-17, {	-- Quests
+							q(37086, {	-- Salvaging the Situation
+								["provider"] = { "n", 77378 },	-- Hennick Helmsley
+								["races"] = ALLIANCE_ONLY,
 							}),
 						}),
 						un(2, i(114120, {	-- Big Crate of Salvage

@@ -14,6 +14,10 @@ _.ExpansionFeatures =
 								["races"] = HORDE_ONLY,
 								["provider"] = { "i", 116438 },	-- Burned-Out Hand Cannon
 							}),
+							q(37044, {	-- Unconventional Inventions
+								["provider"] = { "n", 85369 },	-- Vee
+								["races"] = HORDE_ONLY,
+							}),
 						}),
 						n(-2, {	-- Vendors
 							n(88610, {	-- Engineering Follower <Engineering Entrepreneur>

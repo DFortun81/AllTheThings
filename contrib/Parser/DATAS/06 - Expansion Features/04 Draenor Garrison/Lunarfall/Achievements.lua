@@ -31,10 +31,6 @@ _.ExpansionFeatures =
 							ach(9211),		-- My Item Level Is Higher than Yours (1 - lvl 625)
 						}),
 					}),
-					ach(10365, {	-- A Frightening Friend
-						["coord"] = { 40.12, 70.06, 582 },	-- Pepe Location [Alliance]
-						["description"] = "Halloween Decorations must be up in a Tier 3 garrison.",
-					}),
 					ach(9630, 9248),	-- Defender of Draenor [A] / [H]
 					ach(9928, 9901, {	-- Don't Call Me Junior
 						follower(465),	-- Harrison Jones

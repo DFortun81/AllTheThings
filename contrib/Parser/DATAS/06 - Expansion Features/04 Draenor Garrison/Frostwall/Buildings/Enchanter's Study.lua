@@ -10,10 +10,6 @@ _.ExpansionFeatures =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						n(-17, {	-- Quests
-							q(36255, {	-- Enchanted Highmaul Bracer
-								["races"] = HORDE_ONLY,
-								["provider"] = { "i", 115008 },	-- Enchanted Highmaul Bracer
-							}),
 							q(38290, {	-- Some Dust
 								["providers"] = {
 									{ "n", 91020 },	-- Enchantress Ismae
@@ -21,6 +17,10 @@ _.ExpansionFeatures =
 								},
 								["isDaily"] = true,
 								["cost"] = { "i", 109693, 50 },	-- 50x Draenic Dust
+							}),
+							q(37570, {	-- Your First Enchanting Work Order
+								["provider"] = { "n", 79821 },	-- Yukla Greenshadow
+								["cost"] = { "i", 109693, 5 },	-- 5x Draenic Dust
 							}),
 						}),
 					},

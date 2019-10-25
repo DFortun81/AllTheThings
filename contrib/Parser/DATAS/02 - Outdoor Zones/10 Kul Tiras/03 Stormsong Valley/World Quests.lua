@@ -491,10 +491,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(53316, {	-- Hardened Monelite
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(51711, {	-- Having a Blast
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -560,11 +556,6 @@ _.Zones =
 					}),
 					q(53371, {	-- Let's Bee Friends
 						["isDaily"] = true,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52987, {	-- Let's Burn!
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52941, {	-- Light in the Darkness
@@ -969,11 +960,6 @@ _.Zones =
 					q(54457, {	-- Supplies from Storm's Wake
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(52380, {	-- Supplies Needed: Frenzied Fangtooth
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(53045, {	-- Surveying the Wharf
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1206,11 +1192,6 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52415, {	-- Work Order: Coarse Leather Barding
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52400, {	-- Work Order: Kyanite
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -1484,6 +1465,11 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
+					q(53316, {	-- Hardened Monelite
+						["isWorldQuest"] = true,
+						["requireSkill"] = 186,	-- Mining
+						["lvl"] = 120,
+					}),
 					q(53717, {	-- Hold the Highland
 						["isWorldQuest"] = true,
 						["races"] = ALLIANCE_ONLY,
@@ -1536,6 +1522,11 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(52987, {	-- Let's Burn!
+						["isWorldQuest"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(52794, {	-- Lizards and Ledgers
 						["isWorldQuest"] = true,
@@ -1818,6 +1809,11 @@ _.Zones =
 							}),
 						},
 					}),
+					q(52380, {	-- Supplies Needed: Frenzied Fangtooth
+						["isWorldQuest"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
+					}),
 					q(52322, {	-- Taja the Tidehowler
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
@@ -1986,6 +1982,12 @@ _.Zones =
 						["g"] = {
 							i(162285),	-- Recipe: Kul Tiramisu [Rank 3]
 						},
+					}),
+					q(52400, {	-- Work Order: Kyanite
+						["isWorldQuest"] = true,
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(52332, {	-- Work Order: Lightfoot Potion
 						["lvl"] = 120,

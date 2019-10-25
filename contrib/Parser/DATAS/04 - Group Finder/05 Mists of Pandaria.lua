@@ -642,12 +642,12 @@ _.GroupFinder =
 				{"select", "itemID", 54436},	-- Blue Clockwork Rocket Bot
 				{"select", "itemID", 29901},	-- Blue Moth Egg
 				{"select", "itemID", 29960},	-- Captured Firefly
-				{"select", "itemID", 8485},	-- Cat Carrier (Bombay)
+				{"select", "itemID", 8485},		-- Cat Carrier (Bombay)
 				{"select", "itemID", 46398},	-- Cat Carrier (Calico Cat)
-				{"select", "itemID", 8486},	-- Cat Carrier (Cornish Rex)
-				{"select", "itemID", 8490},	-- Cat Carrier (Siamese)
-				{"select", "itemID", 8488},	-- Cat Carrier (Silver Tabby)
-				{"select", "itemID", 8489},	-- Cat Carrier (White Kitten)
+				{"select", "itemID", 8486},		-- Cat Carrier (Cornish Rex)
+				{"select", "itemID", 8490},		-- Cat Carrier (Siamese)
+				{"select", "itemID", 8488},		-- Cat Carrier (Silver Tabby)
+				{"select", "itemID", 8489},		-- Cat Carrier (White Kitten)
 				{"select", "itemID", 10392},	-- Crimson Snake
 				{"select", "itemID", 48114},	-- Deviate Hatchling
 				{"select", "itemID", 44970},	-- Dun Morogh Cub
@@ -658,8 +658,8 @@ _.GroupFinder =
 				{"select", "itemID", 45002},	-- Mechanopeep
 				{"select", "itemID", 44980},	-- Mulgore Hatchling
 				{"select", "itemID", 48120},	-- Obsidian Hatchling
-				{"select", "itemID", 8496},	-- Parrot Cage (Cockatiel)
-				{"select", "itemID", 8495},	-- Parrot Cage (Senegal)
+				{"select", "itemID", 8496},		-- Parrot Cage (Cockatiel)
+				{"select", "itemID", 8495},		-- Parrot Cage (Senegal)
 				{"select", "itemID", 35504},	-- Phoenix Hatchling
 				{"select", "itemID", 10394},	-- Prairie Dog Whistle
 				{"select", "itemID", 44721},	-- Proto-Drake Whelp
@@ -667,7 +667,7 @@ _.GroupFinder =
 				{"select", "itemID", 45606},	-- Sen'jin Fetish
 				{"select", "itemID", 69992},	-- Shimmering Wyrmling
 				{"select", "itemID", 44965},	-- Teldrassil Sproutling
-				{"select", "itemID", 8499},	-- Tiny Crimson Whelpling
+				{"select", "itemID", 8499},		-- Tiny Crimson Whelpling
 				{"select", "itemID", 44971},	-- Tirisfal Batling
 				{"select", "itemID", 29903},	-- Yellow Moth Egg
 				{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.

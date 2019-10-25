@@ -253,6 +253,14 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 120,
 					}),
+					q(50992, {	-- Work Order: Calcified Bone
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = 393,	-- Skinning
+						["provider"] = { "n", 135808 },	-- Provisioner Fray
+						["coord"] = { 67.61, 21.81, 1161 },
+					}),
 					q(52389, {	-- Work Order: Contract: Proudmoore Admiralty
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -305,6 +313,12 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["provider"] = { "n", 135808 },	-- Provisioner Fray
 						["coord"] = { 67.61, 21.81, 1161 },
+					}),
+					q(52339, {	-- Work Order: Monel-Hardened Stirrups
+						["isWorldQuest"] = true,
+						["requireSkill"] = 164,	-- Blacksmithing
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(50995, {	-- Work Order: Shimmerscale
 						["lvl"] = 120,

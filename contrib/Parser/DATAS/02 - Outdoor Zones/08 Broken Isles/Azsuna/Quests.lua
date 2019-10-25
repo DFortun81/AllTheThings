@@ -6,12 +6,6 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(630, {	-- Azsuna
 			n(-17, { 	-- Quests
-				n(-170, {	-- Balance of Power
-					q(43521),	-- Essence of Power
-					q(43522),	-- Essential Corruption
-					q(40668),	-- Eye of Azshara: The Heart of Zin-Azshari
-					q(43517),	-- Darkheart Thicket: Fallen Power
-				}),
 				q(38857, {	-- A Favor for Mr. Shackle
 					["coord"] = { 50.2, 61.0, 630 },
 					["provider"] = { "n", 88863 },	-- Seska Seafang
@@ -897,10 +891,6 @@ _.Zones =
 				q(45833, {	-- The Pirate's Bay
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(43501),	-- The Power Within
-				q(43505),	-- The Power Within
-				q(43503),	-- The Power Within
-				q(43496),	-- The Power Within
 				q(41168),	-- The Purple Hills of Mac'Aree
 				q(41170),	-- The Relic Renewed
 				q(41171),	-- The Reliquary Calls

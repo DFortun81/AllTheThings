@@ -529,35 +529,36 @@ end
 e = function(id, t)										-- Create an ENCOUNTER Object
 	return struct("encounterID", id, t);
 end
-faction = function(id, t)								-- Create an FACTION Object
+faction = function(id, t)								-- Create a FACTION Object
 	return struct("factionID", id, t);
 end
 flightpath = function(id, t)							-- Create a FLIGHT PATH Object
 	return struct("flightPathID", id, t);
 end
 fp = flightpath;										-- Create a FLIGHT PATH Object (Alternative)
-filter = function(id, t)								-- Create an FILTER Object
+filter = function(id, t)								-- Create a FILTER Object
 	return struct("f", id, t);
 end
-follower = function(id, t)								-- Create an FOLLOWER Object
+f = filter;												-- Create a FILTER Object (Alternative)
+follower = function(id, t)								-- Create a FOLLOWER Object
 	return struct("followerID", id, t);
 end
-garrisonBuilding = function(id, t)						-- Create an GARRISON BUILDING Object
+garrisonBuilding = function(id, t)						-- Create a GARRISON BUILDING Object
 	return struct("buildingID", id, t);
 end
-gb = function(id, t)									-- Create an GARRISON BUILDING Object (Alternative)
+gb = function(id, t)									-- Create a GARRISON BUILDING Object (Alternative)
 	return struct("buildingID", id, t);
 end
-mission = function(id, t)						-- Create an MISSION Object
+mission = function(id, t)								-- Create an MISSION Object
 	return struct("missionID", id, t);
 end
-mi = function(id, t)									-- Create an MISSION Object (Alternative)
+mi = function(id, t)									-- Create a MISSION Object (Alternative)
 	return struct("missionID", id, t);
 end
 mount = function(id, t)
 	return struct("mountID", id, t);
 end
-garrisonTalent = function(id, t)						-- Create an GARRISON TALENT Object
+garrisonTalent = function(id, t)						-- Create a GARRISON TALENT Object
 	return struct("talentID", id, t);
 end
 gt = function(id, t)									-- Create an GARRISON TALENT Object (Alternative)

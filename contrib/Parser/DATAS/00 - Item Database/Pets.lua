@@ -594,7 +594,7 @@ pet(142095, 1964); 	-- Remains of A Blood Beast (Blood Boil)
 pet(141352, 1938);	-- Rescued Fawn
 pet(161089, 2199);	-- Restored Revenant
 pet(136905, 1756); 	-- Ridgeback Piglet
---	pet(173296, );	-- Rikki (not available on PTR as of 9/20/19)
+pet(173296, 2776);	-- Rikki (not available on PTR as of 9/20/19)
 pet(130166, 1804); 	-- Risen Saber Kitten
 pet(140274, 1453);	-- River Calf
 pet(34492, 168); 	-- Rocket Chicken

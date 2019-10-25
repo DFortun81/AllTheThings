@@ -7,7 +7,7 @@ _.Zones =
 		m(14, {	-- Arathi Highlands
 			n(-2,  {	-- Vendors
 				n(2816, {	-- Androd Fadran <Leatherworking Supplies>
-					["coord"] = { 39.2, 48,2, 14 },
+					["coord"] = { 39.2, 48.2, 14 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(13288, {	-- Pattern: Raptor Hide Belt

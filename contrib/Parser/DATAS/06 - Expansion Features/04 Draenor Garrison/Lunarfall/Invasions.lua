@@ -9,60 +9,100 @@ _.ExpansionFeatures =
 				["races"] = ALLIANCE_ONLY,
 				["description"] = "To trigger an invasion, you need to do an assault quest or purchase a scouting missive from the garrison quartermaster. \n\nBotani Invasion -- Assault on Lost Veil Anzu, Assault on the Everbloom Wilds \n\nGoren Invasion -- Assault on Magnrok, Assault on the Broken Precipice \n\nIron Horde Invasion -- Assault on Mok'gol Watchpost, Assault on the Iron Siegeworks, Assault on the Pit, Battle in Ashran \n\nOgre Invasion -- Assault on Stonefury Cliffs, Assault on the Gorian Proving Grounds, Challenge at the Ring of Blood \n\nShadow Council Invasion -- Assault on Shattrath Harbor, Assault on the Heart of Shattrath \n\nShadowmoon Invasion -- Assault on Darktide Roost, Assault on Pillars of Fate, Assault on Skettis, Assault on Socrethar's Rise \n\nYou can earn Bronze, Silver, Gold, and Platinum rewards once per week per toon.",
 				["g"] = {
-					ach(9208),	-- Botani Invasion
-					ach(9207),	-- Goren Invasion
-					ach(9827, {		-- Impervious Defender
-						crit(1),		-- Botani
-						crit(2),		-- Goren
-						crit(3),		-- Iron Horde
-						crit(4),		-- Ogres
-						crit(5),		-- Shadow Council
-						crit(6),		-- Shadowmoon
-						ach(9209, {		-- Master Defender
+					n(-4,  {	-- Achievements
+						ach(9208),	-- Botani Invasion
+						ach(9207),	-- Goren Invasion
+						ach(9827, {		-- Impervious Defender
 							crit(1),		-- Botani
 							crit(2),		-- Goren
 							crit(3),		-- Iron Horde
 							crit(4),		-- Ogres
 							crit(5),		-- Shadow Council
 							crit(6),		-- Shadowmoon
+							ach(9209, {		-- Master Defender
+								crit(1),		-- Botani
+								crit(2),		-- Goren
+								crit(3),		-- Iron Horde
+								crit(4),		-- Ogres
+								crit(5),		-- Shadow Council
+								crit(6),		-- Shadowmoon
+							}),
+						}),
+						ach(9543, { 	-- Invasion? What Invasion? (50)
+							ach(9167),		-- Invasion Specialist (10)
+							ach(9152),		-- It's an Invasion! (1)
+						}),
+						ach(9244),		-- Invasions Are Better with Friends
+						ach(9205),		-- Iron Horde Invasion
+						ach(9858, {		-- Master and Commander
+							crit(1),		-- Teluur
+							crit(2),		-- Gaur
+							crit(3),		-- Commander Dro'gan
+							crit(4),		-- Mage Lord Gogg'nathog
+							crit(5),		-- Lady Fleshsear
+							crit(6),		-- Annihilon
+						}),
+						ach(9204),		-- Ogre Invasion
+						ach(9826, {		-- Platinum Defender
+							crit(1),		-- Botani
+							crit(2),		-- Goren
+							crit(3),		-- Iron Horde
+							crit(4),		-- Ogres
+							crit(5),		-- Shadow Council
+							crit(6),		-- Shadowmoon
+							ach(9165),		-- Golden Defender
+							ach(9164),		-- Silver Defender
+							ach(9162),		-- Bronze Defender
+						}),
+						ach(9181, {		-- Save Those Buildings!
+							crit(1),		-- Goren
+							crit(2),		-- Iron Horde
+							crit(3),		-- Botani
+							crit(4),		-- Shadow Council
+							crit(5),		-- Shadowmoon
+							crit(6),		-- Ogres
+						}),
+						ach(9203),		-- Shadow Council Invasion
+						ach(9206),		-- Shadowmoon Clan Invasion
+					}),
+					n(-17, {	-- Quests
+						q(36171, {	-- Botani Invasion!
+							["repeatable"] = true,
+							["provider"] = { "n", 78564 },	-- Sergeant Crowler
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 100,
+						}),
+						q(36376, {	-- Goren Invasion!
+							["repeatable"] = true,
+							["provider"] = { "n", 78564 },	-- Sergeant Crowler
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 100,
+						}),
+						q(36655, {	-- Iron Horde Invasion!
+							["repeatable"] = true,
+							["provider"] = { "n", 78564 },	-- Sergeant Crowler
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 100,
+						}),
+						q(36650, {	-- Ogre Invasion!
+							["repeatable"] = true,
+							["provider"] = { "n", 78564 },	-- Sergeant Crowler
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 100,
+						}),
+						q(36830, {	-- Shadow Council Invasion!
+							["repeatable"] = true,
+							["provider"] = { "n", 78564 },	-- Sergeant Crowler
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 100,
+						}),
+						q(36412, {	-- Shadowmoon Invasion!
+							["repeatable"] = true,
+							["provider"] = { "n", 78564 },	-- Sergeant Crowler
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 100,
 						}),
 					}),
-					ach(9543, { 	-- Invasion? What Invasion? (50)
-						ach(9167),		-- Invasion Specialist (10)
-						ach(9152),		-- It's an Invasion! (1)
-					}),
-					ach(9244),		-- Invasions Are Better with Friends
-					ach(9205),		-- Iron Horde Invasion
-					ach(9858, {		-- Master and Commander
-						crit(1),		-- Teluur
-						crit(2),		-- Gaur
-						crit(3),		-- Commander Dro'gan
-						crit(4),		-- Mage Lord Gogg'nathog
-						crit(5),		-- Lady Fleshsear
-						crit(6),		-- Annihilon
-					}),
-					ach(9204),		-- Ogre Invasion
-					ach(9826, {		-- Platinum Defender
-						crit(1),		-- Botani
-						crit(2),		-- Goren
-						crit(3),		-- Iron Horde
-						crit(4),		-- Ogres
-						crit(5),		-- Shadow Council
-						crit(6),		-- Shadowmoon
-						ach(9165),		-- Golden Defender
-						ach(9164),		-- Silver Defender
-						ach(9162),		-- Bronze Defender
-					}),
-					ach(9181, {		-- Save Those Buildings!
-						crit(1),		-- Goren
-						crit(2),		-- Iron Horde
-						crit(3),		-- Botani
-						crit(4),		-- Shadow Council
-						crit(5),		-- Shadowmoon
-						crit(6),		-- Ogres
-					}),
-					ach(9203),		-- Shadow Council Invasion
-					ach(9206),		-- Shadowmoon Clan Invasion
 					i(120320, {	-- Invader's Abandoned Sack
 						["g"] = {
 							i(115418),	-- Blood Gutter Greatsword

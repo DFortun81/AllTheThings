@@ -169,8 +169,6 @@ _.ExpansionFeatures =
 					q(44276),	-- The Lord of Black Rook Hold
 					q(44277),	-- The Lord of Black Rook Hold
 					q(44222),	-- The Might of the Val'kyr
-					q(43496),	-- The Power Within							
-					q(43501),	-- The Power Within
 					q(41105),	-- The Sword of Kings
 					q(46207),	-- The Trial of Rage
 					q(40585),	-- Thus Begins the War

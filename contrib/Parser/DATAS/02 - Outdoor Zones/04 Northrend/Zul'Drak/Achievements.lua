@@ -54,14 +54,29 @@ _.Zones =
 						},
 					}),
 					crit(6, {	-- The Storm King's Crusade
-						["sourceQuest"] = 12919,	-- The Storm King's Crusade
+						["sourceQuests"] = {
+							12904,	-- Light Won't Grant Me Vengeance
+							12919,	-- The Storm King's Crusade
+							-- TODO: verify below:
+							12901,	-- Making Something Out Of Nothing
+							12903,	-- That's What Friends Are For...
+						},
 					}),
 					crit(7, {	-- Betrayal
 						["sourceQuest"] = 12713,	-- Betrayal
 					}),
 					crit(8, {	-- The Argent Patrol
-						-- TODO:: pretty sure there are way more sourceQuests for this one
-						["sourceQuest"] = 12584,	-- Pure Evil
+						["sourceQuests"] = {
+							12584,	-- Pure Evil
+							12506,	-- Trouble at the Altar of Sseratus
+							-- TODO: confirm the following:
+							12555,	-- A Tangled Skein
+							12504,	-- Argent Crusade, We Are Leaving!
+							12606,	-- Cocooned!
+							12512,	-- Leave No One Behind
+							12554,	-- Malas the Corrupter
+							12508,	-- Mopping Up
+						},
 					}),
 				}),
 			}),

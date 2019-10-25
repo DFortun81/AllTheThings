@@ -228,11 +228,6 @@ _.Zones =
 					q(48616, {	-- Bolas and Birds
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(54281, {	-- Bombing Ballistae
-						["isWorldQuest"] = true,
-						["lvl"] = 110,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(49439, {	-- Boss' Revenge
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1140,10 +1135,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(51894, {	-- Tentulos the Drifter
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(51655, {	-- Teres
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -1401,11 +1392,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(50992, {	-- Work Order: Calcified Bone
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(52389, {	-- Work Order: Contract: Proudmoore Admiralty
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -1521,15 +1507,13 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							{
+						["g"] = {
+							crit(1, {	-- A Sound Defense
 								["achievementID"] = 13283,	-- Frontline Warrior
-								["criteriaID"] = 1,	-- A Sound Defense
-							},
-							{
+							}),
+							crit(1, {	-- A Sound Defense
 								["achievementID"] = 13387,	-- Frontline Veteran
-								["criteriaID"] = 1,	-- A Sound Defense
-							},
+							}),
 						},
 					}),
 					q(51385, {	-- A Supply of Stingers
@@ -1613,20 +1597,23 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
+					q(54281, {	-- Bombing Ballistae
+						["isWorldQuest"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 110,
+					}),
 					q(53939, {	-- Breaching Boralus (Faction Assault WQ)
 						["provider"] = { "n", 135447 },	-- Ransa Greyfeather <The Honorbound Emissary>
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 						["groups"] = {
-							{
+							crit(1, {	-- Breaching Boralus
 								["achievementID"] = 13284,	-- Frontline Warrior
-								["criteriaID"] = 1,	-- Breaching Boralus
-							},
-							{
+							}),
+							crit(1, {	-- Breaching Boralus
 								["achievementID"] = 13388,	-- Frontline Veteran
-								["criteriaID"] = 1,	-- Breaching Boralus
-							},
+							}),
 						},
 					}),
 					q(52755, {	-- Bringing the Heat
@@ -2012,6 +1999,10 @@ _.Zones =
 					q(51849, {	-- Tempestria
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
+					}),
+					q(51894, {	-- Tentulos the Drifter
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
 					}),
 					q(51655, {	-- Teres
 						["lvl"] = 120,

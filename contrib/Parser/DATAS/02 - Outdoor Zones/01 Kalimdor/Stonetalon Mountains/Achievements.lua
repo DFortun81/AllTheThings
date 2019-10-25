@@ -6,7 +6,7 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(65, {	-- Stonetalon Mountains
 			n(-4, {	-- Achievements
-				ach(4936, {	-- Stonetalon Mountains Quests (alliance)
+				ach(4936, {	-- Stonetalon Mountains Quests (A)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						crit(1, {	-- Clearing a Path
@@ -22,7 +22,7 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(4980, {	-- Stonetalon Mountains Quests (horde)
+				ach(4980, {	-- Stonetalon Mountains Quests (H)
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(1, {	-- A Short-Lived Victory

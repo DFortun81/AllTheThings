@@ -791,10 +791,6 @@ _.Zones =
 				q(48805, {	-- Research Recovery
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(51897, {	-- Rimestone
-					["isWorldQuest"] = true,
-					["lvl"] = 120,
-				}),
 				q(51739, {	-- Rise of the Yetis
 					["isWorldQuest"] = true,
 					["lvl"] = 120,
@@ -1283,15 +1279,13 @@ _.Zones =
 						["isDaily"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							{
+						["g"] = {
+							crit(3, {	-- A Drust Cause
 								["achievementID"] = 13283,	-- Frontline Warrior
-								["criteriaID"] = 3,	-- A Drust Cause
-							},
-							{
+							}),
+							crit(3, {	-- A Drust Cause
 								["achievementID"] = 13387,	-- Frontline Veteran
-								["criteriaID"] = 3,	-- A Drust Cause
-							},
+							}),
 						},
 					}),
 					q(51616, {	-- A Final Rest
@@ -1586,15 +1580,13 @@ _.Zones =
 						["isDaily"] = true,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							{
+						["g"] = {
+							crit(5, {	-- In Every Dark Corner
 								["achievementID"] = 13284,	-- Frontline Warrior
-								["criteriaID"] = 5,	-- In Every Dark Corner
-							},
-							{
+							}),
+							crit(5, {	-- In Every Dark Corner
 								["achievementID"] = 13388,	-- Frontline Veteran
-								["criteriaID"] = 5,	-- In Every Dark Corner
-							},
+							}),
 						},
 					}),
 					q(54688, {	-- Inquisitor Erik (Faction Assault WQ)
@@ -1673,10 +1665,9 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 						["g"] = {
-							{	-- Night Horrors — Battle on Zandalar and Kul Tiras
+							crit(4, {	-- Night Horrors
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
-								["criteriaID"] = 4,	-- Night Horrors
-							},
+							}),
 						},
 					}),
 					q(54089, {	-- Omgar Doombow (Faction Assault WQ)
@@ -1710,6 +1701,10 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(51897, {	-- Rimestone
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
 					}),
 					q(51710, {	-- Rise of the Yetis
 						["lvl"] = 120,
@@ -1938,8 +1933,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 				}),
-				{
-					["itemID"] = 165870,	-- Order of Embers Equipment Cache
+				i(165870, {	-- Order of Embers Equipment Cache
 					["sym"] = {
 						-- Include the two extras.
 						{"select", "itemID", 166671},	-- Waycrest Guard's Cloak
@@ -1957,7 +1951,7 @@ _.Zones =
 						{"merge"},	-- Merge the finalized items back into the processing queue.
 						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 					},
-				},
+				}),
 				i(158092),	-- Colscale Cudgel
 				i(159819),	-- Coldscale Lantern
 				i(158098),	-- Coralshell Halberd

@@ -14,7 +14,6 @@ _.Zones =
 					q(46947),	-- Brutallus
 					q(45531),	-- Creeping Fel
 					q(45969),	-- Defense of the Ancient
-					q(46288),	-- Everyone to the Front
 					q(46077),	-- Felbound Spirits
 					q(40390),	-- Hallowed Ground
 					q(45541),	-- How Do YOU Like It?!
@@ -28,7 +27,6 @@ _.Zones =
 					q(46833),	-- Nature Unshackled
 					q(45793),	-- Occultist Onslaught
 					q(46752),	-- On Borrowed Wings
-					q(45797),	-- Playing with Green Fire
 					q(45929),	-- Purging the Flames
 					q(45549),	-- Salving the Corruption
 					q(46945),	-- Si'vash
@@ -117,6 +115,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(46829, {	-- Elemental Abuse
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(46288, {	-- Everyone to the Front
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
@@ -215,6 +217,10 @@ _.Zones =
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 				}),
+				q(45797, {	-- Playing with Green Fire
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 				q(46180, {	-- Power of Our Enemy
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
@@ -232,7 +238,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["g"] = {
 						ach(11607, {	-- They See Me Rolling
-							["description"] = "This achievement is only active with this World Quest.  If you take damage on your barrel you can let it regenerate before turning in."
+							["description"] = "You can only get this achievement when this quest is active.  If your barrel takes damage, you can let it regenerate before rolling to the end of the path and completing the quest.",
 						}),
 					},
 				}),

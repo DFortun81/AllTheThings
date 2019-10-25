@@ -227,14 +227,6 @@ _.Zones =
 											}),
 										},
 									}),
-									-- Kul Tiran Starter Quests
-									q(55146, {	-- Stranger in a Strange Land
-										["provider"] = { "n", 133362 },	-- Ambassador Moorgard
-										["coord"] = { 53.1, 15.4, 84 },
-										["sourceQuest"] = 55142,	-- For the Alliance
-										["races"] = { 32 },	-- Kul Tiran
-										["lvl"] = 20,
-									}),
 								}),
 								n(-207, {	-- Lightforged Draenei
 									q(49698, {	-- The Lightforged
@@ -962,12 +954,8 @@ _.Zones =
 					["lvl"] = 4,
 				}),
 				q(27241, {	-- Return to Jaina
-					["providers"] = {
-						{ "n", 1750 },	-- Grand Admiral Jes-Tereth
-						{ "n", 29611 },	-- King Varian Wrynn
-						{ "n", 107574 },	-- Anduin Wrynn
-					},
-					["coord"] = { 71.0, 72.6, 84 },
+					["provider"] = { "n", 1750 },	-- Grand Admiral Jes-Tereth
+					["coord"] = { 85.6, 32.9, 84 },
 					["sourceQuest"] = 27240,	-- Proof of Treachery
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
@@ -1053,6 +1041,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 1,
 					["u"] = 40,
+				}),
+				q(55146, {	-- Stranger in a Strange Lane
+					["provider"] = { "n", 133362 },	-- Ambassador Moorgard
+					["coord"] = { 53.2, 15.4, 84 },
+					["races"] = { 32 },	-- Kul Tiran
+					["lvl"] = 20,
 				}),
 				q(50371, {	-- Summons to Stormwind
 					["races"] = ALLIANCE_ONLY,

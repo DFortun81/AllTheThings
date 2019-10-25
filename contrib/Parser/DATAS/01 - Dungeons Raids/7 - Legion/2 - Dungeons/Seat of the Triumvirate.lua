@@ -124,6 +124,10 @@ _.Instances = { tier(7, {	-- Legion
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
+				q(48951, {	-- Seat of the Triumvirate: Voidmaw
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 			}),
 			d(2, {	-- Heroic
 				n(127882, {	-- Vixx the Collector

@@ -1025,7 +1025,7 @@ function(self)
 	settings:UpdateMode();
 	app:RefreshData();
 end);
-IllusionsCheckBox:SetATTTooltip("Enable this option to track illusions.\n\nThese are really cool looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an Illusion despite what all the Nightborn think.\n\nTracked Account Wide by Default.");
+IllusionsCheckBox:SetATTTooltip("Enable this option to track illusions.\n\nThese are really cool-looking transmog effects you can apply to your weapons!\n\nNOTE: You are not an illusion, despite what all the Nightborne think.\n\nTracked Account Wide by Default.");
 IllusionsCheckBox:SetPoint("TOPLEFT", HeirloomsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local IllusionsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",

@@ -24,6 +24,7 @@ _.NeverImplemented =
 		--    VARIOUS    --
 		-------------------
 		q(47954),	-- Tracking Quest (Triggered when using the "Surviving Kalimdor" toy to unlock flightpaths)
+		q(47956),	-- Tracking Quest (triggered when using "To Modernize the Provisioning of Azeroth" toy to unlock EK flight paths)
 		q(50659),	-- Silithus - talk to Zidormi to phase into the past version of the map
 		q(42873),	-- Tome of Illusions - Outland
 		q(42874),	-- Tome of Illusions - Northrend
@@ -189,8 +190,13 @@ _.NeverImplemented =
 		q(35453),	-- Utgarde Pinnacle heroic completion
 		
 		-- Zones
+		q(46051),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 01
+		q(46052),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 02
+		q(46053),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 03
+		q(46054),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 04
+		q(46055),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 05
 		q(12485),	-- Howling Fjord - triggers during "The Echo of Ymiron" when you see the RP between two vrykul in Wyrmskull Village
-		
+
 		-------------------
 		--   CATACLYSM   --
 		-------------------
@@ -212,6 +218,7 @@ _.NeverImplemented =
 		-------------------
 		--      MOP      --
 		-------------------
+		q(30087),	-- FLAG - Kung Fu Intro — wowhead info for this is possibly irrelevant, seems to trigger either when flying close to the magical barrier or after accepting The Arcanic Oubliette in Krasarang Wilds
 		q(31153),	-- Tracking Event - Saved Diaani
 		q(31154),	-- Tracking Event - Saved Zuulo
 		q(30531),	-- Tracking Event: Finished First Expansion
@@ -316,6 +323,8 @@ _.NeverImplemented =
 		-- RARES
 		q(44696),	-- Tracking Quest - Daily - Watcher Osu — alternate Watcher Osu daily quest
 		q(33290),	-- Tracking Quest - First - Dread Ship Vazuvius — presumably first kill only.  didn't pop on my first kill of the week.
+		q(32997),	-- Tracking Quest - First - Zesqua
+		q(33317),	-- Tracking Quest - First - Zhu-Gon the Bitter/Skunky Beer
 		q(33162),	-- Weekly Vignette Boss Kill - Tracking Quest — popped upon arriving to timeless isle and killing evermaw (first rare of the week)
 		q(33164),	-- Weekly Vignette Event Compeltion - Tracking Quest — popped when killing chelon, along with daily questID.  didn't pop from just interacting with shell.
 		-- TREASURES
@@ -525,6 +534,7 @@ _.NeverImplemented =
 		q(34812),	-- Nagrand - Horde Stables Tracking Event
 		q(34813),	-- Nagrand - Horde Workshop Tracking Event
 		q(34518),	-- Nagrand - Nagrand Corral
+		q(36898),	-- Tracking Quest: Delvar Ironfist
 
 	--	TREASURES
 		q(34521),	-- Treasure: Glowing Obsidian Shard (secondary quest triggered when looting Burning Pearl in Frostfire Ridge)
@@ -641,6 +651,11 @@ _.NeverImplemented =
 		q(47282),	-- First Aid Shop Searched — triggered after searching first aid shop during "Confirming Suspicions," 45414
 		q(46321),	-- Krasus Landing Searched — triggered when finding velen during "Confirming Suspicions," 45414
 		q(45855),	-- Tank Trait Complete — triggered when raising weapon during "A Gift From the Six," #45863, on vengeance DH
+		q(43511),	-- Kalec Arrives — triggered when turning in "The Power Within" at Azurewing Repose (starting Balance of Power)
+		q(46956),	-- Assault Treasure — looted treasure at (42.4, 80.4) during Azsuna assault
+		q(46801),	-- Ship - Val'sharah — triggered when turning in "Holding the Ramparts" during Azsuna assault
+		q(47062),	-- Tracking Quest — triggered when killing Dread Vizier Gra'tork in Azsuna invasion scenario
+		q(47196),	-- Battle for Val'sharah — triggered when turning in actual invasion quest, #45856
 		
 	-- World Boss
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
@@ -656,8 +671,8 @@ _.NeverImplemented =
 	--	q(),	-- Drugon the Frostblood 
 	--	q(),	-- Flotsam killID
 	--	q(),	-- Flotsam bonus roll
-	--	q(),	-- Humongris killID
-	--	q(),	-- Humongris bonus roll
+		q(44505),	-- Humongris killID
+		q(44900),	-- Humongris bonus roll
 		q(44506),	-- Levantus killID
 		q(44901),	-- Levantus bonus roll
 		q(47086),	-- Malificus killID
@@ -805,6 +820,7 @@ _.NeverImplemented =
 		q(54411),	-- triggers when speaking with Zidormi in Darkshore to travel back in time
 		q(58013),	-- Alliance war campaign, triggers when speaking to Anduin while on "This Ain't Mine"
 		q(51722),	-- triggers when completing "Uniting Kul Tiras" (Alliance WQ unlock).  Completing one triggers all 4 WQ unlock quests (main/alt quests for both Alliance and Horde)
+		q(53800),	-- Battle for Darkshore — triggered after defeating Sira Moonwarden in Darkshore warfront
 
 
 	--	HONEYBACK HIVE
@@ -1256,6 +1272,7 @@ _.NeverImplemented =
 		q(55758),	-- Lady Ashvane HC LootID
 		q(55760),	-- Queen's Court HC LootID
 		q(55761),	-- Queen Azshara HC LootID
+		q(55759),	-- Za'qul post-encounter RP
 		
 		-- Aqueous Reliquary LootIDs (This is a guess ... have to determine which ID is for which difficulty, - sadidorf)
 		q(56961),	-- Radiance of Azshara Aqueous Reliquary LFR? LootID 

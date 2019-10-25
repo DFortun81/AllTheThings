@@ -696,12 +696,14 @@ _.Zones =
 					["coord"] = { 68.2, 41.7, 862 },
 					["sourceQuest"] = 47310,	-- Naptime
 					["races"] = HORDE_ONLY,
+					["level"] = 120,
 				}),
 				q(52855, {	-- Alchemy is an Inexact Science
 					["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 					["coord"] = { 66.7, 42.7, 862 },
 					["sourceQuest"] = 47260,	-- Side Effects May Include...
 					["races"] = HORDE_ONLY,
+					["level"] = 120,
 				}),
 				q(52857, {	-- Held For Observation
 					["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
@@ -711,24 +713,28 @@ _.Zones =
 					["g"] = {
 						ach(13542, crit(2)),	-- How to Train Your Direhorn / Held For Observation
 					},
+					["level"] = 120,
 				}),
 				q(55254, {	-- An Unending Sleep
 					["provider"] = { "n", 151283 },	-- Direhorn Hatchling
 					["coord"] = { 68.2, 41.8, 862 },
 					["sourceQuest"] = 52857,	-- Held For Observation
 					["races"] = HORDE_ONLY,
+					["level"] = 120,
 				}),
 				q(55252, {	-- A Loa Without a Temple
 					["provider"] = { "n", 121706 },	-- Beastlord L'kala
 					["coord"] = { 66.8, 42.5, 862 },
 					["sourceQuest"] = 55254,	-- An Unending Sleep
 					["races"] = HORDE_ONLY,
+					["level"] = 120,
 				}),
 				q(55253, {	-- A Show of Faith
 					["provider"] = { "n", 151257 },	-- Torcali
 					["coord"] = { 68.2, 29.7, 862 },
 					["sourceQuest"] = 55252,	-- A Loa Without a Temple
 					["races"] = HORDE_ONLY,
+					["level"] = 120,
 				}),
 				q(55258, {	-- Sleep, Eat, Repeat
 					["provider"] = { "n", 151286 },	-- Child of Torcali
@@ -738,6 +744,7 @@ _.Zones =
 					["g"] = {
 						ach(13542, crit(3)),	-- How to Train Your Direhorn / Sleep, Eat, Repeat
 					},
+					["level"] = 120,
 				}),
 				-- Missing Quests (Need to wait a day for the next Quests)
 				

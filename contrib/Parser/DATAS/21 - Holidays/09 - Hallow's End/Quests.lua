@@ -868,6 +868,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
+				q(12349, {	-- Candy Bucket — Dustwallow Marsh, Theramore, Alliance
+					["isYearly"] = true,
+					["coord"] = { 66.6, 45.3, 70 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 70 },	-- Dustwallow Marsh
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
 				q(12402, {	-- Candy Bucket — Eastern Plaguelands, Light's Hope Chapel, neutral
 					["isYearly"] = true,
 					["coord"] = { 75.6, 52.4, 23 },
@@ -1073,6 +1085,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				q(12389, {	-- Candy Bucket — Hellfire Peninsula, Falcon Watch, Horde
 					["isYearly"] = true,
 					["coord"] = { 26.9, 59.6, 100 },
+					["races"] = HORDE_ONLY,
 					["maps"] = { 100 },	-- Hellfire Peninsula
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
@@ -1320,6 +1333,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				q(32050, {	-- Candy Bucket — Jade Forest, Honeydew Village, Horde
 					["isYearly"] = true,
 					["coord"] = { 28.5, 13.3, 371 },
+					["races"] = HORDE_ONLY,
 					["maps"] = { 371 },	-- Jade Forest
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
@@ -1937,6 +1951,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
+				q(12347, {	-- Candy Bucket — Stonetalon Mountains, Stonetalon Peak, Alliance
+					["isYearly"] = true,
+					["coord"] = { 40.6, 17.7, 65 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 65 },	-- Stonetalon Mountains
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
 				q(12378, {	-- Candy Bucket — Stonetalon Mountains, Sun Rock Retreat, Horde
 					["isYearly"] = true,
 					["coord"] = { 50.4, 63.8, 65 },
@@ -2151,6 +2177,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 					["coord"] = { 45.7, 64.5, 88 },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 88 },	-- Thunder Bluff
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
+				q(54710, {	-- Candy Bucket — Tiragarde Sound, Boralus, Alliance
+					["isYearly"] = true,
+					["coord"] = { 73.7, 12.4, 1161 },
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 1161 },	-- Boralus
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
 						i(37586, {	-- Handful of Treats
@@ -2579,6 +2617,22 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
+				q(54709, {	-- Candy Bucket — Zuldazar, Dazar'alor, Horde
+					["isYearly"] = true,
+					["coord"] = { 49.6, 82.3, 1163 },
+					["races"] = HORDE_ONLY,
+					["maps"] = {
+						1163,	-- Dazar'alor
+						1164,	-- Dazar'alor
+						1165,	-- Dazar'alor
+					},
+					["u"] = 26,	-- Hallow's End
+					["g"] = {
+						i(37586, {	-- Handful of Treats
+							["u"] = 26,	-- Hallow's End
+						}),
+					},
+				}),
 				q(12941, {	-- Candy Bucket — Zul'Drak, The Argent Stand, neutral
 					["isYearly"] = true,
 					["coord"] = { 40.8, 66.0, 121 },
@@ -2963,7 +3017,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
-				q(29374, {	-- Stink Bombs Away! (Alliance)
+				q(29054, {	-- Stink Bombs Away! (Alliance)
 					["provider"] = { "n", 51934 },	-- Gretchen Fenlow
 					["coord"] = { 32.2, 50.8, 37 },	
 					["races"] = ALLIANCE_ONLY,

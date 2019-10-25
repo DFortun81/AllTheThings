@@ -319,33 +319,46 @@ _.Zones =
 							},
 						}),
 						-- Heart of Azeroth Level 65
+						q(56262, {	-- Back to the Chamber (A)
+							["provider"] = { "n", 154464 },	-- Earthen Guardian
+							["coord"] = { 74.8, 15.2, 1161 },
+							["isBreadcrumb"] = true,
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 120,
+							["maps"] = { 1161 },	-- Boralus
+						}),
+						q(55739, {	-- Back to the Chamber (H)
+							["provider"] = { "n", 154465 },	-- Earthen Guardian
+							["coord"] = { 51.0, 88.8, 1165 },
+							["isBreadcrumb"] = true,
+							["races"] = HORDE_ONLY,
+							["lvl"] = 120,
+							["maps"] = { 1165 },	-- Dazar'alor
+						}),
 						q(55732, {	-- An Old Scar
 							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["coord"] = { 50.0, 59.2, 1473 },
-							["sourceQuest"] = 55657,	-- In the Shadow of Crimson Wings
+							["sourceQuests"] = {
+								56262,	-- Back to the Chamber (A)
+								55739,	-- Back to the Chamber (H)
+							},
 							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["lvl"] = 120,
-							["maps"] = { 
-								1474,	-- Maelstrom (Scenario)
-							},
+							["maps"] = { 1474 },	-- Maelstrom (Scenario)
 						}),
 						q(55735, {	-- 	Defending the Maelstrom
 							["provider"] = { "n", 152815 },	-- Magni Bronzebeard
 							["coord"] = { 33.7, 54.6, 1474 },
 							["sourceQuest"] = 55732,	-- An Old Scar
 							["lvl"] = 120,
-							["maps"] = { 
-								1474,	-- Maelstrom (Scenario)
-							},
+							["maps"] = { 1474 },	-- Maelstrom (Scenario)
 						}),
 						q(55737, {	-- At the Azerite Time
 							["provider"] = { "n", 152815 },	-- Magni Bronzebeard
 							["coord"] = { 33.7, 54.6, 1474 },
 							["sourceQuest"] = 55735,	-- 	Defending the Maelstrom
 							["lvl"] = 120,
-							["maps"] = { 
-								1474,	-- Maelstrom (Scenario)
-							},
+							["maps"] = { 1474 },	-- Maelstrom (Scenario)
 						}),
 --[[					
 						-- Heart of Azeroth Level 70

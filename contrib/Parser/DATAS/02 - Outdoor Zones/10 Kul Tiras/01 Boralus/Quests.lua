@@ -164,6 +164,15 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 122370 },	-- Cyrus Crestfall
 				}),
+				q(55142, {	-- For the Alliance
+					["provider"] = { "n", 150941 },	-- Katherine Proudmoore
+					["coord"] = { 67.8, 21.8, 1161 },
+					["races"] = { 32 },	-- Kul Tiran
+					["lvl"] = 20,
+					["g"] = {
+						i(165010),	-- Tabard of Kul Tiras
+					},
+				}),
 				q(53765, {	-- His Eye Upon You
 					["sourceQuest"] = 54126,	-- Twist the Knife [Alliance]
 					["description"]	= "You only get the toy if you choose to cleanse the gift.",

@@ -1092,8 +1092,6 @@ _.Zones =
 				q(43182),	-- The Missing Vessel
 				q(44671),	-- The Muscle
 				q(42407),	-- The Nature of the Beast
-				q(43496),	-- The Power Within
-				q(43501),	-- The Power Within
 				q(41192),	-- The Right Path
 				q(42401),	-- The Scent of Magic
 				q(45726),	-- The Tainted Marsh
