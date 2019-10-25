@@ -441,6 +441,7 @@ _.Zones =
 				}),
 				n(-386, {	-- Trinkets
 					i(134204),	-- Bleached Skull Talisman
+					i(139075),	-- Forest Creeper's Guile
 					i(134336),	-- Stolen Mana Crystal
 				}),
 				n(-387, {	-- Relics
@@ -453,6 +454,7 @@ _.Zones =
 					i(141275),	-- Fertile Soil
 					i(141265),	-- Gift of Flame
 					i(143704),	-- Harpybane Fetish
+					i(143686),	-- Hatecoil Badge of Glory
 					i(143696),	-- Perilous Bargain
 					i(141270),	-- Restless Dreams
 					i(143703),	-- Snowmane Totem
