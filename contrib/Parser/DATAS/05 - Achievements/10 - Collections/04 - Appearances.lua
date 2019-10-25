@@ -10,6 +10,7 @@ _.Achievements =
 				["groups"] = {
 					ach(11715),	-- (Ruth)less is More (PvP Season 10)
 					ach(11743),	-- Accessor-Eyes (Temple of Ahn'Qiraj)
+					ach(14058),	-- All Eyes On Me (Ny'alotha)
 					ach(12020),	-- Argussy Up (Antorus, the Burning Throne)
 					ach(11761, {	-- Azeroth's Next Top Model
 						title(356),	-- Stylist
@@ -60,6 +61,7 @@ _.Achievements =
 					ach(13433),	-- Tall, Dark, and Sinister
 					ach(11628),	-- That's So Last Millennium (Nighthold)
 					ach(11711),	-- The Fierce and the Furious (PvP Season 6)
+					ach(14059),	-- The Eyes Have It (BFA PvP Season 4)
 					ach(11706),	-- The Original (PvP Season 1)
 					ach(11758),	-- Thunderwear (Throne of Thunder)
 					ach(11709),	-- Tough Threads (PvP Season 4)
