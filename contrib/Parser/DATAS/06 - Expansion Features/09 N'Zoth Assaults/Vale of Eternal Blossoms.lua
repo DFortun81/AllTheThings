@@ -6,6 +6,7 @@ _.ExpansionFeatures =
 {
 	m(1530, {	-- Vale of Eternal Blossoms
 		["lvl"] = 120,
+		["maps"] = { 1570 },	-- Vale of Eternal Blossoms (ported from obelisk in Uldum. Maybe needs to be separated?)
 		["g"] = {
 			n(-10072, {	-- N'Zoth Assaults
 				n(-17,  {	-- Quests

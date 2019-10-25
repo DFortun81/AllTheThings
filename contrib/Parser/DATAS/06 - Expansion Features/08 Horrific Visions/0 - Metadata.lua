@@ -7,9 +7,56 @@ _.ExpansionFeatures =
 	n(-10071, {	-- Horrific Visions
 		["lvl"] = 120,
 		["maps"] = {
-			1570,	-- Vale of Eternal Blossoms (ported from obelisk in Uldum. Separate from city visions?)
+			1473,	-- Chamber of the Heart
 		},
 		["g"] = {
+			n(-4, {	-- Achievements
+				--[[
+					TODO:: review this section later. This reduces duplication and shows content
+						   in the right areas, but isn't exactly nice to look at
+				]]--
+				ach(14063, {	-- Horrific Vision of Orgrimmar
+					["maps"] = { 1469 },
+				}),
+				ach(14062, {	-- Horrific Vision of Stormwind
+					["maps"] = { 1470 },
+				}),
+				ach(13996, {	-- The Dark Horde
+					["maps"] = { 1469 },
+					["g"] = {
+						crit(1),	-- Horrific Vision of Orgrimmar
+						crit(2),	-- The Even More Horrific Vision of Orgrimmar
+						crit(3),	-- The Most Horrific Vision of Orgrimmar
+					},
+				}),
+				ach(14065, {	-- The Even More Horrific Vision of Orgrimmar
+					["maps"] = { 1469 },
+				}),
+				ach(14064, {	-- The Even More Horrific Vision of Stormwind
+					["maps"] = { 1470 },
+				}),
+				ach(14067, {	-- The Most Horrific Vision of Orgrimmar
+					["maps"] = { 1469 },
+				}),
+				ach(14066, {	-- The Most Horrific Vision of Stormwind
+					["maps"] = { 1470 },
+				}),
+				ach(13994, {	-- Through the Depths of Visions
+					crit(1),	-- Twilight over the White City
+					crit(2),	-- The Dark Horde
+					crit(3),	-- Unwavering Resolve
+				}),
+				ach(13995, {	-- Twilight over the White City
+					["maps"] = { 1470 },
+					["g"] = {
+						crit(1),	-- Horrific Vision of Stormwind
+						crit(2),	-- The Even More Horrific Vision of Stormwind
+						crit(3),	-- The Most Horrific Vision of Stormwind
+					},
+				}),
+				ach(14060),	-- Unwavering Resolve
+				ach(14061),	-- We have the Technology
+			}),
 			n(-17, {	-- Quests
 				q(58314, {	-- Mask of the Burned Bridge
 					["provider"] = { "i", 174083 },	-- Faceless Mask of the Burned Bridge
@@ -28,12 +75,12 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-10073, {	-- Horrific Vision of Orgrimmar
-				["maps"] = {
-					1469,	-- Start of vision from the heart chamber
-				},
-				["g"] = { -- temporary grouping until i figure out how these are best organized
-					i(174287),	-- Sparks of Unwavering Strength
-					i(173289),	-- Spark of Inspiration (Rank 2)
+				["maps"] = { 1469 },
+				["g"] = {
+					n(-6015, {	-- Rewards	-- temporary grouping until we figure out how these are best organized
+						i(174287),	-- Sparks of Unwavering Strength
+						i(173289),	-- Spark of Inspiration (Rank 2)
+					}),
 				},
 				--[[ notes:
 				repeatable, but tracking IDs only trigger once per daily
@@ -41,12 +88,12 @@ _.ExpansionFeatures =
 				]]--
 			}),
 			n(-10074, {	-- Horrific Vision of Stormwind
-				["maps"] = {
-					1470,	-- Start of vision from the heart chamber
-				},
-				["g"] = { -- temporary grouping until i figure out how these are best organized
-					i(174287),	-- Sparks of Unwavering Strength
-					i(173289),	-- Spark of Inspiration (Rank 2)
+				["maps"] = { 1470 },
+				["g"] = {
+					n(-6015, {	-- Rewards	-- temporary grouping until we figure out how these are best organized
+						i(174287),	-- Sparks of Unwavering Strength
+						i(173289),	-- Spark of Inspiration (Rank 2)
+					}),
 				},
 				--[[ notes:
 				repeatable, but tracking IDs only trigger once per daily
