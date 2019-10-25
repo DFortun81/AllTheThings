@@ -358,5 +358,6 @@ _.Factions =
 		faction(2415),	-- Rajani
 		faction(2163), 	-- Tortollan Seekers
 		faction(2391),	-- Rustbolt Resistance
+		faction(2417),	-- Uldum Accord
 	}),
 };
