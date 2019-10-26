@@ -9,9 +9,9 @@ _.Instances = { tier(7, {	-- Legion
 			815, 816, 817, 818, 819, 820, 821, 822,	-- Upper
 			809, 810, 811, 812, 813, 814,	-- Lower
 		},
-		["groups"] = {
+		["g"] = {
 			n(-1, {	-- Common Boss Drop
-				["groups"] = {
+				["g"] = {
 					i(143615),	-- Technique: Glyph of Crackling Ox Lightning
 					i(143616),	-- Technique: Glyph of the Trusted Steed
 				},
@@ -31,21 +31,21 @@ _.Instances = { tier(7, {	-- Legion
 			n(-2, {	-- Vendors
 				n(114815, {	-- Koren
 					["description"] = "This vendor is located in the Livery Stables.",
-					["groups"] = {
+					["g"] = {
 						i(31395),	-- Plans: Iceguard Helm
 						i(31393),	-- Plans: Iceguard Breastplate
 						i(31394),	-- Plans: Iceguard Leggings
 					},
 				}),
 			}),
-			d(2, {		-- Heroic
+			d(2,  {	-- Heroic
 				e(1820, {	-- Opera Hall: Wikket
 					["crs"] = {
 						114339,	-- Barnes <The Stage Manager>
 						114284,	-- Elfyra
 						114251,	-- Galindre
 					},
-					["groups"] = {
+					["g"] = {
 						i(142298),	-- Astonishingly Scarlet Slippers
 						i(142204),	-- Boots of False Promise
 						i(142300),	-- Greaves of Miraculous Magnificence
@@ -65,7 +65,7 @@ _.Instances = { tier(7, {	-- Legion
 						114260,	-- Mrrgria
 						114261,	-- Toe Knee
 					},
-					["groups"] = {
+					["g"] = {
 						i(142302),	-- Armguards of Burning Passion
 						i(142146),	-- Blackfin Wristband
 						i(142154),	-- Bracelets of the Sorrowful Bridge
@@ -82,7 +82,7 @@ _.Instances = { tier(7, {	-- Legion
 						114339,	-- Barnes <The Stage Manager>
 						114328,	-- Coggleston
 					},
-					["groups"] = {
+					["g"] = {
 						i(142196),	-- Cinch of Improbable Desire
 						i(142206),	-- Cloak of Sweltering Flame
 						i(142197),	-- Legguards of Imprisonment
@@ -117,11 +117,10 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(114312, e(1837, {	-- Moroes
 					i(138797),	-- Illusion: Mongoose
-					{
-						["itemID"] = 142246, 	-- Broken Pocket Watch
+					i(142246, { 	-- Broken Pocket Watch
+						["description"] = "This is a rare drop that eventually leads to adding Moroes as a follower.",
 						["questID"] = 44803,	-- Return to Karazhan: Master of the House
-						["description"] = "This is a rare drop that eventually leads to a adding Moroes as a follower.",
-					},
+					}),
 					i(142159),	-- Bloodstained Handkerchief
 					i(142123),	-- Breastplate of Obligation
 					i(142134),	-- Castellan's Blinders
@@ -180,33 +179,25 @@ _.Instances = { tier(7, {	-- Legion
 					i(142182),	-- Viz'aduum's Mindstone
 				})),
 			}),
-			d(23, {		-- Mythic
+			d(23, {	-- Mythic
 				n(-4, {	-- Achievements
-					{
-						["achievementID"] = 11433,	-- Burn After Reading
-						["groups"] = {
-							{
-								["criteriaID"] = 1,	-- Legacy of the Mountain King
-								["itemID"] = 142049,	-- Legacy of the Mountain King
-							},
-							{
-								["criteriaID"] = 2,	-- Redemption of the Fallen
-								["itemID"] = 142052,	-- Redemption of the Fallen
-							},
-							{
-								["criteriaID"] = 3,	-- Torment of the Worgen
-								["itemID"] = 142051,	-- Torment of the Worgen
-							},
-							{
-								["criteriaID"] = 4,	-- Wrath of the Titans
-								["itemID"] = 142073,	-- Wrath of the Titans
-							},
-						},
-					},
-					{
-						["achievementID"] = 11430,	-- One Night in Karazhan
-						["description"] = "Go to Opera, kill encounter, crystal is in the audience. Loot crystal. (1/5)\n\nGo to towards Maiden, crystal is in the room just before Maiden. Loot crystal. (2/5)\n\nGo to Moroes, kill encounter, crystal is behind the table. Loot crystal. (3/5)\n\nPick up the key that is on the ground that appears after Moroes dies.\n\nGo to Spider Room, loot crystal. (4/5)\n\nGo to Curator, kill encounter, loot crystal. (5/5)\n\nRun down to where Nightbane was spawned back in the Burning Crusade Days. Medivh will be there.\n\nTalk to Medivh.",
-					},
+					ach(11433, {	-- Burn After Reading
+						crit(1, {	-- Legacy of the Mountain King
+							["itemID"] = 142049,	-- Legacy of the Mountain King
+						}),
+						crit(2, {	-- Redemption of the Fallen
+							["itemID"] = 142052,	-- Redemption of the Fallen
+						}),
+						crit(3, {	-- Torment of the Worgen
+							["itemID"] = 142051,	-- Torment of the Worgen
+						}),
+						crit(4, {	-- Wrath of the Titans
+							["itemID"] = 142073,	-- Wrath of the Titans
+						}),
+					}),
+					ach(11430, {	-- One Night in Karazhan
+						["description"] = "1. Go to Opera and complete the encounter.  Loot the crystal in the audience.\n\n2. Head towards Maiden.  Loot the crystal in the room just before the boss.\n\n3. Go to Moroes and complete the encounter.  Loot the crystal behind the table.  Pick up the key that appears on the ground after Moroes dies.\n\n4. Go to the spider room and loot the crystal.\n\n5. Go to Curator, complete the encounter, and loot the crystal.\n\nRun down to where Nightbane was summoned in the Burning Crusade days. Medivh will be there.\n\nTalk to Medivh.\n",
+					}),
 					ach(11335),	-- Season Tickets
 				}),
 				e(1820, {	-- Opera Hall: Wikket
@@ -215,11 +206,10 @@ _.Instances = { tier(7, {	-- Legion
 						114284,	-- Elfyra
 						114251,	-- Galindre
 					},
-					["groups"] = {
-						{
+					["g"] = {
+						crit(1, {	-- Wikket
 							["achievementID"] = 11335,	-- Season Tickets
-							["criteriaID"] = 1,	-- Wikket
-						},
+						}),
 						i(142298),	-- Astonishingly Scarlet Slippers
 						i(142204),	-- Boots of False Promise
 						i(142300),	-- Greaves of Miraculous Magnificence
@@ -239,11 +229,10 @@ _.Instances = { tier(7, {	-- Legion
 						114260,	-- Mrrgria
 						114261,	-- Toe Knee
 					},
-					["groups"] = {
-						{
+					["g"] = {
+						crit(2, {	-- Westfall Story
 							["achievementID"] = 11335,	-- Season Tickets
-							["criteriaID"] = 2,	-- Westfall Story
-						},
+						}),
 						i(142302),	-- Armguards of Burning Passion
 						i(142146),	-- Blackfin Wristband
 						i(142154),	-- Bracelets of the Sorrowful Bridge
@@ -260,11 +249,10 @@ _.Instances = { tier(7, {	-- Legion
 						114339,	-- Barnes <The Stage Manager>
 						114328,	-- Coggleston
 					},
-					["groups"] = {
-						{
+					["g"] = {
+						crit(3, {	-- Beautiful Beast
 							["achievementID"] = 11335,	-- Season Tickets
-							["criteriaID"] = 3,	-- Beautiful Beast
-						},
+						}),
 						i(142196),	-- Cinch of Improbable Desire
 						i(142206),	-- Cloak of Sweltering Flame
 						i(142197),	-- Legguards of Imprisonment
@@ -301,11 +289,10 @@ _.Instances = { tier(7, {	-- Legion
 				cr(114312, e(1837, {	-- Moroes
 					ach(11338),	-- Dine and Bash
 					i(138797),	-- Illusion: Mongoose
-					{
-						["itemID"] = 142246, 	-- Broken Pocket Watch
+					i(142246, { 	-- Broken Pocket Watch
+						["description"] = "This is a rare drop that eventually leads to adding Moroes as a follower.",
 						["questID"] = 44803,	-- Return to Karazhan: Master of the House
-						["description"] = "This is a rare drop that eventually leads to a adding Moroes as a follower.",
-					},
+					}),
 					i(142159),	-- Bloodstained Handkerchief
 					i(142123),	-- Breastplate of Obligation
 					i(142134),	-- Castellan's Blinders
@@ -317,17 +304,16 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				n(114895, { 	-- Nightbane
 					["description"] = "This boss is only available if you do a speed run.",
-					["groups"] = {
+					["g"] = {
 						i(142552),	-- Smoldering Ember Wyrm
-						{
-							["itemID"] = 143556,	-- Charred Bone Fragments
-							["questID"] = 45296,	-- No Bones About It
-							["sourceQuest"] = 45295,	-- Return to Karazhan: Clearing Out the Cobwebs
+						q(45296, {	-- No Bones About It
 							["description"] = "You must complete the full quest chain before this will drop from the boss.",
-							["groups"] = {
+							["sourceQuest"] = 45295,	-- Return to Karazhan: Clearing Out the Cobwebs
+							["provider"] = { "i", 143556 },	-- Charred Bone Fragments
+							["g"] = {
 								i(142469),	-- Violet Seal of the Grand Magus
 							},
-						},
+						}),
 						i(142303),	-- Chestplate of Impenetrable Darkness
 						i(142203),	-- Harness of Smoldering Betrayal
 						i(142301),	-- Hauberk of Warped Intuition

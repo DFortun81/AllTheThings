@@ -10,6 +10,28 @@ _.Zones =
 				n(-9, {		-- PvP
 					["lvl"] = 120,
 					["g"] = {
+						q(54978, {	-- Against Overwhelming Odds
+							["provider"] = { "n", 135614 },	-- Master Mathias Shaw
+							["isWeekly"] = true,
+							["coord"] = { 70.4, 27.0, 1161 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 120,
+							["g"] = {
+								i(167100, {	-- Alliance Champion's Cache
+									["modID"] = 53,	-- ilvl 415
+									["sym"] = {
+										{ "select", "npcID", -10057 },	-- War Effort
+										{ "pop" },	-- Discard the War Effort Header and acquire the children.
+										{ "where", "mapID", 14 },	-- Arathi Highlands
+										{ "pop" },	-- Discard the Map Header and acquire the children.
+										{ "where", "npcID", -1 },	-- Select the Common Boss Drop Header.
+										{ "pop" },	-- Discard the Common Boss Drop Header and acquire the children.
+										{ "postprocess" },	-- Post Process the search results to ensure no duplicate keys exist.
+										{ "modID", 53 },	-- iLvl 415
+									},
+								}),
+							},
+						}),
 						q(52944, { 	-- Call to Arms: Drustvar
 							["isWeekly"] = true,
 							["coord"] = { 56.4, 26.0, 1161 },

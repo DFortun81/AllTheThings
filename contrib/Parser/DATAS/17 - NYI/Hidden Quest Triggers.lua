@@ -539,10 +539,14 @@ _.NeverImplemented =
 		q(34813),	-- Nagrand - Horde Workshop Tracking Event
 		q(34518),	-- Nagrand - Nagrand Corral
 		q(36898),	-- Tracking Quest: Delvar Ironfist
+		q(36569),	-- Unruly Visitors — triggers when turning in "Battle Pet Roundup"
+		q(36570),	-- Unruly Visitors — triggers when turning in "Battle Pet Roundup"
+		q(39058),	-- Critters of Draenor — looks like an unused version of #38299
 
 	--	TREASURES
 		q(34521),	-- Treasure: Glowing Obsidian Shard (secondary quest triggered when looting Burning Pearl in Frostfire Ridge)
 		q(34968),	-- Treasure: Ice-Covered Supplies (secondary quest triggered when looting Forgotten Supplies in Frostfire Ridge)
+		q(34184),	-- Vignette: Aarkos - Killed Boss — first quest that triggers before looting Aarko's Family Treasure in Talador (we have the loot quest attached to the treasure)
 	
 	--	WORLD BOSSES (probably?  'short-supply reward' is usually a bonus roll)
 		q(37460),	-- Gorgrond - Short-Supply Reward (Drov the Ruiner killed)
@@ -852,9 +856,10 @@ _.NeverImplemented =
 		-- all 3 'secret supply chest' quests trigger at once.  possibly for 3 potential chests in the zone?  not sure why horde/alliance would have one shared quest and two different quests, though.
 		q(54720),	-- Zuldazar Secret Supply Chest (playing as Horde)
 		q(55391),	-- Zuldazar Secret Supply Chest (playing as Horde)
-		q(53640),	-- Zuldazar (playing as Horde) / Tiragarde (playing as Alliance) Secret Supply Chest
+		q(53640),	-- Zuldazar (playing as Horde) / Tiragarde (playing as Alliance) / Nazmir (unknown faction) Secret Supply Chest
 		q(54714),	-- Tiragarde Sound Secret Supply Chest
 		q(55347),	-- Tiragarde Sound Secret Supply Chest
+		q(55387),	-- Nazmir Secret Supply Chest
 		
 
 	--	ISLAND EXPEDITIONS

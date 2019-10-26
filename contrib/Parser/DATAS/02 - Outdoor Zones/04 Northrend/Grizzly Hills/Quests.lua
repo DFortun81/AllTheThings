@@ -715,7 +715,7 @@ _.Zones =
 				q(12073, {	-- Pounding the Iron
 					["coord"] = { 65.1, 47.6, 116 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 2666 },	-- Scout Vor'takh
+					["provider"] = { "n", 26666 },	-- Scout Vor'takh
 					["sourceQuest"] = 12054,	-- Deciphering the Journal
 				}),
 				q(12185, {	-- Put on Your Best Face for Loken

@@ -36,6 +36,14 @@ _.Zones =
 			}),	-- A Personal Summons (Vashj'ir Starter Quest)
 			q(36499),	-- Iron Horde Invasion
 			q(29157),	-- The Zandalari Menace
+			q(49817, {	-- To Northrend! (Horde)
+				["isBreadcrumb"] = true,
+			}),
+			q(49852, {	-- To Pandaria! (Horde)
+				["sourceQuests"] = { 49864 },	-- Wars on Two Fronts (Pandaria)
+				["isBreadcrumb"] = true,
+				["races"] = HORDE_ONLY,
+			}),
 			q(28572, {	-- Warchief's Command: Arathi Highlands!
 				["isBreadcrumb"] = true,
 			}),
@@ -505,15 +513,13 @@ _.Zones =
 				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
 				["provider"] = { "i", 156477 },	-- Special Duty Assignments
 			}),
+			q(49863, {	-- To Northrend! (Alliance)
+				["isBreadcrumb"] = true,
+			}),
 			q(49866, {	-- To Pandaria! (Alliance)
 				["sourceQuests"] = { 49864 },	-- Wars on Two Fronts (Pandaria)
 				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
-			}),
-			q(49852, {	-- To Pandaria! (Horde)
-				["sourceQuests"] = { 49864 },	-- Wars on Two Fronts (Pandaria)
-				["isBreadcrumb"] = true,
-				["races"] = HORDE_ONLY,
 			}),
 		},
 	}),

@@ -39,6 +39,11 @@ _.Zones =
 						i(89125),	-- Sack of Pet Supplies
 					},
 				}),
+				q(31935, {	-- Grand Master Payne
+					["provider"] = { "n", 66675 },	-- Major Payne
+					["isDaily"] = true,
+					["coord"] = { 77.4, 19.6, 118 },
+				}),
 			}),
 		}),
 	}),

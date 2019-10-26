@@ -261,15 +261,17 @@ _.Zones =
 					["g"] = {
 						n(152961, {	-- Data Anomaly Balnazzar
 							["crs"] = {
-								153486,	-- Data Anomaly Baron Gedden
-								152979,	-- Data Anomaly Baron Kazum
-								152922,	-- Data Anomaly Captain Kromcrush
-								152983,	-- Data Anomaly Crowd Pummeler 9-60
-								152959,	-- Data Anomaly Hogger
-								152964,	-- Data Anomaly Lord Incendius
-								152976,	-- Data Anomaly Meathook
-								152923,	-- Data Anomaly Razorclaw the Butcher
-								152969,	-- Data Anomaly Razorlash
+							--	could technically separate this into 6 different listings with the same stuff under each one so people could more easily track that they'd killed every rare that can drop this loot, but it seems like an insane amount of duplication when people can just...make a list.  idk!
+							--	Balnazzar questID: 57387
+								153486,	-- Data Anomaly Baron Gedden (questID 57389)
+								152979,	-- Data Anomaly Baron Kazum (questID 57388)
+								152922,	-- Data Anomaly Captain Kromcrush (questID 57387)
+								152983,	-- Data Anomaly Crowd Pummeler 9-60 (questID 57388)
+							--	152959,	-- Data Anomaly Hogger (listed as a rare on wowhead so might have a questID, but it's never rare for me)
+							--	152964,	-- Data Anomaly Lord Incendius
+							--	152976,	-- Data Anomaly Meathook
+								152923,	-- Data Anomaly Razorclaw the Butcher (questID 57385)
+							--	152969,	-- Data Anomaly Razorlash
 							},
 							["g"] = {
 								i(168631),	-- Metal Detector
@@ -579,7 +581,7 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(56746, {	-- Our Direct Line
-					["description"] = "Quest is offered once you have completed the daily |cFFFFD700Other Interests|r three times.",
+					["description"] = "Quest is offered once you have completed |cFFFFD700Other Interests|r dailies three times.",
 					["provider"] = { "n", 152575 },	-- Steelsage Gao
 					["isDaily"] = true,	-- collection status for the quest resets over time
 					["coord"] = { 73.6, 34.3, 1462 },
