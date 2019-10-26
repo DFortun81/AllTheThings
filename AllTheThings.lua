@@ -1276,6 +1276,9 @@ local function RefreshAchievementCollection()
 		end
 	end
 end
+app.test = function()
+	RefreshAchievementCollection()
+end
 
 -- Search Caching
 local searchCache, CreateObject, MergeObject, MergeObjects = {};
@@ -4236,9 +4239,8 @@ app.BaseAchievementCriteria = {
 		elseif key == "collectible" then
 			return app.CollectibleAchievements;
 		elseif key == "saved" or key == "collected" then
-			local ach = GetDataSubMember("CollectedAchievements", t.achievementID);
-			if (ach and ach == 1 and app.Settings:Get("AccountWide:Achievements")) or select(app.AchievementCharCompletedIndex, GetAchievementInfo(t.achievementID)) then
-				return true
+			if select(app.AchievementFilter, GetAchievementInfo(t.achievementID)) then
+				return true;
 			elseif t.criteriaID then
 				local m = GetAchievementNumCriteria(t.achievementID);
 				if m and t.criteriaID <= m then
