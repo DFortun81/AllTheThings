@@ -600,8 +600,6 @@ _.NeverImplemented =
 		q(45533),	-- Legion Dungeon Reward Quest
 		q(44437),	-- Legion Sungeon Reward quest (Wrath of Azshara)
 		q(38305),	-- Cenarius, Keeper of the Grove — unused version of quest 40122
-		q(47661),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
-		q(47699),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
 		q(37526),	-- Farondis Murder Flag — triggers between turning in "The Tidestone: Shattered" and starting "Save Yourself" in Azsuna
 		q(41891),	-- Tainted Growth — got credit for this when turning in 38684, "Reading the Leaves"
 		q(43510),	-- Seal of Fate: Class Hall. Weekly quest, various sources
@@ -609,14 +607,6 @@ _.NeverImplemented =
 		q(44543),	-- The Battle for Broken Shore Scenario Skip (H)
 		q(38994),	-- TRACKING Encounter Botanist — this quest and the one below are during/after doing the "To Old Friends" quest in Val'sharah
 		q(38596),	-- TRACKING Nightmare 02
-		q(44638),	-- Tracking Quest: 7.0 Class Hall - Demon Hunter - Chapter 1.5 - Pacing Mission — think this is somewhere around "Immortal Soul" / "Leader of the Illidari" in the DH class hall
-		q(42116),	-- Tracking Quest: Chapter 2 Completed — think this is for "Unexpected Visitors" for the DH class campaign, which was the completion of the first order campaign effort for the "Fighting With Style: Classic" achievement
-		q(44597),	-- Tracking Quest: Working with the Wardens 1 — these next quests are all part of DH quest 42731, "Working With the Wardens"
-		q(44598),	-- Tracking Quest: Working with the Wardens 2
-		q(44599),	-- Tracking Quest: Working with the Wardens 3
-		q(44600),	-- Tracking Quest: Working with the Wardens 4
-		q(44601),	-- Tracking Quest: Working with the Wardens 5
-		q(44382),	-- Vengeance Chosen — chose to pursue Vengeance artifact while on quest 44383, "In Pursuit of Power"
 		q(48570),	-- Antorus, The Burning Throne - Triggers when the door opens to Kin'garoth
 		q(40612),	-- 7.0 Highmountain - Vignette - Amateur Hunters - Tracking Quest Credit - See Treasure (JAP) - NYI. Triggered after killing Irewing during Scout It Out
 		q(46775),	-- Campaign Cooldown - triggers after turning in "Champions of Legionfall" during the legionfall campaign
@@ -624,7 +614,6 @@ _.NeverImplemented =
 		q(48974),	-- Paragon of the Army of the Light — looks like this is an unused version and 48977 is the one that pops in-game
 		q(44455),	-- Downfall tracking — in Suramar, possibly tied to a Demon Hunter artifact?
 		q(41694),	-- World Quests Available — triggers when turning in "Uniting the Isles," along with the original "have all friendly reps" and present "just be 110" versions
-		q(42117),	-- Tracking Quest: Chapter 3 Completed — triggered when turning in "two worthies" after recruiting Belath Dawnblade and Matron Mother Malevolence on DH
 		q(46735),	-- Contribute to Command Center — during "Begin Construction" quest, not sure if that matters
 		q(46277),	-- Contribute to Mage Tower
 		q(46736),	-- Contribute to Nether Disruptor
@@ -640,19 +629,9 @@ _.NeverImplemented =
 		q(48860),	-- Fel Heart of Argus active tracking quest?
 		q(48450),	-- Shroud of Arcane Echoes first time tracking quest?
 		q(48579),	-- Shroud of Arcane Echoes active tracking quest?
-		q(46808),	-- Ship - Highmountain — part of a Highmountain invasion.  i refreshed after killing the NPC for "Holding Our Ground" and this quest popped
-		q(47194),	-- Battle for Highmountain — popped alongside the normal "Battle for Highmountain" final invasion quest.  possibly first-time quest?
-		q(47195),	-- Battle for Stormheim — same as above, first time i did the Stormheim invasion on that character
 		q(48281),	-- getting into the Lightforged Warframe during Dawn of Justice
 		q(43746),	-- Currency Treasure - Moon Guard — looting Shimmering Ancient Mana Cluster (?) at (41.9, 19.2) in Suramar
-		q(44602),	-- Tracking Quest: Preparations for Invasion 1 — completing first mission on DH class campaign quest "Preparations for Invasion"
-		q(44604),	-- Tracking Quest: Preparations for Invasion 2
-		q(44605),	-- Tracking Quest: Preparations for Invasion 3
-		q(44606),	-- Tracking Quest: Preparations for Invasion 4
-		q(44607),	-- Tracking Quest: Preparations for Invasion 5
 		q(49161),	-- triggered when turning in #48461, "Where They Least Expect It"
-		q(42118),	-- Tracking Quest: Chapter 4 Completed — finished order hall campaign on DH
-		q(45117),	-- TRACKING — triggered when returning to the Fel Hammer while on "Defense of the Fel Hammer"
 		q(46176),	-- triggered when turning in #44924, "The Archmage Accosted," in azshara on DH
 		q(45853),	-- Melee DPS Trait Complete — triggered when raising weapon during "A Gift From the Six," #45865, on havoc DH
 		q(45518),	-- First Aid Shop Searched — triggered after searching first aid shop during "Confirming Suspicions," 45414
@@ -660,12 +639,36 @@ _.NeverImplemented =
 		q(46321),	-- Krasus Landing Searched — triggered when finding velen during "Confirming Suspicions," 45414
 		q(45855),	-- Tank Trait Complete — triggered when raising weapon during "A Gift From the Six," #45863, on vengeance DH
 		q(43511),	-- Kalec Arrives — triggered when turning in "The Power Within" at Azurewing Repose (starting Balance of Power)
-		q(46956),	-- Assault Treasure — looted treasure at (42.4, 80.4) during Azsuna assault
-		q(46801),	-- Ship - Val'sharah — triggered when turning in "Holding the Ramparts" during Azsuna assault
-		q(47062),	-- Tracking Quest — triggered when killing Dread Vizier Gra'tork in Azsuna invasion scenario
-		q(47196),	-- Battle for Val'sharah — triggered when turning in actual invasion quest, #45856
 		
-	-- World Boss
+	--	Professions
+	--	Archaeology
+		q(41867),	-- FLAG - Brann Week 1
+		q(41868),	-- FLAG - Brann Week 2
+		q(41869),	-- FLAG - Brann Week 3
+		q(41870),	-- FLAG - Brann Week 4
+		q(41871),	-- FLAG - Brann Week 5
+	
+	--	DH class campaign
+		q(47661),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
+		q(47699),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
+		q(44638),	-- Tracking Quest: 7.0 Class Hall - Demon Hunter - Chapter 1.5 - Pacing Mission — think this is somewhere around "Immortal Soul" / "Leader of the Illidari" in the DH class hall
+		q(42116),	-- Tracking Quest: Chapter 2 Completed — think this is for "Unexpected Visitors" for the DH class campaign, which was the completion of the first order campaign effort for the "Fighting With Style: Classic" achievement
+		q(44597),	-- Tracking Quest: Working with the Wardens 1 — these next quests are all part of DH quest 42731, "Working With the Wardens"
+		q(44598),	-- Tracking Quest: Working with the Wardens 2
+		q(44599),	-- Tracking Quest: Working with the Wardens 3
+		q(44600),	-- Tracking Quest: Working with the Wardens 4
+		q(44601),	-- Tracking Quest: Working with the Wardens 5
+		q(44382),	-- Vengeance Chosen — chose to pursue Vengeance artifact while on quest 44383, "In Pursuit of Power"
+		q(42117),	-- Tracking Quest: Chapter 3 Completed — triggered when turning in "two worthies" after recruiting Belath Dawnblade and Matron Mother Malevolence on DH
+		q(44602),	-- Tracking Quest: Preparations for Invasion 1 — completing first mission on DH class campaign quest "Preparations for Invasion"
+		q(44604),	-- Tracking Quest: Preparations for Invasion 2
+		q(44605),	-- Tracking Quest: Preparations for Invasion 3
+		q(44606),	-- Tracking Quest: Preparations for Invasion 4
+		q(44607),	-- Tracking Quest: Preparations for Invasion 5
+		q(42118),	-- Tracking Quest: Chapter 4 Completed — finished order hall campaign on DH
+		q(45117),	-- TRACKING — triggered when returning to the Fel Hammer while on "Defense of the Fel Hammer"
+
+	--	World Boss
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
 	--	q(),	-- Ana-Mouz killID
 	--	q(),	-- Ana-Mouz bonus roll
@@ -698,9 +701,16 @@ _.NeverImplemented =
 	--	q(),	-- Withered J'im killID
 	--	q(),	-- Withered J'im bonus roll
 		
-	-- Invasions
+	--	Invasions
 		q(47065),	-- Highmountain Invasion / Fel Commander Erixtol Kill
 		q(47185),	-- Invasion Boss Weekly Bonus
+		q(46808),	-- Ship - Highmountain — part of a Highmountain invasion.  i refreshed after killing the NPC for "Holding Our Ground" and this quest popped
+		q(47194),	-- Battle for Highmountain — popped alongside the normal "Battle for Highmountain" final invasion quest.  possibly first-time quest?
+		q(47195),	-- Battle for Stormheim — same as above, first time i did the Stormheim invasion on that character
+		q(46956),	-- Assault Treasure — looted treasure at (42.4, 80.4) during Azsuna assault
+		q(46801),	-- Ship - Val'sharah — triggered when turning in "Holding the Ramparts" during Azsuna assault
+		q(47062),	-- Tracking Quest — triggered when killing Dread Vizier Gra'tork in Azsuna invasion scenario
+		q(47196),	-- Battle for Val'sharah — triggered when turning in actual invasion quest, #45856
 		
 	--	Invasion points
 	--	secondary quests trigger multiple times throughout the week (aka if you complete it on tuesday and wednesday, both official + secondary quest pop both days).
@@ -766,6 +776,9 @@ _.NeverImplemented =
 		q(40316),	-- The Screeching Crag
 		q(39371),	-- Witches of the Sky
 		
+	--	Stormheim bonus objectives
+		q(42431),	-- The Brood of Nithogg
+		
 	--	Val'sharah bonus objectives
 		q(38716),	-- Black Rook Hold
 		q(39029),	-- Defend the Temple
@@ -796,6 +809,7 @@ _.NeverImplemented =
 		q(47937),	-- Tracking Quest - kill Iceshatter
 		q(47935),	-- Tracking Quest - kill Icefist
 		q(47921),	-- Tracking Quest. Triggered after using the cloth ensemble
+		
 
 		-------------------
 		--      BFA      --

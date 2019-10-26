@@ -38,41 +38,40 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(35664, {	-- Unknown Archaeologist's Hammer
 						["crs"] = {
 							29128,	-- Anub'ar Prime Guard
-							28734,	-- Anub'ar Skirmisher
-							28732,	-- Anub'ar Warrior
-							29335,	-- Anub'ar Webspinner
+						--	28734,	-- Anub'ar Skirmisher
+						--	28732,	-- Anub'ar Warrior
+						--	29335,	-- Anub'ar Webspinner
 						},
 					}),
 					i(35666, {	-- Mark of the Spider
 						["crs"] = {
 							29128,	-- Anub'ar Prime Guard
-							28734,	-- Anub'ar Skirmisher
-							28732,	-- Anub'ar Warrior
-							29335,	-- Anub'ar Webspinner
+						--	28734,	-- Anub'ar Skirmisher
+						--	28732,	-- Anub'ar Warrior
+						--	29335,	-- Anub'ar Webspinner
 						},
 					}),
 					i(35665, {	-- Soothing Lichen Wraps
 						["crs"] = {
 							29128,	-- Anub'ar Prime Guard
-							28734,	-- Anub'ar Skirmisher
-							28732,	-- Anub'ar Warrior
-							29335,	-- Anub'ar Webspinner
+						--	28734,	-- Anub'ar Skirmisher
+						--	28732,	-- Anub'ar Warrior
+						--	29335,	-- Anub'ar Webspinner
 						},
 					}),
 					i(37244, {	-- Fungi-Coated Boots (Information is spare, but there are many in the auction house)
 						["crs"] = {
 							29128,	-- Anub'ar Prime Guard
-							28734,	-- Anub'ar Skirmisher
-							28732,	-- Anub'ar Warrior
-							29335,	-- Anub'ar Webspinner
+						--	28734,	-- Anub'ar Skirmisher
+						--	28732,	-- Anub'ar Warrior
+						--	29335,	-- Anub'ar Webspinner
 						},
 					}),
 				}),
 				cr(28684, e(585, { 	-- Krik'thir the Gatewatcher
-					{	-- Krik'thir the Gatewatcher slain (Azjol-Nerub)
+					crit(1, {	-- Krik'thir the Gatewatcher slain
 						["achievementID"] = 480,	-- Azjol-Nerub
-						["criteriaID"] = 1,	-- Krik'thir the Gatewatcher slain
-					},
+					}),
 					i(35655),	-- Cobweb Machete
 					i(37216),	-- Facade Shield of Glyphs
 					i(157582),	-- Nerubian Mantle
@@ -83,10 +82,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37218),	-- Stone-Worn Footwraps
 				})),
 				cr(28921, e(586, {	-- Hadronox
-					{	-- Hadronox slain (Azjol-Nerub)
+					crit(2, {	-- Hadronox slain
 						["achievementID"] = 480,	-- Azjol-Nerub
-						["criteriaID"] = 2,	-- Hadronox slain
-					},
+					}),
 					i(35658),	-- Life-Staff of the Web Lair
 					i(35660),	-- Spinneret Epaulets
 					i(37222),	-- Egg Sac Robes
@@ -97,10 +95,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37220),	-- Essence of Gossamer
 				})),
 				cr(29120, e(587, {	-- Anub'arak
-					{	-- Anub'arak slain (Azjol-Nerub)
+					crit(3, {	-- Anub'arak slain
 						["achievementID"] = 480,	-- Azjol-Nerub
-						["criteriaID"] = 3,	-- Anub'arak slain
-					},
+					}),
 					i(37235),	-- Crypt Lord's Deft Blade
 					i(37238),	-- Rod of the Fallen Monarch
 					i(37237),	-- Chitin Shell Greathelm
@@ -122,25 +119,25 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(37624, {	-- Stained-Glass Shard Ring
 							["crs"] = {
 								29128,	-- Anub'ar Prime Guard
-								28734,	-- Anub'ar Skirmisher
-								28732,	-- Anub'ar Warrior
-								29335,	-- Anub'ar Webspinner
+							--	28734,	-- Anub'ar Skirmisher
+							--	28732,	-- Anub'ar Warrior
+							--	29335,	-- Anub'ar Webspinner
 							},
 						}),
 						i(37243, {	-- Treasure Seeker's Belt
 							["crs"] = {
 								29128,	-- Anub'ar Prime Guard
-								28734,	-- Anub'ar Skirmisher
-								28732,	-- Anub'ar Warrior
-								29335,	-- Anub'ar Webspinner
+							--	28734,	-- Anub'ar Skirmisher
+							--	28732,	-- Anub'ar Warrior
+							--	29335,	-- Anub'ar Webspinner
 							},
 						}),
 						i(37625, {	-- Web Winder Gloves
 							["crs"] = {
 								29128,	-- Anub'ar Prime Guard
-								28734,	-- Anub'ar Skirmisher
-								28732,	-- Anub'ar Warrior
-								29335,	-- Anub'ar Webspinner
+							--	28734,	-- Anub'ar Skirmisher
+							--	28732,	-- Anub'ar Warrior
+							--	29335,	-- Anub'ar Webspinner
 							},
 						}),
 						i(37245, {	-- Tangled Web Bindings
@@ -157,10 +154,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								28731,	-- Watcher Silthik
 							},
 						}),
-						{			-- Krik'thir the Gatewatcher slain (Heroic: Azjol-Nerub)
+						crit(1, {	-- Krik'thir the Gatewatcher slain
 							["achievementID"] = 491,	-- Heroic: Azjol-Nerub
-							["criteriaID"] = 1,	-- Krik'thir the Gatewatcher slain
-						},
+						}),
 						i(35655),	-- Cobweb Machete
 						i(37216),	-- Facade Shield of Glyphs
 						i(157582),	-- Nerubian Mantle
@@ -172,10 +168,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					})),
 					cr(28921, e(586, {	-- Hadronox
 						ach(1297),	-- Hadronox Denied
-						{			-- Hadronox slain (Heroic: Azjol-Nerub)
+						crit(2, {	-- Hadronox slain
 							["achievementID"] = 491,	-- Heroic: Azjol-Nerub
-							["criteriaID"] = 2,	-- Hadronox slain
-						},
+						}),
 						i(35658),	-- Life-Staff of the Web Lair
 						i(35660),	-- Spinneret Epaulets
 						i(37222),	-- Egg Sac Robes
@@ -187,14 +182,12 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					})),
 					cr(29120, e(587, {	-- Anub'arak
 						ach(1860),	-- Gotta Go!
-						{			-- Anub'arak slain (Heroic: Azjol-Nerub)
+						crit(3, {	-- Anub'arak slain
 							["achievementID"] = 491,	-- Heroic: Azjol-Nerub
-							["criteriaID"] = 3,	-- Anub'arak slain
-						},
-						{			-- Anub'arak slain (Champion of the Frozen Wastes)
+						}),
+						crit(4, {	-- Anub'arak slain
 							["achievementID"] = 1658,	-- Champion of the Frozen Wastes
-							["criteriaID"] = 4,			-- Anub'arak slain
-						},
+						}),
 						i(37235),	-- Crypt Lord's Deft Blade
 						i(37238),	-- Rod of the Fallen Monarch
 						i(37237),	-- Chitin Shell Greathelm

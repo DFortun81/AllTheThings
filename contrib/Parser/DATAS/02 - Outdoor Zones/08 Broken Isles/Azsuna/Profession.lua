@@ -379,6 +379,41 @@ _.Zones =
 					}),
 				}),
 				prof(755, {	-- Jewelcrafting
+				--	most of these quests need SQs added/to be verified.  data was taken from wowhead after they were reported as missing on discord.
+					q(40528, {	-- Finishing Touches
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["description"] = "You can pick one recipe to learn first, and then purchase the other two recipes from Jabrul.",
+						["coord"] = { 46.6, 41.4, 630 },
+						["g"] = {
+							i(137794),	-- Design: Azsunite Loop (Rank 1)
+						},
+					}),
+					q(40526, {	-- Finishing Touches
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["description"] = "You can pick one recipe to learn first, and then purchase the other two recipes from Jabrul.",
+						["coord"] = { 46.6, 41.4, 630 },
+						["g"] = {
+							i(137793),	-- Design: Skystone Loop (Rank 1)
+						},
+					}),
+					q(40527, {	-- Finishing Touches
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["description"] = "You can pick one recipe to learn first, and then purchase the other two recipes from Jabrul.",
+						["coord"] = { 46.6, 41.4, 630 },
+						["g"] = {
+							i(137792),	-- Design: Deep Amber Loop (Rank 1)
+						},
+					}),
+					q(40525, {	-- Getting the Band Back Together
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["provider"] = { "n", 100538 },	-- Timothy Jones
+						["coord"] = { 46.6, 41.4, 630 },
+					}),
+					q(42214, {	-- Knocked for a Loop
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["provider"] = { "n", 100538 },	-- Timothy Jones
+						["coord"] = { 46.6, 41.4, 630 },
+					}),
 					q(40547, {	-- To Dalaran, With Love
 						["sourceQuests"] = { 40556 },	-- Jabrul Needs You
 						["requireSkill"] = 755,	-- Jewelcrafting
