@@ -6,6 +6,10 @@ _.ExpansionFeatures =
 {
 	m(1527, {	-- Uldum (under assault)
 		["lvl"] = 120,
+		["maps"] = {
+			1540,	-- Halls of Origination (storyline version)
+			1542,	-- Halls of Origination (storyline version, floor 3)
+		},
 		["g"] = {
 			n(-10072, {	-- N'Zoth Assaults
 				n(-17,  {	-- Quests
@@ -71,6 +75,17 @@ _.ExpansionFeatures =
 						["coord"] = { 54.9, 32.9, 1527 },
 						["provider"] = { "n", 155102 },	-- High Explorer Dellorah
 					}),
+					q(56377, {	-- Forging Onward
+						--[[
+							TODO:: this seems bugged. it was granted automatically upon zoning into Uldum
+								   but the quest text indicates it should probably happen after the events
+								   of the Halls of Origination
+						]]--
+						["provider"] = { "n", 154533 },	-- Magni Bronzebeard
+						["g"] = {
+							i(173280),	-- Token of Death's Door (Rank 1)
+						},
+					}),
 					q(58289, {	-- Guarded Secrets
 						["lvl"] = 120,
 						["coord"] = { 54.9, 32.9, 1527 },
@@ -107,6 +122,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 155102 },	-- High Explorer Dellorah
 						["sourceQuest"] = 58641,	-- Seekers of Corruption
 					}),
+					q(56209, {	-- The Halls of Origination
+						["lvl"] = 120,
+						["coord"] = { 69.8, 52.1, 1527 },
+						["provider"] = { "n", 154532 },	-- Magni Bronzebeard
+						["sourceQuest"] = 56374,	-- A Titanic Problem
+					}),
 					q(58288, {	-- The Sun King's Chosen
 						["lvl"] = 120,
 						["coord"] = { 54.8, 32.9, 1527 },
@@ -115,6 +136,19 @@ _.ExpansionFeatures =
 						["g"] = {
 							currency(1755),	-- Coalescing Visions
 						},
+					}),
+					q(56472, {	-- The Uldum Accord
+						["lvl"] = 120,
+						["coord"] = { 54.9, 32.7, 1527 },
+						["provider"] = { "n", 155095 },	-- King Phaoris
+						["sourceQuest"] = 56375,	-- To Ramkahen
+					}),
+					q(56375, {	-- To Ramkahen
+						["lvl"] = 120,
+						["maps"] = { 1542 },
+						["coord"] = { 47.0, 44.6, 1542 },
+						["provider"] = { "n", 154533 },	-- Magni Bronzebeard
+						["sourceQuest"] = 56209,	-- The Halls of Origination
 					}),
 					q(57874, {	-- Visions of a Dark Destiny
 						["u"] = 1,	-- removed from PTR build
