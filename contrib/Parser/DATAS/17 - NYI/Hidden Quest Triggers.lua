@@ -302,6 +302,7 @@ _.NeverImplemented =
 		q(32747),	-- Tortos Dead (killed Tortos on heroic in ToT)
 		q(32746),	-- Zandalari Council Dead (killed Council of Elders on heroic in ToT)
 		q(32753),	-- Ra-den Dead (weekly)
+		q(39978),	-- Meet the Recruits - triggers when turning in 32715 (Requiem for a Queen). Quest never went live
 		
 	--	WORLD BOSSES
 		q(33226),	-- Short-Supply Reward (Celestials bonus roll)
