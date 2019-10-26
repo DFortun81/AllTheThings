@@ -262,10 +262,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(51901, {	-- Crushtacean
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(51203, {	-- Cry Wolf
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1383,6 +1379,10 @@ _.Zones =
 					q(52306, {	-- Croaker
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
+					}),
+					q(51901, {	-- Crushtacean
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
 					}),
 					q(51777, {	-- Dagrus the Scorned
 						["lvl"] = 120,
