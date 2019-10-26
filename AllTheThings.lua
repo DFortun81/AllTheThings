@@ -218,7 +218,7 @@ local function GetMoneyString(amount)
 	if amount > 0 then
 		local formatted
 		local g,s,c = math.floor(amount / 100 / 100), math.floor((amount / 100) % 100), math.floor(amount % 100)
-		if g > 0 then -- PR#V
+		if g > 0 then
 			formatted = formatNumericWithCommas(g) .. "|TInterface\\MONEYFRAME\\UI-GoldIcon:0|t"
 		end
 		if s > 0 then
@@ -1254,6 +1254,31 @@ local NPCNameFromID = setmetatable({}, { __index = function(t, id)
 		return title;
 	end
 end});
+
+local function GetMaxAchievement(container)
+	local maxID = -1
+	for k,v in pairs(container) do
+		if k == "achievementID" and v > maxID then
+			maxID = v
+		elseif k == "g" or (k ~= "parent" and type(v) == "table") then
+			local groupMaxID = GetMaxAchievement(v)
+			if groupMaxID > maxID then maxID = groupMaxID end
+		end
+	end
+   return maxID
+end
+local function RefreshAchievementCollection()
+	local maxID = GetMaxAchievement(app.Categories.Achievements)
+	for achievementID=1,maxID,1 do
+		local id,name,_,accCompleted,_,_,_,_,flags,_,_,isGuild = GetAchievementInfo(achievementID)
+		if id and (flags == 0 or not bit.band(flags,0x1)) and not isGuild and accCompleted then
+			SetDataSubMember("CollectedAchievements", achievementID, 1)
+		end
+	end
+end
+app.test = function()
+	RefreshAchievementCollection()
+end
 
 -- Search Caching
 local searchCache, CreateObject, MergeObject, MergeObjects = {};
@@ -3555,6 +3580,9 @@ local function RefreshCollections()
 			end
 		end
 		
+		-- Refresh Achievements
+		RefreshAchievementCollection();
+		
 		-- Wait a frame before harvesting item collection status.
 		coroutine.yield();
 		
@@ -4103,6 +4131,7 @@ end)();
 
 -- Achievement Lib
 app.AchievementFilter = 4;
+app.AchievementCharCompletedIndex = 13;
 app.BaseAchievement = {
 	__index = function(t, key)
 		if key == "achievementID" then
@@ -4123,7 +4152,12 @@ app.BaseAchievement = {
 		elseif key == "collectible" then
 			return app.CollectibleAchievements;
 		elseif key == "collected" then
-			return select(app.AchievementFilter, GetAchievementInfo(t.achievementID));
+			local ach = GetDataSubMember("CollectedAchievements", t.achievementID);
+			if app.Settings:Get("AccountWide:Achievements") and ach == 1 then
+				return true
+			else
+				return select(app.AchievementCharCompletedIndex, GetAchievementInfo(t.achievementID))
+			end
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -14251,6 +14285,7 @@ app.events.VARIABLES_LOADED = function()
 		"ArtifactRelicItemLevels",
 		"Categories",
 		"Characters",
+		"CollectedAchievements",
 		"CollectedArtifacts",
 		"CollectedBuildings",
 		"CollectedBuildingsPerCharacter",
@@ -14325,6 +14360,8 @@ app.events.VARIABLES_LOADED = function()
 		app:RegisterEvent("QUEST_LOG_UPDATE");
 		app:RegisterEvent("QUEST_TURNED_IN");
 		RefreshSaves();
+		
+		RefreshAchievementCollection()
 		
 		app.CacheFlightPathData();
 		app:RegisterEvent("HEIRLOOMS_UPDATED");
