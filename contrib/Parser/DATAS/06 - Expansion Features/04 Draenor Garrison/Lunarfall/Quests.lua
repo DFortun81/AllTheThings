@@ -57,6 +57,14 @@ _.ExpansionFeatures =
 							}),
 						},
 					}),
+					q(38243, {	-- A Bit of Ore
+						["providers"] = {
+							{ "n", 90894 },	-- Alexi Hackercam
+							{ "n", 91030 },	-- Trixxy Volt
+						},
+						["isDaily"] = true,
+						["lvl"] = 90,
+					}),
 					q(33075, {	-- A Hero's Welcome
 						["sourceQuests"] = { 34692 },	-- Delegating on Draenor
 						["provider"] = { "n", 80568 },	-- Yrel

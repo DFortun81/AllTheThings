@@ -681,7 +681,22 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 				}),
-				--q(31207),	-- The Arena of Annihilation
+				q(31207, {	-- The Arena of Annihilation
+					["provider"] = { "n", 63315 },	-- Gurgthock
+					["coord"] = { 68.6, 48.4, 379 },
+					["lvl"] = 90,
+					["maps"] = { 480 },	-- Arena of Annihilation
+					["g"] = {
+						i(90466),	-- Maki's Mashing Mace
+						i(90465),	-- Scar-Shell's Scintillating Staff
+						i(90464),	-- Satay's Stabbing Sword
+						i(90463),	-- Chagan's Cheery Chopper
+						i(90462),	-- Liuyang's Lovely Longstaff
+						i(90461),	-- Jol'Grum's Frozen Mace
+						i(90460),	-- Cloudbender Kobo's Chilled Crossbow
+						i(90459),	-- Liuyang's Light-Lit Longshank
+					},
+				}),
 				q(32400, {	-- The Bell Speaks (A)
 					["races"] = ALLIANCE_ONLY,
 				}),

@@ -173,6 +173,13 @@ _.Zones =
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
+					q(32248, {	-- A Little Patience
+						["provider"] = { "n", 67940 },	-- Admiral Taylor
+						["coord"] = { 89.4, 32.6, 418 },
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 90,
+						["maps"] = { 487 },	-- A Little Patience
+					}),
 					q(30695, {	-- Ahead on the Way
 						["provider"] = { "n", 59138 },	-- Koro Mistwalker
 						["sourceQuests"] = {
@@ -453,6 +460,13 @@ _.Zones =
 							i(88045),	-- Korjan Waistband
 							i(88044),	-- Dojani Waistband
 						},
+					}),
+					q(32251, {	-- Dagger in the Dark
+						["provider"] = { "n", 67939 },	-- General Nazgrim
+						["coord"] = { 10.4, 53.8, 418 },
+						["races"] = HORDE_ONLY,
+						["maps"] = { 488, 489 },	-- Dagger in the Dark
+						["lvl"] = 90,
 					}),
 					q(32414, {	-- Darnassus Attacked?
 						["provider"] = { "n", 67940 },	-- Admiral Taylor
@@ -1085,6 +1099,12 @@ _.Zones =
 					q(32332, {	-- The First Riddle: Mercy
 						["provider"] = { "n", 68003 },	-- The Monkey King
 						["races"] = ALLIANCE_ONLY,
+					}),
+					q(31058, {	-- The Funky Monkey Brew
+						["provider"] = { "n", 65289 },	-- Brewmaster Bo
+						["coord"] = { 52.0, 76.8, 418 },
+						["lvl"] = 90,
+						["maps"] = { 450 },	-- Unga Ingoo
 					}),
 					q(36882, {	-- The Great Angler Returns
 						["provider"] = { "n", 63721 },	-- Nat Pagle

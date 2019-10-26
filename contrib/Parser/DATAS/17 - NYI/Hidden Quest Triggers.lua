@@ -287,6 +287,9 @@ _.NeverImplemented =
 		q(31622),	-- Stormstout Brewery Challenge Mode - Silver Addition (Nth)
 		q(35324),	-- Stormstout Brewery Reward Quest
 		q(35327),	-- Temple of the Jade Serpent Reward Quest
+		q(32898),	-- Daily Scenario Random (1st) (Mists) — normal scenario completion
+		q(32817),	-- Complete "Loyalty" Scenario — triggered when turning in "The King and the Council"
+		q(32818),	-- Complete "The Dark Heart of Pandaria" Scenario — triggered when turning in "The Warchief and the Darkness"
 	
 	--	RAIDS
 		q(32752),	-- Dark Animus Dead (killed Dark Animus on heroic in ToT)

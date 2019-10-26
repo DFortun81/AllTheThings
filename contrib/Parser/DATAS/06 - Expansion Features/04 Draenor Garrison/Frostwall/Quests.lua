@@ -8,6 +8,14 @@ _.ExpansionFeatures =
 			n(-17, { 	-- Quests
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					q(38243, {	-- A Bit of Ore
+						["providers"] = {
+							{ "n", 90894 },	-- Alexi Hackercam
+							{ "n", 91030 },	-- Trixxy Volt
+						},
+						["isDaily"] = true,
+						["lvl"] = 90,
+					}),
 					q(38574, {	-- All Hands on Deck
 						["provider"] = { "n", 92400 },	-- Vol'jin
 						["races"] = HORDE_ONLY,

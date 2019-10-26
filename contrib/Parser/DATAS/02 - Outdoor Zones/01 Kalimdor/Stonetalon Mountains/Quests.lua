@@ -337,7 +337,7 @@ _.Zones =
 					["provider"] = { "n", 40895 },	-- Professor Xakxak Gyromate
 					["sourceQuest"] = 25652,	-- Commandeer That Balloon!
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 35.36, 71.14, 65 },
+					["coord"] = { 65.5, 43.9, 65 },
 				}),
 				q(1096,  {	-- Gerenzo Wrenchwhistle
 					["u"] = 40,
