@@ -13,7 +13,7 @@ _.Zones =
 				q(10211, {	-- City of Light
 					["provider"] = { "n", 18166 },	-- Archmage Khadgar
 					["coord"] = { 54.7, 44.3, 111 },
-					["sourceQuests"] = 10210,	-- A'dal
+					["sourceQuests"] = { 10210 },	-- A'dal
 				}),
 				q(10167, {	-- Auchindoun...
 					["provider"] = { "n", 18481 },	-- A'dal
@@ -58,10 +58,10 @@ _.Zones =
 						i(142286),	-- Plans: Lavaforged Warhammer
 					},
 				}),
-				q(10949, {	-- Entry Into the Black Temple (UNTESTED, NEEDS CONFIRMATION)
+				q(10949, {	-- Entry Into the Black Temple
 					["provider"] = { "n", 18481 },	-- A'dal
-					["coord"] = { 54.2, 44.4, 111 },
-					["sourceQuests"] = { 10948 },	-- The Hostage Soul *UNTESTED*
+					["coord"] = { 54.3, 44.3, 111 },
+					["sourceQuests"] = { 10948 },	-- The Hostage Soul
 				}),
 				q(10704, {	-- How to Break Into the Arcatraz
 					["provider"] = { "n", 18481 },	-- A'dal

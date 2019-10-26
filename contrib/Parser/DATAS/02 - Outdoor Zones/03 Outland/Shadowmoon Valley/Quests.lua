@@ -521,20 +521,23 @@ _.Zones =
 					crit(8),		-- The Dark Conclave
 				}),
 ]]--
-				q(10985, {	-- A Distraction for Akama (UNTESTED - NEEDS CONFIRMATION)
+				q(10985, {	-- A Distraction for Akama
+				--	there may be a situation where this quest is accessible, but i'm not sure what it is.  didn't show up for horde or alliance or aldor or scryer.
+				--	there's no additional information in the quest info provided by wowhead that makes it seem any different than #13429.
+				--	not sure if this is legacy or NYI or if there's some magical situation during which it pops up so i'm just marking it legacy for now.
+					["altQuests"] = { 13429 },	-- A Distraction for Akama
 					["provider"] = { "n", 18528 },	-- Xi'ri
 					["coord"] = { 65.2, 44.0, 104 },
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 10949 },	-- Entry Into the Black Temple
+					["u"] = 40,	-- Legacy Quests
 					["g"] = {
 						i(32649),	-- Medallion of Karabor
 					},
 				}),
-				q(13429, {	-- A Distraction for Akama (UNTESTED - NEEDS CONFIRMATION)
-					["provider"] = { "n", 18528 },	-- Xi'ri
-					["coord"] = { 65.2, 44.0, 104 },
-					["races"] = HORDE_ONLY,
+				q(13429, {	-- A Distraction for Akama
 					["sourceQuests"] = { 10949 },	-- Entry Into the Black Temple
+					["provider"] = { "n", 18528 },	-- Xi'ri
+					["coord"] = { 65.2, 43.9, 104 },
 					["g"] = {
 						i(32649),	-- Medallion of Karabor
 					},
@@ -560,9 +563,9 @@ _.Zones =
 					["provider"] = { "n", 21183 },	-- Oronok Torn-heart
 					["sourceQuests"] = { 10514 },	-- I Was a Lot of Things...
 				}),
-				q(10947, {	-- An Artifact From the Past (UNTESTED, NEEDS CONFIRMATION)
+				q(10947, {	-- An Artifact From the Past
 					["provider"] = { "n", 21700 },	-- Akama
-					["coord"] = { 58.0, 48.2, 104 },
+					["coord"] = { 58.1, 48.2, 104 },
 					["sourceQuests"] = { 10946 },	-- Ruse of the Ashtongue
 				}),
 				q(10527, {	-- Ar'tor, Son of Oronok
@@ -961,12 +964,12 @@ _.Zones =
 					["coord"] = { 36.2, 57.0, 104 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(10946, {	-- Ruse of the Ashtongue - NEEDS CONFIRMATION
+				q(10946, {	-- Ruse of the Ashtongue
+					["sourceQuests"] = { 10944 },	-- The Secret Compromised
 					["provider"] = { "n", 21700 },	-- Akama
 					["coord"] = { 58.0, 48.2, 104 },
-					["sourceQuests"] = { 10944 },	-- The Secret Compromised
 				}),
-				q(10958, {	-- Seek Out the Ashtongue (UNTESTED, NEEDS CONFIRMATION)
+				q(10958, {	-- Seek Out the Ashtongue
 					["provider"] = { "n", 18528 },	-- Xi'ri
 					["coord"] = { 65.2, 44.0, 104 },
 					["sourceQuests"] = {
@@ -1191,9 +1194,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10627 },	-- Capture the Weapons
 				}),
-				q(10948, {	-- The Hostage Soul (UNTESTED, NEEDS CONFIRMATION)
+				q(10948, {	-- The Hostage Soul
 					["provider"] = { "n", 21700 },	-- Akama
-					["coord"] = { 58.0, 48.2, 104 },
+					["coord"] = { 58.1, 48.2, 104 },
 					["sourceQuests"] = { 10947 },	-- An Artifact From the Past
 				}),
 				q(10793, { 	-- The Journal of Val'zareq: Portends of War
