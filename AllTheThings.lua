@@ -218,7 +218,7 @@ local function GetMoneyString(amount)
 	if amount > 0 then
 		local formatted
 		local g,s,c = math.floor(amount / 100 / 100), math.floor((amount / 100) % 100), math.floor(amount % 100)
-		if g > 0 then -- PR#V
+		if g > 0 then
 			formatted = formatNumericWithCommas(g) .. "|TInterface\\MONEYFRAME\\UI-GoldIcon:0|t"
 		end
 		if s > 0 then
@@ -1255,6 +1255,28 @@ local NPCNameFromID = setmetatable({}, { __index = function(t, id)
 	end
 end});
 
+local function GetMaxAchievement(container)
+	local maxID = -1
+	for k,v in pairs(container) do
+		if k == "achievementID" and v > maxID then
+			maxID = v
+		elseif k == "g" or (k ~= "parent" and type(v) == "table") then
+			local groupMaxID = GetMaxAchievement(v)
+			if groupMaxID > maxID then maxID = groupMaxID end
+		end
+	end
+   return maxID
+end
+local function SetAchievementCollectionStatus(achievementID, status)
+	local id,name,_,accCompleted,_,_,_,_,flags,_,_,isGuild = GetAchievementInfo(achievementID)
+	if id and bit.band(flags,0x1) == 0 and not isGuild and accCompleted then
+		SetDataSubMember("CollectedAchievements", id, 1)
+	end
+end
+local function RefreshAchievementCollection()
+	local maxID = GetMaxAchievement(app.Categories.Achievements)
+	for achievementID=1,maxID,1 do SetAchievementCollectionStatus(achievementID, 1) end
+end
 -- Search Caching
 local searchCache, CreateObject, MergeObject, MergeObjects = {};
 app.searchCache = searchCache;
@@ -3569,6 +3591,9 @@ local function RefreshCollections()
 			end
 		end
 		
+		-- Refresh Achievements
+		RefreshAchievementCollection();
+		
 		-- Refresh Sources from Cache
 		local collectedSources = GetDataMember("CollectedSources");
 		if app.Settings:Get("Completionist") then
@@ -4103,6 +4128,7 @@ end)();
 
 -- Achievement Lib
 app.AchievementFilter = 4;
+app.AchievementCharCompletedIndex = 13;
 app.BaseAchievement = {
 	__index = function(t, key)
 		if key == "achievementID" then
@@ -4123,7 +4149,12 @@ app.BaseAchievement = {
 		elseif key == "collectible" then
 			return app.CollectibleAchievements;
 		elseif key == "collected" then
-			return select(app.AchievementFilter, GetAchievementInfo(t.achievementID));
+			if app.Settings:Get("AccountWide:Achievements") then
+				local ach = GetDataSubMember("CollectedAchievements", t.achievementID);
+				return ach == 1
+			else
+				return select(app.AchievementCharCompletedIndex, GetAchievementInfo(t.achievementID))
+			end
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -4205,9 +4236,11 @@ app.BaseAchievementCriteria = {
 		elseif key == "collectible" then
 			return app.CollectibleAchievements;
 		elseif key == "saved" or key == "collected" then
-			if select(app.AchievementFilter, GetAchievementInfo(t.achievementID)) then
-				return true;
-			elseif t.criteriaID then
+			if t.criteriaID then
+				if app.Settings:Get("AccountWide:Achievements") then
+					local ach = GetDataSubMember("CollectedAchievements", t.achievementID);
+					if ach == 1 then return true end
+				end
 				local m = GetAchievementNumCriteria(t.achievementID);
 				if m and t.criteriaID <= m then
 					return select(3, GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true));
@@ -13996,6 +14029,7 @@ SlashCmdList["AllTheThingsWQ"] = function(cmd)
 end
 
 -- Register Events required at the start
+app:RegisterEvent("ACHIEVEMENT_EARNED");
 app:RegisterEvent("ADDON_LOADED");
 app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("CHAT_MSG_ADDON");
@@ -14013,6 +14047,9 @@ app:RegisterEvent("PET_BATTLE_CLOSE")
 app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 
 -- Define Event Behaviours
+app.events.ACHIEVEMENT_EARNED = function(achievementID)
+	SetAchievementCollectionStatus(achievementID, 1)
+end
 app.events.ARTIFACT_UPDATE = function(...)
 	local itemID = select(1, C_ArtifactUI.GetArtifactInfo());
 	if itemID then
@@ -14251,6 +14288,7 @@ app.events.VARIABLES_LOADED = function()
 		"ArtifactRelicItemLevels",
 		"Categories",
 		"Characters",
+		"CollectedAchievements",
 		"CollectedArtifacts",
 		"CollectedBuildings",
 		"CollectedBuildingsPerCharacter",
@@ -14289,6 +14327,9 @@ app.events.VARIABLES_LOADED = function()
 		rawset(AllTheThingsAD, key, value);
 	end
 
+	-- Refresh Achievements
+	RefreshAchievementCollection();
+	
 	-- Tooltip Settings
 	app.CurrentMapID = app.GetCurrentMapID();
 	app.Settings:Initialize();
@@ -14363,6 +14404,9 @@ app.events.ADDON_LOADED = function(addonName)
 		if app.Settings:GetTooltipSetting("Auto:AH") then
 			app:OpenAuctionModule();
 		end
+	elseif addonName == "Blizzard_AchievementUI" then
+		RefreshAchievementCollection()
+		app:RefreshData(false, true);
 	end
 end
 app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
