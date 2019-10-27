@@ -583,7 +583,7 @@ _.Zones =
 							["coord"] = { 52.97, 94.35, 1165 },
 							["altQuests"] = { 53220 },	-- Battle for Stromgarde unlock flag
 						}),
-						q(53992, {	-- Warfront: The Battle for Darkshore [Tier 3]
+						q(53955, {	-- Warfront: The Battle for Darkshore [Tier 3]
 							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 							["coords"] = {
 								{ 52.97, 94.35, 1165 },
