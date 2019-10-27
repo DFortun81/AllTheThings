@@ -202,6 +202,85 @@ _.ExpansionFeatures =
 							follower(743),	-- Rexxar
 						},
 					}),
+					-- Hunter Hati Reborn Questline (BfA)
+					q(54913, {	-- Spark of Genius
+						["provider"] = { "n", 152002 },	-- Image of Mimiron
+						["coord"] = { 47.8, 89.4, 1165 },
+						["races"] = HORDE_ONLY,
+						["classes"] = { 3 },	-- Hunter
+						["lvl"] = 120,
+						["maps"] = { 1165 },	-- Dazar'alor
+					}),
+					q(55516, {	-- Spark of Genius (A)
+						["provider"] = { "n", 152002 },	-- Image of Mimiron
+						["coord"] = { 72.8, 14.0, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 3 },	-- Hunter
+						["lvl"] = 120,
+						["maps"] = { 1161 },	-- Boralus
+					}),
+					q(54915, {	-- Telemetry Online
+						["provider"] = { "n", 149736 },	-- Image of Mimiron
+						["coord"] = { 37.5, 46.5, 120 },
+						["sourceQuests"] = {
+							54913,	-- Spark of Genius (H)
+							55516,	-- Spark of Genius (A)
+						},
+						["classes"] = { 3 },	-- Hunter
+						["lvl"] = 120,
+						["maps"] = { 120 },	-- The Storm Peaks
+					}),
+					q(54916, {	-- The Huntsman's Creed
+						["provider"] = { "n", 149736 },	-- Image of Mimiron
+						["coord"] = { 37.5, 46.5, 120 },
+						["sourceQuest"] = 54915,	-- Telemetry Online
+						["classes"] = { 3 },	-- Hunter
+						["lvl"] = 120,
+						["maps"] = { 120 },	-- The Storm Peaks
+					}),
+					q(54917, {	-- Paid in Blood
+						["provider"] = { "n", 149870 },	-- Grif Wildheart
+						["coord"] = { 33.6, 58.6, 120 },
+						["sourceQuest"] = 54916,	-- The Huntsman's Creed
+						["classes"] = { 3 },	-- Hunter
+						["lvl"] = 120,
+						["maps"] = { 120 },	-- The Storm Peaks
+					}),
+					q(54918, {	-- Spark of Imagination
+						["provider"] = { "n", 150391 },	-- Image of Mimiron
+						["coord"] = { 39.3, 71.7, 81 },
+						["sourceQuest"] = 54917,	-- Paid in Blood
+						["classes"] = { 3 },	-- Hunter
+						["lvl"] = 120,
+						["maps"] = { 81 },	-- Silithus
+					}),
+					q(54919, {	-- Bonds of Thunder
+						["provider"] = { "n", 151061 },	-- Mimiron
+						["coord"] = { 43.3, 38.8, 745 },
+						["sourceQuest"] = 54918,	-- Spark of Imagination
+						["classes"] = { 3 },	-- Hunter
+						["lvl"] = 120,
+						["maps"] = { 745 },	-- Ulduar (Scenario)
+						["g"] = {
+							spell(292689),	-- Hati Reborn
+						},
+					}),
+					q(54920, {	-- Homeward Bound
+						["provider"] = { "n", 151061 },	-- Mimiron
+						["coord"] = { 43.3, 38.8, 745 },
+						["sourceQuest"] = 54919,	-- Bonds of Thunder
+						["classes"] = { 3 },	-- Hunter
+						["lvl"] = 120,
+						["maps"] = { 745 },	-- Ulduar (Scenario)
+					}),
+					q(55195, {	-- Reverberation
+						["provider"] = { "n", 29445 },	-- Thorim
+						["coord"] = { 33.4, 58.0, 120 },
+						["sourceQuest"] = 54920,	-- Homeward Bound
+						["classes"] = { 3 },	-- Hunter
+						["lvl"] = 120,
+						["maps"] = { 120 },	-- The Storm Peaks
+					}),
 				}),
 				--[[
 				n(102669, {	-- Scouting Map

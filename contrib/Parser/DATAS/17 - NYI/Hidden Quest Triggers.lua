@@ -1029,6 +1029,7 @@ _.NeverImplemented =
 
 
 	--	Stormsong Valley
+		q(51695),	-- Horde WarCampaign - "Reclaiming What's Ours" (ID 51696) using the horn to reclaim the Foothold
 		-- Bonus Objectives
 		q(50779, {	-- A Clean Slate
 			["isWorldQuest"] = true,
