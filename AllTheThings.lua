@@ -42,6 +42,7 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
+local GetLocale = GetLocale
 local rawget, rawset = rawget, rawset;
 
 -- Coroutine Helper Functions
@@ -5614,6 +5615,9 @@ app.BaseInstance = {
 			end
 		elseif key == "isLockoutShared" then
 			return false;
+		elseif key == "sort" then
+			if t.isRaid then return "50" .. t.name end
+			return "51" .. t.name;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5835,6 +5839,10 @@ app.CreateItemSource = function(sourceID, itemID, t)
 end
 end)();
 
+app.SortGroups = function(a,b)
+	return a.sort < b.sort;
+end
+
 -- Map Lib
 app.BaseMap = {
 	__index = function(t, key)
@@ -5859,6 +5867,9 @@ app.BaseMap = {
 			return t.achievementID and select(10, GetAchievementInfo(t.achievementID)) or "Interface/ICONS/INV_Misc_Map09";
 		elseif key == "lvl" then
 			return select(1, C_Map.GetMapLevels(t.mapID));
+		elseif key == "sort" then
+			if t.isRaid then return "50" .. app.GetMapName(t.mapID) end
+			return "51" .. app.GetMapName(t.mapID);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5866,7 +5877,12 @@ app.BaseMap = {
 	end
 };
 app.CreateMap = function(id, t)
-	return setmetatable(constructor(id, t, "mapID"), app.BaseMap);
+	local map = setmetatable(constructor(id, t, "mapID"), app.BaseMap);
+	if map.ordered and map.g and GetLocale() ~= "enGB" and GetLocale() ~= "enUS" then
+		-- Only need to order groups alphabetically in non-english locales
+		table.sort(map.g, app.SortGroups);
+	end
+	return map;
 end
 
 -- Mount Lib
@@ -6055,6 +6071,9 @@ local npcFields = {
 	["trackable"] = function(t)
 		return rawget(t, "questID");
 	end,
+	["sort"] = function(t)
+		return "51" .. t.name;
+	end,
 };
 npcFields.saved = npcFields.collected;
 app.NPCDisplayIDFromID = NPCDisplayIDFromID;
@@ -6089,6 +6108,8 @@ app.BaseObject = {
 			return t.questID;
 		elseif key == "saved" or key == "collected" then
 			return IsQuestFlaggedCompletedForObject(t);
+		elseif key == "sort" then
+			return "51" .. t.text;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -6176,6 +6197,8 @@ app.BaseProfession = {
 			return SkillIDToSpellID[t.requireSkill];
 		elseif key == "skillID" then
 			return t.requireSkill;
+		elseif key == "sort" then
+			return "51" .. t.text;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -6570,7 +6593,11 @@ end)();
 		end
 	};
 	app.CreateTier = function(id, t)
-		return setmetatable(constructor(id, t, "tierID"), app.BaseTier);
+		local tier = setmetatable(constructor(id, t, "tierID"), app.BaseTier);
+		if tier.ordered and tier.g and GetLocale() ~= "enGB" and GetLocale() ~= "enUS" then
+			table.sort(tier.g, app.SortGroups);
+		end
+		return tier
 	end
 end)();
 
