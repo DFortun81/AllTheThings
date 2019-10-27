@@ -153,6 +153,7 @@ _.Zones =
 				}),
 				q(28058, {	-- Look at the Size of It!
 					["coord"] = { 46.0, 29.8, 32 },
+					["description"] = "After looting the first pillow during |cFFFFD700Kill 'em With Sleep Deprivation|r, a timer begins. After ~10 minutes, |cFFFFD700Chambermaid Pillaclencher|r spawns and drops her pillow.",
 					["providers"] = {
 						{ "i", 62933 },	-- Chambermaid Pillaclencher's Pillow
 						{ "o", 179832 },	-- Pillaclencher's Ornate Pillow
