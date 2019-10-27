@@ -5,6 +5,7 @@
 _.Instances = { tier(6, {	-- Warlords of Draenor
 	n(-7, {	-- World Bosses
 		["order"] = "00",
+		["ordered"] = true,
 		["isRaid"] = true,
 		["lvl"] = 100,
 		["g"] = {

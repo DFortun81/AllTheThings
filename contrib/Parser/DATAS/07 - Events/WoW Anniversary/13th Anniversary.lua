@@ -178,6 +178,7 @@ _.WorldEvents =
 			},
 			{	-- World Bosses
 				["npcID"] = -7,	-- World Bosses
+				["ordered"] = true,
 				["g"] = {
 					{	-- Azuregos [Azshara - Always Up]
 						["npcID"] = 121820,	-- Azuregos

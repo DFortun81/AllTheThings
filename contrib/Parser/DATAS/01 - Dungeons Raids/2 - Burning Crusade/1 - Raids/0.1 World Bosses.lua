@@ -4,8 +4,9 @@
 
 _.Instances = { tier(2, {	-- Burning Crusade
 	n(-7, {	-- World Bosses
-		["isRaid"] = true,
 		["order"] = "00",
+		["ordered"] = true,
+		["isRaid"] = true,
 		["lvl"] = 70,
 		["g"] = { 
 			n(18728, { 	-- Doom Lord Kazzak
