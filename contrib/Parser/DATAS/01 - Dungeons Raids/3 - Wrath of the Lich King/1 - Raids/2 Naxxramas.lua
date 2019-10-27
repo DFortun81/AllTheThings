@@ -4,6 +4,7 @@
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
 	inst(754, { 	-- Naxxramas
+		["order"] = "02",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 80,

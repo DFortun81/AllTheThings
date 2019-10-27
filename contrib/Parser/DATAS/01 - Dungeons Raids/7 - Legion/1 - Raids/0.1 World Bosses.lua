@@ -4,6 +4,7 @@
 
 _.Instances = { tier(7, {	-- Legion
 	n(-7, {	-- World Bosses
+		["order"] = "00",
 		["isRaid"] = true,
 		["modID"] = 3,
 		["lvl"] = 110,

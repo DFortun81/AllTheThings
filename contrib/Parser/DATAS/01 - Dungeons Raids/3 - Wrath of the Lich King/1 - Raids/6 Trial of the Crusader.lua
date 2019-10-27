@@ -4,6 +4,7 @@
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
 	inst(757, {	-- Trial of the Crusader
+		["order"] = "06",
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
 		["coord"] = { 75.0, 21.8, 118 },	-- Trial of the Crusader, Icecrown (Argent Tournament Grounds)

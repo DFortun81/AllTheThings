@@ -4,6 +4,7 @@
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(362, { 	-- Throne of Thunder
+		["order"] = "04",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 90,

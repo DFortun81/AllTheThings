@@ -5616,6 +5616,7 @@ app.BaseInstance = {
 		elseif key == "isLockoutShared" then
 			return false;
 		elseif key == "sort" then
+			if t.order then return t.order .. t.name end
 			if t.isRaid then return "50" .. t.name end
 			return "51" .. t.name;
 		else
@@ -5840,6 +5841,11 @@ end
 end)();
 
 app.SortGroups = function(a,b)
+	-- Sort value starts with a number and the group name
+	-- Values < 50 are for groups manually positioned before alphabetic groups
+	-- 50 is for alphabetic groups for raids and cities, always before any dungeon or zone
+	-- 51 is for alphabetic groups for dungeons and zones
+	-- Values > 51 are for groups manually positioned after alphabetic groups
 	return a.sort < b.sort;
 end
 
@@ -5868,6 +5874,7 @@ app.BaseMap = {
 		elseif key == "lvl" then
 			return select(1, C_Map.GetMapLevels(t.mapID));
 		elseif key == "sort" then
+			if t.order then return t.order .. app.GetMapName(t.mapID) end
 			if t.isRaid then return "50" .. app.GetMapName(t.mapID) end
 			return "51" .. app.GetMapName(t.mapID);
 		else
@@ -6072,6 +6079,7 @@ local npcFields = {
 		return rawget(t, "questID");
 	end,
 	["sort"] = function(t)
+		if t.order then return t.order .. t.name end
 		return "51" .. t.name;
 	end,
 };
@@ -6109,6 +6117,7 @@ app.BaseObject = {
 		elseif key == "saved" or key == "collected" then
 			return IsQuestFlaggedCompletedForObject(t);
 		elseif key == "sort" then
+			if t.order then return t.order .. t.text end
 			return "51" .. t.text;
 		else
 			-- Something that isn't dynamic.
@@ -6198,6 +6207,7 @@ app.BaseProfession = {
 		elseif key == "skillID" then
 			return t.requireSkill;
 		elseif key == "sort" then
+			if t.order then return t.order .. t.text end
 			return "51" .. t.text;
 		else
 			-- Something that isn't dynamic.

@@ -3,6 +3,7 @@
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	n(-7, {	-- World Bosses
+		["order"] = "01",
 		["isRaid"] = true,
 		["modID"] = 14,
 		["lvl"] = 120,

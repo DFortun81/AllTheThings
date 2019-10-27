@@ -4,6 +4,7 @@
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
 	inst(758, { 	-- Icecrown Citadel
+		["order"] = "08",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 80,

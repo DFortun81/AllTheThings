@@ -4,6 +4,7 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(744, { 	-- Temple of Ahn'Qiraj
+		["order"] = "06",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 50,

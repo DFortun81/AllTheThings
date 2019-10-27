@@ -5,6 +5,7 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		n(-171, {	-- Quest Chains
+			["order"] = "02",
 			["lvl"] = 98,
 			["g"] = {
 				n(-4, {	-- Achievements

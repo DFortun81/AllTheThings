@@ -3,6 +3,7 @@
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle for Azeroth
 	inst(1031, { 	-- Uldir
+		["order"] = "02",
 		["isRaid"] = true,
 		["lvl"] = 120,
 	--  ["coord"] = {  },	-- 

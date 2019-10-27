@@ -4,6 +4,7 @@
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	n(-7, {	-- World Bosses
+		["order"] = "00",
 		["isRaid"] = true,
 		["lvl"] = 80,
 		["g"] = {

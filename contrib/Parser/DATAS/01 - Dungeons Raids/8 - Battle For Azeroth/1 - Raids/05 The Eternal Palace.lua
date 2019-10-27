@@ -3,6 +3,7 @@
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle for Azeroth
 	inst(1179, { 	-- The Eternal Palace
+		["order"] = "05",
 		["isRaid"] = true,
 		["lvl"] = 120,
 		["maps"] = {

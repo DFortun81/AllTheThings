@@ -4,6 +4,7 @@
 dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
 _.Instances = { tier(7, {	-- Legion
 	inst(946, {	-- Antorus, the Burning Throne
+		["order"] = "05",
 		["isRaid"] = true,
 		["lvl"] = 110,
 		["maps"] = {

@@ -4,6 +4,7 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(76, { 	-- Zul'Gurub
+		["order"] = "03",
 		["u"] = 12,
 		["isRaid"] = true,
 		["sharedLockout"] = 1,

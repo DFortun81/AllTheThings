@@ -4,6 +4,7 @@
 
 _.Instances = { tier(1, {	-- Classic
 	n(-7, {	-- World Bosses
+		["order"] = "00",
 		["groups"] = {
 			n(6109, {	-- Azuregos
 				["groups"] = {

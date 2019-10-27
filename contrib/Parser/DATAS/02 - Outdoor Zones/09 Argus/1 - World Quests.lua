@@ -5,6 +5,7 @@ _.Zones =
 {
 	m(905, {	-- Argus
 		n(-34, {	-- World Quests
+			["order"] = "05",
 			["lvl"] = 110,
 			["groups"] = {
 				n(-322, {	-- Cloak

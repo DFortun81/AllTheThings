@@ -3,6 +3,7 @@
 -----------------------------------------------------
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(320, {	-- Terrace of Endless Spring
+		["order"] = "03",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 90,

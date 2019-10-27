@@ -8,6 +8,7 @@ _.Instances =
 		["tierID"] = 2,	-- The Burning Crusade
 		["g"] = {
 			{	-- Zone Drops
+				["order"] = "99",
 				["npcID"] = 0,	-- Zone Drops
 				["maps"] = {
 					350,	-- Servant's Quarters, Karazhan
