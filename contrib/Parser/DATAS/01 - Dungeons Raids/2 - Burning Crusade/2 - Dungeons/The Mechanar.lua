@@ -24,10 +24,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}),
 			}),
 			n(0, {	-- Zone Drops
-				model(17916, n(19168, {	-- Sunseeker Astromage
-					i(21906), 	-- Pattern: Arcanoweave Boots
-					i(22920),	-- Recipe: Major Fire Protection Potion
-				})),
+				i(21906, { 	-- Pattern: Arcanoweave Boots
+					["crs"] = { 19168 },	-- Sunseeker Astromage
+				}),
+				i(22920, {	-- Recipe: Major Fire Protection Potion
+					["crs"] = { 19168 },	-- Sunseeker Astromage
+				}),
 			}),
 			o(184465, {	-- Cache of the Legion
 				["model"] = 193577,

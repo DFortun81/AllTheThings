@@ -109,7 +109,9 @@ _.Zones =
 					},
 				}),
 				n(96072,  {	-- Durguth
-					["questID"] = 45508,
+					["isWorldQuest"] = true,
+					["description"] = "This rare is only available when its associated world quest is active.",
+					["questID"] = 41093,
 					["coord"] = { 43.8, 75.6, 650 },
 					["groups"] = {
 						i(131796),	-- Roggumsoggum's Boppers

@@ -55,10 +55,6 @@ _.ExpansionFeatures =
 								["provider"] = { "n", 86973 },	-- Keegan Firebeard
 								["races"] = ALLIANCE_ONLY,
 							}),
-							q(36274, {	-- Bigger Trap, Better Rewards
-								["provider"] = { "n", 84524 },	-- Homer Stonefield
-								["races"] = ALLIANCE_ONLY,
-							}),
 							q(36997, {	-- Boar Training: Bulbapore
 								["provider"] = { "n", 86973 },	-- Keegan Firebeard
 								["races"] = ALLIANCE_ONLY,

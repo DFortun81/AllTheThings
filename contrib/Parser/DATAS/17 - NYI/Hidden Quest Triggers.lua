@@ -543,6 +543,7 @@ _.NeverImplemented =
 		q(36569),	-- Unruly Visitors — triggers when turning in "Battle Pet Roundup"
 		q(36570),	-- Unruly Visitors — triggers when turning in "Battle Pet Roundup"
 		q(39058),	-- Critters of Draenor — looks like an unused version of #38299
+		q(36492),	-- Garrison Pet Battle — discord report, "for today's EU garrison menagerie fight, the Blingtron/protectron one"
 
 	--	TREASURES
 		q(34521),	-- Treasure: Glowing Obsidian Shard (secondary quest triggered when looting Burning Pearl in Frostfire Ridge)
@@ -747,7 +748,8 @@ _.NeverImplemented =
 		
 		
 	--	Rares
-		q(45478),	-- Achronos — WQ rare in suramar
+		q(45478),	-- Achronos — WQ rare in suramar, no special drops
+		q(39533),	-- Durguth — WQ rare in suramar, attached WQ to rare so his special drop shows in /attwq
 		
 	--	Treasures
 		q(46990),	-- Assault Treasure — opened Small Treasure Chest in Highmountain (44.2, 40.4)
