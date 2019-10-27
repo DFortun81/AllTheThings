@@ -498,6 +498,7 @@ _.NeverImplemented =
 		q(34526),	-- Iron Docks Challenge Mode - Consolation (Nth)
 		q(34538),	-- Iron Docks Challenge Mode - Gold Addition (Nth)
 		q(34537),	-- Iron Docks Challenge Mode - Silver Addition (Nth)
+		q(36866),	-- Lower Blackrock Spire cleared
 		q(34545),	-- Shadowmoon Burial Grounds Challenge Mode - Bronze Addition (Nth)
 		q(34528),	-- Shadowmoon Burial Grounds Challenge Mode - Consolation (Nth)
 		q(34547),	-- Shadowmoon Burial Grounds Challenge Mode - Gold Addition (Nth)
