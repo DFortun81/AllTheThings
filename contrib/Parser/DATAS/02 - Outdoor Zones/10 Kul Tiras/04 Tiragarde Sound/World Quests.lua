@@ -1452,11 +1452,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(52416, {	-- Work Order: Shimmerscale Diving Suit
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(52404, {	-- Work Order: Solstone
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
