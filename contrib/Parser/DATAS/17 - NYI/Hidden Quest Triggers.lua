@@ -731,8 +731,7 @@ _.NeverImplemented =
 		q(49177),	-- Greater Invasion Point: Sotanathor - bonus roll used
 		--q(),	-- Greater Invasion Point: Sotanathor - sotanathor kill credit
 		q(49198),	-- Greater Invasion Point: Inquisitor Meto - weekly completion
-		q(49175),	-- Greater Invasion Point: Inquisitor Meto - bonus roll used
-		--q(),	-- Greater Invasion Point: Inquisitor Meto - meto kill credit
+		q(49172),	-- Greater Invasion Point: Inquisitor Meto - bonus roll used
 		q(49199),	-- Greater Invasion Point: Matron Folnuna - weekly completion
 		q(49173),	-- Greater Invasion Point: Matron Folnuna - folnuna bonus roll
 		q(49167),	-- Greater Invasion Point: Matron Folnuna - folnuna kill credit
@@ -743,6 +742,11 @@ _.NeverImplemented =
 		q(48675),	-- Lockout Tracking - Normal - Marsh — triggered on character's first completion of Naigtal
 		q(49212),	-- triggered upon completing Sangua, but not the official quest.
 		q(49210),	-- triggered upon completing Val, but not the official quest.
+		q(48672),	-- Lockout Tracking - Normal - Ice — val first completion?
+		
+		
+	--	Rares
+		q(45478),	-- Achronos — WQ rare in suramar
 		
 	--	Treasures
 		q(46990),	-- Assault Treasure — opened Small Treasure Chest in Highmountain (44.2, 40.4)
@@ -760,6 +764,12 @@ _.NeverImplemented =
 		q(39080),	-- Val'sharah - Treasure 032 - Heathrow Manor - twh — Small Treasure Chest inside the cellar of Heathrow Manor
 		q(49264),	-- opening a Void-Seeped Cache in Mac'Aree
 		q(48361),	-- opening a Void-Seeped Cache in Mac'Aree
+		q(43875),	-- Treasure 040 - City - Noble Waterways — suramar treasure at 54.3, 60.3
+		q(43874),	-- Treasure 039 - City - Noble Interior — suramar treasure at 57.7, 62.0
+		q(43873),	-- Treasure 038 - City - Noble Overlook — suramar treasure at 57.3, 60.3
+		q(40692),	-- 7.0 Suramar - Treasure 000 - The Drift - L (DLA) — suramar treasure in cliffside at 58.6, 33.8
+		q(43196),	-- Treasure 056 - Weeping Bluffs — stormheim treasure in cave, entrance at 32.6, 47.8
+		q(40507),	-- 7.0 Highmountain - Treasure 096 - The Haglands - S (RKS) — highmountain treasure on top of mountain at 46.7, 40.2
 		
 	--	putting bonus objectives here because it'd be impossible to do them all unless you locked your XP and did all the quests in every legion zone.
 	--	they aren't automatically up as soon as you're 100; most of them are locked behind specific questlines, and then they all disappear as soon as you hit 110.
