@@ -14,10 +14,10 @@ _.Zones =
 						100230,	-- "Sure-Shot" Arnie <Amateur Hunter>
 						100231,	-- Dargok Thunderuin <Amateur Hunter>
 					},
-					["groups"] = {
+					["g"] = {
 						o(245479, {	-- Battered Chest
 							["displayID"] = 65118,
-							["groups"] = {
+							["g"] = {
 								i(131781),	-- Plate Hiking Boots
 								crit(16, {	-- Amateur Hunters
 									["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -33,7 +33,7 @@ _.Zones =
 						97215,	-- Beastmaster Pao'lek
 						97220, 	-- Arru <The Terror>
 					},
-					["groups"] = {
+					["g"] = {
 						o(244473, { 	-- Thunder Totem Stolen Goods (No Model)
 							i(131756), 	-- Fletcher's Nimble Grips
 							crit(10, {	-- Beastmaster Pao'lek
@@ -45,7 +45,7 @@ _.Zones =
 				n(98299,  {	-- Bodash the Hoarder
 					["questID"] = 40084,
 					["coord"] = { 36.6, 16.6, 650 },
-					["groups"] = {
+					["g"] = {
 						i(131799),	-- Zugdug's Piece of Paradise
 						crit(14, {	-- Bodash the Hoarder
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -55,7 +55,7 @@ _.Zones =
 				n(97449,  {	-- Bristlemaul
 					["questID"] = 40405,
 					["coord"] = { 37.7, 45.7, 650 },
-					["groups"] = {
+					["g"] = {
 						i(131761),	-- Thick Bristly Hood
 						crit(12, {	-- Bristlemaul
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -65,7 +65,7 @@ _.Zones =
 				n(94877,  {	-- Brogrul the Mighty
 					["questID"] = 39235,
 					["coord"] = { 56.2, 72.4, 650 },
-					["groups"] = {
+					["g"] = {
 						i(138396),	-- Mighty Chain Footpads
 					},
 				}),
@@ -75,7 +75,7 @@ _.Zones =
 						{ 43.0, 10.4, 650 },
 						{ 46.2, 12.0, 650 },
 					},
-					["groups"] = {
+					["g"] = {
 						i(131798),	-- Faded Swashbuckler's Jerkin
 						crit(3, {	-- Crab Rider Grmlrml
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -85,7 +85,7 @@ _.Zones =
 				n(97345,  {	-- Crawshuk the Hungry
 					["questID"] = 39806,
 					["coord"] = { 48.3, 40.4, 650 },
-					["groups"] = {
+					["g"] = {
 						i(131809, {	-- Gleaming Roc Feather
 							i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
 						}),
@@ -101,7 +101,7 @@ _.Zones =
 						{ 55.1, 44.3, 650 },	-- cave entrance
 					},
 					["questID"] = 40414,
-					["groups"] = {
+					["g"] = {
 						i(131780),	-- Void Slippers
 						crit(18, {	-- Devouring Darkness
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -113,7 +113,7 @@ _.Zones =
 					["description"] = "This rare is only available when its associated world quest is active.",
 					["questID"] = 41093,
 					["coord"] = { 43.8, 75.6, 650 },
-					["groups"] = {
+					["g"] = {
 						i(131796),	-- Roggumsoggum's Boppers
 					},
 				}),
@@ -121,14 +121,14 @@ _.Zones =
 					["description"] = "|cff66ccffClick on the Abandoned Fishing Pole to summon Flamescale.|r",
 					["questID"] = 39963,
 					["coord"] = { 40.9, 57.7, 650 },
-					["groups"] = {
+					["g"] = {
 						i(131773),	-- Flamescale Mail
 					},
 				}),
 				n(96590,  {	-- Gurbog da Basher
 					["questID"] = 40347,
 					["coord"] = { 56.5, 60.7, 650 },
-					["groups"] = {
+					["g"] = {
 						i(131775),	-- Da Basher's Toy Armor
 						crit(5, {	-- Gurbog da Basher
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -138,7 +138,7 @@ _.Zones =
 				n(97326,  {	-- Hartli the Snatcher
 					["questID"] = 39802,
 					["coord"] = { 51.0, 48.5, 650 },
-					["groups"] = {
+					["g"] = {
 					--	i(129190),	-- Rope of Friendship
 						crit(6, {	-- Hartli the Snatcher
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -148,7 +148,7 @@ _.Zones =
 				n(112419, {	-- Kuglaroth
 					["questID"] = 44055,
 					["coord"] = { 29.7, 40.1, 650 },	-- quest pickup
-					["groups"] = {
+					["g"] = {
 						crit(4, {	-- Stormheim
 							["achievementID"] = 11186,	-- Tehd & Marius' Excellent Adventure
 						}),
@@ -160,7 +160,7 @@ _.Zones =
 						{ 51.4, 37.3, 650 },	-- cave entrance
 						{ 50.8, 34.7, 650 },	-- actual rare
 					},
-					["groups"] = {
+					["g"] = {
 						i(131776),	-- Scale Cord of the Eggeater
 						crit(19, {	-- Luggut the Eggeater
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -176,7 +176,7 @@ _.Zones =
 						{ 45.2, 25.8, 650 },
 						{ 45.4, 30.4, 650 },
 					},
-					["groups"] = {
+					["g"] = {
 						i(131900), 	-- Magestic Elderhorn Hoof (TOY!)
 						crit(11, {	-- Majestic Elderhorn
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -186,7 +186,7 @@ _.Zones =
 				n(96621,  {	-- Mellok, Son of Torok
 					["questID"] = 40242,
 					["coord"] = { 48.9, 27.0, 650 },
-					["groups"] = {
+					["g"] = {
 						crit(17, {	-- Mellok, Son of Torok
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
 						}),
@@ -196,7 +196,7 @@ _.Zones =
 					["questID"] = 40096,
 					["coord"] = { 46.7, 7.30, 650 },
 					["crs"] = { 98754 },	-- Sloppy "Sloppy Joe" Joe
-					["groups"] = {
+					["g"] = {
 						i(131797),	-- Swamprock Salvage Band
 						crit(21, {	-- Captured Survivor
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -206,7 +206,7 @@ _.Zones =
 				n(95204,  {	-- Oubdob da Smasher
 					["questID"] = 39435,
 					["coord"] = { 47.4, 73.8, 650 },
-					["groups"] = {
+					["g"] = {
 						i(131793),	-- Oubdob's Smashin' Sweatband
 					},
 				}),
@@ -220,7 +220,7 @@ _.Zones =
 						109501,	-- Darkful <Unethical Adventurers>
 						109500,	-- Jak <Unethical Adventurers>
 					},
-					["groups"] = {
+					["g"] = {
 						i(140683),	-- Darkful's Mitts
 						i(140682),	-- Zenobia's Handwraps
 						i(140681),	-- Jak's Gloves
@@ -235,7 +235,7 @@ _.Zones =
 					["description"] = "Click on the Totally Safe Treasure Chest to spawn Ram'Pag.",
 					["questID"] = 39766,
 					["coord"] = { 52.3,	51.4, 650 },
-					["groups"] = {
+					["g"] = {
 						crit(15, {	-- Totally Safe Treasure Chest
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
 						}),
@@ -245,7 +245,7 @@ _.Zones =
 					["description"] = "|cff66ccffSpeak to Scout Harefoot and Mynta Talonscreech will spawn.|r",
 					["questID"] = 39866,
 					["coord"] = { 54.5, 40.5, 650 },
-					["groups"] = {
+					["g"] = {
 						i(131792),	-- Harefoot Pinnacle Wrap
 						crit(13, {	-- Scout Harefoot
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -255,7 +255,7 @@ _.Zones =
 				n(97093,  {	-- Shara Felbreath
 					["questID"] = 39762,
 					["coord"] = { 51.0, 25.8, 650 },
-					["groups"] = {
+					["g"] = {
 						i(131791),	-- Felbreath Bloodsinger Robe
 						crit(20, {	-- Shara Felbreath
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -265,7 +265,7 @@ _.Zones =
 				n(101077, {	-- Sekhan
 					["questID"] = 40681,
 					["coord"] = { 45.5, 55.2, 650 },
-					["groups"] = {
+					["g"] = {
 						i(131730),	-- Darksaber Leather Belt
 						crit(1, {	-- Sekhan
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -275,7 +275,7 @@ _.Zones =
 				n(95872,  {	-- Skullhat
 					["questID"] = 39465,
 					["coord"] = { 50.9, 32.0, 650 },
-					["groups"] = {
+					["g"] = {
 						i(131769),	-- The Taskmaster's Wristwraps
 						crit(7, {	-- Skywhisker Taskmasker
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -285,7 +285,7 @@ _.Zones =
 				n(98890,  {	-- Slumber
 					["questID"] = 40175,
 					["coord"] = { 41.4, 31.9, 650 },
-					["groups"] = {
+					["g"] = {
 						i(131921),	-- Dreamflow Collar
 						crit(22, {	-- Slumbering Bear
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -294,10 +294,11 @@ _.Zones =
 				}),
 				n(97653,  {	-- Taurson
 					["questID"] = 39872,
-					["groups"] = {
+					["coord"] = { 54.1, 50.8, 650 },
+					["g"] = {
 						o(244628, {	-- Taurson's Prize
 							["displayID"] = 65118,
-							["groups"] = {
+							["g"] = {
 								i(131800),	-- Taurson's Champion Belt
 								crit(2, {	-- The Beastly Boxer
 									["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -309,7 +310,7 @@ _.Zones =
 				n(97203,  {	-- Tenpak Flametotem
 					["questID"] = 39782,
 					["coord"] = { 41.9, 41.5, 650 },
-					["groups"] = {
+					["g"] = {
 						i(129175),	-- Crispin (PET!)
 						crit(9, {	-- The Exiled Shaman
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
@@ -320,7 +321,7 @@ _.Zones =
 					["modelID"] = 73098,
 					["questID"] = 39824,
 					["coord"] = { 53.5, 51.0, 650 },
-					["groups"] = {
+					["g"] = {
 						i(131810, {	-- Derelict Skyhorn Kite
 							i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
 						}),
@@ -330,7 +331,7 @@ _.Zones =
 					["modelID"] = 73098,
 					["questID"] = 39466,
 					["coord"] = { 49.7, 37.7, 650 },
-					["groups"] = {
+					["g"] = {
 						i(131927, {	-- Shimmering Roc Feather
 							i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
 						}),
@@ -340,7 +341,7 @@ _.Zones =
 					["modelID"] = 73098,
 					["questID"] = 39503,
 					["coord"] = { 47.6, 44.0, 650 },
-					["groups"] = {
+					["g"] = {
 						i(131926, {	-- Delicate Roc Feather
 							i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
 						}),

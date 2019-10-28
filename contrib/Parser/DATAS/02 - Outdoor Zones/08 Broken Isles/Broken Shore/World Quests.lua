@@ -24,7 +24,6 @@ _.Zones =
 				q(46046),	-- Life's a Lich
 				q(46754),	-- Magical Beasts
 				q(46755),	-- Mission: Felraging
-				q(46833),	-- Nature Unshackled
 				q(45793),	-- Occultist Onslaught
 				q(45929),	-- Purging the Flames
 				q(45549),	-- Salving the Corruption
@@ -207,6 +206,10 @@ _.Zones =
 				q(46822, {	-- Natural Selection
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
+				}),
+				q(46833, {	-- Nature Unshackled
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 				q(44751, {	-- No Soldier Left Behind
 					["lvl"] = 110,
