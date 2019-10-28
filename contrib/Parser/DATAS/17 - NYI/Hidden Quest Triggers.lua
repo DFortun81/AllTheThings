@@ -911,6 +911,7 @@ _.NeverImplemented =
 		q(56520),	-- IE-related mission — not sure if this is the Stalwart Worldvein Rank 2 one or one that awarded Saurok Scale Headgear
 		q(57060),	-- IE-related mission — not sure if this is the Stalwart Worldvein Rank 2 one or one that awarded Saurok Scale Headgear
 		q(56528),	-- IE-related mission — Investigating the Rumors (done on Alliance, awarded Captured Documents, which procs the mission "Finding a Key")
+		q(56529),	-- IE-related mission — Finding a Key (done on Alliance, awarded Resonance Locator, which procs the mission "Tracking the Worldvein")
 		
 
 	--	PVP / WAR MODE
