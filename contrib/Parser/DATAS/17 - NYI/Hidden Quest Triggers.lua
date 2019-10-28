@@ -753,6 +753,14 @@ _.NeverImplemented =
 		q(39533),	-- Durguth — WQ rare in suramar, attached WQ to rare so his special drop shows in /attwq
 		
 	--	Treasures
+		q(40507),	-- 7.0 Highmountain - Treasure 096 - The Haglands - S (RKS) — highmountain treasure on top of mountain at 46.7, 40.2
+		q(40692),	-- 7.0 Suramar - Treasure 000 - The Drift - L (DLA) — suramar treasure in cliffside at 58.6, 33.8
+		q(39089),	-- 7.0 Val'sharah - Bonemelt Grotto - Large Treasure 040 - zto — 60.9, 79.2
+		q(38390),	-- 7.0 Val'sharah - Treasure 012 - Grove of Cenarius - twh — entrance 53.2, 37.9
+		q(38391),	-- 7.0 Val'sharah - Treasure 013 - Val'sharah - twh — 65.9, 79.1
+		q(38861),	-- 7.0 Val'sharah - Treasure 019 - Lunarwing Shallows - twh — 55.9, 83.7
+		q(38864),	-- 7.0 Val'sharah - Treasure 020 - Lunarwing Shallows - twh — underwater entrance 54.0, 82.1
+		q(39074),	-- 7.0 Val'sharah - Treasure 029 - Whispering Bluffs - twh — 65.4, 86.2
 		q(46990),	-- Assault Treasure — opened Small Treasure Chest in Highmountain (44.2, 40.4)
 		q(38365),	-- Azsuna - Treasure 015 - Giblin Treasure — looted Disputed Treasure near Shackle's Den
 		q(38367),	-- Azsuna - Treasure 016 - Cask of Special Reserve — looted Glimmering Treasure Chest in Challiane Vineyards
@@ -760,20 +768,21 @@ _.NeverImplemented =
 		q(42285),	-- Azsuna - Treasure 029 - Nar'thalas 05 - Small — opened a treasure in Nar'thalas Academy near the Tidestone
 		q(42291),	-- Azsuna - Treasure 033 - Oceanus Cove 02 - Small — looted Small Treasure Chest inside Oceanus Cove
 		q(42297),	-- Azsuna - Treasure 039 (Large) - Mountain Top — looted treasure chest near Felwing encounter
+		q(42958),	-- Azsuna - Treasure 042 - Felblaze Ingress - Small — 65.4, 29.5
+		q(44103),	-- Azsuna - Treasure 044 - Felblaze Underwater — cave entrance 69.7, 29.5
 		q(40491),	-- Highmountain - Treasure 084 - Thunder Totem (13.6, 55.4, 750)
+		q(43830),	-- Treasure 001 - South of Felsoul — suramar, 38.1, 87.0
 		q(43868),	-- Treasure 033 - City - Lower City Boat — looted treasure chest on boat at (51.8, 82.2, 680)
+		q(43873),	-- Treasure 038 - City - Noble Overlook — suramar treasure at 57.3, 60.3
+		q(43874),	-- Treasure 039 - City - Noble Interior — suramar treasure at 57.7, 62.0
+		q(43875),	-- Treasure 040 - City - Noble Waterways — suramar treasure at 54.3, 60.3
+		q(43196),	-- Treasure 056 - Weeping Bluffs — stormheim treasure in cave, entrance at 32.6, 47.8
 		q(38277),	-- Val'shara Treasure: Honey Hive (46.5, 86.3, 641)
 		q(38369),	-- Val'sharah - Treasure 006 - Ravencourt - twh — Small Treasure Chest (39.9, 54.6)
 		q(38387),	-- Val'sharah - Treasure 009 - Sabermaw Bluff (44.9, 82.6, 641)
 		q(39080),	-- Val'sharah - Treasure 032 - Heathrow Manor - twh — Small Treasure Chest inside the cellar of Heathrow Manor
 		q(49264),	-- opening a Void-Seeped Cache in Mac'Aree
 		q(48361),	-- opening a Void-Seeped Cache in Mac'Aree
-		q(43875),	-- Treasure 040 - City - Noble Waterways — suramar treasure at 54.3, 60.3
-		q(43874),	-- Treasure 039 - City - Noble Interior — suramar treasure at 57.7, 62.0
-		q(43873),	-- Treasure 038 - City - Noble Overlook — suramar treasure at 57.3, 60.3
-		q(40692),	-- 7.0 Suramar - Treasure 000 - The Drift - L (DLA) — suramar treasure in cliffside at 58.6, 33.8
-		q(43196),	-- Treasure 056 - Weeping Bluffs — stormheim treasure in cave, entrance at 32.6, 47.8
-		q(40507),	-- 7.0 Highmountain - Treasure 096 - The Haglands - S (RKS) — highmountain treasure on top of mountain at 46.7, 40.2
 		
 	--	putting bonus objectives here because it'd be impossible to do them all unless you locked your XP and did all the quests in every legion zone.
 	--	they aren't automatically up as soon as you're 100; most of them are locked behind specific questlines, and then they all disappear as soon as you hit 110.
@@ -1223,6 +1232,7 @@ _.NeverImplemented =
 		q(55203),	-- Summoned Salgos, the Eternal
 		q(55201),	-- Summoned Spawn of Salgos
 		q(55204),	-- Summoned Xue
+		q(55199),	-- Summoned Zomera
 		q(56476),	-- Killed Arcane Amalgamation
 		q(56892),	-- Killed Arcane Amalgamation, Burning Amalgamation, Herald of Salgos, Moghiea, Salgos the Eternal, Spawn of Salgos, Xue, and Zomera
 		q(55145),	-- Killed Burning Amalgamation
