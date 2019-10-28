@@ -372,11 +372,6 @@ _.Zones =
 					q(50493, {	-- Fetching Wrex
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(52011, {	-- Fiendish Fields
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(52064, {	-- Fiendish Fields
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -1412,6 +1407,11 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+					}),
+					q(52011, {	-- Fiendish Fields
+						["isWorldQuest"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(53715, {	-- Firewarden Viton Darkflare
 						["isWorldQuest"] = true,

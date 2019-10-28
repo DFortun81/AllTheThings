@@ -887,6 +887,7 @@ _.NeverImplemented =
 		q(56171),	-- not sure -- i had just done a Honeyback Harvester event and Gurg the Hivethief spawned but ran away because there wasn't enough DPS to kill him.  looted the jelly after the event, then ran to turn in since i was closeby.  fed the bee ~13 - 14 Thin Jelly (brought me to 1700 Friendly) and ran out of the cave and saw this and 57701 pop in chat.
 		q(57701),	-- same as above
 		q(56107),	-- when nascent bee changed into Juvenile Harvester (~11,000 Friendly rep)
+		q(56879),	-- when Juvenile Harvester changed into Honeyback Harvester (max bee friendship)
 
 		
 	--	INCURSIONS

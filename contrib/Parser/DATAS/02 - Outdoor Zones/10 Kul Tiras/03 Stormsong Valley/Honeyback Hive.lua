@@ -32,6 +32,7 @@ _.Zones =
 							["cr"] = 155055,	-- Gurg the Hivethief
 						}),
 						q(56108, {	-- Leaving the Hive
+							["coord"] = { 62.5, 26.3, 942 },
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(170069),	-- Honeyback Harvester's Harness
@@ -48,6 +49,10 @@ _.Zones =
 							["isWeekly"] = true,	-- according to wowhead!
 							["races"] = ALLIANCE_ONLY,
 							["cr"] = 155059,	-- Yorag the Jelly Feaster
+						}),
+						q(57670, {	-- Unbeelievable Quality
+							["provider"] = { "i", 172383 },	-- Collected Tidebloom Honey
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(56091, {	-- Usurper's Scent Gland
 							["provider"] = { "i", 169658 },	-- Usurper's Scent Gland
