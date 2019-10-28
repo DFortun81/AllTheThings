@@ -42,7 +42,6 @@ local IsTitleKnown = _G["IsTitleKnown"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
-local GetLocale = GetLocale
 local rawget, rawset = rawget, rawset;
 
 -- Coroutine Helper Functions
@@ -219,7 +218,7 @@ local function GetMoneyString(amount)
 	if amount > 0 then
 		local formatted
 		local g,s,c = math.floor(amount / 100 / 100), math.floor((amount / 100) % 100), math.floor(amount % 100)
-		if g > 0 then
+		if g > 0 then -- PR#V
 			formatted = formatNumericWithCommas(g) .. "|TInterface\\MONEYFRAME\\UI-GoldIcon:0|t"
 		end
 		if s > 0 then
@@ -1256,28 +1255,6 @@ local NPCNameFromID = setmetatable({}, { __index = function(t, id)
 	end
 end});
 
-local function GetMaxAchievement(container)
-	local maxID = -1
-	for k,v in pairs(container) do
-		if k == "achievementID" and v > maxID then
-			maxID = v
-		elseif k == "g" or (k ~= "parent" and type(v) == "table") then
-			local groupMaxID = GetMaxAchievement(v)
-			if groupMaxID > maxID then maxID = groupMaxID end
-		end
-	end
-   return maxID
-end
-local function SetAchievementCollectionStatus(achievementID, status)
-	local id,name,_,accCompleted,_,_,_,_,flags,_,_,isGuild = GetAchievementInfo(achievementID)
-	if id and bit.band(flags,0x1) == 0 and not isGuild and accCompleted then
-		SetDataSubMember("CollectedAchievements", id, 1)
-	end
-end
-local function RefreshAchievementCollection()
-	local maxID = GetMaxAchievement(app.Categories.Achievements)
-	for achievementID=1,maxID,1 do SetAchievementCollectionStatus(achievementID, 1) end
-end
 -- Search Caching
 local searchCache, CreateObject, MergeObject, MergeObjects = {};
 app.searchCache = searchCache;
@@ -3592,9 +3569,6 @@ local function RefreshCollections()
 			end
 		end
 		
-		-- Refresh Achievements
-		RefreshAchievementCollection();
-		
 		-- Refresh Sources from Cache
 		local collectedSources = GetDataMember("CollectedSources");
 		if app.Settings:Get("Completionist") then
@@ -4129,7 +4103,6 @@ end)();
 
 -- Achievement Lib
 app.AchievementFilter = 4;
-app.AchievementCharCompletedIndex = 13;
 app.BaseAchievement = {
 	__index = function(t, key)
 		if key == "achievementID" then
@@ -4150,12 +4123,7 @@ app.BaseAchievement = {
 		elseif key == "collectible" then
 			return app.CollectibleAchievements;
 		elseif key == "collected" then
-			if app.Settings:Get("AccountWide:Achievements") then
-				local ach = GetDataSubMember("CollectedAchievements", t.achievementID);
-				return ach == 1
-			else
-				return select(app.AchievementCharCompletedIndex, GetAchievementInfo(t.achievementID))
-			end
+			return select(app.AchievementFilter, GetAchievementInfo(t.achievementID));
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -4237,11 +4205,9 @@ app.BaseAchievementCriteria = {
 		elseif key == "collectible" then
 			return app.CollectibleAchievements;
 		elseif key == "saved" or key == "collected" then
-			if t.criteriaID then
-				if app.Settings:Get("AccountWide:Achievements") then
-					local ach = GetDataSubMember("CollectedAchievements", t.achievementID);
-					if ach == 1 then return true end
-				end
+			if select(app.AchievementFilter, GetAchievementInfo(t.achievementID)) then
+				return true;
+			elseif t.criteriaID then
 				local m = GetAchievementNumCriteria(t.achievementID);
 				if m and t.criteriaID <= m then
 					return select(3, GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true));
@@ -5615,10 +5581,6 @@ app.BaseInstance = {
 			end
 		elseif key == "isLockoutShared" then
 			return false;
-		elseif key == "sort" then
-			if t.order then return t.order .. t.name end
-			if t.isRaid then return "50" .. t.name end
-			return "51" .. t.name;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5840,15 +5802,6 @@ app.CreateItemSource = function(sourceID, itemID, t)
 end
 end)();
 
-app.SortGroups = function(a,b)
-	-- Sort value starts with a number and the group name
-	-- Values < 50 are for groups manually positioned before alphabetic groups
-	-- 50 is for alphabetic groups for raids and cities, always before any dungeon or zone
-	-- 51 is for alphabetic groups for dungeons and zones
-	-- Values > 51 are for groups manually positioned after alphabetic groups
-	return a.sort < b.sort;
-end
-
 -- Map Lib
 app.BaseMap = {
 	__index = function(t, key)
@@ -5873,10 +5826,6 @@ app.BaseMap = {
 			return t.achievementID and select(10, GetAchievementInfo(t.achievementID)) or "Interface/ICONS/INV_Misc_Map09";
 		elseif key == "lvl" then
 			return select(1, C_Map.GetMapLevels(t.mapID));
-		elseif key == "sort" then
-			if t.order then return t.order .. app.GetMapName(t.mapID) end
-			if t.isRaid then return "50" .. app.GetMapName(t.mapID) end
-			return "51" .. app.GetMapName(t.mapID);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5884,12 +5833,7 @@ app.BaseMap = {
 	end
 };
 app.CreateMap = function(id, t)
-	local map = setmetatable(constructor(id, t, "mapID"), app.BaseMap);
-	if map.ordered and map.g and GetLocale() ~= "enGB" and GetLocale() ~= "enUS" then
-		-- Only need to order groups alphabetically in non-english locales
-		table.sort(map.g, app.SortGroups);
-	end
-	return map;
+	return setmetatable(constructor(id, t, "mapID"), app.BaseMap);
 end
 
 -- Mount Lib
@@ -6078,10 +6022,6 @@ local npcFields = {
 	["trackable"] = function(t)
 		return rawget(t, "questID");
 	end,
-	["sort"] = function(t)
-		if t.order then return t.order .. t.name end
-		return "51" .. t.name;
-	end,
 };
 npcFields.saved = npcFields.collected;
 app.NPCDisplayIDFromID = NPCDisplayIDFromID;
@@ -6116,9 +6056,6 @@ app.BaseObject = {
 			return t.questID;
 		elseif key == "saved" or key == "collected" then
 			return IsQuestFlaggedCompletedForObject(t);
-		elseif key == "sort" then
-			if t.order then return t.order .. t.text end
-			return "51" .. t.text;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -6206,9 +6143,6 @@ app.BaseProfession = {
 			return SkillIDToSpellID[t.requireSkill];
 		elseif key == "skillID" then
 			return t.requireSkill;
-		elseif key == "sort" then
-			if t.order then return t.order .. t.text end
-			return "51" .. t.text;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -6603,11 +6537,7 @@ end)();
 		end
 	};
 	app.CreateTier = function(id, t)
-		local tier = setmetatable(constructor(id, t, "tierID"), app.BaseTier);
-		if tier.ordered and tier.g and GetLocale() ~= "enGB" and GetLocale() ~= "enUS" then
-			table.sort(tier.g, app.SortGroups);
-		end
-		return tier
+		return setmetatable(constructor(id, t, "tierID"), app.BaseTier);
 	end
 end)();
 
@@ -12566,7 +12496,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				{
 					876,	-- Kul'Tiras
 					{
-						-- { 896, ???, { 54137, 53701 }},	-- Drustvar (In Every Dark Corner [H] / A Drust Cause [A])
+						{ 896, 5964, { 54137, 53701 }},	-- Drustvar (In Every Dark Corner [H] / A Drust Cause [A])
 						{ 942, 5966, { 54132, 51982 }},	-- Stormsong Valley (A Horde of Heroes [H] / Storm's Rage [A])
 						{ 895, 5896, { 53939, 53711 }},	-- Tiragarde Sound (Breaching Boralus [H] / A Sound Defense [A])
 					}
@@ -14066,7 +13996,6 @@ SlashCmdList["AllTheThingsWQ"] = function(cmd)
 end
 
 -- Register Events required at the start
-app:RegisterEvent("ACHIEVEMENT_EARNED");
 app:RegisterEvent("ADDON_LOADED");
 app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("CHAT_MSG_ADDON");
@@ -14084,9 +14013,6 @@ app:RegisterEvent("PET_BATTLE_CLOSE")
 app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 
 -- Define Event Behaviours
-app.events.ACHIEVEMENT_EARNED = function(achievementID)
-	SetAchievementCollectionStatus(achievementID, 1)
-end
 app.events.ARTIFACT_UPDATE = function(...)
 	local itemID = select(1, C_ArtifactUI.GetArtifactInfo());
 	if itemID then
@@ -14325,7 +14251,6 @@ app.events.VARIABLES_LOADED = function()
 		"ArtifactRelicItemLevels",
 		"Categories",
 		"Characters",
-		"CollectedAchievements",
 		"CollectedArtifacts",
 		"CollectedBuildings",
 		"CollectedBuildingsPerCharacter",
@@ -14364,9 +14289,6 @@ app.events.VARIABLES_LOADED = function()
 		rawset(AllTheThingsAD, key, value);
 	end
 
-	-- Refresh Achievements
-	RefreshAchievementCollection();
-	
 	-- Tooltip Settings
 	app.CurrentMapID = app.GetCurrentMapID();
 	app.Settings:Initialize();
@@ -14441,9 +14363,6 @@ app.events.ADDON_LOADED = function(addonName)
 		if app.Settings:GetTooltipSetting("Auto:AH") then
 			app:OpenAuctionModule();
 		end
-	elseif addonName == "Blizzard_AchievementUI" then
-		RefreshAchievementCollection()
-		app:RefreshData(false, true);
 	end
 end
 app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
