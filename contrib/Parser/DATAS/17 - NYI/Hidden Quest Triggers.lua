@@ -893,8 +893,8 @@ _.NeverImplemented =
 	--	INCURSIONS
 		-- all 3 'secret supply chest' quests trigger at once.  possibly for 3 potential chests in the zone?  not sure why horde/alliance would have one shared quest and two different quests, though.
 		q(54720),	-- Zuldazar Secret Supply Chest (playing as Horde)
-		q(55391),	-- Zuldazar Secret Supply Chest (playing as Horde)
-		q(53640),	-- Zuldazar (playing as Horde) / Tiragarde (playing as Alliance) / Nazmir (playing as Alliance) Secret Supply Chest
+		q(55391),	-- Zuldazar Secret Supply Chest (playing as Horde and Alliance)
+		q(53640),	-- Zuldazar (playing as Horde and Alliance) / Tiragarde (playing as Alliance) / Nazmir (playing as Alliance) Secret Supply Chest
 		q(54714),	-- Tiragarde Sound Secret Supply Chest
 		q(55347),	-- Tiragarde Sound Secret Supply Chest
 		q(55387),	-- Nazmir Secret Supply Chest (playing as Alliance)
