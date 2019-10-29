@@ -2598,296 +2598,296 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 			}),
 			d(3,  {	-- 10-Player (Normal)
-				crit(1,  {	-- Storming the Citadel (10 player)
-					["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
+				n(-393, {	-- Storming the Citadel
+					ach(4531),	-- Storming the Citadel (10 player)
+					e(1624,  {	-- Lord Marrowgar
+						["creatureID"] = 36612,	-- Lord Marrowgar
+						["g"] = {
+							crit(1, {	-- Lord Marrowgar
+								["achievementID"] = 4531,	-- Storming the Citadel (10 player)
+							}),
+							ach(4534),	-- Boned (10 player)
+							i(142094),	-- Fragment of Frozen Bone (PET!)
+							i(50761),	-- Citadel Enforcer's Claymore
+							i(50759),	-- Bone Warden's Splitter
+							i(50760),	-- Bonebreaker Scepter
+							i(50771),	-- Frost Needle
+							i(50763),	-- Marrowgar's Scratching Choker
+							i(50764),	-- Shawl of Nerubian Silk
+							i(50774),	-- Coldwraith Bracers
+							i(50773),	-- Cord of the Patronizing Practitioner
+							i(50762),	-- Linked Scourge Vertebrae
+							i(50775),	-- Corrupted Silverplate Leggings
+							i(50772),	-- Ancient Skeletal Boots
+							i(50339),	-- Sliver of Pure Ice
+						},
+					}),
+					e(1625,  {	-- Lady Deathwhisper
+						["creatureID"] = 36855,	-- Lady Deathwhisper
+						["g"] = {
+							crit(2, {	-- Lady Deathwhisper
+								["achievementID"] = 4531,	-- Storming the Citadel (10 player)
+							}),
+							ach(4535),	-- Full House (10 player)
+							i(50776),	-- Njordar Bone Bow
+							i(50781),	-- Scourgelord's Baton
+							i(50779),	-- Deathspeaker Zealot's Helm
+							i(50780),	-- Chestguard of the Frigid Noose
+							i(50786),	-- Ghoul Commander's Cuirass
+							i(50785),	-- Bracers of Dark Blessings
+							i(50777),	-- Handgrips of Frost and Sleet
+							i(50782),	-- Sister's Handshrouds
+							i(50784),	-- Deathspeaker Disciple's Belt
+							i(50778),	-- Soulthief's Braided Belt
+							i(50783),	-- Boots of the Frozen Seed
+							i(50342),	-- Whispering Fanged Skull
+						},
+					}),
+					e(1626,  {	-- Icecrown Gunship Battle
+						["crs"] = {
+							36939,	-- High Overlord Saurfang
+							36948,	-- Muradin Bronzebeard
+						},
+						["g"] = {
+							crit(3, {	-- Claim victory in the Gunship Battle
+								["achievementID"] = 4531,	-- Storming the Citadel (10 player)
+							}),
+							ach(4536),	-- I'm on a Boat (10 player)
+							i(50787),	-- Frost Giant's Cleaver
+							i(50793),	-- Midnight Sun
+							i(50794),	-- Neverending Winter
+							i(50797),	-- Ice-Reinforced Vrykul Helm
+							i(50792),	-- Pauldrons of Lost Hope
+							i(50791),	-- Saronite Gargoyle Cloak
+							i(50796),	-- Bracers of Pale Illumination
+							i(50789),	-- Icecrown Rampart Bracers
+							i(50795),	-- Cord of Dark Suffering
+							i(50788),	-- Bone Drake's Enameled Boots
+							i(50790),	-- Abomination's Bloody Ring
+							i(50340),	-- Muradin's Spyglass
+						},
+					}),
+					e(1628,  {	-- Deathbringer Saurfang
+						["creatureID"] = 37813,	-- Deathbringer Saurfang
+						["g"] = {
+							crit(4, {	-- The Deathbringer
+								["achievementID"] = 4531,	-- Storming the Citadel (10 player)
+							}),
+							ach(4537),	-- I've Gone and Made a Mess (10 player)
+							i(142095),	-- Remains of a Blood Beast (PET!)
+							i(50805),	-- Mag'hari Chieftain's Staff
+							i(50798),	-- Ramaladni's Blade of Culling
+							i(50807),	-- Thaumaturge's Crackling Cowl
+							i(50809),	-- Soulcleave Pendant
+							i(50801),	-- Blade-Scored Carapace
+							i(50800),	-- Hauberk of a Thousand Cuts
+							i(50802),	-- Gargoyle Spit Bracers
+							i(50799),	-- Scourge Stranglers
+							i(50808),	-- Deathforged Legplates
+							i(50806),	-- Leggings of Unrelenting Blood
+							i(50804),	-- Icecrown Spire Sandals
+							i(50803),	-- Saurfang's Cold-Forged Band
+						},
+					}),
+					n(37904, {	-- Brazie Getz
+						["description"] = "After you kill Deathbringer Saurfang, this vendor shows up in the camp.",
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(49926),	-- Brazie's Black Book of Secrets
+						},
+					}),
 				}),
-				e(1624,  {	-- Lord Marrowgar
-					["creatureID"] = 36612,	-- Lord Marrowgar
-					["g"] = {
-						crit(1, {	-- Lord Marrowgar
-							["achievementID"] = 4531,	-- Storming the Citadel (10 player)
-						}),
-						ach(4534),	-- Boned (10 player)
-						i(142094),	-- Fragment of Frozen Bone (PET!)
-						i(50761),	-- Citadel Enforcer's Claymore
-						i(50759),	-- Bone Warden's Splitter
-						i(50760),	-- Bonebreaker Scepter
-						i(50771),	-- Frost Needle
-						i(50763),	-- Marrowgar's Scratching Choker
-						i(50764),	-- Shawl of Nerubian Silk
-						i(50774),	-- Coldwraith Bracers
-						i(50773),	-- Cord of the Patronizing Practitioner
-						i(50762),	-- Linked Scourge Vertebrae
-						i(50775),	-- Corrupted Silverplate Leggings
-						i(50772),	-- Ancient Skeletal Boots
-						i(50339),	-- Sliver of Pure Ice
-					},
+				n(-394, {	-- The Plagueworks
+					ach(4528),	-- The Plagueworks (10 player)
+					n(37217, {	-- Precious
+						i(52019),	-- Precious' Ribbon
+					}),
+					e(1629,  {	-- Festergut
+						["creatureID"] = 36626,	-- Festergut
+						["g"] = {
+							crit(1, {	-- Festergut
+								["achievementID"] = 4528,	-- The Plagueworks (10 player)
+							}),
+							ach(4577),	-- Flu Shot Shortage (10 player)
+							i(50966),	-- Abracadaver
+							i(50810),	-- Gutbuster
+							i(50852),	-- Precious' Putrid Collar
+							i(50988),	-- Bloodstained Surgeon's Shoulderguards
+							i(50859),	-- Cloak of Many Skins
+							i(50985),	-- Wrists of Septic Shock
+							i(50967),	-- Festergut's Gaseous Gloves
+							i(50811),	-- Festering Fingerguards
+							i(50990),	-- Kilt of Untreated Wounds
+							i(50858),	-- Plague-Soaked Leather Leggings
+							i(50812),	-- Taldron's Long Neglected Boots
+							i(50986),	-- Signet of Putrefaction
+						},
+					}),
+					e(1630,  {	-- Rotface
+						["creatureID"] = 36627,	-- Rotface
+						["g"] = {
+							crit(2, {	-- Rotface
+								["achievementID"] = 4528,	-- The Plagueworks (10 player)
+							}),
+							ach(4538),	-- Dances with Oozes (10 player)
+							i(50998),	-- Shaft of Glacial Ice
+							i(51003),	-- Abomination Knuckles
+							i(51004),	-- Lockjaw
+							i(51002),	-- Taldron's Short-Sighted Helm
+							i(51008),	-- Choker of Filthy Diamonds
+							i(51009),	-- Chestguard of the Failed Experiment
+							i(51007),	-- Ether-Soaked Bracers
+							i(51005),	-- Gloves of Broken Fingers
+							i(51000),	-- Flesh-Shaper's Gurney Strap
+							i(51006),	-- Shuffling Shoes
+							i(51001),	-- Rotface's Rupturing Ring
+						},
+					}),
+					e(1631,  {	-- Professor Putricide
+						["creatureID"] = 36678,	-- Professor Putricide
+						["g"] = {
+							crit(3, {	-- Professor Putricide
+								["achievementID"] = 4528,	-- The Plagueworks (10 player)
+							}),
+							ach(4578),	-- Nausea, Heartburn, Indigestion... (10 player)
+							i(142096),	-- Putricide's Alchemy Supplies (PET!)
+							i(51011),	-- Flesh-Carving Scalpel
+							i(51010),	-- The Facelifter
+							i(51013),	-- Discarded Bag of Entrails
+							i(51012),	-- Infected Choker
+							i(51016),	-- Pendant of Split Veins
+							i(51014),	-- Scalpel-Sharpening Shoulderguards
+							i(51015),	-- Shoulderpads of the Morbid Ritual
+							i(51020),	-- Shoulders of Ruinous Senility
+							i(51018),	-- Chestplate of Septic Stitches
+							i(51017),	-- Cauterized Cord
+							i(51019),	-- Rippling Flesh Kilt
+							i(50341),	-- Unidentifiable Organ
+						},
+					}),
 				}),
-				e(1625,  {	-- Lady Deathwhisper
-					["creatureID"] = 36855,	-- Lady Deathwhisper
-					["g"] = {
-						crit(2, {	-- Lady Deathwhisper
-							["achievementID"] = 4531,	-- Storming the Citadel (10 player)
-						}),
-						ach(4535),	-- Full House (10 player)
-						i(50776),	-- Njordar Bone Bow
-						i(50781),	-- Scourgelord's Baton
-						i(50779),	-- Deathspeaker Zealot's Helm
-						i(50780),	-- Chestguard of the Frigid Noose
-						i(50786),	-- Ghoul Commander's Cuirass
-						i(50785),	-- Bracers of Dark Blessings
-						i(50777),	-- Handgrips of Frost and Sleet
-						i(50782),	-- Sister's Handshrouds
-						i(50784),	-- Deathspeaker Disciple's Belt
-						i(50778),	-- Soulthief's Braided Belt
-						i(50783),	-- Boots of the Frozen Seed
-						i(50342),	-- Whispering Fanged Skull
-					},
+				n(-395, {	-- The Crimson Hall
+					ach(4529),	-- The Crimson Hall (10 player)
+					e(1632,  {	-- Blood Prince Council
+						["crs"] = {
+							37972,	-- Prince Keleseth
+							37973,	-- Prince Taldaram
+							37970,	-- Prince Valanar
+						},
+						["g"] = {
+							crit(1, {	-- Defeat the Blood Prince Council
+								["achievementID"] = 4529,	-- The Crimson Hall (10 player)
+							}),
+							ach(4582),	-- The Orb Whisperer (10 player)
+							i(51022),	-- Hersir's Greatspear
+							i(51021),	-- Soulbreaker
+							i(51326),	-- Wand of Ruby Claret
+							i(51383),	-- Spaulders of the Blood Princes
+							i(51382),	-- Heartsick Mender's Cape
+							i(51379),	-- Bloodsoul Raiment
+							i(51325),	-- Blood-Drinker's Girdle
+							i(51025),	-- Battle-Maiden's Legguards
+							i(51380),	-- Pale Corpse Boots
+							i(51023),	-- Taldaram's Soft Slippers
+							i(51381),	-- Cerise Coiled Ring
+							i(51024),	-- Thrice Fanged Signet
+						},
+					}),
+					e(1633,  {	-- Blood-Queen Lana'thel
+						["creatureID"] = 37955,	-- Blood-Queen Lana'thel
+						["g"] = {
+							crit(2, {	-- Defeat Blood-Queen Lana'thel
+								["achievementID"] = 4529,	-- The Crimson Hall (10 player)
+							}),
+							ach(4539, {	-- Once Bitten, Twice Shy (10 player)
+								crit(1),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
+								crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
+							}),
+							i(51384),	-- Bloodsipper
+							i(51553),	-- Lana'thel's Bloody Nail
+							i(51385),	-- Stakethrower
+							i(51554),	-- Cowl of Malefic Repose
+							i(51548),	-- Collar of Haughty Disdain
+							i(51552),	-- Shoulderpads of the Searing Kiss
+							i(51551),	-- Chestguard of Siphoned Elements
+							i(51386),	-- Throatrender Handguards
+							i(51556),	-- Veincrusher Gauntlets
+							i(51555),	-- Tightening Waistband
+							i(51550),	-- Ivory-Inlaid Leggings
+							i(51387),	-- Seal of the Twilight Queen
+						},
+					}),
 				}),
-				e(1626,  {	-- Icecrown Gunship Battle
-					["crs"] = {
-						36939,	-- High Overlord Saurfang
-						36948,	-- Muradin Bronzebeard
-					},
-					["g"] = {
-						crit(3, {	-- Claim victory in the Gunship Battle
-							["achievementID"] = 4531,	-- Storming the Citadel (10 player)
-						}),
-						ach(4536),	-- I'm on a Boat (10 player)
-						i(50787),	-- Frost Giant's Cleaver
-						i(50793),	-- Midnight Sun
-						i(50794),	-- Neverending Winter
-						i(50797),	-- Ice-Reinforced Vrykul Helm
-						i(50792),	-- Pauldrons of Lost Hope
-						i(50791),	-- Saronite Gargoyle Cloak
-						i(50796),	-- Bracers of Pale Illumination
-						i(50789),	-- Icecrown Rampart Bracers
-						i(50795),	-- Cord of Dark Suffering
-						i(50788),	-- Bone Drake's Enameled Boots
-						i(50790),	-- Abomination's Bloody Ring
-						i(50340),	-- Muradin's Spyglass
-					},
-				}),
-				e(1628,  {	-- Deathbringer Saurfang
-					["creatureID"] = 37813,	-- Deathbringer Saurfang
-					["g"] = {
-						crit(4, {	-- The Deathbringer
-							["achievementID"] = 4531,	-- Storming the Citadel (10 player)
-						}),
-						ach(4537),	-- I've Gone and Made a Mess (10 player)
-						i(142095),	-- Remains of a Blood Beast (PET!)
-						i(50805),	-- Mag'hari Chieftain's Staff
-						i(50798),	-- Ramaladni's Blade of Culling
-						i(50807),	-- Thaumaturge's Crackling Cowl
-						i(50809),	-- Soulcleave Pendant
-						i(50801),	-- Blade-Scored Carapace
-						i(50800),	-- Hauberk of a Thousand Cuts
-						i(50802),	-- Gargoyle Spit Bracers
-						i(50799),	-- Scourge Stranglers
-						i(50808),	-- Deathforged Legplates
-						i(50806),	-- Leggings of Unrelenting Blood
-						i(50804),	-- Icecrown Spire Sandals
-						i(50803),	-- Saurfang's Cold-Forged Band
-					},
-				}),
-				n(37904, {	-- Brazie Getz
-					["description"] = "After you kill Deathbringer Saurfang, this vendor shows up in the camp.",
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(49926),	-- Brazie's Black Book of Secrets
-					},
-				}),
-				n(37217, {	-- Precious
-					i(52019),	-- Precious' Ribbon
-				}),
-				crit(2,  {	-- The Plagueworks (10 player)
-					["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
-				}),
-				e(1629,  {	-- Festergut
-					["creatureID"] = 36626,	-- Festergut
-					["g"] = {
-						crit(1, {	-- Festergut
-							["achievementID"] = 4528,	-- The Plagueworks (10 player)
-						}),
-						ach(4577),	-- Flu Shot Shortage (10 player)
-						i(50966),	-- Abracadaver
-						i(50810),	-- Gutbuster
-						i(50852),	-- Precious' Putrid Collar
-						i(50988),	-- Bloodstained Surgeon's Shoulderguards
-						i(50859),	-- Cloak of Many Skins
-						i(50985),	-- Wrists of Septic Shock
-						i(50967),	-- Festergut's Gaseous Gloves
-						i(50811),	-- Festering Fingerguards
-						i(50990),	-- Kilt of Untreated Wounds
-						i(50858),	-- Plague-Soaked Leather Leggings
-						i(50812),	-- Taldron's Long Neglected Boots
-						i(50986),	-- Signet of Putrefaction
-					},
-				}),
-				e(1630,  {	-- Rotface
-					["creatureID"] = 36627,	-- Rotface
-					["g"] = {
-						crit(2, {	-- Rotface
-							["achievementID"] = 4528,	-- The Plagueworks (10 player)
-						}),
-						ach(4538),	-- Dances with Oozes (10 player)
-						i(50998),	-- Shaft of Glacial Ice
-						i(51003),	-- Abomination Knuckles
-						i(51004),	-- Lockjaw
-						i(51002),	-- Taldron's Short-Sighted Helm
-						i(51008),	-- Choker of Filthy Diamonds
-						i(51009),	-- Chestguard of the Failed Experiment
-						i(51007),	-- Ether-Soaked Bracers
-						i(51005),	-- Gloves of Broken Fingers
-						i(51000),	-- Flesh-Shaper's Gurney Strap
-						i(51006),	-- Shuffling Shoes
-						i(51001),	-- Rotface's Rupturing Ring
-					},
-				}),
-				e(1631,  {	-- Professor Putricide
-					["creatureID"] = 36678,	-- Professor Putricide
-					["g"] = {
-						crit(3, {	-- Professor Putricide
-							["achievementID"] = 4528,	-- The Plagueworks (10 player)
-						}),
-						ach(4578),	-- Nausea, Heartburn, Indigestion... (10 player)
-						i(142096),	-- Putricide's Alchemy Supplies (PET!)
-						i(51011),	-- Flesh-Carving Scalpel
-						i(51010),	-- The Facelifter
-						i(51013),	-- Discarded Bag of Entrails
-						i(51012),	-- Infected Choker
-						i(51016),	-- Pendant of Split Veins
-						i(51014),	-- Scalpel-Sharpening Shoulderguards
-						i(51015),	-- Shoulderpads of the Morbid Ritual
-						i(51020),	-- Shoulders of Ruinous Senility
-						i(51018),	-- Chestplate of Septic Stitches
-						i(51017),	-- Cauterized Cord
-						i(51019),	-- Rippling Flesh Kilt
-						i(50341),	-- Unidentifiable Organ
-					},
-				}),
-				crit(3,  {	-- The Crimson Hall (10 player)
-					["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
-				}),
-				e(1632,  {	-- Blood Prince Council
-					["crs"] = {
-						37972,	-- Prince Keleseth
-						37973,	-- Prince Taldaram
-						37970,	-- Prince Valanar
-					},
-					["g"] = {
-						crit(1, {	-- Defeat the Blood Prince Council
-							["achievementID"] = 4529,	-- The Crimson Hall (10 player)
-						}),
-						ach(4582),	-- The Orb Whisperer (10 player)
-						i(51022),	-- Hersir's Greatspear
-						i(51021),	-- Soulbreaker
-						i(51326),	-- Wand of Ruby Claret
-						i(51383),	-- Spaulders of the Blood Princes
-						i(51382),	-- Heartsick Mender's Cape
-						i(51379),	-- Bloodsoul Raiment
-						i(51325),	-- Blood-Drinker's Girdle
-						i(51025),	-- Battle-Maiden's Legguards
-						i(51380),	-- Pale Corpse Boots
-						i(51023),	-- Taldaram's Soft Slippers
-						i(51381),	-- Cerise Coiled Ring
-						i(51024),	-- Thrice Fanged Signet
-					},
-				}),
-				e(1633,  {	-- Blood-Queen Lana'thel
-					["creatureID"] = 37955,	-- Blood-Queen Lana'thel
-					["g"] = {
-						crit(2, {	-- Defeat Blood-Queen Lana'thel
-							["achievementID"] = 4529,	-- The Crimson Hall (10 player)
-						}),
-						ach(4539, {	-- Once Bitten, Twice Shy (10 player)
-							crit(1),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
-							crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
-						}),
-						i(51384),	-- Bloodsipper
-						i(51553),	-- Lana'thel's Bloody Nail
-						i(51385),	-- Stakethrower
-						i(51554),	-- Cowl of Malefic Repose
-						i(51548),	-- Collar of Haughty Disdain
-						i(51552),	-- Shoulderpads of the Searing Kiss
-						i(51551),	-- Chestguard of Siphoned Elements
-						i(51386),	-- Throatrender Handguards
-						i(51556),	-- Veincrusher Gauntlets
-						i(51555),	-- Tightening Waistband
-						i(51550),	-- Ivory-Inlaid Leggings
-						i(51387),	-- Seal of the Twilight Queen
-					},
-				}),
-				crit(4,  {	-- The Frostwing Halls (10 player)
-					["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
-				}),
-				e(1634,  {	-- Valithria Dreamwalker
-					["creatureID"] = 36789,	-- Valithria Dreamwalker
-					["g"] = {
-						crit(1, {	-- Rescue Valithria Dreamwalker
-							["achievementID"] = 4527,	-- The Frostwing Halls (10 player)
-						}),
-						ach(4579),	-- Portal Jockey (10 player)
-						i(51562),	-- Oxheart
-						i(51582),	-- Sister Svalna's Aether Staff
-						i(51561),	-- Dreamhunter's Carbine
-						i(51585),	-- Sister Svalna's Spangenhelm
-						i(51586),	-- Emerald Saint's Spaulders
-						i(51565),	-- Skinned Whelp Shoulders
-						i(51584),	-- Lich Wrappings
-						i(51563),	-- Taiga Bindings
-						i(51583),	-- Stormbringer Gloves
-						i(51564),	-- Ironrope Belt of Ymirjar
-						i(51777),	-- Leggings of the Refracted Mind
-						i(51566),	-- Legguards of the Twisted Dream
-					},
-				}),
-				e(1635,  {	-- Sindragosa
-					["creatureID"] = 36853,	-- Sindragosa
-					["g"] = {
-						crit(2, {	-- Sindragosa
-							["achievementID"] = 4527,	-- The Frostwing Halls (10 player)
-						}),
-						ach(4580),	-- All You Can Eat (10 player)
-						i(142097),	-- Skull of a Frozen Whelp (PET!)
-						i(51788),	-- Bleak Coldarra Carver
-						i(51784),	-- Splintershard
-						i(51791),	-- Lost Pavise of the Blue Flight
-						i(51779),	-- Rimetooth Pendant
-						i(51792),	-- Shoulderguards of Crystalline Bone
-						i(51790),	-- Robes of Azure Downfall
-						i(51783),	-- Vambraces of the Frost Wyrm Queen
-						i(51789),	-- Icicle Shapers
-						i(51782),	-- Etched Dragonbone Girdle
-						i(51786),	-- Legplates of Aetheric Strife
-						i(51787),	-- Scourge Fanged Stompers
-						i(51785),	-- Wyrmwing Treads
-					},
-				}),
-				e(1636,  {	-- The Lich King
-					["creatureID"] = 36597,	-- The Lich King
-					["g"] = {
-						crit(5, {	-- The Frozen Throne (10 player)
-							["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
-						}),
-						ach(4601),	-- Been Waiting a Long Time for This (10 player)
-						ach(4581),	-- Neck-Deep in Vile (10 player)
-						ach(4530, {	-- The Frozen Throne (10 player)
-							title(140),	-- the Kingslayer
-						}),
-						i(142098),	-- Drudge Remains (PET!)
-						i(138955),	-- Illusion: Rune of Razorice
-						i(51799),	-- Halion, Staff of Forgotten Love
-						i(51797),	-- Tainted Twig of Nordrassil
-						i(51796),	-- Warmace of Menethil
-						i(51801),	-- Pugius, Fist of Defiance
-						i(51800),	-- Stormfury, Black Blade of the Betrayer
-						i(51803),	-- Tel'thas, Dagger of the Blood King
-						i(51795),	-- Troggbane, Axe of the Frostborne King
-						i(51798),	-- Valius, Gavel of the Lightbringer
-						i(51802),	-- Windrunner's Heartseeker
-						i(122229),	-- Music Roll: Invincible
-					},
+				n(-396, {	-- The Frostwing Halls
+					ach(4527),	-- The Frostwing Halls (10 player)
+					e(1634,  {	-- Valithria Dreamwalker
+						["creatureID"] = 36789,	-- Valithria Dreamwalker
+						["g"] = {
+							crit(1, {	-- Rescue Valithria Dreamwalker
+								["achievementID"] = 4527,	-- The Frostwing Halls (10 player)
+							}),
+							ach(4579),	-- Portal Jockey (10 player)
+							i(51562),	-- Oxheart
+							i(51582),	-- Sister Svalna's Aether Staff
+							i(51561),	-- Dreamhunter's Carbine
+							i(51585),	-- Sister Svalna's Spangenhelm
+							i(51586),	-- Emerald Saint's Spaulders
+							i(51565),	-- Skinned Whelp Shoulders
+							i(51584),	-- Lich Wrappings
+							i(51563),	-- Taiga Bindings
+							i(51583),	-- Stormbringer Gloves
+							i(51564),	-- Ironrope Belt of Ymirjar
+							i(51777),	-- Leggings of the Refracted Mind
+							i(51566),	-- Legguards of the Twisted Dream
+						},
+					}),
+					e(1635,  {	-- Sindragosa
+						["creatureID"] = 36853,	-- Sindragosa
+						["g"] = {
+							crit(2, {	-- Sindragosa
+								["achievementID"] = 4527,	-- The Frostwing Halls (10 player)
+							}),
+							ach(4580),	-- All You Can Eat (10 player)
+							i(142097),	-- Skull of a Frozen Whelp (PET!)
+							i(51788),	-- Bleak Coldarra Carver
+							i(51784),	-- Splintershard
+							i(51791),	-- Lost Pavise of the Blue Flight
+							i(51779),	-- Rimetooth Pendant
+							i(51792),	-- Shoulderguards of Crystalline Bone
+							i(51790),	-- Robes of Azure Downfall
+							i(51783),	-- Vambraces of the Frost Wyrm Queen
+							i(51789),	-- Icicle Shapers
+							i(51782),	-- Etched Dragonbone Girdle
+							i(51786),	-- Legplates of Aetheric Strife
+							i(51787),	-- Scourge Fanged Stompers
+							i(51785),	-- Wyrmwing Treads
+						},
+					}),
+					e(1636,  {	-- The Lich King
+						["creatureID"] = 36597,	-- The Lich King
+						["g"] = {
+							crit(5, {	-- The Frozen Throne (10 player)
+								["achievementID"] = 4532,	-- Fall of the Lich King (10 player)
+							}),
+							ach(4601),	-- Been Waiting a Long Time for This (10 player)
+							ach(4581),	-- Neck-Deep in Vile (10 player)
+							ach(4530, {	-- The Frozen Throne (10 player)
+								title(140),	-- the Kingslayer
+							}),
+							i(142098),	-- Drudge Remains (PET!)
+							i(138955),	-- Illusion: Rune of Razorice
+							i(51799),	-- Halion, Staff of Forgotten Love
+							i(51797),	-- Tainted Twig of Nordrassil
+							i(51796),	-- Warmace of Menethil
+							i(51801),	-- Pugius, Fist of Defiance
+							i(51800),	-- Stormfury, Black Blade of the Betrayer
+							i(51803),	-- Tel'thas, Dagger of the Blood King
+							i(51795),	-- Troggbane, Axe of the Frostborne King
+							i(51798),	-- Valius, Gavel of the Lightbringer
+							i(51802),	-- Windrunner's Heartseeker
+							i(122229),	-- Music Roll: Invincible
+						},
+					}),
 				}),
 			}),
 			d(5,  {	-- 10-Player (Heroic)
@@ -3020,311 +3020,311 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				crit(1,  {	-- Heroic: Storming the Citadel (10 player
-					["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
+				n(-393, {	-- Storming the Citadel
+					ach(4628),	-- Heroic: Storming the Citadel (10 player)
+					e(1624,  {	-- Lord Marrowgar
+						["creatureID"] = 36612,	-- Lord Marrowgar
+						["g"] = {
+							crit(1, {	-- Lord Marrowgar
+								["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
+							}),
+							ach(4534),	-- Boned (10 player)
+							i(142094),	-- Fragment of Frozen Bone (PET!)
+							i(51936),	-- Citadel Enforcer's Claymore
+							i(51938),	-- Bone Warden's Splitter
+							i(51937),	-- Bonebreaker Scepter
+							i(51932),	-- Frost Needle
+							i(51934),	-- Marrowgar's Scratching Choker
+							i(51933),	-- Shawl of Nerubian Silk
+							i(51929),	-- Coldwraith Bracers
+							i(51930),	-- Cord of the Patronizing Practitioner
+							i(51935),	-- Linked Scourge Vertebrae
+							i(51928),	-- Corrupted Silverplate Leggings
+							i(51931),	-- Ancient Skeletal Boots
+							i(50346),	-- Sliver of Pure Ice
+						},
+					}),
+					e(1625,  {	-- Lady Deathwhisper
+						["creatureID"] = 36855,	-- Lady Deathwhisper
+						["g"] = {
+							crit(2, {	-- Lady Deathwhisper
+								["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
+							}),
+							ach(4535),	-- Full House (10 player)
+							i(51927),	-- Njordar Bone Bow
+							i(51922),	-- Scourgelord's Baton
+							i(51924),	-- Deathspeaker Zealot's Helm
+							i(51923),	-- Chestguard of the Frigid Noose
+							i(51917),	-- Ghoul Commander's Cuirass
+							i(51918),	-- Bracers of Dark Blessings
+							i(51926),	-- Handgrips of Frost and Sleet
+							i(51921),	-- Sister's Handshrouds
+							i(51919),	-- Deathspeaker Disciple's Belt
+							i(51925),	-- Soulthief's Braided Belt
+							i(51920),	-- Boots of the Frozen Seed
+							i(50343),	-- Whispering Fanged Skull
+						},
+					}),
+					e(1626,  {	-- Icecrown Gunship Battle
+						["crs"] = {
+							36939,	-- High Overlord Saurfang
+							36948,	-- Muradin Bronzebeard
+						},
+						["g"] = {
+							crit(3, {	-- Claim victory in the Gunship Battle
+								["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
+							}),
+							ach(4536),	-- I'm on a Boat (10 player)
+							i(51916),	-- Frost Giant's Cleaver
+							i(51910),	-- Midnight Sun
+							i(51909),	-- Neverending Winter
+							i(51906),	-- Ice-Reinforced Vrykul Helm
+							i(51911),	-- Pauldrons of Lost Hope
+							i(51912),	-- Saronite Gargoyle Cloak
+							i(51907),	-- Bracers of Pale Illumination
+							i(51914),	-- Icecrown Rampart Bracers
+							i(51908),	-- Cord of Dark Suffering
+							i(51915),	-- Bone Drake's Enameled Boots
+							i(51913),	-- Abomination's Bloody Ring
+							i(50345),	-- Muradin's Spyglass
+						},
+					}),
+					e(1628,  {	-- Deathbringer Saurfang
+						["creatureID"] = 37813,	-- Deathbringer Saurfang
+						["g"] = {
+							crit(4, {	-- The Deathbringer
+								["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
+							}),
+							ach(4537),	-- I've Gone and Made a Mess (10 player)
+							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
+							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(142095),	-- Remains of a Blood Beast (PET!)
+							i(51898),	-- Mag'hari Chieftain's Staff
+							i(51905),	-- Ramaladni's Blade of Culling
+							i(51896),	-- Thaumaturge's Crackling Cowl
+							i(51894),	-- Soulcleave Pendant
+							i(51902),	-- Blade-Scored Carapace
+							i(51903),	-- Hauberk of a Thousand Cuts
+							i(51901),	-- Gargoyle Spit Bracers
+							i(51904),	-- Scourge Stranglers
+							i(51895),	-- Deathforged Legplates
+							i(51897),	-- Leggings of Unrelenting Blood
+							i(51899),	-- Icecrown Spire Sandals
+							i(51900),	-- Saurfang's Cold-Forged Band
+						},
+					}),
+					n(37904, {	-- Brazie Getz
+						["description"] = "After you kill Deathbringer Saurfang, this vendor shows up in the camp.",
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(49926),	-- Brazie's Black Book of Secrets
+						},
+					}),
 				}),
-				e(1624,  {	-- Lord Marrowgar
-					["creatureID"] = 36612,	-- Lord Marrowgar
-					["g"] = {
-						crit(1, {	-- Lord Marrowgar
-							["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
-						}),
-						ach(4534),	-- Boned (10 player)
-						i(142094),	-- Fragment of Frozen Bone (PET!)
-						i(51936),	-- Citadel Enforcer's Claymore
-						i(51938),	-- Bone Warden's Splitter
-						i(51937),	-- Bonebreaker Scepter
-						i(51932),	-- Frost Needle
-						i(51934),	-- Marrowgar's Scratching Choker
-						i(51933),	-- Shawl of Nerubian Silk
-						i(51929),	-- Coldwraith Bracers
-						i(51930),	-- Cord of the Patronizing Practitioner
-						i(51935),	-- Linked Scourge Vertebrae
-						i(51928),	-- Corrupted Silverplate Leggings
-						i(51931),	-- Ancient Skeletal Boots
-						i(50346),	-- Sliver of Pure Ice
-					},
+				n(-394, {	-- The Plagueworks
+					ach(4629),	-- Heroic: The Plagueworks (10 player)
+					n(37217, {	-- Precious
+						i(52019),	-- Precious' Ribbon
+					}),
+					e(1629,  {	-- Festergut
+						["creatureID"] = 36626,	-- Festergut
+						["g"] = {
+							crit(1, {	-- Festergut
+								["achievementID"] = 4629,	-- Heroic: The Plagueworks (10 player)
+							}),
+							ach(4577),	-- Flu Shot Shortage (10 player)
+							i(51887),	-- Abracadaver
+							i(51893),	-- Gutbuster
+							i(51890),	-- Precious' Putrid Collar
+							i(51883),	-- Bloodstained Surgeon's Shoulderguards
+							i(51888),	-- Cloak of Many Skins
+							i(51885),	-- Wrists of Septic Shock
+							i(51886),	-- Festergut's Gaseous Gloves
+							i(51892),	-- Festering Fingerguards
+							i(51882),	-- Kilt of Untreated Wounds
+							i(51889),	-- Plague-Soaked Leather Leggings
+							i(51891),	-- Taldron's Long Neglected Boots
+							i(51884),	-- Signet of Putrefaction
+						},
+					}),
+					e(1630,  {	-- Rotface
+						["creatureID"] = 36627,	-- Rotface
+						["g"] = {
+							crit(2, {	-- Rotface
+								["achievementID"] = 4629,	-- Heroic: The Plagueworks (10 player)
+							}),
+							ach(4538),	-- Dances with Oozes (10 player)
+							i(51881),	-- Shaft of Glacial Ice
+							i(51876),	-- Abomination Knuckles
+							i(51875),	-- Lockjaw
+							i(51877),	-- Taldron's Short-Sighted Helm
+							i(51871),	-- Choker of Filthy Diamonds
+							i(51870),	-- Chestguard of the Failed Experiment
+							i(51872),	-- Ether-Soaked Bracers
+							i(51874),	-- Gloves of Broken Fingers
+							i(51879),	-- Flesh-Shaper's Gurney Strap
+							i(51873),	-- Shuffling Shoes
+							i(51878),	-- Rotface's Rupturing Ring
+						},
+					}),
+					e(1631,  {	-- Professor Putricide
+						["creatureID"] = 36678,	-- Professor Putricide
+						["g"] = {
+							crit(3, {	-- Professor Putricide
+								["achievementID"] = 4629,	-- Heroic: The Plagueworks (10 player)
+							}),
+							ach(4578),	-- Nausea, Heartburn, Indigestion... (10 player)
+							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
+							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(142096),	-- Putricide's Alchemy Supplies (PET!)
+							i(51868),	-- Flesh-Carving Scalpel
+							i(51869),	-- The Facelifter
+							i(51866),	-- Discarded Bag of Entrails
+							i(51867),	-- Infected Choker
+							i(51863),	-- Pendant of Split Veins
+							i(51865),	-- Scalpel-Sharpening Shoulderguards
+							i(51864),	-- Shoulderpads of the Morbid Ritual
+							i(51859),	-- Shoulders of Ruinous Senility
+							i(51861),	-- Chestplate of Septic Stitches
+							i(51862),	-- Cauterized Cord
+							i(51860),	-- Rippling Flesh Kilt
+							i(50344),	-- Unidentifiable Organ
+						},
+					}),
 				}),
-				e(1625,  {	-- Lady Deathwhisper
-					["creatureID"] = 36855,	-- Lady Deathwhisper
-					["g"] = {
-						crit(2, {	-- Lady Deathwhisper
-							["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
-						}),
-						ach(4535),	-- Full House (10 player)
-						i(51927),	-- Njordar Bone Bow
-						i(51922),	-- Scourgelord's Baton
-						i(51924),	-- Deathspeaker Zealot's Helm
-						i(51923),	-- Chestguard of the Frigid Noose
-						i(51917),	-- Ghoul Commander's Cuirass
-						i(51918),	-- Bracers of Dark Blessings
-						i(51926),	-- Handgrips of Frost and Sleet
-						i(51921),	-- Sister's Handshrouds
-						i(51919),	-- Deathspeaker Disciple's Belt
-						i(51925),	-- Soulthief's Braided Belt
-						i(51920),	-- Boots of the Frozen Seed
-						i(50343),	-- Whispering Fanged Skull
-					},
+				n(-395, {	-- The Crimson Hall
+					ach(4630),	-- Heroic: The Crimson Hall (10 player)
+					e(1632,  {	-- Blood Prince Council
+						["crs"] = {
+							37972,	-- Prince Keleseth
+							37973,	-- Prince Taldaram
+							37970,	-- Prince Valanar
+						},
+						["g"] = {
+							crit(1, {	-- Defeat the Blood Prince Council
+								["achievementID"] = 4630,	-- Heroic: The Crimson Hall (10 player)
+							}),
+							ach(4582),	-- The Orb Whisperer (10 player)
+							i(51857),	-- Hersir's Greatspear
+							i(51858),	-- Soulbreaker
+							i(51852),	-- Wand of Ruby Claret
+							i(51847),	-- Spauldersof the Blood Princes
+							i(51848),	-- Heartsick Mender's Cape
+							i(51851),	-- Bloodsoul Raiment
+							i(51853),	-- Blood-Drinker's Girdle
+							i(51854),	-- Battle-Maiden's Legguards
+							i(51850),	-- Pale Corpse Boots
+							i(51856),	-- Taldaram's Soft Slippers
+							i(51849),	-- Cerise Coiled Ring
+							i(51855),	-- Thrice Fanged Signet
+						},
+					}),
+					e(1633,  {	-- Blood-Queen Lana'thel
+						["creatureID"] = 37955,	-- Blood-Queen Lana'thel
+						["g"] = {
+							crit(2, {	-- Defeat Blood-Queen Lana'thel
+								["achievementID"] = 4630,	-- Heroic: The Crimson Hall (10 player)
+							}),
+							ach(4539, {	-- Once Bitten, Twice Shy (10 player)
+								crit(1),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
+								crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
+							}),
+							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
+							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(51846),	-- Bloodsipper
+							i(51838),	-- Lana'thel's Bloody Nail
+							i(51845),	-- Stakethrower
+							i(51837),	-- Cowl of Malefic Repose
+							i(51842),	-- Collar of Haughty Disdain
+							i(51839),	-- Shoulderpads of the Searing Kiss
+							i(51840),	-- Chestguard of Siphoned Elements
+							i(51844),	-- Throatrender Handguards
+							i(51835),	-- Veincrusher Gauntlets
+							i(51836),	-- Tightening Waistband
+							i(51841),	-- Ivory-Inlaid Leggings
+							i(51843),	-- Seal of the Twilight Queen
+						},
+					}),
 				}),
-				e(1626,  {	-- Icecrown Gunship Battle
-					["crs"] = {
-						36939,	-- High Overlord Saurfang
-						36948,	-- Muradin Bronzebeard
-					},
-					["g"] = {
-						crit(3, {	-- Claim victory in the Gunship Battle
-							["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
-						}),
-						ach(4536),	-- I'm on a Boat (10 player)
-						i(51916),	-- Frost Giant's Cleaver
-						i(51910),	-- Midnight Sun
-						i(51909),	-- Neverending Winter
-						i(51906),	-- Ice-Reinforced Vrykul Helm
-						i(51911),	-- Pauldrons of Lost Hope
-						i(51912),	-- Saronite Gargoyle Cloak
-						i(51907),	-- Bracers of Pale Illumination
-						i(51914),	-- Icecrown Rampart Bracers
-						i(51908),	-- Cord of Dark Suffering
-						i(51915),	-- Bone Drake's Enameled Boots
-						i(51913),	-- Abomination's Bloody Ring
-						i(50345),	-- Muradin's Spyglass
-					},
-				}),
-				e(1628,  {	-- Deathbringer Saurfang
-					["creatureID"] = 37813,	-- Deathbringer Saurfang
-					["g"] = {
-						crit(4, {	-- The Deathbringer
-							["achievementID"] = 4628,	-- Heroic: Storming the Citadel (10 player)
-						}),
-						ach(4537),	-- I've Gone and Made a Mess (10 player)
-						i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-						i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-						i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-						i(142095),	-- Remains of a Blood Beast (PET!)
-						i(51898),	-- Mag'hari Chieftain's Staff
-						i(51905),	-- Ramaladni's Blade of Culling
-						i(51896),	-- Thaumaturge's Crackling Cowl
-						i(51894),	-- Soulcleave Pendant
-						i(51902),	-- Blade-Scored Carapace
-						i(51903),	-- Hauberk of a Thousand Cuts
-						i(51901),	-- Gargoyle Spit Bracers
-						i(51904),	-- Scourge Stranglers
-						i(51895),	-- Deathforged Legplates
-						i(51897),	-- Leggings of Unrelenting Blood
-						i(51899),	-- Icecrown Spire Sandals
-						i(51900),	-- Saurfang's Cold-Forged Band
-					},
-				}),
-				n(37904, {	-- Brazie Getz
-					["description"] = "After you kill Deathbringer Saurfang, this vendor shows up in the camp.",
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(49926),	-- Brazie's Black Book of Secrets
-					},
-				}),
-				n(37217, {	-- Precious
-					i(52019),	-- Precious' Ribbon
-				}),
-				crit(2,  {	-- Heroic: The Plagueworks (10 player
-					["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
-				}),
-				e(1629,  {	-- Festergut
-					["creatureID"] = 36626,	-- Festergut
-					["g"] = {
-						crit(1, {	-- Festergut
-							["achievementID"] = 4629,	-- Heroic: The Plagueworks (10 player)
-						}),
-						ach(4577),	-- Flu Shot Shortage (10 player)
-						i(51887),	-- Abracadaver
-						i(51893),	-- Gutbuster
-						i(51890),	-- Precious' Putrid Collar
-						i(51883),	-- Bloodstained Surgeon's Shoulderguards
-						i(51888),	-- Cloak of Many Skins
-						i(51885),	-- Wrists of Septic Shock
-						i(51886),	-- Festergut's Gaseous Gloves
-						i(51892),	-- Festering Fingerguards
-						i(51882),	-- Kilt of Untreated Wounds
-						i(51889),	-- Plague-Soaked Leather Leggings
-						i(51891),	-- Taldron's Long Neglected Boots
-						i(51884),	-- Signet of Putrefaction
-					},
-				}),
-				e(1630,  {	-- Rotface
-					["creatureID"] = 36627,	-- Rotface
-					["g"] = {
-						crit(2, {	-- Rotface
-							["achievementID"] = 4629,	-- Heroic: The Plagueworks (10 player)
-						}),
-						ach(4538),	-- Dances with Oozes (10 player)
-						i(51881),	-- Shaft of Glacial Ice
-						i(51876),	-- Abomination Knuckles
-						i(51875),	-- Lockjaw
-						i(51877),	-- Taldron's Short-Sighted Helm
-						i(51871),	-- Choker of Filthy Diamonds
-						i(51870),	-- Chestguard of the Failed Experiment
-						i(51872),	-- Ether-Soaked Bracers
-						i(51874),	-- Gloves of Broken Fingers
-						i(51879),	-- Flesh-Shaper's Gurney Strap
-						i(51873),	-- Shuffling Shoes
-						i(51878),	-- Rotface's Rupturing Ring
-					},
-				}),
-				e(1631,  {	-- Professor Putricide
-					["creatureID"] = 36678,	-- Professor Putricide
-					["g"] = {
-						crit(3, {	-- Professor Putricide
-							["achievementID"] = 4629,	-- Heroic: The Plagueworks (10 player)
-						}),
-						ach(4578),	-- Nausea, Heartburn, Indigestion... (10 player)
-						i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-						i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-						i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-						i(142096),	-- Putricide's Alchemy Supplies (PET!)
-						i(51868),	-- Flesh-Carving Scalpel
-						i(51869),	-- The Facelifter
-						i(51866),	-- Discarded Bag of Entrails
-						i(51867),	-- Infected Choker
-						i(51863),	-- Pendant of Split Veins
-						i(51865),	-- Scalpel-Sharpening Shoulderguards
-						i(51864),	-- Shoulderpads of the Morbid Ritual
-						i(51859),	-- Shoulders of Ruinous Senility
-						i(51861),	-- Chestplate of Septic Stitches
-						i(51862),	-- Cauterized Cord
-						i(51860),	-- Rippling Flesh Kilt
-						i(50344),	-- Unidentifiable Organ
-					},
-				}),
-				crit(3,  {	-- Heroic: The Crimson Hall (10 player
-					["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
-				}),
-				e(1632,  {	-- Blood Prince Council
-					["crs"] = {
-						37972,	-- Prince Keleseth
-						37973,	-- Prince Taldaram
-						37970,	-- Prince Valanar
-					},
-					["g"] = {
-						crit(1, {	-- Defeat the Blood Prince Council
-							["achievementID"] = 4630,	-- Heroic: The Crimson Hall (10 player)
-						}),
-						ach(4582),	-- The Orb Whisperer (10 player)
-						i(51857),	-- Hersir's Greatspear
-						i(51858),	-- Soulbreaker
-						i(51852),	-- Wand of Ruby Claret
-						i(51847),	-- Spauldersof the Blood Princes
-						i(51848),	-- Heartsick Mender's Cape
-						i(51851),	-- Bloodsoul Raiment
-						i(51853),	-- Blood-Drinker's Girdle
-						i(51854),	-- Battle-Maiden's Legguards
-						i(51850),	-- Pale Corpse Boots
-						i(51856),	-- Taldaram's Soft Slippers
-						i(51849),	-- Cerise Coiled Ring
-						i(51855),	-- Thrice Fanged Signet
-					},
-				}),
-				e(1633,  {	-- Blood-Queen Lana'thel
-					["creatureID"] = 37955,	-- Blood-Queen Lana'thel
-					["g"] = {
-						crit(2, {	-- Defeat Blood-Queen Lana'thel
-							["achievementID"] = 4630,	-- Heroic: The Crimson Hall (10 player)
-						}),
-						ach(4539, {	-- Once Bitten, Twice Shy (10 player)
-							crit(1),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
-							crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
-						}),
-						i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-						i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-						i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-						i(51846),	-- Bloodsipper
-						i(51838),	-- Lana'thel's Bloody Nail
-						i(51845),	-- Stakethrower
-						i(51837),	-- Cowl of Malefic Repose
-						i(51842),	-- Collar of Haughty Disdain
-						i(51839),	-- Shoulderpads of the Searing Kiss
-						i(51840),	-- Chestguard of Siphoned Elements
-						i(51844),	-- Throatrender Handguards
-						i(51835),	-- Veincrusher Gauntlets
-						i(51836),	-- Tightening Waistband
-						i(51841),	-- Ivory-Inlaid Leggings
-						i(51843),	-- Seal of the Twilight Queen
-					},
-				}),
-				crit(4,  {	-- Heroic: The Frostwing Halls (10 player
-					["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
-				}),
-				e(1634,  {	-- Valithria Dreamwalker
-					["creatureID"] = 36789,	-- Valithria Dreamwalker
-					["g"] = {
-						crit(1, {	-- Rescue Valithria Dreamwalker
-							["achievementID"] = 4631,	-- Heroic: The Frostwing Halls (10 player)
-						}),
-						ach(4579),	-- Portal Jockey (10 player)
-						i(51833),	-- Oxheart
-						i(51828),	-- Sister Svalna's Aether Staff
-						i(51834),	-- Dreamhunter's Carbine
-						i(51825),	-- Sister Svalna's Spangenhelm
-						i(51824),	-- Emerald Saint's Spaulders
-						i(51830),	-- Skinned Whelp Shoulders
-						i(51826),	-- Lich Wrappings
-						i(51832),	-- Taiga Bindings
-						i(51827),	-- Stormbringer Gloves
-						i(51831),	-- Ironrope Belt of Ymirjar
-						i(51823),	-- Leggings of the Refracted Mind
-						i(51829),	-- Legguards of the Twisted Dream
-					},
-				}),
-				e(1635,  {	-- Sindragosa
-					["creatureID"] = 36853,	-- Sindragosa
-					["g"] = {
-						crit(2, {	-- Sindragosa
-							["achievementID"] = 4631,	-- Heroic: The Frostwing Halls (10 player)
-						}),
-						ach(4580),	-- All You Can Eat (10 player)
-						i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-						i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-						i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-						i(142097),	-- Skull of a Frozen Whelp (PET!)
-						i(51815),	-- Bleak Coldarra Carver
-						i(51819),	-- Splintershard
-						i(51812),	-- Lost Pavise of the Blue Flight
-						i(51822),	-- Rimetooth Pendant
-						i(51811),	-- Shoulderguards of Crystalline Bone
-						i(51813),	-- Robes of Azure Downfall
-						i(51820),	-- Vambraces of the Frost Wyrm Queen
-						i(51814),	-- Icicle Shapers
-						i(51821),	-- Etched Dragonbone Girdle
-						i(51817),	-- Legplates of Aetheric Strife
-						i(51816),	-- Scourge Fanged Stompers
-						i(51818),	-- Wyrmwing Treads
-					},
-				}),
-				e(1636,  {	-- The Lich King
-					["creatureID"] = 36597,	-- The Lich King
-					["g"] = {
-						crit(5, {	-- Bane of the Fallen King
-							["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
-						}),
-						ach(4583, {	-- Bane of the Fallen King
-							title(139),	-- Bane of the Fallen King
-						}),
-						ach(4601),	-- Been Waiting a Long Time for This (10 player)
-						ach(4581),	-- Neck-Deep in Vile (10 player)
-						i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-						i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-						i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-						i(142099),	-- Call of the Frozen Blade (PET!)
-						i(138955),	-- Illusion: Rune of Razorice
-						i(51943),	-- Halion, Staff of Forgotten Love
-						i(51945),	-- Tainted Twig of Nordrassil
-						i(51946),	-- Warmace of Menethil
-						i(51941),	-- Pugius, Fist of Defiance
-						i(51942),	-- Stormfury, Black Blade of the Betrayer
-						i(51939),	-- Tel'thas, Dagger of the Blood King
-						i(51947),	-- Troggbane, Axe of the Frostborne King
-						i(51944),	-- Valius, Gavel of the Lightbringer
-						i(51940),	-- Windrunner's Heartseeker
-						i(122229),	-- Music Roll: Invincible
-					},
+				n(-396, {	-- The Frostwing Halls
+					ach(4631),	-- Heroic: The Frostwing Halls (10 player)
+					e(1634,  {	-- Valithria Dreamwalker
+						["creatureID"] = 36789,	-- Valithria Dreamwalker
+						["g"] = {
+							crit(1, {	-- Rescue Valithria Dreamwalker
+								["achievementID"] = 4631,	-- Heroic: The Frostwing Halls (10 player)
+							}),
+							ach(4579),	-- Portal Jockey (10 player)
+							i(51833),	-- Oxheart
+							i(51828),	-- Sister Svalna's Aether Staff
+							i(51834),	-- Dreamhunter's Carbine
+							i(51825),	-- Sister Svalna's Spangenhelm
+							i(51824),	-- Emerald Saint's Spaulders
+							i(51830),	-- Skinned Whelp Shoulders
+							i(51826),	-- Lich Wrappings
+							i(51832),	-- Taiga Bindings
+							i(51827),	-- Stormbringer Gloves
+							i(51831),	-- Ironrope Belt of Ymirjar
+							i(51823),	-- Leggings of the Refracted Mind
+							i(51829),	-- Legguards of the Twisted Dream
+						},
+					}),
+					e(1635,  {	-- Sindragosa
+						["creatureID"] = 36853,	-- Sindragosa
+						["g"] = {
+							crit(2, {	-- Sindragosa
+								["achievementID"] = 4631,	-- Heroic: The Frostwing Halls (10 player)
+							}),
+							ach(4580),	-- All You Can Eat (10 player)
+							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
+							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(142097),	-- Skull of a Frozen Whelp (PET!)
+							i(51815),	-- Bleak Coldarra Carver
+							i(51819),	-- Splintershard
+							i(51812),	-- Lost Pavise of the Blue Flight
+							i(51822),	-- Rimetooth Pendant
+							i(51811),	-- Shoulderguards of Crystalline Bone
+							i(51813),	-- Robes of Azure Downfall
+							i(51820),	-- Vambraces of the Frost Wyrm Queen
+							i(51814),	-- Icicle Shapers
+							i(51821),	-- Etched Dragonbone Girdle
+							i(51817),	-- Legplates of Aetheric Strife
+							i(51816),	-- Scourge Fanged Stompers
+							i(51818),	-- Wyrmwing Treads
+						},
+					}),
+					e(1636,  {	-- The Lich King
+						["creatureID"] = 36597,	-- The Lich King
+						["g"] = {
+							crit(5, {	-- Bane of the Fallen King
+								["achievementID"] = 4636,	-- Heroic: Fall of the Lich King (10 player)
+							}),
+							ach(4583, {	-- Bane of the Fallen King
+								title(139),	-- Bane of the Fallen King
+							}),
+							ach(4601),	-- Been Waiting a Long Time for This (10 player)
+							ach(4581),	-- Neck-Deep in Vile (10 player)
+							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
+							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(142099),	-- Call of the Frozen Blade (PET!)
+							i(138955),	-- Illusion: Rune of Razorice
+							i(51943),	-- Halion, Staff of Forgotten Love
+							i(51945),	-- Tainted Twig of Nordrassil
+							i(51946),	-- Warmace of Menethil
+							i(51941),	-- Pugius, Fist of Defiance
+							i(51942),	-- Stormfury, Black Blade of the Betrayer
+							i(51939),	-- Tel'thas, Dagger of the Blood King
+							i(51947),	-- Troggbane, Axe of the Frostborne King
+							i(51944),	-- Valius, Gavel of the Lightbringer
+							i(51940),	-- Windrunner's Heartseeker
+							i(122229),	-- Music Roll: Invincible
+						},
+					}),
 				}),
 			}),
 			d(4,  {	-- 25-Player (Normal)
@@ -3457,321 +3457,321 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				crit(1,  {	-- Storming the Citadel (25 player)
-					["achievementID"] = 4608,	-- Fall of the Lich King (25 player)
+				n(-393, {	-- Storming the Citadel
+					ach(4604),	-- Storming the Citadel (25 player)
+					e(1624,  {	-- Lord Marrowgar
+						["creatureID"] = 36612,	-- Lord Marrowgar
+						["g"] = {
+							crit(1, {	-- Lord Marrowgar
+								["achievementID"] = 4604,	-- Storming the Citadel (25 player)
+							}),
+							ach(4610),	-- Boned (25 player)
+							i(142094),	-- Fragment of Frozen Bone (PET!)
+							i(50415),	-- Bryntroll, the Bone Arbiter
+							i(49968),	-- Frozen Bonespike
+							i(49976),	-- Bulwark of Smouldering Steel
+							i(49952),	-- Snowserpent Mail Helm
+							i(49975),	-- Bone Sentinel's Amulet
+							i(49980),	-- Rusted Bonespike Pauldrons
+							i(49951),	-- Gendarme's Cuirass
+							i(49960),	-- Bracers of Dark Reckoning
+							i(49979),	-- Handguards of Winter's Respite
+							i(49978),	-- Crushing Coldwraith Belt
+							i(49964),	-- Legguards of Lost Hope
+							i(49950),	-- Frostbitten Fur Boots
+							i(49949),	-- Band of the Bone Colossus
+							i(49977),	-- Loop of the Endless Labyrinth
+							i(49967),	-- Marrowgar's Frigid Eye
+						},
+					}),
+					e(1625,  {	-- Lady Deathwhisper
+						["creatureID"] = 36855,	-- Lady Deathwhisper
+						["g"] = {
+							crit(2, {	-- Lady Deathwhisper
+								["achievementID"] = 4604,	-- Storming the Citadel (25 player)
+							}),
+							ach(4611),	-- Full House (25 player)
+							i(49992),	-- Nibelung
+							i(49982),	-- Heartpierce
+							i(50034),	-- Zod's Repeating Longbow
+							i(49986),	-- Broken Ram Skull Helm
+							i(49989),	-- Ahn'kahar Onyx Neckguard
+							i(49987),	-- Cultist's Bloodsoaked Spaulders
+							i(49991),	-- Shoulders of Mercy Killing
+							i(49996),	-- Deathwhisper Raiment
+							i(49994),	-- The Lady's Brittle Bracers
+							i(49995),	-- Fallen Lord's Handguards
+							i(49988),	-- Leggings of Northern Lights
+							i(49983),	-- Blood-Soaked Saronite Stompers
+							i(49993),	-- Necrophotic Greaves
+							i(49985),	-- Juggernaut Band
+							i(49990),	-- Ring of Maddening Whispers
+						},
+					}),
+					e(1626,  {	-- Icecrown Gunship Battle
+						["crs"] = {
+							36939,	-- High Overlord Saurfang
+							36948,	-- Muradin Bronzebeard
+						},
+						["g"] = {
+							crit(3, {	-- Claim victory in the Gunship Battle
+								["achievementID"] = 4604,	-- Storming the Citadel (25 player)
+							}),
+							ach(4612),	-- I'm on a Boat (25 player)
+							i(50411),	-- Scourgeborne Waraxe
+							i(50006),	-- Corp'rethar Ceremonial Crown
+							i(50005),	-- Amulet of the Silent Eulogy
+							i(50003),	-- Boneguard Commander's Pauldrons
+							i(49998),	-- Shadowvault Slayer's Cloak
+							i(50001),	-- Ikfirus' Sack of Wonder
+							i(50002),	-- Polar Bear Claw Bracers
+							i(50000),	-- Scourge Hunter's Vambraces
+							i(50011),	-- Gunship Captain's Mittens
+							i(50010),	-- Waistband of Righteous Fury
+							i(50009),	-- Boots of Unnatural Growth
+							i(50008),	-- Ring of Rapid Ascent
+							i(49999),	-- Skeleton Lord's Circle
+							i(50359),	-- Althor's Abacus
+							i(50352),	-- Corpse Tongue Coin
+						},
+					}),
+					e(1628,  {	-- Deathbringer Saurfang
+						["creatureID"] = 37813,	-- Deathbringer Saurfang
+						["g"] = {
+							crit(4, {	-- The Deathbringer
+								["achievementID"] = 4604,	-- Storming the Citadel (25 player)
+							}),
+							ach(4613),	-- I've Gone and Made a Mess (25 player)
+							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
+							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(142095),	-- Remains of a Blood Beast (PET!)
+							i(50412),	-- Bloodvenom Blade
+							i(50014),	-- Greatcloak of the Turned Champion
+							i(50333),	-- Toskk's Maximized Wristguards
+							i(50015),	-- Belt of the Blood Nova
+							i(50362),	-- Deathbringer's Will
+						},
+					}),
+					n(37904, {	-- Brazie Getz
+						["description"] = "After you kill Deathbringer Saurfang, this vendor shows up in the camp.",
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(49926),	-- Brazie's Black Book of Secrets
+						},
+					}),
 				}),
-				e(1624,  {	-- Lord Marrowgar
-					["creatureID"] = 36612,	-- Lord Marrowgar
-					["g"] = {
-						crit(1, {	-- Lord Marrowgar
-							["achievementID"] = 4604,	-- Storming the Citadel (25 player)
-						}),
-						ach(4610),	-- Boned (25 player)
-						i(142094),	-- Fragment of Frozen Bone (PET!)
-						i(50415),	-- Bryntroll, the Bone Arbiter
-						i(49968),	-- Frozen Bonespike
-						i(49976),	-- Bulwark of Smouldering Steel
-						i(49952),	-- Snowserpent Mail Helm
-						i(49975),	-- Bone Sentinel's Amulet
-						i(49980),	-- Rusted Bonespike Pauldrons
-						i(49951),	-- Gendarme's Cuirass
-						i(49960),	-- Bracers of Dark Reckoning
-						i(49979),	-- Handguards of Winter's Respite
-						i(49978),	-- Crushing Coldwraith Belt
-						i(49964),	-- Legguards of Lost Hope
-						i(49950),	-- Frostbitten Fur Boots
-						i(49949),	-- Band of the Bone Colossus
-						i(49977),	-- Loop of the Endless Labyrinth
-						i(49967),	-- Marrowgar's Frigid Eye
-					},
+				n(-394, {	-- The Plagueworks
+					ach(4605),	-- The Plagueworks (25 player)
+					n(37217, {	-- Precious
+						i(52019),	-- Precious' Ribbon
+					}),
+					e(1629,  {	-- Festergut
+						["creatureID"] = 36626,	-- Festergut
+						["g"] = {
+							i(50226, {	-- Festergut's Acidic Blood
+								["description"] = "This can drop from Festergut on 25-Man Normal or Heroic.",
+								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+								["questID"] = 24545,	-- The Sacred and the Corrupt
+							}),
+							crit(1, {	-- Festergut
+								["achievementID"] = 4605,	-- The Plagueworks (25 player)
+							}),
+							ach(4615),	-- Flu Shot Shortage (25 player)
+							i(50040),	-- Distant Land
+							i(50035),	-- Black Bruise
+							i(50060),	-- Faceplate of the Forgotten
+							i(50061),	-- Holiday's Grace
+							i(50059),	-- Horrific Flesh Epaulets
+							i(50038),	-- Carapce of Forgotten Kings
+							i(50037),	-- Fleshrending Gauntlets
+							i(50064),	-- Unclean Surgical Gloves
+							i(50036),	-- Belt of Broken Bones
+							i(50063),	-- Lingering Illness
+							i(50413),	-- Nerub'ar Stalker's Cord
+							i(50042),	-- Gangrenous Leggings
+							i(50041),	-- Leather of Stitched Scourge Parts
+							i(50056),	-- Plaguebringer's Stained Pants
+							i(50062),	-- Plague Scientist's Boots
+							i(50414),	-- Might of Blight
+						},
+					}),
+					e(1630,  {	-- Rotface
+						["creatureID"] = 36627,	-- Rotface
+						["g"] = {
+							i(50231, {	-- Rotface's Acidic Blood
+								["description"] = "This can drop from Rotface on 25-Man Normal or Heroic.",
+								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+								["questID"] = 24545,	-- The Sacred and the Corrupt
+							}),
+							crit(2, {	-- Rotface
+								["achievementID"] = 4605,	-- The Plagueworks (25 player)
+							}),
+							ach(4614),	-- Dances with Oozes (25 player)
+							i(50016),	-- Rib Spreader
+							i(50028),	-- Trauma
+							i(50033),	-- Corpse-Impaling Spike
+							i(50026),	-- Helm of the Elder Moon
+							i(50023),	-- Bile-Encrusted Medallion
+							i(50022),	-- Dual-Bladed Pauldrons
+							i(50020),	-- Raging Behemoth's Shoulderplates
+							i(50019),	-- Winding Sheet
+							i(50024),	-- Blightborne Warplate
+							i(50027),	-- Rot-Resistant Breastplate
+							i(50030),	-- Bloodsunder's Bracers
+							i(50032),	-- Death Surgeon's Sleeves
+							i(50021),	-- Aldriana's Gloves of Secrecy
+							i(50025),	-- Seal of Many Mouths
+							i(50353),	-- Dislodged Foreign Object
+						},
+					}),
+					e(1631,  {	-- Professor Putricide
+						["creatureID"] = 36678,	-- Professor Putricide
+						["g"] = {
+							crit(3, {	-- Professor Putricide
+								["achievementID"] = 4605,	-- The Plagueworks (25 player)
+							}),
+							ach(4616),	-- Nausea, Heartburn, Indigestion... (25 player)
+							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
+							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(142096),	-- Putricide's Alchemy Supplies (PET!)
+							i(50179),	-- Last Word
+							i(50068),	-- Rigormortis
+							i(50067),	-- Astrylian's Sutured Cinch
+							i(50069),	-- Professor's Bloodied Smock
+							i(50351),	-- Tiny Abomination in a Jar
+						},
+					}),
 				}),
-				e(1625,  {	-- Lady Deathwhisper
-					["creatureID"] = 36855,	-- Lady Deathwhisper
-					["g"] = {
-						crit(2, {	-- Lady Deathwhisper
-							["achievementID"] = 4604,	-- Storming the Citadel (25 player)
-						}),
-						ach(4611),	-- Full House (25 player)
-						i(49992),	-- Nibelung
-						i(49982),	-- Heartpierce
-						i(50034),	-- Zod's Repeating Longbow
-						i(49986),	-- Broken Ram Skull Helm
-						i(49989),	-- Ahn'kahar Onyx Neckguard
-						i(49987),	-- Cultist's Bloodsoaked Spaulders
-						i(49991),	-- Shoulders of Mercy Killing
-						i(49996),	-- Deathwhisper Raiment
-						i(49994),	-- The Lady's Brittle Bracers
-						i(49995),	-- Fallen Lord's Handguards
-						i(49988),	-- Leggings of Northern Lights
-						i(49983),	-- Blood-Soaked Saronite Stompers
-						i(49993),	-- Necrophotic Greaves
-						i(49985),	-- Juggernaut Band
-						i(49990),	-- Ring of Maddening Whispers
-					},
+				n(-395, {	-- The Crimson Hall
+					ach(4606),	-- The Crimson Hall (25 player)
+					e(1632,  {	-- Blood Prince Council
+						["crs"] = {
+							37972,	-- Prince Keleseth
+							37973,	-- Prince Taldaram
+							37970,	-- Prince Valanar
+						},
+						["g"] = {
+							crit(1, {	-- Defeat the Blood Prince Council
+								["achievementID"] = 4606,	-- The Crimson Hall (25 player)
+							}),
+							ach(4617),	-- The Orb Whisperer (25 player)
+							i(49919),	-- Cryptmaker
+							i(50184),	-- Keleseth's Seducer
+							i(50173),	-- Shadow Silk Spindle
+							i(50073),	-- Geistlord's Punishment Sack
+							i(50072),	-- Landsoul's Horned Greathelm
+							i(50171),	-- Shoulders of Frost-Tipped Thorns
+							i(50074),	-- Royal Crimson Cloak
+							i(50177),	-- Mail of Crimson Coins
+							i(50172),	-- Sanguine Silk Robes
+							i(50175),	-- Crypt Keeper's Bracers
+							i(50176),	-- San'layn Ritualist Gloves
+							i(50075),	-- Taldaram's Plated Fists
+							i(50071),	-- Treads of the Wasteland
+							i(50174),	-- Incarnadine Band of Mending
+							i(50170),	-- Valanar's Other Signet Ring
+						},
+					}),
+					e(1633,  {	-- Blood-Queen Lana'thel
+						["creatureID"] = 37955,	-- Blood-Queen Lana'thel
+						["g"] = {
+							crit(2, {	-- Defeat Blood-Queen Lana'thel
+								["achievementID"] = 4606,	-- The Crimson Hall (25 player)
+							}),
+							ach(4618, {	-- Once Bitten, Twice Shy (25 player)
+								crit(1),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
+								crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
+							}),
+							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
+							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(50178),	-- Bloodfall
+							i(50181),	-- Divine Light
+							i(50065),	-- Icecrown Glacial Wall
+							i(50182),	-- Blood Queen's Crimson Choker
+							i(50180),	-- Lana'thel's Chain of Flagellation
+							i(50354),	-- Bauble of True Blood
+						},
+					}),
 				}),
-				e(1626,  {	-- Icecrown Gunship Battle
-					["crs"] = {
-						36939,	-- High Overlord Saurfang
-						36948,	-- Muradin Bronzebeard
-					},
-					["g"] = {
-						crit(3, {	-- Claim victory in the Gunship Battle
-							["achievementID"] = 4604,	-- Storming the Citadel (25 player)
-						}),
-						ach(4612),	-- I'm on a Boat (25 player)
-						i(50411),	-- Scourgeborne Waraxe
-						i(50006),	-- Corp'rethar Ceremonial Crown
-						i(50005),	-- Amulet of the Silent Eulogy
-						i(50003),	-- Boneguard Commander's Pauldrons
-						i(49998),	-- Shadowvault Slayer's Cloak
-						i(50001),	-- Ikfirus' Sack of Wonder
-						i(50002),	-- Polar Bear Claw Bracers
-						i(50000),	-- Scourge Hunter's Vambraces
-						i(50011),	-- Gunship Captain's Mittens
-						i(50010),	-- Waistband of Righteous Fury
-						i(50009),	-- Boots of Unnatural Growth
-						i(50008),	-- Ring of Rapid Ascent
-						i(49999),	-- Skeleton Lord's Circle
-						i(50359),	-- Althor's Abacus
-						i(50352),	-- Corpse Tongue Coin
-					},
-				}),
-				e(1628,  {	-- Deathbringer Saurfang
-					["creatureID"] = 37813,	-- Deathbringer Saurfang
-					["g"] = {
-						crit(4, {	-- The Deathbringer
-							["achievementID"] = 4604,	-- Storming the Citadel (25 player)
-						}),
-						ach(4613),	-- I've Gone and Made a Mess (25 player)
-						i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-						i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-						i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-						i(142095),	-- Remains of a Blood Beast (PET!)
-						i(50412),	-- Bloodvenom Blade
-						i(50014),	-- Greatcloak of the Turned Champion
-						i(50333),	-- Toskk's Maximized Wristguards
-						i(50015),	-- Belt of the Blood Nova
-						i(50362),	-- Deathbringer's Will
-					},
-				}),
-				n(37904, {	-- Brazie Getz
-					["description"] = "After you kill Deathbringer Saurfang, this vendor shows up in the camp.",
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(49926),	-- Brazie's Black Book of Secrets
-					},
-				}),
-				n(37217, {	-- Precious
-					i(52019),	-- Precious' Ribbon
-				}),
-				crit(2,  {	-- The Plagueworks (25 player)
-					["achievementID"] = 4608,	-- Fall of the Lich King (25 player)
-				}),
-				e(1629,  {	-- Festergut
-					["creatureID"] = 36626,	-- Festergut
-					["g"] = {
-						i(50226, {	-- Festergut's Acidic Blood
-							["description"] = "This can drop from Festergut on 25-Man Normal or Heroic.",
-							["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
-							["questID"] = 24545,	-- The Sacred and the Corrupt
-						}),
-						crit(1, {	-- Festergut
-							["achievementID"] = 4605,	-- The Plagueworks (25 player)
-						}),
-						ach(4615),	-- Flu Shot Shortage (25 player)
-						i(50040),	-- Distant Land
-						i(50035),	-- Black Bruise
-						i(50060),	-- Faceplate of the Forgotten
-						i(50061),	-- Holiday's Grace
-						i(50059),	-- Horrific Flesh Epaulets
-						i(50038),	-- Carapce of Forgotten Kings
-						i(50037),	-- Fleshrending Gauntlets
-						i(50064),	-- Unclean Surgical Gloves
-						i(50036),	-- Belt of Broken Bones
-						i(50063),	-- Lingering Illness
-						i(50413),	-- Nerub'ar Stalker's Cord
-						i(50042),	-- Gangrenous Leggings
-						i(50041),	-- Leather of Stitched Scourge Parts
-						i(50056),	-- Plaguebringer's Stained Pants
-						i(50062),	-- Plague Scientist's Boots
-						i(50414),	-- Might of Blight
-					},
-				}),
-				e(1630,  {	-- Rotface
-					["creatureID"] = 36627,	-- Rotface
-					["g"] = {
-						i(50231, {	-- Rotface's Acidic Blood
-							["description"] = "This can drop from Rotface on 25-Man Normal or Heroic.",
-							["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
-							["questID"] = 24545,	-- The Sacred and the Corrupt
-						}),
-						crit(2, {	-- Rotface
-							["achievementID"] = 4605,	-- The Plagueworks (25 player)
-						}),
-						ach(4614),	-- Dances with Oozes (25 player)
-						i(50016),	-- Rib Spreader
-						i(50028),	-- Trauma
-						i(50033),	-- Corpse-Impaling Spike
-						i(50026),	-- Helm of the Elder Moon
-						i(50023),	-- Bile-Encrusted Medallion
-						i(50022),	-- Dual-Bladed Pauldrons
-						i(50020),	-- Raging Behemoth's Shoulderplates
-						i(50019),	-- Winding Sheet
-						i(50024),	-- Blightborne Warplate
-						i(50027),	-- Rot-Resistant Breastplate
-						i(50030),	-- Bloodsunder's Bracers
-						i(50032),	-- Death Surgeon's Sleeves
-						i(50021),	-- Aldriana's Gloves of Secrecy
-						i(50025),	-- Seal of Many Mouths
-						i(50353),	-- Dislodged Foreign Object
-					},
-				}),
-				e(1631,  {	-- Professor Putricide
-					["creatureID"] = 36678,	-- Professor Putricide
-					["g"] = {
-						crit(3, {	-- Professor Putricide
-							["achievementID"] = 4605,	-- The Plagueworks (25 player)
-						}),
-						ach(4616),	-- Nausea, Heartburn, Indigestion... (25 player)
-						i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-						i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-						i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-						i(142096),	-- Putricide's Alchemy Supplies (PET!)
-						i(50179),	-- Last Word
-						i(50068),	-- Rigormortis
-						i(50067),	-- Astrylian's Sutured Cinch
-						i(50069),	-- Professor's Bloodied Smock
-						i(50351),	-- Tiny Abomination in a Jar
-					},
-				}),
-				crit(3,  {	-- The Crimson Hall (25 player)
-					["achievementID"] = 4608,	-- Fall of the Lich King (25 player)
-				}),
-				e(1632,  {	-- Blood Prince Council
-					["crs"] = {
-						37972,	-- Prince Keleseth
-						37973,	-- Prince Taldaram
-						37970,	-- Prince Valanar
-					},
-					["g"] = {
-						crit(1, {	-- Defeat the Blood Prince Council
-							["achievementID"] = 4606,	-- The Crimson Hall (25 player)
-						}),
-						ach(4617),	-- The Orb Whisperer (25 player)
-						i(49919),	-- Cryptmaker
-						i(50184),	-- Keleseth's Seducer
-						i(50173),	-- Shadow Silk Spindle
-						i(50073),	-- Geistlord's Punishment Sack
-						i(50072),	-- Landsoul's Horned Greathelm
-						i(50171),	-- Shoulders of Frost-Tipped Thorns
-						i(50074),	-- Royal Crimson Cloak
-						i(50177),	-- Mail of Crimson Coins
-						i(50172),	-- Sanguine Silk Robes
-						i(50175),	-- Crypt Keeper's Bracers
-						i(50176),	-- San'layn Ritualist Gloves
-						i(50075),	-- Taldaram's Plated Fists
-						i(50071),	-- Treads of the Wasteland
-						i(50174),	-- Incarnadine Band of Mending
-						i(50170),	-- Valanar's Other Signet Ring
-					},
-				}),
-				e(1633,  {	-- Blood-Queen Lana'thel
-					["creatureID"] = 37955,	-- Blood-Queen Lana'thel
-					["g"] = {
-						crit(2, {	-- Defeat Blood-Queen Lana'thel
-							["achievementID"] = 4606,	-- The Crimson Hall (25 player)
-						}),
-						ach(4618, {	-- Once Bitten, Twice Shy (25 player)
-							crit(1),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
-							crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
-						}),
-						i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-						i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-						i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-						i(50178),	-- Bloodfall
-						i(50181),	-- Divine Light
-						i(50065),	-- Icecrown Glacial Wall
-						i(50182),	-- Blood Queen's Crimson Choker
-						i(50180),	-- Lana'thel's Chain of Flagellation
-						i(50354),	-- Bauble of True Blood
-					},
-				}),
-				crit(4,  {	-- The Frostwing Halls (25 player)
-					["achievementID"] = 4608,	-- Fall of the Lich King (25 player)
-				}),
-				e(1634,  {	-- Valithria Dreamwalker
-					["creatureID"] = 36789,	-- Valithria Dreamwalker
-					["g"] = {
-						crit(1, {	-- Rescue Valithria Dreamwalker
-							["achievementID"] = 4607,	-- The Frostwing Halls (25 player)
-						}),
-						ach(4619),	-- Portal Jockey (25 player)
-						i(138832),	-- Illusion: Earthliving
-						i(50183),	-- Lungbreaker
-						i(50472),	-- Nightmare Ender
-						i(50202),	-- Snowstorm Helm
-						i(50195),	-- Noose of Malachite
-						i(50205),	-- Frostbinder's Shredded Cape
-						i(50418),	-- Robe of the Waking Nightmare
-						i(50417),	-- Bracers of Eternal Dreaming
-						i(50188),	-- Anub'ar Stalker's Gloves
-						i(50187),	-- Coldwraith Links
-						i(50199),	-- Leggings of Dying Candles
-						i(50192),	-- Scourge Reaver's Legplates
-						i(50416),	-- Boots of the Funeral March
-						i(50190),	-- Grinning Skull Greatboots
-						i(50185),	-- Devium's Eternally Cold Ring
-						i(50186),	-- Frostbrood Sapphire Ring
-					},
-				}),
-				e(1635,  {	-- Sindragosa
-					["creatureID"] = 36853,	-- Sindragosa
-					["g"] = {
-						crit(2, {	-- Sindragosa
-							["achievementID"] = 4607,	-- The Frostwing Halls (25 player)
-						}),
-						ach(4620),	-- All You Can Eat (25 player)
-						i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-						i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-						i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-						i(142097),	-- Skull of a Frozen Whelp (PET!)
-						i(50423),	-- Sundial of Eternal Dusk
-						i(50421),	-- Sindragosa's Cruel Claw
-						i(50424),	-- Memory of Malygos
-						i(50360),	-- Phylactery of the Nameless Lich
-						i(50361),	-- Sindragosa's Flawless Fang
-					},
-				}),
-				e(1636,  {	-- The Lich King
-					["creatureID"] = 36597,	-- The Lich King
-					["g"] = {
-						crit(5, {	-- The Frozen Throne (25 player)
-							["achievementID"] = 4608,	-- Fall of the Lich King (25 player)
-						}),
-						ach(4621),	-- Been Waiting a Long Time for This (25 player)
-						ach(4622),	-- Neck-Deep in Vile (25 player)
-						ach(4597, {	-- The Frozen Throne (25 player)
-							title(140),	-- the Kingslayer
-						}),
-						i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-						i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-						i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-						i(142098),	-- Drudge Remains (PET!)
-						i(138955),	-- Illusion: Rune of Razorice
-						i(50429),	-- Archus, Greatstaff of Antonidas
-						i(50070),	-- Glorenzelg, High-Blade of the Silver Hand
-						i(50425),	-- Oathbinder, Charge of the Ranger-General
-						i(50427),	-- Bloodsurge, Kel'Thuzad's Blade of Agony
-						i(50012),	-- Havoc's Call, Blade of Lordaeron Kings
-						i(50426),	-- Heaven's Fall, Kryss of a Thousand Lies
-						i(49997),	-- Mithrios, Bronzebeard's Legacy
-						i(50428),	-- Royal Scepter of Terenas II
-						i(49981),	-- Fal'inrush, Defender of Quel'thalas
-						i(122229),	-- Music Roll: Invincible
-					},
+				n(-396, {	-- The Frostwing Halls
+					ach(4607),	-- The Frostwing Halls (25 player)
+					e(1634,  {	-- Valithria Dreamwalker
+						["creatureID"] = 36789,	-- Valithria Dreamwalker
+						["g"] = {
+							crit(1, {	-- Rescue Valithria Dreamwalker
+								["achievementID"] = 4607,	-- The Frostwing Halls (25 player)
+							}),
+							ach(4619),	-- Portal Jockey (25 player)
+							i(138832),	-- Illusion: Earthliving
+							i(50183),	-- Lungbreaker
+							i(50472),	-- Nightmare Ender
+							i(50202),	-- Snowstorm Helm
+							i(50195),	-- Noose of Malachite
+							i(50205),	-- Frostbinder's Shredded Cape
+							i(50418),	-- Robe of the Waking Nightmare
+							i(50417),	-- Bracers of Eternal Dreaming
+							i(50188),	-- Anub'ar Stalker's Gloves
+							i(50187),	-- Coldwraith Links
+							i(50199),	-- Leggings of Dying Candles
+							i(50192),	-- Scourge Reaver's Legplates
+							i(50416),	-- Boots of the Funeral March
+							i(50190),	-- Grinning Skull Greatboots
+							i(50185),	-- Devium's Eternally Cold Ring
+							i(50186),	-- Frostbrood Sapphire Ring
+						},
+					}),
+					e(1635,  {	-- Sindragosa
+						["creatureID"] = 36853,	-- Sindragosa
+						["g"] = {
+							crit(2, {	-- Sindragosa
+								["achievementID"] = 4607,	-- The Frostwing Halls (25 player)
+							}),
+							ach(4620),	-- All You Can Eat (25 player)
+							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
+							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(142097),	-- Skull of a Frozen Whelp (PET!)
+							i(50423),	-- Sundial of Eternal Dusk
+							i(50421),	-- Sindragosa's Cruel Claw
+							i(50424),	-- Memory of Malygos
+							i(50360),	-- Phylactery of the Nameless Lich
+							i(50361),	-- Sindragosa's Flawless Fang
+						},
+					}),
+					e(1636,  {	-- The Lich King
+						["creatureID"] = 36597,	-- The Lich King
+						["g"] = {
+							crit(5, {	-- The Frozen Throne (25 player)
+								["achievementID"] = 4608,	-- Fall of the Lich King (25 player)
+							}),
+							ach(4621),	-- Been Waiting a Long Time for This (25 player)
+							ach(4622),	-- Neck-Deep in Vile (25 player)
+							ach(4597, {	-- The Frozen Throne (25 player)
+								title(140),	-- the Kingslayer
+							}),
+							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
+							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(142098),	-- Drudge Remains (PET!)
+							i(138955),	-- Illusion: Rune of Razorice
+							i(50429),	-- Archus, Greatstaff of Antonidas
+							i(50070),	-- Glorenzelg, High-Blade of the Silver Hand
+							i(50425),	-- Oathbinder, Charge of the Ranger-General
+							i(50427),	-- Bloodsurge, Kel'Thuzad's Blade of Agony
+							i(50012),	-- Havoc's Call, Blade of Lordaeron Kings
+							i(50426),	-- Heaven's Fall, Kryss of a Thousand Lies
+							i(49997),	-- Mithrios, Bronzebeard's Legacy
+							i(50428),	-- Royal Scepter of Terenas II
+							i(49981),	-- Fal'inrush, Defender of Quel'thalas
+							i(122229),	-- Music Roll: Invincible
+						},
+					}),
 				}),
 			}),
-			d(  6, {	-- 25-Player (Heroic)
+			d(6, {	-- 25-Player (Heroic)
 				n(-1, {	-- Common Boss Drop
 					["crs"] = {
 						37813,	-- Deathbringer Saurfang
@@ -4002,334 +4002,334 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				crit(1,  {	-- Heroic: Storming the Citadel (25 player)
-					["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)
+				n(-393, {	-- Storming the Citadel
+					ach(4632),	-- Heroic: Storming the Citadel (25 player)
+					e(1624,  {	-- Lord Marrowgar
+						["creatureID"] = 36612,	-- Lord Marrowgar
+						["g"] = {
+							crit(1, {	-- Lord Marrowgar
+								["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
+							}),
+							ach(4610),	-- Boned (25 player)
+							i(142094),	-- Fragment of Frozen Bone (PET!)
+							i(50709),	-- Bryntroll, the Bone Arbiter
+							i(50608),	-- Frozen Bonespike
+							i(50616),	-- Bulwark of Smouldering Steel
+							i(50605),	-- Snowserpent Mail Helm
+							i(50609),	-- Bone Sentinel's Amulet
+							i(50617),	-- Rusted Bonespike Pauldrons
+							i(50606),	-- Gendarme's Cuirass
+							i(50611),	-- Bracers of Dark Reckoning
+							i(50615),	-- Handguards of Winter's Respite
+							i(50613),	-- Crushing Coldwraith Belt
+							i(50612),	-- Legguards of Lost Hope
+							i(50607),	-- Frostbitten Fur Boots
+							i(50604),	-- Band of the Bone Colossus
+							i(50614),	-- Loop of the Endless Labyrinth
+							i(50610),	-- Marrowgar's Frigid Eye
+						},
+					}),
+					e(1625,  {	-- Lady Deathwhisper
+						["creatureID"] = 36855,	-- Lady Deathwhisper
+						["g"] = {
+							crit(2, {	-- Lady Deathwhisper
+								["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
+							}),
+							ach(4611),	-- Full House (25 player)
+							i(50648),	-- Nibelung
+							i(50641),	-- Heartpierce
+							i(50638),	-- Zod's Repeating Crossbow
+							i(50640),	-- Broken Ram Skull Helm
+							i(50647),	-- Ahn'kahar Onyx Neckguard
+							i(50646),	-- Cultist's Bloodsoaked Spaulders
+							i(50643),	-- Shoulders of Mercy Killing
+							i(50649),	-- Deathwhisper Raiment
+							i(50651),	-- The Lady's Brittle Bracers
+							i(50650),	-- Fallen Lord's Handguards
+							i(50645),	-- Leggings of Northern Lights
+							i(50639),	-- Blood-Soaked Saronite Stompers
+							i(50652),	-- Necrophotic Greaves
+							i(50642),	-- Juggernaut Band
+							i(50644),	-- Ring of Maddening Whispers
+						},
+					}),
+					e(1626,  {	-- Icecrown Gunship Battle
+						["crs"] = {
+							36939,	-- High Overlord Saurfang
+							36948,	-- Muradin Bronzebeard
+						},
+						["g"] = {
+							crit(3, {	-- Claim victory in the Gunship Battle
+								["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
+							}),
+							ach(4612),	-- I'm on a Boat (25 player)
+							i(50654),	-- Scourgeborne Waraxe
+							i(50661),	-- Corp'rethar Ceremonial Crown
+							i(50658),	-- Amulet of the Silent Eulogy
+							i(50660),	-- Boneguard Commander's Pauldrons
+							i(50653),	-- Shadowvault Slayer's Cloak
+							i(50656),	-- Ikfirus' Sack of Wonder
+							i(50659),	-- Polar Bear Claw Bracers
+							i(50655),	-- Scourge Hunter's Vambraces
+							i(50663),	-- Gunship Captain's Mittens
+							i(50667),	-- Waistband of Righteous Fury
+							i(50665),	-- Boots of Unnatural Growth
+							i(50664),	-- Ring of Rapid Ascent
+							i(50657),	-- Skeleton Lord's Circle
+							i(50366),	-- Althor's Abacus
+							i(50349),	-- Corpse Tongue Coin
+						},
+					}),
+					e(1628,  {	-- Deathbringer Saurfang
+						["creatureID"] = 37813,	-- Deathbringer Saurfang
+						["g"] = {
+							crit(4, {	-- The Deathbringer
+								["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
+							}),
+							ach(4613),	-- I've Gone and Made a Mess (25 player)
+							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
+							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
+							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
+							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic) 
+							i(142095),	-- Remains of a Blood Beast (PET!)
+							i(50672),	-- Bloodvenom Blade
+							i(50668),	-- Greatcloak of the Turned Champion
+							i(50670),	-- Toskk's Maximized Wristguards
+							i(50671),	-- Belt of the Blood Nova
+							i(50363),	-- Deathbringer's Will
+						},
+					}),
+					n(37904, {	-- Brazie Getz
+						["description"] = "After you kill Deathbringer Saurfang, this vendor shows up in the camp.",
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(49926),	-- Brazie's Black Book of Secrets
+						},
+					}),
+				}),	
+				n(-394, {	-- The Plagueworks
+					ach(4633),	-- Heroic: The Plagueworks (25 player)
+					n(37217, {	-- Precious
+						i(52019),	-- Precious' Ribbon
+					}),
+					e(1629,  {	-- Festergut
+						["creatureID"] = 36626,	-- Festergut
+						["g"] = {
+							i(50226, {	-- Festergut's Acidic Blood
+								["description"] = "This can drop from Festergut on 25-Man Normal or Heroic.",
+								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+								["questID"] = 24545,	-- The Sacred and the Corrupt
+							}),
+							crit(1, {	-- Festergut
+								["achievementID"] = 4633,	-- Heroic: The Plagueworks (25 player)
+							}),
+							ach(4615),	-- Flu Shot Shortage (25 player)
+							i(50695),	-- Distant Land
+							i(50692),	-- Black Bruise
+							i(50701),	-- Faceplate of the Forgotten
+							i(50700),	-- Holiday's Grace
+							i(50698),	-- Horrific Flesh Epaulets
+							i(50689),	-- Carapace of Forgotten Kings
+							i(50690),	-- Fleshrending Gauntlets
+							i(50703),	-- Unclean Surgical Gloves
+							i(50691),	-- Belt of Broken Bones
+							i(50702),	-- Lingering Illness
+							i(50688),	-- Nerub'ar Stalker's Cord
+							i(50697),	-- Gangrenous Leggings
+							i(50696),	-- Leather of Stitched Scourge Pants
+							i(50694),	-- Plaguebringer's Stained Pants
+							i(50699),	-- Plague Scientist's Boots
+							i(50693),	-- Might of Blight
+						},
+					}),
+					e(1630,  {	-- Rotface
+						["creatureID"] = 36627,	-- Rotface
+						["g"] = {
+							i(50231, {	-- Rotface's Acidic Blood
+								["description"] = "This can drop from Rotface on 25-Man Normal or Heroic.",
+								["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
+								["questID"] = 24545,	-- The Sacred and the Corrupt
+							}),
+							crit(2, {	-- Rotface
+								["achievementID"] = 4633,	-- Heroic: The Plagueworks (25 player)
+							}),
+							ach(4614),	-- Dances with Oozes (25 player)
+							i(50676),	-- Rib Spreader
+							i(50685),	-- Trauma
+							i(50684),	-- Corpse-Impaling Spike
+							i(50679),	-- Helm of the Elder Moon
+							i(50682),	-- Bile-Encrusted Medallion
+							i(50673),	-- Dual-Bladed Pauldrons
+							i(50674),	-- Raging Behemoth's Shoulderplates
+							i(50677),	-- Winding Sheet
+							i(50681),	-- Blightborne Warplate
+							i(50680),	-- Rot-Resistant Breastplate
+							i(50687),	-- Bloodsunder's Bracers
+							i(50686),	-- Death Surgeon's Sleeves
+							i(50675),	-- Aldriana's Gloves of Secrecy
+							i(50678),	-- Seal of Many Mouths
+							i(50348),	-- Dislodged Foreign Object
+						},
+					}),
+					e(1631,  {	-- Professor Putricide
+						["creatureID"] = 36678,	-- Professor Putricide
+						["g"] = {
+							crit(3, {	-- Professor Putricide
+								["achievementID"] = 4633,	-- Heroic: The Plagueworks (25 player)
+							}),
+							ach(4616),	-- Nausea, Heartburn, Indigestion... (25 player)
+							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
+							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
+							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
+							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
+							i(142096),	-- Putricide's Alchemy Supplies (PET!)
+							i(50708),	-- Last Word
+							i(50704),	-- Rigormortis
+							i(50707),	-- Astrylian's Sutured Cinch
+							i(50705),	-- Professor's Bloodied Smock
+							i(50706),	-- Tiny Abomination in a Jar
+						},
+					}),
 				}),
-				e(1624,  {	-- Lord Marrowgar
-					["creatureID"] = 36612,	-- Lord Marrowgar
-					["g"] = {
-						crit(1, {	-- Lord Marrowgar
-							["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
-						}),
-						ach(4610),	-- Boned (25 player)
-						i(142094),	-- Fragment of Frozen Bone (PET!)
-						i(50709),	-- Bryntroll, the Bone Arbiter
-						i(50608),	-- Frozen Bonespike
-						i(50616),	-- Bulwark of Smouldering Steel
-						i(50605),	-- Snowserpent Mail Helm
-						i(50609),	-- Bone Sentinel's Amulet
-						i(50617),	-- Rusted Bonespike Pauldrons
-						i(50606),	-- Gendarme's Cuirass
-						i(50611),	-- Bracers of Dark Reckoning
-						i(50615),	-- Handguards of Winter's Respite
-						i(50613),	-- Crushing Coldwraith Belt
-						i(50612),	-- Legguards of Lost Hope
-						i(50607),	-- Frostbitten Fur Boots
-						i(50604),	-- Band of the Bone Colossus
-						i(50614),	-- Loop of the Endless Labyrinth
-						i(50610),	-- Marrowgar's Frigid Eye
-					},
+				n(-395, {	-- The Crimson Hall
+					ach(4634),	-- Heroic: The Crimson Hall (25 player)
+					e(1632,  {	-- Blood Prince Council
+						["crs"] = {
+							37972,	-- Prince Keleseth
+							37973,	-- Prince Taldaram
+							37970,	-- Prince Valanar
+						},
+						["g"] = {
+							crit(1, {	-- Defeat the Blood Prince Council
+								["achievementID"] = 4634,	-- Heroic: The Crimson Hall (25 player)
+							}),
+							ach(4617),	-- The Orb Whisperer (25 player)
+							i(50603),	-- Cryptmaker
+							i(50710),	-- Keleseth's Seducer
+							i(50719),	-- Shadow Silk Spindle
+							i(50713),	-- Geistlord's Punishment Sack
+							i(50712),	-- Landsoul's Horned Greathelm
+							i(50715),	-- Shoulders of Frost-Tipped Thorns
+							i(50718),	-- Royal Crimson Cloak
+							i(50723),	-- Mail of Crimson Coins
+							i(50717),	-- Sanguine Silk Robes
+							i(50721),	-- Crypt Keeper's Bracers
+							i(50722),	-- San'layn Ritualist Gloves
+							i(50716),	-- Taldaram's Plated Fists
+							i(50711),	-- Treads of the Wasteland
+							i(50720),	-- Incarnadine Band of Mending
+							i(50714),	-- Valanar's Other Signet Ring
+						},
+					}),
+					e(1633,  {	-- Blood-Queen Lana'thel
+						["creatureID"] = 37955,	-- Blood-Queen Lana'thel
+						["g"] = {
+							crit(2, {	-- Defeat Blood-Queen Lana'thel
+								["achievementID"] = 4634,	-- Heroic: The Crimson Hall (25 player)
+							}),
+							ach(4618, {	-- Once Bitten, Twice Shy (25 player)
+								crit(1),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
+								crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
+							}),
+							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
+							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
+							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
+							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
+							i(50727),	-- Bloodfall
+							i(50725),	-- Dying Light
+							i(50729),	-- Icecrown Glacial Wall
+							i(50724),	-- Blood Queen's Crimson Choker
+							i(50728),	-- Lana'thel's Chain of Flagellation
+							i(50726),	-- Bauble of True Blood
+						},
+					}),
 				}),
-				e(1625,  {	-- Lady Deathwhisper
-					["creatureID"] = 36855,	-- Lady Deathwhisper
-					["g"] = {
-						crit(2, {	-- Lady Deathwhisper
-							["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
-						}),
-						ach(4611),	-- Full House (25 player)
-						i(50648),	-- Nibelung
-						i(50641),	-- Heartpierce
-						i(50638),	-- Zod's Repeating Crossbow
-						i(50640),	-- Broken Ram Skull Helm
-						i(50647),	-- Ahn'kahar Onyx Neckguard
-						i(50646),	-- Cultist's Bloodsoaked Spaulders
-						i(50643),	-- Shoulders of Mercy Killing
-						i(50649),	-- Deathwhisper Raiment
-						i(50651),	-- The Lady's Brittle Bracers
-						i(50650),	-- Fallen Lord's Handguards
-						i(50645),	-- Leggings of Northern Lights
-						i(50639),	-- Blood-Soaked Saronite Stompers
-						i(50652),	-- Necrophotic Greaves
-						i(50642),	-- Juggernaut Band
-						i(50644),	-- Ring of Maddening Whispers
-					},
-				}),
-				e(1626,  {	-- Icecrown Gunship Battle
-					["crs"] = {
-						36939,	-- High Overlord Saurfang
-						36948,	-- Muradin Bronzebeard
-					},
-					["g"] = {
-						crit(3, {	-- Claim victory in the Gunship Battle
-							["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
-						}),
-						ach(4612),	-- I'm on a Boat (25 player)
-						i(50654),	-- Scourgeborne Waraxe
-						i(50661),	-- Corp'rethar Ceremonial Crown
-						i(50658),	-- Amulet of the Silent Eulogy
-						i(50660),	-- Boneguard Commander's Pauldrons
-						i(50653),	-- Shadowvault Slayer's Cloak
-						i(50656),	-- Ikfirus' Sack of Wonder
-						i(50659),	-- Polar Bear Claw Bracers
-						i(50655),	-- Scourge Hunter's Vambraces
-						i(50663),	-- Gunship Captain's Mittens
-						i(50667),	-- Waistband of Righteous Fury
-						i(50665),	-- Boots of Unnatural Growth
-						i(50664),	-- Ring of Rapid Ascent
-						i(50657),	-- Skeleton Lord's Circle
-						i(50366),	-- Althor's Abacus
-						i(50349),	-- Corpse Tongue Coin
-					},
-				}),
-				e(1628,  {	-- Deathbringer Saurfang
-					["creatureID"] = 37813,	-- Deathbringer Saurfang
-					["g"] = {
-						crit(4, {	-- The Deathbringer
-							["achievementID"] = 4632,	-- Heroic: Storming the Citadel (25 player)
-						}),
-						ach(4613),	-- I've Gone and Made a Mess (25 player)
-						i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-						i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-						i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-						i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
-						i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-						i(52028),	-- Vanquisher's Mark of Sanctification (Heroic) 
-						i(142095),	-- Remains of a Blood Beast (PET!)
-						i(50672),	-- Bloodvenom Blade
-						i(50668),	-- Greatcloak of the Turned Champion
-						i(50670),	-- Toskk's Maximized Wristguards
-						i(50671),	-- Belt of the Blood Nova
-						i(50363),	-- Deathbringer's Will
-					},
-				}),
-				n(37904, {	-- Brazie Getz
-					["description"] = "After you kill Deathbringer Saurfang, this vendor shows up in the camp.",
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(49926),	-- Brazie's Black Book of Secrets
-					},
-				}),
-				n(37217, {	-- Precious
-					i(52019),	-- Precious' Ribbon
-				}),
-				crit(2,  {	-- Heroic: The Plagueworks (25 player)
-					["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)
-				}),
-				e(1629,  {	-- Festergut
-					["creatureID"] = 36626,	-- Festergut
-					["g"] = {
-						i(50226, {	-- Festergut's Acidic Blood
-							["description"] = "This can drop from Festergut on 25-Man Normal or Heroic.",
-							["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
-							["questID"] = 24545,	-- The Sacred and the Corrupt
-						}),
-						crit(1, {	-- Festergut
-							["achievementID"] = 4633,	-- Heroic: The Plagueworks (25 player)
-						}),
-						ach(4615),	-- Flu Shot Shortage (25 player)
-						i(50695),	-- Distant Land
-						i(50692),	-- Black Bruise
-						i(50701),	-- Faceplate of the Forgotten
-						i(50700),	-- Holiday's Grace
-						i(50698),	-- Horrific Flesh Epaulets
-						i(50689),	-- Carapace of Forgotten Kings
-						i(50690),	-- Fleshrending Gauntlets
-						i(50703),	-- Unclean Surgical Gloves
-						i(50691),	-- Belt of Broken Bones
-						i(50702),	-- Lingering Illness
-						i(50688),	-- Nerub'ar Stalker's Cord
-						i(50697),	-- Gangrenous Leggings
-						i(50696),	-- Leather of Stitched Scourge Pants
-						i(50694),	-- Plaguebringer's Stained Pants
-						i(50699),	-- Plague Scientist's Boots
-						i(50693),	-- Might of Blight
-					},
-				}),
-				e(1630,  {	-- Rotface
-					["creatureID"] = 36627,	-- Rotface
-					["g"] = {
-						i(50231, {	-- Rotface's Acidic Blood
-							["description"] = "This can drop from Rotface on 25-Man Normal or Heroic.",
-							["classes"] = { 1, 2, 6 }, 	-- Warrior / Paladin / DK
-							["questID"] = 24545,	-- The Sacred and the Corrupt
-						}),
-						crit(2, {	-- Rotface
-							["achievementID"] = 4633,	-- Heroic: The Plagueworks (25 player)
-						}),
-						ach(4614),	-- Dances with Oozes (25 player)
-						i(50676),	-- Rib Spreader
-						i(50685),	-- Trauma
-						i(50684),	-- Corpse-Impaling Spike
-						i(50679),	-- Helm of the Elder Moon
-						i(50682),	-- Bile-Encrusted Medallion
-						i(50673),	-- Dual-Bladed Pauldrons
-						i(50674),	-- Raging Behemoth's Shoulderplates
-						i(50677),	-- Winding Sheet
-						i(50681),	-- Blightborne Warplate
-						i(50680),	-- Rot-Resistant Breastplate
-						i(50687),	-- Bloodsunder's Bracers
-						i(50686),	-- Death Surgeon's Sleeves
-						i(50675),	-- Aldriana's Gloves of Secrecy
-						i(50678),	-- Seal of Many Mouths
-						i(50348),	-- Dislodged Foreign Object
-					},
-				}),
-				e(1631,  {	-- Professor Putricide
-					["creatureID"] = 36678,	-- Professor Putricide
-					["g"] = {
-						crit(3, {	-- Professor Putricide
-							["achievementID"] = 4633,	-- Heroic: The Plagueworks (25 player)
-						}),
-						ach(4616),	-- Nausea, Heartburn, Indigestion... (25 player)
-						i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-						i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-						i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-						i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
-						i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-						i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
-						i(142096),	-- Putricide's Alchemy Supplies (PET!)
-						i(50708),	-- Last Word
-						i(50704),	-- Rigormortis
-						i(50707),	-- Astrylian's Sutured Cinch
-						i(50705),	-- Professor's Bloodied Smock
-						i(50706),	-- Tiny Abomination in a Jar
-					},
-				}),
-				crit(3,  {	-- Heroic: The Crimson Hall (25 player)
-					["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)
-				}),
-				e(1632,  {	-- Blood Prince Council
-					["crs"] = {
-						37972,	-- Prince Keleseth
-						37973,	-- Prince Taldaram
-						37970,	-- Prince Valanar
-					},
-					["g"] = {
-						crit(1, {	-- Defeat the Blood Prince Council
-							["achievementID"] = 4634,	-- Heroic: The Crimson Hall (25 player)
-						}),
-						ach(4617),	-- The Orb Whisperer (25 player)
-						i(50603),	-- Cryptmaker
-						i(50710),	-- Keleseth's Seducer
-						i(50719),	-- Shadow Silk Spindle
-						i(50713),	-- Geistlord's Punishment Sack
-						i(50712),	-- Landsoul's Horned Greathelm
-						i(50715),	-- Shoulders of Frost-Tipped Thorns
-						i(50718),	-- Royal Crimson Cloak
-						i(50723),	-- Mail of Crimson Coins
-						i(50717),	-- Sanguine Silk Robes
-						i(50721),	-- Crypt Keeper's Bracers
-						i(50722),	-- San'layn Ritualist Gloves
-						i(50716),	-- Taldaram's Plated Fists
-						i(50711),	-- Treads of the Wasteland
-						i(50720),	-- Incarnadine Band of Mending
-						i(50714),	-- Valanar's Other Signet Ring
-					},
-				}),
-				e(1633,  {	-- Blood-Queen Lana'thel
-					["creatureID"] = 37955,	-- Blood-Queen Lana'thel
-					["g"] = {
-						crit(2, {	-- Defeat Blood-Queen Lana'thel
-							["achievementID"] = 4634,	-- Heroic: The Crimson Hall (25 player)
-						}),
-						ach(4618, {	-- Once Bitten, Twice Shy (25 player)
-							crit(1),	-- Defeat Blood-Queen Lana'thel without becoming a vampire
-							crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
-						}),
-						i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-						i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-						i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-						i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
-						i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-						i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
-						i(50727),	-- Bloodfall
-						i(50725),	-- Dying Light
-						i(50729),	-- Icecrown Glacial Wall
-						i(50724),	-- Blood Queen's Crimson Choker
-						i(50728),	-- Lana'thel's Chain of Flagellation
-						i(50726),	-- Bauble of True Blood
-					},
-				}),
-				crit(4,  {	-- Heroic: The Frostwing Halls (25 player)
-					["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)
-				}),
-				e(1634,  {	-- Valithria Dreamwalker
-					["creatureID"] = 36789,	-- Valithria Dreamwalker
-					["g"] = {
-						crit(1, {	-- Rescue Valithria Dreamwalker
-							["achievementID"] = 4635,	-- Heroic: The Frostwing Halls (25 player)
-						}),
-						ach(4619),	-- Portal Jockey (25 player)
-						i(138832),	-- Illusion: Earthliving
-						i(50621),	-- Lungbreaker
-						i(50631),	-- Nightmare Ender
-						i(50626),	-- Snowstorm Helm
-						i(50627),	-- Noose of Malachite
-						i(50628),	-- Frostbinder's Shredded Cape
-						i(50629),	-- Robe of the Waking Nightmare
-						i(50630),	-- Bracers of Eternal Dreaming
-						i(50619),	-- Anub'ar Stalker's Gloves
-						i(50620),	-- Coldwraith Links
-						i(50623),	-- Leggings of Dying Candles
-						i(50624),	-- Scourge Reaver's Legplates
-						i(50632),	-- Boots of the Funeral March
-						i(50625),	-- Grinning Skull Greatboots
-						i(50622),	-- Devium's Eternally Cold Ring
-						i(50618),	-- Frostbrood Sapphire Ring
-					},
-				}),
-				e(1635,  {	-- Sindragosa
-					["creatureID"] = 36853,	-- Sindragosa
-					["g"] = {
-						crit(2, {	-- Sindragosa
-							["achievementID"] = 4635,	-- Heroic: The Frostwing Halls (25 player)
-						}),
-						ach(4620),	-- All You Can Eat (25 player)
-						i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-						i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-						i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-						i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
-						i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-						i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
-						i(142097),	-- Skull of a Frozen Whelp (PET!)
-						i(50635),	-- Sundial of Eternal Dusk
-						i(50633),	-- Sindragosa's Cruel Claw
-						i(50636),	-- Memory of Malygos
-						i(50365),	-- Phylactery of the Nameless Lich
-						i(50364),	-- Sindragosa's Flawless Fang
-					},
-				}),
-				e(1636,  {	-- The Lich King
-					["creatureID"] = 36597,	-- The Lich King
-					["g"] = {
-						crit(5, {	-- The Light of Dawn
-							["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)
-						}),
-						ach(4621),	-- Been Waiting a Long Time for This (25 player)
-						ach(4622),	-- Neck-Deep in Vile (25 player)
-						ach(4584, {	-- The Light of Dawn
-							title(138),	-- the Light of Dawn
-						}),
-						i(50818),	-- Invincible's Reins (MOUNT!)
-						i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-						i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-						i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-						i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
-						i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
-						i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
-						i(142099),	-- Call of the Frozen Blade (PET!)
-						i(138955),	-- Illusion: Rune of Razorice
-						i(50731),	-- Archus, Greatstaff of Antonidas
-						i(50730),	-- Glorenzelg, High-Blade of the Silver Hand
-						i(50735),	-- Oathbinder, Charge of the Ranger-General
-						i(50732),	-- Bloodsurge, Kel'Thusad's Blade of Agony
-						i(50737),	-- Havoc's Call, Blade of Lordaeron Kings
-						i(50736),	-- Heaven's Fall, Kryss of a Thousand Lies
-						i(50738),	-- Mithrios, Bronzebeard's Legacy
-						i(50734),	-- Royal Scepter of Terenas II
-						i(50733),	-- Fal'inrush, Defender of Quel'thalas
-						i(122229),	-- Music Roll: Invincible
-					},
+				n(-396, {	-- The Frostwing Halls
+					ach(4635),	-- Heroic: The Frostwing Halls (25 player)
+					e(1634,  {	-- Valithria Dreamwalker
+						["creatureID"] = 36789,	-- Valithria Dreamwalker
+						["g"] = {
+							crit(1, {	-- Rescue Valithria Dreamwalker
+								["achievementID"] = 4635,	-- Heroic: The Frostwing Halls (25 player)
+							}),
+							ach(4619),	-- Portal Jockey (25 player)
+							i(138832),	-- Illusion: Earthliving
+							i(50621),	-- Lungbreaker
+							i(50631),	-- Nightmare Ender
+							i(50626),	-- Snowstorm Helm
+							i(50627),	-- Noose of Malachite
+							i(50628),	-- Frostbinder's Shredded Cape
+							i(50629),	-- Robe of the Waking Nightmare
+							i(50630),	-- Bracers of Eternal Dreaming
+							i(50619),	-- Anub'ar Stalker's Gloves
+							i(50620),	-- Coldwraith Links
+							i(50623),	-- Leggings of Dying Candles
+							i(50624),	-- Scourge Reaver's Legplates
+							i(50632),	-- Boots of the Funeral March
+							i(50625),	-- Grinning Skull Greatboots
+							i(50622),	-- Devium's Eternally Cold Ring
+							i(50618),	-- Frostbrood Sapphire Ring
+						},
+					}),
+					e(1635,  {	-- Sindragosa
+						["creatureID"] = 36853,	-- Sindragosa
+						["g"] = {
+							crit(2, {	-- Sindragosa
+								["achievementID"] = 4635,	-- Heroic: The Frostwing Halls (25 player)
+							}),
+							ach(4620),	-- All You Can Eat (25 player)
+							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
+							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
+							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
+							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
+							i(142097),	-- Skull of a Frozen Whelp (PET!)
+							i(50635),	-- Sundial of Eternal Dusk
+							i(50633),	-- Sindragosa's Cruel Claw
+							i(50636),	-- Memory of Malygos
+							i(50365),	-- Phylactery of the Nameless Lich
+							i(50364),	-- Sindragosa's Flawless Fang
+						},
+					}),
+					e(1636,  {	-- The Lich King
+						["creatureID"] = 36597,	-- The Lich King
+						["g"] = {
+							crit(5, {	-- The Light of Dawn
+								["achievementID"] = 4637,	-- Heroic: Fall of the Lich King (25 player)
+							}),
+							ach(4621),	-- Been Waiting a Long Time for This (25 player)
+							ach(4622),	-- Neck-Deep in Vile (25 player)
+							ach(4584, {	-- The Light of Dawn
+								title(138),	-- the Light of Dawn
+							}),
+							i(50818),	-- Invincible's Reins (MOUNT!)
+							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
+							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
+							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
+							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
+							i(142099),	-- Call of the Frozen Blade (PET!)
+							i(138955),	-- Illusion: Rune of Razorice
+							i(50731),	-- Archus, Greatstaff of Antonidas
+							i(50730),	-- Glorenzelg, High-Blade of the Silver Hand
+							i(50735),	-- Oathbinder, Charge of the Ranger-General
+							i(50732),	-- Bloodsurge, Kel'Thusad's Blade of Agony
+							i(50737),	-- Havoc's Call, Blade of Lordaeron Kings
+							i(50736),	-- Heaven's Fall, Kryss of a Thousand Lies
+							i(50738),	-- Mithrios, Bronzebeard's Legacy
+							i(50734),	-- Royal Scepter of Terenas II
+							i(50733),	-- Fal'inrush, Defender of Quel'thalas
+							i(122229),	-- Music Roll: Invincible
+						},
+					}),
 				}),
 			}),
 		},
