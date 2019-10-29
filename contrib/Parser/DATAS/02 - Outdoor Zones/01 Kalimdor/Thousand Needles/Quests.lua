@@ -8,6 +8,7 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(25588, {	-- A Little Payback
 					["provider"] = { "n", 40591 },	-- Drag Master Miglen
+					["coord"] = { 78.0, 73.2, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25542,	-- Circle the Wagons... er, Boats
 					["g"] = {
@@ -29,6 +30,7 @@ _.Zones =
 				}),
 				q(25790, {	-- Back to Crazzle
 					["provider"] = { "n", 41204 },	-- Khan Ablinh
+					["coord"] = { 91.2, 53.6, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25778,	-- Fake Gold for Black Gold
 					["g"] = {
@@ -52,6 +54,7 @@ _.Zones =
 				}),
 				q(25517, {	-- Bar Fight!
 					["provider"] = { "n", 40554 },	-- Rizzle Brassbolts
+					["coord"] = { 78.0, 73.4, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25488,	-- Two if By Boat
 				}),
@@ -96,8 +99,8 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(25542, {	-- Circle the Wagons... er, Boats
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25532,	-- Pirate Accuracy Increasing
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(63550),	-- Speedbarge Leggings
 						i(63551),	-- Smooching Gloves
@@ -159,6 +162,7 @@ _.Zones =
 				}),
 				q(25798, {	-- Defend the Drill
 					["provider"] = { "n", 41190 },	-- Crazzle Sprysprocket
+					["coord"] = { 91.4, 57.6, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25790,	-- Back to Crazzle
 				}),
@@ -170,6 +174,7 @@ _.Zones =
 				}),
 				q(25825, {	-- Deliver the Goods
 					["provider"] = { "n", 41190 },	-- Crazzle Sprysprocket
+					["coord"] = { 91.4, 57.6, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25813,	-- Go Blow that Horn
 					["g"] = {
@@ -229,6 +234,7 @@ _.Zones =
 				}),
 				q(25796, {	-- Eminent Domain
 					["provider"] = { "n", 41190 },	-- Crazzle Sprysprocket
+					["coord"] = { 91.4, 57.6, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25790,	-- Back to Crazzle
 				}),
@@ -240,6 +246,7 @@ _.Zones =
 				}),
 				q(25778, {	-- Fake Gold for Black Gold
 					["provider"] = { "n", 41190 },	-- Crazzle Sprysprocket
+					["coord"] = { 91.4, 57.6, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25774,	-- Fool's Gold
 				}),
@@ -251,6 +258,7 @@ _.Zones =
 				}),
 				q(25774, {	-- Fool's Gold
 					["provider"] = { "n", 41190 },	-- Crazzle Sprysprocket
+					["coord"] = { 91.4, 57.6, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25756,	-- Get Zherin!
 				}),
@@ -276,6 +284,7 @@ _.Zones =
 				}),
 				q(25835, {	-- Free Freewind Post
 					["provider"] = { "n", 40027 },	-- Fizzle Brassbolts
+					["coord"] = { 76.0, 74.6, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25825,	-- Deliver the Goods
@@ -321,11 +330,13 @@ _.Zones =
 				}),
 				q(25756, {	-- Get Zherin!
 					["provider"] = { "n", 41190 },	-- Crazzle Sprysprocket
+					["coord"] = { 91.4, 57.6, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25744,	-- Negotiations
 				}),
 				q(25813, {	-- Go Blow that Horn
 					["provider"] = { "n", 41190 },	-- Crazzle Sprysprocket
+					["coord"] = { 91.4, 57.6, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25798,	-- Defend the Drill
@@ -409,6 +420,7 @@ _.Zones =
 				}),
 				q(25869, {	-- Grimtotem in the Post
 					["provider"] = { "n", 41392 },	-- Quentin
+					["coord"] = { 46.4, 57.8, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25835,	-- Free Freewind Post
 				}),
@@ -438,6 +450,7 @@ _.Zones =
 				}),
 				q(25873, {	-- Horn of the Traitor
 					["provider"] = { "n", 45271 },	-- Montarr
+					["coord"] = { 44.6, 50.0, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25835,	-- Free Freewind Post
 				}),
@@ -469,6 +482,7 @@ _.Zones =
 				}),
 				q(27329, {	-- Invoking the Serpent
 					["provider"] = { "n", 45442 },	-- Lakota Windsong
+					["coord"] = { 39.0, 25.8, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27357,	-- The Captive Bride
 					["g"] = {
@@ -496,6 +510,7 @@ _.Zones =
 				}),
 				q(25744, {	-- Negotiations
 					["provider"] = { "n", 40027 },	-- Fizzle Brassbolts
+					["coord"] = { 76.0, 74.6, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25542,	-- Circle the Wagons... er, Boats
 				}),
@@ -555,11 +570,13 @@ _.Zones =
 				}),
 				q(25532, {	-- Pirate Accuracy Increasing
 					["provider"] = { "n", 40475 },	-- Jinky Twizzlefixxit
+					["coord"] = { 76.4, 73.6, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25515,	-- Down in the Deeps
 				}),
 				q(25585, {	-- Quiet the Cannons
 					["provider"] = { "n", 40475 },	-- Jinky Twizzlefixxit
+					["coord"] = { 76.4, 73.6, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25542,	-- Circle the Wagons... er, Boats
 				}),
@@ -579,6 +596,7 @@ _.Zones =
 				}),
 				q(25871, {	-- Save the Sentinel
 					["provider"] = { "n", 41444 },	-- Brienna Starglow
+					["coord"] = { 46.8, 56.0, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25835,	-- Free Freewind Post
 				}),
@@ -595,6 +613,7 @@ _.Zones =
 				}),
 				q(28031, {	-- Special Delivery for Brivelthwerp
 					["provider"] = { "n", 40726 },	-- Mazzer Stripscrew
+					["coord"] = { 78.8, 75.6, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25542,	-- Circle the Wagons... er, Boats
 				}),
@@ -606,6 +625,7 @@ _.Zones =
 				}),
 				q(28160, {	-- Spread the Word
 					["provider"] = { "n", 47745 },	-- Magatha Grimtotem
+					["coord"] = { 50.0, 62.6, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 28159,	-- The Doomstone
 					["g"] = {
@@ -633,6 +653,7 @@ _.Zones =
 				}),
 				q(25609, {	-- Sunken Treasure
 					["provider"] = { "n", 40885 },	-- Wizzle Brassbolts
+					["coord"] = { 91.6, 78.6, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25590,	-- Where's Wizzle?
 				}),
@@ -758,6 +779,7 @@ _.Zones =
 					},
 				}),
 				q(27316, {	-- The Rattle of Bones
+					["coord"] = { 43.3, 43.4, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27275,	-- Together Again
@@ -835,6 +857,7 @@ _.Zones =
 				}),
 				q(27275, {	-- Together Again
 					["provider"] = { "n", 41444 },	-- Brienna Starglow
+					["coord"] = { 46.8, 56.0, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25871,	-- Save the Sentinel
 				}),
@@ -874,6 +897,7 @@ _.Zones =
 				}),
 				q(25627, {	-- Two-Tusk Takedown
 					["provider"] = { "n", 40885 },	-- Wizzle Brassbolts
+					["coord"] = { 91.6, 78.6, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25609,	-- Sunken Treasure
 					["g"] = {
@@ -942,6 +966,7 @@ _.Zones =
 				}),
 				q(25590, {	-- Where's Wizzle?
 					["provider"] = { "n", 40554 },	-- Rizzle Brassbolts
+					["coord"] = { 78.0, 73.4, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25542,	-- Circle the Wagons... er, Boats
 				}),
