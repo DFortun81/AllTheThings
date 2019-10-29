@@ -12558,9 +12558,9 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				{
 					875,	-- Zandalar
 					{
-						-- { 863, ???, { 54135, 54136 }},	-- Nazmir (Romp in the Swamp [H] / March on the Marsh [A])
+					--	{ 863, ???, { 54135, 54136 }},	-- Nazmir (Romp in the Swamp [H] / March on the Marsh [A])
 						{ 864, 5970, { 53885, 54134 }},	-- Voldun (Isolated Victory [H] / Many Fine Heroes [A])
-						-- { 862, ???, { 53883, 54138 }},	-- Zuldazar (Shores of Zuldazar [H] / Ritual Rampage [A])
+						{ 862, 5973, { 53883, 54138 }},	-- Zuldazar (Shores of Zuldazar [H] / Ritual Rampage [A])
 					}
 				},
 				{

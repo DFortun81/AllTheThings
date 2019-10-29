@@ -416,14 +416,12 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["groups"] = {
-							{
+							crit(6, {	-- Ritual Rampage
 								["achievementID"] = 13283,	-- Frontline Warrior
-								["criteriaID"] = 6,	-- Ritual Rampage
-							},
-							{
+							}),
+							crit(6, {	-- Ritual Rampage
 								["achievementID"] = 13387,	-- Frontline Veteran
-								["criteriaID"] = 6,	-- Ritual Rampage
-							},
+							}),
 						},
 					}),
 					q(52250, {	-- Saving Xibala

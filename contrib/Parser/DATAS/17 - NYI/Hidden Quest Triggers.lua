@@ -8,6 +8,7 @@ _.NeverImplemented =
 	n(-9956, {	-- Quests				
 		q(13807),	-- FLAG: Tournament Invitation
 
+		
 
 		-------------------
 		--  UNKNOWN/NYI  --
@@ -19,6 +20,8 @@ _.NeverImplemented =
 		q(54740),	-- [DNT] REUSE ME
 		q(57917),	-- [DNT] Test - JAM
 		q(8274),	-- Test Kill Quest - triggered after The Conquest Pit: Final Showdown (12431)
+		
+		
 		
 		-------------------
 		--    VARIOUS    --
@@ -108,6 +111,7 @@ _.NeverImplemented =
 		q(35589),	-- Zul'Farrak Bonus Reward
 
 		
+		
 		-------------------
 		---   OUTLAND   ---
 		-------------------
@@ -148,6 +152,8 @@ _.NeverImplemented =
 		q(35534),	-- The Steamvault heroic completion
 		q(35559),	-- The Underbog normal completion
 		q(35560),	-- The Underbog heroic completion
+		
+		
 		
 		-------------------
 		--     WOTLK     --
@@ -197,6 +203,8 @@ _.NeverImplemented =
 		q(46055),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 05
 		q(12485),	-- Howling Fjord - triggers during "The Echo of Ymiron" when you see the RP between two vrykul in Wyrmskull Village
 
+		
+		
 		-------------------
 		--   CATACLYSM   --
 		-------------------
@@ -215,6 +223,8 @@ _.NeverImplemented =
 		q(26119),	-- Vashj'ir - FLAG - Claim Our Stake Launched
 		q(35403),	-- Vortex Pinnacle dungeon reward (Kill Asaad)
 
+		
+		
 		-------------------
 		--      MOP      --
 		-------------------
@@ -342,6 +352,7 @@ _.NeverImplemented =
 		q(32962),	-- "Tom" Bone Apart - Tracking Quest — looting first chest after speaking with Zarhym.  second chest didn't have a quest, but didn't finish so not sure if there are other quests
 
 
+		
 		-------------------
 		--      WOD      --
 		-------------------
@@ -594,6 +605,7 @@ _.NeverImplemented =
 		q(39713),	-- Tracking Quest. Pops immediately on new characters but no other info known. Possibly legendary ring related
 		
 
+		
 		-------------------
 		--    Legion     --
 		-------------------
@@ -677,8 +689,8 @@ _.NeverImplemented =
 	--	q(),	-- Ana-Mouz bonus roll
 	--	q(),	-- Apocron killID
 	--	q(),	-- Apocron bonus roll
-	--	q(),	-- Brutallus killID
-	--	q(),	-- Brutallus bonus roll
+		q(47085),	-- Brutallus killID
+		q(47088),	-- Brutallus bonus roll
 		q(44502),	-- Calamir killID
 	--	q(),	-- Calamir bonus roll
 	--	q(),	-- Drugon the Frostblood 
@@ -834,6 +846,7 @@ _.NeverImplemented =
 		q(47921),	-- Tracking Quest. Triggered after using the cloth ensemble
 		
 
+		
 		-------------------
 		--      BFA      --
 		-------------------
@@ -886,18 +899,9 @@ _.NeverImplemented =
 	--	58013 ALSO triggered after my first time killing Honey Smasher, but that also popped for me while doing the Alliance war campaign "This Ain't Mine."  so wtf lol
 		q(56171),	-- not sure -- i had just done a Honeyback Harvester event and Gurg the Hivethief spawned but ran away because there wasn't enough DPS to kill him.  looted the jelly after the event, then ran to turn in since i was closeby.  fed the bee ~13 - 14 Thin Jelly (brought me to 1700 Friendly) and ran out of the cave and saw this and 57701 pop in chat.
 		q(57701),	-- same as above
-		q(56107),	-- when nascent bee changed into Juvenile Harvester (~11,000 Friendly rep)
+		q(56107),	-- when nascent bee changed into Juvenile Harvester
 		q(56879),	-- when Juvenile Harvester changed into Honeyback Harvester (max bee friendship)
 
-		
-	--	INCURSIONS
-		-- all 3 'secret supply chest' quests trigger at once.  possibly for 3 potential chests in the zone?  not sure why horde/alliance would have one shared quest and two different quests, though.
-		q(54720),	-- Zuldazar Secret Supply Chest (playing as Horde)
-		q(55391),	-- Zuldazar Secret Supply Chest (playing as Horde and Alliance)
-		q(53640),	-- Zuldazar (playing as Horde and Alliance) / Tiragarde (playing as Alliance) / Nazmir (playing as Alliance) Secret Supply Chest
-		q(54714),	-- Tiragarde Sound Secret Supply Chest
-		q(55347),	-- Tiragarde Sound Secret Supply Chest
-		q(55387),	-- Nazmir Secret Supply Chest (playing as Alliance)
 		
 
 	--	ISLAND EXPEDITIONS
@@ -919,7 +923,92 @@ _.NeverImplemented =
 		q(53636),	-- Looting a bounty in Stormsong as Horde (all 3 trigger at the same time)
 		q(53638),	-- Looting a bounty in Stormsong as Horde
 		q(53639),	-- Looting a bounty in Stormsong as Horde
-		
+		q(53409),	-- not sure what triggered this -- i won an epic BG and also capped on conquest for the week
+		q(54180),	-- Quest — capping 500 Conquest
+		-- all 3 'secret supply chest' quests trigger at once.  possibly for 3 potential chests in the zone?  not sure why horde/alliance would have one shared quest and two different quests, though.
+		q(54720),	-- Zuldazar Secret Supply Chest (playing as Horde)
+		q(55391),	-- Zuldazar Secret Supply Chest (playing as Horde and Alliance)
+		q(53640),	-- Zuldazar (playing as Horde and Alliance) / Tiragarde (playing as Alliance) / Nazmir (playing as Alliance) Secret Supply Chest
+		q(54714),	-- Tiragarde Sound Secret Supply Chest
+		q(55347),	-- Tiragarde Sound Secret Supply Chest
+		q(55387),	-- Nazmir Secret Supply Chest (playing as Alliance)
+		q(55412),	-- looting War Supply Crate in Vol'dun on Alliance (not secret chest)
+		q(55431),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(53349),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(53478),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(53479),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(53480),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(53481),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(53482),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(53483),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(53484),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(53485),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(53486),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(53487),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(53488),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(53489),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(53490),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(53491),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(53492),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(53493),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(53494),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(53495),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(53496),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54061),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54062),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54063),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54064),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54065),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54066),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54067),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54068),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54069),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54070),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54071),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54072),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54073),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54074),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54075),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54076),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54077),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54078),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54079),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54080),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54897),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54898),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54899),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54900),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54901),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54902),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54903),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54904),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54905),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(54906),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(55432),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(55433),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(55434),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(55435),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(55436),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(55437),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(55438),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(55439),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(55440),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(55441),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(55442),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(55443),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(55444),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(55445),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(55446),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(55447),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(55448),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(55449),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(55450),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57251),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57252),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57253),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57254),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57255),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+
 
 	--	WORLD BOSSES
 		q(52997),	-- Azurethos, The Winged Typhoon Kill ID
@@ -937,7 +1026,7 @@ _.NeverImplemented =
 		q(52998),	-- Ji'arak Kill ID
 					-- Ji'arak Bonus Roll
 		q(52996),	-- T'zane Kill ID
-					-- T'zane Bonus Roll
+		q(52263),	-- T'zane Bonus Roll
 		q(53001),	-- The Lion's Roar Kill ID
 		q(52274),	-- The Lion's Roar Bonus Roll
 		q(56058),	-- Ulmath, the Soulbinder Kill ID

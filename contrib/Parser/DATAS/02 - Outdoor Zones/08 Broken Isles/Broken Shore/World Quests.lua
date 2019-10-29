@@ -20,7 +20,6 @@ _.Zones =
 				q(45743),	-- Judgment of Odyn
 				q(45776),	-- Keys are a Crutch
 				q(45653),	-- Kill it with Fire!
-				q(46308),	-- Leave a Trail
 				q(46046),	-- Life's a Lich
 				q(46754),	-- Magical Beasts
 				q(46755),	-- Mission: Felraging
@@ -186,6 +185,10 @@ _.Zones =
 				q(45472, {	-- Kraken Eggs
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
+				}),
+				q(46308, {	-- Leave a Trail
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 				q(46948, {	-- Malificus
 					["lvl"] = 110,
