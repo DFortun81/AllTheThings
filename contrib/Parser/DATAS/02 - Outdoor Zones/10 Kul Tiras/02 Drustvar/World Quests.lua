@@ -1203,11 +1203,6 @@ _.Zones =
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(52414, {	-- Work Order: Drums of the Maelstrom
-					["isWorldQuest"] = true,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(52357, {	-- Work Order: Enchant Weapon - Quick Navigation
 					["isWorldQuest"] = true,
 					["lvl"] = 120,
@@ -1878,6 +1873,14 @@ _.Zones =
 						["g"] = {
 							i(162362),	-- Contract: Order of Embers [Rank 3]
 						},
+					}),
+					q(52414, {	-- Work Order: Drums of the Maelstrom
+						["provider"] = { "n", 135815 },	-- Quarteermaster Alcorn
+						["lvl"] = 120,
+						["coord"] = { 37.81, 49.01, 896 },
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = 165,	-- Leatherworking
 					}),
 					q(52357, {	-- Work Order: Enchant Weapon - Quick Navigation
 						["requireSkill"] = 333,	-- Enchanting
