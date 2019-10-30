@@ -1145,10 +1145,10 @@ app.L = {
 		[-390] = "Smuggler's Den",												-- Smuggler's Den (Spires of Arak)
 		[-391] = "Stoktron Brewery",											-- Stoktron Brewery (Spires of Arak)
 		[-392] = "Hearthfire Tavern",											-- Hearthfire Tavern
-		[-393] = select(1,GetAchievementCriteriaInfo(4608,1)),					-- Storming the Citadel
-		[-394] = select(1,GetAchievementCriteriaInfo(4608,2)),					-- The Plagueworks
-		[-395] = select(1,GetAchievementCriteriaInfo(4608,3)),					-- The Crimson Halls
-		[-396] = select(1,GetAchievementCriteriaInfo(4608,4)),					-- The Frostwing Halls
+		[-393] = "Storming the Citadel",										-- Storming the Citadel
+		[-394] = "The Plagueworks",												-- The Plagueworks
+		[-395] = "The Crimson Halls",											-- The Crimson Halls
+		[-396] = "The Frostwing Halls",											-- The Frostwing Halls
 -- Blizzard Events and Anniversaries
 -- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-488] = "War Chest",													-- Daily War Chest

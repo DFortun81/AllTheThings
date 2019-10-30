@@ -707,8 +707,8 @@ _.NeverImplemented =
 		q(44902),	-- Nazak the Fiend bonus roll
 		q(44508),	-- Nithogg killID
 		q(44903),	-- Nithogg bonus roll
-	--	q(),	-- Shar'thos killID
-	--	q(),	-- Shar'thos bonus roll
+		q(44509),	-- Shar'thos killID
+		q(44904),	-- Shar'thos bonus roll
 	--	q(),	-- Si'vash killID
 	--	q(),	-- Si'vash bonus roll
 		q(44510),	-- The Soultakers killID
@@ -923,9 +923,6 @@ _.NeverImplemented =
 		q(53636),	-- Looting a bounty in Stormsong as Horde (all 3 trigger at the same time)
 		q(53638),	-- Looting a bounty in Stormsong as Horde
 		q(53639),	-- Looting a bounty in Stormsong as Horde
-		q(57108),	-- Looting a bounty in Nazjatar as Alliance (all 3 trigger at the same time)
-		q(57109),	-- Looting a bounty in Nazjatar as Alliance
-		q(57110),	-- Looting a bounty in Nazjatar as Alliance
 		q(53409),	-- not sure what triggered this -- i won an epic BG and also capped on conquest for the week
 		q(54180),	-- Quest — capping 500 Conquest
 		-- all 3 'secret supply chest' quests trigger at once.  possibly for 3 potential chests in the zone?  not sure why horde/alliance would have one shared quest and two different quests, though.
