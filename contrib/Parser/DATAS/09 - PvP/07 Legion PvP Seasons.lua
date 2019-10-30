@@ -1287,15 +1287,15 @@ _.PVP =
 				}),
 				n(-662, {	-- Elite PvP Gear
 					cl(6, {	-- Death Knight
-						i(143100),	-- Fearless Gladiator's Dreadcloak (A)
-						i(143012),	-- Fearless Gladiator's Dreadplate Chestpiece (A)
-						i(143014),	-- Fearless Gladiator's Dreadplate Gauntlets (A)
-						i(143018),	-- Fearless Gladiator's Dreadplate Girdle (A)
-						i(143015),	-- Fearless Gladiator's Dreadplate Helm (A)
-						i(143016),	-- Fearless Gladiator's Dreadplate Legguards (A)
-						i(143013),	-- Fearless Gladiator's Dreadplate Sabatons (A)
-						i(143017),	-- Fearless Gladiator's Dreadplate Shoulders (A)
-						i(143019),	-- Fearless Gladiator's Dreadplate Wristplates (A)
+						un(14, i(143100)),	-- Fearless Gladiator's Dreadcloak (A)
+						un(14, i(143012)),	-- Fearless Gladiator's Dreadplate Chestpiece (A)
+						un(14, i(143014)),	-- Fearless Gladiator's Dreadplate Gauntlets (A)
+						un(14, i(143018)),	-- Fearless Gladiator's Dreadplate Girdle (A)
+						un(14, i(143015)),	-- Fearless Gladiator's Dreadplate Helm (A)
+						un(14, i(143016)),	-- Fearless Gladiator's Dreadplate Legguards (A)
+						un(14, i(143013)),	-- Fearless Gladiator's Dreadplate Sabatons (A)
+						un(14, i(143017)),	-- Fearless Gladiator's Dreadplate Shoulders (A)
+						un(14, i(143019)),	-- Fearless Gladiator's Dreadplate Wristplates (A)
 					}),
 					cl(12, {	-- Demon Hunter
 						un(14, i(143320)),	-- Fearless Gladiator's Demonthread Cloak (A)
