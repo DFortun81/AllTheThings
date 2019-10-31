@@ -5,6 +5,7 @@ _.WorldEvents =
 {
 	n(-496, {	-- Bizmo's Brawlpub
 		["races"] = ALLIANCE_ONLY,
+		["lvl"] = 120,
 		["maps"] = {
 			499,	-- Deeprun Tram
 			500,	-- Bizmo's Brawlpub

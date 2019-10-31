@@ -422,7 +422,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(9499,  {	-- Falcon Watch
-					["provider"] = { "n", 21256 },	-- Vurtok Axebreaker
+					["provider"] = { "n", 16577 },	-- Martik Tor'seldori
 					["races"] = { 10 },	-- Blood Elves
 					["sourceQuests"] = { 10124 },	-- Forward Base: Reaver's Fall
 					["isBreadcrumb"] = true,
