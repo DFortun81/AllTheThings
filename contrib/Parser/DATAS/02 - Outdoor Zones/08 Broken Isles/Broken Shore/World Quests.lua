@@ -12,7 +12,6 @@ _.Zones =
 				q(47061),	-- Apocron
 				q(46104),	-- Arachnid Toxicity
 				q(46947),	-- Brutallus
-				q(45531),	-- Creeping Fel
 				q(45969),	-- Defense of the Ancient
 				q(46077),	-- Felbound Spirits
 				q(40390),	-- Hallowed Ground
@@ -96,6 +95,10 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(45358, {	-- Contagion Containment
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(45531, {	-- Creeping Fel
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
