@@ -478,6 +478,8 @@ _.NeverImplemented =
 		q(34503),	-- Talador - Screaming Telmor Citizen,	-- triggers in Telmor
 		q(34760),	-- Talador - triggered when looting the Rusted Lockbox. WoWhead lists as a nagrand treasure but that treasure doesn't seem to exist
 		q(35491),	-- Talador - Underseer Bloodmane vignette duplicate flag
+	
+	--	TANAAN JUNGLE
 		q(37969),	-- Tanaan Jungle - Vol'mar built
 		q(38433),	-- Tanaan Jungle - lion's watch built
 		q(39306),	-- Tanaan Jungle - Call to Arms chosen during "Bring the Reinforcements"
@@ -485,6 +487,21 @@ _.NeverImplemented =
 		q(37887),	-- Tanaan Jungle - Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE
 		q(38583),	-- Tanaan Jungle - Max-Level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden
 		q(38587),	-- Tanaan Jungle - Assault on the Throne of Kil'jaeden - criteria complete
+		q(39157),	-- Fel Legendary Pet Tracking Quest 1 — Felsworn Sentry
+		q(39160),	-- Fel Legendary Pet Tracking Quest 2 — Corrupted Thundertail
+		q(39161),	-- Fel Legendary Pet Tracking Quest 3 — Chaos Pup
+		q(39162),	-- Fel Legendary Pet Tracking Quest 4 — Cursed Spirit
+		q(39163),	-- Fel Legendary Pet Tracking Quest 5 — Felfly
+		q(39164),	-- Fel Legendary Pet Tracking Quest 6 — Tainted Maulclaw
+		q(39165),	-- Fel Legendary Pet Tracking Quest 7 — Direflame
+		q(39166),	-- Fel Legendary Pet Tracking Quest 8 — Mirecroak
+		q(39167),	-- Fel Legendary Pet Tracking Quest 9 — Dark Gazer
+		q(39168),	-- Fel Legendary Pet Tracking Quest 10 — Bleakclaw
+		q(39169),	-- Fel Legendary Pet Tracking Quest 11 — Vile Blood of Draenor
+		q(39170),	-- Fel Legendary Pet Tracking Quest 12 — Dreadwalker
+		q(39171),	-- Fel Legendary Pet Tracking Quest 13 — Netherfist
+		q(39172),	-- Fel Legendary Pet Tracking Quest 14 — Skrillix
+		q(39173),	-- Fel Legendary Pet Tracking Quest 15 — Defiled Earth
 
 	--	DUNGEONS
 		q(35960),	-- Auchindoun Reward Quest
