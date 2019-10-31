@@ -1172,11 +1172,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52422, {	-- Work Order: Battle Flag: Spirit of Freedom
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(50993, {	-- Work Order: Coarse Leather
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -1921,12 +1916,21 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = 182,	-- Herbalism
 					}),
-					q(52394, {	-- Work Order: Contract: Champions of Azeroth [Rank 3]
+					q(52422, {	-- Work Order: Battle Flag: Spirit of Freedom
+						["isWorldQuest"] = true,
+						["requireSkill"] = 197,	-- Tailoring
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
+						["g"] = {
+							i(162443),	-- Pattern: Battle Flag: Spirit of Freedom
+						},
+					}),
+					q(52394, {	-- Work Order: Contract: Champions of Azeroth (Rank 3)
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 						["requireSkill"] = 773,	-- Inscription
 						["g"] = {
-							i(162374),	-- Recipe: Contract: Champions of Azeroth [Rank 3]
+							i(162374),	-- Recipe: Contract: Champions of Azeroth (Rank 3)
 						},
 					}),
 					q(52391, {	-- Work Order: Contract: Storm's Wake
@@ -1935,16 +1939,16 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = 773,	-- Inscription
 						["g"] = {
-							i(162364), 	-- Recipe: Contract: Storm's Wake [Rank 3]
+							i(162364), 	-- Recipe: Contract: Storm's Wake (Rank 3)
 						},
 					}),
-					q(52347, {	-- Work Order: Honey-Glazed Haunchs [Rank 3]
+					q(52347, {	-- Work Order: Honey-Glazed Haunchs (Rank 3)
 						["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 						["requireSkill"] = 185,	-- Cooking
 						["g"] = {
-							i(162286),	-- Recipe: Honey-Glazed Haunchs [Rank 3]
+							i(162286),	-- Recipe: Honey-Glazed Haunchs (Rank 3)
 						},
 					}),
 					q(52367, {	-- Work Order: Electroshock Mount Motivator
@@ -1962,7 +1966,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = 333,	-- Enchanting
 						["g"] = {
-							i(162299), 	-- Formula: Enchant Ring - Seal of Haste [Rank 3]
+							i(162299), 	-- Formula: Enchant Ring - Seal of Haste (Rank 3)
 						},
 					}),
 					q(52354, {	-- Work Order: Enchant Ring - Seal of Mastery
@@ -1971,16 +1975,16 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = 333,	-- Enchanting
 						["g"] = {
-							i(162300), 	-- Formula: Enchant Ring - Seal of Mastery [Rank 3]
+							i(162300), 	-- Formula: Enchant Ring - Seal of Mastery (Rank 3)
 						},
 					}),
-					q(52344, {	-- Work Order: Kul Tiramisu [Rank 3]
+					q(52344, {	-- Work Order: Kul Tiramisu (Rank 3)
 						["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 						["requireSkill"] = 185,	-- Cooking
 						["g"] = {
-							i(162285),	-- Recipe: Kul Tiramisu [Rank 3]
+							i(162285),	-- Recipe: Kul Tiramisu (Rank 3)
 						},
 					}),
 					q(52400, {	-- Work Order: Kyanite
@@ -2004,13 +2008,13 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["requireSkill"] = 182,	-- Herbalism
 					}),
-					q(52346, {	-- Work Order: Sailor's Pie [Rank 3]
+					q(52346, {	-- Work Order: Sailor's Pie (Rank 3)
 						["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 						["requireSkill"] = 185,	-- Cooking
 						["g"] = {
-							i(162295),	-- Recipe: Sailor's Pie [Rank 3]
+							i(162295),	-- Recipe: Sailor's Pie (Rank 3)
 						},
 					}),
 					q(50982, {	-- Work Order: Star Moss

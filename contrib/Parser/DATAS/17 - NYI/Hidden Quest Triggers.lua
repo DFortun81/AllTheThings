@@ -935,6 +935,8 @@ _.NeverImplemented =
 		q(57060),	-- IE-related mission — not sure if this is the Stalwart Worldvein Rank 2 one or one that awarded Saurok Scale Headgear
 		q(56528),	-- IE-related mission — Investigating the Rumors (done on Alliance, awarded Captured Documents, which procs the mission "Finding a Key")
 		q(56529),	-- IE-related mission — Finding a Key (done on Alliance, awarded Resonance Locator, which procs the mission "Tracking the Worldvein")
+		q(56530),	-- IE-related mission — Tracking the Worldvein (done on Alliance, awarded Fluctuating Worldvein, Rank 3 Worldvein Resonance, popped while mission complete thing played
+		q(57061),	-- popped when i manually refreshed after fully completing the mission / getting Fluctuating Worldvein in my inventory
 		
 
 	--	PVP / WAR MODE
@@ -1029,6 +1031,7 @@ _.NeverImplemented =
 		q(57253),	-- Conquest's Reward — automatically offered when you cap conquest for the week
 		q(57254),	-- Conquest's Reward — automatically offered when you cap conquest for the week
 		q(57255),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57064),	-- triggered when looting War Chest as Alliance — picked up Finger-Bone Trophy of Battle, Rank 1 Conflict and Strife, so not sure if this is a weekly quest for War Chest or possibly tracking for the Azerite Essence
 
 
 	--	WORLD BOSSES
