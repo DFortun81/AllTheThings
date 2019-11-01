@@ -1215,6 +1215,7 @@ _.NeverImplemented =
 		q(48607),	-- Tiragarde Sound repeatable random chest
 		q(48608),	-- Tiragarde Sound repeatable random chest
 		q(48609),	-- Tiragarde Sound repeatable random chest
+		q(48611),	-- Tiragarde Sound repeatable random chest
 		q(48612),	-- Tiragarde Sound repeatable random chest
 		q(48617),	-- Tiragarde Sound repeatable random chest
 		q(48618),	-- Tiragarde Sound repeatable random chest
