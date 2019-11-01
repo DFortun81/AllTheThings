@@ -572,6 +572,7 @@ _.NeverImplemented =
 		q(36570),	-- Unruly Visitors — triggers when turning in "Battle Pet Roundup"
 		q(39058),	-- Critters of Draenor — looks like an unused version of #38299
 		q(36492),	-- Garrison Pet Battle — discord report, "for today's EU garrison menagerie fight, the Blingtron/protectron one"
+		q(36886),	-- Ogre Waygate — opening waygate in gorgrond
 
 	--	TREASURES
 		q(34521),	-- Treasure: Glowing Obsidian Shard (secondary quest triggered when looting Burning Pearl in Frostfire Ridge)

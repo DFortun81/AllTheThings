@@ -694,6 +694,15 @@ _.ExpansionFeatures =
 							follower(208),	-- Ahm
 						},
 					}),
+					q(38293, {	-- Sumptuous Fur
+						["providers"] = {
+							{ "n", 91034 },	-- Calvo Klyne (Horde)
+							{ "n", 91025 },	-- Dorothy "Two" (Alliance)
+						},
+						["isDaily"] = true,
+						["cost"] = { "i", 111557, 50 },	-- 50x Sumptuous Fur
+						["lvl"] = 90,
+					}),
 					q(34674, {	-- Taking the Fight to Nagrand
 						["lvl"] = 98,
 						["coord"] = { 42.8, 45.2, 582 },
