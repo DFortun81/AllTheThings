@@ -1419,6 +1419,12 @@ _.NeverImplemented =
 		q(55495),	-- repelling HK-8 Aerial Oppression Unit during "Send My Father a Message"
 		q(55623),	-- Seems to trigger after completion of the WQ zone daily.  Mechanized chests and Rustbolt Rebellion WQ confirmed triggering this.
 		q(56307),	-- Opened the mechanized supply chest
+		q(57387),	-- Balnazzar data anomaly
+		q(57389),	-- Baron Gedden data anomaly
+		q(57388),	-- Baron Kazum data anomaly
+		q(57387),	-- Captain Kromcrush data anomaly
+		q(57388),	-- Crowd Pummeler 9-60 data anomaly
+		q(57385),	-- Razorclaw the Butcher data anomaly
 		
 	--	Dungeons
 		q(53623),	-- Battle for Azeroth Dungeon Reward Quest
