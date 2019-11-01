@@ -124,6 +124,7 @@ _.Zones =
 					["provider"] = { "n", 125398 },	-- Harold Beckett
 				}),
 				q(50542, {	-- An Explosive Opportunity
+					["isBreadcrumb"] = true,
 					["coord"] = { 66.6, 49.9, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129858 },	-- Wulfred Fizzbracket

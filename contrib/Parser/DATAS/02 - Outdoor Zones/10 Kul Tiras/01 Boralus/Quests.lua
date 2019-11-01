@@ -87,6 +87,17 @@ _.Zones =
 								}),
 							},
 						}),
+						q(53075, {	-- Dueler's Guild
+							["sourceQuests"] = { 53073 },	-- Hook Point Investigation
+							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
+							["coord"] = { 56.3, 26.0, 1161 },
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(53073, {	-- Hook Point Investigation
+							["provider"] = { "n", 135614 },	-- Master Mathias Shaw
+							["coord"] = { 70.4, 26.9, 1161 },
+							["races"] = ALLIANCE_ONLY,
+						}),
 						q(56499, {	-- Storming the Battlefields!
 							["provider"] = { "n", 143560 },	-- Marshal Gabriel
 							["races"] = ALLIANCE_ONLY,

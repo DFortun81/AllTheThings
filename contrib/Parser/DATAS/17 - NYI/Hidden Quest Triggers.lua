@@ -899,6 +899,8 @@ _.NeverImplemented =
 		q(53800),	-- Battle for Darkshore — triggered after defeating Sira Moonwarden in Darkshore warfront
 		q(53122),	-- A Season for Celebration — unused version of hallow's end quest?  triggered when i turned in the alliance version along with the other horde one
 		q(55492),	-- not sure if this was when i hit Rank 8 with brawler's guild, when i purchased the ensemble, or when i handed in bag of chipped dice to the bouncer
+		q(54526),	-- triggered along with 54636 when looting Gorilla Bot Loot during Vol'dun invasion
+		q(54777),	-- triggered when turning in #54134, "Many Fine Heroes," vol'dun assault.  had WM on but i'm not sure if that's relevant
 
 
 	--	HONEYBACK HIVE
@@ -953,7 +955,9 @@ _.NeverImplemented =
 		-- all 3 'secret supply chest' quests trigger at once.  possibly for 3 potential chests in the zone?  not sure why horde/alliance would have one shared quest and two different quests, though.
 		q(54720),	-- Zuldazar Secret Supply Chest (playing as Horde)
 		q(55391),	-- Zuldazar Secret Supply Chest (playing as Horde and Alliance)
-		q(53640),	-- Zuldazar (playing as Horde and Alliance) / Tiragarde (playing as Alliance) / Nazmir (playing as Alliance) Secret Supply Chest
+		q(53640),	-- Zuldazar (playing as Horde and Alliance) / Tiragarde (playing as Alliance) / Nazmir (playing as Alliance) / Vol'dun (playing as Alliance) Secret Supply Chest
+		q(54718),	-- Vol'dun Secret Supply Chest (playing as Alliance)
+		q(55389),	-- Vol'dun Secret Supply Chest (playing as Alliance)
 		q(54714),	-- Tiragarde Sound Secret Supply Chest
 		q(55347),	-- Tiragarde Sound Secret Supply Chest
 		q(55387),	-- Nazmir Secret Supply Chest (playing as Alliance)
@@ -1339,6 +1343,7 @@ _.NeverImplemented =
 		q(56605),	-- Toxigore the Alpha first kill
 		q(56584),	-- Urduu first kill
 		q(57083),	-- Wayward Algan Benthic loot
+		q(57166),	-- triggered when completing #55891, "Champion Aldrantiss, Defender of Her Kingdom," in nazjatar
 	--	PVP
 		q(56792),	-- Nazjatar Horde supply chest
 		q(57111),	-- Nazjatar Horde supply chest (both triggered simultaneously)
