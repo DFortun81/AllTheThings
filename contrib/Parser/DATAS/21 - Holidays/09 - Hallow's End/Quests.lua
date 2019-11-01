@@ -572,7 +572,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
-				q(13473, {	-- Candy Bucket — Dalaran : Northrend, Legerdemain Lounge, neutral
+				q(13463, {	-- Candy Bucket — Dalaran : Northrend, Legerdemain Lounge, neutral
 					["isYearly"] = true,
 					["coord"] = { 66.6, 30.1, 125 },
 					["maps"] = { 125 },	-- Dalaran : Northrend
@@ -583,7 +583,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
-				q(13463, {	-- Candy Bucket — Dalaran : Northrend, Silver Enclave, Alliance
+				q(13473, {	-- Candy Bucket — Dalaran : Northrend, Silver Enclave, Alliance
 					["isYearly"] = true,
 					["coord"] = { 42.5, 63.5, 125 },
 					["races"] = ALLIANCE_ONLY,
@@ -1288,6 +1288,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				q(12335, {	-- Candy Bucket — Ironforge, The Commons, Alliance
 					["isYearly"] = true,
 					["coord"] = { 18.6, 51.3, 87 },
+					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 87 },	-- Ironforge
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
@@ -1516,6 +1517,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				q(28963, {	-- Candy Bucket — Loch Modan, Farstrider Lodge, Alliance
 					["isYearly"] = true,
 					["coord"] = { 82.9, 63.6, 48 },
+					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 48 },	-- Loch Modan
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
@@ -2060,6 +2062,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				q(12336, {	-- Candy Bucket — Stormwind, The Trade District, Alliance
 					["isYearly"] = true,
 					["coord"] = { 60.5, 75.2, 84 },
+					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 84 },	-- Stormwind City
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
