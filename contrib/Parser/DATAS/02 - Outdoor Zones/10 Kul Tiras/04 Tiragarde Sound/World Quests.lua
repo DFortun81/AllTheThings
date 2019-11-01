@@ -72,15 +72,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52057, {	-- Against the Storm
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(52047, {	-- Against the Storm
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(49290, {	-- Aged to Perfection
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -497,7 +488,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					
 					q(50299, {	-- Gryphon Wranglin'
 						["isWorldQuest"] = true,
 						["lvl"] = 120,

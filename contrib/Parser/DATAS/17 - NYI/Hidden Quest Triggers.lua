@@ -1159,6 +1159,7 @@ _.NeverImplemented =
 		q(51695),	-- Horde WarCampaign - "Reclaiming What's Ours" (ID 51696) using the horn to reclaim the Foothold
 		-- Bonus Objectives
 		q(50779, {	-- A Clean Slate
+			["races"] = ALLIANCE_ONLY,
 			["isWorldQuest"] = true,
 		}),
 		q(51534, {	-- The Battle for Brennadam
@@ -1213,7 +1214,8 @@ _.NeverImplemented =
 		q(48619),	-- Tiragarde Sound repeatable random chest
 		q(48621),	-- Tiragarde Sound repeatable random chest
 		q(50166),	-- Tiragarde Sound repeatable random chest
-
+		q(50952),	-- Tiragarde Sound repeatable random chest
+		q(53630),	-- Tiragarde Sound repeatable random chest (possibly different from others, it was Forgotten Treasure Chest at 79.57 20.22 in a small cave)
 
 	--	Zuldazar
 		q(55259),	-- Triggers after turning 'Sleep, Eat, Repeat' (ID 55258) in to finish the achievement criteria 'Sleep, Eat, Repeat' (3) for How to Train Your Direhorn (ID 13542)

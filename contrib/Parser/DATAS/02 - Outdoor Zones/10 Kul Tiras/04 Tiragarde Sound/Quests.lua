@@ -1449,15 +1449,6 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(52057, {	-- Against the Storm
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(52047, {	-- Against the Storm
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(49290, {	-- Aged to Perfection
 					["races"] = ALLIANCE_ONLY,
 				}),

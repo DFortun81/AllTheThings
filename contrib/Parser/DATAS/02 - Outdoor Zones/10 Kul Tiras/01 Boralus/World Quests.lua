@@ -12,6 +12,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
+					q(52057, {	-- Against the Storm
+						["lvl"] = 120,
+						["isWorldQuest"] = true,
+					}),
 					q(51225, {	-- Albatrocity
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
