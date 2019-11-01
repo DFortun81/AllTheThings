@@ -88,6 +88,7 @@ _.NeverImplemented =
 		q(35894),	-- Dire Maul (Bonus) Reward Quest
 		q(35601),	-- Gnomeregan Reward Quest - received after killing Mekgineer Thermaplugg
 		q(35602),	-- Gnomeregan Bonus Objective Reward Quest - received after killing Grubbis
+		q(36867),	-- Lower Blackrock Spires Bonus Reward Quest — killing Urok Doomhowl
 		q(35888),	-- Maraudon (Everything) Reward Quest — dungeon completion
 		q(35287),	-- Ragefire Chasm
 		q(35598),	-- Razorfen Downs Reward Quest — dungeon completion
