@@ -162,6 +162,12 @@ _.ExpansionFeatures =
 							garrisonBuilding(29),	-- Herb Garden lvl 1
 						},
 					}),
+					q(37773, {	-- Death to Amethon!
+						["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 100,
+					}),
 					q(34692, {	-- Delegating on Draenor
 						["sourceQuests"] = { 34646 },	-- Qiana Moonshadow
 						["coord"] = { 40.2, 43.6, 582 },

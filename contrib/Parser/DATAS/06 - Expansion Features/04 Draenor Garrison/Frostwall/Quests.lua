@@ -297,6 +297,7 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+						["lvl"] = 100,
 					}),
 					q(37814, {	-- Death to Gor'thul!
 						["coord"] = { 40.2, 56.7, 590 },
