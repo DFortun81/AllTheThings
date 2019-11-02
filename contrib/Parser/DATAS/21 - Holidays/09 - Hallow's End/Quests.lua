@@ -2986,7 +2986,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						{ 53.4, 51.5, 27 },	-- Dun Morogh
 						{ 42.6, 64.6, 37 },	-- Elwynn Forest 
 					},
-					["races"] = HORDE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 
 						97, -- Azuremyst Isle
 						27, -- Dun Morogh
