@@ -902,6 +902,7 @@ _.NeverImplemented =
 		q(55492),	-- not sure if this was when i hit Rank 8 with brawler's guild, when i purchased the ensemble, or when i handed in bag of chipped dice to the bouncer
 		q(54526),	-- triggered along with 54636 when looting Gorilla Bot Loot during Vol'dun invasion
 		q(54777),	-- triggered when turning in #54134, "Many Fine Heroes," vol'dun assault.  had WM on but i'm not sure if that's relevant
+		q(54771),	-- triggered when turning in #53701, "A Drust Cause," drustvar assault.  had WM on but i'm not sure if that's relevant
 
 
 	--	HONEYBACK HIVE
