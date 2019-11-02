@@ -8,6 +8,8 @@ _.ExpansionFeatures =
 		["lvl"] = 120,
 		["maps"] = { 1570 },	-- Vale of Eternal Blossoms (ported from obelisk in Uldum. Maybe needs to be separated?)
 		["g"] = {
+			-- this assault header is probably not necessary now. The zone itself is remade
+			-- and assaults themselves don't have a whole of content unrelated to dailies
 			n(-10072, {	-- N'Zoth Assaults
 				n(-17,  {	-- Quests
 					q(57008, {	-- Assault: The Warring Clans
@@ -20,16 +22,39 @@ _.ExpansionFeatures =
 						["coord"] = { 38.4, 75.0, 1530 },
 						["isDaily"] = true,
 						["provider"] = { "n", 158674 },	-- Anji Autumnlight
+						["sourceQuest"] = 56771,	-- Time-Llost Warriors
 					}),
 					q(57720, {	-- Champions of the Mogu
 						["coord"] = { 44.7, 73.8, 1530 },
 						["isDaily"] = true,
 						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+						["sourceQuest"] = 56771,	-- Time-Llost Warriors
+					}),
+					q(56538, {	-- Clans of the Mogu
+						["coord"] = { 83.7, 27.1, 1530 },
+						["provider"] = { "n", 156003 },	-- Lorewalker Cho
+						["sourceQuest"] = 56537,	-- The Mysterious Sigil
+					}),
+					q(56539, {	-- Finding the Rajani
+						["coord"] = { 83.7, 27.1, 1530 },
+						["provider"] = { "n", 156003 },	-- Lorewalker Cho
+						["sourceQuest"] = 56538,	-- Clans of the Mogu
+					}),
+					q(56540, {	-- Proof of Tenacity
+						["coord"] = { 44.7, 73.9, 1530 },
+						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
 					q(57721, {	-- Spoils of War
 						["coord"] = { 43.9, 71.7, 1530 },
 						["isDaily"] = true,
 						["provider"] = { "n", 154677 },	-- Forgemaster Han
+						["sourceQuest"] = 56771,	-- Time-Llost Warriors
+					}),
+					q(56771, {	-- Time-Lost Warriors
+						["coord"] = { 83.1, 27.2, 1530 },
+						["provider"] = { "n", 154532 },	-- Magni Bronzebeard
+						["sourceQuest"] = 56539,	-- Finding the Rajani
 					}),
 				}),
 				n(-16,  {	-- Rares
@@ -162,6 +187,14 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(-34,  {	-- World Quests
+					q(58367, {	-- Baruk Demolisher
+						["lvl"] = 120,
+						["isWorldQuest"] = true,
+					}),
+					q(57087, {	-- Baruk Obliterator
+						["lvl"] = 120,
+						["isWorldQuest"] = true,
+					}),
 					q(57272, {	-- Bloodbound Effigy
 						["lvl"] = 120,
 						["isWorldQuest"] = true,

@@ -449,6 +449,19 @@ _.Zones =
 							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["sourceQuest"] = 58506,	-- Network Diagnostics
 						}),
+						q(56536, {	-- It's Never Easy
+							["lvl"] = 120,
+							["coord"] = { 50.1, 59.1, 1473 },
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
+							["sourceQuest"] = 56377,	-- Forging Onward
+						}),
+						q(56537, {	-- The Mysterious Sigil
+							["lvl"] = 120,
+							["maps"] = { 379 },	-- Kun-lai Summit
+							["coord"] = { 59.6, 39.1, 379 },
+							["provider"] = { "n", 155336 },	-- Mogu Warrior
+							["sourceQuest"] = 56536,	-- It's Never Easy
+						}),
 					}),
 					n(-2,   {	-- Vendors
 						["lvl"] = 120,
