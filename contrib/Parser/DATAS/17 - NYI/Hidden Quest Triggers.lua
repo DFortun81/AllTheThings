@@ -963,6 +963,7 @@ _.NeverImplemented =
 		q(54714),	-- Tiragarde Sound Secret Supply Chest
 		q(55347),	-- Tiragarde Sound Secret Supply Chest
 		q(55387),	-- Nazmir Secret Supply Chest (playing as Alliance)
+		q(54715),	-- Drustvar Secret Supply Chest (playing as Alliance)
 		q(55375),	-- Drustvar Secret Supply Chest (playing as Alliance)
 		q(55412),	-- looting War Supply Crate in Vol'dun on Alliance (not secret chest)
 		q(55431),	-- Conquest's Reward — automatically offered when you cap conquest for the week
