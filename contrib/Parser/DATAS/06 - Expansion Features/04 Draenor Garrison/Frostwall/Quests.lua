@@ -8,6 +8,45 @@ _.ExpansionFeatures =
 			n(-17, { 	-- Quests
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					n(-152,  {	-- Garrison Campaign
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							q(34335, {	-- Garrison Campaign: Crows In The Field
+								["races"] = HORDE_ONLY,
+							}),
+							q(35680, {	-- Garrison Campaign: The Fall of Shattrath
+								["races"] = HORDE_ONLY,
+							}),
+							q(35843, {	-- Garrison Campaign: Deep Recon
+								["races"] = HORDE_ONLY,
+							}),
+							q(36117, {	-- Garrison Campaign: The Broken Precipice
+								["provider"] = { "n", 88892 },	-- Nixxie
+								["races"] = HORDE_ONLY,
+							}),
+							q(36219, {	-- Garrison Campaign: The Ring of Blood
+								["description"] = "Offered if you have NOT completed |cFFFFD700The Ring of Trials|r in Nagrand or the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+							}),
+							q(36280, {	-- Garrison Campaign: The Ring of Blood
+								["description"] = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand.",
+							}),
+							q(36281, {	-- Garrison Campaign: The Ring of Blood
+								["description"] = "Offered if you complete the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+							}),
+							q(36282, {	-- Garrison Campaign: The Ring of Blood
+								["description"] = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand and the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
+							}),
+							q(35195, {
+								i(119134),	-- Toy
+							}),
+							q(32985, {
+								i(119145),	-- Toy
+							}),
+							q(38567, {	-- Garrison Campaign: War Council
+								["description"] = "Automatically granted upon upgrading your garrison to Rank 3.",
+							}),
+						},
+					}),
 					q(38243, {	-- A Bit of Ore
 						["providers"] = {
 							{ "n", 90894 },	-- Alexi Hackercam
@@ -258,6 +297,7 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+						["lvl"] = 100,
 					}),
 					q(37814, {	-- Death to Gor'thul!
 						["coord"] = { 40.2, 56.7, 590 },
@@ -616,45 +656,6 @@ _.ExpansionFeatures =
 							}),
 						},
 					}),
-					n(-152,  {	-- Garrison Campaign
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							q(34335, {	-- Garrison Campaign: Crows In The Field
-								["races"] = HORDE_ONLY,
-							}),
-							q(35680, {	-- Garrison Campaign: The Fall of Shattrath
-								["races"] = HORDE_ONLY,
-							}),
-							q(35843, {	-- Garrison Campaign: Deep Recon
-								["races"] = HORDE_ONLY,
-							}),
-							q(36117, {	-- Garrison Campaign: The Broken Precipice
-								["provider"] = { "n", 88892 },	-- Nixxie
-								["races"] = HORDE_ONLY,
-							}),
-							q(36219, {	-- Garrison Campaign: The Ring of Blood
-								["description"] = "Offered if you have NOT completed |cFFFFD700The Ring of Trials|r in Nagrand or the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
-							}),
-							q(36280, {	-- Garrison Campaign: The Ring of Blood
-								["description"] = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand.",
-							}),
-							q(36281, {	-- Garrison Campaign: The Ring of Blood
-								["description"] = "Offered if you complete the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
-							}),
-							q(36282, {	-- Garrison Campaign: The Ring of Blood
-								["description"] = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand and the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
-							}),
-							q(35195, {
-								i(119134),	-- Toy
-							}),
-							q(32985, {
-								i(119145),	-- Toy
-							}),
-							q(38567, {	-- Garrison Campaign: War Council
-								["description"] = "Automatically granted upon upgrading your garrison to Rank 3.",
-							}),
-						},
-					}),
 					q(36953, {	-- It's a Matter of Strategy
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
@@ -732,6 +733,15 @@ _.ExpansionFeatures =
 						["g"] = {
 							follower(208),	-- Ahm
 						},
+					}),
+					q(38293, {	-- Sumptuous Fur
+						["providers"] = {
+							{ "n", 91034 },	-- Calvo Klyne (Horde)
+							{ "n", 91025 },	-- Dorothy "Two" (Alliance)
+						},
+						["isDaily"] = true,
+						["cost"] = { "i", 111557, 50 },	-- 50x Sumptuous Fur
+						["lvl"] = 90,
 					}),
 					q(34794, {	-- Taking the Fight to Nagrand
 						["lvl"] = 98,

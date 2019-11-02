@@ -470,6 +470,7 @@ _.Zones =
 						}),
 						i(165728, {	-- Outpost Upgrade: The Great Seal
 							["questID"] = 54226,	-- Mission Start Trigger
+							["races"] = HORDE_ONLY,
 							["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 							["f"] = 55,	-- Consumable
 							["g"] = {

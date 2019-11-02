@@ -119,6 +119,7 @@ _.Zones =
 					}),
 				}),
 				n(138667, {	-- Blighted Monstrosity
+					["isDaily"] = true,
 					["questID"] = 52001,	-- 51699 for WQ
 					["coord"] = { 35.8, 11.6, 896 },
 					["g"] = {

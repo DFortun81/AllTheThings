@@ -29,19 +29,23 @@ _.Zones =
 				["description"] = "If you want to do the Blasted Lands questline before going to Draenor, use the portal in Cleft of Shadow and speak to Thrall rather than accepting this quest.",
 			}),
 			q(43926, {	-- The Legion Returns
+				["isBreadcrumb"] = true,
+				["lvl"] = 98,			
 				["description"] = "This quest is automatically offered when you reach level 98.  To get it to pop up, you may need to relog.",
 			}),
-			q(28790, {
+			q(28790, { -- A Personal Summons (Vashj'ir Starter Quest)
 				["isBreadcrumb"] = true,
-			}),	-- A Personal Summons (Vashj'ir Starter Quest)
+			}),	
 			q(36499),	-- Iron Horde Invasion
 			q(29157),	-- The Zandalari Menace
 			q(49817, {	-- To Northrend! (Horde)
 				["isBreadcrumb"] = true,
+				["lvl"] = 60,
 			}),
 			q(49852, {	-- To Pandaria! (Horde)
 				["sourceQuests"] = { 49864 },	-- Wars on Two Fronts (Pandaria)
 				["isBreadcrumb"] = true,
+				["lvl"] = 80,
 				["races"] = HORDE_ONLY,
 			}),
 			q(28572, {	-- Warchief's Command: Arathi Highlands!
@@ -475,6 +479,7 @@ _.Zones =
 			--
 			q(26365, {	-- Hero's Call: Redridge Mountains!
 				["description"] = "This is a breadcrumb quest and is mutually exclusive with other Redridge Mountains breadcrumbs.  It also seems to be unobtainable at higher levels, so if you want to collect the transmog from this quest then you'll need to do it early.",
+				["lvl"] = 15,
 				["coord"] = { 85.6, 31.8, 84 },
 				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
@@ -489,10 +494,12 @@ _.Zones =
 			}),
 			q(40519, {	-- The Legion Returns (Alliance)
 				["isBreadcrumb"] = true,
+				["lvl"] = 98,
 				["description"] = "This quest is automatically offered when you reach level 98.  To get it to pop up, you may need to relog.",
 			}),
 			q(49846, {	-- Wars on Two Fronts [Cataclysm]
 				["isBreadcrumb"] = true,
+				["lvl"] = 80,
 				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
 				["provider"] = { "i", 156477 },	-- Special Duty Assignments
 				-- The same item is used to start Cataclysm or Pandaria content (your choice).
@@ -502,24 +509,29 @@ _.Zones =
 				["sourceQuests"] = { 49846 },	-- War on Two Fronts (Cataclysm)
 				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 80,
 			}),
 			q(49851, {	-- Cataclysm First Responder (Horde)
 				["sourceQuests"] = { 49846 },	-- War on Two Fronts (Cataclysm)
 				["isBreadcrumb"] = true,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 80,
 			}),
 			q(49864, {	-- Wars on Two Fronts [Pandaria]
 				["isBreadcrumb"] = true,
 				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
 				["provider"] = { "i", 156477 },	-- Special Duty Assignments
+				["lvl"] = 80,
 			}),
 			q(49863, {	-- To Northrend! (Alliance)
 				["isBreadcrumb"] = true,
+				["lvl"] = 60,
 			}),
 			q(49866, {	-- To Pandaria! (Alliance)
 				["sourceQuests"] = { 49864 },	-- Wars on Two Fronts (Pandaria)
 				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 80,
 			}),
 		},
 	}),

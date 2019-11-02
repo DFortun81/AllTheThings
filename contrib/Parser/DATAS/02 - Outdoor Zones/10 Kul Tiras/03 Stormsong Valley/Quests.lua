@@ -958,7 +958,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(56107, {	-- One of the Hive
-					["u"] = 1,	-- Never Available
+					["u"] = 1,	-- Never Available — placeholder replaced with tracking quest
 				}),
 				q(50815, {	-- Orcs Versus Humans
 					["u"] = 1,	-- Never Available
@@ -1239,8 +1239,8 @@ _.Zones =
 					["sourceQuests"] = {
 					--	may also require 50340 'steal them back'.  DOES NOT REQUIRE 'TOTEMS, TOTEMS, TOTEMS;' i picked it up before turning that one in.
 						50367,	-- Anger in a Bottle (didn't appear until i turned this in, in addition to 'run for the hills' + 'war pigs')
-						50363,	-- Run For the Hills 
-						50365,	-- War Pigs
+						50363,	-- War Pigs
+						50365,	-- Run For the Hills 
 					},
 					["provider"] = { "n", 133953 },	-- Sergeant Calvin
 					["coord"] = { 46.7, 73.8, 942 },

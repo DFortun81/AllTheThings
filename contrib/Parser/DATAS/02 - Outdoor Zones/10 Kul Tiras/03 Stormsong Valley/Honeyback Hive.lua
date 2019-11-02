@@ -52,6 +52,7 @@ _.Zones =
 						}),
 						q(57670, {	-- Unbeelievable Quality
 							["provider"] = { "i", 172383 },	-- Collected Tidebloom Honey
+							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(56091, {	-- Usurper's Scent Gland

@@ -506,6 +506,10 @@ app.L = {
 		[-390] = "Interface\\Icons\\inv_misc_coinbag_special",						-- Smuggling Run!
 		[-391] = "Interface\\Icons\\achievement_guildperk_hastyhearth",				-- Stoktron Brewery (alliance)
 		[-392] = "Interface\\Icons\\achievement_guildperk_hastyhearth",				-- Hearthfire Tavern (horde)
+		[-393] = "Interface\\Icons\\achievement_dungeon_icecrown_icecrownentrance",	-- Storming the Citadel
+		[-394] = "Interface\\Icons\\achievement_dungeon_plaguewing",				-- The Plagueworks
+		[-395] = "Interface\\Icons\\achievement_dungeon_crimsonhall",				-- The Crimson Halls
+		[-396] = "Interface\\Icons\\achievement_dungeon_icecrown_frostwinghalls",	-- The Frostwing Halls
 		[-491] = "Interface\\Icons\\inv_misc_ticket_tarot_rogue",					-- Tarot Cards
 		[-494] = "Interface\\Icons\\Ability_Shaman_Ascendance",						-- Miscellaneous
 		[-498] = "Interface\\Icons\\inv_offhand_hyjal_d_01",						-- Twisting Nether (Demon Hunter Order Hall advancement)
@@ -1141,6 +1145,10 @@ app.L = {
 		[-390] = "Smuggler's Den",												-- Smuggler's Den (Spires of Arak)
 		[-391] = "Stoktron Brewery",											-- Stoktron Brewery (Spires of Arak)
 		[-392] = "Hearthfire Tavern",											-- Hearthfire Tavern
+		[-393] = "Storming the Citadel",										-- Storming the Citadel
+		[-394] = "The Plagueworks",												-- The Plagueworks
+		[-395] = "The Crimson Halls",											-- The Crimson Halls
+		[-396] = "The Frostwing Halls",											-- The Frostwing Halls
 -- Blizzard Events and Anniversaries
 -- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-488] = "War Chest",													-- Daily War Chest

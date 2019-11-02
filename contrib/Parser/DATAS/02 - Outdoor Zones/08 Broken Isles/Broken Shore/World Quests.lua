@@ -12,7 +12,6 @@ _.Zones =
 				q(47061),	-- Apocron
 				q(46104),	-- Arachnid Toxicity
 				q(46947),	-- Brutallus
-				q(45531),	-- Creeping Fel
 				q(45969),	-- Defense of the Ancient
 				q(46077),	-- Felbound Spirits
 				q(40390),	-- Hallowed Ground
@@ -20,7 +19,6 @@ _.Zones =
 				q(45743),	-- Judgment of Odyn
 				q(45776),	-- Keys are a Crutch
 				q(45653),	-- Kill it with Fire!
-				q(46308),	-- Leave a Trail
 				q(46046),	-- Life's a Lich
 				q(46754),	-- Magical Beasts
 				q(46755),	-- Mission: Felraging
@@ -97,6 +95,10 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(45358, {	-- Contagion Containment
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(45531, {	-- Creeping Fel
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
@@ -186,6 +188,10 @@ _.Zones =
 				q(45472, {	-- Kraken Eggs
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
+				}),
+				q(46308, {	-- Leave a Trail
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 				q(46948, {	-- Malificus
 					["lvl"] = 110,

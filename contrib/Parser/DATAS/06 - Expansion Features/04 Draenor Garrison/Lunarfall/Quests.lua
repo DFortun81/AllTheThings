@@ -162,6 +162,12 @@ _.ExpansionFeatures =
 							garrisonBuilding(29),	-- Herb Garden lvl 1
 						},
 					}),
+					q(37773, {	-- Death to Amethon!
+						["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 100,
+					}),
 					q(34692, {	-- Delegating on Draenor
 						["sourceQuests"] = { 34646 },	-- Qiana Moonshadow
 						["coord"] = { 40.2, 43.6, 582 },
@@ -693,6 +699,15 @@ _.ExpansionFeatures =
 						["g"] = {
 							follower(208),	-- Ahm
 						},
+					}),
+					q(38293, {	-- Sumptuous Fur
+						["providers"] = {
+							{ "n", 91034 },	-- Calvo Klyne (Horde)
+							{ "n", 91025 },	-- Dorothy "Two" (Alliance)
+						},
+						["isDaily"] = true,
+						["cost"] = { "i", 111557, 50 },	-- 50x Sumptuous Fur
+						["lvl"] = 90,
 					}),
 					q(34674, {	-- Taking the Fight to Nagrand
 						["lvl"] = 98,

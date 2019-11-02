@@ -22,6 +22,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				},
 			}),
 			n(0, {	-- Zone Drops
+				i(33117),	-- Jack-o'-Lantern
 				i(20400),	-- Pumpkin Bag
 			}),
 		},
