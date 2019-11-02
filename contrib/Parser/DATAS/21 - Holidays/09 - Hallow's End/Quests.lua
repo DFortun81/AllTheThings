@@ -574,7 +574,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				}),
 				q(13463, {	-- Candy Bucket — Dalaran : Northrend, Legerdemain Lounge, neutral
 					["isYearly"] = true,
-					["coord"] = { 66.6, 30.1, 125 },
+					["coord"] = { 48.3, 40.8, 125 },
 					["maps"] = { 125 },	-- Dalaran : Northrend
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
@@ -597,7 +597,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				}),
 				q(13474, {	-- Candy Bucket — Dalaran : Northrend, Sunreaver's Sanctuary, Horde
 					["isYearly"] = true,
-					["coord"] = { 48.3, 40.8, 125 },
+					["coord"] = { 66.6, 30.1, 125 },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 125 },	-- Dalaran : Northrend
 					["u"] = 26,	-- Hallow's End
