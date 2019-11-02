@@ -38,6 +38,11 @@ _.NeverImplemented =
 		q(42879),	-- Tome of Illusions - Draenor
 		q(42943),	-- Illusion - Frostbrand
 		q(45435),	-- First Win of the Day (Random BG)
+		q(47144),	-- First Win of the Day (BG Brawl)
+		q(45432),	-- First Win of the Day (2v2)
+		q(45436),	-- First Win of the Day (Skirmish)
+		q(45433),	-- First Win of the Day (3v3)
+		q(45434),	-- First Win of the Day (10v10)
 		
 		-- Events/Holidays
 		q(11320),	-- [NYI] Now this is Ram Racing... Almost. (Brewfest)
