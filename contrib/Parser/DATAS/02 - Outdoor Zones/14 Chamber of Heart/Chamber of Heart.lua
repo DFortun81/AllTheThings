@@ -511,6 +511,37 @@ _.Zones =
 								i(173363),	-- Vessel of Horrific Visions
 							},
 						}),
+						q(57374, {	-- Into the Darkest Depths
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57373,	-- Descending Into Madness
+						}),
+						q(58615, {	-- Whispers in the Dark
+							["lvl"] = 120,
+							["coord"] = { 50.1, 59.1, 1473 },
+							["provider"] = { "n", 161805 },	-- Magni Bronzebeard
+							["sourceQuest"] = 57374,	-- Into the Darkest Depths
+						}),
+						q(57524, {	-- Accessing the Archives
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57374,	-- Into the Darkest Depths
+							["g"] = {
+								spell(315863),	-- Archival Research Database (unlocks the Horrific Visions upgrades)
+							},
+						}),
+						q(57378, {	-- These Dark Materials
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["repeatable"] = true,
+							["sourceQuest"] = 57374,	-- Into the Darkest Depths
+							["g"] = {	-- TODO: confirm this is the item you recieve. The book currently doesn't drop
+								i(171354),	-- Horrific Core
+							},
+						}),
 					}),
 					n(-2,   {	-- Vendors
 						["lvl"] = 120,

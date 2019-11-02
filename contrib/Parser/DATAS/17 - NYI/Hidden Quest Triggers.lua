@@ -1317,6 +1317,8 @@ _.NeverImplemented =
 		q(57027),	-- looted the chest in front of Thrall's image at the end of the scenario. Doesn't matter if you defeat him or not
 		q(57360),	-- looted the chest in front of Alleria's image at the end of the scenario. Doesn't matter if you defeat her or not
 		
+		-- 57841, 58581 -- both triggered on the first run of the Vision of Orgrimmar after unlocking it, then killing Thrall immediately. Need to determine what each ID means
+		
 		q(58578),	-- looted the chest from cleansing the Dwarven District at the end of the scenario (could possibly be from looting "Spark of Inspiration" Rank 2)
 	}),
 };
