@@ -55,6 +55,7 @@ _.ExpansionFeatures =
 							i(173372, {	-- Cache of the Black Empire
 								currency(1755),	-- Coalescing Visions
 								i(173178),	-- Corrupted Greaves -- TODO:: almost certainly a full ilvl 415 set for all armor types. Same ones sold by blacktalon guards for visions?
+								i(173456),	-- Plate Crushers -- probably scales just like world quest loot
 							}),
 						},
 					}),
@@ -282,6 +283,10 @@ _.ExpansionFeatures =
 				}),
 				n(-34,  {	-- World Quests
 					-- The Unsealed Tomb: (69.9, 59.9)
+					q(57585, {	-- Abyssal Santuary
+						["lvl"] = 120,
+						["isWorldQuest"] = true,
+					}),
 					q(55356, {	-- Beacon of the Sun King
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
