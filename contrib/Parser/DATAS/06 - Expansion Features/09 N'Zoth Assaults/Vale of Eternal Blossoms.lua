@@ -6,7 +6,13 @@ _.ExpansionFeatures =
 {
 	m(1530, {	-- Vale of Eternal Blossoms
 		["lvl"] = 120,
-		["maps"] = { 1570 },	-- Vale of Eternal Blossoms (ported from obelisk in Uldum. Maybe needs to be separated?)
+		["maps"] = {
+			1544,	-- Mogu'Shan Palace (The Engine of Nalak'sha scenario)
+			1545,	-- Mogu'Shan Palace (The Engine of Nalak'sha scenario)
+			1548,	-- Mogu'Shan Vaults (The Engine of Nalak'sha scenario)
+			1549,	-- Mogu'Shan Vaults (The Engine of Nalak'sha scenario)
+			1570,	-- Vale of Eternal Blossoms (ported from obelisk in Uldum. probably should be separated)
+		},
 		["g"] = {
 			-- this assault header is probably not necessary now. The zone itself is remade
 			-- and assaults themselves don't have a whole of content unrelated to dailies
@@ -40,6 +46,15 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 156003 },	-- Lorewalker Cho
 						["sourceQuest"] = 56538,	-- Clans of the Mogu
 					}),
+					q(56542, {	-- Restored Hope
+						["coord"] = { 45.3, 74.3, 1530 },
+						["provider"] = { "n", 154418 },	-- Ra-den
+						["sourceQuest"] = 56541,	-- The Engine of Nalak'sha
+						["g"] = {
+							i(168573),	-- Death-Resistant Leaf (Rank 1)
+							i(168436),	-- Focused Star Point (Rank 1)
+						},
+					}),
 					q(56540, {	-- Proof of Tenacity
 						["coord"] = { 44.7, 73.9, 1530 },
 						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
@@ -50,6 +65,11 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "n", 154677 },	-- Forgemaster Han
 						["sourceQuest"] = 56771,	-- Time-Llost Warriors
+					}),
+					q(56541, {	-- The Engine of Nalak'sha
+						["coord"] = { 45.3, 74.3, 1530 },
+						["provider"] = { "n", 154418 },	-- Ra-den
+						["sourceQuest"] = 56540,	-- Proof of Tenacity
 					}),
 					q(56771, {	-- Time-Lost Warriors
 						["coord"] = { 83.1, 27.2, 1530 },
