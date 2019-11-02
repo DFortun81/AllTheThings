@@ -9,7 +9,11 @@ _.Zones =
 			m(1021, {	-- Chamber of Heart
 				["achievementID"] = 12918,	-- Have a Heart
 				["description"] = "|cff66ccffThe Chamber of Heart is a titan chamber at the heart of the world. It is accessed via the Titan Translocator in Silithus. Like the Hall of Communion, it is possible here to communicate with Azeroth, the world-soul of the planet. Magni brings a hero here at Azeroth's request to obtain the [Heart of Azeroth], a necklace that can gather the  [Azerite] - the planet's lifeblood - necessary to heal Azeroth's wounds. The seal on the chamber protects Azeroth's world-soul.|r",
-				["maps"] = { 1473 },	-- Chamber of Heart (Repaired)
+				["maps"] = {
+					1473,	-- Chamber of Heart (Repaired)
+					1538,	-- scenario map for "Beginning the Descent"
+					1539,	-- scenario map for "Beginning the Descent"
+				},
 				["lvl"] = 110,
 				["g"] = {
 					n(-4,   {	-- Achievements
@@ -461,6 +465,51 @@ _.Zones =
 							["coord"] = { 59.6, 39.1, 379 },
 							["provider"] = { "n", 155336 },	-- Mogu Warrior
 							["sourceQuest"] = 56536,	-- It's Never Easy
+						}),
+						q(57220, {	-- Power Protocol Initiation
+							["lvl"] = 120,
+							["coord"] = { 50.1, 59.1, 1473 },
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
+							["sourceQuest"] = 56542,	-- Restored Hope
+						}),
+						q(57221, {	-- Re-Origination
+							["lvl"] = 120,
+							["coord"] = { 50.1, 59.1, 1473 },
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
+							["sourceQuest"] = 57220,	-- Power Protocol Initiation
+						}),
+						q(57290, {	-- Beginning the Descent
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57222,	-- Investigating the Halls
+							["g"] = {
+								i(169223),	-- Ashjra'kamas, Shroud of Resolve
+							},
+						}),
+						q(57362, {	-- Deeper Into the Darkness
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57290,	-- Beginning the Descent
+						}),
+						q(58634, {	-- Opening the Gateway
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57362,	-- Deeper Into the Darkness
+							["g"] = {
+								spell(315864),	-- Tenebrous Conduit (unlocks horrific visions)
+							},
+						}),
+						q(57373, {	-- Descending Into Madness
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 58634,	-- Opening the Gateway
+							["g"] = {
+								i(173363),	-- Vessel of Horrific Visions
+							},
 						}),
 					}),
 					n(-2,   {	-- Vendors

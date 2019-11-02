@@ -8,6 +8,7 @@ _.ExpansionFeatures =
 		["lvl"] = 120,
 		["maps"] = {
 			1540,	-- Halls of Origination (storyline version)
+			1541,	-- Halls of Origination (Investigating the Halls scenario)
 			1542,	-- Halls of Origination (storyline version, floor 3)
 		},
 		["g"] = {
@@ -95,6 +96,11 @@ _.ExpansionFeatures =
 						["g"] = {
 							currency(1755),	-- Coalescing Visions
 						},
+					}),
+					q(57222, {	-- Investigating the Halls
+						["coord"] = { 68.9, 52.7, 1527 },
+						["provider"] = { "n", 154532 },	-- Magni Bronzebeard
+						["sourceQuest"] = 57221,	-- Re-origination
 					}),
 					q(58151, {	-- Minions of N'Zoth
 						["u"] = 1,	-- removed from PTR build
