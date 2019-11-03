@@ -13,7 +13,7 @@ _.Mounts =
 		un(2, i(83086)), 	-- Heart of the Nightwing
 		un(6, i(128425)),	-- Illidari Felstalker
 		un(6, i(85870)),	-- Imperial Quilen
-		i(164571),			-- Meat Wagon
+		un(3, i(164571)),	-- Meat Wagon
 		un(3, i(83086)),	-- Obsidian Nightwing
 		un(16, i(151617)),	-- Orgrimmar Interceptor Mount
 		un(3, i(143631)),	-- Primal Flamesaber

@@ -565,8 +565,9 @@ _.Zones =
 					["requireSkill"] = 182,	-- Herbalism
 				}),
 				q(42174, {	-- Champions of Elune
-					["lvl"] = 110,
 					["isWorldQuest"] = true,
+					["maps"] = { 697 },	-- Azshara (scenario version)
+					["lvl"] = 110,
 				}),
 				q(43738, {	-- Coastal Gloom
 					["lvl"] = 110,
