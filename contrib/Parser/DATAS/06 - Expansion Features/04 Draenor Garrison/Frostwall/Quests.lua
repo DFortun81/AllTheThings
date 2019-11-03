@@ -47,6 +47,309 @@ _.ExpansionFeatures =
 							}),
 						},
 					}),
+					n(89753, { 	-- High Overlord Saurfang
+						["description"] = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
+						["coord"] = { 40.2, 56.7, 590 },
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(123975, {	-- Greater Bounty Spoils
+								["description"] = "This satchel is an award from some of the weekly garrison raid quests that can be picked up from High Overlord Saurfang and Muradin Bronzebeard.",
+								["g"] = {
+									i(114111, {	-- Formidable Armament
+										i(115335),	-- Formidable Axe
+										i(115338),	-- Formidable Dagger
+										i(115336),	-- Formidable Greataxe
+										i(115337),	-- Formidable Longbow
+										i(115340),	-- Formidable Polearm
+										i(115342),	-- Formidable Scepter
+										i(115341),	-- Formidable Spire
+										i(115339),	-- Formidable Warmace
+									}),
+									i(114088, {	-- Formidable Bracers
+										i(114554),	-- Aerial Acolyte's Bracers
+										i(114557),	-- Crimson Carapace Bracers
+										i(114556),	-- Sickened Scale Bracers
+										i(114555),	-- Yeti-Hide Bracers
+									}),
+									i(114092, {	-- Formidable Choker
+										i(114602),	-- Bladeblunter Gorget
+										i(114600),	-- Chain of Misty Vapors
+										i(114598),	-- Choker of Crimson Cuts
+										i(114601),	-- Groon-Tooth Locket
+										i(114599),	-- Scorch-Sear Necklace
+									}),
+									i(119125, {	-- Formidable Cloak
+										i(114607),	-- Bloodstained Miser's Cloak
+										i(114604),	-- Cloak of Blind Focus
+										i(114605),	-- Doomwake Drape
+										i(114606),	-- Fathom-Ripped Cape
+										i(114608),	-- Ultimate Greatcloak
+									}),
+									i(119115, {	-- Formidable Gauntlets
+										i(114566),	-- Aerial Acolyte's Gloves
+										i(114569),	-- Crimson Carapace Gauntlets
+										i(114568),	-- Sickened Scale Gauntlets
+										i(114567),	-- Yeti-Hide Gauntlets
+									}),
+									i(119121, {	-- Formidable Girdle
+										i(114582),	-- Aerial Acolyte's Cord
+										i(114585),	-- Crimson Carapace Girdle
+										i(114584),	-- Sickened Scale Belt
+										i(114583),	-- Yeti-Hide Belt
+									}),
+									i(119117, {	-- Formidable Hood
+										i(114570),	-- Aerial Acolyte's Hood
+										i(114573),	-- Crimson Carapace Greathelm
+										i(114572),	-- Sickened Scale Helm
+										i(114571),	-- Yeti-Hide Hood
+									}),
+									i(119119, {	-- Formidable Leggings
+										i(114574),	-- Aerial Acolyte's Trousers
+										i(114577),	-- Crimson Carapace Legplates
+										i(114576),	-- Sickened Scale Legguards
+										i(114575),	-- Yeti-Hide Legguards
+									}),
+									i(119123, {	-- Formidable Ring
+										i(114593),	-- Draenic Sorcerer's Mark
+										i(114592),	-- Grimtouch Seal
+										i(114595),	-- Gronn Bone Seal
+										i(114596),	-- Opalescent Tri-Ring
+										i(114594),	-- Soft-Stream Band
+									}),
+									i(114089, {	-- Formidable Robes
+										i(114561),	-- Aerial Acolyte's Robes
+										i(114560),	-- Crimson Carapace Breastplate
+										i(114559),	-- Sickened Scale Chestguard
+										i(114558),	-- Yeti-Hide Chestguard
+									}),
+									i(114091, {	-- Formidable Spaulders
+										i(114578),	-- Aerial Acolyte's Mantle
+										i(114581),	-- Crimson Carapace Shoulderguard
+										i(114580),	-- Sickened Scale Spaulders
+										i(114579),	-- Yeti-Hide Spaulders
+									}),
+									i(114090, {	-- Formidable Treads
+										i(114562),	-- Aerial Acolyte's Sandals
+										i(114565),	-- Crimson Carapace Greaves
+										i(114564),	-- Sickened Scale Boots
+										i(114563),	-- Yeti-Hide Boots
+									}),
+									i(114112, {	-- Grandiose Armament
+										i(115327),	-- Grandiose Axe
+										i(115330),	-- Grandiose Dagger
+										i(115328),	-- Grandiose Greataxe
+										i(115329),	-- Grandiose Longbow
+										i(115332),	-- Grandiose Polearm
+										i(115334),	-- Grandiose Scepter
+										i(115333),	-- Grandiose Spire
+										i(115331),	-- Grandiose Warmace
+									}),
+									i(114082, {	-- Grandiose Bracers
+										i(114494),	-- Bracers Of Determined Resolve
+										i(114493),	-- Bracers of Volatile Ice
+										i(114496),	-- Crazed Bomber's Bracers
+										i(114495),	-- Undying Bracers
+									}),
+									i(119124, {	-- Grandiose Cloak
+										i(114544),	-- Drape of Surging Stars
+										i(114545),	-- Hearthhealer Cloak
+										i(114543),	-- Keen-Eye Forestcloak
+										i(114547),	-- Reinforced Moonsong Cloak
+										i(114546),	-- Warmonger's Bloodcloak
+									}),
+									i(119114, {	-- Grandiose Gauntlets
+										i(114508),	-- Crazed Bomber's Gauntlets
+										i(114506),	-- Gauntlets of Determined Resolve
+										i(114505),	-- Gloves of Volatile Ice
+										i(114507),	-- Undying Gauntlets
+									}),
+									i(119120, {	-- Grandiose Girdle
+										i(114522),	-- Belt of Determined Resolve
+										i(114521),	-- Cord of Volatile Ice
+										i(114524),	-- Crazed Bomber's Girdle
+										i(114523),	-- Undying Belt
+									}),
+									i(119116, {	-- Grandiose Hood
+										i(114512),	-- Crazed Bomber's Greathelm
+										i(114510),	-- Hood of Determined Resolve
+										i(114509),	-- Hood of Volatile Ice
+										i(114511),	-- Undying Helm
+									}),
+									i(119118, {	-- Grandiose Leggings
+										i(114516),	-- Crazed Bomber's Legplates
+										i(114514),	-- Legguards of Determined Resolve
+										i(114513),	-- Trousers of Volatile Ice
+										i(114515),	-- Undying Legguards
+									}),
+									i(119122, {	-- Grandiose Ring
+										i(114531),	-- Daggerfinger Ring
+										i(114532),	-- Frostfire Band
+										i(114533),	-- Loop of Shielding Light
+										i(114535),	-- Officiant's Formidable Seal
+										i(114534),	-- Wrenchtooth Signet
+									}),
+									i(114083, {	-- Grandiose Robes
+										i(114497),	-- Chestguard of Determined Resolve
+										i(114499),	-- Crazed Bomber's Breastplate
+										i(114500),	-- Robes of Volatile Ice
+										i(114498),	-- Undying Chestguard
+									}),
+									i(114085, {	-- Grandiose Spaulders
+										i(114520),	-- Crazed Bomber's Shoulderguard
+										i(114517),	-- Mantle of Volatile Ice
+										i(114518),	-- Spaulders of Determined Resolve
+										i(114519),	-- Undying Spaulders
+									}),
+									i(114084, {	-- Grandiose Treads
+										i(114502),	-- Boots of Determined Resolve
+										i(114504),	-- Crazed Bomber's Greaves
+										i(114501),	-- Sandals of Volatile Ice
+										i(114503),	-- Undying Boots
+									}),
+								},
+							}),
+							q(37757, {	-- Arcane Sanctum: Ko'ragh
+								["races"] = HORDE_ONLY,
+								["isWeekly"] = true,
+								["g"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							}),
+							q(37780, {	-- Auchindoun
+								["races"] = HORDE_ONLY,
+								["isDaily"] = true,
+								["g"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							}),
+							q(37765, {	-- Blackhand's Crucible: Blackhand
+								["races"] = HORDE_ONLY,
+								["isWeekly"] = true,
+								["g"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							}),
+							q(37781, {	-- Bloodmaul Slag Mines
+								["races"] = HORDE_ONLY,
+								["isDaily"] = true,
+								["g"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							}),
+							q(39231, {	-- Destructor's Rise
+								["races"] = HORDE_ONLY,
+								["isWeekly"] = true,
+								["g"] = {
+									currency(823),	-- Apexis Crystal x1000
+								},
+							}),
+							q(37782, {	-- Grimrail Depot
+								["races"] = HORDE_ONLY,
+								["isDaily"] = true,
+								["g"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							}),
+							q(37758, {	-- Imperator's Rise: Imperator Mar'gok
+								["races"] = HORDE_ONLY,
+								["isWeekly"] = true,
+								["g"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							}),
+							q(37764, {	-- Iron Assembly: Admiral Gar'an
+								["races"] = HORDE_ONLY,
+								["isWeekly"] = true,
+								["g"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							}),
+							q(37783, {	-- Iron Docks
+								["races"] = HORDE_ONLY,
+								["isDaily"] = true,
+								["g"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							}),
+							q(39225, {	-- Maw of Souls
+								["races"] = HORDE_ONLY,
+								["isDaily"] = true,
+								["g"] = {
+									currency(823),	-- Apexis Crystal x1000
+								},
+							}),
+							q(39221, {	-- Pits of Mannoroth
+								["races"] = HORDE_ONLY,
+								["isDaily"] = true,
+								["g"] = {
+									currency(823),	-- Apexis Crystal x1000
+								},
+							}),
+							q(37784, {	-- Shadowmoon Burial Grounds
+								["races"] = HORDE_ONLY,
+								["isDaily"] = true,
+								["g"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							}),
+							q(37785, {	-- Skyreach
+								["races"] = HORDE_ONLY,
+								["isDaily"] = true,
+								["g"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							}),
+							q(37762, {	-- Slagworks: Heart of the Mountain
+								["races"] = HORDE_ONLY,
+								["isWeekly"] = true,
+								["g"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							}),
+							q(39228, {	-- Temple of Tyranny
+								["races"] = HORDE_ONLY,
+								["isDaily"] = true,
+								["g"] = {
+									currency(823),	-- Apexis Crystal x1000
+								},
+							}),
+							q(37763, {	-- The Black Forge: Kromog
+								["races"] = HORDE_ONLY,
+								["isWeekly"] = true,
+								["g"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							}),
+							q(39232, {	-- The Black Gate
+								["races"] = HORDE_ONLY,
+								["isDaily"] = true,
+								["g"] = {
+									currency(823),	-- Apexis Crystal x1000
+								},
+							}),
+							q(37786, {	-- The Everbloom
+								["races"] = HORDE_ONLY,
+								["isDaily"] = true,
+								["g"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							}),
+							q(37787, {	-- Upper Blackrock Spire
+								["races"] = HORDE_ONLY,
+								["isDaily"] = true,
+								["g"] = {
+									currency(824),	-- Garrison Resources x175
+								},
+							}),
+							q(37756, {	-- Walled City: Brackenspore
+								["races"] = HORDE_ONLY,
+								["isWeekly"] = true,
+								["g"] = {
+									i(123975),	-- Greater Bounty Spoils
+								},
+							}),
+						},
+					}),
 					q(38243, {	-- A Bit of Ore
 						["providers"] = {
 							{ "n", 90894 },	-- Alexi Hackercam
@@ -353,308 +656,20 @@ _.ExpansionFeatures =
 							recipe(187639),	-- Immaculate Versatility Taladite
 						},
 					}),
-					n(89753, { 	-- High Overlord Saurfang
-						["description"] = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
-						["coord"] = { 40.2, 56.7, 590 },
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(123975, {	-- Greater Bounty Spoils
-								["description"] = "This satchel is an award from some of the weekly garrison raid quests that can be picked up from High Overlord Saurfang and Muradin Bronzebeard.",
-								["g"] = {
-									i(114111, {	-- Formidable Armament
-										i(115335),	-- Formidable Axe
-										i(115338),	-- Formidable Dagger
-										i(115336),	-- Formidable Greataxe
-										i(115337),	-- Formidable Longbow
-										i(115340),	-- Formidable Polearm
-										i(115342),	-- Formidable Scepter
-										i(115341),	-- Formidable Spire
-										i(115339),	-- Formidable Warmace
-									}),
-									i(114088, {	-- Formidable Bracers
-										i(114554),	-- Aerial Acolyte's Bracers
-										i(114557),	-- Crimson Carapace Bracers
-										i(114556),	-- Sickened Scale Bracers
-										i(114555),	-- Yeti-Hide Bracers
-									}),
-									i(114092, {	-- Formidable Choker
-										i(114602),	-- Bladeblunter Gorget
-										i(114600),	-- Chain of Misty Vapors
-										i(114598),	-- Choker of Crimson Cuts
-										i(114601),	-- Groon-Tooth Locket
-										i(114599),	-- Scorch-Sear Necklace
-									}),
-									i(119125, {	-- Formidable Cloak
-										i(114607),	-- Bloodstained Miser's Cloak
-										i(114604),	-- Cloak of Blind Focus
-										i(114605),	-- Doomwake Drape
-										i(114606),	-- Fathom-Ripped Cape
-										i(114608),	-- Ultimate Greatcloak
-									}),
-									i(119115, {	-- Formidable Gauntlets
-										i(114566),	-- Aerial Acolyte's Gloves
-										i(114569),	-- Crimson Carapace Gauntlets
-										i(114568),	-- Sickened Scale Gauntlets
-										i(114567),	-- Yeti-Hide Gauntlets
-									}),
-									i(119121, {	-- Formidable Girdle
-										i(114582),	-- Aerial Acolyte's Cord
-										i(114585),	-- Crimson Carapace Girdle
-										i(114584),	-- Sickened Scale Belt
-										i(114583),	-- Yeti-Hide Belt
-									}),
-									i(119117, {	-- Formidable Hood
-										i(114570),	-- Aerial Acolyte's Hood
-										i(114573),	-- Crimson Carapace Greathelm
-										i(114572),	-- Sickened Scale Helm
-										i(114571),	-- Yeti-Hide Hood
-									}),
-									i(119119, {	-- Formidable Leggings
-										i(114574),	-- Aerial Acolyte's Trousers
-										i(114577),	-- Crimson Carapace Legplates
-										i(114576),	-- Sickened Scale Legguards
-										i(114575),	-- Yeti-Hide Legguards
-									}),
-									i(119123, {	-- Formidable Ring
-										i(114593),	-- Draenic Sorcerer's Mark
-										i(114592),	-- Grimtouch Seal
-										i(114595),	-- Gronn Bone Seal
-										i(114596),	-- Opalescent Tri-Ring
-										i(114594),	-- Soft-Stream Band
-									}),
-									i(114089, {	-- Formidable Robes
-										i(114561),	-- Aerial Acolyte's Robes
-										i(114560),	-- Crimson Carapace Breastplate
-										i(114559),	-- Sickened Scale Chestguard
-										i(114558),	-- Yeti-Hide Chestguard
-									}),
-									i(114091, {	-- Formidable Spaulders
-										i(114578),	-- Aerial Acolyte's Mantle
-										i(114581),	-- Crimson Carapace Shoulderguard
-										i(114580),	-- Sickened Scale Spaulders
-										i(114579),	-- Yeti-Hide Spaulders
-									}),
-									i(114090, {	-- Formidable Treads
-										i(114562),	-- Aerial Acolyte's Sandals
-										i(114565),	-- Crimson Carapace Greaves
-										i(114564),	-- Sickened Scale Boots
-										i(114563),	-- Yeti-Hide Boots
-									}),
-									i(114112, {	-- Grandiose Armament
-										i(115327),	-- Grandiose Axe
-										i(115330),	-- Grandiose Dagger
-										i(115328),	-- Grandiose Greataxe
-										i(115329),	-- Grandiose Longbow
-										i(115332),	-- Grandiose Polearm
-										i(115334),	-- Grandiose Scepter
-										i(115333),	-- Grandiose Spire
-										i(115331),	-- Grandiose Warmace
-									}),
-									i(114082, {	-- Grandiose Bracers
-										i(114494),	-- Bracers Of Determined Resolve
-										i(114493),	-- Bracers of Volatile Ice
-										i(114496),	-- Crazed Bomber's Bracers
-										i(114495),	-- Undying Bracers
-									}),
-									i(119124, {	-- Grandiose Cloak
-										i(114544),	-- Drape of Surging Stars
-										i(114545),	-- Hearthhealer Cloak
-										i(114543),	-- Keen-Eye Forestcloak
-										i(114547),	-- Reinforced Moonsong Cloak
-										i(114546),	-- Warmonger's Bloodcloak
-									}),
-									i(119114, {	-- Grandiose Gauntlets
-										i(114508),	-- Crazed Bomber's Gauntlets
-										i(114506),	-- Gauntlets of Determined Resolve
-										i(114505),	-- Gloves of Volatile Ice
-										i(114507),	-- Undying Gauntlets
-									}),
-									i(119120, {	-- Grandiose Girdle
-										i(114522),	-- Belt of Determined Resolve
-										i(114521),	-- Cord of Volatile Ice
-										i(114524),	-- Crazed Bomber's Girdle
-										i(114523),	-- Undying Belt
-									}),
-									i(119116, {	-- Grandiose Hood
-										i(114512),	-- Crazed Bomber's Greathelm
-										i(114510),	-- Hood of Determined Resolve
-										i(114509),	-- Hood of Volatile Ice
-										i(114511),	-- Undying Helm
-									}),
-									i(119118, {	-- Grandiose Leggings
-										i(114516),	-- Crazed Bomber's Legplates
-										i(114514),	-- Legguards of Determined Resolve
-										i(114513),	-- Trousers of Volatile Ice
-										i(114515),	-- Undying Legguards
-									}),
-									i(119122, {	-- Grandiose Ring
-										i(114531),	-- Daggerfinger Ring
-										i(114532),	-- Frostfire Band
-										i(114533),	-- Loop of Shielding Light
-										i(114535),	-- Officiant's Formidable Seal
-										i(114534),	-- Wrenchtooth Signet
-									}),
-									i(114083, {	-- Grandiose Robes
-										i(114497),	-- Chestguard of Determined Resolve
-										i(114499),	-- Crazed Bomber's Breastplate
-										i(114500),	-- Robes of Volatile Ice
-										i(114498),	-- Undying Chestguard
-									}),
-									i(114085, {	-- Grandiose Spaulders
-										i(114520),	-- Crazed Bomber's Shoulderguard
-										i(114517),	-- Mantle of Volatile Ice
-										i(114518),	-- Spaulders of Determined Resolve
-										i(114519),	-- Undying Spaulders
-									}),
-									i(114084, {	-- Grandiose Treads
-										i(114502),	-- Boots of Determined Resolve
-										i(114504),	-- Crazed Bomber's Greaves
-										i(114501),	-- Sandals of Volatile Ice
-										i(114503),	-- Undying Boots
-									}),
-								},
-							}),
-							q(37757, {	-- Arcane Sanctum: Ko'ragh
-								["races"] = HORDE_ONLY,
-								["isWeekly"] = true,
-								["g"] = {
-									i(123975),	-- Greater Bounty Spoils
-								},
-							}),
-							q(37780, {	-- Auchindoun
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									currency(824),	-- Garrison Resources x175
-								},
-							}),
-							q(37765, {	-- Blackhand's Crucible: Blackhand
-								["races"] = HORDE_ONLY,
-								["isWeekly"] = true,
-								["g"] = {
-									i(123975),	-- Greater Bounty Spoils
-								},
-							}),
-							q(37781, {	-- Bloodmaul Slag Mines
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									currency(824),	-- Garrison Resources x175
-								},
-							}),
-							q(39231, {	-- Destructor's Rise
-								["races"] = HORDE_ONLY,
-								["isWeekly"] = true,
-								["g"] = {
-									currency(823),	-- Apexis Crystal x1000
-								},
-							}),
-							q(37782, {	-- Grimrail Depot
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									currency(824),	-- Garrison Resources x175
-								},
-							}),
-							q(37758, {	-- Imperator's Rise: Imperator Mar'gok
-								["races"] = HORDE_ONLY,
-								["isWeekly"] = true,
-								["g"] = {
-									i(123975),	-- Greater Bounty Spoils
-								},
-							}),
-							q(37764, {	-- Iron Assembly: Admiral Gar'an
-								["races"] = HORDE_ONLY,
-								["isWeekly"] = true,
-								["g"] = {
-									i(123975),	-- Greater Bounty Spoils
-								},
-							}),
-							q(37783, {	-- Iron Docks
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									currency(824),	-- Garrison Resources x175
-								},
-							}),
-							q(39225, {	-- Maw of Souls
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									currency(823),	-- Apexis Crystal x1000
-								},
-							}),
-							q(39221, {	-- Pits of Mannoroth
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									currency(823),	-- Apexis Crystal x1000
-								},
-							}),
-							q(37784, {	-- Shadowmoon Burial Grounds
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									currency(824),	-- Garrison Resources x175
-								},
-							}),
-							q(37785, {	-- Skyreach
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									currency(824),	-- Garrison Resources x175
-								},
-							}),
-							q(37762, {	-- Slagworks: Heart of the Mountain
-								["races"] = HORDE_ONLY,
-								["isWeekly"] = true,
-								["g"] = {
-									i(123975),	-- Greater Bounty Spoils
-								},
-							}),
-							q(39228, {	-- Temple of Tyranny
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									currency(823),	-- Apexis Crystal x1000
-								},
-							}),
-							q(37763, {	-- The Black Forge: Kromog
-								["races"] = HORDE_ONLY,
-								["isWeekly"] = true,
-								["g"] = {
-									i(123975),	-- Greater Bounty Spoils
-								},
-							}),
-							q(39232, {	-- The Black Gate
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									currency(823),	-- Apexis Crystal x1000
-								},
-							}),
-							q(37786, {	-- The Everbloom
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									currency(824),	-- Garrison Resources x175
-								},
-							}),
-							q(37787, {	-- Upper Blackrock Spire
-								["races"] = HORDE_ONLY,
-								["isDaily"] = true,
-								["g"] = {
-									currency(824),	-- Garrison Resources x175
-								},
-							}),
-							q(37756, {	-- Walled City: Brackenspore
-								["races"] = HORDE_ONLY,
-								["isWeekly"] = true,
-								["g"] = {
-									i(123975),	-- Greater Bounty Spoils
-								},
-							}),
+					q(38296, {	-- Herbs Galore
+						["providers"] = {
+							{ "n", 91031 },	-- Nicholas Mitrik (Horde)
+							{ "n", 91404 },	-- Samantha Scarlet (Alliance)
 						},
+						["isDaily"] = true,
+						["cost"] = {
+							{ "i", 109125, 10 },	-- 10x Fireweed
+							{ "i", 109126, 10 },	-- 10x Gorgrond Flytrap
+							{ "i", 109128, 10 },	-- 10x Nagrand Arrowbloom
+							{ "i", 109127, 10 },	-- 10x Starflower
+							{ "i", 109129, 10 },	-- 10x Talador Orchid
+						},
+						["lvl"] = 90,
 					}),
 					q(36953, {	-- It's a Matter of Strategy
 						["races"] = HORDE_ONLY,

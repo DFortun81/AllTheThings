@@ -65,6 +65,23 @@ _.Zones =
 								}),
 							},
 						}),
+						q(52948, {	-- Call to Arms: Tiragarde Sound
+							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
+							["isWeekly"] = true,
+							["coord"] = { 56.2, 26.0, 1161 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 120,
+							["g"] = {
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
+								}),
+							},
+						}),
 						q(52950, { 	-- Call to Arms: Vol'dun
 							["isWeekly"] = true,
 							["coord"] = { 56.4, 26.0, 1161 },

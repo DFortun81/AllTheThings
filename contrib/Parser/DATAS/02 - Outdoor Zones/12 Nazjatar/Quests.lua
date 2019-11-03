@@ -623,14 +623,6 @@ _.Zones =
 				["coord"] = { 48.7, 60.6, 1355 },
 				["races"] = HORDE_ONLY,
 			}),
-			q(52948, {	-- Call to Arms: Tirigarde Sound
-				["provider"] = { "n", 154640 },	-- Grand Marshall Tremblade
-				["coord"] = { 38.0, 55.3, 1355 },
-				["races"] = ALLIANCE_ONLY,
-				["altQuests"] = { 55175 },
-				["isWeekly"] = true,
-				["sourceQuest"] = 55175,	-- Where the Road Leads
-			}),
 			q(52956, {	-- Call to Arms: Tirigarde Sound
 				["provider"] = { "n", 154641 },	-- High Warlord Volrath
 				["coord"] = { 48.7, 60.6, 1355 },

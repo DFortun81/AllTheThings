@@ -64,6 +64,11 @@ _.Zones =
 					["filterID"] = 101,	-- Battle Pet
 					["lvl"] = 110,
 				}),
+				q(49046, {	-- Gnasher
+					["isWorldQuest"] = true,
+					["filterID"] = 101,	-- Battle Pet
+					["lvl"] = 110,
+				}),
 				q(48287, {	-- Harvesters of Sorrow
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
