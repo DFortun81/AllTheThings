@@ -961,16 +961,17 @@ _.NeverImplemented =
 		q(53409),	-- not sure what triggered this -- i won an epic BG and also capped on conquest for the week
 		q(54180),	-- Quest — capping 500 Conquest
 		-- all 3 'secret supply chest' quests trigger at once.  possibly for 3 potential chests in the zone?  not sure why horde/alliance would have one shared quest and two different quests, though.
-		q(54720),	-- Zuldazar Secret Supply Chest (playing as Horde)
-		q(55391),	-- Zuldazar Secret Supply Chest (playing as Horde and Alliance)
-		q(53640),	-- Secret Supply Chest in Zuldazar (as Horde) / Zuldazar, Tiragarde, Nazmir, Vol'dun, Drustvar (as Alliance) (it probably triggers on both factions in all old BfA zones)
-		q(54718),	-- Vol'dun Secret Supply Chest (playing as Alliance)
-		q(55389),	-- Vol'dun Secret Supply Chest (playing as Alliance)
+		q(55375),	-- Drustvar Secret Supply Chest (playing as Alliance)
+		q(54715),	-- Drustvar Secret Supply Chest (playing as Alliance)
+		q(54717),	-- Nazmir Secret Supply Chest (playing as Alliance)
+		q(55387),	-- Nazmir Secret Supply Chest (playing as Alliance)
 		q(54714),	-- Tiragarde Sound Secret Supply Chest
 		q(55347),	-- Tiragarde Sound Secret Supply Chest
-		q(55387),	-- Nazmir Secret Supply Chest (playing as Alliance)
-		q(54715),	-- Drustvar Secret Supply Chest (playing as Alliance)
-		q(55375),	-- Drustvar Secret Supply Chest (playing as Alliance)
+		q(54718),	-- Vol'dun Secret Supply Chest (playing as Alliance)
+		q(55389),	-- Vol'dun Secret Supply Chest (playing as Alliance)
+		q(54720),	-- Zuldazar Secret Supply Chest (playing as Horde)
+		q(55391),	-- Zuldazar Secret Supply Chest (playing as Horde and Alliance)
+		q(53640),	-- Zuldazar Secret Supply Chest (as Horde) / Zuldazar, Tiragarde, Nazmir, Vol'dun, Drustvar (as Alliance) (it probably triggers on both factions in all old BfA zones)
 		q(55412),	-- looting War Supply Crate in Vol'dun on Alliance (not secret chest)
 		q(55431),	-- Conquest's Reward — automatically offered when you cap conquest for the week
 		q(53349),	-- Conquest's Reward — automatically offered when you cap conquest for the week
