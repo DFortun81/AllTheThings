@@ -10797,7 +10797,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						if group.key == "npcID" then
 							if GetRelativeField(group, "npcID", -4) then	-- It's an Achievement. (non-Holiday)
 								if group.npcID ~= -4 then group = app.CreateNPC(-4, { g = { group }, u = u }); end
-							elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewaking vendor)
+							elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewalking vendor)
 								if group.npcID ~= -2 then group = app.CreateNPC(-2, { g = { group }, u = u }); end
 							elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
 								if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group }, u = u }); end
@@ -10822,7 +10822,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 							if GetRelativeField(group, "npcID", -4) then	-- It's an Achievement. (non-Holiday)
 								if group.npcID ~= -4 then group = app.CreateNPC(-4, { g = { group } }); end
 								first = true;
-							elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewaking vendor)
+							elseif GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewalking vendor)
 								if group.npcID ~= -2 then group = app.CreateNPC(-2, { g = { group } }); end
 								first = true;
 							elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
