@@ -276,6 +276,7 @@ t(64383);	-- Kaldorei Wind Chimes
 t(68806);	-- Kalytha's Haunted Locket
 t(86571);	-- Kang's Bindstone
 t(128462);	-- Karabor Councilor's Attire (Alliance)
+t(156833);	-- Katy's Stampwhistle
 t(88580);	-- Ken-Ken's Mask
 t(95567);	-- Kirin Tor Beacon (Alliance)
 t(116125);	-- Klikixx's Webspinner

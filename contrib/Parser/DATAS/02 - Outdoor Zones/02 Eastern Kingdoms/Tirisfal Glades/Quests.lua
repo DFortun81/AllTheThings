@@ -226,6 +226,12 @@ _.Zones =
 					["coord"] = { 83.2, 69.2, 18 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(32672, {	-- Learn to Ride
+					["isBreadcrumb"] = true,
+					["description"] = "This quest is available to Undead characters upon reaching level 20.",
+					["races"] = { 5 },	-- Undead
+					["lvl"] = 20,
+				}),
 				q(14089, {	-- Learn to Ride in Tirisfal Glades
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
