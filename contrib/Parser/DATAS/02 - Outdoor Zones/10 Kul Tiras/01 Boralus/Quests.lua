@@ -33,35 +33,88 @@ _.Zones =
 							},
 						}),
 						q(52944, { 	-- Call to Arms: Drustvar
+							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 							["isWeekly"] = true,
 							["coord"] = { 56.4, 26.0, 1161 },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
+							["lvl"] = 120,
 							["g"] = {
-								i(164261, { 	-- Steel Strongbox
-									i(137642),	-- Mark of Honor
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
+								}),
+							},
+						}),
+						q(56649, {	-- Call to Arms: Mechagon
+							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
+							["isWeekly"] = true,
+							["coord"] = { 56.4, 26.0, 1161 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 120,
+							["g"] = {
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
+								}),
+							},
+						}),
+						q(56648, {	-- Call to Arms: Nazjatar
+							["sourceQuests"] = { 56156 },	-- A Tempered Blade
+							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
+							["isWeekly"] = true,
+							["coord"] = { 56.4, 26.0, 1161 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 120,
+							["g"] = {
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
 								}),
 							},
 						}),
 						q(52949, { 	-- Call to Arms: Nazmir
+							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 							["isWeekly"] = true,
 							["coord"] = { 56.4, 26.0, 1161 },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
+							["lvl"] = 120,
 							["g"] = {
-								i(164261, { 	-- Steel Strongbox
-									i(137642),	-- Mark of Honor
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
 								}),
 							},
 						}),
 						q(52782, { 	-- Call to Arms: Stormsong Valley
+							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 							["isWeekly"] = true,
 							["coord"] = { 56.4, 26.0, 1161 },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
+							["lvl"] = 120,
 							["g"] = {
-								i(164261, { 	-- Steel Strongbox
-									i(137642),	-- Mark of Honor
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
 								}),
 							},
 						}),
@@ -83,13 +136,36 @@ _.Zones =
 							},
 						}),
 						q(52950, { 	-- Call to Arms: Vol'dun
+							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 							["isWeekly"] = true,
 							["coord"] = { 56.4, 26.0, 1161 },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
+							["lvl"] = 120,
 							["g"] = {
-								i(164261, { 	-- Steel Strongbox
-									i(137642),	-- Mark of Honor
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
+								}),
+							},
+						}),
+						q(52951, {	-- Call to Arms: Zuldazar
+							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
+							["isWeekly"] = true,
+							["coord"] = { 56.4, 26.0, 1161 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 120,
+							["g"] = {
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
 								}),
 							},
 						}),

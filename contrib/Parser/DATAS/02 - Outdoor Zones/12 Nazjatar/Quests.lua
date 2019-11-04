@@ -271,7 +271,7 @@ _.Zones =
 					i(169908),	-- Cleverly Concealed Supplies
 				},
 			}),
-			q(56218, {	--	Beauty in the Deeps
+			q(56218, {	-- Beauty in the Deeps
 				["providers"] = {
 					{ "n", 154297 },	-- Bladesman Inowari
 					{ "n", 149803 },	-- Bladesman Inowari (inactive in front of the bonfire)
@@ -583,58 +583,11 @@ _.Zones =
 				["isDaily"] = true,
 				["sourceQuest"] = 55500,	-- Save A Friend -- confirm sourceQuest. Possibly  "The Needs of the People" instead?
 			}),
-			i(168081, {	-- Brinestone Pickaxe
-				["description"] = "Can drop from any rare in Nazjatar or be mined from Osmenite Deposits or Seams.",
-				["g"] = {
-					q(55531, {	-- What Will It Mine?
-						currency(1721),	-- Prismatic Manapearl
-					}),
-				},
-			}),
 			q(55663, {	-- Broken Controller
 				["provider"] = { "n", 152717 },	-- Escaped Kelfin
 				["coord"] = { 58.0, 56.1, 1355 },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-			}),
-			q(56649, {	-- Call to Arms: Mechagon
-				["provider"] = { "n", 154640 },	-- Grand Marshal Tremblade
-				["coord"] = { 38.0, 55.3, 1355 },
-				["races"] = ALLIANCE_ONLY,
-				["altQuests"] = { 56648 },
-				["isWeekly"] = true,
-				["sourceQuest"] = 55175,	-- Where the Road Leads
-			}),
-			q(56650, {	-- Call to Arms: Mechagon
-				["provider"] = { "n", 154641 },	-- High Warlord Volrath
-				["coord"] = { 48.7, 60.6, 1355 },
-				["races"] = HORDE_ONLY,
-			}),
-			q(56648, {	-- Call to Arms: Nazjatar
-				["provider"] = { "n", 154640 },	-- Grand Marshall Tremblade
-				["coord"] = { 38.0, 55.3, 1355 },
-				["races"] = ALLIANCE_ONLY,
-				["altQuests"] = { 56649 },
-				["isWeekly"] = true,
-				["sourceQuest"] = 55175,	-- Where the Road Leads
-			}),
-			q(56148, {	-- Call to Arms: Nazjatar
-				["provider"] = { "n", 154641 },	-- High Warlord Volrath
-				["coord"] = { 48.7, 60.6, 1355 },
-				["races"] = HORDE_ONLY,
-			}),
-			q(52956, {	-- Call to Arms: Tirigarde Sound
-				["provider"] = { "n", 154641 },	-- High Warlord Volrath
-				["coord"] = { 48.7, 60.6, 1355 },
-				["races"] = HORDE_ONLY,
-			}),
-			q(52951, {	-- Call to Arms: Zuldazar
-				["provider"] = { "n", 154640 },	-- Grand Marshall Tremblade
-				["coord"] = { 38.0, 55.3, 1355 },
-				["races"] = ALLIANCE_ONLY,
-				["altQuests"] = { 52948 },
-				["isWeekly"] = true,
-				["sourceQuest"] = 55175,	-- Where the Road Leads
 			}),
 			q(56325, {	-- Changing Tides
 				["sourceQuests"] = { 56741 },	-- The Spear of Destiny
@@ -643,14 +596,6 @@ _.Zones =
 				["provider"] = { "n", 150101 },	-- Lady Jaina Proudmoore
 				["g"] = {
 					currency(1721),	-- Prismatic Manapearl x25
-				},
-			}),
-			i(168155, {	-- Chum
-				["description"] = "Can drop from any rare in Nazjatar.",
-				["g"] = {
-					q(55602, {	-- What Will It Lure?
-						currency(1721),	-- Prismatic Manapearls
-					}),
 				},
 			}),
 			q(56309, {	-- City of Drowned Friends
@@ -1012,15 +957,7 @@ _.Zones =
 				["sourceQuest"] = 55500,	-- Save a Friend
 				["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 			}),
-			i(167786, {	-- Germinating Seed
-				["description"] = "Can drop from any rare in Nazjatar.",
-				["g"] = {
-					q(55426, {	-- What Will It Grow?
-						currency(1721),	-- Prismatic Manapearl
-					}),
-				},
-			}),
-			q(56215, {	--	Glittering Shell
+			q(56215, {	-- Glittering Shell
 				["provider"] = { "n", 151310 },	-- Poen Gillbrack
 				["description"] = "Offered when |cFFFFD700Poen Gillbrack|r reaches rank 20.",
 				["races"] = HORDE_ONLY,
@@ -1029,7 +966,7 @@ _.Zones =
 					i(169353),	-- Lustrous Glimmershell
 				},
 			}),
-			q(56214, {	--	Good Girl
+			q(56214, {	-- Good Girl
 				["provider"] = { "n", 151300 },	-- Neri Sharpfin
 				["description"] = "Offered when |cFFFFD700Neri Sharpfin|r reaches rank 20.",
 				["races"] = HORDE_ONLY,
@@ -1125,7 +1062,7 @@ _.Zones =
 				["isDaily"] = true,
 				["sourceQuest"] = 55500,	-- Save A Friend
 			}),
-			q(56216, {	--	Last Heirloom
+			q(56216, {	-- Last Heirloom
 				["providers"] = {
 					{ "n", 154304 },	-- Farseer Ori (active bodyguard ID)
 					{ "n", 149805 },	-- (inactive in front of the bonfire)
@@ -1343,7 +1280,7 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 154243 },	-- Apprentice Aonari
 			}),
-			q(56155, {	-- Plug the Geysers	-- similar name to another daily, but different ID across the map	-- also popped 55874. Possibly an equivalent hordeID?
+			q(56155, {	-- Plug the Geysers
 				["provider"] = { "n", 154247 },	-- Apprentice Utapo
 				["coord"] = { 60.7, 50.2, 1355 },
 				["races"] = ALLIANCE_ONLY,
@@ -1359,7 +1296,7 @@ _.Zones =
 				["sourceQuest"] = 55500,	-- Save a Friend
 				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
 			}),
-			q(55875, {	-- Plug the Geysers -- also triggered 56700
+			q(55875, {	-- Plug the Geysers
 				["provider"] = { "n", 153834 },	-- Scout Tambrine
 				["coord"] = { 33.5, 47.9, 1355 },
 				["races"] = HORDE_ONLY,
@@ -1889,24 +1826,6 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 153617 },	-- Shandris Feathermoon
 			}),
-			i(169215, {	-- Silver Knife
-				["races"] = ALLIANCE_ONLY,
-				["description"] = "Obtained from the first Arcane Chest you find.",
-				["g"] = {
-					q(56239, {	-- Strange Silver Knife
-						["races"] = ALLIANCE_ONLY,
-					}),
-				},
-			}),
-			i(169216, {	-- Silver Knife
-				["races"] = HORDE_ONLY,
-				["description"] = "Obtained from the first Arcane Chest you find.",
-				["g"] = {
-					q(56240, {	-- Strange Silver Knife
-						["races"] = HORDE_ONLY,
-					}),
-				},
-			}),
 			q(56118, {	-- Snap Back
 				["provider"] = { "n", 154143 },	-- Collector Kojo
 				["coord"] = { 66.4, 47.3, 1355 },
@@ -1946,6 +1865,16 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["provider"] = { "o", 327170 },	-- Weapon Rack
 				["sourceQuest"] = 56047,	-- We Can't Have Dull Weapons
+			}),
+			q(56239, {	-- Strange Silver Knife (A)
+				["description"] = "Obtained from the first Arcane Chest you find.",
+				["provider"] = { "i", 169215 },	-- Silver Knife
+				["races"] = ALLIANCE_ONLY,
+			}),
+			q(56240, {	-- Strange Silver Knife (H)
+				["description"] = "Obtained from the first Arcane Chest you find.",
+				["provider"] = { "i", 169216 },	-- Silver Knife
+				["races"] = HORDE_ONLY,
 			}),
 			q(56830, {	-- Summons from the Deep
 				["description"] = "This event takes place every 3 hours (based on realm time, it starts at 3:00, 6:00, 9:00, and 12:00 for NA realms; 1:00, 4:00, 7:00, and 10:00 for EU realms).  A zonewide announcement will say \"|cffe1780cThe air crackles with power as Azshara's forces begin summoning a minion from the depths|r,\" and a purple skull will appear on your map to indicate where the event is taking place.",
@@ -2543,6 +2472,27 @@ _.Zones =
 					i(169481),	-- Benthic Cloak
 				},
 			}),
+			q(55426, {	-- What Will It Grow?
+				["description"] = "Germinating Seed can drop from any rare in Nazjatar.",
+				["provider"] = { "i", 167786 },	-- Germinating Seed
+				["g"] = {
+					currency(1721),	-- Prismatic Manapearl
+				},
+			}),
+			q(55602, {	-- What Will It Lure?
+				["description"] = "Chum can drop from any rare in Nazjatar.",
+				["provider"] = { "i", 168155 },	-- Chum
+				["g"] = {
+					currency(1721),	-- Prismatic Manapearls
+				},
+			}),
+			q(55531, {	-- What Will It Mine?
+				["description"] = "Brinestone Pickaxe can drop from any rare in Nazjatar or be mined from Osmenite Deposits or Seams.",
+				["provider"] = { "i", 168081 },	-- Brinestone Pickaxe
+				["g"] = {
+					currency(1721),	-- Prismatic Manapearl
+				},
+			}),
 			q(55175, {	-- Where the Road Leads
 				["provider"] = { "n", 151000 },	-- Blademaster Okani
 				["coord"] = { 48.9, 67.4, 1355 },
@@ -2566,7 +2516,7 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 153364 },	-- Scout Marlin
 			}),
-			q(56217, {	--	Wild Tame
+			q(56217, {	-- Wild Tame
 				["providers"] = {
 					{ "n", 150202 },	-- Hunter Akana	(active bodyguard ID)
 					{ "n", 149804 },	-- Hunter Akana (inactive in front of the bonfire)
