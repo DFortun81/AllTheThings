@@ -647,3 +647,7 @@ t(168807);	-- Wormhole Generator: Kul Tiras
 t(168808);	-- Wormhole Generator: Zandalar
 t(170199);	-- Zanj'ir Weapon Rack
 
+-----------------
+-- PATCH 8.2.5 --
+-----------------
+t(172179);	-- Eternal Traveler's Hearthstone
