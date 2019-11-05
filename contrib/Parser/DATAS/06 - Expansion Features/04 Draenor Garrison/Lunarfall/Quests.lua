@@ -472,6 +472,12 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 100,
 					}),
+					q(37777, {	-- Death to Tremor!
+						["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 100,
+					}),
 					q(34692, {	-- Delegating on Draenor
 						["sourceQuests"] = { 34646 },	-- Qiana Moonshadow
 						["coord"] = { 40.2, 43.6, 582 },

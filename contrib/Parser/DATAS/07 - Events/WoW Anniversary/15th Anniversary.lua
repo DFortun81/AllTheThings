@@ -9,7 +9,7 @@ _.WorldEvents =
 		},
 		["g"] = {
 			ach(13917, {	-- 15th Anniversary
-				["u"] = 31,					-- WoW Anniversary Filter
+				["u"] = 31,					-- WoW Anniversary
 			}),
 			n(-9987, {	-- Alterac Valley
 				["g"] = {
@@ -315,50 +315,81 @@ _.WorldEvents =
 			}),
 			n(-297, {	-- Mailbox
 				i(172014, {	-- Anniversary Gift
-					["u"] = 31,				-- WoW Anniversary Filter
+					["u"] = 31,				-- WoW Anniversary
 					["g"] = {
 						i(172016, {	-- Lil' Nefarian
-							["u"] = 31,	-- WoW Anniversary Filter
+							["u"] = 31,	-- WoW Anniversary
 						}),
 						i(170013, {	-- Celebration Firework
-							["u"] = 31,	-- WoW Anniversary Filter
+							["u"] = 31,	-- WoW Anniversary
+						}),
+						q(57249, {	-- A Timely Invitation
+							["provider"] = { "i", 171177 },	-- Invitation from the Timewalkers
+							["u"] = 31,	-- WoW Anniversary
 						}),
 					--[[{	-- A Slightly More Urgent Letter from the Timewalkers [Horde]
 							["itemID"] = 147881,	-- A Slightly More Urgent Letter from the Timewalkers
 							["questID"] = 47251,	-- Interesting Things
 							["races"] = HORDE_ONLY,
-							["u"] = 31,				-- WoW Anniversary Filter
+							["u"] = 31,				-- WoW Anniversary
 						},
 						{	-- A Slightly More Urgent Letter from the Timewalkers [Alliance]
 							["itemID"] = 147880,	-- A Slightly More Urgent Letter from the Timewalkers
 							["questID"] = 47252,	-- Interesting Things
 							["races"] = ALLIANCE_ONLY,
-							["u"] = 31,				-- WoW Anniversary Filter
+							["u"] = 31,				-- WoW Anniversary
 						},--]]
 					},
 				}),
 			}),
-		--[[n(-17,  {	-- Quests
-				q(43461, {	-- A Time to Reflect
-					["provider"] = { "n", 110035 },		-- Historian Jupa
-					["isDaily"] = true,
-					["coord"] = { 36.6, 74.6, 85 },
-					["races"] = HORDE_ONLY,
-					["u"] = 31,	-- WoW Anniversary Filter
-					--Note!! See Master List of quiz answers at the end in a better format
-					--Was going to list it in description, but too many and terrible looking
+			n(-17,  {	-- Quests
+				q(57300, {	-- Soldier of Time
+					["sourceQuests"] = { 57249 },	-- A Timely Invitation
+					["provider"] = { "n", 157113 },	-- Chromie
+					["coord"] = { 53.5, 54.7, 75 },	-- Caverns of Time, Tanaris
+					["maps"] = { 75 },	-- Tanaris
+					["u"] = 31,	-- WoW Anniversary
 				}),
-				q(43323, {	-- A Time to Reflect
+				q(43323, {	-- A Time to Reflect (A)
 					["provider"] = { "n", 110034 },		-- Historian Llore
 					["isDaily"] = true,
-					["coord"] = { 84.6, 25.0, 13 },
+					["coord"] = { 51.4, 39.0, 75 },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 31,	-- WoW Anniversary Filter
+					["maps"] = { 75 },	-- Tanaris
+					["u"] = 31,	-- WoW Anniversary
 				}),
-				q(47254, {	-- The Originals
+				q(43461, {	-- A Time to Reflect (H)
 					["provider"] = { "n", 110035 },		-- Historian Jupa
 					["isDaily"] = true,
-					["coord"] = { 36.6, 74.6, 85 },
+					["coord"] = { 51.4, 39.0, 75 },
+					["races"] = HORDE_ONLY,
+					["u"] = 31,	-- WoW Anniversary
+				}),
+				q(57298, {	-- How Things "Really" Happened...
+					["sourceQuests"] = { 57249 },	-- A Timely Invitation
+					["provider"] = { "n", 157113 },	-- Chromie
+					["coord"] = { 53.5, 54.7, 75 },	-- Caverns of Time, Tanaris
+					["maps"] = { 75 },	-- Tanaris
+					["u"] = 31,	-- WoW Anniversary
+				}),
+				q(47253, {	-- The Originals (A)
+					["provider"] = { "n", 110034 },	-- Historian Llore
+					["isDaily"] = true,
+					["coord"] = { 51.4, 39.0, 75 },
+					["sourceQuests"] = {
+						47462,	-- Azuregos
+						47463,	-- Nightmare Dragons
+						47461,	-- Lord Kazzak
+					},
+					--Note!! Crieve wants these to link to the KillID's for the bosses so it's easier to track and plot coordinates.
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { 75 },	-- Tanaris
+					["u"] = 31,	-- WoW Anniversary
+				}),
+				q(47254, {	-- The Originals (H)
+					["provider"] = { "n", 110035 },	-- Historian Jupa
+					["isDaily"] = true,
+					["coord"] = { 51.4, 39.0, 75 },
 					["sourceQuests"] = {
 						47462,	-- Azuregos
 						47463,	-- Nightmare Dragons
@@ -366,44 +397,41 @@ _.WorldEvents =
 					},
 					--Note!! Crieve wants these to link to the KillID's for the bosses so it's easier to track and plot coordinates.
 					["races"] = HORDE_ONLY,
-					["u"] = 31,	-- WoW Anniversary Filter
+					["maps"] = { 75 },	-- Tanaris
+					["u"] = 31,	-- WoW Anniversary
 				}),
-				q(47253, {	-- The Originals
-					["provider"] = { "n", 110034 },		-- Historian Llore
-					["isDaily"] = true,
-					["coord"] = { 84.6, 25.0, 13 },
-					["sourceQuests"] = {
-						47462,	-- Azuregos
-						47463,	-- Nightmare Dragons
-						47461,	-- Lord Kazzak
+				
+			}),
+			n(-2,   {	-- Vendors
+				n(158061, {	-- Historian Ma'di
+					["coord"] = { 50.7, 41.1, 75 },
+					["g"] = {
+						i(158149, {	-- Overtuned Corgi Goggles
+							["u"] = 31,	-- WoW Anniversary
+						}),
+						i(136925, {	-- Corgi Pup
+							["u"] = 31,	-- WoW Anniversary
+						}),
+						i(128506, {	-- Celebration Wand - Gnoll
+							["u"] = 31,	-- WoW Anniversary
+						}),
+						i(128505, {	-- Celebration Wand - Murloc
+							["u"] = 31,	-- WoW Anniversary
+						}),
+						i(128510, {	-- Exquisite Costume Set: "Edwin VanCleef"
+							["u"] = 31,	-- WoW Anniversary
+						}),
+						i(128507, {	-- Inflatable Thunderfury, Blessed Blade of the Windseeker
+							["u"] = 31,	-- WoW Anniversary
+							["g"] = {
+								ach(10335, {	-- Did Someone Say...?
+									["u"] = 31,	-- WoW Anniversary
+								}),
+							},
+						}),
 					},
-					--Note!! Crieve wants these to link to the KillID's for the bosses so it's easier to track and plot coordinates.
-					["races"] = ALLIANCE_ONLY,
-					["u"] = 31,	-- WoW Anniversary Filter
 				}),
 			}),
-			n(-2, {	-- Vendors
-				n(110035, {	-- Historian Jupa
-					["races"] = HORDE_ONLY,
-					["currencyID"] = 1166,	-- Timewarped Badge
-					["coord"] = { 36.6, 74.6, 85 },
-					["g"] = {
-						i(158149, {	-- Overtuned Corgi Goggles
-							["u"] = 31,				-- WoW Anniversary Filter
-						}),
-					},
-				}),
-				n(110034, {	-- Historian Llore
-					["races"] = ALLIANCE_ONLY,
-					["currencyID"] = 1166,	-- Timewarped Badge
-					["coord"] = { 84.6, 25.0, 13 },
-					["g"] = {
-						i(158149, {	-- Overtuned Corgi Goggles
-							["u"] = 31,				-- WoW Anniversary Filter
-						}),
-					},
-				}),
-			}),--]]
 		},
 	}),
 };
