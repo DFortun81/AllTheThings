@@ -3,85 +3,82 @@
 -----------------------------------------------------
 _.WorldEvents =
 {
-	{	-- WoW Anniversary
-		["npcID"] = -5364,	-- 15th Anniversary
+	n(-5364, {	-- 15th Anniversary
 		["icon"] = "Interface\\Icons\\inv_misc_celebrationcake_01",
 		["maps"] = {
 		},
 		["g"] = {
-			{	-- 15th Anniversary
-				["achievementID"] = 13917,	-- 15th Anniversary
+			ach(13917, {	-- 15th Anniversary
 				["u"] = 31,					-- WoW Anniversary Filter
-			},
-			{	-- Alterac Valley
-				["npcID"] = -9987,	-- Alterac Valley
+			}),
+			n(-9987, {	-- Alterac Valley
 				["g"] = {
 					n(-322, {	-- Cloaks
-						un(31, i(172098)),	-- frostwolf legionaire's cloak
-						un(31, i(172099)),	-- stormpike soldiers cloak
-						un(31, i(172100)),	-- frostwolf advisors cloak
-						un(31, i(172101)),	-- stormpike sage's cloak
+						un(31, i(172100)),	-- Frostwolf Advisor's Cloak
+						un(31, i(172098)),	-- Frostwolf Legionnaire's Cloak
+						un(31, i(172101)),	-- Stormpike Sage's Cloak
+						un(31, i(172099)),	-- Stormpike Soldier's Cloak
 					}),
-					n(-43, {	-- Cloth
-						un(31, i(172105)),	-- Frostwolf cloth Belt
-						un(31, i(172109)),	-- stormpike cloth girdle
-						un(31, i(172120)),	-- frost runed headdress
+					n(-43,  {	-- Cloth
+						un(31, i(172120)),	-- Frost Runed Headdress
+						un(31, i(172105)),	-- Frostwolf Cloth Belt
+						un(31, i(172109)),	-- Stormpike Cloth Girdle
 					}),
-					filter(52, {	-- Finger
-						un(31, i(172124)),	-- deep rooted ring
-						un(31, i(172138)),	-- don julio's band
-						un(31, i(172140)),	-- don rodrigo's band
+					f(52,   {	-- Finger
+						un(31, i(172124)),	-- Deep Rooted Ring
+						un(31, i(172138)),	-- Don Julio's Band
+						un(31, i(172140)),	-- Don Rodrigo's Band
 					}),
-					n(-44, {	-- Leather
+					n(-44,  {	-- Leather
 						un(31, i(172104)),	-- Frostwolf Leather Belt
-						un(31, i(172108)),	-- stormpike leather girdle
-						un(31, i(172128)),	-- yeti hide bracers
+						un(31, i(172108)),	-- Stormpike Leather Girdle
+						un(31, i(172128)),	-- Yeti Hide Bracers
 					}),
-					n(-45, {	-- Mail
-						un(31, i(172103)),	-- Frostwolf mail Belt
-						un(31, i(172107)),	-- stormpike mail girdle
-						un(31, i(172126)),	-- winteraxe epaulets
+					n(-45,  {	-- Mail
+						un(31, i(172103)),	-- Frostwolf Mail Belt
+						un(31, i(172107)),	-- Stormpike Mail Girdle
+						un(31, i(172126)),	-- Winteraxe Epaulets
 					}),
-					filter(51, {	-- Neck
-						un(31, i(172110)),	-- frostwolf legionaire's pendant
-						un(31, i(172111)),	-- frostwolf advisors pendant
-						un(31, i(172112)),	-- stormpike soldiers pendant
-						un(31, i(172113)),	-- stormpike sage's pendant
+					f(51,   {	-- Neck
+						un(31, i(172111)),	-- Frostwolf Advisor's Pendant
+						un(31, i(172110)),	-- Frostwolf Legionnaire's Pendant
+						un(31, i(172113)),	-- Stormpike Sage's Pendant
+						un(31, i(172112)),	-- Stormpike Soldier's Pendant
 					}),
-					n(-46, {	-- Plate
-						un(31, i(172102)),	-- Frostwolf plate belt
-						un(31, i(172106)),	-- stormpike plate girdle
-						un(31, i(172127)),	-- frozen steel vambraces
+					n(-46,  {	-- Plate
+						un(31, i(172102)),	-- Frostwolf Plate Belt
+						un(31, i(172127)),	-- Frozen Steel Vambraces
+						un(31, i(172106)),	-- Stormpike Plate Girdle
 					}),
 					n(-319, {	-- Weapons
-						un(31, i(172114)),	-- glacial blade
-						un(31, i(172115)),	-- electricified dagger
-						un(31, i(172137)),	-- the lobotomizer
-						un(31, i(172125)),	-- cold forged blade
-						un(31, i(172116)),	-- whiteout staff
-						un(31, i(172117)),	-- crackling staff
-						un(31, i(172118)),	-- frostbite
-						un(31, i(172119)),	-- stormstrike hammer
-						un(31, i(172139)),	-- cold forged hammer
-						un(31, i(172121)),	-- ice barbed spear
-						un(31, i(172122)),	-- bloodseeker
-						un(31, i(172123)),	-- wand of biting cold
-						un(31, i(172129)),	-- tome of arcane domination
-						un(31, i(172130)),	-- tome of shhadow force
-						un(31, i(172131)),	-- tome of the ice lord
-						un(31, i(172132)),	-- tome of the fiery arcana
-						un(31, i(172133)),	-- lei of the life giver
-						un(31, i(172134)),	-- therezane's touch
-						un(31, i(172135)),	-- the immovable object
-						un(31, i(172136)),	-- the unstoppable force
+						un(31, i(172122)),	-- Bloodseeker
+						un(31, i(172125)),	-- Cold Forged Blade
+						un(31, i(172139)),	-- Cold Forged Hammer
+						un(31, i(172117)),	-- Crackling Staff
+						un(31, i(172115)),	-- Electrified Dagger
+						un(31, i(172118)),	-- Frostbite
+						un(31, i(172114)),	-- Glacial Blade
+						un(31, i(172121)),	-- Ice Barbed Spear
+						un(31, i(172133)),	-- Lei of the Lifegiver
+						un(31, i(172119)),	-- Stormstrike Hammer
+						un(31, i(172135)),	-- The Immovable Object
+						un(31, i(172137)),	-- The Lobotomizer
+						un(31, i(172136)),	-- The Unstoppable Force
+						un(31, i(172134)),	-- Therezane's Touch
+						un(31, i(172129)),	-- Tome of Arcane Domination
+						un(31, i(172130)),	-- Tome of Shadow Force
+						un(31, i(172132)),	-- Tome of the Fiery Arcana
+						un(31, i(172131)),	-- Tome of the Ice Lord
+						un(31, i(172123)),	-- Wand of Biting Cold
+						un(31, i(172116)),	-- Whiteout Staff
 					}),
 				},
-			},
+			}),
 			tier(2, { 	-- Burning Crusade
 				d(24, {	-- Timewalking
 					e(1572, {	-- Lady Vashj
-						["creatureID"] = 21212,
-						["groups"] = {
+						["cr"] = 21212,	-- Lady Vashj
+						["g"] = {
 							-- ach(694),	-- Serpentshrine Cavern
 							-- Old Token Items
 							i(171912),	-- Crystalforge Faceguard
@@ -116,44 +113,47 @@ _.WorldEvents =
 							i(171482),	-- Prism of Inner Calm
 						},
 					}),
-					cr(19622, e(1576, {	-- Kael'thas Sunstrider
-						--	ach(696),	-- Tempest Keep
-						-- Old Token Items
-						i(171902),	-- Cataclysm Chestguard
-						i(171903),	-- Cataclysm Chestpiece
-						i(171904),	-- Cataclysm Chestplate
-						i(171896),	-- Crystalforge Breastplate
-						i(171895),	-- Crystalforge Chestguard
-						i(171897),	-- Crystalforge Chestpiece
-						i(171889),	-- Deathmantle Chestguard
-						i(171894),	-- Destroyer Breastplate
-						i(171893),	-- Destroyer Chestguard
-						i(171899),	-- Deathmantle Chestguard
-						i(171907),	-- Nordrassil Chestguard
-						i(171909),	-- Nordrassil Chestpiece
-						i(171908),	-- Nordrassil Chestplate
-						i(171901),	-- Shroud of the Avatar
-						i(171900),	-- Vestments of the Avatar
-						--
-						i(171898),	-- Rift Stalker Hauberk
-						i(171906),	-- Robe of the Corruptor
-						i(171905),	-- Robes of Tirisfal##
-						i(171494),	-- Band of the Ranger-General
-						i(171487),	-- Crown of the Sun
-						i(171484),	-- Gauntlets of the Sun King
-						i(171492),	-- Leggings of Murderous Intent
-						i(171493),	-- Rod of the Sun King
-						i(171489),	-- Royal Cloak of the Sunstriders
-						i(171495),	-- Royal Gauntlets of Silvermoon
-						i(171488),	-- Sunhawk Leggings
-						i(171486),	-- Sunshower Light Cloak
-						i(171491),	-- Thalassian Wildercloak
-						i(171485),	-- The Nexus Key
-						i(171490),	-- Twinblade of the Phoenix
-					})),
+					e(1576, {	-- Kael'thas Sunstrider
+						["cr"] = 19622,	-- Kael'thas Sunstrider
+						["g"] = {
+							--	ach(696),	-- Tempest Keep
+							-- Old Token Items
+							i(171902),	-- Cataclysm Chestguard
+							i(171903),	-- Cataclysm Chestpiece
+							i(171904),	-- Cataclysm Chestplate
+							i(171896),	-- Crystalforge Breastplate
+							i(171895),	-- Crystalforge Chestguard
+							i(171897),	-- Crystalforge Chestpiece
+							i(171889),	-- Deathmantle Chestguard
+							i(171894),	-- Destroyer Breastplate
+							i(171893),	-- Destroyer Chestguard
+							i(171899),	-- Deathmantle Chestguard
+							i(171907),	-- Nordrassil Chestguard
+							i(171909),	-- Nordrassil Chestpiece
+							i(171908),	-- Nordrassil Chestplate
+							i(171901),	-- Shroud of the Avatar
+							i(171900),	-- Vestments of the Avatar
+							--
+							i(171898),	-- Rift Stalker Hauberk
+							i(171906),	-- Robe of the Corruptor
+							i(171905),	-- Robes of Tirisfal##
+							i(171494),	-- Band of the Ranger-General
+							i(171487),	-- Crown of the Sun
+							i(171484),	-- Gauntlets of the Sun King
+							i(171492),	-- Leggings of Murderous Intent
+							i(171493),	-- Rod of the Sun King
+							i(171489),	-- Royal Cloak of the Sunstriders
+							i(171495),	-- Royal Gauntlets of Silvermoon
+							i(171488),	-- Sunhawk Leggings
+							i(171486),	-- Sunshower Light Cloak
+							i(171491),	-- Thalassian Wildercloak
+							i(171485),	-- The Nexus Key
+							i(171490),	-- Twinblade of the Phoenix
+						},
+					}),
 					e(1581, {	-- Archimonde
-						["creatureID"] = 17968,
-						["groups"] = {
+						["cr"] = 17968,	-- Archimonde
+						["g"] = {
 						--	ach(695),	-- The Battle for Mount Hyjal
 							-- Old Token Items
 							i(171942),	-- Cowl of Absolution
@@ -193,8 +193,8 @@ _.WorldEvents =
 			tier(4, {	-- Cataclysm
 				d(24, {	-- Timewalking
 					e(167, {	-- Cho'gall
-						["creatureID"] = 43324,
-						["groups"] = {
+						["cr"] = 43324,
+						["g"] = {
 						--	ach(5312),	-- The Abyss Will Gaze Back Into You
 						-- Old tier Items
 								i(171856),	-- Shadowflame Mantle
@@ -233,8 +233,8 @@ _.WorldEvents =
 						},
 					}),
 					e(174, {	-- Nefarian's End
-						["creatureID"] = 41376,
-						["groups"] = {
+						["cr"] = 41376,
+						["g"] = {
 						--	ach(4849),	-- Keeping it in the Family	
 							-- Old tier Items
 							i(171875),	-- Shadowflame Hood
@@ -274,7 +274,7 @@ _.WorldEvents =
 						},
 					}),
 					e(198, {	-- Ragnaros
-						["creatureID"] = 52409,
+						["cr"] = 52409,
 						["g"] = {
 							i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
 							i(171804),	-- Balespider's Hood
@@ -313,129 +313,97 @@ _.WorldEvents =
 					}),
 				}),
 			}),
-			{	-- Mailbox
-				["npcID"] = -297,	-- Mailbox
-				["g"] = {
-					{	-- Anniversary Gift
-						["itemID"] = 172014,	-- Anniversary Gift
-						["u"] = 31,				-- WoW Anniversary Filter
-						["g"] = {
-							{	-- Lil' Nefarian
-								["itemID"] = 172016,	-- Lil' Nefarian
-								["u"] = 31,				-- WoW Anniversary Filter
-							},
-							{	-- Celebration Firework
-								["itemID"] = 170013,	-- Celebration Firework
-								["u"] = 31,				-- WoW Anniversary Filter
-							},
-						--[[{	-- A Slightly More Urgent Letter from the Timewalkers [Horde]
-								["itemID"] = 147881,	-- A Slightly More Urgent Letter from the Timewalkers
-								["questID"] = 47251,	-- Interesting Things
-								["races"] = HORDE_ONLY,
-								["u"] = 31,				-- WoW Anniversary Filter
-							},
-							{	-- A Slightly More Urgent Letter from the Timewalkers [Alliance]
-								["itemID"] = 147880,	-- A Slightly More Urgent Letter from the Timewalkers
-								["questID"] = 47252,	-- Interesting Things
-								["races"] = ALLIANCE_ONLY,
-								["u"] = 31,				-- WoW Anniversary Filter
-							},--]]
+			n(-297, {	-- Mailbox
+				i(172014, {	-- Anniversary Gift
+					["u"] = 31,				-- WoW Anniversary Filter
+					["g"] = {
+						i(172016, {	-- Lil' Nefarian
+							["u"] = 31,	-- WoW Anniversary Filter
+						}),
+						i(170013, {	-- Celebration Firework
+							["u"] = 31,	-- WoW Anniversary Filter
+						}),
+					--[[{	-- A Slightly More Urgent Letter from the Timewalkers [Horde]
+							["itemID"] = 147881,	-- A Slightly More Urgent Letter from the Timewalkers
+							["questID"] = 47251,	-- Interesting Things
+							["races"] = HORDE_ONLY,
+							["u"] = 31,				-- WoW Anniversary Filter
 						},
+						{	-- A Slightly More Urgent Letter from the Timewalkers [Alliance]
+							["itemID"] = 147880,	-- A Slightly More Urgent Letter from the Timewalkers
+							["questID"] = 47252,	-- Interesting Things
+							["races"] = ALLIANCE_ONLY,
+							["u"] = 31,				-- WoW Anniversary Filter
+						},--]]
 					},
-				},
-			},
-		--[[	{	-- Quests
-				["npcID"] = -17,	-- Quests
-				["g"] = {
-					{	-- A Time to Reflect [Horde]
-						["questID"] = 43461,	-- A Time to Reflect
-						["provider"] = { "n", 110035 },		-- Historian Jupa
-						["isDaily"] = true,
-						["coords"] = {
-							{ 36.6, 74.6, 85 },
-						},
-						["races"] = HORDE_ONLY,
-						["u"] = 31,				-- WoW Anniversary Filter
-						--Note!! See Master List of quiz answers at the end in a better format
-						--Was going to list it in description, but too many and terrible looking
+				}),
+			}),
+		--[[n(-17,  {	-- Quests
+				q(43461, {	-- A Time to Reflect
+					["provider"] = { "n", 110035 },		-- Historian Jupa
+					["isDaily"] = true,
+					["coord"] = { 36.6, 74.6, 85 },
+					["races"] = HORDE_ONLY,
+					["u"] = 31,	-- WoW Anniversary Filter
+					--Note!! See Master List of quiz answers at the end in a better format
+					--Was going to list it in description, but too many and terrible looking
+				}),
+				q(43323, {	-- A Time to Reflect
+					["provider"] = { "n", 110034 },		-- Historian Llore
+					["isDaily"] = true,
+					["coord"] = { 84.6, 25.0, 13 },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 31,	-- WoW Anniversary Filter
+				}),
+				q(47254, {	-- The Originals
+					["provider"] = { "n", 110035 },		-- Historian Jupa
+					["isDaily"] = true,
+					["coord"] = { 36.6, 74.6, 85 },
+					["sourceQuests"] = {
+						47462,	-- Azuregos
+						47463,	-- Nightmare Dragons
+						47461,	-- Lord Kazzak
 					},
-					{	-- A Time to Reflect [Alliance]
-						["questID"] = 43323,	-- A Time to Reflect
-						["provider"] = { "n", 110034 },		-- Historian Llore
-						["isDaily"] = true,
-						["coords"] = {
-							{ 84.61, 25.01, 13 },
-						},
-						["races"] = ALLIANCE_ONLY,
-						["u"] = 31,				-- WoW Anniversary Filter
+					--Note!! Crieve wants these to link to the KillID's for the bosses so it's easier to track and plot coordinates.
+					["races"] = HORDE_ONLY,
+					["u"] = 31,	-- WoW Anniversary Filter
+				}),
+				q(47253, {	-- The Originals
+					["provider"] = { "n", 110034 },		-- Historian Llore
+					["isDaily"] = true,
+					["coord"] = { 84.6, 25.0, 13 },
+					["sourceQuests"] = {
+						47462,	-- Azuregos
+						47463,	-- Nightmare Dragons
+						47461,	-- Lord Kazzak
 					},
-					{	-- The Originals [Horde]
-						["questID"] = 47254,	-- The Originals
-						["provider"] = { "n", 110035 },		-- Historian Jupa
-						["isDaily"] = true,
-						["coords"] = {
-							{ 36.6, 74.6, 85 },
-						},
-						["sourceQuests"] = {
-							47462,	-- Azuregos
-							47463,	-- Nightmare Dragons
-							47461,	-- Lord Kazzak
-						},
-						--Note!! Crieve wants these to link to the KillID's for the bosses so it's easier to track and plot coordinates.
-						["races"] = HORDE_ONLY,
-						["u"] = 31,				-- WoW Anniversary Filter
+					--Note!! Crieve wants these to link to the KillID's for the bosses so it's easier to track and plot coordinates.
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 31,	-- WoW Anniversary Filter
+				}),
+			}),
+			n(-2, {	-- Vendors
+				n(110035, {	-- Historian Jupa
+					["races"] = HORDE_ONLY,
+					["currencyID"] = 1166,	-- Timewarped Badge
+					["coord"] = { 36.6, 74.6, 85 },
+					["g"] = {
+						i(158149, {	-- Overtuned Corgi Goggles
+							["u"] = 31,				-- WoW Anniversary Filter
+						}),
 					},
-					{	-- The Originals [Alliance]
-						["questID"] = 47253,	-- The Originals
-						["provider"] = { "n", 110034 },		-- Historian Llore
-						["isDaily"] = true,
-						["coords"] = {
-							{ 84.61, 25.01, 13 },
-						},
-						["sourceQuests"] = {
-							47462,	-- Azuregos
-							47463,	-- Nightmare Dragons
-							47461,	-- Lord Kazzak
-						},
-						--Note!! Crieve wants these to link to the KillID's for the bosses so it's easier to track and plot coordinates.
-						["races"] = ALLIANCE_ONLY,
-						["u"] = 31,				-- WoW Anniversary Filter
+				}),
+				n(110034, {	-- Historian Llore
+					["races"] = ALLIANCE_ONLY,
+					["currencyID"] = 1166,	-- Timewarped Badge
+					["coord"] = { 84.6, 25.0, 13 },
+					["g"] = {
+						i(158149, {	-- Overtuned Corgi Goggles
+							["u"] = 31,				-- WoW Anniversary Filter
+						}),
 					},
-				},
-			},
-			{	-- Vendors
-				["npcID"] = -2,		-- Vendors
-				["g"] = {
-					{	-- Historian Jupa [Horde]
-						["npcID"] = 110035,		-- Historian Jupa
-						["races"] = HORDE_ONLY,
-						["currencyID"] = 1166,	-- Timewarped Badge
-						["coords"] = {
-							{ 36.6, 74.6, 85 },
-						},
-						["g"] = {
-							{	-- Overtuned Corgi Goggles
-								["itemID"] = 158149,	-- Overtuned Corgi Goggles
-								["u"] = 31,				-- WoW Anniversary Filter
-							},
-						},
-					},
-					{	-- Historian Llore [Alliance]
-						["npcID"] = 110034,		-- Historian Llore
-						["races"] = ALLIANCE_ONLY,
-						["currencyID"] = 1166,	-- Timewarped Badge
-						["coords"] = {
-							{ 84.61, 25.01, 13 },
-						},
-						["g"] = {
-							{	-- Overtuned Corgi Goggles
-								["itemID"] = 158149,	-- Overtuned Corgi Goggles
-								["u"] = 31,				-- WoW Anniversary Filter
-							},
-						},
-					},
-				},
-			},--]]
+				}),
+			}),--]]
 		},
-	},
+	}),
 };
