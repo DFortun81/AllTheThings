@@ -1144,8 +1144,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(171754),	-- Obsidian Arborweave Cover
 							i(171744),	-- Obsidian Arborweave Headpiece
 							i(171749),	-- Obsidian Arborweave Helm
-							un(1, i(171731)),	-- Sho'ravon, Greatstaff of Annihilation [Heroic? WTF Blizzard]
 							i(171732),	-- Sho'ravon, Greatstaff of Annihilation
+							i(171731),	-- Sho'ravon, Greatstaff of Annihilation (Heroic, confirmed drop from 15th Anniversary event)
 							i(171724),	-- Sulfuras, the Extinguished Hand
 							i(171727),	-- Ko'gun, Hammer of the Firelord
 							i(171725),	-- Arathar, the Eye of Flame
