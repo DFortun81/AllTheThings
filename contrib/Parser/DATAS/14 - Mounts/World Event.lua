@@ -5,7 +5,6 @@ _.Mounts =
 {
 	n(-3, { 	-- World Event
 		un(18, i(50250)),	-- Big Love Rocket
-		i(142403),			-- Brawler's Burly Basilisk
 		i(73766),			-- Darkmoon Dancing Bear
 		i(142398),			-- Darkwater Skate
 		i(129923),			-- Eclipse Dragonhawk

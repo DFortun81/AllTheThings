@@ -60,12 +60,11 @@ _.Zones =
 					["coord"] = { 75.0, 22.7, 550 },
 					["sourceQuest"] = 34943,	-- An Old Friend
 				}),
-				i(113080, {	-- A Molten Core
-					["crs"] = { 80586 },	-- Magmire
+				q(33928, {	-- A Wrong of Earth and Fire
 					["description"] = "Starts dropping during |cFFFFD700Elemental Attunement|r.",
-					["g"] = {
-						q(33928),	-- A Wrong of Earth and Fire
-					},
+					["provider"] = { "i", 113080 },	-- A Molten Core
+					["coord"] = { 68.9, 10.1, 550 },
+					["cr"] = 80586,	-- Magmire
 				}),
 				q(36711, {	-- Abu'gar
 					["provider"] = { "n", 82746 },	-- Abu'gar

@@ -6,18 +6,39 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(70, {	-- Dustwallow Marsh
 			n(-4, {	-- Achievements
---[[	Achievement info for Loremaster related zone quests
-				a(ach(4929, {	-- Dustwallow Marsh Quests (Alliance)
-					crit(1),		-- 	Disgrace the Defectors
-					crit(2),		-- "Swamp Eye" Story
-					crit(3),		-- The Terror of Theramore
-					crit(4),		-- Defias in Dustwallow
-					crit(5),		-- Prisoners of the Grimtotem
-					crit(6),		-- The Hyal Family
-					crit(7),		-- The Challenge of the Stonemaul
-				})),
-]]--
-				ach(4978, {	-- Dustwallow Marsh Quests
+				ach(4929, {	-- Dustwallow Marsh Quests (Alliance)
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(1, {	-- 	Disgrace the Defectors
+							["sourceQuests"] = { 27213 },	-- The End of the Deserters
+						}),
+						crit(2, {	-- "Swamp Eye" Story
+							["sourceQuests"] = {
+							--	this criteria may have other requirements.  possibly through 27190, "Cleansing Witch Hill," and/or other Theramore quests
+								27247,	-- Captain Vimes (definitely required, this is the quest wowhead has attached to the criteria)
+								27191,	-- Hungry as an Ogre! (probably required, picked up and turned in at the same time)
+								27186,	-- Jarl Needs a Blade (definitely required, this quest procced the achievement for me)
+							},
+						}),
+						crit(3, {	-- The Terror of Theramore
+							["sourceQuests"] = { 27222 },	-- Take Down Tethyr!
+						}),
+						crit(4, {	-- Defias in Dustwallow
+							["sourceQuests"] = { 27241 },	-- Return to Jaina
+						}),
+						crit(5, {	-- Prisoners of the Grimtotem
+						--	may also require 27243, "Unleash the Raptors," turned in first but at the same time
+							["sourceQuests"] = { 27245 },	-- Prisoners of the Grimtotems
+						}),
+						crit(6, {	-- The Hyal Family
+							["sourceQuests"] = { 27291 },	-- Peace at Last
+						}),
+						crit(7, {	-- The Challenge of the Stonemaul
+							["sourceQuests"] = { 27411 },	-- Challenge to the Black Flight
+						}),
+					},
+				}),
+				ach(4978, {	-- Dustwallow Marsh Quests (Horde)
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(1, {	-- Wild Threats

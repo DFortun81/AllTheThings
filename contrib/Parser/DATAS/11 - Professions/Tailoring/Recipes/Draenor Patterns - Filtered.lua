@@ -6,6 +6,28 @@ profession(197, {	-- Tailoring
 				{
 					["categoryID"] = 400--[[Battle Standards]],
 					["description"] = "Talk to your Garrison Follower to learn these. If they do not immediately cache, try relogging and then talking to them again.\n\n - Crieve",
+					["g"] = {
+						{
+							["name"] = "Fearsome Battle Standard",
+							["races"] = ALLIANCE_ONLY,
+							["recipeID"] = 176314,
+						},
+						{
+							["name"] = "Fearsome Battle Standard",
+							["races"] = HORDE_ONLY,
+							["recipeID"] = 176316,
+						},
+						{
+							["name"] = "Inspiring Battle Standard",
+							["races"] = HORDE_ONLY,
+							["recipeID"] = 176315,
+						},
+						{
+							["name"] = "Inspiring Battle Standard",
+							["races"] = ALLIANCE_ONLY,
+							["recipeID"] = 176313,
+						},
+					},
 				},
 				{
 					["categoryID"] = 366--[[Reagents and Research]],

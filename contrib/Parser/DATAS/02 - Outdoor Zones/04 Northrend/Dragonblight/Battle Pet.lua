@@ -10,6 +10,11 @@ _.Zones =
 				p(537), 	-- Dragonbone Hatchling
 				p(536), 	-- Tundra Penguin
 				p(1238), 	-- Unborn Val'kyr
+				q(31933, {	-- Okrut Dragonwaste
+					["provider"] = { "n", 66638 },	-- Okrut Dragonwaste
+					["isDaily"] = true,
+					["coord"] = { 59.0, 77.0, 115 },
+				}),
 			}),
 		}),
 	}),

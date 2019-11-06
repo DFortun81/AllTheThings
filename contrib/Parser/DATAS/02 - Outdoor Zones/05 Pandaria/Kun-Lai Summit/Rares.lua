@@ -143,6 +143,7 @@ _.Zones =
 				n(50733, {	-- Ski'thik
 					["coord"] = { 36.71, 79.76, 379 },
 					["g"] = {
+						i(86577),	-- Rod of Ambershaping
 						i(87613),	-- Frozen Zandalari Bracer
 						i(87617),	-- Bracers of the Serene Mountaintop
 						i(87616),	-- Mountain Trailblazer's Cuffs

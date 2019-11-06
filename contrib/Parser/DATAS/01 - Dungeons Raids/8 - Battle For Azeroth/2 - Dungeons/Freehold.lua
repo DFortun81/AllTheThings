@@ -7,11 +7,15 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		["maps"] = {
 			936,	-- Freehold
 		},
-		["groups"] = {
+		["g"] = {
 			n(-34, {	-- World Quests
 				q(52454, {	-- Freehold: Dread Captain Vandegrim
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
-					["collectible"] = false,
+				}),
+				q(52456, {	-- Freehold: Veteran Man O' War
+					["isWorldQuest"] = true,
+					["lvl"] = 120,
 				}),
 			}),
 			d(1, {	-- Normal
@@ -20,7 +24,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						126832,	-- Skycap'n Kragg
 						--  Shark Bait
 					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159633),	-- Sharkbait's Fishhook
 						i(155884),	-- Parrotfeather Cloak
 						i(159227),	-- Silk Cuffs of the Skycap'n
@@ -35,7 +39,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						126845,	-- Captain Jolly
 						126847,	-- Captain Raoul
 					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159132),	-- Jolly's Boot Daggeer
 						i(159130),	-- Captain's Diplomacy
 						i(158311),	-- Concealed Fencing Plates
@@ -50,7 +54,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						126969,	-- Trothak <The Shark Puncher>
 					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159634),	-- Jeweled Sharksplitter
 						i(158305),	-- Sea Dog's Cuffs
 						i(155892),	-- Bite-Resistant Chain Gloves
@@ -64,7 +68,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 				e(2095,	{	-- Harlan Sweete
 					["crs"] = { 126983 },	-- Harlan Sweete
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						ach(12831),	-- Freehold
 						i(159635),	-- Bloody Tideturner
 						i(155888),	-- Irontide Captain's Hat
@@ -81,13 +85,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			d(2, {	-- Heroic
 				["lvl"] = 120,
-				["groups"] = {
+				["g"] = {
 					e(2102, {	-- Skycap'n Kragg
 						["crs"] = {
 							126832,	-- Skycap'n Kragg
 							--  Shark Bait
 						},
-						["groups"] = {
+						["g"] = {
 							i(159633),	-- Sharkbait's Fishhook
 							i(155884),	-- Parrotfeather Cloak
 							i(159227),	-- Silk Cuffs of the Skycap'n
@@ -102,7 +106,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							126845,	-- Captain Jolly
 							126847,	-- Captain Raoul
 						},
-						["groups"] = {
+						["g"] = {
 							i(159132),	-- Jolly's Boot Daggeer
 							i(159130),	-- Captain's Diplomacy
 							i(158311),	-- Concealed Fencing Plates
@@ -117,7 +121,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = {
 							126969,	-- Trothak <The Shark Puncher>
 						},
-						["groups"] = {
+						["g"] = {
 							i(159634),	-- Jeweled Sharksplitter
 							i(158305),	-- Sea Dog's Cuffs
 							i(155892),	-- Bite-Resistant Chain Gloves
@@ -131,7 +135,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 					e(2095, {	-- Harlan Sweete
 						["crs"] = { 126983 },	-- Harlan Sweete
-						["groups"] = {
+						["g"] = {
 							ach(12832),	-- Heroic: Freehold
 							i(159635),	-- Bloody Tideturner
 							i(155888),	-- Irontide Captain's Hat
@@ -149,13 +153,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			d(23, {	-- Mythic
 				["lvl"] = 120,
-				["groups"] = {
+				["g"] = {
 					e(2102, {	-- Skycap'n Kragg
 						["crs"] = {
 							126832,	-- Skycap'n Kragg
 							--  Shark Bait
 						},
-						["groups"] = {
+						["g"] = {
 							ach(12548),	-- I'm in Charge Now!
 							ach(12550),	-- Pecking Order
 							i(159633),	-- Sharkbait's Fishhook
@@ -172,7 +176,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							126845,	-- Captain Jolly
 							126847,	-- Captain Raoul
 						},
-						["groups"] = {
+						["g"] = {
 							i(159132),	-- Jolly's Boot Daggeer
 							i(159130),	-- Captain's Diplomacy
 							i(158311),	-- Concealed Fencing Plates
@@ -187,7 +191,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = {
 							126969,	-- Trothak <The Shark Puncher>
 						},
-						["groups"] = {
+						["g"] = {
 							i(159634),	-- Jeweled Sharksplitter
 							i(158305),	-- Sea Dog's Cuffs
 							i(155892),	-- Bite-Resistant Chain Gloves
@@ -201,7 +205,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 					e(2095, {	-- Harlan Sweete
 						["crs"] = { 126983 },	-- Harlan Sweete
-						["groups"] = {
+						["g"] = {
 							ach(12833),	-- Mythic: Freehold
 							ach(12998),	-- That Sweete Booty
 							i(162520),	-- Recipe: Mystical Cauldron (Rank 2)

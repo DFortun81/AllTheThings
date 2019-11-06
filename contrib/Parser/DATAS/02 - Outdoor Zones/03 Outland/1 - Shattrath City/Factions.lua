@@ -260,6 +260,7 @@ _.Zones =
 								["provider"] = { "n", 18597 },	-- Sha'nir
 							}),
 							q(11481, {	-- Crisis at the Sunwell (may be able to be picked up in Netherstorm)
+								["isBreadcrumb"] = true,
 								["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
 								["provider"] = { "n", 18537 },	-- Adyen the Lightwarden
 							}),
@@ -979,6 +980,7 @@ _.Zones =
 							}),
 							q(10024, {	-- Voren'thal's Visions
 								["description"] = "If you want to switch from Aldor to Scryers, use these quests to regain lost Scryers reputation.",
+								["repeatable"] = true,
 								["provider"] = { "n", 18596 },	-- Arcanist Adyria
 							}),
 							q(10025, {	-- More Basilisk Eyes
@@ -987,7 +989,13 @@ _.Zones =
 								["repeatable"] = true,
 								["provider"] = { "n", 18596 },	-- Arcanist Adyria
 							}),
-							q(11482),	-- Duty Calls
+							q(11482, {	-- Duty Calls
+								["minReputation"] = { 934, FRIENDLY },
+								["isBreadcrumb"] = true,
+								["provider"] = { "n", 18594 },	-- Dathris Sunstriker
+								["coord"] = { 54.6, 80.8, 111 },
+								["lvl"] = 70,
+							}),
 						}),
 						n(-2,  {	-- Vendors
 							n(23483, {	-- Arcanist Xorith

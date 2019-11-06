@@ -5,7 +5,17 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(198, {	-- Mount Hyjal
-			n(-4, {	-- Achievements
+			n(-4, {		-- Achievements
+				ach(9069, {	-- An Awfully Big Adventure
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["g"] = {
+						crit(7, {	-- Brok
+							["coord"] = { 61.4, 32.8, 198 },
+							["cr"] = 66819,	-- Brok <Master Pet Tamer>
+						}),
+					},
+				}),
 				ach(5868, {	-- And the Meek Shall Inherit Kalimdor
 					crit(1),	-- Angry Little Squirrel
 					crit(2),	-- Hyjal Bear Cub

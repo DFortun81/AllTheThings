@@ -3,11 +3,10 @@
 -----------------------------------------------------
 _.Instances = { tier(4, {	-- Cataclysm
 	inst(78, { 	-- Firelands
-		["sharedLockout"] = 1,
+		["order"] = "05",
 		["isRaid"] = true,
 		["coord"] = { 47.3, 78.1, 198 },
-		["mapID"] = 367,
-		["maps"] = { 368, 369 },
+		["maps"] = { 367, 368, 369 },
 		["lvl"] = 85,
 		["g"] = {
 			ach(5802),	-- Firelands
@@ -296,8 +295,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(71367), 	-- Theck's Emberseal
 				},
 			}),
-			d(1,  {	-- Normal
-				["difficulties"] = { 3, 4 },
+			d(14, {	-- Normal
+				["difficulties"] = { 1, 3, 4 },
 				["g"] = {
 					n(-1,  {	-- Common Boss Drops
 						["crs"] = {
@@ -526,8 +525,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 					}),	
 				},
 			}),
-			d(2,  {	-- Heroic
-				["difficulties"] = { 5, 6 },
+			d(15,  {	-- Heroic
+				["difficulties"] = { 2, 5, 6 },
 				["g"] = {
 					n(-2, {	-- Vendors
 						n(54402, {	-- Lurah Wrathvine
@@ -906,7 +905,27 @@ _.Instances = { tier(4, {	-- Cataclysm
 					"added 8.2.5.31337"
 				},
 				["g"] = {
-					-- Common Boss Drops do not drop in Timewalking, from the looks of it.
+					n(-1,  {	-- Common Boss Drops
+						["crs"] = {
+							53691,	-- Shannox
+							52498,	-- Beth'tilac <The Red Widow>
+							52530,	-- Alysrazor
+							52558,	-- Lord Rhyolith
+							53494,	-- Baleroc <The Gatekeeper>
+							52571,	-- Majordomo Staghelm <Archdruid of the Flame>
+							52409,	-- Ragnaros
+						},
+						["g"] = {
+							i(173277),	-- Avool's Incendiary Shanker
+							i(173276),	-- Entrail Disgorger
+							i(173274),	-- Eye of Purification
+							i(173275),	-- Firethorn Mindslicer
+							i(173278),	-- Shatterskull Bonecrusher
+							i(173273),	-- Smoldering Censer of Purity
+							i(173272),	-- Zoid's Firelit Greatsword
+							i(69237),	-- Living Ember
+						},
+					}),
 					e(192, {	-- Beth'tilac
 						["creatureID"] = 52498,
 						["g"] = {
@@ -949,6 +968,25 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["creatureID"] = 52530,
 						["g"] = {
 							i(71665),	-- Flametalon of Alysrazor (MOUNT!)
+							un(1, i(171796)),	-- Robes oF the cleansing Flame
+							un(1, i(171801)),	-- Vestment oF the cleansing Flame
+							un(1, i(171777)),	-- Flamewakers Tunic
+							un(1, i(171813)),	-- Erupting Volcanic Hauberk
+							un(1, i(171806)),	-- Balespider's Robes
+							un(1, i(171811)),	-- Firehawk Robes
+							un(1, i(171818)),	-- Erupting Volcanic Tunic
+							un(1, i(171823)),	-- Erupting Volcanic Cuirass
+							un(1, i(171746)),	-- Obsidian Arborweave rainment
+							un(1, i(171751)),	-- Obsidian Arborweave tunic
+							un(1, i(171756)),	-- Obsidian Arborweave vestment
+							un(1, i(171768)),	-- Dark Phoenix Tunic
+							un(1, i(171737)),	-- Elementium Deathplate chestguard
+							un(1, i(171738)),	-- Elementium Deathplate breastplate
+							un(1, i(171788)),	-- Immolation Breastplate
+							un(1, i(171783)),	-- Battleplate of the Molten Giant
+							un(1, i(171778)),	-- Immolation Battleplate
+							un(1, i(171767)),	-- Immolation Chestguard
+							un(1, i(171762)),	-- Chestguard of the molten giant
 							i(171649),	-- Alysra's Razor
 							i(171650),	-- Greathelm of the Voracious Maw
 							i(171665),	-- Craterflame Spaulders
@@ -969,6 +1007,25 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["creatureID"] = 53691,
 						["g"] = {
 							i(152975),	-- Smoldering Treat (PET!)
+							un(1, i(171734)),	-- Elementium Deathplate Legguards
+							un(1, i(171741)),	-- Elementium Deathplate Greaves
+							un(1, i(171759)),	-- Legguards of the molten giant
+							un(1, i(171810)),	-- FireHawk Leggings
+							un(1, i(171805)),	-- Balespiders Leggings
+							un(1, i(171800)),	-- Leggings of the cleansing Flame
+							un(1, i(171795)),	-- Legwraps of the cleansing Flame
+							un(1, i(171781)),	-- Immolation Legplates
+							un(1, i(171826)),	-- Erupting Volcanic Legguards
+							un(1, i(171821)),	-- Erupting Volcanic Legwraps
+							un(1, i(171816)),	-- Erupting Volcanic Kilt
+							un(1, i(171775)),	-- Flamewakers Legguards
+							un(1, i(171745)),	-- Obsidian Arborweave legguards
+							un(1, i(171750)),	-- Obsidian Arborweave legwraps
+							un(1, i(171755)),	-- Obsidian Arborweave leggings
+							un(1, i(171771)),	-- Dark Phoenix Legguards
+							un(1, i(171764)),	-- Immolation legguards
+							un(1, i(171786)),	-- legplates of the molten giant
+							un(1, i(171791)),	-- Immolation Greaves
 							i(171684),	-- Skullstealer Greataxe
 							i(171683),	-- Feeding Frenzy
 							i(171689),	-- Goblet of Anger
@@ -989,6 +1046,25 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["creatureID"] = 53494,
 						["g"] = {
 							i(152977),	-- Vibrating Stone (PET!)
+							un(1, i(171793)),	-- Handwraps of the cleansing flame
+							un(1, i(171798)),	-- Gloves of the cleansing flame
+							un(1, i(171803)),	-- Balespiders Handwraps
+							un(1, i(171808)),	-- Firehawk Gloves
+							un(1, i(171735)),	-- Elementium Deathplate Handguards
+							un(1, i(171739)),	-- Elementium Deathplate Gauntlets
+							un(1, i(171766)),	-- Immolation Handguards
+							un(1, i(171779)),	-- immolation gauntlets
+							un(1, i(171784)),	-- Gauntlets of the molten giant
+							un(1, i(171760)),	-- Handguards of the molten giant
+							un(1, i(171789)),	-- Immolation Gloves
+							un(1, i(171773)),	-- Flamewakers Gloves
+							un(1, i(171814)),	-- Erupting Volcanic Gloves
+							un(1, i(171819)),	-- Erupting Volcanic Handwraps
+							un(1, i(171824)),	-- Erupting Volcanic Grips
+							un(1, i(171743)),	-- Obsidian Arborweave Grips
+							un(1, i(171748)),	-- Obsidian Arborweave Handwraps
+							un(1, i(171753)),	-- Obsidian Arborweave Gloves
+							un(1, i(171769)),	-- Dark Phoenix Gloves
 							i(171707),	-- Gatecrasher
 							i(171659),	-- Shard of Torment
 							i(171711),	-- Molten Scream
@@ -1018,6 +1094,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(171827),	-- Erupting Volcanic Spaulders
 							i(171776),	-- Flamewaker's Spaulders
 							i(171812),	-- Firehawk Mantle
+							i(171855),	-- Firelord's Mantle
 							i(171792),	-- Immolation Mantle
 							i(171782),	-- Immolation Pauldrons
 							i(171763),	-- Immolation Shoulderguards
@@ -1028,6 +1105,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(171787),	-- Pauldrons of the Molten Giant
 							i(171758),	-- Shoulderguards of the Molten Giant
 							i(171802),	-- Shoulderwraps of the Cleansing Flame
+							i(171869),	-- Magma Plated Pauldrons
+							i(171871),	-- Magma Plated Shoulderguards
 							i(171648),	-- Fandral's Flamescythe
 							i(171719),	-- Stinger of the Flaming Scorpion
 							i(171720),	-- Flowform Choker
@@ -1065,8 +1144,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(171754),	-- Obsidian Arborweave Cover
 							i(171744),	-- Obsidian Arborweave Headpiece
 							i(171749),	-- Obsidian Arborweave Helm
-							un(1, i(171731)),	-- Sho'ravon, Greatstaff of Annihilation [Heroic? WTF Blizzard]
 							i(171732),	-- Sho'ravon, Greatstaff of Annihilation
+							i(171731),	-- Sho'ravon, Greatstaff of Annihilation (Heroic, confirmed drop from 15th Anniversary event)
 							i(171724),	-- Sulfuras, the Extinguished Hand
 							i(171727),	-- Ko'gun, Hammer of the Firelord
 							i(171725),	-- Arathar, the Eye of Flame

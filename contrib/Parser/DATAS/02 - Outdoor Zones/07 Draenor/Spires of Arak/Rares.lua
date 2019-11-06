@@ -59,6 +59,7 @@ _.Zones =
 				n(86978, {	-- Gaze
 					["description"] = "Click on the Fel Tome to summon.",
 					["questID"] = 36943,
+					["isDaily"] = true,
 					["coord"] = { 25.2, 24.2, 542 },
 					["g"] = {
 						i(118696),	-- Eye of Gaze

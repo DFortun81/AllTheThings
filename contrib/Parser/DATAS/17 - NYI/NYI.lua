@@ -5,24 +5,6 @@ _.NeverImplemented =
 {
 	n(-10052, {	-- BFA - Stuff that might gets added later duo changes/hotfixes/patches and/or similar
 		-- Future Emsembles!!
-		-- Mail Horde (you probably will learn both after learning one)
-		un(1, i(166923)),	-- Dread Gladiator's Chain armor
-		un(1, i(166924)),	-- Dread Gladiator's Chain sabatons
-		un(1, i(166925)),	-- Dread Gladiator's Chain gauntlets
-		un(1, i(166926)),	-- Dread Gladiator's Chain helm
-		un(1, i(166927)),	-- Dread Gladiator's Chain leggings
-		un(1, i(166928)),	-- Dread Gladiator's Chain spaulders
-		un(1, i(166929)),	-- Dread Gladiator's Chain waistguard
-		un(1, i(166930)),	-- Dread Gladiator's Chain armbands
-		-- Mail Ally (you probably will learn both after learning one)
-		un(1, i(166954)),	-- Dread Gladiator's Chain armor
-		un(1, i(166955)),	-- Dread Gladiator's Chain sabatons
-		un(1, i(166956)),	-- Dread Gladiator's Chain gauntlets
-		un(1, i(166957)),	-- Dread Gladiator's Chain helm
-		un(1, i(166958)),	-- Dread Gladiator's Chain leggings
-		un(1, i(166959)),	-- Dread Gladiator's Chain spaulders
-		un(1, i(166960)),	-- Dread Gladiator's Chain waistguard
-		un(1, i(166961)),	-- Dread Gladiator's Chain armbands
 		-- Leather Horde (you probably will learn both after learning one)
 		un(1, i(166915)),	-- Dread Gladiator's leather tunic
 		un(1, i(166916)),	-- Dread Gladiator's leather boots
@@ -218,6 +200,11 @@ _.NeverImplemented =
 				un(1, i(96264)), -- Leggings of the Chromatic Hydra
 				un(1, i(96265)), -- Robes of the Chromatic Hydra
 				un(1, i(96266)), -- Mantle of the Chromatic Hydra
+				un(1, i(88251)),	-- gladiators silk amice
+				un(1, i(88252)),	-- gladiators silk cowl
+				un(1, i(88253)),	-- gladiators silk handguards
+				un(1, i(88254)),	-- gladiators silk robe
+				un(1, i(88255)),	-- gladiators silk trousers
 			}),
 			cl(5, {	-- Priest
 				un(1, i(46230)),    -- Circlet of Sanctification
@@ -230,11 +217,21 @@ _.NeverImplemented =
 				un(1, i(46257)),    -- Rainments of Sanctification
 				un(1, i(46258)),    -- Robe of Sanctification
 				un(1, i(46259)),    -- Shoulderpads of Sanctification
+				un(1, i(88241)),	-- gladiators satin gloves
+				un(1, i(88242)),	-- gladiators satin hood
+				un(1, i(88243)),	-- gladiators satin leggings
+				un(1, i(88244)),	-- gladiators satin mantle
+				un(1, i(88245)),	-- gladiators satin robe
 				un(1, i(48745)),	-- Velen's Cowl
 				un(1, i(48746)),	-- Velen's Gloves
 				un(1, i(48747)),	-- Velen's Leggings
 				un(1, i(48748)),	-- Velen's Robe
 				un(1, i(48749)),	-- Velen's Shoulderpads
+				un(1, i(88221)),	-- gladiators mooncloth gloves
+				un(1, i(88222)),	-- gladiators mooncloth helm
+				un(1, i(88223)),	-- gladiators mooncloth leggings
+				un(1, i(88224)),	-- gladiators mooncloth mantle
+				un(1, i(88225)),	-- gladiators mooncloth robe
 				un(1, i(48750)),	-- Zabra's Cowl of Conquest
 				un(1, i(48751)),	-- Zabra's Gloves of Conquest
 				un(1, i(48752)),	-- Zabra's Leggings of Conquest
@@ -632,6 +629,8 @@ _.NeverImplemented =
 			un(1, i(37176)),	-- Cavern Leather Treads
 			un(1, i(30288)),	-- Cenarion wardens gloves
 			un(1, i(54698)),	-- Ceremonial Leather Loincloth
+			un(1, i(166403)),	-- Flaskzertauren's Leather Vest#
+			un(1, i(166404)),	-- Flaskzertaurens Leather Tunic
 			un(1, i(5821)),		-- Darkstalker Boots (Leather)
 			un(1, i(54683)),	-- Dusky Leather Armor
 			un(1, i(39410)),	-- Gauntlets of Rampant Destruction
@@ -654,6 +653,14 @@ _.NeverImplemented =
 			un(1, i(107882)),	-- Unknown
 			un(1, i(107889)),	-- Unknown
 			un(1, i(107893)),	-- Unknown
+			un(1, i(37385)),	-- Unknown
+			un(1, i(37386)),	-- Unknown
+			un(1, i(37400)),	-- Unknown
+			un(1, i(39707)),	-- Unknown
+			un(1, i(37385)),	-- Unknown
+			un(1, i(37385)),	-- Unknown
+			un(1, i(37385)),	-- Unknown
+			un(1, i(37385)),	-- Unknown
 			un(1, i(109264)),	-- Unknown
 			un(1, i(19986)),	-- Pirate's Eye Patch (Leather)
 			un(1, i(54696)),	-- Scorpashi Breastplate
@@ -724,7 +731,7 @@ _.NeverImplemented =
 			un(1, i(54673)),	-- Unknown
 			un(1, i(54677)),	-- Unknown
 			un(1, i(54680)),	-- Unknown
-			un(1, i(7187)),	-- VanCleef's Boots (Leather)
+			un(1, i(7187)),		-- VanCleef's Boots (Leather)
 			un(1, i(41757)),	-- Vest of Unyielding Companionship (was in Wrath beta)
 			un(1, i(26029)),	-- Watchman's Bracers
 			un(1, i(54711)),	-- Wendigo Collar
@@ -908,6 +915,16 @@ _.NeverImplemented =
 				un(1, i(48821)),	-- Windrunner's Legguards
 				un(1, i(48822)),	-- Windrunner's Spaulders
 				un(1, i(48823)),	-- Windrunner's Tunic
+				un(1, i(88181)),	-- Gladiator's Chain Armor
+				un(1, i(88182)),	-- Gladiator's Chain Gauntlets
+				un(1, i(88183)),	-- Gladiator's Chain Helm
+				un(1, i(88184)),	-- Gladiator's Chain Leggings
+				un(1, i(88185)),	-- Gladiator's Chain Spaulders
+				un(1, i(64992)),	-- Gladiator's Chain Armor
+				un(1, i(64991)),	-- Gladiator's Chain Gauntlets
+				un(1, i(64990)),	-- Gladiator's Chain Helm
+				un(1, i(64989)),	-- Gladiator's Chain Leggings
+				un(1, i(64988)),	-- Gladiator's Chain Spaulders
 				un(1, i(46274)),	-- Scourgestalker Headpiece
 				un(1, i(51707)),	-- Ahn'kahar Blood Hunter's tunic
 				un(1, i(51708)),	-- Ahn'kahar Blood Hunter's spaulders
@@ -940,10 +957,52 @@ _.NeverImplemented =
 				un(1, i(96257)), -- Saurok Stalker's Legguards
 				un(1, i(96258)), -- Saurok Stalker's Spaulders
 			}),
+			n(-10052, {	-- BFA
+				-- Future Emsembles!!
+				-- Mail Horde (you probably will learn both after learning one)
+				un(1, i(166923)),	-- Dread Gladiator's Chain armor
+				un(1, i(166924)),	-- Dread Gladiator's Chain sabatons
+				un(1, i(166925)),	-- Dread Gladiator's Chain gauntlets
+				un(1, i(166926)),	-- Dread Gladiator's Chain helm
+				un(1, i(166927)),	-- Dread Gladiator's Chain leggings
+				un(1, i(166928)),	-- Dread Gladiator's Chain spaulders
+				un(1, i(166929)),	-- Dread Gladiator's Chain waistguard
+				un(1, i(166930)),	-- Dread Gladiator's Chain armbands
+				-- Mail Ally (you probably will learn both after learning one)
+				un(1, i(166954)),	-- Dread Gladiator's Chain armor
+				un(1, i(166955)),	-- Dread Gladiator's Chain sabatons
+				un(1, i(166956)),	-- Dread Gladiator's Chain gauntlets
+				un(1, i(166957)),	-- Dread Gladiator's Chain helm
+				un(1, i(166958)),	-- Dread Gladiator's Chain leggings
+				un(1, i(166959)),	-- Dread Gladiator's Chain spaulders
+				un(1, i(166960)),	-- Dread Gladiator's Chain waistguard
+				un(1, i(166961)),	-- Dread Gladiator's Chain armbands
+				--
+				un(1, i(163286)),	-- honorbound vanguard's footguards
+				un(1, i(163291)),	-- honorbound vanguard's strikers
+				un(1, i(163293)),	-- honorbound vanguard's warhelm
+				un(1, i(163297)),	-- honorbound vanguard's legguards
+				un(1, i(163302)),	-- honorbound vanguard's spaulders
+				un(1, i(163304)),	-- honorbound vanguard's waistcord
+				un(1, i(163392)),	-- 7th legionnaires vestments
+				un(1, i(163393)),	-- 7th legionnaires raiment
+				un(1, i(163443)),	-- honorbound vanguard's vestments
+				un(1, i(163450)),	-- honorbound vanguard's raiment
+			}),
 			un(1, i(166402)),	-- Flaskzertauren Mail Hauberk
 			un(1, i(166410)),	-- Flaskzertauren Mail Shoulderguards
 			un(1, i(12105)),	-- Pridemail Leggings
 			un(1, i(37420)),	-- Sharkproof Boots
+			un(1, i(54551)),	-- Unknown
+			un(1, i(56492)),	-- Unknown
+			un(1, i(65744)),	-- Unknown
+			un(1, i(56493)),	-- Unknown
+			un(1, i(56496)),	-- Unknown
+			un(1, i(56497)),	-- Unknown
+			un(1, i(56500)),	-- Unknown
+			un(1, i(56501)),	-- Unknown
+			un(1, i(56506)),	-- Unknown
+			un(1, i(56510)),	-- Unknown
 			un(1, i(106166)),	-- Frostwolf Ringmail Armor (Beta only, was reward from https://www.wowhead.com/quest=32985/fury-of-frostfire )
 			un(1, i(30289)),	-- Cenarion warden's belt
 			un(1, i(106178)),	-- Rangari Initiate Wristwraps (Beta only)
@@ -1225,7 +1284,18 @@ _.NeverImplemented =
 			un(1, i(163457)),	-- Honorbound Centurion's Helmet
 			un(1, i(163454)),	-- Honorbound Centurion's Pauldrons
 			un(1, i(163462)),	-- Honorbound Centurion's Girdle
-			
+			un(1, i(39649)),	-- unknown
+			un(1, i(41759)),	-- unknown
+			un(1, i(42885)),	-- unknown
+			un(1, i(43848)),	-- unknown
+			un(1, i(39460)),	-- unknown
+			un(1, i(54552)),	-- unknown
+			un(1, i(54751)),	-- unknown
+			un(1, i(43938)),	-- unknown
+			un(1, i(54544)),	-- unknown
+			un(1, i(59768)),	-- unknown
+			un(1, i(59772)),	-- unknown
+			un(1, i(65743)),	-- unknown
 			un(1, i(166400)),	-- flaskzertaurens plate chestguards
 			un(1, i(166401)),	-- flaskzertaurens plate cuirass
 			un(1, i(166411)),	-- flaskzertaurens plate shoulderguards
@@ -1349,6 +1419,7 @@ _.NeverImplemented =
 			un(1, i(168665)), 	-- Hidden bracers
 			un(1, i(48945)),	-- Gnomish THinking Cap (Mind Amplification Disk was added for it)
 			un(1, i(158329)), 	-- Hidden Gloves
+			un(1 ,i(116399)),	-- Emerald Sunglasses
 			un(1, i(162638)), 	-- Wooden Toy Helm (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 			un(1, i(162639)), 	-- Wooden Toy Helm (A) (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 			un(1, i(163922)), 	-- Used for a toy, you never can get the actual item
@@ -1581,11 +1652,24 @@ _.NeverImplemented =
 			un(1, i(168031)),	-- dnt transference disc
 		}),
 		un(1, i(79907)),	-- Spear of Xuen (Old Version)
-		un(1, i(129742)),	-- Badge of timewaking justice cap
+		un(1, i(129742)),	-- Badge of Timewalking Justice cap
 		un(1, i(31496)),	-- Unknown
 		un(1, i(31498)),	-- Unknown
 		un(1, i(31500)),	-- Unknown
 		un(1, i(31502)),	-- Unknown
+		un(1, i(169177)),	-- Blueprint: TK32(DNT))
+		un(1, i(169178)),	-- Blueprint: TK33(DNT))
+		un(1, i(169179)),	-- Blueprint: TK34(DNT))
+		un(1, i(169180)),	-- Blueprint: TK35(DNT))
+		un(1, i(169181)),	-- Blueprint: TK36(DNT))
+		un(1, i(169182)),	-- Blueprint: TK37(DNT))
+		un(1, i(169183)),	-- Blueprint: TK38(DNT))
+		un(1, i(169184)),	-- Blueprint: TK39(DNT))
+		un(1, i(169185)),	-- Blueprint: TK40(DNT))
+		un(1, i(169186)),	-- Blueprint: TK41(DNT))
+		un(1, i(169187)),	-- Blueprint: TK42(DNT))
+		un(1, i(169188)),	-- Blueprint: TK43(DNT))
+		un(1, i(169189)),	-- Blueprint: TK44(DNT))
 		un(1, i(165884)),	-- Treasure Map of molten clay
 		un(1, i(165899)),	-- Treasure Map of whispering reef
 		un(1, i(165900)),	-- Treasure Map of verdant wilds
@@ -3181,6 +3265,7 @@ _.NeverImplemented =
 		n(-347, {	-- Bows
 			un(1, i(5748)),	-- Centaur Longbow
 			un(1, i(108783)),   	-- Unknown
+			un(1, i(167144)),   	-- Unknown
 			un(1, i(115294)),	-- Spectral Longbow
 			un(1, i(109283)),   	-- 6.0 QA Combat Test Hunter Bow
 			un(1, i(140717)),	-- Marksman Recurve Bow
@@ -3246,6 +3331,7 @@ _.NeverImplemented =
 			un(1, i(108788)),   	-- Unknown
 			un(1, i(108789)),   	-- Unknown
 			un(1, i(109361)),   	-- Unknown
+			un(1, i(157639)),	-- Spiritbreaker Talons
 			un(1, i(105955)),	-- Wrathful Gladiator's Razor (Elite, added in 5.4 ????)
 			un(1, i(109535)),   	-- Unknown
 			un(1, i(109534)),   	-- Unknown
@@ -3258,6 +3344,9 @@ _.NeverImplemented =
 			un(1, i(64775)),	-- Bloodthirsty Gladiator's Fleshslicer (Epic BG item never made it out of beta))
 			un(1, i(64825)),	-- Bloodthirsty Gladiator's Right Render (Epic BG item never made it out of beta))
 			un(1, i(64926)),	-- Bloodthirsty Gladiator's Ripper (Epic BG item never made it out of beta)))
+			un(1, i(140708)),	-- Earthmenders talons (probably first try for party sync)
+			un(1, i(150603)),	-- Earthmenders talons (probably first try for party sync)
+			un(1, i(157640)),	-- Earthmenders talons (probably first try for party sync)
 		}),
 		n(-345, {	-- Guns
 			un(1, i(49455)),	-- Blunderbuss of Deforestation
@@ -3288,6 +3377,7 @@ _.NeverImplemented =
 			un(1, i(93440)),	-- crafted dreadful gladiator's endgame
 			un(1, i(93450)),	-- crafted dreadful gladiator's reprieve
 			un(1, i(159941)),	-- Unknown
+			un(1, i(153642)),	-- Unknown
 			un(1, i(161933)),	-- Unknown
 			un(1, i(161937)),	-- Unknown
 			un(1, i(165277)),	-- Unknown
@@ -3297,6 +3387,7 @@ _.NeverImplemented =
 			un(1, i(109311)),	-- Unknown
 			un(1, i(109380)),	-- Unknown
 			un(1, i(167146)),	-- Unknown
+			un(1, i(167998)),	-- Dark Iron Tankard
 		}),
 		n(-336, { 	-- One-Handed Maces
 			un(1, i(64700)),	-- Bloodthirsty Gladiator's Bonecracker (Epic BG Item, never made it out of beta)
@@ -3345,9 +3436,16 @@ _.NeverImplemented =
 			un(1, i(166889)),	-- Unknown
 			un(1, i(134067)),	-- Unknown
 			un(1, i(167143)),	-- Unknown
+			un(1, i(157630)),	-- Stalwart's longsword
+			un(1, i(157647)),	-- Frost-Etched Runeblade
 			un(1, i(43922)),	-- Honed Lightblade
 			--un(1, i(134067)),	-- Unknown
 			un(1, i(162447)),	-- Marrow Render
+			un(1, i(158508)),	-- Scalawag's Cutlass
+			un(1, i(158567)),	-- Necropolis sentry sword
+			un(1, i(161305)),	-- ashvane capatains shortsword
+			un(1, i(161308)),	-- ashvane capatains quickblade
+			un(1, i(161309)),	-- ashvane capatains gladius
 			un(1, i(93145)),	-- Scavenged Pandaren Sword
 			un(1, i(64817)),	-- Bloodthirsty Gladiator's Quickblade (Epic BG Item, never made it out of beta)
 			un(1, i(64858)),	-- Bloodthirsty Gladiator's Slicer (Epic BG Item, never made it out of beta))
@@ -3534,6 +3632,8 @@ _.NeverImplemented =
 			un(1, i(161926)),	-- Talanji's Salutary Scepter (never added)
 			un(1, i(159923)),	-- Unknown
 			un(1, i(161929)),	-- Unknown
+			un(1, i(152871)),	-- Seapriest's Wand
+			un(1, i(152873)),	-- Talanji's Salutary Scepter
 			un(1, i(64694)),	-- Bloodthirsty Gladiator's Baton of Light
 			un(1, i(64861)),	-- Bloodthirsty Gladiator's Touch of Defeat
 			un(1, i(165275)),	-- Unknown

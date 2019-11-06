@@ -13,6 +13,29 @@ _.Zones =
 						i(108735),	-- Arena Master's War Horn (TOY!)
 					},
 				}),
+				n(74575, {	-- Bladespire Brute
+					["questID"] = 33439,
+					["coord"] = { 30.3, 50.6, 525 },
+					["description"] = "Loot the brute at the base of Mor'dul Tower.",
+				}),
+				n(74924, {	-- Bladespire Brute
+					["questID"] = 33440,
+					["coord"] = { 30.6, 50.8, 525 },
+					["description"] = "Loot the falling brute halfway up Mor'dul Tower.",
+				}),
+				n(74918, {	-- Bladespire Brute
+					["questID"] = 33497,
+					["coord"] = { 30.5, 50.9, 525 },
+					["description"] = "Loot the falling brute at the top of Mor'dul Tower.",
+				}),
+				n(74574, {	-- Bladespire Primalist
+					["description"] = "Loot the cowering ogre at the top of Mor'dul Tower.",
+					["questID"] = 33438,
+					["coord"] = { 30.3, 51.1, 525 },
+					["g"] = {
+						i(107662),	-- Primalist's Prismatic Pendant
+					},
+				}),
 				o(230252, {	-- Burning Pearl
 					["questID"] = 34520,
 					["coord"] = { 42.1, 19.3, 525 },
@@ -155,6 +178,26 @@ _.Zones =
 					["g"] = {
 						i(111407),	-- Waterlogged Journal
 					},
+				}),
+				o(226468, {	-- Shamanstone: Buffeting Galefury
+					["questID"] = 33979,	-- Buffeting Galefury
+					["coord"] = { 65.14, 79.11, 525 },
+				}),
+				o(239925, {	-- Shamanstone: Ogrish Fortitude
+					["questID"] = 33980,	-- Ogrish Fortitude
+					["coord"] = { 43.84, 12.32, 525 },
+				}),
+				o(226469, {	-- Shamanstone: Spirit of the Wolf
+					["questID"] = 33978,	-- Spirit of the Wolf
+					["coord"] = { 17.47, 56.68, 525 },
+				}),
+				o(239926, {	-- Shamanstone: Touched by Fire
+					["questID"] = 33981,	-- Touched By Fire
+					["coord"] = { 36.98, 33.11, 525 },
+				}),
+				o(230544, {	-- Shamanstone: Touched By Ice
+					["questID"] = 33982,	-- Touched By Ice
+					["coord"] = { 60.35, 13.65, 525 },
 				}),
 				o(224392, {	-- Slave's Stash
 					["questID"] = 33500,

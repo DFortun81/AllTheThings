@@ -4,6 +4,7 @@
 
 _.Instances = { tier(4, {	-- Cataclysm
 	inst(72, { 	-- The Bastion of Twilight
+		["order"] = "03",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 85,

@@ -11,7 +11,9 @@ _.Zones =
 			["g"] = {
 				n(-4, { 	-- Achievemeents
 					ach(7312, {		-- Amber is the Color of My Energy (Dread Wastes)
-						crit(9),		-- Hisek the Swarmkeeper
+						crit(9, {	-- Hisek the Swarmkeeper
+							["sourceQuest"] = 31439,	-- Dropping Our Signal
+						}),
 						crit(3),		-- Iyyokuk the Lucid
 						crit(6),		-- Ka'roz the Locust
 						crit(4),		-- Kaz'tik the Manipulator
@@ -20,80 +22,98 @@ _.Zones =
 						crit(2),		-- Malik the Unscathed
 						crit(7),		-- Rik'kal the Dissector
 						crit(8),		-- Skeer the Bloodseeker
-						crit(10),		-- Xaril the Poisoned Mind
+						crit(10, {	-- Xaril the Poisoned Mind
+							["sourceQuest"] = 31211,	-- The Poisoned Mind
+						}),
+					}),
+					ach(9069, {	-- An Awfully Big Adventure
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["g"] = {
+							crit(15, {	-- Flowing Pandaren Spirit
+								["coord"] = { 61.2, 87.6, 422 },
+								["cr"] = 68462,	-- Flowing Pandaren Spirit <Grand Master Pet Tamer>
+							}),
+							crit(41, {	-- Wastewalker Shu
+								["coord"] = { 55.0, 37.6, 422 },
+								["cr"] = 66739,	-- Wastewalker Shu <Grand Master Pet Tamer>
+							}),
+						},
 					}),
 					ach(7284, {	-- Is Another Man's Treasure
-						o(213972, {		-- Blade of the Poisoned Mind
-							["coord"] = { 28.9, 41.9, 422 },
-							["questID"] = 31438,
-							["g"] = {
-								i(86527),	-- Blade of the Poisoned Mind
-							},
-						}),
-						o(213967, {		-- Blade of the Prime
-							["coords"] = { 
-								{ 66.3, 66.5, 422 },	-- Blade
-								{ 66.74, 63.76, 422 },	-- Cave
-							},								
-							["description"] = "Enter cave at 66.74, 63.76.",
-							["questID"] = 31433,
-							["g"] = {
-								i(86522),	-- Blade of the Prime
-							},
-						}),
-						o(213970, {	-- Bloodsoaked Chitin Fragment
-							["coord"] = { 26.0, 50.3, 422 },
-							["questID"] = 31436,
-							["g"] = {
-								i(86525),	-- Blood Soaked Chiten Fragment
-							},
-						}),
-						o(213969, {		-- Dissector's Staff of Mutation
-							["coord"] = { 30.2, 90.8, 422 },
-							["questID"] = 31435,
-							["g"] = {
-								i(86524),	-- Dissector's Staff of Mutation
-							},
-						}),
-						o(213966, {	-- Lucid Amulet
-							["coord"] = { 33.0, 30.1, 422 },
-							["questID"] = 31431,
-							["g"] = {
-								i(86521),	-- Lucid Amulet of the Agile Mind
-							},
-						}),
-						o(213964, {		-- Malik's Stalwart Spear
-							["coord"] = { 48.8, 30.0, 422 },
-							["questID"] = 31430,
-							["g"] = {
-								i(86520),	-- Malik's Stalwart Spear
-							},
-						}),
-						i(86529, {
-							["provider"] = { "n", 65552 },	-- Glinting Rapana Whelk
-							["questID"] = 31432,
-						}),
-						o(213968, {		-- Swarming Cleaver of Ka'roz
-							["coord"] = { 56.7, 77.7, 422 },
-							["questID"] = 31434,
-							["g"] = {
-								i(86523),	-- Swarming Cleaver of Ka'roz
-							},
-						}),
-						o(213971, {	-- Swarmkeeper's Medallion
-							["coord"] = { 54.3, 56.5, 422 },
-							["questID"] = 31437,
-							["g"] = {
-								i(86526),	-- Swarmkeeper's Medallion
-							},
-						}),
-						o(213962, {		-- Wind-Reaver's Dagger of Quick Strikes
-							["coord"] = { 71.8, 36.1, 422 },
-							["questID"] = 31429,
-							["g"] = {
-								i(86519),	-- Wind-Reaver's Dagger of Quick Strikes
-							},
-						}),
+						["collectible"] = false,
+						["g"] = {
+							o(213972, {		-- Blade of the Poisoned Mind
+								["coord"] = { 28.9, 41.9, 422 },
+								["questID"] = 31438,
+								["g"] = {
+									i(86527),	-- Blade of the Poisoned Mind
+								},
+							}),
+							o(213967, {		-- Blade of the Prime
+								["coords"] = {
+									{ 66.3, 66.5, 422 },	-- Blade
+									{ 66.7, 63.7, 422 },	-- Cave
+								},
+								["questID"] = 31433,
+								["g"] = {
+									i(86522),	-- Blade of the Prime
+								},
+							}),
+							o(213970, {	-- Bloodsoaked Chitin Fragment
+								["coord"] = { 26.0, 50.3, 422 },
+								["questID"] = 31436,
+								["g"] = {
+									i(86525),	-- Blood Soaked Chiten Fragment
+								},
+							}),
+							o(213969, {		-- Dissector's Staff of Mutation
+								["coord"] = { 30.2, 90.8, 422 },
+								["questID"] = 31435,
+								["g"] = {
+									i(86524),	-- Dissector's Staff of Mutation
+								},
+							}),
+							o(213966, {	-- Lucid Amulet
+								["coord"] = { 33.0, 30.1, 422 },
+								["questID"] = 31431,
+								["g"] = {
+									i(86521),	-- Lucid Amulet of the Agile Mind
+								},
+							}),
+							o(213964, {		-- Malik's Stalwart Spear
+								["coord"] = { 48.8, 30.0, 422 },
+								["questID"] = 31430,
+								["g"] = {
+									i(86520),	-- Malik's Stalwart Spear
+								},
+							}),
+							i(86529, {
+								["provider"] = { "n", 65552 },	-- Glinting Rapana Whelk
+								["questID"] = 31432,
+							}),
+							o(213968, {		-- Swarming Cleaver of Ka'roz
+								["coord"] = { 56.7, 77.7, 422 },
+								["questID"] = 31434,
+								["g"] = {
+									i(86523),	-- Swarming Cleaver of Ka'roz
+								},
+							}),
+							o(213971, {	-- Swarmkeeper's Medallion
+								["coord"] = { 54.3, 56.5, 422 },
+								["questID"] = 31437,
+								["g"] = {
+									i(86526),	-- Swarmkeeper's Medallion
+								},
+							}),
+							o(213962, {		-- Wind-Reaver's Dagger of Quick Strikes
+								["coord"] = { 71.8, 36.1, 422 },
+								["questID"] = 31429,
+								["g"] = {
+									i(86519),	-- Wind-Reaver's Dagger of Quick Strikes
+								},
+							}),
+						},
 					}),
 					ach(7316, {	-- Over Their Heads (Dread Wastes)
 						crit(4),	-- Amber-Shaper Un'sok
@@ -194,6 +214,7 @@ _.Zones =
 					}),
 					q(31268, {	-- A Little Brain Work
 						["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
+						["coord"] = { 54.2, 35.7, 422 },
 						["isDaily"] = true,
 					}),
 					q(31730, {	-- A Not So Friendly Request
@@ -201,7 +222,9 @@ _.Zones =
 						["isBreadcrumb"] = true,
 					}),
 					q(31210, {	-- A Shade of Dread
+						["coord"] = { 28.6, 42.1, 422 },
 						["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
+						["sourceQuest"] = 31018,	-- Beneath the Heart of Fear
 					}),
 					q(31176, {	-- A Strange Appetite
 						["provider"] = { "n", 63071 },	-- Skeer the Bloodseeker
@@ -231,14 +254,17 @@ _.Zones =
 						["provider"] = { "n", 62202 },	-- Kil'ruk the Wind-Reaver
 					}),
 					q(31271, {	-- Bad Genes
+						["coord"] = { 54.3, 35.9, 422 },
+						["isDaily"] = true,
 						["providers"] = {
 							{ "n", 63072 },	-- Rik'kal the Dissector
 							{ "n", 67091 },	-- Rik'kal the Dissector
 						},
-						["isDaily"] = true,
 					}),
 					q(31018, {	-- Beneath the Heart of Fear
 						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
+						["coord"] = { 55.0, 35.8, 422 },
+						["minReputation"] = { 1337, REVERED },
 					}),
 					q(31090, {	-- Better With Age
 						["g"] = {
@@ -309,11 +335,12 @@ _.Zones =
 						["provider"] = { "n", 64599 },	-- Ambersmith Zikk
 					}),
 					q(31441, {	-- Corruption Runs Deep
+						["coord"] = { 56.2, 58.2, 422 },
+						["sourceQuests"] = { 31439 },	-- Dropping Our Signal
 						["providers"] = {
 							{ "n", 64569 },	-- Hisek the Swarmkeeper
 							{ "n", 64672 },	-- Hisek the Swarmkeeper
 						},
-						["sourceQuests"] = { 31439 },	-- Dropping Our Signal
 					}),
 					q(31680, {	-- Crime and Punishment
 						["provider"] = { "n", 65975 },	-- Zer'ik
@@ -331,6 +358,8 @@ _.Zones =
 						["provider"] = { "n", 62668 },	-- Olon
 					}),
 					q(31458, {	-- Damage Control
+						["coord"] = { 56.2, 58.2, 422 },
+						["sourceQuest"] = 31441,	-- Corruption Runs Deep
 						["providers"] = {
 							{ "n", 64705 },	-- Hisek the Swarmkeeper
 							{ "n", 65454 },	-- Hisek the Swarmkeeper
@@ -338,17 +367,26 @@ _.Zones =
 					}),
 					q(31216, {	-- Dark Skies
 						["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
+						["coord"] = { 54.9, 36.1, 422 },
 						["isDaily"] = true,
+						["sourceQuest"] = 31211,	-- The Poisoned Mind
 					}),
 					q(31209, {	-- Dark Wings, Dark Things
+						["coord"] = { 28.6, 42.1, 422 },
 						["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
+						["sourceQuest"] = 31018,	-- Beneath the Heart of Fear
 					}),
 					q(31009, {	-- Dead Zone
 						["provider"] = { "n", 64815 },	-- Kor'ik
 					}),
 					q(31237, {	-- Debugging the Terrace
 						["provider"] = { "n", 63785 },	-- Hisek the Swarmkeeper
+						["coord"] = { 54.8, 36.2, 422 },
 						["isDaily"] = true,
+						["sourceQuests"] = {
+							31458,	-- Damage Control
+							31465,	-- Extracting Answers
+						},
 					}),
 					q(31186, {	-- Dog Food
 						["provider"] = { "n", 63955 },	-- Dog
@@ -365,6 +403,8 @@ _.Zones =
 					}),
 					q(31439, {	-- Dropping Our Signal
 						["provider"] = { "n", 64815 },	-- Kor'ik
+						["coord"] = { 54.7, 34.0, 422 },
+						["minReputation"] = { 1337, REVERED },
 					}),
 					q(31111, {	-- Eradicating the Zan'thik
 						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
@@ -378,6 +418,12 @@ _.Zones =
 					}),
 					--q(31679),	-- Extending Our Coverage -- removed as duplicate?
 					q(31465, {	-- Extracting Answers
+						["coord"] = { 56.2, 58.2, 422 },
+						["sourceQuest"] = 31441,	-- Corruption Runs Deep
+						["providers"] = {
+							{ "n", 64705 },	-- Hisek the Swarmkeeper
+							{ "n", 65454 },	-- Hisek the Swarmkeeper
+						},
 						["g"] = {
 							i(88140),	-- Motherseed Wristwraps
 							i(88139),	-- Sapfly Wristwraps
@@ -388,10 +434,6 @@ _.Zones =
 							i(88134),	-- Wind-Reaver Wristwraps
 							i(88133),	-- Bladesworn Wristwraps
 							i(88132),	-- Coldbite Wristwraps
-						},
-						["providers"] = {
-							{ "n", 64705 },	-- Hisek the Swarmkeeper
-							{ "n", 65454 },	-- Hisek the Swarmkeeper
 						},
 					}),
 					q(31001, {	-- Falling Down
@@ -503,7 +545,12 @@ _.Zones =
 					}),
 					q(31272, {	-- Infection
 						["provider"] = { "n", 63785 },	-- Hisek the Swarmkeeper
+						["coord"] = { 54.8, 36.2, 422 },
 						["isDaily"] = true,
+						["sourceQuests"] = {
+							31458,	-- Damage Control
+							31465,	-- Extracting Answers
+						},
 					}),
 					o(213973, {	-- Klaxxi Sonic Relay
 						q(31010, {	-- In Her Clutch
@@ -526,6 +573,7 @@ _.Zones =
 					}),
 					q(31024, {	-- Kunchong Treats
 						["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
+						["coord"] = { 54.2, 35.7, 422 },
 						["isDaily"] = true,
 					}),
 					i(87871, {	-- Massive Kyparite Core
@@ -562,6 +610,7 @@ _.Zones =
 					}),
 					q(31267, {	-- Mistblade Destruction
 						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
+						["coord"] = { 55.0, 35.8, 422 },
 						["isDaily"] = true,
 					}),
 					q(31002, {	-- Nope
@@ -605,7 +654,12 @@ _.Zones =
 					}),
 					q(31504, {	-- Ordnance Disposal
 						["provider"] = { "n", 63785 },	-- Hisek the Swarmkeeper
+						["coord"] = { 54.8, 36.2, 422 },
 						["isDaily"] = true,
+						["sourceQuests"] = {
+							31458,	-- Damage Control
+							31465,	-- Extracting Answers
+						},
 					}),
 					q(31782, {	-- Overthrone
 						["g"] = {
@@ -626,11 +680,11 @@ _.Zones =
 						["sourceQuests"] = { 31003 },	-- Psycho Mantid
 					}),
 					q(31083, {	-- Promises of Gold
+						["provider"] = { "n", 62767 },	-- Gokk'lok
+						["coord"] = { 27.4, 16.2, 422 },
 						["g"] = {
 							i(88417),	-- Gokk'lok's Shell
 						},
-						["provider"] = { "n", 62767 },	-- Gokk'lok
-						["description"] = "Found underwater in the north-east of the zone.",
 					}),
 					q(31003, {	-- Psycho Mantid
 						["provider"] = { "n", 62166 },	-- Marksman Lann
@@ -644,7 +698,12 @@ _.Zones =
 					}),
 					q(31510, {	-- Quiet Now
 						["provider"] = { "n", 63785 },	-- Hisek the Swarmkeeper
+						["coord"] = { 54.8, 36.2, 422 },
 						["isDaily"] = true,
+						["sourceQuests"] = {
+							31458,	-- Damage Control
+							31465,	-- Extracting Answers
+						},
 					}),
 					q(31808, {-- Rampage Against the Machine
 						["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
@@ -779,6 +838,7 @@ _.Zones =
 					}),
 					q(31270, {	-- The Fight Against Fear
 						["provider"] = { "n", 62180 },	-- Korven the Prime
+						["coord"] = { 54.3, 36.0, 422 },
 						["isDaily"] = true,
 					}),
 					q(31067, {	-- The Heavens Hum With War
@@ -839,6 +899,13 @@ _.Zones =
 						}),
 					}),
 					q(31211, {	-- The Poisoned Mind
+						["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
+						["coord"] = { 28.6, 42.1, 422 },
+						["sourceQuests"] = {
+							31210,	-- A Shade of Dread
+							31209,	-- Dark Wings, Dark Things
+							31208,	-- Venomous Intent
+						},
 						["g"] = {
 							i(84065),	-- Krik'thik Band
 							i(84066),	-- Loop of the Poisoned Mind
@@ -846,7 +913,6 @@ _.Zones =
 							i(84068),	-- Battletank Seal
 							i(84069),	-- Wingguard Loop
 						},
-						["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
 					}),
 					q(31026, {	-- The Root of the Problem
 						["g"] = {
@@ -864,6 +930,7 @@ _.Zones =
 					}),
 					q(31269, {	-- The Scale-Lord
 						["provider"] = { "n", 62180 },	-- Korven the Prime
+						["coord"] = { 54.3, 36.0, 422 },
 						["isDaily"] = true,
 					}),
 					q(31179, {	-- The Scent of Blood
@@ -894,7 +961,9 @@ _.Zones =
 						["isBreadcrumb"] = true,
 					}),
 					q(31208, {	-- Venomous Intent
+						["coord"] = { 28.6, 42.1, 422 },
 						["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
+						["sourceQuest"] = 31018,	-- Beneath the Heart of Fear
 					}),
 					q(31505, {	-- Vess-Guard Duty
 						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
@@ -992,8 +1061,7 @@ _.Zones =
 						},
 					}),
 					n(50836, {	-- Ik-Ik the Nimble
-						["coord"] = { 55.4, 63.4, 422 },
-						["description"] = "Burrow entrance at 54.9, 65.7",
+						["coord"] = { 54.9, 65.7, 422 },
 						["g"] = {
 							i(87634),	-- Mazu's Robe
 							i(87630),	-- Chestpiece of Twinkling Stars
@@ -1026,6 +1094,7 @@ _.Zones =
 						["coords"] = {
 							{ 74.2, 20.4, 422 },
 							{ 72.8, 22.2, 422 },
+							{ 74.5, 22.9, 422 },
 						},
 						["g"] = {
 							i(87629),	-- Chestplate of Manifest Dread

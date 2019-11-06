@@ -5,7 +5,15 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(634, {	-- Stormheim
-			n(-38,    {	-- Profession
+			n(-38, {	-- Profession
+				prof(794, {	-- Archaeology
+					q(41157, {	-- Corrupted Studies
+						["isWeekly"] = true,
+					}),
+					q(41159, {	-- Process of Elimination
+						["isWeekly"] = true,
+					}),
+				}),
 				prof(356, {	-- Fishing
 					n(-10067, { 	-- Artifact
 						["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",

@@ -10,10 +10,6 @@ _.Zones =
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 				}),
-				q(45840, {	-- Assault on Highmountain (Invasion "wrapper" quest)
-					["lvl"] = 98,
-					["isWorldQuest"] = true,
-				}),
 				q(41705, {	-- Assault on Thunder Totem
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
@@ -136,10 +132,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(41695, {	-- DANGER: Defilia
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
-				}),
-				q(41093, {	-- DANGER: Durguth
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 				}),

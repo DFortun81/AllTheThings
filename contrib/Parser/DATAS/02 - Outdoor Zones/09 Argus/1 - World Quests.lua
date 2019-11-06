@@ -5,6 +5,7 @@ _.Zones =
 {
 	m(905, {	-- Argus
 		n(-34, {	-- World Quests
+			["order"] = "05",
 			["lvl"] = 110,
 			["groups"] = {
 				n(-322, {	-- Cloak
@@ -51,6 +52,7 @@ _.Zones =
 					i(150963),	-- Garothi Sabatons
 				}),
 				n(-384, {	-- Neck
+					i(150990),	-- Krokul-Bone Pendant
 					i(136733),	-- Warden Pendant
 				}),
 				--[[

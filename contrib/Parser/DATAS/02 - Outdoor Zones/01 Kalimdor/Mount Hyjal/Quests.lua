@@ -555,12 +555,14 @@ _.Zones =
 					["sourceQuest"] = 29326,	-- The Nordrassil Summit
 				}),
 				q(25624, {	-- Into the Maw!
+					["altQuests"] = { 25617 },	-- Into the Maw!
 					["provider"] = { "n", 39432 },	-- Takrik Ragehowl
 					["coord"] = { 28.4, 29.8, 198 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25355,	-- Lightning in a Bottle
 				}),
 				q(25617, {	-- Into the Maw!
+					["altQuests"] = { 25624 },	-- Into the Maw!
 					["provider"] = { "n", 39622 },	-- Spirit of Lo'Gosh
 					["coord"] = { 28.6, 39.2, 198 },
 					["races"] = HORDE_ONLY,
@@ -569,10 +571,12 @@ _.Zones =
 				q(25623, {	-- Into the Maw!
 					["provider"] = { "n", 39433 },	-- Ian Duran
 					["races"] = ALLIANCE_ONLY,
+					["altQuests"] = { 25618 },
 				}),
 				q(25618, {	-- Into the Maw!
 					["provider"] = { "n", 39627 },	-- Spirit of Goldrinn
 					["races"] = ALLIANCE_ONLY,
+					["altQuests"] = { 25623 },
 				}),
 				q(25940, {	-- Last Stand at Whistling Grove
 					["provider"] = { "n", 39927 },	-- Laina Nightsky

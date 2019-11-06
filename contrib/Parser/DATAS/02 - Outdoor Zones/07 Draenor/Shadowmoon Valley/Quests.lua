@@ -6,6 +6,14 @@ _.Zones =
 	m(572, {	-- Draenor
 		m(539, {	-- Shadowmoon Valley (Draenor)
 			n(-17, {	-- Quests
+				q(36176, {	-- A Call for Huntsman
+					["providers"] = {
+						{ "i", 114877 },	-- Dirty Note
+						{ "n", 75043 },		-- Karnoth
+					},
+					["races"] = ALLIANCE_ONLY,
+					["requireSkill"] = 165,	-- Leatherworking
+				}),
 				q(33795, {	-- Across the Stars
 					["sourceQuests"] = { 34043 },	-- Darkest Night
 					["coord"] = { 35.4, 36.8, 539 },
@@ -129,7 +137,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 76204 },	-- Fiona
 				}),
-				q(44488,  {	-- Cursed Tome
+				q(44488, {	-- Cursed Tome
 					["itemID"] = 141361,	-- Cursed Tome
 					--["objectID"] = 258980,	-- Cursed Tome
 					["coord"] = { 37.6, 59.3, 539 },
@@ -187,16 +195,6 @@ _.Zones =
 				q(33267, {	-- [Deprecated}
 					["u"] = 1,
 				}),
-				i(114877, {	-- Dirty Note
-					["crs"] = { 75043 },	-- Karnoth
-					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = 165,	-- Leatherworking
-					["g"] = {
-						q(36176, {	-- A Call for Huntsman
-							["races"] = ALLIANCE_ONLY,
-						}),
-					},
-				}),
 				q(34786, {	-- Engorged Goren
 					["sourceQuests"] = { 34785 },	-- Hataaru, the Artificer
 					["coord"] = { 61.8, 29.1, 539 },
@@ -246,7 +244,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 81153 },	-- Scout Valdez
 				}),
-				q(36311, { -- Father and Son
+				q(36311, {	-- Father and Son
 					["sourceQuests"] = { 36309 },	-- The Strength of Iron
 					["requireSkill"] = 164,	-- Blacksmithing
 					["races"] = ALLIANCE_ONLY,
@@ -325,13 +323,15 @@ _.Zones =
 					["requireSkill"] = 165,	-- Leatherworking
 				}),
 				q(37332, {	-- Fungal Bundle
-					["itemID"] = 119317,	-- Curious Growth
+					["providers"] = {
+						{ "i", 119317 },	-- Curious Growth
+						{ "n", 82318 },		-- Umbraspore Giant
+					},
 					["coords"] = {
 						{ 51.8, 19.0, 539 },
 						{ 57.4, 21.6, 539 },
 					},
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 82318 },	-- Umbraspore Giant
 				}),
 				q(34784, {	-- Fun with Fungus
 					["sourceQuests"] = { 34783 },	-- Naielle, the Rangari
@@ -547,6 +547,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80075 },	-- Exarch Hataaru
 				}),
+				q(36240, {	-- Slow and Steady
+					["sourceQuests"] = { 36239 },	-- A Mysterious Satchel
+					["requireSkill"] = 773,	-- Inscription
+					["provider"] = { "n", 84724 },	-- Sha'la
+					["coord"] = { 57.8, 21.6, 539 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(34997, {	-- Slumberbloom
 					["coord"] = { 53.0, 65.3, 539 },
 					["races"] = ALLIANCE_ONLY,
@@ -666,6 +673,28 @@ _.Zones =
 				q(34496, {	-- The Hills of Valuun (bonus objective)
 					["coord"] = { 65.1, 33.6, 539 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(36241, {	-- The Power of Preservation
+					["sourceQuests"] = { 36240 },	-- Slow and Steady
+					["requireSkill"] = 773,	-- Inscription
+					["provider"] = { "n", 84724 },	-- Sha'la
+					["coord"] = { 57.8, 21.6, 539 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(111815),	-- Scribe's Quarters, Level 1
+						i(111923, {	-- Draenor Inscription
+							i(120136),		-- Recipe: Secrets of Draenor Inscription
+							recipe(169081),	-- War Paints
+							recipe(167950, {	-- Research: Warbinder's Ink
+								i(113992),	-- Scribe's Research Notes
+							}),
+							recipe(175390),	-- Laughing Tarot
+							recipe(175389),	-- Ocean Tarot
+							recipe(175392),	-- Savage Tarot
+							recipe(166669),	-- Card of Omens
+							recipe(178497),	-- Warbinder's Ink
+						}),
+					},
 				}),
 				q(37322, {	-- The Prophet's Final Message
 					["sourceQuests"] = { 33256 },	-- The Defense of Karabor

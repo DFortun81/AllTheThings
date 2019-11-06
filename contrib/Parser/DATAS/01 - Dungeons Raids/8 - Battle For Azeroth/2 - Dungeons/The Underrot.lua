@@ -9,6 +9,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			1042,	-- Ruin's Descent
 		},
 		["groups"] = {
+			n(-34, {	-- World Quests
+				q(52237, {	-- The Underrot: Restless Horror
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+			}),
 			d(1, {	-- Normal
 				e(2157, {	-- Elder Leaxa
 					["crs"] = {

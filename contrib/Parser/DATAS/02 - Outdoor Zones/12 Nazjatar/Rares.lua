@@ -401,7 +401,7 @@ _.Zones =
 				-- 55427 & 56916 = manapearls only
 				-- 57082 = benthic only
 				["isDaily"] = true,
-				["description"] = "Wanders around Nazjatar.  This mob doesn't have a vignette star that appears on the map and isn't technically a rare, but has a chance to drop Prismatic Manapearls and Benthic gear.",
+				["description"] = "Wanders around Nazjatar. This mob doesn't have a vignette star that appears on the map and isn't technically a rare, but has a chance to drop Prismatic Manapearls and Benthic gear.",
 				["g"] = {
 					currency(1721),	-- Prismatic Manapearl
 				},

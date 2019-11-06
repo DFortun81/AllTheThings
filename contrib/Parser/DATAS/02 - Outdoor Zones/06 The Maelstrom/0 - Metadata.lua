@@ -10,5 +10,6 @@ _.Zones =
 		["maps"] = {
 			276,	-- The Maelstrom
 		},
+		["ordered"] = true,
 	}),
 };

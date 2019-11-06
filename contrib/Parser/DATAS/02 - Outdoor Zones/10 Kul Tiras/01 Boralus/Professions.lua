@@ -167,6 +167,105 @@ _.Zones =
 						},
 					}),
 				}),
+				prof(755, {	-- Jewelcrafting
+					-- Tools of Trade Questline
+					q(49570, {	-- A Rocky Start (A)
+						["provider"] = { "o", 278570 },	-- Ancient Journal
+						["coord"] = { 75.0, 10.2, 1161 },
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["description"] = "This quest chain requires 150 in Kul Tiran Jewelcrafting.",
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(49571, {	-- Digging Through the Past (A)
+						["provider"] = { "n", 130399 },	-- Zooey Inksprocket
+						["coord"] = { 73.4, 6.3, 1161 },
+						["sourceQuest"] = 49570,	-- A Rocky Start (A)
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(49574, {	-- The Shrine of Storms
+						["provider"] = { "n", 130368 },	-- Samuel D. Colton III
+						["coord"] = { 75.2, 9.9, 1161 },
+						["sourceQuest"] = 49571,	-- Digging Through the Past (A)
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(49577, {	-- Cracking the Surface (A)
+						["provider"] = { "n", 150898 },	-- Shrine of Storms
+						["coord"] = { 60.7, 58.5, 942 },
+						["modelScale"] = 2,
+						["sourceQuest"] = 49574,	-- The Shrine of Storms
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(55585, {	-- A Promising Beginning (A)
+						["provider"] = { "n", 152489 },	-- Shrine of Storms
+						["coord"] = { 60.7, 58.5, 942 },
+						["modelScale"] = 2,
+						["sourceQuest"] = 49577,	-- Cracking the Surface (A)
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(49572, {	-- The Shrine of the Sea
+						["provider"] = { "n", 130368 },	-- Samuel D. Colton III
+						["coord"] = { 75.2, 9.9, 1161 },
+						["sourceQuest"] = 55585,	-- A Promising Beginning (A)
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(49575, {	-- Tol Dagor: Jewel of the Tides (A)
+						["provider"] = { "n", 150893 },	-- Shrine of the Sea
+						["coord"] = { 46.4, 23.5, 895 },
+						["modelScale"] = 2,
+						["sourceQuest"] = 49572,	-- The Shrine of the Sea
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(55590, {	-- Setting Things Right (A)
+						["provider"] = { "n", 152495 },	-- Shrine of the Sea
+						["coord"] = { 46.4, 23.5, 895 },
+						["modelScale"] = 2,
+						["sourceQuest"] = 49575,	-- Tol Dagor: Jewel of the Tides (a)
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(49573, {	-- The Shrine of the Eventide
+						["provider"] = { "n", 130368 },	-- Samuel D. Colton III
+						["coord"] = { 75.2, 9.9, 1161 },
+						["sourceQuest"] = 55585,	-- A Promising Beginning (A)
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(49576, {	-- High Prospects (A)
+						["provider"] = { "n", 150896 },	-- Shrine of the Eventide
+						["coord"] = { 34.1, 35.5, 896 },
+						["modelScale"] = 2,
+						["sourceQuest"] = 49573,	-- The Shrine of the Eventide
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(55586, {	-- Polished Up (A)
+						["provider"] = { "n", 152497 },	-- Shrine of the Eventide
+						["coord"] = { 34.1, 35.5, 896 },
+						["modelScale"] = 2,
+						["sourceQuest"] = 49576,	-- High Prospects (A)
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(49584, {	-- The Missing Chapter (A)
+						["provider"] = { "n", 130368 },	-- Samuel D. Colton III
+						["coord"] = { 75.2, 9.9, 1161 },
+						["sourceQuests"] = {
+							55590,	-- Setting Things Right (A)
+							55586,	-- Polished Up (A)
+						},
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							recipe(256703),	-- Design: Jewelhammer's Focus
+						},
+					}),
+				}),
 				prof(186, {	-- Mining
 					q(48752, {	-- A Need For Coal
 						["provider"] = { "n", 136091 },	-- Myra Cabot

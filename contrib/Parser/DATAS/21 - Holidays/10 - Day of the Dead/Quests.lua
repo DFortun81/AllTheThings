@@ -5,287 +5,168 @@ _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 {
 	holiday(307365, {	-- Day of the Dead
 		n(-17, {	-- Quests
-			{	-- The Grateful Dead [Azuremyst Isle - Draenei]
-				["questID"] = 14169,	-- The Grateful Dead
-				["provider"] = { "n", 34484 },			-- Cheerful Draenei Spirit
-				["races"] = {
-					11,	-- Draenei
-				},
-				["coords"] = {
-					{ 47.6, 55.8 },
-				},
-				["maps"] = {
-					97,	-- Azuremyst Isle
-				},
-				["g"] = {
-					{	-- Macabre Marionette
-						["itemID"] = 46831,	-- Macabre Marionette
-					},
-				},
+			q(14169, {	-- The Grateful Dead — Azuremyst Isle, Draenei
+				["provider"] = { "n", 34484 },	-- Cheerful Draenei Spirit
 				["isYearly"] = true,
-			},
-			{	-- The Grateful Dead [Dalaran - All]
-				["questID"] = 14166,	-- The Grateful Dead
-				["provider"] = { "n", 35256 },			-- Cheerful Dalaran Spirit
+				["coord"] = { 47.6, 55.8, 97 },
+				["races"] = { 11 },	-- Draenei
+				["maps"] = { 97 },	-- Azuremyst Isle
+				["g"] = {
+					i(46831),	-- Macabre Marionette (PET!)
+				},
+			}),
+			q(14166, {	-- The Grateful Dead — Dalaran, all
+				["provider"] = { "n", 35256 },	-- Cheerful Dalaran Spirit
+				["isYearly"] = true,
 				["coords"] = {
-					{ 34.43, 38.17, 125 },	-- Dalaran: Northrend
-					{ 33.86, 38.36, 627 },	-- Dalaran: Broken Isles
+					{ 34.4, 38.1, 125 },	-- Dalaran: Northrend
+					{ 33.8, 38.3, 627 },	-- Dalaran: Broken Isles
 				},
 				["maps"] = {
 					625,	-- Dalaran: Broken Isles
 					125,	-- Dalaran: Northrend
 				},
 				["g"] = {
-					{	-- Macabre Marionette
-						["itemID"] = 46831,	-- Macabre Marionette
-					},
+					i(46831),	-- Macabre Marionette (PET!)
 				},
+			}),
+			q(14170, {	-- The Grateful Dead — Darnassus, Night Elf / Void Elf
+				["provider"] = { "n", 34479 },	-- Cheerful Night Elf Spirit
 				["isYearly"] = true,
-			},
-			{	-- The Grateful Dead [Darnassus - Night Elf]
-				["questID"] = 14170,	-- The Grateful Dead
-				["provider"] = { "n", 34479 },			-- Cheerful Night Elf Spirit
 				["races"] = {
 					4,	-- Night Elf
 					29,	-- Void Elf
 				},
-				["coords"] = {
-					{ 68.6, 40.6 },
-				},
-				["maps"] = {
-					89,	-- Darnassus
-				},
+				["coord"] = { 68.6, 40.6, 89 },
+				["maps"] = { 89 },	-- Darnassus
 				["g"] = {
-					{	-- Macabre Marionette
-						["itemID"] = 46831,	-- Macabre Marionette
-					},
+					i(46831),	-- Macabre Marionette (PET!)
 				},
+			}),
+			q(27846, {	-- The Grateful Dead — Darnassus, Worgen
+				["provider"] = { "n", 46908 },	-- Cheerful Worgen Spirit
 				["isYearly"] = true,
-			},
-			{	-- The Grateful Dead [Darnassus - Worgen]
-				["questID"] = 27846,	-- The Grateful Dead
-				["provider"] = { "n", 46908 },			-- Cheerful Worgen Spirit
-				["races"] = {
-					22,	-- Worgen
-				},
-				["coords"] = {
-					{ 68.6, 40.6 },
-				},
-				["maps"] = {
-					89,	-- Darnassus
-				},
+				["races"] = { 22 },	-- Worgen
+				["coord"] = { 68.6, 40.6, 89 },
+				["maps"] = { 89 },	-- Darnassus
 				["g"] = {
-					{	-- Macabre Marionette
-						["itemID"] = 46831,	-- Macabre Marionette
-					},
+					i(46831),	-- Macabre Marionette (PET!)
 				},
+			}),
+			q(14167, {	-- The Grateful Dead — Dun Morogh, Dwarf
+				["provider"] = { "n", 34478 },	-- Cheerful Dwarf Spirit
 				["isYearly"] = true,
-			},
-			{	-- The Grateful Dead [Dun Morogh - Dwarf]
-				["questID"] = 14167,	-- The Grateful Dead
-				["provider"] = { "n", 34478 },			-- Cheerful Dwarf Spirit
-				["races"] = {
-					3,	-- Dwarf
-				},
-				["coords"] = {
-					{ 61.6, 37.4 },
-				},
-				["maps"] = {
-					27,	-- Dun Moroghs
-				},
+				["races"] = { 3 },	-- Dwarf
+				["coord"] = { 61.6, 37.4, 27 },
+				["maps"] = { 27 },	-- Dun Moroghs
 				["g"] = {
-					{	-- Macabre Marionette
-						["itemID"] = 46831,	-- Macabre Marionette
-					},
+					i(46831),	-- Macabre Marionette (PET!)
 				},
+			}),
+			q(14168, {	-- The Grateful Dead — Dun Morogh, Gnome
+				["provider"] = { "n", 34481 },	-- Cheerful Gnome Spirit
 				["isYearly"] = true,
-			},
-			{	-- The Grateful Dead [Dun Morogh - Gnome]
-				["questID"] = 14168,	-- The Grateful Dead
-				["provider"] = { "n", 34481 },			-- Cheerful Gnome Spirit
-				["races"] = {
-					7,	-- Gnome
-				},
-				["coords"] = {
-					{ 61.6, 37.4 },
-				},
-				["maps"] = {
-					27,	-- Dun Moroghs
-				},
+				["races"] = { 7 },	-- Gnome
+				["coord"] = { 61.6, 37.4, 27 },
+				["maps"] = { 27 },	-- Dun Moroghs
 				["g"] = {
-					{	-- Macabre Marionette
-						["itemID"] = 46831,	-- Macabre Marionette
-					},
+					i(46831),	-- Macabre Marionette (PET!)
 				},
+			}),
+			q(27841, {	-- The Grateful Dead — Durotar, Goblin
+				["provider"] = { "n", 46901 },	-- Cheerful Goblin Spirit
 				["isYearly"] = true,
-			},
-			{	-- The Grateful Dead [Durotar - Goblin]
-				["questID"] = 27841,	-- The Grateful Dead
-				["provider"] = { "n", 46901 },			-- Cheerful Goblin Spirit
-				["races"] = {
-					9,	-- Goblin
-				},
-				["coords"] = {
-					{ 47.4, 17.6 },
-				},
-				["maps"] = {
-					1,	-- Durotar
-				},
+				["races"] = { 9 },	-- Goblin
+				["coord"] = { 47.4, 17.6, 1 },
+				["maps"] = { 1 },	-- Durotar
 				["g"] = {
-					{	-- Macabre Marionette
-						["itemID"] = 46831,	-- Macabre Marionette
-					},
+					i(46831),	-- Macabre Marionette (PET!)
 				},
+			}),
+			q(14175, {	-- The Grateful Dead — Durotar, Orc
+				["provider"] = { "n", 34477 },	-- Cheerful Orc Spirit
 				["isYearly"] = true,
-			},
-			{	-- The Grateful Dead [Durotar - Orc]
-				["questID"] = 14175,	-- The Grateful Dead
-				["provider"] = { "n", 34477 },			-- Cheerful Orc Spirit
-				["races"] = {
-					2,	-- Orc
-				},
-				["coords"] = {
-					{ 47.4, 17.6 },
-				},
-				["maps"] = {
-					1,	-- Durotar
-				},
+				["races"] = { 2 },	-- Orc
+				["coord"] = { 47.4, 17.6, 1 },
+				["maps"] = { 1 },	-- Durotar
 				["g"] = {
-					{	-- Macabre Marionette
-						["itemID"] = 46831,	-- Macabre Marionette
-					},
+					i(46831),	-- Macabre Marionette (PET!)
 				},
+			}),
+			q(14177, {	-- The Grateful Dead — Durotar, Troll
+				["provider"] = { "n", 34482 },	-- Cheerful Troll Spirit
 				["isYearly"] = true,
-			},
-			{	-- The Grateful Dead [Durotar - Troll]
-				["questID"] = 14177,	-- The Grateful Dead
-				["provider"] = { "n", 34482 },			-- Cheerful Troll Spirit
-				["races"] = {
-					8,	-- Troll
-				},
-				["coords"] = {
-					{ 47.4, 17.6 },
-				},
-				["maps"] = {
-					1,	-- Durotar
-				},
+				["races"] = { 8 },	-- Troll
+				["coord"] = { 47.4, 17.6, 1 },
+				["maps"] = { 1 },	-- Durotar
 				["g"] = {
-					{	-- Macabre Marionette
-						["itemID"] = 46831,	-- Macabre Marionette
-					},
+					i(46831),	-- Macabre Marionette (PET!)
 				},
+			}),
+			q(14171, {	-- The Grateful Dead — Silvermoon City, Blood Elf / Nightborne
+				["provider"] = { "n", 34483 },	-- Cheerful Blood Elf Spirit
 				["isYearly"] = true,
-			},
-			{	-- The Grateful Dead [Silvermoon City - Blood Elf]
-				["questID"] = 14171,	-- The Grateful Dead
-				["provider"] = { "n", 34483 },			-- Cheerful Blood Elf Spirit
 				["races"] = {
 					10,	-- Blood Elf
 					27,	-- Nightborne
 				},
-				["coords"] = {
-					{ 47.99, 49.47 },
-				},
-				["maps"] = {
-					94,	-- Eversong Woods
-				},
+				["coord"] = { 47.9, 49.4, 94 },
+				["maps"] = { 94 },	-- Eversong Woods
 				["g"] = {
-					{	-- Macabre Marionette
-						["itemID"] = 46831,	-- Macabre Marionette
-					},
+					i(46831),	-- Macabre Marionette (PET!)
 				},
+			}),
+			q(13952, {	-- The Grateful Dead — Stormwind City, Human
+				["provider"] = { "n", 34435 },	-- Cheerful Human Spirit
 				["isYearly"] = true,
-			},
-			{	-- The Grateful Dead [Stormwind City - Humans]
-				["questID"] = 13952,	-- The Grateful Dead
-				["provider"] = { "n", 34435 },			-- Cheerful Human Spirit
-				["races"] = {
-					1,	-- Human
-				},
-				["coords"] = {
-					{ 47.6, 26.6 },
-				},
-				["maps"] = {
-					84,	-- Stormwind City
-				},
+				["races"] = { 1 },	-- Human
+				["coord"] = { 47.6, 26.6, 84 },
+				["maps"] = { 84 },	-- Stormwind City
 				["g"] = {
-					{	-- Macabre Marionette
-						["itemID"] = 46831,	-- Macabre Marionette
-					},
+					i(46831),	-- Macabre Marionette (PET!)
 				},
+			}),
+			q(14172, {	-- The Grateful Dead — Terokkar Forest, Aldor, all
+				["provider"] = { "n", 35260 },	-- Cheerful Aldor Spirit
 				["isYearly"] = true,
-			},
-			{	-- The Grateful Dead [Terokkar Forest - Aldor - All]
-				["questID"] = 14172,	-- The Grateful Dead
-				["provider"] = { "n", 35260 },			-- Cheerful Aldor Spirit
-				["coords"] = {
-					{ 40.16, 22.25 },
-				},
-				["maps"] = {
-					108,	-- Terokkar Forest
-				},
+				["coord"] = { 40.1, 22.2, 108 },
+				["maps"] = { 108 },	-- Terokkar Forest
 				["g"] = {
-					{	-- Macabre Marionette
-						["itemID"] = 46831,	-- Macabre Marionette
-					},
+					i(46831),	-- Macabre Marionette (PET!)
 				},
+			}),
+			q(14173, {	-- The Grateful Dead — Terokkar Forest, Scryer, all
+				["provider"] = { "n", 35261 },	-- Cheerful Aldor Spirit
 				["isYearly"] = true,
-			},
-			{	-- The Grateful Dead [Terokkar Forest - Scryer - All]
-				["questID"] = 14173,	-- The Grateful Dead
-				["provider"] = { "n", 35261 },			-- Cheerful Aldor Spirit
-				["coords"] = {
-					{ 40.16, 22.25 },
-				},
-				["maps"] = {
-					108,	-- Terokkar Forest
-				},
+				["coord"] = { 40.1, 22.2, 108 },
+				["maps"] = { 108 },	-- Terokkar Forest
 				["g"] = {
-					{	-- Macabre Marionette
-						["itemID"] = 46831,	-- Macabre Marionette
-					},
+					i(46831),	-- Macabre Marionette (PET!)
 				},
+			}),
+			q(14174, {	-- The Grateful Dead — Tirisfal Glades, Undead
+				["provider"] = { "n", 34476 },	-- Cheerful Undead Spirit
 				["isYearly"] = true,
-			},
-			{	-- The Grateful Dead [Tirisfal Glades - Undead]
-				["questID"] = 14174,	-- The Grateful Dead
-				["provider"] = { "n", 34476 },			-- Cheerful Undead Spirit
-				["races"] = {
-					5,	-- Undead
-				},
-				["coords"] = {
-					{ 62.31, 68.32 },
-				},
-				["maps"] = {
-					18,	-- Tirisfal Glads
-				},
+				["races"] = { 5 },	-- Undead
+				["coord"] = { 62.3, 68.3, 18 },
+				["maps"] = { 18 },	-- Tirisfal Glads
 				["g"] = {
-					{	-- Macabre Marionette
-						["itemID"] = 46831,	-- Macabre Marionette
-					},
+					i(46831),	-- Macabre Marionette (PET!)
 				},
+			}),
+			q(14176, {	-- The Grateful Dead — Thunder Bluff, Tauren / Highmountain Tauren
+				["provider"] = { "n", 34480 },	-- Cheerful Tauren Spirit
 				["isYearly"] = true,
-			},
-			{	-- The Grateful Dead [Thunder Bluff - Tauren]
-				["questID"] = 14176,	-- The Grateful Dead
-				["provider"] = { "n", 34480 },			-- Cheerful Tauren Spirit
 				["races"] = {
 					6,	-- Tauren
 					28,	-- Highmountain Tauren
 				},
-				["coords"] = {
-					{ 56.8, 17.6 },
-				},
-				["maps"] = {
-					88,	-- Thunder Bluff
-				},
+				["coord"] = { 56.8, 17.6, 88 },
+				["maps"] = { 88 },	-- Thunder Bluff
 				["g"] = {
-					{	-- Macabre Marionette
-						["itemID"] = 46831,	-- Macabre Marionette
-					},
+					i(46831),	-- Macabre Marionette (PET!)
 				},
-				["isYearly"] = true,
-			},
+			}),
 		}),
 	}),
 });

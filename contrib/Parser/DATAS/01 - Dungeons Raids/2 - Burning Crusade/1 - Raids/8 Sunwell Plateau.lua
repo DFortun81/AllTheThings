@@ -3,6 +3,7 @@
 -----------------------------------------------------
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(752, { 	-- Sunwell Plateau
+		["order"] = "08",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 68,

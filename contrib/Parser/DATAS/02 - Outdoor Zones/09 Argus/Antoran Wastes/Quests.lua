@@ -96,7 +96,6 @@ _.Zones =
 				q(48037),	-- Empyrium Seam Chunk
 				q(48601),	-- Felfire Shattering
 				q(47134),	-- Foiling the Legion's Jailbreak
-				q(47994),	-- Forming a Bond
 				q(49030),	-- Fragments of the Abyss
 				q(48799),	-- Fuel of a Doomed World
 				q(48636),	-- Fueling the Antoran Campaign
@@ -106,7 +105,6 @@ _.Zones =
 				q(49189),	-- Intact Demon Eyes
 				q(49029),	-- Invasion of Space
 				q(49293),	-- Invasion Onslaught
-				q(48513),	-- Invasion Point Offensive
 				q(47182),	-- Long Overdue
 				q(48074),	-- Looming Over Me
 				q(49191),	-- Many More Intact Demon Eyes
@@ -122,9 +120,18 @@ _.Zones =
 				q(48201),	-- Reinforce Light's Purchase
 				q(48202),	-- Reinforce the Veiled Den
 				q(46843),	-- Return to the Vindicaar
-				q(48200),	-- Securing a Foothold
-				q(47473),	-- Sizing Up The Opposition
-				q(48929),	-- Sizing Up The Opposition
+--]]			q(48200),	-- Securing a Foothold
+				q(47473, {	-- Sizing Up The Opposition (Light's Purchase)
+					["sourceQuests"] = { 48201 },	-- Reinforce Light's Purchase
+					["provider"] = { "n", 127051 },	-- Illidan Stormrage
+					["coord"] = { 68.8, 25.9, 885 },
+				}),
+				q(48929, {	-- Sizing Up The Opposition (The Veiled Den)
+					["sourceQuests"] = { 48202 },	-- Reinforce the Veiled Den
+					["provider"] = { "n", 127051 },	-- Illidan Stormrage
+					["coord"] = { 68.8, 25.9, 885 },
+				}),
+--[[
 				q(47892),	-- Storming the Citadel
 				q(48976),	-- Supplies From the Argussian Reach
 				q(48977),	-- Supplies From the Army of the Light
@@ -136,7 +143,6 @@ _.Zones =
 				q(48203),	-- The Burning Throne
 				q(49014),	-- The Burning Throne
 				q(49445),	-- The Prime Exchange
-				q(47889),	-- The Speaker Calls
 				q(47287),	-- The Vindicaar Matrix Core
 				q(48069),	-- The Wrench Calls
 				q(48344),	-- We Have a Problem

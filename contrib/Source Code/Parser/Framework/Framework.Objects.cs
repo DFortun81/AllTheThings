@@ -50,6 +50,12 @@ namespace ATT
             {
                 return AllContainers.TryGetValue(containerName, out List<object> obj) ? obj : null;
             }
+
+            /// <summary>
+            /// All of the Quests that are in the database.
+            /// </summary>
+            public static IDictionary<string, Dictionary<string, object>> AllQuests { get; } = new Dictionary<string, Dictionary<string, object>>();
+
             #endregion
             #region Filters
             /// <summary>
@@ -856,7 +862,7 @@ namespace ATT
 
             public static void ExportDB(string directory)
             {
-                foreach(var container in AllContainers.Values) ProcessDB(container);
+                foreach (var container in AllContainers.Values) ProcessDB(container);
                 ExportDB(directory, "ITEMDB", ITEM_DB);
                 ExportDB(directory, "NPCDB", NPC_DB);
             }
@@ -1011,7 +1017,7 @@ namespace ATT
                         case "isMonthly":
                         case "isYearly":
                         case "isWorldQuest":
-                        case "isRepeatable":
+                        case "repeatable":
                         case "factionID":
                         case "requireSkill":
                         case "followerID":
@@ -1207,8 +1213,9 @@ namespace ATT
                     // Boolean Data Type Fields
                     case "collectible":
                     case "equippable":
-                    case "isRepeatable":
+                    case "repeatable":
                     case "isBreadcrumb":
+                    case "DisablePartySync":
                     case "isLimited":
                     case "isDaily":
                     case "isWeekly":
@@ -1222,6 +1229,7 @@ namespace ATT
                     case "ignoreBonus":
                     case "ignoreSource":
                     case "hideText":
+                    case "ordered":
                         {
                             item[field] = Convert.ToBoolean(value);
                             break;
@@ -1247,6 +1255,7 @@ namespace ATT
                     case "name":
                     case "description":
                     case "title":
+                    case "order":
                         {
                             item[field] = ATT.Export.ToString(value).Replace("\n", "\\n").Replace("\r", "\\r").Replace("\t", "\\t");
                             break;
@@ -1819,6 +1828,21 @@ namespace ATT
 
                 // Merge the entry with the data.
                 Merge(entry, data2);
+                // Add quest entry to AllQuest collection
+                if (entry.TryGetValue("questID", out string questID))
+                {
+                    if (!AllQuests.ContainsKey(questID))
+                    {
+                        AllQuests.Add(questID, entry);
+                    }
+                }
+                if (entry.TryGetValue("altQuestID", out string altQuestID))
+                {
+                    if (!AllQuests.ContainsKey(altQuestID))
+                    {
+                        AllQuests.Add(altQuestID, entry);
+                    }
+                }
             }
 
             /// <summary>

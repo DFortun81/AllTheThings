@@ -151,6 +151,7 @@ _.Zones =
 				n(74585, {	-- Grizzled Frostwolf Veteran
 					["questID"] = 33011,
 					["coord"] = { 45.4, 50.3, 525 },
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(106899),	-- Frostwolf Veteran's Keepsake
 					},
@@ -273,7 +274,7 @@ _.Zones =
 				n(84392, {	-- Ragore Driftstalker
 					["questID"] = 37401,
 					["isDaily"] = true,
-					["coord"] = { 86.8, 49.0, 525 },	-- **Coords uncofirmed, relied on wowhead**
+					["coord"] = { 86.8, 49.0, 525 },
 					["g"] = {
 						i(119359),	-- Tunic of the Driftstalker 
 					},

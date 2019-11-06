@@ -40,13 +40,20 @@ profession(197, {	-- Tailoring
 					}),
 				},
 			}),
-			n(88285, {	-- Tailoring Follower
+			n(88283, {	-- Tailoring Follower (Alliance)
 				["description"] = "You have to build Level 3 Tailoring Emporium and hire a tailor there in order to use these spells. A player with enchanting can't learn them, however, ATT will detect that you've earned them by opening the profession window. (Proof that you have a Rank 3 Tailoring Emporium.)",
+				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					a(spell(176314)),	-- Fearsome Battle Standard [Alliance]
-					h(spell(176316)),	-- Fearsome Battle Standard [Horde]
-					a(spell(176313)),	-- Inspiring Battle Standard [Alliance]
-					h(spell(176315)),	-- Inspiring Battle Standard [Horde]
+					spell(176314), -- Fearsome Battle Standard [Alliance]
+					spell(176313),	-- Inspiring Battle Standard [Alliance]
+				},
+			}),
+			n(88285, {	-- Tailoring Follower (Horde)
+				["description"] = "You have to build Level 3 Tailoring Emporium and hire a tailor there in order to use these spells. A player with enchanting can't learn them, however, ATT will detect that you've earned them by opening the profession window. (Proof that you have a Rank 3 Tailoring Emporium.)",
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					spell(176316),	-- Fearsome Battle Standard [Horde]
+					spell(176315),	-- Inspiring Battle Standard [Horde]
 				},
 			}),
 			n(79864, {	-- Warra the Weaver <Tailor>

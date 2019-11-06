@@ -6,61 +6,143 @@ _.Zones =
 	m(875, {	-- Zandalar
 		m(862, {	-- Zuldazar
 			n(-17, {	-- Quests
-				n(-9, {	-- PvP
+				n(-9, {		-- PvP
 					["lvl"] = 120,	-- Don't become available until this level.
 					["g"] = {
 						q(52958, { 	-- Call to Arms: Drustvar
-							["isWeekly"] = true,
-							["coord"] = { 51.54, 58.21 },
-							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 143536 },	-- High Warlord Volrath
+							["isWeekly"] = true,
+							["coord"] = { 51.5, 58.1, 862 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 120,
 							["g"] = {
-								i(164261, { 	-- Steel Strongbox
-									i(137642),	-- Mark of Honor
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
+								}),
+							},
+						}),
+						q(56650, {	-- Call to Arms: Mechagon
+							["provider"] = { "n", 143536 },	-- High Warlord Volrath
+							["isWeekly"] = true,
+							["coord"] = { 51.5, 58.1, 862 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 120,
+							["g"] = {
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
+								}),
+							},
+						}),
+						q(56148, {	-- Call to Arms: Nazjatar
+							["sourceQuests"] = { 55500 },	-- Save a Friend
+							["provider"] = { "n", 143536 },	-- High Warlord Volrath
+							["isWeekly"] = true,
+							["coord"] = { 51.5, 58.1, 862 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 120,
+							["g"] = {
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
 								}),
 							},
 						}),
 						q(52954, { 	-- Call to Arms: Nazmir
-							["isWeekly"] = true,
-							["coord"] = { 51.54, 58.21 },
-							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 143536 },	-- High Warlord Volrath
+							["isWeekly"] = true,
+							["coord"] = { 51.5, 58.1, 862 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 120,
 							["g"] = {
-								i(164261, { 	-- Steel Strongbox
-									i(137642),	-- Mark of Honor
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
 								}),
 							},
 						}),
 						q(52957, { 	-- Call to Arms: Stormsong Valley
-							["isWeekly"] = true,
-							["coord"] = { 51.54, 58.21 },
-							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 143536 },	-- High Warlord Volrath
+							["isWeekly"] = true,
+							["coord"] = { 51.5, 58.1, 862 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 120,
 							["g"] = {
-								i(164261, { 	-- Steel Strongbox
-									i(137642),	-- Mark of Honor
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
+								}),
+							},
+						}),
+						q(52956, {	-- Call to Arms: Tirigarde Sound
+							["provider"] = { "n", 143536 },	-- High Warlord Volrath
+							["isWeekly"] = true,
+							["coord"] = { 51.5, 58.1, 862 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 120,
+							["g"] = {
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
 								}),
 							},
 						}),
 						q(52953, { 	-- Call to Arms: Vol'dun
-							["isWeekly"] = true,
-							["coord"] = { 51.54, 58.21 },
-							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 143536 },	-- High Warlord Volrath
+							["isWeekly"] = true,
+							["coord"] = { 51.5, 58.1, 862 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 120,
 							["g"] = {
-								i(164261, { 	-- Steel Strongbox
-									i(137642),	-- Mark of Honor
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
 								}),
 							},
 						}),
 						q(52952, { 	-- Call to Arms: Zuldazar
-							["isWeekly"] = true,
-							["coord"] = { 51.54, 58.21 },
-							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 143536 },	-- High Warlord Volrath
+							["isWeekly"] = true,
+							["coord"] = { 51.5, 58.1, 862 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 120,
 							["g"] = {
-								i(164261, { 	-- Steel Strongbox
-									i(137642),	-- Mark of Honor
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
 								}),
 							},
 						}),
@@ -75,22 +157,16 @@ _.Zones =
 								}),
 							},
 						}),
-						q(56500, {	-- Storming the Battlefields
+						q(56500, {	-- Storming the Battlefields!
 							["provider"] = { "n", 143555 },	-- Xander Silberman
-							["coord"] = { 51.6, 58.2, 862 },
 							["races"] = HORDE_ONLY,
-							["lvl"] = 120,
+							["coord"] = { 51.6, 58.2, 875 },
 							["g"] = {
-								i(168442),	-- Roiling Blood of the Vanquished
-								i(168920),	-- Azerite-Encrusted Timequartz
-								i(168578),	-- Sphere of Suppressed Force
+								i(168920),	-- Azerite-Encrusted Timequartz (Rank 1)
+								i(168442),	-- Roiling Blood of the Vanquished (Rank 1)
+								i(168578),	-- Sphere of Suppressed Force (Rank 1)
 							},
 						}),
-						--[[q(54068, { 	-- Conquest's Reward  -- Needs more research.  Same quest name, but changes weekly as the season goes on for diffrent rewards?
-							["repeatable"] = true,
-							["coord"] = { 51.56, 58.06 },
-							["races"] = HORDE_ONLY,
-						}),]]
 					},
 				}),
 			-- The Throne of Zuldazar Quests
@@ -696,12 +772,14 @@ _.Zones =
 					["coord"] = { 68.2, 41.7, 862 },
 					["sourceQuest"] = 47310,	-- Naptime
 					["races"] = HORDE_ONLY,
+					["level"] = 120,
 				}),
 				q(52855, {	-- Alchemy is an Inexact Science
 					["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 					["coord"] = { 66.7, 42.7, 862 },
 					["sourceQuest"] = 47260,	-- Side Effects May Include...
 					["races"] = HORDE_ONLY,
+					["level"] = 120,
 				}),
 				q(52857, {	-- Held For Observation
 					["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
@@ -711,24 +789,28 @@ _.Zones =
 					["g"] = {
 						ach(13542, crit(2)),	-- How to Train Your Direhorn / Held For Observation
 					},
+					["level"] = 120,
 				}),
 				q(55254, {	-- An Unending Sleep
 					["provider"] = { "n", 151283 },	-- Direhorn Hatchling
 					["coord"] = { 68.2, 41.8, 862 },
 					["sourceQuest"] = 52857,	-- Held For Observation
 					["races"] = HORDE_ONLY,
+					["level"] = 120,
 				}),
 				q(55252, {	-- A Loa Without a Temple
 					["provider"] = { "n", 121706 },	-- Beastlord L'kala
 					["coord"] = { 66.8, 42.5, 862 },
 					["sourceQuest"] = 55254,	-- An Unending Sleep
 					["races"] = HORDE_ONLY,
+					["level"] = 120,
 				}),
 				q(55253, {	-- A Show of Faith
 					["provider"] = { "n", 151257 },	-- Torcali
 					["coord"] = { 68.2, 29.7, 862 },
 					["sourceQuest"] = 55252,	-- A Loa Without a Temple
 					["races"] = HORDE_ONLY,
+					["level"] = 120,
 				}),
 				q(55258, {	-- Sleep, Eat, Repeat
 					["provider"] = { "n", 151286 },	-- Child of Torcali
@@ -738,6 +820,7 @@ _.Zones =
 					["g"] = {
 						ach(13542, crit(3)),	-- How to Train Your Direhorn / Sleep, Eat, Repeat
 					},
+					["level"] = 120,
 				}),
 				-- Missing Quests (Need to wait a day for the next Quests)
 				

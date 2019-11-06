@@ -370,6 +370,7 @@ _.Zones =
 					["sourceQuest"] = 2784,	-- Fall From Grace
 				}),
 				q(27869, {	-- The Dragon and the Temple
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 46172 },	-- Baba Bogbrew
 					["coord"] = { 69.0, 76.5, 51 },
 					["sourceQuest"] = 27818,	-- Slithering Signs

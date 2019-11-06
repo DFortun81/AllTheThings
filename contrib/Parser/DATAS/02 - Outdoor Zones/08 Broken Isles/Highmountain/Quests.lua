@@ -50,8 +50,14 @@ _.Zones =
 					["provider"] = { "n", 95410 },	-- Lasan Skyhorn
 				}),
 				q(45841, {	-- A Triumphant Report
-				--	it looks like this is part of an artifact questline.  not sure if there are class requirements.  there isn't much info on wowhead.
+					["classes"] = {
+						3,	-- Hunter (Beast Mastery)
+						10,	-- Monk (Windwalker)
+						5,	-- Priest (Discipline)
+						9,	-- Warlock (Destruction)
+					},
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
 				}),
 				q(40000, {	-- A True Hunter
 					["coord"] = { 57.5, 56.4, 650 },
@@ -314,10 +320,49 @@ _.Zones =
 					["coord"] = { 42.6, 33.4, 656 },	-- Lifespring Cavern
 					["provider"] = { "n", 96038 },	-- Jale Rivermane
 				}),
+				q(40112, {	-- Huln's War - Malorne's Favored
+					["sourceQuests"] = { 39983 },	-- Huln's War: The Arrival
+					["coord"] = { 29.5, 39.2, 697 },
+					["lvl"] = 98,
+					["provider"] = { "n", 97891 },	-- Unng Ak
+					["maps"] = { 652 },	-- Azshara (Scenario)
+				}),
+				q(39990, {	-- Huln's War - Reinforcements
+					["sourceQuests"] = { 39988 },	-- Huln's War - Stormrage
+					["coord"] = { 27.8, 51.6, 697 },
+					["lvl"] = 98,
+					["provider"] = { "n", 97892 },	-- Malfurion Stormrage
+					["maps"] = { 652 },	-- Azshara (Scenario)
+				}),
+				q(40388, {	-- Huln's War - Shadowsong
+					["sourceQuests"] = { 39990 },	-- Huln's War - Reinforcements
+					["coord"] = { 27.8, 51.7, 697 },
+					["lvl"] = 98,
+					["provider"] = { "n", 97892 },	-- Malfurion Stormrage
+					["maps"] = { 652 },	-- Azshara (Scenario)
+				}),
+				q(39988, {	-- Huln's War - Stormrage
+					["sourceQuests"] = { 40112 },	-- Huln's War - Malorne's Favored
+					["coord"] = { 27.9, 47.2, 697 },
+					["lvl"] = 98,
+					["provider"] = { "n", 98794 },	-- Eche'ro
+					["maps"] = { 652 },	-- Azshara (Scenario)
+				}),
 				q(39983, {	-- Huln's War - The Arrival
 					["sourceQuests"] = { 40520 },	-- To See the Past
 					["coord"] = { 73.9, 74.5, 652 },	-- Thunder Totem
 					["provider"] = { "n", 98825 },	-- Spiritwalker Ebonhorn
+				}),
+				q(39992, {	-- Huln's War - The Nathrezim
+					["sourceQuests"] = { 40388 },	-- Huln's War - Shadowsong
+					["coord"] = { 31.2, 52.4, 697 },
+					["lvl"] = 98,
+					["provider"] = { "n", 97903 },	-- Jarod Shadowsong
+					["maps"] = { 652 },	-- Azshara (Scenario)
+					["g"] = {
+						i(130282),	-- Highmountain Trueshot Cape
+						i(130309),	-- Band of Malorne's Chosen
+					},
 				}),
 				q(39873, {	-- I Have a Bad Feeling About This
 					["sourceQuests"] = { 38912 },	-- The Bloodtotem Tribe
@@ -546,7 +591,12 @@ _.Zones =
 					["provider"] = { "n", 93841 },	-- Lasan Skyhorn
 				}),
 				q(40228, {	-- Scout It Out
-					["sourceQuests"] = { 40216 },	-- A Hunter at Heart
+					["sourceQuests"] = {
+						40216,	-- A Hunter at Heart
+						39392,	-- Bear Huntin'
+						39123,	-- Lion Stalkin'
+						39124,	-- Moose Shootin'
+					},
 					["coord"] = { 40.0, 52.2, 650 },
 					["provider"] = { "n", 94409 },	-- Hemet Nesingwary
 					["groups"] = {
@@ -1047,8 +1097,6 @@ _.Zones =
 				q(43182),	-- The Missing Vessel
 				q(44671),	-- The Muscle
 				q(42407),	-- The Nature of the Beast
-				q(43496),	-- The Power Within
-				q(43501),	-- The Power Within
 				q(41192),	-- The Right Path
 				q(42401),	-- The Scent of Magic
 				q(45726),	-- The Tainted Marsh

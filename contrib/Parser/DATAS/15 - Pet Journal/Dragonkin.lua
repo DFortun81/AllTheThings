@@ -6,6 +6,9 @@ _.PetJournal =
 	pa(245, { 	-- Dragonkin
 		p(2072),	-- Ageless Bronze Drake
 		p(1385),	-- Albino Chimaeraling
+		p(2779, {	-- Anima Wyrmling
+			["u"] = 6,	-- Collector's Edition
+		}),
 		p(57),		-- Azure Whelpling
 		p(2583),	-- Azure Windseeker
 		p(145),		-- Blue Dragonhawk Hatchling

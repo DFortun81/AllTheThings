@@ -470,20 +470,24 @@ _.Zones =
 						}),
 						i(165728, {	-- Outpost Upgrade: The Great Seal
 							["questID"] = 54226,	-- Mission Start Trigger
+							["races"] = HORDE_ONLY,
 							["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 							["f"] = 55,	-- Consumable
 							["g"] = {
 								mission(2106, {	-- Upgrade: The Great Seal
 									["questID"] = 54294,	-- Triggers when completed
+									["races"] = HORDE_ONLY,
 									["sourceQuests"] = { 54226 },	-- Outpost Upgrade Mission Trigger
 								}),
 								q(54225, {	-- Mission Report: The Great Seal
 									["provider"] = { "n", 138706 },		-- Mission Command Table
+									["races"] = HORDE_ONLY,
 									["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
 									["sourceQuests"] = { 54294 },	-- Upgrade: The Great Seal Mission Complete
 								}),
 								q(54231, {	-- Outpost Upgrade: The Great Seal
 									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
+									["races"] = HORDE_ONLY,
 									["coord"] = { 58.44, 62.67, 862 },
 									["sourceQuests"] = { 54225 },	-- Mission Report: The Great Seal
 								}),

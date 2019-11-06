@@ -10,7 +10,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			935,	-- Sacrificial Pits
 		},
 		["g"] = {
-			n(-4, {	-- Achievements
+			n(-4,  {	-- Achievements
 				ach(13020, {	-- Bow to Your Masters
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["races"] = HORDE_ONLY,
@@ -34,13 +34,17 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			n(-34, {	-- World Quests
-				q(49809, {	--  Atal'Dazar: From the Shadows
+				q(49888, {	-- Atal'Dazar: A Little Mojo
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
-					["collectible"] = false,
 				}),
-				q(49800, {	--  Atal'Dazar: Spiders!
+				q(49809, {	-- Atal'Dazar: From the Shadows
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
-					["collectible"] = false,
+				}),
+				q(49800, {	-- Atal'Dazar: Spiders!
+					["isWorldQuest"] = true,
+					["lvl"] = 120,
 				}),
 			}),
 			d(1, {	-- Normal

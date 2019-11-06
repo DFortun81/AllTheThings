@@ -4,19 +4,30 @@
 
 _.Instances = { tier(6, {	-- Warlords of Draenor
 	n(-7, {	-- World Bosses
+		["order"] = "00",
+		["ordered"] = true,
 		["isRaid"] = true,
 		["lvl"] = 100,
-		["groups"] = {
+		["g"] = {
 			e(1291, {	-- Drov the Ruiner
+				["isWeekly"] = true,
 				["questID"] = 37462,
 				["isRaid"] = true,
-				["maps"] = { 543 },	-- Gorgrond
 				["coord"] = { 44.1, 39.9, 543 },
+				["maps"] = {	-- all Gorgrond maps
+					543,	-- Gorgrond
+					544,	-- Moira's Reach
+					545,	-- Moira's Reach
+					546,	-- Fissure of Fury
+					547,	-- Fissure of Fury
+					548,    -- Cragplume Cauldron
+					549,	-- Cragplume Cauldron
+				},
 				["crs"] = {
 					81252,	-- Drov the Ruiner
 					87437,	-- Drov the Ruiner
 				},
-				["groups"] = {	
+				["g"] = {	
 					i(120086),	-- Bone Charm Chain
 					i(120084),	-- Braided Magnaron Plait
 					i(120087),	-- Drov's Durable Gorget
@@ -34,23 +45,22 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			}),
 			e(1262, {	-- Rukhmar
 				["achievementID"] = 9425,
+				["isWeekly"] = true,
 				["questID"] = 37464,
 				["isRaid"] = true,
-				["maps"] = { 542 },	-- Spires of Arak
 				["coord"] = { 37.0, 39.3, 542 },
+				["maps"] = { 542 },	-- Spires of Arak
 				["crs"] = {
 					87493,	-- Rukhmar (WoWHead)
 					83746,	-- Rukhmar (Crieve)
 				},
-				["groups"] = {
+				["g"] = {
 					i(116771),	-- Solar Spirehawk (MOUNT!)
 					i(127775, {	-- Gemcutter Module: Stamina
-						["spellID"] = 187640,
 						["requireSkill"] = 755,	-- Jewelcrafting
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-						["coord"] = {
-							25.84, 39.79, 534
-						},
+						["spellID"] = 187640,
+						["coord"] = { 25.8, 39.7, 534 },
 					}),
 					i(115434),	-- Down-Lined Leggings
 					i(115435),	-- Leggings of Flowing Feathers
@@ -67,14 +77,17 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(115438),	-- Signet of Burning Truths
 				},
 			}),
-			cr(94015, e(1452, {	-- Supreme Lord Kazzak
+			e(1452, {	-- Supreme Lord Kazzak
+				["isWeekly"] = true,
 				["questID"] = 39380,
 				["isRaid"] = true,
-				["maps"] = {
-					534,	-- Tanaan Jungle
-				},
 				["coord"] = { 47.5, 22.1, 534 },
-				["groups"] = {
+				["maps"] = {	-- all Tanaan Jungle maps
+					534,	-- Tanaan Jungle
+					578,	-- Umbral Halls
+				},
+				["cr"] = 94015,	-- Supreme Lord Kazzak
+				["g"] = {
 					i(127976),	-- Choker of Reciprocity
 					i(127977),	-- Insightful Void-Link Chain
 					i(127978),	-- Necklace of Flowing Light
@@ -92,13 +105,23 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124545),	-- Chipped Soul Prism
 					i(124546),	-- Mark of Supreme Doom
 				},
-			})),
-			cr(81535, e(1211, {	-- Tarlna the Ageless
+			}),
+			e(1211, {	-- Tarlna the Ageless
+				["isWeekly"] = true,
 				["questID"] = 37462,
 				["isRaid"] = true,
-				["maps"] = { 543 },	-- Gorgrond
 				["coord"] = { 47.0, 86.7, 543 },
-				["groups"] = {	
+				["maps"] = {	-- all Gorgrond maps
+					543,	-- Gorgrond
+					544,	-- Moira's Reach
+					545,	-- Moira's Reach
+					546,	-- Fissure of Fury
+					547,	-- Fissure of Fury
+					548,    -- Cragplume Cauldron
+					549,	-- Cragplume Cauldron
+				},
+				["cr"] = 81535,	-- Tarlna the Ageless
+				["g"] = {	
 					i(120089),	-- Chestguard of Rejuvenation
 					i(120090),	-- Falling Leaf Breastplate
 					i(120091),	-- Robes of the Ageless
@@ -112,7 +135,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(115430),	-- Cord of Ruination
 					i(115432),	-- Waistplate of Bladed Force
 				},
-			})),
+			}),
 		},
 	}),
 })};

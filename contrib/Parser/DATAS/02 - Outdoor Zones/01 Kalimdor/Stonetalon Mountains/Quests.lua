@@ -14,11 +14,13 @@ _.Zones =
 				}),
 				q(25837, {	-- A Proper Peace Offerin'
 					["provider"] = { "n", 41278 },	-- "Cookie" McWeaksauce
+					["coord"] = { 70.9, 79.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25834,	-- Death by Proxy
 				}),
 				q(25821, {	-- A Special Kind of Job
 					["provider"] = { "n", 41277 },	-- Lieutenant Paulson
+					["coord"] = { 72.1, 75.9, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25808,	-- Is This Thing On?
@@ -28,6 +30,7 @@ _.Zones =
 				}),
 				q(25852, {	-- All's Clear
 					["provider"] = { "n", 41229 },	-- Force Commander Valen
+					["coord"] = { 71.0, 79.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25851,	-- Dances with Grimtotem
 				}),
@@ -63,14 +66,17 @@ _.Zones =
 				}),
 				q(25766, {	-- Arcane Legacy
 					["provider"] = { "n", 40899 },	-- Arcanist Valdurian
+					["coord"] = { 58.6, 55.9, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25669,	-- Rumble in the Lumber...Mill
 				}),
 				q(25822, {	-- Armaments for War
 					["provider"] = { "n", 41229 },	-- Force Commander Valen
+					["coord"] = { 71.0, 79.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25845,	-- Terms of Service
 					["g"] = {
+						i(57450),	-- Northwatch Amulet
 						i(57449),	-- Diplomat's Chestguard
 						i(57448),	-- Basecamp Leggings
 						i(131447),	-- Basecamp Breeches
@@ -78,6 +84,7 @@ _.Zones =
 				}),
 				q(25930, {	-- Ascending the Vale
 					["provider"] = { "n", 41487 },	-- Hierophant Malyk
+					["coord"] = { 33.1, 59.5, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25925,	-- Thal'darah's Vengeance
 				}),
@@ -89,11 +96,13 @@ _.Zones =
 					["g"] = {
 						i(57479),	-- Flamethrower's Gloves
 						i(57478),	-- Vest of Ashes
+						i(57477),	-- Overlord's Favor
 						i(131464),	-- Tunic of Ashes
 					},
 				}),
 				q(25914, {	-- Back to the Depths!
 					["provider"] = { "n", 41488 },	-- Sentinel Mistress Geleneth
+					["coord"] = { 39.6, 30.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25891,	-- Last Ditch Effort
 				}),
@@ -131,7 +140,8 @@ _.Zones =
 					["coord"] = { 65.0, 49.4, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 203186 },	-- STAY OUT!
-					["sourceQuest"] = 25621,	-- Field Test: Gnomecorder (may be available earlier, but definitely has a prereq)
+				--	["sourceQuest"] = 25621,	-- Field Test: Gnomecorder (may be available earlier, but definitely has a prereq)
+				--	requirements may have changed for this quest -- i was able to pick it up with only the "hero's call" quest for stonetalon in my log, having touched no other zones on the character
 					["g"] = {
 						i(57429),	-- Fisherman's Belt
 						i(57430),	-- Irongoat Legguards
@@ -145,8 +155,10 @@ _.Zones =
 					["provider"] = { "o", 203186 },	-- STAY OUT!
 					["sourceQuest"] = 26004,	-- Krom'gar Fortress
 					["g"] = {
+						i(57483),	-- Cragpool Band
 						i(57482),	-- Anara's Belt
 						i(57481),	-- Fisherman's Gloves
+						i(57480),	-- Spy-Mistress' Necklace
 						i(131471),	-- Anara's Cord
 					},
 				}),
@@ -161,12 +173,14 @@ _.Zones =
 				}),
 				q(25768, {	-- Bombs Away: Mirkfallon Post!
 					["provider"] = { "n", 40896 },	-- Lord Fallowmere
+					["coord"] = { 59.5, 56.8, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25769,	-- Fallowmere Beckons
 					["g"] = {
 						i(57435),	-- Oil-Stained Bracers
 						i(57436),	-- Well Oiled Helm
 						i(57437),	-- Barus' Backup Sword
+						i(57434),	-- Oiler's Ring
 						i(131881),	-- Barus' Armbands
 					},
 				}),
@@ -175,6 +189,7 @@ _.Zones =
 					["sourceQuest"] = 25622,	-- Burn, Baby, Burn!
 				}),
 				q(25931, {	-- Brood of Seldarria
+					["coord"] = { 30.6, 70.4, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25930,	-- Ascending the Vale
 					["g"] = {
@@ -186,6 +201,7 @@ _.Zones =
 					},
 				}),
 				q(25622, {	-- Burn, Baby, Burn!
+					["coord"] = { 73.0, 46.6, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25621,	-- Field Test: Gnomecorder
 					["g"] = {
@@ -196,11 +212,13 @@ _.Zones =
 				}),
 				q(25767, {	-- Capturing Memories
 					["provider"] = { "n", 40900 },	-- Neophyte Starcrest
+					["coord"] = { 58.6, 55.9, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25669,	-- Rumble in the Lumber...Mill
 				}),
 				q(25652, {	-- Commandeer That Balloon!
 					["provider"] = { "n", 40879 },	-- Boog the "Gear Whisperer"
+					["coord"] = { 72.5, 61.4, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25650,	-- Orders from High Command
 					["g"] = {
@@ -232,6 +250,7 @@ _.Zones =
 				}),
 				q(25851, {	-- Dances with Grimtotem
 					["provider"] = { "n", 11858 },	-- Grundig Darkcloud
+					["coord"] = { 72.2, 83.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25848,	-- Downfall
 					["g"] = {
@@ -244,16 +263,19 @@ _.Zones =
 				}),
 				q(25834, {	-- Death by Proxy
 					["provider"] = { "n", 41229 },	-- Force Commander Valen
+					["coord"] = { 71.0, 79.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25821,	-- A Special Kind of Job
 				}),
 				q(25642, {	-- Don't Look Them in the Eyes
 					["provider"] = { "n", 40879 },	-- Boog the "Gear Whisperer"
+					["coord"] = { 72.5, 61.4, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25640,	-- Bombs Away: Windshear Mine!
 				}),
 				q(25848, {	-- Downfall
 					["provider"] = { "n", 11858 },	-- Grundig Darkcloud
+					["coord"] = { 72.2, 83.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25847,	-- Grimtotem Supremacy
 				}),
@@ -286,6 +308,7 @@ _.Zones =
 				}),
 				q(25769, {	-- Fallowmere Beckons
 					["provider"] = { "n", 40899 },	-- Arcanist Valdurian
+					["coord"] = { 58.6, 55.9, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25766,	-- Arcane Legacy
@@ -306,6 +329,7 @@ _.Zones =
 				}),
 				q(25662, {	-- Free Our Sisters
 					["provider"] = { "n", 40896 },	-- Lord Fallowmere
+					["coord"] = { 59.5, 56.8, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25652,	-- Commandeer That Balloon!
 				}),
@@ -313,7 +337,7 @@ _.Zones =
 					["provider"] = { "n", 40895 },	-- Professor Xakxak Gyromate
 					["sourceQuest"] = 25652,	-- Commandeer That Balloon!
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 35.36, 71.14, 63 },
+					["coord"] = { 65.5, 43.9, 65 },
 				}),
 				q(1096,  {	-- Gerenzo Wrenchwhistle
 					["u"] = 40,
@@ -332,26 +356,31 @@ _.Zones =
 				}),
 				q(25875, {	-- Gnome on the Inside
 					["provider"] = { "n", 41233 },	-- Scout Commander Barus
+					["coord"] = { 48.3, 51.8, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25768,	-- Bombs Away: Mirkfallon Post!
 				}),
 				q(25847, {	-- Grimtotem Supremacy
 					["provider"] = { "n", 11858 },	-- Grundig Darkcloud
+					["coord"] = { 72.2, 83.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25846,	-- Grundig Darkcloud, Chieftain of the Grimtotem
 				}),
 				q(25846, {	-- Grundig Darkcloud, Chieftain of the Grimtotem
 					["provider"] = { "n", 41229 },	-- Force Commander Valen
+					["coord"] = { 71.0, 79.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25822,	-- Armaments for War
 				}),
 				q(25938, {	-- Help for Desolace (mutually exclusive with Rerouted! and Hero's Call: Desolace!)
 					["provider"] = { "n", 41487 },	-- Hierophant Malyk
+					["coord"] = { 33.0, 59.6, 65 },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25935, {	-- Hungry Pups
 					["provider"] = { "n", 41638 },	-- Houndmaster Jonathan
+					["coord"] = { 32.3, 60.4, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25925,	-- Thal'darah's Vengeance
 				}),
@@ -363,6 +392,7 @@ _.Zones =
 				}),
 				q(25739, {	-- If the Horde Don't Get You...
 					["provider"] = { "n", 40897 },	-- Northwatch Captain Kosak
+					["coord"] = { 59.4, 56.8, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25669,	-- Rumble in the Lumber...Mill
 				}),
@@ -396,6 +426,7 @@ _.Zones =
 				}),
 				q(25876, {	-- It's Up There!
 					["provider"] = { "n", 41434 },	-- "Goblin" Pump Controller
+					["coord"] = { 53.6, 42.3, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25875,	-- Gnome on the Inside
 				}),
@@ -416,6 +447,7 @@ _.Zones =
 				}),
 				q(25673, {	-- Just Ask Alice
 					["provider"] = { "n", 40908 },	-- Alice
+					["coord"] = { 58.5, 55.2, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25652,	-- Commandeer That Balloon?
 				}),
@@ -438,11 +470,13 @@ _.Zones =
 				}),
 				q(25891, {	-- Last Ditch Effort
 					["provider"] = { "n", 41482 },	-- Master Thal'darah
+					["coord"] = { 39.9, 33.5, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25889,	-- Save the Children!
 				}),
 				q(25809, {	-- Leave No Man Behind!
 					["provider"] = { "n", 41282 },	-- Corporal Wocard
+					["coord"] = { 72.0, 75.9, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25793,	-- The Deep Reaches
 				}),
@@ -466,6 +500,7 @@ _.Zones =
 				}),
 				q(25649, {	-- Minx'll Fix It
 					["provider"] = { "n", 40879 },	-- Boog the "Gear Whisperer"
+					["coord"] = { 72.5, 61.4, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25647,	-- Illegible Orc Letter
 				}),
@@ -478,6 +513,7 @@ _.Zones =
 				}),
 				q(25728, {	-- Mr. P's Wild Ride
 					["provider"] = { "n", 40908 },	-- Alice
+					["coord"] = { 58.5, 55.2, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25673,	-- Just Ask Alice
 				}),
@@ -499,6 +535,7 @@ _.Zones =
 				}),
 				q(25877, {	-- No Time for Goodbyes!
 					["provider"] = { "n", 41434 },	-- "Goblin" Pump Controller
+					["coord"] = { 53.6, 42.3, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25876,	-- It's Up There!
 					["g"] = {
@@ -529,11 +566,13 @@ _.Zones =
 				}),
 				q(25650, {	-- Orders from High Command
 					["provider"] = { "n", 40881 },	-- Minx
+					["coord"] = { 70.7, 63.0, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25649,	-- Minx'll Fix It
 				}),
 				q(25741, {	-- Preparations for the Future
 					["provider"] = { "n", 40898 },	-- Alithia Fallowmere
+					["coord"] = { 59.0, 56.4, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25669,	-- Rumble in the Lumber...Mill
 				}),
@@ -545,6 +584,7 @@ _.Zones =
 				}),
 				q(25913, {	-- Putting Them to Rest
 					["provider"] = { "n", 41488 },	-- Sentinel Mistress Geleneth
+					["coord"] = { 39.6, 30.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25891,	-- Last Ditch Effort
 				}),
@@ -585,6 +625,7 @@ _.Zones =
 				}),
 				q(25615, {	-- Return to Stardust
 					["provider"] = { "n", 39256 },	-- Kalen Trueshot
+					["coord"] = { 71.8, 45.6, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25614,	-- The Only Way Down is in a Body Bag
 					["g"] = {
@@ -596,6 +637,7 @@ _.Zones =
 				}),
 				q(25669, {	-- Rumble in the Lumber... Mill
 					["provider"] = { "n", 41071 },	-- Huntress Illiona
+					["coord"] = { 66.2, 54.5, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25662,	-- Free Our Sisters
 					["g"] = {
@@ -607,11 +649,13 @@ _.Zones =
 				}),
 				q(25844, {	-- Sating the Savage Beast
 					["provider"] = { "n", 41278 },	-- "Cookie" McWeaksauce
+					["coord"] = { 70.9, 79.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25837,	-- A Proper Peace Offerin'
 				}),
 				q(25889, {	-- Save the Children!
 					["provider"] = { "n", 41482 },	-- Master Thal'darah
+					["coord"] = { 39.9, 33.5, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25880,	-- Warn Master Thal'darah
 					["g"] = {
@@ -623,6 +667,7 @@ _.Zones =
 				}),
 				q(25878, {	-- Schemin' That Sabotage
 					["provider"] = { "n", 41441 },	-- Scout Mistress Yvonia
+					["coord"] = { 48.4, 51.8, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25768,	-- Bombs Away: Mirkfallon Post!
 					["g"] = {
@@ -644,6 +689,7 @@ _.Zones =
 				}),
 				q(25912, {	-- Seen Better Days
 					["provider"] = { "n", 41486 },	-- Elder Sareth'na
+					["coord"] = { 39.6, 30.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25891,	-- Last Ditch Effort
 					["g"] = {
@@ -656,10 +702,12 @@ _.Zones =
 				}),
 				q(25811, {	-- Shuttin Her Down
 					["provider"] = { "n", 41276 },	-- Steeltoe McGee
+					["coord"] = { 72.0, 75.9, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25793,	-- The Deep Reaches
 					["g"] = {
 						i(57443),	-- Deep Reach Helm
+						i(57442),	-- Mine Sealer's Ring
 					},
 				}),
 				q(26048, {	-- Spare Parts Up In Here!
@@ -674,6 +722,7 @@ _.Zones =
 					["g"] = {
 						i(57491),	-- Spare Part Leggings
 						i(57490),	-- Blastgineer's Belt
+						i(57489),	-- Bombgutz Band
 						i(131472),	-- Blastgineer's Waistband
 					},
 				}),
@@ -683,17 +732,20 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26075,	-- The Turd Problem
 					["g"] = {
+						i(57500),	-- Crawling Amulet
 						i(57499),	-- Infested Breastplate
 						i(57498),	-- Bow of Invisible Aim
 					},
 				}),
 				q(25765, {	-- Tell 'Em Koko Sent You
 					["provider"] = { "n", 40897 },	-- Northwatch Captain Kosak
+					["coord"] = { 59.4, 56.8, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25739,	-- If the Horde Don't Get You...
 				}),
 				q(25845, {	-- Terms of Service
 					["provider"] = { "n", 41350 },	-- Ton Windbow
+					["coord"] = { 72.6, 81.0, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25844,	-- Sating the Savage Beast
 				}),
@@ -723,11 +775,13 @@ _.Zones =
 				}),
 				q(25925, {	-- Thal'darah's Vengeance
 					["provider"] = { "n", 41482 },	-- Master Thal'darah
+					["coord"] = { 39.9, 33.5, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25891,	-- Last Ditch Effort
 				}),
 				q(25793, {	-- The Deep Reaches
 					["provider"] = { "n", 41229 },	-- Force Commander Valen
+					["coord"] = { 71.0, 79.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25765,	-- Tell 'Em Koko Sent You
 				}),
@@ -749,6 +803,7 @@ _.Zones =
 				}),
 				q(25879, {	-- The Lumbering Oaf Problem
 					["provider"] = { "n", 41441 },	-- Scout Mistress Yvonia
+					["coord"] = { 48.4, 51.8, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25768,	-- Bombs Away: Mirkfallon Post!
 				}),
@@ -781,21 +836,23 @@ _.Zones =
 				}),
 				q(25823, {	-- The Unrelenting Horde
 					["provider"] = { "n", 41229 },	-- Force Commander Valen
+					["coord"] = { 71.0, 79.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25845,	-- Terms of Service
 				}),
-				q(25671, {	-- Thinning the Horde
-					["provider"] = { "n", 40896 },	-- Lord Fallowmere
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-					["description"] = "This quest cannot be completed after reaching Exalted with Darnassus, and possibly cannot be completed after reaching level 30 or finishing the Stonetalon Mountains questline.",
-					["sourceQuest"] = 25652,	-- Commandeer That Ballon!
-					["coord"] = { 59.57, 56.95, 65 },
-				}),
 				q(25806, {	-- They Put the Assass in... Never Mind
 					["provider"] = { "n", 41277 },	-- Lieutenant Paulson
+					["coord"] = { 72.0, 75.9, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25793,	-- The Deep Reaches
+				}),
+				q(25671, {	-- Thinning the Horde
+					["provider"] = { "n", 40896 },	-- Lord Fallowmere
+					["coord"] = { 59.5, 56.8, 65 },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["description"] = "This quest cannot be completed after level 30, after reaching Exalted with Darnassus, or after finishing the Stonetalon Mountains questline.",
+					["sourceQuest"] = 25652,	-- Commandeer That Ballon!
 				}),
 				q(26082, {	-- To Battlescar!
 					["provider"] = { "n", 42050 },	-- General Grebo
@@ -818,6 +875,7 @@ _.Zones =
 						i(57512),	-- Cliffwalker Boots
 						i(57511),	-- Belt of the Grieving Father
 						i(57510),	-- Masha's Armbands
+						i(57509),	-- Orthus' Amulet
 						i(131486),	-- Cinch of the Grieving Father
 					},
 				}),
@@ -830,6 +888,7 @@ _.Zones =
 				}),
 				q(25880, {	-- Warn Master Thal'darah
 					["provider"] = { "n", 41233 },	-- Scout Commander Barus
+					["coord"] = { 48.4, 51.8, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25877,	-- No Time for Goodbyes!
 				}),
@@ -841,16 +900,20 @@ _.Zones =
 				}),
 				q(25646, {	-- Windshear Mine Cleanup
 					["provider"] = { "n", 40973 },	-- Sentinal Heliana
+					["coord"] = { 72.5, 61.4, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25640,	-- Bombs Away: Windshear Mine
 					["g"] = {
 						i(57422),	-- Quiet Slippers
 						i(57423),	-- Overseer's Gloves
+						i(57421),	-- Amulet of Shrill Screams
+						i(57424),	-- Heliana's Ring
 						i(131878),	-- Overseer's Handguards
 					},
 				}),
 				q(25934, {	-- World First: Gnomegen
 					["provider"] = { "n", 41664 },	-- Salsbury the "Help"
+					["coord"] = { 33.1, 59.5, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25925,	-- Thal'darah's Vengeance
 				}),

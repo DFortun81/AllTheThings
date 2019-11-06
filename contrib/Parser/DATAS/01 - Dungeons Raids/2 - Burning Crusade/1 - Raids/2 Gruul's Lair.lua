@@ -4,6 +4,7 @@
 
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(746, { 	-- Gruul's Lair
+		["order"] = "02",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 68,

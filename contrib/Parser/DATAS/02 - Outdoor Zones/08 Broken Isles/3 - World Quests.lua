@@ -5,9 +5,10 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		n(-34, {	-- World Quests
+			["order"] = "03",
 			["lvl"] = 110,
 			["g"] = {
-				filter(200, {	-- Recipes
+				f(200,  {	-- Recipes
 					q(41666, {	-- Vantus Rune Work Order: Nythendra
 						["repeatable"] = true,
 						["provider"] = { "n", 106904 },	-- Valdemar Stormseeker <Valarjar Emissary>
@@ -427,8 +428,11 @@ _.Zones =
 					i(140017),	-- Boots of the Felsword
 				}),
 				n(-384, {	-- Neck
+					i(139101),	-- An'she's Pendant
+					i(134161),	-- Brulstone Pendant
 					i(139063),	-- Dreamwalker's Pendant
 					i(134249),	-- Manapearl Choker
+					i(121796),	-- Pendant of the Kaldorei
 				}),
 				n(-385, {	-- Finger
 					i(134367),	-- Legionnaire's Band
@@ -438,15 +442,29 @@ _.Zones =
 				}),
 				n(-386, {	-- Trinkets
 					i(134204),	-- Bleached Skull Talisman
+					i(139075),	-- Forest Creeper's Guile
+					i(134335),	-- Mana Crystal Shard
 					i(134336),	-- Stolen Mana Crystal
 				}),
 				n(-387, {	-- Relics
 					i(143695),	-- Ambition of the Forlorn
+					i(143701),	-- Ancient Flamewaking
 					i(143694),	-- Aristocratic Menace
 					i(141264),	-- Bitestone Fury
+					i(141277),	-- Bloodtotem Brand
+					i(140080),	-- Everchill Pearl
 					i(141275),	-- Fertile Soil
+					i(141265),	-- Gift of Flame
+					i(143704),	-- Harpybane Fetish
+					i(143686),	-- Hatecoil Badge of Glory
+					i(141254),	-- Mote of Fear
+					i(143696),	-- Perilous Bargain
 					i(141270),	-- Restless Dreams
+					i(143703),	-- Snowmane Totem
 					i(143700),	-- Stoic Hibernation
+					i(141263),	-- Stonedark Idol
+					i(140079),	-- Stormforged Fist
+					i(141276),	-- Vision of An'she
 				}),
 				i(135511),	-- Thick Slab of Bacon. You get it for a split second after completing a bacon wq
 				i(137212),	-- Cut Skystone. You get it for a split second after completing the jewelcrafter daily

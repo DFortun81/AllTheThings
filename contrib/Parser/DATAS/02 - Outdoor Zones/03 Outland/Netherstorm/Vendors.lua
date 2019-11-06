@@ -97,184 +97,528 @@ _.Zones =
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 33.2, 64.0, 109 },
 					["g"] = {
-						i(146648),	-- Arsenal: Brutal Gladiator's Weapons
+						i(146648, {	-- Arsenal: Brutal Gladiator's Weapons
+							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+						}),
 						-- i(146598),	-- Ensemble: Brutal Gladiator's Chain Armor [TODO]
-						i(35077),	-- Brutal Gladiator's Ringmail Armor
-						i(35085),	-- Brutal Gladiator's Satin Leggings
-						i(34991),	-- Brutal Gladiator's Chain Gauntlets
-						i(34992),	-- Brutal Gladiator's Chain Helm
-						i(34993),	-- Brutal Gladiator's Chain Leggings
-						i(34994),	-- Brutal Gladiator's Chain Spaulders
-						i(34998),	-- Brutal Gladiator's Dragonhide Gloves
-						i(34999),	-- Brutal Gladiator's Dragonhide Helm
-						i(35000),	-- Brutal Gladiator's Dragonhide Legguards
-						i(35001),	-- Brutal Gladiator's Dragonhide Spaulders
-						i(35002),	-- Brutal Gladiator's Dragonhide Tunic
-						i(35003),	-- Brutal Gladiator's Dreadweave Gloves
-						i(35004),	-- Brutal Gladiator's Dreadweave Hood
-						i(35005),	-- Brutal Gladiator's Dreadweave Leggings
-						i(35006),	-- Brutal Gladiator's Dreadweave Mantle
-						i(35007),	-- Brutal Gladiator's Dreadweave Robe
-						i(35008),	-- Brutal Gladiator's Endgame
-						i(35009),	-- Brutal Gladiator's Felweave Amice
-						i(35010),	-- Brutal Gladiator's Felweave Cowl
-						i(35011),	-- Brutal Gladiator's Felweave Handguards
-						i(35012),	-- Brutal Gladiator's Felweave Raiment
-						i(35013),	-- Brutal Gladiator's Felweave Trousers
-						i(35016),	-- Brutal Gladiator's Grimoire
-						i(35022),	-- Brutal Gladiator's Kodohide Gloves
-						i(35023),	-- Brutal Gladiator's Kodohide Helm
-						i(35024),	-- Brutal Gladiator's Kodohide Legguards
-						i(35025),	-- Brutal Gladiator's Kodohide Spaulders
-						i(35026),	-- Brutal Gladiator's Kodohide Tunic
-						i(35027),	-- Brutal Gladiator's Lamellar Chestpiece
-						i(35028),	-- Brutal Gladiator's Lamellar Gauntlets
-						i(35029),	-- Brutal Gladiator's Lamellar Helm
-						i(35030),	-- Brutal Gladiator's Lamellar Legguards
-						i(35031),	-- Brutal Gladiator's Lamellar Shoulders
-						i(35032),	-- Brutal Gladiator's Leather Gloves
-						i(35033),	-- Brutal Gladiator's Leather Helm
-						i(35034),	-- Brutal Gladiator's Leather Legguards
-						i(35035),	-- Brutal Gladiator's Leather Spaulders
-						i(35036),	-- Brutal Gladiator's Leather Tunic
-						i(35042),	-- Brutal Gladiator's Linked Armor
-						i(35043),	-- Brutal Gladiator's Linked Gauntlets
-						i(35044),	-- Brutal Gladiator's Linked Helm
-						i(35045),	-- Brutal Gladiator's Linked Leggings
-						i(35046),	-- Brutal Gladiator's Linked Spaulders
-						i(35048),	-- Brutal Gladiator's Mail Armor
-						i(35049),	-- Brutal Gladiator's Mail Gauntlets
-						i(35050),	-- Brutal Gladiator's Mail Helm
-						i(35051),	-- Brutal Gladiator's Mail Leggings
-						i(35052),	-- Brutal Gladiator's Mail Spaulders
-						i(35053),	-- Brutal Gladiator's Mooncloth Gloves
-						i(35054),	-- Brutal Gladiator's Mooncloth Hood
-						i(35055),	-- Brutal Gladiator's Mooncloth Leggings
-						i(35056),	-- Brutal Gladiator's Mooncloth Mantle
-						i(35057),	-- Brutal Gladiator's Mooncloth Robe
-						i(35059),	-- Brutal Gladiator's Ornamented Chestguard
-						i(35060),	-- Brutal Gladiator's Ornamented Gloves
-						i(35061),	-- Brutal Gladiator's Ornamented Headcover
-						i(35062),	-- Brutal Gladiator's Ornamented Legplates
-						i(35063),	-- Brutal Gladiator's Ornamented Spaulders
-						i(35066),	-- Brutal Gladiator's Plate Chestpiece
-						i(35067),	-- Brutal Gladiator's Plate Gauntlets
-						i(35068),	-- Brutal Gladiator's Plate Helm
-						i(35069),	-- Brutal Gladiator's Plate Legguards
-						i(35070),	-- Brutal Gladiator's Plate Shoulders
-						i(35073),	-- Brutal Gladiator's Redoubt
-						i(35074),	-- Brutal Gladiator's Reprieve
-						i(34990),	-- Brutal Gladiator's Chain Armor
-						i(35078),	-- Brutal Gladiator's Ringmail Gauntlets
-						i(35079),	-- Brutal Gladiator's Ringmail Helm
-						i(35080),	-- Brutal Gladiator's Ringmail Leggings
-						i(35081),	-- Brutal Gladiator's Ringmail Spaulders
-						i(35083),	-- Brutal Gladiator's Satin Gloves
-						i(35084),	-- Brutal Gladiator's Satin Hood
-						i(34986),	-- Brutal Gladiator's Barrier
-						i(35086),	-- Brutal Gladiator's Satin Mantle
-						i(35087),	-- Brutal Gladiator's Satin Robe
-						i(35088),	-- Brutal Gladiator's Scaled Chestpiece
-						i(35089),	-- Brutal Gladiator's Scaled Gauntlets
-						i(35090),	-- Brutal Gladiator's Scaled Helm
-						i(35091),	-- Brutal Gladiator's Scaled Legguards
-						i(35092),	-- Brutal Gladiator's Scaled Shoulders
-						i(35094),	-- Brutal Gladiator's Shield Wall
-						i(35096),	-- Brutal Gladiator's Silk Amice
-						i(35097),	-- Brutal Gladiator's Silk Cowl
-						i(35098),	-- Brutal Gladiator's Silk Handguards
-						i(35099),	-- Brutal Gladiator's Silk Raiment
-						i(35100),	-- Brutal Gladiator's Silk Trousers
-						i(35111),	-- Brutal Gladiator's Wyrmhide Gloves
-						i(35112),	-- Brutal Gladiator's Wyrmhide Helm
-						i(35113),	-- Brutal Gladiator's Wyrmhide Legguards
-						i(35114),	-- Brutal Gladiator's Wyrmhide Spaulders
-						i(35115),	-- Brutal Gladiator's Wyrmhide Tunic
-						i(35136),	-- Guardian's Chain Sabatons
-						i(35137),	-- Guardian's Dragonhide Boots
-						i(35138),	-- Guardian's Dreadweave Stalkers
-						i(35139),	-- Guardian's Kodohide Boots
-						i(35140),	-- Guardian's Lamellar Greaves
-						i(35141),	-- Guardian's Leather Boots
-						i(35142),	-- Guardian's Linked Sabatons
-						i(35143),	-- Guardian's Mail Sabatons
-						i(35144),	-- Guardian's Mooncloth Slippers
-						i(35145),	-- Guardian's Ornamented Greaves
-						i(35146),	-- Guardian's Plate Greaves
-						i(35147),	-- Guardian's Ringmail Sabatons
-						i(35148),	-- Guardian's Scaled Greaves
-						i(35149),	-- Guardian's Silk Footguards
-						i(35150),	-- Guardian's Wyrmhide Boots
-						i(35151),	-- Guardian's Chain Girdle
-						i(35152),	-- Guardian's Dragonhide Belt
-						i(35153),	-- Guardian's Dreadweave Belt
-						i(35154),	-- Guardian's Kodohide Belt
-						i(35155),	-- Guardian's Lamellar Belt
-						i(35156),	-- Guardian's Leather Belt
-						i(35157),	-- Guardian's Linked Girdle
-						i(35158),	-- Guardian's Mail Girdle
-						i(35159),	-- Guardian's Mooncloth Belt
-						i(35160),	-- Guardian's Ornamented Belt
-						i(35161),	-- Guardian's Plate Belt
-						i(35162),	-- Guardian's Ringmail Girdle
-						i(35163),	-- Guardian's Scaled Belt
-						i(35164),	-- Guardian's Silk Belt
-						i(35165),	-- Guardian's Wyrmhide Belt
+						i(35077, {	-- Brutal Gladiator's Ringmail Armor
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35085, {	-- Brutal Gladiator's Satin Leggings
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(34991, {	-- Brutal Gladiator's Chain Gauntlets
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(34992, {	-- Brutal Gladiator's Chain Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(34993, {	-- Brutal Gladiator's Chain Leggings
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(34994, {	-- Brutal Gladiator's Chain Spaulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(34998, {	-- Brutal Gladiator's Dragonhide Gloves
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(34999, {	-- Brutal Gladiator's Dragonhide Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35000, {	-- Brutal Gladiator's Dragonhide Legguards
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35001, {	-- Brutal Gladiator's Dragonhide Spaulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35002, {	-- Brutal Gladiator's Dragonhide Tunic
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35003, {	-- Brutal Gladiator's Dreadweave Gloves
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35004, {	-- Brutal Gladiator's Dreadweave Hood
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35005, {	-- Brutal Gladiator's Dreadweave Leggings
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35006, {	-- Brutal Gladiator's Dreadweave Mantle
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35007, {	-- Brutal Gladiator's Dreadweave Robe
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35008, {	-- Brutal Gladiator's Endgame
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35009, {	-- Brutal Gladiator's Felweave Amice
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35010, {	-- Brutal Gladiator's Felweave Cowl
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35011, {	-- Brutal Gladiator's Felweave Handguards
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35012, {	-- Brutal Gladiator's Felweave Raiment
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35013, {	-- Brutal Gladiator's Felweave Trousers
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35016, {	-- Brutal Gladiator's Grimoire
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35022, {	-- Brutal Gladiator's Kodohide Gloves
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35023, {	-- Brutal Gladiator's Kodohide Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35024, {	-- Brutal Gladiator's Kodohide Legguards
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35025, {	-- Brutal Gladiator's Kodohide Spaulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35026, {	-- Brutal Gladiator's Kodohide Tunic
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35027, {	-- Brutal Gladiator's Lamellar Chestpiece
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35028, {	-- Brutal Gladiator's Lamellar Gauntlets
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35029, {	-- Brutal Gladiator's Lamellar Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35030, {	-- Brutal Gladiator's Lamellar Legguards
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35031, {	-- Brutal Gladiator's Lamellar Shoulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35032, {	-- Brutal Gladiator's Leather Gloves
+							["cost"] = { { "i", 137642, 2 } },	-- x Mark of Honor
+						}),
+						i(35033, {	-- Brutal Gladiator's Leather Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35034, {	-- Brutal Gladiator's Leather Legguards
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35035, {	-- Brutal Gladiator's Leather Spaulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35036, {	-- Brutal Gladiator's Leather Tunic
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35042, {	-- Brutal Gladiator's Linked Armor
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35043, {	-- Brutal Gladiator's Linked Gauntlets
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35044, {	-- Brutal Gladiator's Linked Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35045, {	-- Brutal Gladiator's Linked Leggings
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35046, {	-- Brutal Gladiator's Linked Spaulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35048, {	-- Brutal Gladiator's Mail Armor
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35049, {	-- Brutal Gladiator's Mail Gauntlets
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35050, {	-- Brutal Gladiator's Mail Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35051, {	-- Brutal Gladiator's Mail Leggings
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35052, {	-- Brutal Gladiator's Mail Spaulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35053, {	-- Brutal Gladiator's Mooncloth Gloves
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35054, {	-- Brutal Gladiator's Mooncloth Hood
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35055, {	-- Brutal Gladiator's Mooncloth Leggings
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35056, {	-- Brutal Gladiator's Mooncloth Mantle
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35057, {	-- Brutal Gladiator's Mooncloth Robe
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35059, {	-- Brutal Gladiator's Ornamented Chestguard
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35060, {	-- Brutal Gladiator's Ornamented Gloves
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35061, {	-- Brutal Gladiator's Ornamented Headcover
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35062, {	-- Brutal Gladiator's Ornamented Legplates
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35063, {	-- Brutal Gladiator's Ornamented Spaulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35066, {	-- Brutal Gladiator's Plate Chestpiece
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35067, {	-- Brutal Gladiator's Plate Gauntlets
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35068, {	-- Brutal Gladiator's Plate Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35069, {	-- Brutal Gladiator's Plate Legguards
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35070, {	-- Brutal Gladiator's Plate Shoulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35073, {	-- Brutal Gladiator's Redoubt
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35074, {	-- Brutal Gladiator's Reprieve
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(34990, {	-- Brutal Gladiator's Chain Armor
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35078, {	-- Brutal Gladiator's Ringmail Gauntlets
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35079, {	-- Brutal Gladiator's Ringmail Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35080, {	-- Brutal Gladiator's Ringmail Leggings
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35081, {	-- Brutal Gladiator's Ringmail Spaulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35083, {	-- Brutal Gladiator's Satin Gloves
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35084, {	-- Brutal Gladiator's Satin Hood
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(34986, {	-- Brutal Gladiator's Barrier
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35086, {	-- Brutal Gladiator's Satin Mantle
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35087, {	-- Brutal Gladiator's Satin Robe
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35088, {	-- Brutal Gladiator's Scaled Chestpiece
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35089, {	-- Brutal Gladiator's Scaled Gauntlets
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35090, {	-- Brutal Gladiator's Scaled Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35091, {	-- Brutal Gladiator's Scaled Legguards
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35092, {	-- Brutal Gladiator's Scaled Shoulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35094, {	-- Brutal Gladiator's Shield Wall
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35096, {	-- Brutal Gladiator's Silk Amice
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35097, {	-- Brutal Gladiator's Silk Cowl
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35098, {	-- Brutal Gladiator's Silk Handguards
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35099, {	-- Brutal Gladiator's Silk Raiment
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35100, {	-- Brutal Gladiator's Silk Trousers
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35111, {	-- Brutal Gladiator's Wyrmhide Gloves
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35112, {	-- Brutal Gladiator's Wyrmhide Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35113, {	-- Brutal Gladiator's Wyrmhide Legguards
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35114, {	-- Brutal Gladiator's Wyrmhide Spaulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35115, {	-- Brutal Gladiator's Wyrmhide Tunic
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(35136, {	-- Guardian's Chain Sabatons
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35137, {	-- Guardian's Dragonhide Boots
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35138, {	-- Guardian's Dreadweave Stalkers
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35139, {	-- Guardian's Kodohide Boots
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35140, {	-- Guardian's Lamellar Greaves
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35141, {	-- Guardian's Leather Boots
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35142, {	-- Guardian's Linked Sabatons
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35143, {	-- Guardian's Mail Sabatons
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35144, {	-- Guardian's Mooncloth Slippers
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35145, {	-- Guardian's Ornamented Greaves
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35146, {	-- Guardian's Plate Greaves
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35147, {	-- Guardian's Ringmail Sabatons
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35148, {	-- Guardian's Scaled Greaves
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35149, {	-- Guardian's Silk Footguards
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35150, {	-- Guardian's Wyrmhide Boots
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(35151, {	-- Guardian's Chain Girdle
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35152, {	-- Guardian's Dragonhide Belt
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35153, {	-- Guardian's Dreadweave Belt
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35154, {	-- Guardian's Kodohide Belt
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35155, {	-- Guardian's Lamellar Belt
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35156, {	-- Guardian's Leather Belt
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35157, {	-- Guardian's Linked Girdle
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35158, {	-- Guardian's Mail Girdle
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35159, {	-- Guardian's Mooncloth Belt
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35160, {	-- Guardian's Ornamented Belt
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35161, {	-- Guardian's Plate Belt
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35162, {	-- Guardian's Ringmail Girdle
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35163, {	-- Guardian's Scaled Belt
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35164, {	-- Guardian's Silk Belt
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35165, {	-- Guardian's Wyrmhide Belt
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
 						i(40440),	-- Brutal Gladiator's Dreadplate Chestpiece
 						i(40441),	-- Brutal Gladiator's Dreadplate Gauntlets
 						i(40442),	-- Brutal Gladiator's Dreadplate Helm
 						i(40443),	-- Brutal Gladiator's Dreadplate Legguards
 						i(40444),	-- Brutal Gladiator's Dreadplate Shoulders
-						i(41591),	-- Sergeant's Reinforced Cape
-						i(41592),	-- The Gladiator's Resolution
-						i(44429),	-- Volanthius Shroud
-						i(44431),	-- Cloak of Certain Reprieve
-						i(34996),	-- Brutal Gladiator's Cleaver
-						i(34997),	-- Brutal Gladiator's Decapitator
-						i(35093),	-- Brutal Gladiator's Shanker
-						i(35071),	-- Brutal Gladiator's Pummeler
-						i(35095),	-- Brutal Gladiator's Shiv
-						i(35072),	-- Brutal Gladiator's Quickblade
-						i(35037),	-- Brutal Gladiator's Slasher
-						i(35038),	-- Brutal Gladiator's Fleshslicer
-						i(35075),	-- Brutal Gladiator's Rifle
-						i(35076),	-- Brutal Gladiator's Ripper
-						i(35101),	-- Brutal Gladiator's Slicer
-						i(35102),	-- Brutal Gladiator's Spellblade
-						i(35103),	-- Brutal Gladiator's Staff
-						i(35107),	-- Brutal Gladiator's Touch of Defeat
-						i(35109),	-- Brutal Gladiator's War Staff
-						i(35110),	-- Brutal Gladiator's Waraxe
-						i(34987),	-- Brutal Gladiator's Battle Staff
-						i(34988),	-- Brutal Gladiator's Bonecracker
-						i(35058),	-- Brutal Gladiator's Mutilator
-						i(35014),	-- Brutal Gladiator's Gavel
-						i(35015),	-- Brutal Gladiator's Greatsword
-						i(35166),	-- Guardian's Chain Bracers
-						i(35167),	-- Guardian's Dragonhide Bracers
-						i(35168),	-- Guardian's Dreadweave Cuffs
-						i(35169),	-- Guardian's Kodohide Bracers
-						i(35170),	-- Guardian's Lamellar Bracers
-						i(35171),	-- Guardian's Leather Bracers
-						i(35172),	-- Guardian's Linked Bracers
-						i(35173),	-- Guardian's Mail Bracers
-						i(35174),	-- Guardian's Mooncloth Cuffs
-						i(35175),	-- Guardian's Ornamented Bracers
-						i(35176),	-- Guardian's Plate Bracers
-						i(35177),	-- Guardian's Ringmail Bracers
-						i(35178),	-- Guardian's Scaled Bracers
-						i(35179),	-- Guardian's Silk Cuffs
-						i(35180),	-- Guardian's Wyrmhide Bracers
-						i(36737),	-- Brutal Gladiator's Hatchet
-						i(35082),	-- Brutal Gladiator's Salvation
-						i(34989),	-- Brutal Gladiator's Bonegrinder
-						i(35047),	-- Brutal Gladiator's Longbow
-						i(35017),	-- Brutal Gladiator's Hacker
-						i(35064),	-- Brutal Gladiator's Painsaw
-						i(35065),	-- Brutal Gladiator's Piercing Touch
-						i(35018),	-- Brutal Gladiator's Heavy Crossbow
-						i(34985),	-- Brutal Gladiator's Baton of Light
-						i(34995),	-- Brutal Gladiator's Chopper
+						i(41591, {	-- Sergeant's Reinforced Cape
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(41592, {	-- The Gladiator's Resolution
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(44429, {	-- Volanthius Shroud
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(44431, {	-- Cloak of Certain Reprieve
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(34996, {	-- Brutal Gladiator's Cleaver
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(34997, {	-- Brutal Gladiator's Decapitator
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35093, {	-- Brutal Gladiator's Shanker
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35071, {	-- Brutal Gladiator's Pummeler
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35095, {	-- Brutal Gladiator's Shiv
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35072, {	-- Brutal Gladiator's Quickblade
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35037, {	-- Brutal Gladiator's Slasher
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35038, {	-- Brutal Gladiator's Fleshslicer
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35075, {	-- Brutal Gladiator's Rifle
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35076, {	-- Brutal Gladiator's Ripper
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35101, {	-- Brutal Gladiator's Slicer
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35102, {	-- Brutal Gladiator's Spellblade
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35103, {	-- Brutal Gladiator's Staff
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35107, {	-- Brutal Gladiator's Touch of Defeat
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35109, {	-- Brutal Gladiator's War Staff
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35110, {	-- Brutal Gladiator's Waraxe
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(34987, {	-- Brutal Gladiator's Battle Staff
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(34988, {	-- Brutal Gladiator's Bonecracker
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35058, {	-- Brutal Gladiator's Mutilator
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35014, {	-- Brutal Gladiator's Gavel
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35015, {	-- Brutal Gladiator's Greatsword
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35166, {	-- Guardian's Chain Bracers
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35167, {	-- Guardian's Dragonhide Bracers
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35168, {	-- Guardian's Dreadweave Cuffs
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35169, {	-- Guardian's Kodohide Bracers
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35170, {	-- Guardian's Lamellar Bracers
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35171, {	-- Guardian's Leather Bracers
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35172, {	-- Guardian's Linked Bracers
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35173, {	-- Guardian's Mail Bracers
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35174, {	-- Guardian's Mooncloth Cuffs
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35175, {	-- Guardian's Ornamented Bracers
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35176, {	-- Guardian's Plate Bracers
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35177, {	-- Guardian's Ringmail Bracers
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35178, {	-- Guardian's Scaled Bracers
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35179, {	-- Guardian's Silk Cuffs
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(35180, {	-- Guardian's Wyrmhide Bracers
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(36737, {	-- Brutal Gladiator's Hatchet
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35082, {	-- Brutal Gladiator's Salvation
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(34989, {	-- Brutal Gladiator's Bonegrinder
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35047, {	-- Brutal Gladiator's Longbow
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35017, {	-- Brutal Gladiator's Hacker
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35064, {	-- Brutal Gladiator's Painsaw
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35065, {	-- Brutal Gladiator's Piercing Touch
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(35018, {	-- Brutal Gladiator's Heavy Crossbow
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(34985, {	-- Brutal Gladiator's Baton of Light
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(34995, {	-- Brutal Gladiator's Chopper
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
 					},
 				}),
 				n(19536,  {	-- Dealer Jadyan <Exotic Weapons>
@@ -454,286 +798,15 @@ _.Zones =
 					},
 				}),
 				n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
-					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 33.0, 64.2, 109 },
+					["sym"] = { {"sub", "pvp_gear_base", -10003, -665, -661 }, },	-- Merciless Gladiator: Season 2 Gladiator Gear
+				}),
+				n(21493,  {	-- Kablamm Farflinger <Transportation Engineer>
+					["requireSkill"] = 202,	-- Engineering
+					["description"] = "Goblin Engineers can speak to Kablamm to learn the recipe.",
+					["coord"] = { 32.9, 63.7, 109 },
 					["g"] = {
-						i(146650),	-- Arsenal: Merciless Gladiator's Weapons
-						i(146625, {	-- Merciless Gladiator's Satin Armor	
-							["classes"] = { 5 },	
-							["g"] = {	
-								i(32035),
-								i(32037),
-								i(32038),
-								i(32980),
-								i(32034),
-								i(32979),
-								i(32036),
-								i(147609),
-							},	
-						}),		
-						i(146627, {	-- Merciless Gladiator's Silk Armor	
-							["classes"] = { 8 },	
-							["g"] = {	
-								i(32048),
-								i(32047),
-								i(32050),
-								i(32820),
-								i(32049),
-								i(32807),
-								i(32051),
-								i(32795),
-							},	
-						}),		
-						i(146621, {	-- Merciless Gladiator's Felweave Armor	
-							["classes"] = { 9 },	
-							["g"] = {	
-								i(31974),
-								i(31976),
-								i(31977),
-								i(32811),
-								i(31973),
-								i(32799),
-								i(31975),
-								i(32787),
-							},	
-						}),		
-						i(146619, {	-- Merciless Gladiator's Dragonhide Armor	
-							["classes"] = { 11 },	
-							["g"] = {	
-								i(31968),
-								i(31971),
-								i(31972),
-								i(32810),
-								i(31967),
-								i(32798),
-								i(31969),
-								i(32786),
-							},	
-						}),		
-						i(146622, {	-- Merciless Gladiator's Leather Armor	
-							["classes"] = { 4 },	
-							["g"] = {	
-								i(31999),
-								i(32001),
-								i(32002),
-								i(147612),
-								i(31998),
-								i(147610),
-								i(32000),
-								i(147611),
-							},	
-						}),		
-						i(146618, {	-- Merciless Gladiator's Chain Armor	
-							["classes"] = { 3 },	
-							["g"] = {	
-								i(31962),
-								i(31964),
-								i(31960),
-								i(32809),
-								i(31961),
-								i(32797),
-								i(31963),
-								i(32785),
-							},	
-						}),		
-						i(146624, {	-- Merciless Gladiator's Ringmail Armor	
-							["classes"] = { 7 },	
-							["g"] = {	
-								i(32031),
-								i(32033),
-								i(32029),
-								i(32816),
-								i(32030),
-								i(32803),
-								i(32032),
-								i(32791),
-							},	
-						}),		
-						i(146626, {	-- Merciless Gladiator's Lamellar Armor	
-							["classes"] = { 2 },	
-							["g"] = {	
-								i(31997),
-								i(31996),
-								i(31992),
-								i(32813),
-								i(31993),
-								i(32801),
-								i(31995),
-								i(32789),
-							},	
-						}),		
-						i(146623, {	-- Merciless Gladiator's Plate Armor	
-							["classes"] = { 1 },	
-							["g"] = {	
-								i(30488),
-								i(30490),
-								i(30486),
-								i(32818),
-								i(30487),
-								i(32805),
-								i(30489),
-								i(32793),
-							},	
-						}),				
-						i(33313),	-- Merciless Gladiator's Barrier
-						i(31958),	-- Merciless Gladiator's Bonecracker
-						i(31959),	-- Merciless Gladiator's Bonegrinder
-						i(31960),	-- Merciless Gladiator's Chain Armor
-						i(31961),	-- Merciless Gladiator's Chain Gauntlets
-						i(31962),	-- Merciless Gladiator's Chain Helm
-						i(31963),	-- Merciless Gladiator's Chain Leggings
-						i(31964),	-- Merciless Gladiator's Chain Spaulders
-						i(31965),	-- Merciless Gladiator's Cleaver
-						i(31986),	-- Merciless Gladiator's Crossbow of the Phoenix
-						i(31966),	-- Merciless Gladiator's Decapitator
-						i(31967),	-- Merciless Gladiator's Dragonhide Gloves
-						i(31968),	-- Merciless Gladiator's Dragonhide Helm
-						i(31969),	-- Merciless Gladiator's Dragonhide Legguards
-						i(31971),	-- Merciless Gladiator's Dragonhide Spaulders
-						i(31972),	-- Merciless Gladiator's Dragonhide Tunic
-						i(31973),	-- Merciless Gladiator's Dreadweave Gloves
-						i(31974),	-- Merciless Gladiator's Dreadweave Hood
-						i(31975),	-- Merciless Gladiator's Dreadweave Leggings
-						i(31976),	-- Merciless Gladiator's Dreadweave Mantle
-						i(31977),	-- Merciless Gladiator's Dreadweave Robe
-						i(31978),	-- Merciless Gladiator's Endgame
-						i(31979),	-- Merciless Gladiator's Felweave Amice
-						i(31980),	-- Merciless Gladiator's Felweave Cowl
-						i(31981),	-- Merciless Gladiator's Felweave Handguards
-						i(31982),	-- Merciless Gladiator's Felweave Raiment
-						i(31983),	-- Merciless Gladiator's Felweave Trousers
-						i(32003),	-- Merciless Gladiator's Fleshslicer
-						i(32963),	-- Merciless Gladiator's Gavel
-						i(31984),	-- Merciless Gladiator's Greatsword
-						i(31985),	-- Merciless Gladiator's Hacker
-						i(31987),	-- Merciless Gladiator's Kodohide Gloves
-						i(31988),	-- Merciless Gladiator's Kodohide Helm
-						i(31989),	-- Merciless Gladiator's Kodohide Legguards
-						i(31990),	-- Merciless Gladiator's Kodohide Spaulders
-						i(31991),	-- Merciless Gladiator's Kodohide Tunic
-						i(31992),	-- Merciless Gladiator's Lamellar Chestpiece
-						i(31993),	-- Merciless Gladiator's Lamellar Gauntlets
-						i(31997),	-- Merciless Gladiator's Lamellar Helm
-						i(31995),	-- Merciless Gladiator's Lamellar Legguards
-						i(31996),	-- Merciless Gladiator's Lamellar Shoulders
-						i(31998),	-- Merciless Gladiator's Leather Gloves
-						i(31999),	-- Merciless Gladiator's Leather Helm
-						i(32000),	-- Merciless Gladiator's Leather Legguards
-						i(32001),	-- Merciless Gladiator's Leather Spaulders
-						i(32002),	-- Merciless Gladiator's Leather Tunic
-						i(32004),	-- Merciless Gladiator's Linked Armor
-						i(32005),	-- Merciless Gladiator's Linked Gauntlets
-						i(32006),	-- Merciless Gladiator's Linked Helm
-						i(32007),	-- Merciless Gladiator's Linked Leggings
-						i(32008),	-- Merciless Gladiator's Linked Spaulders
-						i(32009),	-- Merciless Gladiator's Mail Armor
-						i(32010),	-- Merciless Gladiator's Mail Gauntlets
-						i(32011),	-- Merciless Gladiator's Mail Helm
-						i(32012),	-- Merciless Gladiator's Mail Leggings
-						i(32013),	-- Merciless Gladiator's Mail Spaulders
-						i(32014),	-- Merciless Gladiator's Maul
-						i(32015),	-- Merciless Gladiator's Mooncloth Gloves
-						i(32016),	-- Merciless Gladiator's Mooncloth Hood
-						i(32017),	-- Merciless Gladiator's Mooncloth Leggings
-						i(32018),	-- Merciless Gladiator's Mooncloth Mantle
-						i(32019),	-- Merciless Gladiator's Mooncloth Robe
-						i(32020),	-- Merciless Gladiator's Ornamented Chestguard
-						i(32021),	-- Merciless Gladiator's Ornamented Gloves
-						i(32022),	-- Merciless Gladiator's Ornamented Headcover
-						i(32023),	-- Merciless Gladiator's Ornamented Legplates
-						i(32024),	-- Merciless Gladiator's Ornamented Spaulders
-						i(32025),	-- Merciless Gladiator's Painsaw
-						i(30486),	-- Merciless Gladiator's Plate Chestpiece
-						i(30487),	-- Merciless Gladiator's Plate Gauntlets
-						i(30488),	-- Merciless Gladiator's Plate Helm
-						i(30489),	-- Merciless Gladiator's Plate Legguards
-						i(30490),	-- Merciless Gladiator's Plate Shoulders
-						i(32026),	-- Merciless Gladiator's Pummeler
-						i(32027),	-- Merciless Gladiator's Quickblade
-						i(32961),	-- Merciless Gladiator's Reprieve
-						i(32029),	-- Merciless Gladiator's Ringmail Armor
-						i(32030),	-- Merciless Gladiator's Ringmail Gauntlets
-						i(32031),	-- Merciless Gladiator's Ringmail Helm
-						i(32032),	-- Merciless Gladiator's Ringmail Leggings
-						i(32033),	-- Merciless Gladiator's Ringmail Spaulders
-						i(32028),	-- Merciless Gladiator's Ripper
-						i(32964),	-- Merciless Gladiator's Salvation
-						i(32034),	-- Merciless Gladiator's Satin Gloves
-						i(32035),	-- Merciless Gladiator's Satin Hood
-						i(32036),	-- Merciless Gladiator's Satin Leggings
-						i(32037),	-- Merciless Gladiator's Satin Mantle
-						i(32038),	-- Merciless Gladiator's Satin Robe
-						i(32039),	-- Merciless Gladiator's Scaled Chestpiece
-						i(32040),	-- Merciless Gladiator's Scaled Gauntlets
-						i(32041),	-- Merciless Gladiator's Scaled Helm
-						i(32042),	-- Merciless Gladiator's Scaled Legguards
-						i(32043),	-- Merciless Gladiator's Scaled Shoulders
-						i(32044),	-- Merciless Gladiator's Shanker
-						i(32045),	-- Merciless Gladiator's Shield Wall
-						i(32046),	-- Merciless Gladiator's Shiv
-						i(32047),	-- Merciless Gladiator's Silk Amice
-						i(32048),	-- Merciless Gladiator's Silk Cowl
-						i(32049),	-- Merciless Gladiator's Silk Handguards
-						i(32050),	-- Merciless Gladiator's Silk Raiment
-						i(32051),	-- Merciless Gladiator's Silk Trousers
-						i(32052),	-- Merciless Gladiator's Slicer
-						i(32053),	-- Merciless Gladiator's Spellblade
-						i(32962),	-- Merciless Gladiator's Touch of Defeat
-						i(32055),	-- Merciless Gladiator's War Staff
-						i(32056),	-- Merciless Gladiator's Wyrmhide Gloves
-						i(32057),	-- Merciless Gladiator's Wyrmhide Helm
-						i(32058),	-- Merciless Gladiator's Wyrmhide Legguards
-						i(32059),	-- Merciless Gladiator's Wyrmhide Spaulders
-						i(32060),	-- Merciless Gladiator's Wyrmhide Tunic
-						i(32809),	-- Veteran's Chain Bracers
-						i(32797),	-- Veteran's Chain Girdle
-						i(32785),	-- Veteran's Chain Sabatons
-						i(32798),	-- Veteran's Dragonhide Belt
-						i(32786),	-- Veteran's Dragonhide Boots
-						i(32810),	-- Veteran's Dragonhide Bracers
-						i(32799),	-- Veteran's Dreadweave Belt
-						i(32811),	-- Veteran's Dreadweave Cuffs
-						i(32787),	-- Veteran's Dreadweave Stalkers
-						i(32800),	-- Veteran's Kodohide Belt
-						i(32788),	-- Veteran's Kodohide Boots
-						i(32812),	-- Veteran's Kodohide Bracers
-						i(32801),	-- Veteran's Lamellar Belt
-						i(32813),	-- Veteran's Lamellar Bracers
-						i(32789),	-- Veteran's Lamellar Greaves
-						i(32802),	-- Veteran's Leather Belt
-						i(32790),	-- Veteran's Leather Boots
-						i(32814),	-- Veteran's Leather Bracers
-						i(147611),	-- Veteran's Leather Footguards
-						i(147610),	-- Veteran's Leather Waistband
-						i(147612),	-- Veteran's Leather Wristguards
-						i(32816),	-- Veteran's Linked Bracers
-						i(32803),	-- Veteran's Linked Girdle
-						i(32791),	-- Veteran's Linked Sabatons
-						i(32817),	-- Veteran's Mail Bracers
-						i(32804),	-- Veteran's Mail Girdle
-						i(32792),	-- Veteran's Mail Sabatons
-						i(32979),	-- Veteran's Mooncloth Belt
-						i(32980),	-- Veteran's Mooncloth Cuffs
-						i(32981),	-- Veteran's Mooncloth Slippers
-						i(32988),	-- Veteran's Ornamented Belt
-						i(32989),	-- Veteran's Ornamented Bracers
-						i(32990),	-- Veteran's Ornamented Greaves
-						i(32805),	-- Veteran's Plate Belt
-						i(32818),	-- Veteran's Plate Bracers
-						i(32793),	-- Veteran's Plate Greaves
-						i(32997),	-- Veteran's Ringmail Bracers
-						i(32998),	-- Veteran's Ringmail Girdle
-						i(32999),	-- Veteran's Ringmail Sabatons
-						i(147609),	-- Veteran's Satin Slippers
-						i(32806),	-- Veteran's Scaled Belt
-						i(32819),	-- Veteran's Scaled Bracers
-						i(32794),	-- Veteran's Scaled Greaves
-						i(32807),	-- Veteran's Silk Belt
-						i(32820),	-- Veteran's Silk Cuffs
-						i(32795),	-- Veteran's Silk Footguards
-						i(32808),	-- Veteran's Wyrmhide Belt
-						i(32796),	-- Veteran's Wyrmhide Boots
-						i(32821),	-- Veteran's Wyrmhide Bracers
+						recipe(36954),	-- Dimensional Ripper - Area 52
 					},
 				}),
 				n(20242,  {	-- Karaaz <Consortium Quartermaster>

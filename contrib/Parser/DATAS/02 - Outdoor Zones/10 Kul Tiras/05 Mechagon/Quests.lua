@@ -241,6 +241,7 @@ _.Zones =
 				q(56049, {	-- Deck 'Em
 					["sourceQuests"] = { 55717 },	-- Time for Heroics
 					["provider"] = { "n", 153538 },	-- Adalin Halfheight
+					["isDaily"] = true,
 					["coord"] = { 75.2, 69.8, 862 },
 					["g"] = {
 						crit(8, {	-- Deck 'Em
@@ -260,15 +261,17 @@ _.Zones =
 					["g"] = {
 						n(152961, {	-- Data Anomaly Balnazzar
 							["crs"] = {
-								153486,	-- Data Anomaly Baron Gedden
-								152979,	-- Data Anomaly Baron Kazum
-								152922,	-- Data Anomaly Captain Kromcrush
-								152983,	-- Data Anomaly Crowd Pummeler 9-60
-								152959,	-- Data Anomaly Hogger
-								152964,	-- Data Anomaly Lord Incendius
-								152976,	-- Data Anomaly Meathook
-								152923,	-- Data Anomaly Razorclaw the Butcher
-								152969,	-- Data Anomaly Razorlash
+							--	could technically separate this into 6 different listings with the same stuff under each one so people could more easily track that they'd killed every rare that can drop this loot, but it seems like an insane amount of duplication when people can just...make a list.  idk!
+							--	Balnazzar questID: 57387
+								153486,	-- Data Anomaly Baron Gedden (questID 57389)
+								152979,	-- Data Anomaly Baron Kazum (questID 57388)
+								152922,	-- Data Anomaly Captain Kromcrush (questID 57387)
+								152983,	-- Data Anomaly Crowd Pummeler 9-60 (questID 57388)
+							--	152959,	-- Data Anomaly Hogger (listed as a rare on wowhead so might have a questID, but it's never rare for me)
+							--	152964,	-- Data Anomaly Lord Incendius
+							--	152976,	-- Data Anomaly Meathook
+								152923,	-- Data Anomaly Razorclaw the Butcher (questID 57385)
+							--	152969,	-- Data Anomaly Razorlash
 							},
 							["g"] = {
 								i(168631),	-- Metal Detector
@@ -578,9 +581,10 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(56746, {	-- Our Direct Line
+					["description"] = "Quest is offered once you have completed |cFFFFD700Other Interests|r dailies three times.",
 					["provider"] = { "n", 152575 },	-- Steelsage Gao
+					["isDaily"] = true,	-- collection status for the quest resets over time
 					["coord"] = { 73.6, 34.3, 1462 },
-					["description"] = "Quest is offered once you have completed the daily |cFFFFD700Other Interests|r three times.",
 					["g"] = {
 						i(169176, {	-- Blueprint: Encrypted Black Market Radio
 							["questID"] = 55084,	-- Blueprint: Encrypted Black Market Radio
@@ -1317,9 +1321,10 @@ _.Zones =
 					["coord"] = { 70.8, 39.1, 1462 },
 					["sourceQuest"] = 55210,	-- Batteries Not Included
 				}),
-				q(56324, {	-- Your First Charge Ain't Free! -- the NPC quest marker shows repeatable, but it isn't. Possibly a daily? Not marking until we know
+				q(56324, {	-- Your First Charge Ain't Free! 
 					["provider"] = { "n", 154534 },	-- Flux
 					["coord"] = { 61.2, 37.4, 1462 },
+					["repeatable"] = true,	-- repeatable when the tower is up to craft filled energy cells
 				}),
 			}),
 		}),

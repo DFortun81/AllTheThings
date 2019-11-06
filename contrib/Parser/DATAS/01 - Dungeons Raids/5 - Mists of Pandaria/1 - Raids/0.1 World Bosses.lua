@@ -4,18 +4,27 @@
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	n(-7, {	-- World Bosses
+		["order"] = "00",
+		["ordered"] = true,
 		["isRaid"] = true,
 		["lvl"] = 80,
 		["g"] = {
-			cr(69099, e(814, { 	-- Nalak, The Storm Lord
-				["isRaid"] = true,
+			e(814, {	-- Nalak, The Storm Lord
+				["isWeekly"] = true,
 				["questID"] = 32518,
-				["maps"] = { 504 }, 	-- Isle of Thunder
-				["lvl"] = 85,			-- Confirmed by Lucetia November 5, 2018
-				["coord"] = { 60.01, 37.73, 504 },
-				["groups"] = {
+				["isRaid"] = true,
+				["coord"] = { 60.0, 37.7, 504 },
+				["maps"] = {	-- all Isle of Thunder maps
+					504,	-- Isle of Thunder
+					505,	-- Lightning Vein Mine
+					506,	-- The Swollen Vault
+					516,	-- Scenario [Phase 1]
+					517,	-- Lightning Vein Mine
+				},
+				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018
+				["cr"] = 69099,	-- Nalak, the Storm Lord
+				["g"] = {
 					ach(8028),	-- Praise the Sun!
-					
 					-- Mounts, Caches, and Quest Items!
 					i(95057),	-- Reins of the Thundering Cobalt Cloud Serpent
 					i(95602, {	-- Stormtouched Cache
@@ -62,71 +71,67 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(48124),	-- Razormaw Hatchling
 						i(48126),	-- Razzashi Hatchling
 					}),
-					
 					-- Necks
-					i(91414),	-- Tyrannical Gladiator's Choker of Accuracy [Alliance] [Warrior, Paladin, Death Knight]
-					i(94354),	-- Tyrannical Gladiator's Choker of Accuracy [Horde] [Warrior, Paladin, Death Knight]
-					i(91413),	-- Tyrannical Gladiator's Choker of Proficiency [Alliance] [Warrior, Paladin, Death Knight]
-					i(94465),	-- Tyrannical Gladiator's Choker of Proficiency [Horde] [Warrior, Paladin, Death Knight]
-					i(91102),	-- Tyrannical Gladiator's Necklace of Proficiency [Alliance] [Hunter, Rogue, Shaman, Monk, Druid]
-					i(94394),	-- Tyrannical Gladiator's Necklace of Proficiency [Horde] [Hunter, Rogue, Shaman, Monk, Druid]
-					i(91103),	-- Tyrannical Gladiator's Necklace of Prowess [Alliance] [Hunter, Rogue, Shaman, Monk, Druid]
-					i(94395),	-- Tyrannical Gladiator's Necklace of Prowess [Horde] [Hunter, Rogue, Shaman, Monk, Druid]
-					i(91136),	-- Tyrannical Gladiator's Pendant of Alacrity [Alliance] [Paladin, Priest, Shaman, Mage, Warlock, Monk, Druid]
-					i(94473),	-- Tyrannical Gladiator's Pendant of Alacrity [Horde] [Paladin, Priest, Shaman, Mage, Warlock, Monk, Druid]
-					i(91135),	-- Tyrannical Gladiator's Pendant of Cruelty [Alliance] [Paladin, Priest, Shaman, Mage, Warlock, Monk, Druid]
-					i(94489),	-- Tyrannical Gladiator's Pendant of Cruelty [Horde] [Paladin, Priest, Shaman, Mage, Warlock, Monk, Druid]
-					i(91137),	-- Tyrannical Gladiator's Pendant of Meditation [Alliance] [Paladin, Priest, Shaman, Monk, Druid]
-					i(94452),	-- Tyrannical Gladiator's Pendant of Meditation [Horde] [Paladin, Priest, Shaman, Monk, Druid]
-					
+					i(91414),	-- Tyrannical Gladiator's Choker of Accuracy
+					i(94354),	-- Tyrannical Gladiator's Choker of Accuracy
+					i(91413),	-- Tyrannical Gladiator's Choker of Proficiency
+					i(94465),	-- Tyrannical Gladiator's Choker of Proficiency
+					i(91102),	-- Tyrannical Gladiator's Necklace of Proficiency
+					i(94394),	-- Tyrannical Gladiator's Necklace of Proficiency
+					i(91103),	-- Tyrannical Gladiator's Necklace of Prowess
+					i(94395),	-- Tyrannical Gladiator's Necklace of Prowess
+					i(91136),	-- Tyrannical Gladiator's Pendant of Alacrity
+					i(94473),	-- Tyrannical Gladiator's Pendant of Alacrity
+					i(91135),	-- Tyrannical Gladiator's Pendant of Cruelty
+					i(94489),	-- Tyrannical Gladiator's Pendant of Cruelty
+					i(91137),	-- Tyrannical Gladiator's Pendant of Meditation
+					i(94452),	-- Tyrannical Gladiator's Pendant of Meditation
 					-- Backs
-					i(91100),	-- Tyrannical Gladiator's Cape of Cruelty [Alliance] [Hunter, Rogue, Shaman, Monk, Druid]
-					i(94421),	-- Tyrannical Gladiator's Cape of Cruelty [Horde] [Hunter, Rogue, Shaman, Monk, Druid]
-					i(91101),	-- Tyrannical Gladiator's Cape of Prowess [Alliance] [Hunter, Rogue, Shaman, Monk, Druid]
-					i(94355),	-- Tyrannical Gladiator's Cape of Prowess [Horde] [Hunter, Rogue, Shaman, Monk, Druid]
-					i(91411),	-- Tyrannical Gladiator's Cloak of Alacrity [Alliance] [Warrior, Paladin, Death Knight]
-					i(94485),	-- Tyrannical Gladiator's Cloak of Alacrity [Horde] [Warrior, Paladin, Death Knight]
-					i(91412),	-- Tyrannical Gladiator's Cloak of Prowess [Alliance] [Warrior, Paladin, Death Knight]
-					i(94486),	-- Tyrannical Gladiator's Cloak of Prowess [Horde] [Warrior, Paladin, Death Knight]
-					i(91124),	-- Tyrannical Gladiator's Drape of Cruelty [Alliance] [Paladin, Priest, Shaman, Mage, Warlock, Monk, Druid]
-					i(94383),	-- Tyrannical Gladiator's Drape of Cruelty [Horde] [Paladin, Priest, Shaman, Mage, Warlock, Monk, Druid]
-					i(91126),	-- Tyrannical Gladiator's Drape of Meditation [Alliance] [Paladin, Priest, Shaman, Monk, Druid]
-					i(94472),	-- Tyrannical Gladiator's Drape of Meditation [Horde] [Paladin, Priest, Shaman, Monk, Druid]
-					i(91125),	-- Tyrannical Gladiator's Drape of Prowess [Alliance] [Paladin, Priest, Shaman, Mage, Warlock, Monk, Druid]
-					i(94488),	-- Tyrannical Gladiator's Drape of Prowess [Horde] [Paladin, Priest, Shaman, Mage, Warlock, Monk, Druid]
-					
+					i(91100),	-- Tyrannical Gladiator's Cape of Cruelty
+					i(94421),	-- Tyrannical Gladiator's Cape of Cruelty
+					i(91101),	-- Tyrannical Gladiator's Cape of Prowess
+					i(94355),	-- Tyrannical Gladiator's Cape of Prowess
+					i(91411),	-- Tyrannical Gladiator's Cloak of Alacrity
+					i(94485),	-- Tyrannical Gladiator's Cloak of Alacrity
+					i(91412),	-- Tyrannical Gladiator's Cloak of Prowess
+					i(94486),	-- Tyrannical Gladiator's Cloak of Prowess
+					i(91124),	-- Tyrannical Gladiator's Drape of Cruelty
+					i(94383),	-- Tyrannical Gladiator's Drape of Cruelty
+					i(91126),	-- Tyrannical Gladiator's Drape of Meditation
+					i(94472),	-- Tyrannical Gladiator's Drape of Meditation
+					i(91125),	-- Tyrannical Gladiator's Drape of Prowess
+					i(94488),	-- Tyrannical Gladiator's Drape of Prowess
 					-- Wrists
-					i(91357),	-- Tyrannical Gladiator's Armbands of Meditation [Alliance] [Shaman]
-					i(94337),	-- Tyrannical Gladiator's Armbands of Meditation [Horde] [Shaman]
-					i(91356),	-- Tyrannical Gladiator's Armbands of Prowess [Alliance] [Shaman]
-					i(94379),	-- Tyrannical Gladiator's Armbands of Prowess [Horde] [Shaman]
-					i(91306),	-- Tyrannical Gladiator's Armplates of Alacrity [Alliance] [Warrior, Paladin, Death Knight]
-					i(94487),	-- Tyrannical Gladiator's Armplates of Alacrity [Horde] [Warrior, Paladin, Death Knight]
-					i(91305),	-- Tyrannical Gladiator's Armplates of Proficiency [Alliance] [Warrior, Paladin, Death Knight]
-					i(94418),	-- Tyrannical Gladiator's Armplates of Proficiency [Horde] [Warrior, Paladin, Death Knight]
-					i(91246),	-- Tyrannical Gladiator's Armwraps of Accuracy [Alliance] [Rogue, Monk, Druid]
-					i(94427),	-- Tyrannical Gladiator's Armwraps of Accuracy [Horde] [Rogue, Monk, Druid]
-					i(91339),	-- Tyrannical Gladiator's Armwraps of Alacrity [Alliance] [Rogue, Monk, Druid]
-					i(94470),	-- Tyrannical Gladiator's Armwraps of Alacrity [Horde] [Rogue, Monk, Druid]
-					i(91171),	-- Tyrannical Gladiator's Bindings of Meditation [Alliance] [Monk, Druid]
-					i(94407),	-- Tyrannical Gladiator's Bindings of Meditation [Horde] [Monk, Druid]
-					i(91188),	-- Tyrannical Gladiator's Bindings of Prowess [Alliance] [Monk, Druid]
-					i(94439),	-- Tyrannical Gladiator's Bindings of Prowess [Horde] [Monk, Druid]
-					i(91286),	-- Tyrannical Gladiator's Bracers of Meditation [Alliance] [Paladin]
-					i(94481),	-- Tyrannical Gladiator's Bracers of Meditation [Horde] [Paladin]
-					i(91285),	-- Tyrannical Gladiator's Bracers of Prowess [Alliance] [Paladin]
-					i(94411),	-- Tyrannical Gladiator's Bracers of Prowess [Horde] [Paladin]
-					i(91121),	-- Tyrannical Gladiator's Cuffs of Accuracy [Alliance] [Priest, Mage, Warlock]
-					i(94403),	-- Tyrannical Gladiator's Cuffs of Accuracy [Horde] [Priest, Mage, Warlock]
-					i(91123),	-- Tyrannical Gladiator's Cuffs of Meditation [Alliance] [Priest, Mage, Warlock]
-					i(94380),	-- Tyrannical Gladiator's Cuffs of Meditation [Horde] [Priest, Mage, Warlock]
-					i(91122),	-- Tyrannical Gladiator's Cuffs of Prowess [Alliance] [Priest, Mage, Warlock]
-					i(94449),	-- Tyrannical Gladiator's Cuffs of Prowess [Horde] [Priest, Mage, Warlock]
-					i(91221),	-- Tyrannical Gladiator's Wristguards of Accuracy [Alliance] [Hunter, Shaman]
-					i(94469),	-- Tyrannical Gladiator's Wristguards of Accuracy [Horde] [Hunter, Shaman]
-					i(91220),	-- Tyrannical Gladiator's Wristguards of Alacrity [Alliance] [Hunter, Shaman]
-					i(94404),	-- Tyrannical Gladiator's Wristguards of Alacrity [Horde] [Hunter, Shaman]
-					
+					i(91357),	-- Tyrannical Gladiator's Armbands of Meditation
+					i(94337),	-- Tyrannical Gladiator's Armbands of Meditation
+					i(91356),	-- Tyrannical Gladiator's Armbands of Prowess
+					i(94379),	-- Tyrannical Gladiator's Armbands of Prowess
+					i(91306),	-- Tyrannical Gladiator's Armplates of Alacrity
+					i(94487),	-- Tyrannical Gladiator's Armplates of Alacrity
+					i(91305),	-- Tyrannical Gladiator's Armplates of Proficiency
+					i(94418),	-- Tyrannical Gladiator's Armplates of Proficiency
+					i(91246),	-- Tyrannical Gladiator's Armwraps of Accuracy
+					i(94427),	-- Tyrannical Gladiator's Armwraps of Accuracy
+					i(91339),	-- Tyrannical Gladiator's Armwraps of Alacrity
+					i(94470),	-- Tyrannical Gladiator's Armwraps of Alacrity
+					i(91171),	-- Tyrannical Gladiator's Bindings of Meditation
+					i(94407),	-- Tyrannical Gladiator's Bindings of Meditation
+					i(91188),	-- Tyrannical Gladiator's Bindings of Prowess
+					i(94439),	-- Tyrannical Gladiator's Bindings of Prowess
+					i(91286),	-- Tyrannical Gladiator's Bracers of Meditation
+					i(94481),	-- Tyrannical Gladiator's Bracers of Meditation
+					i(91285),	-- Tyrannical Gladiator's Bracers of Prowess
+					i(94411),	-- Tyrannical Gladiator's Bracers of Prowess
+					i(91121),	-- Tyrannical Gladiator's Cuffs of Accuracy
+					i(94403),	-- Tyrannical Gladiator's Cuffs of Accuracy
+					i(91123),	-- Tyrannical Gladiator's Cuffs of Meditation
+					i(94380),	-- Tyrannical Gladiator's Cuffs of Meditation
+					i(91122),	-- Tyrannical Gladiator's Cuffs of Prowess
+					i(94449),	-- Tyrannical Gladiator's Cuffs of Prowess
+					i(91221),	-- Tyrannical Gladiator's Wristguards of Accuracy
+					i(94469),	-- Tyrannical Gladiator's Wristguards of Accuracy
+					i(91220),	-- Tyrannical Gladiator's Wristguards of Alacrity
+					i(94404),	-- Tyrannical Gladiator's Wristguards of Alacrity
 					-- Hands
 					i(95276),	-- Fire-Charm Gauntlets
 					i(95266),	-- Fire-Charm Grips
@@ -151,75 +156,73 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(95291),	-- Lightning Emperor's Handguards
 					i(95306),	-- Nine-Tailed Gloves
 					i(95256),	-- Saurok Stalker's Gloves
-					i(91224),	-- Tyrannical Gladiator's Chain Gauntlets [Alliance] [Hunter]
-					i(94453),	-- Tyrannical Gladiator's Chain Gauntlets [Horde] [Hunter]
-					i(91257),	-- Tyrannical Gladiator's Copperskin Gloves [Alliance] [Monk]
-					i(94340),	-- Tyrannical Gladiator's Copperskin Gloves [Horde] [Monk]
-					i(91157),	-- Tyrannical Gladiator's Dragonhide Gloves [Alliance] [Druid]
-					i(94455),	-- Tyrannical Gladiator's Dragonhide Gloves [Horde] [Druid]
-					i(91149),	-- Tyrannical Gladiator's Dreadplate Gauntlets [Alliance] [Death Knight]
-					i(94364),	-- Tyrannical Gladiator's Dreadplate Gauntlets [Horde] [Death Knight]
-					i(91420),	-- Tyrannical Gladiator's Felweave Handguards [Alliance] [Warlock]
-					i(94441),	-- Tyrannical Gladiator's Felweave Handguards [Horde] [Warlock]
-					i(91247),	-- Tyrannical Gladiator's Ironskin Gloves [Alliance] [Monk]
-					i(94391),	-- Tyrannical Gladiator's Ironskin Gloves [Horde] [Monk]
-					i(91172),	-- Tyrannical Gladiator's Kodohide Gloves [Alliance] [Druid]
-					i(94371),	-- Tyrannical Gladiator's Kodohide Gloves [Horde] [Druid]
-					i(91342),	-- Tyrannical Gladiator's Leather Gloves [Alliance] [Rogue]
-					i(94377),	-- Tyrannical Gladiator's Leather Gloves [Horde] [Rogue]
-					i(91370),	-- Tyrannical Gladiator's Linked Gauntlets [Alliance] [Shaman]
-					i(94458),	-- Tyrannical Gladiator's Linked Gauntlets [Horde] [Shaman]
-					i(91382),	-- Tyrannical Gladiator's Mail Gauntlets [Alliance] [Shaman]
-					i(94408),	-- Tyrannical Gladiator's Mail Gauntlets [Horde] [Shaman]
-					i(91309),	-- Tyrannical Gladiator's Mooncloth Gloves [Alliance] [Priest]
-					i(94328),	-- Tyrannical Gladiator's Mooncloth Gloves [Horde] [Priest]
-					i(91289),	-- Tyrannical Gladiator's Ornamented Gloves [Alliance] [Paladin]
-					i(94438),	-- Tyrannical Gladiator's Ornamented Gloves [Horde] [Paladin]
-					i(91432),	-- Tyrannical Gladiator's Plate Gauntlets [Alliance] [Warrior]
-					i(94331),	-- Tyrannical Gladiator's Plate Gauntlets [Horde] [Warrior]
-					i(91360),	-- Tyrannical Gladiator's Ringmail Gauntlets [Alliance] [Shaman]
-					i(94490),	-- Tyrannical Gladiator's Ringmail Gauntlets [Horde] [Shaman]
-					i(91319),	-- Tyrannical Gladiator's Satin Gloves [Alliance] [Priest]
-					i(94423),	-- Tyrannical Gladiator's Satin Gloves [Horde] [Priest]
-					i(91269),	-- Tyrannical Gladiator's Scaled Gauntlets [Alliance] [Paladin]
-					i(94343),	-- Tyrannical Gladiator's Scaled Gauntlets [Horde] [Paladin]
-					i(91232),	-- Tyrannical Gladiator's Silk Handguards [Alliance] [Mage]
-					i(94451),	-- Tyrannical Gladiator's Silk Handguards [Horde] [Mage]
-					i(91189),	-- Tyrannical Gladiator's Wyrmhide Gloves [Alliance] [Druid]
-					i(94412),	-- Tyrannical Gladiator's Wyrmhide Gloves [Horde] [Druid]
-					
+					i(91224),	-- Tyrannical Gladiator's Chain Gauntlets
+					i(94453),	-- Tyrannical Gladiator's Chain Gauntlets
+					i(91257),	-- Tyrannical Gladiator's Copperskin Gloves
+					i(94340),	-- Tyrannical Gladiator's Copperskin Gloves
+					i(91157),	-- Tyrannical Gladiator's Dragonhide Gloves
+					i(94455),	-- Tyrannical Gladiator's Dragonhide Gloves
+					i(91149),	-- Tyrannical Gladiator's Dreadplate Gauntlets
+					i(94364),	-- Tyrannical Gladiator's Dreadplate Gauntlets
+					i(91420),	-- Tyrannical Gladiator's Felweave Handguards
+					i(94441),	-- Tyrannical Gladiator's Felweave Handguards
+					i(91247),	-- Tyrannical Gladiator's Ironskin Gloves
+					i(94391),	-- Tyrannical Gladiator's Ironskin Gloves
+					i(91172),	-- Tyrannical Gladiator's Kodohide Gloves
+					i(94371),	-- Tyrannical Gladiator's Kodohide Gloves
+					i(91342),	-- Tyrannical Gladiator's Leather Gloves
+					i(94377),	-- Tyrannical Gladiator's Leather Gloves
+					i(91370),	-- Tyrannical Gladiator's Linked Gauntlets
+					i(94458),	-- Tyrannical Gladiator's Linked Gauntlets
+					i(91382),	-- Tyrannical Gladiator's Mail Gauntlets
+					i(94408),	-- Tyrannical Gladiator's Mail Gauntlets
+					i(91309),	-- Tyrannical Gladiator's Mooncloth Gloves
+					i(94328),	-- Tyrannical Gladiator's Mooncloth Gloves
+					i(91289),	-- Tyrannical Gladiator's Ornamented Gloves
+					i(94438),	-- Tyrannical Gladiator's Ornamented Gloves
+					i(91432),	-- Tyrannical Gladiator's Plate Gauntlets
+					i(94331),	-- Tyrannical Gladiator's Plate Gauntlets
+					i(91360),	-- Tyrannical Gladiator's Ringmail Gauntlets
+					i(94490),	-- Tyrannical Gladiator's Ringmail Gauntlets
+					i(91319),	-- Tyrannical Gladiator's Satin Gloves
+					i(94423),	-- Tyrannical Gladiator's Satin Gloves
+					i(91269),	-- Tyrannical Gladiator's Scaled Gauntlets
+					i(94343),	-- Tyrannical Gladiator's Scaled Gauntlets
+					i(91232),	-- Tyrannical Gladiator's Silk Handguards
+					i(94451),	-- Tyrannical Gladiator's Silk Handguards
+					i(91189),	-- Tyrannical Gladiator's Wyrmhide Gloves
+					i(94412),	-- Tyrannical Gladiator's Wyrmhide Gloves
 					-- Waists
-					i(91184),	-- Tyrannical Gladiator's Belt of Cruelty [Alliance] [Monk, Druid]
-					i(94410),	-- Tyrannical Gladiator's Belt of Cruelty [Horde] [Monk, Druid]
-					i(91167),	-- Tyrannical Gladiator's Belt of Meditation [Alliance] [Monk, Druid]
-					i(94491),	-- Tyrannical Gladiator's Belt of Meditation [Horde] [Monk, Druid]
-					i(91277),	-- Tyrannical Gladiator's Clasp of Cruelty [Alliance] [Paladin]
-					i(94480),	-- Tyrannical Gladiator's Clasp of Cruelty [Horde] [Paladin]
-					i(91279),	-- Tyrannical Gladiator's Clasp of Meditation [Alliance] [Paladin]
-					i(94464),	-- Tyrannical Gladiator's Clasp of Meditation [Horde] [Paladin]
-					i(91111),	-- Tyrannical Gladiator's Cord of Accuracy [Alliance] [Priest, Mage, Warlock]
-					i(94376),	-- Tyrannical Gladiator's Cord of Accuracy [Horde] [Priest, Mage, Warlock]
-					i(91109),	-- Tyrannical Gladiator's Cord of Cruelty [Alliance] [Priest, Mage, Warlock]
-					i(94400),	-- Tyrannical Gladiator's Cord of Cruelty [Horde] [Priest, Mage, Warlock]
-					i(91113),	-- Tyrannical Gladiator's Cord of Meditation [Alliance] [Priest, Mage, Warlock]
-					i(94425),	-- Tyrannical Gladiator's Cord of Meditation [Horde] [Priest, Mage, Warlock]
-					i(91297),	-- Tyrannical Gladiator's Girdle of Accuracy [Alliance] [Warrior, Paladin, Death Knight]
-					i(94353),	-- Tyrannical Gladiator's Girdle of Accuracy [Horde] [Warrior, Paladin, Death Knight]
-					i(91299),	-- Tyrannical Gladiator's Girdle of Prowess [Alliance] [Warrior, Paladin, Death Knight]
-					i(94440),	-- Tyrannical Gladiator's Girdle of Prowess [Horde] [Warrior, Paladin, Death Knight]
-					i(91214),	-- Tyrannical Gladiator's Links of Accuracy [Alliance] [Hunter, Shaman]
-					i(94358),	-- Tyrannical Gladiator's Links of Accuracy [Horde] [Hunter, Shaman]
-					i(91212),	-- Tyrannical Gladiator's Links of Cruelty [Alliance] [Hunter, Shaman]
-					i(94330),	-- Tyrannical Gladiator's Links of Cruelty [Horde] [Hunter, Shaman]
-					i(91335),	-- Tyrannical Gladiator's Waistband of Accuracy [Alliance] [Rogue, Monk, Druid]
-					i(94424),	-- Tyrannical Gladiator's Waistband of Accuracy [Horde] [Rogue, Monk, Druid]
-					i(91242),	-- Tyrannical Gladiator's Waistband of Cruelty [Alliance] [Rogue, Monk, Druid]
-					i(94360),	-- Tyrannical Gladiator's Waistband of Cruelty [Horde] [Rogue, Monk, Druid]
-					i(91378),	-- Tyrannical Gladiator's Waistguard of Cruelty [Alliance] [Shaman]
-					i(94393),	-- Tyrannical Gladiator's Waistguard of Cruelty [Horde] [Shaman]
-					i(91350),	-- Tyrannical Gladiator's Waistguard of Meditation [Alliance] [Shaman]
-					i(94382),	-- Tyrannical Gladiator's Waistguard of Meditation [Horde] [Shaman]
-					
+					i(91184),	-- Tyrannical Gladiator's Belt of Cruelty
+					i(94410),	-- Tyrannical Gladiator's Belt of Cruelty
+					i(91167),	-- Tyrannical Gladiator's Belt of Meditation
+					i(94491),	-- Tyrannical Gladiator's Belt of Meditation
+					i(91277),	-- Tyrannical Gladiator's Clasp of Cruelty
+					i(94480),	-- Tyrannical Gladiator's Clasp of Cruelty
+					i(91279),	-- Tyrannical Gladiator's Clasp of Meditation
+					i(94464),	-- Tyrannical Gladiator's Clasp of Meditation
+					i(91111),	-- Tyrannical Gladiator's Cord of Accuracy
+					i(94376),	-- Tyrannical Gladiator's Cord of Accuracy
+					i(91109),	-- Tyrannical Gladiator's Cord of Cruelty
+					i(94400),	-- Tyrannical Gladiator's Cord of Cruelty
+					i(91113),	-- Tyrannical Gladiator's Cord of Meditation
+					i(94425),	-- Tyrannical Gladiator's Cord of Meditation
+					i(91297),	-- Tyrannical Gladiator's Girdle of Accuracy
+					i(94353),	-- Tyrannical Gladiator's Girdle of Accuracy
+					i(91299),	-- Tyrannical Gladiator's Girdle of Prowess
+					i(94440),	-- Tyrannical Gladiator's Girdle of Prowess
+					i(91214),	-- Tyrannical Gladiator's Links of Accuracy
+					i(94358),	-- Tyrannical Gladiator's Links of Accuracy
+					i(91212),	-- Tyrannical Gladiator's Links of Cruelty
+					i(94330),	-- Tyrannical Gladiator's Links of Cruelty
+					i(91335),	-- Tyrannical Gladiator's Waistband of Accuracy
+					i(94424),	-- Tyrannical Gladiator's Waistband of Accuracy
+					i(91242),	-- Tyrannical Gladiator's Waistband of Cruelty
+					i(94360),	-- Tyrannical Gladiator's Waistband of Cruelty
+					i(91378),	-- Tyrannical Gladiator's Waistguard of Cruelty
+					i(94393),	-- Tyrannical Gladiator's Waistguard of Cruelty
+					i(91350),	-- Tyrannical Gladiator's Waistguard of Meditation
+					i(94382),	-- Tyrannical Gladiator's Waistguard of Meditation
 					-- Legs
 					i(95253),	-- Breeches of the Haunted Forest
 					i(95268),	-- Fire-Charm Leggings
@@ -244,99 +247,99 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(95283),	-- Lightning Emperor's Legplates
 					i(95308),	-- Nine-Tailed Legguards
 					i(95258),	-- Saurok Stalker's Legguards
-					i(91228),	-- Tyrannical Gladiator's Chain Leggings [Alliance] [Hunter]
-					i(94384),	-- Tyrannical Gladiator's Chain Leggings [Horde] [Hunter]
-					i(91261),	-- Tyrannical Gladiator's Copperskin Legguards [Alliance] [Monk]
-					i(94478),	-- Tyrannical Gladiator's Copperskin Legguards [Horde] [Monk]
-					i(91161),	-- Tyrannical Gladiator's Dragonhide Legguards [Alliance] [Druid]
-					i(94368),	-- Tyrannical Gladiator's Dragonhide Legguards [Horde] [Druid]
-					i(91153),	-- Tyrannical Gladiator's Dreadplate Legguards [Alliance] [Death Knight]
-					i(94365),	-- Tyrannical Gladiator's Dreadplate Legguards [Horde] [Death Knight]
-					i(91424),	-- Tyrannical Gladiator's Felweave Trousers [Alliance] [Warlock]
-					i(94471),	-- Tyrannical Gladiator's Felweave Trousers [Horde] [Warlock]
-					i(91251),	-- Tyrannical Gladiator's Ironskin Legguards [Alliance] [Monk]
-					i(94370),	-- Tyrannical Gladiator's Ironskin Legguards [Horde] [Monk]
-					i(91176),	-- Tyrannical Gladiator's Kodohide Legguards [Alliance] [Druid]
-					i(94477),	-- Tyrannical Gladiator's Kodohide Legguards [Horde] [Druid]
-					i(91346),	-- Tyrannical Gladiator's Leather Legguards [Alliance] [Rogue]
-					i(94446),	-- Tyrannical Gladiator's Leather Legguards [Horde] [Rogue]
-					i(91374),	-- Tyrannical Gladiator's Linked Leggings [Alliance] [Shaman]
-					i(94494),	-- Tyrannical Gladiator's Linked Leggings [Horde] [Shaman]
-					i(91386),	-- Tyrannical Gladiator's Mail Leggings [Alliance] [Shaman]
-					i(94497),	-- Tyrannical Gladiator's Mail Leggings [Horde] [Shaman]
-					i(91313),	-- Tyrannical Gladiator's Mooncloth Leggings [Alliance] [Priest]
-					i(94420),	-- Tyrannical Gladiator's Mooncloth Leggings [Horde] [Priest]
-					i(91293),	-- Tyrannical Gladiator's Ornamented Legplates [Alliance] [Paladin]
-					i(94484),	-- Tyrannical Gladiator's Ornamented Legplates [Horde] [Paladin]
-					i(91436),	-- Tyrannical Gladiator's Plate Legguards [Alliance] [Warrior]
-					i(94448),	-- Tyrannical Gladiator's Plate Legguards [Horde] [Warrior]
-					i(91364),	-- Tyrannical Gladiator's Ringmail Leggings [Alliance] [Shaman]
-					i(94435),	-- Tyrannical Gladiator's Ringmail Leggings [Horde] [Shaman]
-					i(91323),	-- Tyrannical Gladiator's Satin Leggings [Alliance] [Priest]
-					i(94334),	-- Tyrannical Gladiator's Satin Leggings [Horde] [Priest]
-					i(91273),	-- Tyrannical Gladiator's Scaled Legguards [Alliance] [Paladin]
-					i(94496),	-- Tyrannical Gladiator's Scaled Legguards [Horde] [Paladin]
-					i(91236),	-- Tyrannical Gladiator's Silk Trousers [Alliance] [Mage]
-					i(94362),	-- Tyrannical Gladiator's Silk Trousers [Horde] [Mage]
-					i(91193),	-- Tyrannical Gladiator's Wyrmhide Legguards [Alliance] [Druid]
-					i(94483),	-- Tyrannical Gladiator's Wyrmhide Legguards [Horde] [Druid]
-					
+					i(91228),	-- Tyrannical Gladiator's Chain Leggings
+					i(94384),	-- Tyrannical Gladiator's Chain Leggings
+					i(91261),	-- Tyrannical Gladiator's Copperskin Legguards
+					i(94478),	-- Tyrannical Gladiator's Copperskin Legguards
+					i(91161),	-- Tyrannical Gladiator's Dragonhide Legguards
+					i(94368),	-- Tyrannical Gladiator's Dragonhide Legguards
+					i(91153),	-- Tyrannical Gladiator's Dreadplate Legguards
+					i(94365),	-- Tyrannical Gladiator's Dreadplate Legguards
+					i(91424),	-- Tyrannical Gladiator's Felweave Trousers
+					i(94471),	-- Tyrannical Gladiator's Felweave Trousers
+					i(91251),	-- Tyrannical Gladiator's Ironskin Legguards
+					i(94370),	-- Tyrannical Gladiator's Ironskin Legguards
+					i(91176),	-- Tyrannical Gladiator's Kodohide Legguards
+					i(94477),	-- Tyrannical Gladiator's Kodohide Legguards
+					i(91346),	-- Tyrannical Gladiator's Leather Legguards
+					i(94446),	-- Tyrannical Gladiator's Leather Legguards
+					i(91374),	-- Tyrannical Gladiator's Linked Leggings
+					i(94494),	-- Tyrannical Gladiator's Linked Leggings
+					i(91386),	-- Tyrannical Gladiator's Mail Leggings
+					i(94497),	-- Tyrannical Gladiator's Mail Leggings
+					i(91313),	-- Tyrannical Gladiator's Mooncloth Leggings
+					i(94420),	-- Tyrannical Gladiator's Mooncloth Leggings
+					i(91293),	-- Tyrannical Gladiator's Ornamented Legplates
+					i(94484),	-- Tyrannical Gladiator's Ornamented Legplates
+					i(91436),	-- Tyrannical Gladiator's Plate Legguards
+					i(94448),	-- Tyrannical Gladiator's Plate Legguards
+					i(91364),	-- Tyrannical Gladiator's Ringmail Leggings
+					i(94435),	-- Tyrannical Gladiator's Ringmail Leggings
+					i(91323),	-- Tyrannical Gladiator's Satin Leggings
+					i(94334),	-- Tyrannical Gladiator's Satin Leggings
+					i(91273),	-- Tyrannical Gladiator's Scaled Legguards
+					i(94496),	-- Tyrannical Gladiator's Scaled Legguards
+					i(91236),	-- Tyrannical Gladiator's Silk Trousers
+					i(94362),	-- Tyrannical Gladiator's Silk Trousers
+					i(91193),	-- Tyrannical Gladiator's Wyrmhide Legguards
+					i(94483),	-- Tyrannical Gladiator's Wyrmhide Legguards
 					-- Feet
-					i(91244),	-- Tyrannical Gladiator's Boots of Alacrity [Alliance] [Rogue, Monk, Druid]
-					i(94432),	-- Tyrannical Gladiator's Boots of Alacrity [Horde] [Rogue, Monk, Druid]
-					i(91337),	-- Tyrannical Gladiator's Boots of Cruelty [Alliance] [Rogue, Monk, Druid]
-					i(94374),	-- Tyrannical Gladiator's Boots of Cruelty [Horde] [Rogue, Monk, Druid]
-					i(91186),	-- Tyrannical Gladiator's Footguards of Alacrity [Alliance] [Monk, Druid]
-					i(94344),	-- Tyrannical Gladiator's Footguards of Alacrity [Horde] [Monk, Druid]
-					i(91352),	-- Tyrannical Gladiator's Footguards of Alacrity [Alliance] [Shaman]
-					i(94378),	-- Tyrannical Gladiator's Footguards of Alacrity [Horde] [Shaman]
-					i(91169),	-- Tyrannical Gladiator's Footguards of Meditation [Alliance] [Monk, Druid]
-					i(94476),	-- Tyrannical Gladiator's Footguards of Meditation [Horde] [Monk, Druid]
-					i(91354),	-- Tyrannical Gladiator's Footguards of Meditation [Alliance] [Shaman]
-					i(94336),	-- Tyrannical Gladiator's Footguards of Meditation [Horde] [Shaman]
-					i(91281),	-- Tyrannical Gladiator's Greaves of Alacrity [Alliance] [Paladin]
-					i(94351),	-- Tyrannical Gladiator's Greaves of Alacrity [Horde] [Paladin]
-					i(91283),	-- Tyrannical Gladiator's Greaves of Meditation [Alliance] [Paladin]
-					i(94352),	-- Tyrannical Gladiator's Greaves of Meditation [Horde] [Paladin]
-					i(91218),	-- Tyrannical Gladiator's Sabatons of Alacrity [Alliance] [Hunter, Shaman]
-					i(94359),	-- Tyrannical Gladiator's Sabatons of Alacrity [Horde] [Hunter, Shaman]
-					i(91216),	-- Tyrannical Gladiator's Sabatons of Cruelty [Alliance] [Hunter, Shaman]
-					i(94445),	-- Tyrannical Gladiator's Sabatons of Cruelty [Horde] [Hunter, Shaman]
-					i(91117),	-- Tyrannical Gladiator's Treads of Alacrity [Alliance] [Priest, Mage, Warlock]
-					i(94333),	-- Tyrannical Gladiator's Treads of Alacrity [Horde] [Priest, Mage, Warlock]
-					i(91115),	-- Tyrannical Gladiator's Treads of Cruelty [Alliance] [Priest, Mage, Warlock]
-					i(94402),	-- Tyrannical Gladiator's Treads of Cruelty [Horde] [Priest, Mage, Warlock]
-					i(91119),	-- Tyrannical Gladiator's Treads of Meditation [Alliance] [Priest, Mage, Warlock]
-					i(94468),	-- Tyrannical Gladiator's Treads of Meditation [Horde] [Priest, Mage, Warlock]
-					i(91303),	-- Tyrannical Gladiator's Warboots of Alacrity [Alliance] [Warrior, Paladin, Death Knight]
-					i(94461),	-- Tyrannical Gladiator's Warboots of Alacrity [Horde] [Warrior, Paladin, Death Knight]
-					i(91301),	-- Tyrannical Gladiator's Warboots of Cruelty [Alliance] [Warrior, Paladin, Death Knight]
-					i(94414),	-- Tyrannical Gladiator's Warboots of Cruelty [Horde] [Warrior, Paladin, Death Knight]
-					
+					i(91244),	-- Tyrannical Gladiator's Boots of Alacrity
+					i(94432),	-- Tyrannical Gladiator's Boots of Alacrity
+					i(91337),	-- Tyrannical Gladiator's Boots of Cruelty
+					i(94374),	-- Tyrannical Gladiator's Boots of Cruelty
+					i(91186),	-- Tyrannical Gladiator's Footguards of Alacrity
+					i(94344),	-- Tyrannical Gladiator's Footguards of Alacrity
+					i(91352),	-- Tyrannical Gladiator's Footguards of Alacrity
+					i(94378),	-- Tyrannical Gladiator's Footguards of Alacrity
+					i(91169),	-- Tyrannical Gladiator's Footguards of Meditation
+					i(94476),	-- Tyrannical Gladiator's Footguards of Meditation
+					i(91354),	-- Tyrannical Gladiator's Footguards of Meditation
+					i(94336),	-- Tyrannical Gladiator's Footguards of Meditation
+					i(91281),	-- Tyrannical Gladiator's Greaves of Alacrity
+					i(94351),	-- Tyrannical Gladiator's Greaves of Alacrity
+					i(91283),	-- Tyrannical Gladiator's Greaves of Meditation
+					i(94352),	-- Tyrannical Gladiator's Greaves of Meditation
+					i(91218),	-- Tyrannical Gladiator's Sabatons of Alacrity
+					i(94359),	-- Tyrannical Gladiator's Sabatons of Alacrity
+					i(91216),	-- Tyrannical Gladiator's Sabatons of Cruelty
+					i(94445),	-- Tyrannical Gladiator's Sabatons of Cruelty
+					i(91117),	-- Tyrannical Gladiator's Treads of Alacrity
+					i(94333),	-- Tyrannical Gladiator's Treads of Alacrity
+					i(91115),	-- Tyrannical Gladiator's Treads of Cruelty
+					i(94402),	-- Tyrannical Gladiator's Treads of Cruelty
+					i(91119),	-- Tyrannical Gladiator's Treads of Meditation
+					i(94468),	-- Tyrannical Gladiator's Treads of Meditation
+					i(91303),	-- Tyrannical Gladiator's Warboots of Alacrity
+					i(94461),	-- Tyrannical Gladiator's Warboots of Alacrity
+					i(91301),	-- Tyrannical Gladiator's Warboots of Cruelty
+					i(94414),	-- Tyrannical Gladiator's Warboots of Cruelty
 					-- Rings
-					i(91139),	-- Tyrannical Gladiator's Band of Accuracy [Alliance] [Paladin, Priest, Shaman, Mage, Warlock, Monk, Druid]
-					i(94363),	-- Tyrannical Gladiator's Band of Accuracy [Horde] [Paladin, Priest, Shaman, Mage, Warlock, Monk, Druid]
-					i(91138),	-- Tyrannical Gladiator's Band of Cruelty [Alliance] [Paladin, Priest, Shaman, Mage, Warlock, Monk, Druid]
-					i(94390),	-- Tyrannical Gladiator's Band of Cruelty [Horde] [Paladin, Priest, Shaman, Mage, Warlock, Monk, Druid]
-					i(91140),	-- Tyrannical Gladiator's Band of Meditation [Alliance] [Paladin, Priest, Shaman, Monk, Druid]
-					i(94474),	-- Tyrannical Gladiator's Band of Meditation [Horde] [Paladin, Priest, Shaman, Monk, Druid]
-					i(91106),	-- Tyrannical Gladiator's Ring of Accuracy [Alliance] [Hunter, Rogue, Shaman, Monk, Druid]
-					i(94399),	-- Tyrannical Gladiator's Ring of Accuracy [Horde] [Hunter, Rogue, Shaman, Monk, Druid]
-					i(91105),	-- Tyrannical Gladiator's Ring of Cruelty [Alliance] [Hunter, Rogue, Shaman, Monk, Druid]
-					i(94357),	-- Tyrannical Gladiator's Ring of Cruelty [Horde] [Hunter, Rogue, Shaman, Monk, Druid]
-					i(91417),	-- Tyrannical Gladiator's Signet of Accuracy [Alliance] [Warrior, Paladin, Death Knight]
-					i(94462),	-- Tyrannical Gladiator's Signet of Accuracy [Horde] [Warrior, Paladin, Death Knight]
-					i(91416),	-- Tyrannical Gladiator's Signet of Cruelty [Alliance] [Warrior, Paladin, Death Knight]
-					i(94417),	-- Tyrannical Gladiator's Signet of Cruelty [Horde] [Warrior, Paladin, Death Knight]
+					i(91139),	-- Tyrannical Gladiator's Band of Accuracy
+					i(94363),	-- Tyrannical Gladiator's Band of Accuracy
+					i(91138),	-- Tyrannical Gladiator's Band of Cruelty
+					i(94390),	-- Tyrannical Gladiator's Band of Cruelty
+					i(91140),	-- Tyrannical Gladiator's Band of Meditation
+					i(94474),	-- Tyrannical Gladiator's Band of Meditation
+					i(91106),	-- Tyrannical Gladiator's Ring of Accuracy
+					i(94399),	-- Tyrannical Gladiator's Ring of Accuracy
+					i(91105),	-- Tyrannical Gladiator's Ring of Cruelty
+					i(94357),	-- Tyrannical Gladiator's Ring of Cruelty
+					i(91417),	-- Tyrannical Gladiator's Signet of Accuracy
+					i(94462),	-- Tyrannical Gladiator's Signet of Accuracy
+					i(91416),	-- Tyrannical Gladiator's Signet of Cruelty
+					i(94417),	-- Tyrannical Gladiator's Signet of Cruelty
 				},
-			})),	
-			cr(69161, e(826, { 	-- Oondasta
-				["isRaid"] = true,
+			}),	
+			e(826, { 	-- Oondasta
+				["isWeekly"] = true,
 				["questID"] = 32519,
-				["maps"] = { 507 }, 	-- Isle of Giants
-				["lvl"] = 85,			-- Confirmed by Lucetia November 5, 2018
-				["coord"] = { 49.90, 56.85, 507 },
-				["groups"] = {
+				["isRaid"] = true,
+				["coord"] = { 49.9, 56.8, 507 },
+				["maps"] = { 507 },	-- Isle of Giants
+				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018
+				["cr"] = 69161,	-- Oondasta
+				["g"] = {
 					ach(8123),	-- Millions of Years of Evolution vs. My Fist
 					i(94228),	-- Reins of the Cobalt Primordial Direhorn
 					i(95601, {	-- Shiny Pile of Refuse
@@ -406,26 +409,28 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(95167),	-- Ring of King Kangrom
 					i(95163),	-- Ring of Shamuru
 				},
-			})),
-			cr(72057, e(861, { 	-- Ordos, Fire-God of the Yaungol
+			}),
+			e(861, { 	-- Ordos, Fire-God of the Yaungol
+				["sourceQuests"] = { 33104 },	-- A Pandaren Legend
+				["isWeekly"] = true,
 				["questID"] = 33118,
 				["isRaid"] = true,
-				["u"] = 38,				-- Ordos - Legendary Cloak
-				["lvl"] = 80,			-- Confirmed by Lucetia November 5, 2018
-				["maps"] = { 554 }, 	-- Timeless Isle
-				["coord"] = { 54.98, 17.36, 554 },
-				["sourceQuests"] = {
-					33104,	-- A Pandaren Legend
+				["coord"] = { 54.9, 17.3, 554 },
+				["maps"] = {	-- all Timeless Isle maps
+					554,	-- Timeless Isle
+					555,	-- Cavern of Lost Spirits
 				},
-				["groups"] = {
+				["lvl"] = 80,	-- Confirmed by Lucetia November 5, 2018
+				["cr"] = 72057,	-- Ordos, Fire-God of the Yaungol
+				["u"] = 38,	-- Ordos - Legendary Cloak
+				["g"] = {
 					un(38, ach(8533)),	-- Ordos
 					un(38, i(104273, {	-- Flame-Scarred Cache of Offerings
 						["description"] = "Awarded if you fail your loot roll. Usually contains gold or crafting materials.",
-						["groups"] = {
+						["g"] = {
 							-- NOTE FOR CONTRIBS: Only add items you receive to this. The old listings on WoWHead may be inaccurate or out of date.
 						},
 					})),
-					
 					-- Head
 					un(38, i(105804)),	-- Aladya's Spiritfire Greathelm
 					un(38, i(105810)),	-- Buc-Zakai Burning Hood
@@ -436,14 +441,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					un(38, i(105807)),	-- Magdalena's Murderous Crown
 					un(38, i(105811)),	-- Olivia's Graceful Gaze
 					un(38, i(105803)),	-- Stickney's Grey-Shade Hood
-					
 					-- Neck
 					un(38, i(105766)),	-- Anafielle's Spiked Choker
 					un(38, i(105765)),	-- Bladeforger Necklace
 					un(38, i(105763)),	-- Penate's Perilous Pendant
 					un(38, i(105764)),	-- Rising New Moon Talisman
 					un(38, i(105762)),	-- Smoldering Eye
-					
 					-- Shoulder
 					un(38, i(105795)),	-- Bo He Me's Deathwind Mantle
 					un(38, i(105800)),	-- Firearrow Shoulderpads
@@ -454,7 +457,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					un(38, i(105801)),	-- Spaulders of Dominating Dreams
 					un(38, i(105794)),	-- Starry Spaulders of Durability
 					un(38, i(105802)),	-- Yaungol Deathcult Shoulderguards
-					
 					-- Chest
 					un(38, i(105774)),	-- Catia's Flowing Robes
 					un(38, i(105771)),	-- Chestguard of Pyrrhic Immolation
@@ -465,7 +467,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					un(38, i(105768)),	-- Pamela's Muuscat Wrap
 					un(38, i(105773)),	-- Ulmaas' Robes of Crushing Magma
 					un(38, i(105770)),	-- Zoo-Per's Superior Chestguard
-					
 					-- Wrists
 					un(38, i(105789)),	-- Bjam's Blasting Bracers
 					un(38, i(105792)),	-- Bowflight Wristguard
@@ -476,7 +477,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					un(38, i(105786)),	-- Ordosian Cultist's Bracers
 					un(38, i(105788)),	-- Paululum's Doodled Wraps
 					un(38, i(105785)),	-- Vanguard's Burly Bracers
-					
 					-- Waist
 					un(38, i(105782)),	-- Belt of Glowing Embers
 					un(38, i(105776)),	-- Belt of the Burning Soul
@@ -487,7 +487,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					un(38, i(105777)),	-- Remnar's Ruinous Girdle
 					un(38, i(105781)),	-- Venruki's Venerable Sash
 					un(38, i(105780)),	-- Windflame Girdle
-					
 					-- Legs
 					un(38, i(105758)),	-- Arielle's Ancient Legwraps
 					un(38, i(105754)),	-- Desirae's Dashing Leggings
@@ -498,14 +497,19 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					un(38, i(105756)),	-- Poxleitner's Leggings of Lights
 					un(38, i(105757)),	-- Shipley's Shady Silks
 				},
-			})),
-			cr(62346, e(725, { 	-- Saylis's Warband [Galleon]
-				["isRaid"] = true,
+			}),
+			e(725, { 	-- Saylis's Warband [Galleon]
+				["isWeekly"] = true,
 				["questID"] = 32098,
-				["maps"] = { 376 }, 	-- Valley of the Four Winds
-				["lvl"] = 85,			-- Confirmed by Lucetia November 5, 2018
+				["isRaid"] = true,
 				["coord"] = { 70.79, 63.51, 376 },
-				["groups"] = {
+				["maps"] = {	-- all Valley of the Four Winds maps
+					376,	-- Valley of the Four Winds
+					377,	-- Cavern of Endless Echoes
+				},
+				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018
+				["cr"] = 62346,	-- Galleon
+				["g"] = {
 					ach(6517),	-- Extinction Event
 					i(89783),	-- Son of Galleon's Saddle
 					i(90840, {	-- Marauder's Gleaming Sack of Gold
@@ -521,7 +525,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(86897),	-- Sorcerer's Belt of Final Winter
 						i(86899),	-- Stalker's Cord of Eternal Autumn
 						i(86898),	-- Weaver's Cord of Eternal Autumn
-						
 						-- Bracers
 						i(86850),	-- Darting Damselfly Cuffs
 						i(86844),	-- Gleaming Moth Cuffs
@@ -533,14 +536,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(86848),	-- Serrated Wasp Bracers
 						i(86841),	-- Shining Cicada Bracers
 						i(86843),	-- Smooth Beetle Wristbands
-						
 						-- Trinkets
 						i(86772),	-- Jade Bandit Figurine
 						i(86771),	-- Jade Charioteer Figurine
 						i(86774),	-- Jade Courtesan Figurine
 						i(86773),	-- Jade Magistrate Figurine
 						i(86775),	-- Jade Warlord Figurine
-						
 						-- Pets
 						i(94295),	-- Primal Egg
 						i(44984),	-- Ammen Vale Lashling
@@ -622,23 +623,32 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(90438),	-- Signet of the Bandit Lord
 					i(90434),	-- Steaming Seal of Flame
 				},
-			})),
-			cr(60491, e(691, { 	-- Sha of Anger
-				["achievementID"] = 6480,
-				["isRaid"] = true,
+			}),
+			e(691, { 	-- Sha of Anger
+				["isWeekly"] = true,
 				["questID"] = 32099,
-				["maps"] = { 379 },		-- Kun-Lai Summit
-				["lvl"] = 85,			-- Confirmed by Lucetia November 5, 2018
+				["isRaid"] = true,
 				["coord"] = { 53.53, 65.26, 379 },
-				["groups"] = {
-					{	-- Settle Down, Bro
-						["achievementID"] = 6480,	-- Settle Down, Bro
-					},
-					{
+				["maps"] = {	-- all Kun-Lai Summit maps
+					379,	-- Kun-Lai Summit
+					380,	-- Howlingwind Cavern
+					381,	-- Pranksters' Hollow
+					382,	-- Knucklethump Hole
+					383,	-- The Deeper (upper)
+					384,	-- The Deeper (lower)
+					385,	-- Tomb of Conquerors
+					386,	-- Ruins of Korune (Upper Floor)
+					387,	-- Ruins of Korune (Lower Floor)
+					421,	-- Ruins of Ogudei
+					434,	-- The Ancient Passage
+				},
+				["lvl"] = 85,	-- Confirmed by Lucetia November 5, 2018
+				["cr"] = 60491,	-- Sha of Anger
+				["g"] = {
+					ach(6480),	-- Settle Down, Bro
+					crit(5, {	-- Sha of Anger slain
 						["achievementID"] = 6926,	-- Tranquil Master
-						["criteriaID"] = 5, 	-- 	Sha of Anger slain
-					},
-					
+					}),
 					-- Mounts, Caches, and Quest Items!
 					i(87771),	-- Heavenly Onyx Cloud Serpent
 					i(90839, {	-- Cache of Sha-Touched Gold
@@ -702,10 +712,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(48124),	-- Razormaw Hatchling
 						i(48126),	-- Razzashi Hatchling
 					}),
-					{
-						["itemID"] = 89317,	-- Claw of Anger
-						["questID"] = 31809,	-- Remnants of Anger
-						["groups"] = {
+					q(31809, {	-- Remnants of Anger
+						["provider"] = { "i", 89317 },	-- Claw of Anger
+						["g"] = {
 							i(90912),	-- Angerforged Stompers
 							i(90914),	-- Boots of Raging Haze
 							i(90907),	-- Boots of Unbreakable Umbrage
@@ -716,9 +725,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(90913),	-- Sandals of the Shadow
 							i(90906),	-- Treads of Ardent Antagonism
 						},
-					},
-					
-					-- Necks (Hoorah!)
+					}),
+					-- Necks
 					i(84892),	-- Malevolent Gladiator's Choker of Accuracy
 					i(84891),	-- Malevolent Gladiator's Choker of Proficiency
 					i(84889),	-- Malevolent Gladiator's Necklace of Proficiency
@@ -726,7 +734,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(84886),	-- Malevolent Gladiator's Pendant of Alacrity
 					i(84887),	-- Malevolent Gladiator's Pendant of Cruelty
 					i(84888),	-- Malevolent Gladiator's Pendant of Meditation
-					
 					-- Back
 					i(84804),	-- Malevolent Gladiator's Cape of Cruelty
 					i(84805),	-- Malevolent Gladiator's Cape of Prowess
@@ -735,7 +742,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(84801),	-- Malevolent Gladiator's Drape of Cruelty
 					i(84802),	-- Malevolent Gladiator's Drape of Meditation
 					i(84803),	-- Malevolent Gladiator's Drape of Prowess
-					
 					-- Wrists
 					i(84984),	-- Malevolent Gladiator's Armbands of Meditation [Shaman]
 					i(84983),	-- Malevolent Gladiator's Armbands of Prowess [Shaman]
@@ -752,7 +758,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(84978),	-- Malevolent Gladiator's Cuffs of Prowess [Priest, Mage, Warlock]
 					i(84981),	-- Malevolent Gladiator's Wristguards of Accuracy [Hunter, Shaman]
 					i(84980),	-- Malevolent Gladiator's Wristguards of Alacrity [Hunter, Shaman]
-					
 					-- Hands
 					i(85308),	-- Eternal Blossom Gloves
 					i(85312),	-- Eternal Blossom Grips
@@ -795,7 +800,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(85347),	-- White Tiger Gloves
 					i(85322),	-- White Tiger Handguards
 					i(85297),	-- Yaungol Slayer's Gloves
-					
 					-- Waists
 					i(84960),	-- Malevolent Gladiator's Belt of Cruelty [Monk, Druid]
 					i(84953),	-- Malevolent Gladiator's Belt of Meditation [Monk, Druid]
@@ -812,7 +816,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(84947),	-- Malevolent Gladiator's Waistband of Cruelty [Rogue, Monk, Druid]
 					i(84959),	-- Malevolent Gladiator's Waistguard of Cruelty [Shaman]
 					i(84946),	-- Malevolent Gladiator's Waistguard of Meditation [Shaman]
-					
 					-- Legs
 					i(85382),	-- Eternal Blossom Breeches
 					i(85306),	-- Eternal Blossom Leggings
@@ -837,7 +840,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(85320),	-- White Tiger Legguards
 					i(85340),	-- White Tiger Legplates
 					i(85295),	-- Yaungol Slayer's Legguards
-					
 					-- Feet
 					i(84809),	-- Malevolent Gladiator's Boots of Alacrity [Rogue, Monk, Druid]
 					i(84808),	-- Malevolent Gladiator's Boots of Cruelty [Rogue, Monk, Druid]
@@ -854,8 +856,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(84816),	-- Malevolent Gladiator's Treads of Meditation [Priest, Mage, Warlock]
 					i(84822),	-- Malevolent Gladiator's Warboots of Alacrity [Warrior, Paladin, Death Knight]
 					i(84810),	-- Malevolent Gladiator's Warboots of Cruelty [Warrior, Paladin, Death Knight]
-					
-					-- Rings!!! (OMG!)
+					-- Rings
 					i(84824),	-- Malevolent Gladiator's Band of Accuracy
 					i(84823),	-- Malevolent Gladiator's Band of Cruelty
 					i(84825),	-- Malevolent Gladiator's Band of Meditation
@@ -864,93 +865,90 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(84829),	-- Malevolent Gladiator's Signet of Accuracy
 					i(84828),	-- Malevolent Gladiator's Signet of Cruelty
 				},
-			})),
+			}),
 			n(-10061, {	-- The Four Celestials
+				["isWeekly"] = true,
 				["questID"] = 33117,
-				["maps"] = { 554 },	-- Timeless Isle
+				["maps"] = {	-- all Timeless Isle maps
+					554,	-- Timeless Isle
+					555,	-- Cavern of Lost Spirits
+				},
 				["isRaid"] = true,
-				["lvl"] = 80,		-- Confirmed by Lucetia November 5, 2018
 				["coord"] = { 38.87, 55.29, 554 },
+				["lvl"] = 80,	-- Confirmed by Lucetia November 5, 2018
 				["crs"] = {
 					71952,	-- Chi-Ji, The Red Crane
 					71954,	-- Niuzao, The Black Ox
 					71953,	-- Xuen, The White Tiger
 					71955,	-- Yu'lon, The Jade Serpent
 				},
-				["groups"] = {
+				["g"] = {
 					ach(8535, {	-- Celestial Challenge
-						{
+						crit(1, {	-- Chi-Ji slain
 							["encounterID"] = 857,	-- Chi-Ji, The Red Crane
-							["criteriaID"] = 1,	-- Chi-Ji slain
 							["isRaid"] = true,
-						},
-						{
+						}),
+						crit(2, {	-- Niuzao slain
 							["encounterID"] = 859,	-- Niuzao, The Black Ox
-							["criteriaID"] = 2,	-- Niuzao slain
 							["isRaid"] = true,
-						},
-						{
+						}),
+						crit(3, {	-- Xuen slain
 							["encounterID"] = 860,	-- Xuen, The White Tiger
-							["criteriaID"] = 3,	-- Xuen slain
 							["isRaid"] = true,
-						},
-						{
+						}),
+						crit(4, {	-- Yu'lon slain
 							["encounterID"] = 858,	-- Yu'lon, The Jade Serpent
-							["criteriaID"] = 4,	-- Yu'lon slain
 							["isRaid"] = true,
-						},
+						}),
 					}),
-					
 					-- Caches / Boxes
 					i(104272, {	-- Celestial Treasure Box
-						["g"] = {
-							i(105824),	-- Aeth's Swiftcinder Cloak
-							i(105816),	-- Brave Niunai's Cloak
-							i(105812),	-- Cape of the Alpha
-							i(105818),	-- Crimson Gauntlets of Death
-							i(105815),	-- Drape of the Omega
-							i(105823),	-- Gauntlets of Discarded Time
-							i(105813),	-- Kalaena's Arcane Handwraps
-							i(105819),	-- Keengrip Arrowpullers
-							i(105820),	-- Marco's Crackling Gloves
-							i(105821),	-- Romy's Reliable Grips
-							i(105814),	-- Seebo's Sainted Touch
-							i(105817),	-- Siid's Silent Stranglers
-							i(105825),	-- Turtleshell Greatcloak
-							i(105822),	-- Zoid's Molten Gauntlets	
-							i(44984),	-- Ammen Vale Lashling
-							i(54436),	-- Blue Clockwork Rocket Bot
-							i(44970),	-- Dun Morogh Cub
-							i(44973),	-- Durotar Scorpion
-							i(67282),	-- Elementium Geode
-							i(44974),	-- Elwynn Lamb
-							i(44982),	-- Enchanted Broom
-							i(64403),	-- Fox Kit
-							i(43698),	-- Giant Sewer Rat
-							i(45002),	-- Mechanopeep
-							i(44980),	-- Mulgore Hatchling
-							i(94295),	-- Primal Egg
-							i(69992),	-- Shimmering Wyrmling
-							i(44965),	-- Teldrassil Sproutling
-							i(69991),	-- Tiny Sporebat
-							i(44971),	-- Tirisfal Batling
-							i(10360),	-- Black Kingsnake
-							i(29960),	-- Captured Firefly
-							i(8491),	-- Cat Carrier (Black Tabby)
-							i(46398),	-- Cat Carrier (Calico Cat)
-							i(8487),	-- Cat Carrier (Orange Tabby)
-							i(8488),	-- Cat Carrier (Silver Tabby)
-							i(10822),	-- Dark Whelpling
-							i(29953),	-- Golden Dragonhawk Hatchling
-							i(48116),	-- Gundrak Hatchling
-							i(48118),	-- Leaping Hatchling
-							i(48120),	-- Obsidian Hatchling
-							i(8496),	-- Parrot Cage (Cockatiel)
-							i(8492),	-- Parrot Cage (Green Wing Macaw)
-							i(8495),	-- Parrot Cage (Senegal)
-							i(48124),	-- Razormaw Hatchling
-							i(48126),	-- Razzashi Hatchling
-						},
+						i(105824),	-- Aeth's Swiftcinder Cloak
+						i(105816),	-- Brave Niunai's Cloak
+						i(105812),	-- Cape of the Alpha
+						i(105818),	-- Crimson Gauntlets of Death
+						i(105815),	-- Drape of the Omega
+						i(105823),	-- Gauntlets of Discarded Time
+						i(105813),	-- Kalaena's Arcane Handwraps
+						i(105819),	-- Keengrip Arrowpullers
+						i(105820),	-- Marco's Crackling Gloves
+						i(105821),	-- Romy's Reliable Grips
+						i(105814),	-- Seebo's Sainted Touch
+						i(105817),	-- Siid's Silent Stranglers
+						i(105825),	-- Turtleshell Greatcloak
+						i(105822),	-- Zoid's Molten Gauntlets	
+						i(44984),	-- Ammen Vale Lashling
+						i(54436),	-- Blue Clockwork Rocket Bot
+						i(44970),	-- Dun Morogh Cub
+						i(44973),	-- Durotar Scorpion
+						i(67282),	-- Elementium Geode
+						i(44974),	-- Elwynn Lamb
+						i(44982),	-- Enchanted Broom
+						i(64403),	-- Fox Kit
+						i(43698),	-- Giant Sewer Rat
+						i(45002),	-- Mechanopeep
+						i(44980),	-- Mulgore Hatchling
+						i(94295),	-- Primal Egg
+						i(69992),	-- Shimmering Wyrmling
+						i(44965),	-- Teldrassil Sproutling
+						i(69991),	-- Tiny Sporebat
+						i(44971),	-- Tirisfal Batling
+						i(10360),	-- Black Kingsnake
+						i(29960),	-- Captured Firefly
+						i(8491),	-- Cat Carrier (Black Tabby)
+						i(46398),	-- Cat Carrier (Calico Cat)
+						i(8487),	-- Cat Carrier (Orange Tabby)
+						i(8488),	-- Cat Carrier (Silver Tabby)
+						i(10822),	-- Dark Whelpling
+						i(29953),	-- Golden Dragonhawk Hatchling
+						i(48116),	-- Gundrak Hatchling
+						i(48118),	-- Leaping Hatchling
+						i(48120),	-- Obsidian Hatchling
+						i(8496),	-- Parrot Cage (Cockatiel)
+						i(8492),	-- Parrot Cage (Green Wing Macaw)
+						i(8495),	-- Parrot Cage (Senegal)
+						i(48124),	-- Razormaw Hatchling
+						i(48126),	-- Razzashi Hatchling
 					}),
 					-- Neck
 					i(103515),	-- Prideful Gladiator's Choker of Accuracy
@@ -967,7 +965,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(103367),	-- Prideful Gladiator's Pendant of Cruelty
 					i(102736),	-- Prideful Gladiator's Pendant of Meditation
 					i(103369),	-- Prideful Gladiator's Pendant of Meditation
-					
 					-- Back
 					i(103343),	-- Prideful Gladiator's Cape of Cruelty
 					i(102705),	-- Prideful Gladiator's Cape of Cruelty
@@ -983,7 +980,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(102756),	-- Prideful Gladiator's Drape of Meditation
 					i(102772),	-- Prideful Gladiator's Drape of Prowess
 					i(103361),	-- Prideful Gladiator's Drape of Prowess
-					
 					-- Wrists
 					i(102624),	-- Prideful Gladiator's Armbands of Meditation
 					i(103484),	-- Prideful Gladiator's Armbands of Meditation
@@ -1015,7 +1011,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(102753),	-- Prideful Gladiator's Wristguards of Accuracy
 					i(102688),	-- Prideful Gladiator's Wristguards of Alacrity
 					i(103414),	-- Prideful Gladiator's Wristguards of Alacrity
-					
 					-- Hands
 					i(99160),	-- Chronomancer Gloves
 					i(99193),	-- Gauntlets of Cyclopean Dread
@@ -1076,7 +1071,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(103421),	-- Prideful Gladiator's Silk Handguards
 					i(103398),	-- Prideful Gladiator's Wyrmhide Gloves
 					i(102696),	-- Prideful Gladiator's Wyrmhide Gloves
-					
 					-- Belts
 					i(103395),	-- Prideful Gladiator's Belt of Cruelty
 					i(102694),	-- Prideful Gladiator's Belt of Cruelty
@@ -1108,7 +1102,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(103495),	-- Prideful Gladiator's Waistguard of Cruelty
 					i(103480),	-- Prideful Gladiator's Waistguard of Meditation
 					i(102668),	-- Prideful Gladiator's Waistguard of Meditation
-					
 					-- Legs
 					i(99165),	-- Breeches of the Shattered Vale
 					i(99162),	-- Chronomancer Leggings
@@ -1169,7 +1162,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(103423),	-- Prideful Gladiator's Silk Trousers
 					i(102767),	-- Prideful Gladiator's Wyrmhide Legguards
 					i(103400),	-- Prideful Gladiator's Wyrmhide Legguards
-					
 					-- Feet
 					i(103427),	-- Prideful Gladiator's Boots of Alacrity
 					i(102716),	-- Prideful Gladiator's Boots of Alacrity
@@ -1201,7 +1193,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(102745),	-- Prideful Gladiator's Warboots of Alacrity
 					i(103457),	-- Prideful Gladiator's Warboots of Cruelty
 					i(102698),	-- Prideful Gladiator's Warboots of Cruelty
-					
 					-- Rings
 					i(103371),	-- Prideful Gladiator's Band of Accuracy
 					i(102649),	-- Prideful Gladiator's Band of Accuracy

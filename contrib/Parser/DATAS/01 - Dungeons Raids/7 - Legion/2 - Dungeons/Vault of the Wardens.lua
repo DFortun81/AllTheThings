@@ -4,29 +4,30 @@
 
 _.Instances = { tier(7, {	-- Legion
 	inst(707, {	-- Vault of the Wardens
+		["coord"] = { 48.0, 82.1, 630 },
 		["maps"] = { 710, 711, 712 },
-		["groups"] = {
+		["g"] = {
 			n(-17, {
 				i(127877, {	-- Bendy Glass Tubes
 					["provider"] = { "n", 105824 },	-- Grimoira
 					["requireSkill"] = 171,	-- Alchemy
-					["groups"] = {
+					["g"] = {
 						q(39343),	-- Vault of the Wardens: Bendy Glass Tubes
 					},
 				}),
 			}),
 			n(-34, {	-- World Quests
 				q(42924, {	-- Vault of the Wardens: A Grim Matter
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["collectible"] = false,
 				}),
 				q(42926, {	-- Vault of the Wardens: How'd He Get Up There?
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["collectible"] = false,
 				}),
 				q(42922, {	-- Vault of the Wardens: Startup Sequence
+					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["collectible"] = false,
 				}),
 			}),
 			d(1, {	-- Normal
@@ -103,7 +104,7 @@ _.Instances = { tier(7, {	-- Legion
 			}),
 			d(2, {	-- Heroic
 				["lvl"] = 110,
-				["groups"] = {
+				["g"] = {
 					cr(95885, e(1467, {	-- Tirathon Saltheril
 						i(134369),	-- Felbat Leather Boots
 						i(137509),	-- Glaivemaster's Studded Grips
@@ -181,7 +182,7 @@ _.Instances = { tier(7, {	-- Legion
 			}),
 			d(23, {	-- Mythic
 				["lvl"] = 110,
-				["groups"] = {
+				["g"] = {
 					n(-4, {	-- Achievements
 						ach(10707, {	-- A Specter, Illuminated
 							["description"] = "After killing |cFFFFD700Cordana Felsong|r, take Elune's Light to the hallway connecting |cFFFFD700Glazer|r and |cFFFFD700Ash'golm|r and follow the spirit until it reaches the end of the hall. Kill the spectre that spawns, then repeat the process 2 more times.",

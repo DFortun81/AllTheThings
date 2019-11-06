@@ -4,6 +4,7 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(742, {	-- Blackwing Lair
+		["order"] = "04",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 50,

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ATT-WoWHeadQuestHarvester
 // @namespace    https://github.com/DFortun81/AllTheThings
-// @version      0.3
+// @version      0.4
 // @description  Copies the results of a WoWhead quest search into an AllTheThings-compatible quest listing
 // @author       Pr3vention
 // @match        https://www.wowhead.com/quests*
@@ -164,17 +164,17 @@ function StartHarvest() {
                 if(data['qgs']) {
                     if(data['qgs'].length == 1) {
                         if(data['qgs'][0].type == 'npc') {
-                            str = str + '\t["qg"] = ' + data['qgs'][0].id + ',\t-- ' + data['qgs'][0].name + '\n';
+                            str = str + '\t["provider"] = { "n", ' + data['qgs'][0].id + ' },\t-- ' + data['qgs'][0].name + '\n';
                         } else if(data['qgs'][0].type == 'object') {
-                            str = str + '\t--["objectID"] = ' + data['qgs'][0].id + ',\t-- ' + data['qgs'][0].name + '\n';
+                            str = str + '\t["provider"] = { "o", ' + data['qgs'][0].id + ' },\t-- ' + data['qgs'][0].name + '\n';
                         }
                     } else if(data['qgs'].length > 1) {
-                        str = str + '\t["qgs"] = {\n';
+                        str = str + '\t["providers"] = {\n';
                         data['qgs'].forEach(function(e) {
                             if(e.type == 'npc') {
-                                str = str + '\t\t' + e.id + ',\t-- ' + e.name + '\n';
+                                str = str + '\t\t{ "n", ' + data['qgs'][0].id + ' },\t-- ' + data['qgs'][0].name + '\n';
                             } else {
-                                str = str + '\t--["objectID"] = ' + e.id + ',\t-- ' + e.name + '\n';
+                                str = str + '\t\t{ "o", ' + data['qgs'][0].id + ' },\t-- ' + data['qgs'][0].name + '\n';
                             }
                         });
                         str = str + '\t},\n';

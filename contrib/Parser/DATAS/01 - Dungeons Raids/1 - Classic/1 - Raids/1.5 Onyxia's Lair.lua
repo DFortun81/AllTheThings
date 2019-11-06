@@ -4,6 +4,7 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(760, { 	-- Onyxia's Lair
+		["order"] = "02",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 60,

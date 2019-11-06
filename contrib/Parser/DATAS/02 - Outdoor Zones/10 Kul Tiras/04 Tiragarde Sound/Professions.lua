@@ -29,6 +29,16 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
+				prof(755, {	-- Jewelcrafting
+					q(55578, {	-- Tol Dagor: Jewel of the Tides (H)
+						["provider"] = { "n", 150893 },	-- Shrine of the Sea
+						["coord"] = { 46.4, 23.5, 942 },
+						["modelScale"] = 2,
+						["sourceQuest"] = 49599,	-- The Missing Chapter (H)
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = HORDE_ONLY,
+					}),
+				}),
 				prof(186, {	-- Mining
 					q(52044, {	-- An Exceptional Platinum Shard
 						["requireSkill"] = 186,	-- Mining

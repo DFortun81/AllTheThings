@@ -107,6 +107,7 @@ _.Zones =
 					["sourceQuest"] = 13074,	-- Hope Within the Emerald Nightmare
 				}),
 				q(28343, {	-- The Breath of Cenarius
+					["sourceQuests"] = { 28289 },	-- Moonglade Calls
 					["provider"] = { "n", 12042 },	-- Loganaar
 					["lvl"] = 47,
 					["coord"] = { 52.4, 40.4, 80 },

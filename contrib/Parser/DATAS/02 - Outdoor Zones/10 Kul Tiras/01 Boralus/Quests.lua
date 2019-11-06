@@ -4,53 +4,168 @@
 
 _.Zones =
 {
-	m(876, { 	-- Kul'Tiras
+	m(876, {	-- Kul'Tiras
 		m(1161, {	-- Boralus
 			n(-17, {	-- Quests
-				n(-9, {	-- PvP
+				n(-9, {		-- PvP
 					["lvl"] = 120,
 					["g"] = {
+						q(54978, {	-- Against Overwhelming Odds
+							["provider"] = { "n", 135614 },	-- Master Mathias Shaw
+							["isWeekly"] = true,
+							["coord"] = { 70.4, 27.0, 1161 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 120,
+							["g"] = {
+								i(167100, {	-- Alliance Champion's Cache
+									["modID"] = 53,	-- ilvl 415
+									["sym"] = {
+										{ "select", "npcID", -10057 },	-- War Effort
+										{ "pop" },	-- Discard the War Effort Header and acquire the children.
+										{ "where", "mapID", 14 },	-- Arathi Highlands
+										{ "pop" },	-- Discard the Map Header and acquire the children.
+										{ "where", "npcID", -1 },	-- Select the Common Boss Drop Header.
+										{ "pop" },	-- Discard the Common Boss Drop Header and acquire the children.
+										{ "postprocess" },	-- Post Process the search results to ensure no duplicate keys exist.
+										{ "modID", 53 },	-- iLvl 415
+									},
+								}),
+							},
+						}),
 						q(52944, { 	-- Call to Arms: Drustvar
+							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 							["isWeekly"] = true,
 							["coord"] = { 56.4, 26.0, 1161 },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
+							["lvl"] = 120,
 							["g"] = {
-								i(164261, { 	-- Steel Strongbox
-									i(137642),	-- Mark of Honor
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
+								}),
+							},
+						}),
+						q(56649, {	-- Call to Arms: Mechagon
+							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
+							["isWeekly"] = true,
+							["coord"] = { 56.4, 26.0, 1161 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 120,
+							["g"] = {
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
+								}),
+							},
+						}),
+						q(56648, {	-- Call to Arms: Nazjatar
+							["sourceQuests"] = { 56156 },	-- A Tempered Blade
+							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
+							["isWeekly"] = true,
+							["coord"] = { 56.4, 26.0, 1161 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 120,
+							["g"] = {
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
 								}),
 							},
 						}),
 						q(52949, { 	-- Call to Arms: Nazmir
+							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 							["isWeekly"] = true,
 							["coord"] = { 56.4, 26.0, 1161 },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
+							["lvl"] = 120,
 							["g"] = {
-								i(164261, { 	-- Steel Strongbox
-									i(137642),	-- Mark of Honor
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
 								}),
 							},
 						}),
 						q(52782, { 	-- Call to Arms: Stormsong Valley
+							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 							["isWeekly"] = true,
 							["coord"] = { 56.4, 26.0, 1161 },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
+							["lvl"] = 120,
 							["g"] = {
-								i(164261, { 	-- Steel Strongbox
-									i(137642),	-- Mark of Honor
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
+								}),
+							},
+						}),
+						q(52948, {	-- Call to Arms: Tiragarde Sound
+							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
+							["isWeekly"] = true,
+							["coord"] = { 56.2, 26.0, 1161 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 120,
+							["g"] = {
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
 								}),
 							},
 						}),
 						q(52950, { 	-- Call to Arms: Vol'dun
+							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 							["isWeekly"] = true,
 							["coord"] = { 56.4, 26.0, 1161 },
 							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
+							["lvl"] = 120,
 							["g"] = {
-								i(164261, { 	-- Steel Strongbox
-									i(137642),	-- Mark of Honor
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
+								}),
+							},
+						}),
+						q(52951, {	-- Call to Arms: Zuldazar
+							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
+							["isWeekly"] = true,
+							["coord"] = { 56.4, 26.0, 1161 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 120,
+							["g"] = {
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
 								}),
 							},
 						}),
@@ -63,6 +178,27 @@ _.Zones =
 								i(163604, {	-- Net-O-Matic 5000
 									["f"] = 55,	-- Consumable
 								}),
+							},
+						}),
+						q(53075, {	-- Dueler's Guild
+							["sourceQuests"] = { 53073 },	-- Hook Point Investigation
+							["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
+							["coord"] = { 56.3, 26.0, 1161 },
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(53073, {	-- Hook Point Investigation
+							["provider"] = { "n", 135614 },	-- Master Mathias Shaw
+							["coord"] = { 70.4, 26.9, 1161 },
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(56499, {	-- Storming the Battlefields!
+							["provider"] = { "n", 143560 },	-- Marshal Gabriel
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 56.4, 25.8, 1161 },
+							["g"] = {
+								i(168920),	-- Azerite-Encrusted Timequartz (Rank 1)
+								i(168442),	-- Roiling Blood of the Vanquished (Rank 1)
+								i(168578),	-- Sphere of Suppressed Force (Rank 1)
 							},
 						}),
 					},
@@ -154,6 +290,15 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 122370 },	-- Cyrus Crestfall
 				}),
+				q(55142, {	-- For the Alliance
+					["provider"] = { "n", 150941 },	-- Katherine Proudmoore
+					["coord"] = { 67.8, 21.8, 1161 },
+					["races"] = { 32 },	-- Kul Tiran
+					["lvl"] = 20,
+					["g"] = {
+						i(165010),	-- Tabard of Kul Tiras
+					},
+				}),
 				q(53765, {	-- His Eye Upon You
 					["sourceQuest"] = 54126,	-- Twist the Knife [Alliance]
 					["description"]	= "You only get the toy if you choose to cleanse the gift.",
@@ -213,12 +358,6 @@ _.Zones =
 						i(155031),	-- Sea Raider's Greathelm
 						i(155020),	-- Sea Raider's Breastplate
 					},
-				}),
-				q(56261, {	-- Return to the Heart
-					["isBreadcrumb"] = true,
-					["coord"] = { 74.8, 15.2, 1161 },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
 				}),
 				q(51487, {	-- Searching for Answers
 					["sourceQuests"] = { 47952 },	-- The Missing Fleet
@@ -366,14 +505,6 @@ _.Zones =
 					["coord"] = { 67.8, 26.2, 1161 },	-- Boralus
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 143851 },	-- Kelsey Steelspark
-				}),
-				q(56185, {	-- Whispers of N'zoth
-					["sourceQuests"] = { 57002 },	-- Old Soldier
-					["description"] = "According to a CM, this quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
-					["provider"] = { "n", 154464 },	-- Earthen Guardian
-					["coord"] = { 74.9, 15.1, 1161 },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 120,
 				}),
 				o(311218, {	-- Xal'atath, Blade of the Black Empire
 					q(54113, {	-- Every Little Death Helps

@@ -43,6 +43,16 @@ _.Zones =
 						},
 					}),
 				}),
+				prof(755, {	-- Jewelcrafting
+					q(55581, {	-- Sun-Speckled Dunes (A)
+						["provider"] = { "n", 150895 },	-- Shrine of the Sands
+						["coord"] = { 44.2, 38.0, 864 },
+						["modelScale"] = 2,
+						["sourceQuest"] = 49584,	-- The Missing Chapter (A)
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
 				n(-188, {	-- Mining
 					q(52044, {	-- An Exceptional Platinum Shard
 						["requireSkill"] = 186,	-- Mining

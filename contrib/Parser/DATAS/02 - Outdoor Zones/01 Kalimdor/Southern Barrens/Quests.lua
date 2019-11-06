@@ -8,6 +8,7 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(25183, {	-- ...And Bury the Rest
 					["provider"] = { "n", 39118 },	-- General Twinbraid
+					["coord"] = { 43.5, 78.3, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25174,	-- Twinbraid Needs to Know
 				}),
@@ -19,6 +20,7 @@ _.Zones =
 				}),
 				q(25022, {	-- A Failure to Communicate
 					["provider"] = { "n", 38871 },	-- Corporal Teegan
+					["coord"] = { 56.1, 42.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24543, {	-- A Family Divided
@@ -30,10 +32,12 @@ _.Zones =
 				}),
 				q(25084, {	-- A Growing Threat
 					["provider"] = { "n", 37835 },	-- Dorn Redearth
+					["coord"] = { 45.0, 85.2, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25045, {	-- A Line in the Dirt
 					["provider"] = { "n", 38323 },	-- General Hawthorne
+					["coord"] = { 49.8, 49.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(53301),	-- Taurajo Leggings
@@ -62,10 +66,11 @@ _.Zones =
 				}),
 				q(24570, {	-- Adder Subtraction
 					["provider"] = { "n", 38314 },	-- Muyoh
-					["coord"] = { 50.3, 40.3, 199 },
+					["coord"] = { 50.3, 40.4, 199 },
 				}),
 				q(24944, {	-- Back in the Fight
 					["provider"] = { "n", 38804 },	-- Tolliver Houndstooth
+					["coord"] = { 66.9, 46.7, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 24941,	-- Langridge Shot
 				}),
@@ -76,6 +81,7 @@ _.Zones =
 				}),
 				q(25153, {	-- Bael'dun Rescue
 					["provider"] = { "n", 39218 },	-- Bael'dun Survivor
+					["coord"] = { 49.3, 86.9, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25120,	-- Marley's Final Flight
 					["g"] = {
@@ -87,6 +93,7 @@ _.Zones =
 				}),
 				q(25080, {	-- Batteries Not Yet Included
 					["provider"] = { "n", 39084 },	-- Mizzy Pistonhammer
+					["coord"] = { 49.4, 67.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25079,	-- Powder Play
 					["g"] = {
@@ -99,10 +106,11 @@ _.Zones =
 				}),
 				q(24565, {	-- Biological Intervention
 					["provider"] = { "n", 37570 },	-- Naralex
-					["coord"] = { 50.4, 40.6, 199 },
+					["coord"] = { 50.4, 40.7, 199 },
 				}),
 				q(24606, {	-- Blood of the Barrens
 					["provider"] = { "i", 49932 },	-- Carved Boar Idol
+					["coord"] = { 42.2, 83.4, 199 },
 					["crs"] = {
 						37560,	-- Razormane Pathfinder
 						37661,	-- Razormane Seer
@@ -111,6 +119,7 @@ _.Zones =
 				}),
 				q(24863, {	-- Breaking the Siege
 					["provider"] = { "n", 38378 },	-- Commander Walpole
+					["coord"] = { 29.8, 9.00, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24591, {	-- Changing of the Gar'dul
@@ -133,10 +142,12 @@ _.Zones =
 				}),
 				q(25081, {	-- Claim the Battlescar
 					["provider"] = { "n", 39083 },	-- Commander Roberts
+					["coord"] = { 49.1, 66.9, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25057, {	-- Clap 'Em In Irons
 					["provider"] = { "n", 38323 },	-- General Hawthorne
+					["coord"] = { 49.8, 49.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25045,	-- A Line in the Dirt
@@ -176,10 +187,12 @@ _.Zones =
 				}),
 				q(25104, {	-- Digsite Status
 					["provider"] = { "n", 39118 },	-- General Twinbraid
+					["coord"] = { 43.5, 78.3, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25044, {	-- Diplomacy By Another Means
 					["provider"] = { "n", 38986 },	-- Ambassador Gaines
+					["coord"] = { 49.9, 49.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25022,	-- A Failure to Communicate
 					["g"] = {
@@ -218,6 +231,7 @@ _.Zones =
 				}),
 				q(25108, {	-- Feegly the Exiled
 					["provider"] = { "n", 39155 },	-- Marley Twinbraid
+					["coord"] = { 47.1, 88.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25104,	-- Digsite Status
 					["g"] = {
@@ -229,15 +243,17 @@ _.Zones =
 				}),
 				q(26908, {	-- Feeling Thorny
 					["provider"] = { "n", 37812 },	-- Mahka
-					["lvl"] = 30,
 					["coord"] = { 45.1, 85.4, 199 },
+					["lvl"] = 30,
 				}),
 				q(25043, {	-- Fields of Blood
 					["provider"] = { "n", 38323 },	-- General Hawthorne
+					["coord"] = { 49.8, 49.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25008, {	-- Filthy Animals
 					["provider"] = { "n", 38873 },	-- Goucho
+					["coord"] = { 56.1, 42.4, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(53276),	-- Hecklefang Hide Belt
@@ -247,6 +263,7 @@ _.Zones =
 				}),
 				q(25086, {	-- Firestone Point
 					["provider"] = { "n", 39085 },	-- Logan Talonstrike
+					["coord"] = { 49.1, 67.8, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25082,	-- Working the Bugs Out
 				}),
@@ -269,6 +286,7 @@ _.Zones =
 				}),
 				q(25186, {	-- Futile Resistance
 					["provider"] = { "n", 38380 },	-- Janice Mattingly
+					["coord"] = { 34.9, 9.50, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						24863,	-- Breaking the Siege
@@ -282,11 +300,13 @@ _.Zones =
 				}),
 				q(25106, {	-- Hands Off Me Dig!
 					["provider"] = { "n", 39155 },	-- Marley Twinbraid
+					["coord"] = { 47.1, 88.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25104,	-- Digsite Status
 				}),
 				q(25151, {	-- He Needs Ale!
 					["provider"] = { "n", 39188 },	-- Marley Twinbraid
+					["coord"] = { 49.2, 86.7, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25120,	-- Marley's Final Flight
 				}),
@@ -321,24 +341,28 @@ _.Zones =
 				}),
 				q(25182, {	-- Kill 'em All!
 					["provider"] = { "n", 39118 },	-- General Twinbraid
+					["coord"] = { 43.5, 78.3, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25174,	-- Twinbraid Needs to Know
 				}),
 				q(24941, {	-- Langridge Shot
 					["provider"] = { "n", 38620 },	-- Thomas Paxton
+					["coord"] = { 67.0, 46.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24571, {	-- Lashvine Seeds
 					["provider"] = { "n", 38314 },	-- Muyoh
-					["coord"] = { 50.3, 40.3, 199 },
+					["coord"] = { 50.3, 40.4, 199 },
 				}),
 				q(24948, {	-- Lifting the Siege
 					["provider"] = { "n", 38620 },	-- Thomas Paxton
+					["coord"] = { 67.0, 46.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 24943,	-- Re-Take the Courtyard
 				}),
 				q(25041, {	-- Lion's Pride
 					["provider"] = { "n", 39003 },	-- Sam Trawley
+					["coord"] = { 49.7, 50.4, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24552, {	-- Lion's Pride
@@ -354,11 +378,13 @@ _.Zones =
 				}),
 				q(25015, {	-- Make 'em Squeal
 					["provider"] = { "n", 38871 },	-- Corporal Teegan
+					["coord"] = { 56.1, 42.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25036,	-- Teegan's Troubles
 				}),
 				q(25085, {	-- Mangletooth
 					["provider"] = { "n", 37835 },	-- Dorn Redearth
+					["coord"] = { 45.0, 85.3, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25084,	-- A Growing Threat
 					["g"] = {
@@ -381,6 +407,7 @@ _.Zones =
 				}),
 				q(25042, {	-- Marching On Our Stomachs
 					["provider"] = { "n", 39003 },	-- Sam Trawley
+					["coord"] = { 49.7, 50.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25041,	-- Lion's Pride
 					["g"] = {
@@ -393,6 +420,7 @@ _.Zones =
 				}),
 				q(25120, {	-- Marley's Final Flight
 					["provider"] = { "n", 39155 },	-- Marley Twinbraid
+					["coord"] = { 47.1, 88.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25108,	-- Feegly the Exiled
@@ -401,6 +429,7 @@ _.Zones =
 				}),
 				q(25074, {	-- Meet Me at Triumph
 					["provider"] = { "n", 38323 },	-- General Hawthorne
+					["coord"] = { 49.8, 49.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25057,	-- Clap 'em In Irons
 				}),
@@ -418,6 +447,7 @@ _.Zones =
 				}),
 				q(25102, {	-- No Bull
 					["provider"] = { "n", 39154 },	-- Hurlston Stonesthrow
+					["coord"] = { 43.4, 78.3, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(53298),	-- Stonesthrow Sword
@@ -433,10 +463,12 @@ _.Zones =
 				}),
 				q(25075, {	-- Pick-a-Part
 					["provider"] = { "n", 39084 },	-- Mizzy Pistonhammer
+					["coord"] = { 49.4, 67.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25079, {	-- Powder Play
 					["provider"] = { "n", 39084 },	-- Mizzy Pistonhammer
+					["coord"] = { 49.4, 67.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25075,	-- Pick-a-Part
 				}),
@@ -456,19 +488,22 @@ _.Zones =
 						i(131371),  -- Steel-Patched Armbands
 					},
 				}),
-				q(24934, {	-- Repel Boarders!
-					["provider"] = { "n", 38619 },	-- Admiral Aubrey
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 24921,	-- Report to Aubrey
-				}),
-				q(26687, {	-- Reinforcements From Theramore (UNTESTED - unavailable on lv100 and don't have any Alliance at 35 to test)
+				q(26687, {	-- Reinforcements From Theramore
 					["provider"] = { "n", 39119 },	-- General Twinbraid
+					["coord"] = { 43.5, 78.3, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 					["sourceQuest"] = 25182,	-- Kill 'em All!
 				}),
+				q(24934, {	-- Repel Boarders!
+					["provider"] = { "n", 38619 },	-- Admiral Aubrey
+					["coord"] = { 69.2, 49.0, 199 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 24921,	-- Report to Aubrey
+				}),
 				q(24921, {	-- Report to Aubrey
 					["provider"] = { "n", 38623 },	-- Dockmaster Lewis
+					["coord"] = { 71.0, 50.0, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
@@ -478,11 +513,13 @@ _.Zones =
 				}),
 				q(25087, {	-- Report to Twinbraid
 					["provider"] = { "n", 39083 },	-- Commander Roberts
+					["coord"] = { 49.1, 66.9, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25081,	-- Claim the Battlescar
 				}),
 				q(24943, {	-- Re-Take the Courtyard
 					["provider"] = { "n", 38620 },	-- Thomas Paxton
+					["coord"] = { 67.0, 46.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 24941,	-- Langridge Shot
 					["g"] = {
@@ -508,10 +545,12 @@ _.Zones =
 				}),
 				q(24862, {	-- Running the Gauntlet
 					["provider"] = { "n", 38378 },	-- Commander Walpole
+					["coord"] = { 29.8, 9.00, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24939, {	-- Run Out the Guns
 					["provider"] = { "n", 3454 },	-- Cannoneer Smythe
+					["coord"] = { 68.6, 44.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 24938,	-- The Guns of Northwatch
 					["g"] = {
@@ -535,6 +574,7 @@ _.Zones =
 				}),
 				q(25002, {	-- Scavenged
 					["provider"] = { "n", 38878 },	-- Mangled Body
+					["coord"] = { 61.8, 42.0, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24569, {	-- Siegebreaker
@@ -560,6 +600,7 @@ _.Zones =
 				}),
 				q(24956, {	-- Silencing Rageroar
 					["provider"] = { "n", 38804 },	-- Tolliver Houndstooth
+					["coord"] = { 66.9, 46.7, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 24944,	-- Back in the Fight
 					["g"] = {
@@ -617,6 +658,7 @@ _.Zones =
 				}),
 				q(25191, {	-- Survey the Destruction
 					["provider"] = { "n", 38383 },	-- Nibb Spindlegear
+					["coord"] = { 39.0, 11.4, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24572, {	-- Taking Back Taurajo
@@ -634,22 +676,26 @@ _.Zones =
 				}),
 				q(25000, {	-- Teegan's People
 					["provider"] = { "n", 38621 },	-- Jeffrey Long
+					["coord"] = { 64.8, 46.0, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25036, {	-- Teegan's Troubles
 					["provider"] = { "n", 38620 },	-- Thomas Paxton
+					["coord"] = { 67.0, 46.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 24948,	-- Lifting the Siege
 				}),
 				q(25197, {	-- The Admiral Won't Back Down
 					["provider"] = { "n", 39322 },	-- Horton Gimbleheart
+					["coord"] = { 68.6, 49.0, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "The only way to do both this and 'Report to Aubrey' is if you do it before accepting and completing 'Repel Boarders.'",
 					["sourceQuest"] = 25191,	-- Survey the Destruction
 				}),
 				q(25175, {	-- The Bad News
 					["provider"] = { "n", 39188 },	-- Marley Twinbraid
+					["coord"] = { 49.2, 86.7, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25151,	-- He Needs Ale!
 				}),
@@ -669,6 +715,7 @@ _.Zones =
 					},
 				}),
 				q(25185, {	-- The Deed Is Done
+					["coord"] = { 40.3, 77.8, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 202598 },	-- Big Nasty Plunger
 					["sourceQuest"] = 25183,	-- ...And Bury the Rest
@@ -685,6 +732,7 @@ _.Zones =
 				}),
 				q(24938, {	-- The Guns of Northwatch
 					["provider"] = { "n", 38619 },	-- Admiral Aubrey
+					["coord"] = { 69.2, 49.0, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 24934,	-- Repel Boarders!
 				}),
@@ -703,6 +751,7 @@ _.Zones =
 				}),
 				q(25059, {	-- The Taurajo Briefs
 					["provider"] = { "n", 38986 },	-- Ambassador Gaines
+					["coord"] = { 49.9, 49.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25045,	-- A Line in the Dirt
@@ -716,15 +765,17 @@ _.Zones =
 				}),
 				q(25034, {	-- To the Front!
 					["provider"] = { "n", 38871 },	-- Corporal Teegan
+					["coord"] = { 56.1, 42.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25027,	-- You Flicked a Fine Vine to Leaf Me
 				}),
 				q(24568, {	-- To the Walls!
-					["u"] = 1,	-- beta only
+					["u"] = 1,	-- Never Available — beta only
 					["provider"] = { "n", 37717 },	-- Winnoa Pineforest
 				}),
 				q(25028, {	-- Trouble From the Ground Up
 					["provider"] = { "n", 38876 },	-- Hannah Bridgewater
+					["coord"] = { 56.2, 42.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25022,	-- A Failure to Communicate
@@ -733,6 +784,7 @@ _.Zones =
 				}),
 				q(25174, {	-- Twinbraid Needs to Know
 					["provider"] = { "n", 38152 },	-- Weezil Slipshadow
+					["coord"] = { 50.2, 87.1, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25163,	-- Who Did This?
 				}),
@@ -763,6 +815,7 @@ _.Zones =
 				}),
 				q(25163, {	-- Who Did This?
 					["provider"] = { "n", 39220 },	-- Wounded Bael'dun Officer
+					["coord"] = { 49.6, 87.1, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25120,	-- Marley's Final Flight
 				}),
@@ -774,10 +827,12 @@ _.Zones =
 				}),
 				q(25082, {	-- Working the Bugs Out
 					["provider"] = { "n", 39085 },	-- Logan Talonstrike
+					["coord"] = { 49.1, 67.8, 199 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25027, {	-- You Flicked a Fine Vine to Leaf Me
 					["provider"] = { "n", 38871 },	-- Corporal Teegan
+					["coord"] = { 56.1, 42.6, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25022,	-- A Failure to Communicate

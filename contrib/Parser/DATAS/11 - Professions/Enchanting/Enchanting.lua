@@ -6,6 +6,38 @@
 
 -- Enchanting - Skill ID 333 / Spell ID 7411
 profession(333, {	-- Enchanting
+	n(-26, {	-- Drop
+		q(36308, {	-- Enchanted Highmaul Bracer (A)
+			["requireSkill"] = 333,	-- Enchanting
+			["description"] = "This item can drop from any Draenor mob.",
+			["provider"] = { "i", 115281 },	-- Enchanted Highmaul Bracer
+			["races"] = ALLIANCE_ONLY,
+			["maps"] = {
+				525,	-- Frostfire Ridge
+				543,	-- Gorgrond
+				550,	-- Nagrand
+				539,	-- Shadowmoon Valley
+				542,	-- Spires of Arak
+				535,	-- Talador
+			},
+			["lvl"] = 90,
+		}),
+		q(36255, {	-- Enchanted Highmaul Bracer (H)
+			["requireSkill"] = 333,	-- Enchanting
+			["description"] = "This item can drop from any Draenor mob.",
+			["provider"] = { "i", 115008 },	-- Enchanted Highmaul Bracer
+			["races"] = HORDE_ONLY,
+			["maps"] = {
+				525,	-- Frostfire Ridge
+				543,	-- Gorgrond
+				550,	-- Nagrand
+				539,	-- Shadowmoon Valley
+				542,	-- Spires of Arak
+				535,	-- Talador
+			},
+			["lvl"] = 90,
+		}),
+	}),
 	gb(126, {	-- Enchanter's Study (Level 3)  --- Leaving here for now, but should really be moved to the garrison vendor files
 		["maps"] = {582, 590},	-- Both Garrisons
 		["g"] = {

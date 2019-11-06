@@ -3,6 +3,7 @@
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle for Azeroth
 	inst(1176, { 	-- Battle of Dazar'alor
+		["order"] = "03",
 		["isRaid"] = true,
 	--  ["coord"] = {  },	-- 
 		["maps"] = {

@@ -47,11 +47,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(25702),	-- Scaled Legs of Ruination
 					},
 				}),
-				q(29535, {	-- Make Them Bleed (A)
+				q(29538, {	-- Make Them Bleed (A)
 					["provider"] = { "n", 54629 },	-- Gunny
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(29538, {	-- Make Them Bleed (H)
+				q(29535, {	-- Make Them Bleed (H)
 					["provider"] = { "n", 54636 },	-- Caza'rez
 					["races"] = HORDE_ONLY,
 				}),

@@ -89,7 +89,7 @@ profession(20219, {	-- Gnomish Engineering
 						{
 							["name"] = "Ultrasafe Transporter - Toshley's Station",
 							["recipeID"] = 36955,
-							["description"] = "Speak to Smiles O'Byron just outside Toshley's Station in Blade's Edge Mountains at 60.35, 65.21 to learn this recipe.",
+							["description"] = "Speak to Smiles O'Byron just outside Toshley's Station in Blade's Edge Mountains at 60.2, 65.2 to learn this recipe.",
 						}
 					}
 				}
@@ -163,7 +163,7 @@ profession(20219, {	-- Gnomish Engineering
 						{
 							["name"] = "Ultrasafe Transporter - Gadgetzan",
 							["recipeID"] = 23489,
-							["description"] = "Speak to Jhordy Lapforge in Gadgetzan at 52.17, 27.88 to learn this recipe.",
+							["description"] = "Speak to Jhordy Lapforge in Tanaris at 52.2, 27.8 to learn this recipe.",
 						},
 						{
 							["name"] = "World Enlarger",

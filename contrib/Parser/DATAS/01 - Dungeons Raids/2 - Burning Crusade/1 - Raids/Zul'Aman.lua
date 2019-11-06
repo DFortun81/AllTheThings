@@ -4,6 +4,7 @@
 
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(77, { 	-- Zul'Aman
+		["order"] = "09",
 		["u"] = 12,
 		["isRaid"] = true,
 		["lvl"] = 68,

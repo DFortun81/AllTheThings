@@ -6,11 +6,14 @@ _.ExpansionFeatures =
 	n(-9965, {	-- Legion Class Hall
 		cl(12, {	-- Mardum, The Shattered Abyss (Demon Hunter)
 			["classes"] = { 12 },	-- Demon Hunter
-			["mapID"] = 720,	-- Mardum, The Shattered Abyss (Demon Hunter)
-			["maps"] = { 721 },	-- Lower Command Center
+			["maps"] = {
+				720,	-- Mardum, The Shattered Abyss
+				721,	-- Lower Command Center
+			},
 			["lvl"] = 98,	-- add ["lvl"] to any quests with a higher level requirement!
 			["g"] = {
-				n(-498, {	-- Twisting Nether Class Hall Ability
+				n(-498, {	-- Twisting Nether
+					["description"] = "These items are only accessible to Demon Hunters who have chosen the Twisting Nether Order Advancement in their Class Hall.",
 					["questID"] = 44707,
 					["lvl"] = 105,
 					["crs"] = {
@@ -39,7 +42,7 @@ _.ExpansionFeatures =
 						i(139550, {	-- Bulwark of the Iron Warden [Hidden Artifact Appearance]
 							artifact(571),	-- Find Hidden Artifact Skin
 						}),
-						i(136900),	-- Hateful Eye Pet
+						i(136900),	-- Hateful Eye (PET!)
 						i(141959),	-- Soul Flame of Alacrity
 						i(141962),	-- Soul Flame of Castigation
 						i(141958),	-- Soul Flame of Fortification
@@ -50,41 +53,74 @@ _.ExpansionFeatures =
 				n(-17,  {	-- Quests
 					-- confirmed/sourced
 					q(42682, {	-- Additional Accoutrements
+						["provider"] = { "n", 98632 },  -- Matron Mother Malevolence
 						["sourceQuests"] = { 42683 },	-- Demonic Improvements
 						["coord"] = { 59.7, 50.3, 720 },
-						["provider"] = { "n", 98632 },  -- Matron Mother Malevolence
+					}),
+					q(42810, {	-- A Final Offer
+						["sourceQuests"] = { 42754 },	-- Jump-Capable
+						["provider"] = { "n", 98646 },	-- Jace Darkweaver
+						["coord"] = { 59.0, 74.0, 721 },
+						["lvl"] = 110,
+					}),
+					q(43412, {	-- A Hero's Weapon
+						["sourceQuests"] = { 44214 },	-- One More Thing
+						["providers"] = {
+							{ "n", 110485 },	-- Altruis the Sufferer
+							{ "n", 110482 },	-- Kayn Sunfury
+						},
+						["coord"] = { 57.7, 33.7, 721 },
+						["lvl"] = 110,
+					}),
+					q(46159, {	-- An Urgent Message
+						["sourceQuests"] = { 47137 },	-- Champions of Legionfall (must be in log)
+						["lvl"] = 110,
 					}),
 					q(40247, {	-- Asking a Favor
 						["sourceQuests"] = {
 							40814,	-- The Power to Survive (if chosen first)
 							44383,	-- In Pursuit of Power (if chosen second)
 						},
+						["providers"] = {
+							{ "n", 99247 },		-- Kayn Sunfury
+							{ "n", 108572 },	-- Kayn Sunfury
+						},
 						["classes"] = { 12 },	-- Demon Hunter
 						["coord"] = { 58.6, 56.5, 720 },
-						["providers"] = {
-							{ "n", 99247 },	-- Kayn Sunfury
-							{ "n", 108572 },	-- Kayne Sunfury
-						},
+					}),
+					q(42733, {	-- A Very Special Kind of Fuel
+						["sourceQuests"] = { 44694 },	-- One Battle at a Time
+						["provider"] = { "n", 98648 },	-- Allari the Souleater
+						["coord"] = { 55.6, 50.1, 721 },
+						["lvl"] = 110,
 					}),
 					q(42801, {	-- Back in Black
 						["sourceQuests"] = { 42593 },	-- The Arcane Way
+						["provider"] = { "n", 108782 },	-- Belath Dawnblade
 						["coord"] = { 57.0, 53.1, 720 },
 						["lvl"] = 103,
-						["provider"] = { "n", 108782 },	-- Belath Dawnblade
 					}),
 					q(42679, {	-- Broken Warriors
 						["sourceQuests"] = {
 							42677,	-- Things Gaardoun Needs (Kayn)
 							44161,	-- Things Gaardoun Needs (Altruis)
 						},
+						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 						["coord"] = { 59.1, 58.7, 720 },
 						["lvl"] = 101,
-						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
+					}),
+					q(43184, {	-- Champion: Allari the Souleater
+						["sourceQuests"] = { 42132 },	-- Last, But Not Least (must be in log)
+						["provider"] = { "n", 98648 },	-- Allari the Souleater
+						["coord"] = { 62.0, 49.2, 721 },
+						["g"] = {
+							follower(499),	-- Champion: Allari the Souleater
+						},
 					}),
 					q(42690, {	-- Champion: Altruis the Sufferer
 						["sourceQuests"] = { 42670 },	-- Rise, Champions (Altruis) — must be on this quest
-						["lvl"] = 101,
 						["provider"] = { "n", 108571 },	-- Altruis the Sufferer
+						["lvl"] = 101,
 						["g"] = {
 							follower(498),	-- Champion: Altruis the Sufferer
 						},
@@ -94,19 +130,36 @@ _.ExpansionFeatures =
 							42671,	-- Rise, Champions (Kayn) — must be on this quest
 							42670,	-- Rise, Champions (Altruis) — must be on this quest
 						}, 
-						["lvl"] = 101,
 						["provider"] = { "n", 108326 },  -- Asha Ravensong
+						["lvl"] = 101,
 						["g"] = {
 							follower(722),	-- Champion: Asha Ravensong
+						},
+					}),
+					q(42777, {	-- Champion: Belath Dawnblade
+						["sourceQuests"] = { 42776 },	-- Two Worthies (must be in log)
+						["provider"] = { "n", 108782 },	-- Belath Dawnblade
+						["coord"] = { 57.2, 51.4, 720 },
+						["lvl"] = 110,
+						["g"] = {
+							follower(594),	-- Champion: Belath Dawnblade
+						},
+					}),
+					q(43185, {	-- Champion: Jace Darkweaver
+						["sourceQuests"] = { 42132 },	-- Last, But Not Least (must be in log)
+						["provider"] = { "n", 98646 },	-- Jace Darkweaver
+						["coord"] = { 59.0, 73.5, 721 },
+						["g"] = {
+							follower(807),	-- Champion: Jace Darkweaver
 						},
 					}),
 					q(42695, {	-- Champion: Kayn Sunfury
 						["sourceQuests"] = {
 							42671,	-- Rise, Champions (Kayn) — must be on this quest
 						}, 
+						["provider"] = { "n", 108572 },	-- Kayn Sunfury
 						["coord"] = { 59.1, 58.7, 720 },
 						["lvl"] = 101,
-						["provider"] = { "n", 108572 },	-- Kayn Sunfury
 						["g"] = {
 							follower(595),	-- Champion: Kayn Sunfury
 						},
@@ -116,11 +169,29 @@ _.ExpansionFeatures =
 							39741,	-- Into Our Ranks (Altruis) — must be on this quest
 							42665,	-- Into Our Ranks (Kayn) — must be on this quest
 						},
+						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 						["coord"] = { 58.5, 56.4, 720 },
 						["lvl"] = 103,
-						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 						["g"] = {
 							follower(721),	-- Champion: Kor'vas Bloodthorn
+						},
+					}),
+					q(45391, {	-- Champion: Lady S'theno
+						["sourceQuests"] = { 46266 },	-- Return of the Slayer
+						["provider"] = { "n", 117481 },	-- Lady S'theno
+						["coord"] = { 61.1, 55.4, 720 },
+						["lvl"] = 110,
+						["g"] = {
+							follower(990),	-- Champion: Lady S'theno
+						},
+					}),
+					q(42701, {	-- Champion: Matron Mother Malevolence
+						["sourceQuests"] = { 42776 },	-- Two Worthies (must be in log)
+						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
+						["coord"] = { 59.0, 49.3, 720 },
+						["lvl"] = 110,
+						["g"] = {
+							follower(720),	-- Champion: Matron Mother Malevolence
 						},
 					}),
 					q(42664, {	-- Champion: Shade of Akama
@@ -128,169 +199,347 @@ _.ExpansionFeatures =
 							39741,	-- Into Our Ranks (Altruis) — must be on this quest
 							42665,	-- Into Our Ranks (Kayn) — must be on this quest
 						},
+						["provider"] = { "n", 108246 },	-- Shade of Akama
 						["coord"] = { 58.5, 56.4, 720 },
 						["lvl"] = 103,
-						["provider"] = { "n", 108246 },	-- Shade of Akama
 						["g"] = {
 							follower(719),	-- Champion: Shade of Akama
 						},
 					}),
 					q(42634, {	-- Confrontation at the Black Temple (Altruis)
 						["sourceQuests"] = { 42801 },	-- Back in Black
+						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 						["coord"] = { 59.4, 50.5, 720 },
 						["lvl"] = 103,
-						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 					}),
 					q(42921, {	-- Confrontation at the Black Temple (Kayn)
 						["sourceQuests"] = { 42801 },	-- Back in Black
+						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 						["coord"] = { 59.4, 50.5, 720 },
 						["lvl"] = 103,
-						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
+					}),
+					q(42732, {	-- Deadlier Warglaives
+						["sourceQuests"] = { 44694 },	-- One Battle at a Time
+						["provider"] = { "n", 98648 },	-- Allari the Souleater
+						["coord"] = { 55.6, 50.1, 721 },
+						["lvl"] = 110,
+					}),
+					q(42787, {	-- Deal With It Personally
+						["sourceQuests"] = { 42731 },	-- Working With the Wardens
+						["provider"] = { "n", 108782 },	-- Belath Dawnblade
+						["classes"] = { 12 },	-- Demon Hunter
+						["coord"] = { 57.5, 53.2, 720 },
+						["lvl"] = 110,
+					}),
+					q(45339, {	-- Defense of the Fel Hammer
+						["sourceQuests"] = {
+							45329,	-- Operation: Portals
+							45330,	-- Scouting Party
+						},
+						["provider"] = { "n", 116448 },	-- Kor'vas Bloodthorn
+						["coord"] = { 74.2, 41.7, 719 },
+						["maps"] = {
+							719,	-- Mardum, the Shattered Abyss
+							879,	-- Mardum, the Shattered Abyss (on the Fel Hammer)
+						},
+						["lvl"] = 110,
 					}),
 					q(42683, {	-- Demonic Improvements
 						["sourceQuests"] = { 42681 },	-- Loramus, Is That You?
-						["coord"] = { 59.1, 58.8, 720 },
 						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
+						["coord"] = { 59.1, 58.8, 720 },
 					}),
 					q(41069, {	-- Direct Our Wrath (Kayn)
 						["sourceQuests"] = { 41067 },	-- Time is of the Essence
+						["provider"] = { "n", 95240 },	-- Kayn Sunfury
 						["classes"] = { 12 },	-- Demon Hunter
 						["coord"] = { 59.5, 58.0, 720 },
-						["provider"] = { "n", 95240 },	-- Kayn Sunfury
+					}),
+					q(46780, {	-- Further Advancement
+						["sourceQuests"] = { 45391 },	-- Champion: Lady S'theno
+						["provider"] = { "n", 103732 },	-- Tylos Darksight
+						["coord"] = { 54.0, 46.7, 721 },
+						["lvl"] = 110,
 					}),
 					q(42808, {	-- Green Adepts
 						["sourceQuests"] = { 42802 },	-- Securing Mardum
+						["provider"] = { "n", 108782 },	-- Belath Dawnblade
 						["coord"] = { 58.3, 51.1, 720 },
 						["lvl"] = 103,
-						["provider"] = { "n", 108782 },	-- Belath Dawnblade
+					}),
+					q(43186, {	-- I Am the Slayer!
+						["sourceQuests"] = {
+							43184,	-- Champion: Allari the Souleater
+							43185,	-- Champion: Jace Darkweaver
+						},
+						["providers"] = {
+							{ "n", 108571 },	-- Altruis the Sufferer
+							{ "n", 108572 },	-- Kayn Sunfury
+						},
+						["coord"] = { 58.5, 59.3, 720 },
+						["lvl"] = 110,
+						["g"] = {
+							i(142056),	-- Arcanum of the Order
+							i(142058),	-- Fel Ward of the Order
+							i(142061),	-- Iron Will of the Order
+							i(142063),	-- Dusk of the Order
+							i(139715),	-- Vest of the Shattered Abyss
+							title(320),	-- Slayer <Name>
+						},
 					}),
 					q(42510, {	-- Immortal Soul
 						["sourceQuests"] = { 37447 },	-- The Blood of Demons
+						["provider"] = { "n", 107724 },	-- Kayn Sunfury
 						["coord"] = { 57.7, 51.7, 721 },
 						["lvl"] = 103,
-						["provider"] = { "n", 107724 },	-- Kayn Sunfury
 					}),
 					q(39741, {	-- Into Our Ranks (Altruis)
 						["sourceQuests"] = { 42634 },	-- Confrontation at the Black Temple (Altruis)
+						["provider"] = { "n", 108571 },	-- Altruis the Sufferer
 						["coord"] = { 58.5, 56.4, 720 },
 						["lvl"] = 103,
-						["provider"] = { "n", 108571 },	-- Altruis the Sufferer
 					}),
 					q(42665, {	-- Into Our Ranks (Kayn)
 						["sourceQuests"] = { 42921 },	-- Confrontation at the Black Temple (Kayn)
+						["provider"] = { "n", 108572 },	-- Kayn Sunfury
 						["coord"] = { 58.5, 56.4, 720 },
 						["lvl"] = 103,
-						["provider"] = { "n", 108572 },	-- Kayn Sunfury
+					}),
+					q(42754, {	-- Jump-Capable
+						["sourceQuests"] = {
+							42733,	-- A Very Special Kind of Fuel
+							42732,	-- Deadlier Warglaives
+						},
+						["provider"] = { "n", 98646 },	-- Jace Darkweaver
+						["coord"] = { 59.0, 74.0, 721 },
+						["lvl"] = 110,
+					}),
+					q(42132, {	-- Last, But Not Least
+						["sourceQuests"] = { 42920, 42809 },	-- The Invasion of Niskara (Altruis, Kayn)
+						["providers"] = {
+							{ "n", 108571 },	-- Altruis the Sufferer
+							{ "n", 108572 },	-- Kayn Sunfury
+						},
+						["coord"] = { 58.5, 59.3, 720 },
+						["lvl"] = 110,
 					}),
 					q(42522, {	-- Leader of the Illidari
 						["sourceQuests"] = { 42510 },
+						["provider"] = { "n", 107724 },	-- Kayn Sunfury
 						["coord"] = { 57.7, 51.7, 721 },
 						["lvl"] = 103,
-						["provider"] = { "n", 107724 },	-- Kayn Sunfury
 					}),
 					q(42681, {	-- Loramus, Is That You?
 						["sourceQuests"] = { 42679 },	-- Broken Warriors
+						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 						["coord"] = { 59.1, 58.7, 720 },
 						["lvl"] = 101,
-						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
+					}),
+					q(42735, {	-- Malace in Vrykul Land
+						["sourceQuests"] = { 42787 },	-- Deal With it Personally
+						["provider"] = { "n", 108782 },	-- Belath Dawnblade
+						["coord"] = { 57.6, 53.3, 720 },
+						["lvl"] = 110,
+					}),
+					q(44694, {	-- One Battle at a Time
+						["sourceQuests"] = { 42669 },	-- Preparations for Invasion
+						["provider"] = { "n", 98646 },	-- Jace Darkweaver
+						["coord"] = { 59.0, 73.8, 721 },
+						["lvl"] = 110,
+					}),
+					q(44214, {	-- One More Thing...
+						["sourceQuests"] = { 43186 },	-- I Am the Slayer!
+						["providers"] = {
+							{ "n", 108571 },	-- Altruis the Sufferer
+							{ "n", 108572 },	-- Kayn Sunfury
+						},
+						["coord"] = { 58.5, 59.3, 720 },
+						["lvl"] = 110,
+					}),
+					q(45329, {	-- Operation: Portals
+						["sourceQuests"] = { 45301 },	-- Taking Charge
+						["provider"] = { "n", 116448 },	-- Kor'vas Bloodthorn
+						["coord"] = { 74.2, 41.7, 719 },
+						["maps"] = { 719 },	-- Mardum, the Shattered Abyss
+						["lvl"] = 110,
 					}),
 					q(39718, {	-- Paradise Lost
 						["sourceQuests"] = {
 							41099,	-- Direct Our Wrath (Altruis)
 							41069,	-- Direct Our Wrath (Kayn)
 						},
-						["classes"] = { 12 },	-- Demon Hunter
 						["provider"] = { "n", 98613 },	-- Scouting Map
+						["classes"] = { 12 },	-- Demon Hunter
+					}),
+					q(42669, {	-- Preparations for Invasion
+						["sourceQuests"] = {
+							42777,	-- Champion: Belath Dawnblade
+							42701,	-- Champion: Matron Mother Malevolence
+						},
+						["provider"] = { "n", 98648 },	-- Allari the Souleater
+						["coord"] = { 62.3, 58.8, 721 },
+						["lvl"] = 110,
 					}),
 					q(42671, {	-- Rise, Champions (Kayn)
 						["sourceQuests"] = { 44087 },	-- Return to the Fel Hammer
+						["provider"] = { "n", 103025 },	-- Battlelord Gaardoun
 						["coord"] = { 56.4, 55.1, 720 },
 						["lvl"] = 101,
-						["provider"] = { "n", 103025 },	-- Battlelord Gaardoun
+					}),
+					q(45330, {	-- Scouting Party
+						["sourceQuests"] = { 45301 },	-- Taking Charge
+						["provider"] = { "n", 116448 },	-- Kor'vas Bloodthorn
+						["coord"] = { 74.2, 41.7, 719 },
+						["maps"] = { 719 },	-- Mardum, the Shattered Abyss
+						["lvl"] = 110,
 					}),
 					q(42802, {	-- Securing Mardum
 						["sourceQuests"] = {
 							42673,	-- Champion: Kor'vas Bloodthorn
 							42664,	-- Champion: Shade of Akama
 						},
+						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 						["coord"] = { 59.5, 50.6, 720 },
 						["lvl"] = 103,
-						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 					}),
 					q(41062, {	-- Spoils of Victory
 						["sourceQuests"] = { 41037 },	-- Unbridled Power
+						["provider"] = { "n", 95240 },	-- Kayn Sunfury
 						["classes"] = { 12 },	-- Demon Hunter
 						["coord"] = { 58.6, 58.9, 720 },
-						["provider"] = { "n", 95240 },	-- Kayn Sunfury
+					}),
+					q(45301, {	-- Taking Charge
+						["sourceQuests"] = { 46159 },	-- An Urgent Message
+						["provider"] = { "n", 108311 },	-- Kor'vas Bloodthorn
+						["coord"] = { 59.5, 58.7, 720 },
+						["lvl"] = 110,
 					}),
 					q(42593, {	-- The Arcane Way
 						["sourceQuests"] = { 42522 },	-- Leader of the Illidari
+						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 						["coord"] = { 59.6, 50.3, 720 },
 						["lvl"] = 103,
-						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 					}),
 					q(37447, {	-- The Blood of Demons
 						["sourceQuests"] = { 42682 },	-- Additional Accoutrements
+						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 						["coord"] = { 59.1, 58.8, 720 },
 						["lvl"] = 103,
-						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
+					}),
+					q(42775, {	-- The Crux of the Plan
+						["sourceQuests"] = { 42752, 42753 },	-- Vault of the Wardens: Vault Break-In (2 different versions)
+						["provider"] = { "n", 108782 },	-- Belath Dawnblade
+						["coord"] = { 57.5, 53.3, 720 },
+						["lvl"] = 110,
 					}),
 					q(41066, {	-- The Hunter's Gaze
 						["sourceQuests"] = { 41062 },	-- Spoils of Victory
+						["provider"] = { "n", 95238 },	-- Allari the Souleater
 						["classes"] = { 12 },	-- Demon Hunter
 						["coord"] = { 59.4, 50.4, 721 },
-						["provider"] = { "n", 95238 },	-- Allari the Souleater
+					}),
+					q(42920, {	-- The Invasion of Niskara (Altruis)
+						["sourceQuests"] = { 42810 },	-- A Final Offer
+						["provider"] = { "n", 98646 },	-- Jace Darkweaver
+						["coord"] = { 59.0, 74.0, 721 },
+						["maps"] = { 714 },	-- Niskara
+						["lvl"] = 110,
+					}),
+					q(42809, {	-- The Invasion of Niskara (Kayn)
+						["sourceQuests"] = { 42810 },	-- A Final Offer
+						["provider"] = { "n", 98646 },	-- Jace Darkweaver
+						["coord"] = { 59.0, 74.0, 721 },
+						["maps"] = { 714 },	-- Niskara
+						["lvl"] = 110,
 					}),
 					q(44161, {	-- Things Gaardoun Needs (Altruis)
 						["sourceQuests"] = {
 							42697,	-- Champion: Asha Ravensong
 							42690,	-- Champion: Altruis the Sufferer
 						},
+						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 						["coord"] = { 59.5, 58.7, 720 },
 						["lvl"] = 101,
-						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 					}),
 					q(42677, {	-- Things Gaardoun Needs (Kayn)
 						["sourceQuests"] = {
 							42697,	-- Champion: Asha Ravensong
 							42695,	-- Champion: Kayn Sunfury
 						},
+						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 						["coord"] = { 59.5, 58.7, 720 },
 						["lvl"] = 101,
-						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 					}),
 					q(41067, {	-- Time is of the Essence
 						["sourceQuests"] = { 41066 },	-- The Hunter's Gaze
+						["provider"] = { "n", 95238 },	-- Allari the Souleater
 						["classes"] = { 12 },	-- Demon Hunter
 						["coord"] = { 58.8, 51.2, 721 },
-						["provider"] = { "n", 95238 },	-- Allari the Souleater
+					}),
+					q(46334, {	-- To Fel and Back
+						["sourceQuests"] = { 46333 },	-- Livin' on the Ledge
+						["provider"] = { "n", 108784 },	-- Maton Mother Malevolence
+						["classes"] = { 12 },	-- Demon Hunter
+						["coord"] = { 60.1, 50.8, 720 },
+						["maps"] = { 861 },	-- Mardum, the Shattered Abyss (scenario)
+						["lvl"] = 110,
+						["g"] = {
+							mount(229417),	-- Slayer's Felbroken Shrieker
+						},
+					}),
+					q(42776, {	-- Two Worthies
+						["sourceQuests"] = { 42775 },	-- The Crux of the Plan
+						["providers"] = {
+							{ "n", 108571 },	-- Altruis the Sufferer
+							{ "n", 108572 },	-- Kayn Sunfury
+						},
+						["coord"] = { 58.6, 58.8, 720 },
+						["lvl"] = 110,
+						["g"] = {
+							i(139722),	-- Wristwraps of the Shattered Abyss
+						},
 					}),
 					q(41037, {	-- Unbridled Power
 						["sourceQuests"] = { 41221 },	-- Return to Mardum
+						["provider"] = { "n", 95240 },	-- Kayn Sunfury
 						["classes"] = { 12 },	-- Demon Hunter
 						["coord"] = { 57.7, 68.4, 720 },
-						["provider"] = { "n", 95240 },	-- Kayn Sunfury
 					}),
 					q(42131, {	-- Unexpected Visitors
 						["sourceQuests"] = {
 							42673,	-- Champion: Kor'vas Bloodthorn
 							42664,	-- Champion: Shade of Akama
 						},
+						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 						["coord"] = { 59.5, 50.6, 720 },
 						["lvl"] = 103,
-						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 						["g"] = {
 							crit(3, {	-- Complete the first order campaign effort.
 								["achievementID"] = 10461,	-- Fighting with Style: Classic
 							}),
 						},
 					}),
+					q(45385, {	-- We Must be Prepared!
+						["sourceQuests"] = { 45339 },	-- Defense of the Fel Hammer
+						["provider"] = { "n", 108311 },	-- Kor'vas Bloodthorn
+						["coord"] = { 59.6, 58.8, 720 },
+						["lvl"] = 110,
+					}),
 					q(42731, {	-- Working With the Wardens
 					--	didn't require "Securing Mardum" even though that quest was given at the same time as the SQ.
 						["sourceQuests"] = { 42131 },	-- Unexpected Visitors
+						["provider"] = { "n", 108782 },	-- Belath Dawnblade
 						["coord"] = { 58.5, 51.6, 720 },
 						["lvl"] = 103,
-						["provider"] = { "n", 108782 },	-- Belath Dawnblade
+					}),
+					q(44213, {	-- You Will Be Prepared!
+					--	unknown if this has any SQs in the campaign or if it's automatically rewarded at 110 regardless of your class campaign progression.  i had done up through "working with the wardens."
+						["provider"] = { "n", 112407 },	-- Falara Nightsong
+						["coord"] = { 57.7, 44.2, 720 },
+						["lvl"] = 110,
+						["g"] = {
+							i(139718),	-- Helm of the Shattered Abyss
+						},
 					}),
 
 
@@ -298,11 +547,7 @@ _.ExpansionFeatures =
 
 					-- unconfirmed/unsourced
 					q(44057),	-- A "Noble" Event
-					q(42810),	-- A Final Offer
-					q(43412),	-- A Hero's Weapon
-					q(42733),	-- A Very Special Kind of Fuel
 					q(45180),	-- An Island of War
-					q(46159),	-- An Urgent Message
 					q(45993),	-- An Urgent Warning
 					q(41803),	-- Asking a Favor
 					q(44223),	-- Champion Armaments
@@ -312,48 +557,10 @@ _.ExpansionFeatures =
 							follower(718),	-- Champion: Akama
 						},
 					}),
-					q(43184, {	-- Champion: Allari the Souleater
-						["provider"] = { "n", 98648 },	-- Allari the Souleater
-						["sourceQuests"] = { 42132 },	-- Last, But Not Least  [This quest activates Champion: Allari the Souleater despite not being finished]
-						["g"] = {
-							follower(499),	-- Champion: Allari the Souleater
-						},
-					}),
-					q(42777, {	-- Champion: Belath Dawnblade
-						["provider"] = { "n", 108782 },	-- Belath Dawnblade
-						["sourceQuests"] = {  42776 },	-- Two Worthies [This quest activates Champion: Belath Dawnblade despite not being finished]
-						["g"] = {
-							follower(594),	-- Champion: Belath Dawnblade
-						},
-					}),
-					q(43185, {	-- Champion: Jace Darkweaver
-						["provider"] = { "n", 98646 },	-- Jace Darkweaver
-						["sourceQuests"] = { 42132 },	-- Last, But Not Least  [This quest activates Champion: Jace Darkweaver despite not being finished]
-						["g"] = {
-							follower(807),	-- Champion: Jace Darkweaver
-						},
-					}),
-					q(45391, {	-- Champion: Lady S'theno
-						["provider"] = { "n", 117481 },	-- Lady S'theno
-						["sourceQuests"] = { 46266 },	-- Return of the Slayer
-						["g"] = {
-							follower(990),	-- Champion: Lady S'theno
-						},
-					}),
-					q(42701, {	-- Champion: Matron Mother Malevolence
-						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
-						["sourceQuests"] = { 42776 },	-- Two Worthies [This quest activates Champion: Matron Mother Malevolence despite not being finished]
-						["g"] = {
-							follower(720),	-- Champion: Matron Mother Malevolence
-						},
-					}),
 					q(44275),	-- Court of Stars
 					q(41064),	-- Cursed Forge of the Nathrezim
 					q(44273),	-- Darkheart Thicket
 					q(44272),	-- Darkheart Thicket
-					q(42732),	-- Deadlier Warglaives
-					q(42787),	-- Deal With It Personally
-					q(45339),	-- Defense of the Fel Hammer
 					q(47078),	-- Delivering Lost Knowledge
 					q(45173),	-- Desperate Times
 					q(41099),	-- Direct Our Wrath [Altruis
@@ -361,20 +568,15 @@ _.ExpansionFeatures =
 					q(44270),	-- Eye of Azshara
 					q(44271),	-- Eye of Azshara
 					q(44226),	-- Fate Favors Us
-					q(46780),	-- Further Advancement
 					q(46152),	-- Furthering Knowledge
-					q(43186),	-- I Am the Slayer!
 					q(44383, {	-- In Pursuit of Power
 						["lvl"] = 102,
 					}),
 					q(44379),	-- In Pursuit of Power
 					q(45994),	-- Investigate the Broken Shore
-					q(42754),	-- Jump-Capable
-					q(42132),	-- Last, But Not Least
 					q(46333),	-- Livin' on the Ledge
 					q(40819),	-- Making Arrangements
 					q(41120),	-- Making Arrangements
-					q(42735),	-- Malace in Vrykul Land
 					q(44266),	-- Maw of Souls
 					q(44267),	-- Maw of Souls
 					q(43554),	-- Neltharion's Lair
@@ -382,11 +584,6 @@ _.ExpansionFeatures =
 					q(44265),	-- Neltharion's Lair
 					q(44269),	-- Odyn's Challenge
 					q(44268),	-- Odyn's Challenge
-					q(44694),	-- One Battle at a Time
-					q(44214),	-- One More Thing...
-					q(45329),	-- Operation: Portals
-					q(42669),	-- Preparations for Invasion
-					q(46266),	-- Return of the Slayer
 					q(44917),	-- Return to Karazhan: The Tower of Power
 					q(41033),	-- Return to Mardum
 					q(41221),	-- Return to Mardum
@@ -398,50 +595,27 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42666 },	-- Return to the Fel Hammer [Note: I *believe* this is the right ID, I forgot to check]
 						["provider"] = { "n", 103025 },	-- Battlelord Gaardoun
 					}),
-					q(45330),	-- Scouting Party
 					q(41070),	-- Spoils of Victory
-					q(45301),	-- Taking Charge
 					q(44263),	-- The Arcway
-					q(42775),	-- The Crux of the Plan							
 					q(39247),	-- The Hunt
 					q(41119),	-- The Hunt
-					q(42809),	-- The Invasion of Niskara
-					q(42920),	-- The Invasion of Niskara
 					q(44276),	-- The Lord of Black Rook Hold
 					q(44277),	-- The Lord of Black Rook Hold
-					q(43501),	-- The Power Within
-					q(43496),	-- The Power Within
 					q(41096),	-- Time is of the Essence
 					q(45172),	-- To Battle!
-					q(46334),	-- To Fel and Back
-					q(42776),	-- Two Worthies
 					q(41060),	-- Unbridled Power
 					q(42131),	-- Unexpected Visitors
 					q(44224),	-- Unleashing our Wrath
 					q(44261),	-- Vault of the Wardens
 					q(44260),	-- Vault of the Wardens
 					q(43556),	-- Vault of the Wardens
-					q(42752),	-- Vault of the Wardens: Vault Break-In
-					q(42753),	-- Vault of the Wardens: Vault Break-In
 					q(44258),	-- Violet Hold
 					q(44259),	-- Violet Hold
 					q(43557, {	-- Violet Hold
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(44058),	-- Volpin the Elusive
-					q(45385),	-- We Must be Prepared!
 					q(45179),	-- Win the Crowd
-					q(44213),	-- You Will Be Prepared!										
-					q(46334, {	-- To Fel and Back
-						["lvl"] = 110,
-						["classes"] = {12},
-						["g"] = {
-							{ ["mountID"] = 229417 },	-- Slayer's Felbroken Shrieker
-						},
-					}),
-					q(44213, {	-- You Will Be Prepared!
-						i(139718),	-- Helm of the Shattered Abyss
-					}),
 					q(43186, {	-- I Am the Slayer!
 						i(139715),	-- Robes of
 					}),
@@ -454,15 +628,6 @@ _.ExpansionFeatures =
 					}),
 					--]]
 				}),
-				--[[
-				n(98613, {	-- Scouting Map
-					["g"] = {
-						-- Blank for Class Only Missions in the future
-					},
-					["achievementID"] = 11217,
-					["modelScale"] = 1.5,
-				}),
-				]]--
 				n(-2,   {	-- Vendors
 					n(116621, {	--Demissya Gladestrider <Illidari Provisioner's Assistant>
 						i(123960),	-- Charm of Demonic Fire

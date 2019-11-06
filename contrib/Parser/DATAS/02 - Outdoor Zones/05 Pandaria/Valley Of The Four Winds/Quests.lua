@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(424, {	-- Pandaria
-		m(376, {	-- Valley of the Four Winds				
+		m(376, {	-- Valley of the Four Winds
 			n(-17, {	-- Quests
 				prof(185, {	-- Cooking
 					["requireSkill"] = 185,
@@ -228,6 +228,74 @@ _.Zones =
 					crit(6),		-- Nesingwary's Safari
 				}),
 ]]--
+				q(31329, {	-- A Beautiful Brooch
+					["description"] = "Requires reputation level of \"Good Friend\" or better with Tina Mudclaw to drop.",
+					["provider"] = { "i", 86436 },	-- Beautiful Brooch
+					["crs"] = {
+						59120,	-- Kunzen Rockflinger
+						59126,	-- Jokka-Jokka
+						59128,	-- Jim-Jim
+						59130,	-- Teeku
+						59127,	-- Kon-Kon
+						59129,	-- Maaka
+						59125,	-- Kunzen Soupmaster
+						59123,	-- Kunzen Ritualist
+						59134,	-- Yammo
+						59121,	-- Kunzen Hunter
+						59133,	-- Buk-Buk
+						59131,	-- Lor-Lor
+						59135,	-- Bimba
+						59124,	-- Kunzen Collector
+						59132,	-- Rit-Rit
+						59119,	-- Kunzen Ravager
+						59122,	-- Kunzen Herdskeeper
+					},
+				}),
+				q(30400, {	-- A Blue Feather for Chee Chee
+					["provider"] = { "n", 58709 },	-- Chee Chee
+					["repeatable"] = true,
+				}),
+				q(30382, {	-- A Blue Feather for Ella
+					["provider"] = { "n", 58647 },	-- Ella
+					["repeatable"] = true,
+				}),
+				q(30419, {	-- A Blue Feather for Farmer Fung
+					["provider"] = { "n", 57298 },	-- Farmer Fung
+					["repeatable"] = true,
+				}),
+				q(30425, {	-- A Blue Feather for Fish
+					["provider"] = { "n", 58705 },	-- Fish Fellreed
+					["repeatable"] = true,
+				}),
+				q(30388, {	-- A Blue Feather for Gina
+					["provider"] = { "n", 58706 },	-- Gina Mudclaw
+					["repeatable"] = true,
+				}),
+				q(30412, {	-- A Blue Feather for Haohan
+					["provider"] = { "n", 57402 },	-- Haohan Mudclaw
+					["repeatable"] = true,
+				}),
+				q(30437, {	-- A Blue Feather for Jogu
+					["provider"] = { "n", 58710 },	-- Jogu the Drunk
+					["repeatable"] = true,
+				}),
+				q(30394, {	-- A Blue Feather for Old Hillpaw
+					["provider"] = { "n", 58707 },	-- Old Hillpaw
+					["repeatable"] = true,
+				}),
+				q(30406, {	-- A Blue Feather for Sho
+					["provider"] = { "n", 58708 },	-- Sho
+					["repeatable"] = true,
+				}),
+				q(30431, {	-- A Blue Feather for Tina
+					["provider"] = { "n", 58761 },	-- Tina Mudclaw
+					["repeatable"] = true,
+				}),
+				q(30275, {	-- A Crocolisk Tale
+					["crs"] = { 58755 },	-- Manglemaw's Mother
+					["provider"] = { "i", 79238 },	-- Enormous Crocolisk Tail
+					["description"] = "Kill Manglemaw at the Pools of Purity to spawn Manglemaw's Mother.",
+				}),
 				q(30402, {	-- A Dish for Chee Chee
 					["isDaily"] = true,
 					["provider"] = { "n", 58709 },	-- Chee Chee
@@ -267,6 +335,29 @@ _.Zones =
 				q(30433, {	-- A Dish for Tina
 					["isDaily"] = true,
 					["provider"] = { "n", 58761 },	-- Tina Mudclaw
+				}),
+				q(31328, {	-- An Exquisite Earring
+					["description"] = "Requires reputation level of \"Friend\" or better with Tina Mudclaw to drop.",
+					["provider"] = { "i", 86435 },	-- Exquisite Earring
+					["crs"] = {
+						59120,	-- Kunzen Rockflinger
+						59126,	-- Jokka-Jokka
+						59128,	-- Jim-Jim
+						59130,	-- Teeku
+						59127,	-- Kon-Kon
+						59129,	-- Maaka
+						59125,	-- Kunzen Soupmaster
+						59123,	-- Kunzen Ritualist
+						59134,	-- Yammo
+						59121,	-- Kunzen Hunter
+						59133,	-- Buk-Buk
+						59131,	-- Lor-Lor
+						59135,	-- Bimba
+						59124,	-- Kunzen Collector
+						59132,	-- Rit-Rit
+						59119,	-- Kunzen Ravager
+						59122,	-- Kunzen Herdskeeper
+					},
 				}),
 				q(30471, {	-- A Gift For Chee Chee
 					["isDaily"] = true,
@@ -322,6 +413,46 @@ _.Zones =
 					["coord"] = { 52.0, 48.1, 376 },
 					["provider"] = { "n", 58721 },	-- Farmer Yoon
 				}),
+				q(30399, {	-- A Jade Cat for Chee Chee
+					["provider"] = { "n", 58709 },	-- Chee Chee
+					["repeatable"] = true,
+				}),
+				q(30381, {	-- A Jade Cat for Ella
+					["provider"] = { "n", 58647 },	-- Ella
+					["repeatable"] = true,
+				}),
+				q(30418, {	-- A Jade Cat for Farmer Fung
+					["provider"] = { "n", 57298 },	-- Farmer Fung
+					["repeatable"] = true,
+				}),
+				q(30424, {	-- A Jade Cat for Fish
+					["provider"] = { "n", 58705 },	-- Fish Fellreed
+					["repeatable"] = true,
+				}),
+				q(30387, {	-- A Jade Cat for Gina
+					["provider"] = { "n", 58706 },	-- Gina Mudclaw
+					["repeatable"] = true,
+				}),
+				q(30411, {	-- A Jade Cat for Haohan
+					["provider"] = { "n", 57402 },	-- Haohan Mudclaw
+					["repeatable"] = true,
+				}),
+				q(30436, {	-- A Jade Cat for Jogu
+					["provider"] = { "n", 58710 },	-- Jogu the Drunk
+					["repeatable"] = true,
+				}),
+				q(30393, {	-- A Jade Cat for Old Hillpaw
+					["provider"] = { "n", 58707 },	-- Old Hillpaw
+					["repeatable"] = true,
+				}),
+				q(30405, {	-- A Jade Cat for Sho
+					["provider"] = { "n", 58708 },	-- Sho
+					["repeatable"] = true,
+				}),
+				q(30430, {	-- A Jade Cat for Tina
+					["provider"] = { "n", 58761 },	-- Tina Mudclaw
+					["repeatable"] = true,
+				}),
 				q(29918, {	-- A Lesson in Bravery
 					["sourceQuests"] = {
 						29917,	-- Lupello
@@ -336,6 +467,86 @@ _.Zones =
 						i(81827),	-- Band of Bravery
 						i(81828),	-- Ring of Courage
 					},
+				}),
+				q(30398, {	-- A Lovely Apple for Chee Chee
+					["provider"] = { "n", 58709 },	-- Chee Chee
+					["repeatable"] = true,
+				}),
+				q(30189, {	-- A Lovely Apple for Ella
+					["provider"] = { "n", 58647 },	-- Ella
+					["repeatable"] = true,
+				}),
+				q(30417, {	-- A Lovely Apple for Farmer Fung
+					["provider"] = { "n", 57298 },	-- Farmer Fung
+					["repeatable"] = true,
+				}),
+				q(30423, {	-- A Lovely Apple for Fish
+					["provider"] = { "n", 58705 },	-- Fish Fellreed
+					["repeatable"] = true,
+				}),
+				q(30380, {	-- A Lovely Apple for Gina
+					["provider"] = { "n", 58706 },	-- Gina Mudclaw
+					["repeatable"] = true,
+				}),
+				q(30410, {	-- A Lovely Apple for Haohan
+					["provider"] = { "n", 57402 },	-- Haohan Mudclaw
+					["repeatable"] = true,
+				}),
+				q(30435, {	-- A Lovely Apple for Jogu
+					["provider"] = { "n", 58710 },	-- Jogu the Drunk
+					["repeatable"] = true,
+				}),
+				q(30392, {	-- A Lovely Apple for Old Hillpaw
+					["provider"] = { "n", 58707 },	-- Old Hillpaw
+					["repeatable"] = true,
+				}),
+				q(30404, {	-- A Lovely Apple for Sho
+					["provider"] = { "n", 58708 },	-- Sho
+					["repeatable"] = true,
+				}),
+				q(30429, {	-- A Lovely Apple for Tina
+					["provider"] = { "n", 58761 },	-- Tina Mudclaw
+					["repeatable"] = true,
+				}),
+				q(30401, {	-- A Marsh Lily for Chee Chee
+					["provider"] = { "n", 58709 },	-- Chee Chee
+					["repeatable"] = true,
+				}),
+				q(30383, {	-- A Marsh Lily for Ella
+					["provider"] = { "n", 58647 },	-- Ella
+					["repeatable"] = true,
+				}),
+				q(30420, {	-- A Marsh Lily for Farmer Fung
+					["provider"] = { "n", 57298 },	-- Farmer Fung
+					["repeatable"] = true,
+				}),
+				q(30426, {	-- A Marsh Lily for Fish
+					["provider"] = { "n", 58705 },	-- Fish Fellreed
+					["repeatable"] = true,
+				}),
+				q(30389, {	-- A Marsh Lily for Gina
+					["provider"] = { "n", 58706 },	-- Gina Mudclaw
+					["repeatable"] = true,
+				}),
+				q(30413, {	-- A Marsh Lily for Haohan
+					["provider"] = { "n", 57402 },	-- Haohan Mudclaw
+					["repeatable"] = true,
+				}),
+				q(30438, {	-- A Marsh Lily for Jogu
+					["provider"] = { "n", 58710 },	-- Jogu the Drunk
+					["repeatable"] = true,
+				}),
+				q(30395, {	-- A Marsh Lily for Old Hillpaw
+					["provider"] = { "n", 58707 },	-- Old Hillpaw
+					["repeatable"] = true,
+				}),
+				q(30407, {	-- A Marsh Lily for Sho
+					["provider"] = { "n", 58708 },	-- Sho
+					["repeatable"] = true,
+				}),
+				q(30432, {	-- A Marsh Lily for Tina
+					["provider"] = { "n", 58761 },	-- Tina Mudclaw
+					["repeatable"] = true,
 				}),
 				q(29915, {	-- A Neighbor's Duty
 					["sourceQuests"] = {
@@ -362,11 +573,50 @@ _.Zones =
 					["coord"] = { 52.2, 48.8, 376 },
 					["provider"] = { "n", 58646 },	-- Farmer Yoon
 				}),
-				o(215705, {	-- Tillers Shrine
-					q(30534, {	-- A Second Hand
-						["description"] = "Requires reputation level of \"Exalted\" with The Tillers and \"Best Friends\" with whomever you want assisting you on the farm.",
-						["coord"] = { 52.1, 49.0, 376 },
-					}),
+				q(30397, {	-- A Ruby Shard for Chee Chee
+					["provider"] = { "n", 58709 },	-- Chee Chee
+					["repeatable"] = true,
+				}),
+				q(30160, {	-- A Ruby Shard for Ella
+					["provider"] = { "n", 58647 },	-- Ella
+					["repeatable"] = true,
+				}),
+				q(30416, {	-- A Ruby Shard for Farmer Fung
+					["provider"] = { "n", 57298 },	-- Farmer Fung
+					["repeatable"] = true,
+				}),
+				q(30422, {	-- A Ruby Shard for Fish
+					["provider"] = { "n", 58705 },	-- Fish Fellreed
+					["repeatable"] = true,
+				}),
+				q(30379, {	-- A Ruby Shard for Gina
+					["provider"] = { "n", 58706 },	-- Gina Mudclaw
+					["repeatable"] = true,
+				}),
+				q(30409, {	-- A Ruby Shard for Haohan
+					["provider"] = { "n", 57402 },	-- Haohan Mudclaw
+					["repeatable"] = true,
+				}),
+				q(30434, {	-- A Ruby Shard for Jogu
+					["provider"] = { "n", 58710 },	-- Jogu the Drunk
+					["repeatable"] = true,
+				}),
+				q(30391, {	-- A Ruby Shard for Old Hillpaw
+					["provider"] = { "n", 58707 },	-- Old Hillpaw
+					["repeatable"] = true,
+				}),
+				q(30403, {	-- A Ruby Shard for Sho
+					["provider"] = { "n", 58708 },	-- Sho
+					["repeatable"] = true,
+				}),
+				q(30428, {	-- A Ruby Shard for Tina
+					["provider"] = { "n", 58761 },	-- Tina Mudclaw
+					["repeatable"] = true,
+				}),
+				q(30534, {	-- A Second Hand
+					["coord"] = { 52.1, 49.0, 376 },
+					["provider"] = { "o", 215705 },	-- Tillers Shrine
+					["description"] = "Requires reputation level of \"Exalted\" with The Tillers and \"Best Friends\" with whomever you want assisting you on the farm.",
 				}),
 				q(29908, {	-- A Seemingly Endless Nuisance
 					["sourceQuests"] = { 29907 },	-- Chen and Li Li
@@ -393,6 +643,29 @@ _.Zones =
 					["sourceQuests"] = { 29987 },	-- Unyielding Fists: Trial of Wood
 					["coord"] = { 18.3, 31.3, 376 },
 					["provider"] = { "n", 56714 },	-- Master Bruised Paw
+				}),
+				q(31325, {	-- A Very Nice Necklace
+					["description"] = "Requires reputation level of \"Acquaintance\" or better with Tina Mudclaw to drop.",
+					["provider"] = { "i", 86433 },	-- Nice Necklace
+					["crs"] = {
+						59120,	-- Kunzen Rockflinger
+						59126,	-- Jokka-Jokka
+						59128,	-- Jim-Jim
+						59130,	-- Teeku
+						59127,	-- Kon-Kon
+						59129,	-- Maaka
+						59125,	-- Kunzen Soupmaster
+						59123,	-- Kunzen Ritualist
+						59134,	-- Yammo
+						59121,	-- Kunzen Hunter
+						59133,	-- Buk-Buk
+						59131,	-- Lor-Lor
+						59135,	-- Bimba
+						59124,	-- Kunzen Collector
+						59132,	-- Rit-Rit
+						59119,	-- Kunzen Ravager
+						59122,	-- Kunzen Herdskeeper
+					},
 				}),
 				q(31341, {	-- A Wolf In Sheep's Clothing
 					["sourceQuests"] = { 31340 },	-- Oh Sheepie....
@@ -423,32 +696,7 @@ _.Zones =
 					["sourceQuests"] = { 30074 },	-- Knocking on the Door
 					["coord"] = { 32.3, 68.5, 376 },
 					["provider"] = { "n", 56138 },	-- Li Li
-				}),
-				i(86436, {	-- Beautiful Brooch
-					q(31329, {	-- A Beautiful Brooch
-						["description"] = "Requires reputation level of \"Good Friend\" or better with Tina Mudclaw to drop.",
-						["crs"] = {
-							59120,	-- Kunzen Rockflinger
-							59126,	-- Jokka-Jokka
-							59128,	-- Jim-Jim
-							59130,	-- Teeku
-							59127,	-- Kon-Kon
-							59129,	-- Maaka
-							59125,	-- Kunzen Soupmaster
-							59123,	-- Kunzen Ritualist
-							59134,	-- Yammo
-							59121,	-- Kunzen Hunter
-							59133,	-- Buk-Buk
-							59131,	-- Lor-Lor
-							59135,	-- Bimba
-							59124,	-- Kunzen Collector
-							59132,	-- Rit-Rit
-							59119,	-- Kunzen Ravager
-							59122,	-- Kunzen Herdskeeper
-						},
-					}),
-				}),
-				q(29757, {	-- Bottletoads
+				}),				q(29757, {	-- Bottletoads
 					["sourceQuests"] = { 29871 },	-- Clever Ashyo
 					["coord"] = { 60.6, 33.7, 376 },
 					["provider"] = { "n", 56773 },	-- Yan
@@ -538,6 +786,7 @@ _.Zones =
 				q(29871, {	-- Clever Ashyo
 					["coord"] = { 84.0, 21.1, 376 },
 					["provider"] = { "n", 56110 },	-- Xiao
+					["altQuests"] = { 29874, 29875, 29873 },	
 				}),
 				q(29947, {	-- Crouching Carrot, Hidden Turnip
 					["sourceQuests"] = { 29945 },	-- Yellow and Red Make Orange
@@ -552,24 +801,10 @@ _.Zones =
 					["coord"] = { 55.9, 49.4, 376 },
 					["provider"] = { "n", 56133 },	-- Chen Stormstout
 				}),
-				i(89814, {	-- "Earth-Slasher" Master Plow
-					q(31938, {	-- The "Earth-Slasher" Master Plow
-						["sourceQuests"] = { 30529 },	-- Growing the Farm III: The Mossy Boulder
-						["description"] = "Begins with a purchase of the \"Earth-Slasher\" Master Plow from Gina Mudclaw",
-						["coord"] = { 53.2, 51.8, 376 },
-						["provider"] = { "n", 58706 },	-- Gina Mudclaw
-					}),
-				}),
 				q(31537, {	-- Ella's Taste Test
 					["description"] = "Requires reputation level of \"Friend\" or better.",
 					["coord"] = { 53.0, 51.6, 376 },
 					["provider"] = { "n", 58647 },	-- Ella
-				}),
-				i(79238, {	-- Enormous Crocolisk Tail
-					q(30275, {	-- A Crocolisk Tale
-						["description"] = "Kill Manglemaw at the Pools of Purity to spawn Manglemaw's Mother.",
-						["provider"] = { "n", 58755 },	-- Manglemaw's Mother
-					}),
 				}),
 				q(30054, {	-- Enough is Ookin' Enough
 					["sourceQuests"] = { 30046 },	-- Chen's Resolution
@@ -591,31 +826,7 @@ _.Zones =
 						i(88020),	-- Thunderfoot Heavy Pauldrons
 						i(88019),	-- Sunsong Armored Pauldrons
 					},
-				}),
-				i(86435, {	-- Exquisite Earring
-					q(31328, {	-- An Exquisite Earring
-						["description"] = "Requires reputation level of \"Friend\" or better with Tina Mudclaw to drop.",
-						["crs"] = {
-							59120,	-- Kunzen Rockflinger
-							59126,	-- Jokka-Jokka
-							59128,	-- Jim-Jim
-							59130,	-- Teeku
-							59127,	-- Kon-Kon
-							59129,	-- Maaka
-							59125,	-- Kunzen Soupmaster
-							59123,	-- Kunzen Ritualist
-							59134,	-- Yammo
-							59121,	-- Kunzen Hunter
-							59133,	-- Buk-Buk
-							59131,	-- Lor-Lor
-							59135,	-- Bimba
-							59124,	-- Kunzen Collector
-							59132,	-- Rit-Rit
-							59119,	-- Kunzen Ravager
-							59122,	-- Kunzen Herdskeeper
-						},
-					}),
-				}),
+				}),				
 				q(30517, {	-- Farmer Fung's Vote I: Yak Attack
 					["description"] = "Must be revered with at least 4500 reputation with The Tillers.",
 					["coord"] = { 52.2, 48.8, 376 },
@@ -651,6 +862,7 @@ _.Zones =
 				q(32035, {	-- Got Silk?
 					["coord"] = { 55.6, 52.1, 376 },
 					["provider"] = { "n", 59585 },	-- Lolo Lio
+					["isBreadcrumb"] = true,
 				}),
 				q(30050, {	-- Gardener Fran and the Watering Can
 					["sourceQuests"] = { 30046 },	-- Chen's Resolution
@@ -708,6 +920,11 @@ _.Zones =
 					["coord"] = { 52.2, 48.8, 376 },
 					["provider"] = { "n", 58646 },	-- Farmer Yoon
 				}),
+				q(29758, {	-- Guess Whose Back
+					["coord"] = { 64.5, 25.7, 376 },
+					["provider"] = { "i", 83767 },	-- Krosh's Back
+					["crs"] = { 56833 },	-- Krosh
+				}),
 				q(30521, {	-- Haohan's Vote I: Bungalow Break-In
 					["description"] = "Must be revered with at least 16,800 reputation with The Tillers.",
 					["coord"] = { 52.2, 48.8, 376 },
@@ -732,14 +949,6 @@ _.Zones =
 					["sourceQuests"] = { 30527 },	-- Haohan's Vote IV: Melons For Felons
 					["coord"] = { 52.2, 48.8, 376 },
 					["provider"] = { "n", 58646 },	-- Farmer Yoon
-				}),
-				o(213767, {	-- Hidden Treasure
-					q(31315, {	-- The Heartland Legacy
-						["sourceQuests"] = { 31314 },	-- Old Man Thistle's Treasure
-						["g"] = {
-							ach(7296),	-- Ain't Lost No More
-						},
-					}),
 				}),
 				q(30053, {	-- Hop Hunting
 					["sourceQuests"] = { 30046 },	-- Chen's Resolution
@@ -782,11 +991,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 84.0, 21.1, 376 },
 					["provider"] = { "n", 56110 },	-- Xiao
+					["altQuests"] = { 29875, 29873, 29871 },	
 				}),
 				q(29875, {	-- Kang Bramblestaff
 					["races"] = HORDE_ONLY,
 					["coord"] = { 84.0, 21.1, 376 },
 					["provider"] = { "n", 56110 },	-- Xiao
+					["altQuests"] = { 29874, 29873, 29871 },	
 				}),
 				q(29873, {	-- Ken-Ken
 					["isBreadcrumb"] = true,
@@ -797,13 +1008,7 @@ _.Zones =
 					["sourceQuests"] = { 30073 },	-- The Emperor
 					["provider"] = { "n", 56133 },	-- Chen Stormstout
 				}),
-				i(83767, {	-- Krosh's Back
-					q(29758, {	-- Guess Whose Back
-						["coord"] = { 64.5, 25.7, 376 },
-						["provider"] = { "n", 56833 },	-- Krosh
-					}),
-				}),
-				q(29944,  {  	-- Leaders Among Breeders
+				q(29944, {  -- Leaders Among Breeders
 					["sourceQuests"] = { 29919 },	-- Great Minds Drink Alike
 					["coord"] = { 68.9, 43.2, 376 },
 					["provider"] = { "n", 56133 },	-- Chen Stormsout
@@ -908,6 +1113,9 @@ _.Zones =
 					["coord"] = { 53.0, 52.0, 376 },
 					["provider"] = { "n", 58708 },	-- Sho
 				}),
+				q(31530, {	-- Mission: The Hozen Dozen -- Present in Beta but never made it to live servers
+					["u"] = 1,
+				}),
 				q(30322, {	-- Money Matters
 					["isDaily"] = true,
 					["coord"] = { 53.2, 51.8, 376 },
@@ -995,30 +1203,6 @@ _.Zones =
 					["coord"] = { 54.7, 47.0, 376 },
 					["provider"] = { "n", 64597 },	-- Nana Mudclaw
 				}),
-				i(86433, {	-- Nice Necklace
-					q(31325, {	-- A Very Nice Necklace
-						["description"] = "Requires reputation level of \"Acquaintance\" or better with Tina Mudclaw to drop.",
-						["crs"] = {
-							59120,	-- Kunzen Rockflinger
-							59126,	-- Jokka-Jokka
-							59128,	-- Jim-Jim
-							59130,	-- Teeku
-							59127,	-- Kon-Kon
-							59129,	-- Maaka
-							59125,	-- Kunzen Soupmaster
-							59123,	-- Kunzen Ritualist
-							59134,	-- Yammo
-							59121,	-- Kunzen Hunter
-							59133,	-- Buk-Buk
-							59131,	-- Lor-Lor
-							59135,	-- Bimba
-							59124,	-- Kunzen Collector
-							59132,	-- Rit-Rit
-							59119,	-- Kunzen Ravager
-							59122,	-- Kunzen Herdskeeper
-						},
-					}),
-				}),
 				q(30324, {	-- Not in Chee-Chee's Backyard
 					["isDaily"] = true,
 					["coord"] = { 53.0, 52.0, 376 },
@@ -1031,12 +1215,6 @@ _.Zones =
 				q(31314, {	-- Old Man Thistle's Treasure
 					["sourceQuests"] = { 31313 },	-- Just a Folk Story
 					["provider"] = { "n", 58705 },	-- Fish Fellreed
-				}),
-				i(86404, {	-- Old Map
-					q(31312, {	-- The Old Map
-						["description"] = "Requires a reputation level of Exalted with The Tillers and Best Friend with all Halfhill farmers to drop.",
-						["provider"] = { "n", 59639 },	-- Enormous Cattail Grouper
-					}),
 				}),
 				q(32198, {	-- One Magical, Flying Kingdom's Trash...
 					["sourceQuests"] = { 32189 },	-- A Shabby New Face
@@ -1097,6 +1275,9 @@ _.Zones =
 					["coord"] = { 11.6, 49.5, 376 },
 					["provider"] = { "n", 57198 },	-- Guard Captain Oakenshield
 				}),
+				q(33139, {	-- Secrets Lost, Forever?
+					["u"] = 1,
+				}),
 				q(30057, {	-- Seeing Orange
 					["sourceQuests"] = { 30056 },	-- The Farmer's Daughter
 					["coord"] = { 41.3, 38.2, 376 },
@@ -1118,11 +1299,6 @@ _.Zones =
 					["coord"] = { 52.2, 48.8, 376 },
 					["provider"] = { "n", 58646 },	-- Farmer Yoon
 				}),
-				q(31941, {	-- Squash Those Foul Odors
-					["isDaily"] = true,
-					["coord"] = { 52.2, 48.8, 376 },
-					["provider"] = { "n", 58646 },	-- Farmer Yoon
-				}),
 				q(29600, {	-- Snap Judgment
 					["provider"] = { "n", 56802 },	-- Zhang Yue
 					["g"] = {
@@ -1136,6 +1312,11 @@ _.Zones =
 						i(81812),	-- Thunderfoot Heavy Armplates
 						i(81813),	-- Sunsong Armored Bracers
 					},
+				}),
+				q(31941, {	-- Squash Those Foul Odors
+					["isDaily"] = true,
+					["coord"] = { 52.2, 48.8, 376 },
+					["provider"] = { "n", 58646 },	-- Farmer Yoon
 				}),
 				q(30183, {	-- Stalker Mastery
 					["coord"] = { 16.2, 82.5, 376 },
@@ -1214,32 +1395,7 @@ _.Zones =
 					["sourceQuests"] = { 30048 },	-- Li Li and the Grain
 					["coord"] = { 52.7, 62.8, 376 },
 					["provider"] = { "n", 56138 },	-- Li Li
-				}),
-				i(86434, {	-- Tasteful Tiara
-					q(31326, {	-- Tina's Tasteful Tiara
-						["description"] = "Requires reputation level of \"Buddy\" or better with Tina Mudclaw to drop.",
-						["crs"] = {
-							59120,	-- Kunzen Rockflinger
-							59126,	-- Jokka-Jokka
-							59128,	-- Jim-Jim
-							59130,	-- Teeku
-							59127,	-- Kon-Kon
-							59129,	-- Maaka
-							59125,	-- Kunzen Soupmaster
-							59123,	-- Kunzen Ritualist
-							59134,	-- Yammo
-							59121,	-- Kunzen Hunter
-							59133,	-- Buk-Buk
-							59131,	-- Lor-Lor
-							59135,	-- Bimba
-							59124,	-- Kunzen Collector
-							59132,	-- Rit-Rit
-							59119,	-- Kunzen Ravager
-							59122,	-- Kunzen Herdskeeper
-						},
-					}),
-				}),
-				q(31392, {	-- Temple of the White Tiger
+				}),				q(31392, {	-- Temple of the White Tiger
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 55.8, 51.8, 376 },
 					["provider"] = { "n", 64448 },	-- Hopsmaster Chang
@@ -1248,6 +1404,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["coord"] = { 55.8, 51.8, 376 },
 					["provider"] = { "n", 64448 },	-- Hopsmaster Chang
+					["isBreadcrumb"] = true,
 				}),
 				q(29992, {	-- Tenderpaw By Name, Tender Paw By Reputation
 					["sourceQuests"] = { 29984 },	-- Unyielding Fists: Trial of Bamboo
@@ -1273,6 +1430,11 @@ _.Zones =
 					["sourceQuests"] = { 30032 },	-- The Quest for Better Barley
 					["coord"] = { 52.7, 62.8, 376 },
 					["provider"] = { "n", 56138 },	-- Li Li
+				}),
+				q(31938, {	-- The "Earth-Slasher" Master Plow
+					["sourceQuests"] = { 30529 },	-- Growing the Farm III: The Mossy Boulder
+					["provider"] = { "i", 89814 },	-- "Earth-Slasher" Master Plow
+					["coord"] = { 53.2, 51.8, 376 },
 				}),
 				q(30073, {	-- The Emperor
 					["sourceQuests"] = {
@@ -1327,6 +1489,13 @@ _.Zones =
 						i(81843),	-- Cloak of the Grassy Cline
 					},
 				}),
+				q(31315, {	-- The Heartland Legacy
+					["provider"] = { "o", 213767 },	-- Hidden Treasure
+					["sourceQuests"] = { 31314 },	-- Old Man Thistle's Treasure
+					["g"] = {
+						ach(7296),	-- Ain't Lost No More
+					},
+				}),
 				q(29983, {	-- The Hidden Master
 					["sourceQuests"] = {
 						29981,	-- Stemming the Swarm
@@ -1337,9 +1506,8 @@ _.Zones =
 				}),
 				q(31936, {	-- The "Jinyu Princess" Irrigation System
 					["sourceQuests"] = { 30516 },	-- Growing the Farm I: A Little Problem
-					["description"] = "Begins with a purchase of the \"Jinyu Princess\" Irrigation System from Gina Mudclaw",
+					["provider"] = { "i", 89812 },	-- "Jinyu Princess" Irrigation System
 					["coord"] = { 53.2, 51.8, 376 },
-					["provider"] = { "n", 58706 },	-- Gina Mudclaw
 				}),
 				q(30336, {	-- The Kunzen Hunter-Chief
 					["isDaily"] = true,
@@ -1385,12 +1553,17 @@ _.Zones =
 					["coord"] = { 63.5, 58.4, 376 },
 					["provider"] = { "n", 57424 },	-- Journeyman Chu
 				}),
+				q(31312, {	-- The Old Map
+					["crs"] = { 59639 },	-- Enormous Cattail Grouper
+					["provider"] = { "i", 86404 },	-- Old Map
+					["description"] = "Requires a reputation level of Exalted with The Tillers and Best Friend with all Halfhill farmers to drop.",
+				}),
 				q(31674, {	-- The Pink Turnip Challenge
 					["isDaily"] = true,
 					["coord"] = { 52.2, 48.8, 376 },
 					["provider"] = { "n", 58646 },	-- Farmer Yoon
 				}),
-				q(30032,  {	-- The Quest for Better Barley
+				q(30032, {	-- The Quest for Better Barley
 					["sourceQuests"] = { 30029 },	-- Wee Little Shenanigans
 					["coord"] = { 52.7, 63.0, 376 },
 					["provider"] = { "n", 57211 },	-- Grainlord Kai
@@ -1463,13 +1636,33 @@ _.Zones =
 					["coord"] = { 68.7, 43.2, 376 },
 					["provider"] = { "n", 56474 },	-- Mudmug
 				}),
-				i(89813, {	-- "Thunder King" Pest Repellers
-					q(31937, {	-- "Thunder King" Pest Repellers
-						["sourceQuests"] = { 30523 },	-- Growing the Farm II: The Broken Wagon
-						["description"] = "Begins with a purchase of the \"Thunder King\" Pest Repellers from Gina Mudclaw",
-						["coord"] = { 53.2, 51.8, 376 },
-						["provider"] = { "n", 58706 },	-- Gina Mudclaw
-					}),
+				q(31937, {	-- "Thunder King" Pest Repellers
+					["sourceQuests"] = { 30523 },	-- Growing the Farm II: The Broken Wagon
+					["provider"] = { "i", 89813 },	-- "Thunder King" Pest Repellers
+					["coord"] = { 53.2, 51.8, 376 },
+				}),
+				q(31326, {	-- Tina's Tasteful Tiara
+					["description"] = "Requires reputation level of \"Buddy\" or better with Tina Mudclaw to drop.",
+					["provider"] = { "i", 86434 },	-- Tasteful Tiara
+					["crs"] = {
+						59120,	-- Kunzen Rockflinger
+						59126,	-- Jokka-Jokka
+						59128,	-- Jim-Jim
+						59130,	-- Teeku
+						59127,	-- Kon-Kon
+						59129,	-- Maaka
+						59125,	-- Kunzen Soupmaster
+						59123,	-- Kunzen Ritualist
+						59134,	-- Yammo
+						59121,	-- Kunzen Hunter
+						59133,	-- Buk-Buk
+						59131,	-- Lor-Lor
+						59135,	-- Bimba
+						59124,	-- Kunzen Collector
+						59132,	-- Rit-Rit
+						59119,	-- Kunzen Ravager
+						59122,	-- Kunzen Herdskeeper
+					},
 				}),
 				q(30185, {	-- Tortoise Mastery
 					["sourceQuests"] = {
@@ -1576,84 +1769,111 @@ _.Zones =
 					["coord"] = { 52.2, 48.8, 376 },
 					["provider"] = { "n", 58646 },	-- Farmer Yoon
 				}),
-				o(218750, {	-- Work Orders
-					["description"] = "All work order quests are available after completing \"Inherit the Earth\".",
-					["g"] = {
-						q(32642, {	-- Work Order: Dominance Offensive I
-							["sourceQuests"] = { 32682 },	-- Inherit the Earth
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-						}),
-						q(32643, {	-- Work Order: Dominance Offensive II
-							["sourceQuests"] = { 32642 },	-- Work Order: Dominance Offensive I
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-						}),
-						q(32944, {	-- Work Order: Kirin Tor Offensive I
-							["sourceQuests"] = { 32682 },	-- Inherit the Earth
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-						}),
-						q(32945, {	-- Work Order: Kirin Tor Offensive II
-							["sourceQuests"] = { 32944 },	-- Work Order: Kirin Tor Offensive I
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-						}),
-						q(32647, {	-- Work Order: Golden Lotus I
-							["sourceQuests"] = { 32682 },	-- Inherit the Earth
-							["isDaily"] = true,
-						}),
-						q(32648, {	-- Work Order: Golden Lotus II
-							["sourceQuests"] = { 32647 },	-- Work Order: Golden Lotus I
-							["isDaily"] = true,
-						}),
-						q(32645, {	-- Work Order: Operation: Shieldwall I
-							["sourceQuests"] = { 32682 },	-- Inherit the Earth
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-						}),
-						q(32646, {	-- Work Order: Operation: Shieldwall II
-							["sourceQuests"] = { 32645 },	-- Work Order: Operation: Shieldwall I
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-						}),
-						q(32649, {	-- Work Order: Shado-Pan I
-							["sourceQuests"] = { 32682 },	-- Inherit the Earth
-							["isDaily"] = true,
-						}),
-						q(32650, {	-- Work Order: Shado-Pan II
-							["sourceQuests"] = { 32649 },	-- Work Order: Shado-Pan I
-							["isDaily"] = true,
-						}),
-						q(32942, {	-- Work Order: Sunreaver Onslaught I
-							["sourceQuests"] = { 32682 },	-- Inherit the Earth
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-						}),
-						q(32943, {	-- Work Order: Sunreaver Onslaught II
-							["sourceQuests"] = { 32942 },	-- Work Order: Sunreaver Onslaught I
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-						}),
-						q(32653, {	-- Work Order: The August Celestials I
-							["sourceQuests"] = { 32682 },	-- Inherit the Earth
-							["isDaily"] = true,
-						}),
-						q(32657, {	-- Work Order: The August Celestials II
-							["sourceQuests"] = { 32653 },	-- Work Order: The August Celestials I
-							["isDaily"] = true,
-						}),
-						q(32658, {	-- Work Order: The Klaxxi I
-							["sourceQuests"] = { 32682 },	-- Inherit the Earth
-							["isDaily"] = true,
-						}),
-						q(32659, {	-- Work Order: The Klaxxi II
-							["sourceQuests"] = { 32658 },	-- Work Order: The Klaxxi I
-							["isDaily"] = true,
-						}),
-					},
+				q(32642, {	-- Work Order: Dominance Offensive I
+					["sourceQuests"] = { 32682 },	-- Inherit the Earth
+					["provider"] = { "o", 218750 },	-- Work Orders
+					["coord"] = { 52.3, 48.7, 376 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
 				}),
-				q(29945,  {	-- Yellow and Red Make Orange
+				q(32643, {	-- Work Order: Dominance Offensive II
+					["sourceQuests"] = { 32642 },	-- Work Order: Dominance Offensive I
+					["provider"] = { "o", 218750 },	-- Work Orders
+					["coord"] = { 52.3, 48.7, 376 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+				}),
+				q(32944, {	-- Work Order: Kirin Tor Offensive I
+					["sourceQuests"] = { 32682 },	-- Inherit the Earth
+					["provider"] = { "o", 218750 },	-- Work Orders
+					["coord"] = { 52.3, 48.7, 376 },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+				}),
+				q(32945, {	-- Work Order: Kirin Tor Offensive II
+					["sourceQuests"] = { 32944 },	-- Work Order: Kirin Tor Offensive I
+					["provider"] = { "o", 218750 },	-- Work Orders
+					["coord"] = { 52.3, 48.7, 376 },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+				}),
+				q(32647, {	-- Work Order: Golden Lotus I
+					["sourceQuests"] = { 32682 },	-- Inherit the Earth
+					["provider"] = { "o", 218750 },	-- Work Orders
+					["coord"] = { 52.3, 48.7, 376 },
+					["isDaily"] = true,
+				}),
+				q(32648, {	-- Work Order: Golden Lotus II
+					["sourceQuests"] = { 32647 },	-- Work Order: Golden Lotus I
+					["provider"] = { "o", 218750 },	-- Work Orders
+					["coord"] = { 52.3, 48.7, 376 },
+					["isDaily"] = true,
+				}),
+				q(32645, {	-- Work Order: Operation: Shieldwall I
+					["sourceQuests"] = { 32682 },	-- Inherit the Earth
+					["provider"] = { "o", 218750 },	-- Work Orders
+					["coord"] = { 52.3, 48.7, 376 },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+				}),
+				q(32646, {	-- Work Order: Operation: Shieldwall II
+					["sourceQuests"] = { 32645 },	-- Work Order: Operation: Shieldwall I
+					["provider"] = { "o", 218750 },	-- Work Orders
+					["coord"] = { 52.3, 48.7, 376 },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+				}),
+				q(32649, {	-- Work Order: Shado-Pan I
+					["sourceQuests"] = { 32682 },	-- Inherit the Earth
+					["provider"] = { "o", 218750 },	-- Work Orders
+					["coord"] = { 52.3, 48.7, 376 },
+					["isDaily"] = true,
+				}),
+				q(32650, {	-- Work Order: Shado-Pan II
+					["sourceQuests"] = { 32649 },	-- Work Order: Shado-Pan I
+					["provider"] = { "o", 218750 },	-- Work Orders
+					["coord"] = { 52.3, 48.7, 376 },
+					["isDaily"] = true,
+				}),
+				q(32942, {	-- Work Order: Sunreaver Onslaught I
+					["sourceQuests"] = { 32682 },	-- Inherit the Earth
+					["provider"] = { "o", 218750 },	-- Work Orders
+					["coord"] = { 52.3, 48.7, 376 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+				}),
+				q(32943, {	-- Work Order: Sunreaver Onslaught II
+					["sourceQuests"] = { 32942 },	-- Work Order: Sunreaver Onslaught I
+					["provider"] = { "o", 218750 },	-- Work Orders
+					["coord"] = { 52.3, 48.7, 376 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+				}),
+				q(32653, {	-- Work Order: The August Celestials I
+					["sourceQuests"] = { 32682 },	-- Inherit the Earth
+					["provider"] = { "o", 218750 },	-- Work Orders
+					["coord"] = { 52.3, 48.7, 376 },
+					["isDaily"] = true,
+				}),
+				q(32657, {	-- Work Order: The August Celestials II
+					["sourceQuests"] = { 32653 },	-- Work Order: The August Celestials I
+					["provider"] = { "o", 218750 },	-- Work Orders
+					["coord"] = { 52.3, 48.7, 376 },
+					["isDaily"] = true,
+				}),
+				q(32658, {	-- Work Order: The Klaxxi I
+					["sourceQuests"] = { 32682 },	-- Inherit the Earth
+					["provider"] = { "o", 218750 },	-- Work Orders
+					["coord"] = { 52.3, 48.7, 376 },
+					["isDaily"] = true,
+				}),
+				q(32659, {	-- Work Order: The Klaxxi II
+					["sourceQuests"] = { 32658 },	-- Work Order: The Klaxxi I
+					["provider"] = { "o", 218750 },	-- Work Orders
+					["coord"] = { 52.3, 48.7, 376 },
+					["isDaily"] = true,
+				}),
+				q(29945, {	-- Yellow and Red Make Orange
 					["sourceQuests"] = { 29919 },	-- Great Minds Drink Alike
 					["coord"] = { 68.9, 43.3, 376 },
 					["provider"] = { "n", 56138 },	-- Li Li
@@ -1665,83 +1885,6 @@ _.Zones =
 					["isDaily"] = true,
 					["provider"] = { "n", 58647 },	-- Ella
 				}),
---[[
-				q(30400),	-- A Blue Feather for Chee Chee
-				q(30382),	-- A Blue Feather for Ella
-				q(30419),	-- A Blue Feather for Farmer Fung
-				q(30425),	-- A Blue Feather for Fish
-				q(30388),	-- A Blue Feather for Gina
-				q(30412),	-- A Blue Feather for Haohan
-				q(30437),	-- A Blue Feather for Jogu
-				q(30394),	-- A Blue Feather for Old Hillpaw
-				q(30406),	-- A Blue Feather for Sho
-				q(30431),	-- A Blue Feather for Tina
-				q(30399),	-- A Jade Cat for Chee Chee
-				q(30381),	-- A Jade Cat for Ella
-				q(30418),	-- A Jade Cat for Farmer Fung
-				q(30424),	-- A Jade Cat for Fish
-				q(30387),	-- A Jade Cat for Gina
-				q(30411),	-- A Jade Cat for Haohan
-				q(30436),	-- A Jade Cat for Jogu
-				q(30393),	-- A Jade Cat for Old Hillpaw
-				q(30405),	-- A Jade Cat for Sho
-				q(30430),	-- A Jade Cat for Tina
-				q(30398),	-- A Lovely Apple for Chee Chee
-				q(30189),	-- A Lovely Apple for Ella
-				q(30417),	-- A Lovely Apple for Farmer Fung
-				q(30423),	-- A Lovely Apple for Fish
-				q(30380),	-- A Lovely Apple for Gina
-				q(30410),	-- A Lovely Apple for Haohan
-				q(30435),	-- A Lovely Apple for Jogu
-				q(30392),	-- A Lovely Apple for Old Hillpaw
-				q(30404),	-- A Lovely Apple for Sho
-				q(30429),	-- A Lovely Apple for Tina
-				q(30401),	-- A Marsh Lily for Chee Chee
-				q(30383),	-- A Marsh Lily for Ella
-				q(30420),	-- A Marsh Lily for Farmer Fung
-				q(30426),	-- A Marsh Lily for Fish
-				q(30389),	-- A Marsh Lily for Gina
-				q(30413),	-- A Marsh Lily for Haohan
-				q(30438),	-- A Marsh Lily for Jogu
-				q(30395),	-- A Marsh Lily for Old Hillpaw
-				q(30407),	-- A Marsh Lily for Sho
-				q(30432),	-- A Marsh Lily for Tina
-				q(30397),	-- A Ruby Shard for Chee Chee
-				q(30160),	-- A Ruby Shard for Ella
-				q(30416),	-- A Ruby Shard for Farmer Fung
-				q(30422),	-- A Ruby Shard for Fish
-				q(30379),	-- A Ruby Shard for Gina
-				q(30409),	-- A Ruby Shard for Haohan
-				q(30434),	-- A Ruby Shard for Jogu
-				q(30391),	-- A Ruby Shard for Old Hillpaw
-				q(30403),	-- A Ruby Shard for Sho
-				q(30428),	-- A Ruby Shard for Tina
-]]--
---[[
-				-- No available information
-				q(33139),	-- Secrets Lost, Forever? -- Removed
-				q(31530),	-- Mission: The Hozen Dozen -- Present in Beta but never made it to live servers
-
-				q(31153),	-- Tracking Event - Saved Diaani
-				q(31154),	-- Tracking Event - Saved Zuulo
-				q(30531),	-- Tracking Event: Finished First Expansion
-				q(30533),	-- Tracking Event: Finished Second Expansion
-				q(30574),	-- Tracking Event: Finished Third Expansion
-				q(30530),	-- Tracking Event: Started First Expansion
-				q(30532),	-- Tracking Event: Started Second Expansion
-				q(30573),	-- Tracking Event: Started Third Expansion
-				q(30564),	-- Tracking Event: Talked to Dog at Farm
-				q(31960),	-- Tracking Event: Vote #1 Complete
-				q(31961),	-- Tracking Event: Vote #2 Complete
-				q(31962),	-- Tracking Event: Vote #3 Complete
-				q(31963),	-- Tracking Event: Vote #4 Complete
-				q(31964),	-- Tracking Event: Vote #5 Complete
-				q(31965),	-- Tracking Event: Vote #6 Complete
-				q(33900),	-- Tracking Quest: Activated Arkonite 3
-				q(33901),	-- Tracking Quest: Activated Arkonite 4
-				q(33903),	-- Tracking Quest: Romuul & Yrel Leave for Teluuna
-				q(33899),	-- Tracking Quest: Turn on the Holograms
---]]
 			}),
 		}),
 	}),

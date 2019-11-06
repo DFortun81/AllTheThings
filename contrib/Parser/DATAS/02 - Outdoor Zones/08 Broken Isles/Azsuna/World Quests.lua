@@ -45,10 +45,6 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = 182,	-- Herbalism
 				}),
-				q(45838, {	-- Assault on Azsuna (Invasion "wrapper" quest)
-					["lvl"] = 98,
-					["isWorldQuest"] = true,
-				}),
 				q(42165, {	-- Azsuna Specimens
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
@@ -526,6 +522,10 @@ _.Zones =
 				q(46162, {	-- Subjugator Val'rek (Invasion WQ)
 					["lvl"] = 98,
 					["isWorldQuest"] = true,
+				}),
+				q(41288, {	-- Supplies Needed: Aethril
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 				q(41315, {	-- Supplies Needed: Leystone
 					["lvl"] = 110,

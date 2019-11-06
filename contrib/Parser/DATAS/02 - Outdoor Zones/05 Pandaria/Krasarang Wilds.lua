@@ -7,53 +7,74 @@ _.Zones =
 		m(418, {	-- Krasarang Wilds
 			["achievementID"] = 6975,
 			["description"] = "|cff66ccffThe Krasarang Wilds along Pandaria's southern coast conceal many ancient secrets of a lost dynasty that have drawn the attention of prophecy-seekers among the Alliance and Horde. The Wilds are also home to the vicious, domineering mogu, and a more insidious danger still: the Sha of Despair is believed to have escaped from its bindings in the Temple of the Red Crane, and stifling gloom has begun to blanket the land in its path.|r",
+			["maps"] = {
+				419,	-- Ruins of Ogudei
+				420,	-- Ruins of Ogudei #2
+			},
 			["lvl"] = 81,
 			["g"] = {
 			--	if you add coordinates to any part of this file, make sure you verify them manually!  the coordinates listed on wowhead (as of september 2019) are incorrect and probably based on an older version of the krasarang map.  if you use those coordinates instead of manually confirming them, they'll place you outside of /tar range.
 				n(-4, {	-- Achievements
+					ach(9069, {	-- An Awfully Big Adventure
+						["collectible"] = false,
+						["filterID"] = 101,	-- Battle Pet
+						["g"] = {
+							crit(24, {	-- Mo'ruk
+								["coord"] = { 65.0, 42.7, 418 },
+								["cr"] = 66733,	-- Mo'ruk <Grand Master Pet Tamer>
+							}),
+						},
+					}),
 					ach(7287),	-- Champion of Chi-Ji (Cradle of Chi-Ji)
 					ach(7284, {	-- Is Another Man's Treasure
-						o(214439, {		-- Barrel of Banana Infused Rum
-							["g"] = {
-								i(87266),	-- Recipe: Banana Infused Rum
-							},
-							["questID"] = 31411,	-- Barrel of Banana Infused Rum Quest Tracker
-						}),
-						o(213651, { 	-- Equipment Locker
-							["g"] = {
-								i(86122),	-- Plankwalking Greaves
-								i(86115),	-- Swashbuckling Boots
-								i(86117),	-- Seafarer's Treads of Precision
-								i(86116),	-- Agile Seafarer's Jackboots
-								i(86123),	-- Seafarer's Sturdy Boots
-								i(86118),	-- Seafaring Advisor's Slippers
-								i(86119),	-- Seafarer's Boots of Meditation
-								i(86120),	-- Seafaring Sabatons of Meditation
-								i(86121),	-- Radiant Seafarer's Boots
-							},
-							["coord"] = { 42.3, 92.0 },
-							["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
-							["modelScale"] = 1.5,
-							["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
-							["questID"] = 31410,
-							["description"] = "On the bottom level of the ship — you will have to go down two sets of stairs.",
-						}),
-						o(213653, {		-- Pandaren Fishing Spear
-							["g"] = {
-								i(86124),	-- Pandaren Fishing Spear
-							},
-							["questID"] = 31409,
-						}),
+						["collectible"] = false,
+						["g"] = {
+							o(214439, {		-- Barrel of Banana Infused Rum
+								["questID"] = 31411,	-- Barrel of Banana Infused Rum Quest Tracker
+								["coord"] = { 54.0, 88.0, 418 },
+								["g"] = {
+									i(87266),	-- Recipe: Banana Infused Rum
+								},
+							}),
+							o(213651, { 	-- Equipment Locker
+								["coord"] = { 42.3, 92.0, 418 },
+								["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
+								["modelScale"] = 1.5,
+								["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
+								["questID"] = 31410,
+								["description"] = "On the bottom level of the ship — you will have to go down two sets of stairs.",
+								["g"] = {
+									i(86122),	-- Plankwalking Greaves
+									i(86115),	-- Swashbuckling Boots
+									i(86117),	-- Seafarer's Treads of Precision
+									i(86116),	-- Agile Seafarer's Jackboots
+									i(86123),	-- Seafarer's Sturdy Boots
+									i(86118),	-- Seafaring Advisor's Slippers
+									i(86119),	-- Seafarer's Boots of Meditation
+									i(86120),	-- Seafaring Sabatons of Meditation
+									i(86121),	-- Radiant Seafarer's Boots
+								},
+							}),
+							o(213653, {		-- Pandaren Fishing Spear
+								["questID"] = 31409,
+								["coord"] = { 52.0, 46.0, 418 },
+								["g"] = {
+									i(86124),	-- Pandaren Fishing Spear
+								},
+							}),
+						},
 					}),
 					ach(7997, {	-- Riches of Pandaria
-						o(213750, {	-- Saurok Stone Tablet
-							["g"] = {
-								i(86220, {	-- Saurok Stone Tablet
-									["questID"] = 31408,
-								}),
-							},
-							["description"] = "Located in a cave at (71,9)",
-						}),
+						["collectible"] = false,
+						["g"] = {
+							o(213750, {	-- Saurok Stone Tablet
+								["questID"] = 31408,
+								["description"] = "Located in a cave at (71,9)",
+								["g"] = {
+									i(86220),	-- Saurok Stone Tablet
+								},
+							}),
+						},
 					}),
 				}),
 				filter(101, {	-- Battle Pet
@@ -151,6 +172,13 @@ _.Zones =
 							{ "n", 68399 },	-- 7th Legion Champion
 						},
 						["races"] = ALLIANCE_ONLY,
+					}),
+					q(32248, {	-- A Little Patience
+						["provider"] = { "n", 67940 },	-- Admiral Taylor
+						["coord"] = { 89.4, 32.6, 418 },
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 90,
+						["maps"] = { 487 },	-- A Little Patience
 					}),
 					q(30695, {	-- Ahead on the Way
 						["provider"] = { "n", 59138 },	-- Koro Mistwalker
@@ -433,6 +461,13 @@ _.Zones =
 							i(88044),	-- Dojani Waistband
 						},
 					}),
+					q(32251, {	-- Dagger in the Dark
+						["provider"] = { "n", 67939 },	-- General Nazgrim
+						["coord"] = { 10.4, 53.8, 418 },
+						["races"] = HORDE_ONLY,
+						["maps"] = { 488, 489 },	-- Dagger in the Dark
+						["lvl"] = 90,
+					}),
 					q(32414, {	-- Darnassus Attacked?
 						["provider"] = { "n", 67940 },	-- Admiral Taylor
 						["races"] = ALLIANCE_ONLY,
@@ -584,6 +619,7 @@ _.Zones =
 					}),
 					q(32130, {	-- Good Luck, Have Fun
 						["provider"] = { "n", 67402 },	-- Zazzix "Toasty" Sparkrocket
+						["coord"] = { 79.7, 30.0, 418 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -615,6 +651,7 @@ _.Zones =
 					}),
 					q(32135, {	-- Hero Killer
 						["provider"] = { "n", 67628 },	-- Shademaster Kiryn
+						["coord"] = { 79.7, 30.4, 418 },
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 32450 },	-- The Time is Now!
 						["isDaily"] = true,
@@ -900,8 +937,9 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(32256, {	-- Rise Of An Empire
-						["provider"] = { "n", 67939 },	-- General Nazgrim
+						["coord"] = { 9.3, 51.1, 418 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 67939 },	-- General Nazgrim
 					}),
 					q(32137, {	-- Runnin' On Empty
 						["provider"] = { "n", 67542 },	-- Grizzle Gearslip
@@ -938,6 +976,7 @@ _.Zones =
 					q(32133, {	-- Sentry Wards
 						["provider"] = { "n", 67628 },	-- Shademaster Kiryn
 						["races"] = HORDE_ONLY,
+						["coord"] = { 79.7, 30.4, 418 },
 						["isDaily"] = true,
 					}),
 					q(30356, {	-- Sever Their Supply Line
@@ -1060,6 +1099,12 @@ _.Zones =
 					q(32332, {	-- The First Riddle: Mercy
 						["provider"] = { "n", 68003 },	-- The Monkey King
 						["races"] = ALLIANCE_ONLY,
+					}),
+					q(31058, {	-- The Funky Monkey Brew
+						["provider"] = { "n", 65289 },	-- Brewmaster Bo
+						["coord"] = { 52.0, 76.8, 418 },
+						["lvl"] = 90,
+						["maps"] = { 450 },	-- Unga Ingoo
 					}),
 					q(36882, {	-- The Great Angler Returns
 						["provider"] = { "n", 63721 },	-- Nat Pagle
@@ -1300,6 +1345,7 @@ _.Zones =
 					}),
 					q(32450, {	-- The Time Is Now!
 						["provider"] = { "n", 67880 },	-- Blood Guard Gro'tash
+						["coord"] = { 9.0, 51.3, 418 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -1427,6 +1473,12 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 30174 },	-- For Family
 					}),
+					q(32131, {	-- We Require More Minerals!
+						["provider"] = { "n", 67402 },	-- Zazzix "Toasty" Sparkrocket
+						["coord"] = { 79.7, 30.0, 418 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+					}),
 					q(32142, {	-- We Will Rock You
 						["provider"] = { "n", 67386 },	-- Sky Admiral Rogers
 						["races"] = ALLIANCE_ONLY,
@@ -1499,6 +1551,7 @@ _.Zones =
 					}),
 					q(32132, {	-- Worker Harassment
 						["provider"] = { "n", 67628 },	-- Shademaster Kiryn
+						["coord"] = { 79.7, 30.4, 418 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -1542,10 +1595,6 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 					q(32223, {	-- Wanted: Lieutenant Ethan Jacobson
-						["u"] = 40,
-						["races"] = HORDE_ONLY,
-					}),
-					q(32131, {	-- We Require More Minerals!
 						["u"] = 40,
 						["races"] = HORDE_ONLY,
 					}),
@@ -1601,6 +1650,9 @@ _.Zones =
 						},
 					}),
 					n(68318, {	-- Dalan Nightbreaker
+						["questID"] = 34062,
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
 						["coords"] = {
 							{ 85.0, 27.6, 418 },
 							{ 89.6, 22.4, 418 },
@@ -1622,6 +1674,9 @@ _.Zones =
 						},
 					}),
 					n(68319, {	-- Disha Fearwarden
+						["questID"] = 34061,
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
 						["coord"] = { 87.4, 29.2, 418 },
 						["g"] = {
 							i(92787),	-- Horde Insignia of Conquering
@@ -1684,6 +1739,9 @@ _.Zones =
 						},
 					}),
 					n(68317, {	-- Mavis Harms
+						["questID"] = 34060,
+						["isDaily"] = true,
+						["races"] = HORDE_ONLY,
 						["coords"] = {
 							{ 89, 26.8, 418 },
 							{ 84.6, 31, 418 },

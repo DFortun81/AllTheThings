@@ -675,6 +675,8 @@ _.Zones =
 					["sourceQuest"] = 25684,	-- Attune the Bloodstone
 				}),
 				q(25707, {	-- The Future of the Rockpool
+					["sourceQuests"] = { 25703 },	-- Atrocities
+					["provider"] = { "n", 41402 },	-- Abandoned Bloodwash Crate
 					["coord"] = { 61.4, 64.0, 17 },
 					["description"] = "Interact with one of the chests full of baby Murlocs off the coast of the Red Reaches.",
 				}),
@@ -789,7 +791,11 @@ _.Zones =
 				}),
 				q(25714, {	-- Watcher Mahar Ba
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 25711,	-- Eliminate the Okril'lon
+					["sourceQuests"] = {
+						25709,	-- Curtail the Darktail
+						25711,	-- Eliminate the Okril'lon
+						25708,	-- Our Fallen Friends
+					},
 					["providers"] = {
 						{ "n", 5393 },	-- Quartermaster Lungertz
 						{ "n", 9540 },	-- Enohar Thunderbrew

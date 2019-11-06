@@ -16,6 +16,16 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
+				prof(755, {	-- Jewelcrafting
+					q(55582, {	-- Atal'Dazar: Not All That Glitters... (A)
+						["provider"] = { "n", 150894 },	-- Shrine of Nature
+						["coord"] = { 43.2, 64.3, 862 },
+						["modelScale"] = 2,
+						["sourceQuest"] = 49584,	-- The Missing Chapter (A)
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["races"] = ALLIANCE_ONLY,
+					}),
+				}),
 				prof(186, {	-- Mining
 					q(52044, {	-- An Exceptional Platinum Shard
 						["requireSkill"] = 186,	-- Mining

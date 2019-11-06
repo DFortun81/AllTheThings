@@ -12,6 +12,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
+					q(52057, {	-- Against the Storm
+						["lvl"] = 120,
+						["isWorldQuest"] = true,
+					}),
 					q(51225, {	-- Albatrocity
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -28,9 +32,9 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(51577, {	-- Defending the Academy
-						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
 					}),
 					q(50776, {	-- False Prophets
 						["lvl"] = 120,
@@ -234,9 +238,9 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(50767, {	-- The Scrimshaw Gang
-						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
 					}),
 					q(51621, {	-- Tidal Teachings
 						["lvl"] = 120,
@@ -247,6 +251,19 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(51758, {	-- Weapons Shipment
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+					}),
+					q(50992, {	-- Work Order: Calcified Bone
+						["provider"] = { "n", 135808 },	-- Provisioner Fray
+						["lvl"] = 120,
+						["coord"] = { 67.61, 21.81, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = 393,	-- Skinning
 					}),
 					q(52389, {	-- Work Order: Contract: Proudmoore Admiralty
 						["lvl"] = 120,
@@ -294,18 +311,44 @@ _.Zones =
 						},
 					}),
 					q(52405, {	-- Work Order: Kubiline
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["provider"] = { "n", 135808 },	-- Provisioner Fray
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["provider"] = { "n", 135808 },	-- Provisioner Fray
+						["requireSkill"] = 755,	-- Jewelcrafting
 						["coord"] = { 67.61, 21.81, 1161 },
 					}),
-					q(52392, {	-- Work Order: Ultramarine Pigment
-						["requireSkill"] = 773,	-- Inscription
+					q(52339, {	-- Work Order: Monel-Hardened Stirrups
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+						["requireSkill"] = 164,	-- Blacksmithing
+					}),
+					q(50995, {	-- Work Order: Shimmerscale
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = 393,	-- Skinning
+					}),
+					q(52416, {	-- Work Order: Shimmerscale Diving Suit
+						["provider"] = { "n", 135808 },	-- Provisioner Fray
+						["lvl"] = 120,
+						["coord"] = { 67.61, 21.81, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = 165,	-- Leatherworking
+					}),
+					q(52392, {	-- Work Order: Ultramarine Pigment
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = 773,	-- Inscription
+					}),
+					q(50984, {	-- Work Order: Winter's Kiss
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = 182,	-- Herbalism
 					}),
 					q(52366, {	-- Work Order: XA-1000 Surface Skimmer
 						["lvl"] = 120,

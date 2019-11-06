@@ -762,10 +762,8 @@ _.Zones =
 					["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
 					["requireSkill"] = 773,
 					["isWeekly"] = true,
-					["groups"] = {
-						{	-- Inscribed Monument
-							["recipeID"] = 127481,	-- Inscribed Monument
-						},
+					["g"] = {
+						recipe(127481),	-- Inscribed Monument
 					},
 				}),
 				q(31130, {	-- A Visit with Lorewalker Cho
@@ -859,6 +857,7 @@ _.Zones =
 				}),
 				q(30567, {	-- Blanche's Boomer Brew
 					["provider"] = { "n", 59569 },	-- Brewmaster Blanche
+					["coord"] = { 38.8, 31.1, 371 },
 				}),
 				q(29892, {	-- Body
 					["provider"] = { "n", 56287 },	-- Lorewalker Cho
@@ -1155,10 +1154,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["requireSkill"] = 773,
 					["isWeekly"] = true,
-					["groups"] = {
-						{	-- Incarnadine Ink
-							["recipeID"] = 127475,	-- Incarnadine Ink
-						},
+					["g"] = {
+						recipe(127475),	-- Incarnadine Ink
 					},
 				}),
 				q(29936, {	-- Instant Messaging
@@ -1352,10 +1349,8 @@ _.Zones =
 					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
 					["requireSkill"] = 773,
 					["isWeekly"] = true,
-					["groups"] = {
-						{	-- Portrait of Madam Goya
-							["recipeID"] = 128922,	-- Portrait of Madam Goya
-						},
+					["g"] = {
+						recipe(128922),	-- Portrait of Madam Goya
 					},
 				}),
 				q(29891, {	-- Potency
@@ -1524,10 +1519,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["requireSkill"] = 773,
 					["isWeekly"] = true,
-					["groups"] = {
-						{	-- Engraved Jade Disk
-							["recipeID"] = 127391,	-- Engraved Jade Disk
-						},
+					["g"] = {
+						recipe(127391),	-- Engraved Jade Disk
 					},
 				}),
 				q(29995, {	-- Shrine of the Dawn
@@ -1634,6 +1627,7 @@ _.Zones =
 						{ "n", 66247 },	-- Tigermaster Liu-Do
 					},
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(29933, {	-- The Bees' Knees
 					["provider"] = { "n", 56351 },	-- Bo Bo
@@ -1849,6 +1843,7 @@ _.Zones =
 				}),
 				q(29617, {	-- Tian Monastery
 					["provider"] = { "n", 54998 },	-- Apprentice Yufi
+					["isBreadcrumb"] = true,
 				}),
 				q(29754, {	-- To Bridge Earth and Sky
 					["provider"] = { "n", 55614 },	-- Pei-Zhi

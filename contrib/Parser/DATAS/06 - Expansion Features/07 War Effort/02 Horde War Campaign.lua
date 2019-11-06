@@ -981,14 +981,6 @@ _.ExpansionFeatures =
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
 					}),
-					q(53003, {	-- A Cycle of Hatred
-						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-						["coord"] = { 58.4, 62.6, 862 },
-						["sourceQuest"] = 52192,	-- The Aid of the Tides
-						["minReputation"] = { 2157, REVERED },
-						["races"] = HORDE_ONLY,
-						["lvl"] = 120,
-					}),
 					q(52861, {	-- Champion: Lilian Voss
 						["provider"] = { "n", 141961 },	-- Lilian Voss
 						["coord"] = { 58.4, 62.6, 862 },
@@ -999,6 +991,14 @@ _.ExpansionFeatures =
 						["g"] = {
 							follower(1062),	-- Lilian Voss
 						},
+					}),
+					q(53003, {	-- A Cycle of Hatred
+						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+						["coord"] = { 58.4, 62.6, 862 },
+						["sourceQuest"] = 52192,	-- The Aid of the Tides
+						["minReputation"] = { 2157, REVERED },
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					-- Tides of Vengeance
 					q(53850, {	-- Our War Continues
@@ -1225,7 +1225,7 @@ _.ExpansionFeatures =
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
 					}),
-					q(54094, {	-- Breaking Out Ashvane
+					q(54121, {	-- Breaking Out Ashvane
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
 						["sourceQuest"] = 54094,	-- A Goblin's Definition of Success
@@ -1236,7 +1236,7 @@ _.ExpansionFeatures =
 					q(54175, {	-- Face Your Enemy
 						["provider"] = { "n", 147088 },	-- Arcanist Valtrois
 						["coord"] = { 82.9, 49.5, 895 },
-						["sourceQuest"] = 54094,	-- Breaking Out Ashvane
+						["sourceQuest"] = 54121,	-- Breaking Out Ashvane
 						["minReputation"] = { 2157, REVERED+14000 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
@@ -1245,7 +1245,7 @@ _.ExpansionFeatures =
 					q(54176, {	-- Be More Uniform
 						["provider"] = { "n", 147088 },	-- Arcanist Valtrois
 						["coord"] = { 82.9, 49.5, 895 },
-						["sourceQuest"] = 54094,	-- Breaking Out Ashvane
+						["sourceQuest"] = 54121,	-- Breaking Out Ashvane
 						["minReputation"] = { 2157, REVERED+14000 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
@@ -1254,7 +1254,7 @@ _.ExpansionFeatures =
 					q(54177, {	-- A Brilliant Distraction
 						["provider"] = { "n", 146931 },	-- Rexxar
 						["coord"] = { 83.0, 49.6, 895 },
-						["sourceQuest"] = 54094,	-- Breaking Out Ashvane
+						["sourceQuest"] = 54121,	-- Breaking Out Ashvane
 						["minReputation"] = { 2157, REVERED+14000 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
@@ -1273,10 +1273,10 @@ _.ExpansionFeatures =
 						["lvl"] = 120,
 						["maps"] = { 895 },	-- Tiragarde Sound
 					}),
-					q(54179, {	-- Through the Front Door				-- Need to check for Leather, Mail and Plate rewards
+					q(54179, {	-- Through the Front Door				-- Need to check for Leather and Plate rewards
 						["provider"] = { "n", 147135 },	-- Nathanos Blightcaller
 						["coord"] = { 88.2, 50.8, 895 },
-						["sourceQuest"] = 54094,	-- Breaking Out Ashvane
+						["sourceQuest"] = 54178,	-- Catching a Ride
 						["minReputation"] = { 2157, REVERED+14000 },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
@@ -1290,6 +1290,9 @@ _.ExpansionFeatures =
 							i(163426),	-- Honorbound Artificer's Guise
 							i(163424),	-- Honorbound Artificer's Amice
 							i(163280),	-- Honorbound Artificer's Robes
+							i(163446),	-- Honorbound Vanguard's Skullguard
+							i(163441),	-- Honorbound Vanguard's Shoulderguards
+							i(163282),	-- Honorbound Vanguard's Chainmail
 						},
 					}),
 					q(54139, {	-- War Is Here
@@ -1736,7 +1739,10 @@ _.ExpansionFeatures =
 						["altQuests"] = { 57152 },	-- Most Loyal (Sylvanas Version)
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
-						["maps"] = { 1535 },	-- Durotar (Scenario)
+						["maps"] = {
+							1534,	-- Orgrimmar (Scenario)
+							1535,	-- Durotar (Scenario)
+						},
 					}),
 					q(57152, {	-- Most Loyal (Sylvanas Version)
 					--	["provider"] = { "n", 155789 },	-- Lor'themar Theron
@@ -1748,7 +1754,10 @@ _.ExpansionFeatures =
 						["altQuests"] = { 57095 },	-- Old Soldier
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
-						["maps"] = { 1535 },	-- Durotar (Scenario)
+						["maps"] = {
+							1534,	-- Orgrimmar (Scenario)
+							1535,	-- Durotar (Scenario)
+						},
 					}),
 					
 					--	unsorted below this point

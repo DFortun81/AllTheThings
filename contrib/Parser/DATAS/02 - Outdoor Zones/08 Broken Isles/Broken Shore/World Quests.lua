@@ -7,39 +7,28 @@ _.Zones =
 		m(646, {	-- Broken Shore
 			n(-34, {	-- World Quests
 --[[
-				n(-34, {	-- World Quests
-					q(46209),	-- A Flare In The Dark
-					q(47061),	-- Apocron
-					q(46104),	-- Arachnid Toxicity
-					q(46761),	-- Brew Bandits
-					q(46947),	-- Brutallus
-					q(45358),	-- Contagion Containment
-					q(45531),	-- Creeping Fel
-					q(45969),	-- Defense of the Ancient
-					q(46829),	-- Elemental Abuse
-					q(46288),	-- Everyone to the Front
-					q(46077),	-- Felbound Spirits
-					q(40390),	-- Hallowed Ground
-					q(45541),	-- How Do YOU Like It?!
-					q(46817),	-- Infernal Downfall
-					q(45743),	-- Judgment of Odyn
-					q(45776),	-- Keys are a Crutch
-					q(45653),	-- Kill it with Fire!
-					q(46308),	-- Leave a Trail
-					q(46046),	-- Life's a Lich
-					q(46754),	-- Magical Beasts
-					q(46755),	-- Mission: Felraging
-					q(46833),	-- Nature Unshackled
-					q(45793),	-- Occultist Onslaught
-					q(46752),	-- On Borrowed Wings
-					q(45797),	-- Playing with Green Fire
-					q(45929),	-- Purging the Flames
-					q(45549),	-- Salving the Corruption
-					q(46945),	-- Si'vash
-					q(46762),	-- Storm Brew Hustle
-					q(46811),	-- The Broodmother's Wrath
-					q(46325),	-- The United Front
-				}),
+			n(-34, {	-- World Quests
+				q(46209),	-- A Flare In The Dark
+				q(47061),	-- Apocron
+				q(46104),	-- Arachnid Toxicity
+				q(46947),	-- Brutallus
+				q(45969),	-- Defense of the Ancient
+				q(46077),	-- Felbound Spirits
+				q(40390),	-- Hallowed Ground
+				q(45541),	-- How Do YOU Like It?!
+				q(45743),	-- Judgment of Odyn
+				q(45776),	-- Keys are a Crutch
+				q(45653),	-- Kill it with Fire!
+				q(46046),	-- Life's a Lich
+				q(46754),	-- Magical Beasts
+				q(46755),	-- Mission: Felraging
+				q(45793),	-- Occultist Onslaught
+				q(45929),	-- Purging the Flames
+				q(45549),	-- Salving the Corruption
+				q(46945),	-- Si'vash
+				q(46762),	-- Storm Brew Hustle
+				q(46811),	-- The Broodmother's Wrath
+			}),
 ]]--
 				q(45473, {	-- A Giant Problem
 					["lvl"] = 110,
@@ -81,6 +70,10 @@ _.Zones =
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 				}),
+				q(46761, {	-- Brew Bandits
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 				q(46068, {	-- Brute Wrangling
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
@@ -98,8 +91,16 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(45178, {	-- Contagion Containment
-					["lvl"] = 110,
 					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(45358, {	-- Contagion Containment
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(45531, {	-- Creeping Fel
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 				q(45837, {	-- Creeping Fel
 					["lvl"] = 110,
@@ -112,6 +113,14 @@ _.Zones =
 				q(45970, {	-- Duty's End
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
+				}),
+				q(46829, {	-- Elemental Abuse
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(46288, {	-- Everyone to the Front
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 				q(45878, {	-- Exterminating with Impunity
 					["lvl"] = 110,
@@ -172,9 +181,17 @@ _.Zones =
 					["filterID"] = 101,	-- Battle Pet
 					["isWorldQuest"] = true,
 				}),
+				q(46817, {	-- Infernal Downfall
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 				q(45472, {	-- Kraken Eggs
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
+				}),
+				q(46308, {	-- Leave a Trail
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 				q(46948, {	-- Malificus
 					["lvl"] = 110,
@@ -196,6 +213,10 @@ _.Zones =
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 				}),
+				q(46833, {	-- Nature Unshackled
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 				q(44751, {	-- No Soldier Left Behind
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
@@ -203,6 +224,14 @@ _.Zones =
 				q(45792, {	-- Occultist Onslaught
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
+				}),
+				q(46752, {	-- On Borrowed Wings
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(45797, {	-- Playing with Green Fire
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 				q(46180, {	-- Power of Our Enemy
 					["lvl"] = 110,
@@ -221,7 +250,7 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["g"] = {
 						ach(11607, {	-- They See Me Rolling
-							["description"] = "This achievement is only active with this World Quest.  If you take damage on your barrel you can let it regenerate before turning in."
+							["description"] = "You can only get this achievement when this quest is active.  If your barrel takes damage, you can let it regenerate before rolling to the end of the path and completing the quest.",
 						}),
 					},
 				}),
@@ -268,6 +297,10 @@ _.Zones =
 				q(46032, {	-- The Tormented Return
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
+				}),
+				q(46325, {	-- The United Front
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 				q(46063, {	-- The Wailing Dead
 					["lvl"] = 110,

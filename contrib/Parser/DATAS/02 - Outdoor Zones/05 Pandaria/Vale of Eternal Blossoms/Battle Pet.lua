@@ -66,11 +66,13 @@ _.Zones =
 					
 				}),
 				q(32863, {	-- What We've Been Training For
+					["provider"] = { "n", 64582 },	-- Gentle San
+					["coord"] = { 60.8, 23.6, 390 },
+					["description"] = "Account-Wide Weekly Quest.|r",
+					["isWeekly"] = true,
 					["g"] = {
 						i(98095),	-- Brawler's Pet Supplies
 					},
-					["description"] = "Account-Wide Weekly Quest.|r",
-					["isWeekly"] = true,
 				}),
 				p(751), 	-- Dancing Water Skimmer
 				p(747), 	-- Effevescent Glowfly

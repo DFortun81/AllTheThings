@@ -4,6 +4,7 @@
 
 _.Instances = { tier(6, {	-- Warlords of Draenor
 	inst(477, {	-- Highmaul
+		["order"] = "01",
 		["isRaid"] = true,
 		["lvl"] = 100,
 		["mapID"] = 612,
@@ -24,7 +25,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							77428,	-- Imperator Mar'gok 
 						},
 					})),
-					un(40, i(115281, {	-- Abrogator Stone Cluster
+					un(40, i(115981, {	-- Abrogator Stone Cluster
 						["crs"] = {
 							78714,	-- Kargath
 							77404,	-- The Butcher
@@ -203,7 +204,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							77428,	-- Imperator Mar'gok 
 						},
 					})),
-					un(40, i(115281, {	-- Abrogator Stone Cluster
+					un(40, i(115981, {	-- Abrogator Stone Cluster
 						["crs"] = {
 							78714,	-- Kargath
 							77404,	-- The Butcher
@@ -396,7 +397,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							77428,	-- Imperator Mar'gok 
 						},
 					})),
-					un(40, i(115281, {	-- Abrogator Stone Cluster
+					un(40, i(115981, {	-- Abrogator Stone Cluster
 						["crs"] = {
 							78714,	-- Kargath
 							77404,	-- The Butcher
@@ -589,7 +590,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							77428,	-- Imperator Mar'gok 
 						},
 					})),
-					un(40, i(115281, {	-- Abrogator Stone Cluster
+					un(40, i(115981, {	-- Abrogator Stone Cluster
 						["crs"] = {
 							78714,	-- Kargath
 							77404,	-- The Butcher

@@ -124,6 +124,7 @@ _.Zones =
 					["provider"] = { "n", 125398 },	-- Harold Beckett
 				}),
 				q(50542, {	-- An Explosive Opportunity
+					["isBreadcrumb"] = true,
 					["coord"] = { 66.6, 49.9, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129858 },	-- Wulfred Fizzbracket
@@ -1449,15 +1450,6 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(52057, {	-- Against the Storm
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(52047, {	-- Against the Storm
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(49290, {	-- Aged to Perfection
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1623,9 +1615,6 @@ _.Zones =
 				}),
 				q(52956, {	-- Call to Arms: Tiragarde Sound
 					["races"] = HORDE_ONLY,
-				}),
-				q(52948, {	-- Call to Arms: Tiragarde Sound
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(55340, {	-- Calligraphy
 					["collectible"] = false,
@@ -2822,111 +2811,6 @@ _.Zones =
 					["lvl"] = 120,
 				}),
 				q(49467, {	-- Witch of the Woods
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50983, {	-- Work Order: Akunda's Bite
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52423, {	-- Work Order: Battle Flag: Phalanx Defense
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50992, {	-- Work Order: Calcified Bone
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52389, {	-- Work Order: Contract: Proudmoore Admiralty
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52368, {	-- Work Order: Crow's Nest Scope
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50998, {	-- Work Order: Deep Sea Satin
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52331, {	-- Work Order: Demitri's Draught of Deception
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52355, {	-- Work Order: Enchant Weapon - Coastal Surge
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52356, {	-- Work Order: Enchant Weapon - Torrent of Elements
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52363, {	-- Work Order: Incendiary Ammunition
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52405, {	-- Work Order: Kubiline
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52340, {	-- Work Order: Monel-Hardened Hoofplates
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52339, {	-- Work Order: Monel-Hardened Stirrups
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52333, {	-- Work Order: Sea Mist Potion
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50995, {	-- Work Order: Shimmerscale
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52417, {	-- Work Order: Shimmerscale Diving Helmet
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52416, {	-- Work Order: Shimmerscale Diving Suit
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52404, {	-- Work Order: Solstone
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52392, {	-- Work Order: Ultramarine Pigment
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50984, {	-- Work Order: Winter's Kiss
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52366, {	-- Work Order: XA-1000 Surface Skimmer
-					["collectible"] = false,
-					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50699, {	-- Worker's Rights

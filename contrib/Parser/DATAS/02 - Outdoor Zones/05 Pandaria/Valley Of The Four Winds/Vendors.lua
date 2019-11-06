@@ -1195,6 +1195,15 @@ _.Zones =
 				n(58706, {	-- Gina Mudclaw <Tillers Quartermaster>
 					["coord"] = { 53.2, 51.6, 376 },
 					["g"] = {
+						i(89812, {	-- "Jinyu Princess" Irrigation System
+							["cost"] = 800000,	-- 80g
+						}),
+						i(89813, {	-- "Thunder King" Pest Repellers
+							["cost"] = 800000,	-- 80g
+						}),
+						i(89814, {	-- "Earth-Slasher" Master Plow
+							["cost"] = 800000,	-- 80g
+						}),
 						i(90175),	-- Gin'Ji Knife Set (TOY!)
 						i(93226),	-- Grand Commendation of the Tillers
 						i(89869),	-- Pandaren Scarecrow (TOY!)

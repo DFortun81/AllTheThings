@@ -4,6 +4,7 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(754, { 	-- Naxxramas
+		["order"] = "07",
 		["u"] = 12,
 		["isRaid"] = true,
 		["sharedLockout"] = 1,

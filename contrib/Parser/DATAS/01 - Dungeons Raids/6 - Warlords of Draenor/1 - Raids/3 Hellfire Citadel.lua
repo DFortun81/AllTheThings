@@ -4,6 +4,7 @@
 
 _.Instances = { tier(6, {	-- Warlords of Draenor
 	inst(669, { 	-- Hellfire Citadel
+		["order"] = "03",
 		["isRaid"] = true,
 		["lvl"] = 100,
 		["mapID"] = 661,
@@ -420,6 +421,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124162),	-- Deathrattle Mask (Warlock)
 						i(124333),	-- Helm of the Ceaseless Vigil (Paladin)
 						i(124161),	-- Pious Cowl (Priest)
+						i(139627),	-- Ferroleather Hood (Demon Hunter)
 					}),
 					i(127966, {	-- Helm of Hellfire's Protector
 						i(124297),	-- Crown of the Living Mountain (Shaman)
@@ -436,7 +438,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124377),	-- Rune Infused Spear
 					i(124358),	-- Runeaxe of the Breaker
 					i(124363),	-- Runic Magnaron Tooth
-					i(139627),	-- Ferroleather Hood (Demon Hunter)
 					i(124341),	-- Fel-Inscribed Shoulderplates
 					i(124304),	-- Rugged Stoneshaped Pauldrons
 					i(124211),	-- Glowing Firestone
@@ -493,6 +494,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124167),	-- Deathrattle Leggings (Warlock)
 						i(124339),	-- Greaves of the Ceaseless Vigil (Paladin)
 						i(124166),	-- Pious Leggings (Priest)
+                        i(139628),	-- Ferroleather Leggings (Demon Hunter)
 					}),
 					i(127965, {	-- Leggings of Hellfire's Protector
 						i(124302),	-- Leggings of the Living Mountain (Shaman)
@@ -524,7 +526,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124244),	-- Chestguard of Gnawing Desire
 					i(124290),	-- Mitts of Eternal Famishment
 					i(124348),	-- Ravenous Girdle
-					i(139628),	-- Ferroleather Leggings (Demon Hunter)
 					i(124188),	-- Serrated Demontooth Ring
 					i(124236),	-- Unending Hunger
 				})),
@@ -562,6 +563,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124156),	-- Deathrattle Gloves (Warlock)
 						i(124328),	-- Gauntlets of the Ceaseless Vigil (Paladin)
 						i(124155),	-- Pious Handwraps (Priest)
+						i(139626),	-- Ferroleather Gloves (Demon Hunter)
 					}),
 					i(127964, {	-- Gauntlets of Hellfire's Protector
 						i(124256),	-- Fistwraps of the Hurricane's Eye (Monk)
@@ -586,7 +588,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124245),	-- Tunic of the Soulbinder
 					i(124313),	-- Chain Wristguards of the Stricken
 					i(124185),	-- Pristine Man'ari Cuffs
-					i(139626),	-- Ferroleather Gloves (Demon Hunter)
 					i(124191),	-- Seal of the Traitorous Councilor
 					i(124233),	-- Demonic Phylactery
 					i(124225),	-- Soul Capacitor
@@ -630,6 +631,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124179),	-- Deathrattle Shoulderpads (Warlock)
 						i(124178),	-- Pious Mantle (Priest)
 						i(124345),	-- Shoulderplates of the Ceaseless Vigil (Paladin)
+						i(139629),	-- Ferroleather Spaulders (Demon Hunter)
 					}),
 					i(127967, {	-- Shoulders of Hellfire's Protector
 						i(124273),	-- Mantle of the Hurricane's Eye (Monk)
@@ -649,8 +651,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124158),	-- Countenance of the Revenant
 					i(124260),	-- Hood of Unknowable Secrets
 					i(124295),	-- Sinister Felborne Helmet
-					i(124212),	-- Vial of Immiscible Liquid
-					i(139629),	-- Ferroleather Spaulders (Demon Hunter)
+					i(124212),	-- Vial of Immiscible Liquid			
 					i(124147),	-- Void Lord's Wizened Cloak
 					i(124353),	-- Breach-Scarred Wristplates
 					i(124199),	-- Loop of Beckoned Shadows
@@ -662,6 +663,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124318),	-- Cuirass of the Ceaseless Vigil (Paladin)
 						i(124173),	-- Deathrattle Robe (Warlock)
 						i(124172),	-- Pious Raiment (Priest)
+						i(139625),	-- Ferroleather Chestguard (Demon Hunter)
 					}),
 					i(127963, {	-- Chest of Hellfire's Protector
 						i(124319),	-- Breastplate of Iron Wrath (Warrior)
@@ -688,7 +690,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124206),	-- Thumping Demonheart Fetish
 					i(124215),	-- Locket of Unholy Reconstitution
 					i(124135),	-- Cloak of Tangible Dread
-					i(139625),	-- Ferroleather Chestguard (Demon Hunter)
 					i(124314),	-- Bracers of Fel Empowerment
 					i(124349),	-- Annihilan's Waistplate
 					i(124266),	-- Empowered Demonskin Kilt
@@ -819,6 +820,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124162),	-- Deathrattle Mask (Warlock)
 						i(124333),	-- Helm of the Ceaseless Vigil (Paladin)
 						i(124161),	-- Pious Cowl (Priest)
+						i(139627),	-- Ferroleather Hood (Demon Hunter)
 					}),
 					i(127966, {	-- Helm of Hellfire's Protector
 						i(124297),	-- Crown of the Living Mountain (Shaman)
@@ -835,7 +837,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124377),	-- Rune Infused Spear
 					i(124358),	-- Runeaxe of the Breaker
 					i(124363),	-- Runic Magnaron Tooth
-					i(139627),	-- Ferroleather Hood (Demon Hunter)
 					i(124341),	-- Fel-Inscribed Shoulderplates
 					i(124304),	-- Rugged Stoneshaped Pauldrons
 					i(124211),	-- Glowing Firestone
@@ -892,6 +893,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124167),	-- Deathrattle Leggings (Warlock)
 						i(124339),	-- Greaves of the Ceaseless Vigil (Paladin)
 						i(124166),	-- Pious Leggings (Priest)
+						i(139628),	-- Ferroleather Leggings (Demon Hunter)
 					}),
 					i(127965, {	-- Leggings of Hellfire's Protector
 						i(124302),	-- Leggings of the Living Mountain (Shaman)
@@ -920,7 +922,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124244),	-- Chestguard of Gnawing Desire
 					i(124290),	-- Mitts of Eternal Famishment
 					i(124348),	-- Ravenous Girdle
-					i(139628),	-- Ferroleather Leggings (Demon Hunter)
 					i(124188),	-- Serrated Demontooth Ring
 					i(124236),	-- Unending Hunger
 				})),
@@ -958,6 +959,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124156),	-- Deathrattle Gloves (Warlock)
 						i(124328),	-- Gauntlets of the Ceaseless Vigil (Paladin)
 						i(124155),	-- Pious Handwraps (Priest)
+						i(139626),	-- Ferroleather Gloves (Demon Hunter)
 					}),
 					i(127964, {	-- Gauntlets of Hellfire's Protector
 						i(124256),	-- Fistwraps of the Hurricane's Eye (Monk)
@@ -982,7 +984,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124245),	-- Tunic of the Soulbinder
 					i(124313),	-- Chain Wristguards of the Stricken
 					i(124185),	-- Pristine Man'ari Cuffs
-					i(139626),	-- Ferroleather Gloves (Demon Hunter)
 					i(124191),	-- Seal of the Traitorous Councilor
 					i(124233),	-- Demonic Phylactery
 					i(124225),	-- Soul Capacitor
@@ -1026,6 +1027,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124179),	-- Deathrattle Shoulderpads (Warlock)
 						i(124178),	-- Pious Mantle (Priest)
 						i(124345),	-- Shoulderplates of the Ceaseless Vigil (Paladin)
+						i(139629),	-- Ferroleather Spaulders (Demon Hunter)
 					}),
 					i(127967, {	-- Shoulders of Hellfire's Protector
 						i(124273),	-- Mantle of the Hurricane's Eye (Monk)
@@ -1046,8 +1048,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124260),	-- Hood of Unknowable Secrets
 					i(124295),	-- Sinister Felborne Helmet
 					i(124212),	-- Vial of Immiscible Liquid
-					i(139629),	-- Ferroleather Spaulders (Demon Hunter)
-					i(124147),	-- Void Lord's Wizened Cloak
+										i(124147),	-- Void Lord's Wizened Cloak
 					i(124353),	-- Breach-Scarred Wristplates
 					i(124199),	-- Loop of Beckoned Shadows
 					i(124189),	-- Portal Key Signet
@@ -1058,6 +1059,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124318),	-- Cuirass of the Ceaseless Vigil (Paladin)
 						i(124173),	-- Deathrattle Robe (Warlock)
 						i(124172),	-- Pious Raiment (Priest)
+						i(139625),	-- Ferroleather Chestguard (Demon Hunter)
 					}),
 					i(127963, {	-- Chest of Hellfire's Protector
 						i(124319),	-- Breastplate of Iron Wrath (Warrior)
@@ -1081,7 +1083,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124206),	-- Thumping Demonheart Fetish
 					i(124215),	-- Locket of Unholy Reconstitution
 					i(124135),	-- Cloak of Tangible Dread
-					i(139625),	-- Ferroleather Chestguard (Demon Hunter)
 					i(124314),	-- Bracers of Fel Empowerment
 					i(124349),	-- Annihilan's Waistplate
 					i(124266),	-- Empowered Demonskin Kilt
@@ -1215,6 +1216,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124162),	-- Deathrattle Mask (Warlock)
 						i(124333),	-- Helm of the Ceaseless Vigil (Paladin)
 						i(124161),	-- Pious Cowl (Priest)
+						i(139627),	-- Ferroleather Hood (Demon Hunter)
 					}),
 					i(127966, {	-- Helm of Hellfire's Protector
 						i(124297),	-- Crown of the Living Mountain (Shaman)
@@ -1231,7 +1233,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124377),	-- Rune Infused Spear
 					i(124358),	-- Runeaxe of the Breaker
 					i(124363),	-- Runic Magnaron Tooth
-					i(139627),	-- Ferroleather Hood (Demon Hunter)
 					i(124341),	-- Fel-Inscribed Shoulderplates
 					i(124304),	-- Rugged Stoneshaped Pauldrons
 					i(124211),	-- Glowing Firestone
@@ -1288,6 +1289,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124167),	-- Deathrattle Leggings (Warlock)
 						i(124339),	-- Greaves of the Ceaseless Vigil (Paladin)
 						i(124166),	-- Pious Leggings (Priest)
+						i(139628),	-- Ferroleather Leggings (Demon Hunter)
 					}),
 					i(127965, {	-- Leggings of Hellfire's Protector
 						i(124302),	-- Leggings of the Living Mountain (Shaman)
@@ -1316,7 +1318,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124244),	-- Chestguard of Gnawing Desire
 					i(124290),	-- Mitts of Eternal Famishment
 					i(124348),	-- Ravenous Girdle
-					i(139628),	-- Ferroleather Leggings (Demon Hunter)
 					i(124188),	-- Serrated Demontooth Ring
 					i(124236),	-- Unending Hunger
 				})),
@@ -1354,6 +1355,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124156),	-- Deathrattle Gloves (Warlock)
 						i(124328),	-- Gauntlets of the Ceaseless Vigil (Paladin)
 						i(124155),	-- Pious Handwraps (Priest)
+						i(139626),	-- Ferroleather Gloves (Demon Hunter)
 					}),
 					i(127964, {	-- Gauntlets of Hellfire's Protector
 						i(124256),	-- Fistwraps of the Hurricane's Eye (Monk)
@@ -1378,7 +1380,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124245),	-- Tunic of the Soulbinder
 					i(124313),	-- Chain Wristguards of the Stricken
 					i(124185),	-- Pristine Man'ari Cuffs
-					i(139626),	-- Ferroleather Gloves (Demon Hunter)
 					i(124191),	-- Seal of the Traitorous Councilor
 					i(124233),	-- Demonic Phylactery
 					i(124225),	-- Soul Capacitor
@@ -1422,6 +1423,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124179),	-- Deathrattle Shoulderpads (Warlock)
 						i(124178),	-- Pious Mantle (Priest)
 						i(124345),	-- Shoulderplates of the Ceaseless Vigil (Paladin)
+						i(139629),	-- Ferroleather Spaulders (Demon Hunter)
 					}),
 					i(127967, {	-- Shoulders of Hellfire's Protector
 						i(124273),	-- Mantle of the Hurricane's Eye (Monk)
@@ -1442,7 +1444,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124260),	-- Hood of Unknowable Secrets
 					i(124295),	-- Sinister Felborne Helmet
 					i(124212),	-- Vial of Immiscible Liquid
-					i(139629),	-- Ferroleather Spaulders (Demon Hunter)
 					i(124147),	-- Void Lord's Wizened Cloak
 					i(124353),	-- Breach-Scarred Wristplates
 					i(124199),	-- Loop of Beckoned Shadows
@@ -1454,6 +1455,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(124318),	-- Cuirass of the Ceaseless Vigil (Paladin)
 						i(124173),	-- Deathrattle Robe (Warlock)
 						i(124172),	-- Pious Raiment (Priest)
+						i(139625),	-- Ferroleather Chestguard (Demon Hunter)
 					}),
 					i(127963, {	-- Chest of Hellfire's Protector
 						i(124319),	-- Breastplate of Iron Wrath (Warrior)
@@ -1477,7 +1479,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124206),	-- Thumping Demonheart Fetish
 					i(124215),	-- Locket of Unholy Reconstitution
 					i(124135),	-- Cloak of Tangible Dread
-					i(139625),	-- Ferroleather Chestguard (Demon Hunter)
 					i(124314),	-- Bracers of Fel Empowerment
 					i(124349),	-- Annihilan's Waistplate
 					i(124266),	-- Empowered Demonskin Kilt

@@ -38,6 +38,7 @@ _.Zones =
 										n(127706, {	-- Rezira the Seer
 											["description"] = "In order to reach this rare you must use the Observer's Locus Resonator, purchaseable from Orix the All-Seer, use someone else's portal, or use an item like Falling Flame with a Goblin Glider to help you land in the correct place.",
 											["questID"] = 48971,
+											["isDaily"] = true,
 											["coord"] = { 65.4, 81.4, 885 },
 											["g"] = {
 												crit(13, {	-- Rezira the Seer

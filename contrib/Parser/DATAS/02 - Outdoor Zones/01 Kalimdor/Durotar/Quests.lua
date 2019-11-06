@@ -212,6 +212,8 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = { 8 },	-- Troll
 					["description"] = "This quest is available to Trolls upon reaching level 20.",
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 				}),
 				q(14088, {	-- Learn to Ride in Durotar
 					["u"] = 40,

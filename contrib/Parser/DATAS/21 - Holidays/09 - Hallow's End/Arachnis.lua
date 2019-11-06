@@ -3,31 +3,27 @@
 --------------------------------------------
 _.Holidays = bubbleDown({["u"] = 26},
 {
-	{	-- Hallow's End
-		["holidayID"] = 235462,	-- Hallow's End
-		["u"] = 26,				-- Hallow's End Filter
+	holiday(235462, {	-- Hallow's End
+		["u"] = 26,	-- Hallow's End Filter
 		["g"] = {
-			{	--  Arachnis
-				["npcID"] = 96323,	-- Arachnis
+			n(96323, {	-- Arachnis
+				["description"] = "|cFFFFD700Arachnis|r is only present in your Garrison once the |cFFFFD700Creepy Crawlers|r decoration is applied. This can be bought with |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in your garrison. (This rare is available all year.)",	
 				["questID"] = 39617,
 				["isDaily"] = true,
 				["coords"] = {
-					{ 56.53, 87.91 },	-- Horde Garrison
-					{ 74.53, 33.91 },	-- Alliance Garrison
+					{ 56.5, 87.9, 590 },	-- Frostwall
+					{ 74.5, 33.9, 582 },	-- Lunarfall
 				},
-				--["u"] = 26,			-- Hallow's End Filter	Note!! We can get by with not having a filter on this as it doesn't display without it
-				["description"] = "|cFFFFD700Arachnis|r is only present in your Garrison once the |cFFFFD700Creepy Crawlers|r decoration is applied. This can be bought for |cFFFFD7005 Spooky Supplies|r from |cFFFFD700Izzy Hollyfizzle|r in the Garrison. (This rare is available year round.)",	
 				["maps"] = {
-					582,	-- Alliance Garrison
-					590,	-- Horde Garrison
+					590,	-- Frostwall
+					582,	-- Lunarfall
 				},
-					["g"] = {
-						{	-- Sack of Spectral Spiders
-							["itemID"] = 128794,	-- Sack of Spectral Spiders
-							["u"] = 26,				-- Hallow's End Filter
-						},
-					},
-			},
+				["g"] = {
+					i(128794, {	-- Sack of Spectral Spiders (PET!)
+						["u"] = 26,	-- Hallow's End Filter
+					}),
+				},
+			}),
 		},
-	},
+	}),
 });

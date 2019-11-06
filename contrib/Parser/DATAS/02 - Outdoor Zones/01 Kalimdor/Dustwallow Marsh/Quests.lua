@@ -6,8 +6,21 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(70, {	-- Dustwallow Marsh
 			n(-17, {	-- Quests
+				q(11144, {	-- [DEPRECATED]Confirming the Suspicion
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+				}),
+				q(11214, {	-- [DEPRECATED]Mission to Mudsprocket
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+				}),
+				q(11201, {	-- [DEPRECATED]The Grimtotem Plot
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+				}),
 				q(1258,  {	-- ... and Bugs
 					["provider"] = { "n", 4794 },	-- Morgan Stern
+					["coord"] = { 68.2, 48.6, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1204,	-- Mudrock Soup and Bugs
 					["g"] = {
@@ -18,12 +31,14 @@ _.Zones =
 				}),
 				q(27214, {	-- A Disturbing Development
 					["provider"] = { "n", 23951 },	-- Lieutenant Aden
+					["coord"] = { 65.1, 47.1, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 27213,	-- The End of the Deserters
 				}),
 				q(27425, {	-- A Grim Connection
 					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
+					["coord"] = { 68.1, 48.5, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27288,	-- The Deserters
 				}),
@@ -38,6 +53,7 @@ _.Zones =
 				}),
 				q(27427, {	-- Arms of the Grimtotems
 					["provider"] = { "n", 23568 },	-- Captain Darill
+					["coord"] = { 46.6, 24.6, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27425,	-- A Grim Connection
 					["g"] = {
@@ -75,16 +91,15 @@ _.Zones =
 				q(27408, {	-- Banner of the Stonemaul
 					["provider"] = { "n", 23579 },	-- Brogg
 					["coord"] = { 41.8, 73.9, 70 },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27407,	-- Bloodfen Feathers
 				}),
 				q(27407, {	-- Bloodfen Feathers
 					["provider"] = { "n", 23579 },	-- Brogg
 					["coord"] = { 41.8, 73.9, 70 },
-					["races"] = HORDE_ONLY,
 				}),
 				q(27247, {	-- Captain Vimes
 					["provider"] = { "n", 23951 },	-- Lieutenant Aden
+					["coord"] = { 65.0, 47.0, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27246,	-- The Orc Report
 				}),
@@ -139,7 +154,6 @@ _.Zones =
 				q(27411, {	-- Challenge to the Black Dragonflight
 					["provider"] = { "n", 23579 },	-- Brogg
 					["coord"] = { 41.8, 73.9, 70 },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27410,	-- Spirits of Stonemaul Hold
 					["g"] = {
 						i(33231),	-- Oversized Stonemaul Hood
@@ -165,6 +179,7 @@ _.Zones =
 				}),
 				q(27426, {	-- Confirming the Suspicion
 					["provider"] = { "n", 23568 },	-- Captain Darill
+					["coord"] = { 46.6, 24.6, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27425,	-- A Grim Connection
 				}),
@@ -181,6 +196,7 @@ _.Zones =
 				}),
 				q(27286, {	-- Daelin's Men
 					["provider"] = { "n", 4948 },	-- Adjutant Tesoran
+					["coord"] = { 67.9, 48.1, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27264,	-- Lieutenant Paval Reethe
 				}),
@@ -191,11 +207,13 @@ _.Zones =
 				}),
 				q(27218, {	-- Dastardly Denizens of the Deep
 					["provider"] = { "n", 23892 },	-- Babs Fizzletorque
+					["coord"] = { 72.1, 47.1, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27217,	-- Thresher Oil
 				}),
 				q(27234, {	-- Defias in Dustwallow?
 					["provider"] = { "n", 5086 },	-- Captain Wymor
+					["coord"] = { 59.7, 41.0, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27214,
 				}),
@@ -221,6 +239,7 @@ _.Zones =
 				}),
 				q(27212, {	-- Discrediting the Deserters
 					["provider"] = { "n", 23566 },	-- Calia Hastings
+					["coord"] = { 68.3, 51.1, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27211,	-- Propaganda War
 				}),
@@ -275,7 +294,7 @@ _.Zones =
 				}),
 				q(27249, {	-- Inspecting the Ruins
 					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
-					["coord"] = { 68.2, 48.4, 70 },
+					["coord"] = { 68.1, 48.5, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27251,	-- The Call Him Smiling Jim
 				}),
@@ -286,13 +305,15 @@ _.Zones =
 				}),
 				q(27219, {	-- Is it Real?
 					["provider"] = { "n", 23896 },	-- "Dirty" Michael Crowe
+					["coord"] = { 69.3, 51.9, 70 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 27218, 70 },	-- Dastardly Denizens of the Deep
+					["sourceQuests"] = { 27218 },	-- Dastardly Denizens of the Deep
 				}),
 				q(27238, {	-- Jaina Must Know
 					["provider"] = { "n", 23569 },	-- Renn McGill
+					["coord"] = { 63.8, 16.9, 70 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 27237, 70 },	-- Recover the Cargo
+					["sourceQuests"] = { 27237 },	-- Recover the Cargo
 				}),
 				q(27186, {	-- Jarl Needs a Blade
 					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
@@ -333,11 +354,13 @@ _.Zones =
 				}),
 				q(27430, {	-- Justice for the Hyals
 					["provider"] = { "n", 6546 },	-- Tabetha
+					["coord"] = { 45.9, 57.1, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27429,	-- Raze Direhorn Post!
 				}),
 				q(27264, {	-- Lieutenant Paval Reethe
 					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
+					["coord"] = { 68.1, 48.5, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27263,	-- Lieutenant Paval Reethe
 				}),
@@ -376,6 +399,7 @@ _.Zones =
 				}),
 				q(27248, {	-- Mission to Mudsprocket
 					["provider"] = { "n", 23951 },	-- Lieutenant Aden
+					["coord"] = { 65.0, 47.0, 70 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(11200, {	-- More than Coincidence
@@ -399,12 +423,13 @@ _.Zones =
 				}),
 				q(1204,  {	-- Mudrock Soup and Bugs
 					["provider"] = { "n", 4794 },	-- Morgan Stern
+					["coord"] = { 68.2, 48.6, 70 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(6607,  {	-- Nat Pagle, Angler Extreme
 					["provider"] = { "n", 12919 },	-- Nat Pagle
 					["coord"] = { 58.6, 60.2, 70 },
-					["requireSkill"] = 129,	-- Fishing
+					["requireSkill"] = 356,	-- Fishing
 					["g"] = {
 						i(45858)	-- Nat's Lucky Fishing Pole
 					},
@@ -413,18 +438,20 @@ _.Zones =
 					["provider"] = { "n", 12919 },	-- Nat Pagle
 					["coord"] = { 58.6, 60.2, 70 },
 					["description"] = "If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",
-					["requireSkill"] = 129,	-- Fishing
+					["requireSkill"] = 356,	-- Fishing
 					["g"] = {
 						i(45858),	-- Nat's Lucky Fishing Pole
 					},
 				}),
 				q(27220, {	-- Nat's Bargain
 					["provider"] = { "n", 12919 },	-- Nat Pagle
+					["coord"] = { 58.6, 60.2, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27219,	-- Is it Real?
 				}),
 				q(27221, {	-- Oh, It's Real
 					["provider"] = { "n", 12919 },	-- Nat Pagle
+					["coord"] = { 58.6, 60.2, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27220,	-- Nat's Bargain
 				}),
@@ -449,6 +476,7 @@ _.Zones =
 				}),
 				q(27291, {	-- Peace at Last
 					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
+					["coord"] = { 68.2, 48.4, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27430,	-- Justice for the Hyals
 					["g"] = {
@@ -459,16 +487,19 @@ _.Zones =
 				}),
 				q(27245, {	-- Prisoners of the Grimtotems (awarded "Prisoners of the Grimtotem" criteria)
 					["provider"] = { "n", 23723 },	-- Sergeant Lukas
+					["coord"] = { 46.5, 22.9, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27242,	-- Raptor Captor
 				}),
 				q(27240, {	-- Proof of Treachery
 					["provider"] = { "n", 4968 },	-- Lady Jaina Proudmoore
+					["coord"] = { 66.3, 49.1, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27239,	-- Survey Alcaz Island
 				}),
 				q(27211, {	-- Propaganda War
 					["provider"] = { "n", 23566 },	-- Calia Hastings
+					["coord"] = { 68.3, 51.1, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27210,	-- Traitors Among Us
 				}),
@@ -484,14 +515,16 @@ _.Zones =
 				}),
 				q(27242, {	-- Raptor Captor
 					["provider"] = { "n", 23723 },	-- Sergeant Lukas
+					["coord"] = { 46.5, 22.9, 70 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(27429, {	-- Raze Direhorn Post!
+				q(27429, {	-- Raze Direhorn Post! (A)
 					["provider"] = { "n", 6546 },	-- Tabetha
+					["coord"] = { 45.9, 57.1, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27428,	-- Tabetha's Assistance
 				}),
-				q(27296, {	-- Raze Direhorn Post!
+				q(27296, {	-- Raze Direhorn Post! (H)
 					["provider"] = { "n", 6546 },	-- Tabetha
 					["coord"] = { 46.0, 57.0, 70 },
 					["races"] = HORDE_ONLY,
@@ -499,6 +532,7 @@ _.Zones =
 				}),
 				q(27237, {	-- Recover the Cargo!
 					["provider"] = { "n", 23569 },	-- Renn McGill
+					["coord"] = { 63.8, 16.9, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27236,	-- Secondhand Diving Gear
 					["g"] = {
@@ -509,6 +543,7 @@ _.Zones =
 				}),
 				q(27235, {	-- Renn McGill
 					["provider"] = { "n", 5086 },	-- Captain Wymor
+					["coord"] = { 59.7, 41.0, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27234,	-- Defias in Dustwallow?
 				}),
@@ -533,8 +568,12 @@ _.Zones =
 				}),
 				q(27236, {	-- Secondhand Diving Gear
 					["provider"] = { "n", 23569 },	-- Renn McGill
+					["coord"] = { 63.8, 16.9, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27235,	-- Renn McGill
+				}),
+				q(11207, {	-- Secure the Cargo!
+					["u"] = 40,	-- Legacy Quests
 				}),
 				q(27348, {	-- Secure the Cargo!
 					["provider"] = { "n", 23797 },	-- Moxie Steelgrille
@@ -567,7 +606,6 @@ _.Zones =
 				q(27410, {	-- Spirits of Stonemaul Hold
 					["provider"] = { "n", 23579 },	-- Brogg
 					["coord"] = { 41.8, 73.9, 70 },
-					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27408,	-- Banner of the Stonemaul
 						27409,	-- The Essence of Enmity
@@ -575,6 +613,7 @@ _.Zones =
 				}),
 				q(1222,  {	-- Stinky's Escape
 					["provider"] = { "n", 4880 },	-- "Stinky" Ignatz
+					["coord"] = { 46.9, 17.5, 70 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1270,  {	-- Stinky's Escape
@@ -584,6 +623,7 @@ _.Zones =
 				}),
 				q(27239, {	-- Survey Alcaz Island
 					["provider"] = { "n", 4968 },	-- Lady Jaina Proudmoore
+					["coord"] = { 66.3, 49.0, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27238,	-- Jaina Must Know
 					["g"] = {
@@ -605,6 +645,7 @@ _.Zones =
 				}),
 				q(27428, {	-- Tabetha's Assistance
 					["provider"] = { "n", 23568 },	-- Captain Darill
+					["coord"] = { 46.6, 24.6, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27427,	-- Arms of the Grimtotems
@@ -613,6 +654,7 @@ _.Zones =
 				}),
 				q(11212, {	-- Tabetha's Farm
 					["provider"] = { "n", 4921 },	-- Guard Byron
+					["coord"] = { 66.2, 46.0, 70 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(11198, {	-- Take Down Tethyr!
@@ -625,8 +667,9 @@ _.Zones =
 						un(2, i(33253)),	-- Golden Helm
 					},
 				}),
-				q(27222, {	-- Take Down Tethyr! (awarded "The Terror of Theramore" criteria)
+				q(27222, {	-- Take Down Tethyr!
 					["provider"] = { "n", 23905 },	-- Major Mills
+					["coord"] = { 69.6, 51.8, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27221,	-- Oh, It's Real
 					["g"] = {
@@ -648,29 +691,31 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27261,	-- Questioning Reethe
 				}),
-				q(27252, {	-- The Black Shield (#1)
+				q(27252, {	-- The Black Shield (#1, A)
 					["coord"] = { 29.6, 48.5, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 20992 },	-- Black Shield
 				}),
-				q(27254, {	-- The Black Shield (#1)
+				q(27254, {	-- The Black Shield (#1, H)
 					["coord"] = { 29.6, 48.5, 70 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 20992 },	-- Black Shield
 				}),
-				q(27255, {	-- The Black Shield (#2)
+				q(27284, {	-- The Black Shield (#2, A)
+					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
+					["coord"] = { 68.1, 48.5, 70 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 27252,	-- The Black Shield (#1)
+				}),
+				q(27255, {	-- The Black Shield (#2, H)
 					["provider"] = { "n", 4926 },	-- Krog
 					["coord"] = { 36.4, 31.8, 70 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27254,	-- The Black Shield (#1)
 				}),
-				q(27284, {	-- The Black Shield (#2)
-					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 27252,	-- The Black Shield (#1)
-				}),
 				q(27285, {	-- The Black Shield (#3)
 					["provider"] = { "n", 4941 },	-- Caz Twosprocket
+					["coord"] = { 64.7, 50.3, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27284,	-- The Black Shield (#2)
 				}),
@@ -718,13 +763,15 @@ _.Zones =
 						i(131674),	-- Encarmine Pauldrons
 					},
 				}),
-				q(27287, {	-- The Deserters
+				q(27287, {	-- The Deserters (#1)
 					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
+					["coord"] = { 68.1, 48.5, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27286,	-- Daelin's Men
 				}),
-				q(27288, {	-- The Deserters
+				q(27288, {	-- The Deserters (#2)
 					["provider"] = { "n", 5089 },	-- Balos Jacken
+					["coord"] = { 36.1, 54.2, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27287,	-- The Deserters
 				}),
@@ -737,8 +784,9 @@ _.Zones =
 						un(2, i(33274)),	-- Mercenary's Crossbow
 					},
 				}),
-				q(27213, {	-- The End of the Deserters (awarded "Disgrace the Defectors" criteria)
+				q(27213, {	-- The End of the Deserters
 					["provider"] = { "n", 23566 },	-- Calia Hastings
+					["coord"] = { 68.3, 51.1, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27212,	-- Discrediting the Deserters
 					["g"] = {
@@ -752,7 +800,6 @@ _.Zones =
 				q(27409, {	-- The Essence of Enmity
 					["provider"] = { "n", 23579 },	-- Brogg
 					["coord"] = { 41.8, 73.9, 70 },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27407,	-- Bloodfen Feathers
 				}),
 				q(27293, {	-- The Grimtotem Plot
@@ -767,6 +814,7 @@ _.Zones =
 				}),
 				q(27215, {	-- The Hermit of Swamplight Manor
 					["provider"] = { "n", 23835 },	-- Sergeant Amelyn
+					["coord"] = { 68.3, 51.9, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27213,	-- The End of the Deserters
 				}),
@@ -822,11 +870,13 @@ _.Zones =
 				}),
 				q(27251, {	-- They Call Him Smiling Jim
 					["provider"] = { "n", 4921 },	-- Guard Byron
+					["coord"] = { 66.0, 46.0, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(27216, {	-- This Old Lighthouse
 					["provider"] = { "n", 23835 },	-- Sergeant Amelyn
+					["coord"] = { 68.3, 51.9, 70 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1201,  {	-- Theramore Spies
@@ -836,6 +886,7 @@ _.Zones =
 				}),
 				q(27217, {	-- Thresher Oil
 					["provider"] = { "n", 23892 },	-- Babs Fizzletorque
+					["coord"] = { 72.1, 47.1, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27216,	-- This Old Lighthouse
 				}),
@@ -849,6 +900,7 @@ _.Zones =
 				}),
 				q(25479, {	-- To New Thalanaar
 					["provider"] = { "n", 40345 },	-- Thyssiana
+					["coord"] = { 41.8, 73.8, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for The Grimtotem are Coming - mutually exclusive with 25481 and 28503
 				}),
@@ -861,6 +913,7 @@ _.Zones =
 				}),
 				q(27210, {	-- Traitors Among Us
 					["provider"] = { "n", 23566 },	-- Calia Hastings
+					["coord"] = { 68.3, 51.1, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 28552,	-- Hero's Call: Dustwallow Marsh
 				}),
@@ -869,6 +922,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["requireSkill"] = 129,	-- First Aid
 					["sourceQuest"] = 6625,	-- Alliance Trauma
+					["u"] = 40,	-- Legacy Quests
 				}),
 				q(9437,  {	-- Twilight of the Dawn Runner
 					["provider"] = { "n", 17095 },	-- Balandar Brightstar
@@ -884,6 +938,7 @@ _.Zones =
 				}),
 				q(27243, { 	-- Unleash the Raptors
 					["provider"] = { "n", 23723 },	-- Sergeant Lukas
+					["coord"] = { 46.5, 22.9, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27242,	-- Raptor Captor
 					["g"] = {
@@ -894,8 +949,8 @@ _.Zones =
 					},
 				}),
 				q(27412, {	-- WANTED: Goreclaw the Ravenous
-					["coord"] = { 41.7, 73.1, 70 },
 					["provider"] = { "o", 186426 },	-- Wanted Poster (Goreclaw)
+					["coord"] = { 41.7, 73.1, 70 },
 					["g"] = {
 						i(33258),	-- Protective Engineer's Leggings
 						i(33263),	-- Raptor Eye Ring

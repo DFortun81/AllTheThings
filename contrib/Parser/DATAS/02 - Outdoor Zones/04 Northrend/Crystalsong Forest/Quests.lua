@@ -8,6 +8,9 @@ _.Zones =
 --[[
 			n(-17, { 	-- Quests
 				q(31932),	-- Nearly Headless Jacob
+				q(39210, {	-- The Magical Kingdom of Dalaran
+					["isBreadcrumb"] = true,
+				}),
 			}),
 --]]
 		}),

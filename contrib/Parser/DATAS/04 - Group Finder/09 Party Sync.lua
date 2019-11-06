@@ -1,0 +1,235 @@
+--------------------------------------------------
+--   G R O U P    F I N D E R    M O D U L E    --
+--------------------------------------------------
+
+_.GroupFinder =
+{
+	n(-10, {	-- Party Sync
+	--	["description"] = "",	-- Add a description here about how to get rewards when we figure it out!  
+		["g"] = {
+			i(171305, {	-- Salvaged Cache of Goods
+				cl(6,  {	-- Death Knight
+				--	["classes"] = { 6 },	-- Death Knight
+					["g"] = {
+						i(173566),	-- Bloodcaked Runeblade
+						i(173567),	-- Frost-Etched Runeblade
+						i(173578),	-- Heart-Lesion Breastplate
+						i(173580),	-- Heart-Lesion Gauntlets
+						i(173584),	-- Heart-Lesion Girdle
+						i(173581),	-- Heart-Lesion Helm
+						i(173582),	-- Heart-Lesion Legplates
+						i(173583),	-- Heart-Lesion Pauldrons
+						i(173579),	-- Heart-Lesion Sabatons
+						i(173585),	-- Heart-Lesion Vambraces
+						i(173539),	-- Unholy Runeblade
+					},
+				}),
+				cl(12, {	-- Demon Hunter (Alliance)
+				--	["classes"] = { 12 },	-- Demon Hunter
+					["g"] = bubbleDown({ ["races"] = ALLIANCE_ONLY, }, {
+						i(173688),	-- Illidari Belt
+						i(173683),	-- Illidari Blindfold (probably Alliance version?  model is not available on wowhead to check)
+						i(173687),	-- Illidari Boots
+						i(173686),	-- Illidari Bracers (probably Alliance version?  they look identical)
+						i(173684),	-- Illidari Gloves
+						i(173682),	-- Illidari Leggings
+						i(173685),	-- Illidari Robe
+						i(173681),	-- Illidari Shoulders
+					}),
+				}),
+				cl(12, {	-- Demon Hunter (Horde)
+				--	["classes"] = { 12 },	-- Demon Hunter
+					["g"] = bubbleDown({ ["races"] = HORDE_ONLY, }, {
+						i(173676),	-- Illidari Belt
+						i(173673),	-- Illidari Blindfold (probably Horde version?  model is not available on wowhead to check)
+						i(173680),	-- Illidari Boots
+						i(173675),	-- Illidari Bracers (probably Horde version?  they look identical)
+						i(173678),	-- Illidari Gloves
+						i(173674),	-- Illidari Leggings
+						i(173677),	-- Illidari Robe
+						i(173679),	-- Illidari Shoulders
+					}),
+				}),
+				cl(12, {	-- Demon Hunter (neutral — parser merges all 3 DH headers but keeps appropriate faction tagging due to bubbleDown!  OH, OH, IT'S MAGIC, YOU KNO-O-OW)
+				--	["classes"] = { 12 },	-- Demon Hunter
+					["g"] = {
+						i(173672),	-- Illidari Warglaive
+					},
+				}),
+				cl(11, {	-- Druid
+				--	["classes"] = { 11 },	-- Druid
+					["g"] = {
+						i(173568),	-- Guardian's Oaken Spear
+						i(173541),	-- Pike of Feral Rage
+						i(173542),	-- Restorative Ashwood Staff
+						i(173588),	-- Springrain Grips
+						i(173589),	-- Springrain Headpiece
+						i(173590),	-- Springrain Leggings
+						i(173591),	-- Springrain Spaulders
+						i(173587),	-- Springrain Treads
+						i(173586),	-- Springrain Tunic
+						i(173592),	-- Springrain Belt
+						i(173593),	-- Springrain Bracers
+						i(173540),	-- Staff of Astral Alignment
+					},
+				}),
+				cl(3,  {	-- Hunter
+				--	["classes"] = { 3 },	-- Hunter
+					["g"] = {
+						i(173569),	-- Marksman's Recurve Bow
+						i(173543),	-- Packmaster's Rifle
+						i(173570),	-- Survivalist's Hunting Spear
+						i(173600),	-- Trailseeker Belt
+						i(173601),	-- Trailseeker Bracers
+						i(173596),	-- Trailseeker Gauntlets
+						i(173595),	-- Trailseeker Greaves
+						i(173597),	-- Trailseeker Helm
+						i(173598),	-- Trailseeker Legguards
+						i(173599),	-- Trailseeker Spaulders (invisible model, uncollectible)
+						i(173594),	-- Trailseeker Vest
+					},
+				}),
+				cl(8,  {	-- Mage
+				--	["classes"] = { 8 },	-- Mage
+					["g"] = {
+						i(173544),	-- Frostcore Staff
+						i(173608),	-- Mountainsage Cord
+						i(173603),	-- Mountainsage Handwraps
+						i(173604),	-- Mountainsage Hood
+						i(173605),	-- Mountainsage Leggings
+						i(173606),	-- Mountainsage Robe
+						i(173602),	-- Mountainsage Sandals
+						i(173607),	-- Mountainsage Shoulderpads
+						i(173609),	-- Mountainsage Wristwraps
+						i(173571),	-- Staff of Arcane Power
+						i(173545),	-- Staff of Inner Flame
+					},
+				}),
+				cl(10, {	-- Monk
+				--	["classes"] = { 10 },	-- Monk
+					["g"] = {
+						i(173546),	-- Brewmasher's Staff
+						i(173616),	-- Mistdancer Cord
+						i(173617),	-- Mistdancer Cuffs
+						i(173611),	-- Mistdancer Footpads
+						i(173612),	-- Mistdancer Handguards
+						i(173613),	-- Mistdancer Helm
+						i(173614),	-- Mistdancer Legguards
+						i(173615),	-- Mistdancer Pauldrons (invisible model, uncollectible)
+						i(173610),	-- Mistdancer Vest
+						i(173547),	-- Staff of the Jade Mist
+						i(173548),	-- Sword of Singing Wind
+					},
+				}),
+				cl(2,  {	-- Paladin
+				--	["classes"] = { 2 },	-- Paladin
+					["g"] = {
+						i(173574),	-- Defender's Bulwark
+						i(173550),	-- Defender's Longsword
+						i(173549),	-- Justicar's Hammer
+						i(173573),	-- Justicar's Shield
+						i(173618),	-- Sunsoul Battleplate
+						i(173620),	-- Sunsoul Gauntlets
+						i(173624),	-- Sunsoul Girdle
+						i(173621),	-- Sunsoul Helm
+						i(173622),	-- Sunsoul Legplates
+						i(173623),	-- Sunsoul Pauldrons
+						i(173619),	-- Sunsoul Sabatons
+						i(173625),	-- Sunsoul Vambraces
+						i(173551),	-- Warhammer of Retribution
+					},
+				}),
+				cl(5,  {	-- Priest
+				--	["classes"] = { 5 },	-- Priest
+					["g"] = {
+						i(173552),	-- Staff of Dual Convictions
+						i(173553),	-- Staff of Radiance
+						i(173554),	-- Whispering Staff of the Void
+						i(173633),	-- Communal Bindings
+						i(173626),	-- Communal Boots
+						i(173628),	-- Communal Cowl
+						i(173627),	-- Communal Gloves
+						i(173631),	-- Communal Mantle
+						i(173629),	-- Communal Pants
+						i(173630),	-- Communal Robe
+						i(173632),	-- Communal Sash
+					},
+				}),
+				cl(4,  {	-- Rogue
+				--	["classes"] = { 4 },	-- Rogue
+					["g"] = {
+						i(173556),	-- Assassin's Serrated Dagger
+						un(1, i(173555)),	-- Duskfall Daggers	-- Tagging unavailable until someone confirms. Currently you only get the Assassin's Dagger
+						i(173557),	-- Outlaw's Cutlass
+						i(173641),	-- Lightdrinker Bindings
+						i(173635),	-- Lightdrinker Boots
+						i(173638),	-- Lightdrinker Britches
+						i(173636),	-- Lightdrinker Gloves
+						i(173637),	-- Lightdrinker Hood
+						i(173634),	-- Lightdrinker Jerkin
+						i(173639),	-- Lightdrinker Shoulders
+						i(173640),	-- Lightdrinker Waistband
+					},
+				}),
+				cl(7,  {	-- Shaman
+				--	["classes"] = { 7 },	-- Shaman
+					["g"] = {
+						i(173576),	-- Earthmender's Shield
+						i(173560),	-- Earthmender's Talons
+						i(173575),	-- Stormshaper's Bulwark
+						i(173558),	-- Stormshaper's Claws
+						i(173649),	-- Streamtalker Armbands
+						i(173648),	-- Streamtalker Belt
+						i(173643),	-- Streamtalker Boots
+						i(173645),	-- Streamtalker Coif
+						i(173644),	-- Streamtalker Gloves
+						i(173646),	-- Streamtalker Legwraps
+						i(173647),	-- Streamtalker Pauldrons
+						i(173642),	-- Streamtalker Tunic
+						i(173559),	-- Talons of Totemic Might
+					},
+				}),
+				cl(9,  {	-- Warlock
+				--	["classes"] = { 9 },	-- Warlock
+					["g"] = {
+						i(173562),	-- Demonologist's Staff
+						i(173561),	-- Destructive Spellstaff
+						i(173656),	-- Felsoul Cord
+						i(173652),	-- Felsoul Cowl
+						i(173651),	-- Felsoul Handwraps
+						i(173653),	-- Felsoul Leggings
+						i(173654),	-- Felsoul Robe
+						i(173650),	-- Felsoul Sandals
+						i(173655),	-- Felsoul Shoulderpads
+						i(173657),	-- Felsoul Wristwraps
+						i(173572),	-- Staff of Swelling Agony
+					},
+				}),
+				cl(1,  {	-- Warrior
+				--	["classes"] = { 1 },	-- Warrior
+					["g"] = {
+						i(173563),	-- Armsmaster's Greataxe
+						i(173564),	-- Greataxe of Fury
+						i(173565),	-- Protector's Axe
+						i(173577),	-- Protector's Barrier
+						i(173658),	-- Oathsworn Breastplate
+						i(173660),	-- Oathsworn Gauntlets
+						i(173664),	-- Oathsworn Girdle
+						i(173661),	-- Oathsworn Helm
+						i(173662),	-- Oathsworn Legplates
+						i(173663),	-- Oathsworn Pauldrons
+						i(173659),	-- Oathsworn Sabatons
+						i(173665),	-- Oathsworn Vambraces
+					},
+				}),
+			--	remaining items do not require a specific class.
+				i(173667),	-- Burnished Charm
+				i(173668),	-- Dingy Golden Band
+				i(173669),	-- Dull Onyx Band
+				i(173666),	-- Lacquered Carving
+				i(173671),	-- Travel-Worn Shawl
+				i(173670),	-- Woven Silver Pendant
+			}),
+		},
+	}),
+};

@@ -150,6 +150,11 @@ _.Zones =
 						currency(1716),	-- Honorbound Service Medal
 					},
 				}),
+				q(54837, {	-- Burninator Mark V
+					["isWorldQuest"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(54836, {	-- Commander Drald (A)
 					["isWorldQuest"] = true,
 					["races"] = ALLIANCE_ONLY,

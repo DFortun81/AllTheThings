@@ -2813,7 +2813,15 @@ _.Zones =
 							["cost"] = { { "i", 137642, 8 }, },	-- 8x Mark of Honor
 						}),
 						i(122338, {	-- Ancient Heirloom Armor Casing
-							["cost"] = { { "i", 137642, 12 }, },	-- 12x Mark of Honor
+							["cost"] = {
+								{ "i", 23247, 350},		-- 350x Burning Blossom
+								{ "c", 241, 55 },		-- 55x Champion's Seal
+								{ "i", 21100, 40 },		-- 40x Coin of Ancestry
+								{ "c", 515, 100 },		-- 100x Darkmoon Prize Ticket
+								{ "i", 137642, 12 },	-- 12x Mark of Honor
+								{ "c", 1166, 750 },		-- 750x Timewarped Badge
+								{ "i", 33226, 250 },	-- 250x Tricky Treat
+							},
 						}),
 						i(122339, {	-- Ancient Heirloom Scabbard
 							["cost"] = {
@@ -3621,7 +3629,9 @@ _.Zones =
 					["coord"] = { 73.0, 59.3, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(116789),	-- Champion's Treadblade
+						i(116789, {	-- Champion's Treadblade
+							["cost"] = 1000000000,	-- 100,000g
+						})
 					},
 				}),
 				n(12785, {	-- Sergeant Major Clate
@@ -3630,136 +3640,382 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						-- Head
-						i(16465),	-- Field Marshal's Chain Helm
-						i(17578),	-- Field Marshal's Coronal
-						i(16441),	-- Field Marshal's Coronet
-						i(16451),	-- Field Marshal's Dragonhide Helmet
-						i(17602),	-- Field Marshal's Headdress
-						i(16474),	-- Field Marshal's Lamellar Faceguard
-						i(16455),	-- Field Marshal's Leather Mask
-						i(29610),	-- Field Marshal's Mail Helm
-						i(16478),	-- Field Marshal's Plate Helm
-						i(23306),	-- Lieutenant Commander's Chain Helm
-						i(23308),	-- Lieutenant Commander's Dragonhide Headguard
-						i(23310),	-- Lieutenant Commander's Dreadweave Cowl
-						i(23276),	-- Lieutenant Commander's Lamellar Headguard
-						i(23312),	-- Lieutenant Commander's Leather Helm
-						i(29598),	-- Lieutenant Commander's Mail Headguard
-						i(23314),	-- Lieutenant Commander's Plate Helmet
-						i(23316),	-- Lieutenant Commander's Satin Hood
-						i(23318),	-- Lieutenant Commander's Silk Cowl
+						i(16465, {	-- Field Marshal's Chain Helm
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(17578, {	-- Field Marshal's Coronal
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(16441, {	-- Field Marshal's Coronet
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(16451, {	-- Field Marshal's Dragonhide Helmet
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(17602, {	-- Field Marshal's Headdress
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(16474, {	-- Field Marshal's Lamellar Faceguard
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(16455, {	-- Field Marshal's Leather Mask
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(29610, {	-- Field Marshal's Mail Helm
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(16478, {	-- Field Marshal's Plate Helm
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23306, {	-- Lieutenant Commander's Chain Helm
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23308, {	-- Lieutenant Commander's Dragonhide Headguard
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23310, {	-- Lieutenant Commander's Dreadweave Cowl
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23276, {	-- Lieutenant Commander's Lamellar Headguard
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23312, {	-- Lieutenant Commander's Leather Helm
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(29598, {	-- Lieutenant Commander's Mail Headguard
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23314, {	-- Lieutenant Commander's Plate Helmet
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23316, {	-- Lieutenant Commander's Satin Hood
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23318, {	-- Lieutenant Commander's Silk Cowl
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
 						-- Shoulders
-						i(16468),	-- Field Marshal's Chain Spaulders
-						i(16449),	-- Field Marshal's Dragonhide Spaulders
-						i(17580),	-- Field Marshal's Dreadweave Shoulders
-						i(16476),	-- Field Marshal's Lamellar Pauldrons
-						i(16457),	-- Field Marshal's Leather Epaulets
-						i(29611),	-- Field Marshal's Mail Spaulders
-						i(16480),	-- Field Marshal's Plate Shoulderguards
-						i(17604),	-- Field Marshal's Satin Mantle
-						i(16444),	-- Field Marshal's Silk Spaulders
-						i(23307),	-- Lieutenant Commander's Chain Shoulders
-						i(23309),	-- Lieutenant Commander's Dragonhide Shoulders
-						i(23311),	-- Lieutenant Commander's Dreadweave Spaulders
-						i(23277),	-- Lieutenant Commander's Lamellar Shoulders
-						i(23313),	-- Lieutenant Commander's Leather Shoulders
-						i(29599),	-- Lieutenant Commander's Mail Pauldrons
-						i(23315),	-- Lieutenant Commander's Plate Shoulders
-						i(23317),	-- Lieutenant Commander's Satin Mantle
-						i(23319),	-- Lieutenant Commander's Silk Mantle
+						i(16468, {	-- Field Marshal's Chain Spaulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(16449, {	-- Field Marshal's Dragonhide Spaulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(17580, {	-- Field Marshal's Dreadweave Shoulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(16476, {	-- Field Marshal's Lamellar Pauldrons
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(16457, {	-- Field Marshal's Leather Epaulets
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(29611, {	-- Field Marshal's Mail Spaulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(16480, {	-- Field Marshal's Plate Shoulderguards
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(17604, {	-- Field Marshal's Satin Mantle
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(16444, {	-- Field Marshal's Silk Spaulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23307, {	-- Lieutenant Commander's Chain Shoulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23309, {	-- Lieutenant Commander's Dragonhide Shoulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23311, {	-- Lieutenant Commander's Dreadweave Spaulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23277, {	-- Lieutenant Commander's Lamellar Shoulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23313, {	-- Lieutenant Commander's Leather Shoulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(29599, {	-- Lieutenant Commander's Mail Pauldrons
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23315, {	-- Lieutenant Commander's Plate Shoulders
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23317, {	-- Lieutenant Commander's Satin Mantle
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23319, {	-- Lieutenant Commander's Silk Mantle
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
 						-- Back
-						i(16342),	-- Sergeant's Cape
-						i(18440),	-- Sergeant's Cape
-						i(18441),	-- Sergeant's Cape
-						i(28379),	-- Sergeant's Heavy Cape
-						i(28380),	-- Sergeant's Heavy Cloak
+						i(16342, {	-- Sergeant's Cape
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+						}),
+						i(18440, {	-- Sergeant's Cape
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+						}),
+						i(18441, {	-- Sergeant's Cape
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+						}),
+						i(28379, {	-- Sergeant's Heavy Cape
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+						}),
+						i(28380, {	-- Sergeant's Heavy Cloak
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+						}),
 						-- Chest
-						i(16466),	-- Field Marshal's Chain Breastplate
-						i(16452),	-- Field Marshal's Dragonhide Breastplate
-						i(17581),	-- Field Marshal's Dreadweave Robe
-						i(16473),	-- Field Marshal's Lamellar Chestplate
-						i(16453),	-- Field Marshal's Leather Chestpiece
-						i(29609),	-- Field Marshal's Mail Armor
-						i(16477),	-- Field Marshal's Plate Armor
-						i(16443),	-- Field Marshal's Silk Vestments
-						i(17605),	-- Field Marshal's Satin Vestments
-						i(23292),	-- Knight-Captain's Chain Hauberk
-						i(23294),	-- Knight-Captain's Dragonhide Chestpiece
-						i(23297),	-- Knight-Captain's Dreadweave Tunic
-						i(23272),	-- Knight-Captain's Lamellar Breastplate
-						i(23298),	-- Knight-Captain's Leather Chestpiece
-						i(29596),	-- Knight-Captain's Mail Hauberk
-						i(23300),	-- Knight-Captain's Plate Hauberk
-						i(23303),	-- Knight-Captain's Satin Tunic
-						i(23305),	-- Knight-Captain's Silk Tunic
+						i(16466, {	-- Field Marshal's Chain Breastplate
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(16452, {	-- Field Marshal's Dragonhide Breastplate
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(17581, {	-- Field Marshal's Dreadweave Robe
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(16473, {	-- Field Marshal's Lamellar Chestplate
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(16453, {	-- Field Marshal's Leather Chestpiece
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(29609, {	-- Field Marshal's Mail Armor
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(16477, {	-- Field Marshal's Plate Armor
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(16443, {	-- Field Marshal's Silk Vestments
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(17605, {	-- Field Marshal's Satin Vestments
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23292, {	-- Knight-Captain's Chain Hauberk
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23294, {	-- Knight-Captain's Dragonhide Chestpiece
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23297, {	-- Knight-Captain's Dreadweave Tunic
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23272, {	-- Knight-Captain's Lamellar Breastplate
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23298, {	-- Knight-Captain's Leather Chestpiece
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(29596, {	-- Knight-Captain's Mail Hauberk
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23300, {	-- Knight-Captain's Plate Hauberk
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23303, {	-- Knight-Captain's Satin Tunic
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23305, {	-- Knight-Captain's Silk Tunic
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
 						-- Wrist
-						i(18448),	-- Sergeant Major's Chain Armguards
-						i(18449),	-- Sergeant Major's Chain Armguards
-						i(18454),	-- Sergeant Major's Dragonhide Armsplints
-						i(18455),	-- Sergeant Major's Dragonhide Armsplints
-						i(18452),	-- Sergeant Major's Leather Armsplints
-						i(18453),	-- Sergeant Major's Leather Armsplints
-						i(18445),	-- Sergeant Major's Plate Wristguards
-						i(18447),	-- Sergeant Major's Plate Wristguards
-						i(18456),	-- Sergeant Major's Silk Cuffs
-						i(18457),	-- Sergeant Major's Silk Cuffs
+						i(18448, {	-- Sergeant Major's Chain Armguards
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+						}),
+						i(18449, {	-- Sergeant Major's Chain Armguards
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+						}),
+						i(18454, {	-- Sergeant Major's Dragonhide Armsplints
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+						}),
+						i(18455, {	-- Sergeant Major's Dragonhide Armsplints
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+						}),
+						i(18452, {	-- Sergeant Major's Leather Armsplints
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+						}),
+						i(18453, {	-- Sergeant Major's Leather Armsplints
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+						}),
+						i(18445, {	-- Sergeant Major's Plate Wristguards
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+						}),
+						i(18447, {	-- Sergeant Major's Plate Wristguards
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+						}),
+						i(18456, {	-- Sergeant Major's Silk Cuffs
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+						}),
+						i(18457, {	-- Sergeant Major's Silk Cuffs
+							["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+						}),
 						-- Hands
-						i(23279),	-- Knight-Lieutenant's Chain Vices
-						i(23280),	-- Knight-Lieutenant's Dragonhide Grips
-						i(23282),	-- Knight-Lieutenant's Dreadweave Handwraps
-						i(23274),	-- Knight-Lieutenant's Lamellar Gauntlets
-						i(23284),	-- Knight-Lieutenant's Leather Grips
-						i(29595),	-- Knight-Lieutenant's Mail Vices
-						i(23286),	-- Knight-Lieutenant's Plate Gauntlets
-						i(23288),	-- Knight-Lieutenant's Satin Handwraps
-						i(23290),	-- Knight-Lieutenant's Silk Handwraps
-						i(16463),	-- Marshal's Chain Grips
-						i(16448),	-- Marshal's Dragonhide Gauntlets
-						i(17584),	-- Marshal's Dreadweave Gloves
-						i(16471),	-- Marshal's Lamellar Gloves
-						i(16454),	-- Marshal's Leather Handgrips
-						i(29607),	-- Marshal's Mail Gauntlets
-						i(16484),	-- Marshal's Plate Gauntlets
-						i(17608),	-- Marshal's Satin Gloves
-						i(16440),	-- Marshal's Silk Gloves
+						i(23279, {	-- Knight-Lieutenant's Chain Vices
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23280, {	-- Knight-Lieutenant's Dragonhide Grips
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23282, {	-- Knight-Lieutenant's Dreadweave Handwraps
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23274, {	-- Knight-Lieutenant's Lamellar Gauntlets
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23284, {	-- Knight-Lieutenant's Leather Grips
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(29595, {	-- Knight-Lieutenant's Mail Vices
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23286, {	-- Knight-Lieutenant's Plate Gauntlets
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23288, {	-- Knight-Lieutenant's Satin Handwraps
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23290, {	-- Knight-Lieutenant's Silk Handwraps
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(16463, {	-- Marshal's Chain Grips
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(16448, {	-- Marshal's Dragonhide Gauntlets
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(17584, {	-- Marshal's Dreadweave Gloves
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(16471, {	-- Marshal's Lamellar Gloves
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(16454, {	-- Marshal's Leather Handgrips
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(29607, {	-- Marshal's Mail Gauntlets
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(16484, {	-- Marshal's Plate Gauntlets
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(17608, {	-- Marshal's Satin Gloves
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(16440, {	-- Marshal's Silk Gloves
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
 						-- Legs
-						i(23293),	-- Knight-Captain's Chain Legguards
-						i(23295),	-- Knight-Captain's Dragonhide Leggings
-						i(23296),	-- Knight-Captain's Dreadweave Legguards
-						i(23273),	-- Knight-Captain's Lamellar Leggings
-						i(23299),	-- Knight-Captain's Leather Legguards
-						i(29597),	-- Knight-Captain's Mail Legguards
-						i(23301),	-- Knight-Captain's Plate Leggings
-						i(23302),	-- Knight-Captain's Satin Legguards
-						i(23304),	-- Knight-Captain's Silk Legguards
-						i(16467),	-- Marshal's Chain Legguards
-						i(16450),	-- Marshal's Dragonhide Legguards
-						i(17579),	-- Marshal's Dreadweave Leggings
-						i(16475),	-- Marshal's Lamellar Legplates
-						i(16456),	-- Marshal's Leather Leggings
-						i(29608),	-- Marshal's Mail Leggings
-						i(16479),	-- Marshal's Plate Legguards
-						i(17603),	-- Marshal's Satin Pants
-						i(16442),	-- Marshal's Silk Leggings
+						i(23293, {	-- Knight-Captain's Chain Legguards
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23295, {	-- Knight-Captain's Dragonhide Leggings
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23296, {	-- Knight-Captain's Dreadweave Legguards
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23273, {	-- Knight-Captain's Lamellar Leggings
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23299, {	-- Knight-Captain's Leather Legguards
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(29597, {	-- Knight-Captain's Mail Legguards
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23301, {	-- Knight-Captain's Plate Leggings
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23302, {	-- Knight-Captain's Satin Legguards
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(23304, {	-- Knight-Captain's Silk Legguards
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(16467, {	-- Marshal's Chain Legguards
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(16450, {	-- Marshal's Dragonhide Legguards
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(17579, {	-- Marshal's Dreadweave Leggings
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(16475, {	-- Marshal's Lamellar Legplates
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(16456, {	-- Marshal's Leather Leggings
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(29608, {	-- Marshal's Mail Leggings
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(16479, {	-- Marshal's Plate Legguards
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(17603, {	-- Marshal's Satin Pants
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
+						i(16442, {	-- Marshal's Silk Leggings
+							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
+						}),
 						-- Feet
-						i(23278),	-- Knight-Lieutenant's Chain Greaves
-						i(23281),	-- Knight-Lieutenant's Dragonhide Treads
-						i(23283),	-- Knight-Lieutenant's Dreadweave Walkers
-						i(23275),	-- Knight-Lieutenant's Lamellar Sabatons
-						i(23285),	-- Knight-Lieutenant's Leather Walkers
-						i(29594),	-- Knight-Lieutenant's Mail Greaves
-						i(23287),	-- Knight-Lieutenant's Plate Greaves
-						i(23289),	-- Knight-Lieutenant's Satin Walkers
-						i(23291),	-- Knight-Lieutenant's Silk Walkers
-						i(16462),	-- Marshal's Chain Boots
-						i(16459),	-- Marshal's Dragonhide Boots
-						i(17583),	-- Marshal's Dreadweave Boots
-						i(16472),	-- Marshal's Lamellar Boots
-						i(16446),	-- Marshal's Leather Footguards
-						i(29606),	-- Marshal's Mail Boots
-						i(16483),	-- Marshal's Plate Boots
-						i(17607),	-- Marshal's Satin Sandals
-						i(16437),	-- Marshal's Silk Footwraps
+						i(23278, {	-- Knight-Lieutenant's Chain Greaves
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23281, {	-- Knight-Lieutenant's Dragonhide Treads
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23283, {	-- Knight-Lieutenant's Dreadweave Walkers
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23275, {	-- Knight-Lieutenant's Lamellar Sabatons
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23285, {	-- Knight-Lieutenant's Leather Walkers
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(29594, {	-- Knight-Lieutenant's Mail Greaves
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23287, {	-- Knight-Lieutenant's Plate Greaves
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23289, {	-- Knight-Lieutenant's Satin Walkers
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(23291, {	-- Knight-Lieutenant's Silk Walkers
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(16462, {	-- Marshal's Chain Boots
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(16459, {	-- Marshal's Dragonhide Boots
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(17583, {	-- Marshal's Dreadweave Boots
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(16472, {	-- Marshal's Lamellar Boots
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(16446, {	-- Marshal's Leather Footguards
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(29606, {	-- Marshal's Mail Boots
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(16483, {	-- Marshal's Plate Boots
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(17607, {	-- Marshal's Satin Sandals
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(16437, {	-- Marshal's Silk Footwraps
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
 					},
 				}),
 				n(8665, {	-- Shylenai

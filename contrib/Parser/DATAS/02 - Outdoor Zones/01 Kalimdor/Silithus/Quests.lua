@@ -226,6 +226,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(9415,  {	-- Report to Marshal Bluewall
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 17082 },	-- Rifleman Torrig
 					["coord"] = { 54.5, 32.9, 81 },
 					["races"] = ALLIANCE_ONLY,

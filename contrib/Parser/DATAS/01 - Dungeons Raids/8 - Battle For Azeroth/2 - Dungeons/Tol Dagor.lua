@@ -16,8 +16,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		["g"] = {
 			n(-34, {	-- World Quests
 				q(51297, {	-- Tol Dagor: Shorefront Property
+					["isWorldQuest"] = true,
 					["lvl"] = 120,
-					["collectible"] = false,
+				}),
+				q(51296, {	-- Tol Dagor: The Overseer's Pride
+					["isWorldQuest"] = true,
+					["lvl"] = 120,
 				}),
 			}),
 			d(1,  {	-- Normal

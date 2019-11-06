@@ -161,7 +161,7 @@ _.Zones =
 						["races"] = { 7 },	-- Gnome
 						["classes"] = { 8 },	-- Mage
 						["g"] = {
-							i(59042), 	-- Electro-Staff NOTE: Item is still in game and obtainable via quest 26197 for Mages (do not flad as unobtainable), Monk quest listed here is not available upon testing
+							i(59042), 	-- Electro-Staff NOTE: Item is still in game and obtainable via quest 26197 for Mages (do not flag as unobtainable), Monk quest listed here is not available upon testing
 						},
 					}),
 					q(26207, {	-- The Arts of a Rogue
@@ -188,6 +188,7 @@ _.Zones =
 					q(26197, {	-- The Future of Gnomeregan
 						["provider"] = { "n", 42396 },	-- Nevin Twistwrench
 						["coord"] = { 39.4, 38.3, 469 },
+						["races"] = { 7 },	-- Gnome
 						["classes"] = { 8 },	-- Mage
 						["sourceQuest"] = 27674,	-- To the Surface
 						["g"] = {
@@ -197,6 +198,7 @@ _.Zones =
 					q(26199, {	-- The Future of Gnomeregan
 						["provider"] = { "n", 42396 },	-- Nevin Twistwrench
 						["coord"] = { 39.4, 38.3, 469 },
+						["races"] = { 7 },	-- Gnome
 						["classes"] = { 5 },	-- Priest
 						["sourceQuest"] = 27674,	-- To the Surface
 						["g"] = {
@@ -206,6 +208,7 @@ _.Zones =
 					q(26202, {	-- The Future of Gnomeregan
 						["provider"] = { "n", 42396 },	-- Nevin Twistwrench
 						["coord"] = { 39.4, 38.3, 469 },
+						["races"] = { 7 },	-- Gnome
 						["classes"] = { 9 },	-- Warlock
 						["sourceQuest"] = 27674,	-- To the Surface
 						["g"] = {
@@ -215,6 +218,7 @@ _.Zones =
 					q(26203, {	-- The Future of Gnomeregan
 						["provider"] = { "n", 42396 },	-- Nevin Twistwrench
 						["coord"] = { 39.4, 38.3, 469 },
+						["races"] = { 7 },	-- Gnome
 						["classes"] = { 1 },	-- Warrior
 						["sourceQuest"] = 27674,	-- To the Surface
 						["g"] = {
@@ -224,6 +228,7 @@ _.Zones =
 					q(26206, {	-- The Future of Gnomeregan
 						["provider"] = { "n", 42396 },	-- Nevin Twistwrench
 						["coord"] = { 39.4, 38.3, 469 },
+						["races"] = { 7 },	-- Gnome
 						["classes"] = { 4 },	-- Rogue
 						["sourceQuest"] = 27674,	-- To the Surface
 						["g"] = {
@@ -234,12 +239,14 @@ _.Zones =
 					q(31135, {	-- The Future of Gnomeregan
 						["provider"] = { "n", 42396 },	-- Nevin Twistwrench
 						["coord"] = { 39.4, 38.3, 469 },
+						["races"] = { 7 },	-- Gnome
 						["classes"] = { 10 },	-- Monk
 						["sourceQuest"] = 27674,	-- To the Surface
 					}),
 					q(41217, {	-- The Future of Gnomeregan
 						["provider"] = { "n", 42396 },	-- Nevin Twistwrench
 						["coord"] = { 39.4, 38.3, 469 },
+						["races"] = { 7 },	-- Gnome
 						["classes"] = { 3 },	-- Hunter
 						["sourceQuest"] = 27674,	-- To the Surface
 						["g"] = {
@@ -275,7 +282,7 @@ _.Zones =
 					q(27635, {	-- Decontamination
 						["provider"] = { "n", 46274 },	-- Gaffer Coilspring
 						["coord"] = { 53.0, 82.3, 30 },
-						["races"] = { 7 },	-- gnome
+						["races"] = { 7 },	-- Gnome
 						["sourceQuest"] = 28169,	-- Withdraw to the Loading Room!
 					}),
 					q(27670, {	-- Pinned Down

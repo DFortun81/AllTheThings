@@ -4,6 +4,7 @@
 
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(750, { 	-- The Battle for Mount Hyjal
+		["order"] = "06",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 68,

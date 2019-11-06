@@ -227,14 +227,6 @@ _.Zones =
 											}),
 										},
 									}),
-									-- Kul Tiran Starter Quests
-									q(55146, {	-- Stranger in a Strange Land
-										["provider"] = { "n", 133362 },	-- Ambassador Moorgard
-										["coord"] = { 53.1, 15.4, 84 },
-										["sourceQuest"] = 55142,	-- For the Alliance
-										["races"] = { 32 },	-- Kul Tiran
-										["lvl"] = 20,
-									}),
 								}),
 								n(-207, {	-- Lightforged Draenei
 									q(49698, {	-- The Lightforged
@@ -370,9 +362,9 @@ _.Zones =
 					},
 				}),
 				q(46275, {	-- A Kingdom's Heart
-					["provider"] = { "n", 119357 },	-- Anduin Wrynn
-					["coord"] = { 49.8, 45.0, 84 },
 					["sourceQuest"] = 46274,	-- Consoling the King
+					["provider"] = { "n", 119357 },	-- Anduin Wrynn
+					["coord"] = { 49.8, 45.2, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
@@ -392,9 +384,9 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(47202, {	-- A Personal Message
-					["provider"] = { "n", 119357 },	-- Anduin Wrynn
-					["coord"] = { 49.8, 45.0, 84 },
 					["sourceQuest"] = 46275,	-- A Kingdom's Heart
+					["provider"] = { "n", 119357 },	-- Anduin Wrynn
+					["coord"] = { 85.9, 34.3, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
@@ -554,6 +546,7 @@ _.Zones =
 					["lvl"] = 80,
 				}),
 				q(14446, {	-- Cataclysm!
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 36674 },	-- Nambria
 					["coord"] = { 41.4, 47.6, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -571,9 +564,9 @@ _.Zones =
 					},
 				}),
 				q(46274, {	-- Consoling the King
-					["provider"] = { "n", 119338 },	-- Genn Greymane
-					["coord"] = { 85.8, 32.0, 84 },
 					["sourceQuest"] = 46272,	-- Summons to the Keep
+					["provider"] = { "n", 119338 },	-- Genn Greymane
+					["coord"] = { 85.7, 32.1, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
@@ -740,6 +733,7 @@ _.Zones =
 				q(32675, {	-- I Believe You Can Fly
 					["description"] = "This quest is automatically offered to Alliance players upon reaching level 60.",
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
 				}),
@@ -786,6 +780,7 @@ _.Zones =
 					["description"] = "This quest is available to Pandaren upon reaching level 20.",
 					["races"] = { 25 },	-- Pandaren (A)
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["lvl"] = 20,
 				}),
 				q(32470, {	-- Light Camera Action
@@ -959,12 +954,8 @@ _.Zones =
 					["lvl"] = 4,
 				}),
 				q(27241, {	-- Return to Jaina
-					["providers"] = {
-						{ "n", 1750 },	-- Grand Admiral Jes-Tereth
-						{ "n", 29611 },	-- King Varian Wrynn
-						{ "n", 107574 },	-- Anduin Wrynn
-					},
-					["coord"] = { 71.0, 72.6, 84 },
+					["provider"] = { "n", 1750 },	-- Grand Admiral Jes-Tereth
+					["coord"] = { 85.6, 32.9, 84 },
 					["sourceQuest"] = 27240,	-- Proof of Treachery
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
@@ -1050,6 +1041,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 1,
 					["u"] = 40,
+				}),
+				q(55146, {	-- Stranger in a Strange Lane
+					["provider"] = { "n", 133362 },	-- Ambassador Moorgard
+					["coord"] = { 53.2, 15.4, 84 },
+					["races"] = { 32 },	-- Kul Tiran
+					["lvl"] = 20,
 				}),
 				q(50371, {	-- Summons to Stormwind
 					["races"] = ALLIANCE_ONLY,
@@ -1304,7 +1301,7 @@ _.Zones =
 						48506,	-- The Hand of Fate
 					},
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 84,
+					["lvl"] = 110,
 				}),
 				q(1938,  {	-- Ur's Treatise on Shadow Magic
 					["provider"] = { "n", 5694 },	-- High Sorcerer Andromath

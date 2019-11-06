@@ -283,6 +283,11 @@ _.Zones =
 					114874,	-- Wyrmtongue Pilferer
 				},
 			}),
+			n(0, {	-- Zone Drops
+				i(136901, {	-- Eye of Inquisition (PET!)
+					["crs"] = { 101878 },	-- Felsoul Inquisitor
+				}),
+			}),
 		}),
 	}),
 };

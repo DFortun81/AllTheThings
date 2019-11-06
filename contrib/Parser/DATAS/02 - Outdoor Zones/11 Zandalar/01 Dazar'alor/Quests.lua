@@ -25,6 +25,12 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 				}),
+				q(55739, {	-- Back to the Chamber
+					["coord"] = { 50.9, 88.8, 1165 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 154465 },	-- Earthen Guardian
+					["description"] = "Requires Heart of Azeroth level 65.",
+				}),
 				q(47437, {	-- Competitive Devotion
 					["sourceQuests"] = {
 						47434,	-- Restraining Order
@@ -226,6 +232,15 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56030,	-- The Warchief's Order
 				}),
+				q(57198, {	-- Sense of Obligation
+					["coord"] = { 51.5, 99.4, 1165 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 141961 },	-- Lilian Voss
+						["sourceQuests"] = { 
+							57095,	-- Old Soldier (Saurfang loyalist)
+							57152,	-- Most Loyal (Sylvanas loyalist)
+						},	
+				}),
 				q(46926, {	-- Shakedown
 					["sourceQuests"] = { 50835 },	-- The Port of Zandalar
 					["coord"] = { 50.0, 84.9, 1165 },
@@ -351,12 +366,6 @@ _.Zones =
 					["coord"] = { 39.9, 70.6 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 122817 },	-- Bladeguard Kaja
-				}),
-				q(55522, {	-- Return to the Heart
-					["isBreadcrumb"] = true,
-					["coord"] = { 51.0, 88.8, 1165 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 154465 },	-- Earthen Guardian <Messenger of the Speaker>
 				}),
 				q(47315, {	-- Into the Dunes
 					["sourceQuests"] = { 47314 },	-- Rumors of Exile

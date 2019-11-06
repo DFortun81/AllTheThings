@@ -5,13 +5,12 @@ _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
-			["groups"] = {	
-				n(-228, {	-- Flight Paths
-					fp(1476, {	-- Lunarfall (Alliance), Shadowmoon Valley
-						["coord"] = { 47.6, 49.6 },
-					}),
+			n(-228, {	-- Flight Paths
+				fp(1476, {	-- Lunarfall (Alliance), Shadowmoon Valley
+					["coord"] = { 47.6, 49.6, 582 },
+					["races"] = ALLIANCE_ONLY,
 				}),
-			},
+			}),
 		}),
 	}),
 };

@@ -40,20 +40,11 @@ _.WorldEvents =
 						})),
 					}),
 				}),
-				{	-- Warcraft 3 Reforged Spoils of War Edition
-					["npcID"] = -552,	-- Warcraft 3 Reforged Spoils of War Edition
-					["icon"] = "Interface\\Icons\\Achievement_Leader_ Thrall",
-					["g"] = {
-						{	-- Meat Marauder
-							["achievementID"] = 13196,	-- Meat Marauder
-							["g"] = {
-								{	-- Meat Wagon
-									["itemID"] = 164571,	-- Meat Wagon
-								},
-							},
-						},
-					},
-				},
+				n(-552, {	-- Warcraft 3 Reforged Spoils of War Edition
+					un(6, ach(13196, {	-- Meat Marauder
+						un(6, i(164571)),	-- Meat Wagon
+					})),
+				}),
 				n(-544, {	-- WoW Collector's Edition
 					tier(1, {	-- Classic
 						un(6, ach(662, {	-- Collector's Edition: Mini-Diablo
@@ -108,7 +99,7 @@ _.WorldEvents =
 							un(6, i(128425)),	-- Reins of the Illidari Felstalker
 						})),
 					}),
-					n(-10052, {	-- Battle for Azeroth
+					tier(8, {	-- Battle for Azeroth
 						un(6, h(ach(12230, {	-- Collector's Edition: Gilded Ravasaur
 							i(153540),	-- Gilded Ravasaur
 						}))),
@@ -118,6 +109,30 @@ _.WorldEvents =
 						un(6, ach(12232, {	-- Collector's Edition: Tottle
 							i(153541),	-- Tottle
 						})),
+					}),
+					tier(9, {	-- Shadowlands
+						un(6, mount(307932)),	-- Ensorcelled Everwyrm
+						un(6, p(2779)),	-- Anima Wyrmling
+						un(6, i(172179)),	-- Eternal Traveler's Hearthstone
+						un(6, i(172177)),	-- Illusion: Wraithchill
+						q(57686, {	-- The Eternal Traveler
+							["provider"] = { "n", 158635 },	-- Xolartios <Eternal Traveler>
+							["description"] = "You need to purcase a Collector's Edition of Shadowlands to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",
+							["u"] = 6,
+							["g"] = {
+								spell(309452, {	-- Vestments of the Eternal Traveler
+									i(172075),	-- Eternal Traveler's Guise
+									i(172076),	-- Eternal Traveler's Spaulders
+									i(172078),	-- Eternal Traveler's Cloak
+									i(172077),	-- Eternal Traveler's Raiment
+									i(172079),	-- Eternal Traveler's Cuffs
+									i(172080),	-- Eternal Traveler's Gauntlets
+									i(172081),	-- Eternal Traveler's Waistwrap
+									i(172082),	-- Eternal Traveler's Leggings
+									i(172083),	-- Eternal Traveler's Treads
+								}),
+							},
+						}),
 					}),
 				}),
 			}),

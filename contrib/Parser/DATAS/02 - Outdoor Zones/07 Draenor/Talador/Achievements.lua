@@ -5,7 +5,17 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(535, {	-- Talador
-			n(-4, {	-- Achievements
+			n(-4, {		-- Achievements
+				ach(9069, {		-- An Awfully Big Adventure
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["g"] = {
+						crit(36, {	-- Taralune
+							["coord"] = { 49.0, 80.4, 535 },
+							["cr"] = 87125,	-- Taralune <Grand Master Pet Tamer>
+						}),
+					},
+				}),
 				ach(9635),		-- Bobbing for Orcs (Shattrath City)
 				ach(9634),		-- Charged Up (Shattrath City)
 				ach(8920, {	-- Don't Let the Tala-door Hit You on the Way Out (Alliance) (unlocks ability to buy Talador Treasure Map from Grakis in Stormshield)

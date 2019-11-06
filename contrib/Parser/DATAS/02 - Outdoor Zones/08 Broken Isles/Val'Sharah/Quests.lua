@@ -5,8 +5,8 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(641, {	-- Val'sharah
-			n(-17,  {	-- Quests
-				q(38889,  {	-- Adopting the Adorable
+			n(-17, {	-- Quests
+				q(38889, {	-- Adopting the Adorable
 					["description"] = "|cff66ccffYou have to kill Jinikki the Puncturer to get this quest.|n",
 					["coord"] = { 53.0, 87.7, 641 },	-- cave entrance
 					["crs"] = { 93686 },	-- Jinikki the Puncturer
@@ -14,44 +14,44 @@ _.Zones =
 						i(128690),	-- Ashmaw Cub (PET!)
 					},
 				}),
-				q(42883,  {	-- All Grell Broke Loose
+				q(42883, {	-- All Grell Broke Loose
 					["coord"] = { 66.6, 77.1, 641 },
 					["provider"] = { "n", 109631 },	-- Old Grizzleback
 				}),
-				q(38381,  {	-- Archdruid of Lore (Non-Druid version)
+				q(38381, {	-- Archdruid of Lore (Non-Druid version)
 					["sourceQuests"] = { 38384 },	-- Nature's Call
 					["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12 },	-- not Druids
 					["coord"] = { 54.3, 73.4, 641 },
 					["provider"] = { "n", 94179 },	-- Aranelle
 				}),
-				q(44106,  {	-- Archdruid of Lore (Druid version)
+				q(44106, {	-- Archdruid of Lore (Druid version)
 					["sourceQuests"] = { 38384 },	-- Nature's Call
 					["classes"] = { 11 },	-- Druid
 					["coord"] = { 54.3, 73.4, 641 },
 					["provider"] = { "n", 94179 },	-- Aranelle
 				}),
-				q(38142,  {	-- Archdruid of the Claw
+				q(38142, {	-- Archdruid of the Claw
 					["sourceQuests"] = { 38384 },	-- Nature's Call
 					["coord"] = { 54.3, 73.4, 641 },
 					["provider"] = { "n", 94179 },	-- Aranelle
 				}),
-				q(38382,  {	-- Archdruid of the Vale
+				q(38382, {	-- Archdruid of the Vale
 					["sourceQuests"] = { 38384 },	-- Nature's Call
 					["coord"] = { 54.3, 73.4, 641 },
 					["provider"] = { "n", 94179 },	-- Aranelle
 				}),
-				q(38646,  {	-- A Sight For Sore Eyes
+				q(38646, {	-- A Sight For Sore Eyes
 					["sourceQuests"] = { 38643 },	-- A Village in Peril
 					["coord"] = { 38.9, 61.4, 641 },
 					["provider"] = { "n", 92618 },	-- Granny Marl
 				}),
-				q(38643,  {	-- A Village in Peril
+				q(38643, {	-- A Village in Peril
 					-- unsure why there are two versions of this quest.  i picked this version up on my horde priest.
 					["coord"] = { 54.7, 52.8, 641 },
 					["provider"] = { "n", 92688 },	-- Darcy Heathrow
 				}),
 				q(39149),	-- A Village in Peril
-				q(38143,  {	-- Awakening the Archdruid
+				q(38143, {	-- Awakening the Archdruid
 					["sourceQuests"] = {
 						38455,	-- Frenzied Furbolgs
 						38146,	-- The Chieftain's Beads
@@ -60,7 +60,7 @@ _.Zones =
 					["coord"] = { 49.0, 82.2, 641 },
 					["provider"] = { "n", 73426 },	-- Rylissa Bearsong
 				}),
-				q(38717,  {	-- Black Rook Prison
+				q(38717, {	-- Black Rook Prison
 					["sourceQuests"] = {
 						38717,	-- Maiev's Trail
 						38715,	-- The Rook's Guard
@@ -68,12 +68,12 @@ _.Zones =
 					["coord"] = { 43.7, 50.2, 641 },
 					["provider"] = { "n", 92842 },	-- Commander Jarod Shadowsong
 				}),
-				q(38724,  {	-- Brotherly Love
+				q(38724, {	-- Brotherly Love
 					["sourceQuests"] = { 38717 },	-- Black Rook Prison
 					["coord"] = { 42.3, 81.7, 642 },	-- Darkpens
 					["provider"] = { "n", 92850 },	-- Commander Jarod Shadowsong
 				}),
-				q(40536,  {	-- Bruls Before Jewels
+				q(40536, {	-- Bruls Before Jewels
 					["requireSkill"] = 755,	-- Jewelcrafting
 					["provider"] = { "n", 100776 },	-- Jabrul <Jewelcrafting Master>
 					["groups"] = {
@@ -82,12 +82,12 @@ _.Zones =
 						i(132467),	-- Design: Skystone Pendant
 					},
 				}),
-				q(40122,  {	-- Cenarius, Keeper of the Grove
+				q(40122, {	-- Cenarius, Keeper of the Grove
 					["sourceQuests"] = { 39861 },	-- Tying Up Loose Ends
 					["coord"] = { 54.6, 72.8, 641 },
 					["provider"] = { "n", 91462 },	-- Malfurion Stormrage
 				}),
-				q(38645,  {	-- Children of the Night
+				q(38645, {	-- Children of the Night
 					["sourceQuests"] = { 38643 },	-- A Village in Peril
 					["coord"] = { 42.4, 58.9, 641 },
 					["provider"] = { "n", 92620 },	-- Commander Jarod Shadowsong
@@ -140,7 +140,7 @@ _.Zones =
 						i(132323),	-- Varethos' Last Breath
 					},
 				}),
-				q(40567,  {	-- Darkheart Thicket: Enter the Nightmare
+				q(40567, {	-- Darkheart Thicket: Enter the Nightmare
 					["sourceQuests"] = { 38743 },	-- The Fate of Val'sharah
 					["coord"] = { 53.7, 55.8, 641 },
 					["provider"] = { "n", 104921 },	-- Tyrande Whisperwind
@@ -163,7 +163,7 @@ _.Zones =
 					["coord"] = { 69.5, 49.4, 641 },
 					["provider"] = { "n", 103022 },	-- Tyrande Whisperwind
 				}),
-				q(38225,  {	-- Death to the Witchmother
+				q(38225, {	-- Death to the Witchmother
 					["sourceQuests"] = {
 						38381,	-- Archdruid of Lord (Non-Druid)
 						44106,	-- Archdruid of Lore (Druid)
@@ -175,26 +175,26 @@ _.Zones =
 						i(130021),	-- Swiftfeather Band
 					},
 				}),
-				q(39383,  {	-- Dishonored
+				q(39383, {	-- Dishonored
 					["sourceQuests"] = { 38382 },	-- Archdruid of the Vale
 					["coord"] = { 60.9, 73.3, 641 },
 					["provider"] = { "n", 95395 },	-- Thaon Moonclaw
 				}),
-				q(42750,  {	-- Dreamcatcher
+				q(42750, {	-- Dreamcatcher
 					["sourceQuests"] = { 42748 },	-- Emerald Sisters (must be on quest)
 					["coord"] = { 59.4, 81.9, 641 },
 					["provider"] = { "n", 108358 },	-- Leirana
 				}),
-				q(38647,  {	-- For the Corn!
+				q(38647, {	-- For the Corn!
 					["sourceQuests"] = { 38643 },	-- A Village in Peril
 					["coord"] = { 38.9, 61.4, 641 },
 					["provider"] = { "n", 92618 },	-- Granny Marl
 				}),
-				q(42748,  {	-- Emerald Sisters
+				q(42748, {	-- Emerald Sisters
 					["coord"] = { 59.4, 84.1, 641 },
 					["provider"] = { "n", 108304 },	-- Guviena Bladesong
 				}),
-				q(38147,  {	-- Entangled Dreams
+				q(38147, {	-- Entangled Dreams
 					["sourceQuests"] = {
 						38145,	-- Out of the Dream
 						38144,	-- The Demons Below
@@ -212,7 +212,7 @@ _.Zones =
 						i(121587),	-- Thornbrace Helm
 					},
 				}),
-				q(38455,  {	-- Frenzied Furbolgs
+				q(38455, {	-- Frenzied Furbolgs
 					["sourceQuests"] = { 38142 },	-- Archdruid of the Claw
 					["coord"] = { 49.0, 82.2, 641 },
 					["provider"] = { "n", 73426 },	-- Rylissa Bearsong
@@ -229,20 +229,20 @@ _.Zones =
 					["coord"] = { 66.1, 44.6, 641 },
 					["provider"] = { "n", 92783 },	-- Elothir
 				}),
-				q(42884,  {	-- Grassroots Effort
+				q(42884, {	-- Grassroots Effort
 					["coord"] = { 66.6, 77.1, 641 },
 					["provider"] = { "n", 109631 },	-- Old Grizzleback
 				}),
-				q(42865,  {	-- Grell to Pay
+				q(42865, {	-- Grell to Pay
 					["coord"] = { 66.6, 77.1, 641 },
 					["provider"] = { "n", 109631 },	-- Old Grizzleback
 				}),
-				i(138441, {	-- Grotesque Remains
+				q(42786, {	-- Grotesque Remains
 					-- Not sure if you have to be on Where the Wildkin Are and/or Emerald Sisters to pick up this quest.
-					["questID"] = 42786,	-- Grotesque Remains
-					["crs"] = { 108327 },	-- Undulating Boneslime
+					["provider"] = { "i", 138441 },	-- Grotesque Remains
+					["cr"] = 108327,	-- Undulating Boneslime
 				}),
-				q(39015,  {	-- Grumpy
+				q(39015, {	-- Grumpy
 					-- not sure if there are prereqs for this.
 					["coord"] = { 38.6, 65.6, 641 },
 					["groups"] = {
@@ -261,19 +261,19 @@ _.Zones =
 					["coord"] = { 69.4, 49.4, 641 },
 					["provider"] = { "n", 103022 },	-- Tyrande Whisperwind
 				}),
-				q(44278,  {	-- Illidari Freedom
+				q(44278, {	-- Illidari Freedom
 					["sourceQuests"] = { 38717 },	-- Black Rook Prison
 					["classes"] = { 12 },	-- Demon Hunter
 					["coord"] = { 42.3, 81.7, 642 },	-- Darkpens
 					["provider"] = { "n", 93029 },	-- Arduen Soulblade
 				}),
-				q(38719,  {	-- Illidari Freedom
+				q(38719, {	-- Illidari Freedom
 					["sourceQuests"] = { 38717 },	-- Black Rook Prison
 					["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },	-- not Demon Hunter
 					["coord"] = { 42.3, 81.7, 642 },	-- Darkpens
 					["provider"] = { "n", 93029 },	-- Arduen Soulblade
 				}),
-				q(38691,  {	-- Jarod's Mission
+				q(38691, {	-- Jarod's Mission
 					["sourceQuests"] = {
 						39117,	-- Shriek No More (definitely required)
 						-- "Shriek No More" was the last quest i turned in from the bradensbrook area, so i'm not sure what else is required.
@@ -287,12 +287,12 @@ _.Zones =
 					["coord"] = { 42.5, 59.0, 641 },
 					["provider"] = { "n", 92620 },	-- Commander Jarod Shadowsong
 				}),
-				q(38718,  {	-- Kur'talos Ravencrest
+				q(38718, {	-- Kur'talos Ravencrest
 					["sourceQuests"] = { 38691 },	-- Jarod's Mission
 					["coord"] = { 40.8, 53.0, 641 },
 					["provider"] = { "n", 92842 },	-- Commander Jarod Shadowsong
 				}),
-				q(38721,  {	-- Lieutenant of the Tower
+				q(38721, {	-- Lieutenant of the Tower
 					["sourceQuests"] = { 38724 },	-- Brotherly Love
 					["coord"] = { 24.5, 42.3, 642 },
 					["provider"] = { "n", 93027 },	-- Maiev Shadowsong
@@ -320,12 +320,12 @@ _.Zones =
 						i(132355),	-- Wind-Whipped Hold Banner Strip
 					},
 				}),
-				q(38922,  {	-- Littlefur
+				q(38922, {	-- Littlefur
 					["sourceQuests"] = { 38142 },	-- Archdruid of the Claw
 					["coord"] = { 48.3, 84.5, 641 },
 					["provider"] = { "n", 93890 },	-- Elder Sookh
 				}),
-				q(38671,  {	-- Lost in Retreat
+				q(38671, {	-- Lost in Retreat
 					["sourceQuests"] = { 41054 },	-- Love Lost
 					["coord"] = { 69.5, 49.4, 641 },
 					["provider"] = { "n", 94863 },	-- Mender Onelle
@@ -342,7 +342,7 @@ _.Zones =
 					["coord"] = { 67.4, 56.1, 641 },
 					["provider"] = { "n", 102938 },	-- Tyrande Whisperwind
 				}),
-				q(38714,  {	-- Maiev's Trail
+				q(38714, {	-- Maiev's Trail
 					["sourceQuests"] = { 38718 },	-- Kur'talos Ravencrest
 					["coord"] = { 40.7, 53.0, 641 },
 					["provider"] = { "n", 92850 },	-- Commander Jarod Shadowsong
@@ -354,21 +354,20 @@ _.Zones =
 						i(121604),	-- Thornbrace Wristguards
 					},
 				}),
-				q(38595,  {	-- Malfurion's Fury
+				q(38595, {	-- Malfurion's Fury
 					["sourceQuests"] = { 38663 },	-- The Die is Cast
 					["coord"] = { 52.2, 63.5, 641 },
 					["provider"] = { "n", 92742 },	-- Ysera
 				}),
-				{	-- Mark of the Demon
-					["questID"] = 38656,	-- Mark of the Demon
-					["itemID"] = 124131,	-- Demonic Emblem
+				q(38656, {	-- Mark of the Demon
+					["provider"] = { "i", 124131 },	-- Demonic Emblem
 					["coord"] = { 56.7, 54.4, 641 },
-					["provider"] = { "n", 92802 },	-- Gravax the Desecrator
-				},
-				q(42857,  {	-- Moist Around the Hedges
+					["cr"] = 92802,	-- Gravax the Desecrator
+				}),
+				q(42857, {	-- Moist Around the Hedges
 					["coord"] = { 66.7, 75.7, 641 },
 				}),
-				q(42751,  {	-- Moon Reaver
+				q(42751, {	-- Moon Reaver
 					["sourceQuests"] = {
 						42750,	-- Dreamcatcher
 						42748,	-- Emerald Sisters
@@ -377,7 +376,7 @@ _.Zones =
 					["coord"] = { 59.4, 84.2, 641 },
 					["provider"] = { "n", 108304 },	-- Guviena Bladesong
 				}),
-				q(38384,  {	-- Nature's Call
+				q(38384, {	-- Nature's Call
 					["sourceQuests"] = { 40122 },	-- Cenarius, Keeper of the Grove
 					["coord"] = { 51.9, 64.1, 641 },
 					["provider"] = { "n", 91109 },	-- Malfurion Stormrage
@@ -386,28 +385,28 @@ _.Zones =
 						i(141619),	-- Mana-Infused Berries
 					},
 				}),
-				q(38145,  {	-- Out of the Dream
+				q(38145, {	-- Out of the Dream
 					["sourceQuests"] = { 38143 },	-- Awakening the Archdruid
 					["coord"] = { 60.7, 19.1, 643 },	-- Sleeper's Barrow
 					["provider"] = { "n", 91223 },	-- Koda Steelclaw
 				}),
-				q(38684,  {	-- Reading the Leaves
+				q(38684, {	-- Reading the Leaves
 					["sourceQuests"] = { 38675 },	-- Heart of the Nightmare (Horde)
 					["coord"] = { 66.1, 44.6, 641 },
 					["provider"] = { "n", 92783 },	-- Elothir
 				}),
-				q(43576,  {	-- Regroup at the Refuge
+				q(43576, {	-- Regroup at the Refuge
 					["sourceQuests"] = { 41890 },	-- Dark Side of the Moon (Horde)
 					["coord"] = { 66.8, 50.2, 641 },
 					["provider"] = { "n", 104885 },	-- Tyrande Whisperwind
 				}),
-				q(38148,  {	-- Return to the Grove
+				q(38148, {	-- Return to the Grove
 					["sourceQuests"] = { 38147 },	-- Entangled Dreams
 					["description"] = "You will only be able to pick up one 'Return to the Grove' quest, based on the order in which you complete quests.  Turning in whichever version you pick up should give you credit for all three.",
 					["coord"] = { 48.9, 81.6, 641 },
 					["provider"] = { "n", 91223 },	-- Koda Steelclaw
 				}),
-				q(38322,  {	-- Return to the Grove
+				q(38322, {	-- Return to the Grove
 					["sourceQuests"] = {
 						38225,	-- Death to the Witchmother
 						38235,	-- Solid as a Rock
@@ -416,18 +415,18 @@ _.Zones =
 					["coord"] = { 48.8, 70.2, 641 },
 					["provider"] = { "n", 91066 },	-- Elothir
 				}),
-				q(38323,  {	-- Return to the Grove
+				q(38323, {	-- Return to the Grove
 					["sourceQuests"] = { 40573 },	-- The Nightmare Lord
 					["description"] = "You will only be able to pick up one 'Return to the Grove' quest, based on the order in which you complete quests.  Turning in whichever version you pick up should give you credit for all three.",
 					["coord"] = { 62.2, 76.2, 641 },
 					["provider"] = { "n", 100573 },	-- Evelle Nightwhisper
 				}),
-				q(38655,  {	-- Root Cause
+				q(38655, {	-- Root Cause
 					["sourceQuests"] = { 38641 },	-- The Temple of Elune
 					["coord"] = { 51.4, 56.9, 641 },
 					["provider"] = { "n", 92697 },	-- Isoraen Nightstar
 				}),
-				q(39117,  {	-- Shriek No More
+				q(39117, {	-- Shriek No More
 					["sourceQuests"] = { 38643 },	-- A Village in Peril
 					["coord"] = { 37.1, 58.4, 641 },
 					["provider"] = { "n", 94117 },	-- Cecily Radcliffe
@@ -437,7 +436,7 @@ _.Zones =
 						i(130009),	-- Bonefeather Talisman
 					},
 				}),
-				q(43702,  {	-- Softening the Target
+				q(43702, {	-- Softening the Target
 					["sourceQuests"] = {
 						41749,	-- Given to Corruption (Horde)
 						38684,	-- Reading the Leaves
@@ -445,7 +444,7 @@ _.Zones =
 					["coord"] = { 66.1, 44.8, 641 },
 					["provider"] = { "n", 104728 },	-- Tyrande Whisperwind
 				}),
-				q(38235,  {	-- Solid as a Rock
+				q(38235, {	-- Solid as a Rock
 					["sourceQuests"] = {
 						38381,	-- Archdruid of Lord (Non-Druid)
 						44106,	-- Archdruid of Lore (Druid)
@@ -453,7 +452,7 @@ _.Zones =
 					["coord"] = { 48.9, 70.1, 641 },
 					["provider"] = { "n", 91066 },	-- Elothir
 				}),
-				q(40221,  {	-- Spread Your Lunarwings and Fly
+				q(40221, {	-- Spread Your Lunarwings and Fly
 					["coord"] = { 53.8, 79.7, 641 },
 					["provider"] = { "n", 93600 },	-- Saylanna Riverbreeze
 					["groups"] = {
@@ -467,7 +466,7 @@ _.Zones =
 						i(121579),	-- Thornbrace Sabatons
 					},
 				}),
-				q(38662,  {	-- Tears for Fears
+				q(38662, {	-- Tears for Fears
 					["sourceQuests"] = { 38641 },	-- The Temple of Elune
 					["coord"] = { 51.4, 56.9, 641 },
 					["provider"] = { "n", 92680 },	-- Lyanis Moonfall
@@ -478,28 +477,27 @@ _.Zones =
 						i(121649),	-- Vibrant Temple Masonry
 					},
 				}),
-				{	-- The Chieftain's Beads
-					["questID"] = 38146,	-- The Chieftain's Beads
-					["itemID"] = 128340,
+				q(38146, {	-- The Chieftain's Beads
+					["provider"] = { "i", 128340, },	-- The Chieftain's Beads
 					["coord"] = { 48.4, 87.9, 641 },
-					["provider"] = { "n", 91318 },	-- Chieftain Graw
-				},
-				q(39384,  {	-- The Corruptor
+					["cr"] = 91318,	-- Chieftain Graw
+				}),
+				q(39384, {	-- The Corruptor
 					["sourceQuests"] = { 39383 },	-- Dishonored
 					["coord"] = { 62.8, 71.5, 641 },
 					["provider"] = { "n", 95396 },	-- Thaon Moonclaw
 				}),
-				q(38144,  {	-- The Demons Below
+				q(38144, {	-- The Demons Below
 					["sourceQuests"] = { 38143 },	-- Awakening the Archdruid
 					["coord"] = { 60.7, 19.1, 643 },	-- Sleeper's Barrow
 					["provider"] = { "n", 91223 },	-- Koda Steelclaw
 				}),
-				q(38753,  {	-- The Demon's Trail
+				q(38753, {	-- The Demon's Trail
 					["sourceQuests"] = { 38582 },	-- To Old Friends
 					["coord"] = { 65.0, 61.1, 641 },
 					["provider"] = { "n", 92710 },	-- Ysera
 				}),
-				q(38663,  {	-- The Die is Cast
+				q(38663, {	-- The Die is Cast
 					["sourceQuests"] = {
 						38655,	-- Root Cause
 						38662,	-- Tears for Fears
@@ -507,7 +505,7 @@ _.Zones =
 					["coord"] = { 51.4, 56.9, 641 },
 					["provider"] = { "n", 92680 },	-- Lyanis Moonfall
 				}),
-				q(38377,  {	-- The Emerald Queen
+				q(38377, {	-- The Emerald Queen
 					["sourceQuests"] = {
 						38148,	-- Return to the Grove
 						38322,	-- Return to the Grove
@@ -539,7 +537,7 @@ _.Zones =
 						i(132289),	-- Vale Shadow Frost
 					},
 				}),
-				q(38644,  {	-- The Farmsteads
+				q(38644, {	-- The Farmsteads
 					["sourceQuests"] = { 38643 },	-- A Village in Peril
 					["coord"] = { 42.2, 59.0, 641 },
 					["provider"] = { "n", 92683 },	-- Emmeline
@@ -554,12 +552,12 @@ _.Zones =
 						i(130007),	-- Thornbrace Girdle
 					},
 				}),
-				q(38743,  {	-- The Fate of Val'sharah
+				q(38743, {	-- The Fate of Val'sharah
 					["sourceQuests"] = { 41763 },	-- Close Enough to Touch (Horde)
 					["coord"] = { 57.8, 38.6, 641 },
 					["provider"] = { "n", 104799 },	-- Tyrande Whisperwind
 				}),
-				q(40573,  {	-- The Nightmare Lord
+				q(40573, {	-- The Nightmare Lord
 					["sourceQuests"] = { 39384 },	-- The Corruptor
 					["coord"] = { 65.1, 67.0, 641 },
 					["provider"] = { "n", 91650 },	-- Evelle Nightwhisper
@@ -571,50 +569,35 @@ _.Zones =
 						i(121643),	-- Thaon's Grief
 					},
 				}),
-				q(38715,  {	-- The Rook's Guard
+				q(38715, {	-- The Rook's Guard
 					["sourceQuests"] = { 38718 },	-- Kur'talos Ravencrest
 					["coord"] = { 40.7, 53.0, 641 },
 					["provider"] = { "n", 92850 },	-- Commander Jarod Shadowsong
 				}),
-				{	-- The Tears of Elune
-					--["objectID"] = 248534,	-- The Tears of Elune
-					["questID"] = 40890,	-- The Tears of Elune
-					["sourceQuests"] = {
-						38743,	-- The Fate of Val'Sharah
-					},
-					["coords"] = {
-						{ 53.7, 55.8, 641 },
-					},
+				q(40890, {	-- The Tears of Elune
+					["provider"] = { "o", 248534 },	-- The Tears of Elune
+					["sourceQuests"] = { 38743 },	-- The Fate of Val'Sharah
+					["coord"] = { 53.7, 55.8, 641 },
 					["icon"] = "Interface\\Icons\\inv_jewelcrafting_gem_42",
-					["groups"] = {
-						{	-- Shaladrassil Cuirass
-							["itemID"] = 130001,	-- Shaladrassil Cuirass
-						},
-						{	-- Shaladrassil Tunic
-							["itemID"] = 129993,	-- Shaladrassil Tunic
-						},
-						{	-- Shaladrassil Vestments
-							["itemID"] = 129985,	-- Shaladrassil Vestments
-						},
-						{	-- Shaladrassil Chestguard
-							["itemID"] = 130012,	-- Shaladrassil Chestguard
-						},
+					["g"] = {
+						i(130001),	-- Shaladrassil Cuirass
+						i(129993),	-- Shaladrassil Tunic
+						i(129985),	-- Shaladrassil Vestments
+						i(130012),	-- Shaladrassil Chestguard
 					},
-				},
-				q(38641,  {	-- The Temple of Elune
+				}),
+				q(38641, {	-- The Temple of Elune
 					["sourceQuests"] = { 38377 },	-- The Emerald Queen
 					["coord"] = { 52.4, 63.6, 641 },
 					["provider"] = { "n", 98584 },	-- Ysera
 				}),
-				{	-- The Warden's Signet
-					["questID"] = 38711,	-- The Warden's Signet
-					["itemID"] = 127860,	-- Warden's Signet
+				q(38711, {	-- The Warden's Signet
+					["provider"] = { "i", 127860 },	-- Warden's Signet
 					["coord"] = { 38.9, 65.1, 641 },
-					["provider"] = { "n", 94366 },	-- Lelyn Swiftshadow
-				},
-				{	-- Thieving Thistleleaf
-					["questID"] = 38862,	-- Thieving Thistleleaf
-					["itemID"] = 129966,	-- Lunarwing Egg
+					["cr"] = 94366,	-- Lelyn Swiftshadow
+				}),
+				q(38862, {	-- Thieving Thistleleaf
+					["provider"] = { "i", 129966 },	-- Lunarwing Egg
 					["coord"] = { 53.7, 82.2, 641 },
 					["crs"] = {
 						91472,	-- Thistleleaf Menace
@@ -622,12 +605,12 @@ _.Zones =
 						91354,	-- Thistleleaf Ruffian
 						93444,	-- Thistleleaf Thorndancer
 					},
-				},
-				q(40220,  {	-- Thorny Dancing
+				}),
+				q(40220, {	-- Thorny Dancing
 					["coord"] = { 53.8, 79.7, 641 },
 					["provider"] = { "n", 93600 },	-- Saylanna Riverbreeze
 				}),
-				q(38582,  {	-- To Old Friends
+				q(38582, {	-- To Old Friends
 					["sourceQuests"] = { 38595 },	-- Malfurion's Fury
 					["coord"] = { 60.7, 61.5, 641 },
 					["provider"] = { "n", 92420 },	-- Ysera
@@ -642,7 +625,7 @@ _.Zones =
 						i(121597),	-- Thornbrace Spaulders
 					},
 				}),
-				q(38246,  {	-- Totemic Call
+				q(38246, {	-- Totemic Call
 					["sourceQuests"] = { 38922 },	-- Littlefur
 					["coord"] = { 46.3, 84.6, 641 },
 					["provider"] = { "n", 93581 },	-- Littlefur
@@ -657,11 +640,11 @@ _.Zones =
 						i(121600),	-- Thornbrace Waistguard
 					},
 				}),
-				q(42747,  {	-- Where the Wildkin Are
+				q(42747, {	-- Where the Wildkin Are
 					["coord"] = { 59.4, 84.1, 641 },
 					["provider"] = { "n", 108304 },	-- Guviena Bladesong
 				}),
-				q(39354,  {	-- Wisp in the Willows
+				q(39354, {	-- Wisp in the Willows
 					["sourceQuests"] = { 38384 },	-- Nature's Call
 					["coord"] = { 54.3, 68.3, 641 },
 					["provider"] = { "n", 95202 },	-- Syndrelle
@@ -672,7 +655,7 @@ _.Zones =
 		--[[	q(44825, {	-- Wisp in the Willows REMOVED?
 					i(130127),	-- Syndrelle's Favorite Ring
 				}),		]]--
-				q(41707,  {	-- Wormtalon Wreckage
+				q(41707, {	-- Wormtalon Wreckage
 					["sourceQuests"] = { 41054 },	-- Love Lost
 					["coord"] = { 69.5, 49.4, 641 },
 					["provider"] = { "n", 95117 },	-- Aldos Duskwing

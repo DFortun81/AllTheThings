@@ -681,7 +681,22 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 				}),
-				--q(31207),	-- The Arena of Annihilation
+				q(31207, {	-- The Arena of Annihilation
+					["provider"] = { "n", 63315 },	-- Gurgthock
+					["coord"] = { 68.6, 48.4, 379 },
+					["lvl"] = 90,
+					["maps"] = { 480 },	-- Arena of Annihilation
+					["g"] = {
+						i(90466),	-- Maki's Mashing Mace
+						i(90465),	-- Scar-Shell's Scintillating Staff
+						i(90464),	-- Satay's Stabbing Sword
+						i(90463),	-- Chagan's Cheery Chopper
+						i(90462),	-- Liuyang's Lovely Longstaff
+						i(90461),	-- Jol'Grum's Frozen Mace
+						i(90460),	-- Cloudbender Kobo's Chilled Crossbow
+						i(90459),	-- Liuyang's Light-Lit Longshank
+					},
+				}),
 				q(32400, {	-- The Bell Speaks (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -705,7 +720,7 @@ _.Zones =
 				}),
 				q(30821, {	-- The Burlap Grind (daily)
 					["provider"] = { "n", 60679 },	-- Nephew Burrberry
-					["isRepeatable"] = true,
+					["repeatable"] = true,
 				}),
 				q(30592, {	-- The Burlap Trail: To Burlap Waystation
 					["provider"] = { "n", 59701 },	-- Brother Lintpocket
@@ -1023,12 +1038,6 @@ _.Zones =
 				q(30724),	-- To the Wall!
 				q(30699),	-- To Winter's Blossom
 				q(32384, {	-- Trapping the Leader
-					["races"] = HORDE_ONLY,
-				}),
-				q(31380, {	-- Trial At The Temple of the White Tiger
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(31381, {	-- Trial At The Temple of the White Tiger
 					["races"] = HORDE_ONLY,
 				}),
 				q(30826),	-- Trouble Brewing

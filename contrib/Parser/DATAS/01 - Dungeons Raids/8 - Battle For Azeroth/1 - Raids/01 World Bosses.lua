@@ -3,19 +3,28 @@
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	n(-7, {	-- World Bosses
+		["order"] = "01",
+		["ordered"] = true,
 		["isRaid"] = true,
 		["modID"] = 14,
 		["lvl"] = 120,
 		["g"] = {
 			e(2199, {	-- Azurethos, The Winged Typhoon
+				["isWeekly"] = true,
 				["questID"] = 52163,	-- The Matriarch (WQ)
 				["isRaid"] = true,
 				["coord"] = { 62.0, 24.0, 895 },	-- Tiragarde Sound
-				["maps"] = { 895 },	-- Tiragarde Sound
-				["crs"] = { 136385 },	-- Azurethos, The Winged Typhoon
+				["maps"] = {	-- all Tiragarde Sound maps
+					895,	-- Tiragarde Sound
+					1171,	-- Gol Thovas (lower)
+					1172,	-- Gol Thovas (upper)
+					1184,	-- Winterchill Mine (lower)
+					1185,	-- Winterchill Mine (upper)
+				},
+				["cr"] = 136385,	-- Azurethos, The Winged Typhoon
 				["g"] = bubbleDown({["modID"] = 3}, {
-					crit(6, {	-- Unbound Monstrosities (Azurethos)
-						["achievementID"] = 12587,
+					crit(6, {	-- Azurethos
+						["achievementID"] = 12587,	-- Unbound Monstrosities
 					}),
 					i(161356),	-- Feathered Galeforce Crest
 					i(161352),	-- Chestguard of Dire Winds
@@ -31,17 +40,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2213, {	-- Doom's Howl [Warfront]
+				["isWeekly"] = true,
 				["questID"] = 52847,	-- Doom's Howl (WQ)
 				["isRaid"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 37.8, 40.2, 14 },
 				["maps"] = { 14 },	-- Arathi Highlands
-				["crs"] = {
-					138122,	-- Doom's Howl
-					--143598,	-- Doom's Howl Engineer
-					--143597,	-- Doom's Howl Dreadshield
-					--143599,	-- Doom's Howl Warcaster
-				},
+				["cr"] = 138122,	-- Doom's Howl
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(163195),	-- Schematic: Makeshift Azerite Detector (confirmed drop by Crieve on stream 11.23.18)
 					i(163828),	-- Toy Siege Tower
@@ -59,25 +64,18 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2210, {	-- Dunegorger Kraulok
+				["isWeekly"] = true,
 				["questID"] = 52196,	-- Sandswept Bones (WQ)
 				["isRaid"] = true,
 				["coord"] = { 44.3, 55.5, 864 },
-				["maps"] = { 864 },	-- Vol'dun
-				["crs"] = {
-					138794,	-- Dunegorger Kraulok
-					139614,	-- Ravenous Ranishu
+				["maps"] = {	-- all Vol'dun maps
+					864,	-- Vol'dun
+					1009,	-- Atul'Aman: The Blood Font
 				},
+				["cr"] = 138794,	-- Dunegorger Kraulok
 				["g"] = bubbleDown({["modID"] = 3}, {
-					q(53000, {	-- Kraulok looted
-						["title"] = "Kraulok looted",
-						["isWeekly"] = true,
-					}),
-					q(52265, {	-- Kraulok bonus roll used
-						["title"] = "Kraulok bonus roll used",
-						["isWeekly"] = true,
-					}),
-					crit(5, {	-- Unbound Monstrosities (Dunegorger Kraulok)
-						["achievementID"] = 12587,
+					crit(5, {	-- Dunegorger Kraulok
+						["achievementID"] = 12587,	-- Unbound Monstrosities 
 					}),
 					i(161404),	-- Hood of the Sinuous Devilsaur
 					i(164385),	-- Desert Nomad's Wrap
@@ -91,6 +89,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2197, {	-- Hailstone Construct
+				["isWeekly"] = true,
 				["questID"] = 52157,	-- A Chilling Encounter (WQ)
 				["isRaid"] = true,
 				["coords"] = {
@@ -99,10 +98,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					{ 49.2, 74.6, 896 },	-- actual boss
 				},
 				["maps"] = { 896 },	-- Drustvar
-				["crs"] = { 140252 },	-- Hailstone Construct
+				["cr"] = 140252,	-- Hailstone Construct
 				["g"] = bubbleDown({["modID"] = 3}, {
-					crit(2, {	-- Unbound Monstrosities (Hailstone)
-						["achievementID"] = 12587,
+					crit(2, {	-- Hailstone
+						["achievementID"] = 12587,	-- Unbound Monstrosities 
 					}),
 					i(161372),	-- Ice-Carved Shoulderplates
 					i(161367),	-- Hailstone Hauberk
@@ -118,12 +117,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2345, {	-- Ivus the Decayed [Alliance Only]
+				["isWeekly"] = true,
 				["questID"] = 54895,	-- Ivus the Decayed (WQ)
 				["isRaid"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 41.47, 35.97, 62 },
 				["maps"] = { 62 },	-- Darkshore
-				["crs"] = { 148295 },	-- Ivus the Decayed
+				["cr"] = 148295,	-- Ivus the Decayed
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(166695),	-- Petrified Ironbark Crown
 					i(166687),	-- Warring Ancient's Mask
@@ -139,12 +139,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2329, {	-- Ivus the Forest Lord [Horde Only]
+				["isWeekly"] = true,
 				["questID"] = 54896,	-- Ivus the Forest Lord (WQ)
 				["isRaid"] = true,
 				["races"] = HORDE_ONLY,
-				["coord"] = { 41.47, 35.97, 62 },
+				["coord"] = { 41.4, 35.9, 62 },
 				["maps"] = { 62 },	-- Darkshore
-				["crs"] = { 144946 },	-- Ivus the Forest Lord
+				["cr"] = 144946,	-- Ivus the Forest Lord
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(166696),	-- Petrified Ironbark Crown
 					i(166688),	-- Warring Ancient's Crown
@@ -160,14 +161,21 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2141, {	-- Ji'arak
+				["isWeekly"] = true,
 				["questID"] = 52169,	-- The Matriarch (WQ)
 				["isRaid"] = true,
 				["coord"] = { 69.0, 31.0, 862 },
-				["maps"] = { 862 },	-- Zuldazar
-				["crs"] = { 132253 },	-- Ji'arak
+				["maps"] = {	-- all Zuldazar maps
+					862,	-- Zuldazar
+					1166,	-- Zanchul
+					1167,	-- Zanchul 2
+					1176,	-- Breath of Pa'ku, middle level
+					1177,	-- Breath Of Pa'ku,	bottom level
+				},
+				["cr"] = 132253,	-- Ji'arak
 				["g"] = bubbleDown({["modID"] = 3}, {
-					crit(4, {	-- Unbound Monstrosities (Ji'arak)
-						["achievementID"] = 12587,
+					crit(4, {	-- Ji'arak
+						["achievementID"] = 12587,	-- Unbound Monstrosities
 					}),
 					i(161401),	-- Matriarch's Shadowveil
 					i(164384),	-- Windswept Dinorider's Cape
@@ -181,14 +189,15 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2139, {	-- T'zane <The Soul Terror>
+				["isWeekly"] = true,
 				["questID"] = 52181,	-- Smoke and Shadow (WQ)
 				["isRaid"] = true,
 				["coord"] = { 35.6, 33.6, 863 },
 				["maps"] = { 863 },	-- Nazmir
-				["crs"] = { 132701 },	-- T'zane <Tehe Soul Terror>
+				["cr"] = 132701,	-- T'zane <Tehe Soul Terror>
 				["g"] =  bubbleDown({["modID"] = 3}, {
-					crit(3, {	-- Unbound Monstrosities (Tzane)
-						["achievementID"] = 12587,
+					crit(3, {	-- T'zane
+						["achievementID"] = 12587,	-- Unbound Monstrosities
 					}),
 					i(161396),	-- Petrified Mask of the Afterlife
 					i(161391),	-- Deathshambler's Shoulderpads
@@ -204,17 +213,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2212, {	-- The Lion's Roar [Warfront]
+				["isWeekly"] = true,
 				["questID"] = 52848,	-- The Lion's Roar (WQ)
 				["isRaid"] = true,
 				["races"] = HORDE_ONLY,
-				["coord"] = { 35.55, 38.91, 14 },
+				["coord"] = { 35.5, 38.9, 14 },
 				["maps"] = { 14 },	-- Arathi Highlands
-				["crs"] = {
-					137374,	-- The Lion's Roar
-					--143600,	-- Lion's Engineer
-					--143601,	-- Lion's Shieldbearer
-					--143602,	-- Lion's Warcaster
-				},
+				["cr"] = 137374,	-- The Lion's Roar
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(163829),	-- Toy War Machine
 					i(161455),	-- Battlemage's Collar
@@ -231,10 +236,17 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2362, {	-- Ulmath, the Soulbinder
+				["isWeekly"] = true,
 				["questID"] = 56057,
 				["isRaid"] = true,
 				["coord"] = { 84.2, 35.9, 1355 },
-				["maps"] = { 1355 },
+				["maps"] = {	-- all Nazjatar maps
+					1355,	-- Nazjatar
+					1499,	-- 
+					1500,	-- Chitterspine Grotto
+					1524,	-- Deepsea Slave Pen
+					1528,	-- The Eternal Palace
+				},
 				["crs"] = {
 					152736,	-- Guardian Tannin
 					152729,	-- Moon Princess Liara
@@ -257,14 +269,20 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2198, {	-- Warbringer Yenajz
+				["isWeekly"] = true,
 				["questID"] = 52166,	-- The Faceless Herald (WQ)
 				["isRaid"] = true,
 				["coord"] = { 83.2, 49.6, 942 },
-				["maps"] = { 942 },	-- Stormsong Valley
-				["crs"] = { 140163 },	-- Warbringeer Yenajz
+				["maps"] = {	-- all Stormsong Valley maps
+					942,	-- Stormsong Valley
+					1179,	-- Abyssal Melody
+					1182,	-- Saltstone Mine
+					1183,	-- Thornheart
+				},
+				["cr"] = 140163,	-- Warbringeer Yenajz
 				["g"] = bubbleDown({["modID"] = 3}, {
-					crit(1, {	-- Unbound Monstrosities (Warbringer Yenajz)
-						["achievementID"] = 12587,
+					crit(1, {	-- Warbringer Yenajz
+						["achievementID"] = 12587,	-- Unbound Monstrosities
 					}),
 					i(161349),	-- Amice of the Rending Abyss
 					i(161357),	-- Spaulders of the Enveloping Maw
@@ -278,11 +296,18 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2363, {	-- Wekemara
+				["isWeekly"] = true,
 				["questID"] = 56056,
 				["isRaid"] = true,
 				["coord"] = { 42.8, 77.9, 1355 },
-				["maps"] = { 1355 },
-				["crs"] = { 152671 },	-- Wekemara
+				["maps"] = {	-- all Nazjatar maps
+					1355,	-- Nazjatar
+					1499,	-- 
+					1500,	-- Chitterspine Grotto
+					1524,	-- Deepsea Slave Pen
+					1528,	-- The Eternal Palace
+				},
+				["cr"] = 152671,	-- Wekemara
 				["g"] = bubbleDown({["modID"] = 3}, {
 					crit(2, {	-- Defeat one of the World Bosses in Nazjatar
 						["achievementID"] = 13635,	-- Tour of the Depths

@@ -399,6 +399,10 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
+					q(51153, {	-- Mor'fani the Exile
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+					}),
 					q(54287, {	-- Naga Attack!
 						["lvl"] = 120,
 						["isWorldQuest"] = true,

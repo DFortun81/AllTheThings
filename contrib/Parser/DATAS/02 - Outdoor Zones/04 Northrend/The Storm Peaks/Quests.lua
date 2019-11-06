@@ -780,6 +780,7 @@ _.Zones =
 						q(13843, {	-- The Scrapbot Construction Kit
 							["coord"] = { 37.6, 46.8, 120 },
 							["requireSkill"] = 202,	-- Engineering
+							["repeatable"] = true,
 							["sourceQuests"] = { 12889 },	-- The Prototype Console
 							-- wh says this ALSO teaches Scrapbot Construction Kit, spell 55252
 							-- not sure how to list reward/what quest it comes from, or if the questline has changed, so i guess an engineer needs to check it out

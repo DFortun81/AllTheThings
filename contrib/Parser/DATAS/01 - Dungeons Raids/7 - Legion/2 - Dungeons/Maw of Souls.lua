@@ -11,15 +11,15 @@ _.Instances = { tier(7, {	-- Legion
 			n(-34, {	-- World Quests
 				q(42780, {	-- Maw of Souls: From Hell's Mouth
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(42757, {	-- Maw of Souls: Menace of the Seas
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 				q(42788, {	-- Maw of Souls: Return of the Beast
 					["lvl"] = 110,
-					["collectible"] = false,
+					["isWorldQuest"] = true,
 				}),
 			}),
 			d(1, {		-- Normal

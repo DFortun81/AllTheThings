@@ -63,6 +63,27 @@ _.PetBattles =
 			ach(13766, {	-- Malowned
 				i(170102),	-- Burnout
 			}),
+			q(56489, {	-- Restless Dead (A)
+				["provider"] = { "n", 147645 },	-- Tizzy Gearjolt
+				["coord"] = { 50.3, 46.9, 1161 },
+				["races"] = ALLIANCE_ONLY,
+				["maps"] = { 1161 },	-- Boralus
+				["lvl"] = 120,
+			}),
+			q(56490, {	-- Restless Dead (H)
+				["provider"] = { "n", 147641 },	-- Radek Fuselock
+				["coord"] = { 56.2, 31.0, 1163 },
+				["races"] = HORDE_ONLY,
+				["maps"] = { 1163, 1164, 1165 },	-- Dazar'alor
+				["lvl"] = 120,
+			}),
+			q(56491, {	-- Tiny Terrors of Stratholme
+				["sourceQuests"] = { 56489, 56490 },	-- Restless Dead (A, H)
+				["provider"] = { "n", 150987 },	-- Sean Wilkers
+				["coord"] = { 43.2, 20.0, 23 },
+				["maps"] = { 23, 24 },	-- Eastern Plaguelands
+				["lvl"] = 120,
+			}),
 			q(56914, {	-- Angry Residents
 				["isWeekly"] = true,
 				["g"] = {

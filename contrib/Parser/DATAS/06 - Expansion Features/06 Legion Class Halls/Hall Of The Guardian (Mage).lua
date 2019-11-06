@@ -233,8 +233,6 @@ _.ExpansionFeatures =
 					q(44689),	-- The Might of the Tirisgarde
 					q(45207),	-- The Nightborne Apprentice
 					q(41113),	-- The Only Way to Travel
-					q(43503),	-- The Power Within
-					q(43505),	-- The Power Within
 					q(42955),	-- The Proper Way of Things
 					q(41124),	-- The Tirisgarde Reborn
 					q(46335),	-- The Vault of the Tirisgarde

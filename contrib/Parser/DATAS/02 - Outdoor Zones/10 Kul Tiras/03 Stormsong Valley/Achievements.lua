@@ -7,6 +7,10 @@ _.Zones =
 		m(942, {	-- Stormsong Valley
 			n(-4,   {	-- Achievement
 				ach(12940),		-- Adventurer of Stormsong Valley
+				ach(13053, {	-- Deadliest Cache
+					["sourceQuests"] = { 52130 },	-- Deadliest Cache: Carpe Diem
+					["races"] = ALLIANCE_ONLY,
+				}),
 				ach(13051, {	-- Legends of the Tidesages
 					crit(1, {	-- Legends of the Tidesages - Part 1
 						["coord"] = { 49.51, 80.90, 942 },
@@ -59,6 +63,10 @@ _.Zones =
 							["sourceQuests"] = { 50640 },	-- A Question of Quillpower
 						}),
 						crit(8, {	-- Treasure in Deadwash
+						--	may also require the following quests, which i picked up at the same time:
+							-- 50803,	-- I Want It All Now
+							-- 52132,	-- The Proof of Piracy
+							-- 50955,	-- We're Not Friends
 							["sourceQuests"] = { 50742 },	-- All Laid Out for Us
 						}),
 					},

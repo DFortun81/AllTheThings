@@ -91,6 +91,7 @@ _.Zones =
 					["sourceQuest"] = 37,	-- Find the Lost Guards
 				}),
 				q(1097,  {	-- Elmore's Task
+					["isBreadcrumb"] = true,	-- for "Stormpike's Delivery" in Stormwind
 					["provider"] = { "n", 514 },	-- Smith Argus
 					["coord"] = { 41.7, 65.5, 37 },
 					["races"] = ALLIANCE_ONLY,
@@ -164,6 +165,7 @@ _.Zones =
 					["description"] = "This quest is available to Humans upon reaching level 20.",
 					["races"] = { 1 },	-- Human
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 				}),
 				q(14079, {	-- Learn to Ride in Elwynn Forest
 					["u"] = 40,

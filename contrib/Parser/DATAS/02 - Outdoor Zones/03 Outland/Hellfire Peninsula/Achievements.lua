@@ -5,24 +5,53 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(100, {	-- Hellfire Peninsula
-			n(-4, {	-- Achievements
+			n(-4, {		-- Achievements
+				ach(9069, {	-- An Awfully Big Adventure
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["g"] = {
+						crit(28, {	-- Nicki Tinytech
+							["coord"] = { 64.4, 49.2, 100 },
+							["cr"] = 66550,	-- Nicki Tinytech <Master Pet Tamer>
+						}),
+					},
+				}),
 				ach(1189, {	-- To Hellfire and Back [Alliance Version]
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						crit(1, {	-- Disrupt the Burning Legion
-							["sourceQuest"] = 10146,	-- Mission: Gateways Murketh and Shaadraz
+							["sourceQuest"] = 10397,	-- Invasion Point: Annihilator
 						}),
-						crit(2, {	-- Cruel's Intentions
+						crit(2, {	-- Overthrow the Overlord
+							["sourceQuests"] = {
+								10400,	-- Overlord
+								10399,	-- The Heart of Darkness
+							},
 						}),
-						crit(3, {	-- The Hand of Kargath
+						crit(3, {	-- In Search of Sedai
+							["sourceQuest"] = 9545,	-- The Seer's Relic
 						}),
-						crit(4, {	-- Spinebreaker Post
+						crit(4, {	-- The Exorcism of Colonel Jules
+							["sourceQuest"] = 10935,	-- The Exorcism of Colonel Jules
 						}),
-						crit(5, {	-- The Mag'har
+						crit(5, {	-- Drill the Drillmaster
+							["sourceQuest"] = 10937,	-- Drill the Drillmaster
 						}),
-						crit(6, {	-- Falcon Watch
+						crit(6, {	-- Temple of Telhamat
+							["sourceQuests"] = {
+								9383,	-- An Ambitious Plan
+								9490,	-- The Rock Flayer Matriarch
+								-- all quests below need to be confirmed
+								9427,	-- Cleaning the Waters
+								9398,	-- Deadly Predators
+							},
 						}),
-						crit(7, {	-- Green, But Not Orcs [Missing Rest that procs achieve]
+						crit(7, {	-- Green, But Not Orcs
+							["sourceQuests"] = {
+								10630,	-- Beneath Thrallmar
+								9356,	-- Smooth as Butter
+								9351,	-- Voidwalkers Gone Wild
+							},
 						}),
 						crit(8, {	-- Cenarion Post
 							["sourceQuests"] = {
@@ -73,7 +102,6 @@ _.Zones =
 						crit(7, {	-- Green, But Not Orcs
 							["sourceQuests"] = {
 								10630,	-- Beneath Thrallmar
-								10087,	-- Burn It Up... For the Horde! (probably)b
 								9356,	-- Smooth as Butter
 								9351,	-- Voidwalkers Gone Wild
 							},

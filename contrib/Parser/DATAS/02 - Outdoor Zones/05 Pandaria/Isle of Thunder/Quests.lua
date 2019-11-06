@@ -142,6 +142,8 @@ _.Zones =
 				q(32255, {	-- De-Constructed (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
+					["coord"] = { 46.8, 66.9, 504 },
+					["provider"] = { "n", 67660 },	-- Archmage Aethas Sunreaver
 				}),
 				q(32278, {	-- Decisive Action
 					["races"] = HORDE_ONLY,
@@ -264,6 +266,8 @@ _.Zones =
 				q(32730, {	-- Ihgaluk Crag (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
+					["coord"] = { 32.4, 35.2, 504 },
+					["provider"] = { "n", 67663 },	-- Magister Hathorel
 				}),
 				q(32577, {	-- Imposing Threat (A)
 					["isDaily"] = true,
@@ -312,6 +316,8 @@ _.Zones =
 				q(32491, {	-- Left To Rot (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
+					["coord"] = { 47.0, 66.7, 504 },
+					["provider"] = { "n", 69371 },	-- Amalia Penshire
 				}),
 				q(32589, {	-- Life Blood (H)
 					["races"] = HORDE_ONLY,
@@ -448,11 +454,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(32707, {	-- Secrets in the Isle of Thunder
+					["coord"] = { 51.4, 46.0, 504 },
+					["provider"] = { "n", 70160 },	-- Taran Zhu <Lord of the Shado-Pan>
 					["sourceQuests"] = {
 						32709,	-- Allies in the Shadows [Horde]
 						32706,	-- Allies in the Shadows [Alliance]
 					},
-					["provider"] = { "n", 70160 },	-- Taran Zhu <Lord of the Shado-Pan>
 				}),
 				q(32599, {	-- Securing A Future
 					["races"] = ALLIANCE_ONLY,
@@ -465,7 +472,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32507, {	-- Skin of the Saurok (H)
+					["coord"] = { 46.9, 66.8, 504 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 69433 },	-- Magistrix Saia
 				}),
 				q(32526, {	-- Soul Surrender (A)
 					["isDaily"] = true,
@@ -617,6 +626,8 @@ _.Zones =
 				q(32274, {	-- The Residents of Ihgaluk (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
+					["coord"] = { 46.7, 66.7, 504 },
+					["provider"] = { "n", 69425 },	-- Sunwalker Dezco
 				}),
 				q(32574, {	-- The Shuddering Moor (A)
 					["isDaily"] = true,
@@ -625,6 +636,8 @@ _.Zones =
 				q(32228, {	-- The Shuddering Moor (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
+					["coord"] = { 32.4, 35.2, 504 },
+					["provider"] = { "n", 67673 },	-- Girana the Blooded
 				}),
 				q(32535, {	-- The Skumblade Threat (A)
 					["isDaily"] = true,
@@ -633,6 +646,11 @@ _.Zones =
 				q(32204, {	-- The Skumblade Threat (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
+					["coord"] = { 46.8, 66.9, 504 },
+					["provider"] = { "n", 67660 },	-- Archmage Aethas Sunreaver
+				}),
+				q(32534, {	-- The Skumblade Threat (NYI)
+					["u"] = 1,
 				}),
 				q(32572, {	-- The Sleepless Legion (A)
 					["isDaily"] = true,

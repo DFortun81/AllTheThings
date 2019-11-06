@@ -9,19 +9,24 @@ _.Zones =
 				ach(4937, {	-- Southern Barrens Quests
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+					--	some of these might have additional requirements (in case anybody reports not getting the criteria from what we have SQed here)
 						crit(1, {	-- Honor's Stand
 							["sourceQuest"] = 25186,	-- Futile Resistance
 						}),
 						crit(2, {	-- Northwatch Hold
+							["sourceQuests"] = { 24956 },	-- Silencing Rageroar
 						}),
 						crit(3, {	-- Teegan's Expedition
+							["sourceQuests"] = { 25000 },	-- Teegan's People
 						}),
 						crit(4, {	-- Life from the Dream
+							["sourceQuests"] = { 24566 },	-- Sowing a Solution
 						}),
 						crit(5, {	-- Forward Command
 							["sourceQuest"] = 25042,	-- Marching On Our Stomachs
 						}),
 						crit(6, {	-- Firestone Point
+							["sourceQuests"] = { 24653 },	-- Echoes of Agamaggan
 						}),
 						crit(7, {	-- Fort Triumph
 							["sourceQuest"] = 25185,	-- The Deed Is Done

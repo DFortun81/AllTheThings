@@ -50,6 +50,7 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = { 6 },	-- Tauren
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["description"] = "This quest is available Tauren upon reaching level 20.",
 				}),
 				q(14087, {	-- Learn to Ride
