@@ -349,122 +349,155 @@ _.Achievements =
 						{	-- Ancient Mana Fin
 							["criteriaID"] = 1,	-- Ancient Mana Fin
 							["itemID"] = 167708,	-- Ancient Mana Fin
+							["description"] = "Found in Suramar City Harbour.",
 						},
 						{	-- Barbed Fjord Fin
 							["criteriaID"] = 2,	-- Barbed Fjord Fin
 							["itemID"] = 167710,	-- Barbed Fjord Fin
+							["description"] = "Found in Howling Fjord.",
 						},
 						{	-- Camouflaged Snark
 							["criteriaID"] = 3,	-- Camouflaged Snark
 							["itemID"] = 167717,	-- Camouflaged Snark
+							["description"] = "Can be caught anywhere, at any time.",
 						},
 						{	-- Collectable Saltfin
 							["criteriaID"] = 4,	-- Collectable Saltfin
 							["itemID"] = 167718,	-- Collectable Saltfin
+							["description"] = "Can be caught anywhere, at any time.",
 						},
 						{	-- Dead Fel Bone
 							["criteriaID"] = 5,	-- Dead Fel Bone
 							["itemID"] = 167711,	-- Dead Fel Bone
+							["description"] = "Found in Krokuun, and the Antoran Wastes on Argus.",
 						},
 						{	-- Dreadeye Wally
 							["criteriaID"] = 6,	-- Dreadeye Wally
 							["itemID"] = 167727,	-- Dreadeye Wally
+							["description"] = "Can be caught anywhere, while you're dead.",
 						},
 						{	-- Deceptive Maw
 							["criteriaID"] = 7,	-- Deceptive Maw
 							["itemID"] = 167729,	-- Deceptive Maw
+							["description"] = "Can be caught anywhere, at any time.",
 						},
 						{	-- Drowned Goldfish
 							["criteriaID"] = 8,	-- Drowned Goldfish
 							["itemID"] = 167709,	-- Drowned Goldfish
+							["description"] = "Found at around [46, 50], at the Drowned Lands in Stormsong Valley.",
+							["coord"] = { 46.0, 50.0, 942 },
 						},
 						{	-- Elusive Moonfish
 							["criteriaID"] = 9,	-- Elusive Moonfish
 							["itemID"] = 167715,	-- Elusive Moonfish
+							["description"] = "Can be caught anywhere, but at night. From 9:30pm to 8am.",
 						},
 						{	-- Golden Sunsoaker
 							["criteriaID"] = 10,	-- Golden Sunsoaker
 							["itemID"] = 167719,	-- Golden Sunsoaker
+							["description"] = "Can be caught anywhere, but during the day. From 8am to 9:30pm.",
 						},
 						{	-- Inconspicuous Catfish
 							["criteriaID"] = 11,	-- Inconspicuous Catfish
 							["itemID"] = 167730,	-- Inconspicuous Catfish
+							["description"] = "Can be caught anywhere, at any time.",
 						},
 						{	-- Invisible Smelt
 							["criteriaID"] = 12,	-- Invisible Smelt
 							["itemID"] = 167721,	-- Invisible Smelt
+							["description"] = "Can be caught anywhere, at any time.",
 						},
 						{	-- Jade Story Fish
 							["criteriaID"] = 13,	-- Jade Story Fish
 							["itemID"] = 167706,	-- Jade Story Fish
+							["description"] = "Found in the Jade Forest.",
 						},
 						{	-- Kirin Tor Clown
 							["criteriaID"] = 14,	-- Kirin Tor Clown
 							["itemID"] = 167707,	-- Kirin Tor Clown
+							["description"] = "Found in Dalaran. (Broken Isles or Northrend)",
 						},
 						{	-- Mechanized Mackerel
 							["criteriaID"] = 15,	-- Mechanized Mackerel
 							["itemID"] = 167705,	-- Mechanized Mackerel
+							["description"] = "Found in Mechagon.",
 						},
 						{	-- Prisoner Fish
 							["criteriaID"] = 16,	-- Prisoner Fish
 							["itemID"] = 167722,	-- Prisoner Fish
+							["description"] = "Found in Tol Barad (PvP area).",
 						},
 						{	-- Queen's Delight
 							["criteriaID"] = 17,	-- Queen's Delight
 							["itemID"] = 167728,	-- Queen's Delight
+							["description"] = "Found in Nazjatar.",
 						},
 						{	-- Quiet Floater
 							["criteriaID"] = 18,	-- Quiet Floater
 							["itemID"] = 167726,	-- Quiet Floater
+							["description"] = "Can be caught anywhere, while you're dead.",
 						},
 						{	-- Rotted Blood Cod
 							["criteriaID"] = 19,	-- Rotted Blood Cod
 							["itemID"] = 167712,	-- Rotted Blood Cod
+							["description"] = "Found in Zul'Nazman, Nazmir (the area surrounding Uldir).",
 						},
 						{	-- Thunderous Flounder
 							["criteriaID"] = 20,	-- Thunderous Flounder
 							["itemID"] = 167723,	-- Thunderous Flounder
+							["description"] = "Found on the Isle of Thunder.",
 						},
 						{	-- Tortollan Tank Dweller
 							["criteriaID"] = 21,	-- Tortollan Tank Dweller
 							["itemID"] = 167724,	-- Tortollan Tank Dweller
+							["description"] = "Found under Anyport, Drustvar. In the Tortollan inn named 'The Drunk Tank'",
+							["coord"] = { 19.6, 42.8, 896 },
 						},
 						{	-- Travelling Goby
 							["criteriaID"] = 22,	-- Travelling Goby
 							["itemID"] = 167714,	-- Travelling Goby
+							["description"] = "Can be caught anywhere, at any time.",
 						},
 						{	-- Unseen Mimmic
 							["criteriaID"] = 23,	-- Unseen Mimmic
 							["itemID"] = 167716,	-- Unseen Mimmic
+							["description"] = "Can be caught anywhere, at any time.",
 						},
 						{	-- Spiritual Salmon
 							["criteriaID"] = 24,	-- Spiritual Salmon
 							["itemID"] = 167725,	-- Spiritual Salmon
+							["description"] = "Can be caught anywhere, while you're dead.",
 						},
 						{	-- Veiled Ghost
 							["criteriaID"] = 25,	-- Veiled Ghost
 							["itemID"] = 167713,	-- Veiled Ghost
+							["description"] = "Can be caught anywhere, while you're dead.",
 						},
 						{	-- Very Tiny Whale
 							["criteriaID"] = 26,	-- Very Tiny Whale
 							["itemID"] = 167720,	-- Very Tiny Whale
+							["description"] = "Can be caught anywhere, at any time.",
 						},
 						{	-- Green Roughy
 							["criteriaID"] = 27,	-- Green Roughy
 							["itemID"] = 169884,	-- Green Roughy
+							["description"] = "Can be caught anywhere, but requires the [Painted Green] buff from Mechagon. Head over to the painting station [63, 42] and get the buff.",
+							["coord"] = { 63.0, 42.0, 1462 },
 						},
 						{	-- Displaced Scrapfin
 							["criteriaID"] = 28,	-- Displaced Scrapfin
 							["itemID"] = 169870,	-- Displaced Scrapfin
+							["description"] = "Can be caught in Alternate Mechagon. Wait for Chromie to give you the quest 'The Other Place', or craft a Personal Time Displacer from Mechagon Tinkering.",
 						},
 						{	-- Thin Air Flounder
 							["criteriaID"] = 29,	-- Thin Air Flounder
 							["itemID"] = 169897,	-- Thin Air Flounder
+							["description"] = "Found at Neverest Pinnacle, atop Kun-Lai Summit.",
 						},
 						{	-- Well Lurker
 							["criteriaID"] = 30,	-- Well Lurker
 							["itemID"] = 169898,	-- Well Lurker
+							["description"] = "Found in Mount Hyjal, in the lake under Nordrassil.",
 						},
 					}),
 					ach(2095, {		-- Silver in the City
