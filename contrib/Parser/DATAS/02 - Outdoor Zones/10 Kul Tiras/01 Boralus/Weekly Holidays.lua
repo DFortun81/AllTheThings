@@ -68,9 +68,11 @@ _.Zones =
 				}),
 				q(47148, {	-- Something Different
 					["provider"] = { "n", 144383 },	-- Chronicler Toopa
-					["coord"] = { 74.11, 14.19, 1161 },
-					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 74.1, 14.1, 1161 },
 					["isWeekly"] = true,
+					["maps"] = {
+						623,	-- Southshore vs. Tarren Mill
+					},
 					["g"] = {
 						i(154992, {	-- Brawler's Footlocker
 							["sym"] = {

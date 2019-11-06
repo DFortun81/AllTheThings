@@ -47,312 +47,6 @@ _.ExpansionFeatures =
 							}),
 						},
 					}),
-					q(38243, {	-- A Bit of Ore
-						["providers"] = {
-							{ "n", 90894 },	-- Alexi Hackercam
-							{ "n", 91030 },	-- Trixxy Volt
-						},
-						["isDaily"] = true,
-						["lvl"] = 90,
-					}),
-					q(38574, {	-- All Hands on Deck
-						["provider"] = { "n", 92400 },	-- Vol'jin
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 38573,	-- Nothing Remains
-					}),
-					q(34653, {	-- Arakkoa Exodus
-						["sourceQuests"] = { 35537 },	-- News from Spires of Arak
-						["isBreadcrumb"] = true,
-						["coord"] = { 45.6, 43.2, 590 },
-						["lvl"] = 96,
-						["provider"] = { "n", 78487 },	-- Rokhan
-					}),
-					q(36706, {	-- Ashran Appearance
-						["provider"] = { "n", 78466 },	-- Gazlowe
-						["coord"] = { 52.4, 53.3, 590 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34775,	-- Mission Probable
-					}),
-					q(36692, {	-- Assault on Darktide Roost
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["provider"] = { "o", 236206 },	-- War Planning Map
-						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
-						},
-						["g"] = {
-							crit(10, {
-								["achievementID"] = 9562,	-- Securing Draenor
-							}),
-							currency(823),	-- Apexis Crystal x800
-						},
-					}),
-					q(36697, {	-- Assault on Magnarok
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["provider"] = { "o", 236206 },	-- War Planning Map
-						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
-						},
-						["g"] = {
-							crit(3, {
-								["achievementID"] = 9562,	-- Securing Draenor
-							}),
-							currency(823),	-- Apexis Crystal x800
-						},
-					}),
-					q(36693, {	-- Assault on Mok'gol Watchpost
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["provider"] = { "o", 236206 },	-- War Planning Map
-						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
-						},
-						["g"] = {
-							crit(8, {
-								["achievementID"] = 9562,	-- Securing Draenor
-							}),
-							currency(823),	-- Apexis Crystal x800
-						},
-					}),
-					q(36689, {	-- Assault on Pillars of Fate
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["provider"] = { "o", 236206 },	-- War Planning Map
-						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
-						},
-						["g"] = {
-							crit(11, {
-								["achievementID"] = 9562,	-- Securing Draenor
-							}),
-							currency(823),	-- Apexis Crystal x800
-						},
-					}),
-					q(36667, {	-- Assault on Shattrath Harbor
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["provider"] = { "o", 236206 },	-- War Planning Map
-						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
-						},
-						["g"] = {
-							crit(7, {
-								["achievementID"] = 9562,	-- Securing Draenor
-							}),
-							currency(823),	-- Apexis Crystal x800
-						},
-					}),
-					q(36688, {	-- Assault on Skettis
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["provider"] = { "o", 236206 },	-- War Planning Map
-						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
-						},
-						["g"] = {
-							crit(12, {
-								["achievementID"] = 9562,	-- Securing Draenor
-							}),
-							currency(823),	-- Apexis Crystal x800
-						},
-					}),
-					q(36691, {	-- Assault on Socrethar's Rise
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["provider"] = { "o", 236206 },	-- War Planning Map
-						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
-						},
-						["g"] = {
-							crit(9, {
-								["achievementID"] = 9562,	-- Securing Draenor
-							}),
-							currency(823),	-- Apexis Crystal x800
-						},
-					}),
-					q(36669, {	-- Assault on Stonefury Cliffs
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["provider"] = { "o", 236206 },	-- War Planning Map
-						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
-						},
-						["g"] = {
-							crit(2, {
-								["achievementID"] = 9562,	-- Securing Draenor
-							}),
-							currency(823),	-- Apexis Crystal x800
-						},
-					}),
-					q(36694, {	-- Assault on the Broken Precipice
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["provider"] = { "o", 236206 },	-- War Planning Map
-						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
-						},
-						["g"] = {
-							crit(6, {
-								["achievementID"] = 9562,	-- Securing Draenor
-							}),
-							currency(823),	-- Apexis Crystal x800
-						},
-					}),
-					q(36695, {	-- Assault on the Everbloom Wilds
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["provider"] = { "o", 236206 },	-- War Planning Map
-						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
-						},
-						["g"] = {
-							crit(5, {
-								["achievementID"] = 9562,	-- Securing Draenor
-							}),
-							currency(823),	-- Apexis Crystal x800
-						},
-					}),
-					q(36696, {	-- Assault on the Iron Siegeworks
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["provider"] = { "o", 236206 },	-- War Planning Map
-						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
-						},
-						["g"] = {
-							crit(1, {
-								["achievementID"] = 9562,	-- Securing Draenor
-							}),
-							currency(823),	-- Apexis Crystal x800
-						},
-					}),
-					q(36701, {	-- Assault on the Pit
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["provider"] = { "o", 236206 },	-- War Planning Map
-						["coords"] = {
-							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
-							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
-						},
-						["g"] = {
-							crit(4, {
-								["achievementID"] = 9562,	-- Securing Draenor
-							}),
-							currency(823),	-- Apexis Crystal x1000
-						},
-					}),
-					q(37961, {	-- Bringing the Bass
-						["provider"] = { "n", 91072 },	-- Drix Bassbolter
-						["coord"] = { 40.9, 47.8, 590 },
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							spell(181715),	-- Unlock Garrison Jukebox
-							i(122613, {	-- Stash of Dusty Music Rolls
-								i(122210),	-- Music Roll: Orgrimmar
-								i(122218),	-- Music Roll: Rescue the Warchief
-								i(122217),	-- Music Roll: Silvermoon
-								i(122216),	-- Music Roll: The Zandalari
-								i(122213),	-- Music Roll: Thunder Bluff
-								i(122212),	-- Music Roll: Undercity
-								i(122219),	-- Music Roll: Way of the Monk
-								i(122215),	-- Music Roll: Zul'Gurub Voodoo
-							}),
-						},
-					}),
-					q(37669, {	-- Building For Professions
-						["provider"] = { "n", 78466 },	-- Gazlowe
-						["races"] = HORDE_ONLY,
-						["coords"] = {
-							{ 52.4, 53.3, 590 },	-- lvl 1
-							{ 37.6, 50.3, 590 },	-- lvl 3
-						},
-					}),
-					q(35988, {	-- Call of the Archmage
-						["u"] = 40,
-						["provider"] = { "n", 83858 },	-- Khadgar's Servant
-					}),
-					q(34193, {	-- Clearing the Garden
-						["provider"] = { "n", 81981 },	-- Tarnon
-						["coord"] = { 43.4, 83.2, 590 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 36567,	-- Bigger is Better
-						["g"] = {
-							garrisonBuilding(29),	-- Herb Garden lvl 1
-						},
-					}),
-					q(37813, {	-- Death to Amethon!
-						["coord"] = { 40.2, 56.7, 590 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-						["lvl"] = 100,
-					}),
-					q(37814, {	-- Death to Gor'thul!
-						["coord"] = { 40.2, 56.7, 590 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-					}),
-					q(37818, {	-- Death to Hivelord Ik'rix!
-						["coord"] = { 40.2, 56.7, 590 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-					}),
-					q(37815, {	-- Death to Nullifier Darkoor!
-						["coord"] = { 40.2, 56.7, 590 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-					}),
-					q(37949, {	-- Death to Nullifier Darkoor!
-						["coord"] = { 40.2, 56.7, 590 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-					}),
-					q(37817, {	-- Death to Tremor!
-						["coord"] = { 40.2, 56.7, 590 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-					}),
-					q(37816, {	-- Death to Undertow!
-						["coord"] = { 40.2, 56.7, 590 },
-						["races"] = HORDE_ONLY,
-						["isDaily"] = true,
-						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
-					}),
-					q(34379, {	-- Den of Wolves
-						["provider"] = { "n", 76411 },	-- Farseer Drek'Thar
-						["coord"] = { 49.7, 49.5, 590 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34775,	-- Mission Probable
-					}),
-					q(36136, {	-- Garrison Campaign: Awakening
-						["provider"] = { "n", 78487 },	-- Rokhan
-						["races"] = HORDE_ONLY,
-					}),
-					q(39175, {	-- Gems of the Apexis
-						["provider"] = { "n", 78466 },	-- Gazlowe
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = 755,	-- Jewelcrafting
-						["g"] = {
-							recipe(187639),	-- Immaculate Versatility Taladite
-						},
-					}),
 					n(89753, { 	-- High Overlord Saurfang
 						["description"] = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
 						["coord"] = { 40.2, 56.7, 590 },
@@ -655,6 +349,328 @@ _.ExpansionFeatures =
 								},
 							}),
 						},
+					}),
+					q(38243, {	-- A Bit of Ore
+						["providers"] = {
+							{ "n", 90894 },	-- Alexi Hackercam
+							{ "n", 91030 },	-- Trixxy Volt
+						},
+						["isDaily"] = true,
+						["lvl"] = 90,
+					}),
+					q(38574, {	-- All Hands on Deck
+						["provider"] = { "n", 92400 },	-- Vol'jin
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 38573,	-- Nothing Remains
+					}),
+					q(34653, {	-- Arakkoa Exodus
+						["sourceQuests"] = { 35537 },	-- News from Spires of Arak
+						["isBreadcrumb"] = true,
+						["coord"] = { 45.6, 43.2, 590 },
+						["lvl"] = 96,
+						["provider"] = { "n", 78487 },	-- Rokhan
+					}),
+					q(36706, {	-- Ashran Appearance
+						["provider"] = { "n", 78466 },	-- Gazlowe
+						["coord"] = { 52.4, 53.3, 590 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34775,	-- Mission Probable
+					}),
+					q(36692, {	-- Assault on Darktide Roost
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(10, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36697, {	-- Assault on Magnarok
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(3, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36693, {	-- Assault on Mok'gol Watchpost
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(8, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36689, {	-- Assault on Pillars of Fate
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(11, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36667, {	-- Assault on Shattrath Harbor
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(7, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36688, {	-- Assault on Skettis
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(12, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36691, {	-- Assault on Socrethar's Rise
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(9, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36669, {	-- Assault on Stonefury Cliffs
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(2, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36694, {	-- Assault on the Broken Precipice
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(6, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36695, {	-- Assault on the Everbloom Wilds
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(5, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36696, {	-- Assault on the Iron Siegeworks
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(1, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x800
+						},
+					}),
+					q(36701, {	-- Assault on the Pit
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "o", 236206 },	-- War Planning Map
+						["coords"] = {
+							{ 41.8, 50.7, 590 },	-- lvl 2 garrison
+							{ 41.0, 50.8, 590 },	-- lvl 3 garrison
+						},
+						["g"] = {
+							crit(4, {
+								["achievementID"] = 9562,	-- Securing Draenor
+							}),
+							currency(823),	-- Apexis Crystal x1000
+						},
+					}),
+					q(37961, {	-- Bringing the Bass
+						["provider"] = { "n", 91072 },	-- Drix Bassbolter
+						["coord"] = { 40.9, 47.8, 590 },
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							spell(181715),	-- Unlock Garrison Jukebox
+							i(122613, {	-- Stash of Dusty Music Rolls
+								i(122210),	-- Music Roll: Orgrimmar
+								i(122218),	-- Music Roll: Rescue the Warchief
+								i(122217),	-- Music Roll: Silvermoon
+								i(122216),	-- Music Roll: The Zandalari
+								i(122213),	-- Music Roll: Thunder Bluff
+								i(122212),	-- Music Roll: Undercity
+								i(122219),	-- Music Roll: Way of the Monk
+								i(122215),	-- Music Roll: Zul'Gurub Voodoo
+							}),
+						},
+					}),
+					q(37669, {	-- Building For Professions
+						["provider"] = { "n", 78466 },	-- Gazlowe
+						["races"] = HORDE_ONLY,
+						["coords"] = {
+							{ 52.4, 53.3, 590 },	-- lvl 1
+							{ 37.6, 50.3, 590 },	-- lvl 3
+						},
+					}),
+					q(35988, {	-- Call of the Archmage
+						["u"] = 40,
+						["provider"] = { "n", 83858 },	-- Khadgar's Servant
+					}),
+					q(34193, {	-- Clearing the Garden
+						["provider"] = { "n", 81981 },	-- Tarnon
+						["coord"] = { 43.4, 83.2, 590 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 36567,	-- Bigger is Better
+						["g"] = {
+							garrisonBuilding(29),	-- Herb Garden lvl 1
+						},
+					}),
+					q(37813, {	-- Death to Amethon!
+						["coord"] = { 40.2, 56.7, 590 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+						["lvl"] = 100,
+					}),
+					q(37814, {	-- Death to Gor'thul!
+						["coord"] = { 40.2, 56.7, 590 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+					}),
+					q(37818, {	-- Death to Hivelord Ik'rix!
+						["coord"] = { 40.2, 56.7, 590 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+					}),
+					q(37815, {	-- Death to Nullifier Darkoor!
+						["coord"] = { 40.2, 56.7, 590 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+					}),
+					q(37949, {	-- Death to Nullifier Darkoor!
+						["coord"] = { 40.2, 56.7, 590 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+					}),
+					q(37817, {	-- Death to Tremor!
+						["coord"] = { 40.2, 56.7, 590 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+						["lvl"] = 100,
+					}),
+					q(37816, {	-- Death to Undertow!
+						["coord"] = { 40.2, 56.7, 590 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+					}),
+					q(34379, {	-- Den of Wolves
+						["provider"] = { "n", 76411 },	-- Farseer Drek'Thar
+						["coord"] = { 49.7, 49.5, 590 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 34775,	-- Mission Probable
+					}),
+					q(36136, {	-- Garrison Campaign: Awakening
+						["provider"] = { "n", 78487 },	-- Rokhan
+						["races"] = HORDE_ONLY,
+					}),
+					q(39175, {	-- Gems of the Apexis
+						["provider"] = { "n", 78466 },	-- Gazlowe
+						["races"] = HORDE_ONLY,
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["g"] = {
+							recipe(187639),	-- Immaculate Versatility Taladite
+						},
+					}),
+					q(38296, {	-- Herbs Galore
+						["providers"] = {
+							{ "n", 91031 },	-- Nicholas Mitrik (Horde)
+							{ "n", 91404 },	-- Samantha Scarlet (Alliance)
+						},
+						["isDaily"] = true,
+						["cost"] = {
+							{ "i", 109125, 10 },	-- 10x Fireweed
+							{ "i", 109126, 10 },	-- 10x Gorgrond Flytrap
+							{ "i", 109128, 10 },	-- 10x Nagrand Arrowbloom
+							{ "i", 109127, 10 },	-- 10x Starflower
+							{ "i", 109129, 10 },	-- 10x Talador Orchid
+						},
+						["lvl"] = 90,
 					}),
 					q(36953, {	-- It's a Matter of Strategy
 						["races"] = HORDE_ONLY,

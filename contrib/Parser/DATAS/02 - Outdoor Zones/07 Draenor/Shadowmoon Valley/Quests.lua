@@ -547,6 +547,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80075 },	-- Exarch Hataaru
 				}),
+				q(36240, {	-- Slow and Steady
+					["sourceQuests"] = { 36239 },	-- A Mysterious Satchel
+					["requireSkill"] = 773,	-- Inscription
+					["provider"] = { "n", 84724 },	-- Sha'la
+					["coord"] = { 57.8, 21.6, 539 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(34997, {	-- Slumberbloom
 					["coord"] = { 53.0, 65.3, 539 },
 					["races"] = ALLIANCE_ONLY,
@@ -666,6 +673,28 @@ _.Zones =
 				q(34496, {	-- The Hills of Valuun (bonus objective)
 					["coord"] = { 65.1, 33.6, 539 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(36241, {	-- The Power of Preservation
+					["sourceQuests"] = { 36240 },	-- Slow and Steady
+					["requireSkill"] = 773,	-- Inscription
+					["provider"] = { "n", 84724 },	-- Sha'la
+					["coord"] = { 57.8, 21.6, 539 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(111815),	-- Scribe's Quarters, Level 1
+						i(111923, {	-- Draenor Inscription
+							i(120136),		-- Recipe: Secrets of Draenor Inscription
+							recipe(169081),	-- War Paints
+							recipe(167950, {	-- Research: Warbinder's Ink
+								i(113992),	-- Scribe's Research Notes
+							}),
+							recipe(175390),	-- Laughing Tarot
+							recipe(175389),	-- Ocean Tarot
+							recipe(175392),	-- Savage Tarot
+							recipe(166669),	-- Card of Omens
+							recipe(178497),	-- Warbinder's Ink
+						}),
+					},
 				}),
 				q(37322, {	-- The Prophet's Final Message
 					["sourceQuests"] = { 33256 },	-- The Defense of Karabor

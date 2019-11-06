@@ -1616,9 +1616,6 @@ _.Zones =
 				q(52956, {	-- Call to Arms: Tiragarde Sound
 					["races"] = HORDE_ONLY,
 				}),
-				q(52948, {	-- Call to Arms: Tiragarde Sound
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(55340, {	-- Calligraphy
 					["collectible"] = false,
 					["lvl"] = 120,

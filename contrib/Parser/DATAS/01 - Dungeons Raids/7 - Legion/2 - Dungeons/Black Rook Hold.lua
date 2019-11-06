@@ -6,40 +6,38 @@ _.Instances = { tier(7, {	-- Legion
 	inst(740, {	-- Black Rook Hold
 		["maps"] = { 751, 752, 753, 754, 755, 756 },
 		["coord"] = { 38.4, 50.8, 641 },	-- Black Rook Hold, Val'sharah
-		["groups"] = {
+		["g"] = {
 			n(-4, {	-- Achievements
 				ach(10709, {	-- You Used to Scrawl Me In Your Fel Tome
 					["description"] = "These spawn on any difficulty, but you'll only get one per run, making this achievement a six-run minimum.",
-					["groups"] = {
-						{	-- Torn Page read
-							["criteriaID"] = 1,
+					["g"] = {
+						crit(1, {	-- Torn Page read
 							["description"] = "Found in the Chamber of War Room immediately after the Amalgam of Souls fight, on a desk by the southern part of the room.",
-						},
-						{	-- Worn-Edged Page read
-							["criteriaID"] = 2,
+						}),
+						crit(2, {	-- Worn-Edged Page read
 							["description"] = "Found in the Grand Hall, to the left of the broken staircase, by the bookshelves.",
-						},
-						{	-- Dog-Eared Page read
-							["criteriaID"] = 3,
+						}),
+						crit(3, {	-- Dog-Eared Page read
 							["description"] = "Found in the Grand Hall, it's in the hallway connecting to the stairwell that takes you to Illysanna Ravencrest, tucked in the back on a desk.",
-						},
-						{	-- Singed Page read
-							["criteriaID"] = 4,
+						}),
+						crit(4, {	-- Singed Page read
 							["description"] = "Found in Rookshold, the room filled with Wyrmtongue Tricker, on a table by three bookshelves and two weapon racks.",
-						},
-						{	-- Ink-Splattered Page read
-							["criteriaID"] = 5,
+						}),
+						crit(5, {	-- Ink-Splattered Page read
 							["description"] = "Found in Rook's Rise, in the small round room connected to the stairs leading to Lord Ravencrest's Chamber after defeating Smashspite the Hateful.",
-						},
-						{	-- Hastily-Scrawled Page read
-							["criteriaID"] = 6,
+						}),
+						crit(6, {	-- Hastily-Scrawled Page read
 							["description"] = "Found in Lord Ravencrest's Chamber on the desk, at the end of the instance.",
-						},
+						}),
 					},
 				}),
 			}),
 			n(-34, {	-- World Quests
 				q(43711, {	-- Black Rook Hold: ... With Fire!
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(43712, {	-- Black Rook Hold: The Mad Arcanist
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
@@ -117,7 +115,7 @@ _.Instances = { tier(7, {	-- Legion
 			}),
 			d(2, {	-- Heroic
 				["lvl"] = 110,
-				["groups"] = {
+				["g"] = {
 					cr(98542, e(1518, {	-- Amalgam of Souls
 						i(136714),	-- Amalgam's Seventh Spine
 						i(136976),	-- Etheldrin's Breastplate
@@ -185,7 +183,7 @@ _.Instances = { tier(7, {	-- Legion
 			}),
 			d(23, {	-- Mythic
 				["lvl"] = 110,
-				["groups"] = {
+				["g"] = {
 					cr(98542, e(1518, {	-- Amalgam of Souls
 						ach(10710, {	-- Black Rook Moan
 							["description"] = "Prevent a soul from touching the boss for 60 seconds during the intermission phase.",
