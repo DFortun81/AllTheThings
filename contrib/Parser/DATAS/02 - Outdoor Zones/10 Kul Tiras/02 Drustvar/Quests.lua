@@ -1413,10 +1413,6 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(51542, {	-- Avalanche
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
 				q(51832, {	-- Beat Around The Bush
 					["collectible"] = false,
 					["lvl"] = 120,
@@ -1429,10 +1425,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53280, {	-- Blooming Siren's Sting
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(53272, {	-- Blooming Siren's Sting
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
@@ -1467,10 +1459,6 @@ _.Zones =
 					["lvl"] = 120,
 				}),
 				q(51754, {	-- Dogged Tenacity
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51919, {	-- Emily Mayville
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
@@ -1531,10 +1519,6 @@ _.Zones =
 				q(50448, {	-- Reclaiming Corlain
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(51897, {	-- Rimestone
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
 				q(51739, {	-- Rise of the Yetis
 					["collectible"] = false,
 					["lvl"] = 120,
@@ -1547,11 +1531,6 @@ _.Zones =
 					["lvl"] = 120,
 				}),
 				q(50206, {	-- Strike Back
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52381, {	-- Supplies Needed: Lane Snapper
-					["collectible"] = false,
-					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50960, {	-- Sweete's Orders
@@ -1574,115 +1553,14 @@ _.Zones =
 				q(48808, {	-- Thesis Statement
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(47945, {	-- To Market, To Market
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50583, {	-- To the Other Side
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48182, {	-- Total Cairnage
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51767, {	-- Trapline
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51619, {	-- Trapline
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48111, {	-- Trial by Superstition
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50897, {	-- Turn the Heat Around
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48944, {	-- Unlocking History
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51397, {	-- Up In Your Drill
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51508, {	-- Vicemaul
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
 				q(50091, {	-- Village Repair
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51240),	-- WANTED: Anchorface
-
-				q(51547, {	-- WANTED: Rindlewoe
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53458, {	-- WANTED: Rindlewoe
-					["races"] = HORDE_ONLY,
-				}),
-				q(53459, {	-- WANTED: Sister Lilias
-					["races"] = HORDE_ONLY,
-				}),
-				q(51356, {	-- WANTED: Sister Lilias
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51390, {	-- WANTED: The Crimson Cutthroats
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53455, {	-- WANTED: The Crimson Cutthroats
-					["races"] = HORDE_ONLY,
-				}),
-				q(53456, {	-- WANTED: The Rime Huntress
-					["races"] = HORDE_ONLY,
-				}),
-				q(52033, {	-- WANTED: The Rime Huntress
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51530, {	-- Wedding Crashers
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54011, {	-- Wet Work: Arom's Stand
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(51457, {	-- Whargarble the Ill-Tempered
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51676, {	-- What a Gull Wants
-					["collectible"] = false,
-					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51769, {	-- What a Gull Wants
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(52297, {	-- What's the Buzz?
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51686, {	-- Where My Witches at?
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51694, {	-- Which Witch?
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(51988, {	-- Whitney "Steelclaw" Ramsay
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(48677, {	-- Wicker Worship
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53287, {	-- Winter's Kiss Cluster
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
@@ -1690,35 +1568,9 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(47979, {	-- Witch Hunt
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50530, {	-- Witch Way Out?
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51682, {	-- Witches by the Dozen
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(51738, {	-- Witches by the Dozen
 					["collectible"] = false,
 					["lvl"] = 120,
-				}),
-				q(50446, {	-- Witchrending
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48942, {	-- Yeti to Rumble
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54711, {	-- Zillie Wunderwrench and Grizzwald
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(54488, {	-- Zul'aki the Headhunter
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
 				}),
 ]]--
 			}),

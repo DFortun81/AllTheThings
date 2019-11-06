@@ -167,111 +167,14 @@ _.Zones =
 					q(48808, {	-- Thesis Statement
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(47945, {	-- To Market, To Market
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(50583, {	-- To the Other Side
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(48182, {	-- Total Cairnage
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51767, {	-- Trapline
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(51619, {	-- Trapline
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(48111, {	-- Trial by Superstition
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(50897, {	-- Turn the Heat Around
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(48944, {	-- Unlocking History
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51397, {	-- Up In Your Drill
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51508, {	-- Vicemaul
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(50091, {	-- Village Repair
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51240),	-- WANTED: Anchorface
-
-					q(51547, {	-- WANTED: Rindlewoe
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53458, {	-- WANTED: Rindlewoe
-						["races"] = HORDE_ONLY,
-					}),
-					q(53459, {	-- WANTED: Sister Lilias
-						["races"] = HORDE_ONLY,
-					}),
-					q(51356, {	-- WANTED: Sister Lilias
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51390, {	-- WANTED: The Crimson Cutthroats
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53455, {	-- WANTED: The Crimson Cutthroats
-						["races"] = HORDE_ONLY,
-					}),
-					q(53456, {	-- WANTED: The Rime Huntress
-						["races"] = HORDE_ONLY,
-					}),
-					q(52033, {	-- WANTED: The Rime Huntress
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51530, {	-- Wedding Crashers
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(54011, {	-- Wet Work: Arom's Stand
-						["isWorldQuest"] = true,
-						["lvl"] = 110,
-					}),
-					q(51676, {	-- What a Gull Wants
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(51769, {	-- What a Gull Wants
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52297, {	-- What's the Buzz?
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(51686, {	-- Where My Witches at?
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51694, {	-- Which Witch?
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(51988, {	-- Whitney "Steelclaw" Ramsay
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(48677, {	-- Wicker Worship
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53287, {	-- Winter's Kiss Cluster
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
@@ -279,45 +182,11 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(47979, {	-- Witch Hunt
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(50530, {	-- Witch Way Out?
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51682, {	-- Witches by the Dozen
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(51738, {	-- Witches by the Dozen
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(50446, {	-- Witchrending
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52424, {	-- Work Order: Battle Flag: Rallying Swiftness
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(50991, {	-- Work Order: Blood-Stained Bone
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52390, {	-- Work Order: Contract: Order of Embers
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52357, {	-- Work Order: Enchant Weapon - Quick Navigation
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52365, {	-- Work Order: F.R.I.E.D.
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -328,11 +197,6 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(50987, {	-- Work Order: Monelite Ore
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52334, {	-- Work Order: Potion of Concealment
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -355,23 +219,6 @@ _.Zones =
 					q(50994, {	-- Work Order: Tempest Hide
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52364, {	-- Work Order: Thermo-Accelerated Plague Spreader
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(48942, {	-- Yeti to Rumble
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(54711, {	-- Zillie Wunderwrench and Grizzwald
-						["isWorldQuest"] = true,
-						["lvl"] = 110,
-					}),
-					q(54488, {	-- Zul'aki the Headhunter
-						["isWorldQuest"] = true,
-						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 					}),
 ]]--				
@@ -1023,7 +870,7 @@ _.Zones =
 							i(162331), 	-- Schematic: F.R.I.E.D. [Rank 3]
 						},
 					}),
-					q(52334, {	-- Work Order: Sea Mist Potion
+					q(52334, {	-- Work Order: Potion of Concealment
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
