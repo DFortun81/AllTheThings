@@ -262,3 +262,4 @@ i(174066, 306423);	-- Caravan Hyena
 i(174067, 305592);	-- Mechagon Mechanostrider
 i(173713, 281889);	-- Vicious White Bonesteed
 i(173714, 281888);	-- Vicious White Warsaber
+i(174754, 316276);	-- Wastewander Skyterror

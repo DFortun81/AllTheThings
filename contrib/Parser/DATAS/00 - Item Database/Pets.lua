@@ -562,6 +562,7 @@ pet(69821, 309); 	-- Pterrordax Hatchling
 pet(119467, 1568); 	-- Puddle Terror
 pet(71624, 328);	-- Purple Puffer
 pet(142096, 1965); 	-- Putricide's Alchemy Supplies (Blightbreath)
+pet(174477, 2849);	-- Pygmy Camel
 pet(94574, 1200); 	-- Pygmy Direhorn
 pet(130154, 1907); 	-- Pygmy Owl
 pet(97959, 1243); 	-- Quivering Blob (Living Fluid)

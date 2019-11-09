@@ -49,22 +49,6 @@ _.ExpansionFeatures =
 						currency(1755),	-- Coalescing Visions
 					},
 				}),
-				q(58288, {	-- Assault: Amathet Advance
-					-- also triggered 55350. weekly loot?
-					["g"] = {
-						i(173457),	-- Plate Faceguard (probably from all assault rewards?)
-					},
-				}),
-				q(57157, {	-- Assault: The Black Empire
-					-- refreshing after the boss fight in Uldum triggered 57736 (weekly/daily id?)
-					["g"] = {
-						i(173372, {	-- Cache of the Black Empire
-							currency(1755),	-- Coalescing Visions
-							i(173178),	-- Corrupted Greaves -- TODO:: almost certainly a full ilvl 415 set for all armor types. Same ones sold by blacktalon guards for visions?
-							i(173456),	-- Plate Crushers -- probably scales just like world quest loot
-						}),
-					},
-				}),
 				q(58639, {	-- Buried History
 					["lvl"] = 120,
 					["coord"] = { 68.9, 57.9, 1527 },
@@ -77,18 +61,32 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 155102 },	-- High Explorer Dellorah
 					["sourceQuest"] = 58638,	-- A Deeper Dive
 				}),
+				q(58282, {	-- Down From the Sky
+					["lvl"] = 120,
+					["coord"] = { 54.8, 32.9, 1527 },
+					["isDaily"] = true,
+					["provider"] = { "n", 155096 },	-- High Commander Kamses
+					["sourceQuest"] = 56472,	-- The Uldum Accord
+				}),
+				q(58291, {	-- Encroaching Poachers
+					["lvl"] = 120,
+					["coord"] = { 54.6, 34.0, 1527 },
+					["isDaily"] = true,
+					["provider"] = { "n", 160957 },	-- Arianna Swiftsand
+					["sourceQuest"] = 56472,	-- The Uldum Accord
+				}),
 				q(58636, {	-- Eyes on the Amathet
 					["lvl"] = 120,
 					["coord"] = { 54.9, 32.9, 1527 },
 					["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+					["description"] = "The Amathet Advance assault must be active to get this quest.",
+					["sourceQuest"] = 56472,	-- The Uldum Accord
 				}),
 				q(56377, {	-- Forging Onward
-					--[[
-						TODO:: this seems bugged. it was granted automatically upon zoning into Uldum
-							   but the quest text indicates it should probably happen after the events
-							   of the Halls of Origination
-					]]--
-					["provider"] = { "n", 154533 },	-- Magni Bronzebeard
+					["lvl"] = 120,
+					["coord"] = { 54.9, 33.1, 1527 },
+					["description"] = "Granted upon entering the Seat of Ramkahen.",
+					["sourceQuest"] = 56376,	-- Surfacing Threats
 					["g"] = {
 						i(173280),	-- Token of Death's Door (Rank 1)
 					},
@@ -134,6 +132,12 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 155102 },	-- High Explorer Dellorah
 					["sourceQuest"] = 58641,	-- Seekers of Corruption
 				}),
+				q(56376, {	-- Surfacing Threats
+					["lvl"] = 120,
+					["coord"] = { 54.9, 32.7, 1527 },
+					["provider"] = { "n", 155095 },	-- King Phaoris
+					["sourceQuest"] = 56472,	-- The Uldum Accord
+				}),
 				q(56209, {	-- The Halls of Origination
 					["lvl"] = 120,
 					["coord"] = { 69.8, 52.1, 1527 },
@@ -161,6 +165,13 @@ _.ExpansionFeatures =
 					["coord"] = { 47.0, 44.6, 1542 },
 					["provider"] = { "n", 154533 },	-- Magni Bronzebeard
 					["sourceQuest"] = 56209,	-- The Halls of Origination
+				}),
+				q(58285, {	-- Unearthed Artifacts
+					["lvl"] = 120,
+					["coord"] = { 54.9, 32.9, 1527 },
+					["isDaily"] = true,
+					["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+					["sourceQuest"] = 56472,	-- The Uldum Accord
 				}),
 				q(57874, {	-- Visions of a Dark Destiny
 					["u"] = 1,	-- removed from PTR build
@@ -208,7 +219,7 @@ _.ExpansionFeatures =
 					["questID"] = 57672,
 					["coord"] = { 49.4, 38.3, 1527 },
 				}),
-				n(157120, {	-- Fangtaker Orsa
+				n(157120, {	-- Fangtaker Orsa -- note: seen when Assault: Amathet Advance was up
 					["questID"] = 57258,
 					["coord"] = { 75.0, 68.2, 1527 },
 				}),
@@ -219,6 +230,10 @@ _.ExpansionFeatures =
 				n(152677, {	-- Nebet the Ascended -- note: seen when Assault: Amathet Advance was up
 					["questID"] = 55684,
 					["coord"] = { 62.0, 24.5, 1527 },
+				}),
+				n(157146, {	-- Rotfeaster -- note: seen when Assault: Amathet Advance was up
+					["questID"] = 57273,
+					["coord"] = { 68.3, 31.9, 1527 },
 				}),
 				n(156299, {	-- R'khuzj the Unfathomable -- note: seen when Assault: The Black Empire was up
 					["questID"] = 57430,
@@ -239,6 +254,27 @@ _.ExpansionFeatures =
 				n(160532, {	-- Shoth the Darkened -- note: seen when Assault: The Black Empire was up
 					["questID"] = 58169,
 					["coord"] = { 61.3, 74.9, 1527 },
+				}),
+				n(151897, {	-- Sun Priestess Nubitt -- note: seen when Assault: Amathet Advance was up
+					["questID"] = 55479,
+					["coord"] = { 84.8, 57.0, 1527 },
+				}),
+				n(151609, {	-- Sun Prophet Epaphos -- note: seen when Assault: Amathet Advance was up
+					["questID"] = 55353,
+					["coord"] = { 73.3, 74.4, 1527 },
+					["g"] = {
+						i(173421),	-- Black Empire Signet -- todo: move these elsewhere. they seemingly drop from all rares
+					},
+				}),
+				n(152657, {	-- Tat the Bonechewer -- note: seen when Assault: Amathet Advance was up
+					["questID"] = 55682,
+					["coords"] = {
+						{ 67.6, 33.2, 1527 },
+						{ 66.4, 38.4, 1527 },
+						{ 64.8, 38.5, 1527 },
+						{ 64.6, 36.5, 1527 },
+						{ 66.5, 34.2, 1527 },
+					},
 				}),
 				n(157164, {	-- Zealot Tekem -- note: seen when Assault: Amathet Advance was up
 					["questID"] = 57279,
@@ -271,16 +307,42 @@ _.ExpansionFeatures =
 						currency(1755),	-- Coalescing Visions
 					},
 				}),
-				o(, {	-- Amathet Coffer -- available when Assault: Amathet Advance is up
-					["coords"] = {
-						{ 65.9, 21.5, 1527 },	-- questID 55700
-						{ 66.9, 24.1, 1527 },	-- questID 55692
-						{ 71.9, 43.9, 1527 },	-- questID 55698
-						{ 75.3, 55.8, 1527 },	-- questID 55691
-						{ 85.3, 51.4, 1527 },	-- questID 55689
-					},
-				}),
 				]]--
+				-- TODO:: confirm if the amathet reliquaries are one-time chests or repeatable
+				o(10000000, {	-- Amathet Reliquary -- available when Assault: Amathet Advance is up
+					--["questID"] = ,
+					["coord"] = { 66.9, 24.1, 1527 },
+				}),
+				o(10000001, {	-- Amathet Reliquary -- available when Assault: Amathet Advance is up
+					--["questID"] = ,
+					["coord"] = { 83.1, 60.3, 1527 },
+				}),
+				-- TODO:: the amathet cache appear to be randomly placed and repeatable. need to confirm this before moving questIDs to trackers file
+				o(11000000, {	-- Amathet Cache
+					["questID"] = 55700,
+					["coord"] = { 68.9, 32.3, 1527 },
+					["collectible"] = false,
+				}),
+				o(11000001, {	-- Amathet Cache
+					["questID"] = 55691,
+					["coord"] = { 75.6, 53.7, 1527 },
+					["collectible"] = false,
+				}),
+				o(11000002, {	-- Amathet Cache
+					["questID"] = 55690,
+					["coord"] = { 78.3, 62.1, 1527 },
+					["collectible"] = false,
+				}),
+				o(11000003, {	-- Amathet Cache
+					["questID"] = 55689,
+					["coord"] = { 84.8, 61.9, 1527 },
+					["collectible"] = false,
+				}),
+				o(11000004, {	-- Amathet Cache
+					["questID"] = 55698,
+					["coord"] = { 77.3, 49.3, 1527 },
+					["collectible"] = false,
+				}),
 			}),
 			n(-2,   {	-- Vendors
 				n(160714, {	-- Provisioner Qorra
@@ -289,6 +351,16 @@ _.ExpansionFeatures =
 						i(172011, {	-- Recipe: Contract: Uldum Accord
 							["cost"] = 12600000,	-- 1,260 gold
 						}),
+						i(174477, {	-- Pygmy Camel
+							["cost"] = { "i", 163036, 300 },	-- 300x Polished Pet Charm
+						}),
+						i(174648, {	-- Uldum Accord Tabard
+							["cost"] = 2160000,	-- 216g
+						}),
+						i(174754, {	-- Wastewander Skyterror
+							["cost"] = 216000000,	-- 21,600g
+						}),
+						i(173282),	-- Token of Death's Glee (Rank 3)
 					},
 				}),
 			}),
@@ -298,8 +370,42 @@ _.ExpansionFeatures =
 					["lvl"] = 120,
 					["isWorldQuest"] = true,
 				}),
+				q(55670, {	-- Amathet Raiding Fleet
+					["lvl"] = 120,
+					["coord"] = { 84.2, 55.6, 1527 },
+					["isWorldQuest"] = true,
+				}),
+				q(55350, {	-- Assault: Amathet Advance
+					["lvl"] = 120,
+					["isWorldQuest"] = true,
+					["g"] = {
+						i(173457),	-- Malignant Leviathan's Headguard (probably from all assault rewards?)
+					},
+				}),
+				q(57157, {	-- Assault: The Black Empire
+					-- refreshing after the boss fight in Uldum triggered 57736 (weekly/daily id?)
+					["g"] = {
+						i(173372, {	-- Cache of the Black Empire
+							currency(1755),	-- Coalescing Visions
+							i(173178),	-- Corrupted Greaves -- TODO:: almost certainly a full ilvl 415 set for all armor types. Same ones sold by blacktalon guards for visions?
+							i(173456),	-- Plate Crushers -- probably scales just like world quest loot
+						}),
+					},
+				}),
 				q(55356, {	-- Beacon of the Sun King
 					["lvl"] = 120,
+					["isWorldQuest"] = true,
+				}),
+				--[[
+				q(, {	-- Beacon of the Sun King
+					["lvl"] = 120,
+					["coord"] = { 83.5, 61.9, 1527 },
+					["isWorldQuest"] = true,
+				}),
+				]]--
+				q(55358, {	-- Beacon of the Sun King
+					["lvl"] = 120,
+					["coord"] = { 71.6, 45.9, 1527 },
 					["isWorldQuest"] = true,
 				}),
 				q(57592, {	-- Executor of N'Zoth
@@ -308,6 +414,21 @@ _.ExpansionFeatures =
 				}),
 				q(55359, {	-- Ritual of Ascendancy
 					["lvl"] = 120,
+					["isWorldQuest"] = true,
+				}),
+				q(57234, {	-- Solar Collector
+					["lvl"] = 120,
+					["coord"] = { 80.3, 66.1, 1527 },
+					["isWorldQuest"] = true,
+				}),
+				q(55354, {	-- The Vir'naal Front
+					["lvl"] = 120,
+					["coord"] = { 61.4, 47.2, 1527 },
+					["isWorldQuest"] = true,
+				}),
+				q(57223, {	-- Unearthed Keeper
+					["lvl"] = 120,
+					["coord"] = { 78.2, 57.6, 1527 },
 					["isWorldQuest"] = true,
 				}),
 			}),
