@@ -442,6 +442,8 @@ app.L = {
 		[-252] = "Interface\\Icons\\Achievement_AlliedRace_KulTiranHuman",			-- Kul Tiran
 		[-253] = "Interface\\Icons\\ui_horde_honorboundmedal",						-- Horde War Campaign
 		[-254] = "Interface\\Icons\\inv_chest_chain_10",							-- Heritage Armor
+		[-255] = "Interface\\Icons\\achievement_alliedrace_vulpera",				-- Vulpera
+		[-256] = "Interface\\Icons\\achievement_alliedrace_mechagnome",				-- Mechagnome
 		[-297] = "Interface\\Icons\\inv_letter_17", 								-- Mailbox
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000", 				-- Missions
 		[-304] = "Interface\\Icons\\INV_BannerPVP_03",								-- Battlegrounds
@@ -1076,6 +1078,8 @@ app.L = {
 		[-252] = "Kul Tiran",													-- Kul Tiran
 		[-253] = "Horde War Campaign",											-- Horde War Campaign
 		[-254] = "Heritage Armor",												-- Heritage Armor
+		[-255] = "Vulpera",
+		[-256] = "Mechagnome",
 -- Other
 		[-297] = MINIMAP_TRACKING_MAILBOX,										-- Mailbox
 		[-299] = GARRISON_MISSIONS, 											-- Missions
