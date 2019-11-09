@@ -352,7 +352,7 @@ _.ExpansionFeatures =
 							["cost"] = 12600000,	-- 1,260 gold
 						}),
 						i(174477, {	-- Pygmy Camel
-							["cost"] = { "i", 163036, 300 },	-- 300x Polished Pet Charm
+							["cost"] = { { "i", 163036, 300 }, },	-- 300x Polished Pet Charm
 						}),
 						i(174648, {	-- Uldum Accord Tabard
 							["cost"] = 2160000,	-- 216g
