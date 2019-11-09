@@ -900,6 +900,9 @@ app.L = {
 		[-10072] = "Interface\\Icons\\Paladin_Protection",							-- 
 		[-10073] = "Interface\\Icons\\Paladin_Protection",							-- 
 		[-10074] = "Interface\\Icons\\Paladin_Protection",							-- 
+		[-10075] = "Interface\\Icons\\Paladin_Protection",							-- Assault: Amathet Advance
+		[-10076] = "Interface\\Icons\\Paladin_Protection",							-- Assault: The Black Empire
+		[-10077] = "Interface\\Icons\\Paladin_Protection",							-- Assault: The Warring Clans
 
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -1773,6 +1776,9 @@ app.L = {
 		[-10072] = "N'Zoth Assaults",
 		[-10073] = "Horrific Vision of Orgrimmar",
 		[-10074] = "Horrific Vision of Stormwind",
+		[-10075] = "Assault: Amathet Advance",
+		[-10076] = "Assault: The Black Empire",
+		[-10077] = "Assault: The Warring Clans",
 	},
 
 	["OBJECT_ID_ICONS"] = {
