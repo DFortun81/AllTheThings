@@ -463,6 +463,23 @@ _.Zones =
 										["lvl"] = 20,
 									}),
 								}),
+								n(-255, {	-- Vulpera
+									q(58122, {	-- For the Horde
+										["provider"] = { "n", 160452 },	-- Nilsa
+										["coord"] = { 64.6, 46.5, 85 },
+										["races"] = { 35 },	-- Vulpera
+										["g"] = {
+											i(174069),	-- Tabard of the Vulpera
+										},
+									}),
+									q(58124, {	-- Stranger in a Strange Land
+										["provider"] = { "n", 133407 },	-- Ambassador Blackguard
+										["coord"] = { 39.3, 79.5, 85 },
+										["sourceQuest"] = 58122,	-- For the Horde
+										["races"] = { 35 },	-- Vulpera
+										["lvl"] = 20,
+									}),
+								}),
 								q(49930, {	-- The Call for Allies
 									["provider"] = { "n", 126065 },	-- Lady Sylvanas Windrunner
 									["coord"] = { 37.8, 81.0, 85 },
