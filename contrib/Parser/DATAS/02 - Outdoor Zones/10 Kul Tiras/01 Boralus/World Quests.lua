@@ -330,6 +330,14 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = 393,	-- Skinning
 					}),
+					q(52417, {	-- Work Order: Shimmerscale Diving Helmet
+						["provider"] = { "n", 135808 },	-- Provisioner Fray
+						["lvl"] = 120,
+						["coord"] = { 67.61, 21.81, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = 165,	-- Leatherworking
+					}),
 					q(52416, {	-- Work Order: Shimmerscale Diving Suit
 						["provider"] = { "n", 135808 },	-- Provisioner Fray
 						["lvl"] = 120,
