@@ -976,6 +976,7 @@ _.NeverImplemented =
 		q(55391),	-- Zuldazar Secret Supply Chest (playing as Horde and Alliance)
 		q(53640),	-- Zuldazar Secret Supply Chest (as Horde) / Zuldazar, Tiragarde, Nazmir, Vol'dun, Drustvar (as Alliance) (it probably triggers on both factions in all old BfA zones)
 		q(55412),	-- looting War Supply Crate in Vol'dun on Alliance (not secret chest)
+		q(55409),	-- looting War Supply Crate in Nazmir on Alliance (not secret chest)
 		q(55431),	-- Conquest's Reward — automatically offered when you cap conquest for the week
 		q(53349),	-- Conquest's Reward — automatically offered when you cap conquest for the week
 		q(53478),	-- Conquest's Reward — automatically offered when you cap conquest for the week
