@@ -13,6 +13,252 @@ _.ExpansionFeatures =
 		},
 		["g"] = {
 			n(-10072, {	-- N'Zoth Assaults
+				n(-10075, {	-- Assault: Amathet Advance
+					n(-17, {	-- Quests
+					}),
+					n(-16, {	-- Rares
+						n(157170, {	-- Acolyte Taspu
+							["questID"] = 57281,
+							["coord"] = { 64.5, 25.6, 1527 },
+						}),
+						n(151883, {	-- Anaua
+							["questID"] = 55468,
+							["description"] = "Flies around the top of the |cFFFFD700Halls of Origination|r.",
+							["coords"] = {
+								{ 71.2, 54.0, 1527 },
+								{ 68.7, 54.0, 1527 },
+								{ 68.7, 50.4, 1527 },
+								{ 71.2, 50.4, 1527 },
+							},
+						}),
+						n(157120, {	-- Fangtaker Orsa
+							["questID"] = 57258,
+							["coord"] = { 75.0, 68.2, 1527 },
+						}),
+						n(157157, {	-- Muminah the Incandescent
+							["questID"] = 57277,
+							["coord"] = { 66.8, 20.3, 1527 },
+						}),
+						n(152677, {	-- Nebet the Ascended
+							["questID"] = 55684,
+							["coord"] = { 62.0, 24.5, 1527 },
+						}),
+						n(157146, {	-- Rotfeaster
+							["questID"] = 57273,
+							["coord"] = { 68.3, 31.9, 1527 },
+						}),
+						n(152040, {	-- Scoutmaster Moswen
+							["questID"] = 55518,
+							["coord"] = { 69.7, 42.2, 1527 },
+						}),
+						n(151948, {	-- Senbu the Pridefather
+							["questID"] = 55496,
+							["coord"] = { 73.5, 64.6, 1527 },
+						}),
+						n(151897, {	-- Sun Priestess Nubitt
+							["questID"] = 55479,
+							["coord"] = { 84.8, 57.0, 1527 },
+						}),
+						n(151609, {	-- Sun Prophet Epaphos
+							["questID"] = 55353,
+							["coord"] = { 73.3, 74.4, 1527 },
+							["g"] = {
+								i(173421),	-- Black Empire Signet -- todo: move these elsewhere. they seemingly drop from all rares
+							},
+						}),
+						n(152657, {	-- Tat the Bonechewer
+							["questID"] = 55682,
+							["modelScale"] = 1.4,
+							["coords"] = {
+								{ 67.6, 33.2, 1527 },
+								{ 66.4, 38.4, 1527 },
+								{ 64.8, 38.5, 1527 },
+								{ 64.6, 36.5, 1527 },
+								{ 66.5, 34.2, 1527 },
+							},
+						}),
+						n(157164, {	-- Zealot Tekem
+							["questID"] = 57279,
+							["coord"] = { 80.2, 57.0, 1527 },
+						}),
+						n(151852, {	-- Watcher Rehu
+							["questID"] = 55461,
+							["modelScale"] = 4.0,
+							["coords"] = {
+								{ 81.2, 52.1, 1527 },
+								{ 79.3, 52.2, 1527 },
+								{ 77.7, 52.2, 1527 },
+							},
+						}),
+					}),
+					n(-212, {	-- Treasures
+						-- TODO:: confirm if the amathet reliquaries are one-time chests or repeatable
+						o(10000000, {	-- Amathet Reliquary -- available when Assault: Amathet Advance is up
+							--["questID"] = ,
+							["coord"] = { 66.9, 24.1, 1527 },
+						}),
+						o(10000001, {	-- Amathet Reliquary -- available when Assault: Amathet Advance is up
+							--["questID"] = ,
+							["coord"] = { 83.1, 60.3, 1527 },
+						}),
+						-- TODO:: the amathet cache appear to be randomly placed and repeatable. need to confirm this before moving questIDs to trackers file
+						o(11000000, {	-- Amathet Cache
+							["questID"] = 55700,
+							["coord"] = { 68.9, 32.3, 1527 },
+							["collectible"] = false,
+						}),
+						o(11000001, {	-- Amathet Cache
+							["questID"] = 55691,
+							["coord"] = { 75.6, 53.7, 1527 },
+							["collectible"] = false,
+						}),
+						o(11000002, {	-- Amathet Cache
+							["questID"] = 55690,
+							["coord"] = { 78.3, 62.1, 1527 },
+							["collectible"] = false,
+						}),
+						o(11000003, {	-- Amathet Cache
+							["questID"] = 55689,
+							["coord"] = { 84.8, 61.9, 1527 },
+							["collectible"] = false,
+						}),
+						o(11000004, {	-- Amathet Cache
+							["questID"] = 55698,
+							["coord"] = { 77.3, 49.3, 1527 },
+							["collectible"] = false,
+						}),
+					}),
+					n(-34, {	-- World Quests
+						q(55670, {	-- Amathet Raiding Fleet
+							["lvl"] = 120,
+							["coord"] = { 84.2, 55.6, 1527 },
+							["isWorldQuest"] = true,
+						}),
+						q(55350, {	-- Assault: Amathet Advance
+							["lvl"] = 120,
+							["isWorldQuest"] = true,
+							["g"] = {
+								i(173457),	-- Malignant Leviathan's Headguard (probably from all assault rewards?)
+							},
+						}),
+						q(55356, {	-- Beacon of the Sun King
+							["lvl"] = 120,
+							["isWorldQuest"] = true,
+						}),
+						--[[
+						q(, {	-- Beacon of the Sun King
+							["lvl"] = 120,
+							["coord"] = { 83.5, 61.9, 1527 },
+							["isWorldQuest"] = true,
+						}),
+						]]--
+						q(55358, {	-- Beacon of the Sun King
+							["lvl"] = 120,
+							["coord"] = { 71.6, 45.9, 1527 },
+							["isWorldQuest"] = true,
+						}),
+						q(57234, {	-- Solar Collector
+							["lvl"] = 120,
+							["coord"] = { 80.3, 66.1, 1527 },
+							["isWorldQuest"] = true,
+						}),
+						q(55354, {	-- The Vir'naal Front
+							["lvl"] = 120,
+							["coord"] = { 61.4, 47.2, 1527 },
+							["isWorldQuest"] = true,
+						}),
+						q(57223, {	-- Unearthed Keeper
+							["lvl"] = 120,
+							["coord"] = { 78.2, 57.6, 1527 },
+							["isWorldQuest"] = true,
+						}),
+					}),
+				}),
+				n(-10076, {	-- Assault: The Black Empire
+					n(-17, {	-- Quests
+					}),
+					n(-16, {	-- Rares
+						n(158706, {	-- Congealed Corruption -- no questID from this even though the map says its rare
+							 -- note: seen when Assault: The Black Empire was up
+							["coords"] = {
+								{ 59.5, 32.1, 1527 },
+								{ 54.7, 32.1, 1527 },
+							},
+							["g"] = {
+								i(173178),	-- Corrupted Greaves -- TODO: potential zone drop set from rares?
+							},
+						}),
+						n(159087, {	-- Corrupted Bonestripper
+							["questID"] = 57834,
+							["coord"] = { 56.6, 21.0, 1527 },
+						}),
+						n(156709, {	-- Corrupted Sanity Despoiler
+							["questID"] = 57666,
+							["coord"] = { 51.3, 32.0, 1527 },
+						}),
+						n(158594, {	-- Doomsayer Vathiris
+							["questID"] = 57672,
+							["coord"] = { 49.4, 38.3, 1527 },
+						}),
+						n(156299, {	-- R'khuzj the Unfathomable
+							["questID"] = 57430,
+							["description"] = "Roams around the southern half of Uldum.", -- TODO:: his path is HUGE. do we want to add coords?
+						}),
+						n(156654, {	-- Shol'thoss the Doomspeaker
+							["questID"] = 57432,
+							["coord"] = { 58.6, 82.8, 1527 },
+						}),
+						n(160532, {	-- Shoth the Darkened
+							["questID"] = 58169,
+							["coord"] = { 61.3, 74.9, 1527 },
+						}),
+					}),
+					n(-212, {	-- Treasures
+						--[[
+						o(, {	-- Black Empire Cache -- available when Assault: The Black Empire is up
+							["coords"] = {
+								{ 58.4, 15.4, 1527 },	-- questID 57623
+								{ 50.8, 31.4, 1527 },	-- questID 57624
+								{ 55.6, 83.5, 1527 },	-- questID 57635
+								{ 62.6, 81.9, 1527 },	-- questID 57626
+								{ 59.8, 66.1, 1527 },	-- questID 57627
+							},
+							["g"] = {
+								currency(1755),	-- Coalescing Visions
+							},
+						}),
+						]]--
+					}),
+					n(-34, {	-- World Quests
+						--[[
+						consuming maw: 62.4, 79.3
+						rumbling pit surrounded by venomscale scorplings: (65.0, 51.3). probably a rare, unknown activation
+						The Unsealed Tomb: (69.9, 59.9)
+						]]--
+						q(57585, {	-- Abyssal Santuary
+							["lvl"] = 120,
+							["isWorldQuest"] = true,
+						}),
+						q(57157, {	-- Assault: The Black Empire
+							-- refreshing after the boss fight in Uldum triggered 57736 (weekly/daily id?)
+							["g"] = {
+								i(173372, {	-- Cache of the Black Empire
+									currency(1755),	-- Coalescing Visions
+									i(173178),	-- Corrupted Greaves -- TODO:: almost certainly a full ilvl 415 set for all armor types. Same ones sold by blacktalon guards for visions?
+									i(173456),	-- Plate Crushers -- probably scales just like world quest loot
+								}),
+							},
+						}),
+						q(57592, {	-- Executor of N'Zoth
+							["lvl"] = 120,
+							["isWorldQuest"] = true,
+						}),
+						q(55359, {	-- Ritual of Ascendancy
+							["lvl"] = 120,
+							["isWorldQuest"] = true,
+						}),
+					}),
+				}),
 				n(0, {	-- Zone Drops -- inside the uldum vision of nzoth
 					i(174491),	-- Tome of Unspeakable Delicacies
 					i(171312),	-- Recipe: Void Focusb
@@ -182,168 +428,6 @@ _.ExpansionFeatures =
 					},
 				}),
 			}),
-			n(-16,  {	-- Rares
-				n(157170, {	-- Acolyte Taspu -- note: seen when Assault: Amathet Advance was up
-					["questID"] = 57281,
-					["coord"] = { 64.5, 25.6, 1527 },
-				}),
-				n(151883, {	-- Anaua -- note: seen when Assault: Amathet Advance was up
-					["questID"] = 55468,
-					["description"] = "Flies around the top of the |cFFFFD700Halls of Origination|r.",
-					["coords"] = {
-						{ 71.2, 54.0, 1527 },
-						{ 68.7, 54.0, 1527 },
-						{ 68.7, 50.4, 1527 },
-						{ 71.2, 50.4, 1527 },
-					},
-				}),
-				n(158706, {	-- Congealed Corruption -- no questID from this even though the map says its rare
-					 -- note: seen when Assault: The Black Empire was up
-					["coords"] = {
-						{ 59.5, 32.1, 1527 },
-						{ 54.7, 32.1, 1527 },
-					},
-					["g"] = {
-						i(173178),	-- Corrupted Greaves -- TODO: potential zone drop set from rares?
-					},
-				}),
-				n(159087, {	-- Corrupted Bonestripper -- note: seen when Assault: The Black Empire was up
-					["questID"] = 57834,
-					["coord"] = { 56.6, 21.0, 1527 },
-				}),
-				n(156709, {	-- Corrupted Sanity Despoiler -- note: seen when Assault: The Black Empire was up
-					["questID"] = 57666,
-					["coord"] = { 51.3, 32.0, 1527 },
-				}),
-				n(158594, {	-- Doomsayer Vathiris -- note: seen when Assault: The Black Empire was up
-					["questID"] = 57672,
-					["coord"] = { 49.4, 38.3, 1527 },
-				}),
-				n(157120, {	-- Fangtaker Orsa -- note: seen when Assault: Amathet Advance was up
-					["questID"] = 57258,
-					["coord"] = { 75.0, 68.2, 1527 },
-				}),
-				n(157157, {	-- Muminah the Incandescent -- note: seen when Assault: Amathet Advance was up
-					["questID"] = 57277,
-					["coord"] = { 66.8, 20.3, 1527 },
-				}),
-				n(152677, {	-- Nebet the Ascended -- note: seen when Assault: Amathet Advance was up
-					["questID"] = 55684,
-					["coord"] = { 62.0, 24.5, 1527 },
-				}),
-				n(157146, {	-- Rotfeaster -- note: seen when Assault: Amathet Advance was up
-					["questID"] = 57273,
-					["coord"] = { 68.3, 31.9, 1527 },
-				}),
-				n(156299, {	-- R'khuzj the Unfathomable -- note: seen when Assault: The Black Empire was up
-					["questID"] = 57430,
-					["description"] = "Roams around the southern half of Uldum.", -- TODO:: his path is HUGE. do we want to add coords?
-				}),
-				n(152040, {	-- Scoutmaster Moswen -- note: seen when Assault: Amathet Advance was up
-					["questID"] = 55518,
-					["coord"] = { 69.7, 42.2, 1527 },
-				}),
-				n(151948, {	-- Senbu the Pridefather -- note: seen when Assault: Amathet Advance was up
-					["questID"] = 55496,
-					["coord"] = { 73.5, 64.6, 1527 },
-				}),
-				n(156654, {	-- Shol'thoss the Doomspeaker -- note: seen when Assault: The Black Empire was up
-					["questID"] = 57432,
-					["coord"] = { 58.6, 82.8, 1527 },
-				}),
-				n(160532, {	-- Shoth the Darkened -- note: seen when Assault: The Black Empire was up
-					["questID"] = 58169,
-					["coord"] = { 61.3, 74.9, 1527 },
-				}),
-				n(151897, {	-- Sun Priestess Nubitt -- note: seen when Assault: Amathet Advance was up
-					["questID"] = 55479,
-					["coord"] = { 84.8, 57.0, 1527 },
-				}),
-				n(151609, {	-- Sun Prophet Epaphos -- note: seen when Assault: Amathet Advance was up
-					["questID"] = 55353,
-					["coord"] = { 73.3, 74.4, 1527 },
-					["g"] = {
-						i(173421),	-- Black Empire Signet -- todo: move these elsewhere. they seemingly drop from all rares
-					},
-				}),
-				n(152657, {	-- Tat the Bonechewer -- note: seen when Assault: Amathet Advance was up
-					["questID"] = 55682,
-					["coords"] = {
-						{ 67.6, 33.2, 1527 },
-						{ 66.4, 38.4, 1527 },
-						{ 64.8, 38.5, 1527 },
-						{ 64.6, 36.5, 1527 },
-						{ 66.5, 34.2, 1527 },
-					},
-				}),
-				n(157164, {	-- Zealot Tekem -- note: seen when Assault: Amathet Advance was up
-					["questID"] = 57279,
-					["coord"] = { 80.2, 57.0, 1527 },
-				}),
-				n(151852, {	-- Watcher Rehu -- note: seen when Assault: Amathet Advance was up
-					["questID"] = 55461,
-					["coords"] = {
-						{ 81.2, 52.1, 1527 },
-						{ 79.3, 52.2, 1527 },
-						{ 77.7, 52.2, 1527 },
-					},
-				}),
-				--[[
-				consuming maw: 62.4, 79.3
-				rumbling pit surrounded by venomscale scorplings: (65.0, 51.3). probably a rare, unknown activation
-				]]--
-			}),
-			n(-212, {	-- Treasures
-				--[[
-				o(, {	-- Black Empire Cache -- available when Assault: The Black Empire is up
-					["coords"] = {
-						{ 58.4, 15.4, 1527 },	-- questID 57623
-						{ 50.8, 31.4, 1527 },	-- questID 57624
-						{ 55.6, 83.5, 1527 },	-- questID 57635
-						{ 62.6, 81.9, 1527 },	-- questID 57626
-						{ 59.8, 66.1, 1527 },	-- questID 57627
-					},
-					["g"] = {
-						currency(1755),	-- Coalescing Visions
-					},
-				}),
-				]]--
-				-- TODO:: confirm if the amathet reliquaries are one-time chests or repeatable
-				o(10000000, {	-- Amathet Reliquary -- available when Assault: Amathet Advance is up
-					--["questID"] = ,
-					["coord"] = { 66.9, 24.1, 1527 },
-				}),
-				o(10000001, {	-- Amathet Reliquary -- available when Assault: Amathet Advance is up
-					--["questID"] = ,
-					["coord"] = { 83.1, 60.3, 1527 },
-				}),
-				-- TODO:: the amathet cache appear to be randomly placed and repeatable. need to confirm this before moving questIDs to trackers file
-				o(11000000, {	-- Amathet Cache
-					["questID"] = 55700,
-					["coord"] = { 68.9, 32.3, 1527 },
-					["collectible"] = false,
-				}),
-				o(11000001, {	-- Amathet Cache
-					["questID"] = 55691,
-					["coord"] = { 75.6, 53.7, 1527 },
-					["collectible"] = false,
-				}),
-				o(11000002, {	-- Amathet Cache
-					["questID"] = 55690,
-					["coord"] = { 78.3, 62.1, 1527 },
-					["collectible"] = false,
-				}),
-				o(11000003, {	-- Amathet Cache
-					["questID"] = 55689,
-					["coord"] = { 84.8, 61.9, 1527 },
-					["collectible"] = false,
-				}),
-				o(11000004, {	-- Amathet Cache
-					["questID"] = 55698,
-					["coord"] = { 77.3, 49.3, 1527 },
-					["collectible"] = false,
-				}),
-			}),
 			n(-2,   {	-- Vendors
 				n(160714, {	-- Provisioner Qorra
 					["coord"] = { 55.1, 32.9, 1527 },
@@ -362,74 +446,6 @@ _.ExpansionFeatures =
 						}),
 						i(173282),	-- Token of Death's Glee (Rank 3)
 					},
-				}),
-			}),
-			n(-34,  {	-- World Quests
-				-- The Unsealed Tomb: (69.9, 59.9)
-				q(57585, {	-- Abyssal Santuary
-					["lvl"] = 120,
-					["isWorldQuest"] = true,
-				}),
-				q(55670, {	-- Amathet Raiding Fleet
-					["lvl"] = 120,
-					["coord"] = { 84.2, 55.6, 1527 },
-					["isWorldQuest"] = true,
-				}),
-				q(55350, {	-- Assault: Amathet Advance
-					["lvl"] = 120,
-					["isWorldQuest"] = true,
-					["g"] = {
-						i(173457),	-- Malignant Leviathan's Headguard (probably from all assault rewards?)
-					},
-				}),
-				q(57157, {	-- Assault: The Black Empire
-					-- refreshing after the boss fight in Uldum triggered 57736 (weekly/daily id?)
-					["g"] = {
-						i(173372, {	-- Cache of the Black Empire
-							currency(1755),	-- Coalescing Visions
-							i(173178),	-- Corrupted Greaves -- TODO:: almost certainly a full ilvl 415 set for all armor types. Same ones sold by blacktalon guards for visions?
-							i(173456),	-- Plate Crushers -- probably scales just like world quest loot
-						}),
-					},
-				}),
-				q(55356, {	-- Beacon of the Sun King
-					["lvl"] = 120,
-					["isWorldQuest"] = true,
-				}),
-				--[[
-				q(, {	-- Beacon of the Sun King
-					["lvl"] = 120,
-					["coord"] = { 83.5, 61.9, 1527 },
-					["isWorldQuest"] = true,
-				}),
-				]]--
-				q(55358, {	-- Beacon of the Sun King
-					["lvl"] = 120,
-					["coord"] = { 71.6, 45.9, 1527 },
-					["isWorldQuest"] = true,
-				}),
-				q(57592, {	-- Executor of N'Zoth
-					["lvl"] = 120,
-					["isWorldQuest"] = true,
-				}),
-				q(55359, {	-- Ritual of Ascendancy
-					["lvl"] = 120,
-					["isWorldQuest"] = true,
-				}),
-				q(57234, {	-- Solar Collector
-					["lvl"] = 120,
-					["coord"] = { 80.3, 66.1, 1527 },
-					["isWorldQuest"] = true,
-				}),
-				q(55354, {	-- The Vir'naal Front
-					["lvl"] = 120,
-					["coord"] = { 61.4, 47.2, 1527 },
-					["isWorldQuest"] = true,
-				}),
-				q(57223, {	-- Unearthed Keeper
-					["lvl"] = 120,
-					["coord"] = { 78.2, 57.6, 1527 },
-					["isWorldQuest"] = true,
 				}),
 			}),
 		},
