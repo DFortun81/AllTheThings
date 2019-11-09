@@ -471,11 +471,17 @@ _.Zones =
 							["provider"] = { "n", 155336 },	-- Mogu Warrior
 							["sourceQuest"] = 56536,	-- It's Never Easy
 						}),
-						q(57220, {	-- Power Protocol Initiation
+						q(58737, {	-- Magni's Findings
 							["lvl"] = 120,
 							["coord"] = { 50.1, 59.1, 1473 },
 							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["sourceQuest"] = 56542,	-- Restored Hope
+						}),
+						q(57220, {	-- Power Protocol Initiation
+							["lvl"] = 120,
+							["coord"] = { 50.1, 59.1, 1473 },
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
+							["sourceQuest"] = 58737,	-- Magni's Findings
 						}),
 						q(57221, {	-- Re-Origination
 							["lvl"] = 120,
