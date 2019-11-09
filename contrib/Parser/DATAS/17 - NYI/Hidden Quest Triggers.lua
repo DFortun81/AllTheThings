@@ -228,6 +228,7 @@ _.NeverImplemented =
 		q(28106),	-- Twilight Highlands - triggers when the Grim Batol gates are broken open during "If The Key Fits"
 		q(26119),	-- Vashj'ir - FLAG - Claim Our Stake Launched
 		q(35403),	-- Vortex Pinnacle dungeon reward (Kill Asaad)
+		q(26415),	-- Questflag for Captain's Log — while on #26246, "Captain's Log" in Deepholm
 
 		
 		

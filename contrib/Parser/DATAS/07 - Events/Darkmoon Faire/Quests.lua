@@ -317,6 +317,9 @@ _.WorldEvents =
 					}),
 				},
 			}),
+			q(29450, {	-- A Wondrous Weapon
+				["u"] = 40,	-- Legacy Quests
+			}),
 			q(29446, {	-- A Wondrous Weapon
 				["isMonthly"] = true,
 				["provider"] = { "i", 71638 },	-- Ornate Weapon

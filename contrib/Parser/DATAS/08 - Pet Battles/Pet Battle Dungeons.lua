@@ -29,6 +29,7 @@ _.PetBattles =
 	q(54186, {	-- Pet Battle Challenge: Gnomeregan
 		["provider"] = { "n", 147070 },	-- Micro Zoox
 		["isWeekly"] = true,
+		["coord"] = { 31.2, 37.4, 469 },	-- New Tinkertown
 		["maps"] = {
 			30,		-- New Tinkertown [Below]
 			840,	-- Pet Dungeon
