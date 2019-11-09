@@ -5,9 +5,10 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		n(-34, {	-- World Quests
+			["order"] = "03",
 			["lvl"] = 110,
 			["g"] = {
-				filter(200, {	-- Recipes
+				f(200,  {	-- Recipes
 					q(41666, {	-- Vantus Rune Work Order: Nythendra
 						["repeatable"] = true,
 						["provider"] = { "n", 106904 },	-- Valdemar Stormseeker <Valarjar Emissary>
@@ -441,6 +442,8 @@ _.Zones =
 				}),
 				n(-386, {	-- Trinkets
 					i(134204),	-- Bleached Skull Talisman
+					i(139075),	-- Forest Creeper's Guile
+					i(134335),	-- Mana Crystal Shard
 					i(134336),	-- Stolen Mana Crystal
 				}),
 				n(-387, {	-- Relics
@@ -453,6 +456,8 @@ _.Zones =
 					i(141275),	-- Fertile Soil
 					i(141265),	-- Gift of Flame
 					i(143704),	-- Harpybane Fetish
+					i(143686),	-- Hatecoil Badge of Glory
+					i(141254),	-- Mote of Fear
 					i(143696),	-- Perilous Bargain
 					i(141270),	-- Restless Dreams
 					i(143703),	-- Snowmane Totem

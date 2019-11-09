@@ -4,7 +4,8 @@
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
 	inst(753, { 	-- Vault of Archavon
-	["isRaid"] = true,
+		["order"] = "01",
+		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 80,
 		["mapID"] = 156,

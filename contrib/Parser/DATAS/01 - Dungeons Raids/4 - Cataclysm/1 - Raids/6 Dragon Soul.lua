@@ -3,6 +3,7 @@
 -----------------------------------------------------
 _.Instances = { tier(4, {	-- Cataclysm
 	inst(187, { 	-- Dragon Soul
+		["order"] = "06",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 85,

@@ -3,6 +3,7 @@
 -----------------------------------------------------
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(330, {	-- Heart of Fear
+		["order"] = "02",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 90,

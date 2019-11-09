@@ -4,6 +4,7 @@
 
 _.Instances = { tier(4, {	-- Cataclysm
 	inst(75, { 	-- Baradin Hold
+		["order"] = "01",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 85,

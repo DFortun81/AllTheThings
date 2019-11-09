@@ -124,6 +124,7 @@ _.Zones =
 					["provider"] = { "n", 125398 },	-- Harold Beckett
 				}),
 				q(50542, {	-- An Explosive Opportunity
+					["isBreadcrumb"] = true,
 					["coord"] = { 66.6, 49.9, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129858 },	-- Wulfred Fizzbracket
@@ -1449,15 +1450,6 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(52057, {	-- Against the Storm
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(52047, {	-- Against the Storm
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(49290, {	-- Aged to Perfection
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1623,9 +1615,6 @@ _.Zones =
 				}),
 				q(52956, {	-- Call to Arms: Tiragarde Sound
 					["races"] = HORDE_ONLY,
-				}),
-				q(52948, {	-- Call to Arms: Tiragarde Sound
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(55340, {	-- Calligraphy
 					["collectible"] = false,

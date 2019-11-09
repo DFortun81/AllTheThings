@@ -106,7 +106,7 @@ _.GroupFinder =
 				i(92881),	-- Bladesnap Drape
 				i(92820),	-- Bladesnap Gauntlets
 				i(92819),	-- Bladesnap Girdle
-				i(92818),	-- Bladesnap Helm*			— 5/3/19
+				i(92818),	-- Bladesnap Helm*					— 5/3/19
 				i(92817),	-- Bladesnap Legplates
 				i(92889),	-- Bladesnap Neck
 				i(92816),	-- Bladesnap Pauldrons
@@ -151,7 +151,7 @@ _.GroupFinder =
 				i(92832),	-- Earthstriker Legguards
 				i(92831),	-- Earthstriker Spaulders
 				i(92830),	-- Earthstriker Vest
-				i(93067),	-- Firebinder Cloak*		— 5/3/19
+				i(93067),	-- Firebinder Cloak*				— 5/3/19
 				i(89500),	-- Fireheart Cloak
 				i(89508),	-- Fireheart Collar
 				i(89506),	-- Fireheart Ring
@@ -193,6 +193,7 @@ _.GroupFinder =
 				i(92848),	-- Hozen-Speed Jerkin
 				i(92847),	-- Hozen-Speed Shoulders
 				i(92846),	-- Hozen-Speed Waistband
+				i(93085),	-- Hozen-Stitched Bindings*			— 10/25/19
 				i(92854),	-- Jinyu-Polished Bindings
 				i(92855),	-- Jinyu-Polished Boots
 				i(92856),	-- Jinyu-Polished Britches
@@ -239,6 +240,7 @@ _.GroupFinder =
 				i(92888),	-- Stormcrier Choker
 				i(92880),	-- Stormcrier Cloak
 				i(92882),	-- Stormcrier Ring
+				i(93060),	-- Stormshaper Helm*				— 10/25/19
 			},
 		}),
 		i(92813, {	-- Greater Cache of Treasures [Looks like this was deprecated in favor of #98133)

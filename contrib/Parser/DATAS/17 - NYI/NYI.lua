@@ -1652,7 +1652,7 @@ _.NeverImplemented =
 			un(1, i(168031)),	-- dnt transference disc
 		}),
 		un(1, i(79907)),	-- Spear of Xuen (Old Version)
-		un(1, i(129742)),	-- Badge of timewaking justice cap
+		un(1, i(129742)),	-- Badge of Timewalking Justice cap
 		un(1, i(31496)),	-- Unknown
 		un(1, i(31498)),	-- Unknown
 		un(1, i(31500)),	-- Unknown

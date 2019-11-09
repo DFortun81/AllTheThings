@@ -572,9 +572,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
-				q(13473, {	-- Candy Bucket — Dalaran : Northrend, Legerdemain Lounge, neutral
+				q(13463, {	-- Candy Bucket — Dalaran : Northrend, Legerdemain Lounge, neutral
 					["isYearly"] = true,
-					["coord"] = { 66.6, 30.1, 125 },
+					["coord"] = { 48.3, 40.8, 125 },
 					["maps"] = { 125 },	-- Dalaran : Northrend
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
@@ -583,7 +583,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
-				q(13463, {	-- Candy Bucket — Dalaran : Northrend, Silver Enclave, Alliance
+				q(13473, {	-- Candy Bucket — Dalaran : Northrend, Silver Enclave, Alliance
 					["isYearly"] = true,
 					["coord"] = { 42.5, 63.5, 125 },
 					["races"] = ALLIANCE_ONLY,
@@ -595,9 +595,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 						}),
 					},
 				}),
-				q(13463, {	-- Candy Bucket — Dalaran : Northrend, Sunreaver's Sanctuary, Horde
+				q(13474, {	-- Candy Bucket — Dalaran : Northrend, Sunreaver's Sanctuary, Horde
 					["isYearly"] = true,
-					["coord"] = { 48.3, 40.8, 125 },
+					["coord"] = { 66.6, 30.1, 125 },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 125 },	-- Dalaran : Northrend
 					["u"] = 26,	-- Hallow's End
@@ -1288,6 +1288,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				q(12335, {	-- Candy Bucket — Ironforge, The Commons, Alliance
 					["isYearly"] = true,
 					["coord"] = { 18.6, 51.3, 87 },
+					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 87 },	-- Ironforge
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
@@ -1516,6 +1517,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				q(28963, {	-- Candy Bucket — Loch Modan, Farstrider Lodge, Alliance
 					["isYearly"] = true,
 					["coord"] = { 82.9, 63.6, 48 },
+					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 48 },	-- Loch Modan
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
@@ -2060,6 +2062,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				q(12336, {	-- Candy Bucket — Stormwind, The Trade District, Alliance
 					["isYearly"] = true,
 					["coord"] = { 60.5, 75.2, 84 },
+					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 84 },	-- Stormwind City
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
@@ -2797,7 +2800,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						i(33226),	-- Tricky Treat
 					},
 				}),
-				q(11449, {	-- Fire Training (Durotar)
+				q(11361, {	-- Fire Training (Durotar)
 					["sourceQuests"] = { 11357 },	-- Masked Orphan Matron
 					["provider"] = { "n", 23973 },	-- Masked Orphan Matron
 					["coord"] = { 52.5, 41.2, 1 },	-- Durotar
@@ -2819,7 +2822,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						i(33226),	-- Tricky Treat
 					},
 				}),
-				q(11316, {	-- Fire Training (Tirisfal Glades)
+				q(11449, {	-- Fire Training (Tirisfal Glades)
 					["sourceQuests"] = { 11357 },	-- Masked Orphan Matron
 					["provider"] = { "n", 23973 },	-- Masked Orphan Matron
 					["coord"] = { 52.5, 41.2, 18 },	-- Tirisfal Glades
@@ -2983,7 +2986,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 						{ 53.4, 51.5, 27 },	-- Dun Morogh
 						{ 42.6, 64.6, 37 },	-- Elwynn Forest 
 					},
-					["races"] = HORDE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 					["maps"] = { 
 						97, -- Azuremyst Isle
 						27, -- Dun Morogh

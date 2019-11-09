@@ -261,6 +261,7 @@ _.Zones =
 						q(56261, {	-- Return to the Heart (A)
 							["provider"] = { "n", 154464 },	-- Earthen Guardian <Messenger of the Speaker>
 							["coord"] = { 74.8, 15.2, 1161 },
+							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 120,
@@ -269,6 +270,7 @@ _.Zones =
 						q(55522, {	-- Return to the Heart (H)
 							["provider"] = { "n", 154465 },	-- Earthen Guardian <Messenger of the Speaker>
 							["coord"] = { 51.0, 88.8, 1165 },
+							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 120,
@@ -279,7 +281,7 @@ _.Zones =
 							["coord"] = { 50.0, 59.2, 1473 },
 							["sourceQuests"] = {
 								56261,	-- Return to the Heart (A)
-								55522,	-- Return to the Heart (H)
+								55522,	-- Return to the Heart (H)	
 							},
 							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["lvl"] = 120,
@@ -298,11 +300,11 @@ _.Zones =
 							["lvl"] = 120,
 							["maps"] = { 198 },	-- Mount Hyjal
 						}),
-						-- Heart of Azeroth Level 60  -- Confirm this is actually sourced from the Magni Chain.
+						-- Heart of Azeroth Level 60
 						q(56167, {	-- Investigating the Highlands
 							["provider"] = { "n", 152365 },	-- Kalecgos
 							["coord"] = { 53.1, 70.9, 1473 },
-							["sourceQuest"] = 55521,	-- Do It the Azerite Way
+							["sourceQuest"] = 55398,	-- The Long Awake
 							["description"] = "Your Heart of Azeroth needs to be 60 to start the questline.",
 							["lvl"] = 120,
 						}),
@@ -326,6 +328,7 @@ _.Zones =
 						q(56262, {	-- Back to the Chamber (A)
 							["provider"] = { "n", 154464 },	-- Earthen Guardian
 							["coord"] = { 74.8, 15.2, 1161 },
+							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 120,
@@ -334,6 +337,7 @@ _.Zones =
 						q(55739, {	-- Back to the Chamber (H)
 							["provider"] = { "n", 154465 },	-- Earthen Guardian
 							["coord"] = { 51.0, 88.8, 1165 },
+							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 120,
@@ -345,6 +349,7 @@ _.Zones =
 							["sourceQuests"] = {
 								56262,	-- Back to the Chamber (A)
 								55739,	-- Back to the Chamber (H)
+								55521,	-- Do It the Azerite Way
 							},
 							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["lvl"] = 120,

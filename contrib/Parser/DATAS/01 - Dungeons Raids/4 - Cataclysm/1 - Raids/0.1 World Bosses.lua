@@ -4,6 +4,8 @@
 
 _.Instances = { tier(4, {	-- Cataclysm
 	n(-7, {	-- World Bosses
+		["order"] = "00",
+		["ordered"] = true,
 		["isRaid"] = true,
 		["lvl"] = 85,
 		["g"] = { 

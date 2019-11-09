@@ -1229,6 +1229,7 @@ namespace ATT
                     case "ignoreBonus":
                     case "ignoreSource":
                     case "hideText":
+                    case "ordered":
                         {
                             item[field] = Convert.ToBoolean(value);
                             break;
@@ -1254,6 +1255,7 @@ namespace ATT
                     case "name":
                     case "description":
                     case "title":
+                    case "order":
                         {
                             item[field] = ATT.Export.ToString(value).Replace("\n", "\\n").Replace("\r", "\\r").Replace("\t", "\\t");
                             break;

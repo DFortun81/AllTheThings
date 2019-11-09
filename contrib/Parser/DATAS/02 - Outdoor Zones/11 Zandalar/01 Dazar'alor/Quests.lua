@@ -7,21 +7,6 @@ _.Zones =
 	m(875, { 	-- Zandalar
 		m(1163, {	-- Dazar'alor
 			n(-17, {	-- Quests
-				n(-9, {		-- PvP
-					["lvl"] = 120,
-					["g"] = {
-						q(56500, {	-- Storming the Battlefields!
-							["provider"] = { "n", 143555 },	-- Xander Silberman
-							["races"] = HORDE_ONLY,
-							["coord"] = { 51.6, 58.2, 875 },
-							["g"] = {
-								i(168920),	-- Azerite-Encrusted Timequartz (Rank 1)
-								i(168442),	-- Roiling Blood of the Vanquished (Rank 1)
-								i(168578),	-- Sphere of Suppressed Force (Rank 1)
-							},
-						}),
-					},
-				}),
 				q(51465, {	-- A Load of Scrap
 				--	confirm SQ when flying is implemented.
 					["sourceQuests"] = { 46931 },	-- Speaker of the Horde

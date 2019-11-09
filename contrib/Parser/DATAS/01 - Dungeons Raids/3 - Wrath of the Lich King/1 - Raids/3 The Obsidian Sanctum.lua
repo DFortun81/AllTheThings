@@ -4,6 +4,7 @@
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
 	inst(755, { 	-- The Obsidian Sanctum
+		["order"] = "03",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 80,

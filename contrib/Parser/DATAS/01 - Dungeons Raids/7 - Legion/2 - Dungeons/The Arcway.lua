@@ -8,6 +8,10 @@ _.Instances = { tier(7, {	-- Legion
 		["mapID"] = 749,
 		["groups"] = {
 			n(-34, {	-- World Quests
+				q(43637, {	-- The Arcway: Clogged Drain
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 				q(43640, {	-- The Arcway: Creeping Suspicions
 					["isWorldQuest"] = true,
 					["lvl"] = 110,

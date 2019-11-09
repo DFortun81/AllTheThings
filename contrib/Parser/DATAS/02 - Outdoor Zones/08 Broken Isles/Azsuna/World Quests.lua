@@ -523,6 +523,10 @@ _.Zones =
 					["lvl"] = 98,
 					["isWorldQuest"] = true,
 				}),
+				q(41288, {	-- Supplies Needed: Aethril
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 				q(41315, {	-- Supplies Needed: Leystone
 					["lvl"] = 110,
 					["isWorldQuest"] = true,

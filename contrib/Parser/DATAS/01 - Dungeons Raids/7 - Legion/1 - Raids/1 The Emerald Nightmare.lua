@@ -4,6 +4,7 @@
 dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
 _.Instances = { tier(7, {	-- Legion
 	inst(768, { 	-- The Emerald Nightmare
+		["order"] = "01",
 		["isRaid"] = true,
 		["coord"] = { 56.3, 36.9, 641 },
 		["maps"] = {

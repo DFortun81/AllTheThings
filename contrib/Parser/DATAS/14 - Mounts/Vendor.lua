@@ -11,6 +11,7 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(85262),	-- Amber Scorpion
+		i(152794),	-- Amethyst Ruinstrider
 		i(167167),	-- Ankoan Waveray
 		i(141713),	-- Arcadian War Turtle
 		i(47179, {	-- Argent Charger
@@ -32,6 +33,7 @@ _.Mounts =
 		i(81354),	-- Azure Water Strider
 		i(167894),	-- Beastlord's Irontusk
 		i(167895),	-- Beastlord's Warwolf
+		i(152795),	-- Beryl Ruinstrider
 		i(29465),	-- Black Battlestrider
 		i(91008, {	-- Black Dragon Turtle [Panda Only]
 			["races"] = {
@@ -113,8 +115,11 @@ _.Mounts =
 		i(89362),	-- Brown Riding Goat
 		i(13333),	-- Brown Skeletal Horse
 		i(5668),	-- Brown Wolf
-		i(161666),	-- Captured Swampstalker
+		i(161666, {	-- Captured Swampstalker
+			["races"] = HORDE_ONLY,
+		}),
 		i(33999),	-- Cenarion War Hippogryph
+		i(152797),	-- Cerulean Ruinstrider
 		i(116789),	-- Champion's Treadblade
 		i(5655),	-- Chestnut Mare
 		i(161665, {	-- Cobalt Pterrordax
@@ -324,7 +329,7 @@ _.Mounts =
 		i(142369),	-- Ivory Hawkstrider
 		i(67107),	-- Kor'kron Annihilator
 		i(152788),	-- Lightforged Warframe Mount
-		i(163042),	-- Reins of the Mighty Caravan Brutosaur
+		i(163042),	-- Mighty Caravan Brutosaur
 		i(116768),	-- Mosshide Riverwallow
 		i(73838),	-- Mountain Horse
 		i(143637, {	-- Netherlord's Brimstone Wrathsteed (Warlock)
@@ -336,7 +341,7 @@ _.Mounts =
 		i(47101),	-- Ochre Skeletal Warhorse
 		i(45595),	-- Orgrimmar Wolf
 		i(116776),	-- Pale Thorngrazer 
-		i(163589),	-- Reins of the Palehide Direhorn
+		i(163589),	-- Palehide Direhorn
 		i(2414),	-- Pinto
 		i(161879),	-- Proudmoore Sea Scout
 		i(91006, {	-- Purple Dragon Turtle [Panda Only]
@@ -380,15 +385,11 @@ _.Mounts =
 		i(89306),	-- Red Shado-Pan Riding Tiger
 		i(13331),	-- Red Skeletal Horse
 		i(29470),	-- Red Skeletal Warhorse
-		i(152794),	-- Reins of the Amethyst Ruinstrider
-		i(152795),	-- Reins of the Beryl Ruinstrider
-		i(152797),	-- Reins of the Cerulean Ruinstrider
-		i(152793),	-- Reins of the Russet Ruinstrider
-		i(152791),	-- Reins of the Sable Ruinstrider
-		i(152796),	-- Reins of the Umber Ruinstrider
 		i(87783),	-- Regal Riding Crane
 		i(116667),	-- Rocktusk Battleboar
+		i(152793),	-- Russet Ruinstrider
 		i(168829),	-- Rustbolt Resistor
+		i(152791),	-- Sable Ruinstrider
 		i(166436),	-- Sandy Nightsaber
 		i(143491, {	-- Shadowblade's Baneful Omen (Rogue)
 			["classes"] = { 4 },	-- Rogue
@@ -422,7 +423,9 @@ _.Mounts =
 		i(64998, {	-- Spectral Steed [Alliance Only]
 			["races"] = ALLIANCE_ONLY,
 		}),
-		i(161664),	-- Spectral Pterrorwing
+		i(161664, {	-- Spectral Pterrorwing
+			["races"] = HORDE_ONLY,
+		}),
 		i(64999, {	-- Spectral Wolf [Horde Only]
 			["races"] = HORDE_ONLY,
 		}),
@@ -524,10 +527,13 @@ _.Mounts =
 			["races"] = exclude({ 7 }, ALLIANCE_ONLY),	-- All alliance except Gnomes
 		}),
 		i(8591),	-- Turquoise Raptor
+		i(152796),	-- Umber Ruinstrider
 		i(13322),	-- Unpainted Mechanostrider
 		i(167170),	-- Unshackled Waveray
 		i(8592),	-- Violet Raptor
-		i(161667),	-- Voldunai Dunescraper
+		i(161667, {	-- Voldunai Dunescraper
+			["races"] = HORDE_ONLY,
+		}),
 		i(46100),	-- White Kodo
 		i(5873),	-- White Ram
 		i(89390),	-- White Riding Goat

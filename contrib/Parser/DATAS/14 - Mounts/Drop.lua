@@ -84,7 +84,9 @@ _.Mounts =
 		i(116661),	-- Mottled Meadowstomper
 		i(159921), 	-- Mummified Raptor Skull
 		i(161479),	-- Nazjatar Blood Serpentr
-		i(142233),	-- Netherlord's Accursed Wrathsteed
+		i(142233, {	-- Netherlord's Accursed Wrathsteed
+			["classes"] = { 9 },	-- Warlock
+		}),
 		i(49636),	-- Onyxian Drake
 		i(63042),	-- Phosphorescent Stone Drake
 		i(69224),	-- Pureblood Fire Hawk

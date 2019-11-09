@@ -6,6 +6,7 @@ _.Zones =
 	m(905, {	-- Argus
 		["g"] = {
 			{	-- Zone Drop
+				["order"] = "06",
 				["npcID"] = 0,	-- Zone Drop
 				["description"] = "These tokens can drop from any mobs or treasure chest.",
 				["maps"] = {

@@ -591,7 +591,12 @@ _.Zones =
 					["provider"] = { "n", 93841 },	-- Lasan Skyhorn
 				}),
 				q(40228, {	-- Scout It Out
-					["sourceQuests"] = { 40216 },	-- A Hunter at Heart
+					["sourceQuests"] = {
+						40216,	-- A Hunter at Heart
+						39392,	-- Bear Huntin'
+						39123,	-- Lion Stalkin'
+						39124,	-- Moose Shootin'
+					},
 					["coord"] = { 40.0, 52.2, 650 },
 					["provider"] = { "n", 94409 },	-- Hemet Nesingwary
 					["groups"] = {

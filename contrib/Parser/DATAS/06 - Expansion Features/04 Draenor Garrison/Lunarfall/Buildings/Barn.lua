@@ -22,6 +22,10 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(-17, {	-- Quests
+							q(36274, {	-- Bigger Trap, Better Rewards
+								["provider"] = { "n", 84524 },	-- Homer Stonefield
+								["races"] = ALLIANCE_ONLY,
+							}),
 						}),
 						n(-16, {	-- Rares
 							o(239171, {	-- Glass of Warm Milk

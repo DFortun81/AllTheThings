@@ -55,10 +55,6 @@ _.ExpansionFeatures =
 								["provider"] = { "n", 86979 },	-- Tormak the Scarred
 								["races"] = HORDE_ONLY,
 							}),
-							q(36346, {	-- Bigger Trap, Better Rewards
-								["provider"] = { "n", 85048 },	-- Farmer Lok'lub
-								["races"] = HORDE_ONLY,
-							}),
 							q(37034, {	-- Boar Training: Bulbapore
 								["provider"] = { "n", 86979 },	-- Tormak the Scarred
 								["races"] = HORDE_ONLY,

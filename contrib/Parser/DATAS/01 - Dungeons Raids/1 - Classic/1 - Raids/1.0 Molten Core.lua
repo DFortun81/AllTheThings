@@ -4,6 +4,7 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(741, { 	-- Molten Core
+		["order"] = "01",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 50,

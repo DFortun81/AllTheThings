@@ -7,32 +7,28 @@ _.Zones =
 		m(646, {	-- Broken Shore
 			n(-34, {	-- World Quests
 --[[
-				n(-34, {	-- World Quests
-					q(46209),	-- A Flare In The Dark
-					q(47061),	-- Apocron
-					q(46104),	-- Arachnid Toxicity
-					q(46947),	-- Brutallus
-					q(45531),	-- Creeping Fel
-					q(45969),	-- Defense of the Ancient
-					q(46077),	-- Felbound Spirits
-					q(40390),	-- Hallowed Ground
-					q(45541),	-- How Do YOU Like It?!
-					q(45743),	-- Judgment of Odyn
-					q(45776),	-- Keys are a Crutch
-					q(45653),	-- Kill it with Fire!
-					q(46308),	-- Leave a Trail
-					q(46046),	-- Life's a Lich
-					q(46754),	-- Magical Beasts
-					q(46755),	-- Mission: Felraging
-					q(46833),	-- Nature Unshackled
-					q(45793),	-- Occultist Onslaught
-					q(46752),	-- On Borrowed Wings
-					q(45929),	-- Purging the Flames
-					q(45549),	-- Salving the Corruption
-					q(46945),	-- Si'vash
-					q(46762),	-- Storm Brew Hustle
-					q(46811),	-- The Broodmother's Wrath
-				}),
+			n(-34, {	-- World Quests
+				q(46209),	-- A Flare In The Dark
+				q(47061),	-- Apocron
+				q(46104),	-- Arachnid Toxicity
+				q(46947),	-- Brutallus
+				q(45969),	-- Defense of the Ancient
+				q(46077),	-- Felbound Spirits
+				q(40390),	-- Hallowed Ground
+				q(45541),	-- How Do YOU Like It?!
+				q(45743),	-- Judgment of Odyn
+				q(45776),	-- Keys are a Crutch
+				q(45653),	-- Kill it with Fire!
+				q(46046),	-- Life's a Lich
+				q(46754),	-- Magical Beasts
+				q(46755),	-- Mission: Felraging
+				q(45793),	-- Occultist Onslaught
+				q(45929),	-- Purging the Flames
+				q(45549),	-- Salving the Corruption
+				q(46945),	-- Si'vash
+				q(46762),	-- Storm Brew Hustle
+				q(46811),	-- The Broodmother's Wrath
+			}),
 ]]--
 				q(45473, {	-- A Giant Problem
 					["lvl"] = 110,
@@ -99,6 +95,10 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(45358, {	-- Contagion Containment
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(45531, {	-- Creeping Fel
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
@@ -189,6 +189,10 @@ _.Zones =
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 				}),
+				q(46308, {	-- Leave a Trail
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 				q(46948, {	-- Malificus
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
@@ -209,6 +213,10 @@ _.Zones =
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 				}),
+				q(46833, {	-- Nature Unshackled
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 				q(44751, {	-- No Soldier Left Behind
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
@@ -216,6 +224,10 @@ _.Zones =
 				q(45792, {	-- Occultist Onslaught
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
+				}),
+				q(46752, {	-- On Borrowed Wings
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 				q(45797, {	-- Playing with Green Fire
 					["isWorldQuest"] = true,

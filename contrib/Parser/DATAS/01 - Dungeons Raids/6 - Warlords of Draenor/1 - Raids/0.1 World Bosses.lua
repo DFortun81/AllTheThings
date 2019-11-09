@@ -4,10 +4,13 @@
 
 _.Instances = { tier(6, {	-- Warlords of Draenor
 	n(-7, {	-- World Bosses
+		["order"] = "00",
+		["ordered"] = true,
 		["isRaid"] = true,
 		["lvl"] = 100,
 		["g"] = {
 			e(1291, {	-- Drov the Ruiner
+				["isWeekly"] = true,
 				["questID"] = 37462,
 				["isRaid"] = true,
 				["coord"] = { 44.1, 39.9, 543 },
@@ -42,6 +45,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			}),
 			e(1262, {	-- Rukhmar
 				["achievementID"] = 9425,
+				["isWeekly"] = true,
 				["questID"] = 37464,
 				["isRaid"] = true,
 				["coord"] = { 37.0, 39.3, 542 },
@@ -74,6 +78,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				},
 			}),
 			e(1452, {	-- Supreme Lord Kazzak
+				["isWeekly"] = true,
 				["questID"] = 39380,
 				["isRaid"] = true,
 				["coord"] = { 47.5, 22.1, 534 },
@@ -102,6 +107,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				},
 			}),
 			e(1211, {	-- Tarlna the Ageless
+				["isWeekly"] = true,
 				["questID"] = 37462,
 				["isRaid"] = true,
 				["coord"] = { 47.0, 86.7, 543 },

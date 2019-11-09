@@ -78,11 +78,6 @@ _.Zones =
 						]]--
 					},
 				}),
-				o(247797, {	-- Lost Mail
-					i(134859, {	-- Lost Mail
-						q(41368),	-- Lost Mail
-					}),
-				}),
 				q(41541, {	-- A Beastly Expedition
 					["classes"] = { 3 },
 					["providers"] = {
@@ -1070,12 +1065,6 @@ _.Zones =
 					["coord"] = { 54.0, 47.0, 627 },
 					["provider"] = { "n", 106610 },	-- Calydus
 				}),
-		--[[	Attached Lost Mail to the Object. One is looted from the Object, the other one is looted from completion of the quest
-				i(135479, {	-- Lost Mail
-					["g"] = {
-						q(41411),	-- Lost Mail
-					},
-				}), --]]
 				q(47606, {	-- Loyalty Is Its Own Reward
 					["classes"] = { 4 },
 					["provider"] = { "n", 123087 },	-- Al'Abas
@@ -1707,12 +1696,6 @@ _.Zones =
 						{ "n", 102700 },	-- Meryl Felstorm
 						{ "n", 109222 },	-- Meryl Felstorm
 					},
-				}),
-				q(50247, {	-- The Mail must flow
-					i(156836, {	-- Bulging Package
-						i(156833),	-- Katy's Stampwhistle
-						i(135479),	-- Lost Mail
-					}),
 				}),
 				q(46200, {	-- The Matter Resolved... For Now...
 					["provider"] = { "n", 118954 },	-- Night Elf Warrior

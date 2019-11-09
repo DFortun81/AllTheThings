@@ -8,6 +8,7 @@ _.Zones =
 			m(201, {	-- Kelp'thar Forest
 				n(-17,  {	-- Quests
 					q(25732, {	-- A Bone To Pick
+						["description"] = "Take the quest 'A Bone to Pick' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",
 						["provider"] = { "n", 46458 },	-- Budd
 						["coord"] = { 58.3, 48.6, 201 },
 						["sourceQuests"] = { 25670 },	-- DUN-dun-DUN-dun-DUN-dun
@@ -255,6 +256,7 @@ _.Zones =
 						},
 					}),
 					q(25419, {	-- Lady La-La's Medallion
+						["description"] = "Take the quest 'A Bone to Pick' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",
 						["crs"] = { 41017 },	-- Gilblin Collector
 						["provider"] = { "i", 55186 },	-- Lady La-La's Necklace
 						["g"] = {

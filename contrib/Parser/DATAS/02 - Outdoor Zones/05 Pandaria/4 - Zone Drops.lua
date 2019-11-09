@@ -5,6 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		n(0, {	-- Zone Drops
+			["order"] = "04",
 			["maps"] = {
 				422,	-- Dread Wastes
 				371,	-- Jade Forest

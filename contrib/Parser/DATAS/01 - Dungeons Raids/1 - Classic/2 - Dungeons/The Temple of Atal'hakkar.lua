@@ -324,7 +324,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			cr(8443, e(457, { 	-- Avatar of Hakkar
+			cr(8440, e(457, { 	-- Avatar of Hakkar
 				i(10844),	-- Spire of Hakkar
 				i(10838),	-- Might of Hakkar
 				i(10843),	-- Featherskin Cape

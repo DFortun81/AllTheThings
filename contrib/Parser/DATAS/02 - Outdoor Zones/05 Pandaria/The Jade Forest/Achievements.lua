@@ -38,7 +38,7 @@ _.Zones =
 						}),
 						o(213364, {	-- Ancient Pandaren Mining Pick
 							["questID"] = 31399,
-							["description"] = "Inside Greenstone Quarry at the lower level. Entrace at (71, 50)",
+							["description"] = "Inside Greenstone Quarry at the lower level. Entrance at (46.1, 29.1).",
 							["coords"] = {
 								{ 33.52, 78.04, 373 },
 								{ 37.95, 13.75, 373 },

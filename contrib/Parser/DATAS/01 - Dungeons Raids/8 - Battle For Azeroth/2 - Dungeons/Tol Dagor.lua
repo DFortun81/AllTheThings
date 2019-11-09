@@ -19,6 +19,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
+				q(51296, {	-- Tol Dagor: The Overseer's Pride
+					["isWorldQuest"] = true,
+					["lvl"] = 120,
+				}),
 			}),
 			d(1,  {	-- Normal
 				e(2097, {	-- The Sand Queen

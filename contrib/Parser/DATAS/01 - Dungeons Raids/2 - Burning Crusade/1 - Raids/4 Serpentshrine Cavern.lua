@@ -4,6 +4,7 @@
 
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(748, {	-- Serpentshrine Cavern
+		["order"] = "04",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 68,
@@ -15,8 +16,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["g"] = {
 			n(-17, {	-- Quests
 				q(10944, {	-- The Secret Compromised
-					["provider"] = { "n", 22820 },	-- Seer Olum
 					["sourceQuests"] = { 10708 },	-- Akama's Promise
+					["description"] = "After you defeat Fathom-Lord Karathress, Seer Olum will be freed from his cage and offer you the quest.",
+					["provider"] = { "n", 22820 },	-- Seer Olum
 				}),
 			}),
 			n(0, {		-- Zone Drop

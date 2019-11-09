@@ -4,6 +4,7 @@
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
 	inst(759, { 	-- Ulduar
+		["order"] = "05",
 		["isRaid"] = true,
 		["lvl"] = 80,
 		["mapID"] = 147,

@@ -72,15 +72,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52057, {	-- Against the Storm
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(52047, {	-- Against the Storm
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(49290, {	-- Aged to Perfection
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -241,9 +232,6 @@ _.Zones =
 					}),
 					q(52956, {	-- Call to Arms: Tiragarde Sound
 						["races"] = HORDE_ONLY,
-					}),
-					q(52948, {	-- Call to Arms: Tiragarde Sound
-						["races"] = ALLIANCE_ONLY,
 					}),
 					q(55340, {	-- Calligraphy
 						["isWorldQuest"] = true,
@@ -497,7 +485,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					
 					q(50299, {	-- Gryphon Wranglin'
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -1443,16 +1430,6 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52333, {	-- Work Order: Sea Mist Potion
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52417, {	-- Work Order: Shimmerscale Diving Helmet
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52416, {	-- Work Order: Shimmerscale Diving Suit
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

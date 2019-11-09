@@ -4,11 +4,14 @@
 
 _.Instances = { tier(7, {	-- Legion
 	n(-7, {	-- World Bosses
+		["order"] = "00",
+		["ordered"] = true,
 		["isRaid"] = true,
 		["modID"] = 3,
 		["lvl"] = 110,
 		["g"] = {
 			e(1790, {	-- Ana-Mouz 
+				["isWeekly"] = true,
 				["questID"] = 43512,	-- Ana-Mouz (WQ)
 				["isRaid"] = true,
 				["coord"] = { 31.0, 65.5, 680 },
@@ -45,6 +48,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			}),	
 			e(1956, {	-- Apocron 
+				["isWeekly"] = true,
 				["questID"] = 47061,	-- Apocron (WQ)
 				["isRaid"] = true,
 				["coord"] = { 59.2, 62.6, 646 },
@@ -65,6 +69,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			}),
 			e(1883, {	-- Brutallus 
+				["isWeekly"] = true,
 				["questID"] = 46947,	-- Brutallus (WQ)
 				["isRaid"] = true,
 				["coord"] = { 59.2, 28.4, 646 },
@@ -86,6 +91,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			}),
 			e(1774, {	-- Calamir
+				["isWeekly"] = true,
 				["questID"] = 43193,	-- Calamitous Intent (WQ)
 				["isRaid"] = true,
 				["coord"] = { 37.7, 83.6, 630 },
@@ -106,6 +112,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			}),
 			e(1789, {	-- Drugon the Frostblood 
+				["isWeekly"] = true,
 				["questID"] = 43448,	-- The Frozen King (WQ)
 				["isRaid"] = true,
 				["coord"] = { 58.4, 72.6, 650 },
@@ -142,6 +149,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			}),
 			e(1795, {	-- Flotsam
+				["isWeekly"] = true,
 				["questID"] = 43985,	-- A Dark Tide (WQ)
 				["isRaid"] = true,
 				["coord"] = { 49.2, 7.60, 650 },
@@ -180,6 +188,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			}),
 			e(1770, {	-- Humongris <The Wizard>
+				["isWeekly"] = true,
 				["questID"] = 42819,	-- Pocket Wizard (WQ)
 				["isRaid"] = true,
 				["coord"] = { 24.6, 69.6, 641 },
@@ -212,6 +221,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			}),
 			e(1769, {	-- Levantus 
+				["isWeekly"] = true,
 				["questID"] = 43192,	-- Terror of the Deep (WQ)
 				["isRaid"] = true,
 				["coord"] = { 43.0, 67.6, 630 },
@@ -241,6 +251,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			}),
 			e(1884, {	-- Malificus
+				["isWeekly"] = true,
 				["questID"] = 46948,	-- Malificus (WQ)
 				["isRaid"] = true,
 				["coord"] = { 59.8, 27.8, 646 },
@@ -263,6 +274,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			}),
 			e(1783, {	-- Na'zak the Fiend 
+				["isWeekly"] = true,
 				["questID"] = 43513,	-- Na'zak the Fiend(WQ)
 				["isRaid"] = true,
 				["coord"] = { 36.0, 66.4, 685 },
@@ -299,6 +311,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			}),	
 			e(1749, {	-- Nithogg 
+				["isWeekly"] = true,
 				["questID"] = 42270,	-- Scourge of the Skies (WQ)
 				["isRaid"] = true,
 				["coord"] = { 46.6, 30.0, 634 },
@@ -335,6 +348,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			}),
 			e(1763, {	-- Shar'thos
+				["isWeekly"] = true,
 				["questID"] = 42779,	-- The Sleeping Corruption (WQ)
 				["isRaid"] = true,
 				["coord"] = { 55.6, 43.2, 641 },
@@ -362,6 +376,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			}),
 			e(1885, {	-- Si'vash 
+				["isWeekly"] = true,
 				["questID"] = 46945,	-- Si'vash (WQ)
 				["isRaid"] = true,
 				["coord"] = { 89.6, 33.0, 646 },
@@ -383,6 +398,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			}),
 			e(1756, {	-- The Soultakers
+				["isWeekly"] = true,
 				["questID"] = 42269,	-- The Soultakers (WQ)
 				["isRaid"] = true,
 				["coord"] = { 78.2, 8.60, 634 },
@@ -424,6 +440,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			}),
 			e(1796, {	-- Withered J'im 
+				["isWeekly"] = true,
 				["questID"] = 44287,	-- DEADLY: Withered J'im (WQ)
 				["isRaid"] = true,
 				["coord"] = { 52.6, 80.8, 630 },

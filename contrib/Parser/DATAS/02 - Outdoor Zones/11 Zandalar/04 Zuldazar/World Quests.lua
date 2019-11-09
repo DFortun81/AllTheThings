@@ -11,7 +11,7 @@ _.Zones =
 						["provider"] = { "n", 142114 },	-- Talia Sparkbrow
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							crit(22, {	-- Add More to the Collection
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -107,7 +107,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							crit(3, {	-- Master of Calligraphy - Triangle
 								["achievementID"] = 13512,	-- Master Calligrapher
 							}),
@@ -139,7 +139,7 @@ _.Zones =
 					q(52892, {	-- Critters are Friends, Not Food
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							crit(21, {	-- Critters are Friends, Not Food
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -219,7 +219,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							ach(13441),	-- Pushing the Payload
 						},
 					}),
@@ -321,14 +321,14 @@ _.Zones =
 					q(54051, {	-- Naga Attack!
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
 					q(54060, {	-- Naga Attack!
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
@@ -341,7 +341,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							i(160509), 	-- Echoes of Rezan (TOY!)
 						},
 					}),
@@ -415,15 +415,13 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							{
+						["g"] = {
+							crit(6, {	-- Ritual Rampage
 								["achievementID"] = 13283,	-- Frontline Warrior
-								["criteriaID"] = 6,	-- Ritual Rampage
-							},
-							{
+							}),
+							crit(6, {	-- Ritual Rampage
 								["achievementID"] = 13387,	-- Frontline Veteran
-								["criteriaID"] = 6,	-- Ritual Rampage
-							},
+							}),
 						},
 					}),
 					q(52250, {	-- Saving Xibala
@@ -455,15 +453,13 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							{
+						["g"] = {
+							crit(4, {	-- Shores of Zuldazar
 								["achievementID"] = 13284,	-- Frontline Warrior
-								["criteriaID"] = 4,	-- Shores of Zuldazar
-							},
-							{
+							}),
+							crit(4, {	-- Shores of Zuldazar
 								["achievementID"] = 13388,	-- Frontline Veteran
-								["criteriaID"] = 4,	-- Shores of Zuldazar
-							},
+							}),
 						},
 					}),
 					q(54522, {	-- Short for an Orc (Faction Assault WQ)
@@ -475,7 +471,7 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 						["filter"] = 101,	-- Pet Battles
-						["groups"] = {
+						["g"] = {
 							crit(24, {	-- Small Beginnings
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -490,7 +486,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							ach(13440),	-- Pushing the Payload
 						},
 					}),
@@ -599,7 +595,7 @@ _.Zones =
 						["lvl"] = 120,
 						["requireSkill"] = 773,	-- Inscription
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							i(162372),	-- Contract: Tortollan Seekers [Rank 3]
 						},
 					}),
@@ -608,7 +604,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 171,	-- Alchemy
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							i(162257),	-- Recipe: Demitri's Draught of Deception (Rank 3)
 						},
 					}),
@@ -617,7 +613,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["requireSkill"] = 171,	-- Alchemy
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							i(162258),	-- Recipe: Lightfoot Potion (Rank 3)
 						},
 					}),
@@ -625,7 +621,7 @@ _.Zones =
 						["lvl"] = 120,
 						["requireSkill"] = 185,	-- Cooking
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							i(162294),	-- Recipe: Loa Loaf [Rank 3]
 						},
 					}),
@@ -633,7 +629,7 @@ _.Zones =
 						["lvl"] = 120,
 						["requireSkill"] = 185,	-- Cooking
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							i(162296),	-- Recipe: Mon'Dazi [Rank 3]
 						},
 					}),
@@ -641,7 +637,7 @@ _.Zones =
 						["lvl"] = 120,
 						["requireSkill"] = 185,	-- Cooking
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							i(162290),	-- Recipe: Ravenberry Tarts [Rank 3]
 						},
 					}),
@@ -649,7 +645,7 @@ _.Zones =
 						["lvl"] = 120,
 						["requireSkill"] = 185,	-- Cooking
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							i(162297),	-- Recipe: Spiced Snapper [Rank 3]
 						},
 					}),
@@ -657,7 +653,7 @@ _.Zones =
 						["lvl"] = 120,
 						["requireSkill"] = 185,	-- Cooking
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							i(162291),	-- Recipe: Swamp Fish 'n Chips [Rank 3]
 						},
 					}),
@@ -665,7 +661,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							i(160509), 	-- Echoes of Rezan (TOY!)
 						},
 					}),
@@ -682,7 +678,7 @@ _.Zones =
 					q(52937, {	-- You've Never Seen Jammer Upset
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							crit(23, {	-- You've Never Seen Jammer Upset
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -693,8 +689,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 				}),
-				{
-					["itemID"] = 165863,	-- Zandalari Weapons Cache
+				i(165863, {	-- Zandalari Weapons Cache
 					["sym"] = {
 						{"select", "mapID", 862},	-- Zuldazar
 						{"pop"},	-- Discard the Map Header and acquire the children.
@@ -704,9 +699,8 @@ _.Zones =
 						{"invtype", "INVTYPE_2HWEAPON", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_HOLDABLE", "INVTYPE_RANGED", "INVTYPE_RANGEDRIGHT", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND" },	-- Only include a couple of inventory types.
 						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 					},
-				},
-				{
-					["itemID"] = 165866,	-- Zandalari Empire Equipment Cache
+				}),
+				i(165866, {	-- Zandalari Empire Equipment Cache
 					["sym"] = {
 						-- Include the one extra.
 						{"select", "itemID", 158150},	-- Loa-Pledged Drape
@@ -724,7 +718,7 @@ _.Zones =
 						{"merge"},	-- Merge the finalized items back into the processing queue.
 						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 					},
-				},
+				}),
 				i(158116),	-- Bonehex Claws
 				i(158125),	-- Bonehex Warmaul
 				i(158126),	-- Dazar'alor Polearm
@@ -767,6 +761,7 @@ _.Zones =
 				i(158152),	-- Golden Empire Signet
 				n(-43, {	-- Cloth
 					i(157907),	-- Shadra Silk Mantle
+					i(157930),	-- Shadra Silk Robes
 					i(157909),	-- Shadra Silk Cuffs
 					i(157904),	-- Shadra Silk Gloves
 					i(157908),	-- Shadra Silk Sash

@@ -5,6 +5,7 @@ _.Toys =
 {
 	n(-31, { 	-- Promotion
 		un(3, i(54653)),	-- Darkspear Pride (Horde) No Longer Available
+		un(6, i(172179)),	-- Eternal Traveler's Hearthstone
 		un(3, i(54651)),	-- Gnomeregan Pride (Alliance) No Longer Available
 		un(16, i(33079, {	-- Murloc Costume
 			["model"] = 125041,

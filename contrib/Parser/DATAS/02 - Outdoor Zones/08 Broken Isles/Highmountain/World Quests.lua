@@ -135,10 +135,6 @@ _.Zones =
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 				}),
-				q(41093, {	-- DANGER: Durguth
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
-				}),
 				q(41696, {	-- DANGER: Mawat'aki
 					["lvl"] = 110,
 					["isWorldQuest"] = true,

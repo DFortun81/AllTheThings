@@ -276,6 +276,7 @@ t(64383);	-- Kaldorei Wind Chimes
 t(68806);	-- Kalytha's Haunted Locket
 t(86571);	-- Kang's Bindstone
 t(128462);	-- Karabor Councilor's Attire (Alliance)
+t(156833);	-- Katy's Stampwhistle
 t(88580);	-- Ken-Ken's Mask
 t(95567);	-- Kirin Tor Beacon (Alliance)
 t(116125);	-- Klikixx's Webspinner
@@ -646,3 +647,7 @@ t(168807);	-- Wormhole Generator: Kul Tiras
 t(168808);	-- Wormhole Generator: Zandalar
 t(170199);	-- Zanj'ir Weapon Rack
 
+-----------------
+-- PATCH 8.2.5 --
+-----------------
+t(172179);	-- Eternal Traveler's Hearthstone

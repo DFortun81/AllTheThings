@@ -4,6 +4,7 @@
 
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(745, { 	-- Karazhan (Raid)
+		["order"] = "01",
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 68,

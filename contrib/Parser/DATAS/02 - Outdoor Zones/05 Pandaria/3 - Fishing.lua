@@ -5,6 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		prof(356, {	-- Fishing
+			["order"] = "03",
 			["maps"] = {
 				422,	-- Dread Wastes
 				507,	-- Isle of Giants

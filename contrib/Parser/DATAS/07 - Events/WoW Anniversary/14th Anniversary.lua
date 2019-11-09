@@ -31,13 +31,13 @@ _.WorldEvents =
 								["itemID"] = 147881,	-- A Slightly More Urgent Letter from the Timewalkers
 								["questID"] = 47251,	-- Interesting Things
 								["races"] = HORDE_ONLY,
-								["u"] = 31,				-- WoW Anniversary Filter
+								["u"] = 36,				-- WoW Anniversary Filter
 							},
 							{	-- A Slightly More Urgent Letter from the Timewalkers [Alliance]
 								["itemID"] = 147880,	-- A Slightly More Urgent Letter from the Timewalkers
 								["questID"] = 47252,	-- Interesting Things
 								["races"] = ALLIANCE_ONLY,
-								["u"] = 31,				-- WoW Anniversary Filter
+								["u"] = 36,				-- WoW Anniversary Filter
 							},
 						},
 					},

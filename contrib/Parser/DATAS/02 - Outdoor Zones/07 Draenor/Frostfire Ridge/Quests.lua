@@ -624,10 +624,19 @@ _.Zones =
 					["sourceQuest"] = 36457,	-- Bypassing Security
 					["requireSkill"] = 773,	-- Inscription
 					["g"] = {
-						i(111923, {	-- Draenor Inscription
-							["collectible"] = false,
-						}),
 						i(111815),	-- Scribe's Quarters, Level 1
+						i(111923, {	-- Draenor Inscription
+							i(120136),		-- Recipe: Secrets of Draenor Inscription
+							recipe(169081),	-- War Paints
+							recipe(167950, {	-- Research: Warbinder's Ink
+								i(113992),	-- Scribe's Research Notes
+							}),
+							recipe(175390),	-- Laughing Tarot
+							recipe(175389),	-- Ocean Tarot
+							recipe(175392),	-- Savage Tarot
+							recipe(166669),	-- Card of Omens
+							recipe(178497),	-- Warbinder's Ink
+						}),
 						i(116114),	-- Prestige Card: The Turn
 					},
 				}),
@@ -942,12 +951,6 @@ _.Zones =
 					["coord"] = { 70.7, 78.5, 527 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33410,	-- The Butcher of Bladespire
-				}),
-				q(36435, {	-- Unintelligible Intelligence
-					["provider"] = { "i", 115593 },	-- Illegible Sootstained Notes
-					["description"] = "Drops from any mob in the zone.",
-					["requireSkill"] = 773,	-- Inscription
-					["races"] = HORDE_ONLY,
 				}),
 				q(34075, {	-- Vul'gath's End
 					["provider"] = { "n", 77210 },	-- Scout Ruk'Gan

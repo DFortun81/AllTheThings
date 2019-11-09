@@ -3,11 +3,14 @@
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	n(-7, {	-- World Bosses
+		["order"] = "01",
+		["ordered"] = true,
 		["isRaid"] = true,
 		["modID"] = 14,
 		["lvl"] = 120,
 		["g"] = {
 			e(2199, {	-- Azurethos, The Winged Typhoon
+				["isWeekly"] = true,
 				["questID"] = 52163,	-- The Matriarch (WQ)
 				["isRaid"] = true,
 				["coord"] = { 62.0, 24.0, 895 },	-- Tiragarde Sound
@@ -37,6 +40,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2213, {	-- Doom's Howl [Warfront]
+				["isWeekly"] = true,
 				["questID"] = 52847,	-- Doom's Howl (WQ)
 				["isRaid"] = true,
 				["races"] = ALLIANCE_ONLY,
@@ -60,6 +64,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2210, {	-- Dunegorger Kraulok
+				["isWeekly"] = true,
 				["questID"] = 52196,	-- Sandswept Bones (WQ)
 				["isRaid"] = true,
 				["coord"] = { 44.3, 55.5, 864 },
@@ -84,6 +89,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2197, {	-- Hailstone Construct
+				["isWeekly"] = true,
 				["questID"] = 52157,	-- A Chilling Encounter (WQ)
 				["isRaid"] = true,
 				["coords"] = {
@@ -111,6 +117,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2345, {	-- Ivus the Decayed [Alliance Only]
+				["isWeekly"] = true,
 				["questID"] = 54895,	-- Ivus the Decayed (WQ)
 				["isRaid"] = true,
 				["races"] = ALLIANCE_ONLY,
@@ -132,6 +139,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2329, {	-- Ivus the Forest Lord [Horde Only]
+				["isWeekly"] = true,
 				["questID"] = 54896,	-- Ivus the Forest Lord (WQ)
 				["isRaid"] = true,
 				["races"] = HORDE_ONLY,
@@ -153,6 +161,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2141, {	-- Ji'arak
+				["isWeekly"] = true,
 				["questID"] = 52169,	-- The Matriarch (WQ)
 				["isRaid"] = true,
 				["coord"] = { 69.0, 31.0, 862 },
@@ -180,6 +189,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2139, {	-- T'zane <The Soul Terror>
+				["isWeekly"] = true,
 				["questID"] = 52181,	-- Smoke and Shadow (WQ)
 				["isRaid"] = true,
 				["coord"] = { 35.6, 33.6, 863 },
@@ -203,6 +213,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2212, {	-- The Lion's Roar [Warfront]
+				["isWeekly"] = true,
 				["questID"] = 52848,	-- The Lion's Roar (WQ)
 				["isRaid"] = true,
 				["races"] = HORDE_ONLY,
@@ -225,6 +236,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2362, {	-- Ulmath, the Soulbinder
+				["isWeekly"] = true,
 				["questID"] = 56057,
 				["isRaid"] = true,
 				["coord"] = { 84.2, 35.9, 1355 },
@@ -257,6 +269,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2198, {	-- Warbringer Yenajz
+				["isWeekly"] = true,
 				["questID"] = 52166,	-- The Faceless Herald (WQ)
 				["isRaid"] = true,
 				["coord"] = { 83.2, 49.6, 942 },
@@ -283,6 +296,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			e(2363, {	-- Wekemara
+				["isWeekly"] = true,
 				["questID"] = 56056,
 				["isRaid"] = true,
 				["coord"] = { 42.8, 77.9, 1355 },

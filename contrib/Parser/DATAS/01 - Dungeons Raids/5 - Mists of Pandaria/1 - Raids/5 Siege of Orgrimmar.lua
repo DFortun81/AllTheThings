@@ -4,6 +4,7 @@
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(369, { 	-- Siege of Orgrimmar
+		["order"] = "05",
 		["isRaid"] = true,
 		["lvl"] = 90,
 		["mapID"] = 556,

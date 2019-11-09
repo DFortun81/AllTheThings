@@ -30,9 +30,12 @@ _.Mounts =
 		un(2, ach(9550, {	-- Boldly, You Sought the Power of Ragnaros
 			un(9, i(115484)),	-- Core Hound Chain
 		})),
+		i(142403, {			-- Brawler's Burly Basilisk
+			["u"] = 2,	-- BoP / BoA Item — unobtainable as of BFA prepatch
+		}),
 		i(98405, {			-- Brawler's Burly Mushan Beast
-			["u"] = 4,
 			["description"] = "If you completed rank 8 in Season 1 or 2 of the Brawler's Guild, you can purchase this mount from Quartermaster in Brawler's Guild.",
+			["u"] = 4,
 		}),
 		i(33976, {			-- Brewfest Ram
 			["u"] = 4,

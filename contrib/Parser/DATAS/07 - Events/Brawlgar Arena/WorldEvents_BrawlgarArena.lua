@@ -4,11 +4,136 @@
 _.WorldEvents =
 {
 	m(503, {	-- Brawlgar Arena
+		["races"] = HORDE_ONLY,
+		["lvl"] = 120,
 		["icon"] = "Interface\\Icons\\INV_MISC_HEAD_ORC2_BRN",
 		["g"] = {
 			n(-17, { 	-- Quests
-				q(53935, {	-- Solving the mystery
+				q(53914, {	-- Murder at the Brawl'gar Arena
+					["description"] = "This quest can be accepted after you successfully complete any (or your first) Brawl.",
+					["provider"] = { "n", 68364 },	-- Paul North
+					["coord"] = { 48.4, 29.2, 503 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(53915, {	-- Put Up Your Dukes
+					["sourceQuests"] = { 53914 },	-- Murder at the Brawl'gar Arena
+					["provider"] = { "n", 145581 },	-- Commander Arlu Ravenhide
+					["coord"] = { 43.4, 97.0, 503 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53917, {	-- Undercover Agent: Sharisanda
+					["sourceQuests"] = { 53915 },	-- Put Up Your Dukes
+					["provider"] = { "n", 145581 },	-- Commander Arlu Ravenhide
+					["coord"] = { 43.4, 97.0, 503 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53918, {	-- The Financial Participation Incentive
+					["sourceQuests"] = { 53917 },	-- Undercover Agent: Sharisanda
+					["provider"] = { "n", 145582 },	-- Sharisanda
+					["coord"] = { 48.8, 79.8, 503 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53920, {	-- A Favor for Your Ol' Pal Buxdoggle
+					["sourceQuests"] = { 53918 },	-- The Financial Participation Incentive
+					["provider"] = { "n", 68372 },	-- Pit Boss Buxdoggle
+					["coord"] = { 49.2, 68.0, 503 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53921, {	-- The Pit Boss's Debts
+					["sourceQuests"] = { 53920 },	-- A Favor for Your Ol' Pal Buxdoggle
+					["provider"] = { "n", 68372 },	-- Pit Boss Buxdoggle
+					["coord"] = { 49.2, 68.0, 503 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53922, {	-- Evidence Packet: Pit Boss Buxdoggle
+					["sourceQuests"] = { 53921 },	-- The Pit Boss's Debts
+					["provider"] = { "n", 145582 },	-- Sharisanda
+					["coord"] = { 48.8, 79.8, 503 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53923, {	-- Undercover Agent: Stone Guard Mollivox
+					["sourceQuests"] = { 53922 },	-- Evidence Packet: Pit Boss Buxdoggle
+					["provider"] = { "n", 145581 },	-- Commander Arlu Ravenhide
+					["coord"] = { 43.4, 97.0, 503 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53924, {	-- Soul Splinters
+					["sourceQuests"] = { 53923 },	-- Undercover Agent: Stone Guard Mollivox
+					["description"] = "You can save previously earned Brawler's Purses and open them while on this quest - Each Brawler's Purse gives 10 - 12 Soul Splinters, so you will need 9 - 10 Brawler's Purses to complete this quest.",
+					["provider"] = { "n", 145691 },	-- Shadowmaster Skrizzik
+					["coord"] = { 37.4, 33.0, 503 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53925, {	-- Super Soul Splinters
+					["sourceQuests"] = { 53924 },	-- Soul Splinters
+					["provider"] = { "n", 145691 },	-- Shadowmaster Skrizzik
+					["coord"] = { 37.4, 33.0, 503 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53926, {	-- Cause for Concern
+					["sourceQuests"] = { 53925 },	-- Super Soul Splinters
+					["races"] = HORDE_ONLY,
+				}),
+				q(53927, {	-- The Precious 13-Tooth Gogglegear
+					["sourceQuests"] = { 53926 },	-- Cause for Concern
+					["provider"] = { "n", 145583 },	-- Stone Guard Mollivox
+					["coord"] = { 50.0, 12.4, 503 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53928, {	-- The Mollivox Goggle Experiment
+					["sourceQuests"] = { 53927 },	-- The Precious 13-Tooth Gogglegear
+					["provider"] = { "n", 145583 },	-- Stone Guard Mollivox
+					["coord"] = { 50.0, 12.4, 503 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53929, {	-- Evidence Packet: Shadowmaster Skrizzik
+					["sourceQuests"] = { 53928 },	-- The Mollivox Goggle Experiment
+					["provider"] = { "n", 145583 },	-- Stone Guard Mollivox
+					["coord"] = { 50.0, 12.4, 503 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53930, {	-- Undercover Agent: Nugg Lumbo
+					["sourceQuests"] = { 53929 },	-- Evidence Packet: Shadowmaster Skrizzik
+					["provider"] = { "n", 145581 },	-- Commander Arlu Ravenhide
+					["coord"] = { 43.4, 97.0, 503 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53931, {	-- Flaunt It If You Got It
+					["sourceQuests"] = { 53930 },	-- Undercover Agent: Nugg Lumbo
+					["provider"] = { "n", 70716 },	-- Libbiara Blightrunner
+					["coord"] = { 31.2, 54.0, 503 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53952, {	-- Simply Dying of Boredom
+					["sourceQuests"] = { 53931 },	-- Flaunt It If You Got It
+					["provider"] = { "n", 70716 },	-- Libbiara Blightrunner
+					["coord"] = { 31.2, 54.0, 503 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53932, {	-- Evidence Packet: Libbiara Blightrunner
+					["sourceQuests"] = { 53952 },	-- Simply Dying of Boredom
+					["provider"] = { "n", 145584 },	-- Nugg Lumbo
+					["coord"] = { 29.8, 50.0, 503 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53933, {	-- The Brawl'gar Trial
+					["sourceQuests"] = { 53932 },	-- Evidence Packet: Libbiara Blightrunner
+					["provider"] = { "n", 145581 },	-- Commander Arlu Ravenhide
+					["coord"] = { 43.4, 97.0, 503 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53934, {	-- A Clue from Area 52
+					["sourceQuests"] = { 53933 },	-- The Brawl'gar Trial
+					["provider"] = { "n", 145581 },	-- Commander Arlu Ravenhide
+					["coord"] = { 43.4, 97.0, 503 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53935, {	-- Solving the Mystery
+					["sourceQuests"] = { 53934 },	-- A Clue from Area 52
+					["provider"] = { "n", 149808 },	-- Boss Bazzelflange
+					["races"] = HORDE_ONLY,
+					["maps"] = { 109 },	-- Netherstorm
+					["lvl"] = 120,
 					["g"] = {
 						i(166724),	-- Bruce (MOUNT!)
 					},
@@ -19,8 +144,12 @@ _.WorldEvents =
 					["races"] = HORDE_ONLY,
 					["description"] = "Brawler's Burly Mushan Beast is only available to those who had reached Rank 8 in Season 1 or Season 2.|nShirts are only available to those who have already earned them.|r",
 					["g"]	= {
-						i(142403),	-- Brawler's Burly Basilisk (MOUNT!)
-						i(98405),	-- Brawler's Burly Mushan Beast (MOUNT!) - Unobtainable unless you reached Rank 8 in either Season 1 or Season 2
+						i(142403, {	-- Brawler's Burly Basilisk (MOUNT!)
+							["u"] = 2,	-- BoP / BoA Item — unobtainable as of BFA prepatch
+						}),
+						i(98405, {	-- Brawler's Burly Mushan Beast (MOUNT!)
+							["u"] = 4,	-- Legacy Achievement — unobtainable unless you reached Rank 8 in either Season 1 or Season 2
+						}),
 						i(167812),  -- Brawlers Guild Tabard
 						i(122396),	-- Brawler's Razor Claws
 						i(98085),	-- Brucehide Jersey

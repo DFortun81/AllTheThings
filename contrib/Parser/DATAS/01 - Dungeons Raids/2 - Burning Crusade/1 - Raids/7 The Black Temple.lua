@@ -4,6 +4,7 @@
 
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(751, {	-- The Black Temple
+		["order"] = "07",
 		["isRaid"] = true,
 		["lvl"] = 68,
 		["maps"] = {

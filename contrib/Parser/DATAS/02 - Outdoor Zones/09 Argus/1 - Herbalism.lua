@@ -6,6 +6,7 @@ _.Zones =
 	m(905, {	-- Argus
 		["g"] = {
 			{	-- Herbalism
+				["order"] = "03",
 				["professionID"] = 182,	-- Herbalism
 				["maps"] = {
 					885,	-- Antoran Wastes

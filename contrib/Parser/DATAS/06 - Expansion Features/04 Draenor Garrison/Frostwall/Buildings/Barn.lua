@@ -22,6 +22,10 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(-17, {	-- Quests
+							q(36346, {	-- Bigger Trap, Better Rewards
+								["provider"] = { "n", 85048 },	-- Farmer Lok'lub
+								["races"] = HORDE_ONLY,
+							}),
 							q(36344, {	-- Feeding An Army
 								["provider"] = { "n", 85048 },	-- Farmer Lok'lub
 								["races"] = HORDE_ONLY,

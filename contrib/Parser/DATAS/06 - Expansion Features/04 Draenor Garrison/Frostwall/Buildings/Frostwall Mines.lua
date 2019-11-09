@@ -10,7 +10,7 @@ _.ExpansionFeatures =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						n(-4, {	-- Achievements
-							ach(9453, {		-- Draenic Stone Collector
+							ach(9453, {	-- Draenic Stone Collector
 								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 								["g"] = {
 									i(116249),	-- Frostwall Mines, Level 3

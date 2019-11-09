@@ -4,6 +4,7 @@
 
 _.Instances = { tier(6, {	-- Warlords of Draenor
 	inst(457, { 	-- Blackrock Foundry
+		["order"] = "02",
 		["isRaid"] = true,
 		["lvl"] = 100,
 		["mapID"] = 598,
