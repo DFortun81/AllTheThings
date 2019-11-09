@@ -57,8 +57,14 @@ _.WorldEvents =
 							["lvl"] = 10,
 						}),
 						q(57304, {	-- Capture a Mine (A)
-							["provider"] = { "n", 159811 },	-- Sergeant Durgen Stormpike
-							["coord"] = { 43.6, 17.2, 1537 },
+							["providers"] = {
+								{ "n", 12096 },		-- Stormpike Quartermaster
+								{ "n", 159811 },	-- Sergeant Durgen Stormpike
+							},
+							["coords"] = {
+								{ 43.3, 17.0, 1537 },
+								{ 43.6, 17.2, 1537 },
+							},
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 						}),
@@ -187,7 +193,7 @@ _.WorldEvents =
 							},
 						}),
 						q(57303, {	-- The Quartermaster
-						--	didn't get provider/location for this
+							--["provider"] = { "n", ? },	-- Mountaineer Boombellow
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 						}),
@@ -204,12 +210,15 @@ _.WorldEvents =
 							["lvl"] = 10,
 						}),
 						q(57730, {	-- Zinfizzlex's Portable Shredder Unit (A)
-						--	don't have provider/coords for this one, it got shared to me
+							['description'] = "Questgiver is west of Korrak (over the bridge) and you have to escort him to your base. After bringing him to safety he offers the quest.",
+							--["provider"] = { "n", ? },	-- Master Engineer Zinfizzlex
 							["repeatable"] = true,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 						}),
 						q(57731, {	-- Zinfizzlex's Portable Shredder Unit (H)
+							['description'] = "Questgiver is west of Korrak (over the bridge) and you have to escort him to your base. After bringing him to safety he offers the quest.",
+							--["provider"] = { "n", ? },	-- Master Engineer Zinfizzlex
 							["repeatable"] = true,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
