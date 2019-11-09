@@ -13,7 +13,10 @@ _.WorldEvents =
 				["u"] = 31,	-- WoW Anniversary
 			}),
 			n(-9987, {	-- Alterac Valley
-				["maps"] = { 1537 },	-- Alterac Valley
+				["maps"] = {
+					1537,	-- Alterac Valley
+					25,		-- Hillsbrad Foothills
+				},
 				["g"] = bubbleDown({ ["u"] = 31 }, {	-- WoW Anniversary
 					ach(13928, {	-- Alterac Valley of Olde (A)
 						["races"] = ALLIANCE_ONLY,
@@ -33,64 +36,246 @@ _.WorldEvents =
 							}),
 						},
 					}),
-					n(-322, {	-- Cloaks
-						i(172100),	-- Frostwolf Advisor's Cloak
-						i(172098),	-- Frostwolf Legionnaire's Cloak
-						i(172101),	-- Stormpike Sage's Cloak
-						i(172099),	-- Stormpike Soldier's Cloak
+					n(-17, {	-- Quests
+						q(57302, {	-- Alterac Valley Graveyards
+							["provider"] = { "n", 159811 },	-- Sergeant Durgen Stormpike
+							["coord"] = { 43.6, 17.2, 1537 },
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(57305, {	-- Armor Scraps
+							["provider"] = { "n", 13257 },	-- Murgot Deepforge
+							["coord"] = { 43.6, 15.9, 1537 },
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(57304, {	-- Capture a Mine (A)
+							["provider"] = { "n", 159811 },	-- Sergeant Durgen Stormpike
+							["coord"] = { 43.6, 17.2, 1537 },
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(57314, {	-- Capture a Mine (H)
+							["providers"] = {
+								{ "n", 12097 },		-- Frostwolf Quartermaster
+								{ "n", 158579 },	-- Corporal Teeka Bloodsnarl
+							},
+							["coords"] = {
+								{ 46.8, 83.5, 1537 },
+								{ 50.8, 82.3, 1537 },
+							},
+							["races"] = HORDE_ONLY,
+						}),
+						q(57311, {	-- Coldtooth Supplies (A)
+							["repeatable"] = true,
+							["provider"] = { "n", 12096 },	-- Stormpike Quartermaster
+							["coord"] = { 43.3, 17.0, 1537 },
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(57321, {	-- Coldtooth Supplies (H)
+							["repeatable"] = true,
+							["provider"] = { "n", 12097 },	-- Frostwolf Quartermaster
+							["coord"] = { 46.8, 83.5, 1537 },
+							["races"] = HORDE_ONLY,
+						}),
+						q(57722, {	-- Empty Stables (A)
+							["repeatable"] = true,
+							["provider"] = { "n", 158863 },	-- Stormpike Stable Master
+							["coord"] = { 42.6, 16.9, 1537 },
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(57723, {	-- Empty Stables (H)
+							["repeatable"] = true,
+							["provider"] = { "n", 158864 },	-- Frostwolf Stable Master
+							["coord"] = { 57.1, 82.5, 1537 },
+							["races"] = HORDE_ONLY,
+						}),
+						q(57317, {	-- Enemy Booty
+							["provider"] = { "n", 13176 },	-- Smith Regzar
+							["coord"] = { 49.9, 82.6, 1537 },
+							["races"] = HORDE_ONLY,
+						}),
+						q(57310, {	-- Irondeep Supplies (A)
+							["repeatable"] = true,
+							["provider"] = { "n", 12096 },	-- Stormpike Quartermaster
+							["coord"] = { 43.3, 17.0, 1537 },
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(57322, {	-- Irondeep Supplies (H)
+							["repeatable"] = true,
+							["provider"] = { "n", 12097 },	-- Frostwolf Quartermaster
+							["coord"] = { 46.8, 83.5, 1537 },
+							["races"] = HORDE_ONLY,
+						}),
+						q(57638, {	-- Korrak the Bloodrager
+							["provider"] = { "n", 158515 },	-- Lieutenant Haggerdin
+							["coord"] = { 43.6, 16.0, 1537 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
+							["g"] = {
+								i(172121),	-- Ice Barbed Spear
+								i(172123),	-- Wand of Biting Cold
+								i(172139),	-- Cold Forged Hammer
+								i(172122),	-- Bloodseeker
+								i(18150),	-- Rune of Recall
+							},
+						}),
+						q(57306, {	-- More Armor Scraps
+							["repeatable"] = true,
+							["provider"] = { "n", 13257 },	-- Murgot Deepforge
+							["coord"] = { 43.6, 15.9, 1537 },
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(57318, {	-- More Booty!
+							["repeatable"] = true,
+							["provider"] = { "n", 13176 },	-- Smith Regzar
+							["coord"] = { 49.9, 82.6, 1537 },
+							["races"] = HORDE_ONLY,
+						}),
+						q(57313, {	-- Speak with our Quartermaster
+							["provider"] = { "n", 13798 },	-- Jotek
+							["coord"] = { 50.6, 82.0, 1537 },
+							["races"] = HORDE_ONLY,
+						}),
+						q(57312, {	-- The Graveyards of Alterac
+							["provider"] = { "n", 158579 },	-- Corporal Teeka Bloodsnarl
+							["coord"] = { 50.8, 82.3, 1537 },
+							["races"] = HORDE_ONLY,
+						}),
+						q(57639, {	-- The Legend of Korrak
+							["provider"] = { "n", 158501 },	-- Warmaster Laggrond
+							["coord"] = { 50.1, 82.5, 1537 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
+							["g"] = {
+								i(172121),	-- Ice Barbed Spear
+								i(172123),	-- Wand of Biting Cold
+								i(172139),	-- Cold Forged Hammer
+								i(172122),	-- Bloodseeker
+								i(18150),	-- Rune of Recall
+							},
+						}),
+						q(57303, {	-- The Quartermaster
+						--	didn't get provider/location for this
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(57307, {	-- Towers and Bunkers (A)
+							["provider"] = { "n", 159811 },	-- Sergeant Durgen Stormpike
+							["coord"] = { 43.6, 17.2, 1537 },
+							["races"] = ALLIANCE_ONLY,
+						}),
+						q(57315, {	-- Towers and Bunkers (H)
+							["provider"] = { "n", 158579 },	-- Corporal Teeka Bloodsnarl
+							["coord"] = { 50.8, 82.3, 1537 },
+							["races"] = HORDE_ONLY,
+						}),
 					}),
-					n(-43,  {	-- Cloth
-						i(172120),	-- Frost Runed Headdress
-						i(172105),	-- Frostwolf Cloth Belt
-						i(172109),	-- Stormpike Cloth Girdle
-					}),
-					f(52,   {	-- Finger
-						i(172124),	-- Deep Rooted Ring
-						i(172138),	-- Don Julio's Band
-						i(172140),	-- Don Rodrigo's Band
-					}),
-					n(-44,  {	-- Leather
-						i(172104),	-- Frostwolf Leather Belt
-						i(172108),	-- Stormpike Leather Girdle
-						i(172128),	-- Yeti Hide Bracers
-					}),
-					n(-45,  {	-- Mail
-						i(172103),	-- Frostwolf Mail Belt
-						i(172107),	-- Stormpike Mail Girdle
-						i(172126),	-- Winteraxe Epaulets
-					}),
-					f(51,   {	-- Neck
-						i(172111),	-- Frostwolf Advisor's Pendant
-						i(172110),	-- Frostwolf Legionnaire's Pendant
-						i(172113),	-- Stormpike Sage's Pendant
-						i(172112),	-- Stormpike Soldier's Pendant
-					}),
-					n(-46,  {	-- Plate
-						i(172102),	-- Frostwolf Plate Belt
-						i(172127),	-- Frozen Steel Vambraces
-						i(172106),	-- Stormpike Plate Girdle
-					}),
-					n(-319, {	-- Weapons
-						i(172122),	-- Bloodseeker
-						i(172125),	-- Cold Forged Blade
-						i(172139),	-- Cold Forged Hammer
-						i(172117),	-- Crackling Staff
-						i(172115),	-- Electrified Dagger
-						i(172118),	-- Frostbite
-						i(172114),	-- Glacial Blade
-						i(172121),	-- Ice Barbed Spear
-						i(172133),	-- Lei of the Lifegiver
-						i(172119),	-- Stormstrike Hammer
-						i(172135),	-- The Immovable Object
-						i(172137),	-- The Lobotomizer
-						i(172136),	-- The Unstoppable Force
-						i(172134),	-- Therezane's Touch
-						i(172129),	-- Tome of Arcane Domination
-						i(172130),	-- Tome of Shadow Force
-						i(172132),	-- Tome of the Fiery Arcana
-						i(172131),	-- Tome of the Ice Lord
-						i(172123),	-- Wand of Biting Cold
-						i(172116),	-- Whiteout Staff
+					n(-2,  {	-- Vendors
+						n(158386, {	-- Time-Displaced Jorek Ironside <Frostwolf Supply Officer>
+							["coord"] = { 58.1, 33.6, 25 },
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								n(-322, {	-- Cloaks
+									i(172100),	-- Frostwolf Advisor's Cloak
+									i(172098),	-- Frostwolf Legionnaire's Cloak
+								}),
+								n(-43,  {	-- Cloth
+									i(172120),	-- Frost Runed Headdress
+									i(172105),	-- Frostwolf Cloth Belt
+								}),
+								f(52,   {	-- Finger
+									i(172124),	-- Deep Rooted Ring
+									i(172138),	-- Don Julio's Band
+									i(172140),	-- Don Rodrigo's Band
+								}),
+								n(-44,  {	-- Leather
+									i(172104),	-- Frostwolf Leather Belt
+									i(172128),	-- Yeti Hide Bracers
+								}),
+								n(-45,  {	-- Mail
+									i(172103),	-- Frostwolf Mail Belt
+									i(172126),	-- Winteraxe Epaulets
+								}),
+								f(51,   {	-- Neck
+									i(172111),	-- Frostwolf Advisor's Pendant
+									i(172110),	-- Frostwolf Legionnaire's Pendant
+								}),
+								n(-46,  {	-- Plate
+									i(172102),	-- Frostwolf Plate Belt
+									i(172127),	-- Frozen Steel Vambraces
+								}),
+								n(-319, {	-- Weapons
+									i(172122),	-- Bloodseeker
+									i(172125),	-- Cold Forged Blade
+									i(172139),	-- Cold Forged Hammer
+									i(172118),	-- Frostbite
+									i(172114),	-- Glacial Blade
+									i(172121),	-- Ice Barbed Spear
+									i(172133),	-- Lei of the Lifegiver
+									i(172135),	-- The Immovable Object
+									i(172137),	-- The Lobotomizer
+									i(172134),	-- Therazane's Touch
+									i(172136),	-- The Unstoppable Force
+									i(172129),	-- Tome of Arcane Domination
+									i(172130),	-- Tome of Shadow Force
+									i(172132),	-- Tome of the Fiery Arcana
+									i(172131),	-- Tome of the Ice Lord
+									i(172123),	-- Wand of Biting Cold
+									i(172116),	-- Whiteout Staff
+								}),
+							},
+						}),
+						n(158385, {	-- Time-Displaced Thanthaldis Snowgleam <Stormpike Supply Officer>
+							["coord"] = { 44.7, 46.4, 25 },
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								n(-322, {	-- Cloaks
+									i(172101),	-- Stormpike Sage's Cloak
+									i(172099),	-- Stormpike Soldier's Cloak
+								}),
+								n(-43,  {	-- Cloth
+									i(172120),	-- Frost Runed Headdress
+									i(172109),	-- Stormpike Cloth Girdle
+								}),
+								f(52,   {	-- Finger
+									i(172124),	-- Deep Rooted Ring
+									i(172138),	-- Don Julio's Band
+									i(172140),	-- Don Rodrigo's Band
+								}),
+								n(-44,  {	-- Leather
+									i(172108),	-- Stormpike Leather Girdle
+									i(172128),	-- Yeti Hide Bracers
+								}),
+								n(-45,  {	-- Mail
+									i(172107),	-- Stormpike Mail Girdle
+									i(172126),	-- Winteraxe Epaulets
+								}),
+								n(-46,  {	-- Plate
+									i(172127),	-- Frozen Steel Vambraces
+									i(172106),	-- Stormpike Plate Girdle
+								}),
+								f(51,   {	-- Neck
+									i(172113),	-- Stormpike Sage's Pendant
+									i(172112),	-- Stormpike Soldier's Pendant
+								}),
+								n(-319, {	-- Weapons
+									i(172122),	-- Bloodseeker
+									i(172125),	-- Cold Forged Blade
+									i(172139),	-- Cold Forged Hammer
+									i(172117),	-- Crackling Staff
+									i(172115),	-- Electrified Dagger
+									i(172121),	-- Ice Barbed Spear
+									i(172133),	-- Lei of the Lifegiver
+									i(172119),	-- Stormstrike Hammer
+									i(172135),	-- The Immovable Object
+									i(172137),	-- The Lobotomizer
+									i(172134),	-- Therazane's Touch
+									i(172136),	-- The Unstoppable Force
+									i(172129),	-- Tome of Arcane Domination
+									i(172130),	-- Tome of Shadow Force
+									i(172132),	-- Tome of the Fiery Arcana
+									i(172131),	-- Tome of the Ice Lord
+									i(172123),	-- Wand of Biting Cold
+								}),
+							},
+						}),
 					}),
 				}),
 			}),

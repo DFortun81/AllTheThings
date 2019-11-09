@@ -761,6 +761,7 @@ _.Zones =
 				i(158152),	-- Golden Empire Signet
 				n(-43, {	-- Cloth
 					i(157907),	-- Shadra Silk Mantle
+					i(157930),	-- Shadra Silk Robes
 					i(157909),	-- Shadra Silk Cuffs
 					i(157904),	-- Shadra Silk Gloves
 					i(157908),	-- Shadra Silk Sash
