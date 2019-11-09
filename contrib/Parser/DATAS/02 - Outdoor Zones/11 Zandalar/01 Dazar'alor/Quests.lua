@@ -173,6 +173,7 @@ _.Zones =
 				}),
 				q(58582, {	-- Return of the Black Prince
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 161458 },	-- Valeera Sanguinar
 					["description"] = "Automatically granted.",
 				}),
 				q(50881, {	-- Royal Report
@@ -345,6 +346,7 @@ _.Zones =
 				}),
 				q(58583, {	-- Where the Heart Is
 					["coord"] = { 57.8, 64.5, 1165 },
+					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 161458 },	-- Valeera Sanguinar
 					["sourceQuest"] = 58582,	-- Return of the Black Prince
 				}),
