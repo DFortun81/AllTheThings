@@ -49,6 +49,13 @@ _.WorldEvents =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 						}),
+						q(57309, {	-- Begin the Attack
+							["repeatable"] = true,	-- presumably
+							["provider"] = { "n", 13446 },	-- Field Marshal Teravaine
+							["coord"] = { 52.3, 44.0, 1537 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
+						}),
 						q(57304, {	-- Capture a Mine (A)
 							["provider"] = { "n", 159811 },	-- Sergeant Durgen Stormpike
 							["coord"] = { 43.6, 17.2, 1537 },
@@ -128,6 +135,18 @@ _.WorldEvents =
 								i(18150),	-- Rune of Recall
 							},
 						}),
+						q(57320, {	-- Launch the Attack!
+							["repeatable"] = true,	-- presumably
+							["provider"] = { "n", 13449 },	-- Warmaster Garrick
+							["coord"] = { 45.0, 48.0, 1537 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57641, {	-- Master Ryson's All Seeing Eye
+						--	unsure if this has faction requirements or anything along those lines
+							["repeatable"] = true,	-- presumably
+							["lvl"] = 10,
+						}),
 						q(57306, {	-- More Armor Scraps
 							["repeatable"] = true,
 							["provider"] = { "n", 13257 },	-- Murgot Deepforge
@@ -181,6 +200,17 @@ _.WorldEvents =
 						q(57315, {	-- Towers and Bunkers (H)
 							["provider"] = { "n", 158579 },	-- Corporal Teeka Bloodsnarl
 							["coord"] = { 50.8, 82.3, 1537 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57730, {	-- Zinfizzlex's Portable Shredder Unit (A)
+						--	don't have provider/coords for this one, it got shared to me
+							["repeatable"] = true,
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57731, {	-- Zinfizzlex's Portable Shredder Unit (H)
+							["repeatable"] = true,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 						}),
@@ -1179,7 +1209,7 @@ _.WorldEvents =
 				}),
 				q(47253, {	-- The Originals (A)
 					["provider"] = { "n", 110034 },	-- Historian Llore
-					["isDaily"] = true,
+					["isWeekly"] = true,
 					["coord"] = { 51.4, 39.0, 75 },
 					["sourceQuests"] = {
 						47462,	-- Azuregos
@@ -1193,7 +1223,7 @@ _.WorldEvents =
 				}),
 				q(47254, {	-- The Originals (H)
 					["provider"] = { "n", 110035 },	-- Historian Jupa
-					["isDaily"] = true,
+					["isWeekly"] = true,
 					["coord"] = { 51.4, 39.0, 75 },
 					["sourceQuests"] = {
 						47462,	-- Azuregos
