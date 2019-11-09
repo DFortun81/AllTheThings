@@ -3602,11 +3602,17 @@ app.L = {
 		[9999972] = "Treasure Chest",	-- Use these until objectID is found
 		[10000000] = "Amathet Reliquary",	-- Temporary
 		[10000001] = "Amathet Reliquary",	-- Temporary
-		[11000000] = "Amathet Cache",	-- Temporary
-		[11000001] = "Amathet Cache",	-- Temporary
-		[11000002] = "Amathet Cache",	-- Temporary
-		[11000003] = "Amathet Cache",	-- Temporary
-		[11000004] = "Amathet Cache",	-- Temporary
+		[11000000] = "Amathet Cache",		-- Temporary
+		[11000001] = "Amathet Cache",		-- Temporary
+		[11000002] = "Amathet Cache",		-- Temporary
+		[11000003] = "Amathet Cache",		-- Temporary
+		[11000004] = "Amathet Cache",		-- Temporary
+		[12000000] = "Black Empire Cache",	-- Temporary
+		[12000001] = "Black Empire Cache",	-- Temporary
+		[12000002] = "Black Empire Cache",	-- Temporary
+		[12000003] = "Black Empire Cache",	-- Temporary
+		[12000004] = "Black Empire Cache",	-- Temporary
+		[12000005] = "Black Empire Cache",	-- Temporary
 	};
 
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
