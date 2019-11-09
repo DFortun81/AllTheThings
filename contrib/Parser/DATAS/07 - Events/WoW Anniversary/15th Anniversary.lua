@@ -41,16 +41,19 @@ _.WorldEvents =
 							["provider"] = { "n", 159811 },	-- Sergeant Durgen Stormpike
 							["coord"] = { 43.6, 17.2, 1537 },
 							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
 						}),
 						q(57305, {	-- Armor Scraps
 							["provider"] = { "n", 13257 },	-- Murgot Deepforge
 							["coord"] = { 43.6, 15.9, 1537 },
 							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
 						}),
 						q(57304, {	-- Capture a Mine (A)
 							["provider"] = { "n", 159811 },	-- Sergeant Durgen Stormpike
 							["coord"] = { 43.6, 17.2, 1537 },
 							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
 						}),
 						q(57314, {	-- Capture a Mine (H)
 							["providers"] = {
@@ -62,47 +65,55 @@ _.WorldEvents =
 								{ 50.8, 82.3, 1537 },
 							},
 							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
 						}),
 						q(57311, {	-- Coldtooth Supplies (A)
 							["repeatable"] = true,
 							["provider"] = { "n", 12096 },	-- Stormpike Quartermaster
 							["coord"] = { 43.3, 17.0, 1537 },
 							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
 						}),
 						q(57321, {	-- Coldtooth Supplies (H)
 							["repeatable"] = true,
 							["provider"] = { "n", 12097 },	-- Frostwolf Quartermaster
 							["coord"] = { 46.8, 83.5, 1537 },
 							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
 						}),
 						q(57722, {	-- Empty Stables (A)
 							["repeatable"] = true,
 							["provider"] = { "n", 158863 },	-- Stormpike Stable Master
 							["coord"] = { 42.6, 16.9, 1537 },
 							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
 						}),
 						q(57723, {	-- Empty Stables (H)
 							["repeatable"] = true,
 							["provider"] = { "n", 158864 },	-- Frostwolf Stable Master
 							["coord"] = { 57.1, 82.5, 1537 },
 							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
 						}),
 						q(57317, {	-- Enemy Booty
 							["provider"] = { "n", 13176 },	-- Smith Regzar
 							["coord"] = { 49.9, 82.6, 1537 },
 							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
 						}),
 						q(57310, {	-- Irondeep Supplies (A)
 							["repeatable"] = true,
 							["provider"] = { "n", 12096 },	-- Stormpike Quartermaster
 							["coord"] = { 43.3, 17.0, 1537 },
 							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
 						}),
 						q(57322, {	-- Irondeep Supplies (H)
 							["repeatable"] = true,
 							["provider"] = { "n", 12097 },	-- Frostwolf Quartermaster
 							["coord"] = { 46.8, 83.5, 1537 },
 							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
 						}),
 						q(57638, {	-- Korrak the Bloodrager
 							["provider"] = { "n", 158515 },	-- Lieutenant Haggerdin
@@ -122,22 +133,26 @@ _.WorldEvents =
 							["provider"] = { "n", 13257 },	-- Murgot Deepforge
 							["coord"] = { 43.6, 15.9, 1537 },
 							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
 						}),
 						q(57318, {	-- More Booty!
 							["repeatable"] = true,
 							["provider"] = { "n", 13176 },	-- Smith Regzar
 							["coord"] = { 49.9, 82.6, 1537 },
 							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
 						}),
 						q(57313, {	-- Speak with our Quartermaster
 							["provider"] = { "n", 13798 },	-- Jotek
 							["coord"] = { 50.6, 82.0, 1537 },
 							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
 						}),
 						q(57312, {	-- The Graveyards of Alterac
 							["provider"] = { "n", 158579 },	-- Corporal Teeka Bloodsnarl
 							["coord"] = { 50.8, 82.3, 1537 },
 							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
 						}),
 						q(57639, {	-- The Legend of Korrak
 							["provider"] = { "n", 158501 },	-- Warmaster Laggrond
@@ -155,16 +170,19 @@ _.WorldEvents =
 						q(57303, {	-- The Quartermaster
 						--	didn't get provider/location for this
 							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
 						}),
 						q(57307, {	-- Towers and Bunkers (A)
 							["provider"] = { "n", 159811 },	-- Sergeant Durgen Stormpike
 							["coord"] = { 43.6, 17.2, 1537 },
 							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
 						}),
 						q(57315, {	-- Towers and Bunkers (H)
 							["provider"] = { "n", 158579 },	-- Corporal Teeka Bloodsnarl
 							["coord"] = { 50.8, 82.3, 1537 },
 							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
 						}),
 					}),
 					n(-2,  {	-- Vendors
