@@ -20,6 +20,9 @@ _.ExpansionFeatures =
 						n(157170, {	-- Acolyte Taspu
 							["questID"] = 57281,
 							["coord"] = { 64.5, 25.6, 1527 },
+							["g"] = {
+								i(173402),	-- Black Empire Mail Gloves
+							},
 						}),
 						n(151883, {	-- Anaua
 							["questID"] = 55468,
@@ -31,9 +34,29 @@ _.ExpansionFeatures =
 								{ 71.2, 50.4, 1527 },
 							},
 						}),
+						n(152757, {	-- Atekhramun
+							["questID"] = 55710,
+							["coord"] = { 64.0, 51.0, 1527 },
+							["description"] = "Crush all the little scorpions by walking over them to spawn this mob.",
+						}),
+						n(157167, {	-- Champion Sen-mat
+							["questID"] = 57280,
+							["coord"] = { 75.4, 52.2, 1527 },
+						}),
 						n(157120, {	-- Fangtaker Orsa
 							["questID"] = 57258,
 							["coord"] = { 75.0, 68.2, 1527 },
+						}),
+						n(151995, {	-- Hik-ten the Taskmaster
+							["questID"] = 55502,
+							["coords"] = {
+								{ 77.2, 46.0, 1527 },
+								{ 78.0, 46.0, 1527 },
+								{ 79.4, 45.5, 1527 },
+								{ 80.0, 45.9, 1527 },
+								{ 80.3, 46.5, 1527 },
+								{ 80.7, 47.7, 1527 },
+							},
 						}),
 						n(157157, {	-- Muminah the Incandescent
 							["questID"] = 57277,
@@ -57,6 +80,10 @@ _.ExpansionFeatures =
 						n(151948, {	-- Senbu the Pridefather
 							["questID"] = 55496,
 							["coord"] = { 73.5, 64.6, 1527 },
+						}),
+						n(151878, {	-- Sun King Nahkotep
+							["questID"] = 58613,
+							["coord"] = { 79.0, 63.9, 1527 },
 						}),
 						n(151897, {	-- Sun Priestess Nubitt
 							["questID"] = 55479,
@@ -272,14 +299,6 @@ _.ExpansionFeatures =
 				This section is temporary! Determine what assault these rares exist in and add them to the appropriate header above.
 				Coords are also rough approximations from a previous build and needs to be verified
 				]]--
-				n(152757, {	-- Atekhramun
-					--["questID"] = ,
-					["coord"] = { 64.0, 51.0, 1527 },
-				}),
-				n(157167, {	-- Champion Sen-mat
-					--["questID"] = ,
-					["coord"] = { 75.0, 52.0, 1527 },
-				}),
 				n(162147, {	-- Corpse Eater
 					--["questID"] = ,
 					["g"] = {
@@ -302,24 +321,16 @@ _.ExpansionFeatures =
 					--["questID"] = ,
 					["coord"] = { 35.0, 17.0, 1527 },
 				}),
-				n(151995, {	-- Hik-ten the Taskmaster
-					--["questID"] = ,
-					["coord"] = { 79.0, 45.0, 1527 },
-				}),
 				n(160623, {	-- Hungering Miasma
 					--["questID"] = ,
 					["coord"] = { 60.0, 39.0, 1527 },
 				}),
-				n(157134, {	-- Ishak of the Four Winds
-					--["questID"] = ,
-					["coord"] = { 73.0, 83.0, 1527 },
+				n(157134, {	-- Ishak of the Four Winds -- TODO: Confirm if this is only available during the Amathet invasion
+					["questID"] = 57259,
+					["coord"] = { 73.9, 83.5, 1527 },
 					["g"] = {
 						i(174641),	-- PH Storm Drake -- TODO:: update name
 					},
-				}),
-				n(151878, {	-- Sun King Nahkotep
-					--["questID"] = ,
-					["coord"] = { 78.0, 63.0, 1527 },
 				}),
 				n(158595, {	-- Thoughtstealer Vos
 					--["questID"] = ,
