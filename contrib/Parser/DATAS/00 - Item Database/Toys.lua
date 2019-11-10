@@ -655,4 +655,6 @@ t(172179);	-- Eternal Traveler's Hearthstone
 -----------------
 -- PATCH 8.3.0 --
 -----------------
+t(173727);	-- Nomi's Vintage
+t(173951);	-- N'lyeth, Sliver of N'Zoth
 t(174830);	-- Shadowy Disguise
