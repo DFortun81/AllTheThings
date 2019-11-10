@@ -15,10 +15,75 @@ _.ExpansionFeatures =
 					TODO:: review this section later. This reduces duplication and shows content
 						   in the right areas, but isn't exactly nice to look at
 				]]--
+				ach(14116, {	-- All Bridges Burned
+					crit(1),	-- Faceless Mask of the Burned Bridge
+					crit(2),	-- Stormwind - Burned Bridge
+					crit(3),	-- Orgrimmar - Burned Bridge
+				}),
+				ach(14121, {	-- Daring Defender
+					crit(1),	-- Faceless Mask of the Daredevil
+					crit(2),	-- Stormwind - Daredevil
+					crit(3),	-- Orgrimmar - Daredevil
+				}),
+				ach(14073),		-- Faceless Mask of the Pained
+				ach(14074),		-- Faceless Mask of the Dark Imagination
+				ach(14075),		-- Faceless Mask of the Burned Bridge
+				ach(14076),		-- Faceless Mask of the Daredevil
+				ach(14077),		-- Faceless Mask of the Long Night
 				ach(14063, {	-- Horrific Vision of Orgrimmar
 					["maps"] = { 1469 },
 				}),
 				ach(14062, {	-- Horrific Vision of Stormwind
+					["maps"] = { 1470 },
+				}),
+				ach(14113, {	-- Imagine a Dark, Dark World
+					crit(1),	-- Faceless Mask of the Dark Imagination
+					crit(2),	-- Stormwind - Dark Imagination
+					crit(3),	-- Orgrimmar - Dark Imagination
+				}),
+				ach(14122, {	-- Long Trek Through Darkness
+					crit(1),	-- Faceless Mask of the Long Night
+					crit(2),	-- Stormwind - Long Night
+					crit(3),	-- Orgrimmar - Long Night
+				}),
+				ach(14088, {	-- Orgrimmar - Pained
+					["maps"] = { 1469 },
+				}),
+				ach(14090, {	-- Orgrimmar - Dark Imagination
+					["maps"] = { 1469 },
+				}),
+				ach(14092, {	-- Orgrimmar - Burned Bridge
+					["maps"] = { 1469 },
+				}),
+				ach(14099, {	-- Orgrimmar - Daredevil
+					["maps"] = { 1469 },
+				}),
+				ach(14100, {	-- Orgrimmar - Long Night
+					["maps"] = { 1469 },
+				}),
+				ach(14106, {	-- Pained Expression
+					crit(1),	-- Faceless Mask of the Pained
+					crit(2),	-- Stormwind - Pained
+					crit(3),	-- Orgrimmar - Pained
+				}),
+				ach(14143, {	-- Reeking of Visions
+					i(174463),	-- Reek (pet)
+					crit(1),	-- The Even more Horrific Vision of Orgrimmar
+					crit(2),	-- The Even More Horrific Vision of Stormwind
+				}),
+				ach(14083, {	-- Stormwind - Pained
+					["maps"] = { 1470 },
+				}),
+				ach(14084, {	-- Stormwind - Dark Imagination
+					["maps"] = { 1470 },
+				}),
+				ach(14085, {	-- Stormwind - Burned Bridge
+					["maps"] = { 1470 },
+				}),
+				ach(14086, {	-- Stormwind - Daredevil
+					["maps"] = { 1470 },
+				}),
+				ach(14087, {	-- Stormwind - Long Night
 					["maps"] = { 1470 },
 				}),
 				ach(13996, {	-- The Dark Horde
@@ -42,9 +107,11 @@ _.ExpansionFeatures =
 					["maps"] = { 1470 },
 				}),
 				ach(13994, {	-- Through the Depths of Visions
+					i(174654),	-- Black Serpent of N'Zoth
 					crit(1),	-- Twilight over the White City
 					crit(2),	-- The Dark Horde
 					crit(3),	-- Unwavering Resolve
+					crit(4),	-- We Have the Technology
 				}),
 				ach(13995, {	-- Twilight over the White City
 					["maps"] = { 1470 },
@@ -107,7 +174,7 @@ _.ExpansionFeatures =
 				Pained - this mask is hidden in the shadows
 				Long Night - only those truly disruptive will find this mask
 				Dark Imagination - Void has claimed this mask
-				
+
 				You can equip multiple masks at the same time, stacking their buffs/debuffs. Possible hard-mode related drops?
 				]]--
 			}),

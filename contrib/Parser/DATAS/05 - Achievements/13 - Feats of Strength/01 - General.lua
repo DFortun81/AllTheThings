@@ -116,6 +116,10 @@ _.Achievements =
 						un(3,title(256)),	-- of the Black Harvest
 					})),
 					ach(4496),	-- It's Over Nine Thousand!
+					ach(14140, {	-- Mad World
+						crit(1),	-- Stormwind
+						crit(2),	-- Orgrimmar
+					}),
 					ach(10334, {	-- Predator
 						title(59),	-- Predator
 					}),

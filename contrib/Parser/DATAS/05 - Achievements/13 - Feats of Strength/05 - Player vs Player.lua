@@ -18,7 +18,7 @@ _.Achievements =
 						ach(13199, {	-- Combatant: Battle for Azeroth Season 1
 							["u"] = 4,
 							["g"] = {
-								title(110),	-- Combatant <Name>
+								title(78),	-- Combatant <Name>
 							},
 						}),
 						ach(12962, {	-- Duelist: Battle for Azeroth Season 1
@@ -86,7 +86,7 @@ _.Achievements =
 						ach(13204, {	-- Combatant: Battle for Azeroth Season 2
 							["u"] = 4,
 							["g"] = {
-								title(110),	-- Combatant <Name>
+								title(78),	-- Combatant <Name>
 							},
 						}),
 						ach(13209, {	-- Duelist: Battle for Azeroth Season 2
@@ -148,70 +148,126 @@ _.Achievements =
 					}),
 					n(-691, {	-- Notorious Gladiator: Battle for Azeroth Season 3
 						ach(13634, {	-- Challenger: Battle for Azeroth Season 3
-						--	["u"] = 4, S3
+							["u"] = 4,
 							["g"] = {
 								title(32),	-- Challenger <Name>
 							},
 						}),
 						ach(13639, {	-- Combatant: Battle for Azeroth Season 3
-						--	["u"] = 4, S3
+							["u"] = 4,
 							["g"] = {
-								title(110),	-- Combatant <Name>
+								title(78),	-- Combatant <Name>
 							},
 						}),
 						ach(13642, {	-- Duelist: Battle for Azeroth Season 3
-						--	["u"] = 4, S3
+							["u"] = 4,
 							["g"] = {
 								title(30),	-- Duelist <Name>
 								--[[ Note!! Currently we can not list this due to having no item.
 								Illusion: Dreadflame // Dreadflame Illusion --]]
 								i(167382, {	-- Notorious Gladiator's Cloak (A)
-								--	["u"] = 2, S3
+									["u"] = 2,
 								}),
 								i(167381, {	-- Notorious Gladiator's Cloak (H)
-								--	["u"] = 2, S3
+									["u"] = 2,
 								}),
 							},
 						}),
 						ach(13676, {	-- Elite: Battle for Azeroth Season 3
-						--	["u"] = 4, S3
+							["u"] = 4,
 							["g"] = {
 								i(167363, {	-- Notorious Gladiator's Tabard (A)
-								--	["u"] = 2, S3
+									["u"] = 2,
 								}),
 								i(167362, {	-- Notorious Gladiator's Tabard (H)
-								--	["u"] = 2, S3
+									["u"] = 2,
 								}),
 							},
 						}),
 						ach(13647, {	-- Gladiator: Battle for Azeroth Season 3
-						--	["u"] = 4, S3
+							["u"] = 4,
 							["g"] = {
 								title(29),	-- Gladiator <Name>
 								i(156881, {	-- Notorious Gladiator's Proto-Drake
-								--	["u"] = 2, S3
+									["u"] = 2,
 								}),
 							},
 						}),
 						ach(13643, {	-- Hero of the Alliance: Notorious
 							["races"] = ALLIANCE_ONLY,
-						--	["u"] = 4, S3
+							["u"] = 4,
 						}),
 						ach(13644, {	-- Hero of the Horde: Notorious
 							["races"] = HORDE_ONLY,
-						--	["u"] = 4, S3
+							["u"] = 4,
 						}),
 						ach(13641, {	-- Rival: Battle for Azeroth Season 3
-						--	["u"] = 4, S3
+							["u"] = 4,
 							["g"] = {
 								title(31),	-- Rival <Name>
 							},
 						}),
 						ach(13630, {	-- Notorious Gladiator: Battle for Azeroth Season 3
-						--	["u"] = 4, S3
+							["u"] = 4,
 							["g"] = {
 								title(402, {	-- Notorious Gladiator <Name>
-								--	["u"] = 37, S3
+									["u"] = 37,
+								}),
+							},
+						}),
+					}),
+					n(-692, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
+						ach(13959, {	-- Challenger: Battle for Azeroth Season 4
+							--["u"] = 4,
+							["g"] = {
+								title(32),	-- Challenger <Name>
+							},
+						}),
+						ach(13962, {	-- Combatant: Battle for Azeroth Season 4
+							--["u"] = 4,
+							["g"] = {
+								title(78),	-- Combatant <Name>
+							},
+						}),
+						ach(13964, {	-- Duelist: Battle for Azeroth Season 4
+							--["u"] = 4,
+							["g"] = {
+								title(30),	-- Duelist <Name>
+							},
+						}),
+						ach(13989, {	-- Elite: Battle for Azeroth Season 4
+							--["u"] = 4,
+							["g"] = {
+							},
+						}),
+						ach(13967, {	-- Gladiator: Battle for Azeroth Season 4
+							--["u"] = 4,
+							["g"] = {
+								title(29),	-- Gladiator <Name>
+								i(156884, {	-- Corrupted Gladitor's Proto-Drake
+									--["u"] = 2,
+								}),
+							},
+						}),
+						ach(13966, {	-- Hero of the Alliance: Corrupted
+							["races"] = ALLIANCE_ONLY,
+							--["u"] = 4,
+						}),
+						ach(13965, {	-- Hero of the Horde: Corrupted
+							["races"] = HORDE_ONLY,
+							--["u"] = 4,
+						}),
+						ach(13963, {	-- Rival: Battle for Azeroth Season 4
+							--["u"] = 4,
+							["g"] = {
+								title(31),	-- Rival <Name>
+							},
+						}),
+						ach(13957, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
+							--["u"] = 4,
+							["g"] = {
+								title(411, {	-- Corrupted Gladiator <Name>
+									--["u"] = 37,
 								}),
 							},
 						}),

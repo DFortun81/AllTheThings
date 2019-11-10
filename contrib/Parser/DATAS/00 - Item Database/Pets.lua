@@ -590,6 +590,7 @@ pet(29902, 139); 	-- Red Moth Egg (Red Moth)
 pet(94025, 1176);	-- Red Panda
 pet(142086, 1955); 	-- Red-Hot Coal (Magma Rageling)
 pet(165722, 2525);	-- Redridge Tarantula Egg
+pet(174463, 2844);	-- Reek
 pet(40653, 160); 	-- Reeking Pet Carrier (Stinker)
 pet(142095, 1964); 	-- Remains of A Blood Beast (Blood Boil)
 pet(141352, 1938);	-- Rescued Fawn

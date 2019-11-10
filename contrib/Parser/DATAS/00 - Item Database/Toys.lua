@@ -651,3 +651,8 @@ t(170199);	-- Zanj'ir Weapon Rack
 -- PATCH 8.2.5 --
 -----------------
 t(172179);	-- Eternal Traveler's Hearthstone
+
+-----------------
+-- PATCH 8.3.0 --
+-----------------
+t(174830);	-- Shadowy Disguise
