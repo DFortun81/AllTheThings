@@ -56,7 +56,32 @@ _.Achievements =
 						crit(9),	-- Tol Dagor
 						crit(10),	-- Waycrest Manor
 					})),
-					ach(13780, {		-- Battle for Azeroth Keystone Conqueror: Season Three
+					un(2, ach(13780, {		-- Battle for Azeroth Keystone Conqueror: Season Three
+						crit(1),	-- Atal'Dazar
+						crit(2),	-- Freehold
+						crit(3),	-- Kings' Rest
+						crit(4),	-- Shrine of the Storm
+						crit(5),	-- Siege of Boralus
+						crit(6),	-- Temple of Sethraliss
+						crit(7),	-- The MOTHERLODE!!
+						crit(8),	-- The Underrot
+						crit(9),	-- Tol Dagor
+						crit(10),	-- Waycrest Manor
+					})),
+					un(2, ach(13781, {		-- Battle for Azeroth Keystone Master: Season Three
+						crit(1),	-- Atal'Dazar
+						crit(2),	-- Freehold
+						crit(3),	-- Kings' Rest
+						crit(4),	-- Shrine of the Storm
+						crit(5),	-- Siege of Boralus
+						crit(6),	-- Temple of Sethraliss
+						crit(7),	-- The MOTHERLODE!!
+						crit(8),	-- The Underrot
+						crit(9),	-- Tol Dagor
+						crit(10),	-- Waycrest Manor
+					})),
+					ach(14144, {	-- Battle for Azeroth Keystone Conqueror: Season Four
+						title(418),	-- "the Awakened"
 						crit(1),	-- Atal'Dazar
 						crit(2),	-- Freehold
 						crit(3),	-- Kings' Rest
@@ -68,7 +93,8 @@ _.Achievements =
 						crit(9),	-- Tol Dagor
 						crit(10),	-- Waycrest Manor
 					}),
-					ach(13781, {		-- Battle for Azeroth Keystone Master: Season Three
+					ach(14145, {	-- Battle for Azeroth Keystone Master: Season Four
+						i(174836),	-- Awakened Mindborer
 						crit(1),	-- Atal'Dazar
 						crit(2),	-- Freehold
 						crit(3),	-- Kings' Rest
