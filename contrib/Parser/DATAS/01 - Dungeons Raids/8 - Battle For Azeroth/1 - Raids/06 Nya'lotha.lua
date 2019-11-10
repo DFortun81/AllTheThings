@@ -185,6 +185,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 			}),
 			d(14, {	-- Normal
+				n(-4, {	-- Achievements
+					ach(14146),	-- Glory of the Ny'alotha Raider
+				}),
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },
 					["g"] = { -- Most names still pending
@@ -369,6 +372,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 			}),
 			d(15, {	-- Heroic
+				n(-4, {	-- Achievements
+					ach(14146),	-- Glory of the Ny'alotha Raider
+				}),
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },
 					["g"] = { -- Most names still pending
@@ -554,6 +560,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 			}),
 			d(16, {	-- Mythic
+				n(-4, {	-- Achievements
+					ach(14146),	-- Glory of the Ny'alotha Raider
+				}),
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },
 					["g"] = { -- Most names still pending

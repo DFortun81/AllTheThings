@@ -403,6 +403,20 @@ _.Achievements =
 						crit(16),		-- Infinitesimal
 						crit(17),		-- I've Got My Eyes On You
 					}),
+					ach(14146, {	-- Gory of the Ny'alotha Raider
+						crit(1),	-- Smoke Test
+						crit(2),	-- Mana Sponge
+						crit(3),	-- Phase 3: Prophet
+						crit(4),	-- Buzzer Beater
+						crit(5),	-- Realizing Your Potential
+						crit(6),	-- You Can Pet the Dog, But...
+						crit(7),	-- Temper Tantrum
+						crit(8),	-- Total Annihilation
+						crit(9),	-- How? Isn't it Obelisk?
+						crit(10),	-- Bloody Mess
+						crit(11),	-- Cleansing Treatment
+						crit(12),	-- Cleansing Treatment -- TODO:: blizzard messed this up. Fix it when they add N'Zoth's achievement
+					}),
 					ach(8454, {		-- Glory of the Orgrimmar Raider
 						i(104208),		-- Reins of Galakras
 						crit(1),		-- No More Tears
