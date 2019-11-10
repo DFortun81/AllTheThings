@@ -136,6 +136,14 @@ profession(197, {	-- Tailoring
 							["recipeID"] = 299033
 						},
 						{
+							["name"] = "Eldritch Seaweave Breeches",
+							["recipeID"] = 304564
+						},
+						{
+							["name"] = "Eldritch Seaweave Gloves",
+							["recipeID"] = 304561
+						},
+						{
 							["name"] = "Emblazoned Deep Sea Breeches",
 							["recipeID"] = 257124
 						},
@@ -294,6 +302,14 @@ profession(197, {	-- Tailoring
 						{
 							["name"] = "Imbued Deep Sea Gloves",
 							["recipeID"] = 257120
+						},
+						{
+							["name"] = "Maddening Seaweave Breeches",
+							["recipeID"] = 304563
+						},
+						{
+							["name"] = "Maddening Seaweave Gloves",
+							["recipeID"] = 304560
 						},
 						{
 							["name"] = "Notorious Combatant's Satin Belt",
@@ -538,6 +554,110 @@ profession(197, {	-- Tailoring
 						{
 							["name"] = "Tidespray Linen Spaulders",
 							["recipeID"] = 257101
+						},
+						{
+							["name"] = "Uncanny Combatant's Satin Belt",
+							["nextRecipeID"] = 304578,
+							["recipeID"] = 304577
+						},
+						{
+							["name"] = "Uncanny Combatant's Satin Belt",
+							["nextRecipeID"] = 304579,
+							["previousRecipeID"] = 304577,
+							["recipeID"] = 304578
+						},
+						{
+							["name"] = "Uncanny Combatant's Satin Belt",
+							["previousRecipeID"] = 304578,
+							["recipeID"] = 304579
+						},
+						{
+							["name"] = "Uncanny Combatant's Satin Boots",
+							["nextRecipeID"] = 304569,
+							["recipeID"] = 304568
+						},
+						{
+							["name"] = "Uncanny Combatant's Satin Boots",
+							["nextRecipeID"] = 304570,
+							["previousRecipeID"] = 304568,
+							["recipeID"] = 304569
+						},
+						{
+							["name"] = "Uncanny Combatant's Satin Boots",
+							["previousRecipeID"] = 304569,
+							["recipeID"] = 304570
+						},
+						{
+							["name"] = "Uncanny Combatant's Satin Bracers",
+							["nextRecipeID"] = 304581,
+							["recipeID"] = 304580
+						},
+						{
+							["name"] = "Uncanny Combatant's Satin Bracers",
+							["nextRecipeID"] = 304582,
+							["previousRecipeID"] = 304580,
+							["recipeID"] = 304581
+						},
+						{
+							["name"] = "Uncanny Combatant's Satin Bracers",
+							["previousRecipeID"] = 304581,
+							["recipeID"] = 304582
+						},
+						{
+							["name"] = "Uncanny Combatant's Satin Cloak",
+							["nextRecipeID"] = 304566,
+							["recipeID"] = 304565
+						},
+						{
+							["name"] = "Uncanny Combatant's Satin Cloak",
+							["nextRecipeID"] = 304567,
+							["previousRecipeID"] = 304565,
+							["recipeID"] = 304566
+						},
+						{
+							["name"] = "Uncanny Combatant's Satin Cloak",
+							["previousRecipeID"] = 304566,
+							["recipeID"] = 304567
+						},
+						{
+							["name"] = "Uncanny Combatant's Satin Mittens",
+							["nextRecipeID"] = 304572,
+							["recipeID"] = 304571
+						},
+						{
+							["name"] = "Uncanny Combatant's Satin Mittens",
+							["nextRecipeID"] = 304573,
+							["previousRecipeID"] = 304571,
+							["recipeID"] = 304572
+						},
+						{
+							["name"] = "Uncanny Combatant's Satin Mittens",
+							["previousRecipeID"] = 304572,
+							["recipeID"] = 304573
+						},
+						{
+							["name"] = "Uncanny Combatant's Satin Pants",
+							["nextRecipeID"] = 304575,
+							["recipeID"] = 304574
+						},
+						{
+							["name"] = "Uncanny Combatant's Satin Pants",
+							["nextRecipeID"] = 304576,
+							["previousRecipeID"] = 304574,
+							["recipeID"] = 304575
+						},
+						{
+							["name"] = "Uncanny Combatant's Satin Pants",
+							["previousRecipeID"] = 304575,
+							["recipeID"] = 304576
+						},
+						{
+							["name"] = "Unsettling Seaweave Breeches",
+							["recipeID"] = 304562
+						},
+						{
+							["name"] = "Unsettling Seaweave Gloves",
+							["recipeID"] = 304559
 						}
 					}
 				},
@@ -648,6 +768,16 @@ profession(197, {	-- Tailoring
 						{
 							["name"] = "Seabreeze Saddle Blanket",
 							["recipeID"] = 301403
+						}
+					}
+				},
+				{
+					["name"] = "Focus",
+					["categoryID"] = 1309,
+					["g"] = {
+						{
+							["name"] = "Void Focus",
+							["recipeID"] = 307175
 						}
 					}
 				},

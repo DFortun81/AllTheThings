@@ -214,6 +214,14 @@ profession(185, {	-- Cooking
 							["recipeID"] = 290473
 						},
 						{
+							["name"] = "B'Rscht",
+							["recipeID"] = 314963
+						},
+						{
+							["name"] = "B'Sque",
+							["recipeID"] = 314961
+						},
+						{
 							["name"] = "Fragrant Kakavia",
 							["nextRecipeID"] = 297075,
 							["recipeID"] = 297077
@@ -230,6 +238,14 @@ profession(185, {	-- Cooking
 							["recipeID"] = 297074
 						},
 						{
+							["name"] = "G'Ulash",
+							["recipeID"] = 314962
+						},
+						{
+							["name"] = "G'Zpacho",
+							["recipeID"] = 314959
+						},
+						{
 							["name"] = "Honey-Glazed Haunches",
 							["nextRecipeID"] = 259415,
 							["recipeID"] = 259414
@@ -244,6 +260,10 @@ profession(185, {	-- Cooking
 							["name"] = "Honey-Glazed Haunches",
 							["previousRecipeID"] = 259415,
 							["recipeID"] = 259416
+						},
+						{
+							["name"] = "K'Bab",
+							["recipeID"] = 314960
 						},
 						{
 							["name"] = "Mecha-Bytes",

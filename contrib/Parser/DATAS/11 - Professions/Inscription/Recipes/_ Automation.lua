@@ -136,6 +136,10 @@ profession(773, {	-- Inscription
 							["recipeID"] = 256299
 						},
 						{
+							["name"] = "Contract: Rajani",
+							["recipeID"] = 299672
+						},
+						{
 							["name"] = "Contract: Order of Embers",
 							["nextRecipeID"] = 256279,
 							["recipeID"] = 256278
@@ -234,6 +238,10 @@ profession(773, {	-- Inscription
 							["name"] = "Contract: Tortollan Seekers",
 							["previousRecipeID"] = 256295,
 							["recipeID"] = 256296
+						},
+						{
+							["name"] = "Contract: Uldum Accord",
+							["recipeID"] = 299673
 						},
 						{
 							["name"] = "Contract: Unshackled",
@@ -378,6 +386,22 @@ profession(773, {	-- Inscription
 							["name"] = "Sinister Combatant's Etched Vessel",
 							["previousRecipeID"] = 282804,
 							["recipeID"] = 282805
+						},
+						{
+							["name"] = "Uncanny Combatant's Etched Vessel",
+							["nextRecipeID"] = 305953,
+							["recipeID"] = 305952
+						},
+						{
+							["name"] = "Uncanny Combatant's Etched Vessel",
+							["nextRecipeID"] = 305954,
+							["previousRecipeID"] = 305952,
+							["recipeID"] = 305953
+						},
+						{
+							["name"] = "Uncanny Combatant's Etched Vessel",
+							["previousRecipeID"] = 305953,
+							["recipeID"] = 305954
 						}
 					}
 				},
@@ -456,6 +480,22 @@ profession(773, {	-- Inscription
 							["recipeID"] = 285927
 						},
 						{
+							["name"] = "Vantus Rune: Ny'alotha, the Waking City",
+							["nextRecipeID"] = 306483,
+							["recipeID"] = 306482
+						},
+						{
+							["name"] = "Vantus Rune: Ny'alotha, the Waking City",
+							["nextRecipeID"] = 306481,
+							["previousRecipeID"] = 306482,
+							["recipeID"] = 306483
+						},
+						{
+							["name"] = "Vantus Rune: Ny'alotha, the Waking City",
+							["previousRecipeID"] = 306483,
+							["recipeID"] = 306481
+						},
+						{
 							["name"] = "Vantus Rune: The Eternal Palace",
 							["nextRecipeID"] = 298647,
 							["recipeID"] = 298625
@@ -493,6 +533,14 @@ profession(773, {	-- Inscription
 					["name"] = "Glyphs",
 					["categoryID"] = 1130,
 					["g"] = {
+						{
+							["name"] = "Glyph of Dire Bees",
+							["recipeID"] = 304042
+						},
+						{
+							["name"] = "Glyph of Lavish Servings",
+							["recipeID"] = 309443
+						},
 						{
 							["name"] = "Glyph of Steaming Fury",
 							["recipeID"] = 304033

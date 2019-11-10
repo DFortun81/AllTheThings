@@ -682,6 +682,10 @@ profession(171, {	-- Alchemy
 							["recipeID"] = 298997
 						},
 						{
+							["name"] = "Awakened Alchemist Stone",
+							["recipeID"] = 305993
+						},
+						{
 							["name"] = "Crushing Alchemist Stone",
 							["recipeID"] = 298996
 						},
@@ -730,6 +734,10 @@ profession(171, {	-- Alchemy
 							["recipeID"] = 291085
 						},
 						{
+							["name"] = "Peerless Alchemist Stone",
+							["recipeID"] = 305992
+						},
+						{
 							["name"] = "Sanguinated Alchemist Stone",
 							["recipeID"] = 291084
 						},
@@ -772,6 +780,10 @@ profession(171, {	-- Alchemy
 						{
 							["name"] = "Tidal Alchemist Stone",
 							["recipeID"] = 286921
+						},
+						{
+							["name"] = "Unbound Alchemist Stone",
+							["recipeID"] = 305994
 						}
 					}
 				},
@@ -786,6 +798,16 @@ profession(171, {	-- Alchemy
 						{
 							["name"] = "Sanguinated Dilution",
 							["recipeID"] = 286630
+						}
+					}
+				},
+				{
+					["name"] = "Focus",
+					["categoryID"] = 1304,
+					["g"] = {
+						{
+							["name"] = "Void Focus",
+							["recipeID"] = 307172
 						}
 					}
 				},
@@ -1317,11 +1339,11 @@ profession(171, {	-- Alchemy
 					["g"] = {
 						{
 							["name"] = "Alchemical Catalyst",
-							["recipeID"] = 156587
+							["recipeID"] = 168042
 						},
 						{
 							["name"] = "Alchemical Catalyst",
-							["recipeID"] = 168042
+							["recipeID"] = 156587
 						},
 						{
 							["name"] = "Alchemical Catalyst - Fireweed",

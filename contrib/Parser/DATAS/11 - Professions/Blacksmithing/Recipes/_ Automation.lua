@@ -59,11 +59,11 @@ profession(164, {	-- Blacksmithing
 				},
 				{
 					["name"] = "Hard Leystone Bar",
-					["recipeID"] = 184182
+					["recipeID"] = 184309
 				},
 				{
 					["name"] = "Hard Leystone Bar",
-					["recipeID"] = 184309
+					["recipeID"] = 184182
 				},
 				{
 					["name"] = "Hard Leystone Ingots",
@@ -135,11 +135,11 @@ profession(164, {	-- Blacksmithing
 				},
 				{
 					["name"] = "Leystone Slag",
-					["recipeID"] = 184181
+					["recipeID"] = 184308
 				},
 				{
 					["name"] = "Leystone Slag",
-					["recipeID"] = 184308
+					["recipeID"] = 184181
 				},
 				{
 					["name"] = "Leystone Soleplate",
@@ -202,6 +202,14 @@ profession(164, {	-- Blacksmithing
 						{
 							["name"] = "Banded Osmenite Legguards",
 							["recipeID"] = 299000
+						},
+						{
+							["name"] = "Eldritch Osmenite Girdle",
+							["recipeID"] = 305838
+						},
+						{
+							["name"] = "Eldritch Osmenite Legguards",
+							["recipeID"] = 305841
 						},
 						{
 							["name"] = "Emblazoned Stormsteel Girdle",
@@ -330,6 +338,14 @@ profession(164, {	-- Blacksmithing
 						{
 							["name"] = "Imbued Stormsteel Legguards",
 							["recipeID"] = 253187
+						},
+						{
+							["name"] = "Maddening Osmenite Girdle",
+							["recipeID"] = 305839
+						},
+						{
+							["name"] = "Maddening Osmenite Legguards",
+							["recipeID"] = 305842
 						},
 						{
 							["name"] = "Monel-Hardened Armguards",
@@ -606,6 +622,110 @@ profession(164, {	-- Blacksmithing
 						{
 							["name"] = "Tempered Stormsteel Legguards",
 							["recipeID"] = 285098
+						},
+						{
+							["name"] = "Uncanny Combatant's Plate Armguards",
+							["nextRecipeID"] = 306079,
+							["recipeID"] = 304317
+						},
+						{
+							["name"] = "Uncanny Combatant's Plate Armguards",
+							["nextRecipeID"] = 306078,
+							["previousRecipeID"] = 304317,
+							["recipeID"] = 306079
+						},
+						{
+							["name"] = "Uncanny Combatant's Plate Armguards",
+							["previousRecipeID"] = 306079,
+							["recipeID"] = 306078
+						},
+						{
+							["name"] = "Uncanny Combatant's Plate Boots",
+							["nextRecipeID"] = 306087,
+							["recipeID"] = 304307
+						},
+						{
+							["name"] = "Uncanny Combatant's Plate Boots",
+							["nextRecipeID"] = 306086,
+							["previousRecipeID"] = 304307,
+							["recipeID"] = 306087
+						},
+						{
+							["name"] = "Uncanny Combatant's Plate Boots",
+							["previousRecipeID"] = 306087,
+							["recipeID"] = 306086
+						},
+						{
+							["name"] = "Uncanny Combatant's Plate Gauntlets",
+							["nextRecipeID"] = 306085,
+							["recipeID"] = 304308
+						},
+						{
+							["name"] = "Uncanny Combatant's Plate Gauntlets",
+							["nextRecipeID"] = 306084,
+							["previousRecipeID"] = 304308,
+							["recipeID"] = 306085
+						},
+						{
+							["name"] = "Uncanny Combatant's Plate Gauntlets",
+							["previousRecipeID"] = 306085,
+							["recipeID"] = 306084
+						},
+						{
+							["name"] = "Uncanny Combatant's Plate Greaves",
+							["nextRecipeID"] = 306083,
+							["recipeID"] = 304312
+						},
+						{
+							["name"] = "Uncanny Combatant's Plate Greaves",
+							["nextRecipeID"] = 306082,
+							["previousRecipeID"] = 304312,
+							["recipeID"] = 306083
+						},
+						{
+							["name"] = "Uncanny Combatant's Plate Greaves",
+							["previousRecipeID"] = 306083,
+							["recipeID"] = 306082
+						},
+						{
+							["name"] = "Uncanny Combatant's Plate Waistguard",
+							["nextRecipeID"] = 306081,
+							["recipeID"] = 304315
+						},
+						{
+							["name"] = "Uncanny Combatant's Plate Waistguard",
+							["nextRecipeID"] = 306080,
+							["previousRecipeID"] = 304315,
+							["recipeID"] = 306081
+						},
+						{
+							["name"] = "Uncanny Combatant's Plate Waistguard",
+							["previousRecipeID"] = 306081,
+							["recipeID"] = 306080
+						},
+						{
+							["name"] = "Uncanny Combatant's Shield",
+							["nextRecipeID"] = 306312,
+							["recipeID"] = 304314
+						},
+						{
+							["name"] = "Uncanny Combatant's Shield",
+							["nextRecipeID"] = 306310,
+							["previousRecipeID"] = 304314,
+							["recipeID"] = 306312
+						},
+						{
+							["name"] = "Uncanny Combatant's Shield",
+							["previousRecipeID"] = 306312,
+							["recipeID"] = 306310
+						},
+						{
+							["name"] = "Unsettling Osmenite Girdle",
+							["recipeID"] = 305840
+						},
+						{
+							["name"] = "Unsettling Osmenite Legguards",
+							["recipeID"] = 305843
 						}
 					}
 				},
@@ -920,6 +1040,86 @@ profession(164, {	-- Blacksmithing
 							["name"] = "Stormsteel Spear",
 							["previousRecipeID"] = 253160,
 							["recipeID"] = 253161
+						},
+						{
+							["name"] = "Uncanny Combatant's Cutlass",
+							["nextRecipeID"] = 305853,
+							["recipeID"] = 304318
+						},
+						{
+							["name"] = "Uncanny Combatant's Cutlass",
+							["nextRecipeID"] = 305852,
+							["previousRecipeID"] = 304318,
+							["recipeID"] = 305853
+						},
+						{
+							["name"] = "Uncanny Combatant's Cutlass",
+							["previousRecipeID"] = 305853,
+							["recipeID"] = 305852
+						},
+						{
+							["name"] = "Uncanny Combatant's Deckpounder",
+							["nextRecipeID"] = 305851,
+							["recipeID"] = 304320
+						},
+						{
+							["name"] = "Uncanny Combatant's Deckpounder",
+							["nextRecipeID"] = 305850,
+							["previousRecipeID"] = 304320,
+							["recipeID"] = 305851
+						},
+						{
+							["name"] = "Uncanny Combatant's Deckpounder",
+							["previousRecipeID"] = 305851,
+							["recipeID"] = 305850
+						},
+						{
+							["name"] = "Uncanny Combatant's Polearm",
+							["nextRecipeID"] = 305845,
+							["recipeID"] = 304324
+						},
+						{
+							["name"] = "Uncanny Combatant's Polearm",
+							["nextRecipeID"] = 305844,
+							["previousRecipeID"] = 304324,
+							["recipeID"] = 305845
+						},
+						{
+							["name"] = "Uncanny Combatant's Polearm",
+							["previousRecipeID"] = 305845,
+							["recipeID"] = 305844
+						},
+						{
+							["name"] = "Uncanny Combatant's Shanker",
+							["nextRecipeID"] = 305847,
+							["recipeID"] = 304323
+						},
+						{
+							["name"] = "Uncanny Combatant's Shanker",
+							["nextRecipeID"] = 305846,
+							["previousRecipeID"] = 304323,
+							["recipeID"] = 305847
+						},
+						{
+							["name"] = "Uncanny Combatant's Shanker",
+							["previousRecipeID"] = 305847,
+							["recipeID"] = 305846
+						},
+						{
+							["name"] = "Uncanny Combatant's Spellblade",
+							["nextRecipeID"] = 305849,
+							["recipeID"] = 304322
+						},
+						{
+							["name"] = "Uncanny Combatant's Spellblade",
+							["nextRecipeID"] = 305848,
+							["previousRecipeID"] = 304322,
+							["recipeID"] = 305849
+						},
+						{
+							["name"] = "Uncanny Combatant's Spellblade",
+							["previousRecipeID"] = 305849,
+							["recipeID"] = 305848
 						}
 					}
 				},
@@ -978,6 +1178,16 @@ profession(164, {	-- Blacksmithing
 						{
 							["name"] = "Sanguinated Reconstruction",
 							["recipeID"] = 286631
+						}
+					}
+				},
+				{
+					["name"] = "Focus",
+					["categoryID"] = 1305,
+					["g"] = {
+						{
+							["name"] = "Void Focus",
+							["recipeID"] = 307221
 						}
 					}
 				},

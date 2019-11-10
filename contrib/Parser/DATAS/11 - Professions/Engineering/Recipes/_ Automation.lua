@@ -208,6 +208,10 @@ profession(202, {	-- Engineering
 							["recipeID"] = 299004
 						},
 						{
+							["name"] = "A-N0M-A-L0U5 Synthetic Specs",
+							["recipeID"] = 305945
+						},
+						{
 							["name"] = "AZ3-R1-T3 Synthetic Specs",
 							["nextRecipeID"] = 272057,
 							["recipeID"] = 272056
@@ -240,8 +244,16 @@ profession(202, {	-- Engineering
 							["recipeID"] = 291089
 						},
 						{
+							["name"] = "Paramount Synthetic Specs",
+							["recipeID"] = 305943
+						},
+						{
 							["name"] = "SP1-R1-73D Synthetic Specs",
 							["recipeID"] = 286874
+						},
+						{
+							["name"] = "Superior Synthetic Specs",
+							["recipeID"] = 305944
 						},
 						{
 							["name"] = "Surging Synthetic Specs",
@@ -260,6 +272,10 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Abyssal Gearspun Goggles",
 							["recipeID"] = 299007
+						},
+						{
+							["name"] = "A-N0M-A-L0U5 Gearspun Goggles",
+							["recipeID"] = 305942
 						},
 						{
 							["name"] = "AZ3-R1-T3 Gearspun Goggles",
@@ -294,8 +310,16 @@ profession(202, {	-- Engineering
 							["recipeID"] = 291091
 						},
 						{
+							["name"] = "Paramount Gearspun Goggles",
+							["recipeID"] = 305940
+						},
+						{
 							["name"] = "SP1-R1-73D Gearspun Goggles",
 							["recipeID"] = 286868
+						},
+						{
+							["name"] = "Superior Gearspun Goggles",
+							["recipeID"] = 305941
 						},
 						{
 							["name"] = "Surging Gearspun Goggles",
@@ -314,6 +338,10 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Abyssal Bionic Bifocals",
 							["recipeID"] = 299010
+						},
+						{
+							["name"] = "A-N0M-A-L0U5 Bionic Bifocals",
+							["recipeID"] = 305951
 						},
 						{
 							["name"] = "AZ3-R1-T3 Bionic Bifocals",
@@ -348,8 +376,16 @@ profession(202, {	-- Engineering
 							["recipeID"] = 291093
 						},
 						{
+							["name"] = "Paramount Bionic Bifocals",
+							["recipeID"] = 305949
+						},
+						{
 							["name"] = "SP1-R1-73D Bionic Bifocals",
 							["recipeID"] = 286865
+						},
+						{
+							["name"] = "Superior Bionic Bifocals",
+							["recipeID"] = 305950
 						},
 						{
 							["name"] = "Surging Bionic Bifocals",
@@ -368,6 +404,10 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Abyssal Orthogonal Optics",
 							["recipeID"] = 299013
+						},
+						{
+							["name"] = "A-N0M-A-L0U5 Orthogonal Optics",
+							["recipeID"] = 305948
 						},
 						{
 							["name"] = "AZ3-R1-T3 Orthogonal Optics",
@@ -402,8 +442,16 @@ profession(202, {	-- Engineering
 							["recipeID"] = 291095
 						},
 						{
+							["name"] = "Paramount Orthogonal Optics",
+							["recipeID"] = 305946
+						},
+						{
 							["name"] = "SP1-R1-73D Orthogonal Optics",
 							["recipeID"] = 286871
+						},
+						{
+							["name"] = "Superior Orthogonal Optics",
+							["recipeID"] = 305947
 						},
 						{
 							["name"] = "Surging Orthogonal Optics",
@@ -546,6 +594,38 @@ profession(202, {	-- Engineering
 							["name"] = "Sinister Combatant's Stormsteel Destroyer",
 							["previousRecipeID"] = 282810,
 							["recipeID"] = 282811
+						},
+						{
+							["name"] = "Uncanny Combatant's Discombobulator",
+							["nextRecipeID"] = 305862,
+							["recipeID"] = 305863
+						},
+						{
+							["name"] = "Uncanny Combatant's Discombobulator",
+							["nextRecipeID"] = 305861,
+							["previousRecipeID"] = 305863,
+							["recipeID"] = 305862
+						},
+						{
+							["name"] = "Uncanny Combatant's Discombobulator",
+							["previousRecipeID"] = 305862,
+							["recipeID"] = 305861
+						},
+						{
+							["name"] = "Uncanny Combatant's Stormsteel Destroyer",
+							["nextRecipeID"] = 305859,
+							["recipeID"] = 305860
+						},
+						{
+							["name"] = "Uncanny Combatant's Stormsteel Destroyer",
+							["nextRecipeID"] = 305858,
+							["previousRecipeID"] = 305860,
+							["recipeID"] = 305859
+						},
+						{
+							["name"] = "Uncanny Combatant's Stormsteel Destroyer",
+							["previousRecipeID"] = 305859,
+							["recipeID"] = 305858
 						}
 					}
 				},
@@ -662,6 +742,16 @@ profession(202, {	-- Engineering
 						{
 							["name"] = "Monelite Fish Finder",
 							["recipeID"] = 278413
+						}
+					}
+				},
+				{
+					["name"] = "Focus",
+					["categoryID"] = 1306,
+					["g"] = {
+						{
+							["name"] = "Void Focus",
+							["recipeID"] = 307220
 						}
 					}
 				},

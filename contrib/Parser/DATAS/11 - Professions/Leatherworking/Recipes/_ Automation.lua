@@ -180,6 +180,14 @@ profession(165, {	-- Leatherworking
 							["recipeID"] = 299022
 						},
 						{
+							["name"] = "Eldritch Dredged Leather Boots",
+							["recipeID"] = 305805
+						},
+						{
+							["name"] = "Eldritch Dredged Leather Leggings",
+							["recipeID"] = 305799
+						},
+						{
 							["name"] = "Emblazoned Tempest Boots",
 							["recipeID"] = 256767
 						},
@@ -298,6 +306,14 @@ profession(165, {	-- Leatherworking
 						{
 							["name"] = "Imbued Tempest Leggings",
 							["recipeID"] = 256769
+						},
+						{
+							["name"] = "Maddening Dredged Leather Boots",
+							["recipeID"] = 305795
+						},
+						{
+							["name"] = "Maddening Dredged Leather Leggings",
+							["recipeID"] = 305798
 						},
 						{
 							["name"] = "Notorious Combatant's Leather Armguards",
@@ -474,6 +490,94 @@ profession(165, {	-- Leatherworking
 						{
 							["name"] = "Tempered Tempest Leggings",
 							["recipeID"] = 285100
+						},
+						{
+							["name"] = "Uncanny Combatant's Leather Armguards",
+							["nextRecipeID"] = 304425,
+							["recipeID"] = 304424
+						},
+						{
+							["name"] = "Uncanny Combatant's Leather Armguards",
+							["nextRecipeID"] = 304426,
+							["previousRecipeID"] = 304424,
+							["recipeID"] = 304425
+						},
+						{
+							["name"] = "Uncanny Combatant's Leather Armguards",
+							["previousRecipeID"] = 304425,
+							["recipeID"] = 304426
+						},
+						{
+							["name"] = "Uncanny Combatant's Leather Gauntlets",
+							["nextRecipeID"] = 304416,
+							["recipeID"] = 304415
+						},
+						{
+							["name"] = "Uncanny Combatant's Leather Gauntlets",
+							["nextRecipeID"] = 304417,
+							["previousRecipeID"] = 304415,
+							["recipeID"] = 304416
+						},
+						{
+							["name"] = "Uncanny Combatant's Leather Gauntlets",
+							["previousRecipeID"] = 304416,
+							["recipeID"] = 304417
+						},
+						{
+							["name"] = "Uncanny Combatant's Leather Leggings",
+							["nextRecipeID"] = 304419,
+							["recipeID"] = 304418
+						},
+						{
+							["name"] = "Uncanny Combatant's Leather Leggings",
+							["nextRecipeID"] = 304420,
+							["previousRecipeID"] = 304418,
+							["recipeID"] = 304419
+						},
+						{
+							["name"] = "Uncanny Combatant's Leather Leggings",
+							["previousRecipeID"] = 304419,
+							["recipeID"] = 304420
+						},
+						{
+							["name"] = "Uncanny Combatant's Leather Treads",
+							["nextRecipeID"] = 304413,
+							["recipeID"] = 304412
+						},
+						{
+							["name"] = "Uncanny Combatant's Leather Treads",
+							["nextRecipeID"] = 304414,
+							["previousRecipeID"] = 304412,
+							["recipeID"] = 304413
+						},
+						{
+							["name"] = "Uncanny Combatant's Leather Treads",
+							["previousRecipeID"] = 304413,
+							["recipeID"] = 304414
+						},
+						{
+							["name"] = "Uncanny Combatant's Leather Waistguard",
+							["nextRecipeID"] = 304422,
+							["recipeID"] = 304421
+						},
+						{
+							["name"] = "Uncanny Combatant's Leather Waistguard",
+							["nextRecipeID"] = 304423,
+							["previousRecipeID"] = 304421,
+							["recipeID"] = 304422
+						},
+						{
+							["name"] = "Uncanny Combatant's Leather Waistguard",
+							["previousRecipeID"] = 304422,
+							["recipeID"] = 304423
+						},
+						{
+							["name"] = "Unsettling Dredged Leather Boots",
+							["recipeID"] = 305796
+						},
+						{
+							["name"] = "Unsettling Dredged Leather Leggings",
+							["recipeID"] = 305804
 						}
 					}
 				},
@@ -496,6 +600,14 @@ profession(165, {	-- Leatherworking
 						{
 							["name"] = "Cragscale Greaves",
 							["recipeID"] = 299028
+						},
+						{
+							["name"] = "Eldritch Cragscale Boots",
+							["recipeID"] = 305801
+						},
+						{
+							["name"] = "Eldritch Cragscale Greaves",
+							["recipeID"] = 305807
 						},
 						{
 							["name"] = "Emblazoned Mistscale Boots",
@@ -608,6 +720,14 @@ profession(165, {	-- Leatherworking
 						{
 							["name"] = "Imbued Mistscale Leggings",
 							["recipeID"] = 256775
+						},
+						{
+							["name"] = "Maddening Cragscale Boots",
+							["recipeID"] = 305802
+						},
+						{
+							["name"] = "Maddening Cragscale Greaves",
+							["recipeID"] = 305806
 						},
 						{
 							["name"] = "Mistscale Boots",
@@ -824,6 +944,94 @@ profession(165, {	-- Leatherworking
 						{
 							["name"] = "Tempered Mistscale Greaves",
 							["recipeID"] = 285096
+						},
+						{
+							["name"] = "Uncanny Combatant's Mail Armguards",
+							["nextRecipeID"] = 304440,
+							["recipeID"] = 304439
+						},
+						{
+							["name"] = "Uncanny Combatant's Mail Armguards",
+							["nextRecipeID"] = 304441,
+							["previousRecipeID"] = 304439,
+							["recipeID"] = 304440
+						},
+						{
+							["name"] = "Uncanny Combatant's Mail Armguards",
+							["previousRecipeID"] = 304440,
+							["recipeID"] = 304441
+						},
+						{
+							["name"] = "Uncanny Combatant's Mail Gauntlets",
+							["nextRecipeID"] = 304431,
+							["recipeID"] = 304430
+						},
+						{
+							["name"] = "Uncanny Combatant's Mail Gauntlets",
+							["nextRecipeID"] = 304432,
+							["previousRecipeID"] = 304430,
+							["recipeID"] = 304431
+						},
+						{
+							["name"] = "Uncanny Combatant's Mail Gauntlets",
+							["previousRecipeID"] = 304431,
+							["recipeID"] = 304432
+						},
+						{
+							["name"] = "Uncanny Combatant's Mail Leggings",
+							["nextRecipeID"] = 304434,
+							["recipeID"] = 304433
+						},
+						{
+							["name"] = "Uncanny Combatant's Mail Leggings",
+							["nextRecipeID"] = 304435,
+							["previousRecipeID"] = 304433,
+							["recipeID"] = 304434
+						},
+						{
+							["name"] = "Uncanny Combatant's Mail Leggings",
+							["previousRecipeID"] = 304434,
+							["recipeID"] = 304435
+						},
+						{
+							["name"] = "Uncanny Combatant's Mail Treads",
+							["nextRecipeID"] = 304428,
+							["recipeID"] = 304427
+						},
+						{
+							["name"] = "Uncanny Combatant's Mail Treads",
+							["nextRecipeID"] = 304429,
+							["previousRecipeID"] = 304427,
+							["recipeID"] = 304428
+						},
+						{
+							["name"] = "Uncanny Combatant's Mail Treads",
+							["previousRecipeID"] = 304428,
+							["recipeID"] = 304429
+						},
+						{
+							["name"] = "Uncanny Combatant's Mail Waistguard",
+							["nextRecipeID"] = 304437,
+							["recipeID"] = 304436
+						},
+						{
+							["name"] = "Uncanny Combatant's Mail Waistguard",
+							["nextRecipeID"] = 304438,
+							["previousRecipeID"] = 304436,
+							["recipeID"] = 304437
+						},
+						{
+							["name"] = "Uncanny Combatant's Mail Waistguard",
+							["previousRecipeID"] = 304437,
+							["recipeID"] = 304438
+						},
+						{
+							["name"] = "Unsettling Cragscale Boots",
+							["recipeID"] = 305803
+						},
+						{
+							["name"] = "Unsettling Cragscale Greaves",
+							["recipeID"] = 305800
 						}
 					}
 				},
@@ -934,6 +1142,22 @@ profession(165, {	-- Leatherworking
 							["name"] = "Sinister Combatant's Bow",
 							["previousRecipeID"] = 282278,
 							["recipeID"] = 282281
+						},
+						{
+							["name"] = "Uncanny Combatant's Bow",
+							["nextRecipeID"] = 304443,
+							["recipeID"] = 304442
+						},
+						{
+							["name"] = "Uncanny Combatant's Bow",
+							["nextRecipeID"] = 304444,
+							["previousRecipeID"] = 304442,
+							["recipeID"] = 304443
+						},
+						{
+							["name"] = "Uncanny Combatant's Bow",
+							["previousRecipeID"] = 304443,
+							["recipeID"] = 304444
 						}
 					}
 				},
@@ -1004,6 +1228,16 @@ profession(165, {	-- Leatherworking
 						{
 							["name"] = "Sanguinated Reskinning",
 							["recipeID"] = 286652
+						}
+					}
+				},
+				{
+					["name"] = "Focus",
+					["categoryID"] = 1308,
+					["g"] = {
+						{
+							["name"] = "Void Focus",
+							["recipeID"] = 307176
 						}
 					}
 				},

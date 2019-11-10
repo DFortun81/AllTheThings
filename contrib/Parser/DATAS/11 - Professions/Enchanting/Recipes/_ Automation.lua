@@ -694,6 +694,22 @@ profession(333, {	-- Enchanting
 							["name"] = "Sinister Combatant's Sorcerous Scepter",
 							["previousRecipeID"] = 282855,
 							["recipeID"] = 282857
+						},
+						{
+							["name"] = "Uncanny Combatant's Sorcerous Scepter",
+							["nextRecipeID"] = 305937,
+							["recipeID"] = 305936
+						},
+						{
+							["name"] = "Uncanny Combatant's Sorcerous Scepter",
+							["nextRecipeID"] = 305938,
+							["previousRecipeID"] = 305936,
+							["recipeID"] = 305937
+						},
+						{
+							["name"] = "Uncanny Combatant's Sorcerous Scepter",
+							["previousRecipeID"] = 305937,
+							["recipeID"] = 305938
 						}
 					}
 				},
@@ -1283,11 +1299,11 @@ profession(333, {	-- Enchanting
 						},
 						{
 							["name"] = "Temporal Crystal",
-							["recipeID"] = 178241
+							["recipeID"] = 169092
 						},
 						{
 							["name"] = "Temporal Crystal",
-							["recipeID"] = 169092
+							["recipeID"] = 178241
 						}
 					}
 				},
@@ -1566,12 +1582,12 @@ profession(333, {	-- Enchanting
 							["recipeID"] = 104414
 						},
 						{
-							["name"] = "Super Intellect",
-							["recipeID"] = 104389
+							["name"] = "Super Armor",
+							["recipeID"] = 104392
 						},
 						{
-							["name"] = "Super Resilience",
-							["recipeID"] = 104392
+							["name"] = "Super Intellect",
+							["recipeID"] = 104389
 						},
 						{
 							["name"] = "Super Strength",

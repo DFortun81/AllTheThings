@@ -168,6 +168,10 @@ profession(755, {	-- Jewelcrafting
 							["recipeID"] = 299018
 						},
 						{
+							["name"] = "Awakened Leviathan's Eye Loop",
+							["recipeID"] = 305981
+						},
+						{
 							["name"] = "Crushing Leviathan's Eye Loop",
 							["recipeID"] = 299017
 						},
@@ -220,6 +224,10 @@ profession(755, {	-- Jewelcrafting
 							["recipeID"] = 256517
 						},
 						{
+							["name"] = "Peerless Leviathan's Eye Loop",
+							["recipeID"] = 305980
+						},
+						{
 							["name"] = "Royal Quartz Loop",
 							["nextRecipeID"] = 256520,
 							["recipeID"] = 256513
@@ -262,6 +270,10 @@ profession(755, {	-- Jewelcrafting
 						{
 							["name"] = "Tidal Kraken's Eye Loop",
 							["recipeID"] = 289179
+						},
+						{
+							["name"] = "Unbound Leviathan's Eye Loop",
+							["recipeID"] = 305982
 						}
 					}
 				},
@@ -354,6 +366,22 @@ profession(755, {	-- Jewelcrafting
 							["recipeID"] = 282345
 						},
 						{
+							["name"] = "Uncanny Combatant's Intuitive Staff",
+							["nextRecipeID"] = 305170,
+							["recipeID"] = 305168
+						},
+						{
+							["name"] = "Uncanny Combatant's Intuitive Staff",
+							["nextRecipeID"] = 305171,
+							["previousRecipeID"] = 305168,
+							["recipeID"] = 305170
+						},
+						{
+							["name"] = "Uncanny Combatant's Intuitive Staff",
+							["previousRecipeID"] = 305170,
+							["recipeID"] = 305171
+						},
+						{
 							["name"] = "Viridium Staff of Alacrity",
 							["recipeID"] = 256253
 						}
@@ -370,6 +398,16 @@ profession(755, {	-- Jewelcrafting
 						{
 							["name"] = "Sanguinated Recalibration",
 							["recipeID"] = 286651
+						}
+					}
+				},
+				{
+					["name"] = "Focus",
+					["categoryID"] = 1307,
+					["g"] = {
+						{
+							["name"] = "Void Focus",
+							["recipeID"] = 307219
 						}
 					}
 				},
