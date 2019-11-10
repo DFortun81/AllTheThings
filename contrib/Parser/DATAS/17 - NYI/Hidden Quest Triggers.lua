@@ -1514,8 +1514,10 @@ _.NeverImplemented =
 		q(57030),	-- looted the chest from cleansing the Valley of Strength at the end of the scenario
 		q(57027),	-- looted the chest in front of Thrall's image at the end of the scenario. Doesn't matter if you defeat him or not
 		q(57360),	-- looted the chest in front of Alleria's image at the end of the scenario. Doesn't matter if you defeat her or not
-		
-		-- 57841, 58581 -- both triggered on the first run of the Vision of Orgrimmar after unlocking it, then killing Thrall immediately. Need to determine what each ID means
+		--[[
+		57841, 58581 -- both triggered on the first run of the Vision of Orgrimmar after unlocking it, then killing Thrall immediately.
+						Possibly related to Mark of Boistrous Duty (Rank 1) dropping? Torn Page of Compendium, Vol. 1 (item 171353) as well? Need to run a few times to see if this is guaranteed or not
+		]]--
 		
 		q(58578),	-- looted the chest from cleansing the Dwarven District at the end of the scenario (could possibly be from looting "Spark of Inspiration" Rank 2)
 	}),

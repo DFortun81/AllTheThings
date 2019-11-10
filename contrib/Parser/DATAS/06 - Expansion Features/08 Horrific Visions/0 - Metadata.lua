@@ -78,9 +78,11 @@ _.ExpansionFeatures =
 				["maps"] = { 1469 },
 				["g"] = {
 					n(-6015, {	-- Rewards	-- temporary grouping until we figure out how these are best organized
+						i(173308),	-- Mark of Boistrous Duty (Rank 1)
 						i(174287),	-- Sparks of Unwavering Strength
 						i(173289),	-- Spark of Inspiration (Rank 2)
 						i(173470),	-- Plate Legguards, lvl 415 variant. Probably drops all armor type variants
+						i(173455),	-- Malignant Leviathan's Stompers (probably drops the entire set + all armor types)
 					}),
 				},
 				--[[ notes:
