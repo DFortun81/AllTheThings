@@ -70,6 +70,15 @@ _.Achievements =
 					--	["description"] = "Requires Honorbound Exalted",
 						["lvl"] = 120,
 					}),
+					ach(13991, {	-- Allied Races: Mechagnome
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							ach(13557),	-- Rustbolt Rebellion
+							faction(2391),	-- Rustbelt Resistance
+							i(174067),	-- Mechagon Mechanostrider -- TODO:: needs the source quest linked here to be consistent with other entries
+						},
+					}),
 					ach(12446, {	-- Allied Races: Nightborne
 						["groups"] = {
 							ach(11340),	-- Insurrection
@@ -93,6 +102,15 @@ _.Achievements =
 						["races"] = ALLIANCE_ONLY,
 						--["description"] = "Requires Battle for Azeroth to be purchased.",
 						["lvl"] = 110,
+					}),
+					ach(13207, {	-- Allied Races: Vulpera
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							ach(12478),	-- Secrets in the Sands
+							faction(2158),	-- Voldunai
+							i(174066),	-- Caravan Hyena -- TODO:: needs the source quest linked here to be consistent with other entries
+						},
 					}),
 					un(3, ach(9016, {	-- Breaker of the Black Harvest
 						un(3,title(256)),	-- of the Black Harvest

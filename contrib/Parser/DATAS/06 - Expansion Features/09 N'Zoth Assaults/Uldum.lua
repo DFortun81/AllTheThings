@@ -46,6 +46,9 @@ _.ExpansionFeatures =
 						n(157146, {	-- Rotfeaster
 							["questID"] = 57273,
 							["coord"] = { 68.3, 31.9, 1527 },
+							["g"] = {
+								i(174753),	-- Waste Marauder
+							},
 						}),
 						n(152040, {	-- Scoutmaster Moswen
 							["questID"] = 55518,
@@ -179,7 +182,6 @@ _.ExpansionFeatures =
 					}),
 					n(-16, {	-- Rares
 						n(158706, {	-- Congealed Corruption -- no questID from this even though the map says its rare
-							 -- note: seen when Assault: The Black Empire was up
 							["coords"] = {
 								{ 59.5, 32.1, 1527 },
 								{ 54.7, 32.1, 1527 },
@@ -262,6 +264,26 @@ _.ExpansionFeatures =
 				n(0, {	-- Zone Drops -- inside the uldum vision of nzoth
 					i(174491),	-- Tome of Unspeakable Delicacies
 					i(171312),	-- Recipe: Void Focusb
+				}),
+			}),
+			n(-16, {	-- Rares
+				--[[
+				TODO::
+				This section is temporary! Determine what assault these rares exist in and add them to the appropriate header above.
+				Coords are also rough approximations from a previous build and needs to be verified
+				]]--
+				n(162147, {	-- Corpse Eater
+					--["questID"] = ,
+					["g"] = {
+						i(174769),	-- Malevolent Drone
+					},
+				}),
+				n(157134, {	-- Ishak of the Four Winds
+					--["questID"] = ,
+					["coord"] = { 73.0, 83.0, 1527 },
+					["g"] = {
+						i(174641),	-- PH Storm Drake -- TODO:: update name
+					},
 				}),
 			}),
 			n(-17,  {	-- Quests

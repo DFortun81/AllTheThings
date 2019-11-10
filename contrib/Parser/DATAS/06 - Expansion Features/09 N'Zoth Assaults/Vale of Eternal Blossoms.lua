@@ -321,6 +321,9 @@ _.ExpansionFeatures =
 				n(157466, {	-- Anh-De the Loyal
 					["questID"] = 57363,
 					["coord"] = { 33.7, 68.6, 1530 },
+					["g"] = {
+						i(174840),	-- Pau-Pi
+					},
 				}),
 				n(157183, {	-- Coagulated Anima
 					["questID"] = 58296,
@@ -361,6 +364,9 @@ _.ExpansionFeatures =
 					["questID"] = 57345,
 					["coord"] = { 13.1, 25.5, 1530 },
 					-- TODO:: determine patrol path
+					["g"] = {
+						i(174841),	-- Ren's Stalwart Hound
+					},
 				}),
 				n(160968, {	-- Jade Colossus
 					["questID"] = 58295,

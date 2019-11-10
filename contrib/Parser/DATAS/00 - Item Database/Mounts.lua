@@ -256,11 +256,22 @@ i(172022, 308250);	-- Stormpike Battle Ram
 -----------------
 -- PATCH 8.3.0 --
 -----------------
-i(173887, 312751);	-- Clutch of Ha-Li
-i(166436, 288506);	-- Sandy Nightsaber
+i(174836, 316637);	-- Awakened Mindborer
+i(174654, 305182);	-- Black Serpent of N'Zoth
 i(174066, 306423);	-- Caravan Hyena
+i(173887, 312751);	-- Clutch of Ha-Li
+i(174653, 315987);	-- Mail Muncher
+i(174769, 316337);	-- Malevolent Drone
 i(174067, 305592);	-- Mechagon Mechanostrider
+i(174840, 316723);	-- Pau-Pi
+i(174771, 316339);	-- PH Aqir Flyer -- TODO: update name
+i(174641, 315847);	-- PH Storm Drake -- TODO: update name
 i(174649, 315427);	-- Rajani Warserpent
+i(174841, 316722);	-- Ren's Stalwart Hound
+i(166436, 288506);	-- Sandy Nightsaber
+i(174842, 298367);	-- Slightly Damp Pile of Fur (Brown Alpaca)
 i(173713, 281889);	-- Vicious White Bonesteed
 i(173714, 281888);	-- Vicious White Warsaber
+i(174753, 316275);	-- Waste Marauder
 i(174754, 316276);	-- Wastewander Skyterror
+i(174770, 316340);	-- Wicked Swarmer

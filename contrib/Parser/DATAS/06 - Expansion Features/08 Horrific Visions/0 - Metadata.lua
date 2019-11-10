@@ -74,6 +74,11 @@ _.ExpansionFeatures =
 					["provider"] = { "i", 174079 },	-- Faceless Mask of the Pained
 				}),
 			}),
+			n(-16, {	-- Rares
+				n(160708, {	-- Mail Muncher -- TODO:: need more information on exactly how to spawn this rare in the visions
+					i(174653),	-- Mail Muncher
+				}),
+			}),
 			n(-10073, {	-- Horrific Vision of Orgrimmar
 				["maps"] = { 1469 },
 				["g"] = {
