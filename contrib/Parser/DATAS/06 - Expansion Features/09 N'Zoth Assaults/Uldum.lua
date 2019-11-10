@@ -272,11 +272,43 @@ _.ExpansionFeatures =
 				This section is temporary! Determine what assault these rares exist in and add them to the appropriate header above.
 				Coords are also rough approximations from a previous build and needs to be verified
 				]]--
+				n(152757, {	-- Atekhramun
+					--["questID"] = ,
+					["coord"] = { 64.0, 51.0, 1527 },
+				}),
+				n(157167, {	-- Champion Sen-mat
+					--["questID"] = ,
+					["coord"] = { 75.0, 52.0, 1527 },
+				}),
 				n(162147, {	-- Corpse Eater
 					--["questID"] = ,
 					["g"] = {
 						i(174769),	-- Malevolent Drone
 					},
+				}),
+				n(158632, {	-- Corrupted Protoplasm
+					--["questID"] = ,
+					["coord"] = { 61.0, 83.0, 1527 },
+				}),
+				n(158531, {	-- Corrupted Neferset Guard
+					--["questID"] = ,
+					["coord"] = { 50.0, 82.0, 1527 },
+				}),
+				n(158633, {	-- Gaze of N'Zoth
+					--["questID"] = ,
+					["coord"] = { 55.0, 53.0, 1527 },
+				}),
+				n(156002, {	-- Harbinger Raloam
+					--["questID"] = ,
+					["coord"] = { 35.0, 17.0, 1527 },
+				}),
+				n(151995, {	-- Hik-ten the Taskmaster
+					--["questID"] = ,
+					["coord"] = { 79.0, 45.0, 1527 },
+				}),
+				n(160623, {	-- Hungering Miasma
+					--["questID"] = ,
+					["coord"] = { 60.0, 39.0, 1527 },
 				}),
 				n(157134, {	-- Ishak of the Four Winds
 					--["questID"] = ,
@@ -284,6 +316,18 @@ _.ExpansionFeatures =
 					["g"] = {
 						i(174641),	-- PH Storm Drake -- TODO:: update name
 					},
+				}),
+				n(151878, {	-- Sun King Nahkotep
+					--["questID"] = ,
+					["coord"] = { 78.0, 63.0, 1527 },
+				}),
+				n(158595, {	-- Thoughtstealer Vos
+					--["questID"] = ,
+					["coord"] = { 65.0, 73.0, 1527 },
+				}),
+				n(160970, {	-- Vuk'laz the Earthbreaker
+					--["questID"] = ,
+					["coord"] = { 45.0, 16.0, 1527 },
 				}),
 			}),
 			n(-17,  {	-- Quests
