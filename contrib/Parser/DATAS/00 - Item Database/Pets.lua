@@ -820,6 +820,7 @@ pet(160587, 2184);	-- Whomper
 pet(165907, 2535);	-- Wicker Wraith
 pet(116804, 1523);	-- Widget the Departed
 pet(49663, 246);	-- Wind Rider Cub
+pet(174480, 2853);	-- Windfeather Chick
 pet(69239, 306); 	-- Winterspring Cub
 pet(46325, 220); 	-- Withers
 pet(164970, 2482);	-- Wolf Balloon
