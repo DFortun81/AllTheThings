@@ -17,6 +17,8 @@ _.Craftables =
 				i(154159),	-- Recurve Bow of the Strands [Horde]
 				i(164711),	-- Sinister Combatant's Bow [Alliance]
 				i(164670),	-- Sinister Combatant's Bow [Horde]
+				i(170362),	-- Uncanny Combatant's Bow [Alliance]
+				i(170363),	-- Uncanny Combatant's Bow [Horde]
 			}),
 			filter(34, {	-- Fist Weapons
 				i(161970),	-- Coarse Leather Cestus [Alliance]
@@ -63,6 +65,10 @@ _.Craftables =
 				i(164659),	-- Sinister Combatant's Leather Gauntlets [Horde]
 				i(164705),	-- Sinister Combatant's Mail Gauntlets [Alliance]
 				i(164664),	-- Sinister Combatant's Mail Gauntlets [Horde]
+				i(170342),	-- Uncanny Combatant's Leather Gauntlets [Alliance]
+				i(170350),	-- Uncanny Combatant's Leather Gauntlets [Horde]
+				i(170353),	-- Uncanny Combatant's Mail Gauntlets [Alliance]
+				i(170358),	-- Uncanny Combatant's Mail Gauntlets [Horde]
 			}),
 			n(-326, {	-- Wrist
 				i(161945),	-- Coarse Leather Armguards [Alliance]
@@ -81,6 +87,10 @@ _.Craftables =
 				i(164662),	-- Sinister Combatant's Leather Armguards [Horde]
 				i(164708),	-- Sinister Combatant's Mail Armguards [Alliance]
 				i(164667),	-- Sinister Combatant's Mail Armguards [Horde]
+				i(170343),	-- Uncanny Combatant's Leather Armguards [Alliance]
+				i(170351),	-- Uncanny Combatant's Leather Armguards [Horde]
+				i(170352),	-- Uncanny Combatant's Mail Armguards [Alliance]
+				i(170357),	-- Uncanny Combatant's Mail Armguards [Horde]
 			}),
 			n(-328, {	-- Waist
 				i(161944),	-- Coarse Leather Waistguard [Alliance]
@@ -99,6 +109,10 @@ _.Craftables =
 				i(164661),	-- Sinister Combatant's Leather Waistguard [Horde]
 				i(164707),	-- Sinister Combatant's Mail Waistguard [Alliance]
 				i(164666),	-- Sinister Combatant's Mail Waistguard [Horde]
+				i(170346),	-- Uncanny Combatant's Leather Waistguard [Alliance]
+				i(170347),	-- Uncanny Combatant's Leather Waistguard [Horde]
+				i(170356),	-- Uncanny Combatant's Mail Waistguard [Alliance]
+				i(170361),	-- Uncanny Combatant's Mail Waistguard [Horde]
 			}),
 			n(-329, {	-- Legs
 				i(168721),	-- Banded Cragscale Greaves [Alliance]
@@ -119,6 +133,8 @@ _.Craftables =
 				i(168713, {	-- Dredged Leather Leggings [Horde]
 					i(168775),	-- Recipe: Reinforced Dredged Leggings
 				}),
+				i(170443),	-- Eldritch Cragscale Greaves
+				i(170437),	-- Eldritch Dredged Leather Leggings
 				i(162482),	-- Emblazoned Mistscale Greaves [Alliance]
 				i(162474),	-- Emblazoned Mistscale Leggings [Horde]
 				i(162486),	-- Emblazoned Tempest Leggings [Alliance]
@@ -141,6 +157,12 @@ _.Craftables =
 				i(162473),	-- Imbued Mistscale Greaves [Horde]
 				i(162494),	-- Imbued Tempest Leggings [Alliance]
 				i(162469),	-- Imbued Tempest Leggings [Horde]
+				i(170442, {	-- Maddening Cragscale Greaves
+					i(171118),	-- Pattern: Eldritch Cragscale Greaves
+				}),
+				i(170436, {	-- Maddening Dredged Leather Leggings
+					i(171124),	-- Pattern: Eldritch Dredged Leather Leggings
+				}),
 				i(161962, {	-- Mistscale Leggings [Alliance]
 					i(162505),	-- Recipe: Imbued Mistscale Leggings
 				}),
@@ -173,6 +195,16 @@ _.Craftables =
 				i(165396),	-- Tempered Mistscale Greaves [Horde]
 				i(165399),	-- Tempered Tempest Leggings [Alliance]
 				i(165400),	-- Tempered Tempest Leggings [Horde]
+				i(170344),	-- Uncanny Combatant's Leather Leggings [Alliance]
+				i(170349),	-- Uncanny Combatant's Leather Leggings [Horde]
+				i(170354),	-- Uncanny Combatant's Mail Leggings [Alliance]
+				i(170359),	-- Uncanny Combatant's Mail Leggings [Horde]
+				i(170441, {	-- Unsettling Cragscale Greaves
+					i(171128),	-- Pattern: Maddening Cragscale Greaves
+				}),
+				i(170435, {	-- Unsettling Dredged Leather Leggings
+					i(171125),	-- Pattern: Maddening Dredged Leather Leggings
+				}),
 			}),
 			n(-330, {	-- Feet
 				i(168718),	-- Banded Cragscale Boots [Alliance]
@@ -193,6 +225,8 @@ _.Craftables =
 				i(168710, {	-- Dredged Leather Boots [Horde]
 					i(168773),	-- Recipe: Reinforced Dredged Boots
 				}),
+				i(170440),	-- Eldritch Cragscale Boots
+				i(170434),	-- Eldritch Dredged Leather Boots
 				i(162481),	-- Emblazoned Mistscale Boots [Alliance]
 				i(162472),	-- Emblazoned Mistscale Boots [Horde]
 				i(162485),	-- Emblazoned Tempest Boots [Alliance]
@@ -215,6 +249,12 @@ _.Craftables =
 				i(162471),	-- Imbued Mistscale Boots [Horde]
 				i(162493),	-- Imbued Tempest Boots [Alliance]
 				i(162467),	-- Imbued Tempest Boots [Horde]
+				i(170439, {	-- Maddening Cragscale Boots
+					i(171122),	-- Pattern: Eldritch Cragscale Boots
+				}),
+				i(170433, {	-- Maddening Dredged Leather Boots
+					i(171126),	-- Pattern: Eldritch Dredged Leather Boots
+				}),
 				i(161961, {	-- Mistscale Boots [Alliance]
 					i(162503),	-- Recipe: Imbued Mistscale Boots
 				}),
@@ -247,6 +287,16 @@ _.Craftables =
 				i(165421),	-- Tempered Mistscale Boots [Horde]
 				i(165424),	-- Tempered Tempest Boots [Alliance]
 				i(165425),	-- Tempered Tempest Boots [Horde]
+				i(170345),	-- Uncanny Combatant's Leather Treads [Alliance]
+				i(170348),	-- Uncanny Combatant's Leather Treads [Horde]
+				i(170355),	-- Uncanny Combatant's Mail Treads [Alliance]
+				i(170360),	-- Uncanny Combatant's Mail Treads [Horde]
+				i(170438, {	-- Unsettling Cragscale Boots
+					i(171123),	-- Pattern: Maddening Cragscale Boots
+				}),
+				i(170432, {	-- Unsettling Dredged Leather Boots
+					i(171127),	-- Pattern: Maddening Dredged Leather Boots
+				}),
 			}),
 		}),
 		

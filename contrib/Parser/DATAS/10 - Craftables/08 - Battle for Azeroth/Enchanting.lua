@@ -22,6 +22,8 @@ _.Craftables =
 				i(167992),	-- Notorious Combatant's Sorcerous Scepter [Horde]
 				i(164694),	-- Sinister Combatant's Sorcerous Scepter [Alliance]
 				i(164677),	-- Sinister Combatant's Sorcerous Scepter [Horde]
+				i(170312),	-- Uncanny Combatant's Sorcerous Scepter [Alliance]
+				i(170307),	-- Uncanny Combatant's Sorcerous Scepter [Horde]
 			}),
 		}),
 	}),

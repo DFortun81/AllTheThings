@@ -27,6 +27,8 @@ _.Craftables =
 				i(164676),	-- Sinister Combatant's Satin Cloak [Horde]
 				i(161987),	-- Tidespray Linen Cloak [Alliance]
 				i(154697),	-- Tidespray Linen Cloak [Horde]
+				i(170320),	-- Uncanny Combatant's Satin Cloak [Alliance]
+				i(170339),	-- Uncanny Combatant's Satin Cloak [Horde}
 			}),
 			n(-330, {	-- Feet
 				i(161993),	-- Honorable Combatant's Satin Boots [Alliance]
@@ -37,10 +39,13 @@ _.Craftables =
 				i(164671),	-- Sinister Combatant's Satin Boots [Horde]
 				i(161978),	-- Tidespray Linen Sandals [Alliance]
 				i(154686),	-- Tidespray Linen Sandals [Horde]
+				i(170327),	-- Uncanny Combatant's Satin Boots [Alliance]
+				i(170337),	-- Uncanny Combatant's Satin Boots [Horde]
 			}),
 			n(-327, {	-- Hands
 				i(168730),	-- Banded Seaweave Gloves [Alliance]
 				i(168736),	-- Banded Seaweave Gloves [Horde]
+				i(170458),	-- Eldritch Seaweave Gloves
 				i(162479),	-- Emblazoned Deep Sea Gloves [Alliance]
 				i(162476),	-- Emblazoned Deep Sea Gloves [Horde]
 				i(161985),	-- Embroidered Deep Sea Gloves [Alliance]
@@ -59,6 +64,9 @@ _.Craftables =
 				i(159913),	-- Honorable Combatant's Satin Mittens [Horde]
 				i(162487),	-- Imbued Deep Sea Gloves [Alliance]
 				i(162475),	-- Imbued Deep Sea Gloves [Horde]
+				i(170457, {	-- Maddening Seaweave Gloves
+					i(171149),	-- Pattern: Eldritch Seaweave Gloves
+				}),
 				i(167985),	-- Notorious Combatant's Satin Mittens [Alliance]
 				i(167984),	-- Notorious Combatant's Satin Mittens [Horde]
 				i(168729, {	-- Reinforced Seaweave Gloves [Alliance]
@@ -73,6 +81,11 @@ _.Craftables =
 				i(165419),	-- Tempered Deep Sea Gloves [Horde]
 				i(161979),	-- Tidespray Linen Mittens [Alliance]
 				i(154687),	-- Tidespray Linen Mittens [Horde]
+				i(170340),	-- Uncanny Combatant's Satin Mittens [Alliance]
+				i(170326),	-- Uncanny Combatant's Satin Mittens [Horde]
+				i(170456, {	-- Unsettling Seaweave Gloves
+					i(171150),	-- Pattern: Maddening Seaweave Gloves
+				}),
 			}),
 			n(-320, {	-- Head
 				i(161980),	-- Tidespray Linen Hood [Alliance]
@@ -81,6 +94,7 @@ _.Craftables =
 			n(-329, {	-- Legs
 				i(168733),	-- Banded Seaweave Breeches [Alliance]
 				i(168739),	-- Banded Seaweave Breeches [Horde]
+				i(170461),	-- Eldritch Seaweave Breeches
 				i(162480),	-- Emblazoned Deep Sea Breeches [Alliance]
 				i(162478),	-- Emblazoned Deep Sea Breeches [Horde]
 				i(161986),	-- Embroidered Deep Sea Breeches [Alliance]
@@ -99,6 +113,9 @@ _.Craftables =
 				i(159914),	-- Honorable Combatant's Satin Pants [Horde]
 				i(162488),	-- Imbued Deep Sea Breeches [Alliance]
 				i(162477),	-- Imbued Deep Sea Breeches [Horde]
+				i(170460, {	-- Maddening Seaweave Breeches
+					i(171147),	-- Pattern: Eldritch Seaweave Breeches
+				}),
 				i(167987),	-- Notorious Combatant's Satin Pants [Alliance]
 				i(167986),	-- Notorious Combatant's Satin Pants [Horde]
 				i(168732, {	-- Reinforced Seaweave Breeches [Alliance]
@@ -113,6 +130,11 @@ _.Craftables =
 				i(165394),	-- Tempered Deep Sea Breeches [Horde]
 				i(161981),	-- Tidespray Linen Pants [Alliance]
 				i(154689),	-- Tidespray Linen Pants [Horde]
+				i(170325),	-- Uncanny Combatant's Satin Pants [Alliance]
+				i(170341),	-- Uncanny Combatant's Satin Pants [Horde]
+				i(170459, {	-- Unsettling Seaweave Breeches
+					i(171148),	-- Pattern: Maddening Seaweave Breeches
+				}),
 			}),
 			n(-321, {	-- Shoulders
 				i(161982),	-- Tidespray Linen Spaulders [Alliance]
@@ -127,6 +149,8 @@ _.Craftables =
 				i(164674),	-- Sinister Combatant's Satin Belt [Horde]
 				i(161983),	-- Tidespray Linen Belt [Alliance]
 				i(154691),	-- Tidespray Linen Belt [Horde]
+				i(170324),	-- Uncanny Combatant's Satin Belt [Alliance]
+				i(170332),	-- Uncanny Combatant's Satin Belt [Horde]
 			}),
 			n(-326, {	-- Wrist
 				i(161997),	-- Honorable Combatant's Satin Bracers [Alliance]
@@ -137,6 +161,8 @@ _.Craftables =
 				i(164675),	-- Sinister Combatant's Satin Bracers [Horde]
 				i(161984),	-- Tidespray Linen Bracers [Alliance]
 				i(154692),	-- Tidespray Linen Bracers [Horde]
+				i(170323),	-- Uncanny Combatant's Satin Bracers [Alliance]
+				i(170338),	-- Uncanny Combatant's Satin Bracers [Horde]
 			}),
 		}),
 	}),

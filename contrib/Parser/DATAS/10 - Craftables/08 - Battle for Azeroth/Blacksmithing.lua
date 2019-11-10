@@ -30,6 +30,10 @@ _.Craftables =
 				i(164719),	-- Sinister Combatant's Spellblade [Horde]
 				i(161919),	-- Stormsteel Dagger [Alliance]
 				i(152835),	-- Stormsteel Dagger [Horde]
+				i(170291),	-- Uncanny Combatant's Shanker [Alliance]
+				i(170310),	-- Uncanny Combatant's Shanker [Horde]
+				i(170292),	-- Uncanny Combatant's Spellblade [Alliance]
+				i(170309),	-- Uncanny Combatant's Spellblade [Horde]
 			}),
 			filter(24, {	-- 2H Maces
 				i(161921),	-- Honorable Combatant's Deckpounder [Alliance]
@@ -40,6 +44,8 @@ _.Craftables =
 				i(167938),	-- Notorious Combatant's Deckpounder [Horde]
 				i(164691),	-- Sinister Combatant's Deckpounder [Alliance]
 				i(164650),	-- Sinister Combatant's Deckpounder [Horde]
+				i(170293),	-- Uncanny Combatant's Deckpounder [Alliance]
+				i(170366),	-- Uncanny Combatant's Deckpounder [Horde]
 			}),
 			filter(25, {	-- 1H Swords
 				i(161920),	-- Honorable Combatant's Cutlass [Alliance]
@@ -52,6 +58,8 @@ _.Craftables =
 				i(164649),	-- Sinister Combatant's Cutlass [Horde]
 				i(162655), 	-- Stormsteel Saber [Alliance]
 				i(162665), 	-- Stormsteel Saber [Horde]
+				i(170294),	-- Uncanny Combatant's Cutlass [Alliance]
+				i(170302),	-- Uncanny Combatant's Cutlass [Horde]
 			}),
 			filter(26, {	-- 2H Swords
 				i(161914),	-- Monel-Hardened Claymore [Alliance]
@@ -68,6 +76,8 @@ _.Craftables =
 				i(164652),	-- Sinister Combatant's Polearm [Horde]
 				i(161918),	-- Stormsteel Spear [Alliance]
 				i(152834),	-- Stormsteel Spear [Horde]
+				i(170290),	-- Uncanny Combatant's Polearm [Alliance]
+				i(170311),	-- Uncanny Combatant's Polearm [Horde]
 			}),
 			filter(8, {		-- Shield
 				i(161892),	-- Honorable Combatant's Aegis [Alliance]
@@ -80,6 +90,8 @@ _.Craftables =
 				i(164648),	-- Sinister Combatant's Shield [Horde]
 				i(161891),	-- Stormsteel Shield [Alliance]
 				i(152819),	-- Stormsteel Shield [Horde]
+				i(170364),	-- Uncanny Combatant's Shield [Alliance]
+				i(170365),	-- Uncanny Combatant's Shield [Horde]
 			}),
 			n(-320, {		-- Head
 				i(161883),	-- Monel-Hardened Helm [Alliance]
@@ -102,6 +114,8 @@ _.Craftables =
 				i(167968),	-- Notorious Combatant's Plate Gauntlets [Horde]
 				i(164686),	-- Sinister Combatant's Plate Gauntlets [Alliance]
 				i(164654),	-- Sinister Combatant's Plate Gauntlets [Horde]
+				i(170297),	-- Uncanny Combatant's Plate Gauntlets [Alliance]
+				i(170286),	-- Uncanny Combatant's Plate Gauntlets [Horde]
 			}),
 			n(-326, {		-- Wrist
 				i(161897),	-- Honorable Combatant's Plate Armguards [Alliance]
@@ -112,10 +126,13 @@ _.Craftables =
 				i(167964),	-- Notorious Combatant's Plate Armguards [Horde]
 				i(164689),	-- Sinister Combatant's Plate Armguards [Alliance]
 				i(164657),	-- Sinister Combatant's Plate Armguards [Horde]
+				i(170289),	-- Uncanny Combatant's Plate Armguards [Alliance]
+				i(170301),	-- Uncanny Combatant's Plate Armguards [Horde]
 			}),
 			n(-328, {		-- Waist
 				i(168682),	-- Banded Osmenite Girdle [Alliance]
 				i(168688),	-- Banded Osmenite Girdle [Horde]
+				i(170391),	-- Eldritch Osmenite Girdle
 				i(162484),	-- Emblazoned Stormsteel Girdle [Alliance]
 				i(162466),	-- Emblazoned Stormsteel Girdle [Horde]
 				i(165406),	-- Enhanced Stormsteel Girdle [Alliance]
@@ -126,6 +143,9 @@ _.Craftables =
 				i(159865),	-- Honorable Combatant's Plate Waistguard [Horde]
 				i(162492),	-- Imbued Stormsteel Girdle [Alliance]
 				i(162465),	-- Imbued Stormsteel Girdle [Horde]
+				i(170390, {	-- Maddening Osmenite Girdle
+					i(171107),	-- Plans: Eldritch Osmenite Girdle
+				}),
 				i(161886),	-- Monel-Hardened Waistguard [Alliance]
 				i(152808),	-- Monel-Hardened Waistguard [Horde]
 				i(167973),	-- Notorious Combatant's Plate Waistguard [Alliance]
@@ -148,10 +168,16 @@ _.Craftables =
 				i(152811),	-- Stormsteel Girdle [Horde]
 				i(165422),	-- Tempered Stormsteel Girdle [Alliance]
 				i(165423),	-- Tempered Stormsteel Girdle [Horde]
+				i(170288),	-- Uncanny Combatant's Plate Waistguard [Alliance]
+				i(170300),	-- Uncanny Combatant's Plate Waistguard [Horde]
+				i(170389, {	-- Unsettling Osmenite Girdle
+					i(171108),	-- Plans: Maddening Osmenite Girdle
+				}),
 			}),
 			n(-329, {		-- Legs
 				i(168679),	-- Banded Osmenite Legguards [Alliance]
 				i(168685),	-- Banded Osmenite Legguards [Horde]
+				i(170388),	-- Eldritch Osmenite Legguards
 				i(162483),	-- Emblazoned Stormsteel Legguards [Alliance]
 				i(162464),	-- Emblazoned Stormsteel Legguards [Horde]
 				i(165379),	-- Enhanced Stormsteel Legguards [Alliance]
@@ -162,6 +188,9 @@ _.Craftables =
 				i(159863),	-- Honorable Combatant's Plate Greaves [Horde]
 				i(162491),	-- Imbued Stormsteel Legguards [Alliance]
 				i(162463),	-- Imbued Stormsteel Legguards [Horde]
+				i(170387, {	-- Maddening Osmenite Legguards
+					i(171109),	-- Plans: Eldritch Osmenite Legguards
+				}),
 				i(161884),	-- Monel-Hardened Greaves [Alliance]
 				i(152806),	-- Monel-Hardened Greaves [Horde]
 				i(167971),	-- Notorious Combatant's Plate Greaves [Alliance]
@@ -184,6 +213,11 @@ _.Craftables =
 				i(152810),	-- Stormsteel Legguards [Horde]
 				i(165397),	-- Tempered Stormsteel Legguards [Alliance]
 				i(165398),	-- Tempered Stormsteel Legguards [Horde]
+				i(170287),	-- Uncanny Combatant's Plate Greaves [Alliance]
+				i(170299),	-- Uncanny Combatant's Plate Greaves [Horde]
+				i(170386, {	-- Unsettling Osmenite Legguards
+					i(171110),	-- Plans: Maddening Osmenite Legguards
+				}),
 			}),
 			n(-330, {		-- Feet
 				i(161893),	-- Honorable Combatant's Plate Boots [Alliance]
@@ -194,6 +228,8 @@ _.Craftables =
 				i(167966),	-- Notorious Combatant's Plate Boots [Horde]
 				i(164685),	-- Sinister Combatant's Plate Boots [Alliance]
 				i(164653),	-- Sinister Combatant's Plate Boots [Horde]
+				i(170285),	-- Uncanny Combatant's Plate Boots [Alliance]
+				i(170295),	-- Uncanny Combatant's Plate Boots [Horde]
 			}),
 		}),
 	}),

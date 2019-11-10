@@ -14,6 +14,8 @@ _.Craftables =
 				i(167941),	-- Notorious Combatant's Etched Vessel [Horde]
 				i(164697),	-- Sinister Combatant's Etched Vessel [Alliance]
 				i(164682),	-- Sinister Combatant's Etched Vessel [Horde]
+				i(170316),	-- Uncanny Combatant's Etched Vessel [Alliance]
+				i(170317),	-- Uncanny Combatant's Etched Vessel [Horde]
 			}),
 			n(-491, {	-- Tarot Cards
 				sp(278527, {	-- Darkmoon Card of War

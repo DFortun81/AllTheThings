@@ -12,11 +12,15 @@ _.Craftables =
 				i(153637),	-- Rubellite Staff of Intuition
 				i(153640),	-- Scarlet Diamond Staff of Intuition
 				i(164681),	-- Sinister Combatant's Staff of Intuition
+				i(170318),	-- Uncanny Combatant's Intuitive Staff
 				i(153638),	-- Viridium Staff of Alacrity
 			}),
 			filter(52, {	-- Finger
 				i(153686),	-- Amberblaze Loop
 				i(168703),	-- Ascended Leviathan's Eye Loop
+				i(171076, {	-- Awakened Leviathan's Eye Loop
+					i(171082),	-- Design: Peerless Leviathan's Eye Loop
+				}),
 				i(168702, {	-- Crushing Leviathan's Eye Loop
 					i(168772),	-- Recipe: Ascended Leviathan's Eye Loop
 				}),
@@ -31,11 +35,15 @@ _.Craftables =
 					i(168771),	-- Recipe: Crushing Leviathan's Eye Loop
 				}),
 				i(153685),	-- Owlseye Loop
+				i(171075),	-- Peerless Leviathan's Eye Loop
 				i(153683),	-- Royal Quartz Loop
 				i(153690),	-- Solstone Ring
 				i(166523),	-- Spirited Kraken's Eye Loop
 				i(153684),	-- Tidal Amethyst Loop
 				i(166522),	-- Tidal Kraken's Eye Loop
+				i(171077, {	-- Unbound Leviathan's Eye Loop
+					i(171083),	-- Design: Awakened Leviathan's Eye Loop
+				}),
 			}),
 		}),
 	}),

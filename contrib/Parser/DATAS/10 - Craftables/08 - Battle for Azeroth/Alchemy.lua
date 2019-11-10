@@ -24,6 +24,9 @@ _.Craftables =
 					i(168757),	-- Recipe: Crushing Alchemist Stone
 				}),
 				i(168676),	-- Ascended Alchemist Stone
+				i(171087, {	-- Awakened Alchemist Stone
+					i(171084),	-- Recipe: Peerless Alchemist Stone
+				}),
 				i(168675, {	-- Crushing Alchemist Stone
 					i(168758),	-- Recipe: Ascended Alchemist Stone
 				}),
@@ -32,11 +35,15 @@ _.Craftables =
 				i(152634),	-- Endless Tincture of Renewed Combat
 				i(165928),	-- Eternal Alchemist Stone
 				i(166975),	-- Imbued Alchemist Stone
+				i(171085),	-- Peerless Alchemist Stone
 				i(166974),	-- Sanguinated Alchemist Stone
 				i(152637),	-- Siren's Alchemist Stone
 				i(165927),	-- Spirited Alchemist Stone
 				i(152632),	-- Surging Alchemist Stone
 				i(165926),	-- Tidal Alchemist Stone
+				i(171088, {	-- Unbound Alchemist Stone
+					i(171086),	-- Recipe: Awakened Alchemist Stone
+				}),
 			}),
 		}),
 	}),
