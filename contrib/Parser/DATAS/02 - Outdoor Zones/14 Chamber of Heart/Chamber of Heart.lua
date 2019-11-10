@@ -527,8 +527,11 @@ _.Zones =
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57373,	-- Descending Into Madness
+							["g"] = {
+								currency(1719),	-- Corrupted Memento
+							},
 						}),
-						q(58615, {	-- Whispers in the Dark
+						q(58615, {	-- Whispers in the Dark (picked up in a scenario map with no mapID, but should be 1473)
 							["lvl"] = 120,
 							["coord"] = { 50.1, 59.1, 1473 },
 							["provider"] = { "n", 161805 },	-- Magni Bronzebeard
@@ -543,15 +546,27 @@ _.Zones =
 								spell(315863),	-- Archival Research Database (unlocks the Horrific Visions upgrades)
 							},
 						}),
-						q(57378, {	-- These Dark Materials
+						q(57378, {	-- Remnants of a Shattered World
 							["lvl"] = 120,
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["repeatable"] = true,
 							["sourceQuest"] = 57374,	-- Into the Darkest Depths
-							["g"] = {	-- TODO: confirm this is the item you recieve. The book currently doesn't drop
+							["g"] = {
 								i(171354),	-- Horrific Core
 							},
+						}),
+						q(58631, {	-- Into Dreams
+							["lvl"] = 120,
+							["coord"] = { 50.1, 59.1, 1473 },
+							["provider"] = { "n", 161805 },	-- Magni Bronzebeard
+							["sourceQuest"] = 58615,	-- Whispers in the Dark
+						}),
+						q(58632, {	-- Ny'alotha, the Waking City: The Corruptor's End
+							["lvl"] = 120,
+							["coord"] = { 50.1, 59.1, 1473 },
+							["provider"] = { "n", 161805 },	-- Magni Bronzebeard
+							["sourceQuest"] = 58631,	-- Into Dreams
 						}),
 					}),
 					n(-2,   {	-- Vendors
