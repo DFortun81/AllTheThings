@@ -550,11 +550,16 @@ _.Zones =
 							["lvl"] = 120,
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
-							["repeatable"] = true,
 							["sourceQuest"] = 57374,	-- Into the Darkest Depths
 							["g"] = {
 								i(171354),	-- Horrific Core
 							},
+						}),
+						q(57391, {	-- Reconstructing the Compendium Vol. I
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57378,	-- Remnants of a Shattered World
 						}),
 						q(58631, {	-- Into Dreams
 							["lvl"] = 120,
