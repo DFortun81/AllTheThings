@@ -180,7 +180,7 @@ _.PetBattles =
 				i(169670),	-- Evil Wizard Hat (Minimancer)
 			}),
 			ach(13766, {	-- Malowned
-				["description"] = "To summon Postmaster Malown, find a Discarded Letter on the ground at one of the coordinates provided, and then take it to the mailbox at |cFFFfffff57.8, 13.6|r.",
+				["description"] = "To summon Postmaster Malown, find a Discarded Letter on the ground at one of the coordinates provided and put it in the mailbox at |cFFFfffff57.8, 13.6|r.\n",
 				["coords"] = {
 					{ 40.2, 10.4, 1505 },
 					{ 48.6, 24.9, 1505 },
