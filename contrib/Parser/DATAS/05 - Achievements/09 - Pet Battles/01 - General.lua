@@ -13,6 +13,9 @@ _.Achievements =
 						i(92744),	-- Heavy Sack of Gold
 					}),
 					ach(7936),	-- Pandaren Spirit Tamer*
+					ach(14020, {	-- Pet Battle Challenge: Blackrock Depths
+						i(174830),	-- Shadowy Disguise
+					}),
 					ach(11856, {	-- Pet Battle Challenge: Deadmines*
 						i(151632),	-- Mining Monkey
 					}),
@@ -189,6 +192,14 @@ _.Achievements =
 						crit(39),	-- Kortas Darkhammer [Searing Gorge] /Traitor Gluk [Feralas)
 						crit(40),	-- Everessa [Swamp of Sorrows] / Elena Flutterfly [Moonglade)
 						crit(41),	-- Durin Darkhammer [Burning Steppes] / Analynn [Ashenvale)
+					}),
+					ach(14021, {	-- The Shadows Revealed
+						i(169349),	-- Kelpfin -- TODO:: update this when blizzard changes it. there's no way they're going to keep kelpfin on here when it's already available
+						crit(1),	-- Pet Battle Challenge: Wailing Caverns
+						crit(2),	-- Pet Battle Challenge: Deadmines
+						crit(3),	-- Pet Battle Challenge: Gnomeregan
+						crit(4),	-- Pet Battle Challenge: Stratholme
+						crit(5),	-- Pet Battle Challenge: Blackrock Depths
 					}),
 					ach(7521, {	-- Time to Open a Pet Store [400)*
 						i(89686),	-- Jade Tentacle
