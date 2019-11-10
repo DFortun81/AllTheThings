@@ -145,6 +145,17 @@ _.Achievements =
 						},
 						["races"] = {36},
 					}),
+					ach(14014, {	-- Heritage of the Mechagnome
+						["races"] = { 37 },	-- Mechagnome
+						["g"] = {
+							i(173961),	-- Mechagnome Heritage Helmet
+							i(173963),	-- Mechagnome Heritage Shouldergaurds
+							i(173972),	-- Mechagnome Heritage Cloak
+							i(173958),	-- Mechagnome Heritage Chestpiece
+							i(173964),	-- Mechagnome Heritage Buckle
+							i(173962),	-- Mechagnome Heritage Girdle
+						},
+					}),
 					ach(12413, {	-- Heritage of the Nightborne
 						["questID"] = 49784,	-- Heritage of the Nightborne
 						["races"] = { 27 },	-- Nightborne
@@ -171,6 +182,18 @@ _.Achievements =
 							i(156697),	-- Ren'dorei Bracers
 						},
 						["races"] = {29},
+					}),
+					ach(14002, {	-- Heritage of the Vulpera
+						["races"] = { 35 },	-- Vulpera
+						["g"] = {
+							i(173968),	-- Vulpera Heritage Shawl
+							i(173971),	-- Vulpera Heritage Shoulderpads
+							i(174376),	-- Vulpera Heritage Rucksack
+							i(173966),	-- Vulpera Heritage Vest
+							i(173967),	-- Vulpera Heritage Handgrips
+							i(173970),	-- Vulpera Heritage Utility Belt
+							i(173969),	-- Vulpera Heritage Legguards
+						},
 					}),
 					ach(13503, {	-- Heritage of the Zandalari
 						["g"] = {
