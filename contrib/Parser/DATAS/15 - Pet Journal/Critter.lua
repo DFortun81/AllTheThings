@@ -153,6 +153,7 @@ _.PetJournal =
 		p(454),		-- Undercity Rat
 		p(2843),	-- Void-Scarred Beetle
 		p(2839),	-- Void-Scarred Hare
+		p(2864),	-- Void-Scarred Locust
 		p(2841),	-- Void-Scarred Rat
 		p(410),		-- Wharf Rat
 		un(20, p(127)),		-- Whiskers the Rat
