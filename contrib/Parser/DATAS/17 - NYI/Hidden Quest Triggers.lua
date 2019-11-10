@@ -229,6 +229,9 @@ _.NeverImplemented =
 		q(26119),	-- Vashj'ir - FLAG - Claim Our Stake Launched
 		q(35403),	-- Vortex Pinnacle dungeon reward (Kill Asaad)
 		q(26415),	-- Questflag for Captain's Log — while on #26246, "Captain's Log" in Deepholm
+		q(27079),	-- Twilight Gate Tracking — blowing up the gate during #26861, "Block the Gates" in Deepholm
+		q(27080),	-- Twilight Gate Tracking — blowing up elemental during #26861, "Block the Gates" in Deepholm
+		q(36587),	-- Twilight Gate Tracking — blowing up elemental during #26861, "Block the Gates" in Deepholm
 
 		
 		
