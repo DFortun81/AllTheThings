@@ -286,13 +286,13 @@ _.ExpansionFeatures =
 						i(168436),	-- Focused Star Point (Rank 1)
 					},
 				}),
-				q(58167, {	-- Preventative Measures -- also triggered 58167 and 58815
+				q(58167, {	-- Preventative Measures -- also triggered 58167 (possibly uldum version?) and 58815
 					["coord"] = { 84.2, 51.7, 1530 },
 					["isDaily"] = true,
 					["provider"] = { "n", 160252 },	-- Blacktalon Agent
 					["g"] = {
 						i(174288),	-- Breath of Everlasting Spirit
-						c(1755),	-- Coalescing Visions x200
+						currency(1755),	-- Coalescing Visions x200
 					},
 				}),
 				q(56540, {	-- Proof of Tenacity
