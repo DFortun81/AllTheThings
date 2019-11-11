@@ -267,6 +267,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 135259 },	-- Taelia
 				}),
+				q(54495, {	-- Expanding Our Influence
+					["lvl"] = 120,
+					["coord"] = { 69.0, 24.7, 1161 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 135446 },	-- Vindicator Jaelaana
+				}),
 				q(52128, { 	-- Ferry Pass
 					["sourceQuests"] = { 47186 },	-- Sanctum of Sages
 					["coord"] = { 68.0, 21.9, 1161 },

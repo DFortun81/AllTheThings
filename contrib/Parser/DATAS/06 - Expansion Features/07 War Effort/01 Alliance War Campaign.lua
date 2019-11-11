@@ -1310,7 +1310,6 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 149612 },	-- Shandris Feathermoon
 						["sourceQuest"] = 53990,	-- In Darkest Night
-						["isBreadcrumb"] = true, -- if you abandon this quest, you can't pick it up. Probably related to warfront unlocks account-wide
 					}),
 				--	RISE OF AZSHARA (8.2)
 					q(55784, {	-- Payment in Kind
