@@ -107,34 +107,14 @@ _.ExpansionFeatures =
 							["coord"] = { 68.7, 28.1, 1530 },
 						}),
 						]]--
-						-- TODO:: determine if the black empire caches reset daily
-						o(12000000, {	-- Black Empire Cache
-							["questID"] = 57201,
-							["coord"] = { 81.4, 33.8, 1530 },
-						}),
-						o(12000001, {	-- Black Empire Cache
-							["questID"] = 57200,
-							["coord"] = { 62.6, 57.2, 1530 },
-						}),
-						o(12000002, {	-- Black Empire Cache
-							["questID"] = 57203,
-							["coord"] = { 44.4, 68.6, 1530 },
-						}),
-						o(12000003, {	-- Black Empire Cache
-							["questID"] = 57197,
-							["coord"] = { 44.3, 42.0, 1530 },
-						}),
-						o(12000004, {	-- Black Empire Cache
-							["questID"] = 57202,
-							["coord"] = { 71.5, 68.5, 1530 },
-						}),
-						o(12000005, {	-- Black Empire Cache
-							["questID"] = 57199,
-							["coord"] = { 69.9, 33.2, 1530 },
-						}),
 					}),
 					n(-34,  {	-- World Quests
 						-- TODO:: putting coords here temporarily. The current PTR build doesn't have map indicators
+						q(56076, {	-- Abyssal Ritual
+							["lvl"] = 120,
+							["coord"] = { 74.2, 40.0, 1530 },
+							["isWorldQuest"] = true,
+						}),
 						q(56064, {	-- Assault: The Black Empire
 							["lvl"] = 120,
 							["isWorldQuest"] = true,
@@ -143,6 +123,22 @@ _.ExpansionFeatures =
 									i(173510),	-- Malignant Leviathan's Handguards
 								}),
 							},
+						}),
+						q(56163, {	-- Bound Guardian
+							["lvl"] = 120,
+							["coord"] = { 60.5, 43.3, 1530 },
+							["isWorldQuest"] = true,
+						}),
+						q(56180, {	-- Bound Guardian
+							["lvl"] = 120,
+							["coord"] = { 79.6, 54.3, 1530 },
+							["isWorldQuest"] = true,
+						}),
+						q(58747, {	-- Brain Tickling
+							-- pet battle
+							["lvl"] = 120,
+							["coord"] = { 57.5, 54.3, 1530 },
+							["isWorldQuest"] = true,
 						}),
 						q(56099, {	-- Font of Corruption
 							["lvl"] = 120,
@@ -157,6 +153,11 @@ _.ExpansionFeatures =
 						q(56090, {	-- Protecting the Stout
 							["lvl"] = 120,
 							["coord"] = { 42.4, 67.0, 1530 },
+							["isWorldQuest"] = true,
+						}),
+						q(57375, {	-- Pulsating Mound
+							["lvl"] = 120,
+							["coord"] = { 69.2, 21.8, 1530 },
 							["isWorldQuest"] = true,
 						}),
 						q(56177, {	-- Void Conduit
@@ -259,13 +260,13 @@ _.ExpansionFeatures =
 					["coord"] = { 38.4, 75.0, 1530 },
 					["isDaily"] = true,
 					["provider"] = { "n", 158674 },	-- Anji Autumnlight
-					["sourceQuest"] = 56771,	-- Time-Llost Warriors
+					["sourceQuest"] = 56771,	-- Time-Lost Warriors
 				}),
 				q(57720, {	-- Champions of the Mogu -- wasn't available on latest play-through. Possibly only up when Assault: Warring Clans is up?
 					["coord"] = { 44.7, 73.8, 1530 },
 					["isDaily"] = true,
 					["provider"] = { "n", 154444 },	-- Stormspeaker Qian
-					["sourceQuest"] = 56771,	-- Time-Llost Warriors
+					["sourceQuest"] = 56771,	-- Time-Lost Warriors
 				}),
 				q(56538, {	-- Clans of the Mogu
 					["coord"] = { 83.7, 27.1, 1530 },
@@ -276,14 +277,19 @@ _.ExpansionFeatures =
 					["coord"] = { 83.7, 27.1, 1530 },
 					["provider"] = { "n", 156003 },	-- Lorewalker Cho
 					["sourceQuest"] = 56538,	-- Clans of the Mogu
+					["sourceQuest"] = 56771,	-- Time-Lost Warriors
 				}),
-				q(56542, {	-- Restored Hope
-					["coord"] = { 45.3, 74.3, 1530 },
-					["provider"] = { "n", 154418 },	-- Ra-den
-					["sourceQuest"] = 56541,	-- The Engine of Nalak'sha
+				q(58460, {	-- Marshals of Madness
+					["coord"] = { 44.7, 73.8, 1530 },
+					["isDaily"] = true,
+					["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+				}),
+				q(58167, {	-- Minions of N'Zoth
+					["coord"] = { 84.2, 51.7, 1530 },
+					["isDaily"] = true,
+					["provider"] = { "n", 160252 },	-- Blacktalon Agent
 					["g"] = {
-						i(168573),	-- Death-Resistant Leaf (Rank 1)
-						i(168436),	-- Focused Star Point (Rank 1)
+						currency(1755),	-- Coalescing Visions x20
 					},
 				}),
 				q(58167, {	-- Preventative Measures -- also triggered 58167 (possibly uldum version?) and 58815
@@ -300,11 +306,20 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 154444 },	-- Stormspeaker Qian
 					["sourceQuest"] = 56771,	-- Time-Lost Warriors
 				}),
+				q(56542, {	-- Restored Hope
+					["coord"] = { 45.3, 74.3, 1530 },
+					["provider"] = { "n", 154418 },	-- Ra-den
+					["sourceQuest"] = 56541,	-- The Engine of Nalak'sha
+					["g"] = {
+						i(168573),	-- Death-Resistant Leaf (Rank 1)
+						i(168436),	-- Focused Star Point (Rank 1)
+					},
+				}),
 				q(57721, {	-- Spoils of War -- wasn't available on latest play-through. Possibly only up when Assault: Warring Clans is up?
 					["coord"] = { 43.9, 71.7, 1530 },
 					["isDaily"] = true,
 					["provider"] = { "n", 154677 },	-- Forgemaster Han
-					["sourceQuest"] = 56771,	-- Time-Llost Warriors
+					["sourceQuest"] = 56771,	-- Time-Lost Warriors
 				}),
 				q(56541, {	-- The Engine of Nalak'sha
 					["coord"] = { 45.3, 74.3, 1530 },

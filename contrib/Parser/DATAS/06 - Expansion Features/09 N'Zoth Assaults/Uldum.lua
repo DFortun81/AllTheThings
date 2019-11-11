@@ -588,6 +588,7 @@ _.ExpansionFeatures =
 			}),
 			n(-34, {	-- World Quests
 				q(58743, {	-- Dune Buggy
+					-- pet battle
 					["lvl"] = 120,
 					["coord"] = { 35.5, 31.6, 1527 },
 					["isWorldQuest"] = true,

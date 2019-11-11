@@ -1496,7 +1496,7 @@ _.NeverImplemented =
 		q(58002),	-- Combining Coalescing Visions 3x
 		q(58409),	-- Combining Coalescing Visions 4x
 		
-		q(58085),	-- Triggered upon entering the vision to the Shrine of Seven Stars
+		q(58085),	-- Triggered upon entering the vision to the Shrine of Seven Stars -- TODO:: verify this. didn't pop up since latest PTR build
 		
 		-- Horrific Visions
 		q(57039),	-- Valley of Spirits cleansed (Orgrimmar)
@@ -1515,13 +1515,19 @@ _.NeverImplemented =
 		q(57027),	-- looted the chest in front of Thrall's image at the end of the scenario. Doesn't matter if you defeat him or not
 		q(57360),	-- looted the chest in front of Alleria's image at the end of the scenario. Doesn't matter if you defeat her or not
 		
+		q(58578),	-- looted the chest from cleansing the Dwarven District at the end of the scenario (could possibly be from looting "Spark of Inspiration" Rank 2)
 		q(58579),	-- looted the Overflowing Azerite Geode (Rank 1)
 		--[[
 		58840 - looted the chest in front of zekhan. Torn Page of Compednium, Vol.II and Sparks of Unwavering Strength dropped
 		57841, 58581 -- both triggered on the first run of the Vision of Orgrimmar after unlocking it, then killing Thrall immediately.
 						Possibly related to Mark of Boistrous Duty (Rank 1) dropping? Torn Page of Compendium, Vol. 1 (item 171353) as well? Need to run a few times to see if this is guaranteed or not
 		]]--
-		
-		q(58578),	-- looted the chest from cleansing the Dwarven District at the end of the scenario (could possibly be from looting "Spark of Inspiration" Rank 2)
+		-- N'Zoth assaults
+		q(57201),	-- Vale of Eternal Sorrows - Black Empire Cache
+		q(57200),	-- Vale of Eternal Sorrows - Black Empire Cache
+		q(57203),	-- Vale of Eternal Sorrows - Black Empire Cache
+		q(57197),	-- Vale of Eternal Sorrows - Black Empire Cache
+		q(57202),	-- Vale of Eternal Sorrows - Black Empire Cache
+		q(57199),	-- Vale of Eternal Sorrows - Black Empire Cache
 	}),
 };
