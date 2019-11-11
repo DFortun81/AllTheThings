@@ -499,6 +499,11 @@ _.ExpansionFeatures =
 						},
 					}),
 				--	BLOOD ON THE SAND STARTS HERE
+					q(52026, {	-- Overseas Assassination
+						["coord"] = { 69.2, 26.9, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
+					}),
 					q(52027, {	-- The Vol'dun Plan
 						["provider"] = { "n", 139705 },	-- Halford Wyrmbane
 						["coord"] = { 37.7, 35.8, 864 },	-- Vol'dun
