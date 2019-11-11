@@ -87,6 +87,7 @@ _.NeverImplemented =
 
 	--	DUNGEONS
 		q(35929),	-- Blackfathom Deeps Reward Quest
+		q(35930),	-- Blackfathom Deeps (Bonus) Reward Quest
 		q(35903),	-- Blackrock Depths (Detention Bonus) Reward Quest
 		q(35902),	-- Blackrock Depths (Upper City) Reward Quest
 		q(35586),	-- Deadmines normal completion
