@@ -256,6 +256,12 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-17,  {	-- Quests
+				q(58420, {	-- A Foul Annoyance
+					["coord"] = { 44.7, 73.8, 1530 },
+					["isDaily"] = true,
+					["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+					["sourceQuest"] = 56771,	-- Time-Lost Warriors
+				}),
 				q(58476, {	-- Bringing the Thunder -- wasn't available on latest play-through. Possibly only up when Assault: Warring Clans is up?
 					["coord"] = { 38.4, 75.0, 1530 },
 					["isDaily"] = true,
@@ -284,7 +290,7 @@ _.ExpansionFeatures =
 					["isDaily"] = true,
 					["provider"] = { "n", 154444 },	-- Stormspeaker Qian
 				}),
-				q(58167, {	-- Minions of N'Zoth
+				q(58161, {	-- Minions of N'Zoth
 					["coord"] = { 84.2, 51.7, 1530 },
 					["isDaily"] = true,
 					["provider"] = { "n", 160252 },	-- Blacktalon Agent
@@ -292,7 +298,7 @@ _.ExpansionFeatures =
 						currency(1755),	-- Coalescing Visions x20
 					},
 				}),
-				q(58167, {	-- Preventative Measures -- also triggered 58167 (possibly uldum version?) and 58815
+				q(58167, {	-- Preventative Measures
 					["coord"] = { 84.2, 51.7, 1530 },
 					["isDaily"] = true,
 					["provider"] = { "n", 160252 },	-- Blacktalon Agent
@@ -325,6 +331,12 @@ _.ExpansionFeatures =
 					["coord"] = { 45.3, 74.3, 1530 },
 					["provider"] = { "n", 154418 },	-- Ra-den
 					["sourceQuest"] = 56540,	-- Proof of Tenacity
+				}),
+				q(58423, {	-- The Strongest Among Them
+					["coord"] = { 44.7, 73.8, 1530 },
+					["isDaily"] = true,
+					["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+					["sourceQuest"] = 56771,	-- Time-Lost Warriors
 				}),
 				q(56771, {	-- Time-Lost Warriors
 					["coord"] = { 83.1, 27.2, 1530 },
