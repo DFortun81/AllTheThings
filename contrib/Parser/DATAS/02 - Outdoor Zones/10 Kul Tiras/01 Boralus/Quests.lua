@@ -307,7 +307,7 @@ _.Zones =
 				}),
 				q(53847, {	-- On Whispered Winds
 					["coord"] = { 70.7, 26.8, 1161 },
-					["races"] = { 4 },	-- Night Elf
+					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 152000 },	-- Dori'thur
 					["g"] = {
 						spell(290834),	-- Blessing of the Night Warrior

@@ -920,6 +920,7 @@ _.NeverImplemented =
 		q(54771),	-- triggered when turning in #53701, "A Drust Cause," drustvar assault.  had WM on but i'm not sure if that's relevant
 		q(54782),	-- triggered when turning in #53711, "A Sound Defense," tiragarde sound assault.  had WM on but i'm not sure if that's relevant
 		q(57593),	-- triggered when talking to chromie in CoT during the 2019 anniversary event, before turning in #57249, "A Timely Invitation"
+		q(54035),	-- Blessing of the Night Warden unlock chain started
 
 
 	--	HONEYBACK HIVE

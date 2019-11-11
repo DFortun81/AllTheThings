@@ -1269,6 +1269,49 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54163 },	-- As the Dust Settles
 					}),
+					-- Night Warrior appearance unlock
+					q(53849, {	-- Waning Hope
+						["coord"] = { 86.6, 35.7, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 146050 },	-- Maiev Shadowsong
+						["sourceQuest"] = 53847,	-- On Whispered Winds
+					}),
+					q(53988, {	-- Shores of Fate
+						["coord"] = { 86.6, 35.7, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 146050 },	-- Maiev Shadowsong
+						["sourceQuest"] = 53849,	-- Waning Hope
+					}),
+					q(53989, {	-- Hope
+						["lvl"] = 120,
+						["coord"] = { 11.5, 17.6, 63 },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 146374 },	-- Shandris Feathermoon
+						["sourceQuest"] = 53988,	-- Shores of Fate
+					}),
+					q(54041, {	-- No Survivors
+						["lvl"] = 120,
+						["coord"] = { 11.4, 17.8, 63 },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 146375 },	-- Sira Moonwarden
+						["sourceQuest"] = 53988,	-- Shores of Fate
+					}),
+					q(53990, {	-- In Darkest Night
+						["coord"] = { 86.6, 35.7, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 146050 },	-- Maiev Shadowsong
+						["sourceQuests"] = {
+							53989,	-- Hope
+							54041,	-- No Survivors
+						},
+					}),
+					q(54871, {	-- We Are Coming
+						["coord"] = { 69.5, 26.8, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 149612 },	-- Shandris Feathermoon
+						["sourceQuest"] = 53990,	-- In Darkest Night
+						["isBreadcrumb"] = true, -- if you abandon this quest, you can't pick it up. Probably related to warfront unlocks account-wide
+					}),
 				--	RISE OF AZSHARA (8.2)
 					q(55784, {	-- Payment in Kind
 						["sourceQuests"] = {
