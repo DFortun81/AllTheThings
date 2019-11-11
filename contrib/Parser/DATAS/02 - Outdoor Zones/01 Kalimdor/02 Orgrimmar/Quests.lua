@@ -464,6 +464,189 @@ _.Zones =
 									}),
 								}),
 								n(-255, {	-- Vulpera
+									q(53870, {	-- Guests at Grommash Hold
+										["lvl"] = 120,
+										["coord"] = { 37.7, 81.1, 85 },
+										["provider"] = { "n", 133523 },	-- Ji Firepaw
+										["description"] = "Must be exalted with |cFFFFD700Voldunai|r and complete the |cFFFFD700Secrets in the Sands|r achievement.",
+									}),
+									q(53889, {	-- A Declaration of Intent
+										["lvl"] = 120,
+										["coord"] = { 48.8, 72.7, 85 },
+										["provider"] = { "n", 145416 },	-- Kiro
+										["sourceQuest"] = 53870,	-- Guests at Grommash Hold
+									}),
+									q(53890, {	-- New Allies, New Problems
+										["lvl"] = 120,
+										["coord"] = { 48.8, 72.7, 85 },
+										["provider"] = { "n", 145416 },	-- Kiro
+										["sourceQuest"] = 53889,	-- A Declaration of Intent
+									}),
+									q(53891, {	-- No Problem Too Small
+										["lvl"] = 120,
+										["coord"] = { 48.8, 72.7, 85 },
+										["provider"] = { "n", 145416 },	-- Kiro
+										["sourceQuest"] = 53890,	-- New Allies, New Problems
+									}),
+									q(53892, {	-- Where Are the Workers?
+										["lvl"] = 120,
+										["maps"] = { 84 },	-- Twilight Highlands
+										["coord"] = { 44.1, 73.4, 84 },
+										["provider"] = { "n", 145641 },	-- Kiro
+										["sourceQuest"] = 53891,	-- No Problem Too Small
+									}),
+									q(53893, {	-- A Little Goodwill
+										["lvl"] = 120,
+										["maps"] = { 84 },	-- Twilight Highlands
+										["coord"] = { 46.8, 66.2, 84 },
+										["provider"] = { "n", 145416 },	-- Kiro
+										["sourceQuest"] = 53892,	-- Where Are the Workers?
+									}),
+									q(53894, {	-- Worthwhile Repairs
+										["lvl"] = 120,
+										["maps"] = { 84 },	-- Twilight Highlands
+										["coord"] = { 46.8, 66.2, 84 },
+										["provider"] = { "n", 145416 },	-- Kiro
+										["sourceQuest"] = 53892,	-- Where Are the Workers?
+									}),
+									q(53895, {	-- Peon Promotions!
+										["lvl"] = 120,
+										["maps"] = { 84 },	-- Twilight Highlands
+										["coord"] = { 46.8, 66.2, 84 },
+										["provider"] = { "n", 145416 },	-- Kiro
+										["sourceQuest"] = 53892,	-- Where Are the Workers?
+									}),
+									q(53897, {	-- A Party in Your Honor
+										["lvl"] = 120,
+										["maps"] = { 84 },	-- Twilight Highlands
+										["coord"] = { 46.8, 66.2, 84 },
+										["provider"] = { "n", 145416 },	-- Kiro
+										["sourceQuests"] = {
+											53893,	-- A Little Goodwill
+											53895,	-- Peon Promotions!
+											53894,	-- Worthwhile Repairs
+										},
+									}),
+									q(53898, {	-- Strength and Honor
+										["lvl"] = 120,
+										["maps"] = { 84 },	-- Twilight Highlands
+										["coord"] = { 45.0, 76.2, 84 },
+										["provider"] = { "n", 145416 },	-- Kiro
+										["sourceQuest"] = 53897,	-- A Party in Your Honor
+									}),
+									q(54026, {	-- Job's Done
+										["lvl"] = 120,
+										["maps"] = { 84 },	-- Twilight Highlands
+										["coord"] = { 45.0, 76.2, 84 },
+										["provider"] = { "n", 145416 },	-- Kiro
+										["sourceQuest"] = 53898,	-- Strength and Honor
+									}),
+									q(53899, {	-- On the Outskirts
+										["lvl"] = 120,
+										["coord"] = { 49.0, 73.6, 85 },
+										["provider"] = { "n", 145416 },	-- Kiro
+										["sourceQuest"] = 54026,	-- Job's Done
+									}),
+									q(58087, {	-- Destroying the Source
+										["lvl"] = 120,
+										["maps"] = { 862 },	-- Zuldazar
+										["coord"] = { 74.8, 63.0, 862 },
+										["provider"] = { "n", 145980},	-- Nisha
+										["sourceQuest"] = 53899,	-- On the Outskirts
+									}),
+									q(53901, {	-- Explosions Always Work
+										["lvl"] = 120,
+										["maps"] = { 862 },	-- Zuldazar
+										["coord"] = { 74.8, 63.0, 862 },
+										["provider"] = { "n", 145980},	-- Nisha
+										["sourceQuest"] = 53899,	-- On the Outskirts
+									}),
+									q(53900, {	-- We'll Use Their Weapons
+										["lvl"] = 120,
+										["maps"] = { 862 },	-- Zuldazar
+										["coord"] = { 74.8, 63.0, 862 },
+										["provider"] = { "n", 145980},	-- Nisha
+										["sourceQuest"] = 53899,	-- On the Outskirts
+									}),
+									q(53902, {	-- Taking Out the Tidecaller
+										["lvl"] = 120,
+										["maps"] = { 862 },	-- Zuldazar
+										["coord"] = { 74.8, 63.0, 862 },
+										["provider"] = { "n", 145980},	-- Nisha
+										["sourceQuests"] = {
+											58087,	-- Destroying the Source
+											53901,	-- Explosions Always Work
+											53900,	-- We'll Use Their Weapons
+										},
+									}),
+									q(54027, {	-- Threat Contained
+										["lvl"] = 120,
+										["maps"] = { 862 },	-- Zuldazar
+										["coord"] = { 74.8, 63.0, 862 },
+										["provider"] = { "n", 145980},	-- Nisha
+										["sourceQuest"] = 53902,	-- Taking Out the Tidecaller
+									}),
+									q(53903, {	-- Meet with Meerah
+										["lvl"] = 120,
+										["coord"] = { 49.0, 73.6, 85 },
+										["provider"] = { "n", 145416 },	-- Kiro
+										["sourceQuest"] = 54027,	-- Threat Contained
+									}),
+									q(53904, {	-- The Vintner's Assistants
+										["lvl"] = 120,
+										["maps"] = { 680 },	-- Suramar
+										["coord"] = { 58.9, 55.0, 680 },
+										["provider"] = { "n", 146264 },	-- Meerah
+										["sourceQuest"] = 53903,	-- Meet with Meerah
+									}),
+									q(53905, {	-- Playing to Their Strengths
+										["lvl"] = 120,
+										["maps"] = { 680 },	-- Suramar
+										["coord"] = { 58.9, 55.0, 680 },
+										["provider"] = { "n", 146264 },	-- Meerah
+										["sourceQuest"] = 53904,	-- The Vintner's Assistants
+									}),
+									q(54036, {	-- A Particular Process
+										["lvl"] = 120,
+										["maps"] = { 680 },	-- Suramar
+										["coord"] = { 58.7, 55.5, 680 },
+										["provider"] = { "n", 157668 },	-- Meerah
+										["sourceQuest"] = 53905,	-- Playing to Their Strengths
+									}),
+									q(53906, {	-- Fermented for the Horde
+										["lvl"] = 120,
+										["maps"] = { 680 },	-- Suramar
+										["coord"] = { 60.5, 56.2, 680 },
+										["provider"] = { "n", 146301 },	-- Nomi
+										["sourceQuest"] = 54036,	-- A Particular Process
+									}),
+									q(53907, {	-- Sip and Savor
+										["lvl"] = 120,
+										["maps"] = { 680 },	-- Suramar
+										["coord"] = { 60.5, 56.2, 680 },
+										["provider"] = { "n", 146301 },	-- Nomi
+										["sourceQuest"] = 53906,	-- Fermented for the Horde
+										["g"] = {
+											i(173727),	-- Nomi's Vintage (Toy)
+										},
+									}),
+									q(53908, {	-- Awaiting Our Arrival
+										["lvl"] = 120,
+										["maps"] = { 680 },	-- Suramar
+										["coord"] = { 58.7, 55.5, 680 },
+										["provider"] = { "n", 157668 },	-- Meerah
+										["sourceQuest"] = 53907,	-- Sip and Savor
+									}),
+									q(57448, {	-- New Allies Among Us
+										["lvl"] = 120,
+										["coord"] = { 48.2, 71.0, 85 },
+										["provider"] = { "n", 145424 },	-- Baine Bloodhoof
+										["sourceQuest"] = 53908,	-- Awaiting Our Arrival
+										["g"] = {
+											i(174066),	-- Caravan Hyena
+										},
+									}),
+									-- Vulpera starter quests
 									q(58122, {	-- For the Horde
 										["provider"] = { "n", 160452 },	-- Nilsa
 										["coord"] = { 64.6, 46.5, 85 },

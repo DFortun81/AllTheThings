@@ -109,7 +109,9 @@ _.Achievements =
 						["g"] = {
 							ach(12478),	-- Secrets in the Sands
 							faction(2158),	-- Voldunai
-							i(174066),	-- Caravan Hyena -- TODO:: needs the source quest linked here to be consistent with other entries
+							q(57448, {	-- New Allies Among Us
+								i(174066),	-- Caravan Hyena
+							}),
 						},
 					}),
 					un(3, ach(9016, {	-- Breaker of the Black Harvest
