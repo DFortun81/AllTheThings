@@ -123,9 +123,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(53436, {	-- Azerite for the Alliance
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(51584, {	-- Azerite Madness
 						["isWorldQuest"] = true,
 						["lvl"] = 120,

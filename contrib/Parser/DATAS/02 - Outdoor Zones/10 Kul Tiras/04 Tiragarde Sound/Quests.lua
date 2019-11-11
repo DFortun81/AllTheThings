@@ -1501,9 +1501,6 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(53436, {	-- Azerite for the Alliance
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(51584, {	-- Azerite Madness
 					["collectible"] = false,
 					["lvl"] = 120,
