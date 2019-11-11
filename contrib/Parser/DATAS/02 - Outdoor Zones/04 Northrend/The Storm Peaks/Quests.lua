@@ -872,6 +872,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12822 },	-- Know No Fear
 				}),
+				q(13060, {	-- When All Else Fails
+					["provider"] = { "n", 29428 },	-- Ricket
+					["coord"] = { 40.9, 85.3, 120 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 12822 },	-- Know No Fear
+				}),
 				q(12966, {	-- You Can't Miss Him
 					["provider"] = { "n", 30105 },	-- King Jokkum
 					["coord"] = { 65.3, 60.1, 120 },

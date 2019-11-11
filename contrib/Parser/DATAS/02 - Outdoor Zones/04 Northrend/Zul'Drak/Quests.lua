@@ -526,6 +526,7 @@ _.Zones =
 					["sourceQuest"] = 12667,	-- Seek the Wind Serpent Goddess
 				}),
 				q(12643, {	-- Silver Lining
+					["altQuests"] = { 12629 },	-- You Can Run, But You Can't Hide (Available if you DO NOT complete "Cleansing Drak'Tharon")
 					["coord"] = { 14.0, 73.7, 121 },
 					["provider"] = { "n", 28518 },	-- Stefan Vadu
 					["sourceQuest"] = 12638,	-- Close Call

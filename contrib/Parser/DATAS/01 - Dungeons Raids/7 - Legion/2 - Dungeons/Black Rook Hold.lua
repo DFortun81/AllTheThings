@@ -49,6 +49,10 @@ _.Instances = { tier(7, {	-- Legion
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
+				q(43714, {	-- Black Rook Hold: Worst of the Worst
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 			}),
 			d(1, {	-- Normal
 				cr(98542, e(1518, {	-- Amalgam of Souls

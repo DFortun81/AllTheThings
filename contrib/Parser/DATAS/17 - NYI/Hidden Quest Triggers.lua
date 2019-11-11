@@ -164,7 +164,7 @@ _.NeverImplemented =
 		-------------------
 		--     WOTLK     --
 		-------------------
-		-- dungeons
+		-- Dungeons & Raids
 		q(35489),	-- Ahn'Kahet: The Old Kingdom normal completion
 		q(35490),	-- Ahn'Kahet: The Old Kingdom heroic completion
 		q(35493),	-- Ahn'Kahet: The Old Kingdom bonus objective completed (kill Amanitar, heroic only)
@@ -200,6 +200,10 @@ _.NeverImplemented =
 		q(35512),	-- Utgarde Keep heroic completion
 		q(35449),	-- Utgarde Pinnacle normal completion
 		q(35453),	-- Utgarde Pinnacle heroic completion
+		q(24809),	-- Healer Ring Flag (doing "A Change of Heart" in ICC and choosing the healer ring
+		q(24844),	-- A Change of Heart — on shadow priest, was DPS, switched to heal ring
+		q(24845),	-- A Change of Heart — on shadow priest, was heal, switched to DPS ring
+		-- there are 19 "A Change of Heart" quests, no idea how to determine what classes they're for or what other restrictions there may be, so placing these here for now
 		
 		-- Zones
 		q(46051),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 01

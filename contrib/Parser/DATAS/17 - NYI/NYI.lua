@@ -1284,7 +1284,6 @@ _.NeverImplemented =
 			un(1, i(163457)),	-- Honorbound Centurion's Helmet
 			un(1, i(163454)),	-- Honorbound Centurion's Pauldrons
 			un(1, i(163462)),	-- Honorbound Centurion's Girdle
-			un(1, i(39649)),	-- unknown
 			un(1, i(41759)),	-- unknown
 			un(1, i(42885)),	-- unknown
 			un(1, i(43848)),	-- unknown
