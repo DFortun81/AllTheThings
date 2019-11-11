@@ -611,7 +611,10 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 53069 },	-- Operation: Blood Arrow
+						["sourceQuests"] = {
+							52146,	-- Blood on the Sand
+							53069,	-- Operation: Blood Arrow
+						},
 					}),
 				--	CHASING DARKNESS STARTS HERE
 					q(52150, {	-- How to Kill a Dark Ranger
@@ -666,13 +669,17 @@ _.ExpansionFeatures =
 				--	BETWEEN CHASING DARKNESS AND A GOLDEN OPPORTUNITY
 					q(53070, {	-- Operation: Cutpurse
 						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 52219 },	-- Target: Blood Prince Dreven
 					}),
 					q(52154, {	-- Our Next Target
 						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 53070 },	-- Operation: Cutpurse
+						["sourceQuests"] = {
+							53070,	-- Operation: Cutpurse
+							52219,	-- Target: Blood Prince Dreven
+						},
 					}),
 					q(52173, {	-- The Void Elves Stand Ready
 						["provider"] = { "n", 140348 },	-- Magister Umbric
@@ -734,13 +741,17 @@ _.ExpansionFeatures =
 				--	BETWEEN A GOLDEN OPPORTUNITY AND BLOOD IN THE WATER
 					q(53071, {	-- Operation: Gryphon's Claw
 						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 52261 },	-- Gallywix Got Away
 					}),
 					q(52308, {	-- Intercepted Orders
 						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 53071 },	-- Operation: Gryphon's Claw
+						["sourceQuests"] = {
+							52261,	-- Gallywix Got Away
+							53071,	-- Operation: Gryphon's Claw
+						},
 					}),
 					q(52489, {	-- Hunting Blood Prince Dreven
 						["provider"] = { "n", 141356 },	-- Shandris Feathermoon
@@ -808,7 +819,10 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 53072 },	-- Operation: Heartstrike
+						["sourceQuests"] = {
+							52496,	-- A Clean Escape
+							53072,	-- Operation: Heartstrike
+						},
 					}),
 				--	THE STRIKE ON ZULDAZAR STARTS HERE
 					q(52282, {	-- How to Sink a Zandalari Battleship
