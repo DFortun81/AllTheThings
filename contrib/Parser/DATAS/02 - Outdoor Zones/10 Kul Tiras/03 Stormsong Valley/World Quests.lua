@@ -154,11 +154,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(50996, {	-- Work Order: Mistscale
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(52345, {	-- Work Order: Ravenberry Tarts
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -964,6 +959,12 @@ _.Zones =
 						["g"] = {
 							i(162258),	-- Recipe: Lightfoot Potion (Rank 3)
 						},
+					}),
+					q(50996, {	-- Work Order: Mistscale
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = 393,	-- Skinning
 					}),
 					q(50981, {	-- Work Order: Riverbud
 						["isWorldQuest"] = true,
