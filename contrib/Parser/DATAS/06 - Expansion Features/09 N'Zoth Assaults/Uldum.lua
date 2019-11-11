@@ -239,6 +239,11 @@ _.ExpansionFeatures =
 							["coord"] = { 78.2, 57.6, 1527 },
 							["isWorldQuest"] = true,
 						}),
+						q(57219, {	-- Unearthed Keeper
+							["lvl"] = 120,
+							["coord"] = { 65.5, 37.8, 1527 },
+							["isWorldQuest"] = true,
+						}),
 					}),
 				}),
 				n(-10076, {	-- Assault: The Black Empire
@@ -424,6 +429,13 @@ _.ExpansionFeatures =
 						currency(1755),	-- Coalescing Visions
 					},
 				}),
+				q(58283, {	-- Blind Leading the Blind
+					["lvl"] = 120,
+					["coord"] = { 54.6, 32.8, 1527 },
+					["isDaily"] = true,
+					["provider"] = { "n", 155099 },	-- High Priest Amet
+					["sourceQuest"] = 56472,	-- The Uldum Accord
+				}),
 				q(58639, {	-- Buried History
 					["lvl"] = 120,
 					["coord"] = { 68.9, 57.9, 1527 },
@@ -591,6 +603,12 @@ _.ExpansionFeatures =
 					-- pet battle
 					["lvl"] = 120,
 					["coord"] = { 35.5, 31.6, 1527 },
+					["isWorldQuest"] = true,
+				}),
+				q(58742, {	-- Retinus the Seeker
+					-- pet battle
+					["lvl"] = 120,
+					["coord"] = { 62.0, 31.9, 1527 },
 					["isWorldQuest"] = true,
 				}),
 			}),
