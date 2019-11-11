@@ -193,7 +193,7 @@ _.WorldEvents =
 							},
 						}),
 						q(57303, {	-- The Quartermaster
-							--["provider"] = { "n", ? },	-- Mountaineer Boombellow
+							["provider"] = { "n", 13797 },	-- Mountaineer Boombellow
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 						}),
@@ -211,14 +211,14 @@ _.WorldEvents =
 						}),
 						q(57730, {	-- Zinfizzlex's Portable Shredder Unit (A)
 							['description'] = "Questgiver is west of Korrak (over the bridge) and you have to escort him to your base. After bringing him to safety he offers the quest.",
-							--["provider"] = { "n", ? },	-- Master Engineer Zinfizzlex
+							["provider"] = { "n", 13377 },	-- Master Engineer Zinfizzlex
 							["repeatable"] = true,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 						}),
 						q(57731, {	-- Zinfizzlex's Portable Shredder Unit (H)
 							['description'] = "Questgiver is west of Korrak (over the bridge) and you have to escort him to your base. After bringing him to safety he offers the quest.",
-							--["provider"] = { "n", ? },	-- Master Engineer Zinfizzlex
+							["provider"] = { "n", 13377 },	-- Master Engineer Zinfizzlex
 							["repeatable"] = true,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
