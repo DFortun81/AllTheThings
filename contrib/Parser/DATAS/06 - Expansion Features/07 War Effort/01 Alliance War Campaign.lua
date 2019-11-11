@@ -767,6 +767,11 @@ _.ExpansionFeatures =
 							52491,	-- Broadside Bedlam
 						},
 					}),
+					q(53131, {	-- Kings' Rest (Unlocks Kings' Rest)
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 142228 },	-- Shandris Feathermoon
+						["sourceQuest"] = 52492,	-- The Wildhammer Specialty
+					}),
 					q(52493, {	-- An Unnatural Crew
 						["provider"] = { "n", 142228 },	-- Shandris Feathermoon
 						["coord"] = { 41.7, 56.9, 1156 },	-- The Great Sea
