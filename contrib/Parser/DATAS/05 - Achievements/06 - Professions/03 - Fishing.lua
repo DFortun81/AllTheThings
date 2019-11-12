@@ -345,7 +345,7 @@ _.Achievements =
 						crit(10),	-- Tasty Steelfin
 					}),
 					ach(13502, {	-- Secret Fish and Where to Find Them
-						i(168016),	-- Hyper-Compressed Ocean
+						["description"] = "First, acquire the Secret Fish Goggles from Danielle Anglers in Mechagon.\n\nWhen you use the goggles, you gain a 1 hour buff that allows you to see Secret Fish - fish in bubbles appearing around your character. When you see one, approach it and click on it, and you'll get a fish. That fish will be a BfA, or zone-relevant common fish, or one of the requirements for this achievement (assuming you have fulfill the requirements for each fish).",
 						{	-- Ancient Mana Fin
 							["criteriaID"] = 1,	-- Ancient Mana Fin
 							["itemID"] = 167708,	-- Ancient Mana Fin
@@ -498,6 +498,10 @@ _.Achievements =
 							["criteriaID"] = 30,	-- Well Lurker
 							["itemID"] = 169898,	-- Well Lurker
 							["description"] = "Found in Mount Hyjal, in the lake under Nordrassil.",
+						},
+						{	-- Hyper-Compressed Ocean
+							["itemID"] = 168016,	-- Hyper-Compressed Ocean
+							["description"] = "The reward for this achievement.",
 						},
 					}),
 					ach(2095, {		-- Silver in the City
