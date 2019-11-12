@@ -87,6 +87,7 @@ _.NeverImplemented =
 
 	--	DUNGEONS
 		q(35929),	-- Blackfathom Deeps Reward Quest
+		q(35930),	-- Blackfathom Deeps (Bonus) Reward Quest
 		q(35903),	-- Blackrock Depths (Detention Bonus) Reward Quest
 		q(35902),	-- Blackrock Depths (Upper City) Reward Quest
 		q(35586),	-- Deadmines normal completion
@@ -164,7 +165,7 @@ _.NeverImplemented =
 		-------------------
 		--     WOTLK     --
 		-------------------
-		-- dungeons
+		-- Dungeons & Raids
 		q(35489),	-- Ahn'Kahet: The Old Kingdom normal completion
 		q(35490),	-- Ahn'Kahet: The Old Kingdom heroic completion
 		q(35493),	-- Ahn'Kahet: The Old Kingdom bonus objective completed (kill Amanitar, heroic only)
@@ -200,6 +201,10 @@ _.NeverImplemented =
 		q(35512),	-- Utgarde Keep heroic completion
 		q(35449),	-- Utgarde Pinnacle normal completion
 		q(35453),	-- Utgarde Pinnacle heroic completion
+		q(24809),	-- Healer Ring Flag (doing "A Change of Heart" in ICC and choosing the healer ring
+		q(24844),	-- A Change of Heart — on shadow priest, was DPS, switched to heal ring
+		q(24845),	-- A Change of Heart — on shadow priest, was heal, switched to DPS ring
+		-- there are 19 "A Change of Heart" quests, no idea how to determine what classes they're for or what other restrictions there may be, so placing these here for now
 		
 		-- Zones
 		q(46051),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 01
@@ -228,6 +233,10 @@ _.NeverImplemented =
 		q(28106),	-- Twilight Highlands - triggers when the Grim Batol gates are broken open during "If The Key Fits"
 		q(26119),	-- Vashj'ir - FLAG - Claim Our Stake Launched
 		q(35403),	-- Vortex Pinnacle dungeon reward (Kill Asaad)
+		q(26415),	-- Questflag for Captain's Log — while on #26246, "Captain's Log" in Deepholm
+		q(27079),	-- Twilight Gate Tracking — blowing up the gate during #26861, "Block the Gates" in Deepholm
+		q(27080),	-- Twilight Gate Tracking — blowing up elemental during #26861, "Block the Gates" in Deepholm
+		q(36587),	-- Twilight Gate Tracking — blowing up elemental during #26861, "Block the Gates" in Deepholm
 
 		
 		
@@ -912,6 +921,8 @@ _.NeverImplemented =
 		q(54771),	-- triggered when turning in #53701, "A Drust Cause," drustvar assault.  had WM on but i'm not sure if that's relevant
 		q(54782),	-- triggered when turning in #53711, "A Sound Defense," tiragarde sound assault.  had WM on but i'm not sure if that's relevant
 		q(57593),	-- triggered when talking to chromie in CoT during the 2019 anniversary event, before turning in #57249, "A Timely Invitation"
+		q(54035),	-- Blessing of the Night Warden unlock chain started
+		q(53956),	-- Triggered when turning in "We Are Coming" as alliance. Probably related to darkshore warfront unlock?
 
 
 	--	HONEYBACK HIVE
@@ -976,6 +987,9 @@ _.NeverImplemented =
 		q(55391),	-- Zuldazar Secret Supply Chest (playing as Horde and Alliance)
 		q(53640),	-- Zuldazar Secret Supply Chest (as Horde) / Zuldazar, Tiragarde, Nazmir, Vol'dun, Drustvar (as Alliance) (it probably triggers on both factions in all old BfA zones)
 		q(55412),	-- looting War Supply Crate in Vol'dun on Alliance (not secret chest)
+		q(55409),	-- looting War Supply Crate in Nazmir on Alliance (not secret chest)
+		q(55410),	-- looting War Supply Crate in Stormsong Valley on Alliance (not secret chest)
+		q(55411),	-- looting War Supply Crate in Tiragarde Sound on Alliance (not secret chest)
 		q(55431),	-- Conquest's Reward — automatically offered when you cap conquest for the week
 		q(53349),	-- Conquest's Reward — automatically offered when you cap conquest for the week
 		q(53478),	-- Conquest's Reward — automatically offered when you cap conquest for the week
@@ -1098,6 +1112,7 @@ _.NeverImplemented =
 		q(49913),	-- Nazmir repeatable random chest
 		q(49914),	-- Nazmir repeatable random chest
 		q(49899),	-- Nazmir repeatable random chest
+		q(49924),	-- Nazmir repeatable random chest
 		q(50922),	-- Vol'dun repeatable random chest
 		q(50920),	-- Vol'dun repeatable random chest
 		q(51673),	-- Vol'dun repeatable random chest

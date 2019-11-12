@@ -58,6 +58,9 @@ _.Zones =
 						i(131255),	-- Shouldersguards of Raw Power
 					},
 				}),
+				q(7908,  {	-- Arena Master
+					["u"] = 40,	-- Legacy Quests
+				}),
 				q(204,   {	-- Bad Medicine
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,

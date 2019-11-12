@@ -1148,6 +1148,16 @@ _.Zones =
 						},
 					},
 				},
+				q(51139, {	-- WANTED: Ayame
+					["coord"] = { 62.3, 41.3, 863 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 293568 },	-- Wanted Poster
+				}),
+				q(51139, {	-- WANTED: Tojek
+					["coord"] = { 62.1, 41.0, 863 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 287327 },	-- Scouting Report
+				}),
 				{	-- What Rots Beneath
 					["questID"] = 51244,
 					["provider"] = { "n", 140656 },	-- Rokhan

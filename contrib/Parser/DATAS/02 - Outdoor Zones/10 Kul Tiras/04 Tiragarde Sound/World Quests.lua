@@ -123,9 +123,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(53436, {	-- Azerite for the Alliance
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(51584, {	-- Azerite Madness
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -1430,11 +1427,6 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52333, {	-- Work Order: Sea Mist Potion
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52417, {	-- Work Order: Shimmerscale Diving Helmet
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

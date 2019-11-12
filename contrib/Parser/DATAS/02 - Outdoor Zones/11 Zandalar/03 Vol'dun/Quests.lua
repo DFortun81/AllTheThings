@@ -1658,6 +1658,7 @@ _.Zones =
 						["provider"] = { "n", 136559 },	-- Jani
 						["coord"] = { 36.2, 36.8 },
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 51142,	-- Pests
 					}),
 					q(51142, {	-- Pests
 						["provider"] = { "n", 136562 },	-- Quartermaster Alfin

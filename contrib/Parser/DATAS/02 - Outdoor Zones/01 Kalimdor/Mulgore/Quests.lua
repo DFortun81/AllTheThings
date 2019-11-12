@@ -67,6 +67,7 @@ _.Zones =
 				q(24459, {	-- Morin Cloudstalker
 					["provider"] = { "n", 36644 },	-- Ahmo Thunderhorn
 					["coord"] = { 47.6, 59.5, 7 },
+					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(7663,  {	-- New Kodo - Green

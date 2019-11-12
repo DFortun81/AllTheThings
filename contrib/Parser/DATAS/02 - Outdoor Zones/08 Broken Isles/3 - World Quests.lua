@@ -442,6 +442,7 @@ _.Zones =
 				}),
 				n(-386, {	-- Trinkets
 					i(134204),	-- Bleached Skull Talisman
+					i(134380),	-- Burning Portal Key
 					i(139075),	-- Forest Creeper's Guile
 					i(134335),	-- Mana Crystal Shard
 					i(134336),	-- Stolen Mana Crystal

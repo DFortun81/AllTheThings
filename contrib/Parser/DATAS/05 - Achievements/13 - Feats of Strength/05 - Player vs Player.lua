@@ -18,7 +18,7 @@ _.Achievements =
 						ach(13199, {	-- Combatant: Battle for Azeroth Season 1
 							["u"] = 4,
 							["g"] = {
-								title(110),	-- Combatant <Name>
+								title(78),	-- Combatant <Name>
 							},
 						}),
 						ach(12962, {	-- Duelist: Battle for Azeroth Season 1
@@ -86,7 +86,7 @@ _.Achievements =
 						ach(13204, {	-- Combatant: Battle for Azeroth Season 2
 							["u"] = 4,
 							["g"] = {
-								title(110),	-- Combatant <Name>
+								title(78),	-- Combatant <Name>
 							},
 						}),
 						ach(13209, {	-- Duelist: Battle for Azeroth Season 2
@@ -156,7 +156,7 @@ _.Achievements =
 						ach(13639, {	-- Combatant: Battle for Azeroth Season 3
 						--	["u"] = 4, S3
 							["g"] = {
-								title(110),	-- Combatant <Name>
+								title(78),	-- Combatant <Name>
 							},
 						}),
 						ach(13642, {	-- Duelist: Battle for Azeroth Season 3

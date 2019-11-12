@@ -33,6 +33,7 @@ _.GroupFinder =
 				i(160597),			-- Tumultuous Cloak			— 4/7/19
 				i(51996),			-- Tumultuous Necklace		— 4/19/19
 				i(160608),			-- Tumultuous Necklace		— 9/13/19
+				i(160607),			-- Tumultuous Necklace		— 11/10/19
 				i(51992),			-- Tumultuous Ring [INT]
 				i(160601),			-- Tumultuous Ring [AGI] 	— 4/7/19
 				i(160602),			-- Tumultuous Ring [STR]	— 9/13/19

@@ -13,7 +13,10 @@ _.WorldEvents =
 				["u"] = 31,	-- WoW Anniversary
 			}),
 			n(-9987, {	-- Alterac Valley
-				["maps"] = { 1537 },	-- Alterac Valley
+				["maps"] = {
+					1537,	-- Alterac Valley
+					25,		-- Hillsbrad Foothills
+				},
 				["g"] = bubbleDown({ ["u"] = 31 }, {	-- WoW Anniversary
 					ach(13928, {	-- Alterac Valley of Olde (A)
 						["races"] = ALLIANCE_ONLY,
@@ -33,72 +36,631 @@ _.WorldEvents =
 							}),
 						},
 					}),
-					n(-322, {	-- Cloaks
-						i(172100),	-- Frostwolf Advisor's Cloak
-						i(172098),	-- Frostwolf Legionnaire's Cloak
-						i(172101),	-- Stormpike Sage's Cloak
-						i(172099),	-- Stormpike Soldier's Cloak
+					n(-17, {	-- Quests
+						q(57302, {	-- Alterac Valley Graveyards
+							["provider"] = { "n", 159811 },	-- Sergeant Durgen Stormpike
+							["coord"] = { 43.6, 17.2, 1537 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57305, {	-- Armor Scraps
+							["provider"] = { "n", 13257 },	-- Murgot Deepforge
+							["coord"] = { 43.6, 15.9, 1537 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57309, {	-- Begin the Attack
+							["repeatable"] = true,	-- presumably
+							["provider"] = { "n", 13446 },	-- Field Marshal Teravaine
+							["coord"] = { 52.3, 44.0, 1537 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57304, {	-- Capture a Mine (A)
+							["providers"] = {
+								{ "n", 12096 },		-- Stormpike Quartermaster
+								{ "n", 159811 },	-- Sergeant Durgen Stormpike
+							},
+							["coords"] = {
+								{ 43.3, 17.0, 1537 },
+								{ 43.6, 17.2, 1537 },
+							},
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57314, {	-- Capture a Mine (H)
+							["providers"] = {
+								{ "n", 12097 },		-- Frostwolf Quartermaster
+								{ "n", 158579 },	-- Corporal Teeka Bloodsnarl
+							},
+							["coords"] = {
+								{ 46.8, 83.5, 1537 },
+								{ 50.8, 82.3, 1537 },
+							},
+							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57311, {	-- Coldtooth Supplies (A)
+							["repeatable"] = true,
+							["provider"] = { "n", 12096 },	-- Stormpike Quartermaster
+							["coord"] = { 43.3, 17.0, 1537 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57321, {	-- Coldtooth Supplies (H)
+							["repeatable"] = true,
+							["provider"] = { "n", 12097 },	-- Frostwolf Quartermaster
+							["coord"] = { 46.8, 83.5, 1537 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57722, {	-- Empty Stables (A)
+							["repeatable"] = true,
+							["provider"] = { "n", 158863 },	-- Stormpike Stable Master
+							["coord"] = { 42.6, 16.9, 1537 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57723, {	-- Empty Stables (H)
+							["repeatable"] = true,
+							["provider"] = { "n", 158864 },	-- Frostwolf Stable Master
+							["coord"] = { 57.1, 82.5, 1537 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57317, {	-- Enemy Booty
+							["provider"] = { "n", 13176 },	-- Smith Regzar
+							["coord"] = { 49.9, 82.6, 1537 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57310, {	-- Irondeep Supplies (A)
+							["repeatable"] = true,
+							["provider"] = { "n", 12096 },	-- Stormpike Quartermaster
+							["coord"] = { 43.3, 17.0, 1537 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57322, {	-- Irondeep Supplies (H)
+							["repeatable"] = true,
+							["provider"] = { "n", 12097 },	-- Frostwolf Quartermaster
+							["coord"] = { 46.8, 83.5, 1537 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57638, {	-- Korrak the Bloodrager
+							["provider"] = { "n", 158515 },	-- Lieutenant Haggerdin
+							["coord"] = { 43.6, 16.0, 1537 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
+							["g"] = {
+								i(172121),	-- Ice Barbed Spear
+								i(172123),	-- Wand of Biting Cold
+								i(172139),	-- Cold Forged Hammer
+								i(172122),	-- Bloodseeker
+								i(18150),	-- Rune of Recall
+							},
+						}),
+						q(57320, {	-- Launch the Attack!
+							["repeatable"] = true,	-- presumably
+							["provider"] = { "n", 13449 },	-- Warmaster Garrick
+							["coord"] = { 45.0, 48.0, 1537 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57641, {	-- Master Ryson's All Seeing Eye
+						--	unsure if this has faction requirements or anything along those lines
+							["repeatable"] = true,	-- presumably
+							["lvl"] = 10,
+						}),
+						q(57306, {	-- More Armor Scraps
+							["repeatable"] = true,
+							["provider"] = { "n", 13257 },	-- Murgot Deepforge
+							["coord"] = { 43.6, 15.9, 1537 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57318, {	-- More Booty!
+							["repeatable"] = true,
+							["provider"] = { "n", 13176 },	-- Smith Regzar
+							["coord"] = { 49.9, 82.6, 1537 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57313, {	-- Speak with our Quartermaster
+							["provider"] = { "n", 13798 },	-- Jotek
+							["coord"] = { 50.6, 82.0, 1537 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57312, {	-- The Graveyards of Alterac
+							["provider"] = { "n", 158579 },	-- Corporal Teeka Bloodsnarl
+							["coord"] = { 50.8, 82.3, 1537 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57639, {	-- The Legend of Korrak
+							["provider"] = { "n", 158501 },	-- Warmaster Laggrond
+							["coord"] = { 50.1, 82.5, 1537 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
+							["g"] = {
+								i(172121),	-- Ice Barbed Spear
+								i(172123),	-- Wand of Biting Cold
+								i(172139),	-- Cold Forged Hammer
+								i(172122),	-- Bloodseeker
+								i(18150),	-- Rune of Recall
+							},
+						}),
+						q(57303, {	-- The Quartermaster
+							["provider"] = { "n", 13797 },	-- Mountaineer Boombellow
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57307, {	-- Towers and Bunkers (A)
+							["provider"] = { "n", 159811 },	-- Sergeant Durgen Stormpike
+							["coord"] = { 43.6, 17.2, 1537 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57315, {	-- Towers and Bunkers (H)
+							["provider"] = { "n", 158579 },	-- Corporal Teeka Bloodsnarl
+							["coord"] = { 50.8, 82.3, 1537 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57730, {	-- Zinfizzlex's Portable Shredder Unit (A)
+							['description'] = "Questgiver is west of Korrak (over the bridge) and you have to escort him to your base. After bringing him to safety he offers the quest.",
+							["provider"] = { "n", 13377 },	-- Master Engineer Zinfizzlex
+							["repeatable"] = true,
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 10,
+						}),
+						q(57731, {	-- Zinfizzlex's Portable Shredder Unit (H)
+							['description'] = "Questgiver is west of Korrak (over the bridge) and you have to escort him to your base. After bringing him to safety he offers the quest.",
+							["provider"] = { "n", 13377 },	-- Master Engineer Zinfizzlex
+							["repeatable"] = true,
+							["races"] = HORDE_ONLY,
+							["lvl"] = 10,
+						}),
 					}),
-					n(-43,  {	-- Cloth
-						i(172120),	-- Frost Runed Headdress
-						i(172105),	-- Frostwolf Cloth Belt
-						i(172109),	-- Stormpike Cloth Girdle
-					}),
-					f(52,   {	-- Finger
-						i(172124),	-- Deep Rooted Ring
-						i(172138),	-- Don Julio's Band
-						i(172140),	-- Don Rodrigo's Band
-					}),
-					n(-44,  {	-- Leather
-						i(172104),	-- Frostwolf Leather Belt
-						i(172108),	-- Stormpike Leather Girdle
-						i(172128),	-- Yeti Hide Bracers
-					}),
-					n(-45,  {	-- Mail
-						i(172103),	-- Frostwolf Mail Belt
-						i(172107),	-- Stormpike Mail Girdle
-						i(172126),	-- Winteraxe Epaulets
-					}),
-					f(51,   {	-- Neck
-						i(172111),	-- Frostwolf Advisor's Pendant
-						i(172110),	-- Frostwolf Legionnaire's Pendant
-						i(172113),	-- Stormpike Sage's Pendant
-						i(172112),	-- Stormpike Soldier's Pendant
-					}),
-					n(-46,  {	-- Plate
-						i(172102),	-- Frostwolf Plate Belt
-						i(172127),	-- Frozen Steel Vambraces
-						i(172106),	-- Stormpike Plate Girdle
-					}),
-					n(-319, {	-- Weapons
-						i(172122),	-- Bloodseeker
-						i(172125),	-- Cold Forged Blade
-						i(172139),	-- Cold Forged Hammer
-						i(172117),	-- Crackling Staff
-						i(172115),	-- Electrified Dagger
-						i(172118),	-- Frostbite
-						i(172114),	-- Glacial Blade
-						i(172121),	-- Ice Barbed Spear
-						i(172133),	-- Lei of the Lifegiver
-						i(172119),	-- Stormstrike Hammer
-						i(172135),	-- The Immovable Object
-						i(172137),	-- The Lobotomizer
-						i(172136),	-- The Unstoppable Force
-						i(172134),	-- Therezane's Touch
-						i(172129),	-- Tome of Arcane Domination
-						i(172130),	-- Tome of Shadow Force
-						i(172132),	-- Tome of the Fiery Arcana
-						i(172131),	-- Tome of the Ice Lord
-						i(172123),	-- Wand of Biting Cold
-						i(172116),	-- Whiteout Staff
+					n(-2,  {	-- Vendors
+						n(158386, {	-- Time-Displaced Jorek Ironside <Frostwolf Supply Officer>
+							["coord"] = { 58.1, 33.6, 25 },
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								n(-322, {	-- Cloaks
+									i(172100, {	-- Frostwolf Advisor's Cloak
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+									i(172098, {	-- Frostwolf Legionnaire's Cloak
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+								}),
+								n(-43,  {	-- Cloth
+									i(172120, {	-- Frost Runed Headdress
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+									i(172105, {	-- Frostwolf Cloth Belt
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+								}),
+								f(52,   {	-- Finger
+									i(172124, {	-- Deep Rooted Ring
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+									i(172138, {	-- Don Julio's Band
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+									i(172140, {	-- Don Rodrigo's Band
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+								}),
+								n(-44,  {	-- Leather
+									i(172104, {	-- Frostwolf Leather Belt
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+									i(172128, {	-- Yeti Hide Bracers
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+								}),
+								n(-45,  {	-- Mail
+									i(172103, {	-- Frostwolf Mail Belt
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+									i(172126, {	-- Winteraxe Epaulets
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+								}),
+								f(51,   {	-- Neck
+									i(172111, {	-- Frostwolf Advisor's Pendant
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+									i(172110, {	-- Frostwolf Legionnaire's Pendant
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+								}),
+								n(-46,  {	-- Plate
+									i(172102, {	-- Frostwolf Plate Belt
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+									i(172127, {	-- Frozen Steel Vambraces
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+								}),
+								n(-319, {	-- Weapons
+									i(172122, {	-- Bloodseeker
+										["cost"] = {
+											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "c", 1166, 90 },	-- 90x Timewarped Badge
+										},
+									}),
+									i(172125, {	-- Cold Forged Blade
+										["cost"] = {
+											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										},
+									}),
+									i(172139, {	-- Cold Forged Hammer
+										["cost"] = {
+											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										},
+									}),
+									i(172118, {	-- Frostbite
+										["cost"] = {
+											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										},
+									}),
+									i(172114, {	-- Glacial Blade
+										["cost"] = {
+											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										},
+									}),
+									i(172121, {	-- Ice Barbed Spear
+										["cost"] = {
+											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "c", 1166, 90 },	-- 90x Timewarped Badge
+										},
+									}),
+									i(172133, {	-- Lei of the Lifegiver
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										},
+									}),
+									i(172135, {	-- The Immovable Object
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										},
+									}),
+									i(172137, {	-- The Lobotomizer
+										["cost"] = {
+											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										},
+									}),
+									i(172134, {	-- Therazane's Touch
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										},
+									}),
+									i(172136, {	-- The Unstoppable Force
+										["cost"] = {
+											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "c", 1166, 90 },	-- 90x Timewarped Badge
+										},
+									}),
+									i(172129, {	-- Tome of Arcane Domination
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										},
+									}),
+									i(172130, {	-- Tome of Shadow Force
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										},
+									}),
+									i(172132, {	-- Tome of the Fiery Arcana
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										},
+									}),
+									i(172131, {	-- Tome of the Ice Lord
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										},
+									}),
+									i(172123, {	-- Wand of Biting Cold
+										["cost"] = {
+											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										},
+									}),
+									i(172116, {	-- Whiteout Staff
+										["cost"] = {
+											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "c", 1166, 90 },	-- 40x Timewarped Badge
+										},
+									}),
+								}),
+							},
+						}),
+						n(158385, {	-- Time-Displaced Thanthaldis Snowgleam <Stormpike Supply Officer>
+							["coord"] = { 44.7, 46.4, 25 },
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								n(-322, {	-- Cloaks
+									i(172101, {	-- Stormpike Sage's Cloak
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+									i(172099, {	-- Stormpike Soldier's Cloak
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+								}),
+								n(-43,  {	-- Cloth
+									i(172120, {	-- Frost Runed Headdress
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+									i(172109, {	-- Stormpike Cloth Girdle
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+								}),
+								f(52,   {	-- Finger
+									i(172124, {	-- Deep Rooted Ring
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+									i(172138, {	-- Don Julio's Band
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+									i(172140, {	-- Don Rodrigo's Band
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+								}),
+								n(-44,  {	-- Leather
+									i(172108, {	-- Stormpike Leather Girdle
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+									i(172128, {	-- Yeti Hide Bracers
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+								}),
+								n(-45,  {	-- Mail
+									i(172107, {	-- Stormpike Mail Girdle
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+									i(172126, {	-- Winteraxe Epaulets
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+								}),
+								n(-46,  {	-- Plate
+									i(172127, {	-- Frozen Steel Vambraces
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+									i(172106, {	-- Stormpike Plate Girdle
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+								}),
+								f(51,   {	-- Neck
+									i(172113, {	-- Stormpike Sage's Pendant
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+									i(172112, {	-- Stormpike Soldier's Pendant
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 20 },	-- 20x Timewarped Badge
+										},
+									}),
+								}),
+								n(-319, {	-- Weapons
+									i(172122, {	-- Bloodseeker
+										["cost"] = {
+											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "c", 1166, 90 },	-- 90x Timewarped Badge
+										},
+									}),
+									i(172125, {	-- Cold Forged Blade
+										["cost"] = {
+											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										},
+									}),
+									i(172139, {	-- Cold Forged Hammer
+										["cost"] = {
+											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										},
+									}),
+									i(172117, {	-- Crackling Staff
+										["cost"] = {
+											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "c", 1166, 90 },	-- 90x Timewarped Badge
+										},
+									}),
+									i(172115, {	-- Electrified Dagger
+										["cost"] = {
+											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										},
+									}),
+									i(172121, {	-- Ice Barbed Spear
+										["cost"] = {
+											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "c", 1166, 90 },	-- 90x Timewarped Badge
+										},
+									}),
+									i(172133, {	-- Lei of the Lifegiver
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										},
+									}),
+									i(172119, {	-- Stormstrike Hammer
+										["cost"] = {
+											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										},
+									}),
+									i(172135, {	-- The Immovable Object
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										},
+									}),
+									i(172137, {	-- The Lobotomizer
+										["cost"] = {
+											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										},
+									}),
+									i(172134, {	-- Therazane's Touch
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										},
+									}),
+									i(172136, {	-- The Unstoppable Force
+										["cost"] = {
+											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "c", 1166, 90 },	-- 90x Timewarped Badge
+										},
+									}),
+									i(172129, {	-- Tome of Arcane Domination
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										},
+									}),
+									i(172130, {	-- Tome of Shadow Force
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										},
+									}),
+									i(172132, {	-- Tome of the Fiery Arcana
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										},
+									}),
+									i(172131, {	-- Tome of the Ice Lord
+										["cost"] = {
+											{ "i", 137642, 1 },	-- 1x  Mark of Honor
+											{ "c", 1166, 30 },	-- 30x Timewarped Badge
+										},
+									}),
+									i(172123, {	-- Wand of Biting Cold
+										["cost"] = {
+											{ "i", 137642, 2 },	-- 2x  Mark of Honor
+											{ "c", 1166, 40 },	-- 40x Timewarped Badge
+										},
+									}),
+								}),
+							},
+						}),
 					}),
 				}),
 			}),
 			n(-9959, {	-- Dungeons & Raids
 				n(157113, {	-- Chromie
 			--	inst(2235, {	-- doesn't show up in-game
+					["isWeekly"] = true,
 					["questID"] = 57298,	-- How Things "Really" Happened...
-					["cr"] = 154233,	-- Chromie
 					["maps"] = {
 						1553,	-- Caverns of Time (instanced)
 					--	BC
@@ -114,6 +676,7 @@ _.WorldEvents =
 						1556,	-- Blackwing Descent
 						1561,	-- Firelands
 					},
+					["cr"] = 154233,	-- Chromie
 					["g"] = {
 						d(24, {	-- Timewalking
 							ach(13931, {	-- Memories of Fel, Frost and Fire
@@ -125,10 +688,15 @@ _.WorldEvents =
 								},
 							}),
 							n(-10003, {	-- The Burning Crusade
-								e(1572, {	-- Lady Vashj
+								e(1572, {	-- Lady Vashj — items available outside of anniversary event
+									["cr"] = 21212,	-- Lady Vashj
+									["g"] = {
+										i(97554),	-- Coilfang Strider (PET!)
+									},
+								}),
+								e(1572, {	-- Lady Vashj — WoW anniversary only
 									["cr"] = 21212,	-- Lady Vashj
 									["g"] = bubbleDown({ ["u"] = 31 }, {	-- WoW Anniversary
-										-- ach(694),	-- Serpentshrine Cavern
 										-- Old Token Items
 										i(171912),	-- Crystalforge Faceguard
 										i(171914),	-- Crystalforge Greathelm
@@ -162,10 +730,15 @@ _.WorldEvents =
 										i(171482),	-- Prism of Inner Calm
 									}),
 								}),
-								e(1576, {	-- Kael'thas Sunstrider
+								e(1576, {	-- Kael'thas Sunstrider — items available outside of anniversary event
+									["cr"] = 19622,	-- Kael'thas Sunstrider
+									["g"] = {
+										i(32458),	-- Ashes of Al'ar (MOUNT!)
+									},
+								}),
+								e(1576, {	-- Kael'thas Sunstrider — WoW anniversary only
 									["cr"] = 19622,	-- Kael'thas Sunstrider
 									["g"] = bubbleDown({ ["u"] = 31 }, {	-- WoW Anniversary
-										--	ach(696),	-- Tempest Keep
 										-- Old Token Items
 										i(171902),	-- Cataclysm Chestguard
 										i(171903),	-- Cataclysm Chestpiece
@@ -200,7 +773,13 @@ _.WorldEvents =
 										i(171490),	-- Twinblade of the Phoenix
 									}),
 								}),
-								e(1581, {	-- Archimonde
+								e(1581, {	-- Archimonde — items available outside of anniversary event
+									["cr"] = 17968,	-- Archimonde
+									["g"] = {
+										i(122112),	-- Hyjal Wisp (PET!)
+									},
+								}),
+								e(1581, {	-- Archimonde — WoW anniversary only
 									["cr"] = 17968,	-- Archimonde
 									["g"] = bubbleDown({ ["u"] = 31 }, {	-- WoW Anniversary
 									--	ach(695),	-- The Battle for Mount Hyjal
@@ -373,31 +952,35 @@ _.WorldEvents =
 								}),
 							}),
 							n(-9979,  {	-- Cataclysm
-								e(167, {	-- Cho'gall
+								e(167, {	-- Cho'gall — items available outside of anniversary event
+									["cr"] = 43324,
+									["g"] = {
+										i(152972),	-- Faceless Minion (PET!)
+									},
+								}),
+								e(167, {	-- Cho'gall — WoW anniversary only
 									["cr"] = 43324,
 									["g"] = bubbleDown({ ["u"] = 31 }, {	-- WoW Anniversary
-									--	ach(5312),	-- The Abyss Will Gaze Back Into You
 									-- Old tier Items
-											i(171856),	-- Shadowflame Mantle
-											i(171872),	-- Reinforced Sapphirium Shoulderguards
-											i(171870),	-- Reinforced Sapphirium Pauldrons
-											i(171873),	-- Reinforced Sapphirium Mantle
-											i(171857),	-- Mercurial Shoulderwraps
-											i(171858),	-- Mercurial Mantle	
-											i(171866),	-- Spaulders of the Raging Elements
-											i(171865),	-- Shoulderwraps of the Raging Elements
-											i(171864),	-- Mantle of the Raging Elements
-											i(171863),	-- Lightning-Charged Spaulders
-											i(171868),	-- Earthen Shoulderguards
-											i(171867),	-- Earthen Pauldrons
-											i(171862),	-- Wind Dancer's Spaulders
-											i(171861),	-- Stormrider's Spaulders
-											i(171860),	-- Stormrider's Shoulderwraps
-											i(171859),	-- Stormrider's Mantle
-											--i(60353),	-- Magma Plated Shoulderguards
-											--i(60343),	-- Magma Plated Pauldrons
-											i(17155),	-- Firelord's Mantle
-										--i(152972),	-- Twilight Summoning Portal (PET!)
+										i(171856),	-- Shadowflame Mantle
+										i(171872),	-- Reinforced Sapphirium Shoulderguards
+										i(171870),	-- Reinforced Sapphirium Pauldrons
+										i(171873),	-- Reinforced Sapphirium Mantle
+										i(171857),	-- Mercurial Shoulderwraps
+										i(171858),	-- Mercurial Mantle	
+										i(171866),	-- Spaulders of the Raging Elements
+										i(171865),	-- Shoulderwraps of the Raging Elements
+										i(171864),	-- Mantle of the Raging Elements
+										i(171863),	-- Lightning-Charged Spaulders
+										i(171868),	-- Earthen Shoulderguards
+										i(171867),	-- Earthen Pauldrons
+										i(171862),	-- Wind Dancer's Spaulders
+										i(171861),	-- Stormrider's Spaulders
+										i(171860),	-- Stormrider's Shoulderwraps
+										i(171859),	-- Stormrider's Mantle
+										i(171871),	-- Magma Plated Shoulderguards
+										i(171869),	-- Magma Plated Pauldrons
+										i(17155),	-- Firelord's Mantle
 										i(171842),	-- Shalug'doom, the Axe of Unmaking
 										i(171847),	-- "Uhn'agh Fash, the Darkest Betrayal"
 										i(171854),	-- Twilight's Hammer
@@ -413,13 +996,18 @@ _.WorldEvents =
 										i(171852),	-- Fall of Mortality
 									}),
 								}),
-								e(174, {	-- Nefarian's End
+								e(174, {	-- Nefarian's End — items available outside of anniversary event
+									["cr"] = 41376,
+									["g"] = {
+										i(122195),	-- Music Roll: Legends of Azeroth		
+									},
+								}),
+								e(174, {	-- Nefarian's End — WoW anniversary only
 									["cr"] = 41376,
 									["g"] = bubbleDown({ ["u"] = 31 }, {	-- WoW Anniversary
-									--	ach(4849),	-- Keeping it in the Family	
 										-- Old tier Items
 										i(171875),	-- Shadowflame Hood
-									--	i(60346),	-- Reinforced Sapphirium Helmet
+										i(171889),	-- Reinforced Sapphirium Helmet
 										i(171892),	-- Reinforced Sapphirium Headguard
 										i(171891),	-- Reinforced Sapphirium Faceguard
 										i(171876),	-- Mercurial Hood
@@ -451,7 +1039,6 @@ _.WorldEvents =
 										i(171635),	-- Belt of the Blackhand
 										i(171628),	-- Belt of the Nightmare
 										i(171631),	-- Prestor's Talisman of Machination
-									--	i(122195),	-- Music Roll: Legends of Azeroth		
 									}),
 								}),
 								e(198, {	-- Ragnaros
@@ -927,18 +1514,6 @@ _.WorldEvents =
 							["provider"] = { "i", 171177 },	-- Invitation from the Timewalkers
 							["u"] = 31,	-- WoW Anniversary
 						}),
-					--[[{	-- A Slightly More Urgent Letter from the Timewalkers [Horde]
-							["itemID"] = 147881,	-- A Slightly More Urgent Letter from the Timewalkers
-							["questID"] = 47251,	-- Interesting Things
-							["races"] = HORDE_ONLY,
-							["u"] = 31,				-- WoW Anniversary
-						},
-						{	-- A Slightly More Urgent Letter from the Timewalkers [Alliance]
-							["itemID"] = 147880,	-- A Slightly More Urgent Letter from the Timewalkers
-							["questID"] = 47252,	-- Interesting Things
-							["races"] = ALLIANCE_ONLY,
-							["u"] = 31,				-- WoW Anniversary
-						},--]]
 					},
 				}),
 			}),
@@ -976,7 +1551,7 @@ _.WorldEvents =
 				}),
 				q(47253, {	-- The Originals (A)
 					["provider"] = { "n", 110034 },	-- Historian Llore
-					["isDaily"] = true,
+					["isWeekly"] = true,
 					["coord"] = { 51.4, 39.0, 75 },
 					["sourceQuests"] = {
 						47462,	-- Azuregos
@@ -990,7 +1565,7 @@ _.WorldEvents =
 				}),
 				q(47254, {	-- The Originals (H)
 					["provider"] = { "n", 110035 },	-- Historian Jupa
-					["isDaily"] = true,
+					["isWeekly"] = true,
 					["coord"] = { 51.4, 39.0, 75 },
 					["sourceQuests"] = {
 						47462,	-- Azuregos

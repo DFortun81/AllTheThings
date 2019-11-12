@@ -26,8 +26,15 @@ _.Zones =
 				q(12561),	-- An Issue of Trust
 				q(12543),	-- An Offering for Soo-rahm
 				q(12574),	-- Back So Soon?
-				q(12797),	-- Back Through the Waygate
-				q(12683),	-- Burning to Help
+--]]
+				q(12797, {	-- Back Through the Waygate
+					["provider"] = { "n", 28092 },	-- The Etymidian
+					["sourceQuest"] = 12547,	-- The Activation Rune
+					["coord"] = { 47.4, 9.2, 78 },
+					["maps"] = { 78 },	-- Un'goro Crater
+					["lvl"] = 66,
+				}),
+--[[			q(12683),	-- Burning to Help
 				q(12569),	-- Crocolisk Mastery: The Ambush
 				q(12560),	-- Crocolisk Mastery: The Plan
 				q(12551),	-- Crocolisk Mastery: The Trial
@@ -64,11 +71,28 @@ _.Zones =
 				q(12522),	-- Need an Engine, Take an Engine
 				q(12528),	-- Playing Along
 				q(12614),	-- Post-partum Aggression
-				q(12613),	-- Powering the Waygate - The Makers' Overlook
-				q(12559),	-- Powering the Waygate - The Makers' Perch
+--]]
+				q(12613, {	-- Powering the Waygate - The Makers' Overlook
+					["sourceQuests"] = { 12559 },	-- Powering the Waygate - The Makers' Perch
+					["provider"] = { "n", 27801 },	-- Avatar of Freya
+					["coord"] = { 64.6, 48.7, 119 },
+				}),
+--[[			q(12559),	-- Powering the Waygate - The Makers' Perch
 				q(12681),	-- Reagent Agent
-				q(12546),	-- Reclamation
-				q(12671),	-- Reconnaissance Flight
+--]]
+				q(12546, {  -- Reclamation
+					["sourceQuests"] = { 12797 },	-- Back Through the Waygate
+					["provider"] = { "n", 27801 },	-- Avatar of Freya
+					["coord"] = { 64.6, 48.7, 119 },
+					["g"] = {
+						i(40290),	-- Gaze of the Punishing Construct
+						i(40291),	-- Helm of the Avenging Protector
+						i(40292),	-- Headguard of Vast Destruction
+						i(40293),	-- Helm of Towering Rage
+						i(40295),	-- Greathelm of the Titan Protectorate
+					},
+				}),
+--[[			q(12671),	-- Reconnaissance Flight
 				q(12695),	-- Return of the Friendly Dryskin
 				q(12692),	-- Return of the Lich Hunter
 				q(12611),	-- Returned Sevenfold
@@ -83,11 +107,30 @@ _.Zones =
 				q(39212),	-- Sholazar Basin
 				q(12634),	-- Some Make Lemonade, Some Make Liquor
 				q(12644),	-- Still At It
-				q(12578),	-- The Angry Gorloc
+--]]
+				q(12547, {	-- The Activation Rune
+					["provider"] = { "n", 28092 },	-- The Etymidian
+					["sourceQuest"] = 12548,	-- The Etymidian
+					["coord"] = { 47.4, 9.2, 78 },
+					["maps"] = { 78 },	-- Un'goro Crater
+					["lvl"] = 66,
+					["g"] = {
+						i(39366),	-- Spaulders of the Runeseeker
+						i(39411),	-- Legguards of Guided Travel
+						i(39442),	-- Seeing-Eye Belt
+						i(39465),	-- Pathfinding Treads
+					},
+				}),
+--[[			q(12578),	-- The Angry Gorloc
 				q(12529),	-- The Ape Hunter's Slave
 				q(12544),	-- The Bones of Nozronn
-				q(12548),	-- The Etymidian
-				q(12612),	-- The Fallen Pillar
+--]]
+				q(12548, {	-- The Etymidian
+					["sourceQuests"] = { 12613 },	-- Powering the Waygate - The Makers' Overlook
+					["provider"] = { "n", 27801 },	-- Avatar of Freya
+					["coord"] = { 64.6, 48.7, 119 },
+				}),
+--[[			q(12612),	-- The Fallen Pillar
 				q(12592),	-- The Great Hunter's Challenge
 				q(12620),	-- The Lifewarden's Wrath
 				q(12575),	-- The Lost Mistwhisper Treasure
@@ -131,13 +174,6 @@ _.Zones =
 					i(39406),
 					i(39439),
 					i(39459),
-				}),
-				q(12797, {	-- Back Through the Waygate
-					["provider"] = { "n", 28092 },	-- The Etymidian
-					["sourceQuest"] = 12547,	-- The Activation Rune
-					["coord"] = { 47.4, 9.2, 78 },
-					["maps"] = { 78 },	-- Un'goro Crater
-					["lvl"] = 66,
 				}),
 				q(12569, {  -- Crocolisk Mastery: The Ambush
 					i(39331),	-- Tooth-Marked Girdle
@@ -188,7 +224,7 @@ _.Zones =
 					i(39673),
 					i(39675),
 				}),
-				q(12614, {  -- POst-partum Aggression
+				q(12614, {  -- Post-partum Aggression
 					i(39487),
 					i(39486),
 					i(39488),
@@ -200,13 +236,6 @@ _.Zones =
 					i(39413),
 					i(39445),
 					i(39463),
-				}),
-				q(12546, {  -- Reclamation
-					i(40290),
-					i(40291),
-					i(40292),
-					i(40293),
-					i(40295),
 				}),
 				q(12611, {  -- Returned Sevenfold
 					i(39367),
@@ -220,19 +249,6 @@ _.Zones =
 					i(39377),
 					i(39431),
 					i(39453),
-				}),
-				q(12547, {	-- The Activation Rune
-					["provider"] = { "n", 28092 },	-- The Etymidian
-					["sourceQuest"] = 12548,	-- The Etymidian
-					["coord"] = { 47.4, 9.2, 78 },
-					["maps"] = { 78 },	-- Un'goro Crater
-					["lvl"] = 66,
-					["groups"] = {
-						i(39366),	-- Spaulders of the Runeseeker
-						i(39411),	-- Legguards of Guided Travel
-						i(39442),	-- Seeing-Eye Belt
-						i(39465),	-- Pathfinding Treads
-					},
 				}),
 				q(12592, {  -- The Great Hunter's Challenge
 					i(39330),

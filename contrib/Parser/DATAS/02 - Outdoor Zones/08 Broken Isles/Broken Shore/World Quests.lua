@@ -55,16 +55,25 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(45559, {	-- Behind Enemy Portals
-					["lvl"] = 110,
 					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						ach(11681),	-- Crate Expectations
+					},
 				}),
 				q(45542, {	-- Behind Enemy Portals
-					["lvl"] = 110,
 					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						ach(11681),	-- Crate Expectations
+					},
 				}),
 				q(45520, {	-- Behind Enemy Portals
-					["lvl"] = 110,
 					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						ach(11681),	-- Crate Expectations
+					},
 				}),
 				q(46073, {	-- Break Their Garrison
 					["lvl"] = 110,

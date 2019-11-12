@@ -55,6 +55,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 									un(29, i(128768)),	-- Candy Cane
 								},
 								["description"] = "Gift from 2014 and was given to anyone who wasn't a spell caster.",
+								["isYearly"] = true,
 								["questID"] = 8767,
 							}),
 							i(21271, {	-- Gently Shaken Gift
@@ -66,6 +67,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 									un(29, i(128768)),	-- Candy Cane
 								},
 								["description"] = "Gift from 2014 and was given to spell casters.",
+								["isYearly"] = true,
 								["questID"] = 8788,
 							}),
 							i(128652, {	-- Gently Shaken Gift
@@ -153,6 +155,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 									un(29, i(37710)),	-- Crashin' Thrashin' Racer Controller
 								},
 								["description"] = "Gift from 2008.",
+								["isYearly"] = true,
 								["questID"] = 13203,
 								["u"] = 40,	-- Legacy Quest/Quest Item
 							}),
@@ -194,6 +197,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 									un(29, i(116763)),	-- Crashin' Thrashin' Shredder Controller
 								},
 								["description"] = "Gift from 2014.",
+								["isYearly"] = true,
 								["questID"] = 36617,
 								["u"] = 40,	-- Legacy Quest/Quest Item
 							}),
@@ -209,6 +213,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 									un(29, i(128636)),	-- Endothermic Blaster
 								},
 								["description"] = "Gift from 2016.",
+								["isYearly"] = true,
 								["questID"] = 43363,
 							}),
 							i(151350, {	-- Winter Veil Gift

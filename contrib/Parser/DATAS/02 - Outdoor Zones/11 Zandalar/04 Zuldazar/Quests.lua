@@ -1109,41 +1109,41 @@ _.Zones =
 				q(49060, {	-- Xibalan Ecology
 					["provider"] = { "n", 131777 },	-- Acadia Chistlestone
 					["coord"] = { 41.2, 71.4, 862 },
-				--	["sourceQuest"] = 49276,	-- The Thrill of Exploration
+					["sourceQuest"] = 49276,	-- The Thrill of Exploration
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49274, {	-- Morgrum's Survey
 					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
 					["coord"] = { 44.4, 73.4, 862 },
-				--	["sourceQuest"] = 49276,	-- The Thrill of Exploration
+					["sourceQuest"] = 49276,	-- The Thrill of Exploration
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50044, {	-- Archaeological Efficiency
 					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
 					["coord"] = { 44.4, 73.4, 862 },
-				--	["sourceQuest"] = 49276,	-- The Thrill of Exploration
+					["sourceQuest"] = 49276,	-- The Thrill of Exploration
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49282, {	-- Morgrum's Extended Survey
 					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
 					["coord"] = { 44.4, 73.4, 862 },
-				--	["sourceQuest"] = {
-				--		49060,	-- Xibalan Ecology
-				--		49274,	-- Morgrum's Survey
-				--		50044,	-- Archaeological Efficiency
-				--	},
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						49060,	-- Xibalan Ecology
+						49274,	-- Morgrum's Survey
+						50044,	-- Archaeological Efficiency
+					},
 				}),
 				q(49427, {	-- Not Our Purple Elves
 					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
 					["coord"] = { 44.4, 73.4, 862 },
-				--	["sourceQuest"] = 49282,	-- Morgrum's Extended Survey
+					["sourceQuest"] = 49282,	-- Morgrum's Extended Survey
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49428, {	-- Grand Theft Telemancy
 					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
 					["coord"] = { 44.4, 73.4, 862 },
-				--	["sourceQuest"] = 49282,	-- Morgrum's Extended Survey
+					["sourceQuest"] = 49282,	-- Morgrum's Extended Survey
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- 	Isle of Fangs / Tusk Isle
@@ -1491,7 +1491,11 @@ _.Zones =
 						},
 					},
 				},
-
+				q(51085, {	-- WANTED: Dark Chronicler
+					["coord"] = { 40.7, 71.1, 862 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 287228 },	-- Wanted: Dark Chronicler
+				}),
 				
 				-- Start How to Train Your Direhorn Crit 4
 				q(55462, { 	-- The Wanderer's Call
