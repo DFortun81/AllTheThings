@@ -39,12 +39,14 @@ _.WorldEvents =
 					n(-17, {	-- Quests
 						q(57302, {	-- Alterac Valley Graveyards
 							["provider"] = { "n", 159811 },	-- Sergeant Durgen Stormpike
+							["isWeekly"] = true,
 							["coord"] = { 43.6, 17.2, 1537 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 						}),
 						q(57305, {	-- Armor Scraps
 							["provider"] = { "n", 13257 },	-- Murgot Deepforge
+							["isWeekly"] = true,
 							["coord"] = { 43.6, 15.9, 1537 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
@@ -61,6 +63,7 @@ _.WorldEvents =
 								{ "n", 12096 },		-- Stormpike Quartermaster
 								{ "n", 159811 },	-- Sergeant Durgen Stormpike
 							},
+							["isWeekly"] = true,
 							["coords"] = {
 								{ 43.3, 17.0, 1537 },
 								{ 43.6, 17.2, 1537 },
@@ -73,6 +76,7 @@ _.WorldEvents =
 								{ "n", 12097 },		-- Frostwolf Quartermaster
 								{ "n", 158579 },	-- Corporal Teeka Bloodsnarl
 							},
+							["isWeekly"] = true,
 							["coords"] = {
 								{ 46.8, 83.5, 1537 },
 								{ 50.8, 82.3, 1537 },
@@ -110,6 +114,7 @@ _.WorldEvents =
 						}),
 						q(57317, {	-- Enemy Booty
 							["provider"] = { "n", 13176 },	-- Smith Regzar
+							["isWeekly"] = true,
 							["coord"] = { 49.9, 82.6, 1537 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
@@ -169,12 +174,14 @@ _.WorldEvents =
 						}),
 						q(57313, {	-- Speak with our Quartermaster
 							["provider"] = { "n", 13798 },	-- Jotek
+							["isWeekly"] = true,
 							["coord"] = { 50.6, 82.0, 1537 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 						}),
 						q(57312, {	-- The Graveyards of Alterac
 							["provider"] = { "n", 158579 },	-- Corporal Teeka Bloodsnarl
+							["isWeekly"] = true,
 							["coord"] = { 50.8, 82.3, 1537 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
@@ -194,32 +201,35 @@ _.WorldEvents =
 						}),
 						q(57303, {	-- The Quartermaster
 							["provider"] = { "n", 13797 },	-- Mountaineer Boombellow
+							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 						}),
 						q(57307, {	-- Towers and Bunkers (A)
 							["provider"] = { "n", 159811 },	-- Sergeant Durgen Stormpike
+							["isWeekly"] = true,
 							["coord"] = { 43.6, 17.2, 1537 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 						}),
 						q(57315, {	-- Towers and Bunkers (H)
 							["provider"] = { "n", 158579 },	-- Corporal Teeka Bloodsnarl
+							["isWeekly"] = true,
 							["coord"] = { 50.8, 82.3, 1537 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 						}),
 						q(57730, {	-- Zinfizzlex's Portable Shredder Unit (A)
 							['description'] = "Questgiver is west of Korrak (over the bridge) and you have to escort him to your base. After bringing him to safety he offers the quest.",
-							["provider"] = { "n", 13377 },	-- Master Engineer Zinfizzlex
 							["repeatable"] = true,
+							["provider"] = { "n", 13377 },	-- Master Engineer Zinfizzlex
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 						}),
 						q(57731, {	-- Zinfizzlex's Portable Shredder Unit (H)
 							['description'] = "Questgiver is west of Korrak (over the bridge) and you have to escort him to your base. After bringing him to safety he offers the quest.",
-							["provider"] = { "n", 13377 },	-- Master Engineer Zinfizzlex
 							["repeatable"] = true,
+							["provider"] = { "n", 13377 },	-- Master Engineer Zinfizzlex
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 						}),
