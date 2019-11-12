@@ -1052,6 +1052,42 @@ _.NeverImplemented =
 		q(57253),	-- Conquest's Reward — automatically offered when you cap conquest for the week
 		q(57254),	-- Conquest's Reward — automatically offered when you cap conquest for the week
 		q(57255),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57743),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57744),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57745),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57746),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57747),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57748),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57749),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57750),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57751),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57752),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57753),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57754),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57755),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57756),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57757),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57758),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57759),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57760),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57761),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57762),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57763),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57764),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57765),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57768),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(57769),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(58339),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(58340),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(58341),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(58342),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(58343),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(58344),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(58345),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(58346),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(58347),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(58348),	-- Conquest's Reward — automatically offered when you cap conquest for the week
+		q(58352),	-- Conquest's Reward — automatically offered when you cap conquest for the week
 		q(57064),	-- triggered when looting War Chest as Alliance — picked up Finger-Bone Trophy of Battle, Rank 1 Conflict and Strife, so not sure if this is a weekly quest for War Chest or possibly tracking for the Azerite Essence
 
 
