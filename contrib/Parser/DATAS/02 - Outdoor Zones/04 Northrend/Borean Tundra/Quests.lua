@@ -961,6 +961,7 @@ _.Zones =
 					["coord"] = { 58.4, 67.7, 114 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 25249 },	-- Midge
+					["isBreadcrumb"] = true,
 					["sourceQuest"] = 11897,	-- Plug the Sinkholes
 				}),
 				q(11709, {	-- Nork Bloodfrenzy's Charge
