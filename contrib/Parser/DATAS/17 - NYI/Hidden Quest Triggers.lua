@@ -213,7 +213,7 @@ _.NeverImplemented =
 		q(46054),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 04
 		q(46055),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 05
 		q(12485),	-- Howling Fjord - triggers during "The Echo of Ymiron" when you see the RP between two vrykul in Wyrmskull Village
-
+		q(12452),	-- Dragonblight - triggers when turning in "The Fate of the Ruby Dragonshrine". duplicate version of a quest during early development
 		
 		
 		-------------------

@@ -22,6 +22,11 @@ _.ExpansionFeatures =
 						q(43397),	-- United As One
 					]]--
 					n(-10067, {	-- Artifact Quests
+						q(43386, {	-- Onslaught Envoy
+							["lvl"] = 110,
+							["classes"] = { 5 },	-- Priest
+							["provider"] = { "n", 110564 },	-- Alonsus Faol
+						}),
 						q(40705, {	-- Priestly Matters
 							-- Quest is actually picked up in Dalaran.
 							["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
