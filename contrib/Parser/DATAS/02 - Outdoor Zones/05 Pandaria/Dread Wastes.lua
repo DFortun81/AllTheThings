@@ -9,7 +9,7 @@ _.Zones =
 			["description"] = "|cff66ccffThe Dread Wastes are an area of Pandaria, located south of Townlong Steppes and west of the Valley of the Four Winds and Vale of Eternal Blossoms. Separated from the rest of Pandaria by the Serpent's Spine constructed during the rule of Lei Shen, the Dread Wastes are the home of the Mantid. The landscape is dotted with massive Kypari trees that produce the amber which the Mantid utilize in many ways. Klaxxi'vess serves as the main quest hub for the zone, but there are two Pandaren settlements, Soggy's Gamble and Sunset Brewgarden, that provide additional quests and are necessary for unlocking all of the Paragons.|r",
 			["lvl"] = 84,
 			["g"] = {
-				n(-4, { 	-- Achievemeents
+				n(-4, { 	-- Achievements
 					ach(7312, {		-- Amber is the Color of My Energy (Dread Wastes)
 						crit(9, {	-- Hisek the Swarmkeeper
 							["sourceQuest"] = 31439,	-- Dropping Our Signal
@@ -1015,6 +1015,10 @@ _.Zones =
 							i(87627),	-- Kunchong Carapace Chestguard
 							i(87634),	-- Mazu's Robe
 							i(87633),	-- Sharksin Armor
+							{	-- Glorious!
+								["achievementID"] = 7439,
+								["criteriaID"] = 41,
+							},
 						},
 					}),
 					n(66935, {	-- Clamstok
@@ -1039,6 +1043,10 @@ _.Zones =
 							i(87631),	-- Jiao-Skin Tunic
 							i(87633),	-- Sharksin Armor
 							i(87628),	-- Spinebreaker Chestpiece
+							{	-- Glorious!
+								["achievementID"] = 7439,
+								["criteriaID"] = 55,
+							},
 						},
 					}),
 					n(50739, {	-- Gar'lok
@@ -1058,6 +1066,10 @@ _.Zones =
 							i(87631),	-- Jiao-Skin Tunic
 							i(87634),	-- Mazu's Robe
 							i(87633),	-- Sharkskin Robe
+							{	-- Glorious!
+								["achievementID"] = 7439,
+								["criteriaID"] = 20,
+							},
 						},
 					}),
 					n(50836, {	-- Ik-Ik the Nimble
@@ -1073,6 +1085,10 @@ _.Zones =
 							i(87631),	-- Jiao-Skin Tunic
 							i(87627),	-- Kunchong Carapace Chestguard
 							i(87633),	-- Sharkskin Armor
+							{	-- Glorious!
+								["achievementID"] = 7439,
+								["criteriaID"] = 6,
+							},
 						},
 					}),
 					n(50347, {	-- Karr the Darkener
@@ -1088,6 +1104,10 @@ _.Zones =
 							i(87633),	-- Sharkskin Armor
 							i(87631),	-- Jiao-Skin Tunic
 							i(86564),	-- Imbued Jade Fragment
+							{	-- Glorious!
+								["achievementID"] = 7439,
+								["criteriaID"] = 27,
+							},
 						},
 					}),
 					n(50356, {	-- Krol the Blade
@@ -1107,6 +1127,10 @@ _.Zones =
 							i(87627),	-- Kunchong Carapace Chestguard
 							i(87633),	-- Sharkskin Armor
 							i(86574),	-- Elixir of Ancient Knowledge
+							{	-- Glorious!
+								["achievementID"] = 7439,
+								["criteriaID"] = 34,
+							},
 						},
 					}),
 					n(50776, {	-- Nalash Verdantis
@@ -1122,6 +1146,10 @@ _.Zones =
 							i(87627),	-- Kunchong Carapace Chestguard
 							i(87634),	-- Mazu's Robe
 							i(87633),	-- Sharkskin Armor
+							{	-- Glorious!
+								["achievementID"] = 7439,
+								["criteriaID"] = 13,
+							},
 						},
 					}),
 					n(50805, {	-- Omnis Grinlok
@@ -1142,6 +1170,10 @@ _.Zones =
 							i(87627),	-- Kunchong Carapace Chestguard
 							i(87630),	-- Chestpiece of Twinkling Stars
 							i(87633),	-- Sharkskin Armor
+							{	-- Glorious!
+								["achievementID"] = 7439,
+								["criteriaID"] = 48,
+							},
 						},
 					}),
 					n(69841, {	-- Zandalari Warbringer (Amber)

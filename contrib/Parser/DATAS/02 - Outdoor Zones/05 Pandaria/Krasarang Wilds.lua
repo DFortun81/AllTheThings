@@ -1625,6 +1625,10 @@ _.Zones =
 							i(87607),	-- Unearthed Dojani Headcover
 							i(87605),	-- Crest of the Red Crane
 							i(87611),	-- Shen-zin Shell Headguard
+							{	-- Glorious!
+								["achievementID"] = 7439,
+								["criteriaID"] = 45,
+							},
 						},
 					}),
 					n(66936, {	-- Clawlord Kril'mandar <The Pinch King>
@@ -1647,6 +1651,10 @@ _.Zones =
 							i(87611),	-- Shen-zin Shell Headguard
 							i(87606),	-- Tidehunter Helm
 							i(87607),	-- Unearthed Dojani Headcover
+							{	-- Glorious!
+								["achievementID"] = 7439,
+								["criteriaID"] = 10,
+							},
 						},
 					}),
 					n(68318, {	-- Dalan Nightbreaker
@@ -1695,6 +1703,10 @@ _.Zones =
 							i(87607),	-- Unearthed Dojani Headcover
 							i(87605),	-- Crest of the Red Crane
 							i(87610),	-- Deepwild Hunting Helm
+							{	-- Glorious!
+								["achievementID"] = 7439,
+								["criteriaID"] = 52,
+							},
 						},
 					}),
 					n(50340, {	-- Gaarn the Toxic
@@ -1718,6 +1730,10 @@ _.Zones =
 							i(87605),	-- Crest of the Red Crane
 							i(87610),	-- Deepwild Hunting Helm
 							i(87608),	-- Korjan Mystic's Hood
+							{	-- Glorious!
+								["achievementID"] = 7439,
+								["criteriaID"] = 24,
+							},
 						},
 					}),
 					n(68321, {	-- Kar Warmaker
@@ -1772,6 +1788,10 @@ _.Zones =
 							i(87608),	-- Korjan Mystic's Hood
 							i(87611),	-- Shen-zin Shell Headguard
 							i(87612),	-- Ancient Krasari Helm
+							{	-- Glorious!
+								["achievementID"] = 7439,
+								["criteriaID"] = 31,
+							},
 						},
 					}),
 					n(50816, {	-- Ruun Ghostpaw
@@ -1792,6 +1812,10 @@ _.Zones =
 							i(87604),	-- Beachcomber's Hat
 							i(87605),	-- Crest of the Red Crane
 							i(87606),	-- Tidehunter Helm
+							{	-- Glorious!
+								["achievementID"] = 7439,
+								["criteriaID"] = 38,
+							},
 						},
 					}),
 					n(50830, {	-- Spriggin
@@ -1807,6 +1831,10 @@ _.Zones =
 							i(87609),	-- Brushstalker Helm
 							i(87605),	-- Crest of the Red Crane
 							i(87608),	-- Korjan Mystic's Hood
+							{	-- Glorious!
+								["achievementID"] = 7439,
+								["criteriaID"] = 3,
+							},
 						},
 					}),
 					n(50388, {	-- Torik-Ethis
@@ -1826,6 +1854,10 @@ _.Zones =
 							i(87612),	-- Ancient Krasari Helm
 							i(87604),	-- Beachcomber's Hat
 							i(87606),	-- Tidehunter Helm
+							{	-- Glorious!
+								["achievementID"] = 7439,
+								["criteriaID"] = 17,
+							},
 						},
 					}),
 					n(68320, {	-- Ubunti the Shade

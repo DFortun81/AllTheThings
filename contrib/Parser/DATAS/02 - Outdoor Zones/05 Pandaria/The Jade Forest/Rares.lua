@@ -20,6 +20,10 @@ _.Zones =
 						i(87591),	-- Tian Trainee Leggings
 						i(87590),	-- Jade Heart Leggings
 						i(87589),	-- Leggings of Fractured Reflection
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 8,
+						},
 					},
 				}),
 				n(66937, {	-- Akkalar
@@ -60,6 +64,10 @@ _.Zones =
 						i(87592),	-- Grookin' Grookin' Trousers
 						i(87593),	-- Gan Shi Warlord Legguards
 						i(87594),	-- Leggings of Forgotten War
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 50,
+						},
 					},
 				}),
 				n(50338, {	-- Kor'nas Nightsavage
@@ -80,6 +88,10 @@ _.Zones =
 						i(87592),	-- Grookin' Grookin' Trousers
 						i(87593),	-- Gan Shi Warlord Legguards
 						i(87594),	-- Leggings of Forgotten War
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 22,
+						},
 					},
 				}),
 				n(70323, {	-- Krakkanon
@@ -111,6 +123,10 @@ _.Zones =
 						i(87591),	-- Tian Trainee Leggings
 						i(87587),	-- Orchard Tender's Leggings
 						i(87594),	-- Leggings of Forgotten War
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 15,
+						},
 					},
 				}),
 				n(65003, {	-- Martar the Not-So-Smart
@@ -138,6 +154,10 @@ _.Zones =
 						i(87593),	-- Gan Shi Warlord Legguards
 						i(87594),	-- Leggings of Forgotten War
 						i(87591),	-- Tian Trainee Leggings
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 1,
+						},
 					},
 				}),
 				n(50350, {	-- Morgrinn Crackfang
@@ -161,6 +181,10 @@ _.Zones =
 						i(87593),	-- Gan Shi Warlord Legguards
 						i(87594),	-- Leggings of Forgotten War
 						i(87588),	-- Leggings of Spiritsong Melody
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 29,
+						},
 					},
 				}),
 				n(50782, {	-- Sarnak
@@ -177,6 +201,10 @@ _.Zones =
 						i(87587),	-- Orchard Tender's Leggings
 						i(87590),	-- Jade Heart Leggings
 						i(87592),	-- Grookin' Grookin' Trousers
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 43,
+						},
 					},
 				}),
 				n(50808, {	-- Urobi the Walker
@@ -193,6 +221,10 @@ _.Zones =
 						i(87587),	-- Orchard Tender's Leggings
 						i(87594),	-- Leggings of Forgotten War
 						i(87589),	-- Leggings of Fractured Reflection
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 36,
+						},
 					},
 				}),
 				n(69841, {	-- Zandalari Warbringer (Amber)

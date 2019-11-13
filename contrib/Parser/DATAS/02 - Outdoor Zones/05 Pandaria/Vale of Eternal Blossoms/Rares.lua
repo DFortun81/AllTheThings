@@ -42,6 +42,10 @@ _.Zones =
 						i(87636),	-- Cloak of the Forgotten Emperor
 						i(87639),	-- Tattered Guo-Lai Dynasty Cloak
 						i(87217),	-- Small Bag of Goods
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 42,
+						},
 					},
 				}),
 				n(64403, {	-- Alani
@@ -126,6 +130,10 @@ _.Zones =
 						i(87640),	-- Softfoot's Drape
 						i(87639),	-- Tattered Guo-Lai Dynasty Cloak
 						i(134023),	-- Bottled Tornado
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 21,
+						},
 					},
 				}),
 				n(50349, {	-- Kang the Soul Thief
@@ -138,6 +146,10 @@ _.Zones =
 						i(87217),	-- Small Bag of Goods
 						i(86571),	-- Kang's Bindstone
 						i(87640),	-- Softfoot's Drape
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 28,
+						},
 					},
 				}),
 				n(63978, {	-- Kri'chon
@@ -156,6 +168,10 @@ _.Zones =
 						i(87638),	-- Cloak of Tranquil Clouds
 						i(87640),	-- Softfoot's Drape
 						i(87637),	-- Jade Harbinger's Cloak
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 7,
+						},
 					},
 				}),
 				n(50806, {	-- Moldo One-Eye
@@ -171,6 +187,10 @@ _.Zones =
 						i(87638),	-- Cloak ok Tranquil Clouds
 						i(86586),	-- Panflute of Pandaria
 						i(87637),	-- Jade Harbinger's Cloak
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 49,
+						},
 					},
 				}),
 				n(58771, {	-- Quid
@@ -189,6 +209,10 @@ _.Zones =
 						i(87638),	-- Cloak ok Tranquil Clouds
 						i(87640),	-- Softfoot's Drape
 						i(86582),	-- Aqua Jewel
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 14,
+						},
 					},
 				}),
 				n(63240, {	-- Shadowmaster Sydow
@@ -213,6 +237,10 @@ _.Zones =
 						i(87636),	-- Cloak of the Forgotten Emperor
 						i(87640),	-- Softfoot's Drape
 						i(86575),	-- Chalice of Secrets
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 35,
+						},
 					},
 				}),
 				n(58769, {	-- Vicejaw
@@ -246,6 +274,10 @@ _.Zones =
 						i(87217),	-- Small Bag of Goods
 						i(87639),	-- Tattered Guo-Lai Dynasty Cloak
 						i(86568),	-- Mr. Smite's Brass Compass
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 56,
+						},
 					},
 				}),
 				--n(50843, { 		-- Portent	}), 
