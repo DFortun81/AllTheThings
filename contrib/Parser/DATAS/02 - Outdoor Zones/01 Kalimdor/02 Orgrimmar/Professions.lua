@@ -137,7 +137,9 @@ _.Zones =
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								ach(5475, crit(1)),	-- Let's Do Lunch: Orgrimmar
+								crit(1, {	-- Careful, This Fruit Bites Back
+									["achievementID"] = 5475,	-- Let's Do Lunch: Orgrimmar
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -148,7 +150,9 @@ _.Zones =
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								ach(5475, crit(2)),	-- Let's Do Lunch: Orgrimmar
+								crit(2, {	-- Crawfish Creole
+									["achievementID"] = 5475,	-- Let's Do Lunch: Orgrimmar
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -159,7 +163,9 @@ _.Zones =
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								ach(5475, crit(3)),	-- Let's Do Lunch: Orgrimmar
+								crit(3, {	-- Even Thieves Get Hungry
+									["achievementID"] = 5475,	-- Let's Do Lunch: Orgrimmar
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -170,7 +176,9 @@ _.Zones =
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								ach(5475, crit(4)),	-- Let's Do Lunch: Orgrimmar
+								crit(4, {	-- Everything Is Better with Bacon
+									["achievementID"] = 5475,	-- Let's Do Lunch: Orgrimmar
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -199,7 +207,9 @@ _.Zones =
 								36,	-- Mag'har Orc
 							},
 							["groups"] = {
-								ach(5475, crit(5)),	-- Let's Do Lunch: Orgrimmar
+								crit(5, {	-- Stealing From Our Own
+									["achievementID"] = 5475,	-- Let's Do Lunch: Orgrimmar
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -210,7 +220,9 @@ _.Zones =
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = { 8 },	-- Troll
 							["groups"] = {
-								ach(5475, crit(5)),	-- Let's Do Lunch: Orgrimmar
+								crit(5, {	-- Stealing From Our Own
+									["achievementID"] = 5475,	-- Let's Do Lunch: Orgrimmar
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -264,7 +276,9 @@ _.Zones =
 							["requireSkill"] = 356,	-- Fishing
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								ach(5477, crit(4)),	-- Fish or Cut Bait: Orgrimmar
+								crit(4, {	-- A Furious Catch
+									["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -280,7 +294,9 @@ _.Zones =
 							["requireSkill"] = 356,	-- Fishing
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								ach(5477, crit(5)),	-- Fish or Cut Bait: Orgrimmar
+								crit(5, {	-- A Golden Opportunity
+									["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -296,7 +312,9 @@ _.Zones =
 							["requireSkill"] = 356,	-- Fishing
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								ach(5477, crit(3)),	-- Fish or Cut Bait: Orgrimmar
+								crit(3, {	-- A Staggering Effort
+									["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -312,7 +330,9 @@ _.Zones =
 							["requireSkill"] = 356,	-- Fishing
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								ach(5477, crit(1)),	-- Fish or Cut Bait: Orgrimmar
+								crit(1, {	-- Clammy Hands
+									["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -336,7 +356,9 @@ _.Zones =
 							["requireSkill"] = 356,	-- Fishing
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								ach(5477, crit(2)),	-- Fish or Cut Bait: Orgrimmar
+								crit(2, {	-- No Dumping Allowed
+									["achievementID"] = 5477,	-- Fish or Cut Bait: Orgrimmar
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat

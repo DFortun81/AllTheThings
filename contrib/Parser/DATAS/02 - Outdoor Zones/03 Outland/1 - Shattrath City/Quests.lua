@@ -97,7 +97,11 @@ _.Zones =
 							i(33873),	-- Recipe: Spicy Hot Talbuk
 							i(33871),	-- Recipe: Stormchops
 						}),
+						crit(3, {	-- Manalicious
+							["achievementID"] = 905,	-- Kickin' It Up a Notch
+						}),
 					},
+					["provider"] = { "n", 24393 },	-- The Rokk
 				}),
 				q(10037, {	-- Rather Be Fishin'
 					["g"] = {
@@ -123,7 +127,11 @@ _.Zones =
 							i(33873),	-- Recipe: Spicy Hot Talbuk
 							i(33871),	-- Recipe: Stormchops
 						}),
+						crit(1, {	-- Revenge is Tasty
+							["achievementID"] = 905,	-- Kickin' It Up a Notch
+						}),
 					},
+					["provider"] = { "n", 24393 },	-- The Rokk
 				}),
 				q(11381, {	-- Soup for the Soul
 					["isDaily"] = true,
@@ -143,7 +151,11 @@ _.Zones =
 							i(33873),	-- Recipe: Spicy Hot Talbuk
 							i(33871),	-- Recipe: Stormchops
 						}),
+						crit(4, {	-- Soup for the Soul
+							["achievementID"] = 905,	-- Kickin' It Up a Notch
+						}),
 					},
+					["provider"] = { "n", 24393 },	-- The Rokk
 				}),
 				q(11379, {	-- Super Hot Stew
 					["isDaily"] = true,
@@ -163,7 +175,11 @@ _.Zones =
 							i(33873),	-- Recipe: Spicy Hot Talbuk
 							i(33871),	-- Recipe: Stormchops
 						}),
+						crit(2, {	-- Super Hot Stew
+							["achievementID"] = 905,	-- Kickin' It Up a Notch
+						}),
 					},
+					["provider"] = { "n", 24393 },	-- The Rokk
 				}),
 				q(13082, {	-- The Boon of A'dal
 					["provider"] = { "n", 18481 },	-- A'dal

@@ -1904,7 +1904,9 @@ _.Zones =
 				["description"] = "Offered when |cFFFFD700Poen Gillbrack|r reaches Rank 5.",
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					ach(13635, crit(5)),	-- Tour of the Depths / Level a Nazjatar Ally to Level 5.
+					crit(5, {	-- Level a Nazjatar Ally to Level 5
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
 					i(169909, {	-- Poen's Neat Things
 						i(169942),	-- Vibrant Sea Blossom
 					}),
@@ -2547,7 +2549,9 @@ _.Zones =
 				["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches Rank 5.",
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					ach(13635, crit(5)),	-- Tour of the Depths / Level a Nazjatar Ally to Level 5.
+					crit(5, {	-- Level a Nazjatar Ally to Level 5
+						["achievementID"] = 13635,	-- Tour of the Depths
+					}),
 					i(169910, {	-- Vim's Scavenged Supplies
 						i(169942),	-- Vibrant Sea Blossom
 					}),

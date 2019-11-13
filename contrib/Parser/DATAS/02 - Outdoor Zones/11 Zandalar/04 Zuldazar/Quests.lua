@@ -764,7 +764,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 121706 },	-- Beastlord L'kala
 					["g"] = {
-						ach(13542, crit(1)),	-- How to Train Your Direhorn / Naptime
+						crit(1, {	-- Naptime
+							["achievementID"] = 13542,	-- How to Train Your Direhorn
+						}),
 					},
 				}),
 				q(47260, {	-- Side Effects May Include...
@@ -787,7 +789,9 @@ _.Zones =
 					["sourceQuest"] = 47310,	-- Naptime
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						ach(13542, crit(2)),	-- How to Train Your Direhorn / Held For Observation
+						crit(2, {	-- Held For Observation
+							["achievementID"] = 13542,	-- How to Train Your Direhorn
+						}),
 					},
 					["level"] = 120,
 				}),
@@ -818,7 +822,9 @@ _.Zones =
 					["sourceQuest"] = 55253,	-- A Show of Faith
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						ach(13542, crit(3)),	-- How to Train Your Direhorn / Sleep, Eat, Repeat
+						crit(3, {	-- Sleep, Eat, Repeat
+							["achievementID"] = 13542,	-- How to Train Your Direhorn
+						}),
 					},
 					["level"] = 120,
 				}),

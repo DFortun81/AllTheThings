@@ -46,6 +46,7 @@ _.NeverImplemented =
 		
 		-- Events/Holidays
 		q(11320),	-- [NYI] Now this is Ram Racing... Almost. (Brewfest)
+		q(47465),	-- Bonus roll on Azuregos World boss during WoW 15th anniversary in 2019
 
 		-- Darkmoon Faire
 		q(30557),	-- [DNT] A Captured Banner TRACKER - triggers after completing A Captured Banner (questID 29456)

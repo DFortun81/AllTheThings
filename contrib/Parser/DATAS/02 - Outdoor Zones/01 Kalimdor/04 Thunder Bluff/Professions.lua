@@ -70,7 +70,9 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5843, crit(4)),	-- Let's Do Lunch: Thunder Bluff
+								crit(4, {	-- Corn Mash
+									["achievementID"] = 5843,	-- Let's Do Lunch: Thunder Bluff
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -82,7 +84,9 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5843, crit(2)),	-- Let's Do Lunch: Thunder Bluff
+								crit(2, {	-- "Magic" Mushrooms
+									["achievementID"] = 5843,	-- Let's Do Lunch: Thunder Bluff
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -94,7 +98,9 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5843, crit(3)),	-- Let's Do Lunch: Thunder Bluff
+								crit(3, {	-- Mulgore Spice Bread
+									["achievementID"] = 5843,	-- Let's Do Lunch: Thunder Bluff
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -106,7 +112,9 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5843, crit(3)),	-- Let's Do Lunch: Thunder Bluff
+								crit(5, {	-- Perfectly Picked Portions
+									["achievementID"] = 5843,	-- Let's Do Lunch: Thunder Bluff
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -118,7 +126,9 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5843, crit(1)),	-- Let's Do Lunch: Thunder Bluff
+								crit(1, {	-- Pining for Nuts
+									["achievementID"] = 5843,	-- Let's Do Lunch: Thunder Bluff
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -161,7 +171,9 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5849, crit(4)),	-- Fish or Cut Bait: Thunder Bluff
+								crit(4, {	-- Craving Crayfish
+									["achievementID"] = 5849,	-- Fish or Cut Bait: Thunder Bluff
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -178,7 +190,9 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5849, crit(1)),	-- Fish or Cut Bait: Thunder Bluff
+								crit(1, {	-- Pond Predators
+									["achievementID"] = 5849,	-- Fish or Cut Bait: Thunder Bluff
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -195,7 +209,9 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5849, crit(5)),	-- Fish or Cut Bait: Thunder Bluff
+								crit(5, {	-- Shiny Baubles
+									["achievementID"] = 5849,	-- Fish or Cut Bait: Thunder Bluff
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -212,7 +228,9 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5849, crit(3)),	-- Fish or Cut Bait: Thunder Bluff
+								crit(3, {	-- The Race to Restock
+									["achievementID"] = 5849,	-- Fish or Cut Bait: Thunder Bluff
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -229,7 +247,9 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5849, crit(2)),	-- Fish or Cut Bait: Thunder Bluff
+								crit(2, {	-- The Ring's the Thing
+									["achievementID"] = 5849,	-- Fish or Cut Bait: Thunder Bluff
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat

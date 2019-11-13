@@ -25,7 +25,9 @@ _.Zones =
 						{ 41.2, 65.4, 108 },
 					},
 					["g"] = {
-						ach(1312, crit(6)),	-- Bloody Rare
+						crit(6, {	-- Crippler
+							["achievementID"] = 1312,	-- Bloody Rare
+						}),
 						i(31238),	-- Dragonbone Ring
 					},
 				}),
@@ -48,7 +50,9 @@ _.Zones =
 						{ 55.4, 32.6, 108 },
 					},
 					["g"] = {
-						ach(1312, crit(7)),	-- Bloody Rare
+						crit(7, {	-- Doomsayer Jurim
+							["achievementID"] = 1312,	-- Bloody Rare
+						}),
 						i(31235),	-- Grim Boots
 						i(31233),	-- Grim Greaves
 						i(31232),	-- Grim Sabatons
@@ -75,7 +79,9 @@ _.Zones =
 						{ 59.8, 25.2, 108 },
 					},
 					["g"] = {
-						ach(1312, crit(17)),	-- Bloody Rare
+						crit(17, {	-- Okrek
+							["achievementID"] = 1312,	-- Bloody Rare
+						}),
 						i(31228),	-- Feathered Belt
 						i(31227),	-- Feathered Girdle
 						i(31231),	-- Feathered Sash

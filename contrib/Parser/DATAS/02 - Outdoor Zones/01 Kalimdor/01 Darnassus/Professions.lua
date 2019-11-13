@@ -70,7 +70,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5842, crit(3)),	-- Let's Do Lunch: Darnassus
+								crit(3, {	-- Back to Basics
+									["achievementID"] = 5842,	-- Let's Do Lunch: Darnassus
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -82,7 +84,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5842, crit(2)),	-- Let's Do Lunch: Darnassus
+								crit(2, {	-- Remembering the Ancestors
+									["achievementID"] = 5842,	-- Let's Do Lunch: Darnassus
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -94,7 +98,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5842, crit(4)),	-- Let's Do Lunch: Darnassus
+								crit(4, {	-- Ribs for the Sentinels
+									["achievementID"] = 5842,	-- Let's Do Lunch: Darnassus
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),	
@@ -106,7 +112,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5842, crit(5)),	-- Let's Do Lunch: Darnassus
+								crit(5, {	-- Spice Bread Aplenty
+									["achievementID"] = 5842,	-- Let's Do Lunch: Darnassus
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -118,7 +126,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5842, crit(1)),	-- Let's Do Lunch: Darnassus
+								crit(1, {	-- The Secret to Perfect Kimchi
+									["achievementID"] = 5842,	-- Let's Do Lunch: Darnassus
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -139,7 +149,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5848, crit(4)),	-- Fish or Cut Bait: Darnassus
+								crit(4, {	-- A Slippery Snack
+									["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -156,7 +168,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5848, crit(5)),	-- Fish or Cut Bait: Darnassus
+								crit(5, {	-- An Old Favorite
+									["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -173,7 +187,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5848, crit(1)),	-- Fish or Cut Bait: Darnassus
+								crit(1, {	-- Happy as a Clam Digger
+									["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -190,7 +206,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5848, crit(2)),	-- Fish or Cut Bait: Darnassus
+								crit(2, {	-- Stocking Up
+									["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -207,7 +225,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5848, crit(3)),	-- Fish or Cut Bait: Darnassus
+								crit(3, {	-- The Sister's Pendant
+									["achievementID"] = 5848,	-- Fish or Cut Bait: Darnassus
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat

@@ -221,7 +221,9 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							ach(9104, crit(2)),	-- Bounty Hunter / Blood Elf Ear
+							crit(2, {	-- Blood Elf Ear
+								["achievementID"] = 9104,	-- Bounty Hunter
+							}),
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
@@ -233,7 +235,9 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							ach(9104, crit(6)),	-- Bounty Hunter / Forsaken Brains
+							crit(6, {	-- Forsaken Brains
+								["achievementID"] = 9104,	-- Bounty Hunter
+							}),
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
@@ -245,7 +249,9 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							ach(9104, crit(7)),	-- Bounty Hunter / Goblin Nose
+							crit(7, {	-- Goblin Nose
+								["achievementID"] = 9104,	-- Bounty Hunter
+							}),
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
@@ -257,7 +263,9 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							ach(9104, crit(4)),	-- Bounty Hunter / Orc Tooth
+							crit(4, {	-- Orc Tooth
+								["achievementID"] = 9104,	-- Bounty Hunter
+							}),
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
@@ -268,9 +276,10 @@ _.PVP =
 						["questID"] = 36038,	-- Pandaren Hide (A)
 						["repeatable"] = true,
 						["g"] = {
-							ach(9104, crit(1, {	-- Bounty Hunter / Pandaren Hide
+							crit(1, {	-- Pandaren Hide
+								["achievementID"] = 9104,	-- Bounty Hunter
 								["races"] = ALLIANCE_ONLY,
-							})),
+							}),
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
@@ -282,7 +291,9 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							ach(9104, crit(3)),	-- Bounty Hunter / Tauren Hoof
+							crit(3, {	-- Tauren Hoof
+								["achievementID"] = 9104,	-- Bounty Hunter
+							}),
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
@@ -294,7 +305,9 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							ach(9104, crit(5)),	-- Bounty Hunter / Troll Feet
+							crit(5, {	-- Troll Feet
+								["achievementID"] = 9104,	-- Bounty Hunter
+							}),
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
@@ -307,7 +320,9 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							ach(9103, crit(7)),	-- Bounty Hunter / Draenei Tail
+							crit(7, {	-- Draenei Tail
+								["achievementID"] = 9104,	-- Bounty Hunter
+							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
@@ -319,7 +334,9 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							ach(9103, crit(4)),	-- Bounty Hunter / Dwarf Spine
+							crit(4, {	-- Dwarf Spine
+								["achievementID"] = 9104,	-- Bounty Hunter
+							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
@@ -331,7 +348,9 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							ach(9103, crit(6)),	-- Bounty Hunter / Human Bone Chip
+							crit(6, {	-- Human Bone Chip
+								["achievementID"] = 9104,	-- Bounty Hunter
+							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
@@ -342,9 +361,10 @@ _.PVP =
 						["questID"] = 35942,	-- Pandaren Hide (H)
 						["repeatable"] = true,
 						["g"] = {
-							ach(9103, crit(1, {	-- Bounty Hunter / Pandaren Hide
+							crit(1, {	-- Pandaren Hide
+								["achievementID"] = 9104,	-- Bounty Hunter
 								["races"] = HORDE_ONLY,
-							})),
+							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
@@ -356,7 +376,9 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							ach(9103, crit(3)),	-- Bounty Hunter / Severed Night Elf Head
+							crit(3, {	-- Severed Night Elf Head
+								["achievementID"] = 9104,	-- Bounty Hunter
+							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
@@ -368,7 +390,9 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							ach(9103, crit(5)),	-- Bounty Hunter / Tuft of Gnome Hair
+							crit(5, {	-- Tuft of Gnome Hair
+								["achievementID"] = 9104,	-- Bounty Hunter
+							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
@@ -380,7 +404,9 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							ach(9103, crit(2)),	-- Bounty Hunter / Worgen Snout
+							crit(2, {	-- Worgen Snout
+								["achievementID"] = 9104,	-- Bounty Hunter
+							}),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },

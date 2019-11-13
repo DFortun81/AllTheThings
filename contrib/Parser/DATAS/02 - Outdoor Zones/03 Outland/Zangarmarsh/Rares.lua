@@ -18,7 +18,9 @@ _.Zones =
 						{ 86.0, 91.2, 102 },
 					},
 					["g"] = {
-						ach(1312, crit(2)),	-- Bloody Rare
+						crit(2, {	-- Bog Lurker
+							["achievementID"] = 1312,	-- Bloody Rare
+						}),
 						i(31248),	-- Bog Epaulets
 						i(31250),	-- Bog Mantle
 						i(31247),	-- Bog Pauldrons
@@ -43,7 +45,9 @@ _.Zones =
 						{ 73.4, 82.4, 102 },
 					},
 					["g"] = {
-						ach(1312, crit(4)),	-- Bloody Rare
+						crit(4, {	-- Coilfang Emissary
+							["achievementID"] = 1312,	-- Bloody Rare
+						}),
 						i(31246),	-- Nagahide Leggings
 						i(31244),	-- Nagahide Pants
 						i(31243),	-- Nagascale Legguards
@@ -82,7 +86,9 @@ _.Zones =
 						{ 78.8, 53.6, 102 },		
 					},
 					["g"] = {
-						ach(1312, crit(13)),	-- Bloody Rare
+						crit(13, {	-- Marticar
+							["achievementID"] = 1312,	-- Bloody Rare
+						}),
 						i(31254),	-- Striderhide Cloak
 					},
 				}),

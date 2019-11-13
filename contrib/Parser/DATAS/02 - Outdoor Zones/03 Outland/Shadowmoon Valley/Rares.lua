@@ -28,7 +28,9 @@ _.Zones =
 						{ 46.8, 26.6, 104 },
 					},
 					["g"] = {
-						ach(1312, crit(1)),	-- Bloody Rare
+						crit(1, {	-- Ambassador Jerrikar
+							["achievementID"] = 1312,	-- Bloody Rare
+						}),
 						i(31224),	-- Illidari Bracers
 						i(31223),	-- Illidari Wristguards
 						i(31225),	-- Illidari Bindings
@@ -47,7 +49,9 @@ _.Zones =
 						{ 59.2, 70.6, 104 },
 					},
 					["g"] = {
-						ach(1312, crit(5)),	-- Bloody Rare
+						crit(5, {	-- Collidus the Warp-Watcher
+							["achievementID"] = 1312,	-- Bloody Rare
+						}),
 						i(31219),	-- Emerald Beholder Eye
 						i(31220),	-- Amethyst Beholder Eye
 						i(31217),	-- Crimson Beholder Eye
@@ -63,7 +67,9 @@ _.Zones =
 						{ 42.4, 68.4, 104 },
 					},
 					["g"] = {
-						ach(1312, crit(12)),	-- Bloody Rare
+						crit(12, {	-- Kraator
+							["achievementID"] = 1312,	-- Bloody Rare
+						}),
 						i(31213),	-- Abyssal Plate Sabatons
 						i(31214),	-- Abyssal Mail Greaves
 						i(31216),	-- Abyssal Cloth Footwraps
