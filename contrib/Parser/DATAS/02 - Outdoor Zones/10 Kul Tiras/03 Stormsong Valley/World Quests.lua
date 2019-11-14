@@ -51,11 +51,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52972, {	-- Favored Grandchild
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(52064, {	-- Fiendish Fields
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -357,6 +352,11 @@ _.Zones =
 						["lvl"] = 110,
 					}),
 					q(52947, {	-- Ettin Outta Here
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(52972, {	-- Favored Grandchild
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

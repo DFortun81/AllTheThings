@@ -202,9 +202,12 @@ _.NeverImplemented =
 		q(35512),	-- Utgarde Keep heroic completion
 		q(35449),	-- Utgarde Pinnacle normal completion
 		q(35453),	-- Utgarde Pinnacle heroic completion
+		q(24811),	-- Caster Ring Flag (doing "Choose Your Path" in ICC and choosing crit/haste ring on mage)
 		q(24809),	-- Healer Ring Flag (doing "A Change of Heart" in ICC and choosing the healer ring
 		q(24844),	-- A Change of Heart — on shadow priest, was DPS, switched to heal ring
 		q(24845),	-- A Change of Heart — on shadow priest, was heal, switched to DPS ring
+		q(24840),	-- A Change of Heart — on mage, switched from crit/haste ring to haste/vers ring
+		q(24841),	-- A Change of Heart — on mage, switched from haste/vers ring to crit/haste ring
 		-- there are 19 "A Change of Heart" quests, no idea how to determine what classes they're for or what other restrictions there may be, so placing these here for now
 		
 		-- Zones

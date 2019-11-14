@@ -174,10 +174,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(51988, {	-- Whitney "Steelclaw" Ramsay
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53273, {	-- Winter's Kiss Cluster
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -818,6 +814,10 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(51988, {	-- Whitney "Steelclaw" Ramsay
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
 					}),
 					q(51682, {	-- Witches by the Dozen
 						["lvl"] = 120,
