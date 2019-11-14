@@ -6,24 +6,26 @@ _.Zones =
 	m(113, {	-- Northrend
 		m(115, {	-- Dragonblight
 			n(-17, {	-- Quests
-				q(12439, {	-- A Disturbance In The West -- aa
+				q(12439, {	-- A Disturbance In The West
 					["coord"] = { 78.9, 45.3, 115 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27158 },	-- Vas the Unstable
 					["isBreadcrumb"] = true,
 				}),
 				q(12274, {	-- A Fall From Grace
+					["coord"] = { 73.5, 73.5, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27350 },	-- Agent Skully
+					["sourceQuest"] = 12260,	-- The Perfect Dissemblance
 				}),
-				q(42007, {	-- A Forgotten Enemy
+				q(42007, {	-- A Forgotten Enemy (Mage)
 					["lvl"] = 98,
 					["coord"] = { 56.7, 69.1, 115 },
 					["model"] = 192568,
 					["classes"] = { 8 },	-- Mage
 					["provider"] = { "o", 248398 },	-- Ethereal Communication Device
 				}),
-				q(41627, {	-- A Forgotten Enemy
+				q(41627, {	-- A Forgotten Enemy (Priest)
 					["lvl"] = 98,
 					["coord"] = { 56.7, 69.1, 115 },
 					["model"] = 192568,
@@ -35,8 +37,6 @@ _.Zones =
 					["coord"] = { 26.3, 64.9, 115 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 36756 },	-- Captain Malin's Letter
-					["description"] = "Must be on or have completed |cFFFFD700The Focus on the Beach|r.",
-					["sourceQuest"] = 12060,	-- Projections and Plans
 				}),
 				q(12085, {	-- A Letter for Home (H)
 					["crs"] = { 26815 },	-- Lieutenant Ta'zinni
@@ -45,8 +45,10 @@ _.Zones =
 					["provider"] = { "i", 36780 },	-- Lieutenant Ta'zinni's Letter
 				}),
 				q(12240, {	-- A Means to an End
+					["coord"] = { 77.0, 62.9, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27248 },	-- Apothecary Vicky Levine
+					["sourceQuest"] = 12230,	-- Stealing from the Siegesmiths
 				}),
 				q(12321, {	-- A Righteous Sermon
 					["coord"] = { 76.7, 47.4, 115 },
@@ -77,20 +79,22 @@ _.Zones =
 					["sourceQuest"] = 11999,	-- Rifle the Bodies
 				}),
 				q(11977, {	-- A Tauren Among Taunka
+					["coord"] = { 12.7, 51.7, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26156 },	-- Wartook Iceborn
-				}),
-				q(11930, {	-- Across Transborea
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 26158 },	-- Mother Tauranook
+					["sourceQuest"] = 11930,	-- Across Transborea
 				}),
 				q(12008, {	-- Agmar's Hammer
+					["coord"] = { 13.2, 48.3, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26181 },	-- Emissary Brighthoof
+					["sourceQuest"] = 11983,	-- Blood Oath of the Horde
 				}),
 				q(12140, {	-- All Hail Roanauk!
-					["provider"] = { "n", 26379 },	-- Overlord Agmar
+					["coord"] = { 38.0, 46.3, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26379 },	-- Overlord Agmar
+					["sourceQuest"] = 12069,	-- Return of the High Chief
 					["g"] = {
 						i(38293),	-- Suntouched Flowers
 						i(38002),	-- Honorborn Cloak
@@ -105,8 +109,10 @@ _.Zones =
 					["sourceQuest"] = 12472,	-- Finality
 				}),
 				q(12040, {	-- An Enemy in Arthas
+					["coord"] = { 26.1, 50.7, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26653 },	-- Kilix the Unraveler
+					["sourceQuest"] = 12034,	-- Victory Nears...
 				}),
 				q(43388, {	-- Apostate Liberation
 					["lvl"] = 110,
@@ -119,7 +125,7 @@ _.Zones =
 					["provider"] = { "n", 26659 },	-- Zort
 					["sourceQuest"] = 12076,	-- Messy Business
 				}),
-				q(26013, {	-- Assault on the Sanctum -- aa
+				q(26013, {	-- Assault on the Sanctum
 					["coord"] = { 59.7, 54.6, 115 },
 					["provider"] = { "n", 27990 },	-- Krasus <Consort of the Queen>
 					["sourceQuest"] = 26012,	-- Trouble at Wyrmrest
@@ -137,8 +143,10 @@ _.Zones =
 					},
 				}),
 				q(12084, {	-- Atop the Woodlands (H)
-					["provider"] = { "n", 26471 },	-- Image of Archmage Aethas Sunreaver
+					["coord"] = { 38.0, 46.2, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26471 },	-- Image of Archmage Aethas Sunreaver
+					["sourceQuest"] = 12066,	-- The Focus on the Beach
 					["g"] = {
 						i(37942),	-- Kirin Tor Initiate's Sandals
 						i(37985),	-- Violet Stalker Shoulderpads
@@ -147,8 +155,10 @@ _.Zones =
 					},
 				}),
 				q(12071, {	-- Attack by Air!
+					["coord"] = { 36.6, 46.5, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26415 },	-- Senior Sergeant Juktok
+					["sourceQuest"] = 12053,	-- The Might of the Horde
 				}),
 				q(12172, {	-- Attunement to Dalaran (A)
 					["coord"] = { 28.9, 55.4, 115 },
@@ -157,6 +167,7 @@ _.Zones =
 					["provider"] = { "n", 26673 },	-- Image of Archmage Modera
 				}),
 				q(12173, {	-- Attunement to Dalaran (H)
+					["coord"] = { 38.0, 46.2, 115 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { 8 },	-- Mage
 					["provider"] = { "n", 26471 },	-- Image of Archmage Aethas Sunreaver
@@ -168,24 +179,31 @@ _.Zones =
 					["sourceQuest"] = 12474,	-- To Fordragon Hold!
 				}),
 				q(12496, {	-- Audience With The Dragon Queen (H)
+					["coord"] = { 40.7, 18.0, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 25257 },	-- Saurfang the Younger
+					["sourceQuest"] = 12224,	-- The Kor'kron Vanguard!
 				}),
-				q(12006, {	-- Avenge this Atrocity! -- aa
+				q(12006, {	-- Avenge this Atrocity!
 					["coord"] = { 24.1, 60.0, 115 },
 					["provider"] = { "n", 26501 },	-- Ethenial Moonshadow
 				}),
 				q(12304, {	-- Beachfront Property
+					["coord"] = { 79.3, 65.0, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 32599 },	-- Surveyor Hansen
 				}),
 				q(12039, {	-- Black Blood of Yogg-Saron
+					["coord"] = { 36.6, 47.1, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26564 },	-- Borus Ironbender
+					["sourceQuest"] = 12034,	-- Victory Nears...
 				}),
 				q(12072, {	-- Blightbeasts be Damned!
-					["provider"] = { "n", 26574 },	-- Valnok Windrager
+					["coord"] = { 37.2, 45.7, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26574 },	-- Valnok Windrager
+					["sourceQuest"] = 12071,	-- Attack by Air!
 					["g"] = {
 						i(37957),	-- Wastewind Bracers
 						i(37999),	-- Glade Wanderer Bracers
@@ -194,16 +212,21 @@ _.Zones =
 					},
 				}),
 				q(12206, {	-- Blighted Last Rites
+					["coord"] = { 76.9, 62.9, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27248 },	-- Apothecary Vicky Levine
 				}),
 				q(11983, {	-- Blood Oath of the Horde
+					["coord"] = { 13.2, 48.3, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26181 },	-- Emissary Brighthoof
+					["sourceQuest"] = 11978,	-- Into the Fold
 				}),
 				q(12232, {	-- Bombard the Ballistae
-					["provider"] = { "n", 27320 },	-- Deathguard Molder
+					["coord"] = { 76.4, 62.5, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 27320 },	-- Deathguard Molder
+					["sourceQuest"] = 12230,	-- Stealing from the Siegesmiths
 					["g"] = {
 						i(37949),	-- Saboteur's Wrap
 						i(37992),	-- Ritual Neckguard
@@ -235,8 +258,10 @@ _.Zones =
 					},
 				}),
 				q(12145, {	-- Canyon Chase (H)
-					["provider"] = { "n", 26979 },	-- Kontokanis
+					["coord"] = { 46.6, 33.4, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26979 },	-- Kontokanis
+					["sourceQuest"] = 12144,	-- Pest Control
 					["g"] = {
 						i(37965),	-- Wyrmward Cover
 						i(38007),	-- Canyon Runner's Vest
@@ -245,8 +270,10 @@ _.Zones =
 					},
 				}),
 				q(12064, {	-- Chains of the Anub'ar
-					["provider"] = { "n", 26733 },	-- Banthok Icemist
+					["coord"] = { 22.6, 41.7, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26733 },	-- Banthok Icemist
+					["sourceQuest"] = 12063,	-- Strength of Icemist
 					["g"] = {
 						i(37959),	-- Wastewind Pauldrons
 						i(38001),	-- Snowfall Reaver Pauldrons
@@ -273,8 +300,10 @@ _.Zones =
 					},
 				}),
 				q(12100, {	-- Containing the Rot
+					["coord"] = { 37.0, 48.5, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26504 },	-- Soar Hawkfury
+					["sourceQuest"] = 12034,	-- Victory Nears...
 				}),
 				q(12032, {	-- Conversing With the Depths
 					["coord"] = { 36.6, 65.1, 115 },
@@ -296,7 +325,7 @@ _.Zones =
 					["provider"] = { "n", 26593 },	-- Serinar
 					["sourceQuest"] = 12263,	-- The Best of Intentions
 				}),
-				q(12454, {	-- Cycle of Life -- aa
+				q(12454, {	-- Cycle of Life
 					["coord"] = { 63.5, 72.0, 115 },
 					["provider"] = { "n", 27255 },	-- Nishera the Garden Keeper
 				}),
@@ -316,7 +345,7 @@ _.Zones =
 					["provider"] = { "n", 26593 },	-- Serinar
 					["sourceQuest"] = 12263,	-- The Best of Intentions
 				}),
-				q(12146, {	-- Disturbing Implications (A) -- todo: does this drop all the time or only after Canyon Chase is picked up?
+				q(12146, {	-- Disturbing Implications (A)
 					["crs"] = { 27005 },	-- Chilltusk
 					["coord"] = { 72.3, 28.1, 115 },
 					["races"] = ALLIANCE_ONLY,
@@ -329,8 +358,10 @@ _.Zones =
 					["provider"] = { "i", 36856 },	-- Emblazoned Battle Horn
 				}),
 				q(12285, {	-- Do Unto Others
-					["provider"] = { "n", 27243 },	-- High Executor Wroth
+					["coord"] = { 76.7, 63.2, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 27243 },	-- High Executor Wroth
+					["sourceQuest"] = 12283,	-- The Trull Will Out
 					["g"] = {
 						i(38536),	-- Bindings of the Forceful Vanquisher
 						i(38537),	-- Cuffs of the Decapitator
@@ -344,8 +375,10 @@ _.Zones =
 					["sourceQuest"] = 12028,	-- Spiritual Insight
 				}),
 				q(12200, {	-- Emerald Dragon Tears
+					["coord"] = { 77.6, 62.7, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27172 },	-- Chief Plaguebringer Middleton
+					["sourceQuest"] = 12188,	-- The Forsaken Blight and You: How Not to Die
 				}),
 				q(12013, {	-- End Arcanimus
 					["coord"] = { 24.1, 60.0, 115 },
@@ -371,8 +404,10 @@ _.Zones =
 					["sourceQuest"] = 12253,	-- Rescue from Town Square
 				}),
 				q(12243, {	-- Fire Upon the Waters
-					["provider"] = { "n", 27248 },	-- Apothecary Vicky Levine
+					["coord"] = { 77.0, 62.9, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 27248 },	-- Apothecary Vicky Levine
+					["sourceQuest"] = 12240,	-- A Means to an End
 					["g"] = {
 						i(37950),	-- Highseas Wristwraps
 						i(37993),	-- Glade Wanderer Boots
@@ -394,12 +429,19 @@ _.Zones =
 					["sourceQuest"] = 12030,	-- Elder Mana'loa
 				}),
 				q(12214, {	-- Fresh Remounts
+					["coord"] = { 75.9, 61.8, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27028 },	-- Hansel Bauer
+					["sourceQuests"] = {
+						12303,	-- Funding the War Effort
+						12209,	-- Materiel Plunder
+					},
 				}),
 				q(12036, {	-- From the Depths of Azjol-Nerub
+					["coord"] = { 36.6, 46.5, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26415 },	-- Senior Sergeant Juktok
+					["sourceQuest"] = 12034,	-- Victory Nears...
 				}),
 				q(12478, {	-- Frostmourne Cavern
 					["coord"] = { 79.1, 47.1, 115 },
@@ -414,8 +456,9 @@ _.Zones =
 					},
 				}),
 				q(12303, {	-- Funding the War Effort
-					["provider"] = { "n", 27267 },	-- Quartermaster Bartlett
+					["coord"] = { 75.9, 63.2, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 27267 },	-- Quartermaster Bartlett
 					["g"] = {
 						i(38181),	-- Warblade of the Forgotten Footman
 						i(37986),	-- Hood of the Forgotten Rifleman
@@ -431,13 +474,18 @@ _.Zones =
 					["sourceQuest"] = 12107,	-- The End of the Line
 				}),
 				q(12122, {	-- Gaining an Audience (H)
+					["coord"] = { 38.0, 46.2, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26471 },	-- Image of Archmage Aethas Sunreaver
+					["sourceQuest"] = 12110,	-- The End of the Line
 				}),
 				q(12497, {	-- Galakrond and the Scourge
 					["coord"] = { 59.8, 54.6, 115 },
 					["provider"] = { "n", 26917 },	-- Alexstrasza the Life-Binder
-					["sourceQuest"] = 12495,	-- Audience With The Dragon Queen
+					["sourceQuests"] = {
+						12495,	-- Audience With The Dragon Queen (A)
+						12496,	-- Audience With The Dragon Queen (H)
+					},
 				}),
 				q(12049, {	-- Hard to Swallow
 					["coord"] = { 55.0, 23.4, 115 },
@@ -462,8 +510,10 @@ _.Zones =
 					["sourceQuest"] = 12460,	-- Report to the Ruby Dragonshrine
 				}),
 				q(12448, {	-- Heated Battle (H)
+					["coord"] = { 42.9, 50.8, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27763 },	-- Vargastrasz
+					["sourceQuest"] = 12461,	-- Report to the Ruby Dragonshrine
 				}),
 				q(13385, {	-- Heroic Judgment at the Eye of Eternity
 					["coord"] = { 59.7, 54.6, 115 },
@@ -482,9 +532,11 @@ _.Zones =
 					["provider"] = { "n", 26881 },	-- Palena Silvercloud
 					["sourceQuest"] = 12171,	-- Of Traitors and Treason
 				}),
-				q(12189, {	-- Imbeciles Abound! (Note: triggered when turning in "Give it a Name" in howling fjord)
-					["provider"] = { "n", 26505 },	-- Doctor Sintar Malefious
+				q(12189, {	-- Imbeciles Abound!
+					["coord"] = { 36.0, 48.8, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26505 },	-- Doctor Sintar Malefious
+					["isBreadcrumb"] = true,
 				}),
 				q(12282, {	-- Imprints on the Past
 					["coord"] = { 79.1, 47.1, 115 },
@@ -499,20 +551,28 @@ _.Zones =
 					},
 				}),
 				q(12102, {	-- In Search of the Ruby Lilac
+					["coord"] = { 36.0, 48.8, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26505 },	-- Doctor Sintar Malefious
+					["sourceQuest"] = 12101,	-- The Good Doctor...
 				}),
 				q(12125, {	-- In Service of Blood
+					["coord"] = { 35.9, 46.9, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26581 },	-- Koltira Deathweaver
+					["sourceQuest"] = 12115,	-- Koltira and the Language of Death
 				}),
 				q(12127, {	-- In Service of Frost
+					["coord"] = { 35.9, 46.9, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26581 },	-- Koltira Deathweaver
+					["sourceQuest"] = 12115,	-- Koltira and the Language of Death
 				}),
 				q(12126, {	-- In Service of the Unholy
+					["coord"] = { 35.9, 46.9, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26581 },	-- Koltira Deathweaver
+					["sourceQuest"] = 12115,	-- Koltira and the Language of Death
 				}),
 				q(12123, {	-- Informing the Queen (A)
 					["coord"] = { 57.9, 54.1, 115 },
@@ -521,8 +581,10 @@ _.Zones =
 					["sourceQuest"] = 12768,	-- The Steward of Wyrmrest Temple
 				}),
 				q(12124, {	-- Informing the Queen (H)
+					["coord"] = { 57.9, 54.1, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26443 },	-- Tariolstrasz
+					["sourceQuest"] = 12769,	-- The Steward of Wyrmrest Temple
 				}),
 				q(12325, {	-- Into Hostile Territory
 					["coord"] = { 78.6, 48.1, 115 },
@@ -540,8 +602,10 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(11978, {	-- Into the Fold
+					["coord"] = { 13.0, 49.3, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26181 },	-- Emissary Brighthoof
+					["sourceQuest"] = 11979,	-- The Taunka and the Tauren
 				}),
 				q(13384, {	-- Judgment at the Eye of Eternity
 					["coord"] = { 59.7, 54.6, 115 },
@@ -561,8 +625,10 @@ _.Zones =
 					["sourceQuest"] = 12166,	-- The Liquid Fire of Elune
 				}),
 				q(12115, {	-- Koltira and the Language of Death
+					["coord"] = { 35.8, 48.3, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26618 },	-- Captain Gort
+					["sourceQuest"] = 12057,	-- The Flesh-Bound Tome
 				}),
 				q(12277, {	-- Leave Nothing to Chance
 					["coord"] = { 81.5, 42.2, 115 },
@@ -576,7 +642,7 @@ _.Zones =
 						i(37960),	-- Oath Signet
 					},
 				}),
-				q(11958, {	-- Let Nothing Go To Waste -- aa
+				q(11958, {	-- Let Nothing Go To Waste
 					["coord"] = { 48.0, 74.8, 115 },
 					["provider"] = { "n", 26194 },	-- Elder Ko'nani
 					["description"] = "The breadcrumb quests have collectible rewards. Make sure to do one of them before picking up this quest!",
@@ -586,8 +652,10 @@ _.Zones =
 					},
 				}),
 				q(12211, {	-- Let Them Not Rise!
-					["provider"] = { "n", 27248 },	-- Apothecary Vicky Levine
+					["coord"] = { 77.0, 62.9, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 27248 },	-- Apothecary Vicky Levine
+					["sourceQuest"] = 12206,	-- Blighted Last Rites
 					["g"] = {
 						i(37971),	-- Sash of the Nibbling Plague
 						i(38014),	-- Vermin-Handler's Gauntlets
@@ -609,10 +677,13 @@ _.Zones =
 					},
 				}),
 				q(12056, {	-- Marked for Death: High Cultist Zangus
+					["coord"] = { 35.8, 48.3, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26618 },	-- Captain Gort
+					["sourceQuest"] = 12034,	-- Victory Nears...
 				}),
 				q(12209, {	-- Materiel Plunder
+					["coord"] = { 75.9, 63.2, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27267 },	-- Quartermaster Bartlett
 				}),
@@ -628,6 +699,7 @@ _.Zones =
 					},
 				}),
 				q(12033, {	-- Message from the West
+					["coord"] = { 37.3, 46.7, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26649 },	-- Messenger Torvus
 				}),
@@ -641,7 +713,7 @@ _.Zones =
 					["provider"] = { "n", 26983 },	-- Aurastrasza
 					["sourceQuest"] = 12148,	-- One of a Kind
 				}),
-				q(12464, {	-- My Old Enemy -- aa
+				q(12464, {	-- My Old Enemy
 					["coord"] = { 76.8, 47.5, 115 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27784 },	-- Commander Eligor Dawnbringer
@@ -654,7 +726,7 @@ _.Zones =
 						i(38134),	-- Bloodtinged Spellblade
 					},
 				}),
-				q(12470, {	-- Mystery of the Infinite -- aa
+				q(12470, {	-- Mystery of the Infinite
 					["coord"] = { 60.0, 54.5, 115 },
 					["provider"] = { "n", 27856 },	-- Chromie
 					["g"] = {
@@ -680,7 +752,7 @@ _.Zones =
 					["provider"] = { "n", 27318 },	-- Cavalier Durkon
 					["sourceQuest"] = 12312,	-- Secrets of the Scourge
 				}),
-				q(12235, {	-- Naxxramas and the Fall of Wintergarde -- aa
+				q(12235, {	-- Naxxramas and the Fall of Wintergarde
 					["coord"] = { 78.5, 48.1, 115 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27136 },	-- High Commander Halford Wyrmbane
@@ -690,8 +762,10 @@ _.Zones =
 					},
 				}),
 				q(12234, {	-- Need to Know
+					["coord"] = { 76.7, 63.0, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27337 },	-- Spy Mistress Repine
+					["sourceQuest"] = 12230,	-- Stealing from the Siegesmiths -- TODO:: verify this
 				}),
 				q(12267, {	-- Neltharion's Flame
 					["coord"] = { 35.2, 30.0, 115 },
@@ -708,8 +782,10 @@ _.Zones =
 					},
 				}),
 				q(12245, {	-- No Mercy for the Captured
+					["coord"] = { 76.7, 63.0, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27337 },	-- Spy Mistress Repine
+					["sourceQuest"] = 12205,	-- WANTED: The Scarlet Onslaught -- TODO: verify this
 				}),
 				q(12262, {	-- No One to Save You
 					["coord"] = { 35.2, 30.0, 115 },
@@ -727,7 +803,7 @@ _.Zones =
 					["provider"] = { "n", 27156 },	-- Highlord Leoric Von Zeldig
 					["sourceQuest"] = 12275,	-- The Demo-gnome
 				}),
-				q(12043, {	-- Nozzlerust Defense -- aa
+				q(12043, {	-- Nozzlerust Defense
 					["coord"] = { 54.4, 23.6, 115 },
 					["provider"] = { "n", 26647 },	-- Narf
 				}),
@@ -775,12 +851,13 @@ _.Zones =
 						i(38036),	-- Circlet of the Forgotten Mercenary
 					},
 				}),
-				q(12142, {	-- Pest Control (A) -- aa
+				q(12142, {	-- Pest Control (A)
 					["coord"] = { 64.4, 26.3, 115 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26978 },	-- Duane
 				}),
 				q(12144, {	-- Pest Control (H)
+					["coord"] = { 46.6, 33.4, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26979 },	-- Kontokanis
 				}),
@@ -809,8 +886,10 @@ _.Zones =
 					},
 				}),
 				q(12005, {	-- Prevent the Accord (H)
-					["provider"] = { "n", 26471 },	-- Image of Archmage Aethas Sunreaver
+					["coord"] = { 38.0, 46.2, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26471 },	-- Image of Archmage Aethas Sunreaver
+					["sourceQuest"] = 11999,	-- Rifle the Bodies
 					["g"] = {
 						i(37943),	-- Kirin Tor Initiate's Cowl
 						i(37987),	-- Violet Stalker Bracers
@@ -819,8 +898,9 @@ _.Zones =
 					},
 				}),
 				q(11980, {	-- Pride of the Horde
-					["provider"] = { "n", 26180 },	-- Blood Guard Roh'kill
+					["coord"] = { 14.2, 49.8, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26180 },	-- Blood Guard Roh'kill
 					["g"] = {
 						i(37964),	-- Spiderwarder Braces
 						i(38006),	-- Glade Wanderer Belt
@@ -839,8 +919,13 @@ _.Zones =
 					},
 				}),
 				q(12061, {	-- Projections and Plans (H)
+					["coord"] = { 38.0, 46.2, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26471 },	-- Image of Archmage Aethas Sunreaver
+					["sourceQuests"] = {
+						12059,	-- A Strange Device
+						12005,	-- Prevent the Accord
+					},
 				}),
 				q(12080, {	-- Really Big Worm
 					["coord"] = { 58.9, 17.8, 115 },
@@ -870,8 +955,10 @@ _.Zones =
 					["sourceQuest"] = 12766,	-- Speak with your Ambassador
 				}),
 				q(12461, {	-- Report to the Ruby Dragonshrine (H)
+					["coord"] = { 58.6, 56.3, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27804 },	-- Golluck Rockfist
+					["sourceQuest"] = 12767,	-- Speak with your Ambassador
 				}),
 				q(12253, {	-- Rescue from Town Square
 					["coord"] = { 78.5, 48.2, 115 },
@@ -880,8 +967,10 @@ _.Zones =
 					["sourceQuest"] = 12251,	-- Return to the High Commander
 				}),
 				q(12069, {	-- Return of the High Chief
+					["coord"] = { 22.6, 41.7, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26733 },	-- Banthok Icemist
+					["sourceQuest"] = 12064,	-- Chains of the Anub'ar
 				}),
 				q(12499, {	-- Return To Angrathar (A)
 					["coord"] = { 59.8, 54.6, 115 },
@@ -890,17 +979,21 @@ _.Zones =
 					["sourceQuest"] = 12498,	-- On Ruby Wings
 				}),
 				q(12500, {	-- Return To Angrathar (H)
+					["coord"] = { 59.8, 54.6, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26917 },	-- Alexstrasza the Life-Binder
+					["sourceQuest"] = 12498,	-- On Ruby Wings
 				}),
-				q(12469, {	-- Return to Sender -- aa
+				q(12469, {	-- Return to Sender
 					["coord"] = { 48.4, 24.1, 115 },
 					["provider"] = { "n", 26896 },	-- Nozzlerust Supply Runner
 					["isBreadcrumb"] = true,
 				}),
 				q(12104, {	-- Return to Soar
+					["coord"] = { 36.0, 48.8, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26505 },	-- Doctor Sintar Malefious
+					["sourceQuest"] = 12102,	-- In Search of the Ruby Lilac
 				}),
 				q(12417, {	-- Return to the Earth (A)
 					["coord"] = { 52.2, 50.0, 115 },
@@ -909,8 +1002,10 @@ _.Zones =
 					["sourceQuest"] = 12416,	-- Heated Battle
 				}),
 				q(12449, {	-- Return to the Earth (H)
+					["coord"] = { 42.9, 50.8, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27763 },	-- Vargastrasz
+					["sourceQuest"] = 12448,	-- Heated Battle
 				}),
 				q(12251, {	-- Return to the High Commander
 					["coord"] = { 77.0, 50.1, 115 },
@@ -924,7 +1019,7 @@ _.Zones =
 						i(38102),	-- Stonepath Gauntlets
 					},
 				}),
-				q(12000, {	-- Rifle the Bodies (A) -- aa
+				q(12000, {	-- Rifle the Bodies (A)
 					["coord"] = { 29.0, 55.4, 115 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26673 },	-- Image of Archmage Modera
@@ -936,12 +1031,16 @@ _.Zones =
 					},
 				}),
 				q(11999, {	-- Rifle the Bodies (H)
+					["coord"] = { 38.0, 46.2, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26471 },	-- Image of Archmage Aethas Sunreaver
+					["sourceQuest"] = 11996,	-- Your Presence is Required at Agmar's Hammer
 				}),
 				q(12097, {	-- Sarathstra, Scourge of the North
-					["provider"] = { "n", 26859 },	-- Rokhan
+					["coord"] = { 47.1, 33.0, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26859 },	-- Rokhan
+					["sourceQuest"] = 12095,	-- To Dragon's Fall
 					["g"] = {
 						i(38530),	-- Wrap of Vigorous Destruction
 						i(38532),	-- Belt of Vengeful Purification
@@ -962,8 +1061,10 @@ _.Zones =
 					["sourceQuest"] = 12326,	-- Steamtank Surprise
 				}),
 				q(12048, {	-- Scourge Armaments
-					["provider"] = { "n", 26564 },	-- Borus Ironbender
+					["coord"] = { 36.6, 47.1, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26564 },	-- Borus Ironbender
+					["sourceQuest"] = 12039,	-- Black Blood of Yogg-Saron
 					["g"] = {
 						i(37961),	-- Wastewind Leggings
 						i(38003),	-- Snowfall Reaver Leggings
@@ -978,8 +1079,10 @@ _.Zones =
 					["sourceQuest"] = 12083,	-- Atop the Woodlands
 				}),
 				q(12106, {	-- Search Indu'le Village (H)
+					["coord"] = { 38.0, 46.2, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26471 },	-- Image of Archmage Aethas Sunreaver
+					["sourceQuest"] = 12084,	-- Atop the Woodlands
 				}),
 				q(12312, {	-- Secrets of the Scourge
 					["coord"] = { 78.6, 52.2, 115 },
@@ -988,11 +1091,11 @@ _.Zones =
 					["provider"] = { "o", 189311 },	--	Flesh-bound Tome
 					["sourceQuest"] = 12309,	-- Find Durkon!
 				}),
-				q(12458, {	-- Seeds of the Lashers -- aa
+				q(12458, {	-- Seeds of the Lashers
 					["coord"] = { 59.5, 54.4, 115 },
 					["provider"] = { "n", 27785 },	-- Lord Itharius
 				}),
-				q(12045, {	-- Shaved Ice -- aa
+				q(12045, {	-- Shaved Ice
 					["coord"] = { 54.7, 23.2, 115 },
 					["provider"] = { "n", 26661 },	-- Zivlix
 				}),
@@ -1012,7 +1115,7 @@ _.Zones =
 						i(37982),	-- Gleaming Tuskring
 					},
 				}),
-				q(12075, {	-- Slim Pickings -- aa
+				q(12075, {	-- Slim Pickings
 					["coord"] = { 59.3, 18.1, 115 },
 					["provider"] = { "n", 26659 },	-- Zort
 					["sourceQuest"] = 12112,	-- Stiff Negotiations
@@ -1041,8 +1144,10 @@ _.Zones =
 					["sourceQuest"] = 12119,	-- Gaining an Audience
 				}),
 				q(12767, {	-- Speak with your Ambassador (H)
+					["coord"] = { 57.9, 54.1, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26443 },	-- Tariolstrasz
+					["sourceQuest"] = 12122,	-- Gaining an Audience
 				}),
 				q(12028, {	-- Spiritual Insight
 					["coord"] = { 49.1, 75.6, 115 },
@@ -1050,12 +1155,16 @@ _.Zones =
 					["sourceQuest"] = 11959,	-- Slay Loguhn
 				}),
 				q(12218, {	-- Spread the Good Word
+					["coord"] = { 77.6, 62.7, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27172 },	-- Chief Plaguebringer Middleton
+					["sourceQuest"] = 12200,	-- Emerald Dragon Tears
 				}),
 				q(12230, {	-- Stealing from the Siegesmiths
+					["coord"] = { 76.4, 62.5, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27320 },	-- Deathguard Molder
+					["sourceQuest"] = 12211,	-- Let Them not Rise!
 				}),
 				q(12326, {	-- Steamtank Surprise
 					["coord"] = { 89.6, 46.3, 115 },
@@ -1074,7 +1183,7 @@ _.Zones =
 					["sourceQuest"] = 12052,	-- Harp on This!
 					["isBreadcrumb"] = true,
 				}),
-				q(12044, {	-- Stocking Up -- aa
+				q(12044, {	-- Stocking Up
 					["coord"] = { 55.0, 23.4, 115 },
 					["provider"] = { "n", 26660 },	-- Xink
 					["sourceQuest"] = 12469,	-- Return to Sender
@@ -1085,8 +1194,10 @@ _.Zones =
 					["sourceQuest"] = 12075,	-- Slim Pickings
 				}),
 				q(12063, {	-- Strength of Icemist
+					["coord"] = { 36.1, 45.2, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26652 },	-- Greatmother Icemist
+					["sourceQuest"] = 12056,	-- Marked for Death: High Cultist Zangus
 				}),
 				q(12092, {	-- Strengthen the Ancients (A)
 					["coord"] = { 28.7, 57.0, 115 },
@@ -1101,8 +1212,10 @@ _.Zones =
 					},
 				}),
 				q(12096, {	-- Strengthen the Ancients (H)
-					["provider"] = { "n", 26854 },	-- Earthwarden Grife
+					["coord"] = { 36.5, 47.8, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26854 },	-- Earthwarden Grife
+					["sourceQuest"] = 12066,	-- The Focus on the Beach
 					["g"] = {
 						i(37966),	-- Bracers of Nature's Fury
 						i(38008),	-- Lothalar Woodwalker Belt
@@ -1147,7 +1260,7 @@ _.Zones =
 					["provider"] = { "n", 26917 },	-- Alexstrasza the Life-Binder
 					["sourceQuest"] = 13078,	-- Dahlia's Tears
 				}),
-				q(12542, {	-- The Call Of The Crusade -- aa
+				q(12542, {	-- The Call Of The Crusade
 					["coord"] = { 87.2, 57.3, 115 },
 					["provider"] = { "n", 27348 },	-- Tilda Darathan
 					["isBreadcrumb"] = true,
@@ -1158,7 +1271,7 @@ _.Zones =
 					["provider"] = { "n", 1293 },	-- Ambo Cash
 					["sourceQuest"] = 12455,	-- Scattered To The Wind
 				}),
-				q(12545, {	-- The Cleansing Of Jintha'kalar -- aa
+				q(12545, {	-- The Cleansing Of Jintha'kalar
 					["coord"] = { 83.9, 26.0, 115 },
 					["provider"] = { "n", 28228 },	-- Crusader Valus
 					["sourceQuest"] = 12542,	-- The Call of The Crusade
@@ -1177,8 +1290,13 @@ _.Zones =
 					["sourceQuest"] = 12251,	-- Return to the High Commander
 				}),
 				q(12273, {	-- The Denouncement
-					["provider"] = { "n", 27243 },	-- High Executor Wroth
+					["coord"] = { 76.7, 63.2, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 27243 },	-- High Executor Wroth
+					["sourceQuests"] = {
+						12271,	-- The Rod of Compulsion
+						12252,	-- Torture the Torturer
+					},
 					["g"] = {
 						i(37968),	-- Robe of Calcified Tears
 						i(38011),	-- Torturer's Fleshwoven Leggings
@@ -1200,8 +1318,10 @@ _.Zones =
 					},
 				}),
 				q(12110, {	-- The End of the Line (H)
-					["provider"] = { "n", 26873 },	-- Mage-Commander Evenstar
+					["coord"] = { 40.2, 66.8, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26873 },	-- Mage-Commander Evenstar
+					["sourceQuest"] = 12106,	-- Search Indu'le Village
 					["g"] = {
 						i(38151),	-- Daschal's Discarded Shiv
 						i(38152),	-- Mace of the Violet Guardian
@@ -1222,7 +1342,7 @@ _.Zones =
 						i(38101),	-- Stonepath Sabatons
 					},
 				}),
-				q(12419, {	-- The Fate of the Ruby Dragonshrine -- aa
+				q(12419, {	-- The Fate of the Ruby Dragonshrine
 					["crs"] = { 27680 },	-- Dahlia Suntouch
 					["coord"] = { 47.7, 49.2, 115 },
 					["provider"] = { "i", 37833 },	--	Ruby Brooch
@@ -1235,8 +1355,13 @@ _.Zones =
 					["sourceQuest"] = 12167,	-- Kill the Cultists
 				}),
 				q(12057, {	-- The Flesh-Bound Tome
+					["coord"] = { 25.3, 41.4, 115 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 0 },	-- Unable to pull from Wowhead.
+					["provider"] = { "i", 36744 },	-- Flesh-Bound Tome
+					["crs"] = {
+						26319,	-- Anub'ar Cultist
+						26606,	-- Anub'ar Slayer
+					},
 				}),
 				q(12065, {	-- The Focus on the Beach (A)
 					["coord"] = { 29.0, 55.4, 115 },
@@ -1245,8 +1370,10 @@ _.Zones =
 					["sourceQuest"] = 12060,	-- Projections and Plans
 				}),
 				q(12066, {	-- The Focus on the Beach (H)
+					["coord"] = { 38.0, 46.2, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26471 },	-- Image of Archmage Aethas Sunreaver
+					["sourceQuest"] = 12061,	-- Projections and Plans
 				}),
 				q(12291, {	-- The Forgotten Tale
 					["coord"] = { 87.1, 57.4, 115 },
@@ -1255,8 +1382,10 @@ _.Zones =
 					["sourceQuest"] = 12290,	-- The Murkweek Elixir
 				}),
 				q(12221, {	-- The Forsaken Blight
-					["provider"] = { "n", 27172 },	-- Chief Plaguebringer Middleton
+					["coord"] = { 77.6, 62.7, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 27172 },	-- Chief Plaguebringer Middleton
+					["sourceQuest"] = 12218,	-- Spread the Good Word
 					["g"] = {
 						i(38178),	-- Battlement Enforcer's Axe
 						i(38177),	-- Siege Captain's Gun
@@ -1266,6 +1395,7 @@ _.Zones =
 					},
 				}),
 				q(12188, {	-- The Forsaken Blight and You: How Not to Die
+					["coord"] = { 77.6, 62.7, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27172 },	-- Chief Plaguebringer Middleton
 					["sourceQuests"] = {
@@ -1280,8 +1410,10 @@ _.Zones =
 					},
 				}),
 				q(12101, {	-- The Good Doctor...
+					["coord"] = { 37.0, 48.5, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26504 },	-- Soar Hawkfury
+					["sourceQuest"] = 12100,	-- Containing the Rot
 				}),
 				q(12169, {	-- The High Cultist
 					["coord"] = { 29.1, 55.6, 115 },
@@ -1296,6 +1428,7 @@ _.Zones =
 					},
 				}),
 				q(12488, {	-- The High Executor Needs You
+					["coord"] = { 36.6, 46.5, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26415 },	-- Senior Sergeant Juktok
 				}),
@@ -1306,8 +1439,10 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(12224, {	-- The Kor'kron Vanguard!
-					["provider"] = { "n", 26379 },	-- Overlord Agmar
+					["coord"] = { 38.1, 46.3, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26379 },	-- Overlord Agmar
+					["sourceQuest"] = 12072,	-- Blightbeasts be Damned!
 					["g"] = {
 						i(38541),	-- Implacable Zombie Crushers
 						i(38543),	-- Reinforced Traveler's Boots
@@ -1315,14 +1450,16 @@ _.Zones =
 						i(38542),	-- Treads of the Valiant Struggle
 					},
 				}),
-				q(12166, {	-- The Liquid Fire of Elune -- aa
+				q(12166, {	-- The Liquid Fire of Elune
 					["coord"] = { 29.1, 55.6, 115 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26973 },	-- Warden Jodi Moonsong
 				}),
 				q(12041, {	-- The Lost Empire
-					["provider"] = { "n", 26653 },	-- Kilix the Unraveler
+					["coord"] = { 26.1, 50.7, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26653 },	-- Kilix the Unraveler
+					["sourceQuest"] = 12040,	-- An Enemy in Arthas
 					["g"] = {
 						i(37954),	-- Wastewind Cinch
 						i(37996),	-- Snowfall Reaver Gloves
@@ -1337,13 +1474,16 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(12791, {	-- The Magical Kingdom of Dalaran (H)
+					["coord"] = { 38.0, 46.2, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26471 },	-- Image of Archmage Aethas Sunreaver
 					["isBreadcrumb"] = true,
 				}),
 				q(12053, {	-- The Might of the Horde
-					["provider"] = { "n", 26415 },	-- Senior Sergeant Juktok
+					["coord"] = { 36.6, 46.5, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26415 },	-- Senior Sergeant Juktok
+					["sourceQuest"] = 12036,	-- From the Depths of Azjol-Nerub
 					["g"] = {
 						i(37956),	-- Frontrunner's Blessed Handwraps
 						i(37998),	-- Snowfall Reaver Boots
@@ -1369,7 +1509,7 @@ _.Zones =
 						i(38100),	-- Crystalplate Gauntlets
 					},
 				}),
-				q(12447, {	-- The Obsidian Dragonshrine -- aa
+				q(12447, {	-- The Obsidian Dragonshrine
 					["coord"] = { 60.0, 54.1, 115 },
 					["provider"] = { "n", 27765 },	-- Nalice
 				}),
@@ -1380,8 +1520,10 @@ _.Zones =
 					["sourceQuest"] = 12305,	-- Parting Thoughts
 				}),
 				q(12260, {	-- The Perfect Dissemblance
+					["coord"] = { 73.5, 73.5, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27350 },	-- Agent Skully
+					["sourceQuest"] = 12254,	-- Without a Prayer
 				}),
 				q(12456, {	-- The Plume of Alystros
 					["coord"] = { 63.5, 72.0, 115 },
@@ -1395,8 +1537,14 @@ _.Zones =
 					},
 				}),
 				q(12132, {	-- The Power to Destroy
+					["coord"] = { 35.9, 46.9, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26581 },	-- Koltira Deathweaver
+					["sourceQuests"] = {
+						12125,	-- In Service of Blood
+						12127,	-- In Service of Frost
+						12126,	-- In Service of the Unholy
+					},
 				}),
 				q(12476, {	-- The Return of the Crusade?
 					["coord"] = { 78.6, 48.1, 115 },
@@ -1405,8 +1553,12 @@ _.Zones =
 					["sourceQuest"] = 12305,	-- Parting Thoughts
 				}),
 				q(12271, {	-- The Rod of Compulsion
+					["crs"] = { 27209 },	-- Torturer LeCraft
+					["coord"] = { 69.7, 71.9, 115 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 0 },	-- Unable to pull from Wowhead.
+					["provider"] = { "i", 37432 },	-- Torturer's Rod
+					["description"] = "Must be on or have completed |cFFFFD700Torture the Torturer|r.",
+					["sourceQuest"] = 12245,	-- No Mercy for the Captured
 				}),
 				q(12276, {	-- The Search for Slinkin
 					["coord"] = { 77.8, 50.2, 115 },
@@ -1415,8 +1567,10 @@ _.Zones =
 					["sourceQuest"] = 12275,	-- The Demo-gnome
 				}),
 				q(12239, {	-- The Spy in New Hearthglen
+					["coord"] = { 76.7, 63.0, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27337 },	-- Spy Mistress Repine
+					["sourceQuest"] = 12234,	-- Torture the Torturer
 				}),
 				q(12768, {	-- The Steward of Wyrmrest Temple (A)
 					["coord"] = { 52.2, 50.0, 115 },
@@ -1425,16 +1579,21 @@ _.Zones =
 					["sourceQuest"] = 12418,	-- Through Fields of Flame
 				}),
 				q(12769, {	-- The Steward of Wyrmrest Temple (H)
+					["coord"] = { 42.9, 50.8, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27763 },	-- Vargastrasz
+					["sourceQuest"] = 12450,	-- Through Fields of Flame
 				}),
 				q(11979, {	-- The Taunka and the Tauren
+					["coord"] = { 36.6, 46.5, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26415 },	-- Senior Sergeant Juktok
 				}),
 				q(12136, {	-- The Translated Tome
-					["provider"] = { "n", 26581 },	-- Koltira Deathweaver
+					["coord"] = { 35.9, 46.9, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26581 },	-- Koltira Deathweaver
+					["sourceQuest"] = 12132,	-- The Power to Destroy
 					["g"] = {
 						i(37958),	-- Wastewind Headcover
 						i(38000),	-- Snowfall Reaver Breastplate
@@ -1449,8 +1608,10 @@ _.Zones =
 					["sourceQuest"] = 12291,	-- The Forgotten Tale
 				}),
 				q(12283, {	-- The Truth Will Out
+					["coord"] = { 73.5, 73.5, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27350 },	-- Agent Skully
+					["sourceQuest"] = 12274,	-- A Fall From Grace
 				}),
 				q(12418, {	-- Through Fields of Flame (A)
 					["coord"] = { 52.2, 50.0, 115 },
@@ -1465,8 +1626,10 @@ _.Zones =
 					},
 				}),
 				q(12450, {	-- Through Fields of Flame (H)
-					["provider"] = { "n", 27763 },	-- Vargastrasz
+					["coord"] = { 42.9, 50.8, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 27763 },	-- Vargastrasz
+					["sourceQuest"] = 12449,	-- Return to the Earth
 					["g"] = {
 						i(37962),	-- Treads of the Charred Canyon
 						i(38004),	-- Scourgeslayer Belt
@@ -1481,8 +1644,14 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(12095, {	-- To Dragon's Fall
+					["coord"] = { 35.8, 48.3, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26618 },	-- Captain Gort
+					["sourceQuests"] = {
+						12091,	-- WANTED: Dreadtalon
+						12090,	-- WANTED: Gigantaur
+						12089,	-- WANTED: Magister Keldonus
+					},
 				}),
 				q(12474, {	-- To Fordragon Hold!
 					["coord"] = { 78.6, 48.1, 115 },
@@ -1503,23 +1672,17 @@ _.Zones =
 					["sourceQuest"] = 12439,	-- A Disturbance in The West
 					["isBreadcrumb"] = true,
 				}),
-				q(12182, {	-- To Venomspite!
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 24155 },	-- Tobias Sarkhoff
-				}),
 				q(12252, {	-- Torture the Torturer
-					["provider"] = { "n", 27243 },	-- High Executor Wroth
+					["coord"] = { 76.7, 63.2, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 27243 },	-- High Executor Wroth
+					["sourceQuest"] = 12245,	-- No Mercy for the Captured
 					["g"] = {
 						i(37953),	-- Wastewind Garments
 						i(37995),	-- Snowfall Reaver Hood
 						i(38039),	-- Iceshear Pauldrons
 						i(38100),	-- Crystalplate Gauntlets
 					},
-				}),
-				q(26012, {	-- Trouble at Wyrmrest [DALARAN]
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 16128 },	-- Rhonin
 				}),
 				q(12009, {	-- Tua'kea's Crab Traps
 					["coord"] = { 47.9, 76.1, 115 },
@@ -1542,10 +1705,13 @@ _.Zones =
 					},
 				}),
 				q(12034, {	-- Victory Nears...
+					["coord"] = { 38.0, 46.3, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26379 },	-- Overlord Agmar
+					["sourceQuest"] = 12008,	-- Agmar's Hammer
 				}),
 				q(12091, {	-- Wanted: Dreadtalon
+					["coord"] = { 37.6, 46.5, 115 },
 					["races"] = HORDE_ONLY,
 					["model"] = 199476,
 					["provider"] = { "o", 188418 },	-- Wanted!
@@ -1557,6 +1723,7 @@ _.Zones =
 					},
 				}),
 				q(12090, {	-- Wanted: Gigantaur
+					["coord"] = { 37.6, 46.5, 115 },
 					["races"] = HORDE_ONLY,
 					["model"] = 199476,
 					["provider"] = { "o", 188418 },	-- Wanted!
@@ -1596,6 +1763,7 @@ _.Zones =
 					},
 				}),
 				q(12089, {	-- Wanted: Magister Keldonus
+					["coord"] = { 37.6, 46.5, 115 },
 					["races"] = HORDE_ONLY,
 					["model"] = 199476,
 					["provider"] = { "o", 188418 },	-- Wanted!
@@ -1622,6 +1790,7 @@ _.Zones =
 					},
 				}),
 				q(12205, {	-- Wanted: The Scarlet Onslaught
+					["coord"] = { 76.9, 62.8, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 188649 },	-- Wanted Poster
 				}),
@@ -1645,8 +1814,10 @@ _.Zones =
 					["sourceQuest"] = 12305,	-- Parting Thoughts
 				}),
 				q(12111, {	-- Where the Wild Things Roam
-					["provider"] = { "n", 26504 },	-- Soar Hawkfury
+					["coord"] = { 37.0, 48.5, 115 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26504 },	-- Soar Hawkfury
+					["sourceQuest"] = 12104,	-- Return to Soar
 					["g"] = {
 						i(38171),	-- Battleworn Magnataur Crusher
 						i(38172),	-- Crossbow of the Hardened Ranger
@@ -1657,8 +1828,10 @@ _.Zones =
 					},
 				}),
 				q(12254, {	-- Without a Prayer
+					["coord"] = { 73.5, 73.5, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27350 },	-- Agent Skully
+					["sourceQuest"] = 12239,	-- The Spy in New Hearthglen
 				}),
 				q(12078, {	-- Worm Wrangler
 					["coord"] = { 59.3, 18.1, 115 },
@@ -1666,10 +1839,12 @@ _.Zones =
 					["sourceQuest"] = 12077,	-- Apply This Twice A Day
 				}),
 				q(11996, {	-- Your Presence is Required at Agmar's Hammer
+					["coord"] = { 47.9, 74.7, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26441 },	-- Envoy Ripfang
+					["isBreadcrumb"] = true,
 				}),
-				q(11995, {	-- Your Presence is Required at Stars' Rest -- aa
+				q(11995, {	-- Your Presence is Required at Stars' Rest
 					["coord"] = { 48.0, 74.9, 115 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26440 },	-- Emissary Skyhaven

@@ -78,6 +78,9 @@ _.Zones =
 			q(28548, {	-- Warchief's Command: Desolace!
 				["isBreadcrumb"] = true,
 			}),
+			q(39203, {	-- Warchief's Command: Dragonblight!
+				["isBreadcrumb"] = true,
+			}),
 			q(49543, {	-- Warchief's Command: Dread Wastes!
 				["isBreadcrumb"] = true,
 			}),
