@@ -126,11 +126,21 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+						["g"] = {
+							ach(13439, {	-- Boxing Match
+								["races"] = ALLIANCE_ONLY,
+							}),
+						},
 					}),
 					q(54516, {	-- Crate n' Barrel (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
+						["g"] = {
+							ach(13438, {	-- Boxing Match
+								["races"] = HORDE_ONLY,
+							}),
+						},
 					}),
 					q(50854, {	-- Crimsonclaw
 						["lvl"] = 120,

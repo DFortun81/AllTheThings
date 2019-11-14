@@ -1192,6 +1192,19 @@ _.NeverImplemented =
 		q(51912),	-- Drustvar repeatable random chest
 		q(51913),	-- Drustvar repeatable random chest
 		q(51914),	-- Drustvar repeatable random chest
+		
+
+	--	Nazmir
+		-- Bonus Objectives
+		q(47996, {	-- Mawfiend Extermination
+			["isWorldQuest"] = true,
+		}),
+		q(48588, {	-- Purge the Infection
+			["isWorldQuest"] = true,
+		}),
+		q(48852, {	-- Stopping Zardax
+			["isWorldQuest"] = true,
+		}),
 
 
 	--	Stormsong Valley

@@ -384,11 +384,17 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+						["g"] = {
+							ach(13429),	-- Azerfighter
+						},
 					}),
 					q(53769, {	-- Furious Fracas (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
+						["g"] = {
+							ach(13429),	-- Azerfighter
+						},
 					}),
 					q(54414, {	-- Gale's Unrest (Faction Assault WQ)
 						["lvl"] = 110,

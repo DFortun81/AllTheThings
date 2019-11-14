@@ -11,7 +11,7 @@ _.Zones =
 					["coord"] = { 40.4, 67.8, 210 },
 					["provider"] = { "n", 2500 },	-- Captain Hecklebury Smotts
 					["g"] = {
-						i(4130),	-- Smott's COmpass
+						i(4130),	-- Smott's Compass
 					},
 				}),
 				q(26600, {	-- A Giant's Feast
@@ -719,10 +719,7 @@ _.Zones =
 					["provider"] = { "n", 102120 },	-- Fleet Admiral Tethys
 					["lvl"] = 98,
 					["coord"] = { 40.6, 69.2, 210 },
-					["classes"] = {
-						1,	-- Warrior
-						4,	-- Rogue
-					},
+					["classes"] = {	4 },	-- Rogue (wowhead says this is also a warrior quest.  sounds fake, but okay)
 				}),
 				q(26837, {	-- The Explorers' League Digsite
 					["u"] = 40,
