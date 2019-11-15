@@ -98,7 +98,7 @@ _.Zones =
 							i(33871),	-- Recipe: Stormchops
 						}),
 						crit(3, {	-- Manalicious
-							["achievementID"] = 905,	-- Kickin' It Up a Notch
+							["achievementID"] = 906,	-- Kickin' It Up a Notch
 						}),
 					},
 					["provider"] = { "n", 24393 },	-- The Rokk
@@ -128,7 +128,7 @@ _.Zones =
 							i(33871),	-- Recipe: Stormchops
 						}),
 						crit(1, {	-- Revenge is Tasty
-							["achievementID"] = 905,	-- Kickin' It Up a Notch
+							["achievementID"] = 906,	-- Kickin' It Up a Notch
 						}),
 					},
 					["provider"] = { "n", 24393 },	-- The Rokk
@@ -152,7 +152,7 @@ _.Zones =
 							i(33871),	-- Recipe: Stormchops
 						}),
 						crit(4, {	-- Soup for the Soul
-							["achievementID"] = 905,	-- Kickin' It Up a Notch
+							["achievementID"] = 906,	-- Kickin' It Up a Notch
 						}),
 					},
 					["provider"] = { "n", 24393 },	-- The Rokk
@@ -176,7 +176,7 @@ _.Zones =
 							i(33871),	-- Recipe: Stormchops
 						}),
 						crit(2, {	-- Super Hot Stew
-							["achievementID"] = 905,	-- Kickin' It Up a Notch
+							["achievementID"] = 906,	-- Kickin' It Up a Notch
 						}),
 					},
 					["provider"] = { "n", 24393 },	-- The Rokk
