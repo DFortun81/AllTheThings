@@ -133,6 +133,13 @@ _.WorldEvents =
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 						}),
+						q(56258, {	-- Ivus the Forest Lord
+							["provider"] = { "n", 154476 },	-- Archdruid Renferal
+						--	["coord"] = { , 91 },
+							["isWeekly"] = true,
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 120,
+						}),
 						q(57638, {	-- Korrak the Bloodrager
 							["provider"] = { "n", 158515 },	-- Lieutenant Haggerdin
 							["coord"] = { 43.6, 16.0, 1537 },
@@ -152,6 +159,13 @@ _.WorldEvents =
 							["coord"] = { 45.0, 48.0, 1537 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
+						}),
+						q(56259, {	-- Lokholar the Ice Lord
+							["provider"] = { "n", 154474 },	-- Primalist Thurloga
+							["coord"] = { 55.0, 87.2, 91 },
+							["isWeekly"] = true,
+							["races"] = HORDE_ONLY,
+							["lvl"] = 120,
 						}),
 						q(57641, {	-- Master Ryson's All Seeing Eye
 						--	unsure if this has faction requirements or anything along those lines
