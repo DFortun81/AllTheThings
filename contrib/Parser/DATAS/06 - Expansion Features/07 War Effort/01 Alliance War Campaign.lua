@@ -63,7 +63,7 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				ach(13924, {	-- The Fourth War
+				ach(13925, {	-- The Fourth War
 				--	not nesting 'ready for war' and 'tides of vengeance' achievements inside, because when you try to utilize the sourceQuests on 'the fourth war' it does not display properly.
 					["sourceQuests"] = { 57002 },	-- Old Soldier
 					["g"] = {
