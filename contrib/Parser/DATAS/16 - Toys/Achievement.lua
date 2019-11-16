@@ -68,10 +68,13 @@ _.Toys =
 				["questID"] = 39265,	-- Pepe can be sometimes be summoned with this mask
 				["coord"] = { 80.11, 50.4, 550 },
 			}),
-			i(161443, {	-- A Tiny Voodo Mask
+			i(161443, {	-- A Tiny Voodoo Mask
 				["questID"] = 52269,	-- Pepe can be sometimes be summoned with this mask
 				["coord"] = { 38.98, 15.80, 1163 },
 				["description"] = "Located inside the |cFFFFD700Hot House|r.",
+			}),
+			i(174865, {	-- A Tiny Winter Hat
+				-- TODO:: find the hat and add the relevant info
 			}),
 		}),
 	}),
