@@ -182,11 +182,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(50991, {	-- Work Order: Blood-Stained Bone
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(52407, {	-- Work Order: Golden Beryl
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -832,6 +827,12 @@ _.Zones =
 						["g"] = {
 							i(162445),	-- Pattern: Battle Flag: Rallying Swiftness (Rank 3)
 						},
+					}),
+					q(50991, {	-- Work Order: Blood-Stained Bone
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = 393,	-- Skinning
 					}),
 					q(52390, {	-- Work Order: Contract: Order of Embers
 						["requireSkill"] = 773,	-- Inscription
