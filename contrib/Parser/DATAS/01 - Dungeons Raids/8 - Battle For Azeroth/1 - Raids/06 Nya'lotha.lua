@@ -550,7 +550,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				e(2375, {	-- N'Zoth, the Corruptor
 					["crs"] = { 158041 },
 					["g"] = {
-						ach(14068),	-- Ahead of the Curve: N'Zoth, the Corruptor
+						ach(14068, {	-- Ahead of the Curve: N'Zoth, the Corruptor
+							q(58876, {	-- Lost Flight
+								["provider"] = { "i", 174863 },	-- Spawn of Vexiona
+							}),
+						}),
 						ach(14148),	-- Peer Pressure
 						i(172187),	-- Devastation's Hour
 						i(172229),	-- Dominion, Lurker Beyond Dreams
@@ -752,9 +756,15 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				e(2375, {	-- N'Zoth, the Corruptor
 					["crs"] = { 158041 },
 					["g"] = {
-						ach(14068),	-- Ahead of the Curve: N'Zoth, the Corruptor
+						ach(14068, {	-- Ahead of the Curve: N'Zoth, the Corruptor
+							q(58876, {	-- Lost Flight
+								["provider"] = { "i", 174863 },	-- Spawn of Vexiona
+							}),
+						}),
 						ach(14069),	-- Cutting Edge: N'Zoth, the Corruptor
-						ach(14055),	-- Mythic: N'Zoth, the Corruptor
+						ach(14055, {	-- Mythic: N'Zoth, the Corruptor
+							title(417),	-- the Uncorrupted
+						}),
 						ach(14148),	-- Peer Pressure
 						i(174872),	-- Ny'alotha Allseer
 						i(172187),	-- Devastation's Hour
