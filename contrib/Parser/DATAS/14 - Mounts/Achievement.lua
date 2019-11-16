@@ -11,6 +11,7 @@ _.Mounts =
 		i(98104),	-- Armored Red Dragonhawk
 		i(93662),	-- Armored Skyscreamer
 		i(167171),	-- Azshari Bloatray
+		i(174654),	-- Black Serpent of N'Zoth
 		i(44223),	-- Black War Bear (Alliance)
 		i(44224),	-- Black War Bear (Horde)
 		i(116666),	-- Blacksteel Battleboar
@@ -114,6 +115,7 @@ _.Mounts =
 		i(44177),	-- Violet Proto-Drake
 		i(62900),	-- Volcanic Stone Drake
 		i(169162),	-- Wonderwing 2.0
+		i(174861),	-- Wriggling Parasite
 		i(157870, {	-- Zandalari Direhorn  [Zandalari Allied Race Quest Chain]
 			["races"] = HORDE_ONLY,
 		}),

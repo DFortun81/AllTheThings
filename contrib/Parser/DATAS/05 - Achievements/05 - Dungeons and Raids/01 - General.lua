@@ -404,6 +404,7 @@ _.Achievements =
 						crit(17),		-- I've Got My Eyes On You
 					}),
 					ach(14146, {	-- Gory of the Ny'alotha Raider
+						i(174861),	-- Wriggling Parasite
 						crit(1),	-- Smoke Test
 						crit(2),	-- Mana Sponge
 						crit(3),	-- Phase 3: Prophet

@@ -384,7 +384,7 @@ _.ExpansionFeatures =
 					["coord"] = { 73.9, 83.5, 1527 },
 					["isDaily"] = true,
 					["g"] = {
-						i(174641),	-- PH Storm Drake -- TODO:: update name
+						i(174641),	-- Drake of the Four Winds
 					},
 				}),
 				n(158595, {	-- Thoughtstealer Vos

@@ -550,6 +550,7 @@ _.Mounts =
 		i(29103, {	-- White War Talbuk [Horde Only]
 			["races"] = HORDE_ONLY,
 		}),
+		i(174770),	-- Wicked Swarmer
 		i(116671),	-- Wild Goretusk
 		i(40775, {	-- Winged Steed of the Ebon Blade [Death Knight Only]
 			["classes"] = { 6 },	-- Death Knight

@@ -349,7 +349,7 @@ _.ExpansionFeatures =
 					["questID"] = 57363,
 					["coord"] = { 33.7, 68.6, 1530 },
 					["g"] = {
-						i(174840),	-- Pau-Pi
+						i(174840),	-- Xinlao
 					},
 				}),
 				n(157183, {	-- Coagulated Anima

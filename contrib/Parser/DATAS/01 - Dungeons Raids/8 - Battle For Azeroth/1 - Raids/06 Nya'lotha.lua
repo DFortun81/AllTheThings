@@ -186,7 +186,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			}),
 			d(14, {	-- Normal
 				n(-4, {	-- Achievements
-					ach(14146),	-- Glory of the Ny'alotha Raider
+					ach(14146, {	-- Glory of the Ny'alotha Raider
+						i(174861),	-- Wriggling Parasite
+					}),
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },
@@ -373,7 +375,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			}),
 			d(15, {	-- Heroic
 				n(-4, {	-- Achievements
-					ach(14146),	-- Glory of the Ny'alotha Raider
+					ach(14146, {	-- Glory of the Ny'alotha Raider
+						i(174861),	-- Wriggling Parasite
+					}),
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },
@@ -561,7 +565,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			}),
 			d(16, {	-- Mythic
 				n(-4, {	-- Achievements
-					ach(14146),	-- Glory of the Ny'alotha Raider
+					ach(14146, {	-- Glory of the Ny'alotha Raider
+						i(174861),	-- Wriggling Parasite
+					}),
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },
@@ -747,6 +753,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						ach(14068),	-- Ahead of the Curve: N'Zoth, the Corruptor
 						ach(14069),	-- Cutting Edge: N'Zoth, the Corruptor
 						ach(14055),	-- Mythic: N'Zoth, the Corruptor
+						i(174872),	-- Ny'alotha Allseer
 						i(172187),	-- Devastation's Hour
 						i(172229),	-- Dominion, Lurker Beyond Dreams
 						i(174167),	-- Greathelm of Phantasmic Reality

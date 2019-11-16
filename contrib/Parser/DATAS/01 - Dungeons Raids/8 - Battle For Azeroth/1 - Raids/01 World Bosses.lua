@@ -77,7 +77,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					crit(5, {	-- Dunegorger Kraulok
 						["achievementID"] = 12587,	-- Unbound Monstrosities 
 					}),
-					i(174842),	-- Slightly Damp Pile of Fur (Brown Alpaca)
+					i(174842),	-- Slightly Damp Pile of Fur (Mollie)
 					i(161404),	-- Hood of the Sinuous Devilsaur
 					i(164385),	-- Desert Nomad's Wrap
 					i(161400),	-- Raider's Shrouding Thobe

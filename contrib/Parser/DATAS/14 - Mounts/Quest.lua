@@ -92,6 +92,7 @@ _.Mounts =
 		mount(232412, {	-- Netherlord's Chaotic Wrathsteed
 			["classes"] = {9},
 		}),
+		i(174771),		-- Obedient Drone
 		i(87768),		-- Onyx Cloud Serpent
 		i(32857),		-- Onyx Netherwing Drake
 		i(137577),		-- Predatory Bloodgazer
@@ -106,6 +107,7 @@ _.Mounts =
 		i(163127),		-- Smoldering Reeins of the Teldrassil Hippogryph
 		i(169199),		-- Snapdragon Kelpstalker
 		i(137578),		-- Snowfeather Hunter
+		i(174859),		-- Reins of the Springfur Alpaca
 		mount(69820, {	-- Sunwalker Kodo
 			["races"] = {6},
 			["classes"] = {2},
@@ -124,6 +126,7 @@ _.Mounts =
 		i(116675),		-- Trained Rocktusk
 		i(116774),		-- Trained Silverpelt
 		i(116784),		-- Trained Snarler
+		i(174862),		-- Uncorrupted Voidwing
 		i(54465),		-- Vashj'ir Seahorse
 		i(46102),		-- Venomhide Ravasaur
 		i(32861),		-- Veridian Netherwing Drake

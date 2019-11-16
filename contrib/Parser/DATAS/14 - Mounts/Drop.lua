@@ -37,6 +37,7 @@ _.Mounts =
 		i(163583),  -- Craghorn Chasm-Leaper
 		i(152905),	-- Crimson Slavermaw
 		i(152843),	-- Darkspore Mana Ray Mount
+		i(174641),	-- Drake of the Four Winds
 		i(63040),	-- Drake of the North Wind
 		i(63041),	-- Drake of the South Wind
 		i(78919),	-- Experiment 12-B
@@ -68,6 +69,7 @@ _.Mounts =
 		i(50818),	-- Invincible
 		i(116660),	-- Ironhoof Destroyer
 		i(166467),	-- Island Thunderscale
+		i(174752),	-- Ivory Cloud Serpent
 		i(94231),	-- Jade Primordial Direhorn
 		i(168370),	-- Junkheap Drifter
 		i(104253),	-- Kor'kron Juggernaut
@@ -87,6 +89,7 @@ _.Mounts =
 		i(142233, {	-- Netherlord's Accursed Wrathsteed
 			["classes"] = { 9 },	-- Warlock
 		}),
+		i(174872),	-- Ny'alotha Allseer
 		i(49636),	-- Onyxian Drake
 		i(63042),	-- Phosphorescent Stone Drake
 		i(69224),	-- Pureblood Fire Hawk
@@ -139,6 +142,7 @@ _.Mounts =
 		i(116780),	-- Warsong Direfang
 		i(147804),	-- Wild Dreamrunner
 		i(163706),	-- Witherbark Direwing
+		i(174840),	-- Xinlao
 		i(21324),	-- Yellow Qiraji Battle Tank
 	}),
 };
