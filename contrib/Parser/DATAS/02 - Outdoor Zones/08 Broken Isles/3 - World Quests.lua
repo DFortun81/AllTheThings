@@ -432,6 +432,7 @@ _.Zones =
 					i(134161),	-- Brulstone Pendant
 					i(139063),	-- Dreamwalker's Pendant
 					i(134249),	-- Manapearl Choker
+					i(146776),	-- Manastalker Collar
 					i(121796),	-- Pendant of the Kaldorei
 				}),
 				n(-385, {	-- Finger
@@ -445,6 +446,7 @@ _.Zones =
 					i(134380),	-- Burning Portal Key
 					i(139075),	-- Forest Creeper's Guile
 					i(134335),	-- Mana Crystal Shard
+					i(134159),	-- Rocksunder Lucky Statue
 					i(134336),	-- Stolen Mana Crystal
 				}),
 				n(-387, {	-- Relics

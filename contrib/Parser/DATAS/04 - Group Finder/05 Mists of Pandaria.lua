@@ -129,7 +129,7 @@ _.GroupFinder =
 				i(92871),	-- Bubblebrew Cowl
 				i(92872),	-- Bubblebrew Handwraps
 				i(92873),	-- Bubblebrew Leggings
-				i(92887),	-- Bubblebrew Necklace
+				i(92887),	-- Bubblebrew Necklace				— 11/15/19
 				i(92874),	-- Bubblebrew Robe
 				i(92875),	-- Bubblebrew Sandals
 				i(92876),	-- Bubblebrew Shoulderpads
@@ -275,7 +275,6 @@ _.GroupFinder =
 				i(92871),	-- Bubblebrew Cowl
 				i(92872),	-- Bubblebrew Handwraps
 				i(92873),	-- Bubblebrew Leggings
-				i(92887),	-- Bubblebrew Necklace
 				i(92874),	-- Bubblebrew Robe
 				i(92875),	-- Bubblebrew Sandals
 				i(92876),	-- Bubblebrew Shoulderpads
