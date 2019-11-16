@@ -354,4 +354,24 @@ _.IllusionDB = {
 		["illusionID"] = 6096,
 		["text"] = "Dreadflame",
 	},
+	--[[ -- TODO:: need to find and add the effectIDs
+	{	-- Void Edge
+		["itemID"] = 174932,	-- Illusion: Void Edge
+		["illusionID"] = ,
+		["text"] = "Void Edge",
+		["questID"] = 58927,
+	},
+	{	-- Voidwrath
+		["itemID"] = 174933,	-- Illusion: Voidwrath
+		["illusionID"] = ,
+		["text"] = "Voidwrath",
+		["questID"] = 58925,
+	},
+	{	-- Wraithchill
+		["itemID"] = 172177,	-- Illusion: Wraithchill
+		["illusionID"] = ,
+		["text"] = "Wraithchill",
+		["questID"] = 57596,
+	},
+	]]--
 };
