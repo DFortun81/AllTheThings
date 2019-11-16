@@ -359,5 +359,6 @@ _.Factions =
 		faction(2163), 	-- Tortollan Seekers
 		faction(2391),	-- Rustbolt Resistance
 		faction(2417),	-- Uldum Accord
+		faction(2419),	-- Nzoth
 	}),
 };
