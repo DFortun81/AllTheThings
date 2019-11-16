@@ -194,6 +194,7 @@ _.PetJournal =
 		p(2376),			-- Valley Chicken
 		p(1596),			-- Veilwatcher Hatchling
 		p(1591),			-- Violet Firefly
+		p(2866),			-- Voidglower
 		p(2460),			-- Voru'kar Leecher
 		p(1593),			-- Waterfly
 		p(84),				-- Westfall Chicken

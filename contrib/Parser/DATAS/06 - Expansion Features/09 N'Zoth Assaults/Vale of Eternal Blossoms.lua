@@ -36,17 +36,21 @@ _.ExpansionFeatures =
 						n(154447, {	-- Brother Meller
 							["questID"] = 56237,
 							["coord"] = { 57.1, 41.0, 1530 },
+							["isDaily"] = true,
 						}),
 						n(154467, {	-- Chief Mek-mek
 							["questID"] = 56255,
 							["coord"] = { 81.2, 64.5, 1530 },
+							["isDaily"] = true,
 						}),
 						n(154559, {	-- Deeplord Zrihj
 							["questID"] = 56323,
 							["coord"] = { 66.6, 68.0, 1530 },
+							["isDaily"] = true,
 						}),
 						n(157267, {	-- Escaped Mutation
 							["questID"] = 57343,
+							["isDaily"] = true,
 							["coords"] = {
 								{ 44.8, 38.9, 1530 },
 								{ 45.4, 43.2, 1530 },
@@ -55,6 +59,7 @@ _.ExpansionFeatures =
 						}),
 						n(157266, {	-- Kilxl the Gaping Maw
 							["questID"] = 57341,
+							["isDaily"] = true,
 							["coords"] = {
 								{ 48.7, 59.8, 1530 },
 								{ 45.2, 58.8, 1530 },
@@ -66,10 +71,12 @@ _.ExpansionFeatures =
 						n(154106, {	-- Quid
 							["questID"] = 56094,
 							["coord"] = { 90.2, 46.0, 1530 },
+							["isDaily"] = true,
 						}),
 						n(154490, {	-- Rijz'x the Devourer
 							["questID"] = 56302,
 							["coord"] = { 64.2, 51.8, 1530 },
+							["isDaily"] = true,
 							["g"] = {
 								i(173402),	-- Black Empire Mail Gloves -- TODO:: move these to a different section since they can drop from all rares
 							},
@@ -77,14 +84,17 @@ _.ExpansionFeatures =
 						n(157176, {	-- The Forgotten
 							["questID"] = 57342,
 							["coord"] = { 52.0, 41.7, 1530 },
+							["isDaily"] = true,
 						}),
 						n(154394, {	-- Veskan the Fallen
 							["questID"] = 56213,
 							["coord"] = { 86.7, 41.7, 1530 },
+							["isDaily"] = true,
 						}),
 						n(154332, {	-- Voidtender Malketh
 							["questID"] = 56183,
 							["coord"] = { 66.7, 28.1, 1530 },
+							["isDaily"] = true,
 							["g"] = {
 								i(173408),	-- Black Empire Leather Boots -- TODO:: move these to a different section since they can drop from any rare
 							},
@@ -92,10 +102,12 @@ _.ExpansionFeatures =
 						n(154495, {	-- Will of N'Zoth
 							["questID"] = 56303,
 							["coord"] = { 52.9, 62.2, 1530 },
+							["isDaily"] = true,
 						}),
 						n(154087, {	-- Zror'um the Infinite
 							["questID"] = 56084,
 							["coord"] = { 70.9, 40.6, 1530 },
+							["isDaily"] = true,
 						}),
 					}),
 					n(-212, {	-- Treasures
@@ -132,12 +144,6 @@ _.ExpansionFeatures =
 						q(56180, {	-- Bound Guardian
 							["lvl"] = 120,
 							["coord"] = { 79.6, 54.3, 1530 },
-							["isWorldQuest"] = true,
-						}),
-						q(58747, {	-- Brain Tickling
-							-- pet battle
-							["lvl"] = 120,
-							["coord"] = { 57.5, 54.3, 1530 },
 							["isWorldQuest"] = true,
 						}),
 						q(56099, {	-- Font of Corruption
@@ -187,14 +193,141 @@ _.ExpansionFeatures =
 				}),
 				n(-10077, {	-- Assault: The Warring Clans
 					n(-17, {	-- Quests
-						q(57008, {	-- Assault: The Warring Clans
-							i(173372, {	-- Cache of the Black Empire
-								currency(1755),	-- Coalescing Visions
-								i(173178),	-- Corrupted Greaves -- TODO:: almost certainly a full ilvl 415 set for all armor types. Same ones sold by blacktalon guards for visions?
-							}),
+						q(58476, {	-- Bringing the Thunder -- wasn't available on latest play-through. Possibly only up when Assault: Warring Clans is up?
+							["coord"] = { 38.4, 75.0, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 158674 },	-- Anji Autumnlight
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
+						q(58479, {	-- Lightning Crashes
+							["coord"] = { 44.7, 73.8, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
 						}),
 					}),
 					n(-16, {	-- Rares
+						n(157466, {	-- Anh-De the Loyal
+							["questID"] = 57363,
+							["coord"] = { 33.7, 68.6, 1530 },
+							["isDaily"] = true,
+							["g"] = {
+								i(174840),	-- Xinlao
+							},
+						}),
+						n(157183, {	-- Coagulated Anima
+							["questID"] = 58296,
+							["coord"] = { 16.8, 66.7, 1530 },
+							["isDaily"] = true,
+						}),
+						n(157287, {	-- Dokani Obliterator
+							["questID"] = 57349,
+							["coord"] = { 39.2, 59.6, 1530 },
+							["isDaily"] = true,
+							["g"] = {
+								i(173421, {	-- Black Empire Signet
+									i(174086),	-- Ring -- TODO: update item names
+									i(173860),	-- Ring
+								}),
+							},
+						}),
+						--[[
+						n(156041, {	-- Empty Golem -- TODO:: determine activation criteria
+							--["questID"] = ,
+							["coord"] = { 18.7, 65.8, 1530 },
+							["isDaily"] = true,
+						}),
+						]]--
+						n(157153, {	-- Ha-Li
+							["questID"] = 57344,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 35.6, 34.1, 1530 },
+								{ 30.6, 37.8, 1530 },
+								{ 32.4, 44.0, 1530 },
+							},
+							["g"] = {
+								i(173887),	-- Clutch of Ha-Li
+							},
+						}),
+						n(157171, {	-- Heixi the Stonelord
+							["questID"] = 57347,
+							["coord"] = { 28.3, 40.5, 1530 },
+							["isDaily"] = true,
+						}),
+						n(157160, {	-- Houndlord Ren
+							["questID"] = 57345,
+							["coord"] = { 13.1, 25.5, 1530 },
+							["isDaily"] = true,
+							-- TODO:: determine patrol path
+							["g"] = {
+								i(174841),	-- Ren's Stalwart Hound
+							},
+						}),
+						n(160968, {	-- Jade Colossus
+							["questID"] = 58295,
+							["coord"] = { 17.2, 11.6, 1530 },
+							["isDaily"] = true,
+						}),
+						n(157290, {	-- Jade Watcher
+							["questID"] = 57350,
+							["coord"] = { 26.7, 10.7, 1530 },
+							["isDaily"] = true,
+							["g"] = {
+								i(173420),	-- Black Empire Cloth Belt
+							},
+						}),
+						n(157162, {	-- Rei Lun
+							["questID"] = 57346,
+							["coord"] = { 21.9, 12.4, 1530 },
+							["isDaily"] = true,
+							["g"] = {
+								i(173409),	-- Black Empire Leather Gloves -- TODO:: there must be a whole set of new catch-up gear
+							},
+						}),
+						n(156083, {	-- Sanguifang
+							["questID"] = 56954,
+							["coord"] = { 46.4, 57.2, 1530 },
+							["isDaily"] = true,
+							["g"] = {	-- Black Empire Plate Chestpiece
+								i(173393, {	-- TODO: maybe move to Item Sets and reference via symlink?
+									i(173454),	-- Plate Chestplate -- TODO:: this must be a temporary name.
+								}),
+							},
+						}),
+						n(157291, {	-- Spymaster Hul'ach
+							["questID"] = 57351,
+							["coord"] = { 17.9, 37.5, 1530 },
+							["isDaily"] = true,
+						}),
+						n(157279, {	-- Stormhowl
+							["questID"] = 57348,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 23.0, 76.7, 1530 },
+								{ 25.5, 75.8, 1530 },
+								{ 27.1, 71.5, 1530 },
+							},
+						}),
+						n(154600, {	-- Teng the Awakened
+							["questID"] = 56332,
+							["coord"] = { 47.5, 63.7, 1530 },
+							["isDaily"] = true,
+							["g"] = {
+								i(173421),	-- Black Empire Signet
+							},
+						}),
+						n(157468, {	-- Tisiphon
+							["questID"] = 57364,
+							["coord"] = { 9.5, 67.4, 1530 },
+							["isDaily"] = true,
+							["description"] = "Use the fishing pole.",
+						}),
+						n(157443, {	-- Xiln the Mountain
+							["questID"] = 57358,
+							["coord"] = { 42.2, 43.5, 1530 },
+							["isDaily"] = true,
+						}),
 					}),
 					n(-212, {	-- Treasures
 					--[[
@@ -203,10 +336,14 @@ _.ExpansionFeatures =
 						["coords"] = {
 							{ 26.0, 12.6, 1530 },	questID 57206 -- inside the guo-lai halls
 							{ 25.3, 27.6, 1530 },	questID 57208
+							{ 24.8, 35.1, 1530 },	questID 57208
 							{ 21.3, 13.9, 1530 },	questID 57209
+							{ 19.3, 19.4, 1530 },	questID 57209
 							{ 21.3, 63.0, 1530 },	questID 57211
+							{ 15.5, 64.3, 1530 },	questID 57211
 							{ 51.1, 63.2, 1530 },	questID 57212
 							{ 33.3, 69.8, 1530 },	questID 57213
+							{ 37.7, 65.8, 1530 },	questID 57213
 
 						},
 					}),
@@ -218,12 +355,25 @@ _.ExpansionFeatures =
 					]]--
 					}),
 					n(-34,  {	-- World Quests
+						q(57008, {	-- Assault: The Warring Clans
+							["lvl"] = 120,
+							["isWorldQuest"] = true,
+							["g"] = {
+								i(173372, {	-- Cache of the Black Empire
+									currency(1755),	-- Coalescing Visions
+									i(173178),	-- Corrupted Greaves -- TODO:: almost certainly a full ilvl 415 set for all armor types. Same ones sold by blacktalon guards for visions?
+									i(173510),	-- Malignant Leviathan's Handguards
+								}),
+							},
+						}),
 						q(58367, {	-- Baruk Demolisher
 							["lvl"] = 120,
+							["coord"] = { 22.5, 36.6, 1530 },
 							["isWorldQuest"] = true,
 						}),
 						q(57087, {	-- Baruk Obliterator
 							["lvl"] = 120,
+							["coord"] = { 31.3, 28.9, 1530 },
 							["isWorldQuest"] = true,
 						}),
 						q(57272, {	-- Bloodbound Effigy
@@ -232,10 +382,27 @@ _.ExpansionFeatures =
 						}),
 						q(58370, {	-- Empowered Demolisher
 							["lvl"] = 120,
+							["coord"] = { 26.7, 16.9, 1530 },
 							["isWorldQuest"] = true,
 						}),
 						q(58334, {	-- Misfall in Flames
 							["lvl"] = 120,
+							["coord"] = { 33.5, 71.0, 1530 },
+							["isWorldQuest"] = true,
+						}),
+						q(57299, {	-- Mysterious Sarcophagus
+							["lvl"] = 120,
+							["coord"] = { 50.0, 63.4, 1530 },
+							["isWorldQuest"] = true,
+						}),
+						q(57323, {	-- Serpent Binding
+							["lvl"] = 120,
+							["coord"] = { 24.7, 47.9, 1530 },
+							["isWorldQuest"] = true,
+						}),
+						q(57256, {	-- Stormchosen Arena
+							["lvl"] = 120,
+							["coord"] = { 17.0, 45.7, 1530 },
 							["isWorldQuest"] = true,
 						}),
 						q(57049, {	-- Vault of Souls
@@ -266,17 +433,16 @@ _.ExpansionFeatures =
 					["coord"] = { 38.9, 72.8, 1530 },
 				}),
 			}),
+			f(101, {	-- Battle Pets
+				p(2866, {	-- Voidglower
+					["crs"] = { 162506 },
+				}),
+			}),
 			n(-17,  {	-- Quests
 				q(58420, {	-- A Foul Annoyance
 					["coord"] = { 44.7, 73.8, 1530 },
 					["isDaily"] = true,
 					["provider"] = { "n", 154444 },	-- Stormspeaker Qian
-					["sourceQuest"] = 56771,	-- Time-Lost Warriors
-				}),
-				q(58476, {	-- Bringing the Thunder -- wasn't available on latest play-through. Possibly only up when Assault: Warring Clans is up?
-					["coord"] = { 38.4, 75.0, 1530 },
-					["isDaily"] = true,
-					["provider"] = { "n", 158674 },	-- Anji Autumnlight
 					["sourceQuest"] = 56771,	-- Time-Lost Warriors
 				}),
 				q(57720, {	-- Champions of the Mogu -- wasn't available on latest play-through. Possibly only up when Assault: Warring Clans is up?
@@ -308,6 +474,11 @@ _.ExpansionFeatures =
 					["g"] = {
 						currency(1755),	-- Coalescing Visions x20
 					},
+				}),
+				q(57067, {	-- Mogu at the Gates	-- showed up when the Warring Clans assault was up. is there a pre-req? 
+					["coord"] = { 44.7, 73.8, 1530 },
+					["isDaily"] = true,
+					["provider"] = { "n", 154444 },	-- Stormspeaker Qian
 				}),
 				q(58167, {	-- Preventative Measures
 					["coord"] = { 84.2, 51.7, 1530 },
@@ -356,114 +527,18 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-16,  {	-- Rares
-				n(157466, {	-- Anh-De the Loyal
-					["questID"] = 57363,
-					["coord"] = { 33.7, 68.6, 1530 },
-					["g"] = {
-						i(174840),	-- Xinlao
-					},
-				}),
-				n(157183, {	-- Coagulated Anima
-					["questID"] = 58296,
-					["coord"] = { 16.8, 66.7, 1530 },
-				}),
-				n(157287, {	-- Dokani Obliterator
-					["questID"] = 57349,
-					["coord"] = { 39.2, 59.6, 1530 },
-					["g"] = {
-						i(173421, {	-- Black Empire Signet
-							i(174086),	-- Ring -- TODO: update item names
-							i(173860),	-- Ring
-						}),
-					},
-				}),
-				--[[
-				n(156041, {	-- Empty Golem -- TODO:: determine activation criteria
-					--["questID"] = ,
-					["coord"] = { 18.7, 65.8, 1530 },
-				}),
-				]]--
-				n(157153, {	-- Ha-Li
-					["questID"] = 57344,
-					["coords"] = {
-						{ 35.6, 34.1, 1530 },
-						{ 30.6, 37.8, 1530 },
-						{ 32.4, 44.0, 1530 },
-					},
-					["g"] = {
-						i(173887),	-- Clutch of Ha-Li
-					},
-				}),
-				n(157171, {	-- Heixi the Stonelord
-					["questID"] = 57347,
-					["coord"] = { 28.3, 40.5, 1530 },
-				}),
-				n(157160, {	-- Houndlord Ren
-					["questID"] = 57345,
-					["coord"] = { 13.1, 25.5, 1530 },
-					-- TODO:: determine patrol path
-					["g"] = {
-						i(174841),	-- Ren's Stalwart Hound
-					},
-				}),
-				n(160968, {	-- Jade Colossus
-					["questID"] = 58295,
-					["coord"] = { 17.2, 11.6, 1530 },
-				}),
-				n(157290, {	-- Jade Watcher
-					["questID"] = 57350,
-					["coord"] = { 26.7, 10.7, 1530 },
-					["g"] = {
-						i(173420),	-- Black Empire Cloth Belt
-					},
-				}),
-				n(157162, {	-- Rei Lun
-					["questID"] = 57346,
-					["coord"] = { 21.9, 12.4, 1530 },
-					["g"] = {
-						i(173409),	-- Black Empire Leather Gloves -- TODO:: there must be a whole set of new catch-up gear
-					},
-				}),
-				n(156083, {	-- Sanguifang
-					["questID"] = 56954,
-					["coord"] = { 46.4, 57.2, 1530 },
-					["g"] = {	-- Black Empire Plate Chestpiece
-						i(173393, {	-- TODO: maybe move to Item Sets and reference via symlink?
-							i(173454),	-- Plate Chestplate -- TODO:: this must be a temporary name.
-						}),
-					},
-				}),
-				n(157291, {	-- Spymaster Hul'ach
-					["questID"] = 57351,
-					["coord"] = { 17.9, 37.5, 1530 },
-				}),
-				n(157279, {	-- Stormhowl
-					["questID"] = 57348,
-					["coords"] = {
-						{ 23.0, 76.7, 1530 },
-						{ 25.5, 75.8, 1530 },
-						{ 27.1, 71.5, 1530 },
-					},
-				}),
 				n(155958, {	-- Tashara -- TODO:: verify ID. multiple possible models
 					["g"] = {
 						i(174873),	-- Trans-mogu-rifier (Toy)
 					},
 				}),
-				n(154600, {	-- Teng the Awakened
-					["questID"] = 56332,
-					["coord"] = { 47.5, 63.7, 1530 },
-					["g"] = {
-						i(173421),	-- Black Empire Signet
-					},
-				}),
-				n(157468, {	-- Tisiphon
-					["questID"] = 57364,
-					["coord"] = { 9.5, 67.4, 1530 },
-				}),
-				n(157443, {	-- Xiln the Mountain
-					["questID"] = 57358,
-					["coord"] = { 42.2, 43.5, 1530 },
+			}),
+			n(-34, {	-- World Quests
+				q(58747, {	-- Brain Tickling
+					-- pet battle
+					["lvl"] = 120,
+					["coord"] = { 57.5, 54.3, 1530 },
+					["isWorldQuest"] = true,
 				}),
 			}),
 			n(-2,   {	-- Vendors
