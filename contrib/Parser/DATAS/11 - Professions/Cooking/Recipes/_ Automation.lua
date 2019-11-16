@@ -214,11 +214,11 @@ profession(185, {	-- Cooking
 							["recipeID"] = 290473
 						},
 						{
-							["name"] = "B'Rscht",
+							["name"] = "Grilled Gnasher",
 							["recipeID"] = 314963
 						},
 						{
-							["name"] = "B'Sque",
+							["name"] = "Dubious Delight",
 							["recipeID"] = 314961
 						},
 						{
@@ -238,11 +238,11 @@ profession(185, {	-- Cooking
 							["recipeID"] = 297074
 						},
 						{
-							["name"] = "G'Ulash",
+							["name"] = "Ghastly Goulash",
 							["recipeID"] = 314962
 						},
 						{
-							["name"] = "G'Zpacho",
+							["name"] = "Baked Voidfin",
 							["recipeID"] = 314959
 						},
 						{
