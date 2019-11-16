@@ -52,6 +52,10 @@ _.Zones =
 					["isDaily"] = true,
 					["provider"] = { "n", 58743 },	-- Yumi Goldenpaw
 				}),
+				q(31103, {	-- The Ballad of Liu Lang
+					["description"] = "The item that starts this quest is mailed to you after you finish the |cffefef01Ballad of Liu Lang|r achievement.",
+					["provider"] = { "i", 83780 },	-- The Ballad of Liu Lang
+				}),
 				q(30306, {	-- The Battle Ring
 					["coord"] = { 19.0, 75.4, 390 },
 					["isDaily"] = true,
