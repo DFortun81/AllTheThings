@@ -33,15 +33,6 @@ _.Zones =
 						["isWeekly"] = true,
 					}),
 				}),
-				prof(164, {	-- Blacksmithing
-					q(41633, {	-- Work Order: Leystone Greaves (WQ)
-						["lvl"] = 110,	-- WQ is 110+ only
-						["provider"] = { "n", 107376 },	-- Veridis Fallon
-						["g"] = {
-							i(123931),	-- Recipe: Leystone Greaves (Rank 3)
-						},
-					}),
-				}),
 				prof(333, {	-- Enchanting
 					q(40169),	-- Crossroads Rendezvous
 					q(39923, {	-- Down to the Core

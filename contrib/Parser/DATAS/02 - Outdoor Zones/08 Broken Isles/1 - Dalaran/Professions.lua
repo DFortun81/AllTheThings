@@ -293,14 +293,6 @@ _.Zones =
 						["sourceQuest"] = 44449,	-- Advanced Quenching
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 					}),
-					n(-34, {	-- World Quests
-						q(41638, {	-- Work Order: Leystone Gauntlets
-							["provider"] = { "n", 32725 },	-- Warmage Silva
-							["g"] = {
-								i(137606),	-- Recipe: Leystone Gauntlets (Rank 3)
-							},
-						}),
-					}),
 				}),
 				prof(185, {	-- Cooking
 					q(40990, {	-- A Good Recipe List

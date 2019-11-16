@@ -676,6 +676,14 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = 186,	-- Mining
 				}),
+				q(41637, {	-- Work Order: Leystone Pauldrons
+					["isWorldQuest"] = true,
+					["requireSkill"] = 164,	-- Blacksmithing
+					["lvl"] = 110,
+					["g"] = {
+						i(123938),	-- Recipe: Leystone Pauldrons (Rank 3)
+					},
+				}),
 				q(41655, {	-- Work Order: Queen's Opal Pendant
 					["isWorldQuest"] = true,
 					["requireSkill"] = 755,	-- Jewelcrafting
