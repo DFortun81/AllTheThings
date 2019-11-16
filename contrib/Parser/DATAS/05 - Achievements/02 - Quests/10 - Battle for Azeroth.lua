@@ -72,6 +72,11 @@ _.Achievements =
 					a(ach(13426)),	-- Come On and Slam
 					a(ach(12582)),	-- Come Sail Away
 					a(ach(13053)),	-- Deadliest Cache
+					ach(14154, {		-- Defend the Vale
+						crit(1),	-- Assault: The Warring Clans
+						crit(2),	-- Assault: The Endless Swarm
+						crit(3),	-- Assault: The Black Empire
+					}),
 					h(ach(13435)),	-- Doomsoul Surprise
 					a(ach(13059)),	-- Drag Race
 					a(ach(12497, {	-- Drust Do It.
@@ -112,6 +117,7 @@ _.Achievements =
 						crit(5),		-- In Every Dark Corner
 						crit(6),		-- Horde of Heroes
 					})),]]
+					ach(14161),	-- Get In My Belly!
 					ach(12918),		-- Have a Heart
 					h(ach(13542, {	-- How to Train Your Direhorn
 						crit(1),	-- Naptime
@@ -247,6 +253,9 @@ _.Achievements =
 						crit(2),		-- Secrets in the Sea
 						crit(3),		-- Turning the Tide
 					})),
+					ach(14157, {	-- The Corruptor's End
+						crit(1),	-- Ny'alotha, the Waking City: The Corruptor's End
+					}),
 					h(ach(11868, {	-- The Dark Heart of Nazmir
 						crit(1),		-- Deep in the Swamp
 						crit(2),		-- A Pact with Death
@@ -341,6 +350,11 @@ _.Achievements =
 						crit(2),		-- Tides of Vengeance (A)
 						crit(3),		-- Zandalar Forever!
 						crit(4),		-- Tides of Vengeance (H)
+					}),
+					ach(14153, {	-- Uldum Under Assault
+						crit(1),	-- Assault: Amathet Advance
+						crit(2),	-- Assault: Aqir Unearthed
+						crit(3),	-- Assault: The Black Empire
 					}),
 					h(ach(13709, {	-- Unfathomable
 						crit(1),	-- Welcome to Nazjatar

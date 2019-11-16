@@ -249,6 +249,17 @@ _.ExpansionFeatures =
 					}),
 				}),
 			}),
+			n(-4, {	-- Achievements
+				ach(14159),		-- Combating the Corruption -- TODO:: update with criteria when they get added
+				ach(14154, {	-- Defend the Vale
+					crit(1),	-- Assault: The Warring Clans
+					crit(2),	-- Assault: The Endless Swarm
+					crit(3),	-- Assault: The Black Empire
+				}),
+				ach(14161),	-- Get In My Belly!	-- TODO:: update with map-specific criteria when they get added
+				ach(14158),	-- It's Not A Tumor!
+				ach(14160),		-- Rare to Well Done -- TODO:: update criteria when they get added
+			}),
 			n(-228, {	-- Flight Paths
 				fp(2544, {	-- Mistfall Village
 					["lvl"] = 120,

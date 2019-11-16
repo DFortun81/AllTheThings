@@ -194,7 +194,7 @@ _.Achievements =
 						crit(41),	-- Durin Darkhammer [Burning Steppes] / Analynn [Ashenvale)
 					}),
 					ach(14021, {	-- The Shadows Revealed
-						i(169349),	-- Kelpfin -- TODO:: update this when blizzard changes it. there's no way they're going to keep kelpfin on here when it's already available
+						i(174871),	-- Mayhem Mind Melder
 						crit(1),	-- Pet Battle Challenge: Wailing Caverns
 						crit(2),	-- Pet Battle Challenge: Deadmines
 						crit(3),	-- Pet Battle Challenge: Gnomeregan

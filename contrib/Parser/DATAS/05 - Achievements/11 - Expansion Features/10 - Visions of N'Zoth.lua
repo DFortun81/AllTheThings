@@ -21,6 +21,7 @@ _.Achievements =
 			ach(14075),		-- Faceless Mask of the Burned Bridge
 			ach(14076),		-- Faceless Mask of the Daredevil
 			ach(14077),		-- Faceless Mask of the Long Night
+			ach(14162),		-- Horrific Masquerade
 			ach(14063),		-- Horrific Vision of Orgrimmar
 			ach(14062),		-- Horrific Vision of Stormwind
 			ach(14113, {	-- Imagine a Dark, Dark World

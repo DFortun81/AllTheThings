@@ -341,6 +341,17 @@ _.ExpansionFeatures =
 					i(171312),	-- Recipe: Void Focusb
 				}),
 			}),
+			n(-4, {	-- Achievements
+				ach(14159),		-- Combating the Corruption -- TODO:: update with criteria when they get added
+				ach(14161),		-- Get In My Belly!	-- TODO:: update with map-specific criteria when they get added
+				ach(14158),		-- It's Not A Tumor!
+				ach(14160),		-- Rare to Well Done -- TODO:: update criteria when they get added
+				ach(14153, {	-- Uldum Under Assault
+					crit(1),	-- Assault: Amathet Advance
+					crit(2),	-- Assault: Aqir Unearthed
+					crit(3),	-- Assault: The Black Empire
+				}),
+			}),
 			n(-16, {	-- Rares
 				--[[
 				TODO::

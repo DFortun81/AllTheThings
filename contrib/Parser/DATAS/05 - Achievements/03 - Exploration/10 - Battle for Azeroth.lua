@@ -285,6 +285,7 @@ _.Achievements =
 						crit(3),		-- Cracked Tablet
 						crit(4),		-- Fractured Tablet
 					}),
+					ach(14159),		-- Combating the Corruption -- TODO:: update criteria when they get added
 					ach(13094, {	-- Cursed Game Hunter
 						--[[
 						crit(1),		-- Goats
@@ -558,6 +559,7 @@ _.Achievements =
 						crit(36),	-- Urduu
 						crit(37),	-- Voice in the Deeps
 					}),
+					ach(14158),	-- It's Not A Tumor!
 					ach(13479, {	-- Junkyard Architect
 						ach(13478),	-- Junkyard Collector
 						crit(1),	-- Scrap Grenade
@@ -740,6 +742,7 @@ _.Achievements =
 						crit(20),	-- Medium Runelocked Chest: Orange
 						crit(21),	-- Medium Runelocked Chest: Green
 					}),
+					ach(14160),		-- Rare to Well Done -- TODO:: update criteria when they get added
 					ach(13470, {	-- Rest In Pistons
 						crit(1),	-- Mechagnoian Nullfier
 						crit(2),	-- The Scrap King

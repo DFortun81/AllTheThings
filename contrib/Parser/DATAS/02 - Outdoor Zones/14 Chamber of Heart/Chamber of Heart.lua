@@ -29,6 +29,11 @@ _.Zones =
 							ach(13769),	-- Power Up
 							ach(13770),	-- Power Creep
 						}),
+						ach(14157, {	-- The Corruptor's End
+							crit(1, {	-- Ny'alotha, the Waking City: The Corruptor's End
+								["sourceQuest"] = 58632,	-- Ny'alotha, the Waking City: The Corruptor's End
+							}),
+						}),
 						ach(13572, {	-- The Heart Forge
 							["sourceQuest"] = 55618,	-- The Heart Forge
 						}),

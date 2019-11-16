@@ -55,6 +55,7 @@ _.Achievements =
 						["allianceAchievementID"] = 12953,	-- Storm's Wake [Alliance]
 						["hordeAchievementID"] = 12948,		-- Talanji's Expedition [Horde]
 					},
+					ach(14156),		-- The Rajani
 					ach(13559, {	-- The Unshackled
 						["races"] = HORDE_ONLY,
 					}),
@@ -63,6 +64,7 @@ _.Achievements =
 						["hordeAchievementID"] = 12949,		-- The Voldunai [Horde]
 					},
 					ach(12956), 	-- Tortollan Seekers
+					ach(14155),		-- Uldum Accord
 					ach(13558, {	-- Waveblade Ankoan
 						["races"] = ALLIANCE_ONLY,
 					}),

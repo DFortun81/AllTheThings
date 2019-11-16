@@ -30,6 +30,7 @@ _.ExpansionFeatures =
 				ach(14075),		-- Faceless Mask of the Burned Bridge
 				ach(14076),		-- Faceless Mask of the Daredevil
 				ach(14077),		-- Faceless Mask of the Long Night
+				ach(14162),		-- Horrific Masquerade
 				ach(14063, {	-- Horrific Vision of Orgrimmar
 					["maps"] = { 1469 },
 				}),

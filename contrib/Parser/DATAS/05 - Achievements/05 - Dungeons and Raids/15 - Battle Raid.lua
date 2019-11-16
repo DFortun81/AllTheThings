@@ -175,6 +175,31 @@ _.Achievements =
 					ach(13633),		-- If It Please the Court
 					ach(13716),		-- Lactose Intolerant
 					ach(13768),		-- The Best of Us
+					ach(14041),		-- Mythic: Wrathion, the Black Emperor
+					ach(14043),		-- Mythic: Maut
+					ach(14044),		-- Mythic: The Prophet Skitra
+					ach(14045),		-- Mythic: Dark Inquisitor Xanesh
+					ach(14046),		-- Mythic: The Hivemind
+					ach(14048),		-- Mythic: Shad'har the Insatiable
+					ach(14049),		-- Mythic: Drest'agath
+					ach(14050),		-- Mythic: Vexiona
+					ach(14051),		-- Mythic: Ra-den the Despoiled
+					ach(14052),		-- Mythic: Il'gynoth, Corruption Reborn
+					ach(14054),		-- Mythic: Carapace of N'Zoth
+					ach(14055),		-- Mythic: N'Zoth, the Corruptor
+					ach(14019),		-- Smoke Test
+					ach(14008),		-- Mana Sponge
+					ach(14037),		-- Phase 3: Prophet
+					ach(14024),		-- Buzzer Beater
+					ach(14023),		-- Realizing Your Potential
+					ach(13990),		-- You Can Pet the Dog, But...
+					ach(14026),		-- Temper Tantrum
+					ach(14139),		-- Total Annihilation
+					ach(13999),		-- How? Isn't it Obelisk?
+					ach(14038),		-- Bloody Mess
+					ach(14147),		-- Cleansing Treatment
+					ach(14148),		-- Peer Pressure
+					
 				},
 			}),
 		},

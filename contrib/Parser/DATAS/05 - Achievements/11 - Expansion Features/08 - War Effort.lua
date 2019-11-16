@@ -264,6 +264,12 @@ _.Achievements =
 							},
 						}
 					},
+					ach(14150, {	-- Heroic: War for the Shore (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					ach(14149, {	-- Heroic: War for the Shore (H)
+						["races"] = HORDE_ONLY,
+					}),
 					{	-- Leader of Troops [Alliance] // [Horde]
 						["allianceAchievementID"] = 12884,	-- Leader of Troops (Alliance)
 						["hordeAchievementID"] = 12878,		-- Leader of Troops (Horde)
