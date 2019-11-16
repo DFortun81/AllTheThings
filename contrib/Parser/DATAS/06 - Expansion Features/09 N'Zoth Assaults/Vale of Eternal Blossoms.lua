@@ -445,6 +445,11 @@ _.ExpansionFeatures =
 						{ 27.1, 71.5, 1530 },
 					},
 				}),
+				n(155958, {	-- Tashara -- TODO:: verify ID. multiple possible models
+					["g"] = {
+						i(174873),	-- Trans-mogu-rifier (Toy)
+					},
+				}),
 				n(154600, {	-- Teng the Awakened
 					["questID"] = 56332,
 					["coord"] = { 47.5, 63.7, 1530 },

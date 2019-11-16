@@ -151,6 +151,11 @@ _.ExpansionFeatures =
 				["maps"] = { 1469 },
 				["g"] = {
 					n(-6015, {	-- Rewards	-- temporary grouping until we figure out how these are best organized
+						i(174920),	-- Coifcurl's Close Shave Kit (Toy)
+						i(174926),	-- Overly Sensitive Void Spectacles (Toy)
+						i(174928),	-- Rotten Apple (Toy)
+						i(174922),	-- Void-Touched Skull (Toy)
+						i(174924),	-- Void-Touched Souvenir Totem (Toy)
 						i(173308),	-- Mark of Boistrous Duty (Rank 1)
 						i(173288),	-- Overflowing Azerite Geode
 						i(174287),	-- Sparks of Unwavering Strength
@@ -164,6 +169,11 @@ _.ExpansionFeatures =
 				["maps"] = { 1470 },
 				["g"] = {
 					n(-6015, {	-- Rewards	-- temporary grouping until we figure out how these are best organized
+						i(174920),	-- Coifcurl's Close Shave Kit (Toy)
+						i(174926),	-- Overly Sensitive Void Spectacles (Toy)
+						i(174928),	-- Rotten Apple (Toy)
+						i(174922),	-- Void-Touched Skull (Toy)
+						i(174924),	-- Void-Touched Souvenir Totem (Toy)
 						i(174287),	-- Sparks of Unwavering Strength
 						i(173289),	-- Spark of Inspiration (Rank 2)
 					}),

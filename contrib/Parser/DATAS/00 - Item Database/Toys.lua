@@ -655,7 +655,15 @@ t(172179);	-- Eternal Traveler's Hearthstone
 -----------------
 -- PATCH 8.3.0 --
 -----------------
+t(174874);	-- Budget K'thir Disguise
+t(174920);	-- Coifcurl's Close Shave Kit
+t(169303);	-- Hell-Bent Bracers
 t(174871);	-- Mayhem Mind Melder
-t(173727);	-- Nomi's Vintage
 t(173951);	-- N'lyeth, Sliver of N'Zoth
+t(173727);	-- Nomi's Vintage
+t(174926);	-- Overly Sensitive Void Spectacles
+t(174928);	-- Rotten Apple
 t(174830);	-- Shadowy Disguise
+t(174873);	-- Trans-mogu-rifier
+t(174922);	-- Void-Touched Skull
+t(174924);	-- Void-Touched Souvenir Totem

@@ -398,6 +398,11 @@ _.ExpansionFeatures =
 						i(174641),	-- Drake of the Four Winds
 					},
 				}),
+				n(158636, {	-- The Grand Executor
+					["g"] = {
+						i(169303),	-- Hell-Bent Bracers
+					},
+				}),
 				n(158595, {	-- Thoughtstealer Vos
 					--["questID"] = ,
 					["coord"] = { 65.0, 73.0, 1527 },
@@ -407,6 +412,11 @@ _.ExpansionFeatures =
 					--["questID"] = ,
 					["coord"] = { 45.0, 16.0, 1527 },
 					["isDaily"] = true,
+				}),
+				n(157473, {	-- Yiphrim the Will Ravager
+					["g"] = {
+						i(174874),	-- Budget K'thir Disguise
+					},
 				}),
 			}),
 			n(-17,  {	-- Quests
