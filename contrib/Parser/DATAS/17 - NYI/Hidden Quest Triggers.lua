@@ -241,8 +241,9 @@ _.NeverImplemented =
 		q(27079),	-- Twilight Gate Tracking — blowing up the gate during #26861, "Block the Gates" in Deepholm
 		q(27080),	-- Twilight Gate Tracking — blowing up elemental during #26861, "Block the Gates" in Deepholm
 		q(36587),	-- Twilight Gate Tracking — blowing up elemental during #26861, "Block the Gates" in Deepholm
-
-		
+		q(14114),	-- Kezan - The New You tracking event. Triggers after you complete "The New You"
+		q(14139),	-- Kezan - Phase 1 complete. Triggers after turning in "Do it Yourself"
+		q(14158),	-- Kezan - Phase 6 complete. Triggers when quest "447" becomes available
 		
 		-------------------
 		--      MOP      --

@@ -9,6 +9,7 @@ _.Zones =
 			["races"] = { 9 },	-- Goblin
 			["maps"] = {
 				195,	-- Kaja'mine
+				196,	-- Kaja'mine
 			},
 			["icon"] = "Interface\\Icons\\Ability_Rhyolith_Volcano",
 		}),
