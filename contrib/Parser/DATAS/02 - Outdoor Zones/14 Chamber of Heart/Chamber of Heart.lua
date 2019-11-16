@@ -578,6 +578,18 @@ _.Zones =
 							["provider"] = { "n", 161805 },	-- Magni Bronzebeard
 							["sourceQuest"] = 58631,	-- Into Dreams
 						}),
+						
+						-- Void Focus quests here. Not sure where to put them right now
+						q(57275, {	-- Something in Your Mind
+							["provider"] = { "i", 171320 },
+							["description"] = "Can be made with any secondary crafting profession.",
+						}),
+						q(57276, {	-- Maintaining Focus
+							["lvl"] = 120,
+							["coord"] = { 46.1, 63.9, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57275,	-- Something in Your Mind
+						}),
 					}),
 					n(-2,   {	-- Vendors
 						["lvl"] = 120,

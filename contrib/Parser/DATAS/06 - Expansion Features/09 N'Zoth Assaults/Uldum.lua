@@ -10,6 +10,7 @@ _.ExpansionFeatures =
 			1540,	-- Halls of Origination (storyline version)
 			1541,	-- Halls of Origination (Investigating the Halls scenario)
 			1542,	-- Halls of Origination (storyline version, floor 3)
+			1571,	-- Uldum (dark vision)
 		},
 		["g"] = {
 			n(-10072, {	-- N'Zoth Assaults
@@ -62,6 +63,14 @@ _.ExpansionFeatures =
 								{ 80.0, 45.9, 1527 },
 								{ 80.3, 46.5, 1527 },
 								{ 80.7, 47.7, 1527 },
+							},
+						}),
+						n(157134, {	-- Ishak of the Four Winds
+							["questID"] = 57259,
+							["coord"] = { 73.9, 83.5, 1527 },
+							["isDaily"] = true,
+							["g"] = {
+								i(174641),	-- Drake of the Four Winds
 							},
 						}),
 						n(157157, {	-- Muminah the Incandescent
@@ -248,8 +257,45 @@ _.ExpansionFeatures =
 				}),
 				n(-10076, {	-- Assault: The Black Empire
 					n(-17, {	-- Quests
+						q(58237, {	-- Cleansing Uldum
+							["coord"] = { 54.6, 32.8, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 155099 },	-- High Priest Amet
+							["sourceQuest"] = 56472,	-- The Uldum Accord
+						}),
+						q(58277, {	-- Dark Deceivers
+							["coord"] = { 54.6, 32.8, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 155099 },	-- High Priest Amet
+							["sourceQuest"] = 56472,	-- The Uldum Accord
+						}),
+						q(57774, {	-- Nine Lives
+							["coord"] = { 54.8, 32.9, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 155096 },	-- High Commander Kamses
+							["sourceQuest"] = 56472,	-- The Uldum Accord
+						}),
+						q(58232, {	-- Order Among Chaos
+							["coord"] = { 54.8, 32.9, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 155096 },	-- High Commander Kamses
+							["sourceQuest"] = 56472,	-- The Uldum Accord
+						}),
+						q(58156, {	-- Vanquishing the Darkness -- also triggered 58815
+							["coord"] = { 56.6, 31.7, 1527 },
+							["isDaily"] = true, -- TODO:: probably a weekly
+							["provider"] = { "n", 160252 },	-- Blacktalon Agent
+							["g"] = {
+								i(174288),	-- Breath of Everlasting Spirit
+							},
+						}),
 					}),
 					n(-16, {	-- Rares
+						n(158557, {	-- Actiss the Deceiver
+							["questID"] = 58448,
+							["coord"] = { 66.8, 74.3, 1527 },
+							["isDaily"] = true,
+						}),
 						n(158706, {	-- Congealed Corruption -- no questID from this even though the map says its rare
 							["coords"] = {
 								{ 59.5, 32.1, 1527 },
@@ -274,6 +320,37 @@ _.ExpansionFeatures =
 							["coord"] = { 49.4, 38.3, 1527 },
 							["isDaily"] = true,
 						}),
+						n(158491, {	-- Falconer Amenophis
+							["questID"] = 57662,
+							["isDaily"] = true,
+							["description"] = "Patrols the desert around |cFFFFD700Neferset|r.",
+							["coords"] = {
+								{ 53.2, 70.8, 1527 },
+								{ 54.2, 69.2, 1527 },
+								{ 53.1, 68.3, 1527 },
+								{ 51.1, 69.2, 1527 },
+								{ 49.7, 70.2, 1527 },
+								{ 49.3, 70.9, 1527 },
+								{ 48.6, 73.2, 1527 },
+								{ 47.9, 73.7, 1527 },
+								{ 46.6, 72.4, 1527 },
+								{ 46.5, 75.2, 1527 },
+								{ 44.7, 77.6, 1527 },
+							},
+						}),
+						n(158597, {	-- High Executor Yothrim
+							["questID"] = 57675,
+							["coord"] = { 54.7, 43.2, 1527 },
+							["isDaily"] = true,
+							["g"] = {
+								i(171317),	-- Plans: Unsettling Osmenite Girdle -- TODO:: probably drops from any rare/elite in a black empire assault
+							},
+						}),
+						n(156655, {	-- Korzaran the Slaughterer
+							["questID"] = 57433,
+							["coord"] = { 71.2, 73.7, 1527 },
+							["isDaily"] = true,
+						}),
 						n(156299, {	-- R'khuzj the Unfathomable
 							["questID"] = 57430,
 							["isDaily"] = true,
@@ -289,56 +366,110 @@ _.ExpansionFeatures =
 							["coord"] = { 61.3, 74.9, 1527 },
 							["isDaily"] = true,
 						}),
+						n(158636, {	-- The Grand Executor
+							["questID"] = 57688,
+							["coord"] = { 49.3, 82.3, 1527 },
+							["isDaily"] = true,
+							["g"] = {
+								i(169303),	-- Hell-Bent Bracers
+							},
+						}),
 					}),
 					n(-212, {	-- Treasures
 						--[[
-						o(, {	-- Black Empire Cache -- available when Assault: The Black Empire is up
+						o(, {	-- Black Empire Cache -- most are random, but this one seems to be consistent
+							["questID"] = 57623,
+							["coord"] = { 58.4, 15.4, 1527 },
+						}),
+						o(, {	-- Black Empire Cache -- most are random, but this one seems to be consistent
+							["questID"] = 57624,
+							["coord"] = { 50.8, 31.4, 1527 },
+						}),
+						o(, {	-- Black Empire Cache
 							["coords"] = {
-								{ 58.4, 15.4, 1527 },	-- questID 57623
-								{ 50.8, 31.4, 1527 },	-- questID 57624
 								{ 55.6, 83.5, 1527 },	-- questID 57635
+								{ 55.4, 78.6, 1527 },	-- questID 57635
 								{ 62.6, 81.9, 1527 },	-- questID 57626
+								{ 63.0, 76.1, 1527 },	-- questID 57626
 								{ 59.8, 66.1, 1527 },	-- questID 57627
+								{ 61.0, 70.0, 1527 },	-- questID 57627
 							},
 							["g"] = {
 								currency(1755),	-- Coalescing Visions
 							},
 						}),
+						
+						o(, {	-- Black Empire Coffer (requires Cursed Relic). Don't know if this is a static position
+							["coord"] = { 71.6, 73.3, 1527 },
+						}),
 						]]--
 					}),
 					n(-34, {	-- World Quests
 						--[[
-						consuming maw: 62.4, 79.3
-						rumbling pit surrounded by venomscale scorplings: (65.0, 51.3). probably a rare, unknown activation
-						The Unsealed Tomb: (69.9, 59.9)
+						putting coords temporarily since they don't appear on the map yet
 						]]--
 						q(57585, {	-- Abyssal Santuary
 							["lvl"] = 120,
 							["isWorldQuest"] = true,
 						}),
 						q(57157, {	-- Assault: The Black Empire
+							["lvl"] = 120,
+							["isWorldQuest"] = true,
 							-- refreshing after the boss fight in Uldum triggered 57736 (weekly/daily id?)
 							["g"] = {
 								i(173372, {	-- Cache of the Black Empire
 									currency(1755),	-- Coalescing Visions
 									i(173178),	-- Corrupted Greaves -- TODO:: almost certainly a full ilvl 415 set for all armor types. Same ones sold by blacktalon guards for visions?
+									i(173459),	-- Malignant Leviathan's Wargreaves
 									i(173456),	-- Plate Crushers -- probably scales just like world quest loot
 								}),
 							},
 						}),
+						q(58257, {	-- Consuming Maw
+							["lvl"] = 120,
+							["coord"] = { 55.4, 21.3, 1527 },
+							["isWorldQuest"] = true,
+						}),
 						q(57592, {	-- Executor of N'Zoth
 							["lvl"] = 120,
+							["isWorldQuest"] = true,
+						}),
+						q(58276, {	-- Marat In Flames
+							["lvl"] = 120,
+							["coord"] = { 49.4, 39.3, 1527 },
+							["isWorldQuest"] = true,
+						}),
+						q(58275, {	-- Monstrous Summoning
+							["lvl"] = 120,
+							["coord"] = { 50.6, 82.4, 1527 },
 							["isWorldQuest"] = true,
 						}),
 						q(55359, {	-- Ritual of Ascendancy
 							["lvl"] = 120,
 							["isWorldQuest"] = true,
 						}),
+						--[[
+						q(, {	-- 
+							["lvl"] = 120,
+							["coord"] = { , 1527 },
+							["isWorldQuest"] = true,
+						}),
+						]]--
 					}),
 				}),
-				n(0, {	-- Zone Drops -- inside the uldum vision of nzoth
-					i(174491),	-- Tome of Unspeakable Delicacies
+				n(0, {	-- Zone Drops -- TODO:: move these to a different header since they only drop inside the uldum vision of nzoth
+					i(174837),	-- Decaying Fusion Core (14 day timer on this. no sure what it is yet)
 					i(171312),	-- Recipe: Void Focusb
+					i(174491),	-- Tome of Unspeakable Delicacies
+					i(174462),	-- Void Cocoon
+				}),
+				i(171316),	-- Plans: Unsettling Osmenite Legguards -- TODO: place this somewhere. dropped from a random mob in Uldum during the black empire assault
+				i(170553, {	-- Void Focus Splinter
+					["crs"] = {
+						160914,	-- Abyssal Harbinger
+						160462,	-- Acolyte of N'Zoth
+						156572,	-- K'thir Doomsayer
+					},
 				}),
 			}),
 			n(-4, {	-- Achievements
@@ -389,19 +520,6 @@ _.ExpansionFeatures =
 					--["questID"] = ,
 					["coord"] = { 60.0, 39.0, 1527 },
 					["isDaily"] = true,
-				}),
-				n(157134, {	-- Ishak of the Four Winds -- TODO: Confirm if this is only available during the Amathet invasion
-					["questID"] = 57259,
-					["coord"] = { 73.9, 83.5, 1527 },
-					["isDaily"] = true,
-					["g"] = {
-						i(174641),	-- Drake of the Four Winds
-					},
-				}),
-				n(158636, {	-- The Grand Executor
-					["g"] = {
-						i(169303),	-- Hell-Bent Bracers
-					},
 				}),
 				n(158595, {	-- Thoughtstealer Vos
 					--["questID"] = ,
@@ -610,12 +728,14 @@ _.ExpansionFeatures =
 							["cost"] = { { "i", 163036, 300 }, },	-- 300x Polished Pet Charm
 						}),
 						i(174648, {	-- Uldum Accord Tabard
-							["cost"] = 2160000,	-- 216g
+							["cost"] = 2280000,	-- 228g
 						}),
 						i(174754, {	-- Wastewander Skyterror
-							["cost"] = 216000000,	-- 21,600g
+							["cost"] = 216000000,	-- 22,800g
 						}),
-						i(173282),	-- Token of Death's Glee (Rank 3)
+						i(173282, {	-- Token of Death's Glee (Rank 3)
+							["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
+						}),
 					},
 				}),
 			}),

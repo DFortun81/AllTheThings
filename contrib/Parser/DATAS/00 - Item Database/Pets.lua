@@ -806,6 +806,7 @@ pet(147541, 2037); 	-- Vilebrood Whelpling
 pet(166719, 2569);	-- Violet Abyssal Eel
 pet(93039, 1154); 	-- Viscidus Globule
 pet(122114, 1633); 	-- Void Collar (Chaos Pup)
+pet(174462, 2843);	-- Void Cocoon (Void-Scarred Beetle)
 pet(163652, 2434);	-- Voidwiggle
 pet(69824, 310); 	-- Voodoo Figurine
 pet(163824, 2460);	-- Voru'kar Leecher
