@@ -35,6 +35,34 @@ _.Zones =
 						i(57168),	-- Reaper's Buckler
 					},
 				}),
+				q(367,   {	-- A New Plague
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1518 },	-- Apothecary Johaan
+				}),
+				q(368,   {	-- A New Plague
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1518 },	-- Apothecary Johaan
+					["sourceQuest"] = 367,	-- A New Plague
+				}),
+				q(369,   {	-- A New Plague
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1518 },	-- Apothecary Johaan
+					["sourceQuest"] = 368,	-- A New Plague
+				}),
+				q(492,   {	-- A New Plague
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1518 },	-- Apothecary Johaan
+					["sourceQuest"] = 369,	-- A New Plague
+				}),
+				q(404,   {	-- A Putrid Task
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1496 },	-- Deathguard Dillinger
+				}),
 				q(25090, {	-- A Putrid Task
 					["provider"] = { "n", 1496 },	-- Deathguard Dillinger
 					["coord"] = { 52.5, 54.8, 18 },
@@ -68,6 +96,29 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 24992 },	-- Escaped From Gilneas
 				}),
+				q(370,   {	-- At War With The Scarlet Crusade
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1515 },	-- Executor Zygand
+					["sourceQuest"] = 427,	-- At War With The Scarlet Crusade
+				}),
+				q(371,   {	-- At War With The Scarlet Crusade
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1515 },	-- Executor Zygand
+					["sourceQuest"] = 370,	-- At War With The Scarlet Crusade
+				}),
+				q(372,   {	-- At War With The Scarlet Crusade
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1515 },	-- Executor Zygand
+					["sourceQuest"] = 371,	-- At War With The Scarlet Crusade
+				}),
+				q(427,   {	-- At War With The Scarlet Crusade
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1515 },	-- Executor Zygand
+				}),
 				q(25009, {	-- At War With The Scarlet Crusade
 					["provider"] = { "n", 10837 },	-- High Executor Derrington
 					["coord"] = { 83.2, 68.9, 18 },
@@ -89,6 +140,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27980 },	-- The Scarlet Palisade
 				}),
+				q(354,   {	-- Deaths in the Family
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1500 },	-- Coleman Farthing
+					["sourceQuest"] = 362,	--  The Haunted Mills
+				}),
 				q(25029, {	-- Deaths in the Family
 					["provider"] = { "n", 1500 },	-- Coleman Farthing
 					["coord"] = { 54.5, 29.8, 18 },
@@ -98,6 +155,11 @@ _.Zones =
 						i(3446),	-- Darkwood Staff
 						i(3440),	-- Bonecracker
 					},
+				}),
+				q(445,   {	-- Delivery to Silverpine Forest
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1518 },	-- Apothecary Johaan
 				}),
 				q(24994, {	-- Doom Weed
 					["provider"] = { "n", 38977 },	-- Apothecary Jerrod
@@ -121,6 +183,17 @@ _.Zones =
 					["coord"] = { 44.7, 53.6, 18 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(365,   {	-- Fields of Grief
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1519 },	-- Deathguard Simmer
+				}),
+				q(407,   {	-- Fields of Grief
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1518 },	-- Apothecary Johaan
+					["sourceQuest"] = 365,	-- Fields of Grief
+				}),
 				q(24975, {	-- Fields of Grief
 					["provider"] = { "n", 1518 },	-- Apothecary Johaan
 					["coord"] = { 44.6, 53.7, 18 },
@@ -131,6 +204,11 @@ _.Zones =
 					["coord"] = { 83.3, 69.8, 18 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26931 },	-- Foxes and Hounds
+				}),
+				q(359,   {	-- Forsaken Duties
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1499 },	-- Magistrate Sevren
 				}),
 				q(24983, {	-- Forsaken Duties
 					["provider"] = { "n", 1499 },	-- Magistrate Sevren
@@ -172,6 +250,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 24980 },	-- The Scarlet Palisade
 				}),
+				q(358,   {	-- Graverobbers
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1499 },	-- Magistrate Sevren
+				}),
 				q(24997, {	-- Graverobbers
 					["provider"] = { "n", 38978 },	-- Apprentice Crispin
 					["coord"] = { 61.6, 34.3, 18 },
@@ -212,7 +295,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 24990 },	-- Darkhound Pounding
 				}),
-				q(5403,  {	-- Corruptor's Scourgestones
+				q(5403,  {	-- Invader's Scourgestones
 					["coord"] = { 83.18, 68.45, 18 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10839 },		-- Argent Officer Garush
@@ -257,7 +340,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 24997 },	-- Graverobbers
 				}),
-				q(5402,  {	-- Corruptor's Scourgestones
+				q(5402,  {	-- Minion's Scourgestones
 					["coord"] = { 83.18, 68.45, 18 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10839 },		-- Argent Officer Garush
@@ -289,10 +372,37 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 24994 },	-- Doom Weed
 				}),
+				q(374,   {	-- Proof of Demise
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1652 },	-- Deathguard Burgess
+				}),
+				q(409,   {	-- Proving Allegiance
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1497 },	-- Gunther Arcanus
+					["sourceQuest"] = 366,	-- Return the Book
+				}),
+				q(441,   {	-- Raleigh and the Undercity
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1499 },	-- Magistrate Sevren
+					["sourceQuest"] = 440,	-- The Engraved Ring
+				}),
 				q(24978, {	-- Reaping the Reapers
 					["provider"] = { "n", 1519 },	-- Deathguard Simmer
 					["coord"] = { 44.7, 53.6, 18 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(356,   {	-- Rear Guard Patrol
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1495 },	-- Deathguard Linnea
+				}),
+				q(360,   {	-- Return to the Magistrate
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1495 },	-- Deathguard Linnea
 				}),
 				q(24989, {	-- Return to the Magistrate
 					["provider"] = { "n", 1495 },	-- Deathguard Linnea
@@ -305,6 +415,11 @@ _.Zones =
 					["coord"] = { 58.8, 51.8, 18 },
 					["sourceQuest"] = 6321,	-- Supplying Brill
 					["races"] = { 5 },	-- Undead
+				}),
+				q(355,   {	-- Speak with Sevren
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1500 },	-- Coleman Farthing
 				}),
 				q(25005, {	-- Speak with Sevren
 					["provider"] = { "n", 1500 },	-- Coleman Farthing
@@ -343,11 +458,22 @@ _.Zones =
 					["coord"] = { 83.3, 69.0, 18 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(375,   {	-- The Chill of Death
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1521 },	-- Gretchen Dedmar
+				}),
 				q(24988, {	-- The Chill of Death
 					["provider"] = { "n", 1521 },	-- Gretchen Dedmar
 					["coord"] = { 65.2, 60.4, 18 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 24983 },	-- Forsaken Duties
+				}),
+				q(408,   {	-- The Family Crypt
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1499 },	-- Magistrate Sevren
+					["sourceQuest"] = 355,	-- Speak with Sevren
 				}),
 				q(25003, {	-- The Family Crypt
 					["provider"] = { "n", 1500 },	-- Coleman Farthing
@@ -360,6 +486,11 @@ _.Zones =
 					["coord"] = { 60.9, 50.4, 18 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 25005 },	-- Speak with Sevren
+				}),
+				q(362,   {	-- The Haunted Mills
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1500 },	-- Coleman Farthing
 				}),
 				q(25030, {	-- The Haunted Mills
 					["crs"] = 1658,	-- Captain Dargol
@@ -380,6 +511,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,	-- for "A New Era for the Plaguelands"
 				}),
+				q(426,   {	-- The Mills Overrun
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1496 },	-- Deathguard Dillinger
+					["sourceQuest"] = 404,	-- A Putrid Task
+				}),
 				q(25004, {	-- The Mills Overrun
 					["provider"] = { "n", 1500 },	-- Coleman Farthing
 					["coord"] = { 54.5, 29.8, 18 },
@@ -391,6 +528,17 @@ _.Zones =
 					["coord"] = { 52.5, 54.8, 18 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+				}),
+				q(405,   {	-- The Prodigal Lich
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1499 },	-- Magistrate Sevren
+				}),
+				q(411,   {	-- The Prodigal Lich Returns
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1497 },	-- Gunther Arcanus
+					["sourceQuest"] = 409,	-- Proving Allegiance
 				}),
 				q(25033, {	-- The Red Messenger
 					["u"] = 40,
@@ -418,6 +566,11 @@ _.Zones =
 					["coord"] = { 44.6, 53.7, 18 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 24975 },	-- Fields of Grief
+				}),
+				q(398,   {	-- Wanted: Maggot Eye
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 711 },	-- Wanted!
 				}),
 				q(26964, {	-- Warchief's Command: Silverpine Forest!
 					["provider"] = { "n", 1515 },	-- Executor Zygand

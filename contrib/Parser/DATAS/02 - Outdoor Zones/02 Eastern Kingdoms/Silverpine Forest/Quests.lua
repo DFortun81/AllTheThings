@@ -23,9 +23,22 @@ _.Zones =
 						un(2, i(3235)),	-- Ring of Scorn
 					},
 				}),
+				q(447,   {	-- A Recipe for Death
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1937 },	-- Apothecary Renferrel
+				}),
+				q(450,   {	-- A Recipe for Death
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2055 },	-- Master Apothecary Farenell
+					["sourceQuest"] = 447,	-- A Recipe for Death
+				}),
 				q(451,   { 	-- A Recipe for Death
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1937 },	-- Apothecary Renferrel
+					["sourceQuest"] = 450,	-- A Recipe for Death
 					["g"] = {
 						un(2, i(3582)),	-- Acidproof Cloak
 						un(2, i(3451)),	-- Nightglow Concoction
@@ -49,9 +62,35 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26965 },	-- The Warchief Cometh
 				}),
+				q(479,   {	-- Ambermill Investigations
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2121 },	-- Shadow Priest Allister
+					["sourceQuest"] = 482,	-- Dalaran's Intentions
+				}),
+				q(422,   {	-- Arugal's Folly
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
+					["sourceQuest"] = 421,	-- Prove Your Worth
+				}),
+				q(423,   {	-- Arugal's Folly
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
+					["sourceQuest"] = 422,	-- Arugal's Folly
+				}),
+				q(424,   {	-- Arugal's Folly
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
+					["sourceQuest"] = 423,	-- Arugal's Folly
+				}),
 				q(99,    { 	-- Arugal's Folly
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
+					["sourceQuest"] = 424,	-- Arugal's Folly
 					["g"] = {
 						un(2, i(3570)),	-- Bonegrinding Pestle
 						un(2, i(5242)),	-- Cinder Wand
@@ -78,6 +117,11 @@ _.Zones =
 					["g"] = {
 						un(2, i(5252)),	-- Wand of Decay
 					},
+				}),
+				q(477,   {	-- Border Crossings
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2121 },	-- Shadow Priest Allister
 				}),
 				q(27474, {	-- Breaking the Barrier
 					["provider"] = { "n", 45617 },	-- Lady Sylvanas Windrunner
@@ -112,6 +156,18 @@ _.Zones =
 						27475,	-- Unyielding Servitors
 					},
 				}),
+				q(481,   {	-- Dalar's Analysis
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2121 },	-- Shadow Priest Allister
+					["sourceQuest"] = 478,	-- Maps and Runes
+				}),
+				q(482,   {	-- Dalaran's Intentions
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
+					["sourceQuest"] = 481,	-- Dalar's Analysis
+				}),
 				q(27039, {	-- Dangerous Intentions
 					["provider"] = { "n", 44789 },	-- Deathstalker Commander Belmont
 					["coord"] = { 58.0, 8.9, 21 },
@@ -135,6 +191,11 @@ _.Zones =
 					["coord"] = { 45.3, 84.4, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27601 },	-- Cities in Dust
+				}),
+				q(435,   {	-- Escorting Erland
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1978 },	-- Deathstalker Erland
 				}),
 				q(27181, {	-- Excising the Taint
 					["provider"] = { "n", 45195 },	-- Bloodfang Stalker
@@ -220,6 +281,17 @@ _.Zones =
 						i(62844),	-- Suppository Preventors
 					},
 				}),
+				q(425,   {	-- Ivar the Foul
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1950 },	-- Rane Yorick
+					["sourceQuest"] = 430,	-- Return to Quinn
+				}),
+				q(493,   {	-- Journey to Hillsbrad Foothills
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1937 },	-- Apothecary Renferrel
+				}),
 				q(27548, {	-- Lessons in Fear
 					["provider"] = { "n", 45879 },	-- Lord Walden
 					["coord"] = { 51.8, 65.0, 21 },
@@ -232,6 +304,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27099 },	-- No Escape
 				}),
+				q(428,   {	-- Lost Deathstalkers
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1952 },	-- High Executor Hadrec
+				}),
 				q(27093, {	-- Lost in the Darkness
 					["provider"] = { "n", 44916 },	-- Admiral Hatchet
 					["coord"] = { 44.0, 21.3, 21 },
@@ -240,6 +317,12 @@ _.Zones =
 						27073,	-- Give 'em Hell!
 						27069,	-- Steel Thunder
 					},
+				}),
+				q(478,   {	-- Map and Runes
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 1627 },	-- Dalaran Crate
+					["sourceQuest"] = 477,	-- Border Crossings
 				}),
 				q(27099, {	-- No Escape
 					["provider"] = { "n", 44365 },	-- Lady Sylvanas Windrunner
@@ -319,6 +402,11 @@ _.Zones =
 						i(62879),	-- Psychopathic Hatchet
 					},
 				}),
+				q(421,   {	-- Prove Your Worth
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
+				}),
 				q(452,   { 	-- Pyrewood Ambush
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -352,6 +440,30 @@ _.Zones =
 						i(62876),	-- Relios's Mace
 					},
 				}),
+				q(448,   {	-- Report to Hadrec
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1937 },	-- Apothecary Renferrel
+					["sourceQuest"] = 446,	-- Thule Ravenclaw
+				}),
+				q(460,   {	-- Resting in Pieces
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 3317 },	-- A Talking Head
+					["crs"] = {
+						1943,	-- Raging Rot Hide
+						1944,	-- Rot Hide Bruiser
+						1939,	-- Rot Hide Brute
+						1940,	-- Rot Hide Plague Weaver
+						1942,	-- Rot Hide Savage
+					},
+				}),
+				q(430,   {	-- Return to Quinn
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1937 },	-- Apothecary Renferrel
+					["sourceQuest"] = 429,	-- Wild Hearts
+				}),
 				q(27097, {	-- Rise, Forsaken
 					["provider"] = { "n", 44365 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 57.3, 10.1, 21 },
@@ -363,6 +475,24 @@ _.Zones =
 					["coord"] = { 51.7, 66.0, 21 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27438 },	-- The Great Escape
+				}),
+				q(439,   {	-- Rot Hide Clues
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 1593 },	-- Corpse Laden Boat
+					["sourceQuest"] = 438,	-- The Decrepit Ferry
+				}),
+				q(443,   {	-- Rot Hide Ichor
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1952 },	-- High Executor Hadrec
+					["sourceQuest"] = 439,	-- Rot Hide Clues
+				}),
+				q(444,   {	-- Rot Hide Origins
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1937 },	-- Apothecary Renferrel
+					["sourceQuest"] = 443,	-- Rot Hide Ichor
 				}),
 				q(27193, {	-- Seek and Destroy
 					["provider"] = { "n", 44365 },	-- Lady Sylvanas Windrunner
@@ -407,6 +537,28 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27518 },	-- Transdimensional Warfare: Chapter III
 				}),
+				q(437,   {	-- The Dead Fields
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1952 },	-- High Executor Hadrec
+				}),
+				q(449,   {	-- The Deathstalkers' Report
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1950 },	-- Rane Yorick
+					["sourceQuest"] = 435,	-- Escorting Erland
+				}),
+				q(438,   {	-- The Decrepit Ferry
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1952 },	-- High Executor Hadrec
+					["sourceQuest"] = 437,	-- The Dead Fields
+				}),
+				q(440,   {	-- The Engraved Ring
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1952 },	-- High Executor Hadrec
+				}),
 				q(26989, {	-- The Gilneas Liberation Front
 					["provider"] = { "n", 44615 },	-- Grand Executor Mortuus
 					["coord"] = { 57.4, 10.1, 21 },
@@ -417,6 +569,12 @@ _.Zones =
 						i(62837),	-- Nubish Cloak
 						i(62838),	-- Nub's Wand
 					},
+				}),
+				q(461,   {	-- The Hidden Niche
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 1599 },	-- Shallow Grave
+					["sourceQuest"] = 460,	-- Resting in Pieces
 				}),
 				q(26965, {	-- The Warchief Cometh
 					["provider"] = { "n", 44615 },	-- Grand Executor Mortuus
@@ -527,6 +685,8 @@ _.Zones =
 				q(429,   {	-- Wild Hearts
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1950 },	-- Rane Yorick
+					["sourceQuest"] = 428,	-- Lost Deathstalkers
 					["g"] = {
 						un(7, i(4597)),	-- Recipe: Discolored Healing Potion
 					},

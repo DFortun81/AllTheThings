@@ -57,15 +57,64 @@ _.Zones =
 					["provider"] = { "n", 49687 },	-- Brazie the Botanist
 					["coord"] = { 33.5, 49.3, 25 },
 				}),
+				q(527,   {	-- Battle of Hillsbrad
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2215 },	-- High Executor Darthalia
+				}),
+				q(528,   {	-- Battle of Hillsbrad
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2215 },	-- High Executor Darthalia
+					["sourceQuest"] = 527,	-- Battle of Hillsbrad
+				}),
+				q(529,   {	-- Battle of Hillsbrad
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2215 },	-- High Executor Darthalia
+					["sourceQuest"] = 528,	-- Battle of Hillsbrad
+				}),
+				q(532,   {	-- Battle of Hillsbrad
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2215 },	-- High Executor Darthalia
+					["sourceQuest"] = 529,	-- Battle of Hillsbrad
+				}),
+				q(539,   {	-- Battle of Hillsbrad
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2215 },	-- High Executor Darthalia
+					["sourceQuest"] = 532,	-- Battle of Hillsbrad
+				}),
+				q(541,   {	-- Battle of Hillsbrad
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2215 },	-- High Executor Darthalia
+					["sourceQuest"] = 539,	-- Battle of Hillsbrad
+				}),
 				q(550,   {	-- Battle of Hillsbrad
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2215 },	-- High Executor Darthalia
+					["sourceQuest"] = 541,	-- Battle of Hillsbrad
 					["g"] = {
 						un(2, i(3760)),	-- Band of the Undercity
 						un(2, i(3761)),	-- Deadskull Shield
 						un(2, i(3822)),	-- Runic Darkblade
 						un(2, i(6282)),	-- Sacred Burial Trousers
 					},
+				}),
+				q(506,   {	-- Blackmoore's Legacy
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2316 },	-- Gol'dir
+					["sourceQuest"] = 503,	-- Gol'dir
+				}),
+				q(557,   {	-- Bracers of Binding
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2437 },	-- Keeper Bel'varil
+					["sourceQuest"] = 556,	-- Stone Tokens
 				}),
 				q(28556, {	-- Breaking the Hand
 					["provider"] = { "n", 48545 },	-- High Warlord Cromush
@@ -131,6 +180,12 @@ _.Zones =
 					["coord"] = { 57.2, 46.3, 25 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28587 },	-- Aid of the Frostwolf
+				}),
+				q(545,   {	-- Dalaran Patrols
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2410 },	-- Magus Wordeen Voidglare
+					["sourceQuest"] = 544,	-- Prison Break In
 				}),
 				q(567,   {	-- Dangerous!
 					["u"] = 40,
@@ -215,15 +270,64 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				q(509,   {	-- Elixir of Agony
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2216 },	-- Apothecary Lydon
+					["sourceQuest"] = 502,	-- Elixir of Pain
+				}),
+				q(513,   {	-- Elixir of Agony
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2216 },	-- Apothecary Lydon
+					["sourceQuest"] = 509,	-- Elixir of Agony
+				}),
+				q(515,   {	-- Elixir of Agony
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2216 },	-- Apothecary Lydon
+					["sourceQuest"] = 513,	-- Elixir of Agony
+				}),
+				q(517,   {	-- Elixir of Agony
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2216 },	-- Apothecary Lydon
+					["sourceQuest"] = 515,	-- Elixir of Agony
+				}),
+				q(524,   {	-- Elixir of Agony
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2216 },	-- Apothecary Lydon
+					["sourceQuest"] = 517,	-- Elixir of Agony
+				}),
 				q(501,   {	-- Elixir of Pain
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2216 },	-- Apothecary Lydon
+					["sourceQuest"] = 499,	-- Elixir of Suffering
 					["g"] = {
 						un(2, i(6482)),	-- Firewalker Boots
 						un(2, i(2230)),	-- Gloves of Brawn
 						un(2, i(3741)),	-- Stomping Boots
 						i(3735),		-- Recipe: Hot Lion Chops (recipe is not unobtainable, sold by Zargh in Nothern Barrens)
 					},
+				}),
+				q(502,   {	-- Elixir of Pain
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2216 },	-- Apothecary Lydon
+					["sourceQuest"] = 501,	-- Elixir of Pain
+				}),
+				q(496,   {	-- Elixir of Suffering
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2216 },	-- Apothecary Lydon
+				}),
+				q(499,   {	-- Elixir of Suffering
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2216 },	-- Apothecary Lydon
+					["sourceQuest"] = 496,	-- Elixir of Suffering
 				}),
 				q(28634, {	-- Extinction
 					["provider"] = { "n", 49201 },	-- Nils Beerot
@@ -253,13 +357,6 @@ _.Zones =
 						i(131692),	-- Sludge Guard Mail Vest
 					},
 				}),
-				q(11997, {	-- The Frozen Flame
-					["provider"] = { "n", 99415 },	-- Aethas Sunreaver
-					["coord"] = { 28.6, 37.2, 25 },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
-					["sourceQuests"] = { 40270 },	-- The Path of Atonement
-				}),
 				q(28744, {	-- Ghouls Hate My Grains
 					["provider"] = { "n", 49687 },	-- Brazie the Botanist
 					["coord"] = { 33.5, 49.3, 25 },
@@ -277,6 +374,12 @@ _.Zones =
 						i(131689),	-- Web Encased Tunic
 					},
 				}),
+				q(503,   {	-- Gol'dir
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2229 },	-- Krusk
+					["sourceQuest"] = 533,	-- Infiltration
+				}),
 				q(28325, {	-- Green Living
 					["provider"] = { "n", 2391 },	-- Serge Hinott
 					["coord"] = { 49.0, 66.3, 25 },
@@ -286,6 +389,17 @@ _.Zones =
 					["provider"] = { "n", 48129 },	-- Helcular
 					["coord"] = { 49.1, 66.3, 25 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(552,   {	-- Helcular's Revenge
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2429 },	-- Novice Thaivand
+				}),
+				q(553,   {	-- Helcular's Revenge
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2429 },	-- Novice Thaivand
+					["sourceQuest"] = 552,	-- Helcular's Revenge
 				}),
 				q(28331, {	-- Helcular's Rod Giveth...
 					["provider"] = { "n", 48129 },	-- Helcular
@@ -344,6 +458,11 @@ _.Zones =
 						un(2, i(6829)),	-- Sword of Serenity
 					},
 				}),
+				q(533,   {	-- Infiltration
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2229 },	-- Krusk
+				}),
 				q(28603, {	-- Infiltration
 					["provider"] = { "n", 2278 },	-- Melisara
 					["coord"] = { 57.2, 46.3, 25 },
@@ -397,6 +516,12 @@ _.Zones =
 						28196,	-- The Battle for Hillsbrad
 					},
 				}),
+				q(507,   {	-- Lord Aliden Perenolde
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2229 },	-- Krusk
+					["sourceQuest"] = 506,	-- Blackmoore's Legacy
+				}),
 				q(28506, {	-- March of the Stormpike
 					["provider"] = { "n", 48545 },	-- High Warlord Cromush
 					["coord"] = { 57.0, 46.2, 25 },
@@ -446,6 +571,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28096 },	-- Welcome to the Machine
 				}),
+				q(544,   {	-- Prison Break In
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2410 },	-- Magus Wordeen Voidglare
+				}),
 				q(28356, {	-- Preemptive Strike
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 63686 },	-- Daggerspine Attack Plans
@@ -490,6 +620,14 @@ _.Zones =
 					["coord"] = { 33.5, 49.3, 25 },
 					["sourceQuests"] = { 28744 },	-- Ghouls Hate My Grains
 				}),
+				q(555,   {	-- Soothing Turtle Bisque
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 2430 },	-- Chef Jessen
+					["g"] = {
+						un(7, i(3737)),	-- Recipe: Soothing Turtle Bisque
+					},
+				}),
 				q(546,   {	-- [DEPRECATED] Souvenirs of Death
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -504,6 +642,11 @@ _.Zones =
 					["g"] = {
 						i(65681),	-- Stagwich Slicer
 					},
+				}),
+				q(556,   {	-- Stone Tokens
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2437 },	-- Keeper Bel'varil
 				}),
 				q(28616, {	-- Stormpike Apocalypse
 					["provider"] = { "n", 48545 },	-- High Warlord Cromush
@@ -549,6 +692,9 @@ _.Zones =
 				}),
 				q(508,   {	-- Taretha's Gift
 					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2317 },	-- Elysa
+					["sourceQuest"] = 507,	-- Lord Aliden Perenolde
 					["g"] = {
 						un(2, i(3765)),	-- Brigand's Pauldrons
 						un(2, i(3764)),	-- Mantis Boots
@@ -572,9 +718,29 @@ _.Zones =
 					["provider"] = { "i", 63250 },	-- The Battle for Hillsbrad
 					-- TODO: does this always drop or is it only available after "No One Here Gets Out Alive" ?
 				}),
+				q(518,   {	-- The Crown of Will
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2278 },	-- Melisara
+					["sourceQuest"] = 495,	-- The Crown of Will
+				}),
+				q(519,   {	-- The Crown of Will
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2278 },	-- Melisara
+					["sourceQuest"] = 518,	-- The Crown of Will
+				}),
+				q(520,   {	-- The Crown of Will
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2278 },	-- Melisara
+					["sourceQuest"] = 519,	-- The Crown of Will
+				}),
 				q(521,   {	-- [DEPRECATED] The Crown of Will
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2278 },	-- Melisara
+					["sourceQuest"] = 520,	-- The Crown of Will
 					["g"] = {
 						un(2, i(4430)),	-- Ethereal Talisman
 					},
@@ -611,6 +777,13 @@ _.Zones =
 					["provider"] = { "n", 49243 },	-- Captain Jekyll
 					["coord"] = { 59.9, 63.3, 25 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(11997, {	-- The Frozen Flame
+					["provider"] = { "n", 99415 },	-- Aethas Sunreaver
+					["coord"] = { 28.6, 37.2, 25 },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 8 },	-- Mage
+					["sourceQuests"] = { 40270 },	-- The Path of Atonement
 				}),
 				q(28484, {	-- The Heart of the Matter
 					["provider"] = { "n", 2437 },	-- Keeper Bel'varil
@@ -654,6 +827,11 @@ _.Zones =
 					["provider"] = { "n", 47554 },	-- Captain Keyton
 					["coord"] = { 33.2, 73.5, 25 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(494,   {	-- Time to Strike
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2214 },	-- Deathstalker Lesh
 				}),
 				ql(q(29847, {	-- To Catch a Thief
 					["provider"] = { "n", 56375 },	-- Mostrasz
@@ -699,6 +877,11 @@ _.Zones =
 				q(28752, {	-- Unstoppable Onslaught (REMOVED in Beta)
 					["u"] = 1,
 				}),
+				q(535,   {	-- Valik
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2333 },	-- Henchman Valik
+				}),
 				q(2938,  {	-- Venom to the Undercity
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -723,6 +906,11 @@ _.Zones =
 					["g"] = {
 						un(2, i(2231)),	-- Inferno Robe
 					},
+				}),
+				q(549,   {	-- WANTED: Syndicate Personnel
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 1763 },	-- WANTED
 				}),
 				q(28619, {	-- Warchief's Command: Arathi Highlands!
 					["u"] = 40,

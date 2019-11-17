@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(90, {	-- Undercity
-			n(-17, {	-- Quests				
+			n(-17, {	-- Quests
 				q(38397, {	-- A Curious Oddity
 					["provider"] = { "n", 6566 },	-- Estelle Gendry
 					["coords"] = {
@@ -25,7 +25,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 11 },	-- Druid
 					["lvl"] = 20,
-				}),				
+				}),
 				q(42985, {	-- A Royal Audience
 					["description"]	= "You get this Quest when you reach Prestige Rang 2.",
 					["races"] = HORDE_ONLY,
@@ -48,16 +48,16 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(6521,  {	-- An Unholy Alliance
-						["provider"] = { "n", 36273 },	-- Bragor Bloodfist
-						["coord"] = { 56.1, 92.1, 90 },
-						["races"] = HORDE_ONLY,
-						["u"] = 40,
-						["groups"] = {
-							un(2, i(17042)),	-- Nail Splitter
-							un(2, i(17039)),	-- Skullbreaker
-							un(2, i(17043)),	-- Zealot's Robe
-						},
-					}),
+					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
+					["coord"] = { 56.1, 92.1, 90 },
+					["races"] = HORDE_ONLY,
+					["u"] = 40,
+					["groups"] = {
+						un(2, i(17042)),	-- Nail Splitter
+						un(2, i(17039)),	-- Skullbreaker
+						un(2, i(17043)),	-- Zealot's Robe
+					},
+				}),
 				q(1847,  {	-- Brutal Legguards
 					["provider"] = { "n", 6411 },	-- Velora Nitely
 					["coord"] = { 62.6,39.4, 90 },
@@ -175,6 +175,12 @@ _.Zones =
 					["classes"] = { 3 },	-- Hunter
 					["lvl"] = 20,
 				}),
+				q(243,   {	-- Into the Field
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5204 },	-- Apothecary Zinge
+					["sourceQuest"] = 238,	-- Errand for Apothecary Zinge
+				}),
 				q(1048,  {	-- Into the Scarlet Monastery
 					["provider"] = { "n", 2425 },	-- Varimathras
 					["coord"] = { 56.3, 92.2, 90 },
@@ -201,7 +207,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["classes"] = { 9 },	-- Warlock
-					["maps"] = { 88, 90, 110 }, 
+					["maps"] = { 88, 90, 110 },
 					["lvl"] = 20,
 				}),
 				q(28323, {	-- Meet with Brother Silverhallow
@@ -252,7 +258,7 @@ _.Zones =
 					["classes"] = { 2 },	-- Paladin
 					["lvl"] = 50,
 				}),
-				q(28297, {	-- Meet with Ormak Grimshot 
+				q(28297, {	-- Meet with Ormak Grimshot
 					["provider"] = { "n", 39116 },	-- Apolos
 					["coord"] = { 49.6, 29.0, 90 },	-- Apolos (Undercity)
 					["isBreadcrumb"] = true,
@@ -362,12 +368,18 @@ _.Zones =
 						un(2, i(20643)),	-- Undercity Reservist's Cap
 					},
 				}),
+				q(366,   {	-- Return the Book
+					["u"] = 40,
+					["races"] = { 2, 5, 8, },	-- Orc, Undead, Troll
+					["provider"] = { "n", 1498 },	-- Bethor Iceshard
+					["sourceQuest"] = 357,	-- The Lich's Identity
+				}),
 				q(6324,  {	-- Return to Morris
 					["provider"] = { "n", 4551 },	-- Michael Garrett
 					["coords"] = { 63.0, 48.2, 90 },
 					["sourceQuest"] = 6322,	-- Michael Garrett
 					["races"] = { 5 },	-- Undead
-				}),			
+				}),
 				q(1358,  {	-- Sample for Helbrim
 					["provider"] = { "n", 5204 },	-- Apothecary Zinge
 					["coord"] = { 50.1, 68.0, 90 },
@@ -414,7 +426,7 @@ _.Zones =
 						un(2, i(7510)),	-- Lesser Spellfire Robes
 					},
 				}),
-				q(1160,  {	-- Test of Lore	
+				q(1160,  {	-- Test of Lore
 					["provider"] = { "n", 4488 },	-- Parqual Fintallas
 					["coord"] = { 57.6, 65.0, 90 },
 					["sourceQuest"] = 1159,	-- Test of Lore
@@ -422,7 +434,7 @@ _.Zones =
 					["lvl"] = 25,
 					["u"] = 40,
 				}),
-				q(6628,  {	-- Test of Lore	
+				q(6628,  {	-- Test of Lore
 					["provider"] = { "n", 4488 },	-- Parqual Fintallas
 					["coord"] = { 57.6, 65.0, 90 },
 					["sourceQuest"] = 1160,	-- Test of Lore
@@ -472,6 +484,11 @@ _.Zones =
 						un(2, i(44349)),	-- Warchief's Legplates of Carnage
 					},
 				}),
+				q(495,   {	-- The Crown of Will
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2227 },	-- Sharlindra
+				}),
 				q(39960, {	-- The Legacy Passed On
 					["provider"] = { "n", 97766 },	-- Francis Serbacon <Author Extrodinaire>
 					["coord"] = { 77.8, 38.8, 90 },
@@ -481,6 +498,12 @@ _.Zones =
 					["groups"]= {
 						recipe(192804),	-- Steamy Romance Novel Kit
 					},
+				}),
+				q(357,   {	-- The Lich's Identity
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1498 },	-- Bethor Iceshard
+					["sourceQuest"] = 405,	-- The Prodigal Lich
 				}),
 				q(5725,  {	-- The Power to Destroy
 					["provider"] = { "n", 2425 },	-- Varimathras
@@ -536,7 +559,12 @@ _.Zones =
 					["sourceQuest"] = 42985,	-- A Royal Audience
 					["races"] = HORDE_ONLY,
 					["lvl"] = 100,
-				}),	
+				}),
+				q(446,   {	-- Thule Ravenclaw
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1498 },	-- Bethor Iceshard
+				}),
 				q(1164,  {	-- To Steal From Thieves
 					["provider"] = { "n", 4486 },	-- Genavie Callow
 					["coord"] = { 63.8, 49.5, 90 },
