@@ -10,6 +10,7 @@ _.Zones =
 					["coord"] = { 63.3, 42.9, 1462 },
 					["g"] = {
 						i(167787, {	-- Blueprint: Mechanocat Laser Pointer
+							["questID"] = 55056,
 							["cost"] = 5000000,	-- 500g
 							["g"] = {
 								crit(4, {	-- Mechanocat Laser Pointer
