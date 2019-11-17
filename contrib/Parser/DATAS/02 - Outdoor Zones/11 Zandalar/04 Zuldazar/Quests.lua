@@ -1653,7 +1653,15 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuest"] = 55253,	-- A Show of Faith
 				}),
-					
+				q(54756, {	-- Garbage for the Garbage God
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 166507 },	-- Jani's First Offering
+				}),
+				q(54757, {	-- The Loa of Scavengers
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 149006 },	-- Jani
+					["sourceQuest"] = 54756,	-- Garbage for the Garbage God
+				}),
 			}),
 		}),
 	}),
