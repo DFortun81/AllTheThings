@@ -110,6 +110,17 @@ _.Zones =
 						un(2, i(3747)),	-- Meditative Sash
 					},
 				}),
+				q(232,   {	-- Errand for Apothecary Zinge
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5204 },	-- Apothecary Zinge
+				}),
+				q(238,   {	-- Errand for Apothecary Zinge
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5204 },	-- Apothecary Zinge
+					["sourceQuest"] = 232,	-- Errand for Apothecary Zinge
+				}),
 				q(31037, {	-- Enemies Below
 					["provider"] = { "n", 10181 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 57.8, 91.6, 90 },

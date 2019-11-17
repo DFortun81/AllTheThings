@@ -40,6 +40,12 @@ _.Zones =
 					["coord"] = { 52.5, 54.8, 18 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(8,     {	-- A Rogue's Deal
+					["u"] = 40,
+					["lvl"] = 5,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 6784 },	-- Calvin Montague
+				}),
 				q(24979, {	-- A Scarlet Letter
 					["crs"] = { 1535 },	-- Scarlet Warrior
 					["races"] = HORDE_ONLY,

@@ -570,7 +570,7 @@ _.Zones =
 						i(65481),	-- Staff of Golden Worship
 					},
 				}),
-				q(8923, {	-- A Supernatural Device
+				q(8923,  {	-- A Supernatural Device
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuests"] = {
@@ -631,21 +631,21 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 80,
 				}),
-				q(9627, {	-- Allegiance to the Horde
+				q(9627,  {	-- Allegiance to the Horde
 					["provider"] = { "n", 14720 },	-- High Overlord Saurfang
 					["coord"] = { 48.6, 71.0, 85 },
 					["sourceQuest"] = 9626,	-- Meeting the Orcs
 					["races"] = { 10 },	-- Blood Elf
 					["lvl"] = 10,
 				}),
-				q(1431, {	-- Alliance Relations
+				q(1431,  {	-- Alliance Relations
 					["provider"] = { "n", 5639 },	-- Craven Drok
 					["coord"] = { 52.4, 44.6, 85 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["u"] = 40,
 				}),
-				q(1432, {	-- Alliance Relations
+				q(1432,  {	-- Alliance Relations
 					["provider"] = { "n", 5640 },	-- Keldran
 					["coord"] = { 22.2, 53.8, 85 },
 					["sourceQuest"] = 1431,	-- Alliance Relations
@@ -653,7 +653,7 @@ _.Zones =
 					["lvl"] = 30,
 					["u"] = 40,
 				}),
-				q(8920, {	-- An Earnest Proposition (Warrior)
+				q(8920,  {	-- An Earnest Proposition (Warrior)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
@@ -675,7 +675,7 @@ _.Zones =
 						un(2, i(22088)),	-- Soulforge Bracers
 					},
 				}),
-				q(8914, {	-- An Earnest Proposition (Hunter)
+				q(8914,  {	-- An Earnest Proposition (Hunter)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
@@ -686,7 +686,7 @@ _.Zones =
 						un(2, i(22011)),	-- Beastmaster's Bindings
 					},
 				}),
-				q(8917, {	-- An Earnest Proposition (Rogue)
+				q(8917,  {	-- An Earnest Proposition (Rogue)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
@@ -697,7 +697,7 @@ _.Zones =
 						un(2, i(22004)),	-- Darkmantle Bracers
 					},
 				}),
-				q(8916, {	-- An Earnest Proposition (Priest)
+				q(8916,  {	-- An Earnest Proposition (Priest)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
@@ -708,7 +708,7 @@ _.Zones =
 						un(2, i(22079)),	-- Virtuous Bracers
 					},
 				}),
-				q(8918, {	-- An Earnest Proposition (Shaman)
+				q(8918,  {	-- An Earnest Proposition (Shaman)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
@@ -719,7 +719,7 @@ _.Zones =
 						un(2, i(22095)),	-- Bindings of The Five Thunders
 					},
 				}),
-				q(8915, {	-- An Earnest Proposition (Mage)
+				q(8915,  {	-- An Earnest Proposition (Mage)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
@@ -730,7 +730,7 @@ _.Zones =
 						un(2, i(22063)),	-- Sorcerer's Bindings
 					},
 				}),
-				q(8919, {	-- An Earnest Proposition (Warlock)
+				q(8919,  {	-- An Earnest Proposition (Warlock)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
@@ -741,7 +741,7 @@ _.Zones =
 						un(2, i(22071)),	-- Deathmist Bracers
 					},
 				}),
-				q(8913, {	-- An Earnest Proposition (Druid)
+				q(8913,  {	-- An Earnest Proposition (Druid)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
@@ -759,7 +759,7 @@ _.Zones =
 					["classes"] = { 12 },	-- Demon Hunter
 					["lvl"] = 98,
 				}),
-				q(3504, {	-- Betrayed
+				q(3504,  {	-- Betrayed
 					["provider"] = { "n", 4485 },	-- Belgrom Rockmaul
 					["coord"] = { 75.0, 34.0, 85 },
 					["races"] = HORDE_ONLY,
@@ -786,7 +786,7 @@ _.Zones =
 						i(72045),	-- Horde Balloon
 					},
 				}),
-				q(9032, {	-- Bodley's Unfortunate Fate
+				q(9032,  {	-- Bodley's Unfortunate Fate
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuests"] = {
@@ -804,7 +804,7 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 				}),
-				q(4300, {	-- Bone-Bladed Weapons
+				q(4300,  {	-- Bone-Bladed Weapons
 					["provider"] = { "n", 8659 },	-- Jes'rimon
 					["coord"] = { 55.6, 34.2, 85 },
 					["races"] = HORDE_ONLY,
@@ -823,7 +823,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 85,
 				}),
-				q(4511, {	-- Calm Before the Storm
+				q(4511,  {	-- Calm Before the Storm
 					["provider"] = { "n", 7010 },	-- Zilzibin Drumlore
 					["coord"] = { 55.2, 55.8, 85 },
 					["sourceQuest"] = 4509,	-- Calm Before the Storm [Horde]
@@ -849,7 +849,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(6385, {	-- Doras the Wind Rider Master
+				q(6385,  {	-- Doras the Wind Rider Master
 					["provider"] = { "n", 6929 },	-- Innkeeper Gryshka
 					["coord"] = { 53.5, 78.7, 85 },
 					["sourceQuest"] = 6384,	-- Ride to Orgrimmar
@@ -885,7 +885,7 @@ _.Zones =
 					["races"] = { 9 },	-- Goblin
 					["lvl"] = 5,
 				}),
-				q(7491, {	-- For All To See
+				q(7491,  {	-- For All To See
 					["provider"] = { "n", 4949 },	-- Thrall
 					["coord"] = { 48.6, 71.0, 85 },
 					["races"] = HORDE_ONLY,
@@ -897,7 +897,7 @@ _.Zones =
 						un(2, i(18404)),	-- Onyxia Tooth Pendant
 					},
 				}),
-				q(5730, {	-- Hidden Enemies
+				q(5730,  {	-- Hidden Enemies
 					["provider"] = { "n", 3216 },	-- Neeru Fireblade
 					["coord"] = { 50.0, 60.0, 85 },
 					["races"] = HORDE_ONLY,
@@ -936,7 +936,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 60,
 				}),
-				q(8930, {	-- In Search of Anthion
+				q(8930,  {	-- In Search of Anthion
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuests"] = {
@@ -963,7 +963,7 @@ _.Zones =
 						40605,	-- Keep Your Friends Close
 					},
 				}),
-				q(3563, {	-- Jes'rimon's Payment to Jediga
+				q(3563,  {	-- Jes'rimon's Payment to Jediga
 					["provider"] = { "n", 8659 },	-- Jes'rimon
 					["coord"] = { 55.5, 34.1, 85 },
 					["sourceQuest"] = 3541,	-- Delivery to Jes'rimon
@@ -971,7 +971,7 @@ _.Zones =
 					["lvl"] = 45,
 					["u"] = 40,
 				}),
-				q(8944, {	-- Just Compensation (Warrior)
+				q(8944,  {	-- Just Compensation (Warrior)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8978,	-- Return to Mokvar
@@ -997,7 +997,7 @@ _.Zones =
 						un(2, i(22090)), 	-- Soulforge Gauntlets
 					},
 				}),
-				q(8938, {	-- Just Compensation (Hunter)
+				q(8938,  {	-- Just Compensation (Hunter)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8978,	-- Return to Mokvar
@@ -1010,7 +1010,7 @@ _.Zones =
 						un(2, i(22015)), 	-- Beastmaster's Gloves
 					},
 				}),
-				q(8941, {	-- Just Compensation (Rogue)
+				q(8941,  {	-- Just Compensation (Rogue)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8978,	-- Return to Mokvar
@@ -1023,7 +1023,7 @@ _.Zones =
 						un(2, i(22006)), 	-- Darkmantle Gloves
 					},
 				}),
-				q(8940, {	-- Just Compensation (Priest)
+				q(8940,  {	-- Just Compensation (Priest)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8978,	-- Return to Mokvar
@@ -1036,7 +1036,7 @@ _.Zones =
 						un(2, i(22081)), 	-- Virtuous Gloves
 					},
 				}),
-				q(8942, {	-- Just Compensation (Shaman)
+				q(8942,  {	-- Just Compensation (Shaman)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8978,	-- Return to Mokvar
@@ -1049,7 +1049,7 @@ _.Zones =
 						un(2, i(22099)), 	-- Gauntlets of The Five Thunders
 					},
 				}),
-				q(8939, {	-- Just Compensation (Mage)
+				q(8939,  {	-- Just Compensation (Mage)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8978,	-- Return to Mokvar
@@ -1062,7 +1062,7 @@ _.Zones =
 						un(2, i(22066)), 	-- Sorcerer's Gloves
 					},
 				}),
-				q(8943, {	-- Just Compensation (Warlock)
+				q(8943,  {	-- Just Compensation (Warlock)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8978,	-- Return to Mokvar
@@ -1075,7 +1075,7 @@ _.Zones =
 						un(2, i(22077)), 	-- Deathmist Wraps
 					},
 				}),
-				q(8927, {	-- Just Compensation (Druid)
+				q(8927,  {	-- Just Compensation (Druid)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8978,	-- Return to Mokvar
@@ -1102,7 +1102,7 @@ _.Zones =
 					["DisablePartySync"] = true,
 					["lvl"] = 20,
 				}),
-				q(32667,{	-- Learn To Ride
+				q(32667, {	-- Learn To Ride
 					["description"] = "This quest is available to Pandaren upon reaching level 20.",
 					["races"] = { 26 },	-- Pandaren
 					["isBreadcrumb"] = true,
@@ -1126,7 +1126,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 84,
 				}),
-				q(4494, {	-- March of the Silithid [Horde]
+				q(4494,  {	-- March of the Silithid [Horde]
 					["provider"] = { "n", 7010 },	-- Zilzibin Drumlore
 					["coord"] = { 55.2, 55.8, 85 },
 					["sourceQuest"] = 32,	-- Rise of the Silithid [Horde]
@@ -1144,7 +1144,7 @@ _.Zones =
 						i(65468),	-- Staff of the Arcane Path
 					},
 				}),
-				q(7667, {	-- Material Assistance
+				q(7667,  {	-- Material Assistance
 					["provider"] = { "n", 13417 },	-- Sagorne Creststrider
 					["coord"] = { 39.2, 48.4, 85 },
 					["races"] = HORDE_ONLY,
@@ -1178,7 +1178,7 @@ _.Zones =
 					["classes"] = { 11 },	-- Druid
 					["lvl"] = 50,
 				}),
-				q(2950, {	-- Nogg's Ring Redo
+				q(2950,  {	-- Nogg's Ring Redo
 					["provider"] = { "n", 3412 },	-- Nogg
 					["coord"] = { 56.7, 57.0, 85 },
 					["sourceQuest"] = 2949,	-- Return of the Ring
@@ -1223,7 +1223,7 @@ _.Zones =
 					["races"] = { 9 },	-- Goblin
 					["lvl"] = 10,
 				}),
-				q(6386, {	-- Return to Razor Hill
+				q(6386,  {	-- Return to Razor Hill
 					["provider"] = { "n", 3310 },	-- Doras
 					["coord"] = { 49.5, 59.2, 85 },
 					["sourceQuest"] = 6385,	-- Doras the Wind Rider Master
@@ -1240,7 +1240,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 84,
 				}),
-				q(3924, {	-- Samophlange Manual
+				q(3924,  {	-- Samophlange Manual
 					["provider"] = { "n", 9317 },	-- Rilli Greasygob
 					["coord"] = { 56.8, 56.4, 85 },
 					["races"] = HORDE_ONLY,
@@ -1259,7 +1259,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["lvl"] = 84,
 				}),
-				q(9013, {	-- Saving the Best for Last (Warrior)
+				q(9013,  {	-- Saving the Best for Last (Warrior)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 9015,	-- The Challenge
@@ -1285,7 +1285,7 @@ _.Zones =
 						un(2, i(22091)),	-- Soulforge Helm
 					},
 				}),
-				q(9008, {	-- Saving the Best for Last (Hunter)
+				q(9008,  {	-- Saving the Best for Last (Hunter)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
@@ -1298,7 +1298,7 @@ _.Zones =
 						un(2, i(22060)),	-- Beastmaster's Tunic
 					},
 				}),
-				q(9010, {	-- Saving the Best for Last (Rogue)
+				q(9010,  {	-- Saving the Best for Last (Rogue)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
@@ -1311,7 +1311,7 @@ _.Zones =
 						un(2, i(22009)),	-- Darkmantle Tunic
 					},
 				}),
-				q(9009, {	-- Saving the Best for Last (Priest)
+				q(9009,  {	-- Saving the Best for Last (Priest)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
@@ -1324,7 +1324,7 @@ _.Zones =
 						un(2, i(22083)),	-- Virtuous Robe
 					},
 				}),
-				q(9011, {	-- Saving the Best for Last (Shaman)
+				q(9011,  {	-- Saving the Best for Last (Shaman)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
@@ -1337,7 +1337,7 @@ _.Zones =
 						un(2, i(22102)),	-- Vest of The Five Thunders
 					},
 				}),
-				q(9014, {	-- Saving the Best for Last (Mage)
+				q(9014,  {	-- Saving the Best for Last (Mage)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
@@ -1350,7 +1350,7 @@ _.Zones =
 						un(2, i(22069)),	-- Sorcerer's Robes
 					},
 				}),
-				q(9012, {	-- Saving the Best for Last (Warlock)
+				q(9012,  {	-- Saving the Best for Last (Warlock)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
@@ -1363,7 +1363,7 @@ _.Zones =
 						un(2, i(22075)),	-- Deathmist Robe
 					},
 				}),
-				q(9007, {	-- Saving the Best for Last (Druid)
+				q(9007,  {	-- Saving the Best for Last (Druid)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
@@ -1395,7 +1395,7 @@ _.Zones =
 						i(65630),	-- Headcover of the Speaker
 					},
 				}),
-				q(1823, {	-- Speak with Ruga
+				q(1823,  {	-- Speak with Ruga
 					["provider"] = { "n", 3354 },	-- Sorek
 					["coord"] = { 80.0, 32.2, 85 },
 					["races"] = HORDE_ONLY,
@@ -1455,6 +1455,11 @@ _.Zones =
 						i(65471),	-- Greatmace of the Order
 					},
 				}),
+				q(235,   {	-- The Ashenvale Hunt
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10880 },	-- Warcaller Gorlach
+				}),
 				q(51796, {	-- The Battle for Lordaeron
 					["providers"] = {
 						{ "n", 14720 },	-- High Overlord Saurfang
@@ -1496,7 +1501,7 @@ _.Zones =
 						i(65629),	-- Facemask of the Shattered Hand
 					},
 				}),
-				q(7926, {	-- The Darkmoon Faire
+				q(7926,  {	-- The Darkmoon Faire
 					["provider"] = { "n", 55382 },	-- Darkmoon Faire Mystic Mage
 					["coord"] = { 48.0, 62.0, 85 },
 					["races"] = HORDE_ONLY,
@@ -1505,7 +1510,7 @@ _.Zones =
 						currency(515),	-- Darkmoon Prize Ticket
 					},
 				}),
-				q(8258, {	-- The Darkreaver Menace
+				q(8258,  {	-- The Darkreaver Menace
 					["provider"] = { "n", 13417 },	-- Sagorne Creststrider
 					["coord"] = { 39.2, 48.4, 85 },
 					["races"] = HORDE_ONLY,
@@ -1553,7 +1558,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 53777,	-- Where He Died
 				}),
-				q(7784, {	-- The Lord of Blackrock
+				q(7784,  {	-- The Lord of Blackrock
 					["provider"] = { "n", 14720 },	-- High Overlord Saurfang
 					["coord"] = { 48.6, 71.0, 85 },
 					["sourceQuest"] = 7783,	-- The Lord of Blackrock (Head of Nefarian)
@@ -1582,7 +1587,7 @@ _.Zones =
 						i(65626),	-- Hood of the Arcane Path
 					},
 				}),
-				q(1858, {	-- The Shattered Hand
+				q(1858,  {	-- The Shattered Hand
 					["provider"] = { "n", 6446 },	-- Therzok
 					["coord"] = { 33.4, 65.2, 85 },
 					["races"] = HORDE_ONLY,
@@ -1653,7 +1658,7 @@ _.Zones =
 						--i(63917),	-- Truthbreaker Shield [Not listed, but awards on completing quest]
 					},
 				}),
-				q(2753, {	-- Trampled Under Foot
+				q(2753,  {	-- Trampled Under Foot
 					["provider"] = { "n", 7790 },	-- Orokk Omosh
 					["coord"] = { 76.8, 37.4, 85 },
 					["sourceQuest"] = 2752,	-- On Iron Pauldrons
@@ -1663,7 +1668,7 @@ _.Zones =
 						i(7981),	-- Plans: Barbaric Iron Boots
 					},
 				}),
-				q(28475,{	-- Twilight Scheming
+				q(28475, {	-- Twilight Scheming
 					["provider"] = { "n", 45337 },	-- Tyelis
 					["coord"] = { 49.0, 71.0, 85 },
 					["sourceQuest"] = 28307,	-- Meet with Tyelis
@@ -1775,7 +1780,7 @@ _.Zones =
 					["lvl"] = 110,
 					["u"] = 40,
 				}),
-				q(7660, {	-- Wolf Swapping - Arctic Wolf
+				q(7660,  {	-- Wolf Swapping - Arctic Wolf
 					["provider"] = { "n", 3362 },	-- Ogunaro Wolfrunner
 					["coord"] = { 61.0, 35.2, 85 },
 					["races"] = HORDE_ONLY,
@@ -1786,7 +1791,7 @@ _.Zones =
 						i(18797),	-- Horn of the Swift Timber Wolf
 					},
 				}),
-				q(7661, {	-- Wolf Swapping - Red Wolf
+				q(7661,  {	-- Wolf Swapping - Red Wolf
 					["provider"] = { "n", 3362 },	-- Ogunaro Wolfrunner
 					["coord"] = { 61.0, 35.2, 85 },
 					["races"] = HORDE_ONLY,

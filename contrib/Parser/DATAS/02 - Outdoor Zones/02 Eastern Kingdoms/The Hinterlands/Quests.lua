@@ -11,6 +11,12 @@ _.Zones =
 					["coord"] = { 66.2, 44.2, 26 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(77,    {	-- A Sticky Situation
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 7801 },	-- Gilveradin Sunchaser
+					["sourceQuest"] = 650,	-- Ripple Recovery
+				}),
 				q(26523, {	-- All That Skitters (A)
 					["provider"] = { "n", 43156 },	-- Fraggar Thundermantle
 					["coord"] = { 63.7, 59.9, 26 },
@@ -371,6 +377,11 @@ _.Zones =
 						un(2, i(19115)),	-- Flask of Forest Mojo
 						un(2, i(19114)),	-- Highland Bow
 					},
+				}),
+				q(81,    {	-- Ripple Discovery
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 7801 },	-- Gilveradin Sunchaser
 				}),
 				q(2994,  {	-- Saving Sharpbeak
 					["u"] = 40,
