@@ -1507,7 +1507,6 @@ _.NeverImplemented =
 			un(1, i(13812)),	-- Ring of the Dawn
 			un(1, i(108813)),	-- Unknown
 			un(1, i(108820)),	-- Unknown
-			un(1, i(134738)),	-- cold-touched ring
 			un(1, i(108821)),	-- Unknown
 			un(1, i(109277)),	-- Unknown
 			un(1, i(141907)),	-- Arena Victory Bonus
