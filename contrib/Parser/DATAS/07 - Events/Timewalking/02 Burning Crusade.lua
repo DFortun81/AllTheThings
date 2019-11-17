@@ -56,12 +56,6 @@ _.WorldEvents =
 						i(129832, {	-- Blood Knight War Cloak
 							["cost"] = { { "c", 1166, 25 }, },	-- 25x Timewarped Badge
 						}),
-						i(171999, {	-- Coldstep Sandals
-							["cost"] = { { "c", 1166, 25 }, },	-- 25x Timewarped Badge
-						}),
-						i(171995, {	-- Coldstep Slippers
-							["cost"] = { { "c", 1166, 25 }, },	-- 25x Timewarped Badge
-						}),
 						i(129843, {	-- Corrupted Soulcloth Pantaloons
 							["cost"] = { { "c", 1166, 25 }, },	-- 25x Timewarped Badge
 						}),

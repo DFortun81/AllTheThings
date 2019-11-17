@@ -53,6 +53,12 @@ _.WorldEvents =
 						i(129881, {	-- Cat Burglar's Gripes
 							["cost"] = { { "c", 1166, 25 }, },	-- 25x Timewarped Badge
 						}),
+						i(171999, {	-- Coldstep Sandals
+							["cost"] = { { "c", 1166, 25 }, },	-- 25x Timewarped Badge
+						}),
+						i(171995, {	-- Coldstep Slippers
+							["cost"] = { { "c", 1166, 25 }, },	-- 25x Timewarped Badge
+						}),
 						i(129882, {	-- Evoker's Charm
 							["cost"] = { { "c", 1166, 25 }, },	-- 25x Timewarped Badge
 						}),
