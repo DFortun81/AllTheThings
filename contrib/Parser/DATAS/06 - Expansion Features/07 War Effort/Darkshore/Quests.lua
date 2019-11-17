@@ -21,11 +21,17 @@ _.ExpansionFeatures =
 					["sourceQuest"] = 54042,	-- Trouble in Darkshore
 					["races"] = HORDE_ONLY,
 				}),
-				q(54878, {	-- Buzzkill
+				q(54878, {	-- Buzzkill (A)
 					["provider"] = { "n", 149631 },	-- Wizbang Cranktoggle
 					["lvl"] = 120,
 					["coord"] = { 46.3, 35.1, 62 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(54845, {	-- Bullkill (H)
+					["lvl"] = 120,
+					["coord"] = { 46.4, 35.0, 62 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 149412 },	-- Zarvik Blastwix
 				}),
 				q(54043, {	-- Dark Ranger Round-Up
 					["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
@@ -56,11 +62,17 @@ _.ExpansionFeatures =
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
 				}),
-				q(54876, {	-- Tapping the Breach
+				q(54876, {	-- Tapping the Breach (A)
 					["provider"] = { "n", 149624 },	-- Thisalee Crow
 					["lvl"] = 120,
 					["coord"] = { 46.4, 36.6, 62 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(54844, {	-- Tapping the Breach (H)
+					["lvl"] = 120,
+					["coord"] = { 47.8, 36.2, 62 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 149411 },	-- Dark Ranger Velonara
 				}),
 				q(54049, {	-- The Dead of Night
 					["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
