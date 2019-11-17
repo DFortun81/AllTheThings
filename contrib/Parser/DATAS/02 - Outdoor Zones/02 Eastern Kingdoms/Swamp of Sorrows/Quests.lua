@@ -63,6 +63,11 @@ _.Zones =
 						i(64617),	-- Larry's Boots
 					},
 				}),
+				q(625,   {	-- Cortellos' Riddle
+					["u"] = 40,
+					["provider"] = { "o", 2553 },	-- A Soggy Scroll
+					["sourceQuest"] = 624,	-- Cortello's Riddle
+				}),
 				q(27597, {	-- Crazy Larry
 					["provider"] = { "n", 45786 },	-- Trade Baron Silversnap
 					["coord"] = { 73.1, 14.9, 51 },
@@ -151,6 +156,17 @@ _.Zones =
 					["provider"] = { "n", 45948 },	-- Crazy Larry
 					["coord"] = { 84.0, 40.1, 51 },
 					["sourceQuest"] = 27597,	-- Crazy Larry
+				}),
+				q(698,   {	-- Lack of Surplus
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5591 },	-- Dar
+				}),
+				q(699,   {	-- Lack of Surplus
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5592 },	-- Tok'Kar
+					["sourceQuest"] = 698,	-- Lack of Surplus
 				}),
 				q(27910, {	-- Last Regrets
 					["provider"] = { "n", 47041 },	-- Neeka Bloodscar

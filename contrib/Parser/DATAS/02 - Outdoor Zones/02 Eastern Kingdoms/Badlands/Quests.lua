@@ -89,6 +89,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
 				}),
+				q(703,   {	-- Barbequed Buzzard Wings
+					["u"] = 40,
+					["provider"] = { "n", 2817 },	-- Rigglefuz
+					["g"] = {
+						i(4609),	-- Recipe: Barbequed Buzzard Wing -- NOTE: item is still available
+					},
+				}),
 				q(4983,  {	-- Bijou's Reconnaissance Report (may only have been both factions)
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -103,15 +110,26 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27789 },	-- Troggish Troubles
 				}),
+				q(782,   {	-- Broken Alliances
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1068 },	-- Gorn
+				}),
 				q(793,   {	-- Broken Alliances
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1068 },	-- Gorn
+					["sourceQuest"] = 782,	-- Broken Alliances
 					["g"] = {
 						un(2, i(11193)),	-- Blazewind Breastplate
 						un(2, i(11196)),	-- Mindburst Medallion
 						un(2, i(11194)),	-- Prismscale Hauberk
 						un(2, i(11195)),	-- Warforged Chestplate
 					},
+				}),
+				q(713,   {	-- Coolant Heads Prevail
+					["u"] = 40,
+					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
 				}),
 				q(27930, {	-- Devastation
 					["coord"] = { 15.9, 33.2, 15 },
@@ -174,6 +192,11 @@ _.Zones =
 					["coord"] = { 18.9, 42.8, 15 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27890 },	-- The Bad Dogs
+				}),
+				q(714,   {	-- Gyro... What?
+					["u"] = 40,
+					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
+					["sourceQuest"] = 713,	-- Coolant Heads Prevail
 				}),
 				q(27833, {	-- Half-Ton Holdouts
 					["provider"] = { "n", 46972 },	-- Terrance Storm
@@ -380,6 +403,20 @@ _.Zones =
 						un(2, i(4979)),	-- Enchanted Stonecloth Bracers
 					},
 				}),
+				q(710,   {	-- Study of the Elements: Rock
+					["u"] = 40,
+					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
+				}),
+				q(711,   {	-- Study of the Elements: Rock
+					["u"] = 40,
+					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
+					["sourceQuest"] = 710,	-- Study of the Elements: Rock
+				}),
+				q(712,   {	-- Study of the Elements: Rock
+					["u"] = 40,
+					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
+					["sourceQuest"] = 711,	-- Study of the Elements: Rock
+				}),
 				q(27825, {	-- Survival of the Fattest
 					["provider"] = { "n", 46930 },	-- Victoria Delen
 					["coord"] = { 20.8, 55.7, 15 },
@@ -450,6 +487,11 @@ _.Zones =
 					["coord"] = { 18.1, 42.5, 15 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27896 },	-- The Sorrow and the Fury
+				}),
+				q(692,   {	-- The Lost Fragments
+					["u"] = 40,
+					["provider"] = { "n", 2785 },	-- Theldurin the Lost
+					["sourceQuest"] = 687,	-- Theldurin the Lost
 				}),
 				q(1139,  {	-- The Lost Tablets of Will
 					["u"] = 40,
@@ -624,8 +666,23 @@ _.Zones =
 						i(63160),	-- Boots of Duress
 					},
 				}),
+				q(734,   {	-- This Is Going to Be Hard
+					["u"] = 40,
+					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
+					["sourceQuests"] = {
+						714,	-- Gyro... What?
+						712,	-- Study of the Elements: Rock
+					},
+				}),
+				q(777,   {	-- This Is Going to Be Hard
+					["u"] = 40,
+					["provider"] = { "n", 2920 },	-- Lucien Tosselwrench
+					["sourceQuest"] = 734,	-- This Is Going to Be Hard
+				}),
 				q(778,   {	-- This Is Going to Be Hard
 					["u"] = 40,
+					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
+					["sourceQuest"] = 777,	-- This Is Going to Be Hard
 					["g"] = {
 						un(2, i(2820)),	-- Nifty Stopwatch
 					},

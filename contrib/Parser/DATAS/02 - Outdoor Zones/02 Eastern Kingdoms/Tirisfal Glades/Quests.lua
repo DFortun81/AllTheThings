@@ -416,6 +416,18 @@ _.Zones =
 					["sourceQuest"] = 6321,	-- Supplying Brill
 					["races"] = { 5 },	-- Undead
 				}),
+				q(838,   {	-- Scholomance
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10837 },	-- High Executor Derrington
+					["sourceQuest"] = 5098,	-- All Along the Watchtowers
+				}),
+				q(964,   {	-- Skeletal Fragments
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11057 },	-- Apothecary Dithers
+					["sourceQuest"] = 838,	-- Scholomance
+				}),
 				q(355,   {	-- Speak with Sevren
 					["u"] = 40,
 					["races"] = HORDE_ONLY,

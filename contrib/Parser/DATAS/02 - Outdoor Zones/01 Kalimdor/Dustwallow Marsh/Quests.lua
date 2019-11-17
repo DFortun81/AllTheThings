@@ -194,6 +194,11 @@ _.Zones =
 						i(131666),	-- Marshwarden's Vest
 					},
 				}),
+				q(626,   {	-- Cortello's Riddle
+					["u"] = 40,
+					["provider"] = { "o", 2555 },	-- Musty Scroll
+					["sourceQuest"] = 625,	-- Cortello's Riddle
+				}),
 				q(27286, {	-- Daelin's Men
 					["provider"] = { "n", 4948 },	-- Adjutant Tesoran
 					["coord"] = { 67.9, 48.1, 70 },

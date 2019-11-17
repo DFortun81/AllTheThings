@@ -399,6 +399,11 @@ _.Zones =
 					["races"] = { 6 },	-- Tauren
 					["lvl"] = 4,
 				}),
+				q(742,   {	-- The Ashenvale Hunt
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10881 },	-- Bluff Runner Windstrider
+				}),
 				q(27280, {	-- The Earthbreaker Calls
 					["provider"] = { "n", 51639 },	-- Kador Cloudsong
 					["coord"] = { 22.2, 19.0, 88 },	-- Kador Cloudsong (Thunder Bluff)
@@ -406,6 +411,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 7 },	-- Shaman
 					["lvl"] = 20,
+				}),
+				q(1000,   {	-- The New Frontier
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10881 },	-- Bluff Runner Windstrider
 				}),
 				q(2440, {	-- The Platinum Discs
 					["provider"] = { "n", 3978 },	-- Sage Truthseeker

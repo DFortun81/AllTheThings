@@ -858,6 +858,10 @@ _.Zones =
 						un(2, i(20641)),	-- Southsea Mojo Boots
 					},
 				}),
+				q(654,   {	-- Tanaris Field Sampling
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+				}),
 				q(25063, {	-- Terrapination
 					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
 					["coord"] = { 49.9, 82.8, 71 },

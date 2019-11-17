@@ -218,6 +218,10 @@ _.Zones =
 					["coord"] = { 55.7, 60.5, 78 },
 					["isBreadcrumb"] = true,
 				}),
+				q(974,   {	-- Finding the Source
+					["u"] = 40,
+					["provider"] = { "n", 10302 },	-- Krakle
+				}),
 				q(24742, {	-- Finding the Source
 					["provider"] = { "n", 10302 },	-- Krakle
 					["coord"] = { 55.3, 62.4, 78 },
@@ -513,6 +517,11 @@ _.Zones =
 						i(53584),	-- Beastkiller
 						i(156995),	-- Beastflayer
 					},
+				}),
+				q(980,   {	-- The New Springs
+					["u"] = 40,
+					["provider"] = { "n", 10302 },	-- Krakle
+					["sourceQuest"] = 974,	-- Finding the Source
 				}),
 				q(24722, {	-- The Northern Pylon
 					["provider"] = { "n", 38275 },	-- Gremix

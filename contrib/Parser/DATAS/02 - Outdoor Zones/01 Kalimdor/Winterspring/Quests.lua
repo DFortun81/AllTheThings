@@ -94,6 +94,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 5054,	-- Ursius of the Shardtooth
 				}),
+				q(975,   {	-- Cache of Mau'ari
+					["u"] = 40,
+					["provider"] = { "n", 10307 },	-- Witch Doctor Mau'ari
+					["sourceQuest"] = 969,	-- Luck Be With You
+				}),
 				q(28516, {	-- Centuries of Suffering
 					["u"] = 40,
 				}),
@@ -269,6 +274,10 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 10918 },	-- Lorax
 					["requireSkill"] = 164,	-- Blacksmithing
+				}),
+				q(969,   {	-- Luck Be With You
+					["u"] = 40,
+					["provider"] = { "n", 10307 },	-- Witch Doctor Mau'ari
 				}),
 				q(28839, {	-- Magic Prehistoric
 					["coord"] = { 57.1, 75.4, 83 },

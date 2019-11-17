@@ -612,6 +612,12 @@ _.Zones =
 						i(65474),	-- Greatsword of the Sunwalker
 					},
 				}),
+				q(809,   {	-- Ak'Zeloth
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3216 },	-- Neeru Fireblade
+					["sourceQuest"] = 829,	-- Neeru Fireblade
+				}),
 				q(25264, {	-- Ak'Zeloth
 					["provider"] = { "n", 3216 },	-- Arnak Fireblade
 					["coord"] = { 58.5, 53.6, 85 },
@@ -751,6 +757,11 @@ _.Zones =
 					["g"] = {
 						un(2, i(22108)),	-- Feralheart Bracers
 					},
+				}),
+				q(936,   {	-- Assisting Arch Druid Runetotem
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 6929 },	-- Innkeeper Gryshka
 				}),
 				q(40976, {	-- Audience with the Warchief
 					["provider"] = { "n", 97296 },	-- Archmage Khadgar
@@ -1239,6 +1250,17 @@ _.Zones =
 					["sourceQuest"] = 26830,	-- Traitor's Bait
 					["races"] = HORDE_ONLY,
 					["lvl"] = 84,
+				}),
+				q(649,   {	-- Ripple Recovery
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 6986 },	-- Dran Droffers
+				}),
+				q(650,   {	-- Ripple Recovery
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 6987 },	-- Malton Droffers
+					["sourceQuest"] = 649,	-- Ripple Recovery
 				}),
 				q(3924,  {	-- Samophlange Manual
 					["provider"] = { "n", 9317 },	-- Rilli Greasygob

@@ -34,14 +34,32 @@ _.Zones =
 						i(131470),	-- Refuge Cinch
 					},
 				}),
+				q(652,   {	-- Breaking the Keystone
+					["u"] = 40,
+					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
+					["sourceQuest"] = 651,	-- Stones of Binding
+				}),
 				q(26042, {	-- Breaking the Keystone
 					["coord"] = { 30.0, 59.0, 14 },
 					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
 					["sourceQuest"] = 26041,	-- Stones of Binding
 				}),
+				q(677,   {	-- Call to Arms
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2771 },	-- Drum Fel
+				}),
+				q(678,   {	-- Call to Arms
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2771 },	-- Drum Fel
+					["sourceQuest"] = 677,	-- Call to Arms
+				}),
 				q(679,   {	-- Call to Arms
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2771 },	-- Drum Fel
+					["sourceQuest"] = 678,	-- Call to Arms
 					["g"] = {
 						un(2, i(9520)),	-- Silent Hunter
 						un(2, i(9521)),	-- Skullsplitter
@@ -147,9 +165,16 @@ _.Zones =
 						i(131487),	-- Stromgarde Greaves
 					},
 				}),
+				q(671,   {	-- Foul Magics
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2706 },	-- Tor'gan
+				}),
 				q(673,   {	-- Foul Magics
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2706 },	-- Tor'gan
+					["sourceQuest"] = 671,	-- Foul Magics
 					["g"] = {
 						un(2, i(4545)),	-- Radiant Silver Bracers
 						un(2, i(4543)),	-- White Drakeskin Cap
@@ -158,6 +183,24 @@ _.Zones =
 				q(26050, {	-- Goggle Boggle
 					["provider"] = { "n", 2768 },	-- Professor Phizzlethorpe
 					["coord"] = { 27.5, 83.0, 14 },
+				}),
+				q(701,   {	-- Guile of the Raptor
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2706 },	-- Tor'gan
+					["sourceQuest"] = 675,	-- Raising Spirits
+				}),
+				q(702,   {	-- Guile of the Raptor
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2706 },	-- Tor'gan
+					["sourceQuest"] = 701,	-- Guile of the Raptor
+				}),
+				q(847,   {	-- Guile of the Raptor
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2792 },	-- Gor'mul
+					["sourceQuest"] = 702,	-- Guile of the Raptor
 				}),
 				q(26108, {	-- Guile of the Raptor
 					["provider"] = { "n", 42130 },	-- Gor'mul
@@ -171,6 +214,11 @@ _.Zones =
 						i(156947),	-- Hammerfall Cudgel
 						i(156960),	-- Hammerfall Gavel
 					},
+				}),
+				q(655,   {	-- Hammerfall
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2792 },	-- Gor'mul
 				}),
 				q(26084, {	-- Hammerfall
 					["provider"] = { "n", 41949 },	-- Dark Ranger Alina
@@ -219,6 +267,18 @@ _.Zones =
 						un(2, i(15104)),	-- Wingborne Boots
 					},
 				}),
+				q(653,   {	-- Myzrael's Allies (A)
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 2688 },	-- Keystone
+					["sourceQuest"] = 652,	-- Breaking the Keystone
+				}),
+				q(688,   {	-- Myzrael's Allies (H)
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 2688 },	-- Keystone
+					["sourceQuest"] = 652,	-- Breaking the Keystone
+				}),
 				q(26346, {	-- Myzrael's Tale (A)
 					["coord"] = { 30.0, 58.9, 14 },
 					["races"] = ALLIANCE_ONLY,
@@ -256,6 +316,24 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26110,	-- Just Like Old Times
 				}),
+				q(672,   {	-- Raising Spirits
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2706 },	-- Tor'gan
+					["sourceQuest"] = 655,	-- Hammerfall
+				}),
+				q(674,   {	-- Raising Spirits
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2706 },	-- Tor'gan
+					["sourceQuest"] = 672,	-- Raising Spirits
+				}),
+				q(675,   {	-- Raising Spirits
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2792 },	-- Gor'mul
+					["sourceQuest"] = 674,	-- Raising Spirits
+				}),
 				q(26107, {	-- Raising Spirits
 					["provider"] = { "n", 42130 },	-- Gor'mul
 					["coord"] = { 67.7, 34.7, 14 },
@@ -278,11 +356,23 @@ _.Zones =
 					["coord"] = { 40.3, 49.1, 14 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(643,   {	-- Sigil of Arathor
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2703 },	-- Zengu
+					["sourceQuest"] = 641,	-- Sigil of Thoradin
+				}),
 				q(26032, {	-- Sigil of Arathor
 					["provider"] = { "n", 41944 },	-- Galen Trollbane
 					["coord"] = { 12.9, 36.1, 14 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26031,	-- Sigil of Thoradin
+				}),
+				q(639,   {	-- Sigil of Strom
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2703 },	-- Zengu
+					["sourceQuest"] = 638,	-- Trollbane
 				}),
 				q(26030, {	-- Sigil of Strom
 					["provider"] = { "n", 41944 },	-- Galen Trollbane
@@ -290,16 +380,33 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26023,	-- The Forsaken Trollbane
 				}),
+				q(641,   {	-- Sigil of Thoradin
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2706 },	-- Tor'gan
+					["sourceQuest"] = 640,	-- The Broken Sigil
+				}),
 				q(26031, {	-- Sigil of Thoradin
 					["provider"] = { "n", 41944 },	-- Galen Trollbane
 					["coord"] = { 12.9, 36.1, 14 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26030,	-- Sigil of Strom
 				}),
+				q(644,   {	-- Sigil of Trollbane
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2703 },	-- Zengu
+					["sourceQuest"] = 643,	-- Sigil of Arathor
+				}),
 				q(26052, {	-- Speak to Shakes
 					["provider"] = { "n", 2774 },	-- Doctor Draxlegauge
 					["coord"] = { 27.5, 82.9, 14 },
 					["sourceQuest"] = 26051,	-- Sunken Treasure
+				}),
+				q(651,   {	-- Stones of Binding
+					["u"] = 40,
+					["provider"] = { "o", 2701 },	-- Iridescent Shards
+					["sourceQuest"] = 642,	-- The Princess Trapped
 				}),
 				q(26041, {	-- Stones of Binding
 					["coord"] = { 79.8, 31.6, 14 },
@@ -371,6 +478,12 @@ _.Zones =
 					["provider"] = { "n", 15021 },	-- Deathmaster Dwire
 					["races"] = HORDE_ONLY,
 				}),
+				q(640,   {	-- The Broken Sigil
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2703 },	-- Zengu
+					["sourceQuest"] = 639,	-- Sigil of Strom
+				}),
 				q(26023, {	-- The Forsaken Trollbane
 					["provider"] = { "n", 41949 },	-- Dark Ranger Alina
 					["coord"] = { 13.3, 35.9, 14 },
@@ -381,6 +494,10 @@ _.Zones =
 					["provider"] = { "n", 108042 },	-- Thassarian
 					["lvl"] = 100,
 					["classes"] = { 6 },	-- Death Knight
+				}),
+				q(642,   {	-- The Princess Trapped
+					["u"] = 40,
+					["provider"] = { "o", 138492 },	-- Shards of Myzrael
 				}),
 				q(26039, {	-- The Princess Trapped
 					["coord"] = { 57.2, 34.5, 14 },
@@ -458,6 +575,17 @@ _.Zones =
 						i(131466),	-- Highland Chain Greaves
 					},
 				}),
+				q(687,   {	-- Theldurin the Lost
+					["u"] = 40,
+					["providers"] = {
+						{ "n", 2786 },	-- Gerrig Bonegrip
+						{ "n", 2787 },	-- Zaruk
+					},
+					["sourceQuests"] = {
+						653,	-- Myzrael's Allies (A)
+						688,	-- Myzrael's Allies (H)
+					},
+				}),
 				q(26428, {	-- To Steal From Thieves
 					["provider"] = { "n", 4486 },	-- Genavie Callow
 					["coord"] = { 13.7, 33.9, 14 },
@@ -486,8 +614,17 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = 40,
 				}),
+				q(645,   {	-- Trol'kalar
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2703 },	-- Zengu
+					["sourceQuest"] = 644,	-- Sigil of Trollbane
+				}),
 				q(646,   {	-- Trol'kalar
 					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 2703 },	-- Trollbane's Tomb
+					["sourceQuest"] = 645,	-- Trol'kalar
 					["g"] = {
 						un(2, i(4508)),	-- Blood-Tinged Armor
 						un(2, i(4507)),	-- Pit Fighter's Shield
