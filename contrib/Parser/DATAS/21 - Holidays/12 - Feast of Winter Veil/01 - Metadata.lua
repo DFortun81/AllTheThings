@@ -3,14 +3,13 @@
 --------------------------------------------
 _.Holidays = bubbleDown({["u"] = 29}, 
 {
-	{	-- Feast of Winter Veil
-		["holidayID"] = 235485,	-- Feast of Winter Veil
-		["u"] = 29,				-- Feast of Winter Veil Filter
+	holiday(235485, {	-- Feast of Winter Veil
+		["u"] = 29,	-- Feast of Winter Veil
 		["icon"] = "Interface\\Addons\\AllTheThings\\assets\\winter_veil",
 		["maps"] = {
 			87,	-- Ironforge
 			85,	-- Orgrimmar
 			86,	-- Orgrimmar: The Drag
 		},
-	},
+	}),
 });

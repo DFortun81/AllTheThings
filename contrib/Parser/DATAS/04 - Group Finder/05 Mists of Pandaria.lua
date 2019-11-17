@@ -264,7 +264,6 @@ _.GroupFinder =
 				i(89493),	-- Brewmoon Cowl
 				i(89494),	-- Brewmoon Handwraps
 				i(89495),	-- Brewmoon Leggings
-				i(89509),	-- Brewmoon Necklace
 				i(89496),	-- Brewmoon Robe
 				i(89497),	-- Brewmoon Sandals
 				i(89498),	-- Brewmoon Shoulderpads
@@ -278,7 +277,6 @@ _.GroupFinder =
 				i(92874),	-- Bubblebrew Robe
 				i(92875),	-- Bubblebrew Sandals
 				i(92876),	-- Bubblebrew Shoulderpads
-				i(92885),	-- Bubblebrew Signet
 				i(92877),	-- Bubblebrew Wristwraps
 				i(92869),	-- Cordwoven Cord
 				i(92868),	-- Cordwoven Cowl
