@@ -244,6 +244,11 @@ _.NeverImplemented =
 		q(14114),	-- Kezan - The New You tracking event. Triggers after you complete "The New You"
 		q(14139),	-- Kezan - Phase 1 complete. Triggers after turning in "Do it Yourself"
 		q(14158),	-- Kezan - Phase 6 complete. Triggers when quest "447" becomes available
+		q(26705),	-- Lost Isles - It's a Town-In-A-Box tracking event. Triggers when you use the plunger to spawn the town
+		q(26902),	-- Lost Isles - Get Back to Town accepted tracking flag. Triggers the attack on town-in-a-box
+		q(28846),	-- Lost Isles - Repel the Paratroopers accepted tracking flag
+		q(25226),	-- Lost Isles - Kill Chip Endale tracking flag
+		q(25245),	-- Lost Isles - Kill Candy Cane tracking flag
 		
 		-------------------
 		--      MOP      --
