@@ -86,10 +86,7 @@ _.Zones =
 				q(9603,  {	-- Beds, Bandages, and Beyond
 					["provider"] = { "n", 16553 },	-- Caregiver Chellan
 					["coord"] = { 48.3, 49.1, 97 },
-					["races"] = {
-						11,	-- Draenei
-						30,	-- Lightforged Draenei
-					},
+					["races"] = { 11 },	-- Draenei
 				}),
 				q(10350, {	-- Behomat
 					["provider"] = { "n", 17480 },	-- Ruada
@@ -213,10 +210,7 @@ _.Zones =
 					["provider"] = { "n", 43991 },	-- Zaldaan
 					["coord"] = { 49.7, 49.1, 97 },
 					["sourceQuest"] = 9603,	-- Beds, Bandages, and Beyond
-					["races"] = {
-						11,	-- Draenei
-						30,	-- Lightforged Draenei
-					},
+					["races"] = { 11 },	-- Draenei
 				}),
 				q(9523,  {	-- Precious and Fragile Things Need Special Handling
 					["provider"] = { "n", 17242 },	-- Archaeologist Adamant Ironheart
