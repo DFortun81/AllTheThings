@@ -85,6 +85,14 @@ _.Zones =
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 50,	
 				}),
+				q(28285, {	-- Meet with High Priestess Laurena
+					["provider"] = { "n", 16756 },	-- Caedmos (The Exodar)
+					["coord"] = { 33.0, 65.4, 103 },	-- Caedmos (The Exodar)
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 5 },	-- Priest
+					["lvl"] = 50,
+				}),
 				q(28268, {	-- Meet with Lord Grayson Shadowbreaker
 					["provider"] = { "n", 16761 },	-- Baatun (The Exodar)
 					["coord"] = { 39.0, 84.2, 103 },	-- Baatun (The Exodar)
