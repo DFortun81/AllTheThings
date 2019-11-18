@@ -80,6 +80,12 @@ _.Zones =
 						["classes"] = { 8 },	-- Mage
 						["races"] = { 5 },	-- Undead
 					}),
+					q(6395, {	-- Marla's Last Wish
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 1661 },	-- Novice Elreth
+						["sourceQuest"] = 376,	-- The Damned
+					}),
 					q(380,   {	-- Night Web's Hollow
 						["u"] = 40,
 						["races"] = HORDE_ONLY,

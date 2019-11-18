@@ -908,12 +908,36 @@ _.Zones =
 						un(2, i(18404)),	-- Onyxia Tooth Pendant
 					},
 				}),
+				q(5726, {	-- Hidden Enemies
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4949 },	-- Thrall
+				}),
+				q(5727, {	-- Hidden Enemies
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4949 },	-- Thrall
+					["sourceQuest"] = 5726,	-- Hidden Enemies
+				}),
+				q(5728, {	-- Hidden Enemies
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4949 },	-- Thrall
+					["sourceQuest"] = 5727,	-- Hidden Enemies
+				}),
+				q(5729, {	-- Hidden Enemies
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4949 },	-- Thrall
+					["sourceQuest"] = 5728,	-- Hidden Enemies
+				}),
 				q(5730,  {	-- Hidden Enemies
-					["provider"] = { "n", 3216 },	-- Neeru Fireblade
+					["u"] = 40,
+					["lvl"] = 9,
 					["coord"] = { 50.0, 60.0, 85 },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 9,
-					["u"] = 40,
+					["provider"] = { "n", 3216 },	-- Neeru Fireblade
+					["sourceQuest"] = 5729,	-- Hidden Enemies
 					["g"] = {
 						un(2, i(15424)),	-- Axe of Orgrimmar
 						un(2, i(15445)),	-- Hammer of Orgrimmar
@@ -1439,6 +1463,11 @@ _.Zones =
 						i(65630),	-- Headcover of the Speaker
 					},
 				}),
+				q(5761, {	-- Slaying the Beast
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3216 },	-- Neeru Fireblade
+				}),
 				q(1823,  {	-- Speak with Ruga
 					["provider"] = { "n", 3354 },	-- Sorek
 					["coord"] = { 80.0, 32.2, 85 },
@@ -1641,6 +1670,12 @@ _.Zones =
 					["g"] = {
 						i(65626),	-- Hood of the Arcane Path
 					},
+				}),
+				q(4003, {	-- The Royal Rescue
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4949 },	-- Thrall
+					["sourceQuest"] = 4002,	-- The Eastern Kingdoms
 				}),
 				q(1858,  {	-- The Shattered Hand
 					["provider"] = { "n", 6446 },	-- Therzok

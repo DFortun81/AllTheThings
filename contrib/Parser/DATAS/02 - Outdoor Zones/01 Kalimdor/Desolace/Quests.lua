@@ -134,6 +134,11 @@ _.Zones =
 						i(131344), 	-- Kodo Lead Chain
 					},
 				}),
+				q(5386, {	-- Catch of the Day
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11259 },	-- Nataka Longhorn
+				}),
 				q(14316, {	-- Cenarion Property
 					["provider"] = { "n", 36052 },	-- Garren Darkwind
 					["coord"] = { 58.4, 49.8, 66 },
@@ -405,6 +410,11 @@ _.Zones =
 					["provider"] = { "n", 35757 },	-- Bizby
 					["coord"] = { 60.9, 29.0, 66 },
 				}),
+				q(5381, {	-- Hand of Iruxos
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11624 },	-- Taiga Wisemane
+				}),
 				q(14254, {	-- Heavy Metal
 					["model"] = 253308,
 					["coord"] = { 69.2, 21.3, 66 },
@@ -418,6 +428,11 @@ _.Zones =
 						14373,	-- Infernal Encroachment
 						14374,	-- Portals of the Legion
 					},
+				}),
+				q(5763, {	-- Hunting in Stranglethorn
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11877 },	-- Roon Wildmane
 				}),
 				q(14373, {	-- Infernal Encroachment
 					["provider"] = { "n", 36329 },	-- Thargad
@@ -686,6 +701,10 @@ _.Zones =
 					["provider"] = { "o", 195497 },	-- Elune's Brazier
 					["repeatable"] = true,
 					["sourceQuest"] = 14213,	-- Ten Pounds of Flesh
+				}),
+				q(5741, {	-- Sceptre of Light
+					["u"] = 40,
+					["provider"] = { "n", 11863 },	-- Azore Aldamort
 				}),
 				q(14337, {	-- Shadowprey Village
 					["provider"] = { "n", 36034 },	-- Karnum Marshweaver

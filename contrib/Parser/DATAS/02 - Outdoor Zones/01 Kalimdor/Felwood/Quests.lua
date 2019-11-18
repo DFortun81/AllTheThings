@@ -32,10 +32,27 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28372,	-- Back in Business
 				}),
+				q(6162, {	-- A Husband's Last Battle
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9620 },	-- Dreka'Sur
+				}),
 				q(28207, {	-- A Slimy Situation
 					["provider"] = { "n", 47696 },	-- Kelnir Leafsong
 					["coord"] = { 41.2, 49.9, 77 },
 					["sourceQuest"] = 28305,	-- The Fate of Bloodvenom Post
+				}),
+				q(5202, {	-- A Strange Red Key
+					["u"] = 40,
+					["provider"] = { "i", 13140 },	-- Blood Red Key
+					["crs"] = {
+						7118,	-- Jaedenar Darkweaver
+						7114,	-- Jaedenar Enforcer
+						9862,	-- Jaedenar Legionnaire
+						7120,	-- Jaedenar Warlock
+						14523,	-- Ulathek
+						14522,	-- Ur'dan
+					},
 				}),
 				q(28100, {	-- A Talking Totem
 					["provider"] = { "n", 11554 },	-- Grazle
@@ -121,6 +138,11 @@ _.Zones =
 					["coord"] = { 48.6, 25.1, 77 },
 					["sourceQuest"] = 28229,	-- Nature and Nurture
 				}),
+				q(4102, {	-- Cleansing Felwood
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9529 },	-- Maybess Riverbreeze
+				}),
 				q(28214, {	-- Cleanup at Bloodvenom Post
 					["provider"] = { "n", 47692 },	-- Altsoba Ragetotem
 					["coord"] = { 41.2, 49.9, 77 },
@@ -139,6 +161,12 @@ _.Zones =
 					["provider"] = { "o", 164888 },	-- Corrupted Whipper Root
 					["repeatable"] = true,
 					["sourceQuest"] = 4119,	-- Corrupted Night Dragon
+				}),
+				q(4506, {	-- Corrupted Sabers
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9996 },	-- Winna Hazzard
+					["sourceQuest"] = 4505,	-- Well of Corruption
 				}),
 				q(2523,  {	-- Corrupted Songflower
 					["u"] = 40,
@@ -242,6 +270,11 @@ _.Zones =
 						27997,	-- The Corruption of the Jadefire
 					},
 				}),
+				q(5165, {	-- Dousing the Flames of Protection
+					["u"] = 40,
+					["provider"] = { "n", 10922 },	-- Greta Mosshoof
+					["sourceQuest"] = 5159,	-- Cleansed Water Returns to Felwood
+				}),
 				q(28126, {	-- Dousing the Flames of Protection
 					["provider"] = { "n", 51664 },	-- Andalar Shadevale
 					["coord"] = { 36.3, 58.2, 77 },
@@ -288,6 +321,10 @@ _.Zones =
 						i(65352),  	-- Drilldozer Band
 					},
 				}),
+				q(5155, {	-- Forces of Jaedenar
+					["u"] = 40,
+					["provider"] = { "n", 10922 },	-- Greta Mosshoof
+				}),
 				q(28121, {	-- Forces of Jaedenar
 					["provider"] = { "n", 11019 },	-- Jessir Moonbow
 					["coord"] = { 44.0, 61.9, 77 },
@@ -300,10 +337,16 @@ _.Zones =
 						un(2, i(11875)),	-- Breezecloud Bracers
 					},
 				}),
+				q(4882, {	-- Guarding Secrets
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 12558 },	-- Blue-feathered Necklace
+				}),
 				q(4883,  {	-- Guarding Secrets
 					["u"] = 40,
-					["provider"] = { "n", 10306 },	-- Trull Failbane
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10306 },	-- Trull Failbane
+					["sourceQuest"] = 4882,	-- Guarding Secrets
 					["g"] = {
 						un(2, i(15796)),	-- Seaspray Bracers
 						un(2, i(15797)),	-- Shining Armplates
@@ -453,6 +496,16 @@ _.Zones =
 						i(65311),  	-- Denmother's Cloak
 						i(65330),  	-- Token of the Bond
 					},
+				}),
+				q(5203, {	-- Rescue From Jaedenar
+					["u"] = 40,
+					["provider"] = { "n", 11016 },	-- Captured Arko'narin
+					["sourceQuest"] = 5202,	-- A Strange Red Key
+				}),
+				q(5204, {	-- Retribution of the Light
+					["u"] = 40,
+					["provider"] = { "n", 11019 },	-- Jessir Moonbow
+					["sourceQuest"] = 5203,	-- Rescue From Jaedenar
 				}),
 				q(28360, {	-- Running Their Course
 					["provider"] = { "n", 48459 },	-- Tender Puregrove
@@ -604,6 +657,11 @@ _.Zones =
 					["coord"] = { 48.6, 25.1, 77 },
 					["sourceQuest"] = 28229,	-- Nature and Nurture
 				}),
+				q(5158, {	-- Seeking Spiritual Aid
+					["u"] = 40,
+					["provider"] = { "n", 10922 },	-- Greta Mosshoof
+					["sourceQuest"] = 5157,	-- Collection of the Corrupt Water
+				}),
 				q(28153, {	-- Shadow Lord Fel'dan
 					["sourceQuest"] = 28131,	-- Twin Temptresses
 				}),
@@ -754,6 +812,11 @@ _.Zones =
 					["coord"] = { 45.5, 20.1, 77 },
 					["sourceQuest"] = 28218,	-- A Destiny of Flame and Shadow
 				}),
+				q(4120, {	-- The Strength of Corruption
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 7776 },	-- Talo Thornhoof
+				}),
 				q(28190, {	-- The Tainted Ooze
 					["provider"] = { "n", 47692 },	-- Altsoba Ragetotem
 					["coord"] = { 41.2, 49.9, 77 },
@@ -793,6 +856,10 @@ _.Zones =
 				q(28131, {	-- Twin Temptresses
 					["sourceQuest"] = 28129,	-- The Demon Prince
 				}),
+				q(5156, {	-- Verifying the Corruption
+					["u"] = 40,
+					["provider"] = { "n", 10921 },	-- Taronn Redfeather
+				}),
 				q(28217, {	-- Wanted: The Demon Hunter
 					["provider"] = { "n", 47843 },	-- Huntress Selura
 					["coord"] = { 43.4, 28.1, 77 },
@@ -812,6 +879,12 @@ _.Zones =
 						i(65340),	-- Thornward Greaves
 					},
 				}),
+				q(4505,  {	-- Well of Corruption
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9996 },	-- Winna Hazzard
+					["sourceQuest"] = 6605,	-- A Strange One
+				}),
 				q(28306, {	-- Whisperwind Grove
 					["provider"] = { "n", 47696 },	-- Kelnir Leafsong
 					["coord"] = { 41.2, 49.9, 77 },
@@ -820,6 +893,23 @@ _.Zones =
 						28214,	-- Cleanup at Bloodvenom Post
 						28213,	-- Hazzard Disposal
 					},
+				}),
+				q(4521,  {	-- Wild Guardians
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10306 },	-- Trull Failbane
+				}),
+				q(4741, {	-- Wild Guardians
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10306 },	-- Trull Failbane
+					["sourceQuest"] = 4521,	-- Wild Guardians
+				}),
+				q(4721, {	-- Wild Guardians
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10306 },	-- Trull Failbane
+					["sourceQuest"] = 4741,	-- Wild Guardians
 				}),
 				q(28208, {	-- Winna's Kitten
 					["provider"] = { "n", 47696 },	-- Kelnir Leafsong

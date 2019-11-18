@@ -191,11 +191,6 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(16725)),	-- Lightforge Boots
 					})),
 					n(-40, {	-- Legacy
-						n(-17, {	-- Quests (Legacy)
-							un(40, q(5282, { 	-- The Restless Souls (2)
-								un(2, i(13315)),	-- Testament of Hope
-							})),
-						}),
 						-- Part of the Dungeon 2 Set Questline
 						q(8946, {	-- Proof of Life
 							["provider"] = { "n", 16031 },	-- Ysida Harmon

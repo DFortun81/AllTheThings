@@ -399,6 +399,11 @@ _.Zones =
 					["provider"] = { "n", 12384 },	-- Augustus the Touched
 					["coord"] = { 11.3, 28.5, 23 },
 				}),
+				q(5152, {	-- Auntie Marlene
+					["u"] = 40,
+					["provider"] = { "n", 10926 },	-- Pamela Redpath
+					["sourceQuest"] = 5149,	-- Pamela's Doll
+				}),
 				q(27522, {	-- Beat it Out of Them
 					["provider"] = { "n", 45729 },	-- Tarenar Sunstrike
 					["coord"] = { 50.4, 20.1, 23 },
@@ -420,6 +425,11 @@ _.Zones =
 						27613,	-- The Assassin
 						27612,	-- Victory From Within
 					},
+				}),
+				q(5531, {	-- Betina Bigglezink
+					["u"] = 40,
+					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered
+					["sourceQuest"] = 5522,	-- Leonid Barthalomew
 				}),
 				q(27524, {	-- Blind Fury
 					["provider"] = { "n", 45417 },	-- Tarenar Sunstrike
@@ -487,6 +497,11 @@ _.Zones =
 					},
 					["lvl"] = 58,
 					["u"] = 40,
+				}),
+				q(5211, {	-- Defenders of Darrowshire
+					["u"] = 40,
+					["provider"] = { "n", 11063 },	-- Carlin Redpath
+					["sourceQuest"] = 5241,	-- Uncle Carlin
 				}),
 				q(27529, {	-- Defenders of Darrowshire
 					["provider"] = { "n", 45831 },	-- Crusader Kevin Frost
@@ -667,6 +682,10 @@ _.Zones =
 						un(2, i(15814)),	-- Hameya's Slayer
 					},
 				}),
+				q(5168,  {	-- Heroes of Darrowshire
+					["u"] = 40,
+					["provider"] = { "n", 11063 },	-- Carlin Redpath
+				}),
 				q(27388, {	-- Heroes of Darrowshire
 					["provider"] = { "n", 10667 },	-- Chromie
 					["coord"] = { 35.2, 68.1, 23 },
@@ -798,10 +817,32 @@ _.Zones =
 					["provider"] = { "n", 11063 },	-- Carlin Redpath
 					["coord"] = { 35.5, 68.8, 23 },
 				}),
+				q(5513, {	-- Mantles of the Dawn
+					["u"] = 40,
+					["provider"] = { "n", 11536 },	-- Quartermaster Miranda Breechlock
+				}),
+				q(5206, {	-- Marauders of Darrowshire
+					["u"] = 40,
+					["provider"] = { "n", 11063 },	-- Carlin Redpath
+					["sourceQuests"] = {
+						5168,	-- Heroes of Darrowshire
+						5154,	-- The Annals of Darrowshire
+					},
+				}),
 				q(27389, {	-- Marauders of Darrowshire
 					["provider"] = { "n", 10667 },	-- Chromie
 					["coord"] = { 35.2, 68.1, 23 },
 					["sourceQuests"] = { 27386 },	-- "A Strange Historian"
+				}),
+				q(5463,  {	-- Menethil's Gift
+					["u"] = 40,
+					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered
+					["sourceQuest"] = 5462,	-- The Dying, Ras Frostwhisper
+				}),
+				q(5464, {	-- Menethil's Gift
+					["u"] = 40,
+					["provider"] = { "o", 176631 },	-- Menethil's Gift
+					["sourceQuest"] = 5463,	-- Menethil's Gift
 				}),
 				q(5510,  {	-- Minion's Scourgestones
 					["provider"] = { "n", 11039 },		-- Duke Nicholas Zverenhoff
@@ -832,6 +873,14 @@ _.Zones =
 						27449,	-- Honor and Strength
 					},
 				}),
+				q(5149, {	-- Pamela's Doll
+					["u"] = 40,
+					["provider"] = { "n", 10926 },	-- Pamela Redpath
+					["sourceQuests"] = {
+						5142,	-- Little Pamela
+						5601,	-- Sister Pamela
+					},
+				}),
 				q(27384, {	-- Pamela's Doll
 					["provider"] = { "n", 10926 },	-- Pamela Redpath
 					["coord"] = { 32.4, 83.6, 23 },
@@ -849,6 +898,10 @@ _.Zones =
 						{ 73.6, 51.9, 23 },
 					},
 				}),
+				q(5529, {	-- Plagued Hatchlings
+					["u"] = 40,
+					["provider"] = { "n", 11035 },	-- Betina Bigglezink
+				}),
 				q(27420, {	-- Postponing the Inevitable
 					["provider"] = { "n", 16135 },	-- Rayne
 					["coord"] = { 30.2, 56.8, 23 },
@@ -861,6 +914,11 @@ _.Zones =
 						un(2, i(17001)),	-- Elemental Circle
 						un(2, i(18022)),	-- Royal Seal of Alexis
 					},
+				}),
+				q(5941, {	-- Return to Chromie
+					["u"] = 40,
+					["provider"] = { "n", 11063 },	-- Carlin Redpath
+					["sourceQuest"] = 5206,	-- Marauders of Darrowshire
 				}),
 				q(27479, {	-- Righteous Indignation
 					["provider"] = { "n", 45736 },	-- Deacon Andaal
@@ -972,6 +1030,10 @@ _.Zones =
 						un(2, i(13209)),	-- Seal of the Dawn
 					},
 				}),
+				q(5251, {	-- The Archivist
+					["u"] = 40,
+					["provider"] = { "n", 11039 },	-- Duke Nicholas Zverenhoff
+				}),
 				q(5265,  {	-- The Argent Hold
 					["u"] = 40,
 					["g"] = {
@@ -1058,6 +1120,10 @@ _.Zones =
 						i(62985),	-- Corpulent Shoulderpads
 					},
 				}),
+				q(5212, {	-- The Flesh Does Not Lie
+					["u"] = 40,
+					["provider"] = { "n", 11035 },	-- Betina Bigglezink
+				}),
 				q(5214,  {	-- The Great Fras Siabi
 					["u"] = 40,
 					["g"] = {
@@ -1075,11 +1141,34 @@ _.Zones =
 						un(2, i(22636)),	-- Ice Guard
 					},
 				}),
+				q(5466, { 	-- The Lich, Ras Frostwhisper
+					["u"] = 40,
+					["provider"] = { "n", 11286 },	-- Magistrate Marduke
+					["sourceQuest"] = 5465,	-- Soulbound Keepsake
+					["g"] = {
+						un(2, i(13986)), 	-- Crown of Caer Darrow
+						un(2, i(14002)), 	-- Darrowshire Strongguard
+						un(2, i(13984)), 	-- Darrowspike
+						un(2, i(13982)), 	-- Warblade of Caer Darrow
+					},
+				}),
 				q(27532, {	-- The Plaguewood Tower
 					["provider"] = { "n", 45451 },	-- Argus Highbeacon
 					["coord"] = { 28.3, 25.8, 23 },
 					["sourceQuests"] = { 27526 },	-- Gidwin's Fate Revealed
 					["isBreadcrumb"] = true,
+				}),
+				q(5281, {	-- The Restless Souls
+					["u"] = 40,
+					["provider"] = { "n", 11038 },	-- Caretaker Alen
+				}),
+				q(5282, {	-- The Restless Souls
+					["u"] = 40,
+					["provider"] = { "n", 11140 },	-- Egan
+					["sourceQuest"] = 5281,	-- The Restless Souls
+					["g"] = {
+						un(2, i(13315)),	-- Testament of Hope
+					},
 				}),
 				q(9213,  {	-- The Shadow Guard
 					["u"] = 40,
@@ -1119,6 +1208,11 @@ _.Zones =
 					["coord"] = { 35.2, 68.8, 23 },
 					["sourceQuests"] = { 27373 },	-- Onward, to Light's Hope Chapel
 				}),
+				q(5241, {	-- Uncle Carlin
+					["u"] = 40,
+					["provider"] = { "n", 10926 },	-- Pamela Redpath
+					["sourceQuest"] = 5149,	-- Pamela's Doll
+				}),
 				q(27385, {	-- Uncle Carlin
 					["provider"] = { "n", 10926 },	-- Pamela Redpath
 					["coord"] = { 32.4, 83.6, 23 },
@@ -1141,6 +1235,11 @@ _.Zones =
 					["provider"] = { "n", 16115 },	-- Crusade Commander Eligor Dawnbringer
 					["coord"] = { 76.7, 73.1, 23 },
 					["sourceQuests"] = { 27461 },	-- To Take the Abbey
+				}),
+				q(5181, {	-- Villains of Darrowshire
+					["u"] = 40,
+					["provider"] = { "n", 11063 },	-- Carlin Redpath
+					["sourceQuest"] = 5210,	-- Brother Carlin
 				}),
 				q(27387, {	-- Villians of Darrowshire
 					["provider"] = { "n", 10667 },	-- Chromie
@@ -1174,6 +1273,10 @@ _.Zones =
 				q(27521, {	-- Wretched Hive of Scum and Villainy
 					["provider"] = { "n", 45826 },	-- Kirkian Dawnshield
 					["coord"] = { 49.9, 19.5, 23 },
+				}),
+				q(6021, {	-- Zeldarr the Outcast
+					["u"] = 40,
+					["provider"] = { "n", 11038 },	-- Caretaker Alen
 				}),
 				q(27432, {	-- Zaeldarr the Outcast
 					["provider"] = { "n", 45500 },	-- Urk Gagbaz

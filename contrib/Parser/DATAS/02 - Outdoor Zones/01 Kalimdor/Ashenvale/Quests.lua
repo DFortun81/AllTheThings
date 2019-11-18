@@ -70,14 +70,26 @@ _.Zones =
 						i(131320),	-- Whitemoon Mender Cord
 					},
 				}),
+				q(6564, {	-- Allegiance to the Old Gods
+					["u"] = 40,
+					["crs"] = { 4802 },	-- Blackfathom Tide Priestess
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 16790 },	-- Damp Note
+				}),
 				q(6565,  {	-- Allegiance to the Old Gods
 					["u"] = 40,
-					["provider"] = { "n", 12736 },	-- Je'neu Sancrea
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 12736 },	-- Je'neu Sancrea
+					["sourceQuest"] = 6564,	-- Allegiance to the Old Gods
 					["g"] = {
 						un(2, i(17694)),	-- Band of the Fist
 						un(2, i(17695)),	-- Chestnut Mantle
 					},
+				}),
+				q(6921, {	-- Amongst the Ruins
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 12736 },	-- Je'neu Sancrea
 				}),
 				q(1025,  {	-- An Aggressive Defense
 					["u"] = 40,
@@ -968,6 +980,11 @@ _.Zones =
 					["coord"] = { 18.2, 20.5, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13617,	-- West to the Strand
+				}),
+				q(6383, {	-- The Ashenvale Hunt
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 12696 },	-- Senani Thunderheart
 				}),
 				q(1918,  {	-- The Befouled Element
 					["provider"] = { "i", 16408 },	-- Befouled Water Globe

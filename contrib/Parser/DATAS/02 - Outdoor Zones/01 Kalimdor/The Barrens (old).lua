@@ -4,11 +4,21 @@
 _.Zones = {
 	m(12, {	-- Kalimdor
 		m(10, {	-- Northern Barrens -- NOTE:: using this map for legacy barrens quests since they reused the mapID
+			q(6626, {	-- A Host of Evil
+				["u"] = 40,
+				["provider"] = { "n", 12866 },	-- Myriam Moonsinger
+			}),
 			q(879,   {	-- Betrayal from Within
 				["u"] = 40,
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 3430 },	-- Mangletooth
 				["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
+			}),
+			q(5052, {	-- Blood Shards of Agamaggan
+				["u"] = 40,
+				["races"] = HORDE_ONLY,
+				["provider"] = { "n", 3430 },	-- Mangletooth
+				["sourceQuest"] = 878,	-- Tribes at War
 			}),
 			q(1221,  {	-- Blueleaf Tubers
 				["u"] = 40,
@@ -30,6 +40,11 @@ _.Zones = {
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 3292 },	-- Brewmaster Drohn
 				["sourceQuest"] = 821,	-- Chen's Empty Keg
+			}),
+			q(5159, {	-- Cleansed Water Returns to Felwood
+				["u"] = 40,
+				["provider"] = { "n", 5901 },	-- Islen Waterseer
+				["sourceQuest"] = 5158,	-- Seeking Spiritual Aid
 			}),
 			q(842,   {	-- Crossroads Conscription
 				["u"] = 40,
@@ -86,11 +101,28 @@ _.Zones = {
 				["provider"] = { "n", 3338 },	-- Sergra Darkthorn
 				["sourceQuest"] = 905,	-- The Angry Scytheclaws
 			}),
+			q(6401, {	-- Kaya's Alive
+				["u"] = 40,
+				["races"] = HORDE_ONLY,
+				["provider"] = { "n", 11857 },	-- Makaba Flathoof
+				["sourceQuest"] = 6523,	-- Protect Kaya
+			}),
+			q(6629, {	-- Kill Grundig Darkcloud
+				["u"] = 40,
+				["races"] = HORDE_ONLY,
+				["provider"] = { "n", 11857 },	-- Makaba Flathoof
+				["sourceQuest"] = 6548,	-- Avenge My Village
+			}),
 			q(1060,  {	-- Letter to Jin'Zil
 				["u"] = 40,
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 3449 },	-- Darsok Swiftdagger
 				["sourceQuest"] = 876,	-- Serena Bloodfeather
+			}),
+			q(4921, {	-- Lost in Battle
+				["u"] = 40,
+				["races"] = HORDE_ONLY,
+				["provider"] = { "n", 3432 },	-- Mankrik
 			}),
 			q(874,   {	-- Mahren Skyseer
 				["u"] = 40,
@@ -119,6 +151,11 @@ _.Zones = {
 				["crs"] = { 3473 },	-- Owatanka
 				["races"] = HORDE_ONLY,
 				["provider"] = { "i", 5102 },	-- Owatanka's Tailspike
+			}),
+			q(6541, {	-- Report to Kadrak
+				["u"] = 40,
+				["races"] = HORDE_ONLY,
+				["provider"] = { "n", 3429 },	-- Thork
 			}),
 			q(846,   {	-- Revenge of Gann
 				["u"] = 40,
@@ -166,6 +203,11 @@ _.Zones = {
 				["provider"] = { "n", 3446 },	-- Mebok Mizzyrix
 				["sourceQuest"] = 865,	-- Raptor Horns
 			}),
+			q(6382, {	-- The Ashenvale Hunt
+				["u"] = 40,
+				["races"] = HORDE_ONLY,
+				["provider"] = { "n", 3387 },	-- Jorn Skyseer
+			}),
 			q(1063,  {	-- The Elder Crone
 				["u"] = 40,
 				["races"] = HORDE_ONLY,
@@ -205,6 +247,15 @@ _.Zones = {
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 3421 },	-- Feegly the Exiled
 			}),
+			q(6543, {	-- The Warsong Reports
+				["u"] = 40,
+				["races"] = HORDE_ONLY,
+				["provider"] = { "n", 8582 },	-- Kadrak
+				["sourceQuests"] = {
+					6541,	-- Report to Kadrak (Barrens)
+					6542,	-- Report to Kadrak (Stonetalon)
+				},
+			}),
 			q(878,   {	-- Tribes at War
 				["u"] = 40,
 				["races"] = HORDE_ONLY,
@@ -214,6 +265,10 @@ _.Zones = {
 				["u"] = 40,
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 3665 },	-- Crane Operator Bigglefuzz
+			}),
+			q(4502, {	-- Volcanic Activity
+				["u"] = 40,
+				["provider"] = { "n", 8496 },	-- Liv Rizzlefix
 			}),
 			q(3921, {	-- Wenikee Boltbucket
 				["u"] = 40,
@@ -225,6 +280,12 @@ _.Zones = {
 				["u"] = 40,
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 3390 },	-- Apothecary Helbrim
+			}),
+			q(4146, {	-- Zapper Fuel
+				["u"] = 40,
+				["races"] = HORDE_ONLY,
+				["provider"] = { "n", 8496 },	-- Liv Rizzlefix
+				["sourceQuest"] = 4147,	-- Marvon's Workshop
 			}),
 			q(1483, {	-- Ziz Fizziks
 				["u"] = 40,

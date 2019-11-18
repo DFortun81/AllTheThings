@@ -163,8 +163,21 @@ _.Zones =
 					["races"] = { 8, 10, 27 },	-- Troll, Blood Elf, Nightborne
 					["sourceQuests"] = { 28427 },	-- A Needle in a Hellhole
 				}),
+				q(4022, {	-- A Taste of Flame
+					["u"] = 40,
+					["provider"] = { "n", 9459 },	-- Cyrus Therepentous
+				}),
+				q(4023, {	-- A Taste of Flame
+					["u"] = 40,
+					["provider"] = { "n", 9459 },	-- Cyrus Therepentous
+				}),
 				q(4024,  {	-- A Taste of Flame
 					["u"] = 40,
+					["provider"] = { "n", 9459 },	-- Cyrus Therepentous
+					["sourceQuests"] = {
+						4022,	-- A Taste of Flame
+						4023,	-- A Taste of Flame
+					},
 					["g"] = {
 						un(2, i(12066)),	-- Shaleskin Cape
 						un(2, i(12083)),	-- Valconian Sash
@@ -340,6 +353,23 @@ _.Zones =
 						28444,	-- Latent Demons of the Land
 					},
 				}),
+				q(4735, {	-- Egg Collection
+					["u"] = 40,
+					["provider"] = { "n", 10267 },	-- Tinkee Steamboil
+					["sourceQuest"] = 4734,	-- Egg Freezing
+				}),
+				q(4734,  {	-- Egg Freezing
+					["u"] = 40,
+					["provider"] = { "n", 10267 },	-- Tinkee Steamboil
+					["sourceQuest"] = 4907,	-- Tinkee Steamboil
+				}),
+				q(4862, {	-- En-Ay-Es-Tee-Why
+					["u"] = 40,
+					["provider"] = { "n", 10260 },	-- Kibler
+					["g"] = {
+						un(2, i(12529)),	-- Smolderweb Carrier
+					},
+				}),
 				q(28286, {	-- Enough Damage For One Day
 					["provider"] = { "n", 48110 },	-- Colonel Troteman
 					["coord"] = { 46.3, 45.9, 36 },
@@ -467,6 +497,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28428, 28429, 28430, 28431 },	-- A Perfect Costume (Horde versions)
 				}),
+				q(4729, {	-- Kibler's Exotic Pets
+					["u"] = 40,
+					["provider"] = { "n", 10260 },	-- Kibler
+				}),
 				q(3822,  {	-- Krom'Grul
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -485,6 +519,11 @@ _.Zones =
 					["coord"] = { 54.6, 24.4, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28442 },	-- Flame Crest
+				}),
+				q(5522, {	-- Leonid Barthalomew
+					["u"] = 40,
+					["provider"] = { "n", 10267 },	-- Thinkee Steamboil
+					["sourceQuest"] = 4734,	-- Egg Freezing
 				}),
 				q(28327, {	-- Locked and Loaded
 					["races"] = ALLIANCE_ONLY,
@@ -698,6 +737,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28433 },	-- Grunt Work (procs after accepting)
 				}),
+				q(4296, {	-- Tablet of the Seven
+					["u"] = 40,
+					["provider"] = { "n", 9536 },	-- Maxwort Uberglint
+				}),
 				q(28253, {	-- Taking the Horn For Ourselves
 					["provider"] = { "n", 48110 },	-- Colonel Troteman
 					["coord"] = { 46.3, 45.9, 36 },
@@ -734,6 +777,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				q(4123, {	-- The Heart of the Mountain
+					["u"] = 40,
+					["provider"] = { "n", 9536 },	-- Maxwort Uberglint
+				}),
 				q(28252, {	-- The Kodocaller's Horn
 					["provider"] = { "n", 48085 },	-- Quartermaster Kaoshin
 					["coord"] = { 45.3, 51.7, 36 },
@@ -745,6 +792,17 @@ _.Zones =
 					["coord"] = { 45.3, 51.7, 36 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28433 },	-- Grunt Work
+				}),
+				q(4061, {	-- The Rise of the Machines
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9079 },	-- Hierophant Theodora Mulvadania
+				}),
+				q(4062, {	-- The Rise of the Machines
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9079 },	-- Hierophant Theodora Mulvadania
+					["sourceQuest"] = 4061,	-- The Rise of the Machines
 				}),
 				q(28180, {	-- The Sand, the Cider, and the Orb
 					["provider"] = { "n", 47811 },	-- John J. Keeshan

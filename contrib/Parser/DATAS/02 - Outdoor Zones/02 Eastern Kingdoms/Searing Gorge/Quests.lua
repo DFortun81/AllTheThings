@@ -40,6 +40,10 @@ _.Zones =
 						i(63209),	-- Glassweb Robes
 					},
 				}),
+				q(4449, {	-- Caught!
+					["u"] = 40,
+					["provider"] = { "o", 173265 },	-- Wooden Outhouse
+				}),
 				q(27976, {	-- Curse These Fat Fingers
 					["provider"] = { "n", 14627 },	-- Hansel Heavyhands
 					["coord"] = { 38.4, 27.8, 32 },
@@ -365,6 +369,10 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 8479 },	-- Kalaran Windblade
 					["sourceQuest"] = 3441,	-- Divine Retribution
+				}),
+				q(4451, {	-- The Key to Freedom
+					["u"] = 40,
+					["provider"] = { "i", 11818 },	-- Grimesilt Outhouse Key
 				}),
 				q(28035, {	-- The Mountain-Lord's Support
 					["provider"] = { "n", 47393 },	-- Mountain-Lord Rendan

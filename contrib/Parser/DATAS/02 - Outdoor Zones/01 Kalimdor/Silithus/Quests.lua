@@ -391,6 +391,11 @@ _.Zones =
 					["provider"] = { "n", 15270 },	-- Huum Wildmane
 					["coord"] = { 53.2, 35.1, 81 },
 				}),
+				q(6844, {	-- Umber, Archivist
+					["u"] = 40,
+					["provider"] = { "n", 13220 },	-- Layo Starstrike
+					["sourceQuest"] = 1126,	-- Hive in the Tower
+				}),
 				q(8314,  {	-- Unraveling the Mystery
 					["provider"] = { "n", 15170 },	-- Rutgar Glyphshaper
 					["coord"] = { 46.4, 79.0, 81 },

@@ -6,6 +6,11 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(90, {	-- Undercity
 			n(-17, {	-- Quests
+				q(4294, {	-- ... and a Batch of Ooze
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10136 },	-- Chemist Fuely
+				}),
 				q(38397, {	-- A Curious Oddity
 					["provider"] = { "n", 6566 },	-- Estelle Gendry
 					["coords"] = {
@@ -31,6 +36,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 100,
 					["u"] = 40,
+				}),
+				q(4293, {	-- A Sample of Slime...
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10136 },	-- Chemist Fuely
 				}),
 				q(27277, {	-- An Audience with Ureda
 					["provider"] = { "n", 4566 },	-- Kaelystia Hatebringer
@@ -167,6 +177,11 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2055 },	-- Master Apothecary Faranell
+				}),
+				q(5050, {	-- Good Luck Charm
+					["u"] = 40,
+					["provider"] = { "n", 8403 },	-- Jeremiah Payson
+					["sourceQuest"] = 5049,	-- The Jeremiah Blues
 				}),
 				q(27281, {	-- Grezz Ragefist
 					["provider"] = { "n", 4593 },	-- Christoph Walker
@@ -526,10 +541,21 @@ _.Zones =
 						un(2, i(44349)),	-- Warchief's Legplates of Carnage
 					},
 				}),
+				q(5961, {	-- The Champion of the Banshee Queen
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10181 },	-- Lady Sylvanas Windrunner
+				}),
 				q(495,   {	-- The Crown of Will
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2227 },	-- Sharlindra
+				}),
+				q(5049, {	-- The Jeremiah Blues
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10781 },	-- Royal Overseer Bauhaus
+					["sourceQuest"] = 5023,	-- Better Late Than Never
 				}),
 				q(39960, {	-- The Legacy Passed On
 					["provider"] = { "n", 97766 },	-- Francis Serbacon <Author Extrodinaire>
@@ -622,6 +648,16 @@ _.Zones =
 						un(2, i(2032)),	-- Gallan Cuffs
 						un(2, i(4443)),	-- Grim Pauldrons
 					},
+				}),
+				q(4133, {	-- Vivian Lagrave
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5204 },	-- Apothecary Zinge
+				}),
+				q(4769, {	-- Vivian Lagrave and the Darkstone Tablet
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5204 },	-- Apothecary Zinge
 				}),
 			}),
 		}),

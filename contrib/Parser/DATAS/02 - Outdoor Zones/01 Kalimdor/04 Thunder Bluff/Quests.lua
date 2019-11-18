@@ -384,6 +384,11 @@ _.Zones =
 						un(2, i(4909)),	-- Kodo Hunter's Leggings
 					},
 				}),
+				q(5722, {	-- Searching for the Lost Satchel
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11833 },	-- Rahauro
+				}),
 				q(28164, {	-- Seek Brother Silverhallow
 					["provider"] = { "n", 43870 },	-- Seer Beryl
 					["coord"] = { 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
@@ -444,6 +449,11 @@ _.Zones =
 					["sourceQuest"] = 6362,	-- Ride to Thunder Bluff
 					["races"] = { 6 },	-- Tauren
 					["lvl"] = 4,
+				}),
+				q(5723, {	-- Testing an Enemy's Strength
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11833 },	-- Rahauro
 				}),
 				q(742,   {	-- The Ashenvale Hunt
 					["u"] = 40,

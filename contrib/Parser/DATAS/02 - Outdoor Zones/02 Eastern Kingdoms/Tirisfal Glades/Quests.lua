@@ -58,6 +58,16 @@ _.Zones =
 					["provider"] = { "n", 1518 },	-- Apothecary Johaan
 					["sourceQuest"] = 369,	-- A New Plague
 				}),
+				q(5901, {	-- A Plague Upon Thee
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11615 },	-- Mickey Levine
+				}),
+				q(5902, {	-- A Plague Upon Thee
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11615 },	-- Mickey Levine
+				}),
 				q(404,   {	-- A Putrid Task
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -90,11 +100,31 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26926 },	-- Victory, For Now
 				}),
+				q(5098, {	-- All ALong the Watchtowers
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10837 },	-- High Executor Derrington
+					["sourceQuest"] = 5096,	-- Scarlet Diversions
+				}),
 				q(24993, {	-- Annihilate the Worgen
 					["provider"] = { "n", 1515 },	-- Executor Zygand
 					["coord"] = { 60.5, 51.8, 18 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 24992 },	-- Escaped From Gilneas
+				}),
+				q(5804, {	-- Araj's Scarab
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11057 },	-- Apothecary Dithers
+					["sourceQuest"] = 5802,	-- Fire Plume Forged
+				}),
+				q(5405, {	-- Argent Dawn Commission
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10839 },	-- Argent Officer Garush
+					["g"] = {
+						un(2, i(12846)),	-- Argent Dawn Commission
+					},
 				}),
 				q(370,   {	-- At War With The Scarlet Crusade
 					["u"] = 40,
@@ -124,6 +154,11 @@ _.Zones =
 					["coord"] = { 83.2, 68.9, 18 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 25007 },	-- East... Always to the East
+				}),
+				q(5341, {	-- Barov Family Fortune
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11022 },	-- Alexi Barov
 				}),
 				q(5406,  {	-- Corruptor's Scourgestones
 					["u"] = 40,			-- Removed in Patch 4.0.3
@@ -160,6 +195,11 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1518 },	-- Apothecary Johaan
+				}),
+				q(5482, {	-- Doom Weed
+					["u"] = 40,
+					["provider"] = { "n", 10665 },	-- Junior Apothecary Holland
+					["sourceQuest"] = 5481,	-- Gordo's Task
 				}),
 				q(24994, {	-- Doom Weed
 					["provider"] = { "n", 38977 },	-- Apothecary Jerrod
@@ -243,6 +283,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 24996 },	-- Holland's Experiment
 					["isBreadcrumb"] = true,
+				}),
+				q(5481, {	-- Gordo's Task
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10666 },	-- Gordo
 				}),
 				q(25038, {	-- Gordo's Task
 					["provider"] = { "n", 10666 },	-- Gordo
@@ -340,6 +385,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 24997 },	-- Graverobbers
 				}),
+				q(5504, {	-- Mantles of the Dawn
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10856 },	-- Argent Quartermaster Hasana
+				}),
 				q(5402,  {	-- Minion's Scourgestones
 					["coord"] = { 83.18, 68.45, 18 },
 					["races"] = HORDE_ONLY,
@@ -359,6 +409,11 @@ _.Zones =
 						un(2, i(15800)),	-- Intrepid Shortsword
 						un(2, i(15801)),	-- Valiant Shortsword
 					},
+				}),
+				q(5514, {	-- Mold Rhymes With...
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11057 },	-- Apothecary Dithers
 				}),
 				q(24995, {	-- Off the Scales
 					["provider"] = { "n", 38977 },	-- Apothecary Jerrod
@@ -416,6 +471,16 @@ _.Zones =
 					["sourceQuest"] = 6321,	-- Supplying Brill
 					["races"] = { 5 },	-- Undead
 				}),
+				q(5096, {	-- Scarlet Diversions
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10837 },	-- High Executor Derrington
+					["sourceQuests"] = {
+						5093,	-- A Call to Arms: The Plaguelands!
+						5094,	-- A Call to Arms: The Plaguelands!
+						5095,	-- A Call to Arms: The Plaguelands!
+					},
+				}),
 				q(838,   {	-- Scholomance
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -458,6 +523,30 @@ _.Zones =
 					["coord"] = { 83.5, 69.9, 18 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 25011 },	-- To Bigger and Better Things
+				}),
+				q(5231, {	-- Target: Dalson's Tears
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11055 },	-- Shadow Priestess Vandis
+					["sourceQuest"] = 5230,	-- Return to the Bulwark
+				}),
+				q(5229, {	-- Target: Felstone Field
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11055 },	-- Shadow Priestess Vandis
+					["sourceQuest"] = 5228,	-- The Scourge Cauldrons
+				}),
+				q(5235, {	-- Target: Gahrron's Withering
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11055 },	-- Shadow Priestess Vandis
+					["sourceQuest"] = 5234,	-- Return to the Bulwark
+				}),
+				q(5233, {	-- Target: Writhing Haunt
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11055 },	-- Shadow Priestess Vandis
+					["sourceQuest"] = 5232,	-- Return to the Bulwark
 				}),
 				q(26920, {	-- The Battle for Andorhal
 					["provider"] = { "n", 10837 },	-- High Executor Derrington
@@ -510,6 +599,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 3082 },	-- Dargol's Skull
 					["description"] = "At the bottom of the |cFFFFD700Agamand Family Crypt|r.",
+				}),
+				q(5511, {	-- The Key to Scholomance
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11057 },	-- Apothecary Dithers
+					["sourceQuest"] = 5804,	-- Araj's Scarab
 				}),
 				q(26952, {	-- The Menders' Stead
 					["provider"] = { "n", 10839 },	-- Argent Officer Garush
@@ -566,6 +661,12 @@ _.Zones =
 					["coord"] = { 44.7, 53.6, 18 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 24978 },	-- Reaping the Reapers
+				}),
+				q(5228, {	-- The Scourge Cauldrons
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10837 },	-- High Executor Derrington
+					["sourceQuest"] = 5096,	-- Scarlet Diversions
 				}),
 				q(25011, {	-- To Bigger and Better Things
 					["provider"] = { "n", 10837 },	-- High Executor Derrington

@@ -24,6 +24,12 @@ _.Instances = { tier(1, {	-- Classic
 						i(131617),	-- Razorflank's Chainmail
 					},
 				}),
+				q(6522, {	-- An Unholy Alliance
+					["u"] = 40,
+					["crs"] = { 4421 },	-- Charlga Razorflank
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 17008 },	-- Small Scroll
+				}),
 				q(26901, {	-- Going, Going, Guano!
 					["provider"] = { "n", 44402 },	-- Auld Stonespire
 				}),

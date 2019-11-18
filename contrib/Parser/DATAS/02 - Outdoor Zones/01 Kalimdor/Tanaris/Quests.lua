@@ -336,6 +336,12 @@ _.Zones =
 					["description"] = "The item that starts this quest can be found as a zone drop in Tanaris or in Zul'Farrak.",
 					["provider"] = { "i", 8623 },	-- OOX-17/TN Distress Beacon
 				}),
+				q(5802, {	-- Fire Plume Forged
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5411 },	-- Krinkle Goodsteel
+					["sourceQuest"] = 5514,	-- Mold Rhymes With...
+				}),
 				q(25565, {	-- Fragments of Language
 					["sourceQuests"] = { 28881 },	-- Prospector Gunstan
 					["provider"] = { "n", 40109 },	-- Prospector Gunstan
@@ -906,6 +912,10 @@ _.Zones =
 					["provider"] = { "n", 7881 },	-- Stoley
 					["sourceQuest"] = 2872,	-- Stoley's Debt
 				}),
+				q(4504, {	-- Super Sticky
+					["u"] = 40,
+					["provider"] = { "n", 7876 },	-- Tran'rek
+				}),
 				q(654,   {	-- Tanaris Field Sampling
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -914,6 +924,11 @@ _.Zones =
 					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
 					["coord"] = { 49.9, 82.8, 71 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(4787, {	-- The Ancient Egg
+					["u"] = 40,
+					["provider"] = { "n", 8579 },	-- Yeh'kinya
+					["sourceQuest"] = 3527,	-- The Prophecy of Mosh'aru
 				}),
 				q(10296, {	-- The Black Morass
 					["provider"] = { "n", 20130 },	-- Andormu
@@ -1002,6 +1017,11 @@ _.Zones =
 						i(56901),	-- Translation Boots
 						i(56902),	-- Rosy Tablet Belt
 					},
+				}),
+				q(5065, {	-- The Lost Tablets of Mosh'aru
+					["u"] = 40,
+					["provider"] = { "n", 10460 },	-- Prospector Ironboot
+					["sourceQuest"] = 3528,	-- The God Hakkar
 				}),
 				q(2773,  {	-- The Mithril Kid
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer

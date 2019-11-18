@@ -96,14 +96,6 @@ _.Zones =
 						i(4609),	-- Recipe: Barbequed Buzzard Wing -- NOTE: item is still available
 					},
 				}),
-				q(4983,  {	-- Bijou's Reconnaissance Report (may only have been both factions)
-					["u"] = 40,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(2, i(15858)),	-- Freewind Gloves
-						un(2, i(15859)),	-- Seapost Girdle
-					},
-				}),
 				q(27881, {	-- Bloodwatcher Point
 					["provider"] = { "n", 46664 },	-- Dr. Hieronymus Blam
 					["coord"] = { 46.8, 56.2, 15 },
@@ -226,6 +218,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27890 },	-- The Bad Dogs
 				}),
+				q(4122, {	-- Grark Lorkrub
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9080 },	-- Lexlort
+				}),
 				q(714,   {	-- Gyro... What?
 					["u"] = 40,
 					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
@@ -292,6 +289,16 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27890 },	-- The Bad Dogs
 				}),
+				q(4081, {	-- KILL ON SIGHT: Dark Iron Dwarves
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 164867 },	-- WANTED
+				}),
+				q(4082, {	-- KILL ON SIGHT: High Ranking Dark Iron Officials
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 164868 },	-- KILL ON SIGHT
+				}),
 				q(27770, {	-- Lifting the Veil
 					["provider"] = { "n", 46654 },	-- Rhea
 					["coord"] = { 66.3, 55.4, 15 },
@@ -350,6 +357,11 @@ _.Zones =
 					["coord"] = { 20.5, 56.3, 15 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
+				}),
+				q(4981, {	-- Operative Bijou
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9080 },	-- Lexlort
 				}),
 				q(705,   {	-- Pearl Diving
 					["u"] = 40,
@@ -568,6 +580,8 @@ _.Zones =
 				q(4063,  {	-- The Rise of the Machines
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
+					["sourceQuest"] = 4062,	-- The Rise of the Machines
 					["g"] = {
 						un(2, i(12109)),	-- Azure Moon Amice
 						un(2, i(12108)),	-- Basaltscale Armor

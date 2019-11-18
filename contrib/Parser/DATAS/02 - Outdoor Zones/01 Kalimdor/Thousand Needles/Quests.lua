@@ -38,6 +38,15 @@ _.Zones =
 					["provider"] = { "n", 3433 },	-- Tatternack Steelforge
 					["sourceQuest"] = 893,	-- Weapons of Choice
 				}),
+				q(4821, {	-- Alien Egg
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10539 },	-- Hagar Lightninghoof
+				}),
+				q(4881, {	-- Assassination Plot
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+				}),
 				q(1118,  {	-- Back to Booty Bay
 					["u"] = 40,
 					["provider"] = { "n", 4452 },	-- Kravel Koalbeard
@@ -281,6 +290,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25775,	-- Fool's Gold
 				}),
+				q(5361, {	-- Family Tree
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10537 },	-- Cliffwatcher Longhorn
+				}),
 				q(25774, {	-- Fool's Gold
 					["provider"] = { "n", 41190 },	-- Crazzle Sprysprocket
 					["coord"] = { 91.4, 57.6, 64 },
@@ -487,6 +501,15 @@ _.Zones =
 						25628,	-- Two-Tusk Takedown (horde)
 					},
 				}),
+				q(5762, {	-- Hemet Nesingwary
+					["u"] = 40,
+					["provider"] = { "n", 4452 },	-- Kravel Koalbeard
+				}),
+				q(4770, {	-- Homeward Bound
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10427 },	-- Pao'ka Swiftmountain
+				}),
 				q(25873, {	-- Horn of the Traitor
 					["provider"] = { "n", 45271 },	-- Montarr
 					["coord"] = { 44.6, 50.0, 64 },
@@ -560,6 +583,11 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 4454 },	-- Fizzle Brassbolts
 				}),
+				q(4542, {	-- Message to Freewind Post
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10079 },	-- Brave Moonhorn
+				}),
 				q(25744, {	-- Negotiations
 					["provider"] = { "n", 40027 },	-- Fizzle Brassbolts
 					["coord"] = { 76.0, 74.6, 64 },
@@ -590,6 +618,12 @@ _.Zones =
 					["provider"] = { "n", 47471 },	-- Pao'ka Swiftmountain
 					["coord"] = { 12.8, 34.0, 64 },
 					["sourceQuest"] = 28098,	-- The Twilight Skymaster
+				}),
+				q(4841, {	-- Pacify the Centaur
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10537 },	-- Cliffwatcher Longhorn
+					["sourceQuest"] = 4542,	-- Message to Freewind Post
 				}),
 				q(1112,  {	-- Parts for Kravel
 					["u"] = 40,
@@ -679,6 +713,12 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 4452 },	-- Kravel Koalbeard
 				}),
+				q(5062, {	-- Sacred Fire
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10428 },	-- Motega Firemane
+					["sourceQuest"] = 4865,	-- Serpent Wild
+				}),
 				q(1188,  {	-- Safety First
 					["u"] = 40,
 					["provider"] = { "n", 4706 },	-- Razzeric
@@ -693,6 +733,12 @@ _.Zones =
 					["coord"] = { 46.8, 56.0, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25835,	-- Free Freewind Post
+				}),
+				q(4865, {	-- Serpent Wild
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10539 },	-- Hagar Lightninghoof
+					["sourceQuest"] = 4821,	-- Alien Egg
 				}),
 				q(28125, {	-- Something to Wear
 					["provider"] = { "n", 47580 },	-- Lakota Windsong
@@ -1083,6 +1129,11 @@ _.Zones =
 					["coord"] = { 78.0, 73.4, 64 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25542,	-- Circle the Wagons... er, Boats
+				}),
+				q(4767, {	-- Wind Rider
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10377 },	-- Elu
 				}),
 				q(25661, {	-- With a Little Help...
 					["provider"] = { "n", 41060 },	-- Ajamon Ghostcaller
