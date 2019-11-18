@@ -36,10 +36,7 @@ _.Zones =
 					["provider"] = { "n", 16768 },	-- Nurguni
 					["coord"] = { 56.8, 49.8, 103 },
 					["sourceQuest"] = 9604,	-- On the Wings of a Hippogryph
-					["races"] = { 
-						11,	-- Draenei
-						30,	-- Lightforged Draenei
-					},
+					["races"] = { 11 },	-- Draenei
 					["lvl"] = 5,
 				}),
 				q(27271, {	-- Journey to the Wizard's Sanctum
@@ -116,10 +113,7 @@ _.Zones =
 					["provider"] = { "n", 17555 },	-- Stephanos
 					["coord"] = { 54.8, 35.8, 103 },
 					["sourceQuest"] = 9605,	-- Hippogryph Master Stephanos
-					["races"] = { 
-						11,	-- Draenei
-						30,	-- Lightforged Draenei
-					},
+					["races"] = { 11 }, -- Draenei
 					["lvl"] = 5,
 				}),
 				q(9762, {	-- The Unwritten Prophecy
