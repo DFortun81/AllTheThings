@@ -323,6 +323,7 @@ _.Zones =
 						26961,	-- Gathering Idols
 						13650,	-- Keep Your Hands Off The Goods!
 					},
+					["isBreadcrumb"] = true,
 					["coord"] = { 64.9, 66.5, 48 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1345 },	-- Magmar Felhew

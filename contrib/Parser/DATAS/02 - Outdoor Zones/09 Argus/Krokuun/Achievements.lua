@@ -6,6 +6,7 @@ _.Zones =
 	m(905, { 	-- Argus
 		m(830, {	-- Krokuun
 			n(-4, { 	-- Achievement
+				ach(12084),	-- Infused and Abused
 				ach(12074, {	-- Shoot First, Loot Later
 					o(276490, {	-- Krokul Emergency Cache
 						["questID"] = 48884,
@@ -14,8 +15,8 @@ _.Zones =
 						["coord"] = { 50.7, 75.3, 830 },
 						["groups"] = {
 							{
-								["achievementID"] = 12074,	-- Shoot First, Loot Later
 								["criteriaID"] = 1,	-- Krokul Emergency Cache
+								["achievementID"] = 12074,	-- Shoot First, Loot Later
 							},
 							i(153304),	-- Oronaar Miner's Dredger
 						},
