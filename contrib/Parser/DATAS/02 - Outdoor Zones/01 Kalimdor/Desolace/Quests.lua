@@ -455,6 +455,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 49200 },	-- Infernal Power Core
 				}),
+				q(1365,  {	-- Khan Dez'hepah
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5395 },	-- Felgur Twocuts
+				}),
 				q(1381,  {	-- Khan Hratha (Magram Clan Friendly Version)
 					["u"] = 40,
 					["provider"] = { "n", 5398 },	-- Warug
@@ -757,10 +762,44 @@ _.Zones =
 					["lvl"] = 30,
 					["u"] = 40,
 				}),
+				q(1480, {	-- The Corrupter
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 20310 },	-- Flayed Demon Skin
+					["crs"] = {
+						4665,	-- Burning Blade Adept
+						4663,	-- Burning Blade Augur
+						4666,	-- Burning Blade Felsworn
+						4705,	-- Burning Blade Invoker
+						4664,	-- Burning Blade Reaver
+						13019,	-- Burning Blade Seer
+						4667,	-- Burning Blade Shadowmage
+						4668,	-- Burning Blade Summoner
+					},
+				}),
+				q(1481, {	-- The Corrupter
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4498 },	-- Maurin Bonesplitter
+					["sourceQuest"] = 1480,	-- The Corrupter
+				}),
+				q(1482, {	-- The Corrupter
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4498 },	-- Maurin Bonesplitter
+					["sourceQuest"] = 1481,	-- The Corrupter
+				}),
+				q(1484, {	-- The Corrupter
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4498 },	-- Maurin Bonesplitter
+					["sourceQuest"] = 1482,	-- The Corrupter
+				}),
 				q(1488,  {	-- The Corrupter
 					["u"] = 40,
-					["provider"] = { "n", 5641 },	-- Takata Steelblade
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5641 },	-- Takata Steelblade
+					["sourceQuest"] = 1484,	-- The Corrupter
 					["g"] = {
 						un(2, i(6746)),	-- Basalt Buckler
 						un(2, i(6747)),	-- Enforcer Pauldrons

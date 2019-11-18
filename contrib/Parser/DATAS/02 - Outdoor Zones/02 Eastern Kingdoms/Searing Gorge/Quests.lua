@@ -80,12 +80,21 @@ _.Zones =
 					["coord"] = { 68.5, 53.3, 32 },
 					["sourceQuests"] = { 27963 },	-- A New Master...But Who?
 				}),
+				q(3441, {	-- Divine Retribution
+					["u"] = 40,
+					["provider"] = { "n", 8479 },	-- Kalaran Windblade
+				}),
 				q(7724,  {	-- Fiery Menace!
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(19125)),	-- Seared Mail Girdle
 					},
+				}),
+				q(3443, {	-- Forging the Shaft
+					["u"] = 40,
+					["provider"] = { "n", 8479 },	-- Kalaran Windblade
+					["sourceQuest"] = 3442,	-- The Flawless Flame
 				}),
 				q(28062, {	-- From Whence He Came
 					["provider"] = { "n", 14625 },	-- Overseer Oilfist
@@ -326,6 +335,11 @@ _.Zones =
 					["coord"] = { 40.8, 51.6, 32 },
 					["sourceQuest"] = 28052,	-- Operation: Stir the Cauldron
 				}),
+				q(3462, {	-- Squire Maltrake
+					["u"] = 40,
+					["provider"] = { "n", 8479 },	-- Kalaran Windblade
+					["sourceQuest"] = 3454,	-- The Torch of Retribution
+				}),
 				q(7728,  {	-- STOLEN: Smithing Tuyere and Lookout's Spyglass
 					["u"] = 40,
 					["g"] = {
@@ -341,6 +355,16 @@ _.Zones =
 				q(27960, {	-- The Fewer, the Better
 					["provider"] = { "n", 47267 },	-- Burrian Coalpart
 					["coord"] = { 68.4, 53.2, 32 },
+				}),
+				q(3452, {	-- The Flame's Casing
+					["u"] = 40,
+					["provider"] = { "n", 8479 },	-- Kalaran Windblade
+					["sourceQuest"] = 3443,	-- Forging the Shaft
+				}),
+				q(3442, {	-- The Flawless Flame
+					["u"] = 40,
+					["provider"] = { "n", 8479 },	-- Kalaran Windblade
+					["sourceQuest"] = 3441,	-- Divine Retribution
 				}),
 				q(28035, {	-- The Mountain-Lord's Support
 					["provider"] = { "n", 47393 },	-- Mountain-Lord Rendan
@@ -361,6 +385,16 @@ _.Zones =
 				q(27980, {	-- The Spiders Have to Go
 					["provider"] = { "n", 14634 },	-- Lookout Captain Lolo Longstriker
 					["coord"] = { 37.7, 26.5, 32 },
+				}),
+				q(3453, {	-- The Torch of Retribution
+					["u"] = 40,
+					["provider"] = { "n", 8479 },	-- Kalaran Windblade
+					["sourceQuest"] = 3452,	-- The Flame's Casing
+				}),
+				q(3454, {	-- The Torch of Retribution
+					["u"] = 40,
+					["provider"] = { "n", 3479 },	-- Kalaran Windblade
+					["sourceQuest"] = 3453,	-- The Torch of Retribution
 				}),
 				q(3385,  {	-- The Undermarket
 					["u"] = 40,
@@ -400,6 +434,11 @@ _.Zones =
 					["sourceQuests"] = {
 						27964,	-- Dig-Boss Dinwhisker
 					},
+				}),
+				q(3481, {	-- Trinkets...
+					["u"] = 40,
+					["provider"] = { "o", 149502 },	-- Hoard of the Black Dragonflight
+					["sourceQuest"] = 3463,	-- Set Them Ablaze!
 				}),
 				q(27982, {	-- Twilight Collars
 					["provider"] = { "n", 14626 },	-- Taskmaster Scrange

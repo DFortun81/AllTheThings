@@ -131,10 +131,32 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
 				}),
+				q(3981, {	-- Commander Gor'shak
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9081 },	-- Galamav the Marksman
+					["sourceQuest"] = 3906,	-- Disharmony of Flame
+				}),
+				q(1419,  {	-- Coyote Thieves
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5394 },	-- Neeka Bloodscar
+				}),
+				q(2340, {	-- Deliver the Gems
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 6868 },	-- Jarkal Mossmeld
+					["sourceQuest"] = 2339,	-- Find the Gems and Power Source
+				}),
 				q(27930, {	-- Devastation
 					["coord"] = { 15.9, 33.2, 15 },
 					["description"] = "If you abandon this quest, leave the area then return to the cave.",
 					["sourceQuests"] = { 27858, 27898 },	-- Rheastrasza's Gift (A, H)
+				}),
+				q(3906, {	-- Disharmony of Flame
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9084 },	-- Thunderheart
 				}),
 				q(27927, {	-- Down to the Scar
 					["isBreadcrumb"] = true,
@@ -146,6 +168,11 @@ _.Zones =
 						{ 20.8, 55.7, 15 },	-- Alliance
 						{ 18.4, 41.5, 15 },	-- Horde
 					},
+				}),
+				q(3821, {	-- Dreadmaul Rock
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9082 },	-- Thal'trak Proudtusk
 				}),
 				q(27791, {	-- Dustwind Dig
 					["provider"] = { "n", 46664 },	-- Dr. Hieronymus Blam
@@ -166,6 +193,12 @@ _.Zones =
 					["coord"] = { 20.5, 56.0, 15 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
+				}),
+				q(2339, {	-- Find the Gems and Power Source
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 6868 },	-- Jarkal Mossmeld
+					["sourceQuest"] = 2338,	-- Translating the Journal
 				}),
 				q(27765, {	-- First Sample: Wild Eggs
 					["provider"] = { "n", 46654 },	-- Rhea
@@ -221,6 +254,11 @@ _.Zones =
 						i(63201),	-- Holdout Gloves
 						i(63200),	-- Gorn's Discarded Cloak
 					},
+				}),
+				q(1108,  {	-- Indurium
+					["u"] = 40,
+					["provider"] = { "n", 4618 },	-- Martek the Exiled
+					["sourceQuest"] = 1106,	-- Martek the Exiled
 				}),
 				q(27826, {	-- Into the Dragon's Mouth
 					["provider"] = { "n", 46664 },	-- Dr. Hieronymus Blam
@@ -327,6 +365,11 @@ _.Zones =
 						un(2, i(9522)),	-- Energized Stone Circle
 						un(2, i(10359)),	-- Everlast Boots
 					},
+				}),
+				q(1420,  {	-- Report to Helgrum
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5394 },	-- Neeka Bloodscar
 				}),
 				q(2361,  {	-- Restoring the Necklace
 					["u"] = 40,
@@ -487,6 +530,14 @@ _.Zones =
 					["coord"] = { 18.1, 42.5, 15 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27896 },	-- The Sorrow and the Fury
+				}),
+				q(3911, {	-- The Last Element
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9078 },	-- Shadowmage Vivian Lagrave
+					["g"] = {
+						un(2, i(12038)),	-- Lagrave's Seal
+					},
 				}),
 				q(692,   {	-- The Lost Fragments
 					["u"] = 40,
@@ -720,6 +771,12 @@ _.Zones =
 					["lvl"] = 30,
 					["u"] = 40,
 				}),
+				q(2338, {	-- Translating the Journal
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 6868 },	-- Jarkal Mossmeld
+					["sourceQuest"] = 2318,	-- Translating the Journal
+				}),
 				q(717,   {	-- Tremors of the Earth
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
@@ -744,6 +801,12 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 6868 },	-- Quest Giver: Jarkal Mossmeld
 					["sourceQuests"] = { 2258 },	-- Source Quest: Badlands Reagent Run
+				}),
+				q(3982, {	-- What Is Going On?
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9020 },	-- Commander Gor'shak
+					["sourceQuest"] = 3981,	-- Commander Gor'shak
 				}),
 				q(27775, {	-- When the Going Gets Tough, Cheat
 					["provider"] = { "n", 46653 },	-- Garyanne Fleezlebop

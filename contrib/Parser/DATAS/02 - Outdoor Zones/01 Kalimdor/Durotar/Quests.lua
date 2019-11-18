@@ -6,6 +6,11 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(1, {	-- Durotar
 			n(-17, {	-- Quests
+				q(2161, {	-- A Peon's Budren
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 6786 },	-- Ukor
+				}),
 				q(818,   {	-- A Solvent Spirit
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -470,6 +475,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25173,	-- From Bad to Worse
 				}),
+				q(2937, {	-- Summoning Shadra
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3188 },	-- Master Gadrin
+					["sourceQuest"] = 2936,	-- The Spider God
+				}),
 				q(25195, {	-- That's the End of That Raptor
 					["provider"] = { "n", 39324 },	-- Zen'Taji
 					["coord"] = { 35.8, 41.3, 1 },
@@ -520,6 +531,12 @@ _.Zones =
 				q(42484, {	-- The Firstborn Rises
 					["provider"] = { "n", 107554 },	-- Thassarian
 					["classes"] = { 6 },	-- Death Knight
+				}),
+				q(2936, {	-- The Spider God
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3188 },	-- Master Gadrin
+					["sourceQuest"] = 2935,	-- Consult Master Gadrin
 				}),
 				q(39801, {	-- The Splintered Fleet
 					["sourceQuest"] = 38307,	-- The Warchief Beckons

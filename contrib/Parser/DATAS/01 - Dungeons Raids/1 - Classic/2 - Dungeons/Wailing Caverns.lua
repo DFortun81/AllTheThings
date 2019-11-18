@@ -44,6 +44,12 @@ _.Instances = { tier(1, {	-- Classic
 				q(26873, {	-- Preemptive Methods
 					["provider"] = { "n", 5767 },	-- Nalpak
 				}),
+				q(3366, {	-- The Glowing Shard
+					["u"] = 40,
+					["crs"] = { 3654 },	-- Mutanus the Devourer
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 10441 },	-- Glowing Shard
+				}),
 			}),
 			n(-2, {	-- Vendors
 				n(5783, {	-- Kalldan Felmoon <Specialist Leatherworking Supplies>

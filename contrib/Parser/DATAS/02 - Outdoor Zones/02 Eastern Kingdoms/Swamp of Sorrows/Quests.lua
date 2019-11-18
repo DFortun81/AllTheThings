@@ -63,6 +63,12 @@ _.Zones =
 						i(64617),	-- Larry's Boots
 					},
 				}),
+				q(1428,  {	-- Continued Threat
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5593 },	-- Katar
+					["sourceQuest"] = 1427,	-- Threat From the Sea
+				}),
 				q(625,   {	-- Cortellos' Riddle
 					["u"] = 40,
 					["provider"] = { "o", 2553 },	-- A Soggy Scroll
@@ -90,6 +96,10 @@ _.Zones =
 						27843,	-- Reinforcements Denied
 						27795,	-- Tides of Darkness
 					},
+				}),
+				q(1389,  {	-- Draenethyst Crystals
+					["u"] = 40,
+					["provider"] = { "n", 1776 },	-- Magtoor
 				}),
 				q(27840, {	-- Draenethyst Crystals
 					["provider"] = { "n", 18221 },	-- Holaaru
@@ -129,10 +139,12 @@ _.Zones =
 				}),
 				q(2702,  {	-- Heroes of Old
 					["u"] = 40,
+					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2681,	-- The Stones that Bind Us
 				}),
-				q(2702,  {	-- Heroes of Old 2
+				q(2701,  {	-- Heroes of Old 2
 					["u"] = 40,
+					["provider"] = { "n", 7750 },	-- Corporal Thund Splithoof
 					["sourceQuest"] = 2702,	-- Heroes of Old
 					["g"] = {
 						un(2, i(10659)),	-- Shard of Afrasa
@@ -156,6 +168,11 @@ _.Zones =
 					["provider"] = { "n", 45948 },	-- Crazy Larry
 					["coord"] = { 84.0, 40.1, 51 },
 					["sourceQuest"] = 27597,	-- Crazy Larry
+				}),
+				q(2721, {	-- Kirith
+					["u"] = 40,
+					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
+					["sourceQuest"] = 2701,	-- Heroes of Old
 				}),
 				q(698,   {	-- Lack of Surplus
 					["u"] = 40,
@@ -244,6 +261,11 @@ _.Zones =
 						i(64608),	-- Armed Gauntlets
 					},
 				}),
+				q(1418,  {	-- Neeka Bloodscar
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1442 },	-- Helgrum the Swift
+				}),
 				q(27906, {	-- Neeka Bloodscar
 					["provider"] = { "n", 7623 },	-- Dispatch Commander Ruag
 					["coord"] = { 49.3, 55.3, 51 },
@@ -281,6 +303,11 @@ _.Zones =
 					["provider"] = { "n", 7826 },	-- Ambassador Ardalan
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(1424,  {	-- Pool of Tears
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1443 },	-- Fel'zerul
+				}),
 				q(27694, {	-- Pool of Tears
 					["provider"] = { "n", 46071 },	-- Lord Itharius
 					["coord"] = { 69.4, 54.5, 51 },
@@ -313,6 +340,12 @@ _.Zones =
 						27853,	-- Lumbering Oafs
 						27852,	-- Orcs and Humans
 					},
+				}),
+				q(1444, {	-- Return to Fel'Zerul
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5598 },	-- Atal'ai Exile
+					["sourceQuest"] = 1429,	-- The Atal'ai Exile
 				}),
 				q(24913, {	-- Remember the Light
 					["provider"] = { "n", 17127 },	-- Anchorite Avuun
@@ -368,6 +401,12 @@ _.Zones =
 					["coord"] = { 74.2, 12.1, 51 },
 					["sourceQuest"] = 27587,	-- Maliciously Delicious
 				}),
+				q(1429, {	-- The Atal'ai Exile
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1443 },	-- Fel'zerul
+					["sourceQuest"] = 1424,	-- Pool of Tears
+				}),
 				q(27757, {	-- The Darkest Depths
 					["provider"] = { "n", 46172 },	-- Baba Bogbrew
 					["coord"] = { 69.0, 76.5, 51 },
@@ -378,6 +417,11 @@ _.Zones =
 						i(64611),	-- Swamp Skull Cap
 						i(64619),	-- Sinister Belt
 					},
+				}),
+				q(2744, {	-- The Demon Hunter
+					["u"] = 40,
+					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
+					["sourceQuest"] = 2743,	-- The Cover of Darkness
 				}),
 				q(2621,  {	-- The Disgraced One
 					["u"] = 40,
@@ -448,9 +492,21 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 2622,	-- The Missing Orders
 				}),
+				q(1422,  {	-- Threat From the Sea
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5592 },	-- Tok'Kar
+				}),
+				q(1426,  {	-- Threat From the Sea
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5593 },	-- Katar
+				}),
 				q(1427,  {	-- [DEPRECATED]Threat From the Sea
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5593 },	-- Katar
+					["sourceQuest"] = 1426,	-- Threat From the Sea
 					["g"] = {
 						un(2, i(9680)),	-- Tok'kar's Murloc Shanker
 						un(2, i(9678)),	-- Tok'kar's Murloc Basher

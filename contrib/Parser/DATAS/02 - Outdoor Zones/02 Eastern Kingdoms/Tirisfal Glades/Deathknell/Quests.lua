@@ -114,11 +114,23 @@ _.Zones =
 						["races"] = { 5 },	-- undead
 						["classes"] = { 5 },	-- priest
 					}),
+					q(3901, {	-- Rattling the Rattlecages
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
+						["sourceQuest"] = 364,	-- The Mindless Ones
+					}),
 					q(26800, {	-- Recruitment
 						["provider"] = { "n", 26800 },	-- Deathguard Saltain
 						["coord"] = { 49.9, 56.3, 465 },
 						["races"] = { 5 },	-- undead
 						["sourceQuests"] = { 25089 },	-- Beyond the Graves
+					}),
+					q(3902, {	-- Scavenging Deathknell
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 1740 },	-- Deathguard Saltain
+						["sourceQuest"] = 376,	-- The Damned
 					}),
 					q(26801, {	-- Scourge on our Perimeter
 						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis

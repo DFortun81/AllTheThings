@@ -6,6 +6,10 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(64, {	-- Thousand Needles
 			n(-17, {	-- Quests
+				q(1175,  {	-- A Bump in the Road
+					["u"] = 40,
+					["provider"] = { "n", 4629 },	-- Trackmaster Zherin
+				}),
 				q(25588, {	-- A Little Payback
 					["provider"] = { "n", 40591 },	-- Drag Master Miglen
 					["coord"] = { 78.0, 73.2, 64 },
@@ -27,6 +31,17 @@ _.Zones =
 						i(63579),	-- Rugfizzle's Boots
 						i(63580),	-- Outhouse Boots
 					},
+				}),
+				q(1153,  {	-- A New Ore Sample
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3433 },	-- Tatternack Steelforge
+					["sourceQuest"] = 893,	-- Weapons of Choice
+				}),
+				q(1118,  {	-- Back to Booty Bay
+					["u"] = 40,
+					["provider"] = { "n", 4452 },	-- Kravel Koalbeard
+					["sourceQuest"] = 1117,	-- Rumors for Kravel
 				}),
 				q(25790, {	-- Back to Crazzle
 					["provider"] = { "n", 41204 },	-- Khan Ablinh
@@ -194,6 +209,11 @@ _.Zones =
 						i(63616),	-- Pozzik's Vest
 					},
 				}),
+				q(1114,  {	-- Delivery to the Gnomes
+					["u"] = 40,
+					["provider"] = { "n", 4452 },	-- Kravel Koalbeard
+					["sourceQuest"] = 1112,	-- Parts for Kravel
+				}),
 				q(25504, {	-- Do Me a Favor? (A)
 					["provider"] = { "n", 40027 },	-- Fizzle Brassbolts
 					["coord"] = { 75.9, 74.6, 64 },
@@ -243,6 +263,11 @@ _.Zones =
 					["coord"] = { 88.5, 54.8, 64 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25791,	-- Back to Riznek
+				}),
+				q(1107,  {	-- Encrusted Tail Fins
+					["u"] = 40,
+					["provider"] = { "n", 4453 },	-- Wizzle Brassbolts
+					["sourceQuest"] = 1105,	-- Hardened Shells
 				}),
 				q(25778, {	-- Fake Gold for Black Gold
 					["provider"] = { "n", 41190 },	-- Crazzle Sprysprocket
@@ -328,6 +353,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25745,	-- Negotiations
 				}),
+				q(1120,  {	-- Get the Gnomes Drunk
+					["u"] = 40,
+					["provider"] = { "n", 4452 },	-- Kravel Koalbeard
+					["sourceQuest"] = 1119,	-- Zanzil's Mixture and a Fool's Stout
+				}),
 				q(25756, {	-- Get Zherin!
 					["provider"] = { "n", 41190 },	-- Crazzle Sprysprocket
 					["coord"] = { 91.4, 57.6, 64 },
@@ -351,6 +381,11 @@ _.Zones =
 						25799,	-- Defend the Drill
 						25797,	-- Eminent Domain
 					},
+				}),
+				q(1178,  {	-- Goblin Sponsorship
+					["u"] = 40,
+					["provider"] = { "n", 4630 },	-- Pozzik
+					["sourceQuest"] = 1176,	-- Load Lightening
 				}),
 				q(27318, {	-- Grimtotem Chiefs: Elder Stormhoof
 					["provider"] = { "n", 45277 },	-- Feralas Sentinel
@@ -440,6 +475,10 @@ _.Zones =
 						un(2, i(15458)),	-- Tundra Boots
 					},
 				}),
+				q(1105,  {	-- Hardened Shells
+					["u"] = 40,
+					["provider"] = { "n", 4453 },	-- Wizzle Brassbolts
+				}),
 				q(25660, {	-- Haunted
 					["provider"] = { "n", 41058 },	-- Spirit of Tony Two-Tusk
 					["coord"] = { 91.7, 78.9, 64 },	-- can be picked up anywhere in the Southsea Holdfast, but this is where it first shows up
@@ -503,10 +542,23 @@ _.Zones =
 						i(63646),	-- Wind Serpent Bracers
 					},
 				}),
+				q(1190,  {	-- Keeping Pace
+					["u"] = 40,
+					["provider"] = { "n", 4630 },	-- Pozzik
+					["sourceQuest"] = 1137,	-- news for Fizzle
+				}),
+				q(1176,  {	-- Load Lightening
+					["u"] = 40,
+					["provider"] = { "n", 4630 },	-- Pozzik
+				}),
 				q(27062, {	-- Looming Threat
 					["provider"] = { "n", 39895 },	-- Kanati Greycloud
 					["coord"] = { 11.1, 11.2, 64 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(1106,  {	-- Martek the Exiled
+					["u"] = 40,
+					["provider"] = { "n", 4454 },	-- Fizzle Brassbolts
 				}),
 				q(25744, {	-- Negotiations
 					["provider"] = { "n", 40027 },	-- Fizzle Brassbolts
@@ -539,10 +591,21 @@ _.Zones =
 					["coord"] = { 12.8, 34.0, 64 },
 					["sourceQuest"] = 28098,	-- The Twilight Skymaster
 				}),
+				q(1112,  {	-- Parts for Kravel
+					["u"] = 40,
+					["provider"] = { "n", 3453 },	-- Wharfmaster Dizzywig
+					["sourceQuest"] = 1111,	-- Wharfmaster Dizzywig
+				}),
+				q(1148,  {	-- Parts of the Swarm
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 5877 },	-- Cracked Silithis Carapace
+				}),
 				q(1184,  {	-- Parts of the Swarm
 					["u"] = 40,
-					["provider"] = { "n", 3428 },	-- Korran
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3428 },	-- Korran
+					["sourceQuest"] = 1148,	-- Parts of the Swarm
 					["g"] = {
 						un(2, i(6738)),	-- Bleeding Crescent
 						un(2, i(6737)),	-- Dryleaf Pants
@@ -586,6 +649,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25543,	-- Circle the Wagons... er, Boats
 				}),
+				q(1187,  {	-- Razzeric's Tweakin
+					["u"] = 40,
+					["provider"] = { "n", 4706 },	-- Razzeric
+					["sourceQuest"] = 1186,	-- The Eighteenth Pilot
+				}),
 				q(28088, {	-- Release Heartrazor
 					["provider"] = { "n", 47471 },	-- Pao'ka Swiftmountain
 					["coord"] = { 12.8, 33.9, 64 },
@@ -593,6 +661,32 @@ _.Zones =
 						28087,	-- Death to All Trappers!
 						28086,	-- Free the Pridelings
 					},
+				}),
+				q(1122,  {	-- Report Back to Fizzlebub
+					["u"] = 40,
+					["provider"] = { "n", 4452 },	-- Kravel Koalbeard
+					["sourceQuests"] = {
+						1120,	-- Get the Gnomes Drunk
+						1121,	-- Get the Goblins Drunk
+					},
+				}),
+				q(1194,  {	-- Rizzle's Schematics
+					["u"] = 40,
+					["provider"] = { "o", 20805 },	-- Rizzle's Unguarded Plans
+					["sourceQuest"] = 1190,	-- Keeping Pace
+				}),
+				q(1110,  {	-- Rocket Car Parts
+					["u"] = 40,
+					["provider"] = { "n", 4452 },	-- Kravel Koalbeard
+				}),
+				q(1188,  {	-- Safety First
+					["u"] = 40,
+					["provider"] = { "n", 4706 },	-- Razzeric
+					["sourceQuest"] = 1187,	-- Razzeric's Tweaking
+				}),
+				q(1104,  {	-- Salt Flat Venom
+					["u"] = 40,
+					["provider"] = { "n", 4454 },	-- Fizzle Brassbolts
 				}),
 				q(25871, {	-- Save the Sentinel
 					["provider"] = { "n", 41444 },	-- Brienna Starglow
@@ -745,6 +839,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27317,	-- The Rattle of Bones
 				}),
+				q(1186,  {	-- The Eighteenth Pilot
+					["u"] = 40,
+					["provider"] = { "n", 4630 },	-- Pozzik
+					["sourceQuest"] = 1183,	-- Goblin Sponsorship
+				}),
 				q(28140, {	-- The Elder Crone
 					["provider"] = { "n", 47580 },	-- Lakota Windsong
 					["coord"] = { 30.4, 49.2, 64 },
@@ -795,15 +894,26 @@ _.Zones =
 						28284,	-- What's that Rattle?
 					},
 				}),
+				q(1115,  {	-- The Rumormonger
+					["u"] = 40,
+					["provider"] = { "n", 4452 },	-- Kravel Koalbeard
+					["sourceQuest"] = 1114,	-- Delivery to the Gnomes
+				}),
 				q(1197,  {	-- The Sacred Flame
 					["u"] = 40,
-					["provider"] = { "n", 4722 },	-- Rau Cliffrunner
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4722 },	-- Rau Cliffrunner
 					["sourceQuest"] = 1196,	-- The Sacred Flame
 					["g"] = {
 						un(2, i(6739)),	-- Cliffrunner's Aim
 						un(2, i(6740)),	-- Azure Sash
 					},
+				}),
+				q(1147,  {	-- The Swarm Grows
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4483 },	-- Moktar Krin
+					["sourceQuest"] = 1146,	-- The Swarm Grows
 				}),
 				q(1150,  {	-- Test of Endurance
 					["provider"] = { "n", 2986 },	-- Dorn Plainstalker
@@ -945,6 +1055,10 @@ _.Zones =
 						i(157017),	-- Deep-Sea Retrieval Hook
 						i(157018),	-- Oversized Mixing Agitator
 					},
+				}),
+				q(1111,  {	-- Wharfmaster Dizzywig
+					["u"] = 40,
+					["provider"] = { "n", 4452 },	-- Kravel Koalbeard
 				}),
 				q(28283, {	-- What's that Rattle? (only pops up if you complete "Grimtotem Chiefs: Isha Gloomaxe" and haven't picked up "The Rattle of Bones")
 					["provider"] = { "n", 45277 },	-- Feralas Sentinel

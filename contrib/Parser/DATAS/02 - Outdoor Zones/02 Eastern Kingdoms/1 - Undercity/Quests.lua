@@ -58,6 +58,10 @@ _.Zones =
 						un(2, i(17043)),	-- Zealot's Robe
 					},
 				}),
+				q(3784,  {	-- Assisting Arch Druid Runetotem
+					["u"] = 40,
+					["provider"] = { "n", 6741 },	-- Innkeeper Norman
+				}),
 				q(1847,  {	-- Brutal Legguards
 					["provider"] = { "n", 6411 },	-- Velora Nitely
 					["coord"] = { 62.6,39.4, 90 },
@@ -159,6 +163,11 @@ _.Zones =
 						un(2, i(4984)),	-- Skull of Impending Doom
 					},
 				}),
+				q(1109,  {	-- Going, Going, Guano
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2055 },	-- Master Apothecary Faranell
+				}),
 				q(27281, {	-- Grezz Ragefist
 					["provider"] = { "n", 4593 },	-- Christoph Walker
 					["coord"] = { 47.2, 15.2, 90 },	-- Christoph Walker (Undercity)
@@ -174,6 +183,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 3 },	-- Hunter
 					["lvl"] = 20,
+				}),
+				q(1113,  {	-- Hearts of Zeal
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2055 },	-- Master Apothecary Faranell
+					["sourceQuest"] = 1109,	-- Going, Going, Guano!
 				}),
 				q(243,   {	-- Into the Field
 					["u"] = 40,
@@ -209,6 +224,11 @@ _.Zones =
 					["classes"] = { 9 },	-- Warlock
 					["maps"] = { 88, 90, 110 },
 					["lvl"] = 20,
+				}),
+				q(2995,  {	-- Lines of Communication
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 7825 },	-- Oran Snakewrithe
 				}),
 				q(28323, {	-- Meet with Brother Silverhallow
 					["provider"] = { "n", 4606 },	-- Aelthalyste
@@ -368,6 +388,11 @@ _.Zones =
 						un(2, i(20643)),	-- Undercity Reservist's Cap
 					},
 				}),
+				q(2342,  {	-- Reclaimed Treasures
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5651 },	-- Patrick Garrett
+				}),
 				q(366,   {	-- Return the Book
 					["u"] = 40,
 					["races"] = { 2, 5, 8, },	-- Orc, Undead, Troll
@@ -414,6 +439,23 @@ _.Zones =
 					["races"] = { 8 },	-- Troll
 					["classes"] = { 5 },	-- Priest
 					["lvl"] = 20,
+				}),
+				q(3568,  {	-- Seeping Corruption
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 8390 },	-- Chemist Cuely
+				}),
+				q(3569, {	-- Seeping Corruption
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 8390 },	-- Chemist Cuely
+					["sourceQuest"] = 3568,	-- Seeping Corruption
+				}),
+				q(3570, {	-- Seeping Corruption
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 8390 },	-- Chemist Cuely
+					["sourceQuest"] = 3569,	-- Seeping Corruption
 				}),
 				q(1962,  {	-- Spellfire Robes
 					["provider"] = { "n", 4576 },	-- Josef Gregorian
@@ -504,6 +546,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1498 },	-- Bethor Iceshard
 					["sourceQuest"] = 405,	-- The Prodigal Lich
+				}),
+				q(1004,  {	-- The New Frontier
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10879 },	-- Harbinger Balthazad
 				}),
 				q(5725,  {	-- The Power to Destroy
 					["provider"] = { "n", 2425 },	-- Varimathras

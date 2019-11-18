@@ -181,6 +181,11 @@ _.Zones =
 						un(2, i(18400)),	-- Ring of Living Stone
 					},
 				}),
+				q(1185,  {	-- Under the Chitin Was...
+					["u"] = 40,
+					["provider"] = { "n", 11939 },	-- Umber
+					["sourceQuest"] = 6845,	-- Uncovering Past Secrets
+				}),
 				q(29302, {	-- Unlocking the Secrets Within
 					["provider"] = { "n", 11801 },	-- Rabine Saturna
 					["lvl"] = 85,

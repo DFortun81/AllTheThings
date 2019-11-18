@@ -110,6 +110,12 @@ _.Zones =
 					["provider"] = { "n", 2316 },	-- Gol'dir
 					["sourceQuest"] = 503,	-- Gol'dir
 				}),
+				q(1066,  {	-- Blood of Innocents
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2216 },	-- Apothecary Lydon
+					["sourceQuest"] = 1065,	-- Journey to Tarren Mill
+				}),
 				q(557,   {	-- Bracers of Binding
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -157,6 +163,12 @@ _.Zones =
 					["provider"] = { "n", 47551 },	-- Spider-Handler Sarus
 					["coord"] = { 33.2, 73.6, 25 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(2935, {	-- Consult Master Gadrin
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2216 },	-- Apothecary Lydon
+					["sourceQuest"] = 2934,	-- Undamaged Venom Sac
 				}),
 				q(564,   {	-- Costly Menace
 					["u"] = 40,
@@ -597,6 +609,17 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28209 },	-- Freedom for Lydon
 				}),
+				q(1361,  {	-- Regthar Deathgate
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2229 },	-- Krusk
+				}),
+				q(1067,  {	-- Return to Thunder Bluff
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2216 },	-- Apothecary Lydon
+					["sourceQuest"] = 1066,	-- Blood of Innocents
+				}),
 				ql(q(30116, {	-- Sharpening Your Fangs
 					["provider"] = { "n", 57777 },	-- Wrathion
 					["coord"] = { 71.4, 45.6, 25 },
@@ -873,6 +896,12 @@ _.Zones =
 						28146,	-- Coastal Delicacies
 						28144,	-- Thieving Little Monsters
 					},
+				}),
+				q(2934, {	-- Undamaged Venom Sac
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2216 },	-- Apothecary Lydon
+					["sourceQuest"] = 2933,	-- Venom Bottles
 				}),
 				q(28752, {	-- Unstoppable Onslaught (REMOVED in Beta)
 					["u"] = 1,

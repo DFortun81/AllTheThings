@@ -44,6 +44,18 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 				}),
+				q(3801, {	-- Dark Iron Legacy
+					["u"] = 40,
+					["provider"] = { "n", 8888 },	-- Franclorn Forgewright
+				}),
+				q(3802, {	-- Dark Iron Legacy
+					["u"] = 40,
+					["provider"] = { "n", 8888 },	-- Franclorn Forgewright
+					["sourceQuest"] = 3801,	-- Dark Iron Legacy
+					["g"] = {
+						i(11000),	-- Shadowforge Key
+					},
+				}),
 				q(8968, {	-- The Left Piece of Lord Valthalak's Amulet (Stratholme)
 					["provider"] = { "n", 16033 },	-- Bodley
 					["coord"] = { 20.6, 29.1, 35 },

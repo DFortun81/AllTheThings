@@ -70,6 +70,10 @@ _.Zones =
 					["description"] = "Available after completing all quests at Mossy Pile.",
 					["isBreadcrumb"] = true,
 				}),
+				q(3883, {	-- Alien Ecology
+					["u"] = 40,
+					["provider"] = { "n", 9271 },	-- Hol'anyee Marshal
+				}),
 				q(24866, {	-- An Abandoned Research Camp
 					["coord"] = { 38.4, 66.1, 78 },
 					["provider"] = { "o", 161521 },	-- Research Equipment
@@ -202,6 +206,10 @@ _.Zones =
 					},
 					["coord"] = { 30.6, 51.1, 78 },
 					["sourceQuest"] = 24703,	-- An Important Lesson
+				}),
+				q(3881, {	-- Expedition Salvation
+					["u"] = 40,
+					["provider"] = { "n", 9270 },	-- Williden Marshal
 				}),
 				q(24695, {	-- Ever Watching From Above
 					["provider"] = { "n", 38502 },	-- Nablya

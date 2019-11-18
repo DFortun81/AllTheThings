@@ -191,6 +191,11 @@ _.Zones =
 					["coord"] = { 46.4, 79.0, 81 },
 					["sourceQuest"] = 8304,	-- Dearest Natalia
 				}),
+				q(1126,  {	-- Hive in the Tower
+					["u"] = 40,
+					["provider"] = { "n", 13220 },	-- Layo Starstrike
+					["sourceQuest"] = 1125,	-- The Spirits of Southwind
+				}),
 				q(8306,  {	-- Into The Maw of Madness
 					["coord"] = { 53.2, 32.5, 81 },
 					["sourceQuest"] = 8304,	-- Dearest Natalia
@@ -361,6 +366,11 @@ _.Zones =
 						un(2, i(22380)),	-- Simone's Cultivating Hammer
 						un(2, i(22377)),	-- The Thunderwood Poker
 					},
+				}),
+				q(1125,  {	-- The Spirits of Southwind
+					["u"] = 40,
+					["provider"] = { "n", 13220 },	-- Layo Starstrike
+					["sourceQuest"] = 1124,	-- Wasteland
 				}),
 				q(8279,  {	-- The Twilight Lexicon
 					["provider"] = { "n", 15194 },	-- Hermit Ortell

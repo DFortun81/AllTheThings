@@ -1170,7 +1170,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 				}),
-				q(51443, {		-- Mission Statement
+				q(51443, {	-- Mission Statement
 					["provider"] = { "n", 140176 },	-- Nathanos Blightcaller
 					["coord"] = { 48.9, 91.4, 85 },
 					["sourceQuest"] = 53031,	-- The Speaker's Imperative
@@ -1188,6 +1188,17 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["classes"] = { 11 },	-- Druid
 					["lvl"] = 50,
+				}),
+				q(2283, {	-- Necklace Recovery
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 6986 },	-- Dran Droffers
+				}),
+				q(2284, {	-- Necklace Recovery, Take 2
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 6986 },	-- Dran Droffers
+					["sourceQuest"] = 2283,	-- Necklace Recovery
 				}),
 				q(2950,  {	-- Nogg's Ring Redo
 					["provider"] = { "n", 3412 },	-- Nogg
@@ -1228,6 +1239,11 @@ _.Zones =
 					["classes"] = { 9 },	-- Warlock
 					["lvl"] = 90,
 				}),
+				q(1361,  {	-- Regthar Deathgate
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4485 },	-- Belgrom Rockmaul
+				}),
 				q(25275, {	-- Report to the Labor Captain
 					["provider"] = { "n", 14720 },	-- High Overlord Saurfang
 					["coord"] = { 48.6, 71.0, 85 },
@@ -1250,6 +1266,12 @@ _.Zones =
 					["sourceQuest"] = 26830,	-- Traitor's Bait
 					["races"] = HORDE_ONLY,
 					["lvl"] = 84,
+				}),
+				q(3122, {	-- Return to Witch Doctor Uzer'i
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3216 },	-- Neeru Fireblade
+					["sourceQuest"] = 3121,	-- A Strange Request
 				}),
 				q(649,   {	-- Ripple Recovery
 					["u"] = 40,
@@ -1544,6 +1566,12 @@ _.Zones =
 						un(32, i(18807)),	-- Helm of Latent Power (1.4 till 1.7 only)
 					},
 				}),
+				q(4002, {	-- The Eastern Kingdoms
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4949 },	-- Thrall
+					["sourceQuest"] = 4001,	-- What Is Going On?
+				}),
 				q(30094, {	-- The End Time
 					["provider"] = { "n", 52382 },	-- Ziradormi
 					["coord"] = { 48.8, 70.4, 85 },
@@ -1598,6 +1626,11 @@ _.Zones =
 					["sourceQuest"] = 27722,	-- Warchief's Command: Deepholm!
 					["lvl"] = 82,
 				}),
+				q(1018,  {	-- The New Frontier
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10880 },	-- Warcaller Gorlach
+				}),
 				q(28458, {	-- The Pyromancer's Grimoire
 					["provider"] = { "n", 47246 },	-- Ureda
 					["coord"] = { 48.4, 62.6, 85 },
@@ -1640,6 +1673,12 @@ _.Zones =
 					["sourceQuest"] = 51443,	-- Mission Statement
 					["races"] = HORDE_ONLY,
 					["lvl"] = 110,
+				}),
+				q(1146,  {	-- The Swarm Grows
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4485 },	-- Belgrom Rockmaul
+					["sourceQuest"] = 1145,	-- The Swarm Grows
 				}),
 				q(29220, {	-- To Bambala
 					["provider"] = { "n", 52234 },	-- Bwemba

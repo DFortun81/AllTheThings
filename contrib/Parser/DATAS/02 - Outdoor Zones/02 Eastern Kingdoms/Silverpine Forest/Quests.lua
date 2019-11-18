@@ -519,6 +519,12 @@ _.Zones =
 						27550,	-- Pyrewood's Fall
 					},
 				}),
+				q(3221, {	-- Speak with Renferrel
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1952 },	-- High Executor Hadrec
+					["sourceQuest"] = 449,	-- The Deathstalkers' Report
+				}),
 				q(27069, {	-- Steel Thunder
 					["provider"] = { "n", 44916 },	-- Admiral Hatcher
 					["coord"] = { 44.0, 21.3, 21 },
@@ -690,6 +696,12 @@ _.Zones =
 					["g"] = {
 						un(7, i(4597)),	-- Recipe: Discolored Healing Potion
 					},
+				}),
+				q(1359,  {	-- Zinge's Delivery
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1937 },	-- Apothecary Renferrel
+					["sourceQuest"] = 3221,	-- Speak with Renferrel
 				}),
 			}),
 		}),

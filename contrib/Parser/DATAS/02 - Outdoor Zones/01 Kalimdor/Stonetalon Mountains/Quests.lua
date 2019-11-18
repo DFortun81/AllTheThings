@@ -216,6 +216,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25669,	-- Rumble in the Lumber...Mill
 				}),
+				q(1087,  {	-- Cenarius' Legacy
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4198 },	-- Braelyn Firehand
+				}),
 				q(25652, {	-- Commandeer That Balloon!
 					["provider"] = { "n", 40879 },	-- Boog the "Gear Whisperer"
 					["coord"] = { 72.5, 61.4, 65 },
@@ -332,6 +337,16 @@ _.Zones =
 					["coord"] = { 59.5, 56.8, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25652,	-- Commandeer That Balloon!
+				}),
+				q(1094,  {	-- Further Instructions
+					["u"] = 40,
+					["provider"] = { "n", 4201 },	-- Ziz Fizziks
+					["sourceQuest"] = 1093,	-- Super Reaper 6000
+				}),
+				q(1096,  {	-- Gerenzo Wrenchwhistle
+					["u"] = 40,
+					["provider"] = { "n", 4201 },	-- Ziz Fizziks
+					["sourceQuest"] = 1095,	-- Further Instructions
 				}),
 				q(25729, {	-- Gerenzo the Traitor
 					["provider"] = { "n", 40895 },	-- Professor Xakxak Gyromate
@@ -558,6 +573,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1070,	-- On Guard in Stonetalon
 				}),
+				q(1088,  {	-- Ordanus
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4198 },	-- Braelyn Firehand
+					["sourceQuest"] = 1087,	-- Cenarius' Legacy
+				}),
 				q(26016, {	-- Orders from Base Camp
 					["u"] = 40,
 					["crs"] = { 41937 },	-- Marshal Paltrow
@@ -736,6 +757,11 @@ _.Zones =
 						i(57499),	-- Infested Breastplate
 						i(57498),	-- Bow of Invisible Aim
 					},
+				}),
+				q(1093,  {	-- Super Reaper 6000
+					["u"] = 40,
+					["provider"] = { "n", 4201 },	-- Ziz Fizziks
+					["sourceQuest"] = 1483,	-- Ziz Fizziks
 				}),
 				q(25765, {	-- Tell 'Em Koko Sent You
 					["provider"] = { "n", 40897 },	-- Northwatch Captain Kosak

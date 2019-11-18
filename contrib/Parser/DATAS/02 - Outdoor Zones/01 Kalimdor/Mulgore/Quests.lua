@@ -22,6 +22,11 @@ _.Zones =
 						i(131217),	-- Waistband of Tragic Memory
 					},
 				}),
+				q(1656, {	-- A Task Unfinished
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 6775 },	-- Antur Fallow
+				}),
 				q(743,   {	-- Dangers of the Windfury
 					["provider"] = { "n", 2985 },	-- Ruul Eagletalon
 					["coord"] = { 47.5, 61.3, 7 },

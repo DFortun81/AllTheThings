@@ -305,6 +305,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26677,	-- Ghoulish Effigy
 				}),
+				q(1372,  {	-- Nothing But The Truth
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5418 },	-- Deathstalker Zraedus
+				}),
 				q(26680, {	-- Ogre Thieves
 					["provider"] = { "n", 289 },	-- Abercrombie
 					["coord"] = { 87.4, 35.2, 47 },

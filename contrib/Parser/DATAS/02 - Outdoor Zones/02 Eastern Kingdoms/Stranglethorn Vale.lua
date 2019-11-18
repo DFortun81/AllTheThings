@@ -39,6 +39,31 @@ _.Zones =
 					q(624,   {	-- Cortellos' Riddle
 						["u"] = 40,
 					}),
+					q(1116,  {	-- Dream Dust in the Swamp
+						["u"] = 40,
+						["provider"] = { "n", 773 },	-- Krazek
+						["sourceQuest"] = 1115,	-- The Rumormonger
+					}),
+					q(1181,  {	-- Goblin Sponsorship
+						["u"] = 40,
+						["provider"] = { "n", 4631 },	-- Wharfmaster Lozgil
+						["sourceQuest"] = 1180,	-- Goblin Sponsorship
+					}),
+					q(1182,  {	-- Goblin Sponsorship
+						["u"] = 40,
+						["provider"] = { "n", 2496 },	-- Baron Revilgaz
+						["sourceQuest"] = 1181,	-- Goblin Sponsorship
+					}),
+					q(1183,  {	-- Goblin Sponsorship
+						["u"] = 40,
+						["provider"] = { "n", 2496 },	-- Baron Revilgaz
+						["sourceQuest"] = 1182,	-- Goblin Sponsorship
+					}),
+					q(2932, {	-- Grim Message
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 2497 },	-- Nimboya
+					}),
 					q(581,   {	-- Hunt for Yenniku
 						["u"] = 40,
 						["races"] = HORDE_ONLY,
@@ -47,6 +72,12 @@ _.Zones =
 					q(201,   {	-- Investigate the Camp
 						["u"] = 40,
 						["provider"] = { "n", 773 },	-- Krazek
+					}),
+					q(1261,  {	-- Marg Speaks
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["provider"] = { "o", 2076 },	-- Bubbling Cauldron
+						["sourceQuest"] = 1240,	-- The Troll Witchdoctor
 					}),
 					q(570,   {	-- Mok'thardin's Enchantment
 						["u"] = 40,
@@ -76,6 +107,16 @@ _.Zones =
 						["provider"] = { "n", 2502 },	-- "Shaky" Phillipe
 						["sourceQuest"] = 606,	-- Scaring Shaky
 					}),
+					q(3626, {	-- Return to the Blasted Lands
+						["u"] = 40,
+						["provider"] = { "n", 7802 },	-- Galvan the Ancient
+						["sourceQuest"] = 3625,	-- Enchanted Azsharite Fel Weaponry
+					}),
+					q(1117,  {	-- Rumors for Kravel
+						["u"] = 40,
+						["provider"] = { "n", 773 },	-- Krazek
+						["sourceQuest"] = 1116,	-- Dream Dust in the Swamp
+					}),
 					q(606,   {	-- Scaring Shaky
 						["u"] = 40,
 						["provider"] = { "n", 2501 },	-- "Sea Wolf" MacKinley
@@ -103,6 +144,10 @@ _.Zones =
 						["u"] = 40,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "o", 2076 },	-- Bubbling Cauldron
+					}),
+					q(2872, {	-- Stoley's Debt
+						["u"] = 40,
+						["provider"] = { "n", 2501 },	-- "Sea Wolf" MacKinley
 					}),
 					q(575,   {	-- Supply and Demand
 						["u"] = 40,
@@ -163,6 +208,10 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 2519 },	-- Kin'weelay
 					}),
+					q(2864, {	-- Tran'rek
+						["u"] = 40,
+						["provider"] = { "n", 773 },	-- Krazek
+					}),
 					q(638,   {	-- Trollbane
 						["u"] = 40,
 						["races"] = HORDE_ONLY,
@@ -181,6 +230,14 @@ _.Zones =
 					q(580,   {	-- Whiskey Slim's Lost Grog
 						["u"] = 40,
 						["provider"] = { "n", 2491 },	-- Whiskey Slim
+					}),
+					q(1119,  {	-- Zanzil's Mixture and a Fool's Stout
+						["u"] = 40,
+						["provider"] = { "n", 2498 },	-- Crank Fizzlebub
+						["sourceQuests"] = {
+							1118,	-- Back to Booty Bay
+							621,	-- Zanzil's Secret
+						},
 					}),
 				}),
 			},

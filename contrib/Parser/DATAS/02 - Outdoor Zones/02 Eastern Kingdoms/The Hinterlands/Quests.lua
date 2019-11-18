@@ -378,6 +378,17 @@ _.Zones =
 						un(2, i(19114)),	-- Highland Bow
 					},
 				}),
+				q(2742, {	-- Rin'ji is Trapped!
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 7780 },	-- Rin'ji
+				}),
+				q(2782, {	-- Rin'ji's Secret
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 142127 },	-- Rin'ji's Secret
+					["sourceQuest"] = 2742,	-- Rin'ji is Trapped!
+				}),
 				q(81,    {	-- Ripple Discovery
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -660,6 +671,11 @@ _.Zones =
 						i(59283),	-- Revantusk Boots
 						i(131498),	-- Encroaching Boots
 					},
+				}),
+				q(2933, {	-- Venom Bottles
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 142702 },	-- Venom Bottle
 				}),
 				q(26525, {	-- Venomous Secrets (A)
 					["provider"] = { "n", 43156 },	-- Fraggar Thundermantle
