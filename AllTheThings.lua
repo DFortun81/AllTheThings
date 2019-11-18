@@ -4907,7 +4907,7 @@ end)();
 				return "Interface\\Addons\\AllTheThings\\assets\\fp_neutral";
 			else
 				-- Something that isn't dynamic.
-				return table[key];
+				return rawget(t.info, key);
 			end
 		end
 	};
