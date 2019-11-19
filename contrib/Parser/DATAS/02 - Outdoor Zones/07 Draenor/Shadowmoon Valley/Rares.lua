@@ -141,7 +141,6 @@ _.Zones =
 					},
 				}),
 				n(85121, {	-- Lady Temptessa
-					["description"] = "Only appears when Assault on Socrethar's Rise is active.",
 					["questID"] = 37355,
 					["isDaily"] = true,
 					["coord"] = { 48.0, 77.6, 539 },
