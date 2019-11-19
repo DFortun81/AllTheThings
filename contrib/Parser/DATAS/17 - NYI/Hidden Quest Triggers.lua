@@ -993,13 +993,14 @@ _.NeverImplemented =
 		q(54715),	-- Drustvar Secret Supply Chest (playing as Alliance)
 		q(54717),	-- Nazmir Secret Supply Chest (playing as Alliance)
 		q(55387),	-- Nazmir Secret Supply Chest (playing as Alliance)
+		q(55388),	-- Stormsong Valley Secret Supply Chest (playing as Alliance)
 		q(54714),	-- Tiragarde Sound Secret Supply Chest
 		q(55347),	-- Tiragarde Sound Secret Supply Chest
 		q(54718),	-- Vol'dun Secret Supply Chest (playing as Alliance)
 		q(55389),	-- Vol'dun Secret Supply Chest (playing as Alliance)
 		q(54720),	-- Zuldazar Secret Supply Chest (playing as Horde)
 		q(55391),	-- Zuldazar Secret Supply Chest (playing as Horde and Alliance)
-		q(53640),	-- Zuldazar Secret Supply Chest (as Horde) / Zuldazar, Tiragarde, Nazmir, Vol'dun, Drustvar (as Alliance) (it probably triggers on both factions in all old BfA zones)
+		q(53640),	-- Zuldazar Secret Supply Chest (as Horde) / Zuldazar, Stormsong Valley (as Alliance), Tiragarde, Nazmir, Vol'dun, Drustvar (as Alliance) (it probably triggers on both factions in all old BfA zones)
 		q(55412),	-- looting War Supply Crate in Vol'dun on Alliance (not secret chest)
 		q(55409),	-- looting War Supply Crate in Nazmir on Alliance (not secret chest)
 		q(55410),	-- looting War Supply Crate in Stormsong Valley on Alliance (not secret chest)
