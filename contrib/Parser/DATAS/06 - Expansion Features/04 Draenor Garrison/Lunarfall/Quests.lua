@@ -472,7 +472,37 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 100,
 					}),
+					q(37774, {	-- Death to Gor'thul!
+						["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 100,
+					}),
+					q(37778, {	-- Death to Hivelord Ik'rix!
+						["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 100,
+					}),
+					q(37775, {	-- Death to Nullifier Darkoor!
+						["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 100,
+					}),
+					q(37948, {	-- Death to Nullifier Darkoor!
+						["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 100,
+					}),
 					q(37777, {	-- Death to Tremor!
+						["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
+						["isDaily"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 100,
+					}),
+					q(37776, {	-- Death to Undertow!
 						["provider"] = { "n", 89805 },	-- Renzik "The Shiv"
 						["isDaily"] = true,
 						["races"] = ALLIANCE_ONLY,
