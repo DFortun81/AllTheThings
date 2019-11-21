@@ -3,12 +3,9 @@
 -----------------------------------------------------
 _.WorldDrops = 
 {
-	{
-		["groups"] = {	-- Classic
-			n(-161, { 	-- Toys
-				i(1973),	-- Orb of Deception
-			}),
-		},
-		["tierID"] = 1,
-	},	
+	tier(1, {	-- Classic
+		n(-161, { 	-- Toys
+			i(1973),	-- Orb of Deception
+		}),
+	}),
 };
