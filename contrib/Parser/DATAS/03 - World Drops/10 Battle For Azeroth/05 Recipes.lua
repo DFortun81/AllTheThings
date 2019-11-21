@@ -3,24 +3,17 @@
 -----------------------------------------------------
 _.WorldDrops = 
 {
-	{
-		["groups"] = {	-- Legion
-			filter(200, {	-- Recipes
-				n(-181, {	-- Blacksmithing
-					{	-- Recipe: Monel-Hardened Hoofplates
-						["itemID"] = 166260,	-- Recipe: Monel-Hardened Hoofplates
-					},
-				}),
-				n(-187, {	-- Leatherworking	
-					{	-- Recipe: Coarse Leather Barding [Rank 3]
-						["itemID"] = 166313,	-- Recipe: Coarse Leather Barding [Rank 3]
-					},
-				}),
-				n(-190, {	-- Tailoring
-					i(163027),	-- Pattern: Embroidered Deep Sea Bag (Rank 1)
-				}),
+	tier(8, {	-- Battle for Azeroth
+		f(200, {	-- Recipes
+			n(-181, {	-- Blacksmithing
+				i(166260),	-- Recipe: Monel-Hardened Hoofplates (Rank 3)
 			}),
-		},
-		["tierID"] = 8,
-	},	
+			n(-187, {	-- Leatherworking	
+				i(166313),	-- Recipe: Coarse Leather Barding (Rank 3)
+			}),
+			n(-190, {	-- Tailoring
+				i(163027),	-- Pattern: Embroidered Deep Sea Bag (Rank 1)
+			}),
+		}),
+	}),
 };
