@@ -3,12 +3,9 @@
 -----------------------------------------------------
 _.WorldDrops = 
 {
-	{
-		["groups"] = {	-- Wotlk
-			n(-161, { 	-- Toys
-				i(37254),	-- Super Simian Sphere
-			}),
-		},
-		["tierID"] = 3,
-	},	
+	tier(3, {	-- Wrath of the Lich King
+		n(-161, { 	-- Toys
+			i(37254),	-- Super Simian Sphere
+		}),
+	}),
 };

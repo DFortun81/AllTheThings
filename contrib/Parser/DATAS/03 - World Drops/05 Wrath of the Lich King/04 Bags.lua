@@ -3,12 +3,9 @@
 -----------------------------------------------------
 _.WorldDrops = 
 {
-	{
-		["groups"] = {
-			filter(113, {	-- Bags
-				i(41597),	-- Abyssal Bag
-			}),
-		},
-		["tierID"] = 3
-	},
+	tier(3, {	-- Wrath of the Lich King
+		f(113, {	-- Bags
+			i(41597),	-- Abyssal Bag
+		}),
+	}),
 };
