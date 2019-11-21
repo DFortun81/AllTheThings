@@ -610,7 +610,7 @@ _.Zones =
 					["provider"] = { "n", 1323 },	-- Osric Strang
 					["coord"] = { 77.0, 61.2, 84 },
 					["sourceQuest"] = 26394,	-- Continue to Stormwind
-					["races"] = ALLIANCE_ONLY,
+					["races"] = { 1 },	-- Human
 					["lvl"] = 4,
 				}),
 				q(27361, {	-- Favored of the Light
@@ -950,7 +950,7 @@ _.Zones =
 					["provider"] = { "n", 352 },	-- Dungar Longdrink
 					["coord"] = { 71.0, 72.6, 84 },
 					["sourceQuest"] = 26395,	-- Dungar Longdrink
-					["races"] = ALLIANCE_ONLY,
+					["races"] = { 1 },	-- Human
 					["lvl"] = 4,
 				}),
 				q(27241, {	-- Return to Jaina
