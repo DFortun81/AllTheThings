@@ -128,6 +128,11 @@ _.Zones =
 						un(2, i(10706)),	-- Nightscale Girdle
 					},
 				}),
+				q(7481, {	-- Elven Legends
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14373 },	-- Sage Korolusk
+				}),
 				q(25402, {	-- Estulan's Examination
 					["provider"] = { "n", 39653 },	-- Silvia
 					["coord"] = { 56.9, 54.9, 69 },
@@ -200,6 +205,14 @@ _.Zones =
 					["provider"] = { "n", 40078 },	-- Handler Tessina
 					["coord"] = { 57.1, 53.8, 69 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(7721, {	-- Fuel for the Zapping
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 14637 },	-- Zorbin Fandazzle
+					["g"] = {
+						i(19039),	-- Zorbin's Water Resistant Hat -- Note: still available
+					},
 				}),
 				q(26402, {	-- General Shandris Feathermoon
 					["provider"] = { "n", 40032 },	-- Telaron Windflight
@@ -561,6 +574,11 @@ _.Zones =
 					["g"] = {
 						i(54941),	-- Secretion-Coated Carapace
 					},
+				}),
+				q(7731, {	-- Stinglasher
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
 				}),
 				q(25369, {	-- Stinglasher (H)
 					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
@@ -1032,6 +1050,11 @@ _.Zones =
 					["coord"] = { 77.2, 56.5, 69 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25427,	-- Alpha Strike
+				}),
+				q(7730, {	-- Zukk'ash Infestation (H)
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
 				}),
 				q(25367, {	-- Zukk'ash Infestation (H)
 					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider

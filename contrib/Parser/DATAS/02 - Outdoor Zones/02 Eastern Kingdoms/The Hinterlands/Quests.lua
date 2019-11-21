@@ -11,6 +11,12 @@ _.Zones =
 					["coord"] = { 66.2, 44.2, 26 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(26547, {	-- A Mangy Threat
+					["provider"] = { "n", 5636 },	-- Gryphon Master Talonaxe
+					["coord"] = { 9.9, 44.2, 26 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 26542 },	-- Hero's Call: The Hinterlands!
+				}),
 				q(77,    {	-- A Sticky Situation
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -27,11 +33,16 @@ _.Zones =
 					["coord"] = { 67.6, 66.6, 26 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(26547, {	-- A Mangy Threat
-					["provider"] = { "n", 5636 },	-- Gryphon Master Talonaxe
-					["coord"] = { 9.9, 44.2, 26 },
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 26542 },	-- Hero's Call: The Hinterlands!
+				q(7842, {	-- Another Message to the Wildhammer
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14738 },	-- Otho Moji'ko
+					["sourceQuest"] = 7841,	-- Message to the Wildhammer
+				}),
+				q(7830, {	-- Avenging the Fallen
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14741 },	-- Huntsman Markhor
 				}),
 				q(26641, {	-- Can't Make An Omelette Without... (A)
 					["provider"] = { "n", 43200 },	-- Gilda Cloudcaller
@@ -62,6 +73,11 @@ _.Zones =
 						i(131519),	-- Apothecary Chain Pants
 						i(131520),	-- Shadraspawn Waistguard
 					},
+				}),
+				q(7844, {	-- Cannibalistic Cousins
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14739 },	-- Mystic Yayo'jin
 				}),
 				q(26384, {	-- Darkcleric Marnal
 					["provider"] = { "n", 42622 },	-- Eliza Darkgrin
@@ -159,6 +175,11 @@ _.Zones =
 					["provider"] = { "i", 8704 },	-- OOX-09/HL Distress Beacon
 					["description"] = "The item that starts this quest drops from any mob in The Hinterlands.",
 				}),
+				q(7816, {	-- Gammerita, Mon!
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14740 },	-- Katoom the Angler
+				}),
 				q(26210, {	-- Gammerita, Mon!
 					["provider"] = { "n", 14740 },	-- Katoom the Angler
 					["coord"] = { 80.3, 81.5, 26 },
@@ -223,6 +244,11 @@ _.Zones =
 						i(156945),	-- Talon Hatchet
 					},
 				}),
+				q(7829, {	-- Hunt the Savages
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14741 },	-- Huntsman Markhor
+				}),
 				q(26224, {	-- Hunt the Savages
 					["provider"] = { "n", 14741 },	-- Huntsman Markhor
 					["coord"] = { 79.1, 79.5, 26 },
@@ -271,6 +297,16 @@ _.Zones =
 						un(2, i(19120)),	-- Rune of the Guard Captain
 					},
 				}),
+				q(7845, {	-- Kidnapped Elder Torntusk!
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14736 },	-- Primal Torntusk
+				}),
+				q(7840, {	-- Lard Lost His Lunch
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14731 },	-- Lard
+				}),
 				q(26212, {	-- Lard Lost His Lunch
 					["provider"] = { "n", 14731 },	-- Lard
 					["coord"] = { 78.1, 81.3, 26 },
@@ -284,6 +320,11 @@ _.Zones =
 							},
 						}),
 					},
+				}),
+				q(7841, {	-- Message to the Wildhammer
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14738 },	-- Otho Moji'ko
 				}),
 				q(26515, {	-- Ongo'longo's Revenge (A)
 					["provider"] = { "n", 43157 },	-- Doran Steelwing
@@ -360,6 +401,12 @@ _.Zones =
 						i(131553),	-- Gryphon Master's Chain
                         i(59235),	-- Razorbeak Amulet
 					},
+				}),
+				q(7846, {	-- Recover the Key!
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14757 },	-- Elder Torntusk
+					["sourceQuest"] = 7845,	-- Kidnapped Elder Torntusk!
 				}),
 				q(836,   {	-- Rescue OOX-09/HL!
 					["provider"] = { "n", 7806 },	-- Homing Robot OOX-09/HL
@@ -496,6 +543,11 @@ _.Zones =
 					["g"] = {
 						i(19022),	-- Nat Pagle's Extreme Angler FC-5000
 					},
+				}),
+				q(7828, {	-- Stalking the Stalkers
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14741 },	-- Huntsman Markhor
 				}),
 				q(26223, {	-- Stalking the Stalkers
 					["provider"] = { "n", 14741 },	-- Huntsman Markhor
@@ -688,6 +740,11 @@ _.Zones =
 					["coord"] = { 67.6, 66.6, 26 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 26309 },	-- Dark Vessels
+				}),
+				q(7839, {	-- Vilebranch Hooligans
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14737 },	-- Smith Slagtree
 				}),
 				q(26497, {	-- Vilebranch Scum
 					["provider"] = { "n", 43157 },	-- Doran Steelwing

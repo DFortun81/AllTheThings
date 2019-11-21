@@ -486,6 +486,10 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							},
 						},
+						q(8227, {	-- Nat's Measuring Tape
+							["u"] = 40,
+							["provider"] = { "i", 19973 },	-- Nat's Measuring Tape
+						}),
 					}),
 					n(0, {		-- Zone Drop
 						un(2, i(19727)),	-- Blood Scythe

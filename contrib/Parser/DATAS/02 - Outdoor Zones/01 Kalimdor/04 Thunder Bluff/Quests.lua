@@ -6,6 +6,26 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(88, {	-- Thunder Bluff
 			n(-17, {	-- Quests
+				q(7822, {	-- A Donation of Mageweave
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14728 },	-- Rumstag Proudstrider
+				}),
+				q(7823, {	-- A Donation of Runecloth
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14728 },	-- Rumstag Proudstrider
+				}),
+				q(7821, {	-- A Donation of Silk
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14728 },	-- Rumstag Proudstrider
+				}),
+				q(7820, {	-- A Donation of Wool
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14728 },	-- Rumstag Proudstrider
+				}),
 				q(2968, {	-- A Future Task
 					["provider"] = { "n", 3978 },	-- Sage Truthseeker
 					["coord"] = { 34.4, 46.9, 88 },

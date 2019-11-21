@@ -136,6 +136,10 @@ _.PVP =
 									i(17905),	-- Frostwolf Insignia Rank 2
 								},
 							}),
+							q(7123, {	-- Speak with our Quartermaster
+								["races"] = HORDE_ONLY,
+								["provider"] = { "n", 13798 },	-- Jotek
+							}),
 							q(7142, {	-- The Battle for Alterac
 								["provider"] = { "n", 13817 },	-- Voggah Deathgrip
 								["coord"] = { 58.6, 34.2, 25 },

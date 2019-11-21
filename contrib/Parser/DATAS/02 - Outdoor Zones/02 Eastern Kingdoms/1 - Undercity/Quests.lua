@@ -23,6 +23,26 @@ _.Zones =
 						i(122339),	-- Ancient Heirloom Scabbard
 					},
 				}),
+				q(7817, {	-- A Donation of Mageweave
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14729 },	-- Ralston Farnsley
+				}),
+				q(7818, {	-- A Donation of Runecloth
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14729 },	-- Ralston Farnsley
+				}),
+				q(7814, {	-- A Donation of Silk
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14729 },	-- Ralston Farnsley
+				}),
+				q(7813, {	-- A Donation of Wool
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14729 },	-- Ralston Farnsley
+				}),
 				q(27283, {	-- A Journey to Moonglade
 					["provider"] = { "n", 52319 },	-- Mala Skywatcher
 					["coord"] = { 55.0, 50.4, 90 },	-- Mala Skywatcher (Undercity)

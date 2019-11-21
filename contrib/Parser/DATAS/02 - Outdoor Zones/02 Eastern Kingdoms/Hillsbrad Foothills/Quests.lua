@@ -651,6 +651,15 @@ _.Zones =
 						un(7, i(3737)),	-- Recipe: Soothing Turtle Bisque
 					},
 				}),
+				q(7321, {	-- [DEPRECATED] Soothing Turtle Bisque
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2393 },	-- Christoph Jeffcoat
+					["requireSkill"] = 185,	-- Cooking
+					["g"] = {
+						un(7, i(3737)),	-- Recipe: Soothing Turtle Bisque
+					},
+				}),
 				q(546,   {	-- [DEPRECATED] Souvenirs of Death
 					["u"] = 40,
 					["races"] = HORDE_ONLY,

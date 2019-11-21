@@ -492,6 +492,46 @@ _.Zones =
 						i(65642),	-- Headguard of the Horde
 					},
 				}),
+				q(7831, {	-- A Donation of Mageweave
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14726 },	-- Rashona Straglash
+				}),
+				q(7835, {	-- A Donation of Mageweave
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14727 },	-- Vehena
+				}),
+				q(7824, {	-- A Donation of Runecloth
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14726 },	-- Rashona Straglash
+				}),
+				q(7836, {	-- A Donation of Runecloth
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14727 },	-- Vehena
+				}),
+				q(7827, {	-- A Donation of Silk
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14726 },	-- Rashona Straglash
+				}),
+				q(7834, {	-- A Donation of Silk
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14727 },	-- Vehena
+				}),
+				q(7826, {	-- A Donation of Wool
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14726 },	-- Rashona Straglash
+				}),
+				q(7833, {	-- A Donation of Wool
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14727 },	-- Vehena
+				}),
 				q(53028, {	-- A Dying World
 					["provider"] = { "n", 140176 },	-- Nathanos Blightcaller
 					["coord"] = { 48.8, 91.5, 85 },
@@ -847,6 +887,16 @@ _.Zones =
 						un(2, i(11871)),	-- Snarkshaw Spaulders
 					},
 				}),
+				q(7492, {	-- Camp Mojache
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["providers"] = {
+						{ "n", 20724 },	-- Herald Amorlin (Silvermoon)
+						{ "n", 10879 },	-- Harbinger Balthazad (Undercity)
+						{ "n", 10880 },	-- Warcaller Gorlach (Orgrimmar)
+						{ "n", 10881 },	-- Bluff Runner Windstrider (Thunder Bluff)
+					},
+				}),
 				q(32468, {	-- Crystal Clarity
 					["provider"] = { "n", 16926 },	-- Vivica Starshot
 					["coord"] = { 34.5, 70.8, 85 },
@@ -970,6 +1020,11 @@ _.Zones =
 					["DisablePartySync"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 60,
+				}),
+				q(7241, {	-- In Defense of Frostwolf
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 13842 },	-- Frostwolf Ambassador Rokhstrom
 				}),
 				q(8930,  {	-- In Search of Anthion
 					["provider"] = { "n", 16012 },	-- Mokvar

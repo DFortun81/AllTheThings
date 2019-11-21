@@ -225,6 +225,10 @@ _.Zones =
 					["coord"] = { 55.2, 36.1, 81 },
 					["sourceQuest"] = 8278,	-- Noggle's Last Hope
 				}),
+				q(8288, {	-- Only One May Rise
+					["u"] = 40,
+					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
+				}),
 				q(9416,  {	-- Report to General Kirika
 					["provider"] = { "n", 17081 },	-- Scout Bloodfist
 					["coord"] = { 53.0, 34.6, 81 },
@@ -438,6 +442,11 @@ _.Zones =
 						i(20646),	-- Sandstrider's Mark
 						i(20647),	-- Black Crystal Dagger
 					},
+				}),
+				q(8286, {	-- What Tomorrow Brings
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
 				}),
 			}),
 		}),

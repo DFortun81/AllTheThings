@@ -16,6 +16,10 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 40,
 				}),
+				q(7761, {	-- Blackhand's Command
+					["u"] = 40,
+					["provider"] = { "i", 18987 },	-- Blackhand's Command
+				}),
 				q(8964, {	-- Components of Importance (Tyr's Hand)
 					["provider"] = { "n", 16033 },	-- Bodley
 					["coord"] = { 20.6, 29.1, 35 },

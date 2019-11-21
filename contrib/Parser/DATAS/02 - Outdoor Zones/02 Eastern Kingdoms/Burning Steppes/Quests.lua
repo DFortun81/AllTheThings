@@ -497,6 +497,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28428, 28429, 28430, 28431 },	-- A Perfect Costume (Horde versions)
 				}),
+				q(7729, {	-- JOB OPPORTUNITY: Culling the Competition
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 179827 },	-- Wanted/Missing/Lost & Found
+				}),
 				q(4729, {	-- Kibler's Exotic Pets
 					["u"] = 40,
 					["provider"] = { "n", 10260 },	-- Kibler
@@ -897,6 +902,11 @@ _.Zones =
 						un(2, i(13962)),	-- Vosh'gajin's Strand
 						un(2, i(13958)),	-- Wyrmthalak's Shackles
 					},
+				}),
+				q(7722, {	-- What the Flux?
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 14624 },	-- Master Smith Burninate
 				}),
 				q(44927, {	-- Worth Its Weight in Steel
 					["provider"] = { "n", 115805 },	-- Hoddruc Bladebender
