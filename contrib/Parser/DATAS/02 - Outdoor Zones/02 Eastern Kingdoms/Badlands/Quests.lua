@@ -816,6 +816,11 @@ _.Zones =
 					["provider"] = { "n", 6868 },	-- Quest Giver: Jarkal Mossmeld
 					["sourceQuests"] = { 2258 },	-- Source Quest: Badlands Reagent Run
 				}),
+				q(9439, {	-- Unclaimed Baggage
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 17097 },	-- Advisor Sarophas
+				}),
 				q(3982, {	-- What Is Going On?
 					["u"] = 40,
 					["races"] = HORDE_ONLY,

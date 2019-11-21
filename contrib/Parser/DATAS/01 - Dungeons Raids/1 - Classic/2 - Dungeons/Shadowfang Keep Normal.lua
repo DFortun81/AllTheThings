@@ -316,26 +316,6 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(15109)),	-- Staff of Soran'ruk
 							},
 						}),
-						q(9692, {	-- The Path of the Adept
-							["u"] = 40,
-							["races"] = HORDE_ONLY,
-							["classes"] = { 2 },
-							["g"] = {
-								q(9707, {	-- Forging the Weapon
-									["u"] = 40,
-									["classes"] = { 2 },
-									["g"] = {
-										q(9710, {	-- The Blood-Tempered Ranseur
-											["u"] = 40,
-											["classes"] = { 2 },
-											["g"] = {
-												un(2, i(25464)),	-- Blood-Tempered Ranseur
-											},
-										}),
-									},
-								}),
-							},
-						}),
 						q(1654, {	-- The Test of Righteousness
 							["u"] = 40,
 							["races"] = ALLIANCE_ONLY,

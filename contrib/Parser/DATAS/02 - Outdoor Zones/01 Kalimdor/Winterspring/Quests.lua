@@ -638,6 +638,10 @@ _.Zones =
 						un(2, i(16622)),	-- Thornflinger
 					},
 				}),
+				q(8464, {	-- [DEPRECATED]Winterfall Activity
+					["u"] = 40,
+					["provider"] = { "n", 11556 },	-- Salfa
+				}),
 				q(5083,  {	-- Winterfall Firewater
 					["u"] = 40,
 					["provider"] = { "i", 12771 },	-- Empty Firewater Flask
@@ -647,6 +651,10 @@ _.Zones =
 					["provider"] = { "n", 10618 },	-- Rivern Frostwind
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
+				}),
+				q(8471, {	-- Winterfall Ritual Totem
+					["u"] = 40,
+					["provider"] = { "i", 20742 },	-- Winterfall Ritual Totem
 				}),
 				q(28469, {	-- Winterfall Runners
 					["provider"] = { "n", 9298 },	-- Donova Snowden

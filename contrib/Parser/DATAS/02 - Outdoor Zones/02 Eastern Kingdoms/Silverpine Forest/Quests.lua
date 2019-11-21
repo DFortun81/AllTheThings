@@ -623,6 +623,12 @@ _.Zones =
 						27290,	-- To Forsaken Forward Command
 					},
 				}),
+				q(9601, {	-- To The Bulwark
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
+				}),
 				q(27512, {	-- Transdimensional Warfare: Chapter I
 					["provider"] = { "n", 45617 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 51.8, 65.0, 21 },

@@ -234,6 +234,13 @@ _.Zones =
 					["sourceQuest"] = 9134,	-- Skymistress Gloaming
 					["races"] = { 10 },	-- Blood Elf
 				}),
+				q(9691, {	-- Return to Silvermoon
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 17807 },	-- Master Kelerun Bloodmourn
+					["sourceQuest"] = 9686,	-- The Second Trial
+				}),
 				q(9035,  {	-- Roadside Ambush
 					["provider"] = { "n", 15941 },	-- Apprentice Ralen
 					["coord"] = { 45.1, 56.4, 94 },
@@ -270,6 +277,12 @@ _.Zones =
 					["coord"] = { 44.8, 61.0, 94 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 9035,	-- Roadside Ambush
+				}),
+				q(9677, {	-- Summons from Knight-Lord Bloodvalor
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 16275 },	-- Noellene
 				}),
 				q(9066,  {	-- Swift Discipline
 					["provider"] = { "n", 15970 },	-- Instructor Antheol
@@ -330,6 +343,13 @@ _.Zones =
 					["coord"] = { 43.6, 71.2, 94 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+				}),
+				q(9686, {	-- The Second Trial
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 17807 },	-- Master Kelrun Bloodmourn
+					["sourceQuest"] = 9690,	-- The Second Trial
 				}),
 				q(8477,  {	-- The Spearcrafter's Hammer
 					["provider"] = { "n", 15400 },	-- Arathel Sunforge

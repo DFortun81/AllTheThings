@@ -5,7 +5,14 @@ _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms
 		m(110, { 	-- Silvermoon City
-			n(-17, { 	-- Quests				
+			n(-17, { 	-- Quests
+				q(9681, {	-- A Study in Power
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
+					["sourceQuest"] = 9678,	-- The First Trial
+				}),
 				q(27277, {	-- An Audience with Ureda
 					["provider"] = { "n", 16653 },	-- Inethven
 					["coord"] = { 53.0, 19.6, 110 },	-- Inethven (Silvermoon City)
@@ -14,6 +21,13 @@ _.Zones =
 					["classes"] = { 8 },	-- Mage
 					["lvl"] = 20,
 				}),
+				q(9684, {	-- Claiming the Light
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 17718 },	-- Magister Astalor Bloodsworn
+					["sourceQuest"] = 9681,	-- A Study in Power
+				}),
 				q(27334, {	-- Dark Cleric Cecille
 					["provider"] = { "n", 16658 },	-- Aldrae
 					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
@@ -21,6 +35,10 @@ _.Zones =
 					["races"] = { 5 },	-- Undead
 					["classes"] = { 5 },	-- Priest
 					["lvl"] = 20,
+				}),
+				q(9189, {	-- Delivery to the Sepulcher
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
 				}),
 				q(9621,  {	-- Envoy to the Horde
 					["provider"] = { "n", 16802 },	-- Lor'themar Theron
@@ -33,6 +51,13 @@ _.Zones =
 					["coords"] = { 54.0, 20.4, 110 },
 					["sourceQuest"] = 9811,	-- Friend of the Sin'dorei
 					["races"] = HORDE_ONLY,
+				}),
+				q(9707, {	-- Forging the Weapon
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
+					["sourceQuest"] = 9692,	-- The Path of the Adept
 				}),
 				q(27281, {	-- Grezz Ragefist
 					["provider"] = { "n", 43009 },	-- Alsudar the Bastion
@@ -64,7 +89,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["classes"] = { 9 },	-- Warlock
-					["maps"] = { 88, 90, 110 }, 
+					["maps"] = { 88, 90, 110 },
 					["lvl"] = 20,
 				}),
 				q(28323, {	-- Meet with Brother Silverhallow
@@ -115,7 +140,7 @@ _.Zones =
 					["classes"] = { 2 },	-- Paladin
 					["lvl"] = 50,
 				}),
-				q(28297, {	-- Meet with Ormak Grimshot 
+				q(28297, {	-- Meet with Ormak Grimshot
 					["provider"] = { "n", 16674 },	-- Zandine
 					["coord"] = { 84.4, 28.0, 110 },	-- Zandine (Silvermoon City)
 					["isBreadcrumb"] = true,
@@ -158,6 +183,13 @@ _.Zones =
 					["classes"] = { 8 },	-- Mage
 					["lvl"] = 50,
 				}),
+				q(9685, {	-- Redeeming the Dead
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
+					["sourceQuest"] = 9684,	-- Claiming the Light
+				}),
 				q(27298, {	-- Seek Out Master Pyreanor
 					["provider"] = { "n", 16681 },	-- Champion Bachi
 					["coord"] = { 92.0, 37.2, 110 },	-- Champion Bachi (Silvermoon City)
@@ -178,7 +210,17 @@ _.Zones =
 					["provider"] = { "n", 16191 },	-- Sathren Azuredawn
 					["coord"] = { 53.9, 71.0, 110 },
 					["sourceQuest"] = 9133,	-- Fly to Silvermoon City
-					["races"] = { 10 },	-- Blood Elf	
+					["races"] = { 10 },	-- Blood Elf
+				}),
+				q(9710, {	-- The Blood-Tempered Ranseur
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 16669 },	-- Bemarrin
+					["sourceQuest"] = 9707,	-- Forging the Weapon
+					["g"] = {
+						un(2, i(25464)),	-- Blood-Tempered Ranseur
+					},
 				}),
 				q(27280, {	-- The Earthbreaker Calls
 					["provider"] = { "n", 16661 },	-- Gez'li
@@ -188,6 +230,26 @@ _.Zones =
 					["classes"] = { 7 },	-- Shaman
 					["lvl"] = 20,
 				}),
+				q(9678, {	-- The First Trial
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
+					["sourceQuest"] = 9677,	-- Summons from Knight-Lord Bloodvalor
+				}),
+				q(9692, {	-- The Path of the Adept
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
+					["sourceQuest"] = 9691,	-- Return to Silvermoon
+				}),
+				q(9690, {	-- The Second Trial
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
+				}),
 				q(27331, {	-- The Seer's Call
 					["provider"] = { "n", 16658 },	-- Aldrae
 					["coord"] = { 53.2, 26.6, 110 },	-- Aldrae (Silvermoon City)
@@ -195,7 +257,7 @@ _.Zones =
 					["races"] = { 6 },	-- Tauren
 					["classes"] = { 5 },	-- Priest
 					["lvl"] = 20,
-				}),	
+				}),
 				q(27279, {	-- The Shattered Hand
 					["provider"] = { "n", 16684 },	-- Zelanis
 					["coord"] = { 79.4, 52.0, 110 },	-- Zelanis (Silvermoon City)
@@ -203,7 +265,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 4 },	-- Rogue
 					["lvl"] = 20,
-				}),			
+				}),
 				q(32330, {	-- What's in the Box?
 					["provider"] = { "n", 16802 },	-- Lor'themar Theron
 					["coords"] = { 54.0, 20.4, 110 },

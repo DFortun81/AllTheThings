@@ -191,6 +191,11 @@ _.Zones =
 						i(3440),	-- Bonecracker
 					},
 				}),
+				q(9444, {	-- Defiling Uther's Tomb
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 17099 },	-- Mehlar Dawnblade
+				}),
 				q(445,   {	-- Delivery to Silverpine Forest
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -667,6 +672,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10837 },	-- High Executor Derrington
 					["sourceQuest"] = 5096,	-- Scarlet Diversions
+				}),
+				q(9443, {	-- The So-Called Mark of the Lightbringer
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 17099 },	-- Mehlar Dawnblade
 				}),
 				q(25011, {	-- To Bigger and Better Things
 					["provider"] = { "n", 10837 },	-- High Executor Derrington

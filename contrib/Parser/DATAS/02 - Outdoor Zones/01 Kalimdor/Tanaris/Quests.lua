@@ -645,6 +645,10 @@ _.Zones =
 					["sourceQuest"] = 4496,	-- Bungle in the Jungle
 					["u"] = 40,
 				}),
+				q(8365, {	-- Pirate Hats Ahoy!
+					["u"] = 40,
+					["provider"] = { "n", 15165 },	-- Haughty Modiste
+				}),
 				q(28881, {	-- Prospector Gunstan
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 39059 },	-- Kelsey steelspark

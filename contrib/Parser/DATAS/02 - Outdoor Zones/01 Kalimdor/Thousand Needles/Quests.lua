@@ -10,6 +10,17 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 4629 },	-- Trackmaster Zherin
 				}),
+				q(9431, {	-- A Different Approach
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["provider"] = { "n", 17093 },	-- Magistrix Elosai
+				}),
+				q(9433, {	-- A Dip in the Moonwell
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["provider"] = { "n", 10941 },	-- Magistrix Elosai
+					["sourceQuest"] = 9431,	-- A Different Approach
+				}),
 				q(25588, {	-- A Little Payback
 					["provider"] = { "n", 40591 },	-- Drag Master Miglen
 					["coord"] = { 78.0, 73.2, 64 },
@@ -814,6 +825,12 @@ _.Zones =
 					["coord"] = { 75.9, 74.6, 64 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+				}),
+				q(9434, {	-- Testing the Tonic
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["provider"] = { "n", 10941 },	-- Wizlo Bearingshiner
+					["sourceQuest"] = 9433,	-- A Dip in the Moonwell
 				}),
 				q(28048, {	-- That Smart One's Gotta Go
 					["provider"] = { "n", 47383 },	-- Brivelthwerp

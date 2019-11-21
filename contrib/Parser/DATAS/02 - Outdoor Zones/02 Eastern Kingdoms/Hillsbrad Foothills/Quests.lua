@@ -614,6 +614,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2229 },	-- Krusk
 				}),
+				q(9425, {	-- Report to Tarren Mill
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elves
+				}),
 				q(1067,  {	-- Return to Thunder Bluff
 					["u"] = 40,
 					["races"] = HORDE_ONLY,

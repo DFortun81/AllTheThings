@@ -330,6 +330,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26449,	-- Never Again!
 				}),
+				q(9534, {	-- Destroy the Legion
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 17355 },	-- Valusha
+				}),
 				q(26448, {	-- Destroy the Legion
 					["provider"] = { "n", 17355 },	-- Valusha
 					["coord"] = { 73.1, 60.1, 63 },
@@ -339,6 +344,14 @@ _.Zones =
 					["provider"] = { "n", 17303 },	-- Vindicator Vedaar
 					["coord"] = { 84.0, 62.7, 63 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(9520, {	-- Diabolical Plans (A)
+					["u"] = 40,
+					["provider"] = { "i", 23777 },	-- Diabolical Plans
+				}),
+				q(9535, {	-- Diabolical Plans (H)
+					["u"] = 40,
+					["provider"] = { "i", 23797 },	-- Diabolical Plans
 				}),
 				q(26447, {	-- Diabolical Plans
 					["provider"] = { "i", 23798 },	-- Diabolical Plans
@@ -650,6 +663,16 @@ _.Zones =
 					["sourceQuest"] = 13640,	-- Management Material
 					["races"] = HORDE_ONLY,	
 				}),
+				q(9536, {	-- Never Again! (H)
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 17355 },	-- Valusha
+					["g"] = {
+						i(24119),	-- Band of Argus
+						i(24120),	-- Seal of Argus
+						i(24118),	-- Signet of Argus
+					},
+				}),
 				q(26449, {	-- Never Again!
 					["provider"] = { "n", 17355 },	-- Valusha
 					["coord"] = { 73.1, 60.1, 63 },
@@ -659,6 +682,17 @@ _.Zones =
 						i(24119),	-- Band of Argus
 						i(24120),	-- Seal of Argus
 						i(24118),	-- Signet of Argus
+					},
+				}),
+				q(9522, {	-- Never Again!
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 17303 },	-- Vindicator Vedaar
+					["sourceQuest"] = 9520,	-- Diabolical Plans
+					["g"] = {
+						i(24119),	-- Band of Argus
+						i(24120),	-- Seal of Argus
+						i(24118),	-- Signet of Argas
 					},
 				}),
 				q(26445, {	-- Never Again!
@@ -805,6 +839,10 @@ _.Zones =
 					["coord"] = { 58.9, 58.7, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13935,	-- Defend the Tree!
+				}),
+				q(9428, {	-- Report to Spintertree Post
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
 				}),
 				q(13626, {	-- Respect for the Fallen
 					["provider"] = { "n", 11806 },	-- Sentinel Onaeya

@@ -958,6 +958,10 @@ _.Zones =
 						un(2, i(18404)),	-- Onyxia Tooth Pendant
 					},
 				}),
+				q(8367, {	-- For Great Honor
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+				}),
 				q(5726, {	-- Hidden Enemies
 					["u"] = 40,
 					["races"] = HORDE_ONLY,

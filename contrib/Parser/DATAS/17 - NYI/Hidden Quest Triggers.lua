@@ -22,6 +22,7 @@ _.NeverImplemented =
 		q(8274),	-- Test Kill Quest - triggered after The Conquest Pit: Final Showdown (12431)
 		q(6842),	-- Unused
 		q(7069),	-- Unused
+		q(8458),	-- Unused
 		
 		
 		-------------------

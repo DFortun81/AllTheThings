@@ -199,6 +199,11 @@ _.Zones =
 					["coord"] = { 69.4, 54.5, 51 },
 					["sourceQuest"] = 27694,	-- Pool of Tears
 				}),
+				q(9440, {	-- [DEPRECATED]Little Morsels
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 17109 },	-- Cersei Dusksinger
+				}),
 				q(27822, {	-- Lumbering Oafs
 					["provider"] = { "n", 46676 },	-- Joanna Blueheart
 					["coord"] = { 68.2, 36.1, 51 },

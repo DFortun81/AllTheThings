@@ -227,6 +227,14 @@ _.Zones =
 						i(65336),	-- Pulled Wool
 					},
 				}),
+				q(8461, {	-- [DEPRECATED]Deadwood of the North
+					["u"] = 40,
+					["provider"] = { "n", 15395 },	-- Nafien
+					["g"] = {
+						i(21316),	-- Leggings of the Ursa -- NOTE: Still available
+						i(21317),	-- Helm of the Pathfinder -- NOTE: Still available
+					},
+				}),
 				q(28338, {	-- Deadwood of the North
 					["provider"] = { "n", 15395 },	-- Nafien
 					["coord"] = { 64.0, 10.3, 77 },
@@ -690,6 +698,16 @@ _.Zones =
 						i(65351),	-- Workforce Chestguard
 						i(65354),	-- Cloak of Sleep Deprivation
 					},
+				}),
+				q(8462, {	-- [DEPRECATED]Speak to Nafien
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 11554 },	-- Grazle
+				}),
+				q(8465, {	-- [DEPRECATED]Speak to Salfa
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 15395 },	-- Nafien
 				}),
 				q(28361, {	-- Squirrely Clean
 					["provider"] = { "n", 48459 },	-- Tender Puregrove

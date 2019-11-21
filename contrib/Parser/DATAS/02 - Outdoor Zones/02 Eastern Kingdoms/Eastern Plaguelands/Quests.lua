@@ -431,10 +431,24 @@ _.Zones =
 					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered
 					["sourceQuest"] = 5522,	-- Leonid Barthalomew
 				}),
+				q(9131, {	-- Binding the Dreadnaught
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 16112 },	-- Crusade Commander Korfax
+				}),
 				q(27524, {	-- Blind Fury
 					["provider"] = { "n", 45417 },	-- Tarenar Sunstrike
 					["coord"] = { 50.5, 20.1, 23 },
 					["sourceQuests"] = { 27522 },	-- Beat it Out of Them
+				}),
+				q(9665, {	-- Bolstering Our Defenses
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 17072 },	-- Emissary Gormok
+				}),
+				q(9126, {	-- Bonescythe Digs
+					["u"] = 40,
+					["provider"] = { "n", 16131 },	-- Rohan the Assassin
 				}),
 				q(27455, {	-- Boys Will Be Boys
 					["provider"] = { "n", 45417 },	-- Fiona
@@ -483,6 +497,10 @@ _.Zones =
 						i(63008),	-- Judkins' Staff
 						i(63007),	-- Plaguewood Mace
 					},
+				}),
+				q(9124, {	-- Cryptstalker Armor Doesn't Make Itself...
+					["u"] = 40,
+					["provider"] = { "n", 16132 },	-- Huntsman Leopold
 				}),
 				q(27452, {	-- Dark Garb
 					["provider"] = { "n", 11035 },	-- Betina Bigglezink
@@ -1078,6 +1096,9 @@ _.Zones =
 					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered
 					["coord"] = { 41.0, 87.9, 24 },
 				}),
+				q(9141, {	-- They Call Me "The Rooster"
+					["u"] = 40,
+				}),
 				q(27619, {	-- The Commander
 					["provider"] = { "n", 16112 },	-- Crusade Commander Korfax
 					["coord"] = { 75.3, 76.1, 23 },
@@ -1119,6 +1140,11 @@ _.Zones =
 						i(62986),	-- Borelgore's Skin
 						i(62985),	-- Corpulent Shoulderpads
 					},
+				}),
+				q(9128, {	-- The Elemental Equation
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
 				}),
 				q(5212, {	-- The Flesh Does Not Lie
 					["u"] = 40,

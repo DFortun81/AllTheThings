@@ -300,6 +300,16 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
+				q(9587, {	-- Dark Tidings (A)
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "i", 23890 },	-- Ominous Letter
+				}),
+				q(9588, {	-- Dark Tidings (H)
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 23892 },	-- Ominous Letter
+				}),
 				q(9398,  {	-- Deadly Predators
 					["coord"] = { 23.3, 38.1, 100 },
 					["races"] = ALLIANCE_ONLY,
@@ -533,6 +543,11 @@ _.Zones =
 					["u"] = 40,
 					["classes"] = { 11 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(9608, {	-- Heart of Rage
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 17558 },	-- Caza'rez
 				}),
 				q(9361,  {	-- Helboar, the Other White Meat
 					["coord"] = { 49.2, 74.8, 100 },
@@ -1038,6 +1053,17 @@ _.Zones =
 					["provider"] = { "n", 19736 },	-- Althen the Historian
 					["sourceQuest"] = 10229,	-- Decipher the Tome
 				}),
+				q(9590, {	-- The Blood is Life
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 17558 },	-- Caza'rez
+					["g"] = { -- NOTE: rewards are available in a different quest
+						i(25701),	-- Breastplate of Retribution
+						i(25711),	-- Deadly Borer Leggings
+						i(25710),	-- Moonkin Headdress
+						i(25702),	-- Scaled Legs of Ruination
+					},
+				}),
 				q(9912,  {	-- The Cenarion Expedition
 					["coord"] = { 16.0, 52.1, 100 },
 					["provider"] = { "n", 16885 },	-- Amythiel Mistwalker
@@ -1334,6 +1360,17 @@ _.Zones =
 						i(29943),	-- Legionnaire's Studded Helm
 						i(29945),	-- Magistrate's Greaves
 						i(29931),	-- Phantasmal Headdress
+					},
+				}),
+				q(9572, {	-- Weaken the Ramparts
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 17493 },	-- Stone Guard Stok'ton
+					["g"] = { -- NOTE: rewards now available from a different quest
+						i(25716),	-- Handguards of Precision
+						i(25715),	-- Jade Warrior Pauldrons
+						i(25718),	-- Mantle of Magical Might
+						i(25717),	-- Sure-Step Boots
 					},
 				}),
 				q(10079, {	-- When This Mine's a-Rockin'
