@@ -322,11 +322,15 @@ _.Zones =
 						recipe(23489),	-- Ultrasafe Transporter - Gadgetzan
 					},
 				}),
-				n(155944, {	-- Otela
+				n(155944, {	-- Otela <Time-Lost Baubles>
 					["coord"] = { 42.4, 71.6, 71 },
 					["g"] = {
-						i(170739),	-- Sunswarmed Sand
-						i(170380),	-- Jar of the Sunwarmed Sand
+						i(170739, {	-- Sunswarmed Sand
+							["cost"] = { { "c", 1166, 10 }, },		-- 10x Timewarped Badge
+						}),
+						i(170380, {	-- Jar of the Sunwarmed Sand (TOY!)
+							["cost"] = { { "c", 1166, 1000 }, },	-- 1,000x Timewarped Badge
+						}),
 					},
 				}),
 				n(69323,  {	-- Tiny Tayger <Ruthless Gladiator>
