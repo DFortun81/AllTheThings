@@ -3,11 +3,8 @@
 -----------------------------------------------------
 _.WorldDrops = 
 {
-	{
-		["groups"] = {
-			i(29739),	-- Arcane Tome
-			i(29740),	-- Fel Armament
-		},
-		["tierID"] = 2
-	},
+	tier(2, {	-- Burning Crusade
+		i(29739),	-- Arcane Tome
+		i(29740),	-- Fel Armament
+	}),
 };
