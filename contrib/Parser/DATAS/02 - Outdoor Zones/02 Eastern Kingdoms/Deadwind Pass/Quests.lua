@@ -147,22 +147,25 @@ _.Zones =
 				}),
 				]]--
 				q(45291, {	-- Return to Karazhan: Book Wyrms
-					["lvl"] = 110,
-					["provider"] = { "n", 18255 },	-- Mage Darius
 					["sourceQuests"] = {
 						44734,	-- Fragments of the Past
 						44735,	-- Return to Karazhan: In the Eye of the Beholder
 					},
+					["provider"] = { "n", 18255 },	-- Mage Darius
+					["coord"] = { 47.3, 75.0, 42 },
+					["lvl"] = 110,
 				}),
 				q(45295, {	-- Return to Karazhan: Clearing Out the Cobwebs
 					["sourceQuest"] = 45294,	-- Return to Karazhan: High Stress Hiatus
 					["provider"] = { "n", 18255 },	-- Mage Darius
+					["coord"] = { 47.3, 75.0, 42 },
 					["lvl"] = 110,
 				}),
 				q(45294, {	-- Return to Karazhan: High Stress Hiatus
 					["sourceQuest"] = 45293,	-- Return to Karazhan: New Shoes
 					["provider"] = { "n", 18255 },	-- Mage Darius
 					["lvl"] = 110,
+					["coord"] = { 47.3, 75.0, 42 },
 					["g"] = {
 						i(142468),	-- Violet Seal of the Archmage
 					},
@@ -175,16 +178,17 @@ _.Zones =
 				q(45292, {	-- Return to Karazhan: Rebooting the Cleaner
 					["sourceQuest"] = 45291,	-- Return to Karazhan: Book Wyrms
 					["provider"] = { "n", 18255 },	-- Mage Darius
+					["coord"] = { 47.3, 75.0, 42 },
 					["lvl"] = 110,
 					["g"] = {
 						i(142461),	-- Violet Seal of the Archmage
 					},
 				}),
 				q(44735, {	-- Return to Karazhan: In the Eye of the Beholder
-					["provider"] = { "n", 114310 },	-- Archmage Khadgar
-					["lvl"] = 110,
-					["coord"] = { 47.0, 75.2, 42 },
 					["sourceQuest"] = 44733,	-- The Power of Corruption
+					["provider"] = { "n", 114310 },	-- Archmage Khadgar
+					["coord"] = { 47.3, 75.0, 42 },
+					["lvl"] = 110,
 				}),
 				--[[
 				q(40900, {	-- The Burden Borne (map blank, not sure if starts in Deadwind Pass, a scenario, or elsewhere)

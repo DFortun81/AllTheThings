@@ -4,11 +4,12 @@
 
 _.Instances = { tier(7, {	-- Legion
 	inst(860, {	-- Return to Karazhan
-		["lvl"] = 110,
+		["coord"] = { 46.7, 70.1, 42 },
 		["maps"] = {
 			815, 816, 817, 818, 819, 820, 821, 822,	-- Upper
 			809, 810, 811, 812, 813, 814,	-- Lower
 		},
+		["lvl"] = 110,
 		["g"] = {
 			n(-1, {	-- Common Boss Drop
 				["g"] = {
@@ -94,90 +95,114 @@ _.Instances = { tier(7, {	-- Legion
 						i(142188),	-- Spellbound Rose Petal
 					},
 				}),
-				cr(113971, e(1825, {	-- Maiden of Virtue
-					i(142138),	-- Confiscated Manacle
-					i(142153),	-- Cord of the Penitent
-					i(142170),	-- Drape of Shame
-					i(142158),	-- Faith's Crucible
-					i(142124),	-- Treads of the Depraved
-					i(142139),	-- Vest of Wanton Deeds
-					i(142193),	-- Begrudging Confessions
-					i(142187),	-- Virtuous Directive
-				})),
-				cr(114262, e(1835, {	-- Attumen the Huntsman
-					i(142140),	-- Calliard's Galoshes
-					i(142174),	-- Choker of Barbed Reins
-					i(142126),	-- Helm of Phantasmal Scars
-					i(142161),	-- Inescapable Dread
-					i(142136),	-- Mantle of Hideous Trophies
-					i(142148),	-- Wilderness Stalker's Softsoles
-					i(142191),	-- Dirge of the Hunted
-					i(142185),	-- Fear of Predation
-					i(142183),	-- Lava-Quenched Hoofplate
-				})),
-				cr(114312, e(1837, {	-- Moroes
-					i(138797),	-- Illusion: Mongoose
-					i(142246, { 	-- Broken Pocket Watch
-						["description"] = "This is a rare drop that eventually leads to adding Moroes as a follower.",
-						["questID"] = 44803,	-- Return to Karazhan: Master of the House
-					}),
-					i(142159),	-- Bloodstained Handkerchief
-					i(142123),	-- Breastplate of Obligation
-					i(142134),	-- Castellan's Blinders
-					i(142147),	-- Robes of Wicket Modesty
-					i(142171),	-- Seal of Darkshire Nobility
-					i(142143),	-- Willbreaker Legguards
-					i(142177),	-- Jagged Emerald
-					i(142189),	-- Perfectly Preserved Apple
-				})),
-				cr(114247, e(1836, {	-- The Curator
-					i(142130),	-- Bite-Marked Wristplates
-					i(142141),	-- Custodian's Soothing Touch
-					i(142165),	-- Deteriorated Construct Core
-					i(142133),	-- Gauntlets of Confinement
-					i(142149),	-- Gloves of Arcane Confluence
-					i(142125),	-- Repurposed Golem Grips
-					i(142172),	-- Terestian's Signet Ring
-					i(142176),	-- Arcing Static Charge
-					i(142309),	-- Fauna Analysis Widget
-					i(142181),	-- Seeping Corruption
-				})),
-				cr(114350, e(1817, {	-- Shade of Medivh
-					i(138798),	-- Illusion: Sunfire
-					i(142207),	-- Amulet of the Last Guardian
-					i(142157),	-- Aran's Relaxing Ruby
-					i(142131),	-- Frozen-Link Chestguard
-					i(142145),	-- Girdle of Ghostly Exclusion
-					i(142169),	-- Raven Eidolon
-					i(142152),	-- Shoulderpads of Chaotic Thought
-					i(142129),	-- Spellwarding Waistguard
-					i(142308),	-- Ageless Winter
-					i(142310),	-- Anthology of Horrors
-				})),
-				cr(114252, e(1818, {	-- Mana Devourer
-					i(142162),	-- Fluctuating Energy
-					i(142150),	-- Hood of Uncanny Perspectives
-					i(142135),	-- Legguards of Countless Hours
-					i(142128),	-- Pauldrons of Encroaching Limits
-					i(142144),	-- Unending Horizon Spaulders
-					i(142215),	-- Wine-Stained Mantle
-					i(142180),	-- Grisly Schism
-					i(142307),	-- Miniature Bonfire
-					i(142305),	-- Suffused Manapearl
-				})),
-				cr(114790, e(1838, {	-- Viz'aduum the Watcher
-					ach(11929),	-- Heroic: Return to Karazhan
-					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
-					i(142167),	-- Eye of Command
-					i(142132),	-- Doomstride Footguards
-					i(142151),	-- Leggings of Countless Worlds
-					i(142173),	-- Ring of Collapsing Futures
-					i(142127),	-- Tassets of Perpetual Despair
-					i(142142),	-- Unbound Reality Mask
-					i(142306),	-- Rift Stabilization Shard
-					i(142182),	-- Viz'aduum's Mindstone
-				})),
+				e(1825, {	-- Maiden of Virtue
+					["cr"] = 113971,	-- Maiden of Virtue
+					["g"] = {
+						i(142138),	-- Confiscated Manacle
+						i(142153),	-- Cord of the Penitent
+						i(142170),	-- Drape of Shame
+						i(142158),	-- Faith's Crucible
+						i(142124),	-- Treads of the Depraved
+						i(142139),	-- Vest of Wanton Deeds
+						i(142193),	-- Begrudging Confessions
+						i(142187),	-- Virtuous Directive
+					},
+				}),
+				e(1835, {	-- Attumen the Huntsman
+					["crs"] = {
+						114262,	-- Attumen the Huntsman
+						114264,	-- Midnight
+					},
+					["g"] = {
+						i(142140),	-- Calliard's Galoshes
+						i(142174),	-- Choker of Barbed Reins
+						i(142126),	-- Helm of Phantasmal Scars
+						i(142161),	-- Inescapable Dread
+						i(142136),	-- Mantle of Hideous Trophies
+						i(142148),	-- Wilderness Stalker's Softsoles
+						i(142191),	-- Dirge of the Hunted
+						i(142185),	-- Fear of Predation
+						i(142183),	-- Lava-Quenched Hoofplate
+					},
+				}),
+				e(1837, {	-- Moroes
+					["cr"] = 114312,	-- Moroes
+					["g"] = {
+						i(138797),	-- Illusion: Mongoose
+						i(142246, { 	-- Broken Pocket Watch
+							["description"] = "This is a rare drop that eventually leads to adding Moroes as a follower.",
+							["questID"] = 44803,	-- Return to Karazhan: Master of the House
+						}),
+						i(142159),	-- Bloodstained Handkerchief
+						i(142123),	-- Breastplate of Obligation
+						i(142134),	-- Castellan's Blinders
+						i(142147),	-- Robes of Wicket Modesty
+						i(142171),	-- Seal of Darkshire Nobility
+						i(142143),	-- Willbreaker Legguards
+						i(142177),	-- Jagged Emerald
+						i(142189),	-- Perfectly Preserved Apple
+					},
+				}),
+				e(1836, {	-- The Curator
+					["cr"] = 114247,	-- The Curator
+					["g"] = {
+						i(142130),	-- Bite-Marked Wristplates
+						i(142141),	-- Custodian's Soothing Touch
+						i(142165),	-- Deteriorated Construct Core
+						i(142133),	-- Gauntlets of Confinement
+						i(142149),	-- Gloves of Arcane Confluence
+						i(142125),	-- Repurposed Golem Grips
+						i(142172),	-- Terestian's Signet Ring
+						i(142176),	-- Arcing Static Charge
+						i(142309),	-- Fauna Analysis Widget
+						i(142181),	-- Seeping Corruption
+					},
+				}),
+				e(1817, {	-- Shade of Medivh
+					["cr"] = 114350,	-- Shade of Medivh
+					["g"] = {
+						i(138798),	-- Illusion: Sunfire
+						i(142207),	-- Amulet of the Last Guardian
+						i(142157),	-- Aran's Relaxing Ruby
+						i(142131),	-- Frozen-Link Chestguard
+						i(142145),	-- Girdle of Ghostly Exclusion
+						i(142169),	-- Raven Eidolon
+						i(142152),	-- Shoulderpads of Chaotic Thought
+						i(142129),	-- Spellwarding Waistguard
+						i(142308),	-- Ageless Winter
+						i(142310),	-- Anthology of Horrors
+					},
+				}),
+				e(1818, {	-- Mana Devourer
+					["cr"] = 114252,	-- Mana Devourer
+					["g"] = {
+						i(142162),	-- Fluctuating Energy
+						i(142150),	-- Hood of Uncanny Perspectives
+						i(142135),	-- Legguards of Countless Hours
+						i(142128),	-- Pauldrons of Encroaching Limits
+						i(142144),	-- Unending Horizon Spaulders
+						i(142215),	-- Wine-Stained Mantle
+						i(142180),	-- Grisly Schism
+						i(142307),	-- Miniature Bonfire
+						i(142305),	-- Suffused Manapearl
+					},
+				}),
+				e(1838, {	-- Viz'aduum the Watcher
+					["cr"] = 114790,	-- Viz'aduum the Watcher
+					["g"] = {
+						ach(11929),	-- Heroic: Return to Karazhan
+						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
+						i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+						i(142167),	-- Eye of Command
+						i(142132),	-- Doomstride Footguards
+						i(142151),	-- Leggings of Countless Worlds
+						i(142173),	-- Ring of Collapsing Futures
+						i(142127),	-- Tassets of Perpetual Despair
+						i(142142),	-- Unbound Reality Mask
+						i(142306),	-- Rift Stabilization Shard
+						i(142182),	-- Viz'aduum's Mindstone
+					},
+				}),
 			}),
 			d(23, {	-- Mythic
 				n(-4, {	-- Achievements
@@ -196,11 +221,11 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					}),
 					ach(11430, {	-- One Night in Karazhan
-						["description"] = "1. Go to Opera and complete the encounter.  Loot the crystal in the audience.\n\n2. Head towards Maiden.  Loot the crystal in the room just before the boss.\n\n3. Go to Moroes and complete the encounter.  Loot the crystal behind the table.  Pick up the key that appears on the ground after Moroes dies.\n\n4. Go to the spider room and loot the crystal.\n\n5. Go to Curator, complete the encounter, and loot the crystal.\n\nRun down to where Nightbane was summoned in the Burning Crusade days. Medivh will be there.\n\nTalk to Medivh.\n",
+						["description"] = "1. Go to Opera and complete the encounter.  Loot the crystal in the audience.\n\n2. Head towards Maiden.  Loot the crystal in the room just before the boss.\n\n3. Go to Moroes and complete the encounter.  Loot the crystal behind the table.  Pick up the key that appears on the ground after Moroes dies.\n\n4. Go to the spider room (the far top-right corner of Servant's Quarters) and loot the crystal.\n\n5. Go to Curator, complete the encounter, and loot the crystal.\n\nRun down to where Nightbane was summoned in the Burning Crusade days. Medivh will be there.\n\nTalk to Medivh.\n",
 					}),
 					ach(11335),	-- Season Tickets
 				}),
-				e(1820, {	-- Opera Hall: Wikket
+				e(1820,   {	-- Opera Hall: Wikket
 					["crs"] = {
 						114339,	-- Barnes <The Stage Manager>
 						114284,	-- Elfyra
@@ -223,7 +248,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(142179),	-- Memory of Betrayal
 					},
 				}),
-				e(1826, {	-- Opera Hall: Westfall Story
+				e(1826,   {	-- Opera Hall: Westfall Story
 					["crs"] = {
 						114339,	-- Barnes <The Stage Manager>
 						114260,	-- Mrrgria
@@ -244,7 +269,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(142178),	-- Ruffian's Poisoned Blade
 					},
 				}),
-				e(1827, {	-- Opera Hall: Beautiful Beast
+				e(1827,   {	-- Opera Hall: Beautiful Beast
 					["crs"] = {
 						114339,	-- Barnes <The Stage Manager>
 						114328,	-- Coggleston
@@ -264,46 +289,59 @@ _.Instances = { tier(7, {	-- Legion
 						i(142188),	-- Spellbound Rose Petal
 					},
 				}),
-				cr(113971, e(1825, {	-- Maiden of Virtue
-					i(142138),	-- Confiscated Manacle
-					i(142153),	-- Cord of the Penitent
-					i(142170),	-- Drape of Shame
-					i(142158),	-- Faith's Crucible
-					i(142124),	-- Treads of the Depraved
-					i(142139),	-- Vest of Wanton Deeds
-					i(142193),	-- Begrudging Confessions
-					i(142187),	-- Virtuous Directive
-				})),
-				cr(114262, e(1835, {	-- Attumen the Huntsman
-					i(142236),	-- Midnight's Eternal Reins
-					i(142140),	-- Calliard's Galoshes
-					i(142174),	-- Choker of Barbed Reins
-					i(142126),	-- Helm of Phantasmal Scars
-					i(142161),	-- Inescapable Dread
-					i(142136),	-- Mantle of Hideous Trophies
-					i(142148),	-- Wilderness Stalker's Softsoles
-					i(142191),	-- Dirge of the Hunted
-					i(142185),	-- Fear of Predation
-					i(142183),	-- Lava-Quenched Hoofplate
-				})),
-				cr(114312, e(1837, {	-- Moroes
-					ach(11338),	-- Dine and Bash
-					i(138797),	-- Illusion: Mongoose
-					i(142246, { 	-- Broken Pocket Watch
-						["description"] = "This is a rare drop that eventually leads to adding Moroes as a follower.",
-						["questID"] = 44803,	-- Return to Karazhan: Master of the House
-					}),
-					i(142159),	-- Bloodstained Handkerchief
-					i(142123),	-- Breastplate of Obligation
-					i(142134),	-- Castellan's Blinders
-					i(142147),	-- Robes of Wicket Modesty
-					i(142171),	-- Seal of Darkshire Nobility
-					i(142143),	-- Willbreaker Legguards
-					i(142177),	-- Jagged Emerald
-					i(142189),	-- Perfectly Preserved Apple
-				})),
-				n(114895, { 	-- Nightbane
+				e(1825,   {	-- Maiden of Virtue
+					["cr"] = 113971,	-- Maiden of Virtue
+					["g"] = {
+						i(142138),	-- Confiscated Manacle
+						i(142153),	-- Cord of the Penitent
+						i(142170),	-- Drape of Shame
+						i(142158),	-- Faith's Crucible
+						i(142124),	-- Treads of the Depraved
+						i(142139),	-- Vest of Wanton Deeds
+						i(142193),	-- Begrudging Confessions
+						i(142187),	-- Virtuous Directive
+					},
+				}),
+				e(1835,   {	-- Attumen the Huntsman
+					["crs"] = {
+						114262,	-- Attumen the Huntsman
+						114264,	-- Midnight
+					},
+					["g"] = {
+						i(142236),	-- Midnight's Eternal Reins
+						i(142140),	-- Calliard's Galoshes
+						i(142174),	-- Choker of Barbed Reins
+						i(142126),	-- Helm of Phantasmal Scars
+						i(142161),	-- Inescapable Dread
+						i(142136),	-- Mantle of Hideous Trophies
+						i(142148),	-- Wilderness Stalker's Softsoles
+						i(142191),	-- Dirge of the Hunted
+						i(142185),	-- Fear of Predation
+						i(142183),	-- Lava-Quenched Hoofplate
+					},
+				}),
+				e(1837,   {	-- Moroes
+					["cr"] = 114312,	-- Moroes
+					["g"] = {
+						ach(11338),	-- Dine and Bash
+						i(138797),	-- Illusion: Mongoose
+						i(142246, { 	-- Broken Pocket Watch
+							["description"] = "This is a rare drop that eventually leads to adding Moroes as a follower.",
+							["questID"] = 44803,	-- Return to Karazhan: Master of the House
+						}),
+						i(142159),	-- Bloodstained Handkerchief
+						i(142123),	-- Breastplate of Obligation
+						i(142134),	-- Castellan's Blinders
+						i(142147),	-- Robes of Wicket Modesty
+						i(142171),	-- Seal of Darkshire Nobility
+						i(142143),	-- Willbreaker Legguards
+						i(142177),	-- Jagged Emerald
+						i(142189),	-- Perfectly Preserved Apple
+					},
+				}),
+				n(114895, {	-- Nightbane
 					["description"] = "This boss is only available if you do a speed run.",
+					["cr"] = 115038,	-- Image of Medivh
 					["g"] = {
 						i(142552),	-- Smoldering Ember Wyrm
 						q(45296, {	-- No Bones About It
@@ -331,56 +369,68 @@ _.Instances = { tier(7, {	-- Legion
 						i(143523),	-- Talisman of the Violet Eye
 					},
 				}),
-				cr(114247, e(1836, {	-- The Curator
-					i(142130),	-- Bite-Marked Wristplates
-					i(142141),	-- Custodian's Soothing Touch
-					i(142165),	-- Deteriorated Construct Core
-					i(142133),	-- Gauntlets of Confinement
-					i(142149),	-- Gloves of Arcane Confluence
-					i(142125),	-- Repurposed Golem Grips
-					i(142172),	-- Terestian's Signet Ring
-					i(142176),	-- Arcing Static Charge
-					i(142309),	-- Fauna Analysis Widget
-					i(142181),	-- Seeping Corruption
-				})),
-				cr(114350, e(1817, {	-- Shade of Medivh
-					ach(11432),	-- Scared Straight
-					i(138798),	-- Illusion: Sunfire
-					i(142207),	-- Amulet of the Last Guardian
-					i(142157),	-- Aran's Relaxing Ruby
-					i(142131),	-- Frozen-Link Chestguard
-					i(142145),	-- Girdle of Ghostly Exclusion
-					i(142169),	-- Raven Eidolon
-					i(142152),	-- Shoulderpads of Chaotic Thought
-					i(142129),	-- Spellwarding Waistguard
-					i(142308),	-- Ageless Winter
-					i(142310),	-- Anthology of Horrors
-				})),
-				cr(114252, e(1818, {	-- Mana Devourer
-					ach(11431),	-- The Rat Pack
-					i(142162),	-- Fluctuating Energy
-					i(142150),	-- Hood of Uncanny Perspectives
-					i(142135),	-- Legguards of Countless Hours
-					i(142128),	-- Pauldrons of Encroaching Limits
-					i(142144),	-- Unending Horizon Spaulders
-					i(142215),	-- Wine-Stained Mantle
-					i(142180),	-- Grisly Schism
-					i(142307),	-- Miniature Bonfire
-					i(142305),	-- Suffused Manapearl
-				})),
-				cr(114790, e(1838, {	-- Viz'aduum the Watcher
-					ach(11429),	-- Mythic: Return to Karazhan
-					i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
-					i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
-					i(142167),	-- Eye of Command
-					i(142132),	-- Doomstride Footguards
-					i(142151),	-- Leggings of Countless Worlds
-					i(142173),	-- Ring of Collapsing Futures
-					i(142127),	-- Tassets of Perpetual Despair
-					i(142142),	-- Unbound Reality Mask
-					i(142306),	-- Rift Stabilization Shard
-					i(142182),	-- Viz'aduum's Mindstone
-				})),
+				e(1836,   {	-- The Curator
+					["cr"] = 114247,	-- The Curator
+					["g"] = {
+						i(142130),	-- Bite-Marked Wristplates
+						i(142141),	-- Custodian's Soothing Touch
+						i(142165),	-- Deteriorated Construct Core
+						i(142133),	-- Gauntlets of Confinement
+						i(142149),	-- Gloves of Arcane Confluence
+						i(142125),	-- Repurposed Golem Grips
+						i(142172),	-- Terestian's Signet Ring
+						i(142176),	-- Arcing Static Charge
+						i(142309),	-- Fauna Analysis Widget
+						i(142181),	-- Seeping Corruption
+					},
+				}),
+				e(1817,   {	-- Shade of Medivh
+					["cr"] = 114350,	-- Shade of Medivh
+					["g"] = {
+						ach(11432),	-- Scared Straight
+						i(138798),	-- Illusion: Sunfire
+						i(142207),	-- Amulet of the Last Guardian
+						i(142157),	-- Aran's Relaxing Ruby
+						i(142131),	-- Frozen-Link Chestguard
+						i(142145),	-- Girdle of Ghostly Exclusion
+						i(142169),	-- Raven Eidolon
+						i(142152),	-- Shoulderpads of Chaotic Thought
+						i(142129),	-- Spellwarding Waistguard
+						i(142308),	-- Ageless Winter
+						i(142310),	-- Anthology of Horrors
+					},
+				}),
+				e(1818,   {	-- Mana Devourer
+					["cr"] = 114252,	-- Mana Devourer
+					["g"] = {
+						ach(11431),	-- The Rat Pack
+						i(142162),	-- Fluctuating Energy
+						i(142150),	-- Hood of Uncanny Perspectives
+						i(142135),	-- Legguards of Countless Hours
+						i(142128),	-- Pauldrons of Encroaching Limits
+						i(142144),	-- Unending Horizon Spaulders
+						i(142215),	-- Wine-Stained Mantle
+						i(142180),	-- Grisly Schism
+						i(142307),	-- Miniature Bonfire
+						i(142305),	-- Suffused Manapearl
+					},
+				}),
+				e(1838,   {	-- Viz'aduum the Watcher
+					["cr"] = 114790,	-- Viz'aduum the Watcher
+					["g"] = {
+						ach(11429),	-- Mythic: Return to Karazhan
+						i(141591),	-- Technique: Codex of the Tranquil Mind (Rank 2)
+						i(141592),	-- Technique: Codex of the Tranquil Mind (Rank 3)
+						i(142167),	-- Eye of Command
+						i(142132),	-- Doomstride Footguards
+						i(142151),	-- Leggings of Countless Worlds
+						i(142173),	-- Ring of Collapsing Futures
+						i(142127),	-- Tassets of Perpetual Despair
+						i(142142),	-- Unbound Reality Mask
+						i(142306),	-- Rift Stabilization Shard
+						i(142182),	-- Viz'aduum's Mindstone
+					},
+				}),
 			}),
 		},
 	}),
