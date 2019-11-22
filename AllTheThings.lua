@@ -4238,13 +4238,20 @@ app.BaseAchievementCriteria = {
 			return app.CollectibleAchievements;
 		elseif key == "saved" or key == "collected" then
 			if t.criteriaID then
+				local achCollected = 0
 				if app.Settings:Get("AccountWide:Achievements") then
-					local ach = GetDataSubMember("CollectedAchievements", t.achievementID);
-					if ach == 1 then return true end
+					achCollected = GetDataSubMember("CollectedAchievements", t.achievementID);
+				else
+					achCollected = select(app.AchievementCharCompletedIndex, GetAchievementInfo(t.achievementID))
 				end
-				local m = GetAchievementNumCriteria(t.achievementID);
-				if m and t.criteriaID <= m then
-					return select(3, GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true));
+				
+				if achCollected then
+					return true
+				else
+					local m = GetAchievementNumCriteria(t.achievementID);
+					if m and t.criteriaID <= m then
+						return select(3, GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true));
+					end
 				end
 			end
 		elseif key == "index" then
