@@ -14615,7 +14615,7 @@ app.events.PLAYER_DIFFICULTY_CHANGED = function()
 	wipe(searchCache);
 end
 app.events.TOYS_UPDATED = function(itemID, new)
-	if itemID and not GetDataSubMember("CollectedToys", itemID) then
+	if itemID and PlayerHasToy(itemID) and not GetDataSubMember("CollectedToys", itemID) then
 		SetDataSubMember("CollectedToys", itemID, true);
 		app:RefreshData(false, true);
 		app:PlayFanfare();
