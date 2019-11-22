@@ -14,8 +14,9 @@ _.ExpansionFeatures =
 								crit(1),		-- Leorajh
 								crit(2),		-- Talonpriest Ishaal
 								crit(3),		-- Tormmok
-								crit(4),		-- Aeda Brightdawn / Defender Illona
-								crit(5),		-- Delvar Ironfirst / Vivianne
+								-- Thanks, blizzard, for setting weird criteriaIDs for this
+								crit(5),		-- Defender Illona
+								crit(6),		-- Delvar Ironfirst
 								ach(9498),		-- Wingman
 							}),
 						}),
