@@ -10,9 +10,10 @@ _.Zones =
 				["g"] = {
 					n(-17, {	-- Quests
 						q(12758, {	-- A Hero's Headgear
+							["coord"] = { 55.7, 69.4, 119 },
+							["isDaily"] = true,
 							["provider"] = { "n", 29043 },	-- Rejek
 							["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-							["isDaily"] = true,
 							["g"] = {
 								crit(8, {	-- A Hero's Headgear
 									["achievementID"] = 961,	-- Honorary Frenzyheart
@@ -20,9 +21,10 @@ _.Zones =
 							},
 						}),
 						q(12702, {	-- Chicken Party!
+							["coord"] = { 55.5, 69.6, 119 },
+							["isDaily"] = true,
 							["provider"] = { "n", 28138 },	-- Elder Harkek
 							["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-							["isDaily"] = true,
 							["g"] = {
 								crit(1, {	-- Chicken Party!
 									["achievementID"] = 961,	-- Honorary Frenzyheart
@@ -30,14 +32,16 @@ _.Zones =
 							},
 						}),
 						q(12582, {	-- Frenzyheart Champion
+							["coord"] = { 72.0, 57.0, 119 },
+							["isDaily"] = true,
 							["provider"] = { "n", 28668 },	-- Zepik the Gorloc Hunter
 							["description"] = "In the battle with Artruis during the quest |cFFefc400A Hero's Burden|r, the NPC left alive determines which faction you are aligned with.\n\nZepik alive: Allied with Frenyheart\n\nJaloot alive: Allied with Oracles\n\nYou can repeat this quest as often as you like to switch from one faction to the other.\n\nWARNING: Switching factions will reduce your existing reputation to HONORED.",
-							["isDaily"] = true
 						}),
 						q(12703, {	-- Kartak's Rampage
+							["coord"] = { 55.5, 68.6, 119 },
+							["isDaily"] = true,
 							["provider"] = { "n", 29146 },	-- Vekgar
 							["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-							["isDaily"] = true,
 							["g"] = {
 								crit(2, {	-- Kartak's Rampage
 									["achievementID"] = 961,	-- Honorary Frenzyheart
@@ -45,9 +49,10 @@ _.Zones =
 							},
 						}),
 						q(12734, {	-- Rejek: First Blood
+							["coord"] = { 55.7, 69.4, 119 },
+							["isDaily"] = true,
 							["provider"] = { "n", 29043 },	-- Rejek
 							["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-							["isDaily"] = true,
 							["g"] = {
 								crit(7, {	-- Rejek: First Blood
 									["achievementID"] = 961,	-- Honorary Frenzyheart
@@ -55,14 +60,16 @@ _.Zones =
 							},
 						}),
 						q(12692, {	-- Return of the Lich Hunter
+							["coord"] = { 71.9, 57.0, 119 },
+							["isDaily"] = true,
 							["provider"] = { "n", 28668 },		-- Zepik the Gorloc Hunter
 							["sourceQuest"] = 12582,	-- Frenzyheart Champion
-							["isDaily"] = true
 						}),
 						q(12760, {	-- Secret Strength of the Frenzyheart
+							["coord"] = { 55.5, 68.6, 119 },
+							["isDaily"] = true,
 							["provider"] = { "n", 29146 },	-- Vekgar
 							["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-							["isDaily"] = true,
 							["g"] = {
 								crit(4, {	-- Secret Strength of the Frenzyheart
 									["achievementID"] = 961,	-- Honorary Frenzyheart
@@ -70,9 +77,10 @@ _.Zones =
 							},
 						}),
 						q(12741, {	-- Strength of the Tempest
+							["coord"] = { 55.7, 69.4, 119 },
+							["isDaily"] = true,
 							["provider"] = { "n", 29043 },	-- Rejek
 							["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-							["isDaily"] = true,
 							["g"] = {
 								crit(6, {	-- Strength of the Tempest
 									["achievementID"] = 961,	-- Honorary Frenzyheart
@@ -80,9 +88,10 @@ _.Zones =
 							},
 						}),
 						q(12732, {	-- The Heartblood's Strength
+							["coord"] = { 55.7, 69.4, 119 },
+							["isDaily"] = true,
 							["provider"] = { "n", 29043 },	-- Rejek
 							["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-							["isDaily"] = true,
 							["g"] = {
 								crit(5, {	-- The Heartblood's Strength
 									["achievementID"] = 961,	-- Honorary Frenzyheart
@@ -90,9 +99,10 @@ _.Zones =
 							},
 						}),
 						q(12759, {	-- Tools of War
+							["coord"] = { 55.5, 68.6, 119 },
+							["isDaily"] = true,
 							["provider"] = { "n", 29146 },	-- Vekgar
 							["sourceQuest"] = 12692,	-- Return of the Lich Hunter
-							["isDaily"] = true,
 							["g"] = {
 								crit(3, {	-- Tools of War
 									["achievementID"] = 961,	-- Honorary Frenzyheart
@@ -126,28 +136,21 @@ _.Zones =
 				["g"] = {
 					n(-17, { 	-- Quests
 						q(12735, {	-- A Cleansing Song
+							["coord"] = { 53.3, 56.4, 119 },
+							["isDaily"] = true,
 							["provider"] = { "n", 29006 },	-- Oracle Soo-nee
 							["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-							["isDaily"] = true,
 							["g"] = {
 								crit(7, {	-- A Cleansing Song
 									["achievementID"] = 962,	-- Savior of the Oracles
 								}),
 							},
 						}),
-						q(12581, {	-- A Hero's Burden
-							["provider"] = { "n", 28122 },	-- Moodle
-							["g"] = {
-								i(39475),	-- Artruis' Focus Stone
-								i(39485),	-- Blood-Infused Pendant
-								i(39483),	-- Choker of Binding
-								i(39484),	-- Spiked Collar of Servitude
-							},
-						}),
 						q(12704, {	-- Appeasing the Great Rain Stone
+							["coord"] = { 54.6, 56.3, 119 },
+							["isDaily"] = true,
 							["provider"] = { "n", 28027 },	-- High-Oracle Soo-say
 							["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-							["isDaily"] = true,
 							["g"] = {
 								crit(1, {	-- Appeasing the Great Rain Stone
 									["achievementID"] = 962,	-- Savior of the Oracles
@@ -155,14 +158,16 @@ _.Zones =
 							},
 						}),
 						q(12689, {	-- Hand of the Oracles
+							["coord"] = { 72.4, 57.4, 119 },
+							["isDaily"] = true,
 							["provider"] = { "n", 28667 },		-- Jaloot
 							["description"] = "In the battle with Artruis during the quest |cFFefc400A Hero's Burden|r, the NPC left alive determines which faction you are aligned with.\n\nZepik alive: Allied with Frenyheart\n\nJaloot alive: Allied with Oracles\n\nYou can repeat this quest as often as you like to switch from one faction to the other.\n\nWARNING: Switching factions will reduce your existing reputation to HONORED.",
-							["isDaily"] = true
 						}),
 						q(12761, {	-- Mastery of the Crystals
+							["coord"] = { 54.2, 53.8, 119 },
+							["isDaily"] = true,
 							["provider"] = { "n", 29149 },	-- Oracle Soo-dow
 							["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-							["isDaily"] = true,
 							["g"] = {
 								crit(3, {	-- Mastery of the Crystals
 									["achievementID"] = 962,	-- Savior of the Oracles
@@ -170,9 +175,10 @@ _.Zones =
 							},
 						}),
 						q(12762, {	-- Power of the Great Ones
+							["coord"] = { 54.2, 53.8, 119 },
+							["isDaily"] = true,
 							["provider"] = { "n", 29149 },	-- Oracle Soo-dow
 							["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-							["isDaily"] = true,
 							["g"] = {
 								crit(4, {	-- Power of the Great Ones
 									["achievementID"] = 962,	-- Savior of the Oracles
@@ -180,14 +186,16 @@ _.Zones =
 							},
 						}),
 						q(12695, {	-- Return of the Friendly Dryskin
+							["coord"] = { 72.4, 57.4, 119 },
+							["isDaily"] = true,
 							["provider"] = { "n", 28667 },		-- Jaloot
 							["sourceQuest"] = 12689,	-- Hand of the Oracles
-							["isDaily"] = true
 						}),
 						q(12737, {	-- Song of Fecundity
+							["coord"] = { 53.3, 56.4, 119 },
+							["isDaily"] = true,
 							["provider"] = { "n", 29006 },	-- Oracle Soo-nee
 							["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-							["isDaily"] = true,
 							["g"] = {
 								crit(8, {	-- Song of Fecundity
 									["achievementID"] = 962,	-- Savior of the Oracles
@@ -195,9 +203,10 @@ _.Zones =
 							},
 						}),
 						q(12736, {	-- Song of Reflection
+							["coord"] = { 53.3, 56.4, 119 },
+							["isDaily"] = true,
 							["provider"] = { "n", 29006 },	-- Oracle Soo-nee
 							["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-							["isDaily"] = true,
 							["g"] = {
 								crit(5, {	-- Song of Reflection
 									["achievementID"] = 962,	-- Savior of the Oracles
@@ -205,9 +214,10 @@ _.Zones =
 							},
 						}),
 						q(12726, {	-- Song of Wind and Water
+							["coord"] = { 53.3, 56.4, 119 },
+							["isDaily"] = true,
 							["provider"] = { "n", 29006 },	-- Oracle Soo-nee
 							["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-							["isDaily"] = true,
 							["g"] = {
 								crit(6, {	-- Song of Wind and Water
 									["achievementID"] = 962,	-- Savior of the Oracles
@@ -215,9 +225,10 @@ _.Zones =
 							},
 						}),
 						q(12705, {	-- Will of the Titans
+							["coord"] = { 54.2, 53.8, 119 },
+							["isDaily"] = true,
 							["provider"] = { "n", 29149 },	-- Oracle Soo-dow
 							["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
-							["isDaily"] = true,
 							["g"] = {
 								crit(2, {	-- Will of the Titans
 									["achievementID"] = 962,	-- Savior of the Oracles

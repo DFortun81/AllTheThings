@@ -297,6 +297,12 @@ _.Zones =
 						currency(61),	-- Dalaran Jewelcrafter's Token
 					},
 				}),
+				q(39209, {	-- Sholazar Basin -- Adventure Guide
+					["u"] = 40,
+				}),
+				q(39212, {	-- Sholazar Basin -- Adventure Guide
+					["u"] = 40,
+				}),
 				q(12974, {	-- The Champion's Call!
 					["coord"] = { 49.3, 45.9, 125 },
 					["provider"] = { "n", 30137 },	-- Shifty Vickers
