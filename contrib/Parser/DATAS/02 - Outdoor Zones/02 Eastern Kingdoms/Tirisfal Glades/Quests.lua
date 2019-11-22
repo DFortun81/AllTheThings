@@ -437,6 +437,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1652 },	-- Deathguard Burgess
 				}),
+				q(10590,  {	-- Prove  Your Hatred
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 17099 },	-- Mehlar Dawnblade
+				}),
 				q(409,   {	-- Proving Allegiance
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -712,6 +718,13 @@ _.Zones =
 						i(62169),	-- Dithering Belt
 						i(62170),	-- Plague Cauldron Lid
 					},
+				}),
+				q(10592,  {	-- Wisdom of the Banshee Queen
+					["u"] = 40,
+					["races"] = { 10 },	 -- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 17099 },	-- Mehlar Dawnblade
+					["sourceQuest"] = 10590,	-- Prove Your Hatred
 				}),
 			}),
 		}),

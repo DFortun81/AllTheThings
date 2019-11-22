@@ -18,6 +18,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				q(29614, {	-- Containment is Key
 					["provider"] = { "n", 54849 }, 		-- Naturalist Bite
 				}),
+				q(9764,  {	-- Orders from Lady Vashj
+					["u"] = 40,
+					["provider"] = { "i", 24367 },	-- Orders from Lady Vashj
+				}),
 				q(29615, {	-- Windcaller Claw and the Water Thief
 					["provider"] = { "n", 54851 }, 		-- Windcaller Claw
 				}),

@@ -14,12 +14,28 @@ _.Zones =
 				q(44421, {	-- Anomalous Anomalies
 					["provider"] = { "n", 113986 },	-- 
 				}),
+				]]--
 				q(11031, {	-- Archmage No More
-					["provider"] = { "n", 18253 },	-- 
+					["u"] = 40,
+					["provider"] = { "n", 18253 },	-- Archmage Leryda
+					["repeatable"] = true,
+					["g"] = {
+						i(29290),	-- Violet Signet of the Grand Restorer
+						i(29279),	-- Violet Signet of the Great Protector
+						i(29283),	-- Violet Signet of the Master Assassin
+					},
 				}),
 				q(11033, {	-- Assassin No More
-					["provider"] = { "n", 18253 },	-- 
+					["u"] = 40,
+					["provider"] = { "n", 18253 },	-- Archmage Leryda
+					["repeatable"] = true,
+					["g"] = {
+						i(29290),	-- Violet Signet of the Grand Restorer
+						i(29279),	-- Violet Signet of the Great Protector
+						i(29287),	-- Violet Signet of the Archmage
+					},
 				}),
+				--[[
 				q(44500, {	-- Author! Author!
 					["provider"] = { "n", 113986 },	-- 
 				}),
@@ -115,22 +131,45 @@ _.Zones =
 					["provider"] = { "n", 18255 },	-- 
 					 ["description"] = "This quest is offered after completion of 'Return to Karazhan: Clearing Out the Cobwebs.'",
 				}),
+				]]--
 				q(10731, {	-- Path of the Violet Assassin
-					["provider"] = { "n", 18253 },	-- 
+					["u"] = 40,
+					["provider"] = { "n", 18253 },	-- Archmage Leryda
+					["g"] = {
+						i(29280),	-- Violet Signet
+					},
 				}),
 				q(10729, {	-- Path of the Violet Mage
-					["provider"] = { "n", 18253 },	-- 
+					["u"] = 40,
+					["provider"] = { "n", 18253 },	-- Archmage Leryda
+					["g"] = {
+						i(29284),	-- Violet Signet
+					},
 				}),
 				q(10732, {	-- Path of the Violet Protector
-					["provider"] = { "n", 18253 },	-- 
+					["u"] = 40,
+					["provider"] = { "n", 18253 },	-- Archmage Leryda
+					["g"] = {
+						i(29276),	-- Violet Signet
+					},
 				}),
 				q(10730, {	-- Path of the Violet Restorer
-					["provider"] = { "n", 18253 },	-- 
+					["u"] = 40,
+					["provider"] = { "n", 18253 },	-- Archmage Leryda
+					["g"] = {
+						i(29288),	-- Violet Signet
+					},
 				}),
 				q(11032, {	-- Protector No More
-					["provider"] = { "n", 18253 },	-- 
+					["u"] = 40,
+					["provider"] = { "n", 18253 },	-- Archmage Leryda
+					["repeatable"] = true,
+					["g"] = {
+						i(29290),	-- Violet Signet of the Grand Restorer
+						i(29287),	-- Violet Signet of the Archmage
+						i(29283),	-- Violet Signet of the Master Assassin
+					},
 				}),
-]]--
 				q(44685, {	-- Reclaiming the Ramparts
 					["provider"] = { "n", 114310 },	-- Archmage Khadgar
 					["lvl"] = 110,
@@ -141,11 +180,16 @@ _.Zones =
 						44683,	-- Holding the Lines
 					},
 				}),
---[[
 				q(11034, {	-- Restorer No More
-					["provider"] = { "n", 18253 },	-- 
+					["u"] = 40,
+					["provider"] = { "n", 18253 },	-- Archmage Leryda
+					["repeatable"] = true,
+					["g"] = {
+						i(29279),	-- Violet Signet of the Great Protector
+						i(29283),	-- Violet Signet of the Master Assassin
+						i(29287),	-- Violet Signet of the Archmage
+					},
 				}),
-				]]--
 				q(45291, {	-- Return to Karazhan: Book Wyrms
 					["sourceQuests"] = {
 						44734,	-- Fragments of the Past

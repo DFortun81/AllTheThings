@@ -6,12 +6,52 @@ _.Zones =
 	m(13, { 	-- Eastern Kingdoms
 		m(110, { 	-- Silvermoon City
 			n(-17, { 	-- Quests
+				q(9725,  {	-- A Demonstration of Loyalty
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 25223 },	-- Lord Solanar Bloodwrath
+					["sourceQuest"] = 9723,	-- A Gesture of Commitment
+				}),
+				q(10361,  {	-- A Donation of Magewave
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 20612 },	-- Sorim Lightsong
+				}),
+				q(10362,  {	-- A Donation of Runecloth
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 20612 },	-- Sorim Lightsong
+				}),
+				q(10360,  {	-- A Donation of Silk
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 20612 },	-- Sorim Lightsong
+				}),
+				q(10359,  {	-- A Donation of Wool
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 20612 },	-- Sorim Lightsong
+				}),
+				q(9723,  {	-- A Gesture of Commitment
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 25223 },	-- Lord Solanar Bloodwrath
+					["sourceQuest"] = 9722,	-- The Master's Path
+				}),
 				q(9681, {	-- A Study in Power
 					["u"] = 40,
 					["races"] = { 10 },	-- Blood Elf
 					["classes"] = { 2 },	-- Paladin
 					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9678,	-- The First Trial
+				}),
+				q(9721,  {	-- A Summons from Lord Solanar
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
 				}),
 				q(27277, {	-- An Audience with Ureda
 					["provider"] = { "n", 16653 },	-- Inethven
@@ -237,6 +277,13 @@ _.Zones =
 					["provider"] = { "n", 17717 },	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9677,	-- Summons from Knight-Lord Bloodvalor
 				}),
+				q(9722,  {	-- The Master's Path
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 25223 },	-- Lord Solanar Bloodwrath
+					["sourceQuest"] = 9721,	-- A Summons from Lord Solanar
+				}),
 				q(9692, {	-- The Path of the Adept
 					["u"] = 40,
 					["races"] = { 10 },	-- Blood Elf
@@ -265,6 +312,30 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 4 },	-- Rogue
 					["lvl"] = 20,
+				}),
+				q(9735,  {	-- True Masters of the Light
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 25223 },	-- Lord Solanar Bloodwrath
+					["sourceQuest"] = 9725,	-- A Demonstration of Loyalty
+				}),
+				q(9736,  {	-- True Masters of the Light
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 25223 },	-- Lord Solanar Bloodwrath
+					["sourceQuest"] = 9735,	-- True Masters of the Light
+				}),
+				q(9737,  {	-- True Masters of the Light
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 25223 },	-- Lord Solanar Bloodwrath
+					["g"] = {
+						i(25549),	-- Blood Knight Tabard
+						mount(34767),	-- Summon Thalassian Charger
+					},
 				}),
 				q(32330, {	-- What's in the Box?
 					["provider"] = { "n", 16802 },	-- Lor'themar Theron

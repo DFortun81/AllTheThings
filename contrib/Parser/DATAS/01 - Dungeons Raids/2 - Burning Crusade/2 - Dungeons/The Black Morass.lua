@@ -12,6 +12,16 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		},
 		["groups"] = {
 			n(-17, {
+				q(10298,  {	-- Hero of the Brood
+					["u"] = 40,
+					["provider"] = { "n", 20201 },	-- Sa'at
+					["groups"] = {
+						i(29320),	-- Band of the Guardian
+						i(29322),	-- Keeper's Ring of Piety
+						i(29321),	-- Time-Bending Gem
+						i(29323),	-- Andormu's Tear
+					},
+				}),
 				q(10297, {	-- The Opening of the Dark Portal
 					["provider"] = { "n", 20201 },	-- Sa'at
 					["sourceQuests"] = { 10296 },	-- The Black Morass

@@ -30,11 +30,35 @@ _.Zones =
 					["sourceQuest"] = 8335,	-- Felendren the Banished
 					["isBreadcrumb"] = true,
 				}),
+				q(10073,  {	-- Corruption
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 9 },	-- Warlock
+					["provider"] = { "n", 15283 },	-- Summoner Teli'Larien
+				}),
+				q(10071,  {	-- Evisceration
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 4 },	-- Rogue
+					["provider"] = { "n", 15285 },	-- Pathstalker Kariel
+				}),
 				q(8335,  {	-- Felendren the Banished
 					["provider"] = { "n", 15281 },	-- Lanthan Perilon
 					["coord"] = { 52.8, 49.7, 467 },
 					["races"] = { 10 },	-- Blood Elves
 					["sourceQuest"] = 8334,	-- Aggression
+				}),
+				q(10068,  {	-- Frost Nova
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 8 },	-- Mage
+					["provider"] = { "n", 15279 },	-- Julia Sunstiker
+				}),
+				q(10072,  {	-- Learning the Word
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 5 },	-- Priest
+					["provider"] = { "n", 15284 },	-- Matron Arena
 				}),
 				q(9676, {	-- Paladin Training
 					["u"] = 40,
@@ -63,6 +87,12 @@ _.Zones =
 					["coord"] = { 63.9, 42.8, 467 },
 					["races"] = { 10 },	-- Blood Elves
 					["sourceQuest"] = 8326,	-- Unfortunate Measures
+				}),
+				q(10070,  {	-- Steady Shot
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 3 },	-- Hunter
+					["provider"] = { "n", 15513 },	-- Ranger Sallina
 				}),
 				q(8338,  {	-- Tainted Arcane Sliver
 					["crs"] = { 15298 },	-- Tainted Arcane Wraith
@@ -96,6 +126,12 @@ _.Zones =
 					["coord"] = { 61.0, 45.1, 467 },
 					["races"] = { 10 },	-- Blood Elves
 					["sourceQuest"] = 8325,	-- Reclaiming Sunstrider Isle
+				}),
+				q(10069,  {	-- Ways of the Light
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 2 },	-- Paladin
+					["provider"] = { "n", 15280 },	-- Jesthenis Sunstriker
 				}),
 			}),
 		}),

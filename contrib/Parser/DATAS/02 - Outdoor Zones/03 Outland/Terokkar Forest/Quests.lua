@@ -941,6 +941,20 @@ _.Zones =
 							i(25916),	-- Terokkar Axe
 						},
 					}),
+					q(10178,  {	-- Find Spy To'gun
+						["u"] = 40,
+						["provider"] = { "n", 19496 },	-- Spy Grik'tha
+					}),
+					q(10164,  {	-- Greatfather Aldrimus
+						["u"] = 40,
+						["provider"] = { "n", 19698 },	-- Greatfather Aldrimus
+						["g"] = {
+							i(29341),	-- Auchenai Anchorite's Robe
+							i(29340),	-- Auchenai Monk's Tunic
+							i(29339),	-- Auchenai Tracker's Hauberk
+							i(29337),	-- The Exarch's Protector
+						},
+					}),
 					q(10027, {	-- Magical Disturbances
 						["provider"] = { "n", 18383 },	-- Kurgatok
 						["coord"] = { 48.8, 45.7, 108 },

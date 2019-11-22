@@ -389,6 +389,18 @@ _.Zones =
 					["coord"] = { 72.6,70.6, 107 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(10212,  {	-- Hero of the Mag'har
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4949 },	-- Thrall
+					["g"] = {
+						i(28173),	-- Mag'hari Huntsman's Leggings
+						i(28169),	-- Mag'hari Ritualist's Horns
+						i(28172),	-- Mag'hari Scout's Tunic
+						i(28175),	-- Mag'hari Warlord's Legplates
+						i(28168),	-- Insignia of the Mag'hari Hero
+					},
+				}),
 				q(10109, {	-- I Must Have Them!
 					["provider"] = { "n", 19035 },	-- Wazat
 					["coord"] = { 61.6, 67.0, 107 },
@@ -859,6 +871,12 @@ _.Zones =
 						i(28172),	-- Mag'hari Scout's Tunic
 						i(28175),	-- Mag'hari Warlord's Legplates
 					},
+				}),
+				q(10175,  {	-- Thrall, Son of Durotan
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 18141 },	-- Greatmother Geyah
+					["sourceQuest"] = 10172,	-- There Is No Hope
 				}),
 				q(10081, {	-- To Meet Mother Kashur
 					["provider"] = { "n", 18141 },	-- Greatmother Geyah

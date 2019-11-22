@@ -114,6 +114,10 @@ _.Zones =
 					["provider"] = { "n", 18070 },	-- Windcaller Blackhoof
 					["coord"] = { 80.4, 64.7, 102 },
 				}),
+				q(9715,  {	-- Bring Me A Shrubbery!
+					["u"] = 40,
+					["provider"] = { "n", 17856 },	-- Gzhun'tt
+				}),
 				q(9814,  {	-- Burstcap Mushrooms, Mon!
 					["provider"] = { "n", 18014 },	-- Witch Doctor Tor'gash
 					["coord"] = { 32.9, 48.9, 102 },
@@ -170,6 +174,11 @@ _.Zones =
 						i(25519),	-- Warden's Hammer
 						i(157548),	-- Warden's Longbow
 					},
+				}),
+				q(9876,  {	-- Failed Incursion
+					["u"] = 40,
+					["provider"] = { "n", 17841 },	-- Ysiel Windsinger
+					["sourceQuest"] = 9732,	-- Return to the Marsh
 				}),
 				q(9708,  {	-- Familiar Fungi
 					["provider"] = { "n", 17831 },	-- Watcher Leesa'oh
@@ -278,6 +287,15 @@ _.Zones =
 						i(27756),	-- Marshfang Blade Axe
 					},
 				}),
+				q(9738,  {	-- Lost in Action
+					["u"] = 40,
+					["provider"] = { "n", 17884 },	-- Watcher Jhang
+					["g"] = {
+						i(25541),	-- Cenarion Ring of Casting
+						i(28029),	-- Goldenvine Wraps
+						i(25540),	-- Dark Cloak of the Marsh
+					},
+				}),
 				q(9905,  {	-- Maktu's Revenge
 					["provider"] = { "n", 18010 },	-- Maktu
 					["coord"] = { 41.6, 27.4, 102 },
@@ -368,6 +386,10 @@ _.Zones =
 						i(27752),	-- Zangarmarsh Claymore
 					},
 				}),
+				q(9717,  {	-- Oh, It's On!
+					["u"] = 40,
+					["provider"] = { "n", 17857 },	-- T'shu
+				}),
 				q(9701,  {	-- Observing the Sporelings
 					["provider"] = { "n", 17831 },	-- Watcher Leesa'oh
 					["coord"] = { 23.3, 66.2, 102 },
@@ -390,6 +412,11 @@ _.Zones =
 					["g"] = {
 						i(24402),	-- Package of Identified Plants
 					},
+				}),
+				q(9765,  {	-- Preparing for War
+					["u"] = 40,
+					["provider"] = { "n", 17841 },	-- Ysiel Windsinger
+					["sourceQuest"] = 9764,	-- Orders from Lady Vashj
 				}),
 				q(9904,  {	-- Pursuing Terrorclaw
 					["provider"] = { "n", 18018 },	-- Zurjaya
@@ -442,6 +469,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25616),	-- Tim's Trusty Helmet
+					},
+				}),
+				q(9719,  {	-- Stalk the Stalker
+					["u"] = 40,
+					["provider"] = { "n", 17866 },	-- Khn'nix
+					["g"] = {
+						i(28109),	-- Essence Infused Mushroom
+						i(28108),	-- Power Infused Mushroom
 					},
 				}),
 				q(9846,  {	-- Spirits of the Feralfen

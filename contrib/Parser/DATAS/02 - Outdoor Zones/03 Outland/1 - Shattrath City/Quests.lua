@@ -216,6 +216,10 @@ _.Zones =
 					["provider"] = { "n", 18481 },	-- A'dal
 					["sourceQuests"] = { 10883 },	-- The Tempest Key
 				}),
+				q(10177,  {	-- Trouble at Auchindoun
+					["u"] = 40,
+					["provider"] = { "n", 18893 },	-- Spymistress Mehlisah Highcrown
+				}),
 				q(29642, {	-- Trouble at Auchindoun
 					["provider"] = { "n", 18893 },	-- Spymistress Mehlisah Highcrown
 					["isBreadcrumb"] = true,
