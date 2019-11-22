@@ -146,6 +146,7 @@ _.PVP =
 				i(134740),	-- Cold-Touched Signet*
 				i(134745),	-- Cold-Touched Badge*
 				i(134744),	-- Cold-Touched Distinction*
+				i(134743),	-- Cold-Touched Accolade*
 			},
 		}),
 		i(135543, {	-- Rival's Crate of Battlefield Goods 80-89; splitting this box into two categories, loot table varies with level
