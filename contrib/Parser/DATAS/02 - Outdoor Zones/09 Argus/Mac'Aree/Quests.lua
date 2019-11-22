@@ -129,6 +129,12 @@ _.Zones =
 					["provider"] = { "n", 120533 },	-- Prophet Velen
 					["coord"] = { 54.5, 78.0, 882 },
 				}),
+				q(48635, {	-- More Void Inoculation
+					["coord"] = { 43.8, 60.8, 882 },
+					["isWeekly"] = true,
+					["provider"] = { "n", 127037 },	-- Nabiru
+					["sourceQuest"] = 48911,	-- Void Inoculation
+				}),
 				q(47686, {	-- Not-So-Humble Beginnings
 					["sourceQuests"] = { 46941 },	-- The Path Forward
 					["provider"] = { "n", 120533 },	-- Prophet Velen
@@ -203,6 +209,11 @@ _.Zones =
 					["provider"] = { "n", 121230 },	-- Alleria Windrunner
 					["coord"] = { 35.4, 59.6, 882 },
 				}),
+				q(48911, {	-- Void Inoculation
+					["coord"] = { 43.8, 60.8, 882 },
+					["isWeekly"] = true,
+					["provider"] = { "n", 127037 },	-- Nabiru
+				}),
 				q(47855, {	-- What Might Have Been
 					["sourceQuests"] = {
 						47853,	-- Flanking Maneuvers
@@ -243,7 +254,6 @@ _.Zones =
 				q(48668),	-- Lightforged Beacon: City Center
 				q(47182),	-- Long Overdue
 				q(48074),	-- Looming Over Me
-				q(48635),	-- More Void Inoculation
 				q(48042),	-- Order of Operations
 				q(48974),	-- Paragon of the Army of the Light
 				q(48036),	-- Precision Perfected
@@ -263,7 +273,6 @@ _.Zones =
 				q(48277),	-- The Speaker Seeks
 				q(48069),	-- The Wrench Calls
 				q(48632),	-- Void Extract
-				q(48911),	-- Void Inoculation
 --]]
 			}),
 		}),

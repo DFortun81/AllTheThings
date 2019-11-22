@@ -2067,6 +2067,12 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
+					q(52423, {	-- Work Order: Akunda's Bite
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = 182,	-- Herbalism
+					}),
 					q(52423, {	-- Work Order: Battle Flag: Phalanx Defense
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

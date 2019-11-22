@@ -50,7 +50,8 @@ _.NeverImplemented =
 		q(11320),	-- [NYI] Now this is Ram Racing... Almost. (Brewfest)
 		q(47465),	-- Bonus roll on Azuregos World boss during WoW 15th anniversary in 2019
 		q(47464),	-- Bonus roll on Kazzak World boss during WoW 15th anniversary in 2019
-
+		q(47466),	-- Bonus roll on Emeriss during anniversary event
+		
 		-- Darkmoon Faire
 		q(30557),	-- [DNT] A Captured Banner TRACKER - triggers after completing A Captured Banner (questID 29456)
 		q(30553),	-- [DNT] A Curious Crystal TRACKER - triggers after completing A Curious Crystal (questID 29443)
@@ -228,6 +229,8 @@ _.NeverImplemented =
 		-------------------
 		--   CATACLYSM   --
 		-------------------
+		q(28347),	-- Coffer of Promise TRACKING QUEST
+		
 		q(26565),	-- A Furious Catch (REMOVED) — unused version of Orgrimmar Cata fishing daily "A Golden Opportunity"
 		q(35348),	-- Blackrock Caverns Reward Quest
 		q(35587),	-- Deadmines heroic completion
@@ -1102,7 +1105,7 @@ _.NeverImplemented =
 		q(54861),	-- Ivus the Forest Lord Kill ID
 					-- Ivus the Forest Lord Bonus Roll
 		q(52998),	-- Ji'arak Kill ID
-					-- Ji'arak Bonus Roll
+		q(52264),	-- Ji'arak Bonus Roll
 		q(52996),	-- T'zane Kill ID
 		q(52263),	-- T'zane Bonus Roll
 		q(53001),	-- The Lion's Roar Kill ID
@@ -1287,6 +1290,7 @@ _.NeverImplemented =
 		q(53630),	-- Tiragarde Sound repeatable random chest (possibly different from others, it was Forgotten Treasure Chest at 79.57 20.22 in a small cave)
 
 	--	Zuldazar
+		q(55413),	-- War Mode supply drop in Zuldazar
 		q(55259),	-- Triggers after turning 'Sleep, Eat, Repeat' (ID 55258) in to finish the achievement criteria 'Sleep, Eat, Repeat' (3) for How to Train Your Direhorn (ID 13542)
 		-- Bonus Objectives
 		q(47527, {	-- Rituals of Heresy
