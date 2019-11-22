@@ -756,9 +756,16 @@ _.Zones =
 							["coord"] = { 28.5, 58.1, 105 },
 							["sourceQuest"] = 11061,	-- A Father's Duty
 						}),
-						q(11010, {	-- Bombing Run
+						q(11102, {	-- Bombing Run (druid)
+							["coord"] = { 27.6, 52.9, 105 },
+							["classes"] = { 11 },	-- Druid
+							["provider"] = { "n", 23120 },	-- Sky Sergeant Vanderlip
+							["sourceQuest"] = 11062,	-- The Skyguard Outpost
+						}),
+						q(11010, {	-- Bombing Run (all others)
 							["provider"] = { "n", 23120 },	-- Sky Sergeant Vanderlip
 							["coord"] = { 27.6, 52.9, 105 },
+							["classes"] = exclude({ 11 }, ALL_CLASSES),	-- All but druid
 							["sourceQuest"] = 11062,	-- The Skyguard Outpost
 						}),
 						q(11065, {	-- Wrangle Some Aether Rays!

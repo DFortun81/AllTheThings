@@ -193,6 +193,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 					["u"] = 26,	-- Hallow's End
 					["isYearly"] = true,
 				}),
+				q(11392, {	-- Call the Headless Horseman
+					["u"] = 40,	-- Hallow's End
+					["sourceQuests"] = {
+						11135,	-- The Headless Horseman
+						11220,	-- The Headless Horseman
+					},
+				}),
 				q(12380, {	-- Candy Bucket — Arathi Highlands, Hammerfall, Horde
 					["isYearly"] = true,
 					["coord"] = { 69.0, 33.4, 14 },
@@ -2862,6 +2869,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 						i(128658),	-- Spooky Supplies
 					},
 				}),
+				q(11242, {	-- Free at Last!
+					["u"] = 26,	-- Hallow's End
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 23904 },	-- Sir Thomas
+				}),
+				q(11403, {	-- Free at Last!
+					["u"] = 26,	-- Hallow's End
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 23904 },	-- Sir Thomas
+				}),
 				q(8311,  {	-- Hallow's End Treats for Jesper!
 					["sourceQuests"] = { 8356, 8355, 8353, 8357 },	-- Flexing for Nougat, Incoming Gumdrop, Chicken Clucking for a Mint, Dancing for Marzipan (Alliance)
 					["provider"] = { "n", 15310 },	-- Jesper
@@ -3148,6 +3165,24 @@ _.Holidays = bubbleDown({["u"] = 26},
 					["u"] = 26,	-- Hallow's End
 					["g"] = {
 						un(26, i(71076)),	-- Creepy Crate (Pet)
+					},
+				}),
+				q(11135, {	-- The Headless Horseman
+					["u"] = 26,	-- Hallow's End
+					["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
+					["maps"] = {
+						97,	-- Azuremyst Isle
+						27,	-- Dun Morogh
+						37,	-- Elwynn Forest
+					},
+				}),
+				q(11220, {	-- The Headless Horseman
+					["u"] = 26,	-- Hallow's End
+					["provider"] = { "n", 23973 },	-- Masked Orphan Matron
+					["maps"] = {
+						1,	-- Durotar
+						94,	-- Eversong Woods
+						18,	-- Tirisfal Glades
 					},
 				}),
 				q(43162, {	-- Under the Crooked Tree

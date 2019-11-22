@@ -526,6 +526,12 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(10756, {	-- Grand Master Rohok
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3230 },	-- Nazgrel
+					["sourceQuest"] = 10755,	-- Entry Into the Citadel
+				}),
 				q(10834, {  -- Grillok "Darkeye"
 					["coord"] = { 61.6, 81.8, 100 },
 					["races"] = HORDE_ONLY,
@@ -626,6 +632,12 @@ _.Zones =
 				q(10764, {	-- Hotter than Hell (removed, old BT key questline)
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(10758, {	-- Hotter than Hell
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16583 },	-- Rohok
+					["sourceQuest"] = 10757,	-- Rohok's Request
 				}),
 				q(10238, {	-- How to Serve Goblins
 					["coord"] = { 51.3, 30.5, 100 },
@@ -977,6 +989,12 @@ _.Zones =
 						{ "n", 19273 },	-- Forwarad Commander To'arch
 						{ "n", 16576 },	-- Overlord Hun Maimfist
 					},
+				}),
+				q(10757, {	-- Rohok's Request
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16583 },	-- Rohok
+					["sourceQuest"] = 10756,	-- Rohok's Request
 				}),
 				q(9430,  {	-- Sha'naar Relics
 					["coord"] = { 23.4, 36.5, 100 },

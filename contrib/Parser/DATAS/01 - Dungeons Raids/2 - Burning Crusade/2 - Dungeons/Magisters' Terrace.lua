@@ -15,6 +15,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				q(29686, {	-- A Radical Notion
 					["provider"] = { "n", 55007 },	-- Exarch Larethor
 				}),
+				q(11492, {	-- Hard to Kill
+					["u"] = 40,
+					["provider"] = { "n", 24848 },	-- Kalecgos
+					["sourceQuest"] = 11490,	-- The Scryer's Scryer
+				}),
 				q(29685, {	-- Hard to Kill
 					["provider"] = { "n", 24848 },	-- Kalecgos
 					["sourceQuest"] = 11490,	-- The Scryer's Scryer

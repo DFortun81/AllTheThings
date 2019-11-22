@@ -10,6 +10,10 @@ _.Zones =
 					["provider"] = { "n", 19684 },	-- Haggard War Veteran
 					["coord"] = { 59.6, 41.4, 111 },
 				}),
+				q(11216, {	-- Archmage Alturus
+					["u"] = 40,
+					["provider"] = { "n", 23948 },	-- Apprentice Tasserel
+				}),
 				q(10211, {	-- City of Light
 					["provider"] = { "n", 18166 },	-- Archmage Khadgar
 					["coord"] = { 54.7, 44.3, 111 },
@@ -62,6 +66,15 @@ _.Zones =
 					["provider"] = { "n", 18481 },	-- A'dal
 					["coord"] = { 54.3, 44.3, 111 },
 					["sourceQuests"] = { 10948 },	-- The Hostage Soul
+				}),
+				q(10882, {	-- Harbinger of Doom
+					["u"] = 40,
+					["provider"] = { "n", 18481 },	-- A'dal
+					["g"] = {
+						i(31747),	-- Potent Sha'tari Pendant
+						i(31749),	-- A'dal's Recovery Necklace
+						i(31748),	-- Shattrath Choker of Power
+					},
 				}),
 				q(10704, {	-- How to Break Into the Arcatraz
 					["provider"] = { "n", 18481 },	-- A'dal
