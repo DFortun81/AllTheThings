@@ -6,6 +6,51 @@ _.Zones =
 	m(424, {	-- Pandaria
 		m(371, { -- The Jade Forest
 			n(-17, {	-- Quests
+				q(31732, {	-- Unleash Hell
+					["sourceQuest"] = 29548,	-- The Mission
+					["provider"] = { "n", 66292 },	--  Sky Admiral Rogers
+					["coord"] = { 42.0, 92.8, 371 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(90375),	-- Airship marine's Sharpshooter
+						i(90376),	-- Barricade-Breaker Cidgel
+						i(90382),	-- Captain Roger's Polite Knocking Stick
+						i(90377),	-- Fogcutter Staff
+						i(90379),	-- Mystic Perpetual Motion Mace
+						i(90381),	-- Shock Trooper Battleaxe
+						i(90380),	-- Skyfire Medic's Staff
+						i(90383),	-- Skyfire Trooper's Mace
+						i(90378),	-- Staff of the Skymagi
+						i(90374),	-- Sully's Hotwiring Knife
+					},
+				}),
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+	--[[	
+					["sourceQuests"] = {  },	-- 
+					["provider"] = { "n",  },	-- 
+					["coord"] = { , , 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+					--]]
+				
+				
+				
+				
+				
 				ach(6300, {	-- Upjade Complete [Alliance]
 					["races"] = ALLIANCE_ONLY,	-- Alliance
 					["groups"] = {
@@ -134,23 +179,6 @@ _.Zones =
 									31738,	-- Pillaging Peons
 									29552,	-- Critical Condition
 									31740,	-- Koukou's Rampage
-								},
-							}),
-							q(31732, {	-- Unleash Hell
-								["provider"] = { "n", 66292 },	--  Sky Admiral Rogers
-								["coord"] = { 42.0, 92.8, 371 },
-								["sourceQuest"] = 29548,	-- The Mission
-								["g"] = {
-									i(90375),	-- Airship marine's Sharpshooter
-									i(90376),	-- Barricade-Breaker Cidgel
-									i(90382),	-- Captain Roger's Polite Knocking Stick
-									i(90377),	-- Fogcutter Staff
-									i(90379),	-- Mystic Perpetual Motion Mace
-									i(90381),	-- Shock Trooper Battleaxe
-									i(90380),	-- Skyfire Medic's Staff
-									i(90383),	-- Skyfire Trooper's Mace
-									i(90378),	-- Staff of the Skymagi
-									i(90374),	-- Sully's Hotwiring Knife
 								},
 							}),
 							q(31734, {	-- Welcome Wagons

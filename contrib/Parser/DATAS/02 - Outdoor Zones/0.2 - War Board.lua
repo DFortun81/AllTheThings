@@ -520,7 +520,7 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["lvl"] = 80,
 			}),
-			q(49864, {	-- Wars on Two Fronts [Pandaria]
+			q(49864, {	-- Wars on Two Fronts (Cataclysm or Pandaria)
 				["isBreadcrumb"] = true,
 				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
 				["provider"] = { "i", 156477 },	-- Special Duty Assignments
@@ -531,7 +531,7 @@ _.Zones =
 				["lvl"] = 60,
 			}),
 			q(49866, {	-- To Pandaria! (Alliance)
-				["sourceQuests"] = { 49864 },	-- Wars on Two Fronts (Pandaria)
+				["sourceQuests"] = { 49864 },	-- Wars on Two Fronts (Cataclysm or Pandaria)
 				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 80,

@@ -180,6 +180,7 @@ _.PVP =
 						i(134632),	-- Scorching Redoubt
 						i(134610),	-- Scorching Shanker
 						i(134619),	-- Scorching Staff*
+						i(134626),	-- Scorching Necklace
 						i(134627),	-- Scorching Pendant*
 					},
 				}),

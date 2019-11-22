@@ -1186,7 +1186,7 @@ _.Zones =
 				}),						
 				q(29548, {	-- The Mission
 					["provider"] = { "n", 55789 },	-- Rell Nightwind
-					["coord"] = { 78.8, 39.8, 84 },
+					["coord"] = { 78.9, 39.7, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						29547,	-- The King's Command
