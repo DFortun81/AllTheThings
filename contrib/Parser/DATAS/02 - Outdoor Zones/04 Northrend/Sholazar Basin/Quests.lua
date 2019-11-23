@@ -39,9 +39,9 @@ _.Zones =
 				q(12804, {	-- A Steak Fit for a Hunter
 					["coord"] = { 26.7, 59.5, 119 },
 					["provider"] = { "n", 28046 },	-- Korg the Cleaver
-					["sourceQuest"] = 12592,	-- The Great Hunter's Challenge
+					["sourceQuest"] = 12520,	-- Rhino Mastery: The Test
 				}),
-				q(12691, {  -- A Timeworn Coffer -- aa
+				q(12691, {  -- A Timeworn Coffer
 					["coord"] = { 80.4, 55.8, 119 },
 					["provider"] = { "o", 190768 },	-- Timeworn Coffer
 					["g"] = {
@@ -64,7 +64,7 @@ _.Zones =
 					["provider"] = { "n", 28746 },	-- Pilot Vic
 					["sourceQuest"] = 12523,	-- Have a Part, Give a Part
 				}),
-				q(12561, {  -- An Issue of Trust -- aa
+				q(12561, {  -- An Issue of Trust
 					["coord"] = { 64.5, 48.6, 119 },
 					["provider"] = { "n", 27801 },	-- Avatar of Freya
 					["sourceQuest"] = 12803,	-- Force of Nature
@@ -83,7 +83,10 @@ _.Zones =
 				q(12574, {	-- Back So Soon?
 					["coord"] = { 54.5, 56.3, 119 },
 					["provider"] = { "n", 28027 },	-- High-Oracle Soo-say
-					["sourceQuest"] = 12573,	-- Making Peace
+					["sourceQuests"] = {
+						12572,	-- Gods like Shiny Things
+						12573,	-- Making Peace
+					},
 				}),
 				q(12797, {	-- Back Through the Waygate
 					["lvl"] = 66,
@@ -92,7 +95,7 @@ _.Zones =
 					["provider"] = { "n", 28092 },	-- The Etymidian
 					["sourceQuest"] = 12547,	-- The Activation Rune
 				}),
-				q(12683, {	-- Burning to Help -- aa
+				q(12683, {	-- Burning to Help
 					["coord"] = { 42.0, 28.6, 119 },
 					["provider"] = { "n", 28771 },	-- Colvin Norrington
 				}),
@@ -117,7 +120,6 @@ _.Zones =
 					["provider"] = { "n", 28032 },	-- Debaar
 					["sourceQuests"] = {
 						12549,	-- Dreadsaber Mastery: Becoming a Predator
-						-- TODO: verify below
 						12520,	-- Rhino Mastery: The Test
 					},
 				}),
@@ -129,7 +131,10 @@ _.Zones =
 				q(12549, {	-- Dreadsaber Mastery: Becoming a Predator
 					["coord"] = { 26.6, 59.0, 119 },
 					["provider"] = { "n", 28031 },	-- Buck Cantwell
-					["sourceQuest"] = 12525,	-- Wipe That Grin Off His Face
+					["sourceQuests"] = {
+						12523,	-- Have a Part, Give a Part
+						12525,	-- Wipe That Grin Off His Face
+					},
 				}),
 				q(12558, {  -- Dreadsaber Mastery: Ready to Pounce
 					["coord"] = { 26.6, 59.0, 119 },
@@ -148,7 +153,7 @@ _.Zones =
 					["provider"] = { "n", 28031 },	-- Buck Cantwell
 					["sourceQuest"] = 12549,	-- Dreadsaber Mastery: Becoming a Predator
 				}),
-				q(12688, {	-- Engineering a Disaster -- aa
+				q(12688, {	-- Engineering a Disaster
 					["coord"] = { 35.5, 47.4, 119 },
 					["provider"] = { "n", 28787 },	-- Engineer Helice
 				}),
@@ -177,7 +182,7 @@ _.Zones =
 						i(39455),	-- Cracked Nest Stabilizer
 					},
 				}),
-				q(12803, {	-- Force of Nature -- aa
+				q(12803, {	-- Force of Nature
 					["coord"] = { 49.9, 61.5, 119 },
 					["provider"] = { "n", 28746 },	-- Pilot Vic
 					["isBreadcrumb"] = true,
@@ -238,7 +243,7 @@ _.Zones =
 						12556,	-- Rhino Mastery: The Kill
 					},
 				}),
-				q(12624, {  -- It Could Be Anywhere! -- aa
+				q(12624, {  -- It Could Be Anywhere!
 					["coord"] = { 26.8, 58.9, 119 },
 					["provider"] = { "n", 28497 },	-- Chad
 					["g"] = {
@@ -256,17 +261,16 @@ _.Zones =
 				q(12589, {	-- Kick, What Kick?
 					["coord"] = { 27.0, 59.8, 119 },
 					["provider"] = { "n", 28328 },	-- Drostan
-					["sourceQuest"] = 12525,	-- Wipe That Grin Off His Face
+					["sourceQuests"] = {
+						12523,	-- Have a Part, Give a Part
+						12525,	-- Wipe That Grin Off His Face
+					},
 				}),
 				q(12651, {	-- Lakeside Landing
 					["coord"] = { 27.0, 58.6, 119 },
 					["provider"] = { "n", 27986 },	-- Hemet Nesingwary
 					["isBreadcrumb"] = true,
-					["sourceQuests"] = {
-						12560,	-- Crocolisk Mastery: The Plan
-						12550,	-- Dreadsaber Mastery: Stalking the Prey
-						12526,	-- Rhino Mastery: The Chase
-					},
+					["sourceQuest"] = 12543,	-- An Offering for Soo-rahm
 				}),
 				q(12579, {	-- Lifeblood of the Mosswalker Shrine
 					["coord"] = { 74.1, 50.7, 119 },
@@ -316,7 +320,7 @@ _.Zones =
 						12603,	-- Sharpening Your Talons
 					},
 				}),
-				q(12522, {	-- Need an Engine, Take an Engine -- aa
+				q(12522, {	-- Need an Engine, Take an Engine
 					["coord"] = { 25.3, 58.4, 119 },
 					["provider"] = { "n", 28033 },	-- Weslex Quickwrench
 				}),
@@ -324,7 +328,6 @@ _.Zones =
 					["coord"] = { 50.5, 76.5, 119 },
 					["provider"] = { "n", 28095 },	-- Tracker Gekgek
 					["description"] = "Available after you kill |cFFFFD700Pitch|r.",
-					-- TODO:: verify if you have to be on or complete "The Part-Time Hunter" first
 				}),
 				q(12614, {  -- Post-partum Aggression
 					["coord"] = { 42.3, 28.7, 119 },
@@ -413,7 +416,13 @@ _.Zones =
 				q(12520, {	-- Rhino Mastery: The Test
 					["coord"] = { 27.0, 58.6, 119 },
 					["provider"] = { "n", 27986 },	-- Hemet Nesingwary
-					["sourceQuest"] = 12525,	-- Wipe That Grin Off His Face
+					["sourceQuests"] = {
+						12523,	-- Have a Part, Give a Part
+						12525,	-- Wipe That Grin Off His Face
+						--[[TODO:: verify if It Could Be Anywhere! (questID 12624) is also needed
+								   for this, 12549 and 12589
+						]]--
+					},
 				}),
 				q(12805, {	-- Salvaging Life's Strength
 					["coord"] = { 64.5, 48.5, 119 },
@@ -443,7 +452,6 @@ _.Zones =
 					["provider"] = { "n", 29157 },	-- Grimbooze Thunderbrew
 					["sourceQuests"] = {
 						12549,	-- Dreadsaber Matery: Becoming a Predator
-						-- TODO: verify below
 						12520,	-- Rhino Mastery: The Test
 					},
 				}),
@@ -530,9 +538,10 @@ _.Zones =
 					["provider"] = { "n", 28122 },	-- Moodle
 					["sourceQuest"] = 12578,	-- The Angry Gorloc
 				}),
-				q(12654, {	-- The Part-time Hunter -- aa
+				q(12654, {	-- The Part-time Hunter
 					["coord"] = { 50.4, 62.1, 119 },
 					["provider"] = { "n", 28568 },	-- Tamara Wobblesprocket
+					["sourceQuest"] = 12651,	-- Lakeside Landing
 				}),
 				q(12534, {  -- The Sapphire Queen
 					["coord"] = { 55.5, 69.6, 119 },
@@ -586,10 +595,10 @@ _.Zones =
 						12521,	-- Where in the World is Hemet Nesingwary?
 					},
 				}),
-				q(12524, {	-- Venture Co. Misadventure -- aa
+				q(12524, {	-- Venture Co. Misadventure
 					["coord"] = { 27.2, 59.8, 119 },
 					["provider"] = { "n", 28032 },	-- Debaar
-					["sourceQuest"] = 27987,	-- Welcome to Scholazar Basin
+					["sourceQuest"] = 12489,	-- Welcome to Scholazar Basin
 				}),
 				q(12525, {	-- Wipe That Grin Off His Face
 					["coord"] = { 27.2, 59.8, 119 },

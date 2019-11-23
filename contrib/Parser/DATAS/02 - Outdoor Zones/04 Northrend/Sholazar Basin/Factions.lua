@@ -158,7 +158,7 @@ _.Zones =
 							},
 						}),
 						q(12689, {	-- Hand of the Oracles
-							["coord"] = { 72.4, 57.4, 119 },
+							["coord"] = { 72.5, 57.5, 119 },
 							["isDaily"] = true,
 							["provider"] = { "n", 28667 },		-- Jaloot
 							["description"] = "In the battle with Artruis during the quest |cFFefc400A Hero's Burden|r, the NPC left alive determines which faction you are aligned with.\n\nZepik alive: Allied with Frenyheart\n\nJaloot alive: Allied with Oracles\n\nYou can repeat this quest as often as you like to switch from one faction to the other.\n\nWARNING: Switching factions will reduce your existing reputation to HONORED.",
@@ -186,7 +186,7 @@ _.Zones =
 							},
 						}),
 						q(12695, {	-- Return of the Friendly Dryskin
-							["coord"] = { 72.4, 57.4, 119 },
+							["coord"] = { 72.5, 57.5, 119 },
 							["isDaily"] = true,
 							["provider"] = { "n", 28667 },		-- Jaloot
 							["sourceQuest"] = 12689,	-- Hand of the Oracles
