@@ -95,7 +95,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(12882, {	-- Ancient Relics (H)
+					["coord"] = { 36.9, 49.5, 120 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 30472 },	-- Olut Alegut
 				}),
 				q(12875, {	-- An Experienced Guide
 					["provider"] = { "n", 29593 },	-- Yorg Stormheart
@@ -112,7 +114,7 @@ _.Zones =
 						12964,	-- The Dark Ore
 					}
 				}),
-				q(12867, {	-- Baby Stealers (awarded "The Harpy Problem" achievement criteria)
+				q(12867, {	-- Baby Stealers
 					["provider"] = { "n", 29732 },	-- Fjorlin Frostbrow
 					["coord"] = { 29.8, 75.7, 120 },
 					["races"] = ALLIANCE_ONLY,
@@ -151,15 +153,25 @@ _.Zones =
 					},
 				}),
 				q(12920, {	-- Catching up with Brann
-					["coord"] = { 37.2, 49.6, 120 },
+					["coord"] = { 37.3, 49.6, 120 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 29651 },	-- Boktar Bloodfury
+					["sourceQuest"] = 12917,	-- Speaking with the Wind's Voice
 				}),
 				q(13055, {	-- Cave Medicine
+					["coord"] = { 48.5, 54.3, 120 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 30469 },	-- Tracker Val'zij
+					["sourceQuest"] = 13054,	-- The Missing Tracker
 				}),
 				q(13058, {	-- Changing the Wind's Course
+					["coord"] = { 65.7, 51.4, 120 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 30381 },	-- Xarantaur
+					["sourceQuests"] = {
+						13049,	-- The Hero's Arms
+						13048,	-- Where Time Went Wrong
+					},
 					["g"] = {
 						i(43186),	-- Iceshrieker's Touch
 						i(43185),	-- Wand of Chilled Renewal
@@ -175,14 +187,15 @@ _.Zones =
 					["sourceQuests"] = { 12851 },	-- Going Bearback
 				}),
 				q(12860, {	-- Data Mining (A)
-					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
 					["description"] = "Use Brann's Communicator to pick this quest up.",
 					["sourceQuests"] = { 12858 },	-- Pieces to the Puzzle
 				}),
 				q(12927, {	-- Data Mining (H)
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
+					["description"] = "Use Brann's Communicator to pick this quest up.",
 					["sourceQuest"] = 12926,	-- Pieces of the Puzzle
 				}),
 				q(13063, {	-- Deemed Worthy
@@ -228,10 +241,15 @@ _.Zones =
 					},
 				}),
 				q(13038, {	-- Distortions in Time
+					["coord"] = { 61.1, 38.9, 120 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 30395 },	-- Chieftain Swiftspear
+					["sourceQuest"] = 13034,	-- The Witness and the Hero
 				}),
 				q(13000, {	-- Emergency Measures
+					["coord"] = { 36.4, 49.0, 120 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 30247 },	-- Blood Guard Lorga
 					["g"] = {
 						i(42788),	-- Frosthowl Cinch
 						i(42801),	-- Nomadic Bracers
@@ -313,6 +331,15 @@ _.Zones =
 				}),
 				q(13285, {	-- Forging the Keystone
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
+					["description"] = "Use Brann's Communicator to pick this quest up.",
+					["sourceQuest"] = 13274,	-- The Core's Keeper
+					["g"] = {
+						i(43189),	-- Amberglow Signet
+						i(43190),	-- Iceforged Battle Ring
+						i(43191),	-- Jagged Ice Band
+						i(43192),	-- Ring of the Northern Winds
+					},
 				}),
 				q(12879, {	-- Fury of the Frostborn King
 					["provider"] = { "n", 30548 },	-- The Guardian's Charge (looks like an object, but is actually an NPC)
@@ -322,6 +349,9 @@ _.Zones =
 				}),
 				q(13273, {	-- Going After the Core
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
+					["description"] = "Use Brann's Communicator to pick this quest up.",
+					["sourceQuest"] = 12928,	-- Norgannon's Shell
 				}),
 				q(12851, {	-- Going Bearback
 					["provider"] = { "n", 29592 },	-- Brijana
@@ -421,7 +451,10 @@ _.Zones =
 					},
 				}),
 				q(13037, {	-- Memories of Stormhoof
+					["coord"] = { 65.7, 51.4, 120 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 30381 },	-- Xarantaur
+					["sourceQuest"] = 13034,	-- The Witness and the Hero
 				}),
 				q(12915, {	-- Mending Fences
 					["provider"] = { "n", 29445 },	-- Thorim
@@ -449,7 +482,7 @@ _.Zones =
 					["coord"] = { 41.6, 80.0, 120 },
 					["sourceQuests"] = { 12827 },	-- Reclaimed Rations
 				}),
-				q(12872, {	-- Norgannon's Shell
+				q(12872, {	-- Norgannon's Shell (A)
 					["coord"] = { 37.4, 46.7, 120 },
 					["model"] = 243957,
 					["races"] = ALLIANCE_ONLY,
@@ -463,7 +496,7 @@ _.Zones =
 						i(42831),	-- Maiden's Dagger
 					},
 				}),
-				q(12928, {	-- Norgannon's Shell
+				q(12928, {	-- Norgannon's Shell (H)
 					["coord"] = { 37.4, 46.8, 120 },
 					["model"] = 243957,
 					["races"] = HORDE_ONLY,
@@ -538,7 +571,7 @@ _.Zones =
 					["sourceQuests"] = { 12855 },	-- Sniffing Out the Perpetrator
 				}),
 				q(12926, {	-- Pieces of the Puzzle (H)
-					["coord"] = { 37.2, 49.6, 120 },
+					["coord"] = { 37.3, 49.6, 120 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 29651 },	-- Boktar Bloodfury
 					["sourceQuest"] = 12920,	-- Catching up with Brann
@@ -563,7 +596,10 @@ _.Zones =
 				q(12930, {	-- Rare Earth
 					["provider"] = { "n", 29801 },	-- Bouldercrag the Rockshaper
 					["coord"] = { 31.4, 38.0, 120 },
-					["sourceQuests"] = { 12885 },	-- The Exiles of Ulduar
+					["sourceQuests"] = {
+						12929,	-- The Earthen of Ulduar
+						12885,	-- The Exiles of Ulduar
+					},
 				}),
 				q(12827, {	-- Reclaimed Rations
 					["provider"] = { "n", 29428 },	-- Ricket
@@ -580,7 +616,7 @@ _.Zones =
 					["itemID"] = 41267,	-- SCRAP-E Access Card
 					["requireSkill"] = 202,	-- Engineering
 				}),
-				q(13064, {	-- Sibling Rivalry (awarded "Heartbreak" achievement criteria)
+				q(13064, {	-- Sibling Rivalry
 					["provider"] = { "n", 29445 },	-- Thorim
 					["coord"] = { 33.4, 58.0, 120 },
 					["sourceQuests"] = { 12886 },	-- The Drakkensryd
@@ -621,12 +657,13 @@ _.Zones =
 					["sourceQuest"] = 12909,	-- The Nose Knows
 				}),
 				q(12913, {	-- Speak Orcish, Man!
+					["coord"] = { 48.5, 60.8, 120 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
 					["sourceQuest"] = 12910,	-- Sniffing Out the Perpetrator
 				}),
 				q(12917, {	-- Speaking with the Wind's Voice
-					["coord"] = { 37.2, 49.6, 120 },
+					["coord"] = { 37.2, 49.7, 120 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 29937 },	-- Moteha Windborn
 					["sourceQuest"] = 12913,	-- Speak Orcish, Man!
@@ -684,7 +721,7 @@ _.Zones =
 					["u"] = 1,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(12973, {	-- The Brothers Bronzebeard (awarded "For the Frostborn King" criteria before turning in quest)
+				q(12973, {	-- The Brothers Bronzebeard
 					["provider"] = { "n", 30382 },	-- Brann Bronzebeard
 					["coord"] = { 39.5, 56.3, 120 },
 					["races"] = ALLIANCE_ONLY,
@@ -698,6 +735,9 @@ _.Zones =
 				}),
 				q(13274, {	-- The Core's Keeper
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
+					["description"] = "Use Brann's Communicator to pick this quest up.",
+					["sourceQuest"] = 13273,	-- Going After the Core
 				}),
 				q(12841, {	-- The Crone's Bargain
 					["provider"] = { "n", 29481 },	-- Lok'lira the Crone
@@ -736,6 +776,10 @@ _.Zones =
 				}),
 				q(12929, {	-- The Earthen of Ulduar
 					["races"] = HORDE_ONLY,
+					["description"] = "Use Brann's Communicator to pick this quest up.",
+					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
+					["sourceQuest"] = 12926,	-- Pieces of the Puzzle
+					["isBreadcrumb"] = true,
 				}),
 				q(12885, {	-- The Exiles of Ulduar
 					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
@@ -769,7 +813,13 @@ _.Zones =
 					["sourceQuests"] = { 12993 },	-- A Colossal Threat
 				}),
 				q(13049, {	-- The Hero's Arms
+					["coord"] = { 65.7, 51.4, 120 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 30381 },	-- Xarantaur
+					["sourceQuests"] = {
+						13038,	-- Distortions in Time
+						13037,	-- Memories of Stormhoof
+					},
 				}),
 				q(12878, {	-- The Hidden Relic
 					["provider"] = { "n", 30052 },	-- Creteus
@@ -782,7 +832,7 @@ _.Zones =
 					["coord"] = { 47.4, 69.0, 120 },
 					["sourceQuests"] = { 12969 },	-- Is That Your Goblin?
 				}),
-				q(13007, {	-- The Iron Colossus (awarded "Bringing Down the Iron Colossus)
+				q(13007, {	-- The Iron Colossus
 					["provider"] = { "n", 29801 },	-- Bouldercrag the Rockshaper
 					["coord"] = { 31.4, 38.0, 120 },
 					["sourceQuests"] = { 12998 },	-- The Heart of the Storm
@@ -807,6 +857,7 @@ _.Zones =
 				q(13416, {	-- The Library Console (H)
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
+					["description"] = "Use Brann's Communicator to pick this quest up.",
 					["sourceQuest"] = 12927,	-- Data Mining
 				}),
 				q(12877, {	-- The Lonesome Watcher
@@ -827,7 +878,9 @@ _.Zones =
 					["provider"] = { "n", 29651 },	-- Boktar Bloodfury
 				}),
 				q(13054, {	-- The Missing Tracker
+					["coord"] = { 36.4, 49.0, 120 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 30247 },	-- Blood Guard Lorga
 				}),
 				q(12909, {	-- The Nose Knows
 					["coord"] = { 37.2, 49.6, 120 },
@@ -844,7 +897,7 @@ _.Zones =
 						recipe(55252),	-- Schematic: Scrapbot Construction Kit
 					},
 				}),
-				q(13047, {	-- The Reckoning (triggered completion of "Loken" criteria even before turning quest in)
+				q(13047, {	-- The Reckoning
 					["provider"] = { "n", 30295 },	-- Thorim
 					["coord"] = { 56.2, 51.3, 120 },
 					["sourceQuests"] = {
@@ -885,9 +938,6 @@ _.Zones =
 						i(42861),	-- Jormungar Fang
 					},
 				}),
-				q(11971, {	-- The Spinner of Summer Tales
-					["races"] = HORDE_ONLY,
-				}),
 				q(13057, {	-- The Terrace of the Makers
 					["provider"] = { "n", 30390 },	-- Thorim
 					["coord"] = { 71.3, 48.8, 120 },
@@ -899,10 +949,16 @@ _.Zones =
 					["sourceQuests"] = { 12983 },	-- The Last of Her Kind
 				}),
 				q(13034, {	-- The Witness and the Hero
+					["coord"] = { 65.7, 51.4, 120 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 30381 },	-- Xarantaur
+					["sourceQuest"] = 13426,	-- Xarantaur, the Witness
 				}),
 				q(13056, {	-- There's Always Time for Revenge
+					["coord"] = { 48.5, 54.3, 120 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 30469 },	-- Tracker Val'zij
+					["sourceQuest"] = 13055,	-- Cave Medicine
 					["g"] = {
 						i(42789),	-- Boots of the Howling Winds
 						i(42802),	-- Hardened Whipping Belt
@@ -942,6 +998,7 @@ _.Zones =
 					["coord"] = { 24.0, 61.7, 120 },
 					["model"] = 195533,
 					["provider"] = { "o", 192072 },	-- Harpoon Crate
+					["sourceQuests"] = { 12841 },	-- The Crone's Bargain
 					["g"] = {
 						i(42850),	-- Flamebringer's Crown
 						i(42884),	-- Steel-Tipped Snowboots
@@ -973,10 +1030,19 @@ _.Zones =
 					},
 				}),
 				q(13048, {	-- Where Time Went Wrong
+					["coord"] = { 65.7, 51.4, 120 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 30381 },	-- Xarantaur
+					["sourceQuests"] = {
+						13038,	-- Distortions in Time
+						13037,	-- Memories of Stormhoof
+					},
 				}),
 				q(13426, {	-- Xarantaur, the Witness
+					["coord"] = { 37.3, 49.6, 120 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 29651 },	-- Boktar Bloodfury
+					["sourceQuest"] = 13285,	-- Forging the Keystone
 				}),
 				q(12966, {	-- You Can't Miss Him
 					["provider"] = { "n", 30105 },	-- King Jokkum
@@ -984,7 +1050,7 @@ _.Zones =
 					["description"] = "This questline is required to progress on the 'Forging the Alliance' quest.",
 					["sourceQuests"] = { 12924 },	-- Forging an Alliance
 				}),
-				q(12972, {	-- You'll Need a Bear (awarded "Bearly Ready" achievement criteria)
+				q(12972, {	-- You'll Need a Bear
 					["provider"] = { "n", 29975 },	-- Lok'lira the Crone
 					["coord"] = { 47.4, 69.0, 120 },
 					["sourceQuests"] = { 12971 },	-- Taking on All Challengers
