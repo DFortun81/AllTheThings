@@ -6,31 +6,12 @@ _.Zones =
 	m(113, {	-- Northrend
 		m(120, {	-- The Storm Peaks
 			n(-17,  {	-- Quests
---[[	Achievement info for Loremaster related zone quests
-				ach(38, {		-- The Summit of Storm Peaks
-					crit(1),		-- Defending K3
-					crit(2),		-- The Harpy Problem
-					crit(3),		-- Norgannon's Shell
-					crit(4),		-- Bringing Down the Iron Colossus
-					crit(5),		-- For the Frostborn King
-					crit(6),		-- Bearly Ready
-					crit(7),		-- Heartbreak
-					crit(8),		-- The Sons of Hodir
-					crit(9),		-- Loken
-				}),
-]]--
 				i(44751, {	-- Hyldnir Spoils
 					["coord"] = { 50.8, 65.6, 120 },
 					["description"] = "Reward from the following daily quests: Back to the Pit, Defending Your Title, Maintaining Discipline, and The Aberrations Must Die. \n\nOne of the quests is offered at random each day.",
 					["g"] = {
 						i(43962),	-- Reins of the White Polar Bear
 					},
-				}),
-				q(12925, {	-- Aberrations
-					["provider"] = { "n", 30041 },	-- Thyra Kvinnshal
-					["coord"] = { 48.4, 72.1, 120 },
-					["sourceQuests"] = { 12841 },	-- The Crone's Bargain
-					-- May have additional SQs, needs confirmation.
 				}),
 				q(12908, {	-- A Certain Prisoner
 					["provider"] = { "n", 29885 },	-- Mildred the Cruel
@@ -66,21 +47,40 @@ _.Zones =
 					["coord"] = { 50.0, 81.7, 120 },
 					["sourceQuests"] = { 12821 },	-- Opening the Backdoor
 				}),
+				q(12976, {	-- A Monument to the Fallen
+					["provider"] = { "n", 30105 },	-- King Jokkum
+					["coord"] = { 65.4, 60.1, 120 },
+					["sourceQuests"] = { 12975 },	-- In Memoriam
+				}),
+				q(13009, {	-- A New Beginning
+					["provider"] = { "n", 30127 },	-- Njormeld
+					["coord"] = { 63.2, 63.2, 120 },
+					["sourceQuests"] = { 12967 },	-- Battling the Elements
+				}),
+				q(12956, {	-- A Spark of Hope
+					["coord"] = { 77.1, 62.9, 120 },
+					["model"] = 195374,
+					["provider"] = { "o", 192060 },	-- Fjorn's Anvil
+					["sourceQuests"] = { 12922 },	-- The Refiner's Fire
+				}),
+				q(12925, {	-- Aberrations
+					["provider"] = { "n", 30041 },	-- Thyra Kvinnshal
+					["coord"] = { 48.4, 72.1, 120 },
+					["sourceQuests"] = { 12841 },	-- The Crone's Bargain
+				}),
 				q(12871, {	-- Aid from the Explorers' League
 					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Use Brann's Communicator to pick this quest up.",
 					["sourceQuests"] = { 12872 },	-- Norgannon's Shell
 				}),
-				q(12976, {	-- A Monument to the Fallen
-					["provider"] = { "n", 30105 },	-- King Jokkum
-					["coord"] = { 65.4, 60.1, 120 },
-					["sourceQuests"] = { 12975 },	-- In Memoriam
-				}),
 				q(12828, {	-- Ample Inspiration
 					["provider"] = { "n", 29428 },	-- Ricket
 					["coord"] = { 40.9, 85.3, 120 },
-					["sourceQuests"] = { 12836 },	-- Expression of Gratitude
+					["sourceQuests"] = {
+						12836,	-- Expression of Gratitude
+						12827,	-- Reclaimed Rations
+					},
 					["g"] = {
 						i(42785),	-- Mammoth Sinew Cinch
 						i(42798),	-- Mammoth Hide Galoshes
@@ -89,15 +89,13 @@ _.Zones =
 						i(42822),	-- K3 Pachyderm Prevention Device
 					},
 				}),
-				q(12870, {	-- Ancient Relics
+				q(12870, {	-- Ancient Relics (A)
 					["provider"] = { "n", 29744 },	-- Rork Sharpchin
 					["coord"] = { 28.8, 74.0, 120 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(13009, {	-- A New Beginning
-					["provider"] = { "n", 30127 },	-- Njormeld
-					["coord"] = { 63.2, 63.2, 120 },
-					["sourceQuests"] = { 12967 },	-- Battling the Elements
+				q(12882, {	-- Ancient Relics (H)
+					["races"] = HORDE_ONLY,
 				}),
 				q(12875, {	-- An Experienced Guide
 					["provider"] = { "n", 29593 },	-- Yorg Stormheart
@@ -106,20 +104,13 @@ _.Zones =
 					["sourceQuests"] = { 12874 },	-- Fervor of the Frostborn
 				}),
 				q(12979, {	-- Armor of Darkness
-					["itemID"] = 42203,	-- Dark Armor Plate
-					["provider"] = { "n", 29380 },	-- Stormforged War Golem
+					["crs"] = { 29380 },	-- Stormforged War Golem
+					["provider"] = { "i", 42203 },	-- Dark Armor Plate
 					["coord"] = { 25.0, 45.2, 120 },
-					-- ["sourceQuests"] = { 12978 },	-- Facing the Storm
-					-- prereq needs to be confirmed
-				}),
-				o(192060, {	-- Fjorn's Anvil
-					["model"] = 195374,
-					["g"] = {
-						q(12956, {	-- A Spark of Hope
-							["coord"] = { 77.1, 62.9, 120 },
-							["sourceQuests"] = { 12922 },	-- The Refiner's Fire
-						}),
-					},
+					["sourceQuests"] = {
+						12957,	-- Slaves of the Stormforged
+						12964,	-- The Dark Ore
+					}
 				}),
 				q(12867, {	-- Baby Stealers (awarded "The Harpy Problem" achievement criteria)
 					["provider"] = { "n", 29732 },	-- Fjorlin Frostbrow
@@ -159,6 +150,14 @@ _.Zones =
 						i(42811),	-- Twisted Reflection
 					},
 				}),
+				q(12920, {	-- Catching up with Brann
+					["coord"] = { 37.2, 49.6, 120 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 29651 },	-- Boktar Bloodfury
+				}),
+				q(13055, {	-- Cave Medicine
+					["races"] = HORDE_ONLY,
+				}),
 				q(13058, {	-- Changing the Wind's Course
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -175,11 +174,16 @@ _.Zones =
 					["coord"] = { 53.1, 65.7, 120 },
 					["sourceQuests"] = { 12851 },	-- Going Bearback
 				}),
-				q(12860, {	-- Data Mining
+				q(12860, {	-- Data Mining (A)
 					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Use Brann's Communicator to pick this quest up.",
 					["sourceQuests"] = { 12858 },	-- Pieces to the Puzzle
+				}),
+				q(12927, {	-- Data Mining (H)
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
+					["sourceQuest"] = 12926,	-- Pieces of the Puzzle
 				}),
 				q(13063, {	-- Deemed Worthy
 					["provider"] = { "n", 29592 },	-- Brijana
@@ -222,6 +226,9 @@ _.Zones =
 						i(42889),	-- Mildred's Grasp
 						i(42878),	-- Vrykul Training Helm
 					},
+				}),
+				q(13038, {	-- Distortions in Time
+					["races"] = HORDE_ONLY,
 				}),
 				q(13000, {	-- Emergency Measures
 					["races"] = HORDE_ONLY,
@@ -283,12 +290,20 @@ _.Zones =
 					["coord"] = { 31.4, 38.0, 120 },
 					["sourceQuests"] = { 12930 },	-- Rare Earth
 				}),
+				q(12985, {	-- Forging a Head
+					["minReputation"] = { 1119, FRIENDLY },
+					["sourceQuests"] = { 12967 },	-- Battling the Elements
+					["coord"] = { 63.2, 63.2, 120 },
+					["provider"] = { "n", 30127 },	-- Njormeld
+				}),
 				q(12924, {	-- Forging an Alliance
 					["provider"] = { "n", 29445 },	-- Thorim
 					["coord"] = { 33.4, 58.0, 120 },
 					["description"] = "To progress through this quest, pick up the quest 'You Can't Miss Him' from King Jokkum.",
-					["sourceQuests"] = { 12956 },	-- A Spark of Hope
-					-- May also require "Mending Fences" -- I turned it in first, so I'm not sure.
+					["sourceQuests"] = {
+						12956,	-- A Spark of Hope
+						12915,	-- Mending Fences
+					},
 					["g"] = {
 						i(42792),	-- Vestments of Dun Niffelem
 						i(42805),	-- Njormeld's Pauldrons
@@ -296,11 +311,17 @@ _.Zones =
 						i(42830),	-- Ring of Jokkum
 					},
 				}),
+				q(13285, {	-- Forging the Keystone
+					["races"] = HORDE_ONLY,
+				}),
 				q(12879, {	-- Fury of the Frostborn King
 					["provider"] = { "n", 30548 },	-- The Guardian's Charge (looks like an object, but is actually an NPC)
 					["coord"] = { 44.5, 64.5, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12878 },	-- The Hidden Relic
+				}),
+				q(13273, {	-- Going After the Core
+					["races"] = HORDE_ONLY,
 				}),
 				q(12851, {	-- Going Bearback
 					["provider"] = { "n", 29592 },	-- Brijana
@@ -311,6 +332,9 @@ _.Zones =
 					["provider"] = { "n", 30152 },	-- Bruor Ironbane
 					["coord"] = { 31.2, 38.1, 120 },
 					["sourceQuests"] = { 12984 },	-- Valduran the Stormborn
+				}),
+				q(12890, {	-- If Size Mattered... (NYI?)
+					["u"] = 1,
 				}),
 				q(12975, {	-- In Memoriam
 					["provider"] = { "n", 30105 },	-- King Jokkum
@@ -323,23 +347,6 @@ _.Zones =
 					["coord"] = { 49.7, 71.7, 120 },
 					["sourceQuests"] = { 12996 },	-- The Warm-Up
 				}),
-				o(191760, {	-- Inventor's Library Console
-					["model"] = 243957,
-					["g"] = {
-						q(12872, {	-- Norgannon's Shell (awarded "Norgannon's Shell" criteria)
-							["coord"] = { 37.4, 46.7, 120 },
-							["races"] = ALLIANCE_ONLY,
-							["sourceQuests"] = { 13415 },	-- The Library Console
-							["g"] = {
-								i(42794),	-- Hardened Vine of the Mauler
-								i(42824),	-- Maker's Edge
-								i(42819),	-- Maker's Touch
-								i(42807),	-- Blade of the Inception
-								i(42831),	-- Maiden's Dagger
-							},
-						}),
-					},
-				}),
 				q(12969, {	-- Is That Your Goblin?
 					["provider"] = { "n", 29975 },	-- Lok'lira the Crone
 					["coord"] = { 47.4, 69.0, 120 },
@@ -350,7 +357,7 @@ _.Zones =
 					["coord"] = { 41.0, 86.4, 120 },
 					["sourceQuests"] = { 12818 },	-- Clean Up
 				}),
-				q(12822, {	-- Know No Fear (awarded "Defending K3" criteria)
+				q(12822, {	-- Know No Fear
 					["provider"] = { "n", 29428 },	-- Ricket
 					["coord"] = { 40.9, 85.3, 120 },
 					["sourceQuests"] = { 12821 },	-- Opening the Backdoor
@@ -413,6 +420,9 @@ _.Zones =
 						i(42880),	-- Astrid's Riding Gloves
 					},
 				}),
+				q(13037, {	-- Memories of Stormhoof
+					["races"] = HORDE_ONLY,
+				}),
 				q(12915, {	-- Mending Fences
 					["provider"] = { "n", 29445 },	-- Thorim
 					["coord"] = { 33.4, 58.0, 120 },
@@ -429,14 +439,36 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12863 },	-- Offering Thanks
 				}),
+				q(12987, {	-- Mounting Hodir's Helm
+					["sourceQuests"] = { 12985 },	-- Forging A Head
+					["coord"] = { 63.2, 63.2, 120 },
+					["provider"] = { "n", 30127 },	-- Njormeld
+				}),
 				q(12829, {	-- Moving In
 					["provider"] = { "n", 29430 },	-- Tore Rumblewrench
 					["coord"] = { 41.6, 80.0, 120 },
 					["sourceQuests"] = { 12827 },	-- Reclaimed Rations
-					-- May have additional SQ
+				}),
+				q(12872, {	-- Norgannon's Shell
+					["coord"] = { 37.4, 46.7, 120 },
+					["model"] = 243957,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 191760 },	-- Inventor's Library Console
+					["sourceQuests"] = { 13415 },	-- The Library Console
+					["g"] = {
+						i(42794),	-- Hardened Vine of the Mauler
+						i(42824),	-- Maker's Edge
+						i(42819),	-- Maker's Touch
+						i(42807),	-- Blade of the Inception
+						i(42831),	-- Maiden's Dagger
+					},
 				}),
 				q(12928, {	-- Norgannon's Shell
+					["coord"] = { 37.4, 46.8, 120 },
+					["model"] = 243957,
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 191760 },	-- Inventor's Library Console
+					["sourceQuest"] = 13416,	-- The Library Console
 					["g"] = {
 						i(42794),	-- Hardened Vine of the Mauler
 						i(42824),	-- Maker's Edge
@@ -454,7 +486,6 @@ _.Zones =
 					["provider"] = { "n", 29997 },	-- Iva the Vengeful
 					["coord"] = { 48.3, 72.1, 120 },
 					["sourceQuests"] = { 12841 },	-- The Crone's Bargain
-					-- May have additional SQs, needs confirmation.
 					["g"] = {
 						i(42849),	-- Flowing Valkyrion Robes
 						i(42862),	-- Hyldnir Painbringer
@@ -483,14 +514,16 @@ _.Zones =
 				q(12821, {	-- Opening the Backdoor
 					["provider"] = { "n", 29428 },	-- Ricket
 					["coord"] = { 40.9, 85.3, 120 },
-					["sourceQuests"] = { 12832 },	-- Bitter Departure
-					-- May have additional SQ
+					["sourceQuests"] = {
+						12820,	-- A Delicate Touch
+						12828,	-- Ample Inspiration
+						12832,	-- Bitter Departure
+					},
 				}),
 				q(12830, {	-- Ore Repossession
 					["provider"] = { "n", 29430 },	-- Tore Rumblewrench
 					["coord"] = { 41.6, 80.0, 120 },
 					["sourceQuests"] = { 12827 },	-- Reclaimed Rations
-					-- May have additional SQ
 				}),
 				q(12833, {	-- Overstock
 					["provider"] = { "n", 29428 },	-- Ricket
@@ -498,11 +531,17 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuests"] = { 12824 },	-- Demolitionist Extraordinaire
 				}),
-				q(12858, {	-- Pieces to the Puzzle
+				q(12858, {	-- Pieces to the Puzzle (A)
 					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Use Brann's Communicator to pick this quest up.",
 					["sourceQuests"] = { 12855 },	-- Sniffing Out the Perpetrator
+				}),
+				q(12926, {	-- Pieces of the Puzzle (H)
+					["coord"] = { 37.2, 49.6, 120 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 29651 },	-- Boktar Bloodfury
+					["sourceQuest"] = 12920,	-- Catching up with Brann
 				}),
 				q(13061, {	-- Prepare for Glory
 					["provider"] = { "n", 29839 },	-- Astrid Bjornrittar
@@ -515,6 +554,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					-- this quest appeared for me after turning in "the brother's bronzebeard," which was the last quest i did for its criteria + the overall zone.  i'm not sure if the quest itself is a prerequisite or if it's based on reputation, because i also hit friendly with alliance vanguard when turning it in.  some wowhead comments said it had different requirements, so i'm not sure what to put for SQ or a description.
+				}),
+				q(13001, {	-- Raising Hodir's Spear
+					["coord"] = { 64.8, 59.1, 120 },
+					["minReputation"] = { 1119, HONORED },
+					["provider"] = { "n", 30252 },	-- Lorekeeper Randvir
 				}),
 				q(12930, {	-- Rare Earth
 					["provider"] = { "n", 29801 },	-- Bouldercrag the Rockshaper
@@ -564,11 +608,28 @@ _.Zones =
 					["coord"] = { 41.0, 86.4, 120 },
 					["sourceQuests"] = { 12819 },	-- Just Around the Corner
 				}),
-				q(12855, {	-- Sniffing Out the Perpetrator
+				q(12855, {	-- Sniffing Out the Perpetrator (A)
 					["provider"] = { "n", 29650 },	-- Archaeologist Andorin
 					["coord"] = { 29.6, 74.0, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12854 },	-- On Brann's Trail
+				}),
+				q(12910, {	-- Sniffing Out the Perpetrator (H)
+					["coord"] = { 40.8, 51.2, 120 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 29855 },	-- Khaliisi
+					["sourceQuest"] = 12909,	-- The Nose Knows
+				}),
+				q(12913, {	-- Speak Orcish, Man!
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
+					["sourceQuest"] = 12910,	-- Sniffing Out the Perpetrator
+				}),
+				q(12917, {	-- Speaking with the Wind's Voice
+					["coord"] = { 37.2, 49.6, 120 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 29937 },	-- Moteha Windborn
+					["sourceQuest"] = 12913,	-- Speak Orcish, Man!
 				}),
 				q(12866, {	-- Stemming the Aggressors
 					["provider"] = { "n", 29727 },	-- Glorthal Stiffbeard
@@ -635,6 +696,9 @@ _.Zones =
 						i(43190),	-- Iceforged Battle Ring
 					},
 				}),
+				q(13274, {	-- The Core's Keeper
+					["races"] = HORDE_ONLY,
+				}),
 				q(12841, {	-- The Crone's Bargain
 					["provider"] = { "n", 29481 },	-- Lok'lira the Crone
 					["coord"] = { 42.8, 68.8, 120 },
@@ -670,6 +734,9 @@ _.Zones =
 						i(42882),	-- Thorim's Grasp
 					},
 				}),
+				q(12929, {	-- The Earthen of Ulduar
+					["races"] = HORDE_ONLY,
+				}),
 				q(12885, {	-- The Exiles of Ulduar
 					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
 					["races"] = ALLIANCE_ONLY,
@@ -701,6 +768,9 @@ _.Zones =
 					["coord"] = { 31.4, 38.0, 120 },
 					["sourceQuests"] = { 12993 },	-- A Colossal Threat
 				}),
+				q(13049, {	-- The Hero's Arms
+					["races"] = HORDE_ONLY,
+				}),
 				q(12878, {	-- The Hidden Relic
 					["provider"] = { "n", 30052 },	-- Creteus
 					["coord"] = { 39.2, 59.6, 120 },	-- approximate, as NPC patrols a short path back and forth
@@ -728,11 +798,16 @@ _.Zones =
 					["coord"] = { 49.7, 71.7, 120 },
 					["sourceQuests"] = { 12900 },	-- Making a Harness
 				}),
-				q(13415, {	-- The Library Console
+				q(13415, {	-- The Library Console (A)
 					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Use Brann's Communicator to pick this quest up.",
 					["sourceQuests"] = { 12860 },	-- Data Mining
+				}),
+				q(13416, {	-- The Library Console (H)
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 29579 },	-- Brann Bronzebeard
+					["sourceQuest"] = 12927,	-- Data Mining
 				}),
 				q(12877, {	-- The Lonesome Watcher
 					["provider"] = { "n", 29751 },	-- Drom Frostgrip
@@ -745,6 +820,20 @@ _.Zones =
 					["coord"] = { 38.2, 61.7, 120 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12879 },	-- Fury of the Frostborn King
+				}),
+				q(12895, {	-- The Missing Bronzebeard
+					["coord"] = { 37.2, 49.6, 120 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 29651 },	-- Boktar Bloodfury
+				}),
+				q(13054, {	-- The Missing Tracker
+					["races"] = HORDE_ONLY,
+				}),
+				q(12909, {	-- The Nose Knows
+					["coord"] = { 37.2, 49.6, 120 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 29651 },	-- Boktar Bloodfury
+					["sourceQuest"] = 12895,	-- The Missing Bronzebeard
 				}),
 				q(12889, {	-- The Prototype Console
 					["provider"] = { "n", 29806 },	-- SCRAP-E
@@ -770,22 +859,19 @@ _.Zones =
 					},
 				}),
 				q(12922, {	-- The Refiner's Fire
-					["provider"] = { "n", 29375 },	-- Stormforged Iron Giant
-					["itemID"] = 41556,	-- Slag Covered Metal
+					["crs"] = { 29375 },	-- Stormforged Iron Giant
+					["provider"] = { "i", 41556 },	-- Slag Covered Metal
 					["description"] = "The giants that drop this quest item spawn on and around the ice patch east of Dun Niffelem.",
 				}),
-				o(191761, {	-- Prototype Console
+				q(13843, {	-- The Scrapbot Construction Kit
+					["coord"] = { 37.6, 46.8, 120 },
 					["model"] = 243957,
-					["g"] = {
-						q(13843, {	-- The Scrapbot Construction Kit
-							["coord"] = { 37.6, 46.8, 120 },
-							["requireSkill"] = 202,	-- Engineering
-							["repeatable"] = true,
-							["sourceQuests"] = { 12889 },	-- The Prototype Console
-							-- wh says this ALSO teaches Scrapbot Construction Kit, spell 55252
-							-- not sure how to list reward/what quest it comes from, or if the questline has changed, so i guess an engineer needs to check it out
-						}),
-					},
+					["provider"] = { "o", 191761 },	-- Prototype Console
+					["repeatable"] = true,
+					["requireSkill"] = 202,	-- Engineering
+					["sourceQuests"] = { 12889 },	-- The Prototype Console
+					-- wh says this ALSO teaches Scrapbot Construction Kit, spell 55252
+					-- not sure how to list reward/what quest it comes from, or if the questline has changed, so i guess an engineer needs to check it out
 				}),
 				q(12989, {	-- The Slithering Darkness
 					["provider"] = { "n", 29839 },	-- Astrid Bjornrittar
@@ -799,6 +885,9 @@ _.Zones =
 						i(42861),	-- Jormungar Fang
 					},
 				}),
+				q(11971, {	-- The Spinner of Summer Tales
+					["races"] = HORDE_ONLY,
+				}),
 				q(13057, {	-- The Terrace of the Makers
 					["provider"] = { "n", 30390 },	-- Thorim
 					["coord"] = { 71.3, 48.8, 120 },
@@ -808,6 +897,9 @@ _.Zones =
 					["provider"] = { "n", 29839 },	-- Astrid Bjornrittar
 					["coord"] = { 49.7, 71.7, 120 },
 					["sourceQuests"] = { 12983 },	-- The Last of Her Kind
+				}),
+				q(13034, {	-- The Witness and the Hero
+					["races"] = HORDE_ONLY,
 				}),
 				q(13056, {	-- There's Always Time for Revenge
 					["races"] = HORDE_ONLY,
@@ -821,7 +913,6 @@ _.Zones =
 				q(12843, {	-- They Took Our Men!
 					["provider"] = { "n", 29473 },	-- Gretchen Fizzlespark
 					["coord"] = { 41.1, 86.1, 120 },
-					-- Not required for "Defending K3" criteria.
 					["g"] = {
 						i(42842),	-- Fur-Lined Shoulder Warmers
 						i(42866),	-- Fur-Lined Mittens
@@ -847,18 +938,15 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 12874 },	-- Fervor of the Frostborn
 				}),
-				o(192072, {	-- Harpoon Crate
+				q(12953, {	-- Valkyrion Must Burn
+					["coord"] = { 24.0, 61.7, 120 },
 					["model"] = 195533,
+					["provider"] = { "o", 192072 },	-- Harpoon Crate
 					["g"] = {
-						q(12953, {	-- Valkyrion Must Burn
-							["coord"] = { 24.0, 61.7, 120 },
-							["g"] = {
-								i(42850),	-- Flamebringer's Crown
-								i(42884),	-- Steel-Tipped Snowboots
-								i(42896),	-- Valkyrion Tracker's Chestguard
-								i(42874),	-- Wooly Stompers
-							},
-						}),
+						i(42850),	-- Flamebringer's Crown
+						i(42884),	-- Steel-Tipped Snowboots
+						i(42896),	-- Valkyrion Tracker's Chestguard
+						i(42874),	-- Wooly Stompers
 					},
 				}),
 				q(13050, {	-- Veranus
@@ -866,17 +954,29 @@ _.Zones =
 					["coord"] = { 33.4, 58.0, 120 },
 					["sourceQuests"] = { 13009 },	-- A New Beginning
 				}),
-				q(12862, {	-- When All Else Fails
+				q(12862, {	-- When All Else Fails (A)
 					["provider"] = { "n", 29428 },	-- Ricket
 					["coord"] = { 40.9, 85.3, 120 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 12822 },	-- Know No Fear
+					["sourceQuests"] = {
+						12824,	-- Demolitionist Extraordinaire
+						12822,	-- Know No Fear
+					},
 				}),
-				q(13060, {	-- When All Else Fails
+				q(13060, {	-- When All Else Fails (H)
 					["provider"] = { "n", 29428 },	-- Ricket
 					["coord"] = { 40.9, 85.3, 120 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 12822 },	-- Know No Fear
+					["sourceQuests"] = {
+						12824,	-- Demolitionist Extraordinaire
+						12822,	-- Know No Fear
+					},
+				}),
+				q(13048, {	-- Where Time Went Wrong
+					["races"] = HORDE_ONLY,
+				}),
+				q(13426, {	-- Xarantaur, the Witness
+					["races"] = HORDE_ONLY,
 				}),
 				q(12966, {	-- You Can't Miss Him
 					["provider"] = { "n", 30105 },	-- King Jokkum
@@ -893,83 +993,7 @@ _.Zones =
 					["provider"] = { "n", 29997 },	-- Iva the Vengeful
 					["coord"] = { 48.3, 72.1, 120 },
 					["sourceQuests"] = { 12841 },	-- The Crone's Bargain
-					-- May have additional SQs, needs confirmation.
 				}),
---[[
-				q(12882, {	-- Ancient Relics
-					["races"] = HORDE_ONLY,
-				}),
-				q(12920, {	-- Catching up with Brann
-					["races"] = HORDE_ONLY,
-				}),
-				q(13055, {	-- Cave Medicine
-					["races"] = HORDE_ONLY,
-				}),
-				q(12927, {	-- Data Mining
-					["races"] = HORDE_ONLY,
-				}),
-				q(13038, {	-- Distortions in Time
-					["races"] = HORDE_ONLY,
-				}),
-				q(13285, {	-- Forging the Keystone
-					["races"] = HORDE_ONLY,
-				}),
-				q(13273, {	-- Going After the Core
-					["races"] = HORDE_ONLY,
-				}),
---					q(12890}),	-- If Size Mattered... (NYI?)
-				q(13037, {	-- Memories of Stormhoof
-					["races"] = HORDE_ONLY,
-				}),
-				q(12926, {	-- Pieces of the Puzzle
-					["races"] = HORDE_ONLY,
-				}),
-				q(12910, {	-- Sniffing Out the Perpetrator
-					["races"] = HORDE_ONLY,
-				}),
-				q(12913, {	-- Speak Orcish, Man!
-					["races"] = HORDE_ONLY,
-				}),
-				q(12917, {	-- Speaking with the Wind's Voice
-					["races"] = HORDE_ONLY,
-				}),
-				q(13274, {	-- The Core's Keeper
-					["races"] = HORDE_ONLY,
-				}),
-				q(12929, {	-- The Earthen of Ulduar
-					["races"] = HORDE_ONLY,
-				}),
-				q(13049, {	-- The Hero's Arms
-					["races"] = HORDE_ONLY,
-				}),
-				q(13416, {	-- The Library Console
-					["races"] = HORDE_ONLY,
-				}),
-				q(12895, {	-- The Missing Bronzebeard
-					["races"] = HORDE_ONLY,
-				}),
-				q(13054, {	-- The Missing Tracker
-					["races"] = HORDE_ONLY,
-				}),
-				q(12909, {	-- The Nose Knows
-					["races"] = HORDE_ONLY,
-				}),
-				q(11971, {	-- The Spinner of Summer Tales
-					["races"] = HORDE_ONLY,
-				}),
-				q(13034, {	-- The Witness and the Hero
-					["races"] = HORDE_ONLY,
-				}),
-				q(13060, {	-- When All Else Fails
-					["races"] = HORDE_ONLY,
-				}),
-				q(13048, {	-- Where Time Went Wrong
-					["races"] = HORDE_ONLY,
-				}),
-				q(13426, {	-- Xarantaur, the Witness
-					["races"] = HORDE_ONLY,
-				}),
---]]
 			}),
 		}),
 	}),

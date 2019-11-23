@@ -35,10 +35,10 @@ _.Zones =
 					},
 				}),
 				n(32491, {	-- Time-Lost Proto-Drake
-					["description"] = "They call it a time-lost proto drake because you've lost so much time looking for it.",
+					["description"] = "They call it a time-lost proto drake because you've lost so much time looking for it. Shares respawn with |cFFFFD700Vyragosa|r.",
 					["coords"] = {
 						{ 31.0, 69.0, 120 },	-- Frozen Lake
-						{ 51.0, 70.0, 120 },	-- Brunn Village\n
+						{ 51.0, 70.0, 120 },	-- Brunn Village
 						{ 35.0, 76.0, 120 },	-- Waterfall
 						{ 52.0, 34.0, 120 },	-- Ulduar Ravine
 					},
@@ -49,6 +49,13 @@ _.Zones =
 					},
 				}),
 				n(32630, {	-- Vyragosa
+					["description"] = "Flies all around the zone in large circular patterns based on the spawn point. Shares respawn with |cFFFFD700Time-Lost Proto-Drake|r.",
+					["coords"] = {
+						{ 31.0, 69.0, 120 },	-- Frozen Lake
+						{ 51.0, 70.0, 120 },	-- Brunn Village
+						{ 35.0, 76.0, 120 },	-- Waterfall
+						{ 52.0, 34.0, 120 },	-- Ulduar Ravine
+					},
 					["g"] = {
 						crit(21, {	-- Vyragosa
 							["achievementID"] = 2257,	-- Frostbitten
