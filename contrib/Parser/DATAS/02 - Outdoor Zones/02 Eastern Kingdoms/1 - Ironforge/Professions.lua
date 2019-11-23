@@ -186,19 +186,6 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(129, {	-- First Aid
-					n(-17, {	-- Quests
-						q(6625,  {	-- Alliance Trauma
-							["provider"] = { "n", 5150 },	-- Nissa Firestone
-							["coord"] = { 55.1, 58.3, 87 },
-							["isBreadcrumb"] = true,
-							["requireSkill"] = 129,	-- First Aid
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 35,
-							["u"] = 40,
-						}),
-					}),
-				}),
 				prof(356, {	-- Fishing
 					n(-4, {	-- Achievements
 						ach(5847, {	-- Fish or Cut Bait: Ironforge
@@ -336,6 +323,18 @@ _.Zones =
 							["g"]= {
 								recipe(192804),	-- Steamy Romance Novel Kit
 							},
+						}),
+					}),
+				}),
+				prof(197, {	-- Tailoring
+					n(-17, {	-- Quests
+						q(6625,  {	-- Alliance Trauma
+							["provider"] = { "n", 5150 },	-- Nissa Firestone
+							["coord"] = { 55.1, 58.3, 87 },
+							["isBreadcrumb"] = true,
+							["requireSkill"] = 197,	-- Tailoring
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 35,
 						}),
 					}),
 				}),

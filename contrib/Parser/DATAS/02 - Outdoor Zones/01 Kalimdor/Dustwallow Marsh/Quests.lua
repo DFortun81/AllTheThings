@@ -1135,10 +1135,10 @@ _.Zones =
 				}),
 				q(6624,  {	-- Triage
 					["provider"] = { "n", 12939 },	-- Doctor Gustaf VanHowzen
+					["coord"] = { 67.7, 48.9, 70 },
 					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = 129,	-- First Aid
+					["requireSkill"] = 197,	-- Tailoring
 					["sourceQuest"] = 6625,	-- Alliance Trauma
-					["u"] = 40,	-- Legacy Quests
 				}),
 				q(9437,  {	-- Twilight of the Dawn Runner
 					["provider"] = { "n", 17095 },	-- Balandar Brightstar
