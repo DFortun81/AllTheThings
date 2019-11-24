@@ -1501,6 +1501,8 @@ _.NeverImplemented =
 		q(57388),	-- Crowd Pummeler 9-60 data anomaly
 		q(57385),	-- Razorclaw the Butcher data anomaly
 		q(55903),	-- Triggered when completing "Armed for Action" achievement. May be related to picking up the weapon (e.g. Bolt Spitter)
+		q(56330),	-- Triggered shortly after completing "Chopped Bots". Possibly shuts down the magnet?
+		q(56660),	-- Triggered on Mechagon randomly
 		
 	--	Dungeons
 		q(53623),	-- Battle for Azeroth Dungeon Reward Quest
