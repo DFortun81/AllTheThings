@@ -8,6 +8,12 @@ _.Zones =
 			["maps"] = { 118 },	-- Icecrown
 			["lvl"] = 67,
 			["g"] = {
+				n(-4, {	-- Achievements
+					-- TODO:: add all achievements here?
+					ach(2756, {	-- Argent Aspiration
+						["sourceQuest"] = 13668,	-- The Argent Tournament
+					}),
+				}),
 				ach(4596, {	-- The Sword in the Skull
 					["description"] = "This is the quest chain for obtaining an epic Quel'Delar weapon.\n\nNOTE: A Warrior can learn all of the weapon appearances.",
 					["maps"] = {
@@ -237,6 +243,80 @@ _.Zones =
 							currency(241),	-- Champion's Seal
 						},
 					}),
+					q(13741, {	-- A Blade Fit For A Champion (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13666, {	-- A Blade Fit For A Champion (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13746, {	-- A Blade Fit For A Champion (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13603, {	-- A Blade Fit For A Champion (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13752, {	-- A Blade Fit For A Champion (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13757, {	-- A Blade Fit For A Champion (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13773, {	-- A Blade Fit For A Champion (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13778, {	-- A Blade Fit For A Champion (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13768, {	-- A Blade Fit For A Champion (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13783, {	-- A Blade Fit For A Champion (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13762, {	-- A Blade Fit For A Champion (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13673, {	-- A Blade Fit For A Champion (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13732, {	-- A Champion Rises (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13735, {	-- A Champion Rises (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13733, {	-- A Champion Rises (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13734, {	-- A Champion Rises (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13702, {	-- A Champion Rises (A)
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							currency(241),	-- Champion's Seal
+							i(44998),	-- Argent Squire
+						},
+					}),
+					q(13737, {	-- A Champion Rises (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13740, {	-- A Champion Rises (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13739, {	-- A Champion Rises (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13738, {	-- A Champion Rises (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13736, {	-- A Champion Rises (H)
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							currency(241),	-- Champion's Seal
+							i(45022),	-- Argent Gruntling
+						},
+					}),
 					q(14074, {	-- A Leg Up (A)
 						["isDaily"] = true,
 						["coord"] = { 76.2, 19.6, 118 },
@@ -254,6 +334,102 @@ _.Zones =
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
+					}),
+					q(13689, {	-- A Valiant Of Darnassus
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13688, {	-- A Valiant Of Gnomeregan
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13685, {	-- A Valiant Of Ironforge
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13691, {	-- A Valiant Of Orgrimmar
+						["races"] = HORDE_ONLY,
+					}),
+					q(13693, {	-- A Valiant Of Sen'jin
+						["races"] = HORDE_ONLY,
+					}),
+					q(13696, {	-- A Valiant Of Silvermoon
+						["races"] = HORDE_ONLY,
+					}),
+					q(13684, {	-- A Valiant Of Stormwind
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13690, {	-- A Valiant Of The Exodar
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13694, {	-- A Valiant Of Thunder Bluff
+						["races"] = HORDE_ONLY,
+					}),
+					q(13695, {	-- A Valiant Of Undercity
+						["races"] = HORDE_ONLY,
+					}),
+					q(13749, {	-- A Valiant's Field Training (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13755, {	-- A Valiant's Field Training (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13760, {	-- A Valiant's Field Training (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13744, {	-- A Valiant's Field Training (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13592, {	-- A Valiant's Field Training (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13781, {	-- A Valiant's Field Training (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13776, {	-- A Valiant's Field Training (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13765, {	-- A Valiant's Field Training (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13786, {	-- A Valiant's Field Training (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13771, {	-- A Valiant's Field Training (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13600, {	-- A Worthy Weapon (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13742, {	-- A Worthy Weapon (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13758, {	-- A Worthy Weapon (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13669, {	-- A Worthy Weapon (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13747, {	-- A Worthy Weapon (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13753, {	-- A Worthy Weapon (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13769, {	-- A Worthy Weapon (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13674, {	-- A Worthy Weapon (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13784, {	-- A Worthy Weapon (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13774, {	-- A Worthy Weapon (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13763, {	-- A Worthy Weapon (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13779, {	-- A Worthy Weapon (H)
+						["races"] = HORDE_ONLY,
 					}),
 					{	---------- Among the Champions (A / H, non-DK)
 						["allianceQuestID"] = 13790,	-- Among the Champions
@@ -307,6 +483,36 @@ _.Zones =
 							i(45500),	-- Mark of the Champion
 						},
 					},
+					q(13852, {	-- At The Enemy's Gates (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13851, {	-- At The Enemy's Gates (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13854, {	-- At The Enemy's Gates (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13855, {	-- At The Enemy's Gates (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13847, {	-- At The Enemy's Gates (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13858, {	-- At The Enemy's Gates (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13856, {	-- At The Enemy's Gates (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13860, {	-- At The Enemy's Gates (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13859, {	-- At The Enemy's Gates (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13857, {	-- At The Enemy's Gates (H)
+						["races"] = HORDE_ONLY,
+					}),
 					{	---------- Battle Before the Citadel (A / H, non-DK)
 						["allianceQuestID"] = 13861,	-- Battle Before the Citadel
 						["hordeQuestID"] = 13862,	-- Battle Before the Citadel
@@ -333,6 +539,7 @@ _.Zones =
 							i(45724),	-- Champion's Purse
 						},
 					},
+					q(24442),	-- Battle Plans Of The Kvaldir
 					q(14076, {	-- Breakfast Of Champions (A)
 						["isDaily"] = true,
 						["coord"] = { 76.2, 19.6, 118 },
@@ -356,6 +563,7 @@ _.Zones =
 						["coord"] = { 69.5, 22.4, 118 },
 						["provider"] = { "n", 34210 },	-- Squire Artie
 					}),
+					q(14105),	-- Deathspeaker Kharos
 					q(14101, {	-- Drottinn Hrothgar
 						["isDaily"] = true,
 						["coord"] = { 69.4, 23.1, 118 },
@@ -364,6 +572,7 @@ _.Zones =
 							currency(241),	-- Champion's Seal
 						},
 					}),
+					q(13794),	-- Eadric the Pure
 					q(14108, {	-- Get Kraken!
 						["isDaily"] = true,
 						["coord"] = { 69.4, 23.1, 118 },
@@ -390,6 +599,51 @@ _.Zones =
 							currency(241),	-- Champion's Seal
 						},
 					}),
+					q(14095),	-- Identifying the Remains
+					q(13625, {	-- Learning The Reins (A)
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+					}),
+					q(13677, {	-- Learning The Reins (H)
+						["coord"] = { 76.2, 24.4, 118 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33659 },	-- Galathia Brightdawn
+						["sourceQuests"] = {
+							13829,	-- Mastery Of The Melee
+							13839,	-- Mastery Of The Charge
+							13838,	-- Mastery Of The Shield-Breaker
+						},
+					}),
+					q(13828, {	-- Mastery Of Melee (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13829, {	-- Mastery Of Melee (H)
+						["coord"] = { 76.2, 24.3, 118 },
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
+						["sourceQuest"] = 13668,	-- The Argent Tournament
+					}),
+					q(13837, {	-- Mastery Of The Charge (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13839, {	-- Mastery Of The Charge (H)
+						["coord"] = { 76.3, 24.3, 118 },
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33658 },	-- Amariel Sunsworn
+						["sourceQuest"] = 13668,	-- The Argent Tournament
+					}),
+					q(13835, {	-- Mastery Of The Shield-Breaker (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13838, {	-- Mastery Of The Shield-Breaker (H)
+						["coord"] = { 76.2, 24.4, 118 },
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33659 },	-- Galathia Brightdawn
+						["sourceQuest"] = 13668,	-- The Argent Tournament
+					}),
+					q(14102),	-- Mistcaller Yngvar
+					q(14104),	-- Ornolf The Scarred
 					q(14152, {	-- Rescue at Sea (A)
 						["isDaily"] = true,
 						["coord"] = { 76.2, 19.6, 118 },
@@ -452,6 +706,98 @@ _.Zones =
 							i(45724),	-- Champion's Purse
 						},
 					},
+					q(13667, {	-- The Argent Tournament
+						["coord"] = { 69.6, 22.8, 118 },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33817 },	-- Justicar Mariel Trueheart
+					}),
+					q(13668, {	-- The Argent Tournament
+						["coord"] = { 69.6, 22.8, 118 },
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33817 },	-- Justicar Mariel Trueheart
+					}),
+					q(13679, {	-- The Aspirant's Challenge (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13680, {	-- The Aspirant's Challenge (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13634, {	-- The Black Knight of Silverpine?
+						["races"] = HORDE_ONLY,
+					}),
+					q(13633, {	-- The Black Knight of Westfall?
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(14016),	-- The Black Knight's Curse
+					q(13664),	-- The Black Knight's Fall
+					q(14017),	-- The Black Knight's Fate
+					q(13663),	-- The Black Knight's Orders
+					q(13754, {	-- The Edge Of Winter (A)
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33593 },	-- Colosos
+					}),
+					q(13748, {	-- The Edge Of Winter (A)
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33335 },	-- Ambrose Boltspark
+					}),
+					q(13670, {	-- The Edge Of Winter (A)
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33625 },	-- Arcanist Taelis
+					}),
+					q(13759, {	-- The Edge Of Winter (A)
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33592 },	-- Jaelyne Evensong
+					}),
+					q(13743, {	-- The Edge Of Winter (A)
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33312 },	-- Lana Stouthammer
+					}),
+					q(13616, {	-- The Edge Of Winter (A)
+						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
+					}),
+					q(13675, {	-- The Edge Of Winter (H)
+						["coord"] = { 76.2, 24.3, 118 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
+						["sourceQuests"] = {
+							13829,	-- Mastery Of The Melee
+							13839,	-- Mastery Of The Charge
+							13838,	-- Mastery Of The Shield-Breaker
+						},
+					}),
+					q(13770, {	-- The Edge Of Winter (H)
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33372 },	-- Zul'tore
+					}),
+					q(13780, {	-- The Edge Of Winter (H)
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33373 },	-- Deathstalker Visceri
+					}),
+					q(13764, {	-- The Edge Of Winter (H)
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33361 },	-- Mokra the Skullcrusher
+					}),
+					q(13785, {	-- The Edge Of Winter (H)
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33379 },	-- Eressea Dawnsinger
+					}),
+					q(13775, {	-- The Edge Of Winter (H)
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33403 },	-- Runok Wildmane
+					}),
 					q(14107, {	-- The Fate of the Fallen
 						["isDaily"] = true,
 						["coord"] = { 69.4, 23.1, 118 },
@@ -459,6 +805,36 @@ _.Zones =
 						["g"] = {
 							currency(241),	-- Champion's Seal
 						},
+					}),
+					q(13665, {	-- The Grand Melee (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13750, {	-- The Grand Melee (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13756, {	-- The Grand Melee (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13761, {	-- The Grand Melee (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13745, {	-- The Grand Melee (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13767, {	-- The Grand Melee (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13772, {	-- The Grand Melee (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13787, {	-- The Grand Melee (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13777, {	-- The Grand Melee (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13782, {	-- The Grand Melee (H)
+						["races"] = HORDE_ONLY,
 					}),
 					q(14077, {	-- The Light's Mercy
 						["isDaily"] = true,
@@ -478,6 +854,70 @@ _.Zones =
 							currency(241),	-- Champion's Seal
 						},
 					}),
+					q(13795),	-- The Scourgebane
+					q(13641),	-- The Seer's Crystal
+					q(13643),	-- The Stories Dead Men Tell
+					q(13725, {	-- The Valiant's Challenge (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13723, {	-- The Valiant's Challenge (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13713, {	-- The Valiant's Challenge (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13724, {	-- The Valiant's Challenge (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13699, {	-- The Valiant's Challenge (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13726, {	-- The Valiant's Challenge (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13728, {	-- The Valiant's Challenge (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13729, {	-- The Valiant's Challenge (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13731, {	-- The Valiant's Challenge (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13727, {	-- The Valiant's Challenge (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13714, {	-- The Valiant's Charge (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13718, {	-- The Valiant's Charge (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13717, {	-- The Valiant's Charge (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13716, {	-- The Valiant's Charge (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13715, {	-- The Valiant's Charge (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13721, {	-- The Valiant's Charge (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13722, {	-- The Valiant's Charge (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13697, {	-- The Valiant's Charge (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13720, {	-- The Valiant's Charge (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13719, {	-- The Valiant's Charge (H)
+						["races"] = HORDE_ONLY,
+					}),
+					q(13654),	-- There's Something About the Squire
 					{	---------- Threat From Above (A / H, non-DK)
 						["allianceQuestID"] = 13682,	-- Threat From Above
 						["hordeQuestID"] = 13809,	-- Threat From Above
@@ -504,6 +944,63 @@ _.Zones =
 							i(45724),	-- Champion's Purse
 						},
 					},
+					q(13671, {	-- Training In The Field (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13676, {	-- Training In The Field (H)
+						["coord"] = { 76.3, 24.3, 118 },
+						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33658 },	-- Amariel Sunsworn
+						["sourceQuests"] = {
+							13829,	-- Mastery Of The Melee
+							13839,	-- Mastery Of The Charge
+							13838,	-- Mastery Of The Shield-Breaker
+						},
+					}),
+					q(13672, {	-- Up To The Challenge (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13678, {	-- Up To The Challenge (H)
+						["coord"] = { 76.2, 24.3, 118 },
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
+						["sourceQuests"] = {
+							13829,	-- Mastery Of The Melee
+							13839,	-- Mastery Of The Charge
+							13838,	-- Mastery Of The Shield-Breaker
+						},
+					}),
+					q(13706, {	-- Valiant Of Darnassus
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13704, {	-- Valiant Of Gnomeregan
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13703, {	-- Valiant Of Ironforge
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13707, {	-- Valiant Of Orgrimmar
+						["races"] = HORDE_ONLY,
+					}),
+					q(13708, {	-- Valiant Of Sen'jin
+						["races"] = HORDE_ONLY,
+					}),
+					q(13711, {	-- Valiant Of Silvermoon
+						["races"] = HORDE_ONLY,
+					}),
+					q(13593, {	-- Valiant Of Stormwind
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13705, {	-- Valiant Of The Exodar
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13709, {	-- Valiant Of Thunder Bluff
+						["races"] = HORDE_ONLY,
+					}),
+					q(13710, {	-- Valiant Of Undercity
+						["races"] = HORDE_ONLY,
+					}),
 					q(14112, {	-- What Do You Feed a Yeti, Anyway? (A)
 						["isDaily"] = true,
 						["coord"] = { 76.2, 19.6, 118 },
