@@ -588,7 +588,6 @@ _.Zones =
 				q(12489, {	-- Welcome to Sholazar Basin
 					["coord"] = { 39.7, 58.7, 119 },
 					["provider"] = { "n", 27987 },	-- Monte Muzzleshot
-					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
 						39209,	-- Sholazar Basin
 						39212,	-- Sholazar Basin
