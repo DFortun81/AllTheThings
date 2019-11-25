@@ -216,6 +216,7 @@ _.PVP =
 						i(134774),	-- Covert Barrier
 						i(134746),	-- Covert Greatsword
 						i(134772),	-- Covert Band*
+						i(134771),	-- Covert Ring*
 					},
 				}),
 			},
