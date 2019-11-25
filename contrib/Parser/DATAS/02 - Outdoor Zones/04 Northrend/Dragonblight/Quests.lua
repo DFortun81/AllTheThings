@@ -83,6 +83,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26156 },	-- Wartook Iceborn
 					["sourceQuest"] = 11930,	-- Across Transborea
+					["isBreadcrumb"] = true,
 				}),
 				q(12008, {	-- Agmar's Hammer
 					["coord"] = { 13.2, 48.3, 115 },
@@ -1578,6 +1579,7 @@ _.Zones =
 					["coord"] = { 36.6, 46.5, 115 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26415 },	-- Senior Sergeant Juktok
+					["isBreadcrumb"] = true,
 				}),
 				q(12136, {	-- The Translated Tome
 					["coord"] = { 35.9, 46.9, 115 },
