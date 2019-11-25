@@ -662,6 +662,7 @@ _.NeverImplemented =
 		--    Legion     --
 		-------------------
 	--	Various tracking quests
+		q(40616),	-- Tracking Quest - W1 - Saw Leader Die
 		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
 		q(45533),	-- Legion Dungeon Reward Quest
 		q(44437),	-- Legion Sungeon Reward quest (Wrath of Azshara)
