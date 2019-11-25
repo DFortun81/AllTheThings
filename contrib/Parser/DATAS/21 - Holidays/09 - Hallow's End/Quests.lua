@@ -194,7 +194,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					["isYearly"] = true,
 				}),
 				q(11392, {	-- Call the Headless Horseman
-					["u"] = 40,	-- Hallow's End
+					["u"] = 40,	-- Legacy Quests
 					["sourceQuests"] = {
 						11135,	-- The Headless Horseman
 						11220,	-- The Headless Horseman
@@ -2870,12 +2870,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 					},
 				}),
 				q(11242, {	-- Free at Last!
-					["u"] = 26,	-- Hallow's End
+					["u"] = 40,	-- Legacy Quests
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 23904 },	-- Sir Thomas
 				}),
 				q(11403, {	-- Free at Last!
-					["u"] = 26,	-- Hallow's End
+					["u"] = 40,	-- Legacy Quests
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 23904 },	-- Sir Thomas
 				}),
@@ -3168,7 +3168,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					},
 				}),
 				q(11135, {	-- The Headless Horseman
-					["u"] = 26,	-- Hallow's End
+					["u"] = 40,	-- Legacy Quests
 					["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
 					["maps"] = {
 						97,	-- Azuremyst Isle
@@ -3177,7 +3177,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					},
 				}),
 				q(11220, {	-- The Headless Horseman
-					["u"] = 26,	-- Hallow's End
+					["u"] = 40,	-- Legacy Quests
 					["provider"] = { "n", 23973 },	-- Masked Orphan Matron
 					["maps"] = {
 						1,	-- Durotar
