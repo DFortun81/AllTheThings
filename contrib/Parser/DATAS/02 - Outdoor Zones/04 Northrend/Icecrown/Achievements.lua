@@ -52,6 +52,7 @@ _.Zones =
 						["sourceQuest"] = 13157,	-- The Crusaders' Pinnacle
 					}),
 					crit(9, {	-- Mord'rethar: The Death Gate
+						-- NOTE: this was automatically marked as complete for some reason
 					}),
 					crit(10, {	-- Aldur'thar: The Desolation Gate
 						["sourceQuests"] = {
@@ -60,6 +61,7 @@ _.Zones =
 						},
 					}),
 					crit(11, {	-- Corp'rethar: The Horror Gate
+						-- NOTE: this was automatically marked as complete for some reason
 					}),
 				}),
 			}),

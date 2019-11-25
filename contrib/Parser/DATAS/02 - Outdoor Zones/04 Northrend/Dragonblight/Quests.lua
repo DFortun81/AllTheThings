@@ -329,11 +329,6 @@ _.Zones =
 					["coord"] = { 63.5, 72.0, 115 },
 					["provider"] = { "n", 27255 },	-- Nishera the Garden Keeper
 				}),
-				q(13078, {	-- Dahlia's Tears
-					["coord"] = { 59.8, 54.7, 115 },
-					["provider"] = { "n", 26917 },	-- Alexstrasza the Life-Binder
-					["sourceQuest"] = 13077,	-- The Touch of an Aspect
-				}),
 				q(12372, {	-- Defending Wyrmrest Temple
 					["coord"] = { 59.2, 54.3, 115 },
 					["provider"] = { "n", 27575 },	-- Lord Afrasastrasz
@@ -1254,11 +1249,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27159 },	-- Siege Engineer Quarterflash
 					["sourceQuest"] = 12275,	-- The Demo-gnome
-				}),
-				q(13079, {	-- The Boon of Alexstrasza
-					["coord"] = { 59.8, 54.7, 115 },
-					["provider"] = { "n", 26917 },	-- Alexstrasza the Life-Binder
-					["sourceQuest"] = 13078,	-- Dahlia's Tears
 				}),
 				q(12542, {	-- The Call Of The Crusade
 					["coord"] = { 87.2, 57.3, 115 },

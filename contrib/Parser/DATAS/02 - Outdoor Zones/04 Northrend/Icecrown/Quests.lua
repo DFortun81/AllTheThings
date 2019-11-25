@@ -8,6 +8,9 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(13286, {	-- ...All the Help We Can Get.
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 30344 },	-- High Captain Justin Bartlett
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13231,	-- The Broken Front
 				}),
 				q(13070, {	-- A Cold Front Approaches
 					["coord"] = { 87.4, 75.8, 118 },
@@ -21,7 +24,10 @@ _.Zones =
 					["sourceQuest"] = 13068,	-- A Tale of Valor
 				}),
 				q(13389, {	-- A Short Fuse (A)
+					["coord"] = { 54.3, 86.3, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 193400 },	-- Saronite Bomb Stack
+					["sourceQuest"] = 13388,	-- Set It Off!
 				}),
 				q(13263, {	-- A Short Fuse (H)
 					["coord"] = { 54.3, 86.2, 118 },
@@ -41,11 +47,15 @@ _.Zones =
 					["provider"] = { "n", 30631 },	-- Darkrider Arly
 					["sourceQuests"] = {
 						13138,	-- I'm Smelting... Smelting!
+						13134,	-- Spilling Their Blood
 						13140,	-- The Runesmiths of Malykriss
 					},
 				}),
 				q(13390, {	-- A Voice in the Dark (A)
+					["coord"] = { 53.9, 87.2, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 193195 },	-- Pulsing Crystal
+					["sourceQuest"] = 13389,	-- A Short Fuse
 				}),
 				q(13271, {	-- A Voice in the Dark (H)
 					["coord"] = { 53.9, 87.2, 118 },
@@ -55,6 +65,9 @@ _.Zones =
 				}),
 				q(13294, {	-- Against the Giants (A)
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13287,	-- Poke and Prod
 				}),
 				q(13277, {	-- Against the Giants (H)
 					["races"] = HORDE_ONLY,
@@ -72,7 +85,7 @@ _.Zones =
 					},
 				}),
 				q(13374, {	-- Amped for Revolt!
-					-- TODO:: possibly removed?
+					["u"] = 40,
 					["coord"] = { 54.0, 36.9, 118 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 32430 },	-- Fringe Engineer Tezzla
@@ -89,7 +102,10 @@ _.Zones =
 					["sourceQuest"] = 13362,	-- Knowledge is a Terrible Burden
 				}),
 				q(13395, {	-- Army of the Damned (A)
+					["coord"] = { 64.5, 43.9, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 32404 },	-- Matthias Lehner
+					["sourceQuest"] = 13394,	-- Do Your Worst
 				}),
 				q(13236, {	-- Army of the Damned (H)
 					["coord"] = { 64.5, 43.9, 118 },
@@ -98,7 +114,11 @@ _.Zones =
 					["sourceQuest"] = 13305,	-- Do Your Worst
 				}),
 				q(13309, {	-- Assault by Air (A)
+					["coord"] = { 62.5, 51.3, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["provider"] = { "n", 31808 },	-- Ground Commander Koup
+					["sourceQuest"] = 13341,	-- Joining the Assault
 				}),
 				q(13310, {	-- Assault by Air (H)
 					["coord"] = { 58.3, 45.9, 118 },
@@ -108,7 +128,11 @@ _.Zones =
 					["sourceQuest"] = 13340,	-- Joining the Assault
 				}),
 				q(13284, {	-- Assault by Ground (A)
+					["coord"] = { 62.5, 51.1, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["provider"] = { "n", 31737 },	-- Skybreaker Squad Leader
+					["sourceQuest"] = 13341,	-- Joining the Assault
 				}),
 				q(13301, {	-- Assault by Ground (H)
 					["coord"] = { 58.3, 46.1, 118 },
@@ -136,8 +160,10 @@ _.Zones =
 					},
 				}),
 				q(13295, {	-- Basic Chemistry (A)
-					["provider"] = { "n", 29799 },	-- Thassarian
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13294,	-- Against the Giants
 					["g"] = {
 						i(44386),	-- Newt-Eye Ring
 						i(44387),	-- Bat-Wool Signet
@@ -198,6 +224,9 @@ _.Zones =
 				}),
 				q(13335, {	-- Before the Gate of Horror (A)
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13337,	-- The Ironwall Rampart
 				}),
 				q(13329, {	-- Before the Gate of Horror (H)
 					["races"] = HORDE_ONLY,
@@ -224,6 +253,10 @@ _.Zones =
 				}),
 				q(13336, {	-- Blood of the Chosen (A)
 					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["provider"] = { "n", 32302 },	-- Knight-Captain Drosche
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13225,	-- The Skybreaker
 				}),
 				q(13330, {	-- Blood of the Chosen (H)
 					["races"] = HORDE_ONLY,
@@ -234,6 +267,9 @@ _.Zones =
 				}),
 				q(13334, {	-- Bloodspattered Banners (A)
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13332,	-- Raise the Barricades
 				}),
 				q(13307, {	-- Bloodspattered Banners (H)
 					["races"] = HORDE_ONLY,
@@ -248,8 +284,10 @@ _.Zones =
 					["sourceQuest"] = 13259,	-- Establishing Superiority
 				}),
 				q(13291, {	-- Borrowed Technology
-					["provider"] = { "n", 30345 },	-- Chief Engineer Boltwrench
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 30345 },	-- Chief Engineer Boltwrench
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13290,	-- Your Attention, Please
 					["g"] = {
 						i(38736),	-- Smuggler's Bracers
 						i(39035),	-- Glacier-Walker's Mukluks
@@ -262,6 +300,7 @@ _.Zones =
 					["provider"] = { "n", 30708 },	-- Crusader Olakin Sainrith
 					["sourceQuests"] = {
 						13138,	-- I'm Smelting... Smelting!
+						13134,	-- Spill Their BLood
 						13140,	-- The Runesmiths of Malykriss
 					},
 					["g"] = {
@@ -271,6 +310,9 @@ _.Zones =
 				}),
 				q(13320, {	-- Cannot Reproduce (A)
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13315,	-- Sneak Preview
 				}),
 				q(13355, {	-- Cannot Reproduce (H)
 					["races"] = HORDE_ONLY,
@@ -284,10 +326,16 @@ _.Zones =
 				}),
 				q(13333, {	-- Capture More Dispatches
 					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13314,	-- Get the Message
 				}),
 				q(13319, {	-- Chain of Command (A)
-					["provider"] = { "n", 29799 },	-- Thassarian
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13315,	-- Sneak Preview
 					["g"] = {
 						i(43882),	-- Cultist's Cowl
 						i(43891),	-- Jhaeqon's Tunic
@@ -313,6 +361,9 @@ _.Zones =
 				}),
 				q(13298, {	-- Coprous the Defiled (A)
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13294,	-- Against the Giants
 				}),
 				q(13278, {	-- Coprous the Defiled (H)
 					["races"] = HORDE_ONLY,
@@ -350,6 +401,12 @@ _.Zones =
 					["provider"] = { "n", 30226 },	-- Father Gustav
 					["sourceQuest"] = 13036,	-- Honor Above All Else
 				}),
+				q(13078, {	-- Dahlia's Tears
+					["maps"] = { 115 },	-- Dragonblight
+					["coord"] = { 59.8, 54.7, 115 },
+					["provider"] = { "n", 26917 },	-- Alexstrasza the Life-Binder
+					["sourceQuest"] = 13077,	-- The Touch of an Aspect
+				}),
 				q(13120, {	-- Death's Gaze
 					["coord"] = { 35.3, 66.3, 118 },
 					["provider"] = { "n", 30631 },	-- Darkrider Arly
@@ -377,8 +434,10 @@ _.Zones =
 					["sourceQuest"] = 13117,	-- Where Are They Coming From?
 				}),
 				q(13394, {	-- Do Your Worst (A)
-					["provider"] = { "n", 32408 },	-- Matthias Lehner
+					["coord"] = { 68.0, 51.5, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 32408 },	-- Matthias Lehner
+					["sourceQuest"] = 13393,	-- Field Repairs
 					["g"] = {
 						i(43881),	-- Demolisher Driver's Dustcoat
 						i(43892),	-- Refurbished Demolisher Gear Belt
@@ -402,9 +461,16 @@ _.Zones =
 				}),
 				q(13318, {	-- Drag and Drop (A)
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13315,	-- Sneak Preview
 				}),
-				q(13323, {	-- Drag and Drop (A)
+				q(13323, {	-- Drag and Drop (A) (daily)
 					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13318,	-- Drag and Drop
 				}),
 				q(13352, {	-- Drag and Drop (H)
 					["races"] = HORDE_ONLY,
@@ -416,7 +482,7 @@ _.Zones =
 						13278,	-- Coprous the Defiled
 					},
 				}),
-				q(13353, {	-- Drag and Drop (H)
+				q(13353, {	-- Drag and Drop (H) (daily)
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 29795 },	-- Koltira Deathweaver
@@ -460,11 +526,17 @@ _.Zones =
 				}),
 				q(13386, {	-- Exploiting an Opening
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13225,	-- The Skybreaker
 				}),
-				q(13393, {	-- Field Repairs
+				q(13393, {	-- Field Repairs (A)
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13392,	-- Return to the Surface
 				}),
-				q(13304, {	-- Field Repairs
+				q(13304, {	-- Field Repairs (H)
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 29795 },	-- Koltira Deathweaver
 					["description"] = "On Orgrim's Hammer.",
@@ -476,7 +548,10 @@ _.Zones =
 					["sourceQuest"] = 13121,	-- Through the Eye
 				}),
 				q(13232, {	-- Finish Me!
+					["coord"] = { 68.7, 64.5, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 31304 },	-- Dying Soldier
+					["sourceQuest"] = 13231,	-- The Broken Front
 				}),
 				q(12893, {	-- Free Your Mind
 					["coord"] = { 44.1, 24.6, 118 },
@@ -500,10 +575,13 @@ _.Zones =
 					["provider"] = { "n", 30946 },	-- Keritose Bloodblade
 					["sourceQuest"] = 13168,	-- Parting Gifts
 				}),
-				q(13396, {	-- Futility
+				q(13396, {	-- Futility (A)
+					["coord"] = { 64.5, 43.9, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 32404 },	-- Matthias Lehner
+					["sourceQuest"] = 13395,	-- Army of the Damned
 				}),
-				q(13348, {	-- Futility
+				q(13348, {	-- Futility (H)
 					["coord"] = { 64.5, 43.9, 118 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 32404 },	-- Matthias Lehner
@@ -517,13 +595,19 @@ _.Zones =
 				q(12949, {	-- Get the Key
 					["coord"] = { 41.0, 23.8, 118 },
 					["provider"] = { "n", 30056 },	-- Vaelen the Flayed
-					["sourceQuest"] = 12943,	-- Shadow Vault Decree
+					["sourceQuest"] = 12939,	-- Honor Challenge
 				}),
 				q(13314, {	-- Get the Message
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 30344 },	-- High Captain Justin Bartlett
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13332,	-- Raise the Barricades
 				}),
 				q(13296, {	-- Get to Ymirheim! (A)
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 30345 },	-- Chief Engineer Boltwrench
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13225,	-- The Skybreaker
 				}),
 				q(13293, {	-- Get to Ymirheim! (H)
 					["races"] = HORDE_ONLY,
@@ -584,7 +668,13 @@ _.Zones =
 					},
 				}),
 				q(13221, {	-- I'm Not Dead Yet! (A)
+					["coord"] = { 31.7, 64.7, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 31279 },	-- Father Kamaros
+					["sourceQuests"] = {
+						13120,	-- Death's Gaze
+						13119,	-- Destroying the Altars
+					},
 				}),
 				q(13229, {	-- I'm Not Dead Yet! (H)
 					["coord"] = { 31.7, 64.7, 118 },
@@ -642,7 +732,12 @@ _.Zones =
 				q(13139, {	-- Into The Frozen Heart Of Northrend
 					["coord"] = { 82.8, 72.7, 118 },
 					["provider"] = { "n", 30683 },	-- Father Gustav
-					["sourceQuest"] = 13125,	-- The Air Stands Still
+					["sourceQuests"] = {
+						13125,	-- The Air Stands Still
+						13135,	-- It Could Kill Us All
+						13110,	-- The Restless Dead
+						13130,	-- The Stone That Started A Revolution
+					},
 				}),
 				q(13045, {	-- Into The Wild Green Yonder
 					["coord"] = { 87.0, 79.0, 118 },
@@ -658,8 +753,8 @@ _.Zones =
 					},
 				}),
 				q(12887, {	-- It's All Fun and Games (A)
-					["coord"] = { 59.6, 44.4, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["description"] = "On the Skybreaker.",
 					["provider"] = { "n", 29799 },	-- Thassarian
 				}),
 				q(12892, {	-- It's All Fun and Games (H)
@@ -670,10 +765,16 @@ _.Zones =
 				q(13136, {	-- Jagged Shards
 					["cr"] = 30597,	-- Spiked Ghoul
 					["provider"] = { "i", 43242 },	-- Jagged Shard
-					-- TODO:: determine sourceQuest(s)
+					["sourceQuests"] = {
+						13120,	-- Death's Gaze
+						13119,	-- Destroying the Altars
+					},
 				}),
 				q(13341, {	-- Joining the Assault (A)
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 32302 },	-- Knight-Captain Drosche
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13225,	-- The Skybreaker
 				}),
 				q(13340, {	-- Joining the Assault (H)
 					["races"] = HORDE_ONLY,
@@ -715,7 +816,11 @@ _.Zones =
 					},
 				}),
 				q(13280, {	-- King of the Mountain (A)
+					["coord"] = { 62.8, 50.5, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["provider"] = { "n", 30345 },	-- Chief Engineer Boltwrench
+					["sourceQuest"] = 13296,	-- Get to Ymirheim!
 				}),
 				q(13283, {	-- King of the Mountain (H)
 					["coord"] = { 51.9, 57.5, 118 },
@@ -725,7 +830,10 @@ _.Zones =
 					["sourceQuest"] = 13293,	-- Get to Ymirheim!
 				}),
 				q(13401, {	-- Knowledge is a Terrible Burden (A)
+					["coord"] = { 49.1, 73.1, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 32497 },	-- Matthias Lehner
+					["sourceQuest"] = 13400,	-- The Hunter and the Prince
 				}),
 				q(13362, {	-- Knowledge is a Terrible Burden (H)
 					["coord"] = { 49.1, 73.1, 118 },
@@ -745,7 +853,13 @@ _.Zones =
 					["sourceQuest"] = 12949,	-- Get the Key
 				}),
 				q(13482, {	-- Let's Get Out of Here! (A)
+					["coord"] = { 31.7, 64.7, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 31279 },	-- Father Kamaros
+					["sourceQuests"] = {
+						13120,	-- Death's Gaze
+						13119,	-- Destroying the Altars
+					},
 				}),
 				q(13481, {	-- Let's Get Out of Here! (H)
 					["coord"] = { 31.8, 64.8, 118 },
@@ -783,7 +897,7 @@ _.Zones =
 					["provider"] = { "n", 30944 },	-- Vereth the Cunning
 					["sourceQuest"] = 13145,	-- The Vile Hold
 				}),
-				q(13308,  {	-- Mind Tricks
+				q(13308, {	-- Mind Tricks
 					["coord"] = { 54.4, 59.2, 118 },
 					["provider"] = { "n", 31892 },	-- Darkspeaker R'khem
 					["sourceQuests"] = {
@@ -799,6 +913,9 @@ _.Zones =
 				}),
 				q(13345, {	-- Need More Info (A)
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13318,	-- Drag and Drop
 				}),
 				q(13366, {	-- Need More Info (H)
 					["races"] = HORDE_ONLY,
@@ -808,6 +925,10 @@ _.Zones =
 				}),
 				q(13297, {	-- Neutralizing the Plague (A)
 					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13295,	-- Basic Chemistry
 				}),
 				q(13281, {	-- Neutralizing the Plague (H)
 					["races"] = HORDE_ONLY,
@@ -829,18 +950,27 @@ _.Zones =
 				}),
 				q(13233, {	-- No Mercy!
 					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["provider"] = { "n", 30344 },	-- High Captain Justin Bartlett
+					["description"] = "On the Skybreaker.",
 				}),
 				q(13346, {	-- No Rest For The Wicked (A)
-					["provider"] = { "n", 29799 },	-- Thassarian
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13345,	-- Need More Info
 					["g"] = {
 						i(44394),	-- Encrusted Zombie Finger
 						i(44393),	-- Polished Zombie Exterminator
 						i(44395),	-- Touch of Unlife
 					},
 				}),
-				q(13350, {	-- No Rest For The Wicked (A)
+				q(13350, {	-- No Rest For The Wicked (A) (daily)
 					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13346,	-- No Rest For The Wicked
 				}),
 				q(13367, {	-- No Rest For The Wicked (H)
 					["races"] = HORDE_ONLY,
@@ -861,8 +991,10 @@ _.Zones =
 					["sourceQuest"] = 13367,	-- No Rest For The Wicked
 				}),
 				q(13342, {	-- Not a Bug (A)
-					["provider"] = { "n", 29799 },	-- Thassarian
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuests"] = 13318,	-- Drag and Drop
 					["g"] = {
 						i(39372),	-- Mantle of the Dark Messenger
 						i(39414),	-- Gilly's Strangulation Gauntlets
@@ -871,8 +1003,12 @@ _.Zones =
 						i(39471),	-- Gutbuster of Aldur'thar
 					},
 				}),
-				q(13344, {	-- Not a Bug (A)
+				q(13344, {	-- Not a Bug (A) (daily)
 					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13342,	-- Not a Bug
 				}),
 				q(13358, {	-- Not a Bug (H)
 					["races"] = HORDE_ONLY,
@@ -935,12 +1071,17 @@ _.Zones =
 				q(13168, {	-- Parting Gifts
 					["coord"] = { 44.0, 24.5, 118 },
 					["provider"] = { "n", 30946 },	-- Keritose Bloodblade
-					-- TODO:: determine the sourceQuest(s). didn't notice when this one popped up on first pass of zone
-					--["sourceQuest"] = ,	-- 
+					["sourceQuests"] = {
+						-- TODO: need to verify this. May also require some progress in the shadow vault
+						13392,	-- Return to the Surface (A)
+						13282,	-- Return to the Surface (H)
+					},
 				}),
 				q(13287, {	-- Poke and Prod (A)
-					["provider"] = { "n", 29799 },	-- Thassarian
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13286,	-- All the Help We Can Get.
 					["g"] = {
 						i(43903),	-- Ring of the Fallen Shadow Adept
 						i(43889),	-- Hulking Abomination Hide Cloak
@@ -958,12 +1099,6 @@ _.Zones =
 						i(43884),	-- Amulet of the Malefic Necromancer
 					},
 				}),
-				q(13418, {	-- Preparations for War
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(13419, {	-- Preparations for War
-					["races"] = HORDE_ONLY,
-				}),
 				q(13176, {	-- Preparing the Delivery (NYI)
 					["u"] = 1,
 				}),
@@ -973,7 +1108,7 @@ _.Zones =
 					["sourceQuest"] = 13212,	-- He's Gone to Pieces
 				}),
 				q(13382, {	-- Putting the Hertz: The Valley of Lost Hope
-					-- TODO:: possibly removed?
+					["u"] = 40,
 					["coord"] = { 54.0, 42.8, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -982,6 +1117,9 @@ _.Zones =
 				}),
 				q(13332, {	-- Raise the Barricades (A)
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13345,	-- Need More Info
 				}),
 				q(13306, {	-- Raise the Barricades (H)
 					["races"] = HORDE_ONLY,
@@ -1004,8 +1142,10 @@ _.Zones =
 					["u"] = 1,
 				}),
 				q(13321, {	-- Retest Now (A)
-					["provider"] = { "n", 30345 },	-- Chief Engineer Boltwrench
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 30345 },	-- Chief Engineer Boltwrench
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13320,	-- Cannot Reproduce
 					["g"] = {
 						i(39134),	-- Bow of Regression
 						i(39144),	-- Twisted Hooligan Whacker
@@ -1013,8 +1153,12 @@ _.Zones =
 						i(39121),	-- Cultist's Cauldron Stirrer
 					},
 				}),
-				q(13322, {	-- Retest Now (A)
+				q(13322, {	-- Retest Now (A) (daily)
 					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["provider"] = { "n", 30345 },	-- Chief Engineer Boltwrench
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13321,	-- Retest Now
 				}),
 				q(13356, {	-- Retest Now (H)
 					["races"] = HORDE_ONLY,
@@ -1036,7 +1180,10 @@ _.Zones =
 					["sourceQuest"] = 13356,	-- Retest Now
 				}),
 				q(13392, {	-- Return to the Surface (A)
+					["coord"] = { 53.8, 86.9, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 31237 },	-- Matthias Lehner
+					["sourceQuest"] = 13391,	-- Time to Hide
 				}),
 				q(13282, {	-- Return to the Surface (H)
 					["coord"] = { 53.8, 86.9, 118 },
@@ -1048,7 +1195,6 @@ _.Zones =
 					["coord"] = { 36.1, 33.0, 118 },
 					["provider"] = { "n", 30406 },	-- Bethod Feigr
 					["sourceQuest"] = 12999,	-- The Bone Witch
-					-- TODO: verify if have to be on or have completed 13042 "Deep in the Bowels of The Underhalls"
 					["g"] = {
 						i(43862),	-- Mantle of the Underhalls
 						i(43908),	-- Boots of the Fallen Thane
@@ -1068,8 +1214,10 @@ _.Zones =
 					["sourceQuest"] = 12840,	-- In Strict Confidence
 				}),
 				q(13387, {	-- Securing the Perimeter
-					["provider"] = { "n", 31444 },	-- Captain Kendall
+					["coord"] = { 51.7, 86.6, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 31444 },	-- Captain Kendall
+					["sourceQuest"] = 13386,	-- Exploiting an Opening
 					["g"] = {
 						i(38737),	-- Shock-Proof Head Protector
 						i(39036),	-- Hulking Horror Tunic
@@ -1077,7 +1225,7 @@ _.Zones =
 						i(39102),	-- Icewalker's Spikes
 					},
 				}),
-				q(13172,  {	-- Seeds of Chaos
+				q(13172, {	-- Seeds of Chaos
 					["coord"] = { 44.0, 24.5, 118 },
 					["provider"] = { "n", 30946 },	-- Keritose Bloodblade
 					["sourceQuests"] = {
@@ -1094,9 +1242,12 @@ _.Zones =
 					},
 				}),
 				q(13388, {	-- Set it Off!
+					["coord"] = { 51.7, 86.6, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 31444 },	-- Captain Kendall
+					["sourceQuest"] = 13387,	-- Securing the Perimeter
 				}),
-				q(12943,  {	-- Shadow Vault Decree
+				q(12943, {	-- Shadow Vault Decree
 					["coord"] = { 44.6, 20.3, 118 },
 					["provider"] = { "n", 30002 },	-- Duke Lankral
 					["sourceQuest"] = 12939,	-- Honor Challenge
@@ -1109,6 +1260,9 @@ _.Zones =
 				}),
 				q(13339, {	-- Shatter the Shards (A)
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13335,	-- Before the Gate of Horror
 				}),
 				q(13328, {	-- Shatter the Shards (H)
 					["races"] = HORDE_ONLY,
@@ -1123,8 +1277,10 @@ _.Zones =
 					["sourceQuest"] = 12982,	-- Ebon Blade Prisoners
 				}),
 				q(13397, {	-- Sindragosa's Fall
-					["provider"] = { "n", 29799 },	-- Thassarian
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13396,	-- Futility
 					["g"] = {
 						i(39115),	-- Axe of Bloodstained Ice
 						i(39135),	-- Wyrmstalker's Bow
@@ -1133,10 +1289,14 @@ _.Zones =
 						i(39133),	-- Necrolord's Sacrificial Dagger
 					},
 				}),
-				q(13300, {	-- Slaves to Saronite
+				q(13300, {	-- Slaves to Saronite (A)
 					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["provider"] = { "n", 31259 },	-- Absalan the Pious
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13225,	-- The Skybreaker
 				}),
-				q(13302, {	-- Slaves to Saronite
+				q(13302, {	-- Slaves to Saronite (H)
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 31261 },	-- Brother Keltan
@@ -1145,6 +1305,9 @@ _.Zones =
 				}),
 				q(13315, {	-- Sneak Preview (A)
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13288,	-- That's Abominable!
 				}),
 				q(13351, {	-- Sneak Preview (H)
 					["races"] = HORDE_ONLY,
@@ -1165,7 +1328,6 @@ _.Zones =
 					["provider"] = { "n", 30944 },	-- Vereth the Cunning
 					["sourceQuest"] = 13145,	-- The Vile Hold
 				}),
-				q(14448),	-- Takes One to Know One
 				q(13260, {	-- Takes One to Know One -- triggered 14447 and 14448. possibly duplicates?
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 30824 },	-- Sky-Reaver Korm Blackscar
@@ -1175,19 +1337,31 @@ _.Zones =
 						13228,	-- The Broken Front
 					},
 				}),
-				q(14447),	-- Takes One to Know One
-				q(13289, {	-- That's Abominable! (A)
-					["races"] = ALLIANCE_ONLY,
+				q(14447, {	-- Takes One to Know One (NYI)
+					["u"] = 1,
+				}),
+				q(14448, {	-- Takes One to Know One (NYI)
+					["u"] = 1,
 				}),
 				q(13288, {	-- That's Abominable! (A)
-					["provider"] = { "n", 29799 },	-- Thassarian
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13287,	-- Poke and Prod
 					["g"] = {
 						i(39814),	-- Slippers of the Broken Front
 						i(39881),	-- Mantle of Reanimation
 						i(39887),	-- Geist Stalker Leggings
 						i(39888),	-- Scourgebane Pauldrons
 					},
+				}),
+				q(13289, {	-- That's Abominable! (A) (daily)
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13288,	-- That's Abominable!
 				}),
 				q(13264, {	-- That's Abominable! (H)
 					["races"] = HORDE_ONLY,
@@ -1202,6 +1376,7 @@ _.Zones =
 					},
 				}),
 				q(13276, {	-- That's Abominable! (H) (daily)
+					-- NOTE:: Oddly enough, this exists for horde despite the alliance version being unavailable
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 29795 },	-- Koltira Deathweaver
@@ -1223,9 +1398,8 @@ _.Zones =
 					["coord"] = { 83.0, 72.9, 118 },
 					["provider"] = { "n", 30596 },	-- The Ebon Watcher
 					["sourceQuests"] = {
-						13122,	-- The Scourgestone
-						-- TODO:: confirm below
 						13118,	-- The Purging Of Scourgeholme
+						13122,	-- The Scourgestone
 					},
 					["g"] = {
 						i(43839),	-- Leiah's Footpads
@@ -1237,11 +1411,7 @@ _.Zones =
 				q(13091, {	-- The Art of Being a Water Terror
 					["coord"] = { 32.4, 42.9, 118 },
 					["provider"] = { "n", 30232 },	-- The Bone Witch
-					["sourceQuests"] = {
-						13043,	-- The Sum is Greater than the Parts
-						-- Verify below:
-						--13042,	-- Deep in the Bowels of The Underhalls
-					},
+					["sourceQuest"] = 13043,	-- The Sum is Greater than the Parts
 					["g"] = {
 						i(43863),	-- Pantaloons of the Water Magi
 						i(43907),	-- Spear-Sisters Mantle
@@ -1265,6 +1435,12 @@ _.Zones =
 					["provider"] = { "n", 18481 },	-- A'dal
 					["sourceQuest"] = 13081,	-- The Will of the Naaru
 				}),
+				q(13079, {	-- The Boon of Alexstrasza
+					["maps"] = { 115 },	-- Dragonblight
+					["coord"] = { 59.8, 54.7, 115 },
+					["provider"] = { "n", 26917 },	-- Alexstrasza the Life-Binder
+					["sourceQuest"] = 13078,	-- Dahlia's Tears
+				}),
 				q(13075, {	-- The Boon of Remulos
 					["lvl"] = 67,
 					["maps"] = { 80 },	-- Moonglade
@@ -1272,16 +1448,19 @@ _.Zones =
 					["provider"] = { "n", 11832 },	-- Keeper Remulos
 					["sourceQuest"] = 13074,	-- Hope Within the Emerald Nightmare
 				}),
-				q(13231, {	-- The Broken Front
+				q(13231, {	-- The Broken Front (A)
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 30344 },	-- High Captain Justin Bartlett
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13225,	-- The Skybreaker
 				}),
-				q(13228, {	-- The Broken Front
+				q(13228, {	-- The Broken Front (H)
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 30824 },	-- Sky-Reaver Korm Blackscar
 					["sourceQuest"] = 13224,	-- Orgrim's Hammer
 					["description"] = "On Orgrim's Hammer.",
 				}),
-				q(13157,  {	-- The Crusaders' Pinnacle
+				q(13157, {	-- The Crusaders' Pinnacle
 					["coord"] = { 82.8, 72.7, 118 },
 					["provider"] = { "n", 30683 },	-- Father Gustav
 					["sourceQuest"] = 13141,	-- The Battle For Crusaders' Pinnacle
@@ -1293,7 +1472,7 @@ _.Zones =
 						i(44040),	-- The Crusader's Resolution
 					},
 				}),
-				q(12938,  {	-- The Duke
+				q(12938, {	-- The Duke
 					["provider"] = { "n", 29343 },	-- Baron Sliver
 					["coord"] = { 44.1, 24.7, 118 },
 					["sourceQuests"] = {
@@ -1301,7 +1480,7 @@ _.Zones =
 						12899,	-- The Shadow Vault (horde)
 					},
 				}),
-				q(13164,  {	-- The Fate of Bloodbane
+				q(13164, {	-- The Fate of Bloodbane
 					["coord"] = { 54.1, 71.1, 118 },
 					["provider"] = { "n", 30944 },	-- Vereth the Cunning
 					["sourceQuests"] = {
@@ -1316,7 +1495,7 @@ _.Zones =
 						i(44026),	-- Bloodbane's Resolve
 					},
 				}),
-				q(13235,  {	-- The Flesh Giant Champion
+				q(13235, {	-- The Flesh Giant Champion
 					["coord"] = { 35.3, 66.3, 118 },
 					["provider"] = { "n", 30631 },	-- Darkrider Arly
 					["sourceQuest"] = 13220,	-- Putting Olakin Back Together Again
@@ -1335,6 +1514,9 @@ _.Zones =
 				}),
 				q(13338, {	-- The Guardians of Corp'rethar (A)
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13335,	-- Before the Gate of Horror
 				}),
 				q(13316, {	-- The Guardians of Corp'rethar (H)
 					["races"] = HORDE_ONLY,
@@ -1343,8 +1525,10 @@ _.Zones =
 					["sourceQuest"] = 13329,	-- Before the Gate of Horror
 				}),
 				q(13400, {	-- The Hunter and the Prince (A)
-					["provider"] = { "n", 32497 },	-- Matthias Lehner
+					["coord"] = { 49.1, 73.1, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 32497 },	-- Matthias Lehner
+					["sourceQuest"] = 13399,	-- Time for Answers
 					["g"] = {
 						i(38741),	-- Gloves of Tormented Recollection
 						i(39040),	-- Gloves of Troubled Memory
@@ -1366,6 +1550,9 @@ _.Zones =
 				}),
 				q(13337, {	-- The Ironwall Rampart (A)
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13332,	-- Raise the Barricades
 				}),
 				q(13312, {	-- The Ironwall Rampart (H)
 					["races"] = HORDE_ONLY,
@@ -1470,9 +1657,9 @@ _.Zones =
 					},
 				}),
 				q(12898, {	-- The Shadow Vault (A)
-					["provider"] = { "n", 29799 },	-- Thassarian
-					["coord"] = { 59.6, 44.4, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
 					["sourceQuest"] = 12896,	-- If He Cannot Be Turned
 					["g"] = {
 						i(43838),	-- Chuchu's Tiny Box of Horrors
@@ -1492,12 +1679,19 @@ _.Zones =
 					},
 				}),
 				q(13225, {	-- The Skybreaker
+					["coord"] = { 79.3, 72.8, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 31241 },	-- Marshal Ivalius
+					["sourceQuest"] = 13157,	-- The Crusaders' Pinnacle
 				}),
 				q(13292, {	-- The Solution Solution
 					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+					["provider"] = { "n", 30345 },	-- Chief Engineer Boltwrench
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13291,	-- Borrowed Technology
 				}),
-				q(13130,  {	-- The Stone That Started A Revolution
+				q(13130, {	-- The Stone That Started A Revolution
 					["coord"] = { 83.0, 73.0, 118 },
 					["provider"] = { "n", 30686 },	-- Crusade Architect Silas
 					["sourceQuests"] = {
@@ -1516,7 +1710,7 @@ _.Zones =
 					["provider"] = { "n", 29344 },	-- Lord-Commander Arete
 					["sourceQuest"] = 12806,	-- To the Rise with all Due haste!
 				}),
-				q(13043,  {	-- The Sum is Greater than the Parts (starts from item 42772, dr. terrible's "building a better flesh giant"
+				q(13043, {	-- The Sum is Greater than the Parts
 					["cr"] = 30409,	-- Apprentice Osterkilgr
 					["coord"] = { 34.0, 36.3, 118 },
 					["provider"] = { "i", 42772 },	-- Dr. Terrible's "Building a Better Flesh Giant"
@@ -1555,7 +1749,10 @@ _.Zones =
 					["sourceQuest"] = 13091,	-- The Art of Being a Water Terror
 				}),
 				q(13399, {	-- Time for Answers (A)
+					["coord"] = { 71.5, 37.6, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 32423 },	-- Matthias Lehner
+					["sourceQuest"] = 13398,	-- Where Dragons Fell
 				}),
 				q(13360, {	-- Time for Answers (H)
 					["coord"] = { 71.5, 37.6, 118 },
@@ -1564,8 +1761,10 @@ _.Zones =
 					["sourceQuest"] = 13359,	-- Where Dragons Fell
 				}),
 				q(13391, {	-- Time to Hide (A)
-					["provider"] = { "n", 31237 },	-- Matthias Lenher
+					["coord"] = { 53.8, 86.9, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 31237 },	-- Matthias Lehner
+					["sourceQuest"] = 13390,	-- A Voice in the Dark
 					["g"] = {
 						i(43885),	-- Scourgehammer
 						i(43918),	-- Shooter's Glory
@@ -1595,8 +1794,10 @@ _.Zones =
 					["sourceQuest"] = 13075,	-- The Boon of Remulos
 				}),
 				q(13403, {	-- Tirion's Gambit (A)
-					["provider"] = { "n", 31044 },	-- Highllord Tirion Fordring
+					["coord"] = { 79.7, 71.7, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 31044 },	-- Highlord Tirion Fordring
+					["sourceQuest"] = 13402,	-- Tirion's Help
 					["g"] = {
 						i(44745),	-- Blade of the Empty Void
 						i(44746),	-- Knife of the Tarnished Soul
@@ -1618,16 +1819,18 @@ _.Zones =
 				}),
 				q(13402, {	-- Tirion's Help
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 29799 },	-- Thassarian
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13401,	-- Knowledge is a Terrible Burden
 				}),
 				q(12806, {	-- To the Rise with all Due Haste!
 					["coord"] = { 42.8, 24.9, 118 },
 					["provider"] = { "n", 29343 },	-- Baron Sliver
 					["isBreadcrumb"] = true,
-					-- TODO: determine sourceQuest
-					--["sourceQuest"] = 
+					["sourceQuest"] = 12982,	-- Ebon Blade Prisoners
 				}),
 				q(13376, {	-- Total Ohmage: The Valley of Lost Hope!
-					-- TODO: possibly removed?
+					["u"] = 40,
 					["coord"] = { 54.0, 36.9, 118 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1643,7 +1846,6 @@ _.Zones =
 					["coord"] = { 44.6, 20.4, 118 },
 					["provider"] = { "n", 30002 },	-- Duke Lankral
 					["sourceQuest"] = 12951,	-- Let the Baron Know
-					-- TODO: verify sourceQuest. possibly after 12982 "Ebon Blade Prisoners"?
 				}),
 				q(13155, {	-- Vereth the Cunning
 					["coord"] = { 44.0, 24.5, 118 },
@@ -1679,7 +1881,7 @@ _.Zones =
 					["sourceQuest"] = 13239,	-- Volatility
 				}),
 				q(13381, {	-- Watts My Target
-					-- TODO:: possibly removed?
+					["u"] = 40,
 					["coord"] = { 54.0, 42.8, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 32444 },	-- Kibli Killohertz
@@ -1693,7 +1895,10 @@ _.Zones =
 					}
 				}),
 				q(13398, {	-- Where Dragons Fell (A)
+					["coord"] = { 71.5, 37.6, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 32423 },	-- Matthias Lehner
+					["sourceQuest"] = 13396,	-- Futility
 				}),
 				q(13359, {	-- Where Dragons Fell (H)
 					["coord"] = { 71.5, 37.6, 118 },
@@ -1714,6 +1919,9 @@ _.Zones =
 				}),
 				q(13290, {	-- Your Attention, Please
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 30344 },	-- High Captain Justin Bartlett
+					["description"] = "On the Skybreaker.",
+					["sourceQuest"] = 13231,	-- The Broken Front
 				}),
 			}),
 		}),
