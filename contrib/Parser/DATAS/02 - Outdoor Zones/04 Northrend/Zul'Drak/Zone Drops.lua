@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(121, {	-- Zul'Drak
-			n(0, {	-- Zone Drops
+			n(0, {		-- Zone Drops
 				i(48116, {	-- Gundrak Hatchling
 					["crs"] = { 29334 },	-- Gundrak Raptor
 				}),

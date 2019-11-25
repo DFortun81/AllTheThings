@@ -9,9 +9,6 @@ _.Zones =
 				p(641, {	-- Arctic Hare
 					["crs"] = { 62693 },
 				}),
-				p(234, {	-- Gundrak Hatchling
-					["crs"] = { 35400 },
-				}),
 				p(387, {	-- Snake
 					["crs"] = { 61142 },
 				}),
