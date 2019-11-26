@@ -13,10 +13,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(51745, {	-- A Smelly Solution
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(51832, {	-- Beat Around The Bush
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -236,6 +232,10 @@ _.Zones =
 					q(51687, {	-- A Smelly Solution
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+					}),
+					q(51745, {	-- A Smelly Solution
+						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
 					q(51576, {	-- Any Witch Way but Dead

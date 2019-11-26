@@ -1409,10 +1409,6 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(51745, {	-- A Smelly Solution
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
 				q(51832, {	-- Beat Around The Bush
 					["collectible"] = false,
 					["lvl"] = 120,
