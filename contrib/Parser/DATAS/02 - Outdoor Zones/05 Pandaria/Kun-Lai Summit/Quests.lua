@@ -257,6 +257,12 @@ _.Zones =
 				--q(31838),	-- Continue Your Training: Master Tsang
 				--q(31833),	-- Continue Your Training: Master Woo
 				--q(31836),	-- Continue Your Training: Master Yoon
+				q(57069, {	-- Cut Off the Heads
+					["lvl"] = 120,
+					["coord"] = { 60.0, 75.6, 379 },
+					["provider"] = { "n", 156391 },	-- Li Li Stormstout
+					["sourceQuest"] = 57068,	-- Kite Surveillance
+				}),
 				q(30593, {	-- Deanimate the Reanimated (A)
 					["provider"] = { "n", 59451 },	-- Mishka
 					["coord"] = { 53.6, 83.2, 379 },
@@ -475,6 +481,12 @@ _.Zones =
 						i(82493),	-- Yak Herder Helm
 					},
 				}),
+				q(57070, {	-- Mogu Massacre
+					["lvl"] = 120,
+					["coord"] = { 60.0, 75.6, 379 },
+					["provider"] = { "n", 156391 },	-- Li Li Stormstout
+					["sourceQuest"] = 57068,	-- Kite Surveillance
+				}),
 				q(31456, {	-- Muskpaw Ranch (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -492,6 +504,12 @@ _.Zones =
 				q(30467, {	-- My Son...
 					["provider"] = { "n", 59263 },	-- Merchant Shi
 					["coord"] = { 74.9, 88.9, 379 },
+				}),
+				q(57071, {	-- No Brew Left Behind
+					["lvl"] = 120,
+					["coord"] = { 59.9, 75.5, 379 },
+					["provider"] = { "n", 156390 },	-- Chen Stormstout
+					["sourceQuest"] = 57068,	-- Kite Surveillance
 				}),
 				--q(30600),	-- No Pack Left Behind
 				--q(30750),	-- Off the Wall!

@@ -462,6 +462,11 @@ _.ExpansionFeatures =
 					["sourceQuest"] = 56538,	-- Clans of the Mogu
 					["sourceQuest"] = 56771,	-- Time-Lost Warriors
 				}),
+				q(57068, {	-- Kite Surveillance
+					["coord"] = { 43.9, 4.9, 1530 },
+					["provider"] = { "n", 156297 },	-- Chen Stormstout
+					["sourceQuest"] = 57067,	-- Mogu at the Gates
+				}),
 				q(58460, {	-- Marshals of Madness
 					["coord"] = { 44.7, 73.8, 1530 },
 					["isDaily"] = true,
@@ -477,7 +482,6 @@ _.ExpansionFeatures =
 				}),
 				q(57067, {	-- Mogu at the Gates	-- showed up when the Warring Clans assault was up. is there a pre-req? 
 					["coord"] = { 44.7, 73.8, 1530 },
-					["isDaily"] = true,
 					["provider"] = { "n", 154444 },	-- Stormspeaker Qian
 				}),
 				q(58167, {	-- Preventative Measures
