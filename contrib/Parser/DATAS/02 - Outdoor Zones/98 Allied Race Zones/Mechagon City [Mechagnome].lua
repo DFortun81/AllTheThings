@@ -22,6 +22,7 @@ _.Zones =
 				q(58147, {	-- Stranger in a Strange Land
 					["maps"] = { 84 },	-- Stormwind
 					["coord"] = { 53.0, 15.2, 84 },
+					["races"] = { 37 },	-- Mechagnome
 					["provider"] = { "n", 133362 },	-- Ambassador Moorgard
 					["sourceQuest"] = 58146,	-- For the Alliance
 				}),
