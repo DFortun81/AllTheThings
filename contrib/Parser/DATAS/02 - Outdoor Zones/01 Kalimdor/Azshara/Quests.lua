@@ -232,17 +232,35 @@ _.Zones =
 					["coord"] = { 22.6, 51.4, 76 },
 					["sourceQuest"] = 3517,	-- Stealing Knowledge,
 				}),
+				q(3561, {	-- Delivery to Archmage Xylem
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 8587 },	-- Jediga
+					["sourceQuest"] = 3517,	-- Stealing Knowledge
+				}),
 				q(3542,  {	-- Delivery to Archmage Xylem
 					["u"] = 40,
 					["provider"] = { "n", 8587 },	-- Jediga
 					["coord"] = { 22.6, 51.4, 76 },
 					["sourceQuest"] = 3517,	-- Stealing Knowledge,
 				}),
+				q(3541, {	-- Delivery to Jes'rimon
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 8587 },	-- Jediga
+					["sourceQuest"] = 3517,	-- Stealing Knowledge
+				}),
 				q(3542,  {	-- Delivery to Jes'rimon
 					["u"] = 40,
 					["provider"] = { "n", 8587 },	-- Jediga
 					["coord"] = { 22.6, 51.4, 76 },
-					["sourceQuest"] = 3517,	-- Stealing Knowledge,
+					["sourceQuest"] = 3517,	-- Stealing Knowledge
+				}),
+				q(3518, {	-- Delivery to Magatha
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 8587 },	-- Jediga
+					["sourceQuest"] = 3517,	-- Stealing Knowledge
 				}),
 				q(3542,  {	-- Delivery to Magatha
 					["u"] = 40,

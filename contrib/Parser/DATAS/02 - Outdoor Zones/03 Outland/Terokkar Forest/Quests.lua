@@ -921,6 +921,11 @@ _.Zones =
 					}),
 				})),				
 				n(-168,  {	-- Other Quests
+					q(10871, {	-- Ally of the Netherwing
+						["u"] = 40,
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 22112 },	-- Karynaku
+					}),
 					q(10052,  {  -- Escape from Firewing Point!
 						["provider"] = { "n", 18760 },	-- Isla Starmane
 						["coord"] = { 73.9, 35.2, 108 },
@@ -939,6 +944,23 @@ _.Zones =
 							i(25918),	-- Blood-Guided Knife
 							i(25917),	-- Healer's Staff of the Forest
 							i(25916),	-- Terokkar Axe
+						},
+					}),
+					q(10925, {	-- Evil Draws Near (NYI - never left beta)
+						["u"] = 1,
+					}),
+					q(10178,  {	-- Find Spy To'gun
+						["u"] = 40,
+						["provider"] = { "n", 19496 },	-- Spy Grik'tha
+					}),
+					q(10164,  {	-- Greatfather Aldrimus
+						["u"] = 40,
+						["provider"] = { "n", 19698 },	-- Greatfather Aldrimus
+						["g"] = {
+							i(29341),	-- Auchenai Anchorite's Robe
+							i(29340),	-- Auchenai Monk's Tunic
+							i(29339),	-- Auchenai Tracker's Hauberk
+							i(29337),	-- The Exarch's Protector
 						},
 					}),
 					q(10027, {	-- Magical Disturbances
@@ -988,6 +1010,9 @@ _.Zones =
 						["coord"] = { 55.8, 53.8, 108 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
+					}),
+					q(10841, {	-- The Vengeful Harbinger
+						["u"] = 1,
 					}),
 					-- DUNGEON QUESTS
 					q(29582, {	-- Grek's Crazy Night
@@ -1075,6 +1100,11 @@ _.Zones =
 							un(2, i(29345)),	-- Haramad's Leg Wraps
 							un(2, i(29344)),	-- Haramad's Linked Chain Pantaloons
 						},
+					}),
+					q(10872, {	-- Zuluhed the Whacked
+						["u"] = 40,
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 22112 },	-- Karynaku
 					}),
 				}),
 			}),

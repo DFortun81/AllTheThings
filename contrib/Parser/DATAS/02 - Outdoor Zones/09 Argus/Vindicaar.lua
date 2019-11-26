@@ -139,7 +139,7 @@ _.Zones =
 						},
 					}),
 					n(-206, {	-- Paragon
-						q(48973, {	-- Paragon of Argussian Reach
+						q(48976, {	-- Supplies From the Argussian Reach
 							["provider"] = { "n", 127151 },	-- Toraan the Revered
 							["repeatable"] = true,
 							["g"] = {
@@ -148,9 +148,8 @@ _.Zones =
 								}),
 							},
 						}),
-						q(48977, {	-- Paragon of the Army of the Light
+						q(48977, {	-- Supplies From the Army of the Light
 							["repeatable"] = true,
-							["altQuests"] = { 48974 },	-- Supplies From the Army of the Light
 							["provider"] = { "n", 127120 },	-- Vindicator Jaelaana
 							["g"] = {
 								i(152923, {	-- Gleaming Footlocker

@@ -300,6 +300,16 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
+				q(9587, {	-- Dark Tidings (A)
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "i", 23890 },	-- Ominous Letter
+				}),
+				q(9588, {	-- Dark Tidings (H)
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 23892 },	-- Ominous Letter
+				}),
 				q(9398,  {	-- Deadly Predators
 					["coord"] = { 23.3, 38.1, 100 },
 					["races"] = ALLIANCE_ONLY,
@@ -516,6 +526,12 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(10756, {	-- Grand Master Rohok
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3230 },	-- Nazgrel
+					["sourceQuest"] = 10755,	-- Entry Into the Citadel
+				}),
 				q(10834, {  -- Grillok "Darkeye"
 					["coord"] = { 61.6, 81.8, 100 },
 					["races"] = HORDE_ONLY,
@@ -533,6 +549,11 @@ _.Zones =
 					["u"] = 40,
 					["classes"] = { 11 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(9608, {	-- Heart of Rage
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 17558 },	-- Caza'rez
 				}),
 				q(9361,  {	-- Helboar, the Other White Meat
 					["coord"] = { 49.2, 74.8, 100 },
@@ -567,9 +588,15 @@ _.Zones =
 						i(40476),	-- Insignia of the Alliance
 					},
 				}),
+				q(13411, {	-- Hellfire Fortifications (H, DK)
+					["races"] = HORDE_ONLY,
+					["classes"] = { 6 },	-- Death Knight
+					["provider"] = { "n", 18267 },	-- Battlecryer Blackeye
+				}),
 				q(13409, {	-- Hellfire Fortifications (H)
 					["coord"] = { 55.9, 39.2, 100 },
 					["races"] = HORDE_ONLY,
+					["classes"] = exclude({ 6 }, ALL_CLASSES),	-- All but DK
 					["provider"] = { "n", 18267 },	-- Battlecryer Blackeye
 					["sourceQuests"] = { 10124 },	-- Forward Base: Reaver's Fall
 					["g"] = {
@@ -611,6 +638,12 @@ _.Zones =
 				q(10764, {	-- Hotter than Hell (removed, old BT key questline)
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(10758, {	-- Hotter than Hell
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16583 },	-- Rohok
+					["sourceQuest"] = 10757,	-- Rohok's Request
 				}),
 				q(10238, {	-- How to Serve Goblins
 					["coord"] = { 51.3, 30.5, 100 },
@@ -963,6 +996,12 @@ _.Zones =
 						{ "n", 16576 },	-- Overlord Hun Maimfist
 					},
 				}),
+				q(10757, {	-- Rohok's Request
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 16583 },	-- Rohok
+					["sourceQuest"] = 10756,	-- Rohok's Request
+				}),
 				q(9430,  {	-- Sha'naar Relics
 					["coord"] = { 23.4, 36.5, 100 },
 					["races"] = ALLIANCE_ONLY,
@@ -1037,6 +1076,17 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 19736 },	-- Althen the Historian
 					["sourceQuest"] = 10229,	-- Decipher the Tome
+				}),
+				q(9590, {	-- The Blood is Life
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 17558 },	-- Caza'rez
+					["g"] = { -- NOTE: rewards are available in a different quest
+						i(25701),	-- Breastplate of Retribution
+						i(25711),	-- Deadly Borer Leggings
+						i(25710),	-- Moonkin Headdress
+						i(25702),	-- Scaled Legs of Ruination
+					},
 				}),
 				q(9912,  {	-- The Cenarion Expedition
 					["coord"] = { 16.0, 52.1, 100 },
@@ -1334,6 +1384,17 @@ _.Zones =
 						i(29943),	-- Legionnaire's Studded Helm
 						i(29945),	-- Magistrate's Greaves
 						i(29931),	-- Phantasmal Headdress
+					},
+				}),
+				q(9572, {	-- Weaken the Ramparts
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 17493 },	-- Stone Guard Stok'ton
+					["g"] = { -- NOTE: rewards now available from a different quest
+						i(25716),	-- Handguards of Precision
+						i(25715),	-- Jade Warrior Pauldrons
+						i(25718),	-- Mantle of Magical Might
+						i(25717),	-- Sure-Step Boots
 					},
 				}),
 				q(10079, {	-- When This Mine's a-Rockin'

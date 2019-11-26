@@ -5,19 +5,23 @@ _.Toys =
 {
 	n(-2,  { 	-- Vendor
 		i(163211),		-- Akunda's Firesticks
-		i(169275),		-- Alliance War Banner
-		i(169278),		-- Alliance War Standard
+		i(169275, {		-- Alliance War Banner
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(169278, {		-- Alliance War Standard
+			["races"] = ALLIANCE_ONLY,
+		}),
 		i(168012),		-- Apexis Focusing Shard
 		i(46843),		-- Argent Crusader's Banner
 		i(147537, { 	-- A Tiny Set of Warglaives -- demon hunter class hall
-			["classes"] = {12},	-- Demon Hunter
+			["classes"] = { 12 },	-- Demon Hunter
 		}),
 		i(168014),		-- Banner of the Burning Blade
 		i(120857, {		-- Barrel of Bandanas -- only rogue
-			["classes"] = {4},	-- Rogue
+			["classes"] = { 4 },	-- Rogue
 		}),
 		i(151877, { 	-- Barrel of Eyepatches -- only rogue
-			["classes"] = {4},	-- Rogue
+			["classes"] = { 4 },	-- Rogue
 		}),
 		i(166743),		-- Blight Bomber
 		i(113096), 		-- Bloodmane Charm
@@ -32,7 +36,7 @@ _.Toys =
 		i(163200),		-- Cursed Spyglass
 		i(129057),		-- Dalaran Disc
 		i(137294, {		-- Dalaran Initiates' Pin -- only Mage
-			["classes"] = {8},	-- Mage
+			["classes"] = { 8 },	-- Mage
 		}),
 		i(131812),		-- Darkshard Fragment
 		i(45021),		-- Darnassus Banner (Alliance)
@@ -57,10 +61,14 @@ _.Toys =
 		i(159749), 		-- Haw'li's Hot & Spicy Chili
 		i(119210), 		-- Hearthstone Board
 		i(140325),		-- Home Made Party Mask
-		i(169276),		-- Horde War Banner
-		i(169277),		-- Horde War Standard
+		i(169276, {		-- Horde War Banner
+			["races"] = HORDE_ONLY,
+		}),
+		i(169277, {		-- Horde War Standard
+			["races"] = HORDE_ONLY,
+		}),
 		i(136855, {		-- Hunter's Call -- only Hunter
-			["classes"] = {3},	-- Hunter
+			["classes"] = { 3 },	-- Hunter
 		}),
 		i(163705),		-- Imaginary Gun
 		i(127707),		-- Indestructible Bone
@@ -84,11 +92,13 @@ _.Toys =
 		i(70159), 		-- Mylune's Call
 		i(140231),		-- Narcissa's Mirror
 		i(136849, {		-- Nature's Beacon -- only Druid
-			["classes"] = {11},	-- Druid
+			["classes"] = { 11 },	-- Druid
 		}),
 		i(134004),		-- Noble's Eternal Elementium Signet
 		i(45014),		-- Orgrimmar Banner (Horde)
-		un(31, i(158149)),	-- Overtuned Corgi Goggles (WoW Anniversary)
+		i(158149, {		-- Overtuned Corgi Goggles
+			["u"] = 31,	-- WoW Anniversary
+		}),
 		i(89869), 		-- Pandaren Scarecrow
 		i(163210),		-- Party Totem
 		i(130158),		-- Path of Elothir
@@ -96,16 +106,16 @@ _.Toys =
 		i(115472),		-- Permanent Time Bubble (Alliance)
 		i(127864),		-- Personal Spotlight
 		i(140309),		-- Prismatic Bauble
-		i(136934, { 	-- Raging Elemental Stone -- only Shaman
-			["classes"] = {7},	-- Shaman
+		i(136934, { 	-- Raging Elemental Stone
+			["classes"] = { 7 },	-- Shaman
 		}),
 		i(44820),		-- Red Ribbon Pet Leash
 		i(164983),		-- Rhan'ka's Escape Plan
 		i(37460),		-- Rope Pet Leash
 		i(122283), 		-- Rukhmar's Sacred Memory
 		i(169108),		-- Rustbolt Banner
-		i(136927, {		-- Scarlet Confessional Book -- only Priest
-			["classes"] = {5},	-- Priest
+		i(136927, {		-- Scarlet Confessional Book
+			["classes"] = { 5 },	-- Priest
 		}),
 		i(45015),		-- Sen'jin Banner (Horde)
 		i(97942), 		-- Sen'jin Spirit Drum
@@ -121,12 +131,12 @@ _.Toys =
 		i(150743),		-- Surviving Kalimdor (Alliance)
 		i(170204),		-- Symbol of Gral
 		i(130157),		-- Syxsehnz Rod
-		i(136935, {		-- Tadpole Cloudseeder -- only Shaman
-			["classes"] = {7},	-- Shaman
+		i(136935, {		-- Tadpole Cloudseeder
+			["classes"] = { 7 },	-- Shaman
 		}),
 		i(130170),		-- Tear of the Green Aspect
-		i(136928, {		-- Thaumaturgist's Orb -- only Priest
-			["classes"] = {5},	-- Priest
+		i(136928, {		-- Thaumaturgist's Orb
+			["classes"] = { 5 },	-- Priest
 		}),
 		i(130151),		-- The "Devilsaur" Lunchbox
 		i(150745),		-- The Azeroth Campaign (Horde)
@@ -139,16 +149,16 @@ _.Toys =
 		i(130191), 		-- Trapped Treasure Chest Kit
 		i(45016),		-- Undercity Banner (Horde)
 		i(136937, { 	-- Vol'jin's Serpent Totem -- only Shaman
-			["classes"] = {7},	-- Shaman
+			["classes"] = { 7 },	-- Shaman
 		}),
 		i(129367),		-- Vrykul Toy Boat Kit
 		i(150744),		-- Walking Kalimdor with the Earthmother (Horde)
 		i(138490, {		-- Waterspeaker's Totem -- only Shaman
-			["classes"] = {7},	-- Shaman
+			["classes"] = { 7 },	-- Shaman
 		}),
 		i(131814),		-- Whitewater Carp
 		i(97919, {		-- Whole-Body Shrinka'
-			["description"] = "Use this toy when you encounter a mob you need to dps slowly, such as Exarch Maladaar in Auchenai Crypts.",
+			["description"] = "Use this toy when you encounter a mob you need to DPS slowly, such as Exarch Maladaar in Auchenai Crypts.",
 		}),
 		i(119212),		-- Winning Hand
 		i(165021),		-- Words of Akunda

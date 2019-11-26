@@ -16,7 +16,6 @@ _.Zones =
 						crit(5, {	-- Fumblub Gearwind
 							["achievementID"] = 2257,	-- Frostbitten
 						}),
-					--	ach(2257, crit(5)),	-- Frostbitten, Fumblub Gearwind
 						i(44666),	-- Fumblub's Seat Cushion
 						i(44663),	-- Abandoned Adventurer's Satchel
 					},

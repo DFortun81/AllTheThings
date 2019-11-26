@@ -14,15 +14,35 @@ _.Zones =
 					},
 					["isWeekly"] = true,
 					["g"] = {
-						i(164579, {	-- Cache of Uldir Treasures [Normal Quality]
+						i(164579, {	-- Cache of Uldir Treasures (Normal Quality)
 							["u"] = 2,
 							["sym"] = {{"select", "instanceID", 1031}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
-						i(165724, {	-- Cache of Dazar'alor Treasures [Normal Quality]
+						i(165724, {	-- Cache of Dazar'alor Treasures (Normal Quality)
 							["u"] = 2,
 							["sym"] = {{"select", "instanceID", 1176}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
-						i(168269, {	-- Cache of Palace Treasures [Normal Quality]
+						i(168269, {	-- Cache of Palace Treasures (Normal Quality)
+							["sym"] = {{"select", "instanceID", 1179}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+						}),
+					},
+				}),
+				q(53033, {	-- A Frozen Path Through Time (WotLK Timewalking)
+					["providers"] = {
+						{ "n", 144384 },	-- Chronicler Shoopa
+						{ "n", 144383 },	-- Chronicler Toopa
+					},
+					["isWeekly"] = true,
+					["g"] = {
+						i(164579, {	-- Cache of Uldir Treasures (Normal Quality)
+							["u"] = 2,
+							["sym"] = {{"select", "instanceID", 1031}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+						}),
+						i(165724, {	-- Cache of Dazar'alor Treasures (Normal Quality)
+							["u"] = 2,
+							["sym"] = {{"select", "instanceID", 1176}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+						}),
+						i(168269, {	-- Cache of Palace Treasures (Normal Quality)
 							["sym"] = {{"select", "instanceID", 1179}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 					},
@@ -34,15 +54,15 @@ _.Zones =
 					},
 					["isWeekly"] = true,
 					["g"] = {
-						i(164579, {	-- Cache of Uldir Treasures [Normal Quality]
+						i(164579, {	-- Cache of Uldir Treasures (Normal Quality)
 							["u"] = 2,
 							["sym"] = {{"select", "instanceID", 1031}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
-						i(165724, {	-- Cache of Dazar'alor Treasures [Normal Quality]
+						i(165724, {	-- Cache of Dazar'alor Treasures (Normal Quality)
 							["u"] = 2,
 							["sym"] = {{"select", "instanceID", 1176}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
-						i(168269, {	-- Cache of Palace Treasures [Normal Quality]
+						i(168269, {	-- Cache of Palace Treasures (Normal Quality)
 							["sym"] = {{"select", "instanceID", 1179}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
 					},

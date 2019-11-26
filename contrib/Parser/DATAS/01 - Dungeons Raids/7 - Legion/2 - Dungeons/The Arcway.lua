@@ -16,6 +16,10 @@ _.Instances = { tier(7, {	-- Legion
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
+				q(43638, {	-- The Arcway: Silver Serpent
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 				q(43641, {	-- The Arcway: Wandering Plague
 					["isWorldQuest"] = true,
 					["lvl"] = 110,

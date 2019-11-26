@@ -225,35 +225,18 @@ _.Zones =
 						ach(12741),	-- Giving a Scrap
 					},
 				}),
-				q(51488, {	-- Archived Knowledge
-					["sourceQuests"] = { 51487 },	-- Searching for Answers 
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 137871 },	-- Taelia
-					-- NOTE: This might have to move to a different map. - Crieve
-				}),
 				q(54947, {	-- A Small Team
 					["provider"] = { "n", 151100 },	-- Gila Crosswires
 					["coord"] = { 67.3, 15.7, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 54946,	-- Report to Gila
 				}),
-		--[[	Listed under Expansion Features>Island>Quests
-				q(53436, { 	-- Azerite for the Alliance
-					["isWeekly"] = true,
-					["coord"] = { 66.6, 35.5, 1161 },
+				q(51488, {	-- Archived Knowledge
+					["sourceQuests"] = { 51487 },	-- Searching for Answers 
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 131290 },	-- Flynn
-					["g"] = {
-						i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
-						i(166999),	-- Treasure Map
-						i(169764, {	-- Worldvein Intelligence Reports
-							["g"] = {
-								q(56533), 	-- Worldvein Rumors
-							},
-						}),
-						i(170150),	-- Map to the Last WOrldvein
-					},
-				}),--]]
+					["provider"] = { "n", 137871 },	-- Taelia
+					-- NOTE: This might have to move to a different map. - Crieve
+				}),
 				q(50789, {	-- Clear the Air
 					["sourceQuests"] = { 50787 },	-- Make Our Case
 					["coord"] = { 49.9, 87.3, 1161 },
@@ -283,6 +266,12 @@ _.Zones =
 					["coord"] = { 49.9, 87.3, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 135259 },	-- Taelia
+				}),
+				q(54495, {	-- Expanding Our Influence
+					["lvl"] = 120,
+					["coord"] = { 69.0, 24.7, 1161 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 135446 },	-- Vindicator Jaelaana
 				}),
 				q(52128, { 	-- Ferry Pass
 					["sourceQuests"] = { 47186 },	-- Sanctum of Sages
@@ -321,6 +310,14 @@ _.Zones =
 					["sourceQuests"] = { 50795 },	-- Prepare for Trouble
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 135335 },	-- Proudmoore Guard
+				}),
+				q(53847, {	-- On Whispered Winds
+					["coord"] = { 70.7, 26.8, 1161 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 152000 },	-- Dori'thur
+					["g"] = {
+						spell(290834),	-- Blessing of the Night Warrior
+					},
 				}),
 				q(54144, {	-- Orders from Azshara
 					["sourceQuest"] = 54141,	-- The Azsharan Medallion
@@ -394,9 +391,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 122370 },	-- Cyrus Crestfall
 				}),
-				i(165605, {	-- The Azsharan Medallion
-					["description"]	= "To get the quest item, you need to kill Naga while the world quest 'Naga Attack!' is up.  Complete the questline to receive the Twitching Eyeball toy.",
+				q(54141, {	-- The Azsharan Medallion
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "i", 165605 },	-- The Azsharan Medallion
+					["description"]	= "To get the quest item, you need to kill Naga while the world quest 'Naga Attack!' is up.  Complete the questline to receive the Twitching Eyeball toy.",
 					["crs"] = {
 						144778,	-- Darktide Champion
 						144769,	-- Darktide Sorceress
@@ -404,11 +402,6 @@ _.Zones =
 						144816,	-- Darktide Slaver
 						144777,	-- Darktide Marauder
 						144780,	-- Darktide Brute
-					},
-					["g"] = {
-						q(54141, {	-- The Azsharan Medallion
-							["races"] = ALLIANCE_ONLY,
-						}),
 					},
 				}),
 				q(54088, {	-- The Legend of Mechagon

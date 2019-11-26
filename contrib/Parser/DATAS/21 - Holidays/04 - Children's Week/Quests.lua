@@ -292,6 +292,7 @@ _.Holidays =
 						["sourceQuests"] = {
 							10943, 	-- Children's Week
 						},
+						["isYearly"] = true,
 						["coords"] = {
 							{ 44.17, 58.84, 108 },	-- Path to Ring
 							{ 40.76, 60.39, 108 },	-- Tunnel Exit
@@ -935,6 +936,7 @@ _.Holidays =
 						["u"] = 20,				-- Children's Week Filter
 						["provider"] = { "n", 34365 },			-- Orphan Matron Aria
 						["description"] = "If you are missing this quest resummon your Oracle child to pick it up.",
+						["isYearly"] = true,
 						["coords"] = {
 							{ 49.37, 63.26, 125 },	-- Orphan Matron Aria
 						},
@@ -1358,6 +1360,7 @@ _.Holidays =
 						["sourceQuests"] = {
 							13926,	-- Little Orphan Roo Of The Oracles
 						},
+						["isYearly"] = true,
 						["coords"] = {
 							{ 52.93, 44.93, 116 },	-- Path to Grizzlemaw
 							{ 51.69, 40.74, 116 },	-- Roo taken to Grizzlemaw

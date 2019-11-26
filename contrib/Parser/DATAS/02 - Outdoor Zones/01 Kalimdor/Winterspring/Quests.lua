@@ -94,6 +94,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 5054,	-- Ursius of the Shardtooth
 				}),
+				q(975,   {	-- Cache of Mau'ari
+					["u"] = 40,
+					["provider"] = { "n", 10307 },	-- Witch Doctor Mau'ari
+					["sourceQuest"] = 969,	-- Luck Be With You
+				}),
 				q(28516, {	-- Centuries of Suffering
 					["u"] = 40,
 				}),
@@ -158,6 +163,10 @@ _.Zones =
 						i(67212),	-- Bear Hunter's Belt
 						i(67196),	-- Witch Doctor's Spaulders
 					},
+				}),
+				q(6030, {	-- Duke Nicholas Zverenhoff
+					["u"] = 40,
+					["provider"] = { "n", 10431 },	-- Gregor Greystone
 				}),
 				q(28630, {	-- Echo Three
 					["provider"] = { "n", 10305 },	-- Umi Rumplesnicker
@@ -269,6 +278,10 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 10918 },	-- Lorax
 					["requireSkill"] = 164,	-- Blacksmithing
+				}),
+				q(969,   {	-- Luck Be With You
+					["u"] = 40,
+					["provider"] = { "n", 10307 },	-- Witch Doctor Mau'ari
 				}),
 				q(28839, {	-- Magic Prehistoric
 					["coord"] = { 57.1, 75.4, 83 },
@@ -391,6 +404,10 @@ _.Zones =
 						i(67226),	-- Corpse Dragger's Shield
 					},
 				}),
+				q(5601, {	-- Sister Pamela
+					["u"] = 40,
+					["provider"] = { "n", 11629 },	-- Jessica Redpath
+				}),
 				q(5306,  {	-- Snakestone of the Shadow Huntress
 					["u"] = 40,
 					["provider"] = { "n", 11192 },	-- Kilram
@@ -484,6 +501,17 @@ _.Zones =
 						})),
 					},
 				}),
+				q(6029, {	-- The Everlook Report
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10431 },	-- Gregor Greystone
+				}),
+				q(5123, {	-- The Final Piece
+					["u"] = 40,
+					["crs"] = { 10738 },	-- Crudely-written Log
+					["provider"] = { "i", 12842 },	-- Crudely-written Log
+					["sourceQuest"] = 5087,	-- Winterfall Runners
+				}),
 				q(28471, {	-- The Final Piece
 					["crs"] = { 10738 },	-- High Chief Winterfall
 					["provider"] = { "i", 12842 },	-- Crudely-Written Log
@@ -526,6 +554,11 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 9298 },	-- Donova Snowden
 					["sourceQuest"] = 3908,	-- It's a Secret to Everybody
+				}),
+				q(5082, {	-- Threat of the Winterfall
+					["u"] = 40,
+					["provider"] = { "n", 9298 },	-- Donova Snowden
+					["sourceQuest"] = 6603,	-- Trouble in Winterspring!
 				}),
 				q(28460, {	-- Threat of the Winterfall
 					["provider"] = { "n", 9598 },	-- Donova Snowden
@@ -605,6 +638,10 @@ _.Zones =
 						un(2, i(16622)),	-- Thornflinger
 					},
 				}),
+				q(8464, {	-- [DEPRECATED]Winterfall Activity
+					["u"] = 40,
+					["provider"] = { "n", 11556 },	-- Salfa
+				}),
 				q(5083,  {	-- Winterfall Firewater
 					["u"] = 40,
 					["provider"] = { "i", 12771 },	-- Empty Firewater Flask
@@ -614,6 +651,10 @@ _.Zones =
 					["provider"] = { "n", 10618 },	-- Rivern Frostwind
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
+				}),
+				q(8471, {	-- Winterfall Ritual Totem
+					["u"] = 40,
+					["provider"] = { "i", 20742 },	-- Winterfall Ritual Totem
 				}),
 				q(28469, {	-- Winterfall Runners
 					["provider"] = { "n", 9298 },	-- Donova Snowden
@@ -632,6 +673,11 @@ _.Zones =
 						i(67190),	-- Ice Avatar Legguards
 						i(67207),	-- Winterwater Cloak
 					},
+				}),
+				q(5128, {	-- Words of the High Chief
+					["u"] = 40,
+					["provider"] = { "n", 9298 },	-- Donova Snowden
+					["sourceQuest"] = 5123,	-- The Final Piece
 				}),
 				q(28472, {	-- Words of the High Chief
 					["provider"] = { "n", 9298 },	-- Donova Snowden

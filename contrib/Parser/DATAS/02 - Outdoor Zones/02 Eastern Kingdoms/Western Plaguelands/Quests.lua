@@ -44,6 +44,17 @@ _.Zones =
 						i(131630),	-- Treads of Renewed Growth
 					},
 				}),
+				q(6390, {	-- A Plague Upon Thee
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 177491 },	-- Termite Barrel
+					["sourceQuest"] = 5902,	-- A Plague Upon Thee
+				}),
+				q(5153, {	-- A Strange Historian
+					["u"] = 40,
+					["provider"] = { "n", 10927 },	-- Marlene Redpath
+					["sourceQuest"] = 5152,	-- Auntie Marlene
+				}),
 				q(27089, {	-- Ace in the Hole
 					["provider"] = { "n", 44451 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 49.0, 63.7, 22 },
@@ -136,6 +147,21 @@ _.Zones =
 						27201,	-- Val'kyr Incursion
 					},
 				}),
+				q(5401, {	-- Argent Dawn Commission
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 10840 },	-- Argent Officer Pureheart
+					["g"] = {
+						un(2, i(12846)),	-- Argent Dawn Commission
+					},
+				}),
+				q(5503, {	-- Argent Dawn Commission
+					["u"] = 40,
+					["provider"] = { "n", 11039 },	-- Duke Nicholas Zverenhoff
+					["g"] = {
+						un(2, i(12846)),	-- Argent Dawn Commission
+					},
+				}),
 				q(27199, {	-- Ashes to Ashes (A)
 					["provider"] = { "n", 44453 },	-- Thassarian
 					["coord"] = { 39.9, 69.4, 22 },
@@ -153,6 +179,22 @@ _.Zones =
 					["coord"] = { 42.1, 14.9, 22 },
 					["sourceQuest"] = 27153,	-- The Good People of Hearthglen
 				}),
+				q(5021, {	-- Better Late Than Never
+					["u"] = 40,
+					["provider"] = { "n", 10778 },	-- Janice Felstone
+				}),
+				q(5022, {	-- Better Late Than Never (A)
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 175894 },	-- Janice's Parcel
+					["sourceQuest"] = 5021,	-- Better Late Than Never
+				}),
+				q(5023, {	-- Better Late Than Never (H)
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 175894 },	-- Janice's Parcel
+					["sourceQuest"] = 5021,	-- Better Late Than Never
+				}),
 				q(27202, {	-- Brother Against Brother
 					["provider"] = { "n", 45165 },	-- Thurman Grant
 					["coord"] = { 39.8, 69.7, 22 },
@@ -164,6 +206,14 @@ _.Zones =
 						i(62211),	-- Shoulderwraps of the Enthralled
 						i(62210),  -- Pack Leader's Band
 						i(131655),	-- Bracer of Grievance
+					},
+				}),
+				q(5210, {	-- Brother Carlin
+					["u"] = 40,
+					["provider"] = { "n", 10667 },	-- Chromie
+					["sourceQuests"] = {
+						5168,	-- Heroes of Darrowshire
+						5154,	-- The Annals of Darrowshire
 					},
 				}),
 				q(27163, {	-- Brute Strength (A)
@@ -218,10 +268,19 @@ _.Zones =
 						un(2, i(12844)),	-- Argent Dawn Valor Token -- Removed in Patch 4.0.3
 					},
 				}),
+				q(4972, {	-- Counting Out Time
+					["u"] = 40,
+					["provider"] = { "n", 10667 },	-- Chromie
+					["sourceQuest"] = 4971,	-- A Matter of Time
+				}),
 				q(27054, {	-- Desperate Acts
 					["provider"] = { "n", 44454 },	-- Field Agent Kaartish
 					["coord"] = { 49.2, 54.9, 22 },
 					["sourceQuest"] = 27057,	-- Return to the Stead
+				}),
+				q(5382, {	-- Doctor Theolen Krastinov, the Butcher
+					["u"] = 40,
+					["provider"] = { "n", 11216 },	-- Eva Sarkhoff
 				}),
 				q(27157, {	-- Drudges... <Sigh>
 					["provider"] = { "n", 45157 },	-- Lieutenant Myner
@@ -308,6 +367,11 @@ _.Zones =
 					["classes"] = { 2 },	-- Paladin
 --						["sourceQuests"] = {  },	--
 				}),
+				q(5515, {	-- Krastinov's Bag of Horrors
+					["u"] = 40,
+					["provider"] = { "n", 11216 },	-- Eva Sarkhoff
+					["sourceQuest"] = 5382,	-- Doctor Theolen Krastinov, the Butcher
+				}),
 				q(27000, {	-- Learning the Ropes
 					["provider"] = { "n", 11616 },	-- Nathaniel Dumah
 					["coord"] = { 48.1, 32.3, 22 },
@@ -323,12 +387,21 @@ _.Zones =
 						27084,	-- The Farmers' Militia
 					},
 				}),
+				q(5142, {	-- Little Pamela
+					["u"] = 40,
+					["provider"] = { "n", 10927 },	-- Marlene Redpath
+				}),
 				q(5060,  {	-- Locked Away
 					["u"] = 40,
 					["g"] = {
 						un(2, i(13474)),	-- Farmer Dalson's Shotgun
 						un(2, i(13475)),	-- Dalson Family Wedding Ring
 					},
+				}),
+				q(5507, {	-- Mantles of the Dawn
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 10857 },	-- Argent Quartermaster Lightspark
 				}),
 				q(27017, {	-- Memories from a Lost Past
 					["provider"] = { "n", 44458 },	-- Del Gahrron
@@ -361,6 +434,10 @@ _.Zones =
 						un(2, i(15801)),	-- Valiant Shortsword
 					},
 				}),
+				q(5058, {	-- Mrs. Dalson's Diary
+					["u"] = 40,
+					["provider"] = { "o", 175926 },	-- Mrs. Dalson's Diary
+				}),
 				q(26935, {	-- Northridge Lumber Mill
 					["provider"] = { "n", 44454 },	-- Field Agent Kaartish
 					["coord"] = { 49.2, 54.9, 22 },
@@ -371,6 +448,29 @@ _.Zones =
 					["provider"] = { "n", 44472 },	-- Kelly Dumah
 					["coord"] = { 48.4, 31.9, 22 },
 					["sourceQuest"] = 27013,	-- Too Close for Comfort
+				}),
+				q(5230, {	-- Return to the Bulwark
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 176361 },	-- Scourge Cauldron
+				}),
+				q(5232, {	-- Return to the Bulwark
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 177289 },	-- Scourge Cauldron
+					["sourceQuest"] = 5231,	-- Target: Dalson's Tears
+				}),
+				q(5234, {	-- Return to the Bulwark
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 176393 },	-- Scourge Cauldron
+					["sourceQuest"] = 5233,	-- Target: Writhing Haunt
+				}),
+				q(5236, {	-- Return to the Bulwark
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 176392 },	-- Scourge Cauldron
+					["sourceQuest"] = 5235,	-- Target: Gahrron's Withering
 				}),
 				q(27057, {	-- Return to the Stead
 					["coord"] = { 62.5, 58.5, 22 },
@@ -448,6 +548,11 @@ _.Zones =
 					["classes"] = { 2 },	-- Paladin
 --						["sourceQuests"] = {  },	--
 				}),
+				q(5465, {	-- Soulbound Keepsake
+					["u"] = 40,
+					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered
+					["sourceQuest"] = 5464,	-- Menethil's Gift
+				}),
 				q(27055, {	-- Students of Krastinov
 					["provider"] = { "n", 44454 },	-- Field Agent Kaartish
 					["coord"] = { 49.2, 54.9, 22 },
@@ -498,11 +603,21 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27169,	-- Uther's Blessing
 				}),
+				q(5154, {	-- The Annals of Darrowshire
+					["u"] = 40,
+					["provider"] = { "n", 10667 },	-- Chromie
+					["sourceQuest"] = 5153,	-- A Strange Historian
+				}),
 				q(27158, {	-- The Battle for Andorhal
 					["provider"] = { "n", 10838 },	-- Commander Ashlam Valorfist
 					["coord"] = { 42.6, 84.0, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for "Scourge First... Horde Later"
+				}),
+				q(5721, {	-- The Battle of Darrowshire
+					["u"] = 40,
+					["provider"] = { "n", 10667 },	-- Chromie
+					["sourceQuest"] = 5941,	-- Return to Chromie
 				}),
 				q(27197, {	-- The Battle Resumes! (A)
 					["provider"] = { "n", 45012 },	-- Durnt Brightfalcon
@@ -525,6 +640,11 @@ _.Zones =
 						27198,	-- Supporting the Troops
 					},
 				}),
+				q(5462, {	-- The Dying, Ras Frostwhisper
+					["u"] = 40,
+					["provider"] = { "n", 11286 },	-- Magistrate Marduke
+					["sourceQuest"] = 5461,	-- The Human, Ras Frostwhisper
+				}),
 				q(27161, {	-- The Endless Flow (A)
 					["provider"] = { "n", 44467 },	-- Lang Loosegrip
 					["coord"] = { 41.2, 70.0, 22 },
@@ -545,6 +665,11 @@ _.Zones =
 					["provider"] = { "n", 45147 },	-- Daria L'Rayne
 					["coord"] = { 42.1, 14.9, 22 },
 					["sourceQuest"] = 27152,	-- Unusual Behavior... Even For Gnolls
+				}),
+				q(5461, {	-- The Human, Ras Frostwhisper
+					["u"] = 40,
+					["provider"] = { "n", 11286 },	-- Magistrate Marduke
+					["sourceQuest"] = 5384,	-- Kirtonos the Herald
 				}),
 				q(5344,  {	-- The Last Barov
 					["u"] = 40,
@@ -598,6 +723,15 @@ _.Zones =
 						i(131641),	-- Andorhal Chain Leggings
 					},
 				}),
+				q(4984, {	-- The Wildlife Suffers Too
+					["u"] = 40,
+					["provider"] = { "n", 10739 },	-- Mulgris Deepriver
+				}),
+				q(4985, {	-- The Wildlife Suffers Too
+					["u"] = 40,
+					["provider"] = { "n", 10739 },	-- Mulgris Deepriver
+					["sourceQuest"] = 4984,	-- The Wildlife Suffers Too
+				}),
 				q(27172, {	-- The Writhing Haunt
 					["provider"] = { "n", 10838 },	-- Commander Ashlam Valorfist
 					["coord"] = { 42.6, 84.0, 22 },
@@ -649,6 +783,20 @@ _.Zones =
 					["g"] = {
 						un(2, i(13473)),	-- Felstone Good Luck Charm
 					},
+				}),
+				q(6004, {	-- Unfinished Business
+					["u"] = 40,
+					["provider"] = { "n", 11610 },	-- Kirsta Deepshadow
+				}),
+				q(6023, {	-- Unfinished Business
+					["u"] = 40,
+					["provider"] = { "n", 11610 },	-- Kirsta Deepshadow
+					["sourceQuest"] = 6004,	-- Unfinished Business
+				}),
+				q(6025, {	-- Unfinished Business
+					["u"] = 40,
+					["provider"] = { "n", 11610 },	-- Kirsta Deepshadow
+					["sourceQuest"] = 6023,	-- Unfinished Business
 				}),
 				q(27152, {	-- Unusual Behavior... Even For Gnolls
 					["provider"] = { "n", 45147 },	-- Daria L'Rayne

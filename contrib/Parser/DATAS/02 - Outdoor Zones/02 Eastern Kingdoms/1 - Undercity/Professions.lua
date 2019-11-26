@@ -69,7 +69,9 @@ _.Zones =
 							["requireSkill"] = 356,	-- Fishing
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								ach(5850, crit(1)),	-- Fish or Cut Bait: Undercity
+								crit(1, {	-- Fish Head
+									["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -85,7 +87,9 @@ _.Zones =
 							["requireSkill"] = 356,	-- Fishing
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								ach(5850, crit(3)),	-- Fish or Cut Bait: Undercity
+								crit(3, {	-- Like Pike?
+									["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -101,7 +105,9 @@ _.Zones =
 							["requireSkill"] = 356,	-- Fishing
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								ach(5850, crit(5)),	-- Fish or Cut Bait: Undercity
+								crit(5, {	-- Moat Monster!
+									["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -117,7 +123,9 @@ _.Zones =
 							["requireSkill"] = 356,	-- Fishing
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								ach(5850, crit(2)),	-- Fish or Cut Bait: Undercity
+								crit(2, {	-- Tadpole Terror
+									["achievementID"] = 5850,-- Fish or Cut Bait: Undercity
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -133,7 +141,9 @@ _.Zones =
 							["requireSkill"] = 356,	-- Fishing
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								ach(5850, crit(4)),	-- Fish or Cut Bait: Undercity
+								crit(4, {	-- Time for Slime
+									["achievementID"] = 5850,	-- Fish or Cut Bait: Undercity
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -158,7 +168,9 @@ _.Zones =
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								ach(5844, crit(3)),	-- Let's Do Lunch: Undercity
+								crit(3, {	-- Escargot A Go-Go
+									["achievementID"] = 5844,	-- Let's Do Lunch: Undercity
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -169,7 +181,9 @@ _.Zones =
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								ach(5844, crit(1)),	-- Let's Do Lunch: Undercity
+								crit(1, {	-- Fungus Among Us
+									["achievementID"] = 5844,	-- Let's Do Lunch: Undercity
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -180,7 +194,9 @@ _.Zones =
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								ach(5844, crit(2)),	-- Let's Do Lunch: Undercity
+								crit(2, {	-- Lily, Oh Lily
+									["achievementID"] = 5844,	-- Let's Do Lunch: Undercity
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -191,7 +207,9 @@ _.Zones =
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								ach(5844, crit(4)),	-- Let's Do Lunch: Undercity
+								crit(4, {	-- Roach Coach
+									["achievementID"] = 5844,	-- Let's Do Lunch: Undercity
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -202,7 +220,9 @@ _.Zones =
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								ach(5844, crit(5)),	-- Let's Do Lunch: Undercity
+								crit(5, {	-- Would You Like Some Flies With That?
+									["achievementID"] = 5844,	-- Let's Do Lunch: Undercity
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						})

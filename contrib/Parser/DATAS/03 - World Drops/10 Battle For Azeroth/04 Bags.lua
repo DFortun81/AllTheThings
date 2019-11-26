@@ -3,12 +3,9 @@
 -----------------------------------------------------
 --[[_.WorldDrops = 
 {
-	{
-		["groups"] = {
-			filter(113, {	-- Bags
-				i(154695),	-- Deep Sea Bag
-			}),
-		},
-		["tierID"] = 8,
-	}
+	tier(8, {	-- Battle for Azeroth
+		f(113, {	-- Bags
+			i(154695),	-- Deep Sea Bag
+		}),
+	}),
 };--]]	-- Does not randomly drop.

@@ -93,6 +93,11 @@ _.Zones =
 					["coord"] = { 47.4, 35.3, 122 },
 					["isDaily"] = true,
 				}),
+				q(11488, {	-- Magisters' Terrace
+					["u"] = 40,
+					["provider"] = { "n", 24813 },	-- Exarch Larethor
+					["sourceQuest"] = 11481,	-- Crisis at the Sunwell
+				}),
 				q(29682, {	-- Magisters' Terrace
 					["provider"] = { "n", 24967 },	-- Captain Theris Dawnhearth
 					["coord"] = { 47.4, 30.4, 122 },

@@ -13,15 +13,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(51745, {	-- A Smelly Solution
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(51832, {	-- Beat Around The Bush
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(51512, {	-- Bilefang Mother
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
@@ -174,10 +166,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(51988, {	-- Whitney "Steelclaw" Ramsay
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53273, {	-- Winter's Kiss Cluster
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -185,11 +173,6 @@ _.Zones =
 					q(51738, {	-- Witches by the Dozen
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
-					}),
-					q(50991, {	-- Work Order: Blood-Stained Bone
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52407, {	-- Work Order: Golden Beryl
 						["isWorldQuest"] = true,
@@ -223,9 +206,6 @@ _.Zones =
 					}),
 ]]--				
 					q(53701, {	-- A Drust Cause (Faction Assault WQ)
-						["provider"] = { "n", 135815 },	-- Quartermaster Alcorn <Order of Embers Emissary>
-						["coord"] = { 37.03, 51.35, 896 },	-- Waycrest Gryphon Start
-						["crs"] = { 144984 },	-- Waycrest Gryphon
 						["lvl"] = 110,
 						["isDaily"] = true,
 						["races"] = ALLIANCE_ONLY,
@@ -254,6 +234,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
+					q(51745, {	-- A Smelly Solution
+						["lvl"] = 120,
+						["isWorldQuest"] = true,
+					}),
 					q(51576, {	-- Any Witch Way but Dead
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -277,8 +261,6 @@ _.Zones =
 						["lvl"] = 120,
 					}),
 					q(54681, {	-- Azerite Caravan (Faction Assault WQ)
-						["coord"] = { 32.13, 46.54, 896 },
-						["crs"] = { 148676 },	-- Caravan Commander Veronica
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
@@ -288,9 +270,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(51612, { 	-- Azerite Empowerment
-						["crs"] = { 138295 },	-- Sister Hilga
 						["lvl"] = 120,	
-						["coord"] = { 39.75, 37.84, 896 },
 						["isWorldQuest"] = true,
 					}),
 					q(51608, {	-- Azerite Madness
@@ -339,8 +319,11 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
+					q(51512, {	-- Bilefang Mother
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+					}),
 					q(54143, {	-- Bird's-Eye (Faction Assault WQ)
-						["coord"] = { 37.32, 51.83, 896 },	-- Rocket Pack Start
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
@@ -396,7 +379,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(52009, {	-- Crab People
-						["provider"] = { "n", 139489 },	-- Captain Hermes
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 						["g"] = {
@@ -415,10 +397,8 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(54665, {	-- Duchess Fallensong (Faction Assault WQ)
-						["crs"] = { 148563 },	-- Duchess Fallensong
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
-						["coord"] = { 40.21, 50.91, 896 },
 						["isWorldQuest"] = true,
 					}),
 					q(51747, {	-- Early Warning
@@ -472,13 +452,11 @@ _.Zones =
 					q(54507, {	-- Fungal Infestation (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
-						["coord"] = { 30.04, 40.55, 896 },
 						["isWorldQuest"] = true,
 					}),
 					q(54506, {	-- Fungal Infestation (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
-						["coord"] = { 30.04, 40.55, 896 },
 						["isWorldQuest"] = true,
 					}),
 					q(51887, {	-- Fungi Trio
@@ -521,12 +499,6 @@ _.Zones =
 						["lvl"] = 120,
 					}),
 					q(54137, {	-- In Every Dark Corner (Faction Assault WQ)
-						["provider"] = { "n", 148142 },		-- Rokhan
-						["crs"] = { 148380 },	-- Vindicator Caeduum
-						["coords"] = {
-							{ 36.91, 26.47, 896 },	-- Rokhan [Complete Rokhan's Ritual]
-							{ 40.08, 48.93, 896 },	-- Vindicator Caeduum
-						},
 						["lvl"] = 110,
 						["isDaily"] = true,
 						["races"] = HORDE_ONLY,
@@ -616,7 +588,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(52218, {	-- Night Horrors
-						["provider"] = { "n", 140461 },	-- Dilbert McClint
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 						["g"] = {
@@ -626,9 +597,7 @@ _.Zones =
 						},
 					}),
 					q(54089, {	-- Omgar Doombow (Faction Assault WQ)
-						["crs"] = { 146607 },	-- Omgar Doombow
 						["lvl"] = 110,
-						["coord"] = { 31.78, 33.06, 896 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
@@ -644,7 +613,6 @@ _.Zones =
 					}),
 					q(54472, {	-- Plowing the Field (Faction Assault WQ)
 						["lvl"] = 110,
-						["coord"] = { 33.89, 46.98, 896 },
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
@@ -667,7 +635,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(52278, {	-- Rogue Azerite
-						["provider"] = { "n", 140813 },	-- Fizzie Sparkwhistle
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 						["g"] = {
@@ -691,7 +658,6 @@ _.Zones =
 					}),
 					q(51683, {	-- Slash and Burn Tactics
 						["lvl"] = 120,
-						["coord"] = { 71.14, 59.33, 896 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
@@ -723,7 +689,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(54471, {	-- Tend the Wounded (Faction Assault WQ)
-						["coord"] = { 33.89, 46.98, 896 },
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
@@ -778,24 +743,15 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(54011, {	-- Wet Work: Arom's Stand (Faction Assault WQ)
-						["crs"] = { 146943 },	-- Field Marshal Yosk
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["coords"] = {
-							{ 36.19, 50.88, 896 },	-- Field Marshal Yosk
-							{ 37.84, 53.69, 896 },	-- Shadow Hunter Scout Start
-							{ 39.71, 53.83, 896 },	-- Shadow Hunter Scout Start
-							{ 39.72, 47.53, 896 },	-- Shadow Hunter Scout Start
-							{ 41.39, 48.81, 896 },	-- Shadow Hunter Scout Start
-						},
 					}),
 					q(51457, {	-- Whargarble the Ill-Tempered
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
 					q(52297, {	-- What's the Buzz?
-						["provider"] = { "n", 140880 },	-- Michael Skarn
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 						["g"] = {
@@ -819,6 +775,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
+					q(51988, {	-- Whitney "Steelclaw" Ramsay
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+					}),
 					q(51682, {	-- Witches by the Dozen
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -833,6 +793,12 @@ _.Zones =
 							i(162445),	-- Pattern: Battle Flag: Rallying Swiftness (Rank 3)
 						},
 					}),
+					q(50991, {	-- Work Order: Blood-Stained Bone
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = 393,	-- Skinning
+					}),
 					q(52390, {	-- Work Order: Contract: Order of Embers
 						["requireSkill"] = 773,	-- Inscription
 						["lvl"] = 120,
@@ -843,9 +809,7 @@ _.Zones =
 						},
 					}),
 					q(52414, {	-- Work Order: Drums of the Maelstrom
-						["provider"] = { "n", 135815 },	-- Quarteermaster Alcorn
 						["lvl"] = 120,
-						["coord"] = { 37.81, 49.01, 896 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = 165,	-- Leatherworking
@@ -853,8 +817,6 @@ _.Zones =
 					q(52357, {	-- Work Order: Enchant Weapon - Quick Navigation
 						["requireSkill"] = 333,	-- Enchanting
 						["lvl"] = 120,
-						["provider"] = { "n", 135815 },	-- Quarteermaster Alcorn
-						["coord"] = { 37.81, 49.01, 896 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["g"] = {
@@ -890,13 +852,8 @@ _.Zones =
 					}),
 					q(54711, {	-- Zillie Wunderwrench and Grizzwald (Faction Assault WQ)
 						["lvl"] = 110,
-						["coord"] = { 39.69, 40.63, 896 },
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["crs"] = {
-							148862,	-- Zillie Wunderwrench
-							148860,	-- Grizzwald
-						},
 					}),
 					q(54488, {	-- Zul'aki the Headhunter (Faction Assault WQ)
 						["lvl"] = 110,

@@ -19,6 +19,10 @@ _.Zones =
 						i(87620),	-- Bracers of the Frozen Summit
 						i(87615),	-- Yakwasher's Bracers
 						i(86588),	-- Pandaren Firework Launcher
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 39,
+						},
 					},
 				}),
 				n(50341, {	-- Borginn Darkfist
@@ -34,6 +38,10 @@ _.Zones =
 						i(87619),	-- Terracotta Guardian's Bracer
 						i(87616),	-- Mountain Trailblazer's Cuffs
 						i(87620),	-- Bracers of the Frozen Summit
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 25,
+						},
 					},
 				}),
 				n(50354, {	-- Havak
@@ -53,6 +61,10 @@ _.Zones =
 						i(87617),	-- Bracers of the Serene Mountaintop
 						i(87619),	-- Terracotta Guardian's Bracer
 						i(87616),	-- Mountain Trailblazer's Cuffs
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 32,
+						},
 					},
 				}),
 				n(66933, {	-- Kishak
@@ -91,6 +103,10 @@ _.Zones =
 						i(87614),	-- Kafa Picker's Bracers
 						i(87615),	-- Yakwasher's Bracers
 						i(87621),	-- Wristguards of Great Fortune
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 53,
+						},
 					},
 				}),
 				n(70323, {	-- Krakkanon
@@ -119,6 +135,10 @@ _.Zones =
 						i(87614),	-- Kafa Picker's Bracers
 						i(87616),	-- Mountain Trailblazer's Cuffs
 						i(87619),	-- Terracotta Guardian's Bracer
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 46,
+						},
 					},
 				}),
 				n(50831, {	-- Scritch
@@ -138,6 +158,10 @@ _.Zones =
 						i(87617),	-- Bracers of the Serene Mountaintop
 						i(87613),	-- Frozen Zandalari Bracer
 						i(87618),	-- Ice Encrusted Bracer
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 4,
+						},
 					},
 				}),
 				n(50733, {	-- Ski'thik
@@ -153,6 +177,10 @@ _.Zones =
 						i(87620),	-- Bracers of the Frozen Summit
 						i(87618),	-- Ice Encrusted Bracer
 						i(87614),	-- Kafa Picker's Bracers
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 18,
+						},
 					},
 				}),
 				n(50769, {	-- Zai the Outcast
@@ -172,6 +200,10 @@ _.Zones =
 						i(87613),	-- Frozen Zandalari Bracer
 						i(87616),	-- Mountain Trailblazer's Cuffs
 						i(87615),	-- Yakwasher's Bracers
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 11,
+						},
 					},
 				}),
 				n(69841, {	-- Zandalari Warbringer (Amber)

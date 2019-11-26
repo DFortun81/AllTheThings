@@ -15,6 +15,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		["lvl"] = 110,
 		["g"] = {
 			n(-34, {	-- World Quests
+				q(51287, {	-- Tol Dagor: Sealed Supplies
+					["isWorldQuest"] = true,
+					["lvl"] = 120,
+				}),
 				q(51297, {	-- Tol Dagor: Shorefront Property
 					["isWorldQuest"] = true,
 					["lvl"] = 120,

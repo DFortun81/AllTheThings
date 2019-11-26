@@ -764,7 +764,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 121706 },	-- Beastlord L'kala
 					["g"] = {
-						ach(13542, crit(1)),	-- How to Train Your Direhorn / Naptime
+						crit(1, {	-- Naptime
+							["achievementID"] = 13542,	-- How to Train Your Direhorn
+						}),
 					},
 				}),
 				q(47260, {	-- Side Effects May Include...
@@ -787,7 +789,9 @@ _.Zones =
 					["sourceQuest"] = 47310,	-- Naptime
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						ach(13542, crit(2)),	-- How to Train Your Direhorn / Held For Observation
+						crit(2, {	-- Held For Observation
+							["achievementID"] = 13542,	-- How to Train Your Direhorn
+						}),
 					},
 					["level"] = 120,
 				}),
@@ -818,7 +822,9 @@ _.Zones =
 					["sourceQuest"] = 55253,	-- A Show of Faith
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						ach(13542, crit(3)),	-- How to Train Your Direhorn / Sleep, Eat, Repeat
+						crit(3, {	-- Sleep, Eat, Repeat
+							["achievementID"] = 13542,	-- How to Train Your Direhorn
+						}),
 					},
 					["level"] = 120,
 				}),
@@ -1109,41 +1115,41 @@ _.Zones =
 				q(49060, {	-- Xibalan Ecology
 					["provider"] = { "n", 131777 },	-- Acadia Chistlestone
 					["coord"] = { 41.2, 71.4, 862 },
-				--	["sourceQuest"] = 49276,	-- The Thrill of Exploration
+					["sourceQuest"] = 49276,	-- The Thrill of Exploration
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49274, {	-- Morgrum's Survey
 					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
 					["coord"] = { 44.4, 73.4, 862 },
-				--	["sourceQuest"] = 49276,	-- The Thrill of Exploration
+					["sourceQuest"] = 49276,	-- The Thrill of Exploration
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50044, {	-- Archaeological Efficiency
 					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
 					["coord"] = { 44.4, 73.4, 862 },
-				--	["sourceQuest"] = 49276,	-- The Thrill of Exploration
+					["sourceQuest"] = 49276,	-- The Thrill of Exploration
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49282, {	-- Morgrum's Extended Survey
 					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
 					["coord"] = { 44.4, 73.4, 862 },
-				--	["sourceQuest"] = {
-				--		49060,	-- Xibalan Ecology
-				--		49274,	-- Morgrum's Survey
-				--		50044,	-- Archaeological Efficiency
-				--	},
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = {
+						49060,	-- Xibalan Ecology
+						49274,	-- Morgrum's Survey
+						50044,	-- Archaeological Efficiency
+					},
 				}),
 				q(49427, {	-- Not Our Purple Elves
 					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
 					["coord"] = { 44.4, 73.4, 862 },
-				--	["sourceQuest"] = 49282,	-- Morgrum's Extended Survey
+					["sourceQuest"] = 49282,	-- Morgrum's Extended Survey
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49428, {	-- Grand Theft Telemancy
 					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
 					["coord"] = { 44.4, 73.4, 862 },
-				--	["sourceQuest"] = 49282,	-- Morgrum's Extended Survey
+					["sourceQuest"] = 49282,	-- Morgrum's Extended Survey
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- 	Isle of Fangs / Tusk Isle
@@ -1491,7 +1497,11 @@ _.Zones =
 						},
 					},
 				},
-
+				q(51085, {	-- WANTED: Dark Chronicler
+					["coord"] = { 40.7, 71.1, 862 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 287228 },	-- Wanted: Dark Chronicler
+				}),
 				
 				-- Start How to Train Your Direhorn Crit 4
 				q(55462, { 	-- The Wanderer's Call
@@ -1643,7 +1653,15 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuest"] = 55253,	-- A Show of Faith
 				}),
-					
+				q(54756, {	-- Garbage for the Garbage God
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 166507 },	-- Jani's First Offering
+				}),
+				q(54757, {	-- The Loa of Scavengers
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 149006 },	-- Jani
+					["sourceQuest"] = 54756,	-- Garbage for the Garbage God
+				}),
 			}),
 		}),
 	}),

@@ -255,6 +255,26 @@ _.Zones =
 					["description"] = "Must be on |cFFFFD700Sabotage|r to see this quest.",
 					["sourceQuest"] = 12677,	-- Hazardous Materials
 				}),
+				q(13098, {	-- For Posterity
+					["u"] = 40,
+					["provider"] = { "n", 30676 },	-- Chronicler Bah'Kini
+					["g"] = {
+						i(43177),	-- Voodoo Signet
+						i(43178),	-- Ring of Foul Mojo
+						i(43179),	-- Solid Platinum Band
+						i(43180),	-- Lion's Head Ring
+					},
+				}),
+				q(13096, {	-- Gal'darah Must Pay
+					["u"] = 40,
+					["provider"] = { "n", 30671 },	-- Tol'mar
+					["g"] = {
+						i(43164),	-- Sly Mojo Sash
+						i(43165),	-- Strange Voodoo Belt
+						i(43167),	-- Ranger's Belt of the Fallen Empire
+						i(43168),	-- Clasp of the Fallen Demi-God
+					},
+				}),
 				q(12527, {	-- Gluttonous Lurkers
 					["coord"] = { 41.3, 65.1, 121 },
 					["provider"] = { "n", 28204 },	-- Apprentice Pestlepot
@@ -325,6 +345,10 @@ _.Zones =
 					["provider"] = { "n", 28503 },	-- Overlord Drakuru
 					["description"] = "Must be on |cFFFFD700So Far, So Bad|r to see this quest.",
 					["sourceQuest"] = 12661,	-- Infiltrating Voltarus
+				}),
+				q(13099, {	-- Just Checkin'
+					["u"] = 40,
+					["provider"] = { "n", 28527 },	-- Chronicler To'kini
 				}),
 				q(29836, {	-- Just Checkin' -- aa
 					["coord"] = { 59.9, 57.9, 121 },
@@ -402,6 +426,17 @@ _.Zones =
 					["coord"] = { 75.3, 58.6, 121 },
 					["provider"] = { "n", 28030 },	-- Quetz'lun's Spirit
 					["sourceQuest"] = 12674,	-- Hell Hath a Fury
+				}),
+				q(13111, {	-- One of a Kind
+					["u"] = 40,
+					["provider"] = { "n", 30676 },	-- Chronicler Bah'Kini
+					["g"] = {
+						i(43171),	-- Fur-Lined Moccasins
+						i(43172),	-- Rhino Hide Kneeboots
+						i(43173),	-- Scaled Boots of Fallen Hope
+						i(43176),	-- Slippers of the Mojo Dojo
+						i(43174),	-- Trollkickers
+					},
 				}),
 				q(12883, {	-- Orders From Drakuru
 					["coord"] = { 34.9, 83.9, 121 },
@@ -526,6 +561,7 @@ _.Zones =
 					["sourceQuest"] = 12667,	-- Seek the Wind Serpent Goddess
 				}),
 				q(12643, {	-- Silver Lining
+					["altQuests"] = { 12629 },	-- You Can Run, But You Can't Hide (Available if you DO NOT complete "Cleansing Drak'Tharon")
 					["coord"] = { 14.0, 73.7, 121 },
 					["provider"] = { "n", 28518 },	-- Stefan Vadu
 					["sourceQuest"] = 12638,	-- Close Call

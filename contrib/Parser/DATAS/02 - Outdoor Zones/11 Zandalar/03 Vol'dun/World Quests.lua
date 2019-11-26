@@ -11,7 +11,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							ach(13041),	-- Hungry, Hungry Ranishu
 						},
 					}),
@@ -163,7 +163,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							crit(2, {	-- Square
 								["achievementID"] = 13512,	-- Master Calligrapher
 							}),
@@ -197,7 +197,7 @@ _.Zones =
 						["provider"] = { "n", 142054 },	-- Kusa
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							crit(20, {	-- Desert Survivors
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -329,15 +329,13 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							{
+						["g"] = {
+							crit(3, {	-- 	Isolated Victory
 								["achievementID"] = 13284,	-- Frontline Warrior
-								["criteriaID"] = 3,	-- 	Isolated Victory
-							},
-							{
+							}),
+							crit(3, {	-- 	Isolated Victory
 								["achievementID"] = 13388,	-- Frontline Veteran
-								["criteriaID"] = 3,	-- 	Isolated Victory
-							},
+							}),
 						},
 					}),
 					q(54574, {	-- Jin'tago (Faction Assault WQ)
@@ -361,7 +359,7 @@ _.Zones =
 						["provider"] = { "n", 141879 },	-- Keeyo
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							crit(17, {	-- Keeyo's Champions of Vol'dun
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -384,15 +382,13 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
-							{
+						["g"] = {
+							crit(4, {	-- Many Fine Heroes
 								["achievementID"] = 13283,	-- Frontline Warrior
-								["criteriaID"] = 4,	-- Many Fine Heroes
-							},
-							{
+							}),
+							crit(4, {	-- Many Fine Heroes
 								["achievementID"] = 13387,	-- Frontline Veteran
-								["criteriaID"] = 4,	-- Many Fine Heroes
-							},
+							}),
 						},
 					}),
 					q(50851, {	-- Mor'fani the Exile
@@ -406,7 +402,7 @@ _.Zones =
 					q(54287, {	-- Naga Attack!
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							i(165605),  -- Azsharan Medallion
 						},
 					}),
@@ -482,7 +478,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							ach(13009, {	-- Adept Sandfisher
 								crit(1),	-- Adept Sandfisher — Cobalt Sandworm Scale
 								crit(2),	-- Adept Sandfisher — Silver Sandworm Scale
@@ -530,11 +526,16 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
+					q(53326, {	-- Smooth Platinum
+						["isWorldQuest"] = true,
+						["requireSkill"] = 186,	-- Mining
+						["lvl"] = 120,
+					}),
 					q(52856, {	-- Snakes on a Terrace
 						["provider"] = { "n", 141945 },	-- Sizzik
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							crit(18, {	-- Snakes on a Terrace
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -647,7 +648,7 @@ _.Zones =
 						["provider"] = { "n", 141969 },	-- Spineleaf
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["groups"] = {
+						["g"] = {
 							crit(19, {	-- What Do You Mean, Mind Controlling Plants?
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
@@ -677,7 +678,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = 197,	-- Tailoring
-						["groups"] = {
+						["g"] = {
 							i(162445),	-- Pattern: Battle Flag: Rallying Swiftness (Rank 3)
 						},
 					}),
@@ -698,7 +699,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = 773,	-- Inscription
-						["groups"] = {
+						["g"] = {
 							i(162370),	-- Contract: Voldunai [Rank 3]
 						},
 					}),
@@ -707,7 +708,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = 333,	-- Enchanting
-						["groups"] = {
+						["g"] = {
 							i(162314),	-- Formula: Enchant Weapon - Quick Navigation [Rank 3]
 						},
 					}),
@@ -716,7 +717,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = 202,	-- Engineering
-						["groups"] = {
+						["g"] = {
 							i(162331), 	-- Schematic: F.R.I.E.D. [Rank 3]
 						},
 					}),
@@ -731,7 +732,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = 171,	-- Alchemy
-						["groups"] = {
+						["g"] = {
 							i(162260),	-- Recipe: Potion of Concealment (Rank 3)
 						},
 					}),
@@ -758,7 +759,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 						["requireSkill"] = 202,	-- Engineering
-						["groups"] = {
+						["g"] = {
 							i(162736), 	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3]
 						},
 					}),
@@ -783,8 +784,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 				}),
-				{
-					["itemID"] = 165864,	-- Voldunai Equipment Cache
+				i(165864, {	-- Voldunai Equipment Cache
 					["sym"] = {
 						-- Include the one extra.
 						{"select", "itemID", 166673},	-- Devoted Lookout's Windcloak
@@ -802,7 +802,7 @@ _.Zones =
 						{"merge"},	-- Merge the finalized items back into the processing queue.
 						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 					},
-				},
+				}),
 				i(158116),	-- Bonehex Claws
 				i(158125),	-- Bonehex Warmaul
 				i(158126),	-- Dazar'alor Polearm

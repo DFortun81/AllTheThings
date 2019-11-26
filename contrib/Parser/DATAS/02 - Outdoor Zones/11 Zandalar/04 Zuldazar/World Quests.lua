@@ -126,11 +126,21 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+						["g"] = {
+							ach(13439, {	-- Boxing Match
+								["races"] = ALLIANCE_ONLY,
+							}),
+						},
 					}),
 					q(54516, {	-- Crate n' Barrel (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
+						["g"] = {
+							ach(13438, {	-- Boxing Match
+								["races"] = HORDE_ONLY,
+							}),
+						},
 					}),
 					q(50854, {	-- Crimsonclaw
 						["lvl"] = 120,
@@ -760,6 +770,7 @@ _.Zones =
 				i(158150),	-- Loa-Pledged Drape
 				i(158152),	-- Golden Empire Signet
 				n(-43, {	-- Cloth
+					i(157905),	-- Shadra Silk Headband
 					i(157907),	-- Shadra Silk Mantle
 					i(157930),	-- Shadra Silk Robes
 					i(157909),	-- Shadra Silk Cuffs

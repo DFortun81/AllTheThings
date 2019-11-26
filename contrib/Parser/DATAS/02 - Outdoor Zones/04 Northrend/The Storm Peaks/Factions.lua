@@ -93,17 +93,6 @@ _.Zones =
 							["coord"] = { 65.3, 60.1, 120 },
 							["provider"] = { "n", 30105 },	-- King Jokkum
 						}),
-						q(12985, {	-- Forging a Head
-							["minReputation"] = { 1119, FRIENDLY },
-							["sourceQuests"] = { 12967 },	-- Battling the Elements
-							["coord"] = { 63.2, 63.2, 120 },
-							["provider"] = { "n", 30127 },	-- Njormeld
-						}),
-						q(12987, {	-- Mounting Hodir's Helm
-							["sourceQuests"] = { 12985 },	-- Forging A Head
-							["coord"] = { 63.2, 63.2, 120 },
-							["provider"] = { "n", 30127 },	-- Njormeld
-						}),
 						q(13006, {	-- Polishing the Helm
 						--	["minReputation"] = -- Unknown reputation requirement
 							["sourceQuests"] = { 12987 },	-- Mounting Hodir's Helm
@@ -113,7 +102,7 @@ _.Zones =
 						}),
 						q(13420, {	-- Everfrost
 							["minReputation"] = { 1119, FRIENDLY },
-						--	["itemID"] = 44725,	-- Everfrost Chip
+							["provider"] = { "i", 44725 },	-- Everfrost Chip
 							["description"] = "You can obtain these by looting Everfrost Chips in the environment.",
 						}),
 						q(13421, {	-- Remember Everfrost!
@@ -147,11 +136,6 @@ _.Zones =
 							["isDaily"]	= true,
 							["coord"] = { 63.5, 59.7, 120 },
 							["provider"] = { "n", 30294 },		-- Quest Giver: Frostworg Denmother
-						}),
-						q(13001, {	-- Raising Hodir's Spear (awarded "The Sons of Hodir" criteria)
-							["minReputation"] = { 1119, HONORED },
-							["coord"] = { 64.8, 59.1, 120 },
-							["provider"] = { "n", 30252 },	-- Lorekeeper Randvir
 						}),
 						q(13003, {	-- Thrusting Hodir's Spear
 							["minReputation"] = { 1119, HONORED },

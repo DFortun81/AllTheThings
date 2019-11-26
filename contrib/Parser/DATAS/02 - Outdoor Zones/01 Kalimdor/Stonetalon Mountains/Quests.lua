@@ -100,6 +100,11 @@ _.Zones =
 						i(131464),	-- Tunic of Ashes
 					},
 				}),
+				q(6548, {	-- Avenge My Village
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11857 },	-- Makaba Flathoof
+				}),
 				q(25914, {	-- Back to the Depths!
 					["provider"] = { "n", 41488 },	-- Sentinel Mistress Geleneth
 					["coord"] = { 39.6, 30.7, 65 },
@@ -162,6 +167,11 @@ _.Zones =
 						i(131471),	-- Anara's Cord
 					},
 				}),
+				q(6461, {	-- Blood Feeders
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 12816 },	-- Xen'Zilla
+				}),
 				q(6283,  {	-- Bloodfury Bloodline
 					["u"] = 40,
 					["provider"] = { "n", 11860 },	-- Maggran Earthbinder
@@ -210,11 +220,21 @@ _.Zones =
 						i(57425),	-- Gyromatic Axe
 					},
 				}),
+				q(5881, {	-- Calling in the Reserves
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11860 },	-- Maggran Earthbinder
+				}),
 				q(25767, {	-- Capturing Memories
 					["provider"] = { "n", 40900 },	-- Neophyte Starcrest
 					["coord"] = { 58.6, 55.9, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25669,	-- Rumble in the Lumber...Mill
+				}),
+				q(1087,  {	-- Cenarius' Legacy
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4198 },	-- Braelyn Firehand
 				}),
 				q(25652, {	-- Commandeer That Balloon!
 					["provider"] = { "n", 40879 },	-- Boog the "Gear Whisperer"
@@ -226,6 +246,11 @@ _.Zones =
 						i(57418),	-- Stonetalon Defender's Staff
 						i(57419),	-- Wand of Bought Time
 					},
+				}),
+				q(6301, {	-- Cycle of Rebirth
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11864 },	-- Tammra Windfield
 				}),
 				q(26061, {	-- Da Voodoo: Ram Horns
 					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
@@ -333,6 +358,16 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25652,	-- Commandeer That Balloon!
 				}),
+				q(1094,  {	-- Further Instructions
+					["u"] = 40,
+					["provider"] = { "n", 4201 },	-- Ziz Fizziks
+					["sourceQuest"] = 1093,	-- Super Reaper 6000
+				}),
+				q(1096,  {	-- Gerenzo Wrenchwhistle
+					["u"] = 40,
+					["provider"] = { "n", 4201 },	-- Ziz Fizziks
+					["sourceQuest"] = 1095,	-- Further Instructions
+				}),
 				q(25729, {	-- Gerenzo the Traitor
 					["provider"] = { "n", 40895 },	-- Professor Xakxak Gyromate
 					["sourceQuest"] = 25652,	-- Commandeer That Balloon!
@@ -371,6 +406,11 @@ _.Zones =
 					["coord"] = { 71.0, 79.7, 65 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25822,	-- Armaments for War
+				}),
+				q(6282, {	-- Harpies Threaten
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11860 },	-- Maggran Earthbinder
 				}),
 				q(25938, {	-- Help for Desolace (mutually exclusive with Rerouted! and Hero's Call: Desolace!)
 					["provider"] = { "n", 41487 },	-- Hierophant Malyk
@@ -558,6 +598,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1070,	-- On Guard in Stonetalon
 				}),
+				q(1088,  {	-- Ordanus
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4198 },	-- Braelyn Firehand
+					["sourceQuest"] = 1087,	-- Cenarius' Legacy
+				}),
 				q(26016, {	-- Orders from Base Camp
 					["u"] = 40,
 					["crs"] = { 41937 },	-- Marshal Paltrow
@@ -581,6 +627,11 @@ _.Zones =
 					["coord"] = { 45.0, 32.7, 65 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26082,	-- To Battlescar!
+				}),
+				q(6523, {	-- Protect Kaya
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11856 },	-- Kaya Flathoof
 				}),
 				q(25913, {	-- Putting Them to Rest
 					["provider"] = { "n", 41488 },	-- Sentinel Mistress Geleneth
@@ -736,6 +787,11 @@ _.Zones =
 						i(57499),	-- Infested Breastplate
 						i(57498),	-- Bow of Invisible Aim
 					},
+				}),
+				q(1093,  {	-- Super Reaper 6000
+					["u"] = 40,
+					["provider"] = { "n", 4201 },	-- Ziz Fizziks
+					["sourceQuest"] = 1483,	-- Ziz Fizziks
 				}),
 				q(25765, {	-- Tell 'Em Koko Sent You
 					["provider"] = { "n", 40897 },	-- Northwatch Captain Kosak

@@ -70,7 +70,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5841, crit(2)),	-- Let's Do Lunch: Ironforge
+								crit(2, {	-- A Fowl Shortage
+									["achievementID"] = 5841,	-- Let's Do Lunch: Ironforge
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -82,7 +84,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5841, crit(1)),	-- Let's Do Lunch: Ironforge
+								crit(1, {	-- A Round for the Guards
+									["achievementID"] = 5841,	-- Let's Do Lunch: Ironforge
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -94,7 +98,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5841, crit(4)),	-- Let's Do Lunch: Ironforge
+								crit(4, {	-- Can't Get Enough Spice Bread
+									["achievementID"] = 5841,	-- Let's Do Lunch: Ironforge
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -106,7 +112,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5841, crit(5)),	-- Let's Do Lunch: Ironforge
+								crit(5, {	-- I Need to Cask a Favor
+									["achievementID"] = 5841,	-- Let's Do Lunch: Ironforge
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -126,7 +134,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5841, crit(3)),	-- Let's Do Lunch: Ironforge
+								crit(3, {	-- Keepin' the Haggis Flowin'
+									["achievementID"] = 5841,	-- Let's Do Lunch: Ironforge
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -176,19 +186,6 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(129, {	-- First Aid
-					n(-17, {	-- Quests
-						q(6625,  {	-- Alliance Trauma
-							["provider"] = { "n", 5150 },	-- Nissa Firestone
-							["coord"] = { 55.1, 58.3, 87 },
-							["isBreadcrumb"] = true,
-							["requireSkill"] = 129,	-- First Aid
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 35,
-							["u"] = 40,
-						}),
-					}),
-				}),
 				prof(356, {	-- Fishing
 					n(-4, {	-- Achievements
 						ach(5847, {	-- Fish or Cut Bait: Ironforge
@@ -204,7 +201,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5847, crit(1)),	-- Fish or Cut Bait: Thunder Bluff
+								crit(1, {	-- Cold Water Fishing
+									["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -229,7 +228,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5847, crit(3)),	-- Fish or Cut Bait: Thunder Bluff
+								crit(3, {	-- Fish fer Squrky
+									["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -255,7 +256,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5847, crit(4)),	-- Fish or Cut Bait: Thunder Bluff
+								crit(4, {	-- Live Bait
+									["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -272,7 +275,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5847, crit(2)),	-- Fish or Cut Bait: Thunder Bluff
+								crit(2, {	-- One fer the Ages
+									["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -289,7 +294,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
-								ach(5847, crit(5)),	-- Fish or Cut Bait: Thunder Bluff
+								crit(5, {	-- The Gnomish Bait-o-Matic
+									["achievementID"] = 5847,	-- Fish or Cut Bait: Ironforge
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -316,6 +323,18 @@ _.Zones =
 							["g"]= {
 								recipe(192804),	-- Steamy Romance Novel Kit
 							},
+						}),
+					}),
+				}),
+				prof(197, {	-- Tailoring
+					n(-17, {	-- Quests
+						q(6625,  {	-- Alliance Trauma
+							["provider"] = { "n", 5150 },	-- Nissa Firestone
+							["coord"] = { 55.1, 58.3, 87 },
+							["isBreadcrumb"] = true,
+							["requireSkill"] = 197,	-- Tailoring
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 35,
 						}),
 					}),
 				}),

@@ -51,10 +51,8 @@ _.Zones =
 				q(9603,  {	-- Beds, Bandages, and Beyond
 					["provider"] = { "n", 17553 },	-- Caregiver Topher Loaal
 					["coord"] = { 55.8, 59.8, 106 },
-					["races"]= {
-						11,	-- Draenei
-						30,	-- Lightforged Draenei
-					},
+					["races"]= { 11 },	-- Draenei
+					["u"] = 40, 	-- Legacy Quest, quest moved to Azuremyst Isle 	
 				}),
 				q(9694,  {	-- Blood Watch
 					["provider"] = { "n", 17684 },	-- Vindicator Boros
@@ -325,10 +323,8 @@ _.Zones =
 					["provider"] = { "n", 17554 },	-- Laando
 					["coord"] = { 57.7, 53.9, 106 },
 					["sourceQuest"] = 9603,	-- Beds, Bandages, and Beyond
-					["races"]= {
-						11,	-- Draenei
-						30,	-- Lightforged Draenei
-					},
+					["races"] = { 11 },	-- Draenei
+					["u"] = 40, 	-- Legacy Quest, quest moved to Azuremyst Isle 
 				}),
 				q(9548,  {	-- Pilfered Equipment
 					["provider"] = { "n", 17421 },	-- Clopper Wizbang
@@ -468,10 +464,7 @@ _.Zones =
 				q(9762,  {	-- The Unwritten Prophecy
 					["provider"] = { "n", 17468 },	-- Prophet Velen
 					["coord"] = { 54.0, 55.4, 106 },
-					["races"] = {
-						11,	-- Draenei
-						30,	-- Lightforged Draenei
-					},
+					["races"] = { 11 },	-- Draenei
 					["sourceQuest"] = 9759,	-- Ending Their World
 					["g"] = {
 						i(24344),	-- Tabard of the Hand

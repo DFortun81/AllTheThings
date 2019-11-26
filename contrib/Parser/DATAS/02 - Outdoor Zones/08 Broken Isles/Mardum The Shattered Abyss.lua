@@ -8,6 +8,10 @@ _.Zones =
 			["description"] = "|cff66ccffMardum, the Shattered Abyss, colloquially known simply as Mardum and originally called the Plane of Banishment) is a prison world that was created by Sargeras prior to his becoming the Fallen Titan to hold all the demons he killed in the Great Dark Beyond. After his decision to destroy all world-souls in the universe, Sargeras shattered Mardum to free the demons that would become his Burning Legion. This is the starting scenario for Demon Hunters.|r",
 			["classes"] = { 12 },	-- Demon Hunter Class
 			["icon"] = "Interface\\Icons\\Achievement_boss_illidan",	-- Illidan
+			["maps"] = {
+				674,	-- Soul Engine
+				675,	-- Soul Engine
+			},
 			["g"] = {
 				n(-17,  {	-- Quests
 					q(40077, {	-- The Invasion Begins

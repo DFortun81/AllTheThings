@@ -22,6 +22,9 @@ _.Zones =
 					-- Note: Actual information is in rare file.  This just lets us alphabetize it properly instead of it going to the bottom.
 					["collectible"] = false,	-- Can't be completed solely in this zone
 				}),
+				ach(12758, {	-- Baiting the Enemy
+					["races"] = ALLIANCE_ONLY,
+				}),
 				ach(12740, {	-- Full of Scrap! [500 Items] [Horde]
 					["races"] = HORDE_ONLY,
 					["g"] = {

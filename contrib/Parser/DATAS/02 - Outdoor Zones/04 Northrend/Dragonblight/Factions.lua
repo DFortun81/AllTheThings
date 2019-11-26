@@ -34,6 +34,7 @@ _.Zones =
 							},
 						}),
 						q(11960, {	-- Planning for the Future
+							["coord"] = { 48.2, 74.3, 115 },
 							["isDaily"] = true,
 							["provider"] = { "n", 26228 },	-- Trapper Mau'i
 						}),

@@ -53,6 +53,12 @@ _.Instances = { tier(1, {	-- Classic
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 27579 },	-- Into the Prison [Horde]
 					}),
+					q(4001, {	-- What Is Going On?
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 9020 },	-- Commander Gor'shak
+						["sourceQuest"] = 3982,	-- What Is Going On?
+					}),
 				}),
 				n(-76, {	-- Shadowforge City
 					q(6646, {	-- Favor Amongst the Brotherhood, Blood of the Mountain

@@ -769,6 +769,14 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = 186,	-- Mining
 				}),
+				q(41633, {	-- Work Order: Leystone Greaves (WQ)
+					["isWorldQuest"] = true,
+					["requireSkill"] = 164,	-- Blacksmithing
+					["lvl"] = 110,
+					["g"] = {
+						i(123931),	-- Recipe: Leystone Greaves (Rank 3)
+					},
+				}),
 				q(41645, {	-- Work Order: Silkweave Epaulets
 					["requireSkill"] = 197,	-- Tailoring
 					["isWorldQuest"] = true,

@@ -573,8 +573,18 @@ _.Achievements =
 						crit(1),		-- Leorajh
 						crit(2),		-- Talonpriest Ishaal
 						crit(3),		-- Tormmok
-						crit(4),		-- Aeda Brightdawn / Defender Illona
-						crit(5),		-- Delvar Ironfirst / Vivianne
+						crit(4, {		-- Aeda Brightdawn
+							["races"] = HORDE_ONLY,
+						}),
+						crit(5, {		-- Defender Illona
+							["races"] = ALLIANCE_ONLY,
+						}),
+						crit(6, {		-- Delvar Ironfirst
+							["races"] = ALLIANCE_ONLY,
+						}),
+						crit(7, {		-- Vivianne
+							["races"] = HORDE_ONLY,
+						}),
 						ach(9498),		-- Wingman
 					}),
 					ach(9407, {		-- Working Many Orders (750)

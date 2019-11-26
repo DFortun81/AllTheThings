@@ -282,10 +282,16 @@ profession(773, {	-- Inscription
 						{	-- Glyph of the Tideskipper
 							["recipeID"] = 276088--[[Glyph of the Tideskipper]]
 						},
-						{  -- Glyph of Storm's Wake(missing in automation)
+						{  -- Glyph of Storm's Wake
 							["recipeID"] = 289356,  -- Glyph of Storm's Wake
 							["races"] = ALLIANCE_ONLY,
-						}
+						},
+						{  -- Glyph of Dire Bees (missing in automation)
+							["recipeID"] = 304042,  -- Glyph of Dire Bees
+						},
+						{  -- Glyph of Lavish Servings (missing in automation)
+							["recipeID"] = 309443,  -- Glyph of Lavish Servings
+						},
 					}
 				},
 				{

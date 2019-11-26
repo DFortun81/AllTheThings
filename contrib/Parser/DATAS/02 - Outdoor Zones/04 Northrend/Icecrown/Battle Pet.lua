@@ -22,24 +22,26 @@ _.Zones =
 					["crs"] = { 71163 },	-- Unborn Val'kyr
 				}),
 				q(31984, {	-- A Brief Reprieve (A)
-					["provider"] = { "n", 66675 },	-- Major Payne
 					["coord"] = { 77.4, 19.6, 118 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 66675 },	-- Major Payne
 					["isBreadcrumb"] = true,
 				}),
 				q(31983, {	-- A Brief Reprieve (H)
-					["provider"] = { "n", 66675 },	-- Major Payne
 					["coord"] = { 77.4, 19.6, 118 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 66675 },	-- Major Payne
 					["isBreadcrumb"] = true,
 				}),
 				q(31928, { 	-- Grand Master Payne
+					["coord"] = { 77.4, 19.6, 118 },
 					["provider"] = { "n", 66675 },	-- Major Payne
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
 					},
 				}),
 				q(31935, {	-- Grand Master Payne
+					["coord"] = { 77.4, 19.6, 118 },
 					["provider"] = { "n", 66675 },	-- Major Payne
 					["isDaily"] = true,
 					["coord"] = { 77.4, 19.6, 118 },

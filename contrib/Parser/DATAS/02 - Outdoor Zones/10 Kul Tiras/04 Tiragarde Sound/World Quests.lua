@@ -123,9 +123,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(53436, {	-- Azerite for the Alliance
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(51584, {	-- Azerite Madness
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -2069,6 +2066,12 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(52423, {	-- Work Order: Akunda's Bite
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = 182,	-- Herbalism
 					}),
 					q(52423, {	-- Work Order: Battle Flag: Phalanx Defense
 						["lvl"] = 120,

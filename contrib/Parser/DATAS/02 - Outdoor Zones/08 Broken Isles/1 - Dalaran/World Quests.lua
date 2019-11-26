@@ -13,7 +13,6 @@ _.Zones =
 					q(46135),	-- Gemcutter Needed
 					q(46137),	-- Gemcutter Needed
 					q(41656),	-- Work Order: Azsunite Loop
-					q(41638),	-- Work Order: Leystone Gauntlets
 					q(41650),	-- Work Order: Silkweave Hood
 --]]
 				q(42442, {	-- Fight Night: Amalia
@@ -115,6 +114,14 @@ _.Zones =
 					["lvl"] = 110,
 					["g"] = {
 						i(127920),	-- Recipe: Draught of Raw Magic (Rank 2)
+					},
+				}),
+				q(41638, {	-- Work Order: Leystone Gauntlets
+					["isWorldQuest"] = true,
+					["requireSkill"] = 164,	-- Blacksmithing
+					["lvl"] = 110,
+					["g"] = {
+						i(137606),	-- Recipe: Leystone Gauntlets (Rank 3)
 					},
 				}),
 			}),

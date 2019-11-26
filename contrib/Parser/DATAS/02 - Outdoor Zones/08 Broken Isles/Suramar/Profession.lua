@@ -68,14 +68,6 @@ _.Zones =
 						["sourceQuest"] = 38528,	-- Leystone's Potential
 						["isBreadcrumb"] = true,
 					}),
-					n(-34, {	-- World Quests
-						q(41637, {	-- Work Order: Leystone Pauldrons
-							["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
-							["g"] = {
-								i(123938),	-- Recipe: Leystone Pauldrons (Rank 3)
-							},
-						}),
-					}),
 				}),
 				prof(185, {	-- Cooking
 					i(141011, {	-- Recipe: Surf

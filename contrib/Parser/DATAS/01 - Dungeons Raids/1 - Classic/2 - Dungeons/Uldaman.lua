@@ -76,6 +76,12 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(9627)),	-- Explorers' League Lodestar
 					},
 				}),
+				q(2318, {	-- Translating the Journal
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 6912 },	-- Remains of a Paladin
+					["sourceQuest"] = 2284,	-- Necklace Recovery, Take 2
+				}),
 				q(27682, {	-- We Require More Minerals
 					["provider"] = { "n", 46241 },	-- Aoren Sunglow
 					["races"] = HORDE_ONLY,

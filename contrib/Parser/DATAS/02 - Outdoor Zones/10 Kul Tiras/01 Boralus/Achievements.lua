@@ -15,6 +15,9 @@ _.Zones =
 						crit(3),	-- A Nation United
 					},
 				}),
+				ach(12759, {	-- Baiting the Enemy
+					["races"] = HORDE_ONLY,
+				}),
 				ach(12582, {	-- Come Sail Away
 					["sourceQuests"] = { 47189 },	-- A Nation Divided
 					["races"] = ALLIANCE_ONLY,

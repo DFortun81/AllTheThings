@@ -51,11 +51,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52972, {	-- Favored Grandchild
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(52064, {	-- Fiendish Fields
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -150,11 +145,6 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52415, {	-- Work Order: Coarse Leather Barding
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(50996, {	-- Work Order: Mistscale
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -366,6 +356,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
+					q(52972, {	-- Favored Grandchild
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+					}),
 					q(52011, {	-- Fiendish Fields
 						["isWorldQuest"] = true,
 						["races"] = ALLIANCE_ONLY,
@@ -389,11 +384,17 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+						["g"] = {
+							ach(13429),	-- Azerfighter
+						},
 					}),
 					q(53769, {	-- Furious Fracas (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
+						["g"] = {
+							ach(13429),	-- Azerfighter
+						},
 					}),
 					q(54414, {	-- Gale's Unrest (Faction Assault WQ)
 						["lvl"] = 110,
@@ -964,6 +965,12 @@ _.Zones =
 						["g"] = {
 							i(162258),	-- Recipe: Lightfoot Potion (Rank 3)
 						},
+					}),
+					q(50996, {	-- Work Order: Mistscale
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = 393,	-- Skinning
 					}),
 					q(50981, {	-- Work Order: Riverbud
 						["isWorldQuest"] = true,

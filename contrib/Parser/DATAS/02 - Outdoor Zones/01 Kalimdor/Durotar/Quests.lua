@@ -6,6 +6,16 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(1, {	-- Durotar
 			n(-17, {	-- Quests
+				q(2161, {	-- A Peon's Budren
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 6786 },	-- Ukor
+				}),
+				q(818,   {	-- A Solvent Spirit
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3304 },	-- Master Vornal
+				}),
 				q(41002, {	-- A Weapon of the Horde
 					["provider"] = { "n", 101035 },	-- Lady Sylvanas Windrunner
 					["races"] = HORDE_ONLY,
@@ -44,6 +54,11 @@ _.Zones =
 						25206,	-- Ignoring the Warnings
 					},
 				}),
+				q(815,   {	-- Break a Few Eggs
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3191 },	-- Cook Torka
+				}),
 				q(25167, {	-- Breaking the Chain
 					["provider"] = { "n", 3188 },	-- Master Gadrin
 					["coord"] = { 55.9, 74.8, 1 },
@@ -74,6 +89,11 @@ _.Zones =
 						27718,	-- Warchief's Command: Vashj'ir!
 					},
 				}),
+				q(791,   {	-- Carry Your Weight
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3147 },	-- Furl Scornbrow
+				}),
 				q(25170, {	-- Cleaning Up the Coastline
 					["provider"] = { "n", 10578 },	-- Bom'bay
 					["coord"] = { 55.6, 75.2, 1 },
@@ -85,6 +105,12 @@ _.Zones =
 					["coord"] = { 50.8, 43.5, 1 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+				}),
+				q(806,   {	-- Dark Storms
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3142 },	-- Orgnil Soulscar
+					["sourceQuest"] = 823,	-- Report to Orgnil
 				}),
 				q(40607, {	-- Demons Among Us
 					["provider"] = { "n", 100873 },	-- Allari the Souleater
@@ -117,6 +143,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 40522 },	-- Fate of the Horde
 				}),
+				q(837,   {	-- Encroachment
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3139 },	-- Gar'Thok
+				}),
 				q(25176, {	-- Exploiting the Situation
 					["provider"] = { "n", 39423 },	-- Gail Nozzywig
 					["coord"] = { 53.0, 43.1, 1 },
@@ -147,6 +178,12 @@ _.Zones =
 					["coord"] = { 51.9, 43.4, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25171,	-- Riding On
+				}),
+				q(825,   {	-- From The Wreckage...
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3139 },	-- Gar'Thok
+					["sourceQuest"] = 784,	-- Vanquish the Betrayers
 				}),
 				q(5648,  {	-- Garments of Spirituality
 					["u"] = 40,
@@ -226,6 +263,11 @@ _.Zones =
 					["sourceQuest"] = 25173,	-- From Bad to Worse
 					["description"] = "Talk to an Injured Razor Hill Grunt on the beach.",
 				}),
+				q(816,   {	-- Lost But Not Forgotten
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3193 },	-- Misha Tor'kren
+				}),
 				q(25193, {	-- Lost But Not Forgotten
 					["provider"] = { "n", 3193 },	-- Misha Tor'kren
 					["coord"] = { 43.3, 30.6, 1 },
@@ -244,6 +286,12 @@ _.Zones =
 					["coord"] = { 61.3, 8.8, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 38307 },	-- The Warchief Beckons
+				}),
+				q(828,   {	-- Margoz
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3142 },	-- Orgnil Soulscar
+					["sourceQuest"] = 806,	-- Dark Storms
 				}),
 				q(25261, {	-- Margoz
 					["provider"] = { "n", 39379 },	-- Gor the Enforcer
@@ -282,11 +330,32 @@ _.Zones =
 						un(34, i(67156)),	-- Girdle of Servitude
 					},
 				}),
+				q(808,   {	-- Minshina's Skull
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3188 },	-- Master Gadrin
+				}),
+				q(812,   {	-- Need for a Cure
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3190 },	-- Rhinag
+				}),
+				q(829,   {	-- Neeru Fireblade
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3208 },	-- Margoz
+					["sourceQuest"] = 827,	-- Skull Rock
+				}),
 				q(25165, {	-- Never Trust a Big Barb and a Smile
 					["provider"] = { "n", 10578 },	-- Bom'bay
 					["coord"] = { 55.7, 75.3, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25170,	-- Cleaning up the Coastline
+				}),
+				q(817,   {	-- Practical Prey
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3194 },	-- Vel'rin Fang
 				}),
 				q(25168, {	-- Purge the Valley
 					["provider"] = { "n", 3188 },	-- Master Gadrin
@@ -305,6 +374,11 @@ _.Zones =
 					["coord"] = { 42.6, 49.8, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25187,	-- Lost in the Floods
+				}),
+				q(823,   {	-- Report to Orgnil
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3188 },	-- Master Gadrin
 				}),
 				q(26806, {	-- Reports to Orgrimmar
 					["provider"] = { "n", 3139 },	-- Gar'Thok
@@ -401,6 +475,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25173,	-- From Bad to Worse
 				}),
+				q(2937, {	-- Summoning Shadra
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3188 },	-- Master Gadrin
+					["sourceQuest"] = 2936,	-- The Spider God
+				}),
 				q(25195, {	-- That's the End of That Raptor
 					["provider"] = { "n", 39324 },	-- Zen'Taji
 					["coord"] = { 35.8, 41.3, 1 },
@@ -452,6 +532,12 @@ _.Zones =
 					["provider"] = { "n", 107554 },	-- Thassarian
 					["classes"] = { 6 },	-- Death Knight
 				}),
+				q(2936, {	-- The Spider God
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3188 },	-- Master Gadrin
+					["sourceQuest"] = 2935,	-- Consult Master Gadrin
+				}),
 				q(39801, {	-- The Splintered Fleet
 					["sourceQuest"] = 38307,	-- The Warchief Beckons
 					["lvl"] = 98,
@@ -493,6 +579,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25196,	-- The Dranosh'ar Blockade
 				}),
+				q(786,   {	-- Thwarting Kolkar Aggression
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3140 },	-- Lar Prowltusk
+					["sourceQuest"] = 785,	-- A Strategic Alliance
+				}),
 				q(44281, {	-- To Be Prepared
 					["provider"] = { "n", 4311 },	-- Holgar Stormaxe
 					["lvl"] = 98,
@@ -517,6 +609,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25187,	-- Lost in the Floods
 				}),
+				q(784,   {	-- Vanquish the Betrayers
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3139 },	-- Gar'Thok
+				}),
 				q(25188, {	-- Watershed Patrol
 					["provider"] = { "n", 39323 },	-- Gail Nozzywig
 					["coord"] = { 49.5, 40.1, 1 },
@@ -535,6 +632,11 @@ _.Zones =
 					["lvl"] = 7,
 					["races"] = HORDE_ONLY,
 					["coord"] = { 46.3, 22.8, 1 },
+				}),
+				q(826,   {	-- Zalazane
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3188 },	-- Master Gadrin
 				}),
 			}),
 		}),

@@ -9,6 +9,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		},
 		["groups"] = {
 			n(-34, {	-- World Quests
+				q(51502, {	-- King's Rest: Kingsguard
+					["isWorldQuest"] = true,
+					["lvl"] = 120,
+				}),
 				q(51501, {	-- King's Rest: Malfunction Junction
 					["isWorldQuest"] = true,
 					["lvl"] = 120,

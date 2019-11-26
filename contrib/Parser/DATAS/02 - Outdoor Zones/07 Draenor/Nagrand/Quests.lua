@@ -1403,7 +1403,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 232024,	-- Warsong Attack Plans
 				}),
-				q(37981),	-- The World Famous Ring of Blood!
+				q(37981, {	-- The World Famous Ring of Blood!
+					["description"] = "The item that starts this quest has a chance to drop from any of the daily bounties offered in your garrison (Renzik 'The Shiv' for Alliance and Shadow Hunter Ty'jin for Horde).\n\nThe item isn't looted, but will pop directly into your inventory when the quest mob dies.  If it doesn't drop the first time, you can camp the mob for more chances.  You'll get a total of three invitations, which you can sell or trade.\n",
+					["providers"] = {
+						{ "i", 122191 },	-- Bloody Stack of Invitations
+						{ "i", 122190 },	-- Ring of Blood Invitation
+					},
+					["lvl"] = 100,	-- this quest is technically level 98, but you can only pick up the bounty quests at 100
+				}),
 				q(34951, {	-- They Call Him Lantresor of the Blade
 					["provider"] = { "n", 80624 },	-- Vindicator Mo'mor
 					["coord"] = { 63.4, 61.8, 550 },

@@ -47,12 +47,6 @@ _.Zones =
 						un(2, i(128422)),	-- Reins of the Grove Warden
 					},
 				}),
-				q(13074, {	-- Hope Within the Emerald Nightmare
-					["provider"] = { "n", 11832 },	-- Keeper Remulos
-					["lvl"] = 67,
-					["coord"] = { 36.2, 41.8, 80 },
-					["sourceQuest"] = 13073,	-- The Keeper's Favor
-				}),
 				q(45498, {	-- Let Sleeping Dogs Lie
 					["lvl"] = 110,
 					["coord"] = { 68.0, 54.8, 80 },
@@ -99,12 +93,6 @@ _.Zones =
 						{ "n", 120032 },	-- Thisalee Crow
 						{ "n", 120041 },	-- Druid of the Talon
 					},
-				}),
-				q(13075, {	-- The Boon of Remulos
-					["provider"] = { "n", 11832 },	-- Keeper Remulos
-					["lvl"] = 67,
-					["coord"] = { 36.2, 41.8, 80 },
-					["sourceQuest"] = 13074,	-- Hope Within the Emerald Nightmare
 				}),
 				q(28343, {	-- The Breath of Cenarius
 					["sourceQuests"] = { 28289 },	-- Moonglade Calls
@@ -180,6 +168,11 @@ _.Zones =
 						un(2, i(18402)),	-- Glowing Crystal Ring
 						un(2, i(18400)),	-- Ring of Living Stone
 					},
+				}),
+				q(1185,  {	-- Under the Chitin Was...
+					["u"] = 40,
+					["provider"] = { "n", 11939 },	-- Umber
+					["sourceQuest"] = 6845,	-- Uncovering Past Secrets
 				}),
 				q(29302, {	-- Unlocking the Secrets Within
 					["provider"] = { "n", 11801 },	-- Rabine Saturna

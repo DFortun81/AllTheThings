@@ -452,6 +452,16 @@ _.Zones =
 					["coord"] = { 48.9, 70.1, 641 },
 					["provider"] = { "n", 91066 },	-- Elothir
 				}),
+				q(46107, {	-- Source of the Corruption
+					["classes"] = {
+						11,	-- Druid (Restoration)
+						10,	-- Monk (Mistweaver)
+						2,	-- Paladin (Holy)
+						5,	-- Priest (Holy)
+						7,	-- Shaman (Restoration)
+					},
+					["lvl"] = 110,
+				}),
 				q(40221, {	-- Spread Your Lunarwings and Fly
 					["coord"] = { 53.8, 79.7, 641 },
 					["provider"] = { "n", 93600 },	-- Saylanna Riverbreeze

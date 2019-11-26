@@ -88,10 +88,19 @@ _.Zones =
 						i(9706),	-- Tharg's Disk
 					},
 				}),
+				q(11160, {	-- [DEPRECATED]Banner of the Stonemaul
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 23579 },	-- Brogg
+				}),
 				q(27408, {	-- Banner of the Stonemaul
 					["provider"] = { "n", 23579 },	-- Brogg
 					["coord"] = { 41.8, 73.9, 70 },
 					["sourceQuest"] = 27407,	-- Bloodfen Feathers
+				}),
+				q(11158, {	-- [DEPRECATED]Bloodfen Feathers
+					["u"] = 40,
+					["provider"] = { "n", 23579 },	-- Brogg
 				}),
 				q(27407, {	-- Bloodfen Feathers
 					["provider"] = { "n", 23579 },	-- Brogg
@@ -102,6 +111,10 @@ _.Zones =
 					["coord"] = { 65.0, 47.0, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27246,	-- The Orc Report
+				}),
+				q(11217, {	-- [DEPRECATED]Catch a Dragon by the Tail
+					["u"] = 40,
+					["provider"] = { "n", 23570 },	-- Gizzix Grimegurgle
 				}),
 				q(27413, {	-- Catch a Dragon by the Tail
 					["provider"] = { "n", 23570 },	-- Gizzix Grimegurgle
@@ -166,6 +179,11 @@ _.Zones =
 					["coord"] = { 35.2, 30.6, 70 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(11183, {	-- Cleansing Witch Hill
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 23843 },	-- Mordant Grimsby
+				}),
 				q(27190, {	-- Cleansing Witch Hill
 					["provider"] = { "n", 23843 },	-- Mordant Grimsby
 					["coord"] = { 55.5, 26.1, 70 },
@@ -183,6 +201,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27425,	-- A Grim Connection
 				}),
+				q(11174, {	-- [DEPRECATED]Corrosion Prevention
+					["u"] = 40,
+				}),
 				q(27347, {	-- Corrosion Prevention
 					["provider"] = { "n", 23797 },	-- Moxie Steelgrille
 					["coord"] = { 53.5, 56.9, 70 },
@@ -193,6 +214,11 @@ _.Zones =
 						i(57840),	-- Corroded Helmet
 						i(131666),	-- Marshwarden's Vest
 					},
+				}),
+				q(626,   {	-- Cortello's Riddle
+					["u"] = 40,
+					["provider"] = { "o", 2555 },	-- Musty Scroll
+					["sourceQuest"] = 625,	-- Cortello's Riddle
 				}),
 				q(27286, {	-- Daelin's Men
 					["provider"] = { "n", 4948 },	-- Adjutant Tesoran
@@ -225,6 +251,17 @@ _.Zones =
 						27348,	-- Secure the Cargo!
 					},
 				}),
+				q(11156, {	-- [DEPRECATED]Direhorn Raiders
+					["u"] = 40,
+					["provider"] = { "n", 23600 },	-- Apprentice Morlann
+					["g"] = {
+						i(33240),	-- Grimtotem Earthbinder's Tunic
+						un(2, i(33262)),	-- Morlann's Seal
+						i(57827),	-- Morlann's Other Seal
+						i(33261),	-- Destroyer's Cloak
+						i(57831),	-- Direhorn Cinch
+					},
+				}),
 				q(27340, {	-- Direhorn Raiders
 					["provider"] = { "n", 23600 },	-- Apprentice Morlann
 					["coord"] = { 46.0, 57.4, 70 },
@@ -242,6 +279,10 @@ _.Zones =
 					["coord"] = { 68.3, 51.1, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27211,	-- Propaganda War
+				}),
+				q(1177,  {	-- Hungry!
+					["u"] = 40,
+					["provider"] = { "n", 4503 },	-- Mudcrush Durtfeet
 				}),
 				q(11211, {	-- Help for Mudsprocket
 					["provider"] = { "n", 6546 },	-- Tabetha
@@ -298,6 +339,16 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27251,	-- The Call Him Smiling Jim
 				}),
+				q(11123, {	-- [DEPRECATED]Inspecting the Ruins
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
+				}),
+				q(11124, {	-- [DEPRECATED]Inspecting the Ruins
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4926 },	-- Krog
+				}),
 				q(27253, {	-- Inspecting the Ruins (marked as critical on map but not needed for criteria)
 					["provider"] = { "n", 4926 },	-- Krog
 					["coord"] = { 36.4, 31.8, 70 },
@@ -315,6 +366,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27237 },	-- Recover the Cargo
 				}),
+				q(1203,  {	-- Jarl Needs a Blade
+					["u"] = 40,
+					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
+					["sourceQuest"] = 1206,	-- Jarl Needs Eyes
+				}),
 				q(27186, {	-- Jarl Needs a Blade
 					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
 					["coord"] = { 55.4, 26.2, 70 },
@@ -325,6 +381,11 @@ _.Zones =
 						i(9622),	-- Reedknot Ring
 						i(131649),	-- "Swamp Eye" Chain Sash
 					},
+				}),
+				q(1206,  {	-- Jarl Needs Eyes
+					["u"] = 40,
+					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
+					["sourceQuest"] = 1218,	-- Soothing Spices
 				}),
 				q(27184, {	-- Jarl Needs Eyes
 					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
@@ -357,6 +418,11 @@ _.Zones =
 					["coord"] = { 45.9, 57.1, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27429,	-- Raze Direhorn Post!
+				}),
+				q(1269,  {	-- Lieutenant Paval Reethe
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 21042 },	-- Theramore Guard Badge
 				}),
 				q(27264, {	-- Lieutenant Paval Reethe
 					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
@@ -455,6 +521,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27220,	-- Nat's Bargain
 				}),
+				q(1166,  {	-- Overlord Mok'Morokk's Concern
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4500 },	-- Overlord Mok'Morokk
+					["g"] = {
+						i(10702),	-- Enormous Ogre Boots -- NOTE: these are still available
+					},
+				}),
 				q(27424, {	-- Overlord Mok'Morokk's Concern
 					["provider"] = { "n", 4500 },	-- Overlord Mok'Morokk
 					["coord"] = { 36.2, 31.3, 70 },
@@ -503,6 +577,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27210,	-- Traitors Among Us
 				}),
+				q(1273,  {	-- Questioning Reethe
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4983 },	-- Ogron
+					["sourceQuest"] = 1269,	-- Lieutenant Paval Reethe
+				}),
 				q(27261, {	-- Questioning Reethe
 					["provider"] = { "n", 4983 },	-- Ogron
 					["coord"] = { 40.9, 36.6, 70 },
@@ -517,6 +597,16 @@ _.Zones =
 					["provider"] = { "n", 23723 },	-- Sergeant Lukas
 					["coord"] = { 46.5, 22.9, 70 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(11150, {	-- [DEPRECATED]Raze Direhorn Post!
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 6546 },	-- Tabetha
+				}),
+				q(11205, {	-- [DEPRECATED]Raze Direhorn Post!
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 6546 },	-- Tabetha
 				}),
 				q(27429, {	-- Raze Direhorn Post! (A)
 					["provider"] = { "n", 6546 },	-- Tabetha
@@ -546,6 +636,12 @@ _.Zones =
 					["coord"] = { 59.7, 41.0, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27234,	-- Defias in Dustwallow?
+				}),
+				q(1262,  {	-- Report to Zor
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4791 },	-- Nazeer Bloodpike
+					["sourceQuest"] = 1261,	-- Marg Speaks
 				}),
 				q(11223, {	-- Return to Jaina
 					["u"] = 40,
@@ -580,6 +676,11 @@ _.Zones =
 					["coord"] = { 53.5, 56.9, 70 },
 					["sourceQuest"] = 27346,	-- The Zeppelin Crash
 				}),
+				q(11203, {	-- [DEPRECATED]Seek Out Tabetha
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4926 },	-- Krog
+				}),
 				q(27295, {	-- Seek Out Tabetha
 					["provider"] = { "n", 4926 },	-- Krog
 					["coord"] = { 36.4, 31.8, 70 },
@@ -602,6 +703,15 @@ _.Zones =
 					["coord"] = { 37.4, 31.5, 70 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 205332 },	-- Wanted Poster (Broodqueen)
+				}),
+				q(1218,  {	-- Soothing Spices
+					["u"] = 40,
+					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
+				}),
+				q(11159, {	-- [DEPRECATED]Spirits of Stonemaul Hold
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 23579 },	-- Brogg
 				}),
 				q(27410, {	-- Spirits of Stonemaul Hold
 					["provider"] = { "n", 23579 },	-- Brogg
@@ -632,6 +742,11 @@ _.Zones =
 						i(131253),	-- Archer's Chain Bracer
 					},
 				}),
+				q(1268,  {	-- Suspicious Hoofprints
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 21015 },	-- Hoofprints
+				}),
 				q(27262, {	-- Suspicious Hoofprints (A)
 					["coord"] = { 29.6, 47.6, 70 },
 					["races"] = ALLIANCE_ONLY,
@@ -656,6 +771,21 @@ _.Zones =
 					["provider"] = { "n", 4921 },	-- Guard Byron
 					["coord"] = { 66.2, 46.0, 70 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(2861, {	-- Tabetha's Task
+					["u"] = 40,
+					["maps"] = {
+						84,	-- Stormwind
+						85,	-- Orgrimmar
+						87, -- Ironforge
+						90,	-- Undercity
+					},
+					["providers"] = {
+						{ "n", 4568 },	-- Anastasia Hartwell
+						{ "n", 5885 },	-- Deino
+						{ "n", 5144 },	-- Bink
+						{ "n", 5497 },	-- Jennea Cannon
+					},
 				}),
 				q(11198, {	-- Take Down Tethyr!
 					["u"] = 40,
@@ -684,6 +814,35 @@ _.Zones =
 					["coord"] = { 36.4, 31.8, 70 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27260,	-- Lieutenant Paval Reethe
+				}),
+				q(1251,  {	-- The Black Shield
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 20992 },	-- Black Shield
+				}),
+				q(1321,  {	-- The Black Shield
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4926 },	-- Krog
+					["sourceQuest"] = 1251,	-- Black Shield
+				}),
+				q(1322,  {	-- The Black Shield
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5087 },	-- Do'gol
+					["sourceQuest"] = 1321,	-- Black Shield
+				}),
+				q(1323,  {	-- The Black Shield
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5087 },	-- Do'gol
+					["sourceQuest"] = 1322,	-- Black Shield
+				}),
+				q(1276,  {	-- The Black Shield
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4926 },	-- Krog
+					["sourceQuest"] = 1323,	-- The Black Shield
 				}),
 				q(27258, {	-- The Black Shield (offshoot)
 					["provider"] = { "n", 4926 },	-- Krog
@@ -731,10 +890,23 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27256,	-- The Black Shield (#3)
 				}),
+				q(1170,  {	-- The Brood of Onyxia
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4501 },	-- Draz'Zilb
+					["sourceQuest"] = 1169,	-- Identifying the Brood
+				}),
+				q(1171,  {	-- The Brood of Onyxia
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4500 },	-- Overlord Mok'Morokk
+					["sourceQuest"] = 1170,	-- The Brood of Onyxia
+				}),
 				q(1172,  {	-- The Brood of Onyxia
 					["u"] = 40,
-					["provider"] = { "n", 4501 },	-- Draz'Zilb
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4501 },	-- Draz'Zilb
+					["sourceQuest"] = 1171,	-- The Brood of Onyxia
 					["g"] = {
 						un(2, i(10700)),	-- Encarmine Boots
 						un(2, i(10701)),	-- Boots of Zua'tec
@@ -797,6 +969,11 @@ _.Zones =
 						i(131658),	-- Treads of the Skirmisher
 					},
 				}),
+				q(11161, {	-- [DEPRECATED]The Essence of Enmity
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 23579 },	-- Brogg
+				}),
 				q(27409, {	-- The Essence of Enmity
 					["provider"] = { "n", 23579 },	-- Brogg
 					["coord"] = { 41.8, 73.9, 70 },
@@ -808,6 +985,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27292,	-- Return to Krog
 				}),
+				q(11169, {	-- The Grimtotem Weapon
+					["u"] = 40,
+					["provider"] = { "n", 23601 },	-- Apprentice Garion
+				}),
 				q(27336, {	-- The Grimtotem Weapon
 					["provider"] = { "n", 23601 },	-- Apprentice Garion
 					["coord"] = { 46.0, 57.2, 70 },
@@ -818,11 +999,21 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27213,	-- The End of the Deserters
 				}),
+				q(11225, {	-- The Hermit of Witch Hill
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4501 },	-- Draz'Zilb
+				}),
 				q(27182, {	-- The Hermit of Witch Hill
 					["provider"] = { "n", 4501 },	-- Draz'Zilb
 					["coord"] = { 37.1, 33.0, 70 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,	-- for "Marsh Frog Legs"
+				}),
+				q(1238,  {	-- The Lost Report
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 20985 },	-- Loose Dirt
 				}),
 				q(27244, {	-- The Lost Report
 					["coord"] = { 55.4, 25.9, 70 },
@@ -842,6 +1033,10 @@ _.Zones =
 					["provider"] = { "o", 20985 },	-- Loose Dirt
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(11173, {	-- [DEPRECATED]The Reagent Thief
+					["u"] = 40,
+					["provider"] = { "n", 23601 },	-- Apprentice Garion
+				}),
 				q(27339, {	-- The Reagent Thief
 					["provider"] = { "n", 23601 },	-- Apprentice Garion
 					["coord"] = { 46.0, 57.2, 70 },
@@ -852,16 +1047,37 @@ _.Zones =
 						i(131663),	-- The Explorer's Coif
 					},
 				}),
+				q(1239,  {	-- The Severed Head
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 20985 },	-- Loose Dirt
+					["sourceQuest"] = 1238,	-- The Lost Report
+				}),
 				q(1202,  {	-- The Theramore Docks
 					["provider"] = { "n", 4791 },	-- Nazeer Bloodpike
 					["coord"] = { 35.2, 30.6, 70 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 1201,	-- Theramore Spies
 				}),
+				q(1240,  {	-- The Troll Witchdoctor
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4791 },	-- Nazeer Bloodpike
+					["sourceQuest"] = 1239,	-- The Severed Head
+				}),
+				q(11181, {	-- The Witch's Bane
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 23843 },	-- Mordant Grimsby
+				}),
 				q(27189, {	-- The Witch's Bane
 					["provider"] = { "n", 23843 },	-- Mordant Grimsby
 					["coord"] = { 55.5, 26.1, 70 },
 					["sourceQuest"] = 27188,	-- What's Haunting Witch Hill?
+				}),
+				q(11172, {	-- [DEPRECATED]The Zeppelin Crash
+					["u"] = 40,
+					["provider"] = { "n", 23600 },	-- Apprentice Morlann
 				}),
 				q(27346, {	-- The Zeppelin Crash
 					["provider"] = { "n", 23600 },	-- Apprentice Morlann
@@ -919,10 +1135,10 @@ _.Zones =
 				}),
 				q(6624,  {	-- Triage
 					["provider"] = { "n", 12939 },	-- Doctor Gustaf VanHowzen
+					["coord"] = { 67.7, 48.9, 70 },
 					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = 129,	-- First Aid
+					["requireSkill"] = 197,	-- Tailoring
 					["sourceQuest"] = 6625,	-- Alliance Trauma
-					["u"] = 40,	-- Legacy Quests
 				}),
 				q(9437,  {	-- Twilight of the Dawn Runner
 					["provider"] = { "n", 17095 },	-- Balandar Brightstar
@@ -948,6 +1164,9 @@ _.Zones =
 						i(131662),	-- Crested Chain Epaulets
 					},
 				}),
+				q(11184, {	-- [DEPRECATED]WANTED: Goreclaw the Ravenous
+					["u"] = 40,
+				}),
 				q(27412, {	-- WANTED: Goreclaw the Ravenous
 					["provider"] = { "o", 186426 },	-- Wanted Poster (Goreclaw)
 					["coord"] = { 41.7, 73.1, 70 },
@@ -957,6 +1176,11 @@ _.Zones =
 						i(33242),	-- Raptorhide Legguards
 						i(131671),	-- Raptorhide Chain Leggings
 					},
+				}),
+				q(11180, {	-- What's Haunting Witch Hill?
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 23843 },	-- Mordant Grimsby
 				}),
 				q(27188, {	-- What's Haunting Witch Hill?
 					["provider"] = { "n", 23843 },	-- Mordant Grimsby

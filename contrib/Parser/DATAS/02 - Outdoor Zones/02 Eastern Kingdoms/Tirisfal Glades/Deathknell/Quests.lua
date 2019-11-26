@@ -80,6 +80,17 @@ _.Zones =
 						["classes"] = { 8 },	-- Mage
 						["races"] = { 5 },	-- Undead
 					}),
+					q(6395, {	-- Marla's Last Wish
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 1661 },	-- Novice Elreth
+						["sourceQuest"] = 376,	-- The Damned
+					}),
+					q(380,   {	-- Night Web's Hollow
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 1570 },	-- Executor Arren
+					}),
 					q(24973, {	-- Night Web's Hollow
 						["provider"] = { "n", 1570 },	-- Executor Arren
 						["coord"] = { 55.4, 37.7, 465 },
@@ -109,11 +120,23 @@ _.Zones =
 						["races"] = { 5 },	-- undead
 						["classes"] = { 5 },	-- priest
 					}),
+					q(3901, {	-- Rattling the Rattlecages
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
+						["sourceQuest"] = 364,	-- The Mindless Ones
+					}),
 					q(26800, {	-- Recruitment
 						["provider"] = { "n", 26800 },	-- Deathguard Saltain
 						["coord"] = { 49.9, 56.3, 465 },
 						["races"] = { 5 },	-- undead
 						["sourceQuests"] = { 25089 },	-- Beyond the Graves
+					}),
+					q(3902, {	-- Scavenging Deathknell
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 1740 },	-- Deathguard Saltain
+						["sourceQuest"] = 376,	-- The Damned
 					}),
 					q(26801, {	-- Scourge on our Perimeter
 						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
@@ -140,6 +163,11 @@ _.Zones =
 						["races"] = { 5 },	-- undead
 						["classes"] = { 9 },	-- warlock
 					}),
+					q(376,   {	-- The Damned
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 1661 },	-- Novice Elreth
+					}),
 					q(26802, {	-- The Damned
 						["provider"] = { "n", 1570 },	-- Executor Arren
 						["coord"] = { 55.4, 37.7, 465 },
@@ -152,11 +180,29 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 24961 },	-- The Truth of the Grave
 					}),
+					q(364,   {	-- The Mindless Ones
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
+						["sourceQuest"] = 363,	-- Rude Awakening
+					}),
+					q(382,   {	-- The Red Messenger
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 1570 },	-- Executor Arren
+						["sourceQuest"] = 381,	-- The Scarlet Crusade
+					}),
 					q(28608, {	-- The Shadow Grave
 						["provider"] = { "n", 1568 },	-- Undertaker Mordo
 						["coord"] = { 43.4, 79.9, 465 },
 						["sourceQuests"] = { 24959 },	-- Fresh out of the Grave
 						["races"] = { 5 },	-- undead
+					}),
+					q(381,   {	-- The Scarlet Crusade
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 1570 },	-- Executor Arren
+						["sourceQuest"] = 380,	-- Night Web's Hollow
 					}),
 					q(24961, {	-- The Truth of the Grave
 						["provider"] = { "n", 1661 },	-- Novice Elreth
@@ -175,6 +221,12 @@ _.Zones =
 						["coord"] = { 43.4, 79.9, 465 },
 						["races"] = { 5 },	-- undead
 						["sourceQuests"] = { 28608 },	-- The Shadow Grave
+					}),
+					q(383,   {	-- Vital Intelligence
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 1570 },	-- Executor Arren
+						["sourceQuest"] = 382,	-- The Red Messenger
 					}),
 					q(24972, {	-- Vital Intelligence
 						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis

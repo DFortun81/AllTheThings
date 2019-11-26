@@ -129,7 +129,13 @@ _.Zones =
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 				}),
 				q(45842, {	-- A Gift From the Six
-				--	["classes"] = {},	-- need info
+					["classes"] = {	-- may be the "healers only" one instead -- needs to be double-checked/confirmed
+						11,	-- Druid (Balance)
+						3,	-- Hunter (Marksmanship)
+						8,	-- Mage (Frost)
+						5,	-- Priest (Shadow)
+						9,	-- Warlock (Affliction)
+					},
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 				}),
@@ -1132,6 +1138,13 @@ _.Zones =
 				}),
 				q(45185, {	-- Message from the Shadows
 					["provider"] = { "n", 116175 },	-- Karam Magespear
+					["classes"] = {
+						11,	-- Druid (Balance)
+						3,	-- Hunter (Marksmanship)
+						8,	-- Mage (Frost)
+						5,	-- Priest (Shadow)
+						9,	-- Warlock (Affliction)
+					},
 				}),
 				q(47005, {	-- Mistweaver: The Bradensbrook Investigation
 					["sourceQuests"] = { 47027 },	-- Legion Threat: Val'sharah
@@ -1413,9 +1426,6 @@ _.Zones =
 					["coord"] = { 73.8, 42.9, 627 },
 					["provider"] = { "n", 109838 },	-- Calydus
 				}),
-				q(45192, {	-- Runes of Rending
-					["provider"] = { "n", 116175 },	-- Karam Magespear
-				}),
 				q(44204, {	-- Seal their Fates
 					["classes"] = { 4 },
 					["provider"] = { "n", 110820 },	-- Scythe
@@ -1458,6 +1468,13 @@ _.Zones =
 				}),
 				q(45187, {	-- Secrets in the Underbelly
 					["provider"] = { "n", 116175 },	-- Karam Magespear
+					["classes"] = {
+						11,	-- Druid (Balance)
+						3,	-- Hunter (Marksmanship)
+						8,	-- Mage (Frost)
+						5,	-- Priest (Shadow)
+						9,	-- Warlock (Affliction)
+					},
 				}),
 				q(42872, {	-- Securing the Way
 					["sourceQuests"] = { 42869 },	-- Eternal Vigil
@@ -1807,7 +1824,14 @@ _.Zones =
 				}),
 				q(45188, {	-- The Wisdom of the Council
 					["provider"] = { "n", 116308 },	-- Karam Magespear
-					["races"] = ALLIANCE_ONLY,
+					["classes"] = {
+						11,	-- Druid (Balance)
+						3,	-- Hunter (Marksmanship)
+						8,	-- Mage (Frost)
+						5,	-- Priest (Shadow)
+						9,	-- Warlock (Affliction)
+					},
+					["races"] = ALLIANCE_ONLY,	-- may not be alliance-only, but wowhead says it is, so /shrug
 				}),
 				q(44175, {	-- The World Awaits
 					["isWeekly"] = true,
@@ -1989,7 +2013,14 @@ _.Zones =
 				}),
 				q(45190, {	-- Where it's Thinnest
 					["provider"] = { "n", 90463 },	-- Archmage Karlain
-					["races"] = ALLIANCE_ONLY,
+					["classes"] = {
+						11,	-- Druid (Balance)
+						3,	-- Hunter (Marksmanship)
+						8,	-- Mage (Frost)
+						5,	-- Priest (Shadow)
+						9,	-- Warlock (Affliction)
+					},
+					["races"] = ALLIANCE_ONLY,	-- may not be alliance-only, but wowhead says it is, so /shrug
 				}),
 				q(47330, {	-- Whispers of a Frightened World
 				--	unsure if there are prerequisites for this quest.

@@ -294,22 +294,24 @@ _.Zones =
 						}),
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {
-								{ "i", 23247, 350},		-- 350x Burning Blossom
-								{ "c", 241, 55 },		-- 55x Champion's Seal
-								{ "i", 21100, 40 },		-- 40x Coin of Ancestry
+								{ "g", 5000000 },		-- 500g
+								{ "i", 23247, 350 },	-- 350x Burning Blossom
+								{ "c", 241, 55 },		-- 55x  Champion's Seal
+								{ "i", 21100, 40 },		-- 40x  Coin of Ancestry
 								{ "c", 515, 100 },		-- 100x Darkmoon Prize Ticket
-								{ "i", 137642, 12 },	-- 12x Mark of Honor
+								{ "i", 137642, 12 },	-- 12x  Mark of Honor
 								{ "c", 1166, 750 },		-- 750x Timewarped Badge
 								{ "i", 33226, 250 },	-- 250x Tricky Treat
 							},
 						}),
 						i(122339, {	-- Ancient Heirloom Scabbard
 							["cost"] = {
+								{ "g", 7500000 },		-- 750g
 								{ "i", 37829, 300 },	-- 300x Brewfest Prize Token
-								{ "c", 241, 65 },		-- 65x Champion's Seal
+								{ "c", 241, 65 },		-- 65x  Champion's Seal
 								{ "c", 515, 120 },		-- 120x Darkmoon Prize Ticket
-								{ "i", 49927, 200 },	-- 200 Love Token
-								{ "i", 137642, 14 },	-- 14x Mark of Honor
+								{ "i", 49927, 200 },	-- 200x Love Token
+								{ "i", 137642, 14 },	-- 14x  Mark of Honor
 								{ "c", 1166, 900 },		-- 900x Timewarped Badge
 							},
 						}),
@@ -321,12 +323,18 @@ _.Zones =
 						}),
 						i(167731, {	-- Battle-Hardened Heirloom Armor Casing
 							["cost"] = {
+								{ "g", 50000000 },		-- 5,000g
 								{ "i", 23247, 600 },	-- 600x   Burning Blossom
 								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
+								{ "i", 33226, 450 },	-- 450x   Tricky Treat
 							},
 						}),
 						i(167732, {	-- Battle-Hardened Heirloom Scabbard
-							["cost"] = { { "c", 1166, 1200 }, },	-- 1,200x Timewarped Badge
+							["cost"] = {
+								{ "g", 75000000 },		-- 7,500g
+								{ "i", 37829, 500 },	-- 500x   Brewfest Prize Token
+								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
+							},
 						}),
 						i(122369, {	-- Battleworn Thrash Blade
 							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
@@ -531,6 +539,7 @@ _.Zones =
 						}),
 						i(122340, {	-- Timeworn Heirloom Armor Casing
 							["cost"] = {
+								{ "g", 15000000 },		-- 1,500g
 								{ "i", 23247, 600 },	-- 600x   Burning Blossom
 								{ "i", 21100, 75 },		-- 75x    Coin of Ancestry
 								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
@@ -539,6 +548,7 @@ _.Zones =
 						}),
 						i(122341, {	-- Timeworn Heirloom Scabbard
 							["cost"] = {
+								{ "g", 15000000 },		-- 1,500g
 								{ "i", 37829, 500 },	-- 500x   Brewfest Token
 								{ "i", 49927, 450 },	-- 450x   Love Token
 								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
@@ -564,6 +574,7 @@ _.Zones =
 						}),
 						i(151614, {	-- Weathered Heirloom Armor Casing
 							["cost"] = {
+								{ "g", 20000000 },		-- 2,000g
 								{ "i", 23247, 600 },	-- 600x   Burning Blossom
 								{ "i", 21100, 75 },		-- 75x    Coin of Ancestry
 								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
@@ -572,6 +583,7 @@ _.Zones =
 						}),
 						i(151615, {	-- Weathered Heirloom Scabbard
 							["cost"] = {
+								{ "g", 30000000 },		-- 3,000g
 								{ "i", 37829, 500 },	-- 500x   Brewfest Token
 								{ "i", 49927, 450 },	-- 450x   Love Token
 								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge

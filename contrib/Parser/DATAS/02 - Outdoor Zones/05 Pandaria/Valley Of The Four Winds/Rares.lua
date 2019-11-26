@@ -27,6 +27,10 @@ _.Zones =
 						i(87598),	-- Monstrous Silk Gloves
 						i(87599),	-- Grower's Gloves
 						i(87603),	-- Thunderfall Gauntlets
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 51,
+						},
 					},
 				}),
 				n(50828, {	-- Bonobos
@@ -48,6 +52,10 @@ _.Zones =
 						i(87599),	-- Grower's Gloves
 						i(87600),	-- Marshsong Gloves
 					--	i(86591),	-- Magic Banana (should be a toy)
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 2,
+						},
 					},
 				}),
 				n(50351, {	-- Jonn-Dar
@@ -64,6 +72,10 @@ _.Zones =
 						i(87597),	-- Gloves of Congealed Mist
 						i(87602),	-- Grain Warden's Gauntlets
 						i(87599),	-- Grower's Gloves
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 30,
+						},
 					},
 				}),
 				n(50364, {	-- Nal'lak the Ripper
@@ -83,6 +95,10 @@ _.Zones =
 						i(87602),	-- Grain Warden's Gauntlets
 						i(87600),	-- Marshsong Gloves
 						i(87603),	-- Thunderfall Gauntlets
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 16,
+						},
 					},
 				}),
 				n(50811, {	-- Nasra Spothide
@@ -99,6 +115,10 @@ _.Zones =
 						i(87603),	-- Thunderfall Gauntlets
 						i(87601),	-- Plough Driving Grips
 						i(87595),	-- Gloves of Burrow Spelunking
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 37,
+						},
 					},
 				}),
 				n(50783, {	-- Salyin Warscout
@@ -118,6 +138,10 @@ _.Zones =
 						i(87597),	-- Gloves of Congealed Mist
 						i(87600),	-- Marshsong Gloves
 						i(87603),	-- Thunderfall Gauntlets
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 44,
+						},
 					},
 				}),
 				n(50766, {	-- Sele'na
@@ -143,6 +167,10 @@ _.Zones =
 						i(87603),	-- Thunderfall Gauntlets
 						i(87599),	-- Grower's Gloves
 						i(87598),	-- Monstrous Silk Gloves
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 9,
+						},
 					},
 				}),
 				n(50339, {	-- Sulik'shor
@@ -163,6 +191,10 @@ _.Zones =
 								["achievementID"] = 8728,	-- Going To Need A Bigger Bag
 							}),
 						}),
+						{	-- Glorious!
+							["achievementID"] = 7439,
+							["criteriaID"] = 23,
+						},
 					},
 				}),
 			}),

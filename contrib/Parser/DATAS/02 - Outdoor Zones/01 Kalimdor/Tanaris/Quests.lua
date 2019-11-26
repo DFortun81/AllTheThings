@@ -279,6 +279,11 @@ _.Zones =
 					["coord"] = { 49.9, 82.8, 71 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(2661, {	-- Delivery for Marin
+					["u"] = 40,
+					["provider"] = { "n", 7583 },	-- Sprinkle
+					["sourceQuest"] = 2641,	-- Sprinkle's Secret Ingredient
+				}),
 				q(2874,  {	-- Deliver to MacKinley
 					["u"] = 40,
 					["provider"] = { "n", 7881 },	-- Stoley
@@ -330,6 +335,12 @@ _.Zones =
 				q(351,   {	-- Find OOX-17/TN!
 					["description"] = "The item that starts this quest can be found as a zone drop in Tanaris or in Zul'Farrak.",
 					["provider"] = { "i", 8623 },	-- OOX-17/TN Distress Beacon
+				}),
+				q(5802, {	-- Fire Plume Forged
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5411 },	-- Krinkle Goodsteel
+					["sourceQuest"] = 5514,	-- Mold Rhymes With...
 				}),
 				q(25565, {	-- Fragments of Language
 					["sourceQuests"] = { 28881 },	-- Prospector Gunstan
@@ -489,6 +500,11 @@ _.Zones =
 						})),
 					},
 				}),
+				q(2606, {	-- In Good Taste
+					["u"] = 40,
+					["provider"] = { "n", 7564 },	-- Marin Noggenfogger
+					["sourceQuest"] = 2605,	-- The Thirsty Goblin
+				}),
 				q(110,   {	-- Insect Part Analysis
 					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, 71 },
@@ -500,6 +516,11 @@ _.Zones =
 					["coord"] = { 50.8, 27.0, 71 },
 					["sourceQuest"] = 110,	-- Insect Part Analysis
 					["u"] = 40,
+				}),
+				q(3446, {	-- Into the Depths
+					["u"] = 40,
+					["provider"] = { "n", 7771 },	-- Marvon Rivetseeker
+					["sourceQuest"] = 3444,	-- The Stone Circle
 				}),
 				q(25556, {	-- Into Zul'Farrak
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
@@ -566,6 +587,11 @@ _.Zones =
 					["sourceQuest"] = 24910,	-- Rocket Rescue
 					["isBreadcrumb"] = true,
 				}),
+				q(1691, {	-- More Wastewander Justice
+					["u"] = 40,
+					["provider"] = { "n", 7407 },	-- Chief Engineer Bilgewhizzle
+					["sourceQuest"] = 1690,	-- Wastewander Justice
+				}),
 				q(12513, {	-- Nice Hat...
 					-- CRIEVE NOTE: Have this completed on Warrior, can't accept 12515. Also can't accept this quest on Druid.
 					-- Some people are still able to get this.  Not sure what the exact criteria are that need to be met.
@@ -588,6 +614,11 @@ _.Zones =
 							["ignoreSource"] = true,	-- White Item
 						}),
 					},
+				}),
+				q(2662, {	-- Noggenfogger Elixir
+					["u"] = 40,
+					["provider"] = { "n", 7564 },	-- Marin Noggenfogger
+					["sourceQuest"] = 2661,	-- Delivery for Marin
 				}),
 				q(38890, {	-- Not Dead Yet! -- never went live
 					["u"] = 1,
@@ -613,6 +644,10 @@ _.Zones =
 					["coord"] = { 50.8, 27.0, 71 },
 					["sourceQuest"] = 4496,	-- Bungle in the Jungle
 					["u"] = 40,
+				}),
+				q(8365, {	-- Pirate Hats Ahoy!
+					["u"] = 40,
+					["provider"] = { "n", 15165 },	-- Haughty Modiste
 				}),
 				q(28881, {	-- Prospector Gunstan
 					["isBreadcrumb"] = true,
@@ -794,6 +829,11 @@ _.Zones =
 						i(157024),	-- Sandfury Hatchet 
 					},
 				}),
+				q(2865, {	-- Scarab Shells
+					["u"] = 40,
+					["provider"] = { "n", 7876 },	-- Tran'rek
+					["sourceQuest"] = 2864,	-- Tran'rek
+				}),
 				q(25111, {	-- Scavengers Scavenged
 					["provider"] = { "n", 39178 },	-- Driz Plunkbow
 					["coord"] = { 52.2, 28.0, 71 },
@@ -801,6 +841,10 @@ _.Zones =
 				}),
 				q(38892, {	-- Scouting Report -- never went live
 					["u"] = 1,
+				}),
+				q(3520, {	-- Screecher Spirits
+					["u"] = 40,
+					["provider"] = { "n", 8579 },	-- Yeh'kinya
 				}),
 				q(25048, {	-- Seaside Salvage (A)
 					["provider"] = { "n", 38535 },	-- Kelsey Steelspark
@@ -833,6 +877,10 @@ _.Zones =
 						i(165845),	-- Feathers (PET!)
 					},
 				}),
+				q(2876, {	-- Ship Schedules
+					["u"] = 40,
+					["provider"] = { "i", 9250 },	-- Ship Schedule
+				}),
 				q(379,   {	-- Slake That Thirst
 					["provider"] = { "n", 7407 },	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 					["races"] = HORDE_ONLY,
@@ -858,10 +906,33 @@ _.Zones =
 						un(2, i(20641)),	-- Southsea Mojo Boots
 					},
 				}),
+				q(2641, {	-- Sprinkle's Secret Ingredient
+					["u"] = 40,
+					["provider"] = { "n", 7583 },	-- Sprinkle
+					["sourceQuest"] = 2606,	-- In Good Taste
+				}),
+				q(2873, {	-- Stoley's Shipment
+					["u"] = 40,
+					["provider"] = { "n", 7881 },	-- Stoley
+					["sourceQuest"] = 2872,	-- Stoley's Debt
+				}),
+				q(4504, {	-- Super Sticky
+					["u"] = 40,
+					["provider"] = { "n", 7876 },	-- Tran'rek
+				}),
+				q(654,   {	-- Tanaris Field Sampling
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+				}),
 				q(25063, {	-- Terrapination
 					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
 					["coord"] = { 49.9, 82.8, 71 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(4787, {	-- The Ancient Egg
+					["u"] = 40,
+					["provider"] = { "n", 8579 },	-- Yeh'kinya
+					["sourceQuest"] = 3527,	-- The Prophecy of Mosh'aru
 				}),
 				q(10296, {	-- The Black Morass
 					["provider"] = { "n", 20130 },	-- Andormu
@@ -950,6 +1021,11 @@ _.Zones =
 						i(56901),	-- Translation Boots
 						i(56902),	-- Rosy Tablet Belt
 					},
+				}),
+				q(5065, {	-- The Lost Tablets of Mosh'aru
+					["u"] = 40,
+					["provider"] = { "n", 10460 },	-- Prospector Ironboot
+					["sourceQuest"] = 3528,	-- The God Hakkar
 				}),
 				q(2773,  {	-- The Mithril Kid
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
@@ -1066,6 +1142,11 @@ _.Zones =
 						i(21199),	-- Signet Ring of the Bronze Dragonflight
 					},
 				}),
+				q(3527, {	-- The Prophecy of Mosh'aru
+					["u"] = 40,
+					["provider"] = { "n", 8579 },	-- Yeh'kinya
+					["sourceQuest"] = 3520,	-- Screecher Spirits
+				}),
 				q(8751,  {	-- The Protector of Kalimdor
 					["minReputation"] = { 910, EXALTED },
 					["isBreadcrumb"] = true,	-- Exalted Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
@@ -1099,6 +1180,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25017,	-- Ancient Obstacles
 				}),
+				q(3444, {	-- The Stone Circle
+					["u"] = 40,
+					["provider"] = { "n", 7771 },	-- Marvon Rivetseeker
+					["sourceQuests"] = {
+						3445,	-- The Sunken Temple (A)
+						3380,	-- The Sunken Temple (H)
+					},
+				}),
 				q(2954,  {	-- The Stone Watcher
 					["provider"] = { "n", 7918 },	-- Stone Watcher of Norgannon
 					["coord"] = { 37.6, 81.4, 71 },
@@ -1108,6 +1197,14 @@ _.Zones =
 					},
 					["lvl"] = 45,
 					["u"] = 40,
+				}),
+				q(2741, {	-- The Super Egg-O-Matic
+					["u"] = 40,
+					["provider"] = { "o", 142071 },	-- Egg-O-Matic
+				}),
+				q(2605, {	-- The Thirsty Goblin
+					["u"] = 40,
+					["provider"] = { "n", 7564 },	-- Marin Noggenfogger
 				}),
 				q(26896, {	-- The Thunderdrome!
 					["provider"] = { "n", 44374 },	-- Sherm
@@ -1138,6 +1235,11 @@ _.Zones =
 					["g"] = {
 						un(2, i(7988)),	-- Plans: Ornate Mithril Boots
 					},
+				}),
+				q(3362, {	-- Thistleshrub Valley
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 7876 },	-- Tran'rek
 				}),
 				q(25513, {	-- Thunderdrome: Grudge Match!
 					["provider"] = { "n", 39034 },	-- Dr. Dealwell
@@ -1213,6 +1315,10 @@ _.Zones =
 						un(2, i(9638)),	-- Chelonian Cuffs
 					},
 				}),
+				q(3042, {	-- Troll Temper
+					["u"] = 40,
+					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
+				}),
 				q(24911, {	-- Tropical Paradise Beckons
 					["isBreadcrumb"] = true,
 					["coords"] = {
@@ -1230,11 +1336,27 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24905,	-- Returning a Favor
 				}),
+				q(2875, {	-- WANTED: Andre Firebeard
+					["u"] = 40,
+					["provider"] = { "o", 142122 },	-- Wanted Poster
+				}),
+				q(2781, {	-- WANTED: Caliph Scorpidsting
+					["u"] = 40,
+					["provider"] = { "o", 142122 },	-- Wanted Poster
+				}),
 				q(9268,  {	-- War at Sea
 					["provider"] = { "n", 16417 },	-- Rumsen Fizzlebrack
 					["coord"] = { 50.4, 27.2, 71 },
 					["repeatable"] = true,
 					["description"] = "Only available with reputations of Hated or Unfriendly with Gadgetzan",
+				}),
+				q(1690, {	-- Wastewander Justice
+					["u"] = 40,
+					["provider"] = { "n", 7407 },	-- Chief Engineer Bilgewhizzle
+				}),
+				q(1707, {	-- Water Pouch Bounty
+					["u"] = 40,
+					["provider"] = { "n", 7408 },	-- Spigot Operator Luglunket
 				}),
 				q(25070, {	-- What Lies Within
 					["coord"] = { 37.8, 82.4, 71 },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead

@@ -70,6 +70,10 @@ _.Zones =
 					["description"] = "Available after completing all quests at Mossy Pile.",
 					["isBreadcrumb"] = true,
 				}),
+				q(3883, {	-- Alien Ecology
+					["u"] = 40,
+					["provider"] = { "n", 9271 },	-- Hol'anyee Marshal
+				}),
 				q(24866, {	-- An Abandoned Research Camp
 					["coord"] = { 38.4, 66.1, 78 },
 					["provider"] = { "o", 161521 },	-- Research Equipment
@@ -96,6 +100,12 @@ _.Zones =
 						i(53576),	-- Fire Plume Breastplate
 					},
 				}),
+				q(4148, {	-- Bloodpetal Zapper
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9118 },	-- Larion
+					["sourceQuest"] = 4146,	-- Zapper Fuel
+				}),
 				q(24687, {	-- Bouquets of Death
 					["provider"] = { "n", 38263 },	-- Ithis Moonwarden
 					["coord"] = { 76.4, 48.3, 78 },
@@ -105,6 +115,20 @@ _.Zones =
 					["provider"] = { "n", 38274 },	-- Garl Stormclaw
 					["coord"] = { 70.8, 76.6, 78 },
 					["sourceQuest"] = 24719,	-- Claws of White
+				}),
+				q(4243, {	-- Chasing A-Me 01
+					["u"] = 40,
+					["provider"] = { "n", 9618 },	-- Karna Remtravel
+				}),
+				q(4244, {	-- Chasing A-Me 01
+					["u"] = 40,
+					["provider"] = { "n", 9623 },	-- A-Me 01
+					["sourceQuest"] = 4243,	-- Chasing A-Me 01
+				}),
+				q(4245, {	-- Chasing A-Me 01
+					["u"] = 40,
+					["provider"] = { "n", 9623 },	-- A-Me 01
+					["sourceQuest"] = 4244,	-- Chasing A-Me 01
 				}),
 				q(24714, {	-- Chasing A-Me 01
 					["provider"] = { "n", 9618 },	-- Karna Remtravel
@@ -181,6 +205,10 @@ _.Zones =
 						24723,	-- The Western Pylon
 					},
 				}),
+				q(4284, {	-- Crystals of Power
+					["u"] = 40,
+					["provider"] = { "n", 9117 },	-- J.D. Collie
+				}),
 				q(24720, {	-- Crystals of Power
 					["provider"] = { "n", 9117 },	-- J.D. Collie
 					["coord"] = { 54.1, 62.5, 78 },
@@ -203,6 +231,10 @@ _.Zones =
 					["coord"] = { 30.6, 51.1, 78 },
 					["sourceQuest"] = 24703,	-- An Important Lesson
 				}),
+				q(3881, {	-- Expedition Salvation
+					["u"] = 40,
+					["provider"] = { "n", 9270 },	-- Williden Marshal
+				}),
 				q(24695, {	-- Ever Watching From Above
 					["provider"] = { "n", 38502 },	-- Nablya
 					["coord"] = { 83.5, 46.0, 78 },
@@ -217,6 +249,10 @@ _.Zones =
 					["provider"] = { "n", 38269 },	-- Zen'Aliri
 					["coord"] = { 55.7, 60.5, 78 },
 					["isBreadcrumb"] = true,
+				}),
+				q(974,   {	-- Finding the Source
+					["u"] = 40,
+					["provider"] = { "n", 10302 },	-- Krakle
 				}),
 				q(24742, {	-- Finding the Source
 					["provider"] = { "n", 10302 },	-- Krakle
@@ -290,6 +326,11 @@ _.Zones =
 						un(2, i(11904)),	-- Spirit of Aquementas
 					},
 				}),
+				q(4145, {	-- Larion and Muigin
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9118 },	-- Larion
+				}),
 				q(3961,  {	-- Linken's Adventure
 					["u"] = 40,
 					["provider"] = { "n", 9117 },	-- J.D. Collie
@@ -314,6 +355,15 @@ _.Zones =
 				--	["coord"] = { 54.9, 62.6, 78 },
 				--	["sourceQuest"] = 24794,	-- Speak with Spraggle
 				}),
+				q(4321, {	-- Making Sense of It
+					["u"] = 40,
+					["provider"] = { "n", 9117 },	-- J.D. Collie
+					["sourceQuests"] = {
+						4287,	-- The Eastern Pylon
+						4285,	-- The Northern Pylon
+						4288,	-- The Western Pylon
+					},
+				}),
 				q(24701, {	-- Marshal's Refuse
 					["provider"] = { "n", 38277 },	-- Doreen
 					["coord"] = { 43.2, 40.9, 78 },
@@ -323,6 +373,12 @@ _.Zones =
 						i(53581),	-- Abandoned Leggings
 						i(53582),	-- Discarded Bracers
 					},
+				}),
+				q(4147, {	-- Marvon's Workshop
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9118 },	-- Larion
+					["sourceQuest"] = 4145,	-- Larion and Muigin
 				}),
 				q(24693, {	-- Mossy Pile
 					["provider"] = { "n", 10977 },	-- Quixxil
@@ -422,6 +478,10 @@ _.Zones =
 					["coord"] = { 43.2, 40.8, 78 },
 					["sourceQuest"] = 24693,	-- Mossy Pile
 				}),
+				q(4289, {	-- The Apes of Un'Goro
+					["u"] = 40,
+					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
+				}),
 				q(24717, {	-- The Apes of Un'Goro
 					["provider"] = { "n", 38275 },	-- Gremix
 					["coord"] = { 43.2, 41.0, 78 },
@@ -464,6 +524,11 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 24695,	-- Ever Watching From Above
 				}),
+				q(4287, {	-- The Eastern Pylon
+					["u"] = 40,
+					["provider"] = { "n", 9117 },	-- J.D. Collie
+					["sourceQuest"] = 4284,	-- Crystals of Power
+				}),
 				q(24721, {	-- The Eastern Pylon
 					["provider"] = { "n", 38263 },	-- ithis Moonwarden
 					["coord"] = { 76.4, 48.3, 78 },
@@ -476,6 +541,10 @@ _.Zones =
 					},
 					["coord"] = { 30.6, 51.1, 78 },
 					["sourceQuest"] = 24703,	-- An Important Lesson
+				}),
+				q(4290, {	-- The Fare of Lar'korwi
+					["u"] = 40,
+					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
 				}),
 				q(24731, {	-- The Fare of Lar'korwi
 					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
@@ -514,10 +583,25 @@ _.Zones =
 						i(156995),	-- Beastflayer
 					},
 				}),
+				q(980,   {	-- The New Springs
+					["u"] = 40,
+					["provider"] = { "n", 10302 },	-- Krakle
+					["sourceQuest"] = 974,	-- Finding the Source
+				}),
+				q(4285, {	-- The Northern Pylon
+					["u"] = 40,
+					["provider"] = { "n", 9117 },	-- J.D. Collie
+					["sourceQuest"] = 4284,	-- Crystals of Power
+				}),
 				q(24722, {	-- The Northern Pylon
 					["provider"] = { "n", 38275 },	-- Gremix
 					["coord"] = { 43.2, 41.1, 78 },
 					["sourceQuest"] = 24717,	-- The Apes of Un'Goro
+				}),
+				q(4291, {	-- The Scent of Lar'korwi
+					["u"] = 40,
+					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
+					["sourceQuest"] = 4290,	-- The Fare of Lar'korwi
 				}),
 				q(24732, {	-- The Scent of Lar'korwi
 					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
@@ -542,6 +626,11 @@ _.Zones =
 						24705,	-- Damsels Were Made to be Saved
 						24704,	-- The Evil Dragons of Un'Goro Crater
 					},
+				}),
+				q(4288, {	-- The Western Pylon
+					["u"] = 40,
+					["provider"] = { "n", 9117 },	-- J.D. Collie
+					["sourceQuest"] = 4284,	-- Crystals of Power
 				}),
 				q(24723, {	-- The Western Pylon
 					["provider"] = { "n", 9272 },	-- Spark Nilminer

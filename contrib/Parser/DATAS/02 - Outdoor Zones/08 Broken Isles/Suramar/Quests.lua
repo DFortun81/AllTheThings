@@ -261,9 +261,6 @@ _.Zones =
 				}),
 				q(43317),	-- In the Bag
 				q(44726),	-- In the Business of Souls
-				q(11964, {	-- Incense for the Summer Scorchlings
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(44569),	-- Inquisitor Volitix
 				q(45271),	-- Insurrection
 				q(45278, {	-- Insurrection: An Elven Problem

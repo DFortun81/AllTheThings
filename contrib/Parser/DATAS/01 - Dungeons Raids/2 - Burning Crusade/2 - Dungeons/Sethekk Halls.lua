@@ -19,27 +19,27 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}),
 			}),
 			n(-17, {	-- Quests 	
+					q(10097,  {	-- Brother Against Brother
+						["u"] = 40,
+						["provider"] = { "n", 18933 },	-- Isfar
+					}),
 					q(29605, {	-- Brother Against Brother
 						["provider"] = { "n", 54840 },	-- Isfar
 						["sourceQuests"] = 10180,	-- Can't Stay Away
-						["groups"] = {
-							{	-- Mark of the Ravenguard
-								["itemID"] = 29336,	-- Mark of the Ravenguard
-							},
-							{	-- Sethekk Oracle's Focus
-								["itemID"] = 29334,	-- Sethekk Oracle's Focus
-							},
-							{	-- Talon Lord's Collar
-								["itemID"] = 29335,	-- Talon Lord's Collar
-							},
-							{	-- Torc of the Sethekk Prophet
-								["itemID"] = 29333,	-- Torc of the Sethekk Prophet
-							},
+						["g"] = {
+							i(29336),	-- Mark of the Ravenguard
+							i(29334),	-- Sethekk Oracle's Focus
+							i(29335),	-- Talon Lord's Collar
+							i(29333),	-- Torc of the Sethekk Prophet
 						},
 					}),
 					q(29607, {	-- Eyes of Desire
 						["provider"] = { "n", 54847 },	-- Dealer Vijaad
 						["description"] = "Dealer Vijaad appears upon defeating Darkweaver Syth.",
+					}),
+					q(10098,  {	-- Terokk's Legacy
+						["u"] = 40,
+						["provider"] = { "n", 18933 },	-- Isfar
 					}),
 					q(29606, {	-- Terokk's Legacy
 						["provider"] = { "n", 54840 },	-- Isfar

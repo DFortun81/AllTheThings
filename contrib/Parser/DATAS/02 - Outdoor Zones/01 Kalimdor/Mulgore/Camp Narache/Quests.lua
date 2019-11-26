@@ -18,6 +18,15 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 752,	-- A Humble Task
 					}),
+					q(14453,   {	-- A Humble Task
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+					}),
+					q(3376, {	-- Break Sharptusk!
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 3209 },	-- Brave Windfeather
+					}),
 					q(14461, {	-- Feed of Evil
 						["provider"] = { "n", 36694 },	-- Adana Thunderhorn
 						["coord"] = { 31.0, 50.6, 462 },
@@ -92,6 +101,14 @@ _.Zones =
 						["provider"] = { "n", 2981 },	-- Chief Hawkwind
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 757,	-- Rite of Strength
+					}),
+					q(14437, {	-- Rites of the Earthmother
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
+					}),
+					q(14440, {	-- Rites of the Earthmother
+						["u"] = 40,
+						["races"] = HORDE_ONLY,
 					}),
 					q(23733, {	-- Rites of the Earthmother
 						["provider"] = { "n", 2981 },	-- Chief Hawkwind

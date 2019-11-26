@@ -33,6 +33,14 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(10824)),	-- Amberglow Talisman
 					},
 				}),
+				q(3525, {	-- Extinguishing the Idol
+					["u"] = 40,
+					["provider"] = { "n", 8516 },	-- Belnistrasz
+					["sourceQuest"] = 3523,	-- Scourge of the Downs
+					["g"] = {
+						un(2, i(10710)),	-- Dragonclaw Ring
+					},
+				}),
 				q(27022, {	-- Extinguishing the Idol
 					["sourceQuests"] = { 27019 },	-- Scourge of the Downs
 					["provider"] = { "n", 8516 },	-- Belnistrasz
@@ -44,6 +52,10 @@ _.Instances = { tier(1, {	-- Classic
 				q(27024, {	-- Partners in Crime
 					["provider"] = { "n", 44837 },	-- Koristrasza
 					["u"] = 40,
+				}),
+				q(3523, {	-- Scourge of the Downs
+					["u"] = 40,
+					["provider"] = { "n", 8516 },	-- Belnistrasz
 				}),
 				q(27019, {	-- Scourge of the Downs
 					["provider"] = { "n", 8516 },	-- Belnistrasz

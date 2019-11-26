@@ -12,8 +12,23 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		},
 		["groups"] = {
 			n(-17, {	-- Quests
+				q(10283,  {	-- Taretha's Diversion
+					["u"] = 40,
+					["provider"] = { "n", 18723 },	-- Erozion
+				}),
 				q(29598, {	-- Taretha's Diversion
 					["provider"] = { "n", 18723 },	-- Erozion
+				}),
+				q(10284,  {	-- Escape from Durnholde
+					["u"] = 40,
+					["provider"] = { "n", 17876 },	-- Thrall
+					["sourceQuest"] = 10283,	-- Taretha's Diversion
+					["groups"] = {
+						i(29317),	-- Tempest's Touch
+						i(29318),	-- Southshore Sneakers
+						i(29319),	-- Tarren Mill Defender's Cinch
+						i(29316),	-- Warchief's Mantle
+					},
 				}),
 				q(29599, {	-- Escape from Durnholde
 					["provider"] = { "n", 17876 },	-- Thrall
@@ -24,6 +39,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(29319),	-- Tarren Mill Defender's Cinch
 						i(29316),	-- Warchief's Mantle
 					},
+				}),
+				q(10285,  {	-- Return to Andormu
+					["u"] = 40,
+					["provider"] = { "n", 18723 },	-- Erozion
+					["sourceQuest"] = 10284,	-- Escape from Durnholde
 				}),
 			}),
 			n(-2, {	-- Vendors

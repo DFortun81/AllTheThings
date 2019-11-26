@@ -30,6 +30,9 @@ _.Zones =
 									i(33820),	-- Weather-Beaten Fishing Hat
 									i(34837),	-- The 2 Ring
 								}),
+								crit(1, {	-- Crocolisks in the City
+									["achievementID"] = 905,	-- Old Man Barlowned
+								}),
 							},	
 						}),
 						q(11669, {	-- Felblood Fillet
@@ -40,6 +43,9 @@ _.Zones =
 							["groups"] = {
 								i(34863,  {  -- Bag of Fishing Treasures
 									i(33820),  -- Weather-Beaten Fishing Hat
+								}),
+								crit(3, {	-- Felblood Fillet
+									["achievementID"] = 905,	-- Old Man Barlowned
 								}),
 							},
 						}),
@@ -52,6 +58,9 @@ _.Zones =
 								i(34863,  {  -- Bag of Fishing Treasures
 									i(33820),  -- Weather-Beaten Fishing Hat
 								}),
+								crit(5, {	-- Shrimpin' Ain't Easy
+									["achievementID"] = 905,	-- Old Man Barlowned
+								}),
 							},
 						}),
 						q(11667, {	-- The One That Got Away
@@ -63,6 +72,9 @@ _.Zones =
 								i(34863,  {  -- Bag of Fishing Treasures
 									i(33820),  -- Weather-Beaten Fishing Hat
 								}),
+								crit(4, {	-- The One That Got Away
+									["achievementID"] = 905,	-- Old Man Barlowned
+								}),
 							},
 						}),
 						q(11666, {	-- Bait Bandits
@@ -73,6 +85,9 @@ _.Zones =
 							["groups"] = {
 								i(34863,  {  -- Bag of Fishing Treasures
 									i(33820),  -- Weather-Beaten Fishing Hat
+								}),
+								crit(2, {	-- Bait Bandits
+									["achievementID"] = 905,	-- Old Man Barlowned
 								}),
 							},
 						}),

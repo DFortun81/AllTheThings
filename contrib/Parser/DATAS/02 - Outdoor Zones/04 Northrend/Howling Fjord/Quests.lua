@@ -443,6 +443,18 @@ _.Zones =
 					["coord"] = { 36.3, 80.4, 117 },
 					["sourceQuest"] = 11434,	-- Forgotten Treasure
 				}),
+				q(12918, {	-- Gem Perfection (A)
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26915 },	-- Ounhulo
+					["requireSkill"] = 755,	-- Jewelcrafting
+				}),
+				q(12952, {	-- Gem Perfection (H)
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26960 },	-- Carter Tiffens
+					["requireSkill"] = 755,	-- Jewelcrafting
+				}),
 				q(12181, {	-- Give it a Name
 					["coord"] = { 53.5, 66.3, 117 },
 					["races"] = HORDE_ONLY,

@@ -841,6 +841,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 31239 },	-- Primed Key Mold
 				}),
+				q(10755, {	-- Entry Into the Citadel
+					["u"] = 40,
+					["crs"] = { 22037 },	-- Smith Gorlunk
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 31241 },	-- Primed Key Mold
+				}),
 				q(10451, {	-- Escape from Coilskar Cistern
 					["provider"] = { "n", 21027 },	-- Earthmender Wilda
 					["coord"] = { 52.1, 18.8, 104 },
@@ -916,6 +922,9 @@ _.Zones =
 				q(10514, {	-- I Was A Lot Of Things...
 					["provider"] = { "n", 21183 },	-- Oronok Torn-heart
 					["sourceQuests"] = { 10513 },	-- Oronok Torn-heart
+				}),
+				q(11498, {	-- Learning to Fly
+					["provider"] = { "n", 18940 },	-- Nutral
 				}),
 				q(10537, {	-- Lohn'goron, Bow of the Torn-heart
 					["provider"] = { "n", 21318 },	-- Spirit of Ar'tor
@@ -1001,6 +1010,9 @@ _.Zones =
 					["provider"] = { "n", 21777 },	-- Gnomus
 					["coord"] = { 36.5, 55.2, 104 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(10815, {	-- The Journal of Val'zareq: Portends of War (NYI - never left Beta)
+					["u"] = 1,
 				}),
 				q(10677, {	-- The Second Course...
 					["provider"] = { "n", 21777 },	-- Gnomus

@@ -134,6 +134,11 @@ _.Zones =
 						i(131344), 	-- Kodo Lead Chain
 					},
 				}),
+				q(5386, {	-- Catch of the Day
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11259 },	-- Nataka Longhorn
+				}),
 				q(14316, {	-- Cenarion Property
 					["provider"] = { "n", 36052 },	-- Garren Darkwind
 					["coord"] = { 58.4, 49.8, 66 },
@@ -405,6 +410,11 @@ _.Zones =
 					["provider"] = { "n", 35757 },	-- Bizby
 					["coord"] = { 60.9, 29.0, 66 },
 				}),
+				q(5381, {	-- Hand of Iruxos
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11624 },	-- Taiga Wisemane
+				}),
 				q(14254, {	-- Heavy Metal
 					["model"] = 253308,
 					["coord"] = { 69.2, 21.3, 66 },
@@ -418,6 +428,11 @@ _.Zones =
 						14373,	-- Infernal Encroachment
 						14374,	-- Portals of the Legion
 					},
+				}),
+				q(5763, {	-- Hunting in Stranglethorn
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11877 },	-- Roon Wildmane
 				}),
 				q(14373, {	-- Infernal Encroachment
 					["provider"] = { "n", 36329 },	-- Thargad
@@ -454,6 +469,11 @@ _.Zones =
 					["crs"] = { 35591 },	-- Lesser Infernal
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 49200 },	-- Infernal Power Core
+				}),
+				q(1365,  {	-- Khan Dez'hepah
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5395 },	-- Felgur Twocuts
 				}),
 				q(1381,  {	-- Khan Hratha (Magram Clan Friendly Version)
 					["u"] = 40,
@@ -682,6 +702,10 @@ _.Zones =
 					["repeatable"] = true,
 					["sourceQuest"] = 14213,	-- Ten Pounds of Flesh
 				}),
+				q(5741, {	-- Sceptre of Light
+					["u"] = 40,
+					["provider"] = { "n", 11863 },	-- Azore Aldamort
+				}),
 				q(14337, {	-- Shadowprey Village
 					["provider"] = { "n", 36034 },	-- Karnum Marshweaver
 					["coord"] = { 57.3, 47.7, 66 },
@@ -757,10 +781,44 @@ _.Zones =
 					["lvl"] = 30,
 					["u"] = 40,
 				}),
+				q(1480, {	-- The Corrupter
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 20310 },	-- Flayed Demon Skin
+					["crs"] = {
+						4665,	-- Burning Blade Adept
+						4663,	-- Burning Blade Augur
+						4666,	-- Burning Blade Felsworn
+						4705,	-- Burning Blade Invoker
+						4664,	-- Burning Blade Reaver
+						13019,	-- Burning Blade Seer
+						4667,	-- Burning Blade Shadowmage
+						4668,	-- Burning Blade Summoner
+					},
+				}),
+				q(1481, {	-- The Corrupter
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4498 },	-- Maurin Bonesplitter
+					["sourceQuest"] = 1480,	-- The Corrupter
+				}),
+				q(1482, {	-- The Corrupter
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4498 },	-- Maurin Bonesplitter
+					["sourceQuest"] = 1481,	-- The Corrupter
+				}),
+				q(1484, {	-- The Corrupter
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4498 },	-- Maurin Bonesplitter
+					["sourceQuest"] = 1482,	-- The Corrupter
+				}),
 				q(1488,  {	-- The Corrupter
 					["u"] = 40,
-					["provider"] = { "n", 5641 },	-- Takata Steelblade
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5641 },	-- Takata Steelblade
+					["sourceQuest"] = 1484,	-- The Corrupter
 					["g"] = {
 						un(2, i(6746)),	-- Basalt Buckler
 						un(2, i(6747)),	-- Enforcer Pauldrons

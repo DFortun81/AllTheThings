@@ -6,7 +6,7 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(650, {	-- Highmountain
 			n(-16,  {	-- Rares
-				v(40413,  {	-- "Sure Shot" Arnie (Amateur Hunters)
+				v(40413,  {	-- "Sure-Shot" Arnie, Dargok Thunderuin & Ryael Dawndrifter (Amateur Hunters)
 					["description"] = "|cff66ccffThere are three hunters (Ryael Dawndrifter, \"Sure-Shot\" Arnie, and Dargok Thunderuin) who have surrounded Mara Swiftmane. Engage the amateur hunters in combat, and a Battered Chest will spawn near Mara Swiftmane. The hunters stun and trap themselves if the fight lasts long enough. Once the battle is over, Mara will thank you and leave you with the Battered Chest. |r",
 					["coord"] = { 43.1, 47.9, 650 },
 					["crs"] = {

@@ -607,24 +607,28 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+						["lvl"] = 100,
 					}),
 					q(37818, {	-- Death to Hivelord Ik'rix!
 						["coord"] = { 40.2, 56.7, 590 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+						["lvl"] = 100,
 					}),
 					q(37815, {	-- Death to Nullifier Darkoor!
 						["coord"] = { 40.2, 56.7, 590 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+						["lvl"] = 100,
 					}),
 					q(37949, {	-- Death to Nullifier Darkoor!
 						["coord"] = { 40.2, 56.7, 590 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+						["lvl"] = 100,
 					}),
 					q(37817, {	-- Death to Tremor!
 						["coord"] = { 40.2, 56.7, 590 },
@@ -638,6 +642,7 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 89806 },	-- Shadow Hunter Ty'jin
+						["lvl"] = 100,
 					}),
 					q(34379, {	-- Den of Wolves
 						["provider"] = { "n", 76411 },	-- Farseer Drek'Thar

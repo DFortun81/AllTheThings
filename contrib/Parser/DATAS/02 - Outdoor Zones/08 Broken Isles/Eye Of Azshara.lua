@@ -24,14 +24,14 @@ _.Zones =
 				}),
 				n(-16, {	-- Rares
 					n(111573, {	-- Kosumoth the Hungering
-						["description"] = "For a detailed explanation on how to get this world quest to be available, go to Outdoor Zones - Broken Isles - Broken Shore and look under Special at |cFFFFD700Kosumoth the Hungering|r.",
+						["description"] = "For a detailed explanation on how to get this world quest to be available, find |cFFFFD700Kosumoth the Hungering|r in the Secrets section of the ATT main list (type /att main, or click the minimap button).",
 						["questID"] = 45479,
 						["g"] = {
 							q(43798, {	-- DANGER: Kosumoth the Hungering
 								["repeatable"] = true,
 								["g"] = {
-									i(140261),	-- Pet
-									i(138201),	-- Mount
+									i(140261), 	-- Hungering Claw (PET!)
+									i(138201),	-- Fathom Dweller (MOUNT!)
 								},
 							}),
 						},

@@ -17,6 +17,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					q(29640, {	-- Find Spy To'gun
 						["provider"] = { "n", 54891 },	-- Spy Grik'tha
 					}),
+					q(10095,  {	-- Into the Heart of the Labyrinth
+						["u"] = 40,
+						["provider"] = { "o", 182947 },	-- The Codex of Blood
+					}),
 					q(29644, {	-- Into the Heart of the Labyrinth
 						["provider"] = { "o", 182947 },	-- The Codex of Blood
 						["icon"] = "Interface\\Icons\\ability_warlock_ancientgrimoire",
@@ -28,6 +32,23 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							i(28176),	-- Sha'tari Wrought Greaves
 						},
 					}),
+					q(10094,  {	-- The Codex of Blood
+						["u"] = 40,
+						["provider"] = { "n", 19542 },	-- Field Commander Mahfuun
+					}),
+					q(29643, {	-- The Codex of Blood
+						["provider"] = { "n", 54890 },	-- Field Commander Mahfuun
+					}),
+					q(10091,  {	-- The Soul Devices
+						["u"] = 40,
+						["provider"] = { "n", 18891 },	-- Spy To'gun
+						["g"] = {
+							i(28174),	-- Shattrath Wraps
+							i(28171),	-- Spymistress' Wristguards
+							i(28170),	-- Auchenai Bracers
+							i(28167),	-- Sha'tari Wrought Armguards
+						},
+					}),
 					q(29641, {	-- The Soul Devices
 						["provider"] = { "n", 18891 },	-- Spy To'gun
 						["sourceQuests"] = { 29640 },	-- Find Spy To'gun
@@ -37,9 +58,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							i(28170),	-- Auchenai Bracers
 							i(28167),	-- Sha'tari Wrought Armguards
 						},
-					}),
-					q(29643, {	-- The Codex of Blood
-						["provider"] = { "n", 54890 },	-- Field Commander Mahfuun
 					}),
 				},
 			}),

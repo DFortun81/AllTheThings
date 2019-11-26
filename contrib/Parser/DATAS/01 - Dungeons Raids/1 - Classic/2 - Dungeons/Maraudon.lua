@@ -119,6 +119,14 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(-40, {	-- Legacy
 				n(-17, {	-- Quests (Legacy)
+					q(7044, {	-- Legends of Maraudon
+						["u"] = 40,
+						["provider"] = { "n", 13697 },	-- Cavindra
+					}),
+					q(7066, {	-- Seed of Life
+						["u"] = 40,
+						["provider"] = { "n", 12238 },	-- Zaetar's Spirit
+					}),
 					q(7070, {	-- Shadowshard Fragments
 						["u"] = 40,
 						["races"] = ALLIANCE_ONLY,

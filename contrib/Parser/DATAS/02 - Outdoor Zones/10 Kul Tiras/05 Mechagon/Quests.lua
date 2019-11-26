@@ -597,7 +597,7 @@ _.Zones =
 					},
 				}),
 				i(169864, {	-- Old Pirate Hat
-					["description"] = "You need to be on either \"A Growing Mytery\", \"Time for Heroics\", \"Deck 'Em\" or \"A Historical Mess\" to get this item.",
+					["description"] = "You need to be on either \"A Growing Mystery\", \"Time for Heroics\", \"Deck 'Em\" or \"A Historical Mess\" to get this item.",
 					["crs"] = { 150698 },	-- Congealed Oil
 					["g"] = {
 						q(56469, {	-- Pirates? I Hate Those Guys!

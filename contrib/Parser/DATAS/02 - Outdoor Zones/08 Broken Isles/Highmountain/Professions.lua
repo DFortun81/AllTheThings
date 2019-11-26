@@ -137,14 +137,6 @@ _.Zones =
 							i(123941),	-- Recipe: Demonsteel Waistguard [Rank 2]
 						},
 					}),
-					n(-34, {	-- World Quests
-						q(41635, {	-- Work Order: Leystone Boots
-							["provider"] = { "n", 106902 },	-- Ransa Greyfeather
-							["groups"] = {
-								i(137605),	-- Recipe: Leystone Boots (Rank 3)
-							},
-						}),
-					}),
 				}),
 				prof(185, {	-- Cooking
 					i(133820, {	-- Recipe: Drogbar-Style Salmon

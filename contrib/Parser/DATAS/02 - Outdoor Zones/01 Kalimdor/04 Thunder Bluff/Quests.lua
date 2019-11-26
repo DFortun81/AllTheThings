@@ -6,6 +6,26 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(88, {	-- Thunder Bluff
 			n(-17, {	-- Quests
+				q(7822, {	-- A Donation of Mageweave
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14728 },	-- Rumstag Proudstrider
+				}),
+				q(7823, {	-- A Donation of Runecloth
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14728 },	-- Rumstag Proudstrider
+				}),
+				q(7821, {	-- A Donation of Silk
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14728 },	-- Rumstag Proudstrider
+				}),
+				q(7820, {	-- A Donation of Wool
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14728 },	-- Rumstag Proudstrider
+				}),
 				q(2968, {	-- A Future Task
 					["provider"] = { "n", 3978 },	-- Sage Truthseeker
 					["coord"] = { 34.4, 46.9, 88 },
@@ -26,6 +46,26 @@ _.Zones =
 					["classes"] = { 11 },	-- Druid
 					["lvl"] = 20,
 				}),
+				q(1102, {	-- A Vengeful Fate
+					["provider"] = { "n", 4451 },	-- Auld Stonespire
+					["coord"] = { 36.2, 59.8 , 88 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 29,
+					["u"] = 40,
+					["g"] = {
+						un(2, i(4197)),	-- Berylline Pads
+						un(2, i(6742)),	-- Stonefist Girdle
+						un(2, i(6725)),	-- Marbled Buckler
+					},
+				}),
+				q(27277, {	-- An Audience with Ureda
+					["provider"] = { "n", 3047 },	-- Archmage Shymm
+					["coord"] = { 22.6, 15.0, 88 },	-- Archmage Shymm (Thunder Bluff)
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+					["classes"] = { 8 },	-- Mage
+					["lvl"] = 20,
+				}),
 				q(5088, {	-- Arikara
 					["provider"] = { "n", 4046 },	-- Magatha Grimtotem
 					["coord"] = { 69.9, 30.9, 88 },
@@ -38,25 +78,10 @@ _.Zones =
 						un(2, i(15466)),	-- Clink Shield
 					},
 				}),
-				q(27277, {	-- An Audience with Ureda
-					["provider"] = { "n", 3047 },	-- Archmage Shymm
-					["coord"] = { 22.6, 15.0, 88 },	-- Archmage Shymm (Thunder Bluff)
-					["isBreadcrumb"] = true,
-					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
-					["lvl"] = 20,
-				}),
-				q(1102, {	-- A Vengeful Fate
-					["provider"] = { "n", 4451 },	-- Auld Stonespire
-					["coord"] = { 36.2, 59.8 , 88 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 29,
+				q(3762, {	-- Assisting Arch Druid Runetotem
 					["u"] = 40,
-					["g"] = {
-						un(2, i(4197)),	-- Berylline Pads
-						un(2, i(6742)),	-- Stonefist Girdle
-						un(2, i(6725)),	-- Marbled Buckler
-					},
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 6746 },	-- Innkeeper Pala
 				}),
 				q(1845, {	-- Brutal Helm
 					["provider"] = { "n", 6410 },	-- Orm Stonehoof
@@ -133,6 +158,12 @@ _.Zones =
 					["classes"] = { 2 },	-- Paladin
 					["lvl"] = 20,
 				}),
+				q(1064,  {	-- Forsaken Aid
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4046 },	-- Magatha Grimtotem
+					["sourceQuest"] = 1063,	-- The Elder Crone
+				}),
 				q(768, {    -- Gathering Leather
 					["provider"] = { "n", 3050 },    -- Veren Tallstrider
 					["coord"] = { 44.0, 44.6, 88 },
@@ -169,6 +200,12 @@ _.Zones =
 					["races"] = { 5 },	-- Blood Elf
 					["classes"] = { 5 },	-- Priest
 					["lvl"] = 20,
+				}),
+				q(1065,  {	-- Journey to Tarren Mill
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3419 },	-- Apothecary Zamah
+					["sourceQuest"] = 1064,	-- Forsaken Aid
 				}),
 				q(769, {	-- Kodo Hide Bag
 					["provider"] = { "n", 3050 },	-- Veren Tallstrider
@@ -307,6 +344,23 @@ _.Zones =
 					["classes"] = { 11 },	-- Druid
 					["lvl"] = 50,
 				}),
+				q(3782, {	-- Morrowgrain Research
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5769 },	-- Arch Druid Hamuul Runetotem
+					["sourceQuest"] = 3761,	-- Un'Goro Soil
+				}),
+				q(3786, {	-- Morrowgrain Research
+					["u"] = 40,
+					["provider"] = { "n", 9087 },	-- Bashana Runetotem
+					["sourceQuest"] = 3782,	-- Morrowgrain Research
+				}),
+				q(1490, {	-- Nara Wildmane
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5769 },	-- Arch Druid Hamuul Runetotem
+					["sourceQuest"] = 1489,	-- Hamuul Runetotem
+				}),
 				q(2965, {	-- Portents of Uldum
 					["provider"] = { "n", 3978 },	-- Sage Truthseeker
 					["coord"] = { 34.8, 47.8, 88 },
@@ -315,6 +369,12 @@ _.Zones =
 					["lvl"] = 45,
 					["u"] = 40,
 				}),				
+				q(1123,  {	-- Rabine Saturna
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5769 },	-- Arch Druid Hamuul Runetotem
+					["sourceQuests"] = { 1000, 1004, 1018, },	-- 3x versions of The New Frontier
+				}),
 				q(27292, {	-- Return to Krog
 					["provider"] = { "n", 4943 },	-- Mosarn
 					["coord"] = { 54.1, 80.7, 88 },
@@ -343,6 +403,11 @@ _.Zones =
 					["g"] = {
 						un(2, i(4909)),	-- Kodo Hunter's Leggings
 					},
+				}),
+				q(5722, {	-- Searching for the Lost Satchel
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11833 },	-- Rahauro
 				}),
 				q(28164, {	-- Seek Brother Silverhallow
 					["provider"] = { "n", 43870 },	-- Seer Beryl
@@ -392,12 +457,28 @@ _.Zones =
 						un(2, i(10919)),	-- Apothecary Gloves
 					},
 				}),
+				q(1131,  {	-- Steelsnap
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3441 },	-- Melor Stonehoof
+					["sourceQuest"] = 1130,	-- Melor Sends Word
+				}),
 				q(6363, {	-- Tal the Wind Rider Master
 					["provider"] = { "n", 8359 },	-- Ahanu
 					["coord"] = { 45.5, 55.8, 88 },
 					["sourceQuest"] = 6362,	-- Ride to Thunder Bluff
 					["races"] = { 6 },	-- Tauren
 					["lvl"] = 4,
+				}),
+				q(5723, {	-- Testing an Enemy's Strength
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 11833 },	-- Rahauro
+				}),
+				q(742,   {	-- The Ashenvale Hunt
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10881 },	-- Bluff Runner Windstrider
 				}),
 				q(27280, {	-- The Earthbreaker Calls
 					["provider"] = { "n", 51639 },	-- Kador Cloudsong
@@ -406,6 +487,17 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 7 },	-- Shaman
 					["lvl"] = 20,
+				}),
+				q(1086,  {	-- The Flying Machine Airport
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3419 },	-- Apothecary Zamah
+					["sourceQuest"] = 1067,	-- Return to Thunder Bluff
+				}),
+				q(1000,   {	-- The New Frontier
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10881 },	-- Bluff Runner Windstrider
 				}),
 				q(2440, {	-- The Platinum Discs
 					["provider"] = { "n", 3978 },	-- Sage Truthseeker
@@ -417,6 +509,16 @@ _.Zones =
 					["g"] = {
 						un(2, i(9587)),	-- Thawpelt Sack
 					},
+				}),
+				q(1195,  {	-- The Sacred Flame
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4721 },	-- Zangen Stonehoof
+				}),
+				q(1196,  {	-- The Sacred Flame
+					["u"] = 40,
+					["provider"] = { "n", 4721 },	-- Zangen Stonehoof
+					["sourceQuest"] = 1195,	-- The Sacred Flame
 				}),
 				q(27331, {	-- The Seer's Call
 					["providers"] = {
@@ -432,6 +534,15 @@ _.Zones =
 					["classes"] = { 5 },	-- Priest
 					["lvl"] = 20,
 				}),			
+				q(3761, {	-- Un'Goro Soil
+					["u"] = 40,
+					["provider"] = { "n", 5769 },	-- Arch Druid Hamuul Runetotem
+					["sourceQuests"] = {
+						936,	-- Assisting Arch Druid Runetotem
+						3762,	-- Assisting Arch Druid Runetotem
+						3784,	-- Assisting Arch Druid Runetotem
+					},
+				}),
 				q(264, {	-- Until Death Do Us Part
 					["provider"] = { "n", 5543 },	-- Clarice Foster
 					["coord"] = { 28.4, 25.5, 88 },

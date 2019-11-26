@@ -514,11 +514,17 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+						["g"] = {
+							ach(13429),	-- Azerfighter
+						},
 					}),
 					q(54538, {	-- Skirmish at the Span (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
+						["g"] = {
+							ach(13429),	-- Azerfighter
+						},
 					}),
 					q(50650, {	-- Smashing Zalamar
 						["lvl"] = 120,
@@ -749,8 +755,7 @@ _.Zones =
 					un(1, q(49675)),	-- showing in /attwq as [Quest 49675] no record of the quest found on Wowhead
 					un(1, q(49695)),	-- showing in /attwq as [Quest 49695] no record of the quest found on Wowhead
 				}),
-				{
-					["itemID"] = 165865,	-- Nazmir Expeditionary Equipment Cache
+				i(165865, {	-- Nazmir Expeditionary Equipment Cache
 					["sym"] = {
 						-- Include the one extra.
 						{"select", "itemID", 166672},	-- Bloodhunter's Drape
@@ -768,7 +773,7 @@ _.Zones =
 						{"merge"},	-- Merge the finalized items back into the processing queue.
 						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 					},
-				},
+				}),
 				i(158116),	-- Bonehex Claws
 				i(158125),	-- Bonehex Warmaul
 				i(158126),	-- Dazar'alor Polearm

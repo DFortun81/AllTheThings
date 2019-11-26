@@ -374,12 +374,32 @@ _.Zones =
 							["lvl"] = 120,
 							["maps"] = { 1474 },	-- Maelstrom (Scenario)
 						}),
---[[					
 						-- Heart of Azeroth Level 70
+						q(56263, {	-- Unlocking the Power (A)
+							["provider"] = { "n", 154464 },	-- Earthen Guardian
+							["coord"] = { 74.8, 15.2, 1161 },
+							["description"] = "Your Heart of Azeroth needs to be 70 to start the questline.",
+							["isBreadcrumb"] = true,
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 120,
+							["maps"] = { 1161 },	-- Boralus
+						}),
+						q(56260, {	-- Unlocking the Power (H)
+							["provider"] = { "n", 154464 },	-- Earthen Guardian
+							["coord"] = { 51.0, 88.8, 1165 },
+							["description"] = "Your Heart of Azeroth needs to be 70 to start the questline.",
+							["isBreadcrumb"] = true,
+							["races"] = HORDE_ONLY,
+							["lvl"] = 120,
+							["maps"] = { 1165 },	-- Dazar'alor
+						}),
 						q(56401, {	-- A Bolt from the Blue
-						--	["provider"] = { "n",  },	--
-						--	["coord"] = { },
-						--	["sourceQuest"] = ,	--
+							["provider"] = { "n", 152365 },	-- Kalecgos
+							["coord"] = { 53.1, 70.9, 1473 },
+							["sourceQuests"] = {
+								56263,	-- Unlocking the Power (A)
+								56260,	-- Unlocking the Power (H)
+							},
 							["g"] = {
 								i(169292),	-- Charged Scale of the Blue Aspect (QI)
 								i(168614, {	-- Charged Scale of the Blue Aspect
@@ -387,7 +407,16 @@ _.Zones =
 								}),
 							},
 						}),
-]]--
+						q(55752, {	-- We Stand United
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
+							["coord"] = { 33.7, 54.6, 1474 },
+							["sourceQuest"] = 56401,	-- A Bolt from the Blue
+							["lvl"] = 120,
+							["g"] = {
+								i(169768),	-- Heart of a Champion
+							},
+						}),
+						-- War Campain finished
 						q(56185, {	-- Whispers of N'zoth (A)
 							["provider"] = { "n", 154464 },	-- Earthen Guardian
 							["coord"] = { 74.9, 15.1, 1161 },

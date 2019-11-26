@@ -132,6 +132,74 @@ _.NeverImplemented =
 		-- Warrior -- Possible Unused Level 120/Lv 120 Classtrial
 		un(1, i(157741)),	-- Warsinger's Helm
 		un(1, i(157743)),	-- Warsinger's  Pauldrons
+		
+		
+	--	random stuff from the BFA world drop files that was commented out and cluttery, all show up as 'retrieving data'
+		i(154861),
+		i(154841),
+		i(154846),
+		i(159216),
+		i(159221),
+		i(159203),
+		i(159201),
+		i(159210),
+		i(159208),
+		i(159213),
+		i(159195),
+		i(159197),
+		i(154867),
+		i(154870),
+		i(154873),
+		i(154868),
+		i(154866),
+		i(154869),
+		i(154871),
+		i(154849),
+		i(154852),
+		i(154856),
+		i(159190),	-- was commented in BFA world drop file as Foxhollow Bracelets
+		i(159183),	-- was commented in BFA world drop file as Foxhollow Cord
+		i(159170),	-- was commented in BFA world drop file as Freehold Handwraps
+		i(159181),	-- was commented in BFA world drop file as Mistfall Spaulders
+		i(159182),	-- was commented in BFA world drop file as Mistfall Chainmail
+		i(159176),	-- was commented in BFA world drop file as Mistfall Bracers
+		i(159177),	-- was commented in BFA world drop file as Mistfall Gloves
+		i(159175),	-- was commented in BFA world drop file as Mistfall Belt
+		i(159180),	-- was commented in BFA world drop file as Mistfall Legguards
+		i(159178),	-- was commented in BFA world drop file as Mistfall Boots
+		i(159165),	-- was commented in BFA world drop file as Ashvane Company Bracers
+		i(159159),	-- was commented in BFA world drop file as Ashvane Company Gauntlets
+		i(159160),	-- was commented in BFA world drop file as Ashvane Company Girdle
+		i(159538),	-- was commented in BFA world drop file as Coldscale Cudgel
+		i(159498),	-- was commented in BFA world drop file as Coldscale Pistol
+		i(159586),	-- was commented in BFA world drop file as Coralshell Blade
+		i(159559),	-- was commented in BFA world drop file as Coralshell Halberd
+		i(159513),	-- was commented in BFA world drop file as Deepwarden Fangs
+		i(159603),	-- was commented in BFA world drop file as Deepwarden Spark
+		i(159541),	-- was commented in BFA world drop file as Dockyard Mace
+		i(159500),	-- was commented in BFA world drop file as Dockyard Sidearm
+		i(159591),	-- was commented in BFA world drop file as Gnarlwood Cutlass
+		i(159553),	-- was commented in BFA world drop file as Gnarlwood Hammer
+		i(159567),	-- was commented in BFA world drop file as Gnarlwood Staff
+		i(159512),	-- was commented in BFA world drop file as Gol Osigr Handblade
+		i(159801),	-- was commented in BFA world drop file as Gol Osigr Targe
+		i(159817),	-- was commented in BFA world drop file as Gol Osigr Torch
+		i(159499),	-- was commented in BFA world drop file as Ironcrest Longrifle
+		i(159552),	-- was commented in BFA world drop file as Shipwrecker Maul
+		i(159588),	-- was commented in BFA world drop file as Stagheart Falchion
+		i(159542),	-- was commented in BFA world drop file as Stagheart Gavel
+		i(159472),	-- was commented in BFA world drop file as Stagheart Hatchet
+		i(159561),	-- was commented in BFA world drop file as Stagheart Poleaxe
+		i(159562),	-- was commented in BFA world drop file as Tideguard Pike
+		i(159503),	-- was commented in BFA world drop file as Tideguard Slicers
+		i(159565),	-- was commented in BFA world drop file as Tideguard Spire
+		i(159495),	-- was commented in BFA world drop file as Wavecaller Speargun
+		i(159526),	-- was commented in BFA world drop file as Wintersail Dirk
+		i(159554),	-- was commented in BFA world drop file as Wintersail Hammer
+		i(159592),	-- was commented in BFA world drop file as Wintersail Sabre
+		i(159510),	-- was commented in BFA world drop file as Wintersail Strikers
+		
+		
 	}),
 	n(-220, {	-- Class
 		cl(12, {	-- DH
@@ -1284,7 +1352,6 @@ _.NeverImplemented =
 			un(1, i(163457)),	-- Honorbound Centurion's Helmet
 			un(1, i(163454)),	-- Honorbound Centurion's Pauldrons
 			un(1, i(163462)),	-- Honorbound Centurion's Girdle
-			un(1, i(39649)),	-- unknown
 			un(1, i(41759)),	-- unknown
 			un(1, i(42885)),	-- unknown
 			un(1, i(43848)),	-- unknown
@@ -1508,7 +1575,6 @@ _.NeverImplemented =
 			un(1, i(13812)),	-- Ring of the Dawn
 			un(1, i(108813)),	-- Unknown
 			un(1, i(108820)),	-- Unknown
-			un(1, i(134738)),	-- cold-touched ring
 			un(1, i(108821)),	-- Unknown
 			un(1, i(109277)),	-- Unknown
 			un(1, i(141907)),	-- Arena Victory Bonus

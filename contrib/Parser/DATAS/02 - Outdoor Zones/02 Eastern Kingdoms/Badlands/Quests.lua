@@ -89,12 +89,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
 				}),
-				q(4983,  {	-- Bijou's Reconnaissance Report (may only have been both factions)
+				q(703,   {	-- Barbequed Buzzard Wings
 					["u"] = 40,
-					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2817 },	-- Rigglefuz
 					["g"] = {
-						un(2, i(15858)),	-- Freewind Gloves
-						un(2, i(15859)),	-- Seapost Girdle
+						i(4609),	-- Recipe: Barbequed Buzzard Wing -- NOTE: item is still available
 					},
 				}),
 				q(27881, {	-- Bloodwatcher Point
@@ -103,9 +102,16 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27789 },	-- Troggish Troubles
 				}),
+				q(782,   {	-- Broken Alliances
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1068 },	-- Gorn
+				}),
 				q(793,   {	-- Broken Alliances
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1068 },	-- Gorn
+					["sourceQuest"] = 782,	-- Broken Alliances
 					["g"] = {
 						un(2, i(11193)),	-- Blazewind Breastplate
 						un(2, i(11196)),	-- Mindburst Medallion
@@ -113,10 +119,36 @@ _.Zones =
 						un(2, i(11195)),	-- Warforged Chestplate
 					},
 				}),
+				q(713,   {	-- Coolant Heads Prevail
+					["u"] = 40,
+					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
+				}),
+				q(3981, {	-- Commander Gor'shak
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9081 },	-- Galamav the Marksman
+					["sourceQuest"] = 3906,	-- Disharmony of Flame
+				}),
+				q(1419,  {	-- Coyote Thieves
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5394 },	-- Neeka Bloodscar
+				}),
+				q(2340, {	-- Deliver the Gems
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 6868 },	-- Jarkal Mossmeld
+					["sourceQuest"] = 2339,	-- Find the Gems and Power Source
+				}),
 				q(27930, {	-- Devastation
 					["coord"] = { 15.9, 33.2, 15 },
 					["description"] = "If you abandon this quest, leave the area then return to the cave.",
 					["sourceQuests"] = { 27858, 27898 },	-- Rheastrasza's Gift (A, H)
+				}),
+				q(3906, {	-- Disharmony of Flame
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9084 },	-- Thunderheart
 				}),
 				q(27927, {	-- Down to the Scar
 					["isBreadcrumb"] = true,
@@ -128,6 +160,11 @@ _.Zones =
 						{ 20.8, 55.7, 15 },	-- Alliance
 						{ 18.4, 41.5, 15 },	-- Horde
 					},
+				}),
+				q(3821, {	-- Dreadmaul Rock
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9082 },	-- Thal'trak Proudtusk
 				}),
 				q(27791, {	-- Dustwind Dig
 					["provider"] = { "n", 46664 },	-- Dr. Hieronymus Blam
@@ -148,6 +185,12 @@ _.Zones =
 					["coord"] = { 20.5, 56.0, 15 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
+				}),
+				q(2339, {	-- Find the Gems and Power Source
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 6868 },	-- Jarkal Mossmeld
+					["sourceQuest"] = 2338,	-- Translating the Journal
 				}),
 				q(27765, {	-- First Sample: Wild Eggs
 					["provider"] = { "n", 46654 },	-- Rhea
@@ -175,6 +218,16 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27890 },	-- The Bad Dogs
 				}),
+				q(4122, {	-- Grark Lorkrub
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9080 },	-- Lexlort
+				}),
+				q(714,   {	-- Gyro... What?
+					["u"] = 40,
+					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
+					["sourceQuest"] = 713,	-- Coolant Heads Prevail
+				}),
 				q(27833, {	-- Half-Ton Holdouts
 					["provider"] = { "n", 46972 },	-- Terrance Storm
 					["coord"] = { 20.8, 57.3, 15 },
@@ -198,6 +251,11 @@ _.Zones =
 						i(63201),	-- Holdout Gloves
 						i(63200),	-- Gorn's Discarded Cloak
 					},
+				}),
+				q(1108,  {	-- Indurium
+					["u"] = 40,
+					["provider"] = { "n", 4618 },	-- Martek the Exiled
+					["sourceQuest"] = 1106,	-- Martek the Exiled
 				}),
 				q(27826, {	-- Into the Dragon's Mouth
 					["provider"] = { "n", 46664 },	-- Dr. Hieronymus Blam
@@ -230,6 +288,16 @@ _.Zones =
 					["coord"] = { 18.8, 42.7, 15 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27890 },	-- The Bad Dogs
+				}),
+				q(4081, {	-- KILL ON SIGHT: Dark Iron Dwarves
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 164867 },	-- WANTED
+				}),
+				q(4082, {	-- KILL ON SIGHT: High Ranking Dark Iron Officials
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 164868 },	-- KILL ON SIGHT
 				}),
 				q(27770, {	-- Lifting the Veil
 					["provider"] = { "n", 46654 },	-- Rhea
@@ -290,6 +358,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
 				}),
+				q(4981, {	-- Operative Bijou
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9080 },	-- Lexlort
+				}),
 				q(705,   {	-- Pearl Diving
 					["u"] = 40,
 					["g"] = {
@@ -304,6 +377,11 @@ _.Zones =
 						un(2, i(9522)),	-- Energized Stone Circle
 						un(2, i(10359)),	-- Everlast Boots
 					},
+				}),
+				q(1420,  {	-- Report to Helgrum
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5394 },	-- Neeka Bloodscar
 				}),
 				q(2361,  {	-- Restoring the Necklace
 					["u"] = 40,
@@ -380,6 +458,20 @@ _.Zones =
 						un(2, i(4979)),	-- Enchanted Stonecloth Bracers
 					},
 				}),
+				q(710,   {	-- Study of the Elements: Rock
+					["u"] = 40,
+					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
+				}),
+				q(711,   {	-- Study of the Elements: Rock
+					["u"] = 40,
+					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
+					["sourceQuest"] = 710,	-- Study of the Elements: Rock
+				}),
+				q(712,   {	-- Study of the Elements: Rock
+					["u"] = 40,
+					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
+					["sourceQuest"] = 711,	-- Study of the Elements: Rock
+				}),
 				q(27825, {	-- Survival of the Fattest
 					["provider"] = { "n", 46930 },	-- Victoria Delen
 					["coord"] = { 20.8, 55.7, 15 },
@@ -451,6 +543,19 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27896 },	-- The Sorrow and the Fury
 				}),
+				q(3911, {	-- The Last Element
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9078 },	-- Shadowmage Vivian Lagrave
+					["g"] = {
+						un(2, i(12038)),	-- Lagrave's Seal
+					},
+				}),
+				q(692,   {	-- The Lost Fragments
+					["u"] = 40,
+					["provider"] = { "n", 2785 },	-- Theldurin the Lost
+					["sourceQuest"] = 687,	-- Theldurin the Lost
+				}),
 				q(1139,  {	-- The Lost Tablets of Will
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
@@ -475,6 +580,8 @@ _.Zones =
 				q(4063,  {	-- The Rise of the Machines
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
+					["sourceQuest"] = 4062,	-- The Rise of the Machines
 					["g"] = {
 						un(2, i(12109)),	-- Azure Moon Amice
 						un(2, i(12108)),	-- Basaltscale Armor
@@ -624,8 +731,23 @@ _.Zones =
 						i(63160),	-- Boots of Duress
 					},
 				}),
+				q(734,   {	-- This Is Going to Be Hard
+					["u"] = 40,
+					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
+					["sourceQuests"] = {
+						714,	-- Gyro... What?
+						712,	-- Study of the Elements: Rock
+					},
+				}),
+				q(777,   {	-- This Is Going to Be Hard
+					["u"] = 40,
+					["provider"] = { "n", 2920 },	-- Lucien Tosselwrench
+					["sourceQuest"] = 734,	-- This Is Going to Be Hard
+				}),
 				q(778,   {	-- This Is Going to Be Hard
 					["u"] = 40,
+					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
+					["sourceQuest"] = 777,	-- This Is Going to Be Hard
 					["g"] = {
 						un(2, i(2820)),	-- Nifty Stopwatch
 					},
@@ -663,6 +785,12 @@ _.Zones =
 					["lvl"] = 30,
 					["u"] = 40,
 				}),
+				q(2338, {	-- Translating the Journal
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 6868 },	-- Jarkal Mossmeld
+					["sourceQuest"] = 2318,	-- Translating the Journal
+				}),
 				q(717,   {	-- Tremors of the Earth
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
@@ -687,6 +815,17 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 6868 },	-- Quest Giver: Jarkal Mossmeld
 					["sourceQuests"] = { 2258 },	-- Source Quest: Badlands Reagent Run
+				}),
+				q(9439, {	-- Unclaimed Baggage
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 17097 },	-- Advisor Sarophas
+				}),
+				q(3982, {	-- What Is Going On?
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 9020 },	-- Commander Gor'shak
+					["sourceQuest"] = 3981,	-- Commander Gor'shak
 				}),
 				q(27775, {	-- When the Going Gets Tough, Cheat
 					["provider"] = { "n", 46653 },	-- Garyanne Fleezlebop

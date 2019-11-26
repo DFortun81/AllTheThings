@@ -63,7 +63,7 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				ach(13924, {	-- The Fourth War
+				ach(13925, {	-- The Fourth War
 				--	not nesting 'ready for war' and 'tides of vengeance' achievements inside, because when you try to utilize the sourceQuests on 'the fourth war' it does not display properly.
 					["sourceQuests"] = { 57002 },	-- Old Soldier
 					["g"] = {
@@ -499,6 +499,11 @@ _.ExpansionFeatures =
 						},
 					}),
 				--	BLOOD ON THE SAND STARTS HERE
+					q(52026, {	-- Overseas Assassination
+						["coord"] = { 69.2, 26.9, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
+					}),
 					q(52027, {	-- The Vol'dun Plan
 						["provider"] = { "n", 139705 },	-- Halford Wyrmbane
 						["coord"] = { 37.7, 35.8, 864 },	-- Vol'dun
@@ -606,7 +611,10 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 53069 },	-- Operation: Blood Arrow
+						["sourceQuests"] = {
+							52146,	-- Blood on the Sand
+							53069,	-- Operation: Blood Arrow
+						},
 					}),
 				--	CHASING DARKNESS STARTS HERE
 					q(52150, {	-- How to Kill a Dark Ranger
@@ -661,13 +669,17 @@ _.ExpansionFeatures =
 				--	BETWEEN CHASING DARKNESS AND A GOLDEN OPPORTUNITY
 					q(53070, {	-- Operation: Cutpurse
 						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 52219 },	-- Target: Blood Prince Dreven
 					}),
 					q(52154, {	-- Our Next Target
 						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 53070 },	-- Operation: Cutpurse
+						["sourceQuests"] = {
+							53070,	-- Operation: Cutpurse
+							52219,	-- Target: Blood Prince Dreven
+						},
 					}),
 					q(52173, {	-- The Void Elves Stand Ready
 						["provider"] = { "n", 140348 },	-- Magister Umbric
@@ -729,13 +741,17 @@ _.ExpansionFeatures =
 				--	BETWEEN A GOLDEN OPPORTUNITY AND BLOOD IN THE WATER
 					q(53071, {	-- Operation: Gryphon's Claw
 						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 						["sourceQuests"] = { 52261 },	-- Gallywix Got Away
 					}),
 					q(52308, {	-- Intercepted Orders
 						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 53071 },	-- Operation: Gryphon's Claw
+						["sourceQuests"] = {
+							52261,	-- Gallywix Got Away
+							53071,	-- Operation: Gryphon's Claw
+						},
 					}),
 					q(52489, {	-- Hunting Blood Prince Dreven
 						["provider"] = { "n", 141356 },	-- Shandris Feathermoon
@@ -761,6 +777,11 @@ _.ExpansionFeatures =
 							52490,	-- Behind Enemy Boats
 							52491,	-- Broadside Bedlam
 						},
+					}),
+					q(53131, {	-- Kings' Rest (Unlocks Kings' Rest)
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 142228 },	-- Shandris Feathermoon
+						["sourceQuest"] = 52492,	-- The Wildhammer Specialty
 					}),
 					q(52493, {	-- An Unnatural Crew
 						["provider"] = { "n", 142228 },	-- Shandris Feathermoon
@@ -798,7 +819,10 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 53072 },	-- Operation: Heartstrike
+						["sourceQuests"] = {
+							52496,	-- A Clean Escape
+							53072,	-- Operation: Heartstrike
+						},
 					}),
 				--	THE STRIKE ON ZULDAZAR STARTS HERE
 					q(52282, {	-- How to Sink a Zandalari Battleship
@@ -1244,6 +1268,48 @@ _.ExpansionFeatures =
 						["coord"] = { 49.2, 85.4, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54163 },	-- As the Dust Settles
+					}),
+					-- Night Warrior appearance unlock
+					q(53849, {	-- Waning Hope
+						["coord"] = { 86.6, 35.7, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 146050 },	-- Maiev Shadowsong
+						["sourceQuest"] = 53847,	-- On Whispered Winds
+					}),
+					q(53988, {	-- Shores of Fate
+						["coord"] = { 86.6, 35.7, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 146050 },	-- Maiev Shadowsong
+						["sourceQuest"] = 53849,	-- Waning Hope
+					}),
+					q(53989, {	-- Hope
+						["lvl"] = 120,
+						["coord"] = { 11.5, 17.6, 63 },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 146374 },	-- Shandris Feathermoon
+						["sourceQuest"] = 53988,	-- Shores of Fate
+					}),
+					q(54041, {	-- No Survivors
+						["lvl"] = 120,
+						["coord"] = { 11.4, 17.8, 63 },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 146375 },	-- Sira Moonwarden
+						["sourceQuest"] = 53988,	-- Shores of Fate
+					}),
+					q(53990, {	-- In Darkest Night
+						["coord"] = { 86.6, 35.7, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 146050 },	-- Maiev Shadowsong
+						["sourceQuests"] = {
+							53989,	-- Hope
+							54041,	-- No Survivors
+						},
+					}),
+					q(54871, {	-- We Are Coming
+						["coord"] = { 69.5, 26.8, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 149612 },	-- Shandris Feathermoon
+						["sourceQuest"] = 53990,	-- In Darkest Night
 					}),
 				--	RISE OF AZSHARA (8.2)
 					q(55784, {	-- Payment in Kind

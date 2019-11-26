@@ -89,14 +89,16 @@ _.Zones =
 						}),
 					}),
 					n(-17, {	-- Quests
-						q(26190, {	-- A Fisherman's Feast 
+						q(26190, {	-- A Fisherman's Feast
 							["provider"] = { "n", 42288 },	-- Robby Flay
 							["coord"] = { 50.6, 71.6, 84 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
-								ach(5474, crit(1)),	-- Let's Do Lunch: Stormwind / A Fisherman's Feast 
+								crit(1, {	-- A Fisherman's Feast
+									["achievementID"] = 5474,	-- Let's Do Lunch: Stormwind
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -107,7 +109,9 @@ _.Zones =
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
-								ach(5474, crit(2)),	-- Let's Do Lunch: Stormwind / Feeling Crabby?
+								crit(2, {	-- Feeling Crabby?
+									["achievementID"] = 5474,	-- Let's Do Lunch: Stormwind
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -118,7 +122,9 @@ _.Zones =
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
-								ach(5474, crit(3)),	-- Let's Do Lunch: Stormwind / Orphans Like Cookies Too!
+								crit(3, {	-- Orphans Like Cookies Too!
+									["achievementID"] = 5474,	-- Let's Do Lunch: Stormwind
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -129,7 +135,9 @@ _.Zones =
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
-								ach(5474, crit(4)),	-- Let's Do Lunch: Stormwind / Penny's Pumpkin Pancakes
+								crit(4, {	-- Penny's Pumpkin Pancakes
+									["achievementID"] = 5474,	-- Let's Do Lunch: Stormwind
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -140,7 +148,9 @@ _.Zones =
 							["requireSkill"] = 185,	-- Cooking
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
-								ach(5474, crit(5)),	-- Let's Do Lunch: Stormwind / The King's Cider
+								crit(5, {	-- The King's Cider
+									["achievementID"] = 5474,	-- Let's Do Lunch: Stormwind
+								}),
 								currency(81),	-- Epicurean's Award
 							},
 						}),
@@ -180,7 +190,9 @@ _.Zones =
 							["requireSkill"] = 356,	-- Fishing
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
-								ach(5476, crit(4)),	-- Fish or Cut Bait: Stormwind / Big Gulp
+								crit(4, {	-- Big Gulp
+									["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -196,7 +208,9 @@ _.Zones =
 							["requireSkill"] = 356,	-- Fishing
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
-								ach(5476, crit(2)),	-- Fish or Cut Bait: Stormwind / Diggin' For Worms
+								crit(2, {	-- Diggin' For Worms
+									["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -212,7 +226,9 @@ _.Zones =
 							["requireSkill"] = 356,	-- Fishing
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
-								ach(5476, crit(1)),	-- Fish or Cut Bait: Stormwind / Hitting a Walleye
+								crit(1, {	-- Hitting a Walleye
+									["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -228,7 +244,9 @@ _.Zones =
 							["requireSkill"] = 356,	-- Fishing
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
-								ach(5476, crit(3)),	-- Fish or Cut Bait: Stormwind / Rock Lobster
+								crit(3, {	-- Rock Lobster
+									["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat
@@ -244,7 +262,9 @@ _.Zones =
 							["requireSkill"] = 356,	-- Fishing
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
-								ach(5476, crit(5)),	-- Fish or Cut Bait: Stormwind / Thunder Falls
+								crit(5, {	-- Thunder Falls
+									["achievementID"] = 5476,	-- Fish or Cut Bait: Stormwind
+								}),
 								i(67414, {	-- Bag of Shiny Things
 									i(44983),	-- Strand Crawler
 									i(33820),	-- Weather-Beaten Fishing Hat

@@ -4,7 +4,9 @@
 _.WorldDrops = 
 {
 	n(-165, { 	-- Junkboxes
-		["groups"] = {
+		["description"] = "These items have a small chance of dropping from junkboxes.",
+		["icon"] = "Interface\\Icons\\inv_box_01",
+		["g"] = {
 			i(16882, { 	-- Battered Junkbox
 				i(11968),	-- Amber Hoop
 				i(4999),	-- Azora's Will
@@ -43,7 +45,7 @@ _.WorldDrops =
 				i(68161),	-- Krol Decapitator
 			}),
 			i(16885, { 	-- Heavy Junkbox 
-				i(1728),			-- Teebu's Blazing Longsword [Discord Confirmation - Luce]
+				i(1728),	-- Teebu's Blazing Longsword [Discord Confirmation - Luce]
 				i(16215),	-- Formula: Enchant Boots Greater Stamina   
 				i(16218),	-- Formula: Enchant Bracer Superior Versatility 
 				i(14494),	-- Pattern: Brightcloth Pants     
@@ -117,7 +119,7 @@ _.WorldDrops =
 				i(11975),	-- Topaz  Ring
 				i(12024),	-- Vanadium Talisman
 			}),
-			i(4634,	{	-- Iron Lockbox
+			i(4634,	 {	-- Iron Lockbox
 				i(13063),	-- Starfaller
 				i(11164),	-- Formula: Enchant Weapon - Lesser Beastslayer
 				i(7449),	-- Pattern: Dusky Leather Leggings
@@ -138,7 +140,7 @@ _.WorldDrops =
 				i(43613),	-- The Dusk Blade
 				i(43611),	-- Krol Cleaver
 			}),
-			i(4638, {	-- Reinforced Steel Lockbox
+			i(4638,  {	-- Reinforced Steel Lockbox
 				i(21947),	-- Design: Gem Studded Band
 				i(21945),	-- Design: The Aquamarine Ward
 				i(16215),	-- Formula: Enchant Boots - Greater Stamina
@@ -159,7 +161,7 @@ _.WorldDrops =
 				i(9295),	-- Recipe: Invisibility Potion
 				i(3395),	-- Recipe: Limited Invulnerability Potion
 			}),
-			i(4637, {	-- Steel Lockbox
+			i(4637,  {	-- Steel Lockbox
 				i(11204),	-- Formula: Enchant Bracer - Greater Versatility
 				i(11202),	-- Formula: Enchant Shield - Stamina
 				i(8387),	-- Pattern: Big Voodoo Mask
@@ -177,7 +179,7 @@ _.WorldDrops =
 				i(10603),	-- Schematic: Catseye Ultra Goggles
 				i(10606),	-- Schematic: Parachute Cloak
 			}),
-			i(4636, {	-- Strong Iron Lockbox
+			i(4636,  {	-- Strong Iron Lockbox
 				i(11167),	-- Formula: Enchant Boots - Lesser Versatility
 				i(11165),	-- Formula: Enchant Weapon - Lesser Elemental Slayer
 				i(7085),	-- Pattern: Azure Shoulders
@@ -222,7 +224,5 @@ _.WorldDrops =
 			}),
 			i(169475),	-- Barnacled Lockbox
 		},
-		["icon"] = "Interface\\Icons\\inv_box_01",
-		["description"] = "These items have a small chance of dropping from the junkboxes.",
 	}),
 };

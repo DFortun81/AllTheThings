@@ -113,6 +113,10 @@ _.Zones =
 						un(2, i(20714)),	-- Sandstorm Boots
 					},
 				}),
+				q(8331, {	-- Aurel Goldleaf
+					["u"] = 40,
+					["minReputation"] = { 609, FRIENDLY },
+				}),
 				q(8308,  {	-- Brann Bronzebeard's Lost Letter
 					["provider"] = { "i", 20461 },	-- Brann Bronzebeard's Lost Letter
 					["description"] = "This quest is only available during or after 'Dearest Natalia', but before picking up 'Breaking the Code' and 'Glyph Chasing.'",
@@ -142,6 +146,15 @@ _.Zones =
 					["coord"] = { 29.6, 10.6, 81 },
 					["classes"]= { 7 },	-- Shaman
 				}),
+				q(8349, {	-- Bor Wildmane
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+				}),
+				q(8351, {	-- Bor Wishes to Speak
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 15282 },	-- Aurel Goldleaf
+				}),
 				q(8310,  {	-- Breaking the Code
 					["provider"] = { "n", 15171 },	-- Frankal Stonebridge
 					["coord"] = { 46.0, 79.4, 81 },
@@ -152,6 +165,11 @@ _.Zones =
 					["coord"] = { 53.2, 33.4, 81 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+				}),
+				q(8800, {	-- Cenarion Battlegear
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 15540 },	-- Windcaller Kaldon
 				}),
 				q(8573,  {	-- Champion's Battlegear
 					["u"] = 40,
@@ -180,6 +198,10 @@ _.Zones =
 						recipe(24801),	-- Smoked Desert Dumplings
 					},
 				}),
+				q(8332, {	-- Dukes of the COuncil
+					["u"] = 40,
+					["sourceQuest"] = 8331,	-- Aurel Goldleaf
+				}),
 				q(8319,  {	-- Encrypted Twilight Texts
 					["provider"] = { "n", 15306 },		-- Bor Wildmane
 					["repeatable"] = true,
@@ -190,6 +212,14 @@ _.Zones =
 					["provider"] = { "n", 15170 },	-- Rutgar Glyphshaper
 					["coord"] = { 46.4, 79.0, 81 },
 					["sourceQuest"] = 8304,	-- Dearest Natalia
+				}),
+				q(8343, {	-- Goldleaf's Discovery
+					["u"] = 40,
+				}),
+				q(1126,  {	-- Hive in the Tower
+					["u"] = 40,
+					["provider"] = { "n", 13220 },	-- Layo Starstrike
+					["sourceQuest"] = 1125,	-- The Spirits of Southwind
 				}),
 				q(8306,  {	-- Into The Maw of Madness
 					["coord"] = { 53.2, 32.5, 81 },
@@ -203,6 +233,13 @@ _.Zones =
 					["coord"] = { 55.4, 36.6, 81 },
 					["sourceQuest"] = 8313,	-- Sharing the Knowledge
 					["requiredSkill"] = 185,	-- Cooking
+				}),
+				q(8341, {	-- Lords of the Council
+					["u"] = 40,
+					["provider"] = { "n", 15282 },	-- Aurel Goldleaf
+					["g"] = {
+						i(20451),	-- Twilight Cultist Ring of Lordship
+					},
 				}),
 				q(28867, {	-- Nethergarde Needs You!
 					["provider"] = { "n", 50588 },	-- Nethergarde Mage
@@ -219,6 +256,10 @@ _.Zones =
 					["provider"] = { "n", 15190 },	-- Noggle Ficklespragg
 					["coord"] = { 55.2, 36.1, 81 },
 					["sourceQuest"] = 8278,	-- Noggle's Last Hope
+				}),
+				q(8288, {	-- Only One May Rise
+					["u"] = 40,
+					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
 				}),
 				q(9416,  {	-- Report to General Kirika
 					["provider"] = { "n", 17081 },	-- Scout Bloodfist
@@ -241,6 +282,11 @@ _.Zones =
 							un(7, i(20721)),	-- Band of the Cultist
 						})),
 					},
+				}),
+				q(9422, {	-- Scouring the Desert
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 17079 },	-- General Kirika
 				}),
 				q(8318,  {	-- Secret Communication
 					["provider"] = { "n", 15306 },		-- Bor Wildmane
@@ -362,6 +408,11 @@ _.Zones =
 						un(2, i(22377)),	-- The Thunderwood Poker
 					},
 				}),
+				q(1125,  {	-- The Spirits of Southwind
+					["u"] = 40,
+					["provider"] = { "n", 13220 },	-- Layo Starstrike
+					["sourceQuest"] = 1124,	-- Wasteland
+				}),
 				q(8279,  {	-- The Twilight Lexicon
 					["provider"] = { "n", 15194 },	-- Hermit Ortell
 					["coord"] = { 68.6, 63.0, 81 },
@@ -380,6 +431,11 @@ _.Zones =
 				q(8320,  {	-- Twilight Geolords
 					["provider"] = { "n", 15270 },	-- Huum Wildmane
 					["coord"] = { 53.2, 35.1, 81 },
+				}),
+				q(6844, {	-- Umber, Archivist
+					["u"] = 40,
+					["provider"] = { "n", 13220 },	-- Layo Starstrike
+					["sourceQuest"] = 1126,	-- Hive in the Tower
 				}),
 				q(8314,  {	-- Unraveling the Mystery
 					["provider"] = { "n", 15170 },	-- Rutgar Glyphshaper
@@ -423,6 +479,11 @@ _.Zones =
 						i(20646),	-- Sandstrider's Mark
 						i(20647),	-- Black Crystal Dagger
 					},
+				}),
+				q(8286, {	-- What Tomorrow Brings
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
 				}),
 			}),
 		}),

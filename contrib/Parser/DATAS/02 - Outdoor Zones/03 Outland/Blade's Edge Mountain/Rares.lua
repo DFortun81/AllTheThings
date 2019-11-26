@@ -24,7 +24,9 @@ _.Zones =
 						{ 29.8, 70.8, 105 },
 					},
 					["g"] = {
-						ach(1312, crit(11)),	-- Bloody Rare
+						crit(11, {	-- Hemathion
+							["achievementID"] = 1312,	-- Bloody Rare
+						}),
 						i(31155),	-- Drakescale Breastplate
 						i(31156),	-- Drakescale Hauberk
 						i(31158),	-- Drakeweave Raiment
@@ -41,7 +43,9 @@ _.Zones =
 						{ 68.4, 69.4, 105 },
 					},
 					["g"] = {
-						ach(1312, crit(15)),	-- Bloody Rare
+						crit(15, {	-- Morcrush
+							["achievementID"] = 1312,	-- Bloody Rare
+						}),
 						i(31159),	-- Felstone Pauldrons
 						i(31161),	-- Felstone Spaulders
 						i(31160),	-- Felstone Epaulets
@@ -86,7 +90,9 @@ _.Zones =
 						{ 46.4, 78.6, 105 },
 					},
 					["g"] = {
-						ach(1312, crit(18)),	-- Bloody Rare
+						crit(18, {	-- Speaker Mar'grom
+							["achievementID"] = 1312,	-- Bloody Rare
+						}),
 						i(31163),	-- Nethersteel Handguards
 						i(31166),	-- Nethersteel-Lined Handwraps
 						i(31165),	-- Nethersteel-Reinforced Gloves

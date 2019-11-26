@@ -15,6 +15,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				]]--
+				q(13986, {	-- An Injured Colleague
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 35471 },	-- Sorn Proudmane
+				}),
 				q(24580, {	-- Anub'Rekhan Must Die!
 					["coord"] = { 57.3, 66.7, 125 },
 					["provider"] = { "n", 20735 },	-- Archmage Lan'dalock
@@ -69,6 +74,17 @@ _.Zones =
 						spell(59390),	-- Cloth Scavenging -- NOTE: there doesn't appear to be a recipe for this
 					},
 				}),
+				q(13159, {	-- Containment
+					["u"] = 40,
+					["provider"] = { "n", 31080 },	-- Warden Alturas
+					["sourceQuest"] = 13158,	-- Discretion is Key
+					["g"] = {
+						i(44342),	-- Tattooed Deerskin Leggings
+						i(44343),	-- Conferred Pantaloons
+						i(44344),	-- Labyrinthine Legguards
+						i(44345),	-- Dalaran Warden's Legplates
+					},
+				}),
 				q(13834, {	-- Dangerously Delicious
 					["coord"] = { 53.0, 64.9, 125 },
 					["isDaily"] = true,
@@ -92,6 +108,10 @@ _.Zones =
 							["achievementID"] = 3217,	-- Chasing Marcia
 						}),
 					},
+				}),
+				q(13158, {	-- Discretion is Key
+					["u"] = 40,
+					["provider"] = { "n", 16128 },	-- Rhonin
 				}),
 				q(29829, {	-- Discretion is Key
 					["coord"] = { 30.6, 48.6, 125 },
@@ -297,6 +317,12 @@ _.Zones =
 						currency(61),	-- Dalaran Jewelcrafter's Token
 					},
 				}),
+				q(39209, {	-- Sholazar Basin -- Adventure Guide
+					["u"] = 40,
+				}),
+				q(39212, {	-- Sholazar Basin -- Adventure Guide
+					["u"] = 40,
+				}),
 				q(12974, {	-- The Champion's Call!
 					["coord"] = { 49.3, 45.9, 125 },
 					["provider"] = { "n", 30137 },	-- Shifty Vickers
@@ -360,6 +386,11 @@ _.Zones =
 						49553,	-- Hero's Call: Sholazar Basin!
 						49535,	-- Warchief's Command: Sholazar Basin!
 					},
+				}),
+				q(14160, {	-- Writ of Merit
+					["u"] = 40,
+					["provider"] = { "i", 47246 },	-- Writ of Merit
+					["requireSkill"] = 755,	-- Jewelcrafting
 				}),
 				q(24588, {	-- XT-002 Deconstructor Must Die!
 					["coord"] = { 57.3, 66.7, 125 },

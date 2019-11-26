@@ -730,7 +730,6 @@ _.Zones =
 				q(46260, {	-- Meld Into the Shadows
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(45185),	-- Message from the Shadows
 				q(45345),	-- Mischievous Sprites
 				q(45632, {	-- Missing in Action: Eitrigg
 					["races"] = HORDE_ONLY,
@@ -750,7 +749,18 @@ _.Zones =
 				q(45243),	-- On Daumyr's Wings
 				q(38805),	-- Ondri
 				q(38802),	-- Ondri's Still-Beating Heart
-				q(45193),	-- One Step Behind
+--]]
+				q(45193, {	-- One Step Behind
+					["provider"] = { "n", 116175 },	-- Karam Magespear
+					["classes"] = {
+						11,	-- Druid (Balance)
+						3,	-- Hunter (Marksmanship)
+						8,	-- Mage (Frost)
+						5,	-- Priest (Shadow)
+						9,	-- Warlock (Affliction)
+					},
+				}),
+--[[
 				q(47017),	-- Only the Best
 				q(39799),	-- Our Next Move
 				q(41967),	-- Out of the Darkness
@@ -781,13 +791,23 @@ _.Zones =
 				}),
 				q(43264),	-- Rise, Champions
 				q(45815),	-- Rogue
-				q(45192),	-- Runes of Rending
+--]]
+				q(45192, {	-- Runes of Rending
+					["provider"] = { "n", 116175 },	-- Karam Magespear
+					["classes"] = {
+						11,	-- Druid (Balance)
+						3,	-- Hunter (Marksmanship)
+						8,	-- Mage (Frost)
+						5,	-- Priest (Shadow)
+						9,	-- Warlock (Affliction)
+					},
+				}),
+--[[
 				q(45348),	-- Safekeeping
 				q(43539),	-- Salanar the Horseman
 				q(46060),	-- Salvation
 				q(41993),	-- Salvation From On High
 				q(45344),	-- Sampling the Source
-				q(45187),	-- Secrets in the Underbelly
 --]]
 				q(46235, {	-- Secured Surroundings
 					["classes"] = { 3 },	-- Hunter
@@ -896,9 +916,6 @@ _.Zones =
 				q(45385),	-- We Must be Prepared!
 				q(45103),	-- We Ride!
 				q(46511),	-- We're Treasure Hunters
-				q(45190, {	-- Where it's Thinnest
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(45179),	-- Win the Crowd
 				q(46689),	-- Wisp-Touched Elderhide
 				q(46069),	-- Worthy of the Title

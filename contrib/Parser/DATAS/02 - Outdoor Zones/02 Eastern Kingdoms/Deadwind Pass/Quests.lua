@@ -14,12 +14,28 @@ _.Zones =
 				q(44421, {	-- Anomalous Anomalies
 					["provider"] = { "n", 113986 },	-- 
 				}),
+				]]--
 				q(11031, {	-- Archmage No More
-					["provider"] = { "n", 18253 },	-- 
+					["u"] = 40,
+					["provider"] = { "n", 18253 },	-- Archmage Leryda
+					["repeatable"] = true,
+					["g"] = {
+						i(29290),	-- Violet Signet of the Grand Restorer
+						i(29279),	-- Violet Signet of the Great Protector
+						i(29283),	-- Violet Signet of the Master Assassin
+					},
 				}),
 				q(11033, {	-- Assassin No More
-					["provider"] = { "n", 18253 },	-- 
+					["u"] = 40,
+					["provider"] = { "n", 18253 },	-- Archmage Leryda
+					["repeatable"] = true,
+					["g"] = {
+						i(29290),	-- Violet Signet of the Grand Restorer
+						i(29279),	-- Violet Signet of the Great Protector
+						i(29287),	-- Violet Signet of the Archmage
+					},
 				}),
+				--[[
 				q(44500, {	-- Author! Author!
 					["provider"] = { "n", 113986 },	-- 
 				}),
@@ -115,22 +131,45 @@ _.Zones =
 					["provider"] = { "n", 18255 },	-- 
 					 ["description"] = "This quest is offered after completion of 'Return to Karazhan: Clearing Out the Cobwebs.'",
 				}),
+				]]--
 				q(10731, {	-- Path of the Violet Assassin
-					["provider"] = { "n", 18253 },	-- 
+					["u"] = 40,
+					["provider"] = { "n", 18253 },	-- Archmage Leryda
+					["g"] = {
+						i(29280),	-- Violet Signet
+					},
 				}),
 				q(10729, {	-- Path of the Violet Mage
-					["provider"] = { "n", 18253 },	-- 
+					["u"] = 40,
+					["provider"] = { "n", 18253 },	-- Archmage Leryda
+					["g"] = {
+						i(29284),	-- Violet Signet
+					},
 				}),
 				q(10732, {	-- Path of the Violet Protector
-					["provider"] = { "n", 18253 },	-- 
+					["u"] = 40,
+					["provider"] = { "n", 18253 },	-- Archmage Leryda
+					["g"] = {
+						i(29276),	-- Violet Signet
+					},
 				}),
 				q(10730, {	-- Path of the Violet Restorer
-					["provider"] = { "n", 18253 },	-- 
+					["u"] = 40,
+					["provider"] = { "n", 18253 },	-- Archmage Leryda
+					["g"] = {
+						i(29288),	-- Violet Signet
+					},
 				}),
 				q(11032, {	-- Protector No More
-					["provider"] = { "n", 18253 },	-- 
+					["u"] = 40,
+					["provider"] = { "n", 18253 },	-- Archmage Leryda
+					["repeatable"] = true,
+					["g"] = {
+						i(29290),	-- Violet Signet of the Grand Restorer
+						i(29287),	-- Violet Signet of the Archmage
+						i(29283),	-- Violet Signet of the Master Assassin
+					},
 				}),
-]]--
 				q(44685, {	-- Reclaiming the Ramparts
 					["provider"] = { "n", 114310 },	-- Archmage Khadgar
 					["lvl"] = 110,
@@ -141,28 +180,36 @@ _.Zones =
 						44683,	-- Holding the Lines
 					},
 				}),
---[[
 				q(11034, {	-- Restorer No More
-					["provider"] = { "n", 18253 },	-- 
+					["u"] = 40,
+					["provider"] = { "n", 18253 },	-- Archmage Leryda
+					["repeatable"] = true,
+					["g"] = {
+						i(29279),	-- Violet Signet of the Great Protector
+						i(29283),	-- Violet Signet of the Master Assassin
+						i(29287),	-- Violet Signet of the Archmage
+					},
 				}),
-				]]--
 				q(45291, {	-- Return to Karazhan: Book Wyrms
-					["lvl"] = 110,
-					["provider"] = { "n", 18255 },	-- Mage Darius
 					["sourceQuests"] = {
 						44734,	-- Fragments of the Past
 						44735,	-- Return to Karazhan: In the Eye of the Beholder
 					},
+					["provider"] = { "n", 18255 },	-- Mage Darius
+					["coord"] = { 47.3, 75.0, 42 },
+					["lvl"] = 110,
 				}),
 				q(45295, {	-- Return to Karazhan: Clearing Out the Cobwebs
 					["sourceQuest"] = 45294,	-- Return to Karazhan: High Stress Hiatus
 					["provider"] = { "n", 18255 },	-- Mage Darius
+					["coord"] = { 47.3, 75.0, 42 },
 					["lvl"] = 110,
 				}),
 				q(45294, {	-- Return to Karazhan: High Stress Hiatus
 					["sourceQuest"] = 45293,	-- Return to Karazhan: New Shoes
 					["provider"] = { "n", 18255 },	-- Mage Darius
 					["lvl"] = 110,
+					["coord"] = { 47.3, 75.0, 42 },
 					["g"] = {
 						i(142468),	-- Violet Seal of the Archmage
 					},
@@ -175,16 +222,17 @@ _.Zones =
 				q(45292, {	-- Return to Karazhan: Rebooting the Cleaner
 					["sourceQuest"] = 45291,	-- Return to Karazhan: Book Wyrms
 					["provider"] = { "n", 18255 },	-- Mage Darius
+					["coord"] = { 47.3, 75.0, 42 },
 					["lvl"] = 110,
 					["g"] = {
 						i(142461),	-- Violet Seal of the Archmage
 					},
 				}),
 				q(44735, {	-- Return to Karazhan: In the Eye of the Beholder
-					["provider"] = { "n", 114310 },	-- Archmage Khadgar
-					["lvl"] = 110,
-					["coord"] = { 47.0, 75.2, 42 },
 					["sourceQuest"] = 44733,	-- The Power of Corruption
+					["provider"] = { "n", 114310 },	-- Archmage Khadgar
+					["coord"] = { 47.3, 75.0, 42 },
+					["lvl"] = 110,
 				}),
 				--[[
 				q(40900, {	-- The Burden Borne (map blank, not sure if starts in Deadwind Pass, a scenario, or elsewhere)

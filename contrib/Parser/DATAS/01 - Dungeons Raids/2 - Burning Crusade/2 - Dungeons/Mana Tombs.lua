@@ -9,6 +9,10 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["coord"] = { 39.63, 57.67, 108 },	-- Mana-Tombs, Terokkar Forest
 		["groups"] = {
 			n(-17, {	-- Quests
+				q(10216,  {	-- Safety is Job One
+					["u"] = 40,
+					["provider"] = { "n", 19670 },	-- Artificer Morphalius
+				}),
 				q(29573, {	-- Safety is Job One
 					["provider"] = { "n", 54692 },	-- Artificer Morphalius
 					["sourceQuests"] = {

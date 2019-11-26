@@ -737,6 +737,14 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = 186,	-- Mining
 				}),
+				q(41635, {	-- Work Order: Leystone Boots
+					["isWorldQuest"] = true,
+					["requireSkill"] = 164,	-- Blacksmithing
+					["lvl"] = 110,
+					["g"] = {
+						i(137605),	-- Recipe: Leystone Boots (Rank 3)
+					},
+				}),
 				q(41647, {	-- Work Order: Silkweave Robe
 					["lvl"] = 110,
 					["isWorldQuest"] = true,

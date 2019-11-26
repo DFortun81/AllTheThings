@@ -6,10 +6,17 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(69, {	-- Feralas
 			n(-17, { 	-- Quests
+				q(2974, {	-- A Grim Discovery
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4544 },	-- Krueg Skullsplitter
+					["sourceQuest"] = 2973,	-- A New Cloak's Sheen
+				}),
 				q(2976,  {	-- A Grim Discovery
 					["u"] = 40,
-					["provider"] = { "n", 4544 },	-- Krueg Skullsplitter
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4544 },	-- Krueg Skullsplitter
+					["sourceQuest"] = 2974,	-- A Grim Discovery
 					["g"] = {
 						un(2, i(11858)),	-- Battlehard Cape
 						un(2, i(11859)),	-- Jademoon Orb
@@ -30,17 +37,33 @@ _.Zones =
 						un(2, i(11857)),	-- Sanctimonial Rod
 					},
 				}),
+				q(2973, {	-- A New Cloak's Sheen
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4544 },	-- Krueg Skullsplitter
+				}),
 				q(25361, {	-- A New Cloak's Sheen (when does this pop up?)
 					["provider"] = { "n", 4544 },	-- Krueg Skullsplitter
 					["coord"] = { 74.8, 43.3, 69 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25345,	-- Faerie Dragon Muisek
 				}),
+				q(3121, {	-- A Strange Request
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
+				}),
 				q(26574, {	-- Adella's Covert Camp
 					["provider"] = { "n", 39653 },	-- Silvia
 					["coord"] = { 56.9, 54.9, 69 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+				}),
+				q(2863, {	-- Alpha Strike
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
+					["sourceQuest"] = 2862,	-- War on the Woodpaw
 				}),
 				q(25427, {	-- Alpha Strike (A)
 					["provider"] = { "n", 39725 },	-- Adella
@@ -105,6 +128,11 @@ _.Zones =
 						un(2, i(10706)),	-- Nightscale Girdle
 					},
 				}),
+				q(7481, {	-- Elven Legends
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14373 },	-- Sage Korolusk
+				}),
 				q(25402, {	-- Estulan's Examination
 					["provider"] = { "n", 39653 },	-- Silvia
 					["coord"] = { 56.9, 54.9, 69 },
@@ -124,11 +152,21 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				q(3125, {	-- Faerie Dragon Muisek
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
+					["sourceQuest"] = 3124,	-- Hippogryph Muisek
+				}),
 				q(25345, {	-- Faerie Dragon Muisek
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
 					["coord"] = { 74.4, 43.3, 69 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25338,	-- Treant Muisek
+				}),
+				q(2766, {	-- Find OOX-22/FE!
+					["u"] = 40,
+					["provider"] = { "i", 8705 },	-- OOX-22/FE Distress Beacon
 				}),
 				q(25475, {	-- Find OOX-22/FE!
 					["crs"] = { 39896 },	-- Feral Scar Yeti
@@ -167,6 +205,14 @@ _.Zones =
 					["provider"] = { "n", 40078 },	-- Handler Tessina
 					["coord"] = { 57.1, 53.8, 69 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(7721, {	-- Fuel for the Zapping
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 14637 },	-- Zorbin Fandazzle
+					["g"] = {
+						i(19039),	-- Zorbin's Water Resistant Hat -- Note: still available
+					},
 				}),
 				q(26402, {	-- General Shandris Feathermoon
 					["provider"] = { "n", 40032 },	-- Telaron Windflight
@@ -315,11 +361,22 @@ _.Zones =
 						i(156983),	-- Runetotem Slicer 
 					},
 				}),
+				q(3127, {	-- Mountain Giant Muisek
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
+					["sourceQuest"] = 3126,	-- Treant Muisek
+				}),
 				q(25346, {	-- Mountain Giant Muisek
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
 					["coord"] = { 74.4, 43.3, 69 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25345,	-- Faerie Dragon Muisek
+				}),
+				q(3128, {	-- Natural Materials
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
 				}),
 				q(25305, {	-- Never Look Back
 					["u"] = 1,
@@ -373,6 +430,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25458,	-- General Skessesh
 					["isBreadcrumb"] = true,
+				}),
+				q(2767, {	-- Rescue OOX-22/FE!
+					["u"] = 40,
+					["provider"] = { "n", 7807 },	-- Homing Robot OOX-22/FE
 				}),
 				q(25476, {	-- Rescue OOX-22/FE!
 					["provider"] = { "n", 7807 },	-- Homing Robot OOX-22/FE
@@ -514,6 +575,11 @@ _.Zones =
 						i(54941),	-- Secretion-Coated Carapace
 					},
 				}),
+				q(7731, {	-- Stinglasher
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
+				}),
 				q(25369, {	-- Stinglasher (H)
 					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
 					["coord"] = { 74.9, 42.4, 69 },
@@ -566,6 +632,12 @@ _.Zones =
 					["coord"] = { 57.0, 55.4, 69 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25403,	-- Ogre Abduction
+				}),
+				q(3123, {	-- Testing the Vessel
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
+					["sourceQuest"] = 3122,	-- Return to Witch Doctor Uzer'i
 				}),
 				q(25336, {	-- Testing the Vessel
 					["provider"] = { "n", 39894 },	-- Gombana
@@ -685,6 +757,15 @@ _.Zones =
 					["coord"] = { 57.2, 55.0, 69 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(2822, {	-- The Mark of Quality
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 7854 },	-- Jangdor Swiftstrider
+					["g"] = {
+						i(9633),	-- Jangdor's Handcrafted Boots -- NOTE: still available
+						i(9632),	-- Jangdor's Handcrafted Gloves -- NOTE: still available
+					},
+				}),
 				q(25449, {	-- The Mark of Quality (A)
 					["provider"] = { "n", 40226 },	-- Pratt McGrubben
 					["coord"] = { 45.4, 41.3, 69 },
@@ -730,6 +811,23 @@ _.Zones =
 					["coord"] = { 51.2, 17.8, 69 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(2975, {	-- The Ogres of Feralas
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 7777 },	-- Rok Orhan
+					["sourceQuest"] = 2981,	-- A Threat in Feralas
+				}),
+				q(2980, {	-- The Ogres of Feralas
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 7777 },	-- Rok Orhan
+					["sourceQuest"] = 2975,	-- The Ogres of Feralas
+				}),
+				q(3380, {	-- The Sunken Temple
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
+				}),
 				q(25387, {	-- To Camp Mojache
 					["provider"] = { "n", 39656 },	-- Orhan Ogreblade
 					["coord"] = { 51.9, 48.0, 69 },
@@ -755,6 +853,12 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 28504,	-- Warchief's Command: Thousand Needles!
 				}),
+				q(3126, {	-- Treant Muisek
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
+					["sourceQuest"] = 3125,	-- Faerie Dragon Muisek
+				}),
 				q(25338, {	-- Treant Muisek
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
 					["coord"] = { 74.4, 43.3, 69 },
@@ -777,6 +881,11 @@ _.Zones =
 						i(63561),	-- Bracers of Desperate Need
 						i(131430),	-- Maloof's Spare Treads
 					},
+				}),
+				q(3063, {	-- Vengeance on the Northspring
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 7776 },	-- Talo Thornhoof
 				}),
 				q(25339, {	-- Vengeance on the Northspring
 					["provider"] = { "n", 7776 },	-- Talo Thornhoof
@@ -805,6 +914,10 @@ _.Zones =
 						un(2, i(9656)),	-- Granite Grips
 						un(2, i(9657)),	-- Vinehedge Cinch
 					},
+				}),
+				q(2862, {	-- War on the Woodpaw
+					["u"] = 40,
+					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
 				}),
 				q(25426, {	-- War on the Woodpaw (A)
 					["provider"] = { "n", 39725 },	-- Adella
@@ -879,6 +992,12 @@ _.Zones =
 						un(2, i(8404)),	-- Pattern: Wild Leather Vest
 					},
 				}),
+				q(2902, {	-- Woodpaw Investigation
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
+					["sourceQuest"] = 2863,	-- Alpha Strike
+				}),
 				q(25365, {	-- Woodpaw Investigation
 					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
 					["coord"] = { 74.9, 42.4, 69 },
@@ -931,6 +1050,11 @@ _.Zones =
 					["coord"] = { 77.2, 56.5, 69 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25427,	-- Alpha Strike
+				}),
+				q(7730, {	-- Zukk'ash Infestation (H)
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider
 				}),
 				q(25367, {	-- Zukk'ash Infestation (H)
 					["provider"] = { "n", 7875 },	-- Hadoken Swiftstrider

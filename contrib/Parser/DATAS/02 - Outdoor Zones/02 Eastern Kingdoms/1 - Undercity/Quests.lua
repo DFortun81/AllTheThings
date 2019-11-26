@@ -5,7 +5,12 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(90, {	-- Undercity
-			n(-17, {	-- Quests				
+			n(-17, {	-- Quests
+				q(4294, {	-- ... and a Batch of Ooze
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10136 },	-- Chemist Fuely
+				}),
 				q(38397, {	-- A Curious Oddity
 					["provider"] = { "n", 6566 },	-- Estelle Gendry
 					["coords"] = {
@@ -18,6 +23,26 @@ _.Zones =
 						i(122339),	-- Ancient Heirloom Scabbard
 					},
 				}),
+				q(7817, {	-- A Donation of Mageweave
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14729 },	-- Ralston Farnsley
+				}),
+				q(7818, {	-- A Donation of Runecloth
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14729 },	-- Ralston Farnsley
+				}),
+				q(7814, {	-- A Donation of Silk
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14729 },	-- Ralston Farnsley
+				}),
+				q(7813, {	-- A Donation of Wool
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 14729 },	-- Ralston Farnsley
+				}),
 				q(27283, {	-- A Journey to Moonglade
 					["provider"] = { "n", 52319 },	-- Mala Skywatcher
 					["coord"] = { 55.0, 50.4, 90 },	-- Mala Skywatcher (Undercity)
@@ -25,12 +50,17 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 11 },	-- Druid
 					["lvl"] = 20,
-				}),				
+				}),
 				q(42985, {	-- A Royal Audience
 					["description"]	= "You get this Quest when you reach Prestige Rang 2.",
 					["races"] = HORDE_ONLY,
 					["lvl"] = 100,
 					["u"] = 40,
+				}),
+				q(4293, {	-- A Sample of Slime...
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10136 },	-- Chemist Fuely
 				}),
 				q(27277, {	-- An Audience with Ureda
 					["provider"] = { "n", 4566 },	-- Kaelystia Hatebringer
@@ -48,16 +78,31 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(6521,  {	-- An Unholy Alliance
-						["provider"] = { "n", 36273 },	-- Bragor Bloodfist
-						["coord"] = { 56.1, 92.1, 90 },
-						["races"] = HORDE_ONLY,
-						["u"] = 40,
-						["groups"] = {
-							un(2, i(17042)),	-- Nail Splitter
-							un(2, i(17039)),	-- Skullbreaker
-							un(2, i(17043)),	-- Zealot's Robe
-						},
-					}),
+					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
+					["coord"] = { 56.1, 92.1, 90 },
+					["races"] = HORDE_ONLY,
+					["u"] = 40,
+					["groups"] = {
+						un(2, i(17042)),	-- Nail Splitter
+						un(2, i(17039)),	-- Skullbreaker
+						un(2, i(17043)),	-- Zealot's Robe
+					},
+				}),
+				q(14353, {	-- An Unholy Alliance
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
+					["sourceQuest"] = 14352,	-- An Unholy Alliance
+					["g"] = {
+						un(2, i(17039)),	-- Skullbreaker
+						un(2, i(17042)),	-- Nail Spitter
+						un(2, i(17043)),	-- Zealot's Robe
+					},
+				}),
+				q(3784,  {	-- Assisting Arch Druid Runetotem
+					["u"] = 40,
+					["provider"] = { "n", 6741 },	-- Innkeeper Norman
+				}),
 				q(1847,  {	-- Brutal Legguards
 					["provider"] = { "n", 6411 },	-- Velora Nitely
 					["coord"] = { 62.6,39.4, 90 },
@@ -110,6 +155,17 @@ _.Zones =
 						un(2, i(3747)),	-- Meditative Sash
 					},
 				}),
+				q(232,   {	-- Errand for Apothecary Zinge
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5204 },	-- Apothecary Zinge
+				}),
+				q(238,   {	-- Errand for Apothecary Zinge
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5204 },	-- Apothecary Zinge
+					["sourceQuest"] = 232,	-- Errand for Apothecary Zinge
+				}),
 				q(31037, {	-- Enemies Below
 					["provider"] = { "n", 10181 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 57.8, 91.6, 90 },
@@ -148,6 +204,16 @@ _.Zones =
 						un(2, i(4984)),	-- Skull of Impending Doom
 					},
 				}),
+				q(1109,  {	-- Going, Going, Guano
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2055 },	-- Master Apothecary Faranell
+				}),
+				q(5050, {	-- Good Luck Charm
+					["u"] = 40,
+					["provider"] = { "n", 8403 },	-- Jeremiah Payson
+					["sourceQuest"] = 5049,	-- The Jeremiah Blues
+				}),
 				q(27281, {	-- Grezz Ragefist
 					["provider"] = { "n", 4593 },	-- Christoph Walker
 					["coord"] = { 47.2, 15.2, 90 },	-- Christoph Walker (Undercity)
@@ -164,12 +230,34 @@ _.Zones =
 					["classes"] = { 3 },	-- Hunter
 					["lvl"] = 20,
 				}),
+				q(1113,  {	-- Hearts of Zeal
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2055 },	-- Master Apothecary Faranell
+					["sourceQuest"] = 1109,	-- Going, Going, Guano!
+				}),
+				q(243,   {	-- Into the Field
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5204 },	-- Apothecary Zinge
+					["sourceQuest"] = 238,	-- Errand for Apothecary Zinge
+				}),
 				q(1048,  {	-- Into the Scarlet Monastery
 					["provider"] = { "n", 2425 },	-- Varimathras
 					["coord"] = { 56.3, 92.2, 90 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 33,
 					["u"] = 40,
+					["g"] = {
+						un(2, i(10711)),	-- Dragon's Blood Necklace
+						un(2, i(6803)),	-- Prophetic Cane
+						un(2, i(6802)),	-- Sword of Omen
+					},
+				}),
+				q(14355, {	-- Into The Scarlet Monastery
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
 					["g"] = {
 						un(2, i(10711)),	-- Dragon's Blood Necklace
 						un(2, i(6803)),	-- Prophetic Cane
@@ -190,8 +278,13 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["classes"] = { 9 },	-- Warlock
-					["maps"] = { 88, 90, 110 }, 
+					["maps"] = { 88, 90, 110 },
 					["lvl"] = 20,
+				}),
+				q(2995,  {	-- Lines of Communication
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 7825 },	-- Oran Snakewrithe
 				}),
 				q(28323, {	-- Meet with Brother Silverhallow
 					["provider"] = { "n", 4606 },	-- Aelthalyste
@@ -241,7 +334,7 @@ _.Zones =
 					["classes"] = { 2 },	-- Paladin
 					["lvl"] = 50,
 				}),
-				q(28297, {	-- Meet with Ormak Grimshot 
+				q(28297, {	-- Meet with Ormak Grimshot
 					["provider"] = { "n", 39116 },	-- Apolos
 					["coord"] = { 49.6, 29.0, 90 },	-- Apolos (Undercity)
 					["isBreadcrumb"] = true,
@@ -351,12 +444,23 @@ _.Zones =
 						un(2, i(20643)),	-- Undercity Reservist's Cap
 					},
 				}),
+				q(2342,  {	-- Reclaimed Treasures
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5651 },	-- Patrick Garrett
+				}),
+				q(366,   {	-- Return the Book
+					["u"] = 40,
+					["races"] = { 2, 5, 8, },	-- Orc, Undead, Troll
+					["provider"] = { "n", 1498 },	-- Bethor Iceshard
+					["sourceQuest"] = 357,	-- The Lich's Identity
+				}),
 				q(6324,  {	-- Return to Morris
 					["provider"] = { "n", 4551 },	-- Michael Garrett
 					["coords"] = { 63.0, 48.2, 90 },
 					["sourceQuest"] = 6322,	-- Michael Garrett
 					["races"] = { 5 },	-- Undead
-				}),			
+				}),
 				q(1358,  {	-- Sample for Helbrim
 					["provider"] = { "n", 5204 },	-- Apothecary Zinge
 					["coord"] = { 50.1, 68.0, 90 },
@@ -392,6 +496,23 @@ _.Zones =
 					["classes"] = { 5 },	-- Priest
 					["lvl"] = 20,
 				}),
+				q(3568,  {	-- Seeping Corruption
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 8390 },	-- Chemist Cuely
+				}),
+				q(3569, {	-- Seeping Corruption
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 8390 },	-- Chemist Cuely
+					["sourceQuest"] = 3568,	-- Seeping Corruption
+				}),
+				q(3570, {	-- Seeping Corruption
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 8390 },	-- Chemist Cuely
+					["sourceQuest"] = 3569,	-- Seeping Corruption
+				}),
 				q(1962,  {	-- Spellfire Robes
 					["provider"] = { "n", 4576 },	-- Josef Gregorian
 					["coord"] = { 70.8, 30.7, 90 },
@@ -403,7 +524,7 @@ _.Zones =
 						un(2, i(7510)),	-- Lesser Spellfire Robes
 					},
 				}),
-				q(1160,  {	-- Test of Lore	
+				q(1160,  {	-- Test of Lore
 					["provider"] = { "n", 4488 },	-- Parqual Fintallas
 					["coord"] = { 57.6, 65.0, 90 },
 					["sourceQuest"] = 1159,	-- Test of Lore
@@ -411,7 +532,7 @@ _.Zones =
 					["lvl"] = 25,
 					["u"] = 40,
 				}),
-				q(6628,  {	-- Test of Lore	
+				q(6628,  {	-- Test of Lore
 					["provider"] = { "n", 4488 },	-- Parqual Fintallas
 					["coord"] = { 57.6, 65.0, 90 },
 					["sourceQuest"] = 1160,	-- Test of Lore
@@ -451,6 +572,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 71,
 					["u"] = 40,
+					["sourceQuest"] = 13266,	-- A Life Without Regret
 					["g"] = {
 						un(2, i(44579)),	-- Medallion of Heroism
 						un(2, i(44590)),	-- Warchief's Leggings of Foresight
@@ -460,6 +582,22 @@ _.Zones =
 						un(2, i(44347)),	-- Warchief's Legguards of Heroism
 						un(2, i(44349)),	-- Warchief's Legplates of Carnage
 					},
+				}),
+				q(5961, {	-- The Champion of the Banshee Queen
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10181 },	-- Lady Sylvanas Windrunner
+				}),
+				q(495,   {	-- The Crown of Will
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2227 },	-- Sharlindra
+				}),
+				q(5049, {	-- The Jeremiah Blues
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10781 },	-- Royal Overseer Bauhaus
+					["sourceQuest"] = 5023,	-- Better Late Than Never
 				}),
 				q(39960, {	-- The Legacy Passed On
 					["provider"] = { "n", 97766 },	-- Francis Serbacon <Author Extrodinaire>
@@ -471,9 +609,31 @@ _.Zones =
 						recipe(192804),	-- Steamy Romance Novel Kit
 					},
 				}),
+				q(357,   {	-- The Lich's Identity
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1498 },	-- Bethor Iceshard
+					["sourceQuest"] = 405,	-- The Prodigal Lich
+				}),
+				q(1004,  {	-- The New Frontier
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10879 },	-- Harbinger Balthazad
+				}),
 				q(5725,  {	-- The Power to Destroy
 					["provider"] = { "n", 2425 },	-- Varimathras
 					["coord"] = { 56.3, 92.2, 90 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
+					["u"] = 40,
+					["g"] = {
+						un(2, i(15449)),	-- Ghastly Trousers
+						un(2, i(15450)),	-- Dredgemire Leggings
+						un(2, i(15451)),	-- Gargoyle Leggings
+					},
+				}),
+				q(14356,  {	-- The Power to Destroy
+					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["u"] = 40,
@@ -525,7 +685,12 @@ _.Zones =
 					["sourceQuest"] = 42985,	-- A Royal Audience
 					["races"] = HORDE_ONLY,
 					["lvl"] = 100,
-				}),	
+				}),
+				q(446,   {	-- Thule Ravenclaw
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 1498 },	-- Bethor Iceshard
+				}),
 				q(1164,  {	-- To Steal From Thieves
 					["provider"] = { "n", 4486 },	-- Genavie Callow
 					["coord"] = { 63.8, 49.5, 90 },
@@ -536,6 +701,16 @@ _.Zones =
 						un(2, i(2032)),	-- Gallan Cuffs
 						un(2, i(4443)),	-- Grim Pauldrons
 					},
+				}),
+				q(4133, {	-- Vivian Lagrave
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5204 },	-- Apothecary Zinge
+				}),
+				q(4769, {	-- Vivian Lagrave and the Darkstone Tablet
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 5204 },	-- Apothecary Zinge
 				}),
 			}),
 		}),

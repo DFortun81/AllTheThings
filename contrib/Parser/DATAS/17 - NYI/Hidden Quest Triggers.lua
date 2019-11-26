@@ -20,7 +20,18 @@ _.NeverImplemented =
 		q(54740),	-- [DNT] REUSE ME
 		q(57917),	-- [DNT] Test - JAM
 		q(8274),	-- Test Kill Quest - triggered after The Conquest Pit: Final Showdown (12431)
-		
+		q(6842),	-- Unused
+		q(7069),	-- Unused
+		q(8458),	-- Unused
+		q(24797),	-- REUSE
+		q(46807),	-- [UNUSED]
+		q(40596),	-- FLAG - Azsuna - Timothy Jones - (UNUSED)
+		q(40595),	-- FLAG - Dalaran - Timothy Jones - (UNUSED)
+		q(47495),	-- Insatiable Appetite [UNUSED]
+		q(39044),	-- Unused
+		q(50690),	-- Unused
+		q(54781),	-- UNUSED
+		q(37812),	-- UNUSED: Test Race: 1 Marker
 		
 		
 		-------------------
@@ -46,7 +57,10 @@ _.NeverImplemented =
 		
 		-- Events/Holidays
 		q(11320),	-- [NYI] Now this is Ram Racing... Almost. (Brewfest)
-
+		q(47465),	-- Bonus roll on Azuregos World boss during WoW 15th anniversary in 2019
+		q(47464),	-- Bonus roll on Kazzak World boss during WoW 15th anniversary in 2019
+		q(47466),	-- Bonus roll on Emeriss during anniversary event
+		
 		-- Darkmoon Faire
 		q(30557),	-- [DNT] A Captured Banner TRACKER - triggers after completing A Captured Banner (questID 29456)
 		q(30553),	-- [DNT] A Curious Crystal TRACKER - triggers after completing A Curious Crystal (questID 29443)
@@ -87,6 +101,7 @@ _.NeverImplemented =
 
 	--	DUNGEONS
 		q(35929),	-- Blackfathom Deeps Reward Quest
+		q(35930),	-- Blackfathom Deeps (Bonus) Reward Quest
 		q(35903),	-- Blackrock Depths (Detention Bonus) Reward Quest
 		q(35902),	-- Blackrock Depths (Upper City) Reward Quest
 		q(35586),	-- Deadmines normal completion
@@ -124,7 +139,9 @@ _.NeverImplemented =
 	--	QUESTING / LEVELING
 		q(10454),	-- Hellfire Peninsula - Flag: OFF THE RAILS. Triggered just after turning in Forward Base: Reaver's Fall as horde
 		q(11517),	-- Report to Nasuun — looks like an unused version of #11534 (triggers when you turn it in, but has no data on wowhead)
-	
+		q(11518),	-- Sunwell Daily Portal Flag
+		q(12494),	-- FLAG: Riding Training Advertisement
+		
 	--	DUNGEONS
 		q(35544),	-- Auchinai Crypts normal completion
 		q(35545),	-- Auchinai Crypts heroic completion
@@ -164,7 +181,7 @@ _.NeverImplemented =
 		-------------------
 		--     WOTLK     --
 		-------------------
-		-- dungeons
+		-- Dungeons & Raids
 		q(35489),	-- Ahn'Kahet: The Old Kingdom normal completion
 		q(35490),	-- Ahn'Kahet: The Old Kingdom heroic completion
 		q(35493),	-- Ahn'Kahet: The Old Kingdom bonus objective completed (kill Amanitar, heroic only)
@@ -200,20 +217,33 @@ _.NeverImplemented =
 		q(35512),	-- Utgarde Keep heroic completion
 		q(35449),	-- Utgarde Pinnacle normal completion
 		q(35453),	-- Utgarde Pinnacle heroic completion
+		q(24811),	-- Caster Ring Flag (doing "Choose Your Path" in ICC and choosing crit/haste ring on mage)
+		q(24809),	-- Healer Ring Flag (doing "A Change of Heart" in ICC and choosing the healer ring
+		q(24844),	-- A Change of Heart — on shadow priest, was DPS, switched to heal ring
+		q(24845),	-- A Change of Heart — on shadow priest, was heal, switched to DPS ring
+		q(24840),	-- A Change of Heart — on mage, switched from crit/haste ring to haste/vers ring
+		q(24841),	-- A Change of Heart — on mage, switched from haste/vers ring to crit/haste ring
+		-- there are 19 "A Change of Heart" quests, no idea how to determine what classes they're for or what other restrictions there may be, so placing these here for now
 		
 		-- Zones
+		q(12845),	-- Dalaran teleport crystal flag
+		q(13701),	-- Argent Tournament - Horde Champion Marker
+		q(24661),	-- Theryn Fed Tracker
 		q(46051),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 01
 		q(46052),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 02
 		q(46053),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 03
 		q(46054),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 04
 		q(46055),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 05
 		q(12485),	-- Howling Fjord - triggers during "The Echo of Ymiron" when you see the RP between two vrykul in Wyrmskull Village
-
-		
+		q(12452),	-- Dragonblight - triggers when turning in "The Fate of the Ruby Dragonshrine". duplicate version of a quest during early development
+		q(12693),	-- Sholazar Basin - Wolvar Faction Choice Tracker
+		q(12694),	-- Sholazar Basin - Oracle Faction Choice Tracker
 		
 		-------------------
 		--   CATACLYSM   --
 		-------------------
+		q(28347),	-- Coffer of Promise TRACKING QUEST
+		
 		q(26565),	-- A Furious Catch (REMOVED) — unused version of Orgrimmar Cata fishing daily "A Golden Opportunity"
 		q(35348),	-- Blackrock Caverns Reward Quest
 		q(35587),	-- Deadmines heroic completion
@@ -228,8 +258,18 @@ _.NeverImplemented =
 		q(28106),	-- Twilight Highlands - triggers when the Grim Batol gates are broken open during "If The Key Fits"
 		q(26119),	-- Vashj'ir - FLAG - Claim Our Stake Launched
 		q(35403),	-- Vortex Pinnacle dungeon reward (Kill Asaad)
-
-		
+		q(26415),	-- Questflag for Captain's Log — while on #26246, "Captain's Log" in Deepholm
+		q(27079),	-- Twilight Gate Tracking — blowing up the gate during #26861, "Block the Gates" in Deepholm
+		q(27080),	-- Twilight Gate Tracking — blowing up elemental during #26861, "Block the Gates" in Deepholm
+		q(36587),	-- Twilight Gate Tracking — blowing up elemental during #26861, "Block the Gates" in Deepholm
+		q(14114),	-- Kezan - The New You tracking event. Triggers after you complete "The New You"
+		q(14139),	-- Kezan - Phase 1 complete. Triggers after turning in "Do it Yourself"
+		q(14158),	-- Kezan - Phase 6 complete. Triggers when quest "447" becomes available
+		q(26705),	-- Lost Isles - It's a Town-In-A-Box tracking event. Triggers when you use the plunger to spawn the town
+		q(26902),	-- Lost Isles - Get Back to Town accepted tracking flag. Triggers the attack on town-in-a-box
+		q(28846),	-- Lost Isles - Repel the Paratroopers accepted tracking flag
+		q(25226),	-- Lost Isles - Kill Chip Endale tracking flag
+		q(25245),	-- Lost Isles - Kill Candy Cane tracking flag
 		
 		-------------------
 		--      MOP      --
@@ -634,6 +674,7 @@ _.NeverImplemented =
 		--    Legion     --
 		-------------------
 	--	Various tracking quests
+		q(40616),	-- Tracking Quest - W1 - Saw Leader Die
 		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
 		q(45533),	-- Legion Dungeon Reward Quest
 		q(44437),	-- Legion Sungeon Reward quest (Wrath of Azshara)
@@ -678,6 +719,8 @@ _.NeverImplemented =
 		q(45855),	-- Tank Trait Complete — triggered when raising weapon during "A Gift From the Six," #45863, on vengeance DH
 		q(43511),	-- Kalec Arrives — triggered when turning in "The Power Within" at Azurewing Repose (starting Balance of Power)
 		q(45302),	-- 7.1.5 Class Hall - Brawlers Missions - Has Completed Any Brawlers Mission with Overmax - Tracking Quest — triggered when doing my first brawl for BFA
+		q(48973),	-- Unused Paragon quest, it seems the active one is #48976, "Supplies From the Argussian Reach"
+		q(48974),	-- Unused Paragon quest, it seems the active one is #48977, "Supplies From the Army of the Light"
 		
 	--	Professions
 	--	Archaeology
@@ -911,7 +954,11 @@ _.NeverImplemented =
 		q(54777),	-- triggered when turning in #54134, "Many Fine Heroes," vol'dun assault.  had WM on but i'm not sure if that's relevant
 		q(54771),	-- triggered when turning in #53701, "A Drust Cause," drustvar assault.  had WM on but i'm not sure if that's relevant
 		q(54782),	-- triggered when turning in #53711, "A Sound Defense," tiragarde sound assault.  had WM on but i'm not sure if that's relevant
+		q(54779),	-- triggered when turning in #54138, "Ritual Rampage," zuldazar assault.  had WM on but i'm not sure if that's relevant
 		q(57593),	-- triggered when talking to chromie in CoT during the 2019 anniversary event, before turning in #57249, "A Timely Invitation"
+		q(54035),	-- Blessing of the Night Warden unlock chain started
+		q(53956),	-- Triggered when turning in "We Are Coming" as alliance. Probably related to darkshore warfront unlock?
+		q(49610),	-- looting Adventurer's Society Loot Stash to unlock the Nigel Rifthold pet vendor
 
 
 	--	HONEYBACK HIVE
@@ -968,15 +1015,18 @@ _.NeverImplemented =
 		q(54715),	-- Drustvar Secret Supply Chest (playing as Alliance)
 		q(54717),	-- Nazmir Secret Supply Chest (playing as Alliance)
 		q(55387),	-- Nazmir Secret Supply Chest (playing as Alliance)
+		q(55388),	-- Stormsong Valley Secret Supply Chest (playing as Alliance)
 		q(54714),	-- Tiragarde Sound Secret Supply Chest
 		q(55347),	-- Tiragarde Sound Secret Supply Chest
 		q(54718),	-- Vol'dun Secret Supply Chest (playing as Alliance)
 		q(55389),	-- Vol'dun Secret Supply Chest (playing as Alliance)
 		q(54720),	-- Zuldazar Secret Supply Chest (playing as Horde)
 		q(55391),	-- Zuldazar Secret Supply Chest (playing as Horde and Alliance)
-		q(53640),	-- Zuldazar Secret Supply Chest (as Horde) / Zuldazar, Tiragarde, Nazmir, Vol'dun, Drustvar (as Alliance) (it probably triggers on both factions in all old BfA zones)
+		q(53640),	-- Zuldazar Secret Supply Chest (as Horde) / Zuldazar, Stormsong Valley (as Alliance), Tiragarde, Nazmir, Vol'dun, Drustvar (as Alliance) (it probably triggers on both factions in all old BfA zones)
 		q(55412),	-- looting War Supply Crate in Vol'dun on Alliance (not secret chest)
 		q(55409),	-- looting War Supply Crate in Nazmir on Alliance (not secret chest)
+		q(55410),	-- looting War Supply Crate in Stormsong Valley on Alliance (not secret chest)
+		q(55411),	-- looting War Supply Crate in Tiragarde Sound on Alliance (not secret chest)
 		q(55431),	-- Conquest's Reward — automatically offered when you cap conquest for the week
 		q(53349),	-- Conquest's Reward — automatically offered when you cap conquest for the week
 		q(53478),	-- Conquest's Reward — automatically offered when you cap conquest for the week
@@ -1105,7 +1155,7 @@ _.NeverImplemented =
 		q(54861),	-- Ivus the Forest Lord Kill ID
 					-- Ivus the Forest Lord Bonus Roll
 		q(52998),	-- Ji'arak Kill ID
-					-- Ji'arak Bonus Roll
+		q(52264),	-- Ji'arak Bonus Roll
 		q(52996),	-- T'zane Kill ID
 		q(52263),	-- T'zane Bonus Roll
 		q(53001),	-- The Lion's Roar Kill ID
@@ -1211,6 +1261,19 @@ _.NeverImplemented =
 		q(51912),	-- Drustvar repeatable random chest
 		q(51913),	-- Drustvar repeatable random chest
 		q(51914),	-- Drustvar repeatable random chest
+		
+
+	--	Nazmir
+		-- Bonus Objectives
+		q(47996, {	-- Mawfiend Extermination
+			["isWorldQuest"] = true,
+		}),
+		q(48588, {	-- Purge the Infection
+			["isWorldQuest"] = true,
+		}),
+		q(48852, {	-- Stopping Zardax
+			["isWorldQuest"] = true,
+		}),
 
 
 	--	Stormsong Valley
@@ -1277,6 +1340,7 @@ _.NeverImplemented =
 		q(53630),	-- Tiragarde Sound repeatable random chest (possibly different from others, it was Forgotten Treasure Chest at 79.57 20.22 in a small cave)
 
 	--	Zuldazar
+		q(55413),	-- War Mode supply drop in Zuldazar
 		q(55259),	-- Triggers after turning 'Sleep, Eat, Repeat' (ID 55258) in to finish the achievement criteria 'Sleep, Eat, Repeat' (3) for How to Train Your Direhorn (ID 13542)
 		-- Bonus Objectives
 		q(47527, {	-- Rituals of Heresy
@@ -1485,6 +1549,9 @@ _.NeverImplemented =
 		q(57387),	-- Captain Kromcrush data anomaly
 		q(57388),	-- Crowd Pummeler 9-60 data anomaly
 		q(57385),	-- Razorclaw the Butcher data anomaly
+		q(55903),	-- Triggered when completing "Armed for Action" achievement. May be related to picking up the weapon (e.g. Bolt Spitter)
+		q(56330),	-- Triggered shortly after completing "Chopped Bots". Possibly shuts down the magnet?
+		q(56660),	-- Triggered on Mechagon randomly
 		
 	--	Dungeons
 		q(53623),	-- Battle for Azeroth Dungeon Reward Quest

@@ -6,6 +6,7 @@ _.Zones =
 	m(905, { 	-- Argus
 		m(885, {	-- Antoran Wastes
 			n(-4, { 	-- Achievement
+				ach(12084),	-- Infused and Abused
 				ach(12074, {	-- Shoot First, Loot Later
 					o(277205, {	-- Ancient Legion War Cache
 						["questID"] = 49018,

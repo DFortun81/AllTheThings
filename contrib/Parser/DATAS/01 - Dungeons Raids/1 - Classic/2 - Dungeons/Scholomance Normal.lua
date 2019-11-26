@@ -95,38 +95,51 @@ _.Instances = { tier(1, {	-- Classic
 			n(-40, {	-- Legacy
 				["g"] = {
 					n(-17, {	-- Quests (Legacy)
-						un(40, q(4771, { 	-- Dawn's Gambit
-							un(2, i(15854)), 	-- Dancing Sliver
-							un(2, i(15853)), 	-- Windreaper
-						})),
-						un(40, q(5384, { 	-- Kirtonos the Herald
-							un(2, i(15806)), 	-- Mirah's Song
-							un(2, i(15805)), 	-- Penelope's Rose
-							un(2, i(13544)),	-- Spectral Essence
-						})),
-						un(40, q(27143, {	-- Barov Family Fortune
-							un(2, i(65923)),	-- Barov Servant Caller
-						})),
-						un(40, q(27148, {	-- School's Out Forever
-							un(2, i(65974)),	-- Discipline Rod
-							un(2, i(65925)),	-- Lucien's Boots
-							un(2, i(65950)),	-- Shackles of Punishment
-							un(2, i(65995)),	-- Signet of the Darkmaster
-						})),
-						un(40, q(7668, { 	-- The Darkreaver Menace
+						q(4771, { 	-- Dawn's Gambit
+							["u"] = 40,
+							["g"] = {
+								un(2, i(15854)), 	-- Dancing Sliver
+								un(2, i(15853)), 	-- Windreaper
+							},
+						}),
+						q(5384, { 	-- Kirtonos the Herald
+							["u"] = 40,
+							["g"] = {
+								un(2, i(15806)), 	-- Mirah's Song
+								un(2, i(15805)), 	-- Penelope's Rose
+								un(2, i(13544)),	-- Spectral Essence
+							},
+						}),
+						q(27143, {	-- Barov Family Fortune
+							["u"] = 40,
+							["g"] = {
+								un(2, i(65923)),	-- Barov Servant Caller
+							},
+						}),
+						q(27148, {	-- School's Out Forever
+							["u"] = 40,
+							["g"] = {
+								un(2, i(65974)),	-- Discipline Rod
+								un(2, i(65925)),	-- Lucien's Boots
+								un(2, i(65950)),	-- Shackles of Punishment
+								un(2, i(65995)),	-- Signet of the Darkmaster
+							},
+						}),
+						q(7668, { 	-- The Darkreaver Menace
+							["u"] = 40,
 							["classes"] = { 7 },
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								un(32, i(18807)), 	-- Helm of Latent Power (1.4 till 1.7 only)
 								un(2, i(20134)), 	-- Skyfury Helm
 							},
-						})),
-						un(40, q(5466, { 	-- The Lich, Ras Frostwhisper
-							un(2, i(13986)), 	-- Crown of Caer Darrow
-							un(2, i(14002)), 	-- Darrowshire Strongguard
-							un(2, i(13984)), 	-- Darrowspike
-							un(2, i(13982)), 	-- Warblade of Caer Darrow
-						})),
+						}),
+						q(5262, {	-- The Truth Comes Crashing Down
+							["u"] = 40,
+							["crs" ] = { 10813 },	-- Balnazzar
+							["provider"] = { "i", 13250 },	-- Head of Balnazzar
+							["sourceQuest"] = 5251,	-- The Archivist
+						}),
 					}),
 					n(0, {	-- Zone Drop
 						un(7, i(16254)),	-- Formula: Enchant Weapon - Lifestealing [Scholomance, Removed from game with revamp? Might have been added back in 7.3.5, but not sure.]

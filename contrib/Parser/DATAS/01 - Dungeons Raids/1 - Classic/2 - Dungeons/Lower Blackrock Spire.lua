@@ -9,6 +9,22 @@ _.Instances = { tier(1, {	-- Classic
 		["coord"] = { 80.46, 40.65, 33 },	-- Lower Blackrock Spire, Blackrock Mountain [Blackrock Spire]
 		["groups"] = {
 			n(-17, {	-- Quests
+				q(4982, {	-- Bijou's Belongings
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10257 },	-- Bijou
+					["sourceQuest"] = 4981,	-- Operative Bijou
+				}),
+				q(4983, {	-- Bijou's Reconnaissance Report
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10257 },	-- Bijou
+					["sourceQuest"] = 4982,	-- Bijou's Belongings
+					["g"] = {
+						un(2, i(15858)),	-- Freewind Gloves
+						un(2, i(15859)),	-- Seapost Girdle
+					},
+				}),
 				q(27440, {	-- Trolls, Ogres, and Orcs, Oh My!
 					i(65933),	-- Highlord's Chestpiece
 					i(65957),	-- Overlord's Legplates

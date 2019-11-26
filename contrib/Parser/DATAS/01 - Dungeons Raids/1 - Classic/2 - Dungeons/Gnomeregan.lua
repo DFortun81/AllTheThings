@@ -5,8 +5,8 @@
 _.Instances = { tier(1, {	-- Classic
 	inst(231, { 	-- Gnomeregan
 		["lvl"] = 19,
-		["mapID"] = 226,
 		["maps"] = {
+			226,
 			227,
 			228,
 			229,
@@ -29,8 +29,8 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(9605)),	-- Repairman's Cape
 					},
 				}),
-				i(9326, {	-- Grime-Encrusted Ring
-					["questID"] = 2945,	-- Grime-Encrusted Ring
+				q(2945, {	-- Grime-Encrusted Ring
+					["provider"] = { "i", 9326 },	-- Grime-Encrusted Ring
 					["crs"] = { 6212 },	-- Dark Iron Agent
 					["g"] = {
 						i(9362),	-- Brilliant Gold Ring
@@ -43,6 +43,14 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(9608)),	-- Shoni's Disarming Tool
 						un(2, i(9609)),	-- Shilly Mitts
 					},
+				}),
+				q(2947, {	-- Return of the Ring (A)
+					["sourceQuests"] = { 2945 },	-- Grime-Encrusted Ring
+					["provider"] = { "o", 142487 },	-- The Sparklematic 5200
+				}),
+				q(2949, {	-- Return of the Ring (H)
+					["sourceQuests"] = { 2945 },	-- Grime-Encrusted Ring
+					["provider"] = { "o", 142487 },	-- The Sparklematic 5200
 				}),
 				q(2841, {	-- Rig Wars
 					["u"] = 40,
@@ -77,10 +85,6 @@ _.Instances = { tier(1, {	-- Classic
 								i(10299),	-- Gnomeregan Amulet
 								i(10298),	-- Gnomeregan Band
 							},
-						}),
-						q(2947, {	-- Return of the Ring [Alliance]
-							["hordeQuestID"] = 2949,
-							["sourceQuests"] = { 2945 },	-- Grime-Encrusted Ring
 						}),
 						i(9308, {	-- Grime-Encrusted Object
 							q(2951),	-- The Sparklematic 5200!

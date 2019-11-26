@@ -28,6 +28,10 @@ _.Zones =
 						i(59423),	-- Stained Shoulderguards
 					},
 				}),
+				q(2583, {	-- A Boar's Vitality
+					["u"] = 40,
+					["provider"] = { "n", 7505 },	-- Bloodmage Drazial
+				}),
 				q(35745, {	-- Attack of the Iron Horde
 					["provider"] = { "n", 82851 },	-- Thrall
 					["coords"] = { 71.8, 47.7, 17 },
@@ -197,6 +201,10 @@ _.Zones =
 						35486,	-- Lunatic Lieutenants
 						35494,	-- Mementos of the Fallen
 					},
+				}),
+				q(3501, {	-- Everything Counts In Large Amounts
+					["u"] = 40,
+					["provider"] = { "n", 7363 },	-- Kum'isha the Collector
 				}),
 				q(35492, {	-- For Nethergarde!
 					["provider"] = { "n", 84929 },	-- Vindicator Maraad
@@ -485,6 +493,16 @@ _.Zones =
 						i(111600),	-- Iron Starlette
 					},
 				}),
+				q(2581, {	-- Snickerfang Jowls
+					["u"] = 40,
+					["provider"] = { "n", 7505 },	-- Bloodmage Drazial
+				}),
+				q(25681, {	-- Some People Just Need Killing
+					["provider"] = { "n", 41134 },	-- Tak'arili
+					["coord"] = { 62.2, 1.4, 17 },
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 25680,	-- That's Not Us
+				}),
 				q(35748, {	-- Subversive Scouts
 					["provider"] = { "n", 82851 },	-- Thrall
 					["coord"] = { 71.8, 47.7, 17 },
@@ -509,12 +527,6 @@ _.Zones =
 					["g"] = {
 						un(2, i(18602)),	-- Tome of Sacrifice
 					},
-				}),
-				q(25681, {	-- Some People Just Need Killing
-					["provider"] = { "n", 41134 },	-- Tak'arili
-					["coord"] = { 62.2, 1.4, 17 },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 25680,	-- That's Not Us
 				}),
 				q(26175, {	-- Surwich
 					["provider"] = { "n", 16841 },	-- Watch Commander Relthorn Netherwane
@@ -603,6 +615,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25693,	-- Enhancing the Stone
 				}),
+				q(2601, {	-- The Basilisk's Bite
+					["u"] = 40,
+					["provider"] = { "n", 7506 },	-- Bloodmage Lynnore
+				}),
 				q(25691, {	-- The Charred Granite of the Dark Portal
 					["provider"] = { "n", 41159 },	-- Watcher Wazzik
 					["coord"] = { 54.3, 50.0, 17 },
@@ -614,6 +630,11 @@ _.Zones =
 					["coord"] = { 55.1, 49.5, 17 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26163,	-- Time Is Short
+				}),
+				q(2743, {	-- The Cover of Darkness
+					["u"] = 40,
+					["provider"] = { "n", 7729 },	-- Spirit of Kirith
+					["sourceQuest"] = 2721,	-- Kirith
 				}),
 				q(25717, {	-- The Demons and the Druid
 					["provider"] = { "n", 42344 },	-- Rohan Sunveil

@@ -22,14 +22,29 @@ _.Zones =
 						i(131217),	-- Waistband of Tragic Memory
 					},
 				}),
+				q(1656, {	-- A Task Unfinished
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 6775 },	-- Antur Fallow
+				}),
 				q(743,   {	-- Dangers of the Windfury
 					["provider"] = { "n", 2985 },	-- Ruul Eagletalon
 					["coord"] = { 47.5, 61.3, 7 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(746,   {	-- Dwarven Digging
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2993 },	-- Baine Bloodhoof
+				}),
 				q(14436, {	-- Dwarven Digging
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
+				}),
+				q(775,   {	-- Journey into Thunder Bluff
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2994 },	-- Ancestral Spirit
 				}),
 				q(14439, {	-- Journey into Thunder Bluff
 					["races"] = HORDE_ONLY,
@@ -59,6 +74,11 @@ _.Zones =
 					["races"] = { 6 },	-- Tauren
 					["provider"] = { "i", 46884 },	-- Riding Training Pamphlet
 				}),
+				q(766,   {	-- Mazzranache
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3055 },	-- Maur Raincaller
+				}),
 				q(26188, {	-- Mazzranache
 					["provider"] = { "n", 3055 },	-- Maur Raincaller
 					["coord"] = { 47.1, 56.6, 7 },
@@ -67,6 +87,7 @@ _.Zones =
 				q(24459, {	-- Morin Cloudstalker
 					["provider"] = { "n", 36644 },	-- Ahmo Thunderhorn
 					["coord"] = { 47.6, 59.5, 7 },
+					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(7663,  {	-- New Kodo - Green
@@ -110,6 +131,24 @@ _.Zones =
 					["coord"] = { 47.4, 58.6, 7 },
 					["races"] = { 6 },	-- Tauren
 				}),
+				q(767,   {	-- Rite of Vision
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2993 },	-- Baine Bloodhoof
+					["sourceQuest"] = 763,	-- Rites of the Earthmother
+				}),
+				q(771,   {	-- Rite of Vision
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3054 },	-- Zarlman Two-Moons
+					["sourceQuest"] = 767,	-- Rite of Vision
+				}),
+				q(772,   {	-- Rite of Vision
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 3054 },	-- Zarlman Two-Moons
+					["sourceQuest"] = 771,	-- Rite of Vision
+				}),
 				q(24457, {	-- Rite of Vision
 					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
 					["coord"] = { 48.6, 59.8, 7 },
@@ -127,6 +166,11 @@ _.Zones =
 					["provider"] = { "n", 3233 },	-- Lorekeeper Raintotem
 					["coord"] = { 49.4, 17.2, 7 },
 					["races"] = { 6 },	-- Tauren
+				}),
+				q(745,   {	-- Sharing the Land
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2993 },	-- Baine Bloodhoof
 				}),
 				q(14438, {	-- Sharing the Land
 					["provider"] = { "n", 36644 },	-- Ahmo Thunderhorn
@@ -153,6 +197,12 @@ _.Zones =
 					["coord"] = { 48.7, 58.7, 7 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(780,   {	-- The Battleboars
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2980 },	-- Grull Hawkwind
+					["sourceQuest"] = 750,	-- The Hunt Continues
+				}),
 				q(770,   {	-- The Demon Scarred Cloak
 					["crs"] = { 3056 },	-- Ghost Howl
 					["races"] = HORDE_ONLY,
@@ -169,6 +219,17 @@ _.Zones =
 						i(4971),	-- Skorn's Hammer
 						i(3079),	-- Skorn's Rifle
 					},
+				}),
+				q(747,   {	-- The Hunt Begins
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2980 },	-- Grull Hawkwind
+				}),
+				q(750,   {	-- The Hunt Continues
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 2980 },	-- Grull Hawkwind
+					["sourceQuest"] = 747,	-- The Hunt Begins
 				}),
 				q(861,   {	-- The Hunter's Way
 					["u"] = 40,
