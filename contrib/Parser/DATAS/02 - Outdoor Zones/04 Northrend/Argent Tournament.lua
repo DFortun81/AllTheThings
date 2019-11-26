@@ -13,223 +13,223 @@ _.Zones =
 					ach(2756, {	-- Argent Aspiration
 						["sourceQuest"] = 13668,	-- The Argent Tournament
 					}),
-				}),
-				ach(4596, {	-- The Sword in the Skull
-					["description"] = "This is the quest chain for obtaining an epic Quel'Delar weapon.\n\nNOTE: A Warrior can learn all of the weapon appearances.",
-					["maps"] = {
-						125,	-- Dalaran (Northrend)
-						183,	-- The Forge of Souls
-						184,	-- Pit of Saron
-						185,	-- Halls of Reflection
-						122,	-- Isle of Quel'Danas
-					},
-					["lvl"] = 67,	-- Requirement for the Batterd Hilt itself.
-					["g"] = {
-						d(2, {	-- Battered Hilt
-							["description"] = "The hilt can drop from trash mobs in the ICC Heroic Dungeons. (Not the raid.)",
-							["g"] = {
-								a({
-									["itemID"] = 50379,	-- Battered Hilt
-									["questID"] = 14443,	-- The Battered Hilt [Alliance]
-								}),
-								h({
-									["itemID"] = 50380,	-- Battered Hilt [Horde]
-									["questID"] = 24554,	-- The Battered Hilt [Horde]
-								}),
-							},
-						}),
-						q(14444, {	-- What The Dragons Know (A)
-							["sourceQuest"] = 14443,	-- The Battered Hilt [Alliance]
-							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
-						}),
-						q(24555, {	-- What The Dragons Know (H)
-							["sourceQuest"] = 24554,	-- The Battered Hilt [Horde]
-							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
-						}),
-						q(14457, {	-- The Sunreaver Plan
-							["sourceQuest"] = 14444,	-- What The Dragons Know [Alliance]
-							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 36669 },	-- Arcanist Tybalin
-						}),
-						q(24557, {	-- The Silver Covenant's Scheme
-							["sourceQuest"] = 24555,	-- What The Dragons Know
-							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 36670 },	-- Magister Hathorel <The Sunreavers>
-						}),
-						q(20438, {	-- A Suitable Disguise (A)
-							["sourceQuest"] = 14457,	-- The Sunreaver Plan
-							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 36669 },	-- Arcanist Tybalin
-						}),
-						q(24556, {	-- A Suitable Disguise (H)
-							["sourceQuest"] = 24557,	-- The Silver Covenant's Scheme [Horde]
-							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 36670 },	-- Magister Hathorel <The Sunreavers>
-						}),
-						q(20439, {	-- A Meeting With The Magister
-							["sourceQuest"] = 20438,	-- A Suitable Disguise [Alliance]
-							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 36669 },	-- Arcanist Tybalin
-						}),
-						q(24451, {	-- An Audience With The Arcanist
-							["sourceQuest"] = 24556,	-- A Suitable Disguise [Horde]
-							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 36670 },	-- Magister Hathorel <The Sunreavers>
-						}),
-						q(24454, {	-- Return To Caladis Brightspear
-							["sourceQuest"] = 20439,	-- A Meeting With The Magister [Alliance]
-							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 36669 },	-- Arcanist Tybalin
-						}),
-						q(24558, {	-- Return To Myralion Sunblaze
-							["sourceQuest"] = 24451,	-- An Audience With The Arcanist [Horde]
-							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 36670 },	-- Magister Hathorel <The Sunreavers>
-						}),
-						q(24461, {	-- Reforging The Sword (A)
-							["sourceQuest"] = 24454,	-- Return To Caladis Brightspear [Alliance]
-							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
-						}),
-						q(24559, {	-- Reforging The Sword (H)
-							["sourceQuest"] = 24558,	-- Return To Myralion Sunblaze [Horde]
-							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
-						}),
-						q(24476, {	-- Tempering The Blade (A)
-							["sourceQuest"] = 24461,	-- Reforging The Sword [Alliance]
-							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
-						}),
-						q(24560, {	-- Tempering The Blade (H)
-							["sourceQuest"] = 24559,	-- Reforging The Sword [Horde]
-							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
-						}),
-						q(24480, {	-- The Halls Of Reflection (A)
-							["sourceQuest"] = 24476,	-- Tempering The Blade [Alliance]
-							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
-						}),
-						q(24561, {	-- The Halls Of Reflection (H)
-							["sourceQuest"] = 24560,	-- Tempering The Blade [Horde]
-							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
-						}),
-						q(24522, {	-- Journey To The Sunwell (A)
-							["sourceQuest"] = 24480,	-- The Halls Of Reflection [Alliance]
-							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
-						}),
-						q(24562, {	-- Journey To The Sunwell (H)
-							["sourceQuest"] = 24561,	-- The Halls Of Reflection [Horde]
-							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
-						}),
-						q(24535, {	-- Thalorien Dawnseeker (A)
-							["sourceQuest"] = 24522,	-- Journey To The Sunwell
-							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
-						}),
-						q(24563, {	-- Thalorien Dawnseeker (H)
-							["sourceQuest"] = 24562,	-- Journey To The Sunwell
-							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
-						}),
-						q(24553, {	-- The Purification of Quel'Delar (A)
-							["sourceQuest"] = 24535,	-- Thalorien Dawnseeker [Alliance]
-							["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
-							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
-						}),
-						q(24595, {	-- The Purification of Quel'Delar (A — Maces)
-							["sourceQuest"] = 24535,	-- Thalorien Dawnseeker [Alliance]
-							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
-							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
-						}),
-						q(24564, {	-- The Purification of Quel'Delar (H)
-							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
-							["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
-							["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
-							["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
-						}),
-						q(24598, {	-- The Purification of Quel'Delar (H — Maces)
-							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
-							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
-							["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
-							["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
-						}),
-						q(24594, {	-- The Purification of Quel'Delar (Blood Elf)
-							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
-							["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
-							["races"] = { 10 },	-- Blood Elf
-							["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
-						}),
-						q(24596, {	-- The Purification of Quel'Delar (Blood Elf — Maces)
-							["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
-							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
-							["races"] = { 10 },	-- Blood Elf
-							["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
-						}),
-						q(24796, {	-- A Victory For The Silver Covenant (A)
-							["sourceQuest"] = 24553,	-- The Purification of Quel'Delar [Alliance]
-							["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
-							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
-						}),
-						q(24795, {	-- A Victory For The Silver Covenant (A — Maces)
-							["sourceQuest"] = 24595,	-- The Purification of Quel'Delar [Alliance - Maces]
-							["races"] = ALLIANCE_ONLY,
-							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
-							["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
-						}),
-						q(24801, {	-- A Victory For The Sunreavers [Horde]
-							["sourceQuest"] = 24564,	-- The Purification of Quel'Delar [Horde]
-							["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
-							["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
-						}),
-						q(24799, {	-- A Victory For The Sunreavers [Horde - Maces]
-							["sourceQuest"] = 24598,	-- The Purification of Quel'Delar [Horde - Maces]
-							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
-							["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
-							["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
-						}),
-						q(24800, {	-- A Victory For The Sunreavers [Blood Elves]
-							["sourceQuest"] = 24594,	-- The Purification of Quel'Delar [Blood Elves]
-							["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
-							["races"] = { 10 },	-- Blood Elf Only!
-							["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
-						}),
-						q(24798, {	-- A Victory For The Sunreavers [Blood Elves - Maces]
-							["sourceQuest"] = 24596,	-- The Purification of Quel'Delar [Blood Elves - Maces]
-							["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
-							["races"] = { 10 },	-- Blood Elf Only!
-							["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
-						}),
-						n(-6015, {	-- Rewards
-							["description"] = "You will be able to choose one of these weapons when you turn in your class/race specific Victory quest. You will learn all of their transmogs regardless of your choice.",
-							["sourceQuests"] = {
-								24796,	-- A Victory For The Silver Covenant [Alliance]
-								24795,	-- A Victory For The Silver Covenant [Alliance - Maces]
-								24801,	-- A Victory For The Sunreavers [Horde]
-								24799,	-- A Victory For The Sunreavers [Horde - Maces]
-								24800,	-- A Victory For The Sunreavers [Blood Elves]
-								24798,	-- A Victory For The Sunreavers [Blood Elves - Maces]
-							},
-							["g"] = {
-								i(50050),	-- Cudgel of Furious Justice
-								i(50051),	-- Hammer of Purified Flame
-								i(50052),	-- Lightborn Spire
-								i(50046),	-- Quel'Delar, Cunning of the Shadows
-								i(50049),	-- Quel'Delar, Ferocity of the Scorned
-								i(50047),	-- Quel'Delar, Lens of the Mind
-								i(50048),	-- Quel'Delar, Might of the Faithful
-							},
-						}),
-					},
+					ach(4596, {	-- The Sword in the Skull
+						["description"] = "This is the quest chain for obtaining an epic Quel'Delar weapon.\n\nNOTE: A Warrior can learn all of the weapon appearances.",
+						["maps"] = {
+							125,	-- Dalaran (Northrend)
+							183,	-- The Forge of Souls
+							184,	-- Pit of Saron
+							185,	-- Halls of Reflection
+							122,	-- Isle of Quel'Danas
+						},
+						["lvl"] = 67,	-- Requirement for the Batterd Hilt itself.
+						["g"] = {
+							d(2, {	-- Battered Hilt
+								["description"] = "The hilt can drop from trash mobs in the ICC Heroic Dungeons. (Not the raid.)",
+								["g"] = {
+									a({
+										["itemID"] = 50379,	-- Battered Hilt
+										["questID"] = 14443,	-- The Battered Hilt [Alliance]
+									}),
+									h({
+										["itemID"] = 50380,	-- Battered Hilt [Horde]
+										["questID"] = 24554,	-- The Battered Hilt [Horde]
+									}),
+								},
+							}),
+							q(14444, {	-- What The Dragons Know (A)
+								["sourceQuest"] = 14443,	-- The Battered Hilt [Alliance]
+								["races"] = ALLIANCE_ONLY,
+								["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
+							}),
+							q(24555, {	-- What The Dragons Know (H)
+								["sourceQuest"] = 24554,	-- The Battered Hilt [Horde]
+								["races"] = HORDE_ONLY,
+								["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
+							}),
+							q(14457, {	-- The Sunreaver Plan
+								["sourceQuest"] = 14444,	-- What The Dragons Know [Alliance]
+								["races"] = ALLIANCE_ONLY,
+								["provider"] = { "n", 36669 },	-- Arcanist Tybalin
+							}),
+							q(24557, {	-- The Silver Covenant's Scheme
+								["sourceQuest"] = 24555,	-- What The Dragons Know
+								["races"] = HORDE_ONLY,
+								["provider"] = { "n", 36670 },	-- Magister Hathorel <The Sunreavers>
+							}),
+							q(20438, {	-- A Suitable Disguise (A)
+								["sourceQuest"] = 14457,	-- The Sunreaver Plan
+								["races"] = ALLIANCE_ONLY,
+								["provider"] = { "n", 36669 },	-- Arcanist Tybalin
+							}),
+							q(24556, {	-- A Suitable Disguise (H)
+								["sourceQuest"] = 24557,	-- The Silver Covenant's Scheme [Horde]
+								["races"] = HORDE_ONLY,
+								["provider"] = { "n", 36670 },	-- Magister Hathorel <The Sunreavers>
+							}),
+							q(20439, {	-- A Meeting With The Magister
+								["sourceQuest"] = 20438,	-- A Suitable Disguise [Alliance]
+								["races"] = ALLIANCE_ONLY,
+								["provider"] = { "n", 36669 },	-- Arcanist Tybalin
+							}),
+							q(24451, {	-- An Audience With The Arcanist
+								["sourceQuest"] = 24556,	-- A Suitable Disguise [Horde]
+								["races"] = HORDE_ONLY,
+								["provider"] = { "n", 36670 },	-- Magister Hathorel <The Sunreavers>
+							}),
+							q(24454, {	-- Return To Caladis Brightspear
+								["sourceQuest"] = 20439,	-- A Meeting With The Magister [Alliance]
+								["races"] = ALLIANCE_ONLY,
+								["provider"] = { "n", 36669 },	-- Arcanist Tybalin
+							}),
+							q(24558, {	-- Return To Myralion Sunblaze
+								["sourceQuest"] = 24451,	-- An Audience With The Arcanist [Horde]
+								["races"] = HORDE_ONLY,
+								["provider"] = { "n", 36670 },	-- Magister Hathorel <The Sunreavers>
+							}),
+							q(24461, {	-- Reforging The Sword (A)
+								["sourceQuest"] = 24454,	-- Return To Caladis Brightspear [Alliance]
+								["races"] = ALLIANCE_ONLY,
+								["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
+							}),
+							q(24559, {	-- Reforging The Sword (H)
+								["sourceQuest"] = 24558,	-- Return To Myralion Sunblaze [Horde]
+								["races"] = HORDE_ONLY,
+								["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
+							}),
+							q(24476, {	-- Tempering The Blade (A)
+								["sourceQuest"] = 24461,	-- Reforging The Sword [Alliance]
+								["races"] = ALLIANCE_ONLY,
+								["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
+							}),
+							q(24560, {	-- Tempering The Blade (H)
+								["sourceQuest"] = 24559,	-- Reforging The Sword [Horde]
+								["races"] = HORDE_ONLY,
+								["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
+							}),
+							q(24480, {	-- The Halls Of Reflection (A)
+								["sourceQuest"] = 24476,	-- Tempering The Blade [Alliance]
+								["races"] = ALLIANCE_ONLY,
+								["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
+							}),
+							q(24561, {	-- The Halls Of Reflection (H)
+								["sourceQuest"] = 24560,	-- Tempering The Blade [Horde]
+								["races"] = HORDE_ONLY,
+								["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
+							}),
+							q(24522, {	-- Journey To The Sunwell (A)
+								["sourceQuest"] = 24480,	-- The Halls Of Reflection [Alliance]
+								["races"] = ALLIANCE_ONLY,
+								["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
+							}),
+							q(24562, {	-- Journey To The Sunwell (H)
+								["sourceQuest"] = 24561,	-- The Halls Of Reflection [Horde]
+								["races"] = HORDE_ONLY,
+								["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
+							}),
+							q(24535, {	-- Thalorien Dawnseeker (A)
+								["sourceQuest"] = 24522,	-- Journey To The Sunwell
+								["races"] = ALLIANCE_ONLY,
+								["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							}),
+							q(24563, {	-- Thalorien Dawnseeker (H)
+								["sourceQuest"] = 24562,	-- Journey To The Sunwell
+								["races"] = HORDE_ONLY,
+								["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							}),
+							q(24553, {	-- The Purification of Quel'Delar (A)
+								["sourceQuest"] = 24535,	-- Thalorien Dawnseeker [Alliance]
+								["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
+								["races"] = ALLIANCE_ONLY,
+								["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							}),
+							q(24595, {	-- The Purification of Quel'Delar (A — Maces)
+								["sourceQuest"] = 24535,	-- Thalorien Dawnseeker [Alliance]
+								["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
+								["races"] = ALLIANCE_ONLY,
+								["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							}),
+							q(24564, {	-- The Purification of Quel'Delar (H)
+								["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
+								["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
+								["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
+								["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							}),
+							q(24598, {	-- The Purification of Quel'Delar (H — Maces)
+								["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
+								["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
+								["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
+								["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							}),
+							q(24594, {	-- The Purification of Quel'Delar (Blood Elf)
+								["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
+								["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
+								["races"] = { 10 },	-- Blood Elf
+								["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							}),
+							q(24596, {	-- The Purification of Quel'Delar (Blood Elf — Maces)
+								["sourceQuest"] = 24563,	-- Thalorien Dawnseeker [Horde]
+								["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
+								["races"] = { 10 },	-- Blood Elf
+								["provider"] = { "n", 37527 },	-- Halduron Brightwing <Ranger-General of Silvermoon>
+							}),
+							q(24796, {	-- A Victory For The Silver Covenant (A)
+								["sourceQuest"] = 24553,	-- The Purification of Quel'Delar [Alliance]
+								["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
+								["races"] = ALLIANCE_ONLY,
+								["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
+							}),
+							q(24795, {	-- A Victory For The Silver Covenant (A — Maces)
+								["sourceQuest"] = 24595,	-- The Purification of Quel'Delar [Alliance - Maces]
+								["races"] = ALLIANCE_ONLY,
+								["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
+								["provider"] = { "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
+							}),
+							q(24801, {	-- A Victory For The Sunreavers [Horde]
+								["sourceQuest"] = 24564,	-- The Purification of Quel'Delar [Horde]
+								["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
+								["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
+							}),
+							q(24799, {	-- A Victory For The Sunreavers [Horde - Maces]
+								["sourceQuest"] = 24598,	-- The Purification of Quel'Delar [Horde - Maces]
+								["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
+								["races"] = exclude(10, HORDE_ONLY),	-- Everything other than Blood Elf
+								["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
+							}),
+							q(24800, {	-- A Victory For The Sunreavers [Blood Elves]
+								["sourceQuest"] = 24594,	-- The Purification of Quel'Delar [Blood Elves]
+								["classes"] = exclude({ 5, 7, 11 }, ALL_CLASSES),	-- All classes except Priest, Shaman, Druid
+								["races"] = { 10 },	-- Blood Elf Only!
+								["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
+							}),
+							q(24798, {	-- A Victory For The Sunreavers [Blood Elves - Maces]
+								["sourceQuest"] = 24596,	-- The Purification of Quel'Delar [Blood Elves - Maces]
+								["classes"] = { 5, 7, 11 },	-- Priest, Shaman, Druid
+								["races"] = { 10 },	-- Blood Elf Only!
+								["provider"] = { "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
+							}),
+							n(-6015, {	-- Rewards
+								["description"] = "You will be able to choose one of these weapons when you turn in your class/race specific Victory quest. You will learn all of their transmogs regardless of your choice.",
+								["sourceQuests"] = {
+									24796,	-- A Victory For The Silver Covenant [Alliance]
+									24795,	-- A Victory For The Silver Covenant [Alliance - Maces]
+									24801,	-- A Victory For The Sunreavers [Horde]
+									24799,	-- A Victory For The Sunreavers [Horde - Maces]
+									24800,	-- A Victory For The Sunreavers [Blood Elves]
+									24798,	-- A Victory For The Sunreavers [Blood Elves - Maces]
+								},
+								["g"] = {
+									i(50050),	-- Cudgel of Furious Justice
+									i(50051),	-- Hammer of Purified Flame
+									i(50052),	-- Lightborn Spire
+									i(50046),	-- Quel'Delar, Cunning of the Shadows
+									i(50049),	-- Quel'Delar, Ferocity of the Scorned
+									i(50047),	-- Quel'Delar, Lens of the Mind
+									i(50048),	-- Quel'Delar, Might of the Faithful
+								},
+							}),
+						},
+					}),
 				}),
 				n(-228, {	-- Flight Point
 					fp(340, {	-- Argent Tournament Grounds, Icecrown
@@ -244,74 +244,130 @@ _.Zones =
 						},
 					}),
 					q(13741, {	-- A Blade Fit For A Champion (A)
+						["coord"] = { 76.6, 19.5, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33312 },	-- Lana Stouthammer
 					}),
 					q(13666, {	-- A Blade Fit For A Champion (A)
+						["coord"] = { 76.5, 19.4, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13746, {	-- A Blade Fit For A Champion (A)
+						["coord"] = { 76.5, 19.8, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33335 },	-- Ambrose Boltspark
 					}),
 					q(13603, {	-- A Blade Fit For A Champion (A)
+						["coord"] = { 76.6, 19.1, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
 					}),
 					q(13752, {	-- A Blade Fit For A Champion (A)
+						["coord"] = { 76.1, 19.1, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33593 },	-- Colosos
 					}),
 					q(13757, {	-- A Blade Fit For A Champion (A)
+						["coord"] = { 76.3, 19.0, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33592 },	-- Jaelyne Evensong
 					}),
 					q(13773, {	-- A Blade Fit For A Champion (H)
+						["coord"] = { 76.2, 24.6, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33403 },	-- Runok Wildmane
 					}),
 					q(13778, {	-- A Blade Fit For A Champion (H)
+						["coord"] = { 76.5, 24.2, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33373 },	-- Deathstalker Visceri
 					}),
 					q(13768, {	-- A Blade Fit For A Champion (H)
+						["coord"] = { 76.0, 24.5, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33372 },	-- Zul'tore
 					}),
 					q(13783, {	-- A Blade Fit For A Champion (H)
+						["coord"] = { 76.5, 23.9, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33379 },	-- Eressea Dawnsinger
 					}),
 					q(13762, {	-- A Blade Fit For A Champion (H)
+						["coord"] = { 76.5, 24.6, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33361 },	-- Mokra the Skullcrusher
 					}),
 					q(13673, {	-- A Blade Fit For A Champion (H)
+						["coord"] = { 76.3, 24.4, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 					}),
 					q(13732, {	-- A Champion Rises (A)
+						["coord"] = { 76.6, 19.5, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33312 },	-- Lana Stouthammer
 					}),
 					q(13735, {	-- A Champion Rises (A)
+						["coord"] = { 76.3, 19.0, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33592 },	-- Jaelyne Evensong
 					}),
 					q(13733, {	-- A Champion Rises (A)
+						["coord"] = { 76.5, 19.8, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33335 },	-- Ambrose Boltspark
 					}),
 					q(13734, {	-- A Champion Rises (A)
+						["coord"] = { 76.1, 19.1, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33593 },	-- Colosos
 					}),
 					q(13702, {	-- A Champion Rises (A)
+						["coord"] = { 76.6, 19.1, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
 						["g"] = {
 							currency(241),	-- Champion's Seal
 							i(44998),	-- Argent Squire
 						},
 					}),
 					q(13737, {	-- A Champion Rises (H)
+						["coord"] = { 76.0, 24.5, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33372 },	-- Zul'tore
 					}),
 					q(13740, {	-- A Champion Rises (H)
+						["coord"] = { 76.5, 23.9, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33379 },	-- Eressea Dawnsinger
 					}),
 					q(13739, {	-- A Champion Rises (H)
+						["coord"] = { 76.5, 24.2, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33373 },	-- Deathstalker Visceri
 					}),
 					q(13738, {	-- A Champion Rises (H)
+						["coord"] = { 76.2, 24.6, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33403 },	-- Runok Wildmane
 					}),
 					q(13736, {	-- A Champion Rises (H)
+						["coord"] = { 76.5, 24.6, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33361 },	-- Mokra the Skullcrusher
 						["g"] = {
 							currency(241),	-- Champion's Seal
 							i(45022),	-- Argent Gruntling
@@ -336,107 +392,193 @@ _.Zones =
 						},
 					}),
 					q(13689, {	-- A Valiant Of Darnassus
+						["coord"] = { 76.5, 19.4, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13688, {	-- A Valiant Of Gnomeregan
+						["coord"] = { 76.5, 19.4, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13685, {	-- A Valiant Of Ironforge
+						["coord"] = { 76.5, 19.4, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13691, {	-- A Valiant Of Orgrimmar
+						["coord"] = { 76.3, 24.4, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 					}),
 					q(13693, {	-- A Valiant Of Sen'jin
+						["coord"] = { 76.3, 24.4, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 					}),
 					q(13696, {	-- A Valiant Of Silvermoon
+						["coord"] = { 76.3, 24.4, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 					}),
 					q(13684, {	-- A Valiant Of Stormwind
+						["coord"] = { 76.5, 19.4, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13690, {	-- A Valiant Of The Exodar
+						["coord"] = { 76.5, 19.4, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13694, {	-- A Valiant Of Thunder Bluff
+						["coord"] = { 76.3, 24.4, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 					}),
 					q(13695, {	-- A Valiant Of Undercity
+						["coord"] = { 76.3, 24.4, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 					}),
 					q(13749, {	-- A Valiant's Field Training (A)
+						["coord"] = { 76.6, 19.8, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33648 },	-- Tickin Gearspanner
 					}),
 					q(13755, {	-- A Valiant's Field Training (A)
+						["coord"] = { 76.1, 19.2, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33655 },	-- Saandos
 					}),
 					q(13760, {	-- A Valiant's Field Training (A)
+						["coord"] = { 76.3, 19.0, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33652 },	-- Illestria Bladesinger
 					}),
 					q(13744, {	-- A Valiant's Field Training (A)
+						["coord"] = { 76.7, 19.4, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33315 },	-- Rollo Sureshot
 					}),
 					q(13592, {	-- A Valiant's Field Training (A)
+						["coord"] = { 76.5, 19.1, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33222 },	-- Sir Marcus Barlowe
 					}),
 					q(13781, {	-- A Valiant's Field Training (H)
+						["coord"] = { 76.6, 24.1, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33541 },	-- Sarah Chalke
 					}),
 					q(13776, {	-- A Valiant's Field Training (H)
+						["coord"] = { 76.3, 24.7, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33539 },	-- Dern Ragetotem
 					}),
 					q(13765, {	-- A Valiant's Field Training (H)
+						["coord"] = { 76.5, 24.5, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33405 },	-- Akinos
 					}),
 					q(13786, {	-- A Valiant's Field Training (H)
+						["coord"] = { 76.4, 23.8, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33538 },	-- Kethiel Sunlance
 					}),
 					q(13771, {	-- A Valiant's Field Training (H)
+						["coord"] = { 76.0, 24.6, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33540 },	-- Shadow Hunter Mezil-kree
 					}),
 					q(13600, {	-- A Worthy Weapon (A)
+						["coord"] = { 76.6, 19.1, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
 					}),
 					q(13742, {	-- A Worthy Weapon (A)
+						["coord"] = { 76.6, 19.5, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33312 },	-- Lana Stouthammer
 					}),
 					q(13758, {	-- A Worthy Weapon (A)
+						["coord"] = { 76.3, 19.0, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33592 },	-- Jaelyne Evensong
 					}),
 					q(13669, {	-- A Worthy Weapon (A)
+						["coord"] = { 76.5, 19.4, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13747, {	-- A Worthy Weapon (A)
+						["coord"] = { 76.5, 19.8, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33335 },	-- Ambrose Boltspark
 					}),
 					q(13753, {	-- A Worthy Weapon (A)
+						["coord"] = { 76.1, 19.1, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33593 },	-- Colosos
 					}),
 					q(13769, {	-- A Worthy Weapon (H)
+						["coord"] = { 76.0, 24.5, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33372 },	-- Zul'tore
 					}),
 					q(13674, {	-- A Worthy Weapon (H)
+						["coord"] = { 76.3, 24.4, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 					}),
 					q(13784, {	-- A Worthy Weapon (H)
+						["coord"] = { 76.5, 23.9, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33379 },	-- Eressea Dawnsinger
 					}),
 					q(13774, {	-- A Worthy Weapon (H)
+						["coord"] = { 76.2, 24.6, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33403 },	-- Runok Wildmane
 					}),
 					q(13763, {	-- A Worthy Weapon (H)
+						["coord"] = { 76.5, 24.6, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33361 },	-- Mokra the Skullcrusher
 					}),
 					q(13779, {	-- A Worthy Weapon (H)
+						["coord"] = { 76.5, 24.2, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33373 },	-- Deathstalker Visceri
 					}),
-					{	---------- Among the Champions (A / H, non-DK)
-						["allianceQuestID"] = 13790,	-- Among the Champions
-						["hordeQuestID"] = 13811,	-- Among the Champions
+					q(13790, {	-- Among the Champions (A / H, non-DK)
+						["hordeQuestID"] = 13811,
 						["classes"] = exclude(6, ALL_CLASSES),	-- All Classes other than Death Knight
 						["isDaily"] = true,
 						["coord"] = { 69.8, 23.3, 118 },
+						["provider"] = { "n", 33771 },	-- Luuri
 						["crs"] = {
 							33738,	-- Darnassus Champion
 							33739,	-- Exodar Champion
@@ -449,20 +591,19 @@ _.Zones =
 							33748,	-- Thunder Bluff Champion
 							33749,	-- Undercity Champion
 						},
-						["provider"] = { "n", 33771 },	-- Luuri
 						["g"] = {
 							currency(241),	-- Champion's Seal
 							i(46114),	-- Champion's Writ
 							i(45724),	-- Champion's Purse
 							i(45500),	-- Mark of the Champion
 						},
-					},
-					{	---------- Among the Champions (A / H, DK)
-						["allianceQuestID"] = 13793,	-- Among the Champions
-						["hordeQuestID"] = 13814,	-- Among the Champions
+					}),
+					q(13793, {	-- Among the Champions (A / H, DK)
+						["hordeQuestID"] = 13814,
 						["classes"] = { 6 },	-- Death Knight Only
 						["isDaily"] = true,
 						["coord"] = { 73.6, 20.0, 118 },
+						["provider"] = { "n", 33770 },	-- Illyrie Nightfall <Mistress of Horses>
 						["crs"] = {
 							33738,	-- Darnassus Champion
 							33739,	-- Exodar Champion
@@ -475,47 +616,75 @@ _.Zones =
 							33748,	-- Thunder Bluff Champion
 							33749,	-- Undercity Champion
 						},
-						["provider"] = { "n", 33770 },	-- Illyrie Nightfall <Mistress of Horses>
 						["g"] = {
 							currency(241),	-- Champion's Seal
 							i(46114),	-- Champion's Writ
 							i(45724),	-- Champion's Purse
 							i(45500),	-- Mark of the Champion
 						},
-					},
+					}),
 					q(13852, {	-- At The Enemy's Gates (A)
+						["coord"] = { 76.5, 19.9, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33649 },	-- Flickin Gearspanner
 					}),
 					q(13851, {	-- At The Enemy's Gates (A)
+						["coord"] = { 76.6, 19.6, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33309 },	-- Clara Tumblebrew
 					}),
 					q(13854, {	-- At The Enemy's Gates (A)
+						["coord"] = { 76.1, 19.1, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33656 },	-- Ranii
 					}),
 					q(13855, {	-- At The Enemy's Gates (A)
+						["coord"] = { 76.4, 19.0, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33654 },	-- Airae Starseeker
 					}),
 					q(13847, {	-- At The Enemy's Gates (A)
+						["coord"] = { 76.6, 19.2, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33223 },	-- Captain Joseph Holley
 					}),
 					q(13858, {	-- At The Enemy's Gates (H)
+						["coord"] = { 76.1, 24.6, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33549 },	-- Anka Clawhoof
 					}),
 					q(13856, {	-- At The Enemy's Gates (H)
+						["coord"] = { 76.4, 24.6, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33544 },	-- Morah Worgsister
 					}),
 					q(13860, {	-- At The Enemy's Gates (H)
+						["coord"] = { 76.5, 24.3, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33547 },	-- Handler Dretch
 					}),
 					q(13859, {	-- At The Enemy's Gates (H)
+						["coord"] = { 76.5, 23.9, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33548 },	-- Aneera Thuron
 					}),
 					q(13857, {	-- At The Enemy's Gates (H)
+						["coord"] = { 75.9, 24.4, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33545 },	-- Gahju
 					}),
-					{	---------- Battle Before the Citadel (A / H, non-DK)
-						["allianceQuestID"] = 13861,	-- Battle Before the Citadel
-						["hordeQuestID"] = 13862,	-- Battle Before the Citadel
+					q(13861, {	-- Battle Before the Citadel (A / H, non-DK)
+						["hordeQuestID"] = 13862,
 						["classes"] = exclude(6, ALL_CLASSES),	-- All Classes other than Death Knight
 						["isDaily"] = true,
 						["coord"] = { 69.9, 23.4, 118 },
@@ -525,10 +694,9 @@ _.Zones =
 							i(46114),	-- Champion's Writ
 							i(45724),	-- Champion's Purse
 						},
-					},
-					{	---------- Battle Before the Citadel (A / H, DK)
-						["allianceQuestID"] = 13864,	-- Battle Before the Citadel
-						["hordeQuestID"] = 13863,	-- Battle Before the Citadel
+					}),
+					q(13864, {	-- Battle Before the Citadel (A / H, DK)
+						["hordeQuestID"] = 13863,
 						["classes"] = { 6 },	-- Death Knight Only
 						["isDaily"] = true,
 						["coord"] = { 73.8, 20.0, 118 },
@@ -538,8 +706,14 @@ _.Zones =
 							i(46114),	-- Champion's Writ
 							i(45724),	-- Champion's Purse
 						},
-					},
-					q(24442),	-- Battle Plans Of The Kvaldir
+					}),
+					q(24442, {	-- Battle Plans Of The Kvaldir
+						["provider"] = { "i", 49676 },	-- Kvaldir Attack Plans
+						["crs"] = {
+							34839,	-- Kvaldir Mist Binder
+							34838,	-- Kvaldir Reaver
+						},
+					}),
 					q(14076, {	-- Breakfast Of Champions (A)
 						["isDaily"] = true,
 						["coord"] = { 76.2, 19.6, 118 },
@@ -563,7 +737,14 @@ _.Zones =
 						["coord"] = { 69.5, 22.4, 118 },
 						["provider"] = { "n", 34210 },	-- Squire Artie
 					}),
-					q(14105),	-- Deathspeaker Kharos
+					q(14105, {	-- Deathspeaker Kharos
+						["isDaily"] = true,
+						["coord"] = { 69.4, 23.1, 118 },
+						["provider"] = { "n", 34882 },	-- High Crusader Adelard
+						["g"] = {
+							currency(241),	-- Champion's Seal
+						},
+					}),
 					q(14101, {	-- Drottinn Hrothgar
 						["isDaily"] = true,
 						["coord"] = { 69.4, 23.1, 118 },
@@ -572,7 +753,10 @@ _.Zones =
 							currency(241),	-- Champion's Seal
 						},
 					}),
-					q(13794),	-- Eadric the Pure
+					q(13794, {	-- Eadric the Pure
+						["coord"] = { 69.6, 22.8, 118 },
+						["provider"] = { "n", 33817 },	-- Justicar Mariel Trueheart
+					}),
 					q(14108, {	-- Get Kraken!
 						["isDaily"] = true,
 						["coord"] = { 69.4, 23.1, 118 },
@@ -599,10 +783,16 @@ _.Zones =
 							currency(241),	-- Champion's Seal
 						},
 					}),
-					q(14095),	-- Identifying the Remains
+					q(14095, {	-- Identifying the Remains
+						["isDaily"] = true,
+						["provider"] = { "i", 46955 },	-- Kraken Tooth
+						["description"] = "Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",
+					}),
 					q(13625, {	-- Learning The Reins (A)
+						["coord"] = { 76.5, 19.5, 118 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
+						["provider"] = { "n", 33647 },	-- Scout Shalyndria
 					}),
 					q(13677, {	-- Learning The Reins (H)
 						["coord"] = { 76.2, 24.4, 118 },
@@ -616,7 +806,9 @@ _.Zones =
 						},
 					}),
 					q(13828, {	-- Mastery Of Melee (A)
+						["coord"] = { 76.5, 19.4, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13829, {	-- Mastery Of Melee (H)
 						["coord"] = { 76.2, 24.3, 118 },
@@ -625,7 +817,9 @@ _.Zones =
 						["sourceQuest"] = 13668,	-- The Argent Tournament
 					}),
 					q(13837, {	-- Mastery Of The Charge (A)
+						["coord"] = { 76.4, 19.4, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33646 },	-- Avareth Swiftstrike
 					}),
 					q(13839, {	-- Mastery Of The Charge (H)
 						["coord"] = { 76.3, 24.3, 118 },
@@ -634,7 +828,9 @@ _.Zones =
 						["sourceQuest"] = 13668,	-- The Argent Tournament
 					}),
 					q(13835, {	-- Mastery Of The Shield-Breaker (A)
+						["coord"] = { 76.5, 19.5, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33647 },	-- Scout Shalyndria
 					}),
 					q(13838, {	-- Mastery Of The Shield-Breaker (H)
 						["coord"] = { 76.2, 24.4, 118 },
@@ -642,8 +838,22 @@ _.Zones =
 						["provider"] = { "n", 33659 },	-- Galathia Brightdawn
 						["sourceQuest"] = 13668,	-- The Argent Tournament
 					}),
-					q(14102),	-- Mistcaller Yngvar
-					q(14104),	-- Ornolf The Scarred
+					q(14102, {	-- Mistcaller Yngvar
+						["isDaily"] = true,
+						["coord"] = { 69.4, 23.1, 118 },
+						["provider"] = { "n", 34882 },	-- High Crusader Adelard
+						["g"] = {
+							currency(241),	-- Champion's Seal
+						},
+					}),
+					q(14104, {	-- Ornolf The Scarred
+						["isDaily"] = true,
+						["coord"] = { 69.4, 23.1, 118 },
+						["provider"] = { "n", 34882 },	-- High Crusader Adelard
+						["g"] = {
+							currency(241),	-- Champion's Seal
+						},
+					}),
 					q(14152, {	-- Rescue at Sea (A)
 						["isDaily"] = true,
 						["coord"] = { 76.2, 19.6, 118 },
@@ -680,9 +890,8 @@ _.Zones =
 							currency(241),	-- Champion's Seal
 						},
 					}),
-					{	---------- Taking Battle To The Enemy (A / H, non-DK)
-						["allianceQuestID"] = 13789,	-- Taking Battle To The Enemy
-						["hordeQuestID"] = 13810,	-- Taking Battle To The Enemy
+					q(13789, {	-- Taking Battle To The Enemy (A / H, non-DK)
+						["hordeQuestID"] = 13810,
 						["classes"] = exclude(6, ALL_CLASSES),	-- All Classes other than Death Knight
 						["isDaily"] = true,
 						["coord"] = { 69.9, 23.4, 118 },
@@ -692,10 +901,9 @@ _.Zones =
 							i(46114),	-- Champion's Writ
 							i(45724),	-- Champion's Purse
 						},
-					},
-					{	---------- Taking Battle To The Enemy (A / H, DK)
-						["allianceQuestID"] = 13791,	-- Taking Battle To The Enemy
-						["hordeQuestID"] = 13813,	-- Taking Battle To The Enemy
+					}),
+					q(13791, {	-- Taking Battle To The Enemy (A / H, DK)
+						["hordeQuestID"] = 13813,
 						["classes"] = { 6 },	-- Death Knight Only
 						["isDaily"] = true,
 						["coord"] = { 73.8, 19.6, 118 },
@@ -705,7 +913,7 @@ _.Zones =
 							i(46114),	-- Champion's Writ
 							i(45724),	-- Champion's Purse
 						},
-					},
+					}),
 					q(13667, {	-- The Argent Tournament
 						["coord"] = { 69.6, 22.8, 118 },
 						["races"] = ALLIANCE_ONLY,
@@ -717,47 +925,80 @@ _.Zones =
 						["provider"] = { "n", 33817 },	-- Justicar Mariel Trueheart
 					}),
 					q(13679, {	-- The Aspirant's Challenge (A)
+						["coord"] = { 76.5, 19.4, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13680, {	-- The Aspirant's Challenge (H)
+						["coord"] = { 76.3, 24.4, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 					}),
 					q(13634, {	-- The Black Knight of Silverpine?
+						["coord"] = { 69.4, 23.0, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33417 },	-- Crusader Rhydalla
 					}),
 					q(13633, {	-- The Black Knight of Westfall?
+						["coord"] = { 69.4, 23.0, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33417 },	-- Crusader Rhydalla
 					}),
-					q(14016),	-- The Black Knight's Curse
-					q(13664),	-- The Black Knight's Fall
-					q(14017),	-- The Black Knight's Fate
-					q(13663),	-- The Black Knight's Orders
+					q(14016, {	-- The Black Knight's Curse
+						["coord"] = { 69.4, 23.0, 118 },
+						["provider"] = { "n", 33417 },	-- Crusader Rhydalla
+						["sourceQuest"] = 13664,	-- The Black Knight's Fall
+					}),
+					q(13664, {	-- The Black Knight's Fall
+						["coord"] = { 69.4, 23.0, 118 },
+						["provider"] = { "n", 33417 },	-- Crusader Rhydalla
+						["sourceQuest"] = 13663,	-- The Black Knight's Orders
+					}),
+					q(14017, {	-- The Black Knight's Fate
+						["coord"] = { 69.4, 23.0, 118 },
+						["provider"] = { "n", 33417 },	-- Crusader Rhydalla
+						["sourceQuest"] = 14016,	-- The Black Knight's Curse
+						["g"] = {
+							currency(241),	-- Champion's Seal
+						},
+					}),
+					q(13663, {	-- The Black Knight's Orders
+						["coord"] = { 69.4, 23.0, 118 },
+						["provider"] = { "n", 33417 },	-- Crusader Rhydalla
+						["sourceQuest"] = 13654,	-- There's Something About the Squire
+					}),
 					q(13754, {	-- The Edge Of Winter (A)
+						["coord"] = { 76.1, 19.1, 118 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 33593 },	-- Colosos
 					}),
 					q(13748, {	-- The Edge Of Winter (A)
+						["coord"] = { 76.5, 19.8, 118 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 33335 },	-- Ambrose Boltspark
 					}),
 					q(13670, {	-- The Edge Of Winter (A)
+						["coord"] = { 76.5, 19.4, 118 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13759, {	-- The Edge Of Winter (A)
+						["coord"] = { 76.3, 19.0, 118 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 33592 },	-- Jaelyne Evensong
 					}),
 					q(13743, {	-- The Edge Of Winter (A)
+						["coord"] = { 76.6, 19.5, 118 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 33312 },	-- Lana Stouthammer
 					}),
 					q(13616, {	-- The Edge Of Winter (A)
+						["coord"] = { 76.6, 19.1, 118 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
@@ -774,26 +1015,31 @@ _.Zones =
 						},
 					}),
 					q(13770, {	-- The Edge Of Winter (H)
+						["coord"] = { 76.0, 24.5, 118 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 33372 },	-- Zul'tore
 					}),
 					q(13780, {	-- The Edge Of Winter (H)
+						["coord"] = { 76.5, 24.2, 118 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 33373 },	-- Deathstalker Visceri
 					}),
 					q(13764, {	-- The Edge Of Winter (H)
+						["coord"] = { 76.5, 24.6, 118 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 33361 },	-- Mokra the Skullcrusher
 					}),
 					q(13785, {	-- The Edge Of Winter (H)
+						["coord"] = { 76.5, 23.9, 118 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 33379 },	-- Eressea Dawnsinger
 					}),
 					q(13775, {	-- The Edge Of Winter (H)
+						["coord"] = { 76.2, 24.6, 118 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["provider"] = { "n", 33403 },	-- Runok Wildmane
@@ -807,34 +1053,64 @@ _.Zones =
 						},
 					}),
 					q(13665, {	-- The Grand Melee (A)
+						["coord"] = { 76.6, 19.2, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33223 },	-- Captain Joseph Holley
 					}),
 					q(13750, {	-- The Grand Melee (A)
+						["coord"] = { 76.5, 19.9, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33649 },	-- Flickin Gearspanner
 					}),
 					q(13756, {	-- The Grand Melee (A)
+						["coord"] = { 76.1, 19.1, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33656 },	-- Ranii
 					}),
 					q(13761, {	-- The Grand Melee (A)
+						["coord"] = { 76.4, 19.0, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33654 },	-- Airae Starseeker
 					}),
 					q(13745, {	-- The Grand Melee (A)
+						["coord"] = { 76.6, 19.6, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33309 },	-- Clara Tumblebrew
 					}),
 					q(13767, {	-- The Grand Melee (H)
+						["coord"] = { 76.4, 24.6, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33544 },	-- Morah Worgsister
 					}),
 					q(13772, {	-- The Grand Melee (H)
+						["coord"] = { 75.9, 24.4, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33545 },	-- Gahju
 					}),
 					q(13787, {	-- The Grand Melee (H)
+						["coord"] = { 76.5, 23.9, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33548 },	-- Aneera Thuron
 					}),
 					q(13777, {	-- The Grand Melee (H)
+						["coord"] = { 76.1, 24.6, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33549 },	-- Anka Clawhoof
 					}),
 					q(13782, {	-- The Grand Melee (H)
+						["coord"] = { 76.5, 24.3, 118 },
 						["races"] = HORDE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33547 },	-- Handler Dretch
 					}),
 					q(14077, {	-- The Light's Mercy
 						["isDaily"] = true,
@@ -854,73 +1130,131 @@ _.Zones =
 							currency(241),	-- Champion's Seal
 						},
 					}),
-					q(13795),	-- The Scourgebane
-					q(13641),	-- The Seer's Crystal
-					q(13643),	-- The Stories Dead Men Tell
+					q(13795, {	-- The Scourgebane
+						["coord"] = { 69.6, 22.8, 118 },
+						["classes"] = { 6 },	-- Death Knight
+						["provider"] = { "n", 33817 },	-- Justicar Mariel Trueheart
+					}),
+					q(13641, {	-- The Seer's Crystal
+						["coord"] = { 69.4, 23.0, 118 },
+						["provider"] = { "n", 33417 },	-- Crusader Rhydalla
+						["sourceQuests"] = {
+							13633,	-- The Black Knight of Westfall? (A)
+							13634,	-- The Black Knight of Silverpine? (H)
+						},
+					}),
+					q(13643, {	-- The Stories Dead Men Tell
+						["coord"] = { 69.4, 23.0, 118 },
+						["provider"] = { "n", 33417 },	-- Crusader Rhydalla
+						["sourceQuest"] = 13641,	-- The Seer's Crystal
+					}),
 					q(13725, {	-- The Valiant's Challenge (A)
+						["coord"] = { 76.3, 19.0, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33592 },	-- Jaelyne Evensong
 					}),
 					q(13723, {	-- The Valiant's Challenge (A)
+						["coord"] = { 76.5, 19.8, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33335 },	-- Ambrose Boltspark
 					}),
 					q(13713, {	-- The Valiant's Challenge (A)
+						["coord"] = { 76.6, 19.5, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33312 },	-- Lana Stouthammer
 					}),
 					q(13724, {	-- The Valiant's Challenge (A)
+						["coord"] = { 76.1, 19.1, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33593 },	-- Colosos
 					}),
 					q(13699, {	-- The Valiant's Challenge (A)
+						["coord"] = { 76.6, 19.1, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
 					}),
 					q(13726, {	-- The Valiant's Challenge (H)
+						["coord"] = { 76.5, 24.6, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33361 },	-- Mokra the Skullcrusher
 					}),
 					q(13728, {	-- The Valiant's Challenge (H)
+						["coord"] = { 76.2, 24.6, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33403 },	-- Runok Wildmane
 					}),
 					q(13729, {	-- The Valiant's Challenge (H)
+						["coord"] = { 76.5, 24.2, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33373 },	-- Deathstalker Visceri
 					}),
 					q(13731, {	-- The Valiant's Challenge (H)
+						["coord"] = { 76.5, 23.9, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33379 },	-- Eressea Dawnsinger
 					}),
 					q(13727, {	-- The Valiant's Challenge (H)
+						["coord"] = { 76.0, 24.5, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33372 },	-- Zul'tore
 					}),
 					q(13714, {	-- The Valiant's Charge (A)
+						["coord"] = { 76.6, 19.5, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33312 },	-- Lana Stouthammer
 					}),
 					q(13718, {	-- The Valiant's Charge (A)
+						["coord"] = { 76.6, 19.1, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
 					}),
 					q(13717, {	-- The Valiant's Charge (A)
+						["coord"] = { 76.3, 19.0, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33592 },	-- Jaelyne Evensong
 					}),
 					q(13716, {	-- The Valiant's Charge (A)
+						["coord"] = { 76.1, 19.1, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33593 },	-- Colosos
 					}),
 					q(13715, {	-- The Valiant's Charge (A)
+						["coord"] = { 76.5, 19.8, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33335 },	-- Ambrose Boltspark
 					}),
 					q(13721, {	-- The Valiant's Charge (H)
+						["coord"] = { 76.5, 24.2, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33373 },	-- Deathstalker Visceri
 					}),
 					q(13722, {	-- The Valiant's Charge (H)
+						["coord"] = { 76.5, 23.9, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33379 },	-- Eressea Dawnsinger
 					}),
 					q(13697, {	-- The Valiant's Charge (H)
+						["coord"] = { 76.5, 24.6, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33361 },	-- Mokra the Skullcrusher
 					}),
 					q(13720, {	-- The Valiant's Charge (H)
+						["coord"] = { 76.2, 24.6, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33403 },	-- Runok Wildmane
 					}),
 					q(13719, {	-- The Valiant's Charge (H)
+						["coord"] = { 76.0, 24.5, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33372 },	-- Zul'tore
 					}),
-					q(13654),	-- There's Something About the Squire
-					{	---------- Threat From Above (A / H, non-DK)
-						["allianceQuestID"] = 13682,	-- Threat From Above
-						["hordeQuestID"] = 13809,	-- Threat From Above
+					q(13654, {	-- There's Something About the Squire
+						["coord"] = { 69.4, 23.0, 118 },
+						["provider"] = { "n", 33417 },	-- Crusader Rhydalla
+						["sourceQuest"] = 13643,	-- The Stories Dead Men Tell
+					}),
+					q(13682, {	-- Threat From Above (A / H, non-DK)
+						["hordeQuestID"] = 13809,
 						["classes"] = exclude(6, ALL_CLASSES),	-- All Classes other than Death Knight
 						["isDaily"] = true,
 						["coord"] = { 69.9, 23.4, 118 },
@@ -930,10 +1264,9 @@ _.Zones =
 							i(46114),	-- Champion's Writ
 							i(45724),	-- Champion's Purse
 						},
-					},
-					{	---------- Threat From Above (A / H, DK)
-						["allianceQuestID"] = 13788,	-- Threat From Above
-						["hordeQuestID"] = 13812,	-- Threat From Above
+					}),
+					q(13788, {	-- Threat From Above (A / H, DK)
+						["hordeQuestID"] = 13812,
 						["isDaily"] = true,
 						["classes"] = { 6 },	-- Death Knight Only
 						["coord"] = { 73.8, 20.0, 118 },
@@ -943,9 +1276,12 @@ _.Zones =
 							i(46114),	-- Champion's Writ
 							i(45724),	-- Champion's Purse
 						},
-					},
+					}),
 					q(13671, {	-- Training In The Field (A)
+						["coord"] = { 76.4, 19.4, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["isDaily"] = true,
+						["provider"] = { "n", 33646 },	-- Avareth Swiftstrike
 					}),
 					q(13676, {	-- Training In The Field (H)
 						["coord"] = { 76.3, 24.3, 118 },
@@ -959,7 +1295,9 @@ _.Zones =
 						},
 					}),
 					q(13672, {	-- Up To The Challenge (A)
+						["coord"] = { 76.5, 19.4, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13678, {	-- Up To The Challenge (H)
 						["coord"] = { 76.2, 24.3, 118 },
@@ -972,34 +1310,54 @@ _.Zones =
 						},
 					}),
 					q(13706, {	-- Valiant Of Darnassus
+						["coord"] = { 76.3, 19.0, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33592 },	-- Jaelyne Evensong
 					}),
 					q(13704, {	-- Valiant Of Gnomeregan
+						["coord"] = { 76.5, 19.8, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33335 },	-- Ambrose Boltspark
 					}),
 					q(13703, {	-- Valiant Of Ironforge
+						["coord"] = { 76.6, 19.5, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33312 },	-- Lana Stouthammer
 					}),
 					q(13707, {	-- Valiant Of Orgrimmar
+						["coord"] = { 76.5, 24.6, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33361 },	-- Mokra the Skullcrusher
 					}),
 					q(13708, {	-- Valiant Of Sen'jin
+						["coord"] = { 76.0, 24.5, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33372 },	-- Zul'tore
 					}),
 					q(13711, {	-- Valiant Of Silvermoon
+						["coord"] = { 76.5, 23.9, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33379 },	-- Eressea Dawnsinger
 					}),
 					q(13593, {	-- Valiant Of Stormwind
+						["coord"] = { 76.6, 19.1, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
 					}),
 					q(13705, {	-- Valiant Of The Exodar
+						["coord"] = { 76.1, 19.1, 118 },
 						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 33593 },	-- Colosos
 					}),
 					q(13709, {	-- Valiant Of Thunder Bluff
+						["coord"] = { 76.2, 24.6, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33403 },	-- Runok Wildmane
 					}),
 					q(13710, {	-- Valiant Of Undercity
+						["coord"] = { 76.5, 24.2, 118 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 33373 },	-- Deathstalker Visceri
 					}),
 					q(14112, {	-- What Do You Feed a Yeti, Anyway? (A)
 						["isDaily"] = true,
