@@ -217,6 +217,9 @@ _.NeverImplemented =
 		-- there are 19 "A Change of Heart" quests, no idea how to determine what classes they're for or what other restrictions there may be, so placing these here for now
 		
 		-- Zones
+		q(12845),	-- Dalaran teleport crystal flag
+		q(13701),	-- Argent Tournament - Horde Champion Marker
+		q(24661),	-- Theryn Fed Tracker
 		q(46051),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 01
 		q(46052),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 02
 		q(46053),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 03

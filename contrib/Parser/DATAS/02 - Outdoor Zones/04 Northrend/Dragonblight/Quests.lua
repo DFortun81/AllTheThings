@@ -330,6 +330,21 @@ _.Zones =
 					["coord"] = { 63.5, 72.0, 115 },
 					["provider"] = { "n", 27255 },	-- Nishera the Garden Keeper
 				}),
+				q(13242, {	-- Darkness Stirs
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 31333 },	-- Alexstrasza the Life-Binder
+				}),
+				q(13167, {	-- Death to the Traitor King
+					["u"] = 40,
+					["provider"] = { "n", 26653 },	-- Kilix the Unraveler
+					["g"] = {
+						i(44358),	-- Kilix's Silk Slippers
+						i(44359),	-- Don Soto's Boots
+						i(44360),	-- Husk Shard Sabatons
+						i(44361),	-- Greaves of the Traitor
+					},
+				}),
 				q(12372, {	-- Defending Wyrmrest Temple
 					["coord"] = { 59.2, 54.3, 115 },
 					["provider"] = { "n", 27575 },	-- Lord Afrasastrasz
@@ -363,6 +378,16 @@ _.Zones =
 						i(38537),	-- Cuffs of the Decapitator
 						i(38535),	-- Wristguards of the Remorseful
 						i(38534),	-- Purity-Anointed Warbands
+					},
+				}),
+				q(13182, {	-- Don't Forget the Eggs!
+					["u"] = 40,
+					["provider"] = { "n", 26653 },	-- Kilix the Unraveler
+					["g"] = {
+						i(44362),	-- Expelling Gauntlets
+						i(44363),	-- Pruging Handguards
+						i(44364),	-- Wraps of Quelled Bane
+						i(44365),	-- Gloves of Banished Infliction
 					},
 				}),
 				q(12030, {	-- Elder Mana'loa

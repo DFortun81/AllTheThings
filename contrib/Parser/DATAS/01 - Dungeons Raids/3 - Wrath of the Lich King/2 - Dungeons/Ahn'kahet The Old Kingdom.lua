@@ -8,15 +8,20 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["mapID"] = 132,
 		["coord"] = { 28.3, 51.6, 115 },
 		["groups"] = {
-			n(-17, {	-- Quests 	
+			n(-17, {	-- Quests
+				q(13204, {	-- Funky Fungi
+					["u"] = 40,
+					["cr"] = 30329,	-- Savage Cave Beast
+					["provider"] = { "i", 43512 },	-- Ooze-Covered Fungus
+				}),
+				q(29825),	-- Pupil No More, No actual awards.
+				q(29826), 	-- Reclaiming Ahn'Kahet, No actual awards.
 				q(13187,{ 	-- The Faceless Ones
 					i(44353), 	-- Epaulets of the Faceless Ones
 					i(44350),	-- Mantle of Thwarted Evil
 					i(44351), 	-- Shoulderpads of Abhorrence
 					i(44352), 	-- Shoulderplates of the Abolished
 				}),
-				q(29825),	-- Pupil No More, No actual awards.
-				q(29826), 	-- Reclaiming Ahn'Kahet, No actual awards.
 			}),
 			d(  1, {	-- Normal
 				n(0, {	-- Zone Drop
@@ -252,7 +257,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(127616),	-- Glowworm Cavern Bindings
 						i(127608),	-- Ahn'kahar Handwraps
 						i(127609),	-- Crawler-Emblem
-						i(127618),	-- Nerubian Shield Ring								
+						i(127618),	-- Nerubian Shield Ring
 					})),
 					cr(29308, e(581, {	-- Prince Taldaram
 						i(127622),	-- Necklace of Taldaram

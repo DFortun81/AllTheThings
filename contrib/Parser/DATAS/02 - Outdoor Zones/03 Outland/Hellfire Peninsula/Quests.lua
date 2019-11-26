@@ -588,9 +588,15 @@ _.Zones =
 						i(40476),	-- Insignia of the Alliance
 					},
 				}),
+				q(13411, {	-- Hellfire Fortifications (H, DK)
+					["races"] = HORDE_ONLY,
+					["classes"] = { 6 },	-- Death Knight
+					["provider"] = { "n", 18267 },	-- Battlecryer Blackeye
+				}),
 				q(13409, {	-- Hellfire Fortifications (H)
 					["coord"] = { 55.9, 39.2, 100 },
 					["races"] = HORDE_ONLY,
+					["classes"] = exclude({ 6 }, ALL_CLASSES),	-- All but DK
 					["provider"] = { "n", 18267 },	-- Battlecryer Blackeye
 					["sourceQuests"] = { 10124 },	-- Forward Base: Reaver's Fall
 					["g"] = {

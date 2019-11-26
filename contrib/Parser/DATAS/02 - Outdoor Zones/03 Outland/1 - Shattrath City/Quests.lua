@@ -6,6 +6,26 @@ _.Zones =
 	m(101, {	-- Outland
 		m(111, {	-- Shattrath City
 			n(-17,  {	-- Quests
+				q(12753, {	-- A Desperate Alliance
+					["u"] = 40,
+					["races"] = { 3 },	-- Dwarf
+				}),
+				q(12753, {	-- A Desperate Alliance
+					["u"] = 40,
+					["races"] = { 4 },	-- Night Elf
+				}),
+				q(12775, {	-- A Desperate Alliance
+					["u"] = 40,
+					["races"] = { 1 },	-- Human
+				}),
+				q(12777, {	-- A Desperate Alliance
+					["u"] = 40,
+					["races"] = { 11 },	-- Draenei
+				}),
+				q(12808, {	-- A Desperate Alliance
+					["u"] = 40,
+					["races"] = { 7 },	-- Gnome
+				}),
 				q(10210, {	-- A'dal
 					["provider"] = { "n", 19684 },	-- Haggard War Veteran
 					["coord"] = { 59.6, 41.4, 111 },
@@ -46,6 +66,32 @@ _.Zones =
 				q(10009, {	-- Crackin' Some Skulls
 					["provider"] = { "n", 18584 },	-- Sal'salabim
 					["sourceQuests"] = { 10004 },	-- Patience and Understanding *UNTESTED*
+				}),
+				q(12773, {	-- Darnassus
+					["u"] = 40,
+					["races"] = { 4 },	-- Night Elf
+					["provider"] = { "n", 29087 },	-- Bishop Lazaril
+					["sourceQuest"] = 12753,	-- A Desperate Alliance
+				}),
+				q(12783, {	-- Desperate Research
+					["u"] = 40,
+					["races"] = { 8 },	-- Troll
+				}),
+				q(12752, {	-- Desperate Research
+					["u"] = 40,
+					["races"] = { 5 },	-- Undead
+				}),
+				q(12782, {	-- Desperate Research
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+				}),
+				q(12784, {	-- Desperate Research
+					["u"] = 40,
+					["races"] = { 6 },	-- Tauren
+				}),
+				q(12811, {	-- Desperate Research
+					["u"] = 40,
+					["races"] = { 6 },	-- Orc
 				}),
 				q(47523, {	-- Disturbance Detected: Black Temple (EVENT: TIMEWALKING)
 					["provider"] = { "n", 123252 },	-- Vormu
@@ -88,11 +134,24 @@ _.Zones =
 						i(31460),	-- Sha'tari Vindicator's Waistguard
 					},
 				}),
+				q(12771, {	-- Ironforge (Dwarf)
+					["u"] = 40,
+					["races"] = { 3 },	-- Dwarf
+					["provider"] = { "n", 29087 },	-- Bishop Lazaril
+					["sourceQuest"] = 12753,	-- A Desperate Alliance
+				}),
+				q(12809, {	-- Ironforge (Gnome)
+					["u"] = 40,
+					["races"] = { 7 },	-- Gnome
+					["provider"] = { "n", 29087 },	-- Bishop Lazaril
+					["sourceQuest"] = 12808,	-- A Desperate Alliance
+				}),
 				q(10010, {	-- It's Just That Easy?
 					["provider"] = { "n", 18584 },	-- Sal'salabim
 					["sourceQuests"] = { 10009 },	-- Crackin' Some Skulls *UNTESTED*
 				}),
 				q(11380, {	-- Manalicious
+					["provider"] = { "n", 24393 },	-- The Rokk
 					["isDaily"] = true,
 					["g"] = {
 						i(33844, {	-- Barrel of Fish
@@ -114,7 +173,18 @@ _.Zones =
 							["achievementID"] = 906,	-- Kickin' It Up a Notch
 						}),
 					},
-					["provider"] = { "n", 24393 },	-- The Rokk
+				}),
+				q(12785, {	-- Orgrimmar (Troll)
+					["u"] = 40,
+					["races"] = { 8 },	-- Troll
+					["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
+					["sourceQuest"] = 12783,	-- Desperate Research
+				}),
+				q(12812, {	-- Orgrimmar (Orc)
+					["u"] = 40,
+					["races"] = { 2 },	-- Orc
+					["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
+					["sourceQuest"] = 12811,	-- Desperate Research
 				}),
 				q(10037, {	-- Rather Be Fishin'
 					["g"] = {
@@ -124,6 +194,7 @@ _.Zones =
 				}),
 				q(11377, {	-- Revenge is Tasty
 					["isDaily"] = true,
+					["provider"] = { "n", 24393 },	-- The Rokk
 					["g"] = {
 						i(33844, {	-- Barrel of Fish
 							i(33869),	-- Recipe: Broiled Bloodfin
@@ -144,10 +215,16 @@ _.Zones =
 							["achievementID"] = 906,	-- Kickin' It Up a Notch
 						}),
 					},
-					["provider"] = { "n", 24393 },	-- The Rokk
+				}),
+				q(12788, {	-- Silvermoon
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
+					["sourceQuest"] = 12782,	-- Desperate Research
 				}),
 				q(11381, {	-- Soup for the Soul
 					["isDaily"] = true,
+					["provider"] = { "n", 24393 },	-- The Rokk
 					["g"] = {
 						i(33844, {	-- Barrel of Fish
 							i(33869),	-- Recipe: Broiled Bloodfin
@@ -168,7 +245,12 @@ _.Zones =
 							["achievementID"] = 906,	-- Kickin' It Up a Notch
 						}),
 					},
-					["provider"] = { "n", 24393 },	-- The Rokk
+				}),
+				q(12774, {	-- Stormwind
+					["u"] = 40,
+					["races"] = { 1 },	-- Human
+					["provider"] = { "n", 29087 },	-- Bishop Lazaril
+					["sourceQuest"] = 12775,	-- A Desperate Alliance
 				}),
 				q(11379, {	-- Super Hot Stew
 					["isDaily"] = true,
@@ -203,6 +285,12 @@ _.Zones =
 					["sourceQuests"] = { 10547 },	-- Of Thistleheads and Eggs...
 					["coord"] = { 63.8, 69.7, 111 },
 				}),
+				q(12776, {	-- The Exodar
+					["u"] = 40,
+					["races"] = { 11 },	-- Night Elf
+					["provider"] = { "n", 29087 },	-- Bishop Lazaril
+					["sourceQuest"] = 12777,	-- A Desperate Alliance
+				}),
 				q(10251, {	-- The Master's Grand Design?
 					["provider"] = { "n", 19720 },	-- "Dirty" Larry
 					["sourceQuests"] = { 10231 },	-- What Book?  I Don't See Any Book. *UNTESTED*
@@ -211,12 +299,26 @@ _.Zones =
 					["provider"] = { "n", 18166 },	-- Archmage Khadgar
 					["sourceQuests"] = { 10588 },	-- The Cipher of Damnation
 				}),
+				q(12787, {	-- The Undercity
+					["u"] = 40,
+					["races"] = { 5 },	-- Undead
+					["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
+					["sourceQuest"] = 12752,	-- Desperate Research
+				}),
+				q(12786, {	-- Thunder Bluff
+					["u"] = 40,
+					["races"] = { 6 },	-- Tauren
+					["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
+					["sourceQuest"] = 12784,	-- Desperate Research
+				}),
 				q(13430, {	-- Trial of the Naaru: Magtheridon
 					["provider"] = { "n", 18481 },	-- A'dal
 					["repeatable"] = true,
 					["sourceQuests"] = { 10884, 10885, 10886 },	-- Trial of the Naaru: Mercy, Strength, & Tenacity
 				}),
---					q(10888),	-- Trial of the Naaru: Magtheridon (REMOVED / REPLACED WITH PREVIOUS QUEST)
+				q(10888, {	-- Trial of the Naaru: Magtheridon
+					["u"] = 40,
+				}),
 				q(10884, {	-- Trial of the Naaru: Mercy
 					["provider"] = { "n", 18481 },	-- A'dal
 					["sourceQuests"] = { 10883 },	-- The Tempest Key
@@ -229,7 +331,7 @@ _.Zones =
 					["provider"] = { "n", 18481 },	-- A'dal
 					["sourceQuests"] = { 10883 },	-- The Tempest Key
 				}),
-				q(10177,  {	-- Trouble at Auchindoun
+				q(10177, {	-- Trouble at Auchindoun
 					["u"] = 40,
 					["provider"] = { "n", 18893 },	-- Spymistress Mehlisah Highcrown
 				}),

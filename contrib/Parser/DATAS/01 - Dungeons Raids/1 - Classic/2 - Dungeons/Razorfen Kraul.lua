@@ -30,6 +30,12 @@ _.Instances = { tier(1, {	-- Classic
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 17008 },	-- Small Scroll
 				}),
+				q(14352, {	-- An Unholy Alliance
+					["u"] = 40,
+					["cr"] = 4421,	-- Charlga Razorflank
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 49205 },	-- Small Scroll
+				}),
 				q(26901, {	-- Going, Going, Guano!
 					["provider"] = { "n", 44402 },	-- Auld Stonespire
 				}),

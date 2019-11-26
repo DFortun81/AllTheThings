@@ -564,6 +564,11 @@ _.Zones =
 						i(43926),	-- Signet of Baron Sliver
 					},
 				}),
+				q(13373, {	-- Fringe Science Benefits
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 32430 },	-- Fringe Engineer Tezzla
+				}),
 				q(12813, {	-- From Their Corpses, Rise!
 					["coord"] = { 19.6, 48.3, 118 },
 					["isDaily"] = true,
@@ -623,6 +628,11 @@ _.Zones =
 						13230,	-- Avenge Me!
 						13228,	-- The Broken Front
 					},
+				}),
+				q(13379, {	-- Green Technology
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 30825 },	-- Chief Engineer Copperclaw
 				}),
 				q(13212, {	-- He's Gone to Pieces
 					["coord"] = { 35.3, 66.3, 118 },
@@ -814,6 +824,16 @@ _.Zones =
 						i(39068),	-- Flesh-Scaled Bracers
 						i(39104),	-- Hardened Bone Wrist Protectors
 					},
+				}),
+				q(13383, {	-- Killohertz
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 30345 },	-- Chief Engineer Boltwrench
+				}),
+				q(13380, {	-- Leading the Charge
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 32444 },	-- Kibli Killohertz
 				}),
 				q(13280, {	-- King of the Mountain (A)
 					["coord"] = { 62.8, 50.5, 118 },

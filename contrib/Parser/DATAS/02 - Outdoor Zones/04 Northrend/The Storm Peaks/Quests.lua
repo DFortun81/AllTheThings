@@ -229,6 +229,17 @@ _.Zones =
 					["coord"] = { 31.4, 38.0, 120 },
 					["sourceQuests"] = { 12984 },	-- Valduran the Stormborn
 				}),
+				q(13109, {	-- Diametrically Opposed
+					["u"] = 40,
+					["provider"] = { "n", 30105 },	-- King Jokkum
+					["g"] = {
+						i(43193),	-- Lightning Infused Mantle
+						i(43194),	-- Charred Leather Shoulderguards
+						i(43195),	-- Stormforged Shoulders
+						i(43197),	-- Pauldrons of Extinguished Hatred
+						i(43198),	-- Mantle of Volkhan
+					},
+				}),
 				q(12906, {	-- Discipline
 					["provider"] = { "n", 29885 },	-- Mildred the Cruel
 					["coord"] = { 44.4, 68.9, 120 },
@@ -1010,6 +1021,16 @@ _.Zones =
 					["provider"] = { "n", 29445 },	-- Thorim
 					["coord"] = { 33.4, 58.0, 120 },
 					["sourceQuests"] = { 13009 },	-- A New Beginning
+				}),
+				q(13108, {	-- Whatever it Takes!
+					["u"] = 40,
+					["provider"] = { "n", 30105 },	-- King Jokkum
+					["g"] = {
+						i(42844),	-- Robes of Lightning
+						i(43207),	-- Hardened Tongue Tunic
+						i(43208),	-- Lightningbringer's Hauberk
+						i(43209),	-- Breastplate of Jagged Stone
+					},
 				}),
 				q(12862, {	-- When All Else Fails (A)
 					["provider"] = { "n", 29428 },	-- Ricket

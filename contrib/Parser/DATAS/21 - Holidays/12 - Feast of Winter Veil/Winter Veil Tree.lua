@@ -159,6 +159,15 @@ _.Holidays = bubbleDown({["u"] = 29},
 								["questID"] = 13203,
 								["u"] = 40,	-- Legacy Quest/Quest Item
 							}),
+							i(46740, {	-- Winter Veil Gift
+								["description"] = "Gift from 2009.",
+								["isYearly"] = true,
+								["questID"] = 13966,
+								["u"] = 40,
+								["g"] = {
+									un(29, i(46725)),	-- Red Rider Air Rifle
+								},
+							}),
 							i(67443, {	-- Winter Veil Gift
 								["groups"] = {
 									un(29, i(46709)),	-- MiniZep Controller

@@ -536,6 +536,18 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 11720,	-- The Invasion of Gammoth
 				}),
+				q(13004, {	-- Gem Perfection (A)
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 26997 },	-- Alestos
+					["requireSkill"] = 755,	-- Jewelcrafting
+				}),
+				q(13002, {	-- Gem Perfection (H)
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 26982 },	-- Geba'li
+					["requireSkill"] = 755,	-- Jewelcrafting
+				}),
 				q(11673, {	-- Get Me Outa Here!
 					["coord"] = { 55.5, 12.5, 114 },
 					["races"] = ALLIANCE_ONLY,
@@ -634,6 +646,12 @@ _.Zones =
 					["provider"] = { "n", 25809 },	-- Archdruid Lathorius
 					["coord"] = { 57.1, 44.3, 114 },
 					["sourceQuest"] = 11864,	-- A Mission Statement
+				}),
+				q(13257, {	-- Herald of War
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 25256 },	-- High Overlord Saurfang
+					["sourceQuest"] = 13242,	-- Darkness Stirs
 				}),
 				q(11660, {	-- Horn of the Ancient Mariner
 					["provider"] = { "n", 25476 },	-- Waltor of Pal'ea

@@ -88,6 +88,17 @@ _.Zones =
 						un(2, i(17043)),	-- Zealot's Robe
 					},
 				}),
+				q(14353, {	-- An Unholy Alliance
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
+					["sourceQuest"] = 14352,	-- An Unholy Alliance
+					["g"] = {
+						un(2, i(17039)),	-- Skullbreaker
+						un(2, i(17042)),	-- Nail Spitter
+						un(2, i(17043)),	-- Zealot's Robe
+					},
+				}),
 				q(3784,  {	-- Assisting Arch Druid Runetotem
 					["u"] = 40,
 					["provider"] = { "n", 6741 },	-- Innkeeper Norman
@@ -237,6 +248,16 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 33,
 					["u"] = 40,
+					["g"] = {
+						un(2, i(10711)),	-- Dragon's Blood Necklace
+						un(2, i(6803)),	-- Prophetic Cane
+						un(2, i(6802)),	-- Sword of Omen
+					},
+				}),
+				q(14355, {	-- Into The Scarlet Monastery
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
 					["g"] = {
 						un(2, i(10711)),	-- Dragon's Blood Necklace
 						un(2, i(6803)),	-- Prophetic Cane
@@ -551,6 +572,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 71,
 					["u"] = 40,
+					["sourceQuest"] = 13266,	-- A Life Without Regret
 					["g"] = {
 						un(2, i(44579)),	-- Medallion of Heroism
 						un(2, i(44590)),	-- Warchief's Leggings of Foresight
@@ -601,6 +623,17 @@ _.Zones =
 				q(5725,  {	-- The Power to Destroy
 					["provider"] = { "n", 2425 },	-- Varimathras
 					["coord"] = { 56.3, 92.2, 90 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
+					["u"] = 40,
+					["g"] = {
+						un(2, i(15449)),	-- Ghastly Trousers
+						un(2, i(15450)),	-- Dredgemire Leggings
+						un(2, i(15451)),	-- Gargoyle Leggings
+					},
+				}),
+				q(14356,  {	-- The Power to Destroy
+					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["u"] = 40,

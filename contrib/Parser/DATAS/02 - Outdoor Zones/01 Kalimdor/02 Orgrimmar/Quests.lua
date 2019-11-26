@@ -566,6 +566,12 @@ _.Zones =
 					["classes"] = { 11 },	-- Druid
 					["lvl"] = 20,
 				}),
+				q(13266, {	-- A Life Without Regret
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 31412 },	-- Thrall
+					["sourceQuest"] = 13257,	-- Herald of War
+				}),
 				q(27395, {	-- A Marksman's Weapon
 					["provider"] = { "n", 3352 },	-- Ormak Grimshot
 					["coord"] = { 63.8, 32.8, 85 },
@@ -961,6 +967,12 @@ _.Zones =
 				q(8367, {	-- For Great Honor
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 15350 },	-- Horde Warbringer
+				}),
+				q(13476, {	-- For Great Honor
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 15350 },	-- Horde Warbringer
 				}),
 				q(5726, {	-- Hidden Enemies
 					["u"] = 40,
