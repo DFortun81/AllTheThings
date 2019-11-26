@@ -23,6 +23,15 @@ _.NeverImplemented =
 		q(6842),	-- Unused
 		q(7069),	-- Unused
 		q(8458),	-- Unused
+		q(24797),	-- REUSE
+		q(46807),	-- [UNUSED]
+		q(40596),	-- FLAG - Azsuna - Timothy Jones - (UNUSED)
+		q(40595),	-- FLAG - Dalaran - Timothy Jones - (UNUSED)
+		q(47495),	-- Insatiable Appetite [UNUSED]
+		q(39044),	-- Unused
+		q(50690),	-- Unused
+		q(54781),	-- UNUSED
+		q(37812),	-- UNUSED: Test Race: 1 Marker
 		
 		
 		-------------------
