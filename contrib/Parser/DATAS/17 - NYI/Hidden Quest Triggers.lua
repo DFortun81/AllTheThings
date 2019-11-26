@@ -1632,5 +1632,14 @@ _.NeverImplemented =
 		q(57197),	-- Vale of Eternal Sorrows - Black Empire Cache
 		q(57202),	-- Vale of Eternal Sorrows - Black Empire Cache
 		q(57199),	-- Vale of Eternal Sorrows - Black Empire Cache
+		
+		-- Mechagon unlock chain
+		-- NOTE: these are probably mixed up a bit, but the IDs are definitely trackers
+		q(57941),	-- Pegi Cogster talked to
+		q(57942),	-- Lanna Statiglow talked to
+		q(57939),	-- Quimby Sparklighter talked to
+		q(57940),	-- Yergin Galvaquad
+		q(57957),	-- Elya Codepunch talked to
+		q(57938),	-- Assember Hung talked to
 	}),
 };

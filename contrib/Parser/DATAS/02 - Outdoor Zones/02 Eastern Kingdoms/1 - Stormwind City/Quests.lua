@@ -263,6 +263,90 @@ _.Zones =
 										["lvl"] = 20,
 									}),
 								}),
+								n(-256, {	-- Mechagnome
+									q(57486, {	-- Waning Energy
+										["maps"] = { 1161 },	-- Boralus
+										["coord"] = { 73.1, 16.9, 1161 },
+										["races"] = ALLIANCE_ONLY,
+										["provider"] = { "n", 160101 },	-- Kelsey Steelspark
+									}),
+									q(57487, {	-- Someone Who Can Help
+										["maps"] = { 1161 },	-- Boralus
+										["coord"] = { 36.8, 62.5, 1161 },
+										["races"] = ALLIANCE_ONLY,
+										["provider"] = { "n", 157997 },	-- Kelsey Steelspark
+										["sourceQuest"] = 57486,	-- Waning Energy
+									}),
+									q(57488, {	-- The Current Schematic
+										["maps"] = { 1462 },	-- Mechagon Island
+										["coord"] = { 73.1, 33.3, 1462 },
+										["races"] = ALLIANCE_ONLY,
+										["provider"] = { "n", 150555 },	-- Waren Gearhart
+										["sourceQuest"] = 57487,	-- Someone Who Can Help
+									}),
+									q(57490, {	-- Voyage to Safety
+										["maps"] = { 1462 },	-- Mechagon Island
+										["coord"] = { 73.0, 33.4, 1462 },
+										["races"] = ALLIANCE_ONLY,
+										["provider"] = { "n", 158145 },	-- Prince Erazmin
+										["sourceQuest"] = 57488,	-- The Current Schematic
+									}),
+									q(57491, {	-- Better... Stronger... Less Dead
+										["maps"] = { 1462 },	-- Mechagon Island
+										["coord"] = { 73.1, 33.4, 1462 },
+										["races"] = ALLIANCE_ONLY,
+										["provider"] = { "n", 160232 },	-- Christy Punchcog
+										["sourceQuest"] = 57490,	-- Voyage to Safety
+									}),
+									q(57492, {	-- Him?
+										["maps"] = { 1462 },	-- Mechagon Island
+										["coord"] = { 73.0, 33.4, 1462 },
+										["races"] = ALLIANCE_ONLY,
+										["provider"] = { "n", 158145 },	-- Prince Erazmin
+										["sourceQuest"] = 57491,	-- Better... Stronger... Less Dead
+									}),
+									q(57493, {	-- Mental Attunement
+										["maps"] = { 1462 },	-- Mechagon Island
+										["coord"] = { 73.5, 31.8, 1462 },
+										["races"] = ALLIANCE_ONLY,
+										["provider"] = { "n", 160232 },	-- Christy Punchcog
+										["sourceQuest"] = 57492,	-- Him?
+									}),
+									q(57494, {	-- A Strong heart
+										["maps"] = { 1462 },	-- Mechagon Island
+										["coord"] = { 73.5, 31.8, 1462 },
+										["races"] = ALLIANCE_ONLY,
+										["provider"] = { "n", 160232 },	-- Christy Punchcog
+										["sourceQuest"] = 57493,	-- Mental Attunement
+									}),
+									q(57496, {	-- Ascension
+										["maps"] = {
+											1462,	-- Mechagon Island
+											1574,	-- Mechagon City (Scenario)
+										},
+										["coord"] = { 73.0, 33.6, 1462 },
+										["races"] = ALLIANCE_ONLY,
+										["provider"] = { "n", 159587 },	-- Gelbin Mekkatorque
+										["sourceQuest"] = 57494,	-- A Strong Heart
+									}),
+									q(57495, {	-- The Future of Mechagon
+										["maps"] = { 1574 },	-- Mechagon City (Scenario)
+										["coord"] = { 58.1, 41.1, 1574 },
+										["races"] = ALLIANCE_ONLY,
+										["provider"] = { "n", 162806 },	-- Gelbin Mekkatorque
+										["sourceQuest"] = 57496,	-- Ascension
+									}),
+									q(57497, {	-- Propagate the News
+										["maps"] = { 1573 },	-- Mechagon City
+										["coord"] = { 17.8, 65.5 },
+										["races"] = ALLIANCE_ONLY,
+										["provider"] = { "n", 157997 },	-- Kelsey Steelspark
+										["sourceQuest"] = 57495,	-- The Future of Mechagon
+										["g"] = {
+											i(174067),	-- Mechagon Mechanostrider
+										},
+									}),
+								}),
 								n(-208, {	-- Void Elves
 									q(49787, {	-- The Ghostlands
 										["provider"] = { "n", 126321 },	-- Alleria Windrunner
