@@ -613,6 +613,12 @@ _.Zones =
 					["races"] = { 1 },	-- Human
 					["lvl"] = 4,
 				}),
+				q(58708, {	-- Fame Waits for Gnome One
+					["coord"] = { 52.7, 14.1, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 162393 },	-- Gila Crosswires
+					["isBreadcrumb"] = true,
+				}),
 				q(27361, {	-- Favored of the Light
 					["provider"] = { "n", 376 },	-- High Priestess Laurena
 					["coord"] = { 49.6, 44.8, 84 },

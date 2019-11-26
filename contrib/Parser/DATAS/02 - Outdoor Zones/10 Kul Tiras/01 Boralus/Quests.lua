@@ -405,7 +405,10 @@ _.Zones =
 					},
 				}),
 				q(54088, {	-- The Legend of Mechagon
-					["sourceQuests"] = { 57009 },	-- Fame Waits for Gnome One
+					["sourceQuests"] = {
+						57009,	-- Fame Waits for Gnome One (Nazjatar)
+						58708,	-- Fame Waits for Gnome One (Stormwind)
+					},
 					["coord"] = { 67.2, 15.6, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 150208 },	-- Tinkmaster Overspark
