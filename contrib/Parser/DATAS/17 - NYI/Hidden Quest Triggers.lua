@@ -1626,12 +1626,18 @@ _.NeverImplemented =
 						Possibly related to Mark of Boistrous Duty (Rank 1) dropping? Torn Page of Compendium, Vol. 1 (item 171353) as well? Need to run a few times to see if this is guaranteed or not
 		]]--
 		-- N'Zoth assaults
-		q(57201),	-- Vale of Eternal Sorrows - Black Empire Cache
-		q(57200),	-- Vale of Eternal Sorrows - Black Empire Cache
-		q(57203),	-- Vale of Eternal Sorrows - Black Empire Cache
-		q(57197),	-- Vale of Eternal Sorrows - Black Empire Cache
-		q(57202),	-- Vale of Eternal Sorrows - Black Empire Cache
-		q(57199),	-- Vale of Eternal Sorrows - Black Empire Cache
+		q(57201),	-- Vale of Eternal Blossoms - Black Empire Cache
+		q(57200),	-- Vale of Eternal Blossoms - Black Empire Cache
+		q(57203),	-- Vale of Eternal Blossoms - Black Empire Cache
+		q(57197),	-- Vale of Eternal Blossoms - Black Empire Cache
+		q(57202),	-- Vale of Eternal Blossoms - Black Empire Cache
+		q(57199),	-- Vale of Eternal Blossoms - Black Empire Cache
+		q(57206),	-- Vale of Eternal Blossoms - Mogu Plunder
+		q(57208),	-- Vale of Eternal Blossoms - Mogu Plunder
+		q(57209),	-- Vale of Eternal Blossoms - Mogu Plunder
+		q(57211),	-- Vale of Eternal Blossoms - Mogu Plunder
+		q(57212),	-- Vale of Eternal Blossoms - Mogu Plunder
+		q(57213),	-- Vale of Eternal Blossoms - Mogu Plunder
 		
 		-- Mechagon unlock chain
 		-- NOTE: these are probably mixed up a bit, but the IDs are definitely trackers

@@ -192,11 +192,17 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(-10077, {	-- Assault: The Warring Clans
-					n(-17, {	-- Quests
-						q(58476, {	-- Bringing the Thunder -- wasn't available on latest play-through. Possibly only up when Assault: Warring Clans is up?
+					n(-17,  {	-- Quests
+						q(58476, {	-- Bringing the Thunder
 							["coord"] = { 38.4, 75.0, 1530 },
 							["isDaily"] = true,
 							["provider"] = { "n", 158674 },	-- Anji Autumnlight
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
+						q(57720, {	-- Champions of the Mogu
+							["coord"] = { 44.7, 73.8, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 154444 },	-- Stormspeaker Qian
 							["sourceQuest"] = 56771,	-- Time-Lost Warriors
 						}),
 						q(58479, {	-- Lightning Crashes
@@ -205,8 +211,14 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 154444 },	-- Stormspeaker Qian
 							["sourceQuest"] = 56771,	-- Time-Lost Warriors
 						}),
+						q(58478, {	-- No Stone Unbroken
+							["coord"] = { 44.7, 73.8, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
 					}),
-					n(-16, {	-- Rares
+					n(-16,  {	-- Rares
 						n(157466, {	-- Anh-De the Loyal
 							["questID"] = 57363,
 							["coord"] = { 33.7, 68.6, 1530 },
@@ -325,28 +337,14 @@ _.ExpansionFeatures =
 						}),
 						n(157443, {	-- Xiln the Mountain
 							["questID"] = 57358,
-							["coord"] = { 42.2, 43.5, 1530 },
+							["coord"] = { 53.8, 48.9, 1530 },
+							--["coord"] = { 42.2, 43.5, 1530 }, -- NOTE: these were the previous coords. He may have permanently moved, or he has multiple spawn points
 							["isDaily"] = true,
 						}),
 					}),
 					n(-212, {	-- Treasures
 					--[[
 					-- all treasure rewards appear to be placeholders for now
-					o(, {	-- Mogu Plunder
-						["coords"] = {
-							{ 26.0, 12.6, 1530 },	questID 57206 -- inside the guo-lai halls
-							{ 25.3, 27.6, 1530 },	questID 57208
-							{ 24.8, 35.1, 1530 },	questID 57208
-							{ 21.3, 13.9, 1530 },	questID 57209
-							{ 19.3, 19.4, 1530 },	questID 57209
-							{ 21.3, 63.0, 1530 },	questID 57211
-							{ 15.5, 64.3, 1530 },	questID 57211
-							{ 51.1, 63.2, 1530 },	questID 57212
-							{ 33.3, 69.8, 1530 },	questID 57213
-							{ 37.7, 65.8, 1530 },	questID 57213
-
-						},
-					}),
 					o(, {	-- Mogu Spoils
 						["coords"] = {
 							{ 24.4, 2.8, 1530 },	questID 57214
@@ -378,6 +376,7 @@ _.ExpansionFeatures =
 						}),
 						q(57272, {	-- Bloodbound Effigy
 							["lvl"] = 120,
+							["coord"] = { 19.2, 72.0, 1530 },
 							["isWorldQuest"] = true,
 						}),
 						q(58370, {	-- Empowered Demolisher
@@ -411,12 +410,13 @@ _.ExpansionFeatures =
 						}),
 						q(57101, {	-- Zan-tien serpent cage
 							["lvl"] = 120,
+							["coord"] = { 47.7, 21.5, 1530 },
 							["isWorldQuest"] = true,
 						}),
 					}),
 				}),
 			}),
-			n(-4, {	-- Achievements
+			n(-4,   {	-- Achievements
 				ach(14159),		-- Combating the Corruption -- TODO:: update with criteria when they get added
 				ach(14154, {	-- Defend the Vale
 					crit(1),	-- Assault: The Warring Clans
@@ -433,19 +433,13 @@ _.ExpansionFeatures =
 					["coord"] = { 38.9, 72.8, 1530 },
 				}),
 			}),
-			f(101, {	-- Battle Pets
+			f(101,  {	-- Battle Pets
 				p(2866, {	-- Voidglower
 					["crs"] = { 162506 },
 				}),
 			}),
 			n(-17,  {	-- Quests
 				q(58420, {	-- A Foul Annoyance
-					["coord"] = { 44.7, 73.8, 1530 },
-					["isDaily"] = true,
-					["provider"] = { "n", 154444 },	-- Stormspeaker Qian
-					["sourceQuest"] = 56771,	-- Time-Lost Warriors
-				}),
-				q(57720, {	-- Champions of the Mogu -- wasn't available on latest play-through. Possibly only up when Assault: Warring Clans is up?
 					["coord"] = { 44.7, 73.8, 1530 },
 					["isDaily"] = true,
 					["provider"] = { "n", 154444 },	-- Stormspeaker Qian
@@ -530,14 +524,7 @@ _.ExpansionFeatures =
 					["sourceQuest"] = 56539,	-- Finding the Rajani
 				}),
 			}),
-			n(-16,  {	-- Rares
-				n(155958, {	-- Tashara -- TODO:: verify ID. multiple possible models
-					["g"] = {
-						i(174873),	-- Trans-mogu-rifier (Toy)
-					},
-				}),
-			}),
-			n(-34, {	-- World Quests
+			n(-34,  {	-- World Quests
 				q(58747, {	-- Brain Tickling
 					-- pet battle
 					["lvl"] = 120,
@@ -549,6 +536,9 @@ _.ExpansionFeatures =
 				n(160711, {	-- Zhang Ku
 					["coord"] = { 44.5, 75.4, 1530 },
 					["g"] = {
+						i(168436, {	-- Focused Star Point (Rank 1)
+							["cost"] = { { "c", 1719, 10 }, },	-- 10x Corrupted Memento
+						}),
 						i(174649, {	-- Rajani Warserpent
 							["cost"] = { { "i", 174230, 1 }, },	-- Pristine Cloud Serpent Scale
 						}),
@@ -558,11 +548,18 @@ _.ExpansionFeatures =
 						i(174480, {	-- Windfeather Quill
 							["cost"] = { { "i", 163036, 300 }, },	-- 300x Polished Pet Charms
 						}),
+						i(174906, {	-- Lightning-Forged Augment Rune
+							["cost"] = 500000000,	-- 50,000g
+						}),
 						i(174647, {	-- Rajani Tabard
 							["cost"] = 2400000,	-- 240g
 						}),
-						i(168440),	-- Gleaming Star Shard (Rank 3)
-						i(168575),	-- Branch of Rejuvenating Rings (Rank 3)
+						i(168440, {	-- Gleaming Star Shard (Rank 3)
+							["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
+						}),
+						i(168575, {	-- Branch of Rejuvenating Rings (Rank 3)
+							["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
+						}),
 					},
 				}),
 			}),

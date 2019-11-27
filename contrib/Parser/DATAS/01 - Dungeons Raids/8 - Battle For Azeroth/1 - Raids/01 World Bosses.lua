@@ -92,6 +92,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			e(2378, {	-- Grand Empress Shek'zara -- TODO: need more info
 				["isWeekly"] = true,
 				["isRaid"] = true,
+				["cr"] = 155851,
 				["g"] = {
 					i(174243),	-- Guise of the Voracious Prowler
 					i(174234),	-- Maniacal Speaker's Cover
@@ -230,7 +231,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["isRaid"] = true,
 				["coord"] = { 29.3, 22.2, 1530 },
 				["maps"] = { 1530 },	-- Vale of Eternal Blossoms
-				["cr"] = 155958
+				["cr"] = 155958,
 				["g"] = {
 					i(174873),	-- Trans-mogu-rifier (Toy)
 				},
@@ -294,6 +295,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			e(2381, {	-- Vuk'laz the Earthbreaker -- TODO: need more info
 				["isWeekly"] = true,
 				["isRaid"] = true,
+				["cr"] = 160970,
 				["g"] = {
 					i(174258),	-- Greathelm of Indiscriminate Brutality
 					i(174250),	-- Psyche Tormentor's Visage
