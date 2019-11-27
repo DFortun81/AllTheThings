@@ -768,6 +768,16 @@ _.NeverImplemented =
 		q(47053),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 3 - Tracking
 		q(47044),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 2 - Tracking
 		q(47038),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 1 - Tracking
+		q(38894),	-- Hunter Order Hall - Founded the order hall
+		q(40621),	-- Hunter Order Hall - Beast Mastery Chosen first
+		q(44045),	-- Hunter Order Hall - Beast Mastery Chosen
+		q(44367),	-- Hunter Order Hall - Beast Mastery Chosen
+		q(40619),	-- Hunter Order Hall - Survival Chosen
+		q(44369),	-- Hunter Order Hall - Survival Chosen
+		q(44047),	-- Hunter Order Hall - Survival Chosen
+		q(44046),	-- Hunter Order Hall - Marksmanship Chosen
+		q(40620),	-- Hunter Order Hall - Marksmanship Chosen
+		q(44368),	-- Hunter Order Hall - Marksmanship Chosen
 		
 		q(38544),	-- FLAG: Demonsteel Waistguard Crafted
 		q(38546),	-- FLAG: Demonsteel Boots Crafted
