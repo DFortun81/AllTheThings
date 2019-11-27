@@ -89,6 +89,17 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(161419),	-- Kraulok's Claw
 				}),
 			}),
+			e(2378, {	-- Grand Empress Shek'zara -- TODO: need more info
+				["isWeekly"] = true,
+				["isRaid"] = true,
+				["g"] = {
+					i(174243),	-- Guise of the Voracious Prowler
+					i(174234),	-- Maniacal Speaker's Cover
+					i(174264),	-- Chitinous Conqueror's Legplates
+					i(174255),	-- Greaves of Shattered Thoughts
+					i(174268),	-- Loop of Abhorrent Celerity
+				},
+			}),
 			e(2197, {	-- Hailstone Construct
 				["isWeekly"] = true,
 				["questID"] = 52157,	-- A Chilling Encounter (WQ)
@@ -213,6 +224,17 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(161411),	-- T'zane's Barkspines
 				}),
 			}),
+			e(2380, {	-- Tashara -- TODO: determine questID
+				["isWeekly"] = true,
+				--["questID"] = ,
+				["isRaid"] = true,
+				["coord"] = { 29.3, 22.2, 1530 },
+				["maps"] = { 1530 },	-- Vale of Eternal Blossoms
+				["cr"] = 155958
+				["g"] = {
+					i(174873),	-- Trans-mogu-rifier (Toy)
+				},
+			}),
 			e(2212, {	-- The Lion's Roar [Warfront]
 				["isWeekly"] = true,
 				["questID"] = 52848,	-- The Lion's Roar (WQ)
@@ -268,6 +290,17 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(168603),	-- Cloak of Restless Spirits
 					i(169317),	-- Enthraller's Bindstone
 				}),
+			}),
+			e(2381, {	-- Vuk'laz the Earthbreaker -- TODO: need more info
+				["isWeekly"] = true,
+				["isRaid"] = true,
+				["g"] = {
+					i(174258),	-- Greathelm of Indiscriminate Brutality
+					i(174250),	-- Psyche Tormentor's Visage
+					i(174237),	-- Breeches of Faithful Execution
+					i(174247),	-- Grotesque Mutilator's Leggings
+					i(174469),	-- Band of Insidious Ruminations
+				},
 			}),
 			e(2198, {	-- Warbringer Yenajz
 				["isWeekly"] = true,
