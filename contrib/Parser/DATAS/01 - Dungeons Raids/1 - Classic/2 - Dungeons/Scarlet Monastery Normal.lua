@@ -16,9 +16,21 @@ _.Instances = { tier(1, {	-- Classic
 				q(31513, {	-- Blades of the Anointed
 					["provider"] = { "n", 64827 },	-- Hooded Crusader
 				}),
+				q(26993, {	-- Compendium of the Fallen
+					["u"] = 40,
+					["provider"] = { "n", 44800 },	-- Dominic
+				}),
+				q(26996, {	-- Right Under Their Noses
+					["u"] = 40,
+					["provider"] = { "n", 44800 },	-- Dominic
+				}),
 				q(31514, {	-- Unto Dust Thou Shalt Return
 					["provider"] = { "n", 64854 },	-- Blade of the Anointed
 					["sourceQuests"] = { 31513 },	-- Blades of the Anointed
+				}),
+				q(26994, {	-- Without Rhyme or Reason
+					["u"] = 40,
+					["provider"] = { "n", 44804 },	-- Dominic
 				}),
 			}),
 			d(1,   {	-- Normal

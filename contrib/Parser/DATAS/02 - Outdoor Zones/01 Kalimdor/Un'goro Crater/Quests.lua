@@ -400,6 +400,9 @@ _.Zones =
 					["coord"] = { 63.8, 19.7, 78 },
 					["sourceQuest"] = 24714,	-- Chasing A-Me 01
 				}),
+				q(24716, {	-- Returning A-Me 01
+					["u"] = 40,
+				}),
 				q(45051, {	-- Reverse Blacksmithing
 					["provider"] = { "n", 115923 },	-- Ko'Zan
 					["coord"] = { 43.6, 41.4, 78 },

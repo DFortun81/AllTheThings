@@ -586,6 +586,9 @@ _.Zones =
 					["provider"] = { "n", 9298 },	-- Donovan Snowden
 					["sourceQuest"] = 5085,	-- Mystery Goo
 				}),
+				q(28468, {	-- [DEPRECATED]Toxic Horrors
+					["u"] = 40,
+				}),
 				q(28848, {	-- Trailing the Spiritspeaker
 					["provider"] = { "n", 10920 },	-- Kelek Skykeeper
 					["coord"] = { 46.8, 53.8, 83 },

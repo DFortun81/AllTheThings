@@ -41,6 +41,9 @@ _.Instances = { tier(1, {	-- Classic
 				q(26872, {	-- Deviate Hides
 					["provider"] = { "n", 5767 },	-- Nalpak
 				}),
+				q(26879, {	-- Disciples of Naralex
+					["u"] = 40,
+				}),
 				q(26873, {	-- Preemptive Methods
 					["provider"] = { "n", 5767 },	-- Nalpak
 				}),

@@ -280,6 +280,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27211,	-- Propaganda War
 				}),
+				q(26991, {	-- Enemies Abroad
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4791 },	-- Nazeer Bloodpike
+				}),
 				q(1177,  {	-- Hungry!
 					["u"] = 40,
 					["provider"] = { "n", 4503 },	-- Mudcrush Durtfeet
@@ -984,6 +989,9 @@ _.Zones =
 					["coord"] = { 36.4, 31.8, 70 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27292,	-- Return to Krog
+				}),
+				q(27309, {	-- The Grimtotem Plot
+					["u"] = 1,
 				}),
 				q(11169, {	-- The Grimtotem Weapon
 					["u"] = 40,

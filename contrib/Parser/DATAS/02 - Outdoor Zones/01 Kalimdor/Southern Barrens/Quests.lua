@@ -298,6 +298,9 @@ _.Zones =
 						i(131407),	-- Singleton Gauntlets
 					},
 				}),
+				q(24898, {	-- Going, Going, Guano!
+					["u"] = 40,
+				}),
 				q(25106, {	-- Hands Off Me Dig!
 					["provider"] = { "n", 39155 },	-- Marley Twinbraid
 					["coord"] = { 47.1, 88.5, 199 },
@@ -824,6 +827,9 @@ _.Zones =
 					["coord"] = { 48.1, 38.6, 199 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 24601,	-- The Nightmare Scar
+				}),
+				q(25198, {	-- Winnoa Pineforest
+					["u"] = 1,
 				}),
 				q(25082, {	-- Working the Bugs Out
 					["provider"] = { "n", 39085 },	-- Logan Talonstrike

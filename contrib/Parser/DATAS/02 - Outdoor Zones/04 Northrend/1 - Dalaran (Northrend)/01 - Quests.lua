@@ -364,8 +364,11 @@ _.Zones =
 						currency(61),	-- Dalaran Jewelcrafter's Token
 					},
 				}),
+				q(26012, {	-- Trouble at Wyrmrest
+					["coord"] = { 30.6, 48.6, 125 },
+					["provider"] = { "n", 16128 },	-- Rhonin
+				}),
 				--[[
-				q(26012),	-- Trouble at Wyrmrest
 				q(32404, {	-- Violence in the Arena
 					["races"] = HORDE_ONLY,
 				}),

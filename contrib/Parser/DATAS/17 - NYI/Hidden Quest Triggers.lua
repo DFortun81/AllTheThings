@@ -243,6 +243,18 @@ _.NeverImplemented =
 		--   CATACLYSM   --
 		-------------------
 		q(28347),	-- Coffer of Promise TRACKING QUEST
+		q(25071),	-- FLAG - Purple Murloc
+		q(28889),	-- Arcane Instructions Tracking Quest
+		q(28887),	-- Fire Instructions Tracking Quest
+		q(28886),	-- Frost Instructions Tracking Quest
+		q(28888),	-- Shadow Instructions Tracking Quest
+		q(29368),	-- Tracking
+		q(29378),	-- FLAG - Teleport to Vashj'ir
+		q(29379),	-- FLAG - Teleport to Deepholm
+		q(29380),	-- FLAG - Teleport to Firelands
+		q(29381),	-- FLAG - Teleport to Hyjal
+		q(29395),	-- FLAG - Teleport to Uldum
+		q(29592),	-- Caster Legendary BREADCRUMB TRACKER
 		
 		q(26565),	-- A Furious Catch (REMOVED) — unused version of Orgrimmar Cata fishing daily "A Golden Opportunity"
 		q(35348),	-- Blackrock Caverns Reward Quest
@@ -296,6 +308,12 @@ _.NeverImplemented =
 		q(33899),	-- Tracking Quest: Turn on the Holograms
 		q(31484),	-- Hisek tracking quest
 		q(32012),	-- Kovok tracking [GROWING]
+		q(29604),	-- Tracking Event: Saw East Temple Arrival Cinematic
+		q(29638),	-- UNUSED
+		q(29695),	-- Kiryn TRACKING
+		q(29702),	-- Gorrok TRACKING
+		q(29697),	-- Rivett TRACKING
+		q(29704),	-- Shokia TRACKING
 		
 	--	DUNGEONS
 		q(35316),	-- Gate of the Setting Sun Reward Quest

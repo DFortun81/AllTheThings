@@ -32,6 +32,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["provider"] = { "n", 24822 },	-- Tyrith
 					["sourceQuest"] = 29684,	-- Severed Communications
 				}),
+				q(29683, {	-- The Scryer's Scryer
+					["u"] = 40,
+				}),
 				q(29687, {	-- Twisted Associations
 					["provider"] = { "n", 55007 },	-- Exarch Larethor
 				}),

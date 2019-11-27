@@ -8,7 +8,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["maps"] = { 153, 154 },
 		["g"] = {
 			n(-17, {	-- Quests
-				q(29844, {	-- For Posterity
+				q(29840, {	-- For Posterity
 					["provider"] = { "n", 55737 },	-- Chronicler Bah'Kini
 					["g"] = {
 						i(43180),	-- Lion's Head Ring

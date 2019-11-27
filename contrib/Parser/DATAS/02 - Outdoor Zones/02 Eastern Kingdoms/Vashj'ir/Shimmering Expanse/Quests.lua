@@ -920,7 +920,7 @@ _.Zones =
 						["sourceQuest"] = 26005,	-- A Breath of Fresh Air
 						["isBreadcrumb"] = true,
 					}),
-					q(27443, {	-- The War Has Many Fronts (H)
+					q(27442, {	-- The War Has Many Fronts (H)
 						["provider"] = { "n", 45460 },	-- Earthmender Duarn
 						["coord"] = { 64.4, 68.6, 205 },
 						["races"] = HORDE_ONLY,

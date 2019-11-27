@@ -134,6 +134,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 				}),
+				q(26866, {	-- Enemies Below
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 36648 },	-- Baine Bloodhoof
+				}),
 				q(31036, {	-- Enemies Below
 					["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
 					["coord"] = { 60.3, 51.7, 88 },

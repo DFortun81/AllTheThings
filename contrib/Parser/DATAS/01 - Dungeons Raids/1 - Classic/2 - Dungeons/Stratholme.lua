@@ -31,7 +31,7 @@ _.Instances = { tier(1, {	-- Classic
 								i(65928),	-- Leggings of Stratholme
 							},
 						}),
-						q(27223, {	-- The Great Fras Siabi
+						q(27192, {	-- The Great Fras Siabi
 							["provider"] = { "n", 45323 },	-- Packmaster Stonebruiser
 						}),
 					}),
@@ -282,26 +282,21 @@ _.Instances = { tier(1, {	-- Classic
 				["coord"] = { 43.76, 17.52, 23 },	-- Stratholme [Undead Side], Eastern Plaguelands
 				["groups"] = {
 					n(-17, {	-- Quests
-						{
-							["questID"] = 27359,	-- Argent Reinforcements
+						q(27359, {	-- Argent Reinforcements
 							["provider"] = { "n", 45330 },	-- Archmage Angela Dosantos
-						},
-						{
-							["questID"] = 27352,	-- Liquid Gold
+						}),
+						q(27352, {	-- Liquid Gold
 							["provider"] = { "n", 45328 },	-- Packmaster Stonebruiser
-						},
-						{
-							["questID"] = 27227,	-- Lord Aurius Rivendare
+						}),
+						q(27227, {	-- Lord Aurius Rivendare
 							["provider"] = { "n", 45329 },	-- Crusade Commander Eligor Dawnbringer
-						},
-						{
-							["questID"] = 27228,	-- Man Against Abomination
+						}),
+						q(27228, {	-- Man Against Abomination
 							["provider"] = { "n", 45206 },	-- Crusade Commander Korfax
-						},
-						{
-							["questID"] = 27230,	-- Weapons for War
+						}),
+						q(27230, {	-- Weapons for War
 							["provider"] = { "n", 45331 },	-- Master Craftsman Wilhelm
-						},
+						}),
 					}),
 					n(0, {	-- Zone Drop
 						i(17683, {	-- Book: Gift of the Wild Rank 2

@@ -166,6 +166,11 @@ _.Zones =
 					["provider"] = { "n", 5204 },	-- Apothecary Zinge
 					["sourceQuest"] = 232,	-- Errand for Apothecary Zinge
 				}),
+				q(26867, {	-- Enemies Below
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 10181 },	-- Lady Sylvanas Windrunner
+				}),
 				q(31037, {	-- Enemies Below
 					["provider"] = { "n", 10181 },	-- Lady Sylvanas Windrunner
 					["coord"] = { 57.8, 91.6, 90 },
@@ -208,6 +213,9 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2055 },	-- Master Apothecary Faranell
+				}),
+				q(24899, {	-- Going, Going, Guano!
+					["u"] = 40,
 				}),
 				q(5050, {	-- Good Luck Charm
 					["u"] = 40,

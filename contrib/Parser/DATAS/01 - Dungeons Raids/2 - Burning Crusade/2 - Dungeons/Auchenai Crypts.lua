@@ -11,57 +11,37 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		},
 		["coord"] = { 34.34, 65.61, 108 },	-- Auchenai Crypts, Terokkar Forest
 		["g"] = {
-			{	-- Quests
-				["npcID"] = -17,	-- Quests
+			n(-17, {	-- Quests
 				["g"] = {
-					{	-- Raging Spirits
-						["questID"] = 29591,	-- Raging Spirits
+					q(29591, {	-- Raging Spirits
 						["provider"] = { "n", 54698 },			-- Tormented Soulpriest
-					},
-					{	-- The Dead Watcher
-						["questID"] = 29590,	-- The Dead Watcher
+					}),
+					q(29590, {	-- The Dead Watcher
 						["provider"] = { "n", 54725 },			-- Draenei Spirit
-					},
-					{	-- The End of the Exarch
-						["questID"] = 29596,	-- The End of the Exarch
-						["sourceQuests"] = {
-							29595,	-- Everything Will Be Alright
-						},
+					}),
+					q(29597, {	-- The End of the Exarch
+						["u"] = 40,
+					}),
+					q(29596, {	-- The End of the Exarch
 						["provider"] = { "n", 54725 },			-- Draenei Spirit
+						["sourceQuest"] = 29595,	-- Everything Will Be Alright
 						["g"] = {
-							{	-- Auchenai Anchorite's Robe
-								["itemID"] = 29341,	-- Auchenai Anchorite's Robe
-							},
-							{	-- Auchenai Monk's Tunic
-								["itemID"] = 29340,	-- Auchenai Monk's Tunic
-							},
-							{	-- Auchenai Tracker's Hauberk
-								["itemID"] = 29339,	-- Auchenai Tracker's Hauberk
-							},
-							{	-- The Exarch's Protector
-								["itemID"] = 29337,	-- The Exarch's Protector
-							},
+							i(29341),	-- Auchenai Anchorite's Robe
+							i(29340),	-- Auchenai Monk's Tunic
+							i(29339),	-- Auchenai Tracker's Hauberk
+							i(29337),	-- The Exarch's Protector
 						},
-					},
+					}),
 				},
-			},
-			{	-- Zone Drops
-				["npcID"] = 0,	-- Zone Drops
-				["g"] = {
-					{	-- Formula: Enchant Boots - Dexterity
-						["itemID"]  = 22544,	-- Formula: Enchant Boots - Dexterity
-						["crs"] = {
-							18521,	-- Raging Skeleton
-						},
-					},
-					{	-- Plans: Felsteel Gloves
-						["itemID"]  = 23605,	-- Plans: Felsteel Gloves
-						["crs"] = {
-							18497,	-- Auchenai Monk
-						},
-					},
-				},
-			},
+			}),
+			n(0, {	-- Zone Drops
+				i(22544, {	-- Formula: Enchant Boots - Dexterity
+					["cr"] = 18521,	-- Raging Skeleton
+				}),
+				i(23605, {	-- Plans: Felsteel Gloves
+					["cr"] = 18497,	-- Auchenai Monk
+				}),
+			}),
 			d(1, {	-- Normal
 				cr(18371, e(523, {	-- Shirrak the Dead Watcher
 					i(27846),	-- Claw of the Watcher

@@ -30,6 +30,12 @@ _.Zones =
 					["sourceQuest"] = 8335,	-- Felendren the Banished
 					["isBreadcrumb"] = true,
 				}),
+				q(27091, {	-- Charge!
+					["u"] = 40,
+					["races"] = { 10 },	-- Blood Elf
+					["classes"] = { 1 },	-- Warrior
+					["provider"] = { "n", 43010 },	-- Delios Silverblade
+				}),
 				q(10073,  {	-- Corruption
 					["u"] = 40,
 					["races"] = { 10 },	-- Blood Elf
