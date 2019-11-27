@@ -440,6 +440,12 @@ _.Zones =
 				}),
 				--q(30801),	-- Lessons from History
 				--q(46349),	-- Lilies for Ryuli
+				q(57075, {	-- Liquid Courage
+					["lvl"] = 120,
+					["coord"] = { 55.5, 91.1, 379 },
+					["provider"] = { "n", 156938 },	-- Li Li Stormstout
+					["sourceQuest"] = 57074,	-- Our Backs to the Gate
+				}),
 				--q(30942),	-- Make A Fighter Out of Me
 				q(32371, {	-- Memory Wine (A)
 					["races"] = ALLIANCE_ONLY,
@@ -530,6 +536,16 @@ _.Zones =
 						i(82513),
 					},
 				}),
+				q(57074, {	-- Our Backs to the Gate
+					["lvl"] = 120,
+					["coord"] = { 59.9, 75.5, 379 },
+					["provider"] = { "n", 156390 },	-- Chen Stormstout
+					["sourceQuests"] = {
+						57069,	-- Cut Off the Heads
+						57070,	-- Mogu Massacre
+						57072,	-- Yak of All Trades
+					},
+				}),
 				q(30650, {	-- Pandaren Prisoners (A)
 					["provider"] = { "n", 63542 },	-- Elder Tsulan
 					["coord"] = { 54.6, 84.2, 379 },
@@ -612,6 +628,12 @@ _.Zones =
 						i(88063),
 						i(88062),
 					},
+				}),
+				q(57076, {	-- Return to Mistfall
+					["lvl"] = 120,
+					["coord"] = { 55.4, 91.1, 379 },
+					["provider"] = { "n", 156937 },	-- Chen Stormstout
+					["sourceQuest"] = 57075,	-- Liquid Courage
 				}),
 				--q(46342),	-- Return to the Broken Peak
 				--q(30946),	-- Revelations
@@ -985,6 +1007,12 @@ _.Zones =
 						30507,	-- General Nazgrim has Awakened
 						30508,	-- General Nazgrim has Awakened
 					},
+				}),
+				q(57072, {	-- Yak of All Trades
+					["lvl"] = 120,
+					["coord"] = { 58.5, 83.9, 379 },
+					["provider"] = { "n", 157180 },	-- Abandoned Stormstout Kegs
+					["sourceQuest"] = 57071,	-- No Brew Left Behind
 				}),
 				q(30490, {	-- Yakity Yak (this version is not in game)
 					["u"] = 1,
