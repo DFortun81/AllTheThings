@@ -1309,54 +1309,55 @@ _.Zones =
 							13838,	-- Mastery Of The Shield-Breaker
 						},
 					}),
+					-- TODO: verify if these are available to allied races or not
 					q(13706, {	-- Valiant Of Darnassus
 						["coord"] = { 76.3, 19.0, 118 },
-						["races"] = ALLIANCE_ONLY,
+						["races"] = exclude(4, ALLIANCE_ONLY),	-- All but night elf
 						["provider"] = { "n", 33592 },	-- Jaelyne Evensong
 					}),
 					q(13704, {	-- Valiant Of Gnomeregan
 						["coord"] = { 76.5, 19.8, 118 },
-						["races"] = ALLIANCE_ONLY,
+						["races"] = exclude(7, ALLIANCE_ONLY),	-- All but gnome
 						["provider"] = { "n", 33335 },	-- Ambrose Boltspark
 					}),
 					q(13703, {	-- Valiant Of Ironforge
 						["coord"] = { 76.6, 19.5, 118 },
-						["races"] = ALLIANCE_ONLY,
+						["races"] = exclude(3, ALLIANCE_ONLY),	-- All but dwarf
 						["provider"] = { "n", 33312 },	-- Lana Stouthammer
 					}),
 					q(13707, {	-- Valiant Of Orgrimmar
 						["coord"] = { 76.5, 24.6, 118 },
-						["races"] = HORDE_ONLY,
+						["races"] = exclude(2, HORDE_ONLY),	-- All but orc
 						["provider"] = { "n", 33361 },	-- Mokra the Skullcrusher
 					}),
 					q(13708, {	-- Valiant Of Sen'jin
 						["coord"] = { 76.0, 24.5, 118 },
-						["races"] = HORDE_ONLY,
+						["races"] = exclude(8, HORDE_ONLY),	-- All but troll
 						["provider"] = { "n", 33372 },	-- Zul'tore
 					}),
 					q(13711, {	-- Valiant Of Silvermoon
 						["coord"] = { 76.5, 23.9, 118 },
-						["races"] = HORDE_ONLY,
+						["races"] = exclude(10, HORDE_ONLY),	-- All but blood elf
 						["provider"] = { "n", 33379 },	-- Eressea Dawnsinger
 					}),
 					q(13593, {	-- Valiant Of Stormwind
 						["coord"] = { 76.6, 19.1, 118 },
-						["races"] = ALLIANCE_ONLY,
+						["races"] = exclude(1, ALLIANCE_ONLY),	-- All but human
 						["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
 					}),
 					q(13705, {	-- Valiant Of The Exodar
 						["coord"] = { 76.1, 19.1, 118 },
-						["races"] = ALLIANCE_ONLY,
+						["races"] = exclude(11, ALLIANCE_ONLY),	-- All but draenei
 						["provider"] = { "n", 33593 },	-- Colosos
 					}),
 					q(13709, {	-- Valiant Of Thunder Bluff
 						["coord"] = { 76.2, 24.6, 118 },
-						["races"] = HORDE_ONLY,
+						["races"] = exclude(6, HORDE_ONLY),	-- All but tauren
 						["provider"] = { "n", 33403 },	-- Runok Wildmane
 					}),
 					q(13710, {	-- Valiant Of Undercity
 						["coord"] = { 76.5, 24.2, 118 },
-						["races"] = HORDE_ONLY,
+						["races"] = exclude(5, HORDE_ONLY),	-- All but undead
 						["provider"] = { "n", 33373 },	-- Deathstalker Visceri
 					}),
 					q(14112, {	-- What Do You Feed a Yeti, Anyway? (A)
