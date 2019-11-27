@@ -2614,9 +2614,6 @@ _.PVP =
 					}),
 				}),
 				n(-330, {	-- Feet
-					i(49189, {	-- Relentless Gladiator's Blade of Alacrity
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
 					i(41636, {	-- Relentless Gladiator's Boots of Dominance
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
