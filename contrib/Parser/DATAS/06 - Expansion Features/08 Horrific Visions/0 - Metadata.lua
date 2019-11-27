@@ -15,6 +15,11 @@ _.ExpansionFeatures =
 					TODO:: review this section later. This reduces duplication and shows content
 						   in the right areas, but isn't exactly nice to look at
 				]]--
+				ach(14173, {	-- A Mountain of Mementos
+					ach(14172),	-- A Monumental Amount of Mementos
+					ach(14171),	-- Momento Mori
+					ach(14170),	-- Thanks For The Mementos
+				}),
 				ach(14116, {	-- All Bridges Burned
 					crit(1),	-- Faceless Mask of the Burned Bridge
 					crit(2),	-- Stormwind - Burned Bridge
@@ -86,6 +91,12 @@ _.ExpansionFeatures =
 				}),
 				ach(14087, {	-- Stormwind - Long Night
 					["maps"] = { 1470 },
+				}),
+				ach(14169, {	-- Symphony of Masks
+					ach(14165),	-- Masked Soliloquy
+					ach(14166),	-- Masked Duet
+					ach(14167),	-- Masked Trio
+					ach(14168),	-- Masked Quartet
 				}),
 				ach(13996, {	-- The Dark Horde
 					["maps"] = { 1469 },

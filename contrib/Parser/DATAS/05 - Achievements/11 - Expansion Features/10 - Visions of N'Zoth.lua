@@ -6,6 +6,11 @@ _.Achievements =
 {
 	n(-10055, {	-- Expansion Features
 		n(-10071, {	-- Visions of N'Zoth
+			ach(14173, {	-- A Mountain of Mementos
+				ach(14172),	-- A Monumental Amount of Mementos
+				ach(14171),	-- Momento Mori
+				ach(14170),	-- Thanks For The Mementos
+			}),
 			ach(14116, {	-- All Bridges Burned
 				crit(1),	-- Faceless Mask of the Burned Bridge
 				crit(2),	-- Stormwind - Burned Bridge
@@ -54,6 +59,12 @@ _.Achievements =
 			ach(14085),		-- Stormwind - Burned Bridge
 			ach(14086),		-- Stormwind - Daredevil
 			ach(14087),		-- Stormwind - Long Night
+			ach(14169, {	-- Symphony of Masks
+				ach(14165),	-- Masked Soliloquy
+				ach(14166),	-- Masked Duet
+				ach(14167),	-- Masked Trio
+				ach(14168),	-- Masked Quartet
+			}),
 			ach(13996, {	-- The Dark Horde
 				crit(1),	-- Horrific Vision of Orgrimmar
 				crit(2),	-- The Even More Horrific Vision of Orgrimmar
