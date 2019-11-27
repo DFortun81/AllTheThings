@@ -740,6 +740,15 @@ _.NeverImplemented =
 		q(48973),	-- Unused Paragon quest, it seems the active one is #48976, "Supplies From the Argussian Reach"
 		q(48974),	-- Unused Paragon quest, it seems the active one is #48977, "Supplies From the Army of the Light"
 		
+		q(38544),	-- FLAG: Demonsteel Waistguard Crafted
+		q(38546),	-- FLAG: Demonsteel Boots Crafted
+		q(38550),	-- FLAG: Demonsteel Greaves Crafted
+		q(38551),	-- FLAG: Demonsteel Breastplate Crafted
+		q(38543),	-- FLAG: Demonsteel Armguards Crafted
+		q(38545),	-- FLAG: Demonsteel Pauldrons Crafted
+		q(38547),	-- FLAG: Demonsteel Gauntlets Crafted
+		q(38549),	-- FLAG: Demonsteel Helm Crafted
+		
 	--	Professions
 	--	Archaeology
 		q(41867),	-- FLAG - Brann Week 1
