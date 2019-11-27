@@ -13,6 +13,7 @@ _.Achievements =
 			un(18, ach(4627)),	-- Big Love Rocket
 			un(14, ach(2316)),	-- Brutal Nether Drake
 			un(14, ach(6741)),	-- Cataclysmic Gladiator's Twilight Drake
+			un(2, ach(14183)),	-- Conspicuous Consumption
 			ach(13958),		-- Corrupted Gladitor's Proto-Drake (BFA season 4)
 			un(14, ach(11001)),	-- Cruel Gladiator's Storm Dragon
 			un(14, ach(3096)),	-- Deadly Gladiator's Frost Wyrm
