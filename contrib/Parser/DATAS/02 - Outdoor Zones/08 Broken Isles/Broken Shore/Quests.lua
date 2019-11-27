@@ -125,12 +125,6 @@ _.Zones =
 					}),
 				}),
 			--]]
-				q(46832, {	-- Aalgen Point
-					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
-					["provider"] = { "n", 120183 },	-- Commander Chambers
-					["coord"] = { 44.4, 63.0, 646 },
-					["lvl"] = 110,
-				}),
 				q(46268, {	-- A Found Memento
 					["provider"] = { "o", 268478 },	-- Battered Trinket
 					["races"] = ALLIANCE_ONLY,
@@ -142,6 +136,19 @@ _.Zones =
 					["coord"] = { 41.4, 59.4, 646 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
+				}),
+				q(46832, {	-- Aalgen Point
+					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
+					["provider"] = { "n", 120183 },	-- Commander Chambers
+					["coord"] = { 44.4, 63.0, 646 },
+					["lvl"] = 110,
+				}),
+				q(46700, {	-- Armor of the Ancients
+					["coord"] = { 41.1, 59.3, 646 },
+					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+					["repeatable"] = true,
+					["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
+					["requireSkill"] = 164,	-- Blacksmithing
 				}),
 				q(46245, {	-- Begin Construction
 					["sourceQuests"] = { 46286 },	-- Legionfall Supplies
@@ -176,6 +183,54 @@ _.Zones =
 					["provider"] = { "n", 120183 },	-- Commander Chambers
 					["coord"] = { 44.4, 63.1, 646 },
 					["lvl"] = 110,
+				}),
+				q(47007, {	-- Boon of the Mage Tower
+					["coord"] = { 44.6, 63.2, 646 },
+					["repeatable"] = true,
+					["provider"] = { "n", 120183 },	-- Commander Chambers
+					["sourceQuest"] = 46772,	-- The Mage Tower
+				}),
+				q(47008, {	-- Boon of the Mage Tower
+					["coord"] = { 44.6, 63.2, 646 },
+					["repeatable"] = true,
+					["provider"] = { "n", 120183 },	-- Commander Chambers
+					["sourceQuest"] = 46772,	-- The Mage Tower
+				}),
+				q(47009, {	-- Boon of the Mage Tower
+					["coord"] = { 44.6, 63.2, 646 },
+					["repeatable"] = true,
+					["provider"] = { "n", 120183 },	-- Commander Chambers
+					["sourceQuest"] = 46772,	-- The Mage Tower
+				}),
+				q(47010, {	-- Boon of the Mage Tower
+					["coord"] = { 44.6, 63.2, 646 },
+					["repeatable"] = true,
+					["provider"] = { "n", 120183 },	-- Commander Chambers
+					["sourceQuest"] = 46772,	-- The Mage Tower
+				}),
+				q(47012, {	-- Boon of the Nether Disruptor
+					["coord"] = { 44.6, 63.2, 646 },
+					["repeatable"] = true,
+					["provider"] = { "n", 120183 },	-- Commander Chambers
+					["sourceQuest"] = 46774,	-- The Nether Disruptor
+				}),
+				q(47014, {	-- Boon of the Nether Disruptor
+					["coord"] = { 44.6, 63.2, 646 },
+					["repeatable"] = true,
+					["provider"] = { "n", 120183 },	-- Commander Chambers
+					["sourceQuest"] = 46774,	-- The Nether Disruptor
+				}),
+				q(47015, {	-- Boon of the Nether Disruptor
+					["coord"] = { 44.6, 63.2, 646 },
+					["repeatable"] = true,
+					["provider"] = { "n", 120183 },	-- Commander Chambers
+					["sourceQuest"] = 46774,	-- The Nether Disruptor
+				}),
+				q(47016, {	-- Boon of the Nether Disruptor
+					["coord"] = { 44.6, 63.2, 646 },
+					["repeatable"] = true,
+					["provider"] = { "n", 120183 },	-- Commander Chambers
+					["sourceQuest"] = 46774,	-- The Nether Disruptor
 				}),
 				q(46244, {	-- Cathedral of Eternal Night: Altar of the Aegis
 					["sourceQuests"] = { 46286 },	-- Legionfall Supplies
@@ -214,11 +269,28 @@ _.Zones =
 					["coord"] = { 44.4, 63.4, 646 },
 					["lvl"] = 110,
 				}),
+				q(46804, {	-- Fashion History and a Philosophy of Style
+					["coord"] = { 41.1, 59.3, 646 },
+					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+					["sourceQuest"] = 46696,	-- The Legend of the Four Hammers
+				}),
 				q(46501, {	-- Grave Robbin'
 					["sourceQuests"] = { 46499 },	-- Spiders, Huh?
 					["provider"] = { "n", 119886 },	-- Excavator Karla
 					["coord"] = { 39.6, 71.7, 646 },
 					["lvl"] = 110,
+				}),
+				q(46701, {	-- Hammer of Forgotten Heroes
+					["coord"] = { 41.1, 59.3, 646 },
+					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+					["repeatable"] = true,
+					["requireSkill"] = 164,	-- Blacksmithing
+					["sourceQuests"] = {
+						46700,	-- Armor of the Ancients
+						46698,	-- The Dragonhunter
+						46697,	-- The Godfighter
+						46699,	-- The Hellslayer
+					},
 				}),
 				q(46252, {	-- Intolerable Infestation
 					["sourceQuests"] = { 46248 },	-- Self-Fulfilling Prophecy
@@ -361,12 +433,39 @@ _.Zones =
 					["coord"] = { 44.6, 63.2, 646 },
 					["lvl"] = 110,
 				}),
+				q(46698, {	-- The Dragonhunter
+					["coord"] = { 41.1, 59.3, 646 },
+					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+					["repeatable"] = true,
+					["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
+					["requireSkill"] = 164,	-- Blacksmithing
+				}),
+				q(46697, {	-- The Godfighter
+					["coord"] = { 41.1, 59.3, 646 },
+					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+					["repeatable"] = true,
+					["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
+					["requireSkill"] = 164,	-- Blacksmithing
+				}),
+				q(46699, {	-- The Hellslayer
+					["coord"] = { 41.1, 59.3, 646 },
+					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+					["repeatable"] = true,
+					["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
+					["requireSkill"] = 164,	-- Blacksmithing
+				}),
 				q(46282, {	-- The King's Path
 					["sourceQuests"] = { 47112 },	-- Lost Souls
 					["provider"] = { "n", 121237 },	-- Anduin Wrynn
 					["coord"] = { 58.2, 26.6, 646 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
+				}),
+				q(46696, {	-- The Legend of the Four Hammers
+					["coord"] = { 41.2, 59.4, 646 },
+					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+					["repeatable"] = true,
+					["sourceQuest"] = 46774,	-- The Nether Disruptor
 				}),
 				q(46666, {	-- The Motherlode
 					["sourceQuests"] = { 46511 },	-- We're Treasure Hunters
@@ -595,7 +694,6 @@ _.Zones =
 				q(45021),	-- Answers Unknown
 				q(48641),	-- Armies of Legionfall
 				q(44217),	-- Armor Fit For A Deathlord
-				q(46700),	-- Armor of the Ancients
 				q(46734),	-- Assault on Broken Shore
 				q(45844, {	-- Avocation of Antonidas
 					["races"] = ALLIANCE_ONLY,
@@ -608,14 +706,6 @@ _.Zones =
 				q(43962),	-- Blades of Destiny
 				q(43468),	-- Blood for the Wolfe
 				q(46237),	-- Bloodbringer's Missive
-				q(47008),	-- Boon of the Mage Tower
-				q(47007),	-- Boon of the Mage Tower
-				q(47010),	-- Boon of the Mage Tower
-				q(47009),	-- Boon of the Mage Tower
-				q(47014),	-- Boon of the Nether Disruptor
-				q(47012),	-- Boon of the Nether Disruptor
-				q(47016),	-- Boon of the Nether Disruptor
-				q(47015),	-- Boon of the Nether Disruptor
 				q(45765),	-- Brothers and Sisters
 				q(40392),	-- Call of the Marksman
 				q(44550),	-- Called to Acherus
@@ -682,7 +772,6 @@ _.Zones =
 				q(44270),	-- Eye of Azshara
 				q(44282),	-- Eye of Azshara: The Frozen Soul
 				q(41924),	-- Fangs of the Devourer
-				q(46804),	-- Fashion History and a Philosophy of Style
 				q(47040),	-- Fate Sealed
 				q(45574),	-- Fel Ingredients
 				q(45555),	-- Felbound Beasts
@@ -702,7 +791,6 @@ _.Zones =
 				q(46125),	-- Furthering Knowledge
 				q(46501),	-- Grave Robbin'
 				q(46744),	-- Greater Power for Greater Threats
-				q(46701),	-- Hammer of Forgotten Heroes
 				q(46320),	-- Hope For a Cure
 				q(45831),	-- Hunter
 				q(40136),	-- Immaculate Stonehide Leather
@@ -842,7 +930,6 @@ _.Zones =
 				q(47126),	-- The Deceiver
 				q(47129),	-- The Deceiver
 				q(47128),	-- The Deceiver
-				q(46698),	-- The Dragonhunter
 				q(47122),	-- The Fallen Avatar
 				q(47123),	-- The Fallen Avatar
 				q(47125),	-- The Fallen Avatar
@@ -852,14 +939,11 @@ _.Zones =
 				q(42484),	-- The Firstborn Rises
 				q(43686),	-- The Fourth Horseman
 				q(45526),	-- The God-Queen's Fury
-				q(46697),	-- The Godfighter
-				q(46699),	-- The Hellslayer
 				q(45416, {	-- The Highlord's Return
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42537),	-- The King Rises
 				q(46684),	-- The Legend of the Elderhide
-				q(46696),	-- The Legend of the Four Hammers
 				q(46678),	-- The Legend of the Threads
 				q(46690),	-- The Legend of the Wardenscale
 				q(43545),	-- The Lord of Black Rook Hold

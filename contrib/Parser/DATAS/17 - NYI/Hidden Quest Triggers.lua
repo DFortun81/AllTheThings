@@ -757,6 +757,17 @@ _.NeverImplemented =
 		q(45302),	-- 7.1.5 Class Hall - Brawlers Missions - Has Completed Any Brawlers Mission with Overmax - Tracking Quest — triggered when doing my first brawl for BFA
 		q(48973),	-- Unused Paragon quest, it seems the active one is #48976, "Supplies From the Argussian Reach"
 		q(48974),	-- Unused Paragon quest, it seems the active one is #48977, "Supplies From the Army of the Light"
+		q(46709),	-- Broken Isles - Ready for Crafted Legendary flag
+		q(47096),	-- Broken Isles - Choice: Blacksmithing
+		q(47092),	-- Broken Isles - Working on Crafted Legendary
+		q(46871),	-- Broken Isles - 7.2 Broken Shore - Buildings - Nether Disruptor - Buff Activiation - Tracking Quest
+		q(46283),	-- Broken Isles - 7.2 Broken Shore - Buildings - Mage Tower - Personal Reward Received
+		q(46793),	-- Broken Isles - 7.2 Broken Shore - Buildings - Mage Tower - Buff Activation - Tracking Quest
+		q(46870),	-- Broken Isles - 7.2 Broken Shore - Buildings - Command Center - Buff Activation - Tracking Quest
+		q(47021),	-- Broken Isles - 7.2 Broken Shore - Buildings - Command Center - Buff - Follower Token - Tracking
+		q(47053),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 3 - Tracking
+		q(47044),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 2 - Tracking
+		q(47038),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 1 - Tracking
 		
 		q(38544),	-- FLAG: Demonsteel Waistguard Crafted
 		q(38546),	-- FLAG: Demonsteel Boots Crafted
