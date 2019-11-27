@@ -314,6 +314,24 @@ _.NeverImplemented =
 		q(29702),	-- Gorrok TRACKING
 		q(29697),	-- Rivett TRACKING
 		q(29704),	-- Shokia TRACKING
+		q(37212),	-- FLAG - Proving Grounds - Damage Bronze
+		q(33089),	-- FLAG - Proving Grounds - Damage Bronze
+		q(37214),	-- FLAG - Proving Grounds - Damage Gold
+		q(33091),	-- FLAG - Proving Grounds - Damage Gold
+		q(33090),	-- FLAG - Proving Grounds - Damage Silver
+		q(37213),	-- FLAG - Proving Grounds - Damage Silver
+		q(37218),	-- FLAG - Proving Grounds - Healer Bronze
+		q(33095),	-- FLAG - Proving Grounds - Healer Bronze
+		q(37220),	-- FLAG - Proving Grounds - Healer Gold
+		q(33097),	-- FLAG - Proving Grounds - Healer Gold
+		q(33096),	-- FLAG - Proving Grounds - Healer Silver
+		q(37219),	-- FLAG - Proving Grounds - Healer Silver
+		q(33092),	-- FLAG - Proving Grounds - Tank Bronze
+		q(37215),	-- FLAG - Proving Grounds - Tank Bronze
+		q(33094),	-- FLAG - Proving Grounds - Tank Gold
+		q(37217),	-- FLAG - Proving Grounds - Tank Gold
+		q(37216),	-- FLAG - Proving Grounds - Tank Silver
+		q(33093),	-- FLAG - Proving Grounds - Tank Silver
 		
 	--	DUNGEONS
 		q(35316),	-- Gate of the Setting Sun Reward Quest
@@ -748,6 +766,14 @@ _.NeverImplemented =
 		q(38545),	-- FLAG: Demonsteel Pauldrons Crafted
 		q(38547),	-- FLAG: Demonsteel Gauntlets Crafted
 		q(38549),	-- FLAG: Demonsteel Helm Crafted
+		q(38976),	-- FLAG: Undying Silkweave Bracers
+		q(38977),	-- FLAG: Undying Silkweave Cinch Crafted
+		q(38978),	-- FLAG: Undying Silkweave Epaulets Crafted
+		q(38980),	-- FLAG: Undying Silkweave Gloves Crafted
+		q(38981),	-- FLAG: Undying Silkweave Hood Crafted
+		q(38982),	-- FLAG: Undying Silkweave Pantaloons Crafted
+		q(38983),	-- FLAG: Undying Silkweave Robe Crafted
+		q(38979),	-- FLAG: Undying Silkweave Slippers Crafted
 		
 	--	Professions
 	--	Archaeology
@@ -782,7 +808,7 @@ _.NeverImplemented =
 	--	q(),	-- Ana-Mouz killID
 	--	q(),	-- Ana-Mouz bonus roll
 	--	q(),	-- Apocron killID
-	--	q(),	-- Apocron bonus roll
+		q(47087),	-- Apocron bonus roll
 		q(47085),	-- Brutallus killID
 		q(47088),	-- Brutallus bonus roll
 		q(44502),	-- Calamir killID
@@ -808,7 +834,7 @@ _.NeverImplemented =
 		q(44510),	-- The Soultakers killID
 		q(44905),	-- The Soultakers bonus roll
 	--	q(),	-- Withered J'im killID
-	--	q(),	-- Withered J'im bonus roll
+		q(44906),	-- Withered J'im bonus roll
 		
 	--	Invasions
 		q(47065),	-- Highmountain Invasion / Fel Commander Erixtol Kill
