@@ -393,52 +393,52 @@ _.Zones =
 					}),
 					q(13689, {	-- A Valiant Of Darnassus
 						["coord"] = { 76.5, 19.4, 118 },
-						["races"] = ALLIANCE_ONLY,
+						["races"] = { 4 },	-- Night Elf
 						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13688, {	-- A Valiant Of Gnomeregan
 						["coord"] = { 76.5, 19.4, 118 },
-						["races"] = ALLIANCE_ONLY,
+						["races"] = { 7 },	-- Gnome
 						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13685, {	-- A Valiant Of Ironforge
 						["coord"] = { 76.5, 19.4, 118 },
-						["races"] = ALLIANCE_ONLY,
+						["races"] = { 3 },	-- Dwarf
 						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13691, {	-- A Valiant Of Orgrimmar
 						["coord"] = { 76.3, 24.4, 118 },
-						["races"] = HORDE_ONLY,
+						["races"] = { 2 },	-- Orc
 						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 					}),
 					q(13693, {	-- A Valiant Of Sen'jin
 						["coord"] = { 76.3, 24.4, 118 },
-						["races"] = HORDE_ONLY,
+						["races"] = { 8 },	-- Troll
 						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 					}),
 					q(13696, {	-- A Valiant Of Silvermoon
 						["coord"] = { 76.3, 24.4, 118 },
-						["races"] = HORDE_ONLY,
+						["races"] = { 10 },	-- Blood Elf
 						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 					}),
 					q(13684, {	-- A Valiant Of Stormwind
 						["coord"] = { 76.5, 19.4, 118 },
-						["races"] = ALLIANCE_ONLY,
+						["races"] = { 1 },	-- Human
 						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13690, {	-- A Valiant Of The Exodar
 						["coord"] = { 76.5, 19.4, 118 },
-						["races"] = ALLIANCE_ONLY,
+						["races"] = { 11 },	-- Draenei
 						["provider"] = { "n", 33625 },	-- Arcanist Taelis
 					}),
 					q(13694, {	-- A Valiant Of Thunder Bluff
 						["coord"] = { 76.3, 24.4, 118 },
-						["races"] = HORDE_ONLY,
+						["races"] = { 6 },	-- Tauren
 						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 					}),
 					q(13695, {	-- A Valiant Of Undercity
 						["coord"] = { 76.3, 24.4, 118 },
-						["races"] = HORDE_ONLY,
+						["races"] = { 5 },	-- Undead
 						["provider"] = { "n", 33542 },	-- Magister Edien Sunhollow
 					}),
 					q(13749, {	-- A Valiant's Field Training (A)
