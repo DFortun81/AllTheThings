@@ -790,6 +790,8 @@ _.NeverImplemented =
 		q(44046),	-- Hunter Order Hall - Marksmanship Chosen
 		q(40620),	-- Hunter Order Hall - Marksmanship Chosen
 		q(44368),	-- Hunter Order Hall - Marksmanship Chosen
+		q(43158),	-- Hunter Order Hall - conversation flag for a hidden romance quest
+		q(43837),	-- Hunter Order Hall - tutorial - combat ally unlocked
 		
 		q(38544),	-- FLAG: Demonsteel Waistguard Crafted
 		q(38546),	-- FLAG: Demonsteel Boots Crafted
