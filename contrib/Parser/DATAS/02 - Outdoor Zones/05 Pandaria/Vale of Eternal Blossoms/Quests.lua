@@ -111,7 +111,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32678, {	-- Thunder Calls (H)
+					["coord"] = { 62.8, 28.0, 390 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 64566 },	-- Sunwalker Dezco
 				}),
 				q(31380, {	-- Trial At The Temple of the White Tiger (A)
 					["coord"] = { 84.6, 63.6, 390 },

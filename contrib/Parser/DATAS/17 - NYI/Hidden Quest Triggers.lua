@@ -332,6 +332,18 @@ _.NeverImplemented =
 		q(37217),	-- FLAG - Proving Grounds - Tank Gold
 		q(37216),	-- FLAG - Proving Grounds - Tank Silver
 		q(33093),	-- FLAG - Proving Grounds - Tank Silver
+		q(31123),	-- Townlong Steppes - Chose Arms Warrior
+		q(31124),	-- Townlong Steppes - Chose Brewmaster
+		q(31050),	-- Townlong Steppes - Chose Fire Mage
+		q(31051),	-- Townlong Steppes - Chose Frost Mage
+		q(31052),	-- Townlong Steppes - Chose Priest
+		q(31122),	-- Townlong Steppes - Chose Prot Warrior
+		q(31053),	-- Townlong Steppes - Tracking Event: Started Shado-Pan Dailies
+		q(31125),	-- Townlong Steppes - Unlocked Chao
+		q(31126),	-- Townlong Steppes - Unlocked Lao-Chen
+		q(31054),	-- Townlong Steppes - Unlocked Yalia Sagewhisper
+		q(31607),	-- Townlong Steppes - Tracking Event: Finished Spiteful Spirits & Hatred Becomes Us
+		q(30936),	-- Townlong Steppes - unused. Triggers when turning in "Behind the Battlefront"
 		
 	--	DUNGEONS
 		q(35316),	-- Gate of the Setting Sun Reward Quest
