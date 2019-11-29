@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(122, {	-- Isle of Quel'Danas
 			n(-2, {	-- Vendors
-			-- TO DO: karynna & olus
+			-- TO DO: Olus
 				n(25032, {	-- Eldara Dawnrunner <Shattered Sun Quartermaster>
 					["coord"] = { 47.2, 30.7, 122 },
 					["g"] = {
@@ -52,120 +52,260 @@ _.Zones =
 				n(26090, {	-- Karynna <Exotic Gear Purveyor>
 					["coord"] = { 49.6, 40.5, 122 },
 					["g"] = {
-						i(29760, {	-- Helm of the Fallen Champion [Rogue, Shaman, Paladin]
-							i(25830),	-- Gladiator's Leather Helm
-							i(25998),	-- Gladiator's Linked Helm
-							i(27471),	-- Gladiator's Mail Helm
-							i(31400),	-- Gladiator's Ringmail Helm
-							i(27704),	-- Gladiator's Lamellar Helm
-							i(31616),	-- Gladiator's Ornamented Headcover
-							i(27881),	-- Gladiator's Scaled Helm
+						i(28334, {	-- Gladiator's Chain Armor
+							["cost"] = { { "i", 29755, 1 }, },	-- Chestguard of the Fallen Hero
 						}),
-						i(29761, {	-- Helm of the Fallen Defender [Priest, Druid, Warrior]
-							i(31410),	-- Gladiator's Mooncloth Hood
-							i(27708),	-- Gladiator's Satin Hood
-							i(28127),	-- Gladiator's Dragonhide Helm
-							i(31376),	-- Gladiator's Kodohide Helm
-							i(28137),	-- Gladiator's Wyrmhide Helm
-							i(24545),	-- Gladiator's Plate Helm
+						i(28335, {	-- Gladiator's Chain Gauntlets
+							["cost"] = { { "i", 29756, 1 }, },	-- Gloves of the Fallen Hero
 						}),
-						i(29759, {	-- Helm of the Fallen Hero [Mage, Warlock, Hunter]
-							i(25855),	-- Gladiator's Silk Cowl
-							i(24553),	-- Gladiator's Dreadweave Hood
-							i(30187),	-- Gladiator's Felweave Cowl
-							i(28331),	-- Gladiator's Chain Helm
+						i(28331, {	-- Gladiator's Chain Helm
+							["cost"] = { { "i", 29759, 1 }, },	-- Helm of the Fallen Hero
 						}),
-						i(29763, {	-- Pauldrons of the Fallen Champion [Rogue, Shaman, Paladin]
-							i(25832),	-- Gladiator's Leather Spaulders
-							i(25999),	-- Gladiator's Linked Spaulders
-							i(27473),	-- Gladiator's Mail Spaulders
-							i(31407),	-- Gladiator's Ringmail Spaulders
-							i(27706),	-- Gladiator's Lamellar Shoulders
-							i(31619),	-- Gladiator's Ornamented Spaulders
-							i(27883),	-- Gladiator's Scaled Shoulders
+						i(28332, {	-- Gladiator's Chain Leggings
+							["cost"] = { { "i", 29765, 1 }, },	-- Leggings of the Fallen Hero
 						}),
-						i(29764, {	-- Pauldrons of the Fallen Defender [Priest, Druid, Warrior]
-							i(27710),	-- Gladiator's Satin Mantle
-							i(31412),	-- Gladiator's Mooncloth Mantle
-							i(28129),	-- Gladiator's Dragonhide Spaulders
-							i(31378),	-- Gladiator's Kodohide Spaulders
-							i(28139),	-- Gladiator's Wyrmhide Spaulders
-							i(24546),	-- Gladiator's Plate Shoulders
+						i(28333, {	-- Gladiator's Chain Spaulders
+							["cost"] = { { "i", 29762, 1 }, },	-- Pauldrons of the Fallen Hero
 						}),
-						i(29762, {	-- Pauldrons of the Fallen Hero [Mage, Warlock, Hunter]
-							i(25854),	-- Gladiator's Silk Amice
-							i(24554),	-- Gladiator's Dreadweave Mantle
-							i(30186),	-- Gladiator's Felweave Amice
-							i(28333),	-- Gladiator's Chain Spaulders
+						i(28126, {	-- Gladiator's Dragonhide Gloves
+							["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
 						}),
-						i(29754, {	-- Chestguard of the Fallen Champion [Rogue, Shaman, Paladin]
-							i(25831),	-- Gladiator's Leather Tunic
-							i(25997),	-- Gladiator's Linked Armor
-							i(27469),	-- Gladiator's Mail Armor
-							i(31396),	-- Gladiator's Ringmail Armor
-							i(27702),	-- Gladiator's Lamellar Chestpiece
-							i(31613),	-- Gladiator's Ornamented Chestguard
-							i(27879),	-- Gladiator's Scaled Chestpiece
+						i(28127, {	-- Gladiator's Dragonhide Helm
+							["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
 						}),
-						i(29753, {	-- Chestguard of the Fallen Defender [Priest, Druid, Warrior]
-							i(27711),	-- Gladiator's Satin Robe
-							i(31413),	-- Gladiator's Mooncloth Robe
-							i(28130),	-- Gladiator's Dragonhide Tunic
-							i(31379),	-- Gladiator's Kodohide Tunic
-							i(28140),	-- Gladiator's Wyrmhide Tunic
-							i(24544),	-- Gladiator's Plate Chestpiece
+						i(28128, {	-- Gladiator's Dragonhide Legguards
+							["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
 						}),
-						i(29755, {	-- Chestguard of the Fallen Hero [Mage, Warlock, Hunter]
-							i(25856),	-- Gladiator's Silk Raiment
-							i(24552),	-- Gladiator's Dreadweave Robe
-							i(30200),	-- Gladiator's Felweave Raiment
-							i(28334),	-- Gladiator's Chain Armor
+						i(28129, {	-- Gladiator's Dragonhide Spaulders
+							["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
 						}),
-						i(29757, {	-- Gloves of the Fallen Champion [Rogue, Shaman, Paladin]
-							i(25834),	-- Gladiator's Leather Gloves
-							i(26000),	-- Gladiator's Linked Gauntlets
-							i(27470),	-- Gladiator's Mail Gauntlets
-							i(31397),	-- Gladiator's Ringmail Gauntlets
-							i(27703),	-- Gladiator's Lamellar Gauntlets
-							i(31614),	-- Gladiator's Ornamented Gloves
-							i(27880),	-- Gladiator's Scaled Gauntlets
+						i(28130, {	-- Gladiator's Dragonhide Tunic
+							["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
 						}),
-						i(29758, {	-- Gloves of the Fallen Defender [Priest, Druid, Warrior]
-							i(27707),	-- Gladiator's Satin Gloves
-							i(31409),	-- Gladiator's Mooncloth Gloves
-							i(28126),	-- Gladiator's Dragonhide Gloves
-							i(31375),	-- Gladiator's Kodohide Gloves
-							i(28136),	-- Gladiator's Wyrmhide Gloves
-							i(24549),	-- Gladiator's Plate Gauntlets
+						i(24556, {	-- Gladiator's Dreadweave Gloves
+							["cost"] = { { "i", 29756, 1 }, },	-- Gloves of the Fallen Hero
 						}),
-						i(29756, {	-- Gloves of the Fallen Hero [Mage, Warlock, Hunter]
-							i(25857),	-- Gladiator's Silk Handguards
-							i(30188),	-- Gladiator's Felweave Handguards
-							i(24556),	-- Gladiator's Dreadweave Gloves
-							i(28335),	-- Gladiator's Chain Gauntlets
+						i(24553, {	-- Gladiator's Dreadweave Hood
+							["cost"] = { { "i", 29759, 1 }, },	-- Helm of the Fallen Hero
 						}),
-						i(29766, {	-- Leggings of the Fallen Champion [Rogue, Shaman, Paladin]
-							i(25833),	-- Gladiator's Leather Legguards
-							i(26001),	-- Gladiator's Linked Leggings
-							i(27472),	-- Gladiator's Mail Leggings
-							i(31406),	-- Gladiator's Ringmail Leggings
-							i(27705),	-- Gladiator's Lamellar Legguards
-							i(31618),	-- Gladiator's Ornamented Legplates
-							i(27882),	-- Gladiator's Scaled Legguards
+						i(24555, {	-- Gladiator's Dreadweave Leggings
+							["cost"] = { { "i", 29765, 1 }, },	-- Leggings of the Fallen Hero
 						}),
-						i(29767, {	-- Leggings of the Fallen Defender [Priest, Druid, Warrior]
-							i(27709),	-- Gladiator's Satin Leggings
-							i(31411),	-- Gladiator's Mooncloth Leggings
-							i(28128),	-- Gladiator's Dragonhide Legguards
-							i(31377),	-- Gladiator's Kodohide Legguards
-							i(28138),	-- Gladiator's Wyrmhide Legguards
-							i(24547),	-- Gladiator's Plate Legguards
+						i(24554, {	-- Gladiator's Dreadweave Mantle
+							["cost"] = { { "i", 29762, 1 }, },	-- Pauldrons of the Fallen Hero
 						}),
-						i(29765, {	-- Leggings of the Fallen Hero [Mage, Warlock, Hunter]
-							i(25858),	-- Gladiator's Silk Trousers
-							i(30201),	-- Gladiator's Felweave Trousers
-							i(24555),	-- Gladiator's Dreadweave Leggings
-							i(28332),	-- Gladiator's Chain Leggings
+						i(24552, {	-- Gladiator's Dreadweave Robe
+							["cost"] = { { "i", 29755, 1 }, },	-- Chestguard of the Fallen Hero
+						}),
+						i(30186, {	-- Gladiator's Felweave Amice
+							["cost"] = { { "i", 29762, 1 }, },	-- Pauldrons of the Fallen Hero
+						}),
+						i(30187, {	-- Gladiator's Felweave Cowl
+							["cost"] = { { "i", 29759, 1 }, },	-- Helm of the Fallen Hero
+						}),
+						i(30188, {	-- Gladiator's Felweave Handguards
+							["cost"] = { { "i", 29756, 1 }, },	-- Gloves of the Fallen Hero
+						}),
+						i(30200, {	-- Gladiator's Felweave Raiment
+							["cost"] = { { "i", 29755, 1 }, },	-- Chestguard of the Fallen Hero
+						}),
+						i(30201, {	-- Gladiator's Felweave Trousers
+							["cost"] = { { "i", 29765, 1 }, },	-- Leggings of the Fallen Hero
+						}),
+						i(31375, {	-- Gladiator's Kodohide Gloves
+							["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+						}),
+						i(31376, {	-- Gladiator's Kodohide Helm
+							["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+						}),
+						i(31377, {	-- Gladiator's Kodohide Legguards
+							["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+						}),
+						i(31378, {	-- Gladiator's Kodohide Spaulders
+							["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+						}),
+						i(31379, {	-- Gladiator's Kodohide Tunic
+							["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+						}),
+						i(27702, {	-- Gladiator's Lamellar Chestpiece
+							["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+						}),
+						i(27703, {	-- Gladiator's Lamellar Gauntlets
+							["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+						}),
+						i(27704, {	-- Gladiator's Lamellar Helm
+							["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+						}),
+						i(27705, {	-- Gladiator's Lamellar Legguards
+							["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+						}),
+						i(27706, {	-- Gladiator's Lamellar Shoulders
+							["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+						}),
+						i(25834, {	-- Gladiator's Leather Gloves
+							["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+						}),
+						i(25830, {	-- Gladiator's Leather Helm
+							["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+						}),
+						i(25833, {	-- Gladiator's Leather Legguards
+							["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+						}),
+						i(25832, {	-- Gladiator's Leather Spaulders
+							["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+						}),
+						i(25831, {	-- Gladiator's Leather Tunic
+							["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+						}),
+						i(25997, {	-- Gladiator's Linked Armor
+							["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+						}),
+						i(26000, {	-- Gladiator's Linked Gauntlets
+							["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+						}),
+						i(25998, {	-- Gladiator's Linked Helm
+							["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+						}),
+						i(26001, {	-- Gladiator's Linked Leggings
+							["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+						}),
+						i(25999, {	-- Gladiator's Linked Spaulders
+							["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+						}),
+						i(27469, {	-- Gladiator's Mail Armor
+							["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+						}),
+						i(27470, {	-- Gladiator's Mail Gauntlets
+							["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+						}),
+						i(27471, {	-- Gladiator's Mail Helm
+							["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+						}),
+						i(27472, {	-- Gladiator's Mail Leggings
+							["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+						}),
+						i(27473, {	-- Gladiator's Mail Spaulders
+							["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+						}),
+						i(31409, {	-- Gladiator's Mooncloth Gloves
+							["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+						}),
+						i(31410, {	-- Gladiator's Mooncloth Hood
+							["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+						}),
+						i(31411, {	-- Gladiator's Mooncloth Leggings
+							["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+						}),
+						i(31412, {	-- Gladiator's Mooncloth Mantle
+							["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+						}),
+						i(31413, {	-- Gladiator's Mooncloth Robe
+							["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+						}),
+						i(31613, {	-- Gladiator's Ornamented Chestguard
+							["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+						}),
+						i(31614, {	-- Gladiator's Ornamented Gloves
+							["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+						}),
+						i(31616, {	-- Gladiator's Ornamented Headcover
+							["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+						}),
+						i(31618, {	-- Gladiator's Ornamented Legplates
+							["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+						}),
+						i(31619, {	-- Gladiator's Ornamented Spaulders
+							["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+						}),
+						i(24544, {	-- Gladiator's Plate Chestpiece
+							["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+						}),
+						i(24549, {	-- Gladiator's Plate Gauntlets
+							["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+						}),
+						i(24545, {	-- Gladiator's Plate Helm
+							["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+						}),
+						i(24547, {	-- Gladiator's Plate Legguards
+							["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+						}),
+						i(24546, {	-- Gladiator's Plate Shoulders
+							["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+						}),
+						i(31396, {	-- Gladiator's Ringmail Armor
+							["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+						}),
+						i(31397, {	-- Gladiator's Ringmail Gauntlets
+							["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+						}),
+						i(31400, {	-- Gladiator's Ringmail Helm
+							["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+						}),
+						i(31406, {	-- Gladiator's Ringmail Leggings
+							["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+						}),
+						i(31407, {	-- Gladiator's Ringmail Spaulders
+							["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+						}),
+						i(27707, {	-- Gladiator's Satin Gloves
+							["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+						}),
+						i(27708, {	-- Gladiator's Satin Hood
+							["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+						}),
+						i(27709, {	-- Gladiator's Satin Leggings
+							["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+						}),
+						i(27710, {	-- Gladiator's Satin Mantle
+							["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+						}),
+						i(27711, {	-- Gladiator's Satin Robe
+							["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+						}),
+						i(27879, {	-- Gladiator's Scaled Chestpiece
+							["cost"] = { { "i", 29754, 1 }, },	-- Chestguard of the Fallen Champion
+						}),
+						i(27880, {	-- Gladiator's Scaled Gauntlets
+							["cost"] = { { "i", 29757, 1 }, },	-- Gloves of the Fallen Champion
+						}),
+						i(27881, {	-- Gladiator's Scaled Helm
+							["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
+						}),
+						i(27882, {	-- Gladiator's Scaled Legguards
+							["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
+						}),
+						i(27883, {	-- Gladiator's Scaled Shoulders
+							["cost"] = { { "i", 29763, 1 }, },	-- Pauldrons of the Fallen Champion
+						}),
+						i(25854, {	-- Gladiator's Silk Amice
+							["cost"] = { { "i", 29762, 1 }, },	-- Pauldrons of the Fallen Hero
+						}),
+						i(25855, {	-- Gladiator's Silk Cowl
+							["cost"] = { { "i", 29759, 1 }, },	-- Helm of the Fallen Hero
+						}),
+						i(25857, {	-- Gladiator's Silk Handguards
+							["cost"] = { { "i", 29756, 1 }, },	-- Gloves of the Fallen Hero
+						}),
+						i(25856, {	-- Gladiator's Silk Raiment
+							["cost"] = { { "i", 29755, 1 }, },	-- Chestguard of the Fallen Hero
+						}),
+						i(25858, {	-- Gladiator's Silk Trousers
+							["cost"] = { { "i", 29765, 1 }, },	-- Leggings of the Fallen Hero
+						}),
+						i(28136, {	-- Gladiator's Wyrmhide Gloves
+							["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+						}),
+						i(28137, {	-- Gladiator's Wyrmhide Helm
+							["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+						}),
+						i(28138, {	-- Gladiator's Wyrmhide Legguards
+							["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
+						}),
+						i(28139, {	-- Gladiator's Wyrmhide Spaulders
+							["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+						}),
+						i(28140, {	-- Gladiator's Wyrmhide Tunic
+							["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
 						}),
 					},
 				}),
