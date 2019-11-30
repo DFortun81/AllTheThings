@@ -10,14 +10,35 @@ _.Zones =
 					crit(9, {	-- Hisek the Swarmkeeper
 						["sourceQuest"] = 31439,	-- Dropping Our Signal
 					}),
-					crit(3),		-- Iyyokuk the Lucid
-					crit(6),		-- Ka'roz the Locust
-					crit(4),		-- Kaz'tik the Manipulator
-					crit(1),		-- Kil'ruk the Wind-Reaver
-					crit(5),		-- Korven the Prime
-					crit(2),		-- Malik the Unscathed
-					crit(7),		-- Rik'kal the Dissector
-					crit(8),		-- Skeer the Bloodseeker
+					crit(3, {	-- Iyyokuk the Lucid
+						["sourceQuest"] = 31085,	-- Fires and Fears of Old
+					}),
+					crit(6, {	-- Ka'roz the Locust
+						["sourceQuest"] = 31354,	-- Mazu's Bounty
+					}),
+					crit(4, {	-- Kaz'tik the Manipulator
+						["sourceQuests"] = {
+							31398,	-- Falling to Pieces
+							-- TODO: verify below
+							31092,	-- Feed or Be Eaten
+							31359,	-- The Kunchong Whisperer
+						},
+					}),
+					crit(1, {	-- Kil'ruk the Wind-Reaver
+						["sourceQuest"] = 31006,	-- The Klaxxi Council
+					}),
+					crit(5, {	-- Korven the Prime
+						["sourceQuest"] = 31026,	-- The Root of the Problem
+					}),
+					crit(2, {	-- Malik the Unscathed
+						["sourceQuest"] = 31010,	-- In Her Clutch
+					}),
+					crit(7, {	-- Rik'kal the Dissector
+						["sourceQuest"] = 31606,	-- The Dissector Wakens
+					}),
+					crit(8, {	-- Skeer the Bloodseeker
+						["sourceQuest"] = 31179,	-- The Scent of Blood
+					}),
 					crit(10, {	-- Xaril the Poisoned Mind
 						["sourceQuest"] = 31211,	-- The Poisoned Mind
 					}),
@@ -35,6 +56,23 @@ _.Zones =
 							["cr"] = 66739,	-- Wastewalker Shu <Grand Master Pet Tamer>
 						}),
 					},
+				}),
+				ach(6540, {		-- Dread Haste Makes Dread Waste
+					crit(1, {	-- The First Paragons
+						["sourceQuest"] = 31066,	-- A Cry From Darkness
+					}),
+					crit(2, {	-- The Might of the Klaxxi
+						["sourceQuests"] = {
+							31026,	-- The Root of the Problem
+							-- TODO: given the context of this criteria, you probably need to free Skeer, Rik'kal, Malik, Korven and Kaz'tik
+						},
+					}),
+					crit(3, {	-- Taste of Amber
+						["sourceQuest"] = 31086,	-- Blood of Ancients
+					}),
+					crit(4, {	-- Like a Deck Boss
+						["sourceQuest"] = 31354,	-- Mazu's Bounty
+					}),
 				}),
 				ach(7284, {	-- Is Another Man's Treasure
 					["collectible"] = false,

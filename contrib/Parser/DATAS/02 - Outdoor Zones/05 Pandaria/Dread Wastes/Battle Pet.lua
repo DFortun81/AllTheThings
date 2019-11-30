@@ -6,22 +6,40 @@ _.Zones =
 	m(424, { 	-- Pandaria
 		m(422, {	-- Dread Wastes
 			filter(101, {	-- Battle Pet
-				p(732), 	-- Amber Moth
-				p(742), 	-- Clouded Hedgehog
-				p(745), 	-- Crunchy Scorpion
-				p(746), 	-- Emperor Crab
-				p(743), 	-- Rapana Whelk
-				p(744), 	-- Resilient Roach
-				p(741), 	-- Silent Hedgehog
+				p(732, {	-- Amber Moth
+					["cr"] = 65187,
+				}),
+				p(742, {	-- Clouded Hedgehog
+					["cr"] = 64242,
+				}),
+				p(745, {	-- Crunchy Scorpion
+					["cr"] = 63548,
+				}),
+				p(746, {	-- Emperor Crab
+					["cr"] = 65203,
+				}),
+				p(743, {	-- Rapana Whelk
+					["cr"] = 64352,
+				}),
+				p(744, {	-- Resilient Roach
+					["cr"] = 64238,
+				}),
+				p(741, {	-- Silent Hedgehog
+					["cr"] = 64804,
+				}),
 				q(31957, {	-- Grand Master Shu
-					["repeatable"] = true,
+					["coord"] = { 55.1, 37.6, 422 },
+					["isDaily"] = true,
+					["provider"] = { "n", 66739 },	-- Wastewalker Shu
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
 					},
 				}),
 				q(32439, {	-- Flowing Pandaren Spirit
-					["sourceQuests"] = { 32428 },	-- Pandaren Spirit Tamer
-					["repeatable"] = true,
+					["coord"] = { 61.1, 87.5, 422 },
+					["isDaily"] = true,
+					["provider"] = { "n", 68462 },	-- Flowing Pandaren Spirit
+					["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
 					["g"] = {
 						i(93147, {	-- Pandaren Spirit Pet Supplies
 							i(89139),	-- Chain Pet Leash

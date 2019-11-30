@@ -332,6 +332,14 @@ _.NeverImplemented =
 		q(37217),	-- FLAG - Proving Grounds - Tank Gold
 		q(37216),	-- FLAG - Proving Grounds - Tank Silver
 		q(33093),	-- FLAG - Proving Grounds - Tank Silver
+		q(31282),	-- Dread Wastes - Kaz'tik tracking quest - triggers after freeing Kaz'tik from amber
+		q(31343),	-- Dread Wastes - Kovok Tracking - triggers when turnin in "Reunited". Allows Kovok to follow you
+		q(31992),	-- Kun-lai Summit - Dread Wastes Buff Bitflag - Enhancement 01 - Angel of Death
+		q(31993),	-- Kun-lai Summit - Dread Wastes Buff Bitflag - Enhancement 02 - Iron Mantid
+		q(31994),	-- Kun-lai Summit - Dread Wastes Buff Bitflag - Enhancement 03 - Raining Blood
+		q(31995),	-- Kun-lai Summit - Dread Wastes Buff Bitflag - Augmentation 01 - Speed King
+		q(31996),	-- Kun-lai Summit - Dread Wastes Buff Bitflag - Augmentation 02 - Seek and Destroy
+		q(31997),	-- Kun-lai Summit - Dread Wastes Buff Bitflag - Augmentation 03 - Speed King
 		q(31301),	-- Kun-lai Summit - Shomi Strand Tracking - triggers when you find Sage Liao in Zouchin Strand
 		q(30854),	-- Kun-lai Summit - Lha-Po Tracking Quest - triggers after turning in "One Traveler's Misfortune"
 		q(31205),	-- Kun-lai Summit - Lorewalker Cho Tracking Quest - triggers after turning in "Fisherman's Tale"

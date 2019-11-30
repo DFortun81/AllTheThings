@@ -94,7 +94,7 @@ _.Zones =
 					["provider"] = { "n", 64488 },	-- Riki the Shifting Shadow
 					["isBreadcrumb"] = true,
 				}),
-				q(31390, {	-- The Klaxxi (H)
+				q(31391, {	-- The Klaxxi (H)
 					["coord"] = { 63.2, 20.8, 390 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 64534 },	-- Bowmaster Ku

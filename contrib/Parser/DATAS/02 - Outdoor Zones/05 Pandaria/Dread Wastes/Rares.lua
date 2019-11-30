@@ -19,10 +19,9 @@ _.Zones =
 						i(87627),	-- Kunchong Carapace Chestguard
 						i(87634),	-- Mazu's Robe
 						i(87633),	-- Sharksin Armor
-						{	-- Glorious!
+						crit(41, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 41,
-						},
+						}),
 					},
 				}),
 				n(66935, {	-- Clamstok
@@ -47,10 +46,9 @@ _.Zones =
 						i(87631),	-- Jiao-Skin Tunic
 						i(87633),	-- Sharksin Armor
 						i(87628),	-- Spinebreaker Chestpiece
-						{	-- Glorious!
+						crit(55, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 55,
-						},
+						}),
 					},
 				}),
 				n(50739, {	-- Gar'lok
@@ -70,10 +68,9 @@ _.Zones =
 						i(87631),	-- Jiao-Skin Tunic
 						i(87634),	-- Mazu's Robe
 						i(87633),	-- Sharkskin Robe
-						{	-- Glorious!
+						crit(20, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 20,
-						},
+						}),
 					},
 				}),
 				n(50836, {	-- Ik-Ik the Nimble
@@ -89,10 +86,9 @@ _.Zones =
 						i(87631),	-- Jiao-Skin Tunic
 						i(87627),	-- Kunchong Carapace Chestguard
 						i(87633),	-- Sharkskin Armor
-						{	-- Glorious!
+						crit(6, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 6,
-						},
+						}),
 					},
 				}),
 				n(50347, {	-- Karr the Darkener
@@ -108,10 +104,9 @@ _.Zones =
 						i(87633),	-- Sharkskin Armor
 						i(87631),	-- Jiao-Skin Tunic
 						i(86564),	-- Imbued Jade Fragment
-						{	-- Glorious!
+						crit(27, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 27,
-						},
+						}),
 					},
 				}),
 				n(50356, {	-- Krol the Blade
@@ -131,10 +126,9 @@ _.Zones =
 						i(87627),	-- Kunchong Carapace Chestguard
 						i(87633),	-- Sharkskin Armor
 						i(86574),	-- Elixir of Ancient Knowledge
-						{	-- Glorious!
+						crit(34, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 34,
-						},
+						}),
 					},
 				}),
 				n(50776, {	-- Nalash Verdantis
@@ -150,10 +144,9 @@ _.Zones =
 						i(87627),	-- Kunchong Carapace Chestguard
 						i(87634),	-- Mazu's Robe
 						i(87633),	-- Sharkskin Armor
-						{	-- Glorious!
+						crit(13, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 13,
-						},
+						}),
 					},
 				}),
 				n(50805, {	-- Omnis Grinlok
@@ -174,10 +167,9 @@ _.Zones =
 						i(87627),	-- Kunchong Carapace Chestguard
 						i(87630),	-- Chestpiece of Twinkling Stars
 						i(87633),	-- Sharkskin Armor
-						{	-- Glorious!
+						crit(48, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 48,
-						},
+						}),
 					},
 				}),
 				n(69841, {	-- Zandalari Warbringer (Amber)
