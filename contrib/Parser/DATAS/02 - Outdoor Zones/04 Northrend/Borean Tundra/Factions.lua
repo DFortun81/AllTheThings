@@ -29,6 +29,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							q(13088, {	-- Northern Cooking
+								["coord"] = { 57.93, 71.54, 114 },
 								["races"] = ALLIANCE_ONLY,
 								["provider"] = { "n", 26989 },		-- Quest Giver: Rollick MacKreel <Cooking Trainer>
 								["g"] = {
