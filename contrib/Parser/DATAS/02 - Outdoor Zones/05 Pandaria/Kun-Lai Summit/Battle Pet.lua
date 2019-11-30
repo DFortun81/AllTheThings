@@ -6,27 +6,6 @@ _.Zones =
 	m(424, {	-- Pandaria
 		m(379, {	-- Kun-Lai Summit
 			filter(101, {	-- Pet Battle
-				q(31956, {	-- Grand Master Yon
-					["isDaily"] = true,
-					["g"] = {
-						i(89125),	-- Sack of Pet Supplies
-					},
-				}),
-				q(32441, {	-- Thundering Pandaren Spirit
-					["sourceQuests"] = { 32428 },	-- Pandaren Spirit Tamer
-					["isDaily"] = true,
-					["g"] = {
-						i(93146, {	-- Pandaren Spirit Pet Supplies
-							i(89139),	-- Chain Pet Leash
-							i(92800),	-- Pandaren Earth Spirit
-							i(44820),	-- Red Ribbon Pet Leash
-						}),
-					},
-				}),
-				n(68563, {	-- Kafi
-					["description"] = "This pet is needed for \"Beasts of Fable\" quests.",
-					["coord"] = { 35.21, 56.16, 379 },
-				}),
 				p(724, {	-- Alpine Foxling
 					["crs"] = { 63550 },	-- Alpine Foxling
 				}),
@@ -59,6 +38,31 @@ _.Zones =
 				}),
 				p(731, {	-- Zooey Snake
 					["crs"] = { 63555 },	-- Zooey Snake
+				}),
+				n(68563, {	-- Kafi
+					["coord"] = { 35.2, 56.2, 379 },
+					["description"] = "This pet is needed for |cFFFFD700Beasts of Fable|r quests.",
+				}),
+				q(31956, {	-- Grand Master Yon
+					["coord"] = { 35.8, 73.6, 379 },
+					["isDaily"] = true,
+					["provider"] = { "n", 66738 },	-- Courageous Yon
+					["g"] = {
+						i(89125),	-- Sack of Pet Supplies
+					},
+				}),
+				q(32441, {	-- Thundering Pandaren Spirit
+					["coord"] = { 64.9, 93.8, 379 },
+					["isDaily"] = true,
+					["provider"] = { "n", 68465 },	-- Thundering Pandaren Spirit
+					["sourceQuest"] = 32428,	-- Pandaren Spirit Tamer
+					["g"] = {
+						i(93146, {	-- Pandaren Spirit Pet Supplies
+							i(89139),	-- Chain Pet Leash
+							i(92800),	-- Pandaren Earth Spirit
+							i(44820),	-- Red Ribbon Pet Leash
+						}),
+					},
 				}),
 			}),
 		}),

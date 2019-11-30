@@ -8,6 +8,7 @@ _.Zones =
 			n(-362, {	-- Peak of Serenity
 				["description"] = "This area phases once you have begun the Monk Class Hall Campaign and may not be accessible again until you complete it.|r",
 				["races"] = { 25, 26 },	-- Pandaren
+				["classes"] = { 10 },	-- Monk
 				["icon"] = "Interface\\Icons\\ability_monk_legacyoftheemperor",
 				["g"] = {
 					n(-17, { 	-- Quests
@@ -15,38 +16,53 @@ _.Zones =
 							i(89551),
 							i(89553),
 						}),
-						q(31833, {	-- Continue Your Training: Master Woo
-							i(89556),
-							i(89558),
-							i(89555),
-						}),
-						q(31835, {	-- Continue Your Training: Master Kistane
-							i(89561),
-							i(89562),
-						}),
-						q(31836,  { 	-- Continue Your Training: Master Yoon
-							i(89548),
-							i(89549),
-							i(89550),
-						}),
 						q(31837, {	-- Continue Your Training: Master Cheng
 							i(89564),
 							i(89565),
-						}),
-						q(31838, {	-- Continue Your Training: Master Tsang
-							i(89567),
-							i(89569),
 						}),
 						q(31839, {	-- Continue Your Training: Master Hsu
 							i(89606),
 							i(89576),
 							i(89577),
 						}),
+						q(31835, {	-- Continue Your Training: Master Kistane
+							i(89561),
+							i(89562),
+						}),
+						q(31838, {	-- Continue Your Training: Master Tsang
+							i(89567),
+							i(89569),
+						}),
+						q(31833, {	-- Continue Your Training: Master Woo
+							i(89556),
+							i(89558),
+							i(89555),
+						}),
+						q(31836, { 	-- Continue Your Training: Master Yoon
+							i(89548),
+							i(89549),
+							i(89550),
+						}),
 						q(31944, {	-- Complete Your Training: The Final Test
 							i(90012),
 							i(90010),
 							i(90011),
 						}),
+						q(31844),	-- Practice Makes Perfect: Master Cheng
+						q(31840),	-- Practice Makes Perfect: Master Cheng
+						q(31846),	-- Practice Makes Perfect: Master Hsu
+						q(31842),	-- Practice Makes Perfect: Master Kistane
+						q(31845),	-- Practice Makes Perfect: Master Tsang
+						q(31841),	-- Practice Makes Perfect: Master Woo
+						q(31843),	-- Practice Makes Perfect: Master Yoon
+						q(31856),	-- The Peak of Serenity - Begin Your Training
+						q(31989),	-- The Peak of Serenity - Complete Your Training
+						q(31859),	-- The Peak of Serenity - Continue Your Training
+						q(31860),	-- The Peak of Serenity - Continue Your Training
+						q(31855),	-- The Peak of Serenity - Continue Your Training
+						q(31857),	-- The Peak of Serenity - Continue Your Training
+						q(31861),	-- The Peak of Serenity - Continue Your Training
+						q(31858),	-- The Peak of Serenity - Continue Your Training
 					}),
 					n(-2, {	-- Vendors
 						n(66354, {	-- Master Cannon <Tanner>

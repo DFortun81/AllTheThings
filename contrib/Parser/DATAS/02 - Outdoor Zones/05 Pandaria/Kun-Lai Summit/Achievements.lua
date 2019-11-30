@@ -125,98 +125,77 @@ _.Zones =
 						}),
 					},
 				}),
-				{	-- Slum It in the Summit (A)
-					["achievementID"] = 6537,
+				ach(6537, {	-- Slum It in the Summit (A)
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						{	-- Westwind Rest
-							["criteriaID"] = 1,
+					["g"] = {
+						crit(1, {	-- Westwind Rest
 							["sourceQuest"] = 30514,	-- Challenge Accepted
-						},
-						{	-- The Yaungol Invasion
-							["criteriaID"] = 2,
+						}),
+						crit(2, {	-- The Yaungol Invasion
 							["sourceQuest"] = 30660,	-- The Ordo Warbringer
-						},
-						{	-- Inkgill Mere
-							["criteriaID"] = 3,
+						}),
+						crit(3, {	-- Inkgill Mere
 							["sourceQuest"] = 30855,	-- The Fall of Shai-Hu
-						},
-						{	-- The Yak Wash
-							["criteriaID"] = 4,
+						}),
+						crit(4, {	-- The Yak Wash
 							["sourceQuest"] = 30492,	-- Back in Yak
-						},
-						{	-- The Burlap Trail
-							["criteriaID"] = 5,
+						}),
+						crit(5, {	-- The Burlap Trail
 							["sourceQuest"] = 30612,	-- The Leader Hozen
-						},
-						{	-- Kota Peak
-							["criteriaID"] = 6,
+						}),
+						crit(6, {	-- Kota Peak
 							["sourceQuest"] = 30747,	-- The Burlap Grind
-						},
-						{	-- The Thunder King
-							["criteriaID"] = 7,
+						}),
+						crit(7, {	-- The Thunder King
 							["sourceQuest"] = 30800,	-- Stealing Their Thunder King
-						},
-						{	-- Temple of the White Tiger
-							["criteriaID"] = 8,
+						}),
+						crit(8, {	-- Temple of the White Tiger
 							["sourceQuest"] = 31394,	-- A Celestial Experience
-						},
-						{	-- Zouchin Village
-							["criteriaID"] = 9,
+						}),
+						crit(9, {	-- Zouchin Village
 							["sourceQuest"] = 30946,	-- Revelations
-						},
-						{	-- The Shado-Pan
-							["criteriaID"] = 10,
+						}),
+						crit(10, {	-- The Shado-Pan
 							["sourceQuest"] = 30752,	-- Unbelievable!
-						},
+						}),
 					},
-				},
-				{	-- Slum It in the Summit (H)
-					["achievementID"] = 6538,
+				}),
+				ach(6538, {	-- Slum It in the Summit (H)
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						{	-- Eastwind Rest
-							["criteriaID"] = 1,
+					["g"] = {
+						crit(1, {	-- Eastwind Rest
 							["sourceQuest"] = 30515,	-- Challenge Accepted
-						},
-						{	-- The Yaungol Invasion
-							["criteriaID"] = 2,
+						}),
+						crit(2, {	-- The Yaungol Invasion
+							-- TODO: verify this. It didn't pop up immediately but relogging later did eventually mark it complete
 							["sourceQuest"] = 30661,	-- The Ordo Warbringer
-						},
-						{	-- Inkgill Mere
-							["criteriaID"] = 3,
+						}),
+						crit(3, {	-- Inkgill Mere
 							["sourceQuest"] = 30855,	-- The Fall of Shai-Hu
-						},
-						{	-- The Yak Wash
-							["criteriaID"] = 4,
+						}),
+						crit(4, {	-- The Yak Wash
 							["sourceQuest"] = 30492,	-- Back in Yak
-						},
-						{	-- The Burlap Trail
-							["criteriaID"] = 5,
+						}),
+						crit(5, {	-- The Burlap Trail
 							["sourceQuest"] = 30612,	-- The Leader Hozen
-						},
-						{	-- Kota Peak
-							["criteriaID"] = 6,
+						}),
+						crit(6, {	-- Kota Peak
 							["sourceQuest"] = 30747,	-- The Burlap Grind
-						},
-						{	-- The Thunder King
-							["criteriaID"] = 7,
+						}),
+						crit(7, {	-- The Thunder King
 							["sourceQuest"] = 30800,	-- Stealing Their Thunder King
-						},
-						{	-- Temple of the White Tiger
-							["criteriaID"] = 8,
+						}),
+						crit(8, {	-- Temple of the White Tiger
 							["sourceQuest"] = 31395,	-- A Celestial Experience
-						},
-						{	-- Zouchin Village
-							["criteriaID"] = 9,
+						}),
+						crit(9, {	-- Zouchin Village
 							["sourceQuest"] = 30946,	-- Revelations
-						},
-						{	-- The Shado-Pan
-							["criteriaID"] = 10,
+						}),
+						crit(10, {	-- The Shado-Pan
 							["sourceQuest"] = 30752,	-- Unbelievable!
-						},
+						}),
 					},
-				},
+				}),
 			}),
 		}),
 	}),

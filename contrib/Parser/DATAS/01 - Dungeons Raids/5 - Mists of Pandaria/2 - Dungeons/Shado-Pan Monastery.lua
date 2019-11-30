@@ -9,15 +9,21 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(30757, {	-- Lord of the Shado-Pan
-					i(87315),	-- Cowl of Angry Thoughts
-					i(87316),	-- Headcover of Disturbed Serenity
-					i(87317),	-- Vexing Coif
-					i(87318),	-- Hood of Endless Agitation
-					i(87319),	-- Antagonist's Headwrap
-					i(87320),	-- Headcover of the Impatient
-					i(87321),	-- Cowl of Internal Strife
-					i(87322),	-- Helm of Enmity
-					i(87323),	-- Helm of Unstable Temperament
+					["sourceQuests"] = {
+						31030,	-- Into the Monastery
+						31031,	-- Into the Monastery
+					},
+					["g"] = {
+						i(87315),	-- Cowl of Angry Thoughts
+						i(87316),	-- Headcover of Disturbed Serenity
+						i(87317),	-- Vexing Coif
+						i(87318),	-- Hood of Endless Agitation
+						i(87319),	-- Antagonist's Headwrap
+						i(87320),	-- Headcover of the Impatient
+						i(87321),	-- Cowl of Internal Strife
+						i(87322),	-- Helm of Enmity
+						i(87323),	-- Helm of Unstable Temperament
+					},
 				}),
 				q(31342, {	-- The Path to Respect Lies in Violence
 					i(87324),	-- Cord of Sha Ravagery

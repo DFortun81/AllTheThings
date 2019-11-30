@@ -332,6 +332,13 @@ _.NeverImplemented =
 		q(37217),	-- FLAG - Proving Grounds - Tank Gold
 		q(37216),	-- FLAG - Proving Grounds - Tank Silver
 		q(33093),	-- FLAG - Proving Grounds - Tank Silver
+		q(31301),	-- Kun-lai Summit - Shomi Strand Tracking - triggers when you find Sage Liao in Zouchin Strand
+		q(30854),	-- Kun-lai Summit - Lha-Po Tracking Quest - triggers after turning in "One Traveler's Misfortune"
+		q(31205),	-- Kun-lai Summit - Lorewalker Cho Tracking Quest - triggers after turning in "Fisherman's Tale"
+		q(31298),	-- Kun-lai Summit - Zouchin Village intro tracking - triggers after turning in "Fisherman's Tale"
+		q(31299),	-- Kun-lai Summit - Shomi Ruins Tracking - triggers while on "Make a Fighter Out of Me" and you walk into the zandalari vanguard ruins
+		q(31310),	-- Kun-lai Summit - Interrogation tracking - triggers when doing "Revelations"
+		q(31300),	-- Kun-lai Summit - Shomi Beach Tracking - triggered while on "Justice" shortly after killing Captain Ripflesh
 		q(31123),	-- Townlong Steppes - Chose Arms Warrior
 		q(31124),	-- Townlong Steppes - Chose Brewmaster
 		q(31050),	-- Townlong Steppes - Chose Fire Mage
@@ -380,6 +387,7 @@ _.NeverImplemented =
 		q(31625),	-- Shado-Pan Monastery Challenge Mode - Consolation (Nth)
 		q(31646),	-- Shado-Pan Monastery Challenge Mode - Gold Addition (Nth)
 		q(31639),	-- Shado-Pan Monastery Challenge Mode - Silver Addition (Nth)
+		q(35319),	-- Shado-Pan Monastery normal clear
 		q(35320),	-- Shado-Pan Monastery Reward Quest
 		q(31633),	-- Siege of Niuzao Temple Challenge Mode - Bronze Addition (Nth)
 		q(31626),	-- Siege of Niuzao Temple Challenge Mode - Consolation (Nth)
