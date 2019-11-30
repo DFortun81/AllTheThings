@@ -88,6 +88,18 @@ _.Zones =
 						i(98133),	-- Greater Cache of Treasures
 					},
 				}),
+				q(31390, {	-- The Klaxxi (A)
+					["coord"] = { 84.4, 61.6, 390 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 64488 },	-- Riki the Shifting Shadow
+					["isBreadcrumb"] = true,
+				}),
+				q(31390, {	-- The Klaxxi (H)
+					["coord"] = { 63.2, 20.8, 390 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 64534 },	-- Bowmaster Ku
+					["isBreadcrumb"] = true,
+				}),
 				q(32815, {	-- The Old Seer
 					["sourceQuest"] = 32807,	-- The Warchief and the Darkness
 					["provider"] = { "n", 61962 },	-- Lorewalker Cho
