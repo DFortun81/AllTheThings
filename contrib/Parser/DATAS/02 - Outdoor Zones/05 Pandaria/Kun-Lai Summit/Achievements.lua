@@ -132,7 +132,13 @@ _.Zones =
 							["sourceQuest"] = 30514,	-- Challenge Accepted
 						}),
 						crit(2, {	-- The Yaungol Invasion
-							["sourceQuest"] = 30660,	-- The Ordo Warbringer
+							["description"] = "This criteria doesn't trigger automatically. You will need to log out for it to get marked completed.",
+							["sourceQuests"] = {
+								30651,	-- Barrels of Fun
+								30650,	-- Pandaren Prisoners
+								30660,	-- The Ordo Warbringer
+								30662,	-- The Ordo Warbringer
+							},
 						}),
 						crit(3, {	-- Inkgill Mere
 							["sourceQuest"] = 30855,	-- The Fall of Shai-Hu
@@ -167,8 +173,13 @@ _.Zones =
 							["sourceQuest"] = 30515,	-- Challenge Accepted
 						}),
 						crit(2, {	-- The Yaungol Invasion
-							-- TODO: verify this. It didn't pop up immediately but relogging later did eventually mark it complete
-							["sourceQuest"] = 30661,	-- The Ordo Warbringer
+							["description"] = "This criteria doesn't trigger automatically. You will need to log out for it to get marked completed.",
+							["sourceQuests"] = {
+								30656,	-- Barrels of Fun (H)
+								30655,	-- Pandaren Prisoners (H)
+								30661,	-- The Ordo Warbringer
+								30663,	-- The Ordo Warbringer
+							},
 						}),
 						crit(3, {	-- Inkgill Mere
 							["sourceQuest"] = 30855,	-- The Fall of Shai-Hu

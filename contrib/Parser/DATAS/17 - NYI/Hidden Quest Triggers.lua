@@ -348,6 +348,12 @@ _.NeverImplemented =
 		q(31299),	-- Kun-lai Summit - Shomi Ruins Tracking - triggers while on "Make a Fighter Out of Me" and you walk into the zandalari vanguard ruins
 		q(31310),	-- Kun-lai Summit - Interrogation tracking - triggers when doing "Revelations"
 		q(31300),	-- Kun-lai Summit - Shomi Beach Tracking - triggered while on "Justice" shortly after killing Captain Ripflesh
+		q(31461),	-- Kun-lai Summit - Spoke to Xuen - part of "A Celestial Experience"
+		q(31462),	-- Kun-lai Summit - Spirit of Violence Defeated - first test during "A Celestial Experience"
+		q(31463),	-- Kun-lai Summit - Spirit of Anger Defeated - second test during "A Celestial Experience"
+		q(31464),	-- Kun-lai Summit - Opposing Faction Leader Defeated - third test during "A Celestial Experience"
+		q(30647),	-- Kun-lai Summit - Tracking Quest: Opened the Golden Valley - triggers when the gates to the Vale of Eternal Blossom are opened
+		q(31807),	-- Kun-lai Summit - Tracking Quest: Opened the Golden Valley II - triggers after the dialog finishes with the 4 celestials at the gates
 		q(31123),	-- Townlong Steppes - Chose Arms Warrior
 		q(31124),	-- Townlong Steppes - Chose Brewmaster
 		q(31050),	-- Townlong Steppes - Chose Fire Mage

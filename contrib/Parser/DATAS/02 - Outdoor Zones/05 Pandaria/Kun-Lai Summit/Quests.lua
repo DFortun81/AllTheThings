@@ -15,11 +15,13 @@ _.Zones =
 					},
 				}),
 				q(31394, {	-- A Celestial Experience (A)
+					["coord"] = { 68.7, 43.1, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 64540 },	-- Anduin Wrynn
 					["sourceQuest"] = 31392,	-- Temple of the White Tiger
 				}),
 				q(31395, {	-- A Celestial Experience (H)
+					["coord"] = { 68.7, 43.0, 379 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 64542 },	-- Sunwalker Dezco
 					["sourceQuest"] = 31393,	-- Temple of the White Tiger
@@ -84,12 +86,16 @@ _.Zones =
 					["sourceQuest"] = 30724,	-- To the Wall!
 				}),
 				q(31512, {	-- A Witness to History (A)
+					["coord"] = { 68.7, 43.1, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 64540 },	-- Anduin Wrynn
+					["sourceQuest"] = 31394,	-- A Celestial Experience
 				}),
 				q(31511, {	-- A Witness to History (H)
+					["coord"] = { 68.7, 43.0, 379 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 64542 },	-- Sunwalker Dezco
+					["sourceQuest"] = 31395,	-- A Celestial Experience
 				}),
 				q(30596, {	-- A Zandalari Troll? (A) (Triggers when completing "Mogu?! Oh No-gu!")
 					["u"] = 1,
@@ -98,9 +104,9 @@ _.Zones =
 					["u"] = 1,
 				}),
 				q(30506, {	-- Admiral Taylor has Awakened (3 versions of this quest from 3 different npc's but completing one gives credit for all 3)
-					["provider"] = { "n", 59076 },	-- Commander Hsieh
 					["coord"] = { 70.8, 90.4, 379 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 59076 },	-- Commander Hsieh
 					["sourceQuests"] = {
 						30459,	-- All of the Arrows
 						30457,	-- Call Out Their Leader
@@ -108,9 +114,9 @@ _.Zones =
 					},
 				}),
 				q(30507, {	-- Admiral Taylor has Awakened
-					["provider"] = { "n", 59073 },	-- Mayor Bramblestaff
 					["coord"] = { 72.2, 91.8, 379 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 59073 },	-- Mayor Bramblestaff
 					["sourceQuests"] = {
 						30459,	-- All of the Arrows
 						30457,	-- Call Out Their Leader
@@ -118,9 +124,9 @@ _.Zones =
 					},
 				}),
 				q(30508, {	-- Admiral Taylor has Awakened
-					["provider"] = { "n", 59077 },	-- Apothecary Cheng
 					["coord"] = { 71.6, 92.8, 379 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 59077 },	-- Apothecary Cheng
 					["sourceQuests"] = {
 						30459,	-- All of the Arrows
 						30457,	-- Call Out Their Leader
@@ -150,7 +156,7 @@ _.Zones =
 					["coord"] = { 71.3, 69.2, 379 },
 					["provider"] = { "n", 61693 },	-- Muskpaw Jr.
 					["sourceQuests"] = {
-						--30491,	-- At the Yak Wash -- TODO: verify this
+						30491,	-- At the Yak Wash
 						30587,	-- Yakity Yak
 					},
 					["g"] = {
@@ -184,10 +190,17 @@ _.Zones =
 					["provider"] = { "n", 67734 },	-- Sarannha Skyglaive
 				}),
 				q(30651, {	-- Barrels of Fun (A)
-					["provider"] = { "n", 59450 },	-- Sully "The Pickle" McLeary
-					["coord"] = { 54.0, 83.2, 379 },
+					["coord"] = { 54.1, 83.2, 379 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 30619,	-- Mogu?! Oh No-gu!
+					["provider"] = { "n", 59450 },	-- Sully "The Pickle" McLeary
+					["sourceQuests"] = {
+						31252,	-- Back to Westwind Rest
+						30593,	-- Deanimate the Reanimated
+						30619,	-- Mogu?! Oh No-gu!
+						-- TODO: verify below
+						30583,	-- Blue Dwarf Needs Food Badly
+						30575,	-- Round 'Em Up
+					},
 					["g"] = {
 						i(88577),	-- Explosive Barrel
 					},
@@ -211,20 +224,29 @@ _.Zones =
 					["sourceQuest"] = 30515,	-- Challenge Accepted
 				}),
 				q(31847, {	-- Better Dead than Dread
+					["coord"] = { 34.6, 59.0, 379 },
 					["provider"] = { "n", 61512 },	-- Kite Master Len
 					["isBreadcrumb"] = true,
 					-- TODO: determine sourceQuest. exclusive with "The Threat in the South" from Townlong Steppes
 				}),
 				q(31695, {	-- Beyond the Wall
-					["coord"] = { 62.3, 79.6, 379 },
-					["provider"] = { "n", 63535 },	-- Elder Shiao
 					["isBreadcrumb"] = true,
+					["coords"] = {
+						{ 54.1, 83.4, 379 },
+						{ 62.3, 79.6, 379 },
+					},
+					["providers"] = {
+						{ "n", 63542 },	-- Elder Tsulan
+						{ "n", 63535 },	-- Elder Shiao
+					},
 					["altQuests"] = {
 						30768,	-- My Husband...
 					},
 					["sourceQuests"] = {
 						30660,	-- The Ordo Warbringer (A)
+						30662,	-- The Ordo Warbringer (A)
 						30661,	-- The Ordo Warbringer (H)
+						30663,	-- The Ordo Warbringer (H)
 					},
 				}),
 				q(32192, {	-- Bloodlines
@@ -232,8 +254,10 @@ _.Zones =
 					["provider"] = { "n", 67581 },	-- Lor'themar Theron
 				}),
 				q(30583, {	-- Blue Dwarf Needs Food Badly
+					["coord"] = { 54.1, 83.2, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 59450 },	-- Sully "The Pickle" McLeary
+					["sourceQuest"] = 30514,	-- Challenge Accepted
 				}),
 				q(30604, {	-- Breaking Broketooth
 					["coord"] = { 51.9, 67.2, 379 },
@@ -294,7 +318,7 @@ _.Zones =
 					},
 				}),
 				q(30514, {	-- Challenge Accepted (A)
-					["coord"] = { 54.6, 84.2, 379 },
+					["coord"] = { 56.3, 84.3, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 63542 },	-- Elder Tsulan
 					["sourceQuest"] = 30512,	-- Westwind Rest
@@ -324,8 +348,16 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(31460, {	-- Cho's Missive (A)
+					["coord"] = { 53.6, 83.2, 379 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 59451 },	-- Mishka
 					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						30651,	-- Barrels of Fun
+						30650,	-- Pandaren Prisoners
+						30660,	-- The Ordo Warbringer
+						30662,	-- The Ordo Warbringer
+					},
 				}),
 				q(31459, {	-- Cho's Missive (H)
 					["coord"] = { 62.6, 80.7, 379 },
@@ -334,7 +366,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
 						30656,	-- Barrels of Fun
-						30650,	-- Pandaren Prisoners
+						30655,	-- Pandaren Prisoners
 						30661,	-- The Ordo Warbringer
 						30663,	-- The Ordo Warbringer
 					},
@@ -351,17 +383,20 @@ _.Zones =
 				q(30487, {	-- Comin' Round the Mountain
 					["coord"] = { 57.2, 61.2, 379 },
 					["provider"] = { "n", 59696 },	-- Uncle Cloverleaf
-					["sourceQuest"] = 30618,	-- Resupplying One Keg
-					-- TODO: this almost certainly requires 30601 and 30621
+					["sourceQuests"] = {
+						30601,	-- Instant Courage
+						30618,	-- Resupplying One Keg
+						30621,	-- They Stole My Luck
+					},
 				}),
 				q(31517, {	-- Contending With Bullies
 					["isDaily"] = true,
 					["provider"] = { "n", 60968 },	-- Xuen
 				}),
 				q(30593, {	-- Deanimate the Reanimated (A)
-					["provider"] = { "n", 59451 },	-- Mishka
 					["coord"] = { 53.6, 83.2, 379 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 59451 },	-- Mishka
 					["sourceQuest"] = 30514,	-- Challenge Accepted
 				}),
 				q(30594, {	-- Deanimate the Reanimated (H)
@@ -373,7 +408,10 @@ _.Zones =
 				q(30991, {	-- Do a Barrel Roll!
 					["coord"] = { 31.8, 60.1, 379 },
 					["provider"] = { "n", 61820 },	-- Lao-Chin the Iron Belly
-					["sourceQuest"] = 30994,	-- Lao-Chin's Gambit
+					["sourceQuests"] = {
+						30751,	-- A Terrible Sacrifice
+						30994,	-- Lao-Chin's Gambit
+					},
 					["g"] = {
 						i(88531),	-- Lao Chin's Last Mug
 					},
@@ -398,10 +436,9 @@ _.Zones =
 					["provider"] = { "n", 61371 },	-- Lorewalker Cho
 					["sourceQuests"] = {
 						30943,	-- Handle With Care
-						-- TODO: Verify below:
 						30944,	-- It Takes A Village
-						30945,	-- What's Yours Is mine
 						30942,	-- Make A Fighter Out of Me
+						30945,	-- What's Yours Is mine
 					},
 				}),
 				q(30468, {	-- Enraged Vengeance -- aa
@@ -550,10 +587,17 @@ _.Zones =
 					["sourceQuest"] = 30605,	-- Bros Before Hozen
 				}),
 				q(30652, {	-- In Tents Channeling (A)
-					["provider"] = { "n", 59441 },	-- Admiral Taylor
 					["coord"] = { 53.8, 83.6, 379 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 30593,	-- Deanimate the Reanimated
+					["provider"] = { "n", 59441 },	-- Admiral Taylor
+					["sourceQuests"] = {
+						31252,	-- Back to Westwind Rest
+						30593,	-- Deanimate the Reanimated
+						30619,	-- Mogu?! Oh No-gu!
+						-- TODO: verify below
+						30583,	-- Blue Dwarf Needs Food Badly
+						30575,	-- Round 'Em Up
+					},
 				}),
 				q(30657, {	-- In Tents Channeling (H)
 					["coord"] = { 62.9, 80.1, 379 },
@@ -562,6 +606,10 @@ _.Zones =
 					["sourceQuests"] = {
 						31253,	-- Back to Eastwind Rest
 						30594,	-- Deanimate the Reanimated
+						30620,	-- Mogu?! Oh No-gu!
+						-- TODO: verify below
+						31251,	-- Best Meals Anywhere!
+						31256,	-- Round 'Em Up!
 					},
 				}),
 				q(30601, {	-- Instant Courage
@@ -604,10 +652,10 @@ _.Zones =
 					["coord"] = { 40.3, 81.5, 379 },
 					["provider"] = { "n", 60677 },	-- Uncle Tallmug
 				}),
-				q(30744, {	-- Kota Blend
+				q(30744, {	-- Kota Blend (NYI? likely duplicate)
+					["u"] = 1,
 					["coord"] = { 42.5, 69.4, 379 },
 					["provider"] = { "n", 60503 },	-- Uncle Keenbean
-					-- TODO: is this version available after turning in "A Fair Trade"? looks phase-related
 				}),
 				q(30942, {	-- Make A Fighter Out of Me
 					["coord"] = { 63.7, 30.7, 379 },
@@ -650,9 +698,9 @@ _.Zones =
 					["provider"] = { "n", 68287 },	-- Baine Bloodhoof
 				}),
 				q(30619, {	-- Mogu?! Oh No-gu! (A)
-					["provider"] = { "n", 63542 },	-- Elder Tsulan
-					["coord"] = { 54.6, 84.2, 379 },
+					["coord"] = { 54.1, 83.4, 379 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 63542 },	-- Elder Tsulan
 					["sourceQuest"] = 30514,	-- Challenge Accepted
 					["g"] = {
 						i(82489),	-- Dreaming Spirit Helm
@@ -684,8 +732,14 @@ _.Zones =
 					},
 				}),
 				q(31456, {	-- Muskpaw Ranch (A)
+					["coord"] = { 53.7, 84.1, 379 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 63754 },	-- Farmhand Bo
 					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						30660,	-- The Ordo Warbringer
+						30662,	-- The Ordo Warbringer
+					},
 				}),
 				q(31457, {	-- Muskpaw Ranch (H)
 					["coord"] = { 62.5, 79.4, 379 },
@@ -693,8 +747,6 @@ _.Zones =
 					["provider"] = { "n", 63751 },	-- Farmhand Ko
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
-						30656,	-- Barrels of Fun
-						30650,	-- Pandaren Prisoners
 						30661,	-- The Ordo Warbringer
 						30663,	-- The Ordo Warbringer
 					},
@@ -702,6 +754,7 @@ _.Zones =
 				q(30768, {	-- My Husband...
 					["coord"] = { 31.3, 61.6, 379 },
 					["provider"] = { "n", 61454 },	-- Suna Silentstrike
+					["sourceQuest"] = 30992,	-- Finish This!
 					["altQuests"] = {
 						31695,	-- Beyond the Wall
 					},
@@ -745,10 +798,17 @@ _.Zones =
 					},
 				}),
 				q(30650, {	-- Pandaren Prisoners (A)
-					["coord"] = { 54.6, 84.2, 379 },
+					["coord"] = { 54.1, 83.4, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 63542 },	-- Elder Tsulan
-					["sourceQuest"] = 30619,	-- Mogu?! Oh No-gu!
+					["sourceQuests"] = {
+						31252,	-- Back to Westwind Rest
+						30593,	-- Deanimate the Reanimated
+						30619,	-- Mogu?! Oh No-gu!
+						-- TODO: verify below
+						30583,	-- Blue Dwarf Needs Food Badly
+						30575,	-- Round 'Em Up
+					},
 				}),
 				q(30655, {	-- Pandaren Prisoners (H)
 					["coord"] = { 62.3, 79.6, 379 },
@@ -857,9 +917,9 @@ _.Zones =
 					},
 				}),
 				q(30575, {	-- Round 'Em Up (A)
-					["provider"] = { "n", 59441 },	-- Admiral Taylor
-					["coord"] = { 53.8, 82.6, 379 },
+					["coord"] = { 53.7, 82.6, 379 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 59441 },	-- Admiral Taylor
 					["sourceQuest"] = 30514,	-- Challenge Accepted
 					["g"] = {
 						i(84511),	-- Dreaming Spirit Monnion
@@ -958,6 +1018,7 @@ _.Zones =
 					["sourceQuest"] = 30798,	-- Breaking the Emperor's Shield
 				}),
 				q(31392, {	-- Temple of the White Tiger (A)
+					["coord"] = { 72.0, 94.2, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["providers"] = {
@@ -970,6 +1031,7 @@ _.Zones =
 					},
 				}),
 				q(31393, {	-- Temple of the White Tiger (H)
+					["coord"] = { 72.0, 94.2, 379 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["providers"] = {
@@ -1049,7 +1111,8 @@ _.Zones =
 					["provider"] = { "n", 60161 },	-- Shado-Master Chong
 					["sourceQuests"] = {
 						30656,	-- Barrels of Fun
-						30650,	-- Pandaren Prisoners
+						30650,	-- Pandaren Prisoners (A)
+						30655,	-- Pandaren Prisoners (H)
 						30661,	-- The Ordo Warbringer
 						30663,	-- The Ordo Warbringer
 						31453,	-- The Shado-Pan (breadcrumb)
@@ -1104,8 +1167,8 @@ _.Zones =
 				}),
 				q(30582, {	-- The Late Mrs. Muskpaw
 					["cr"] = 59335,	-- Burilgi Despoiler
+					["coord"] = { 70.3, 71.9, 379 },
 					["provider"] = { "i", 80241 },	-- Muskpaw's Keepsake
-					-- TODO: Verify if this item drops all the time or only after "The Missing Muskpaw" is done
 				}),
 				q(30612, {	-- The Leader Hozen
 					["coord"] = { 45.9, 64.0, 379 },
@@ -1127,8 +1190,16 @@ _.Zones =
 					},
 				}),
 				q(31452, {	-- The Missing Merchant
+					["coord"] = { 54.1, 83.4, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 63542 },	-- Elder Tsulan
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						30651,	-- Barrels of Fun
+						30650,	-- Pandaren Prisoners
+						30660,	-- The Ordo Warbringer
+						30662,	-- The Ordo Warbringer
+					},
 				}),
 				q(31451, {	-- The Missing Merchant
 					["coord"] = { 62.3, 79.6, 379 },
@@ -1137,7 +1208,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
 						30656,	-- Barrels of Fun
-						30650,	-- Pandaren Prisoners
+						30655,	-- Pandaren Prisoners
 						30661,	-- The Ordo Warbringer
 						30663,	-- The Ordo Warbringer
 					},
@@ -1168,9 +1239,23 @@ _.Zones =
 					},
 				}),
 				q(30662, {	-- The Ordo Warbringer (A)
+					["coord"] = { 53.9, 83.4, 379 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 59441 },	-- Admiral Taylor
 					["sourceQuest"] = 30652,	-- In Tents Channeling
 					["description"] = "Only available if you abandon the original version of the quest.",
+					["g"] = {
+						i(82590),	-- Blazecaster's Wand
+						i(82598),	-- Fireblaze Clobberer
+						i(82594),	-- Fireblaze Rifle
+						i(82596),	-- Ordo Handaxe
+						i(82589),	-- Ordo Mace
+						i(82592),	-- Warbringer's Axe
+						i(82597),	-- Warbringer's Dagger
+						i(82593),	-- Wind Blade
+						i(82595),	-- Wind's Edge
+						i(82591),	-- Wind's Rest Spear
+					},
 				}),
 				q(30661, {	-- The Ordo Warbringer (H)
 					["races"] = HORDE_ONLY,
@@ -1195,6 +1280,18 @@ _.Zones =
 					["provider"] = { "n", 59442 },	-- General Nazgrim
 					["sourceQuest"] = 30657,	-- In Tents Channeling
 					["description"] = "Only available if you abandon the original version of the quest.",
+					["g"] = {
+						i(82590),	-- Blazecaster's Wand
+						i(82598),	-- Fireblaze Clobberer
+						i(82594),	-- Fireblaze Rifle
+						i(82596),	-- Ordo Handaxe
+						i(82589),	-- Ordo Mace
+						i(82592),	-- Warbringer's Axe
+						i(82597),	-- Warbringer's Dagger
+						i(82593),	-- Wind Blade
+						i(82595),	-- Wind's Edge
+						i(82591),	-- Wind's Rest Spear
+					},
 				}),
 				q(30602, {	-- The Rabbitsfoot
 					["coord"] = { 51.6, 67.8, 379 },
@@ -1243,9 +1340,16 @@ _.Zones =
 					},
 				}),
 				q(31455, {	-- The Shado-Pan (A)
+					["coord"] = { 53.9, 83.4, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 59441 },	-- Admiral Taylor
 					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						30651,	-- Barrels of Fun
+						30650,	-- Pandaren Prisoners
+						30660,	-- The Ordo Warbringer
+						30662,	-- The Ordo Warbringer
+					},
 				}),
 				q(31453, {	-- The Shado-Pan (H)
 					["coord"] = { 62.4, 80.4, 379 },
@@ -1254,7 +1358,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
 						30656,	-- Barrels of Fun
-						30650,	-- Pandaren Prisoners
+						30655,	-- Pandaren Prisoners
 						30661,	-- The Ordo Warbringer
 						30663,	-- The Ordo Warbringer
 					},
@@ -1355,9 +1459,9 @@ _.Zones =
 					-- TODO: is this version available after turning in "A Fair Trade"? looks phase-related
 				}),
 				q(30569, {	-- Trouble on the Farmstead (A)
-					["provider"] = { "n", 63754 },	-- Farmhand Bo
-					["coord"] = { 53.8, 84.0, 379 },
+					["coord"] = { 53.7, 84.1, 379 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 63754 },	-- Farmhand Bo
 					["sourceQuest"] = 30514,	-- Challenge Accepted
 				}),
 				q(30570, {	-- Trouble on the Farmstead (H)
@@ -1417,7 +1521,7 @@ _.Zones =
 					},
 				}),
 				q(30512, {	-- Westwind Rest
-					["coord"] = { 71.6, 93.0, 379 },
+					["coord"] = { 71.5, 93.0, 379 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 59441 },	-- Admiral Taylor
 					["sourceQuests"] = {
@@ -1441,8 +1545,8 @@ _.Zones =
 				}),
 				q(30587, {	-- Yakity Yak
 					["cr"] = 59718,	-- Burilgi Despoiler
+					["coord"] = { 70.0, 71.8, 379 },
 					["sourceQuest"] = 30488,	-- The Missing Muskpaw
-					-- TODO: verify if this is available all the time or only after "The Missing Muskpaw"
 				}),
 
 				spell(229385, {	-- Ban-Lu, Grandmaster's Companion
