@@ -25,7 +25,7 @@ _.Zones =
 			q(29611, {	-- The Art of War
 				["description"] = "Players who have not completed Vashj'ir will receive this version of The Art of War.",
 			}),
-			q(34398, {	-- The Dark Portal
+			q(34398, {	-- The Dark Portal (also for alliance, got on KT druid)
 				["description"] = "If you want to do the Blasted Lands questline before going to Draenor, use the portal in Cleft of Shadow and speak to Thrall rather than accepting this quest.",
 			}),
 			q(43926, {	-- The Legion Returns

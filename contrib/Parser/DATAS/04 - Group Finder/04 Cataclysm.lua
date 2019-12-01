@@ -15,7 +15,7 @@ _.GroupFinder =
 				i(113761),	-- Smoldercloth Leggings (unconfirmed but probably drops since other legs drop - running to test)
 				i(113762),	-- Smoldercloth Robe*
 				i(113786),	-- Smoldercloth Slippers*
-				i(113769),	-- Ravaged Leather Boots
+				i(113769),	-- Ravaged Leather Boots*
 				i(113705),	-- Ravaged Leather Bracers
 				i(113698),	-- Ravaged Leather Cap
 				i(113700),	-- Ravaged Leather Helm
