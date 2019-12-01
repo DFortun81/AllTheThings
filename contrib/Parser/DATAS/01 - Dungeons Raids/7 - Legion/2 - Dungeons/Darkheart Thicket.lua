@@ -21,6 +21,10 @@ _.Instances = { tier(7, {	-- Legion
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
+				q(42742, {	-- Darkheart Thicket: Rage Rot
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 			}),
 			d(1, {	-- Normal
 				cr(96512, e(1654, {	-- Archdruid Glaidalis
