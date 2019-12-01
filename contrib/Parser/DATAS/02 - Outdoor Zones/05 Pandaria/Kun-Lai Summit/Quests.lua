@@ -55,7 +55,7 @@ _.Zones =
 					["provider"] = { "n", 68287 },	-- Baine Bloodhoof
 					["sourceQuest"] = 32351,	-- Echoes of Thunder
 				}),
-				q(30808, {	-- A Grummle's Luck -- aa
+				q(30808, {	-- A Grummle's Luck
 					["coord"] = { 64.7, 61.7, 379 },
 					["provider"] = { "n", 59371 },	-- Lucky Eightcoins
 				}),
@@ -133,7 +133,7 @@ _.Zones =
 						30460,	-- Hit Medicine
 					},
 				}),
-				q(30459, {	-- All of the Arrows -- aa
+				q(30459, {	-- All of the Arrows
 					["coord"] = { 70.7, 90.3, 379 },
 					["provider"] = { "n", 59076 },	-- Commander Hsieh
 				}),
@@ -303,7 +303,7 @@ _.Zones =
 					["provider"] = { "n", 60785 },	-- Sage Liao
 					["sourceQuest"] = 30794,	-- Emergency Care
 				}),
-				q(30457, {	-- Call Out Their Leader -- aa
+				q(30457, {	-- Call Out Their Leader
 					["coord"] = { 72.2, 91.8, 379 },
 					["provider"] = { "n", 59073 },	-- Mayor Bramblestaff
 					["g"] = {
@@ -426,7 +426,7 @@ _.Zones =
 						30511,	-- General Nazgrim has Awakened
 					},
 				}),
-				q(30794, {	-- Emergency Care -- aa
+				q(30794, {	-- Emergency Care
 					["coord"] = { 60.6, 21.3, 379 },
 					["provider"] = { "n", 60694 },	-- Sage Liao
 					["sourceQuest"] = 30816,	-- Checking In
@@ -441,7 +441,7 @@ _.Zones =
 						30945,	-- What's Yours Is mine
 					},
 				}),
-				q(30468, {	-- Enraged Vengeance -- aa
+				q(30468, {	-- Enraged Vengeance
 					["coord"] = { 74.7, 88.6, 379 },
 					["provider"] = { "n", 59273 },	-- Swordmistress Mei
 					["g"] = {
@@ -456,7 +456,7 @@ _.Zones =
 						i(84530),	-- Swordmistress' Greatsword
 					},
 				}),
-				q(31279, {	-- Everything I Know About Cooking -- aa
+				q(31279, {	-- Everything I Know About Cooking
 					["coord"] = { 64.2, 61.3, 379 },
 					["provider"] = { "n", 59405 },	-- Li Goldendraft
 					["requireSkill"] = 185,	-- Cooking
@@ -488,11 +488,11 @@ _.Zones =
 					["provider"] = { "n", 61297 },	-- Image of Lorewalker Cho
 					["sourceQuest"] = 30802,	-- Chasing the Storm
 				}),
-				q(30489, {	-- Fresh Needle Scent -- aa
+				q(30489, {	-- Fresh Needle Scent
 					["coord"] = { 71.6, 70.2, 379 },
 					["provider"] = { "n", 59353 },	-- Lao Muskpaw
 				}),
-				q(30967, {	-- Free the Dissenters -- aa
+				q(30967, {	-- Free the Dissenters
 					["coord"] = { 75.1, 87.9, 379 },
 					["provider"] = { "n", 60973 },	-- Waterspeaker Gorai
 				}),
@@ -526,11 +526,11 @@ _.Zones =
 						30460,	-- Hit Medicine
 					},
 				}),
-				q(30824, {	-- Gourmet Kafa -- aa
+				q(30824, {	-- Gourmet Kafa
 					["coord"] = { 40.2, 81.5, 379 },
 					["provider"] = { "n", 60678 },	-- Cousin Littlebrew
 				}),
-				q(30743, {	-- Gourmet Kafa -- aa
+				q(30743, {	-- Gourmet Kafa
 					["coord"] = { 42.3, 69.7, 379 },
 					["provider"] = { "n", 60596 },	-- Cousin Gootfur
 				}),
@@ -556,7 +556,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 67948 },	-- Anduin Wrynn
 				}),
-				q(30460, {	-- Hit Medicine -- aa
+				q(30460, {	-- Hit Medicine
 					["coord"] = { 71.5, 92.8, 379 },
 					["provider"] = { "n", 59077 },	-- Apothecary Cheng
 				}),
@@ -569,7 +569,7 @@ _.Zones =
 				q(30681, {	-- Holed Up (NYI - duplicate/removed)
 					["u"] = 1,
 				}),
-				q(30682, {	-- Holed Up -- aa
+				q(30682, {	-- Holed Up
 					["coord"] = { 42.9, 88.3, 379 },
 					["provider"] = { "n", 60178 },	-- Sya Zhong
 					["g"] = {
@@ -648,7 +648,7 @@ _.Zones =
 					["provider"] = { "n", 60785 },	-- Sage Liao
 					["sourceQuest"] = 30794,	-- Emergency Care
 				}),
-				q(30825, {	-- Kota Blend -- aa
+				q(30825, {	-- Kota Blend
 					["coord"] = { 40.3, 81.5, 379 },
 					["provider"] = { "n", 60677 },	-- Uncle Tallmug
 				}),
@@ -759,7 +759,7 @@ _.Zones =
 						31695,	-- Beyond the Wall
 					},
 				}),
-				q(30467, {	-- My Son... -- aa
+				q(30467, {	-- My Son...
 					["coord"] = { 74.9, 88.8, 379 },
 					["provider"] = { "n", 59263 },	-- Merchant Shi
 					["sourceQuest"] = 31451,	-- The Missing Merchant
@@ -777,7 +777,7 @@ _.Zones =
 					["provider"] = { "n", 61454 },	-- Suna Silentstrike
 					["sourceQuest"] = 30724,	-- To the Wall!
 				}),
-				q(30614, {	-- Oil Stop -- aa
+				q(30614, {	-- Oil Stop
 					["coord"] = { 65.4, 60.8, 379 },
 					["provider"] = { "n", 59402 },	-- Slimy Inkstain
 				}),
@@ -819,7 +819,7 @@ _.Zones =
 						30620,	-- Mogu?! Oh No-gu!
 					},
 				}),
-				q(30999, {	-- Path Less Traveled -- aa
+				q(30999, {	-- Path Less Traveled
 					["coord"] = { 57.3, 61.6, 379 },
 					["provider"] = { "n", 61847 },	-- Lorewalker Cho
 					["sourceQuests"] = {
@@ -850,14 +850,14 @@ _.Zones =
 						30806,	-- The Scent of Life
 					},
 				}),
-				q(30595, {	-- Profiting off of the Past -- aa
+				q(30595, {	-- Profiting off of the Past
 					["coord"] = { 59.6, 78.2, 379 },
 					["provider"] = { "n", 59821 },	-- Bao Jian
 				}),
 				q(30766, {	-- Profiting off of the Past (NYI - duplicate)
 					["u"] = 1,
 				}),
-				q(30469, {	-- Repossession -- aa
+				q(30469, {	-- Repossession
 					["coord"] = { 74.9, 88.8, 379 },
 					["provider"] = { "n", 59263 },	-- Merchant Shi
 				}),
@@ -999,11 +999,11 @@ _.Zones =
 					["sourceQuest"] = 30683,	-- One Traveler's Misfortune
 					["description"] = "This version becomes available if you abandon the first version.",
 				}),
-				q(30742, {	-- Shut it Down -- aa
+				q(30742, {	-- Shut it Down
 					["coord"] = { 42.3, 69.7, 379 },
 					["provider"] = { "n", 60596 },	-- Cousin Gootfur
 				}),
-				q(30823, {	-- Shut it Down -- aa
+				q(30823, {	-- Shut it Down
 					["coord"] = { 40.2, 81.5, 379 },
 					["provider"] = { "n", 60678 },	-- Cousin Littlebrew
 				}),
@@ -1043,7 +1043,7 @@ _.Zones =
 						{ "n", 64521 },	-- Wanderer Chu
 					},
 				}),
-				q(31207, {	-- The Arena of Annihilation -- aa
+				q(31207, {	-- The Arena of Annihilation
 					["lvl"] = 90,
 					["maps"] = { 480 },	-- Arena of Annihilation
 					["coord"] = { 68.6, 48.3, 379 },
@@ -1090,7 +1090,7 @@ _.Zones =
 					["provider"] = { "n", 60679 },	-- Nephew Burrberry
 					["sourceQuest"] = 30747,	-- The Burlap Grind
 				}),
-				q(30592, {	-- The Burlap Trail: To Burlap Waystation -- aa
+				q(30592, {	-- The Burlap Trail: To Burlap Waystation
 					["coord"] = { 58.0, 61.4, 379 },
 					["provider"] = { "n", 59701 },	-- Brother Lintpocket
 				}),
@@ -1213,7 +1213,7 @@ _.Zones =
 						30663,	-- The Ordo Warbringer
 					},
 				}),
-				q(30488, {	-- The Missing Muskpaw -- aa
+				q(30488, {	-- The Missing Muskpaw
 					["coord"] = { 71.6, 70.2, 379 },
 					["provider"] = { "n", 59353 },	-- Lao Muskpaw
 					["sourceQuests"] = {
@@ -1394,7 +1394,7 @@ _.Zones =
 				q(31518, {	-- The Vale of Eternal Blossoms (most likely NYI. "A Witness to History" is the opening of the gates)
 					["u"] = 1,
 				}),
-				q(30496, {	-- The Waterspeaker's Staff -- aa
+				q(30496, {	-- The Waterspeaker's Staff
 					["coord"] = { 75.1, 87.9, 379 },
 					["provider"] = { "n", 60973 },	-- Waterspeaker Gorai
 				}),
@@ -1434,7 +1434,7 @@ _.Zones =
 					["provider"] = { "n", 60161 },	-- Shado-Master Chong
 					["sourceQuest"] = 30690,	-- Unmasking the Yaungol
 				}),
-				q(30616, {	-- Traffic Issues -- aa
+				q(30616, {	-- Traffic Issues
 					["coord"] = { 64.8, 60.4, 379 },
 					["provider"] = { "n", 59597 },	-- Smokey Sootassle
 					["g"] = {
@@ -1449,7 +1449,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 68370 },	-- Lor'themar Theron
 				}),
-				q(30826, {	-- Trouble Brewing -- aa
+				q(30826, {	-- Trouble Brewing
 					["coord"] = { 40.3, 81.5, 379 },
 					["provider"] = { "n", 60677 },	-- Uncle Tallmug
 				}),
