@@ -17,12 +17,7 @@ _.Zones =
 						["sourceQuest"] = 31354,	-- Mazu's Bounty
 					}),
 					crit(4, {	-- Kaz'tik the Manipulator
-						["sourceQuests"] = {
-							31398,	-- Falling to Pieces
-							-- TODO: verify below
-							31092,	-- Feed or Be Eaten
-							31359,	-- The Kunchong Whisperer
-						},
+						["sourceQuest"] = 31398,	-- Falling to Pieces
 					}),
 					crit(1, {	-- Kil'ruk the Wind-Reaver
 						["sourceQuest"] = 31006,	-- The Klaxxi Council
@@ -64,7 +59,7 @@ _.Zones =
 					crit(2, {	-- The Might of the Klaxxi
 						["sourceQuests"] = {
 							31026,	-- The Root of the Problem
-							-- TODO: given the context of this criteria, you probably need to free Skeer, Rik'kal, Malik, Korven and Kaz'tik
+							31398,	-- Falling to Pieces
 						},
 					}),
 					crit(3, {	-- Taste of Amber

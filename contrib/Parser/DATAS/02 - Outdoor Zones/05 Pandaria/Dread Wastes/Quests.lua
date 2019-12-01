@@ -16,6 +16,7 @@ _.Zones =
 					["coord"] = { 54.7, 34.0, 422 },
 					["provider"] = { "n", 64815 },	-- Kor'ik
 					["sourceQuests"] = {
+						31010,	-- In Her Clutch
 						31660,	-- Not Fit to Swarm
 						31007,	-- The Dread Clutches
 					},
@@ -31,13 +32,16 @@ _.Zones =
 					["coord"] = { 54.3, 35.8, 422 },
 					["isDaily"] = true,
 					["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
+					["sourceQuests"] = {
+						31092,	-- Feed or Be Eaten
+						31359,	-- The Kunchong Whisperer
+					},
 				}),
 				q(31730, {	-- A Not So Friendly Request
 					["coord"] = { 55.0, 35.8, 422 },
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					["isBreadcrumb"] = true,
-					["minReputation"] = { 1337, REVERED },
-					-- TODO: verify if this has sourceQuest(s) or not
+					["sourceQuest"] = 31398,	-- Falling to Pieces
 				}),
 				q(31210, {	-- A Shade of Dread
 					["coord"] = { 28.6, 42.1, 422 },
@@ -79,6 +83,7 @@ _.Zones =
 					["coord"] = { 54.3, 36.0, 422 },
 					["isDaily"] = true,
 					["provider"] = { "n", 62180 },	-- Korven the Prime
+					["sourceQuest"] = 31026,	-- The Root of the Problem
 				}),
 				q(31676, {	-- Ancient Vengeance
 					["coord"] = { 70.1, 25.6, 422 },
@@ -88,6 +93,7 @@ _.Zones =
 				q(31271, {	-- Bad Genes
 					["coord"] = { 54.4, 35.9, 422 },
 					["isDaily"] = true,
+					["sourceQuest"] = 31606,	-- The Dissector Wakens
 					["providers"] = {
 						{ "n", 63072 },	-- Rik'kal the Dissector
 						{ "n", 67091 },	-- Rik'kal the Dissector
@@ -103,6 +109,7 @@ _.Zones =
 					["provider"] = { "n", 65365 },	-- Kor'ik
 					["altQuests"] = { 31681 },	-- Better With Age
 					["sourceQuest"] = 31087,	-- Extending Our Coverage
+					["description"] = "This version is available if Kor'ik has not been killed yet.",
 					["g"] = {
 						i(84635),	-- Amberglow Locket
 						i(84636),	-- Amberglow Choker
@@ -111,11 +118,12 @@ _.Zones =
 						i(84639),	-- Amberglow Amulet
 					},
 				}),
-				q(31681, {	-- Better With Age (possible duplicate or phase-related?)
+				q(31681, {	-- Better With Age
 					["coord"] = { 48.1, 49.6, 422 },
 					["provider"] = { "n", 65975 },	-- Zer'ik
 					["altQuests"] = { 31090 },	-- Better With Age
 					["sourceQuest"] = 31679,	-- Extending Our Coverage
+					["description"] = "This version is available if Kor'ik has been killed.",
 					["g"] = {
 						i(84635),	-- Amberglow Locket
 						i(84636),	-- Amberglow Choker
@@ -128,9 +136,10 @@ _.Zones =
 					["coord"] = { 38.6, 17.2, 422 },
 					["provider"] = { "n", 62771 },	-- Chief Rikkitun
 					["sourceQuests"] = {
+						31080,	-- Fiery Wings
 						31082,	-- Great Vessel of Salvation
+						31081,	-- Incantations Fae and Primal
 						31079,	-- The Horror Comes A-Rising
-						-- TODO: determine if "Incantations Fae and Primal" and "Fiery Wings" are also needed
 					},
 				}),
 				q(31086, {	-- Blood of Ancients
@@ -155,7 +164,6 @@ _.Zones =
 					["provider"] = { "n", 62666 },	-- Sapmaster Vu
 					["sourceQuests"] = {
 						31070,	-- Daggers of the Great Ones
-						-- TODO: verify below
 						31069,	-- Bound With Shade
 					},
 				}),
@@ -163,20 +171,26 @@ _.Zones =
 					["coord"] = { 54.3, 35.8, 422 },
 					["isDaily"] = true,
 					["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
+					["sourceQuests"] = {
+						31092,	-- Feed or Be Eaten
+						31359,	-- The Kunchong Whisperer
+					},
 				}),
 				q(31682, {	-- By the Sea, Nevermore
 					["coord"] = { 48.1, 49.6, 422 },
 					["provider"] = { "n", 65975 },	-- Zer'ik
 					["altQuests"] = { 31089 },	-- By the Sea, Nevermore
+					["description"] = "This version is available if Kor'ik has been killed.",
 					["sourceQuests"] = {
 						31681,	-- Better With Age
 						31680,	-- Crime and Punishment
 					},
 				}),
-				q(31089, {	-- By the Sea, Nevermore (possible duplicate or phase-related?)
+				q(31089, {	-- By the Sea, Nevermore
 					["coord"] = { 48.1, 49.6, 422 },
 					["provider"] = { "n", 65365 },	-- Kor'ik
 					["altQuests"] = { 31682 },	-- By the Sea, Nevermore
+					["description"] = "This version is available if Kor'ik has not been killed yet.",
 					["sourceQuests"] = {
 						31090,	-- Better With Age
 						31088,	-- Crime and Punishment
@@ -186,6 +200,7 @@ _.Zones =
 					["coord"] = { 55.0, 35.4, 422 },
 					["provider"] = { "n", 62774 },	-- Malik the Unscathed
 					["sourceQuests"] = {
+						31010,	-- In Her Clutch
 						31660,	-- Not Fit to Swarm
 						31007,	-- The Dread Clutches
 					},
@@ -207,11 +222,13 @@ _.Zones =
 					["provider"] = { "n", 65975 },	-- Zer'ik
 					["altQuests"] = { 31088 },	-- Crime and Punishment
 					["sourceQuest"] = 31087,	-- Extending Our Coverage
+					["description"] = "This version is available if Kor'ik has been killed.",
 				}),
-				q(31088, {	-- Crime and Punishment (possible duplicate or phase-related?)
+				q(31088, {	-- Crime and Punishment
 					["provider"] = { "n", 65365 },	-- Kor'ik
 					["altQuests"] = { 31680 },	-- Crime and Punishment
 					["sourceQuest"] = 31679,	-- Extending Our Coverage
+					["description"] = "This version is available if Kor'ik has not been killed yet.",
 				}),
 				q(31109, {	-- Culling the Swarm
 					["coord"] = { 55.0, 35.8, 422 },
@@ -263,12 +280,12 @@ _.Zones =
 					["sourceQuest"] = 31183,	-- Meet the Cap'n
 				}),
 				q(31000, {	-- Dread Space
-					["coord"] = { 50.6, 11.8, 422 },
+					["coord"] = { 50.7, 11.7, 422 },
 					["provider"] = { "n", 62667 },	-- Lya of Ten Songs
 					["isBreadcrumb"] = true,
 				}),
 				q(31886, {	-- Dread Space
-					["coord"] = { 56.0, 70.2, 422 },
+					["coord"] = { 56.0, 70.1, 422 },
 					["provider"] = { "n", 63498 },	-- Min the Breeze Rider
 					["isBreadcrumb"] = true,
 				}),
@@ -276,6 +293,7 @@ _.Zones =
 					["coord"] = { 55.0, 35.8, 422 },
 					["isDaily"] = true,
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
+					["sourceQuest"] = 31066,	-- A Cry From Darkness
 				}),
 				q(31439, {	-- Dropping Our Signal
 					["coord"] = { 54.7, 34.0, 422 },
@@ -286,6 +304,7 @@ _.Zones =
 					["coord"] = { 55.0, 35.8, 422 },
 					["isDaily"] = true,
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
+					["sourceQuest"] = 31066,	-- A Cry From Darkness
 				}),
 				q(31077, {	-- Evie Stormstout
 					["coord"] = { 54.0, 20.4, 422 },
@@ -326,12 +345,15 @@ _.Zones =
 					["coord"] = { 14.1, 76.9, 390 },
 					["provider"] = { "n", 62112 },	-- Bowmistress Li
 					["sourceQuests"] = {
+						-- NOTE: all of these are breadcrumbs from multiple places.. crazy
+						31847,	-- Better Dead than Dread
 						31895,	-- Better Off Dread
 						31000,	-- Dread Space
 						31886,	-- Dread Space
 						49561,	-- Hero's Call: Dread Wastes!
 						31390,	-- The Klaxxi (A)
 						31391,	-- The Klaxxi (H)
+						31656,	-- The Threat in the South
 						49543,	-- Warchief's Command: Dread Wastes!
 					},
 				}),
@@ -351,10 +373,10 @@ _.Zones =
 						i(84634),	-- Sunst Armored Chestpiece
 					},
 				}),
-				q(31129, {	-- Fate of the Stormstouts
+				q(31129, {	-- Fate of the Stormstouts (NYI - appears to be an used duplicate?)
+					["u"] = 1,
 					["coord"] = { 50.4, 12.0, 422 },
 					["provider"] = { "n", 62779 },	-- Chen Stormstout
-					-- TODO: determine when this version is available
 				}),
 				q(31076, {	-- Fate of the Stormstouts
 					["coord"] = { 50.4, 12.0, 422 },
@@ -364,6 +386,7 @@ _.Zones =
 				q(31509, {	-- Fear Takes Root
 					["coord"] = { 54.4, 35.9, 422 },
 					["isDaily"] = true,
+					["sourceQuest"] = 31606,	-- The Dissector Wakens
 					["providers"] = {
 						{ "n", 63072 },	-- Rik'kal the Dissector
 						{ "n", 67091 },	-- Rik'kal the Dissector
@@ -436,7 +459,7 @@ _.Zones =
 				q(31727, {	-- Gambling Problem
 					["coord"] = { 55.0, 35.5, 422 },
 					["provider"] = { "n", 64599 },	-- Ambersmith Zikk
-					["sourceQuest"] = 31026,	-- The Root of the Problem -- TODO: verify this. May require Revered with the klaxxi
+					["sourceQuest"] = 31398,	-- Falling to Pieces
 					["isBreadcrumb"] = true,
 				}),
 				q(31082, {	-- Great Vessel of Salvation
@@ -478,7 +501,6 @@ _.Zones =
 					["provider"] = { "n", 63218 },	-- Defender Azzo
 					["sourceQuests"] = {
 						31070,	-- Daggers of the Great Ones
-						-- TODO: verify below
 						31069,	-- Bound With Shade
 					},
 					["g"] = {
@@ -497,6 +519,10 @@ _.Zones =
 					["coord"] = { 54.3, 35.8, 422 },
 					["isDaily"] = true,
 					["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
+					["sourceQuests"] = {
+						31092,	-- Feed or Be Eaten
+						31359,	-- The Kunchong Whisperer
+					},
 				}),
 				q(31598, {	-- Kypa'rak's Core
 					["cr"] = 65229,	-- Kypa'rak
@@ -548,11 +574,13 @@ _.Zones =
 					["coord"] = { 54.3, 36.0, 422 },
 					["isDaily"] = true,
 					["provider"] = { "n", 62180 },	-- Korven the Prime
+					["sourceQuest"] = 31026,	-- The Root of the Problem
 				}),
 				q(31267, {	-- Mistblade Destruction
 					["coord"] = { 55.0, 35.8, 422 },
 					["isDaily"] = true,
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
+					["sourceQuest"] = 31066,	-- A Cry From Darkness
 				}),
 				q(31002, {	-- Nope
 					["coord"] = { 14.1, 76.9, 390 },
@@ -573,6 +601,7 @@ _.Zones =
 					["coord"] = { 55.0, 35.8, 422 },
 					["isDaily"] = true,
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
+					["sourceQuest"] = 31066,	-- A Cry From Darkness
 				}),
 				q(31660, {	-- Not Fit to Swarm
 					["coord"] = { 54.9, 34.0, 422 },
@@ -590,8 +619,14 @@ _.Zones =
 					["sourceQuest"] = 31183,	-- Meet the Cap'n
 				}),
 				q(32030, {	-- Once in a Hundred Lifetimes
-					["coord"] = { 54.7, 72.1, 422 },
-					["provider"] = { "n", 63349 },	-- Deck Boss Arie
+					["coords"] = {
+						{ 54.7, 72.1, 422 },
+						{ 50.2, 12.0, 422 },
+					},
+					["providers"] = {
+						{ "n", 63349 },	-- Deck Boss Arie
+						{ "n", 62667 },	-- Lya of Ten Songs
+					},
 					["sourceQuests"] = {
 						31398,	-- Falling to Pieces
 						31085,	-- Fires and Fears of Old
@@ -647,6 +682,7 @@ _.Zones =
 				q(31234, {	-- Putting An Eye Out
 					["coord"] = { 54.4, 35.9, 422 },
 					["isDaily"] = true,
+					["sourceQuest"] = 31606,	-- The Dissector Wakens
 					["providers"] = {
 						{ "n", 63072 },	-- Rik'kal the Dissector
 						{ "n", 67091 },	-- Rik'kal the Dissector
@@ -665,22 +701,24 @@ _.Zones =
 					["coord"] = { 54.3, 35.8, 422 },
 					["isDaily"] = true,
 					["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
+					["sourceQuests"] = {
+						31092,	-- Feed or Be Eaten
+						31359,	-- The Kunchong Whisperer
+					},
 				}),
 				q(31189, {	-- Reeltime Strategy
 					["coord"] = { 54.7, 72.1, 422 },
 					["provider"] = { "n", 63349 },	-- Deck Boss Arie
 					["sourceQuests"] = {
 						31184,	-- Old Age and Treachery
-						-- TODO: verify below:
-						31185,	-- Walking Dog
 						31187,	-- On the Crab
 						31188,	-- Shark Week
 					},
 				}),
 				q(31023, {	-- Relics of the Swarm
 					["cr"] = 61970,	-- Mistblade Ripper
+					["coord"] = { 62.9, 57.8, 422 },
 					["provider"] = { "i", 82870 },	-- Strange Relic
-					-- TODO: does this have a sourceQuest?
 				}),
 				q(31072, {	-- Rending Daggers
 					["coord"] = { 50.7, 11.7, 422 },
@@ -701,7 +739,10 @@ _.Zones =
 				q(31091, {	-- Reunited
 					["coord"] = { 43.3, 63.4, 422 },
 					["provider"] = { "n", 63876 },	-- Kaz'tik the Manipulator
-					["sourceQuest"] = 31089,	-- By the Sea, Nevermore
+					["sourceQuests"] = {
+						31089,	-- By the Sea, Nevermore (Kor'ik version)
+						31682,	-- By the Sea, Nevermore (Zer'ik version)
+					},
 					["g"] = {
 						i(83983),	-- Motherseed Hood
 						i(83984),	-- Sapfly Helm
@@ -717,7 +758,8 @@ _.Zones =
 				q(31068, {	-- Sacred Recipe
 					["coord"] = { 53.1, 12.4, 422 },
 					["provider"] = { "o", 212389 },	-- Scroll of Auspice
-					-- TODO: determine sourceQuest. At minimum the zone requires "A Cry From Darkness"
+					["sourceQuest"] = 31398,	-- Falling to Pieces
+					["description"] = "Must be on or have completed |cFFFFD700The Heavens Hum With War|r.",
 					["g"] = {
 						i(84071),	-- Charm of Ten Songs
 						i(84072),	-- Braid of Ten Songs
@@ -734,6 +776,7 @@ _.Zones =
 					["coord"] = { 54.3, 36.0, 422 },
 					["isDaily"] = true,
 					["provider"] = { "n", 62180 },	-- Korven the Prime
+					["sourceQuest"] = 31026,	-- The Root of the Problem
 				}),
 				q(31603, {	-- Seeds of Fear
 					["coord"] = { 55.0, 35.6, 422 },
@@ -745,6 +788,10 @@ _.Zones =
 					["coord"] = { 54.3, 35.8, 422 },
 					["isDaily"] = true,
 					["provider"] = { "n", 63758 },	-- Kaz'tik the Manipulator
+					["sourceQuests"] = {
+						31092,	-- Feed or Be Eaten
+						31359,	-- The Kunchong Whisperer
+					},
 				}),
 				q(31612, {	-- Shadow of the Empire
 					["coord"] = { 55.1, 35.9, 422 },
@@ -783,6 +830,7 @@ _.Zones =
 					["coord"] = { 55.0, 35.8, 422 },
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					["sourceQuest"] = 31066,	-- A Cry From Darkness
+					["minReputation"] = { 1337, HONORED },
 				}),
 				q(31487, {	-- Sonic Disruption
 					["coord"] = { 54.2, 35.7, 422 },
@@ -796,6 +844,7 @@ _.Zones =
 				q(31508, {	-- Specimen Request
 					["coord"] = { 54.4, 35.9, 422 },
 					["isDaily"] = true,
+					["sourceQuest"] = 31606,	-- The Dissector Wakens
 					["providers"] = {
 						{ "n", 63072 },	-- Rik'kal the Dissector
 						{ "n", 67091 },	-- Rik'kal the Dissector
@@ -804,13 +853,16 @@ _.Zones =
 				q(31075, {	-- Sunset Kings
 					["coord"] = { 51.2, 11.3, 422 },
 					["provider"] = { "n", 62666 },	-- Sapmaster Vu
-					["sourceQuest"] = 31073,	-- Bound With Wood
+					["sourceQuests"] = {
+						31073,	-- Bound With Wood
+						31078,	-- Han Stormstout
+					},
 				}),
 				q(31606, {	-- The Dissector Wakens
 					["coord"] = { 31.8, 88.9, 422 },
 					["provider"] = { "n", 65253 },	-- Rik'kal the Dissector
 					["sourceQuests"] = {
-						31066,	-- A Cry From Darkness -- TODO: verify this
+						31066,	-- A Cry From Darkness
 						31605,	-- The Zan'thik Dig (breadcrumb - only invalidates if you complete "The Dissector Wakens" so it's slightly different than normal breadcrumbs)
 					},
 					["g"] = {
@@ -837,7 +889,6 @@ _.Zones =
 					["coord"] = { 55.0, 35.4, 422 },
 					["provider"] = { "n", 62774 },	-- Malik the Unscathed
 					["sourceQuest"] = 31661,	-- A Source of Terrifying Power
-					-- TODO: verify sourceQuest
 				}),
 				q(31959, {	-- The Empress' Gambit
 					["coord"] = { 55.1, 35.5, 422 },
@@ -849,11 +900,15 @@ _.Zones =
 					["coord"] = { 54.3, 36.0, 422 },
 					["isDaily"] = true,
 					["provider"] = { "n", 62180 },	-- Korven the Prime
+					["sourceQuest"] = 31026,	-- The Root of the Problem
 				}),
 				q(31067, {	-- The Heavens Hum With War
 					["coord"] = { 51.2, 11.3, 422 },
 					["provider"] = { "n", 62666 },	-- Sapmaster Vu
-					["sourceQuest"] = 31730,	-- A Not So Friendly Request
+					["sourceQuests"] = {
+						31066,	-- A Cry From Darkness
+						31730,	-- A Not So Friendly Request
+					},
 				}),
 				q(31079, {	-- The Horror Comes A-Rising
 					["coord"] = { 38.1, 17.3, 422 },
@@ -953,6 +1008,7 @@ _.Zones =
 					["coord"] = { 54.3, 36.0, 422 },
 					["isDaily"] = true,
 					["provider"] = { "n", 62180 },	-- Korven the Prime
+					["sourceQuest"] = 31026,	-- The Root of the Problem
 				}),
 				q(31179, {	-- The Scent of Blood
 					["coord"] = { 25.7, 50.6, 422 },
@@ -1001,6 +1057,7 @@ _.Zones =
 					["coord"] = { 55.0, 35.8, 422 },
 					["isDaily"] = true,
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
+					["sourceQuest"] = 31066,	-- A Cry From Darkness
 				}),
 				q(31005, {	-- Wakening Sickness
 					["coord"] = { 70.1, 25.6, 422 },
