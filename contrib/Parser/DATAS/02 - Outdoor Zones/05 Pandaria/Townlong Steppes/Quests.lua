@@ -100,7 +100,7 @@ _.Zones =
 				q(31032, {	-- Choking the Skies
 					["coord"] = { 51.2, 83.0, 388 },
 					["provider"] = { "n", 62573 },	-- Marksman Ye
-					["sourceQuest"] = 30976,	-- Joining the Hunt -- TODO: verify this
+					["sourceQuest"] = 30976,	-- Joining the Hunt
 					["g"] = {
 						i(88589),	-- Cremating Torch
 					},
@@ -310,11 +310,7 @@ _.Zones =
 				q(30897, {	-- In the Wrong Hands
 					["coord"] = { 70.3, 86.6, 388 },
 					["provider"] = { "n", 61880 },	-- Initiate Chao
-					["sourceQuests"] = {
-						30892,	-- Back on Their Feet
-						30894,	-- Rummaging Through the Remains
-						30893,	-- The Endless Swarm
-					},
+					["sourceQuest"] = 30891,	-- Treatment for the Troops
 				}),
 				q(30972, {	-- Joining the Fight
 					["coord"] = { 67.3, 80.6, 388 },
@@ -404,7 +400,8 @@ _.Zones =
 				q(30931, {	-- My Father's Crossbow
 					["coord"] = { 43.8, 65.7, 388 },
 					["provider"] = { "n", 61539 },	-- Ku-Mo
-					-- TODO: determine sourceQuests. this isn't always available. Possibly a phasing issue?
+					["sourceQuest"] = 30926,	-- The Terrible Truth
+					-- Note: this may be more dependent on phasing than sourceQuest, but this reliably made Ku-mo show up
 				}),
 				q(30922, {	-- Natural Antiseptic
 					["coord"] = { 49.1, 71.3, 388 },
@@ -909,11 +906,7 @@ _.Zones =
 				q(30896, {	-- Thieves and Troublemakers
 					["coord"] = { 70.4, 86.3, 388 },
 					["provider"] = { "n", 61881 },	-- Initiate Feng
-					["sourceQuests"] = {
-						30892,	-- Back on Their Feet
-						30894,	-- Rummaging Through the Remains
-						30893,	-- The Endless Swarm
-					},
+					["sourceQuest"] = 30891,	-- Treatment for the Troops
 				}),
 				q(31687, {	-- Thinning the Sik'thik
 					["coord"] = { 53.9, 78.1, 388 },
