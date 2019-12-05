@@ -229,8 +229,8 @@ _.PVP =
 				i(134786),	-- Entrenched Handwraps*
 				i(134784),	-- Entrenched Raiment*
 				i(134785),	-- Entrenched Treads
-				i(134792),	-- Ruinous Boots
-				i(134793),	-- Ruinous Gloves
+				i(134792),	-- Ruinous Boots*
+				i(134793),	-- Ruinous Gloves*
 				i(134794),	-- Ruinous Helm*
 				i(134791),	-- Ruinous Tunic*
 				i(134795),	-- Ironbranded Chainmail
