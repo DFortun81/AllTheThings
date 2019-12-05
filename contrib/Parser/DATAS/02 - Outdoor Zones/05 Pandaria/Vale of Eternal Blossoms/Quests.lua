@@ -113,7 +113,7 @@ _.Zones =
 					["sourceQuest"] = 32806,	-- The King and the Council
 					["provider"] = { "n", 61962 },	-- Lorewalker Cho
 					["coord"] = { 83.2, 29.6, 390 },
-					["maps"] = { 520 },	-- Vale of Eternal Blossoms (Dark Heart of Pandaria scenario)
+					["maps"] = { 520, 521 },	-- Vale of Eternal Blossoms (Dark Heart of Pandaria scenario)
 					["lvl"] = 90,
 					["g"] = {
 						i(98133),	-- Greater Cache of Treasures

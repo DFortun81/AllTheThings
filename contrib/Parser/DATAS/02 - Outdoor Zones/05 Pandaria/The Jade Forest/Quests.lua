@@ -6,6 +6,12 @@ _.Zones =
 	m(424, {	-- Pandaria
 		m(371, { -- The Jade Forest
 			n(-17, {	-- Quests
+				q(29560, {	-- Ancient Power
+					["sourceQuests"] = { 29553 },	-- The Missing Admiral
+					["provider"] = { "n", 55196 },	-- Bold Karasshi
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 54.1, 82.5, 371 },
+				}),
 				q(29552, {	-- Critical Condition
 					["sourceQuests"] = {
 						31736,	-- Envoy of the Alliance
@@ -29,6 +35,15 @@ _.Zones =
 					["coord"] = { 46.4, 96.3, 371 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(29762, {	-- Family Heirlooms
+					["sourceQuests"] = {
+						29883,	-- The Pearlfin Situation
+						29885,	-- Road Rations
+					},
+					["provider"] = { "n", 56222 },	-- Bold Karasshi
+					["coord"] = { 58.9, 81.7, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(31742, {	-- Fractured Forces
 					["sourceQuests"]  = {
 						31738,	-- Pillaging Peons
@@ -39,17 +54,61 @@ _.Zones =
 					["coord"] = { 46.1, 84.7, 371 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(29559, {	-- Freeing Our Brothers
+					["sourceQuests"] = { 29553 },	-- The Missing Admiral
+					["provider"] = { "n", 55196 },	-- Bold Karasshi
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 54.1, 82.5, 371 },
+					["g"] = {
+						i(81022),	-- Cagebreaker's Leather Belt
+						i(81023),	-- Cagebreaker's Chain Links
+						i(81024),	-- Cagebreaker's Silk Cord
+						i(81025),	-- Cagebreaker's Satin Cord
+						i(81026),	-- Cagebreaker's Hide Belt
+						i(81027),	-- Cagebreaker's Ringmail Waistguard
+						i(81028),	-- Cagebreaker's Burnished Clasp
+						i(81029),	-- Cagebreaker's Armored Girdle
+						i(81030),	-- Cagebreaker's Heavy Girdle
+					},
+				}),
 				q(29556, {	-- Hozen Aren't Your Friends, Hozen Are Your Enemies
 					["sourceQuests"] = { 31745 },	-- Onward and Inward
 					["provider"] = { "n", 66292 },	-- Sky Admiral Rogers
 					["coord"] = { 48.0, 88.3, 371 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(29562, {	-- Jailbreak
+					["sourceQuests"] = { 29759 },	-- Kung Din
+					["provider"] = { "n", 55196 },	-- Bold Karasshi
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 54.1, 82.5, 371 },
+				}),
 				q(31740, {	-- Koukou's Rampage
 					["sourceQuests"] = { 31739 },  -- Priorities!
 					["provider"] = { "n", 66199 },	-- Lin Applebloom
 					["coord"] = { 39.6, 90.0, 371 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29759, {	-- Kung Din
+					["sourceQuests"] = {
+						29558,	-- The Path of War
+						29559,	-- Freeing Our Brothers
+						29560,	-- Ancient Power
+					},
+					["provider"] = { "n", 55196 },	-- Bold Karasshi
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 54.1, 82.5, 371 },
+					["g"] = {
+						i(90371),	-- Landfall Burnished Greaves
+						i(90366),	-- Landfall Chain Boots
+						i(90365),	-- Landfall Leather Boots
+						i(90369),	-- Landfall Moccasins
+						i(90373),	-- Landfall Plate Boots
+						i(90370),	-- Landfall Sabatons
+						i(90368),	-- Landfall Satin Treads
+						i(90367),	-- Landfall Silk Treads
+						i(90372),	-- Landfall Warboots
+					},
 				}),
 				q(30069, {	-- No Plan Survives Contact with the Enemy
 					["sourceQuests"] = { 31733 },	-- Touching Ground
@@ -84,6 +143,43 @@ _.Zones =
 					["coord"] = { 46.1, 84.7, 371 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(29885, {	-- Road Rations
+					["sourceQuests"]  = { 29562 },	-- Jailbreak
+					["provider"] = { "n", 66949 },	-- Rell Nightwind
+					["coord"] = { 58.8, 81.9, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29725, {	-- SI:7 Report: Fire From the Sky
+					["sourceQuests"] = { 29733 },	-- SI:7 Report: Lost in the Woods
+					["provider"] = { "n", 55282 },	-- Sully "The Pickle" McLeary
+					["coord"] = { 58.8, 81.7, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29726, {	-- SI:7 Report: Hostile Natives
+					["sourceQuests"] = { 29725 },	-- SI:7 Report: Fire From the Sky
+					["provider"] = { "n", 55284 },	-- Little Lu
+					["coord"] = { 59.0, 81.9, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29733, {	-- SI:7 Report: Lost in the Woods
+					["sourceQuests"] = { 29894 },	-- Spirits of the Water
+					["provider"] = { "n", 55333 },	-- Rell Nightwind
+					["coord"] = { 58.9, 81.8, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29727, {	-- SI:7 Report: Take No Prisoners
+					["sourceQuests"] = { 29726 },	-- SI:7 Report: Take No Prisoners
+					["provider"] = { "n", 55283 },	-- Amber Kearnen
+					["coord"] = { 58.8, 81.9, 371 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(80768),	-- Moonwater Ring
+						i(80769),	-- Serpentspine Band
+						i(80770),	-- Lurking Tiger Band
+						i(80771),	-- Ring of Restoration
+						i(80772),	-- Blossoming Ring
+					},
+				}),
 				q(31743, {	-- Smoke Before Fire
 					["sourceQuests"]  = {
 						31738,	-- Pillaging Peons
@@ -94,10 +190,28 @@ _.Zones =
 					["coord"] = { 46.1, 84.7, 371 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(29894, {	-- Spirits of the Water
+					["sourceQuests"] = {
+						29762,	-- Family Heirlooms
+						29887,	-- The Elder's Instruments
+					},
+					["provider"] = { "n", 59058 },	-- Pearlkeeper Fujin
+					["coord"] = { 58.7, 81.3, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(31737, {	-- The Cost of War
 					["sourceQuests"] = { 31735 },	-- The Right Tool For The Job
 					["provider"] = { "n", 54617 },	-- Rell Nightwind
 					["coord"] = { 46.4, 96.3, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29887, {	-- The Elder's Instruments
+					["sourceQuests"] = {
+						29883,	-- The Pearlfin Situation
+						29885,	-- Road Rations
+					},
+					["provider"] = { "n", 59058 },	-- Pearlkeeper Fujin
+					["coord"] = { 58.7, 81.3, 371 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(30070, {	-- The Fall of Ga'trul
@@ -121,6 +235,27 @@ _.Zones =
 						i(90341),	-- Peacebreaker's Satin Hood
 						i(90340),	-- Peacebreaker's Silk Cowl
 					},
+				}),
+				q(29553, {	-- The Missing Admiral
+					["sourceQuests"] = {
+						29555,	-- The White Pawn
+						29556,	-- Hozen Aren't Your Friends, Hozen Are Your Enemies
+					},
+					["provider"] = { "n", 54615 },	-- Nodd Codejack
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 50.4, 88.2, 371 },
+				}),
+				q(29558, {	-- The Path of War
+					["sourceQuests"] = { 29553 },	-- The Missing Admiral
+					["provider"] = { "n", 55196 },	-- Bold Karasshi
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 54.1, 82.5, 371 },
+				}),
+				q(29883, {	-- The Pearlfin Situation
+					["sourceQuests"]  = { 29562 },	-- Jailbreak
+					["provider"] = { "n", 66949 },	-- Rell Nightwind
+					["coord"] = { 58.8, 81.9, 371 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31735, {	-- The Right Tool For The Job
 					["sourceQuests"] = {
@@ -228,92 +363,6 @@ _.Zones =
 	ach(6300, {	-- Upjade Complete [Alliance]
 		["races"] = ALLIANCE_ONLY,	-- Alliance
 		["g"] = {
-			crit(1, {	-- Paw'don Village
-			}),
-			crit(2, {	-- The Waterspeaking Ceremony
-				q(29560, {	-- Ancient Power
-					["provider"] = { "n", 55196 },	-- Bold Karasshi
-					["sourceQuests"] = { 29553 },	-- The Missing Admiral
-				}),
-				q(29762, {	-- Family Heirlooms
-					["provider"] = { "n", 56222 },	-- Bold Karasshi
-					["sourceQuests"] = {
-						29883,	-- The Pearlfin Situation
-						29885,	-- Road Rations
-					},
-				}),
-				q(29559, {	-- Freeing Our Brothers
-					["provider"] = { "n", 55196 },	-- Bold Karasshi
-					["sourceQuests"] = { 29553 },	-- The Missing Admiral
-					["g"] = {
-						i(81022),	-- Cagebreaker's Leather Belt
-						i(81023),	-- Cagebreaker's Chain Links
-						i(81024),	-- Cagebreaker's Silk Cord
-						i(81025),	-- Cagebreaker's Satin Cord
-						i(81026),	-- Cagebreaker's Hide Belt
-						i(81027),	-- Cagebreaker's Ringmail Waistguard
-						i(81028),	-- Cagebreaker's Burnished Clasp
-						i(81029),	-- Cagebreaker's Armored Girdle
-						i(81030),	-- Cagebreaker's Heavy Girdle
-					},
-				}),
-				q(29562, {	-- Jailbreak
-					["provider"] = { "n", 55196 },	-- Bold Karasshi
-					["sourceQuests"] = { 29759 },	-- Kung Din
-				}),
-				q(29759, {	-- Kung Din
-					["provider"] = { "n", 55196 },	-- Bold Karasshi
-					["sourceQuests"] = {
-						29558,	-- The Path of War
-						29559,	-- Freeing Our Brothers
-						29560,	-- Ancient Power
-					},
-					["g"] = {
-						i(90371),	-- Landfall Burnished Greaves
-						i(90366),	-- Landfall Chain Boots
-						i(90365),	-- Landfall Leather Boots
-						i(90369),	-- Landfall Moccasins
-						i(90373),	-- Landfall Plate Boots
-						i(90370),	-- Landfall Sabatons
-						i(90368),	-- Landfall Satin Treads
-						i(90367),	-- Landfall Silk Treads
-						i(90372),	-- Landfall Warboots
-					},
-				}),
-				q(29885, {	-- Road Rations
-					["provider"] = { "n", 66949 },	-- Rell Nightwind
-					["sourceQuests"]  = { 29562 },	-- Jailbreak
-				}),
-				q(29894, {	-- Spirits of the Water [Note: Final Quest needed to trigger criteria]
-					["provider"] = { "n", 59058 },	-- Pearlkeeper Fujin
-					["sourceQuests"] = {
-						29762,	-- Family Heirlooms
-						29887,	-- The Elder's Instruments
-					},
-				}),
-				q(29887, {	-- The Elder's Instruments
-					["provider"] = { "n", 59058 },	-- Pearlkeeper Fujin
-					["sourceQuests"] = {
-						29883,	-- The Pearlfin Situation
-						29885,	-- Road Rations
-					},
-				}),
-				q(29553, {	-- The Missing Admiral
-					["provider"] = { "n", 54615 },	-- Nodd Codejack
-					["sourceQuests"] = {
-						29555,	-- The White Pawn
-						29556,	-- Hozen Aren't Your Friends, Hozen Are Your Enemies
-					},
-				}),
-				q(29558, {	-- The Path of War
-					["provider"] = { "n", 55196 },	-- Bold Karasshi
-					["sourceQuests"] = { 29553 },	-- The Missing Admiral
-				}),
-				q(29883, {	-- The Pearlfin Situation
-					["provider"] = { "n", 66949 },	-- Rell Nightwind
-					["sourceQuests"]  = { 29562 },	-- Jailbreak
-				}),
-			}),
 			crit(3, {	-- The White Pawn
 			}),
 			crit(4, {	-- Pearlfin Village
@@ -344,23 +393,6 @@ _.Zones =
 				q(29905, {	-- Let Them Burn [Note: 1 of 2 Final Quest needed to trigger criteria]
 					["provider"] = { "n", 60970 },	-- Admiral Taylor
 					["sourceQuests"] = { 29904 },	-- Bigger Fish to Fry
-				}),
-
-				q(29725, {	-- SI:7 Report: Fire From the Sky
-					["provider"] = { "n", 55282 },	-- Sully "The Pickle" McLeary
-					["sourceQuests"] = { 29733 },	-- SI:7 Report: Lost in the Woods
-				}),
-				q(29726, {	-- SI:7 Report: Hostile Natives
-					["provider"] = { "n", 55284 },	-- Little Lu
-					["sourceQuests"] = { 29725 },	-- SI:7 Report: Fire From the Sky
-				}),
-				q(29733, {	-- SI:7 Report: Lost in the Woods
-					["provider"] = { "n", 55333 },	-- Rell Nightwind
-					["sourceQuests"] = { 29894 },	-- Spirits of the Water
-				}),
-				q(29727, {	-- SI:7 Report: Take No Prisoners
-					["provider"] = { "n", 55283 },	-- Amber Kearnen
-					["sourceQuests"] = { 29726 },	-- SI:7 Report: Take No Prisoners
 				}),
 			}),
 			crit(5, {	-- Dawn's Blossom

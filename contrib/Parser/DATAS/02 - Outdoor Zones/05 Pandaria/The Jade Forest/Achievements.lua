@@ -32,7 +32,7 @@ _.Zones =
 							["sourceQuests"] = { 31745 },	-- Onward and Inward
 						}),
 						crit(2, {	-- The Waterspeaking Ceremony
-						--	["sourceQuests"] = {  },	-- 
+							["sourceQuests"] = { 29894 },	-- Spirits of the Water
 						}),
 						crit(3, {	-- The White Pawn
 						--	["sourceQuests"] = {  },	-- 

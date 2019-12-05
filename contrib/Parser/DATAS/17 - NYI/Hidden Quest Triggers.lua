@@ -290,9 +290,11 @@ _.NeverImplemented =
 		q(30087),	-- FLAG - Kung Fu Intro — wowhead info for this is possibly irrelevant, seems to trigger either when flying close to the magical barrier or after accepting The Arcanic Oubliette in Krasarang Wilds
 		q(31153),	-- Tracking Event - Saved Diaani
 		q(31154),	-- Tracking Event - Saved Zuulo
+		q(31829),	-- Tracking Event: Alliance Gunship Leaves — triggers after turning in The Pearlfin Situation and Road Rations in Jade Forest
 		q(30531),	-- Tracking Event: Finished First Expansion
 		q(30533),	-- Tracking Event: Finished Second Expansion
 		q(30574),	-- Tracking Event: Finished Third Expansion
+		q(29884),	-- Tracking Event: Spies Leave — triggers after turning in The Pearlfin Situation and Road Rations in Jade Forest
 		q(30530),	-- Tracking Event: Started First Expansion
 		q(30532),	-- Tracking Event: Started Second Expansion
 		q(30573),	-- Tracking Event: Started Third Expansion
