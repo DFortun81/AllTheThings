@@ -34,12 +34,14 @@ _.Zones =
 					["coord"] = { 40.0, 76.4, 42 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["altQuests"] = { 31977 },	-- The Returning Champion (Winterspring)
 				}),
 				q(31976, {	-- The Returning Champion
 					["provider"] = { "n", 66522 },	-- Lydia Accoste
 					["coord"] = { 40.0, 76.4, 42 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["altQuests"] = { 31975 },	-- The Returning Champion (Winterspring)
 				}),
 			}),
 		}),
