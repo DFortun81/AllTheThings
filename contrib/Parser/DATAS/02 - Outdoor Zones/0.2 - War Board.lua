@@ -123,7 +123,13 @@ _.Zones =
 			q(27721, {	-- Warchief's Command: Mount Hyjal!
 				["isBreadcrumb"] = true,
 			}),
-			q(49549, {	-- Warchief's Command: Nagrand!
+			q(49549, {	-- Warchief's Command: Nagrand! (Draenor)
+				["isBreadcrumb"] = true,
+			}),
+			q(39189, {	-- Warchief's Command: Nagrand! (NYI - duplicate?)
+				["u"] = 1,
+			}),
+			q(39196, {	-- Warchief's Command: Nagrand! (Outland)
 				["isBreadcrumb"] = true,
 			}),
 			q(39201, {	-- Warchief's Command: Netherstorm!
