@@ -72,6 +72,7 @@ _.PetJournal =
 		p(504),				-- Diemetradon Hatchling
 		p(2197),			-- Direhorn Hatchling
 		p(1205),			-- Direhorn Runt
+		un(35, p(2623)),	-- Dottie
 		p(1952),			-- Dreadmaw
 		p(2406),			-- Drustvar Piglet
 		p(205),				-- Dun Morogh Cub
