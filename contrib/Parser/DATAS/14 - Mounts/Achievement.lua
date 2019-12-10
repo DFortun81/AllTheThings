@@ -19,8 +19,6 @@ _.Mounts =
 		i(168055),	-- Bloodflank Charger
 		i(163216), 	-- Bloodgorged Crawg
 		i(44843),	-- Blue Dragonhawk
-		i(120968),	-- Chauffeured Mekgineer's Chopper (Alliance)
-		i(122703),	-- Chauffeured Mekgineer's Chopper (Horde)
 		i(163577),	-- Conquerer's Scythemaw
 		i(69230),	-- Corrupted Fire Hawk
 		i(87769),	-- Crimson Cloud Serpent
@@ -76,8 +74,11 @@ _.Mounts =
 		i(128706),	-- Soaring Skyterror
 		i(104208),	-- Spawn of Galakras
 		i(156486),	-- Starcursed Voidstrider (Alliance)
+		i(120968),	-- Summon Chauffeur (A)
+		i(122703),	-- Summon Chauffeur (H)
 		i(77068),	-- Twilight Harbinger
 		i(140353),	-- Vicious Gilnean Warhorse*
+		i(102514),	-- Vicious Kaldorei Warsaber*
 		i(102533),	-- Vicious Skeletal Warhorse*
 		i(142234),	-- Vicious War Bear (Alliance)*
 		i(142235),	-- Vicious War Bear (Horde)*
@@ -91,7 +92,6 @@ _.Mounts =
 		i(116777),	-- Vicious War Ram*
 		i(116778),	-- Vicious War Raptor*
 		i(163123),	-- Vicious War Riverbeast
-		i(102514),	-- Vicious Warsaber*
 		i(142437),	-- Vicious War Scorpion*
 		i(70909),	-- Vicious War Steed*
 		i(140348),	-- Vicious Warstrider*

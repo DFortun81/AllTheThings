@@ -165,7 +165,7 @@ _.Mounts =
 		}),
 		i(116664),	-- Dusky Rockhide
 		i(161908),	-- Dusky Waycrest Gryphon
-		i(25472),	-- Ebon Gryphon
+		i(25471),	-- Ebon Gryphon
 		i(8588),	-- Emerald Raptor
 		i(161774, {	-- Expedition Bloodswarmer
 			["races"] = HORDE_ONLY,
