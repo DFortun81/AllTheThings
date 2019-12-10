@@ -949,6 +949,9 @@ _.WorldEvents =
 									i(50818),	-- Invincible's Reins (MOUNT!)
 									i(142098),	-- Drudge Remains (PET!)
 									i(122229),	-- Music Roll: Invincible
+									i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
+										artifact(870),	-- Find Hidden Artifact Skin
+									}),
 								}),
 								n(36597, {	-- The Lich King — anniversary only
 								--	["cr"] = 36597,	-- The Lich King

@@ -92,38 +92,6 @@ _.NeverImplemented =
 		un(1, i(150457)),	-- bands of the coming storm
 		un(1, i(150502)),	-- touch of inspiration
 		
-		un(1, i(157677)),	-- Hearthbonded Helm (Hunter Future Boost Gear)
-		un(1, i(157679)),	-- Hearthbonded Spaulders (Hunter Future Boost Gear)
-		un(1, i(150642)),	-- Trailseeker Spaulders
-		un(1, i(157725)),	-- Totem Caller Coif (Sham Future Boost Gear)
-		un(1, i(157727)),	-- Totem Caller Pauldrons (Sham Future Boost Gear)
-
-		-- Cant find any infos for those items anywhere (ID's indicate scrapped boost gear)
-		un(1, i(122069)),	-- Nurturer Spear
-		un(1, i(122074)),	-- Duskbreaker Warmaul
-		un(1, i(122078)),	-- Defiant Greataxe
-		un(1, i(122079)),	-- Defiant Headchopper
-		un(1, i(122093)),	-- Defiant Axe
-
-		-- DK -- Possible Unused Level 120/Lv 120 Classtrial
-		un(1, i(157618)),	-- Unholy Runeblade
-		un(1, i(157646)),	-- Bloodcaked Runeblade
-		un(1, i(157658)),	-- Heart-Lesion Breastplate
-		un(1, i(157659)),	-- Heart-Lesion Sabatons
-		un(1, i(157660)),	-- Heart-Lesion Gauntlets
-		un(1, i(157662)),	-- Heart-Lesion Legplates
-		un(1, i(157664)),	-- Heart-Lesion Girdle
-		un(1, i(157665)),	-- Heart-Lesion Vambraces)
-		un(1, i(157661)),	-- Heart-Lesion Helm
-		un(1, i(157663)),	-- Heart-Lesion Pauldrons
-		-- Pala -- Possible Unused Level 120/Lv 120 Classtrial
-		un(1, i(157701)),	-- Light Soul Helm
-		un(1, i(157703)),	-- Light Soul Pauldrons
-		-- Warrior -- Possible Unused Level 120/Lv 120 Classtrial
-		un(1, i(157741)),	-- Warsinger's Helm
-		un(1, i(157743)),	-- Warsinger's  Pauldrons
-		
-		
 	--	random stuff from the BFA world drop files that was commented out and cluttery, all show up as 'retrieving data'
 		i(159190),	--  Foxhollow Bracelets
 		i(159183),	--  Foxhollow Cord
@@ -764,6 +732,8 @@ _.NeverImplemented =
 		}),
 		n(-45, {	-- Mail
 			cl(7, {	-- Shaman
+				un(1, i(157725)),	-- Totem Caller Coif (Sham Future Boost Gear)
+				un(1, i(157727)),	-- Totem Caller Pauldrons (Sham Future Boost Gear)
 				un(1, i(32138)),	-- Chancellor's Linked Armor
 				un(1, i(32139)),	-- Chancellor's Linked Gauntlets
 				un(1, i(32140)),	-- Chancellor's Linked Helm
@@ -932,6 +902,7 @@ _.NeverImplemented =
 				un(1, i(32135)),	-- Chancellor's Chain Helm
 				un(1, i(32136)),	-- Chancellor's Chain Leggings
 				un(1, i(32137)),	-- Chancellor's Chain Spaulders
+				un(1, i(150642)),	-- Trailseeker Spaulders
 				un(1, i(48819)),	-- Windrunner's Handguards
 				un(1, i(48820)),	-- Windrunner's Headpiece
 				un(1, i(48821)),	-- Windrunner's Legguards
@@ -1139,6 +1110,8 @@ _.NeverImplemented =
 				un(1, i(48892)),	-- Koltira's Handguards of Conquest
 				un(1, i(48893)),	-- Koltira's Legguards of Conquest
 				un(1, i(48894)),	-- Koltira's Pauldrons of Conquest
+				un(1, i(157677)),	-- Hearthbonded Helm (Hunter Future Boost Gear)
+				un(1, i(157679)),	-- Hearthbonded Spaulders (Hunter Future Boost Gear)
 				un(1, i(119485)),	-- Heart-Lesion chestguard
 				un(1, i(119487)),	-- Heart-Lesion greaves
 				un(1, i(119488)),	-- Heart-Lesion handguards
@@ -1147,6 +1120,16 @@ _.NeverImplemented =
 				un(1, i(119496)),	-- Heart-Lesion shouldersguards
 				un(1, i(119497)),	-- Heart-Lesion waistband
 				un(1, i(119498)),	-- Heart-Lesion armguards
+				un(1, i(157618)),	-- Unholy Runeblade
+				un(1, i(157646)),	-- Bloodcaked Runeblade
+				un(1, i(157658)),	-- Heart-Lesion Breastplate
+				un(1, i(157659)),	-- Heart-Lesion Sabatons
+				un(1, i(157660)),	-- Heart-Lesion Gauntlets
+				un(1, i(157662)),	-- Heart-Lesion Legplates
+				un(1, i(157664)),	-- Heart-Lesion Girdle
+				un(1, i(157665)),	-- Heart-Lesion Vambraces)
+				un(1, i(157661)),	-- Heart-Lesion Helm
+				un(1, i(157663)),	-- Heart-Lesion Pauldrons
 				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
 				un(1, i(96941)), -- Breastplate of the All-Consuming Maw
 				un(1, i(96942)), -- Gauntlets of the All-Consuming Maw
@@ -1195,6 +1178,8 @@ _.NeverImplemented =
 				un(1, i(32160)),	-- Chancellor's Ornamented Headguard
 				un(1, i(32161)),	-- Chancellor's Ornamented Leggings
 				un(1, i(32162)),	-- Chancellor's Ornamented Spaulders
+				un(1, i(157701)),	-- Light Soul Helm
+				un(1, i(157703)),	-- Light Soul Pauldrons
 				-- Unused T0 Replica
 				un(1, i(78135)),	-- Replica Lightforge Belt
 				un(1, i(78142)),	-- Replica Lightforge Boots
@@ -1270,6 +1255,8 @@ _.NeverImplemented =
 				un(1, i(48879)),	-- Wyrnn's pauldrons
 				un(1, i(48895)),	-- thassarians chestguard
 				un(1, i(48899)),	-- thassarians pauldrons
+				un(1, i(157741)),	-- Warsinger's Helm
+				un(1, i(157743)),	-- Warsinger's  Pauldrons
 				-- Unused T0 Replica
 				un(1, i(78154)),	-- Replica Belt of Valor
 				un(1, i(78153)),	-- Replica Boots of Valor
@@ -1704,6 +1691,13 @@ _.NeverImplemented =
 		un(1, i(31498)),	-- Unknown
 		un(1, i(31500)),	-- Unknown
 		un(1, i(31502)),	-- Unknown
+		un(1, i(5126)),	-- Unknown
+		un(1, i(5127)),	-- Unknown
+		un(1, i(5129)),	-- Unknown
+		un(1, i(5130)),	-- Unknown
+		un(1, i(5131)),	-- Unknown
+		un(1, i(5132)),	-- Unknown
+		un(1, i(172219)),	-- Unknown
 		un(1, i(169177)),	-- Blueprint: TK32(DNT))
 		un(1, i(169178)),	-- Blueprint: TK33(DNT))
 		un(1, i(169179)),	-- Blueprint: TK34(DNT))
@@ -3733,6 +3727,11 @@ _.NeverImplemented =
 	un(1, i(159559)),	--  Coralshell Halberd
 	un(1, i(159513)),	--  Deepwarden Fangs
 	un(1, i(159603)),	--  Deepwarden Spark
+	un(1, i(122069)),	-- Nurturer Spear
+	un(1, i(122074)),	-- Duskbreaker Warmaul
+	un(1, i(122078)),	-- Defiant Greataxe
+	un(1, i(122079)),	-- Defiant Headchopper
+	un(1, i(122093)),	-- Defiant Axe
 	un(1, i(159541)),	--  Dockyard Mace
 	un(1, i(159500)),	--  Dockyard Sidearm
 	un(1, i(159591)),	--  Gnarlwood Cutlass

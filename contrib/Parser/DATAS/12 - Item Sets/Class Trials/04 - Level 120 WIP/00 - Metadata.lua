@@ -6,7 +6,7 @@ _.GearSets =
 	n(-5350, {	-- Class Trial Item Sets
 		n(-155, {	-- Level 120
 			["description"] = "These are gained by using a Boost of that particular class.  Each class has one default spec.  Shamans and Druids have two specs available and both are needed to 100% each category.",
-			["icon"] = "Interface\\Icons\\achievement_level_1120",
+			["icon"] = "Interface\\Icons\\achievement_level_120",
 			["lvl"] = 120,
 		}),
 	}),

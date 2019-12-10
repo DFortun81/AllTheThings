@@ -792,6 +792,7 @@ _.Zones =
 					i(139990),	-- Inspector's Pendant
 				}),
 				n(-386,  {	-- Trinkets
+					i(140031),	-- Mana Spark
 					i(134278),	-- Nightborne Defender's Badge
 					i(134292),	-- Nightborne Researcher's Phial
 					i(134291),	-- Nightborne's Hunting Horn
