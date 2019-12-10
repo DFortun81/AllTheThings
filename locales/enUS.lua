@@ -1002,6 +1002,7 @@ app.L = {
 		[-152] = "Garrison Campaign",
 		[-153] = CAPACITANCE_WORK_ORDERS,										-- Work Orders
 		[-154] = string.format(SPELLBOOK_AVAILABLE_AT, 110),					-- Level 110
+		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 120),					-- Level 120
 		[-157] = "The Hinterlands "..GetSpellInfo(78741),						-- The Hinterlands Activated
 		[-158] = "Feralas "..GetSpellInfo(78741),								-- Feralas Activated
 		[-159] = "Event Roll",													-- Daily Dreamway Event Roll

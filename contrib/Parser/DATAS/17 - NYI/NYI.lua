@@ -23,16 +23,6 @@ _.NeverImplemented =
 		un(1, i(166951)),	-- Dread Gladiator's leather spaulders
 		un(1, i(166952)),	-- Dread Gladiator's leather belt
 		un(1, i(166953)),	-- Dread Gladiator's leather bindings
-	
-		
-		-- Mail Blue Warfront Pieces
-		un(1, i(163396)),	-- 7th Legionnaire's Skullcap
-		un(1, i(163390)),	-- 7th Legionnaire's Spaulders
-		un(1, i(163402)),	-- 7th Legionnaire's Chain Belt
-		un(1, i(163447)),	-- Honorbound Vanguard's Helm
-		un(1, i(163442)),	-- Honorbound Vanguard's Pauldrons
-		un(1, i(163452)),	-- Honorbound Vanguard's Chain Belt
-		
 		-- Leather Blue Warfront Pieces
 		un(1, i(163381)),	-- 7th Legionnaire's Mask
 		un(1, i(163378)),	-- 7th Legionnaire's Shoulderpads
@@ -135,69 +125,19 @@ _.NeverImplemented =
 		
 		
 	--	random stuff from the BFA world drop files that was commented out and cluttery, all show up as 'retrieving data'
-		i(154861),
-		i(154841),
-		i(154846),
-		i(159216),
-		i(159221),
-		i(159203),
-		i(159201),
-		i(159210),
-		i(159208),
-		i(159213),
-		i(159195),
-		i(159197),
-		i(154867),
-		i(154870),
-		i(154873),
-		i(154868),
-		i(154866),
-		i(154869),
-		i(154871),
-		i(154849),
-		i(154852),
-		i(154856),
-		i(159190),	-- was commented in BFA world drop file as Foxhollow Bracelets
-		i(159183),	-- was commented in BFA world drop file as Foxhollow Cord
-		i(159170),	-- was commented in BFA world drop file as Freehold Handwraps
-		i(159181),	-- was commented in BFA world drop file as Mistfall Spaulders
-		i(159182),	-- was commented in BFA world drop file as Mistfall Chainmail
-		i(159176),	-- was commented in BFA world drop file as Mistfall Bracers
-		i(159177),	-- was commented in BFA world drop file as Mistfall Gloves
-		i(159175),	-- was commented in BFA world drop file as Mistfall Belt
-		i(159180),	-- was commented in BFA world drop file as Mistfall Legguards
-		i(159178),	-- was commented in BFA world drop file as Mistfall Boots
-		i(159165),	-- was commented in BFA world drop file as Ashvane Company Bracers
-		i(159159),	-- was commented in BFA world drop file as Ashvane Company Gauntlets
-		i(159160),	-- was commented in BFA world drop file as Ashvane Company Girdle
-		i(159538),	-- was commented in BFA world drop file as Coldscale Cudgel
-		i(159498),	-- was commented in BFA world drop file as Coldscale Pistol
-		i(159586),	-- was commented in BFA world drop file as Coralshell Blade
-		i(159559),	-- was commented in BFA world drop file as Coralshell Halberd
-		i(159513),	-- was commented in BFA world drop file as Deepwarden Fangs
-		i(159603),	-- was commented in BFA world drop file as Deepwarden Spark
-		i(159541),	-- was commented in BFA world drop file as Dockyard Mace
-		i(159500),	-- was commented in BFA world drop file as Dockyard Sidearm
-		i(159591),	-- was commented in BFA world drop file as Gnarlwood Cutlass
-		i(159553),	-- was commented in BFA world drop file as Gnarlwood Hammer
-		i(159567),	-- was commented in BFA world drop file as Gnarlwood Staff
-		i(159512),	-- was commented in BFA world drop file as Gol Osigr Handblade
-		i(159801),	-- was commented in BFA world drop file as Gol Osigr Targe
-		i(159817),	-- was commented in BFA world drop file as Gol Osigr Torch
-		i(159499),	-- was commented in BFA world drop file as Ironcrest Longrifle
-		i(159552),	-- was commented in BFA world drop file as Shipwrecker Maul
-		i(159588),	-- was commented in BFA world drop file as Stagheart Falchion
-		i(159542),	-- was commented in BFA world drop file as Stagheart Gavel
-		i(159472),	-- was commented in BFA world drop file as Stagheart Hatchet
-		i(159561),	-- was commented in BFA world drop file as Stagheart Poleaxe
-		i(159562),	-- was commented in BFA world drop file as Tideguard Pike
-		i(159503),	-- was commented in BFA world drop file as Tideguard Slicers
-		i(159565),	-- was commented in BFA world drop file as Tideguard Spire
-		i(159495),	-- was commented in BFA world drop file as Wavecaller Speargun
-		i(159526),	-- was commented in BFA world drop file as Wintersail Dirk
-		i(159554),	-- was commented in BFA world drop file as Wintersail Hammer
-		i(159592),	-- was commented in BFA world drop file as Wintersail Sabre
-		i(159510),	-- was commented in BFA world drop file as Wintersail Strikers
+		i(159190),	--  Foxhollow Bracelets
+		i(159183),	--  Foxhollow Cord
+		i(159170),	--  Freehold Handwraps
+		i(159181),	--  Mistfall Spaulders
+		i(159182),	--  Mistfall Chainmail
+		i(159176),	--  Mistfall Bracers
+		i(159177),	--  Mistfall Gloves
+		i(159175),	--  Mistfall Belt
+		i(159180),	--  Mistfall Legguards
+		i(159178),	--  Mistfall Boots
+		i(159165),	--  Ashvane Company Bracers
+		i(159159),	--  Ashvane Company Gauntlets
+		i(159160),	--  Ashvane Company Girdle
 		
 		
 	}),
@@ -358,6 +298,20 @@ _.NeverImplemented =
 				un(1, i(96304)), -- Leggings of the Exorcist
 				un(1, i(96305)), -- Raiment of the Exorcist
 				un(1, i(96306)), -- Shoulderguards of the Exorcist
+				un(1, i(167111)),	-- Unknown
+				un(1, i(167112)),	-- Unknown
+				un(1, i(167113)),	-- Unknown
+				un(1, i(167114)),	-- Unknown
+				un(1, i(167115)),	-- Unknown
+				un(1, i(167116)),	-- Unknown
+				un(1, i(167117)),	-- Unknown
+				un(1, i(167118)),	-- Unknown
+				-- Level 110 unused Boost Gear
+				un(1, i(153919)), -- Communal Wand
+				un(1, i(153938)), -- Communal Cowl
+				un(1, i(153914)), -- Communal Medallion
+				un(1, i(153941)), -- Communal Mantle
+				un(1, i(153935)), -- Communal Communal Cloak of Destruction				
 			}),
 			cl(9, {	-- Warlock
 				un(1, i(32093)),	-- Chancellor's Dreadweave Gloves
@@ -1045,7 +999,6 @@ _.NeverImplemented =
 				un(1, i(166959)),	-- Dread Gladiator's Chain spaulders
 				un(1, i(166960)),	-- Dread Gladiator's Chain waistguard
 				un(1, i(166961)),	-- Dread Gladiator's Chain armbands
-				--
 				un(1, i(163286)),	-- honorbound vanguard's footguards
 				un(1, i(163291)),	-- honorbound vanguard's strikers
 				un(1, i(163293)),	-- honorbound vanguard's warhelm
@@ -1056,6 +1009,12 @@ _.NeverImplemented =
 				un(1, i(163393)),	-- 7th legionnaires raiment
 				un(1, i(163443)),	-- honorbound vanguard's vestments
 				un(1, i(163450)),	-- honorbound vanguard's raiment
+				un(1, i(163396)),	-- 7th Legionnaire's Skullcap
+				un(1, i(163390)),	-- 7th Legionnaire's Spaulders
+				un(1, i(163402)),	-- 7th Legionnaire's Chain Belt
+				un(1, i(163447)),	-- Honorbound Vanguard's Helm
+				un(1, i(163442)),	-- Honorbound Vanguard's Pauldrons
+				un(1, i(163452)),	-- Honorbound Vanguard's Chain Belt
 			}),
 			un(1, i(166402)),	-- Flaskzertauren Mail Hauberk
 			un(1, i(166410)),	-- Flaskzertauren Mail Shoulderguards
@@ -1688,6 +1647,28 @@ _.NeverImplemented =
 			un(1, i(109515)),	-- Unknown
 			un(1, i(114960)),	-- spires unused
 		}),
+		un(1, i(154861)),	-- Unknown
+		un(1, i(154841)),	-- Unknown
+		un(1, i(154846)),	-- Unknown
+		un(1, i(159216)),	-- Unknown
+		un(1, i(159221)),	-- Unknown
+		un(1, i(159203)),	-- Unknown
+		un(1, i(159201)),	-- Unknown
+		un(1, i(159210)),	-- Unknown
+		un(1, i(159208)),	-- Unknown
+		un(1, i(159213)),	-- Unknown
+		un(1, i(159195)),	-- Unknown
+		un(1, i(159197)),	-- Unknown
+		un(1, i(154867)),	-- Unknown
+		un(1, i(154870)),	-- Unknown
+		un(1, i(154873)),	-- Unknown
+		un(1, i(154868)),	-- Unknown
+		un(1, i(154866)),	-- Unknown
+		un(1, i(154869)),	-- Unknown
+		un(1, i(154871)),	-- Unknown
+		un(1, i(154849)),	-- Unknown
+		un(1, i(154852)),	-- Unknown
+		un(1, i(154856)),	-- Unknown
 	}),
 	n(-494, {	-- Misc
 		filter(113, {	-- Bags
@@ -3746,6 +3727,34 @@ _.NeverImplemented =
 	un(1, i(84714)),	-- Dreadful Gladiator's barrier
 	un(1, i(84715)),	-- Dreadful Gladiator's redoubt
 	--
+	un(1, i(159538)),	--  Coldscale Cudgel
+	un(1, i(159498)),	--  Coldscale Pistol
+	un(1, i(159586)),	--  Coralshell Blade
+	un(1, i(159559)),	--  Coralshell Halberd
+	un(1, i(159513)),	--  Deepwarden Fangs
+	un(1, i(159603)),	--  Deepwarden Spark
+	un(1, i(159541)),	--  Dockyard Mace
+	un(1, i(159500)),	--  Dockyard Sidearm
+	un(1, i(159591)),	--  Gnarlwood Cutlass
+	un(1, i(159553)),	--  Gnarlwood Hammer
+	un(1, i(159567)),	--  Gnarlwood Staff
+	un(1, i(159512)),	--  Gol Osigr Handblade
+	un(1, i(159801)),	--  Gol Osigr Targe
+	un(1, i(159817)),	--  Gol Osigr Torch
+	un(1, i(159499)),	--  Ironcrest Longrifle
+	un(1, i(159552)),	--  Shipwrecker Maul
+	un(1, i(159588)),	--  Stagheart Falchion
+	un(1, i(159542)),	--  Stagheart Gavel
+	un(1, i(159472)),	--  Stagheart Hatchet
+	un(1, i(159561)),	--  Stagheart Poleaxe
+	un(1, i(159562)),	--  Tideguard Pike
+	un(1, i(159503)),	--  Tideguard Slicers
+	un(1, i(159565)),	--  Tideguard Spire
+	un(1, i(159495)),	--  Wavecaller Speargun
+	un(1, i(159526)),	--  Wintersail Dirk
+	un(1, i(159554)),	--  Wintersail Hammer
+	un(1, i(159592)),	--  Wintersail Sabre
+	un(1, i(159510)),	--  Wintersail Strikers
 	un(1, i(80983)),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
 	un(1, i(32178)),	-- Chancellor's Shanker
 	un(1, i(129899)),	-- The Eagle Spear

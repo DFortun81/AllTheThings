@@ -8,37 +8,17 @@ _.GearSets =
 			["groups"] = {
 				n(-140, {	-- Communal [Priest]
 					["groups"] = {
-						{	-- Communal Wand	NYI
-							["itemID"] = 153919,	-- Communal Wand
-							["u"] = 1,	-- Not available	
-						},
-						{	-- Communal Cowl	NYI
-							["itemID"] = 153938,	-- Communal Cowl
-							["u"] = 1,	-- Not available	
-						},
 						{	-- Communal Staff	*LA0104	
 							["itemID"] = 153934,	-- Communal Staff	*LA0104	
 						},
 						{	-- Communal Hood	*LA0104	
 							["itemID"] = 153923,	-- Communal Hood	*LA0104	
 						},
-						{	-- Communal Medallion	NYI
-							["itemID"] = 153914,	-- Communal Medallion
-							["u"] = 1,	-- Not available	
-						},
 						{	-- Communal Necklace	*LA0104
 							["itemID"] = 153925,	-- Communal Necklace	*LA0104	
 						},
-						{	-- Communal Mantle	NYI
-							["itemID"] = 153941,	-- Communal Mantle
-							["u"] = 1,	-- Not available	
-						},
 						{	-- Communal Shoulderpads	*LA0104
 							["itemID"] = 153931,	-- Communal Shoulderpads	*LA0104	
-						},
-						{	-- Communal Cloak of Destruction	NYI
-							["itemID"] = 153935,	-- Communal Cloak of Destruction
-							["u"] = 1,	-- Not available	
 						},
 						{	-- Communal Cloak of Wisdom	*LA0104
 							["itemID"] = 153920,	-- Communal Cloak of Wisdom	*LA0104	
