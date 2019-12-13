@@ -58,6 +58,12 @@ _.Zones =
 					["provider"] = { "n", 63071 },	-- Skeer the Bloodseeker
 					["sourceQuest"] = 31175,	-- Skeer the Bloodseeker
 				}),
+				q(56617, {	-- A Unified Swarm
+					["lvl"] = 120,
+					["coord"] = { 45.3, 16.4, 422 },
+					["provider"] = { "n", 155582 },	-- Taoshi
+					["sourceQuest"] = 56616,	-- Old Faces, New Problems
+				}),
 				q(31008, {	-- Amber Arms
 					["coord"] = { 55.0, 35.5, 422 },
 					["provider"] = { "n", 64599 },	-- Ambersmith Zikk
@@ -78,6 +84,15 @@ _.Zones =
 					["coord"] = { 55.0, 35.8, 422 },
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					["sourceQuest"] = 31066,	-- A Cry From Darkness
+				}),
+				q(56580, {	-- Amber Secrets
+					["lvl"] = 120,
+					["coord"] = { 45.3, 16.4, 422 },
+					["provider"] = { "n", 155582 },	-- Taoshi
+					["sourceQuests"] = {
+						56577,	-- Crippling the Hive
+						56575,	-- Once More Into Kor'vess
+					},
 				}),
 				q(31232, {	-- An Ancient Empire
 					["coord"] = { 54.3, 36.0, 422 },
@@ -229,6 +244,13 @@ _.Zones =
 					["altQuests"] = { 31680 },	-- Crime and Punishment
 					["sourceQuest"] = 31679,	-- Extending Our Coverage
 					["description"] = "This version is available if Kor'ik has not been killed yet.",
+				}),
+				q(56577, {	-- Crippling the Hive
+					["lvl"] = 120,
+					["coord"] = { 44.8, 19.1, 422 },
+					["provider"] = { "n", 155562 },	-- Shado-Pan Master (Taoshi follower)
+					["description"] = "Must be on or have completed |cFFFFD700Once More Into Kor'vess|r to get this quest.",
+					["sourceQuest"] = 56574,	-- Reflections in Amber
 				}),
 				q(31109, {	-- Culling the Swarm
 					["coord"] = { 55.0, 35.8, 422 },
@@ -472,6 +494,12 @@ _.Zones =
 					["provider"] = { "n", 67138 },	-- Chen Stormstout
 					["sourceQuest"] = 31077,	-- Evie Stormstout
 				}),
+				q(56645, {	-- Heart of the Swarm
+					["lvl"] = 120,
+					["coord"] = { 53.2, 39.5, 422 },
+					["provider"] = { "n", 155707 },	-- Taoshi
+					["sourceQuest"] = 56617,	-- A Unified Swarm
+				}),
 				q(31071, {	-- I Bring Us Great Shame
 					["coord"] = { 51.1, 11.1, 422 },
 					["provider"] = { "n", 62859 },	-- Thirsty Missho
@@ -618,6 +646,15 @@ _.Zones =
 					["provider"] = { "n", 63349 },	-- Deck Boss Arie
 					["sourceQuest"] = 31183,	-- Meet the Cap'n
 				}),
+				q(56616, {	-- Old Faces, New Problems
+					["lvl"] = 120,
+					["coord"] = { 45.3, 16.4, 422 },
+					["provider"] = { "n", 155582 },	-- Taoshi
+					["sourceQuests"] = {
+						56580,	-- Amber Secrets
+						56578,	-- Rotten at the Roots
+					},
+				}),
 				q(32030, {	-- Once in a Hundred Lifetimes
 					["coords"] = {
 						{ 54.7, 72.1, 422 },
@@ -753,6 +790,15 @@ _.Zones =
 						i(83989),	-- Wind-Reaver Helm
 						i(83990),	-- Bladesworn Helm
 						i(83991),	-- Coldbite Helm
+					},
+				}),
+				q(56578, {	-- Rotten at the Roots
+					["lvl"] = 120,
+					["coord"] = { 43.1, 13.0, 422 },	-- can really be picked up anywhere
+					["provider"] = { "n", 155562 },	-- Shadow-Pan Master (Taoshi follower)
+					["sourceQuests"] = {
+						56577,	-- Crippling the Hive
+						56575,	-- Once More Into Kor'vess
 					},
 				}),
 				q(31068, {	-- Sacred Recipe

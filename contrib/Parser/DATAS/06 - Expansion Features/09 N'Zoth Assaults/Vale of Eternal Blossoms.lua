@@ -435,9 +435,6 @@ _.ExpansionFeatures =
 							["questID"] = 58300,
 							["coord"] = { 20.0, 74.6, 1530 },
 							["isDaily"] = true,
-							["g"] = {
-								i(169888),	-- Ooze-covered Amber
-							},
 						}),
 						n(160878, {	-- Buh'gzaki the Blasphemous
 							["questID"] = 58307,
@@ -610,6 +607,11 @@ _.ExpansionFeatures =
 					["coord"] = { 44.7, 73.8, 1530 },
 					["provider"] = { "n", 154444 },	-- Stormspeaker Qian
 				}),
+				q(56575, {	-- Once More Into Kor'vess
+					["coord"] = { 13.9, 77.2, 1530 },
+					["provider"] = { "n", 155487 },	-- Taoshi
+					["sourceQuest"] = 56574,	-- Reflections in Amber
+				}),
 				q(58167, {	-- Preventative Measures
 					["coord"] = { 84.2, 51.7, 1530 },
 					["isDaily"] = true,
@@ -623,6 +625,11 @@ _.ExpansionFeatures =
 					["coord"] = { 44.7, 73.9, 1530 },
 					["provider"] = { "n", 154444 },	-- Stormspeaker Qian
 					["sourceQuest"] = 56771,	-- Time-Lost Warriors
+				}),
+				q(56574, {	-- Reflections in Amber
+					["cr"] = 160825,	-- Amber-Shaper Esh'ri
+					["coord"] = { 20.0, 74.6, 1530 },
+					["provider"] = { "i", 169888 },	-- Ooze-covered Amber
 				}),
 				q(56542, {	-- Restored Hope
 					["coord"] = { 45.3, 74.3, 1530 },
@@ -643,6 +650,12 @@ _.ExpansionFeatures =
 					["coord"] = { 45.3, 74.3, 1530 },
 					["provider"] = { "n", 154418 },	-- Ra-den
 					["sourceQuest"] = 56540,	-- Proof of Tenacity
+				}),
+				q(56647, {	-- The Mantid Threat
+					["lvl"] = 120,
+					["coord"] = { 12.2, 95.3, 422 },
+					["provider"] = { "n", 155487 },	-- Taoshi
+					["sourceQuest"] = 56645,	-- Heart of the Swarm
 				}),
 				q(58423, {	-- The Strongest Among Them
 					["coord"] = { 44.7, 73.8, 1530 },
