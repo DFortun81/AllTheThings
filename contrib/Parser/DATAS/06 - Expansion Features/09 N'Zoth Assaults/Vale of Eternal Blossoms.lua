@@ -671,6 +671,12 @@ _.ExpansionFeatures =
 					["coord"] = { 57.5, 54.3, 1530 },
 					["isWorldQuest"] = true,
 				}),
+				q(58746, {	-- Tiny Madness
+					-- pet battle
+					["lvl"] = 120,
+					["coord"] = { 56.2, 28.2, 1530 },
+					["isWorldQuest"] = true,
+				}),
 			}),
 			n(-2,   {	-- Vendors
 				n(160711, {	-- Zhang Ku
