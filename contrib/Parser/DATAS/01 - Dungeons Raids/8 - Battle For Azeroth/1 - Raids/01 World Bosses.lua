@@ -93,6 +93,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["isWeekly"] = true,
 				["isRaid"] = true,
 				["cr"] = 155851,
+				["coord"] = { 5.9, 56.4, 1530 },
 				["g"] = {
 					i(174243),	-- Guise of the Voracious Prowler
 					i(174234),	-- Maniacal Speaker's Cover

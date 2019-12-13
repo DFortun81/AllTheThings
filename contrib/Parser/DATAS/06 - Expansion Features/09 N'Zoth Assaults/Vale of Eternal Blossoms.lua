@@ -329,12 +329,6 @@ _.ExpansionFeatures =
 								i(173421),	-- Black Empire Signet
 							},
 						}),
-						n(157468, {	-- Tisiphon
-							["questID"] = 57364,
-							["coord"] = { 9.5, 67.4, 1530 },
-							["isDaily"] = true,
-							["description"] = "Use the fishing pole.",
-						}),
 						n(157443, {	-- Xiln the Mountain
 							["questID"] = 57358,
 							["coord"] = { 53.8, 48.9, 1530 },
@@ -413,6 +407,144 @@ _.ExpansionFeatures =
 							["coord"] = { 47.7, 21.5, 1530 },
 							["isWorldQuest"] = true,
 						}),
+					}),
+				}),
+				n(-10078, {	-- Assault: The Endless Swarm
+					n(-17, {	-- Quests
+						q(58756, {	-- Dread Menders
+							["coord"] = { 37.2, 79.2, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 161405 },	-- Taoshi
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
+						q(58764, {	-- Standards of the Swarm
+							["coord"] = { 38.4, 75.0, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 158674 },	-- Anji Autumnlight
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
+						q(58755, {	-- Stashed Supplies
+							["coord"] = { 38.4, 75.1, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 158673 },	-- Kun Autumnlight
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
+					}),
+					n(-16, {	-- Rares
+						n(160825, {	-- Amber-Shaper Esh'ri
+							["questID"] = 58300,
+							["coord"] = { 20.0, 74.6, 1530 },
+							["isDaily"] = true,
+							["g"] = {
+								i(169888),	-- Ooze-covered Amber
+							},
+						}),
+						n(160878, {	-- Buh'gzaki the Blasphemous
+							["questID"] = 58307,
+							["coord"] = { 6.5, 70.7, 1530 },
+							["isDaily"] = true,
+						}),
+						n(160872, {	-- Destroyer Krox'tazar
+							["questID"] = 58304,
+							["coord"] = { 26.7, 66.4, 1530 },
+							["isDaily"] = true,
+						}),
+						n(160874, {	-- Drone Keeper Ak'thet
+							["questID"] = 58305,
+							["coord"] = { 10.7, 41.0, 1530 },
+							["isDaily"] = true,
+						}),
+						n(160876, {	-- Enraged Amber Elemental
+							["questID"] = 58306,
+							["coord"] = { 10.6, 40.6, 1530 },
+							["isDaily"] = true,
+						}),
+						n(160810, {	-- Harbinger Il'koxik
+							["questID"] = 58299,
+							["coord"] = { 28.9, 52.7, 1530 },
+							["isDaily"] = true,
+						}),
+						n(160868, {	-- Harrier Nir'verash
+							["questID"] = 58303,
+							["coord"] = { 12.8, 51.3, 1530 },
+							["isDaily"] = true,
+						}),
+						n(160930, {	-- Infused-Amber Ooze
+							["questID"] = 58312,
+							["coord"] = { 18.5, 66.5, 1530 },
+							["isDaily"] = true,
+						}),
+						n(160867, {	-- Kzit'kovok
+							["questID"] = 58302,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 24.3, 36.6, 1530 },
+								{ 24.3, 41.4, 1530 },
+								{ 27.1, 41.9, 1530 },
+								{ 27.4, 37.7, 1530 },
+								{ 25.9, 35.6, 1530 },
+							},
+						}),
+						n(160922, {	-- Needler Zhesalla
+							["questID"] = 58311,
+							["coord"] = { 14.7, 37.2, 1530 },
+							["isDaily"] = true,
+						}),
+						n(160906, {	-- Skiver
+							["questID"] = 58309,
+							["coord"] = { 25.4, 45.7, 1530 },
+							["isDaily"] = true,
+						}),
+						--[[
+						n(, {	-- 
+							["questID"] = ,
+							["coord"] = { , 1530 },
+							["isDaily"] = true,
+						}),
+						]]
+					}),
+					n(-34, {	-- World Quests
+						q(57728, {	-- Assault: The Endless Swarm
+							["lvl"] = 120,
+							["isWorldQuest"] = true,
+							["g"] = {
+								i(174959, {	-- Cache of the Mantid Swarm
+									i(173835),	-- Malignant Leviathan's Pauldrons
+								}),
+							},
+						}),
+						q(57085, {	-- Empowered War Wagon
+							["lvl"] = 120,
+							["coord"] = { 11.0, 64.4, 1530 },
+							["isWorldQuest"] = true,
+						}),
+						q(57484, {	-- Ritual of Wakening
+							["lvl"] = 120,
+							["coord"] = { 16.9, 45.7, 1530 },
+							["isWorldQuest"] = true,
+						}),
+						q(57542, {	-- Swarm Caller
+							["lvl"] = 120,
+							["coord"] = { 31.1, 61.0, 1530 },
+							["isWorldQuest"] = true,
+						}),
+						q(57517, {	-- Swarm Caller
+							["lvl"] = 120,
+							["coord"] = { 25.7, 36.4, 1530 },
+							["isWorldQuest"] = true,
+						}),
+						q(57476, {	-- Vil'thik Feeding Grounds
+							["lvl"] = 120,
+							["coord"] = { 11.3, 40.8, 1530 },
+							["isWorldQuest"] = true,
+						}),
+						--[[
+						q(, {	-- 
+							["lvl"] = 120,
+							["coord"] = { , 1530 },
+							["isWorldQuest"] = true,
+						}),
+						]]
 					}),
 				}),
 			}),
@@ -522,6 +654,14 @@ _.ExpansionFeatures =
 					["coord"] = { 83.1, 27.2, 1530 },
 					["provider"] = { "n", 154532 },	-- Magni Bronzebeard
 					["sourceQuest"] = 56539,	-- Finding the Rajani
+				}),
+			}),
+			n(-16,  {	-- Rares
+				n(157468, {	-- Tisiphon
+					["questID"] = 57364,
+					["coord"] = { 9.5, 67.4, 1530 },
+					["isDaily"] = true,
+					["description"] = "Use the fishing pole.",
 				}),
 			}),
 			n(-34,  {	-- World Quests

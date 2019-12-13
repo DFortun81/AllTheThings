@@ -905,6 +905,7 @@ app.L = {
 		[-10075] = "Interface\\Icons\\Paladin_Protection",							-- Assault: Amathet Advance
 		[-10076] = "Interface\\Icons\\Paladin_Protection",							-- Assault: The Black Empire
 		[-10077] = "Interface\\Icons\\Paladin_Protection",							-- Assault: The Warring Clans
+		[-10078] = "Interface\\Icons\\Paladin_Protection",							-- Assault: The Endless Swarm
 
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -1784,6 +1785,7 @@ app.L = {
 		[-10075] = "Assault: Amathet Advance",
 		[-10076] = "Assault: The Black Empire",
 		[-10077] = "Assault: The Warring Clans",
+		[-10078] = "Assault: The Endless Swarm",
 	},
 
 	["OBJECT_ID_ICONS"] = {
