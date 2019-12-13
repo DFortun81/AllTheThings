@@ -181,7 +181,7 @@ _.Achievements =
 						["achievementID"] = 3578,	-- The Turkinator
 						["u"] = 28,					-- Pilgrim's Bounty Filter
 					},
-					{	-- Turkey Lackey
+					{	-- Turkey Lurkey
 						["achievementID"] = 3559,	-- Tukey Lackey
 						["u"] = 28,					-- Pilgrim's Bounty Filter
 						["g"] = {

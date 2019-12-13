@@ -22,8 +22,17 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(44351), 	-- Shoulderpads of Abhorrence
 					i(44352), 	-- Shoulderplates of the Abolished
 				}),
+				q(29810, {	-- The Faceless Ones
+					["u"] = 40,
+					["g"] = {
+						i(44353), 	-- Epaulets of the Faceless Ones
+						i(44350),	-- Mantle of Thwarted Evil
+						i(44351), 	-- Shoulderpads of Abhorrence
+						i(44352), 	-- Shoulderplates of the Abolished
+					},
+				}),
 			}),
-			d(  1, {	-- Normal
+			d(1, {	-- Normal
 				n(0, {	-- Zone Drop
 					i(35615, {	-- Glowworm Cavern Bindings
 						["crs"] = {

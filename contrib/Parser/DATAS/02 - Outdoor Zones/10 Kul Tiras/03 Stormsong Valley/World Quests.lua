@@ -67,11 +67,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52941, {	-- Light in the Darkness
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(52239, {	-- Loose Change
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -483,6 +478,11 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(52987, {	-- Let's Burn!
+						["isWorldQuest"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(52941, {	-- Light in the Darkness
 						["isWorldQuest"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 120,

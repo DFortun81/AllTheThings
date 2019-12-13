@@ -2363,7 +2363,7 @@ select(2, ...).FlightPathDB = {
 	[2410] = {
 		name="Ashen Strand",
 		coord={ 31.8, 38.1, 1355 },
-		races=2,
+		faction=2,
 	},
 	[2411] = {
 		name="Ashen Strand",

@@ -342,6 +342,7 @@ _.Zones =
 					["coords"] = { 54.0, 20.4, 110 },
 					["sourceQuest"] =	32329, 	-- Get My Results!
 					["races"] = HORDE_ONLY,
+					["lvl"] = 81,
 				}),
 			}),
 		}),

@@ -239,9 +239,9 @@ _.Zones =
 					}),
 				}),
 				n(134717, {	-- Umbra'rix
-					["isWorldQuest"] = true,
 					["description"] = "This rare is only up when its associated World Quest is active.",
-					["questID"] = 50673,	-- This is the WQ ID need to find the normal kill ID
+					["questID"] = 50673,
+					["isDaily"] = true,	-- this questID seems to reset / trigger again when you complete the WQ
 					["coord"] = { 49.0, 29.2, 862 },
 					["g"] = {
 						i(162617),	-- Shadraspawn Shoulderpads

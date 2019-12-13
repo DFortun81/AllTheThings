@@ -117,7 +117,7 @@ _.Holidays =
 					ach(3578, {	-- The Turkinator
 						["u"] = 28,	-- Pilgrim's Bounty
 					}),
-					ach(3559, {	-- Tukey Lackey
+					ach(3559, {	-- Turkey Lurkey
 						["u"] = 28,	-- Pilgrim's Bounty
 						["g"] = {
 							crit(1),	-- Blood Elf Rogue

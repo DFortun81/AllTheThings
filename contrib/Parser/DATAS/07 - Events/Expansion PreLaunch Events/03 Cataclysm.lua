@@ -53,10 +53,170 @@ _.WorldEvents =
 						},
 					})),
 					n(-17, {	-- Quests
+						q(27566, {	-- A Gathering in Outland
+							["u"] = 3,
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 45341 },	-- Earthen Ring Emissary
+						}),
+						q(27572, {	-- A Gathering in Outland
+							["u"] = 3,
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 39283 },	-- Earthmender Norsala
+						}),
+						q(25351, {	-- Alert Our Leaders
+							["u"] = 3,
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 39448 },	-- Blood Guard Torek
+						}),
+						q(27749, {	-- Arrest the Infiltrators
+							["u"] = 3,
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 12481 },	-- Justine Demalier
+						}),
+						q(27802, {	-- Arrest the Infiltrators
+							["u"] = 3,
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 39448 },	-- Blood Guard Torek
+						}),
+						q(27767, {	-- Back Under Cover
+							["u"] = 3,
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 12481 },	-- Justine Demalier
+						}),
+						q(27800, {	-- Back Under Cover
+							["u"] = 3,
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 39448 },	-- Blood Guard Torek
+						}),
+						q(27780, {	-- I Said the Words...
+							["u"] = 3,
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 40098 },	-- Overseer Sylandra
+						}),
+						q(27799, {	-- I Said the Words...
+							["u"] = 3,
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 39827 },	-- Overseer Jintak
+						}),
 						un(3, q(25285)),	-- In and Out
+						q(25290, {	-- Infiltrating the Cult
+							["u"] = 3,
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 39508 },	-- Captain Anton
+						}),
+						q(25288, {	-- Infiltrating The Cult
+							["u"] = 3,
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 39448 },	-- Blood Guard Torek
+						}),
 						un(3, q(25289)),	-- One Step Forward...
 						un(3, q(24462)),	-- Operation Item Get
 						un(3, q(25295)),	-- Press Fire
+						q(25253, {	-- Prophecies of Doom
+							["u"] = 3,
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 39508 },	-- Captain Anton
+						}),
+						q(25228, {	-- Prophecies of Doom
+							["u"] = 3,
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 39448 },	-- Blood Guard Torek
+						}),
+						q(27741, {	-- Show Me Your Papers
+							["u"] = 3,
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 12481 },	-- Justine Demalier
+						}),
+						q(27801, {	-- Show Me Your Papers
+							["u"] = 3,
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 39448 },	-- Blood Guard Torek
+						}),
+						q(25282, {	-- Signs Of The Times
+							["u"] = 3,
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 39508 },	-- Captain Anton
+						}),
+						q(25254, {	-- Signs Of The Times
+							["u"] = 3,
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 39448 },	-- Blood Guard Torek
+						}),
+						q(25415, {	-- Spreading The Word
+							["u"] = 3,
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 40098 },	-- Overseer Sylandra
+						}),
+						q(25380, {	-- Spreading The Word
+							["u"] = 3,
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 39827 },	-- Overseer Jintak
+						}),
+						q(25055, {	-- Subduing the Elements
+							["u"] = 3,
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 45712 },	-- Stormcaller Mylra
+						}),
+						q(25092, {	-- Subduing the Elements
+							["u"] = 3,
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 39283 },	-- Earthmender Norsala
+						}),
+						q(25180, {	-- Tablets of the Earth
+							["u"] = 3,
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 45702 },	-- Erunak Stonespeaker
+						}),
+						q(25181, {	-- Tablets of Fire
+							["u"] = 3,
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 39283 },	-- Earthmender Norsala
+						}),
+						q(25417, {	-- The Doomsday Plan
+							["u"] = 3,
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 40098 },	-- Overseer Sylandra
+						}),
+						q(25347, {	-- The Doomsday Plan
+							["u"] = 3,
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 39827 },	-- Overseer Jintak
+						}),
+						q(25416, {	-- The Master's Plan
+							["u"] = 3,
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 40098 },	-- Overseer Sylandra
+						}),
+						q(25343, {	-- The Master's Plan
+							["u"] = 3,
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 39827 },	-- Overseer Jintak
+						}),
+						q(25414, {	-- The Missing
+							["u"] = 3,
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 39508 },	-- Captain Anton
+						}),
+						q(25293, {	-- The Missing
+							["u"] = 3,
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 39448 },	-- Blood Guard Torek
+						}),
+						q(25418, {	-- Thwarting Twilight's Hammer
+							["u"] = 3,
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 39508 },	-- Captain Anton
+						}),
+						q(25348, {	-- Thwarting Twilight's Hammer
+							["u"] = 3,
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 39448 },	-- Blood Guard Torek
+						}),
+						q(25425, {	-- Warn King Wrynn
+							["u"] = 3,
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 39508 },	-- Captain Anton
+						}),
 					}),
 				},
 				["icon"] = "Interface\\Icons\\expansionicon_cataclysm",

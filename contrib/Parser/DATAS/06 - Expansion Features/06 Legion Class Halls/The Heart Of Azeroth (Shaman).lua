@@ -129,6 +129,15 @@ _.ExpansionFeatures =
 						["maps"] = { 64 },
 						["classes"] = { 7 },
 					}),
+					q(43338, {	-- The Codex of Ra
+						["classes"] = { 7 },	-- Shaman
+						["provider"] = { "n", 60968 },	-- Xuen
+						["sourceQuest"] = 43334,	-- The Coming Storm
+					}),
+					q(43334, {	-- The Coming Storm
+						["classes"] = { 7 },	-- Shaman
+						["provider"] = { "n", 60968 },	-- Xuen
+					}),
 					q(45723, {	-- The Crone's Wrath
 						["provider"] = { "n", 120244 },	-- Magatha Grimtotem
 						["lvl"] = 110,

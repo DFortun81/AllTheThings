@@ -6,13 +6,316 @@ _.Zones =
 	m(424, {	-- Pandaria
 		m(371, { -- The Jade Forest
 			n(-17, {	-- Quests
+				q(29560, {	-- Ancient Power
+					["sourceQuests"] = { 29553 },	-- The Missing Admiral
+					["provider"] = { "n", 55196 },	-- Bold Karasshi
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 54.1, 82.5, 371 },
+				}),
+				q(29552, {	-- Critical Condition
+					["sourceQuests"] = {
+						31736,	-- Envoy of the Alliance
+						31737,	-- The Cost of War
+					},
+					["provider"] = { "n", 54614 },	-- Mishka
+					["coord"] = { 46.0, 84.6, 371 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(90387),	-- Crashed Gyrocopter Rotor
+						i(90388),	-- Grewatsword of Kofinna Kottr
+						i(90385),	-- Mishka's Bandage Cutter
+						i(90384),	-- Peon-Chopping Axe
+						i(90386),	-- Recovery Team Shield
+						i(90389),	-- Skyguardian's Shield
+					},
+				}),
+				q(31736, {	-- Envoy of the Alliance
+					["sourceQuests"] = { 31735 },	-- The Right Tool For The Job
+					["provider"] = { "n", 54617 },	-- Rell Nightwind
+					["coord"] = { 46.4, 96.3, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29762, {	-- Family Heirlooms
+					["sourceQuests"] = {
+						29883,	-- The Pearlfin Situation
+						29885,	-- Road Rations
+					},
+					["provider"] = { "n", 56222 },	-- Bold Karasshi
+					["coord"] = { 58.9, 81.7, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31742, {	-- Fractured Forces
+					["sourceQuests"]  = {
+						31738,	-- Pillaging Peons
+						29552,	-- Critical Condition
+						31740,	-- Koukou's Rampage
+					},
+					["provider"] = { "n", 54617 },	-- Rell Nightwind
+					["coord"] = { 46.1, 84.7, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29559, {	-- Freeing Our Brothers
+					["sourceQuests"] = { 29553 },	-- The Missing Admiral
+					["provider"] = { "n", 55196 },	-- Bold Karasshi
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 54.1, 82.5, 371 },
+					["g"] = {
+						i(81022),	-- Cagebreaker's Leather Belt
+						i(81023),	-- Cagebreaker's Chain Links
+						i(81024),	-- Cagebreaker's Silk Cord
+						i(81025),	-- Cagebreaker's Satin Cord
+						i(81026),	-- Cagebreaker's Hide Belt
+						i(81027),	-- Cagebreaker's Ringmail Waistguard
+						i(81028),	-- Cagebreaker's Burnished Clasp
+						i(81029),	-- Cagebreaker's Armored Girdle
+						i(81030),	-- Cagebreaker's Heavy Girdle
+					},
+				}),
+				q(29556, {	-- Hozen Aren't Your Friends, Hozen Are Your Enemies
+					["sourceQuests"] = { 31745 },	-- Onward and Inward
+					["provider"] = { "n", 66292 },	-- Sky Admiral Rogers
+					["coord"] = { 48.0, 88.3, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29562, {	-- Jailbreak
+					["sourceQuests"] = { 29759 },	-- Kung Din
+					["provider"] = { "n", 55196 },	-- Bold Karasshi
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 54.1, 82.5, 371 },
+				}),
+				q(31740, {	-- Koukou's Rampage
+					["sourceQuests"] = { 31739 },  -- Priorities!
+					["provider"] = { "n", 66199 },	-- Lin Applebloom
+					["coord"] = { 39.6, 90.0, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29759, {	-- Kung Din
+					["sourceQuests"] = {
+						29558,	-- The Path of War
+						29559,	-- Freeing Our Brothers
+						29560,	-- Ancient Power
+					},
+					["provider"] = { "n", 55196 },	-- Bold Karasshi
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 54.1, 82.5, 371 },
+					["g"] = {
+						i(90371),	-- Landfall Burnished Greaves
+						i(90366),	-- Landfall Chain Boots
+						i(90365),	-- Landfall Leather Boots
+						i(90369),	-- Landfall Moccasins
+						i(90373),	-- Landfall Plate Boots
+						i(90370),	-- Landfall Sabatons
+						i(90368),	-- Landfall Satin Treads
+						i(90367),	-- Landfall Silk Treads
+						i(90372),	-- Landfall Warboots
+					},
+				}),
+				q(30069, {	-- No Plan Survives Contact with the Enemy
+					["sourceQuests"] = { 31733 },	-- Touching Ground
+					["provider"] = { "n", 54616 },	-- Sully "The Pickle" McLeary
+					["coord"] = { 43.6, 90.7, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31745, {	-- Onward and Inward	[Note: Final Quest needed to trigger criteria]
+					["sourceQuests"] = { 30070 },	-- The Fall of Ga'trul
+					["providers"] = {
+						{ "n", 54617 },	-- Rell Nightwind
+						{ "n", 66581 },	-- Rell Nightwind
+					},
+					["coord"] = { 41.4, 79.0, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31738, {	-- Pillaging Peons
+					["sourceQuests"] = {
+						31736,	-- Envoy of the Alliance
+						31737,	-- The Cost of War
+					},
+					["provider"] = { "n", 65910 },	-- Sunke Khang
+					["coord"] = { 46.2, 84.7, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31739, {	-- Priorities!
+					["sourceQuests"] = {
+						31736,	-- Envoy of the Alliance
+						31737,	-- The Cost of War
+					},
+					["provider"] = { "n", 64596 },	-- Teng Applebloom
+					["coord"] = { 46.1, 84.7, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29885, {	-- Road Rations
+					["sourceQuests"]  = { 29562 },	-- Jailbreak
+					["provider"] = { "n", 66949 },	-- Rell Nightwind
+					["coord"] = { 58.8, 81.9, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29725, {	-- SI:7 Report: Fire From the Sky
+					["sourceQuests"] = { 29733 },	-- SI:7 Report: Lost in the Woods
+					["provider"] = { "n", 55282 },	-- Sully "The Pickle" McLeary
+					["coord"] = { 58.8, 81.7, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29726, {	-- SI:7 Report: Hostile Natives
+					["sourceQuests"] = { 29725 },	-- SI:7 Report: Fire From the Sky
+					["provider"] = { "n", 55284 },	-- Little Lu
+					["coord"] = { 59.0, 81.9, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29733, {	-- SI:7 Report: Lost in the Woods
+					["sourceQuests"] = { 29894 },	-- Spirits of the Water
+					["provider"] = { "n", 55333 },	-- Rell Nightwind
+					["coord"] = { 58.9, 81.8, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29727, {	-- SI:7 Report: Take No Prisoners
+					["sourceQuests"] = { 29726 },	-- SI:7 Report: Take No Prisoners
+					["provider"] = { "n", 55283 },	-- Amber Kearnen
+					["coord"] = { 58.8, 81.9, 371 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(80768),	-- Moonwater Ring
+						i(80769),	-- Serpentspine Band
+						i(80770),	-- Lurking Tiger Band
+						i(80771),	-- Ring of Restoration
+						i(80772),	-- Blossoming Ring
+					},
+				}),
+				q(31743, {	-- Smoke Before Fire
+					["sourceQuests"]  = {
+						31738,	-- Pillaging Peons
+						29552,	-- Critical Condition
+						31740,	-- Koukou's Rampage
+					},
+					["provider"] = { "n", 54617 },	-- Rell Nightwind
+					["coord"] = { 46.1, 84.7, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29894, {	-- Spirits of the Water
+					["sourceQuests"] = {
+						29762,	-- Family Heirlooms
+						29887,	-- The Elder's Instruments
+					},
+					["provider"] = { "n", 59058 },	-- Pearlkeeper Fujin
+					["coord"] = { 58.7, 81.3, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31737, {	-- The Cost of War
+					["sourceQuests"] = { 31735 },	-- The Right Tool For The Job
+					["provider"] = { "n", 54617 },	-- Rell Nightwind
+					["coord"] = { 46.4, 96.3, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(29887, {	-- The Elder's Instruments
+					["sourceQuests"] = {
+						29883,	-- The Pearlfin Situation
+						29885,	-- Road Rations
+					},
+					["provider"] = { "n", 59058 },	-- Pearlkeeper Fujin
+					["coord"] = { 58.7, 81.3, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(30070, {	-- The Fall of Ga'trul
+					["sourceQuests"]  = {
+						31741,	-- Twinspire Keep
+						31744,	-- Unfair Trade
+						31742,	-- Fractured Forces
+						31743,	-- Smoke Before Fire
+					},
+					["provider"] = { "n", 54616 },	-- Sully "The Pickle" McLeary
+					["coord"] = { 41.4, 79.6, 371 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(90345),	-- Peacebreaker's Armored Helm
+						i(90344),	-- Peacebreaker's Burnished Headcover
+						i(90339),	-- Peacebreaker's Chain Helm
+						i(90346),	-- Peacebreaker's Heavy Helm
+						i(90342),	-- Peacebreaker's Hide Helm
+						i(90338),	-- Peacebreaker's Leather Helm
+						i(90343),	-- Peacebreaker's Ringmail Helm
+						i(90341),	-- Peacebreaker's Satin Hood
+						i(90340),	-- Peacebreaker's Silk Cowl
+					},
+				}),
+				q(29553, {	-- The Missing Admiral
+					["sourceQuests"] = {
+						29555,	-- The White Pawn
+						29556,	-- Hozen Aren't Your Friends, Hozen Are Your Enemies
+					},
+					["provider"] = { "n", 54615 },	-- Nodd Codejack
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 50.4, 88.2, 371 },
+				}),
+				q(29558, {	-- The Path of War
+					["sourceQuests"] = { 29553 },	-- The Missing Admiral
+					["provider"] = { "n", 55196 },	-- Bold Karasshi
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 54.1, 82.5, 371 },
+				}),
+				q(29883, {	-- The Pearlfin Situation
+					["sourceQuests"]  = { 29562 },	-- Jailbreak
+					["provider"] = { "n", 66949 },	-- Rell Nightwind
+					["coord"] = { 58.8, 81.9, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31735, {	-- The Right Tool For The Job
+					["sourceQuests"] = {
+						30069,	-- No Plan Survives Contact with the Enemy
+						31734,	-- Welcome Wagons
+					},
+					["provider"] = { "n", 54617 },	-- Rell Nightwind
+					["coord"] = { 45.2, 95.0, 371 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(90354),	-- Armored Chestpiece of Eminent Domain
+						i(90353),	-- Burnished Chestguard of Eminent Domain
+						i(90348),	-- Chain Armor of Eminent Domain
+						i(90355),	-- Heavy Chestpiece of Eminent Domain
+						i(90351),	-- Hide Robe of Eminent Domain
+						i(90347),	-- Leather Tunic of Eminent Domain
+						i(90352),	-- Ringmail Armor of Eminent Domain
+						i(90350),	-- Satin Robe of Eminent Domain
+						i(90349),	-- Silk Robe of Eminent Domain
+					},
+				}),
+				q(29555, {	-- The White Pawn
+					["sourceQuests"] = { 31745 },	-- Onward and Inward
+					["provider"] = { "n", 66292 },	-- Sky Admiral Rogers
+					["coord"] = { 48.0, 88.3, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31733, {	-- Touching Ground
+					["sourceQuests"] = { 31732 },	-- Unleash Hell
+					["provider"] = { "n", 66292 },	-- Sky Admiral Rogers
+					["coord"] = { 42.0, 92.8, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31741, {	-- Twinspire Keep
+					["sourceQuests"]  = {
+						31738,	-- Pillaging Peons
+						29552,	-- Critical Condition
+						31740,	-- Koukou's Rampage
+					},
+					["provider"] = { "n", 65910 },	-- Sunke Khang
+					["coord"] = { 46.1, 84.7, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(31744, {	-- Unfair Trade
+					["sourceQuests"]  = {
+						31738,	-- Pillaging Peons
+						29552,	-- Critical Condition
+						31740,	-- Koukou's Rampage
+					},
+					["provider"] = { "n", 65910 },	-- Sunke Khang
+					["coord"] = { 46.1, 84.7, 371 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(31732, {	-- Unleash Hell
-					["sourceQuest"] = 29548,	-- The Mission
+					["sourceQuests"] = { 29548 },	-- The Mission
 					["provider"] = { "n", 66292 },	--  Sky Admiral Rogers
 					["coord"] = { 42.0, 92.8, 371 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(90375),	-- Airship marine's Sharpshooter
+						i(90375),	-- Airship Marine's Sharpshooter
 						i(90376),	-- Barricade-Breaker Cidgel
 						i(90382),	-- Captain Roger's Polite Knocking Stick
 						i(90377),	-- Fogcutter Staff
@@ -23,6 +326,12 @@ _.Zones =
 						i(90378),	-- Staff of the Skymagi
 						i(90374),	-- Sully's Hotwiring Knife
 					},
+				}),
+				q(31734, {	-- Welcome Wagons
+					["sourceQuests"] = { 31733 },	-- Touching Ground
+					["provider"] = { "n", 54616 },	-- Sully "The Pickle" McLeary
+					["coord"] = { 43.6, 90.7, 371 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				
 				
@@ -51,490 +360,249 @@ _.Zones =
 				
 				
 				
-				ach(6300, {	-- Upjade Complete [Alliance]
-					["races"] = ALLIANCE_ONLY,	-- Alliance
-					["groups"] = {
-						crit(1, {	-- Paw'don Village
-							q(29552, {	-- Critical Condition
-								["provider"] = { "n", 54614 },	-- Mishka
-								["sourceQuests"] = {
-									31736,	-- Envoy of the Alliance
-									31737,	-- The Cost of War
-								},
-								["groups"] = {
-									i(90387),	-- Crashed Gyrocopter Rotor
-									i(90388),	-- Grewatsword of Kofinna Kottr
-									i(90385),	-- Mishka's Bandage Cutter
-									i(90384),	-- Peon-Chopping Axe
-									i(90386),	-- Recovery Team Shield
-									i(90389),	-- Skyguardian's Shield
-								},
-							}),
-							q(31736, {	-- Envoy of the Alliance
-								["provider"] = { "n", 54617 },	-- Rell Nightwind
-								["sourceQuests"] = { 31735 },	-- The Right Tool For The Job
-							}),
-							q(31742, {	-- Fractured Forces
-								["provider"] = { "n", 54617 },	-- Rell Nightwind
-								["sourceQuests"]  = {
-									31738,	-- Pillaging Peons
-									29552,	-- Critical Condition
-									31740,	-- Koukou's Rampage
-								},
-							}),
-							q(31740, {	-- Koukou's Rampage
-								["provider"] = { "n", 66199 },	-- Lin Applebloom
-								["sourceQuests"] = { 31739 },  -- Priorities!
-							}),
-							q(30069, {	-- No Plan Survives Contact with the Enemy
-								["provider"] = { "n", 54616 },	-- Sully "The Pickle" McLeary
-								["sourceQuests"] = { 31733 },	-- Touching Ground
-							}),
-							q(31745, {	-- Onward and Inward	[Note: Final Quest needed to trigger criteria]
-								["providers"] = {
-									{ "n", 54617 },	-- Rell Nightwind
-									{ "n", 66581 },	-- Rell Nightwind
-								},
-								["sourceQuests"] = { 30070 },	-- The Fall of Ga'trul
-							}),
-							q(31738, {	-- Pillaging Peons
-								["provider"] = { "n", 65910 },	-- Sunke Khang
-								["sourceQuests"] = {
-									31736,	-- Envoy of the Alliance
-									31737,	-- The Cost of War
-								},
-							}),
-							q(31739, {	-- Priorities!
-								["provider"] = { "n", 64596 },	-- Teng Applebloom
-								["sourceQuests"] = {
-									31736,	-- Envoy of the Alliance
-									31737,	-- The Cost of War
-								},
-							}),
-							q(31743, {	-- Smoke Before Fire
-								["provider"] = { "n", 54617 },	-- Rell Nightwind
-								["sourceQuests"]  = {
-									31738,	-- Pillaging Peons
-									29552,	-- Critical Condition
-									31740,	-- Koukou's Rampage
-								},
-							}),
-							q(31737, {	-- The Cost of War
-								["provider"] = { "n", 54617 },	-- Rell Nightwind
-								["sourceQuests"] = { 31735 },	-- The Right Tool For The Job
-							}),
-							q(30070, {	-- The Fall of Ga'trul
-								["provider"] = { "n", 54616 },	-- Sully "The Pickle" McLeary
-								["sourceQuests"]  = {
-									31741,	-- Twinspire Keep
-									31744,	-- Unfair Trade
-									31742,	-- Fractured Forces
-									31743,	-- Smoke Bfeore Fire
-								},
-								["groups"] = {
-									i(90345),	-- Peacebreaker's Armored Helm
-									i(90344),	-- Peacebreaker's Burnished Headcover
-									i(90339),	-- Peacebreaker's Chain Helm
-									i(90346),	-- Peacebreaker's Heavy Helm
-									i(90342),	-- Peacebreaker's Hide Helm
-									i(90338),	-- Peacebreaker's Leather Helm
-									i(90343),	-- Peacebreaker's Ringmail Helm
-									i(90341),	-- Peacebreaker's Satin Hood
-									i(90340),	-- Peacebreaker's Silk Cowl
-								},
-							}),
-							q(31735, {	-- The Right Tool For The Job
-								["provider"] = { "n", 54617 },	-- Rell Nightwind
-								["sourceQuests"] = {
-									30069,	-- No Plan Survives Contact with the Enemy
-									31734,	-- Welcome Wagons
-								},
-								["groups"] = {
-									i(90354),	-- Armored Chestpiece of Eminent Domain
-									i(90353),	-- Burnished Chestguard of Eminent Domain
-									i(90348),	-- Chain Armor of Eminent Domain
-									i(90355),	-- Heavy Chestpiece of Eminent Domain
-									i(90351),	-- Hide Robe of Eminent Domain
-									i(90347),	-- Leather Tunic of Eminent Domain
-									i(90352),	-- Ringmail Armor of Eminent Domain
-									i(90350),	-- Satin Robe of Eminent Domain
-									i(90349),	-- Silk Robe of Eminent Domain
-								},
-							}),
-							q(31733, {	-- Touching Ground
-								["provider"] = { "n", 66292 },	-- Sky Admiral Rogers
-								["sourceQuests"] = { 31732 },	-- Unleash Hell
-							}),
-							q(31741, {	-- Twinspire Keep
-								["provider"] = { "n", 65910 },	-- Sunke Khang
-								["sourceQuests"]  = {
-									31738,	-- Pillaging Peons
-									29552,	-- Critical Condition
-									31740,	-- Koukou's Rampage
-								},
-							}),
-							q(31744, {	-- Unfair Trade
-								["provider"] = { "n", 65910 },	-- Sunke Khang
-								["sourceQuests"]  = {
-									31738,	-- Pillaging Peons
-									29552,	-- Critical Condition
-									31740,	-- Koukou's Rampage
-								},
-							}),
-							q(31734, {	-- Welcome Wagons
-								["provider"] = { "n", 54616 },	-- Sully "The Pickle" McLeary
-								["sourceQuests"] = { 31733 },	-- Touching Ground
-							}),
-						}),
-						crit(2, {	-- The Waterspeaking Ceremony
-							q(29560, {	-- Ancient Power
-								["provider"] = { "n", 55196 },	-- Bold Karasshi
-								["sourceQuests"] = { 29553 },	-- The Missing Admiral
-							}),
-							q(29762, {	-- Family Heirlooms
-								["provider"] = { "n", 56222 },	-- Bold Karasshi
-								["sourceQuests"] = {
-									29883,	-- The Pearlfin Situation
-									29885,	-- Road Rations
-								},
-							}),
-							q(29559, {	-- Freeing Our Brothers
-								["provider"] = { "n", 55196 },	-- Bold Karasshi
-								["sourceQuests"] = { 29553 },	-- The Missing Admiral
-								["groups"] = {
-									i(81022),	-- Cagebreaker's Leather Belt
-									i(81023),	-- Cagebreaker's Chain Links
-									i(81024),	-- Cagebreaker's Silk Cord
-									i(81025),	-- Cagebreaker's Satin Cord
-									i(81026),	-- Cagebreaker's Hide Belt
-									i(81027),	-- Cagebreaker's Ringmail Waistguard
-									i(81028),	-- Cagebreaker's Burnished Clasp
-									i(81029),	-- Cagebreaker's Armored Girdle
-									i(81030),	-- Cagebreaker's Heavy Girdle
-								},
-							}),
-							q(29556, {	-- Hozen Aren't Your Friends, Hozen Are Your Enemies
-								["provider"] = { "n", 66292 },	-- Sky Admiral Rogers
-								["sourceQuests"] = { 31745 },	-- Onward and Inward
-							}),
-							q(29562, {	-- Jailbreak
-								["provider"] = { "n", 55196 },	-- Bold Karasshi
-								["sourceQuests"] = { 29759 },	-- Kung Din
-							}),
-							q(29759, {	-- Kung Din
-								["provider"] = { "n", 55196 },	-- Bold Karasshi
-								["sourceQuests"] = {
-									29558,	-- The Path of War
-									29559,	-- Freeing Our Brothers
-									29560,	-- Ancient Power
-								},
-								["groups"] = {
-									i(90371),	-- Landfall Burnished Greaves
-									i(90366),	-- Landfall Chain Boots
-									i(90365),	-- Landfall Leather Boots
-									i(90369),	-- Landfall Moccasins
-									i(90373),	-- Landfall Plate Boots
-									i(90370),	-- Landfall Sabatons
-									i(90368),	-- Landfall Satin Treads
-									i(90367),	-- Landfall Silk Treads
-									i(90372),	-- Landfall Warboots
-								},
-							}),
-							q(29885, {	-- Road Rations
-								["provider"] = { "n", 66949 },	-- Rell Nightwind
-								["sourceQuests"]  = { 29562 },	-- Jailbreak
-							}),
-							q(29894, {	-- Spirits of the Water [Note: Final Quest needed to trigger criteria]
-								["provider"] = { "n", 59058 },	-- Pearlkeeper Fujin
-								["sourceQuests"] = {
-									29762,	-- Family Heirlooms
-									29887,	-- The Elder's Instruments
-								},
-							}),
-							q(29887, {	-- The Elder's Instruments
-								["provider"] = { "n", 59058 },	-- Pearlkeeper Fujin
-								["sourceQuests"] = {
-									29883,	-- The Pearlfin Situation
-									29885,	-- Road Rations
-								},
-							}),
-							q(29553, {	-- The Missing Admiral
-								["provider"] = { "n", 54615 },	-- Nodd Codejack
-								["sourceQuests"] = {
-									29555,	-- The White Pawn
-									29556,	-- Hozen Aren't Your Friends, Hozen Are Your Enemies
-								},
-							}),
-							q(29558, {	-- The Path of War
-								["provider"] = { "n", 55196 },	-- Bold Karasshi
-								["sourceQuests"] = { 29553 },	-- The Missing Admiral
-							}),
-							q(29883, {	-- The Pearlfin Situation
-								["provider"] = { "n", 66949 },	-- Rell Nightwind
-								["sourceQuests"]  = { 29562 },	-- Jailbreak
-							}),
-							q(29555, {	-- The White Pawn
-								["provider"] = { "n", 66292 },	-- Sky Admiral Rogers
-								["sourceQuests"] = { 31745 },	-- Onward and Inward
-							}),
-						}),
-						crit(3, {	-- The White Pawn
-						}),
-						crit(4, {	-- Pearlfin Village
-							q(29903, {	-- A Perfect Match
-								["provider"] = { "n", 60970 },	-- Admiral Taylor
-								["sourceQuests"] = { 29727 },	-- SI:7 Report: Take No Prisoners
-							}),
-							q(29904, {	-- Bigger Fish to Fry
-								["provider"] = { "n", 60970 },	-- Admiral Taylor
-								["sourceQuests"] = { 29903 },	-- A Perfect Match
-							}),
-							q(29906, {	-- Carp Diem [Note: 1 of 2 Final Quest needed to trigger criteria]
-								["provider"] = { "n", 60970 },	-- Admiral Taylor
-								["sourceQuests"] = { 29904 },	-- Bigger Fish to Fry
-								["groups"] = {
-									i(80788),	-- Jinyu Meditation Staff
-									i(80789),	-- Jinyu Divining Rod
-									i(80790),	-- Jinyu Combat Staff
-									i(80791),	-- Jinyu Greatsword
-									i(80792),	-- Jinyu Handaxe
-									i(80793),	-- Jinyu Crossbow
-									i(80794),	-- Jinyu Battleaxe
-									i(80795),	-- Jinyu Ritual Sceptar
-									i(80796),	-- Jinyu Dagger
-									i(80797),	-- Jinyu Combat Mace
-								},
-							}),
-							q(29905, {	-- Let Them Burn [Note: 1 of 2 Final Quest needed to trigger criteria]
-								["provider"] = { "n", 60970 },	-- Admiral Taylor
-								["sourceQuests"] = { 29904 },	-- Bigger Fish to Fry
-							}),
-
-							q(29725, {	-- SI:7 Report: Fire From the Sky
-								["provider"] = { "n", 55282 },	-- Sully "The Pickle" McLeary
-								["sourceQuests"] = { 29733 },	-- SI:7 Report: Lost in the Woods
-							}),
-							q(29726, {	-- SI:7 Report: Hostile Natives
-								["provider"] = { "n", 55284 },	-- Little Lu
-								["sourceQuests"] = { 29725 },	-- SI:7 Report: Fire From the Sky
-							}),
-							q(29733, {	-- SI:7 Report: Lost in the Woods
-								["provider"] = { "n", 55333 },	-- Rell Nightwind
-								["sourceQuests"] = { 29894 },	-- Spirits of the Water
-							}),
-							q(29727, {	-- SI:7 Report: Take No Prisoners
-								["provider"] = { "n", 55283 },	-- Amber Kearnen
-								["sourceQuests"] = { 29726 },	-- SI:7 Report: Take No Prisoners
-							}),
-						}),
-						crit(5, {	-- Dawn's Blossom
-						}),
-						crit(6, {	-- Greenstone Quarry
-						}),
-						crit(7, {	-- Tian Monastery
-							q(29619, {	-- A Courteous Guest
-								["provider"] = { "n", 54913 },	-- Lin Tenderpaw
-								["sourceQuests"] = { 29618 } ,	-- The High Elder
-							}),
-							q(29627, {	-- A Proper Weapon
-								["provider"] = { "n", 54915 },	-- Groundskeeper Wu
-								["sourceQuests"] = { 29626 },	-- Groundskeeper Wu
-							}),
-							q(29629, {	-- A Steady Hand
-								["provider"] = { "n", 54915 },	-- Groundskeeper Wu
-								["sourceQuests"] = { 29627 },	-- A Proper Weapon
-							}),
-							q(29628, {	-- A Strong Back
-								["provider"] = { "n", 54915 },	-- Groundskeeper Wu
-								["sourceQuests"] = { 29627 },	-- A Proper Weapon
-							}),
-							q(29636, {	-- A Test of Endurance
-								["provider"] = { "n", 54922 },	-- Master Stone Fist
-								["sourceQuests"] = { 29635 },	-- Xiao, the Eater
-							}),
-							q(29630, {	-- And a Heavy Fist
-								["provider"] = { "n", 54915 },	-- Groundskeeper Wu
-								["sourceQuests"] = { 29627 },	-- A Proper Weapon
-								["groups"] = {
-									i(80740),	-- Ambermist Gloves
-									i(80741),	-- Blackthicket Gloves
-									i(80742),	-- Jade Witch Guantlets
-									i(80743),	-- Glass Lake Gloves
-									i(80744),	-- Silkwood Handguards
-									i(80745),	-- Deepwoods Gloves
-									i(80746),	-- Fox Grove Gauntlets
-									i(80747),	-- Thunderwood Gauntlets
-									i(80748),	-- Jade Tiger Gauntlets
-								},
-							}),
-							q(29624, {	-- Attention
-								["provider"] = { "n", 54917 },	-- Instructor Xann
-								["sourceQuests"] = { 29623 },	-- Perfection
-								["groups"] = {
-									i(80731),	-- Ambermist Cord
-									i(80732),	-- Blackthicket Belt
-									i(80733),	-- Jade Witch Waistguard
-									i(80734),	-- Glass Lake Clasp
-									i(80735),	-- Silkwood Cord
-									i(80736),	-- Deepwoods Belt
-									i(80737),	-- Fox Grove Belt
-									i(80738),	-- Thunderwood Girdle
-									i(80739),	-- Jade Tiger Girdle
-								},
-							}),
-							q(29632, {	-- Becoming Battle-Ready
-								["provider"] = { "n", 54922 },	-- Master Stone Fist
-								["sourceQuests"] = { 29620 },	-- The Great Banquet
-							}),
-							q(29639, {	-- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
-								["provider"] = { "n", 54917 },	-- Instructor Xann
-								["sourceQuests"] = { 29624 },	-- Attention
-								["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
-								["groups"] = {
-									i(80798),	-- Greataxe of Honor
-									i(80799),	-- Sword of Honor
-									i(80800),	-- Tian Defender
-									i(80801),	-- Tian Protector
-									i(80802),	-- Blade of Honor
-									i(80803),	-- Mace of Honor
-								},
-							}),
-							q(29647, {	-- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
-								["provider"] = { "n", 54918 },	-- Instructor Myang
-								["sourceQuests"] = { 29637 },	-- The Rumpus
-								["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
-								["groups"] = {
-									i(80798),	-- Greataxe of Honor
-									i(80799),	-- Sword of Honor
-									i(80800),	-- Tian Defender
-									i(80801),	-- Tian Protector
-									i(80802),	-- Blade of Honor
-									i(80803),	-- Mace of Honor
-								},
-							}),
-							q(29646, {	-- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
-								["provider"] = { "n", 54915 },	-- Groundskeeper Wu
-								["sourceQuests"] = { 29628, 29629, 29630 },	-- A Strong Back, A Steady Hand, And a Heavy Fist
-								["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
-								["groups"] = {
-									i(80798),	-- Greataxe of Honor
-									i(80799),	-- Sword of Honor
-									i(80800),	-- Tian Defender
-									i(80801),	-- Tian Protector
-									i(80802),	-- Blade of Honor
-									i(80803),	-- Mace of Honor
-								},
-							}),
-							q(29626, {	-- Groundskeeper Wu
-								["provider"] = { "n", 54926 },	-- Xiao
-								["sourceQuests"] = { 29620 },	-- The Great Banquet
-							}),
-							q(29634, {	-- Husshun, the Wizened
-								["provider"] = { "n", 54922 },	-- Master Stone Fist
-								["sourceQuests"] = { 29632 },	-- Becoming Battle-Ready
-							}),
-							q(29623, {	-- Perfection
-								["provider"] = { "n", 54917 },	-- Instructor Xann
-								["sourceQuests"] = { 29622 },	-- Your Training Starts Now
-							}),
-							q(29620, {	-- The Great Banquet
-								["provider"] = { "n", 54913 },	-- Lin Tenderpaw
-								["sourceQuests"] = { 29619 },	-- A Courteous Guest
-							}),
-							q(29618, {	-- The High Elder
-								["provider"] = { "n", 54913 },	-- Lin Tenderpaw
-							}),
-							q(29637, {	-- The Rumpus
-								["provider"] = { "n", 54918 },	-- Instructor Myang
-								["sourceQuests"] = { 29636 },	-- A Test of Endurance
-								["groups"] = {
-									i(84251),	-- Staff of Inner Focus
-									i(84252),	-- Instructor's Staff
-									i(84253),	-- Tian Monastic Staff
-									i(84254),	-- Sword of the Lone Victor
-									i(84255),	-- Axe of the Lone Champion
-									i(84256),	-- Jade Rifle
-									i(84257),	-- Trophy of the Last Man Standing
-									i(84258),	-- Mace of Inner Peace
-									i(84259),	-- Regal Shortblade
-									i(84260),	-- Mace of Serenity
-								},
-							}),
-							q(29635, {	-- Xiao, the Eater
-								["provider"] = { "n", 54922 },	-- Master Stone Fist
-								["sourceQuests"] = { 29633, 29634 },	-- Zhi-Zhi the Dextrous, Hasshun the Wizened
-								["groups"] = {
-									i(88693),	-- Bamboo Plate Armwraps
-									i(88692),	-- Fox Grove Bracers
-									i(88694),	-- Bamboo Strip Cuffs
-									i(88698),	-- Bamboo Fiber Cuffs
-									i(88697),	-- Bamboo Leaf Bindings
-									i(88696),	-- Jade Witch Armguards
-									i(88695),	-- Bamboo Strip Bracers
-									i(88690),	-- Bamboo Leaf Armplates
-									i(88691),	-- Bamboo Plate Armplates
-								},
-							}),
-							q(29622, {	-- Your Training Starts Now
-								["provider"] = { "n", 54926 },	-- Xiao
-								["sourceQuests"] = { 29620 },	-- The Great Banquet
-							}),
-							q(29633, {	-- Zhi-Zhi, the Dextrous
-								["provider"] = { "n", 54922 },	-- Master Stone Fist
-								["sourceQuests"] = { 29632 },	-- Becoming Battle-Ready
-							}),
-						}),
-						crit(8, {	-- Terrace of Ten Thunders
-						}),
-						crit(9, {	-- The Temple of the Jade Serpent
-						}),
-						crit(10, {	-- Nectarbreeze Orchard
-							q(29578, {	-- Defiance  [Possible Extra, test later]
-								["provider"] = { "n", 54697 },	-- Shao the Defiant
-								-- Note no breadcrumb or source really.  Can pick up by itself.  Lucetia Aug. 8, 2018
-							}),
-							q(29670, {	-- Maul Gormal [Note: Final Quest needed to trigger criteria]
-								["provider"] = { "n", 55009 },	-- Shao the Defiant
-								["sourceQuests"] = { 29586 },	-- The Splintered path
-							}),
-							q(29580, {	-- Orchard-Supplied Hardware[Possible Extra, test later]
-								["provider"] = { "n", 54854 },	-- Gentle Mother Hanae
-							}),
-							q(29579, {	-- Rally the Survivors[Possible Extra, test later]
-								["provider"] = { "n", 54697 },	-- Shao the Defiant
-							}),
-							q(29585, {	-- Spitfire
-								["provider"] = { "n", 54854 },	-- Gentle Mother Hanae
-								["groups"] = {
-									i(84243),	-- Bamboo Fiber Gloves
-									i(84244),	-- Bamboo Leaf Gloves
-									i(84245),	-- Jade Witch Handguards
-									i(84246),	-- Bamboo Strip Gloves
-									i(84247),	-- Bamboo Strip Handguards
-									i(84248),	-- Bamboo Plate Gloves
-									i(84249),	-- Fox Grove Handguards
-									i(84250),	-- Bamboo Leaf Gauntlets
-									i(88709),	-- Bamboo Plate Gauntlets
-								},
-							}),
-							q(29586, {	-- The Splintered Path
-								["provider"] = { "n", 55209 },	-- Traumatized Nectarbreeze Farmer
-								["sourceQuests"] = { 29585 },	-- Spitfire
-							}),
-							q(29587, {	-- Unbound
-								["provider"] = { "n", 55009 },	-- Shao the Defiant
-								["sourceQuests"] = { 29586 },	-- The Splintered Path
-							}),
-						}),
-						crit(11, {	-- The Battle for the Forest
-						}),
-						crit(12, {	-- Overcoming doubt
-						}),
+	ach(6300, {	-- Upjade Complete [Alliance]
+		["races"] = ALLIANCE_ONLY,	-- Alliance
+		["g"] = {
+			crit(3, {	-- The White Pawn
+			}),
+			crit(4, {	-- Pearlfin Village
+				q(29903, {	-- A Perfect Match
+					["provider"] = { "n", 60970 },	-- Admiral Taylor
+					["sourceQuests"] = { 29727 },	-- SI:7 Report: Take No Prisoners
+				}),
+				q(29904, {	-- Bigger Fish to Fry
+					["provider"] = { "n", 60970 },	-- Admiral Taylor
+					["sourceQuests"] = { 29903 },	-- A Perfect Match
+				}),
+				q(29906, {	-- Carp Diem [Note: 1 of 2 Final Quest needed to trigger criteria]
+					["provider"] = { "n", 60970 },	-- Admiral Taylor
+					["sourceQuests"] = { 29904 },	-- Bigger Fish to Fry
+					["g"] = {
+						i(80788),	-- Jinyu Meditation Staff
+						i(80789),	-- Jinyu Divining Rod
+						i(80790),	-- Jinyu Combat Staff
+						i(80791),	-- Jinyu Greatsword
+						i(80792),	-- Jinyu Handaxe
+						i(80793),	-- Jinyu Crossbow
+						i(80794),	-- Jinyu Battleaxe
+						i(80795),	-- Jinyu Ritual Sceptar
+						i(80796),	-- Jinyu Dagger
+						i(80797),	-- Jinyu Combat Mace
 					},
 				}),
+				q(29905, {	-- Let Them Burn [Note: 1 of 2 Final Quest needed to trigger criteria]
+					["provider"] = { "n", 60970 },	-- Admiral Taylor
+					["sourceQuests"] = { 29904 },	-- Bigger Fish to Fry
+				}),
+			}),
+			crit(5, {	-- Dawn's Blossom
+			}),
+			crit(6, {	-- Greenstone Quarry
+			}),
+			crit(7, {	-- Tian Monastery
+				q(29619, {	-- A Courteous Guest
+					["provider"] = { "n", 54913 },	-- Lin Tenderpaw
+					["sourceQuests"] = { 29618 } ,	-- The High Elder
+				}),
+				q(29627, {	-- A Proper Weapon
+					["provider"] = { "n", 54915 },	-- Groundskeeper Wu
+					["sourceQuests"] = { 29626 },	-- Groundskeeper Wu
+				}),
+				q(29629, {	-- A Steady Hand
+					["provider"] = { "n", 54915 },	-- Groundskeeper Wu
+					["sourceQuests"] = { 29627 },	-- A Proper Weapon
+				}),
+				q(29628, {	-- A Strong Back
+					["provider"] = { "n", 54915 },	-- Groundskeeper Wu
+					["sourceQuests"] = { 29627 },	-- A Proper Weapon
+				}),
+				q(29636, {	-- A Test of Endurance
+					["provider"] = { "n", 54922 },	-- Master Stone Fist
+					["sourceQuests"] = { 29635 },	-- Xiao, the Eater
+				}),
+				q(29630, {	-- And a Heavy Fist
+					["provider"] = { "n", 54915 },	-- Groundskeeper Wu
+					["sourceQuests"] = { 29627 },	-- A Proper Weapon
+					["g"] = {
+						i(80740),	-- Ambermist Gloves
+						i(80741),	-- Blackthicket Gloves
+						i(80742),	-- Jade Witch Guantlets
+						i(80743),	-- Glass Lake Gloves
+						i(80744),	-- Silkwood Handguards
+						i(80745),	-- Deepwoods Gloves
+						i(80746),	-- Fox Grove Gauntlets
+						i(80747),	-- Thunderwood Gauntlets
+						i(80748),	-- Jade Tiger Gauntlets
+					},
+				}),
+				q(29624, {	-- Attention
+					["provider"] = { "n", 54917 },	-- Instructor Xann
+					["sourceQuests"] = { 29623 },	-- Perfection
+					["g"] = {
+						i(80731),	-- Ambermist Cord
+						i(80732),	-- Blackthicket Belt
+						i(80733),	-- Jade Witch Waistguard
+						i(80734),	-- Glass Lake Clasp
+						i(80735),	-- Silkwood Cord
+						i(80736),	-- Deepwoods Belt
+						i(80737),	-- Fox Grove Belt
+						i(80738),	-- Thunderwood Girdle
+						i(80739),	-- Jade Tiger Girdle
+					},
+				}),
+				q(29632, {	-- Becoming Battle-Ready
+					["provider"] = { "n", 54922 },	-- Master Stone Fist
+					["sourceQuests"] = { 29620 },	-- The Great Banquet
+				}),
+				q(29639, {	-- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
+					["provider"] = { "n", 54917 },	-- Instructor Xann
+					["sourceQuests"] = { 29624 },	-- Attention
+					["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
+					["g"] = {
+						i(80798),	-- Greataxe of Honor
+						i(80799),	-- Sword of Honor
+						i(80800),	-- Tian Defender
+						i(80801),	-- Tian Protector
+						i(80802),	-- Blade of Honor
+						i(80803),	-- Mace of Honor
+					},
+				}),
+				q(29647, {	-- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
+					["provider"] = { "n", 54918 },	-- Instructor Myang
+					["sourceQuests"] = { 29637 },	-- The Rumpus
+					["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
+					["g"] = {
+						i(80798),	-- Greataxe of Honor
+						i(80799),	-- Sword of Honor
+						i(80800),	-- Tian Defender
+						i(80801),	-- Tian Protector
+						i(80802),	-- Blade of Honor
+						i(80803),	-- Mace of Honor
+					},
+				}),
+				q(29646, {	-- Flying Colors [Note: 1 of 3 Final Quest needed to trigger criteria]
+					["provider"] = { "n", 54915 },	-- Groundskeeper Wu
+					["sourceQuests"] = { 29628, 29629, 29630 },	-- A Strong Back, A Steady Hand, And a Heavy Fist
+					["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
+					["g"] = {
+						i(80798),	-- Greataxe of Honor
+						i(80799),	-- Sword of Honor
+						i(80800),	-- Tian Defender
+						i(80801),	-- Tian Protector
+						i(80802),	-- Blade of Honor
+						i(80803),	-- Mace of Honor
+					},
+				}),
+				q(29626, {	-- Groundskeeper Wu
+					["provider"] = { "n", 54926 },	-- Xiao
+					["sourceQuests"] = { 29620 },	-- The Great Banquet
+				}),
+				q(29634, {	-- Husshun, the Wizened
+					["provider"] = { "n", 54922 },	-- Master Stone Fist
+					["sourceQuests"] = { 29632 },	-- Becoming Battle-Ready
+				}),
+				q(29623, {	-- Perfection
+					["provider"] = { "n", 54917 },	-- Instructor Xann
+					["sourceQuests"] = { 29622 },	-- Your Training Starts Now
+				}),
+				q(29620, {	-- The Great Banquet
+					["provider"] = { "n", 54913 },	-- Lin Tenderpaw
+					["sourceQuests"] = { 29619 },	-- A Courteous Guest
+				}),
+				q(29618, {	-- The High Elder
+					["provider"] = { "n", 54913 },	-- Lin Tenderpaw
+				}),
+				q(29637, {	-- The Rumpus
+					["provider"] = { "n", 54918 },	-- Instructor Myang
+					["sourceQuests"] = { 29636 },	-- A Test of Endurance
+					["g"] = {
+						i(84251),	-- Staff of Inner Focus
+						i(84252),	-- Instructor's Staff
+						i(84253),	-- Tian Monastic Staff
+						i(84254),	-- Sword of the Lone Victor
+						i(84255),	-- Axe of the Lone Champion
+						i(84256),	-- Jade Rifle
+						i(84257),	-- Trophy of the Last Man Standing
+						i(84258),	-- Mace of Inner Peace
+						i(84259),	-- Regal Shortblade
+						i(84260),	-- Mace of Serenity
+					},
+				}),
+				q(29635, {	-- Xiao, the Eater
+					["provider"] = { "n", 54922 },	-- Master Stone Fist
+					["sourceQuests"] = { 29633, 29634 },	-- Zhi-Zhi the Dextrous, Hasshun the Wizened
+					["g"] = {
+						i(88693),	-- Bamboo Plate Armwraps
+						i(88692),	-- Fox Grove Bracers
+						i(88694),	-- Bamboo Strip Cuffs
+						i(88698),	-- Bamboo Fiber Cuffs
+						i(88697),	-- Bamboo Leaf Bindings
+						i(88696),	-- Jade Witch Armguards
+						i(88695),	-- Bamboo Strip Bracers
+						i(88690),	-- Bamboo Leaf Armplates
+						i(88691),	-- Bamboo Plate Armplates
+					},
+				}),
+				q(29622, {	-- Your Training Starts Now
+					["provider"] = { "n", 54926 },	-- Xiao
+					["sourceQuests"] = { 29620 },	-- The Great Banquet
+				}),
+				q(29633, {	-- Zhi-Zhi, the Dextrous
+					["provider"] = { "n", 54922 },	-- Master Stone Fist
+					["sourceQuests"] = { 29632 },	-- Becoming Battle-Ready
+				}),
+			}),
+			crit(8, {	-- Terrace of Ten Thunders
+			}),
+			crit(9, {	-- The Temple of the Jade Serpent
+			}),
+			crit(10, {	-- Nectarbreeze Orchard
+				q(29578, {	-- Defiance  [Possible Extra, test later]
+					["provider"] = { "n", 54697 },	-- Shao the Defiant
+					-- Note no breadcrumb or source really.  Can pick up by itself.  Lucetia Aug. 8, 2018
+				}),
+				q(29670, {	-- Maul Gormal [Note: Final Quest needed to trigger criteria]
+					["provider"] = { "n", 55009 },	-- Shao the Defiant
+					["sourceQuests"] = { 29586 },	-- The Splintered path
+				}),
+				q(29580, {	-- Orchard-Supplied Hardware[Possible Extra, test later]
+					["provider"] = { "n", 54854 },	-- Gentle Mother Hanae
+				}),
+				q(29579, {	-- Rally the Survivors[Possible Extra, test later]
+					["provider"] = { "n", 54697 },	-- Shao the Defiant
+				}),
+				q(29585, {	-- Spitfire
+					["provider"] = { "n", 54854 },	-- Gentle Mother Hanae
+					["g"] = {
+						i(84243),	-- Bamboo Fiber Gloves
+						i(84244),	-- Bamboo Leaf Gloves
+						i(84245),	-- Jade Witch Handguards
+						i(84246),	-- Bamboo Strip Gloves
+						i(84247),	-- Bamboo Strip Handguards
+						i(84248),	-- Bamboo Plate Gloves
+						i(84249),	-- Fox Grove Handguards
+						i(84250),	-- Bamboo Leaf Gauntlets
+						i(88709),	-- Bamboo Plate Gauntlets
+					},
+				}),
+				q(29586, {	-- The Splintered Path
+					["provider"] = { "n", 55209 },	-- Traumatized Nectarbreeze Farmer
+					["sourceQuests"] = { 29585 },	-- Spitfire
+				}),
+				q(29587, {	-- Unbound
+					["provider"] = { "n", 55009 },	-- Shao the Defiant
+					["sourceQuests"] = { 29586 },	-- The Splintered Path
+				}),
+			}),
+			crit(11, {	-- The Battle for the Forest
+			}),
+			crit(12, {	-- Overcoming doubt
+			}),
+		},
+	}),
 				ach(6534, {	-- Upjade Complete [Horde]
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["g"] = {
 						crit(1, {	-- The Remains of Hellscream's Fist
 						}),
 						crit(2, {	-- First Contact
@@ -573,7 +641,7 @@ _.Zones =
 							q(29630, {	-- And a Heavy Fist
 								["provider"] = { "n", 54915 },	-- Groundskeeper Wu
 								["sourceQuests"] = { 29627 },	-- A Proper Weapon
-								["groups"] = {
+								["g"] = {
 									i(80740),	-- Ambermist Gloves
 									i(80741),	-- Blackthicket Gloves
 									i(80742),	-- Jade Witch Guantlets
@@ -588,7 +656,7 @@ _.Zones =
 							q(29624, {	-- Attention
 								["provider"] = { "n", 54917 },	-- Instructor Xann
 								["sourceQuests"] = { 29623 },	-- Perfection
-								["groups"] = {
+								["g"] = {
 									i(80731),	-- Ambermist Cord
 									i(80732),	-- Blackthicket Belt
 									i(80733),	-- Jade Witch Waistguard
@@ -608,7 +676,7 @@ _.Zones =
 								["provider"] = { "n", 54917 },	-- Instructor Xann
 								["sourceQuests"] = { 29624 },	-- Attention
 								["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
-								["groups"] = {
+								["g"] = {
 									i(80798),	-- Greataxe of Honor
 									i(80799),	-- Sword of Honor
 									i(80800),	-- Tian Defender
@@ -621,7 +689,7 @@ _.Zones =
 								["provider"] = { "n", 54918 },	-- Instructor Myang
 								["sourceQuests"] = { 29637 },	-- The Rumpus
 								["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
-								["groups"] = {
+								["g"] = {
 									i(80798),	-- Greataxe of Honor
 									i(80799),	-- Sword of Honor
 									i(80800),	-- Tian Defender
@@ -634,7 +702,7 @@ _.Zones =
 								["provider"] = { "n", 54915 },	-- Groundskeeper Wu
 								["sourceQuests"] = { 29628, 29629, 29630 },	-- A Strong Back, A Steady Hand, And a Heavy Fist
 								["description"] = "This quest has 3 different versions depending on the order at which you complete Tian Monastery. Completing one will mark all 3 as completed.",
-								["groups"] = {
+								["g"] = {
 									i(80798),	-- Greataxe of Honor
 									i(80799),	-- Sword of Honor
 									i(80800),	-- Tian Defender
@@ -665,7 +733,7 @@ _.Zones =
 							q(29637, {	-- The Rumpus
 								["provider"] = { "n", 54918 },	-- Instructor Myang
 								["sourceQuests"] = { 29636 },	-- A Test of Endurance
-								["groups"] = {
+								["g"] = {
 									i(84251),	-- Staff of Inner Focus
 									i(84252),	-- Instructor's Staff
 									i(84253),	-- Tian Monastic Staff
@@ -681,7 +749,7 @@ _.Zones =
 							q(29635, {	-- Xiao, the Eater
 								["provider"] = { "n", 54922 },	-- Master Stone Fist
 								["sourceQuests"] = { 29633, 29634 },	-- Zhi-Zhi the Dextrous, Hasshun the Wizened
-								["groups"] = {
+								["g"] = {
 									i(88693),	-- Bamboo Plate Armwraps
 									i(88692),	-- Fox Grove Bracers
 									i(88694),	-- Bamboo Strip Cuffs
@@ -721,7 +789,7 @@ _.Zones =
 							}),
 							q(29585, {	-- Spitfire
 								["provider"] = { "n", 54854 },	-- Gentle Mother Hanae
-								["groups"] = {
+								["g"] = {
 									i(84243),	-- Bamboo Fiber Gloves
 									i(84244),	-- Bamboo Leaf Gloves
 									i(84245),	-- Jade Witch Handguards
@@ -776,7 +844,7 @@ _.Zones =
 					["provider"] = { "n", 56065 },	-- Inkmaster Wei
 					["requireSkill"] = 773,
 					["isWeekly"] = true,
-					["groups"] = {
+					["g"] = {
 						{	-- Commissioned Painting
 							["recipeID"] = 127378,	-- Commissioned Painting
 						},
@@ -803,7 +871,7 @@ _.Zones =
 					["provider"] = { "n", 55180 },	-- Shademaster Kiryn
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 29815 },	-- Forensic Science
-					["groups"] = {
+					["g"] = {
 						i(90310),	-- Honorary Combat Engineer's Burnished Legplates
 						i(90305),	-- Honorary Combat Engineer's Chain Leggings
 						i(90312),	-- Honorary Combat Engineer's Heavy Legplates
@@ -825,7 +893,7 @@ _.Zones =
 				q(29900, {	-- An Ancient Legend
 					["provider"] = { "n", 56433 },	-- Lina Whitepaw
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(80749),	-- Ambermist Cuffs
 						i(80750),	-- Blackthicket Bindings
 						i(80751),	-- Jade Witch Wristguards
@@ -844,7 +912,7 @@ _.Zones =
 				q(29749, {	-- An Urgent Plea
 					["provider"] = { "n", 55480 },	-- Pei-Zhi
 					["sourceQuests"] = { 29747, 29748 },	-- Break the Cycle, Simulacrumble
-					["groups"] = {
+					["g"] = {
 						i(84261),	-- Axe of Sacrifice
 						i(84262),	-- Spirit Crusher
 						i(84263),	-- Spiritsage's Protector
@@ -900,7 +968,7 @@ _.Zones =
 					["provider"] = { "n", 56406 },	-- Rivett Clutchpop
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 29968 },	-- Green-ish Energy
-					["groups"] = {
+					["g"] = {
 						i(80788),	-- Jinyu Meditation Staff
 						i(80789),	-- Jinyu Divining Rod
 						i(80790),	-- Jinyu Combat Staff
@@ -990,7 +1058,7 @@ _.Zones =
 				q(29717, {	-- Down Kitty!
 					["provider"] = { "n", 55274 },	-- An Windfur
 					["sourceQuests"] = { 31230 },	-- Welcome to Dawn's Blossom
-					["groups"] = {
+					["g"] = {
 						i(88708),	-- An's Ring
 						i(88705),	-- Jade Smasher Band
 						i(88704),	-- Meow Meow Band
@@ -1119,7 +1187,7 @@ _.Zones =
 				q(29920, {	-- Getting Permission
 					["provider"] = { "n", 56708 },	--  Syra Goldendraft
 					["sourceQuests"] = { 29995 },	-- Shrine of the Dawn
-					["groups"] = {
+					["g"] = {
 						i(80758),	-- zen lotus pendant
 						i(80759),	-- dawnblossom necklace
 						i(80760),	-- vale song pendant
@@ -1137,7 +1205,7 @@ _.Zones =
 					["provider"] = { "n", 56339 },	-- General Nazgrim
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 29824 },	-- Scouting Report: Like Jinyu in a Barrel
-					["groups"] = {
+					["g"] = {
 						i(80749),	-- Ambermist Cuffs
 						i(80750),	-- Blackthicket Bindings
 						i(80751),	-- Jade Witch Wristguards
@@ -1277,7 +1345,7 @@ _.Zones =
 					q(31999, {	-- Nazgrim's Command
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 31779 },	-- The Darkness Within
-						["groups"] = {
+						["g"] = {
 							i(90293),	-- Peacebreaker's Armored Helm
 							i(90292),	-- Peacebreaker's Burnished Headcover
 							i(90290),	-- Peacebreaker's Chain Helm
@@ -1315,7 +1383,7 @@ _.Zones =
 				q(30002, {	-- Pages of History
 					["provider"] = { "n", 56786 },	-- Lorewalker Stonestep
 					["sourceQuests"] = { 29998 },	-- The Librarian's Quandry
-					["groups"] = {
+					["g"] = {
 						i(80722),	-- Ambermist Treads
 						i(80723),	-- Blackthicket Footguards
 						i(80724),	-- Jade Witch Sabatons
@@ -1331,7 +1399,7 @@ _.Zones =
 					["provider"] = { "n", 55135 },	-- General Nazgrim
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 29690 },	-- Into the Mists
-					["groups"] = {
+					["g"] = {
 						i(90329),	-- Garrosh's Vanguard Battleaxe
 						i(90336),	-- Gunship Armory Greataxe
 						i(90324),	-- Land Claimer's Cudgel
@@ -1351,7 +1419,7 @@ _.Zones =
 				o(214903, {	-- The Tan-Chao
 					q(29755, {	-- Pei-Back
 						["sourceQuests"] = { 29754 },	-- To Bridge Earth and Sky
-						["groups"] = {
+						["g"] = {
 							i(80695),	-- Ambermist Mantle
 							i(80696),	-- Blackthicket Spaulders
 							i(80697),	-- Jade Witch Spaulders
@@ -1419,7 +1487,7 @@ _.Zones =
 				}),
 				q(29882, {	-- Quill of Stingers
 					["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
-					["groups"] = {
+					["g"] = {
 						i(80713),	-- Ambermist Leggings
 						i(80714),	-- Blackthicket Legguards
 						i(80715),	-- Jade Witch Legguards
@@ -1443,7 +1511,7 @@ _.Zones =
 					["provider"] = { "n", 66656 },	-- General Nazgrim
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31769 },	-- The Final Blow!
-					["groups"] = {
+					["g"] = {
 						i(90334),	-- Cannonball-Dented Shield
 						i(90335),	-- Hozen-Thunking Mace
 						i(90337),	-- Marine's Boarding Plank
@@ -1467,7 +1535,7 @@ _.Zones =
 				q(30188, {	-- Riding the Skies - actually three different quests but completing one completes all three so I combined them and put a description
 					["provider"] = { "n", 58564 },	-- Elder Anli
 					["description"] = "|cff66ccffYou will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the quest again on another character.|r",
-					["groups"] = {
+					["g"] = {
 						i(79802), 	-- Quest 30188 - Reins of the Jade Cloud Serpent
 						i(85430), 	-- Quest 31810 - Reins of the Azure Cloud Serpent
 						i(85429), 	-- Quest 31811 - Reins of the Golden Cloud Serpent
@@ -1509,7 +1577,7 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 29765 },	-- Cryin' My Eyes Out
-					["groups"] = {
+					["g"] = {
 						i(90302),	-- Armored Chestpiece of Eminent Domain
 						i(90301),	-- Burnished Chestguard of Eminent Domain
 						i(90296),	-- Chain Armor of Eminent Domain
@@ -1530,7 +1598,7 @@ _.Zones =
 					["provider"] = { "n", 66845 },	-- Sergeant Gorrok
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31771, 31773, 29694 },	-- Face to Face With Consequence, Prowler Problems, & Regroup!
-					["groups"] = {
+					["g"] = {
 						i(90319),	-- Landfall Burnished Greaves
 						i(90314),	-- Landfall Chain Boots
 						i(90313),	-- Landfall Leather Boots
@@ -1581,7 +1649,7 @@ _.Zones =
 
 				q(29585, {	-- Spitfire
 					["provider"] = { "n", 54854 },	-- Gentle Mother Hanae
-					["groups"] = {
+					["g"] = {
 						i(84243),	-- Bamboo Fiber Gloves
 						i(84244),	-- Bamboo Leaf Gloves
 						i(84245),	-- Jade Witch Handguards
@@ -1715,7 +1783,7 @@ _.Zones =
 				q(30000, {	-- The Jade Serpent
 					["provider"] = { "n", 56784 },	-- Fei
 					["sourceQuests"] = { 29999, 30005 },	-- The Rider's Bind, Lighting Up The Sky
-					["groups"] = {
+					["g"] = {
 						i(80686),	-- Ambermist Hood
 						i(80687),	-- Blackthicket Helm
 						i(80688),	-- Jade Witch Helm
@@ -1808,7 +1876,7 @@ _.Zones =
 				q(29865, {	-- The Silkwood Road
 					["provider"] = { "n", 56062 },	-- Tzu the Ironbelly
 					["sourceQuests"] = { 31230 },	-- Welcome to Dawn's Blossom
-					["groups"] = {
+					["g"] = {
 						i(80704),	-- Ambermist Robe
 						i(80705),	-- Blackthicket Robes
 						i(80706),	-- Jade Witch Armor
@@ -1917,14 +1985,14 @@ _.Zones =
 					["provider"] = { "n", 56336 },	-- Chief Kah Kah
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 29941 },	-- Beyond the Horizon
-					["groups"] = {
+					["g"] = {
 						i(84105),	-- Fishy
 					},
 				}),
 				q(29930, {	-- What's Mined Is Yours
 					["provider"] = { "n", 56467 },	-- Hao Mann
 					["sourceQuests"] = { 29929 },	-- Trapped!
-					["groups"] = {
+					["g"] = {
 						i(80783),	-- Veridian Cloak
 						i(80784),	-- NectarBreeze Cloak
 						i(80785),	-- Mann's Cloak
@@ -1935,7 +2003,7 @@ _.Zones =
 				q(31241, {	-- Wicked Wikkets
 					["provider"] = { "n", 63748 },	-- Jeek Jeek
 					["races"] = HORDE_ONLY,
-					["groups"] = {
+					["g"] = {
 						i(88701),	-- Wikket Cape
 						i(88702),	-- Wikket Cloak
 						i(88703),	-- Wikket Wrap

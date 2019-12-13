@@ -180,6 +180,9 @@ _.Zones =
 					["coord"] = { 37.7, 43.5, 63 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(26893, {	-- Blackfathom Deeps
+					["u"] = 40,
+				}),
 				q(26894, {	-- Blackfathom Deeps
 					["provider"] = { "n", 34122 },	-- Commander Grimfang
 					["coord"] = { 12.1, 33.8, 63 },
@@ -191,6 +194,11 @@ _.Zones =
 					["coord"] = { 18.2, 20.4, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+				}),
+				q(26898, {	-- Blackfathom Deeps
+					["u"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 3691 },	-- Raene Wolfrunner
 				}),
 				q(13947, {	-- Blastranaar!
 					["provider"] = { "n", 34359 },	-- Captain Goggath

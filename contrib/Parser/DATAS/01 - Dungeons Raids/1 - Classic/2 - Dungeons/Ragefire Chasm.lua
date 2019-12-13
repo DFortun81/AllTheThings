@@ -43,6 +43,9 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(15453)),	-- Savannah Bracers
 					},
 				}),
+				q(26859, {	-- Searching for the Lost Satchel
+					["u"] = 40,
+				}),
 				q(26858, {	-- Taragaman the Hungerer
 					["u"] = 40,
 					["provider"] = { "n", 44217 },	-- Stone Guard Kurjack

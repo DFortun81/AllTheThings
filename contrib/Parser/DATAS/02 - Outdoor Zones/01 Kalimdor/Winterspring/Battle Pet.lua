@@ -52,12 +52,14 @@ _.Zones =
 					["coord"] = { 65.6, 64.4, 83 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["altQuests"] = { 31980 },	-- The Returning Champion (Deadwind Pass)
 				}),
 				q(31975, {	-- The Returning Champion
 					["provider"] = { "n", 66466 },	-- Stone Cold Trixxy
 					["coord"] = { 65.6, 64.4, 83 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["altQuests"] = { 31976 },	-- The Returning Champion (Deadwind Pass)
 				}),
 			}),
 		}),

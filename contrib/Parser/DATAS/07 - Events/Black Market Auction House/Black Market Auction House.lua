@@ -303,9 +303,10 @@ _.WorldEvents =
 			})),
 			i(14617),	-- Sawbones Shirt
 			un(9, i(44924)),	-- Sun-Lute of the Phoenix King
-			i(141995, {	--  Unclaimed Black Market Container
-				["sym"] = {{"select", "npcID", -94}, {"pop"}, {"not","itemID", 141995}},
+			i(169430, {	--  Unclaimed Black Market Container
+				["sym"] = {{"select", "npcID", -94}, {"pop"}, {"not","itemID", 169430}},
 			}),
+			un(2, i(141995)),	-- Unclaimed Black Market Container Pre 8.2.5 (they updated and added new items)
 		},
 		["description"] = "This list is close to what you can expect to find on the Black Market Auction House, but keep in mind other items could pop up.",
 		["maps"] = {

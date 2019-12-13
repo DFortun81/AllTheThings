@@ -62,6 +62,23 @@ _.Zones =
 					crit(1),	-- Omnia Mystics
 					crit(2),	-- Wu Kao Assassins
 				}),
+				ach(6539, {		-- One Steppe Forward, Two Steppes Back
+					crit(1, {	-- Fire Camp Osul
+						["sourceQuest"] = 30784,	-- The Point of No Return
+					}),
+					crit(2, {	-- Mistlurkers in the Sumprushes
+						["sourceQuest"] = 30793,	-- Mists' Opportunity
+					}),
+					crit(3, {	-- On Hatred's Path
+						["sourceQuest"] = 30900,	-- Terror of the Dread Wastes
+					}),
+					crit(4, {	-- The Sha of Hatred
+						["sourceQuest"] = 30968,	-- The Sha of hatred
+					}),
+					crit(5, {	-- Tai Ho's Investigation
+						["sourceQuest"] = 30926,	-- The Terrible Truth
+					}),
+				}),
 				ach(7297, {	-- Proven Strength (Shado-Pan Garrison)
 					crit(5),	-- Chao the Voice
 					crit(1),	-- Fei Li
@@ -89,7 +106,8 @@ _.Zones =
 						}),
 						o(213956, {	-- Fragment of Dread
 							["questID"] = 31423,
-							["coord"] = { 35.8, 65.3, 388 },
+							["coord"] = { 64.2, 20.3, 389 },
+							["description"] = "Inside |cFFFFD700The Ghastly Confines|r near |cFFFFD700Huggalon the Heart Watcher|r.",
 							["g"] = {
 								i(86516),	-- Fragment of Dread
 							},

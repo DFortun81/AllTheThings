@@ -28,8 +28,6 @@ _.Mounts =
 		i(21218),	-- Blue Qiraji Battle Tank
 		i(163578), 	-- Broken Highland Mustang
 		i(43951),	-- Bronze Drake
-		i(163576),	-- Captured Dune Scavenger
-		i(163574),	-- Chewed-On Reins of the Terrified Pack Mule
 		i(147806),	-- Cloudwing Hippogryph
 		i(173887),	-- Clutch of Ha-Li
 		i(95059),	-- Clutch of Ji-Kun
@@ -40,6 +38,7 @@ _.Mounts =
 		i(174641),	-- Drake of the Four Winds
 		i(63040),	-- Drake of the North Wind
 		i(63041),	-- Drake of the South Wind
+		i(163576),	-- Dune Scavenger
 		i(78919),	-- Experiment 12-B
 		i(169201),	-- Fabious
 		i(138201),	-- Fathom Dweller
@@ -74,6 +73,7 @@ _.Mounts =
 		i(168370),	-- Junkheap Drifter
 		i(104253),	-- Kor'kron Juggernaut
 		i(152844),	-- Lambent Mana Ray
+		i(163575),	-- Leaping Veinseeker
 		i(143764),	-- Leywoven Flying Carpet
 		i(77069),	-- Life-Binder's Handmaiden
 		i(163646),	-- Lil' Donkey
@@ -84,7 +84,6 @@ _.Mounts =
 		i(142236),	-- Midnight
 		i(45693),	-- Mimiron's Head
 		i(116661),	-- Mottled Meadowstomper
-		i(159921), 	-- Mummified Raptor Skull
 		i(161479),	-- Nazjatar Blood Serpentr
 		i(142233, {	-- Netherlord's Accursed Wrathsteed
 			["classes"] = { 9 },	-- Warlock
@@ -97,7 +96,6 @@ _.Mounts =
 		i(32768),	-- Raven Lord
 		i(94291),	-- Red Primal Raptor
 		i(21321),	-- Red Qiraji Battle Tank
-		i(163575),	-- Reins of a Tamed Bloodfeaster
 		i(147835),	-- Riddler's Mind-Worm
 		i(166466),	-- Risen Mare
 		i(13335),	-- Rivendare's Deathcharger
@@ -107,7 +105,6 @@ _.Mounts =
 		i(152840),	-- Scintillating Mana Ray Mount
 		i(152789),	-- Shackled Ur'zul
 		i(116663),	-- Shadowhide Pearltusk
-		i(159842),	-- Sharkbait's Favorite Crackers
 		i(169163),	-- Silent Glider
 		i(163645),	-- Skullripper
 		i(94229),	-- Slate Primordial Direhorn
@@ -119,17 +116,20 @@ _.Mounts =
 		i(93666),	-- Spawn of Horridon
 		i(166470),	-- Stonehide Elderhorn
 		i(67151),	-- Subdued Seahorse
+		i(159842),	-- Summon Sharkbait
 		i(116792),	-- Sunhide Gronnling
 		i(163585),  -- Surf Jelly
 		i(163644),	-- Swift Albino Raptor
 		i(116773),	-- Swift Breezestrider
 		i(35513),	-- Swift White Hawkstrider
 		i(68824),	-- Swift Zulian Panther
+		i(163574),	-- Terrified Pack Mule
 		i(156798),	-- The Hivemind
 		i(95057),	-- Thundering Cobalt Cloud Serpent
 		i(104269),	-- Thundering Onyx Cloud Serpent
 		i(90655),	-- Thundering Ruby Cloud Serpent
 		i(44168),	-- Time-Lost Proto-Drake
+		i(159921), 	-- Tomb Stalker
 		i(116658),	-- Tundra Icehoof
 		i(163584),  -- Twilight Avenger
 		i(43954),	-- Twilight Drake

@@ -20,10 +20,9 @@ _.Zones =
 						i(87217),	-- Small Bag of Goods
 						i(87623),	-- Razor-Sharp Chitin Choker
 						i(87222),	-- Big Bag of Linens
-						{	-- Glorious!
+						crit(12, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 12,
-						},
+						}),
 					},
 				}),
 				n(66467, {	-- G'nathus
@@ -70,10 +69,9 @@ _.Zones =
 							i(90724),	-- Spriggin's Sproggin' Leggin'
 							i(90718),	-- Torik-Ethis' Bloodied Legguards
 						}),
-						{	-- Glorious!
+						crit(33, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 33,
-						},
+						}),
 					},
 				}),
 				n(50734, {	-- Lith'ik the Stalker
@@ -91,10 +89,9 @@ _.Zones =
 						i(87624),	-- Yaungol Mist-Shaman's Amulet
 						i(87622),	-- Yoke of Niuzao
 						i(87221),	-- Big Bag of Jewels
-						{	-- Glorious!
+						crit(19, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 19,
-						},
+						}),
 					},
 				}),
 				n(50333, {	-- Lon the Bull
@@ -112,10 +109,9 @@ _.Zones =
 						i(87622),	-- Yoke of Niuzao
 						i(87217),	-- Small Bag of Goods
 						i(87219),	-- Huge Bag of Herbs
-						{	-- Glorious!
+						crit(54, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 54,
-						},
+						}),
 					},
 				}),
 				n(50344, {	-- Norlaxx
@@ -146,15 +142,14 @@ _.Zones =
 							i(90725),	-- Gaarn's Leggings of Infestation
 							i(90724),	-- Spriggin's Sproggin' Leggin'
 						}),
-						{	-- Glorious!
+						crit(26, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 26,
-						},
+						}),
 					},
 				}),
 				n(66938, {	-- Odd'nirok <Seer of Kril'mandar>
 					["coord"] = { 42.3, 92.67, 388 },
-					["groups"] = {
+					["g"] = {
 						i(90171, {	-- Odd'nirok's Clamshell
 							i(90172),	-- Clamshell Band
 							i(90087),	-- Lobstmourne
@@ -171,10 +166,9 @@ _.Zones =
 						i(87625),	-- Congealed Mist Amulet
 						i(87626),	-- Suna's Shattered Locket
 						i(87223),	-- Big Bag of Skins
-						{	-- Glorious!
+						crit(47, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 47,
-						},
+						}),
 					},
 				}),
 				n(50832, {  -- The Yowler
@@ -187,10 +181,9 @@ _.Zones =
 						i(87624),	-- Yaungol Mist-Shaman's Amulet
 						i(87622),	-- Yoke of Niuzao
 						i(87225),	-- Big Bag of Food
-						{	-- Glorious!
+						crit(5, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 5,
-						},
+						}),
 					},
 				}),
 				n(50820, {	-- Yul Wildpaw
@@ -203,10 +196,9 @@ _.Zones =
 						i(87622),	-- Yoke of Niuzao
 						i(87625),	-- Congealed Mist Amulet
 						i(87224),	-- Big Bag of Wonders
-						{	-- Glorious!
+						crit(40, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 40,
-						},
+						}),
 					},
 				}),
 				n(69841, {	-- Zandalari Warbringer (Amber)

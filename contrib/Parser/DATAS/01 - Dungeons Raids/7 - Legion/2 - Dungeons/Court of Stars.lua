@@ -4,25 +4,29 @@
 
 _.Instances = { tier(7, {	-- Legion
 	inst(800, {	-- Court of Stars
-		["lvl"] = 110,
 		["maps"] = { 761, 762, 763 },
-		["groups"] = {
+		["lvl"] = 110,
+		["g"] = {
 			n(-34, {	-- World Quests
 				q(42769, {	-- Court of Stars: Bring Me the Eyes
-					["lvl"] = 110,
 					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 				q(42781, {	-- Court of Stars: Disarmning the Watch
-					["lvl"] = 110,
 					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(42784, {	-- Court of Stars: The Deceitful Student
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 				q(42783, {	-- Court of Stars: They Bloom at Night
-					["lvl"] = 110,
 					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 				q(42764, {	-- Court of Stars: Wraith in the Machine
-					["lvl"] = 110,
 					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 			}),
 			d(2, {	-- Heroic

@@ -427,6 +427,17 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				q(10253, {	-- Levixus the Soul Caller
+					["provider"] = { "n", 19844 },	-- Nitrin the Learned
+					["coord"] = { 51.8, 56.8, 107 },
+					["sourceQuest"] = 10252,	-- Vision of the Dead
+					["group"] = {
+						i(29312),	-- Cover of Righteous Fury
+						i(29313),	-- Earthbreaker's Greaves
+						i(29315),	-- Gloves of Penitence
+						i(29314),	-- Leggings of the Third Coin
+					},
+				}),
 				q(10045, {	-- Material Components
 					["provider"] = { "n", 18141 },	-- Greatmother Geyah
 					["coord"] = { 56.6, 34.2, 107 },
@@ -893,6 +904,11 @@ _.Zones =
 						i(25569),	-- Murkblood Avenger's Chestplate
 						i(25568),	-- Warcaster's Scaled Leggings
 					},
+				}),
+				q(10252, {	-- Vision of the Dead
+					["coord"] = { 51.8, 56.8, 107 },
+					["provider"] = { "n", 19844 },	-- Nitrin the Learned
+					["sourceQuest"] = 10251,	-- The Master's Grand Design?
 				}),
 				q(11044, {	-- Visions of Destruction
 					["provider"] = { "n", 23268 },	-- Seer Jovar

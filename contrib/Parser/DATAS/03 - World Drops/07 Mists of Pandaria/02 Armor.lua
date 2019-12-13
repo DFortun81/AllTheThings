@@ -119,6 +119,7 @@ _.WorldDrops =
 			}),
 			f(53,   {	-- Trinket
 				i(87496),	-- Daelo's Final Words
+				i(87497),	-- Core of Decency
 			}),
 		}),
 	}),

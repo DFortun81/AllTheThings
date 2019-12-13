@@ -22,6 +22,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(29323),	-- Andormu's Tear
 					},
 				}),
+				q(29673, {	-- The Black Morass
+					["u"] = 40,
+				}),
 				q(10297, {	-- The Opening of the Dark Portal
 					["provider"] = { "n", 20201 },	-- Sa'at
 					["sourceQuests"] = { 10296 },	-- The Black Morass

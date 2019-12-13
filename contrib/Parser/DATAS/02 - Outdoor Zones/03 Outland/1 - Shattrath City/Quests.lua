@@ -187,10 +187,10 @@ _.Zones =
 					["sourceQuest"] = 12811,	-- Desperate Research
 				}),
 				q(10037, {	-- Rather Be Fishin'
+					["provider"] = { "n", 18653 },	-- Seth
 					["g"] = {
 						i(25978)	-- Seth's Graphite Fishing Pole
 					},
-					["provider"] = { "n", 18653 },	-- Seth
 				}),
 				q(11377, {	-- Revenge is Tasty
 					["isDaily"] = true,
@@ -254,6 +254,7 @@ _.Zones =
 				}),
 				q(11379, {	-- Super Hot Stew
 					["isDaily"] = true,
+					["provider"] = { "n", 24393 },	-- The Rokk
 					["g"] = {
 						i(33844, {	-- Barrel of Fish
 							i(33869),	-- Recipe: Broiled Bloodfin
@@ -274,7 +275,6 @@ _.Zones =
 							["achievementID"] = 906,	-- Kickin' It Up a Notch
 						}),
 					},
-					["provider"] = { "n", 24393 },	-- The Rokk
 				}),
 				q(13082, {	-- The Boon of A'dal
 					["provider"] = { "n", 18481 },	-- A'dal
@@ -292,8 +292,9 @@ _.Zones =
 					["sourceQuest"] = 12777,	-- A Desperate Alliance
 				}),
 				q(10251, {	-- The Master's Grand Design?
-					["provider"] = { "n", 19720 },	-- "Dirty" Larry
-					["sourceQuests"] = { 10231 },	-- What Book?  I Don't See Any Book. *UNTESTED*
+					["coord"] = { 43.6, 29.6, 111 },
+					["provider"] = { "n", 19720 },	-- "Dirty" Larry <Ruffian>
+					["sourceQuest"] = 10231,	-- What Book? I Don't See Any Book.
 				}),
 				q(10883, {	-- The Tempest Key
 					["provider"] = { "n", 18166 },	-- Archmage Khadgar
@@ -345,46 +346,46 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(11389, {	-- Wanted: Arcatraz Sentinels
+					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
+					["isDaily"] = true,
 					["g"] = {
 						i(29460),	-- Ethereum Prison Key
 					},
-					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
-					["isDaily"] = true,
 				}),
 				q(11371, {	-- Wanted: Coilfang Myrmidons
+					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
+					["isDaily"] = true,
 					["g"] = {
 						i(29460),	-- Ethereum Prison Key
 					},
-					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
-					["isDaily"] = true,
 				}),
 				q(11376, {	-- Wanted: Malicious Instructors
+					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
+					["isDaily"] = true,
 					["g"] = {
 						i(29460),	-- Ethereum Prison Key
 					},
-					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
-					["isDaily"] = true,
 				}),
 				q(11383, {	-- Wanted: Rift Lords
+					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
+					["isDaily"] = true,
 					["g"] = {
 						i(29460),	-- Ethereum Prison Key
 					},
-					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
-					["isDaily"] = true,
 				}),
 				q(11364, {	-- Wanted: Shattered Hand Centurions
+					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
+					["isDaily"] = true,
 					["g"] = {
 						i(29460),	-- Ethereum Prison Key
 					},
-					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
-					["isDaily"] = true,
 				}),
 				q(11500, {	-- Wanted: Sisters of Torment
+					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
+					["isDaily"] = true,
 					["g"] = {
 						i(29460),	-- Ethereum Prison Key
 					},
-					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
-					["isDaily"] = true,
 				}),
 				q(11385, {	-- Wanted: Sunseeker Channelers
 					["g"] = {
@@ -394,15 +395,17 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(11387, {	-- Wanted: Tempest-Forge Destroyers
+					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
+					["isDaily"] = true,
 					["g"] = {
 						i(29460),	-- Ethereum Prison Key
 					},
-					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
-					["isDaily"] = true,
 				}),
 				q(10231, {	-- What Book? I Don't See Any Book.
+					["coord"] = { 59.3, 35.6, 111 },
 					["provider"] = { "n", 19715 },	-- Ezekiel
-					["sourceQuests"] = { 10228 },	-- Ezekiel *UNTESTED*
+					["description"] = "Walks around the |cFFFFD700Terrace of Light|r.",
+					["sourceQuest"] = 10228,	-- Ezekiel
 				}),
 				q(11045, {	-- Zorus the Judicator
 					["provider"] = { "n", 19678 },	-- Fantei

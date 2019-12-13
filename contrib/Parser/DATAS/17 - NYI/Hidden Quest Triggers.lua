@@ -243,6 +243,18 @@ _.NeverImplemented =
 		--   CATACLYSM   --
 		-------------------
 		q(28347),	-- Coffer of Promise TRACKING QUEST
+		q(25071),	-- FLAG - Purple Murloc
+		q(28889),	-- Arcane Instructions Tracking Quest
+		q(28887),	-- Fire Instructions Tracking Quest
+		q(28886),	-- Frost Instructions Tracking Quest
+		q(28888),	-- Shadow Instructions Tracking Quest
+		q(29368),	-- Tracking
+		q(29378),	-- FLAG - Teleport to Vashj'ir
+		q(29379),	-- FLAG - Teleport to Deepholm
+		q(29380),	-- FLAG - Teleport to Firelands
+		q(29381),	-- FLAG - Teleport to Hyjal
+		q(29395),	-- FLAG - Teleport to Uldum
+		q(29592),	-- Caster Legendary BREADCRUMB TRACKER
 		
 		q(26565),	-- A Furious Catch (REMOVED) — unused version of Orgrimmar Cata fishing daily "A Golden Opportunity"
 		q(35348),	-- Blackrock Caverns Reward Quest
@@ -250,6 +262,7 @@ _.NeverImplemented =
 		q(35358),	-- End Time heroic completion
 		q(35439),	-- Hour of Twilight dungeon reward (Kill benedictus)
 		q(35414),	-- Lost City of the Tol'vir dungeon reward (Kill Siamat)
+		q(35911),	-- Stonecore Reward Quest
 		q(25829),	-- Mount Hyjal - goldrinn hub complete
 		q(27872),	-- Mount Hyjal - tortolla hub complete
 		q(27873),	-- Mount Hyjal - aviana hub complete
@@ -277,9 +290,11 @@ _.NeverImplemented =
 		q(30087),	-- FLAG - Kung Fu Intro — wowhead info for this is possibly irrelevant, seems to trigger either when flying close to the magical barrier or after accepting The Arcanic Oubliette in Krasarang Wilds
 		q(31153),	-- Tracking Event - Saved Diaani
 		q(31154),	-- Tracking Event - Saved Zuulo
+		q(31829),	-- Tracking Event: Alliance Gunship Leaves — triggers after turning in The Pearlfin Situation and Road Rations in Jade Forest
 		q(30531),	-- Tracking Event: Finished First Expansion
 		q(30533),	-- Tracking Event: Finished Second Expansion
 		q(30574),	-- Tracking Event: Finished Third Expansion
+		q(29884),	-- Tracking Event: Spies Leave — triggers after turning in The Pearlfin Situation and Road Rations in Jade Forest
 		q(30530),	-- Tracking Event: Started First Expansion
 		q(30532),	-- Tracking Event: Started Second Expansion
 		q(30573),	-- Tracking Event: Started Third Expansion
@@ -296,6 +311,63 @@ _.NeverImplemented =
 		q(33899),	-- Tracking Quest: Turn on the Holograms
 		q(31484),	-- Hisek tracking quest
 		q(32012),	-- Kovok tracking [GROWING]
+		q(29604),	-- Tracking Event: Saw East Temple Arrival Cinematic
+		q(29638),	-- UNUSED
+		q(29695),	-- Kiryn TRACKING
+		q(29702),	-- Gorrok TRACKING
+		q(29697),	-- Rivett TRACKING
+		q(29704),	-- Shokia TRACKING
+		q(37212),	-- FLAG - Proving Grounds - Damage Bronze
+		q(33089),	-- FLAG - Proving Grounds - Damage Bronze
+		q(37214),	-- FLAG - Proving Grounds - Damage Gold
+		q(33091),	-- FLAG - Proving Grounds - Damage Gold
+		q(33090),	-- FLAG - Proving Grounds - Damage Silver
+		q(37213),	-- FLAG - Proving Grounds - Damage Silver
+		q(37218),	-- FLAG - Proving Grounds - Healer Bronze
+		q(33095),	-- FLAG - Proving Grounds - Healer Bronze
+		q(37220),	-- FLAG - Proving Grounds - Healer Gold
+		q(33097),	-- FLAG - Proving Grounds - Healer Gold
+		q(33096),	-- FLAG - Proving Grounds - Healer Silver
+		q(37219),	-- FLAG - Proving Grounds - Healer Silver
+		q(33092),	-- FLAG - Proving Grounds - Tank Bronze
+		q(37215),	-- FLAG - Proving Grounds - Tank Bronze
+		q(33094),	-- FLAG - Proving Grounds - Tank Gold
+		q(37217),	-- FLAG - Proving Grounds - Tank Gold
+		q(37216),	-- FLAG - Proving Grounds - Tank Silver
+		q(33093),	-- FLAG - Proving Grounds - Tank Silver
+		q(31282),	-- Dread Wastes - Kaz'tik tracking quest - triggers after freeing Kaz'tik from amber
+		q(31343),	-- Dread Wastes - Kovok Tracking - triggers when turnin in "Reunited". Allows Kovok to follow you
+		q(31992),	-- Kun-lai Summit - Dread Wastes Buff Bitflag - Enhancement 01 - Angel of Death
+		q(31993),	-- Kun-lai Summit - Dread Wastes Buff Bitflag - Enhancement 02 - Iron Mantid
+		q(31994),	-- Kun-lai Summit - Dread Wastes Buff Bitflag - Enhancement 03 - Raining Blood
+		q(31995),	-- Kun-lai Summit - Dread Wastes Buff Bitflag - Augmentation 01 - Speed King
+		q(31996),	-- Kun-lai Summit - Dread Wastes Buff Bitflag - Augmentation 02 - Seek and Destroy
+		q(31997),	-- Kun-lai Summit - Dread Wastes Buff Bitflag - Augmentation 03 - Speed King
+		q(31301),	-- Kun-lai Summit - Shomi Strand Tracking - triggers when you find Sage Liao in Zouchin Strand
+		q(30854),	-- Kun-lai Summit - Lha-Po Tracking Quest - triggers after turning in "One Traveler's Misfortune"
+		q(31205),	-- Kun-lai Summit - Lorewalker Cho Tracking Quest - triggers after turning in "Fisherman's Tale"
+		q(31298),	-- Kun-lai Summit - Zouchin Village intro tracking - triggers after turning in "Fisherman's Tale"
+		q(31299),	-- Kun-lai Summit - Shomi Ruins Tracking - triggers while on "Make a Fighter Out of Me" and you walk into the zandalari vanguard ruins
+		q(31310),	-- Kun-lai Summit - Interrogation tracking - triggers when doing "Revelations"
+		q(31300),	-- Kun-lai Summit - Shomi Beach Tracking - triggered while on "Justice" shortly after killing Captain Ripflesh
+		q(31461),	-- Kun-lai Summit - Spoke to Xuen - part of "A Celestial Experience"
+		q(31462),	-- Kun-lai Summit - Spirit of Violence Defeated - first test during "A Celestial Experience"
+		q(31463),	-- Kun-lai Summit - Spirit of Anger Defeated - second test during "A Celestial Experience"
+		q(31464),	-- Kun-lai Summit - Opposing Faction Leader Defeated - third test during "A Celestial Experience"
+		q(30647),	-- Kun-lai Summit - Tracking Quest: Opened the Golden Valley - triggers when the gates to the Vale of Eternal Blossom are opened
+		q(31807),	-- Kun-lai Summit - Tracking Quest: Opened the Golden Valley II - triggers after the dialog finishes with the 4 celestials at the gates
+		q(31123),	-- Townlong Steppes - Chose Arms Warrior
+		q(31124),	-- Townlong Steppes - Chose Brewmaster
+		q(31050),	-- Townlong Steppes - Chose Fire Mage
+		q(31051),	-- Townlong Steppes - Chose Frost Mage
+		q(31052),	-- Townlong Steppes - Chose Priest
+		q(31122),	-- Townlong Steppes - Chose Prot Warrior
+		q(31053),	-- Townlong Steppes - Tracking Event: Started Shado-Pan Dailies
+		q(31125),	-- Townlong Steppes - Unlocked Chao
+		q(31126),	-- Townlong Steppes - Unlocked Lao-Chen
+		q(31054),	-- Townlong Steppes - Unlocked Yalia Sagewhisper
+		q(31607),	-- Townlong Steppes - Tracking Event: Finished Spiteful Spirits & Hatred Becomes Us
+		q(30936),	-- Townlong Steppes - unused. Triggers when turning in "Behind the Battlefront"
 		
 	--	DUNGEONS
 		q(35316),	-- Gate of the Setting Sun Reward Quest
@@ -332,6 +404,7 @@ _.NeverImplemented =
 		q(31625),	-- Shado-Pan Monastery Challenge Mode - Consolation (Nth)
 		q(31646),	-- Shado-Pan Monastery Challenge Mode - Gold Addition (Nth)
 		q(31639),	-- Shado-Pan Monastery Challenge Mode - Silver Addition (Nth)
+		q(35319),	-- Shado-Pan Monastery normal clear
 		q(35320),	-- Shado-Pan Monastery Reward Quest
 		q(31633),	-- Siege of Niuzao Temple Challenge Mode - Bronze Addition (Nth)
 		q(31626),	-- Siege of Niuzao Temple Challenge Mode - Consolation (Nth)
@@ -721,6 +794,46 @@ _.NeverImplemented =
 		q(45302),	-- 7.1.5 Class Hall - Brawlers Missions - Has Completed Any Brawlers Mission with Overmax - Tracking Quest — triggered when doing my first brawl for BFA
 		q(48973),	-- Unused Paragon quest, it seems the active one is #48976, "Supplies From the Argussian Reach"
 		q(48974),	-- Unused Paragon quest, it seems the active one is #48977, "Supplies From the Army of the Light"
+		q(46709),	-- Broken Isles - Ready for Crafted Legendary flag
+		q(47096),	-- Broken Isles - Choice: Blacksmithing
+		q(47092),	-- Broken Isles - Working on Crafted Legendary
+		q(46871),	-- Broken Isles - 7.2 Broken Shore - Buildings - Nether Disruptor - Buff Activiation - Tracking Quest
+		q(46283),	-- Broken Isles - 7.2 Broken Shore - Buildings - Mage Tower - Personal Reward Received
+		q(46793),	-- Broken Isles - 7.2 Broken Shore - Buildings - Mage Tower - Buff Activation - Tracking Quest
+		q(46870),	-- Broken Isles - 7.2 Broken Shore - Buildings - Command Center - Buff Activation - Tracking Quest
+		q(47021),	-- Broken Isles - 7.2 Broken Shore - Buildings - Command Center - Buff - Follower Token - Tracking
+		q(47053),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 3 - Tracking
+		q(47044),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 2 - Tracking
+		q(47038),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 1 - Tracking
+		q(38894),	-- Hunter Order Hall - Founded the order hall
+		q(40621),	-- Hunter Order Hall - Beast Mastery Chosen first
+		q(44045),	-- Hunter Order Hall - Beast Mastery Chosen
+		q(44367),	-- Hunter Order Hall - Beast Mastery Chosen
+		q(40619),	-- Hunter Order Hall - Survival Chosen
+		q(44369),	-- Hunter Order Hall - Survival Chosen
+		q(44047),	-- Hunter Order Hall - Survival Chosen
+		q(44046),	-- Hunter Order Hall - Marksmanship Chosen
+		q(40620),	-- Hunter Order Hall - Marksmanship Chosen
+		q(44368),	-- Hunter Order Hall - Marksmanship Chosen
+		q(43158),	-- Hunter Order Hall - conversation flag for a hidden romance quest
+		q(43837),	-- Hunter Order Hall - tutorial - combat ally unlocked
+		
+		q(38544),	-- FLAG: Demonsteel Waistguard Crafted
+		q(38546),	-- FLAG: Demonsteel Boots Crafted
+		q(38550),	-- FLAG: Demonsteel Greaves Crafted
+		q(38551),	-- FLAG: Demonsteel Breastplate Crafted
+		q(38543),	-- FLAG: Demonsteel Armguards Crafted
+		q(38545),	-- FLAG: Demonsteel Pauldrons Crafted
+		q(38547),	-- FLAG: Demonsteel Gauntlets Crafted
+		q(38549),	-- FLAG: Demonsteel Helm Crafted
+		q(38976),	-- FLAG: Undying Silkweave Bracers
+		q(38977),	-- FLAG: Undying Silkweave Cinch Crafted
+		q(38978),	-- FLAG: Undying Silkweave Epaulets Crafted
+		q(38980),	-- FLAG: Undying Silkweave Gloves Crafted
+		q(38981),	-- FLAG: Undying Silkweave Hood Crafted
+		q(38982),	-- FLAG: Undying Silkweave Pantaloons Crafted
+		q(38983),	-- FLAG: Undying Silkweave Robe Crafted
+		q(38979),	-- FLAG: Undying Silkweave Slippers Crafted
 		
 	--	Professions
 	--	Archaeology
@@ -755,7 +868,7 @@ _.NeverImplemented =
 	--	q(),	-- Ana-Mouz killID
 	--	q(),	-- Ana-Mouz bonus roll
 	--	q(),	-- Apocron killID
-	--	q(),	-- Apocron bonus roll
+		q(47087),	-- Apocron bonus roll
 		q(47085),	-- Brutallus killID
 		q(47088),	-- Brutallus bonus roll
 		q(44502),	-- Calamir killID
@@ -781,7 +894,7 @@ _.NeverImplemented =
 		q(44510),	-- The Soultakers killID
 		q(44905),	-- The Soultakers bonus roll
 	--	q(),	-- Withered J'im killID
-	--	q(),	-- Withered J'im bonus roll
+		q(44906),	-- Withered J'im bonus roll
 		
 	--	Invasions
 		q(47065),	-- Highmountain Invasion / Fel Commander Erixtol Kill

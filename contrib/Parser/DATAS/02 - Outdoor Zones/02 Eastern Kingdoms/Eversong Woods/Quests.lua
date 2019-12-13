@@ -364,7 +364,7 @@ _.Zones =
 				}),
 				q(8488,  {	-- Unexpected Results
 					["provider"] = { "n", 15402 },	-- Apprentice Mirveda
-					["coord"] = { 4.2, 70.9, 94 },
+					["coord"] = { 54.2, 70.9, 94 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 8487,	-- Corrupted Soil
 				}),

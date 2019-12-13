@@ -1139,6 +1139,11 @@ _.Zones =
 						i(119327),	-- Durak's Downfall
 					},
 				}),
+				q(26865, {	-- Enemies Below
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 39605 },	-- Garrosh Hellscream
+				}),
 				q(31034, {	-- Enemies Below
 					["provider"] = { "n", 14720 },	-- High Overlord Saurfang
 					["coord"] = { 48.6, 71.0, 85 },
@@ -1972,6 +1977,11 @@ _.Zones =
 					["g"] = {
 						i(65485),	-- Shadow-Walker Staff
 					},
+				}),
+				q(27570, {	-- The Situation So Far
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 39283 },	-- Earthmender Norsala
 				}),
 				q(50769, {	-- The Stormwind Extraction
 					["provider"] = { "n", 135205 },	-- Nathanos Blightcaller

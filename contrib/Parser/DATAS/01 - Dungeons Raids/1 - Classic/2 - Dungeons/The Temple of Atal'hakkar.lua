@@ -129,6 +129,14 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(10751)),	-- Gemburst Circlet
 					},
 				}),
+				q(27634, {	-- The God Hakkar
+					["u"] = 40,
+					["g"] = {
+						un(2, i(10749)),	-- Avenguard Helm
+						un(2, i(10750)),	-- Lifeforce Dirk
+						un(2, i(10751)),	-- Gemburst Circlet
+					},
+				}),
 				q(8232, {	-- The Green Drake
 					["u"] = 40,
 					["provider"] = { "n", 8405 },	-- Ogtinc

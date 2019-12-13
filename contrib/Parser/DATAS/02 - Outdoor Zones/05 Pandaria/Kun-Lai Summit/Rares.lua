@@ -19,10 +19,9 @@ _.Zones =
 						i(87620),	-- Bracers of the Frozen Summit
 						i(87615),	-- Yakwasher's Bracers
 						i(86588),	-- Pandaren Firework Launcher
-						{	-- Glorious!
+						crit(39, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 39,
-						},
+						}),
 					},
 				}),
 				n(50341, {	-- Borginn Darkfist
@@ -38,10 +37,9 @@ _.Zones =
 						i(87619),	-- Terracotta Guardian's Bracer
 						i(87616),	-- Mountain Trailblazer's Cuffs
 						i(87620),	-- Bracers of the Frozen Summit
-						{	-- Glorious!
+						crit(25, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 25,
-						},
+						}),
 					},
 				}),
 				n(50354, {	-- Havak
@@ -61,10 +59,9 @@ _.Zones =
 						i(87617),	-- Bracers of the Serene Mountaintop
 						i(87619),	-- Terracotta Guardian's Bracer
 						i(87616),	-- Mountain Trailblazer's Cuffs
-						{	-- Glorious!
+						crit(32, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 32,
-						},
+						}),
 					},
 				}),
 				n(66933, {	-- Kishak
@@ -103,20 +100,18 @@ _.Zones =
 						i(87614),	-- Kafa Picker's Bracers
 						i(87615),	-- Yakwasher's Bracers
 						i(87621),	-- Wristguards of Great Fortune
-						{	-- Glorious!
+						crit(53, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 53,
-						},
+						}),
 					},
 				}),
 				n(70323, {	-- Krakkanon
-					{
-						["itemID"] = 88563,	-- Nat's Fishing Journal
-					--	["questID"] = 31664,	-- An Angler's Quest
-						["repeatable"] = true,
+					q(31664, {	-- An Angler's Quest
 						["icon"] = "Interface\\Icons\\inv_misc_book_11",
+						["provider"] = { "i", 88563 },	-- Nat's Fishing Journal
+						["repeatable"] = true,
 						["collectible"] = false,
-					},
+					}),
 				}),
 				n(50789, {	-- Nessos the Oracle
 					["coord"] = { 63.8, 13.7, 379 },
@@ -135,10 +130,9 @@ _.Zones =
 						i(87614),	-- Kafa Picker's Bracers
 						i(87616),	-- Mountain Trailblazer's Cuffs
 						i(87619),	-- Terracotta Guardian's Bracer
-						{	-- Glorious!
+						crit(46, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 46,
-						},
+						}),
 					},
 				}),
 				n(50831, {	-- Scritch
@@ -158,10 +152,9 @@ _.Zones =
 						i(87617),	-- Bracers of the Serene Mountaintop
 						i(87613),	-- Frozen Zandalari Bracer
 						i(87618),	-- Ice Encrusted Bracer
-						{	-- Glorious!
+						crit(4, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 4,
-						},
+						}),
 					},
 				}),
 				n(50733, {	-- Ski'thik
@@ -177,10 +170,9 @@ _.Zones =
 						i(87620),	-- Bracers of the Frozen Summit
 						i(87618),	-- Ice Encrusted Bracer
 						i(87614),	-- Kafa Picker's Bracers
-						{	-- Glorious!
+						crit(18, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 18,
-						},
+						}),
 					},
 				}),
 				n(50769, {	-- Zai the Outcast
@@ -200,10 +192,9 @@ _.Zones =
 						i(87613),	-- Frozen Zandalari Bracer
 						i(87616),	-- Mountain Trailblazer's Cuffs
 						i(87615),	-- Yakwasher's Bracers
-						{	-- Glorious!
+						crit(11, {	-- Glorious!
 							["achievementID"] = 7439,
-							["criteriaID"] = 11,
-						},
+						}),
 					},
 				}),
 				n(69841, {	-- Zandalari Warbringer (Amber)

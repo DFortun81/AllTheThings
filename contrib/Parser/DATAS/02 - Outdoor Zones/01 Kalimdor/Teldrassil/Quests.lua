@@ -190,6 +190,7 @@ _.Zones =
 					["coord"] = { 40.0, 50.4, 57 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32326,	-- Insertion
+					["level"] = 81,
 				}),
 				q(2438,  {	-- The Emerald Dreamcatcher
 					["provider"] = { "n", 3567 },	-- Tallonkai Swiftroot
@@ -329,6 +330,8 @@ _.Zones =
 					["coord"] = { 40.0, 50.4, 57 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32327,	-- The Darnassus Mission
+					["level"] = 81,
+					
 				}),
 				q(488,   {	-- Zenn's Bidding
 					["provider"] = { "n", 2150 },	-- Zenn Foulhoof

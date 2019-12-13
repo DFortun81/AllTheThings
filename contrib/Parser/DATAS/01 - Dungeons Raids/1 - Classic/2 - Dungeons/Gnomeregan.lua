@@ -46,10 +46,12 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				q(2947, {	-- Return of the Ring (A)
 					["sourceQuests"] = { 2945 },	-- Grime-Encrusted Ring
+					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 142487 },	-- The Sparklematic 5200
 				}),
 				q(2949, {	-- Return of the Ring (H)
 					["sourceQuests"] = { 2945 },	-- Grime-Encrusted Ring
+					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 142487 },	-- The Sparklematic 5200
 				}),
 				q(2841, {	-- Rig Wars

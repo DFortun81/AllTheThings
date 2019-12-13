@@ -2687,6 +2687,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(50806),	-- Leggings of Unrelenting Blood
 							i(50804),	-- Icecrown Spire Sandals
 							i(50803),	-- Saurfang's Cold-Forged Band
+							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
+								artifact(870),	-- Find Hidden Artifact Skin
+							}),
 						},
 					}),
 					n(37904, {	-- Brazie Getz
@@ -2886,6 +2889,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(51798),	-- Valius, Gavel of the Lightbringer
 							i(51802),	-- Windrunner's Heartseeker
 							i(122229),	-- Music Roll: Invincible
+							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
+								artifact(870),	-- Find Hidden Artifact Skin
+							}),
 						},
 					}),
 				}),
@@ -3112,6 +3118,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(51897),	-- Leggings of Unrelenting Blood
 							i(51899),	-- Icecrown Spire Sandals
 							i(51900),	-- Saurfang's Cold-Forged Band
+							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
+								artifact(870),	-- Find Hidden Artifact Skin
+							}),
 						},
 					}),
 					n(37904, {	-- Brazie Getz
@@ -3323,6 +3332,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(51944),	-- Valius, Gavel of the Lightbringer
 							i(51940),	-- Windrunner's Heartseeker
 							i(122229),	-- Music Roll: Invincible
+							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
+								artifact(870),	-- Find Hidden Artifact Skin
+							}),
 						},
 					}),
 				}),
@@ -3551,6 +3563,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(50333),	-- Toskk's Maximized Wristguards
 							i(50015),	-- Belt of the Blood Nova
 							i(50362),	-- Deathbringer's Will
+							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
+								artifact(870),	-- Find Hidden Artifact Skin
+							}),
 						},
 					}),
 					n(37904, {	-- Brazie Getz
@@ -3767,6 +3782,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(50428),	-- Royal Scepter of Terenas II
 							i(49981),	-- Fal'inrush, Defender of Quel'thalas
 							i(122229),	-- Music Roll: Invincible
+							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
+								artifact(870),	-- Find Hidden Artifact Skin
+							}),
 						},
 					}),
 				}),
@@ -4099,6 +4117,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(50670),	-- Toskk's Maximized Wristguards
 							i(50671),	-- Belt of the Blood Nova
 							i(50363),	-- Deathbringer's Will
+							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
+								artifact(870),	-- Find Hidden Artifact Skin
+							}),
 						},
 					}),
 					n(37904, {	-- Brazie Getz
@@ -4328,6 +4349,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(50734),	-- Royal Scepter of Terenas II
 							i(50733),	-- Fal'inrush, Defender of Quel'thalas
 							i(122229),	-- Music Roll: Invincible
+							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
+								artifact(870),	-- Find Hidden Artifact Skin
+							}),
 						},
 					}),
 				}),

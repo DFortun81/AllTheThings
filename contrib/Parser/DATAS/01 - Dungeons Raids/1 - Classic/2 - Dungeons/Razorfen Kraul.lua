@@ -36,6 +36,9 @@ _.Instances = { tier(1, {	-- Classic
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 49205 },	-- Small Scroll
 				}),
+				q(24900, {	-- Blueleaf Tubers
+					["u"] = 40,
+				}),
 				q(26901, {	-- Going, Going, Guano!
 					["provider"] = { "n", 44402 },	-- Auld Stonespire
 				}),
@@ -63,6 +66,15 @@ _.Instances = { tier(1, {	-- Classic
 				q(1144,  {	-- Willix the Importer
 					["provider"] = { "n", 4508 },	-- Willix the Importer
 					["u"] = 40,	-- Legacy Quests
+					["g"] = {
+						un(2, i(6748)),	-- Monkey Ring
+						un(2, i(6750)),	-- Snake Hoop
+						un(2, i(6749)),	-- Tiger Band
+					},
+				}),
+				q(26903, {	-- Willix the Importer
+					["u"] = 40,
+					["provider"] = { "n", 4508 },	-- Willix the Importer
 					["g"] = {
 						un(2, i(6748)),	-- Monkey Ring
 						un(2, i(6750)),	-- Snake Hoop

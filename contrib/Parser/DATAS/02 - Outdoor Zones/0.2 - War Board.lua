@@ -25,7 +25,7 @@ _.Zones =
 			q(29611, {	-- The Art of War
 				["description"] = "Players who have not completed Vashj'ir will receive this version of The Art of War.",
 			}),
-			q(34398, {	-- The Dark Portal
+			q(34398, {	-- The Dark Portal (also for alliance, got on KT druid)
 				["description"] = "If you want to do the Blasted Lands questline before going to Draenor, use the portal in Cleft of Shadow and speak to Thrall rather than accepting this quest.",
 			}),
 			q(43926, {	-- The Legion Returns
@@ -123,7 +123,13 @@ _.Zones =
 			q(27721, {	-- Warchief's Command: Mount Hyjal!
 				["isBreadcrumb"] = true,
 			}),
-			q(49549, {	-- Warchief's Command: Nagrand!
+			q(49549, {	-- Warchief's Command: Nagrand! (Draenor)
+				["isBreadcrumb"] = true,
+			}),
+			q(39189, {	-- Warchief's Command: Nagrand! (NYI - duplicate?)
+				["u"] = 1,
+			}),
+			q(39196, {	-- Warchief's Command: Nagrand! (Outland)
 				["isBreadcrumb"] = true,
 			}),
 			q(39201, {	-- Warchief's Command: Netherstorm!

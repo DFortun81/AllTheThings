@@ -229,10 +229,10 @@ _.PVP =
 				i(134786),	-- Entrenched Handwraps*
 				i(134784),	-- Entrenched Raiment*
 				i(134785),	-- Entrenched Treads
-				i(134792),	-- Ruinous Boots
-				i(134793),	-- Ruinous Gloves
-				i(134794),	-- Ruinous Helm
-				i(134791),	-- Ruinous Tunic
+				i(134792),	-- Ruinous Boots*
+				i(134793),	-- Ruinous Gloves*
+				i(134794),	-- Ruinous Helm*
+				i(134791),	-- Ruinous Tunic*
 				i(134795),	-- Ironbranded Chainmail
 				i(134796),	-- Ironbranded Footguards
 				i(134797),	-- Ironbranded Gauntlets
@@ -253,6 +253,7 @@ _.PVP =
 				i(134790),	-- Seasoned Staff*
 				i(134776),	-- Seasoned Decapitator
 				i(134788),	-- Seasoned Distinction*
+				i(134777),	-- Seasoned Accolade*
 			},
 		}),
 		i(135546, {	-- Fel-Touched Crate of Battlefield Goods 100-109 / Ashran

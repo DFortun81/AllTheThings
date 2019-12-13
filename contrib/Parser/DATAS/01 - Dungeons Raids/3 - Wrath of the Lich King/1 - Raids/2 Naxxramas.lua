@@ -1507,6 +1507,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								i(40471),	-- Valorous Dreamwalker Raiments
 								i(40495),	-- Valorous Bonescythe Breastplate
 							}),
+							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
+								artifact(870),	-- Find Hidden Artifact Skin
+							}),
 						},
 					})),
 				}),

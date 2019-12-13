@@ -88,6 +88,18 @@ _.Zones =
 						i(98133),	-- Greater Cache of Treasures
 					},
 				}),
+				q(31390, {	-- The Klaxxi (A)
+					["coord"] = { 84.4, 61.6, 390 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 64488 },	-- Riki the Shifting Shadow
+					["isBreadcrumb"] = true,
+				}),
+				q(31391, {	-- The Klaxxi (H)
+					["coord"] = { 63.2, 20.8, 390 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 64534 },	-- Bowmaster Ku
+					["isBreadcrumb"] = true,
+				}),
 				q(32815, {	-- The Old Seer
 					["sourceQuest"] = 32807,	-- The Warchief and the Darkness
 					["provider"] = { "n", 61962 },	-- Lorewalker Cho
@@ -101,7 +113,7 @@ _.Zones =
 					["sourceQuest"] = 32806,	-- The King and the Council
 					["provider"] = { "n", 61962 },	-- Lorewalker Cho
 					["coord"] = { 83.2, 29.6, 390 },
-					["maps"] = { 520 },	-- Vale of Eternal Blossoms (Dark Heart of Pandaria scenario)
+					["maps"] = { 520, 521 },	-- Vale of Eternal Blossoms (Dark Heart of Pandaria scenario)
 					["lvl"] = 90,
 					["g"] = {
 						i(98133),	-- Greater Cache of Treasures
@@ -111,7 +123,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32678, {	-- Thunder Calls (H)
+					["coord"] = { 62.8, 28.0, 390 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 64566 },	-- Sunwalker Dezco
 				}),
 				q(31380, {	-- Trial At The Temple of the White Tiger (A)
 					["coord"] = { 84.6, 63.6, 390 },

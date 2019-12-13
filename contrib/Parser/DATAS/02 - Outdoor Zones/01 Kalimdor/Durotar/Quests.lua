@@ -112,6 +112,13 @@ _.Zones =
 					["provider"] = { "n", 3142 },	-- Orgnil Soulscar
 					["sourceQuest"] = 823,	-- Report to Orgnil
 				}),
+				q(25444, {	-- Da Perfect Spies
+					["u"] = 40,
+				}),
+				q(25480, {	-- Dance Of De Spirits
+					["u"] = 40,
+					["sourceQuest"] = 25470,	-- Lady Of Da Tigers
+				}),
 				q(40607, {	-- Demons Among Us
 					["provider"] = { "n", 100873 },	-- Allari the Souleater
 					["lvl"] = 98,
@@ -171,6 +178,10 @@ _.Zones =
 						i(53366),	-- Enforcer's Gloves
 						i(131413),	-- Gor's Re-Inforced Gloves
 					},
+				}),
+				q(25446, {	-- Frogs Away!
+					["u"] = 40,
+					["sourceQuest"] = 25444,	-- Da Perfect Spies
 				}),
 				q(25173, {	-- From Bad to Worse
 					["provider"] = { "n", 3139 },	-- Gar'Thok
@@ -244,6 +255,10 @@ _.Zones =
 						40607,	-- Demons Among Us
 						40983,	-- Demons Among Them
 					},
+				}),
+				q(25470, {	-- Lady Of Da Tigers
+					["u"] = 40,
+					["sourceQuest"] = 25446,	-- Frogs Away!
 				}),
 				q(32671, {	-- Learn To Ride
 					["lvl"] = 20,
@@ -356,6 +371,10 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3194 },	-- Vel'rin Fang
+				}),
+				q(25495, {	-- Preparin' For Battle
+					["u"] = 40,
+					["sourceQuest"] = 25461,	-- Trollin' For Volunteers
 				}),
 				q(25168, {	-- Purge the Valley
 					["provider"] = { "n", 3188 },	-- Master Gadrin
@@ -594,6 +613,10 @@ _.Zones =
 						i(141294),	-- Mark of Orgrimmar
 					},
 				}),
+				q(25461, {	-- Trollin' For Volunteers
+					["u"] = 40,
+					["sourceQuest"] = 25480,	-- Dance Of De Spirits
+				}),
 				q(47867, {	-- Two If By Sea
 					["provider"] = { "n", 122065 },	-- Lady Liadrin
 					["coord"] = { 58.2, 12.0, 1 },
@@ -637,6 +660,10 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3188 },	-- Master Gadrin
+				}),
+				q(25445, {	-- Zalazane's Fall
+					["u"] = 40,
+					["sourceQuest"] = 25495,	-- Preparin' For Battle
 				}),
 			}),
 		}),

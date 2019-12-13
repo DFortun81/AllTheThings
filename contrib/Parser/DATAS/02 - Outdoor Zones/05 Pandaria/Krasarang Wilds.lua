@@ -1451,6 +1451,7 @@ _.Zones =
 						["provider"] = { "n", 68077 },	-- Fanlyr Silverthorn
 						["races"] = HORDE_ONLY,
 						["sourceQuests"] = { 32327 },	-- The Darnassus Mission
+						["level"] = 81,
 					}),
 					q(30701, {	-- Viseclaw Soup
 						["provider"] = { "n", 60675 },	-- Fo Fook
