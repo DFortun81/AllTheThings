@@ -589,7 +589,7 @@ _.Zones =
 								i(171354),	-- Horrific Core
 							},
 						}),
-						q(57391, {	-- Reconstructing the Compendium Vol. I
+						q(57391, {	-- Reconstructing "The Curse of Stone"
 							["lvl"] = 120,
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
@@ -607,7 +607,6 @@ _.Zones =
 							["provider"] = { "n", 161805 },	-- Magni Bronzebeard
 							["sourceQuest"] = 58631,	-- Into Dreams
 						}),
-						
 						-- Void Focus quests here. Not sure where to put them right now
 						q(57275, {	-- Something in Your Mind
 							["provider"] = { "i", 171320 },
@@ -655,8 +654,17 @@ _.Zones =
 							n(155496, {	-- Wrathion
 								["coord"] = { 46.2, 64.0, 1473 },
 								["g"] = {
+									i(173363, {	-- Vessel of Horrific Visions
+										["cost"] = { { "c", 1755, 10000 }, },	-- 10,000 Coalescing Visions
+									}),
+									i(174876, {	-- Gouged Eye of N'Zoth
+										["cost"] = { { "c", 1719, 25000 }, },	-- 25,000 Corrupted Mementos
+									}),
+									i(174361, {	-- Black Dragonscale Backpack
+										["cost"] = { { "c", 1719, 40000 }, },	-- 40,000 Corrupted Mementos
+									}),
 									i(174770, {	-- Wicked Swarmer
-										["cost"] = { { "c", 1719, 100000 }, },	-- 100,000 Corrupted Memento
+										["cost"] = { { "c", 1719, 100000 }, },	-- 100,000 Corrupted Mementos
 									}),
 								},
 							}),

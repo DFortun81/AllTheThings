@@ -1720,6 +1720,7 @@ _.NeverImplemented =
 		q(57001),	-- Valley of Strength cleansed (Orgrimmar)
 		q(57372),	-- The Drag cleansed (Orgrimmar)
 		q(57153),	-- Dwarven District cleansed (Stormwind)
+		q(58894),	-- Dwarven District - kill the wing boss. Activates a portal to the cathedral district
 		q(57216),	-- Old Town cleansed (Stormwind)
 		q(57271),	-- Trade District cleansed (Stormwind)
 		q(27282),	-- Mage Quarter cleansed (Stormwind)
