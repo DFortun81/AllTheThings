@@ -723,7 +723,8 @@ app.L = {
 		[-3342] = "Interface\\Icons\\inv_helm_cloth_vrykulcaster_b_01",						-- Fallen Runelord
 		[-3343] = "Interface\\Icons\\inv_helmet_153",										-- Choking Winter
 		[-3344] = "Interface\\Icons\\inv_helmet_157",										-- Frostsworn
-		[-3345] = "Interface\\Icons\\Inv_helmet_151",										-- Sanctified Scourgelord
+		[-3345] = "Interface\\Icons\\Inv_helmet_151",		
+		[-3347] = "Interface\\Icons\\inv_plate_draenorlfr_c_01helm",						-- Black Tooth Grunt
 
 		[-4189] = "Interface\\Icons\\achievement_legionpvptier4",							-- Instance Item Sets, PvP
 		[-4190] = "Interface\\Icons\\ExpansionIcon_BurningCrusade",
@@ -1546,6 +1547,7 @@ app.L = {
 		[-3337] = "Twilight Dragon",
 		[-3338] = ISLANDS_HEADER,													-- Island Expeditions
 		[-3339] = LOOT_JOURNAL_ITEM_SETS,											-- Item Sets
+		[-3347] = "Black Tooth Grunt",
 -- Additional Mail WQ Gear
 
 -- PvP Sets
