@@ -805,6 +805,9 @@ _.NeverImplemented =
 		q(47053),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 3 - Tracking
 		q(47044),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 2 - Tracking
 		q(47038),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 1 - Tracking
+		q(40302),	-- FLAG - Prospecting 01
+		q(40303),	-- FLAG - Prospecting 02
+		q(40304),	-- FLAG - Prospecting 03 - triggered when completing a jewelcrafting world quest in Dalaran
 		q(38894),	-- Hunter Order Hall - Founded the order hall
 		q(40621),	-- Hunter Order Hall - Beast Mastery Chosen first
 		q(44045),	-- Hunter Order Hall - Beast Mastery Chosen
@@ -1072,7 +1075,7 @@ _.NeverImplemented =
 		q(54035),	-- Blessing of the Night Warden unlock chain started
 		q(53956),	-- Triggered when turning in "We Are Coming" as alliance. Probably related to darkshore warfront unlock?
 		q(49610),	-- looting Adventurer's Society Loot Stash to unlock the Nigel Rifthold pet vendor
-
+		q(56684),	-- Flag used to track if 160489 (340 engineering goggles) had been crafted. This identifies if the recipe for rank 2 can drop
 
 	--	HONEYBACK HIVE
 		q(55906),	-- triggers when pulling out Seabreeze Bumblebee or Bumbles next to Barry at 69.1, 64.2 in Stormsong Valley

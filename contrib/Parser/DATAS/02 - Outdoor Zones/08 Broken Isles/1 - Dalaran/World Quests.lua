@@ -85,7 +85,22 @@ _.Zones =
 						}),
 					},
 				}),
+				q(46134, {	-- Gemcutter Needed
+					["isWorldQuest"] = true,
+					["requireSkill"] = 755,	-- Jewelcrafting
+					["lvl"] = 110,
+				}),
+				q(46135, {	-- Gemcutter Needed
+					["isWorldQuest"] = true,
+					["requireSkill"] = 755,	-- Jewelcrafting
+					["lvl"] = 110,
+				}),
 				q(46136, {	-- Gemcutter Needed
+					["isWorldQuest"] = true,
+					["requireSkill"] = 755,	-- Jewelcrafting
+					["lvl"] = 110,
+				}),
+				q(46137, {	-- Gemcutter Needed
 					["isWorldQuest"] = true,
 					["requireSkill"] = 755,	-- Jewelcrafting
 					["lvl"] = 110,
