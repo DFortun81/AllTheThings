@@ -758,6 +758,39 @@ _.Zones =
 						i(113232),	-- Rangari Initiate Wristwraps
 					},
 				}),
+				q(36169, {	-- The Trial of Champions
+					["coord"] = { 75.0, 57.8, 539 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 84974 },	-- Exarch Maladaar
+					["sourceQuests"] = {
+						36168,	-- The Trial of Faith
+						36164,	-- The Trial of Courage
+						36167,	-- The Trial of Heart
+					},
+					["g"] = {
+						i(119144, {	-- Touch of the Naaru (Toy)
+							["races"] = ALLIANCE_ONLY,
+						}),
+					},
+				}),
+				q(36164, {	-- The Trial of Courage
+					["coord"] = { 55.8, 32.8, 539 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 80078 },	-- Exarch Akama
+					["sourceQuest"] = 36163,	-- Garrison Campaign: The Exarch's Call
+				}),
+				q(36168, {	-- The Trial of Faith
+					["coord"] = { 62.4, 26.2, 539 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 80073 },	-- Exarch Maladaar
+					["sourceQuest"] = 36163,	-- Garrison Campaign: The Exarch's Call
+				}),
+				q(36167, {	-- The Trial of Heart
+					["coord"] = { 62.4, 26.2, 539 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 80079 },	-- Exarch Naielle
+					["sourceQuest"] = 36163,	-- Garrison Campaign: The Exarch's Call
+				}),
 				q(33070, {	-- Think of the Children!
 					["sourceQuests"] = { 33075 },	-- A Hero's Welcome
 					["coord"] = { 46.5, 37.7, 539 },

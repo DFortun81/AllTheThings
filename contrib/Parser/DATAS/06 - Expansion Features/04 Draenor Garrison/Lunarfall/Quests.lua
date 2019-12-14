@@ -25,6 +25,10 @@ _.ExpansionFeatures =
 								["provider"] = { "n", 88892 },	-- Nixxie
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(36163, {	-- Garrison Campaign: The Exarch's Call
+								["provider"] = { "n", 82776 },
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(36219, {	-- Garrison Campaign: The Ring of Blood
 								["description"] = "Offered if you have NOT completed |cFFFFD700The Ring of Trials|r in Nagrand or the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
 							}),
@@ -51,9 +55,6 @@ _.ExpansionFeatures =
 							}),
 							q(35195, {	-- Socrethar's Fury
 								i(119134),	-- Sargerei Disguise (TOY!)
-							}),
-							q(36169, {	-- The Trial of Champions
-								i(119144),	-- Touch of the Naaru (TOY!)
 							}),
 						},
 					}),
