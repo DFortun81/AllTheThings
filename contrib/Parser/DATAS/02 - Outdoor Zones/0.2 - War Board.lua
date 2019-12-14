@@ -260,13 +260,13 @@ _.Zones =
 				["isBreadcrumb"] = true,
 				["lvl"] = 40,
 			}),
-			q(28673, {	-- Hero's Call: Blasted Lands!
-				["isBreadcrumb"] = true,
-				["lvl"] = 40,
-			}),
 			q(39199, {	-- Hero's Call: Blade's Edge Mountains!
 				["isBreadcrumb"] = true,
 				["lvl"] = 65,
+			}),
+			q(28673, {	-- Hero's Call: Blasted Lands!
+				["isBreadcrumb"] = true,
+				["lvl"] = 40,
 			}),
 			q(28559, {	-- Hero's Call: Bloodmyst Isle
 				["isBreadcrumb"] = true,
@@ -292,9 +292,17 @@ _.Zones =
 				["isBreadcrumb"] = true,
 				["lvl"] = 30,
 			}),
+			q(39204, {	-- Hero's Call: Dragonblight!
+				["isBreadcrumb"] = true,
+				["lvl"] = 61,
+			}),
 			q(49561, {	-- Hero's Call: Dread Wastes!
 				["isBreadcrumb"] = true,
 				["lvl"] = 84,
+			}),
+			q(28564, {	-- Hero's Call: Duskwood!
+				["isBreadcrumb"] = true,
+				["lvl"] = 20
 			}),
 			q(28552, {	-- Hero's Call: Dustwallow Marsh! (breadcrumb quest for 27210, not available if 26702 is completed) (max level 38)
 				["isBreadcrumb"] = true,
@@ -348,7 +356,11 @@ _.Zones =
 				["isBreadcrumb"] = true,
 				["lvl"] = 80,
 			}),
-			q(49567, {	-- Hero's Call: Nagrand!
+			q(39197, {	-- Hero's Call: Nagrand! (Outland)
+				["isBreadcrumb"] = true,
+				["lvl"] = 64,
+			}),
+			q(49567, {	-- Hero's Call: Nagrand! (Draenor)
 				["isBreadcrumb"] = true,
 				["lvl"] = 98,
 			}),
@@ -356,29 +368,40 @@ _.Zones =
 				["isBreadcrumb"] = true,
 				["lvl"] = 67,
 			}),
-			q(28709, {	-- Hero's Call: Northrend! (breadcrumb quest for 11672) (max level 78)
+			q(28699, {	-- Hero's Call: Northern Stranglethorn!
 				["isBreadcrumb"] = true,
-				["lvl"] = 58,
+				["lvl"] = 25,
 			}),
 			q(28708, {	-- Hero's Call: Outland!(breadcrumb quest for 10288) (max level 68)
 				["isBreadcrumb"] = true,
 				["lvl"] = 58,
 			}),
+			q(28563, {	-- Hero's Call: Redridge Mountains!
+				["isBreadcrumb"] = true,
+				["lvl"] = 15,
+				["g"] = {
+					i(60688),	-- Parker's Yardstick
+					i(60690),	-- Doody Boots
+					i(60689),	-- Belt of Unsolvable Problems
+					i(60691),	-- Unfortunate Treads
+					i(131517),	-- Doody Shoes
+				},
+			}),
 			q(28582, {	-- Hero's Call: Searing Gorge!
 				["isBreadcrumb"] = true,
 				["lvl"] = 40,
 			}),
-			q(49550, {	-- Hero's Call: Shadowmoon Valley!
+			q(49550, {	-- Hero's Call: Shadowmoon Valley! (Outland)
 				["isBreadcrumb"] = true,
 				["lvl"] = 67,
+			}),
+			q(49562, {	-- Hero's Call: Shadowmoon Valley! (Draenor)
+				["isBreadcrumb"] = true,
+				["lvl"] = 90,
 			}),
 			q(49553, {	-- Hero's Call: Sholazar Basin!
 				["isBreadcrumb"] = true,
 				["lvl"] = 66,
-			}),
-			q(49562, {	-- Hero's Call: Shadowmoon Valley!
-				["isBreadcrumb"] = true,
-				["lvl"] = 90,
 			}),
 			q(28528, {	-- Hero's Call: Silithus! (breadcrumb quest for 8280, not available if 28859,28856,28527 are completed) (max level 58)
 				["isBreadcrumb"] = true,
@@ -388,17 +411,21 @@ _.Zones =
 				["isBreadcrumb"] = true,
 				["lvl"] = 25,
 			}),
+			q(28551, {	-- Hero's Call: Southern Barrens!
+				["isBreadcrumb"] = true,
+				["lvl"] = 25,
+			}),
 			q(49566, {	-- Hero's Call: Spires of Arak!
 				["isBreadcrumb"] = true,
 				["lvl"] = 96,
 			}),
-			q(49554, {	-- Hero's Call: Storm Peaks!
-				["isBreadcrumb"] = true,
-				["lvl"] = 67,
-			}),
 			q(28539, { 	-- Hero's Call: Stonetalon Mountains!  (max level 28)
 				["isBreadcrumb"] = true,
 				["lvl"] = 20,
+			}),
+			q(49554, {	-- Hero's Call: Storm Peaks!
+				["isBreadcrumb"] = true,
+				["lvl"] = 67,
 			}),
 			q(28675, {	-- Hero's Call: Swamp of Sorrows!
 				["isBreadcrumb"] = true,
