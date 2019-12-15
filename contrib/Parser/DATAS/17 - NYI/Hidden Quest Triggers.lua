@@ -54,6 +54,14 @@ _.NeverImplemented =
 		q(45436),	-- First Win of the Day (Skirmish)
 		q(45433),	-- First Win of the Day (3v3)
 		q(45434),	-- First Win of the Day (10v10)
+		q(36143),	-- LFGDungeons - Lich King - Dungeon Normal 1st
+		q(36149),	-- LFGDungeons - Lich King - Dungeon Normal Nth
+		q(36145),	-- LFGDungeons - Cataclysm - Dungeon Normal 1st
+		q(36151),	-- LFGDungeons - Cataclysm - Dungeon Normal Nth
+		q(36147),	-- LFGDungeons - Pandaria - Dungeon Normal 1st
+		q(36139),	-- LFGDungeons - Pandaria - Dungeon Normal Nth
+		q(37505),	-- LFGDungeons - Draenor - Raid Finder - 1st
+		q(37506),	-- LFGDungeons - Draenor - Raid Finder - Nth
 		
 		-- Events/Holidays
 		q(11320),	-- [NYI] Now this is Ram Racing... Almost. (Brewfest)
@@ -104,12 +112,23 @@ _.NeverImplemented =
 		q(35930),	-- Blackfathom Deeps (Bonus) Reward Quest
 		q(35903),	-- Blackrock Depths (Detention Bonus) Reward Quest
 		q(35902),	-- Blackrock Depths (Upper City) Reward Quest
+		q(35899),	-- Blackrock Depths (Detenction Block) reward quest
+		q(35901),	-- Blackrock Depths (Detention Bonus) reward quest
+		q(35904),	-- Blackrock Depths (Everything) reward quest
 		q(35586),	-- Deadmines normal completion
+		q(35890),	-- Dire Maul (Warpwood Quarter) reward quest
+		q(35891),	-- Dire Maul (Capital Gardens) reward quest
+		q(35892),	-- Dire Maul (Gordok Commons) reward quest
 		q(35894),	-- Dire Maul (Bonus) Reward Quest
+		q(35956),	-- Dire Maul (Everything) reward quest
 		q(35601),	-- Gnomeregan Reward Quest - received after killing Mekgineer Thermaplugg
 		q(35602),	-- Gnomeregan Bonus Objective Reward Quest - received after killing Grubbis
 		q(36867),	-- Lower Blackrock Spires Bonus Reward Quest — killing Urok Doomhowl
 		q(35888),	-- Maraudon (Everything) Reward Quest — dungeon completion
+		q(35885),	-- Maraudon (Wicked Grotto) reward quest
+		q(35886),	-- Maraudon (Foulspore Cavern) reward quest
+		q(35887),	-- Maraudon (Earth Song Falls) reward quest
+		q(35889),	-- Maraudon (Bonus) reward quest
 		q(35287),	-- Ragefire Chasm
 		q(35598),	-- Razorfen Downs Reward Quest — dungeon completion
 		q(35615),	-- Razorfen Kraul Reward Quest — dungeon completion
@@ -263,6 +282,7 @@ _.NeverImplemented =
 		q(35439),	-- Hour of Twilight dungeon reward (Kill benedictus)
 		q(35414),	-- Lost City of the Tol'vir dungeon reward (Kill Siamat)
 		q(35911),	-- Stonecore Reward Quest
+		q(35913),	-- Stonecore (Heroic) reward quest
 		q(25829),	-- Mount Hyjal - goldrinn hub complete
 		q(27872),	-- Mount Hyjal - tortolla hub complete
 		q(27873),	-- Mount Hyjal - aviana hub complete
@@ -313,6 +333,9 @@ _.NeverImplemented =
 		q(32012),	-- Kovok tracking [GROWING]
 		q(29604),	-- Tracking Event: Saw East Temple Arrival Cinematic
 		q(29638),	-- UNUSED
+		q(33019),	-- NC S1 Q2 - unused cooking quest
+		q(33023),	-- NC S1 Q6 - unused cooking quest
+		q(33025),	-- NC S2 Q2 - unused cooking quest
 		q(29695),	-- Kiryn TRACKING
 		q(29702),	-- Gorrok TRACKING
 		q(29697),	-- Rivett TRACKING
@@ -335,6 +358,12 @@ _.NeverImplemented =
 		q(37217),	-- FLAG - Proving Grounds - Tank Gold
 		q(37216),	-- FLAG - Proving Grounds - Tank Silver
 		q(33093),	-- FLAG - Proving Grounds - Tank Silver
+		q(32899),	-- Daily Scenario Random (Nth)(Mists)
+		q(32873),	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st
+		q(32874),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth
+		q(32893),	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st Bonus
+		q(32894),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth Bonus
+		q(32873),	-- LFGDungeons - Mists - Scenario - Heroic Daily - 1st/Nth
 		q(31282),	-- Dread Wastes - Kaz'tik tracking quest - triggers after freeing Kaz'tik from amber
 		q(31343),	-- Dread Wastes - Kovok Tracking - triggers when turnin in "Reunited". Allows Kovok to follow you
 		q(31992),	-- Kun-lai Summit - Dread Wastes Buff Bitflag - Enhancement 01 - Angel of Death
@@ -485,6 +514,7 @@ _.NeverImplemented =
 		q(35297),	-- triggered during "Blazing of Glory" when you approach Khadgar around 67.6,60.5
 		q(34440),	-- triggered just before turning in "Ga'nar of the Frostwolf"
 		q(36426),	-- Dueling Orbs,	-- triggered when completing "Mysterious Ring" (34463)
+		q(35914),	-- Default invasion reward flag during the first garrison invasion as part of Draenor's base intro
 		q(33847),	-- Frostfire Ridge - Flag: Seen Ga'nar Rolling Out),	-- triggered going into Chillfang's cave immediately upon getting to Draenor
 		q(33909),	-- Frostfire Ridge - Flag: Seen Ga'nar Rolling Out to Bladespire),	-- triggers shortly after reaching Wor'gol during "Den of Wolves"
 		q(33846),	-- Frostfire Ridge - Flag: Seen Thrall Cyclone),	-- triggers during "These Colors Don't Run"
