@@ -480,6 +480,12 @@ _.Zones =
 					["coord"] = { 41.4, 34.6, 63 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(25729, {	-- Gerenzo the Traitor
+					["provider"] = { "n", 40895 },	-- Professor Xakxak Gyromate
+					["sourceQuest"] = 25652,	-- Commandeer That Balloon!
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 35.4, 71.2, 63 },
+				}),
 				q(13877, {	-- Go With The Flow
 					["provider"] = { "n", 34239 },	-- Hephaestus Pilgrim
 					["coord"] = { 36.4, 49.8, 63 },
