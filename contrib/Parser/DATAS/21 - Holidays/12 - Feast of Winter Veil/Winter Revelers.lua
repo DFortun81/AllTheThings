@@ -62,7 +62,8 @@ _.Holidays = bubbleDown({["u"] = 29},
 					},
 					{
 						["itemID"] = 21519,	-- Mistletoe
-						["groups"] = merge(bubbleDown(
+						["groups"] = merge(
+						bubbleDown(
 							{
 								["achievementID"] = 1686,	-- Bros. Before Ho Ho Ho's (Alliance)
 								["races"] = ALLIANCE_ONLY,
@@ -71,7 +72,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 								crit(1),	-- Brother Nimetz in Stranglethorn Vale
 								crit(2),	-- Brother Wilhelm in Goldshire
 								crit(3),	-- Brother Karman in Theramore
-								crit(4), --	Brother Kristoff in Stormwind
+								crit(4),	-- Brother Kristoff in Stormwind
 								crit(5),	-- Brother Joshua in Stormwind
 								crit(6),	-- Brother Crowley in Stormwind
 								crit(7),	-- Brother Cassius in Stormwind
