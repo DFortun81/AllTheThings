@@ -83,6 +83,8 @@ _.NeverImplemented =
 		q(47954),	-- Tracking Quest (Triggered when using the "Surviving Kalimdor" toy to unlock flightpaths)
 		q(47956),	-- Tracking Quest (triggered when using "To Modernize the Provisioning of Azeroth" toy to unlock EK flight paths)
 		q(50659),	-- Silithus - talk to Zidormi to phase into the past version of the map
+		q(49813),	-- Adventure Calls (lvl 60) - can trigger prior to level 60 if you accept a quest from the warboard
+		q(49860),	-- Adventure Calls (lvl 60) - can trigger prior to level 60 if you accept a quest from the warboard
 		q(42873),	-- Tome of Illusions - Outland
 		q(42874),	-- Tome of Illusions - Northrend
 		q(42875),	-- Tome of Illusions - Cataclysm
