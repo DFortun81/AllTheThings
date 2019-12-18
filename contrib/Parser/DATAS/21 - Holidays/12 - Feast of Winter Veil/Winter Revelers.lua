@@ -3,9 +3,7 @@
 --------------------------------------------
 _.Holidays = bubbleDown({["u"] = 29}, 
 {
-	{	-- Feast of Winter Veil
-		["holidayID"] = 235485,	-- Feast of Winter Veil
-		["u"] = 29,				-- Feast of Winter Veil Filter
+	holiday(235485, {	-- Feast of Winter Veil
 		["g"] = {
 			n(-7776, { 	-- Winter Revelers
 				["description"] = "Type /kiss while targeting any Winter Reveler to receive one of the following items.\n\nNOTE: While the debuff persists, you will be unable to kiss another one.",
@@ -94,5 +92,5 @@ _.Holidays = bubbleDown({["u"] = 29},
 				},
 			}),
 		},
-	},
+	}),
 });

@@ -18,107 +18,87 @@ _.Achievements =
 				["groups"] = {
 					ach(277),		-- 'Tis the Season
 					ach(1690),		-- A Frosty Shake (Dalaran - NR)
-					{	-- A-Caroling We Will Go
-						["allianceAchievementID"] = 5853,	-- A-Caroling We Will Go [Alliance]
-						["hordeAchievementID"] = 5854,		-- A-Caroling We Will Go [Horde]
-						["u"] = 29,							-- Feast of Winter Veil Filter
+					ach(5853,  {	-- A-Caroling We Will Go (A)
+						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							{	-- Orgrimmar // Darnassus
-								["allianceAchievementID"] = 5853,	-- A-Caroling We Will Go [Alliance]
-								["hordeAchievementID"] = 5854,		-- A-Caroling We Will Go [Horde]
-								["criteriaID"] = 1,					-- Orgrimmar // Darnassus
-								["u"] = 29,							-- Feast of Winter Veil Filter
-							},
-							{	-- Silvermoon City // The Exodar
-								["allianceAchievementID"] = 5853,	-- A-Caroling We Will Go [Alliance]
-								["hordeAchievementID"] = 5854,		-- A-Caroling We Will Go [Horde]
-								["criteriaID"] = 2,					-- Silvermoon City // The Exodar
-								["u"] = 29,							-- Feast of Winter Veil Filter
-							},
-							{	-- Thunder Bluff // Ironforge
-								["allianceAchievementID"] = 5853,	-- A-Caroling We Will Go [Alliance]
-								["hordeAchievementID"] = 5854,		-- A-Caroling We Will Go [Horde]
-								["criteriaID"] = 3,					-- Thunder Bluff // Ironforge
-								["u"] = 29,							-- Feast of Winter Veil Filter
-							},
-							{	-- Undercity // Stormwind City
-								["allianceAchievementID"] = 5853,	-- A-Caroling We Will Go [Alliance]
-								["hordeAchievementID"] = 5854,		-- A-Caroling We Will Go [Horde]
-								["criteriaID"] = 4,					-- Undercity // Stormwind City
-								["u"] = 29,							-- Feast of Winter Veil Filter
-							},
+							crit(1),	-- Orgrimmar
+							crit(2),	-- Silvermoon City
+							crit(3),	-- Thunder Bluff
+							crit(4),	-- Undercity
 						},
-					},
-					{	-- BB King
-						["allianceAchievementID"] = 4436,	-- BB King [Alliance]
-						["hordeAchievementID"] = 4437,		-- BB King [Horde]
-						["u"] = 29,							-- Feast of Winter Veil Filter
+					}),
+					ach(5854,  {	-- A-Caroling We Will Go (H)
+						["races"] = HORDE_ONLY,
 						["g"] = {
-							{	-- Baine Bloodhoof // Muradin Bronzebeard
-								["allianceAchievementID"] = 4436,	-- BB King [Alliance]
-								["hordeAchievementID"] = 4437,		-- BB King [Horde]
-								["criteriaID"] = 1,					-- Baine Bloodhoof // Muradin Bronzebeard
-								["u"] = 29,							-- Feast of Winter Veil Filter
-							},
-							{	-- Lady Sylvanas Windrunner // Prophet Velen
-								["allianceAchievementID"] = 4436,	-- BB King [Alliance]
-								["hordeAchievementID"] = 4437,		-- BB King [Horde]
-								["criteriaID"] = 2,					-- Lady Sylvanas Windrunner // Prophet Velen
-								["u"] = 29,							-- Feast of Winter Veil Filter
-							},
-							{	-- Lo'themar Theron // Tyrande Whisperwind
-								["allianceAchievementID"] = 4436,	-- BB King [Alliance]
-								["hordeAchievementID"] = 4437,		-- BB King [Horde]
-								["criteriaID"] = 3,					-- Lo'themar Theron // Tyrande Whisperwind
-								["u"] = 29,							-- Feast of Winter Veil Filter
-							},
-							{	-- High Overlord Saurfang // Anduin Wyrnn
-								["allianceAchievementID"] = 4436,	-- BB King [Alliance]
-								["hordeAchievementID"] = 4437,		-- BB King [Horde]
-								["criteriaID"] = 4,					-- High Overlord Saurfang // Anduin Wyrnn
-								["u"] = 29,							-- Feast of Winter Veil Filter
-							},
+							crit(1),	-- Darnassus
+							crit(2),	-- The Exodar
+							crit(3),	-- Ironforge
+							crit(4),	-- Stormwind City
 						},
-					},
-					a(ach(1686, {	-- Bros. Before Ho Ho Ho's (Alliance)
-						crit(1, {	-- Brother Nimetz in Stranglethorn Vale
-							["coord"] = { 47.2, 11.0, 50 },
-						}),
-						crit(2, {	-- Brother Wilhelm in Goldshire
-							["coord"] = { 41.0, 65.8, 37 },
-						}),
-						crit(3, {	-- Brother Karman in Theramore
-							["description"] = "If Theramore is phased, talk to Zidormi to the west of the city.",
-							["coord"] = { 67.4, 47.2, 70 },
-						}),
-						crit(4, {	-- Brother Kristoff in Stormwind
-							["coord"] = { 55.04, 54.20, 84 },
-						}),
-						crit(5, {	-- Brother Joshua in Stormwind
-							["coord"] = { 49.50, 45.22, 84 },
-						}),
-						crit(6, {	-- Brother Crowley in Stormwind
-							["description"] = "He is in the basement.",
-							["coord"] = { 52.60, 43.93, 84 },
-						}),
-						crit(7, {	-- Brother Cassius in Stormwind
-							["coord"] = { 52.42, 45.80, 84 },
-						}),
-						crit(8, {	-- Brother Benjamin in Stormwind
-							["coord"] = { 51.8, 46.8, 84 },
-						}),
-					})),
-					h(ach(1685, {	-- Bros. Before Ho Ho Ho's (Horde)
-						crit(1, {	-- Brother Malach in the Undercity
-							["coord"] = { 51.6, 22.6, 90 },
-						}),
-						crit(2, {	-- Durkot Wolfbrother in Warsong Hold
-							["coord"] = { 40.2, 55.0, 114 },
-						}),
-						crit(3, {	-- Brother Keltan in Icecrown
-							["coord"] = { 69.4, 42.4, 118 },
-						}),
-					})),
+					}),
+					ach(4436,  {	-- BB King (A)
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							crit(1),	-- Baine Bloodhoof
+							crit(2),	-- Lady Sylvanas Windrunner
+							crit(3),	-- Lor'themar Theron
+							crit(4),	-- High Overlord Saurfang
+						},
+					}),
+					ach(4437,  {	-- BB King (H)
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							crit(1),	-- Muradin Bronzebeard
+							crit(2),	-- Prophet Velen
+							crit(3),	-- Tyrande Whisperwind
+							crit(4),	-- Anduin Wrynn
+						},
+					}),
+					ach(1686, {	-- Bros. Before Ho Ho Ho's (A)
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							crit(1, {	-- Brother Nimetz in Stranglethorn Vale
+								["coord"] = { 47.25, 11.10, 50 },
+							}),
+							crit(2, {	-- Brother Wilhelm in Goldshire
+								["coord"] = { 41.07, 65.95, 37 },
+							}),
+							crit(3, {	-- Brother Karman in Theramore
+								["description"] = "If Theramore is phased, talk to Zidormi to the west of the city.",
+								["coord"] = { 67.40, 47.41, 70 },
+							}),
+							crit(4, {	-- Brother Kristoff in Stormwind
+								["coord"] = { 55.04, 54.20, 84 },
+							}),
+							crit(5, {	-- Brother Joshua in Stormwind
+								["coord"] = { 49.50, 45.22, 84 },
+							}),
+							crit(6, {	-- Brother Crowley in Stormwind
+								["description"] = "He is in the basement.",
+								["coord"] = { 52.60, 43.93, 84 },
+							}),
+							crit(7, {	-- Brother Cassius in Stormwind
+								["coord"] = { 52.42, 45.80, 84 },
+							}),
+							crit(8, {	-- Brother Benjamin in Stormwind
+								["coord"] = { 51.8, 46.8, 84 },
+							}),
+						},
+					}),
+					ach(1685, {	-- Bros. Before Ho Ho Ho's (H)
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							crit(1, {	-- Brother Malach in the Undercity
+								["coord"] = { 51.6, 22.6, 90 },
+							}),
+							crit(2, {	-- Durkot Wolfbrother in Warsong Hold
+								["coord"] = { 40.2, 55.0, 114 },
+							}),
+							crit(3, {	-- Brother Keltan in Icecrown
+								["coord"] = { 69.4, 42.4, 118 },
+							}),
+						},
+					}),
 					ach(1295),		-- Crashin' & Thrashin'
 					ach(1282),		-- Fa-la-la-la-Ogri'la
 					ach(1689),		-- He Knows If You've Been Naughty
@@ -142,11 +122,12 @@ _.Achievements =
 						crit(10),		-- Draenei Priest
 					}),
 					ach(273),		-- On Metzen! (Alterac Mountains)
-					{	-- Scrooge
-						["allianceAchievementID"] = 1255,	-- Scrooge [Alliance]
-						["hordeAchievementID"] = 259,		-- Scrooge [Horde]
-						["u"] = 29,							-- Feast of Winter Veil Filter
-					},
+					ach(1255, {		-- Scrooge (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					ach(259,  {		-- Scrooge (H)
+						["races"] = HORDE_ONLY,
+					}),
 					ach(279),		-- Simply Abominable (Alterac Mountains)
 					ach(8699),		-- The Danger Zone
 					ach(1688, {		-- The Winter Veil Gourmet

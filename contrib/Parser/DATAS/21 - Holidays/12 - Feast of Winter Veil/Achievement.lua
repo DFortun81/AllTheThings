@@ -10,31 +10,8 @@ _.Holidays = bubbleDown({["u"] = 29},
 					ach(1691,  {	-- Merrymaker
 						["g"] = {
 							un(29, title(102)),	-- Merrymaker
-							ach(273),	-- On Metzen!
-							ach(252),	-- With a Little Helper from My Friends
-							ach(1255, {	-- Scrooge (A)
-								["races"] = ALLIANCE_ONLY,
-							}),
-							ach(259,  {	-- Scrooge (H)
-								["races"] = HORDE_ONLY,
-							}),
-							ach(1282),	-- Fa-la-la-la-Ogri'la
 							ach(277),	-- 'Tis the Season
-							ach(279),	-- Simply Abominable
-							ach(1687, {	-- Let It Snow
-								["g"] = {
-									crit(1),	-- Orc Death Knight
-									crit(2),	-- Human Warrior
-									crit(3),	-- Tauren Shaman
-									crit(4),	-- Night Elf Druid
-									crit(5),	-- Undead Rogue
-									crit(6),	-- Troll Hunter
-									crit(7),	-- Gnome Mage
-									crit(8),	-- Dwarf Paladin
-									crit(9),	-- Blood Elf Warlock
-									crit(10),	-- Draenei Priest
-								},
-							}),
+							ach(1690),	-- A Frosty Shake
 							ach(1686, {	-- Bros. Before Ho Ho Ho's (A)
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
@@ -80,25 +57,36 @@ _.Holidays = bubbleDown({["u"] = 29},
 									}),
 								},
 							}),
-							ach(1688, {	-- The Winter Veil Gourmet
-								["g"] = {
-									crit(1),	-- Gingerbread Cookie
-									crit(2),	-- Winter Veil Egg Nog
-									crit(3),	-- Hot Apple Cider
-								},
-							}),
+							ach(1282),	-- Fa-la-la-la-Ogri'la
 							ach(1689),	-- He Knows If You've Been Naughty
-							ach(1690),	-- A Frosty Shake
+							ach(1687, {	-- Let It Snow
+								crit(1),	-- Orc Death Knight
+								crit(2),	-- Human Warrior
+								crit(3),	-- Tauren Shaman
+								crit(4),	-- Night Elf Druid
+								crit(5),	-- Undead Rogue
+								crit(6),	-- Troll Hunter
+								crit(7),	-- Gnome Mage
+								crit(8),	-- Dwarf Paladin
+								crit(9),	-- Blood Elf Warlock
+								crit(10),	-- Draenei Priest
+							}),
+							ach(273),	-- On Metzen!
+							ach(1255, {	-- Scrooge (A)
+								["races"] = ALLIANCE_ONLY,
+							}),
+							ach(259,  {	-- Scrooge (H)
+								["races"] = HORDE_ONLY,
+							}),
+							ach(279),	-- Simply Abominable
+							ach(1688, {	-- The Winter Veil Gourmet
+								crit(1),	-- Gingerbread Cookie
+								crit(2),	-- Winter Veil Egg Nog
+								crit(3),	-- Hot Apple Cider
+							}),
+							ach(252),	-- With a Little Helper from My Friends
 						},
 					}),
-					ach(10353, {	-- Iron Armada
-						crit(1),	-- Crashin' Thrashin' Flamer
-						crit(2),	-- Crashin' Thrashin' Killdozer
-						crit(3),	-- Crashin' Thrashin' Mortar
-						crit(4),	-- Crashin' Thrashin' Cannon
-						crit(5),	-- Crashin' Thrashin' Roller
-					}),
-					ach(8699),		-- The Danger Zone
 					ach(5853,  {	-- A-Caroling We Will Go (A)
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -138,11 +126,17 @@ _.Holidays = bubbleDown({["u"] = 29},
 					ach(1295,  {	-- Crashin' & Thrashin'
 						crit(1),	-- Gain 25 crashes with your Crashin' Thrashin' Racer
 					}),
+					ach(10353, {	-- Iron Armada
+						crit(1),	-- Crashin' Thrashin' Flamer
+						crit(2),	-- Crashin' Thrashin' Killdozer
+						crit(3),	-- Crashin' Thrashin' Mortar
+						crit(4),	-- Crashin' Thrashin' Cannon
+						crit(5),	-- Crashin' Thrashin' Roller
+					}),
+					ach(8699),		-- The Danger Zone
 					n(-9969, {	-- Feats of Strength
-						["u"] = 29,	-- Feast of Winter Veil
 						["g"] = {
 							ach(1705, {	-- Clockwork Rocket Bot (2007)
-								["u"] = 29,	-- Feast of Winter Veil
 								["g"] = {
 									i(34426, {	-- Winter Veil Gift
 										un(29, i(34425)),	-- Clockwork Rocket Bot
@@ -150,7 +144,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 								},
 							}),
 							ach(1706, {	-- Crashin' Thrashin' Racer (2008)
-								["u"] = 29,	-- Feast of Winter Veil
 								["g"] = {
 									i(43504, {	-- Winter Veil Gift
 										un(29, i(37710)),	-- Crashin' Thrashin' Racer Controller
@@ -158,7 +151,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 								},
 							}),
 							ach(6059, {	-- Red Rider Air Rifle (2009)
-								["u"] = 29,	-- Feast of Winter Veil
 								["g"] = {
 									n(-2, {	-- Vendors
 										n(52809, {	-- Blax Bottlerocket
@@ -192,7 +184,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 								},
 							}),
 							ach(6060, {	-- MiniZep Controller (2010)
-								["u"] = 29,	-- Feast of Winter Veil
 								["g"] = {
 									i(67443, {	-- Winter Veil Gift
 										un(29, i(46709)),	-- MiniZep Controller
@@ -200,7 +191,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 								},
 							}),
 							ach(6061, {	-- Gaudy Winter Veil Sweater (2011)
-								["u"] = 29,	-- Feast of Winter Veil
 								["g"] = {
 									i(70938, {	-- Winter Veil Gift
 										un(29, i(70923)),	-- Gaudy Winter Veil Sweater
@@ -208,7 +198,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 								},
 							}),
 							ach(7852, {	-- They're Both Footballs? (2012)
-								["u"] = 29,	-- Feast of Winter Veil
 								["g"] = {
 									i(90892, {	-- Winter Veil Gift
 										un(29, i(90888)),	-- Foot Ball
@@ -217,7 +206,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 								},
 							}),
 							ach(8698, {	-- Crashin' Thrashin' Flyer (2013)
-								["u"] = 29,	-- Feast of Winter Veil
 								["g"] = {
 									i(104319, {	-- Winter Veil Gift
 										un(29, i(104318)),	-- Crashin' Thrashin' Flyer Controller
@@ -225,7 +213,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 								},
 							}),
 							ach(9915, {	-- Crashin' Thrashin' Shredder (2014)
-								["u"] = 29,	-- Feast of Winter Veil
 								["g"] = {
 									i(116761, {	-- Winter Veil Gift
 										un(29, i(116763)),	-- Crashin' Thrashin' Shredder Controller
@@ -233,7 +220,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 								},
 							}),
 							ach(10337, {	-- Crashin' Thrashin' Flamer (2015)
-								["u"] = 29,	-- Feast of Winter Veil
 								["g"] = {
 									i(128653, {	-- Winter Veil Gift
 										un(29, i(108632)),	-- Crashin' Thrashin' Flamer Controller
@@ -241,7 +227,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 								},
 							}),
 							ach(10751, {	-- Brr... It's Cold in Here (2016)
-								["u"] = 29,	-- Feast of Winter Veil
 								["g"] = {
 									i(139341, {	-- Winter Veil Gift
 										un(29, i(128636)),	-- Endothermic Blaster
@@ -249,7 +234,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 								},
 							}),
 							ach(11913, {	-- Don't Play With That In The House (2017)
-								["u"] = 29,	-- Feast of Winter Veil
 								["g"] = {
 									i(151350, {	-- Winter Veil Gift
 										un(29, i(151349)),	-- Toy Weapon Set [Alliance]

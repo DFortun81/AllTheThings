@@ -3,9 +3,7 @@
 --------------------------------------------
 _.Holidays = bubbleDown({["u"] = 29}, 
 {
-	{	-- Feast of Winter Veil
-		["holidayID"] = 235485,	-- Feast of Winter Veil
-		["u"] = 29,				-- Feast of Winter Veil Filter
+	holiday(235485, {	-- Feast of Winter Veil
 		["g"] = {
 			n(54519, { 	-- Winter Veil Tree
 				["modelScale"] = 5,
@@ -108,7 +106,6 @@ _.Holidays = bubbleDown({["u"] = 29},
 							}),
 							{	-- Gently Shaken Gift
 								["itemID"] = 162974,	-- Gently Shaken Gift
-								["u"] = 29,				-- Winter Veil Filter
 								["questID"] = 53011,
 								["description"] = "Gift from 2018.",
 								["g"] = {
@@ -235,22 +232,18 @@ _.Holidays = bubbleDown({["u"] = 29},
 							}),
 							{	-- Winter Veil Gift
 								["itemID"] = 162644,	-- Winter Veil Gift
-								["u"] = 29,				-- Feast of Winter Veil Filter
 								["questID"] = 52965,
 								["description"] = "Gift from 2018. You will receive only one factions Toy Armor Set.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
 								["g"] = {
 									{	-- At Least You're Being Careful
 										["achievementID"] = 12850,	-- At Least You're Being Careful
-										["u"] = 29,					-- Feast of Winter Veil Filter
 									},
 									{	-- Toy Armor Set [Alliance]
 										["itemID"] = 162643,	-- Toy Armor Set [Alliance]
-										["u"] = 29,				-- Feast of Winter Veil Filter
 										["races"] = ALLIANCE_ONLY,
 									},
 									{	-- Toy Armor Set [Horde]
 										["itemID"] = 162642,	-- Toy Armor Set [Horde]
-										["u"] = 29,				-- Feast of Winter Veil Filter
 										["races"] = HORDE_ONLY,
 									},
 								},
@@ -262,5 +255,5 @@ _.Holidays = bubbleDown({["u"] = 29},
 				},
 			}),
 		},
-	},
+	}),
 });
