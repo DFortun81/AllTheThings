@@ -941,9 +941,9 @@ _.NeverImplemented =
 
 	--	World Boss
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
-	--	q(),	-- Ana-Mouz killID
-	--	q(),	-- Ana-Mouz bonus roll
-	--	q(),	-- Apocron killID
+		q(44501),	-- Ana-Mouz killID
+		q(44896),	-- Ana-Mouz bonus roll
+		q(47084),	-- Apocron killID
 		q(47087),	-- Apocron bonus roll
 		q(47085),	-- Brutallus killID
 		q(47088),	-- Brutallus bonus roll
