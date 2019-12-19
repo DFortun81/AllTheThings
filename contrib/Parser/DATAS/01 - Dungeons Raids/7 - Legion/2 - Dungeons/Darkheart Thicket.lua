@@ -13,6 +13,10 @@ _.Instances = { tier(7, {	-- Legion
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
+				q(42743, {	-- Darkheart Thicket: Kudzilla
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 				q(42714, {	-- Darkheart Thicket: Mythana
 					["isWorldQuest"] = true,
 					["lvl"] = 110,

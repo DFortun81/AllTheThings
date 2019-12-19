@@ -261,6 +261,16 @@ _.ExpansionFeatures =
 							i(164535),	-- Bloodwake Legplates
 							i(164537),	-- Bloodwake Sabatons
 						}),
+						n(-3347, {	-- Black Tooth Grunt
+							i(169284),	-- Black Tooth Grunt's Helm
+							i(169286),	-- Black Tooth Grunt's Pauldrons
+							i(169281),	-- Black Tooth Grunt's Breastplate
+							i(169288),	-- Black Tooth Grunt's Armplates
+							i(169282),	-- Black Tooth Grunt's Crushers
+							i(169283),	-- Black Tooth Grunt's Greatbelt
+							i(169285),	-- Black Tooth Grunt's Legplates
+							i(169287),	-- Black Tooth Grunt's Warboots
+						}),
 						n(-3332, {	-- Geocrag
 							i(164422),	-- Geocrag Helm
 							i(164424),	-- Geocrag Spaulders

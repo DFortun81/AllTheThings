@@ -31,6 +31,12 @@ _.ExpansionFeatures =
 									}),
 								},
 							}),
+							q(36802, {	-- Abyssal Gulper Lunker
+								["requireSkill"] = 356,	-- Fishing
+								["repeatable"] = true,
+								["provider"] = { "n", 85984 },	-- Nat Pagle
+								["cost"] = { { "i", 116818, 1 }, },	-- Abyssal Gulper Lunker
+							}),
 							q(35074, {	-- Blackwater Whiptail
 								["provider"] = { "n", 79892 },	-- Mak'jin
 								["coord"] = { 38.0, 72.2, 590 },
@@ -40,6 +46,18 @@ _.ExpansionFeatures =
 								["g"] = {
 									i(112623),	-- Pack of Fishing Supplies
 								},
+							}),
+							q(36803, {	-- Blackwater Whiptail Lunker
+								["requireSkill"] = 356,	-- Fishing
+								["repeatable"] = true,
+								["provider"] = { "n", 85984 },	-- Nat Pagle
+								["cost"] = { { "i", 116817, 1 }, },	-- Blackwater Whiptail Lunker
+							}),
+							q(36804, {	-- Blind Lake Lunker
+								["requireSkill"] = 356,	-- Fishing
+								["repeatable"] = true,
+								["provider"] = { "n", 85984 },	-- Nat Pagle
+								["cost"] = { { "i", 116820, 1 }, },	-- Blind Lake Lunker
 							}),
 							q(35073, {	-- Blind Lake Sturgeon
 								["provider"] = { "n", 79892 },	-- Mak'jin
@@ -61,6 +79,18 @@ _.ExpansionFeatures =
 									i(112623),	-- Pack of Fishing Supplies
 								},
 							}),
+							q(36805, {	-- Fat Sleeper Lunker
+								["requireSkill"] = 356,	-- Fishing
+								["repeatable"] = true,
+								["provider"] = { "n", 85984 },	-- Nat Pagle
+								["cost"] = { { "i", 116821, 1 }, },	-- Fat Sleeper Lunker
+							}),
+							q(39283, {	-- Felmouth Frenzy Lunker
+								["requireSkill"] = 356,	-- Fishing
+								["repeatable"] = true,
+								["provider"] = { "n", 85984 },	-- Nat Pagle
+								["cost"] = { { "i", 127994, 1 }, },	-- Felmouth Frenzy Lunker
+							}),
 							q(35066, {	-- Fire Ammonite
 								["provider"] = { "n", 79892 },	-- Mak'jin
 								["coord"] = { 38.0, 72.2, 590 },
@@ -70,6 +100,12 @@ _.ExpansionFeatures =
 								["g"] = {
 									i(112623),	-- Pack of Fishing Supplies
 								},
+							}),
+							q(36800, {	-- Fire Ammonite Lunker
+								["requireSkill"] = 356,	-- Fishing
+								["repeatable"] = true,
+								["provider"] = { "n", 85984 },	-- Nat Pagle
+								["cost"] = { { "i", 116819, 1 }, },	-- Fire Ammonite Lunker
 							}),
 							q(35071, {	-- Jawless Skulker
 								["provider"] = { "n", 79892 },	-- Mak'jin
@@ -81,11 +117,23 @@ _.ExpansionFeatures =
 									i(112623),	-- Pack of Fishing Supplies
 								},
 							}),
+							q(36806, {	-- Jawless Skulker Lunker
+								["requireSkill"] = 356,	-- Fishing
+								["repeatable"] = true,
+								["provider"] = { "n", 85984 },	-- Nat Pagle
+								["cost"] = { { "i", 116822, 1 }, },	-- Jawless Skulker Lunker
+							}),
 							q(34758, {	-- Looking For Help
 								["provider"] = { "n", 79892 },	-- Mak'jin
 								["coord"] = { 38.1, 72.2, 590 },
 								["races"] = HORDE_ONLY,
 								["requireSkill"] = 356,	-- Fishing
+							}),
+							q(38406, {	-- Sea Scorpion Lunker
+								["requireSkill"] = 356,	-- Fishing
+								["repeatable"] = true,
+								["provider"] = { "n", 85984 },	-- Nat Pagle
+								["cost"] = { { "i", 122696, 1 }, },	-- Sea Scorpion Lunker
 							}),
 						}),
 						n(-16, {	-- Rares
@@ -98,7 +146,6 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(118393, {	-- Tentacled Hat
-								["description"] = "Shift+Click ATT Header to refresh its collection status.",
 								["collectible"] = false,
 								["u"] = 15,
 								["crs"] = {

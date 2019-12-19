@@ -33,6 +33,49 @@ _.NeverImplemented =
 		q(54781),	-- UNUSED
 		q(37812),	-- UNUSED: Test Race: 1 Marker
 		
+		-- Old adventure boards? Can't find any information to suggest that these were ever made available
+		q(28011),	-- Adventurers Wanted: Blackfathom Deeps
+		q(28010),	-- Adventurers Wanted: Blackfathom Deeps
+		q(28071),	-- Adventurers Wanted: Blackrock Spire
+		q(28070),	-- Adventurers Wanted: Blackrock Spire
+		q(28075),	-- Adventurers Wanted: Dire Maul Capital Gardens
+		q(28074),	-- Adventurers Wanted: Dire Maul Capital Gardens
+		q(28073),	-- Adventurers Wanted: Dire Maul Warpwood Quarter
+		q(28072),	-- Adventurers Wanted: Dire Maul Warpwood Quarter
+		q(28013),	-- Adventurers Wanted: Gnomeregan
+		q(28040),	-- Adventurers Wanted: Maraudon
+		q(28039),	-- Adventurers Wanted: Maraudon
+		q(28077),	-- Adventurers Wanted: Northern Dire Maul
+		q(28076),	-- Adventurers Wanted: Northern Dire Maul
+		q(31033),	-- Adventurers Wanted: Ragefire Chasm - triggered when turning in "Enemies Below"
+		q(28003),	-- Adventurers Wanted: Ragefire Chasm
+		q(28025),	-- Adventurers Wanted: Razorfen Downs
+		q(28024),	-- Adventurers Wanted: Razorfen Downs
+		q(28015),	-- Adventurers Wanted: Razorfen Krawl
+		q(28014),	-- Adventurers Wanted: Razorfen Krawl
+		q(28017),	-- Adventurers Wanted: Scarlet Halls
+		q(28021),	-- Adventurers Wanted: Scarlet Halls
+		q(28023),	-- Adventurers Wanted: Scarlet Monastery
+		q(28019),	-- Adventurers Wanted: Scarlet Monastery
+		q(28083),	-- Adventurers Wanted: Scholomance
+		q(28082),	-- Adventurers Wanted: Scholomance
+		q(28009),	-- Adventurers Wanted: Shadowfang Keep
+		q(28008),	-- Adventurers Wanted: Shadowfang Keep
+		q(28012),	-- Adventurers Wanted: Stormwind Stockade
+		q(28079),	-- Adventurers Wanted: Stratholme Main Gate
+		q(28078),	-- Adventurers Wanted: Stratholme Main Gate
+		q(28081),	-- Adventurers Wanted: Stratholme Service Gate
+		q(28080),	-- Adventurers Wanted: Stratholme Service Gate
+		q(28005),	-- Adventurers Wanted: The Deadmines
+		q(28004),	-- Adventurers Wanted: The Deadmines
+		q(28067),	-- Adventurers Wanted: The Sunken Temple
+		q(28066),	-- Adventurers Wanted: The Sunken Temple
+		q(28027),	-- Adventurers Wanted: Uldaman
+		q(28026),	-- Adventurers Wanted: Uldaman
+		q(28007),	-- Adventurers Wanted: Wailing Caverns
+		q(28006),	-- Adventurers Wanted: Wailing Caverns
+		q(28037),	-- Adventurers Wanted: Zul'farrak
+		q(28036),	-- Adventurers Wanted: Zul'farrak
 		
 		-------------------
 		--    VARIOUS    --
@@ -40,6 +83,8 @@ _.NeverImplemented =
 		q(47954),	-- Tracking Quest (Triggered when using the "Surviving Kalimdor" toy to unlock flightpaths)
 		q(47956),	-- Tracking Quest (triggered when using "To Modernize the Provisioning of Azeroth" toy to unlock EK flight paths)
 		q(50659),	-- Silithus - talk to Zidormi to phase into the past version of the map
+		q(49813),	-- Adventure Calls (lvl 60) - can trigger prior to level 60 if you accept a quest from the warboard
+		q(49860),	-- Adventure Calls (lvl 60) - can trigger prior to level 60 if you accept a quest from the warboard
 		q(42873),	-- Tome of Illusions - Outland
 		q(42874),	-- Tome of Illusions - Northrend
 		q(42875),	-- Tome of Illusions - Cataclysm
@@ -54,6 +99,14 @@ _.NeverImplemented =
 		q(45436),	-- First Win of the Day (Skirmish)
 		q(45433),	-- First Win of the Day (3v3)
 		q(45434),	-- First Win of the Day (10v10)
+		q(36143),	-- LFGDungeons - Lich King - Dungeon Normal 1st
+		q(36149),	-- LFGDungeons - Lich King - Dungeon Normal Nth
+		q(36145),	-- LFGDungeons - Cataclysm - Dungeon Normal 1st
+		q(36151),	-- LFGDungeons - Cataclysm - Dungeon Normal Nth
+		q(36147),	-- LFGDungeons - Pandaria - Dungeon Normal 1st
+		q(36139),	-- LFGDungeons - Pandaria - Dungeon Normal Nth
+		q(37505),	-- LFGDungeons - Draenor - Raid Finder - 1st
+		q(37506),	-- LFGDungeons - Draenor - Raid Finder - Nth
 		
 		-- Events/Holidays
 		q(11320),	-- [NYI] Now this is Ram Racing... Almost. (Brewfest)
@@ -104,12 +157,23 @@ _.NeverImplemented =
 		q(35930),	-- Blackfathom Deeps (Bonus) Reward Quest
 		q(35903),	-- Blackrock Depths (Detention Bonus) Reward Quest
 		q(35902),	-- Blackrock Depths (Upper City) Reward Quest
+		q(35899),	-- Blackrock Depths (Detenction Block) reward quest
+		q(35901),	-- Blackrock Depths (Detention Bonus) reward quest
+		q(35904),	-- Blackrock Depths (Everything) reward quest
 		q(35586),	-- Deadmines normal completion
+		q(35890),	-- Dire Maul (Warpwood Quarter) reward quest
+		q(35891),	-- Dire Maul (Capital Gardens) reward quest
+		q(35892),	-- Dire Maul (Gordok Commons) reward quest
 		q(35894),	-- Dire Maul (Bonus) Reward Quest
+		q(35956),	-- Dire Maul (Everything) reward quest
 		q(35601),	-- Gnomeregan Reward Quest - received after killing Mekgineer Thermaplugg
 		q(35602),	-- Gnomeregan Bonus Objective Reward Quest - received after killing Grubbis
 		q(36867),	-- Lower Blackrock Spires Bonus Reward Quest — killing Urok Doomhowl
 		q(35888),	-- Maraudon (Everything) Reward Quest — dungeon completion
+		q(35885),	-- Maraudon (Wicked Grotto) reward quest
+		q(35886),	-- Maraudon (Foulspore Cavern) reward quest
+		q(35887),	-- Maraudon (Earth Song Falls) reward quest
+		q(35889),	-- Maraudon (Bonus) reward quest
 		q(35287),	-- Ragefire Chasm
 		q(35598),	-- Razorfen Downs Reward Quest — dungeon completion
 		q(35615),	-- Razorfen Kraul Reward Quest — dungeon completion
@@ -263,6 +327,7 @@ _.NeverImplemented =
 		q(35439),	-- Hour of Twilight dungeon reward (Kill benedictus)
 		q(35414),	-- Lost City of the Tol'vir dungeon reward (Kill Siamat)
 		q(35911),	-- Stonecore Reward Quest
+		q(35913),	-- Stonecore (Heroic) reward quest
 		q(25829),	-- Mount Hyjal - goldrinn hub complete
 		q(27872),	-- Mount Hyjal - tortolla hub complete
 		q(27873),	-- Mount Hyjal - aviana hub complete
@@ -313,6 +378,9 @@ _.NeverImplemented =
 		q(32012),	-- Kovok tracking [GROWING]
 		q(29604),	-- Tracking Event: Saw East Temple Arrival Cinematic
 		q(29638),	-- UNUSED
+		q(33019),	-- NC S1 Q2 - unused cooking quest
+		q(33023),	-- NC S1 Q6 - unused cooking quest
+		q(33025),	-- NC S2 Q2 - unused cooking quest
 		q(29695),	-- Kiryn TRACKING
 		q(29702),	-- Gorrok TRACKING
 		q(29697),	-- Rivett TRACKING
@@ -335,6 +403,12 @@ _.NeverImplemented =
 		q(37217),	-- FLAG - Proving Grounds - Tank Gold
 		q(37216),	-- FLAG - Proving Grounds - Tank Silver
 		q(33093),	-- FLAG - Proving Grounds - Tank Silver
+		q(32899),	-- Daily Scenario Random (Nth)(Mists)
+		q(32873),	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st
+		q(32874),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth
+		q(32893),	-- LFGDungeons - Mists - Scenario - Heroic Random - 1st Bonus
+		q(32894),	-- LFGDungeons - Mists - Scenario - Heroic Random - Nth Bonus
+		q(32873),	-- LFGDungeons - Mists - Scenario - Heroic Daily - 1st/Nth
 		q(31282),	-- Dread Wastes - Kaz'tik tracking quest - triggers after freeing Kaz'tik from amber
 		q(31343),	-- Dread Wastes - Kovok Tracking - triggers when turnin in "Reunited". Allows Kovok to follow you
 		q(31992),	-- Kun-lai Summit - Dread Wastes Buff Bitflag - Enhancement 01 - Angel of Death
@@ -485,6 +559,7 @@ _.NeverImplemented =
 		q(35297),	-- triggered during "Blazing of Glory" when you approach Khadgar around 67.6,60.5
 		q(34440),	-- triggered just before turning in "Ga'nar of the Frostwolf"
 		q(36426),	-- Dueling Orbs,	-- triggered when completing "Mysterious Ring" (34463)
+		q(35914),	-- Default invasion reward flag during the first garrison invasion as part of Draenor's base intro
 		q(33847),	-- Frostfire Ridge - Flag: Seen Ga'nar Rolling Out),	-- triggered going into Chillfang's cave immediately upon getting to Draenor
 		q(33909),	-- Frostfire Ridge - Flag: Seen Ga'nar Rolling Out to Bladespire),	-- triggers shortly after reaching Wor'gol during "Den of Wolves"
 		q(33846),	-- Frostfire Ridge - Flag: Seen Thrall Cyclone),	-- triggers during "These Colors Don't Run"
@@ -805,6 +880,9 @@ _.NeverImplemented =
 		q(47053),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 3 - Tracking
 		q(47044),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 2 - Tracking
 		q(47038),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 1 - Tracking
+		q(40302),	-- FLAG - Prospecting 01
+		q(40303),	-- FLAG - Prospecting 02
+		q(40304),	-- FLAG - Prospecting 03 - triggered when completing a jewelcrafting world quest in Dalaran
 		q(38894),	-- Hunter Order Hall - Founded the order hall
 		q(40621),	-- Hunter Order Hall - Beast Mastery Chosen first
 		q(44045),	-- Hunter Order Hall - Beast Mastery Chosen
@@ -865,9 +943,9 @@ _.NeverImplemented =
 
 	--	World Boss
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
-	--	q(),	-- Ana-Mouz killID
-	--	q(),	-- Ana-Mouz bonus roll
-	--	q(),	-- Apocron killID
+		q(44501),	-- Ana-Mouz killID
+		q(44896),	-- Ana-Mouz bonus roll
+		q(47084),	-- Apocron killID
 		q(47087),	-- Apocron bonus roll
 		q(47085),	-- Brutallus killID
 		q(47088),	-- Brutallus bonus roll
@@ -1072,7 +1150,7 @@ _.NeverImplemented =
 		q(54035),	-- Blessing of the Night Warden unlock chain started
 		q(53956),	-- Triggered when turning in "We Are Coming" as alliance. Probably related to darkshore warfront unlock?
 		q(49610),	-- looting Adventurer's Society Loot Stash to unlock the Nigel Rifthold pet vendor
-
+		q(56684),	-- Flag used to track if 160489 (340 engineering goggles) had been crafted. This identifies if the recipe for rank 2 can drop
 
 	--	HONEYBACK HIVE
 		q(55906),	-- triggers when pulling out Seabreeze Bumblebee or Bumbles next to Barry at 69.1, 64.2 in Stormsong Valley

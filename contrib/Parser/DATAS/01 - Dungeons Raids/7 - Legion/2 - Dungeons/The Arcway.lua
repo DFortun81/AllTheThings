@@ -27,13 +27,13 @@ _.Instances = { tier(7, {	-- Legion
 				q(43641, {	-- The Arcway: Wandering Plague
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
+					["g"] = {
+						i(141053, {	-- Technique: Glyph of Polymorphic Proportions
+							["description"] = "The rare that drops this glyph is only available during the WQ The Arcway: Wandering Plague.",
+							["cr"] = 111057,	-- The Rat King
+						}),
+					},
 				}),
-			}),
-			n(111057, {	-- The Rat King
-				["description"] = "This rare is only available during the WQ The Arcway: Wandering Plague.",
-				["g"] = {
-					i(141053),	-- Technique: Glyph of Polymorphic Proportions
-				},
 			}),
 			d(2, {	-- Heroic
 				cr(98203, e(1497, {	-- Ivanyr

@@ -550,6 +550,7 @@ _.ExpansionFeatures =
 							["cost"] = { { "c", 391, 80 }, },	-- 80x Tol Barad Commendation
 						}),
 						i(63518, {	-- Hellscream's Reach Commendation
+							["races"] = HORDE_ONLY,
 							["cost"] = { { "c", 391, 10 }, },	-- 10x Tol Barad Commendation
 						}),
 						i(63378, {	-- Hellscream's Reach Tabard
@@ -606,6 +607,7 @@ _.ExpansionFeatures =
 							["cost"] = { { "c", 391, 40 }, },	-- 40x Tol Barad Commendation
 						}),
 						i(63517, {	-- Baradin's Wardens Commendation
+							["races"] = ALLIANCE_ONLY,
 							["cost"] = { { "c", 391, 10 }, },	-- 10x Tol Barad Commendation
 						}),
 						i(63379, {	-- Baradin's Warden's Tabard

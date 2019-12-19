@@ -4,7 +4,6 @@
 _.Holidays = bubbleDown({["u"] = 29},
 {
 	holiday(235485, {	-- Feast of Winter Veil
-		["u"] = 29,	-- Feast of Winter Veil
 		["g"] = {
 			n(-2, {	-- Vendors
 				n(52358, {	-- Craggle Wobbletop
@@ -182,33 +181,24 @@ _.Holidays = bubbleDown({["u"] = 29},
 					},
 					["g"] = {
 						i(128659, {	-- Merry Supplies
-							["u"] = 29,	-- Feast of Winter Veil
 							["g"] = {
 								i(128665, {	-- Ball of Tangled Lights
 									["questID"] = 39615,
-									["u"] = 29,	-- Feast of Winter Veil
 								}),
-								i(108635, {	-- Crashin' Thrashin' Killdozer Controller
-									["u"] = 29,	-- Feast of Winter Veil
-								}),
+								i(108635),	-- Crashin' Thrashin' Killdozer Controller
 								i(128668, {	-- Festive Outfits
 									["questID"] = 39671,
-									["u"] = 29,	-- Feast of Winter Veil
 								}),
 								i(128666, {	-- Imported Trees
 									["questID"] = 39616,
-									["u"] = 29,	-- Feast of Winter Veil
 								}),
 								i(128667, {	-- Little Helpers
 									["questID"] = 39767,
-									["u"] = 29,	-- Feast of Winter Veil
 								}),
 								i(128669, {	-- Old Box of Decorations
 									["questID"] = 39712,
-									["u"] = 29,	-- Feast of Winter Veil
 								}),
 								i(128670, {	-- Savage Gift
-									["u"] = 29,	-- Feast of Winter Veil
 									["g"] = {
 										--Note!! Temp marking commenting things so they don't inherit Winter Veil filter for the moment
 										--un(7, i(128312)),	-- Elixir of the Rapid Mind

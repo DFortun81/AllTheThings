@@ -368,12 +368,6 @@ _.Zones =
 					["provider"] = { "n", 4201 },	-- Ziz Fizziks
 					["sourceQuest"] = 1095,	-- Further Instructions
 				}),
-				q(25729, {	-- Gerenzo the Traitor
-					["provider"] = { "n", 40895 },	-- Professor Xakxak Gyromate
-					["sourceQuest"] = 25652,	-- Commandeer That Balloon!
-					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 65.5, 43.9, 65 },
-				}),
 				q(1096,  {	-- Gerenzo Wrenchwhistle
 					["u"] = 40,
 					["provider"] = { "n", 4201 },	-- Ziz Fizziks

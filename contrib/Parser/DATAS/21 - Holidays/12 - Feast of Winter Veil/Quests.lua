@@ -3,9 +3,7 @@
 --------------------------------------------
 _.Holidays = bubbleDown({["u"] = 29},
 {
-	{	-- Feast of Winter Veil
-		["holidayID"] = 235485,	-- Feast of Winter Veil
-		["u"] = 29,				-- Feast of Winter Veil Filter
+	holiday(235485, {	-- Feast of Winter Veil
 		["g"] = {
 			n(-17, {	-- Quests
 				["g"] = {
@@ -60,10 +58,10 @@ _.Holidays = bubbleDown({["u"] = 29},
 								["lvl"] = 101,
 								["groups"] = {
 									-- Battle Pets/Companions
-									un(29, p(191)),	-- Clockwork Rocket Bot
+									un(29, p(191)),		-- Clockwork Rocket Bot
 									un(29, i(73797)),	-- Lump of Coal
 									un(29, i(104317)),	-- Rotten Helper Box
-									un(29, p(254)),	-- Blue Clockwork Rocket Bot
+									un(29, p(254)),		-- Blue Clockwork Rocket Bot
 									-- Toys
 									un(29, i(151349)), 	-- Toy Weapon Set [Alliance]
 									un(29, i(151348)), 	-- Toy Weapon Set [Horde]
@@ -343,5 +341,5 @@ _.Holidays = bubbleDown({["u"] = 29},
 			}),
 
 		},
-	},
+	}),
 });

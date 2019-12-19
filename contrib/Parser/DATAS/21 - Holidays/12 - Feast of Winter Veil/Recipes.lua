@@ -4,7 +4,6 @@
 _.Holidays = bubbleDown({["u"] = 29},
 {
 	holiday(235485, {	-- Feast of Winter Veil
-		["u"] = 29,	-- Feast of Winter Veil
 		["g"] = {
 		-- These are temporarily here.  They trigger Crieve to be in unsorted.  Will fix more when I revamp it - Luce.
 			f(200, {	-- Recipes
