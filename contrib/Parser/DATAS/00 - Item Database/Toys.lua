@@ -665,5 +665,5 @@ t(174926);	-- Overly Sensitive Void Spectacles
 t(174928);	-- Rotten Apple
 t(174830);	-- Shadowy Disguise
 t(174873);	-- Trans-mogu-rifier
-t(174922);	-- Void-Touched Skull
+t(174921);	-- Void-Touched Skull
 t(174924);	-- Void-Touched Souvenir Totem
