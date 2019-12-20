@@ -273,6 +273,38 @@ _.ExpansionFeatures =
 						}),
 					}),
 				}),
+				n(-10079, {	-- Assault: Aqir Unearthed
+					n(-17, {	-- Quests
+					}),
+					n(-16, {	-- Rares
+						n(155703, {	-- Anq'uri the Titanic
+							["questID"] = 56834,
+							["coord"] = { 32.4, 64.6, 1527 },
+						}),
+						n(162172, {	-- Aqir Warcaster
+							["questID"] = 58694,
+							["coord"] = { 42.0, 37.8, 1527 },
+						}),
+						n(154604, {	-- Lord Aj'qirai
+							--["questID"] = ,
+							--["coord"] = { , 1527 },
+							["isDaily"] = true,
+							["g"] = {
+								i(174475),	-- Stinky Sack (pet)
+							},
+						}),
+						n(162140, {	-- Skikx'traz
+							--["questID"] = ,
+							--["coord"] = { , 1527 },
+							["isDaily"] = true,
+							["g"] = {
+								i(174476),	-- Black Chitinous Plate (pet)
+							},
+						}),
+					}),
+					n(-34, {	-- World Quests
+					}),
+				}),
 				n(-10076, {	-- Assault: The Black Empire
 					n(-17, {	-- Quests
 						q(58237, {	-- Cleansing Uldum
@@ -544,22 +576,6 @@ _.ExpansionFeatures =
 					},
 				}),
 				-- below are almost certainly the Aqir rares
-				n(154604, {	-- Lord Aj'qirai
-					--["questID"] = ,
-					--["coord"] = { , 1527 },
-					["isDaily"] = true,
-					["g"] = {
-						i(174475),	-- Stinky Sack (pet)
-					},
-				}),
-				n(162140, {	-- Skikx'traz
-					--["questID"] = ,
-					--["coord"] = { , 1527 },
-					["isDaily"] = true,
-					["g"] = {
-						i(174476),	-- Black Chitinous Plate (pet)
-					},
-				}),
 			}),
 			n(-38,  {	-- Professions
 				prof(356, {	-- Fishing
@@ -757,6 +773,13 @@ _.ExpansionFeatures =
 					},
 				}),
 			}),
+			n(-16,  {	-- Rares
+				n(162196, {	-- Obsidian Annihilator
+					-- TODO: need questID for this one
+					--["questID"] = ,
+					["coord"] = { 35.1, 17.3, 1527 },
+				}),
+			}),
 			n(-2,   {	-- Vendors
 				n(160714, {	-- Provisioner Qorra
 					["coord"] = { 55.1, 32.9, 1527 },
@@ -785,7 +808,7 @@ _.ExpansionFeatures =
 					},
 				}),
 			}),
-			n(-34, {	-- World Quests
+			n(-34,  {	-- World Quests
 				q(58743, {	-- Dune Buggy
 					-- pet battle
 					["lvl"] = 120,
