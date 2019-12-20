@@ -110,6 +110,7 @@ _.PetJournal =
 		p(480),		-- Topaz Shale Hatchling
 		p(2092), 	-- Unstable Tendril
 		p(855),		-- Venus
+		p(2870),	-- Wailing Lasher
 		p(535),		-- Water Waveling
 		p(1959),	-- Winter Rageling
 		p(220),		-- Withers

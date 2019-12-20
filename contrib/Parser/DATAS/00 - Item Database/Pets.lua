@@ -253,6 +253,7 @@ pet(167056, 2590);	-- Essence of Pride (Ravenous Prideling)
 pet(118921, 1566); 	-- Everbloom Peachick
 pet(166453, 2548);	-- Everburning Treant
 pet(143756, 1998); 	-- Everliving Spore
+pet(174828, 2868);	-- Experiment 13
 pet(136899, 1717); 	-- Extinguished Eye
 pet(136901, 1719); 	-- Eye of Inquisition
 pet(119170, 1576); 	-- Eye of Observation
@@ -760,6 +761,7 @@ pet(64494, 279);	-- Tiny Shale Spider
 pet(34478, 167); 	-- Tiny Sporebat
 pet(69991, 167); 	-- Tiny Sporebat
 pet(94935, 1209); 	-- Tiny White Carp
+pet(174829, 2869);	-- Tinyclaw
 pet(152966, 2078);	-- Tinytron
 pet(44971, 206); 	-- Tirisfal Batling
 pet(97558, 1236);	-- Tito's Basket (Tito)
@@ -810,6 +812,7 @@ pet(174462, 2843);	-- Void Cocoon (Void-Scarred Beetle)
 pet(163652, 2434);	-- Voidwiggle
 pet(69824, 310); 	-- Voodoo Figurine
 pet(163824, 2460);	-- Voru'kar Leecher
+pet(174827, 2870);	-- Wailing Lasher
 pet(95621, 227); 	-- Warbot Ignition Key (Warbot)
 pet(129217, 1766);	-- Warm Arcane Crystal (Empowered Manafiend)
 pet(167048, 2580);	-- Wayward Spirit

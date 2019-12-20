@@ -83,7 +83,7 @@ _.PetBattles =
 						["cost"] = { { "i", 174360, 2 }, },	-- 2x Shadowy Gem
 					}),
 					i(174828, {	-- Experiment 13
-						["cost"] = { { "i", 174360, 1 }, },	-- 1x Shadowy Gem
+						["cost"] = { { "i", 174360, 3 }, },	-- 3x Shadowy Gem
 					}),
 					i(174827, {	-- Wailing Lasher
 						["cost"] = { { "i", 174360, 1 }, },	-- 1x Shadowy Gem

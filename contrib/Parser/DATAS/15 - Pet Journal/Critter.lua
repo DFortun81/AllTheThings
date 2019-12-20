@@ -59,6 +59,7 @@ _.PetJournal =
 		p(2395),	-- Glutted Bleeder
 		p(430),		-- Gold Beetle
 		p(2387),	-- Golden Beetle
+		p(2867),	-- Golden Chirper
 		un(3, p(170)),	-- Golden Pig
 		p(733),		-- Grassland Hopper
 		p(443),		-- Grasslands Cottontail

@@ -26,6 +26,7 @@ _.PetJournal =
 		p(262),		-- De-Weaponized Mechanical Companion
 		p(2001), 	-- Dibbler
 		p(1450),	-- Draenei Micro Defender
+		p(2868),	-- Experiment 13
 		p(2449),	-- False Knucklebump
 		p(2526),	-- Feathers
 		p(1162),	-- Fluxfire Feline
@@ -88,6 +89,7 @@ _.PetJournal =
 		p(1632),	-- Sunblade Micro-Defender
 		p(1178),	-- Sunreaver Micro-Sentry
 		p(389),		-- Tiny Harvester
+		p(2869),	-- Tinyclaw
 		p(2078),	-- Tinytron
 		p(116),		-- Tranquil Mechanical Yeti
 		p(1886),	-- Trigger

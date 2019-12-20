@@ -134,6 +134,7 @@ _.PetJournal =
 		p(2563),			-- Nightwreathed Watcher
 		p(1714),			-- Northern Hawk Owl
 		p(544),				-- Oasis Moth
+		p(2863),			-- Oasis Void-Duster
 		p(2050),			-- Orphaned Felbat
 		p(2792),			-- Papi
 		p(2380),			-- Parasitic Boarfly
@@ -160,6 +161,7 @@ _.PetJournal =
 		p(1567),			-- Sentinel's Companion
 		p(2556),			-- Shadefeather Hatchling
 		p(1599),			-- Shadow Sporebat
+		p(2872),			-- Shadowbarb Hatchling
 		p(1976),			-- Sharptalon Hatchling
 		p(1734),			-- Shimmering Firefly
 		p(2384),			-- Shore Butterfly
