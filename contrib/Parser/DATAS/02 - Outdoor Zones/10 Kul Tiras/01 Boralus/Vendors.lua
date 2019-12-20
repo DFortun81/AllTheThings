@@ -102,6 +102,52 @@ _.Zones =
 						}),
 					},
 				}),
+				n(161091, {	-- Captain Nightrunner
+					["coord"] = { 66.2, 32.1, 1161 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						-- TODO: These crates rotate every week and contain 3-4 random items from the related island expedition. Should we map all the items here?
+						i(173950, {	-- Crestfall Salvage
+							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+						}),
+						i(173949, {	-- Dread Chain Salvage
+							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+						}),
+						i(173988, {	-- Havenswood Salvage
+							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+						}),
+						i(173989, {	-- Jorundall Salvage
+							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+						}),
+						i(173992, {	-- Skitting Hollow Salvage
+							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+						}),
+						i(173991, {	-- Rotting Mire Salvage
+							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+						}),
+						i(173993, {	-- Snowblossom Salvage
+							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+						}),
+						i(173990, {	-- Molten Cay Salvage
+							["cost"] = { { "c", 1710, 120 }, },	-- 120x Seafarer's Dubloons
+						}),
+						i(173994, {	-- Un'gol Ruins Salvage
+							["cost"] = { { "c", 1710, 120 }, },	-- 120 Seafarer's Dubloons
+						}),
+						i(173996, {	-- Verdant Wilds Salvage
+							["cost"] = { { "c", 1710, 120 }, },	-- 120 Seafarer's Dubloons
+						}),
+						i(173997, {	-- Whispering Reef Salvage Salvage
+							["cost"] = { { "c", 1710, 120 }, },	-- 120 Seafarer's Dubloons
+						}),
+						i(173987, {	-- Elemental Salvage
+							["cost"] = { { "c", 1710, 75 }, },	-- 75 Seafarer's Dubloons
+						}),
+						i(173995, {	-- Venture Co 'Salvage'
+							["cost"] = { { "c", 1710, 50 }, },	-- 50 Seafarer's Dubloons
+						}),
+					},
+				}),
 				n(136063, {	-- Cassandra Brennor <Leatherworking Trainer>
 					["coord"] = { 75.5, 12.6, 1161 },
 					["races"] = ALLIANCE_ONLY,
