@@ -44,6 +44,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					e(2369, {	-- The Prophet Skitra
 						["crs"] = { 157620 },
 						["g"] = {
+							i(174279),	-- Encrypted Ny'alothan Text
 							i(172201),	-- Bloodstained Ritual Athame
 							i(172193),	-- Whispering Eldritch Bow
 							i(174165),	-- Writhing Spaulders of Madness
@@ -74,6 +75,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					e(2370, {	-- Vexiona
 						["crs"] = { 157354 },
 						["g"] = {
+							i(174279),	-- Encrypted Ny'alothan Text
 							i(172194),	-- Gift of the Void
 							i(174148),	-- Helm of Deep Despair
 							i(174120),	-- Void Ascendant's Mantle
@@ -101,6 +103,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					e(2364, {	-- Ra-den the Despoiled
 						["crs"] = { 156866 },
 						["g"] = {
+							i(174279),	-- Encrypted Ny'alothan Text
 							i(172228),	-- Shandai, Watcher of Cosmos
 							i(172197),	-- Unguent Caress
 							i(174134),	-- Gibbering Maw
@@ -138,12 +141,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(174159),	-- Spinebarb Legplates
 							i(173946),	-- Writhing Segment of Drest'agath
 							i(174532),	-- Ichorspine Loop
+							i(173946),	-- Writhing Segment of Drest'agath
 							un(1, i(174054)),	-- Corrupted Ring - Last Grasp
 						},
 					}),
 					e(2374, {	-- Il'gynoth, Corruption Reborn
 						["crs"] = { 158328 },
 						["g"] = {
+							i(174279),	-- Encrypted Ny'alothan Text
 							i(172189),	-- Eyestalk of Il'gynoth
 							i(172188),	-- Precipice of Oblivion
 							i(174116),	-- Cowl of Unspeakable Horrors
@@ -178,6 +183,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					e(2375, {	-- N'Zoth, the Corruptor
 						["crs"] = { 158041 },
 						["g"] = {
+							i(174279),	-- Encrypted Ny'alothan Text
 							i(172187),	-- Devastation's Hour
 							i(172229),	-- Dominion, Lurker Beyond Dreams
 							i(174167),	-- Greathelm of Phantasmic Reality
@@ -232,6 +238,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["crs"] = { 157620 },
 					["g"] = {
 						ach(14037),	-- Phase 3: Prophet
+						i(174279),	-- Encrypted Ny'alothan Text
 						i(172201),	-- Bloodstained Ritual Athame
 						i(172193),	-- Whispering Eldritch Bow
 						i(174165),	-- Writhing Spaulders of Madness
@@ -300,6 +307,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(174159),	-- Spinebarb Legplates
 						i(173946),	-- Writhing Segment of Drest'agath
 						i(174532),	-- Ichorspine Loop
+						i(173946),	-- Writhing Segment of Drest'agath
 						un(1, i(174054)),	-- Corrupted Ring - Last Grasp
 					},
 				}),
@@ -307,6 +315,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["crs"] = { 157354 },
 					["g"] = {
 						ach(14139),	-- Total Annihilation
+						i(174279),	-- Encrypted Ny'alothan Text
 						i(172194),	-- Gift of the Void
 						i(174148),	-- Helm of Deep Despair
 						i(174120),	-- Void Ascendant's Mantle
@@ -319,6 +328,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["crs"] = { 156866 },
 					["g"] = {
 						ach(13999),	-- Clean up, Aisle 9
+						i(174279),	-- Encrypted Ny'alothan Text
 						i(172228),	-- Shandai, Watcher of Cosmos
 						i(172197),	-- Unguent Caress
 						i(174134),	-- Gibbering Maw
@@ -335,6 +345,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["crs"] = { 158328 },
 					["g"] = {
 						ach(14038),	-- Bloody Mess
+						i(174279),	-- Encrypted Ny'alothan Text
 						i(172189),	-- Eyestalk of Il'gynoth
 						i(172188),	-- Precipice of Oblivion
 						i(174116),	-- Cowl of Unspeakable Horrors
@@ -369,6 +380,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["crs"] = { 158041 },
 					["g"] = {
 						ach(14148),	-- Peer Pressure
+						i(174279),	-- Encrypted Ny'alothan Text
 						i(172187),	-- Devastation's Hour
 						i(172229),	-- Dominion, Lurker Beyond Dreams
 						i(174167),	-- Greathelm of Phantasmic Reality
@@ -422,6 +434,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["crs"] = { 157620 },
 					["g"] = {
 						ach(14037),	-- Phase 3: Prophet
+						i(174279),	-- Encrypted Ny'alothan Text
 						i(172201),	-- Bloodstained Ritual Athame
 						i(172193),	-- Whispering Eldritch Bow
 						i(174165),	-- Writhing Spaulders of Madness
@@ -490,6 +503,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(174159),	-- Spinebarb Legplates
 						i(173946),	-- Writhing Segment of Drest'agath
 						i(174532),	-- Ichorspine Loop
+						i(173946),	-- Writhing Segment of Drest'agath
 						un(1, i(174054)),	-- Corrupted Ring - Last Grasp
 					},
 				}),
@@ -497,6 +511,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["crs"] = { 157354 },
 					["g"] = {
 						ach(14139),	-- Total Annihilation
+						i(174279),	-- Encrypted Ny'alothan Text
 						i(172194),	-- Gift of the Void
 						i(174148),	-- Helm of Deep Despair
 						i(174120),	-- Void Ascendant's Mantle
@@ -509,6 +524,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["crs"] = { 156866 },
 					["g"] = {
 						ach(13999),	-- Clean up, Aisle 9
+						i(174279),	-- Encrypted Ny'alothan Text
 						i(172228),	-- Shandai, Watcher of Cosmos
 						i(172197),	-- Unguent Caress
 						i(174134),	-- Gibbering Maw
@@ -525,6 +541,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["crs"] = { 158328 },
 					["g"] = {
 						ach(14038),	-- Bloody Mess
+						i(174279),	-- Encrypted Ny'alothan Text
 						i(172189),	-- Eyestalk of Il'gynoth
 						i(172188),	-- Precipice of Oblivion
 						i(174116),	-- Cowl of Unspeakable Horrors
@@ -564,6 +581,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							}),
 						}),
 						ach(14148),	-- Peer Pressure
+						i(174279),	-- Encrypted Ny'alothan Text
 						i(172187),	-- Devastation's Hour
 						i(172229),	-- Dominion, Lurker Beyond Dreams
 						i(174167),	-- Greathelm of Phantasmic Reality
@@ -620,6 +638,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["g"] = {
 						ach(14044),	-- Mythic: The Prophet Skitra
 						ach(14037),	-- Phase 3: Prophet
+						i(174279),	-- Encrypted Ny'alothan Text
 						i(172201),	-- Bloodstained Ritual Athame
 						i(172193),	-- Whispering Eldritch Bow
 						i(174165),	-- Writhing Spaulders of Madness
@@ -692,6 +711,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(174159),	-- Spinebarb Legplates
 						i(173946),	-- Writhing Segment of Drest'agath
 						i(174532),	-- Ichorspine Loop
+						i(173946),	-- Writhing Segment of Drest'agath
 						un(1, i(174054)),	-- Corrupted Ring - Last Grasp
 					},
 				}),
@@ -700,6 +720,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["g"] = {
 						ach(14050),	-- Mythic: Vexiona
 						ach(14139),	-- Total Annihilation
+						i(174279),	-- Encrypted Ny'alothan Text
 						i(172194),	-- Gift of the Void
 						i(174148),	-- Helm of Deep Despair
 						i(174120),	-- Void Ascendant's Mantle
@@ -713,6 +734,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["g"] = {
 						ach(14051),	-- Mythic: Ra-den the Despoiled
 						ach(13999),	-- Clean up, Aisle 9
+						i(174279),	-- Encrypted Ny'alothan Text
 						i(172228),	-- Shandai, Watcher of Cosmos
 						i(172197),	-- Unguent Caress
 						i(174134),	-- Gibbering Maw
@@ -730,6 +752,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["g"] = {
 						ach(14052),	-- Mythic: Il'gynoth, Corruption Reborn
 						ach(14038),	-- Bloody Mess
+						i(174279),	-- Encrypted Ny'alothan Text
 						i(172189),	-- Eyestalk of Il'gynoth
 						i(172188),	-- Precipice of Oblivion
 						i(174116),	-- Cowl of Unspeakable Horrors
@@ -774,6 +797,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							title(417),	-- the Uncorrupted
 						}),
 						ach(14148),	-- Peer Pressure
+						i(174279),	-- Encrypted Ny'alothan Text
 						i(174872),	-- Ny'alotha Allseer
 						i(172187),	-- Devastation's Hour
 						i(172229),	-- Dominion, Lurker Beyond Dreams
