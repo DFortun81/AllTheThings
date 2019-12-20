@@ -222,6 +222,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["crs"] = { 156523 },
 					["g"] = {
 						ach(14008),	-- Mana Sponge
+						i(174446),	-- Fractured Obsidian Claw (pet)
 						i(172191),	-- An'zig Vra
 						i(172200),	-- Sk'shuul Vaz
 						i(174132),	-- Stygian Guise
@@ -272,6 +273,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 					["g"] = {
 						ach(14023),	-- Realizing Your Potential
+						i(174448),	-- Aqir Hivespawn (pet)
+						i(174449),	-- Ra'kim (pet)
 						i(174106),	-- Qwor N'lyeth
 						i(172192),	-- The All-Seeing Eye
 						i(174154),	-- Nightmarish Chain Shackles
@@ -328,6 +331,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["crs"] = { 156866 },
 					["g"] = {
 						ach(13999),	-- Clean up, Aisle 9
+						i(174447),	-- Void-Scarred Anubisath (pet)
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(172228),	-- Shandai, Watcher of Cosmos
 						i(172197),	-- Unguent Caress
@@ -418,6 +422,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["crs"] = { 156523 },
 					["g"] = {
 						ach(14008),	-- Mana Sponge
+						i(174446),	-- Fractured Obsidian Claw (pet)
 						i(172191),	-- An'zig Vra
 						i(172200),	-- Sk'shuul Vaz
 						i(174132),	-- Stygian Guise
@@ -468,6 +473,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 					["g"] = {
 						ach(14023),	-- Realizing Your Potential
+						i(174448),	-- Aqir Hivespawn (pet)
+						i(174449),	-- Ra'kim (pet)
 						i(174106),	-- Qwor N'lyeth
 						i(172192),	-- The All-Seeing Eye
 						i(174154),	-- Nightmarish Chain Shackles
@@ -524,6 +531,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["crs"] = { 156866 },
 					["g"] = {
 						ach(13999),	-- Clean up, Aisle 9
+						i(174447),	-- Void-Scarred Anubisath (pet)
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(172228),	-- Shandai, Watcher of Cosmos
 						i(172197),	-- Unguent Caress
@@ -624,6 +632,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["g"] = {
 						ach(14043),	-- Mythic: Maut
 						ach(14008),	-- Mana Sponge
+						i(174446),	-- Fractured Obsidian Claw (pet)
 						i(172191),	-- An'zig Vra
 						i(172200),	-- Sk'shuul Vaz
 						i(174132),	-- Stygian Guise
@@ -677,6 +686,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["g"] = {
 						ach(14046),	-- Mythic: The Hivemind
 						ach(14023),	-- Realizing Your Potential
+						i(174448),	-- Aqir Hivespawn (pet)
+						i(174449),	-- Ra'kim (pet)
 						i(174106),	-- Qwor N'lyeth
 						i(172192),	-- The All-Seeing Eye
 						i(174154),	-- Nightmarish Chain Shackles
@@ -737,6 +748,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["g"] = {
 						ach(14051),	-- Mythic: Ra-den the Despoiled
 						ach(13999),	-- Clean up, Aisle 9
+						i(174447),	-- Void-Scarred Anubisath (pet)
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(172228),	-- Shandai, Watcher of Cosmos
 						i(172197),	-- Unguent Caress

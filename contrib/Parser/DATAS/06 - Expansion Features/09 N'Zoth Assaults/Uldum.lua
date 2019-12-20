@@ -467,12 +467,26 @@ _.ExpansionFeatures =
 					crit(3),	-- Assault: The Black Empire
 				}),
 			}),
+			f(101,  {	-- Battle Pets
+				pet(2863, {	-- Oasis Void-Duster
+				}),
+				pet(2864, {	-- Void-Scarred Locust
+				}),
+			}),
 			n(-16, {	-- Rares
 				--[[
 				TODO::
 				This section is temporary! Determine what assault these rares exist in and add them to the appropriate header above.
 				Coords are also rough approximations from a previous build and needs to be verified
 				]]--
+				n(157593, {	-- Amalgamation of Flesh
+					--["questID"] = ,
+					--["coord"] = { , 1527 },
+					["isDaily"] = true,
+					["g"] = {
+						i(174478),	-- Wicked Lurker (pet)
+					},
+				}),
 				n(162147, {	-- Corpse Eater
 					--["questID"] = ,
 					["isDaily"] = true,
@@ -529,6 +543,30 @@ _.ExpansionFeatures =
 						i(174874),	-- Budget K'thir Disguise
 					},
 				}),
+				-- below are almost certainly the Aqir rares
+				n(154604, {	-- Lord Aj'qirai
+					--["questID"] = ,
+					--["coord"] = { , 1527 },
+					["isDaily"] = true,
+					["g"] = {
+						i(174475),	-- Stinky Sack (pet)
+					},
+				}),
+				n(162140, {	-- Skikx'traz
+					--["questID"] = ,
+					--["coord"] = { , 1527 },
+					["isDaily"] = true,
+					["g"] = {
+						i(174476),	-- Black Chitinous Plate (pet)
+					},
+				}),
+			}),
+			n(-38,  {	-- Professions
+				prof(356, {	-- Fishing
+					i(174456, {	-- Bottle of Gloop (pet)
+						["description"] = "Must be fishing in water currently affected by a N'Zoth assault.",
+					}),
+				}),
 			}),
 			n(-17,  {	-- Quests
 				i(174771, {	-- Shadowbarb Drone
@@ -572,6 +610,8 @@ _.ExpansionFeatures =
 							i(175063),	-- Aqir Egg Cluster
 						},
 					}),
+					-- this pet comes from the mount questline eventually:
+					--i(175049),	-- Shadowbarb Hatchling
 				}),
 				q(58640, {	-- A Crack in the Armor
 					["lvl"] = 120,
@@ -667,6 +707,14 @@ _.ExpansionFeatures =
 					["coord"] = { 72.9, 48.4, 1527 },
 					["provider"] = { "n", 155102 },	-- High Explorer Dellorah
 					["sourceQuest"] = 58641,	-- Seekers of Corruption
+				}),
+				q(58097, {	-- Supplies from the Uldum Accord
+					["repeatable"] = true,
+					["g"] = {
+						i(174484, {	-- Uldum Accord Supplies
+							i(174481),	-- Cursed Dune Watcher
+						}),
+					},
 				}),
 				q(56376, {	-- Surfacing Threats
 					["lvl"] = 120,

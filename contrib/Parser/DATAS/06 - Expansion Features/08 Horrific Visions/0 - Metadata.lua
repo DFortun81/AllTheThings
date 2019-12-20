@@ -97,8 +97,11 @@ _.ExpansionFeatures =
 						i(173288),	-- Overflowing Azerite Geode
 						i(174287),	-- Sparks of Unwavering Strength
 						i(173289),	-- Spark of Inspiration (Rank 2)
-						i(173470),	-- Plate Legguards, lvl 415 variant. Probably drops all armor type variants
-						i(173455),	-- Malignant Leviathan's Stompers (probably drops the entire set + all armor types)
+						
+						i(174461),	-- Swirling Black Bottle (pet) -- thrall
+						i(174646),	-- Void-Link Frostwolf Collar (pet) - thrall
+						i(174457),	-- C'Thuffer (pet) - rexxar
+						i(173726),	-- Box With Faintly Glowing "Air" Holes (pet) - Zekhan
 					}),
 				},
 			}),
@@ -113,6 +116,11 @@ _.ExpansionFeatures =
 						i(174924),	-- Void-Touched Souvenir Totem (Toy)
 						i(174287),	-- Sparks of Unwavering Strength
 						i(173289),	-- Spark of Inspiration (Rank 2)
+						
+						i(174461),	-- Swirling Black Bottle (pet) -- alleria
+						i(174459),	-- Voidwoven Cat Collar (pet) -- alleria
+						i(174458),	-- Void-scarred Hare (pet) -- Umbric
+						i(174460),	-- Box Labeled "Danger: Void Rat Inside" (pet) - Kelsey
 					}),
 				},
 				--[[ notes:

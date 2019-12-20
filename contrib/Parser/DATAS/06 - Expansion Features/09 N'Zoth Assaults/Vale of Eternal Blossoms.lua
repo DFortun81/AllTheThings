@@ -82,6 +82,9 @@ _.ExpansionFeatures =
 							["questID"] = 57342,
 							["coord"] = { 52.0, 41.7, 1530 },
 							["isDaily"] = true,
+							["g"] = {
+								i(174473),	-- K'uddly (pet)
+							},
 						}),
 						n(154394, {	-- Veskan the Fallen
 							["questID"] = 56213,
@@ -105,6 +108,7 @@ _.ExpansionFeatures =
 								i(175142, {	-- All-Seeing Right Eye
 									i(175140),	-- All-Seeing Eyes (toy)
 								}),
+								i(174474),	-- Corrupted Tentacle (pet)
 							},
 						}),
 						n(154087, {	-- Zror'um the Infinite
@@ -520,8 +524,19 @@ _.ExpansionFeatures =
 				}),
 			}),
 			f(101,  {	-- Battle Pets
+				p(2867, {	-- Golden Chirper
+				}),
 				p(2866, {	-- Voidglower
 					["crs"] = { 162506 },
+				}),
+				p(2865, {	-- Voidskimmer
+				}),
+			}),
+			n(-38,  {	-- Professions
+				prof(356, {	-- Fishing
+					i(174456, {	-- Bottle of Gloop (pet)
+						["description"] = "Must be fishing in water currently affected by a N'Zoth assault.",
+					}),
 				}),
 			}),
 			n(-17,  {	-- Quests
@@ -602,6 +617,14 @@ _.ExpansionFeatures =
 					["isDaily"] = true,
 					["provider"] = { "n", 154677 },	-- Forgemaster Han
 					["sourceQuest"] = 56771,	-- Time-Lost Warriors
+				}),
+				q(58096, {	-- Supplies from the Rajani
+					["repeatable"] = true,
+					["g"] = {
+						i(174483, {	-- Rajani Supplies
+							i(174479),	-- Jade Defender (pet)
+						}),
+					},
 				}),
 				q(56541, {	-- The Engine of Nalak'sha
 					["coord"] = { 45.3, 74.3, 1530 },
