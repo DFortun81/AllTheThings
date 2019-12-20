@@ -186,7 +186,9 @@ _.Achievements =
 					ach(14051),		-- Mythic: Ra-den the Despoiled
 					ach(14052),		-- Mythic: Il'gynoth, Corruption Reborn
 					ach(14054),		-- Mythic: Carapace of N'Zoth
-					ach(14055),		-- Mythic: N'Zoth, the Corruptor
+					ach(14055, {	-- Mythic: N'Zoth, the Corruptor
+						title(417),	-- , the Uncorrupted
+					}),
 					ach(14019),		-- Smoke Test
 					ach(14008),		-- Mana Sponge
 					ach(14037),		-- Phase 3: Prophet
@@ -198,8 +200,27 @@ _.Achievements =
 					ach(13999),		-- How? Isn't it Obelisk?
 					ach(14038),		-- Bloody Mess
 					ach(14147),		-- Cleansing Treatment
-					ach(14148),		-- Peer Pressure
-					
+					ach(14148),		-- It's Not a Cult
+					ach(14193, {	-- Vision of Destiny
+						crit(1),	-- Wrathion, the Black Empire
+						crit(2),	-- Maut
+						crit(3),	-- The Prophet Skitra
+					}),
+					ach(14194, {	-- Halls of Devotion
+						crit(1),	-- Dark Inquisitor Xanesh
+						crit(2),	-- Vexiona
+						crit(3),	-- The Hivemind
+						crit(4),	-- Ra-Den the Despoiled
+					}),
+					ach(14195, {	-- Gift of Flesh
+						crit(1),	-- Shad'har the Insatiable
+						crit(2),	-- Drest'agath
+						crit(3),	-- Il'gynoth, Corruption Reborn
+					}),
+					ach(14196, {	-- The Waking Dream
+						crit(1),	-- Carapace of N'Zoth
+						crit(2),	-- N'Zoth the Corruptor
+					}),
 				},
 			}),
 		},

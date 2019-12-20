@@ -416,7 +416,7 @@ _.Achievements =
 						crit(9),	-- How? Isn't it Obelisk?
 						crit(10),	-- Bloody Mess
 						crit(11),	-- Cleansing Treatment
-						crit(12),	-- Peer Pressure
+						crit(12),	-- It's Not a Cult
 					}),
 					ach(8454, {		-- Glory of the Orgrimmar Raider
 						i(104208),		-- Reins of Galakras
