@@ -11,35 +11,52 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		},
 		["groups"] = {
 			n(-17, {	-- Quests
-				a(q(13094,{ 	-- Have They No Shame?
-					i(43182), 	-- Cured Mammoth Hide Mantle
-					i(43181),	-- Shoulders of the Northern Lights
-					i(43184), 	-- Tundra Pauldrons
-					i(43183), 	-- Tundra Tracker's Shoulderguards
-				})),
-				h(q(13095,{ 	-- Have They No Shame?
-					i(43182), 	-- Cured Mammoth Hide Mantle
-					i(43181),	-- Shoulders of the Northern Lights
-					i(43184), 	-- Tundra Pauldrons
-					i(43183), 	-- Tundra Tracker's Shoulderguards
-				})),
+				q(13094,{ 	-- Have They No Shame?
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 55537 },	-- Image of Warmage Kaitlyn
+					["g"] = {
+						i(43182), 	-- Cured Mammoth Hide Mantle
+						i(43181),	-- Shoulders of the Northern Lights
+						i(43184), 	-- Tundra Pauldrons
+						i(43183), 	-- Tundra Tracker's Shoulderguards
+					},
+				}),
+				q(13095,{ 	-- Have They No Shame?
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 55537 },	-- Image of Warmage Kaitlyn
+					["g"] = {
+						i(43182), 	-- Cured Mammoth Hide Mantle
+						i(43181),	-- Shoulders of the Northern Lights
+						i(43184), 	-- Tundra Pauldrons
+						i(43183), 	-- Tundra Tracker's Shoulderguards
+					},
+				}),
 				q(11905,{ 	-- Postponing the Inevitable
-					i(42763), 	-- Bindings of Sabotage
-					i(42765),	-- Gauntlets of the Disturbed Giant
-					i(42761), 	-- Time-Stop Gloves
-					i(42758), 	-- Time-Twisted Wraps
+					["provider"] = { "n", 55535 },	-- Image of Warmage Kaitlyn
+					["g"] = {
+						i(42763), 	-- Bindings of Sabotage
+						i(42765),	-- Gauntlets of the Disturbed Giant
+						i(42761), 	-- Time-Stop Gloves
+						i(42758), 	-- Time-Twisted Wraps
+					},
 				}),
 				q(11973,{ 	-- Prisoner of War
-					i(38223), 	-- Cloak of Azure Lights
-					i(38222),	-- Mantle of Keristrasza
-					i(38221), 	-- Shroud of Fluid Strikes
+					["provider"] = { "n", 55531 },	-- Warmage Kaitlyn
+					["g"] = {
+						i(38223), 	-- Cloak of Azure Lights
+						i(38222),	-- Mantle of Keristrasza
+						i(38221), 	-- Shroud of Fluid Strikes
+					},
 				}),
 				q(11911,{ 	-- Quickening
-					i(42768), 	-- Boots of the Unbowed Protector
-					i(42767),	-- Invigorating Sabatons
-					i(42760), 	-- Sandals of Mystical Evolution
-					i(42766), 	-- Spiked Treads of Mutation
-					i(42762), 	-- Treads of Torn Future
+					["provider"] = { "n", 11911 },	-- Image of Warmage Kaitlyn
+					["g"] = {
+						i(42768), 	-- Boots of the Unbowed Protector
+						i(42767),	-- Invigorating Sabatons
+						i(42760), 	-- Sandals of Mystical Evolution
+						i(42766), 	-- Spiked Treads of Mutation
+						i(42762), 	-- Treads of Torn Future
+					},
 				}),
 			}),
 			d(1, {	-- Normal
