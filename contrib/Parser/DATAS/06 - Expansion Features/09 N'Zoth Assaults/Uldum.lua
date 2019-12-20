@@ -15,9 +15,70 @@ _.ExpansionFeatures =
 		["g"] = {
 			n(-10072, {	-- N'Zoth Assaults
 				n(-10075, {	-- Assault: Amathet Advance
-					n(-17, {	-- Quests
+					n(-17,  {	-- Quests
+						q(58287, {	-- A Smashing Plan
+							["lvl"] = 120,
+							["coord"] = { 54.8, 32.9, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 155096 },	-- High Commander Kamses
+							["g"] = {
+								currency(1755),	-- Coalescing Visions
+							},
+						}),
+						q(58281, {	-- Ancient Armaments
+							["lvl"] = 120,
+							["coord"] = { 54.8, 32.9, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 155096 },	-- High Commander Kamses
+							["g"] = {
+								currency(1755),	-- Coalescing Visions
+							},
+						}),
+						q(58290, {	-- Champions of the Amathet
+							["lvl"] = 120,
+							["coord"] = { 54.8, 32.9, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 155096 },	-- High Commander Kamses
+							["g"] = {
+								currency(1755),	-- Coalescing Visions
+							},
+						}),
+						q(58291, {	-- Encroaching Poachers
+							["lvl"] = 120,
+							["coord"] = { 54.6, 34.0, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 160957 },	-- Arianna Swiftsand
+							["sourceQuest"] = 56472,	-- The Uldum Accord
+						}),
+						q(58289, {	-- Guarded Secrets
+							["lvl"] = 120,
+							["coord"] = { 54.9, 32.9, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+							["g"] = {
+								currency(1755),	-- Coalescing Visions
+							},
+						}),
+						q(58288, {	-- The Sun King's Chosen
+							["lvl"] = 120,
+							["coord"] = { 54.8, 32.9, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 155096 },	-- High Commander Kamses
+							["g"] = {
+								currency(1755),	-- Coalescing Visions
+							},
+						}),
+						q(58321, {	-- Uncommon Core
+							["lvl"] = 120,
+							["coord"] = { 54.9, 32.7, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 155095 },	-- King Phaoris
+							["g"] = {
+								currency(1755),	-- Coalescing Visions
+							},
+						}),
 					}),
-					n(-16, {	-- Rares
+					n(-16,  {	-- Rares
 						n(157170, {	-- Acolyte Taspu
 							["questID"] = 57281,
 							["coord"] = { 64.5, 25.6, 1527 },
@@ -147,44 +208,7 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
-					n(-212, {	-- Treasures
-						-- TODO:: confirm if the amathet reliquaries are one-time chests or repeatable
-						o(10000000, {	-- Amathet Reliquary -- available when Assault: Amathet Advance is up
-							--["questID"] = ,
-							["coord"] = { 66.9, 24.1, 1527 },
-						}),
-						o(10000001, {	-- Amathet Reliquary -- available when Assault: Amathet Advance is up
-							--["questID"] = ,
-							["coord"] = { 83.1, 60.3, 1527 },
-						}),
-						-- TODO:: the amathet cache appear to be randomly placed and repeatable. need to confirm this before moving questIDs to trackers file
-						o(11000000, {	-- Amathet Cache
-							["questID"] = 55700,
-							["coord"] = { 68.9, 32.3, 1527 },
-							["collectible"] = false,
-						}),
-						o(11000001, {	-- Amathet Cache
-							["questID"] = 55691,
-							["coord"] = { 75.6, 53.7, 1527 },
-							["collectible"] = false,
-						}),
-						o(11000002, {	-- Amathet Cache
-							["questID"] = 55690,
-							["coord"] = { 78.3, 62.1, 1527 },
-							["collectible"] = false,
-						}),
-						o(11000003, {	-- Amathet Cache
-							["questID"] = 55689,
-							["coord"] = { 84.8, 61.9, 1527 },
-							["collectible"] = false,
-						}),
-						o(11000004, {	-- Amathet Cache
-							["questID"] = 55698,
-							["coord"] = { 77.3, 49.3, 1527 },
-							["collectible"] = false,
-						}),
-					}),
-					n(-34, {	-- World Quests
+					n(-34,  {	-- World Quests
 						q(55670, {	-- Amathet Raiding Fleet
 							["lvl"] = 120,
 							["coord"] = { 84.2, 55.6, 1527 },
@@ -374,35 +398,6 @@ _.ExpansionFeatures =
 								i(169303),	-- Hell-Bent Bracers
 							},
 						}),
-					}),
-					n(-212, {	-- Treasures
-						--[[
-						o(, {	-- Black Empire Cache -- most are random, but this one seems to be consistent
-							["questID"] = 57623,
-							["coord"] = { 58.4, 15.4, 1527 },
-						}),
-						o(, {	-- Black Empire Cache -- most are random, but this one seems to be consistent
-							["questID"] = 57624,
-							["coord"] = { 50.8, 31.4, 1527 },
-						}),
-						o(, {	-- Black Empire Cache
-							["coords"] = {
-								{ 55.6, 83.5, 1527 },	-- questID 57635
-								{ 55.4, 78.6, 1527 },	-- questID 57635
-								{ 62.6, 81.9, 1527 },	-- questID 57626
-								{ 63.0, 76.1, 1527 },	-- questID 57626
-								{ 59.8, 66.1, 1527 },	-- questID 57627
-								{ 61.0, 70.0, 1527 },	-- questID 57627
-							},
-							["g"] = {
-								currency(1755),	-- Coalescing Visions
-							},
-						}),
-						
-						o(, {	-- Black Empire Coffer (requires Cursed Relic). Don't know if this is a static position
-							["coord"] = { 71.6, 73.3, 1527 },
-						}),
-						]]--
 					}),
 					n(-34, {	-- World Quests
 						--[[
@@ -610,15 +605,6 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 161031 },	-- Captain Hadan
 					["sourceQuest"] = 58643,	-- Mutually Assured Destruction
 				}),
-				q(58281, {	-- Ancient Armaments -- assault: amathet advance
-					["lvl"] = 120,
-					["coord"] = { 54.8, 32.9, 1527 },
-					["isDaily"] = true,
-					["provider"] = { "n", 155096 },	-- High Commander Kamses
-					["g"] = {
-						currency(1755),	-- Coalescing Visions
-					},
-				}),
 				q(58283, {	-- Blind Leading the Blind
 					["lvl"] = 120,
 					["coord"] = { 54.6, 32.8, 1527 },
@@ -645,13 +631,6 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 155096 },	-- High Commander Kamses
 					["sourceQuest"] = 56472,	-- The Uldum Accord
 				}),
-				q(58291, {	-- Encroaching Poachers -- assault: amathet advance
-					["lvl"] = 120,
-					["coord"] = { 54.6, 34.0, 1527 },
-					["isDaily"] = true,
-					["provider"] = { "n", 160957 },	-- Arianna Swiftsand
-					["sourceQuest"] = 56472,	-- The Uldum Accord
-				}),
 				q(58636, {	-- Eyes on the Amathet
 					["lvl"] = 120,
 					["coord"] = { 54.9, 32.9, 1527 },
@@ -666,15 +645,6 @@ _.ExpansionFeatures =
 					["sourceQuest"] = 56376,	-- Surfacing Threats
 					["g"] = {
 						i(173280),	-- Token of Death's Door (Rank 1)
-					},
-				}),
-				q(58289, {	-- Guarded Secrets -- assault: amathet advance
-					["lvl"] = 120,
-					["coord"] = { 54.9, 32.9, 1527 },
-					["isDaily"] = true,
-					["provider"] = { "n", 155102 },	-- High Explorer Dellorah
-					["g"] = {
-						currency(1755),	-- Coalescing Visions
 					},
 				}),
 				q(57222, {	-- Investigating the Halls
@@ -721,15 +691,6 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 154532 },	-- Magni Bronzebeard
 					["sourceQuest"] = 56374,	-- A Titanic Problem
 				}),
-				q(58288, {	-- The Sun King's Chosen -- assault: amathet advance
-					["lvl"] = 120,
-					["coord"] = { 54.8, 32.9, 1527 },
-					["isDaily"] = true,
-					["provider"] = { "n", 155096 },	-- High Commander Kamses
-					["g"] = {
-						currency(1755),	-- Coalescing Visions
-					},
-				}),
 				q(56472, {	-- The Uldum Accord
 					["lvl"] = 120,
 					["coord"] = { 54.9, 32.7, 1527 },
@@ -742,15 +703,6 @@ _.ExpansionFeatures =
 					["coord"] = { 47.0, 44.6, 1542 },
 					["provider"] = { "n", 154533 },	-- Magni Bronzebeard
 					["sourceQuest"] = 56209,	-- The Halls of Origination
-				}),
-				q(58321, {	-- Uncommon Core -- assault: amathet advance
-					["lvl"] = 120,
-					["coord"] = { 54.9, 32.7, 1527 },
-					["isDaily"] = true,
-					["provider"] = { "n", 155095 },	-- King Phaoris
-					["g"] = {
-						currency(1755),	-- Coalescing Visions
-					},
 				}),
 				q(58285, {	-- Unearthed Artifacts
 					["lvl"] = 120,

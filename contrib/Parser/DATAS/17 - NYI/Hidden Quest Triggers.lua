@@ -1819,6 +1819,17 @@ _.NeverImplemented =
 						Possibly related to Mark of Boistrous Duty (Rank 1) dropping? Torn Page of Compendium, Vol. 1 (item 171353) as well? Need to run a few times to see if this is guaranteed or not
 		]]--
 		-- N'Zoth assaults
+		q(55689),	-- Uldum - Amathet cache
+		q(55690),	-- Uldum - Amathet cache
+		q(55691),	-- Uldum - Amathet cache
+		q(55692),	-- Uldum - Amathet Reliquary (requires tol'vir relic to open)
+		q(55698),	-- Uldum - Amathet cache
+		q(55700),	-- Uldum - Amathet cache
+		q(57623),	-- Uldum - Black Empire Cache
+		q(57624),	-- Uldum - Black Empire Cache
+		q(57635),	-- Uldum - Black Empire Cache
+		q(57626),	-- Uldum - Black Empire Cache
+		q(57627),	-- Uldum - Black Empire Cache
 		q(57201),	-- Vale of Eternal Blossoms - Black Empire Cache
 		q(57200),	-- Vale of Eternal Blossoms - Black Empire Cache
 		q(57203),	-- Vale of Eternal Blossoms - Black Empire Cache
