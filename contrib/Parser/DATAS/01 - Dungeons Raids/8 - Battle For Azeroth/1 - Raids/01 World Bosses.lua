@@ -297,6 +297,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["isWeekly"] = true,
 				["isRaid"] = true,
 				["cr"] = 160970,
+				["coord"] = { 45.7, 16.1, 1527 },
 				["g"] = {
 					i(174258),	-- Greathelm of Indiscriminate Brutality
 					i(174250),	-- Psyche Tormentor's Visage
