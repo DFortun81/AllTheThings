@@ -107,23 +107,27 @@ _.NeverImplemented =
 		i(159159),	--  Ashvane Company Gauntlets
 		i(159160),	--  Ashvane Company Girdle
 		
-		ach(14116),	-- All Bridges Burned
-		ach(14121),	-- Daring Defender
-		ach(14113),	-- Imagine a Dark, Dark World
-		ach(14122),	-- Long Trek Through Darkness
-		ach(14088),	-- Orgrimmar - Pained
-		ach(14090),	-- Orgrimmar - Dark Imagination
-		ach(14092),	-- Orgrimmar - Burned Bridge
-		ach(14099),	-- Orgrimmar - Daredevil
-		ach(14100),	-- Orgrimmar - Long Night
-		ach(14106),	-- Pained Expression
-		ach(14083),	-- Stormwind - Pained
-		ach(14084),	-- Stormwind - Dark Imagination
-		ach(14085),	-- Stormwind - Burned Bridge
-		ach(14086),	-- Stormwind - Daredevil
-		ach(14087),	-- Stormwind - Long Night
-		ach(13996),	-- The Dark Horde
-		ach(13995),	-- Twilight over the White City
+		-- patch 8.3 removed content
+		un(1, i(173421)),	-- Black Empire Signet
+		un(1, i(173426)),	-- Black Empire trinkets
+		
+		un(1, ach(14116)),	-- All Bridges Burned
+		un(1, ach(14121)),	-- Daring Defender
+		un(1, ach(14113)),	-- Imagine a Dark, Dark World
+		un(1, ach(14122)),	-- Long Trek Through Darkness
+		un(1, ach(14088)),	-- Orgrimmar - Pained
+		un(1, ach(14090)),	-- Orgrimmar - Dark Imagination
+		un(1, ach(14092)),	-- Orgrimmar - Burned Bridge
+		un(1, ach(14099)),	-- Orgrimmar - Daredevil
+		un(1, ach(14100)),	-- Orgrimmar - Long Night
+		un(1, ach(14106)),	-- Pained Expression
+		un(1, ach(14083)),	-- Stormwind - Pained
+		un(1, ach(14084)),	-- Stormwind - Dark Imagination
+		un(1, ach(14085)),	-- Stormwind - Burned Bridge
+		un(1, ach(14086)),	-- Stormwind - Daredevil
+		un(1, ach(14087)),	-- Stormwind - Long Night
+		un(1, ach(13996)),	-- The Dark Horde
+		un(1, ach(13995)),	-- Twilight over the White City
 	}),
 	n(-220, {	-- Class
 		cl(12, {	-- DH

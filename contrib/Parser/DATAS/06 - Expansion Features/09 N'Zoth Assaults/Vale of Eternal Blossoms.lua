@@ -77,9 +77,6 @@ _.ExpansionFeatures =
 							["questID"] = 56302,
 							["coord"] = { 64.2, 51.8, 1530 },
 							["isDaily"] = true,
-							["g"] = {
-								i(173402),	-- Black Empire Mail Gloves -- TODO:: move these to a different section since they can drop from all rares
-							},
 						}),
 						n(157176, {	-- The Forgotten
 							["questID"] = 57342,
@@ -95,9 +92,6 @@ _.ExpansionFeatures =
 							["questID"] = 56183,
 							["coord"] = { 66.7, 28.1, 1530 },
 							["isDaily"] = true,
-							["g"] = {
-								i(173408),	-- Black Empire Leather Boots -- TODO:: move these to a different section since they can drop from any rare
-							},
 						}),
 						n(154495, {	-- Will of N'Zoth
 							["questID"] = 56303,
@@ -119,16 +113,6 @@ _.ExpansionFeatures =
 							["isDaily"] = true,
 						}),
 					}),
-					n(-212, {	-- Treasures
-						-- TODO:: determine if the black empire coffers are one-time unlocks or have a reset period
-						-- requires a "Cursed Relic". Where do we get it?
-						--[[
-						o(, {	-- Black Empire Coffer
-							--["questID"] = ,
-							["coord"] = { 68.7, 28.1, 1530 },
-						}),
-						]]--
-					}),
 					n(-34,  {	-- World Quests
 						-- TODO:: putting coords here temporarily. The current PTR build doesn't have map indicators
 						q(56076, {	-- Abyssal Ritual
@@ -140,9 +124,7 @@ _.ExpansionFeatures =
 							["lvl"] = 120,
 							["isWorldQuest"] = true,
 							["g"] = {
-								i(173372, {	-- Cache of the Black Empire -- TODO:: determine what comes from this and add it to one place
-									i(173510),	-- Malignant Leviathan's Handguards
-								}),
+								i(173372),	-- Cache of the Black Empire
 							},
 						}),
 						q(56163, {	-- Bound Guardian
@@ -245,12 +227,6 @@ _.ExpansionFeatures =
 							["questID"] = 57349,
 							["coord"] = { 39.2, 59.6, 1530 },
 							["isDaily"] = true,
-							["g"] = {
-								i(173421, {	-- Black Empire Signet
-									i(174086),	-- Ring -- TODO: update item names
-									i(173860),	-- Ring
-								}),
-							},
 						}),
 						--[[
 						n(156041, {	-- Empty Golem -- TODO:: determine activation criteria
@@ -294,27 +270,16 @@ _.ExpansionFeatures =
 							["questID"] = 57350,
 							["coord"] = { 26.7, 10.7, 1530 },
 							["isDaily"] = true,
-							["g"] = {
-								i(173420),	-- Black Empire Cloth Belt
-							},
 						}),
 						n(157162, {	-- Rei Lun
 							["questID"] = 57346,
 							["coord"] = { 21.9, 12.4, 1530 },
 							["isDaily"] = true,
-							["g"] = {
-								i(173409),	-- Black Empire Leather Gloves -- TODO:: there must be a whole set of new catch-up gear
-							},
 						}),
 						n(156083, {	-- Sanguifang
 							["questID"] = 56954,
 							["coord"] = { 46.4, 57.2, 1530 },
 							["isDaily"] = true,
-							["g"] = {	-- Black Empire Plate Chestpiece
-								i(173393, {	-- TODO: maybe move to Item Sets and reference via symlink?
-									i(173454),	-- Plate Chestplate -- TODO:: this must be a temporary name.
-								}),
-							},
 						}),
 						n(157291, {	-- Spymaster Hul'ach
 							["questID"] = 57351,
@@ -334,9 +299,6 @@ _.ExpansionFeatures =
 							["questID"] = 56332,
 							["coord"] = { 47.5, 63.7, 1530 },
 							["isDaily"] = true,
-							["g"] = {
-								i(173421),	-- Black Empire Signet
-							},
 						}),
 						n(157443, {	-- Xiln the Mountain
 							["questID"] = 57358,
@@ -345,26 +307,12 @@ _.ExpansionFeatures =
 							["isDaily"] = true,
 						}),
 					}),
-					n(-212, {	-- Treasures
-					--[[
-					-- all treasure rewards appear to be placeholders for now
-					o(, {	-- Mogu Spoils
-						["coords"] = {
-							{ 24.4, 2.8, 1530 },	questID 57214
-						},
-					}),
-					]]--
-					}),
 					n(-34,  {	-- World Quests
 						q(57008, {	-- Assault: The Warring Clans
 							["lvl"] = 120,
 							["isWorldQuest"] = true,
 							["g"] = {
-								i(173372, {	-- Cache of the Black Empire
-									currency(1755),	-- Coalescing Visions
-									i(173178),	-- Corrupted Greaves -- TODO:: almost certainly a full ilvl 415 set for all armor types. Same ones sold by blacktalon guards for visions?
-									i(173510),	-- Malignant Leviathan's Handguards
-								}),
+								i(173372),	-- Cache of the Black Empire
 							},
 						}),
 						q(58367, {	-- Baruk Demolisher

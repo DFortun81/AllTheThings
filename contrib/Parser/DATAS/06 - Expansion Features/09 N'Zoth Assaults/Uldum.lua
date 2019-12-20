@@ -83,9 +83,6 @@ _.ExpansionFeatures =
 							["questID"] = 57281,
 							["coord"] = { 64.5, 25.6, 1527 },
 							["isDaily"] = true,
-							["g"] = {
-								i(173402),	-- Black Empire Mail Gloves
-							},
 						}),
 						n(151883, {	-- Anaua
 							["questID"] = 55468,
@@ -176,9 +173,6 @@ _.ExpansionFeatures =
 							["questID"] = 55353,
 							["coord"] = { 73.3, 74.4, 1527 },
 							["isDaily"] = true,
-							["g"] = {
-								i(173421),	-- Black Empire Signet -- todo: move these elsewhere. they seemingly drop from all rares
-							},
 						}),
 						n(152657, {	-- Tat the Bonechewer
 							["questID"] = 55682,
@@ -412,12 +406,7 @@ _.ExpansionFeatures =
 							["isWorldQuest"] = true,
 							-- refreshing after the boss fight in Uldum triggered 57736 (weekly/daily id?)
 							["g"] = {
-								i(173372, {	-- Cache of the Black Empire
-									currency(1755),	-- Coalescing Visions
-									i(173178),	-- Corrupted Greaves -- TODO:: almost certainly a full ilvl 415 set for all armor types. Same ones sold by blacktalon guards for visions?
-									i(173459),	-- Malignant Leviathan's Wargreaves
-									i(173456),	-- Plate Crushers -- probably scales just like world quest loot
-								}),
+								i(173372),	-- Cache of the Black Empire
 							},
 						}),
 						q(58257, {	-- Consuming Maw

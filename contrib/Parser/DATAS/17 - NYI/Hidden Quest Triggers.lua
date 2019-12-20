@@ -1843,6 +1843,7 @@ _.NeverImplemented =
 		q(57211),	-- Vale of Eternal Blossoms - Mogu Plunder
 		q(57212),	-- Vale of Eternal Blossoms - Mogu Plunder
 		q(57213),	-- Vale of Eternal Blossoms - Mogu Plunder
+		q(57214),	-- Vale of Eternal Blossoms - Mogu Spoils
 		q(58224),	-- Vale of Eternal Blossoms - Ambered Cache
 		q(58225),	-- Vale of Eternal Blossoms - Ambered Cache
 		q(58226),	-- Vale of Eternal Blossoms - Ambered Cache
