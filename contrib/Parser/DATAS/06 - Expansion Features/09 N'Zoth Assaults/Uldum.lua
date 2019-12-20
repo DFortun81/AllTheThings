@@ -510,6 +510,15 @@ _.ExpansionFeatures =
 					--["questID"] = ,
 					["coord"] = { 55.0, 53.0, 1527 },
 					["isDaily"] = true,
+					["g"] = {
+						-- TODO: verify which eye drops from which rare, or if both can drop from the same mob
+						i(175141, {	-- All-Seeing Left Eye
+							i(175140),	-- All-Seeing Eyes (toy)
+						}),
+						i(175142, {	-- All-Seeing Right Eye
+							i(175140),	-- All-Seeing Eyes (toy)
+						}),
+					},
 				}),
 				n(156002, {	-- Harbinger Raloam
 					--["questID"] = ,
@@ -721,6 +730,12 @@ _.ExpansionFeatures =
 				n(160714, {	-- Provisioner Qorra
 					["coord"] = { 55.1, 32.9, 1527 },
 					["g"] = {
+						i(174995, {	-- Void Tendril Pet Leash
+							["cost"] = {
+								{ "i", 163036, 20 },	-- Polished Pet Charm
+								{ "c", 1719, 100 },		-- 100x Corrupted Memento
+							},
+						}),
 						i(172011, {	-- Recipe: Contract: Uldum Accord
 							["cost"] = 12600000,	-- 1,260 gold
 						}),
@@ -731,7 +746,7 @@ _.ExpansionFeatures =
 							["cost"] = 2280000,	-- 228g
 						}),
 						i(174754, {	-- Wastewander Skyterror
-							["cost"] = 216000000,	-- 22,800g
+							["cost"] = 228000000,	-- 22,800g
 						}),
 						i(173282, {	-- Token of Death's Glee (Rank 3)
 							["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento

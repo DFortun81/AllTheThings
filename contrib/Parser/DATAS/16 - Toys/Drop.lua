@@ -6,6 +6,7 @@ _.Toys =
 	n(-26, { 	-- Drop
 		i(127670),		-- Accursed Tome of the Sargerei
 		i(86589),		-- Ai-Li's Skymirror
+		i(175140),		-- All-Seeing Eyes
 		i(153204),  	-- All-Seer's Eye
 		i(141296), 		-- Ancient Mana Basin
 		i(113570), 		-- Ancient's Bloom

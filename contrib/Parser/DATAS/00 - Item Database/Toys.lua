@@ -655,6 +655,8 @@ t(172179);	-- Eternal Traveler's Hearthstone
 -----------------
 -- PATCH 8.3.0 --
 -----------------
+t(175140);	-- All-Seeing Eyes
+t(175063);	-- Aqir Egg Cluster -- TODO: obtained during the Shadowbarb Drone mount chain. Add this toy when adding the mount info
 t(174874);	-- Budget K'thir Disguise
 t(174920);	-- Coifcurl's Close Shave Kit
 t(169303);	-- Hell-Bent Bracers
@@ -665,5 +667,6 @@ t(174926);	-- Overly Sensitive Void Spectacles
 t(174928);	-- Rotten Apple
 t(174830);	-- Shadowy Disguise
 t(174873);	-- Trans-mogu-rifier
+t(174995);	-- Void Tendril Pet Leash
 t(174921);	-- Void-Touched Skull
 t(174924);	-- Void-Touched Souvenir Totem

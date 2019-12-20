@@ -103,6 +103,15 @@ _.ExpansionFeatures =
 							["questID"] = 56303,
 							["coord"] = { 52.9, 62.2, 1530 },
 							["isDaily"] = true,
+							["g"] = {
+								-- TODO: verify which eye drops from which rare, or if both can drop from the same mob
+								i(175141, {	-- All-Seeing Left Eye
+									i(175140),	-- All-Seeing Eyes (toy)
+								}),
+								i(175142, {	-- All-Seeing Right Eye
+									i(175140),	-- All-Seeing Eyes (toy)
+								}),
+							},
 						}),
 						n(154087, {	-- Zror'um the Infinite
 							["questID"] = 56084,

@@ -148,6 +148,7 @@ _.Toys =
 		i(64997),		-- Tol Barad Searchlight (Horde)
 		i(130191), 		-- Trapped Treasure Chest Kit
 		i(45016),		-- Undercity Banner (Horde)
+		i(174995),		-- Void Tendril Pet Leash
 		i(136937, { 	-- Vol'jin's Serpent Totem -- only Shaman
 			["classes"] = { 7 },	-- Shaman
 		}),
