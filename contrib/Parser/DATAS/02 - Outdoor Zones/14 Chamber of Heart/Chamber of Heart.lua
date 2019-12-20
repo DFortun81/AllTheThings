@@ -607,6 +607,9 @@ _.Zones =
 							["provider"] = { "n", 161805 },	-- Magni Bronzebeard
 							["sourceQuest"] = 58631,	-- Into Dreams
 						}),
+						q(58991, {	-- Curious Corruption
+							["description"] = "Automatically granted when you get your first corrupted item.",
+						}),
 						-- Void Focus quests here. Not sure where to put them right now
 						q(57275, {	-- Something in Your Mind
 							["provider"] = { "i", 171320 },

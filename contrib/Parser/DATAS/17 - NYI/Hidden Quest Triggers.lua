@@ -1790,6 +1790,7 @@ _.NeverImplemented =
 		q(58002),	-- Combining Coalescing Visions 3x
 		q(58409),	-- Combining Coalescing Visions 4x
 		q(59073),	-- Triggers when turning in "Match the Hatch" for the Shadowbarb Drone. Probably a daily trigger ID so players can't do the entire chain in one day
+		q(58994),	-- Triggers when you get your first corrupted item. It procs the "Curious Corruption" quest
 		
 		q(58085),	-- Triggered upon entering the vision to the Shrine of Seven Stars -- TODO:: verify this. didn't pop up since latest PTR build
 		
