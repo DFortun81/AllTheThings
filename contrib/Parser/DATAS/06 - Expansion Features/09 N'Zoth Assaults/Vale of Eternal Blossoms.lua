@@ -19,10 +19,28 @@ _.ExpansionFeatures =
 			n(-10072, {	-- N'Zoth Assaults
 				n(-10076, {	-- Assault: The Black Empire
 					n(-17, {	-- Quests
+						q(58468, {	-- A Growing Darkness
+							["coord"] = { 66.9, 39.8, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 161405 },	-- Taoshi
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
+						q(58471, {	-- Aggressive Notation
+							["coord"] = { 83.7, 27.1, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 156003 },	-- Lorewalker Cho
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
 						q(58470, {	-- Corrupted Curiosities
 							["coord"] = { 83.7, 27.1, 1530 },
 							["isDaily"] = true,
 							["provider"] = { "n", 156003 },	-- Lorewalker Cho
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
+						q(58465, {	-- Corruption Manifest
+							["coord"] = { 66.3, 40.6, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 161404 },	-- Taran Zhu
 							["sourceQuest"] = 56771,	-- Time-Lost Warriors
 						}),
 						q(58595, {	-- Pillars of Oblivion
@@ -184,6 +202,11 @@ _.ExpansionFeatures =
 							["coord"] = { 46.4, 57.2, 1530 },
 							["isWorldQuest"] = true,
 						}),
+						q(58439, {	-- Consuming Maw
+							["lvl"] = 120,
+							["coord"] = { 41.3, 45.4, 1530 },
+							["isWorldQuest"] = true,
+						}),
 						q(56099, {	-- Font of Corruption
 							["lvl"] = 120,
 							["coord"] = { 60.4, 67.8, 1530 },
@@ -205,28 +228,19 @@ _.ExpansionFeatures =
 							["isWorldQuest"] = true,
 						}),
 						q(56177, {	-- Void Conduit
+							-- note: looks like this questID can appear in multiple places. Possible for the other versions to do the same?
 							["lvl"] = 120,
-							["coord"] = { 56.7, 59.4, 1530 },
 							["isWorldQuest"] = true,
+							["coords"] = {
+								{ 56.7, 59.4, 1530 },
+								{ 79.3, 33.1, 1530 },
+							}
 						}),
 						q(56074, {	-- Void Conduit
 							["lvl"] = 120,
 							["coord"] = { 49.3, 66.7, 1530 },
 							["isWorldQuest"] = true,
 						}),
-						--[[
-						q(, {	-- Void Conduit
-							["lvl"] = 120,
-							["coord"] = { 79.3, 33.1, 1530 },
-							["isWorldQuest"] = true,
-						}),
-						]]--
-						--[[
-						q(, {	-- 
-							["lvl"] = 120,
-							["isWorldQuest"] = true,
-						}),
-						]]--
 					}),
 				}),
 				n(-10077, {	-- Assault: The Warring Clans

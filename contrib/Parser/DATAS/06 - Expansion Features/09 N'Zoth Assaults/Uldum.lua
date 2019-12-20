@@ -43,6 +43,13 @@ _.ExpansionFeatures =
 								currency(1755),	-- Coalescing Visions
 							},
 						}),
+						q(58282, {	-- Down From the Sky
+							["lvl"] = 120,
+							["coord"] = { 54.8, 32.9, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 155096 },	-- High Commander Kamses
+							["sourceQuest"] = 56472,	-- The Uldum Accord
+						}),
 						q(58291, {	-- Encroaching Poachers
 							["lvl"] = 120,
 							["coord"] = { 54.6, 34.0, 1527 },
@@ -76,6 +83,13 @@ _.ExpansionFeatures =
 							["g"] = {
 								currency(1755),	-- Coalescing Visions
 							},
+						}),
+						q(58285, {	-- Unearthed Artifacts
+							["lvl"] = 120,
+							["coord"] = { 54.9, 32.9, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+							["sourceQuest"] = 56472,	-- The Uldum Accord
 						}),
 					}),
 					n(-16,  {	-- Rares
@@ -224,13 +238,6 @@ _.ExpansionFeatures =
 							["lvl"] = 120,
 							["isWorldQuest"] = true,
 						}),
-						--[[
-						q(, {	-- Beacon of the Sun King
-							["lvl"] = 120,
-							["coord"] = { 83.5, 61.9, 1527 },
-							["isWorldQuest"] = true,
-						}),
-						]]--
 						q(55358, {	-- Beacon of the Sun King
 							["lvl"] = 120,
 							["coord"] = { 71.6, 45.9, 1527 },
@@ -488,7 +495,7 @@ _.ExpansionFeatures =
 					},
 				}),
 			}),
-			n(-4, {	-- Achievements
+			n(-4,     {	-- Achievements
 				ach(14159),		-- Combating the Corruption -- TODO:: update with criteria when they get added
 				ach(14161),		-- Get In My Belly!	-- TODO:: update with map-specific criteria when they get added
 				ach(14158),		-- It's Not A Tumor!
@@ -499,13 +506,13 @@ _.ExpansionFeatures =
 					crit(3),	-- Assault: The Black Empire
 				}),
 			}),
-			f(101,  {	-- Battle Pets
+			f(101,    {	-- Battle Pets
 				pet(2863, {	-- Oasis Void-Duster
 				}),
 				pet(2864, {	-- Void-Scarred Locust
 				}),
 			}),
-			n(-16, {	-- Rares
+			n(-16,    {	-- Rares
 				--[[
 				TODO::
 				This section is temporary! Determine what assault these rares exist in and add them to the appropriate header above.
@@ -577,14 +584,14 @@ _.ExpansionFeatures =
 				}),
 				-- below are almost certainly the Aqir rares
 			}),
-			n(-38,  {	-- Professions
+			n(-38,    {	-- Professions
 				prof(356, {	-- Fishing
 					i(174456, {	-- Bottle of Gloop (pet)
 						["description"] = "Must be fishing in water currently affected by a N'Zoth assault.",
 					}),
 				}),
 			}),
-			n(-17,  {	-- Quests
+			n(-17,    {	-- Quests
 				i(174771, {	-- Shadowbarb Drone
 					q(58802, {	-- The Incredible Egg
 						["coord"] = { 20.8, 61.9, 1527 },
@@ -669,13 +676,6 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 155102 },	-- High Explorer Dellorah
 					["sourceQuest"] = 58638,	-- A Deeper Dive
 				}),
-				q(58282, {	-- Down From the Sky
-					["lvl"] = 120,
-					["coord"] = { 54.8, 32.9, 1527 },
-					["isDaily"] = true,
-					["provider"] = { "n", 155096 },	-- High Commander Kamses
-					["sourceQuest"] = 56472,	-- The Uldum Accord
-				}),
 				q(58636, {	-- Eyes on the Amathet
 					["lvl"] = 120,
 					["coord"] = { 54.9, 32.9, 1527 },
@@ -757,13 +757,6 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 154533 },	-- Magni Bronzebeard
 					["sourceQuest"] = 56209,	-- The Halls of Origination
 				}),
-				q(58285, {	-- Unearthed Artifacts
-					["lvl"] = 120,
-					["coord"] = { 54.9, 32.9, 1527 },
-					["isDaily"] = true,
-					["provider"] = { "n", 155102 },	-- High Explorer Dellorah
-					["sourceQuest"] = 56472,	-- The Uldum Accord
-				}),
 				q(57874, {	-- Visions of a Dark Destiny
 					["u"] = 1,	-- removed from PTR build
 					["coord"] = { 56.6, 31.7, 1527 },
@@ -773,14 +766,14 @@ _.ExpansionFeatures =
 					},
 				}),
 			}),
-			n(-16,  {	-- Rares
+			n(-16,    {	-- Rares
 				n(162196, {	-- Obsidian Annihilator
 					-- TODO: need questID for this one
 					--["questID"] = ,
 					["coord"] = { 35.1, 17.3, 1527 },
 				}),
 			}),
-			n(-2,   {	-- Vendors
+			n(-2,     {	-- Vendors
 				n(160714, {	-- Provisioner Qorra
 					["coord"] = { 55.1, 32.9, 1527 },
 					["g"] = {
@@ -808,7 +801,7 @@ _.ExpansionFeatures =
 					},
 				}),
 			}),
-			n(-34,  {	-- World Quests
+			n(-34,    {	-- World Quests
 				q(58743, {	-- Dune Buggy
 					-- pet battle
 					["lvl"] = 120,
