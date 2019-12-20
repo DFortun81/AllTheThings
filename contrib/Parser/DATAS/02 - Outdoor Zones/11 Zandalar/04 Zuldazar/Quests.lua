@@ -112,6 +112,40 @@ _.Zones =
 								}),
 							},
 						}),
+						q(59016, { 	-- Call to Arms: Uldum
+							["provider"] = { "n", 143536 },	-- High Warlord Volrath
+							["isWeekly"] = true,
+							["coord"] = { 51.5, 58.1, 862 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 120,
+							["g"] = {
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
+								}),
+							},
+						}),
+						q(59017, { 	-- Call to Arms: Vale of Eternal Blossoms
+							["provider"] = { "n", 143536 },	-- High Warlord Volrath
+							["isWeekly"] = true,
+							["coord"] = { 51.5, 58.1, 862 },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 120,
+							["g"] = {
+								i(167744, {	-- Aspirant's Equipment Cache
+									["sym"] = {
+										{ "sub", "pvp_gear_base", -10052, -691, -660 },	-- BFA header > Season 3 header > Aspirant gear header
+										{ "pop" },	-- discard Aspirant / Combatant Gear header
+										{ "pop" },	-- discard item type headers
+										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
+									},
+								}),
+							},
+						}),
 						q(52953, { 	-- Call to Arms: Vol'dun
 							["provider"] = { "n", 143536 },	-- High Warlord Volrath
 							["isWeekly"] = true,
