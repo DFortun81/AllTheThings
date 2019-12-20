@@ -226,6 +226,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(161411),	-- T'zane's Barkspines
 				}),
 			}),
+			--[[ -- doesn't appear to be a world boss anymore. Keeping it here temporarily for more confirmation
 			e(2380, {	-- Tashara -- TODO: determine questID
 				["isWeekly"] = true,
 				--["questID"] = ,
@@ -237,6 +238,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(174873),	-- Trans-mogu-rifier (Toy)
 				},
 			}),
+			]]--
 			e(2212, {	-- The Lion's Roar [Warfront]
 				["isWeekly"] = true,
 				["questID"] = 52848,	-- The Lion's Roar (WQ)
