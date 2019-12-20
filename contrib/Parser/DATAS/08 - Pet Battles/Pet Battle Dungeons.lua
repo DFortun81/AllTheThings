@@ -66,38 +66,33 @@ _.PetBattles =
 			}),
 		},
 	}),
-	q(45539, {	-- Pet Battle Challenge: Wailing Caverns
-		["provider"] = { "n", 116781 },	-- Muyani
-		["coord"] = { 38.8, 68.2, 10 },
-		["sourceQuest"] = 45423,	-- Wailing Critters
+	--[[
+	q(, {	-- Pet Battle Challenge: Blackrock Depths
+		--["coord"] = { },
 		["isWeekly"] = true,
-		["lvl"] = 110,
-		["maps"] = {
-			10,		-- Northern Barrens
-			825,	-- Pet Dungeon
-		},
+		--["provider"] = { "n",  },	-- 
+		--["maps"] = { },
 		["g"] = {
-			ach(11765, {	-- Pet Battle Challenge: Wailing Caverns
-				i(147543),	-- Son of Skum
+			ach(14020, {	-- Pet Battle Challenge: Blackrock Depths
+				i(174830),	-- Shadowy Disguise
 			}),
-			i(143753, {	-- Damp Pet Supplies
-				i(143754), 	-- Cavern Moccasin
-				i(143755),	-- Young Venomfang
-				i(143756),	-- Everliving Spore
-			}),	-- Note: There is no data on drops from this. Got this information from comments on Wowhead and other fan sites.
-			q(45423, {	-- Wailing Critters
-				["provider"] = { "n", 116781 },	-- Muyani
-				["coord"] = { 38.8, 68.2, 10 },
-				["maps"] = {
-					10,		-- Northern Barrens
-					825,	-- Pet Dungeon
-				},
+			n(161782, {	-- Burt Macklyn
+				["coord"] = { 33.1, 23.1, 35 },
 				["g"] = {
-					i(122457),	-- Ultimate Battle-Training Stone
+					i(174829, {	-- Tinyclaw
+						["cost"] = { { "i", 174360, 2 }, },	-- 2x Shadowy Gem
+					}),
+					i(174828, {	-- Experiment 13
+						["cost"] = { { "i", 174360, 1 }, },	-- 1x Shadowy Gem
+					}),
+					i(174827, {	-- Wailing Lasher
+						["cost"] = { { "i", 174360, 1 }, },	-- 1x Shadowy Gem
+					}),
 				},
 			}),
 		},
 	}),
+	]]--
 	q(46292, {	-- Pet Battle Challenge: Deadmines
 		["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
 		["coord"] = { 41.6, 71.2, 52 },
@@ -240,6 +235,38 @@ _.PetBattles =
 					i(169679, {	-- Smelly Cleaver (Gruesome Belcher)
 						["cost"] = { { "i", 169665, 3 } },	-- 3x Cleansed Remains
 					}),
+				},
+			}),
+		},
+	}),
+	q(45539, {	-- Pet Battle Challenge: Wailing Caverns
+		["provider"] = { "n", 116781 },	-- Muyani
+		["coord"] = { 38.8, 68.2, 10 },
+		["sourceQuest"] = 45423,	-- Wailing Critters
+		["isWeekly"] = true,
+		["lvl"] = 110,
+		["maps"] = {
+			10,		-- Northern Barrens
+			825,	-- Pet Dungeon
+		},
+		["g"] = {
+			ach(11765, {	-- Pet Battle Challenge: Wailing Caverns
+				i(147543),	-- Son of Skum
+			}),
+			i(143753, {	-- Damp Pet Supplies
+				i(143754), 	-- Cavern Moccasin
+				i(143755),	-- Young Venomfang
+				i(143756),	-- Everliving Spore
+			}),	-- Note: There is no data on drops from this. Got this information from comments on Wowhead and other fan sites.
+			q(45423, {	-- Wailing Critters
+				["provider"] = { "n", 116781 },	-- Muyani
+				["coord"] = { 38.8, 68.2, 10 },
+				["maps"] = {
+					10,		-- Northern Barrens
+					825,	-- Pet Dungeon
+				},
+				["g"] = {
+					i(122457),	-- Ultimate Battle-Training Stone
 				},
 			}),
 		},
