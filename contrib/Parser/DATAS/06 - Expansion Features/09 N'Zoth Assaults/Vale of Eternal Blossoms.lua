@@ -25,6 +25,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 161405 },	-- Taoshi
 							["sourceQuest"] = 56771,	-- Time-Lost Warriors
 						}),
+						q(58155, {	-- A Hand in the Dark
+							["coord"] = { 84.2, 51.7, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 160252 },
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
 						q(58471, {	-- Aggressive Notation
 							["coord"] = { 83.7, 27.1, 1530 },
 							["isDaily"] = true,
