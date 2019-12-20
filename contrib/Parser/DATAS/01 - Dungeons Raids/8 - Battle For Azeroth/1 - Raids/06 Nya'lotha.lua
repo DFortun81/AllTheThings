@@ -578,6 +578,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						ach(14068, {	-- Ahead of the Curve: N'Zoth, the Corruptor
 							q(58876, {	-- Lost Flight
 								["provider"] = { "i", 174863 },	-- Spawn of Vexiona
+								["g"] = {
+									i(174862),	-- Uncorrupted Voidwing
+								},
 							}),
 						}),
 						ach(14148),	-- Peer Pressure
@@ -790,6 +793,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						ach(14068, {	-- Ahead of the Curve: N'Zoth, the Corruptor
 							q(58876, {	-- Lost Flight
 								["provider"] = { "i", 174863 },	-- Spawn of Vexiona
+								["g"] = {
+									i(174862),	-- Uncorrupted Voidwing
+								},
 							}),
 						}),
 						ach(14069),	-- Cutting Edge: N'Zoth, the Corruptor
