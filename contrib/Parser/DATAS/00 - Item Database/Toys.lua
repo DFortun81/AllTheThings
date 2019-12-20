@@ -656,7 +656,7 @@ t(172179);	-- Eternal Traveler's Hearthstone
 -- PATCH 8.3.0 --
 -----------------
 t(175140);	-- All-Seeing Eyes
-t(175063);	-- Aqir Egg Cluster -- TODO: obtained during the Shadowbarb Drone mount chain. Add this toy when adding the mount info
+t(175063);	-- Aqir Egg Cluster
 t(174874);	-- Budget K'thir Disguise
 t(174920);	-- Coifcurl's Close Shave Kit
 t(169303);	-- Hell-Bent Bracers

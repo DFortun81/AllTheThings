@@ -547,6 +547,48 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-17,  {	-- Quests
+				i(174771, {	-- Shadowbarb Drone
+					q(58802, {	-- The Incredible Egg
+						["coord"] = { 20.8, 61.9, 1527 },
+						["provider"] = { "o", 343611 },	-- Voidtouched Egg
+					}),
+					q(58803, {	-- Match the Hatch
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58802,	-- The Incredible Egg
+					}),
+					q(58804, {	-- Void Incubation
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58803,	-- Match the Hatch
+					}),
+					q(58806, {	-- Warmth of the Sun
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58804,	-- Void Incubation
+					}),
+					q(58805, {	-- Continued Incubation
+						["coord"] = { 55.6, 35.3, 1527 },
+						["isDaily"] = true,
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58806,	-- Warmth of the Sun
+					}),
+					q(58808, {	-- Encased in Amber
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58805,	-- Continued Incubation
+						["description"] = "Must complete 2x |cFFFFD700Continued Incubation|r daily quests.",
+					}),
+					q(58810, {	-- Coming Out of His Shell
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58805,	-- Continued Incubation
+						["description"] = "Must reach 5000/5000 egg progress.",
+						["g"] = {
+							i(175063),	-- Aqir Egg Cluster
+						},
+					}),
+				}),
 				q(58640, {	-- A Crack in the Armor
 					["lvl"] = 120,
 					["coord"] = { 68.9, 57.9, 1527 },
