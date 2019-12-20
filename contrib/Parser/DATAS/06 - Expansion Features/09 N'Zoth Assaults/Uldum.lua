@@ -299,7 +299,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 155096 },	-- High Commander Kamses
 							["sourceQuest"] = 56472,	-- The Uldum Accord
 						}),
-						q(58156, {	-- Vanquishing the Darkness -- also triggered 58815
+						q(58156, {	-- Vanquishing the Darkness
 							["coord"] = { 56.6, 31.7, 1527 },
 							["isDaily"] = true, -- TODO:: probably a weekly
 							["provider"] = { "n", 160252 },	-- Blacktalon Agent

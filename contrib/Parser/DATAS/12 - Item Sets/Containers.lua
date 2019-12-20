@@ -176,5 +176,8 @@ _.GearSets =
 			i(173835),	-- Malignant Leviathan's Pauldrons
 			i(173460),	-- Malignant Leviathan's Spaulders
 		}),
+		i(173372, {	-- Cache of the Black Empire
+			i(173375),	-- Rajani Insignia
+		}),
 	}),
 };

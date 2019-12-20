@@ -19,6 +19,18 @@ _.ExpansionFeatures =
 			n(-10072, {	-- N'Zoth Assaults
 				n(-10076, {	-- Assault: The Black Empire
 					n(-17, {	-- Quests
+						q(58470, {	-- Corrupted Curiosities
+							["coord"] = { 83.7, 27.1, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 156003 },	-- Lorewalker Cho
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
+						q(58595, {	-- Pillars of Oblivion
+							["coord"] = { 44.7, 73.8, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
 						q(58463, {	-- Spawns of Madness
 							["coord"] = { 66.3, 40.6, 1530 },
 							["isDaily"] = true,
@@ -30,6 +42,27 @@ _.ExpansionFeatures =
 							["isDaily"] = true,
 							["provider"] = { "n", 161404 },	-- Taran Zhu
 							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
+						q(58461, {	-- Tomes of Ancient Madness
+							["coord"] = { 83.7, 27.1, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 156003 },	-- Lorewalker Cho
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
+						q(58462, {	-- Windows to the Soul
+							["coord"] = { 83.8, 48.9, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 154261 },	-- Chi-Ji
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
+						q(58156, {	-- Vanquishing the Darkness
+							["coord"] = { 84.2, 51.7, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 160252 },
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+							["g"] = {
+								i(174288),	-- Breath of Everlasting Spirit
+							},
 						}),
 					}),
 					n(-16, {	-- Rares
@@ -139,6 +172,16 @@ _.ExpansionFeatures =
 						q(56180, {	-- Bound Guardian
 							["lvl"] = 120,
 							["coord"] = { 79.6, 54.3, 1530 },
+							["isWorldQuest"] = true,
+						}),
+						q(58442, {	-- Consuming Maw
+							["lvl"] = 120,
+							["coord"] = { 81.4, 49.5, 1530 },
+							["isWorldQuest"] = true,
+						}),
+						q(58438, {	-- Consuming Maw
+							["lvl"] = 120,
+							["coord"] = { 46.4, 57.2, 1530 },
 							["isWorldQuest"] = true,
 						}),
 						q(56099, {	-- Font of Corruption
@@ -466,9 +509,7 @@ _.ExpansionFeatures =
 							["lvl"] = 120,
 							["isWorldQuest"] = true,
 							["g"] = {
-								i(174959, {	-- Cache of the Mantid Swarm
-									i(173835),	-- Malignant Leviathan's Pauldrons
-								}),
+								i(174959),	-- Cache of the Mantid Swarm -- TODO: can contain all the Black Empire token items. maybe symlink here?
 							},
 						}),
 						q(57085, {	-- Empowered War Wagon

@@ -1791,9 +1791,14 @@ _.NeverImplemented =
 		q(58409),	-- Combining Coalescing Visions 4x
 		q(59073),	-- Triggers when turning in "Match the Hatch" for the Shadowbarb Drone. Probably a daily trigger ID so players can't do the entire chain in one day
 		q(58994),	-- Triggers when you get your first corrupted item. It procs the "Curious Corruption" quest
-		
+		q(59024),	-- Triggers when talking to Zidormi in the lvl 120 rebuilt Vale to go to the past sha-destroyed version
+		q(58815),	-- Triggers when completing the blacktalon agent daily for a zone vision
 		q(58085),	-- Triggered upon entering the vision to the Shrine of Seven Stars -- TODO:: verify this. didn't pop up since latest PTR build
-		
+		q(56132),	-- Vale of Eternal Blossoms - activated a celetial buff 3rd time (yu'lon?)
+		q(56133),	-- Vale of Eternal Blossoms - activated a celestial buff 4th time (xuen?)
+		q(56134),	-- Vale of Eternal Blossoms - activated a celestial buff 1st time (chi-ji?)
+		q(56135),	-- Vale of Eternal Blossoms - activated a celestial buff 2nd time (niuzao?)
+		q(59141),	-- Vale of Eternal Blossoms - triggered after turning in the Black Empire assault. Probably a loot lock trigger?
 		-- Horrific Visions
 		q(57039),	-- Valley of Spirits cleansed (Orgrimmar)
 		q(57129),	-- Valley of Wisdom cleansed (Orgrimmar)
