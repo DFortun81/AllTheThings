@@ -10233,22 +10233,12 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 					end,
 				}),
 				app.CreateInstance(745, { 	-- Karazhan (Raid)
-					['description'] = "The reward chest for completing the Chess Event in Karazhan is currently not interactable since 8.2. All items found within it are now considered Unobtainable.",
+					['description'] = "The reward chest for completing the Chess Event in Karazhan has been fixed!",
 					['isRaid'] = true,
-					['g'] = {
-						app.CreateItemSource(12700, 28749),	-- King's Defender
-						app.CreateItemSource(12704, 28754),	-- Triptych Shield of the Ancients
-						app.CreateItemSource(12706, 28756),	-- Headdress of the High Potentate
-						app.CreateItem(28745),	-- Mithril Chain of Heroism
-						app.CreateItemSource(12705, 28755),	-- Bladed Shoulderpads of the Merciless
-						app.CreateItemSource(12701, 28750),	-- Girdle of Treachery
-						app.CreateItemSource(12702, 28751),	-- Heart-Flame Leggings
-						app.CreateItemSource(12699, 28748),	-- Legplates of the Innocent
-						app.CreateItemSource(12698, 28747),	-- Battlescar Boots
-						app.CreateItemSource(12697, 28746),	-- Fiend Slayer Boots
-						app.CreateItemSource(12703, 28752),	-- Forestlord Striders
-						app.CreateItem(28753),	-- Ring of Recurrence
-					},
+					['visible'] = true,
+					['OnUpdate'] = function(data) 
+						data.visible = true;
+					end,
 				}),
 				app.CreateInstance(228, {	-- Blackrock Depths
 					['description'] = "Ebonsteel Spaulders have been hotfixed! All of the items previously marked Unobtainable from General Angerforge have been fixed and confirmed as dropping once again!",
