@@ -32,6 +32,7 @@ _.NeverImplemented =
 		q(50690),	-- Unused
 		q(54781),	-- UNUSED
 		q(37812),	-- UNUSED: Test Race: 1 Marker
+		q(38845),	-- Unused
 		
 		-- Old adventure boards? Can't find any information to suggest that these were ever made available
 		q(28011),	-- Adventurers Wanted: Blackfathom Deeps
