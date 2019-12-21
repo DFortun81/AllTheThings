@@ -347,18 +347,18 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			e(1562, {			-- Chess Event
 				["creatureID"] = 16816,	-- Echo of Medivh
 				["groups"] = {
-					un(45, i(28749)),	-- King's Defender
-					un(45, i(28754)),	-- Triptych Shield of the Ancients
-					un(45, i(28756)),	-- Headdress of the High Potentate
-					un(45, i(28745)),	-- Mithril Chain of Heroism
-					un(45, i(28755)),	-- Bladed Shoulderpads of the Merciless
-					un(45, i(28750)),	-- Girdle of Treachery
-					un(45, i(28751)),	-- Heart-Flame Leggings
-					un(45, i(28748)),	-- Legplates of the Innocent
-					un(45, i(28747)),	-- Battlescar Boots
-					un(45, i(28746)),	-- Fiend Slayer Boots
-					un(45, i(28752)),	-- Forestlord Striders
-					un(45, i(28753)),	-- Ring of Recurrence
+					i(28749),	-- King's Defender
+					i(28754),	-- Triptych Shield of the Ancients
+					i(28756),	-- Headdress of the High Potentate
+					i(28745),	-- Mithril Chain of Heroism
+					i(28755),	-- Bladed Shoulderpads of the Merciless
+					i(28750),	-- Girdle of Treachery
+					i(28751),	-- Heart-Flame Leggings
+					i(28748),	-- Legplates of the Innocent
+					i(28747),	-- Battlescar Boots
+					i(28746),	-- Fiend Slayer Boots
+					i(28752),	-- Forestlord Striders
+					i(28753),	-- Ring of Recurrence
 				},
 			}),
 			e(1563, {			-- Prince Malchezaar
