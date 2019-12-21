@@ -108,6 +108,7 @@ _.NeverImplemented =
 		q(36139),	-- LFGDungeons - Pandaria - Dungeon Normal Nth
 		q(37505),	-- LFGDungeons - Draenor - Raid Finder - 1st
 		q(37506),	-- LFGDungeons - Draenor - Raid Finder - Nth
+		q(49847),	-- Selected Pandaria at level 80 Special Duty Assignment" on horde
 		
 		-- Events/Holidays
 		q(11320),	-- [NYI] Now this is Ram Racing... Almost. (Brewfest)
@@ -353,6 +354,7 @@ _.NeverImplemented =
 		-------------------
 		--      MOP      --
 		-------------------
+		q(37186),	-- The Art of War - version added during warlords of draenor, but no info exists anywhere for it
 		q(30087),	-- FLAG - Kung Fu Intro — wowhead info for this is possibly irrelevant, seems to trigger either when flying close to the magical barrier or after accepting The Arcanic Oubliette in Krasarang Wilds
 		q(31153),	-- Tracking Event - Saved Diaani
 		q(31154),	-- Tracking Event - Saved Zuulo
