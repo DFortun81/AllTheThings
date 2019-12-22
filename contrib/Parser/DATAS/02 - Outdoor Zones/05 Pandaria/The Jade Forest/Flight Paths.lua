@@ -14,6 +14,7 @@ _.Zones =
 				}),
 				fp(894, {	-- Grookin Hill, Jade Forest
 					["coord"] = { 27.8, 47.8, 371 },
+					["sourceQuest"] = 29935,	-- Orders are Orders
 				}),
 				fp(973, {	-- Honeydew Village, Jade Forest
 					["coord"] = { 28.0, 15.6, 371 },

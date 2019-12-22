@@ -50,7 +50,7 @@ _.Zones =
 						--	["sourceQuests"] = {  },	-- 
 						}),
 						crit(8, {	-- Terrace of Ten Thunders
-						--	["sourceQuests"] = {  },	-- 
+							["sourceQuest"] = 29755,	-- Pei-Back
 						}),
 						crit(9, {	-- The Temple of the Jade Serpent
 						--	["sourceQuests"] = {  },	-- 
@@ -63,6 +63,51 @@ _.Zones =
 						}),
 						crit(12, {	-- Overcoming doubt
 						--	["sourceQuests"] = {  },	-- 
+						}),
+					},
+				}),
+				ach(6534, {	-- Upjade Complete [Horde]
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(1, {	-- The Remains of Hellscream's Fist
+							["sourceQuest"] = 29694,	-- Regroup!
+						}),
+						crit(2, {	-- First Contact
+							["sourceQuest"] = 31779,	-- The Darkness Within
+						}),
+						crit(3, {	-- Strange Bedfellows
+							["sourceQuest"] = 29879,	-- Swallowed Whole
+						}),
+						crit(4, {	-- Grookin Hill
+							["sourceQuest"] = 29967,	-- Boom Goes the Doonamite!
+						}),
+						crit(5, {	-- Dawn's Blossom
+							["sourceQuest"] = 29882,	-- Quill of Stingers
+						}),
+						crit(6, {	-- Greenstone Quarry
+							["sourceQuest"] = 29930,	-- What's Mined Is Yours
+						}),
+						crit(7, {	-- The Temple of the Jade Serpent
+							["sourceQuest"] = 30000,	-- The Jade Serpent
+						}),
+						crit(8, {	-- Tian Monastery
+							["sourceQuests"] = {
+								29646,	-- Flying Colors (Groundskeeper Wu)
+								29647,	-- Flying Colors (Instructor Myang)
+								29639,	-- Flying Colors (Instructor Xann)
+							},
+						}),
+						crit(9, {	-- Terrace of Ten Thunders
+							["sourceQuest"] = 29755,	-- Pei-Back
+						}),
+						crit(10, {	-- Nectarbreeze Orchard
+							["sourceQuest"] = 29670,	-- Maul Gormal
+						}),
+						crit(11, {	-- The Battle for the Forest
+							["sourceQuest"] = 30485,	-- Last Piece of the Puzzle
+						}),
+						crit(12, {	-- Overcoming Doubt
+							["sourceQuest"] = 30504,	-- Emergency Response
 						}),
 					},
 				}),

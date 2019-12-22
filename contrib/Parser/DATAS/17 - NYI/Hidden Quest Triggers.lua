@@ -314,7 +314,6 @@ _.NeverImplemented =
 		q(28887),	-- Fire Instructions Tracking Quest
 		q(28886),	-- Frost Instructions Tracking Quest
 		q(28888),	-- Shadow Instructions Tracking Quest
-		q(29368),	-- Tracking
 		q(29378),	-- FLAG - Teleport to Vashj'ir
 		q(29379),	-- FLAG - Teleport to Deepholm
 		q(29380),	-- FLAG - Teleport to Firelands
@@ -354,6 +353,7 @@ _.NeverImplemented =
 		-------------------
 		--      MOP      --
 		-------------------
+		q(29368),	-- Tracking - added in cataclysm but triggered after completing the criteria for "Acid Rain" in MOP?
 		q(37186),	-- The Art of War - version added during warlords of draenor, but no info exists anywhere for it
 		q(30087),	-- FLAG - Kung Fu Intro — wowhead info for this is possibly irrelevant, seems to trigger either when flying close to the magical barrier or after accepting The Arcanic Oubliette in Krasarang Wilds
 		q(31153),	-- Tracking Event - Saved Diaani
@@ -388,6 +388,8 @@ _.NeverImplemented =
 		q(29702),	-- Gorrok TRACKING
 		q(29697),	-- Rivett TRACKING
 		q(29704),	-- Shokia TRACKING
+		q(31969),	-- Tracking flag used during horde quest "Priorities"
+		q(31195),	-- Ooked the Dooker (literally the name. Triggers after killing Dook Ookem during "Lay of the Land" as horde)
 		q(37212),	-- FLAG - Proving Grounds - Damage Bronze
 		q(33089),	-- FLAG - Proving Grounds - Damage Bronze
 		q(37214),	-- FLAG - Proving Grounds - Damage Gold
