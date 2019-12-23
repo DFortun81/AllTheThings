@@ -475,6 +475,8 @@ namespace ATT
 
 	            // Engineering Skills
 	            {202, 202},	// Engineering [7.3.5]
+                {20219, 20219},    // Gnomish Engineering
+                {20222, 20222},    // Goblin Engineering
 	            {2506, 202},	// Classic Engineering [8.0.1]
 	            {2505, 202},	// Outland Engineering [8.0.1]
 	            {2504, 202},	// Northrend Engineering [8.0.1]

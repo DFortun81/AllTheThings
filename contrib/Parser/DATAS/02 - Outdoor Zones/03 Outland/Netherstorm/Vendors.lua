@@ -802,7 +802,7 @@ _.Zones =
 					["sym"] = { {"sub", "pvp_gear_base", -10003, -665, -661 }, },	-- Merciless Gladiator: Season 2 Gladiator Gear
 				}),
 				n(21493,  {	-- Kablamm Farflinger <Transportation Engineer>
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = 20222,	-- Goblin Engineering
 					["description"] = "Goblin Engineers can speak to Kablamm to learn the recipe.",
 					["coord"] = { 32.9, 63.7, 109 },
 					["g"] = {

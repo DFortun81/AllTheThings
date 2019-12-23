@@ -6196,6 +6196,10 @@ local SkillIDToSpellID = setmetatable({
 	[393] = 8613,	-- Skinning
 	[197] = 3908,	-- Tailoring
 	[960] = 53428,  -- Runeforging
+	
+	-- Specializations
+	[20219] = 20219,	-- Gnomish Engineering
+	[20222] = 20222,	-- Goblin Engineering
 }, {__index = function(t,k) return(106727) end})
 app.BaseProfession = {
 	__index = function(t, key)

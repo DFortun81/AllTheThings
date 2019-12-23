@@ -10,7 +10,8 @@ profession(20222, {	-- Goblin Engineering
 					["g"] = {
 						{
 							["name"] = "Depleted-Kyparium Rocket",
-							["recipeID"] = 127138
+							["recipeID"] = 127138,
+							["requireSkill"] = 20222,
 						}
 					}
 				}
@@ -26,7 +27,8 @@ profession(20222, {	-- Goblin Engineering
 					["g"] = {
 						{
 							["name"] = "Big Daddy",
-							["recipeID"] = 95707
+							["recipeID"] = 95707,
+							["requireSkill"] = 20222,
 						}
 					}
 				},
@@ -36,7 +38,8 @@ profession(20222, {	-- Goblin Engineering
 					["g"] = {
 						{
 							["name"] = "Personal World Destroyer",
-							["recipeID"] = 84412
+							["recipeID"] = 84412,
+							["requireSkill"] = 20222,
 						}
 					}
 				}
@@ -52,7 +55,8 @@ profession(20222, {	-- Goblin Engineering
 					["g"] = {
 						{
 							["name"] = "Global Thermal Sapper Charge",
-							["recipeID"] = 56514
+							["recipeID"] = 56514,
+							["requireSkill"] = 20222,
 						}
 					}
 				}
@@ -68,11 +72,13 @@ profession(20222, {	-- Goblin Engineering
 					["g"] = {
 						{
 							["name"] = "Super Sapper Charge",
-							["recipeID"] = 30560
+							["recipeID"] = 30560,
+							["requireSkill"] = 20222,
 						},
 						{
 							["name"] = "The Bigger One",
-							["recipeID"] = 30558
+							["recipeID"] = 30558,
+							["requireSkill"] = 20222,
 						}
 					}
 				},
@@ -84,18 +90,22 @@ profession(20222, {	-- Goblin Engineering
 							["name"] = "Dimensional Ripper - Area 52",
 							["recipeID"] = 36954,
 							["description"] = "Speak to Kablamm Farflinger in Netherstorm at 32.9, 63.7 to learn this recipe.",
+							["requireSkill"] = 20222,
 						},
 						{
 							["name"] = "Foreman's Enchanted Helmet",
-							["recipeID"] = 30565
+							["recipeID"] = 30565,
+							["requireSkill"] = 20222,
 						},
 						{
 							["name"] = "Foreman's Reinforced Helmet",
-							["recipeID"] = 30566
+							["recipeID"] = 30566,
+							["requireSkill"] = 20222,
 						},
 						{
 							["name"] = "Goblin Rocket Launcher",
-							["recipeID"] = 30563
+							["recipeID"] = 30563,
+							["requireSkill"] = 20222,
 						}
 					}
 				}
@@ -111,7 +121,8 @@ profession(20222, {	-- Goblin Engineering
 					["g"] = {
 						{
 							["name"] = "Goblin Rocket Fuel Recipe",
-							["recipeID"] = 12715
+							["recipeID"] = 12715,
+							["requireSkill"] = 20222,
 						}
 					}
 				},
@@ -121,23 +132,28 @@ profession(20222, {	-- Goblin Engineering
 					["g"] = {
 						{
 							["name"] = "Goblin Bomb Dispenser",
-							["recipeID"] = 12755
+							["recipeID"] = 12755,
+							["requireSkill"] = 20222,
 						},
 						{
 							["name"] = "Goblin Dragon Gun",
-							["recipeID"] = 12908
+							["recipeID"] = 12908,
+							["requireSkill"] = 20222,
 						},
 						{
 							["name"] = "Goblin Mortar",
-							["recipeID"] = 12716
+							["recipeID"] = 12716,
+							["requireSkill"] = 20222,
 						},
 						{
 							["name"] = "Goblin Sapper Charge",
-							["recipeID"] = 12760
+							["recipeID"] = 12760,
+							["requireSkill"] = 20222,
 						},
 						{
 							["name"] = "The Big One",
-							["recipeID"] = 12754
+							["recipeID"] = 12754,
+							["requireSkill"] = 20222,
 						}
 					}
 				},
@@ -149,26 +165,32 @@ profession(20222, {	-- Goblin Engineering
 							["name"] = "Dimensional Ripper - Everlook",
 							["recipeID"] = 23486,
 							["description"] = "Speak to Zap Farflinger in  Winterspring at 59.6, 49.8 to learn this recipe.",
+							["requireSkill"] = 20222,
 						},
 						{
 							["name"] = "Goblin Construction Helmet",
-							["recipeID"] = 12718
+							["recipeID"] = 12718,
+							["requireSkill"] = 20222,
 						},
 						{
 							["name"] = "Goblin Jumper Cables XL",
-							["recipeID"] = 23078
+							["recipeID"] = 23078,
+							["requireSkill"] = 20222,
 						},
 						{
 							["name"] = "Goblin Mining Helmet",
-							["recipeID"] = 12717
+							["recipeID"] = 12717,
+							["requireSkill"] = 20222,
 						},
 						{
 							["name"] = "Goblin Rocket Boots",
-							["recipeID"] = 8895
+							["recipeID"] = 8895,
+							["requireSkill"] = 20222,
 						},
 						{
 							["name"] = "Goblin Rocket Helmet",
-							["recipeID"] = 12758
+							["recipeID"] = 12758,
+							["requireSkill"] = 20222,
 						}
 					}
 				}
