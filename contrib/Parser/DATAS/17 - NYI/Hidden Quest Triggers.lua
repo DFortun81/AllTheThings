@@ -353,8 +353,6 @@ _.NeverImplemented =
 		-------------------
 		--      MOP      --
 		-------------------
-		q(29368),	-- Tracking - added in cataclysm but triggered after completing the criteria for "Acid Rain" in MOP?
-		q(37186),	-- The Art of War - version added during warlords of draenor, but no info exists anywhere for it
 		q(30087),	-- FLAG - Kung Fu Intro — wowhead info for this is possibly irrelevant, seems to trigger either when flying close to the magical barrier or after accepting The Arcanic Oubliette in Krasarang Wilds
 		q(31153),	-- Tracking Event - Saved Diaani
 		q(31154),	-- Tracking Event - Saved Zuulo
@@ -380,16 +378,23 @@ _.NeverImplemented =
 		q(31484),	-- Hisek tracking quest
 		q(32012),	-- Kovok tracking [GROWING]
 		q(29604),	-- Tracking Event: Saw East Temple Arrival Cinematic
-		q(29638),	-- UNUSED
+		q(29638),	-- UNUSED -- triggered when turning in "Flying Colors"
 		q(33019),	-- NC S1 Q2 - unused cooking quest
 		q(33023),	-- NC S1 Q6 - unused cooking quest
 		q(33025),	-- NC S2 Q2 - unused cooking quest
-		q(29695),	-- Kiryn TRACKING
-		q(29702),	-- Gorrok TRACKING
-		q(29697),	-- Rivett TRACKING
-		q(29704),	-- Shokia TRACKING
-		q(31969),	-- Tracking flag used during horde quest "Priorities"
-		q(31195),	-- Ooked the Dooker (literally the name. Triggers after killing Dook Ookem during "Lay of the Land" as horde)
+		q(29695),	-- Jade Forest - Kiryn TRACKING
+		q(29702),	-- Jade Forest - Gorrok TRACKING
+		q(29697),	-- Jade Forest - Rivett TRACKING
+		q(29704),	-- Jade Forest - Shokia TRACKING
+		q(31969),	-- Jade Forest - Tracking flag used during horde quest "Priorities"
+		q(31195),	-- Jade Forest - Ooked the Dooker (literally the name. Triggers after killing Dook Ookem during "Lay of the Land" as horde)
+		q(29368),	-- Jade Forest - Tracking - added in cataclysm but triggered after completing the criteria for "Acid Rain" in MOP?
+		q(37186),	-- Jade Forest - The Art of War - version added during warlords of draenor, but no info exists anywhere for it
+		q(30486),	-- Jade Forest - Jade Dragon Phased Terrain Tracking - triggers after placing the Cho family heirloom during "Last Piece of the Puzzle"
+		q(30165),	-- Jade Forest - picked the blue serpent egg on "Choosing the One"
+		q(30166),	-- Jade Forest - picked the green serpent egg on "Choosing the One"
+		q(30167),	-- Jade Forest - picked the yellow/gold serpent egg on "Choosing the One"
+		q(38935),	-- His Name Was... Stormstout - appears to be an unused version of this quest added in Warlords of Draenor?
 		q(37212),	-- FLAG - Proving Grounds - Damage Bronze
 		q(33089),	-- FLAG - Proving Grounds - Damage Bronze
 		q(37214),	-- FLAG - Proving Grounds - Damage Gold
