@@ -6,4 +6,4 @@ end
 -- Gnomish Engineering
 i(18654, 20219);		-- Schematic: Gnomish Alarm-o-Bot
 i(18661, 20219);		-- Schematic: World Enlarger
-i(18653, 20219);		-- Schematic: Goblin Jumper Cables XL
+i(18653, 20222);		-- Schematic: Goblin Jumper Cables XL
