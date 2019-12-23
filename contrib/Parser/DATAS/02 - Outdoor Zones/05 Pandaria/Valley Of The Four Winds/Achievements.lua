@@ -74,6 +74,26 @@ _.Zones =
 					crit(3),	-- Scallions
 					crit(7),	-- White Turnip
 				}),
+				ach(6301, {		-- Rally the Valley
+					crit(1, {	-- Thunderfoot Fields
+						["sourceQuest"] = 29918,	-- A Lesson in Bravery
+					}),
+					crit(2, {	-- Mudmug's Place
+						["sourceQuest"] = 29952,	-- Broken Dreams
+					}),
+					crit(3, {	-- Chen's Masterpiece
+						["sourceQuest"] = 30073,	-- The Emperor
+					}),
+					crit(4, {	-- The Stormstout Brewery
+						["sourceQuest"] = 30078,	-- Cleaning House
+					}),
+					crit(5, {	-- The Hidden Master
+						["sourceQuest"] = 29990,	-- Training and Discipline
+					}),
+					crit(6, {	-- Nesingwary's Safari
+						["sourceQuest"] = 30186,	-- Parental Mastery
+					}),
+				}),
 				ach(7997, {	-- Riches of Pandaria
 					["collectible"] = false,
 					["g"] = {

@@ -218,16 +218,6 @@ _.Zones =
 						}),
 					},
 				}),
---[[				Achievement info for Loremaster related zone quests
-				ach(6301, {		-- Rally the Valley
-					crit(1),		-- Thunderfoot Fields
-					crit(2),		-- Mudmug's Place
-					crit(3),		-- Chen's Masterpiece
-					crit(4),		-- The Stormstout Brewery
-					crit(5),		-- The Hidden Master
-					crit(6),		-- Nesingwary's Safari
-				}),
-]]--
 				q(31329, {	-- A Beautiful Brooch
 					["description"] = "Requires reputation level of \"Good Friend\" or better with Tina Mudclaw to drop.",
 					["provider"] = { "i", 86436 },	-- Beautiful Brooch
