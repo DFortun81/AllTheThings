@@ -391,6 +391,13 @@ _.Zones =
 					["sourceQuests"] = { 29586 },	-- The Splintered path
 					["provider"] = { "n", 55009 },	-- Shao the Defiant
 					["coord"] = { 41.0, 73.9, 371 },
+					["g"] = {
+						i(80778),	-- Silkbead Idol
+						i(80779),	-- Mirror Strider Emblem
+						i(80780),	-- Greenpaw Idol
+						i(80781),	-- Shoots of Life
+						i(80782),	-- Misty Jade Idol
+					},
 				}),
 				q(30001, {	-- Moth-Ridden
 					["sourceQuests"] = { 29998 },	-- The Librarian's Quandary
