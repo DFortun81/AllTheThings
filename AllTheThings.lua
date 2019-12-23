@@ -13748,7 +13748,7 @@ app.OpenAuctionModule = function(self)
 			window:Update();
 			
 			-- Change the message!
-			frame.descriptionLabel:SetText("Got the datas!\n\nShift Left click into the search bar on the Browse tab to look for items!");
+			frame.descriptionLabel:SetText("Got the data!\n\nShift + Left click items in the ATT menu while on the AH Browse tab to search for the item!");
 			frame.descriptionLabel:Show();
 		end
 		local ProcessAuctions = function()
