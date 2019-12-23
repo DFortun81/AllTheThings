@@ -751,35 +751,36 @@ namespace ATT
                 }
             }
 
-            foreach (var QuestID in Objects.AllQuests.Keys)
+            foreach (var pair in Objects.AllQuests)
             {
-                var Quest = Objects.AllQuests[QuestID];
-                Quest.TryGetValue("isBreadcrumb", out bool isBreadcrumb);
-                if (isBreadcrumb)
+                if (pair.Value.TryGetValue("isBreadcrumb", out bool isBreadcrumb) && isBreadcrumb)
                 {
-                    if (!Quest.TryGetValue("nextQuests", out List<object> nextQuests))
+                    if (!pair.Value.TryGetValue("nextQuests", out List<object> nextQuests))
                     {
                         // Breadcrumb quest without next quests information
                     }
                 }
             }
 
-            var unsortedQuests = new List<object>();
-            int maxQuestID = QUESTS.Max(x => x.Key);
-            for(int i = 1;i <= maxQuestID; i++)
+            if (QUESTS.Any())
             {
-                if(!QUESTS_WITH_REFERENCES.ContainsKey(i) && QUESTS.TryGetValue(i, out Dictionary<string, object> questRef) && questRef.ContainsKey("text"))
+                var unsortedQuests = new List<object>();
+                int maxQuestID = QUESTS.Max(x => x.Key);
+                for (int i = 1; i <= maxQuestID; i++)
                 {
-                    unsortedQuests.Add(new Dictionary<string, object>() { { "questID", i } });
+                    if (!QUESTS_WITH_REFERENCES.ContainsKey(i) && QUESTS.TryGetValue(i, out Dictionary<string, object> questRef) && questRef.ContainsKey("text"))
+                    {
+                        unsortedQuests.Add(new Dictionary<string, object>() { { "questID", i } });
+                    }
                 }
-            }
-            if(unsortedQuests.Count > 0)
-            {
-                unsorted.Add(new Dictionary<string, object>
+                if (unsortedQuests.Count > 0)
+                {
+                    unsorted.Add(new Dictionary<string, object>
                     {
                         { "npcID", -17 },
                         { "g", unsortedQuests },
                     });
+                }
             }
         }
 
