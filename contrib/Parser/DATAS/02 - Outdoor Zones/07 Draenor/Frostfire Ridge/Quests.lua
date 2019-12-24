@@ -1031,7 +1031,7 @@ _.Zones =
 					["coord"] = { 53.9, 54.9, 590 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 79740 },	-- Warmaster Zog
-					["sourceQuest"] = 78466,	-- Build Your Barracks
+					["sourceQuest"] = 34461,	-- Build Your Barracks
 					["g"] = {
 						follower(34),	-- Olin Umberhide
 					},
