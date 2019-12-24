@@ -790,6 +790,11 @@ _.ExpansionFeatures =
 					q(35058, {	-- The Mysterious Flask	-- depends on alchemy lab and/or alchemy profession?
 						["races"] = HORDE_ONLY,
 					}),
+					q(36314, {	-- The Intricate Pendant
+						["races"] = HORDE_ONLY,
+						["provider"] = { "i", 115287 },	-- Intricate Crimson Pendant
+						["requireSkill"] = 755,	-- Jewelcrafting
+					}),
 					q(35557, {	-- The Secrets of Gorgrond
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,

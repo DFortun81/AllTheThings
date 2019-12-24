@@ -379,6 +379,11 @@ _.ExpansionFeatures =
 							{ 47.0, 51.0, 582 },	-- lvl 2/3 garrison
 						},
 					}),
+					q(36408, {	-- A Power Lost
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "i", 115507 },	-- Drained Crystal Fragment
+						["requireSkill"] = 755,	-- Jewelcrafting
+					}),
 					q(38259, {	-- All Hands on Deck
 						["provider"] = { "n", 92219 },	-- King Varian Wrynn
 						["coord"] = { 32.0, 31.9, 582 },
