@@ -117,6 +117,11 @@ _.Zones =
 						currency(824),	-- Garrison Resources
 					},
 				}),
+				n(80285, {	-- Guh
+					["questID"] = 34856,
+					["coord"] = { 37.4, 60.3, 525 },
+					["sourceQuest"] = 34378,	-- Establish Your Garrison
+				}),
 				o(236693, {	-- Iron Horde Munitions
 					["questID"] = 36863,
 					["coord"] = { 56.7, 71.9, 525 },
@@ -168,6 +173,7 @@ _.Zones =
 				o(231103, {	-- Raided Loot
 					["questID"] = 34967,
 					["coord"] = { 37.2, 59.2, 525 },
+					["sourceQuest"] = 34378,	-- Establish Your Garrison
 					["g"] = {
 						currency(824),	-- Garrison Resources
 					},

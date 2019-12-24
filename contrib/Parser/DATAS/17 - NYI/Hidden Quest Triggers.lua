@@ -570,6 +570,7 @@ _.NeverImplemented =
 		q(34440),	-- triggered just before turning in "Ga'nar of the Frostwolf"
 		q(36426),	-- Dueling Orbs,	-- triggered when completing "Mysterious Ring" (34463)
 		q(35914),	-- Default invasion reward flag during the first garrison invasion as part of Draenor's base intro
+		q(34453),	-- Frostfire Ridge - Tracking Event: Gazlowe Arrived
 		q(33847),	-- Frostfire Ridge - Flag: Seen Ga'nar Rolling Out),	-- triggered going into Chillfang's cave immediately upon getting to Draenor
 		q(33909),	-- Frostfire Ridge - Flag: Seen Ga'nar Rolling Out to Bladespire),	-- triggers shortly after reaching Wor'gol during "Den of Wolves"
 		q(33846),	-- Frostfire Ridge - Flag: Seen Thrall Cyclone),	-- triggers during "These Colors Don't Run"

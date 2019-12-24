@@ -556,6 +556,13 @@ _.ExpansionFeatures =
 							currency(823),	-- Apexis Crystal x1000
 						},
 					}),
+					q(36567, {	-- Bigger is Better
+						["maps"] = { 590 },	-- Garrison
+						["coord"] = { 52.4, 53.3, 590 },	-- lvl 1
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 78466 },	-- Gazlowe
+						["sourceQuest"] = 34775,	-- Mission Probable
+					}),
 					q(37961, {	-- Bringing the Bass
 						["provider"] = { "n", 91072 },	-- Drix Bassbolter
 						["coord"] = { 40.9, 47.8, 590 },
