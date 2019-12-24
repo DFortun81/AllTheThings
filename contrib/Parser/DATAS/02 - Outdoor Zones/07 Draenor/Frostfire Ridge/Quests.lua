@@ -927,7 +927,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34294,	-- The Fel Crystals
 					["g"] = {
-						ach(9529),	-- On the Shadow's Trail
 						i(113150),	-- Felblood-Starched Cloak
 						i(113149),	-- Flayed Flesh Cloak
 						i(113148),	-- Foulspawn Drape
