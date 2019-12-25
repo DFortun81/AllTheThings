@@ -14,12 +14,13 @@ _.Achievements =
 					un(3, ach(10751)),		-- Brr... It's Cold in Here
 					un(3, ach(1705)),		-- Clockwork Rocket Bot
 					un(3, ach(1636)),		-- Competitor's Tabard
+					un(29, ach(13927)),		-- Crashin' Splashin'
 					un(3, ach(10337)),		-- Crashin' Thrashin' Flamer
 					un(3, ach(8698)),		-- Crashin' Thrashin' Flyer
 					un(3, ach(1706)),		-- Crashin' Thrashin' Racer
 					un(3, ach(9915)),		-- Crashin' Thrashin' Shredder
 					un(3, ach(11201, {		-- Defender of Azeroth: Legion Invasions
-						un(3,ach(11200)),		-- Stand Against the Legion
+						un(3, ach(11200)),		-- Stand Against the Legion
 					})),
 					un(3, ach(11395)),		-- Diablo's 20th Anniversary
 					un(3, ach(10335)),		-- Did Someone Say...?

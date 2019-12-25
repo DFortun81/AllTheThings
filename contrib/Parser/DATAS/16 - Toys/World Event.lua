@@ -127,11 +127,14 @@ _.Toys =
 			["u"] = 29,
 			["g"] = {
 				i(54343), 	-- Blue Crashin' Thrashin' Racer Controller
+				i(172223),	-- Crashin' Thrashin' Battleship [A]
 				i(108632), 	-- Crashin' Thrashin' Flamer Controller
 				i(104318), 	-- Crashin' Thrashin' Flyer Controller
+				i(172222),	-- Crashin' Thrashin' Juggernaught [H] 
 				i(108635), 	-- Crashin' Thrashin' Killdozer Controller
 				i(37710), 	-- Crashin' Thrashin' Racer Controller
 				i(116763), 	-- Crashin' Thrashin' Shredder Controller
+				i(172223),	-- Crashin' Thrashin' Battleship [Alliance]
 				i(139337),	-- Disposable Winter Veil Suits
 				i(128636),	-- Endothermic Blaster
 				i(90888),	-- Foot Ball
@@ -154,6 +157,7 @@ _.Toys =
 				i(44606),	-- Toy Train Set
 				i(151349), 	-- Toy Weapon Set [Alliance]
 				i(151348), 	-- Toy Weapon Set [Horde]
+				i(172219),	-- Wild Holly
 				i(45057), 	-- Wind-Up Train Wrecker
 				i(17712), 	-- Winter Veil Disguise Kit
 				i(116691), 	-- Zhevra Lounge Cushion

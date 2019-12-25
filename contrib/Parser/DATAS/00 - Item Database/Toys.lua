@@ -650,4 +650,7 @@ t(170199);	-- Zanj'ir Weapon Rack
 -----------------
 -- PATCH 8.2.5 --
 -----------------
+t(172223);	-- Crashin' Thrashin' Battleship [A]
+t(172222);	-- Crashin' Thrashin' Juggernaught [H]
 t(172179);	-- Eternal Traveler's Hearthstone
+t(172219);	-- Wild Holly

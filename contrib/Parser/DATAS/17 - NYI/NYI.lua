@@ -1697,7 +1697,6 @@ _.NeverImplemented =
 		un(1, i(5130)),	-- Unknown
 		un(1, i(5131)),	-- Unknown
 		un(1, i(5132)),	-- Unknown
-		un(1, i(172219)),	-- Unknown
 		un(1, i(169177)),	-- Blueprint: TK32(DNT))
 		un(1, i(169178)),	-- Blueprint: TK33(DNT))
 		un(1, i(169179)),	-- Blueprint: TK34(DNT))

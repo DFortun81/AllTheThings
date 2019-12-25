@@ -147,6 +147,9 @@ _.Zones =
 			q(28705, {	-- Warchief's Command: Outland!
 				["isBreadcrumb"] = true,
 			}),
+			q(28581, {	-- Warchief's Command: Searing Gorge!
+				["isBreadcrumb"] = true,
+			}),
 			q(49532, {	-- Warchief's Command: Shadowmoon Valley!
 				["isBreadcrumb"] = true,
 			}),
