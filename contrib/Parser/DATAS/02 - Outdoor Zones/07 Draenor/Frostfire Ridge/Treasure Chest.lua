@@ -65,6 +65,10 @@ _.Zones =
 						i(120945),	-- Primal Spirit
 					},
 				}),
+				n(79473, {	-- Dagg
+					["questID"] = 34651,
+					["coord"] = { 65.9, 60.8, 525 },
+				}),
 				o(232218, {	-- Doorog's Secret Stash
 					["questID"] = 35370,
 					["coord"] = { 37.1, 69.9, 527 },

@@ -250,6 +250,7 @@ _.Zones =
 					},
 				}),
 				q(34505, {	-- Forbidden Glacier
+					["coord"] = { 25.5, 55.0, 525 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(1, {
@@ -268,6 +269,7 @@ _.Zones =
 					},
 				}),
 				q(34501, {	-- Frostbite Hollow
+					["coord"] = { 66.1, 18.0, 525 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(2, {
@@ -323,6 +325,7 @@ _.Zones =
 					["sourceQuest"] = 33546,	-- Deeds Left Undone
 				}),
 				q(33145, {	-- Grimfrost Hill
+					["coord"] = { 65.1, 47.7, 525 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(3, {

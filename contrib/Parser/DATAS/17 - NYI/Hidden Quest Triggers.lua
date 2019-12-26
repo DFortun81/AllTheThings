@@ -591,6 +591,9 @@ _.NeverImplemented =
 		q(34332),	-- Frostfire Ridge - Shamanstone: Touched By Fire selected. Only procs once
 		q(34333),	-- Frostfire Ridge - Shamanstone: Touched By Ice selected. Only procs once
 		q(34328),	-- Frostfire Ridge - Shamanstone: Blessing of the WOlf selected. Only procs once
+		q(34506),	-- Frostfire Ridge - Bonus Objective: Kill Grimfrost Ogres - NYI version since the bonus objective was unified into questID 33145
+		q(33914),	-- Frostfire Ridge - Gut Guttra - NYI, possible duplicate
+		q(33264),	-- Frostfire Ridge - A Proper Burial - NYI, possible duplicate
 		q(36249),	-- Gorgrond - Active Choice: Lumbermill - trigger if the lumbermill is currently active
 		q(36250),	-- Gorgrond - Active Choice: Lumbermill - see 36249
 		q(35064),	-- Gorgrond - Sparring Arena
