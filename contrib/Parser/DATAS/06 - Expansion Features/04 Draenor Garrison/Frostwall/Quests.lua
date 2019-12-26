@@ -797,8 +797,17 @@ _.ExpansionFeatures =
 							{ "o", 237022 },	-- Command Board lvl 3
 						},
 					}),
-					q(35058, {	-- The Mysterious Flask	-- depends on alchemy lab and/or alchemy profession?
+					q(35103, {	-- The Alchemist
+						["coord"] = { 45.4, 50.4, 590 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 81166 },	-- Refugee Lo'nash
+						["sourceQuest"] = 35058,	-- The Mysterious Flask
+						["requireSkill"] = 171,	-- Alchemy
+					}),
+					q(35058, {	-- The Mysterious Flask
+						["races"] = HORDE_ONLY,
+						["provider"] = { "i", 112566 },	-- Mysterious Flask
+						["requireSkill"] = 171,	-- Alchemy
 					}),
 					q(36314, {	-- The Intricate Pendant
 						["races"] = HORDE_ONLY,

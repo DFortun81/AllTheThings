@@ -57,9 +57,6 @@ _.Zones =
 				q(34366),	-- Tanaan 01: Front of the Portal
 				q(38272),	-- The Bleeding Hollow
 				q(38274),	-- The Eye of Kilrogg
-				q(35058, {	-- The Mysterious Flask
-					["races"] = HORDE_ONLY,
-				}),
 				q(40237),	-- Work Work Stoppage
 				q(38989, {	-- Your Orders, General?
 					["races"] = HORDE_ONLY,

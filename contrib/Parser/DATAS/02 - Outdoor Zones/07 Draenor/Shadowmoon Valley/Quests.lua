@@ -542,6 +542,17 @@ _.Zones =
 						follower(182),	-- Shelly Hamby
 					},
 				}),
+				q(35345, {	-- Shocking Assistance
+					["coord"] = { 54.0, 45.6, 539 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 82496 },	-- Telos
+					["sourceQuest"] = 35344,	-- The Missing Father
+					["requireSkill"] = 171,	-- Alchemy
+					["g"] = {
+						i(109558),	-- A Treatise on the Alchemy of Draenor
+						i(111812),	-- Alchemy Lab, lvl 1
+					},
+				}),
 				q(33115, {	-- Shrouding Stones
 					["sourceQuests"] = { 33062 },	-- Catching his Eye
 					["coord"] = { 29.2, 25.6, 539 },
@@ -680,6 +691,13 @@ _.Zones =
 				q(34496, {	-- The Hills of Valuun (bonus objective)
 					["coord"] = { 65.1, 33.6, 539 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(35344, {	-- The Missing Father
+					["coord"] = { 55.8, 41.2, 539 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 82497 },	-- Abatha
+					["sourceQuest"] = 35343,	-- The Young Alchemist
+					["requireSkill"] = 171,	-- Alchemy
 				}),
 				q(36241, {	-- The Power of Preservation
 					["sourceQuests"] = { 36240 },	-- Slow and Steady

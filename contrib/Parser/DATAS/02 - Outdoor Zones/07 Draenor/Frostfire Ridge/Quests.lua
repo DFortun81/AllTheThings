@@ -92,6 +92,17 @@ _.Zones =
 						34093,	-- Getting the Points
 					},
 				}),
+				q(35103, {	-- Avenge and Reclaim
+					["coord"] = { 37.8, 47.4, 525 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 81210 },	-- Ang'kra
+					["sourceQuest"] = 35104,	-- The Apprentice
+					["requireSkill"] = 171,	-- Alchemy
+					["g"] = {
+						i(109558),	-- A Treatise on the Alchemy of Draenor
+						i(111812),	-- Alchemy Lab, lvl 1
+					},
+				}),
 				q(33473, {	-- Back to Bladespire Citadel
 					["provider"] = { "n", 74272 },	-- Farseer Drek'Thar
 					["coord"] = { 16.7, 57.8, 525 },
@@ -664,6 +675,13 @@ _.Zones =
 						34069,	-- Getting the Points
 						34093,	-- Getting the Points
 					},
+				}),
+				q(35103, {	-- The Apprentice
+					["coord"] = { 38.0, 47.4, 525 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 81209 },	-- Kadar
+					["sourceQuest"] = 35103,	-- The Alchemist
+					["requireSkill"] = 171,	-- Alchemy
 				}),
 				q(34124, {	-- The Battle of Thunder Pass
 					["provider"] = { "n", 76487 },	-- Lokra

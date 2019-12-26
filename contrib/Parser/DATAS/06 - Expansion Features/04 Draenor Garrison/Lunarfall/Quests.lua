@@ -798,6 +798,11 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
+					q(35342, {	-- The Mysterious Flask
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "i", 113103 },	-- Mysterious Flask
+						["requireSkill"] = 171,	-- Alchemy
+					}),
 					q(35556, {	-- The Secrets of Gorgrond
 						["isBreadcrumb"] = true,
 						["lvl"] = 92,
@@ -813,7 +818,14 @@ _.ExpansionFeatures =
 						["coord"] = { 42.8, 45.2, 582 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
-						--["objectID"] = 232397,	-- Bulletin Board
+						["provider"] = { "o", 232397 },	-- Bulletin Board
+					}),
+					q(35343, {	-- The Young Alchemist
+						["coord"] = { 47.2, 45.8, 582 },
+						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "n", 82466 },	-- Aenir
+						["sourceQuest"] = 35342,	-- The Mysterious Flask
+						["requireSkill"] = 171,	-- Alchemy
 					}),
 					q(34192, {	-- Things Are Not Goren Our Way
 						["sourceQuests"] = { 36592 },	-- Bigger is Better
