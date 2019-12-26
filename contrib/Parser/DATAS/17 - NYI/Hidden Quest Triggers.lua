@@ -571,7 +571,9 @@ _.NeverImplemented =
 		q(34440),	-- triggered just before turning in "Ga'nar of the Frostwolf"
 		q(36426),	-- Dueling Orbs,	-- triggered when completing "Mysterious Ring" (34463)
 		q(35914),	-- Default invasion reward flag during the first garrison invasion as part of Draenor's base intro
+		q(36461),	-- Locating the Lapidarist - NYI version of the quest. seems to be a duplicate
 		q(34453),	-- Frostfire Ridge - Tracking Event: Gazlowe Arrived
+		q(34715),	-- Frostfire Ridge - Tracking Flag: Shamanstone Summons - appoach the frostwolf shaman stone in Wor'gol while on "Honor Has Its Rewards" to start the dialog
 		q(33847),	-- Frostfire Ridge - Flag: Seen Ga'nar Rolling Out),	-- triggered going into Chillfang's cave immediately upon getting to Draenor
 		q(33909),	-- Frostfire Ridge - Flag: Seen Ga'nar Rolling Out to Bladespire),	-- triggers shortly after reaching Wor'gol during "Den of Wolves"
 		q(33846),	-- Frostfire Ridge - Flag: Seen Thrall Cyclone),	-- triggers during "These Colors Don't Run"
@@ -588,6 +590,7 @@ _.NeverImplemented =
 		q(34331),	-- Frostfire Ridge - Shamanstone: Spirit of the Wolf selected. Only procs once
 		q(34332),	-- Frostfire Ridge - Shamanstone: Touched By Fire selected. Only procs once
 		q(34333),	-- Frostfire Ridge - Shamanstone: Touched By Ice selected. Only procs once
+		q(34328),	-- Frostfire Ridge - Shamanstone: Blessing of the WOlf selected. Only procs once
 		q(36249),	-- Gorgrond - Active Choice: Lumbermill - trigger if the lumbermill is currently active
 		q(36250),	-- Gorgrond - Active Choice: Lumbermill - see 36249
 		q(35064),	-- Gorgrond - Sparring Arena
