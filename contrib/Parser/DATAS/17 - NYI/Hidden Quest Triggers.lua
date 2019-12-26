@@ -109,7 +109,7 @@ _.NeverImplemented =
 		q(37505),	-- LFGDungeons - Draenor - Raid Finder - 1st
 		q(37506),	-- LFGDungeons - Draenor - Raid Finder - Nth
 		q(49847),	-- Selected Pandaria at level 80 Special Duty Assignment" on horde
-		q(57668),	-- Triggered when using a portal to orgrimmar as horde for the first time during the Feast of Winter Veil 2019 on christmas day. Possibly used to determine loot eligibility?
+		q(57668),	-- Triggered when using a portal to Orgrimmar as Horde/to Ironforge as Alliance for the first time during the Feast of Winter Veil 2019 on Christmas day. Possibly used to determine loot eligibility?
 		
 		-- Events/Holidays
 		q(11320),	-- [NYI] Now this is Ram Racing... Almost. (Brewfest)
