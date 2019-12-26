@@ -65,6 +65,10 @@ _.Zones =
 						i(120945),	-- Primal Spirit
 					},
 				}),
+				o(232218, {	-- Doorog's Secret Stash
+					["questID"] = 35370,
+					["coord"] = { 37.1, 69.9, 527 },
+				}),
 				o(229328, {	-- Envoy's Satchel
 					["questID"] = 34473,
 					["coord"] = { 40.9, 20.1, 525 },
@@ -109,6 +113,10 @@ _.Zones =
 					["g"] = {
 						i(111543),	-- Pile of Frostfire Turnips
 					},
+				}),
+				o(232215, {	-- Gorr'thogg's Personal Reserve
+					["questID"] = 35367,
+					["coord"] = { 31.3, 66.6, 528 },
 				}),
 				o(226994, {	-- Grimfrost Treasure
 					["questID"] = 33947,
@@ -161,6 +169,42 @@ _.Zones =
 					["g"] = {
 						i(112087),	-- Obsidian Frostwolf Petroglyph
 					},
+				}),
+				o(232547, {	-- Ogre Booty
+					["questID"] = 35347,
+					["coord"] = { 36.4, 28.7, 527 },
+				}),
+				o(232216, {	-- Ogre Booty
+					["questID"] = 35568,
+					["coord"] = { 76.8, 62.1, 527 },
+				}),
+				o(232217, {	-- Ogre Booty
+					["questID"] = 35569,
+					["coord"] = { 70.5, 67.7, 527 },
+				}),
+				o(232550, {	-- Ogre Booty
+					["questID"] = 35373,
+					["coord"] = { 52.1, 52.0, 527 },
+				}),
+				o(232237, {	-- Ogre Booty
+					["questID"] = 35567,
+					["coord"] = { 51.4, 17.9, 527 },
+				}),
+				o(232549, {	-- Ogre Booty
+					["questID"] = 35371,
+					["coord"] = { 46.2, 15.6, 527 },
+				}),
+				o(232214, {	-- Ogre Booty
+					["questID"] = 35368,
+					["coord"] = { 53.2, 28.3, 526 },
+				}),
+				o(232219, {	-- Ogre Booty
+					["questID"] = 35369,
+					["coord"] = { 48.5, 67.2, 526 },
+				}),
+				o(232546, {	-- Ogre Booty
+					["questID"] = 35570,
+					["coord"] = { 44.7, 64.8, 526 },
 				}),
 				o(230611, {	-- Pale Loot Sack
 					["description"] = "At the bottom of a nearby cave.",
