@@ -582,10 +582,13 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(37669, {	-- Building For Professions
-						["provider"] = { "n", 78466 },	-- Gazlowe
+						-- TODO: do we want to list every single possible sourceQuest?
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 78466 },	-- Gazlowe
+						["description"] = "Becomes available after completing any seconday profession intro quest.",
 						["coords"] = {
 							{ 52.4, 53.3, 590 },	-- lvl 1
+							{ 42.2, 55.6, 590 },	-- lvl 2
 							{ 37.6, 50.3, 590 },	-- lvl 3
 						},
 					}),
@@ -698,6 +701,13 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 78487 },	-- Rokhan
 						["sourceQuest"] = 36494,	-- News from Talador
+					}),
+					q(36352, {	-- Locating the Lapidarist
+						["coord"] = { 60.9, 40.0, 590 },
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 84967 },	-- "Appraiser" Sazsel Stickyfingers
+						["sourceQuest"] = 36314,	-- The Intricate Pendant
+						["requireSkill"] = 755,	-- Jewelcrafting
 					}),
 					q(36614, {	-- My Very Own Fortress
 						["coord"] = { 42.1, 55.5, 590 },	-- Rank 2

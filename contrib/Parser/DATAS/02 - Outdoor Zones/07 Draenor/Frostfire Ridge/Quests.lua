@@ -172,13 +172,16 @@ _.Zones =
 						i(108976),	-- Sanctified Fel-Wrap Ring
 					},
 				}),
-				q(36380, {	-- Diamonds Are Forever	-- verify the rewards for this
-					["provider"] = { "n", 85106 },	-- Gem Grinder Orolak
-					["coord"] = { 20.0, 56.4, 525 },
+				q(36380, {	-- Diamonds Are Forever
+					["coord"] = { 20.0, 56.3, 525 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 85106 },	-- Gem Grinder Orolak
+					["sourceQuest"] = 36378,	-- Locating the Lapidarist
 					["requireSkill"] = 755,	-- Jewelcrafting
 					["g"] = {
 						i(115503),	-- Blazing Diamond Pendant
+						i(115359),	-- Draenor Jewelcrafting
+						i(111814),	-- Gem Boutique, Level 1
 					},
 				}),
 				q(34292, {	-- Eliminate the Shadow Council
@@ -466,6 +469,13 @@ _.Zones =
 				q(34464, {	-- Mysterious Boots
 					["coord"] = { 67.9, 18.9, 525 },
 					["provider"] = { "o", 229333 },	-- Mysterious Boots
+				}),
+				q(36378, {	-- No Pressure, No Diamonds
+					["coord"] = { 20.0, 56.3, 525 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 85106 },	-- Gem Grinder Orolak
+					["sourceQuest"] = 36352,	-- Locating the Lapidarist
+					["requireSkill"] = 755,	-- Jewelcrafting
 				}),
 				q(34731, {	-- Oath of Shadow Hunter Rala
 					["provider"] = { "n", 78208 },	-- Shadow Hunter Rala

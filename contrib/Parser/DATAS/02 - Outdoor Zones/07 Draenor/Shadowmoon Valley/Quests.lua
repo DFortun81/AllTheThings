@@ -481,6 +481,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80378 },	-- Rangari Navra
 				}),
+				q(36409, {	-- Restoration
+					["coord"] = { 47.0, 38.6, 539 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 84830 },	-- Artificer Baleera
+					["sourceQuest"] = 36408,	-- A Power Lost
+					["requireSkill"] = 755,	-- Jewelcrafting
+				}),
 				q(34996, {	-- Rotting Riverbeasts
 					["coord"] = { 52.6, 59.6, 539 },
 					["races"] = ALLIANCE_ONLY,
