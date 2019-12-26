@@ -136,16 +136,19 @@ _.Holidays = bubbleDown({["u"] = 29},
 					ach(8699),		-- The Danger Zone
 					n(-9969, {	-- Feats of Strength
 						ach(1705, {	-- Clockwork Rocket Bot (2007)
-							i(34426, {	-- Winter Veil Gift
+							i(116762, {	-- Stolen Present
 								un(29, i(34425)),	-- Clockwork Rocket Bot
 							}),
 						}),
 						ach(1706, {	-- Crashin' Thrashin' Racer (2008)
-							i(43504, {	-- Winter Veil Gift
+							i(116762, {	-- Stolen Present
 								un(29, i(37710)),	-- Crashin' Thrashin' Racer Controller
 							}),
 						}),
 						ach(6059, {	-- Red Rider Air Rifle (2009)
+							i(116762, { -- Stolen Present
+								un(29, i(46725)), -- Red Rider Air Rifle
+							}),
 							n(-2, {	-- Vendors
 								n(52809, {	-- Blax Bottlerocket
 									["races"] = HORDE_ONLY,
@@ -177,49 +180,78 @@ _.Holidays = bubbleDown({["u"] = 29},
 							}),
 						}),
 						ach(6060, {	-- MiniZep Controller (2010)
-							i(67443, {	-- Winter Veil Gift
+							i(116762, { -- Stolen Present
 								un(29, i(46709)),	-- MiniZep Controller
 							}),
 						}),
 						ach(6061, {	-- Gaudy Winter Veil Sweater (2011)
-							i(70938, {	-- Winter Veil Gift
+							i(116762, { -- Stolen Present
 								un(29, i(70923)),	-- Gaudy Winter Veil Sweater
+							}),
+							n(-2, { -- Vendors
+								n(13433, { -- Wulmort Jinglepocket
+									un(29, i(70923)),	-- Gaudy Winter Veil Sweater
+								}),
+								n(13420, { -- Penney Copperpinch
+									un(29, i(70923)),	-- Gaudy Winter Veil Sweater
+								}),
+								n(23064, { -- Eebee Jinglepocket
+									un(29, i(70923)),	-- Gaudy Winter Veil Sweater
+								}),
+								n(13435, { -- Khole Jinglepocket
+									un(29, i(70923)),	-- Gaudy Winter Veil Sweater
+								}),
+								n(96304, { -- Tradurjo Jinglepocket
+									un(29, i(70923)),	-- Gaudy Winter Veil Sweater
+								}),
+								n(13429, { -- Nardstrum Copperpinch
+									un(29, i(70923)),	-- Gaudy Winter Veil Sweater
+								}),
+								n(13432, { -- Seersa Copperpinch
+									un(29, i(70923)),	-- Gaudy Winter Veil Sweater
+								}),
+								n(23010, { -- Wolgren Jinglepocket
+									un(29, i(70923)),	-- Gaudy Winter Veil Sweater
+								}),
+								n(23012, { -- Hotoppik Copperpinch
+									un(29, i(70923)),	-- Gaudy Winter Veil Sweater
+								}),
 							}),
 						}),
 						ach(7852, {	-- They're Both Footballs? (2012)
-							i(90892, {	-- Winter Veil Gift
+							i(116762, { -- Stolen Present
 								un(29, i(90888)),	-- Foot Ball
 								un(29, i(90883)),	-- The Pigskin
 							}),
 						}),
 						ach(8698, {	-- Crashin' Thrashin' Flyer (2013)
-							i(104319, {	-- Winter Veil Gift
+							i(116762, { -- Stolen Present
 								un(29, i(104318)),	-- Crashin' Thrashin' Flyer Controller
 							}),
 						}),
 						ach(9915, {	-- Crashin' Thrashin' Shredder (2014)
-							i(116761, {	-- Winter Veil Gift
+							i(116762, { -- Stolen Present
 								un(29, i(116763)),	-- Crashin' Thrashin' Shredder Controller
 							}),
 						}),
 						ach(10337, {	-- Crashin' Thrashin' Flamer (2015)
-							i(128653, {	-- Winter Veil Gift
+							i(116762, { -- Stolen Present
 								un(29, i(108632)),	-- Crashin' Thrashin' Flamer Controller
 							}),
 						}),
 						ach(10751, {	-- Brr... It's Cold in Here (2016)
-							i(139341, {	-- Winter Veil Gift
+							i(116762, { -- Stolen Present
 								un(29, i(128636)),	-- Endothermic Blaster
 							}),
 						}),
 						ach(11913, {	-- Don't Play With That In The House (2017)
-							i(151350, {	-- Winter Veil Gift
+							i(116762, { -- Stolen Present
 								un(29, i(151349)),	-- Toy Weapon Set [Alliance]
 								un(29, i(151348)),	-- Toy Weapon Set [Horde]
 							}),
 						}),
 						ach(13927, {	-- Crashin' Splashin'
-							i(172224, {	-- Winter Veil Gift
+							i(172224, {	-- Winter Veil Gift (2018)
 								un(29, i(172223)),	-- Crashin' Thrashin' Battleship [A]
 								un(29, i(172222)),	-- Crashin' Thrashin' Juggernaught [H]
 							}),
