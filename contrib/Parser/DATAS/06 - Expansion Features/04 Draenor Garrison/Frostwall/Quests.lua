@@ -556,6 +556,17 @@ _.ExpansionFeatures =
 							currency(823),	-- Apexis Crystal x1000
 						},
 					}),
+					q(36627, {	-- Big Frostfire Gun
+						["coord"] = { 62.2, 73.4, 590 },
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 85882 },	-- Blixthraz Blastcharge
+						["sourceQuest"] = 36594,	-- "Spare" Parts
+						["requireSkill"] = 202,	-- Engineering
+						["g"] = {
+							i(111921),	-- Draenor Engineering
+							i(109258),	-- Engineering Works, lvl 1
+						},
+					}),
 					q(36567, {	-- Bigger is Better
 						["maps"] = { 590 },	-- Garrison
 						["coord"] = { 52.4, 53.3, 590 },	-- lvl 1
@@ -672,6 +683,11 @@ _.ExpansionFeatures =
 							recipe(187639),	-- Immaculate Versatility Taladite
 						},
 					}),
+					q(36589, {	-- Heavy Arms
+						["races"] = HORDE_ONLY,
+						["provider"] = { "i", 116438 },	-- Burned-Out Hand Cannon
+						["requireSkill"] = 202,	-- Engineering
+					}),
 					q(38296, {	-- Herbs Galore
 						["providers"] = {
 							{ "n", 91031 },	-- Nicholas Mitrik (Horde)
@@ -771,6 +787,13 @@ _.ExpansionFeatures =
 						["g"] = {
 							follower(208),	-- Ahm
 						},
+					}),
+					q(36594, {	-- "Spare" Parts
+						["coord"] = { 62.2, 73.4, 590 },
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 85882 },	-- Blixthraz Blastcharge
+						["sourceQuest"] = 36589,	-- Heavy Arms
+						["requireSkill"] = 202,	-- Engineering
 					}),
 					q(38293, {	-- Sumptuous Fur
 						["providers"] = {

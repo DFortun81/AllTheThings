@@ -577,6 +577,17 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80707 },	-- Sleepy Rangari
 				}),
+				q(36287, {	-- Snatch 'n' Grab
+					["coord"] = { 60.8, 32.6, 539 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 84825 },	-- Goggles
+					["sourceQuest"] = 36286,	-- Transponder 047-B
+					["requireSkill"] = 202,	-- Engineering
+					["g"] = {
+						i(111921),	-- Draenor Engineering
+						i(109258),	-- Engineering Works, lvl 1
+					},
+				}),
 				q(33066, {	-- Soul Shards of Summoning
 					["sourceQuests"] = { 33112 },	-- Ominous Portents
 					["coord"] = { 29.2, 25.6, 539 },
@@ -832,6 +843,11 @@ _.Zones =
 						i(113149),	-- Flayed Flesh Cloak
 						i(113148),	-- Foulspawn Drape
 					},
+				}),
+				q(36286, {	-- Transponder 047-B
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "i", 115278 },	-- Gnomish Location Transponder
+					["requireSkill"] = 202,	-- Engineering
 				}),
 				q(35552, {	-- Trust No One
 					["sourceQuests"] = { 34787 },	-- Exarch Maladaar
