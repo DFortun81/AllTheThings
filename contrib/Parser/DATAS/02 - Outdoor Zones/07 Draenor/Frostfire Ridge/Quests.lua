@@ -137,13 +137,15 @@ _.Zones =
 					["requireSkill"] = 773,	-- Inscription
 					["sourceQuest"] = 36435,	-- Unintelligible Intelligence
 				}),
-				q(36516, {	-- Cut 'Em Out! -- verify the rewards for this
+				q(36516, {	-- Cut 'Em Out!
 					["provider"] = { "n", 85751 },	-- Gaoda Hidecleaver
 					["coord"] = { 20.6, 60.2, 525 },
 					["races"] = HORDE_ONLY,
 					["requireSkill"] = 165,	-- Leatherworking
 					["g"] = {
+						i(115358),	-- Draenor Leatherworking
 						i(117566),	-- Heavy Frostwolf Shroud
+						i(111818),	-- The Tannery, lvl 1
 					},
 				}),
 				q(33546, {	-- Deeds Left Undone
@@ -154,7 +156,7 @@ _.Zones =
 				}),
 				q(35341, {	-- Defection of Gronnstalker Rokash
 					["provider"] = { "n", 79229 },	-- Gronnstalker Rokash
-					["coord"] = { 59.5, 31.8 },
+					["coord"] = { 59.5, 31.8, 525 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32981,	-- Only the Winner
 					["g"] = {
@@ -247,6 +249,8 @@ _.Zones =
 				q(33807, {	-- Free Our Brothers and Sisters
 					["coord"] = { 21.7, 56.3, 525 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 33527,	-- Last Steps
+					["description"] = "Must be on |cFFFFD700Save Wolf Home|r to pick up this quest.",
 					["providers"] = {
 						{ "n", 74507 },	-- Wor'gol Defender
 						{ "n", 79415 },	-- Durotan
@@ -410,10 +414,11 @@ _.Zones =
 						i(111813),	-- The Forge, Level 1
 					},
 				}),
-				q(33955, {	-- Missing Pack -- verify what the sourceQuest is for this
+				q(33955, {	-- Missing Pack
 					["provider"] = { "n", 76941 },	-- Kar'lak
 					["coord"] = { 21.6, 55.0, 525 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 33468,	-- Save Wolf Home
 				}),
 				q(34775, {	-- Mission Probable
 					["maps"] = { 590 },	-- Garrison
@@ -1044,10 +1049,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32792,	-- Leave Nothing Behind!
 				}),
-				q(33915, {	-- Young Hearts -- verify if this has a source
+				q(33915, {	-- Young Hearts
 					["coord"] = { 19.2, 59.1, 525 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 76862 },	-- Gog'rak
+					["sourceQuest"] = 33468,	-- Save Wolf Home
 				}),
 			}),
 		}),
