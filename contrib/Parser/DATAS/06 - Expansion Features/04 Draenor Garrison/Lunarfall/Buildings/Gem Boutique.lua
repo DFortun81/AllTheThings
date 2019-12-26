@@ -10,6 +10,10 @@ _.ExpansionFeatures =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						n(-17, {	-- Quests
+							q(36644, {	-- Your First Jewelcrafting Work Order
+								["races"] = ALLIANCE_ONLY,
+								["provider"] = { "n", 77356 },	-- Costan Highwall
+							}),
 						}),
 						n(-2,  {	-- Vendors
 							n(77356, {	-- Costan Highwall <Jewelcrafter>
