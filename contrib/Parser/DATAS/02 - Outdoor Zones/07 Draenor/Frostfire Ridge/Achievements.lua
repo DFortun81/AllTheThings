@@ -55,9 +55,11 @@ _.Zones =
 				ach(9535),	-- That Was Entirely Unnecessary (Magnarok)
 				ach(9530, {	-- Writing in the Snow (A)
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 35737,	-- Writing in the Snow
 				}),
 				ach(9531, {	-- Writing in the Snow (H)
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 35736,	-- Writing in the Snow
 				}),
 				ach(8671, {	-- You'll Get Caught Up In The... Frostfire!
 					["races"] = HORDE_ONLY,

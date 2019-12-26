@@ -1049,6 +1049,18 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32792,	-- Leave Nothing Behind!
 				}),
+				q(35737, {	-- Writing in the Snow (A)
+					["coord"] = { 47.9, 19.0, 525 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 82833 },	-- Tattered Journal Page
+					["description"] = "|cFFFFD700Assault on Stonefury Cliffs|r must be active.",
+				}),
+				q(35736, {	-- Writing in the Snow (H)
+					["coord"] = { 47.9, 19.0, 525 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 82833 },	-- Tattered Journal Page
+					["description"] = "|cFFFFD700Assault on Stonefury Cliffs|r must be active.",
+				}),
 				q(33915, {	-- Young Hearts
 					["coord"] = { 19.2, 59.1, 525 },
 					["races"] = HORDE_ONLY,
