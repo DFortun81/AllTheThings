@@ -250,8 +250,14 @@ _.Holidays = bubbleDown({["u"] = 29},
 								un(29, i(151348)),	-- Toy Weapon Set [Horde]
 							}),
 						}),
-						ach(13927, {	-- Crashin' Splashin'
-							i(172224, {	-- Winter Veil Gift (2018)
+						ach(12850, {	-- At Least You're Being Careful (2018)
+							i(116762, { -- Stolen Present
+								un(29, i(162643)),	-- Toy Armor Set [Alliance]
+								un(29, i(162642)),	-- Toy Armor Set [Horde]
+							}),
+						}),
+						ach(13927, {	-- Crashin' Splashin' (2019)
+							i(172224, {	-- Winter Veil Gift
 								un(29, i(172223)),	-- Crashin' Thrashin' Battleship [A]
 								un(29, i(172222)),	-- Crashin' Thrashin' Juggernaught [H]
 							}),
