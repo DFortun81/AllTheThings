@@ -38,57 +38,67 @@ _.Holidays = bubbleDown({["u"] = 29},
 					i(21212, {	-- Fresh Holly
 						ach(1282),	-- Fa-la-la-la-Ogri'la
 					}),
-					{
-						["itemID"] = 34191,	-- Handful of Snowflakes
-						["groups"] = bubbleDown(
-							{
-								["achievementID"] = 1687,	-- Let It Snow
+					i(34191, {	-- Handful of Snowflakes
+						ach(1687, {	-- Let It Snow
+							crit(1),	-- Orc Death Knight
+							crit(2),	-- Human Warrior
+							crit(3),	-- Tauren Shaman
+							crit(4),	-- Night Elf Druid
+							crit(5),	-- Undead Rogue
+							crit(6),	-- Troll Hunter
+							crit(7),	-- Gnome Mage
+							crit(8),	-- Dwarf Paladin
+							crit(9),	-- Blood Elf Warlock
+							crit(10),	-- Draenei Priest
+						})
+					}),
+					i(21519, {	-- Mistletoe
+						ach(1686, {	-- Bros. Before Ho Ho Ho's (A)
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								crit(1, {	-- Brother Nimetz in Stranglethorn Vale
+									["coord"] = { 47.25, 11.10, 50 },
+								}),
+								crit(2, {	-- Brother Wilhelm in Goldshire
+									["coord"] = { 41.07, 65.95, 37 },
+								}),
+								crit(3, {	-- Brother Karman in Theramore
+									["description"] = "If Theramore is phased, talk to Zidormi to the west of the city.",
+									["coord"] = { 67.40, 47.41, 70 },
+								}),
+								crit(4, {	-- Brother Kristoff in Stormwind
+									["coord"] = { 55.04, 54.20, 84 },
+								}),
+								crit(5, {	-- Brother Joshua in Stormwind
+									["coord"] = { 49.50, 45.22, 84 },
+								}),
+								crit(6, {	-- Brother Crowley in Stormwind
+									["description"] = "He is in the basement.",
+									["coord"] = { 52.60, 43.93, 84 },
+								}),
+								crit(7, {	-- Brother Cassius in Stormwind
+									["coord"] = { 52.42, 45.80, 84 },
+								}),
+								crit(8, {	-- Brother Benjamin in Stormwind
+									["coord"] = { 51.8, 46.8, 84 },
+								}),
 							},
-							{
-								crit(1),	-- Orc Death Knight
-								crit(2),	-- Human Warrior
-								crit(3),	-- Tauren Shaman
-								crit(4),	-- Night Elf Druid
-								crit(5),	-- Undead Rogue
-								crit(6),	-- Troll Hunter
-								crit(7),	-- Gnome Mage
-								crit(8),	-- Dwarf Paladin
-								crit(9),	-- Blood Elf Warlock
-								crit(10),	-- Draenei Priest
-							}
-						),
-					},
-					{
-						["itemID"] = 21519,	-- Mistletoe
-						["groups"] = merge(
-						bubbleDown(
-							{
-								["achievementID"] = 1686,	-- Bros. Before Ho Ho Ho's (Alliance)
-								["races"] = ALLIANCE_ONLY,
+						}),
+						ach(1685, {	-- Bros. Before Ho Ho Ho's (H)
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								crit(1, {	-- Brother Malach in the Undercity
+									["coord"] = { 51.6, 22.6, 90 },
+								}),
+								crit(2, {	-- Durkot Wolfbrother in Warsong Hold
+									["coord"] = { 40.2, 55.0, 114 },
+								}),
+								crit(3, {	-- Brother Keltan in Icecrown
+									["coord"] = { 69.4, 42.4, 118 },
+								}),
 							},
-							{
-								crit(1),	-- Brother Nimetz in Stranglethorn Vale
-								crit(2),	-- Brother Wilhelm in Goldshire
-								crit(3),	-- Brother Karman in Theramore
-								crit(4),	-- Brother Kristoff in Stormwind
-								crit(5),	-- Brother Joshua in Stormwind
-								crit(6),	-- Brother Crowley in Stormwind
-								crit(7),	-- Brother Cassius in Stormwind
-								crit(8),	-- Brother Benjamin in Stormwind
-							}
-						),
-						bubbleDown(
-							{
-								["achievementID"] = 1685,	-- Bros. Before Ho Ho Ho's (Horde)
-								["races"] = HORDE_ONLY,
-							},
-							{
-								crit(1),	-- Brother Malach in the Undercity
-								crit(2),	-- Durkot Wolfbrother in Warsong Hold
-								crit(3),	-- Brother Keltan in Icecrown
-							}
-						)),
-					},
+						}),
+					}),
 				},
 			}),
 		},
