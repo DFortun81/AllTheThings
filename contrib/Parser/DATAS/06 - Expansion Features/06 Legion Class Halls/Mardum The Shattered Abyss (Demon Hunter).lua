@@ -363,14 +363,6 @@ _.ExpansionFeatures =
 						["maps"] = { 719 },	-- Mardum, the Shattered Abyss
 						["lvl"] = 110,
 					}),
-					q(39718, {	-- Paradise Lost
-						["sourceQuests"] = {
-							41099,	-- Direct Our Wrath (Altruis)
-							41069,	-- Direct Our Wrath (Kayn)
-						},
-						["provider"] = { "n", 98613 },	-- Scouting Map
-						["classes"] = { 12 },	-- Demon Hunter
-					}),
 					q(42669, {	-- Preparations for Invasion
 						["sourceQuests"] = {
 							42777,	-- Champion: Belath Dawnblade

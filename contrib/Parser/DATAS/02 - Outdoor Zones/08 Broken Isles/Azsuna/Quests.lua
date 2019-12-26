@@ -838,8 +838,7 @@ _.Zones =
 				q(40855),	-- Our Man in Azsuna
 				q(39934),	-- Our New Allies
 				q(40056),	-- Our New Allies
-				q(41161),	-- Out of the Frying Pan										
-				q(39718),	-- Paradise Lost
+				q(41161),	-- Out of the Frying Pan		
 				q(46794),	-- Paragon of the Court
 				q(46800),	-- Paragon of the Wardens
 				q(37495),	-- Plunder the Cove

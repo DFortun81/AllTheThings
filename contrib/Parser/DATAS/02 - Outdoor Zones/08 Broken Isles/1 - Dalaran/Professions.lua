@@ -968,7 +968,9 @@ _.Zones =
 				}),
 				prof(755, {	-- Jewelcrafting
 					q(40524,  {	-- A Familiar Ring to It
+						["coord"] = { 40.0, 35.3, 627 },
 						["provider"] = { "n", 93527 },	-- Timothy Jones
+						["sourceQuest"] = 40523,	-- Facet-nating Friends
 					}),
 					q(40562,  {	-- A Personal Touch
 						["provider"] = { "n", 93543 },	-- Sminx Glasseye
@@ -987,6 +989,7 @@ _.Zones =
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 					}),
 					q(40523,  {	-- Facet-nating Friends
+						["coord"] = { 40.3, 34.7, 627 },
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 						["g"] = {
 							recipe(264546),	-- Legion Jewelcrafting
@@ -1045,18 +1048,20 @@ _.Zones =
 					q(40535,  {	-- Raising the Drogbar
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 					}),
-					o(246154, {	-- Broken Toy Box
-						q(40558, {	-- Socket to Me
+					q(40558, {	-- Socket to Me
+						["provider"] = { "o", 246154 },	-- Broken Toy Box
+						["g"] = {
 							recipe(195882),	-- JewelCraft
-						}),
+						},
 					}),
 					q(40531,  {	-- Swift Vengeance
 						["sourceQuests"] = { 40530 },	-- An Eye for Detail
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 					}),
 					q(40529,  {	-- Truly Outrageous
-						["sourceQuests"] = { 40523 },	-- Facet-nating Friends
+						["coord"] = { 40.2, 34.6, 627 },
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
+						["sourceQuests"] = { 40523 },	-- Facet-nating Friends
 						["g"] = {
 							recipe(195850),	-- Versatile Skystone
 						},

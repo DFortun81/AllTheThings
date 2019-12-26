@@ -243,10 +243,6 @@ _.Zones =
 						}),
 					},
 				}),
-				q(40840, {	-- A Worthy Blade
-					["classes"] = { 4 },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
-				}),
 				q(47041, {	-- Affliction: The Twisted Twin
 					["classes"] = { 9 },
 					["races"] = ALLIANCE_ONLY,
@@ -557,10 +553,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 				}),
-				q(47605, {	-- Coins of Air
-					["classes"] = { 4 },
-					["provider"] = { "n", 123087 },	-- Al'Abas
-				}),
 				q(45414, {	-- Confirming Suspicions
 					["sourceQuests"] = { 45413 },	-- Gathering Information
 					["provider"] = { "n", 116880 },	-- Kor'vas Bloodthorn
@@ -642,10 +634,6 @@ _.Zones =
 					["g"] = {
 						i(139746),	-- Wristbands of the Uncrowned
 					},
-				}),
-				q(40996, {	-- Delegation
-					["classes"] = { 4 },
-					["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 				}),
 			--	q(47079)	-- Delivering Lost Knowledge -- removed?
 				q(47049, {	-- Demonology: Fate of the Tideskorn
@@ -964,10 +952,6 @@ _.Zones =
 						{ "n", 115465 },	-- Archmage Modera
 					},
 				}),
-				q(40950, {	-- Honoring Success
-					["classes"] = { 4 },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
-				}),
 				q(42774, {	-- Hope Prevails
 					["classes"] = { 2 },
 					["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
@@ -989,10 +973,6 @@ _.Zones =
 				q(47595, {	-- I Don't Need Them, But I'll Take Them
 					["classes"] = { 4 },
 				}),
-				q(47594, {	-- I'll Take Those, Thanks!
-					["classes"] = { 4 },
-					["provider"] = { "n", 103792 },	-- Griftah
-				}),
 				q(44821, {	-- In Dire Need
 					["sourceQuests"] = { 44782 },	-- Away From Prying Eyes
 					["provider"] = { "n", 115465 },	-- Archmage Modera
@@ -1001,17 +981,13 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(44184, {	-- In the Blink of an Eye
-					["u"] = 2,	-- Changed to make the Tranquil Mind item Bop to stop abusing of class trials
+					["u"] = 40,	-- Changed to make the Tranquil Mind item Bop to stop abusing of class trials
 					["g"] = {
 						i(143780),	-- Tome of the Tranquil Mind
 					},
 				}),
 				q(44663, {	-- In the Blink of an Eye
 					i(143785),	-- Tome of the Tranquil Mind
-				}),
-				q(47604, {	-- In the Land of Magic
-					["classes"] = { 4 },
-					["provider"] = { "n", 123087 },	-- Al'Abas
 				}),
 				q(40995, {	-- Injection of Power
 					["classes"] = { 4 },
@@ -1058,10 +1034,6 @@ _.Zones =
 					["classes"] = { 2 },
 					["provider"] = { "n", 92183 },	-- Alard Schmied
 				}),
-				q(40997, {	-- Lethal Efficiency
-					["classes"] = { 4 },
-					["provider"] = { "n", 98092 },	-- Nikki the Gossip
-				}),
 				q(42168, {	-- Looking into the Darkness
 					["sourceQuests"] = {
 						40611,	-- The Fate of Deadwind
@@ -1070,10 +1042,6 @@ _.Zones =
 					["classes"] = { 9 },	-- Warlock
 					["coord"] = { 54.0, 47.0, 627 },
 					["provider"] = { "n", 106610 },	-- Calydus
-				}),
-				q(47606, {	-- Loyalty Is Its Own Reward
-					["classes"] = { 4 },
-					["provider"] = { "n", 123087 },	-- Al'Abas
 				}),
 				q(39986, {	-- Magic Message
 					["sourceQuests"] = {
@@ -1508,10 +1476,6 @@ _.Zones =
 						{ "n", 115468 },	-- Archmage Karlain
 					},
 				}),
-				q(47592, {	-- Shine Bright Like a Diamond
-					["classes"] = { 4 },
-					["provider"] = { "n", 103792 },	-- Griftah
-				}),
 				q(42017, {	-- Shrine of the Truthguard
 					["classes"] = { 2 },
 					["provider"] = { "n", 105813 },	-- Orik Trueheart
@@ -1600,10 +1564,6 @@ _.Zones =
 					["classes"] = { 8 },
 					["provider"] = { "n", 102700 },	-- Meryl Felstorm
 				}),
-				q(40849, {	-- The Dreadblades
-					["classes"] = { 4 },
-					["provider"] = { "n", 102120 },	-- Fleet Admiral Tethys
-				}),
 				q(41036, {	-- The Dreadlord's Prize
 					["sourceQuests"] = { 41035 },	-- Felstorm's Plea
 					["classes"] = { 8 },
@@ -1626,11 +1586,6 @@ _.Zones =
 					},
 				}),
 				q(44375, {	-- The Final Blade
-					["classes"] = { 4 },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
-				}),
-				q(40839, {	-- The Final Shadow
-					["sourceQuests"] = { 40832 },	-- Call of the Uncrowned
 					["classes"] = { 4 },
 					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 				}),
@@ -1724,10 +1679,6 @@ _.Zones =
 						{ "n", 90259 },	-- Lord Maxwell Tyrosus
 						{ "n", 90369 },	-- Lord Maxwell Tyrosus
 					},
-				}),
-				q(47603, {	-- The Mysterious, Magnificent Al'Abas
-					["classes"] = { 4 },
-					["provider"] = { "n", 123087 },	-- Al'Abas
 				}),
 				q(40729, {	-- The New Blood
 					["sourceQuests"] = { 40716 },	-- The Sixth
@@ -1969,10 +1920,6 @@ _.Zones =
 				}),
 			--	q(44259),	-- Violet Hold -- granted by mission board
 			--	q(44058),	-- Volpin the Elusive -- starts from all order halls
-				q(47591, {	-- Wanna Buy a Lamp?
-					["classes"] = { 4 },
-					["provider"] = { "n", 103792 },	-- Griftah
-				}),
 				q(38576, {	-- We Meet at Light's Hope
 					["sourceQuests"] = { 38376 },	-- The Search for the Highlord
 					["classes"] = { 2 },

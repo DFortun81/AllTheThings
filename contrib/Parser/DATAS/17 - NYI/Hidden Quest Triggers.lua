@@ -840,8 +840,15 @@ _.NeverImplemented =
 		--    Legion     --
 		-------------------
 	--	Various tracking quests
+		q(42741),	-- Legion Expansion Started Tracking Quest
+		q(46733),	-- Legion Expansion Started Tracking Quest
+		q(40658),	-- Durotar - Tracking Quest - W1 - See Demon Attack ("Demons Among Us" quest)
+		q(33707),	-- Durotar - Demons Among Us - Horde - looks like a possible alpha version of the quest? triggers when turning in "Demons Among Us"
+		q(40768),	-- Orgrimmar - Tracking Quest - W1 - Intro to Illidari Complete - triggers when turning in "Keep Your Friends Close"
 		q(40616),	-- Tracking Quest - W1 - Saw Leader Die
 		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
+		q(44483),	-- Vendor Beckon Trigger - Druid
+		q(44484),	-- Vendor Beckon Trigger - Druid
 		q(45533),	-- Legion Dungeon Reward Quest
 		q(44437),	-- Legion Sungeon Reward quest (Wrath of Azshara)
 		q(38305),	-- Cenarius, Keeper of the Grove — unused version of quest 40122
@@ -901,7 +908,9 @@ _.NeverImplemented =
 		q(40302),	-- FLAG - Prospecting 01
 		q(40303),	-- FLAG - Prospecting 02
 		q(40304),	-- FLAG - Prospecting 03 - triggered when completing a jewelcrafting world quest in Dalaran
-		q(38894),	-- Hunter Order Hall - Founded the order hall
+		
+		q(38894),	-- Generic Order Hall - Founded the order hall
+		
 		q(40621),	-- Hunter Order Hall - Beast Mastery Chosen first
 		q(44045),	-- Hunter Order Hall - Beast Mastery Chosen
 		q(44367),	-- Hunter Order Hall - Beast Mastery Chosen
@@ -913,6 +922,17 @@ _.NeverImplemented =
 		q(44368),	-- Hunter Order Hall - Marksmanship Chosen
 		q(43158),	-- Hunter Order Hall - conversation flag for a hidden romance quest
 		q(43837),	-- Hunter Order Hall - tutorial - combat ally unlocked
+		
+		q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
+		q(44036),	-- Rogue Order Hall - Assassination Chosen
+		q(44036),	-- Rogue Order Hall - Asassination Chosen
+		q(44037),	-- Rogue Order Hall - Combat Chosen
+		q(44377),	-- Rogue Order Hall - Combat Chosen
+		q(40843),	-- Rogue Order Hall - Dreadblades Chosen
+		q(40844),	-- Rogue Order Hall - Fangs of the Devourer Chosen
+		q(40842),	-- Rogue Order Hall - Kingslayers Chosen
+		q(44038),	-- Rogue Order Hall - Subtlety Chosen
+		q(44378),	-- Rogue Order Hall - Subtlety Chosen
 		
 		q(38544),	-- FLAG: Demonsteel Waistguard Crafted
 		q(38546),	-- FLAG: Demonsteel Boots Crafted

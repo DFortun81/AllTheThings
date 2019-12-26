@@ -26,6 +26,24 @@ _.ExpansionFeatures =
 					739,	-- Trueshot Lodge (Hunter)
 				},
 				["g"] = {
+					n(-17, {	-- Quests
+						q(44865, {	-- Butler to the Great
+							["provider"] = { "n", 115551 },	-- Phantom Valet
+							["g"] = {
+								follower(733),	-- Moroes
+							},
+						}),
+						q(39718, {	-- Paradise Lost
+							["provider"] = { "n", 98613 },	-- Scouting Map
+							["classes"] = { 12 },	-- Demon Hunter
+						}),
+						q(45312, {	-- You Beat the Ball of Meat
+							["provider"] = { "i", 143590 },	-- Hunk of Meatball
+							["g"] = {
+								follower(986),	-- Meatball
+							},
+						}),
+					}),
 					mission(1785, {	-- Assault on Felfire Armory
 						["questID"] = 48601,	-- Felfire Shattering
 						["g"] = {
@@ -73,18 +91,6 @@ _.ExpansionFeatures =
 								}),
 							},
 						}),
-					}),
-					q(44865, {		-- Butler to the Great
-						["provider"] = { "n", 115551 },	-- Phantom Valet
-						["groups"] = {
-							follower(733),	-- Moroes
-						},
-					}),
-					q(45312, {		-- You Beat the Ball of Meat
-						--["provider"] = { "n",  }i(143590),	-- Hunk of Meatball
-						["groups"] = {
-							follower(986),	-- Meatball
-						},
 					}),
 					i(152960),	-- Argussian Reach Insignia
 					i(152957),	-- Army of the Light Insignia

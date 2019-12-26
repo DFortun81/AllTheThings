@@ -607,6 +607,7 @@ _.Zones =
 				q(44281, {	-- To Be Prepared
 					["provider"] = { "n", 4311 },	-- Holgar Stormaxe
 					["lvl"] = 98,
+					["coord"] = { 46.0, 13.7, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 43926,	-- The Legion Returns
 					["g"] = {
