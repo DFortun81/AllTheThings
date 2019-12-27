@@ -779,8 +779,8 @@ _.Zones =
 						},
 					}),
 					q(40039, {	-- Tharillon's Fall
-					["sourceQuests"] = { 40038 },	-- Insane Ramblings
-					["provider"] = { "n", 92464 },	-- Kuhuine Tenderstride
+						["sourceQuests"] = { 40038 },	-- Insane Ramblings
+						["provider"] = { "n", 92464 },	-- Kuhuine Tenderstride
 						["g"] = {
 							recipe(193306),	-- Starlight Rose (Rank 3)
 						},
@@ -814,16 +814,15 @@ _.Zones =
 					}),
 				}),
 				prof(773, {	-- Inscription
-					i(136909, {	-- Aethrem Crystal
-						["description"] = "There is a chance to create this item when milling Aethril.",
+					q(39942, {	-- Aethrem Crystal
+						["provider"] = { "i", 136909 },	-- Aethrem Crystal
+						["description"] = "There is a chance of getting this quest when milling Aethril.",
 						["g"] = {
-							q(39942, {	-- Aethrem Crystal
-								recipe(209658),	-- Mass Mill Aethril
-							}),
+							recipe(209658),	-- Mass Mill Aethril
 						},
 					}),
-					o(244651, {	-- Steamy Romance Novel
-						q(39961),	-- An Embarrassing Revelation
+					q(39961, {	-- An Embarrassing Revelation
+						["provider"] = { "o", 244651 },	-- Steamy Romance Novel
 					}),
 					q(39950,  {	-- An Odd Trinket
 						["sourceQuests"] = { 39949 },	-- Once a Scribe Like You
@@ -836,12 +835,11 @@ _.Zones =
 						["sourceQuests"] = { 39327 },	-- There's a Scribe for That
 						["provider"] = { "n", 92458 },	-- Deucus Valdera
 					}),
-					i(136912, {	-- Bulging Nightmare Pod
-						["description"] = "There is a chance to create this item when milling Dreamleaf.",
+					q(40062, {	-- Bulging Nightmare Pod
+						["provider"] = { "i", 136912 },	-- Bulging Nightmare Pod
+						["description"] = "There is a chance of getting this quest when milling Dreamleaf.",
 						["g"] = {
-							q(40062, {	-- Bulging Nightmare Pod
-								recipe(209659),	-- Mass Mill Dreamleaf
-							}),
+							recipe(209659),	-- Mass Mill Dreamleaf
 						},
 					}),
 					q(39957,  {	-- Demon Ink
@@ -854,12 +852,11 @@ _.Zones =
 					q(39932,  {	-- Fish Ink
 						["provider"] = { "n", 92195 },	-- Professor Pallin
 					}),
-					i(136916, {	-- Fjarnsk
-						["description"] = "Chance to create item when milling Fjarnskaggl.",
+					q(40065, {	-- Fjarnsk
+						["provider"] = { "i", 136916 },	-- Fjarnsk
+						["description"] = "There is a chance of getting this quest when milling Fjarnskaggl.",
 						["g"] = {
-							q(40065, {	-- Fjarnsk
-								recipe(209661),	-- Mass Mill Fjarnskaggl
-							}),
+							recipe(209661),	-- Mass Mill Fjarnskaggl
 						},
 					}),
 					q(39953,  {	-- Halls of Valor: Vision of Valor
@@ -885,20 +882,18 @@ _.Zones =
 					q(39934,  {	-- Our New Allies
 						["provider"] = { "n", 92195 },	-- Professor Pallin
 					}),
-					i(136917, {	-- Roseate Essence
-						["description"] = "There is a chance to create this item when milling Starlight Rose.",
+					q(39951, {	-- Roseate Essence
+						["provider"] = { "i", 136917 },	-- Roseate Essence
+						["description"] = "There is a chance of getting this quest when milling Starlight Rose.",
 						["g"] = {
-							q(39951, {	-- Roseate Essence
-								recipe(209662),	-- Mass Mill Starlight Rose
-							}),
+							recipe(209662),	-- Mass Mill Starlight Rose
 						},
 					}),
-					i(136918, {	-- Sallow Essence
-						["description"] = "There is a chance to create this item when milling Felwort.",
+					q(39952, {	-- Sallow Essence
+						["provider"] = { "i", 136918 },	-- Sallow Essence
+						["description"] = "There is a chance of getting this quest when milling Felwort.",
 						["g"] = {
-							q(39952, {	-- Sallow Essence
-								recipe(209664),	-- Mass Mill Felwort
-							}),
+							recipe(209664),	-- Mass Mill Felwort
 						},
 					}),
 					q(39847,  {	-- Sign This
@@ -957,12 +952,11 @@ _.Zones =
 							i(137783),	-- Vantus Rune Technique: Gul'dan (Rank 3)
 						},
 					}),
-					i(136915, {	-- Woody Seed Cluster
-						["description"] = "There is a chance to create this item when milling Foxflower.",
+					q(40064, {	-- Woody Seed Cluster
+						["provider"] = { "i", 136915 },	-- Woody Seed Cluster
+						["description"] = "There is a chance of getting this quest when milling Foxflower.",
 						["g"] = {
-							q(40064, {	-- Woody Seed Cluster
-								recipe(209660),	-- Mass Mill Foxflower
-							}),
+							recipe(209660),	-- Mass Mill Foxflower
 						},
 					}),
 				}),
@@ -995,13 +989,6 @@ _.Zones =
 							recipe(264546),	-- Legion Jewelcrafting
 						},
 					}),
-					{	-- Felslate
-						["itemID"] = 123919,	-- Felslate
-						["requireSkill"] = 755,	-- Jewelcrafting
-						["g"] = {
-							i(141312),	-- Design: Mass Prospect Felslate
-						},
-					},
 					q(40561,  {	-- Halls of Valor: Jewel of the Heavens
 						["provider"] = { "n", 93527 },	-- Timothy Jones
 						["g"] = {
@@ -1014,8 +1001,8 @@ _.Zones =
 							recipe(195881),	-- Jeweled Lockpick
 						},
 					}),
-					o(246250, {	-- Letter From Jabrul
-						q(40556),	-- Jabrul Needs You
+					q(40556, {	-- Jabrul Needs You
+						["provider"] = { "o", 246250 },	-- Letter From Jabrul
 					}),
 					q(40538,  {	-- Lapidary Lessons
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
@@ -1023,13 +1010,6 @@ _.Zones =
 							recipe(195854),	-- Versatile Maelstrom Sapphire
 						},
 					}),
-					{	-- Leystone Ore
-						["itemID"] = 123918,	-- Leystone Ore
-						["requireSkill"] = 755,	-- Jewelcrafting
-						["g"] = {
-							i(141311),	-- Design: Mass Prospect Leystone
-						},
-					},
 					q(40534,  {	-- Making the Cut
 						recipe(195851),	-- Masterful Queen's Opal
 					}),
@@ -1216,8 +1196,12 @@ _.Zones =
 					}),
 				}),
 				prof(186, {	-- Mining
-				--	q(38795)	-- Felslate Deposit Sample -- granted by i(124496)
-				--	q(38796)	-- Felslate Seam Sample -- granted by i(124497)
+					q(38795, {	-- Felslate Deposit Sample
+						["provider"] = { "i", 124496 },	-- Felslate Deposit Sample
+					}),
+					q(38796, {	-- Felslate Seam Sample
+						["provider"] = { "i", 124497 },	-- Felslate Seam Sample
+					}),
 					q(39830, {	-- Hellfire Citadel: Hellfire and Brimstone
 						["classes"] = { 1, 3 },
 						["provider"] = { "n", 93189 },	-- Mama Diggs
@@ -1232,15 +1216,25 @@ _.Zones =
 							recipe(184505),	-- Infernal Brimstone (Rank 2)
 						},
 					}),
-				--	q(38806)	-- Infernal Brimstone Sample -- granted by i(124502)
+					q(38806, {	-- Infernal Brimstone Sample
+						["provider"] = { "i", 124502 },	-- Infernal Brimstone Sample
+					}),
 					q(39790, {	-- Infernal Brimstone Theory
 						["sourceQuests"] = { 38807 },	-- Infernal Brimstone Analysis
 						["provider"] = { "n", 93189 },	-- Mama Diggs
 					}),
-				--	q(38777)	-- Leystone Deposit Sample -- granted by i(124489)
-				--	q(38784)	-- Leystone Seam Sample -- granted by i(124490)
-				--	q(38797)	-- Living Felslate Sample -- granted by i(124498)
-				--	q(38785)	-- Living Leystone Sample -- granted by i(124491)
+					q(38777, {	-- Leystone Deposit Sample
+						["provider"] = { "i", 124489 },	-- Leystone Deposit Sample
+					}),
+					q(38784, {	-- Leystone Seam Sample
+						["provider"] = { "i", 124490 },	-- Leystone Seam Sample
+					}),
+					q(38797, {	-- Living Felslate Sample
+						["provider"] = { "i", 124498 },	-- Living Felslate Sample
+					}),
+					q(38785, {	-- Living Leystone Sample
+						["provider"] = { "i", 124491 },	-- Living Leystone Sample
+					}),
 					q(39817, {	-- The Brimstone's Secret
 						["sourceQuests"] = { 39763 },	-- For Whom the Fel Tolls
 						["provider"] = { "n", 97360 },	-- Matthew Rabis
@@ -1257,9 +1251,15 @@ _.Zones =
 						["requireSkill"] = 393,	-- Skinning
 						["provider"] = { "n", 93541 },	-- Kondal Huntsworn
 					}),
-				--	q(40156)	-- Felhide Sample -- granted by i(129863)
-				--	q(40136)	-- Immaculate Stonehide Leather -- granted by i(129866)
-				--	q(40151)	-- Immaculate Stormscale -- granted by i(129867)
+					q(40156, {	-- Felhide Sample
+						["provider"] = { "i", 129863 },	-- Felhide Sample
+					}),
+					q(40136, {	-- Immaculate Stonehide Leather
+						["provider"] = { "i", 129866 },	-- Immaculate Stonehide Leather
+					}),
+					q(40151, {	-- Immaculate Stormscale
+						["provider"] = { "i", 129867 },	-- Immaculate Stormscale
+					}),
 					q(40144, {	-- Glielle
 						["sourceQuests"] = { 40143 },	-- Unfinished Treatise on the Properties of Stormscale
 						["requireSkill"] = 393,	-- Skinning
@@ -1288,8 +1288,12 @@ _.Zones =
 						["coord"] = { 35.9, 28.5, 627 },
 						["provider"] = { "n", 93541 },	-- Kondal Huntsworn
 					}),
-				--	q(40131),	-- Stonehide Leather Sample -- granted by i(129860)
-				--	q(40141),	-- Stormscale Sample -- granted by i(129862)
+					q(40131, {	-- Stonehide Leather Sample
+						["provider"] = { "i", 129860 },	-- Stonehide Leather Sample
+					}),
+					q(40141, {	-- Stormscale Sample
+						["provider"] = { "i", 129862 },	-- Stormscale Sample
+					}),
 					q(40142, {	-- The Core of the Stormscale
 						["sourceQuests"] = { 40141 },	-- Stormscale Sample
 						["provider"] = { "n", 93541 },	-- Kondal Huntsworn
@@ -1422,10 +1426,9 @@ _.Zones =
 							39602,	-- Where's Lyndras: Sewer Sleuthing
 						},
 					}),
-					o(243899, {	-- Broken Ley Flame Burner
-						q(39667, {	-- Where's Lyndras: Leyflame Larceny
-							["sourceQuests"] = { 39605 },	-- Where's Lyndras: Downward Spiral
-						}),
+					q(39667, {	-- Where's Lyndras: Leyflame Larceny
+						["provider"] = { "o", 243899 },	-- Broken Ley Flame Burner
+						["sourceQuests"] = { 39605 },	-- Where's Lyndras: Downward Spiral
 					}),
 					q(39602, {	-- Where's Lyndras: Sewer Sleuthing
 						["sourceQuests"] = { 38964 },	-- Where's Lyndras Now?

@@ -41,5 +41,18 @@ profession(755, {    -- Jewelcrafting
 				}),
 			},
 		},
+		-- TODO:: perhaps these should be moved to Crafted Items since they're a byproduct of profession use?
+		cat(464, {	-- Legion Designs
+			n(-37, {	-- Discovery
+				n(-5, {	-- Prospecting
+					i(123919, {	-- Felslate
+						i(141312),	-- Design: Mass Prospect Felslate
+					}),
+					i(123918, {	-- Leystone Ore
+						i(141311),	-- Design: Mass Prospect Leystone
+					}),
+				}),
+			}),
+		}),
 	}),
 });

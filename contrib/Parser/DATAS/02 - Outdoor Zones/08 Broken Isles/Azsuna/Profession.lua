@@ -7,10 +7,9 @@ _.Zones =
 		m(630, {	-- Azsuna
 			n(-38, { 	-- Profession
 				prof(171, {	-- Alchemy
-					o(243392, {	-- Alchemy Book
-						q(39390, {	-- A Mysterious Text
-							["sourceQuests"] = { 39566 },	-- The Search for Knowledge
-						}),
+					q(39390, {	-- A Mysterious Text
+						["provider"] = { "o", 243392 },	-- Alchemy Book
+						["sourceQuests"] = { 39566 },	-- The Search for Knowledge
 					}),
 				}),
 				prof(794, {	-- Archaeology
