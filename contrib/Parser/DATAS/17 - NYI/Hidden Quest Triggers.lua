@@ -911,6 +911,10 @@ _.NeverImplemented =
 		q(40304),	-- FLAG - Prospecting 03 - triggered when completing a jewelcrafting world quest in Dalaran
 		
 		q(38894),	-- Generic Order Hall - Founded the order hall
+		q(43837),	-- Generic Order Hall - Tutorial - combat ally unlocked
+		q(43900),	-- Generic Order Hall - Tracking Quest: All - Troop A Enabled
+		q(43901),	-- Generic Order Hall - Tracking Quest: All - Troop B Enabled
+		q(43433),	-- Generic Order Hall - Tracking Quest: Tutorial - Troops Built
 		
 		q(40621),	-- Hunter Order Hall - Beast Mastery Chosen first
 		q(44045),	-- Hunter Order Hall - Beast Mastery Chosen
@@ -922,7 +926,6 @@ _.NeverImplemented =
 		q(40620),	-- Hunter Order Hall - Marksmanship Chosen
 		q(44368),	-- Hunter Order Hall - Marksmanship Chosen
 		q(43158),	-- Hunter Order Hall - conversation flag for a hidden romance quest
-		q(43837),	-- Hunter Order Hall - tutorial - combat ally unlocked
 		
 		q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
 		q(44036),	-- Rogue Order Hall - Assassination Chosen
@@ -934,6 +937,7 @@ _.NeverImplemented =
 		q(40842),	-- Rogue Order Hall - Kingslayers Chosen
 		q(44038),	-- Rogue Order Hall - Subtlety Chosen
 		q(44378),	-- Rogue Order Hall - Subtlety Chosen
+		q(44296),	-- Rogue Order Hall - Tracking Quest: Finished Rise, Champions
 		
 		q(38544),	-- FLAG: Demonsteel Waistguard Crafted
 		q(38546),	-- FLAG: Demonsteel Boots Crafted

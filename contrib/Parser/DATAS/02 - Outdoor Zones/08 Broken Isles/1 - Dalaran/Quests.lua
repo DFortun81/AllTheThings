@@ -673,10 +673,10 @@ _.Zones =
 					},
 				}),
 				q(41220, {	-- Down to Azsuna
-					["sourceQuests"] = { 39718 },	-- Paradise Lost (Demon Hunter)
-					["isBreadcrumb"] = true,
 					["coord"] = { 72.0, 45.4, 627 },
 					["provider"] = { "n", 41220 },	-- Archmage Khadgar
+					["sourceQuests"] = { 39718 },	-- Paradise Lost
+					["isBreadcrumb"] = true,
 				}),
 				q(46103, {	-- Dread Infiltrators
 					["classes"] = { 4 },
@@ -1352,10 +1352,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 93773 },	-- High Overlord Saurfang
 				}),
-				q(43007, {	-- Return to the Chamber of Shadows
-					["classes"] = { 4 },
-					["provider"] = { "n", 112679 },	-- Valeera Sanguinar
-				}),
 				q(44087, {	-- Return to the Fel Hammer
 					["sourceQuests"] = { 41069 },	-- Direct Our Wrath
 					["isBreadcrumb"] = true,
@@ -1371,11 +1367,6 @@ _.Zones =
 				q(42608, {	-- Rise, Champions
 					["classes"] = { 9 },
 					["provider"] = { "n", 101097 },	-- Calydus
-				}),
-				q(42139, {	-- Rise, Champions
-					["sourceQuests"] = { 43007 },	-- Return to the Chamber of Shadows
-					["classes"] = { 4 },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 				}),
 				q(42128, {	-- Ritual Reagents
 					["sourceQuests"] = {
@@ -1527,11 +1518,6 @@ _.Zones =
 				q(43373, {	-- The Best and Brightest
 					["classes"] = { 5 },
 					["provider"] = { "n", 110557 },	-- Prophet Velen
-				}),
-				q(43014, {	-- The Big Bad Wolfe
-					["sourceQuests"] = { 43013 },	-- The School of Roguery
-					["classes"] = { 4 },
-					["provider"] = { "n", 98092 },	-- Nikki the Gossip
 				}),
 				q(44041, {	-- The Bloody Truth
 					["sourceQuests"] = { 43829 },	-- Spy vs. Spy
@@ -1728,11 +1714,6 @@ _.Zones =
 					["sourceQuests"] = { 43253 },	-- Maw of Souls: Ancient Vrykul Legends
 					["classes"] = { 4 },
 					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
-				}),
-				q(43013, {	-- The School of Roguery
-					["sourceQuests"] = { 42140 },	-- A More Wretched Hive of Scum and Villainy
-					["classes"] = { 4 },
-					["provider"] = { "n", 98092 },	-- Nikki the Gossip
 				}),
 				q(38376, {	-- The Search for the Highlord
 					["classes"] = { 2 },

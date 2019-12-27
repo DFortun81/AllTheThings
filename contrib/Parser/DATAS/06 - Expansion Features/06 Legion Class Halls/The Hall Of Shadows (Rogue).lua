@@ -109,8 +109,10 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinara
 					}),
 					q(42140, {	-- A More Wretched Hive of Scum and Villainy
+						["coord"] = { 37.7, 44.9, 626 },
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 98092 },	-- Nikki the Gossip
+						["sourceQuest"] = 42139,	-- Rise, Champions
 					}),
 					q(44252, {	-- A Sheath For Every Blade
 						["classes"] = { 4 },	-- Rogue
@@ -124,6 +126,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 40839,	-- The Final Shadow
 					}),
+					q(44034, {	-- Another Worthy Blade
+						["lvl"] = 102,
+						["coord"] = { 41.3, 78.1, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
+					}),
 					q(40832, {	-- Call of The Uncrowned
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 102018 },	-- Ravenholdt Courier
@@ -136,8 +144,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(43262, {	-- Champion: Garona Halforcen
+						["coord"] = { 42.4, 74.7, 626 },
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 94141 },	-- Garona Halforcen
+						["sourceQuest"] = 42139,	-- Rise, Champions
 						["g"] = {
 							follower(778),	-- Garona Halforcen
 						},
@@ -194,8 +204,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(43261, {	-- Champion: Vanessa VanCleef
+						["coord"] = { 42.4, 68.3, 626 },
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 102636 },	-- Vanessa VanCleef
+						["sourceQuest"] = 42139,	-- Rise, Champions
 						["g"] = {
 							follower(591),	-- Vanessa VanCleef
 						},
@@ -225,6 +237,15 @@ _.ExpansionFeatures =
 						["classes"] = { 4 },	-- Rogue
 						["g"] = {
 							i(143679),	-- Crackers Pet
+						},
+					}),
+					q(47607, {	-- High Fash-Djinn
+						["coord"] = { 45.0, 26.8, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 123087 },	-- Al'Abas
+						["sourceQuest"] = 47606,	-- Loyalty Is Its Own Reward
+						["g"] = {
+							i(151144),	-- Gleaming Lamp of Al'Abas
 						},
 					}),
 					q(40950, {	-- Honoring Success
@@ -264,11 +285,30 @@ _.ExpansionFeatures =
 							i(151143),	-- Shining Lamp of Al'Abas
 						},
 					}),
+					q(43007, {	-- Return to the Chamber of Shadows
+						["lvl"] = 101,
+						["maps"] = { 627 },	-- Dalaran
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 112679 },	-- Valeera Sanguinar
+						["isBreadcrumb"] = true,
+					}),
+					q(42139, {	-- Rise, Champions
+						["coord"] = { 41.3, 78.1, 626 },
+						["classes"] = { 4 },
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
+						["sourceQuest"] = 43007,	-- Return to the Chamber of Shadows
+					}),
 					q(47592, {	-- Shine Bright Like a Diamond
 						["coord"] = { 45.4, 27.6, 626 },
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 103792 },	-- Griftah
 						["sourceQuest"] = 47591,	-- Wanna Buy a Lamp?
+					}),
+					q(43014, {	-- The Big Bad Wolfe
+						["coord"] = { 37.8, 45.0, 626 },
+						["classes"] = { 4 },
+						["provider"] = { "n", 98092 },	-- Nikki the Gossip
+						["sourceQuest"] = 43013,	-- The School of Roguery
 					}),
 					q(40849, {	-- The Dreadblades
 						["lvl"] = 98,
@@ -298,6 +338,12 @@ _.ExpansionFeatures =
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 123087 },	-- Al'Abas
 						["sourceQuest"] = 47592,	-- Shine Bright Like a Diamond
+					}),
+					q(43013, {	-- The School of Roguery
+						["coord"] = { 37.7, 44.9, 626 },
+						["classes"] = { 4 },
+						["provider"] = { "n", 98092 },	-- Nikki the Gossip
+						["sourceQuest"] = 42140,	-- A More Wretched Hive of Scum and Villainy
 					}),
 					q(46089, {	-- The Sunken Vault
 						["lvl"] = 110,
@@ -431,6 +477,7 @@ _.ExpansionFeatures =
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(136803, {	-- Dirty Tricks, Vol 1: Detection
+								-- TODO: get tracking to work for these kinds of items
 								--["spellID"] = 210108,	-- Detection
 							}),
 							i(139740, {	-- Footpads of the Uncrowned
