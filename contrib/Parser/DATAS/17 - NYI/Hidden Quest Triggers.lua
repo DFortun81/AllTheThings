@@ -1071,14 +1071,6 @@ _.NeverImplemented =
 		q(38864),	-- 7.0 Val'sharah - Treasure 020 - Lunarwing Shallows - twh — underwater entrance 54.0, 82.1
 		q(39074),	-- 7.0 Val'sharah - Treasure 029 - Whispering Bluffs - twh — 65.4, 86.2
 		q(46990),	-- Assault Treasure — opened Small Treasure Chest in Highmountain (44.2, 40.4)
-		q(38365),	-- Azsuna - Treasure 015 - Giblin Treasure — looted Disputed Treasure near Shackle's Den
-		q(38367),	-- Azsuna - Treasure 016 - Cask of Special Reserve — looted Glimmering Treasure Chest in Challiane Vineyards
-		q(42278),	-- Azsuna - Treasure 024 - Gloombound Barrow 02 - Small — looted Small Treasure Chest in Gloombound Barrow while on "This IS In My Contract."
-		q(42285),	-- Azsuna - Treasure 029 - Nar'thalas 05 - Small — opened a treasure in Nar'thalas Academy near the Tidestone
-		q(42291),	-- Azsuna - Treasure 033 - Oceanus Cove 02 - Small — looted Small Treasure Chest inside Oceanus Cove
-		q(42297),	-- Azsuna - Treasure 039 (Large) - Mountain Top — looted treasure chest near Felwing encounter
-		q(42958),	-- Azsuna - Treasure 042 - Felblaze Ingress - Small — 65.4, 29.5
-		q(44103),	-- Azsuna - Treasure 044 - Felblaze Underwater — cave entrance 69.7, 29.5
 		q(40491),	-- Highmountain - Treasure 084 - Thunder Totem (13.6, 55.4, 750)
 		q(43830),	-- Treasure 001 - South of Felsoul — suramar, 38.1, 87.0
 		q(43868),	-- Treasure 033 - City - Lower City Boat — looted treasure chest on boat at (51.8, 82.2, 680)
