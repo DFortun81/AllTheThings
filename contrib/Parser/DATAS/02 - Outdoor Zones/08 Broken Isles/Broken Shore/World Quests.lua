@@ -57,23 +57,17 @@ _.Zones =
 				q(45559, {	-- Behind Enemy Portals
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						ach(11681),	-- Crate Expectations
-					},
 				}),
 				q(45542, {	-- Behind Enemy Portals
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
+					["g"] = {	-- NOTE: There are 3 versions of this world quest but only this one can be used for the achievement!
 						ach(11681),	-- Crate Expectations
 					},
 				}),
 				q(45520, {	-- Behind Enemy Portals
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
-					["g"] = {
-						ach(11681),	-- Crate Expectations
-					},
 				}),
 				q(46073, {	-- Break Their Garrison
 					["lvl"] = 110,
