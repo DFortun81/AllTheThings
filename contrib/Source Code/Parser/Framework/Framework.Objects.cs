@@ -438,6 +438,9 @@ namespace ATT
 	            {164, 164},	// Blacksmithing [7.3.5]
                 {9788, 9788},   // Armorsmithing
                 {9787, 9787},   // Weaponsmithing
+                {17041, 17041},   // Master Axesmith
+                {17040, 17040},   // Master Hammersmith
+                {17039, 17039},   // Master Swordsmith
 	            {2477, 164},	// Classic Blacksmithing [8.0.1]
 	            {2476, 164},	// Outland Blacksmithing [8.0.1]
 	            {2475, 164},	// Northrend Blacksmithing [8.0.1]
