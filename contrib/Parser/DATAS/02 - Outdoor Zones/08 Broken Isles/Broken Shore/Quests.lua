@@ -670,7 +670,6 @@ _.Zones =
 				q(46208),	-- A Godly Invitation
 				q(46336),	-- A Golden Ticket
 				q(43407),	-- A Hero's Weapon
-				q(41920),	-- A Matter of Finesse
 				q(47202, {	-- A Personal Message
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -729,7 +728,6 @@ _.Zones =
 				q(40402, {	-- Clandestine Operation
 					["races"] = HORDE_ONLY,
 				}),
-				q(41921),	-- Closing In
 				q(44925),	-- Closing the Eye
 				q(45769),	-- Conflagration
 				q(45350),	-- Countering the Contagion

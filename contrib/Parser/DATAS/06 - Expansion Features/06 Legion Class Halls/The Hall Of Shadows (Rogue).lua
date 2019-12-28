@@ -10,6 +10,7 @@ _.ExpansionFeatures =
 			["maps"] = {
 				626,	-- The Hall of Shadows (Rogue)
 				740,	-- Shadowgore Citadel (Fangs of the Devourer Scenario)
+				741,	-- Shadowgore Citadel (Fangs of the Devourer Scenario)
 			},
 			["g"] = {
 				i(139781, {	-- Marin Noggenfogger's Lucky Coin
@@ -111,8 +112,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 113362 },	-- Lord Jorach Ravenholdt
 					}),
 					q(41920, {	-- A Matter of Finesse
+						["maps"] = { 627 },	-- Dalaran
+						["coord"] = { 51.6, 70.4, 627 },
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinara
+						["sourceQuest"] = 41919,	-- The Shadows Reveal
 					}),
 					q(42140, {	-- A More Wretched Hive of Scum and Villainy
 						["coord"] = { 37.7, 44.9, 626 },
@@ -229,6 +233,13 @@ _.ExpansionFeatures =
 							42502,	-- No Sanctuary
 						},
 					}),
+					q(41921, {	-- Closing In
+						["maps"] = { 628 },	-- The Underbelly
+						["coord"] = { 67.9, 63.1, 628 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
+						["sourceQuest"] = 41920,	-- A Matter of Finesse
+					}),
 					q(42503, {	-- Codebreaker
 						["lvl"] = 100,
 						["maps"] = { 47 },	-- Duskwood
@@ -266,6 +277,13 @@ _.ExpansionFeatures =
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 						["sourceQuest"] = 40950,	-- Honoring Success
+					}),
+					q(41924, {	-- Fangs of the Devourer
+						["maps"] = { 628 },	-- The Underbelly
+						["coord"] = { 67.9, 63.1, 628 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 105464 },	-- Val'zuun
+						["sourceQuest"] = 41922,	-- Traitor!
 					}),
 					q(42501, {	-- Finishing the Job
 						["coord"] = { 42.3, 755.9, 626 },
@@ -413,6 +431,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["sourceQuest"] = 42140,	-- A More Wretched Hive of Scum and Villainy
 					}),
+					q(41919, {	-- The Shadows Reveal
+						["coord"] = { 40.8, 75.4, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
+						["sourceQuest"] = 40840,	-- A Worthy Blade
+						["description"] = "Pursue |cFFFFD700Fangs of the Devourer|r.",
+					}),
 					q(46089, {	-- The Sunken Vault
 						["lvl"] = 110,
 						["races"] = ALLIANCEE_ONLY,
@@ -446,6 +471,13 @@ _.ExpansionFeatures =
 							i(128869),	-- The Kingslayers (Sorrow)
 							i(128870),	-- The Kingslayers (Anguish)
 						},
+					}),
+					q(41922, {	-- Traitor!
+						["maps"] = { 627 },	-- Dalaran
+						["coord"] = { 49.4, 41.2, 627 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
+						["sourceQuest"] = 41920,	-- A Matter of Finesse
 					}),
 					q(47591, {	-- Wanna Buy a Lamp?
 						["coord"] = { 45.4, 27.6, 626 },

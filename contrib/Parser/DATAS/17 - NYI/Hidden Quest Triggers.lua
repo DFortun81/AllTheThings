@@ -937,8 +937,10 @@ _.NeverImplemented =
 		q(40844),	-- Rogue Order Hall - Fangs of the Devourer Chosen
 		q(40842),	-- Rogue Order Hall - Kingslayers Chosen
 		q(44038),	-- Rogue Order Hall - Subtlety Chosen second
-		q(44378),	-- Rogue Order Hall - Subtlety Chosen
+		q(44378),	-- Rogue Order Hall - Subtlety Chosen third
 		q(44296),	-- Rogue Order Hall - Tracking Quest: Finished Rise, Champions
+		q(44651),	-- Rogue Order Hall - Tracking Quest: 7.0 Class Hall - Rogue - Chapter 1.5 - Pacing Mission (triggers when completing the "Spy Vs Spy" mission)
+		q(42061),	-- Rogue Order Hall - Charge Trigger Hit - triggered after leaving the citadel during the Fangs of the Devourer scenario
 		
 		q(38544),	-- FLAG: Demonsteel Waistguard Crafted
 		q(38546),	-- FLAG: Demonsteel Boots Crafted

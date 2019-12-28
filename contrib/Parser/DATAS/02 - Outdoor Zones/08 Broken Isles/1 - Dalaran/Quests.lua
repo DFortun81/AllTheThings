@@ -1682,10 +1682,6 @@ _.Zones =
 					["classes"] = { 2 },
 					["provider"] = { "n", 90369 },	-- Lord Maxwell Tyrosus
 				}),
-				q(41919, {	-- The Shadows Reveal
-					["classes"] = { 4 },
-					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
-				}),
 				q(42120, {	-- The Silver Hand
 					["sourceQuests"] = { 42377 },	-- The Brother's Trail
 					["classes"] = { 2 },
