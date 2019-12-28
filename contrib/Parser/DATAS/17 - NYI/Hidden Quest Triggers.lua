@@ -915,6 +915,7 @@ _.NeverImplemented =
 		q(43900),	-- Generic Order Hall - Tracking Quest: All - Troop A Enabled
 		q(43901),	-- Generic Order Hall - Tracking Quest: All - Troop B Enabled
 		q(43433),	-- Generic Order Hall - Tracking Quest: Tutorial - Troops Built
+		q(42115),	-- Generic Order Hall - Tracking Quest: Chapter 1 completed - Triggers when you complete the quest that gets your first order hall upgrade
 		
 		q(40621),	-- Hunter Order Hall - Beast Mastery Chosen first
 		q(44045),	-- Hunter Order Hall - Beast Mastery Chosen
@@ -928,14 +929,14 @@ _.NeverImplemented =
 		q(43158),	-- Hunter Order Hall - conversation flag for a hidden romance quest
 		
 		q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
-		q(44036),	-- Rogue Order Hall - Assassination Chosen
-		q(44036),	-- Rogue Order Hall - Asassination Chosen
+		q(44036),	-- Rogue Order Hall - Assassination Chosen second
+		q(44376),	-- Rogue Order Hall - Assassination Chosen
 		q(44037),	-- Rogue Order Hall - Combat Chosen
 		q(44377),	-- Rogue Order Hall - Combat Chosen
 		q(40843),	-- Rogue Order Hall - Dreadblades Chosen
 		q(40844),	-- Rogue Order Hall - Fangs of the Devourer Chosen
 		q(40842),	-- Rogue Order Hall - Kingslayers Chosen
-		q(44038),	-- Rogue Order Hall - Subtlety Chosen
+		q(44038),	-- Rogue Order Hall - Subtlety Chosen second
 		q(44378),	-- Rogue Order Hall - Subtlety Chosen
 		q(44296),	-- Rogue Order Hall - Tracking Quest: Finished Rise, Champions
 		

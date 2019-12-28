@@ -288,10 +288,6 @@ _.Zones =
 					["classes"] = { 4 },
 					["provider"] = { "n", 118424 },	-- Injured Bandit
 				}),
-				q(44034, {	-- Another Worthy Blade
-					["classes"] = { 4 },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
-				}),
 				q(45482, {	-- Arcane: Fate of the Tideskorn
 					["classes"] = { 8 },
 					["providers"] = {
@@ -537,22 +533,6 @@ _.Zones =
 						{ "n", 122926 },	-- Image of Chromie
 					},
 				}),
-				o(250671, {	-- Notes on the Veiled Hand
-					q(42539, {	-- Cloak and Dagger
-						["sourceQuests"] = { 42503 },	-- Codebreaker
-						["races"] = HORDE_ONLY,
-						["classes"] = { 4 },
-					}),
-				}),
-				q(42503, {	-- Codebreaker
-					["sourceQuests"] = {
-						42501,	-- Finishing the Job
-						42502,	-- No Sanctuary
-					},
-					["classes"] = { 4 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 94138 },	-- Princess Tess Greymane
-				}),
 				q(45414, {	-- Confirming Suspicions
 					["sourceQuests"] = { 45413 },	-- Gathering Information
 					["provider"] = { "n", 116880 },	-- Kor'vas Bloodthorn
@@ -784,10 +764,6 @@ _.Zones =
 					["classes"] = { 9 },	-- Warlock
 					["coord"] = { 56.3, 65.0, 628 },
 					["provider"] = { "n", 101097 },	-- Calydus
-				}),
-				q(42501, {	-- Finishing the Job
-					["classes"] = { 4 },
-					["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 				}),
 				q(47055, {	-- Fire: The Folly of Levia Laurence
 					["classes"] = { 8 },
@@ -1150,10 +1126,6 @@ _.Zones =
 					["classes"] = { 3 },
 					["provider"] = { "n", 106558 },	-- Mimiron
 				}),
-				q(42502, {	-- No Sanctuary
-					["classes"] = { 4 },
-					["provider"] = { "n", 94138 },	-- Princess Tess Greymane
-				}),
 				q(42730, {	-- Noggenfogger's Reasonable Request
 					["classes"] = { 4 },
 					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
@@ -1472,11 +1444,6 @@ _.Zones =
 					["provider"] = { "n", 105813 },	-- Orik Trueheart
 				}),
 			--	q(47148),	-- Something Different -- granted when entering a brawl. weekly?
-				q(43829, {	-- Spy vs. Spy
-					["sourceQuests"] = { 43958 },	-- A Body of Evidence
-					["classes"] = { 4 },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
-				}),
 				q(41574, {	-- Stolen Thunder
 					["sourceQuests"] = { 41541 },	-- A Beastly Expedition
 					["classes"] = { 3 },
@@ -1570,10 +1537,6 @@ _.Zones =
 					["g"] = {
 						sp(233377),	-- Gaze of Aman'Thul
 					},
-				}),
-				q(44375, {	-- The Final Blade
-					["classes"] = { 4 },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 				}),
 				q(45904, {	-- The God-Queen's Gift
 					["classes"] = { 2, 4, 7, 8, 9 },
@@ -1921,11 +1884,6 @@ _.Zones =
 					},
 					["classes"] = { 3 },
 					["provider"] = { "n", 102478 },	-- Emmarel Shadewarden
-				}),
-				q(43015, {	-- What Winstone Suggests
-					["sourceQuests"] = { 43014 },	-- The Big Bad Wolfe
-					["classes"] = { 4 },
-					["provider"] = { "n", 98092 },	-- Nikki the Gossip
 				}),
 				q(45813, {	-- Where Art Thou, My Sweet
 					["classes"] = { 2 },

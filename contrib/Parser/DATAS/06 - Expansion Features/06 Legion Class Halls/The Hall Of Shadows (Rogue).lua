@@ -85,8 +85,10 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 					}),
 					q(43958, {	-- A Body of Evidence
+						["coord"] = { 41.4, 78.0, 626 },
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
+						["sourceQuest"] = 43015,	-- What Winstone Suggests
 					}),
 					q(43485, {	-- A Burning Distraction
 						["maps"] = { 627 },	-- Dalaran
@@ -98,7 +100,11 @@ _.ExpansionFeatures =
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 40840,	-- A Worthy Blade
-						["description"] = "Pursue the |cFFFFD700The Dreadblades|r.",
+						["description"] = "Pursue |cFFFFD700The Dreadblades|r.",
+						["g"] = {
+							i(128872),	-- The Dreadblades (Fate)
+							i(134552),	-- The Dreadblades (Fortune)
+						},
 					}),
 					q(43422, {	-- A Hero's Weapon
 						["classes"] = { 4 },	-- Rogue
@@ -212,6 +218,34 @@ _.ExpansionFeatures =
 							follower(591),	-- Vanessa VanCleef
 						},
 					}),
+					q(42539, {	-- Cloak and Dagger
+						["lvl"] = 100,
+						["maps"] = { 47 },	-- Duskwood
+						["coord"] = { 38.1, 67.6, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "o", 250671 },	-- Notes on the Veiled Hand
+						["sourceQuests"] = {
+							42501,	-- Finishing the Job
+							42502,	-- No Sanctuary
+						},
+					}),
+					q(42503, {	-- Codebreaker
+						["lvl"] = 100,
+						["maps"] = { 47 },	-- Duskwood
+						["classes"] = { 4 },
+						["coords"] = {
+							{ 42.4, 75.9, 626 },	-- Princess Tess Greymane
+							{ 38.1, 67.6, 626 },	-- Notes on the Veiled Hand
+						},
+						["providers"] = {
+							{ "n", 94138 },	-- Princess Tess Greymane
+							{ "o", 250671 },	-- Notes on the Veiled Hand
+						},
+						["sourceQuests"] = {
+							42501,	-- Finishing the Job
+							42502,	-- No Sanctuary
+						},
+					}),
 					q(47605, {	-- Coins of Air
 						["coord"] = { 45.0, 26.8, 626 },
 						["classes"] = { 4 },	-- Rogue
@@ -232,6 +266,12 @@ _.ExpansionFeatures =
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 						["sourceQuest"] = 40950,	-- Honoring Success
+					}),
+					q(42501, {	-- Finishing the Job
+						["coord"] = { 42.3, 755.9, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 94138 },	-- Princess Tess Greymane
+						["description"] = "Pursue |cFFFFD700The Kingslayer|r.",
 					}),
 					q(45848, {	-- Fit For a Pirate
 						["classes"] = { 4 },	-- Rogue
@@ -255,6 +295,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = {
 							-- TODO:: add the other rogue scenario quests here
 							40847,	-- A Friendly Accord (Outlaw)
+							42504,	-- The Unseen Blade (A) (Assassination)
+							42627,	-- The Unseen Blade (H) (Assassination)
 						},
 					}),
 					q(47594, {	-- I'll Take Those, Thanks!
@@ -285,6 +327,20 @@ _.ExpansionFeatures =
 							i(151143),	-- Shining Lamp of Al'Abas
 						},
 					}),
+					q(42502, {	-- No Sanctuary
+						["coord"] = { 42.3, 755.9, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 94138 },	-- Princess Tess Greymane
+						["description"] = "Pursue |cFFFFD700The Kingslayer|r.",
+					}),
+					q(42568, {	-- Preparation
+						["lvl"] = 100,
+						["maps"] = { 47 },	-- Duskwood
+						["coord"] = { 38.1, 67.6, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "o", 250671 },	-- Notes on the Veiled Hand
+						["sourceQuest"] = 42503,	-- Codebreaker
+					}),
 					q(43007, {	-- Return to the Chamber of Shadows
 						["lvl"] = 101,
 						["maps"] = { 627 },	-- Dalaran
@@ -304,6 +360,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 103792 },	-- Griftah
 						["sourceQuest"] = 47591,	-- Wanna Buy a Lamp?
 					}),
+					q(43829, {	-- Spy vs. Spy
+						["coord"] = { 41.3, 78.1, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
+						["sourceQuest"] = 43958,	-- A Body of Evidence
+					}),
 					q(43014, {	-- The Big Bad Wolfe
 						["coord"] = { 37.8, 45.0, 626 },
 						["classes"] = { 4 },
@@ -317,6 +379,12 @@ _.ExpansionFeatures =
 						["classes"] = {	4 },	-- Rogue
 						["provider"] = { "n", 102120 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 40847,	-- A Friendly Accord
+					}),
+					q(44375, {	-- The Final Blade
+						["lvl"] = 102,
+						["coord"] = { 41.4, 78.0, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 					}),
 					q(40839, {	-- The Final Shadow
 						["coord"] = { 41.3, 78.0, 626 },
@@ -355,10 +423,40 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["classes"] = { 4 },	-- Rogue
 					}),
+					q(42504, {	-- The Unseen Blade (A)
+						["lvl"] = 100,
+						["maps"] = { 37 },	-- Elwynn Forest
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 107979 },	-- Garona Halforcen
+						["sourceQuest"] = 42568,	-- Preparation
+						["g"] = {
+							i(128869),	-- The Kingslayers (Sorrow)
+							i(128870),	-- The Kingslayers (Anguish)
+						},
+					}),
+					q(42627, {	-- The Unseen Blade (H)
+						["lvl"] = 100,
+						["maps"] = { 37 },	-- Elwynn Forest
+						["races"] = HORDE_ONLY,
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 107979 },	-- Garona Halforcen
+						["sourceQuest"] = 42568,	-- Preparation
+						["g"] = {
+							i(128869),	-- The Kingslayers (Sorrow)
+							i(128870),	-- The Kingslayers (Anguish)
+						},
+					}),
 					q(47591, {	-- Wanna Buy a Lamp?
 						["coord"] = { 45.4, 27.6, 626 },
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 103792 },	-- Griftah
+					}),
+					q(43015, {	-- What Winstone Suggests
+						["coord"] = { 37.8, 44.9, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 98092 },	-- Nikki the Gossip
+						["sourceQuest"] = 43014,	-- The Big Bad Wolfe
 					}),
 					--[[ Artifact Appearance  Quests Commented Out For Now
 					q(43422, {	-- A Hero's Weapon
