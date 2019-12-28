@@ -728,10 +728,6 @@ _.Zones =
 					["classes"] = { 4 },
 					["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 				}),
-				q(41924, {	-- Fangs of the Devourer
-					["classes"] = { 4 },
-					["provider"] = { "n", 105464 },	-- Val'zuun
-				}),
 			--	q(44486)	-- Fel-Ravaged Tome -- granted by i(141360) in Vault of the Wardens
 				q(41035, {	-- Felstorm's Plea
 					["classes"] = { 8 },
@@ -1784,10 +1780,6 @@ _.Zones =
 				q(39987, {	-- Trail of Echoes
 					["sourceQuests"] = { 39986 },	-- Magic Message
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
-				}),
-				q(41922, {	-- Traitor!
-					["classes"] = { 4 },
-					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 				}),
 				q(43535, {	-- Translation: Danger!
 					["classes"] = { 2 },	-- Paladin
