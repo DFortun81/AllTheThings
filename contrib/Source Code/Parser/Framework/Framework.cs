@@ -718,28 +718,26 @@ namespace ATT
             }
 
             // Include in breadcrumb quests the list of next quests that may make the breadcrumb unable to complete
-            foreach (var QuestID in Objects.AllQuests.Keys)
+            bool isBreadcrumb;
+            foreach (var pair in Objects.AllQuests)
             {
-                var Quest = Objects.AllQuests[QuestID];
-                if (Quest.TryGetValue("sourceQuests", out List<object> sourceQuests))
+                if (pair.Value.TryGetValue("sourceQuests", out List<object> sourceQuests))
                 {
-                    foreach(int source in sourceQuests)
+                    foreach(var sourceQuestRef in sourceQuests)
                     {
-                        Dictionary<string, object> sourceQuest = null;
-                        if (Objects.AllQuests.TryGetValue(source.ToString(), out sourceQuest))
+                        var sourceQuestID = Convert.ToInt64(sourceQuestRef);
+                        if (Objects.AllQuests.TryGetValue(sourceQuestID, out Dictionary<string, object> sourceQuest))
                         {
-                            sourceQuest.TryGetValue("isBreadcrumb", out bool isBreadcrumb);
-                            if (isBreadcrumb)
+                            if (sourceQuest.TryGetValue("isBreadcrumb", out isBreadcrumb) && isBreadcrumb)
                             {
                                 // Source Quest is a breadcrumb, add current quest into breadcrumb's next quests list
                                 if (sourceQuest.TryGetValue("nextQuests", out List<object> nextQuests))
                                 {
-                                    if (!nextQuests.Contains(Convert.ToInt32(QuestID)))
-                                        nextQuests.Add(Convert.ToInt32(QuestID));
+                                    if (!nextQuests.Contains(pair.Key)) nextQuests.Add(pair.Key);
                                 }
                                 else
                                 {
-                                    sourceQuest.Add("nextQuests", new List<object>() { Convert.ToInt32(QuestID) });
+                                    sourceQuest.Add("nextQuests", new List<object>() { pair.Key });
                                 }
                             }
                         }
@@ -749,11 +747,7 @@ namespace ATT
                         }
                     }
                 }
-            }
-
-            foreach (var pair in Objects.AllQuests)
-            {
-                if (pair.Value.TryGetValue("isBreadcrumb", out bool isBreadcrumb) && isBreadcrumb)
+                if (pair.Value.TryGetValue("isBreadcrumb", out isBreadcrumb) && isBreadcrumb)
                 {
                     if (!pair.Value.TryGetValue("nextQuests", out List<object> nextQuests))
                     {

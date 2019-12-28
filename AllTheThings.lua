@@ -235,16 +235,22 @@ end
 
 (function()
 	local tradeSkillSpecializationMap = {
-		-- Engineering Skills
-		[202] = { 
-				  20219,    -- Gnomish Engineering
-		          20222     -- Goblin Engineering
-				}
+		[202] = {	-- Engineering
+			20219,    -- Gnomish Engineering
+			20222     -- Goblin Engineering
+		},
+		[164] = {	-- Blacksmithing
+			9788,	-- Armorsmith
+			9787,	-- Weaponsmith
+		},
 	};
 	local specializationTradeSkillMap = {
 		-- Engineering Skills
 		[20219] = 202,  -- Gnomish Engineering
 		[20222] = 202   -- Goblin Engineering
+		-- Blacksmithing Skills
+		[9788] = 9788,	-- Armorsmith
+		[9787] = 9787,	-- Weaponsmith
 	};
 	-- Map all Skill IDs to the old Skill IDs
 	local tradeSkillMap = {
@@ -3040,12 +3046,6 @@ fieldConverters = {
 			elseif v[1] == "o" and v[2] > 0 then
 				CacheField(group, "objectID", v[2]);
 			end
-		end
-	end,
-	["altQuests"] = function(group, value)
-		_cache = rawget(fieldConverters, "questID");
-		for i,questID in ipairs(value) do
-			_cache(group, questID);
 		end
 	end,
 	["maps"] = function(group, value)
@@ -9108,11 +9108,13 @@ local function RowOnEnter(self)
 					local sqs = SearchForField("questID", sourceQuestID);
 					if sqs and #sqs > 0 then
 						local sq = sqs[1];
-						if IsQuestFlaggedCompletedForObject(sq) ~= 1 then
-							if sq.isBreadcrumb then
-								table.insert(bc, sqs[1]);
-							else
-								table.insert(prereqs, sqs[1]);
+						if sq and app.ClassRequirementFilter(sq) and app.RaceRequirementFilter(sq) then
+							if IsQuestFlaggedCompletedForObject(sq) ~= 1 then
+								if sq.isBreadcrumb then
+									table.insert(bc, sqs[1]);
+								else
+									table.insert(prereqs, sqs[1]);
+								end
 							end
 						end
 					elseif not IsQuestFlaggedCompleted(sourceQuestID) then

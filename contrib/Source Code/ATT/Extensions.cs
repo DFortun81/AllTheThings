@@ -83,6 +83,24 @@ namespace ATT
         }
 
         /// <summary>
+        /// Try to get a long from the dictionary.
+        /// </summary>
+        /// <param name="dict">The dictionary.</param>
+        /// <param name="key">The key.</param>
+        /// <param name="value">The variable to write to.</param>
+        /// <returns>Whether or not a value was found for the key.</returns>
+        public static bool TryGetValue(this Dictionary<string, object> dict, string key, out long value)
+        {
+            if (dict.TryGetValue(key, out object o))
+            {
+                value = Convert.ToInt64(o);
+                return true;
+            }
+            value = 0;
+            return false;
+        }
+
+        /// <summary>
         /// Get a string from the dictionary.
         /// </summary>
         /// <param name="dict">The dictionary.</param>
