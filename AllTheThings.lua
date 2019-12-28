@@ -247,7 +247,7 @@ end
 	local specializationTradeSkillMap = {
 		-- Engineering Skills
 		[20219] = 202,  -- Gnomish Engineering
-		[20222] = 202   -- Goblin Engineering
+		[20222] = 202,   -- Goblin Engineering
 		-- Blacksmithing Skills
 		[9788] = 9788,	-- Armorsmith
 		[9787] = 9787,	-- Weaponsmith
