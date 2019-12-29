@@ -11713,7 +11713,13 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			if g.OnUpdate then g.OnUpdate(g); end
 		end
 		BuildGroups(self.data, self.data.g);
+		
+		-- Update the groups without forcing Debug Mode.
+		local visibilityFilter = app.VisibilityFilter;
+		app.VisibilityFilter = app.ObjectVisibilityFilter;
+		BuildGroups(self.data, self.data.g);
 		UpdateWindow(self, true);
+		app.VisibilityFilter = visibilityFilter;
 	end
 end);
 app:GetWindow("Random", UIParent, function(self)
