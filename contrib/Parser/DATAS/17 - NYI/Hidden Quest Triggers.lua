@@ -1028,7 +1028,45 @@ _.NeverImplemented =
 		q(46808),	-- Ship - Highmountain — part of a Highmountain invasion.  i refreshed after killing the NPC for "Holding Our Ground" and this quest popped
 		q(47194),	-- Battle for Highmountain — popped alongside the normal "Battle for Highmountain" final invasion quest.  possibly first-time quest?
 		q(47195),	-- Battle for Stormheim — same as above, first time i did the Stormheim invasion on that character
-		q(46956),	-- Assault Treasure — looted treasure at (42.4, 80.4) during Azsuna assault
+		q(46956),	-- Azsuna - Assault Treasure
+		q(46964),	-- Azsuna - Assault Treasure
+		q(46966),	-- Azsuna - Assault Treasure
+		q(46967),	-- Azsuna - Assault Treasure
+		q(46968),	-- Azsuna - Assault Treasure
+		q(46969),	-- Azsuna - Assault Treasure
+		q(46970),	-- Azsuna - Assault Treasure
+		q(46971),	-- Azsuna - Assault Treasure
+		q(46972),	-- Azsuna - Assault Treasure
+		q(46973),	-- Azsuna - Assault Treasure
+		q(46974),	-- Azsuna - Assault Treasure
+		q(46988),	-- Highmountain - Assault Treasure
+		q(46989),	-- Highmountain - Assault Treasure
+		q(46990),	-- Highmountain - Assault Treasure
+		q(46991),	-- Highmountain - Assault Treasure
+		q(46992),	-- Highmountain - Assault Treasure
+		q(46993),	-- Highmountain - Assault Treasure
+		q(46994),	-- Highmountain - Assault Treasure
+		q(46985),	-- Highmountain - Assault Treasure
+		q(46986),	-- Highmountain - Assault Treasure
+		q(46987),	-- Highmountain - Assault Treasure
+		q(46975),	-- Stormheim - Assault Treasure
+		q(46976),	-- Stormheim - Assault Treasure
+		q(46977),	-- Stormheim - Assault Treasure
+		q(46978),	-- Stormheim - Assault Treasure
+		q(46979),	-- Stormheim - Assault Treasure
+		q(46980),	-- Stormheim - Assault Treasure
+		q(46981),	-- Stormheim - Assault Treasure
+		q(46982),	-- Stormheim - Assault Treasure
+		q(46983),	-- Stormheim - Assault Treasure
+		q(46984),	-- Stormheim - Assault Treasure
+		q(46954),	-- Val'sharah - Assault Treasure
+		q(46956),	-- Val'sharah - Assault Treasure
+		q(46958),	-- Val'sharah - Assault Treasure
+		q(46959),	-- Val'sharah - Assault Treasure
+		q(46960),	-- Val'sharah - Assault Treasure
+		q(46961),	-- Val'sharah - Assault Treasure
+		q(46962),	-- Val'sharah - Assault Treasure
+		q(46963),	-- Val'sharah - Assault Treasure
 		q(46801),	-- Ship - Val'sharah — triggered when turning in "Holding the Ramparts" during Azsuna assault
 		q(47062),	-- Tracking Quest — triggered when killing Dread Vizier Gra'tork in Azsuna invasion scenario
 		q(47196),	-- Battle for Val'sharah — triggered when turning in actual invasion quest, #45856
@@ -1071,10 +1109,8 @@ _.NeverImplemented =
 		q(39533),	-- Durguth — WQ rare in suramar, attached WQ to rare so his special drop shows in /attwq
 		
 	--	Treasures
-		q(40507),	-- 7.0 Highmountain - Treasure 096 - The Haglands - S (RKS) — highmountain treasure on top of mountain at 46.7, 40.2
 		q(40692),	-- 7.0 Suramar - Treasure 000 - The Drift - L (DLA) — suramar treasure in cliffside at 58.6, 33.8
 		q(46990),	-- Assault Treasure — opened Small Treasure Chest in Highmountain (44.2, 40.4)
-		q(40491),	-- Highmountain - Treasure 084 - Thunder Totem (13.6, 55.4, 750)
 		q(43830),	-- Treasure 001 - South of Felsoul — suramar, 38.1, 87.0
 		q(43868),	-- Treasure 033 - City - Lower City Boat — looted treasure chest on boat at (51.8, 82.2, 680)
 		q(43873),	-- Treasure 038 - City - Noble Overlook — suramar treasure at 57.3, 60.3

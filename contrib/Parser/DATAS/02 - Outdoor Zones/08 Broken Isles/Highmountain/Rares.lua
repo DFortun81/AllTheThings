@@ -317,36 +317,6 @@ _.Zones =
 						}),
 					},
 				}),
-				n(97116,  {	-- Treasure Chest 244519
-					["modelID"] = 73098,
-					["questID"] = 39824,
-					["coord"] = { 53.5, 51.0, 650 },
-					["g"] = {
-						i(131810, {	-- Derelict Skyhorn Kite
-							i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
-						}),
-					},
-				}),
-				n(72409,  {	-- Treasure Chest 243668
-					["modelID"] = 73098,
-					["questID"] = 39466,
-					["coord"] = { 49.7, 37.7, 650 },
-					["g"] = {
-						i(131927, {	-- Shimmering Roc Feather
-							i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
-						}),
-					},
-				}),
-				n(109556, {	-- Treasure Chest 243773
-					["modelID"] = 73098,
-					["questID"] = 39503,
-					["coord"] = { 47.6, 44.0, 650 },
-					["g"] = {
-						i(131926, {	-- Delicate Roc Feather
-							i(131811),	-- Rocfeather Skyhorn Kite (TOY!)
-						}),
-					},
-				}),
 			}),
 		}),
 	}),
