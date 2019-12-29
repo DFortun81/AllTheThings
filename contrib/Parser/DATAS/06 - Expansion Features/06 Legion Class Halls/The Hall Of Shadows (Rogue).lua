@@ -508,7 +508,7 @@ _.ExpansionFeatures =
 					}),
 					q(46089, {	-- The Sunken Vault
 						["lvl"] = 110,
-						["races"] = ALLIANCEE_ONLY,
+						["races"] = ALLIANCE_ONLY,
 						["classes"] = { 4 },	-- Rogue
 					}),
 					q(46178, {	-- The Sunken Vault

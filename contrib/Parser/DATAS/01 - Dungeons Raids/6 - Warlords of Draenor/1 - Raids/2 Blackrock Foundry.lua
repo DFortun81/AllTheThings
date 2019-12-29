@@ -668,7 +668,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					}),
 					i(120279, {	-- Essence of the Iron Protector
 						q(37555, {	-- Essence of the Iron Protector
-							["races"] = ALLIANCEE_ONLY,
+							["races"] = ALLIANCE_ONLY,
 							["repeatable"] = true,
 							["g"] = {
 								i(120225, {	-- Helm of the Iron Protector
