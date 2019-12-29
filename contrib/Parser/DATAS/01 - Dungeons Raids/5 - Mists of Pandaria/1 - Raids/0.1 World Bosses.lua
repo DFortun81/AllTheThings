@@ -429,6 +429,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["description"] = "Awarded if you fail your loot roll. Usually contains gold or crafting materials.",
 						["g"] = {
 							un(38, i(105833)),	-- Keengrip Arrowpullers
+							un(38, i(105831)),	-- Siid's Silent Stranglers
 							-- NOTE FOR CONTRIBS: Only add items you receive to this. The old listings on WoWHead may be inaccurate or out of date.
 						},
 					})),
