@@ -441,7 +441,7 @@ _.Zones =
 					["coord"] = { 48.4, 34.4, 630 },
 					["provider"] = { "n", 89023 },	-- Nightwatcher Idri
 				}),
-				q(42367, {	-- Quantity over Quality
+				q(42368, {	-- Quantity over Quality
 					["sourceQuests"] = { 42375 },	-- Eye See You
 					["coord"] = { 63.8, 28.8, 630 },
 					["provider"] = { "n", 107245 },	-- Marius Felbane
@@ -692,7 +692,7 @@ _.Zones =
 				}),
 				q(37660, {	-- The Scythe of Souls
 					["sourceQuests"] = {
-						37653,	-- Reignite the Wards
+						37658,	-- Reignite the Wards
 						37653,	-- Demon Souls
 					},
 					["coord"] = { 43.2, 43.1, 630 },
@@ -743,6 +743,7 @@ _.Zones =
 				q(38237, {	-- This IS In My Contract.
 					["sourceQuests"] = { 38232 },	-- Minion!  Kill Them!
 					["provider"] = { "n", 91165 },	-- Daglop
+					["coord"] = { 62.8, 51.4, 630 },
 					["g"] = {
 						i(138878),	-- Copy of Daglop's Contract (TOY!)
 					},
