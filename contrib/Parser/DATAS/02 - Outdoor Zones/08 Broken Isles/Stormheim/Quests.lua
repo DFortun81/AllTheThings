@@ -318,10 +318,6 @@ _.Zones =
 						i(129246),	-- Runespeaker's Cinch
 					},
 				}),
-				q(44177, {	-- Dark Secrets and Shady Deals
-					["provider"] = { "n", 112959 },	-- Fleet Admiral Tethys
-					["classes"] = { 4 },
-				}),
 				q(39153, {	-- Dreadwake's Dilemma
 					["sourceQuests"] = { 38872 },	-- The Dark Lady's Bidding
 					["races"] = HORDE_ONLY,
@@ -1179,7 +1175,6 @@ _.Zones =
 				q(39946),	-- Right Tool for the Job
 				q(38803),	-- Rin'thissa
 				q(39945),	-- Runes Within the Ruins
-				q(44155),	-- Searching For Clues
 				q(40603),	-- Seeking the Valkyra
 				q(40146),	-- Seymour and Agnes
 				q(40404),	-- Show Legion Portal
@@ -1206,7 +1201,6 @@ _.Zones =
 				q(41170),	-- The Relic Renewed
 				q(45486),	-- The Reluctant Queen
 				q(45406),	-- The Storm's Fury
-				q(44117),	-- Time Flies When Yer Havin' Rum!
 				q(45522),	-- To Silence the Bonespeakers
 				q(45523),	-- To Tame the Drekirjar
 				q(44729),	-- Trial of Valor: Odyn's Favor

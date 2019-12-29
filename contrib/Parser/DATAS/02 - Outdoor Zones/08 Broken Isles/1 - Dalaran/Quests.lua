@@ -547,10 +547,6 @@ _.Zones =
 					["coord"] = { 51.9, 20.1, 627 },
 					["lvl"] = 110,
 				}),
-				q(43841, {	-- Convincin' Old Yancey
-					["classes"] = { 4 },
-					["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
-				}),
 			--	q(44275)	-- Court of Stars -- mission board
 				q(43486, {	-- Cracking the Codex
 					["classes"] = { 2 },
@@ -1101,10 +1097,6 @@ _.Zones =
 					["coord"] = { 25.7, 51.5, 627 },
 					["provider"] = { "n", 107968 },	-- Archmage Lan'dalock
 				}),
-				q(44116, {	-- Mystery at Citrine Bay
-					["classes"] = { 4 },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
-				}),
 				q(45909, {	-- Navarrogg's Gift
 					["sourceQuests"] = { 45627 },	-- Feltotem's Fall
 					["provider"] = { "n", 90418 },	-- Archmage Modera
@@ -1481,11 +1473,6 @@ _.Zones =
 				q(43373, {	-- The Best and Brightest
 					["classes"] = { 5 },
 					["provider"] = { "n", 110557 },	-- Prophet Velen
-				}),
-				q(44041, {	-- The Bloody Truth
-					["sourceQuests"] = { 43829 },	-- Spy vs. Spy
-					["classes"] = { 4 },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 				}),
 				q(42377, {	-- The Brother's Trail
 					["classes"] = { 2 },

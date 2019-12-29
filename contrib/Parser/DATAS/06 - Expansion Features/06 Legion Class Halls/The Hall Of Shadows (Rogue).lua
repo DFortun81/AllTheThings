@@ -163,8 +163,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(44183, {	-- Champion: Lord Jorach Ravenholdt
+						["coord"] = { 41.4, 78.1, 626 },
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
+						["sourceQuest"] = 44177,	-- Dark Secrets and Shady Deals
 						["g"] = {
 							follower(779),	-- Lord Jorach Ravenholdt
 						},
@@ -266,6 +268,22 @@ _.ExpansionFeatures =
 							i(151131),	-- Lamp of Al'Abas
 						},
 					}),
+					q(43841, {	-- Convincin' Old Yancey
+						["coord"] = { 41.2, 74.3, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
+						["sourceQuest"] = 44177,	-- Dark Secrets and Shady Deals
+					}),
+					q(44177, {	-- Dark Secrets and Shady Deals
+						["maps"] = { 634 },	-- Stormheim
+						["coord"] = { 77.2, 55.0, 634 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 112959 },	-- Fleet Admiral Tethys
+						["sourceQuests"] = {
+							44155,	-- Searching For Clues
+							44117,	-- Time Flies When Yer Havin' Rum!
+						},
+					}),
 					q(42680, {	-- Deciphering the Letter
 						["classes"] = { 4 },	-- Rogue
 						["g"] = {
@@ -345,6 +363,13 @@ _.ExpansionFeatures =
 							i(151143),	-- Shining Lamp of Al'Abas
 						},
 					}),
+					q(44116, {	-- Mystery at Citrine Bay
+						["lvl"] = 103,
+						["coord"] = { 41.3, 78.1, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
+						["sourceQuest"] = 44041,	-- The Bloody Truth
+					}),
 					q(42502, {	-- No Sanctuary
 						["coord"] = { 42.3, 755.9, 626 },
 						["classes"] = { 4 },	-- Rogue
@@ -372,6 +397,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 43007,	-- Return to the Chamber of Shadows
 					}),
+					q(44155, {	-- Searching For Clues
+						["maps"] = { 634 },	-- Stormheim
+						["coord"] = { 77.2, 55.0, 634 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 112959 },	-- Fleet Admiral Tethys
+						["sourceQuest"] = 44116,	-- Mystery at Citrine Bay
+					}),
 					q(47592, {	-- Shine Bright Like a Diamond
 						["coord"] = { 45.4, 27.6, 626 },
 						["classes"] = { 4 },	-- Rogue
@@ -385,10 +417,18 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 43958,	-- A Body of Evidence
 					}),
 					q(43014, {	-- The Big Bad Wolfe
+						["lvl"] = 101,
 						["coord"] = { 37.8, 45.0, 626 },
 						["classes"] = { 4 },
 						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["sourceQuest"] = 43013,	-- The School of Roguery
+					}),
+					q(44041, {	-- The Bloody Truth
+						["lvl"] = 103,
+						["coord"] = { 41.3, 78.1, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
+						["sourceQuest"] = 43829,	-- Spy vs. Spy
 					}),
 					q(40849, {	-- The Dreadblades
 						["lvl"] = 98,
@@ -471,6 +511,13 @@ _.ExpansionFeatures =
 							i(128869),	-- The Kingslayers (Sorrow)
 							i(128870),	-- The Kingslayers (Anguish)
 						},
+					}),
+					q(44117, {	-- Time Flies When Yer Havin' Rum!
+						["maps"] = { 634 },	-- Stormheim
+						["coord"] = { 77.2, 55.0, 634 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 112959 },	-- Fleet Admiral Tethys
+						["sourceQuest"] = 44116,	-- Mystery at Citrine Bay
 					}),
 					q(41922, {	-- Traitor!
 						["maps"] = { 627 },	-- Dalaran

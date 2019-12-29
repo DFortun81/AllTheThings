@@ -916,6 +916,7 @@ _.NeverImplemented =
 		q(43901),	-- Generic Order Hall - Tracking Quest: All - Troop B Enabled
 		q(43433),	-- Generic Order Hall - Tracking Quest: Tutorial - Troops Built
 		q(42115),	-- Generic Order Hall - Tracking Quest: Chapter 1 completed - Triggers when you complete the quest that gets your first order hall upgrade
+		q(42116),	-- Generic Order Hall - Tracking Quest: Chapter 2 Completed - triggers after completing your first order hall campaign effort
 		
 		q(40621),	-- Hunter Order Hall - Beast Mastery Chosen first
 		q(44045),	-- Hunter Order Hall - Beast Mastery Chosen
@@ -971,7 +972,6 @@ _.NeverImplemented =
 		q(47661),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
 		q(47699),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
 		q(44638),	-- Tracking Quest: 7.0 Class Hall - Demon Hunter - Chapter 1.5 - Pacing Mission — think this is somewhere around "Immortal Soul" / "Leader of the Illidari" in the DH class hall
-		q(42116),	-- Tracking Quest: Chapter 2 Completed — think this is for "Unexpected Visitors" for the DH class campaign, which was the completion of the first order campaign effort for the "Fighting With Style: Classic" achievement
 		q(44597),	-- Tracking Quest: Working with the Wardens 1 — these next quests are all part of DH quest 42731, "Working With the Wardens"
 		q(44598),	-- Tracking Quest: Working with the Wardens 2
 		q(44599),	-- Tracking Quest: Working with the Wardens 3
