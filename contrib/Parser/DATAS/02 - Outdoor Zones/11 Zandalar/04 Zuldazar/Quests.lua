@@ -1603,12 +1603,29 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				
-				
+				q(51513, {	-- Zalazane Returns
+					["minReputation"] = { 2103, REVERED },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 120171 },	-- Rokhan
+					["coord"] = { 57.6, 62.4, 862 },
+				}),
 				q(51516, {	-- Atal'Dazr: Ashes of a Warchief
 					["provider"] = { "n", 138138 },	-- Princess Telanji
 					["coord"] = { 43.7, 39.5 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 52113 },	-- Vole'jin, Son of Sen'jin
+				}),
+				q(51519, {	-- Spirit Call
+					["provider"] = { "n", 140724 },	-- Princess Telanji
+					["coord"] = { 57.6, 62.6, 862 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 51518 },	-- The Lost Spirit
+				}),
+				q(51520, {	-- Justice for the Fallen
+					["provider"] = { "n", 140725 },	-- Spirit of Vol'jin
+					["coord"] = { 57.6, 63, 862 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 51519 },	-- Spirit Call
 				}),
 				q(53476, {	-- The Great Sea Scrolls
 					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
