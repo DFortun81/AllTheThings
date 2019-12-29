@@ -405,6 +405,7 @@ _.Zones =
 						46682,	-- Drapings of the Ancients
 						46680,	-- The Thread of Starlight
 						46679,	-- The Thread of Shadow
+						46681, 	-- The Thread of Souls
 					},
 					["requireSkill"] = 197,	-- Tailoring
 				}),
