@@ -269,10 +269,21 @@ _.Zones =
 					["coord"] = { 44.4, 63.4, 646 },
 					["lvl"] = 110,
 				}),
+				q(46682, {	-- Drapings of the Ancients
+					["coord"] = { 41.1, 59.3, 646 },
+					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+					["repeatable"] = true,
+					["sourceQuest"] = 46678,	-- The Legend of the Threads
+					["requireSkill"] = 197,	-- Tailoring
+				}),
 				q(46804, {	-- Fashion History and a Philosophy of Style
 					["coord"] = { 41.1, 59.3, 646 },
 					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
-					["sourceQuest"] = 46696,	-- The Legend of the Four Hammers
+					["repeatable"] = true,
+					["sourceQuests"] = {
+						46696,	-- The Legend of the Four Hammers
+						47015,	-- Boon of the Nether Disruptor
+					},
 				}),
 				q(46501, {	-- Grave Robbin'
 					["sourceQuests"] = { 46499 },	-- Spiders, Huh?
@@ -386,6 +397,17 @@ _.Zones =
 					["coord"] = { 39.6, 71.7, 646 },
 					["lvl"] = 110,
 				}),
+				q(46683, {	-- Starweave and Shadowcloth
+					["coord"] = { 41.2, 59.4, 646 },
+					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+					["repeatable"] = true,
+					["sourceQuests"] = {
+						46682,	-- Drapings of the Ancients
+						46680,	-- The Thread of Starlight
+						46679,	-- The Thread of Shadow
+					},
+					["requireSkill"] = 197,	-- Tailoring
+				}),
 				q(46246, {	-- Strike Them Down
 					["sourceQuests"] = { 46249 },	-- Championing Our Cause
 					["provider"] = { "n", 116576 },	-- Maiev Shadowsong
@@ -467,6 +489,13 @@ _.Zones =
 					["repeatable"] = true,
 					["sourceQuest"] = 46774,	-- The Nether Disruptor
 				}),
+				q(46678, {	-- The Legend of the Threads
+					["coord"] = { 41.2, 59.4, 646 },
+					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+					["repeatable"] = true,
+					["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
+					["requireSkill"] = 197,	-- Tailoring
+				}),
 				q(46666, {	-- The Motherlode
 					["sourceQuests"] = { 46511 },	-- We're Treasure Hunters
 					["provider"] = { "n", 119886 },	-- Excavator Karla
@@ -481,6 +510,27 @@ _.Zones =
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 					["provider"] = { "i", 147356 },	-- Broken Sentinax Beacon
 					["lvl"] = 110,
+				}),
+				q(46679, {	-- The Thread of Shadow
+					["coord"] = { 41.2, 59.4, 646 },
+					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+					["repeatable"] = true,
+					["sourceQuest"] = 46678,	-- The Legend of the Threads
+					["requireSkill"] = 197,	-- Tailoring
+				}),
+				q(46681, {	-- The Thread of Souls
+					["coord"] = { 41.2, 59.4, 646 },
+					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+					["repeatable"] = true,
+					["sourceQuest"] = 46678,	-- The Legend of the Threads
+					["requireSkill"] = 197,	-- Tailoring
+				}),
+				q(46680, {	-- The Thread of Starlight
+					["coord"] = { 41.2, 59.4, 646 },
+					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+					["repeatable"] = true,
+					["sourceQuest"] = 46678,	-- The Legend of the Threads
+					["requireSkill"] = 197,	-- Tailoring
 				}),
 				q(46509, {	-- Tomb Raidering
 					["sourceQuests"] = { 46501 },	-- Grave Robbin'
@@ -757,7 +807,6 @@ _.Zones =
 				q(45828),	-- Demon Hunter
 				q(45763),	-- Demonic Disruption
 				q(45173),	-- Desperate Times
-				q(46682),	-- Drapings of the Ancients
 				q(46103),	-- Dread Infiltrators
 				q(42911),	-- Drowned Mana
 				q(45829),	-- Druid
@@ -909,7 +958,6 @@ _.Zones =
 				q(46510),	-- Ship Graveyard
 				q(46499),	-- Spiders, Huh?
 				q(43265),	-- Spread the Word
-				q(46683),	-- Starweave and Shadowcloth
 				q(45025),	-- Stealing the Source of Power
 				q(43899),	-- Steeds of the Damned
 				q(46145),	-- Sterile Surroundings
@@ -942,7 +990,6 @@ _.Zones =
 				}),
 				q(42537),	-- The King Rises
 				q(46684),	-- The Legend of the Elderhide
-				q(46678),	-- The Legend of the Threads
 				q(46690),	-- The Legend of the Wardenscale
 				q(43545),	-- The Lord of Black Rook Hold
 				q(44276),	-- The Lord of Black Rook Hold
@@ -961,9 +1008,6 @@ _.Zones =
 				q(42818),	-- The Scarlet Assault
 				q(41919),	-- The Shadows Reveal
 				q(45788),	-- The Speaker Awaits
-				q(46679),	-- The Thread of Shadow
-				q(46681),	-- The Thread of Souls
-				q(46680),	-- The Thread of Starlight
 				q(46687),	-- The Wisp and the Nightmare
 				q(46686),	-- The Wisp and the Sea
 				q(46685),	-- The Wisp and the Shadow
