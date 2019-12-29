@@ -271,6 +271,12 @@ _.Zones =
 					["sourceQuest"] = 47439,	-- Gonk, Lord of the Pack
 					["races"] = HORDE_ONLY,	
 				}),
+				q(51518, {	-- The Lost Spirit
+					["provider"] = { "n", 140907 },	-- Bwonsamdi
+					["coord"] = { 45.0, 19.8, 1165 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 51517 },	-- You Owe Me a Spirit
+				}),
 				q(50835, {	-- The Port of Zandalar
 					["sourceQuests"] = { 47514 },	-- Zuldazar
 					["isBreadcrumb"] = true,	-- for "Shakedown"
@@ -582,7 +588,7 @@ _.Zones =
 						["sourceQuest"] = 54118,	-- Every Little Death Helps
 						["classes"] = { 5 },	-- Priest
 					}),
-				}),		
+				}),
 			}),
 		}),
 	}),
