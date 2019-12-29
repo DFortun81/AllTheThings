@@ -124,6 +124,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["sourceQuest"] = 42139,	-- Rise, Champions
 					}),
+					q(44178, {	-- A Particularly Potent Potion
+						["coord"] = { 30.5, 70.4, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
+						["sourceQuest"] = 42730,	-- Noggenfogger's Reasonable Request
+					}),
 					q(44252, {	-- A Sheath For Every Blade
 						["classes"] = { 4 },	-- Rogue
 						["g"] = {
@@ -142,13 +148,21 @@ _.ExpansionFeatures =
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 					}),
+					q(43468, {	-- Blood for the Wolfe
+						["coord"] = { 40.8, 75.3, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
+						["sourceQuest"] = 44181,	-- Champion: Fleet Admiral Tethys
+					}),
 					q(40832, {	-- Call of The Uncrowned
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 102018 },	-- Ravenholdt Courier
 					}),
 					q(44181, {	-- Champion: Fleet Admiral Tethys
+						["coord"] = { 41.2, 74.3, 626 },
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
+						["sourceQuest"] = 43852,	-- Fancy Lads and Buccaneers
 						["g"] = {
 							follower(780),	-- Fleet Admiral Tethys
 						},
@@ -172,8 +186,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(44180, {	-- Champion: Marin Noggenfogger
+						["coord"] = { 30.5, 70.4, 626 },
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 102594 },	-- Marin Noggenfogger <Baron of Gadgetzan>
+						["sourceQuest"] = 44178,	-- A Particularly Potent Potion
 						["g"] = {
 							follower(890),	-- Marin Noggenfogger
 						},
@@ -186,7 +202,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(46059, {	-- Champion: Tess Greymane
-						["races"] = ALLIANCEE_ONLY,
+						["races"] = ALLIANCE_ONLY,
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 						["g"] = {
@@ -296,6 +312,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 						["sourceQuest"] = 40950,	-- Honoring Success
 					}),
+					q(43852, {	-- Fancy Lads and Buccaneers
+						["coord"] = { 41.2, 74.3, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
+						["sourceQuest"] = 43841,	-- Convincin' Old Yancey
+					}),
 					q(41924, {	-- Fangs of the Devourer
 						["maps"] = { 628 },	-- The Underbelly
 						["coord"] = { 67.9, 63.1, 628 },
@@ -375,6 +397,12 @@ _.ExpansionFeatures =
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 						["description"] = "Pursue |cFFFFD700The Kingslayer|r.",
+					}),
+					q(42730, {	-- Noggenfogger's Reasonable Request
+						["coord"] = { 40.8, 75.3, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
+						["sourceQuest"] = 44181,	-- Champion: Fleet Admiral Tethys
 					}),
 					q(42568, {	-- Preparation
 						["lvl"] = 100,
@@ -511,6 +539,12 @@ _.ExpansionFeatures =
 							i(128869),	-- The Kingslayers (Sorrow)
 							i(128870),	-- The Kingslayers (Anguish)
 						},
+					}),
+					q(42684, {	-- Throwing SI:7 Off the Trail
+						["coord"] = { 40.8, 75.3, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
+						["sourceQuest"] = 44181,	-- Champion: Fleet Admiral Tethys
 					}),
 					q(44117, {	-- Time Flies When Yer Havin' Rum!
 						["maps"] = { 634 },	-- Stormheim

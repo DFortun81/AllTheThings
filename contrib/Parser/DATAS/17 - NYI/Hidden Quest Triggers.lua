@@ -895,6 +895,7 @@ _.NeverImplemented =
 		q(45302),	-- 7.1.5 Class Hall - Brawlers Missions - Has Completed Any Brawlers Mission with Overmax - Tracking Quest — triggered when doing my first brawl for BFA
 		q(48973),	-- Unused Paragon quest, it seems the active one is #48976, "Supplies From the Argussian Reach"
 		q(48974),	-- Unused Paragon quest, it seems the active one is #48977, "Supplies From the Army of the Light"
+		q(40584),	-- Azsuna - FLAG - Witnessed Drake Lift Crystal - triggers shortly after arriving in Azurewing Repose when turning in "Journey to the Repose"
 		q(46709),	-- Broken Isles - Ready for Crafted Legendary flag
 		q(47096),	-- Broken Isles - Choice: Blacksmithing
 		q(47092),	-- Broken Isles - Working on Crafted Legendary
@@ -941,6 +942,7 @@ _.NeverImplemented =
 		q(44378),	-- Rogue Order Hall - Subtlety Chosen third
 		q(44296),	-- Rogue Order Hall - Tracking Quest: Finished Rise, Champions
 		q(44651),	-- Rogue Order Hall - Tracking Quest: 7.0 Class Hall - Rogue - Chapter 1.5 - Pacing Mission (triggers when completing the "Spy Vs Spy" mission)
+		q(44652),	-- Rogue Order Hall - Tracking Quest: 7.0 Class Hall - Rogue - Chapter 2 - Troop B Recruiter Acquisition (triggers when completing the "Convincin' Old Yancey" mission)
 		q(42061),	-- Rogue Order Hall - Charge Trigger Hit - triggered after leaving the citadel during the Fangs of the Devourer scenario
 		
 		q(38544),	-- FLAG: Demonsteel Waistguard Crafted

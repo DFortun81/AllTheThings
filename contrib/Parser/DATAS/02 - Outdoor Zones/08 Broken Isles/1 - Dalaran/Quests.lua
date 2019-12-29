@@ -191,10 +191,6 @@ _.Zones =
 					["classes"] = { 6 },	-- Death Knight
 					["provider"] = { "n", 101441 },	-- Duke Lankral
 				}),
-				q(44178, {	-- A Particularly Potent Potion
-					["classes"] = { 4 },
-					["provider"] = { "n", 102594 },	-- Marin Noggenfogger
-				}),
 				q(40930, {	-- Apocalypse
 					["classes"] = { 6 },	-- Death Knight
 				}),
@@ -462,10 +458,6 @@ _.Zones =
 						{ "n", 110564 },	-- Alonsus Faol
 					},
 				}),
-				q(43468, {	-- Blood for the Wolfe
-					["classes"] = { 4 },
-					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
-				}),
 				q(43488, {	-- Blood of Our Enemy
 					["classes"] = { 2 },
 					["provider"] = { "n", 110571 },	-- Delas Moonfang
@@ -719,11 +711,6 @@ _.Zones =
 				}),
 			--	q(44271)	-- Eye of Azshara -- mission board
 			--	q(44270)	-- Eye of Azshara -- mission board
-				q(43852, {	-- Fancy Lads and Buccaneers
-					["sourceQuests"] = { 43841 },	-- Convincin' Old Yancey
-					["classes"] = { 4 },
-					["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
-				}),
 			--	q(44486)	-- Fel-Ravaged Tome -- granted by i(141360) in Vault of the Wardens
 				q(41035, {	-- Felstorm's Plea
 					["classes"] = { 8 },
@@ -1113,10 +1100,6 @@ _.Zones =
 				q(42185, {	-- Never Hunt Alone -- actually started in an instanced version of Ulduar
 					["classes"] = { 3 },
 					["provider"] = { "n", 106558 },	-- Mimiron
-				}),
-				q(42730, {	-- Noggenfogger's Reasonable Request
-					["classes"] = { 4 },
-					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 				}),
 				q(46722, {	-- Nothing Up My Sleeve
 					["classes"] = { 8 },
@@ -1722,10 +1705,6 @@ _.Zones =
 						{ "n", 102700 },	-- Maryl Felstorm
 						{ "n", 109222 },	-- Maryl Felstorm
 					},
-				}),
-				q(42684, {	-- Throwing SI:7 Off the Trail
-					["classes"] = { 4 },
-					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 				}),
 				q(43331, {	-- Time to Collect
 					["sourceQuests"] = { 42483 },	-- Put It All on Red
