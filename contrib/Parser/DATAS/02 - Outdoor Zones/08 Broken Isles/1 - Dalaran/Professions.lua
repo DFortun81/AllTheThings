@@ -970,8 +970,9 @@ _.Zones =
 						["provider"] = { "n", 93543 },	-- Sminx Glasseye
 					}),
 					q(40530,  {	-- An Eye for Detail
-						["sourceQuests"] = { 40529 },	-- Truly Outrageous
+						["coord"] = { 40.2, 34.6, 627 },
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
+						["sourceQuests"] = { 40529 },	-- Truly Outrageous
 					}),
 					q(40559,  {	-- Black Rook Hold: The Raven's Wisdom
 						["provider"] = { "n", 93527 },	-- Timothy Jones
@@ -980,6 +981,7 @@ _.Zones =
 						},
 					}),
 					q(40540,  {	-- Come at Me, Brul
+						["coord"] = { 40.2, 34.6, 627 },
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 					}),
 					q(40523,  {	-- Facet-nating Friends
@@ -1005,19 +1007,35 @@ _.Zones =
 						["provider"] = { "o", 246250 },	-- Letter From Jabrul
 					}),
 					q(40538,  {	-- Lapidary Lessons
+						["coord"] = { 40.2, 34.6, 627 },
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
 						["g"] = {
 							recipe(195854),	-- Versatile Maelstrom Sapphire
 						},
 					}),
-					q(40534,  {	-- Making the Cut
-						recipe(195851),	-- Masterful Queen's Opal
+					q(40532,  {	-- Making the Cut (Deadly Deep Amber)
+						["coord"] = { 40.2, 34.6, 627 },
+						["provider"] = { "n", 93526 },	-- Tiffany Cartier
+						["sourceQuest"] = 40531,	-- Swift Justice
+						["g"] = {
+							recipe(195848),	-- Deadly Deep Amber
+						},
 					}),
-					q(40533,  {	-- Making the Cut
-						recipe(195849),	-- Quick Azsunite
+					q(40534,  {	-- Making the Cut (Masterful Queen's Opal)
+						["coord"] = { 40.2, 34.6, 627 },
+						["provider"] = { "n", 93526 },	-- Tiffany Cartier
+						["sourceQuest"] = 40531,	-- Swift Justice
+						["g"] = {
+							recipe(195851),	-- Masterful Queen's Opal
+						},
 					}),
-					q(40532,  {	-- Making the Cut
-						recipe(195848),	-- Deadly Deep Amber
+					q(40533,  {	-- Making the Cut (Quick Azsunite)
+						["coord"] = { 40.2, 34.6, 627 },
+						["provider"] = { "n", 93526 },	-- Tiffany Cartier
+						["sourceQuest"] = 40531,	-- Swift Justice
+						["g"] = {
+							recipe(195849),	-- Quick Azsunite
+						},
 					}),
 					q(40560,  {	-- Maw of Souls: Spiriting Away
 						["provider"] = { "n", 93527 },	-- Timothy Jones
@@ -1026,7 +1044,13 @@ _.Zones =
 						},
 					}),
 					q(40535,  {	-- Raising the Drogbar
+						["coord"] = { 40.2, 34.6, 627 },
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
+						["sourceQuests"] = {
+							40532,	-- Making the Cut (Deadly Deep Amber)
+							40534,	-- Making the Cut (Masterful Queen's Opal)
+							40533,	-- Making the Cut (Quick Azsunite)
+						},
 					}),
 					q(40558, {	-- Socket to Me
 						["provider"] = { "o", 246154 },	-- Broken Toy Box
@@ -1035,8 +1059,9 @@ _.Zones =
 						},
 					}),
 					q(40531,  {	-- Swift Vengeance
-						["sourceQuests"] = { 40530 },	-- An Eye for Detail
+						["coord"] = { 40.2, 34.6, 627 },
 						["provider"] = { "n", 93526 },	-- Tiffany Cartier
+						["sourceQuests"] = { 40530 },	-- An Eye for Detail
 					}),
 					q(40529,  {	-- Truly Outrageous
 						["coord"] = { 40.2, 34.6, 627 },
