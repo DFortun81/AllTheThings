@@ -73,15 +73,6 @@ _.Zones =
 					["coord"] = { 42.3, 81.7, 642 },	-- Darkpens
 					["provider"] = { "n", 92850 },	-- Commander Jarod Shadowsong
 				}),
-				q(40536, {	-- Bruls Before Jewels
-					["requireSkill"] = 755,	-- Jewelcrafting
-					["provider"] = { "n", 100776 },	-- Jabrul <Jewelcrafting Master>
-					["groups"] = {
-						i(132469),	-- Design: Azsunite Pendant
-						i(132468),	-- Design: Deep Amber Pendant
-						i(132467),	-- Design: Skystone Pendant
-					},
-				}),
 				q(40122, {	-- Cenarius, Keeper of the Grove
 					["sourceQuests"] = { 39861 },	-- Tying Up Loose Ends
 					["coord"] = { 54.6, 72.8, 641 },

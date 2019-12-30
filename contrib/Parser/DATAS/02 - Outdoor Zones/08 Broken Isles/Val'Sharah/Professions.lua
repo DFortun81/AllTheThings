@@ -282,6 +282,19 @@ _.Zones =
 						},
 					},
 				}),
+				prof(755, {	-- Jewelcrafting
+					q(40536, {	-- Bruls Before Jewels
+						["coord"] = { 45.3, 73.3, 755 },
+						["provider"] = { "n", 100776 },	-- Jabrul <Jewelcrafting Master>
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["sourceQuest"] = 40535,	-- Raising the Drogbar
+						["groups"] = {
+							i(132469),	-- Design: Azsunite Pendant
+							i(132468),	-- Design: Deep Amber Pendant
+							i(132467),	-- Design: Skystone Pendant
+						},
+					}),
+				}),
 				prof(393, {	-- Skinning
 					q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
 						["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
