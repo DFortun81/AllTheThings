@@ -433,6 +433,7 @@ _.Zones =
 					["coord"] = { 21.6, 55.0, 525 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 33468,	-- Save Wolf Home
+					["isBreadcrumb"] = true,
 				}),
 				q(34775, {	-- Mission Probable
 					["maps"] = { 590 },	-- Garrison
