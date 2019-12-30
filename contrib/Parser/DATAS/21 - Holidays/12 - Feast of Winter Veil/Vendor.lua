@@ -156,19 +156,19 @@ _.Holidays = bubbleDown({["u"] = 29},
 					i(104324),	-- Foot Ball
 				}),
 				n(23064, {	-- Eebee Jinglepocket
-					-- Cooking
-					i(34413),	-- Recipe: Hot Apple Cider
-					i(17201),	-- Recipe: Winter Veil Egg Nog
-					i(17200),	-- Recipe: Gingerbread Cookie
-					-- Leatherworking
-					i(34262),	-- Pattern: Winter Boots
-					-- Tailoring
-					i(34261, {	-- Pattern: Green Winter Clothes
-						
-						["races"] = HORDE_ONLY,
-					}),
-					-- Other
-					i(70923),	-- Gaudy Winter Veil Sweater
+					["coord"] = { 51.3, 29.7, 111 },	-- Shattrath City
+					["g"] = {
+						-- Cooking
+						i(34413),	-- Recipe: Hot Apple Cider
+						i(17201),	-- Recipe: Winter Veil Egg Nog
+						i(17200),	-- Recipe: Gingerbread Cookie
+						-- Leatherworking
+						i(34262),	-- Pattern: Winter Boots
+						-- Tailoring
+						i(34261),	-- Pattern: Green Winter Clothes
+						-- Other
+						i(70923),	-- Gaudy Winter Veil Sweater
+					},
 				}),
 				n(96362, {	-- Izzy Hollyfizzle
 					["coords"] = {
