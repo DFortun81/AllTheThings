@@ -451,7 +451,6 @@ _.Zones =
 					["classes"] = { 8 },	-- Mage
 				}),
 				q(41469),	-- Return to Irongrove Retreat
-				q(45238),	-- Return to Karazhan: Cubic Cynosure
 				q(42838),	-- Reversal
 				q(43313),	-- Rumor Has It
 				q(43813),	-- Sanctum of Order Teleporter Online!

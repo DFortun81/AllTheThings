@@ -1386,11 +1386,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(50998, {	-- Work Order: Deep Sea Satin
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(52331, {	-- Work Order: Demitri's Draught of Deception
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -1641,6 +1636,12 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(50998, {	-- Work Order: Deep Sea Satin
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["requireSkill"] = 197,	-- Tailoring
 					}),
 					q(53716, {	-- Eastpoint Emergency (Faction Assault WQ)
 						["lvl"] = 110,
