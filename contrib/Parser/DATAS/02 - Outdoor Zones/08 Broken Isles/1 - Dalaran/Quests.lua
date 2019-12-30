@@ -555,7 +555,9 @@ _.Zones =
 						i(142536),	-- Memory Cube
 					},
 				}),
-			--	q(45159)	-- Cubic Conundrum -granted by i(142559) in nighthold
+				q(45159, {	-- Cubic Conundrum
+					["provider"] = { "i", 142559 },	-- Mysterious Cube
+				}),
 				q(45160, {	-- Cubic Currents
 					["sourceQuests"] = { 45159 },	-- Cubic Conundrum
 					["provider"] = { "n", 93538 },	-- Dariness the Learned
