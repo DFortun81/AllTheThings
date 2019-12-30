@@ -30,6 +30,10 @@ _.Zones =
 					["questID"] = 42297,
 					["coord"] = { 43.4, 22.4, 630 },
 				}),
+				o(258690, {	-- Small Treasure Chest
+					["questID"] = 42285,
+					["coord"] = { 71.7, 21.7, 631 },
+				}),
 				o(240630, {	-- Small Treasure Chest
 					["questID"] = 42272,
 					["coord"] = { 59.9, 63.2, 630 },
