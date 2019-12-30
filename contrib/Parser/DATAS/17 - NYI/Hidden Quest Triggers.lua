@@ -907,6 +907,7 @@ _.NeverImplemented =
 		q(47053),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 3 - Tracking
 		q(47044),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 2 - Tracking
 		q(47038),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 1 - Tracking
+		q(43713),	-- Stormheim - Tracking - Statue Climbed. Triggers at the top of Nashal the Watcher
 		q(40302),	-- FLAG - Prospecting 01
 		q(40303),	-- FLAG - Prospecting 02
 		q(40304),	-- FLAG - Prospecting 03 - triggered when completing a jewelcrafting world quest in Dalaran
@@ -1137,6 +1138,7 @@ _.NeverImplemented =
 		
 	--	Stormheim bonus objectives
 		q(42431),	-- The Brood of Nithogg
+		q(40111),	-- Rout the Bilgefin Invaders
 		
 	--	Val'sharah bonus objectives
 		q(38716),	-- Black Rook Hold
