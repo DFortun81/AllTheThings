@@ -522,7 +522,7 @@ _.Zones =
 					["provider"] = { "n", 14727 },	-- Vehena
 				}),
 				q(7827, {	-- A Donation of Silk
-					["u"] = 40,
+					["u"] = 40,	
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14726 },	-- Rashona Straglash
 				}),

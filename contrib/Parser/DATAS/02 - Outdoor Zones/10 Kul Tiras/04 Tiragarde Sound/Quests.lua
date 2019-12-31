@@ -131,7 +131,7 @@ _.Zones =
 				}),
 				q(48347, {	-- Anglepoint Wharf
 					["isBreadcrumb"] = true,
-				--	["objectID"] = 281718,	-- HELP WANTED
+					["provider"] = { "o", 281718 },	-- HELP WANTED
 					["coord"] = { 53.0, 28.3, 895 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -155,7 +155,7 @@ _.Zones =
 					["provider"] = { "n", 152578 },	-- Gazlowe
 				}),
 				q(49028, {	-- A Sweater for Rupert
-				--	["objectID"] = 277199,	-- Weathered Job List
+					["provider"] = { "o", 277199 },	-- Weathered Job List
 					["coord"] = { 76.1, 65.4, 895 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -488,13 +488,13 @@ _.Zones =
 				}),
 				q(49181, {	-- Glimmering Locket (A)
 					["sourceQuests"] = { 49178 },	-- My Favorite Things (must be in log)
-				--	["objectID"] = 277373,	-- Glimmering Seaweed
+					["provider"] = { "o", 277373 },	-- Glimmering Seaweed
 					["coord"] = { 88.0, 74.9, 895 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53444, {	-- Glimmering Locket (H)	
 					["sourceQuests"] = { 53443 },	-- My Favorite Things (must be in log)
-				--	["objectID"] = 277373,	-- Glimmering Seaweed
+					["provider"] = { "o", 277373 },	-- Glimmering Seaweed
 					["coord"] = { 85.48, 80.78, 895 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -589,7 +589,7 @@ _.Zones =
 				}),
 				q(48606, {	-- Loaded for Bear
 					["sourceQuests"] = { 48539 },	-- Freehold
-				--	["objectID"] = 276488,	-- Azerite Cannonball
+					["provider"] = { "o", 276488 },	-- Azerite Cannonball
 					["coord"] = { 78.6, 77.8, 895 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -647,7 +647,7 @@ _.Zones =
 					["provider"] = { "n", 129613 },	-- Maynard Algerson
 				}),
 				q(50573, {	-- Message from the Management
-				--	["objectID"] = 281647,	-- Posted Notice
+					["provider"] = { "o", 281647 },	-- Posted Notice
 					["sourceQuests"] = { 47485 },	-- The Ashvane Trading Company
 					["coord"] = { 78.9, 45.7, 895 },
 					["races"] = ALLIANCE_ONLY,
@@ -673,7 +673,7 @@ _.Zones =
 						49398,	-- Raise a Glass!
 						49401,	-- Rodrigo's Roost
 					},
-				--	["objectID"] = 278313,	-- Sternly Worded Letter
+					["provider"] = { "o", 278313 },	-- Sternly Worded Letter
 					["coord"] = { 77.2, 84.7, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -999,7 +999,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(48778, {	-- Stone Soup
-				--	["objectID"] = 276837,	-- Recipe Rock
+					["provider"] = { "o", 276837 },	-- Recipe Rock
 					["coord"] = { 56.1, 17.9, 895 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1109,7 +1109,7 @@ _.Zones =
 				}),
 				q(53476, {	-- The Great Sea Scrolls
 					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
-				--	["itemID"] = 163856,	-- Ancient Pilgrimage Scrollcasing
+					["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
 					["g"] = {
 						i(163863),	-- Bartered Vrykul Cowl
 						i(163864),	-- Bartered Vrykul Facemask
@@ -1120,7 +1120,7 @@ _.Zones =
 				q(50544, {	-- The Hunters of Kennings Lodge
 					["sourceQuests"] = { 46728 },	-- The Nation of Kul Tiras
 					["isBreadcrumb"] = true,
-				--	["objectID"] = 281551,	-- Help Wanted Poster
+					["provider"] = { "o", 281551 },	-- Help Wanted Poster
 					["coord"] = { 75.5, 49.8, 895 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1152,7 +1152,7 @@ _.Zones =
 				}),
 				q(48070, {	-- The Norwington Festival
 					["isBreadcrumb"] = true,
-				--	["objectID"] = 281230,	-- Formal Invitation
+					["provider"] = { "o", 281230 },	-- Formal Invitation
 					["coord"] = { 67.1, 24.8, 895 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1172,7 +1172,7 @@ _.Zones =
 					},
 				}),
 				q(49393, {	-- The Roughnecks
-				--	["objectID"] = 278252,	-- Job Flyer
+					["provider"] = { "o", 278252 },	-- Job Flyer
 					["coord"] = { 42.4, 27.2, 895 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1272,7 +1272,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49069, {	-- WANTED: Ol' Frostclaw
-				--	["objectID"] = 277199,	-- Weathered Job List
+					["provider"] = { "o", 277199 },	-- Weathered Job List
 					["coord"] = { 76.1, 65.4, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -1287,27 +1287,27 @@ _.Zones =
 					},
 				}),
 				q(51384, {	-- WANTED: Quartermaster Ssylis (A)
-				--	["objectID"] = 289361,	-- WANTED: Quartermaster Ssylis
+					["provider"] = { "o", 289361 },	-- WANTED: Quartermaster Ssylis
 					["coord"] = { 42.2, 27.2, 895 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53454, {	-- WANTED: Quartermaster Ssylis (H)
-				--	["objectID"] = 298849,	-- Wanted Poster
+					["provider"] = { "o", 298849 },	-- Wanted Poster
 					["coord"] = { 39.7, 17.8, 895 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51367, {	-- WANTED: Raging Earthguard (A)
-				--	["objectID"] = 289310,	-- WANTED: Raging Earthguard
+					["provider"] = { "o", 289310 },	-- WANTED: Raging Earthguard
 					["coord"] = { 53.0, 28.3, 895 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53451, {	-- WANTED: Raging Earthguard (H)
-				--	["objectID"] = 298849,	-- Wanted Poster
+					["provider"] = { "o", 298849 },	-- Wanted Poster
 					["coord"] = { 39.7, 17.8, 895 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51368, {	-- WANTED: The Hornet
-				--	["objectID"] = 289313,	-- WANTED: The Hornet
+					["provider"] = { "o", 289313 },	-- WANTED: The Hornet
 					["coord"] = { 42.2, 22.9, 895 },
 					["races"] = ALLIANCE_ONLY,
 				}),

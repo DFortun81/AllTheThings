@@ -1207,6 +1207,8 @@ _.NeverImplemented =
 		]]--
 		
 	--	VARIOUS
+		q(48432),	-- Unknown. Triggered as horde sometime after turning in "The Call for Allies" at 110 and before turning in "Hour of Reckoning." Could be phasing related?
+		q(58432),	-- Unknown. Triggered as horde sometime after turning in "The Call for Allies" at 110 and before turning in "Hour of Reckoning." Could be phasing related?
 		q(54411),	-- triggers when speaking with Zidormi in Darkshore to travel back in time
 		q(58013),	-- Alliance war campaign, triggers when speaking to Anduin while on "This Ain't Mine"
 		q(51722),	-- triggers when completing "Uniting Kul Tiras" (Alliance WQ unlock).  Completing one triggers all 4 WQ unlock quests (main/alt quests for both Alliance and Horde)

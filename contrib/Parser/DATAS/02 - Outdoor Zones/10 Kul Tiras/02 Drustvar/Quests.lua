@@ -1041,7 +1041,7 @@ _.Zones =
 				}),
 				q(53476, {	-- The Great Sea Scrolls
 					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
-				--	["itemID"] = 163856,	-- Ancient Pilgrimage Scrollcasing
+					["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
 					["g"] = {
 						i(163863),	-- Bartered Vrykul Cowl
 						i(163864),	-- Bartered Vrykul Facemask
