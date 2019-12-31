@@ -896,6 +896,8 @@ _.Zones =
 						["sourceQuests"] = { 30353 },	-- Profit Mastery
 					}),
 					q(30169, {	-- Raid Leader Slovan
+						["provider"] = { "n", 58278 }, -- Tired Shushen <Waterspeaker>
+						["coord"] = { 30.06, 35.37, 418 },
 						["g"] = {
 							i(88387),	-- Shushen's Spittoon
 						},
@@ -1371,6 +1373,7 @@ _.Zones =
 					}),
 					q(30168, {	-- Thieving Raiders
 						["provider"] = { "n", 58278 },	-- Tired Shushen
+						["coord"] = { 30.06, 35.37, 418 },
 						["g"] = {
 							i(81532),	-- Silkspawn Carving
 							i(81534),	-- Carp Hunter Feather
