@@ -1204,15 +1204,27 @@ _.Zones =
 						i(89814, {	-- "Earth-Slasher" Master Plow
 							["cost"] = 800000,	-- 80g
 						}),
-						i(90175),	-- Gin'Ji Knife Set (TOY!)
-						i(93226),	-- Grand Commendation of the Tillers
-						i(89869),	-- Pandaren Scarecrow (TOY!)
-						i(74657),	-- Recipe: Spicy Salmon
-						i(74658),	-- Recipe: Spicy Vegetable Chips
+						i(90175, {	-- Gin'Ji Knife Set (TOY!)
+						["cost"] = 2125000, -- 212g 50s
+						}),
+						i(93226, {	-- Grand Commendation of the Tillers
+							["cost"] = 425000, -- 42g 50s
+						}),
+						i(89869, {	-- Pandaren Scarecrow (TOY!)
+							["cost"] = 2125000, -- 212g 50s
+						}),
+						i(74657, {	-- Recipe: Spicy Salmon
+							["cost"] = 8500, -- 85s
+						}),
+						i(74658, {	-- Recipe: Spicy Vegetable Chips
+							["cost"] = 8500, -- 85s
+						}),
 						i(89391, {	-- Reins of the Black Riding Goat (MOUNT!)
 							["cost"] = 12750000,	-- 1,275g
 						}),
-						i(89362),	-- Reins of the Brown Riding Goat (MOUNT!)
+						i(89362, {	-- Reins of the Brown Riding Goat (MOUNT!)
+							["cost"] = 4250000, -- 425g
+						}),
 						i(89390, {	-- Reins of the White Riding Goat (MOUNT!)
 							["cost"] = 27625000,	-- 2,762g 50s
 						}),
@@ -1220,7 +1232,9 @@ _.Zones =
 						i(90894),	-- Straw Hat - Leather
 						i(90895),	-- Straw Hat - Mail
 						i(90896),	-- Straw Hat - Plate
-						i(89784),	-- Tillers Tabard
+						i(89784, {	-- Tillers Tabard
+							["cost"] = 85000, -- 8g 50s
+						}),
 					},
 				}),
 				n(73143, {	-- Hayden Christophen <Honor Quartermaster> Old Grievous Vendor (neck, etc)
