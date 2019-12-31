@@ -385,6 +385,16 @@ _.ExpansionFeatures =
 							i(151143),	-- Shining Lamp of Al'Abas
 						},
 					}),
+					q(43253, {	-- Maw of Souls: Ancient Vrykul Legends
+						["lvl"] = 110,
+						["coord"] = { 40.9, 75.5, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
+						["sourceQuests"] = {
+							42684,	-- Throwing SI:7 Off the Trail
+							43468,	-- Blood for the Wolfe
+						},
+					}),
 					q(44116, {	-- Mystery at Citrine Bay
 						["lvl"] = 103,
 						["coord"] = { 41.3, 78.1, 626 },

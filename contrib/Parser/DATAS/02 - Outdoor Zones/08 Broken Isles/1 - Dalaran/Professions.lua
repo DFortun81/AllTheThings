@@ -300,6 +300,7 @@ _.Zones =
 							40988,	-- Too Many Cooks
 							40989,	-- The Prodigal Sous Chef
 						},
+						["coord"] = { 69.8, 38.8, 627 },
 						["provider"] = { "n", 101846 },	-- Nomi
 					}),
 					q(40991, {	-- Opening the Test Kitchen

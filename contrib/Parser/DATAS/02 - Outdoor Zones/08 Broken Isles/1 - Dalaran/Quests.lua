@@ -1044,14 +1044,6 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 			--	q(44267)	-- Maw of Souls -- mission board
-				q(43253, {	-- Maw of Souls: Ancient Vrykul Legends
-					["sourceQuests"] = {
-						42684,	-- Throwing SI:7 Off the Trail
-						43468,	-- Blood for the Wolfe
-					},
-					["classes"] = { 4 },
-					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
-				}),
 				q(46260, {	-- Meld Into the Shadows
 					["sourceQuests"] = {
 						45628,	-- This Time, Leave a Trail
