@@ -253,7 +253,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129655 },	-- Boss Tak
 				}),
-				q(50059, {	-- Can't Hear a Things
+				q(50059, {	-- Can't Hear a Thing
 					["sourceQuests"] = { 50026 },	-- Save Our Shipmates
 					["coord"] = { 51.1, 35.8, 895 },
 					["races"] = ALLIANCE_ONLY,
@@ -1381,28 +1381,7 @@ _.Zones =
 					["provider"] = { "n", 149809 },	-- Gazlowe
 				}),
 --[[	raw quest list to check against
-
 				-- Unknown
-				q(49523, {	-- A Bad Deal
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50249, {	-- A Boralus Triple Threat
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51144, {	-- A Bundle of Furs
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53812, {	-- A Carefully Laid Trap
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48352, {	-- A Cure from the Sea
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49869, {	-- A Desperate Defense
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(50322, {	-- A Feathery Fad
 					["collectible"] = false,
 					["lvl"] = 120,
@@ -1411,179 +1390,10 @@ _.Zones =
 				q(48104, {	-- A Greater Challenge
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(48873, {	-- A Grizzly End
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48879, {	-- A Hunt for Hawk Eggs
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49716, {	-- A Lesson on Trust
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51151, {	-- A Letter to the League
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49234, {	-- A Marine Out of Water
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(47189, {	-- A Nation Divided
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(52151, {	-- A Nation United
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(54947, {	-- A Small Team
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51385, {	-- A Supply of Stingers
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49028, {	-- A Sweater for Rupert
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50002, {	-- A Very Precious Cargo
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51610, {	-- Adhara White
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(49290, {	-- Aged to Perfection
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48540, {	-- Aiding the Wharf
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49737, {	-- Air Raid
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51225, {	-- Albatrocity
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49292, {	-- Algae Shakes
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50605, {	-- Alliance War Effort
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48080, {	-- An Element of Danger
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50542, {	-- An Explosive Opportunity
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49710, {	-- An Offering of Eggs
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50349, {	-- An Overrun Mine
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48347, {	-- Anglepoint Wharf
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54295, {	-- Artillery Master Goodwin
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(51653, {	-- Auditor Dolp
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(52869, {	-- Azerite Empowerment
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51586, {	-- Azerite Empowerment
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51584, {	-- Azerite Madness
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(52874, {	-- Azerite Mining
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51581, {	-- Azerite Mining
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51583, {	-- Azerite Wounds
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(49260, {	-- Backup While I Pack Up
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51652, {	-- Barman Bill
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51666, {	-- Bashmu
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(48005, {	-- Be Our Guest
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51638, {	-- Beachhead
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(50110, {	-- Bearers of Bad News
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48004, {	-- Beginner Equitation
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49036, {	-- Best In Show
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48009, {	-- Betrayal of the Guard
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49418, {	-- Big Boss
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54182, {	-- Bilgewater Bash Brothers
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(51671, {	-- Billy Goat Barber
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(50296, {	-- Billy Goat Barber
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51669, {	-- Black-Eyed Bart
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51841, {	-- Blackthorne
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(53755, {	-- Blight and Sound
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48421, {	-- Blood in the Tides
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53439, {	-- Blood in the Tides
-					["races"] = HORDE_ONLY,
-				}),
-				q(51613, {	-- Bloodmaw
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
@@ -1591,64 +1401,9 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(48616, {	-- Bolas and Birds
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(54281, {	-- Bombing Ballistae
 					["collectible"] = false,
 					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49439, {	-- Boss' Revenge
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52755, {	-- Bringing the Heat
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51665, {	-- Broodmother Razora
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(52956, {	-- Call to Arms: Tiragarde Sound
-					["races"] = HORDE_ONLY,
-				}),
-				q(55340, {	-- Calligraphy
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50059, {	-- Can't Hear A Thing
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54257, {	-- Captain Greensails
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(51848, {	-- Captain Wintersail
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(47755, {	-- Captured and Enraptured
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49522, {	-- Carentan's Payment
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51842, {	-- Carla Smirk
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(49757, {	-- Cat on a Hot Copper Roof
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49740, {	-- Cease Fire!
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49225, {	-- Chasing the Leader
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50789, {	-- Clear the Air
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53314, {	-- Coarse Storm Silver
@@ -1660,162 +1415,27 @@ _.Zones =
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(53832, {	-- Counter-Sabotage
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(53808, {	-- Crawl To Victory
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(49300, {	-- Creature Corruption
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51647, {	-- Crews of Freehold
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(50234, {	-- Crews of Freehold
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48008, {	-- Dangerous Cargo
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51579, {	-- Dark Ranger Clea
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51341, {	-- Daughter of the Sea
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51226, {	-- Death from Two Sides
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48370, {	-- Death in the Depths
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48368, {	-- Deep Sea Defilement
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49405, {	-- Defenders of Daelin's Gate
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(51577, {	-- Defending the Academy
 					["collectible"] = false,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49239, {	-- Dress to Impress
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50700, {	-- Drust in Time
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(47961, {	-- Drustvar
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53716, {	-- Eastpoint Emergency
-					["collectible"] = false,
-					["lvl"] = 110,
 				}),
 				q(53877, {	-- Eastpoint Encounter
 					["collectible"] = false,
 					["lvl"] = 110,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(48372, {	-- Eldritch Invocations
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48369, {	-- Emergent Strategy
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49066, {	-- Encase of Emergency
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(53874, {	-- End Their Vigil
 					["collectible"] = false,
 					["lvl"] = 120,
-				}),
-				q(49739, {	-- Enemies at the Gate
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50788, {	-- Enemies Within
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49299, {	-- Enemy Within
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51311, {	-- Energizing Extract
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48087, {	-- Equine Retrieval
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48355, {	-- Evacuate the Premises
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53951, {	-- Explosive Relief
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53950, {	-- Explosive Relief
 					["collectible"] = false,
 					["lvl"] = 110,
 				}),
-				q(49404, {	-- Fairwind's "Friends"
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(51284, {	-- Falcon Hunt
 					["collectible"] = false,
 					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50776, {	-- False Prophets
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52750, {	-- Farmers Who Fight
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52128, {	-- Ferry Pass
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54129, {	-- First Mate Malone
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53814, {	-- First Sergeant Steelfang
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49402, {	-- Flew the Coop
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53278, {	-- Flourishing Riverbud
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(53277, {	-- Flourishing Sea Stalks
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(53875, {	-- Fogsail for a Day
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(48196, {	-- Following Eddie's Trail
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49736, {	-- For Kul Tiras!
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53076, {	-- Foundry Meltdown
@@ -1823,57 +1443,6 @@ _.Zones =
 					["lvl"] = 120,
 				}),
 				q(52144, {	-- Foundry Meltdown
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51654, {	-- Fowlmouth
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51662, {	-- Foxhollow Skyterror
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(49720, {	-- Free Bird
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48539, {	-- Freehold
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49419, {	-- Frozen
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53188, {	-- Frozen Freestyle
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53699, {	-- Gate Crashers
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(47099, {	-- Get Your Bearings
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49719, {	-- Getting Paid
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51611, {	-- Ghost of the Deep
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(49453, {	-- Give a Dam
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49181, {	-- Glimmering Locket
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53444, {	-- Glimmering Locket
-					["races"] = HORDE_ONLY,
-				}),
-				q(52120, {	-- Gnomish Azerite Extraction
 					["collectible"] = false,
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
@@ -1891,23 +1460,6 @@ _.Zones =
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(50299, {	-- Gryphon Wranglin'
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51844, {	-- Gulliver
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(49738, {	-- Hands Off My Booty!
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52167, {	-- Hardcore Raiders
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(54119, {	-- Hartford Sternbach
 					["collectible"] = false,
 					["lvl"] = 110,
@@ -1917,204 +1469,19 @@ _.Zones =
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(49412, {	-- Helping Henry
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50005, {	-- Hold My Hand
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49394, {	-- Hold Still
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50790, {	-- Hot Pursuit
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49233, {	-- I'm a Druid, Not a Priest
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51245, {	-- I'm a Lumberjack and I'm Okay
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54268, {	-- Impulsive Propulsion
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(49450, {	-- Incident Reports
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51426, {	-- Inspection Gadget
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49452, {	-- Inventory Deficit
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(47894, {	-- Jump Around
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51664, {	-- Kulett the Ornery
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(47487, {	-- Labor Dispute
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51149, {	-- Left at the Port
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54945, {	-- Let's Get It Started
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(55630, {	-- Let's Get It Started
-					["races"] = HORDE_ONLY,
-				}),
-				q(52760, {	-- Like Fish in a Barrel
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(50295, {	-- Like Pulling Teeth
-					["collectible"] = false,
-					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52805, {	-- Like Pulling Teeth
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(48606, {	-- Loaded for Bear
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49230, {	-- Local Flavor
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53446, {	-- Local Flavor
-					["races"] = HORDE_ONLY,
-				}),
 				q(49661, {	-- Locally Sourced Eggs
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53759, {	-- Look Out Below!
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(55040, {	-- Looking Inside
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52124, {	-- Losers Weepers
 					["collectible"] = false,
 					["lvl"] = 120,
-				}),
-				q(48505, {	-- Lovesick and Lost
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48898, {	-- Lucky Charm
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51670, {	-- Lumbergrasp Sentinel
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(48419, {	-- Lured and Allured
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51895, {	-- Maison the Portable
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51632, {	-- Make Loh Go
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(50787, {	-- Make Our Case
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49897, {	-- Making Mysteries
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49465, {	-- Maximizing Resources
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53726, {	-- Mechinations
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51659, {	-- Merianae
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(50573, {	-- Message from the Management
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50351, {	-- Miner Operation
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49409, {	-- Missing Treasure!
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54112, {	-- Mistweaver Nian
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(48902, {	-- Monstrous Energy
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48089, {	-- Mountain Sounds
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49178, {	-- My Favorite Things
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53443, {	-- My Favorite Things
-					["races"] = HORDE_ONLY,
-				}),
-				q(53994, {	-- Naga Attack!
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(48088, {	-- No Party Like a Trogg Party
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52431, {	-- No-Landing Zone
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48909, {	-- Noble Responsibilities
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50315, {	-- Not On the Itinerary
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52430, {	-- Not So Bad Down Here
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(53704, {	-- Not Too Sober Citizens Brigade
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52787, {	-- Numbing the Pain
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(47098, {	-- Out Like Flynn
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51843, {	-- P4-N73R4
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51660, {	-- Pack Leader Asenya
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(48366, {	-- Paddle to Safety
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48773, {	-- Papers, Please
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(54618, {	-- Paragon of the 7th Legion
 					["races"] = ALLIANCE_ONLY,
@@ -2125,33 +1492,6 @@ _.Zones =
 				q(51462, {	-- Paratroopers
 					["collectible"] = false,
 					["lvl"] = 120,
-				}),
-				q(48874, {	-- Pardon Our Rust
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49733, {	-- Patching Up the Rear
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49454, {	-- Pest Prevention
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51092, {	-- Picturesque Boralus
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50324, {	-- Picturesque Fizzsprings Resort
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51090, {	-- Picturesque Norwington Estate
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50352, {	-- Pinch of Azerite
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49408, {	-- Pirate Dice
 					["races"] = ALLIANCE_ONLY,
@@ -2165,34 +1505,6 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(48356, {	-- Possessive Headgear
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50795, {	-- Prepare for Trouble
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(55645, {	-- Princely Visit
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49735, {	-- Protect the Nests
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50599, {	-- Proudmoore Admiralty
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50972, {	-- Proudmoore's Parley
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48353, {	-- Pulse of the Wharf
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51661, {	-- Raging Swell
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(49398, {	-- Raise a Glass!
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(51890, {	-- Ranja the Last Chillpaw
 					["collectible"] = false,
 					["lvl"] = 120,
@@ -2201,151 +1513,16 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(49400, {	-- Recruiting Efforts
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54946, {	-- Report to Gila
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49468, {	-- Required Webinar
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51566, {	-- Resurgence of the Beast
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51430, {	-- Reverse Tinkering
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48776, {	-- Rig Robbing
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49741, {	-- Righteous Retribution
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50356, {	-- Rock Meet Dynamite
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49403, {	-- Rodrigo's Revenge
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49401, {	-- Rodrigo's Roost
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(53313, {	-- Rough Monelite
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(49417, {	-- Roughneck Riders
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48670, {	-- Runaway Rider
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48899, {	-- Safety First
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49232, {	-- Salvaging a Disaster
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53041, {	-- Sampling the Goods
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(47186, {	-- Sanctum of the Sages
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48597, {	-- Saurolisk Escape
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(49464, {	-- Saurolisk Tails
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51656, {	-- Saurolisk Tamer Mugg
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(50026, {	-- Save Our Shipmates
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51893, {	-- Sawtooth
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(54167, {	-- Set Sail
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48965, {	-- Settle the Score
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49268, {	-- Sharks in the Water
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52258, {	-- She Sells Seashells
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51626, {	-- Shell Game
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(50009, {	-- Shipwreck Recovery Crew
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51892, {	-- Shiverscale the Toxic
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(48939, {	-- Show Me What You've Got
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53331, {	-- Show-Off
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53784, {	-- Siege Engineer Krackleboom
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53445, {	-- Silencing the Sisters
-					["races"] = HORDE_ONLY,
-				}),
-				q(49226, {	-- Silencing the Sisters
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51463, {	-- Sky Drop Rescue
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(49994, {	-- Sliding with Style
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53189, {	-- Slippery Slopes
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(47488, {	-- Small Haulers
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52143, {	-- Smaller Haulers
-					["collectible"] = false,
-					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53315, {	-- Smooth Platinum
 					["collectible"] = false,
 					["lvl"] = 120,
-				}),
-				q(50977, {	-- Smuggler Shakedown
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52756, {	-- Snow Way Out
 					["collectible"] = false,
@@ -2356,141 +1533,6 @@ _.Zones =
 					["lvl"] = 120,
 				}),
 				q(47695, {	-- Sound the Alarm
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48557, {	-- Sowing Saplings
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50421, {	-- Sparring on the Spar
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49529, {	-- Spring Cleaning
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51651, {	-- Squacks
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51839, {	-- Squirgle of the Depths
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(48348, {	-- Stinging Barbs
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48778, {	-- Stone Soup
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51388, {	-- Stopping the Infestation
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(47962, {	-- Stormsong Valley
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(47489, {	-- Stow and Go
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52751, {	-- Strange Looking Dogs
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(54091, {	-- Strong Arm John
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(54454, {	-- Supplies from the 7th Legion
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54458, {	-- Supplies from the Proudmoore Admiralty
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51024, {	-- Supplies Needed: Akunda's Bite
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51028, {	-- Supplies Needed: Blood-Stained Bone
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51029, {	-- Supplies Needed: Calcified Bone
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51030, {	-- Supplies Needed: Coarse Leather
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51035, {	-- Supplies Needed: Deep Sea Satin
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52375, {	-- Supplies Needed: Great Sea Catfish
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51033, {	-- Supplies Needed: Mistscale
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51017, {	-- Supplies Needed: Monelite Ore
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52379, {	-- Supplies Needed: Redtail Loach
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51022, {	-- Supplies Needed: Riverbud
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52376, {	-- Supplies Needed: Sand Shifter
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51027, {	-- Supplies Needed: Sea Stalk
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51032, {	-- Supplies Needed: Shimmerscale
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51026, {	-- Supplies Needed: Siren's Pollen
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52378, {	-- Supplies Needed: Slimy Mackerel
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51023, {	-- Supplies Needed: Star Moss
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51021, {	-- Supplies Needed: Storm Silver Ore
-					["collectible"] = false,
-					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51031, {	-- Supplies Needed: Tempest Hide

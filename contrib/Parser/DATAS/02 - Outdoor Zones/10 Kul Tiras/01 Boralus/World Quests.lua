@@ -141,7 +141,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(52379, {	-- Supplies Needed: Redtail Loaach
+					q(52379, {	-- Supplies Needed: Redtail Loach
 						["provider"] = { "n", 142095 },	-- Henrick Wyther <Trade Goods>
 						["lvl"] = 120,
 						["coord"] = { 73.21, 11.01, 1161 },
