@@ -10,7 +10,10 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\FactionChange",
 					["g"] = {
 						q(50242, {	-- A Choice for Allies
-							["provider"] = { "n", 126065 },	-- Lady Sylvanas Windrunner
+							["providers"] = {
+								{ "n", 126065 },	-- Lady Sylvanas Windrunner
+								{ "n", 133523 },	-- Ji Firepaw
+							},
 							["coord"] = { 37.8, 81.0, 85 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 110,
@@ -464,13 +467,19 @@ _.Zones =
 									}),
 								}),
 								q(49930, {	-- The Call for Allies
-									["provider"] = { "n", 126065 },	-- Lady Sylvanas Windrunner
+									["providers"] = {
+										{ "n", 126065 },	-- Lady Sylvanas Windrunner
+										{ "n", 133523 },	-- Ji Firepaw
+									},
 									["coord"] = { 37.8, 81.0, 85 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 110,
 								}),
 								q(50254,{	-- A Second Ally For the Cause
-									["provider"] = { "n", 126065 },	-- Lady Sylvanas Windrunner
+									["providers"] = {
+										{ "n", 126065 },	-- Lady Sylvanas Windrunner
+										{ "n", 133523 },	-- Ji Firepaw
+									},
 									["coord"] = { 37.8, 81.0, 85 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 110,
