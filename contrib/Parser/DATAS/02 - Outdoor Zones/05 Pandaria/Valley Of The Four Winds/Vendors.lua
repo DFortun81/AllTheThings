@@ -1205,7 +1205,7 @@ _.Zones =
 							["cost"] = 800000,	-- 80g
 						}),
 						i(90175, {	-- Gin'Ji Knife Set (TOY!)
-						["cost"] = 2125000, -- 212g 50s
+							["cost"] = 2125000, -- 212g 50s
 						}),
 						i(93226, {	-- Grand Commendation of the Tillers
 							["cost"] = 425000, -- 42g 50s
