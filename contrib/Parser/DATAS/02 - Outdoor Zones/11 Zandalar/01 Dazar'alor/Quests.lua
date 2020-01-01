@@ -8,7 +8,6 @@ _.Zones =
 		m(1163, {	-- Dazar'alor
 			n(-17, {	-- Quests
 				q(51465, {	-- A Load of Scrap
-				--	confirm SQ when flying is implemented.
 					["sourceQuests"] = { 46931 },	-- Speaker of the Horde
 					["coord"] = { 44.9, 39.6, 1165 },
 					["races"] = HORDE_ONLY,
@@ -42,7 +41,7 @@ _.Zones =
 				}),
 				q(47442, {	-- Curse of Jani
 					["sourceQuests"] = { 47441 },	-- Pests
-					["coord"] = { 35.4, 7.80, 1165 },
+					["coord"] = { 35.4, 7.7, 1165 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126334 },	-- Jani
 				}),
@@ -107,7 +106,6 @@ _.Zones =
 					},
 				}),
 				q(52472, {	-- Make Loh Go
-				--	confirm SQ when flying is implemented.
 					["sourceQuests"] = { 52131 },	-- We Need Each Other
 					["coord"] = { 56.3, 91.5, 1165 },
 					["races"] = HORDE_ONLY,
@@ -115,7 +113,7 @@ _.Zones =
 				}),
 				q(48405, {	-- Mista Nice
 					["sourceQuests"] = { 48404 },	-- The Scamps
-					["coord"] = { 56.0, 88.8, 1165 },
+					["coord"] = { 55.9, 88.8, 1165 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 125312 },	-- Scrollsage Rooka
 				}),
@@ -129,9 +127,7 @@ _.Zones =
 					},
 				}),
 				q(47441, {	-- Pests
-				--	confirm SQ when flying is implemented.
-					["sourceQuests"] = { 47445 },	-- The Zanchuli Council
-					["coord"] = { 40.2, 19.2, 1165 },
+					["coord"] = { 40.2, 19.0, 1165 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 127665 },	-- Nokano
 				}),
@@ -236,14 +232,14 @@ _.Zones =
 					["coord"] = { 51.5, 99.4, 1165 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 141961 },	-- Lilian Voss
-						["sourceQuests"] = { 
-							57095,	-- Old Soldier (Saurfang loyalist)
-							57152,	-- Most Loyal (Sylvanas loyalist)
-						},	
+					["sourceQuests"] = {
+						57095,	-- Old Soldier (Saurfang loyalist)
+						57152,	-- Most Loyal (Sylvanas loyalist)
+					},
 				}),
 				q(46926, {	-- Shakedown
 					["sourceQuests"] = { 50835 },	-- The Port of Zandalar
-					["coord"] = { 50.0, 84.9, 1165 },
+					["coord"] = { 50.0, 85.0, 1165 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 135441 },	-- Zolani
 				}),
@@ -255,7 +251,7 @@ _.Zones =
 				}),
 				q(49488, {	-- Tal'gurub
 					["sourceQuests"] = { 49615 },	-- Trust of a King
-					["coord"] = { 49.9, 46.4, 1165 },
+					["coord"] = { 49.9, 46.6, 1165 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 120740 },	-- King Rastakhan
 				}),
@@ -269,7 +265,7 @@ _.Zones =
 					["provider"] = { "n", 127489 },	-- Hexlord Raal
 					["coord"] = { 49.9, 33.5, 1165 },
 					["sourceQuest"] = 47439,	-- Gonk, Lord of the Pack
-					["races"] = HORDE_ONLY,	
+					["races"] = HORDE_ONLY,
 				}),
 				q(51518, {	-- The Lost Spirit
 					["provider"] = { "n", 140907 },	-- Bwonsamdi
@@ -280,7 +276,7 @@ _.Zones =
 				q(50835, {	-- The Port of Zandalar
 					["sourceQuests"] = { 47514 },	-- Zuldazar
 					["isBreadcrumb"] = true,	-- for "Shakedown"
-					["coord"] = { 49.8, 46.3, 1165 },
+					["coord"] = { 49.8, 46.5, 1165 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 122915 },	-- Zolani
 				}),
@@ -291,9 +287,8 @@ _.Zones =
 					["provider"] = { "n", 126148 },	-- Witch Doctor Jala
 				}),
 				q(48404, {	-- The Scamps
-				--	confirm SQ when flying is implemented.
 					["sourceQuests"] = { 52131 },	-- We Need Each Other
-					["coord"] = { 56.0, 88.9, 1165 },
+					["coord"] = { 55.9, 88.8, 1165 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 125312 },	-- Scrollsage Rooka
 				}),
@@ -302,19 +297,19 @@ _.Zones =
 					["description"] = "Automated granted when logging in.",
 				}),
 				q(46846, {	-- The Word of Zul
-				--	confirm SQ when flying is implemented.
 					["sourceQuests"] = { 47514 },	-- zuldazar
-					["coord"] = { 50.0, 84.9, 1165 },
+					["coord"] = { 50.0, 84.7, 1165 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126684 },	-- Yazma
 				}),
 				q(47445, {	-- The Zanchuli Council
 					["sourceQuests"] = { 47514 },	-- Zuldazar
-					["coord"] = { 49.8, 46.3, 1165 },
+					["coord"] = { 49.7, 46.5, 1165 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 122641 },	-- Yazma
 				}),
 				q(52139, {	-- To Matters at Hand
+					["u"] = 40,
 					["sourceQuests"] = { 46931 },	-- Speaker of the Horde
 					["isBreadcrumb"] = true,	-- for "We Need Each Other"
 					["coord"] = { 34.5, 41.5, 1163 },
@@ -335,7 +330,10 @@ _.Zones =
 					["maps"] = { 862 },	-- Zuldazar
 				}),
 				q(52131, {	-- We Need Each Other
-					["sourceQuests"] = { 52139 },	-- To Matters at Hand
+					["sourceQuests"] = {
+						52139,	-- To Matters at Hand (legacy)
+						46931,	-- Speaker of the Horde
+					},
 					["coord"] = { 41.1, 64.4, 1164 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 133050 },	-- Princess Talanji
@@ -348,18 +346,18 @@ _.Zones =
 					["provider"] = { "n", 135441 },	-- Zolani
 				}),
 				q(47514, {	-- Zuldazar
-				--	no strict SQ since it depends on the order in which you choose to do the zones.
-					["provider"] = { "n", 135775 },	-- Scouting Map
 					["coord"] = { 40.1, 69.1, 1164 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 135775 },	-- Scouting Map
+					["sourceQuest"] = 52131,	-- We Need Each Other
 				}),
 
-			-- unsorted	
+			-- unsorted
 				q(47513, {	-- Vol'dun
-				--	no strict SQ since it depends on the order in which you choose to do the zones.
-					["description"] = "Picked up at the Scouting Map.",
+					["coord"] = { 41.8, 69.4, 1164 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 41.8, 69.2, 1164 },
+					["provider"] = { "n", 135775 },	-- Scouting Map
+					["sourceQuest"] = 52131,	-- We Need Each Other
 				}),
 				q(47313, {	-- Discreet Discussions
 					["sourceQuests"] = { 47513 },	-- Vol'dun
@@ -379,24 +377,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 122320 },	-- Bladeguard Kaja
 				}),
-		--[[	Listed under Expansion Features>Island>Quests
-				q(53435, {	-- Azerite for the Horde
-					["isWeekly"] = true,
-					["races"] = HORDE_ONLY,
-					["coord"] = { 44.60, 95.40, 1163 },
-					["provider"] = { "n", 123000 },	-- Captain Rez'okun
-					["g"] = {
-						i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
-						i(166999),	-- Treasure Map
-						i(169765, {	-- Worldvein Intelligence Reports
-							["questID"] = 56534,	-- Worldvein Rumors
-							["g"] = {
-								spell(302239),	-- Investigating the Rumors
-							},
-						}),
-						i(170150),	-- Map to the Last WOrldvein
-					},
-				}),--]]
 				q(54439, {	-- Crucible of Storms: Relics of Shadow
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 53763 },	-- Twist the Knife
@@ -431,9 +411,10 @@ _.Zones =
 					["sourceQuests"] = { 47512 },	-- Nazmir
 				}),
 				q(47512, {	-- Nazmir
-					["provider"] = { "n", 133050 },
+					["coord"] = { 41.8, 69.4, 1164 },
 					["races"] = HORDE_ONLY,
-					-- ["sourceQuests"] = { 52131 },	-- We Need Each Other [Note: Detaching from "Welcome to Zuldazar" achievemnt because they can't pick anything up regardless and less spammy in Quest Chain window
+					["provider"] = { "n", 135775 },	-- Scouting Map
+					["sourceQuest"] = 52131,	-- We Need Each Other
 				}),
 				q(48535, {	-- Nazmir, the Forbidden Swamp
 					["provider"] = { "n", 126549 },
