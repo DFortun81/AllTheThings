@@ -16,13 +16,13 @@ _.Zones =
 				q(49122, {	-- A Port in Peril
 					["provider"] = { "n", 127815 },	-- Zolani
 					["coord"] = { 49.9, 46.6, 1165 },
+					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						50881,	-- Royal Report
 						47432,	-- The Bargain is Struck (Paku)
 						48897,	-- The Bargain is Struck (Gonk)
 						49663,	-- False Prophecies
 					},
-					["races"] = HORDE_ONLY,
 				}),
 				q(55739, {	-- Back to the Chamber
 					["coord"] = { 50.9, 88.8, 1165 },
