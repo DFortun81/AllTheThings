@@ -1431,6 +1431,7 @@ _.NeverImplemented =
 		q(50917),	-- Vol'dun repeatable random chest
 		q(50919),	-- Vol'dun repeatable random chest
 		q(50915),	-- Vol'dun repeatable random chest
+		q(49142),	-- Zuldazar repeatable random chest
 		q(13541),	-- Triggered when opening a Maplewood Treasure Chest in darkshore
 		q(54872),	-- Opening a Darkshore chest
 		q(54877),	-- Opening a Darkshore chest
