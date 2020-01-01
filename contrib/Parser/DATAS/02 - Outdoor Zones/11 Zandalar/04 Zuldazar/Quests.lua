@@ -645,10 +645,15 @@ _.Zones =
 					["sourceQuest"] = 50881,	-- Royal Report
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1164 },
+					["isBreadcrumb"] = true,
 				}),
 				q(47226, {	-- The Orphaned Hatchling
 					["provider"] = { "n", 122939 },	-- Direhorn Hatchling
-					["coord"] = { 64.3, 44.7, 862 },
+					["coords"] = {
+						{ 64.3, 44.7, 862 },
+						{ 65.7, 41.3, 862 },
+						{ 68.1, 38.2, 862 },
+					},
 					["sourceQuest"] = 50538,	-- The Missing Handler
 					["races"] = HORDE_ONLY,
 				}),
@@ -681,62 +686,58 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(47272, {	-- Direhorn Growth Hormone
-					["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 					["coord"] = { 66.8, 42.6, 862 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 					["sourceQuests"] = {
 						47259,	-- Direhorn Daycare
 						48527,	-- Ravenous Landsharks
 					},
-					["races"] = HORDE_ONLY,
 				}),
 				q(51980, {	-- WANTED: Jabra'kan
-					["provider"] = { "o", 291291 },	-- Wanted: Poacher
 					["coord"] = { 69.0, 40.9, 862 },
-					["sourceQuests"] = {
-						47259,	-- Direhorn Daycare
-						48527,	-- Ravenous Landsharks
-					},
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 291291 },	-- Wanted: Poacher
 				}),
 				q(47312, {	-- Queenfeather
-					["provider"] = { "n", 125486 },	-- Wingrider Nivek
 					["coord"] = { 69.0, 40.7, 862 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 125486 },	-- Wingrider Nivek
 					["sourceQuests"] = {
 						47259,	-- Direhorn Daycare
 						48527,	-- Ravenous Landsharks
 					},
-					["races"] = HORDE_ONLY,
 				}),
 				q(51990, {	-- Wings for the Kraal
-					["provider"] = { "n", 121706 },	-- Beastlord L'kala
 					["coord"] = { 66.8, 42.5, 862 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 121706 },	-- Beastlord L'kala
 					["sourceQuests"] = {
 						47311,	-- Headbutting 101
 						47272,	-- Direhorn Growth Hormone
 						51980,	-- WANTED: Jabra'kan
 						47312,	-- Queenfeather
 					},
-					["races"] = HORDE_ONLY,
 				}),
 				q(51998, {	-- DGH: Now With Real Direhorn
-					["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 					["coord"] = { 66.8, 42.6, 862 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 					["sourceQuests"] = {
 						47311,	-- Headbutting 101
 						47272,	-- Direhorn Growth Hormone
 						51980,	-- WANTED: Jabra'kan
 						47312,	-- Queenfeather
 					},
-					["races"] = HORDE_ONLY,
 				}),
 				q(47418, {	-- Growing Pains
-					["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 					["coord"] = { 66.8, 42.6, 862 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 					["sourceQuests"] = {
 						51990,	-- Wings for the Kraal
 						51998,	-- DGH: Now With Real Direhorn
 					},
-					["races"] = HORDE_ONLY,
 				}),
 				q(47261, {	-- How to Train Your Direhorn
 					["provider"] = { "n", 121706 },	-- Beastlord L'kala
@@ -745,10 +746,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(48581, {	-- A Good Spanking
-					["provider"] = { "n", 122009 },	-- Kraal Master B'khor
 					["coord"] = { 67.6, 43.4, 862 },
-					["sourceQuest"] = 47261,	-- How to Train Your Direhorn
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 122009 },	-- Kraal Master B'khor
+					["sourceQuest"] = 47261,	-- How to Train Your Direhorn
 					["g"] = {
 						i(158411),	-- Jambani Girdle
 						i(158434),	-- Jambani Legwraps
@@ -761,8 +762,10 @@ _.Zones =
 					},
 				}),
 				q(47310, {	-- Naptime
+					["coord"] = { 66.8, 42.5, 862 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 121706 },	-- Beastlord L'kala
+					["sourceQuest"] = 48581,	-- A Good Spanking
 					["g"] = {
 						crit(1, {	-- Naptime
 							["achievementID"] = 13542,	-- How to Train Your Direhorn
@@ -1033,64 +1036,46 @@ _.Zones =
 					["coord"] = { 51.6, 45.4, 862 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				-- Xibala (Horde)
-				q(47257, {	-- The Bones of Xibala
-					["provider"] = { "n", 120168 },	-- Chronicler To'kini
-					["coord"] = { 69.5, 47.5, 1164 },
-					["sourceQuest"] = 49426,	-- The King's Gambit
+				-- Xibala
+				q(48399, {	-- A Dark (Iron) Tide
+					["coord"] = { 40.0, 76.5, 862 },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1164 },	-- Dazar'alor
-				}),
-				q(51087, {	-- Wanted: Dark Chronicler
-					["provider"] = { "o", 287229 },	-- Wanted: Dark Chronicler
-					["coord"] = { 44.3, 72.2, 862 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(47329, {	-- The Bloodwatcher Legacy
-					["provider"] = { "n", 131582 },	-- Examiner Tae'shara Bloodwatcher
-					["coord"] = { 43.9, 72.1, 862 },
-					["sourceQuest"] = 47257,	-- The Bones of Xibala
-					["races"] = HORDE_ONLY,
-				}),
-				q(47228, {	-- Xibalan Ecology
-					["provider"] = { "n", 131582 },	-- Examiner Tae'shara Bloodwatcher
-					["coord"] = { 43.9, 72.1, 862 },
-					["sourceQuest"] = 47329,	-- The Bloodwatcher Legacy
-					["races"] = HORDE_ONLY,
-				}),
-				q(50043, {	-- Archaeological Efficiency
 					["provider"] = { "n", 131580 },	-- Apprentice Telemancer Astrandis
-					["coord"] = { 43.9, 72.1, 862 },
-					["sourceQuest"] = 47329,	-- The Bloodwatcher Legacy
-					["races"] = HORDE_ONLY,
-				}),
-				q(47235, {	-- Scrying for the Eye
-					["provider"] = { "n", 131580 },	-- Apprentice Telemancer Astrandis
-					["coord"] = { 43.9, 72.1, 862 },
-					["sourceQuest"] = 47329,	-- The Bloodwatcher Legacy
-					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 48317,	-- A Nose for Magic
 				}),
 				q(48317, {	-- A Nose for Magic
-					["provider"] = { "n", 131580 },	-- Apprentice Telemancer Astrandis
 					["coord"] = { 43.9, 72.1, 862 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 131580 },	-- Apprentice Telemancer Astrandis
 					["sourceQuests"] = {
 						47228,	-- Xibalan Ecology
 						50043,	-- Archaeological Efficiency
 						47235,	-- Scrying for the Eye
 					},
+				}),
+				q(50044, {	-- Archaeological Efficiency (A)
+					["coord"] = { 44.4, 73.4, 862 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
+					["sourceQuest"] = 49276,	-- The Thrill of Exploration
+				}),
+				q(50043, {	-- Archaeological Efficiency (H)
+					["provider"] = { "n", 131580 },	-- Apprentice Telemancer Astrandis
+					["coord"] = { 43.9, 72.1, 862 },
+					["sourceQuest"] = 47329,	-- The Bloodwatcher Legacy
 					["races"] = HORDE_ONLY,
 				}),
-				q(48399, {	-- A Dark (Iron) Tide
-					["provider"] = { "n", 131580 },	-- Apprentice Telemancer Astrandis
-					["coord"] = { 40.0, 76.5, 862 },
-					["sourceQuest"] = 48317,	-- A Nose for Magic
-					["races"] = HORDE_ONLY,
+				q(49428, {	-- Grand Theft Telemancy (A)
+					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
+					["coord"] = { 44.4, 73.4, 862 },
+					["sourceQuest"] = 49282,	-- Morgrum's Extended Survey
+					["races"] = ALLIANCE_ONLY,
 				}),
-				q(48400, {	-- Grand Theft Telemancy
-					["provider"] = { "n", 131580 },	-- Apprentice Telemancer Astrandis
+				q(48400, {	-- Grand Theft Telemancy (H)
 					["coord"] = { 40.0, 76.5, 862 },
-					["sourceQuest"] = 48317,	-- A Nose for Magic
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 131580 },	-- Apprentice Telemancer Astrandis
+					["sourceQuest"] = 48317,	-- A Nose for Magic
 					["g"] = {
 						i(155310),	-- Reliquary Explorer's Drape
 						i(158419),	-- Rastari Treads
@@ -1099,58 +1084,80 @@ _.Zones =
 						i(158422),	-- Jambani Treads
 					},
 				}),
-				-- Xibala (Alliance)
-				q(49059, {	-- The Bones of Xibala
-				--	["provider"] = { "n", ??? },	-- ???
-				--	["coord"] = { 40.0, 76.5, 862 },
-					["isBreadcrumb"] = true,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49276, {	-- The Thrill of Exploration
-					["provider"] = { "n", 131777 },	-- Acadia Chistlestone
-					["coord"] = { 41.2, 71.4, 862 },
-					["sourceQuest"] = 49059,	-- The Bones of Xibala
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49060, {	-- Xibalan Ecology
-					["provider"] = { "n", 131777 },	-- Acadia Chistlestone
-					["coord"] = { 41.2, 71.4, 862 },
-					["sourceQuest"] = 49276,	-- The Thrill of Exploration
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49274, {	-- Morgrum's Survey
-					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
-					["coord"] = { 44.4, 73.4, 862 },
-					["sourceQuest"] = 49276,	-- The Thrill of Exploration
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50044, {	-- Archaeological Efficiency
-					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
-					["coord"] = { 44.4, 73.4, 862 },
-					["sourceQuest"] = 49276,	-- The Thrill of Exploration
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(49282, {	-- Morgrum's Extended Survey
-					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
 					["coord"] = { 44.4, 73.4, 862 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
 					["sourceQuests"] = {
 						49060,	-- Xibalan Ecology
 						49274,	-- Morgrum's Survey
 						50044,	-- Archaeological Efficiency
 					},
 				}),
-				q(49427, {	-- Not Our Purple Elves
-					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
+				q(49274, {	-- Morgrum's Survey
 					["coord"] = { 44.4, 73.4, 862 },
-					["sourceQuest"] = 49282,	-- Morgrum's Extended Survey
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
+					["sourceQuest"] = 49276,	-- The Thrill of Exploration
 				}),
-				q(49428, {	-- Grand Theft Telemancy
-					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
+				q(49427, {	-- Not Our Purple Elves
 					["coord"] = { 44.4, 73.4, 862 },
-					["sourceQuest"] = 49282,	-- Morgrum's Extended Survey
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
+					["sourceQuest"] = 49282,	-- Morgrum's Extended Survey
+				}),
+				q(47235, {	-- Scrying for the Eye
+					["provider"] = { "n", 131580 },	-- Apprentice Telemancer Astrandis
+					["coord"] = { 43.9, 72.1, 862 },
+					["sourceQuest"] = 47329,	-- The Bloodwatcher Legacy
+					["races"] = HORDE_ONLY,
+				}),
+				q(47329, {	-- The Bloodwatcher Legacy
+					["provider"] = { "n", 131582 },	-- Examiner Tae'shara Bloodwatcher
+					["coord"] = { 43.9, 72.1, 862 },
+					["sourceQuest"] = 47257,	-- The Bones of Xibala
+					["races"] = HORDE_ONLY,
+				}),
+				q(49059, {	-- The Bones of Xibala (A)
+				--	["coord"] = { 40.0, 76.5, 862 },
+					["races"] = ALLIANCE_ONLY,
+				--	["provider"] = { "n", ??? },	-- ???
+					["isBreadcrumb"] = true,
+				}),
+				q(47257, {	-- The Bones of Xibala (H)
+					["provider"] = { "n", 120168 },	-- Chronicler To'kini
+					["coord"] = { 69.5, 47.5, 1164 },
+					["sourceQuest"] = 49426,	-- The King's Gambit
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1164 },	-- Dazar'alor
+				}),
+				q(49276, {	-- The Thrill of Exploration
+					["coord"] = { 41.2, 71.4, 862 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 131777 },	-- Acadia Chistlestone
+					["sourceQuest"] = 49059,	-- The Bones of Xibala
+				}),
+				q(51085, {	-- WANTED: Dark Chronicler (A)
+					["coord"] = { 40.7, 71.1, 862 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 287228 },	-- Wanted: Dark Chronicler
+				}),
+				q(51087, {	-- WANTED: Dark Chronicler (H)
+					["coord"] = { 44.3, 72.2, 862 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 287229 },	-- Wanted: Dark Chronicler
+				}),
+				q(49060, {	-- Xibalan Ecology (A)
+					["coord"] = { 41.2, 71.4, 862 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 131777 },	-- Acadia Chistlestone
+					["sourceQuest"] = 49276,	-- The Thrill of Exploration
+				}),
+				q(47228, {	-- Xibalan Ecology (H)
+					["provider"] = { "n", 131582 },	-- Examiner Tae'shara Bloodwatcher
+					["coord"] = { 43.9, 72.1, 862 },
+					["sourceQuest"] = 47329,	-- The Bloodwatcher Legacy
+					["races"] = HORDE_ONLY,
 				}),
 				-- 	Isle of Fangs / Tusk Isle
 				q(52210, {	-- Sending Out An SOS
@@ -1497,11 +1504,6 @@ _.Zones =
 						},
 					},
 				},
-				q(51085, {	-- WANTED: Dark Chronicler
-					["coord"] = { 40.7, 71.1, 862 },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 287228 },	-- Wanted: Dark Chronicler
-				}),
 				
 				-- Start How to Train Your Direhorn Crit 4
 				q(55462, { 	-- The Wanderer's Call
