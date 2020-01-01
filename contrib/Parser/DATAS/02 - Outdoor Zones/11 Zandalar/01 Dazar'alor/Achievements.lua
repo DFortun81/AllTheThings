@@ -11,7 +11,7 @@ _.Zones =
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["g"] = {
 						i(163682, {	-- Tales of de Loa: Zandalar
-							["coord"] = { 52.23, 09.41, 1165 },
+							["coord"] = { 53.2, 9.3, 1165 },
 							["g"] = {
 								crit(15),	--  Tales of de Loa: Zandalar
 							},
@@ -79,6 +79,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				ach(11868, {	-- The Dark Heart of Nazmir
+					["collectible"] = false,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(1, {	-- Deep in the Swamp
@@ -87,6 +88,7 @@ _.Zones =
 					},
 				}),
 				ach(11861, {	-- The Throne of Zuldazar
+					["collectible"] = false,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(2, {	--  Port of Zuldazar
