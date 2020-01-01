@@ -51,7 +51,13 @@ _.Zones =
 					},
 				}),
 				ach(13018, {	-- Dune Rider
-					["description"] = "|cFFFFFFFFPlank 1|r: Near the north-east corner of Atul'aman at |cFFFFFFFF47.9, 62.5|r.\n|cFFFFFFFFPlank 2|r: West side of Atul'aman ontop of a ledge at |cFFFFFFFF45.8, 63.6|r.\n|cFFFFFFFFPlank 3|r: At the corner of some troll ruins at |cFFFFFFFF38.1, 71.0|r.\n|cFFFFFFFFPlank 4|r: Far west side of the Whistlebloom Oasis at |cFFFFFFFF32.2, 69.0|r.\n|cFFFFFFFFPlank 5|r: At the very top of the snake wall at |cFFFFFFFF54.9, 21.4|r.\n"
+					["coords"] = {
+						{ 47.9, 62.5, 864 },
+						{ 45.8, 63.6, 864 },
+						{ 38.1, 71.0, 864 },
+						{ 32.2, 69.0, 864 },
+						{ 54.9, 21.4, 864 },
+					},
 					--[[ Each plank has a unique "kill credit" NPC id but no quest tracking ID. These are the IDs I found: [Pr3vention]
 					["npcID"] = 143668
 					["npcID"] = 143258
@@ -270,6 +276,7 @@ _.Zones =
 					crit(11, {	-- Rachel's Flute
 						["questID"] = 53142,
 						["coord"] = { 66.4, 36.0, 864 },
+						["description"] = "Enter the cave at 64.92, 36.34.",
 					}),
 					crit(12, {	-- Josh's Fang Necklace
 						["questID"] = 53143,
@@ -301,6 +308,7 @@ _.Zones =
 					o(294317, {	-- Deadwood Chest
 						["questID"] = 52994,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["coord"] = { 40.57, 85.74, 864 },
 					}),
 					o(287324, {	-- Excavator's Greed [D]
 						["questID"] = 51136,
