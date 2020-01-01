@@ -469,6 +469,7 @@ _.NeverImplemented =
 		q(31627),	-- Mogu'shan Palace Challenge Mode - Consolation (Nth)
 		q(31648),	-- Mogu'shan Palace Challenge Mode - Gold Addition (Nth)
 		q(31641),	-- Mogu'shan Palace Challenge Mode - Silver Addition (Nth)
+		q(35321),	-- Mogu'shan Palace Reward Quest
 		q(31636),	-- Scarlet Halls Challenge Mode - Bronze Addition (Nth)
 		q(31630),	-- Scarlet Halls Challenge Mode - Consolation (Nth)
 		q(31650),	-- Scarlet Halls Challenge Mode - Gold Addition (Nth)
