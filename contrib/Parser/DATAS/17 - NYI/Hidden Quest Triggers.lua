@@ -1207,6 +1207,7 @@ _.NeverImplemented =
 		]]--
 		
 	--	VARIOUS
+		q(47332),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(48432),	-- Unknown. Triggered as horde sometime after turning in "The Call for Allies" at 110 and before turning in "Hour of Reckoning." Could be phasing related?
 		q(58432),	-- Unknown. Triggered as horde sometime after turning in "The Call for Allies" at 110 and before turning in "Hour of Reckoning." Could be phasing related?
 		q(54411),	-- triggers when speaking with Zidormi in Darkshore to travel back in time
@@ -1227,7 +1228,10 @@ _.NeverImplemented =
 		q(53956),	-- Triggered when turning in "We Are Coming" as alliance. Probably related to darkshore warfront unlock?
 		q(49610),	-- looting Adventurer's Society Loot Stash to unlock the Nigel Rifthold pet vendor
 		q(56684),	-- Flag used to track if 160489 (340 engineering goggles) had been crafted. This identifies if the recipe for rank 2 can drop
-
+		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track
+		q(53548),	-- Zuldazar - Triggered when picking up "Tales of dhe Loa: Zandalar". Makes the loa book available to read in The Great Seal
+		q(54704),	-- War Campaign - triggered when turning in "Time for War"
+		
 	--	HONEYBACK HIVE
 		q(55906),	-- triggers when pulling out Seabreeze Bumblebee or Bumbles next to Barry at 69.1, 64.2 in Stormsong Valley
 		q(55904),	-- triggers when arriving at the hive at 62.9, 26.5 in Stormsong Valley
@@ -1572,8 +1576,10 @@ _.NeverImplemented =
 		q(53630),	-- Tiragarde Sound repeatable random chest (possibly different from others, it was Forgotten Treasure Chest at 79.57 20.22 in a small cave)
 
 	--	Zuldazar
+		q(50931),	-- Spoke to talanji when meeting with Rastakhan for the first time
 		q(55413),	-- War Mode supply drop in Zuldazar
 		q(55259),	-- Triggers after turning 'Sleep, Eat, Repeat' (ID 55258) in to finish the achievement criteria 'Sleep, Eat, Repeat' (3) for How to Train Your Direhorn (ID 13542)
+		q(47436),	-- Picked Pa'ku for "Picking a Side"
 		-- Bonus Objectives
 		q(47527, {	-- Rituals of Heresy
 			["isWorldQuest"] = true,
