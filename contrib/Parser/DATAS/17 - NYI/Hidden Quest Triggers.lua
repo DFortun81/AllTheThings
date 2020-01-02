@@ -909,6 +909,17 @@ _.NeverImplemented =
 		q(47044),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 2 - Tracking
 		q(47038),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 1 - Tracking
 		q(43713),	-- Stormheim - Tracking - Statue Climbed. Triggers at the top of Nashal the Watcher
+		q(40317),	-- Suramar - Tree Destroyed
+		q(40975),	-- Suramar - Arluin Bribe Tracking
+		q(42443),	-- Suramar - Arluin Wants In tracking quest
+		q(42649),	-- Suramar - Arluin Bribe tracking 2
+		q(43566),	-- Suramar - Withered Progress
+		q(43589),	-- Suramar - Leyline 03
+		q(43703),	-- Suramar - Hub Mana Tree Tracking - Stage 1
+		q(43704),	-- Suramar - Hub Mana Tree Tracking - Stage 2
+		q(43706),	-- Suramar - Hub Mana Tree Tracking - Stage 3
+		q(43707),	-- Suramar - Hub Mana Tree Tracking - Stage 4
+		q(43708),	-- Suramar - Hub Mana Tree Tracking - Stage 5
 		q(40302),	-- FLAG - Prospecting 01
 		q(40303),	-- FLAG - Prospecting 02
 		q(40304),	-- FLAG - Prospecting 03 - triggered when completing a jewelcrafting world quest in Dalaran
