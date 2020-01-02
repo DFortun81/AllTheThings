@@ -1140,6 +1140,13 @@ _.Zones =
 							i(155052),	-- Port-Ruffian's Cleaver
 						},
 				}),
+				q(49223, {	-- The Long Con
+					["sourceQuests"] = { 49523 },	-- A Bad Deal
+					["coord"] = { 79.7, 81.8, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
+					["provider"] = { "n", 128702 },	-- Roko <Wandering Merchant>
+				}),
 				q(48003, {	-- The Lord's Behest
 					["sourceQuests"] = {
 						48196,	-- Following Eddie's Trail
@@ -1535,143 +1542,13 @@ _.Zones =
 				q(47695, {	-- Sound the Alarm
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(51031, {	-- Supplies Needed: Tempest Hide
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51034, {	-- Supplies Needed: Tidespray Linen
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52377, {	-- Supplies Needed: Tiragarde Perch
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51025, {	-- Supplies Needed: Winter's Kiss
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(47486, {	-- Suspicious Shipments
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53196, {	-- Swab This!
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(52159, {	-- Swab This!
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(51891, {	-- Sythian the Swift
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(48354, {	-- Tainted Shipments
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50792, {	-- Taking Bribes
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49734, {	-- Targeting a Turncoat
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51849, {	-- Tempestria
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
 				q(51894, {	-- Tentulos the Drifter
 					["collectible"] = false,
 					["lvl"] = 120,
-				}),
-				q(51655, {	-- Teres
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(52471, {	-- That's a Big Carcass
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(54251, {	-- The Ambassador
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(47485, {	-- The Ashvane Trading Company
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51241, {	-- The Bear Witch Project
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49395, {	-- The Bears and the Bees
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48774, {	-- The Beatings Will Continue
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49531, {	-- The Beauty of Marketing
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49399, {	-- The Big Job
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49218, {	-- The Castaways
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53442, {	-- The Castaways
-					["races"] = HORDE_ONLY,
-				}),
-				q(55300, {	-- The Cycle of Life
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(49302, {	-- The Deadliest Catch
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51199, {	-- The Glory of the Hunt
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50544, {	-- The Hunters of Kennings Lodge
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48558, {	-- The Irontide Crew
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54088, {	-- The Legend of Mechagon
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49223, {	-- The Long Con
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48003, {	-- The Lord's Behest
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51406, {	-- The Lord's Hunt
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48070, {	-- The Norwington Festival
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(46729, {	-- The Old Knight
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48903, {	-- The Perfect Horse, of Course
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49393, {	-- The Roughnecks
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49229, {	-- The Ruins Fought Back
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50767, {	-- The Scrimshaw Gang
 					["collectible"] = false,
@@ -1682,18 +1559,6 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(47181, {	-- The Smoking Gun
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49039, {	-- The Start of a Monster Hunt
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54992, {	-- The Start of Something Bigger
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48077, {	-- The Stoat Hunt
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(52056, {	-- The Tendrils of Fate
 					["collectible"] = false,
 					["lvl"] = 120,
@@ -1703,78 +1568,13 @@ _.Zones =
 					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(52163, {	-- The Winged Typhoon
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(50058, {	-- The Witch's Pet
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48365, {	-- The Young Lord Stormsong
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48367, {	-- Those Aren't Fish Eggs
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51621, {	-- Tidal Teachings
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(51622, {	-- Tidal Teachings
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(49451, {	-- Time Off Requests
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(47960, {	-- Tiragarde Sound
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54237, {	-- Togoth Cruelarm
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51847, {	-- Tort Jaw
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(48516, {	-- Toxic Community
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53078, {	-- Treasure in the Tides
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(52155, {	-- Treasure in the Tides
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49407, {	-- Trixie Business
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(53346, {	-- Trogg Tromping
 					["collectible"] = false,
 					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49715, {	-- Trouble at Greystone Keep
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(48195, {	-- Troublesome Troglodytes
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51657, {	-- Twin-Hearted Construct
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(52455, {	-- Unbreakable
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(50531, {	-- Under Their Noses
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(54781, {	-- UNUSED
@@ -1784,87 +1584,18 @@ _.Zones =
 					["collectible"] = false,
 					["lvl"] = 120,
 				}),
-				q(51358, {	-- WANTED: Gryphon 'Nappers
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49069, {	-- WANTED: Ol' Frostclaw
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51384, {	-- WANTED: Quartermaster Ssylis
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53454, {	-- WANTED: Quartermaster Ssylis
-					["races"] = HORDE_ONLY,
-				}),
-				q(51367, {	-- WANTED: Raging Earthguard
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53451, {	-- WANTED: Raging Earthguard
-					["races"] = HORDE_ONLY,
-				}),
 				q(53440, {	-- WANTED: The Hornet
 					["races"] = HORDE_ONLY,
-				}),
-				q(51368, {	-- WANTED: The Hornet
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53438, {	-- WANTED: Wyvern Poachers
 					["races"] = HORDE_ONLY,
 				}),
-				q(49431, {	-- Warm and Cozy
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50958, {	-- Watch Your Wallets
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(50350, {	-- We Need a Chemist
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51758, {	-- Weapons Shipment
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49433, {	-- Wendies
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49072, {	-- Westward Noble
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53713, {	-- Wet Work: Bridgeport
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(52475, {	-- Where Eagles Prey
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(49435, {	-- Where'd They Go?
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53281, {	-- Winter's Kiss Cluster
 					["collectible"] = false,
 					["lvl"] = 120,
-				}),
-				q(49467, {	-- Witch of the Woods
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50699, {	-- Worker's Rights
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54087, {	-- You Must be This Height
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(55632, {	-- You Must be This Height
-					["races"] = HORDE_ONLY,
-				}),
-				q(53772, {	-- Zagg Brokeneye
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
 				}),
 ]]--					
 			}),

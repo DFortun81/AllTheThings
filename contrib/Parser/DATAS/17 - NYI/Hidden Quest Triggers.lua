@@ -1540,6 +1540,7 @@ _.NeverImplemented =
 
 	--	Stormsong Valley
 		q(51695),	-- Horde WarCampaign - "Reclaiming What's Ours" (ID 51696) using the horn to reclaim the Foothold
+		q(55626),	-- first kill of yellow Sabertron
 		-- Bonus Objectives
 		q(50779, {	-- A Clean Slate
 			["races"] = ALLIANCE_ONLY,

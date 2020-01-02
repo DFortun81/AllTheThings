@@ -106,224 +106,17 @@ _.Zones =
 					q(47695, {	-- Sound the Alarm
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(51031, {	-- Supplies Needed: Tempest Hide
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51034, {	-- Supplies Needed: Tidespray Linen
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52377, {	-- Supplies Needed: Tiragarde Perch
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51025, {	-- Supplies Needed: Winter's Kiss
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(47486, {	-- Suspicious Shipments
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53196, {	-- Swab This!
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(52159, {	-- Swab This!
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(48354, {	-- Tainted Shipments
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(50792, {	-- Taking Bribes
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(49734, {	-- Targeting a Turncoat
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51849, {	-- Tempestria
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(51655, {	-- Teres
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(52471, {	-- That's a Big Carcass
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(54251, {	-- The Ambassador
-						["isWorldQuest"] = true,
-						["lvl"] = 110,
-					}),
-					q(47485, {	-- The Ashvane Trading Company
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51241, {	-- The Bear Witch Project
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(49395, {	-- The Bears and the Bees
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(48774, {	-- The Beatings Will Continue
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(49531, {	-- The Beauty of Marketing
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(49399, {	-- The Big Job
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(49218, {	-- The Castaways
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53442, {	-- The Castaways
-						["races"] = HORDE_ONLY,
-					}),
-					q(55300, {	-- The Cycle of Life
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(49302, {	-- The Deadliest Catch
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51199, {	-- The Glory of the Hunt
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(50544, {	-- The Hunters of Kennings Lodge
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(48558, {	-- The Irontide Crew
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(54088, {	-- The Legend of Mechagon
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(49223, {	-- The Long Con
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(48003, {	-- The Lord's Behest
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51406, {	-- The Lord's Hunt
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(48070, {	-- The Norwington Festival
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(46729, {	-- The Old Knight
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(48903, {	-- The Perfect Horse, of Course
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(49393, {	-- The Roughnecks
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(49229, {	-- The Ruins Fought Back
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(51578, {	-- The Sea Runs Red
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
-					}),
-					q(47181, {	-- The Smoking Gun
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(49039, {	-- The Start of a Monster Hunt
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(54992, {	-- The Start of Something Bigger
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(48077, {	-- The Stoat Hunt
-						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52056, {	-- The Tendrils of Fate
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52163, {	-- The Winged Typhoon
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(50058, {	-- The Witch's Pet
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(48365, {	-- The Young Lord Stormsong
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(48367, {	-- Those Aren't Fish Eggs
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51621, {	-- Tidal Teachings
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(51622, {	-- Tidal Teachings
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
-					}),
-					q(49451, {	-- Time Off Requests
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(47960, {	-- Tiragarde Sound
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(54237, {	-- Togoth Cruelarm
-						["isWorldQuest"] = true,
-						["lvl"] = 110,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51847, {	-- Tort Jaw
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(48516, {	-- Toxic Community
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53078, {	-- Treasure in the Tides
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(52155, {	-- Treasure in the Tides
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(49407, {	-- Trixie Business
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(49715, {	-- Trouble at Greystone Keep
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(48195, {	-- Troublesome Troglodytes
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51657, {	-- Twin-Hearted Construct
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(52455, {	-- Unbreakable
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(50531, {	-- Under Their Noses
-						["races"] = ALLIANCE_ONLY,
 					}),
 					q(54781, {	-- UNUSED
 						["races"] = ALLIANCE_ONLY,
@@ -332,130 +125,20 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(51358, {	-- WANTED: Gryphon 'Nappers
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(49069, {	-- WANTED: Ol' Frostclaw
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51384, {	-- WANTED: Quartermaster Ssylis
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53454, {	-- WANTED: Quartermaster Ssylis
-						["races"] = HORDE_ONLY,
-					}),
-					q(51367, {	-- WANTED: Raging Earthguard
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53451, {	-- WANTED: Raging Earthguard
-						["races"] = HORDE_ONLY,
-					}),
 					q(53440, {	-- WANTED: The Hornet
 						["races"] = HORDE_ONLY,
-					}),
-					q(51368, {	-- WANTED: The Hornet
-						["races"] = ALLIANCE_ONLY,
 					}),
 					q(53438, {	-- WANTED: Wyvern Poachers
 						["races"] = HORDE_ONLY,
 					}),
-					q(49431, {	-- Warm and Cozy
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(50958, {	-- Watch Your Wallets
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(50350, {	-- We Need a Chemist
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(51758, {	-- Weapons Shipment
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(49433, {	-- Wendies
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(49072, {	-- Westward Noble
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53713, {	-- Wet Work: Bridgeport
-						["isWorldQuest"] = true,
-						["lvl"] = 110,
-					}),
-					q(52475, {	-- Where Eagles Prey
-						["isWorldQuest"] = true,
-						["lvl"] = 110,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(49435, {	-- Where'd They Go?
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(53281, {	-- Winter's Kiss Cluster
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(49467, {	-- Witch of the Woods
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(50983, {	-- Work Order: Akunda's Bite
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52423, {	-- Work Order: Battle Flag: Phalanx Defense
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52389, {	-- Work Order: Contract: Proudmoore Admiralty
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52368, {	-- Work Order: Crow's Nest Scope
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52331, {	-- Work Order: Demitri's Draught of Deception
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52355, {	-- Work Order: Enchant Weapon - Coastal Surge
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52356, {	-- Work Order: Enchant Weapon - Torrent of Elements
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52363, {	-- Work Order: Incendiary Ammunition
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52405, {	-- Work Order: Kubiline
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(52340, {	-- Work Order: Monel-Hardened Hoofplates
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52339, {	-- Work Order: Monel-Hardened Stirrups
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52333, {	-- Work Order: Sea Mist Potion
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -463,35 +146,6 @@ _.Zones =
 					q(52404, {	-- Work Order: Solstone
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52392, {	-- Work Order: Ultramarine Pigment
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(50984, {	-- Work Order: Winter's Kiss
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52366, {	-- Work Order: XA-1000 Surface Skimmer
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(50699, {	-- Worker's Rights
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(54087, {	-- You Must be This Height
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(55632, {	-- You Must be This Height
-						["races"] = HORDE_ONLY,
-					}),
-					q(53772, {	-- Zagg Brokeneye
-						["isWorldQuest"] = true,
-						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 					}),
 ]]--				
@@ -988,16 +642,29 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(52159, {	-- Swab This!
-						["hordeQuestID"] = 53196,	-- Swab This! (Horde)
+					q(52159, {	-- Swab This! (Alliance)
 						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["groups"] = {
 							ach(13050, {	-- Bless the Rains Down in Freehold
-								crit(1),	-- Banana Hoard
-								crit(2),	-- Sweete's Feast
-								crit(3),	-- Cart o' Cutlasses
-								crit(4),	-- Blacktooth Brew
+								crit(1),		-- Banana Hoard
+								crit(2),		-- Sweete's Feast
+								crit(3),		-- Cart o' Cutlasses
+								crit(4),		-- Blacktooth Brew
+							}),
+						},
+					}),
+					q(53196, {	-- Swab This! (Horde)
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["isWorldQuest"] = true,
+						["groups"] = {
+							ach(13050, {	-- Bless the Rains Down in Freehold
+								crit(1),		-- Banana Hoard
+								crit(2),		-- Sweete's Feast
+								crit(3),		-- Cart o' Cutlasses
+								crit(4),		-- Blacktooth Brew
 							}),
 						},
 					}),
@@ -1060,12 +727,12 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
-					q(53078, {	-- Treasure in the Tides
+					q(53078, {	-- Treasure in the Tides (Horde)
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(52155, {	-- Treasure in the Tides
+					q(52155, {	-- Treasure in the Tides (Alliance)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
@@ -1102,7 +769,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(52423, {	-- Work Order: Akunda's Bite
+					q(50983, {	-- Work Order: Akunda's Bite
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,

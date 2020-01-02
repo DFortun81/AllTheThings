@@ -261,13 +261,16 @@ _.Achievements =
 					h(ach(13924, {	-- The Fourth War
 						title(412),	-- Veteran of the Fourth War, <Name>
 					})),
-					a(ach(13049, {	-- The Long Con
-						crit(1),		-- Aged to Perfection
-						crit(2),		-- Trixie Business
-						crit(3),		-- Carentan's Payment
-						crit(4),		-- A Bad Deal
-						crit(5),		-- The Long Con
-					})),
+					ach(13049, {	-- The Long Con
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							crit(1),		-- Aged to Perfection
+							crit(2),		-- Trixie Business
+							crit(3),		-- Carentan's Payment
+							crit(4),		-- A Bad Deal
+							crit(5),		-- The Long Con
+						},
+					}),
 					a(ach(13553, {	-- The Mechagonian Threat (A)
 						crit(1),	-- The Legend of Mechagon
 						crit(2),	-- Looking Inside

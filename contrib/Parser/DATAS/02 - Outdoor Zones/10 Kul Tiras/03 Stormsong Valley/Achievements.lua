@@ -37,7 +37,13 @@ _.Zones =
 						["coord"] = { 75.07, 31.13, 942 },
 					}),
 				}),
-				ach(13054),		-- Sabertron Assemble
+				ach(13054, {	-- Sabertron Assemble
+					crit(1),		-- Red Sabertron slain
+					crit(2),		-- Yellow Sabertron slain
+					crit(3),		-- Orange Sabertron slain
+					crit(4),		-- Green Sabertron slain
+					crit(5),		-- Copper Sabertron slain
+				}),
 				ach(12496, {	-- Stormsong and Dance
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
