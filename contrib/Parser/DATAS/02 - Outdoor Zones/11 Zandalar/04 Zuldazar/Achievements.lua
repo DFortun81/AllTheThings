@@ -49,7 +49,7 @@ _.Zones =
 							},
 						}),
 						i(162656, {	-- Tales of de Loa: Jani
-							["coord"] = { 48.61, 54.61, 862 },
+							["coord"] = { 48.5, 54.6, 862 },
 							["g"] = {
 								crit(6),	--  Tales of de Loa: Jani
 							},
@@ -73,7 +73,7 @@ _.Zones =
 							},
 						}),
 						i(163739, {	-- Tales of de Loa: Torcali
-							["coord"] = { 67.31, 17.71, 862 },
+							["coord"] = { 67.3, 17.6, 862 },
 							["g"] = {
 								crit(13),	--  Tales of de Loa: Torcali
 							},
@@ -100,21 +100,19 @@ _.Zones =
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["description"] = "Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",
 					["g"] = {
-						{	-- Big Hunter Mon
+						crit(4, {	-- Big Hunter Mon
 							["questID"] = 50332,	-- Big Hunter Mon
 							["provider"] = { "n", 113490 },	-- Jani
 							["coord"] = { 66.2, 16.6 },	-- Trashpile pick-up
-							["criteriaID"] = 4,	-- Big Hunter Mon
 							["sourceQuests"] = {
 								51145,	-- Curse of Jani (Alliance)
 								47442,	-- Curse of Jani (Horde)
 							},
-						},
-						{	-- Golden Ravasaur Egg
+						}),
+						crit(1, {	-- Golden Ravasaur Egg
 							["coord"] = { 71.69, 41.28 },	-- Trashpile turn-in
 							["itemID"] = 156963,	-- Golden Ravasaur Egg
 							["questID"] = 50308,
-							["criteriaID"] = 1,	-- Golden Ravasaur Egg
 							["crs"] = {
 								131560,	-- Feral Ravasaur
 								122504,	-- Savagemane Ravasaur
@@ -123,22 +121,20 @@ _.Zones =
 								51145,	-- Curse of Jani (Alliance)
 								47442,	-- Curse of Jani (Horde)
 							},
-						},
-						{	-- The Great Hat Robbery
+						}),
+						crit(7, {	-- The Great Hat Robbery
 							["provider"] = { "n", 133612 },	-- Jani
 							["coord"] = { 61.8, 46.8 },	-- Trashpile pick-up
 							["questID"] = 50381,	-- The Great Hat Robbery
-							["criteriaID"] = 7,	-- The Great Hat Robbery
 							["sourceQuests"] = {
 								51145,	-- Curse of Jani (Alliance)
 								47442,	-- Curse of Jani (Horde)
 							},
-						},
-						{	-- Feathered Viper Scale
+						}),
+						crit(10, {	-- Feathered Viper Scale
 							["coord"] = { 62.73, 20.58 },	-- Trashpile turn-in
 							["itemID"] = 157794,	-- Feathered Viper Scale
 							["questID"] = 50431,
-							["criteriaID"] = 10,	-- Feathered Viper Scale
 							["crs"] = {
 								132410,	-- Feathered Viper
 								132409,	-- Feathered Viper
@@ -147,7 +143,7 @@ _.Zones =
 								51145,	-- Curse of Jani (Alliance)
 								47442,	-- Curse of Jani (Horde)
 							},
-						},
+						}),
 					},
 				}),
 				ach(13030, {	-- How to Ptrain Your Pterrordax
