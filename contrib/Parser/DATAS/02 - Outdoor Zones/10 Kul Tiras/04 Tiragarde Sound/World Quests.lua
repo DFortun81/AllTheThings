@@ -32,10 +32,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 110,
 					}),
-					q(53076, {	-- Foundry Meltdown
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(52119, {	-- Goblin Azerite Extraction
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -381,10 +377,14 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(52144, {	-- Foundry Meltdown
+					q(52144, {	-- Foundry Meltdown (Alliance)
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+					}),
+					q(53076, {	-- Foundry Meltdown
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
 					}),
 					q(51654, {	-- Fowlmouth
 						["lvl"] = 120,

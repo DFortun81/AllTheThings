@@ -1389,106 +1389,17 @@ _.Zones =
 				}),
 --[[	raw quest list to check against
 				-- Unknown
-				q(50322, {	-- A Feathery Fad
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(48104, {	-- A Greater Challenge
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52151, {	-- A Nation United
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(51671, {	-- Billy Goat Barber
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(53279, {	-- Blooming Star Moss
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(54281, {	-- Bombing Ballistae
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53314, {	-- Coarse Storm Silver
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51405, {	-- Corruption in the Bay
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51577, {	-- Defending the Academy
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53877, {	-- Eastpoint Encounter
-					["collectible"] = false,
-					["lvl"] = 110,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53874, {	-- End Their Vigil
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(53950, {	-- Explosive Relief
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(51284, {	-- Falcon Hunt
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53076, {	-- Foundry Meltdown
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(52144, {	-- Foundry Meltdown
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52119, {	-- Goblin Azerite Extraction
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(52757, {	-- Grimestone Crimes
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51317, {	-- Grounding the Grimestone
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(54119, {	-- Hartford Sternbach
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(52145, {	-- Heave-Ho!
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(47894, {	-- Jump Around
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(52805, {	-- Like Pulling Teeth
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
 				q(49661, {	-- Locally Sourced Eggs
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52124, {	-- Losers Weepers
-					["collectible"] = false,
-					["lvl"] = 120,
 				}),
 				q(54618, {	-- Paragon of the 7th Legion
 					["races"] = ALLIANCE_ONLY,
@@ -1496,93 +1407,17 @@ _.Zones =
 				q(54629, {	-- Paragon of the Proudmoore Admiralty
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(51462, {	-- Paratroopers
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
 				q(49408, {	-- Pirate Dice
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50164, {	-- Polly Want A Cracker?
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51646, {	-- Polly Want A Cracker?
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51890, {	-- Ranja the Last Chillpaw
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51580, {	-- Rear Admiral Hainsworth
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(53313, {	-- Rough Monelite
-					["collectible"] = false,
-					["lvl"] = 120,
 				}),
 				q(49464, {	-- Saurolisk Tails
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(53315, {	-- Smooth Platinum
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(52756, {	-- Snow Way Out
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(52804, {	-- Something Stirs in the Depths
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
 				q(47695, {	-- Sound the Alarm
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51891, {	-- Sythian the Swift
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51894, {	-- Tentulos the Drifter
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(50767, {	-- The Scrimshaw Gang
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51578, {	-- The Sea Runs Red
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(52056, {	-- The Tendrils of Fate
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(52010, {	-- The Tendrils of Fate
-					["collectible"] = false,
-					["lvl"] = 120,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51622, {	-- Tidal Teachings
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(53346, {	-- Trogg Tromping
-					["collectible"] = false,
-					["lvl"] = 120,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(54781, {	-- UNUSED
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(52752, {	-- Vigilant Lookouts
-					["collectible"] = false,
-					["lvl"] = 120,
 				}),
 				q(53440, {	-- WANTED: The Hornet
 					["races"] = HORDE_ONLY,
@@ -1592,10 +1427,6 @@ _.Zones =
 				}),
 				q(50350, {	-- We Need a Chemist
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53281, {	-- Winter's Kiss Cluster
-					["collectible"] = false,
-					["lvl"] = 120,
 				}),
 ]]--					
 			}),
