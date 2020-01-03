@@ -108,6 +108,9 @@ _.Zones =
 			q(28560, {	-- Warchief's Command: Ghostlands!
 				["isBreadcrumb"] = true,
 			}),
+			q(49546, {	-- Warchief's Command: Gorgrond!
+				["isBreadcrumb"] = true,
+			}),
 			q(28571, {	-- Warchief's Command: Hillsbrad Foothills!
 				["isBreadcrumb"] = true,
 			}),
