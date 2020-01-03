@@ -37,7 +37,7 @@ _.Zones =
 								},
 							}),
 							o(213651, { 	-- Equipment Locker
-								["coord"] = { 42.3, 92.0, 418 },
+								["coord"] = { 43.7, 92.3, 418 },
 								["model"] = "World\\Skillactivated\\Containers\\TreasureChest03.mdx",
 								["modelScale"] = 1.5,
 								["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
