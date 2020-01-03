@@ -701,7 +701,7 @@ _.Zones =
 					},
 				}),
 				q(50085, {	-- A Message of Blood and Fire
-					["provider"] = { "n", 133471 }	-- Rokhan
+					["provider"] = { "n", 133471 },	-- Rokhan
 					["coord"] = { 45.4, 58.6, 863 },
 					["sourceQuest"] = { 50082 },	-- Target of Opportunity
 				}),
@@ -1047,7 +1047,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(50083, {	-- The Crawg Ma'da
-					["provider"] = { "n", 133471 }	-- Rokhan
+					["provider"] = { "n", 133471 },	-- Rokhan
 					["coord"] = { 45.4, 58.6, 863 },
 					["sourceQuest"] = { 50082 },	-- Target of Opportunity
 				}),

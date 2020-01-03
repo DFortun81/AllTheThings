@@ -928,7 +928,7 @@ _.Zones =
 				q(49855, {	-- Disaster at Mount Hyjal
 					["provider"] = { "n", 45244 },	-- Farseer Krogar
 					["coord"] = { 50.4, 38.2, 85 },
-					["sourceQuest"] = 28805	-- The Eye of the Storm
+					["sourceQuest"] = 28805,	-- The Eye of the Storm
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 80,
