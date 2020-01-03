@@ -100,6 +100,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26912,	-- The Princess Unleashed (TODO: verify. Didn't see this until after killing Myzrael)
 				}),
+				q(635, {	-- Crystal in the Mountains
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+				}),
 				q(42535, {	-- Death... and Decay
 					["provider"] = { "n", 107806 },	-- Prince Galen Trollbane
 					["lvl"] = 100,
@@ -258,6 +262,10 @@ _.Zones =
 					["coord"] = { 54.8, 55.4, 14 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26114,	-- Quae Trusts You
+				}),
+				q(663, {	-- Land Ho!
+					["provider"] = { "n", 2766 },	-- Lolo the Lookout
+					["u"] = 40,	-- Legacy Quests
 				}),
 				q(697,   {	-- Malin's Request
 					["u"] = 40,
@@ -440,12 +448,24 @@ _.Zones =
 						un(2, i(4743)),	-- Pulsating Crystalline Shard
 					},
 				}),
+				q(665, {	-- Sunken Treasure
+					["u"] = 40,
+				}),
 				q(666,   {	-- Sunken Treasure
 					["u"] = 40,
 					["g"] = {
 						un(2, i(4547)),	-- Gnomish Zapper
 						un(2, i(4548)),	-- Servomechanic Sledgehammer
 					},
+				}),
+				q(668, {	-- Sunken Treasure
+					["u"] = 40,
+				}),
+				q(669, {	-- Sunken Treasure
+					["u"] = 40,
+				}),
+				q(670, {	-- Sunken Treasure
+					["u"] = 40,
 				}),
 				q(26051, {	-- Sunken Treasure
 					["provider"] = { "n", 2774 },	-- Doctor Draxlegauge

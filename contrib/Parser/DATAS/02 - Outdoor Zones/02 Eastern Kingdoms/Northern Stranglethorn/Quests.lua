@@ -434,6 +434,9 @@ _.Zones =
 						29229,	-- Follow That Cat (recently disturbed dirt mound)
 					},
 				}),
+				q(594, {	-- Message in a Bottle
+					["u"] = 40,	-- Legacy Quests
+				}),
 				q(26774, {	-- Mind Control (A)
 					["provider"] = { "n", 44017 },	-- Priestess Thaalia
 					["coord"] = { 53.4, 66.7, 50 },
@@ -785,6 +788,9 @@ _.Zones =
 						un(2, i(7985)),	-- Plans: Ornate Mithril Shoulders
 					},
 				}),
+				q(615, {	-- The Captain's Cutlass
+					["u"] = 40,	-- Legacy Quests
+				}),
 				q(569,   {	-- The Defense of Grom'gol
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -911,6 +917,9 @@ _.Zones =
 						2757,	-- Booty Bay or Bust! (Horde)
 						2759,	-- In Search of Galvan (Alliance)
 					},
+				}),
+				q(620, {	-- The Monogrammed Sash
+					["u"] = 40,	-- Legacy Quests
 				}),
 				q(26782, {	-- The Mosh'Ogg Bounty (A) -- TODO:: how is this version obtained?
 					["provider"] = { "n", 44017 },	-- Wulfred Harrys
