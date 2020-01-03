@@ -331,6 +331,11 @@ _.Zones =
 						["provider"] = { "n", 122378 },	-- High Exarch Turalyon
 						["coord"] = { 42.9, 26.5, 831 },
 					}),
+					q(49224, {	-- The Netherlight Crucible
+						["sourceQuests"] = { 48560 },	-- An Offering of Shadow
+						["provider"] = { "n", 126389 },	-- Artificer Shela'na
+						["coord"] = { 58.8, 69.4, 832 },
+					}),
 					q(49445, {	-- The Prime Exchange
 						["sourceQuests"] = { 48440 },	-- Into the Night
 						["provider"] = { "n", 129674 },	-- Maras

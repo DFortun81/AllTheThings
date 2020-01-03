@@ -7,7 +7,6 @@ _.Zones =
 		m(543, {	-- Gorgrond
 			n(-17, {	-- Quests
 				--[[ notes:
-					49546 (missing) to be added as missing breadcrumb
 				
 					-- unknown trigger/flag criteria
 					34224 - Creature Treasure: Bloodcleave

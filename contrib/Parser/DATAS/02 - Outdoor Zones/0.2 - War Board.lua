@@ -15,8 +15,14 @@ _.Zones =
 					Thunder Bluff: 207323
 					Undercity: 207324
 			]]--
-			q(29390),	-- Guardians of Hyjal: Call of the Ancients
-			q(29388),	-- Guardians of Hyjal: Firelands Invasion!
+			q(29390, {	-- Guardians of Hyjal: Call of the Ancients
+				["isBreadcrumb"] = true,
+				["lvl"] = 85,
+			}),
+			q(29388, {	-- Guardians of Hyjal: Firelands Invasion!
+				["isBreadcrumb"] = true,
+				["lvl"] = 85,
+			}),
 			un(40, q(36499)),	-- Iron Horde Invasion (LEGACY - pre WoD)
 			un(40, q(4494)),	-- March of the Silithid
 			q(29612, {	-- The Art of War
@@ -100,6 +106,9 @@ _.Zones =
 				["isBreadcrumb"] = true,
 			}),
 			q(28560, {	-- Warchief's Command: Ghostlands!
+				["isBreadcrumb"] = true,
+			}),
+			q(49546, {	-- Warchief's Command: Gorgrond!
 				["isBreadcrumb"] = true,
 			}),
 			q(28571, {	-- Warchief's Command: Hillsbrad Foothills!
