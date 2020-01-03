@@ -14382,6 +14382,7 @@ app.events.VARIABLES_LOADED = function()
 		"RandomSearchFilter",
 		"Reagents",
 		"RefreshedCollectionsAlready",
+		"ToyCacheRebuilt",
 		"SeasonalFilters",
 		"Sets",
 		"SourceSets",
@@ -14439,6 +14440,14 @@ app.events.VARIABLES_LOADED = function()
 		app:RegisterEvent("ARTIFACT_UPDATE");
 		app:RegisterEvent("TOYS_UPDATED");
 		app.IsReady = true;
+		
+		-- Rebuild toy collection. This should only happen once to fix toy collection states from a bug prior 14.January.2020
+		local toyCacheRebuilt = GetDataMember("ToyCacheRebuilt")
+		if not toyCacheRebuilt then
+			SetDataMember("ToyCacheRebuilt", true)
+			wipe(GetDataMember("CollectedToys", {}))
+			RefreshCollections()
+		end
 		
 		-- NOTE: The auto refresh only happens once.
 		if not app.autoRefreshedCollections then
