@@ -821,6 +821,11 @@ _.Zones =
 					["classes"] = { 8 },	-- Mage
 					["sourceQuests"] = { 40270 },	-- The Path of Atonement
 				}),
+				q(676, {	-- The Hammer May Fall
+					["provider"] = { "n", 2770 },	-- Tallow
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+				}),
 				q(28484, {	-- The Heart of the Matter
 					["provider"] = { "n", 2437 },	-- Keeper Bel'varil
 					["coord"] = { 56.9, 45.7, 25 },

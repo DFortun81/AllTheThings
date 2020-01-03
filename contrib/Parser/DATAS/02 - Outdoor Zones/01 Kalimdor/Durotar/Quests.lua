@@ -80,6 +80,9 @@ _.Zones =
 						un(2, i(7129)),	-- Brutal Gauntlets
 					},
 				}),
+				q(832, {	-- Burning Shadows
+					["u"] = 40,	-- Legacy Quests
+				}),
 				q(25924, {	-- Call of Duty
 					["provider"] = { "n", 41621 },	-- Commander Thorak
 					["coord"] = { 55.9, 12.3, 1 },
@@ -505,6 +508,16 @@ _.Zones =
 					["coord"] = { 35.8, 41.3, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25194,	-- Unbidden Visitors
+				}),
+				q(830, {	-- The Admiral's Orders
+					["provider"] = { "i", 4881 },	-- A Letter to Yvette
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+				}),
+				q(831, {	-- The Admiral's Orders
+					["provider"] = { "n", 3139 },	-- A Letter to Yvette
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
 				}),
 				q(40518, {	-- The Battle for Broken Shore
 					["provider"] = { "n", 113547 },	-- Stone Guard Mukar

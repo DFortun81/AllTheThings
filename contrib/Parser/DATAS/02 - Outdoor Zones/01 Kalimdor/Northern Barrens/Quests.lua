@@ -475,6 +475,11 @@ _.Zones =
 						i(131218),	-- Cord of the Forgotten Pool
 					},
 				}),
+				q(883, {	-- Lakota'mani
+					["provider"] = { "i", 5099 },	-- Hoof of Lakota'mani
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+				}),
 				q(14038, {	-- Love it or Limpet
 					["provider"] = { "n", 3391 },	-- Gazlowe
 					["coord"] = { 68.4, 69.0, 10 },
@@ -1033,6 +1038,11 @@ _.Zones =
 						i(59565),	-- Waptor Scale Bweastpwate
 						i(131332),	-- Waptor Tweads
 					},
+				}),
+				q(885, {	-- Washte Pawne
+					["provider"] = { "i", 5103 },	-- Washte Pawne's Feather
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
 				}),
 				q(29026, {	-- Wenikee Boltbucket
 					["provider"] = { "n", 34674 },	-- Brak Blusterpipe
