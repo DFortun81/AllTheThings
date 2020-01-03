@@ -703,7 +703,7 @@ _.Zones =
 				q(50085, {	-- A Message of Blood and Fire
 					["provider"] = { "n", 133471 },	-- Rokhan
 					["coord"] = { 45.4, 58.6, 863 },
-					["sourceQuest"] = { 50082 },	-- Target of Opportunity
+					["sourceQuest"] = 50082,	-- Target of Opportunity
 				}),
 				q(50933, {	-- An Unfortunate Event
 					["provider"] = { "n", 135784 },	-- Imperial Guard
@@ -1049,7 +1049,7 @@ _.Zones =
 				q(50083, {	-- The Crawg Ma'da
 					["provider"] = { "n", 133471 },	-- Rokhan
 					["coord"] = { 45.4, 58.6, 863 },
-					["sourceQuest"] = { 50082 },	-- Target of Opportunity
+					["sourceQuest"] = 50082,	-- Target of Opportunity
 				}),
 				q(48480, {	-- The Fall of Kel'vax
 					["provider"] = { "n", 126080 },	-- Shinga Deathwalker
