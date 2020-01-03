@@ -1041,6 +1041,11 @@ _.Zones =
 					["provider"] = { "o", 278577 },	-- Torn Horde Missive
 					["races"] = HORDE_ONLY,
 				}),
+				q(50083, {	-- The Crawg Ma'da
+					["provider"] = { "n", 133471 }	-- Rokhan
+					["coord"] = { 45.4, 58.6, 863 },
+					["sourceQuest"] = { 50082 },	-- Target of Opportunity
+				}),
 				q(48480, {	-- The Fall of Kel'vax
 					["provider"] = { "n", 126080 },	-- Shinga Deathwalker
 					["coord"] = { 39.0, 59.9, 863 },
