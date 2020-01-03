@@ -694,6 +694,8 @@ _.NeverImplemented =
 		q(35491),	-- Talador - Underseer Bloodmane vignette duplicate flag
 	
 	--	TANAAN JUNGLE
+		q(37938),	-- Tanaan Jungle - Assault on the Ruins of Kra'nak - criteria complete
+		q(38009),	-- Tanaan Jungle - Assault on the Ruins of Kra'nak - criteria complete
 		q(37969),	-- Tanaan Jungle - Vol'mar built
 		q(38433),	-- Tanaan Jungle - lion's watch built
 		q(39306),	-- Tanaan Jungle - Call to Arms chosen during "Bring the Reinforcements"
