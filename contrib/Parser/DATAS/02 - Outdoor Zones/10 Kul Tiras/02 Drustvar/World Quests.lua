@@ -36,9 +36,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(48525, {	-- Break Them to Splinters
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(51737, {	-- Bruin Potions
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -47,9 +44,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(48474, {	-- Crypt Keepers
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(53317, {	-- Dense Storm Silver
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -57,9 +51,6 @@ _.Zones =
 					q(51754, {	-- Dogged Tenacity
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
-					}),
-					q(47969, {	-- Fallhaven's Curse
-						["races"] = ALLIANCE_ONLY,
 					}),
 					q(53302, {	-- Flourishing Riverbud
 						["isWorldQuest"] = true,
@@ -100,9 +91,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(48680, {	-- Not the Bees!
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(53274, {	-- Overgrown Anchor Weed
 						["isWorldQuest"] = true,
 						["requireSkill"] = 182,	-- Herbalism
@@ -122,19 +110,12 @@ _.Zones =
 						},		
 					}),
 					q(54627),	-- Paragon of the Order of Embers
-					q(50448, {	-- Reclaiming Corlain
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(51739, {	-- Rise of the Yetis
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
 					q(48515, {	-- Silver Blades
 						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53326, {	-- Smooth Platinum
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
 					}),
 					q(50206, {	-- Strike Back
 						["races"] = ALLIANCE_ONLY,
@@ -146,20 +127,11 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(54190, {	-- Tea for Two
+					q(54190, {	-- Tea for Two -- only triggers 54187 for me on ally, might be horde thing?
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(53465),	-- Tea Party
-					q(45972),	-- The Accursed Thicket
-					q(53434, {	-- The Vanishing Lord
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53464),	-- The Village of Glenbrook
 					q(48808, {	-- Thesis Statement
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(50091, {	-- Village Repair
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(51769, {	-- What a Gull Wants

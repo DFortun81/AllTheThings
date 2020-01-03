@@ -448,6 +448,7 @@ _.Zones =
 					["provider"] = { "n", 145396 },	-- Xal'atath
 				}),
 				q(48622, {	-- The Vanishing Lord
+					["altQuests"] = { 53434 },	-- The Vanishing Lord
 					["coord"] = { 68.0, 22.0, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 121235 },	-- Taelia

@@ -1506,10 +1506,37 @@ _.NeverImplemented =
 		
 	--	Drustvar
 		-- Bonus Objectives
+		q(48525, {	-- Break Them to Splinters
+			["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
+			["isWorldQuest"] = true,
+		}),
+		q(48474, {	-- Crypt Keepers
+			["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
+			["isWorldQuest"] = true,
+		}),
+		q(47969, {	-- Fallhaven's Curse
+			["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
+			["isWorldQuest"] = true,
+		}),
 		q(48181, {	-- Nooooope
 			["isWorldQuest"] = true,
 		}),
+		q(48680, {	-- Not the Bees!
+			["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
+			["isWorldQuest"] = true,
+		}),
 		q(50959, {	-- Plundering Pirates
+			["isWorldQuest"] = true,
+		}),
+		q(50448, {	-- Reclaiming Corlain
+			["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
+			["isWorldQuest"] = true,
+		}),
+		q(45972, {	-- The Accursed Thicket
+			["isWorldQuest"] = true,
+		}),
+		q(50091, {	-- Village Repair
+			["races"] = ALLIANCE_ONLY,	-- wowhead says it's for both factions
 			["isWorldQuest"] = true,
 		}),
 		-- Chests
