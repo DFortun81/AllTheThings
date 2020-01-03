@@ -171,11 +171,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(50994, {	-- Work Order: Tempest Hide
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 ]]--				
 					q(53701, {	-- A Drust Cause (Faction Assault WQ)
 						["lvl"] = 110,
@@ -812,6 +807,11 @@ _.Zones =
 						["g"] = {
 							i(162260),	-- Recipe: Potion of Concealment (Rank 3)
 						},
+					}),
+					q(50994, {	-- Work Order: Tempest Hide
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
 					}),
 					q(52364, {	-- Work Order: Thermo-Accelerated Plague Spreader
 						["lvl"] = 120,

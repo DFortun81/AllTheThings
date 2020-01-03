@@ -60,6 +60,15 @@ _.Zones =
 					["coord"] = { 35.8, 56.1, 942 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(53099, {	-- A Mote of Cosmic Truth
+					["sourceQuests"] = { 50389 },	-- Malign Inspiration
+					["providers"] = {
+						{ "n", 133640 },	-- Wayne the Ancestral (A)
+						{ "n", 143565 },	-- Wayne the Ancestral (H)
+					},
+					["coord"] = { 78.5, 54.8, 942 },
+					["lvl"] = 120,
+				}),
 				q(50704, {	-- Anchors Aweigh Too Much
 					["sourceQuests"] = { 50675 },	-- Treasure Hunting
 					["provider"] = { "n", 134702 },	-- Nedly Grinner
@@ -834,6 +843,18 @@ _.Zones =
 						i(160349),	-- Tidespeaker Mittens
 					},
 				}),
+				q(50385, {	-- Indefatigable Purpose
+					["sourceQuests"] = { 53105 },	-- Misplaced Faith
+					["providers"] = {
+						{ "n", 133640 },	-- Wayne the Ancestral (A)
+						{ "n", 143565 },	-- Wayne the Ancestral (H)
+					},
+					["coord"] = { 78.5, 54.8, 942 },
+					["lvl"] = 120,
+					["g"] = {
+						i(157771),	-- Holy Water
+					},
+				}),
 				q(50802, {	-- Iron Low Tide
 					["sourceQuests"] = { 52069 },	-- More Fodder
 					["provider"] = { "n", 134720 },	-- Leo Shealds
@@ -883,6 +904,15 @@ _.Zones =
 					["coord"] = { 40.2, 37.6, 942 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(50389, {	-- Malign Inspiration
+					["sourceQuests"] = { 50385 },	-- Indefatigable Purpose
+					["providers"] = {
+						{ "n", 133640 },	-- Wayne the Ancestral (A)
+						{ "n", 143565 },	-- Wayne the Ancestral (H)
+					},
+					["coord"] = { 78.5, 54.8, 942 },
+					["lvl"] = 120,
+				}),
 				q(50383, {	-- Mankrik's Wrath
 					["u"] = 1,	-- Never Available
 				}),
@@ -920,6 +950,15 @@ _.Zones =
 				}),
 				q(51202, {	-- Millstone Hamlet Quest Template
 					["u"] = 1,	-- Never Available
+				}),
+				q(53105, {	-- Misplaced Faith
+					["sourceQuests"] = { 50388 },	-- The Weight of My Ambition
+					["providers"] = {
+						{ "n", 133640 },	-- Wayne the Ancestral (A)
+						{ "n", 143565 },	-- Wayne the Ancestral (H)
+					},
+					["coord"] = { 78.5, 54.8, 942 },
+					["lvl"] = 120,
 				}),
 				q(52069, {	-- More Fodder
 					["isBreadcrumb"] = true,
@@ -1381,6 +1420,15 @@ _.Zones =
 				q(56111, {	-- The Usurper
 					["u"] = 1,	-- Never Available
 				}),
+				q(50388, {	-- The Weight of My Ambition
+					["sourceQuests"] = { 50387 },	-- Trinkets and Baubles
+					["providers"] = {
+						{ "n", 133640 },	-- Wayne the Ancestral (A)
+						{ "n", 143565 },	-- Wayne the Ancestral (H)
+					},
+					["coord"] = { 78.5, 54.8, 942 },
+					["lvl"] = 120,
+				}),
 				q(50111, {	-- Totems, Totems, Totems!
 					["provider"] = { "o", 282457 },	-- Brambleguard Totem
 					["coord"] = { 44.0, 72.4, 942 },
@@ -1560,35 +1608,7 @@ _.Zones =
 						i(158680),	-- Rikal's Ritual Beads
 					},
 				}),
-
-
-
-
-
-			--[[
-				
-					["sourceQuests"] = {  },	-- 
-					["provider"] = { "n",  },	-- 
-					["coord"] = { , , 942 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				
-			--]]
-
 			}),
-			n(-17, {	-- Quests [Crieve]
-				q(50385, {	-- Indefatigable Purpose
-					["g"] = {
-						i(157771),	-- Holy Water
-					},
-				}),
-			}),
-		--[[	raw quest list to check against
-				q(53099),	-- A Mote of Cosmic Truth
-				q(50389),	-- Malign Inspiration
-				q(53105),	-- Misplaced Faith
-				q(50388),	-- The Weight of My Ambition
-		--]]
 		}),
 	}),
 };

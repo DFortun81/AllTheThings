@@ -8,18 +8,7 @@ _.Zones =
 			n(-34,  {	-- World Quests
 				n(-17, {	-- Quests
 	--[[	raw quest list to check against
-					q(50694, {	-- A Bloody Mess
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53099),	-- A Mote of Cosmic Truth
-					q(51354, {	-- Anger in a Bottle
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(52063, {	-- Boarder Patrol
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(52117, {	-- Briarback Mountain
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
@@ -269,6 +258,10 @@ _.Zones =
 					q(52071, {	-- Briarback Mountain
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+					}),
+					q(52117, {	-- Briarback Mountain
+						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
 					q(55341, {	-- Calligraphy
