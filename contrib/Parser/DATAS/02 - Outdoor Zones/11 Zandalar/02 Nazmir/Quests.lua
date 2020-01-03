@@ -1037,6 +1037,10 @@ _.Zones =
 					["coord"] = { 57.8, 50.4, 863 },
 					["sourceQuest"] = 54938,	-- A Brother's Help
 				}),
+				q(49477, {	-- Surprise Backup
+					["provider"] = { "o", 278577 },	-- Torn Horde Missive
+					["races"] = HORDE_ONLY,
+				}),
 				q(48480, {	-- The Fall of Kel'vax
 					["provider"] = { "n", 126080 },	-- Shinga Deathwalker
 					["coord"] = { 39.0, 59.9, 863 },
