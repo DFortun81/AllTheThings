@@ -925,6 +925,14 @@ _.Zones =
 						}),
 					},
 				}),
+				q(49855, {	-- Disaster at Mount Hyjal
+					["provider"] = { "n", 45244 },	-- Farseer Krogar
+					["coord"] = { 50.4, 38.2, 85 },
+					["sourceQuest"] = 28805	-- The Eye of the Storm
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+					["lvl"] = 80,
+				}),
 				q(6385,  {	-- Doras the Wind Rider Master
 					["provider"] = { "n", 6929 },	-- Innkeeper Gryshka
 					["coord"] = { 53.5, 78.7, 85 },
@@ -1695,6 +1703,7 @@ _.Zones =
 				q(28805, {	-- The Eye of the Storm
 					["provider"] = { "n", 45244 },	-- Farseer Krogar
 					["coord"] = { 50.4, 38.2, 85 },
+					["sourceQuest"] = 28790,	-- A Personal Summons
 					["races"] = HORDE_ONLY,
 					["lvl"] = 82,
 				}),
@@ -1814,6 +1823,7 @@ _.Zones =
 				q(28816, {	-- To the Depths
 					["provider"] = { "n", 45244 },	-- Farseer Krogar
 					["coord"] = { 50.4, 38.2, 85 },
+					["sourceQuest"] = 28805,	-- The Eye of the Storm
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 80,
