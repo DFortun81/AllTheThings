@@ -277,6 +277,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27857,	-- We're Under Attack!
 				}),
+				q(1392, {	-- Noboru the Cudgel
+					["u"] = 40,	-- Legacy Quests
+				}),
 				q(28553, {	-- Okrilla and the Blasted Lands
 					["provider"] = { "n", 7623 },	-- Dispatch Commander Ruag
 					["coord"] = { 49.3, 55.3, 51 },

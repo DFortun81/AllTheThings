@@ -250,6 +250,15 @@ _.Zones =
 					["coord"] = { 45.6, 12.6, 1 },
 					["races"] = { 24 },	-- Pandaren (Neutral)
 				}),
+				q(1884, {	-- Ju-Ju Heaps
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
+					["g"] = {
+						i(9513),	-- Ley Staff
+						i(7508),	-- Ley Orb
+					},
+				}),
 				q(40605, {	-- Keep Your Friends Close
 					["coord"] = { 45.6, 15.9, 1 },
 					["provider"] = { "n", 101035 },	-- Lady Sylvanas Windrunner
@@ -490,6 +499,11 @@ _.Zones =
 						i(53390),	-- Skull Rock Belt
 						i(131414),	-- Burning Armbands
 					},
+				}),
+				q(1883, {	-- Speak with Un'thuwa
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
 				}),
 				q(25177, {	-- Storming the Beaches
 					["provider"] = { "n", 3139 },	-- Gar'Thok

@@ -310,6 +310,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5418 },	-- Deathstalker Zraedus
 				}),
+				q(1388, {	-- Nothing But The Truth
+					["sourceQuest"] = 1372,	-- Nothing But The Truth
+					["u"] = 40,	-- Legacy Quests
+				}),
+				q(1391, {	-- Nothing But The Truth
+					["u"] = 40,	-- Legacy Quests
+				}),
 				q(26680, {	-- Ogre Thieves
 					["provider"] = { "n", 289 },	-- Abercrombie
 					["coord"] = { 87.4, 35.2, 47 },
