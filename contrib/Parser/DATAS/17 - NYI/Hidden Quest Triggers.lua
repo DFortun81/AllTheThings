@@ -1688,6 +1688,7 @@ _.NeverImplemented =
 		q(56220),	-- Triggered when opening the second glimmering chest during "Scrying Stones"
 		q(56221),	-- Triggered when opening the third glimmering chest during "Scrying Stones"
 		q(56661),	-- Triggered when walking into the "Void Chamber" cave
+		q(56675),	-- Triggered shortly after summoning Neri from the conch
 		q(56913),	-- Triggers after completing the Glowing Arcane Trunk minigame in Broken Fin Hollow (24.8, 35.2)
 		q(55987),	-- Triggers after completing the Glowing Arcane Trunk minigame in Chitterspine Caverns (43.8, 16.5)
 		q(56343),	-- Triggers after completing the Glowing Arcane Trunk minigame in Mardivas's Hideaway (37.9, 6.5)
@@ -1699,6 +1700,10 @@ _.NeverImplemented =
 		q(56663),	-- Unknown trigger. Occured when walking into Shirakess Repository, but need to confirm potential pre-reqs
 		q(56673),	-- Triggered after going into Deepcoil Hatchery for the first time. Needs confirmation
 		q(56543),	-- Triggered when walking into Kelfin Pocket for the first time. Follower dialog goes off (horde)
+		q(56507),	-- Triggered randomly while in nazjatar
+		q(56658),	-- Triggered randomly while in Nazjatar
+		q(56670),	-- Triggered randomly while in Nazjatar
+		q(56724),	-- Triggered when killing Arcane Amalgamation in mardivas' lab. Probably used to disable something else in the room
 		q(55604),	-- Triggers after unlocking or making a purchase from Mrrl (Once per day)
 		q(56901),	-- Triggers after buying Mrrl's secret trader stock (requires cloak with special stock trait). Received 170162 - waterlogged toolbox first
 		q(56974),	-- Triggers when receiving "Mardivas's Handemade Handbag" (itemID 170489) from a Glowing Arcane Trunk
