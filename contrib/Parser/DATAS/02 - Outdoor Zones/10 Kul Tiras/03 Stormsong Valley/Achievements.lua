@@ -77,6 +77,7 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(13046),		-- These Hills Sing
 				ach(12853, {	-- Treasures of Stormsong
 					o(293350, {	-- Carved Wooden Chest	
 						["questID"] = 52429,

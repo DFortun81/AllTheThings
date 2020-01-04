@@ -202,6 +202,7 @@ _.Zones =
 						["coord"] = { 62.9, 22.7, 864 },
 					}),
 				}),
+				ach(13011),		-- Scourge of Zem'lan
 				ach(12478, {	-- Secrets in the Sands
 					["races"] = HORDE_ONLY,
 					["g"] = {

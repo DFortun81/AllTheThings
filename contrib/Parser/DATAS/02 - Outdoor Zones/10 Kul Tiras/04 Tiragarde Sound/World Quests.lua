@@ -824,8 +824,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 				}),
-				{
-					["itemID"] = 165867,	-- Kul Tiran Weapons Cache
+				i(165867, {	-- Kul Tiran Weapons Cache
 					["sym"] = {
 						{"select", "mapID", 895},	-- Tiragarde Sound
 						{"pop"},	-- Discard the Map Header and acquire the children.
@@ -835,9 +834,8 @@ _.Zones =
 						{"invtype", "INVTYPE_2HWEAPON", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_HOLDABLE", "INVTYPE_RANGED", "INVTYPE_RANGEDRIGHT", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND" },	-- Only include a couple of inventory types.
 						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 					},
-				},
-				{
-					["itemID"] = 165869,	-- Proudmoore Admiralty Equipment Cache
+				}),
+				i(165869, {	-- Proudmoore Admiralty Equipment Cache
 					["sym"] = {
 						-- Include the two extras.
 						{"select", "itemID", 158159},	-- Boralus Sailor's Cloak
@@ -856,7 +854,7 @@ _.Zones =
 						{"merge"},	-- Merge the finalized items back into the processing queue.
 						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 					},
-				},
+				}),
 				i(158092),	-- Colscale Cudgel
 				i(159819),	-- Coldscale Lantern
 				i(158098),	-- Coralshell Halberd

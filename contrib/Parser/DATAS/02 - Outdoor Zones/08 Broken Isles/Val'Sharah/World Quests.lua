@@ -15,289 +15,50 @@ _.Zones =
 				q(39011),	-- Black Rook Invasion
 				q(38648),	-- Black Rook Orders
 				q(38469),	-- Bonus Objective: The Moonclaw Vale
-				q(44457),	-- Brotherly Love
-				q(38724),	-- Brotherly Love
-
-				q(40122),	-- Cenarius, Keeper of the Grove
-
-				q(38305),	-- Cenarius, Keeper of the Grove
-
-				q(38645),	-- Children of the Night
-
 				q(38660),	-- Cleansing the Corruption
-
-				q(41763, {	-- Close Enough to Touch
-					["races"] = HORDE_ONLY,
-				}),
-				q(38687, {	-- Close Enough to Touch
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(41708, {	-- Dark Side of the Moon
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(41890, {	-- Dark Side of the Moon
-					["races"] = HORDE_ONLY,
-				}),
-				q(40567),	-- Darkheart Thicket: Enter the Nightmare
-
-				q(38225),	-- Death to the Witchmother
-
-				q(39029),	-- Defend The Temple
-
 				q(38219),	-- Defending The Grove
-
 				q(41880),	-- Den of Shadows
-
-				q(39383),	-- Dishonored
-
 				q(38839),	-- Done with Waiting
-
-				q(42750),	-- Dreamcatcher
-
-				q(42748),	-- Emerald Sisters
-
-				q(38147),	-- Entangled Dreams
-
-				q(38842),	-- Faerie Fracas
-
 				q(38840),	-- Fishy Business
-
-				q(43241),	-- Flow of the Nightmare
-
-				q(38647),	-- For the Corn!
-
 				q(41875),	-- Found First Clue
-
-				q(38455),	-- Frenzied Furbolgs
-
-				q(44070),	-- Gathenak
-
-				q(41893, {	-- Given to Corruption
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(41749, {	-- Given to Corruption
-					["races"] = HORDE_ONLY,
-				}),
-				q(42884),	-- Grassroots Effort
-
-				q(42865),	-- Grell to Pay
-
-				q(42786),	-- Grotesque Remains
-
 				q(38341),	-- Halting the Nightmare
-
 				q(38745),	-- Hard Lessons
-
-				q(38675, {	-- Heart of the Nightmare
-					["races"] = HORDE_ONLY,
-				}),
-				q(41724, {	-- Heart of the Nightmare
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(44789),	-- Holding the Ramparts
-
-				q(38719),	-- Illidari Freedom
-
-				q(44278),	-- Illidari Freedom
-
-				q(38691),	-- Jarod's Mission
-
-				q(38718),	-- Kur'talos Ravencrest
-
-				q(38721),	-- Lieutenant of the Tower
-
-				q(38922),	-- Littlefur
-
-				q(38671),	-- Lost in Retreat
-
-				q(41054, {	-- Love Lost
-					["races"] = HORDE_ONLY,
-				}),
-				q(41056, {	-- Love Lost
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(38714),	-- Maiev's Trail
-
-				q(38595),	-- Malfurion's Fury
-
-				q(38656),	-- Mark of the Demon
-
 				q(38285),	-- Menacing Sprites
-
-				q(42857),	-- Moist Around the Hedges
-
-				q(42751),	-- Moon Reaver
-
-				q(39393),	-- Moonclaw Vale
-
 				q(39388),	-- Moonclaw's Wisdom
-
-				q(38384),	-- Nature's Call
-
 				q(38661),	-- Nightmare Bombs
-
-				q(38145),	-- Out of the Dream
-
 				q(46797),	-- Paragon of the Dreamweavers
-
 				q(38708),	-- Purge the River
-
-				q(38684),	-- Reading the Leaves
-
-				q(43576),	-- Regroup at the Refuge
-
 				q(38353),	-- Rescued From Darkness
-
-				q(38323),	-- Return to the Grove
-
-				q(38148),	-- Return to the Grove
-
-				q(38322),	-- Return to the Grove
-
 				q(46820),	-- REUSE
-
 				q(39028),	-- REUSE ME
-
-				q(38655),	-- Root Cause
-
-				q(38748),	-- Ruins of Shala'nir
-
 				q(39428),	-- Satyr Line TRACKING
-
-				q(39117),	-- Shriek No More
-
-				q(43702),	-- Softening the Target
-
-				q(38235),	-- Solid as a Rock
-
-				q(40221),	-- Spread Your Lunarwings and Fly
-
-				q(46747),	-- Supplies From the Dreamweavers
-
 				q(41874),	-- Talked to Tyrande to Start Events
-
 				q(41879),	-- TBD
-
-				q(38662),	-- Tears for Fears
-
-				q(38146),	-- The Chieftain's Beads
-
-				q(39384),	-- The Corruptor
-
-				q(38753),	-- The Demon's Trail
-
-				q(38144),	-- The Demons Below
-
-				q(38663),	-- The Die is Cast
-
-				q(42170),	-- The Dreamweavers
-
-				q(38377),	-- The Emerald Queen
-
-				q(38644),	-- The Farmsteads
-
-				q(38743),	-- The Fate of Val'sharah
-
-				q(40573),	-- The Nightmare Lord
-
-				q(38715),	-- The Rook's Guard
-
 				q(38697),	-- The Sword of Truth
-
-				q(40890),	-- The Tears of Elune
-
-				q(38641),	-- The Temple of Elune
-
 				q(39731),	-- The Tranquil Forest
-
-				q(38711),	-- The Warden's Signet
-
 				q(38673),	-- The Wormtalon Crone
-
-				q(38862),	-- Thieving Thistleleaf
-
-				q(40220),	-- Thorny Dancing
-
-				q(38582),	-- To Old Friends
-
-				q(38246),	-- Totemic Call
-
-				q(38994),	-- TRACKING Encounter Botanist
-
-				q(38596),	-- TRACKING Nightmare 02
-
-				q(47062),	-- Tracking Quest
-
 				q(40921),	-- Tracking Quest: Bastillax 1
-
 				q(40924),	-- Tracking Quest: Bastillax 4
-
 				q(40296),	-- Tracking Quest: Corridor
-
 				q(40386),	-- Tracking Quest: Khadgar Arrival
-
 				q(40922),	-- Tracking Quest: Mephistos 2
-
 				q(40923),	-- Tracking Quest: Mephistos 3
-
 				q(40422),	-- Tracking Quest: VotW Started
-
-				q(38277),	-- Treasure: Honey Hive
-
-				q(39861),	-- Tying Up Loose Ends
-
 				q(41876),	-- Umbraxis Tracker
-
 				q(38938),	-- Unbearable
-
-				q(39044),	-- Unused
-
-				q(38995),	-- Unused
-
 				q(38304),	-- Val'sharah
-
 				q(39460),	-- Vale POI Event TRACKING
-
-				q(43446),	-- Vignette: Bahagar
-
 				q(41917),	-- Vignette: Bear Cub
-
 				q(38902),	-- Vignette: Coruscating Bloom
-
-				q(39121),	-- Vignette: Haunted Manor
-
 				q(38380),	-- Vignette: Hivequeen Zsala
-
-				q(40251),	-- Vignette: Kethrazor
-
 				q(38278),	-- Vignette: Kraw the Mystic
-
-				q(40301),	-- Vignette: Phalanx Captain
-
 				q(39158),	-- Vignette: Rally the Wilds
-
 				q(38465),	-- Vignette: Shyama the Dreaded
-
 				q(39467),	-- Vignette: Sorcery and Suction
-
-				q(39856),	-- Vignette: Wraithtalon
-
 				q(43447),	-- Vignette: Wraithtalon
-
-				q(42747),	-- Where the Wildkin Are
-
-				q(39354),	-- Wisp in the Willows
-
 				q(44825),	-- Wisp in the Willows
-
-				q(41707),	-- Wormtalon Wreckage
-
 				q(46819),	-- Wrecked Cart
-
-				q(38372),	-- Wretched Sisters
-
 				q(39420),	-- Xavius Event TRACKING
-
 ]]--			
 				q(45924, {	-- Abyssal Monstrosity (Invasion WQ)
 					["lvl"] = 98,
