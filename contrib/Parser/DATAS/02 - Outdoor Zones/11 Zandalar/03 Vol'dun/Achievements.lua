@@ -202,6 +202,35 @@ _.Zones =
 						["coord"] = { 62.9, 22.7, 864 },
 					}),
 				}),
+				ach(12478, {	-- Secrets in the Sands
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(1, {	-- Unlikely Allies
+							["sourceQuest"] = 51364,	-- An Explosive Exit
+						}),
+						crit(2, {	-- Dangers in the Desert
+							["sourceQuests"] = {
+								48549,	-- Grozztok the Blackheart
+								48550,	-- Stolen Satchels
+							},
+						}),
+						crit(3, {	-- The Warguard's Fate
+							["sourceQuest"] = 47874,	-- Clearing the Fog
+						}),
+						crit(4, {	-- A City of Secrets
+							["sourceQuest"] = 50561,	-- Sulthis' Stone
+						}),
+						crit(5, {	-- The Three Keepers
+							["sourceQuest"] = 49340,	-- The Keeper's Keys
+						}),
+						crit(6, {	-- Storming the Spire
+							["sourceQuest"] = 50550,	-- The Fall of Emperor Korthek
+						}),
+						crit(7, {	-- Atul'Aman
+							["sourceQuest"] = 50702,	-- Defeat Jakra'zet
+						}),
+					},
+				}),
 				ach(12849, {	-- Treasures of Vol'dun
 					o(280951, {	-- Ashvane Spoils
 						["questID"] = 50237,
@@ -229,6 +258,7 @@ _.Zones =
 						["questID"] = 51093,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						["coord"] = { 48.21, 64.70, 864 },
+						["sourceQuest"] = 50702,	-- Defeat Jakra'zet
 					}),
 					o(287304, {	-- Lost Explorer's Bounty
 						["questID"] = 51132,

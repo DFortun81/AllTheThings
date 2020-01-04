@@ -1244,6 +1244,17 @@ _.NeverImplemented =
 		q(53956),	-- Triggered when turning in "We Are Coming" as alliance. Probably related to darkshore warfront unlock?
 		q(49610),	-- looting Adventurer's Society Loot Stash to unlock the Nigel Rifthold pet vendor
 		q(56684),	-- Flag used to track if 160489 (340 engineering goggles) had been crafted. This identifies if the recipe for rank 2 can drop
+		
+		q(47647),	-- Monsters of Zem'lan - bonus quest
+		q(50805),	-- Skycaller Shutdown - bonus quest
+		q(50805),	-- Skycaller Shutdown - bonus quest
+		q(51648),	-- Vol'dun - select "The Nimble" as your Akunda title during "Trial of Truth"
+		q(49414),	-- Vol'dun - beat Akunda the Exalted to trigger the cinematic and phase the area
+		q(51685),	-- Vol'dun - triggers when turning in "Akunda's Blessing". Probably controls the activation of the Akunda buff idol in Dazar'alor
+		q(51684),	-- Vol'dun - triggers when turning in "Mark of the Loa". Probably controls the activation of the Kimbal buff idol in Dazar'alor
+		q(49416),	-- Vol'dun - triggers during "The Keeper's Keys" after the cinematic
+		q(47887),	-- Vol'dun - triggered when entering the Ashvane Encampment. Possibly controls the spawn of Randall Redmond?
+		q(50522),	-- Vol'dun - triggered after getting a food buff from the goldtusk inn's "All-You-Can-Eat Breakfast Buffet". Could also be related to feeding Tarkaj during "A Goldtusk Greeting"
 		q(54704),	-- War Campaign - triggered when turning in "Time for War"
 		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track
 		q(53532),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Akunda". Makes the loa book available to read in The Great Seal
@@ -1465,6 +1476,7 @@ _.NeverImplemented =
 		q(50917),	-- Vol'dun repeatable random chest
 		q(50919),	-- Vol'dun repeatable random chest
 		q(50915),	-- Vol'dun repeatable random chest
+		q(50925),	-- Vol'dun repeatable random chest
 		q(49142),	-- Zuldazar repeatable random chest
 		q(13541),	-- Triggered when opening a Maplewood Treasure Chest in darkshore
 		q(54872),	-- Opening a Darkshore chest
