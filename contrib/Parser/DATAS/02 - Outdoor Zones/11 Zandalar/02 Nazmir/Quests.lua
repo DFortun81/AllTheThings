@@ -704,6 +704,7 @@ _.Zones =
 					["provider"] = { "n", 133471 },	-- Rokhan
 					["coord"] = { 45.4, 58.6, 863 },
 					["sourceQuest"] = 50082,	-- Target of Opportunity
+					["races"] = HORDE_ONLY,
 				}),
 				q(50933, {	-- An Unfortunate Event
 					["provider"] = { "n", 135784 },	-- Imperial Guard
@@ -1050,6 +1051,7 @@ _.Zones =
 					["provider"] = { "n", 133471 },	-- Rokhan
 					["coord"] = { 45.4, 58.6, 863 },
 					["sourceQuest"] = 50082,	-- Target of Opportunity
+					["races"] = HORDE_ONLY,
 				}),
 				q(48480, {	-- The Fall of Kel'vax
 					["provider"] = { "n", 126080 },	-- Shinga Deathwalker
