@@ -42,6 +42,10 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["sourceQuests"] = { 45459 },	-- Storming the Legion
 					}),
+					q(41911, {	-- Amaranthine Hops
+						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
+						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
+					}),
 					q(45545, {	-- Barrel Toss
 						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["sourceQuests"] = { 45459 },	-- Storming the Legion
@@ -194,7 +198,6 @@ _.ExpansionFeatures =
 					q(43359),	-- A Hero's Weapon
 					q(40793),	-- A Matter of Planning
 					q(41086),	-- A Peaceful World
-					q(41911),	-- Amaranthine Hops
 					q(43054),	-- An Ample Stockpile
 					q(45180),	-- An Island of War
 					q(46024),	-- An Urgent Warning

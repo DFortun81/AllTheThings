@@ -1099,6 +1099,11 @@ _.Zones =
 					["lvl"] = 45,
 					["u"] = 40,
 				}),
+				q(1947, {	-- Journey to the Marsh
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
+				}),
 				q(8944,  {	-- Just Compensation (Warrior)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
@@ -1215,6 +1220,11 @@ _.Zones =
 						un(2, i(22106)), 	-- Feralheart Belt
 						un(2, i(22110)), 	-- Feralheart Gloves
 					},
+				}),
+				q(1945, {	-- Laughing Sisters
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
 				}),
 				q(32673, {	-- Learn To Ride
 					["description"] = "This quest is available to Goblins upon reaching level 20.",
@@ -1933,6 +1943,11 @@ _.Zones =
 						i(63924),	-- Blade-Dodging Girdle
 						i(63923),	-- Hauberk of Shock
 					},
+				}),
+				q(1944, {	-- Waters of Xavian
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
 				}),
 				q(28466, {	-- Weapons of Darkness
 					["provider"] = { "n", 44725 },	-- Sunwalker Atohmo

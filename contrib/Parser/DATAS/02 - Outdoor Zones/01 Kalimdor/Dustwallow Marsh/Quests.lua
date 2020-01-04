@@ -300,6 +300,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				q(1949, {	-- Hidden Secrets
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
+				}),
 				q(1135,  {	-- Highperch Venom
 					["u"] = 40,
 					["provider"] = { "n", 4456 },	-- Fiora Longears
@@ -364,6 +369,11 @@ _.Zones =
 					["coord"] = { 69.3, 51.9, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27218 },	-- Dastardly Denizens of the Deep
+				}),
+				q(1948, {	-- Items of Power
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
 				}),
 				q(27238, {	-- Jaina Must Know
 					["provider"] = { "n", 23569 },	-- Renn McGill
@@ -454,6 +464,11 @@ _.Zones =
 						un(2, i(11263)),	-- Nether Force Wand
 						un(2, i(7513)),	-- Ragefire Wand
 					},
+				}),
+				q(1957, {	-- Mana Surges
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
 				}),
 				q(27183, {	-- Marsh Frog Legs
 					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
@@ -564,6 +579,11 @@ _.Zones =
 						i(156976),	-- Staff of Memory
 					},
 				}),
+				q(1956, {	-- Power in Uldaman
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
+				}),
 				q(27245, {	-- Prisoners of the Grimtotems (awarded "Prisoners of the Grimtotem" criteria)
 					["provider"] = { "n", 23723 },	-- Sergeant Lukas
 					["coord"] = { 46.5, 22.9, 70 },
@@ -666,6 +686,11 @@ _.Zones =
 						i(33267),	-- Fleshripper NOTE: This item is now available from Recover the Cargo or the new version of Return to Krog
 						un(2, i(33270)),	-- Mariner's Sword
 					},
+				}),
+				q(1953, {	-- Return to the Marsh
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
 				}),
 				q(27236, {	-- Secondhand Diving Gear
 					["provider"] = { "n", 23569 },	-- Renn McGill
@@ -984,6 +1009,11 @@ _.Zones =
 					["coord"] = { 41.8, 73.9, 70 },
 					["sourceQuest"] = 27407,	-- Bloodfen Feathers
 				}),
+				q(1955, {	-- The Exorcism
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
+				}),
 				q(27293, {	-- The Grimtotem Plot
 					["provider"] = { "n", 4926 },	-- Krog
 					["coord"] = { 36.4, 31.8, 70 },
@@ -1017,6 +1047,11 @@ _.Zones =
 					["coord"] = { 37.1, 33.0, 70 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,	-- for "Marsh Frog Legs"
+				}),
+				q(1954, {	-- The Infernal Orb
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
 				}),
 				q(1238,  {	-- The Lost Report
 					["u"] = 40,
