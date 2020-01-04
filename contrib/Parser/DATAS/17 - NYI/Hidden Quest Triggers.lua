@@ -1128,6 +1128,7 @@ _.NeverImplemented =
 	--	Rares
 		q(45478),	-- Achronos — WQ rare in suramar, no special drops
 		q(39533),	-- Durguth — WQ rare in suramar, attached WQ to rare so his special drop shows in /attwq
+		q(45512),	-- Mawat'aki — WQ rare in Highmountain
 		
 	--	Treasures
 		q(40692),	-- 7.0 Suramar - Treasure 000 - The Drift - L (DLA) — suramar treasure in cliffside at 58.6, 33.8
