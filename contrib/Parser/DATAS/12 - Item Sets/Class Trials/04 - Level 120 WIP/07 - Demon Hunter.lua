@@ -4,24 +4,25 @@
 _.GearSets = 
 {
 	n(-5350, {	-- Class Trial Item Sets
-		n(-154, {	-- Level 110
+		n(-155, {	-- Level 120
 			["groups"] = {
 				n(-224, {	-- Illidari
 					["groups"] = {
-						i(154737),	-- Illidari Blindfold
-						i(154747),	-- Illidari Chain
-						i(154735),	-- Illidari Shoulders
-						i(154748),	-- Illidari Drape
-						i(154739),	-- Illidari Robe
-						i(154740),	-- Illidari Bracers
-						i(154738),	-- Illidari Gloves
-						i(154742),	-- Illidari Belt
-						i(154736),	-- Illidari Leggings
-						i(154741),	-- Illidari Boots
-						i(154745),	-- Illidari Band
-						i(154746),	-- Illidari Ring
-						i(154744),	-- Charm of Demonic Fire
-						i(154743),	-- Demon Trophy
+						i(170941),	-- Illidari Warglaives
+						i(170929),	-- Illidari Blindfold
+						un(1, i(170939)),	-- Illidari Chain
+						i(170928),	-- Illidari Shoulders
+						i(170940),	-- Illidari Drape
+						i(170931),	-- Illidari Robe
+						i(170932),	-- Illidari Bracers
+						i(170930),	-- Illidari Gloves
+						i(170934),	-- Illidari Belt
+						i(170928),	-- Illidari Leggings
+						i(170933),	-- Illidari Boots
+						i(170935),	-- Illidari Band
+						i(170936),	-- Illidari Ring
+						i(170936),	-- Charm of Demonic Fire
+						i(170935),	-- Demon Trophy
 					},
 					["classes"]  = { 12 },
 				}),
