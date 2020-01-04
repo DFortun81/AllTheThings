@@ -7,74 +7,15 @@ _.Zones =
 		m(641, {	-- Val'sharah
 			n(-34,  {	-- World Quests
 --[[	raw quest list to check against
-
 				-- Unknown
 				q(38693),	-- [DEPRECATED] Kill Feral Dogs
-
-				q(38903),	-- 7.0 Val'sharah - Bluffs - Vignette: Nightcaller - Interaction - TRACKING - twh
-
-				q(38887),	-- 7.0 Val'sharah - Bluffs - Vignette: Swiftflight - TRACKING - twh
-
-				q(38780),	-- 7.0 Val'sharah - River - Vignette: Thondrax - TRACKING - twh
-
-				q(39130),	-- 7.0 Val'sharah - River: Vignette: Purging the River - TRACKING - twh
-
-				q(38646),	-- A Sight For Sore Eyes
-
 				q(39032),	-- A Summons from Saylanna
-
-				q(38643),	-- A Village in Peril
-
-				q(39149),	-- A Village in Peril
-
-				q(38889),	-- Adopting the Adorable
-
-				q(42883),	-- All Grell Broke Loose
-
 				q(38737),	-- An End To War
-
-				q(38381),	-- Archdruid of Lore
-
-				q(44106),	-- Archdruid of Lore
-
-				q(38142),	-- Archdruid of the Claw
-
-				q(38382),	-- Archdruid of the Vale
-
-				q(46962),	-- Assault Treasure
-
-				q(46959),	-- Assault Treasure
-
-				q(46954),	-- Assault Treasure
-
-				q(46963),	-- Assault Treasure
-
-				q(46960),	-- Assault Treasure
-
-				q(46956),	-- Assault Treasure
-
-				q(46961),	-- Assault Treasure
-
-				q(46958),	-- Assault Treasure
-
-				q(38143),	-- Awakening the Archdruid
-
-				q(45856),	-- Battle for Val'sharah
-
 				q(46830),	-- Battlefield
-
-				q(38716),	-- Black Rook Hold
-
 				q(39011),	-- Black Rook Invasion
-
 				q(38648),	-- Black Rook Orders
-
-				q(38717),	-- Black Rook Prison
-
 				q(38469),	-- Bonus Objective: The Moonclaw Vale
-
 				q(44457),	-- Brotherly Love
-
 				q(38724),	-- Brotherly Love
 
 				q(40122),	-- Cenarius, Keeper of the Grove

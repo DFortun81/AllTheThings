@@ -1244,17 +1244,6 @@ _.NeverImplemented =
 		q(53956),	-- Triggered when turning in "We Are Coming" as alliance. Probably related to darkshore warfront unlock?
 		q(49610),	-- looting Adventurer's Society Loot Stash to unlock the Nigel Rifthold pet vendor
 		q(56684),	-- Flag used to track if 160489 (340 engineering goggles) had been crafted. This identifies if the recipe for rank 2 can drop
-		
-		q(47647),	-- Monsters of Zem'lan - bonus quest
-		q(50805),	-- Skycaller Shutdown - bonus quest
-		q(50805),	-- Skycaller Shutdown - bonus quest
-		q(51648),	-- Vol'dun - select "The Nimble" as your Akunda title during "Trial of Truth"
-		q(49414),	-- Vol'dun - beat Akunda the Exalted to trigger the cinematic and phase the area
-		q(51685),	-- Vol'dun - triggers when turning in "Akunda's Blessing". Probably controls the activation of the Akunda buff idol in Dazar'alor
-		q(51684),	-- Vol'dun - triggers when turning in "Mark of the Loa". Probably controls the activation of the Kimbal buff idol in Dazar'alor
-		q(49416),	-- Vol'dun - triggers during "The Keeper's Keys" after the cinematic
-		q(47887),	-- Vol'dun - triggered when entering the Ashvane Encampment. Possibly controls the spawn of Randall Redmond?
-		q(50522),	-- Vol'dun - triggered after getting a food buff from the goldtusk inn's "All-You-Can-Eat Breakfast Buffet". Could also be related to feeding Tarkaj during "A Goldtusk Greeting"
 		q(54704),	-- War Campaign - triggered when turning in "Time for War"
 		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track
 		q(53532),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Akunda". Makes the loa book available to read in The Great Seal
@@ -1452,32 +1441,6 @@ _.NeverImplemented =
 	
 
 	--	TREASURES
-		q(50855),	-- Nazmir repeatable random chest
-		q(49885),	-- Nazmir repeatable random chest
-		q(50895),	-- Nazmir repeatable random chest
-		q(49904),	-- Nazmir repeatable random chest
-		q(49916),	-- Nazmir repeatable random chest
-		q(50894),	-- Nazmir repeatable random chest
-		q(49913),	-- Nazmir repeatable random chest
-		q(49914),	-- Nazmir repeatable random chest
-		q(49899),	-- Nazmir repeatable random chest
-		q(49924),	-- Nazmir repeatable random chest
-		q(50922),	-- Vol'dun repeatable random chest
-		q(50920),	-- Vol'dun repeatable random chest
-		q(51673),	-- Vol'dun repeatable random chest
-		q(50926),	-- Vol'dun repeatable random chest
-		q(50928),	-- Vol'dun repeatable random chest
-		q(50916),	-- Vol'dun repeatable random chest
-		q(50914),	-- Vol'dun repeatable random chest
-		q(50918),	-- Vol'dun repeatable random chest
-		q(50923),	-- Vol'dun repeatable random chest
-		q(50924),	-- Vol'dun repeatable random chest
-		q(50921),	-- Vol'dun repeatable random chest
-		q(50917),	-- Vol'dun repeatable random chest
-		q(50919),	-- Vol'dun repeatable random chest
-		q(50915),	-- Vol'dun repeatable random chest
-		q(50925),	-- Vol'dun repeatable random chest
-		q(49142),	-- Zuldazar repeatable random chest
 		q(13541),	-- Triggered when opening a Maplewood Treasure Chest in darkshore
 		q(54872),	-- Opening a Darkshore chest
 		q(54877),	-- Opening a Darkshore chest
@@ -1582,11 +1545,23 @@ _.NeverImplemented =
 		q(48852, {	-- Stopping Zardax
 			["isWorldQuest"] = true,
 		}),
-
+		-- Chests
+		q(50855),	-- Nazmir repeatable random chest
+		q(49885),	-- Nazmir repeatable random chest
+		q(50895),	-- Nazmir repeatable random chest
+		q(49904),	-- Nazmir repeatable random chest
+		q(49916),	-- Nazmir repeatable random chest
+		q(50894),	-- Nazmir repeatable random chest
+		q(49913),	-- Nazmir repeatable random chest
+		q(49914),	-- Nazmir repeatable random chest
+		q(49899),	-- Nazmir repeatable random chest
+		q(49924),	-- Nazmir repeatable random chest
+		q(49925),	-- Nazmir repeatable random chest
 
 	--	Stormsong Valley
 		q(51695),	-- Horde WarCampaign - "Reclaiming What's Ours" (ID 51696) using the horn to reclaim the Foothold
 		q(55626),	-- first kill of yellow Sabertron
+		q(50541),	-- triggered after defeating Beehemoth WQ
 		-- Bonus Objectives
 		q(50779, {	-- A Clean Slate
 			["races"] = ALLIANCE_ONLY,
@@ -1648,6 +1623,34 @@ _.NeverImplemented =
 		q(50952),	-- Tiragarde Sound repeatable random chest
 		q(53630),	-- Tiragarde Sound repeatable random chest (possibly different from others, it was Forgotten Treasure Chest at 79.57 20.22 in a small cave)
 
+	-- Vol'dun
+		q(47647),	-- Monsters of Zem'lan - bonus quest
+		q(50805),	-- Skycaller Shutdown - bonus quest
+		q(50805),	-- Skycaller Shutdown - bonus quest
+		q(51648),	-- Vol'dun - select "The Nimble" as your Akunda title during "Trial of Truth"
+		q(49414),	-- Vol'dun - beat Akunda the Exalted to trigger the cinematic and phase the area
+		q(51685),	-- Vol'dun - triggers when turning in "Akunda's Blessing". Probably controls the activation of the Akunda buff idol in Dazar'alor
+		q(51684),	-- Vol'dun - triggers when turning in "Mark of the Loa". Probably controls the activation of the Kimbal buff idol in Dazar'alor
+		q(49416),	-- Vol'dun - triggers during "The Keeper's Keys" after the cinematic
+		q(47887),	-- Vol'dun - triggered when entering the Ashvane Encampment. Possibly controls the spawn of Randall Redmond?
+		q(50522),	-- Vol'dun - triggered after getting a food buff from the goldtusk inn's "All-You-Can-Eat Breakfast Buffet". Could also be related to feeding Tarkaj during "A Goldtusk Greeting"
+		-- Chests
+		q(50922),	-- Vol'dun repeatable random chest
+		q(50920),	-- Vol'dun repeatable random chest
+		q(51673),	-- Vol'dun repeatable random chest
+		q(50926),	-- Vol'dun repeatable random chest
+		q(50928),	-- Vol'dun repeatable random chest
+		q(50916),	-- Vol'dun repeatable random chest
+		q(50914),	-- Vol'dun repeatable random chest
+		q(50918),	-- Vol'dun repeatable random chest
+		q(50923),	-- Vol'dun repeatable random chest
+		q(50924),	-- Vol'dun repeatable random chest
+		q(50921),	-- Vol'dun repeatable random chest
+		q(50917),	-- Vol'dun repeatable random chest
+		q(50919),	-- Vol'dun repeatable random chest
+		q(50915),	-- Vol'dun repeatable random chest
+		q(50925),	-- Vol'dun repeatable random chest
+
 	--	Zuldazar
 		q(50931),	-- Spoke to talanji when meeting with Rastakhan for the first time
 		q(55413),	-- War Mode supply drop in Zuldazar
@@ -1670,6 +1673,7 @@ _.NeverImplemented =
 			["isWorldQuest"] = true,
 		}),
 		-- Chests
+		q(49142),	-- Zuldazar repeatable random chest
 		q(50710),	-- Zuldazar repeatable random chest
 		q(50711),	-- Zuldazar repeatable random chest
 		q(50712),	-- Zuldazar repeatable random chest

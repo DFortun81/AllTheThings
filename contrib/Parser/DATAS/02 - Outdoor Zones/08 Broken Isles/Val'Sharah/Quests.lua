@@ -62,7 +62,7 @@ _.Zones =
 				}),
 				q(38717, {	-- Black Rook Prison
 					["sourceQuests"] = {
-						38717,	-- Maiev's Trail
+						38714,	-- Maiev's Trail
 						38715,	-- The Rook's Guard
 					},
 					["coord"] = { 43.7, 50.2, 641 },

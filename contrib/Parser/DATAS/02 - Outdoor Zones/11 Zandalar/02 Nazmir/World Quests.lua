@@ -114,7 +114,7 @@ _.Zones =
 					}),
 					q(50648, {	-- Bubbles and Trouble
 						["lvl"] = 120,
-						--["races"] = HORDE_ONLY,	-- Possibly hordeonly since theres an allionly above, but wowhead says both sides.
+						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(50735, {	-- Burial Detail
