@@ -1246,17 +1246,17 @@ _.NeverImplemented =
 		q(56684),	-- Flag used to track if 160489 (340 engineering goggles) had been crafted. This identifies if the recipe for rank 2 can drop
 		q(54704),	-- War Campaign - triggered when turning in "Time for War"
 		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track
-		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Akunda". Makes the loa book available to read in The Great Seal
+		q(53532),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Akunda". Makes the loa book available to read in The Great Seal
 		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Bwonsamdi". Makes the loa book available to read in The Great Seal
 		q(53535),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Gonk". Makes the loa book available to read in The Great Seal
 		q(53536),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Gral". Makes the loa book available to read in The Great Seal
 		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Hir'eek". Makes the loa book available to read in The Great Seal
 		q(53538),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Jani". Makes the loa book available to read in The Great Seal
-		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Kimbul". Makes the loa book available to read in The Great Seal
+		q(53539),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Kimbul". Makes the loa book available to read in The Great Seal
 		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Krag'wa". Makes the loa book available to read in The Great Seal
 		q(53541),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Pa'ku". Makes the loa book available to read in The Great Seal
 		q(53542),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Rezan". Makes the loa book available to read in The Great Seal
-		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Sethraliss". Makes the loa book available to read in The Great Seal
+		q(53543),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Sethraliss". Makes the loa book available to read in The Great Seal
 		q(53544),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Shadra". Makes the loa book available to read in The Great Seal
 		q(53546),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Torcali". Makes the loa book available to read in The Great Seal
 		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Torga". Makes the loa book available to read in The Great Seal
@@ -1487,8 +1487,6 @@ _.NeverImplemented =
 		q(51826),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
 		q(54991),	-- Khaz'gorian Smithing Hammer - Anvil created
 		q(50950),	-- for using the Incense prior to opening Gift of the Brokenhearted for achievement Treasures of Zuldazar
-		q(50311),	-- for giving Jani the Golden Ravasaur Egg in Zuldazar as part of the Get Hek'd achievement
-		q(50430),	-- for giving Jani the Feathered Viper Scale in Zuldazar as part of the Get Hek'd achievement
 		q(51094),	-- for clicking on object 287238 Ancient Altar in Vol'dun as part of the Treasures of Vol'dun achievement for Grayal's Last Offering
 		q(53420),	-- for clicking on Lost Spawn of Krag'wa at { 52.83, 42.85, 863 }, in Nazmir
 		q(53425),	-- for clicking on Lost Spawn of Krag'wa at { 21.86, 69.34, 863 }, in Nazmir
@@ -1502,7 +1500,12 @@ _.NeverImplemented =
 		q(53423),	-- for clicking on Lost Spawn of Krag'wa at { 28.89, 83.16, 863 }, in Nazmir
 		q(51163),	-- ??? plays during the cutscene when you walk across the bridge north of Brennadam in Stormsong Valley	
 		q(53202),	-- triggered when turning in #50264, "Free the Farmhands"
-		
+	-- Jani
+		q(50311),	-- give Jani the Golden Ravasaur Egg in Zuldazar
+		q(50430),	-- give Jani the Feathered Viper Scale in Zuldazar
+		q(50844),	-- give Jani the Charged Ranishu Antennae in Vol'dun
+		q(50889),	-- give Jani the Polished Ringhorn Hoof in Vol'dun
+		q(50891),	-- give Jani the Sturdy Redrock Jaw in Vol'dun
 		
 	--	Drustvar
 		-- Bonus Objectives
