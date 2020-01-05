@@ -131,7 +131,10 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 42730,	-- Noggenfogger's Reasonable Request
 					}),
 					q(44252, {	-- A Sheath For Every Blade
+						["lvl"] = 110,
+						["coord"] = { 26.9, 36.7, 626 },
 						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 105986 },	-- Kelsey Steelspark
 						["g"] = {
 							i(139742),	-- Mask of the Uncrowned
 						},
@@ -428,6 +431,12 @@ _.ExpansionFeatures =
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 112679 },	-- Valeera Sanguinar
 						["isBreadcrumb"] = true,
+					}),
+					q(40994, {	-- Right Tools for the Job
+						["u"] = 40,
+						["coord"] = { 41.3, 78.1, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 					}),
 					q(42139, {	-- Rise, Champions
 						["coord"] = { 41.3, 78.1, 626 },
