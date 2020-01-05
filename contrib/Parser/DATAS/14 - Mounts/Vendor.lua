@@ -149,11 +149,11 @@ _.Mounts =
 		i(29228),	-- Dark War Talbuk
 		i(45593),	-- Darkspear Raptor
 		i(45591),	-- Darnassian Nightsaber
-		i(128526, {	-- Deathtusk Felboar [Alliance Only]
-			["races"] = ALLIANCE_ONLY,
-		}),
-		i(128527, {	-- Deathtusk Felboar [Horde Only]
+		i(128526, {	-- Deathtusk Felboar (H)
 			["races"] = HORDE_ONLY,
+		}),
+		i(128527, {	-- Deathtusk Felboar (A)
+			["races"] = ALLIANCE_ONLY,
 		}),
 		i(5665),	-- Dire Wolf
 		i(116672),	-- Domesticated Razorback
