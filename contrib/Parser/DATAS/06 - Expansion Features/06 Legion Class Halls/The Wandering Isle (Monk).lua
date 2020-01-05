@@ -226,16 +226,10 @@ _.ExpansionFeatures =
 					q(47069),	-- Delivering Lost Knowledge
 					q(45173),	-- Desperate Times
 					q(44239),	-- Echo of a Celestial
-<<<<<<< HEAD
-					q(44271),	-- Eye of Azshara
-=======
-					q(41910),	-- Freya's Spring
->>>>>>> remotes/upstream/master
 					q(46785),	-- Further Advancement
 					q(43062),	-- Further Training
 					q(46157),	-- Furthering Knowledge
 					q(42186),	-- Growing Power
-					q(41059),	-- Halls of Valor: Odyn's Cauldron
 					q(43060),	-- Highmountain Salmon
 					q(46320),	-- Hope For a Cure
 					q(40570),	-- Into The Heavens
