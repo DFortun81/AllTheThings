@@ -1011,6 +1011,13 @@ _.NeverImplemented =
 		q(42118),	-- Tracking Quest: Chapter 4 Completed — finished order hall campaign on DH
 		q(45117),	-- TRACKING — triggered when returning to the Fel Hammer while on "Defense of the Fel Hammer"
 
+	-- Monk class campaign
+		q(43129),	-- Tracking Quest: Freya's Spring 1
+		q(43130),	-- Tracking Quest: Freya's Spring 2
+		q(43131),	-- Tracking Quest: Freya's Spring 3
+		q(43132),	-- Tracking Quest: Freya's Spring 4
+		q(43133),	-- Tracking Quest: Freya's Spring 5
+
 	--	World Boss
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
 		q(44501),	-- Ana-Mouz killID
