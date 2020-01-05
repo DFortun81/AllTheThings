@@ -773,6 +773,7 @@ _.NeverImplemented =
 		q(38315),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
 		q(38401),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
 		q(38348),	-- Triggers when using "Music Roll: Silvermoon" or "Music Roll: Exodar". Appears to be a duplicate ID
+		q(39406),	-- Tracking Quest. Related to weekly naval mission in the shipyard
 		q(39723),	-- Tracking Quest. Related to rare naval missions in the shipyard
 		q(39724),	-- Tracking Quest. Related to rare naval missions in the shipyard
 		q(39725),	-- Tracking Quest. Related to rare naval missions in the shipyard
