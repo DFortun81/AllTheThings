@@ -204,13 +204,9 @@ _.ExpansionFeatures =
 					q(41907),	-- Appropriations
 					q(41854),	-- Brick By Brick
 					q(41946),	-- Building Our Troops
-					q(44275),	-- Court of Stars
-					q(44272),	-- Darkheart Thicket
-					q(44273),	-- Darkheart Thicket
 					q(47069),	-- Delivering Lost Knowledge
 					q(45173),	-- Desperate Times
 					q(44239),	-- Echo of a Celestial
-					q(44271),	-- Eye of Azshara
 					q(41910),	-- Freya's Spring
 					q(46785),	-- Further Advancement
 					q(43062),	-- Further Training
@@ -222,27 +218,17 @@ _.ExpansionFeatures =
 					q(32442),	-- Impending Danger
 					q(40570),	-- Into The Heavens
 					q(46025),	-- Investigate the Broken Shore
-					q(43553),	-- Maw of Souls
-					q(44267),	-- Maw of Souls
 					q(44238),	-- Meditations on Fate
-					q(44265),	-- Neltharion's Lair
-					q(44264),	-- Neltharion's Lair
-					q(43554),	-- Neltharion's Lair
-					q(44268),	-- Odyn's Challenge
-					q(44269),	-- Odyn's Challenge
-					q(43509),	-- Odyn's Challenge
 					q(40633),	-- Off To Adventure!
 					q(40636),	-- Prepare To Strike
 					q(40698),	-- Purity of Form
 					q(41733),	-- Rebuilding the Order
 					q(41905),	-- Report from Tian Monastery
-					q(44917),	-- Return to Karazhan: The Tower of Power
 					q(42187),	-- Rise, Champions
 					q(42210),	-- Scrolls of Knowledge
 					q(43061),	-- Silkweave Bandages
 					q(43058),	-- Spiced Rib Roast
 					q(42191),	-- Tech It Up A Notch
-					q(44263),	-- The Arcway
 					q(40516),	-- The Dawning Bit
 					q(40236),	-- The Dawning Light
 					q(41728),	-- The Defense of Tian Monastery
@@ -251,9 +237,6 @@ _.ExpansionFeatures =
 					q(41732),	-- The Hand of Keletress
 					q(41849),	-- The Iron Fist
 					q(40569),	-- The Legend of the Sands
-					q(43545),	-- The Lord of Black Rook Hold
-					q(44276),	-- The Lord of Black Rook Hold
-					q(44277),	-- The Lord of Black Rook Hold
 					q(41038),	-- The Mead Master
 					q(42765),	-- The Trial at the Temple
 					q(42762),	-- The Wanderer's Companion
@@ -263,9 +246,6 @@ _.ExpansionFeatures =
 					q(45172),	-- To Battle!
 					q(41909),	-- Tracking the Tideskorn
 					q(43973),	-- Two Paths, Two Weapons
-					q(43556),	-- Vault of the Wardens
-					q(44261),	-- Vault of the Wardens
-					q(44259),	-- Violet Hold
 					q(45179),	-- Win the Crowd
 					--]]
 					--[[ Artifact Appearance  Quests Commented Out For Now

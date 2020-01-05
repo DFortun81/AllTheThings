@@ -72,9 +72,6 @@ _.ExpansionFeatures =
 					},
 					q(40650),	-- Champion: Zen'tabra
 					q(41689),	-- Cleansing the Mother Tree
-					q(44275),	-- Court of Stars
-					q(44273),	-- Darkheart Thicket
-					q(44272),	-- Darkheart Thicket
 					q(44076),	-- Darkheart Thicket: Essence of Regrowth
 					q(43403),	-- Defending the Isles
 					q(47075),	-- Delivering Lost Knowledge
@@ -84,8 +81,6 @@ _.ExpansionFeatures =
 					q(42051),	-- Enter Nightmare
 					q(44235),	-- Essence of Fate
 					q(44236),	-- Essence of Fate
-					q(44270),	-- Eye of Azshara
-					q(44271),	-- Eye of Azshara
 					q(44077),	-- Eye of Azshara: Essence of Balance
 					q(42365),	-- Focusing the Energies
 					{
@@ -104,23 +99,14 @@ _.ExpansionFeatures =
 					q(41449),	-- Join the Dreamer
 					q(40653),	-- Making Trails
 					q(42033),	-- Malorne's Refuge
-					q(44266),	-- Maw of Souls
-					q(44267),	-- Maw of Souls
 					q(40649),	-- Meet with Mylune
 					q(41468),	-- Mistress of the Claw
 					q(44431),	-- More Weapons of Old
 					q(41422),	-- Necessary Preparations
-					q(44264),	-- Neltharion's Lair
-					q(44265),	-- Neltharion's Lair
-					q(43554),	-- Neltharion's Lair
 					q(44074),	-- Neltharion's Lair: Essence of Tenacity
-					q(44269),	-- Odyn's Challenge
-					q(44268),	-- Odyn's Challenge
-					q(43509),	-- Odyn's Challenge
 					q(42049),	-- Powering the Portal
 					q(41690),	-- Reconvene
 					q(42585),	-- Recruiting the Troops
-					q(44917),	-- Return to Karazhan: The Tower of Power
 					q(42583),	-- Rise, Champions
 					q(42032),	-- Sampling the Nightmare
 					q(42584),	-- Sister Lilith
@@ -132,15 +118,12 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 					},
 					q(46317),	-- Talon's Call
-					q(44263),	-- The Arcway
 					q(40900),	-- The Burden Borne
 					q(42055),	-- The Demi-God's Return
 					q(41918),	-- The Dreamer Returns
 					q(42432),	-- The Emerald Nightmare: The Emerald Nightmare
 					q(42430),	-- The Fangs of Ashamane
 					q(44232),	-- The Grove Provides
-					q(44277),	-- The Lord of Black Rook Hold
-					q(44276),	-- The Lord of Black Rook Hold
 					{
 						["questID"] = 46674,	-- The Preservation of Nature
 						["provider"] = { "n", 101195 },	-- Quest Giver: Rensar Greathoof <Archdruid of the Grove>
@@ -157,10 +140,6 @@ _.ExpansionFeatures =
 					q(45172),	-- To Battle!
 					q(40645),	-- To The Dreamgrove
 					q(41782),	-- To The Hills
-					q(43556),	-- Vault of the Wardens
-					q(44260),	-- Vault of the Wardens
-					q(44261),	-- Vault of the Wardens
-					q(44259),	-- Violet Hold
 					q(44058),	-- Volpin the Elusive
 					{
 						["questID"] = 40646,	-- Weapons of Legend
