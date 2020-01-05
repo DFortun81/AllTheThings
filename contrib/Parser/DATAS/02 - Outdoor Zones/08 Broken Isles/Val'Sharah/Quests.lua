@@ -62,16 +62,23 @@ _.Zones =
 				}),
 				q(38717, {	-- Black Rook Prison
 					["sourceQuests"] = {
-						38717,	-- Maiev's Trail
+						38714,	-- Maiev's Trail
 						38715,	-- The Rook's Guard
 					},
 					["coord"] = { 43.7, 50.2, 641 },
 					["provider"] = { "n", 92842 },	-- Commander Jarod Shadowsong
 				}),
 				q(38724, {	-- Brotherly Love
-					["sourceQuests"] = { 38717 },	-- Black Rook Prison
+					["sourceQuests"] = { 38717 },		-- Black Rook Prison
 					["coord"] = { 42.3, 81.7, 642 },	-- Darkpens
-					["provider"] = { "n", 92850 },	-- Commander Jarod Shadowsong
+					["provider"] = { "n", 92850 },		-- Commander Jarod Shadowsong
+					["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),	-- All classes except demon hunter
+				}),
+				q(44457, {	-- Brotherly Love (Demon Hunter)
+					["sourceQuests"] = { 38717 },		-- Black Rook Prison
+					["coord"] = { 42.3, 81.7, 642 },	-- Darkpens
+					["provider"] = { "n", 92850 },		-- Commander Jarod Shadowsong
+					["classes"] = { DEMONHUNTER },
 				}),
 				q(40122, {	-- Cenarius, Keeper of the Grove
 					["sourceQuests"] = { 39861 },	-- Tying Up Loose Ends

@@ -74,6 +74,12 @@ _.Zones =
 						i(159103),	-- Dregada's Greatsword
 					},
 				}),
+				q(47313, {	-- Discreet Discussions
+					["sourceQuests"] = { 47513 },	-- Vol'dun
+					["coord"] = { 41.1, 66.7, 1164 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 133050 },	-- Princess Talanji
+				}),
 				q(48454, {	-- Evidence of Evil
 					["sourceQuests"] = { 48452 },	-- The Red Market
 					["coord"] = { 44.3, 82.1, 1165 },
@@ -104,6 +110,12 @@ _.Zones =
 						i(169394), 	-- Richly Appointed Drape
 						title(324),	-- Trashmaster
 					},
+				}),
+				q(47315, {	-- Into the Dunes
+					["sourceQuests"] = { 47314 },	-- Rumors of Exile
+					["coord"] = { 49.9, 31.6, 1165 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 122320 },	-- Bladeguard Kaja
 				}),
 				q(52472, {	-- Make Loh Go
 					["sourceQuests"] = { 52131 },	-- We Need Each Other
@@ -176,6 +188,12 @@ _.Zones =
 					["coord"] = { 50.0, 85.2, 1165 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 135441 },	-- Zolani
+				}),
+				q(47314, {	-- Rumors of Exile
+					["sourceQuests"] = { 47313 },	-- Discreet Discussions
+					["coord"] = { 51.5, 31.8, 1165 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 122817 },	-- Bladeguard Kaja
 				}),
 				i(163621, {	-- Rusted Horde Insignia
 					["races"] = HORDE_ONLY,
@@ -322,6 +340,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 133050 },	-- Princes Talanji
 				}),
+				q(47513, {	-- Vol'dun
+					["coord"] = { 41.8, 69.4, 1164 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 135775 },	-- Scouting Map
+					["sourceQuest"] = 52131,	-- We Need Each Other
+				}),
 				q(46957, {	-- Welcome to Zuldazar
 					["provider"] = { "n", 132332 },	-- Princess Talanji
 					["coord"] = { 57.9, 62.4, 862 },
@@ -353,30 +377,7 @@ _.Zones =
 				}),
 
 			-- unsorted
-				q(47513, {	-- Vol'dun
-					["coord"] = { 41.8, 69.4, 1164 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 135775 },	-- Scouting Map
-					["sourceQuest"] = 52131,	-- We Need Each Other
-				}),
-				q(47313, {	-- Discreet Discussions
-					["sourceQuests"] = { 47513 },	-- Vol'dun
-					["coord"] = { 40.5, 66.9 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 133050 },	-- Princess Talanji
-				}),
-				q(47314, {	-- Rumors of Exile
-					["sourceQuests"] = { 47313 },	-- Discreet Discussions
-					["coord"] = { 39.9, 70.6 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 122817 },	-- Bladeguard Kaja
-				}),
-				q(47315, {	-- Into the Dunes
-					["sourceQuests"] = { 47314 },	-- Rumors of Exile
-					["coord"] = { 49.9, 31.6 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 122320 },	-- Bladeguard Kaja
-				}),
+				
 				q(54439, {	-- Crucible of Storms: Relics of Shadow
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 53763 },	-- Twist the Knife

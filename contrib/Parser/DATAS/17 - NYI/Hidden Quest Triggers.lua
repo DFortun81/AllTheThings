@@ -1255,17 +1255,17 @@ _.NeverImplemented =
 		q(56684),	-- Flag used to track if 160489 (340 engineering goggles) had been crafted. This identifies if the recipe for rank 2 can drop
 		q(54704),	-- War Campaign - triggered when turning in "Time for War"
 		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track
-		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Akunda". Makes the loa book available to read in The Great Seal
+		q(53532),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Akunda". Makes the loa book available to read in The Great Seal
 		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Bwonsamdi". Makes the loa book available to read in The Great Seal
 		q(53535),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Gonk". Makes the loa book available to read in The Great Seal
 		q(53536),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Gral". Makes the loa book available to read in The Great Seal
 		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Hir'eek". Makes the loa book available to read in The Great Seal
 		q(53538),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Jani". Makes the loa book available to read in The Great Seal
-		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Kimbul". Makes the loa book available to read in The Great Seal
+		q(53539),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Kimbul". Makes the loa book available to read in The Great Seal
 		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Krag'wa". Makes the loa book available to read in The Great Seal
 		q(53541),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Pa'ku". Makes the loa book available to read in The Great Seal
 		q(53542),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Rezan". Makes the loa book available to read in The Great Seal
-		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Sethraliss". Makes the loa book available to read in The Great Seal
+		q(53543),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Sethraliss". Makes the loa book available to read in The Great Seal
 		q(53544),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Shadra". Makes the loa book available to read in The Great Seal
 		q(53546),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Torcali". Makes the loa book available to read in The Great Seal
 		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Torga". Makes the loa book available to read in The Great Seal
@@ -1333,6 +1333,7 @@ _.NeverImplemented =
 		q(54720),	-- Zuldazar Secret Supply Chest (playing as Horde)
 		q(55391),	-- Zuldazar Secret Supply Chest (playing as Horde and Alliance)
 		q(53640),	-- Zuldazar Secret Supply Chest (as Horde) / Zuldazar, Stormsong Valley (as Alliance), Tiragarde, Nazmir, Vol'dun, Drustvar (as Alliance) (it probably triggers on both factions in all old BfA zones)
+		q(55408),	-- looting War Supply Crate in Drustvar on Alliance (not secret chest)
 		q(55412),	-- looting War Supply Crate in Vol'dun on Alliance (not secret chest)
 		q(55409),	-- looting War Supply Crate in Nazmir on Alliance (not secret chest)
 		q(55410),	-- looting War Supply Crate in Stormsong Valley on Alliance (not secret chest)
@@ -1450,31 +1451,6 @@ _.NeverImplemented =
 	
 
 	--	TREASURES
-		q(50855),	-- Nazmir repeatable random chest
-		q(49885),	-- Nazmir repeatable random chest
-		q(50895),	-- Nazmir repeatable random chest
-		q(49904),	-- Nazmir repeatable random chest
-		q(49916),	-- Nazmir repeatable random chest
-		q(50894),	-- Nazmir repeatable random chest
-		q(49913),	-- Nazmir repeatable random chest
-		q(49914),	-- Nazmir repeatable random chest
-		q(49899),	-- Nazmir repeatable random chest
-		q(49924),	-- Nazmir repeatable random chest
-		q(50922),	-- Vol'dun repeatable random chest
-		q(50920),	-- Vol'dun repeatable random chest
-		q(51673),	-- Vol'dun repeatable random chest
-		q(50926),	-- Vol'dun repeatable random chest
-		q(50928),	-- Vol'dun repeatable random chest
-		q(50916),	-- Vol'dun repeatable random chest
-		q(50914),	-- Vol'dun repeatable random chest
-		q(50918),	-- Vol'dun repeatable random chest
-		q(50923),	-- Vol'dun repeatable random chest
-		q(50924),	-- Vol'dun repeatable random chest
-		q(50921),	-- Vol'dun repeatable random chest
-		q(50917),	-- Vol'dun repeatable random chest
-		q(50919),	-- Vol'dun repeatable random chest
-		q(50915),	-- Vol'dun repeatable random chest
-		q(49142),	-- Zuldazar repeatable random chest
 		q(13541),	-- Triggered when opening a Maplewood Treasure Chest in darkshore
 		q(54872),	-- Opening a Darkshore chest
 		q(54877),	-- Opening a Darkshore chest
@@ -1496,8 +1472,6 @@ _.NeverImplemented =
 		q(51826),	-- ??? Triggers after turning in "Proudmoore's Parley" in Boralus
 		q(54991),	-- Khaz'gorian Smithing Hammer - Anvil created
 		q(50950),	-- for using the Incense prior to opening Gift of the Brokenhearted for achievement Treasures of Zuldazar
-		q(50311),	-- for giving Jani the Golden Ravasaur Egg in Zuldazar as part of the Get Hek'd achievement
-		q(50430),	-- for giving Jani the Feathered Viper Scale in Zuldazar as part of the Get Hek'd achievement
 		q(51094),	-- for clicking on object 287238 Ancient Altar in Vol'dun as part of the Treasures of Vol'dun achievement for Grayal's Last Offering
 		q(53420),	-- for clicking on Lost Spawn of Krag'wa at { 52.83, 42.85, 863 }, in Nazmir
 		q(53425),	-- for clicking on Lost Spawn of Krag'wa at { 21.86, 69.34, 863 }, in Nazmir
@@ -1511,7 +1485,12 @@ _.NeverImplemented =
 		q(53423),	-- for clicking on Lost Spawn of Krag'wa at { 28.89, 83.16, 863 }, in Nazmir
 		q(51163),	-- ??? plays during the cutscene when you walk across the bridge north of Brennadam in Stormsong Valley	
 		q(53202),	-- triggered when turning in #50264, "Free the Farmhands"
-		
+	-- Jani
+		q(50311),	-- give Jani the Golden Ravasaur Egg in Zuldazar
+		q(50430),	-- give Jani the Feathered Viper Scale in Zuldazar
+		q(50844),	-- give Jani the Charged Ranishu Antennae in Vol'dun
+		q(50889),	-- give Jani the Polished Ringhorn Hoof in Vol'dun
+		q(50891),	-- give Jani the Sturdy Redrock Jaw in Vol'dun
 		
 	--	Drustvar
 		-- Bonus Objectives
@@ -1576,11 +1555,23 @@ _.NeverImplemented =
 		q(48852, {	-- Stopping Zardax
 			["isWorldQuest"] = true,
 		}),
-
+		-- Chests
+		q(50855),	-- Nazmir repeatable random chest
+		q(49885),	-- Nazmir repeatable random chest
+		q(50895),	-- Nazmir repeatable random chest
+		q(49904),	-- Nazmir repeatable random chest
+		q(49916),	-- Nazmir repeatable random chest
+		q(50894),	-- Nazmir repeatable random chest
+		q(49913),	-- Nazmir repeatable random chest
+		q(49914),	-- Nazmir repeatable random chest
+		q(49899),	-- Nazmir repeatable random chest
+		q(49924),	-- Nazmir repeatable random chest
+		q(49925),	-- Nazmir repeatable random chest
 
 	--	Stormsong Valley
 		q(51695),	-- Horde WarCampaign - "Reclaiming What's Ours" (ID 51696) using the horn to reclaim the Foothold
 		q(55626),	-- first kill of yellow Sabertron
+		q(50541),	-- triggered after defeating Beehemoth WQ
 		-- Bonus Objectives
 		q(50779, {	-- A Clean Slate
 			["races"] = ALLIANCE_ONLY,
@@ -1642,6 +1633,34 @@ _.NeverImplemented =
 		q(50952),	-- Tiragarde Sound repeatable random chest
 		q(53630),	-- Tiragarde Sound repeatable random chest (possibly different from others, it was Forgotten Treasure Chest at 79.57 20.22 in a small cave)
 
+	-- Vol'dun
+		q(47647),	-- Monsters of Zem'lan - bonus quest
+		q(50805),	-- Skycaller Shutdown - bonus quest
+		q(50805),	-- Skycaller Shutdown - bonus quest
+		q(51648),	-- Vol'dun - select "The Nimble" as your Akunda title during "Trial of Truth"
+		q(49414),	-- Vol'dun - beat Akunda the Exalted to trigger the cinematic and phase the area
+		q(51685),	-- Vol'dun - triggers when turning in "Akunda's Blessing". Probably controls the activation of the Akunda buff idol in Dazar'alor
+		q(51684),	-- Vol'dun - triggers when turning in "Mark of the Loa". Probably controls the activation of the Kimbal buff idol in Dazar'alor
+		q(49416),	-- Vol'dun - triggers during "The Keeper's Keys" after the cinematic
+		q(47887),	-- Vol'dun - triggered when entering the Ashvane Encampment. Possibly controls the spawn of Randall Redmond?
+		q(50522),	-- Vol'dun - triggered after getting a food buff from the goldtusk inn's "All-You-Can-Eat Breakfast Buffet". Could also be related to feeding Tarkaj during "A Goldtusk Greeting"
+		-- Chests
+		q(50922),	-- Vol'dun repeatable random chest
+		q(50920),	-- Vol'dun repeatable random chest
+		q(51673),	-- Vol'dun repeatable random chest
+		q(50926),	-- Vol'dun repeatable random chest
+		q(50928),	-- Vol'dun repeatable random chest
+		q(50916),	-- Vol'dun repeatable random chest
+		q(50914),	-- Vol'dun repeatable random chest
+		q(50918),	-- Vol'dun repeatable random chest
+		q(50923),	-- Vol'dun repeatable random chest
+		q(50924),	-- Vol'dun repeatable random chest
+		q(50921),	-- Vol'dun repeatable random chest
+		q(50917),	-- Vol'dun repeatable random chest
+		q(50919),	-- Vol'dun repeatable random chest
+		q(50915),	-- Vol'dun repeatable random chest
+		q(50925),	-- Vol'dun repeatable random chest
+
 	--	Zuldazar
 		q(50931),	-- Spoke to talanji when meeting with Rastakhan for the first time
 		q(55413),	-- War Mode supply drop in Zuldazar
@@ -1664,6 +1683,7 @@ _.NeverImplemented =
 			["isWorldQuest"] = true,
 		}),
 		-- Chests
+		q(49142),	-- Zuldazar repeatable random chest
 		q(50710),	-- Zuldazar repeatable random chest
 		q(50711),	-- Zuldazar repeatable random chest
 		q(50712),	-- Zuldazar repeatable random chest
@@ -1694,6 +1714,7 @@ _.NeverImplemented =
 		q(56220),	-- Triggered when opening the second glimmering chest during "Scrying Stones"
 		q(56221),	-- Triggered when opening the third glimmering chest during "Scrying Stones"
 		q(56661),	-- Triggered when walking into the "Void Chamber" cave
+		q(56675),	-- Triggered shortly after summoning Neri from the conch
 		q(56913),	-- Triggers after completing the Glowing Arcane Trunk minigame in Broken Fin Hollow (24.8, 35.2)
 		q(55987),	-- Triggers after completing the Glowing Arcane Trunk minigame in Chitterspine Caverns (43.8, 16.5)
 		q(56343),	-- Triggers after completing the Glowing Arcane Trunk minigame in Mardivas's Hideaway (37.9, 6.5)
@@ -1705,6 +1726,10 @@ _.NeverImplemented =
 		q(56663),	-- Unknown trigger. Occured when walking into Shirakess Repository, but need to confirm potential pre-reqs
 		q(56673),	-- Triggered after going into Deepcoil Hatchery for the first time. Needs confirmation
 		q(56543),	-- Triggered when walking into Kelfin Pocket for the first time. Follower dialog goes off (horde)
+		q(56507),	-- Triggered randomly while in nazjatar
+		q(56658),	-- Triggered randomly while in Nazjatar
+		q(56670),	-- Triggered randomly while in Nazjatar
+		q(56724),	-- Triggered when killing Arcane Amalgamation in mardivas' lab. Probably used to disable something else in the room
 		q(55604),	-- Triggers after unlocking or making a purchase from Mrrl (Once per day)
 		q(56901),	-- Triggers after buying Mrrl's secret trader stock (requires cloak with special stock trait). Received 170162 - waterlogged toolbox first
 		q(56974),	-- Triggers when receiving "Mardivas's Handemade Handbag" (itemID 170489) from a Glowing Arcane Trunk

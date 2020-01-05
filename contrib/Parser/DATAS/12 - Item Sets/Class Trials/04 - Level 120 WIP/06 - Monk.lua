@@ -4,13 +4,13 @@
 _.GearSets =
 {
 	n(-5350, {	-- Class Trial Item Sets
-		n(-154, {	-- Level 110
+		n(-155, {	-- Level 120
 			["groups"] = {
 				n(-144, {	-- Mistdancer
 					["classes"] = { 10 },
 					["groups"] = {
 						{	-- Adventurer's Footlocker
-							["itemID"] = 160439,	-- Adventurer's Footlocker
+							["itemID"] = 171988,	-- Adventurer's Footlocker
 							["g"] = {
 								{	-- Mistdancer Spire
 									["itemID"] = 153835,	-- Mistdancer Spire
@@ -20,127 +20,126 @@ _.GearSets =
 								},
 							},
 						},
-						{	-- Mistdancer Sword
-							["itemID"] = 153859,	-- Mistdancer Sword
+						{	-- Brewmaster
+							["npcID"] = -9931,	-- Brewmaster
+							["g"] = {
+								{	-- Mistdancer Band of Stoicism
+									["itemID"] = 170648,	-- Mistdancer Band of Stoicism
+								},
+								{	-- Mistdancer Defender Idol
+									["itemID"] = 170652,	-- Mistdancer Defender Idol
+								},
+								{	-- Mistdancer Defender Stone
+									["itemID"] = 170650,	-- Mistdancer Defender Stone
+								},
+								{	-- Mistdancer Ring of Stoicism
+									["itemID"] = 170649,	-- Mistdancer Ring of Stoicism
+								},
+							},
 						},
-						{	-- Mistdancer Helm
-							["itemID"] = 153840,	-- Mistdancer Helm
+						{	-- Mistweaver
+							["npcID"] = -9933,	-- Mistweaver
+							["g"] = {
+								{	-- Mistdancer Hood
+									["itemID"] = 170825,	-- Mistdancer Hood
+								},
+								{	-- Mistdancer Necklace
+									["itemID"] = 170655,	-- Mistdancer Necklace
+									["u"] = 1,	
+								},
+								{	-- Mistdancer Shoulders
+									["itemID"] = 170827,	-- Mistdancer Shoulders
+								},
+								{	-- Mistdancer Cloak of Wisdom
+									["itemID"] = 170653,	-- Mistdancer Cloak of Wisdom
+								},
+								{	-- Mistdancer Jerkin
+									["itemID"] = 170830,	-- Mistdancer Jerkin
+								},
+								{	-- Mistdancer Bindings
+									["itemID"] = 170829,	-- Mistdancer Bindings
+								},
+								{	-- Mistdancer Gloves
+									["itemID"] = 170824,	-- Mistdancer Gloves
+								},
+								{	-- Mistdancer Waistband
+									["itemID"] = 170828,	-- Mistdancer Waistband
+								},
+								{	-- Mistdancer Britches
+									["itemID"] = 170826,	-- Mistdancer Britches
+								},
+								{	-- Mistdancer Boots
+									["itemID"] = 170823,	-- Mistdancer Boots
+								},
+								{	-- Mistdancer Band of Wisdom
+									["itemID"] = 170657,	-- Mistdancer Band of Wisdom
+								},
+								{	-- Mistdancer Ring of Wisdom
+									["itemID"] = 170656,	-- Mistdancer Ring of Wisdom
+								},
+								{	-- Mistdancer Stone of Wisdom
+									["itemID"] = 170658,	-- Mistdancer Stone of Wisdom
+								},
+								{	-- Mistdancer Idol of Wisdom
+									["itemID"] = 170654,	-- Mistdancer Idol of Wisdom
+								},
+							},
 						},
-						{	-- Mistdancer Hood
-							["itemID"] = 153847,	-- Mistdancer Hood
-							["u"] = 2,	-- Only available if you boosted a Mistweaver Monk.
+						{	-- Windwalker
+							["npcID"] = -9932,	-- Windwalker
+							["g"] = {
+								{	-- Mistdancer Sword
+									["itemID"] = 170660,	-- Mistdancer Sword
+								},
+							},
 						},
-						{	-- Mistdancer Amulet
-							["itemID"] = 153831,	-- Mistdancer Amulet
-							["u"] = 2,	-- Only available if you boosted a Brewmaster Monk. [Crieve's Monk "Meditarp".]
-						},
-						{	-- Mistdancer Choker
-							["itemID"] = 153861,	-- Mistdancer Choker
-						},
-						{	-- Mistdancer Necklace
-							["itemID"] = 153851,	-- Mistdancer Necklace
-							["u"] = 2,	-- Only available if you boosted a Mistweaver Monk.
-						},
-						{	-- Mistdancer Pauldrons
-							["itemID"] = 153842,	-- Mistdancer Pauldrons
-						},
-						{	-- Mistdancer Shoulders
-							["itemID"] = 153855,	-- Mistdancer Shoulders
-							["u"] = 2,	-- Only available if you boosted a Mistweaver Monk.
-						},
-						{	-- Mistdancer Cloak of Rage
-							["itemID"] = 153865,	-- Mistdancer Cloak of Rage
-						},
-						{	-- Mistdancer Cloak of Wisdom
-							["itemID"] = 153848,	-- Mistdancer Cloak of Wisdom
-							["u"] = 2,	-- Only available if you boosted a Mistweaver Monk.
-						},
-						{	-- Mistdancer Jerkin
-							["itemID"] = 153866,	-- Mistdancer Jerkin
-							["u"] = 2,	-- Only available if you boosted a Mistweaver Monk.
-						},
-						{	-- Mistdancer Vest
-							["itemID"] = 153837,	-- Mistdancer Vest
-						},
-						{	-- Mistdancer Bindings
-							["itemID"] = 153858,	-- Mistdancer Bindings
-							["u"] = 2,	-- Only available if you boosted a Mistweaver Monk.
-						},
-						{	-- Mistdancer Cuffs
-							["itemID"] = 153844,	-- Mistdancer Cuffs
-						},
-						{	-- Mistdancer Gloves
-							["itemID"] = 153846,	-- Mistdancer Gloves
-							["u"] = 2,	-- Only available if you boosted a Mistweaver Monk.
-						},
-						{	-- Mistdancer Handguards
-							["itemID"] = 153839,	-- Mistdancer Handguards
-						},
-						{	-- Mistdancer Cord
-							["itemID"] = 153843,	-- Mistdancer Cord
-						},
-						{	-- Mistdancer Waistband
-							["itemID"] = 153857,	-- Mistdancer Waistband
-							["u"] = 2,	-- Only available if you boosted a Mistweaver Monk.
-						},
-						{	-- Mistdancer Britches
-							["itemID"] = 153850,	-- Mistdancer Britches
-							["u"] = 2,	-- Only available if you boosted a Mistweaver Monk.
-						},
-						{	-- Mistdancer Legguards
-							["itemID"] = 153841,	-- Mistdancer Legguards
-						},
-						{	-- Mistdancer Boots
-							["itemID"] = 153845,	-- Mistdancer Boots
-							["u"] = 2,	-- Only available if you boosted a Mistweaver Monk.
-						},
-						{	-- Mistdancer Footpads
-							["itemID"] = 153838,	-- Mistdancer Footpads
-						},
-						{	-- Mistdancer Band of Onslaught
-							["itemID"] = 153862,	-- Mistdancer Band of Onslaught
-						},
-						{	-- Mistdancer Band of Stoicism
-							["itemID"] = 153832,	-- Mistdancer Band of Stoicism
-							["u"] = 2,	-- Only available if you boosted a Brewmaster Monk. [Crieve's Monk "Meditarp".]
-						},
-						{	-- Mistdancer Band of Wisdom
-							["itemID"] = 153853,	-- Mistdancer Band of Wisdom
-							["u"] = 2,	-- Only available if you boosted a Mistweaver Monk.
-						},
-						{	-- Mistdancer Ring of Onslaught
-							["itemID"] = 153863,	-- Mistdancer Ring of Onslaught
-						},
-						{	-- Mistdancer Ring of Stoicism
-							["itemID"] = 153833,	-- Mistdancer Ring of Stoicism
-							["u"] = 2,	-- Only available if you boosted a Brewmaster Monk. [Crieve's Monk "Meditarp".]
-						},
-						{	-- Mistdancer Ring of Wisdom
-							["itemID"] = 153852,	-- Mistdancer Ring of Wisdom
-							["u"] = 2,	-- Only available if you boosted a Mistweaver Monk.
-						},
-						{	-- Mistdancer Defender Idol
-							["itemID"] = 153836,	-- Mistdancer Defender Idol
-							["u"] = 2,	-- Only available if you boosted a Brewmaster Monk. [Crieve's Monk "Meditarp".]
-						},
-						{	-- Mistdancer Defender Stone
-							["itemID"] = 153834,	-- Mistdancer Defender Stone
-							["u"] = 2,	-- Only available if you boosted a Brewmaster Monk. [Crieve's Monk "Meditarp".]
-						},
-						{	-- Mistdancer Stone of Rage
-							["itemID"] = 153864,	-- Mistdancer Stone of Rage
-						},
-						{	-- Mistdancer Stone of Wisdom
-							["itemID"] = 153854,	-- Mistdancer Stone of Wisdom
-							["u"] = 2,	-- Only available if you boosted a Mistweaver Monk.
-						},
-						{	-- Mistdancer Idol of Rage
-							["itemID"] = 153860,	-- Mistdancer Idol of Rage
-						},
-						{	-- Mistdancer Idol of Wisdom
-							["itemID"] = 153849,	-- Mistdancer Idol of Wisdom
-							["u"] = 2,	-- Only available if you boosted a Mistweaver Monk.
-						},
+							{	-- Mistdancer Helm
+								["itemID"] = 170818,	-- Mistdancer Helm
+							},
+							{	-- Mistdancer Amulet
+								["itemID"] = 170647,	-- Mistdancer Amulet
+								["u"] = 1,	
+							},
+							{	-- Mistdancer Choker
+								["itemID"] = 170662,	-- Mistdancer Choker
+								["u"] = 1,	
+							},
+							{	-- Mistdancer Pauldrons
+								["itemID"] = 170820,	-- Mistdancer Pauldrons
+							},
+							{	-- Mistdancer Cloak of Rage
+								["itemID"] = 170666,	-- Mistdancer Cloak of Rage
+							},
+							{	-- Mistdancer Vest
+								["itemID"] = 170815,	-- Mistdancer Vest
+							},
+							{	-- Mistdancer Cuffs
+								["itemID"] = 170822,	-- Mistdancer Cuffs
+							},
+							{	-- Mistdancer Handguards
+								["itemID"] = 170817,	-- Mistdancer Handguards
+							},
+							{	-- Mistdancer Cord
+								["itemID"] = 170821,	-- Mistdancer Cord
+							},
+							{	-- Mistdancer Legguards
+								["itemID"] = 170819,	-- Mistdancer Legguards
+							},
+							{	-- Mistdancer Footpads
+								["itemID"] = 170816,	-- Mistdancer Footpads
+							},
+							{	-- Mistdancer Band of Onslaught
+								["itemID"] = 170663,	-- Mistdancer Band of Onslaught
+							},
+							{	-- Mistdancer Ring of Onslaught
+								["itemID"] = 170664,	-- Mistdancer Ring of Onslaught
+							},
+							{	-- Mistdancer Stone of Rage
+								["itemID"] = 170665,	-- Mistdancer Stone of Rage
+							},
+							{	-- Mistdancer Idol of Rage
+								["itemID"] = 170661,	-- Mistdancer Idol of Rage
+							},
 					},
 				}),
 			},

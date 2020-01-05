@@ -363,6 +363,7 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(44400, {	-- Assault on Violet Hold: Purple Pain
+					["coord"] = { 66.3, 67.9, 627 },
 					["provider"] = { "n", 113813 },	-- Lieutenant Sinclari
 					["g"] = {
 						i(141359),	-- Violet Guardian's Corona
@@ -539,7 +540,6 @@ _.Zones =
 					["coord"] = { 51.9, 20.1, 627 },
 					["lvl"] = 110,
 				}),
-			--	q(44275)	-- Court of Stars -- mission board
 				q(43486, {	-- Cracking the Codex
 					["classes"] = { 2 },
 					["provider"] = { "n", 90251 },	-- Aponi Brightmane
@@ -595,8 +595,6 @@ _.Zones =
 					["coord"] = { 54.0, 47.0, 627 },
 					["provider"] = { "n", 106610 },	-- Calydus
 				}),
-			--	q(44272)	-- Darkheart Thicket -- mission board
-			--	q(44273)	-- Darkheart Thicket -- mission board
 				q(42680, {	-- Deciphering the Letter
 					["sourceQuests"] = { 42678 },	-- Black Rook Hold: Into Black Rook Hold
 					["classes"] = { 4 },
@@ -711,8 +709,6 @@ _.Zones =
 					["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
 					["isDaily"] = true,
 				}),
-			--	q(44271)	-- Eye of Azshara -- mission board
-			--	q(44270)	-- Eye of Azshara -- mission board
 			--	q(44486)	-- Fel-Ravaged Tome -- granted by i(141360) in Vault of the Wardens
 				q(41035, {	-- Felstorm's Plea
 					["classes"] = { 8 },
@@ -756,7 +752,6 @@ _.Zones =
 				}),
 				q(41778, {	-- Firing Up the Forge
 					["provider"] = { "n", 90463 },	-- Archmage Karlain
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 42.7, 28.4, 627 },
 					["lvl"] = 110,
 				}),
@@ -1040,10 +1035,9 @@ _.Zones =
 					["sourceQuests"] = { 41778 },	-- Firing Up the Forge
 					["repeatable"] = true,
 					["provider"] = { "n", 114719 },	-- Trader Caelen
-					["coord"] = { 42.2, 27.5, 627 },
+					["coord"] = { 42.3, 27.0, 627 },
 					["lvl"] = 110,
 				}),
-			--	q(44267)	-- Maw of Souls -- mission board
 				q(46260, {	-- Meld Into the Shadows
 					["sourceQuests"] = {
 						45628,	-- This Time, Leave a Trail
@@ -1088,9 +1082,6 @@ _.Zones =
 					["classes"] = { 3 },
 					["provider"] = { "n", 100786 },	-- Snowfeather
 				}),
-			--	q(44265)	-- Neltharion's Lair -- mission board
-			--	q(44264)	-- Neltharion's Lair -- mission board
-			--	q(43554)	-- Neltharion's Lair -- mission board
 				q(42185, {	-- Never Hunt Alone -- actually started in an instanced version of Ulduar
 					["classes"] = { 3 },
 					["provider"] = { "n", 106558 },	-- Mimiron
@@ -1099,9 +1090,6 @@ _.Zones =
 					["classes"] = { 8 },
 					["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 				}),
-			--	q(44269)	-- Odyn's Challenge -- mission board
-			--	q(44268)	-- Odyn's Challenge -- mission board
-			--	q(43509)	-- Odyn's Challenge -- mission board
 				q(43250, {	-- Off to Court
 					["sourceQuests"] = { 43249 },	-- The Raven's Eye
 					["classes"] = { 4 },
@@ -1166,7 +1154,7 @@ _.Zones =
 					["sourceQuests"] = { 41778 },	-- Firing Up the Forge
 					["repeatable"] = true,
 					["provider"] = { "n", 114719 },	-- Trader Caelen
-					["coord"] = { 42.2, 27.5, 627 },
+					["coord"] = { 42.3, 27.0, 627 },
 					["lvl"] = 110,
 				}),
 				q(44100, {	-- Proper Introductions
@@ -1266,7 +1254,6 @@ _.Zones =
 					["sourceQuests"] = { 45160 },	-- Cubic Currents
 					["provider"] = { "n", 93538 },	-- Dariness the Learned
 				}),
-			--	q(44917)	-- Return to Karazhan: The Tower of Power -- mission board
 				q(41221, {	-- Return to Mardum
 					["sourceQuests"] = { 42872 },	-- Securing the Way
 					["classes"] = { 12 },	-- Demon Hunter
@@ -1328,38 +1315,47 @@ _.Zones =
 				}),
 				q(47864, {	-- Sealing Fate: Additional Marks of Honor
 					["isWeekly"] = true,
+					["coord"] = { 57.2, 67.5, 627 },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(43894, {	-- Sealing Fate: Extraneous Order Resources
 					["isWeekly"] = true,
+					["coord"] = { 57.2, 67.5, 627 },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(43895, {	-- Sealing Fate: Gold
 					["isWeekly"] = true,
+					["coord"] = { 57.2, 67.5, 627 },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(43897, {	-- Sealing Fate: Immense Fortune of Gold
 					["isWeekly"] = true,
+					["coord"] = { 57.2, 67.5, 627 },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(47851, {	-- Sealing Fate: Marks of Honor
 					["isWeekly"] = true,
+					["coord"] = { 57.2, 67.5, 627 },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(43892, {	-- Sealing Fate: Order Resources
 					["isWeekly"] = true,
+					["coord"] = { 57.2, 67.5, 627 },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(43896, {	-- Sealing Fate: Piles of Gold
 					["isWeekly"] = true,
+					["coord"] = { 57.2, 67.5, 627 },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(47865, {	-- Sealing Fate: Piles of Marks of Honor
 					["isWeekly"] = true,
+					["coord"] = { 57.2, 67.5, 627 },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(43893, {	-- Sealing Fate: Stashed Order Resources
 					["isWeekly"] = true,
+					["coord"] = { 57.2, 67.5, 627 },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(45187, {	-- Secrets in the Underbelly
@@ -1442,7 +1438,6 @@ _.Zones =
 					["classes"] = { 12 },
 					["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 				}),
-			--	q(44263),	-- The Arcway -- mission board
 				q(44172, {	-- The Arena Calls
 					["isWeekly"] = true,
 					["provider"] = { "n", 111246 },	-- Archmage Timear
@@ -1569,8 +1564,6 @@ _.Zones =
 				q(39733, {	-- The Lone Mountain -- granted by order hall scouting map
 					["isBreadcrumb"] = true,
 				}),
-			--	q(44276),	-- The Lord of Black Rook Hold -- granted by mission board
-			--	q(44277),	-- The Lord of Black Rook Hold -- granted by mission board
 				q(42479, {	-- The Mage Hunter
 					["classes"] = { 8 },
 					["providers"] = {
@@ -1664,6 +1657,11 @@ _.Zones =
 					["provider"] = { "n", 101097 },	-- Calydus
 				}),
 			--	q(39731),	-- The Tranquil Forest -- granted by scouting map
+				q(44174, {	-- The Very Best
+					["u"] = 40,
+					["isWeekly"] = true,
+					["provider"] = { "n", 111246 },	-- Archmage Timear
+				}),
 				q(38307, {	-- The Warchief Beckons
 					["sourceQuests"] = {
 						39864,	-- Stormheim
@@ -1780,14 +1778,18 @@ _.Zones =
 					},
 				}),
 				q(45727, {	-- Uniting the Isles
+					["coord"] = { 28.5, 48.3, 627 },
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 					["g"] = {
 						i(141605),	-- Flight Master Whistle
 					},
 				}),
-			--	q(43556),	-- Vault of the Wardens -- granted by mission board
-			--	q(44260),	-- Vault of the Wardens -- granted by mission board
-			--	q(44261),	-- Vault of the Wardens -- granted by mission board
+				q(41125, {	-- Unlocked Potential
+					["u"] = 40,
+					["classes"] = { 8 },	-- Mage
+					["provider"] = { "n", 102700 },	-- Meryl Felstorm
+					["sourceQuests"] = { 41114 },	-- The Champion's Return
+				}),
 				q(41863, {	-- Vengeance Will Be Ours (Altruis)
 					["sourceQuests"] = { 41807 },	-- Establishing a Connection
 					["classes"] = { 12 },	-- Demon Hunter
@@ -1810,7 +1812,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
-			--	q(44259),	-- Violet Hold -- granted by mission board
 			--	q(44058),	-- Volpin the Elusive -- starts from all order halls
 				q(38576, {	-- We Meet at Light's Hope
 					["sourceQuests"] = { 38376 },	-- The Search for the Highlord

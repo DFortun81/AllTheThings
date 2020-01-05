@@ -6,15 +6,6 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(627, { 	-- Dalaran
 			n(-34, {	-- World Quests
-				-- WQs moved from Quest file but double check Quest file to be sure
---[[
-
-					q(46134),	-- Gemcutter Needed
-					q(46135),	-- Gemcutter Needed
-					q(46137),	-- Gemcutter Needed
-					q(41656),	-- Work Order: Azsunite Loop
-					q(41650),	-- Work Order: Silkweave Hood
---]]
 				q(42442, {	-- Fight Night: Amalia
 					["isWorldQuest"] = true,
 					["filterID"] = 101,	-- Battle Pet
@@ -83,60 +74,6 @@ _.Zones =
 						crit(13, {	-- Fight Night: Tiffany Nelson
 							["achievementID"] = 10876,	-- Battle on the Broken Isles
 						}),
-					},
-				}),
-				q(46134, {	-- Gemcutter Needed
-					["isWorldQuest"] = true,
-					["requireSkill"] = 755,	-- Jewelcrafting
-					["lvl"] = 110,
-				}),
-				q(46135, {	-- Gemcutter Needed
-					["isWorldQuest"] = true,
-					["requireSkill"] = 755,	-- Jewelcrafting
-					["lvl"] = 110,
-				}),
-				q(46136, {	-- Gemcutter Needed
-					["isWorldQuest"] = true,
-					["requireSkill"] = 755,	-- Jewelcrafting
-					["lvl"] = 110,
-				}),
-				q(46137, {	-- Gemcutter Needed
-					["isWorldQuest"] = true,
-					["requireSkill"] = 755,	-- Jewelcrafting
-					["lvl"] = 110,
-				}),
-				q(46138, {	-- Gemcutter Needed
-					["isWorldQuest"] = true,
-					["requireSkill"] = 755,	-- Jewelcrafting
-					["lvl"] = 110,
-				}),
-				q(46139, {	-- Gemcutter Needed
-					["isWorldQuest"] = true,
-					["requireSkill"] = 755,	-- Jewelcrafting
-					["lvl"] = 110,
-				}),
-				q(41668, {	-- Vantus Rune Work Order: Il'gynoth, The Heart of Corruption
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
-					["requireSkill"] = 773,	-- Inscription
-					["g"] = {
-						i(137769),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption (Rank 3)
-					},
-				}),
-				q(41662, {	-- Work Order: Ancient Rejuvenation Potions
-					["isWorldQuest"] = true,
-					["requireSkill"] = 171,	-- Alchemy
-					["lvl"] = 110,
-					["g"] = {
-						i(127920),	-- Recipe: Draught of Raw Magic (Rank 2)
-					},
-				}),
-				q(41638, {	-- Work Order: Leystone Gauntlets
-					["isWorldQuest"] = true,
-					["requireSkill"] = 164,	-- Blacksmithing
-					["lvl"] = 110,
-					["g"] = {
-						i(137606),	-- Recipe: Leystone Gauntlets (Rank 3)
 					},
 				}),
 			}),

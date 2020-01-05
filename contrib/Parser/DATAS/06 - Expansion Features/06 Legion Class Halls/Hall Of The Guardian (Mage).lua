@@ -169,19 +169,13 @@ _.ExpansionFeatures =
 					q(46724),	-- Champion: The Great Akazamzarak
 					q(45846),	-- Chilled to the Core
 					q(45847),	-- Close to Home
-					q(44275),	-- Court of Stars
 					q(42477),	-- Daio the Decrepit
-					q(44272),	-- Darkheart Thicket
-					q(43551),	-- Darkheart Thicket
-					q(44273),	-- Darkheart Thicket
 					q(47070),	-- Delivering Lost Knowledge
 					q(45173),	-- Desperate Times
 					q(45354),	-- Dispersion of the Discs
 					q(46723),	-- Down the Rabbit Hole
 					q(42222),	-- Empyrean Society Report
 					q(43552),	-- Eye of Azshara
-					q(44270),	-- Eye of Azshara
-					q(44271),	-- Eye of Azshara
 					q(42707),	-- Eye of Azshara: A Magical Affliction
 					q(44208),	-- Fate and Time
 					q(41035),	-- Felstorm's Plea
@@ -195,16 +189,8 @@ _.ExpansionFeatures =
 					q(45998),	-- Investigate the Broken Shore
 					q(42451),	-- Kalec's Plan
 					q(46351),	-- Keep it Secret, Keep it Safe
-					q(44267),	-- Maw of Souls
-					q(44266),	-- Maw of Souls
 					q(42429),	-- Memories of Ebonchill
-					q(44265),	-- Neltharion's Lair
-					q(44264),	-- Neltharion's Lair
-					q(43554),	-- Neltharion's Lair
 					q(46722),	-- Nothing Up My Sleeve
-					q(43509),	-- Odyn's Challenge
-					q(44269),	-- Odyn's Challenge
-					q(44268),	-- Odyn's Challenge
 					q(44240, {	-- Orange is the New Purple
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -212,22 +198,17 @@ _.ExpansionFeatures =
 					q(44098),	-- Recruiting Apprentices
 					q(45251),	-- Redundancy
 					q(46290),	-- Return of the Archmage
-					q(44917),	-- Return to Karazhan: The Tower of Power
 					q(42663),	-- Rise, Champions
 					q(45630),	-- Servant to No One
 					q(42696),	-- Tech It Up A Notch
 					q(42703),	-- Technical Wizardry
-					q(44263),	-- The Arcway
 					q(41114),	-- The Champion's Return
 					q(42416, {	-- The Council is in Session
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(42476),	-- The Deadwind Site
 					q(41036),	-- The Dreadlord's Prize
-					q(41112),	-- The Great Akazamzarak							
-					q(44277),	-- The Lord of Black Rook Hold
-					q(43545),	-- The Lord of Black Rook Hold
-					q(44276),	-- The Lord of Black Rook Hold
+					q(41112),	-- The Great Akazamzarak		
 					q(42479),	-- The Mage Hunter
 					q(44209),	-- The Might of Dalaran
 					q(44689),	-- The Might of the Tirisgarde
@@ -241,10 +222,6 @@ _.ExpansionFeatures =
 					q(45172),	-- To Battle!
 					q(42687),	-- Troops in the Field
 					q(41125),	-- Unlocked Potential
-					q(43556),	-- Vault of the Wardens
-					q(44261),	-- Vault of the Wardens
-					q(44259),	-- Violet Hold
-					q(44258),	-- Violet Hold
 					q(44058),	-- Volpin the Elusive
 					q(42940),	-- When There's a Will, There's a Way
 					q(45179),	-- Win the Crowd										

@@ -236,17 +236,12 @@ _.ExpansionFeatures =
 					q(41755),	-- Champion: Lulubelle Fizzlebang
 					q(41754),	-- Champion: Shinfel Blightsworn
 					q(41752),	-- Champion: Zinnin Smythe
-					q(44275),	-- Court of Stars
 					q(46020),	-- Crystal Containment
 					q(42125),	-- Dark Whispers
-					q(44273),	-- Darkheart Thicket
-					q(44272),	-- Darkheart Thicket
 					q(40218),	-- Debt Repaid
 					q(47076),	-- Delivering Lost Knowledge
 					q(45173),	-- Desperate Times
 					q(42100),	-- Empowering the Soul
-					q(44270),	-- Eye of Azshara
-					q(44271),	-- Eye of Azshara
 					q(46239),	-- Fel to the Core
 					q(41785),	-- Finding Fizzlebang
 					q(46784),	-- Further Advancement
@@ -261,28 +256,16 @@ _.ExpansionFeatures =
 					q(42103),	-- Let it Feed
 					q(41793),	-- Lulubelle on Loan
 					q(41769),	-- Mad Ernie the Alchemist
-					q(44267),	-- Maw of Souls
-					q(44266),	-- Maw of Souls
-					q(44265),	-- Neltharion's Lair
-					q(43554),	-- Neltharion's Lair
-					q(44264),	-- Neltharion's Lair
-					q(44268),	-- Odyn's Challenge
-					q(43509),	-- Odyn's Challenge
-					q(44269),	-- Odyn's Challenge
 					q(42102),	-- One Who's Worthy
 					q(40821),	-- Power Overwhelming
 					q(41798),	-- Recruiting More Troops
-					q(44917),	-- Return to Karazhan: The Tower of Power
 					q(42517),	-- Ritual of Doom
 					q(43254),	-- Ritual Ruination
 					q(43895),	-- Sealing Fate: Gold
 					q(41796),	-- Selecting a Sixth
 					q(41768),	-- Soul Beacon
 					q(41795),	-- Summoning the Sisters
-					q(44263),	-- The Arcway
 					q(46242),	-- The Dreadlord's Calling
-					q(44276),	-- The Lord of Black Rook Hold
-					q(44277),	-- The Lord of Black Rook Hold
 					q(46241, {	-- The Minions of Hel'nurath
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -294,11 +277,6 @@ _.ExpansionFeatures =
 					q(45027),	-- To the Broken Shore
 					q(44227),	-- Unleashing our Wrath
 					q(44682),	-- Unparalleled Power
-					q(44260),	-- Vault of the Wardens
-					q(44261),	-- Vault of the Wardens
-					q(42660),	-- Vault of the Wardens: Matters of the Heart
-					q(44259),	-- Violet Hold
-					q(44258),	-- Violet Hold
 					q(44058),	-- Volpin the Elusive
 					q(45179),	-- Win the Crowd							
 					q(46243, {	-- The Wrathsteed of Xoroth

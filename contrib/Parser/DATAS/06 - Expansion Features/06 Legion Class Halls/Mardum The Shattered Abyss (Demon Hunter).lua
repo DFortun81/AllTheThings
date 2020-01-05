@@ -549,16 +549,11 @@ _.ExpansionFeatures =
 							follower(718),	-- Champion: Akama
 						},
 					}),
-					q(44275),	-- Court of Stars
 					q(41064),	-- Cursed Forge of the Nathrezim
-					q(44273),	-- Darkheart Thicket
-					q(44272),	-- Darkheart Thicket
 					q(47078),	-- Delivering Lost Knowledge
 					q(45173),	-- Desperate Times
 					q(41099),	-- Direct Our Wrath [Altruis
 					q(43552),	-- Eye of Azshara
-					q(44270),	-- Eye of Azshara
-					q(44271),	-- Eye of Azshara
 					q(44226),	-- Fate Favors Us
 					q(46152),	-- Furthering Knowledge
 					q(44383, {	-- In Pursuit of Power
@@ -569,14 +564,6 @@ _.ExpansionFeatures =
 					q(46333),	-- Livin' on the Ledge
 					q(40819),	-- Making Arrangements
 					q(41120),	-- Making Arrangements
-					q(44266),	-- Maw of Souls
-					q(44267),	-- Maw of Souls
-					q(43554),	-- Neltharion's Lair
-					q(44264),	-- Neltharion's Lair
-					q(44265),	-- Neltharion's Lair
-					q(44269),	-- Odyn's Challenge
-					q(44268),	-- Odyn's Challenge
-					q(44917),	-- Return to Karazhan: The Tower of Power
 					q(41033),	-- Return to Mardum
 					q(41221),	-- Return to Mardum
 					q(42666, {	-- Return to the Fel Hammer
@@ -588,21 +575,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 103025 },	-- Battlelord Gaardoun
 					}),
 					q(41070),	-- Spoils of Victory
-					q(44263),	-- The Arcway
 					q(39247),	-- The Hunt
 					q(41119),	-- The Hunt
-					q(44276),	-- The Lord of Black Rook Hold
-					q(44277),	-- The Lord of Black Rook Hold
 					q(41096),	-- Time is of the Essence
 					q(45172),	-- To Battle!
 					q(41060),	-- Unbridled Power
 					q(42131),	-- Unexpected Visitors
 					q(44224),	-- Unleashing our Wrath
-					q(44261),	-- Vault of the Wardens
-					q(44260),	-- Vault of the Wardens
-					q(43556),	-- Vault of the Wardens
-					q(44258),	-- Violet Hold
-					q(44259),	-- Violet Hold
 					q(43557, {	-- Violet Hold
 						["races"] = ALLIANCE_ONLY,
 					}),

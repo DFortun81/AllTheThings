@@ -648,10 +648,18 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["groups"] = {
 							ach(13050, {	-- Bless the Rains Down in Freehold
-								crit(1),		-- Banana Hoard
-								crit(2),		-- Sweete's Feast
-								crit(3),		-- Cart o' Cutlasses
-								crit(4),		-- Blacktooth Brew
+								crit(1, {		-- Banana Hoard
+									["coord"] = { 76.15, 84.60, 895 }
+								}),
+								crit(2, {		-- Sweete's Feast
+									["coord"] = { 73.38, 83.92, 895 }
+								}),
+								crit(3, {		-- Cart o' Cutlasses
+									["coord"] = { 75.05, 82.94, 895 }
+								}),
+								crit(4, {		-- Blacktooth Brew
+									["coord"] = { 76.69, 81.80, 895 }
+								}),
 							}),
 						},
 					}),
@@ -661,10 +669,18 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["groups"] = {
 							ach(13050, {	-- Bless the Rains Down in Freehold
-								crit(1),		-- Banana Hoard
-								crit(2),		-- Sweete's Feast
-								crit(3),		-- Cart o' Cutlasses
-								crit(4),		-- Blacktooth Brew
+								crit(1, {		-- Banana Hoard
+									["coord"] = { 76.15, 84.60, 895 }
+								}),
+								crit(2, {		-- Sweete's Feast
+									["coord"] = { 73.38, 83.92, 895 }
+								}),
+								crit(3, {		-- Cart o' Cutlasses
+									["coord"] = { 75.05, 82.94, 895 }
+								}),
+								crit(4, {		-- Blacktooth Brew
+									["coord"] = { 76.69, 81.80, 895 }
+								}),
 							}),
 						},
 					}),
@@ -808,8 +824,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 				}),
-				{
-					["itemID"] = 165867,	-- Kul Tiran Weapons Cache
+				i(165867, {	-- Kul Tiran Weapons Cache
 					["sym"] = {
 						{"select", "mapID", 895},	-- Tiragarde Sound
 						{"pop"},	-- Discard the Map Header and acquire the children.
@@ -819,9 +834,8 @@ _.Zones =
 						{"invtype", "INVTYPE_2HWEAPON", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_HOLDABLE", "INVTYPE_RANGED", "INVTYPE_RANGEDRIGHT", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND" },	-- Only include a couple of inventory types.
 						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 					},
-				},
-				{
-					["itemID"] = 165869,	-- Proudmoore Admiralty Equipment Cache
+				}),
+				i(165869, {	-- Proudmoore Admiralty Equipment Cache
 					["sym"] = {
 						-- Include the two extras.
 						{"select", "itemID", 158159},	-- Boralus Sailor's Cloak
@@ -840,7 +854,7 @@ _.Zones =
 						{"merge"},	-- Merge the finalized items back into the processing queue.
 						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 					},
-				},
+				}),
 				i(158092),	-- Colscale Cudgel
 				i(159819),	-- Coldscale Lantern
 				i(158098),	-- Coralshell Halberd

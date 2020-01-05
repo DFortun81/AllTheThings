@@ -14,6 +14,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
+				q(52238, {	-- The Underrot: Mysterious Spores
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 			}),
 			d(1, {	-- Normal
 				e(2157, {	-- Elder Leaxa

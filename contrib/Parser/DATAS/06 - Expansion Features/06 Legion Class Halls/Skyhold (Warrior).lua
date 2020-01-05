@@ -114,31 +114,19 @@ _.ExpansionFeatures =
 					q(42614),	-- Champion: Svergan Stormcloak
 					q(42618),	-- Champion: Thorim
 					q(42598),	-- Champions of Skyhold
-					q(44275),	-- Court of Stars
-					q(44272),	-- Darkheart Thicket
-					q(44273),	-- Darkheart Thicket
-					q(43551),	-- Darkheart Thicket
 					q(47072),	-- Delivering Lost Knowledge
 					q(42918),	-- Demonic Runes
 					q(45173),	-- Desperate Times
 					q(42611),	-- Einar the Runecaster
-					q(44270),	-- Eye of Azshara
-					q(44271),	-- Eye of Azshara
 					q(46778),	-- Further Advancement
 					q(46155),	-- Furthering Knowledge
 					q(45987),	-- Investigate the Broken Shore
 					q(42204),	-- Jorhuttam
 					q(39191),	-- Legacy of the Icebreaker
-					
-					q(44267),	-- Maw of Souls
 					q(43586),	-- Maw of Souls: Message to Helya
 					q(43604),	-- Maw of Souls: Ymiron's Broken Blade
 					q(43949),	-- More Weapons of Legend
-					q(44264),	-- Neltharion's Lair
-					q(44265),	-- Neltharion's Lair
 					q(39654),	-- Odyn and the Valarjar
-					q(44268),	-- Odyn's Challenge
-					q(44269),	-- Odyn's Challenge
 					q(42597),	-- Odyn's Summons
 					q(42107),	-- On the Trail of the Great Worm
 					q(44417),	-- One More Legend
@@ -148,7 +136,6 @@ _.ExpansionFeatures =
 					q(44849),	-- Recruitment Drive
 					q(44889),	-- Resource Management
 					q(46267),	-- Return of the Battlelord
-					q(44917),	-- Return to Karazhan: The Tower of Power
 					q(42815, {	-- Return to the Broken Shore
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -157,7 +144,6 @@ _.ExpansionFeatures =
 					}),
 					q(42651),	-- Svergan's Promise
 					q(46173),	-- Tactical Planning
-					q(44263),	-- The Arcway
 					q(43750),	-- The Call of Battle
 					q(39214),	-- The Eye of Odyn
 					q(42974),	-- The Fate of Hodir
@@ -165,9 +151,6 @@ _.ExpansionFeatures =
 					q(39530),	-- The Forgening
 					q(42193),	-- The Gjallarhorn
 					q(40043),	-- The Hunter of Heroes
-					q(43545),	-- The Lord of Black Rook Hold
-					q(44276),	-- The Lord of Black Rook Hold
-					q(44277),	-- The Lord of Black Rook Hold
 					q(44222),	-- The Might of the Val'kyr
 					q(41105),	-- The Sword of Kings
 					q(46207),	-- The Trial of Rage
@@ -176,10 +159,6 @@ _.ExpansionFeatures =
 					q(42110),	-- To the Summit!
 					q(42610),	-- Troops in the Field
 					q(43090),	-- Ulduar's Oath
-					q(44261),	-- Vault of the Wardens
-					q(44260),	-- Vault of the Wardens
-					q(44258),	-- Violet Hold
-					q(44259),	-- Violet Hold
 					q(44058),	-- Volpin the Elusive
 					q(40579),	-- Weapons of Legend
 					q(44667),	-- Will of the Valarjar

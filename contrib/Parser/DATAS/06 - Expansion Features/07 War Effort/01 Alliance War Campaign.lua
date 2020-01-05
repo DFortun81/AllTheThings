@@ -487,14 +487,26 @@ _.ExpansionFeatures =
 						-- I did this foothold third and received a Glowing Azerite Crystal (250 Azerite) as my reward.
 					}),
 				--	ALL 3 FOOTHOLDS END Here
-					q(51918, {	-- Uniting Kul Tiras
-						["altQuests"] = { 52450 },	-- Uniting Kul Tiras (version that alts unlock at 120)
+					q(51918, {	-- Uniting Kul Tiras - completed once per account
+						["altQuests"] = { 52450 },	-- Uniting Kul Tiras
 						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 						["lvl"] = 120,
 						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 52654 },	-- The War Campaign
 						["g"] = {
+							spell(273746),	-- World Quests
+							i(141605),	-- Flight Master Whistle
+						},
+					}),
+					q(52450, {	-- Uniting Kul Tiras - version that alts unlock at 120
+						["provider"] = { "n", 135612 },	-- Halford Wyrmbane
+						["lvl"] = 120,
+						["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = { 52654 },	-- The War Campaign
+						["g"] = {
+							spell(273746),	-- World Quests
 							i(141605),	-- Flight Master Whistle
 						},
 					}),
