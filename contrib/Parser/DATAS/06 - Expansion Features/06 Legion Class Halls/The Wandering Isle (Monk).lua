@@ -113,6 +113,18 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 117305 },	-- Brewmaster Almai
 						["sourceQuests"] = { 45459 },	-- Storming the Legion
 					}),
+					q(41910, {	-- Freya's Spring
+						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
+						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
+					}),
+					q(41040, {	-- Halls of Valor: The Brewmaster
+						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
+						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
+					}),
+					q(41059, {	-- Halls of Valor: Odyn's Cauldron
+						["provider"] = { "n", 103049 },	-- Melba
+						["sourceQuests"] = { 41040 },	-- Halls of Valor: The Brewmaster
+					}),
 					q(46320, {	-- Hope For a Cure
 						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["sourceQuests"] = {
@@ -211,7 +223,6 @@ _.ExpansionFeatures =
 					q(45173),	-- Desperate Times
 					q(44239),	-- Echo of a Celestial
 					q(44271),	-- Eye of Azshara
-					q(41910),	-- Freya's Spring
 					q(46785),	-- Further Advancement
 					q(43062),	-- Further Training
 					q(46157),	-- Furthering Knowledge
