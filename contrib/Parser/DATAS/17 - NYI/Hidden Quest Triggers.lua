@@ -773,6 +773,7 @@ _.NeverImplemented =
 		q(38315),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
 		q(38401),	-- DEPRECATED - triggered when turning in "Bringing the Bass" on alliance
 		q(38348),	-- Triggers when using "Music Roll: Silvermoon" or "Music Roll: Exodar". Appears to be a duplicate ID
+		q(39406),	-- Tracking Quest. Related to weekly naval mission in the shipyard
 		q(39723),	-- Tracking Quest. Related to rare naval missions in the shipyard
 		q(39724),	-- Tracking Quest. Related to rare naval missions in the shipyard
 		q(39725),	-- Tracking Quest. Related to rare naval missions in the shipyard
@@ -1010,6 +1011,13 @@ _.NeverImplemented =
 		q(42118),	-- Tracking Quest: Chapter 4 Completed — finished order hall campaign on DH
 		q(45117),	-- TRACKING — triggered when returning to the Fel Hammer while on "Defense of the Fel Hammer"
 
+	-- Monk class campaign
+		q(43129),	-- Tracking Quest: Freya's Spring 1
+		q(43130),	-- Tracking Quest: Freya's Spring 2
+		q(43131),	-- Tracking Quest: Freya's Spring 3
+		q(43132),	-- Tracking Quest: Freya's Spring 4
+		q(43133),	-- Tracking Quest: Freya's Spring 5
+
 	--	World Boss
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
 		q(44501),	-- Ana-Mouz killID
@@ -1128,6 +1136,7 @@ _.NeverImplemented =
 	--	Rares
 		q(45478),	-- Achronos — WQ rare in suramar, no special drops
 		q(39533),	-- Durguth — WQ rare in suramar, attached WQ to rare so his special drop shows in /attwq
+		q(45512),	-- Mawat'aki — WQ rare in Highmountain
 		
 	--	Treasures
 		q(40692),	-- 7.0 Suramar - Treasure 000 - The Drift - L (DLA) — suramar treasure in cliffside at 58.6, 33.8

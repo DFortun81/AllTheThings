@@ -660,9 +660,14 @@ _.Zones =
 						i(130127),	-- Syndrelle's Favorite Ring
 					},
 				}),
-		--[[	q(44825, {	-- Wisp in the Willows REMOVED?
-					i(130127),	-- Syndrelle's Favorite Ring
-				}),		]]--
+				q(44825, {	-- Wisp in the Willows
+					["sourceQuests"] = { 38384 },	-- Nature's Call
+					["coord"] = { 54.3, 68.3, 641 },
+					["provider"] = { "n", 95202 },	-- Syndrelle
+					["groups"] = {
+						i(130127),	-- Syndrelle's Favorite Ring
+					},
+				}),
 				q(41707, {	-- Wormtalon Wreckage
 					["sourceQuests"] = { 41054 },	-- Love Lost
 					["coord"] = { 69.5, 49.4, 641 },
