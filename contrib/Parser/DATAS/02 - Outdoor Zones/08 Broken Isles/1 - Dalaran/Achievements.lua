@@ -232,6 +232,96 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(11139, {	-- Field Medic!
+					["u"] = 2,
+					["g"] = {
+						title(340, {	-- Field Medic!
+							["u"] = 39,	-- Legacy Title, removed in 8.0.1
+							["g"] = {
+								crit(1,  {	-- Bloody Letter
+									["itemID"] = 139534,		-- Bloody Letter
+									--["questID"] = 42350,		-- Bloody Letter (Quest)
+									["description"] = "Northwest Suramar."
+								}),
+								crit(2,  {	-- Bloody Note
+									["itemID"] = 139522,		-- Bloody Note (Item)
+									--["questID"] = 42255,		-- Bloody Note (Quest)
+									["description"] = "Pirates in southern-east Azsuna."
+								}),
+								crit(3,  {	-- Bloody Plea
+									["itemID"] = 139527,		-- Bloody Plea
+									--["questID"] = 42308,		-- Bloody Plea (Quest)
+									["description"] = "Furbolgs in southern Val'sharah"
+								}),
+								crit(4,  {	-- Bloody Prayer
+									["itemID"] = 139535,		-- Bloody Prayer
+									--["questID"] = 42351,		-- Bloody Prayer (Quest)
+									["description"] = "Southwest Suramar City."
+								}),
+								crit(5,  {	-- Bloody Request
+									["itemID"] = 139528,		-- Bloody Request
+									--["questID"] = 42309,		-- Bloody Request (Quest)
+									["description"] = "Grizzleweald (68, 73) in Val'sharah"
+								}),
+								crit(6,  {	-- Crumpled Letter
+									["itemID"] = 139524,		-- Crumpled Letter
+									--["questID"] = 42333,		-- Crumpled Letter (Quest)
+									["description"] = "Western Highmountain next to Skyhorn.",
+								}),
+								crit(7,  {	-- Crumpled Note
+									["itemID"] = 139525,		-- Crumpled Note
+									--["questID"] = 42334,		-- Crumpled Note (Quest)
+									["description"] = "Northern Highmountain."
+								}),
+								crit(8,  {	-- Crumpled Request
+									["itemID"] = 139531,		-- Crumpled Request
+									--["questID"] = 42058,		-- Crumpled Request (Quest)
+									["description"] = "Vampirates. (Stormheim)"
+								}),
+								crit(9,  {	-- Fevered Letter
+									["itemID"] = 139523,		-- Fevered Letter
+									--["questID"] = 42323,		-- Fevered Letter (Quest)
+									["description"] = "Southern Highmountain."
+								}),
+								crit(10, {	-- Fevered Note
+									["itemID"] = 139526,		-- Fevered Note
+									--["questID"] = 42303,		-- Fevered Note (Quest)
+									["description"] = "Southern Val'sharah"
+								}),
+								crit(11, {	-- Fevered Plea
+									["itemID"] = 139520,		-- Fevered Plea (Item)
+									--["questID"] = 42250,		-- Fevered Plea (Quest)
+									["description"] = "Murlocs at the southern tip in Azsuna."
+								}),
+								crit(12, {	-- Fevered Prayer
+									["itemID"] = 139532,		-- Fevered Prayer
+									--["questID"] = 42345,		-- Fevered Prayer (Quest)
+									["description"] = "Northwest Suramar."
+								}),
+								crit(13, {	-- Fevered Request
+									["itemID"] = 139529,		-- Fevered Request
+									--["questID"] = 41985,		-- Fevered Request (Quest)
+									["description"] = "Murlocs at Morheim (eastern Stormheim)."
+								}),
+								crit(14, {	-- Singed Letter
+									["itemID"] = 139530,		-- Singed Letter
+									--["questID"] = 42215,		-- Singed Letter (Quest)
+									["description"] = "Southern Stormheim."
+								}),
+								crit(15, {	-- Singed Note
+									["itemID"] = 139521,		-- Singed Note (Item)
+									--["questID"] = 42245,		-- Singed Note (Quest)
+									["description"] = "Murlocs on the left coast of the lake surrounding Nar'thalos Academy."
+								}),
+								crit(16, {	-- Singed Plea
+									["itemID"] = 139533,		-- Singed Plea
+									--["questID"] = 42340,		-- Singed Plea (Quest)
+									["description"] = "Fal'dorei Tunnels."
+								}),
+							},
+						}),
+					},
+				}),
 			}),
 		}),
 	}),
