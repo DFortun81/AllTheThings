@@ -122,69 +122,92 @@ _.Zones =
 						["sourceQuests"] = { 39335 },	-- Neltharion's Lair: Potent Powder
 						["provider"] = { "n", 92458 },	-- Deucus Valdera
 					}),
+					n(-34, {	-- World Quests
+						q(41662, {	-- Work Order: Ancient Rejuvenation Potions
+							["isWorldQuest"] = true,
+							["requireSkill"] = 171,	-- Alchemy
+							["lvl"] = 110,
+							["g"] = {
+								i(127920),	-- Recipe: Draught of Raw Magic (Rank 2)
+							},
+						}),
+					}),
 				}),
 				prof(794, {	-- Archaeology
 					q(41189, {	-- A New Lead
 						["isWeekly"] = true,
+						["coord"] = { 40.4, 24.0, 627 },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41183, {	-- Academic Exploration
 						["isWeekly"] = true,
+						["coord"] = { 40.4, 24.0, 627 },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(40857, {	-- Bits and Pieces
 						["isWeekly"] = true,
+						["coord"] = { 40.4, 24.0, 627 },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41167, {	-- Fel Fragments
 						["isWeekly"] = true,
+						["coord"] = { 40.4, 24.0, 627 },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41158, {	-- Fragments of the Fjords
 						["isWeekly"] = true,
+						["coord"] = { 40.4, 24.0, 627 },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41177, {	-- Goblin Archaeology
 						["isWeekly"] = true,
+						["coord"] = { 40.4, 24.0, 627 },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41186, {	-- History of Highmountain
 						["isWeekly"] = true,
+						["coord"] = { 40.4, 24.0, 627 },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41164, {	-- One Step Closer
 						["isWeekly"] = true,
+						["coord"] = { 40.4, 24.0, 627 },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41161, {	-- Out of the Frying Pan
 						["isWeekly"] = true,
+						["coord"] = { 40.4, 24.0, 627 },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41171, {	-- The Reliquary Calls
 						["isWeekly"] = true,
+						["coord"] = { 40.4, 24.0, 627 },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41192, {	-- The Right Path
 						["isWeekly"] = true,
+						["coord"] = { 40.4, 24.0, 627 },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41180, {	-- Unspeakable Power
 						["isWeekly"] = true,
+						["coord"] = { 40.4, 24.0, 627 },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 					q(41174, {	-- Worth Its Weight
 						["isWeekly"] = true,
+						["coord"] = { 40.4, 24.0, 627 },
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 				}),
 				prof(164, {	-- Blacksmithing
-					q(38499,  {	-- Strange New Ores
+					q(38499, {	-- Strange New Ores
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 						["g"] = {
 							recipe(264446),	-- Legion Blacksmithing
 						},
 					}),
-					q(39681,  {	-- The Properties of Leystone
+					q(39681, {	-- The Properties of Leystone
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 						["sourceQuest"] = 38499,	-- Strange New Ores
 						["g"] = {
@@ -208,11 +231,11 @@ _.Zones =
 							i(151709),	-- Recipe: Felslate Anchor
 						},
 					}),
-					q(38502,  {	-- The Methods of the Nightfallen
+					q(38502, {	-- The Methods of the Nightfallen
 						["sourceQuest"] = 39681,	-- The Properties of Leystone
 						["provider"] = { "n", 97261 },	-- Alard Schmied
 					}),
-					q(38501,  {	-- Hatecoil Hammerwork
+					q(38501, {	-- Hatecoil Hammerwork
 						["sourceQuest"] = 39681,	-- The Properties of Leystone
 						["provider"] = { "n", 97261 },	-- Alard Schmied
 						["g"] = {
@@ -220,26 +243,26 @@ _.Zones =
 							i(123901),	-- Recipe: Leystone Pauldrons (Rank 1)
 						},
 					}),
-					q(38505,  {	-- Engineers: Not COMPLETELY Useless
+					q(38505, {	-- Engineers: Not COMPLETELY Useless
 						["sourceQuests"] = {
 							38501,	-- Hatecoil Hammerwork
 							38502,	-- The Methods of the Nightfallen
 						},
 						["provider"] = { "n", 97261 },	-- Alard Schmied
 					}),
-					q(38506,  {	-- Chicken Scratch
+					q(38506, {	-- Chicken Scratch
 						["sourceQuest"] = 38505,	-- Engineers: Not COMPLETELY Useless
 						["provider"] = { "n", 92194 },	-- Timofey Oshenko
 					}),
-					q(38507,  {	-- Secrets of Leysmithing
+					q(38507, {	-- Secrets of Leysmithing
 						["sourceQuest"] = 38506,	-- Chicken Scratch
 						["provider"] = { "n", 92195 },	-- Professor Pallin
 					}),
-					q(38515,  {	-- Nature Provides
+					q(38515, {	-- Nature Provides
 						["sourceQuest"] = 38507,	-- Secrets of Leysmithing
 						["provider"] = { "n", 97261 },	-- Alard Schmied
 					}),
-					q(38500,  {	-- Leysmithing Mastery
+					q(38500, {	-- Leysmithing Mastery
 						["sourceQuest"] = 38515,	-- Nature Provides
 						["provider"] = { "n", 97261 },	-- Alard Schmied
 						["g"] = {
@@ -249,49 +272,59 @@ _.Zones =
 							i(123903),	-- Recipe: Leystone Helm (Rank 1)
 						},
 					}),
-					q(38563,  {	-- Flower-Pickers and Potion-Quaffers
+					q(38563, {	-- Flower-Pickers and Potion-Quaffers
 						["sourceQuest"] = 38500,	-- Leysmithing Mastery
 						["provider"] = { "n", 97261 },	-- Alard Schmied
 					}),
-					q(38513,  {	-- The Highmountain Smiths
+					q(38513, {	-- The Highmountain Smiths
 						["isBreadcrumb"] = true,
 						["sourceQuest"] = 38563,	-- Flower-Pickers and Potion-Quaffers
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 					}),
-					q(38522,  {	-- Not Just Weapons and Armor
+					q(38522, {	-- Not Just Weapons and Armor
 						["sourceQuest"] = 38518,	-- From One Master to Another
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 						["g"] = {
 							i(123957),	-- Recipe: Leystone Hoofplates
 						},
 					}),
-					q(38523,  {	-- Leystone Hoofplates
+					q(38523, {	-- Leystone Hoofplates
 						["sourceQuest"] = 38522,	-- Not Just Weapons and Armor
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 						["g"] = {
 							i(123957),	-- Recipe: Leystone Hoofplates
 						},
 					}),
-					q(39702,  {	-- Legend of Black Rook Hold
+					q(39702, {	-- Legend of Black Rook Hold
 						["isBreadcrumb"] = true,
 						["sourceQuest"] = 38523,	-- Leystone Hoofplates
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 					}),
-					q(38564,  {	-- A Sweet Bargain
+					q(38564, {	-- A Sweet Bargain
 						["sourceQuest"] = 39729,	-- The Knowledge of Black Rock
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 					}),
-					q(44449,  {	-- Advanced Quenching
+					q(44449, {	-- Advanced Quenching
 						["sourceQuest"] = 38564,	-- A Sweet Bargain
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 						["g"] = {
 							i(123935),	-- Recipe: Leystone Breastplate (Rank 2)
 						},
 					}),
-					q(38524,  {	-- Felsmith Nal'ryssa
+					q(38524, {	-- Felsmith Nal'ryssa
 						["isBreadcrumb"] = true,
 						["sourceQuest"] = 44449,	-- Advanced Quenching
 						["provider"] = { "n", 92183 },	-- Alard Schmied
+					}),
+					n(-34, {	-- World Quests
+						q(41638, {	-- Work Order: Leystone Gauntlets
+							["isWorldQuest"] = true,
+							["requireSkill"] = 164,	-- Blacksmithing
+							["lvl"] = 110,
+							["g"] = {
+								i(137606),	-- Recipe: Leystone Gauntlets (Rank 3)
+							},
+						}),
 					}),
 				}),
 				prof(185, {	-- Cooking
@@ -825,14 +858,14 @@ _.Zones =
 					q(39961, {	-- An Embarrassing Revelation
 						["provider"] = { "o", 244651 },	-- Steamy Romance Novel
 					}),
-					q(39950,  {	-- An Odd Trinket
+					q(39950, {	-- An Odd Trinket
 						["sourceQuests"] = { 39949 },	-- Once a Scribe Like You
 						["provider"] = { "n", 97359 },	-- Raethan
 						["g"] = {
 							recipe(192855),	-- Prophecy Tarot (Rank 2)
 						},
 					}),
-					q(39328,  {	-- Ancient Knowledge
+					q(39328, {	-- Ancient Knowledge
 						["sourceQuests"] = { 39327 },	-- There's a Scribe for That
 						["provider"] = { "n", 92458 },	-- Deucus Valdera
 					}),
@@ -843,14 +876,14 @@ _.Zones =
 							recipe(209659),	-- Mass Mill Dreamleaf
 						},
 					}),
-					q(39957,  {	-- Demon Ink
+					q(39957, {	-- Demon Ink
 						["sourceQuests"] = { 39953 },	-- Halls of Valor: Vision of Valor
 						["provider"] = { "n", 92195 },	-- Professor Pallin
 						["g"] = {
 							recipe(191659),	-- Darkmoon Card of the Legion (Rank 1)
 						},
 					}),
-					q(39932,  {	-- Fish Ink
+					q(39932, {	-- Fish Ink
 						["provider"] = { "n", 92195 },	-- Professor Pallin
 					}),
 					q(40065, {	-- Fjarnsk
@@ -860,27 +893,27 @@ _.Zones =
 							recipe(209661),	-- Mass Mill Fjarnskaggl
 						},
 					}),
-					q(39953,  {	-- Halls of Valor: Vision of Valor
+					q(39953, {	-- Halls of Valor: Vision of Valor
 						["provider"] = { "n", 92195 },	-- Professor Pallin
 					}),
-					q(39954,  {	-- Mass Milling Techniques
+					q(39954, {	-- Mass Milling Techniques
 						["provider"] = { "n", 92195 },	-- Professor Pallin
 						["g"] = {
 							recipe(210116),	-- Mass Mill Yseralline Seeds
 						},
 					}),
-					q(39944,  {	-- Mysterious Messages
+					q(39944, {	-- Mysterious Messages
 						["provider"] = { "n", 92195 },	-- Professor Pallin
 					}),
-					q(39949,  {	-- Once a Scribe Like You
+					q(39949, {	-- Once a Scribe Like You
 						["sourceQuests"] = { 39948 },	-- The Ink Flows
 						["provider"] = { "n", 97359 },	-- Raethan
 					}),
-					q(40056,  {	-- Our New Allies
+					q(40056, {	-- Our New Allies
 						["classes"] = { 12 },
 						["provider"] = { "n", 92195 },	-- Professor Pallin
 					}),
-					q(39934,  {	-- Our New Allies
+					q(39934, {	-- Our New Allies
 						["provider"] = { "n", 92195 },	-- Professor Pallin
 					}),
 					q(39951, {	-- Roseate Essence
@@ -897,13 +930,13 @@ _.Zones =
 							recipe(209664),	-- Mass Mill Felwort
 						},
 					}),
-					q(39847,  {	-- Sign This
+					q(39847, {	-- Sign This
 						["provider"] = { "n", 92195 },	-- Professor Pallin
 						["g"] = {
 							recipe(264506),	-- Legion Inscription
 						},
 					}),
-					q(39931,  {	-- Smashing Herbs
+					q(39931, {	-- Smashing Herbs
 						["sourceQuests"] = { 39847 },	-- Sign This
 						["provider"] = { "n", 92195 },	-- Professor Pallin
 					--[[ None of the recipe IDs appear to exist to anymore despite the quest still being active
@@ -926,14 +959,14 @@ _.Zones =
 						["provider"] = { "n", 97362 },	-- Dazzik "Proudmoore"
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(39933,  {	-- The Card Shark
+					q(39933, {	-- The Card Shark
 						["sourceQuests"] = { 39932 },	-- Fish Ink
 						["provider"] = { "n", 92195 },	-- Professor Pallin
 						["g"] = {
 							recipe(192854),	-- Prophecy Tarot (Rank 1)
 						},
 					}),
-					q(39948,  {	-- The Ink Flows
+					q(39948, {	-- The Ink Flows
 						["provider"] = { "n", 92195 },	-- Professor Pallin
 					}),
 					q(39959, {	-- The Plot Thickens
@@ -947,7 +980,7 @@ _.Zones =
 						["provider"] = { "n", 92195 },	-- Professor Pallin
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(43929,  {	-- Vantus Mastery
+					q(43929, {	-- Vantus Mastery
 						["provider"] = { "n", 90417 },	-- Archmage Khadgar
 						["g"] = {
 							i(137783),	-- Vantus Rune Technique: Gul'dan (Rank 3)
@@ -959,6 +992,16 @@ _.Zones =
 						["g"] = {
 							recipe(209660),	-- Mass Mill Foxflower
 						},
+					}),
+					n(-34, {	-- World Quests
+						q(41668, {	-- Vantus Rune Work Order: Il'gynoth, The Heart of Corruption
+							["lvl"] = 110,
+							["isWorldQuest"] = true,
+							["requireSkill"] = 773,	-- Inscription
+							["g"] = {
+								i(137769),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption (Rank 3)
+							},
+						}),
 					}),
 				}),
 				prof(755, {	-- Jewelcrafting
@@ -1072,12 +1115,44 @@ _.Zones =
 							recipe(195850),	-- Versatile Skystone
 						},
 					}),
-					q(41656,  {	-- Work Order: Azsunite Loop
-						["lvl"] = 110,
-						["isWorldQuest"] = true,
-						["g"] = {
-							i(137840),	-- Design: Azsunite Loop (Rank 3)
-						},
+					n(-34, {	-- World Quests
+						q(46134, {	-- Gemcutter Needed
+							["isWorldQuest"] = true,
+							["requireSkill"] = 755,	-- Jewelcrafting
+							["lvl"] = 110,
+						}),
+						q(46135, {	-- Gemcutter Needed
+							["isWorldQuest"] = true,
+							["requireSkill"] = 755,	-- Jewelcrafting
+							["lvl"] = 110,
+						}),
+						q(46136, {	-- Gemcutter Needed
+							["isWorldQuest"] = true,
+							["requireSkill"] = 755,	-- Jewelcrafting
+							["lvl"] = 110,
+						}),
+						q(46137, {	-- Gemcutter Needed
+							["isWorldQuest"] = true,
+							["requireSkill"] = 755,	-- Jewelcrafting
+							["lvl"] = 110,
+						}),
+						q(46138, {	-- Gemcutter Needed
+							["isWorldQuest"] = true,
+							["requireSkill"] = 755,	-- Jewelcrafting
+							["lvl"] = 110,
+						}),
+						q(46139, {	-- Gemcutter Needed
+							["isWorldQuest"] = true,
+							["requireSkill"] = 755,	-- Jewelcrafting
+							["lvl"] = 110,
+						}),
+						q(41656,  {	-- Work Order: Azsunite Loop
+							["lvl"] = 110,
+							["isWorldQuest"] = true,
+							["g"] = {
+								i(137840),	-- Design: Azsunite Loop (Rank 3)
+							},
+						}),
 					}),
 				}),
 				prof(165, {	-- Leatherworking
@@ -1335,39 +1410,39 @@ _.Zones =
 					}),
 				}),
 				prof(197, {	-- Tailoring
-					q(38951,  {	-- A Needle Need
+					q(38951, {	-- A Needle Need
 						["provider"] = { "n", 93967 },	-- Lyndras
 					}),
-					q(38953,  {	-- Advanced Needlework
+					q(38953, {	-- Advanced Needlework
 						["sourceQuests"] = { 38952 },	-- Meticulous Precision
 						["provider"] = { "n", 93967 },	-- Lyndras
 					}),
-					q(38965,  {	-- Assault on Violet Hold: Into the Hold
+					q(38965, {	-- Assault on Violet Hold: Into the Hold
 						["sourceQuests"] = { 39667 },	-- Where's Lyndras: Leyflame Larceny
 						["provider"] = { "n", 96444 },	-- Violet Hold Guard
 					}),
-					q(38946,  {	-- Consult the Locals
+					q(38946, {	-- Consult the Locals
 						["sourceQuests"] = { 38945 },	-- This Should Be Simple... Right?
 						["provider"] = { "n", 93542 },	-- Tanithria
 					}),
-					q(38961,  {	-- Eye of Azshara: The Depraved Nightfallen
+					q(38961, {	-- Eye of Azshara: The Depraved Nightfallen
 						["sourceQuests"] = { 38963 },	-- The Final Lesson?
 						["provider"] = { "n", 93967 },	-- Lyndras
 						["g"] = {
 							recipe(185923),	-- Silkweave Gloves (Rank 1)
 						},
 					}),
-					q(38948,  {	-- Hard Times
+					q(38948, {	-- Hard Times
 						["provider"] = { "n", 93967 },	-- Lyndras
 					}),
-					q(38952,  {	-- Meticulous Precision
+					q(38952, {	-- Meticulous Precision
 						["sourceQuests"] = { 38951 },	-- A Needle Need
 						["provider"] = { "n", 93542 },	-- Tanithria
 					}),
-					q(38947,  {	-- Runic Catgut
+					q(38947, {	-- Runic Catgut
 						["provider"] = { "n", 93967 },	-- Lyndras
 					}),
-					q(38966,  {	-- Secret Silkweaving Methods
+					q(38966, {	-- Secret Silkweaving Methods
 						["sourceQuests"] = { 38965 },	-- Assault on Violet Hod: Into the Hold
 						["provider"] = { "n", 93542 },	-- Tanithria
 						["g"] = {
@@ -1377,34 +1452,34 @@ _.Zones =
 							recipe(185940),	-- Silkweave Slippers (Rank 2)
 						},
 					}),
-					q(38955,  {	-- Sew Far, Sew Good
+					q(38955, {	-- Sew Far, Sew Good
 						["sourceQuests"] = { 38954 },	-- Where's Lyndras?
 						["provider"] = { "n", 93967 },	-- Lyndras
 						["g"] = {
 							recipe(186388),	-- Silkweave Satchel
 						},
 					}),
-					q(38944,  {	-- Sew It Begins
+					q(38944, {	-- Sew It Begins
 						["provider"] = { "n", 93542 },	-- Tanithria
 						["g"] = {
 							recipe(264628),	-- Legion Tailoring
 						},
 					}),
-					q(38949,  {	-- So You Think You Can Sew
+					q(38949, {	-- So You Think You Can Sew
 						["sourceQuests"] = {
 							38947,	-- Runic Catgut
 							38948,	-- Hard Times
 						},
 						["provider"] = { "n", 93967 },	-- Lyndras
 					}),
-					q(38957,  {	-- Taking Inspiration
+					q(38957, {	-- Taking Inspiration
 						["sourceQuests"] = { 38956 },	-- Where's Lyndras Again?
 						["provider"] = { "n", 93967 },	-- Lyndras
 						["g"] = {
 							recipe(185921),	-- Silkweave Pantaloons (Rank 1)
 						},
 					}),
-					q(38963,  {	-- The Final Lesson?
+					q(38963, {	-- The Final Lesson?
 						["sourceQuests"] = {
 							38959,	-- Left Behind
 							38960,	-- Lining Them Up
@@ -1414,39 +1489,39 @@ _.Zones =
 							recipe(185922),	-- Silkweave Hood (Rank 1)
 						},
 					}),
-					q(38967,  {	-- The Nightborne Connection
+					q(38967, {	-- The Nightborne Connection
 						["sourceQuests"] = { 38962 },	-- The Path to Suramar City
 						["provider"] = { "n", 93542 },	-- Tanithria
 					}),
-					q(38962,  {	-- The Path to Suramar City
+					q(38962, {	-- The Path to Suramar City
 						["sourceQuests"] = { 38966 },	-- Secret Silkweaving Methods
 						["provider"] = { "n", 93542 },	-- Tanithria
 					}),
-					q(38958,  {	-- The Right Color
+					q(38958, {	-- The Right Color
 						["provider"] = { "n", 93525 },	-- Ainderu Summerleaf
 						["g"] = {
 							recipe(185924),	-- Silkweave Slippers (Rank 1)
 						},
 					}),
-					q(38950,  {	-- The Wayward Tailor
+					q(38950, {	-- The Wayward Tailor
 						["sourceQuests"] = { 38949 },	-- So You Think You Can Sew
 						["provider"] = { "n", 93967 },	-- Lyndras
 					}),
-					q(38945,  {	-- This Should Be Simple... Right?
+					q(38945, {	-- This Should Be Simple... Right?
 						["provider"] = { "n", 93542 },	-- Tanithria
 						["g"] = {
 							recipe(185920),	-- Silkweave Epaulets
 							recipe(185919),	-- Silkweave Cinch
 						},
 					}),
-					q(38956,  {	-- Where's Lyndras Again?
+					q(38956, {	-- Where's Lyndras Again?
 						["provider"] = { "n", 93542 },	-- Tanithria
 					}),
-					q(38964,  {	-- Where's Lyndras Now?
+					q(38964, {	-- Where's Lyndras Now?
 						["sourceQuests"] = { 38961 },	-- Eye of Azshara: The Depraved Nightfallen
 						["provider"] = { "n", 93542 },	-- Tanithria
 					}),
-					q(39605,  {	-- Where's Lyndras: Downward Spiral
+					q(39605, {	-- Where's Lyndras: Downward Spiral
 						["sourceQuests"] = {
 							38964,	-- Where's Lyndras Now?
 							39602,	-- Where's Lyndras: Sewer Sleuthing
@@ -1461,11 +1536,11 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 93542 },	-- Tanithria
 					}),
-					q(38954,  {	-- Where's Lyndras?
+					q(38954, {	-- Where's Lyndras?
 						["provider"] = { "n", 93542 },	-- Tanithria
 					}),
 					n(-34, {	-- World Quests
-						q(41650, {
+						q(41650, {	-- Work Order: Silkweave Hood
 							["requireSkill"] = 197,	-- Tailoring
 							["lvl"] = 110,
 							["isWorldQuest"] = true,
