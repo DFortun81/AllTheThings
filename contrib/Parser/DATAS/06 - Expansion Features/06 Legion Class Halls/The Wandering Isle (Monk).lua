@@ -34,6 +34,10 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 116929 },	-- Brewmaster Blancee
 						["sourceQuests"] = { 47137 },	-- Champions of Legionfall
 					}),
+					q(41086, {	-- A Peaceful World
+						["provider"] = { "n", 102820 },	-- Chen Stormstout
+						["coord"] = { 55.2, 57, 709 },
+					}),
 					q(45771, {	-- A Time for Everything
 						["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
 						["sourceQuests"] = { 45442 },	-- Not Felling Well
@@ -133,6 +137,10 @@ _.ExpansionFeatures =
 							45545,	-- Barrel Toss
 						},
 					}),
+					q(32442, {	-- Impending Danger
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
+						["sourceQuests"] = { 41086 },	-- A Peaceful World
+					}),
 					q(44249, {	-- Inner Sanctuary
 						i(139734),	-- Grandmaster's Crown
 					}),
@@ -209,7 +217,6 @@ _.ExpansionFeatures =
 					q(44057),	-- A "Noble" Event
 					q(43359),	-- A Hero's Weapon
 					q(40793),	-- A Matter of Planning
-					q(41086),	-- A Peaceful World
 					q(43054),	-- An Ample Stockpile
 					q(45180),	-- An Island of War
 					q(46024),	-- An Urgent Warning
@@ -230,7 +237,6 @@ _.ExpansionFeatures =
 					q(41059),	-- Halls of Valor: Odyn's Cauldron
 					q(43060),	-- Highmountain Salmon
 					q(46320),	-- Hope For a Cure
-					q(32442),	-- Impending Danger
 					q(40570),	-- Into The Heavens
 					q(46025),	-- Investigate the Broken Shore
 					q(43553),	-- Maw of Souls
