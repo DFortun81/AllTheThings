@@ -796,6 +796,11 @@ _.Zones =
 					["provider"] = { "n", 82851 },	-- Thrall
 					["coords"] = { 71.8, 47.7, 17 },
 				}),
+				q(3627, {	-- Uniting the Shattered Amulet
+					["u"] = 40,	-- Legacy
+					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
+					["sourceQuest"] = 3626,	-- Return to the Blasted Lands
+				}),
 				q(36940, {	-- Warning Orgrimmar
 					["provider"] = { "n", 84928 },	-- Thrall
 					["coord"] = { 48.7, 31.7, 17 },
@@ -879,6 +884,7 @@ _.Zones =
 				q(3628,  {	-- You Are Rakh'likh, Demon
 					["u"] = 40,
 					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
+					["sourceQuest"] = 3627,	-- Uniting the Shattered Amulet
 					["g"] = {
 						un(2, i(10778)),	-- Necklace of Sanctuary
 						un(2, i(10779)),	-- Demon's Blood
