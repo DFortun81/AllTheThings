@@ -700,8 +700,10 @@ _.NeverImplemented =
 		q(38433),	-- Tanaan Jungle - lion's watch built
 		q(39306),	-- Tanaan Jungle - Call to Arms chosen during "Bring the Reinforcements"
 		q(38836),	-- Tanaan Jungle - Aktar's Post visited
-		q(37887),	-- Tanaan Jungle - Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE
-		q(38583),	-- Tanaan Jungle - Max-Level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden
+		q(37887),	-- Tanaan Jungle - Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE [A]
+		q(37892),	-- Tanaan Jungle - Tanaan Garrison Max-level Choice Tracker: ANY CHOICE MADE [H]
+		q(38583),	-- Tanaan Jungle - Max-Level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden [A]
+		q(38584),	-- Tanaan Jungle - Max-level Choice Tracker: Tanaan 6.2 - Group - Throne of Kil'jaeden [H]
 		q(38587),	-- Tanaan Jungle - Assault on the Throne of Kil'jaeden - criteria complete
 		q(39157),	-- Fel Legendary Pet Tracking Quest 1 — Felsworn Sentry
 		q(39160),	-- Fel Legendary Pet Tracking Quest 2 — Corrupted Thundertail
@@ -1017,6 +1019,7 @@ _.NeverImplemented =
 		q(43131),	-- Tracking Quest: Freya's Spring 3
 		q(43132),	-- Tracking Quest: Freya's Spring 4
 		q(43133),	-- Tracking Quest: Freya's Spring 5
+		q(44647),	-- Tracking Quest: Triggers after finishing the mission 'Impending Danger' for quest 'Impending Danger (32442)'
 
 	--	World Boss
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
