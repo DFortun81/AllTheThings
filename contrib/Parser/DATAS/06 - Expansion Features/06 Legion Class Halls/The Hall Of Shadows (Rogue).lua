@@ -360,6 +360,13 @@ _.ExpansionFeatures =
 							42627,	-- The Unseen Blade (H) (Assassination)
 						},
 					}),
+					q(47595, {	-- I Don't Need Them, But I'll Take Them
+						["coord"] = { 45.4, 27.6, 626 },
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 103792 },	-- Griftah
+						["repeatable"] = true,
+						["sourceQuest"] = 47594,	-- I'll Take Those, Thanks!
+					}),
 					q(47594, {	-- I'll Take Those, Thanks!
 						["coord"] = { 45.4, 27.6, 626 },
 						["classes"] = { 4 },	-- Rogue

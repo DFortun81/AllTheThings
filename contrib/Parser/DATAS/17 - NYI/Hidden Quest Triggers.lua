@@ -296,7 +296,6 @@ _.NeverImplemented =
 		-- Zones
 		q(12845),	-- Dalaran teleport crystal flag
 		q(13701),	-- Argent Tournament - Horde Champion Marker
-		q(24661),	-- Theryn Fed Tracker
 		q(46051),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 01
 		q(46052),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 02
 		q(46053),	-- Borean Tundra - FLAG - March of the Tadpoles Bit 03
@@ -889,7 +888,6 @@ _.NeverImplemented =
 		q(48450),	-- Shroud of Arcane Echoes first time tracking quest?
 		q(48579),	-- Shroud of Arcane Echoes active tracking quest?
 		q(48281),	-- getting into the Lightforged Warframe during Dawn of Justice
-		q(43746),	-- Currency Treasure - Moon Guard — looting Shimmering Ancient Mana Cluster (?) at (41.9, 19.2) in Suramar
 		q(49161),	-- triggered when turning in #48461, "Where They Least Expect It"
 		q(46176),	-- triggered when turning in #44924, "The Archmage Accosted," in azshara on DH
 		q(45853),	-- Melee DPS Trait Complete — triggered when raising weapon during "A Gift From the Six," #45865, on havoc DH
@@ -914,20 +912,38 @@ _.NeverImplemented =
 		q(47044),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 2 - Tracking
 		q(47038),	-- Broken Isles - 7.2 Broken Shore - Buildings - Activation Buff - Nether Disruptor - Seal Your Fate - Day 1 - Tracking
 		q(43713),	-- Stormheim - Tracking - Statue Climbed. Triggers at the top of Nashal the Watcher
-		q(40317),	-- Suramar - Tree Destroyed
+		q(44677),	-- Suramar - Ancient Mana Tutorial Chest A - triggers during "Ancient Mana"
+		q(44678),	-- Suramar - Ancient Mana Tutorial Chest B - triggers during "Ancient Mana"
+		q(44679),	-- Suramar - Ancient Mana Tutorial Chest C - triggers during "Ancient Mana"
 		q(40975),	-- Suramar - Arluin Bribe Tracking
 		q(42443),	-- Suramar - Arluin Wants In tracking quest
 		q(42649),	-- Suramar - Arluin Bribe tracking 2
-		q(43566),	-- Suramar - Withered Progress
-		q(43589),	-- Suramar - Leyline 03
 		q(43703),	-- Suramar - Hub Mana Tree Tracking - Stage 1
 		q(43704),	-- Suramar - Hub Mana Tree Tracking - Stage 2
 		q(43706),	-- Suramar - Hub Mana Tree Tracking - Stage 3
 		q(43707),	-- Suramar - Hub Mana Tree Tracking - Stage 4
 		q(43708),	-- Suramar - Hub Mana Tree Tracking - Stage 5
+		q(43589),	-- Suramar - Leyline 03
+		q(44071),	-- Suramar - Maia the White Wolf - triggered at the same time as 44072 (currently used to track rare progress). Not sure why there's two different IDs for this mob
+		q(43857),	-- Suramar - small treasure at 51.5, 38.6. For some reason, this treasure triggers two IDs. One was added to the chest, so putting this one here to keep track of it
+		q(41117),	-- Suramar - saw Thalrenus Rivertree break out of iceblock at Moonfall Approach
+		q(40765),	-- Suramar - Syrana Starweaver tracker. this triggers during "Starweaver's Fate" when find Syrana and she kills the imperial conjurers
+		q(24661),	-- Suramar - Theryn Fed Tracker
+		q(40317),	-- Suramar - Tree Destroyed
+		q(41212),	-- Suramar - triggered when turning in "Scattered Memories". Maybe a quest from beta?
+		q(43566),	-- Suramar - Withered Progress
 		q(40302),	-- FLAG - Prospecting 01
 		q(40303),	-- FLAG - Prospecting 02
 		q(40304),	-- FLAG - Prospecting 03 - triggered when completing a jewelcrafting world quest in Dalaran
+		
+		-- Suramar - Withered Training
+		-- additional note: objectID 252452 (Glimmering Treasure Chest) is the big chest at the end of training that can contain toys
+		q(43120),	-- 7.0 Suramar Collapse Scenario - Treasure 07 - Focus Attacks 01
+		q(43149),	-- 7.0 Suramar Collapse Scenario - Treasure 08 - Focus Attacks 02: obtained Petrified Silkweave upgrade from a small chest (5 withered, objectID 251749)
+		q(43150),	-- 7.0 Suramar Collapse Scenario - Treasure 09 - Focus Attacks 03
+		q(43071),	-- 7.0 Suramar Collapse Scenario - Treasure 13 - Withered Berserker Unlock 01: obtained first Berserking Helm of Ondry'el from a big chest (10 withered, objectID 251754)
+		q(43145),	-- 7.0 Suramar Collapse Scenario - Treasure 14 - Withered Berserker Unlock 02
+		
 		
 		q(38894),	-- Generic Order Hall - Founded the order hall
 		q(43837),	-- Generic Order Hall - Tutorial - combat ally unlocked
@@ -967,7 +983,9 @@ _.NeverImplemented =
 		q(44618),	-- Rogue Order Hall - Tracking Quest: Mission 3 (complete third of 5 missions for order hall campaign) (probably a generic tracker ID rather than specific to rogue)
 		q(44619),	-- Rogue Order Hall - Tracking Quest: Mission 4 (complete fourth of 5 missions for order hall campaign) (probably a generic tracker ID rather than specific to rogue)
 		q(44620),	-- Rogue Order Hall - Tracking Quest: Mission 5 (complete fifth of 5 missions for order hall campaign) (probably a generic tracker ID rather than specific to rogue)
-		q(43716),	-- Rogue Vault Rare Triggered
+		q(45447),	-- Rogue Order Hall - give a Noggenfogger coin to Marin Noggenfogger
+		q(43716),	-- Rogue Order Hall - loot spawned in the vault
+		q(43634),	-- Rogue Order Hall - looted the rogue vault
 		
 		q(38544),	-- FLAG: Demonsteel Waistguard Crafted
 		q(38546),	-- FLAG: Demonsteel Boots Crafted
@@ -1144,11 +1162,6 @@ _.NeverImplemented =
 	--	Treasures
 		q(40692),	-- 7.0 Suramar - Treasure 000 - The Drift - L (DLA) — suramar treasure in cliffside at 58.6, 33.8
 		q(46990),	-- Assault Treasure — opened Small Treasure Chest in Highmountain (44.2, 40.4)
-		q(43830),	-- Treasure 001 - South of Felsoul — suramar, 38.1, 87.0
-		q(43868),	-- Treasure 033 - City - Lower City Boat — looted treasure chest on boat at (51.8, 82.2, 680)
-		q(43873),	-- Treasure 038 - City - Noble Overlook — suramar treasure at 57.3, 60.3
-		q(43874),	-- Treasure 039 - City - Noble Interior — suramar treasure at 57.7, 62.0
-		q(43875),	-- Treasure 040 - City - Noble Waterways — suramar treasure at 54.3, 60.3
 		q(43196),	-- Treasure 056 - Weeping Bluffs — stormheim treasure in cave, entrance at 32.6, 47.8
 		q(49264),	-- opening a Void-Seeped Cache in Mac'Aree
 		q(48361),	-- opening a Void-Seeped Cache in Mac'Aree
