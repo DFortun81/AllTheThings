@@ -922,9 +922,6 @@ _.Zones =
 					["classes"] = { 3 },
 					["provider"] = { "n", 102570 },	-- Grif Wildheart
 				}),
-				q(47595, {	-- I Don't Need Them, But I'll Take Them
-					["classes"] = { 4 },
-				}),
 				q(44821, {	-- In Dire Need
 					["sourceQuests"] = { 44782 },	-- Away From Prying Eyes
 					["provider"] = { "n", 115465 },	-- Archmage Modera
@@ -963,11 +960,6 @@ _.Zones =
 					["sourceQuests"] = { 39733 },	-- The Lone Mountain
 					["coord"] = { 69.9, 43.8, 627 },
 					["provider"] = { "n", 97666 },	-- Warbrave Oro
-				}),
-				q(44555, {	-- Khadgar's Discovery
-				--	["description"] = "Automatically given to you in Dalaran upon reaching lvl 110.";	-- doesn't seem to be the case (as of mid-October 2019)
-					["lvl"] = 110,
-					["u"] = 40,	-- Legacy Quests — version that was given automatically?
 				}),
 				q(39985, {	-- Khadgar's Discovery
 					["isBreadcrumb"] = true,	-- for "Magic Message"
@@ -1737,6 +1729,7 @@ _.Zones =
 				}),
 				q(39987, {	-- Trail of Echoes
 					["sourceQuests"] = { 39986 },	-- Magic Message
+					["coord"] = { 28.4, 48.3, 627 },
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 				}),
 				q(43535, {	-- Translation: Danger!
