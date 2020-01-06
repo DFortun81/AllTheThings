@@ -1304,6 +1304,7 @@ _.Zones =
 						["provider"] = { "i", 124497 },	-- Felslate Seam Sample
 					}),
 					q(39830, {	-- Hellfire Citadel: Hellfire and Brimstone
+						["coord"] = { 46.1, 26.6, 627 },
 						["classes"] = { 1, 3 },
 						["provider"] = { "n", 93189 },	-- Mama Diggs
 						["g"] = {
@@ -1311,6 +1312,7 @@ _.Zones =
 						},
 					}),
 					q(38807, {	-- Infernal Brimstone Analysis
+						["coord"] = { 46.1, 26.6, 627 },
 						["classes"] = { 2, 3 },
 						["provider"] = { "n", 93189 },	-- Mama Diggs
 						["g"] = {
@@ -1321,6 +1323,7 @@ _.Zones =
 						["provider"] = { "i", 124502 },	-- Infernal Brimstone Sample
 					}),
 					q(39790, {	-- Infernal Brimstone Theory
+						["coord"] = { 46.1, 26.6, 627 },
 						["sourceQuests"] = { 38807 },	-- Infernal Brimstone Analysis
 						["provider"] = { "n", 93189 },	-- Mama Diggs
 					}),
@@ -1335,15 +1338,19 @@ _.Zones =
 					}),
 					q(38785, {	-- Living Leystone Sample
 						["provider"] = { "i", 124491 },	-- Living Leystone Sample
+						
 					}),
 					q(39817, {	-- The Brimstone's Secret
 						["sourceQuests"] = { 39763 },	-- For Whom the Fel Tolls
 						["provider"] = { "n", 97360 },	-- Matthew Rabis
 					}),
-					q(38901, {	-- The Felsmiths
+					q(38901, {	-- The Felsmiths -- TODO: verify if this also requires 38795 and 38796
+						["coord"] = { 46.1, 26.6, 627 },
 						["provider"] = { "n", 93189 },	-- Mama Diggs
+						["sourceQuest"] = 38797,	-- Living Felslate Sample
 					}),
 					q(38888, {	-- The Highmountain Tauren
+						["coord"] = { 46.1, 26.6, 627 },
 						["provider"] = { "n", 93189 },	-- Mama Diggs
 					}),
 				}),
