@@ -67,11 +67,13 @@ _.Zones =
 					["provider"] = { "n", 58962 },	-- Hai-Me Heavyhands
 				}),
 				q(31384, {	-- The Golden Lotus (A)
+					["isBreadcrumb"] = true,
 					["coord"] = { 84.2, 62.4, 390 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 64031 },	-- Xari the Kind
 				}),
 				q(31385, {	-- The Golden Lotus (H)
+					["isBreadcrumb"] = true,
 					["coord"] = { 63.0, 22.2, 390 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 64007 },	-- Weng the Merciful
