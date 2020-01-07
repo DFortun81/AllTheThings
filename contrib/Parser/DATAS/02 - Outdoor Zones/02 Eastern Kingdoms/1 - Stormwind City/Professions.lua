@@ -174,6 +174,11 @@ _.Zones =
 							["lvl"] = 20,
 							["repeatable"] = true,
 						}),
+						q(3630, {	-- Gnome Engineering
+							["u"] = 40,	-- Legacy
+							["requireSkill"] = 202,	-- Engineering
+							["provider"] = { "n", 5518 },	-- Lilliam Sparkspindle
+						}),
 					}),
 				}),
 				prof(356, {	-- Fishing

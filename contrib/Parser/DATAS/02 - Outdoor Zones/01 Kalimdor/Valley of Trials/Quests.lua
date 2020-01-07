@@ -49,6 +49,12 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 25126,	-- Cutting Teeth
 					}),
+					q(3086,   {	-- Glyphic Tablet
+						["u"] = 40,	-- Legacy
+						["races"] = HORDE_ONLY,
+						["classes"] = { MAGE },	-- Mage
+						["provider"] = { "n", 3143 },	-- Gornek
+					}),
 					q(25128, {	-- Hana'zua
 						["provider"] = { "n", 5887 },	-- Canaga Earthcaller
 						["coord"] = { 41.7, 70.0, 461 },

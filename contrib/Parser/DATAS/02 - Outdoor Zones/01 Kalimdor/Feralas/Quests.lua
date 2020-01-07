@@ -53,6 +53,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
 				}),
+				q(2981, {	-- A Threat in Feralas
+					["u"] = 40,	-- Legacy
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 4485 },	-- Belgrom Rockmaul
+				}),
 				q(26574, {	-- Adella's Covert Camp
 					["provider"] = { "n", 39653 },	-- Silvia
 					["coord"] = { 56.9, 54.9, 69 },
@@ -80,6 +85,12 @@ _.Zones =
 				q(25423, {	-- Ancient Suffering
 					["provider"] = { "n", 40131 },	-- Sensiria
 					["coord"] = { 65.9, 62.8, 69 },
+				}),
+				q(2979, {	-- Dark Ceremony
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 7777 },	-- Rok Orhan
+					["sourceQuest"] = 2978,	-- The Gordunni Scroll
 				}),
 				q(25654, {	-- Dark Heart (A)
 					["provider"] = { "n", 40035 },	-- Erina Willowborn
@@ -696,6 +707,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25337,	-- Hippogryph Muisek
 				}),
+				q(3002, {	-- The Gordunni Orb
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 7777 },	-- Rok Orhan
+					["sourceQuest"] = 2979,	-- Dark Ceremony
+				}),
 				q(25401, {	-- The Gordunni Orb (A)
 					["provider"] = { "n", 39653 },	-- Silvia
 					["coord"] = { 56.9, 54.9, 69 },
@@ -705,6 +722,11 @@ _.Zones =
 					["provider"] = { "n", 39656 },	-- Orhan Ogreblade
 					["coord"] = { 51.9, 47.9, 69 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(2978, {	-- The Gordunni Scroll
+					["u"] = 40, -- Legacy
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 9370 },	-- Gordunni Scroll
 				}),
 				q(25400, {	-- The Gordunni Threat (A)
 					["provider"] = { "n", 39653 },	-- Silvia
