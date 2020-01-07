@@ -321,20 +321,20 @@ _.Zones =
 				ach(11260),		-- Treasures of Suramar
 				ach(11133, {	-- Why Can't I Hold All This Mana
 					["sourceQuests"] = {
-					-- need to confirm whether all these quests are required to list here.  if they chain together, listing them all could create an infinite loop!
 						41138,	-- Feeding Shal'aran
 						42230,	-- The Valewalker's Burden
 						42488,	-- Thalyssra's Abode
 						42833,	-- How It's Made: Arcwine
 						42792,	-- Make Your Mark
 					},
-					["g"] = {	-- is there a better way to list these?  also, need to add coordinates.  these are sleepyslumber's notes to herself.  or others!  or no one.
+					["g"] = {
 						i(136269, {	-- Kel'danath's Manaflask -- objectID 248407
 							["questID"] = 42842,
 							["coord"] = { 21.4, 54.5, 680 },
 						}),
 						i(140328, {	-- Volatile Leyline Crystal
 							["questID"] = 43988,
+							["coord"] = { 35.5, 52.7, 684 },
 						}),
 						i(140329, {	-- Infinite Stone -- objectID 254023
 							["questID"] = 43989,

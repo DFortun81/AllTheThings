@@ -37,16 +37,19 @@ _.Zones =
 				}),
 				n(110726, {	-- Cadraeus
 					["questID"] = 43495,
-					["coord"] = { 62.7, 47.3, 680 },
+					["coords"] = {
+						{ 62.7, 49.1, 680 },
+						{ 62.6, 47.1, 680 },
+					},
 					["g"] = {
-						i(139969),
+						i(139969),	-- Nightborne Stalker's Coif
 					},
 				}),
 				n(100864, {	-- Cora'kar
 					["questID"] = 41135,
-					["coord"] = { 70.0, 56.9, 680 },
+					["coord"] = { 68.2, 58.6, 680 },
 					["g"] = {
-						i(139952),
+						i(139952),	-- Salt-Tide Jailor's Tunic
 					},
 				}),
 				n(111651, {	-- Degren
@@ -86,6 +89,10 @@ _.Zones =
 						{ 56.3, 50.3, 680 },
 					},
 				}),
+				n(103214, {	-- Har'kess the Insatiable
+					["questID"] = 41136,
+					["coord"] = { 67.6, 71.0, 680 },
+				}),
 				n(103223, {	-- Hertha Grimdottir
 					["questID"] = 43993,
 					["coord"] = { 61.3, 39.7, 680 },
@@ -96,6 +103,10 @@ _.Zones =
 				n(106532, {	-- Inquisitor Volitix
 					["questID"] = 44569,
 					["coord"] = { 38.0, 70.4, 680 },
+				}),
+				n(103827, {	-- King Morgalash
+					["questID"] = 41786,
+					["coord"] = { 87.3, 62.3, 680 },
 				}),
 				n(106526, {	-- Lady Rivantas
 					["questID"] = 44675,
@@ -136,6 +147,10 @@ _.Zones =
 				n(112802, {	-- Mar'tura
 					["questID"] = 44124,
 					["coord"] = { 13.5, 53.4, 680 },
+				}),
+				n(111329, {	-- Matron Hagatha
+					["questID"] = 43718,
+					["coord"] = { 36.2, 33.8, 680 },
 				}),
 				n(111653, {	-- Miasu
 					["questID"] = 43793,
@@ -240,18 +255,9 @@ _.Zones =
 			--	n(103787, { 	-- Baconlisk	}),
 			--	n(105632, { 	-- Broodmother Shu'malis	}),
 			--	v(45503, { 		-- Colerian	}),
-			--	v(43792, { 		-- Degren	}),
-			--	v(41319, { 		-- Elfbane	}),
-			--	v(43597, { 		-- Guardian Thor'el	}),
-			--	v(41136, { 		-- Har'kess the Insatiable	}),
 			--	v(41134, { 		-- Jetsam	}),
-			--	v(41786, { 		-- King Morgalash	}),
-			--	v(43348, { 		-- Magister Phaedris	}),
 			--	v(45476, { 		-- Magistrix Vilessa	}),
-			--	v(43351, { 		-- Mal'Dreth the Corruptor	}),
-			--	v(43718, { 		-- Matron Hagatha	}),
 			--	v(45506, { 		-- Oglok the Furious	}),
-			--	v(43449, { 		-- Oreth the Vile	}),
 			--	n(113694, { 	-- Pashya	}),
 			--	n(105739, { 	-- Sanaar	}),
 			--	v(45505, { 		-- Scythemaster Cil'raman	}),

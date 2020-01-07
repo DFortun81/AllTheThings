@@ -913,14 +913,14 @@ _.NeverImplemented =
 		q(44677),	-- Suramar - Ancient Mana Tutorial Chest A - triggers during "Ancient Mana"
 		q(44678),	-- Suramar - Ancient Mana Tutorial Chest B - triggers during "Ancient Mana"
 		q(44679),	-- Suramar - Ancient Mana Tutorial Chest C - triggers during "Ancient Mana"
-		q(40975),	-- Suramar - Arluin Bribe Tracking
+		q(40975),	-- Suramar - Arluin Bribe Tracking - give Arluin 800 ancient mana during "If Words Don't Work..."
 		q(42443),	-- Suramar - Arluin Wants In tracking quest
-		q(42649),	-- Suramar - Arluin Bribe tracking 2
+		q(42649),	-- Suramar - Arluin Bribe tracking 2 - give Arluin 1200 ancient mana during "Or Against Us"
 		q(43703),	-- Suramar - Hub Mana Tree Tracking - Stage 1
 		q(43704),	-- Suramar - Hub Mana Tree Tracking - Stage 2
-		q(43706),	-- Suramar - Hub Mana Tree Tracking - Stage 3
-		q(43707),	-- Suramar - Hub Mana Tree Tracking - Stage 4
-		q(43708),	-- Suramar - Hub Mana Tree Tracking - Stage 5
+		q(43706),	-- Suramar - Hub Mana Tree Tracking - Stage 3 - triggered after turning in "Make Your Mark"
+		q(43707),	-- Suramar - Hub Mana Tree Tracking - Stage 4 - triggered after turning in "Make Your Mark"
+		q(43708),	-- Suramar - Hub Mana Tree Tracking - Stage 5 - triggered after turning in "Make Your Mark"
 		q(43589),	-- Suramar - Leyline 03
 		q(44071),	-- Suramar - Maia the White Wolf - triggered at the same time as 44072 (currently used to track rare progress). Not sure why there's two different IDs for this mob
 		q(43857),	-- Suramar - small treasure at 51.5, 38.6. For some reason, this treasure triggers two IDs. One was added to the chest, so putting this one here to keep track of it
@@ -929,6 +929,7 @@ _.NeverImplemented =
 		q(24661),	-- Suramar - Theryn Fed Tracker
 		q(40317),	-- Suramar - Tree Destroyed
 		q(41212),	-- Suramar - triggered when turning in "Scattered Memories". Maybe a quest from beta?
+		q(41137),	-- Suramar - triggered when killing Cora'kar. Wowhead reports it as a quest, but there's no such quest ingame. Probably changed sometime during beta
 		q(43566),	-- Suramar - Withered Progress
 		q(40302),	-- FLAG - Prospecting 01
 		q(40303),	-- FLAG - Prospecting 02
