@@ -916,7 +916,7 @@ _.NeverImplemented =
 		q(44678),	-- Suramar - Ancient Mana Tutorial Chest B - triggers during "Ancient Mana"
 		q(44679),	-- Suramar - Ancient Mana Tutorial Chest C - triggers during "Ancient Mana"
 		q(40975),	-- Suramar - Arluin Bribe Tracking - give Arluin 800 ancient mana during "If Words Don't Work..."
-		q(42443),	-- Suramar - Arluin Wants In tracking quest
+		q(42443),	-- Suramar - Arluin Wants In tracking quest - arluin shows up at Shal'Aran after you turn in "Giving It All We've Got" and completing the follow-up quests
 		q(42649),	-- Suramar - Arluin Bribe tracking 2 - give Arluin 1200 ancient mana during "Or Against Us"
 		q(43703),	-- Suramar - Hub Mana Tree Tracking - Stage 1
 		q(43704),	-- Suramar - Hub Mana Tree Tracking - Stage 2
@@ -932,6 +932,7 @@ _.NeverImplemented =
 		q(40317),	-- Suramar - Tree Destroyed
 		q(41212),	-- Suramar - triggered when turning in "Scattered Memories". Maybe a quest from beta?
 		q(41137),	-- Suramar - triggered when killing Cora'kar. Wowhead reports it as a quest, but there's no such quest ingame. Probably changed sometime during beta
+		q(43840),	-- Suramar - triggered when looting the chest at 48.6, 42.6 along with a different ID. This one appears to be a duplicate and/or a bug on blizzard's end
 		q(43566),	-- Suramar - Withered Progress
 		q(40302),	-- FLAG - Prospecting 01
 		q(40303),	-- FLAG - Prospecting 02
@@ -944,7 +945,11 @@ _.NeverImplemented =
 		q(43150),	-- 7.0 Suramar Collapse Scenario - Treasure 09 - Focus Attacks 03
 		q(43071),	-- 7.0 Suramar Collapse Scenario - Treasure 13 - Withered Berserker Unlock 01: obtained first Berserking Helm of Ondry'el from a big chest (10 withered, objectID 251754)
 		q(43145),	-- 7.0 Suramar Collapse Scenario - Treasure 14 - Withered Berserker Unlock 02
-		
+		q(43148),	-- 7.0 Suramar Collapse Scenario - Treasure 12 - Reduce Runaways 03: obtained Lens of Qin'dera from a small chest (5 withered, objectID 251753)
+		q(43142),	-- 7.0 Suramar Collapse Scenario - Treasure 04 - Army Size Increase 04: used to be from an increase to max withered army size, but no longer in game (5 withered, objectID 43142)
+		q(43111),	-- 7.0 Suramar Collapse Scenario - Treasure 10 - Reduce Runaways 01: obtained Soothing Leystone Shard from a small chest (5 withered, objectID 251751)
+		q(43140),	-- 7.0 Suramar Collapse Scenario - Treasure 02 - Army Size Increase 02: no withered army increase anymore, but did contain Traveler's Banking Chest (itemID 140778) (5 withered, objectID 43140)
+		q(43146),	-- 7.0 Suramar Collapse Scenario - Treasure 16 - Withered Mana-Rager Unlock 02: obtained Spellmask okf Azsylla from a large chest (10 withered, objectID 251757)
 		
 		q(38894),	-- Generic Order Hall - Founded the order hall
 		q(43837),	-- Generic Order Hall - Tutorial - combat ally unlocked
@@ -1156,7 +1161,6 @@ _.NeverImplemented =
 		
 		
 	--	Rares
-		q(45478),	-- Achronos — WQ rare in suramar, no special drops
 		q(39533),	-- Durguth — WQ rare in suramar, attached WQ to rare so his special drop shows in /attwq
 		q(45512),	-- Mawat'aki — WQ rare in Highmountain
 		

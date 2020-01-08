@@ -275,21 +275,27 @@ _.Zones =
 						["sourceQuest"] = 41028,	-- Power Grid
 					}),
 					crit(2, {	-- Elor'shan
-						["coord"] = { 65.9, 42.0, 680 },	-- cave entrance
+						["coord"] = { 65.9, 42.0, 680 },
 						["sourceQuest"] = 43587,	-- Leyline Feed: Elor'shan
 					}),
 					crit(3, {	-- Kel'balor
+						["coord"] = { 59.3, 42.9, 680 },
+						["sourceQuest"] = 43588,	-- Leyline Feed: Kel'balor
 					}),
 					crit(4, {	-- Moonwhisper Gulch
+						["coord"] = { 35.7, 24.2, 680 },
+						["sourceQuest"] = 43590,	-- Leyline Feed: Ley Station Moonfall
 					}),
 					crit(5, {	-- Falanaar North
 						["coord"] = { 66.5, 52.5, 685 },
 						["sourceQuest"] = 43592,	-- Leyline Feed: Falanaar Arcway
 					}),
 					crit(6, {	-- Falanaar South
+						["coord"] = { 20.5, 50.4, 680 },
+						["sourceQuest"] = 43593,	-- Leyline Feed: Falanaar Depths
 					}),
 					crit(7, {	-- Halls of the Eclipse
-						["coord"] = { 29.1, 84.6, 680 },	-- cave entrance
+						["coord"] = { 29.1, 84.6, 680 },
 						["sourceQuest"] = 43594,	-- Leyline Feed: Halls of the Eclipse
 					}),
 					crit(8, {	-- Moon Guard

@@ -92,9 +92,16 @@ _.Zones =
 					["provider"] = { "n", 107225 },	-- Deline
 					["sourceQuest"] = 41878,	-- The Gondolier
 				}),
-				q(43567),	-- All In
+				q(43567, {	-- All In
+					["coord"] = { 37.1, 46.5, 680 },
+					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
+					["sourceQuests"] = {
+						43565,	-- Bring Home the Beacon
+						43563,	-- Ephemeral Manastorm Projector
+						43564,	-- Flow Control
+					},
+				}),
 				q(41307),	-- All That Glitters
-				q(43794),	-- Ambassador D'vwinn
 				q(40744, {	-- An Ancient Recipe
 					["coord"] = { 45.6, 40.8, 680 },
 					["provider"] = { "n", 99065 },	-- Thaedris Feathersong
@@ -109,7 +116,6 @@ _.Zones =
 				q(40157, {	-- An Unseemly Task
 					["requireSkill"] = 186, -- Mining
 				}),
-				q(43954),	-- Anax
 				q(44672, {	-- Ancient Mana
 					["coord"] = { 36.5, 46.9, 680 },
 					["provider"] = { "n", 97140 },	-- QFirst Arcanist Thalyssra
@@ -133,7 +139,11 @@ _.Zones =
 				}),
 				q(38692),	-- Answering Aggression
 				q(41231),	-- Apex Predator
-				q(43568),	-- Arcan'dor, Gift of the Ancient Magi
+				q(43568, {	-- Arcan'dor, Gift of the Ancient Magi
+					["coord"] = { 36.8, 46.5, 680 },
+					["provider"] = { "n", 107126 },	-- Valewalker Farodin
+					["sourceQuest"] = 43567,	-- All In
+				}),
 				q(40324, {	-- Arcane Communion
 					["coord"] = { 37.0, 46.2, 680 },
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
@@ -153,7 +163,11 @@ _.Zones =
 				q(40725, {	-- Arganax (not implemented?)
 					["isDaily"] = true,
 				}),
-				q(43569),	-- Arluin's Request
+				q(43569, {	-- Arluin's Request
+					["coord"] = { 36.4, 46.6, 680 },
+					["provider"] = { "n", 107598 },	-- Vanthir
+					["sourceQuest"] = 43567,	-- All In
+				}),
 				q(44862, {	-- Arming the Rebels
 					["races"] = HORDE_ONLY,
 				}),
@@ -226,7 +240,7 @@ _.Zones =
 					["sourceQuest"] = 44156,	-- Another Arcan'dor Closes
 				}),
 				q(44719),	-- Breaching the Sanctum
-				q(45405),	-- Breaching the Sanctum
+				q(45405),	-- Breaching the Sanctum -- possibly a flag or removed version?
 				q(44845),	-- Break An Arm
 				q(41709, {	-- Breaking Down the Big Guns
 					["coord"] = { 75.9, 52.7, 680 },
@@ -238,7 +252,11 @@ _.Zones =
 					["provider"] = { "o", 250383 },	-- Moonshade Relic
 					["sourceQuest"] = 42224,	-- Cloaked in Moonshade
 				}),
-				q(43565),	-- Bring Home the Beacon
+				q(43565, {	-- Bring Home the Beacon
+					["coord"] = { 37.1, 46.6, 680 },
+					["provider"] = { "n", 98548 },	-- Chief Telemancer Oculeth
+					["sourceQuest"] = 43562,	-- Giving It All We've Got
+				}),
 				q(44670),	-- Broodmother Lizax
 				q(40364, {	-- Bubble Trouble
 					["coord"] = { 74.9, 63.3, 680 },
@@ -348,7 +366,11 @@ _.Zones =
 						40306,	-- The Last Chapter
 					},
 				}),
-				q(43563),	-- Ephemeral Manastorm Projector
+				q(43563, {	-- Ephemeral Manastorm Projector
+					["coord"] = { 37.0, 46.5, 680 },
+					["provider"] = { "n", 103155 },	-- Arcanist Valtrois
+					["sourceQuest"] = 43562,	-- Giving It All We've Got
+				}),
 				q(44752),	-- Essence Triangulation
 				q(41465),	-- Estate Jewelry: A Braggart's Brooch
 				q(41466),	-- Estate Jewelry: Haute Claw-ture
@@ -437,7 +459,11 @@ _.Zones =
 						40331,	-- Bite of the Sashj'tar
 					},
 				}),
-				q(43564),	-- Flow Control
+				q(43564, {	-- Flow Control
+					["coord"] = { 37.0, 46.5, 680 },
+					["provider"] = { "n", 103155 },	-- Arcanist Valtrois
+					["sourceQuest"] = 43562,	-- Giving It All We've Got
+				}),
 				q(43938, {	-- Focusing Our Efforts
 					["races"] = HORDE_ONLY,
 				}),
@@ -496,9 +522,12 @@ _.Zones =
 						i(140040),	-- Comet Dust
 					},
 				}),
-				q(40897),	-- Garvrulg
 				q(44736),	-- Gates of the Nighthold
-				q(43562),	-- Giving It All We've Got
+				q(43562, {	-- Giving It All We've Got
+					["coord"] = { 37.0, 46.2, 680 },
+					["provider"] = { "n", 103155 },	-- Arcanist Valtrois
+					["sourceQuest"] = 43502,	-- A Change of Seasons
+				}),
 				q(40307, {	-- Glaive Circumstances
 					["coord"] = { 30.8, 59.1, 680 },
 					["provider"] = { "n", 99514 },	-- Lyana Darksorrow
@@ -507,7 +536,6 @@ _.Zones =
 						44489,	-- Lyana Darksorrow (demon hunter)
 					},
 				}),
-				q(43992),	-- Gorgroth
 				q(44490, {	-- Grimwing the Devourer (Demon hunter)
 					["coord"] = { 30.8, 59.1, 680 },
 					["classes"] = { DEMONHUNTER },
@@ -532,7 +560,6 @@ _.Zones =
 					["sourceQuest"] = 44561,	-- Seed of Hope
 					["minReputation"] = { 1859, HONORED },
 				}),
-				q(43993),	-- Hertha Grimdottir
 				q(43969, {	-- Hired Help
 					["coord"] = { 48.4, 83.2, 680 },
 					["provider"] = { "n", 107598 },	-- Vanthir
@@ -695,7 +722,13 @@ _.Zones =
 					["coord"] = { 66.5, 52.5, 685 },
 					["provider"] = { "o", 252262 },	-- Leyline Feed
 				}),
-				q(43593),	-- Leyline Feed: Falanaar Depths
+				q(43593, {	-- Leyline Feed: Falanaar Depths
+					["provider"] = { "o", 252263 },	-- Leyline Feed
+					["coords"] = {
+						{ 20.5, 50.4, 680 },	-- cave entrance
+						{ 57.9, 75.2, 685 },
+					},
+				}),
 				q(43594, {	-- Leyline Feed: Halls of the Eclipse
 					["provider"] = { "o", 252264 },	-- Leyline Feed
 					["coords"] = {
@@ -703,7 +736,13 @@ _.Zones =
 						{ 27.2, 86.4, 680 },
 					},
 				}),
-				q(43588),	-- Leyline Feed: Kel'balor
+				q(43588, {	-- Leyline Feed: Kel'balor
+					["provider"] = { "o", 252259 },	-- Leyline Feed
+					["coords"] = {
+						{ 59.3, 42.9, 680 },
+						{ 52.5, 45.1, 687 },
+					},
+				}),
 				q(43591, {	-- Leyline Feed: Ley Station Aethenar
 					["provider"] = { "o", 252261 },	-- Leyline Feed
 					["coords"] = {
@@ -711,8 +750,27 @@ _.Zones =
 						{ 49.0, 49.4, 690 },
 					},
 				}),
-				q(43590),	-- Leyline Feed: Ley Station Moonfall
-				q(44495),	-- Leyline Master
+				q(43590, {	-- Leyline Feed: Ley Station Moonfall
+					["provider"] = { "o", 252260 },	-- Leyline Feed
+					["coords"] = {
+						{ 35.7, 24.2, 680 },	-- cave entrance
+						{ 54.2, 45.5, 689 },
+					},
+				}),
+				q(44495, {	-- Leyline Master
+					["coord"] = { 37.0, 46.2, 680 },
+					["provider"] = { "n", 103155 },	-- Arcanist Valtrois
+					["sourceQuests"] = {
+						43587,	-- Leyline Feed: Elor'shan
+						43592,	-- Leyline Feed: Falanaar Arcway
+						43593,	-- Leyline Feed: Falanaar Depths
+						43594,	-- Leyline Feed: Halls of the Eclipse
+						43588,	-- Leyline Feed: Kel'balor
+						43591,	-- Leyline Feed: Ley Station Aethenar
+						43590,	-- Leyline Feed: Ley Station Moonfall
+						41028,	-- Power Grid
+					},
+				}),
 				q(44493, {	-- Leyline Proficiency
 					["coord"] = { 36.9, 46.3, 680 },
 					["provider"] = { "n", 103155 },	-- Arcanist Valtrois
@@ -721,7 +779,6 @@ _.Zones =
 				q(44859, {	-- Liadrin's Command
 					["races"] = HORDE_ONLY,
 				}),
-				q(40905),	-- Lieutenant Strathmar
 				q(40796, {	-- Lingering on the Edge
 					["coord"] = { 30.3, 47.8, 680 },
 					["provider"] = { "n", 101848 },	-- Absolon
@@ -732,7 +789,6 @@ _.Zones =
 					["provider"] = { "n", 108063 },	-- Korine
 					["sourceQuest"] = 42722,	-- Friends in Cages
 				}),
-				q(44676),	-- Llorian
 				q(40673),	-- Lost Knowledge
 				q(43811, {	-- Lunastre Estate Teleporter Online!
 					["coord"] = { 43.7, 79.3, 680 },
@@ -787,7 +843,6 @@ _.Zones =
 					["provider"] = { "n", 105342 },	-- Ly'leth Lunastre
 					["sourceQuest"] = 41989,	-- Blood of My Blood
 				}),
-				q(43793),	-- Miasu
 				q(41463, {	-- Missing Along the Way
 					["coord"] = { 25.6, 30.8, 680 },
 					["provider"] = { "n", 103568 },	-- Mayruna Moonwing
@@ -877,7 +932,12 @@ _.Zones =
 					["sourceQuest"] = 42229,	-- Shal'Aran
 				}),
 				q(44753),	-- On Public Display
-				q(45260),	-- One Day at a Time
+				q(45260, {	-- One Day at a Time
+					["coord"] = { 36.4, 46.7, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 43568,	-- Arcan'dor, Gift of the Ancient Magi
+					["description"] = "You may need to need Shal'aran before this quest appears.",
+				}),
 				q(41027, {	-- One Last Breath
 					["u"] = 1,	-- Never Available — replaced with #40334, "Fisherman's Tonic
 				}),
@@ -1266,7 +1326,10 @@ _.Zones =
 				q(43508, {	-- The Captive Spymaster
 					["classes"] = { 4 },	-- Rogue
 				}),
-				q(44176),	-- The Conveniences of Home
+				q(44176, {	-- The Conveniences of Home
+					["provider"] = { "i", 140778 },	-- Traveler's Banking Chest
+					["description"] = "Obtained through Withered Army Training.",
+				}),
 				q(40747, {	-- The Delicate Art of Telemancy
 					["coord"] = { 49.6, 48.1, 680 },
 					["provider"] = { "n", 101499 },	-- Chief Telemancer Oculeth

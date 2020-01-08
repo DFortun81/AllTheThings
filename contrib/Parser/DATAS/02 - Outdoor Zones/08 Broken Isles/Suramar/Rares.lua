@@ -212,7 +212,7 @@ _.Zones =
 				}),
 				n(113425, {	-- Rovendros
 					["description"] = "This is a hidden NPC that you find in a cave within Crimson Thicket located at 55, 46.  Once you free him he will show up in Shal'aran as a vendor.",
-					["questID"] = 43795,	-- Tracking - Rovendros Found
+					["questID"] = 43795,
 				}),
 				n(103841, {	-- Shadowquill
 					["questID"] = 43996,
@@ -224,6 +224,10 @@ _.Zones =
 					["g"] = {
 						i(139926),	-- Subject 12's ID Bracelets
 					},
+				}),
+				n(110438, {	-- Siegemaster Aedrin
+					["questID"] = 43369,
+					["coord"] = { 37.3, 21.7, 680 },
 				}),
 				n(110824, {	-- Tideclaw
 					["questID"] = 43542,
@@ -262,7 +266,6 @@ _.Zones =
 			--	n(105739, { 	-- Sanaar	}),
 			--	v(45505, { 		-- Scythemaster Cil'raman	}),
 			--	v(45502, { 		-- Selenyi	}),
-			--	v(43369, { 		-- Siegemaster Aedrin	}),
 			--	v(45477, { 		-- Sorallus	}),
 			--	v(45474, { 		-- Volshax, Breaker of Will	}),
 --]]
