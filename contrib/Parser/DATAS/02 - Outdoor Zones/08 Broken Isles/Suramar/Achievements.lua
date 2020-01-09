@@ -6,6 +6,7 @@ _.Zones =
 	m(619, { 	-- The Broken Isles
 		m(680, {	-- Suramar
 			n(-4, {		-- Achievements
+				ach(11265),		-- Adventurer of Suramar
 				ach(9696,  {	-- Family Familiar
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
@@ -267,6 +268,35 @@ _.Zones =
 					}),
 					crit(11, {	-- Jandvik's Jarl
 						["sourceQuest"] = 40336,	-- Turning the Tidemistress
+					}),
+				}),
+				ach(11340, {	-- Insurrection
+					crit(1, {	-- Lockdown
+						["sourceQuest"] = 44955,	-- Visitor in Shal'Aran
+					}),
+					crit(2, {	-- Missing Persons
+						["sourceQuest"] = 44814,	-- Waning Refuge
+					}),
+					crit(3, {	-- Waking Crescent
+						["sourceQuest"] = 44756,	-- Sign of the Dusk Lily
+					}),
+					crit(4, {	-- An Elven Problem
+						["sourceQuest"] = 44845,	-- Break An Arm
+					}),
+					crit(5, {	-- Crafting War
+						["sourceQuest"] = 44790,	-- Trial by Demonfire
+					}),
+					crit(6, {	-- March on Suramar
+						["sourceQuest"] = 44740,	-- Staging Point
+					}),
+					crit(7, {	-- Elisande's Retort
+						["sourceQuest"] = 44833,	-- The Seal's Power
+					}),
+					crit(8, {	-- As Strong As Our Will
+						["sourceQuest"] = 45064,	-- Felborne No More
+					}),
+					crit(9, {	-- Breaking the Nighthold
+						["sourceQuest"] = 44719,	-- Breaching the Sanctum
 					}),
 				}),
 				ach(10756, {	-- Leyline Bling

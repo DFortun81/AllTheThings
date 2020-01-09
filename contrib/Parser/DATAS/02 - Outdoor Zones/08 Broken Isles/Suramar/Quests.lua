@@ -63,7 +63,11 @@ _.Zones =
 					["sourceQuest"] = 43318,	-- Ly'leth's Champion
 					-- used to require revered reputation, but that was changed in a later patch
 				}),
-				q(45262),	-- A Message From Ly'leth
+				q(45262, {	-- A Message From Ly'leth
+					["coord"] = { 36.5, 46.7, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 44814,	-- Waning Refuge
+				}),
 				q(44918),	-- A Message From Our Enemies
 				q(42728, {	-- A Mlrglrmg For Grlmrgl
 					["coord"] = { 15.2, 52.4, 680 },
@@ -101,13 +105,22 @@ _.Zones =
 						43564,	-- Flow Control
 					},
 				}),
-				q(41307),	-- All That Glitters
+				q(41307, {	-- All That Glitters
+					["coord"] = { 41.5, 71.2, 680 },
+					["provider"] = { "n", 103175 },	-- Lespin Silverleaf
+					["sourceQuest"] = 41123,	-- An Artisan's Mark
+				}),
 				q(40744, {	-- An Ancient Recipe
 					["coord"] = { 45.6, 40.8, 680 },
 					["provider"] = { "n", 99065 },	-- Thaedris Feathersong
 					["sourceQuest"] = 42230,	-- The Valewalker's Burden
 				}),
-				q(41123),	-- An Artisan's Mark
+				q(41123, {	-- An Artisan's Mark
+					["coord"] = { 41.5, 71.2, 680 },
+					["provider"] = { "n", 103175 },	-- Lespin Silverleaf
+					-- TODO: figure out the sourceQuest. this isn't always available
+					--["sourceQuest"] = 
+				}),
 				q(40012, {	-- An Old Ally
 					["coord"] = { 36.5, 46.9, 680 },
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
@@ -137,7 +150,11 @@ _.Zones =
 						43360,	-- The Shardmaidens
 					},
 				}),
-				q(38692),	-- Answering Aggression
+				q(38692, {	-- Answering Aggression
+					["coord"] = { 47.8, 82.9, 680 },
+					["provider"] = { "n", 114948 },	-- Silgryn
+					["sourceQuest"] = 38695,	-- Crackdown
+				}),
 				q(41231),	-- Apex Predator
 				q(43568, {	-- Arcan'dor, Gift of the Ancient Magi
 					["coord"] = { 36.8, 46.5, 680 },
@@ -290,14 +307,22 @@ _.Zones =
 					["provider"] = { "n", 102142 },	-- Chief Telemancer Oculeth
 					["sourceQuest"] = 40748,	-- Network Security
 				}),
-				q(45261),	-- Continuing the Cure
+				q(45261, {	-- Continuing the Cure
+					["coord"] = { 36.4, 46.7, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 44955,	-- Visitor in Shal'Aran
+				}),
 				q(43314, {	-- Court of Stars: Beware the Fury of a Patient Elf
 					["coord"] = { 36.5, 46.7, 680 },
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 44053,	-- Friends With Benefits
 				}),
 				q(43524),	-- Court of Stars: Literary Perfection
-				q(38695),	-- Crackdown
+				q(38695, {	-- Crackdown
+					["coord"] = { 36.6, 45.0, 680 },
+					["provider"] = { "n", 115710 },	-- Chief Telemancer Oculeth
+					["sourceQuest"] = 38649,	-- Silence in the City
+				}),
 				q(40973, {	-- Creating Time
 					["u"] = 40,	-- Legacy Quests
 				}),
@@ -324,7 +349,9 @@ _.Zones =
 					["sourceQuest"] = 40625,	-- A Different Source
 				}),
 				q(44722, {	-- Disillusioned Defector
-					["isBreadcrumb"] = true,
+					["coord"] = { 36.4, 46.7, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 45261,	-- Continuing the Cure
 				}),
 				q(41148, {	-- Dispensing Compassion
 					["coord"] = { 48.4, 83.2, 680 },
@@ -352,7 +379,14 @@ _.Zones =
 					["provider"] = { "n", 107632 },	-- Ly'leth Lunastre
 					["sourceQuest"] = 43309,	-- The Perfect Opportunity
 				}),
-				q(41146),	-- Elegant Design
+				q(41146, {	-- Elegant Design
+					["coord"] = { 41.5, 71.2, 680 },
+					["provider"] = { "n", 103175 },	-- Lespin Silverleaf
+					["sourceQuests"] = {
+						41465,	-- Estate Jewelry: A Braggart's Brooch
+						41466,	-- Estate Jewelry: Haute Claw-ture
+					},
+				}),
 				q(41494, {	-- Eminent Grow-main
 					["coord"] = { 26.1, 31.3, 680 },
 					["provider"] = { "n", 103569 },	-- Mythandros Irongrove
@@ -371,9 +405,27 @@ _.Zones =
 					["provider"] = { "n", 103155 },	-- Arcanist Valtrois
 					["sourceQuest"] = 43562,	-- Giving It All We've Got
 				}),
-				q(44752),	-- Essence Triangulation
-				q(41465),	-- Estate Jewelry: A Braggart's Brooch
-				q(41466),	-- Estate Jewelry: Haute Claw-ture
+				q(44752, {	-- Essence Triangulation
+					["coord"] = { 43.3, 78.7, 680 },
+					["provider"] = { "n", 115248 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 44742,	-- Tavernkeeper's Fate
+				}),
+				q(41465, {	-- Estate Jewelry: A Braggart's Brooch
+					["coord"] = { 41.5, 71.2, 680 },
+					["provider"] = { "n", 103175 },	-- Lespin Silverleaf
+					["sourceQuests"] = {
+						41307,	-- All That Glitters
+						41320,	-- Pry It From Their Cold, Feral Claws
+					},
+				}),
+				q(41466, {	-- Estate Jewelry: Haute Claw-ture
+					["coord"] = { 41.5, 71.2, 680 },
+					["provider"] = { "n", 103175 },	-- Lespin Silverleaf
+					["sourceQuests"] = {
+						41307,	-- All That Glitters
+						41320,	-- Pry It From Their Cold, Feral Claws
+					},
+				}),
 				q(45066),	-- Experimental Instability
 				q(40883, {	-- Fate of the Guard
 					["coord"] = { 27.8, 21.1, 680 },
@@ -570,7 +622,14 @@ _.Zones =
 					["provider"] = { "n", 103570 },	-- Mardranel Forestheart
 					["sourceQuest"] = 41452,	-- Feline Frantic
 				}),
-				q(44725),	-- Hostage Situation
+				q(44725, {	-- Hostage Situation
+					["coord"] = { 52.1, 79.1, 680 },
+					["provider"] = { "n", 114948 },	-- Silgryn
+					["sourceQuests"] = {
+						44724,	-- Missing Persons
+						44723,	-- More Like Me
+					},
+				}),
 				q(42833, {	-- How It's Made: Arcwinee
 					["coord"] = { 56.0, 51.8, 680 },
 					["provider"] = { "n", 108872 },	-- Margaux
@@ -598,7 +657,11 @@ _.Zones =
 						44040,	-- Vote of Confidence
 					},
 				}),
-				q(44726),	-- In the Business of Souls
+				q(44726, {	-- In the Business of Souls
+					["coord"] = { 24.8, 88.6, 680 },
+					["provider"] = { "n", 115067 },	-- Silgryn
+					["sourceQuest"] = 44725,	-- Hostage Situation
+				}),
 				q(44569),	-- Inquisitor Volitix
 				q(45271),	-- Insurrection
 				q(45278, {	-- Insurrection: An Elven Problem
@@ -852,7 +915,11 @@ _.Zones =
 					["sourceQuest"] = 42399,  -- Ready to Work
 					["classes"] = { 3 },	-- Hunter
 				}),
-				q(44724),	-- Missing Persons
+				q(44724, {	-- Missing Persons
+					["coord"] = { 52.1, 79.1, 680 },
+					["provider"] = { "n", 114948 },	-- Silgryn
+					["sourceQuest"] = 44722,	-- Disillusioned Defector
+				}),
 				q(43808, {	-- Moon Guard Teleporter Online!
 					["coord"] = { 30.8, 11.0, 680 },
 					["provider"] = { "o", 252814 },	-- Unpowered Telemancy Beacon
@@ -867,7 +934,11 @@ _.Zones =
 					["provider"] = { "n", 103571 },	-- Solendra Featherdown
 					["sourceQuest"] = 41478,	-- The Final Blessing
 				}),
-				q(44723),	-- More Like Me
+				q(44723, {	-- More Like Me
+					["coord"] = { 52.0, 79.1, 680 },
+					["provider"] = { "n", 114956 },	-- Victoire
+					["sourceQuest"] = 44722,	-- Disillusioned Defector
+				}),
 				q(42494, {	-- More Than Just A Food Vendor
 					["classes"] = { 8 },	-- Mage
 				}),
@@ -900,7 +971,11 @@ _.Zones =
 					["provider"] = { "n", 101499 },	-- Chief Telemancer Oculeth
 					["sourceQuest"] = 40747,	-- The Delicate Art of Telemancy
 				}),
-				q(38720),	-- No Reason to Stay
+				q(38720, {	-- No Reason to Stay
+					["coord"] = { 47.8, 82.9, 680 },
+					["provider"] = { "n", 114948 },	-- Silgryn
+					["sourceQuest"] = 38695,	-- Crackdown
+				}),
 				q(45056, {	-- Noressa
 					["coord"] = { 39.5, 51.1, 680 },
 					["provider"] = { "n", 101848 },	-- Absolon
@@ -931,7 +1006,11 @@ _.Zones =
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 42229,	-- Shal'Aran
 				}),
-				q(44753),	-- On Public Display
+				q(44753, {	-- On Public Display
+					["coord"] = { 52.0, 79.1, 680 },
+					["provider"] = { "n", 115248 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 44752,	-- Essence Triangulation
+				}),
 				q(45260, {	-- One Day at a Time
 					["coord"] = { 36.4, 46.7, 680 },
 					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
@@ -1004,7 +1083,11 @@ _.Zones =
 					["provider"] = { "n", 103569 },	-- Mythandros Irongrove
 					["sourceQuest"] = 41473,	-- Redhoof the Ancient
 				}),
-				q(41320),	-- Pry It From Their Cold, Feral Claws
+				q(41320, {	-- Pry It From Their Cold, Feral Claws
+					["coord"] = { 41.5, 71.2, 680 },
+					["provider"] = { "n", 103175 },	-- Lespin Silverleaf
+					["sourceQuest"] = 41123,	-- An Artisan's Mark
+				}),
 				q(40370, {	-- Purge the Unclean
 					["coord"] = { 43.4, 41.7, 680 },
 					["provider"] = { "n", 99788 },	-- Morhun Rivertamer
@@ -1035,7 +1118,11 @@ _.Zones =
 					["provider"] = { "n", 102425 },	-- Serena Windfeather
 					["sourceQuest"] = 40963,	-- Take Them in Claw
 				}),
-				q(44563),	-- Redemption for the Fallen
+				q(44563, {	-- Redemption for the Fallen
+					["coord"] = { 36.7, 46.5, 680 },
+					["provider"] = { "n", 107126 },	-- Valewalker Farodin
+					["sourceQuest"] = 44562,	-- Growing Strong
+				}),
 				q(41473, {	-- Redhoof the Ancient
 					["coord"] = { 25.6, 30.8, 680 },
 					["provider"] = { "n", 103568 },	-- Mayruna Moonwing
@@ -1047,7 +1134,14 @@ _.Zones =
 					["provider"] = { "n", 107225 },	-- Deline
 					["sourceQuest"] = 41878,	-- The Gondolier
 				}),
-				q(38694),	-- Regroup
+				q(38694, {	-- Regroup
+					["coord"] = { 49.6, 85.3, 680 },
+					["provider"] = { "n", 115018 },	-- Silgryn
+					["sourceQuests"] = {
+						38692,	-- Answering Aggression
+						38720,	-- No Reason to Stay
+					},
+				}),
 				q(40907, {	-- Removing Obstacles
 					["provider"] = { "n", 102309 },	-- Toryl
 					["sourceQuest"] = 42230,	-- The Valewalker's Burden
@@ -1168,14 +1262,26 @@ _.Zones =
 					["description"] = "Automated granted when approaching the first fallen Moon Guard member.",
 					["sourceQuest"] = 40883,	-- Fate of the Guard
 				}),
-				q(44756),	-- Sign of the Dusk Lily
-				q(38649),	-- Silence in the City
+				q(44756, {	-- Sign of the Dusk Lily
+					["coord"] = { 48.8, 67.0, 680 },
+					["provider"] = { "n", 115604 },	-- Vanthir
+					["sourceQuest"] = 41915,	-- The Master's Legacy
+				}),
+				q(38649, {	-- Silence in the City
+					["coord"] = { 36.4, 46.7, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 45260,	-- One Day at a Time
+				}),
 				q(42836, {	-- Silkwing Sabotage
 					["coord"] = { 61.3, 56.0, 680 },
 					["provider"] = { "n", 112653 },	-- Sylverin
 					["sourceQuest"] = 42835,	-- The Old Fashioned Way
 				}),
-				q(44727),	-- Smuggled!
+				q(44727, {	-- Smuggled!
+					["coord"] = { 25.7, 88.5, 680 },
+					["provider"] = { "n", 115002 },	-- Maribeth
+					["sourceQuest"] = 44725,	-- Hostage Situation
+				}),
 				q(40348, {	-- Something in the Water
 					["coord"] = { 43.4, 41.7, 680 },
 					["provider"] = { "n", 99788 },	-- Morhun Rivertamer
@@ -1200,7 +1306,11 @@ _.Zones =
 						41409,	-- Timing Is Everything
 					},
 				}),
-				q(45316),	-- Stabilizing Suramar
+				q(45316, {	-- Stabilizing Suramar
+					["coord"] = { 36.4, 46.7, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 44756,	-- Sign of the Dusk Lily
+				}),
 				q(44740),	-- Staging Point
 				q(40969, {	-- Starweaver's Fate
 					["coord"] = { 36.4, 22.4, 680 },
@@ -1278,8 +1388,15 @@ _.Zones =
 				q(40161, {	-- Tapping the Underground
 					["u"] = 1,	-- Never Available
 				}),
-				q(44742),	-- Tavernkeeper's Fate
-				q(43809),	-- Tel'anor'eporter Online!
+				q(44742, {	-- Tavernkeeper's Fate
+					["coord"] = { 36.5, 46.7, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 45262,	-- A Message From Ly'leth
+				}),
+				q(43809, {	-- Tel'anor'eporter Online!
+					["coord"] = { 42.0, 35.2, 680 },
+					["provider"] = { "o", 252817 },	-- Unpowered Telemancy Beacon
+				}),
 				q(45067),	-- Telemantic Expanse
 				q(44822),	-- Temporal Investigations
 				q(41034, {	-- Testing the Waters
@@ -1391,7 +1508,11 @@ _.Zones =
 					["provider"] = { "n", 105071 },	-- Silgryn
 					["sourceQuest"] = 41762,	-- Sympathizers Among the Shal'dorei
 				}),
-				q(41915),	-- The Master's Legacy
+				q(41915, {	-- The Master's Legacy
+					["coord"] = { 41.6, 59.9, 680 },
+					["provider"] = { "n", 104394 },	-- Lady Anastae
+					["sourceQuest"] = 41146,	-- Elegant Design
+				}),
 				q(45207, {	-- The Nightborne Apprentice
 					["classes"] = { 8 },	-- Mage
 				}),
@@ -1471,7 +1592,11 @@ _.Zones =
 					["provider"] = { "n", 108101 },	-- Ancient Seed
 					["sourceQuest"] = 42228,	-- The Hidden City
 				}),
-				q(42889),	-- The Way Back Home
+				q(42889, {	-- The Way Back Home
+					["coord"] = { 51.9, 78.7, 680 },
+					["provider"] = { "o", 265532 },	-- Telemancy Beacon
+					["sourceQuest"] = 38694,	-- Regroup
+				}),
 				q(41215, {	-- They Become The Hunted
 					["coord"] = { 61.8, 49.1, 680 },
 					["provider"] = { "n", 106897 },	-- Nighteyes
@@ -1541,7 +1666,11 @@ _.Zones =
 					["provider"] = { "n", 108870 },	-- Sylverin
 					["sourceQuest"] = 42838,	-- Reversal
 				}),
-				q(44955),	-- Visitor in Shal'Aran
+				q(44955, {	-- Visitor in Shal'Aran
+					["coord"] = { 36.4, 46.7, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 42889,	-- The Way Back Home
+				}),
 				q(44040, {	-- Vote of Confidence
 					["coord"] = { 57.5, 57.5, 680 },
 					["provider"] = { "n", 110679 },	-- Aurore
@@ -1556,13 +1685,24 @@ _.Zones =
 					["provider"] = { "n", 111605 },	-- Moonfall Riding Hippogryph
 					["sourceQuest"] = 40968,	-- Recovering Stolen Power
 				}),
-				q(44814),	-- Waning Refuge
+				q(44814, {	-- Waning Refuge
+					["coord"] = { 24.8, 88.6, 680 },
+					["provider"] = { "n", 115067 },	-- Silgryn
+					["sourceQuests"] = {
+						44726,	-- In the Business of Souls
+						44727,	-- Smuggled!
+					},
+				}),
 				q(44051, {	-- Wasted Potential
 					["coord"] = { 47.9, 81.5, 680 },
 					["provider"] = { "n", 111900 },	-- Rosaine
 					["sourceQuest"] = 42486,	-- little One Lost
 				}),
-				q(44754),	-- Waxing Crescent
+				q(44754, {	-- Waxing Crescent
+					["coord"] = { 52.2, 79.0, 680 },
+					["provider"] = { "n", 115557 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 44753,	-- On Public Display
+				}),
 				q(44829),	-- We Need Weapons
 				q(41702, {	-- Written in Stone
 					["coord"] = { 20.9, 52.2, 680 },

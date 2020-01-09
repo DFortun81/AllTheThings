@@ -211,8 +211,9 @@ _.Zones =
 					},
 				}),
 				n(113425, {	-- Rovendros
-					["description"] = "This is a hidden NPC that you find in a cave within Crimson Thicket located at 55, 46.  Once you free him he will show up in Shal'aran as a vendor.",
 					["questID"] = 43795,
+					["coord"] = { 54.7, 46.1, 680 },
+					["description"] = "Found inside |cFFFFD700Teloth'aran|r trapped in a web. Free him and he'll join you in Shal'Aran!",
 				}),
 				n(103841, {	-- Shadowquill
 					["questID"] = 43996,
@@ -232,14 +233,6 @@ _.Zones =
 				n(110824, {	-- Tideclaw
 					["questID"] = 43542,
 					["coord"] = { 18.7, 61.1, 680 },
-					["g"] = {
-						i(141011, {	-- Recipe: Surf
-							["description"] = "Drops from any marine mob in the zone.",
-							["g"] = {
-								i(133817), 	-- Recipe: Suramar Surf and Turf
-							},
-						}),
-					},
 				}),
 				n(99899,  {	-- Vicious Whale Shark
 					["questID"] = 44669,
@@ -251,24 +244,6 @@ _.Zones =
 						{ 75.9, 58.8, 680 },
 					},
 				}),
---[[
-			--	v(45478, { 		-- Achronos	}),
-			--	v(45504, { 		-- Alteria	}),
-			--	v(45475, { 		-- Auditor Esiel	}),
-			--	v(45471, { 		-- Az'jatar	}),
-			--	n(103787, { 	-- Baconlisk	}),
-			--	n(105632, { 	-- Broodmother Shu'malis	}),
-			--	v(45503, { 		-- Colerian	}),
-			--	v(41134, { 		-- Jetsam	}),
-			--	v(45476, { 		-- Magistrix Vilessa	}),
-			--	v(45506, { 		-- Oglok the Furious	}),
-			--	n(113694, { 	-- Pashya	}),
-			--	n(105739, { 	-- Sanaar	}),
-			--	v(45505, { 		-- Scythemaster Cil'raman	}),
-			--	v(45502, { 		-- Selenyi	}),
-			--	v(45477, { 		-- Sorallus	}),
-			--	v(45474, { 		-- Volshax, Breaker of Will	}),
---]]
 			}),
 		}),
 	}),

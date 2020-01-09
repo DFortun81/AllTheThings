@@ -18,6 +18,14 @@ _.Zones =
 					["questID"] = 43849,
 					["coord"] = { 42.5, 20.5, 680 },
 				}),
+				o(252831, {	-- Glimmering Treasure Chest
+					["questID"] = 43856,
+					["description"] = "Inside a cave hidden behind the waterfall.",
+					["coords"] = {
+						{ 42.3, 30.0, 680 },
+						{ 44.0, 31.9, 680 },
+					},
+				}),
 				o(252447, {	-- Shimmering Ancient Mana Cluster
 					["questID"] = 43744,
 					["coord"] = { 46.6, 26.0, 680 },

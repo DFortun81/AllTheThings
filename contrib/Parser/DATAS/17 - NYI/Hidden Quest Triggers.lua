@@ -1163,6 +1163,17 @@ _.NeverImplemented =
 	--	Rares
 		q(39533),	-- Durguth — WQ rare in suramar, attached WQ to rare so his special drop shows in /attwq
 		q(45512),	-- Mawat'aki — WQ rare in Highmountain
+		q(45477),	-- Suramar - WQ rare: Sorallus
+		q(45502),	-- Suramar - WQ rare: Selenyi
+		q(45503),	-- Suramar - WQ rare: Colerian
+		q(45504),	-- Suramar - WQ rare: Alteria
+		q(45478),	-- Suramar - WQ rare: Achronos
+		q(45475),	-- Suramar - WQ rare: Auditor Esiel
+		q(45471),	-- Suramar - WQ rare: Az'jatar
+		q(45476),	-- Suramar - WQ rare: Magistrix Vilessa
+		q(45506),	-- Suramar - WQ rare: Oglok the Furious
+		q(45505),	-- Suramar - WQ rare: Scythemaster Cil'raman
+		q(45474),	-- Suramar - WQ rare: Volshax, Breaker of Will
 		
 	--	Treasures
 		q(40692),	-- 7.0 Suramar - Treasure 000 - The Drift - L (DLA) — suramar treasure in cliffside at 58.6, 33.8
