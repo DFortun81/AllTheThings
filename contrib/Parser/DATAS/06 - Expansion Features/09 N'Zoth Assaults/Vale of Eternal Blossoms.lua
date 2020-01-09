@@ -275,6 +275,18 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 154444 },	-- Stormspeaker Qian
 							["sourceQuest"] = 56771,	-- Time-Lost Warriors
 						}),
+						q(57721, {	-- Spoils of War
+							["coord"] = { 43.9, 71.7, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 154677 },	-- Forgemaster Han
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
+						q(58477, {	-- Through Blood and Dirt and Bone
+							["coord"] = { 44.7, 73.8, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
 					}),
 					n(-16,  {	-- Rares
 						n(157466, {	-- Anh-De the Loyal
@@ -295,13 +307,6 @@ _.ExpansionFeatures =
 							["coord"] = { 39.2, 59.6, 1530 },
 							["isDaily"] = true,
 						}),
-						--[[
-						n(156041, {	-- Empty Golem -- TODO:: determine activation criteria
-							--["questID"] = ,
-							["coord"] = { 18.7, 65.8, 1530 },
-							["isDaily"] = true,
-						}),
-						]]--
 						n(157153, {	-- Ha-Li
 							["questID"] = 57344,
 							["isDaily"] = true,
@@ -516,13 +521,6 @@ _.ExpansionFeatures =
 							["coord"] = { 25.4, 45.7, 1530 },
 							["isDaily"] = true,
 						}),
-						--[[
-						n(, {	-- 
-							["questID"] = ,
-							["coord"] = { , 1530 },
-							["isDaily"] = true,
-						}),
-						]]
 					}),
 					n(-34, {	-- World Quests
 						q(57728, {	-- Assault: The Endless Swarm
@@ -672,12 +670,6 @@ _.ExpansionFeatures =
 						i(168573),	-- Death-Resistant Leaf (Rank 1)
 						i(168436),	-- Focused Star Point (Rank 1)
 					},
-				}),
-				q(57721, {	-- Spoils of War -- wasn't available on latest play-through. Possibly only up when Assault: Warring Clans is up?
-					["coord"] = { 43.9, 71.7, 1530 },
-					["isDaily"] = true,
-					["provider"] = { "n", 154677 },	-- Forgemaster Han
-					["sourceQuest"] = 56771,	-- Time-Lost Warriors
 				}),
 				q(58096, {	-- Supplies from the Rajani
 					["repeatable"] = true,
