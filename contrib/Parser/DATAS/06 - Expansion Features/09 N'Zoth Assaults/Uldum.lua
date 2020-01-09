@@ -636,17 +636,113 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 58805,	-- Continued Incubation
 						["description"] = "Must complete 2x |cFFFFD700Continued Incubation|r daily quests.",
 					}),
+					q(58809, {	-- A Shocking Technique
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58808,	-- Encased in Amber
+					}),
 					q(58810, {	-- Coming Out of His Shell
 						["coord"] = { 55.6, 35.3, 1527 },
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58805,	-- Continued Incubation
-						["description"] = "Must reach 5000/5000 egg progress.",
+						["description"] = "Must reach 5000/5000 with the egg's progress bar.",
 						["g"] = {
 							i(175063),	-- Aqir Egg Cluster
 						},
 					}),
-					-- this pet comes from the mount questline eventually:
-					--i(175049),	-- Shadowbarb Hatchling
+					q(58811, {	-- A Balanced Diet
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58810,	-- Coming Out of His Shell
+					}),
+					q(58812, {	-- Meat Alternatives
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58811,	-- A Balanced Diet
+					}),
+					q(58813, {	-- Fetid Filets
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 558812,	-- Meat Alternatives
+					}),
+					q(58858, {	-- More Fetid Filets
+						["coord"] = { 55.6, 35.3, 1527 },
+						["isDaily"] = true,
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58813,	-- Fetid Filets
+					}),
+					q(58818, {	-- Bug Buddies
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58813,	-- Fetid Filets
+						["description"] = "Can appear during Aqir invasions in Uldum.",
+					}),
+					q(58817, {	-- Action Figures
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58813,	-- Fetid Filets
+						["description"] = "Can appear during Amathet invasions in Uldum.",
+					}),
+					q(58825, {	-- Super Jelly
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58813,	-- Fetid Filets
+						["description"] = "Can appear during Mantid invasions in the Vale of Eternal Blossoms.",
+					}),
+					q(58829, {	-- They Grow So Fast
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58813,	-- Fetid Filets
+						["description"] = "Must reach 5000/5000 with the larva's progress bar.",
+						["g"] = {
+							i(175049),	-- Shadowbarb Hatchling
+						},
+					}),
+					q(58830, {	-- Aqir Instincts
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58829,	-- They Grow So Fast
+					}),
+					q(58861, {	-- The Mantids' Mettle
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58830,	-- Aqir Instincts
+					}),
+					q(58831, {	-- Honing Instincts
+						["coord"] = { 55.6, 35.3, 1527 },
+						["isDaily"] = true,
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58861,	-- They Mantids' Mettle
+					}),
+					q(58862, {	-- The Littlest Defender
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58861,	-- The Mantid's Mettle
+					}),
+					q(58859, {	-- Someone His Own Size
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58862,	-- The Littlest Defender
+					}),
+					q(58863, {	-- A Custom Order
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58859,	-- Someone His Own Size
+						["description"] = "Must reach 5000/5000 with the hatchling's progress bar.",
+					}),
+					q(58865, {	-- Otherworldly Armaments
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58863,	-- A Custom Order
+					}),
+					q(58866, {	-- My Own Drone
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58865,	-- Otherworldly Armaments
+						["g"] = {
+							i(174771),	-- Shadowbarb Drone
+						},
+					}),
 				}),
 				q(58640, {	-- A Crack in the Armor
 					["lvl"] = 120,
