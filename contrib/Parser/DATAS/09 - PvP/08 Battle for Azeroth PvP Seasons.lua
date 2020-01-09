@@ -4,6 +4,24 @@
 _.PVP =
 {
 	n(-10052, {	-- Battle for Azeroth
+		n(-17, {	-- Quests
+			q(58274, {	-- Servant of N'Zoth
+				["races"] = ALLIANCE_ONLY,
+				["description"] = "Granted upon killing 10 Horde players without dying to become an Assassin.",
+				["g"] = {
+					title(414),	-- %s, Servant of N'Zoth
+					i(173951),	-- N'lyeth, Sliver of N'Zoth
+				},
+			}),
+			q(58273, {	-- Servant of N'Zoth
+				["races"] = HORDE_ONLY,
+				["description"] = "Granted upon killing 10 Alliance players without dying to become an Assassin.",
+				["g"] = {
+					title(414),	-- %s, Servant of N'Zoth
+					i(173951),	-- N'lyeth, Sliver of N'Zoth
+				},
+			}),
+		}),
 		n(-689, {	-- Dread Gladiator: Battle for Azeroth Season 1
 			n(-660, {	-- Aspirant PvP Gear
 				n(-319, {	-- Weapons
