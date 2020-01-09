@@ -145,6 +145,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(60246),	-- Firelord's Mantle
 							}),
 							i(152972),	-- Twilight Summoning Portal (PET!)
+							i(175159, {	-- Sinister Shadows
+								["races"] = { VULPERA },
+							}),
 							i(59330),	-- Shalug'doom, the Axe of Unmaking
 							i(59494),	-- "Uhn'agh Fash, the Darkest Betrayal"
 							i(63680),	-- Twilight's Hammer
@@ -289,6 +292,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(65213)	-- Firelord's Mantle
 							}),
 							i(152972),	-- Twilight Summoning Portal (PET!)
+							i(175159, {	-- Sinister Shadows
+								["races"] = { VULPERA },
+							}),
 							i(65145),	-- Shalug'doom, the Axe of Unmaking
 							i(65090),	-- Twilight's Hammer
 							i(68600),	-- Uhn'agh Fash, the Darkest Betrayal

@@ -509,6 +509,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(71060),	-- Elementium Deathplate Helmet
 							}),
 							i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
+							i(175158, {	-- Flames of Fury
+								["races"] = { VULPERA },
+							}),
 							i(71798),	-- Sho'ravon, Greatstaff of Annihilation
 							i(71352),	-- Sulfuras, the Extinguished Hand
 							i(71355),	-- Ko'gun, Hammer of the Firelord
@@ -883,6 +886,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(71483),	-- Elementium Deathplate Faceguard
 							}),
 							i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
+							i(175158, {	-- Flames of Fury
+								["races"] = { VULPERA },
+							}),
 							i(71797),	-- Sho'ravon, Greatstaff of Annihilation
 							i(70723),	-- Sulfuras, the Extinguished Hand
 							i(71615),	-- Ko'gun, Hammer of the Firelord
