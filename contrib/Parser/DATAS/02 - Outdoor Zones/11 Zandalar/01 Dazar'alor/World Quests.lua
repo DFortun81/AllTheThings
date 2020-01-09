@@ -7,11 +7,6 @@ _.Zones =
 		m(1163, {	-- Dazar'alor
 			n(-34, {	-- World Quests
 				n(-17, {	-- Quests
-					q(53435, {	-- Azerite For the Horde
-						["lvl"] = 120,
-						["races"] = HORDE_ONLY,
-						["isWorldQuest"] = true,
-					}),
 					q(52251, {	-- Compromised Reconnaissance
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,

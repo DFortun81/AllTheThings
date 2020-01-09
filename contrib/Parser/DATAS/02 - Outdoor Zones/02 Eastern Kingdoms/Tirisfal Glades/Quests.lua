@@ -24,6 +24,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 25009 },	-- At War With The Scarlet Crusade
 				}),
+				q(361, {	-- A Letter Undelivered
+					["provider"] = { "i", 2839 },	-- A Letter to Yvette
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+				}),
 				q(25013, {	-- A Little Oomph
 					["provider"] = { "n", 11057 },	-- Apothecary Dithers
 					["coord"] = { 83.2, 69.2, 18 },
@@ -83,6 +88,10 @@ _.Zones =
 					["lvl"] = 5,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 6784 },	-- Calvin Montague
+				}),
+				q(590, {	-- A Rogue's Deal
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
 				}),
 				q(24979, {	-- A Scarlet Letter
 					["crs"] = { 1535 },	-- Scarlet Warrior

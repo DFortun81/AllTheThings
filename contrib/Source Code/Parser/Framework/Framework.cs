@@ -718,28 +718,26 @@ namespace ATT
             }
 
             // Include in breadcrumb quests the list of next quests that may make the breadcrumb unable to complete
-            foreach (var QuestID in Objects.AllQuests.Keys)
+            bool isBreadcrumb;
+            foreach (var pair in Objects.AllQuests)
             {
-                var Quest = Objects.AllQuests[QuestID];
-                if (Quest.TryGetValue("sourceQuests", out List<object> sourceQuests))
+                if (pair.Value.TryGetValue("sourceQuests", out List<object> sourceQuests))
                 {
-                    foreach(int source in sourceQuests)
+                    foreach(var sourceQuestRef in sourceQuests)
                     {
-                        Dictionary<string, object> sourceQuest = null;
-                        if (Objects.AllQuests.TryGetValue(source.ToString(), out sourceQuest))
+                        var sourceQuestID = Convert.ToInt64(sourceQuestRef);
+                        if (Objects.AllQuests.TryGetValue(sourceQuestID, out Dictionary<string, object> sourceQuest))
                         {
-                            sourceQuest.TryGetValue("isBreadcrumb", out bool isBreadcrumb);
-                            if (isBreadcrumb)
+                            if (sourceQuest.TryGetValue("isBreadcrumb", out isBreadcrumb) && isBreadcrumb)
                             {
                                 // Source Quest is a breadcrumb, add current quest into breadcrumb's next quests list
                                 if (sourceQuest.TryGetValue("nextQuests", out List<object> nextQuests))
                                 {
-                                    if (!nextQuests.Contains(Convert.ToInt32(QuestID)))
-                                        nextQuests.Add(Convert.ToInt32(QuestID));
+                                    if (!nextQuests.Contains(pair.Key)) nextQuests.Add(pair.Key);
                                 }
                                 else
                                 {
-                                    sourceQuest.Add("nextQuests", new List<object>() { Convert.ToInt32(QuestID) });
+                                    sourceQuest.Add("nextQuests", new List<object>() { pair.Key });
                                 }
                             }
                         }
@@ -749,37 +747,34 @@ namespace ATT
                         }
                     }
                 }
-            }
-
-            foreach (var QuestID in Objects.AllQuests.Keys)
-            {
-                var Quest = Objects.AllQuests[QuestID];
-                Quest.TryGetValue("isBreadcrumb", out bool isBreadcrumb);
-                if (isBreadcrumb)
+                if (pair.Value.TryGetValue("isBreadcrumb", out isBreadcrumb) && isBreadcrumb)
                 {
-                    if (!Quest.TryGetValue("nextQuests", out List<object> nextQuests))
+                    if (!pair.Value.TryGetValue("nextQuests", out List<object> nextQuests))
                     {
                         // Breadcrumb quest without next quests information
                     }
                 }
             }
 
-            var unsortedQuests = new List<object>();
-            int maxQuestID = QUESTS.Max(x => x.Key);
-            for(int i = 1;i <= maxQuestID; i++)
+            if (QUESTS.Any())
             {
-                if(!QUESTS_WITH_REFERENCES.ContainsKey(i) && QUESTS.TryGetValue(i, out Dictionary<string, object> questRef) && questRef.ContainsKey("text"))
+                var unsortedQuests = new List<object>();
+                int maxQuestID = QUESTS.Max(x => x.Key);
+                for (int i = 1; i <= maxQuestID; i++)
                 {
-                    unsortedQuests.Add(new Dictionary<string, object>() { { "questID", i } });
+                    if (!QUESTS_WITH_REFERENCES.ContainsKey(i) && QUESTS.TryGetValue(i, out Dictionary<string, object> questRef) && questRef.ContainsKey("text"))
+                    {
+                        unsortedQuests.Add(new Dictionary<string, object>() { { "questID", i } });
+                    }
                 }
-            }
-            if(unsortedQuests.Count > 0)
-            {
-                unsorted.Add(new Dictionary<string, object>
+                if (unsortedQuests.Count > 0)
+                {
+                    unsorted.Add(new Dictionary<string, object>
                     {
                         { "npcID", -17 },
                         { "g", unsortedQuests },
                     });
+                }
             }
         }
 

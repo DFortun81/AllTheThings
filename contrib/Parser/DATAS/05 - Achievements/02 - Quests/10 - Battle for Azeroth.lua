@@ -50,10 +50,18 @@ _.Achievements =
 						crit(5),	-- Boltspitter
 					}),
 					ach(13050, {	-- Bless the Rains Down in Freehold
-						crit(1),		-- Banana Hoard
-						crit(2),		-- Sweete's Feast
-						crit(3),		-- Cart o' Cutlasses
-						crit(4),		-- Blacktooth Brew
+						crit(1, {		-- Banana Hoard
+							["coord"] = { 76.15, 84.60, 895 }
+						}),
+						crit(2, {		-- Sweete's Feast
+							["coord"] = { 73.38, 83.92, 895 }
+						}),
+						crit(3, {		-- Cart o' Cutlasses
+							["coord"] = { 75.05, 82.94, 895 }
+						}),
+						crit(4, {		-- Blacktooth Brew
+							["coord"] = { 76.69, 81.80, 895 }
+						}),
 					}),
 					h(ach(13020, {	-- Bow to Your Masters
 						crit(1),		-- Bwonsamdi respected
@@ -270,13 +278,16 @@ _.Achievements =
 					h(ach(13924, {	-- The Fourth War
 						title(412),	-- Veteran of the Fourth War, <Name>
 					})),
-					a(ach(13049, {	-- The Long Con
-						crit(1),		-- Aged to Perfection
-						crit(2),		-- Trixie Business
-						crit(3),		-- Carentan's Payment
-						crit(4),		-- A Bad Deal
-						crit(5),		-- The Long Con
-					})),
+					ach(13049, {	-- The Long Con
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							crit(1),		-- Aged to Perfection
+							crit(2),		-- Trixie Business
+							crit(3),		-- Carentan's Payment
+							crit(4),		-- A Bad Deal
+							crit(5),		-- The Long Con
+						},
+					}),
 					a(ach(13553, {	-- The Mechagonian Threat (A)
 						crit(1),	-- The Legend of Mechagon
 						crit(2),	-- Looking Inside

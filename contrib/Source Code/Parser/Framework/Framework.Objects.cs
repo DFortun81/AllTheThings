@@ -54,7 +54,7 @@ namespace ATT
             /// <summary>
             /// All of the Quests that are in the database.
             /// </summary>
-            public static IDictionary<string, Dictionary<string, object>> AllQuests { get; } = new Dictionary<string, Dictionary<string, object>>();
+            public static IDictionary<long, Dictionary<string, object>> AllQuests { get; } = new Dictionary<long, Dictionary<string, object>>();
 
             #endregion
             #region Filters
@@ -436,6 +436,11 @@ namespace ATT
 
 	            // Blacksmithing Skills
 	            {164, 164},	// Blacksmithing [7.3.5]
+                {9788, 9788},   // Armorsmithing
+                {9787, 9787},   // Weaponsmithing
+                {17041, 17041},   // Master Axesmith
+                {17040, 17040},   // Master Hammersmith
+                {17039, 17039},   // Master Swordsmith
 	            {2477, 164},	// Classic Blacksmithing [8.0.1]
 	            {2476, 164},	// Outland Blacksmithing [8.0.1]
 	            {2475, 164},	// Northrend Blacksmithing [8.0.1]
@@ -475,6 +480,8 @@ namespace ATT
 
 	            // Engineering Skills
 	            {202, 202},	// Engineering [7.3.5]
+                {20219, 20219},    // Gnomish Engineering
+                {20222, 20222},    // Goblin Engineering
 	            {2506, 202},	// Classic Engineering [8.0.1]
 	            {2505, 202},	// Outland Engineering [8.0.1]
 	            {2504, 202},	// Northrend Engineering [8.0.1]
@@ -1828,15 +1835,16 @@ namespace ATT
 
                 // Merge the entry with the data.
                 Merge(entry, data2);
+
                 // Add quest entry to AllQuest collection
-                if (entry.TryGetValue("questID", out string questID))
+                if (entry.TryGetValue("questID", out long questID))
                 {
                     if (!AllQuests.ContainsKey(questID))
                     {
                         AllQuests.Add(questID, entry);
                     }
                 }
-                if (entry.TryGetValue("altQuestID", out string altQuestID))
+                if (entry.TryGetValue("altQuestID", out long altQuestID))
                 {
                     if (!AllQuests.ContainsKey(altQuestID))
                     {

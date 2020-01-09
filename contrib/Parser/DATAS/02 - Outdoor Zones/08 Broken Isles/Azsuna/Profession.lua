@@ -7,10 +7,9 @@ _.Zones =
 		m(630, {	-- Azsuna
 			n(-38, { 	-- Profession
 				prof(171, {	-- Alchemy
-					o(243392, {	-- Alchemy Book
-						q(39390, {	-- A Mysterious Text
-							["sourceQuests"] = { 39566 },	-- The Search for Knowledge
-						}),
+					q(39390, {	-- A Mysterious Text
+						["provider"] = { "o", 243392 },	-- Alchemy Book
+						["sourceQuests"] = { 39566 },	-- The Search for Knowledge
 					}),
 				}),
 				prof(794, {	-- Archaeology
@@ -371,39 +370,53 @@ _.Zones =
 				}),
 				prof(755, {	-- Jewelcrafting
 				--	most of these quests need SQs added/to be verified.  data was taken from wowhead after they were reported as missing on discord.
-					q(40528, {	-- Finishing Touches
-						["requireSkill"] = 755,	-- Jewelcrafting
-						["description"] = "You can pick one recipe to learn first, and then purchase the other two recipes from Jabrul.",
+					q(40528, {	-- Finishing Touches (Azsunite Loop)
 						["coord"] = { 46.6, 41.4, 630 },
+						["description"] = "You can pick one recipe to learn first, and then purchase the other two recipes from Jabrul.",
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["sourceQuests"] = {
+							42214,	-- Knocked for a Loop
+							40525,	-- Getting the Band Back Together
+						},
 						["g"] = {
 							i(137794),	-- Design: Azsunite Loop (Rank 1)
 						},
 					}),
-					q(40526, {	-- Finishing Touches
-						["requireSkill"] = 755,	-- Jewelcrafting
-						["description"] = "You can pick one recipe to learn first, and then purchase the other two recipes from Jabrul.",
+					q(40526, {	-- Finishing Touches (Skystone Loop)
 						["coord"] = { 46.6, 41.4, 630 },
+						["description"] = "You can pick one recipe to learn first, and then purchase the other two recipes from Jabrul.",
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["sourceQuests"] = {
+							42214,	-- Knocked for a Loop
+							40525,	-- Getting the Band Back Together
+						},
 						["g"] = {
 							i(137793),	-- Design: Skystone Loop (Rank 1)
 						},
 					}),
-					q(40527, {	-- Finishing Touches
-						["requireSkill"] = 755,	-- Jewelcrafting
-						["description"] = "You can pick one recipe to learn first, and then purchase the other two recipes from Jabrul.",
+					q(40527, {	-- Finishing Touches (Deep Amber Loop)
 						["coord"] = { 46.6, 41.4, 630 },
+						["description"] = "You can pick one recipe to learn first, and then purchase the other two recipes from Jabrul.",
+						["requireSkill"] = 755,	-- Jewelcrafting
+						["sourceQuests"] = {
+							42214,	-- Knocked for a Loop
+							40525,	-- Getting the Band Back Together
+						},
 						["g"] = {
 							i(137792),	-- Design: Deep Amber Loop (Rank 1)
 						},
 					}),
 					q(40525, {	-- Getting the Band Back Together
-						["requireSkill"] = 755,	-- Jewelcrafting
-						["provider"] = { "n", 100538 },	-- Timothy Jones
 						["coord"] = { 46.6, 41.4, 630 },
+						["provider"] = { "n", 100538 },	-- Timothy Jones
+						["sourceQuest"] = 40524,	-- A Familiar Ring to It
+						["requireSkill"] = 755,	-- Jewelcrafting
 					}),
 					q(42214, {	-- Knocked for a Loop
-						["requireSkill"] = 755,	-- Jewelcrafting
-						["provider"] = { "n", 100538 },	-- Timothy Jones
 						["coord"] = { 46.6, 41.4, 630 },
+						["provider"] = { "n", 100538 },	-- Timothy Jones
+						["sourceQuest"] = 40524,	-- A Familiar Ring to It
+						["requireSkill"] = 755,	-- Jewelcrafting
 					}),
 					q(40547, {	-- To Dalaran, With Love
 						["sourceQuests"] = { 40556 },	-- Jabrul Needs You

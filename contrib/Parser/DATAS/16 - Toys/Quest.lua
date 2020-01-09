@@ -44,6 +44,7 @@ _.Toys =
 		i(119039), 		-- Lilian's Warning Sign
 		i(163607),		-- Lucille's Sewing Needle
 		i(118938), 		-- Manastorm's Duplicator
+		i(142536), 		-- Memory Cube
 		i(119092),		-- Moroes' Famous Polish
 		i(52201), 		-- Muradin's Favor
 		i(119001), 		-- Mystery Keg

@@ -481,6 +481,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80378 },	-- Rangari Navra
 				}),
+				q(36409, {	-- Restoration
+					["coord"] = { 47.0, 38.6, 539 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 84830 },	-- Artificer Baleera
+					["sourceQuest"] = 36408,	-- A Power Lost
+					["requireSkill"] = 755,	-- Jewelcrafting
+				}),
 				q(34996, {	-- Rotting Riverbeasts
 					["coord"] = { 52.6, 59.6, 539 },
 					["races"] = ALLIANCE_ONLY,
@@ -535,6 +542,17 @@ _.Zones =
 						follower(182),	-- Shelly Hamby
 					},
 				}),
+				q(35345, {	-- Shocking Assistance
+					["coord"] = { 54.0, 45.6, 539 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 82496 },	-- Telos
+					["sourceQuest"] = 35344,	-- The Missing Father
+					["requireSkill"] = 171,	-- Alchemy
+					["g"] = {
+						i(109558),	-- A Treatise on the Alchemy of Draenor
+						i(111812),	-- Alchemy Lab, lvl 1
+					},
+				}),
 				q(33115, {	-- Shrouding Stones
 					["sourceQuests"] = { 33062 },	-- Catching his Eye
 					["coord"] = { 29.2, 25.6, 539 },
@@ -558,6 +576,17 @@ _.Zones =
 					["coord"] = { 53.0, 65.3, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80707 },	-- Sleepy Rangari
+				}),
+				q(36287, {	-- Snatch 'n' Grab
+					["coord"] = { 60.8, 32.6, 539 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 84825 },	-- Goggles
+					["sourceQuest"] = 36286,	-- Transponder 047-B
+					["requireSkill"] = 202,	-- Engineering
+					["g"] = {
+						i(111921),	-- Draenor Engineering
+						i(109258),	-- Engineering Works, lvl 1
+					},
 				}),
 				q(33066, {	-- Soul Shards of Summoning
 					["sourceQuests"] = { 33112 },	-- Ominous Portents
@@ -673,6 +702,13 @@ _.Zones =
 				q(34496, {	-- The Hills of Valuun (bonus objective)
 					["coord"] = { 65.1, 33.6, 539 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(35344, {	-- The Missing Father
+					["coord"] = { 55.8, 41.2, 539 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 82497 },	-- Abatha
+					["sourceQuest"] = 35343,	-- The Young Alchemist
+					["requireSkill"] = 171,	-- Alchemy
 				}),
 				q(36241, {	-- The Power of Preservation
 					["sourceQuests"] = { 36240 },	-- Slow and Steady
@@ -807,6 +843,11 @@ _.Zones =
 						i(113149),	-- Flayed Flesh Cloak
 						i(113148),	-- Foulspawn Drape
 					},
+				}),
+				q(36286, {	-- Transponder 047-B
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "i", 115278 },	-- Gnomish Location Transponder
+					["requireSkill"] = 202,	-- Engineering
 				}),
 				q(35552, {	-- Trust No One
 					["sourceQuests"] = { 34787 },	-- Exarch Maladaar

@@ -9,6 +9,11 @@ _.Zones =
 				prof(185, {	-- Cooking
 					["requireSkill"] = 185,
 					["g"] = {
+						q(31337, {	-- A Token of Appreciation
+							["isDaily"] = true,
+							["provider"] = { "n", 64337 },	-- Nomi
+							["description"] = "Summon Nomi using the |cFFFFD700Cooking School Bell|r.",
+						}),
 						q(31471, {	-- Agile as a Tiger
 							["sourceQuests"] = { 31470 },	-- Way of the Wok
 							["coord"] = { 52.7, 52.0, 376 },
@@ -59,6 +64,31 @@ _.Zones =
 								un(1, i(101739)),	-- Recipe: Grand Deluxe Noodle Cart Kit
 								un(1, recipe(145170)),	-- Grand Deluxe Noodle Cart Kit
 							},
+						}),
+						q(31332, {	-- Lesson 1: Sliced Peaches
+							["isDaily"] = true,
+							["provider"] = { "n", 64337 },	-- Nomi
+							["description"] = "Summon Nomi using the |cFFFFD700Cooking School Bell|r.",
+						}),
+						q(31333, {	-- Lesson 2: Instant Noodles
+							["isDaily"] = true,
+							["provider"] = { "n", 64337 },	-- Nomi
+							["description"] = "Summon Nomi using the |cFFFFD700Cooking School Bell|r.",
+						}),
+						q(31334, {	-- Lesson 3: Toasted Fish Jerky
+							["isDaily"] = true,
+							["provider"] = { "n", 64337 },	-- Nomi
+							["description"] = "Summon Nomi using the |cFFFFD700Cooking School Bell|r.",
+						}),
+						q(31335, {	-- Lesson 4: Dried Needle Mushrooms
+							["isDaily"] = true,
+							["provider"] = { "n", 64337 },	-- Nomi
+							["description"] = "Summon Nomi using the |cFFFFD700Cooking School Bell|r.",
+						}),
+						q(31336, {	-- Lesson 5: Pounded Rice Cake
+							["isDaily"] = true,
+							["provider"] = { "n", 64337 },	-- Nomi
+							["description"] = "Summon Nomi using the |cFFFFD700Cooking School Bell|r.",
 						}),
 						q(33146, {	-- Noodle Time
 							["isDaily"] = true,
@@ -218,16 +248,6 @@ _.Zones =
 						}),
 					},
 				}),
---[[				Achievement info for Loremaster related zone quests
-				ach(6301, {		-- Rally the Valley
-					crit(1),		-- Thunderfoot Fields
-					crit(2),		-- Mudmug's Place
-					crit(3),		-- Chen's Masterpiece
-					crit(4),		-- The Stormstout Brewery
-					crit(5),		-- The Hidden Master
-					crit(6),		-- Nesingwary's Safari
-				}),
-]]--
 				q(31329, {	-- A Beautiful Brooch
 					["description"] = "Requires reputation level of \"Good Friend\" or better with Tina Mudclaw to drop.",
 					["provider"] = { "i", 86436 },	-- Beautiful Brooch

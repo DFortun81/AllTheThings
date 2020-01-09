@@ -67,7 +67,7 @@ _.Zones =
 					["provider"] = { "n", 88873 },	-- Okuna Longtusk
 				}),
 				q(38407, {	-- Bottled Up
-				--	["itemID"] = 122699,	-- Okuna's Message
+					["provider"] = { "i", 122699 },	-- Okuna's Message
 					["coord"] = { 49.9, 40.5, 630 },
 					["crs"] = {
 						107439,	-- Salteye Beastfeeder
@@ -161,7 +161,7 @@ _.Zones =
 				}),
 				q(40794, {	-- Fate of the Queen's Reprisal (A)
 					["sourceQuests"] = { 37659 },	-- The Captain's Foot Locker
-				--	["objectID"] = 239328,	-- Captain's Foot Locker
+					["provider"] = { "o", 239328 },	-- Captain's Foot Locker
 					["coord"] = { 65.6, 56.8, 630 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -174,7 +174,7 @@ _.Zones =
 				}),
 				q(42244, {	-- Fate of the Queen's Reprisal (H)
 					["sourceQuests"] = { 37659 },	-- The Captain's Foot Locker
-				--	["objectID"] = 239328,	-- Captain's Foot Locker
+					["provider"] = { "o", 239328 },	-- Captain's Foot Locker
 					["coord"] = { 65.6, 56.8, 630 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -344,10 +344,6 @@ _.Zones =
 					["coord"] = { 53.4, 16.3, 630 },
 					["provider"] = { "n", 89978 },	-- Projection of Senegos
 				}),
-				q(37654, {	-- Maritime Law
-					["coord"] = { 56.5, 59.5, 630 },
-					["provider"] = { "n", 91419 },	-- Mr. Shackle
-				}),
 				q(37657, {	-- Making the World Safe for Profit
 					["coord"] = { 56.5, 59.5, 630 },
 					["provider"] = { "n", 91419 },	-- Mr. Shackle
@@ -364,6 +360,10 @@ _.Zones =
 							i(133544),	-- Kul'Tiras Dress Sabatons
 						}),	
 					},
+				}),
+				q(37654, {	-- Maritime Law
+					["coord"] = { 56.5, 59.5, 630 },
+					["provider"] = { "n", 91419 },	-- Mr. Shackle
 				}),
 				q(38232, {	-- Minion! Kill Them!
 					["sourceQuests"] = { 38460 },	-- Let's Make A Deal
@@ -441,7 +441,7 @@ _.Zones =
 					["coord"] = { 48.4, 34.4, 630 },
 					["provider"] = { "n", 89023 },	-- Nightwatcher Idri
 				}),
-				q(42367, {	-- Quantity over Quality
+				q(42368, {	-- Quantity over Quality
 					["sourceQuests"] = { 42375 },	-- Eye See You
 					["coord"] = { 63.8, 28.8, 630 },
 					["provider"] = { "n", 107245 },	-- Marius Felbane
@@ -687,12 +687,12 @@ _.Zones =
 				}),
 				q(37565, {	-- The Right Weapon for the Job
 					["sourceQuests"] = { 37538 },	-- Round 1, Fight!
-				--	["objectID"] = 239120,	-- Okuna Longtusk's Pack
+					["provider"] = { "o", 239120 },	-- Okuna Longtusk's Pack
 					["coord"] = { 43.4, 24.4, 632 },	-- Oceanus Cove
 				}),
 				q(37660, {	-- The Scythe of Souls
 					["sourceQuests"] = {
-						37653,	-- Reignite the Wards
+						37658,	-- Reignite the Wards
 						37653,	-- Demon Souls
 					},
 					["coord"] = { 43.2, 43.1, 630 },
@@ -743,6 +743,7 @@ _.Zones =
 				q(38237, {	-- This IS In My Contract.
 					["sourceQuests"] = { 38232 },	-- Minion!  Kill Them!
 					["provider"] = { "n", 91165 },	-- Daglop
+					["coord"] = { 62.8, 51.4, 630 },
 					["g"] = {
 						i(138878),	-- Copy of Daglop's Contract (TOY!)
 					},
@@ -800,7 +801,6 @@ _.Zones =
 				q(40526),	-- Finishing Touches
 				q(45848),	-- Fit For a Pirate
 				q(41175),	-- Fit for an Elven Queen
-				q(40525),	-- Getting the Band Back Together
 				q(40193),	-- Getting the Kinks Out
 				q(40144),	-- Glielle
 				q(41177),	-- Goblin Archaeology
@@ -817,7 +817,6 @@ _.Zones =
 				q(39389),	-- It Hungers for Blood
 				q(40556),	-- Jabrul Needs You
 				q(40873),	-- Keep Yer Powder Dry
-				q(42214),	-- Knocked for a Loop
 				q(42689),	-- Knowing Our Enemy
 				q(42691),	-- Leyworm Lure
 				q(40187),	-- Links in the Chain
@@ -838,11 +837,9 @@ _.Zones =
 				q(40855),	-- Our Man in Azsuna
 				q(39934),	-- Our New Allies
 				q(40056),	-- Our New Allies
-				q(41161),	-- Out of the Frying Pan										
-				q(39718),	-- Paradise Lost
+				q(41161),	-- Out of the Frying Pan		
 				q(46794),	-- Paragon of the Court
 				q(46800),	-- Paragon of the Wardens
-				q(37495),	-- Plunder the Cove
 				q(42435),	-- Prepare To Be Assimilated
 				q(39906),	-- Prepping For Battle
 				q(45795),	-- Presence of Power
@@ -878,7 +875,6 @@ _.Zones =
 				q(41163),	-- The Apocalypse Bringer
 				q(44875),	-- The Art of Flow
 				q(43373),	-- The Best and Brightest
-				q(37466),	-- The Broken Academy
 				q(43520),	-- The Emerald Nightmare: In Nightmares
 				q(45028),	-- The Fate of Kanrethad										
 				q(38963),	-- The Final Lesson?
@@ -901,7 +897,6 @@ _.Zones =
 				q(42887),	-- This Is Retribution
 				q(37963),	-- Those Beyond Redemption
 				q(43942),	-- Timeworn Artifact
-				q(37779),	-- Tip the Scales
 				q(42886),	-- To Faronaar
 				q(43489),	-- To Felblaze Ingress
 				q(40061),	-- To Know Your Enemy

@@ -331,12 +331,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						un(2, i(105827)),	-- Kalaena's Arcane Handwraps Normal
 						un(2, i(105828)),	-- Seebo's Sainted Touch Normal
 						un(2, i(105832)),	-- Crimson Gauntlets of Death Normal
-						un(2, i(105831)),	-- Siid's Silent Stranglers Normal
-						un(38, i(105833)),	-- Keengrip Arrowpullers Normal (confirmed to drop from Ordos on 11/14/19)
+						un(38, i(105831)),	-- Siid's Silent Stranglers Normal (confirmed to drop from Ordos cache on 12/29/19)
+						un(38, i(105833)),	-- Keengrip Arrowpullers Normal (confirmed to drop from Ordos cache on 11/14/19)
 						un(2, i(105834)),	-- Marco's Crackling Gloves Normal
 						un(2, i(105837)),	-- Gauntlets of Discarded Time Normal
 						un(2, i(105835)),	-- Romy's Reliable Grips Normal
-						un(2, i(105836)),	-- Zoid's Molten Gauntlets Normal
+						un(38, i(105836)),	-- Zoid's Molten Gauntlets Normal (confirmed to drop from Ordos cache on 12/31/19)
 					}),
 					n(71543, {	-- Immerseus
 						un(2, i(104671)),	-- Bolt-Burster Grips Normal

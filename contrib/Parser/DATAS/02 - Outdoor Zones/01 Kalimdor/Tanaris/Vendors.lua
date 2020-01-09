@@ -315,7 +315,7 @@ _.Zones =
 					},
 				}),
 				n(14743,  {	-- Jhordy Lapforge <Engineer>
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = 20219,	-- Gnomish Engineering
 					["description"] = "Gnomish Engineers can speak to Jhordy to learn the recipe.",
 					["coord"] = { 52.2, 27.8, 71 },
 					["g"] = {

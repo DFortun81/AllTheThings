@@ -327,8 +327,9 @@ _.Zones =
 					}),
 					o(297893, {	-- Runebound Coffer
 						["questID"] = 53387,
-						["coord"] = { 44.2, 27.8, 896 },
+						["coord"] = { 33.68, 71.74, 896 },
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["description"] = "Right. Up. Left. Down.",
 						["g"] = {
 							i(163740),	-- Drust Ritual Knife (TOY!)
 						},

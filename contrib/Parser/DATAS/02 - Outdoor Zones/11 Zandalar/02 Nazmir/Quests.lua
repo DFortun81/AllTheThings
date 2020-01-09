@@ -700,6 +700,12 @@ _.Zones =
 						48823,	-- Projection Destruction
 					},
 				}),
+				q(50085, {	-- A Message of Blood and Fire
+					["provider"] = { "n", 133471 },	-- Rokhan
+					["coord"] = { 45.4, 58.6, 863 },
+					["sourceQuest"] = 50082,	-- Target of Opportunity
+					["races"] = HORDE_ONLY,
+				}),
 				q(50933, {	-- An Unfortunate Event
 					["provider"] = { "n", 135784 },	-- Imperial Guard
 					["coord"] = { 29.2, 52.0, 863 },
@@ -1036,6 +1042,16 @@ _.Zones =
 					["u"] = 40,	-- Retired with the implementation of 8.2
 					["coord"] = { 57.8, 50.4, 863 },
 					["sourceQuest"] = 54938,	-- A Brother's Help
+				}),
+				q(49477, {	-- Surprise Backup
+					["provider"] = { "o", 278577 },	-- Torn Horde Missive
+					["races"] = HORDE_ONLY,
+				}),
+				q(50083, {	-- The Crawg Ma'da
+					["provider"] = { "n", 133471 },	-- Rokhan
+					["coord"] = { 45.4, 58.6, 863 },
+					["sourceQuest"] = 50082,	-- Target of Opportunity
+					["races"] = HORDE_ONLY,
 				}),
 				q(48480, {	-- The Fall of Kel'vax
 					["provider"] = { "n", 126080 },	-- Shinga Deathwalker

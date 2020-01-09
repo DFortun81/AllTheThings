@@ -62,25 +62,23 @@ _.Zones =
 				}),
 				q(38717, {	-- Black Rook Prison
 					["sourceQuests"] = {
-						38717,	-- Maiev's Trail
+						38714,	-- Maiev's Trail
 						38715,	-- The Rook's Guard
 					},
 					["coord"] = { 43.7, 50.2, 641 },
 					["provider"] = { "n", 92842 },	-- Commander Jarod Shadowsong
 				}),
 				q(38724, {	-- Brotherly Love
-					["sourceQuests"] = { 38717 },	-- Black Rook Prison
+					["sourceQuests"] = { 38717 },		-- Black Rook Prison
 					["coord"] = { 42.3, 81.7, 642 },	-- Darkpens
-					["provider"] = { "n", 92850 },	-- Commander Jarod Shadowsong
+					["provider"] = { "n", 92850 },		-- Commander Jarod Shadowsong
+					["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),	-- All classes except demon hunter
 				}),
-				q(40536, {	-- Bruls Before Jewels
-					["requireSkill"] = 755,	-- Jewelcrafting
-					["provider"] = { "n", 100776 },	-- Jabrul <Jewelcrafting Master>
-					["groups"] = {
-						i(132469),	-- Design: Azsunite Pendant
-						i(132468),	-- Design: Deep Amber Pendant
-						i(132467),	-- Design: Skystone Pendant
-					},
+				q(44457, {	-- Brotherly Love (Demon Hunter)
+					["sourceQuests"] = { 38717 },		-- Black Rook Prison
+					["coord"] = { 42.3, 81.7, 642 },	-- Darkpens
+					["provider"] = { "n", 92850 },		-- Commander Jarod Shadowsong
+					["classes"] = { DEMONHUNTER },
 				}),
 				q(40122, {	-- Cenarius, Keeper of the Grove
 					["sourceQuests"] = { 39861 },	-- Tying Up Loose Ends
@@ -662,9 +660,14 @@ _.Zones =
 						i(130127),	-- Syndrelle's Favorite Ring
 					},
 				}),
-		--[[	q(44825, {	-- Wisp in the Willows REMOVED?
-					i(130127),	-- Syndrelle's Favorite Ring
-				}),		]]--
+				q(44825, {	-- Wisp in the Willows
+					["sourceQuests"] = { 38384 },	-- Nature's Call
+					["coord"] = { 54.3, 68.3, 641 },
+					["provider"] = { "n", 95202 },	-- Syndrelle
+					["groups"] = {
+						i(130127),	-- Syndrelle's Favorite Ring
+					},
+				}),
 				q(41707, {	-- Wormtalon Wreckage
 					["sourceQuests"] = { 41054 },	-- Love Lost
 					["coord"] = { 69.5, 49.4, 641 },

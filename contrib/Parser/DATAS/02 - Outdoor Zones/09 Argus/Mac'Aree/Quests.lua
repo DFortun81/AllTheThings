@@ -266,7 +266,6 @@ _.Zones =
 				q(48040),	-- Tainted Scraps
 				q(48600),	-- Take the Edge Off
 				q(48864),	-- The Broken Blacksmith
-				q(49224),	-- The Netherlight Crucible
 				q(48261),	-- The Power to Reforge
 				q(49445),	-- The Prime Exchange
 				q(48445),	-- The Ruins of Oronaar

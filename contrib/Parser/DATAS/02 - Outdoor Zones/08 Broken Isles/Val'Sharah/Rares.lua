@@ -8,9 +8,7 @@ _.Zones =
 			n(-16,  {	-- Rares
 				n(93758,  {	-- Antydas Nightcaller
 					["description"] = "This part of the 'Adventurer of Val'sharah' achievement doesn't involve killing a rare, but stealing an NPC's treasure.  The treasure chest is on the second floor of the building and can be found directly across the room from Antydas, hidden next to the sink.  Enjoy your foray into larceny!",
-					["questID"] = 38900,	-- 7.0 Val'sharah - Bluffs - Vignette: Nightcaller - TRACKING - twh
-							   -- 38903,	-- 7.0 Val'sharah - Bluffs - Vignette: Nightcaller - Interaction - TRACKING - twh
-							   -- second quest isn't required
+					["questID"] = 38903,	-- 7.0 Val'sharah - Bluffs - Vignette: Nightcaller - Interaction - TRACKING - twh
 					["coord"] = { 64.5, 85.3, 641 },
 					["groups"] = {
 						{	-- Antydas Nightcaller (Adventurer of Val'sharah)

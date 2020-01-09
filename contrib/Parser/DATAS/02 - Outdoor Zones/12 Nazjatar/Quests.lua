@@ -1086,7 +1086,7 @@ _.Zones =
 			}),
 			q(57086, {	-- Legacy of the Mad Mage
 				["description"] = "Loot the Arcane Chest at the provided coordinates to get the item that starts this quest.",
-			--	["itemID"] = 170512,	-- Lesser Benthic Arcanocrystal
+				["provider"] = { "i", 170512 },	-- Lesser Benthic Arcanocrystal
 				["coord"] = { 79.4, 27.2, 1355 },
 				["g"] = {
 					currency(1721),	-- Prismatic Manapearls x7
@@ -1394,7 +1394,7 @@ _.Zones =
 			q(55728, {	-- Reinforced Cache
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
-			--	["objectID"] = 326047,	-- Reinforced Cache
+				["provider"] = { "o", 326047 },	-- Reinforced Cache
 				["isDaily"] = true,
 				["coord"] = { 45.0, 22.1, 1355 },
 				["races"] = ALLIANCE_ONLY,
@@ -1402,7 +1402,7 @@ _.Zones =
 			q(56231, {	-- Reinforced Cache
 				["sourceQuests"] = { 55500 },	-- Save a Friend
 				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
-			--	["objectID"] = 326047,	-- Reinforced Cache
+				["provider"] = { "o", 326047 },	-- Reinforced Cache
 				["isDaily"] = true,
 				["coord"] = { 45.0, 22.1, 1355 },
 				["races"] = HORDE_ONLY,
@@ -2142,7 +2142,7 @@ _.Zones =
 			q(55633, {	-- The Sunken Chest
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
 				["description"] = "Requires |cFFFFD700Bladesman Inowari|r as your friend.",
-			--	["objectID"] = 325795,	-- Sunken Chest
+				["provider"] = { "o", 325795 },	-- Sunken Chest
 				["isDaily"] = true,
 				["coord"] = { 45.7, 83.7, 1355 },
 				["races"] = ALLIANCE_ONLY,

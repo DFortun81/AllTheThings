@@ -287,6 +287,27 @@ _.Zones =
 				i(136901, {	-- Eye of Inquisition (PET!)
 					["crs"] = { 101878 },	-- Felsoul Inquisitor
 				}),
+				i(141011, {	-- Recipe: Surf
+					["description"] = "Drops from any marine mob in the zone.",
+					["crs"] = {
+						99720,	-- Coastal Spikeback
+						99506,	-- Colossal Striper
+						100864,	-- Cora'kar
+						99504,	-- Deepwater Spikeback
+						107312,	-- Frothing Crab
+						107846,	-- Pinchshank
+						99893,	-- Razortail Hammerhead
+						103575,	-- Reef Lord Raj'his
+						102819,	-- Sashj'tar Pincher
+						99070,	-- Sashj'tar Reef Runner
+						99075,	-- Sashj'tar Stormcaller
+						110824,	-- Tideclaw
+						99304,	-- Trenchwalker Scavenger
+					},
+					["g"] = {
+						i(133817), 	-- Recipe: Suramar Surf and Turf
+					},
+				}),
 			}),
 		}),
 	}),

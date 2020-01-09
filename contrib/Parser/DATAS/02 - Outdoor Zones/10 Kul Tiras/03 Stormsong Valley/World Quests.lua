@@ -8,18 +8,7 @@ _.Zones =
 			n(-34,  {	-- World Quests
 				n(-17, {	-- Quests
 	--[[	raw quest list to check against
-					q(50694, {	-- A Bloody Mess
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(53099),	-- A Mote of Cosmic Truth
-					q(51354, {	-- Anger in a Bottle
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(52063, {	-- Boarder Patrol
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(52117, {	-- Briarback Mountain
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
@@ -71,8 +60,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(50389),	-- Malign Inspiration
-					q(53105),	-- Misplaced Faith
 					q(51840, {	-- Oily Mess
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -122,7 +109,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52229, {	-- Too Much To Bear
+					q(52229, {	-- Too Much To Bear (might be Horde equivalent? didn't get this on Ally, only 52054)
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
@@ -134,17 +121,12 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(50993, {	-- Work Order: Coarse Leather
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(52415, {	-- Work Order: Coarse Leather Barding
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(52345, {	-- Work Order: Ravenberry Tarts
+					q(52345, {	-- Work Order: Ravenberry Tarts (this quest was added to Zuldazar WQ file but I'm not sure it can spawn there)
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
@@ -269,6 +251,10 @@ _.Zones =
 					q(52071, {	-- Briarback Mountain
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+					}),
+					q(52117, {	-- Briarback Mountain
+						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
 					q(55341, {	-- Calligraphy
@@ -888,6 +874,11 @@ _.Zones =
 						["g"] = {
 							i(162443),	-- Pattern: Battle Flag: Spirit of Freedom
 						},
+					}),
+					q(50993, {	-- Work Order: Coarse Leather
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52394, {	-- Work Order: Contract: Champions of Azeroth (Rank 3)
 						["lvl"] = 120,

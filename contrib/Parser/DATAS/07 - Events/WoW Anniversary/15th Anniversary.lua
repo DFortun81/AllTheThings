@@ -146,10 +146,11 @@ _.WorldEvents =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
+								i(172122),	-- Bloodseeker
+								i(172125),	-- Cold Forged Blade
+								i(172139),	-- Cold Forged Hammer
 								i(172121),	-- Ice Barbed Spear
 								i(172123),	-- Wand of Biting Cold
-								i(172139),	-- Cold Forged Hammer
-								i(172122),	-- Bloodseeker
 								i(18150),	-- Rune of Recall
 							},
 						}),
@@ -206,10 +207,11 @@ _.WorldEvents =
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
+								i(172122),	-- Bloodseeker
+								i(172125),	-- Cold Forged Blade
+								i(172139),	-- Cold Forged Hammer
 								i(172121),	-- Ice Barbed Spear
 								i(172123),	-- Wand of Biting Cold
-								i(172139),	-- Cold Forged Hammer
-								i(172122),	-- Bloodseeker
 								i(18150),	-- Rune of Recall
 							},
 						}),

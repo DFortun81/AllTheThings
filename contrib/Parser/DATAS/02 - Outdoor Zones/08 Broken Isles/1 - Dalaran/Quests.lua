@@ -191,10 +191,6 @@ _.Zones =
 					["classes"] = { 6 },	-- Death Knight
 					["provider"] = { "n", 101441 },	-- Duke Lankral
 				}),
-				q(44178, {	-- A Particularly Potent Potion
-					["classes"] = { 4 },
-					["provider"] = { "n", 102594 },	-- Marin Noggenfogger
-				}),
 				q(40930, {	-- Apocalypse
 					["classes"] = { 6 },	-- Death Knight
 				}),
@@ -243,10 +239,6 @@ _.Zones =
 						}),
 					},
 				}),
-				q(40840, {	-- A Worthy Blade
-					["classes"] = { 4 },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
-				}),
 				q(47041, {	-- Affliction: The Twisted Twin
 					["classes"] = { 9 },
 					["races"] = ALLIANCE_ONLY,
@@ -291,10 +283,6 @@ _.Zones =
 				q(45991, {	-- An Urgent Warning
 					["classes"] = { 4 },
 					["provider"] = { "n", 118424 },	-- Injured Bandit
-				}),
-				q(44034, {	-- Another Worthy Blade
-					["classes"] = { 4 },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 				}),
 				q(45482, {	-- Arcane: Fate of the Tideskorn
 					["classes"] = { 8 },
@@ -375,6 +363,7 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(44400, {	-- Assault on Violet Hold: Purple Pain
+					["coord"] = { 66.3, 67.9, 627 },
 					["provider"] = { "n", 113813 },	-- Lieutenant Sinclari
 					["g"] = {
 						i(141359),	-- Violet Guardian's Corona
@@ -470,10 +459,6 @@ _.Zones =
 						{ "n", 110564 },	-- Alonsus Faol
 					},
 				}),
-				q(43468, {	-- Blood for the Wolfe
-					["classes"] = { 4 },
-					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
-				}),
 				q(43488, {	-- Blood of Our Enemy
 					["classes"] = { 2 },
 					["provider"] = { "n", 110571 },	-- Delas Moonfang
@@ -541,26 +526,6 @@ _.Zones =
 						{ "n", 122926 },	-- Image of Chromie
 					},
 				}),
-				o(250671, {	-- Notes on the Veiled Hand
-					q(42539, {	-- Cloak and Dagger
-						["sourceQuests"] = { 42503 },	-- Codebreaker
-						["races"] = HORDE_ONLY,
-						["classes"] = { 4 },
-					}),
-				}),
-				q(42503, {	-- Codebreaker
-					["sourceQuests"] = {
-						42501,	-- Finishing the Job
-						42502,	-- No Sanctuary
-					},
-					["classes"] = { 4 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 94138 },	-- Princess Tess Greymane
-				}),
-				q(47605, {	-- Coins of Air
-					["classes"] = { 4 },
-					["provider"] = { "n", 123087 },	-- Al'Abas
-				}),
 				q(45414, {	-- Confirming Suspicions
 					["sourceQuests"] = { 45413 },	-- Gathering Information
 					["provider"] = { "n", 116880 },	-- Kor'vas Bloodthorn
@@ -575,11 +540,6 @@ _.Zones =
 					["coord"] = { 51.9, 20.1, 627 },
 					["lvl"] = 110,
 				}),
-				q(43841, {	-- Convincin' Old Yancey
-					["classes"] = { 4 },
-					["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
-				}),
-			--	q(44275)	-- Court of Stars -- mission board
 				q(43486, {	-- Cracking the Codex
 					["classes"] = { 2 },
 					["provider"] = { "n", 90251 },	-- Aponi Brightmane
@@ -595,7 +555,9 @@ _.Zones =
 						i(142536),	-- Memory Cube
 					},
 				}),
-			--	q(45159)	-- Cubic Conundrum -granted by i(142559) in nighthold
+				q(45159, {	-- Cubic Conundrum
+					["provider"] = { "i", 142559 },	-- Mysterious Cube
+				}),
 				q(45160, {	-- Cubic Currents
 					["sourceQuests"] = { 45159 },	-- Cubic Conundrum
 					["provider"] = { "n", 93538 },	-- Dariness the Learned
@@ -633,8 +595,6 @@ _.Zones =
 					["coord"] = { 54.0, 47.0, 627 },
 					["provider"] = { "n", 106610 },	-- Calydus
 				}),
-			--	q(44272)	-- Darkheart Thicket -- mission board
-			--	q(44273)	-- Darkheart Thicket -- mission board
 				q(42680, {	-- Deciphering the Letter
 					["sourceQuests"] = { 42678 },	-- Black Rook Hold: Into Black Rook Hold
 					["classes"] = { 4 },
@@ -642,10 +602,6 @@ _.Zones =
 					["g"] = {
 						i(139746),	-- Wristbands of the Uncrowned
 					},
-				}),
-				q(40996, {	-- Delegation
-					["classes"] = { 4 },
-					["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 				}),
 			--	q(47079)	-- Delivering Lost Knowledge -- removed?
 				q(47049, {	-- Demonology: Fate of the Tideskorn
@@ -685,10 +641,10 @@ _.Zones =
 					},
 				}),
 				q(41220, {	-- Down to Azsuna
-					["sourceQuests"] = { 39718 },	-- Paradise Lost (Demon Hunter)
-					["isBreadcrumb"] = true,
 					["coord"] = { 72.0, 45.4, 627 },
 					["provider"] = { "n", 41220 },	-- Archmage Khadgar
+					["sourceQuests"] = { 39718 },	-- Paradise Lost
+					["isBreadcrumb"] = true,
 				}),
 				q(46103, {	-- Dread Infiltrators
 					["classes"] = { 4 },
@@ -753,17 +709,6 @@ _.Zones =
 					["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
 					["isDaily"] = true,
 				}),
-			--	q(44271)	-- Eye of Azshara -- mission board
-			--	q(44270)	-- Eye of Azshara -- mission board
-				q(43852, {	-- Fancy Lads and Buccaneers
-					["sourceQuests"] = { 43841 },	-- Convincin' Old Yancey
-					["classes"] = { 4 },
-					["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
-				}),
-				q(41924, {	-- Fangs of the Devourer
-					["classes"] = { 4 },
-					["provider"] = { "n", 105464 },	-- Val'zuun
-				}),
 			--	q(44486)	-- Fel-Ravaged Tome -- granted by i(141360) in Vault of the Wardens
 				q(41035, {	-- Felstorm's Plea
 					["classes"] = { 8 },
@@ -797,10 +742,6 @@ _.Zones =
 					["coord"] = { 56.3, 65.0, 628 },
 					["provider"] = { "n", 101097 },	-- Calydus
 				}),
-				q(42501, {	-- Finishing the Job
-					["classes"] = { 4 },
-					["provider"] = { "n", 94138 },	-- Princess Tess Greymane
-				}),
 				q(47055, {	-- Fire: The Folly of Levia Laurence
 					["classes"] = { 8 },
 					["races"] = ALLIANCE_ONLY,
@@ -811,7 +752,6 @@ _.Zones =
 				}),
 				q(41778, {	-- Firing Up the Forge
 					["provider"] = { "n", 90463 },	-- Archmage Karlain
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 42.7, 28.4, 627 },
 					["lvl"] = 110,
 				}),
@@ -964,10 +904,6 @@ _.Zones =
 						{ "n", 115465 },	-- Archmage Modera
 					},
 				}),
-				q(40950, {	-- Honoring Success
-					["classes"] = { 4 },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
-				}),
 				q(42774, {	-- Hope Prevails
 					["classes"] = { 2 },
 					["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
@@ -986,13 +922,6 @@ _.Zones =
 					["classes"] = { 3 },
 					["provider"] = { "n", 102570 },	-- Grif Wildheart
 				}),
-				q(47595, {	-- I Don't Need Them, But I'll Take Them
-					["classes"] = { 4 },
-				}),
-				q(47594, {	-- I'll Take Those, Thanks!
-					["classes"] = { 4 },
-					["provider"] = { "n", 103792 },	-- Griftah
-				}),
 				q(44821, {	-- In Dire Need
 					["sourceQuests"] = { 44782 },	-- Away From Prying Eyes
 					["provider"] = { "n", 115465 },	-- Archmage Modera
@@ -1001,17 +930,13 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(44184, {	-- In the Blink of an Eye
-					["u"] = 2,	-- Changed to make the Tranquil Mind item Bop to stop abusing of class trials
+					["u"] = 40,	-- Changed to make the Tranquil Mind item Bop to stop abusing of class trials
 					["g"] = {
 						i(143780),	-- Tome of the Tranquil Mind
 					},
 				}),
 				q(44663, {	-- In the Blink of an Eye
 					i(143785),	-- Tome of the Tranquil Mind
-				}),
-				q(47604, {	-- In the Land of Magic
-					["classes"] = { 4 },
-					["provider"] = { "n", 123087 },	-- Al'Abas
 				}),
 				q(40995, {	-- Injection of Power
 					["classes"] = { 4 },
@@ -1036,11 +961,6 @@ _.Zones =
 					["coord"] = { 69.9, 43.8, 627 },
 					["provider"] = { "n", 97666 },	-- Warbrave Oro
 				}),
-				q(44555, {	-- Khadgar's Discovery
-				--	["description"] = "Automatically given to you in Dalaran upon reaching lvl 110.";	-- doesn't seem to be the case (as of mid-October 2019)
-					["lvl"] = 110,
-					["u"] = 40,	-- Legacy Quests — version that was given automatically?
-				}),
 				q(39985, {	-- Khadgar's Discovery
 					["isBreadcrumb"] = true,	-- for "Magic Message"
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
@@ -1058,10 +978,6 @@ _.Zones =
 					["classes"] = { 2 },
 					["provider"] = { "n", 92183 },	-- Alard Schmied
 				}),
-				q(40997, {	-- Lethal Efficiency
-					["classes"] = { 4 },
-					["provider"] = { "n", 98092 },	-- Nikki the Gossip
-				}),
 				q(42168, {	-- Looking into the Darkness
 					["sourceQuests"] = {
 						40611,	-- The Fate of Deadwind
@@ -1070,10 +986,6 @@ _.Zones =
 					["classes"] = { 9 },	-- Warlock
 					["coord"] = { 54.0, 47.0, 627 },
 					["provider"] = { "n", 106610 },	-- Calydus
-				}),
-				q(47606, {	-- Loyalty Is Its Own Reward
-					["classes"] = { 4 },
-					["provider"] = { "n", 123087 },	-- Al'Abas
 				}),
 				q(39986, {	-- Magic Message
 					["sourceQuests"] = {
@@ -1115,17 +1027,8 @@ _.Zones =
 					["sourceQuests"] = { 41778 },	-- Firing Up the Forge
 					["repeatable"] = true,
 					["provider"] = { "n", 114719 },	-- Trader Caelen
-					["coord"] = { 42.2, 27.5, 627 },
+					["coord"] = { 42.3, 27.0, 627 },
 					["lvl"] = 110,
-				}),
-			--	q(44267)	-- Maw of Souls -- mission board
-				q(43253, {	-- Maw of Souls: Ancient Vrykul Legends
-					["sourceQuests"] = {
-						42684,	-- Throwing SI:7 Off the Trail
-						43468,	-- Blood for the Wolfe
-					},
-					["classes"] = { 4 },
-					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 				}),
 				q(46260, {	-- Meld Into the Shadows
 					["sourceQuests"] = {
@@ -1161,10 +1064,6 @@ _.Zones =
 					["coord"] = { 25.7, 51.5, 627 },
 					["provider"] = { "n", 107968 },	-- Archmage Lan'dalock
 				}),
-				q(44116, {	-- Mystery at Citrine Bay
-					["classes"] = { 4 },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
-				}),
 				q(45909, {	-- Navarrogg's Gift
 					["sourceQuests"] = { 45627 },	-- Feltotem's Fall
 					["provider"] = { "n", 90418 },	-- Archmage Modera
@@ -1175,28 +1074,14 @@ _.Zones =
 					["classes"] = { 3 },
 					["provider"] = { "n", 100786 },	-- Snowfeather
 				}),
-			--	q(44265)	-- Neltharion's Lair -- mission board
-			--	q(44264)	-- Neltharion's Lair -- mission board
-			--	q(43554)	-- Neltharion's Lair -- mission board
 				q(42185, {	-- Never Hunt Alone -- actually started in an instanced version of Ulduar
 					["classes"] = { 3 },
 					["provider"] = { "n", 106558 },	-- Mimiron
-				}),
-				q(42502, {	-- No Sanctuary
-					["classes"] = { 4 },
-					["provider"] = { "n", 94138 },	-- Princess Tess Greymane
-				}),
-				q(42730, {	-- Noggenfogger's Reasonable Request
-					["classes"] = { 4 },
-					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 				}),
 				q(46722, {	-- Nothing Up My Sleeve
 					["classes"] = { 8 },
 					["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 				}),
-			--	q(44269)	-- Odyn's Challenge -- mission board
-			--	q(44268)	-- Odyn's Challenge -- mission board
-			--	q(43509)	-- Odyn's Challenge -- mission board
 				q(43250, {	-- Off to Court
 					["sourceQuests"] = { 43249 },	-- The Raven's Eye
 					["classes"] = { 4 },
@@ -1261,7 +1146,7 @@ _.Zones =
 					["sourceQuests"] = { 41778 },	-- Firing Up the Forge
 					["repeatable"] = true,
 					["provider"] = { "n", 114719 },	-- Trader Caelen
-					["coord"] = { 42.2, 27.5, 627 },
+					["coord"] = { 42.3, 27.0, 627 },
 					["lvl"] = 110,
 				}),
 				q(44100, {	-- Proper Introductions
@@ -1361,7 +1246,6 @@ _.Zones =
 					["sourceQuests"] = { 45160 },	-- Cubic Currents
 					["provider"] = { "n", 93538 },	-- Dariness the Learned
 				}),
-			--	q(44917)	-- Return to Karazhan: The Tower of Power -- mission board
 				q(41221, {	-- Return to Mardum
 					["sourceQuests"] = { 42872 },	-- Securing the Way
 					["classes"] = { 12 },	-- Demon Hunter
@@ -1384,10 +1268,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 93773 },	-- High Overlord Saurfang
 				}),
-				q(43007, {	-- Return to the Chamber of Shadows
-					["classes"] = { 4 },
-					["provider"] = { "n", 112679 },	-- Valeera Sanguinar
-				}),
 				q(44087, {	-- Return to the Fel Hammer
 					["sourceQuests"] = { 41069 },	-- Direct Our Wrath
 					["isBreadcrumb"] = true,
@@ -1403,11 +1283,6 @@ _.Zones =
 				q(42608, {	-- Rise, Champions
 					["classes"] = { 9 },
 					["provider"] = { "n", 101097 },	-- Calydus
-				}),
-				q(42139, {	-- Rise, Champions
-					["sourceQuests"] = { 43007 },	-- Return to the Chamber of Shadows
-					["classes"] = { 4 },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 				}),
 				q(42128, {	-- Ritual Reagents
 					["sourceQuests"] = {
@@ -1432,38 +1307,47 @@ _.Zones =
 				}),
 				q(47864, {	-- Sealing Fate: Additional Marks of Honor
 					["isWeekly"] = true,
+					["coord"] = { 57.2, 67.5, 627 },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(43894, {	-- Sealing Fate: Extraneous Order Resources
 					["isWeekly"] = true,
+					["coord"] = { 57.2, 67.5, 627 },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(43895, {	-- Sealing Fate: Gold
 					["isWeekly"] = true,
+					["coord"] = { 57.2, 67.5, 627 },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(43897, {	-- Sealing Fate: Immense Fortune of Gold
 					["isWeekly"] = true,
+					["coord"] = { 57.2, 67.5, 627 },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(47851, {	-- Sealing Fate: Marks of Honor
 					["isWeekly"] = true,
+					["coord"] = { 57.2, 67.5, 627 },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(43892, {	-- Sealing Fate: Order Resources
 					["isWeekly"] = true,
+					["coord"] = { 57.2, 67.5, 627 },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(43896, {	-- Sealing Fate: Piles of Gold
 					["isWeekly"] = true,
+					["coord"] = { 57.2, 67.5, 627 },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(47865, {	-- Sealing Fate: Piles of Marks of Honor
 					["isWeekly"] = true,
+					["coord"] = { 57.2, 67.5, 627 },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(43893, {	-- Sealing Fate: Stashed Order Resources
 					["isWeekly"] = true,
+					["coord"] = { 57.2, 67.5, 627 },
 					["provider"] = { "n", 111243 },	--  Archmage Lan'Dalock
 				}),
 				q(45187, {	-- Secrets in the Underbelly
@@ -1508,20 +1392,11 @@ _.Zones =
 						{ "n", 115468 },	-- Archmage Karlain
 					},
 				}),
-				q(47592, {	-- Shine Bright Like a Diamond
-					["classes"] = { 4 },
-					["provider"] = { "n", 103792 },	-- Griftah
-				}),
 				q(42017, {	-- Shrine of the Truthguard
 					["classes"] = { 2 },
 					["provider"] = { "n", 105813 },	-- Orik Trueheart
 				}),
 			--	q(47148),	-- Something Different -- granted when entering a brawl. weekly?
-				q(43829, {	-- Spy vs. Spy
-					["sourceQuests"] = { 43958 },	-- A Body of Evidence
-					["classes"] = { 4 },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
-				}),
 				q(41574, {	-- Stolen Thunder
 					["sourceQuests"] = { 41541 },	-- A Beastly Expedition
 					["classes"] = { 3 },
@@ -1555,7 +1430,6 @@ _.Zones =
 					["classes"] = { 12 },
 					["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 				}),
-			--	q(44263),	-- The Arcway -- mission board
 				q(44172, {	-- The Arena Calls
 					["isWeekly"] = true,
 					["provider"] = { "n", 111246 },	-- Archmage Timear
@@ -1563,16 +1437,6 @@ _.Zones =
 				q(43373, {	-- The Best and Brightest
 					["classes"] = { 5 },
 					["provider"] = { "n", 110557 },	-- Prophet Velen
-				}),
-				q(43014, {	-- The Big Bad Wolfe
-					["sourceQuests"] = { 43013 },	-- The School of Roguery
-					["classes"] = { 4 },
-					["provider"] = { "n", 98092 },	-- Nikki the Gossip
-				}),
-				q(44041, {	-- The Bloody Truth
-					["sourceQuests"] = { 43829 },	-- Spy vs. Spy
-					["classes"] = { 4 },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 				}),
 				q(42377, {	-- The Brother's Trail
 					["classes"] = { 2 },
@@ -1600,10 +1464,6 @@ _.Zones =
 					["classes"] = { 8 },
 					["provider"] = { "n", 102700 },	-- Meryl Felstorm
 				}),
-				q(40849, {	-- The Dreadblades
-					["classes"] = { 4 },
-					["provider"] = { "n", 102120 },	-- Fleet Admiral Tethys
-				}),
 				q(41036, {	-- The Dreadlord's Prize
 					["sourceQuests"] = { 41035 },	-- Felstorm's Plea
 					["classes"] = { 8 },
@@ -1624,15 +1484,6 @@ _.Zones =
 					["g"] = {
 						sp(233377),	-- Gaze of Aman'Thul
 					},
-				}),
-				q(44375, {	-- The Final Blade
-					["classes"] = { 4 },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
-				}),
-				q(40839, {	-- The Final Shadow
-					["sourceQuests"] = { 40832 },	-- Call of the Uncrowned
-					["classes"] = { 4 },
-					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 				}),
 				q(45904, {	-- The God-Queen's Gift
 					["classes"] = { 2, 4, 7, 8, 9 },
@@ -1705,8 +1556,6 @@ _.Zones =
 				q(39733, {	-- The Lone Mountain -- granted by order hall scouting map
 					["isBreadcrumb"] = true,
 				}),
-			--	q(44276),	-- The Lord of Black Rook Hold -- granted by mission board
-			--	q(44277),	-- The Lord of Black Rook Hold -- granted by mission board
 				q(42479, {	-- The Mage Hunter
 					["classes"] = { 8 },
 					["providers"] = {
@@ -1724,10 +1573,6 @@ _.Zones =
 						{ "n", 90259 },	-- Lord Maxwell Tyrosus
 						{ "n", 90369 },	-- Lord Maxwell Tyrosus
 					},
-				}),
-				q(47603, {	-- The Mysterious, Magnificent Al'Abas
-					["classes"] = { 4 },
-					["provider"] = { "n", 123087 },	-- Al'Abas
 				}),
 				q(40729, {	-- The New Blood
 					["sourceQuests"] = { 40716 },	-- The Sixth
@@ -1778,18 +1623,9 @@ _.Zones =
 					["classes"] = { 4 },
 					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 				}),
-				q(43013, {	-- The School of Roguery
-					["sourceQuests"] = { 42140 },	-- A More Wretched Hive of Scum and Villainy
-					["classes"] = { 4 },
-					["provider"] = { "n", 98092 },	-- Nikki the Gossip
-				}),
 				q(38376, {	-- The Search for the Highlord
 					["classes"] = { 2 },
 					["provider"] = { "n", 90369 },	-- Lord Maxwell Tyrosus
-				}),
-				q(41919, {	-- The Shadows Reveal
-					["classes"] = { 4 },
-					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 				}),
 				q(42120, {	-- The Silver Hand
 					["sourceQuests"] = { 42377 },	-- The Brother's Trail
@@ -1813,6 +1649,11 @@ _.Zones =
 					["provider"] = { "n", 101097 },	-- Calydus
 				}),
 			--	q(39731),	-- The Tranquil Forest -- granted by scouting map
+				q(44174, {	-- The Very Best
+					["u"] = 40,
+					["isWeekly"] = true,
+					["provider"] = { "n", 111246 },	-- Archmage Timear
+				}),
 				q(38307, {	-- The Warchief Beckons
 					["sourceQuests"] = {
 						39864,	-- Stormheim
@@ -1848,10 +1689,6 @@ _.Zones =
 						{ "n", 102700 },	-- Maryl Felstorm
 						{ "n", 109222 },	-- Maryl Felstorm
 					},
-				}),
-				q(42684, {	-- Throwing SI:7 Off the Trail
-					["classes"] = { 4 },
-					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 				}),
 				q(43331, {	-- Time to Collect
 					["sourceQuests"] = { 42483 },	-- Put It All on Red
@@ -1892,11 +1729,8 @@ _.Zones =
 				}),
 				q(39987, {	-- Trail of Echoes
 					["sourceQuests"] = { 39986 },	-- Magic Message
+					["coord"] = { 28.4, 48.3, 627 },
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
-				}),
-				q(41922, {	-- Traitor!
-					["classes"] = { 4 },
-					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 				}),
 				q(43535, {	-- Translation: Danger!
 					["classes"] = { 2 },	-- Paladin
@@ -1937,14 +1771,18 @@ _.Zones =
 					},
 				}),
 				q(45727, {	-- Uniting the Isles
+					["coord"] = { 28.5, 48.3, 627 },
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 					["g"] = {
 						i(141605),	-- Flight Master Whistle
 					},
 				}),
-			--	q(43556),	-- Vault of the Wardens -- granted by mission board
-			--	q(44260),	-- Vault of the Wardens -- granted by mission board
-			--	q(44261),	-- Vault of the Wardens -- granted by mission board
+				q(41125, {	-- Unlocked Potential
+					["u"] = 40,
+					["classes"] = { 8 },	-- Mage
+					["provider"] = { "n", 102700 },	-- Meryl Felstorm
+					["sourceQuests"] = { 41114 },	-- The Champion's Return
+				}),
 				q(41863, {	-- Vengeance Will Be Ours (Altruis)
 					["sourceQuests"] = { 41807 },	-- Establishing a Connection
 					["classes"] = { 12 },	-- Demon Hunter
@@ -1967,12 +1805,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
-			--	q(44259),	-- Violet Hold -- granted by mission board
 			--	q(44058),	-- Volpin the Elusive -- starts from all order halls
-				q(47591, {	-- Wanna Buy a Lamp?
-					["classes"] = { 4 },
-					["provider"] = { "n", 103792 },	-- Griftah
-				}),
 				q(38576, {	-- We Meet at Light's Hope
 					["sourceQuests"] = { 38376 },	-- The Search for the Highlord
 					["classes"] = { 2 },
@@ -1993,11 +1826,6 @@ _.Zones =
 					},
 					["classes"] = { 3 },
 					["provider"] = { "n", 102478 },	-- Emmarel Shadewarden
-				}),
-				q(43015, {	-- What Winstone Suggests
-					["sourceQuests"] = { 43014 },	-- The Big Bad Wolfe
-					["classes"] = { 4 },
-					["provider"] = { "n", 98092 },	-- Nikki the Gossip
 				}),
 				q(45813, {	-- Where Art Thou, My Sweet
 					["classes"] = { 2 },

@@ -26,6 +26,54 @@ _.ExpansionFeatures =
 					739,	-- Trueshot Lodge (Hunter)
 				},
 				["g"] = {
+					n(-17, {	-- Quests
+						un(40, q(44258)),	-- Assault on Violet Hold: Into the Violet Hold
+						un(40, q(44259)),	-- Assault on Violet Hold: Into the Violet Hold
+						un(40, q(44275)),	-- Court of Stars
+						un(40, q(43551)),	-- Darkheart Thicket
+						un(40, q(44273)),	-- Darkheart Thicket
+						un(40, q(44272)),	-- Darkheart Thicket
+						un(40, q(44270)),	-- Eye of Azshara
+						un(40, q(44271)),	-- Eye of Azshara
+						un(40, q(43553)),	-- Maw of Souls
+						un(40, q(44266)),	-- Maw of Souls
+						un(40, q(44267)),	-- Maw of Souls
+						un(40, q(44264)),	-- Neltharion's Lair
+						un(40, q(43554)),	-- Neltharion's Lair
+						un(40, q(44265)),	-- Neltharion's Lair
+						un(40, q(43509)),	-- Odyn's Challenge
+						un(40, q(44269)),	-- Odyn's Challenge
+						un(40, q(44268)),	-- Odyn's Challenge
+						un(40, q(44917)),	-- Return to Karazhan: The Tower of Power
+						un(40, q(44263)),	-- The Arcway
+						un(40, q(44276)),	-- The Lord of Black Rook Hold
+						un(40, q(43545)),	-- The Lord of Black Rook Hold
+						un(40, q(44277)),	-- The Lord of Black Rook Hold
+						un(40, q(43556)),	-- Vault of the Wardens
+						un(40, q(44260)),	-- Vault of the Wardens
+						un(40, q(44261)),	-- Vault of the Wardens
+						
+						
+						q(44865, {	-- Butler to the Great
+							["provider"] = { "n", 115551 },	-- Phantom Valet
+							["g"] = {
+								follower(733),	-- Moroes
+							},
+						}),
+						q(44555, {	-- Khadgar's Discovery
+							["lvl"] = 110,
+						}),
+						q(39718, {	-- Paradise Lost
+							["provider"] = { "n", 98613 },	-- Scouting Map
+							["classes"] = { 12 },	-- Demon Hunter
+						}),
+						q(45312, {	-- You Beat the Ball of Meat
+							["provider"] = { "i", 143590 },	-- Hunk of Meatball
+							["g"] = {
+								follower(986),	-- Meatball
+							},
+						}),
+					}),
 					mission(1785, {	-- Assault on Felfire Armory
 						["questID"] = 48601,	-- Felfire Shattering
 						["g"] = {
@@ -73,18 +121,6 @@ _.ExpansionFeatures =
 								}),
 							},
 						}),
-					}),
-					q(44865, {		-- Butler to the Great
-						["provider"] = { "n", 115551 },	-- Phantom Valet
-						["groups"] = {
-							follower(733),	-- Moroes
-						},
-					}),
-					q(45312, {		-- You Beat the Ball of Meat
-						--["provider"] = { "n",  }i(143590),	-- Hunk of Meatball
-						["groups"] = {
-							follower(986),	-- Meatball
-						},
 					}),
 					i(152960),	-- Argussian Reach Insignia
 					i(152957),	-- Army of the Light Insignia

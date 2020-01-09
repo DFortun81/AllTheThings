@@ -99,7 +99,7 @@ _.Zones =
 					},
 				}),
 				n(21494, {	-- Smiles O'Byron <Engineer>
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = 20219,	-- Gnomish Engineering
 					["description"] = "Gnomish Engineers can speak to Smiles to learn the recipe.",
 					["coord"] = { 60.2, 65.2, 105 },
 					["g"] = {

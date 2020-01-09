@@ -235,16 +235,22 @@ end
 
 (function()
 	local tradeSkillSpecializationMap = {
-		-- Engineering Skills
-		[202] = { 
-				  20219,    -- Gnomish Engineering
-		          20222     -- Goblin Engineering
-				}
+		[202] = {	-- Engineering
+			20219,    -- Gnomish Engineering
+			20222     -- Goblin Engineering
+		},
+		[164] = {	-- Blacksmithing
+			9788,	-- Armorsmith
+			9787,	-- Weaponsmith
+		},
 	};
 	local specializationTradeSkillMap = {
 		-- Engineering Skills
 		[20219] = 202,  -- Gnomish Engineering
-		[20222] = 202   -- Goblin Engineering
+		[20222] = 202,   -- Goblin Engineering
+		-- Blacksmithing Skills
+		[9788] = 9788,	-- Armorsmith
+		[9787] = 9787,	-- Weaponsmith
 	};
 	-- Map all Skill IDs to the old Skill IDs
 	local tradeSkillMap = {
@@ -3040,12 +3046,6 @@ fieldConverters = {
 			elseif v[1] == "o" and v[2] > 0 then
 				CacheField(group, "objectID", v[2]);
 			end
-		end
-	end,
-	["altQuests"] = function(group, value)
-		_cache = rawget(fieldConverters, "questID");
-		for i,questID in ipairs(value) do
-			_cache(group, questID);
 		end
 	end,
 	["maps"] = function(group, value)
@@ -6196,6 +6196,15 @@ local SkillIDToSpellID = setmetatable({
 	[393] = 8613,	-- Skinning
 	[197] = 3908,	-- Tailoring
 	[960] = 53428,  -- Runeforging
+	
+	-- Specializations
+	[20219] = 20219,	-- Gnomish Engineering
+	[20222] = 20222,	-- Goblin Engineering
+	[9788] = 9788,		-- Armorsmith
+	[9787] = 9787,		-- Weaponsmith
+	[17041] = 17041,	-- Master Axesmith
+	[17040] = 17040,	-- Master Hammersmith
+	[17039] = 17039,	-- Master Swordsmith
 }, {__index = function(t,k) return(106727) end})
 app.BaseProfession = {
 	__index = function(t, key)
@@ -9104,11 +9113,13 @@ local function RowOnEnter(self)
 					local sqs = SearchForField("questID", sourceQuestID);
 					if sqs and #sqs > 0 then
 						local sq = sqs[1];
-						if IsQuestFlaggedCompletedForObject(sq) ~= 1 then
-							if sq.isBreadcrumb then
-								table.insert(bc, sqs[1]);
-							else
-								table.insert(prereqs, sqs[1]);
+						if sq and app.ClassRequirementFilter(sq) and app.RaceRequirementFilter(sq) then
+							if IsQuestFlaggedCompletedForObject(sq) ~= 1 then
+								if sq.isBreadcrumb then
+									table.insert(bc, sqs[1]);
+								else
+									table.insert(prereqs, sqs[1]);
+								end
 							end
 						end
 					elseif not IsQuestFlaggedCompleted(sourceQuestID) then
@@ -10233,22 +10244,12 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 					end,
 				}),
 				app.CreateInstance(745, { 	-- Karazhan (Raid)
-					['description'] = "The reward chest for completing the Chess Event in Karazhan is currently not interactable since 8.2. All items found within it are now considered Unobtainable.",
+					['description'] = "The reward chest for completing the Chess Event in Karazhan has been fixed!",
 					['isRaid'] = true,
-					['g'] = {
-						app.CreateItemSource(12700, 28749),	-- King's Defender
-						app.CreateItemSource(12704, 28754),	-- Triptych Shield of the Ancients
-						app.CreateItemSource(12706, 28756),	-- Headdress of the High Potentate
-						app.CreateItem(28745),	-- Mithril Chain of Heroism
-						app.CreateItemSource(12705, 28755),	-- Bladed Shoulderpads of the Merciless
-						app.CreateItemSource(12701, 28750),	-- Girdle of Treachery
-						app.CreateItemSource(12702, 28751),	-- Heart-Flame Leggings
-						app.CreateItemSource(12699, 28748),	-- Legplates of the Innocent
-						app.CreateItemSource(12698, 28747),	-- Battlescar Boots
-						app.CreateItemSource(12697, 28746),	-- Fiend Slayer Boots
-						app.CreateItemSource(12703, 28752),	-- Forestlord Striders
-						app.CreateItem(28753),	-- Ring of Recurrence
-					},
+					['visible'] = true,
+					['OnUpdate'] = function(data) 
+						data.visible = true;
+					end,
 				}),
 				app.CreateInstance(228, {	-- Blackrock Depths
 					['description'] = "Ebonsteel Spaulders have been hotfixed! All of the items previously marked Unobtainable from General Angerforge have been fixed and confirmed as dropping once again!",
@@ -10388,6 +10389,19 @@ app.events.COMBAT_LOG_EVENT_UNFILTERED = function()
 	local _,event = CombatLogGetCurrentEventInfo();
 	if event == "UNIT_DIED" or event == "UNIT_DESTROYED" then
 		RefreshQuestCompletionState()
+	end
+end
+-- This event is helpful for world objects used as treasures. Won't help with objects without rewards (e.g. cat statues in Nazjatar)
+app:RegisterEvent("LOOT_OPENED")
+app.events.LOOT_OPENED = function()
+	local guid = GetLootSourceInfo(1)
+	if guid then 
+		local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
+		if(type == "GameObject") then
+		  local text = GameTooltipTextLeft1:GetText()
+		  print('ObjectID: '..(npc_id or 'UNKNOWN').. ' || ' .. 'Name: ' .. (text or 'UNKNOWN'))
+		  RefreshQuestCompletionState()
+	   end
 	end
 end
 app:GetWindow("Debugger", UIParent, function(self)
@@ -11712,7 +11726,13 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			if g.OnUpdate then g.OnUpdate(g); end
 		end
 		BuildGroups(self.data, self.data.g);
+		
+		-- Update the groups without forcing Debug Mode.
+		local visibilityFilter = app.VisibilityFilter;
+		app.VisibilityFilter = app.ObjectVisibilityFilter;
+		BuildGroups(self.data, self.data.g);
 		UpdateWindow(self, true);
+		app.VisibilityFilter = visibilityFilter;
 	end
 end);
 app:GetWindow("Random", UIParent, function(self)
@@ -13754,7 +13774,7 @@ app.OpenAuctionModule = function(self)
 			window:Update();
 			
 			-- Change the message!
-			frame.descriptionLabel:SetText("Got the datas!\n\nShift Left click into the search bar on the Browse tab to look for items!");
+			frame.descriptionLabel:SetText("Got the data!\n\nShift + Left click items in the ATT menu while on the AH Browse tab to search for the item!");
 			frame.descriptionLabel:Show();
 		end
 		local ProcessAuctions = function()
@@ -14364,6 +14384,7 @@ app.events.VARIABLES_LOADED = function()
 		"RandomSearchFilter",
 		"Reagents",
 		"RefreshedCollectionsAlready",
+		"ToyCacheRebuilt",
 		"SeasonalFilters",
 		"Sets",
 		"SourceSets",
@@ -14421,6 +14442,14 @@ app.events.VARIABLES_LOADED = function()
 		app:RegisterEvent("ARTIFACT_UPDATE");
 		app:RegisterEvent("TOYS_UPDATED");
 		app.IsReady = true;
+		
+		-- Rebuild toy collection. This should only happen once to fix toy collection states from a bug prior 14.January.2020
+		local toyCacheRebuilt = GetDataMember("ToyCacheRebuilt")
+		if not toyCacheRebuilt then
+			SetDataMember("ToyCacheRebuilt", true)
+			wipe(GetDataMember("CollectedToys", {}))
+			RefreshCollections()
+		end
 		
 		-- NOTE: The auto refresh only happens once.
 		if not app.autoRefreshedCollections then

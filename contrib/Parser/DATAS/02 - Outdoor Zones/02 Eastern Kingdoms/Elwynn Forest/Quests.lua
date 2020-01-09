@@ -301,18 +301,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 1307 },	-- Gold Pickup Schedule
 				}),
-				q(42504, {	-- The Unseen Blade
-					["provider"] = { "n", 107979 },	-- Garona Halforcen
-					["lvl"] = 100,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },
-				}),
-				q(42627, {	-- The Unseen Blade
-					["provider"] = { "n", 107979 },	-- Garona Halforcen
-					["lvl"] = 100,
-					["races"] = HORDE_ONLY,
-					["classes"] = { 4 },
-				}),
 				q(26152, {	-- Wanted: James Clark
 					["model"] = 199473,
 					["coord"] = { 74.0, 72.3, 37 },
@@ -362,7 +350,6 @@ _.Zones =
 					["sourceQuest"] = 26150,	-- A Visit With Maybell
 				}),
 --[[
-				q(42568),	-- Preparation (part of Rogue class campaign, not sure where it starts)
 				q(7937),	-- Your Fortune Awaits You... (DMF, item-granted. Possibly removed)
 ]]--
 			}),

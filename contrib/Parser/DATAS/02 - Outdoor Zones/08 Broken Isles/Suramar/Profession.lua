@@ -270,7 +270,18 @@ _.Zones =
 					q(40213),	-- Hounds Abound
 				}),
 				prof(186, {	-- Mining
-					q(38799),	-- Darkheart Thicket: Nal'ryssa's Sisters
+					q(38798, {	-- A Shred of Your Humanity
+						["coord"] = { 30.0, 53.2, 680 },
+						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
+						["requireSkill"] = 186, -- Mining
+						["sourceQuest"] = 38901,	-- The Felsmiths
+					}),
+					q(38799, {	-- Darkheart Thicket: Nal'ryssa's Sisters
+						["coord"] = { 30.0, 53.2, 680 },
+						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
+						["requireSkill"] = 186, -- Mining
+						["sourceQuest"] = 38798,	-- A Shred of Your Humanity
+					}),
 					q(38804),	-- Lyrelle
 					q(38801),	-- Lyrelle's Right Arm
 					q(38805),	-- Ondri

@@ -376,9 +376,14 @@ _.Zones =
 						un(2, i(6667)),	-- Engineer's Cloak
 					},
 				}),
+				q(1090, {	-- Gerenzo's Orders
+					["u"] = 40,	-- Legacy Quests
+					["races"] = HORDE_ONLY,
+				}),
 				q(1092,  {	-- Gerenzo's Orders
-					["u"] = 40,
+					["u"] = 40,	-- Legacy Quests
 					["provider"] = { "n", 4276 },	-- Piznik
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(2, i(6666)),	-- Dredge Boots
 					},

@@ -62,13 +62,11 @@ _.Zones =
 				q(44684, {	-- Corruption Runs Deep
 					["provider"] = { "n", 114631 },	-- Archmage Karlain
 					["coord"] = { 46.9, 75.3, 42 },
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(44764, {	-- Demon in Disguise
 					["provider"] = { "n", 114631 },	-- Archmage Karlain <Kirin Tor>
 					["lvl"] = 110,
 					["coord"] = { 46.9, 75.3, 42 },
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 44686,	-- Thought Collection
 				}),
 				q(40604, {	-- Disturbing the Past
@@ -305,7 +303,6 @@ _.Zones =
 					["provider"] = { "n", 114631 },	-- Archmage Karlain <Kirin Tor>
 					["lvl"] = 110,
 					["coord"] = { 46.9, 75.3, 42 },
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						44684,	-- Corruption Runs Deep
 						44557,	-- Finite Numbers

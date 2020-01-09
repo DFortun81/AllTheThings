@@ -84,7 +84,6 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				["coord"] = { 47.5, 22.1, 534 },
 				["maps"] = {	-- all Tanaan Jungle maps
 					534,	-- Tanaan Jungle
-					578,	-- Umbral Halls
 				},
 				["cr"] = 94015,	-- Supreme Lord Kazzak
 				["g"] = {

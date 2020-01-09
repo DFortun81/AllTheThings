@@ -29,7 +29,6 @@ _.Zones =
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["g"] = {
 						i(162628, {	-- Tales of de Loa: Akunda
-							["questID"] = 53532,
 							["coord"] = { 42.22, 62.11, 864 },
 							["g"] = {
 								crit(1),	--  Tales of de Loa: Akunda
@@ -42,7 +41,6 @@ _.Zones =
 							},
 						}),
 						i(163333, {	-- Tales of de Loa: Sethraliss
-							["questID"] = 53543,
 							["coord"] = { 49.57, 24.43, 864 },
 							["g"] = {
 								crit(11),	--  Tales of de Loa: Sethraliss
@@ -51,7 +49,13 @@ _.Zones =
 					},
 				}),
 				ach(13018, {	-- Dune Rider
-					["description"] = "|cFFFFFFFFPlank 1|r: Near the north-east corner of Atul'aman at |cFFFFFFFF47.9, 62.5|r.\n|cFFFFFFFFPlank 2|r: West side of Atul'aman ontop of a ledge at |cFFFFFFFF45.8, 63.6|r.\n|cFFFFFFFFPlank 3|r: At the corner of some troll ruins at |cFFFFFFFF38.1, 71.0|r.\n|cFFFFFFFFPlank 4|r: Far west side of the Whistlebloom Oasis at |cFFFFFFFF32.2, 69.0|r.\n|cFFFFFFFFPlank 5|r: At the very top of the snake wall at |cFFFFFFFF54.9, 21.4|r.\n"
+					["coords"] = {
+						{ 47.9, 62.5, 864 },
+						{ 45.8, 63.6, 864 },
+						{ 38.1, 71.0, 864 },
+						{ 32.2, 69.0, 864 },
+						{ 54.9, 21.4, 864 },
+					},
 					--[[ Each plank has a unique "kill credit" NPC id but no quest tracking ID. These are the IDs I found: [Pr3vention]
 					["npcID"] = 143668
 					["npcID"] = 143258
@@ -78,153 +82,66 @@ _.Zones =
 				ach(12482, {	-- Get Hek'd
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["g"] = {
-						{	-- Charged Ranishu Antennae [**]
-							["itemID"] = 158910,	-- Charged Ranishu Antennae
-							["provider"] = { "n", 135536 },	-- Jani
+						i(158910, {	-- Charged Ranishu Antennae
 							["questID"] = 50883,	-- Loot Treasure
-							["sourceQuests"] = {
-								50844,	-- Item Turn-In
-							},
+							["coord"] = { 47.0, 46.6, 864 },	-- Court of Zak'rajan
 							["crs"] = {
 								129464,	-- Ranishu Nibbler
 								129473,	-- Ranishu Nibbler
 								135727,	-- Ranishu Ravager
 								129474,	-- Ranishu Ravager
 							},
-							["coords"] = {	-- Turn-In Location
-								{ 46.98, 46.63, 864 },	-- Court of Zak'rajan
-							},
 							["g"] = {
-								{	-- Charged Ranishu Antennae
-									["criteriaID"] = 3,	-- Charged Ranishu Antennae
-								},
-								{	-- Communing with Jani
-									["npcID"] = -597,	-- Communing with Jani
-									["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
-									["provider"] = { "n", 135536 },	-- Jani
-									["questID"] = 50884,	-- Item Turn-In
-									["sourceQuests"] = {
-										51145,	-- Curse of Jani [Alliance]
-										47442,	-- Curse of Jani [Horde]
-									},
-									["coords"] = {	-- Turn-In Location
-										{
-											46.98,
-											46.63
-										},
-									},
-								},
+								crit(3),	-- Charged Ranishu Antennae
 							},
-						},
-						{	-- Polished Ringhorn Hoof [**]
-							["itemID"] = 158915,	-- Polished Ringhorn Hoof
-							["provider"] = { "n", 135564 },	--  Jani
+						}),
+						i(158915, {	-- Polished Ringhorn Hoof
 							["questID"] = 50890,	-- Loot Treasure
-							["sourceQuests"] = {
-								50889,	-- Item Turn-In
-							},
-							["coords"] = {	-- Turn-In Location
-								{
-									56.26,
-									15.31
-								},
-							},
+							["coord"] = { 56.26, 15.31, 864 },
 							["crs"] = {
 								130317,	-- Ringhorn Fawn
 								130321,	-- Ringhorn Stag
 								130316,	-- Ringhorn Strider
 							},
 							["g"] = {
-								{	-- Communing with Jani
-									["npcID"] = -596,	-- Communing with Jani
-									["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
-									["provider"] = { "n", 135564 },	--  Jani
-									["questID"] = 50889,	-- Item Turn-In
-									["sourceQuests"] = {
-										51145,	-- Curse of Jani [Alliance]
-										47442,	-- Curse of Jani [Horde]
-									},
-									["coords"] = {	-- Turn-In Location
-										{
-											56.26,
-											15.31
-										},
-									},
-								},
-								{	-- Polished Ringhorn Hoof
-									["criteriaID"] = 6,	-- Polished Ringhorn Hoof
-								},
+								crit(6),	-- Polished Ringhorn Hoof
 							},
-						},
-						{	-- Saurid Surprise
+						}),
+						q(50901, {	-- Saurid Surprise
+							["coord"] = { 42.14, 72.13, 864 },
 							["provider"] = { "n", 133859 },	-- Jani
-							["questID"] = 50901,	-- Saurid Surprise
+							["description"] = "Click on trash pile to start quest.",
 							["sourceQuests"] = {
 								51145,	-- Curse of Jani [Alliance]
 								47442,	-- Curse of Jani [Horde]
 							},
-							["description"] = "Click on trash pile to start quest.",
-							["coords"] = {
-								{
-									42.14,
-									72.13
-								},
-							},
 							["g"] = {
-								{	-- Saurid Surprisse
-									["criteriaID"] = 12,	-- Saurid Surprise
-								},
+								crit(12),	-- Saurid Surprise
 							},
-						},
-						{	-- Sturdy Redrock Jaw
-							["itemID"] = 158916,	-- Sturdy Redrock Jaw
-							["provider"] = { "n", 135572 },	-- Jani
+						}),
+						i(158916, {	-- Sturdy Redrock Jaw
 							["questID"] = 50892,	-- Loot Treasure
-							["sourceQuests"] = {
-								50891,	-- Item Turn-In
-							},
-							["coords"] = {
-								{ 49.33, 84.39, 864 },	-- The Eternal Spring
-							},
+							["coord"] = { 49.33, 84.39, 864 },	-- The Eternal Spring
 							["crs"] = {
 								134744,	-- Redrock Howler
 								134718,	-- Redrock Scavenger
 							},
 							["g"] = {
-								{	-- Communing with Jani
-									["npcID"] = -598,	-- Communing with Jani
-									["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
-									["provider"] = { "n", 135572 },	-- Jani
-									["questID"] = 50891,	-- Item Turn-In
-									["sourceQuests"] = {
-										51145,	-- Curse of Jani [Alliance]
-										47442,	-- Curse of Jani [Horde]
-									},
-									["coords"] = {
-										{
-											49.33,
-											84.39
-										},
-									},
-								},
-								{	-- Sturdy Redrock Jaw
-									["criteriaID"] = 9,	-- Sturdy Redrock Jaw
-								},
+								crit(9),	-- Sturdy Redrock Jaw
 							},
-						},
-
+						}),
 					},
 				}),
 				ach(13027, {	-- Mushroom Harvest
 					["collectible"] = false,    -- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-                    ["g"] = {
-                        n(143313, {    -- Portakillo
-                            ["coord"] = { 61.2, 18.0, 864 },
-                            ["g"] = {
-                                crit(3),    -- Portakillo
-                            },
-                        }),
-                    },
+					["g"] = {
+						n(143313, {    -- Portakillo
+							["coord"] = { 61.2, 18.0, 864 },
+							["g"] = {
+								crit(3),    -- Portakillo
+							},
+						}),
+					},
 				}),
 				ach(13016, {	-- Scavenger of the Sands
 					crit(1, {	-- Jason's Rusty Blade
@@ -252,7 +169,7 @@ _.Zones =
 						["coord"] = { 29.5, 59.5, 864 },
 					}),
 					crit(7, {	-- Julien's Left Boot
-						-- ["questID"] = ,
+						["questID"] = 53138,
 						["coord"] = { 52.5, 14.5, 864 },
 					}),
 					crit(8, {	-- Navarro's Flask
@@ -270,6 +187,7 @@ _.Zones =
 					crit(11, {	-- Rachel's Flute
 						["questID"] = 53142,
 						["coord"] = { 66.4, 36.0, 864 },
+						["description"] = "Enter the cave at 64.92, 36.34.",
 					}),
 					crit(12, {	-- Josh's Fang Necklace
 						["questID"] = 53143,
@@ -284,10 +202,39 @@ _.Zones =
 						["coord"] = { 62.9, 22.7, 864 },
 					}),
 				}),
+				ach(13011),		-- Scourge of Zem'lan
+				ach(12478, {	-- Secrets in the Sands
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(1, {	-- Unlikely Allies
+							["sourceQuest"] = 51364,	-- An Explosive Exit
+						}),
+						crit(2, {	-- Dangers in the Desert
+							["sourceQuests"] = {
+								48549,	-- Grozztok the Blackheart
+								48550,	-- Stolen Satchels
+							},
+						}),
+						crit(3, {	-- The Warguard's Fate
+							["sourceQuest"] = 47874,	-- Clearing the Fog
+						}),
+						crit(4, {	-- A City of Secrets
+							["sourceQuest"] = 50561,	-- Sulthis' Stone
+						}),
+						crit(5, {	-- The Three Keepers
+							["sourceQuest"] = 49340,	-- The Keeper's Keys
+						}),
+						crit(6, {	-- Storming the Spire
+							["sourceQuest"] = 50550,	-- The Fall of Emperor Korthek
+						}),
+						crit(7, {	-- Atul'Aman
+							["sourceQuest"] = 50702,	-- Defeat Jakra'zet
+						}),
+					},
+				}),
 				ach(12849, {	-- Treasures of Vol'dun
-					o(280951, {	-- Ashvane Spoils [D]
+					o(280951, {	-- Ashvane Spoils
 						["questID"] = 50237,
-						["sourceQuest"] =  47326,    -- Mine Cart Ride
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						["coord"] = { 44.37, 92.22, 864 },
 						["g"] = {
@@ -301,8 +248,9 @@ _.Zones =
 					o(294317, {	-- Deadwood Chest
 						["questID"] = 52994,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["coord"] = { 40.57, 85.74, 864 },
 					}),
-					o(287324, {	-- Excavator's Greed [D]
+					o(287324, {	-- Excavator's Greed
 						["questID"] = 51136,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						["coord"] = { 57.68, 64.68, 864 },
@@ -311,13 +259,14 @@ _.Zones =
 						["questID"] = 51093,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						["coord"] = { 48.21, 64.70, 864 },
+						["sourceQuest"] = 50702,	-- Defeat Jakra'zet
 					}),
-					o(287304, {	-- Lost Explorer's Bounty [D]
+					o(287304, {	-- Lost Explorer's Bounty
 						["questID"] = 51132,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						["coord"] = { 49.76, 79.35, 864 },
 					}),
-					o(294316, {	-- Lost Offerings of Kimbul	[D]
+					o(294316, {	-- Lost Offerings of Kimbul
 						["questID"] = 52992,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						["coord"] = { 57.02, 11.12, 864 },
@@ -325,8 +274,9 @@ _.Zones =
 					o(287318, {	-- Sandfury Reserve
 						["questID"] = 51133,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["coord"] = { 47.2, 58.5, 864 },
 					}),
-					o(294319, {	-- Sandsunken Treasure [D]
+					o(294319, {	-- Sandsunken Treasure
 						["questID"] = 53004,
 						["sourceQuest"] = 53005,	-- Fishing Bobber
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
@@ -342,10 +292,10 @@ _.Zones =
 					o(287320, {	-- Stranded Cache
 						["questID"] = 51135,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["coord"] = { 44.5, 26.2, 864 },
 					}),
-					o(287326, {	-- Zem'lan's Buried Treasure [D]
+					o(287326, {	-- Zem'lan's Buried Treasure
 						["questID"] = 51137,
-						["sourceQuest"] = 51138,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
 						["coord"] = { 29.36, 87.47, 864 },
 						["g"] = {

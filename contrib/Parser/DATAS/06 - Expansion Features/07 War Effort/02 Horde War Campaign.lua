@@ -91,11 +91,19 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(-17, {	-- Quests
+					q(53602, {	-- Adapting Our Tactics
+						["lvl"] = 114,
+						["coord"] = { 58.5, 62.7, 1164 },
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 143913 },	-- Eitrigg
+						["description"] = "Must unlock at least one foothold on Kul'tiras to get this quest.",
+					}),
 					q(52749, {	-- The War Campaign
 						["provider"] = { "n", 120170 },	-- Nathanos Blightcaller
 						["coord"] = { 40.1, 69.4, 1164 },	-- Dazar'alor
 						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
+						["maps"] = { 1164 },	-- The Great Seal
 						["lvl"] = 110,
 					}),
 					q(52746, {	-- The War Cache
@@ -106,8 +114,11 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 					}),
 					q(53333, {	-- Time for War
-						["sourceQuest"] = 52746,	-- The War Cache
 						["lvl"] = 110,
+						["coord"] = { 58.4, 62.6, 862 },
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+						["sourceQuest"] = 52746,	-- The War Cache
 					}),
 					q(51770, {	-- Mission from the Warchief
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
@@ -135,12 +146,12 @@ _.ExpansionFeatures =
 					q(51803, {	-- The Kul Tiras Campaign
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["coord"] = { 58.4, 62.6, 862 },
-						["sourceQuest"] = 51770,	-- Mission from the Warchief
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
+						--["sourceQuest"] = 51770,	-- Mission from the Warchief -- NOTE: this sourceQuest is not needed as of 31.December.2019
 					}),
 					q(53050, {	-- Deeper Into Kul Tiras
-						["description"] = "Automatically starts when you finish your first Foothold in Kul Tiras",
+						["description"] = "Automatically starts when you finish your first Foothold in Kul Tiras.",
 						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 114,
@@ -153,7 +164,7 @@ _.ExpansionFeatures =
 						["lvl"] = 114,
 					}),
 					q(53056, {	-- Pushing Our Influence
-						["description"] = "Automatically starts when you finish your second Foothold in Kul Tiras",
+						["description"] = "Automatically starts when you finish your second Foothold in Kul Tiras.",
 						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 118,
@@ -236,6 +247,11 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["lvl"] = 110,
 						["maps"] = { 896 },	-- Drustvar
+						["g"] = {
+							i(163669),	-- Honorbound Outrider's Faceguard
+							i(163668),	-- Honorbound Outrider's Mantle
+							i(163671),	-- Honorbound Outrider's Vestments
+						},
 					}),
 					-- Stormsong Valley Foothold
 					q(51802, {	-- Foothold: Stormsong Valley

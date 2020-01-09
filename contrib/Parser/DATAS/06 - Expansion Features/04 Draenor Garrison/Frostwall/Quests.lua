@@ -556,6 +556,24 @@ _.ExpansionFeatures =
 							currency(823),	-- Apexis Crystal x1000
 						},
 					}),
+					q(36627, {	-- Big Frostfire Gun
+						["coord"] = { 62.2, 73.4, 590 },
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 85882 },	-- Blixthraz Blastcharge
+						["sourceQuest"] = 36594,	-- "Spare" Parts
+						["requireSkill"] = 202,	-- Engineering
+						["g"] = {
+							i(111921),	-- Draenor Engineering
+							i(109258),	-- Engineering Works, lvl 1
+						},
+					}),
+					q(36567, {	-- Bigger is Better
+						["maps"] = { 590 },	-- Garrison
+						["coord"] = { 52.4, 53.3, 590 },	-- lvl 1
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 78466 },	-- Gazlowe
+						["sourceQuest"] = 34775,	-- Mission Probable
+					}),
 					q(37961, {	-- Bringing the Bass
 						["provider"] = { "n", 91072 },	-- Drix Bassbolter
 						["coord"] = { 40.9, 47.8, 590 },
@@ -575,10 +593,13 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(37669, {	-- Building For Professions
-						["provider"] = { "n", 78466 },	-- Gazlowe
+						-- TODO: do we want to list every single possible sourceQuest?
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 78466 },	-- Gazlowe
+						["description"] = "Becomes available after completing any seconday profession intro quest.",
 						["coords"] = {
 							{ 52.4, 53.3, 590 },	-- lvl 1
+							{ 42.2, 55.6, 590 },	-- lvl 2
 							{ 37.6, 50.3, 590 },	-- lvl 3
 						},
 					}),
@@ -662,6 +683,11 @@ _.ExpansionFeatures =
 							recipe(187639),	-- Immaculate Versatility Taladite
 						},
 					}),
+					q(36589, {	-- Heavy Arms
+						["races"] = HORDE_ONLY,
+						["provider"] = { "i", 116438 },	-- Burned-Out Hand Cannon
+						["requireSkill"] = 202,	-- Engineering
+					}),
 					q(38296, {	-- Herbs Galore
 						["providers"] = {
 							{ "n", 91031 },	-- Nicholas Mitrik (Horde)
@@ -691,6 +717,13 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 78487 },	-- Rokhan
 						["sourceQuest"] = 36494,	-- News from Talador
+					}),
+					q(36352, {	-- Locating the Lapidarist
+						["coord"] = { 60.9, 40.0, 590 },
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 84967 },	-- "Appraiser" Sazsel Stickyfingers
+						["sourceQuest"] = 36314,	-- The Intricate Pendant
+						["requireSkill"] = 755,	-- Jewelcrafting
 					}),
 					q(36614, {	-- My Very Own Fortress
 						["coord"] = { 42.1, 55.5, 590 },	-- Rank 2
@@ -755,6 +788,13 @@ _.ExpansionFeatures =
 							follower(208),	-- Ahm
 						},
 					}),
+					q(36594, {	-- "Spare" Parts
+						["coord"] = { 62.2, 73.4, 590 },
+						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 85882 },	-- Blixthraz Blastcharge
+						["sourceQuest"] = 36589,	-- Heavy Arms
+						["requireSkill"] = 202,	-- Engineering
+					}),
 					q(38293, {	-- Sumptuous Fur
 						["providers"] = {
 							{ "n", 91034 },	-- Calvo Klyne (Horde)
@@ -780,8 +820,22 @@ _.ExpansionFeatures =
 							{ "o", 237022 },	-- Command Board lvl 3
 						},
 					}),
-					q(35058, {	-- The Mysterious Flask	-- depends on alchemy lab and/or alchemy profession?
+					q(35103, {	-- The Alchemist
+						["coord"] = { 45.4, 50.4, 590 },
 						["races"] = HORDE_ONLY,
+						["provider"] = { "n", 81166 },	-- Refugee Lo'nash
+						["sourceQuest"] = 35058,	-- The Mysterious Flask
+						["requireSkill"] = 171,	-- Alchemy
+					}),
+					q(35058, {	-- The Mysterious Flask
+						["races"] = HORDE_ONLY,
+						["provider"] = { "i", 112566 },	-- Mysterious Flask
+						["requireSkill"] = 171,	-- Alchemy
+					}),
+					q(36314, {	-- The Intricate Pendant
+						["races"] = HORDE_ONLY,
+						["provider"] = { "i", 115287 },	-- Intricate Crimson Pendant
+						["requireSkill"] = 755,	-- Jewelcrafting
 					}),
 					q(35557, {	-- The Secrets of Gorgrond
 						["races"] = HORDE_ONLY,

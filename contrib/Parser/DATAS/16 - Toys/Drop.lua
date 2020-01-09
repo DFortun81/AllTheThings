@@ -98,7 +98,6 @@ _.Toys =
 		i(164374), 		-- Magic Monkey Banana
 		i(131900),		-- Majestic Elderhorn Hoof
 		i(167931),		-- Mechagonian Sawblades
-		i(142536), 		-- Memory Cube
 		i(153126),		-- Micro-Artillery Controller
 		i(163775),		-- Molok Morion
 		i(113670),		-- Mournful Moan of Murmur

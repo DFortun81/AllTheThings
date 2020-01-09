@@ -1323,7 +1323,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 		--	ALLIANCE "DESECRATE THIS FIRE!" QUESTS START HERE.
 			q(11764, {	-- Desecrate this Fire! — Arathi Highlands
 				["isYearly"] = true,
-			--	["objectID"] = 187947,	-- Horde Bonfire
+				["provider"] = { "o", 187947 },	-- Horde Bonfire
 				["coord"] = { 69.0, 43.1, 14 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1331,7 +1331,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11765, {	-- Desecrate this Fire! — Ashenvale
 				["isYearly"] = true,
-			--	["objectID"] = 187948,	-- Horde Bonfire
+				["provider"] = { "o", 187948 },	-- Horde Bonfire
 				["coord"] = { 51.6, 66.8, 63 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1339,7 +1339,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28919, {	-- Desecrate this Fire! — Azshara
 				["isYearly"] = true,
-			--	["objectID"] = 207991,	-- Horde Bonfire
+				["provider"] = { "o", 207991 },	-- Horde Bonfire
 				["coord"] = { 60.4, 53.5, 76 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1347,7 +1347,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11766, {	-- Desecrate this Fire! — Badlands
 				["isYearly"] = true,
-			--	["objectID"] = 187559,	-- Horde Bonfire
+				["provider"] = { "o", 187559 },	-- Horde Bonfire
 				["coord"] = { 24.1, 37.3, 15 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1355,7 +1355,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11767, {	-- Desecrate this Fire! — Blade's Edge Mountains
 				["isYearly"] = true,
-			--	["objectID"] = 187955,	-- Horde Bonfire
+				["provider"] = { "o", 187955 },	-- Horde Bonfire
 				["coord"] = { 49.9, 59.0, 105 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1363,7 +1363,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28917, {	-- Desecrate this Fire! — Blasted Lands
 				["isYearly"] = true,
-			--	["objectID"] = 207989,	-- Horde Bonfire
+				["provider"] = { "o", 207989 },	-- Horde Bonfire
 				["coord"] = { 46.3, 14.4, 17 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1371,7 +1371,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(13441, {	-- Desecrate this Fire! — Borean Tundra
 				["isYearly"] = true,
-			--	["objectID"] = 194033,	-- Horde Bonfire
+				["provider"] = { "o", 194033 },	-- Horde Bonfire
 				["coord"] = { 51.1, 11.9, 114 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1379,7 +1379,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11768, {	-- Desecrate this Fire! — Burning Steppes
 				["isYearly"] = true,
-			--	["objectID"] = 187956,	-- Horde Bonfire
+				["provider"] = { "o", 187956 },	-- Horde Bonfire
 				["coord"] = { 51.5, 29.3, 36 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1387,7 +1387,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(13457, {	-- Desecrate this Fire! — Crystalsong Forest
 				["isYearly"] = true,
-			--	["objectID"] = 194046,	-- Horde Bonfire
+				["provider"] = { "o", 194046 },	-- Horde Bonfire
 				["coord"] = { 80.5, 53.0, 127 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1395,7 +1395,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11769, {	-- Desecrate this Fire! — Desolace
 				["isYearly"] = true,
-			--	["objectID"] = 187957,	-- Horde Bonfire
+				["provider"] = { "o", 187957 },	-- Horde Bonfire
 				["coord"] = { 26.1, 77.4, 66 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1403,7 +1403,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(13451, {	-- Desecrate this Fire! — Dragonblight
 				["isYearly"] = true,
-			--	["objectID"] = 194037,	-- Horde Bonfire
+				["provider"] = { "o", 194037 },	-- Horde Bonfire
 				["coord"] = { 38.5, 48.4, 115 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1411,7 +1411,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11770, {	-- Desecrate this Fire! — Durotar
 				["isYearly"] = true,
-			--	["objectID"] = 187958,	-- Horde Bonfire
+				["provider"] = { "o", 187958 },	-- Horde Bonfire
 				["coord"] = { 52.0, 47.0, 1 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1419,7 +1419,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11771, {	-- Desecrate this Fire! — Dustwallow Marsh
 				["isYearly"] = true,
-			--	["objectID"] = 187959,	-- Horde Bonfire
+				["provider"] = { "o", 187959 },	-- Horde Bonfire
 				["coord"] = { 33.2, 30.8, 70 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1427,7 +1427,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11772, {	-- Desecrate this Fire! — Eversong Woods
 				["isYearly"] = true,
-			--	["objectID"] = 187960,	-- Horde Bonfire
+				["provider"] = { "o", 187960 },	-- Horde Bonfire
 				["coord"] = { 46.3, 50.3, 94 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1435,7 +1435,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11773, {	-- Desecrate this Fire! — Feralas
 				["isYearly"] = true,
-			--	["objectID"] = 187961,	-- Horde Bonfire
+				["provider"] = { "o", 187961 },	-- Horde Bonfire
 				["coord"] = { 72.5, 47.6, 69 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1443,7 +1443,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(44583, {	-- Desecrate this Fire! — Frostfire Ridge
 				["isYearly"] = true,
-			--	["objectID"] = 259870,	-- Horde Bonfire
+				["provider"] = { "o", 259870 },	-- Horde Bonfire
 				["coord"] = { 72.8, 65.2, 525 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1451,7 +1451,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11774, {	-- Desecrate this Fire! — Ghostlands
 				["isYearly"] = true,
-			--	["objectID"] = 187962,	-- Horde Bonfire
+				["provider"] = { "o", 187962 },	-- Horde Bonfire
 				["coord"] = { 47.0, 25.9, 95 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1459,7 +1459,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(13454, {	-- Desecrate this Fire! — Grizzly Hills
 				["isYearly"] = true,
-			--	["objectID"] = 194042,	-- Horde Bonfire
+				["provider"] = { "o", 194042 },	-- Horde Bonfire
 				["coord"] = { 19.1, 61.3, 116 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1467,7 +1467,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11775, {	-- Desecrate this Fire! — Hellfire Peninsula
 				["isYearly"] = true,
-			--	["objectID"] = 187963,	-- Horde Bonfire
+				["provider"] = { "o", 187963 },	-- Horde Bonfire
 				["coord"] = { 57.3, 41.8, 100 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1475,7 +1475,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11776, {	-- Desecrate this Fire! — Hillsbrad Foothills
 				["isYearly"] = true,
-			--	["objectID"] = 187964,	-- Horde Bonfire
+				["provider"] = { "o", 187964 },	-- Horde Bonfire
 				["coord"] = { 54.5, 50.1, 25 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1483,7 +1483,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(13453, {	-- Desecrate this Fire! — Howling Fjord
 				["isYearly"] = true,
-			--	["objectID"] = 194039,	-- Horde Bonfire
+				["provider"] = { "o", 194039 },	-- Horde Bonfire
 				["coord"] = { 48.4, 13.5, 117 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1491,7 +1491,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11777, {	-- Desecrate this Fire! — Mulgore
 				["isYearly"] = true,
-			--	["objectID"] = 187965,	-- Horde Bonfire
+				["provider"] = { "o", 187965 },	-- Horde Bonfire
 				["coord"] = { 52.0, 59.3, 7 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1499,7 +1499,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11778, {	-- Desecrate this Fire! — Nagrand (Outland)
 				["isYearly"] = true,
-			--	["objectID"] = 187966,	-- Horde Bonfire
+				["provider"] = { "o", 187966 },	-- Horde Bonfire
 				["coord"] = { 51.1, 34.2, 107 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1507,7 +1507,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(54746, {	-- Desecrate this Fire! — Nazmir
 				["isYearly"] = true,
-			--	["objectID"] = ,	-- Horde Bonfire (objectID not listed on wowhead at time of implementation)
+				--["provider"] = { "o",  },	-- Horde Bonfire (objectID not listed on wowhead at time of implementation)
 				["coord"] = { 40.0, 74.0, 863 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1515,7 +1515,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11799, {	-- Desecrate this Fire! — Netherstorm
 				["isYearly"] = true,
-			--	["objectID"] = 187949,	-- Horde Bonfire
+				["provider"] = { "o", 187949 },	-- Horde Bonfire
 				["coord"] = { 32.3, 68.4, 109 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1523,7 +1523,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11783, {	-- Desecrate this Fire! — Northern Barrens
 				["isYearly"] = true,
-			--	["objectID"] = 187971,	-- Horde Bonfire
+				["provider"] = { "o", 187971 },	-- Horde Bonfire
 				["coord"] = { 49.9, 54.2, 10 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1531,7 +1531,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28911, {	-- Desecrate this Fire! — Northern Stranglethorn
 				["isYearly"] = true,
-			--	["objectID"] = 207983,	-- Horde Bonfire
+				["provider"] = { "o", 207983 },	-- Horde Bonfire
 				["coord"] = { 40.7, 52.0, 50 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1539,7 +1539,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11779, {	-- Desecrate this Fire! — Shadowmoon Valley (Outland)
 				["isYearly"] = true,
-			--	["objectID"] = 187967,	-- Horde Bonfire
+				["provider"] = { "o", 187967 },	-- Horde Bonfire
 				["coord"] = { 33.6, 30.3, 104 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1547,7 +1547,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(13450, {	-- Desecrate this Fire! — Sholazar Basin
 				["isYearly"] = true,
-			--	["objectID"] = 194034,	-- Horde Bonfire
+				["provider"] = { "o", 194034 },	-- Horde Bonfire
 				["coord"] = { 47.3, 61.7, 119 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1555,7 +1555,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11800, {	-- Desecrate this Fire! — Silithus
 				["isYearly"] = true,
-			--	["objectID"] = 187950,	-- Horde Bonfire
+				["provider"] = { "o", 187950 },	-- Horde Bonfire
 				["coord"] = { 50.8, 41.8, 81 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1563,7 +1563,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11580, {	-- Desecrate this Fire! — Silverpine Forest
 				["isYearly"] = true,
-			--	["objectID"] = 187559,	-- Horde Bonfire
+				["provider"] = { "o", 187559 },	-- Horde Bonfire
 				["coord"] = { 49.6, 38.7, 21 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1571,7 +1571,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28914, {	-- Desecrate this Fire! — Southern Barrens
 				["isYearly"] = true,
-			--	["objectID"] = 207986,	-- Horde Bonfire
+				["provider"] = { "o", 207986 },	-- Horde Bonfire
 				["coord"] = { 40.7, 67.2, 199 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1579,7 +1579,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11780, {	-- Desecrate this Fire! — Stonetalon Mountains
 				["isYearly"] = true,
-			--	["objectID"] = 187968,	-- Horde Bonfire
+				["provider"] = { "o", 187968 },	-- Horde Bonfire
 				["coord"] = { 53.0, 62.4, 65 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1587,7 +1587,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(13455, {	-- Desecrate this Fire! — Storm Peaks
 				["isYearly"] = true,
-			--	["objectID"] = 194043,	-- Horde Bonfire
+				["provider"] = { "o", 194043 },	-- Horde Bonfire
 				["coord"] = { 40.3, 85.6, 120 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1595,7 +1595,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(44627, {	-- Desecrate this Fire! — Suramar
 				["isYearly"] = true,
-			--	["objectID"] = 259926,	-- Horde Bonfire
+				["provider"] = { "o", 259926 },	-- Horde Bonfire
 				["coord"] = { 30.3, 45.4, 680 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1603,7 +1603,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11781, {	-- Desecrate this Fire! — Swamp of Sorrows
 				["isYearly"] = true,
-			--	["objectID"] = 187969,	-- Horde Bonfire
+				["provider"] = { "o", 187969 },	-- Horde Bonfire
 				["coord"] = { 76.7, 14.4, 51 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1611,7 +1611,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11802, {	-- Desecrate this Fire! — Tanaris
 				["isYearly"] = true,
-			--	["objectID"] = 187952,	-- Horde Bonfire
+				["provider"] = { "o", 187952 },	-- Horde Bonfire
 				["coord"] = { 49.8, 28.2, 71 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1619,7 +1619,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11782, {	-- Desecrate this Fire! — Terokkar Forest
 				["isYearly"] = true,
-			--	["objectID"] = 187970,	-- Horde Bonfire
+				["provider"] = { "o", 187970 },	-- Horde Bonfire
 				["coord"] = { 51.9, 43.3, 108 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1627,7 +1627,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11801, {	-- Desecrate this Fire! — The Cape of Stranglethorn
 				["isYearly"] = true,
-			--	["objectID"] = 187951,	-- Horde Bonfire
+				["provider"] = { "o", 187951 },	-- Horde Bonfire
 				["coord"] = { 50.6, 70.8, 210 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1635,7 +1635,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11784, {	-- Desecrate this Fire! — The Hinterlands
 				["isYearly"] = true,
-			--	["objectID"] = 187972,	-- Horde Bonfire
+				["provider"] = { "o", 187972 },	-- Horde Bonfire
 				["coord"] = { 76.4, 74.5, 26 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1643,7 +1643,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11786, {	-- Desecrate this Fire! — Tirisfal Glades
 				["isYearly"] = true,
-			--	["objectID"] = 187559,	-- Horde Bonfire
+				["provider"] = { "o", 187559 },	-- Horde Bonfire
 				["coord"] = { 57.0, 51.9, 18 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1651,7 +1651,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28944, {	-- Desecrate this Fire! — Twilight Highlands
 				["isYearly"] = true,
-			--	["objectID"] = 208090,	-- Horde Bonfire
+				["provider"] = { "o", 208090 },	-- Horde Bonfire
 				["coord"] = { 53.3, 46.5, 241 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1659,7 +1659,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28948, {	-- Desecrate this Fire! — Uldum
 				["isYearly"] = true,
-			--	["objectID"] = 208094,	-- Horde Bonfire
+				["provider"] = { "o", 208094 },	-- Horde Bonfire
 				["coord"] = { 53.0, 34.4, 249 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1667,7 +1667,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28920, {	-- Desecrate this Fire! — Un'Goro Crater
 				["isYearly"] = true,
-			--	["objectID"] = 207992,	-- Horde Bonfire
+				["provider"] = { "o", 207992 },	-- Horde Bonfire
 				["coord"] = { 56.3, 65.8, 78 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1675,7 +1675,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(32496, {	-- Desecrate this Fire! — Vale of Eternal Blossoms
 				["isYearly"] = true,
-			--	["objectID"] = 217852,	-- Horde Bonfire
+				["provider"] = { "o", 217852 },	-- Horde Bonfire
 				["coord"] = { 77.9, 33.9, 390 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1683,7 +1683,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(54749, {	-- Desecrate this Fire! — Vol'dun
 				["isYearly"] = true,
-			--	["objectID"] = ,	-- Horde Bonfire (objectID not listed on wowhead at time of implementation)
+				--["provider"] = { "o",  },	-- Horde Bonfire (objectID not listed on wowhead at time of implementation)
 				["coord"] = { 55.9, 47.4, 864 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1691,7 +1691,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28918, {	-- Desecrate this Fire! — Western Plaguelands
 				["isYearly"] = true,
-			--	["objectID"] = 207990,	-- Horde Bonfire
+				["provider"] = { "o", 207990 },	-- Horde Bonfire
 				["coord"] = { 28.9, 56.8, 22 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1699,7 +1699,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11803, {	-- Desecrate this Fire! — Winterspring
 				["isYearly"] = true,
-			--	["objectID"] = 187953,	-- Horde Bonfire
+				["provider"] = { "o", 187953 },	-- Horde Bonfire
 				["coord"] = { 58.2, 47.3, 83 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1707,7 +1707,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11787, {	-- Desecrate this Fire! — Zangarmarsh
 				["isYearly"] = true,
-			--	["objectID"] = 187975,	-- Horde Bonfire
+				["provider"] = { "o", 187975 },	-- Horde Bonfire
 				["coord"] = { 35.6, 51.9, 102 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1715,7 +1715,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(54744, {	-- Desecrate this Fire! — Zuldazar
 				["isYearly"] = true,
-			--	["objectID"] = ,	-- Horde Bonfire (objectID not listed on wowhead at time of implementation)
+				--["provider"] = { "o",  },	-- Horde Bonfire (objectID not listed on wowhead at time of implementation)
 				["coord"] = { 53.3, 48.1, 862 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1723,7 +1723,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(13458, {	-- Desecrate this Fire! — Zul'Drak
 				["isYearly"] = true,
-			--	["objectID"] = 194048,	-- Horde Bonfire
+				["provider"] = { "o", 194048 },	-- Horde Bonfire
 				["coord"] = { 43.2, 71.4, 121 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
@@ -1733,7 +1733,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 		--	HORDE "DESECRATE THIS FIRE!" QUESTS START HERE.
 			q(11732, {	-- Desecrate this Fire! — Arathi Highlands
 				["isYearly"] = true,
-			--	["objectID"] = 187914,	-- Alliance Bonfire (this isn't linked to the quest on wowhead, but it's the Alliance Bonfire listed in this zone)
+				["provider"] = { "o", 187914 },	-- Alliance Bonfire (this isn't linked to the quest on wowhead, but it's the Alliance Bonfire listed in this zone)
 				["coord"] = { 44.8, 46.1, 14 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1741,7 +1741,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11734, {	-- Desecrate this Fire! — Ashenvale
 				["isYearly"] = true,
-			--	["objectID"] = 187916,	-- Alliance Bonfire
+				["provider"] = { "o", 187916 },	-- Alliance Bonfire
 				["coord"] = { 86.7, 41.4, 63 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1749,7 +1749,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11735, {	-- Desecrate this Fire! — Azuremyst Isle
 				["isYearly"] = true,
-			--	["objectID"] = 187917,	-- Alliance Bonfire
+				["provider"] = { "o", 187917 },	-- Alliance Bonfire
 				["coord"] = { 44.7, 52.5, 97 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1757,7 +1757,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28912, {	-- Desecrate this Fire! — Badlands
 				["isYearly"] = true,
-			--	["objectID"] = 207984,	-- Alliance Bonfire
+				["provider"] = { "o", 207984 },	-- Alliance Bonfire
 				["coord"] = { 18.5, 56.1, 15 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1765,7 +1765,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11736, {	-- Desecrate this Fire! — Blade's Edge Mountains
 				["isYearly"] = true,
-			--	["objectID"] = 187919,	-- Alliance Bonfire
+				["provider"] = { "o", 187919 },	-- Alliance Bonfire
 				["coord"] = { 41.8, 65.9, 105 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1773,7 +1773,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11737, {	-- Desecrate this Fire! — Blasted Lands
 				["isYearly"] = true,
-			--	["objectID"] = 187920,	-- Alliance Bonfire
+				["provider"] = { "o", 187920 },	-- Alliance Bonfire
 				["coord"] = { 55.2, 15.3, 17 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1781,7 +1781,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11738, {	-- Desecrate this Fire! — Bloodmyst Isle
 				["isYearly"] = true,
-			--	["objectID"] = 187921,	-- Alliance Bonfire
+				["provider"] = { "o", 187921 },	-- Alliance Bonfire
 				["coord"] = { 56.0, 68.5, 106 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1789,7 +1789,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(13440, {	-- Desecrate this Fire! — Borean Tundra
 				["isYearly"] = true,
-			--	["objectID"] = 194032,	-- Alliance Bonfire
+				["provider"] = { "o", 194032 },	-- Alliance Bonfire
 				["coord"] = { 55.1, 20.2, 114 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1797,7 +1797,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11739, {	-- Desecrate this Fire! — Burning Steppes
 				["isYearly"] = true,
-			--	["objectID"] = 187922,	-- Alliance Bonfire
+				["provider"] = { "o", 187922 },	-- Alliance Bonfire
 				["coord"] = { 68.6, 59.9, 36 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1805,7 +1805,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(13447, {	-- Desecrate this Fire! — Crystalsong Forest
 				["isYearly"] = true,
-			--	["objectID"] = 194045,	-- Alliance Bonfire
+				["provider"] = { "o", 194045 },	-- Alliance Bonfire
 				["coord"] = { 77.7, 74.9, 127 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1813,7 +1813,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11740, {	-- Desecrate this Fire! — Darkshore
 				["isYearly"] = true,
-			--	["objectID"] = 187923,	-- Alliance Bonfire
+				["provider"] = { "o", 187923 },	-- Alliance Bonfire
 				["coord"] = { 49.0, 22.5, 62 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1821,7 +1821,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11741, {	-- Desecrate this Fire! — Desolace
 				["isYearly"] = true,
-			--	["objectID"] = 187924,	-- Alliance Bonfire
+				["provider"] = { "o", 187924 },	-- Alliance Bonfire
 				["coord"] = { 65.8, 17.0, 66 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1829,7 +1829,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(13443, {	-- Desecrate this Fire! — Dragonblight
 				["isYearly"] = true,
-			--	["objectID"] = 194036,	-- Alliance Bonfire
+				["provider"] = { "o", 194036 },	-- Alliance Bonfire
 				["coord"] = { 75.1, 43.7, 115 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1837,7 +1837,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(54742, {	-- Desecrate this Fire! — Drustvar
 				["isYearly"] = true,
-			--	["objectID"] = ,	-- Alliance Bonfire (objectID not listed on wowhead at time of implementation)
+				--["provider"] = { "o",  },	-- Alliance Bonfire (objectID not listed on wowhead at time of implementation)
 				["coord"] = { 40.2, 47.3, 896 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1845,7 +1845,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11742, {	-- Desecrate this Fire! — Dun Morogh
 				["isYearly"] = true,
-			--	["objectID"] = 187925,	-- Alliance Bonfire
+				["provider"] = { "o", 187925 },	-- Alliance Bonfire
 				["coord"] = { 53.8, 44.7, 27 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1853,7 +1853,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11743, {	-- Desecrate this Fire! — Duskwood
 				["isYearly"] = true,
-			--	["objectID"] = 187926,	-- Alliance Bonfire
+				["provider"] = { "o", 187926 },	-- Alliance Bonfire
 				["coord"] = { 73.2, 54.9, 47 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1861,7 +1861,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11744, {	-- Desecrate this Fire! — Dustwallow Marsh
 				["isYearly"] = true,
-			--	["objectID"] = 187927,	-- Alliance Bonfire
+				["provider"] = { "o", 187927 },	-- Alliance Bonfire
 				["coord"] = { 62.1, 40.3, 70 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1869,7 +1869,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11745, {	-- Desecrate this Fire! — Elwynn Forest
 				["isYearly"] = true,
-			--	["objectID"] = 187564,	-- Alliance Bonfire
+				["provider"] = { "o", 187564 },	-- Alliance Bonfire
 				["coord"] = { 43.2, 63.0, 37 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1877,7 +1877,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11746, {	-- Desecrate this Fire! — Feralas
 				["isYearly"] = true,
-			--	["objectID"] = 187929,	-- Alliance Bonfire
+				["provider"] = { "o", 187929 },	-- Alliance Bonfire
 				["coord"] = { 46.6, 43.8, 69 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1885,7 +1885,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(13445, {	-- Desecrate this Fire! — Grizzly Hills
 				["isYearly"] = true,
-			--	["objectID"] = 194040,	-- Alliance Bonfire
+				["provider"] = { "o", 194040 },	-- Alliance Bonfire
 				["coord"] = { 34.1, 60.7, 116 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1893,7 +1893,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11747, {	-- Desecrate this Fire! — Hellfire Peninsula
 				["isYearly"] = true,
-			--	["objectID"] = 187930,	-- Alliance Bonfire
+				["provider"] = { "o", 187930 },	-- Alliance Bonfire
 				["coord"] = { 61.9, 58.5, 100 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1901,7 +1901,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(13444, {	-- Desecrate this Fire! — Howling Fjord
 				["isYearly"] = true,
-			--	["objectID"] = 194038,	-- Alliance Bonfire
+				["provider"] = { "o", 194038 },	-- Alliance Bonfire
 				["coord"] = { 57.7, 15.7, 117 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1909,7 +1909,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11749, {	-- Desecrate this Fire! — Loch Modan
 				["isYearly"] = true,
-			--	["objectID"] = 187564,	-- Alliance Bonfire
+				["provider"] = { "o", 187564 },	-- Alliance Bonfire
 				["coord"] = { 32.3, 40.4, 48 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1917,7 +1917,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11750, {	-- Desecrate this Fire! — Nagrand (Outland)
 				["isYearly"] = true,
-			--	["objectID"] = 187933,	-- Alliance Bonfire
+				["provider"] = { "o", 187933 },	-- Alliance Bonfire
 				["coord"] = { 49.7, 69.6, 107 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1925,7 +1925,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11759, {	-- Desecrate this Fire! — Netherstorm
 				["isYearly"] = true,
-			--	["objectID"] = 187942,	-- Alliance Bonfire
+				["provider"] = { "o", 187942 },	-- Alliance Bonfire
 				["coord"] = { 31.1, 62.7, 109 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1933,7 +1933,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28910, {	-- Desecrate this Fire! — Northern Stranglethorn
 				["isYearly"] = true,
-			--	["objectID"] = 207982,	-- Alliance Bonfire
+				["provider"] = { "o", 207982 },	-- Alliance Bonfire
 				["coord"] = { 51.6, 63.3, 50 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1941,7 +1941,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11751, {	-- Desecrate this Fire! — Redridge Mountains
 				["isYearly"] = true,
-			--	["objectID"] = 187934,	-- Alliance Bonfire
+				["provider"] = { "o", 187934 },	-- Alliance Bonfire
 				["coord"] = { 24.4, 53.9, 49 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1949,7 +1949,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11752, {	-- Desecrate this Fire! — Shadowmoon Valley (Outland)
 				["isYearly"] = true,
-			--	["objectID"] = 187935,	-- Alliance Bonfire
+				["provider"] = { "o", 187935 },	-- Alliance Bonfire
 				["coord"] = { 39.6, 54.3, 104 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1957,7 +1957,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(44582, {	-- Desecrate this Fire! — Shadowmoon Valley (WoD)
 				["isYearly"] = true,
-			--	["objectID"] = 259871,	-- Alliance Bonfire
+				["provider"] = { "o", 259871 },	-- Alliance Bonfire
 				["coord"] = { 42.8, 35.9, 539 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1965,7 +1965,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(13442, {	-- Desecrate this Fire! — Sholazar Basin
 				["isYearly"] = true,
-			--	["objectID"] = 194035,	-- Alliance Bonfire
+				["provider"] = { "o", 194035 },	-- Alliance Bonfire
 				["coord"] = { 47.9, 66.0, 119 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1973,7 +1973,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11760, {	-- Desecrate this Fire! — Silithus
 				["isYearly"] = true,
-			--	["objectID"] = 187943,	-- Alliance Bonfire
+				["provider"] = { "o", 187943 },	-- Alliance Bonfire
 				["coord"] = { 60.5, 33.4, 81 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1981,7 +1981,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28913, {	-- Desecrate this Fire! — Southern Barrens
 				["isYearly"] = true,
-			--	["objectID"] = 207985,	-- Alliance Bonfire
+				["provider"] = { "o", 207985 },	-- Alliance Bonfire
 				["coord"] = { 48.2, 72.4, 199 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1989,7 +1989,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28915, {	-- Desecrate this Fire! — Stonetalon Mountains
 				["isYearly"] = true,
-			--	["objectID"] = 207987,	-- Alliance Bonfire
+				["provider"] = { "o", 207987 },	-- Alliance Bonfire
 				["coord"] = { 49.6, 51.1, 65 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -1997,7 +1997,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(13446, {	-- Desecrate this Fire! — Storm Peaks
 				["isYearly"] = true,
-			--	["objectID"] = 194044,	-- Alliance Bonfire
+				["provider"] = { "o", 194044 },	-- Alliance Bonfire
 				["coord"] = { 41.4, 87.0, 120 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -2005,7 +2005,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(54739, {	-- Desecrate this Fire! — Stormsong Valley
 				["isYearly"] = true,
-			--	["objectID"] = ,	-- Alliance Bonfire (objectID not listed on wowhead at time of implementation)
+				--["provider"] = { "o",  },	-- Alliance Bonfire (objectID not listed on wowhead at time of implementation)
 				["coord"] = { 36.0, 51.5, 942 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -2013,7 +2013,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(44624, {	-- Desecrate this Fire! — Suramar
 				["isYearly"] = true,
-			--	["objectID"] = 259927,	-- Alliance Bonfire
+				["provider"] = { "o", 259927 },	-- Alliance Bonfire
 				["coord"] = { 22.8, 58.2, 680 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -2021,7 +2021,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28916, {	-- Desecrate this Fire! — Swamp of Sorrows
 				["isYearly"] = true,
-			--	["objectID"] = 207988,	-- Alliance Bonfire
+				["provider"] = { "o", 207988 },	-- Alliance Bonfire
 				["coord"] = { 70.1, 14.8, 51 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -2029,7 +2029,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11762, {	-- Desecrate this Fire! — Tanaris
 				["isYearly"] = true,
-			--	["objectID"] = 187945,	-- Alliance Bonfire
+				["provider"] = { "o", 187945 },	-- Alliance Bonfire
 				["coord"] = { 52.7, 30.0, 71 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -2037,7 +2037,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11753, {	-- Desecrate this Fire! — Teldrassil
 				["isYearly"] = true,
-			--	["objectID"] = 187936,	-- Alliance Bonfire
+				["provider"] = { "o", 187936 },	-- Alliance Bonfire
 				["coord"] = { 54.7, 52.7, 57 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -2045,7 +2045,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11754, {	-- Desecrate this Fire! — Terokkar Forest
 				["isYearly"] = true,
-			--	["objectID"] = 187937,	-- Alliance Bonfire
+				["provider"] = { "o", 187937 },	-- Alliance Bonfire
 				["coord"] = { 54.2, 55.4, 108 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -2053,7 +2053,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11761, {	-- Desecrate this Fire! — The Cape of Stranglethorn
 				["isYearly"] = true,
-			--	["objectID"] = 187944,	-- Alliance Bonfire
+				["provider"] = { "o", 187944 },	-- Alliance Bonfire
 				["coord"] = { 51.7, 67.3, 210 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -2061,7 +2061,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11755, {	-- Desecrate this Fire! — The Hinterlands
 				["isYearly"] = true,
-			--	["objectID"] = 187938,	-- Alliance Bonfire (this isn't linked to the quest on wowhead, but it's the Alliance Bonfire listed in this zone)
+				["provider"] = { "o", 187938 },	-- Alliance Bonfire (this isn't linked to the quest on wowhead, but it's the Alliance Bonfire listed in this zone)
 				["coord"] = { 14.5, 50.0, 26 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -2069,7 +2069,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(54736, {	-- Desecrate this Fire! — Tiragarde Sound
 				["isYearly"] = true,
-			--	["objectID"] = ,	-- Alliance Bonfire (objectID not listed on wowhead at time of implementation)
+				--["provider"] = { "o",  },	-- Alliance Bonfire (objectID not listed on wowhead at time of implementation)
 				["coord"] = { 76.3, 49.7, 895 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -2077,7 +2077,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28943, {	-- Desecrate this Fire! — Twilight Highlands
 				["isYearly"] = true,
-			--	["objectID"] = 208089,	-- Alliance Bonfire
+				["provider"] = { "o", 208089 },	-- Alliance Bonfire
 				["coord"] = { 47.0, 28.3, 241 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -2085,7 +2085,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28947, {	-- Desecrate this Fire! — Uldum
 				["isYearly"] = true,
-			--	["objectID"] = 208093,	-- Alliance Bonfire
+				["provider"] = { "o", 208093 },	-- Alliance Bonfire
 				["coord"] = { 53.4, 32.0, 249 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -2093,7 +2093,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28921, {	-- Desecrate this Fire! — Un'Goro Crater
 				["isYearly"] = true,
-			--	["objectID"] = 207993,	-- Alliance Bonfire
+				["provider"] = { "o", 207993 },	-- Alliance Bonfire
 				["coord"] = { 60.0, 62.9, 78 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -2101,7 +2101,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(32503, {	-- Desecrate this Fire! — Vale of Eternal Blossoms
 				["isYearly"] = true,
-			--	["objectID"] = 217851,	-- Alliance Bonfire
+				["provider"] = { "o", 217851 },	-- Alliance Bonfire
 				["coord"] = { 79.8, 37.0, 390 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -2109,7 +2109,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11756, {	-- Desecrate this Fire! — Western Plaguelands
 				["isYearly"] = true,
-			--	["objectID"] = 187939,	-- Alliance Bonfire
+				["provider"] = { "o", 187939 },	-- Alliance Bonfire
 				["coord"] = { 43.6, 82.5, 22 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -2117,7 +2117,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11581, {	-- Desecrate this Fire! — Westfall
 				["isYearly"] = true,
-			--	["objectID"] = 187564,	-- Alliance Bonfire
+				["provider"] = { "o", 187564 },	-- Alliance Bonfire
 				["coord"] = { 45.2, 62.3, 52 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -2125,7 +2125,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11757, {	-- Desecrate this Fire! — Wetlands
 				["isYearly"] = true,
-			--	["objectID"] = 187940,	-- Alliance Bonfire
+				["provider"] = { "o", 187940 },	-- Alliance Bonfire
 				["coord"] = { 13.3, 47.3, 56 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -2133,7 +2133,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11763, {	-- Desecrate this Fire! — Winterspring
 				["isYearly"] = true,
-			--	["objectID"] = 187946,	-- Alliance Bonfire
+				["provider"] = { "o", 187946 },	-- Alliance Bonfire
 				["coord"] = { 61.3, 47.1, 83 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -2141,7 +2141,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11758, {	-- Desecrate this Fire! — Zangarmarsh
 				["isYearly"] = true,
-			--	["objectID"] = 187941,	-- Alliance Bonfire
+				["provider"] = { "o", 187941 },	-- Alliance Bonfire
 				["coord"] = { 68.6, 52.0, 102 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -2149,7 +2149,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(13449, {	-- Desecrate this Fire! — Zul'Drak
 				["isYearly"] = true,
-			--	["objectID"] = 194049,	-- Alliance Bonfire
+				["provider"] = { "o", 194049 },	-- Alliance Bonfire
 				["coord"] = { 40.4, 61.0, 121 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
@@ -3210,7 +3210,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(9332,  {	-- Stealing Darnassus's Flame
 				["isYearly"] = true,
-			--	["objectID"] = 181334,	-- Flame of Darnassus
+				["provider"] = { "o", 181334 },	-- Flame of Darnassus
 			--	["itemID"] = 23184,	-- Flame of Darnassus
 				["coord"] = { 64.1, 46.7, 89 },
 				["races"] = HORDE_ONLY,
@@ -3219,7 +3219,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11933, {	-- Stealing the Exodar's Flame
 				["isYearly"] = true,
-			--	["objectID"] = 188128,	-- Flame of the Exodar
+				["provider"] = { "o", 188128 },	-- Flame of the Exodar
 			--	["itemID"] = 35569,	-- Flame of the Exodar
 				["coord"] = { 40.8, 26.3, 103 },
 				["races"] = HORDE_ONLY,
@@ -3228,7 +3228,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(9331,  {	-- Stealing Ironforge's Flame
 				["isYearly"] = true,
-			--	["objectID"] = 181333,	-- Flame of Ironforge
+				["provider"] = { "o", 181333 },	-- Flame of Ironforge
 			--	["itemID"] = 23183,	-- Flame of Ironforge
 				["coord"] = { 65.2, 24.7, 87 },
 				["races"] = HORDE_ONLY,
@@ -3237,7 +3237,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(9324,  {	-- Stealing Orgrimmar's Flame
 				["isYearly"] = true,
-			--	["objectID"] = 181336,	-- Flame of Orgrimmar
+				["provider"] = { "o", 181336 },	-- Flame of Orgrimmar
 			--	["itemID"] = 23179,	-- Flame of Orgrimmar
 				["coord"] = { 46.5, 37.6, 85 },
 				["races"] = ALLIANCE_ONLY,
@@ -3246,7 +3246,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(9330,  {	-- Stealing Stormwind's Flame
 				["isYearly"] = true,
-			--	["objectID"] = 181332,	-- Flame of 
+				["provider"] = { "o", 181332 },	-- Flame of 
 			--	["itemID"] = 23182,	-- Flame of Stormwind
 				["coord"] = { 49.8, 72.9, 84 },
 				["races"] = HORDE_ONLY,
@@ -3255,7 +3255,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(9325,  {	-- Stealing Thunder Bluff's Flame
 				["isYearly"] = true,
-			--	["objectID"] = 181337,	-- Flame of 
+				["provider"] = { "o", 181337 },	-- Flame of 
 			--	["itemID"] = 23180,	-- Flame of Thunder Bluff
 				["coord"] = { 21.9, 27.3, 88 },
 				["races"] = ALLIANCE_ONLY,
@@ -3264,7 +3264,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(9326,  {	-- Stealing the Undercity's Flame
 				["isYearly"] = true,
-			--	["objectID"] = 181335,	-- Flame of the Undercity
+				["provider"] = { "o", 181335 },	-- Flame of the Undercity
 			--	["itemID"] = 23181,	-- Flame of the Undercity
 				["coord"] = { 68.7, 8.50, 90 },
 				["races"] = ALLIANCE_ONLY,
@@ -3273,7 +3273,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11935, {	-- Stealing Silvermoon's Flame
 				["isYearly"] = true,
-			--	["objectID"] = 188129,	-- Flame of 
+				["provider"] = { "o", 188129 },	-- Flame of 
 			--	["itemID"] = 35568,	-- Flame of Silvermoon
 				["coord"] = { 69.7, 42.7, 110 },
 				["races"] = ALLIANCE_ONLY,

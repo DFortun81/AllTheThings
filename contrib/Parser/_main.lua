@@ -54,6 +54,32 @@ local DifficultyDB = {
 	[24] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = 42 },
 	[33] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = 42 },
 };
+
+-- Races
+HUMAN = 1;
+ORC = 2;
+DWARF = 3;
+NIGHTELF = 4;
+UNDEAD = 5;
+TAUREN = 6;
+GNOME = 7;
+TROLL = 8;
+GOBLIN = 9;
+BLOODELF = 10;
+DRAENEI = 11;
+WORGEN = 12;
+PANDAREN_NEUTRAL = 24;
+PANDAREN_ALLIANCE = 25;
+PANDAREN_HORDE = 26;
+NIGHTBORNE = 27;
+HIGHMOUNTAIN = 28;
+VOIDELF = 29;
+LIGHTFORGED = 30;
+ZANDALARI = 31;
+KULTIRAN = 32;
+DARKIRON = 34;
+MAGHAR = 36;
+
 ALLIANCE_ONLY = {
 	1,	-- Human
 	3,	-- Dwarf
@@ -109,6 +135,21 @@ ALL_RACES = {	-- NOTE: Use this with the exclude function.
 	36,	-- Mag'har
 	37,	-- Mechagnome
 };
+
+-- CLASSES
+WARRIOR = 1;
+PALADIN = 2;
+HUNTER = 3;
+ROGUE = 4;
+PRIEST = 5;
+DEATHKNIGHT = 6;
+SHAMAN = 7;
+MAGE = 8;
+WARLOCK = 9;
+MONK = 10;
+DRUID = 11;
+DEMONHUNTER = 12;
+
 ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 	1,	-- Warrior
 	2,	-- Paladin

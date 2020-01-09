@@ -38,8 +38,6 @@ _.ExpansionFeatures =
 					q(41053),	-- Altar of the Eternal Hunt
 					un(40, q(45180)),	-- An Island of War
 					q(46022),	-- An Urgent Warning
-					un(40, q(44258)),	-- Assault on Violet Hold: Into the Violet Hold
-					un(40, q(44259)),	-- Assault on Violet Hold: Into the Violet Hold
 					q(42404),	-- Assisting the Archmage
 					q(42656),	-- Azure Weaponry
 					q(42397),	-- Baron and the Huntsman
@@ -48,19 +46,13 @@ _.ExpansionFeatures =
 					q(42415),	-- Champion: Halduron Brightwing
 					q(42409),	-- Champion: Loren Stormhoof
 					q(44043),	-- Continuing the Legend
-					un(40, q(44275)),	-- Court of Stars
 					q(45392),	-- Dark Memento
-					un(40, q(43551)),	-- Darkheart Thicket
-					un(40, q(44273)),	-- Darkheart Thicket
-					un(40, q(44272)),	-- Darkheart Thicket
 					q(42654),	-- Darkheart Thicket: Nightmare Oak
 					q(47073),	-- Delivering Lost Knowledge
 					q(45173, {	-- Desperate Times
 						["repeatable"] = true,
 					}),
 					q(45551),	-- Devastating Effects
-					un(40, q(44270)),	-- Eye of Azshara
-					un(40, q(44271)),	-- Eye of Azshara
 					q(46783),	-- Further Advancement
 					un(40, q(46149)),	-- Furthering Knowledge. Used to Increase Artefact Power
 					q(42403, {	-- Highmountain Hunters
@@ -75,18 +67,9 @@ _.ExpansionFeatures =
 					q(44680),	-- Leading by Example
 					q(42385),	-- Lending a Hand
 					q(42523),	-- Making Contact
-					un(40, q(43553)),	-- Maw of Souls
-					un(40, q(44266)),	-- Maw of Souls
-					un(40, q(44267)),	-- Maw of Souls
 					q(42657),	-- Meeting in Moonclaw Vale
 					q(42400),	-- Missing Mages
-					un(40, q(44264)),	-- Neltharion's Lair
-					un(40, q(43554)),	-- Neltharion's Lair
-					un(40, q(44265)),	-- Neltharion's Lair
 					q(40955),	-- Oath of Service
-					un(40, q(43509)),	-- Odyn's Challenge
-					un(40, q(44269)),	-- Odyn's Challenge
-					un(40, q(44268)),	-- Odyn's Challenge
 					q(40953),	-- On Eagle's Wings
 					q(44366),	-- One Last Adventure
 					q(42655),	-- Ore Under the Sea
@@ -99,18 +82,13 @@ _.ExpansionFeatures =
 					q(41540),	-- Rendezvous with the Courier
 					q(42402),	-- Requesting Reinforcements
 					q(42408),	-- Required Reagents
-					un(40, q(44917)),	-- Return to Karazhan: The Tower of Power
 					q(42519),	-- Rise, Champions
 					q(42133),	-- Same Day Delivery
 					q(42384),	-- Scouting Reports
 					q(42395),	-- Signaling Trouble
 					q(40958),	-- Tactical Matters
 					q(42526),	-- Tech It Up A Notch
-					un(40, q(44263)),	-- The Arcway
 					q(40959),	-- The Campaign Begins
-					un(40, q(44276)),	-- The Lord of Black Rook Hold
-					un(40, q(43545)),	-- The Lord of Black Rook Hold
-					un(40, q(44277)),	-- The Lord of Black Rook Hold
 					q(43182),	-- The Missing Vessel
 					q(42407),	-- The Nature of the Beast
 					q(42401),	-- The Scent of Magic
@@ -122,8 +100,6 @@ _.ExpansionFeatures =
 					q(44212),	-- Unseen Fate
 					q(42394),	-- Unseen Protection
 					q(42388),	-- Urgent Summons
-					un(40, q(44260)),	-- Vault of the Wardens
-					un(40, q(44261)),	-- Vault of the Wardens
 					q(44058),	-- Volpin the Elusive
 					q(44233),	-- Walk This Way
 					q(45179, {	-- Win the Crowd

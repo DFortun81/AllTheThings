@@ -58,7 +58,7 @@ _.Zones =
 				}),
 				q(50131, {	-- An Outside Perspective
 					["provider"] = { "n", 17923 },	-- Fahssn
-					["coord"] = { 19.0, 63,4, 102 },
+					["coord"] = { 19.0, 63.4, 102 },
 					["minReputation"] = { 970, NEUTRAL },
 					["maxReputation"] = { 970, FRIENDLY },
 					["sourceQuests"] = {

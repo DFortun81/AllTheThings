@@ -3,6 +3,33 @@
 ---------------------------------------------------------------------------
 _.NeverImplemented =
 {
+	tier(8, {	-- Battle for Azeroth
+		["g"] = bubbleDown({["u"]=1}, {
+			n(-17, {	-- Quests
+				q(47860),	-- A Rude Awakening
+				q(48994),	-- Akunda the Liar
+				q(49331),	-- An Interesting Find
+				q(47671),	-- Ancient Lore
+				q(47672),	-- Ancient Lore
+				q(48845),	-- Cannon Cremation
+				q(48995),	-- Defeat Xenxuju
+				q(47318),	-- Fruit of the Desert
+				q(48775),	-- Last Respects
+				q(49337),	-- Matters of the Heart
+				q(49336),	-- Piecing Together the Past
+				q(48989),	-- Poisoned Intentions
+				q(50590),	-- Preface the Pitch
+				q(47325),	-- Reckless Vengeance
+				q(49672),	-- Servant of the Loa
+				q(47410),	-- Sethrak Sabotage
+				q(50951),	-- Sharing the Blessings
+				q(50687),	-- Skycaller Carcanet
+				q(48307),	-- Strange Totems
+				q(48990),	-- The Leader Calls
+				q(48838),	-- Water Reclamation
+			}),
+		}),
+	}),
 	n(-10052, {	-- BFA - Stuff that might gets added later duo changes/hotfixes/patches and/or similar
 		-- Future Emsembles!!
 		-- Leather Horde (you probably will learn both after learning one)
@@ -1717,7 +1744,6 @@ _.NeverImplemented =
 		un(1, i(5130)),	-- Unknown
 		un(1, i(5131)),	-- Unknown
 		un(1, i(5132)),	-- Unknown
-		un(1, i(172219)),	-- Unknown
 		un(1, i(169177)),	-- Blueprint: TK32(DNT))
 		un(1, i(169178)),	-- Blueprint: TK33(DNT))
 		un(1, i(169179)),	-- Blueprint: TK34(DNT))

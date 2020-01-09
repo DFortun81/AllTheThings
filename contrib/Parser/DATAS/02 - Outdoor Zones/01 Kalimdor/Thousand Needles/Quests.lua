@@ -383,6 +383,14 @@ _.Zones =
 					["provider"] = { "n", 4452 },	-- Kravel Koalbeard
 					["sourceQuest"] = 1119,	-- Zanzil's Mixture and a Fool's Stout
 				}),
+				q(1121, {	-- Get the Goblins Drunk
+					["u"] = 40,	-- Legacy Quests
+				}),
+				q(1950, {	-- Get the Scoop
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
+				}),
 				q(25756, {	-- Get Zherin!
 					["provider"] = { "n", 41190 },	-- Crazzle Sprysprocket
 					["coord"] = { 91.4, 57.6, 64 },
@@ -714,6 +722,11 @@ _.Zones =
 						1120,	-- Get the Gnomes Drunk
 						1121,	-- Get the Goblins Drunk
 					},
+				}),
+				q(1951, {	-- Rituals of Power
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
 				}),
 				q(1194,  {	-- Rizzle's Schematics
 					["u"] = 40,

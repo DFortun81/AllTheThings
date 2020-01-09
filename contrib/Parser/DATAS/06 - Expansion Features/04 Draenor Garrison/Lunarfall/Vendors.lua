@@ -197,7 +197,7 @@ _.ExpansionFeatures =
 				}),
 				n(80285, { 	-- Guh <Bladespire Trader>
 					["races"] = ALLIANCE_ONLY,
-					["description"] = "|cff66ccffFound at 37.4,60.2 in Frostfire Ridge - speak with him to have him visit your garrison.|r",
+					["description"] = "Must speak to him in |cFFFFD700Frostfire Ridge|r before he joins your garrison.",
 					["g"] = {
 						i(119430, {	-- Gas-Powered Stick
 							["cost"] = 10000000,	-- 1,000g

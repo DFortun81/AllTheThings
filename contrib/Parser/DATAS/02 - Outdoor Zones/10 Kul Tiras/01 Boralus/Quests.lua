@@ -225,6 +225,12 @@ _.Zones =
 							["coord"] = { 70.4, 26.9, 1161 },
 							["races"] = ALLIANCE_ONLY,
 						}),
+						q(57274, {	-- Quartermaster's Bounty
+							["provider"] = { "n", 143560 },	-- Marshal Gabriel
+							["isWeekly"] = true,
+							["coord"] = { 56.4, 25.8, 1161 },
+							["g"] = { i(171095) },			-- Warlord's Trophy
+						}),
 						q(56499, {	-- Storming the Battlefields!
 							["provider"] = { "n", 143560 },	-- Marshal Gabriel
 							["races"] = ALLIANCE_ONLY,
@@ -485,6 +491,7 @@ _.Zones =
 					["provider"] = { "n", 145396 },	-- Xal'atath
 				}),
 				q(48622, {	-- The Vanishing Lord
+					["altQuests"] = { 53434 },	-- The Vanishing Lord
 					["coord"] = { 68.0, 22.0, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 121235 },	-- Taelia

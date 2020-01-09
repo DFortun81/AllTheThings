@@ -10,7 +10,10 @@ _.Zones =
 					["icon"] = "Interface\\Icons\\FactionChange",
 					["g"] = {
 						q(50242, {	-- A Choice for Allies
-							["provider"] = { "n", 126065 },	-- Lady Sylvanas Windrunner
+							["providers"] = {
+								{ "n", 126065 },	-- Lady Sylvanas Windrunner
+								{ "n", 133523 },	-- Ji Firepaw
+							},
 							["coord"] = { 37.8, 81.0, 85 },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 110,
@@ -664,13 +667,19 @@ _.Zones =
 									}),
 								}),
 								q(49930, {	-- The Call for Allies
-									["provider"] = { "n", 126065 },	-- Lady Sylvanas Windrunner
+									["providers"] = {
+										{ "n", 126065 },	-- Lady Sylvanas Windrunner
+										{ "n", 133523 },	-- Ji Firepaw
+									},
 									["coord"] = { 37.8, 81.0, 85 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 110,
 								}),
 								q(50254,{	-- A Second Ally For the Cause
-									["provider"] = { "n", 126065 },	-- Lady Sylvanas Windrunner
+									["providers"] = {
+										{ "n", 126065 },	-- Lady Sylvanas Windrunner
+										{ "n", 133523 },	-- Ji Firepaw
+									},
 									["coord"] = { 37.8, 81.0, 85 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 110,
@@ -1116,6 +1125,14 @@ _.Zones =
 						}),
 					},
 				}),
+				q(49855, {	-- Disaster at Mount Hyjal
+					["provider"] = { "n", 45244 },	-- Farseer Krogar
+					["coord"] = { 50.4, 38.2, 85 },
+					["sourceQuest"] = 28805,	-- The Eye of the Storm
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+					["lvl"] = 80,
+				}),
 				q(6385,  {	-- Doras the Wind Rider Master
 					["provider"] = { "n", 6929 },	-- Innkeeper Gryshka
 					["coord"] = { 53.5, 78.7, 85 },
@@ -1282,6 +1299,11 @@ _.Zones =
 					["lvl"] = 45,
 					["u"] = 40,
 				}),
+				q(1947, {	-- Journey to the Marsh
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
+				}),
 				q(8944,  {	-- Just Compensation (Warrior)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
@@ -1398,6 +1420,11 @@ _.Zones =
 						un(2, i(22106)), 	-- Feralheart Belt
 						un(2, i(22110)), 	-- Feralheart Gloves
 					},
+				}),
+				q(1945, {	-- Laughing Sisters
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
 				}),
 				q(32673, {	-- Learn To Ride
 					["description"] = "This quest is available to Goblins upon reaching level 20.",
@@ -1886,6 +1913,7 @@ _.Zones =
 				q(28805, {	-- The Eye of the Storm
 					["provider"] = { "n", 45244 },	-- Farseer Krogar
 					["coord"] = { 50.4, 38.2, 85 },
+					["sourceQuest"] = 28790,	-- A Personal Summons
 					["races"] = HORDE_ONLY,
 					["lvl"] = 82,
 				}),
@@ -2005,6 +2033,7 @@ _.Zones =
 				q(28816, {	-- To the Depths
 					["provider"] = { "n", 45244 },	-- Farseer Krogar
 					["coord"] = { 50.4, 38.2, 85 },
+					["sourceQuest"] = 28805,	-- The Eye of the Storm
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 80,
@@ -2114,6 +2143,11 @@ _.Zones =
 						i(63924),	-- Blade-Dodging Girdle
 						i(63923),	-- Hauberk of Shock
 					},
+				}),
+				q(1944, {	-- Waters of Xavian
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
 				}),
 				q(28466, {	-- Weapons of Darkness
 					["provider"] = { "n", 44725 },	-- Sunwalker Atohmo

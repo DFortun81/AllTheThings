@@ -10,8 +10,9 @@ _.ExpansionFeatures =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						n(-17, {	-- Quests
-							q(36380, {	-- Diamonds Are Forever
-								i(115503),	-- Blazing Diamond Pendant (Toy)
+							q(37573, {	-- Your First Jewelcrafting Work Order
+								["races"] = HORDE_ONLY,
+								["provider"] = { "n", 79832 },	-- Dorogarr
 							}),
 						}),
 						n(-2,  {	-- Vendors

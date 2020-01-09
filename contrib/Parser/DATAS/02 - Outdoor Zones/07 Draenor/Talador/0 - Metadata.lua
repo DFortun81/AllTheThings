@@ -10,6 +10,7 @@ _.Zones =
 			["maps"] = {
 				536,	-- Tomb of Lights
 				537,	-- Tomb of Souls
+				538,	-- The Breached Ossuary
 				594,	-- Shattrath City (The Battle for Shattrath scenario)
 			},
 			["lvl"] = 94,

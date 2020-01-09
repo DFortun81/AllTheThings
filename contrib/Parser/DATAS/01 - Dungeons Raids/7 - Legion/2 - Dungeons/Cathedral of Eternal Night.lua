@@ -21,6 +21,10 @@ _.Instances = { tier(7, {	-- Legion
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
+				q(46869, {	-- Cathedral of Eternal Night: Temptress of Pain
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 			}),
 			d(2, {	-- Heroic
 				n(0, {	-- Zone Drops

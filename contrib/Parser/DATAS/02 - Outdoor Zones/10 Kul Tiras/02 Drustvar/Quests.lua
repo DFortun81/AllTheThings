@@ -1041,7 +1041,7 @@ _.Zones =
 				}),
 				q(53476, {	-- The Great Sea Scrolls
 					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
-				--	["itemID"] = 163856,	-- Ancient Pilgrimage Scrollcasing
+					["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
 					["g"] = {
 						i(163863),	-- Bartered Vrykul Cowl
 						i(163864),	-- Bartered Vrykul Facemask
@@ -1198,6 +1198,18 @@ _.Zones =
 					["coord"] = { 70.0, 60.2, 896 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 48519 },	-- Hope They Can't Swim
+				}),
+				q(53434, {	-- The Vanishing Lord
+					["altQuests"] = { 48622 },	-- The Vanishing Lord
+					["coords"] = {
+						{ 60.90, 15.46, 896 },	-- Guardsman Kitcher <Waycrest Guard>
+						{ 71.76, 40.61, 896 },	-- Guardsman Bray <Waycrest Guard>
+					},
+					["races"] = ALLIANCE_ONLY,
+					["providers"] = {
+						{ "n", 143746 },	-- Guardsman Kitcher <Waycrest Guard>
+						{ "n", 143745 },	-- Guardsman Bray <Waycrest Guard>
+					},
 				}),
 				o(270917, {	-- Glenbrook Register
 					q(45079, {	-- The Village of Glenbrook
@@ -1405,168 +1417,23 @@ _.Zones =
 				}),
 --[[	raw quest list to check against
 				-- Unknown
-				q(51719, {	-- A Glaive Mistake
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51832, {	-- Beat Around The Bush
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51512, {	-- Bilefang Mother
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
 				q(50195, {	-- Bilgemaul's Brigade
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53280, {	-- Blooming Siren's Sting
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(53299, {	-- Blooming Siren's Sting
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(53271, {	-- Blooming Star Moss
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51741, {	-- Bombarbment
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(48525, {	-- Break Them to Splinters
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51737, {	-- Bruin Potions
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(53312, {	-- Burnished Platinum
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(48474, {	-- Crypt Keepers
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53317, {	-- Dense Storm Silver
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51754, {	-- Dogged Tenacity
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(47969, {	-- Fallhaven's Curse
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53302, {	-- Flourishing Riverbud
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(53297, {	-- Flourishing Riverbud
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(53270, {	-- Flourishing Riverbud
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(53284, {	-- Flourishing Riverbud
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(53311, {	-- Gleaming Storm Silver
-					["collectible"] = false,
-					["lvl"] = 120,
 				}),
 				q(48604, {	-- Home Again, Home Again
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(51740, {	-- Hunting for Truffle Hunters
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51742, {	-- Intercepting the Irontide
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(54692, {	-- Magister Crystalynn
-					["collectible"] = false,
-					["lvl"] = 110,
-				}),
-				q(51743, {	-- More Valuable Than Gold
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(48680, {	-- Not the Bees!
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53274, {	-- Overgrown Anchor Weed
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(53282, {	-- Overgrown Anchor Weed
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
 				q(54627),	-- Paragon of the Order of Embers
-				q(50448, {	-- Reclaiming Corlain
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51739, {	-- Rise of the Yetis
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
 				q(48515, {	-- Silver Blades
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53326, {	-- Smooth Platinum
-					["collectible"] = false,
-					["lvl"] = 120,
 				}),
 				q(50206, {	-- Strike Back
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(50960, {	-- Sweete's Orders
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51765, {	-- Tangled Webs
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(54190, {	-- Tea for Two
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
 				q(53465),	-- Tea Party
-				q(45972),	-- The Accursed Thicket
-				q(53434, {	-- The Vanishing Lord
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53464),	-- The Village of Glenbrook
+				q(53464),	-- The Village of Glenbrook (not sure about this one, marked as completed on my ally char)
 				q(48808, {	-- Thesis Statement
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(50091, {	-- Village Repair
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(51769, {	-- What a Gull Wants
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51988, {	-- Whitney "Steelclaw" Ramsay
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(53273, {	-- Winter's Kiss Cluster
-					["collectible"] = false,
-					["lvl"] = 120,
-				}),
-				q(51738, {	-- Witches by the Dozen
-					["collectible"] = false,
-					["lvl"] = 120,
 				}),
 ]]--
 			}),

@@ -209,6 +209,11 @@ _.Zones =
 						un(2, i(4984)),	-- Skull of Impending Doom
 					},
 				}),
+				q(1961, {	-- Gathering Materials
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
+				}),
 				q(1109,  {	-- Going, Going, Guano
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -271,6 +276,11 @@ _.Zones =
 						un(2, i(6803)),	-- Prophetic Cane
 						un(2, i(6802)),	-- Sword of Omen
 					},
+				}),
+				q(1960, {	-- Investigate the Alchemist Shop
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
 				}),
 				q(27335, {	-- Journey to Orgrimmar
 					["provider"] = { "n", 4606 },	-- Aelthalyste
@@ -456,6 +466,11 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5651 },	-- Patrick Garrett
+				}),
+				q(1959, {	-- Report to Anastasia
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
 				}),
 				q(366,   {	-- Return the Book
 					["u"] = 40,

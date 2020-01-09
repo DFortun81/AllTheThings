@@ -1,6 +1,19 @@
 profession(171, {	-- Alchemy
 	filter(200, {	-- Recipes
 		{
+			["categoryID"] = 1250,	-- training recipes
+			["g"] = {
+				{
+					["recipeID"] = 288182,	-- Potion of Durability
+					["u"] = 15,
+				},
+				{
+					["recipeID"] = 288176,	-- Potion of Shifting States
+					["u"] = 15,
+				}
+			}
+		},
+		{
 			["categoryID"] = 604--[[Alchemy]],
 			["g"] = {
 				{

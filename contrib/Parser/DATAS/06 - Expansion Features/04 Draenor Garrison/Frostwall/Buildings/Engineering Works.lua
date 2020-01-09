@@ -10,10 +10,6 @@ _.ExpansionFeatures =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						n(-17, {	-- Quests
-							q(36589, {	-- Heavy Arms
-								["races"] = HORDE_ONLY,
-								["provider"] = { "i", 116438 },	-- Burned-Out Hand Cannon
-							}),
 							q(37044, {	-- Unconventional Inventions
 								["provider"] = { "n", 85369 },	-- Vee
 								["races"] = HORDE_ONLY,

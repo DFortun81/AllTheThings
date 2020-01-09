@@ -80,6 +80,9 @@ _.Zones =
 						un(2, i(7129)),	-- Brutal Gauntlets
 					},
 				}),
+				q(832, {	-- Burning Shadows
+					["u"] = 40,	-- Legacy Quests
+				}),
 				q(25924, {	-- Call of Duty
 					["provider"] = { "n", 41621 },	-- Commander Thorak
 					["coord"] = { 55.9, 12.3, 1 },
@@ -246,6 +249,15 @@ _.Zones =
 					["provider"] = { "n", 60570 },	-- Ji Firepaw
 					["coord"] = { 45.6, 12.6, 1 },
 					["races"] = { 24 },	-- Pandaren (Neutral)
+				}),
+				q(1884, {	-- Ju-Ju Heaps
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
+					["g"] = {
+						i(9513),	-- Ley Staff
+						i(7508),	-- Ley Orb
+					},
 				}),
 				q(40605, {	-- Keep Your Friends Close
 					["coord"] = { 45.6, 15.9, 1 },
@@ -488,6 +500,11 @@ _.Zones =
 						i(131414),	-- Burning Armbands
 					},
 				}),
+				q(1883, {	-- Speak with Un'thuwa
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+					["classes"] = { 8 },	-- Mage
+				}),
 				q(25177, {	-- Storming the Beaches
 					["provider"] = { "n", 3139 },	-- Gar'Thok
 					["coord"] = { 52.0, 43.4, 1 },
@@ -505,6 +522,16 @@ _.Zones =
 					["coord"] = { 35.8, 41.3, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25194,	-- Unbidden Visitors
+				}),
+				q(830, {	-- The Admiral's Orders
+					["provider"] = { "i", 4881 },	-- A Letter to Yvette
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
+				}),
+				q(831, {	-- The Admiral's Orders
+					["provider"] = { "n", 3139 },	-- A Letter to Yvette
+					["races"] = HORDE_ONLY,
+					["u"] = 40,	-- Legacy Quests
 				}),
 				q(40518, {	-- The Battle for Broken Shore
 					["provider"] = { "n", 113547 },	-- Stone Guard Mukar
@@ -607,6 +634,7 @@ _.Zones =
 				q(44281, {	-- To Be Prepared
 					["provider"] = { "n", 4311 },	-- Holgar Stormaxe
 					["lvl"] = 98,
+					["coord"] = { 46.0, 13.7, 1 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 43926,	-- The Legion Returns
 					["g"] = {

@@ -21,7 +21,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 							{ "n", 96304 },	-- Tradurjo Jinglepocket
 						},
 						["maps"] = {
-							84,	-- Stormwind City
+							84,		-- Stormwind City
 							103,	-- The Exodar
 							579,	-- Lunarfall
 						},
@@ -58,35 +58,36 @@ _.Holidays = bubbleDown({["u"] = 29},
 								["lvl"] = 101,
 								["groups"] = {
 									-- Battle Pets/Companions
+									un(29, p(254)),		-- Blue Clockwork Rocket Bot
 									un(29, p(191)),		-- Clockwork Rocket Bot
 									un(29, i(73797)),	-- Lump of Coal
 									un(29, i(104317)),	-- Rotten Helper Box
-									un(29, p(254)),		-- Blue Clockwork Rocket Bot
 									-- Toys
+									un(29, i(54343)),	-- Blue Crashin' Thrashin' Racer Controller
+									un(29, i(108632)),	-- Crashin' Thrashin' Flamer Controller
+									un(29, i(104318)),	-- Crashin' Thrashin' Flyer Controller
+									un(29, i(37710)),	-- Crashin' Thrashin' Racer Controller
+									un(29, i(116763)),	-- Crashin' Thrashin' Shredder Controller
+									un(29, i(139337)),	-- Disposable Winter Veil Suits
+									un(29, i(128636)),	-- Endothermic Blaster
+									un(29, i(90888)),	-- Foot Ball
+									un(29, i(116692)),	-- Fuzzy Green Lounge Cushion
+									un(29, i(46709)),	-- MiniZep Controller
+									un(29, i(116689)),	-- Pineapple Lounge Cushion
+									un(29, i(128776)),	-- Red Wooden Sled
+									un(29, i(116690)),	-- Safari Lounge Cushion
+									un(29, i(116456)),	-- Scroll of Storytelling
+									un(29, i(90883)),	-- The Pigskin
+									un(29, i(54438)),	-- Tiny Blue Ragdoll
+									un(29, i(54437)),	-- Tiny Green Ragdoll
+									un(29, i(44606)),	-- Toy Train Set
 									un(29, i(151349)), 	-- Toy Weapon Set [Alliance]
 									un(29, i(151348)), 	-- Toy Weapon Set [Horde]
 									un(29, i(45057)),	-- Wind-Up Train Wrecker
-									un(29, i(54343)),	-- Blue Crashin' Thrashin' Racer Controller
-									un(29, i(90888)),	-- Foot Ball
-									un(29, i(104318)),	-- Crashin' Thrashin' Flyer Controller
-									un(29, i(46709)),	-- MiniZep Controller
-									un(29, i(37710)),	-- Crashin' Thrashin' Racer Controller
-									un(29, i(90883)),	-- The Pigskin
-									un(29, i(116692)),	-- Fuzzy Green Lounge Cushion
 									un(29, i(116691)),	-- Zhevra Lounge Cushion
-									un(29, i(116689)),	-- Pineapple Lounge Cushion
-									un(29, i(116690)),	-- Safari Lounge Cushion
-									un(29, i(116763)),	-- Crashin' Thrashin' Shredder Controller
-									un(29, i(108632)),	-- Crashin' Thrashin' Flamer Controller
-									un(29, i(116456)),	-- Scroll of Storytelling
-									un(29, i(54438)),	-- Tiny Blue Ragdoll
-									un(29, i(54437)),	-- Tiny Green Ragdoll
-									un(29, i(128776)),	-- Red Wooden Sled
-									un(29, i(44606)),	-- Toy Train Set
-									un(29, i(139337)),	-- Disposable Winter Veil Suits
 									-- Illusions
-									un(29, i(128649)),	-- Illusion: Winter's Grasp
 									un(29, i(118572)),	-- Illusion: Flames of Ragnaros
+									un(29, i(128649)),	-- Illusion: Winter's Grasp
 									-- Appearances
 									un(7, i(66540)),	-- Miniature Winter Veil Tree (Level 85)
 									un(7, i(93625)),	-- Miniature Winter Veil Tree (Level 90)
@@ -129,7 +130,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						},
 						["isYearly"] = true,
 					}),
-					q(7062,  {	-- The Reason for the Season (Alliance)					
+					q(7062,  {	-- The Reason for the Season (Alliance)
 						["provider"] = { "n", 1365 },	-- Goli Krumn
 						["maps"] = { 87 },	-- Ironforge
 						["races"] = ALLIANCE_ONLY,
@@ -141,6 +142,18 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["sourceQuest"] = 7062,	-- The Reason for the Season (Alliance)
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
+					}),
+					q(8827,  {	-- Winter's Presents (Alliance)
+						["provider"] = { "n", 15732 },	-- Wonderform Operator <Smokywood Pastures>
+						["maps"] = {
+							125,	-- Dalaran (Northrend) (couldn't find it in Legion)
+							27,		-- Dun Morogh
+							71,		-- Gadgetzan
+							85,		-- Orgrimmar
+							84,		-- Stormwind
+						},
+						["races"] = ALLIANCE_ONLY,
+						["isYearly"] = true, -- not sure, I was able to pick it up only after 25th
 					}),
 					-- HORDE QUESTS --
 					q(6961,  {	-- Great-father Winter is Here!
@@ -287,6 +300,18 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["g"] = {
 							i(128659),	-- Merry Supplies
 						},
+					}),
+					q(8828,  {	-- Winter's Presents (Horde)
+						["provider"] = { "n", 15732 },	-- Wonderform Operator <Smokywood Pastures>
+						["maps"] = {
+							125,	-- Dalaran (Northrend) (couldn't find it in Legion)
+							27,		-- Dun Morogh
+							71,		-- Gadgetzan
+							85,		-- Orgrimmar
+							84,		-- Stormwind
+						},
+						["races"] = HORDE_ONLY,
+						["isYearly"] = true, -- not sure, I was able to pick it up only after 25th
 					}),
 					q(6984,  {	-- A Smokywood Pastures Thank You! (Horde)
 						["provider"] = { "n", 13418 },	-- Kaymard Copperpinch

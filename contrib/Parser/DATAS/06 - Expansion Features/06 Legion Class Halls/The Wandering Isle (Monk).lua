@@ -34,6 +34,10 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 116929 },	-- Brewmaster Blancee
 						["sourceQuests"] = { 47137 },	-- Champions of Legionfall
 					}),
+					q(41086, {	-- A Peaceful World
+						["provider"] = { "n", 102820 },	-- Chen Stormstout
+						["coord"] = { 55.2, 57, 709 },
+					}),
 					q(45771, {	-- A Time for Everything
 						["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
 						["sourceQuests"] = { 45442 },	-- Not Felling Well
@@ -41,6 +45,10 @@ _.ExpansionFeatures =
 					q(45449, {	-- Alchemist Koryla
 						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["sourceQuests"] = { 45459 },	-- Storming the Legion
+					}),
+					q(41911, {	-- Amaranthine Hops
+						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
+						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
 					}),
 					q(45545, {	-- Barrel Toss
 						["provider"] = { "n", 117305 },	-- Brewer Almai
@@ -109,6 +117,18 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 117305 },	-- Brewmaster Almai
 						["sourceQuests"] = { 45459 },	-- Storming the Legion
 					}),
+					q(41910, {	-- Freya's Spring
+						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
+						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
+					}),
+					q(41040, {	-- Halls of Valor: The Brewmaster
+						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
+						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
+					}),
+					q(41059, {	-- Halls of Valor: Odyn's Cauldron
+						["provider"] = { "n", 103049 },	-- Melba
+						["sourceQuests"] = { 41040 },	-- Halls of Valor: The Brewmaster
+					}),
 					q(46320, {	-- Hope For a Cure
 						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["sourceQuests"] = {
@@ -116,6 +136,10 @@ _.ExpansionFeatures =
 							45449,	-- Alchemist Koryla
 							45545,	-- Barrel Toss
 						},
+					}),
+					q(32442, {	-- Impending Danger
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
+						["sourceQuests"] = { 41086 },	-- A Peaceful World
 					}),
 					q(44249, {	-- Inner Sanctuary
 						i(139734),	-- Grandmaster's Crown
@@ -193,53 +217,34 @@ _.ExpansionFeatures =
 					q(44057),	-- A "Noble" Event
 					q(43359),	-- A Hero's Weapon
 					q(40793),	-- A Matter of Planning
-					q(41086),	-- A Peaceful World
-					q(41911),	-- Amaranthine Hops
 					q(43054),	-- An Ample Stockpile
 					q(45180),	-- An Island of War
 					q(46024),	-- An Urgent Warning
 					q(41907),	-- Appropriations
 					q(41854),	-- Brick By Brick
 					q(41946),	-- Building Our Troops
-					q(44275),	-- Court of Stars
-					q(44272),	-- Darkheart Thicket
-					q(44273),	-- Darkheart Thicket
 					q(47069),	-- Delivering Lost Knowledge
 					q(45173),	-- Desperate Times
 					q(44239),	-- Echo of a Celestial
-					q(44271),	-- Eye of Azshara
-					q(41910),	-- Freya's Spring
 					q(46785),	-- Further Advancement
 					q(43062),	-- Further Training
 					q(46157),	-- Furthering Knowledge
 					q(42186),	-- Growing Power
-					q(41059),	-- Halls of Valor: Odyn's Cauldron
 					q(43060),	-- Highmountain Salmon
 					q(46320),	-- Hope For a Cure
-					q(32442),	-- Impending Danger
 					q(40570),	-- Into The Heavens
 					q(46025),	-- Investigate the Broken Shore
-					q(43553),	-- Maw of Souls
-					q(44267),	-- Maw of Souls
 					q(44238),	-- Meditations on Fate
-					q(44265),	-- Neltharion's Lair
-					q(44264),	-- Neltharion's Lair
-					q(43554),	-- Neltharion's Lair
-					q(44268),	-- Odyn's Challenge
-					q(44269),	-- Odyn's Challenge
-					q(43509),	-- Odyn's Challenge
 					q(40633),	-- Off To Adventure!
 					q(40636),	-- Prepare To Strike
 					q(40698),	-- Purity of Form
 					q(41733),	-- Rebuilding the Order
 					q(41905),	-- Report from Tian Monastery
-					q(44917),	-- Return to Karazhan: The Tower of Power
 					q(42187),	-- Rise, Champions
 					q(42210),	-- Scrolls of Knowledge
 					q(43061),	-- Silkweave Bandages
 					q(43058),	-- Spiced Rib Roast
 					q(42191),	-- Tech It Up A Notch
-					q(44263),	-- The Arcway
 					q(40516),	-- The Dawning Bit
 					q(40236),	-- The Dawning Light
 					q(41728),	-- The Defense of Tian Monastery
@@ -248,9 +253,6 @@ _.ExpansionFeatures =
 					q(41732),	-- The Hand of Keletress
 					q(41849),	-- The Iron Fist
 					q(40569),	-- The Legend of the Sands
-					q(43545),	-- The Lord of Black Rook Hold
-					q(44276),	-- The Lord of Black Rook Hold
-					q(44277),	-- The Lord of Black Rook Hold
 					q(41038),	-- The Mead Master
 					q(42765),	-- The Trial at the Temple
 					q(42762),	-- The Wanderer's Companion
@@ -260,9 +262,6 @@ _.ExpansionFeatures =
 					q(45172),	-- To Battle!
 					q(41909),	-- Tracking the Tideskorn
 					q(43973),	-- Two Paths, Two Weapons
-					q(43556),	-- Vault of the Wardens
-					q(44261),	-- Vault of the Wardens
-					q(44259),	-- Violet Hold
 					q(45179),	-- Win the Crowd
 					--]]
 					--[[ Artifact Appearance  Quests Commented Out For Now

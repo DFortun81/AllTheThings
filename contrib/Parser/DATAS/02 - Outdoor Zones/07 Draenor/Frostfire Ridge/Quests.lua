@@ -92,6 +92,17 @@ _.Zones =
 						34093,	-- Getting the Points
 					},
 				}),
+				q(35103, {	-- Avenge and Reclaim
+					["coord"] = { 37.8, 47.4, 525 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 81210 },	-- Ang'kra
+					["sourceQuest"] = 35104,	-- The Apprentice
+					["requireSkill"] = 171,	-- Alchemy
+					["g"] = {
+						i(109558),	-- A Treatise on the Alchemy of Draenor
+						i(111812),	-- Alchemy Lab, lvl 1
+					},
+				}),
 				q(33473, {	-- Back to Bladespire Citadel
 					["provider"] = { "n", 74272 },	-- Farseer Drek'Thar
 					["coord"] = { 16.7, 57.8, 525 },
@@ -103,13 +114,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 78466 },	-- Gazlowe
 					["sourceQuest"] = 34364,	-- For the Horde!
-				}),
-				q(36567, {	-- Bigger is Better
-					["maps"] = { 590 },	-- Garrison
-					["coord"] = { 52.4, 53.3, 590 },	-- lvl 1
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 78466 },	-- Gazlowe
-					["sourceQuest"] = 34775,	-- Mission Probable
 				}),
 				q(34729, {	-- Blood Oath of Na'Shra
 					["provider"] = { "n", 76452 },	-- Weaponsmith Na'Shra
@@ -144,13 +148,15 @@ _.Zones =
 					["requireSkill"] = 773,	-- Inscription
 					["sourceQuest"] = 36435,	-- Unintelligible Intelligence
 				}),
-				q(36516, {	-- Cut 'Em Out! -- verify the rewards for this
+				q(36516, {	-- Cut 'Em Out!
 					["provider"] = { "n", 85751 },	-- Gaoda Hidecleaver
 					["coord"] = { 20.6, 60.2, 525 },
 					["races"] = HORDE_ONLY,
 					["requireSkill"] = 165,	-- Leatherworking
 					["g"] = {
+						i(115358),	-- Draenor Leatherworking
 						i(117566),	-- Heavy Frostwolf Shroud
+						i(111818),	-- The Tannery, lvl 1
 					},
 				}),
 				q(33546, {	-- Deeds Left Undone
@@ -161,7 +167,7 @@ _.Zones =
 				}),
 				q(35341, {	-- Defection of Gronnstalker Rokash
 					["provider"] = { "n", 79229 },	-- Gronnstalker Rokash
-					["coord"] = { 59.5, 31.8 },
+					["coord"] = { 59.5, 31.8, 525 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32981,	-- Only the Winner
 					["g"] = {
@@ -179,13 +185,16 @@ _.Zones =
 						i(108976),	-- Sanctified Fel-Wrap Ring
 					},
 				}),
-				q(36380, {	-- Diamonds Are Forever	-- verify the rewards for this
-					["provider"] = { "n", 85106 },	-- Gem Grinder Orolak
-					["coord"] = { 20.0, 56.4, 525 },
+				q(36380, {	-- Diamonds Are Forever
+					["coord"] = { 20.0, 56.3, 525 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 85106 },	-- Gem Grinder Orolak
+					["sourceQuest"] = 36378,	-- Locating the Lapidarist
 					["requireSkill"] = 755,	-- Jewelcrafting
 					["g"] = {
 						i(115503),	-- Blazing Diamond Pendant
+						i(115359),	-- Draenor Jewelcrafting
+						i(111814),	-- Gem Boutique, Level 1
 					},
 				}),
 				q(34292, {	-- Eliminate the Shadow Council
@@ -241,6 +250,7 @@ _.Zones =
 					},
 				}),
 				q(34505, {	-- Forbidden Glacier
+					["coord"] = { 25.5, 55.0, 525 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(1, {
@@ -251,12 +261,15 @@ _.Zones =
 				q(33807, {	-- Free Our Brothers and Sisters
 					["coord"] = { 21.7, 56.3, 525 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 33527,	-- Last Steps
+					["description"] = "Must be on |cFFFFD700Save Wolf Home|r to pick up this quest.",
 					["providers"] = {
 						{ "n", 74507 },	-- Wor'gol Defender
 						{ "n", 79415 },	-- Durotan
 					},
 				}),
 				q(34501, {	-- Frostbite Hollow
+					["coord"] = { 66.1, 18.0, 525 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(2, {
@@ -312,6 +325,7 @@ _.Zones =
 					["sourceQuest"] = 33546,	-- Deeds Left Undone
 				}),
 				q(33145, {	-- Grimfrost Hill
+					["coord"] = { 65.1, 47.7, 525 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(3, {
@@ -414,10 +428,12 @@ _.Zones =
 						i(111813),	-- The Forge, Level 1
 					},
 				}),
-				q(33955, {	-- Missing Pack -- verify what the sourceQuest is for this
+				q(33955, {	-- Missing Pack
 					["provider"] = { "n", 76941 },	-- Kar'lak
 					["coord"] = { 21.6, 55.0, 525 },
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 33468,	-- Save Wolf Home
+					["isBreadcrumb"] = true,
 				}),
 				q(34775, {	-- Mission Probable
 					["maps"] = { 590 },	-- Garrison
@@ -473,6 +489,13 @@ _.Zones =
 				q(34464, {	-- Mysterious Boots
 					["coord"] = { 67.9, 18.9, 525 },
 					["provider"] = { "o", 229333 },	-- Mysterious Boots
+				}),
+				q(36378, {	-- No Pressure, No Diamonds
+					["coord"] = { 20.0, 56.3, 525 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 85106 },	-- Gem Grinder Orolak
+					["sourceQuest"] = 36352,	-- Locating the Lapidarist
+					["requireSkill"] = 755,	-- Jewelcrafting
 				}),
 				q(34731, {	-- Oath of Shadow Hunter Rala
 					["provider"] = { "n", 78208 },	-- Shadow Hunter Rala
@@ -656,6 +679,13 @@ _.Zones =
 						34069,	-- Getting the Points
 						34093,	-- Getting the Points
 					},
+				}),
+				q(35103, {	-- The Apprentice
+					["coord"] = { 38.0, 47.4, 525 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 81209 },	-- Kadar
+					["sourceQuest"] = 35103,	-- The Alchemist
+					["requireSkill"] = 171,	-- Alchemy
 				}),
 				q(34124, {	-- The Battle of Thunder Pass
 					["provider"] = { "n", 76487 },	-- Lokra
@@ -934,7 +964,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34294,	-- The Fel Crystals
 					["g"] = {
-						ach(9529),	-- On the Shadow's Trail
 						i(113150),	-- Felblood-Starched Cloak
 						i(113149),	-- Flayed Flesh Cloak
 						i(113148),	-- Foulspawn Drape
@@ -1031,7 +1060,7 @@ _.Zones =
 					["coord"] = { 53.9, 54.9, 590 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 79740 },	-- Warmaster Zog
-					["sourceQuest"] = 78466,	-- Build Your Barracks
+					["sourceQuest"] = 34461,	-- Build Your Barracks
 					["g"] = {
 						follower(34),	-- Olin Umberhide
 					},
@@ -1042,10 +1071,23 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 32792,	-- Leave Nothing Behind!
 				}),
-				q(33915, {	-- Young Hearts -- verify if this has a source
+				q(35737, {	-- Writing in the Snow (A)
+					["coord"] = { 47.9, 19.0, 525 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 82833 },	-- Tattered Journal Page
+					["description"] = "|cFFFFD700Assault on Stonefury Cliffs|r must be active.",
+				}),
+				q(35736, {	-- Writing in the Snow (H)
+					["coord"] = { 47.9, 19.0, 525 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 82833 },	-- Tattered Journal Page
+					["description"] = "|cFFFFD700Assault on Stonefury Cliffs|r must be active.",
+				}),
+				q(33915, {	-- Young Hearts
 					["coord"] = { 19.2, 59.1, 525 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 76862 },	-- Gog'rak
+					["sourceQuest"] = 33468,	-- Save Wolf Home
 				}),
 			}),
 		}),
