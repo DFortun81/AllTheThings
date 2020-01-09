@@ -314,6 +314,12 @@ _.ExpansionFeatures =
 				}),
 				n(-10076, {	-- Assault: The Black Empire
 					n(-17, {	-- Quests
+						q(58235, {	-- Anchors of the Black Empire
+							["coord"] = { 54.9, 32.7, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 155095 },	-- King Phaoris
+							["sourceQuest"] = 56472,	-- The Uldum Accord
+						}),
 						q(58237, {	-- Cleansing Uldum
 							["coord"] = { 54.6, 32.8, 1527 },
 							["isDaily"] = true,
@@ -324,6 +330,12 @@ _.ExpansionFeatures =
 							["coord"] = { 54.6, 32.8, 1527 },
 							["isDaily"] = true,
 							["provider"] = { "n", 155099 },	-- High Priest Amet
+							["sourceQuest"] = 56472,	-- The Uldum Accord
+						}),
+						q(58238, {	-- Lost and Tormented
+							["coord"] = { 54.9, 32.7, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 155095 },	-- King Phaoris
 							["sourceQuest"] = 56472,	-- The Uldum Accord
 						}),
 						q(57774, {	-- Nine Lives
@@ -784,7 +796,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						i(172011, {	-- Recipe: Contract: Uldum Accord
-							["cost"] = 12600000,	-- 1,260 gold
+							["cost"] = 13300000,	-- 1,330 gold
 						}),
 						i(174477, {	-- Pygmy Camel
 							["cost"] = { { "i", 163036, 300 }, },	-- 300x Polished Pet Charm
