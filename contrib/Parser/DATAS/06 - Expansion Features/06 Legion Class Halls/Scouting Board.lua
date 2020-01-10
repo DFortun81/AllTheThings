@@ -99,6 +99,11 @@ _.ExpansionFeatures =
 					mission(1382, {	-- Win the Crowd
 						i(130169),	-- Tournament Favor
 					}),
+					mission(1502, {	-- There is no Brawlers Guild
+						q(45111, {	-- Everyone Loves a Good Fight
+							["provider"] = { "i", 142522 },	-- Rude Letter
+						}),
+					}),
 					mission(1505, {	-- A Good Dust Up
 						q(45172, {	-- To Battle!
 							["provider"] = { "i", 143328 },	-- Battle Report
