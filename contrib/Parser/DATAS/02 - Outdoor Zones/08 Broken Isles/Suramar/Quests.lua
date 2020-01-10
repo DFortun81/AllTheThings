@@ -20,13 +20,16 @@ _.Zones =
 			--	q(40906),	-- Serpents from the Deep
 			--	q(44078),	-- Supporting Cast
 			--	q(40342),	-- Surprise the Sashj'tar
-			--	q(44669),	-- Vicious Whale Shark
 			--	q(40779),	-- We Need Even More Power!
 			
 
 			--	real quests begin here!
 				q(44057),	-- A "Noble" Event
-				q(41916),	-- A Better Future
+				q(41916, {	-- A Better Future
+					["coord"] = { 40.5, 53.0, 680 }, -- horde coordinate. Possibly different for alliance?
+					["provider"] = { "n", 114908 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 40632,	-- Take Me To Your Leader
+				}),
 				q(42841, {	-- A Big Score
 					["coord"] = { 48.9, 73.4, 680 },
 					["provider"] = { "n", 107253 },	-- Arluin
@@ -37,14 +40,26 @@ _.Zones =
 					["classes"] = { 4 },
 					["provider"] = { "n", 98100 },	-- Taoshi
 				}),
-				q(44919),	-- A Challenge From Our Enemies
+				q(44919, {	-- A Challenge From Our Enemies
+					["coord"] = { 36.4, 45.8, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 44918,	-- A Message From Our Enemies
+				}),
 				q(43502, {	-- A Change of Seasons
 					["coord"] = { 36.8, 46.5, 680 },
 					["provider"] = { "n", 107126 },	-- Valewalker Farodin
 					["sourceQuest"] = 43362,	-- The Stuff of Dreams
 				}),
-				q(44876),	-- A Dance With Dragons
-				q(40424),	-- A Desperate Journey
+				q(44876, {	-- A Dance With Dragons
+					["coord"] = { 59.8, 13.9, 630 },
+					["provider"] = { "n", 115701 },	-- Stellagosa
+					["sourceQuest"] = 44875,	-- The Art of Flow
+				}),
+				q(40424, {	-- A Desperate Journey
+					["coord"] = { 34.3, 56.1, 680 },
+					["provider"] = { "n", 100185 },	-- Iadreth
+					["sourceQuest"] = 40469,	-- Final Preparations
+				}),
 				q(40625, {	-- A Different Source -- aa
 					["coord"] = { 26.7, 70.7, 680 },
 					["provider"] = { "n", 101076 },	-- Kyrtos
@@ -68,7 +83,11 @@ _.Zones =
 					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 44814,	-- Waning Refuge
 				}),
-				q(44918),	-- A Message From Our Enemies
+				q(44918, {	-- A Message From Our Enemies
+					["coord"] = { 36.4, 45.8, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 45268,	-- The Advisor and the Arcanist
+				}),
 				q(42728, {	-- A Mlrglrmg For Grlmrgl
 					["coord"] = { 15.2, 52.4, 680 },
 					["provider"] = { "n", 107302 },	-- Pearlhunter Phin
@@ -79,13 +98,26 @@ _.Zones =
 					["provider"] = { "n", 109022 },	-- Arcane Ward
 					["sourceQuest"] = 40012,	-- An Old Ally
 				}),
-				q(45269),	-- A Taste of Freedom
+				q(45269, {	-- A Taste of Freedom
+					["coord"] = { 36.4, 45.8, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 45064,	-- Felborne No More
+				}),
 				q(42520, {	-- A Terrible Loss
 					["classes"] = { 8 },
 				}),
 				q(43526),	-- A True Test
-				q(45266),	-- A United Front
-				q(40401),	-- A Way Back In
+				q(45266, {	-- A United Front
+					["coord"] = { 36.5, 46.7, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 44790,	-- Trial by Demonfire
+					-- TODO:: may also require A Dance With Dragons (44876)
+				}),
+				q(40401, {	-- A Way Back In
+					["coord"] = { 34.3, 56.1, 680 },
+					["provider"] = { "n", 100185 },	-- Iadreth
+					-- TODO: does this have a sourceQuest?
+				}),
 				q(41426, {	-- Against Their Will
 					["coord"] = { 75.9, 52.7, 680 },
 					["provider"] = { "n", 102390 },	-- Toryl
@@ -185,11 +217,23 @@ _.Zones =
 					["provider"] = { "n", 107598 },	-- Vanthir
 					["sourceQuest"] = 43567,	-- All In
 				}),
-				q(44862, {	-- Arming the Rebels
-					["races"] = HORDE_ONLY,
-				}),
-				q(44861, {	-- Arming the Rebels
+				q(44861, {	-- Arming the Rebels (A)
+					["coord"] = { 41.6, 51.5, 680 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 114838 },	-- Tyrande Whisperwind
+					["sourceQuests"] = {
+						44928,	-- Something's Not Quite Right...
+						44858,	-- Trolling Them
+					},
+				}),
+				q(44862, {	-- Arming the Rebels (H)
+					["coord"] = { 40.4, 53.0, 680 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 114841 },	-- Lady Liadrin
+					["sourceQuests"] = {
+						44928,	-- Something's Not Quite Right...
+						44860,	-- Trolling Them
+					},
 				}),
 				q(47051, {	-- Assassination: Fate of the Tideskorn
 					["classes"] = { 4 },
@@ -239,7 +283,11 @@ _.Zones =
 					["provider"] = { "n", 99559 },	-- Jarl Throndyr
 					["sourceQuest"] = 40908,	-- Jarl Come Back Now
 				}),
-				q(45267),	-- Before the Siege
+				q(45267, {	-- Before the Siege
+					["coord"] = { 36.4, 46.7, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 44740,	-- Staging Point
+				}),
 				q(40331, {	-- Bite of the Sashj'tar
 					["coord"] = { 69.0, 54.1, 680 },
 					["provider"] = { "n", 99544 },	-- Brandolf
@@ -256,9 +304,25 @@ _.Zones =
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 44156,	-- Another Arcan'dor Closes
 				}),
-				q(44719),	-- Breaching the Sanctum
-				q(45405),	-- Breaching the Sanctum -- possibly a flag or removed version?
-				q(44845),	-- Break An Arm
+				q(44719, {	-- Breaching the Sanctum
+					["coord"] = { 36.6, 45.0, 680 },
+					["provider"] = { "n", 115710 },	-- Chief Telemancer Oculeth
+					["sourceQuest"] = 44964,	-- I'll Just Leave This Here
+				}),
+				q(45405, {	-- Breaching the Sanctum
+					["u"] = 1, -- couldn't find any information to suggest this was ever in-game
+				}),
+				q(44845, {	-- Break An Arm
+					["coord"] = { 40.5, 53.0, 680 },
+					["provider"] = { "n", 114908 },	-- First Arcanist Thalyssra
+					["sourceQuests"] = {
+						41916,	-- A Better Future
+						43810,	-- Down to Business (A)
+						43812,	-- Down to Business (H)
+						44831,	-- Taking a Promenade (A)
+						41607,	-- Taking a Promenade (H)
+					},
+				}),
 				q(41709, {	-- Breaking Down the Big Guns
 					["coord"] = { 75.9, 52.7, 680 },
 					["provider"] = { "n", 102390 },	-- Toryl
@@ -291,7 +355,14 @@ _.Zones =
 				q(46048, {	-- Champion: Nighthuntress Syrenne
 					["classes"] = { 3 },	-- Hunter
 				}),
-				q(44827),	-- Citizens' Army
+				q(44827, {	-- Citizens' Army
+					["coord"] = { 39.7, 51.2, 680 },
+					["provider"] = { "n", 116256 },	-- Victoire
+					["sourceQuests"] = {
+						44861,	-- Arming the Rebels (A)
+						44862,	-- Arming the Rebels (H)
+					},
+				}),
 				q(40798, {	-- Cling to Hope
 					["coord"] = { 37.7, 47.8, 680 },
 					["provider"] = { "n", 101848 },	-- Absolon
@@ -327,7 +398,12 @@ _.Zones =
 					["u"] = 40,	-- Legacy Quests
 				}),
 				q(44843, {	-- Crystal Clearing
-					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 40.6, 64.4, 680 },
+					["provider"] = { "n", 115521 },	-- Sentinel Moonshade
+					["sourceQuests"] = { -- TODO: verify these
+						40391,	-- Take Me To Your Leader (A)
+						40632,	-- Take Me To Your Leader (H)
+					},
 				}),
 				q(45160),	-- Cubic Currents
 				q(41169, {	-- Darkheart Thicket: Through the Fog
@@ -362,18 +438,28 @@ _.Zones =
 					["coord"] = { 15.8, 54.8, 680 },
 					["provider"] = { "n", 107302 },	-- Pearlhunter Phin
 				}),
-				q(43812, {	-- Down to Business
-					["races"] = HORDE_ONLY,
-				}),
-				q(43810, {	-- Down to Business
+				q(43810, {	-- Down to Business (A)
+					["coord"] = { 41.6, 51.5, 680 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 114838 },	-- Tyrande Whisperwind
+					["sourceQuest"] = 40391,	-- Take Me To Your Leader
+				}),
+				q(43812, {	-- Down to Business (H)
+					["coord"] = { 40.4, 53.0, 680 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 114841 },	-- Lady Liadrin
+					["sourceQuest"] = 40632,	-- Take Me To Your Leader
 				}),
 				q(41410, {	-- Dry Powder
 					["coord"] = { 77.5, 59.7, 680 },
 					["provider"] = { "n", 104586 },	-- Fjolrik
 					["sourceQuest"] = 40927,	-- Jandvik's Last Hope
 				}),
-				q(45263),	-- Eating Before the Meeting
+				q(45263, {	-- Eating Before the Meeting
+					["coord"] = { 36.4, 46.7, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 45316,	-- Stabilizing Suramar
+				}),
 				q(43310, {	-- Either With Us
 					["coord"] = { 47.8, 82.9, 680 },
 					["provider"] = { "n", 107632 },	-- Ly'leth Lunastre
@@ -426,7 +512,11 @@ _.Zones =
 						41320,	-- Pry It From Their Cold, Feral Claws
 					},
 				}),
-				q(45066),	-- Experimental Instability
+				q(45066, {	-- Experimental Instability
+					["coord"] = { 36.6, 45.0, 680 },
+					["provider"] = { "n", 115710 },	-- Chief Telemancy Oculeth
+					["sourceQuest"] = 45065,	-- Survey the City
+				}),
 				q(40883, {	-- Fate of the Guard
 					["coord"] = { 27.8, 21.1, 680 },
 					["provider"] = { "n", 101766 },	-- Thalrenus Rivertree
@@ -467,13 +557,22 @@ _.Zones =
 					["provider"] = { "n", 102600 },	-- Arcanist Valtrois
 					["sourceQuest"] = 41028,	-- Power Grid
 				}),
-				q(45265),	-- Feeding the Rebellion
+				q(45265, {	-- Feeding the Rebellion
+					["coord"] = { 36.5, 46.7, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 44845,	-- Break An Arm
+				}),
 				q(40919, {	-- Fel Bent for Leather
 					["coord"] = { 26.7, 70.7, 680 },
 					["provider"] = { "n", 101076 },	-- Kyrtos
 					["sourceQuest"] = 40694,	-- One Small Step for Magic
 				}),
-				q(45064),	-- Felborne No More
+				q(45064, {	-- Felborne No More
+					["coord"] = { 36.4, 45.8, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 45062,	-- Resisting Arrest
+					-- TODO: may also require Experimental Instability (45066)
+				}),
 				q(45555, {	-- Felbound Beasts
 					["classes"] = { 3 },	-- Hunter
 				}),
@@ -491,7 +590,11 @@ _.Zones =
 					["sourceQuest"] = 41473,	-- Redhoof the Ancient
 				}),
 				q(45317),	-- Fighting on All Fronts
-				q(40469),	-- Final Preparations
+				q(40469, {	-- Final Preparations
+					["coord"] = { 41.3, 60.7, 680 },
+					["provider"] = { "n", 100192 },	-- Astoril
+					["sourceQuest"] = 40401,	-- A Way Back In
+				}),
 				q(41606, {	-- Finding Brytag
 					["coord"] = { 75.8, 52.5, 680 },
 					["provider"] = { "n", 104630 },	-- Kell
@@ -560,7 +663,9 @@ _.Zones =
 				}),
 				q(41258),	-- Fruit of the Doom
 				q(44738, {	-- Full Might of the Elves
-					--["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
+					["coord"] = { 41.0, 51.7, 680 },
+					["provider"] = { "n", 114909 },	-- Archmage Khadgar
+					["sourceQuest"] = 44739,	-- Ready for Battle
 					["g"] = {
 						i(140078),	-- Crystalized Leypetal
 						i(140077),	-- Goldleaf Arcwine Phial
@@ -574,7 +679,11 @@ _.Zones =
 						i(140040),	-- Comet Dust
 					},
 				}),
-				q(44736),	-- Gates of the Nighthold
+				q(44736, {	-- Gates of the Nighthold
+					["coord"] = { 36.5, 46.7, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 45267,	-- Before the Siege
+				}),
 				q(43562, {	-- Giving It All We've Got
 					["coord"] = { 37.0, 46.2, 680 },
 					["provider"] = { "n", 103155 },	-- Arcanist Valtrois
@@ -640,7 +749,11 @@ _.Zones =
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 40830,	-- Close Enough
 				}),
-				q(44964),	-- I'll Just Leave This Here
+				q(44964, {	-- I'll Just Leave This Here
+					["coord"] = { 36.4, 45.8, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 45269,	-- A Taste of Freedom
+				}),
 				q(42840, {	-- If Words Don't Work...
 					["coord"] = { 48.9, 73.4, 680 },
 					["provider"] = { "n", 107253 },	-- Arluin
@@ -764,7 +877,14 @@ _.Zones =
 					["provider"] = { "n", 101768 },	-- Lothrius Mooncaller
 					["sourceQuest"] = 40964,	-- The Rift Between
 				}),
-				q(44830),	-- Learning From the Dead
+				q(44830, {	-- Learning From the Dead
+					["coord"] = { 39.9, 50.9, 680 },
+					["provider"] = { "n", 115499 },	-- Silgryn
+					["sourceQuests"] = {
+						44861,	-- Arming the Rebels (A)
+						44862,	-- Arming the Rebels (H)
+					},
+				}),
 				q(40121, {	-- Ley Line Influences
 					["u"] = 1,	-- Never Available — presumably!  no data on wowhead.
 				}),
@@ -840,7 +960,10 @@ _.Zones =
 					["description"] = "Must restore 5 Leyline feeds to get this quest.",
 				}),
 				q(44859, {	-- Liadrin's Command
+					["coord"] = { 36.5, 46.7, 680 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 45265,	-- Feeding the Rebellion
 				}),
 				q(40796, {	-- Lingering on the Edge
 					["coord"] = { 30.3, 47.8, 680 },
@@ -947,7 +1070,11 @@ _.Zones =
 					["provider"] = { "n", 107126 },	-- Valewalker Farodin
 					["sourceQuest"] = 42488,	-- Thalyssra's Abode
 				}),
-				q(44870),	-- Mouths to Feed
+				q(44870, {	-- Mouths to Feed
+					["coord"] = { 36.5, 46.7, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 45265,	-- Feeding the Rebellion
+				}),
 				q(42688, {	-- Mrgls of Endearment
 					["coord"] = { 15.8, 54.8, 680 },
 					["provider"] = { "n", 107302 },	-- Pearlhunter Phin
@@ -995,12 +1122,21 @@ _.Zones =
 					["sourceQuest"] = 40883,	-- Fate of the Guard
 				}),
 				q(44834, {	-- Nullified
-					["races"] = HORDE_ONLY,
+					["coord"] = { 46.4, 58.1, 680 },
+					["provider"] = { "n", 115517 },	-- Magus Sendath
+					["sourceQuests"] = {
+						40391,	-- Take Me To Your Leader (A)
+						40632,	-- Take Me To Your Leader (H)
+					},
 				}),
 				q(44768, {	-- Nyell's Workshop
 					["classes"] = { 8 },	-- Mage
 				}),
-				q(44873),	-- Oculeth Ex Machina
+				q(44873, {	-- Oculeth Ex Machina
+					["coord"] = { 37.0, 46.5, 680 },
+					["provider"] = { "n", 115371 },	-- Arcanist Valtrois
+					["sourceQuest"] = 44870,	-- Mouths to Feed
+				}),
 				q(40011, {	-- Oculeth's Workshop
 					["coord"] = { 36.5, 46.9, 680 },
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
@@ -1043,7 +1179,6 @@ _.Zones =
 					["provider"] = { "n", 101765 },	-- Syrana Starweaver
 					["sourceQuest"] = 40969,	-- Starweaver's Fate
 				}),
-				q(46799),	-- Paragon of the Nightfallen
 				q(41214, {	-- Parts Unknown
 					["coord"] = { 34.2, 74.0, 680 },
 					["provider"] = { "n", 103437 },	-- Angus Stormbrew
@@ -1057,7 +1192,6 @@ _.Zones =
 				q(37666, {	-- Picking a Fight
 					["classes"] = { 4 },	-- Rogue
 				}),
-				q(43968),	-- Pinchshank
 				q(43528),	-- Planning the Assault
 				q(41028, {	-- Power Grid
 					["coord"] = { 39.8, 29.6, 688 },
@@ -1070,7 +1204,12 @@ _.Zones =
 					["sourceQuest"] = 40694,	-- One Small Step for Magic
 				}),
 				q(44844, {	-- Powering Down the Portal
-					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 40.6, 64.4, 680 },
+					["provider"] = { "n", 115521 },	-- Sentinel Moonshade
+					["sourceQuests"] = { -- TODO: verify these
+						40391,	-- Take Me To Your Leader (A)
+						40632,	-- Take Me To Your Leader (H)
+					},
 				}),
 				q(40967, {	-- Precious Little Left
 					["coord"] = { 36.4, 22.3, 680 },
@@ -1093,7 +1232,11 @@ _.Zones =
 					["provider"] = { "n", 99788 },	-- Morhun Rivertamer
 					["sourceQuest"] = 40368,	-- Turtle Powered
 				}),
-				q(40470),	-- Quality of Life
+				q(40470, {	-- Quality of Life
+					["coord"] = { 37.8, 61.5, 680 },
+					["provider"] = { "n", 100331 },	-- Iadreth
+					["sourceQuest"] = 40424,	-- A Desperate Journey
+				}),
 				q(41108, {	-- Rain Death Upon Them
 					["description"] = "Automatically granted when you mount a hippogryph.",
 					["sourceQuests"] = {
@@ -1109,7 +1252,11 @@ _.Zones =
 						41110,	-- Waiting for Revenge (hippogryph)
 					},
 				}),
-				q(44739),	-- Ready for Battle
+				q(44739, {	-- Ready for Battle
+					["coord"] = { 36.4, 46.7, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 45266,	-- A United Front
+				}),
 				q(45556, {	-- Ready to Strike
 					["classes"] = { 3 },	-- Hunter
 				}),
@@ -1151,7 +1298,11 @@ _.Zones =
 					},
 				}),
 				q(43523),	-- Repaid Debt
-				q(45062),	-- Resisting Arrest
+				q(45062, {	-- Resisting Arrest
+					["coord"] = { 36.4, 45.8, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 45066,	-- Experimental Instability
+				}),
 				q(46705, {	-- Retaliation
 					["classes"] = { 8 },	-- Mage
 				}),
@@ -1192,7 +1343,11 @@ _.Zones =
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 40324,	-- Arcane Communion
 				}),
-				q(44832),	-- Scouting the Breach
+				q(44832, {	-- Scouting the Breach
+					["coord"] = { 36.4, 45.8, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 45209,	-- Those Scrying Eyes
+				}),
 				q(42223, {	-- Scouting the Crimson Thicket
 					["coord"] = { 26.2, 31.2, 680 },
 					["provider"] = { "n", 103571 },	-- Solendra Featherdown
@@ -1250,7 +1405,9 @@ _.Zones =
 					},
 				}),
 				q(44842, {	-- Shield, Meet Spell
-					["races"] = HORDE_ONLY,
+					["coord"] = { 46.4, 58.1, 680 },
+					["provider"] = { "n", 115517 },	-- Magus Sendath
+					["sourceQuest"] = 44834,	-- Nullified
 				}),
 				q(40745, {	-- Shift Change
 					["coord"] = { 48.2, 83.2, 680 },
@@ -1287,7 +1444,14 @@ _.Zones =
 					["provider"] = { "n", 99788 },	-- Morhun Rivertamer
 					["sourceQuest"] = 40368,	-- Turtle Powered
 				}),
-				q(44928),	-- Something's Not Quite Right...
+				q(44928, {	-- Something's Not Quite Right...
+					["coord"] = { 40.5, 53.1, 680 },	-- horde
+					["provider"] = { "n", 114909 },	-- Archmage Khadgar
+					["sourceQuests"] = {
+						44859,	-- Liadrin's Command
+						44743,	-- Tyrande's Command
+					},
+				}),
 				q(45552, {	-- Soothing Wounds
 					["classes"] = { 3 },	-- Hunter
 				}),
@@ -1311,7 +1475,11 @@ _.Zones =
 					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 44756,	-- Sign of the Dusk Lily
 				}),
-				q(44740),	-- Staging Point
+				q(44740, {	-- Staging Point
+					["coord"] = { 52.2, 68.7, 680 },
+					["provider"] = { "n", 115039 },	-- Archmage Khadgar
+					["sourceQuest"] = 44738,	-- Full Might of the Elves
+				}),
 				q(40969, {	-- Starweaver's Fate
 					["coord"] = { 36.4, 22.4, 680 },
 					["provider"] = { "n", 101768 },	-- Lothrius Mooncaller
@@ -1341,8 +1509,17 @@ _.Zones =
 					["provider"] = { "n", 98548 },	-- Chief Telemancer Oculeth
 					["sourceQuest"] = 44691,	-- Hungry Work
 				}),
-				q(45065),	-- Survey the City
-				q(41216),	-- Survival of the Fittest
+				q(45065, {	-- Survey the City
+					["coord"] = { 36.6, 45.0, 680 },
+					["provider"] = { "n", 115710 },	-- Chief Telemancer Oculeth
+					["sourceQuest"] = 45067,	-- Telemantic Expanse
+				}),
+				q(41216, {	-- Survival of the Fittest
+					["coord"] = { 50.6, 56.5, 680 },
+					["provider"] = { "n", 110987 },	-- Nighteyes
+					-- TODO: verify this sourceQuest? You rescue nighteyes elsewhere in the zone, but is it separate from this quest?
+					["sourceQuest"] = 41215,	-- They Become The Hunted
+				}),
 				q(40929, {	-- Symbols of Power
 					["coord"] = { 30.0, 69.4, 680 },
 					["provider"] = { "n", 99890 },	-- Lyana Darksorrow
@@ -1356,11 +1533,17 @@ _.Zones =
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 41760,	-- Kel'danath's Legacy
 				}),
-				q(40632, {	-- Take Me To Your Leader
-					["races"] = HORDE_ONLY,
-				}),
-				q(40391, {	-- Take Me To Your Leader
+				q(40391, {	-- Take Me To Your Leader (A)
+					["coord"] = { 36.5, 46.7, 680 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 45263,	-- Eating Before the Meeting
+				}),
+				q(40632, {	-- Take Me To Your Leader (H)
+					["coord"] = { 36.5, 46.7, 680 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 45263,	-- Eating Before the Meeting
 				}),
 				q(40963, {	-- Take Them in Claw
 					["coord"] = { 33.7, 18.0, 680 },
@@ -1371,11 +1554,17 @@ _.Zones =
 						41030,	-- Sigil Reclamation
 					},
 				}),
-				q(41607, {	-- Taking a Promenade
-					["races"] = HORDE_ONLY,
-				}),
-				q(44831, {	-- Taking a Promenade
+				q(44831, {	-- Taking a Promenade (A)
+					["coord"] = { 43.0, 51.4, 680 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 114963 },	-- Vereesa Windrunner
+					["sourceQuest"] = 40391,	-- Take Me To Your Leader
+				}),
+				q(41607, {	-- Taking a Promenade (H)
+					["coord"] = { 40.5, 53.1, 680 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 114883 },	-- Grand Magister Rommath
+					["sourceQuest"] = 40632,	-- Take Me To Your Leader
 				}),
 				q(45554, {	-- Taking Control
 					["classes"] = { 3 },	-- Hunter
@@ -1397,8 +1586,16 @@ _.Zones =
 					["coord"] = { 42.0, 35.2, 680 },
 					["provider"] = { "o", 252817 },	-- Unpowered Telemancy Beacon
 				}),
-				q(45067),	-- Telemantic Expanse
-				q(44822),	-- Temporal Investigations
+				q(45067, {	-- Telemantic Expanse
+					["coord"] = { 36.4, 45.8, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 44919,	-- A Challenge From Our Enemies
+				}),
+				q(44822, {	-- Temporal Investigations
+					["coord"] = { 54.8, 72.8, 680 },
+					["provider"] = { "n", 115039 },	-- Archmage Khadgar
+					["sourceQuest"] = 44736,	-- Gates of the Nighthold
+				}),
 				q(41034, {	-- Testing the Waters
 					["coord"] = { 72.2, 59.0, 680 },
 					["provider"] = { "n", 102381 },	-- Jandvik Warrior (Brandolf)
@@ -1414,7 +1611,11 @@ _.Zones =
 					["provider"] = { "o", 251032 },	-- Armoire
 					["sourceQuest"] = 42488,	-- Thalyssra's Abode
 				}),
-				q(45268),	-- The Advisor and the Arcanist
+				q(45268, {	-- The Advisor and the Arcanist
+					["coord"] = { 36.4, 45.8, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 44833,	-- The Seal's Power
+				}),
 				q(42491, {	-- The Arcway: Long Buried Knowledge
 					["coord"] = { 37.0, 46.2, 680 },
 					["provider"] = { "n", 103155 },	-- Arcanist Valtrois
@@ -1426,6 +1627,11 @@ _.Zones =
 					["sourceQuest"] = 44053,	-- Friends With Benefits
 				}),
 				q(40675),	-- The Arcway: Rite of the Captain
+				q(44875, {	-- The Art of Flow
+					["coord"] = { 60.1, 13.9, 630 },
+					["provider"] = { "n", 115693 },	-- Arcanist Valtrois
+					["sourceQuest"] = 44874,	-- Unbeleyvable
+				}),
 				q(42366, {	-- The Bigger They Are, The Harder They Fel
 					["coord"] = { 26.7, 70.7, 680 },
 					["provider"] = { "n", 101076 },	-- Kyrtos
@@ -1460,7 +1666,11 @@ _.Zones =
 				q(42521, {	-- The Enemy of My Enemy...
 					["classes"] = { 8 },	-- Mage
 				}),
-				q(45063),	-- The Felsoul Experiments
+				q(45063, {	-- The Felsoul Experiments
+					["coord"] = { 36.4, 45.8, 680 },
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 44919,	-- A Challenge From Our Enemies
+				}),
 				q(41478, {	-- The Final Blessing
 					["coord"] = { 28.3, 29.7, 680 },
 					["provider"] = { "n", 103569 },	-- Mythandros Irongrove
@@ -1523,7 +1733,11 @@ _.Zones =
 				}),
 				q(43532),	-- The Nighthold: Darkness Calls
 				q(43530),	-- The Nighthold: Delusions of Grandeur
-				q(45417),	-- The Nighthold: Lord of the Shadow Council
+				q(45417, {	-- The Nighthold: Lord of the Shadow Council
+					["coord"] = { 44.1, 60.1, 680 },
+					["provider"] = { "n", 115367 },	-- Archmage Khadgar
+					["sourceQuest"] = 44719,	-- Breaching the Sanctum
+				}),
 				q(45553, {	-- The Nighthuntress Beckons
 					["classes"] = { 3 },	-- Hunter
 				}),
@@ -1576,7 +1790,11 @@ _.Zones =
 					["sourceQuest"] = 42400,  -- Missing Mages
 					["classes"] = { 3 },	-- Hunter
 				}),
-				q(44833),	-- The Seal's Power
+				q(44833, {	-- The Seal's Power
+					["coord"] = { 44.0, 59.7, 680 },
+					["provider"] = { "n", 115524 },	-- Arcanist Valtrois
+					["sourceQuest"] = 44832,	-- Scouting the Breach
+				}),
 				q(41618, {	-- The Seawarden
 					["coord"] = { 74.9, 63.3, 680 },
 					["provider"] = { "n", 104406 },	-- Brytag
@@ -1607,7 +1825,11 @@ _.Zones =
 					["provider"] = { "n", 110679 },	-- Aurore
 					["sourceQuest"] = 43310,	-- Either With Us
 				}),
-				q(45209),	-- Those Scrying Eyes
+				q(45209, {	-- Those Scrying Eyes
+					["coord"] = { 54.9, 72.7, 680 },
+					["provider"] = { "n", 115506 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 44822,	-- Temporal Investigations
+				}),
 				q(41409, {	-- Timing Is Everything
 					["coord"] = { 77.5, 59.7, 680 },
 					["provider"] = { "n", 104586 },	-- Fjolrik
@@ -1618,18 +1840,31 @@ _.Zones =
 					["provider"] = { "n", 99093 },	-- Thaedris Feathersong
 					["sourceQuest"] = 40227,	-- Bad Intentions
 				}),
-				q(39987),	-- Trail of Echoes
 				q(41230, {	-- Trapping Evolved
 					["coord"] = { 61.8, 49.0, 680 },
 					["provider"] = { "n", 100775 },	-- Lilryia Dawnwind
 					["sourceQuest"] = 40617,	-- Turn Around, Nighteyes
 				}),
-				q(44790),	-- Trial by Demonfire
-				q(44858, {	-- Trolling Them
-					["races"] = ALLIANCE_ONLY,
+				q(44790, {	-- Trial by Demonfire
+					["coord"] = { 39.9, 50.9, 680 },
+					["provider"] = { "n", 115499 },	-- Silgryn
+					["sourceQuests"] = {
+						44827,	-- Citizens' Army
+						44830,	-- Learning From the Dead
+						44829,	-- We Need Weapons
+					},
 				}),
-				q(44860, {	-- Trolling Them
+				q(44858, {	-- Trolling Them (A)
+					["coord"] = { 41.6, 51.5, 680 },
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 114838 },	-- Tyrande Whisperwind
+					["sourceQuest"] = 44743,	-- Tyrande's Command
+				}),
+				q(44860, {	-- Trolling Them (H)
+					["coord"] = { 40.4, 53.0, 680 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 114841 },	-- Lady Liadrin
+					["sourceQuest"] = 44859,	-- Liadrin's Command
 				}),
 				q(41462, {	-- Trouble Has Huge Feet
 					["provider"] = { "i", 137179 },	-- Grotesque Ettin Leather
@@ -1658,7 +1893,16 @@ _.Zones =
 				}),
 				q(40678),	-- Twisted Power
 				q(44743, {	-- Tyrande's Command
+					["coord"] = { 36.5, 46.7, 680 },
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					["sourceQuest"] = 45265,	-- Feeding the Rebellion
+				}),
+				q(44874, {	-- Unbeleyvable
+					["maps"] = { 630 },	-- Azsuna
+					["coord"] = { 59.8, 14.0, 630 },
+					["provider"] = { "n", 115693 },	-- Arcanist Valtrois
+					["sourceQuest"] = 44873,	-- Oculeth Ex Machina
 				}),
 				q(43525),	-- Vault of the Wardens: Borrowing Without Asking
 				q(44084, {	-- Vengeance for Margaux
@@ -1703,7 +1947,14 @@ _.Zones =
 					["provider"] = { "n", 115557 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 44753,	-- On Public Display
 				}),
-				q(44829),	-- We Need Weapons
+				q(44829, {	-- We Need Weapons
+					["coord"] = { 39.8, 51.3, 680 },
+					["provider"] = { "n", 115342 },	-- Chief Telemancer Oculeth
+					["sourceQuests"] = {
+						44861,	-- Arming the Rebels (A)
+						44862,	-- Arming the Rebels (H)
+					},
+				}),
 				q(41702, {	-- Written in Stone
 					["coord"] = { 20.9, 52.2, 680 },
 					["provider"] = { "o", 247694 },	-- Kel'danath's Knapsack

@@ -778,7 +778,6 @@ _.Zones =
         --[[ These quests will be organized soon™
 				q(41173),	-- A Beacon of Hope
 				q(46205),	-- A Conduit No More
-				q(44876),	-- A Dance With Dragons
 				q(43514),	-- A Vainglorious Past
 				q(38953),	-- Advanced Needlework
 				q(41162),	-- And Into the Fel Fire
@@ -873,7 +872,6 @@ _.Zones =
 				q(43518),	-- Tempering Darkness
 				q(39142),	-- Testing a Theory
 				q(41163),	-- The Apocalypse Bringer
-				q(44875),	-- The Art of Flow
 				q(43373),	-- The Best and Brightest
 				q(43520),	-- The Emerald Nightmare: In Nightmares
 				q(45028),	-- The Fate of Kanrethad										
@@ -908,7 +906,6 @@ _.Zones =
 				q(45176),	-- Trial of Valor: The Once and Future Lord of Shadows
 				q(41184),	-- Tried and True
 				q(39916),	-- Turnabout Betrayal
-				q(44874),	-- Unbeleyvable
 				q(41182),	-- Uncovering the Orb of Sciallax
 				q(45126),	-- Unlikely Seduction
 				q(41180),	-- Unspeakable Power
