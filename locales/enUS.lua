@@ -3529,6 +3529,7 @@ app.L = {
 		[252881] = "Treasure Chest",
 		[252882] = "Treasure Chest",
 		[252883] = "Treasure Chest",
+		[252884] = "Glimmering Treasure Chest",
 		[253118] = "Dreamgrove Blossoms",
 		[253157] = "Spirit Berries",
 		[253161] = "Grove Vine",

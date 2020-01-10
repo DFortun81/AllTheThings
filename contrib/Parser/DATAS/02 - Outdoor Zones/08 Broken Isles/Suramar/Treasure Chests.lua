@@ -26,6 +26,10 @@ _.Zones =
 						{ 44.0, 31.9, 680 },
 					},
 				}),
+				o(252884, {	-- Glimmering Treasure Chest
+					["questID"] = 43876,
+					["coord"] = { 60.4, 68.5, 680 },
+				}),
 				o(252447, {	-- Shimmering Ancient Mana Cluster
 					["questID"] = 43744,
 					["coord"] = { 46.6, 26.0, 680 },
