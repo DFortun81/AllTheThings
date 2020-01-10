@@ -313,6 +313,7 @@ _.Zones =
 						["questID"] = 53385,
 						["coord"] = { 63.3, 65.8, 896 },
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["description"] = "Left. Down. Up. Right.",
 						["g"] = {
 							i(163743),	-- Drust Soulcatcher
 						},
