@@ -585,7 +585,6 @@ _.ExpansionFeatures =
 					q(43557, {	-- Violet Hold
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(44058),	-- Volpin the Elusive
 					q(45179),	-- Win the Crowd
 					q(43186, {	-- I Am the Slayer!
 						i(139715),	-- Robes of

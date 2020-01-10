@@ -277,7 +277,6 @@ _.ExpansionFeatures =
 					q(45027),	-- To the Broken Shore
 					q(44227),	-- Unleashing our Wrath
 					q(44682),	-- Unparalleled Power
-					q(44058),	-- Volpin the Elusive
 					q(45179),	-- Win the Crowd							
 					q(46243, {	-- The Wrathsteed of Xoroth
 						["lvl"] = 110,

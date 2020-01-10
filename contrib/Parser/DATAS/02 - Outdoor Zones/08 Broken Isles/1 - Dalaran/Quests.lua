@@ -1805,7 +1805,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
-			--	q(44058),	-- Volpin the Elusive -- starts from all order halls
 				q(38576, {	-- We Meet at Light's Hope
 					["sourceQuests"] = { 38376 },	-- The Search for the Highlord
 					["classes"] = { 2 },

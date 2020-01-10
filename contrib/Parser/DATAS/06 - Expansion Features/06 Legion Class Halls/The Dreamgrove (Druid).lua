@@ -140,7 +140,6 @@ _.ExpansionFeatures =
 					q(45172),	-- To Battle!
 					q(40645),	-- To The Dreamgrove
 					q(41782),	-- To The Hills
-					q(44058),	-- Volpin the Elusive
 					{
 						["questID"] = 40646,	-- Weapons of Legend
 						["provider"] = { "n", 101195 },	-- Quest Giver: Rensar Greathoof <Archdruid of the Grove>

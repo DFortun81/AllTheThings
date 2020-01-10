@@ -44,6 +44,9 @@ _.ExpansionFeatures =
 					q(42389),	-- Calling Hilaire Home
 					q(42415),	-- Champion: Halduron Brightwing
 					q(42409),	-- Champion: Loren Stormhoof
+					q(46048, {	-- Champion: Nighthuntress Syrenne
+						["classes"] = { 3 },	-- Hunter
+					}),
 					q(44043),	-- Continuing the Legend
 					q(45392),	-- Dark Memento
 					q(42654),	-- Darkheart Thicket: Nightmare Oak
@@ -52,6 +55,9 @@ _.ExpansionFeatures =
 						["repeatable"] = true,
 					}),
 					q(45551),	-- Devastating Effects
+					q(45555, {	-- Felbound Beasts
+						["classes"] = { 3 },	-- Hunter
+					}),
 					q(46783),	-- Further Advancement
 					un(40, q(46149)),	-- Furthering Knowledge. Used to Increase Artefact Power
 					q(42403, {	-- Highmountain Hunters
@@ -67,13 +73,19 @@ _.ExpansionFeatures =
 					q(42385),	-- Lending a Hand
 					q(42523),	-- Making Contact
 					q(42657),	-- Meeting in Moonclaw Vale
-					q(42400),	-- Missing Mages
+					q(42400, {	-- Missing Mages
+						["sourceQuest"] = 42399,  -- Ready to Work
+						["classes"] = { 3 },	-- Hunter
+					}),
 					q(40955),	-- Oath of Service
 					q(40953),	-- On Eagle's Wings
 					q(44366),	-- One Last Adventure
 					q(42655),	-- Ore Under the Sea
 					q(44090),	-- Pledge of Loyalty
 					q(41542),	-- Preparation for the Hunt
+					q(45556, {	-- Ready to Strike
+						["classes"] = { 3 },	-- Hunter
+					}),
 					q(42399),	-- Ready to Work
 					q(42134),	-- Recruiting More Troops
 					q(42390),	-- Recruiting Rexxar
@@ -85,12 +97,25 @@ _.ExpansionFeatures =
 					q(42133),	-- Same Day Delivery
 					q(42384),	-- Scouting Reports
 					q(42395),	-- Signaling Trouble
+					q(45552, {	-- Soothing Wounds
+						["classes"] = { 3 },	-- Hunter
+					}),
 					q(40958),	-- Tactical Matters
+					q(45554, {	-- Taking Control
+						["classes"] = { 3 },	-- Hunter
+					}),
 					q(42526),	-- Tech It Up A Notch
 					q(40959),	-- The Campaign Begins
+					q(45553, {	-- The Nighthuntress Beckons
+						["classes"] = { 3 },	-- Hunter
+						["provider"] = { "n", 117308 },	-- D'Bynn
+					}),
 					q(43182),	-- The Missing Vessel
 					q(42407),	-- The Nature of the Beast
-					q(42401),	-- The Scent of Magic
+					q(42401, {	-- The Scent of Magic
+						["sourceQuest"] = 42400,  -- Missing Mages
+						["classes"] = { 3 },	-- Hunter
+					}),
 					q(40385),	-- The Spear in the Shadow
 					q(40954),	-- The Unseen Path
 					q(45172),	-- To Battle!
@@ -99,7 +124,6 @@ _.ExpansionFeatures =
 					q(44212),	-- Unseen Fate
 					q(42394),	-- Unseen Protection
 					q(42388),	-- Urgent Summons
-					q(44058),	-- Volpin the Elusive
 					q(44233),	-- Walk This Way
 					q(45179, {	-- Win the Crowd
 						["repeatable"] = true,

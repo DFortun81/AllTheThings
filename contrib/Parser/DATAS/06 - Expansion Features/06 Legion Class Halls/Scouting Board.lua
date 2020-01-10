@@ -68,6 +68,9 @@ _.ExpansionFeatures =
 						un(40, q(43556)),	-- Vault of the Wardens
 						un(40, q(44260)),	-- Vault of the Wardens
 						un(40, q(44261)),	-- Vault of the Wardens
+						q(44058,  {  -- Volpin the Elusive
+							i(137573),	-- Reins of the Llothien Prowler
+						}),
 						q(45312, {	-- You Beat the Ball of Meat
 							["provider"] = { "i", 143590 },	-- Hunk of Meatball
 							["g"] = {

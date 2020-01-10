@@ -1122,7 +1122,6 @@ _.Zones =
 				q(45575),	-- Village of the Corruptors
 				q(44259),	-- Violet Hold
 				q(44258),	-- Violet Hold
-				q(44058),	-- Volpin the Elusive
 				q(42280),	-- Vorthax
 				q(44233),	-- Walk This Way
 				q(41820),	-- Walk Without Rhythm
