@@ -937,6 +937,8 @@ _.NeverImplemented =
 		q(40302),	-- FLAG - Prospecting 01
 		q(40303),	-- FLAG - Prospecting 02
 		q(40304),	-- FLAG - Prospecting 03 - triggered when completing a jewelcrafting world quest in Dalaran
+		q(45318),	-- Nighthold - tracking quest. triggers before the door to Chronomatic Anomaly opens
+		q(45328),	-- Nighthold - tracking quest. triggers before the door to Chronomatic Anomaly opens
 		
 		-- Suramar - Withered Training
 		-- additional note: objectID 252452 (Glimmering Treasure Chest) is the big chest at the end of training that can contain toys
@@ -950,6 +952,11 @@ _.NeverImplemented =
 		q(43111),	-- 7.0 Suramar Collapse Scenario - Treasure 10 - Reduce Runaways 01: obtained Soothing Leystone Shard from a small chest (5 withered, objectID 251751)
 		q(43140),	-- 7.0 Suramar Collapse Scenario - Treasure 02 - Army Size Increase 02: no withered army increase anymore, but did contain Traveler's Banking Chest (itemID 140778) (5 withered, objectID 43140)
 		q(43146),	-- 7.0 Suramar Collapse Scenario - Treasure 16 - Withered Mana-Rager Unlock 02: obtained Spellmask okf Azsylla from a large chest (10 withered, objectID 251757)
+		q(43143),	-- 7.0 Suramar Collapse Scenario - Treasure 05 - Army Size Increase 05: used to be from an increase to max withered army size, but no longer in game (5 withered, objectID 251746)
+		q(43144),	-- 7.0 Suramar Collapse Scenario - Treasure 06 - Army Size Increase 06: used to be from an increase to max withered army size, but no longer in game. Also dropped the Ancient Mana Basin toy (5 withered, objectID 251747)
+		q(43128),	-- 7.0 Suramar Collapse Scenario - Treasure 15 - Withered Mana-Rager Unlock 01: obtained Spellmask of Alla'onus (10 withered, objectID 251756)
+		q(43134),	-- 7.0 Suramar Collapse Scenario - Treasure 17 - Withered Spellseer Unlock 01: obtained Lenses of Spellseer Dellian (10 withered, objectID 251758)
+		q(43135),	-- 7.0 Suramar Collapse Scenario - Treasure 18 - Withered Lodestar Unlock 01: obtained Disc of the Starcaller (10 withered, objectID 251759)
 		
 		q(38894),	-- Generic Order Hall - Founded the order hall
 		q(43837),	-- Generic Order Hall - Tutorial - combat ally unlocked
