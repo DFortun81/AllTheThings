@@ -175,7 +175,6 @@ _.Zones =
 				n(69841, {	-- Zandalari Warbringer (Amber)
 					["coords"] = {
 						{ 47.42, 61.54, 422 },	-- Dread Wastes
-						{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 						{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 						{ 52.56, 18.85, 371 },	-- The Jade Forest
 						{ 36.58, 85.67, 388 },	-- Townlong Steppes
@@ -187,7 +186,6 @@ _.Zones =
 				n(69842, {	-- Zandalari Warbringer (Jade)
 					["coords"] = {
 						{ 47.42, 61.54, 422 },	-- Dread Wastes
-						{ 39.83, 65.92, 418 },	-- Krasarang Wilds
 						{ 75.11, 67.47, 379 },	-- Kun-Lai Summit
 						{ 52.56, 18.85, 371 },	-- The Jade Forest
 						{ 36.58, 85.67, 388 },	-- Townlong Steppes
