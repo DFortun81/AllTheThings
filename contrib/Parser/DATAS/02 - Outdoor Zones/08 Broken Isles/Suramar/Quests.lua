@@ -24,7 +24,6 @@ _.Zones =
 			
 
 			--	real quests begin here!
-				q(44057),	-- A "Noble" Event
 				q(41916, {	-- A Better Future
 					["coord"] = { 40.5, 53.0, 680 }, -- horde coordinate. Possibly different for alliance?
 					["provider"] = { "n", 114908 },	-- First Arcanist Thalyssra
@@ -34,11 +33,6 @@ _.Zones =
 					["coord"] = { 48.9, 73.4, 680 },
 					["provider"] = { "n", 107253 },	-- Arluin
 					["sourceQuest"] = 42840,	-- If Words Don't Work...
-				}),
-				q(43485, {	-- A Burning Distraction
-					["sourceQuests"] = { 43469, 43479 },
-					["classes"] = { 4 },
-					["provider"] = { "n", 98100 },	-- Taoshi
 				}),
 				q(44919, {	-- A Challenge From Our Enemies
 					["coord"] = { 36.4, 45.8, 680 },
@@ -103,10 +97,6 @@ _.Zones =
 					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 45064,	-- Felborne No More
 				}),
-				q(42520, {	-- A Terrible Loss
-					["classes"] = { 8 },
-				}),
-				q(43526),	-- A True Test
 				q(45266, {	-- A United Front
 					["coord"] = { 36.5, 46.7, 680 },
 					["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
@@ -158,9 +148,6 @@ _.Zones =
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 42229,	-- Shal'Aran
 				}),
-				q(40157, {	-- An Unseemly Task
-					["requireSkill"] = 186, -- Mining
-				}),
 				q(44672, {	-- Ancient Mana
 					["coord"] = { 36.5, 46.9, 680 },
 					["provider"] = { "n", 97140 },	-- QFirst Arcanist Thalyssra
@@ -187,7 +174,11 @@ _.Zones =
 					["provider"] = { "n", 114948 },	-- Silgryn
 					["sourceQuest"] = 38695,	-- Crackdown
 				}),
-				q(41231),	-- Apex Predator
+				q(41231, {	-- Apex Predator
+					["coord"] = { 47.9, 52.2, 680 },
+					["provider"] = { "n", 111019 },	-- Nighteyes
+					["sourceQuest"] = 41216,	-- Survival of the Fittest
+				}),
 				q(43568, {	-- Arcan'dor, Gift of the Ancient Magi
 					["coord"] = { 36.8, 46.5, 680 },
 					["provider"] = { "n", 107126 },	-- Valewalker Farodin
@@ -198,10 +189,7 @@ _.Zones =
 					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 42147,	-- First Contact
 				}),
-				q(45482, {	-- Arcane: Fate of the Tideskorn
-					["classes"] = { 8 },
-				}),
-				q(40009,  {  -- Arcane Thirst
+				q(40009, {  -- Arcane Thirst
 					["coord"] = { 35.3, 47.3, 680 },
 					["provider"] = { "n", 98312 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 40123,	-- The Nightborne Pact
@@ -209,8 +197,8 @@ _.Zones =
 						i(121804),	-- Cloak of the Everliving Keeper
 					},
 				}),
-				q(40725, {	-- Arganax (not implemented?)
-					["isDaily"] = true,
+				q(40725, {	-- Arganax (NYI)
+					["u"] = 1,
 				}),
 				q(43569, {	-- Arluin's Request
 					["coord"] = { 36.4, 46.6, 680 },
@@ -235,17 +223,10 @@ _.Zones =
 						44860,	-- Trolling Them
 					},
 				}),
-				q(47051, {	-- Assassination: Fate of the Tideskorn
-					["classes"] = { 4 },
-				}),
 				q(43352, {	-- Asset Security
 					["coord"] = { 48.9, 73.4, 680 },
 					["provider"] = { "n", 107253 },	-- Arluin
 					["sourceQuest"] = 42840,	-- If Words Don't Work...
-				}),
-				q(42404, {	-- Assisting the Archmage
-					["sourceQuest"] = 42401,  -- The Scent of Magic
-					["classes"] = { 3 },	-- Hunter
 				}),
 				q(40412, {	-- Azoran Must Die
 					["coord"] = { 31.0, 85.0, 680 },
@@ -255,7 +236,11 @@ _.Zones =
 						41097,	-- Shard of Vorgos
 					},
 				}),
-				q(41107),	-- Bad Apples
+				q(41107, {	-- Bad Apples
+					["coord"] = { 47.2, 56.5, 680 },
+					["provider"] = { "n", 103131 },	-- Keelay Moongrow
+					["description"] = "Must be disguised as a Nightborne."
+				}),
 				q(40227, {	-- Bad Intentions
 					["coord"] = { 49.1, 43.8, 680 },
 					["provider"] = { "n", 99093 },	-- Thaedris Feathersong
@@ -264,7 +249,6 @@ _.Zones =
 						40266,	-- The Lost Advisor
 					},
 				}),
-				q(43533),	-- Balance of Power
 				q(42837, {  -- Balance to Spare
 					["coord"] = { 60.6, 56.5, 680 },
 					["provider"] = { "n", 108872 },	-- Margaux
@@ -293,7 +277,11 @@ _.Zones =
 					["provider"] = { "n", 99544 },	-- Brandolf
 					["sourceQuest"] = 40908,	-- Jarl Come Back Now
 				}),
-				q(41256),	-- Blast of Spice Fish
+				q(41256, {	-- Blast of Spice Fish
+					["coord"] = { 47.2, 56.5, 680 },
+					["provider"] = { "n", 103131 },	-- Keelay Moongrow
+					["description"] = "Must be disguised as a Nightborne.",
+				}),
 				q(41989, {	-- Blood of My Blood
 					["coord"] = { 43.3, 78.7, 680 },
 					["provider"] = { "n", 105342 },	-- Ly'leth Lunastre
@@ -338,7 +326,6 @@ _.Zones =
 					["provider"] = { "n", 98548 },	-- Chief Telemancer Oculeth
 					["sourceQuest"] = 43562,	-- Giving It All We've Got
 				}),
-				q(44670),	-- Broodmother Lizax
 				q(40364, {	-- Bubble Trouble
 					["coord"] = { 74.9, 63.3, 680 },
 					["provider"] = { "n", 104406 },	-- Brytag
@@ -523,6 +510,7 @@ _.Zones =
 					["sourceQuest"] = 42230,	-- The Valewalker's Burden
 				}),
 				q(45372, {	-- Fate of the Nightborne
+					["coord"] = { 36.6, 45.1, 680 },
 					["provider"] = { "n", 115710 },	-- Chief Telemancer Oculeth
 					["sourceQuest"] = 45420,	-- The Nighthold: The Eye of Aman'Thul
 					["g"] = {
@@ -1377,7 +1365,11 @@ _.Zones =
 					["provider"] = { "n", 98312 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 40009,	-- Arcane Thirst
 				}),
-				q(43582),	-- Shalassic Park
+				q(43582, {	-- Shalassic Park
+					["coord"] = { 47.9, 52.2, 680 },
+					["provider"] = { "n", 111019 },	-- Nighteyes
+					["sourceQuest"] = 41231,	-- Apex Predator
+				}),
 				q(41098, {	-- Shard of Kozak
 					["coord"] = { 30.0, 69.4, 680 },
 					["provider"] = { "n", 99890 },	-- Lyana Darksorrow

@@ -95,6 +95,10 @@ _.ExpansionFeatures =
 						["maps"] = { 627 },	-- Dalaran
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 98100 },	-- Taoshi
+						["sourceQuests"] = {
+							43469,	-- Where In the World is Mathias?
+							43479,	-- The World is Not Enough
+						},
 					}),
 					q(40847, {	-- A Friendly Accord
 						["coord"] = { 41.2, 74.3, 626 },

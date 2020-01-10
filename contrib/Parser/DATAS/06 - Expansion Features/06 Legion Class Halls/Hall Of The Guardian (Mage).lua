@@ -135,7 +135,11 @@ _.ExpansionFeatures =
 					}),		
 					q(43441),	-- A Second Weapon
 					q(42954),	-- A Small Favor
-					q(42520),	-- A Terrible Loss
+					q(42520, {	-- A Terrible Loss
+						["classes"] = { 8 },
+						["provider"] = { "n", 108085 },	-- Image of Kalec
+						["sourceQuest"] = 42493,	-- Impending Dooooooom!
+					}),
 					q(42455),	-- Alodi's Gems
 					q(42001),	-- Aluneth, Greatstaff of the Magna
 					q(45180),	-- An Island of War

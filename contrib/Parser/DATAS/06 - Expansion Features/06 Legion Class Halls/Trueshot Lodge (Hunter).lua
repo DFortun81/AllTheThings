@@ -23,13 +23,7 @@ _.ExpansionFeatures =
 					q(41541, {	-- A Beastly Expedition 
 						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
 						["classes"] = {3},
-					}),
-	--[[ waiting on Coordinates							
-					q(41541, {	-- A Beastly Expedition
-						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
-						["classes"] = {3},
-					}),
-	--]]							
+					}),			
 					q(41541),	-- A Beastly Expedition
 					q(43423),	-- A Hero's Weapon
 					q(43370),	-- A New Invention
@@ -38,7 +32,12 @@ _.ExpansionFeatures =
 					q(41053),	-- Altar of the Eternal Hunt
 					un(40, q(45180)),	-- An Island of War
 					q(46022),	-- An Urgent Warning
-					q(42404),	-- Assisting the Archmage
+					q(42404, {	-- Assisting the Archmage
+						["maps"] = { 680 },	-- Suramar
+						["classes"] = { 3 },	-- Hunter
+						["provider"] = { "n", 108089 },	-- Archmage Khadgar
+						["sourceQuest"] = 42401,  -- The Scent of Magic
+					}),
 					q(42656),	-- Azure Weaponry
 					q(42397),	-- Baron and the Huntsman
 					q(40392),	-- Call of the Marksman
