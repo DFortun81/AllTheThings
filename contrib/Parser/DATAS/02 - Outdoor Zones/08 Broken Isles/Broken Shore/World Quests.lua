@@ -341,6 +341,7 @@ _.Zones =
 					i(146886),	-- Felknight Greatcloak
 					i(146857),	-- Mo'arg Overseer's Cloak
 					i(134365),	-- Netherwracked Greatcloak
+					i(146885),	-- Soulbreaker's Drape
 					i(146884),	-- Wyrmtongue Scavenger's Shawl
 				}),
 				n(-3244, {	-- Netherwhisper Set
