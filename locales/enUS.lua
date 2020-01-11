@@ -910,6 +910,7 @@ app.L = {
 		[-10077] = "Interface\\Icons\\Paladin_Protection",							-- Assault: The Warring Clans
 		[-10078] = "Interface\\Icons\\Paladin_Protection",							-- Assault: The Endless Swarm
 		[-10079] = "Interface\\Icons\\Paladin_Protection",							-- Assault: Aqir Unearthed
+		[-10080] = "Interface\\Icons\\Paladin_Protection",							-- Assault: Aqir Unearthed
 
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -1794,6 +1795,7 @@ app.L = {
 		[-10077] = "Assault: The Warring Clans",
 		[-10078] = "Assault: The Endless Swarm",
 		[-10079] = "Assault: Aqir Unearthed",
+		[-10080] = "Horrific Visions",
 	},
 
 	["OBJECT_ID_ICONS"] = {
