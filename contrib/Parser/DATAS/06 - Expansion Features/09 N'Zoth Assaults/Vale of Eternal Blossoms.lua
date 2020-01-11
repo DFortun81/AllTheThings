@@ -14,8 +14,6 @@ _.ExpansionFeatures =
 			1570,	-- Vale of Eternal Blossoms
 		},
 		["g"] = {
-			-- this assault header is probably not necessary now. The zone itself is remade
-			-- and assaults themselves don't have a whole of content unrelated to dailies
 			n(-10072, {	-- N'Zoth Assaults
 				n(-10076, {	-- Assault: The Black Empire
 					n(-17, {	-- Quests
@@ -175,7 +173,6 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(-34,  {	-- World Quests
-						-- TODO:: putting coords here temporarily. The current PTR build doesn't have map indicators
 						q(56076, {	-- Abyssal Ritual
 							["lvl"] = 120,
 							["coord"] = { 74.2, 40.0, 1530 },
@@ -561,13 +558,6 @@ _.ExpansionFeatures =
 							["coord"] = { 11.3, 40.8, 1530 },
 							["isWorldQuest"] = true,
 						}),
-						--[[
-						q(, {	-- 
-							["lvl"] = 120,
-							["coord"] = { , 1530 },
-							["isWorldQuest"] = true,
-						}),
-						]]
 					}),
 				}),
 			}),

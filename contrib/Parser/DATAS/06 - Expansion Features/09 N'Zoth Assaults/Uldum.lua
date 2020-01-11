@@ -576,20 +576,27 @@ _.ExpansionFeatures =
 						]]--
 					}),
 				}),
-				n(0, {	-- Zone Drops -- TODO:: move these to a different header since they only drop inside the uldum vision of nzoth
-					i(174837),	-- Decaying Fusion Core (14 day timer on this. no sure what it is yet)
-					i(171312),	-- Recipe: Void Focusb
-					i(174491),	-- Tome of Unspeakable Delicacies
-					i(174462),	-- Void Cocoon
+				n(0, {	-- Zone Drops
+					i(174368),	-- Pattern: Unsettling Cragscale Boots
+					i(174369),	-- Pattern: Unsettling Cragscale Greaves
+					i(174366),	-- Pattern: Unsettling Dredged Leather Boots
+					i(174367),	-- Pattern: Unsettling Dredged Leather Leggings
+					i(174371),	-- Pattern: Unsettling Seaweave Breeches
+					i(174370),	-- Pattern: Unsettling Seaweave Gloves
+					i(171317),	-- Plans: Unsettling Osmenite Girdle
+					i(171316),	-- Plans: Unsettling Osmenite Legguards
 				}),
-				i(171316),	-- Plans: Unsettling Osmenite Legguards -- TODO: place this somewhere. dropped from a random mob in Uldum during the black empire assault
-				i(170553, {	-- Void Focus Splinter
-					["crs"] = {
-						160914,	-- Abyssal Harbinger
-						160462,	-- Acolyte of N'Zoth
-						156572,	-- K'thir Doomsayer
-					},
-				}),
+			}),
+			n(-10071, {	-- Visions of N'Zoth
+				["description"] = "Use the obelisk to see Uldum succumb to N'Zoth's corruption.",
+				["g"] = {
+					n(0, {	-- Zone Drops
+						i(174837),	-- Decaying Fusion Core (14 day timer on this. no sure what it is yet)
+						i(171312),	-- Recipe: Void Focus
+						i(174491),	-- Tome of Unspeakable Delicacies
+						i(174462),	-- Void Cocoon
+					}),
+				},
 			}),
 			n(-4,     {	-- Achievements
 				ach(14159),		-- Combating the Corruption
@@ -818,7 +825,6 @@ _.ExpansionFeatures =
 					["sourceQuest"] = 57221,	-- Re-origination
 				}),
 				q(58151, {	-- Minions of N'Zoth
-					["u"] = 1,	-- removed from PTR build
 					["coord"] = { 56.6, 31.7, 1527 },
 					["provider"] = { "n", 160252 },	-- Blacktalon Agent
 					["isDaily"] = true,
