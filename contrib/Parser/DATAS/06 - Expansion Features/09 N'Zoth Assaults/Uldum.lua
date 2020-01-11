@@ -350,6 +350,18 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 155096 },	-- High Commander Kamses
 							["sourceQuest"] = 56472,	-- The Uldum Accord
 						}),
+						q(58234, {	-- Questionable Sourcing
+							["coord"] = { 54.6, 32.8, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 155099 },	-- High Priest Amet
+							["sourceQuest"] = 56472,	-- The Uldum Accord
+						}),
+						q(57737, {	-- Ramkahen Rescue
+							["coord"] = { 54.9, 32.7, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 155095 },	-- King Phaoris
+							["sourceQuest"] = 56472,	-- The Uldum Accord
+						}),
 						q(58156, {	-- Vanquishing the Darkness
 							["coord"] = { 56.6, 31.7, 1527 },
 							["isDaily"] = true, -- TODO:: probably a weekly
@@ -357,6 +369,12 @@ _.ExpansionFeatures =
 							["g"] = {
 								i(174288),	-- Breath of Everlasting Spirit
 							},
+						}),
+						q(58231, {	-- Wisdom From Madness
+							["coord"] = { 54.6, 32.8, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 155099 },	-- High Priest Amet
+							["sourceQuest"] = 56472,	-- The Uldum Accord
 						}),
 					}),
 					n(-16, {	-- Rares

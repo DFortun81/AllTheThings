@@ -251,6 +251,12 @@ _.ExpansionFeatures =
 				}),
 				n(-10077, {	-- Assault: The Warring Clans
 					n(-17,  {	-- Quests
+						q(58485, {	-- Built to Fall
+							["coord"] = { 44.7, 73.8, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
 						q(58476, {	-- Bringing the Thunder
 							["coord"] = { 38.4, 75.0, 1530 },
 							["isDaily"] = true,
