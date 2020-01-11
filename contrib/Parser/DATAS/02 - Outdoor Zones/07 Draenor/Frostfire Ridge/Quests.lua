@@ -79,7 +79,6 @@ _.Zones =
 				q(34321, {	-- Ashes of the Past
 					["provider"] = { "n", 77998 },	-- Molthron
 					["coord"] = { 43.5, 15.5, 525 },
-					["races"] = HORDE_ONLY,
 				}),
 				q(34070, {	-- At the End of Your Rope
 					["provider"] = { "n", 77210 },	-- Scout Ruk'Gan
@@ -230,7 +229,6 @@ _.Zones =
 				q(34325, {	-- Flames of the Earth
 					["provider"] = { "n", 77998 },	-- Molthron
 					["coord"] = { 43.5, 15.5, 525 },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34321,	-- Ashes of the Past
 				}),
 				q(34364, {	-- For the Horde!
