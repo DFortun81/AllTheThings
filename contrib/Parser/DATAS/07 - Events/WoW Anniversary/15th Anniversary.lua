@@ -876,30 +876,42 @@ _.WorldEvents =
 								n(34564, {	-- Anub'arak — WoW Anniversary only
 									["g"] = bubbleDown({ ["u"] = 31 }, {	-- WoW Anniversary
 										i(171615),	-- Aegis of the Coliseum
-										i(171616),	-- Anguish
+										i(171616, {	-- Anguish
+											["races"] = HORDE_ONLY,
+										}),
 										i(171560, {	-- Archon Glaive
 											["races"] = ALLIANCE_ONLY,
 										}),
 										i(171604, {	-- Ardent Guard
 											["races"] = HORDE_ONLY,
 										}),
-										i(171583),	-- Argent Resolve
+										i(171583, {	-- Argent Resolve
+											["races"] = ALLIANCE_ONLY,
+										}),
 										i(171525),	-- Armbands of Dark Determination
 										i(171557),	-- Armbands of the Ashen Saint
 										i(171581),	-- Baelgun's Heavy Crossbow
 										i(171548),	-- Belt of Deathly Dominion
-										i(171614),	-- Belt of the Eternal
+										i(171614, {	-- Belt of the Eternal
+											["races"] = HORDE_ONLY,
+										}),
 										i(171556),	-- Belt of the Forgotten Martyr
 										i(171536),	-- Bindings of the Ashen Saint
-										i(171610),	-- Blackhorn Bludgeon
+										i(171610, {	-- Blackhorn Bludgeon
+											["races"] = HORDE_ONLY,
+										}),
 										i(171533),	-- Boots of the Icy Floe
 										i(171547),	-- Bracers of Dark Determination
 										i(171529),	-- Breeches of the Deepening Void
 										i(171595),	-- Bulwark of the Royal Guard
 										i(171558),	-- Chestguard of Flowing Elements
 										i(171585),	-- Chestguard of the Warden
-										i(171597),	-- Cinch of the Undying
-										i(171589),	-- Cold Convergence
+										i(171597, {	-- Cinch of the Undying
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171589, {	-- Cold Convergence
+											["races"] = ALLIANCE_ONLY,
+										}),
 										i(171584),	-- Crusader's Glory
 										i(171537),	-- Cuirass of Flowing Elements
 										i(171612, {	-- Darkmaw Crossbow
@@ -918,19 +930,29 @@ _.WorldEvents =
 										i(171546),	-- Greaves of the 7th Legion
 										i(171524),	-- Greaves of the Saronite Citadel
 										i(171538),	-- Handwraps of the Lifeless Touch
-										i(171541),	-- Hellion Glaive
+										i(171541, {	-- Hellion Glaive
+											["races"] = HORDE_ONLY,
+										}),
 										i(171526, {	-- Hellscream Slicer
 											["races"] = HORDE_ONLY,
 										}),
 										i(171587),	-- Helmet of the Crypt Lord
-										i(171602),	-- Helm of the Crypt Lord
+										i(171602, {	-- Helm of the Crypt Lord
+											["races"] = HORDE_ONLY,
+										}),
 										i(171530),	-- Leggings of the Awakening
 										i(171553),	-- Leggings of the Deepening Void
 										i(171531),	-- Leggings of the Lurking Threat
 										i(171551),	-- Legguards of the Lurking Threat
-										i(171607),	-- Legplates of Redeemed Blood
-										i(171596),	-- Legplates of the Immortal Spider
-										i(171592),	-- Legplates of the Silver Hand
+										i(171607, {	--  Legplates of Redeemed Blood
+											["races"] = HORDE_ONLY,
+										}),
+										i(171596, {	-- Legplates of the Immortal Spider
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171592, {	-- Legplates of the Silver Hand
+											["races"] = ALLIANCE_ONLY,
+										}),
 										i(171552),	-- Legwraps of the Awakening
 										i(171599),	-- Mace of the Earthborn Chieftain
 										i(171540, {	-- Maiden's Adoration
@@ -949,10 +971,18 @@ _.WorldEvents =
 										i(171600, {	-- Pride of the Kor'kron
 											["races"] = HORDE_ONLY,
 										}),
-										i(171611),	-- Robes of the Sleepless
-										i(171609),	-- Shoulderpads of the Snow Bandit
-										i(171593),	-- Spaulders of the Snow Bandit
-										i(171601),	-- Stoneskin Chestplate
+										i(171611, {	-- Robes of the Sleepless
+											["races"] = HORDE_ONLY,
+										}),
+										i(171609, {	-- Shoulderpads of the Snow Bandit
+											["races"] = HORDE_ONLY,
+										}),
+										i(171593, {	-- Spaulders of the Snow Bandit
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171601, {	-- Stoneskin Chestplate
+											["races"] = HORDE_ONLY,
+										}),
 										i(171544, {	-- Stormpike Cleaver
 											["races"] = ALLIANCE_ONLY,
 										}),
@@ -962,13 +992,27 @@ _.WorldEvents =
 										i(171534, {	-- Suffering's End
 											["races"] = HORDE_ONLY,
 										}),
-										i(171613),	-- Sunwalker Legguards
-										i(171590),	-- The Grinder
-										i(171582),	-- The Lion's Maw
-										i(171598),	-- Vestments of the Sleepless
-										i(171586),	-- Vigilant Ward
-										i(171523),	-- Waistguard of Deathly Dominion
-										i(171588),	-- Westfall Saber
+										i(171613, {	-- Sunwalker Legguards
+											["races"] = HORE_ONLY,
+										}),
+										i(171590, {	-- The Grinder
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171582, {	-- The Lion's Maw
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171598, {	-- Vestments of the Sleepless
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171586, {	-- Vigilant Ward
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171523, {	-- Waistguard of Deathly Dominion
+											["races"] = HORDE_ONLY,
+										}),
+										i(171588, {	-- Westfall Saber
+											["races"] = ALLIANCE_ONLY,
+										}),
 									}),
 								}),
 								n(36597, {	-- The Lich King — items available outside of anniversary event
