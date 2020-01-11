@@ -148,69 +148,139 @@ _.Achievements =
 					}),
 					n(-691, {	-- Notorious Gladiator: Battle for Azeroth Season 3
 						ach(13634, {	-- Challenger: Battle for Azeroth Season 3
-						--	["u"] = 4, S3
+							["u"] = 4, 
 							["g"] = {
 								title(32),	-- Challenger <Name>
 							},
 						}),
 						ach(13639, {	-- Combatant: Battle for Azeroth Season 3
-						--	["u"] = 4, S3
+							["u"] = 4, 
 							["g"] = {
 								title(78),	-- Combatant <Name>
 							},
 						}),
 						ach(13642, {	-- Duelist: Battle for Azeroth Season 3
-						--	["u"] = 4, S3
+							["u"] = 4, 
 							["g"] = {
 								title(30),	-- Duelist <Name>
 								--[[ Note!! Currently we can not list this due to having no item.
 								Illusion: Dreadflame // Dreadflame Illusion --]]
 								i(167382, {	-- Notorious Gladiator's Cloak (A)
-								--	["u"] = 2, S3
+									["u"] = 2, 
 								}),
 								i(167381, {	-- Notorious Gladiator's Cloak (H)
-								--	["u"] = 2, S3
+									["u"] = 2, 
 								}),
 							},
 						}),
 						ach(13676, {	-- Elite: Battle for Azeroth Season 3
-						--	["u"] = 4, S3
+							["u"] = 4, 
 							["g"] = {
 								i(167363, {	-- Notorious Gladiator's Tabard (A)
-								--	["u"] = 2, S3
+									["u"] = 2, 
 								}),
 								i(167362, {	-- Notorious Gladiator's Tabard (H)
-								--	["u"] = 2, S3
+									["u"] = 2, 
 								}),
 							},
 						}),
 						ach(13647, {	-- Gladiator: Battle for Azeroth Season 3
-						--	["u"] = 4, S3
+							["u"] = 4, 
 							["g"] = {
 								title(29),	-- Gladiator <Name>
 								i(156881, {	-- Notorious Gladiator's Proto-Drake
-								--	["u"] = 2, S3
+									["u"] = 2, 
 								}),
 							},
 						}),
 						ach(13643, {	-- Hero of the Alliance: Notorious
 							["races"] = ALLIANCE_ONLY,
-						--	["u"] = 4, S3
+							["u"] = 4, 
 						}),
 						ach(13644, {	-- Hero of the Horde: Notorious
 							["races"] = HORDE_ONLY,
-						--	["u"] = 4, S3
+							["u"] = 4, 
 						}),
 						ach(13641, {	-- Rival: Battle for Azeroth Season 3
-						--	["u"] = 4, S3
+							["u"] = 4, 
 							["g"] = {
 								title(31),	-- Rival <Name>
 							},
 						}),
 						ach(13630, {	-- Notorious Gladiator: Battle for Azeroth Season 3
-						--	["u"] = 4, S3
+							["u"] = 4, 
 							["g"] = {
 								title(402, {	-- Notorious Gladiator <Name>
+									["u"] = 37, 
+								}),
+							},
+						}),
+					}),
+					n(-691, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
+						ach(13634, {	-- Challenger: Battle for Azeroth Season 4
+						--	["u"] = 4, S3
+							["g"] = {
+								title(32),	-- Challenger <Name>
+							},
+						}),
+						ach(13639, {	-- Combatant: Battle for Azeroth Season 4
+						--	["u"] = 4, S3
+							["g"] = {
+								title(78),	-- Combatant <Name>
+							},
+						}),
+						ach(13642, {	-- Duelist: Battle for Azeroth Season 4
+						--	["u"] = 4, S3
+							["g"] = {
+								title(30),	-- Duelist <Name>
+								--[[ Note!! Currently we can not list this due to having no item.
+								Illusion: Dreadflame // Dreadflame Illusion --]]
+								i(167382, {	-- Corrupted Gladiator's Cloak (A)
+								--	["u"] = 2, S3
+								}),
+								i(167381, {	-- Corrupted Gladiator's Cloak (H)
+								--	["u"] = 2, S3
+								}),
+							},
+						}),
+						ach(13676, {	-- Elite: Battle for Azeroth Season 4
+						--	["u"] = 4, S3
+							["g"] = {
+								i(167363, {	-- Corrupted Gladiator's Tabard (A)
+								--	["u"] = 2, S3
+								}),
+								i(167362, {	-- Corrupted Gladiator's Tabard (H)
+								--	["u"] = 2, S3
+								}),
+							},
+						}),
+						ach(13647, {	-- Gladiator: Battle for Azeroth Season 4
+						--	["u"] = 4, S3
+							["g"] = {
+								title(29),	-- Gladiator <Name>
+								i(156881, {	-- Corrupted Gladiator's Proto-Drake
+								--	["u"] = 2, S3
+								}),
+							},
+						}),
+						ach(13643, {	-- Hero of the Alliance: Corrupted
+							["races"] = ALLIANCE_ONLY,
+						--	["u"] = 4, S3
+						}),
+						ach(13644, {	-- Hero of the Horde: Corrupted
+							["races"] = HORDE_ONLY,
+						--	["u"] = 4, S3
+						}),
+						ach(13641, {	-- Rival: Battle for Azeroth Season 4
+						--	["u"] = 4, S3
+							["g"] = {
+								title(31),	-- Rival <Name>
+							},
+						}),
+						ach(13630, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
+						--	["u"] = 4, S3
+							["g"] = {
+								title(402, {	-- Corrupted Gladiator <Name>
 								--	["u"] = 37, S3
 								}),
 							},
