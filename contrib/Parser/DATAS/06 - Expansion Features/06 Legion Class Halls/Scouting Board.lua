@@ -78,32 +78,6 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
-					mission(1785, {	-- Assault on Felfire Armory
-						["questID"] = 48601,	-- Felfire Shattering
-						["g"] = {
-							i(153130),	-- Man'ari Training Amulet
-						},
-					}),
-					mission(1387, {	-- Friends, Not Food
-						i(140316),	-- Firebat Pup
-					}),
-					mission(1381, {	-- Glittering Treasure
-						i(129165),	-- Barnacle-Encrusted Gem
-					}),
-					mission(1386, {	-- It's so FLUFFY!
-						i(140320),	-- Corgnelius
-					}),
-					i(140495, {		-- Torn Invitation
-						i(137573),	-- Reins of the Llothien Prowler
-					}),
-					mission(1382, {	-- Win the Crowd
-						i(130169),	-- Tournament Favor
-					}),
-					mission(1502, {	-- There is no Brawlers Guild
-						q(45111, {	-- Everyone Loves a Good Fight
-							["provider"] = { "i", 142522 },	-- Rude Letter
-						}),
-					}),
 					mission(1505, {	-- A Good Dust Up
 						q(45172, {	-- To Battle!
 							["provider"] = { "i", 143328 },	-- Battle Report
@@ -130,6 +104,56 @@ _.ExpansionFeatures =
 								}),
 							},
 						}),
+					}),
+					mission(1785, {	-- Assault on Felfire Armory
+						q(48601, {	-- Felfire Shattering
+							["g"] = {
+								i(153130),	-- Man'ari Training Amulet
+							},
+						}),
+					}),
+					mission(1503, {	-- Council of War
+                        q(45162, {	-- We Brought the Hammer
+                            ["provider"] = { "i", 142553 },	-- Tuft of Dwarvish Beard
+                        }),
+                    }),
+					mission(1387, {	-- Friends, Not Food
+						i(140316),	-- Firebat Pup
+					}),
+					mission(1381, {	-- Glittering Treasure
+						i(129165),	-- Barnacle-Encrusted Gem
+					}),
+					mission(1513, {	-- I've Got A Strange Feeling About This
+                        q(45312, {	-- You beat the Ball of Meat
+                            ["provider"] = { "i", 143590 },	-- Hunk of Meatball
+                            ["g"] = {
+								follower(986),	-- Meatball
+                            },
+                        }),
+                    }),
+					mission(1504, {	-- It's Clean Up Time
+                        q(45163, {	-- Clearing Up
+                            ["provider"] = { "i", 142554 },	-- Broken Handle
+                        }),
+                    }),
+					mission(1386, {	-- It's so FLUFFY!
+						i(140320),	-- Corgnelius
+					}),
+					mission(1512, {	-- Master of Shadows
+                        q(45304, {	-- Attacking the Darkness
+                            ["provider"] = { "i", 143561 },	-- Exhausted Shadow Candle
+                        }),
+                    }),
+					mission(1502, {	-- There is no Brawlers Guild
+						q(45111, {	-- Everyone Loves a Good Fight
+							["provider"] = { "i", 142522 },	-- Rude Letter
+						}),
+					}),
+					i(140495, {		-- Torn Invitation
+						i(137573),	-- Reins of the Llothien Prowler
+					}),
+					mission(1382, {	-- Win the Crowd
+						i(130169),	-- Tournament Favor
 					}),
 					i(152960),	-- Argussian Reach Insignia
 					i(152957),	-- Army of the Light Insignia

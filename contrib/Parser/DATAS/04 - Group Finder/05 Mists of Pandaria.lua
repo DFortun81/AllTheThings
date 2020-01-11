@@ -268,7 +268,6 @@ _.GroupFinder =
 				i(89496),	-- Brewmoon Robe
 				i(89497),	-- Brewmoon Sandals
 				i(89498),	-- Brewmoon Shoulderpads
-				i(89507),	-- Brewmoon Signet
 				i(89499),	-- Brewmoon Wristwraps
 				i(92879),	-- Bubblebrew Cloak
 				i(92870),	-- Bubblebrew Cord
