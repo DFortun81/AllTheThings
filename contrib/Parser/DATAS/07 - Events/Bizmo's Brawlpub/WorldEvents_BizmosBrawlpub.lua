@@ -28,6 +28,13 @@ _.WorldEvents =
 				}),
 			}),
 			n(-17,  {	-- Quests
+				q(36702, {	-- Meatball
+					["provider"] = { "n", 86272 },	-- Meatball
+					["description"] = "Reach Rank 5 in the arena.",
+					["g"] = {
+						follower(203),	-- Meatball
+					},
+				}),
 				q(55002, {	-- Murder at the Brawlpub
 					["description"] = "This quest can be accepted after you successfully complete any (or your first) Brawl.",
 					["provider"] = { "n", 68363 },	-- Quackenbush <Bizmo's Brawlpub Quartermaster>
