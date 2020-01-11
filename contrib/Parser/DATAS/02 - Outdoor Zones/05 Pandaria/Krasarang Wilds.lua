@@ -1885,12 +1885,8 @@ _.Zones =
 				}),
 				n(-222, {	-- Treasure Hunter
 					o(214403, {	-- Stack of Papers
+						["questID"] = 31863,
 						["coord"] = { 52.1, 73.4, 418 },
-						["g"] = {
-							i(87798, {	-- Stack of Papers
-								["questID"] = 31869,
-							}),
-						},
 					}),
 				}),
 				n(-2, {		-- Vendor
