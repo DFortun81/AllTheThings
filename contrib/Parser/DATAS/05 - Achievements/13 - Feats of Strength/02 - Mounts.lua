@@ -16,7 +16,7 @@ _.Achievements =
 			un(14, ach(11001)),	-- Cruel Gladiator's Storm Dragon
 			un(14, ach(3096)),	-- Deadly Gladiator's Frost Wyrm
 			ach(729),			-- Deathcharger's Reins
-			un(14, ach(12140)),	-- Demonic Gladiator's Storm Dragon
+			un(14, ach(12140)),	-- Demonic Gladr's Storm Dragon
 			un(14, ach(12139)),	-- Dominant Gladiator's Storm Dragon
 			un(14, ach(13093)),	-- Dread Gladiator's Proto-Drake
 			un(14, ach(11000)),	-- Fearless Gladiator's Storm Dragon
@@ -33,11 +33,9 @@ _.Achievements =
 			un(14, ach(8705)),	-- Grievous Gladiator's Cloud Serpent
 			ach(8092),			-- I've Got 9999 Problems but a Bone-White Primal Raptor Ain't One
 			ach(4625),			-- Invincible's Reins
-			un(3, ach(3636)),	-- Jade Tiger (China only)
 			un(14, ach(8216)),	-- Malevolent Gladiator's Cloud Serpent
 			un(14, ach(887)),	-- Merciless Nether Drake
 			un(2, ach(879)),	-- Old School Ride
-			un(3, ach(3896)),	-- Onyx Panther (Korea only)
 			un(14, ach(8707)),	-- Prideful Gladiator's Cloud Serpent
 			un(14, ach(9229)),	-- Primal Gladiator's Felblood Gronnling
 			ach(883),			-- Reins of the Raven Lord

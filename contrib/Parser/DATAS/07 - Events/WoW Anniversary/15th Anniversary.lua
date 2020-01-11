@@ -877,8 +877,12 @@ _.WorldEvents =
 									["g"] = bubbleDown({ ["u"] = 31 }, {	-- WoW Anniversary
 										i(171615),	-- Aegis of the Coliseum
 										i(171616),	-- Anguish
-										i(171560),	-- Archon Glaive
-										i(171604),	-- Ardent Guard
+										i(171560, {	-- Archon Glaive
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171604, {	-- Ardent Guard
+											["races"] = HORDE_ONLY,
+										}),
 										i(171583),	-- Argent Resolve
 										i(171525),	-- Armbands of Dark Determination
 										i(171557),	-- Armbands of the Ashen Saint
@@ -898,10 +902,14 @@ _.WorldEvents =
 										i(171589),	-- Cold Convergence
 										i(171584),	-- Crusader's Glory
 										i(171537),	-- Cuirass of Flowing Elements
-										i(171612),	-- Darkmaw Crossbow
+										i(171612, {	-- Darkmaw Crossbow
+											["races"] = HORDE_ONLY,
+										}),
 										i(171555),	-- Footpads of the Icy Floe
 										i(171594),	-- Fordragon Blades
-										i(171608),	-- Forsaken Bonecarver
+										i(171608, {	-- Forsaken Bonecarver
+											["races"] = HORDE_ONLY,
+										}),
 										i(171603),	-- Frostblade Hatchet
 										i(171542),	-- Gauntlets of Bitter Reprisal
 										i(171535),	-- Girdle of the Forgotten Martyr
@@ -911,7 +919,9 @@ _.WorldEvents =
 										i(171524),	-- Greaves of the Saronite Citadel
 										i(171538),	-- Handwraps of the Lifeless Touch
 										i(171541),	-- Hellion Glaive
-										i(171526),	-- Hellscream Slicer
+										i(171526, {	-- Hellscream Slicer
+											["races"] = HORDE_ONLY,
+										}),
 										i(171587),	-- Helmet of the Crypt Lord
 										i(171602),	-- Helm of the Crypt Lord
 										i(171530),	-- Leggings of the Awakening
@@ -923,21 +933,35 @@ _.WorldEvents =
 										i(171592),	-- Legplates of the Silver Hand
 										i(171552),	-- Legwraps of the Awakening
 										i(171599),	-- Mace of the Earthborn Chieftain
-										i(171540),	-- Maiden's Adoration
-										i(171559),	-- Maiden's Favor
+										i(171540, {	-- Maiden's Adoration
+											["races"] = HORDE_ONLY,
+										}),
+										i(171559, {	-- Maiden's Favor
+											["races"] = ALLIANCE_ONLY,
+										}),
 										i(171532),	-- Might of the Nerub
-										i(171554),	-- Misery's End
+										i(171554, {	-- Misery's End
+											["races"] = ALLIANCE_ONLY,
+										}),
 										i(171606),	-- Pauldrons of the Shadow Hunter
 										i(171591),	-- Pauldrons of the Timeless Hunter
 										i(171605),	-- Perdition
-										i(171600),	-- Pride of the Kor'kron
+										i(171600, {	-- Pride of the Kor'kron
+											["races"] = HORDE_ONLY,
+										}),
 										i(171611),	-- Robes of the Sleepless
 										i(171609),	-- Shoulderpads of the Snow Bandit
 										i(171593),	-- Spaulders of the Snow Bandit
 										i(171601),	-- Stoneskin Chestplate
-										i(171544),	-- Stormpike Cleaver
-										i(171550),	-- Strength of the Nerub
-										i(171534),	-- Suffering's End
+										i(171544, {	-- Stormpike Cleaver
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171550, {	-- Strength of the Nerub
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171534, {	-- Suffering's End
+											["races"] = HORDE_ONLY,
+										}),
 										i(171613),	-- Sunwalker Legguards
 										i(171590),	-- The Grinder
 										i(171582),	-- The Lion's Maw

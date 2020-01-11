@@ -200,11 +200,6 @@ _.Zones =
 						7,	-- Gnome
 					},
 				}),
-				q(8149,  {	-- Honoring a Hero
-					["u"] = 25,	-- Harvest Festival
-					["provider"] = { "n", 15011 },	-- Wagner Hammerstrike
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(4126,  {	-- Hurley Blackbreath
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
