@@ -7,6 +7,7 @@ _.ExpansionFeatures =
 	m(1527, {	-- Uldum (under assault)
 		["lvl"] = 120,
 		["maps"] = {
+			249,	-- Uldum (pre-120, funky map changes forces us to put the old map here too)
 			1540,	-- Halls of Origination (storyline version)
 			1541,	-- Halls of Origination (Investigating the Halls scenario)
 			1542,	-- Halls of Origination (storyline version, floor 3)
@@ -292,6 +293,13 @@ _.ExpansionFeatures =
 							["questID"] = 58694,
 							["coord"] = { 42.0, 37.8, 1527 },
 						}),
+						n(162147, {	-- Corpse Eater
+							--["questID"] = ,
+							["isDaily"] = true,
+							["g"] = {
+								i(174769),	-- Malevolent Drone
+							},
+						}),
 						n(154604, {	-- Lord Aj'qirai
 							--["questID"] = ,
 							--["coord"] = { , 1527 },
@@ -383,13 +391,12 @@ _.ExpansionFeatures =
 							["coord"] = { 66.8, 74.3, 1527 },
 							["isDaily"] = true,
 						}),
-						n(158706, {	-- Congealed Corruption -- no questID from this even though the map says its rare
-							["coords"] = {
-								{ 59.5, 32.1, 1527 },
-								{ 54.7, 32.1, 1527 },
-							},
+						n(157593, {	-- Amalgamation of Flesh
+							--["questID"] = ,
+							--["coord"] = { , 1527 },
+							["isDaily"] = true,
 							["g"] = {
-								i(173178),	-- Corrupted Greaves -- TODO: potential zone drop set from rares?
+								i(174478),	-- Wicked Lurker (pet)
 							},
 						}),
 						n(159087, {	-- Corrupted Bonestripper
@@ -425,6 +432,25 @@ _.ExpansionFeatures =
 								{ 44.7, 77.6, 1527 },
 							},
 						}),
+						n(158633, {	-- Gaze of N'Zoth
+							--["questID"] = ,
+							["coord"] = { 55.0, 53.0, 1527 },
+							["isDaily"] = true,
+							["g"] = {
+								-- TODO: verify which eye drops from which rare, or if both can drop from the same mob
+								i(175141, {	-- All-Seeing Left Eye
+									i(175140),	-- All-Seeing Eyes (toy)
+								}),
+								i(175142, {	-- All-Seeing Right Eye
+									i(175140),	-- All-Seeing Eyes (toy)
+								}),
+							},
+						}),
+						n(156002, {	-- Harbinger Raloam
+							--["questID"] = ,
+							["coord"] = { 35.0, 17.0, 1527 },
+							["isDaily"] = true,
+						}),
 						n(158597, {	-- High Executor Yothrim
 							["questID"] = 57675,
 							["coord"] = { 54.7, 43.2, 1527 },
@@ -432,6 +458,11 @@ _.ExpansionFeatures =
 							["g"] = {
 								i(171317),	-- Plans: Unsettling Osmenite Girdle -- TODO:: probably drops from any rare/elite in a black empire assault
 							},
+						}),
+						n(160623, {	-- Hungering Miasma
+							--["questID"] = ,
+							["coord"] = { 60.0, 39.0, 1527 },
+							["isDaily"] = true,
 						}),
 						n(156655, {	-- Korzaran the Slaughterer
 							["questID"] = 57433,
@@ -461,11 +492,18 @@ _.ExpansionFeatures =
 								i(169303),	-- Hell-Bent Bracers
 							},
 						}),
+						n(158595, {	-- Thoughtstealer Vos
+							--["questID"] = ,
+							["coord"] = { 65.0, 73.0, 1527 },
+							["isDaily"] = true,
+						}),
+						n(157473, {	-- Yiphrim the Will Ravager
+							["g"] = {
+								i(174874),	-- Budget K'thir Disguise
+							},
+						}),
 					}),
 					n(-34, {	-- World Quests
-						--[[
-						putting coords temporarily since they don't appear on the map yet
-						]]--
 						q(57585, {	-- Abyssal Santuary
 							["lvl"] = 120,
 							["isWorldQuest"] = true,
@@ -477,6 +515,34 @@ _.ExpansionFeatures =
 							["g"] = {
 								i(173372),	-- Cache of the Black Empire
 							},
+						}),
+						--[[ this one is bugged on PTR. No floor to land on, so you disconnect after falling a short distance
+						q(, {	-- Consuming Maw
+							["lvl"] = 120,
+							["coord"] = { 46.8, 34.2, 1527 },
+							["isWorldQuest"] = true,
+						}),
+						]]
+						q(57541, {	-- Call of the Void
+							["lvl"] = 120,
+							["coord"] = { 65.9, 72.9, 1527 },
+							["isWorldQuest"] = true,
+						}),
+						q(57359, {	-- Call of the Void
+							["lvl"] = 120,
+							["isWorldQuest"] = true,
+						}),
+						q(57522, {	-- Call of the Void
+							["lvl"] = 120,
+							["isWorldQuest"] = true,
+						}),
+						q(57585, {	-- Call of the Void
+							["lvl"] = 120,
+							["isWorldQuest"] = true,
+						}),
+						q(57620, {	-- Call of the Void
+							["lvl"] = 120,
+							["isWorldQuest"] = true,
 						}),
 						q(58257, {	-- Consuming Maw
 							["lvl"] = 120,
@@ -526,10 +592,10 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-4,     {	-- Achievements
-				ach(14159),		-- Combating the Corruption -- TODO:: update with criteria when they get added
-				ach(14161),		-- Get In My Belly!	-- TODO:: update with map-specific criteria when they get added
+				ach(14159),		-- Combating the Corruption
+				ach(14161),		-- Get In My Belly!
 				ach(14158),		-- It's Not A Tumor!
-				ach(14160),		-- Rare to Well Done -- TODO:: update criteria when they get added
+				ach(14160),		-- Rare to Well Done
 				ach(14153, {	-- Uldum Under Assault
 					crit(1),	-- Assault: Amathet Advance
 					crit(2),	-- Assault: Aqir Unearthed
@@ -541,78 +607,6 @@ _.ExpansionFeatures =
 				}),
 				pet(2864, {	-- Void-Scarred Locust
 				}),
-			}),
-			n(-16,    {	-- Rares
-				--[[
-				TODO::
-				This section is temporary! Determine what assault these rares exist in and add them to the appropriate header above.
-				Coords are also rough approximations from a previous build and needs to be verified
-				]]--
-				n(157593, {	-- Amalgamation of Flesh
-					--["questID"] = ,
-					--["coord"] = { , 1527 },
-					["isDaily"] = true,
-					["g"] = {
-						i(174478),	-- Wicked Lurker (pet)
-					},
-				}),
-				n(162147, {	-- Corpse Eater
-					--["questID"] = ,
-					["isDaily"] = true,
-					["g"] = {
-						i(174769),	-- Malevolent Drone
-					},
-				}),
-				n(158632, {	-- Corrupted Protoplasm
-					--["questID"] = ,
-					["coord"] = { 61.0, 83.0, 1527 },
-					["isDaily"] = true,
-				}),
-				n(158531, {	-- Corrupted Neferset Guard
-					--["questID"] = ,
-					["coord"] = { 50.0, 82.0, 1527 },
-					["isDaily"] = true,
-				}),
-				n(158633, {	-- Gaze of N'Zoth
-					--["questID"] = ,
-					["coord"] = { 55.0, 53.0, 1527 },
-					["isDaily"] = true,
-					["g"] = {
-						-- TODO: verify which eye drops from which rare, or if both can drop from the same mob
-						i(175141, {	-- All-Seeing Left Eye
-							i(175140),	-- All-Seeing Eyes (toy)
-						}),
-						i(175142, {	-- All-Seeing Right Eye
-							i(175140),	-- All-Seeing Eyes (toy)
-						}),
-					},
-				}),
-				n(156002, {	-- Harbinger Raloam
-					--["questID"] = ,
-					["coord"] = { 35.0, 17.0, 1527 },
-					["isDaily"] = true,
-				}),
-				n(160623, {	-- Hungering Miasma
-					--["questID"] = ,
-					["coord"] = { 60.0, 39.0, 1527 },
-					["isDaily"] = true,
-				}),
-				n(158595, {	-- Thoughtstealer Vos
-					--["questID"] = ,
-					["coord"] = { 65.0, 73.0, 1527 },
-					["isDaily"] = true,
-				}),
-				n(160970, {	-- Vuk'laz the Earthbreaker
-					--["questID"] = ,
-					["coord"] = { 45.0, 16.0, 1527 },
-					["isDaily"] = true,
-				}),
-				n(157473, {	-- Yiphrim the Will Ravager
-					["g"] = {
-						i(174874),	-- Budget K'thir Disguise
-					},
-				}),
-				-- below are almost certainly the Aqir rares
 			}),
 			n(-38,    {	-- Professions
 				prof(356, {	-- Fishing
@@ -884,7 +878,7 @@ _.ExpansionFeatures =
 					["sourceQuest"] = 56209,	-- The Halls of Origination
 				}),
 				q(57874, {	-- Visions of a Dark Destiny
-					["u"] = 1,	-- removed from PTR build
+					["lvl"] = 120,
 					["coord"] = { 56.6, 31.7, 1527 },
 					["provider"] = { "n", 160252 },	-- Blacktalon Agent
 					["g"] = {
@@ -896,7 +890,7 @@ _.ExpansionFeatures =
 				n(162196, {	-- Obsidian Annihilator
 					-- TODO: need questID for this one
 					--["questID"] = ,
-					["coord"] = { 35.1, 17.3, 1527 },
+					["coord"] = { 35.1, 17.3, 249 },
 				}),
 			}),
 			n(-2,     {	-- Vendors
@@ -928,6 +922,12 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-34,    {	-- World Quests
+				q(58745, {	-- Watch Where You Step
+					-- pet battle
+					["lvl"] = 120,
+					["coord"] = { 57.6, 43.6, 1527 },
+					["isWorldQuest"] = true,
+				}),
 				q(58743, {	-- Dune Buggy
 					-- pet battle
 					["lvl"] = 120,
