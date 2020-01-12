@@ -1583,17 +1583,14 @@ local ItemFilterOnRefresh = function(self)
 	if settings:Get("AccountMode") or settings:Get("DebugMode") then
 		self:Disable();
 		self:SetAlpha(0.2);
-	elseif FilterSettingsBase.__index[self.filterID] then
+	else
 		self:SetChecked(settings:GetFilter(self.filterID));
 		self:Enable();
 		self:SetAlpha(1);
-	else
-		self:SetChecked(false);
-		self:Disable();
-		self:SetAlpha(0.2);
 	end
 end;
-for i,filterID in ipairs({ 4, 5, 6, 7 }) do
+local armorTypes = { 4, 5, 6, 7 }
+for i,filterID in ipairs(armorTypes) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
 	filter.filterID = filterID;
@@ -1603,7 +1600,8 @@ end
 
 -- Weapons
 yoffset = -4;
-for i,filterID in ipairs({ 20, 29, 28  }) do
+local smallWeaponTypes = { 20, 29, 28  }
+for i,filterID in ipairs(smallWeaponTypes) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
 	filter.filterID = filterID;
@@ -1613,7 +1611,8 @@ end
 
 -- Big Ole Boys
 yoffset = -4;
-for i,filterID in ipairs({ 21, 22, 23, 24, 25, 26, 1, 8 }) do
+local bigWeaponTypes = { 21, 22, 23, 24, 25, 26, 1, 8 }
+for i,filterID in ipairs(bigWeaponTypes) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
 	filter.filterID = filterID;
@@ -1623,7 +1622,8 @@ end
 
 -- Weird Boys
 yoffset = -4;
-for i,filterID in ipairs({ 50, 57, 34, 35, 27 }) do
+local miscWeaponTypes = { 50, 57, 34, 35, 27 }
+for i,filterID in ipairs(miscWeaponTypes) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
 	filter.filterID = filterID;
@@ -1633,7 +1633,8 @@ end
 
 -- Secondary Armor Classes
 last, xoffset, yoffset = ItemFiltersLabel, 120, -4;
-for i,filterID in ipairs({ 11, 2, 3, 10, 9, 33, 32, 31 }) do
+local miscWeaponTypes2 = { 11, 2, 3, 10, 9, 33, 32, 31 }
+for i,filterID in ipairs(miscWeaponTypes2) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", xoffset, yoffset);
 	filter.filterID = filterID;
@@ -1666,6 +1667,7 @@ end;
 table.insert(settings.MostRecentTab.objects, f);
 settings.classdefaults = f;
 
+local allEquipmentFilters = { 11, 2, 3, 10, 9, 33, 32, 31, 50, 57, 34, 35, 27, 21, 22, 23, 24, 25, 26, 1, 8, 4, 5, 6, 7, 20, 29, 28  }
 f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
 f:SetPoint("TOPLEFT", settings.classdefaults, "TOPRIGHT", 3, 0);
 f:SetText("All");
@@ -1674,29 +1676,38 @@ f:SetHeight(24);
 f:RegisterForClicks("AnyUp");
 f:SetScript("OnClick", function(self)
 	local active, count = 0, 0;
-	for key,value in pairs(FilterSettingsBase.__index) do
-		if value then
-			count = count + 1;
-			if AllTheThingsSettingsPerCharacter.Filters[key] then
-				active = active + 1;
-			end
-		end
+	for k,v in pairs(allEquipmentFilters) do
+		AllTheThingsSettingsPerCharacter.Filters[v] = true
 	end
-	if count > 0 then
-		if (active / count) > 0.5 then
-			for key,value in pairs(FilterSettingsBase.__index) do
-				if value then AllTheThingsSettingsPerCharacter.Filters[key] = false; end
-			end
-		else
-			for key,value in pairs(FilterSettingsBase.__index) do
-				if value then AllTheThingsSettingsPerCharacter.Filters[key] = true; end
-			end
-		end
-		settings:Refresh();
-		app:RefreshData();
-	end
+	settings:Refresh();
+	app:RefreshData();
 end);
-f:SetATTTooltip("Click this button to toggle all of the filters at once.");
+f:SetATTTooltip("Click this button to enable all equipment filters at once.");
+f.OnRefresh = function(self) 
+	if settings:Get("AccountMode") or settings:Get("DebugMode") then
+		self:Disable();
+	else
+		self:Enable();
+	end
+end;
+table.insert(settings.MostRecentTab.objects, f);
+settings.equipfilterall = f
+
+f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
+f:SetPoint("TOPLEFT", settings.equipfilterall, "TOPRIGHT", 3, 0);
+f:SetText("Uncheck All");
+f:SetWidth(100);
+f:SetHeight(24);
+f:RegisterForClicks("AnyUp");
+f:SetScript("OnClick", function(self)
+	local active, count = 0, 0;
+	for k,v in pairs(allEquipmentFilters) do
+		AllTheThingsSettingsPerCharacter.Filters[v] = false
+	end
+	settings:Refresh();
+	app:RefreshData();
+end);
+f:SetATTTooltip("Click this button to disable all equipment filters at once.");
 f.OnRefresh = function(self) 
 	if settings:Get("AccountMode") or settings:Get("DebugMode") then
 		self:Disable();
