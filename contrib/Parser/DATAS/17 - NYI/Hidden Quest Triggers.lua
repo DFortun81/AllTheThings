@@ -1475,7 +1475,7 @@ _.NeverImplemented =
 		q(53001),	-- The Lion's Roar Kill ID
 		q(52274),	-- The Lion's Roar Bonus Roll
 		q(56058),	-- Ulmath, the Soulbinder Kill ID
-					-- Ulmath, the Soulbinder Bonus Roll
+		q(56900),	-- Ulmath, the Soulbinder Bonus Roll
 		q(52995),	-- Warbringer Yenajz Kill ID
 					-- Warbringer Yenajz Bonus Roll
 		q(56055),	-- Wekemara Kill ID
