@@ -233,8 +233,8 @@ _.Achievements =
 						--	["u"] = 4, S3
 							["g"] = {
 								title(30),	-- Duelist <Name>
-								--[[ Note!! Currently we can not list this due to having no item.
-								Illusion: Dreadflame // Dreadflame Illusion --]]
+								-- Note!! Currently we can not list this due to having no item.
+								-- Illusion: Dreadflame // Dreadflame Illusion 
 								i(172671, {	-- Corrupted Gladiator's Cloak (A)
 								--	["u"] = 2, S3
 								}),
