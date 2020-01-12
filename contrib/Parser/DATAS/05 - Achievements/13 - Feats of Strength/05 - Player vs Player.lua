@@ -216,76 +216,76 @@ _.Achievements =
 							},
 						}),
 					}),
-					n(-691, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
-						ach(13634, {	-- Challenger: Battle for Azeroth Season 4
+				--[[	n(-691, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
+						ach(13959, {	-- Challenger: Battle for Azeroth Season 4
 						--	["u"] = 4, S3
 							["g"] = {
 								title(32),	-- Challenger <Name>
 							},
 						}),
-						ach(13639, {	-- Combatant: Battle for Azeroth Season 4
+						ach(13962, {	-- Combatant: Battle for Azeroth Season 4
 						--	["u"] = 4, S3
 							["g"] = {
 								title(78),	-- Combatant <Name>
 							},
 						}),
-						ach(13642, {	-- Duelist: Battle for Azeroth Season 4
+						ach(13964, {	-- Duelist: Battle for Azeroth Season 4
 						--	["u"] = 4, S3
 							["g"] = {
 								title(30),	-- Duelist <Name>
 								--[[ Note!! Currently we can not list this due to having no item.
 								Illusion: Dreadflame // Dreadflame Illusion --]]
-								i(167382, {	-- Corrupted Gladiator's Cloak (A)
+								i(172671, {	-- Corrupted Gladiator's Cloak (A)
 								--	["u"] = 2, S3
 								}),
-								i(167381, {	-- Corrupted Gladiator's Cloak (H)
+								i(172670, {	-- Corrupted Gladiator's Cloak (H)
 								--	["u"] = 2, S3
 								}),
 							},
 						}),
-						ach(13676, {	-- Elite: Battle for Azeroth Season 4
+						ach(13989, {	-- Elite: Battle for Azeroth Season 4
 						--	["u"] = 4, S3
 							["g"] = {
-								i(167363, {	-- Corrupted Gladiator's Tabard (A)
+								i(172652, {	-- Corrupted Gladiator's Tabard (A)
 								--	["u"] = 2, S3
 								}),
-								i(167362, {	-- Corrupted Gladiator's Tabard (H)
+								i(172651, {	-- Corrupted Gladiator's Tabard (H)
 								--	["u"] = 2, S3
 								}),
 							},
 						}),
-						ach(13647, {	-- Gladiator: Battle for Azeroth Season 4
+						ach(13967, {	-- Gladiator: Battle for Azeroth Season 4
 						--	["u"] = 4, S3
 							["g"] = {
 								title(29),	-- Gladiator <Name>
-								i(156881, {	-- Corrupted Gladiator's Proto-Drake
+								i(156884, {	-- Corrupted Gladiator's Proto-Drake
 								--	["u"] = 2, S3
 								}),
 							},
 						}),
-						ach(13643, {	-- Hero of the Alliance: Corrupted
+						ach(13966, {	-- Hero of the Alliance: Corrupted
 							["races"] = ALLIANCE_ONLY,
 						--	["u"] = 4, S3
 						}),
-						ach(13644, {	-- Hero of the Horde: Corrupted
+						ach(13965, {	-- Hero of the Horde: Corrupted
 							["races"] = HORDE_ONLY,
 						--	["u"] = 4, S3
 						}),
-						ach(13641, {	-- Rival: Battle for Azeroth Season 4
+						ach(13963, {	-- Rival: Battle for Azeroth Season 4
 						--	["u"] = 4, S3
 							["g"] = {
 								title(31),	-- Rival <Name>
 							},
 						}),
-						ach(13630, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
+						ach(13957, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
 						--	["u"] = 4, S3
 							["g"] = {
-								title(402, {	-- Corrupted Gladiator <Name>
+								title(665, {	-- Corrupted Gladiator <Name>
 								--	["u"] = 37, S3
 								}),
 							},
 						}),
-					}),
+					}),--]]
 					un(2, ach(420)),		-- Brutal Gladiator
 					un(2, ach(6938)),		-- Cataclysmic Gladiator
 					un(2, ach(11017)),		-- Challenger: Legion Season 1
