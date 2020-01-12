@@ -875,7 +875,9 @@ _.WorldEvents =
 								}),
 								n(34564, {	-- Anub'arak — WoW Anniversary only
 									["g"] = bubbleDown({ ["u"] = 31 }, {	-- WoW Anniversary
-										i(171615),	-- Aegis of the Coliseum
+										i(171615, {	-- Aegis of the Coliseum
+											["races"] = HORDE_ONLY,
+										}),
 										i(171616, {	-- Anguish
 											["races"] = HORDE_ONLY,
 										}),
@@ -888,62 +890,120 @@ _.WorldEvents =
 										i(171583, {	-- Argent Resolve
 											["races"] = ALLIANCE_ONLY,
 										}),
-										i(171525),	-- Armbands of Dark Determination
-										i(171557),	-- Armbands of the Ashen Saint
-										i(171581),	-- Baelgun's Heavy Crossbow
-										i(171548),	-- Belt of Deathly Dominion
+										i(171525, {	-- Armbands of Dark Determination
+											["races"] = HORDE_ONLY,
+										}),
+										i(171557, {	-- Armbands of the Ashen Saint
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171581, {	-- Baelgun's Heavy Crossbow
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171548, {	-- Belt of Deathly Dominion
+											["races"] = ALLIANCE_ONLY,
+										}),
 										i(171614, {	-- Belt of the Eternal
 											["races"] = HORDE_ONLY,
 										}),
-										i(171556),	-- Belt of the Forgotten Martyr
-										i(171536),	-- Bindings of the Ashen Saint
+										i(171556, {	-- Belt of the Forgotten Martyr
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171536, {	-- Bindings of the Ashen Saint
+											["races"] = HORDE_ONLY,
+										}),
 										i(171610, {	-- Blackhorn Bludgeon
 											["races"] = HORDE_ONLY,
 										}),
-										i(171533),	-- Boots of the Icy Floe
-										i(171547),	-- Bracers of Dark Determination
-										i(171529),	-- Breeches of the Deepening Void
-										i(171595),	-- Bulwark of the Royal Guard
-										i(171558),	-- Chestguard of Flowing Elements
-										i(171585),	-- Chestguard of the Warden
+										i(171533, {	-- Boots of the Icy Floe
+											["races"] = HORDE_ONLY,
+										}),
+										i(171547, {	-- Bracers of Dark Determination
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171529, {	-- Breeches of the Deepening Void
+											["races"] = HORDE_ONLY,
+										}),
+										i(171595, {	-- Bulwark of the Royal Guard
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171558, {	-- Chestguard of Flowing Elements
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171585, {	-- Chestguard of the Warden
+											["races"] = ALLIANCE_ONLY,
+										}),
 										i(171597, {	-- Cinch of the Undying
 											["races"] = ALLIANCE_ONLY,
 										}),
 										i(171589, {	-- Cold Convergence
 											["races"] = ALLIANCE_ONLY,
 										}),
-										i(171584),	-- Crusader's Glory
-										i(171537),	-- Cuirass of Flowing Elements
+										i(171584, {	-- Crusader's Glory
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171537, {	-- Cuirass of Flowing Elements
+											["races"] = HORDE_ONLY,
+										}),
 										i(171612, {	-- Darkmaw Crossbow
 											["races"] = HORDE_ONLY,
 										}),
-										i(171555),	-- Footpads of the Icy Floe
-										i(171594),	-- Fordragon Blades
+										i(171555, {	-- Footpads of the Icy Floe
+											["races"] = HORDE_ONLY,
+										}),
+										i(171594, {	-- Fordragon Blades
+											["races"] = ALLIANCE_ONLY,
+										}),
 										i(171608, {	-- Forsaken Bonecarver
 											["races"] = HORDE_ONLY,
 										}),
-										i(171603),	-- Frostblade Hatchet
-										i(171542),	-- Gauntlets of Bitter Reprisal
-										i(171535),	-- Girdle of the Forgotten Martyr
-										i(171561),	-- Gloves of Bitter Reprisal
-										i(171562),	-- Gloves of the Lifeless Touch
-										i(171546),	-- Greaves of the 7th Legion
-										i(171524),	-- Greaves of the Saronite Citadel
-										i(171538),	-- Handwraps of the Lifeless Touch
+										i(171603, {	-- Frostblade Hatchet
+											["races"] = HORDE_ONLY,
+										}),
+										i(171542, {	-- Gauntlets of Bitter Reprisal
+											["races"] = HORDE_ONLY,
+										}),
+										i(171535, {	-- Girdle of the Forgotten Martyr
+											["races"] = HORDE_ONLY,
+										}),
+										i(171561, {	-- Gloves of Bitter Reprisal
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171562, {	-- Gloves of the Lifeless Touch
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171546, {	-- Greaves of the 7th Legion
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171524, {	-- Greaves of the Saronite Citadel
+											["races"] = HORDE_ONLY,
+										}),
+										i(171538, {	-- Handwraps of the Lifeless Touch
+											["races"] = HORDE_ONLY,
+										}),
 										i(171541, {	-- Hellion Glaive
 											["races"] = HORDE_ONLY,
 										}),
 										i(171526, {	-- Hellscream Slicer
 											["races"] = HORDE_ONLY,
 										}),
-										i(171587),	-- Helmet of the Crypt Lord
+										i(171587, {	-- Helmet of the Crypt Lord
+											["races"] = ALLIANCE_ONLY,
+										}),
 										i(171602, {	-- Helm of the Crypt Lord
 											["races"] = HORDE_ONLY,
 										}),
-										i(171530),	-- Leggings of the Awakening
-										i(171553),	-- Leggings of the Deepening Void
-										i(171531),	-- Leggings of the Lurking Threat
-										i(171551),	-- Legguards of the Lurking Threat
+										i(171530, {	-- Leggings of the Awakening
+											["races"] = HORDE_ONLY,
+										}),
+										i(171553, {	-- Leggings of the Deepening Void
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171531, {	-- Leggings of the Lurking Threat
+											["races"] = HORDE_ONLY,
+										}),
+										i(171551, {	-- Legguards of the Lurking Threat
+											["races"] = ALLIANCE_ONLY,
+										}),
 										i(171607, {	--  Legplates of Redeemed Blood
 											["races"] = HORDE_ONLY,
 										}),
@@ -953,21 +1013,33 @@ _.WorldEvents =
 										i(171592, {	-- Legplates of the Silver Hand
 											["races"] = ALLIANCE_ONLY,
 										}),
-										i(171552),	-- Legwraps of the Awakening
-										i(171599),	-- Mace of the Earthborn Chieftain
+										i(171552, {	-- Legwraps of the Awakening
+											["races"] = HORDE_ONLY,
+										}),
+										i(171599, {	-- Mace of the Earthborn Chieftain
+											["races"] = HORDE_ONLY,
+										}),
 										i(171540, {	-- Maiden's Adoration
 											["races"] = HORDE_ONLY,
 										}),
 										i(171559, {	-- Maiden's Favor
 											["races"] = ALLIANCE_ONLY,
 										}),
-										i(171532),	-- Might of the Nerub
+										i(171532, {	-- Might of the Nerub
+											["races"] = HORDE_ONLY,
+										}),
 										i(171554, {	-- Misery's End
 											["races"] = ALLIANCE_ONLY,
 										}),
-										i(171606),	-- Pauldrons of the Shadow Hunter
-										i(171591),	-- Pauldrons of the Timeless Hunter
-										i(171605),	-- Perdition
+										i(171606, {	-- Pauldrons of the Shadow Hunter
+											["races"] = HORDE_ONLY,
+										}),
+										i(171591, {	-- Pauldrons of the Timeless Hunter
+											["races"] = ALLIANCE_ONLY,
+										}),
+										i(171605, {	-- Perdition
+											["races"] = HORDE_ONLY,
+										}),
 										i(171600, {	-- Pride of the Kor'kron
 											["races"] = HORDE_ONLY,
 										}),
