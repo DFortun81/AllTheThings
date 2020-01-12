@@ -201,18 +201,18 @@ _.Achievements =
 							["races"] = HORDE_ONLY,
 							["u"] = 4, 
 						}),
-						ach(13641, {	-- Rival: Battle for Azeroth Season 3
-							["u"] = 4, 
-							["g"] = {
-								title(31),	-- Rival <Name>
-							},
-						}),
 						ach(13630, {	-- Notorious Gladiator: Battle for Azeroth Season 3
 							["u"] = 4, 
 							["g"] = {
 								title(402, {	-- Notorious Gladiator <Name>
 									["u"] = 37, 
 								}),
+							},
+						}),
+						ach(13641, {	-- Rival: Battle for Azeroth Season 3
+							["u"] = 4, 
+							["g"] = {
+								title(31),	-- Rival <Name>
 							},
 						}),
 					}),

@@ -4,13 +4,13 @@
 _.GearSets = 
 {
 	n(-5350, {	-- Class Trial Item Sets
-		n(-154, {	-- Level 110
+		n(-155, {	-- Level 120
 			["groups"] = {
 				n(-148, {	-- Streamtalker [Shaman]
 					["classes"] = { 7 },
 					["groups"] = {
 						{	-- Adventurer's Footlocker
-							["itemID"] = 160439,	-- Adventurer's Footlocker
+							["itemID"] = 171988,	-- Adventurer's Footlocker
 							["g"] = {
 								{	-- Streamtalker Aegis [Elemental]
 									["itemID"] = 153979,	-- Streamtalker Aegis
@@ -23,153 +23,152 @@ _.GearSets =
 								},
 							},
 						},
-						{	-- Streamtalker Slicers [Restoration]
-							["itemID"] = 153999,	-- Streamtalker Slicers
-							["u"] = 2,	-- Only available if you boosted a Restoration Shaman.
+						{	-- Restoration Shaman
+							["npcID"] = -9941,	-- Restoration Shaman
+							["g"] = {
+								{	-- Streamtalker Shield [Restoration]
+									["itemID"] = 170735,	-- Streamtalker Shield
+								},
+								{	-- Streamtalker Cowl [Restoration]
+									["itemID"] = 170898,	-- Streamtalker Cowl
+								},
+								{	-- Streamtalker Necklace [Restoration]
+									["itemID"] = 170728,	-- Streamtalker Necklace
+									["u"] = 1,	-- 
+								},
+								{	-- Streamtalker Bracers [Restoration]
+									["itemID"] = 170902,	-- Streamtalker Bracers
+								},
+								{	-- Streamtalker Vest [Restoration]
+									["itemID"] = 170895,	-- Streamtalt
+								},
+								{	-- Streamtalker Cloak of Wisdom [Restoration]
+									["itemID"] = 170727,	-- Streamtalker Cloak of Wisdom
+								},
+								{	-- Streamtalker Spaulders [Restoration]
+									["itemID"] = 170900,	-- Streamtalker Spaulders
+								},
+								{	-- Streamtalker Sabatons [Restoration]
+									["itemID"] = 170896,	-- Streamtalker Sabatons
+								},
+								{	-- Streamtalker Leggings [Restoration]
+									["itemID"] = 170899,	-- Streamtalker Leggings
+								},
+								{	-- Streamtalker Girdle [Restoration]
+									["itemID"] = 170901,	-- Streamtalker Girdle
+								},
+								{	-- Streamtalker Grips [Restoration]
+									["itemID"] = 170897,	-- Streamtalker Grips
+								},
+								{	-- Streamtalker Stone of Wisdom [Restoration]
+									["itemID"] = 170732,	-- Streamtalker Stone of Wisdom
+								},
+								{	-- Streamtalker Ring of Wisdom [Re,oration]
+									["itemID"] = 170730,	-- Streamtalker Ring of Wisdom
+								},
+								{	-- Streamtalker Idol of Wisdom [Restoration]
+									["itemID"] = 170729,	-- Streamtalker Idol of Wisdom
+								},
+								{	-- Streamtalker Band of Wisdom [Restoration]
+									["itemID"] = 170731,	-- Streamtalker Band of Wisdom
+								},
+							},
 						},
-						{	-- Streamtalker Shield [Restoration]
-							["itemID"] = 154005,	-- Streamtalker Shield
-							["u"] = 2,	-- Only available if you boosted a Restoration Shaman.
+						{	-- Elemental Shaman
+							["npcID"] = -9939,	-- Elemental Shaman
+							["g"] = {
+								{	-- Streamtalker Coif [Elemental]
+									["itemID"] = 170882,	-- Streamtalker Coif
+								},
+								{	-- Streamtalker Medallion [Elemental]
+									["itemID"] = 170719,	-- Streamtalker Medallion
+									["u"] = 1,	--
+								},
+								{	-- Streamtalker Pauldrons [Elemental]
+									["itemID"] = 170884,	-- Streamtalker Pauldrons
+								},
+								{	-- Streamtalker Cloak of Destruction [Elemental]
+									["itemID"] = 170733,	-- Streamtalker Cloak of Destruction
+								},
+								{	-- Streamtalker Tunic [Elemental]
+									["itemID"] = 170879,	-- Streamtalker Tunic
+								},
+								{	-- Streamtalker Armbands [Elemental]
+									["itemID"] = 170886,	-- Streamtalker Armbands
+								},
+								{	-- Streamtalker Gloves [Elemental]
+									["itemID"] = 170881,	-- Streamtalker Gloves
+								},
+								{	-- Streamtalker Belt [Elemental]
+									["itemID"] = 170885,	-- Streamtalker Belt
+								},
+								{	-- Streamtalker Legwraps [Elemental]
+									["itemID"] = 170883,	-- Streamtalker Legwraps
+								},
+								{	-- Streamtalker Boots [Elemental]
+									["itemID"] = 170880,	-- Streamtalker Boots
+								},
+								{	-- Streamtalker Band of Destruction [Elemental]
+									["itemID"] = 170722,	-- Streamtalker Band of Destruction
+								},
+								{	-- Streamtalker Idol of Destruction [Elemental]
+									["itemID"] = 170720,	-- Streamtalker Idol of Destruction
+								},
+								{	-- Streamtalker Ring of Destruction [Elemental]
+									["itemID"] = 170721,	-- Streamtalker Ring of Destruction
+								},
+								{	-- Streamtalker Stone of Destruction [Elemental]
+									["itemID"] = 170732,	-- Streamtalker Stone of Destruction
+								},
+							},
 						},
-						{	-- Streamtalker Coif [Elemental]
-							["itemID"] = 153977,	-- Streamtalker Coif
-						},
-						{	-- Streamtalker Cowl [Restoration]
-							["itemID"] = 154003,	-- Streamtalker Cowl
-							["u"] = 2,	-- Only available if you boosted a Restoration Shaman.
-						},
-						{	-- Streamtalker Helm [Enhancement]
-							["itemID"] = 153987,	-- Streamtalker Helm	
-						},
-						{	-- Streamtalker Choker [Enhancement]
-							["itemID"] = 153963,	-- Streamtalker Choker	
-						},
-						{	-- Streamtalker Medallion [Elemental]
-							["itemID"] = 153968,	-- Streamtalker Medallion
-						},
-						{	-- Streamtalker Necklace [Restoration]
-							["itemID"] = 153993,	-- Streamtalker Necklace
-							["u"] = 2,	-- Only available if you boosted a Restoration Shaman.
-						},
-						{	-- Streamtalker Pauldrons [Elemental]
-							["itemID"] = 153980,	-- Streamtalker Pauldrons
-						},
-						{	-- Streamtalker Shoulderguards [Enhancement]
-							["itemID"] = 153989,	-- Streamtalker Shoulderguards	
-						},
-						{	-- Streamtalker Spaulders [Restoration]
-							["itemID"] = 154006,	-- Streamtalker Spaulders
-							["u"] = 2,	-- Only available if you boosted a Restoration Shaman.
-						},
-						{	-- Streamtalker Cloak of Destruction [Elemental]
-							["itemID"] = 153998,	-- Streamtalker Cloak of Destruction
-						},
-						{	-- Streamtalker Cloak of Rage [Enhancement]
-							["itemID"] = 153962,	-- Streamtalker Cloak of Rage	
-						},
-						{	-- Streamtalker Cloak of Wisdom [Restoration]
-							["itemID"] = 153992,	-- Streamtalker Cloak of Wisdom
-							["u"] = 2,	-- Only available if you boosted a Restoration Shaman.
-						},
-						{	-- Streamtalker Chestguard [Enhancement]
-							["itemID"] = 153984,	-- Streamtalker Chestguard	
-						},
-						{	-- Streamtalker Tunic [Elemental]
-							["itemID"] = 153974,	-- Streamtalker Tunic
-						},
-						{	-- Streamtalker Vest [Restoration]
-							["itemID"] = 154000,	-- Streamtalker Vest
-							["u"] = 2,	-- Only available if you boosted a Restoration Shaman.
-						},
-						{	-- Streamtalker Armbands [Elemental]
-							["itemID"] = 153982,	-- Streamtalker Armbands
-						},
-						{	-- Streamtalker Armguard [Enhancement]
-							["itemID"] = 153991,	-- Streamtalker Armguard	
-						},
-						{	-- Streamtalker Bracers [Restoration]
-							["itemID"] = 154008,	-- Streamtalker Bracers
-							["u"] = 2,	-- Only available if you boosted a Restoration Shaman.
-						},
-						{	-- Streamtalker Gloves [Elemental]
-							["itemID"] = 153976,	-- Streamtalker Gloves
-						},
-						{	-- Streamtalker Grips [Restoration]
-							["itemID"] = 154002,	-- Streamtalker Grips
-							["u"] = 2,	-- Only available if you boosted a Restoration Shaman.
-						},
-						{	-- Streamtalker Handguards [Enhancement]
-							["itemID"] = 153986,	-- Streamtalker Handguards	
-						},
-						{	-- Streamtalker Belt [Elemental]
-							["itemID"] = 153981,	-- Streamtalker Belt
-						},
-						{	-- Streamtalker Girdle [Restoration]
-							["itemID"] = 154007,	-- Streamtalker Girdle
-							["u"] = 2,	-- Only available if you boosted a Restoration Shaman.
-						},
-						{	-- Streamtalker Waistguard [Enhancement]
-							["itemID"] = 153990,	-- Streamtalker Waistguard	
-						},
-						{	-- Streamtalker Leggings [Restoration]
-							["itemID"] = 154004,	-- Streamtalker Leggings
-							["u"] = 2,	-- Only available if you boosted a Restoration Shaman.
-						},
-						{	-- Streamtalker Legguards [Enhancement]
-							["itemID"] = 153988,	-- Streamtalker Legguards	
-						},
-						{	-- Streamtalker Legwraps [Elemental]
-							["itemID"] = 153978,	-- Streamtalker Legwraps
-						},
-						{	-- Streamtalker Boots [Elemental]
-							["itemID"] = 153975,	-- Streamtalker Boots
-						},
-						{	-- Streamtalker Greaves [Enhancement]
-							["itemID"] = 153985,	-- Streamtalker Greaves	
-						},
-						{	-- Streamtalker Sabatons [Restoration]
-							["itemID"] = 154001,	-- Streamtalker Sabatons
-							["u"] = 2,	-- Only available if you boosted a Restoration Shaman.
-						},
-						{	-- Streamtalker Band of Destruction [Elemental]
-							["itemID"] = 153971,	-- Streamtalker Band of Destruction
-						},
-						{	-- Streamtalker Band of Onslaught [Enhancement]
-							["itemID"] = 153965,	-- Streamtalker Band of Onslaught
-						},
-						{	-- Streamtalker Band of Wisdom [Restoration]
-							["itemID"] = 153996,	-- Streamtalker Band of Wisdom
-							["u"] = 2,	-- Only available if you boosted a Restoration Shaman.
-						},
-						{	-- Streamtalker Idol of Rage [Enhancement]
-							["itemID"] = 153964,	-- Streamtalker Idol of Rage
-						},
-						{	-- Streamtalker Idol of Destruction [Elemental]
-							["itemID"] = 153969,	-- Streamtalker Idol of Destruction
-						},
-						{	-- Streamtalker Idol of Wisdom [Restoration]
-							["itemID"] = 153994,	-- Streamtalker Idol of Wisdom
-							["u"] = 2,	-- Only available if you boosted a Restoration Shaman.
-						},
-						{	-- Streamtalker Ring of Destruction [Elemental]
-							["itemID"] = 153970,	-- Streamtalker Ring of Destruction
-						},
-						{	-- Streamtalker Ring of Onslaught [Enhancement]
-							["itemID"] = 153966,	-- Streamtalker Ring of Onslaught
-						},
-						{	-- Streamtalker Ring of Wisdom [Restoration]
-							["itemID"] = 153995,	-- Streamtalker Ring of Wisdom
-							["u"] = 2,	-- Only available if you boosted a Restoration Shaman.
-						},
-						{	-- Streamtalker Stone of Destruction [Elemental]
-							["itemID"] = 153972,	-- Streamtalker Stone of Destruction
-						},
-						{	-- Streamtalker Stone of Rage [Enhancement]
-							["itemID"] = 153967,	-- Streamtalker Stone of Rage
-						},
-						{	-- Streamtalker Stone of Wisdom [Restoration]
-							["itemID"] = 153997,	-- Streamtalker Stone of Wisdom
-							["u"] = 2,	-- Only available if you boosted a Restoration Shaman.
+						{	-- Enhancement Shaman
+							["npcID"] = -9940,	-- Enhancement Shaman
+							["g"] = {
+								{	-- Streamtalker Helm [Enhancement]
+									["itemID"] = 170890,	-- Streamtalker Helm	
+								},
+								{	-- Streamtalker Choker [Enhancement]
+									["itemID"] = 170714,	-- Streamtalker Choker	
+									["u"] = 1,	--
+								},
+								{	-- Streamtalker Armguard [Enhancement]
+									["itemID"] = 170894,	-- Streamtalker Armguard	
+								},
+								{	-- Streamtalker Chestguard [Enhancement]
+									["itemID"] = 170887,	-- Streamtalker Chestguard	
+								},
+								{	-- Streamtalker Cloak of Rage [Enhancement]
+									["itemID"] = 170713,	-- Streamtalker Cloak of Rage	
+								},
+								{	-- Streamtalker Shoulderguards [Enhancement]
+									["itemID"] = 170892,	-- Streamtalker Shoulderguards	
+								},
+								{	-- Streamtalker Greaves [Enhancement]
+									["itemID"] = 170888,	-- Streamtalker Greaves	
+								},
+								{	-- Streamtalker Waistguard [Enhancement]
+									["itemID"] = 170893,	-- Streamtalker Wais
+								},
+								{	-- Streamtalker Legguards [Enhancement]
+									["itemID"] = 170891,	-- Streamtalker Legguards	
+								},
+								{	-- Streamtalker Handguards [Enhancement]
+									["itemID"] = 170889,	-- Streamtalker Handguards	
+								},
+								{	-- Streamtalker Stone of Rage [Enhancement]
+									["itemID"] = 170718,	-- Streamtalker Stone of Rage
+								},
+								{	-- Streamtalker Ring of Onslaught [Enhancement]
+									["itemID"] = 170717,	-- Streamtalker Ring of Onslaught
+								},
+								{	-- Streamtalker Band of Onslaught [Enhancement]
+									["itemID"] = 170716,	-- Streamtalker Band of Onslaught
+								},
+								{	-- Streamtalker Idol of Rage [Enhancement]
+									["itemID"] = 170715,	-- Streamtalker Idol of Rage
+								},
+							},
 						},
 					},
 				}),	
