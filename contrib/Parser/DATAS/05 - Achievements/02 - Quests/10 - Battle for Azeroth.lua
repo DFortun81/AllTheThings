@@ -150,14 +150,32 @@ _.Achievements =
 						i(163776),		--	Large Honeycomb Cluster (Bumbles)
 					})),
 					ach(13048, {	-- Life Finds a Way... To Die!
-						crit(1),		-- Thuderfoot the Brutosaur slain
-						crit(2),		-- Azuresail the Diemetrodon slain
-						crit(3),		-- Queenfeather the Ravasaur slain
-						crit(4),		-- Makatau the Pterrordax slain
-						crit(5),		-- The Sabertusk Empress slain
-						crit(6),		-- Sludgecrusher the Anklyodon slain
-						crit(7),		-- Nol'ixwan the Direhorn slain
-						crit(8),		-- King K'tal the Devilsaur slain
+						crit(1, {		-- Thuderfoot the Brutosaur slain
+							["coord"] = { 67.73, 29.03, 862 },	-- Zuldazar
+							["description"] = "This rare shares respawn with Azuresail (67.10 26.57) and Kil'Tawan (69.2 30.4) so kill them if you need it. To make things worse they don't spawn every day.",
+						}),
+						crit(2, {		-- Azuresail the Diemetrodon slain
+							["coord"] = { 67.10, 26.57, 862 },	-- Zuldazar
+							["description"] = "This rare shares respawn with Thuderfoot (67.73 29.03) and Kil'Tawan (69.2 30.4) so kill them if you need it. To make things worse they don't spawn every day.",
+						}),
+						crit(3, {		-- Queenfeather the Ravasaur slain
+							["coord"] = { 71.13, 40.34, 862 },	-- Zuldazar
+						}),
+						crit(4, {		-- Makatau the Pterrordax slain
+							["coord"] = { 26.31, 73.37, 863 },	-- Nazmir
+						}),
+						crit(5, {		-- The Sabertusk Empress slain
+							["coord"] = { 52.39, 47.71, 862 },	-- Zuldazar
+						}),
+						crit(6, {		-- Sludgecrusher the Anklyodon slain
+							["coord"] = { 66.08, 22.38, 862 },	-- Zuldazar
+						}),
+						crit(7, {		-- Nol'ixwan the Direhorn slain
+							["coord"] = { 61.62, 25.37, 862 },	-- Zuldazar
+						}),
+						crit(8, {		-- King K'tal the Devilsaur slain
+							["coord"] = { 71.24, 21.84, 862 },	-- Zuldazar
+						}),
 					}),
 					h(ach(12614, {	-- Loa Expectations
 						crit(1),		-- Boon of Gonk
