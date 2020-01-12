@@ -13,10 +13,10 @@ _.GearSets =
 							["itemID"] = 171988,	-- Adventurer's Footlocker
 							["g"] = {
 								{	-- Mistdancer Spire
-									["itemID"] = 153835,	-- Mistdancer Spire
+									["itemID"] = 170651,	-- Mistdancer Spire
 								},
 								{	-- Mistdancer Staff
-									["itemID"] = 153856,	-- Mistdancer Staff
+									["itemID"] = 170659,	-- Mistdancer Staff
 								},
 							},
 						},

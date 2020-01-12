@@ -13,13 +13,13 @@ _.GearSets =
 							["itemID"] = 171988,	-- Adventurer's Footlocker
 							["g"] = {
 								{	-- Streamtalker Aegis [Elemental]
-									["itemID"] = 153979,	-- Streamtalker Aegis
+									["itemID"] = 170725,	-- Streamtalker Aegis
 								},
 								{	-- Streamtalker Claws [Elemental]
-									["itemID"] = 153973,	-- Streamtalker Claws
+									["itemID"] = 170724,	-- Streamtalker Claws
 								},
 								{	-- Streamtalker Talons [Enhancement]
-									["itemID"] = 153983,	-- Streamtalker Talons
+									["itemID"] = 170726,	-- Streamtalker Talons
 								},
 							},
 						},
