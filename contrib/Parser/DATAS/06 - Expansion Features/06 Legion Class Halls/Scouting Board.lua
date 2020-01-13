@@ -210,7 +210,7 @@ _.ExpansionFeatures =
 					i(146945),	-- Wardens Insignia
 					--
 					un(2, i(140712)),	-- Ancient Nightborne Tome -> The Nighthold: Elisande -> The Nighthold: Elisande
-					un(2, i(143328)),	-- Battle Report -> To Battle! -> Any Battleground
+					--un(2, i(143328)),	-- Battle Report -> To Battle! -> Any Battleground
 					un(2, i(139471)),	-- Black Rook Missive -> Black Rook Hold: The Lord of Black Rook Hold -> Black Rook Hold
 					un(2, i(139476)),	-- Broken Dragon Scale -> Neltharion's Lair: Into Neltharion's Lair -> Neltharion's Lair
 					un(2, i(139479)),	-- Broken Portal Shard -> Assault on Violet Hold: Into the Violet Hold -> Violet Hold
@@ -224,14 +224,14 @@ _.ExpansionFeatures =
 					un(2, i(142340)),	-- Head of Thar'zul -> Return to Karazhan: The Tower of Power -> Karazhan
 					un(2, i(139457)),	-- Odyn's Challenge -> Halls of Valor: Odyn's Challenge -> Halls of Valor
 					un(2, i(140147)),	-- Pulsauron Bindings -> The Nighthold: Vaults -> The Nighthold: Trilliax
-					un(2, i(147509)),	-- Seal of the Deceiver -> Tomb of Sargeras: The Deceiver -> Tomb of Sargeras: Kil'jaeden
+					--un(2, i(147509)),	-- Seal of the Deceiver -> Tomb of Sargeras: The Deceiver -> Tomb of Sargeras: Kil'jaeden
 					un(2, i(140177)),	-- Shred of Tattered Robe -> The Nighthold: Gul'dan -> The Nighthold: Gul'dan
 					un(2, i(140163)),	-- Tainted Moonglade Leaf -> The Emerald Nightmare: Fall of Cenarius -> Emerald Nightmare: Cenarius
 					un(2, i(139473)),	-- Vial of Poisoned Blood -> Darkheart Thicket: Into Darkheart Thicket -> Darkheart Thicket
 					un(2, i(140164)),	-- Vial of Swirling Shadow -> The Emerald Nightmare: Xavius -> Emerald Nightmare: Xavius
-					un(2, i(147505)),	-- Wailing Soul -> Tomb of Sargeras: The Fallen Avatar -> Tomb of Sargeras: Fallen Avatar
+					--un(2, i(147505)),	-- Wailing Soul -> Tomb of Sargeras: The Fallen Avatar -> Tomb of Sargeras: Fallen Avatar
 					un(2, i(139475)),	-- Waterlogged Letter -> Maw of Souls: Into the Maw of Souls -> Maw of Souls
-					un(2, i(147501)),	-- Worshipper's Scrawlings -> Tomb of Sargeras: Free The Tormented -> Tomb of Sargeras: Desolate Host
+					--un(2, i(147501)),	-- Worshipper's Scrawlings -> Tomb of Sargeras: Free The Tormented -> Tomb of Sargeras: Desolate Host
 				},
 			}),
 		},
