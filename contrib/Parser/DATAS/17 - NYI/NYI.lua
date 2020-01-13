@@ -1429,6 +1429,10 @@ _.NeverImplemented =
 			un(1, i(109453)),	-- 7.0 QA Combat Test Cloak 2
 			un(1, i(109496)),	-- 7.0 QA Combat Test Cloak 4
 			un(1, i(109538)),	-- 7.0 QA Combat Test Cloak 3
+			un(1, i(163344)),	-- 7th Legionnarie's Cape
+			un(1, i(163345)),	-- 7th Legionnarie's Leather Drape
+			un(1, i(163353)),	-- 7th Legionnarie's Greatcloak
+			un(1, i(163415)),	-- 7th Legionnarie's Iron Cloak
 			un(1, i(134605)),	-- Vanguard Cloak
 			un(1, i(154698)),	-- Tidespray Linen Cloak of the Feather (Doesnt load ingame)
 			un(1, i(154701)),	-- Tidespray Linen Cloak of Resilience (Doesnt load ingame)

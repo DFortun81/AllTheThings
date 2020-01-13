@@ -2652,6 +2652,17 @@ _.Zones =
 					},
 					["g"] = {
 						n(-4178, {	-- Old Season 10 (Header Missing, need new Header)
+							un(2, i(33056)),	-- Veteran's Band of Dominance
+							un(2, i(33057)),	-- Veteran's Band of Triumph 
+							un(2, i(33064)),	-- Veteran's Band of Salvation
+							un(2, i(33853)),	-- Vindicator's Band of Dominance
+							un(2, i(33853)),	-- Vindicator's Band of Salvation
+							un(2, i(33853)),	-- Vindicator's Band of Triump
+							un(2, i(33853)),	-- guardians band of dominance
+							un(2, i(33853)),	-- guardians band of salvation
+							un(2, i(33853)),	-- guardians band of triump
+							un(2, i(33853)),	-- Vindicator's Band of subjugation
+							un(2, i(33853)),	-- guardians band of subjugation
 							un(2, i(70515)),	-- Vicious Gladiator's armwraps of accuracy. S10 Version
 							un(2, i(70516)),	-- Vicious Gladiator's armwrapf of alacrity. S10 Version
 							un(2, i(70523)),	-- Vicious Gladiator's belt of cruelty. S10 Version

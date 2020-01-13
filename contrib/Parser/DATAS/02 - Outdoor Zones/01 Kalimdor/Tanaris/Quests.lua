@@ -1402,6 +1402,7 @@ _.Zones =
 						i(29305),	-- Band of the Eternal Sage
 						i(29309),	-- Band of the Eternal Restorer
 					},
+					["classes"] = { 1, 2, 6, 10, 11, 12 },
 				}),
 				q(11104, {	-- Restorer No More
 					["provider"] = { "n", 19935 },	-- Soridormi
@@ -1477,6 +1478,7 @@ _.Zones =
 					["g"] = {
 						i(29297),	-- Band of the Eternal Defender
 					},
+					["classes"] = { 1, 2, 6, 10, 11, 12 },
 				}),
 				q(10471, {	-- Defender's Oath
 					["minReputation"] = { 990, REVERED },
@@ -1489,6 +1491,7 @@ _.Zones =
 					["g"] = {
 						i(29296),	-- Band of Eternity
 					},
+					["classes"] = { 1, 2, 6, 10, 11, 12 },
 				}),
 				q(10460, {	-- Defender's Pledge
 					["minReputation"] = { 990, FRIENDLY },
@@ -1497,6 +1500,7 @@ _.Zones =
 					["g"] = {
 						i(29294),	-- Band of Eternity
 					},
+					["classes"] = { 1, 2, 6, 10, 11, 12 },
 				}),
 				q(10467, {	-- Defender's Vow
 					["minReputation"] = { 990, HONORED },
@@ -1508,6 +1512,7 @@ _.Zones =
 					["g"] = {
 						i(29295),	-- Band of Eternity
 					},
+					["classes"] = { 1, 2, 6, 10, 11, 12 },
 				}),
 				-- Scale of Sands / Healer Ring
 				q(10473, {	-- Restorer's Covenant
@@ -1518,6 +1523,7 @@ _.Zones =
 					["g"] = {
 						i(29309),	-- Band of the Eternal Restorer
 					},
+					["classes"] = { 2, 5, 7, 10, 11 },
 				}),
 				q(10469, {	-- Restorer's Oath
 					["minReputation"] = { 990, REVERED },
@@ -1527,6 +1533,7 @@ _.Zones =
 					["g"] = {
 						i(29308),	-- Band of Eternity
 					},
+					["classes"] = { 2, 5, 7, 10, 11 },
 				}),
 				q(10461, {	-- Restorer's Pledge
 					["minReputation"] = { 990, FRIENDLY },
@@ -1535,6 +1542,7 @@ _.Zones =
 					["g"] = {
 						i(29307),	-- Band of Eternity
 					},
+					["classes"] = { 2, 5, 7, 10, 11 },
 				}),
 				q(10465, {	-- Restorer's Vow
 					["minReputation"] = { 990, HONORED },
@@ -1546,6 +1554,7 @@ _.Zones =
 					["g"] = {
 						i(29306),	-- Band of Eternity
 					},
+					["classes"] = { 2, 5, 7, 10, 11 },
 				}),
 				-- Scale of Sands / Caster Ring
 				q(10472, {	-- Sage's Covenant

@@ -97,12 +97,12 @@ _.ExpansionFeatures =
 						q(44058,  {  -- Volpin the Elusive
 							i(137573),	-- Reins of the Llothien Prowler
 						}),
-						q(45312, {	-- You Beat the Ball of Meat
+						--[[q(45312, {	-- You Beat the Ball of Meat
 							["provider"] = { "i", 143590 },	-- Hunk of Meatball
 							["g"] = {
 								follower(986),	-- Meatball
 							},
-						}),
+						}),--]] -- Linked with the Mission
 					}),
 					mission(1505, {	-- A Good Dust Up
 						q(45172, {	-- To Battle!
