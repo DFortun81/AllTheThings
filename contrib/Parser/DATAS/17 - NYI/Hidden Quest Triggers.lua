@@ -840,7 +840,26 @@ _.NeverImplemented =
 		q(39128),	-- Tanaan Vignette
 		q(39713),	-- Tracking Quest. Pops immediately on new characters but no other info known. Possibly legendary ring related
 		
-
+	--	PvP Set Completed
+		
+		q(43045),	-- Warmongering Combatant's Satin Armor (Alliance, Priest)
+		q(43046),	-- Warmongering Combatant's Satin Armor (Horde, Priest)
+		q(43047),	-- Warmongering Combatant's Silk Armor (Alliance, Mage)
+		q(43048),	-- Warmongering Combatant's Silk Armor (Horde, Mage)
+		q(43049),	-- Warmongering Combatant's Felweave Armor (Alliance, Warlock)
+		q(43050),	-- Warmongering Combatant's Felweave Armor (Horde, Warlock)
+		
+		q(43138),	-- Warmongering Gladiator's Ringmail Armor (Alliance, Shaman)
+		q(43139),	-- Warmongering Gladiator's Ringmail Armor (Horde, Shaman)
+		
+		q(43160),	-- Warmongering Gladiator's Felweave Armor (Alliance, Warlock)
+		q(43161),	-- Warmongering Gladiator's Felweave Armor (Horde, Warlock)
+		
+		q(43169),	-- Warmongering Gladiator's Satin Armor (Alliance, Priest)
+		q(43170),	-- Warmongering Gladiator's Satin Armor (Horde, Priest)
+		
+		q(43173),	-- Warmongering Gladiator's Silk Armor (Alliance, Mage)
+		q(43174),	-- Warmongering Gladiator's Silk Armor (Horde, Mage)
 		
 		-------------------
 		--    Legion     --

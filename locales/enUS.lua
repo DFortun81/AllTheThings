@@ -572,6 +572,7 @@ app.L = {
 		[-594] = "Interface\\Icons\\70_inscription_deck_Hellfire_2",						-- Kill Credit 2
 		[-595] = "Interface\\Icons\\70_inscription_deck_Hellfire_3",						-- Kill Credit 3
 		[-650] = "Interface\\Icons\\inv_misc_questionmark",									-- Quest Item
+		[-660] = "Interface\\Worldmap\\GlowSkull_64Green",									-- Aspirant PvP Gear
 		[-660] = "Interface\\Worldmap\\GlowSkull_64Blue",									-- Combatant PvP Gear
 		[-661] = "Interface\\Worldmap\\GlowSkull_64Purple",									-- Gladator PvP Gear
 		[-662] = "Interface\\Worldmap\\GlowSkull_64Red",									-- Elite PvP Gear
@@ -1276,7 +1277,8 @@ app.L = {
 -- PvP Header
 
 -- PvP Set Names
-		[-660] = "Aspirant / Combatant Gear",									-- Aspirant (WoD, BfA) / Combatant (WoD, Legion) PvP Gear
+		[-659] = "Aspirant Gear",												-- Aspirant PvP Gear (WoD, BfA)
+		[-660] = "Combatant Gear",												-- Combatant PvP Gear (WoD, Legion)
 		[-661] = "Gladiator Gear",												-- Gladiator PvP Gear
 		[-662] = "Elite Gear",													-- Elite PvP Gear
 
