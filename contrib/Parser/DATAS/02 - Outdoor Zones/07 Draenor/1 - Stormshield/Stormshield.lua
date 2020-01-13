@@ -1668,6 +1668,11 @@ _.Zones =
 							["sym"] = {
 								{"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 },
 								{"pop"},
+								{"exclude", "npcID", -320 },	-- Exclude Head Header
+								{"exclude", "npcID", -321 },	-- Exclude Shoulder Header
+								{"exclude", "npcID", -323 },	-- Exclude Chest Header
+								{"exclude", "npcID", -327 },	-- Exclude Hands Header
+								{"exclude", "npcID", -329 },	-- Exclude Legs Header
 							},
 						}),
 						n(87062, { 	-- Royce Bigbeard <Blacksmithing Plans>
