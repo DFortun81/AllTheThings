@@ -47,21 +47,47 @@ _.ExpansionFeatures =
 						q(44555, {	-- Khadgar's Discovery
 							["lvl"] = 110,
 						}),
-						un(40, q(43553)),	-- Maw of Souls
-						un(40, q(44266)),	-- Maw of Souls
-						un(40, q(44267)),	-- Maw of Souls
-						un(40, q(44264)),	-- Neltharion's Lair
-						un(40, q(43554)),	-- Neltharion's Lair
-						un(40, q(44265)),	-- Neltharion's Lair
-						un(40, q(43509)),	-- Odyn's Challenge
-						un(40, q(44269)),	-- Odyn's Challenge
-						un(40, q(44268)),	-- Odyn's Challenge
+						un(40, q(43553, {	-- Maw of Souls: Into the Maw of Souls(Normal)
+							un(2, i(141160)),	-- Seaweed-Encrusted Satchel (Normal)
+						})),
+						un(40, q(44266, {	-- Maw of Souls: Into the Maw of Souls (Heroic)
+							un(2, i(141170)),	-- Seaweed-Encrusted Satchel (Heroic)
+						})),
+						un(40, q(44267, {	-- Maw of Souls: Into the Maw of Souls (Mythic)
+							un(2, i(141180)),	-- Seaweed-Encrusted Satchel (Mythic)
+						})),
+						un(40, q(43554, {	-- Neltharion's Lair: Into Neltharion's Lair(Normal)
+							un(2, i(141161)),	-- Cache of the Black Dragon (Normal)
+						})),
+						un(40, q(43564, {	-- Neltharion's Lair: Into Neltharion's Lair (Heroic)
+							un(2, i(141171)),	-- Cache of the Black Dragon (Heroic)
+						})),
+						un(40, q(43565, {	-- Neltharion's Lair: Into Neltharion's Lair (Mythic)
+							un(2, i(141181)),	-- Cache of the Black Dragon (Mythic)
+						})),
+						un(40, q(43509, {	-- Odyn's Challenge (Normal)
+							un(2, i(141155)),	-- Challenger's Spoils (Normal)
+						})),
+						un(40, q(44268, {	-- Odyn's Challenge (Heroic)
+							un(2, i(141165)),	-- Challenger's Spoils (Heroic)
+						})),
+						un(40, q(44269, {	-- Odyn's Challenge (Mythic)
+							un(2, i(141175)),	-- Challenger's Spoils (Mythic)
+						})),
 						q(39718, {	-- Paradise Lost
 							["provider"] = { "n", 98613 },	-- Scouting Map
 							["classes"] = { 12 },	-- Demon Hunter
 						}),
 						un(40, q(44917)),	-- Return to Karazhan: The Tower of Power
-						un(40, q(44263)),	-- The Arcway
+						un(40, q(43555, {	-- The Arcway: Into the Arcway (Normal)
+							un(2, i(141162)),	-- Unmarked Suramar Vault Crate (Normal)
+						})),
+						un(40, q(44262, {	-- The Arcway: Into the Arcway (Heroic)
+							un(2, i(141172)),	-- Unmarked Suramar Vault Crate (Heroic)
+						})),
+						un(40, q(44263, {	-- The Arcway: Into the Arcway (Mythic)
+							un(2, i(141182)),	-- Unmarked Suramar Vault Crate (Mythic)
+						})),
 						un(40, q(44276)),	-- The Lord of Black Rook Hold
 						un(40, q(43545)),	-- The Lord of Black Rook Hold
 						un(40, q(44277)),	-- The Lord of Black Rook Hold
@@ -144,6 +170,9 @@ _.ExpansionFeatures =
                             ["provider"] = { "i", 143561 },	-- Exhausted Shadow Candle
                         }),
                     }),
+					mission(931, {	-- Scouting Reports
+						i(140465),	-- Duskpelt Hide
+					}),
 					mission(1502, {	-- There is no Brawlers Guild
 						q(45111, {	-- Everyone Loves a Good Fight
 							["provider"] = { "i", 142522 },	-- Rude Letter
@@ -179,6 +208,30 @@ _.ExpansionFeatures =
 					i(146941),	-- Valarjar Insignia
 					i(141342),	-- Wardens Insignia
 					i(146945),	-- Wardens Insignia
+					--
+					un(2, i(140712)),	-- Ancient Nightborne Tome -> The Nighthold: Elisande -> The Nighthold: Elisande
+					un(2, i(143328)),	-- Battle Report -> To Battle! -> Any Battleground
+					un(2, i(139471)),	-- Black Rook Missive -> Black Rook Hold: The Lord of Black Rook Hold -> Black Rook Hold
+					un(2, i(139476)),	-- Broken Dragon Scale -> Neltharion's Lair: Into Neltharion's Lair -> Neltharion's Lair
+					un(2, i(139479)),	-- Broken Portal Shard -> Assault on Violet Hold: Into the Violet Hold -> Violet Hold
+					un(2, i(139478)),	-- Broken Warden Helm -> Vault of the Wardens: Into the Vault of the Wardens -> Vault of the Wardens
+					un(2, i(139474)),	-- Carved Shell -> Eye of Azshara: Into the Eye of Azshara -> Eye of Azshara
+					un(2, i(139480)),	-- Corrupted Egg Fragment -> The Emerald Nightmare: Il'gynoth -> Emerald Nightmare: Il'gynoth
+					un(2, i(139477)),	-- Drained Mana Orb -> The Arcway: Into the Arcway -> The Arcway
+					un(2, i(143479)),	-- Frayed Banner -> An Island of War -> Ashran's Battle (Draenor)
+					un(2, i(139472)),	-- Glamorous Party Invitation -> Court of Stars: Into the Court of Stars -> Court of Stars
+					un(2, i(140171)),	-- Glowing Lily -> The Nighthold: High Botanist Tel'arn -> The Nighthold: High Botanist Tel'arn
+					un(2, i(142340)),	-- Head of Thar'zul -> Return to Karazhan: The Tower of Power -> Karazhan
+					un(2, i(139457)),	-- Odyn's Challenge -> Halls of Valor: Odyn's Challenge -> Halls of Valor
+					un(2, i(140147)),	-- Pulsauron Bindings -> The Nighthold: Vaults -> The Nighthold: Trilliax
+					un(2, i(147509)),	-- Seal of the Deceiver -> Tomb of Sargeras: The Deceiver -> Tomb of Sargeras: Kil'jaeden
+					un(2, i(140177)),	-- Shred of Tattered Robe -> The Nighthold: Gul'dan -> The Nighthold: Gul'dan
+					un(2, i(140163)),	-- Tainted Moonglade Leaf -> The Emerald Nightmare: Fall of Cenarius -> Emerald Nightmare: Cenarius
+					un(2, i(139473)),	-- Vial of Poisoned Blood -> Darkheart Thicket: Into Darkheart Thicket -> Darkheart Thicket
+					un(2, i(140164)),	-- Vial of Swirling Shadow -> The Emerald Nightmare: Xavius -> Emerald Nightmare: Xavius
+					un(2, i(147505)),	-- Wailing Soul -> Tomb of Sargeras: The Fallen Avatar -> Tomb of Sargeras: Fallen Avatar
+					un(2, i(139475)),	-- Waterlogged Letter -> Maw of Souls: Into the Maw of Souls -> Maw of Souls
+					un(2, i(147501)),	-- Worshipper's Scrawlings -> Tomb of Sargeras: Free The Tormented -> Tomb of Sargeras: Desolate Host
 				},
 			}),
 		},

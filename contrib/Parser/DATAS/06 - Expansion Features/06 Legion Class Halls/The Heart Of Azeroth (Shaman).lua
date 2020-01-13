@@ -155,15 +155,13 @@ _.ExpansionFeatures =
 						["classes"] = { 7 },	-- Shaman
 					}),
 				}),
-				--[[
 				n(99428, {	-- Scouting Map
 					["g"] = {
-						-- Blank for Class Only Missions in the future
+						i(139418),	-- Healing Stream Totem - Can drop from any Mission
 					},
 					["achievementID"] = 11217,
 					["modelScale"] = 0.5,
 				}),
-				]]--
 				n(-2,  {	-- Vendors
 					n(112318, {	-- Flamesmith Lanying <Earthen Ring Quartermaster>
 						i(143727, {	-- Champion's Salute (TOY!)

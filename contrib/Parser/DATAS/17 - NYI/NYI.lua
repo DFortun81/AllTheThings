@@ -1613,6 +1613,9 @@ _.NeverImplemented =
 			un(1, i(20084)),	-- Hunting Net
 			un(1, i(20525)),	-- Earthen Sigil
 			un(1, i(38572)),	-- Bounty Procurement enhancer
+			un(1, i(161222)),	-- latency manipulator
+			un(1, i(161223)),	-- agency manipulator
+			un(1, i(161289)),	-- rikals shark teeth
 			un(1, i(157761)),	-- Unknown
 			un(1, i(38383)),	-- Unknown
 			un(1, i(38526)),	-- Unknown
@@ -1997,6 +2000,7 @@ _.NeverImplemented =
 		}))),
 		un(1, i(130145)),	-- Unknown
 		un(1, i(109602)),	-- Echo of Murmur (temp item)
+		un(1, i(169195)),	-- Golden Cricket
 		un(1, i(115469)),	-- Pet template
 		un(1, i(67417)),	-- DND lil dw placeholder
 		un(1, i(163559)),	-- Queen Cobra. Old Magni Rep Rewards, they added it via a different item

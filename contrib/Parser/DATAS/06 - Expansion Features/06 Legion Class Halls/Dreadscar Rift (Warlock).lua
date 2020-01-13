@@ -54,15 +54,13 @@ _.ExpansionFeatures =
 						i(141967),	-- Whispering Demonheart
 					},
 				}),
-				--[[
 				n(101979, {	-- Dreadscar Battle Plans
 					["g"] = {
-						-- Blank for Class Only Missions in the future
+						i(138410),	-- Summoning Portal - Can drop from any Mission
 					},
 					["achievementID"] = 11217,
 					["modelScale"] = 2.5,
 				}),
-				]]--
 				n(-17, { 	-- Quests
 					q(44089, {	-- A Greater Arsenal
 						["sourceQuests"] = { 43984 },	-- The Tome Opens Again
