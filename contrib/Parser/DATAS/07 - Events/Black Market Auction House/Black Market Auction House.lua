@@ -5,6 +5,11 @@ _.WorldEvents =
 {
 	n(-94, { 	-- Black Market AH
 		["groups"] = {
+			n(103, {	-- Illusions
+				un(21, i(138838)),	-- Illusion: Deathfrost
+				un(29, i(118572)), 	-- Illusion: Flame of Ragnaros
+				un(29, i(128649)),	-- Illusion: Winter's Grasp
+			}),
 			n(-160, {	-- Mounts
 				i(143643),	-- Abyss Worm
 				i(68823),	-- Armored Razzashi Raptor 
@@ -61,7 +66,73 @@ _.WorldEvents =
 				i(147805),	-- Valarjar Stormwing
 				i(152790),	-- Vile Fiend
 				i(49286),	-- X-51 Nether-Rocket X-TREME
-
+			}),
+			e(861, {	-- Ordos
+				-- Head
+				un(38, i(105804)),	-- Aladya's Spiritfire Greathelm
+				un(38, i(105810)),	-- Buc-Zakai Burning Hood
+				un(38, i(105806)),	-- Circlet of the Panser
+				un(38, i(105809)),	-- Crest of Burning Deeds
+				un(38, i(105808)),	-- Damien's Ice-Vein Mask
+				un(38, i(105805)),	-- Dominik's Casque of Raging Flame
+				un(38, i(105807)),	-- Magdalena's Murderous Crown
+				un(38, i(105811)),	-- Olivia's Graceful Gaze
+				un(38, i(105803)),	-- Stickney's Grey-Shade Hood
+				-- Neck
+				un(38, i(105766)),	-- Anafielle's Spiked Choker
+				un(38, i(105765)),	-- Bladeforger Necklace
+				un(38, i(105763)),	-- Penate's Perilous Pendant
+				un(38, i(105764)),	-- Rising New Moon Talisman
+				un(38, i(105762)),	-- Smoldering Eye
+				-- Shoulder
+				un(38, i(105795)),	-- Bo He Me's Deathwind Mantle
+				un(38, i(105800)),	-- Firearrow Shoulderpads
+				un(38, i(105798)),	-- Flame Healer's Shoulderguards
+				un(38, i(105799)),	-- Fleshsmoke Chain Shoulders
+				un(38, i(105796)),	-- Rossi's Rosin-Soaked Shoulderplates
+				un(38, i(105797)),	-- Shay-Nii's Popping Shoulderpads
+				un(38, i(105801)),	-- Spaulders of Dominating Dreams
+				un(38, i(105794)),	-- Starry Spaulders of Durability
+				un(38, i(105802)),	-- Yaungol Deathcult Shoulderguards
+				-- Chest
+				un(38, i(105774)),	-- Catia's Flowing Robes
+				un(38, i(105771)),	-- Chestguard of Pyrrhic Immolation
+				un(38, i(105775)),	-- Gleaming Eye Spellplate
+				un(38, i(105767)),	-- Hoodrych's Bloodied Chestplate
+				un(38, i(105772)),	-- Moonhee's Mean Vest
+				un(38, i(105769)),	-- Omegal's Crushing Carapace
+				un(38, i(105768)),	-- Pamela's Muuscat Wrap
+				un(38, i(105773)),	-- Ulmaas' Robes of Crushing Magma
+				un(38, i(105770)),	-- Zoo-Per's Superior Chestguard
+				-- Wrists
+				un(38, i(105789)),	-- Bjam's Blasting Bracers
+				un(38, i(105792)),	-- Bowflight Wristguard
+				un(38, i(105793)),	-- Bracers of Simmering Fury
+				un(38, i(105791)),	-- Bracers of Unquestioning Belief
+				un(38, i(105787)),	-- Burnseal Bracers
+				un(38, i(105790)),	-- Firetotem Bracers
+				un(38, i(105786)),	-- Ordosian Cultist's Bracers
+				un(38, i(105788)),	-- Paululum's Doodled Wraps
+				un(38, i(105785)),	-- Vanguard's Burly Bracers
+				-- Waist
+				un(38, i(105782)),	-- Belt of Glowing Embers
+				un(38, i(105776)),	-- Belt of the Burning Soul
+				un(38, i(105784)),	-- Binkenstein's Burnished Belt
+				un(38, i(105778)),	-- Derevka's Gleaming Girdle
+				un(38, i(105783)),	-- Greatbelt of the Crendor
+				un(38, i(105779)),	-- Light Kindler Waistguard
+				un(38, i(105777)),	-- Remnar's Ruinous Girdle
+				un(38, i(105781)),	-- Venruki's Venerable Sash
+				un(38, i(105780)),	-- Windflame Girdle
+				-- Legs
+				un(38, i(105758)),	-- Arielle's Ancient Legwraps
+				un(38, i(105754)),	-- Desirae's Dashing Leggings
+				un(38, i(105760)),	-- Hamlet's Wind-Whipped Leggings
+				un(38, i(105759)),	-- Magmaplates of Jian Wu Xi Feng
+				un(38, i(105755)),	-- Moshne's Keen Kilt
+				un(38, i(105761)),	-- Partik's Purified Legplates
+				un(38, i(105756)),	-- Poxleitner's Leggings of Lights
+				un(38, i(105757)),	-- Shipley's Shady Silks
 			}),
 			n(-162, {	-- Pets
 				i(44984),	-- Ammen Vale Lashling Pet
@@ -253,7 +324,12 @@ _.WorldEvents =
 				i(32566),	-- Picnic Basket
 				i(38578),	-- The Flag of Ownership
 			}),
-			un(9, i(39769)),	-- Arcanite Ripper
+			n(-319, {	-- Weapons
+				un(9, i(39769)),	-- Arcanite Ripper
+				un(9, i(90176)),	-- Flintlocke's Blasthammer
+				un(1, i(110591)),	-- Flintlocke's Blasthammer
+				un(9, i(44924)),	-- Sun-Lute of the Phoenix King
+			}),	
 			i(50379),	-- Battered Hilt (Alliance)
 			i(50380),	-- Battered Hilt (Horde)
 			i(110678, {	-- Darkmoon Ticket Fanny Pack
@@ -261,8 +337,6 @@ _.WorldEvents =
 			}),
 			un(7, i(128312)),	-- Elixir of the Rapid Mind
 			un(9, i(45037)),	-- Epic Purple Shirt
-			un(9, i(90176)),	-- Flintlocke's Blasthammer
-			un(1, i(110591)),	-- Flintlocke's Blasthammer
 			{	-- Grimoire of the Four Winds
 				["itemID"] = 110672,	-- Grimoire of the Four Winds
 				["u"] = 2,				
@@ -282,7 +356,6 @@ _.WorldEvents =
 			un(7, i(87001)),	-- Serrated Wasp Bracers
 			un(7, i(86992)),	-- Shining Cicada Bracers
 			un(7, i(86995)),	-- Smooth Beetle Wristbands
-			un(29, i(118572)), 	-- Illusion: Flame of Ragnaros
 			{	-- Kor'kron Shaman's Treasure
 				["groups"] = {
 					i(105745),	-- Kor'kron Dark Shaman Cowl
@@ -302,7 +375,8 @@ _.WorldEvents =
 				["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.  NOTE: You will not be able to transmog this item",
 			})),
 			i(14617),	-- Sawbones Shirt
-			un(9, i(44924)),	-- Sun-Lute of the Phoenix King
+			i(112935),	-- Tusk of Mannoroth
+			i(141006),	-- The First Satyr's Spaulders
 			i(169430, {	--  Unclaimed Black Market Container
 				["sym"] = {{"select", "npcID", -94}, {"pop"}, {"not","itemID", 169430}},
 			}),
