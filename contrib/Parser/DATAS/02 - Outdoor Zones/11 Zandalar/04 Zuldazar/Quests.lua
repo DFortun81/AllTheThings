@@ -221,11 +221,6 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 51407,	-- Find Their Words
 				}),
-				q(51992, {	-- A Lack of Surplus	-- TODO: verify if this exists. It popped up when turning in ""Of Dark Deeds and Dark Days" as horde... why?
-					["coord"] = { 77.2, 55.6, 862 },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 136192 },	-- Degdod
-				}),
 				q(48317, {	-- A Nose for Magic
 					["coord"] = { 43.9, 72.1, 862 },
 					["races"] = HORDE_ONLY,
@@ -975,11 +970,6 @@ _.Zones =
 					["sourceQuest"] = 49310,	-- The Prophet's Ploy
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1164 },	-- Dazar'alor
-				}),
-				q(51993, {	-- That One's Mine	-- TODO: verify if this exists. It popped up when turning in ""Of Dark Deeds and Dark Days" as horde... why?
-					["coord"] = { 77.2, 55.6, 862 },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 136192 },	-- Degdod
 				}),
 				q(47963, {	-- The Ancient One
 					["provider"] = { "n", 133653 },	-- Hexlord Raal

@@ -1599,6 +1599,22 @@ subroutines = {
 			{"is", "f"},	-- If it has a filterID, keep it, otherwise throw it away.
 		};
 	end,
+	["pvp_weapons_faction_ensemble"] = function(headerID1, headerID2, headerID3, headerID4)
+		return {
+			{"select", "npcID", headerID1 },	-- Select the Expansion header
+			{"pop"},	-- Discard the Expansion header and acquire the children.
+			{"where", "npcID", headerID2 },	-- Select the Season header
+			{"pop"},	-- Discard the Season header and acquire the children.
+			{"where", "npcID", headerID3 },	-- Select the Faction header
+			{"pop"},	-- Discard the Season header and acquire the children.
+			{"where", "npcID", headerID4 },	-- Select the Set header
+			{"pop"},	-- Discard the Set header and acquire the children.
+			{"where", "npcID", -319 },	-- Select the "Weapons" header.
+			{"pop"},	-- Discard the class header and acquire the children.
+			{"is", "itemID"},
+			{"is", "f"},	-- If it has a filterID, keep it, otherwise throw it away.
+		};
+	end,
 	["legion_relinquished_base"] = function()
 		return {
 			-- Legion Legendaries

@@ -1037,7 +1037,6 @@ _.Zones =
 				q(44260),	-- Vault of the Wardens
 				q(44259),	-- Violet Hold
 				q(44258),	-- Violet Hold
-				q(44058),	-- Volpin the Elusive
 				q(45826),	-- Warlock
 				q(45822),	-- Warrior
 				q(45385),	-- We Must be Prepared!

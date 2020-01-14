@@ -1449,6 +1449,10 @@ _.NeverImplemented =
 			un(1, i(109453)),	-- 7.0 QA Combat Test Cloak 2
 			un(1, i(109496)),	-- 7.0 QA Combat Test Cloak 4
 			un(1, i(109538)),	-- 7.0 QA Combat Test Cloak 3
+			un(1, i(163344)),	-- 7th Legionnarie's Cape
+			un(1, i(163345)),	-- 7th Legionnarie's Leather Drape
+			un(1, i(163353)),	-- 7th Legionnarie's Greatcloak
+			un(1, i(163415)),	-- 7th Legionnarie's Iron Cloak
 			un(1, i(134605)),	-- Vanguard Cloak
 			un(1, i(154698)),	-- Tidespray Linen Cloak of the Feather (Doesnt load ingame)
 			un(1, i(154701)),	-- Tidespray Linen Cloak of Resilience (Doesnt load ingame)
@@ -1633,6 +1637,9 @@ _.NeverImplemented =
 			un(1, i(20084)),	-- Hunting Net
 			un(1, i(20525)),	-- Earthen Sigil
 			un(1, i(38572)),	-- Bounty Procurement enhancer
+			un(1, i(161222)),	-- latency manipulator
+			un(1, i(161223)),	-- agency manipulator
+			un(1, i(161289)),	-- rikals shark teeth
 			un(1, i(157761)),	-- Unknown
 			un(1, i(38383)),	-- Unknown
 			un(1, i(38526)),	-- Unknown
@@ -2017,6 +2024,7 @@ _.NeverImplemented =
 		}))),
 		un(1, i(130145)),	-- Unknown
 		un(1, i(109602)),	-- Echo of Murmur (temp item)
+		un(1, i(169195)),	-- Golden Cricket
 		un(1, i(115469)),	-- Pet template
 		un(1, i(67417)),	-- DND lil dw placeholder
 		un(1, i(163559)),	-- Queen Cobra. Old Magni Rep Rewards, they added it via a different item

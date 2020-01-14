@@ -159,7 +159,6 @@ _.ExpansionFeatures =
 					q(42110),	-- To the Summit!
 					q(42610),	-- Troops in the Field
 					q(43090),	-- Ulduar's Oath
-					q(44058),	-- Volpin the Elusive
 					q(40579),	-- Weapons of Legend
 					q(44667),	-- Will of the Valarjar
 					q(45179),	-- Win the Crowd										

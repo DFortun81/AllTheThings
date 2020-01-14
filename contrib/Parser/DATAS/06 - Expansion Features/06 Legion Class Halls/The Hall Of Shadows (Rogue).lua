@@ -95,6 +95,10 @@ _.ExpansionFeatures =
 						["maps"] = { 627 },	-- Dalaran
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 98100 },	-- Taoshi
+						["sourceQuests"] = {
+							43469,	-- Where In the World is Mathias?
+							43479,	-- The World is Not Enough
+						},
 					}),
 					q(40847, {	-- A Friendly Accord
 						["coord"] = { 41.2, 74.3, 626 },
@@ -424,6 +428,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuest"] = 44181,	-- Champion: Fleet Admiral Tethys
 					}),
+					q(37666, {	-- Picking a Fight
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 110793 },	-- Taoshi
+						["sourceQuest"] = 43508,	-- The Captive Spymaster
+					}),
 					q(42568, {	-- Preparation
 						["lvl"] = 100,
 						["maps"] = { 47 },	-- Duskwood
@@ -483,6 +492,10 @@ _.ExpansionFeatures =
 						["classes"] = { 4 },	-- Rogue
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 43829,	-- Spy vs. Spy
+					}),
+					q(43508, {	-- The Captive Spymaster
+						["classes"] = { 4 },	-- Rogue
+						["provider"] = { "n", 110714 },	-- Taoshi
 					}),
 					q(40849, {	-- The Dreadblades
 						["lvl"] = 98,

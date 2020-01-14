@@ -409,6 +409,147 @@ _.Zones =
 						{"sub", "pvp_gear_base", -9979, -674, -662 },
 						{"pop"},	-- Discard the Set header and acquire the children.
 					},
+					["g"] = {
+						n(-4178, {	-- Old Season 10 (Header Missing, need new Header)
+							un(2, i(33056)),	-- Veteran's Band of Dominance
+							un(2, i(33057)),	-- Veteran's Band of Triumph 
+							un(2, i(33064)),	-- Veteran's Band of Salvation
+							un(2, i(33853)),	-- Vindicator's Band of Dominance
+							un(2, i(33853)),	-- Vindicator's Band of Salvation
+							un(2, i(33853)),	-- Vindicator's Band of Triump
+							un(2, i(33853)),	-- guardians band of dominance
+							un(2, i(33853)),	-- guardians band of salvation
+							un(2, i(33853)),	-- guardians band of triump
+							un(2, i(33853)),	-- Vindicator's Band of subjugation
+							un(2, i(33853)),	-- guardians band of subjugation
+							un(2, i(70515)),	-- Vicious Gladiator's armwraps of accuracy. S10 Version
+							un(2, i(70516)),	-- Vicious Gladiator's armwrapf of alacrity. S10 Version
+							un(2, i(70523)),	-- Vicious Gladiator's belt of cruelty. S10 Version
+							un(2, i(70524)),	-- Vicious Gladiator's belt of mediation. S10 Version
+							un(2, i(70525)),	-- Vicious Gladiator's bindings of meditation. S10 Version
+							un(2, i(70526)),	-- Vicious Gladiator's bindings of prowess. S10 Version
+							un(2, i(70527)),	-- Vicious Gladiator's boots of alacrity. S10 Version
+							un(2, i(70528)),	-- Vicious Gladiator's boots of cruelty. S10 Version
+							un(2, i(70550)),	-- Vicious Gladiator's dragonhide gloves. S10 Version
+							un(2, i(70551)),	-- Vicious Gladiator's dragonhide helm. S10 Version
+							un(2, i(70552)),	-- Vicious Gladiator's dragonhide legguards. S10 Version
+							un(2, i(70553)),	-- Vicious Gladiator's dragonhide robes. S10 Version
+							un(2, i(70554)),	-- Vicious Gladiator's dragonhide spaulders. S10 Version
+							un(2, i(70571)),	-- Vicious Gladiator's footguards of alacrity. S10 Version
+							un(2, i(70572)),	-- Vicious Gladiator's footguards of mediation. S10 Version
+							un(2, i(70580)),	-- Vicious Gladiator's kodohide gloves. S10 Version
+							un(2, i(70581)),	-- Vicious Gladiator's kodohide helm. S10 Version
+							un(2, i(70582)),	-- Vicious Gladiator's kodohide legguards. S10 Version
+							un(2, i(70583)),	-- Vicious Gladiator's kodohide robes. S10 Version
+							un(2, i(70584)),	-- Vicious Gladiator's kodohide spaulders. S10 Version
+							un(2, i(70585)),	-- Vicious Gladiator's leather gloves. S10 Version
+							un(2, i(70586)),	-- Vicious Gladiator's leather helm. S10 Version
+							un(2, i(70587)),	-- Vicious Gladiator's leather legguards. S10 Version
+							un(2, i(70588)),	-- Vicious Gladiator's leather spaulders. S10 Version
+							un(2, i(70589)),	-- Vicious Gladiator's leather tunic. S10 Version
+							un(2, i(70663)),	-- Vicious Gladiator's waistband of accuracy. S10 Version
+							un(2, i(70664)),	-- Vicious Gladiator's waistband of cruelty. S10 Version
+							un(2, i(70671)),	-- Vicious Gladiator's wyrmhide gloves. S10 Version
+							un(2, i(70672)),	-- Vicious Gladiator's wyrmhide helm. S10 Version
+							un(2, i(70673)),	-- Vicious Gladiator's wyrmhide legguards. S10 Version
+							un(2, i(70674)),	-- Vicious Gladiator's wyrmhide robes. S10 Version
+							un(2, i(70675)),	-- Vicious Gladiator's wyrmhide spaulders. S10 Version
+							un(2, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity. S10 Version
+							un(2, i(70543)),	-- Vicious Gladiator's Cloak of Prowess. S10 Version
+							un(2, i(70555)),	-- Vicious Gladiator's Drape of Diffusion. S10 Version
+							un(2, i(70556)),	-- Vicious Gladiator's Drape of of Mediation. S10 Version
+							un(2, i(70557)),	-- Vicious Gladiator's Drape of of Prowess.. S10 Version
+							un(2, i(70531)),	-- Vicious Gladiator's Cape of Cruelty. S10 Version
+							un(2, i(70532)),	-- Vicious Gladiator's Cape of Prowess. S10 Version
+							un(2, i(70511)),	-- Vicious Gladiator's Armsband of Mediation. S10 Version
+							un(2, i(70512)),	-- Vicious Gladiator's Armsband of Prowess. S10 Version
+							un(2, i(70590)),	-- Vicious Gladiator's Linked Armor. S10 Version
+							un(2, i(70591)),	-- Vicious Gladiator's Linked Gauntlets. S10 Version
+							un(2, i(70592)),	-- Vicious Gladiator's Linked Helm. S10 Version
+							un(2, i(70593)),	-- Vicious Gladiator's Linked Legs. S10 Version
+							un(2, i(70594)),	-- Vicious Gladiator's Linked Spaulders. S10 Version
+							un(2, i(70597)),	-- Vicious Gladiator's Mail Armor. S10 Version
+							un(2, i(70598)),	-- Vicious Gladiator's Mail Gauntlets. S10 Version
+							un(2, i(70599)),	-- Vicious Gladiator's Mail Helm. S10 Version
+							un(2, i(70600)),	-- Vicious Gladiator's Mail Legs. S10 Version
+							un(2, i(70601)),	-- Vicious Gladiator's Mail Spaulders. S10 Version
+							un(2, i(70632)),	-- Vicious Gladiator's RingMail Armor. S10 Version
+							un(2, i(70633)),	-- Vicious Gladiator's RingMail Gauntlets. S10 Version
+							un(2, i(70634)),	-- Vicious Gladiator's RingMail Helm. S10 Version
+							un(2, i(70635)),	-- Vicious Gladiator's RingMail Legs. S10 Version
+							un(2, i(70636)),	-- Vicious Gladiator's RingMail Spaulders. S10 Version
+							un(2, i(70640)),	-- Vicious Gladiator's Sabatons of Alacrity. S10 Version
+							un(2, i(70642)),	-- Vicious Gladiator's Sabatons of Medi. S10 Version
+							un(2, i(70665)),	-- Vicious Gladiator's Waistguard of Cruelty. S10 Version
+							un(2, i(70666)),	-- Vicious Gladiator's Waistguard of Medi. S10 Version
+							un(2, i(70513)),	-- Vicious Gladiator's armplates of alacrity. S10 Version 
+							un(2, i(70514)),	-- Vicious Gladiator's armplates of proficiency. S10 Version
+							un(2, i(70529)),	-- Vicious Gladiator's bracers of meditation. S10 Version
+							un(2, i(70530)),	-- Vicious Gladiator's bracers of prowess. S10 Version
+							un(2, i(70540)),	-- Vicious Gladiator's clasp of cruelty. S10 Version
+							un(2, i(70541)),	-- Vicious Gladiator's clasp of meditation. S10 Version
+							un(2, i(70558)),	-- Vicious Gladiator's Dreadplate chest. S10 Version
+							un(2, i(70559)),	-- Vicious Gladiator's Dreadplate gloves. S10 Version
+							un(2, i(70560)),	-- Vicious Gladiator's Dreadplate helm. S10 Version
+							un(2, i(70561)),	-- Vicious Gladiator's Dreadplate legs. S10 Version
+							un(2, i(70562)),	-- Vicious Gladiator's Dreadplate shoulders. S10 Version
+							un(2, i(70573)),	-- Vicious Gladiator's girdle of cruelty. S10 Version
+							un(2, i(70574)),	-- Vicious Gladiator's girdle of prowess. S10 Version
+							un(2, i(70575)),	-- Vicious Gladiator's greaves of alacrity. S10 Version
+							un(2, i(70576)),	-- Vicious Gladiator's greaves of meditation. S10 Version
+							un(2, i(70615)),	-- Vicious Gladiator's Ornamented chest. S10 Version
+							un(2, i(70616)),	-- Vicious Gladiator's Ornamented gloves. S10 Version
+							un(2, i(70617)),	-- Vicious Gladiator's Ornamented head. S10 Version
+							un(2, i(70618)),	-- Vicious Gladiator's Ornamented legs. S10 Version
+							un(2, i(70619)),	-- Vicious Gladiator's Ornamented shoulders. S10 Version
+							un(2, i(70623)),	-- Vicious Gladiator's Plate chest. S10 Version
+							un(2, i(70624)),	-- Vicious Gladiator's Plate gloves. S10 Version
+							un(2, i(70625)),	-- Vicious Gladiator's Plate helm. S10 Version
+							un(2, i(70626)),	-- Vicious Gladiator's Plate legs. S10 Version
+							un(2, i(70627)),	-- Vicious Gladiator's Plate shoulders. S10 Version
+							un(2, i(70648)),	-- Vicious Gladiator's Scaled chest. S10 Version
+							un(2, i(70649)),	-- Vicious Gladiator's Scaled gloves. S10 Version
+							un(2, i(70650)),	-- Vicious Gladiator's Scaled helm. S10 Version
+							un(2, i(70651)),	-- Vicious Gladiator's Scaled legs. S10 Version
+							un(2, i(70652)),	-- Vicious Gladiator's Scaled shoulders. S10 Version
+							un(2, i(70667)),	-- Vicious Gladiator's Warboots of alacrity. S10 Version
+							un(2, i(70668)),	-- Vicious Gladiator's warboots of cruelty. S10 Version
+							un(2, i(70533)),	-- Vicious Gladiator's Chain armor. S10 Version
+							un(2, i(70534)),	-- Vicious Gladiator's Chain gloves. S10 Version
+							un(2, i(70535)),	-- Vicious Gladiator's Chain helm. S10 Version
+							un(2, i(70536)),	-- Vicious Gladiator's Chain leggs. S10 Version
+							un(2, i(70537)),	-- Vicious Gladiator's Chain spaulders. S10 Version
+							un(2, i(70595)),	-- Vicious Gladiator's links of accuracy. S10 Version
+							un(2, i(70596)),	-- Vicious Gladiator's links of cruelty. S10 Version
+							un(2, i(70639)),	-- Vicious Gladiator's sabatons of alacrity. S10 Version
+							un(2, i(70641)),	-- Vicious Gladiator's sabatons of cruelty. S10 Version
+							un(2, i(70669)),	-- Vicious Gladiator's wristguards of accuracy. S10 Version
+							un(2, i(70670)),	-- Vicious Gladiator's wristguards of alacrity. S10 Version
+							un(2, i(70538)),	-- Vicious Gladiator's choker of accuracy. S10 Version
+							un(2, i(70539)),	-- Vicious Gladiator's choker of proficiency. S10 Version
+							un(2, i(70613)),	-- Vicious Gladiator's necklace of proficiency. S10 Version
+							un(2, i(70614)),	-- Vicious Gladiator's necklace of prowess. S10 Version
+							un(2, i(70620)),	-- Vicious Gladiator's pendant of alacrity. S10 Version
+							un(2, i(70621)),	-- Vicious Gladiator's pendant of diffusion. S10 Version
+							un(2, i(70622)),	-- Vicious Gladiator's pendant of meditation. S10 Version
+							un(2, i(70520)),	-- Vicious Gladiator's band of accuracy. S10 Version
+							un(2, i(70521)),	-- Vicious Gladiator's band of cruelty S10 Version
+							un(2, i(70522)),	-- Vicious Gladiator's band of mediation S10 Version
+							un(2, i(70637)),	-- Vicious Gladiator's ring of accuracy S10 Version
+							un(2, i(70638)),	-- Vicious Gladiator's ring of cruelty S10 Version
+							un(2, i(70653)),	-- Vicious Gladiator's signet of accuracy S10 Version
+							un(2, i(70654)),	-- Vicious Gladiator's signet of cruelty S10 Version
+							un(2, i(70517)),	-- Vicious Gladiator's badge of conquest. S10 Version
+							un(2, i(70518)),	-- Vicious Gladiator's badge of dominance. S10 Version
+							un(2, i(70519)),	-- Vicious Gladiator's badge of citory. S10 Version
+							un(2, i(70563)),	-- Vicious Gladiator's emblem of cruelty. S10 Version
+							un(2, i(70564)),	-- Vicious Gladiator's emblem of mediation. S10 Version
+							un(2, i(70565)),	-- Vicious Gladiator's emblem of tanicty. S10 Version
+							un(2, i(70577)),	-- Vicious Gladiator's insignia of conquest. S10 Version
+							un(2, i(70578)),	-- Vicious Gladiator's insignia of dominance. S10 Version
+							un(2, i(70579)),	-- Vicious Gladiator's insignia of victory. S10 Version
+						}),
+					},
 				}),
 				n(54657,  {	-- Doris Volanthius <Vicious Gladiator>
 					-- The NPC ID got reused — she was also >S11< Elite Vendor

@@ -107,6 +107,7 @@ _.Zones =
 					["provider"] = { "n", 10837 },	-- High Executor Derrington
 					["coord"] = { 83.2, 68.9, 18 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
 					["sourceQuests"] = { 26926 },	-- Victory, For Now
 				}),
 				q(5098, {	-- All ALong the Watchtowers
@@ -257,6 +258,7 @@ _.Zones =
 					["provider"] = { "n", 11055 },	-- Shadow Priestess Vandis
 					["coord"] = { 83.3, 69.8, 18 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
 					["sourceQuests"] = { 26931 },	-- Foxes and Hounds
 				}),
 				q(359,   {	-- Forsaken Duties
@@ -373,6 +375,7 @@ _.Zones =
 					["provider"] = { "n", 11057 },	-- Apothecary Dithers
 					["coord"] = { 83.2, 69.2, 18 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
 				}),
 				q(32672, {	-- Learn to Ride
 					["isBreadcrumb"] = true,
@@ -388,6 +391,7 @@ _.Zones =
 					["provider"] = { "n", 10837 },	-- High Executor Derrington
 					["coord"] = { 83.3, 69.0, 18 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
 					["sourceQuests"] = {
 						26978,	-- Who Needs Cauldrons?
 						26930,	-- After the Crusade
@@ -531,6 +535,7 @@ _.Zones =
 					["provider"] = { "n", 10837 },	-- High Executor Derrington
 					["coord"] = { 83.3, 69.0, 18 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
 					["sourceQuests"] = { 26936 },	-- Lower the Boom
 				}),
 				q(6321,  {	-- Supplying Brill
@@ -572,12 +577,14 @@ _.Zones =
 					["provider"] = { "n", 10837 },	-- High Executor Derrington
 					["coord"] = { 83.2, 68.9, 18 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
 					["isBreadcrumb"] = true,	-- for "Scourge First... Alliance Later"
 				}),
 				q(27083, {	-- The Battle Resumes! -- possible breadcrumb?
 					["provider"] = { "n", 10837 },	-- High Executor Derrington
 					["coord"] = { 83.3, 69.0, 18 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
 				}),
 				q(375,   {	-- The Chill of Death
 					["u"] = 40,
@@ -630,6 +637,7 @@ _.Zones =
 					["provider"] = { "n", 10839 },	-- Argent Officer Garush
 					["coord"] = { 83.1, 68.4, 18 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
 					["sourceQuests"] = { 26933 },	-- Foes before Hoes
 					["isBreadcrumb"] = true,	-- for "A New Era for the Plaguelands"
 				}),
@@ -721,6 +729,7 @@ _.Zones =
 					["provider"] = { "n", 11057 },	-- Apothecary Dithers
 					["coord"] = { 83.2, 69.2, 18 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
 					["sourceQuests"] = { 26934 },	-- Latent Disease
 					["g"] = {
 						i(62171),	-- Cloak of the Salted Earth

@@ -54,6 +54,7 @@ _.Achievements =
 			}),
 			un(3, ach(11425)),		-- Herald of Flames
 			ach(9926),				-- Hero of the Storm
+			un(3, ach(3636)),		-- Jade Tiger (China only)
 			un(3, ach(13196, {			-- Meat Marauder
 				i(164571),			-- Meat Wagon
 			})),
@@ -63,6 +64,7 @@ _.Achievements =
 			un(16, ach(411)),		-- Murky
 			un(16, ach(11294)),		-- Murloc Battlemasters
 			un(16, ach(412)),		-- Murloc Costume
+			un(3, ach(3896)),		-- Onyx Panther (Korea only)
 			un(3, ach(10537)),		-- Patron of War
 			un(16, ach(11931)),		-- Rides of War
 			un(3, ach(12454)),		-- Salute to Starcraft

@@ -323,7 +323,6 @@ _.Instances = { tier(7, {	-- Legion
 					638,	-- Thorignir Refuge
 					639,	-- Aggramar's Vault
 					640,	-- Vault of Eyir
-					649,	-- Helheim
 					671,	-- The Cove of Nashal (used in introductory scenario)
 					694,	-- Helmouth Shallows
 					829,	-- Halls of Valor
@@ -410,7 +409,6 @@ _.Instances = { tier(7, {	-- Legion
 					638,	-- Thorignir Refuge
 					639,	-- Aggramar's Vault
 					640,	-- Vault of Eyir
-					649,	-- Helheim
 					671,	-- The Cove of Nashal (used in introductory scenario)
 					694,	-- Helmouth Shallows
 					829,	-- Halls of Valor

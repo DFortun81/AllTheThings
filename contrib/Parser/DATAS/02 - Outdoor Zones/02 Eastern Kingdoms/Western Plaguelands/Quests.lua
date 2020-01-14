@@ -534,7 +534,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						28576,	-- Hero's Call: Western Plaguelands!
-						27158,	-- The Battle for Andorhal (Commander Ashlam Valorfist (WPL)
+						27158,	-- The Battle for Andorhal (Commander Ashlam Valorfist, WPL)
 						28505,	-- The Battle for Andorhal (Gryphon Master Talonaxe, Hinterlands)
 						28749,	-- The Battle for Andorhal (War-Mage Erallier, STV)
 					},

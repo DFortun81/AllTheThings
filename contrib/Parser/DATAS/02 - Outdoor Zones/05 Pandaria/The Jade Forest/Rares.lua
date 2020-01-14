@@ -230,7 +230,6 @@ _.Zones =
 				n(69841, {	-- Zandalari Warbringer (Amber)
 					["coords"] = {
 						{ 47.4, 61.5, 422 },	-- Dread Wastes
-						{ 39.8, 65.9, 418 },	-- Krasarang Wilds
 						{ 75.1, 67.4, 379 },	-- Kun-Lai Summit
 						{ 52.5, 18.8, 371 },	-- The Jade Forest
 						{ 36.5, 85.6, 388 },	-- Townlong Steppes
@@ -239,10 +238,9 @@ _.Zones =
 						i(94230),	-- Reins of the Amber Primordial Direhorn
 					},
 				}),
-				n(69842, {	-- Zandalari Warbringer
+				n(69842, {	-- Zandalari Warbringer (Jade)
 					["coords"] = {
 						{ 47.4, 61.5, 422 },	-- Dread Wastes
-						{ 39.8, 65.9, 418 },	-- Krasarang Wilds
 						{ 75.1, 67.4, 379 },	-- Kun-Lai Summit
 						{ 52.5, 18.8, 371 },	-- The Jade Forest
 						{ 36.5, 85.6, 388 },	-- Townlong Steppes
@@ -251,7 +249,7 @@ _.Zones =
 						i(94231),	-- Reins of the Jade Primordial Direhorn
 					},
 				}),
-				n(69769, {	-- Zandalari Warbringer
+				n(69769, {	-- Zandalari Warbringer (Slate)
 					["coords"] = {
 						{ 47.4, 61.5, 422 },	-- Dread Wastes
 						{ 39.8, 65.9, 418 },	-- Krasarang Wilds

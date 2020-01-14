@@ -82,10 +82,11 @@ _.Zones =
 						q(43522),	-- Essential Consumption
 						q(43523, {	-- Repaid Debt
 							["description"] = "This quest is available if you *have* completed the Moonguard Stronghold quests in Suramar."
-						  }),
+						}),
 						q(43527, {	-- Saving the Guard
 							["description"] = "This quest is available if you have *not* completed the Moonguard Stronghold quests in Suramar."
-						  }),
+						}),
+						q(43938),	-- Focusing Our Efforts
 						q(40673),	-- Lost Knowledge
 						q(43525),	-- Vault of the Wardens: Borrowing Without Asking
 						q(40675),	-- The Arcway: Rite of the Captain
@@ -94,6 +95,7 @@ _.Zones =
 						q(43526),	-- A True Test
 						q(40603),	-- Seeking the Valkyra
 						q(40608),	-- The Mark
+						q(43898),	-- Preparing to Move
 						q(40613),	-- Maw of Souls: Retrieving the Svalnguard
 						q(40614),	-- A Feast Fit for Odyn
 						q(40672),	-- Neltharion's Lair: Presentation is Key

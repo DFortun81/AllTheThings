@@ -17,6 +17,12 @@ _.ExpansionFeatures =
 								},
 							}),
 						}),
+						n(-17, {	-- Quests
+							q(37045, {	-- Salvaging the Situation
+								["races"] = HORDE_ONLY,
+								["provider"] = { "n", 79857 },	-- Lumba the Crusher
+							}),
+						}),
 						un(2, i(114120, {	-- Big Crate of Salvage
 						-- Only adding items where Salvage Crates was the only source
 							un(7, i(36533)),	-- Adorned Broadsword

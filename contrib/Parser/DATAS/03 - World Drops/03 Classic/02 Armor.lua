@@ -299,25 +299,6 @@ _.WorldDrops =
 				i(13110),	-- Wolffear Harness
 			}),
 			n(-324, {	-- Shirt
-				un(7, i(6125)),	-- Brawler's Harness (Former starter shirt for Orc, Troll, Tauren, Undead Warriors)
-				un(7, i(49)),	-- Footpad's Shirt (Former starter shirt Human, NE, Dwarf, Gnome Rogues)
-				i(49567, {	-- Gilnean Adventurer's Shirt
-					["description"] = "New Worgen hunters, rogues, and warriors start out with this shirt.",
-				}),
-				un(7, i(24143)),	-- Initiate's Shirt (Starter Shirt Blood Elf Paladins)
-				un(7, i(20897)),	-- Lookout's Tunic (Starter Shirt Blood Elf Rogues)
-				un(7, i(154)),	-- Primitive Mantle (Former starter shirt Orc, Tauren Shaman)
-				un(7, i(6134)),	-- Primitive Mantle (Former starter shirt for Troll Shaman)
-				un(7, i(23473)),	-- Recruit's Shirt	(Starter Shirt Draenei Warriors)
-				un(7, i(6120)),	-- Recruit's Shirt (Former starter shirt for NE Warriors)
-				un(7, i(148)),	-- Rugged Trapper's Shirt (Former starter shirt Dwarf, NE Hunters)
-				un(7, i(23345)),	-- Scout's Shirt (Starter Shirt Draenei Hunters and Shamans)
-				un(7, i(6117)),	-- Squire's Shirt (Former starter shirt for Dwarf Paladins)
-				un(7, i(23476)),	-- Squire's Shirt	(Starter Shirt Draenei Paladins)
-				un(7, i(2105)),	 -- Thug Shirt (Former starter shirt for Undead/Orc Rogues)
-				un(7, i(127)),	-- Trapper's Shirt (Former starter shirt Orc, Tauren, Troll Hunters)
-				un(7, i(6136)),	-- Trapper's Shirt (Former starter shirt for Troll Rogues)
-				un(7, i(20901)),	-- Warder's Shirt (Starter Shirt Blood Elf Hunters)
 			}),
 			n(-326, {	-- Wrist
 				i(13199),	-- Crushridge Bindings

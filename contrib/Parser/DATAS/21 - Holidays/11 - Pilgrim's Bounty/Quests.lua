@@ -34,6 +34,12 @@ _.Holidays = bubbleDown({["u"] = 28},
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 				}),
+				q(8149,  {	-- Honoring a Hero
+					["u"] = 25,	-- Harvest Festival
+					["provider"] = { "n", 15011 },	-- Wagner Hammerstrike
+					["races"] = ALLIANCE_ONLY,
+					["isYearly"] = true,
+				}),
 				q(14064, {	-- Sharing a Bountiful Feast (Alliance)
 					["provider"] = { "n", 34653 },	-- Bountiful Table Hostess
 					["maps"] = { 37, },	-- Elwynn Forest

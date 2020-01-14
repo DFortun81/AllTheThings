@@ -313,6 +313,7 @@ _.Zones =
 						["questID"] = 53385,
 						["coord"] = { 63.3, 65.8, 896 },
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["description"] = "Left. Down. Up. Right.",
 						["g"] = {
 							i(163743),	-- Drust Soulcatcher
 						},
@@ -321,6 +322,7 @@ _.Zones =
 						["questID"] = 53386,
 						["coord"] = { 44.2, 27.8, 896 },
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["description"] = "Left. Right. Down. Up.",
 						["g"] = {
 							i(163742),	-- Heartsbane Grimoire (TOY!)
 						},
@@ -338,6 +340,7 @@ _.Zones =
 						["questID"] = 53475,
 						["coord"] = { 24.3, 48.5, 896 },
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
+						["description"] = "Enter the cave at 24.70, 48.95.",
 						["g"] = {
 							i(163036),	-- Polished Pet Charm
 						},

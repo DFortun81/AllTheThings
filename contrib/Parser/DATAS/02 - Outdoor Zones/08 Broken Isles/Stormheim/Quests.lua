@@ -1199,7 +1199,15 @@ _.Zones =
 				q(44775),	-- The Peak of Bones
 				q(41168),	-- The Purple Hills of Mac'Aree
 				q(41170),	-- The Relic Renewed
-				q(45486),	-- The Reluctant Queen
+				q(45486, {	-- The Reluctant Queen
+					["classes"] = {
+						8,	-- Mage (Arcane)
+						2,	-- Paladin (Retribution)
+						4,	-- Rogue (Assassination)
+						7,	-- Shaman (Enhancement)
+						9,	-- Warlock (Demonology)
+					},
+				}),
 				q(45406),	-- The Storm's Fury
 				q(45522),	-- To Silence the Bonespeakers
 				q(45523),	-- To Tame the Drekirjar

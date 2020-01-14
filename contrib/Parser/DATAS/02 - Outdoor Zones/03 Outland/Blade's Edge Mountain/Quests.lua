@@ -717,6 +717,7 @@ _.Zones =
 							["provider"] = { "n", 23053 },	-- Bladespire Supplicant
 							["coord"] = { 42.8, 20.7, 107 },
 							["sourceQuest"] = 11000,	-- Into the Soulgrinder
+							["races"] = { 4 },	-- Night Elf
 							["isBreadcrumb"] = true,
 						}),
 						q(11009, {	-- Ogre Heaven

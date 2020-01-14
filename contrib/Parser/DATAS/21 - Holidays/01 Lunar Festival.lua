@@ -1555,6 +1555,10 @@ _.Holidays = bubbleDown({["u"] = 17},
 							un(17, i(151354)),	-- Crown of Prosperity
 							un(17, i(151353)),	-- Crown of Dark Blossoms
 							un(17, i(151352)),	-- Crown of Good Fortune
+							un(17, i(170205)),	-- Crown of Boundless Courage
+							un(17, i(170206)),	-- Crown of Infintite Prosperity
+							un(17, i(170207)),	-- Crown of Eternal Memorial
+							un(17, i(169208)),	-- Crown of Everlasting Fortune
 							un(17, i(21537)),	-- Festival Dumplings
 							un(17, i(21640)),	-- Lunar Festival Fireworks Pack
 							un(17, i(116172)),	-- Perky Blaster

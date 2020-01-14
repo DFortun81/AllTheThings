@@ -28,6 +28,7 @@ _.Achievements =
 					un(3, ach(6061)),		-- Gaudy Winter Veil Sweater
 					un(3, ach(4782)),		-- Green Brewfest Stein
 					un(3, ach(11065)),		-- It All Makes Sense Now
+					un(3, ach(13931)),		-- Memories of Fel, Frost and Fire
 					un(3, ach(6060)),		-- MiniZep Controller
 					un(3, a(ach(4786))),	-- Operation: Gnomeregan (Alliance)
 					un(3, ach(6059)),		-- Red Rider Air Rifle

@@ -575,6 +575,7 @@ app.L = {
 		[-594] = "Interface\\Icons\\70_inscription_deck_Hellfire_2",						-- Kill Credit 2
 		[-595] = "Interface\\Icons\\70_inscription_deck_Hellfire_3",						-- Kill Credit 3
 		[-650] = "Interface\\Icons\\inv_misc_questionmark",									-- Quest Item
+		[-660] = "Interface\\Worldmap\\GlowSkull_64Green",									-- Aspirant PvP Gear
 		[-660] = "Interface\\Worldmap\\GlowSkull_64Blue",									-- Combatant PvP Gear
 		[-661] = "Interface\\Worldmap\\GlowSkull_64Purple",									-- Gladator PvP Gear
 		[-662] = "Interface\\Worldmap\\GlowSkull_64Red",									-- Elite PvP Gear
@@ -1292,7 +1293,8 @@ app.L = {
 -- PvP Header
 
 -- PvP Set Names
-		[-660] = "Aspirant / Combatant Gear",									-- Aspirant (WoD, BfA) / Combatant (WoD, Legion) PvP Gear
+		[-659] = "Aspirant Gear",												-- Aspirant PvP Gear (WoD, BfA)
+		[-660] = "Combatant Gear",												-- Combatant PvP Gear (WoD, Legion)
 		[-661] = "Gladiator Gear",												-- Gladiator PvP Gear
 		[-662] = "Elite Gear",													-- Elite PvP Gear
 
@@ -1340,7 +1342,7 @@ app.L = {
 		[-689] = select(2, GetAchievementInfo(12945)),							-- Dread Gladiator: Battle for Azeroth Season 1
 		[-690] = select(2, GetAchievementInfo(13200)),							-- Sinister Gladiator: Battle for Azeroth Season 2
 		[-691] = select(2, GetAchievementInfo(13630)),							-- Notorious Gladiator: Battle for Azeroth Season 3
-		[-692] = "Corrupted Gladiator: Battle for Azeroth Season 3",
+	--	[-692] = select(2, GetAchievementInfo(13630)),							-- Corrupted Gladiator: Battle for Azeroth Season 4
 
 -- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 		[-800] = GetSpellInfo(247402), 											-- Lucid Nightmare
@@ -3557,6 +3559,7 @@ app.L = {
 		[252881] = "Treasure Chest",
 		[252882] = "Treasure Chest",
 		[252883] = "Treasure Chest",
+		[252884] = "Glimmering Treasure Chest",
 		[253118] = "Dreamgrove Blossoms",
 		[253157] = "Spirit Berries",
 		[253161] = "Grove Vine",

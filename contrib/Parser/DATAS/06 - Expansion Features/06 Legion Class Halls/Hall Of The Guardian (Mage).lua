@@ -123,7 +123,7 @@ _.ExpansionFeatures =
 					q(41141, { 	-- A Conjuror's Duty (mage class hall)
 						["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 						["classes"] = {8},
-					}),					
+					}),
 					q(42434),	-- A Covert Operation
 					q(46338, {	-- A Creative Solution (mage class hall)
 						["provider"] = { "n", 108247 },	-- Archmage Kalec
@@ -132,10 +132,14 @@ _.ExpansionFeatures =
 					q(41085, {	-- A Mage's Weapon (mage class hall)
 						["provider"] = { "n", 102700 },	-- Meryl Felstorm
 						["classes"] = {8},
-					}),		
+					}),
 					q(43441),	-- A Second Weapon
 					q(42954),	-- A Small Favor
-					q(42520),	-- A Terrible Loss
+					q(42520, {	-- A Terrible Loss
+						["classes"] = { 8 },
+						["provider"] = { "n", 108085 },	-- Image of Kalec
+						["sourceQuest"] = 42493,	-- Impending Dooooooom!
+					}),
 					q(42455),	-- Alodi's Gems
 					q(42001),	-- Aluneth, Greatstaff of the Magna
 					q(45180),	-- An Island of War
@@ -185,20 +189,48 @@ _.ExpansionFeatures =
 					q(46782),	-- Further Advancement
 					q(46156),	-- Furthering Knowledge
 					q(42175),	-- Growing Power
+					q(42493, {	-- Impending Dooooooom!
+						["classes"] = { 8 },	-- Mage
+					}),
+					q(46345, {	-- Into the Hornet's Nest
+						["classes"] = { 8 },	-- Mage
+					}),
 					q(42734),	-- Into the Oculus
 					q(45998),	-- Investigate the Broken Shore
-					q(42451),	-- Kalec's Plan
-					q(46351),	-- Keep it Secret, Keep it Safe
+					q(42451, {	-- Kalec's Plan
+						["classes"] = { 8 },	-- Mage
+					}),
+					q(46351, {	-- Keep it Secret, Keep it Safe
+						["classes"] = { 8 },	-- Mage
+					}),
+					q(46339, {	-- Keymaster Orlis
+						["classes"] = { 8 },	-- Mage
+					}),
 					q(42429),	-- Memories of Ebonchill
+					q(42494, {	-- More Than Just A Food Vendor
+						["classes"] = { 8 },	-- Mage
+					}),
+					q(42508, {	-- Not A Toothless Dragon
+						["classes"] = { 8 },	-- Mage
+					}),
 					q(46722),	-- Nothing Up My Sleeve
+					q(44768, {	-- Nyell's Workshop
+						["classes"] = { 8 },	-- Mage
+					}),
 					q(44240, {	-- Orange is the New Purple
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(44207),	-- Portal Full of Shiny Things
 					q(44098),	-- Recruiting Apprentices
 					q(45251),	-- Redundancy
+					q(46705, {	-- Retaliation
+						["classes"] = { 8 },	-- Mage
+					}),
 					q(46290),	-- Return of the Archmage
 					q(42663),	-- Rise, Champions
+					q(44770, {	-- Secrets of the Shal'dorei
+						["classes"] = { 8 },	-- Mage
+					}),
 					q(45630),	-- Servant to No One
 					q(42696),	-- Tech It Up A Notch
 					q(42703),	-- Technical Wizardry
@@ -208,11 +240,20 @@ _.ExpansionFeatures =
 					}),
 					q(42476),	-- The Deadwind Site
 					q(41036),	-- The Dreadlord's Prize
-					q(41112),	-- The Great Akazamzarak		
+					q(42521, {	-- The Enemy of My Enemy...
+						["classes"] = { 8 },	-- Mage
+						["provider"] = { "n", 111553 },	-- Kalecgos
+						["sourceQuest"] = 42508,	-- Not a Toothless Dragon
+					}),
+					q(41112),	-- The Great Akazamzarak
 					q(42479),	-- The Mage Hunter
 					q(44209),	-- The Might of Dalaran
 					q(44689),	-- The Might of the Tirisgarde
-					q(45207),	-- The Nightborne Apprentice
+					q(45207, {	-- The Nightborne Apprentice
+						["classes"] = { 8 },	-- Mage
+						["provider"] = { "n", 118242 },	-- Aethas Sunreaver
+						["sourceQuest"] = 46338,	-- A Creative Solution
+					}),
 					q(41113),	-- The Only Way to Travel
 					q(42955),	-- The Proper Way of Things
 					q(41124),	-- The Tirisgarde Reborn
@@ -222,9 +263,8 @@ _.ExpansionFeatures =
 					q(45172),	-- To Battle!
 					q(42687),	-- Troops in the Field
 					q(41125),	-- Unlocked Potential
-					q(44058),	-- Volpin the Elusive
 					q(42940),	-- When There's a Will, There's a Way
-					q(45179),	-- Win the Crowd										
+					q(45179),	-- Win the Crowd
 					q(45354, {	-- Dispersion of the Discs
 						["lvl"] = 110,
 						["classes"] = {8},

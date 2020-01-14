@@ -54,6 +54,10 @@ _.Zones =
 					},
 				}),
 				n(-206, {	-- Paragon
+					q(46799, {	-- Paragon of the Nightfallen
+						["coord"] = { 36.5, 46.7, 680 },
+						["provider"] = { "n", 115736 },	-- First Arcanist Thalyssra
+					}),
 					q(46748, {	-- Supplies From the Nightfallen
 						["repeatable"] = true,
 						["providers"] = {

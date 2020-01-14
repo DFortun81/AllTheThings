@@ -284,6 +284,7 @@ _.Zones =
 						["sourceQuest"] = 44845,	-- Break An Arm
 					}),
 					crit(5, {	-- Crafting War
+						-- does this also require A Dance With Dragons (44876) ?
 						["sourceQuest"] = 44790,	-- Trial by Demonfire
 					}),
 					crit(6, {	-- March on Suramar
@@ -293,6 +294,7 @@ _.Zones =
 						["sourceQuest"] = 44833,	-- The Seal's Power
 					}),
 					crit(8, {	-- As Strong As Our Will
+						-- TODO: is Experimental Instability (45066) also required?
 						["sourceQuest"] = 45064,	-- Felborne No More
 					}),
 					crit(9, {	-- Breaking the Nighthold

@@ -54,15 +54,13 @@ _.ExpansionFeatures =
 						i(141967),	-- Whispering Demonheart
 					},
 				}),
-				--[[
 				n(101979, {	-- Dreadscar Battle Plans
 					["g"] = {
-						-- Blank for Class Only Missions in the future
+						i(138410),	-- Summoning Portal - Can drop from any Mission
 					},
 					["achievementID"] = 11217,
 					["modelScale"] = 2.5,
 				}),
-				]]--
 				n(-17, { 	-- Quests
 					q(44089, {	-- A Greater Arsenal
 						["sourceQuests"] = { 43984 },	-- The Tome Opens Again
@@ -277,7 +275,6 @@ _.ExpansionFeatures =
 					q(45027),	-- To the Broken Shore
 					q(44227),	-- Unleashing our Wrath
 					q(44682),	-- Unparalleled Power
-					q(44058),	-- Volpin the Elusive
 					q(45179),	-- Win the Crowd							
 					q(46243, {	-- The Wrathsteed of Xoroth
 						["lvl"] = 110,

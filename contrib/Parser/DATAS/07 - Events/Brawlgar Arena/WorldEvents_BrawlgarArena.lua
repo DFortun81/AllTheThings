@@ -9,6 +9,13 @@ _.WorldEvents =
 		["icon"] = "Interface\\Icons\\INV_MISC_HEAD_ORC2_BRN",
 		["g"] = {
 			n(-17, { 	-- Quests
+				q(36702, {	-- Meatball
+					["provider"] = { "n", 86272 },	-- Meatball
+					["description"] = "Reach Rank 5 in the arena.",
+					["g"] = {
+						follower(203),	-- Meatball
+					},
+				}),
 				q(53914, {	-- Murder at the Brawl'gar Arena
 					["description"] = "This quest can be accepted after you successfully complete any (or your first) Brawl.",
 					["provider"] = { "n", 68364 },	-- Paul North
