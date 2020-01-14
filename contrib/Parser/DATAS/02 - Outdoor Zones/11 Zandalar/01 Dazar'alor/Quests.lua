@@ -373,7 +373,7 @@ _.Zones =
 					["provider"] = { "n", 133050 },	-- Princess Talanji
 				}),
 				q(58583, {	-- Where the Heart Is
-					["coord"] = { 57.8, 64.5, 1165 },
+					["coord"] = { 55.9, 30.3, 1163 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 161458 },	-- Valeera Sanguinar
 					["sourceQuest"] = 58582,	-- Return of the Black Prince

@@ -2020,6 +2020,8 @@ _.NeverImplemented =
 		
 		-- Patch 8.3
 		-- 58013 triggered randomly during a Black Empire assault in uldum
+		q(55349),	-- Triggered shortly after "Network Diagnostics"
+		q(56935),	-- Triggered shortly after "Network Diagnostics"
 		q(58000),	-- Combining Coalescing Visions 1x
 		q(58001),	-- Combining Coalescing Visions 2x
 		q(58002),	-- Combining Coalescing Visions 3x
