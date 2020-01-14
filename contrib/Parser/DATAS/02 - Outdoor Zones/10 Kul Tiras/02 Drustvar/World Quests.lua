@@ -75,10 +75,6 @@ _.Zones =
 					q(48604, {	-- Home Again, Home Again
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(51740, {	-- Hunting for Truffle Hunters
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(51742, {	-- Intercepting the Irontide
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -456,9 +452,13 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(51697, {	-- Hunting for Truffle Hunters
+					q(51697, {	-- Hunting for Truffle Hunters (A)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+					}),
+					q(51740, {	-- Hunting for Truffle Hunters
+						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
 					q(51467, {	-- Hyo'gi
