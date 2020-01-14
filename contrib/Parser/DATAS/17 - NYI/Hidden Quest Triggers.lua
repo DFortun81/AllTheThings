@@ -2072,6 +2072,8 @@ _.NeverImplemented =
 		q(57626),	-- Uldum - Black Empire Cache
 		q(57627),	-- Uldum - Black Empire Cache
 		q(57635),	-- Uldum - Black Empire Cache
+		q(58139),	-- Uldum - Infested Cache
+		q(58141),	-- Uldum - Infested Cache
 		q(57201),	-- Vale of Eternal Blossoms - Black Empire Cache
 		q(57200),	-- Vale of Eternal Blossoms - Black Empire Cache
 		q(57203),	-- Vale of Eternal Blossoms - Black Empire Cache

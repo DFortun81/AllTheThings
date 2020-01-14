@@ -283,6 +283,106 @@ _.ExpansionFeatures =
 				}),
 				n(-10079, {	-- Assault: Aqir Unearthed
 					n(-17, {	-- Quests
+						q(58606, {	-- A Bit of Investigation
+							["lvl"] = 120,
+							["coord"] = { 27.9, 63.3, 1527 },
+							["provider"] = { "n", 164196 },	-- H'partho Ardoros
+							["sourceQuest"] = 57971,	-- Ruins of Ammon
+						}),
+						q(58008, {	-- All Gassed Up
+							["lvl"] = 120,
+							["coord"] = { 42.4, 55.9, 1527 },
+							["provider"] = { "n", 159920 },	-- Zahra Sandstalker
+							["sourceQuest"] = 57990,	-- Obelisk of the Sun
+						}),
+						q(56576, {	-- Aqir Extermination
+							["lvl"] = 120,
+							["coord"] = { 42.4, 55.9, 1527 },
+							["provider"] = { "n", 159920 },	-- Zahra Sandstalker
+							["sourceQuest"] = 159820,	-- Obelisk of the Sun
+						}),
+						q(57954, {	-- Burn the Bodies
+							["lvl"] = 120,
+							["coord"] = { 24.5, 55.2, 1527 },
+							["provider"] = { "n", 159682 },	-- Tracker Samara
+							["sourceQuest"] = 57955,	-- To Ankhaten Harbor
+						}),
+						q(58780, {	-- Heralds of the Hive
+							["lvl"] = 120,
+							["coord"] = { 40.0, 21.3, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 154443 },	-- Captain Navid Sandstone
+						}),
+						q(57990, {	-- Obelisk of the Sun
+							["lvl"] = 120,
+							["coord"] = { 27.9, 63.4, 1527 },
+							["provider"] = { "n", 159820 },	-- Mender Dyrin
+							["sourceQuests"] = {
+								58606,	-- A Bit of Investigation
+								57970,	-- Ruinator Xok'nixx
+								57969,	-- Tend the Wounded
+							},
+						}),
+						q(57970, {	-- Ruinator Xok'nixx
+							["lvl"] = 120,
+							["coord"] = { 27.9, 63.4, 1527 },
+							["provider"] = { "n", 159820 },	-- Mender Dyrin
+							["sourceQuest"] = 57971,	-- Ruins of Ammon
+						}),
+						q(57971, {	-- Ruins of Ammon
+							["lvl"] = 120,
+							["coord"] = { 24.4, 55.2, 1527 },
+							["provider"] = { "n", 159682 },	-- Tracker Samara
+							["sourceQuests"] = {
+								57954,	-- Burn the Bodies
+								57956,	-- Wastewander Hosts
+							},
+						}),
+						q(57915, {	-- Search for Survivors
+							["lvl"] = 120,
+							["coord"] = { 40.8, 38.5, 1527 },
+							["provider"] = { "n", 154958 },	-- Laborer Mitchell
+							["sourceQuest"] = 57873,	-- Word from Orsis
+						}),
+						q(57969, {	-- Tend the Wounded
+							["lvl"] = 120,
+							["coord"] = { 27.9, 63.4, 1527 },
+							["provider"] = { "n", 159820 },	-- Mender Dyrin
+							["sourceQuest"] = 57971,	-- Ruins of Ammon
+						}),
+						q(57955, {	-- To Ankhaten Harbor
+							["lvl"] = 120,
+							["coord"] = { 39.9, 45.2, 1527 },
+							["provider"] = { "n", 159560 },	-- Outrider Lashan
+							["sourceQuest"] = 57915,	-- Search for Survivors
+						}),
+						q(58009, {	-- To the Moon
+							["lvl"] = 120,
+							["coord"] = { 42.4, 55.9, 1527 },
+							["provider"] = { "n", 159920 },	-- Zahra Sandstalker
+							["sourceQuests"] = {
+								58008,	-- All Gassed Up
+								56576,	-- Aqir Extermination
+							},
+						}),
+						q(56402, {	-- Wastewander Coins
+							["lvl"] = 120,
+							["coord"] = { 39.9, 45.2, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 159560 },	-- Outrider Lashan
+							["sourceQuest"] = 57915,	-- Search for Survivors
+						}),
+						q(57956, {	-- Wastewander Hosts
+							["lvl"] = 120,
+							["coord"] = { 24.5, 55.2, 1527 },
+							["provider"] = { "n", 159682 },	-- Tracker Samara
+							["sourceQuest"] = 57955,	-- To Ankhaten Harbor
+						}),
+						q(57873, {	-- Word from Orsis
+							["lvl"] = 120,
+							["coord"] = { 40.1, 21.3, 1527 },
+							["provider"] = { "n", 159544 },	-- Arik Scorpidsting
+						}),
 					}),
 					n(-16, {	-- Rares
 						n(155703, {	-- Anq'uri the Titanic
@@ -294,10 +394,20 @@ _.ExpansionFeatures =
 							["coord"] = { 42.0, 37.8, 1527 },
 						}),
 						n(162147, {	-- Corpse Eater
-							--["questID"] = ,
+							["questID"] = 58696,
+							["coord"] = { 30.7, 49.8, 1527 },
 							["isDaily"] = true,
 							["g"] = {
 								i(174769),	-- Malevolent Drone
+							},
+						}),
+						n(162163, {	-- High Priest Ytaessis
+							--["questID"] = ,
+							["coords"] = {
+								{ 45.1, 60.7, 1527 },
+								{ 46.8, 58.2, 1527 },
+								{ 45.7, 56.0, 1527 },
+								{ 43.8, 57.8, 1527 },
 							},
 						}),
 						n(154604, {	-- Lord Aj'qirai
@@ -308,6 +418,11 @@ _.ExpansionFeatures =
 								i(174475),	-- Stinky Sack (pet)
 							},
 						}),
+						n(162142, {	-- Qho
+							["questID"] = 58693,
+							["coord"] = { 37.5, 60.4, 1527 },
+							["isDaily"] = true,
+						}),
 						n(162140, {	-- Skikx'traz
 							--["questID"] = ,
 							--["coord"] = { , 1527 },
@@ -316,8 +431,49 @@ _.ExpansionFeatures =
 								i(174476),	-- Black Chitinous Plate (pet)
 							},
 						}),
+						n(162170, {	-- Warcaster Xeshro
+							["questID"] = 58702,
+							["coord"] = { 33.7, 25.4, 1527 },
+						}),
 					}),
 					n(-34, {	-- World Quests
+						q(56308, {	-- Assault: Aqir Unearthed
+							["lvl"] = 120,
+							["isWorldQuest"] = true,
+							["g"] = {
+								i(174960),	-- Cache of the Aqir Swarm
+							},
+						}),
+						q(58974, {	-- Ambushed Settlers
+							["lvl"] = 120,
+							["coord"] = { 27.8, 57.1, 1527 },
+							["isWorldQuest"] = true,
+						}),
+						q(58660, {	-- Burrowing Terrors
+							["lvl"] = 120,
+							["coord"] = { 31.6, 43.9, 1527 },
+							["isWorldQuest"] = true,
+						}),
+						q(58661, {	-- Burrowing Terrors
+							["lvl"] = 120,
+							["coord"] = { 45.1, 43.0, 1527 },
+							["isWorldQuest"] = true,
+						}),
+						q(58662, {	-- Burrowing Terrors
+							["lvl"] = 120,
+							["coord"] = { 37.2, 67.1, 1527 },
+							["isWorldQuest"] = true,
+						}),
+						q(58981, {	-- Hardened Hive
+							["lvl"] = 120,
+							["coord"] = { 46.9, 58.0, 1527 },
+							["isWorldQuest"] = true,
+						}),
+						q(58990, {	-- Titanus Egg
+							["lvl"] = 120,
+							["coord"] = { 28.3, 65.6, 1527 },
+							["isWorldQuest"] = true,
+						}),
 					}),
 				}),
 				n(-10076, {	-- Assault: The Black Empire
