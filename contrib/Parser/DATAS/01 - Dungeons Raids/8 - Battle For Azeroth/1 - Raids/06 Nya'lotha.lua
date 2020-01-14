@@ -12,6 +12,15 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			n(-1,  {	-- Common Boss Drop
 			}),
 			d(17, {	-- LFR
+				n(0, {	-- Zone Drops
+					i(175004),	-- Legwraps of Horrifying Figments
+					i(175005),	-- Belt of Concealed Intent
+					i(175010),	-- Maddened Adherent's Bulwark
+					i(175009),	-- Zealous Ritualist's Reverie
+					i(175008),	-- Lurking Schemer's Band
+					i(175507),	-- Footpads of Terrible Delusions
+					i(175006),	-- Gauntlets of Nightmare Manifest
+				}),
 				ach(14193, {	-- Vision of Destiny
 					e(2368, {	-- Wrathion, the Black Emperor
 						["crs"] = { 156818 },
@@ -203,6 +212,15 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					ach(14146, {	-- Glory of the Ny'alotha Raider
 						i(174861),	-- Wriggling Parasite
 					}),
+				}),
+				n(0, {	-- Zone Drops
+					i(175004),	-- Legwraps of Horrifying Figments
+					i(175005),	-- Belt of Concealed Intent
+					i(175010),	-- Maddened Adherent's Bulwark
+					i(175009),	-- Zealous Ritualist's Reverie
+					i(175008),	-- Lurking Schemer's Band
+					i(175507),	-- Footpads of Terrible Delusions
+					i(175006),	-- Gauntlets of Nightmare Manifest
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },
@@ -403,6 +421,15 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					ach(14146, {	-- Glory of the Ny'alotha Raider
 						i(174861),	-- Wriggling Parasite
 					}),
+				}),
+				n(0, {	-- Zone Drops
+					i(175004),	-- Legwraps of Horrifying Figments
+					i(175005),	-- Belt of Concealed Intent
+					i(175010),	-- Maddened Adherent's Bulwark
+					i(175009),	-- Zealous Ritualist's Reverie
+					i(175008),	-- Lurking Schemer's Band
+					i(175507),	-- Footpads of Terrible Delusions
+					i(175006),	-- Gauntlets of Nightmare Manifest
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },
@@ -611,6 +638,15 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					ach(14146, {	-- Glory of the Ny'alotha Raider
 						i(174861),	-- Wriggling Parasite
 					}),
+				}),
+				n(0, {	-- Zone Drops
+					i(175004),	-- Legwraps of Horrifying Figments
+					i(175005),	-- Belt of Concealed Intent
+					i(175010),	-- Maddened Adherent's Bulwark
+					i(175009),	-- Zealous Ritualist's Reverie
+					i(175008),	-- Lurking Schemer's Band
+					i(175507),	-- Footpads of Terrible Delusions
+					i(175006),	-- Gauntlets of Nightmare Manifest
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },
