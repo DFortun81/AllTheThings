@@ -67,7 +67,7 @@ _.WorldEvents =
 				i(152790),	-- Vile Fiend
 				i(49286),	-- X-51 Nether-Rocket X-TREME
 			}),
-			e(861, {	-- Ordos
+			n(72057, {	-- Ordos
 				-- Head
 				un(38, i(105804)),	-- Aladya's Spiritfire Greathelm
 				un(38, i(105810)),	-- Buc-Zakai Burning Hood
