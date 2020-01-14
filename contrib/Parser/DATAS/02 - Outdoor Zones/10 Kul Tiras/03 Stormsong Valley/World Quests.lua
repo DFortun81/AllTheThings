@@ -105,10 +105,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52968, {	-- Time for a Little Blood
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(52229, {	-- Too Much To Bear (might be Horde equivalent? didn't get this on Ally, only 52054)
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -468,9 +464,13 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 120,
 					}),
-					q(52941, {	-- Light in the Darkness
+					q(52941, {	-- Light in the Darkness (A)
 						["isWorldQuest"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(52968, {	-- Light in the Darkness
+						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
 					q(52794, {	-- Lizards and Ledgers
