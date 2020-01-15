@@ -553,7 +553,14 @@ _.Zones =
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 58634,	-- Opening the Gateway
 							["g"] = {
-								i(173363),	-- Vessel of Horrific Visions
+								-- Plate
+								i(173821),	-- Malignant Leviathan's Clasp
+								i(173455),	-- Malignant Leviathan's Stompers
+								-- Mail
+								-- Leather
+								-- Cloth
+								i(173812),	-- Vile Manipulator's Cord
+								i(173431),	-- Vile Manipulator's Footwraps
 							},
 						}),
 						q(57374, {	-- Into the Darkest Depths
