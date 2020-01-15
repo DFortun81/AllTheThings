@@ -13,6 +13,7 @@ _.Zones =
 					1473,	-- Chamber of Heart (Repaired)
 					1538,	-- scenario map for "Beginning the Descent"
 					1539,	-- scenario map for "Beginning the Descent"
+					1604,	-- scenario map after completing the first heroic vision of orgrimmar
 				},
 				["lvl"] = 110,
 				["g"] = {
@@ -572,9 +573,9 @@ _.Zones =
 								currency(1719),	-- Corrupted Memento
 							},
 						}),
-						q(58615, {	-- Whispers in the Dark (picked up in a scenario map with no mapID, but should be 1473)
+						q(58615, {	-- Whispers in the Dark
 							["lvl"] = 120,
-							["coord"] = { 50.1, 59.1, 1473 },
+							["coord"] = { 50.1, 59.1, 1473 }, -- technicaly 1604?
 							["provider"] = { "n", 161805 },	-- Magni Bronzebeard
 							["sourceQuest"] = 57374,	-- Into the Darkest Depths
 						}),

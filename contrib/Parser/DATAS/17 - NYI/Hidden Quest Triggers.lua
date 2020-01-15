@@ -2037,6 +2037,8 @@ _.NeverImplemented =
 		q(56135),	-- Vale of Eternal Blossoms - activated a celestial buff 2nd time (niuzao?)
 		q(59141),	-- Vale of Eternal Blossoms - triggered after turning in the Black Empire assault. Probably a loot lock trigger?
 		-- Horrific Visions
+		q(57841),	-- first horrific vision cleared as horde
+		q(58581),	-- first horrific vision cleared as horde
 		q(57039),	-- Valley of Spirits cleansed (Orgrimmar)
 		q(57129),	-- Valley of Wisdom cleansed (Orgrimmar)
 		q(57001),	-- Valley of Strength cleansed (Orgrimmar)
