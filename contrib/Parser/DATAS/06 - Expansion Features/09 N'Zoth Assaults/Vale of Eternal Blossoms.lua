@@ -630,7 +630,6 @@ _.ExpansionFeatures =
 					["coord"] = { 83.7, 27.1, 1530 },
 					["provider"] = { "n", 156003 },	-- Lorewalker Cho
 					["sourceQuest"] = 56538,	-- Clans of the Mogu
-					["sourceQuest"] = 56771,	-- Time-Lost Warriors
 				}),
 				q(57068, {	-- Kite Surveillance
 					["coord"] = { 43.9, 4.9, 1530 },
