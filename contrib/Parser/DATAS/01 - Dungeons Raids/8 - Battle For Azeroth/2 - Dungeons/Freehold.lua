@@ -13,7 +13,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
-				q(52454, {	-- Freehold: Dread Captain Vandegrim
+				q(52456, {	-- Freehold: Veteran Man O' War
 					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
