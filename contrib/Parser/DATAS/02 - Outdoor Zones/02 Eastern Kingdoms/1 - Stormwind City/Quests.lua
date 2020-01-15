@@ -471,6 +471,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 107574 },	-- Anduin Wrynn <King of Stormwind>
 					["coord"] = { 85.92, 31.57, 84 },
+					["lvl"] = 120,
 					["description"] = "Automatically granted.",
 				}),
 				q(47202, {	-- A Personal Message

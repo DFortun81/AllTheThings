@@ -492,37 +492,42 @@ _.Zones =
 										["sourceQuest"] = 53890,	-- New Allies, New Problems
 									}),
 									q(53892, {	-- Where Are the Workers?
+										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
-										["maps"] = { 84 },	-- Twilight Highlands
-										["coord"] = { 44.1, 73.4, 84 },
+										["maps"] = { 241 },	-- Twilight Highlands
+										["coord"] = { 44.1, 73.4, 241 },
 										["provider"] = { "n", 145641 },	-- Kiro
 										["sourceQuest"] = 53891,	-- No Problem Too Small
 									}),
 									q(53893, {	-- A Little Goodwill
+										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
-										["maps"] = { 84 },	-- Twilight Highlands
-										["coord"] = { 46.8, 66.2, 84 },
+										["maps"] = { 241 },	-- Twilight Highlands
+										["coord"] = { 46.8, 66.2, 241 },
 										["provider"] = { "n", 145416 },	-- Kiro
 										["sourceQuest"] = 53892,	-- Where Are the Workers?
 									}),
 									q(53894, {	-- Worthwhile Repairs
+										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
-										["maps"] = { 84 },	-- Twilight Highlands
-										["coord"] = { 46.8, 66.2, 84 },
+										["maps"] = { 241 },	-- Twilight Highlands
+										["coord"] = { 46.8, 66.2, 241 },
 										["provider"] = { "n", 145416 },	-- Kiro
 										["sourceQuest"] = 53892,	-- Where Are the Workers?
 									}),
 									q(53895, {	-- Peon Promotions!
+										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
-										["maps"] = { 84 },	-- Twilight Highlands
-										["coord"] = { 46.8, 66.2, 84 },
+										["maps"] = { 241 },	-- Twilight Highlands
+										["coord"] = { 46.8, 66.2, 241 },
 										["provider"] = { "n", 145416 },	-- Kiro
 										["sourceQuest"] = 53892,	-- Where Are the Workers?
 									}),
 									q(53897, {	-- A Party in Your Honor
+										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
-										["maps"] = { 84 },	-- Twilight Highlands
-										["coord"] = { 46.8, 66.2, 84 },
+										["maps"] = { 241 },	-- Twilight Highlands
+										["coord"] = { 46.8, 66.2, 241 },
 										["provider"] = { "n", 145416 },	-- Kiro
 										["sourceQuests"] = {
 											53893,	-- A Little Goodwill
@@ -531,16 +536,18 @@ _.Zones =
 										},
 									}),
 									q(53898, {	-- Strength and Honor
+										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
-										["maps"] = { 84 },	-- Twilight Highlands
-										["coord"] = { 45.0, 76.2, 84 },
+										["maps"] = { 241 },	-- Twilight Highlands
+										["coord"] = { 45.0, 76.2, 241 },
 										["provider"] = { "n", 145416 },	-- Kiro
 										["sourceQuest"] = 53897,	-- A Party in Your Honor
 									}),
 									q(54026, {	-- Job's Done
+										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
-										["maps"] = { 84 },	-- Twilight Highlands
-										["coord"] = { 45.0, 76.2, 84 },
+										["maps"] = { 241 },	-- Twilight Highlands
+										["coord"] = { 45.0, 76.2, 241 },
 										["provider"] = { "n", 145416 },	-- Kiro
 										["sourceQuest"] = 53898,	-- Strength and Honor
 									}),
@@ -551,6 +558,7 @@ _.Zones =
 										["sourceQuest"] = 54026,	-- Job's Done
 									}),
 									q(58087, {	-- Destroying the Source
+										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
 										["maps"] = { 862 },	-- Zuldazar
 										["coord"] = { 74.8, 63.0, 862 },
@@ -558,6 +566,7 @@ _.Zones =
 										["sourceQuest"] = 53899,	-- On the Outskirts
 									}),
 									q(53901, {	-- Explosions Always Work
+										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
 										["maps"] = { 862 },	-- Zuldazar
 										["coord"] = { 74.8, 63.0, 862 },
@@ -565,6 +574,7 @@ _.Zones =
 										["sourceQuest"] = 53899,	-- On the Outskirts
 									}),
 									q(53900, {	-- We'll Use Their Weapons
+										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
 										["maps"] = { 862 },	-- Zuldazar
 										["coord"] = { 74.8, 63.0, 862 },
@@ -572,6 +582,7 @@ _.Zones =
 										["sourceQuest"] = 53899,	-- On the Outskirts
 									}),
 									q(53902, {	-- Taking Out the Tidecaller
+										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
 										["maps"] = { 862 },	-- Zuldazar
 										["coord"] = { 74.8, 63.0, 862 },
@@ -583,6 +594,7 @@ _.Zones =
 										},
 									}),
 									q(54027, {	-- Threat Contained
+										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
 										["maps"] = { 862 },	-- Zuldazar
 										["coord"] = { 74.8, 63.0, 862 },
@@ -596,6 +608,7 @@ _.Zones =
 										["sourceQuest"] = 54027,	-- Threat Contained
 									}),
 									q(53904, {	-- The Vintner's Assistants
+										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
 										["maps"] = { 680 },	-- Suramar
 										["coord"] = { 58.9, 55.0, 680 },
@@ -603,6 +616,7 @@ _.Zones =
 										["sourceQuest"] = 53903,	-- Meet with Meerah
 									}),
 									q(53905, {	-- Playing to Their Strengths
+										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
 										["maps"] = { 680 },	-- Suramar
 										["coord"] = { 58.9, 55.0, 680 },
@@ -610,6 +624,7 @@ _.Zones =
 										["sourceQuest"] = 53904,	-- The Vintner's Assistants
 									}),
 									q(54036, {	-- A Particular Process
+										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
 										["maps"] = { 680 },	-- Suramar
 										["coord"] = { 58.7, 55.5, 680 },
@@ -617,6 +632,7 @@ _.Zones =
 										["sourceQuest"] = 53905,	-- Playing to Their Strengths
 									}),
 									q(53906, {	-- Fermented for the Horde
+										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
 										["maps"] = { 680 },	-- Suramar
 										["coord"] = { 60.5, 56.2, 680 },
@@ -624,6 +640,7 @@ _.Zones =
 										["sourceQuest"] = 54036,	-- A Particular Process
 									}),
 									q(53907, {	-- Sip and Savor
+										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
 										["maps"] = { 680 },	-- Suramar
 										["coord"] = { 60.5, 56.2, 680 },
@@ -634,6 +651,7 @@ _.Zones =
 										},
 									}),
 									q(53908, {	-- Awaiting Our Arrival
+										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
 										["maps"] = { 680 },	-- Suramar
 										["coord"] = { 58.7, 55.5, 680 },
