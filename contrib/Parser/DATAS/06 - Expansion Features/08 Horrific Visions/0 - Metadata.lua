@@ -94,6 +94,7 @@ _.ExpansionFeatures =
 						i(174921),	-- Void-Touched Skull (Toy)
 						i(174924),	-- Void-Touched Souvenir Totem (Toy)
 						i(173308),	-- Mark of Boistrous Duty (Rank 1)
+						i(168936),	-- Ward of Unwavering Hope (Rank 1)
 						i(173288),	-- Overflowing Azerite Geode
 						i(174287),	-- Sparks of Unwavering Strength
 						i(173289),	-- Spark of Inspiration (Rank 2)

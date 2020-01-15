@@ -2043,6 +2043,7 @@ _.NeverImplemented =
 		q(57129),	-- Valley of Wisdom cleansed (Orgrimmar)
 		q(57001),	-- Valley of Strength cleansed (Orgrimmar)
 		q(57372),	-- The Drag cleansed (Orgrimmar)
+		q(58577),	-- The Drag cleansed (Orgrimmar) - probably controls activation of the quick-navigation back to the start?
 		q(57153),	-- Dwarven District cleansed (Stormwind)
 		q(58894),	-- Dwarven District - kill the wing boss. Activates a portal to the cathedral district
 		q(57216),	-- Old Town cleansed (Stormwind)
