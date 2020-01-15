@@ -59,6 +59,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 161404 },	-- Taran Zhu
 							["sourceQuest"] = 56771,	-- Time-Lost Warriors
 						}),
+						q(58469, {	-- Tears in the Vale
+							["coord"] = { 83.8, 49.0, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 154261 },	-- Chi-Ji
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
 						q(58466, {	-- Torment From Beyond
 							["coord"] = { 66.3, 40.6, 1530 },
 							["isDaily"] = true,
@@ -210,6 +216,11 @@ _.ExpansionFeatures =
 							["coord"] = { 41.3, 45.4, 1530 },
 							["isWorldQuest"] = true,
 						}),
+						q(57146, {	-- Corruption Tear
+							["lvl"] = 120,
+							["coord"] = { 74.2, 40.0, 1530 },
+							["isWorldQuest"] = true,
+						}),
 						q(56099, {	-- Font of Corruption
 							["lvl"] = 120,
 							["coord"] = { 60.4, 67.8, 1530 },
@@ -242,6 +253,10 @@ _.ExpansionFeatures =
 						q(56074, {	-- Void Conduit
 							["lvl"] = 120,
 							["coord"] = { 49.3, 66.7, 1530 },
+							["isWorldQuest"] = true,
+						}),
+						q(56178, {	-- Void Conduit
+							["lvl"] = 120,
 							["isWorldQuest"] = true,
 						}),
 					}),
