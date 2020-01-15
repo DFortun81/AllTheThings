@@ -2070,6 +2070,7 @@ _.NeverImplemented =
 		q(55691),	-- Uldum - Amathet cache
 		q(55692),	-- Uldum - Amathet Reliquary (requires tol'vir relic to open)
 		q(55698),	-- Uldum - Amathet cache
+		q(55699),	-- Uldum - Amathet cache
 		q(55700),	-- Uldum - Amathet cache
 		q(57623),	-- Uldum - Black Empire Cache
 		q(57624),	-- Uldum - Black Empire Cache

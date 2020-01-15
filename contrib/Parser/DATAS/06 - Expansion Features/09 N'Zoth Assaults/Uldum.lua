@@ -233,6 +233,12 @@ _.ExpansionFeatures =
 							["coord"] = { 73.5, 64.6, 1527 },
 							["isDaily"] = true,
 						}),
+						n(162352, {	-- Spirit of Dark Ritualist Zakahn
+							["questID"] = 58716,
+							["coord"] = { 49.98, 40.11, 1527 },
+							["isDaily"] = true,
+							["description"] = "In the underwater cave."
+						}),
 						n(151878, {	-- Sun King Nahkotep
 							["questID"] = 58613,
 							["coord"] = { 79.0, 63.9, 1527 },
@@ -297,6 +303,7 @@ _.ExpansionFeatures =
 							["isWorldQuest"] = true,
 							["g"] = {
 								i(173457),	-- Malignant Leviathan's Headguard (probably from all assault rewards?)
+								i(174955),	-- Nefarious Tormentor's Vambraces
 							},
 						}),
 						q(55356, {	-- Beacon of the Sun King
