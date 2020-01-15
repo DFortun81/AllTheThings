@@ -971,9 +971,6 @@ _.ExpansionFeatures =
 					["coord"] = { 54.9, 33.1, 1527 },
 					["description"] = "Granted upon entering the Seat of Ramkahen.",
 					["sourceQuest"] = 56376,	-- Surfacing Threats
-					["g"] = {
-						i(173280),	-- Token of Death's Door (Rank 1)
-					},
 				}),
 				q(57222, {	-- Investigating the Halls
 					["coord"] = { 68.9, 52.7, 1527 },
@@ -1019,6 +1016,9 @@ _.ExpansionFeatures =
 					["coord"] = { 54.9, 32.7, 1527 },
 					["provider"] = { "n", 155095 },	-- King Phaoris
 					["sourceQuest"] = 56472,	-- The Uldum Accord
+					["g"] = {
+						i(173280),	-- Token of Death's Door
+					},
 				}),
 				q(56209, {	-- The Halls of Origination
 					["lvl"] = 120,
