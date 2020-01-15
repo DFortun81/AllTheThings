@@ -279,6 +279,11 @@ _.ExpansionFeatures =
 							["coord"] = { 65.5, 37.8, 1527 },
 							["isWorldQuest"] = true,
 						}),
+						q(57218, {	-- Unearthed Keeper
+							["lvl"] = 120,
+							["coord"] = { 82.5, 48.0, 1527 },
+							["isWorldQuest"] = true,
+						}),
 					}),
 				}),
 				n(-10079, {	-- Assault: Aqir Unearthed
