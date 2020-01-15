@@ -107,15 +107,15 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						-- TODO: These crates rotate every week and contain 3-4 random items from the related island expedition. Should we map all the items here?
-						-- The following 3 mounts can appearantly drop from any box, but waiting for 8.3 to confirm
-						-- i(163585),	-- Surf Jelly
-						-- i(166468),	-- Bloodgorged Hunter
-						-- i(166470),	-- Stonehide Elderhorn
-						i(173950, {	-- Crestfall Salvage
+						i(173950, {	-- Crestfall Salvage -- Confirmed and finished.
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
 							["g"] = {
+								i(166468),	-- Bloodgorged Hunter
+								i(163583),	-- Craghorn Chasm-Leaper
 								i(163584),	-- Twilight Avenger
 								i(163586),	-- Squawks
+								i(166470),	-- Stonehide Elderhorn
+								i(163585),	-- Surf Jelly
 							},
 						}),
 						i(173949, {	-- Dread Chain Salvage
@@ -131,17 +131,27 @@ _.Zones =
 								i(166466),	-- Risen Mare
 							},
 						}),
-						i(173989, {	-- Jorundall Salvage
+						i(173989, {	-- Jorundall Salvage - Confirmed and finished.
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
 							["g"] = {
+								i(166468),	-- Bloodgorged Hunter
 								i(166467),	-- Island Thunderscale
+								i(163585),	-- Surf Jelly
+								i(166468),	-- Bloodgorged Hunter
+								i(166470),	-- Stonehide Elderhorn
 							},
 						}),
 						i(173992, {	-- Skitting Hollow Salvage
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
 						}),
-						i(173991, {	-- Rotting Mire Salvage
+						i(173991, {	-- Rotting Mire Salvage -- Confirmed and finished.
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+							["g"] = {
+								i(166468),	-- Bloodgorged Hunter
+								i(163586),	-- Squawks
+								i(166470),	-- Stonehide Elderhorn
+								i(163585),	-- Surf Jelly
+							},
 						}),
 						i(173993, {	-- Snowblossom Salvage
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
