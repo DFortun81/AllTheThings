@@ -260,6 +260,11 @@ _.ExpansionFeatures =
 								{ 66.5, 34.2, 1527 },
 							},
 						}),
+						n(157188, {	-- The Tomb Widow
+							["questID"] = 57285,
+							["isDaily"] = true,
+							["coord"] = { 83.80, 47.22, 1527 },
+						}),
 						n(157164, {	-- Zealot Tekem
 							["questID"] = 57279,
 							["coord"] = { 80.2, 57.0, 1527 },
@@ -341,6 +346,11 @@ _.ExpansionFeatures =
 						q(57218, {	-- Unearthed Keeper
 							["lvl"] = 120,
 							["coord"] = { 82.5, 48.0, 1527 },
+							["isWorldQuest"] = true,
+						}),
+						q(57217, {	-- Unearthed Keeper
+							["lvl"] = 120,
+							["coord"] = { 71, 68.0, 1527 },
 							["isWorldQuest"] = true,
 						}),
 					}),
