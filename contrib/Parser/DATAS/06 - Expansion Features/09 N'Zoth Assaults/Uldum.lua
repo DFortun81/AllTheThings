@@ -17,6 +17,21 @@ _.ExpansionFeatures =
 			n(-10072, {	-- N'Zoth Assaults
 				n(-10075, {	-- Assault: Amathet Advance
 					n(-17,  {	-- Quests
+						q(58640, {	-- A Crack in the Armor
+							["lvl"] = 120,
+							["coord"] = { 68.9, 57.9, 1527 },
+							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+							["sourceQuests"] = {
+								58639,	-- Buried History
+								58646,	-- Chew On This!
+							},
+						}),
+						q(58638, {	-- A Deeper Dive
+							["lvl"] = 120,
+							["coord"] = { 54.9, 32.9, 1527 },
+							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+							["sourceQuest"] = 58636,	-- Eyes on the Amathet
+						}),
 						q(58287, {	-- A Smashing Plan
 							["lvl"] = 120,
 							["coord"] = { 54.8, 32.9, 1527 },
@@ -27,6 +42,12 @@ _.ExpansionFeatures =
 								currency(1755),	-- Coalescing Visions
 							},
 						}),
+						q(58645, {	-- A World Worth Saving
+							["lvl"] = 120,
+							["coord"] = { 71.6, 52.0, 1527 },
+							["provider"] = { "n", 161031 },	-- Captain Hadan
+							["sourceQuest"] = 58643,	-- Mutually Assured Destruction
+						}),
 						q(58281, {	-- Ancient Armaments
 							["lvl"] = 120,
 							["coord"] = { 54.8, 32.9, 1527 },
@@ -36,6 +57,12 @@ _.ExpansionFeatures =
 								currency(1755),	-- Coalescing Visions
 							},
 						}),
+						q(58639, {	-- Buried History
+							["lvl"] = 120,
+							["coord"] = { 68.9, 57.9, 1527 },
+							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+							["sourceQuest"] = 58638,	-- A Deeper Dive
+						}),
 						q(58290, {	-- Champions of the Amathet
 							["lvl"] = 120,
 							["coord"] = { 54.8, 32.9, 1527 },
@@ -44,6 +71,12 @@ _.ExpansionFeatures =
 							["g"] = {
 								currency(1755),	-- Coalescing Visions
 							},
+						}),
+						q(58646, {	-- Chew On This!
+							["lvl"] = 120,
+							["coord"] = { 68.9, 57.9, 1527 },
+							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+							["sourceQuest"] = 58638,	-- A Deeper Dive
 						}),
 						q(58282, {	-- Down From the Sky
 							["lvl"] = 120,
@@ -59,6 +92,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 160957 },	-- Arianna Swiftsand
 							["sourceQuest"] = 56472,	-- The Uldum Accord
 						}),
+						q(58636, {	-- Eyes on the Amathet
+							["lvl"] = 120,
+							["coord"] = { 54.9, 32.9, 1527 },
+							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+							["sourceQuest"] = 56472,	-- The Uldum Accord
+						}),
 						q(58289, {	-- Guarded Secrets
 							["lvl"] = 120,
 							["coord"] = { 54.9, 32.9, 1527 },
@@ -67,6 +106,24 @@ _.ExpansionFeatures =
 							["g"] = {
 								currency(1755),	-- Coalescing Visions
 							},
+						}),
+						q(58643, {	-- Mutually Assured Destruction
+							["lvl"] = 120,
+							["coord"] = { 72.9, 48.4, 1527 },
+							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+							["sourceQuest"] = 58642,	-- Shared Goals
+						}),
+						q(58641, {	-- Seekers of Corruption
+							["lvl"] = 120,
+							["coord"] = { 72.9, 48.4, 1527 },
+							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+							["sourceQuest"] = 58640,	-- A Crack in the Armor
+						}),
+						q(58642, {	-- Shared Goals
+							["lvl"] = 120,
+							["coord"] = { 72.9, 48.4, 1527 },
+							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+							["sourceQuest"] = 58641,	-- Seekers of Corruption
 						}),
 						q(58288, {	-- The Sun King's Chosen
 							["lvl"] = 120,
@@ -929,51 +986,11 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
-				q(58640, {	-- A Crack in the Armor
-					["lvl"] = 120,
-					["coord"] = { 68.9, 57.9, 1527 },
-					["provider"] = { "n", 155102 },	-- High Explorer Dellorah
-					["sourceQuests"] = {
-						58639,	-- Buried History
-						58646,	-- Chew On This!
-					},
-				}),
-				q(58638, {	-- A Deeper Dive
-					["lvl"] = 120,
-					["coord"] = { 54.9, 32.9, 1527 },
-					["provider"] = { "n", 155102 },	-- High Explorer Dellorah
-					["sourceQuest"] = 58636,	-- Eyes on the Amathet
-				}),
-				q(58645, {	-- A World Worth Saving
-					["lvl"] = 120,
-					["coord"] = { 71.6, 52.0, 1527 },
-					["provider"] = { "n", 161031 },	-- Captain Hadan
-					["sourceQuest"] = 58643,	-- Mutually Assured Destruction
-				}),
 				q(58283, {	-- Blind Leading the Blind
 					["lvl"] = 120,
 					["coord"] = { 54.6, 32.8, 1527 },
 					["isDaily"] = true,
 					["provider"] = { "n", 155099 },	-- High Priest Amet
-					["sourceQuest"] = 56472,	-- The Uldum Accord
-				}),
-				q(58639, {	-- Buried History
-					["lvl"] = 120,
-					["coord"] = { 68.9, 57.9, 1527 },
-					["provider"] = { "n", 155102 },	-- High Explorer Dellorah
-					["sourceQuest"] = 58638,	-- A Deeper Dive
-				}),
-				q(58646, {	-- Chew On This!
-					["lvl"] = 120,
-					["coord"] = { 68.9, 57.9, 1527 },
-					["provider"] = { "n", 155102 },	-- High Explorer Dellorah
-					["sourceQuest"] = 58638,	-- A Deeper Dive
-				}),
-				q(58636, {	-- Eyes on the Amathet
-					["lvl"] = 120,
-					["coord"] = { 54.9, 32.9, 1527 },
-					["provider"] = { "n", 155102 },	-- High Explorer Dellorah
-					["description"] = "The Amathet Advance assault must be active to get this quest.",
 					["sourceQuest"] = 56472,	-- The Uldum Accord
 				}),
 				q(56377, {	-- Forging Onward
@@ -994,24 +1011,6 @@ _.ExpansionFeatures =
 					["g"] = {
 						currency(1755),	-- Coalescing Visions
 					},
-				}),
-				q(58643, {	-- Mutually Assured Destruction
-					["lvl"] = 120,
-					["coord"] = { 72.9, 48.4, 1527 },
-					["provider"] = { "n", 155102 },	-- High Explorer Dellorah
-					["sourceQuest"] = 58642,	-- Shared Goals
-				}),
-				q(58641, {	-- Seekers of Corruption
-					["lvl"] = 120,
-					["coord"] = { 72.9, 48.4, 1527 },
-					["provider"] = { "n", 155102 },	-- High Explorer Dellorah
-					["sourceQuest"] = 58640,	-- A Crack in the Armor
-				}),
-				q(58642, {	-- Shared Goals
-					["lvl"] = 120,
-					["coord"] = { 72.9, 48.4, 1527 },
-					["provider"] = { "n", 155102 },	-- High Explorer Dellorah
-					["sourceQuest"] = 58641,	-- Seekers of Corruption
 				}),
 				q(58097, {	-- Supplies from the Uldum Accord
 					["repeatable"] = true,
