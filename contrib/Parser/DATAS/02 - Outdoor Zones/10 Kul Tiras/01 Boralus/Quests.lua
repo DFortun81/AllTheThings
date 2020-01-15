@@ -396,6 +396,13 @@ _.Zones =
 						i(155020),	-- Sea Raider's Breastplate
 					},
 				}),
+				q(57324, {	-- Sail With the Tide
+					--["sourceQuests"] = { 57126 },	-- ...And Following Seas -- maybe this one? but it was back in 8.2.5
+					["coord"] = { 69.34, 27.15, 1161 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
+					["provider"] = { "n", 150633 },	-- Lady Jaina Proudmoore
+				}),
 				q(51487, {	-- Searching for Answers
 					["sourceQuests"] = { 47952 },	-- The Missing Fleet
 					["coord"] = { 65.2, 68.7, 1161 },
