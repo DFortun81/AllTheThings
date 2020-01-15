@@ -22,6 +22,7 @@ _.ExpansionFeatures =
 							["coord"] = { 54.8, 32.9, 1527 },
 							["isDaily"] = true,
 							["provider"] = { "n", 155096 },	-- High Commander Kamses
+							["sourceQuest"] = 56472,	-- The Uldum Accord
 							["g"] = {
 								currency(1755),	-- Coalescing Visions
 							},
@@ -81,6 +82,7 @@ _.ExpansionFeatures =
 							["coord"] = { 54.9, 32.7, 1527 },
 							["isDaily"] = true,
 							["provider"] = { "n", 155095 },	-- King Phaoris
+							["sourceQuest"] = 56472,	-- The Uldum Accord
 							["g"] = {
 								currency(1755),	-- Coalescing Visions
 							},
@@ -396,7 +398,10 @@ _.ExpansionFeatures =
 						}),
 						n(162172, {	-- Aqir Warcaster
 							["questID"] = 58694,
-							["coord"] = { 42.0, 37.8, 1527 },
+							["coords"] = {
+								{ 42.0, 37.8, 1527 },
+								{ 19.2, 59.1, 1527 },
+							},
 						}),
 						n(162147, {	-- Corpse Eater
 							["questID"] = 58696,
