@@ -216,7 +216,7 @@ _.Achievements =
 							},
 						}),
 					}),
-				--[[	n(-691, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
+					n(-691, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
 						ach(13959, {	-- Challenger: Battle for Azeroth Season 4
 						--	["u"] = 4, S3
 							["g"] = {
@@ -285,7 +285,7 @@ _.Achievements =
 								}),
 							},
 						}),
-					}),--]]
+					}),
 					un(2, ach(420)),		-- Brutal Gladiator
 					un(2, ach(6938)),		-- Cataclysmic Gladiator
 					un(2, ach(11017)),		-- Challenger: Legion Season 1
