@@ -485,7 +485,10 @@ _.Zones =
 							["lvl"] = 120,
 							["coord"] = { 50.1, 59.1, 1473 },
 							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
-							["sourceQuest"] = 58583,	-- Where the Heart Is
+							["sourceQuests"] = {
+								58502,	-- Where the Heart Is (A)
+								58583,	-- Where the Heart Is (H)
+							},
 						}),
 						q(56374, {	-- A Titanic Problem
 							["lvl"] = 120,

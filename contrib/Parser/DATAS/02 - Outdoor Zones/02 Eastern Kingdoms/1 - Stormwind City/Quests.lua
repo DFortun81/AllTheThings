@@ -467,6 +467,12 @@ _.Zones =
 					["lvl"] = 25,
 					["u"] = 40,
 				}),
+				q(58496, {	-- An Unwelcome Advisor
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 107574 },	-- Anduin Wrynn <King of Stormwind>
+					["coord"] = { 85.92, 31.57, 84 },
+					["description"] = "Automatically granted.",
+				}),
 				q(47202, {	-- A Personal Message
 					["sourceQuest"] = 46275,	-- A Kingdom's Heart
 					["provider"] = { "n", 119357 },	-- Anduin Wrynn
@@ -1036,6 +1042,13 @@ _.Zones =
 						un(2, i(6677)),	-- Spellcrafter Wand
 					},
 				}),
+				q(58498, {	-- Return of the Warrior King
+					["provider"] = { "n", 154532 },	-- Magni Bronzebeard <The Speaker>
+					["coord"] = { 85.23, 32.49, 84 },
+					["sourceQuest"] = 58496,	-- An Unwelcome Advisor
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(26396, {	-- Return to Argus
 					["provider"] = { "n", 352 },	-- Dungar Longdrink
 					["coord"] = { 71.0, 72.6, 84 },
@@ -1414,6 +1427,13 @@ _.Zones =
 						i(65641),	-- Faceguard of the Order
 						i(65646),	-- Headguard of the Order
 					},
+				}),
+				q(58502, {	-- Where the Heart Is
+					["provider"] = { "n", 154532 },	-- Magni Bronzebeard <The Speaker>
+					["coord"] = { 87.45, 35.48, 84 },
+					["sourceQuest"] = 58498,	-- Return of the Warrior King
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
 				}),
 				q(332,   {	-- Wine Shop Advert
 					["provider"] = { "n", 1432 },	-- Renato Gallina
