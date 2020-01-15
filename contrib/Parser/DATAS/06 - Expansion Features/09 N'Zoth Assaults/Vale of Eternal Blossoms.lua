@@ -610,6 +610,11 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-17,  {	-- Quests
+				q(58168, {	-- A Dark, Glaring Reality
+					["coord"] = { 84.2, 51.7, 1530 },
+					["isDaily"] = true,
+					["provider"] = { "n", 160252 },	-- Blacktalon Agent
+				}),
 				q(58420, {	-- A Foul Annoyance
 					["coord"] = { 44.7, 73.8, 1530 },
 					["isDaily"] = true,
