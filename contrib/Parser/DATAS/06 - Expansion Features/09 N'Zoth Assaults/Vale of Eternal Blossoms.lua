@@ -667,6 +667,18 @@ _.ExpansionFeatures =
 					["coord"] = { 44.7, 73.9, 1530 },
 					["provider"] = { "n", 154444 },	-- Stormspeaker Qian
 					["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					["g"] = {
+						-- Plate
+						i(173837),	-- Malignant Leviathan's Hauberk
+						i(173836),	-- Malignant Leviathan's Helm
+						i(173835),	-- Malignant Leviathan's Pauldrons
+						-- Mail
+						-- Leather
+						-- Cloth
+						i(173846),	-- Vile Manipulator's Vestment
+						i(173845),	-- Vile Manipulator's Hood
+						i(173844),	-- Vile Manipulator's Amice
+					},
 				}),
 				q(56574, {	-- Reflections in Amber
 					["cr"] = 160825,	-- Amber-Shaper Esh'ri
