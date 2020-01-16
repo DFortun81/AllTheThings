@@ -197,14 +197,6 @@ _.ExpansionFeatures =
 								{ 80.7, 47.7, 1527 },
 							},
 						}),
-						n(157134, {	-- Ishak of the Four Winds
-							["questID"] = 57259,
-							["coord"] = { 73.9, 83.5, 1527 },
-							["isDaily"] = true,
-							["g"] = {
-								i(174641),	-- Drake of the Four Winds
-							},
-						}),
 						n(157157, {	-- Muminah the Incandescent
 							["questID"] = 57277,
 							["coord"] = { 66.8, 20.3, 1527 },
@@ -1075,6 +1067,14 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-16,    {	-- Rares
+				n(157134, {	-- Ishak of the Four Winds
+					["questID"] = 57259,
+					["coord"] = { 73.9, 83.5, 1527 },
+					["isDaily"] = true,
+					["g"] = {
+						i(174641),	-- Drake of the Four Winds
+					},
+				}),
 				n(162196, {	-- Obsidian Annihilator
 					-- TODO: need questID for this one
 					--["questID"] = ,
