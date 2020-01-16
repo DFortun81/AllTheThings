@@ -530,11 +530,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55650,	-- Only the Best Will Do
 				}),
-				q(54276, {	-- Trouble in Gnomeregan
-					["isBreadcrumb"] = true,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 147641 },	-- Radek Fuselock
-				}),
 				q(53763, {	-- Twist the Knife
 					["provider"] = { "n", 146384 },	-- Xal'atath
 					["coord"] = { 53.0, 13.6, 864 },

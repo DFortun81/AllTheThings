@@ -52,14 +52,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(46291, {	-- The Deadmines Strike Back
-					["sourceQuests"] = 46263,
-					["coord"] = { 41.4, 71.2, 52 },
-					["lvl"] = 110,
-					["g"] = {
-						i(122457),	-- Ultimate Battle-Training Stone
-					},
-				}),
 			}),
 		}),
 	}),

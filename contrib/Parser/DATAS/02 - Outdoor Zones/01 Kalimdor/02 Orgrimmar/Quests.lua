@@ -664,7 +664,9 @@ _.Zones =
 										["provider"] = { "n", 145424 },	-- Baine Bloodhoof
 										["sourceQuest"] = 53908,	-- Awaiting Our Arrival
 										["g"] = {
-											i(174066),	-- Caravan Hyena
+											ach(13206, {	-- Allied Races: Vulpera
+												i(174066),	-- Caravan Hyena
+											}),
 										},
 									}),
 									-- Vulpera starter quests

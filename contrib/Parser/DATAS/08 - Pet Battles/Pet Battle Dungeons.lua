@@ -66,15 +66,55 @@ _.PetBattles =
 			}),
 		},
 	}),
-	--[[
-	q(, {	-- Pet Battle Challenge: Blackrock Depths
-		--["coord"] = { },
+	q(58458, {	-- Pet Battle Challenge: Blackrock Depths
+		["provider"] = { "n", 161782 },	-- Burt Macklyn
+		["coord"] = { 33.1, 23.1, 35 },
+		["sourceQuest"] = 58457,	-- Shadows of Blackrock
 		["isWeekly"] = true,
-		--["provider"] = { "n",  },	-- 
-		--["maps"] = { },
+		["lvl"] = 120,
+		["maps"] = {
+			35,	-- The Blackrock
+			1578,	-- Pet Dungeon
+		},
 		["g"] = {
 			ach(14020, {	-- Pet Battle Challenge: Blackrock Depths
 				i(174830),	-- Shadowy Disguise
+			}),
+			q(58455, {	-- Shadowy Showdown (A)
+				["provider"] = { "n", 147645 },	-- Tizzy Gearjolt
+				["coord"] = { 50.3, 46.9, 1161 },
+				["isBreadcrumb"] = true,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+				["maps"] = { 1161 },	-- Dazar'alor
+			}),
+			q(58456, {	-- Shadowy Showdown (H)
+				["provider"] = { "n", 147641 },	-- Radek Fuselock
+				["coord"] = { 56.3, 30.8, 1165 },
+				["isBreadcrumb"] = true,
+				["races"] = HORDE_ONLY,
+				["lvl"] = 120,
+				["maps"] = { 1165 },	-- Dazar'alor
+			}),
+			q(58457, {	-- Shadows of Blackrock
+				["provider"] = { "n", 161782 },	-- Burt Macklyn
+				["coord"] = { 33.1, 23.1, 35 },
+				["sourceQuests"] = {
+					58455,	-- Shadowy Showdown (A)
+					58456,	-- Shadowy Showdown (H)
+				},
+				["lvl"] = 120,
+				["g"] = {
+					spell(314215),	-- Manapoof Link: Blackrock Depths
+					i(122457),	-- Ultimate Battle-Training Stone
+				},
+			}),
+			n(160210, {	-- Tasha Riley
+				["coord"] = { 41.1, 49.1, 1578 },
+				["description"] = "Speak with Tasha after you finish the last fight and join the COUNCIL OF CHAOS to get title.",
+				["g"] = {
+					title(415),	-- <Name>, Minion of Mayhem
+				},
 			}),
 			n(161782, {	-- Burt Macklyn
 				["coord"] = { 33.1, 23.1, 35 },
@@ -92,10 +132,10 @@ _.PetBattles =
 			}),
 		},
 	}),
-	]]--
 	q(46292, {	-- Pet Battle Challenge: Deadmines
 		["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
 		["coord"] = { 41.6, 71.2, 52 },
+		["sourceQuest"] = 46291,	-- The Deadmines Strike Back
 		["isWeekly"] = true,
 		["lvl"] = 110,
 		["maps"] = {
@@ -106,6 +146,22 @@ _.PetBattles =
 		["g"] = {
 			ach(11856, {	-- Pet Battle Challenge: Deadmines
 				i(151632),	-- Mining Monkey
+			}),
+			q(46293, {	-- Deadmines, Part Three?
+				["provider"] = { "n", 96479 },	-- Breanni
+				["coord"] = { 58.2, 39.4, 627 },
+				["lvl"] = 110,
+				["maps"] = { 627 },	-- Dalaran (Legion)
+			}),
+			q(46291, {	-- The Deadmines Strike Back
+				["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
+				["coord"] = { 41.6, 71.2, 52 },
+				["sourceQuest"] = 46263,	-- Deadmines, Part Three?
+				["lvl"] = 110,
+				["g"] = {
+					spell(244502),	-- Manapoof Link: Westfall
+					i(122457),	-- Ultimate Battle-Training Stone
+				},
 			}),
 			n(119390, {	-- Marcus "Bagman" Brown
 				["coord"] = { 41.6, 71.2, 52 },	-- Westfall
@@ -128,8 +184,10 @@ _.PetBattles =
 	}),
 	q(54186, {	-- Pet Battle Challenge: Gnomeregan
 		["provider"] = { "n", 147070 },	-- Micro Zoox
-		["isWeekly"] = true,
 		["coord"] = { 31.2, 37.4, 469 },	-- New Tinkertown
+		["sourceQuest"] = 54185,	-- Gnomeregan's New Guardians
+		["isWeekly"] = true,
+		["lvl"] = 120,
 		["maps"] = {
 			30,		-- New Tinkertown (Below)
 			840,	-- Pet Dungeon
@@ -139,6 +197,36 @@ _.PetBattles =
 		["g"] = {
 			ach(13269, {	-- Pet Battle Challenge: Gnomeregan
 				i(165894),	-- Mini Spider Tank
+			}),
+			q(54184, {	-- Trouble in Gnomeregan (A)
+				["provider"] = { "n", 147645 },	-- Tizzy Gearjolt
+				["coord"] = { 50.3, 46.9, 1161 },
+				["isBreadcrumb"] = true,
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 120,
+				["maps"] = { 1161 },	-- Boralus
+			}),
+			q(54276, {	-- Trouble in Gnomeregan (H)
+				["provider"] = { "n", 147641 },	-- Radek Fuselock
+				["coord"] = { 56.3, 30.8, 1165 },
+				["isBreadcrumb"] = true,
+				["races"] = HORDE_ONLY,
+				["lvl"] = 120,
+				["maps"] = { 1165 },	-- Dazar'alor
+			}),
+			q(54185, {	-- Gnomeregan's New Guardians
+				["provider"] = { "n", 147070 },	-- Micro Zoox
+				["coord"] = { 31.67, 71.61, 30 },
+				["sourceQuests"] = { 
+					54184, 	-- Trouble in Gnomeregan (A)
+					54276,	-- Trouble in Gnomeregan (H)
+				},
+				["lvl"] = 120,
+				["maps"] = { 30 },	-- New Tinkertown [Below]
+				["g"] = {
+					spell(286079),	-- Manapoof Link: Gnomeregan
+					i(122457),	-- Ultimate Battle-Training Stone
+				},
 			}),
 			n(147070, {	-- Micro Zoox
 				["coord"] = { 31.8, 71.6, 30 },	-- New Tinkertown (Below)
@@ -165,11 +253,13 @@ _.PetBattles =
 	q(56492, {	-- Pet Battle Challenge: Stratholme
 		["provider"] = { "n", 150987 },	-- Sean Wilkers
 		["coord"] = { 43.1, 19.9, 23 },
+		["sourceQuest"] = 56491,	-- Tiny Terrors of Stratholme
+		["isWeekly"] = true,
+		["lvl"] = 120,
 		["maps"] = {
 			23,	-- Eastern Plaguelands
 			1505,	-- Pet Dungeon
 		},
-		["isWeekly"] = true,
 		["g"] = {
 			ach(13627, {	-- Pet Battle Challenge: Stratholme
 				i(169670),	-- Evil Wizard Hat (Minimancer)
@@ -192,22 +282,26 @@ _.PetBattles =
 				["provider"] = { "n", 147645 },	-- Tizzy Gearjolt
 				["coord"] = { 50.3, 46.9, 1161 },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 1161 },	-- Boralus
 				["lvl"] = 120,
+				["maps"] = { 1161 },	-- Boralus
 			}),
 			q(56490, {	-- Restless Dead (H)
 				["provider"] = { "n", 147641 },	-- Radek Fuselock
-				["coord"] = { 56.2, 31.0, 1163 },
+				["coord"] = { 56.3, 30.8, 1165 },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 1163, 1164, 1165 },	-- Dazar'alor
 				["lvl"] = 120,
+				["maps"] = { 1165 },	-- Dazar'alor
 			}),
 			q(56491, {	-- Tiny Terrors of Stratholme
-				["sourceQuests"] = { 56489, 56490 },	-- Restless Dead (A, H)
 				["provider"] = { "n", 150987 },	-- Sean Wilkers
 				["coord"] = { 43.2, 20.0, 23 },
+				["sourceQuests"] = { 
+					56489,	-- Restless Dead (A)
+					56490,	-- Restless Dead (H)
+				},
 				["lvl"] = 120,
 				["g"] = {
+					spell(301941),	-- Manapoof Link: Stratholme
 					i(122457),	-- Ultimate Battle-Training Stone
 				},
 			}),
@@ -253,21 +347,32 @@ _.PetBattles =
 			ach(11765, {	-- Pet Battle Challenge: Wailing Caverns
 				i(147543),	-- Son of Skum
 			}),
+			q(45540, {	-- A Call from the Caverns
+				["providers"] = {
+					{ "n", 98725 },	-- Lio the Lioness (A)
+					{ "n", 115287 },	-- Serr'ah (H)
+				},
+				["coords"] = {
+					{ 59.2, 39.6, 627 },	-- Lio the Lioness (A)
+					{ 58.4, 38.0, 627 },	-- Serr'ah (H)
+				},
+				["lvl"] = 110,
+				["maps"] = { 627 },	-- Dalaran (Legion)
+			}),
+			q(45423, {	-- Wailing Critters
+				["provider"] = { "n", 116781 },	-- Muyani
+				["coord"] = { 38.8, 68.2, 10 },
+				["sourceQuest"] = 45540,	-- A Call from the Caverns
+				["lvl"] = 110,
+				["g"] = {
+					spell(244506),	-- Manapoof Link: Wailing Caverns
+					i(122457),	-- Ultimate Battle-Training Stone
+				},
+			}),
 			i(143753, {	-- Damp Pet Supplies
 				i(143754), 	-- Cavern Moccasin
 				i(143755),	-- Young Venomfang
 				i(143756),	-- Everliving Spore
-			}),	-- Note: There is no data on drops from this. Got this information from comments on Wowhead and other fan sites.
-			q(45423, {	-- Wailing Critters
-				["provider"] = { "n", 116781 },	-- Muyani
-				["coord"] = { 38.8, 68.2, 10 },
-				["maps"] = {
-					10,		-- Northern Barrens
-					825,	-- Pet Dungeon
-				},
-				["g"] = {
-					i(122457),	-- Ultimate Battle-Training Stone
-				},
 			}),
 		},
 	}),
