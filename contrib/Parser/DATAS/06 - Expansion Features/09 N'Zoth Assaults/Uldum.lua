@@ -263,10 +263,11 @@ _.ExpansionFeatures =
 							["isDaily"] = true,
 							["coord"] = { 83.80, 47.22, 1527 },
 						}),
-						n(157164, {	-- Zealot Tekem
-							["questID"] = 57279,
-							["coord"] = { 80.2, 57.0, 1527 },
+						n(152788, {	-- Uat-ka the Sun's Wrath
+							["questID"] = 55716,
+							["coord"] = { 67.5, 63.8, 1527 },
 							["isDaily"] = true,
+							["description"] = "Requires 3 players with |cFFFFD700Suntouched Amulet|r to channel the pillars at the same time to summon.",
 						}),
 						n(151852, {	-- Watcher Rehu
 							["questID"] = 55461,
@@ -277,6 +278,11 @@ _.ExpansionFeatures =
 								{ 79.3, 52.2, 1527 },
 								{ 77.7, 52.2, 1527 },
 							},
+						}),
+						n(157164, {	-- Zealot Tekem
+							["questID"] = 57279,
+							["coord"] = { 80.2, 57.0, 1527 },
+							["isDaily"] = true,
 						}),
 					}),
 					n(-34,  {	-- World Quests
