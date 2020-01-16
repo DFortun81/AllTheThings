@@ -583,9 +583,14 @@ _.ExpansionFeatures =
 					crit(2),	-- Assault: The Endless Swarm
 					crit(3),	-- Assault: The Black Empire
 				}),
-				ach(14161),	-- Get In My Belly!	-- TODO:: update with map-specific criteria when they get added
-				ach(14158),	-- It's Not A Tumor!
+				ach(14161),		-- Get In My Belly!	-- TODO:: update with map-specific criteria when they get added
+				ach(14158),		-- It's Not A Tumor!
 				ach(14160),		-- Rare to Well Done -- TODO:: update criteria when they get added
+				ach(6754, {	-- The Dark Heart of the Mogu
+					crit(4, {	-- The Thunder King (Vale of Eternal Blossoms)
+						["coord"] = { 40.19, 75.63, 1530 },
+					}),
+				}),
 			}),
 			n(-228, {	-- Flight Paths
 				fp(2544, {	-- Mistfall Village

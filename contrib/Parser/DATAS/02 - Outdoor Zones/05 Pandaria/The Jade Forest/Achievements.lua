@@ -25,6 +25,11 @@ _.Zones =
 				ach(7284),	-- Is Another Man's Treasure
 				ach(7997),	-- Riches of Pandaria
 				ach(7289),	-- Shadow Hopper (Jade Forest)
+				ach(6754, {	-- The Dark Heart of the Mogu
+					crit(3, {	-- Spirit Binders (Jade Forest)
+						["coord"] = { 42.26, 17.46, 371 },
+					}),
+				}),
 				ach(6300, {	-- Upjade Complete [Alliance]
 					["races"] = ALLIANCE_ONLY,	-- Alliance
 					["g"] = {

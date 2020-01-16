@@ -76,6 +76,11 @@ _.Zones =
 							}),
 						},
 					}),
+					ach(6754, {	-- The Dark Heart of the Mogu
+						crit(2, {	-- The Lost Dynasty (Krasarang Wilds)
+							["coord"] = { 52.96, 27.42, 418 },
+						}),
+					}),
 				}),
 				filter(101, {	-- Battle Pet
 					p(716), 	-- Amethyst Spiderling

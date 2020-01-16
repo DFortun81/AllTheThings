@@ -207,6 +207,12 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(6754, {	-- The Dark Heart of the Mogu
+					crit(1, {	-- Valley of the Emperors (Kun-Lai Summit)
+						["coord"] = { 53.0, 46.58, 379 },
+						["description"] = "The scroll is in the first big room."
+					}),
+				}),
 			}),
 		}),
 	}),

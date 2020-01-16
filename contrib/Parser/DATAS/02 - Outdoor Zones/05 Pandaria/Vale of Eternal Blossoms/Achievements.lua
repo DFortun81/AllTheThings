@@ -55,6 +55,11 @@ _.Zones =
 					crit(1),	-- Survival Ring: Flames
 				}),
 				ach(7322),	-- Roll Club
+				ach(6754, {	-- The Dark Heart of the Mogu
+					crit(4, {	-- The Thunder King (Vale of Eternal Blossoms)
+						["coord"] = { 40.19, 75.63, 390 },
+					}),
+				}),
 			}),
 		}),
 	}),

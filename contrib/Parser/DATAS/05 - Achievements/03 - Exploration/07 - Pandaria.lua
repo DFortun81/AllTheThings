@@ -365,10 +365,19 @@ _.Achievements =
 						crit(4),	-- The Pandaren Problem
 					}),
 					ach(6754, {	-- The Dark Heart of the Mogu
-						crit(1),	-- Valley of the Emperors (Kun-Lai Summit)
-						crit(2),	-- The Lost Dynasty (Krasarang Wilds)
-						crit(3),	-- Spirit Binders (Jade Forest)
-						crit(4),	-- The Thunder King (Vale of Eternal Blossoms)
+						crit(1, {	-- Valley of the Emperors (Kun-Lai Summit)
+							["coord"] = { 53.0, 46.58, 379 },
+							["description"] = "The scroll is in the first big room."
+						}),
+						crit(2, {	-- The Lost Dynasty (Krasarang Wilds)
+							["coord"] = { 52.96, 27.42, 418 },
+						}),
+						crit(3, {	-- Spirit Binders (Jade Forest)
+							["coord"] = { 42.26, 17.46, 371 },
+						}),
+						crit(4, {	-- The Thunder King (Vale of Eternal Blossoms)
+							["coord"] = { 40.19, 75.63, 390 },
+						}),
 					}),
 					ach(6855, {	-- The Seven Burdens of Shaohao
 						crit(1),	-- The Emperor's Burden - Part 1 (Jade Forest)
