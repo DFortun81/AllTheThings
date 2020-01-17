@@ -58,6 +58,9 @@ _.PVP =
 					i(32027, {	-- Merciless Gladiator's Quickblade
 						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 					}),
+					i(33309, {	-- Merciless Gladiator's Redoubt
+						["cost"] = { { "i", 137642, 5 } },	-- 2x Mark of Honor
+					}),
 					i(32961, {	-- Merciless Gladiator's Reprieve
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),

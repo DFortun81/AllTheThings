@@ -1967,6 +1967,7 @@ _.NeverImplemented =
 			},
 			["u"] = 1,
 		}))),
+		un(1, i(174373)),	-- Sandy nightsaber (unused version)
 		un(1, i(168673)),	-- keys to the silver mono-wheel (no mount in yet)
 		un(1, spell(215545)),	-- Fel Bat (Test) (Actual name of the Item)
 		un(1, model(17890, i(25596))), 	-- Peep's Whistle	 					(Never added in Game)
@@ -2012,7 +2013,6 @@ _.NeverImplemented =
 		un(1, i(129744)),	-- Iron Warhorse
 		un(1, i(137576)),	-- Dim Coldflame Core
 		un(1, i(137615)),	-- Molten Flarecore
-		un(1, i(166436)),	-- Sandy Nightsaber (only on ptr)
 		un(1, i(163063)),	-- Reins of the spectral phoenix (old trash 100 rep award)
 		un(1, i(163188)),	-- Surf Jelly (testing version)
 		un(1, i(163186)),	-- Tempestuous Skystallion (Old 400 Mounts Reward)
