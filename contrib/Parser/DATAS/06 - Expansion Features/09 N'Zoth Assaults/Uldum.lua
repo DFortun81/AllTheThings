@@ -323,6 +323,11 @@ _.ExpansionFeatures =
 							["coord"] = { 71.6, 45.9, 1527 },
 							["isWorldQuest"] = true,
 						}),
+						q(57215, {	-- Engine of Ascension
+							["lvl"] = 120,
+							["coord"] = { 64.45, 29.84, 1527 },
+							["isWorldQuest"] = true,
+						}),
 						q(55355, {	-- Lightblade Training Grounds
 							["lvl"] = 120,
 							["coord"] = { 64.5, 22.7, 1527 },
