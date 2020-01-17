@@ -19,6 +19,7 @@ _.InGameShop =
 		un(35, i(147901)),	-- Luminous Starseeker
 		un(35, i(122469)),	-- Mystic Runesaber
 		un(35, i(156564)),	-- Shu-zen, the Divine Sentinel
+		un(35, mount(308078)),	-- Squeakers, the Trickster
 		un(2, i(92724)),	-- Swift Windsteed
 		un(35, i(166776)),	-- Sylverian Dreamer
 		un(35, i(160589)),	-- The Dreadwake
