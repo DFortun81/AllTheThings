@@ -606,6 +606,18 @@ _.Zones =
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57378,	-- Remnants of a Shattered World
 						}),
+						q(57392, {	-- Reconstructing "The Curse of Stone"
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57391,	-- Reconstructing "The Curse of Stone"
+						}),
+						q(57402, {	-- Reconstructing "The Curse of Stone"
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57392,	-- Reconstructing "The Curse of Stone"
+						}),
 						q(58631, {	-- Into Dreams
 							["lvl"] = 120,
 							["coord"] = { 50.1, 59.1, 1473 },

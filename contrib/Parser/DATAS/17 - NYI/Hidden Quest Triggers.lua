@@ -2040,6 +2040,7 @@ _.NeverImplemented =
 		q(57841),	-- first horrific vision cleared as horde
 		q(58581),	-- first horrific vision cleared as horde
 		q(57039),	-- Valley of Spirits cleansed (Orgrimmar)
+		q(58896),	-- Valley of Spirits cleansed (Orgrimmar) - probably controls activation of the quick-navigation back to the start?
 		q(57129),	-- Valley of Wisdom cleansed (Orgrimmar)
 		q(57001),	-- Valley of Strength cleansed (Orgrimmar)
 		q(57372),	-- The Drag cleansed (Orgrimmar)
