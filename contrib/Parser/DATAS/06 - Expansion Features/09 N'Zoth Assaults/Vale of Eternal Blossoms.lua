@@ -47,10 +47,22 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 161404 },	-- Taran Zhu
 							["sourceQuest"] = 56771,	-- Time-Lost Warriors
 						}),
+						q(58464, {	-- Deephive Decimation
+							["coord"] = { 67.0, 40.0, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 161405 },	-- Taoshi
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
 						q(58595, {	-- Pillars of Oblivion
 							["coord"] = { 44.7, 73.8, 1530 },
 							["isDaily"] = true,
 							["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+							["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						}),
+						q(58467, {	-- Prisoners of Mind and Body
+							["coord"] = { 66.4, 40.6, 1530 },
+							["isDaily"] = true,
+							["provider"] = { "n", 161404 },	-- Taran Zhu <Lord of the Shado-Pan>
 							["sourceQuest"] = 56771,	-- Time-Lost Warriors
 						}),
 						q(58463, {	-- Spawns of Madness
@@ -912,6 +924,9 @@ _.ExpansionFeatures =
 						i(173836),	-- Malignant Leviathan's Helm
 						i(173835),	-- Malignant Leviathan's Pauldrons
 						-- Mail
+						i(173840),	-- Nefarious Tormentor's Chestpiece
+						i(173839),	-- Nefarious Tormentor's Cover
+						i(173838),	-- Nefarious Tormentor's Epaulets
 						-- Leather
 						-- Cloth
 						i(173846),	-- Vile Manipulator's Vestment

@@ -800,6 +800,7 @@ _.NeverImplemented =
 	--	WORLD BOSSES (probably?  'short-supply reward' is usually a bonus roll)
 		q(37460),	-- Gorgrond - Short-Supply Reward (Drov the Ruiner killed)
 		q(37672),	-- Short-Supply Reward (Rukhmar bonus roll)
+		q(37675),	-- Tarlna the Ageless bonus roll
 		q(39434),	-- Short-Supply Reward
 		q(39375),	-- Short-Supply Reward
 		q(39376),	-- Short-Supply Reward
