@@ -532,6 +532,7 @@ _.Zones =
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57222,	-- Investigating the Halls
+							["cost"] = { { "i", 171219, 1 } },	-- Corrupt Black Dragonscales
 							["g"] = {
 								i(169223),	-- Ashjra'kamas, Shroud of Resolve
 							},
@@ -561,6 +562,8 @@ _.Zones =
 								i(173821),	-- Malignant Leviathan's Clasp
 								i(173455),	-- Malignant Leviathan's Stompers
 								-- Mail
+								i(173447),	-- Nefarious Tormentor's Footguards
+								i(173818),	-- Nefarious Tormentor's Girdle
 								-- Leather
 								-- Cloth
 								i(173812),	-- Vile Manipulator's Cord
