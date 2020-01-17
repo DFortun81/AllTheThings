@@ -161,6 +161,15 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
 							["sourceQuest"] = 56472,	-- The Uldum Accord
 						}),
+						q(58284, {	-- Writs of the Sun King
+							["lvl"] = 120,
+							["coord"] = { 54.9, 32.9, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+							["g"] = {
+								currency(1755),	-- Coalescing Visions
+							},
+						}),
 					}),
 					n(-16,  {	-- Rares
 						n(157170, {	-- Acolyte Taspu
