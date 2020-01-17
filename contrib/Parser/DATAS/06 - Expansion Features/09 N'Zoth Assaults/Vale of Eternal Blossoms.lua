@@ -16,7 +16,7 @@ _.ExpansionFeatures =
 		["g"] = {
 			n(-10072, {	-- N'Zoth Assaults
 				n(-10076, {	-- Assault: The Black Empire
-					n(-17, {	-- Quests
+					n(-17,	{	-- Quests
 						q(58468, {	-- A Growing Darkness
 							["coord"] = { 66.9, 39.8, 1530 },
 							["isDaily"] = true,
@@ -93,7 +93,7 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
-					n(-16, {	-- Rares
+					n(-16,	{	-- Rares
 						n(154447, {	-- Brother Meller
 							["questID"] = 56237,
 							["coord"] = { 57.1, 41.0, 1530 },
@@ -178,7 +178,7 @@ _.ExpansionFeatures =
 							["isDaily"] = true,
 						}),
 					}),
-					n(-34,  {	-- World Quests
+					n(-34,	{	-- World Quests
 						q(56076, {	-- Abyssal Ritual
 							["lvl"] = 120,
 							["coord"] = { 74.2, 40.0, 1530 },
@@ -259,6 +259,9 @@ _.ExpansionFeatures =
 							["lvl"] = 120,
 							["isWorldQuest"] = true,
 						}),
+					}),
+					n(0,	{	-- Zone Drops
+						i(174758),	-- Voidwarped Relic Fragment
 					}),
 				}),
 				n(-10077, {	-- Assault: The Warring Clans
