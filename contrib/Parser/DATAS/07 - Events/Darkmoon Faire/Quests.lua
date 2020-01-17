@@ -601,7 +601,9 @@ _.WorldEvents =
 				["provider"] = { "n", 14871 },	-- Morja
 				["coord"] = { 55.9, 70.7, 407 },
 				["g"] = {
-					i(19450),	-- Jubling
+					i(19462, {		--	Unhatched Jubling Egg
+						i(19450),	-- Jubling-- Jubling
+					}),
 				},
 			}),
 			q(29513, {	-- Spoilin' for Salty Sea Dogs

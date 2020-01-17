@@ -176,6 +176,7 @@ _.NeverImplemented =
 			cl(8, {	-- Mage
 				-- Possible Unused Level 120/Lv 120 Classtrial
 				un(1, i(150651)),	-- Mountainsage Cord
+				un(1, i(77780)),	-- Replica Lieutenant Commander's Silk Mantle
 				un(1, i(150646)),	-- Mountainsage Handwraps
 				un(1, i(150647)),	-- Mountainsage Hood
 				un(1, i(150648)),	-- Mountainsage Leggings
@@ -498,6 +499,7 @@ _.NeverImplemented =
 		}),
 		n(-44, {	-- Leather
 			cl(11, {	-- Druid
+				un(1, i(77751)),	-- Replicate Knight Captains Dragonhide Chestpiece
 				un(1, i(48769)),	-- Runetotem's Handguards of Conquest
 				un(1, i(48770)),	-- Runetotem's Headpiece of Conquest
 				un(1, i(48771)),	-- Runetotem's Leggings of Conquest

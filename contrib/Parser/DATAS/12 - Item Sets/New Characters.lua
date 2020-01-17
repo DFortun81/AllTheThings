@@ -179,13 +179,13 @@ _.GearSets =
 			})),
 			un(7, i(6125, {	-- Brawler's Harness (Former starter shirt for Orc, Troll, Tauren, Undead Warriors)
 				["description"] = "Former starter shirt for Orc, Troll, Tauren & Undead Warriors", 
-			}),
+			})),
 			un(7, i(49, {	-- Footpad's Shirt (Former starter shirt Human, NE, Dwarf, Gnome Rogues)
 				["description"] = "Former starter shirt for Human, NE, Dwarf & Gnome Rogues", 
 			})),
 			i(49567, {	-- Gilnean Adventurer's Shirt (New Worgen hunters, rogues, and warriors start out with this shirt.)
 				["description"] = "New Worgen hunters, rogues, and warriors start out with this shirt.",
-			})),
+			}),
 			un(7, i(24143, {	-- Initiate's Shirt (Starter Shirt Blood Elf Paladins)
 				["description"] = "Former Starter Shirt for Blood Elf Paladins",
 			})),
