@@ -599,6 +599,7 @@ _.Zones =
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57374,	-- Into the Darkest Depths
+							["cost"] = { { "i", 174777, 1 } },	-- The Curse of Stone
 							["g"] = {
 								i(171335),	-- Corrupting Core
 							},
@@ -608,18 +609,30 @@ _.Zones =
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57378,	-- Remnants of a Shattered World
+							["cost"] = { { "i", 171353, 1 } },	-- Torn Page of "The Curse of Stone"
+							["g"] = {
+								i(171335),	-- Corrupting Core
+							},
 						}),
 						q(57392, {	-- Reconstructing "The Curse of Stone"
 							["lvl"] = 120,
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57391,	-- Reconstructing "The Curse of Stone"
+							["cost"] = { { "i", 171353, 1 } },	-- Torn Page of "The Curse of Stone"
+							["g"] = {
+								i(171335),	-- Corrupting Core
+							},
 						}),
 						q(57402, {	-- Reconstructing "The Curse of Stone"
 							["lvl"] = 120,
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57392,	-- Reconstructing "The Curse of Stone"
+							["cost"] = { { "i", 171353, 1 } },	-- Torn Page of "The Curse of Stone"
+							["g"] = {
+								i(171335),	-- Corrupting Core
+							},
 						}),
 						q(58631, {	-- Into Dreams
 							["lvl"] = 120,
