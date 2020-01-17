@@ -98,6 +98,16 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
 							["sourceQuest"] = 56472,	-- The Uldum Accord
 						}),
+						q(58286, {	-- Far From Home
+							["lvl"] = 120,
+							["coord"] = { 54.9, 32.7, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 155095 },	-- King Phaoris
+							["sourceQuest"] = 56472,	-- The Uldum Accord
+							["g"] = {
+								currency(1755),	-- Coalescing Visions
+							},
+						}),
 						q(58289, {	-- Guarded Secrets
 							["lvl"] = 120,
 							["coord"] = { 54.9, 32.9, 1527 },
