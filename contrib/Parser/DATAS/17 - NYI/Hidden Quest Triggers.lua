@@ -2103,6 +2103,9 @@ _.NeverImplemented =
 		q(58228),	-- Vale of Eternal Blossoms - Ambered Cache
 		q(58770),	-- Vale of Eternal Blossoms - Ambered Coffer
 		
+		-- "Combating the Corruption" completion flags
+		q(58691),	-- Corrupted Doomsayer
+		
 		-- Mechagon unlock chain
 		-- NOTE: these are probably mixed up a bit, but the IDs are definitely trackers
 		q(57941),	-- Pegi Cogster talked to
