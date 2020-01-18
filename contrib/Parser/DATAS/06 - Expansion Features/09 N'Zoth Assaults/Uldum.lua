@@ -1426,22 +1426,28 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-34,    {	-- World Quests
-				q(58745, {	-- Watch Where You Step
-					-- pet battle
-					["lvl"] = 120,
-					["coord"] = { 57.6, 43.6, 1527 },
-					["isWorldQuest"] = true,
-				}),
 				q(58743, {	-- Dune Buggy
 					-- pet battle
 					["lvl"] = 120,
 					["coord"] = { 35.5, 31.6, 1527 },
 					["isWorldQuest"] = true,
 				}),
+				q(58744, {	-- I Am the One Who Whispers
+					-- pet battle
+					["lvl"] = 120,
+					["coord"] = { 61.7, 54.4, 1527 },
+					["isWorldQuest"] = true,
+				}),
 				q(58742, {	-- Retinus the Seeker
 					-- pet battle
 					["lvl"] = 120,
 					["coord"] = { 62.0, 31.9, 1527 },
+					["isWorldQuest"] = true,
+				}),
+				q(58745, {	-- Watch Where You Step
+					-- pet battle
+					["lvl"] = 120,
+					["coord"] = { 57.6, 43.6, 1527 },
 					["isWorldQuest"] = true,
 				}),
 			}),
