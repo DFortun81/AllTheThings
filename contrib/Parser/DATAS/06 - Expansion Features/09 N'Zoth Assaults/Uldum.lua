@@ -418,6 +418,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 159682 },	-- Tracker Samara
 							["sourceQuest"] = 57955,	-- To Ankhaten Harbor
 						}),
+						q(58776, {	-- Hatching Problems
+							["lvl"] = 120,
+							["coord"] = { 40.0, 21.3, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 154443 },	-- Captain Navid Sandstone
+						}),
 						q(58780, {	-- Heralds of the Hive
 							["lvl"] = 120,
 							["coord"] = { 40.0, 21.3, 1527 },
@@ -433,6 +439,12 @@ _.ExpansionFeatures =
 								57970,	-- Ruinator Xok'nixx
 								57969,	-- Tend the Wounded
 							},
+						}),
+						q(58777, {	-- Put Your Foot Down
+							["lvl"] = 120,
+							["coord"] = { 40.0, 21.3, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 159920 },	-- Zahra Sandstalker
 						}),
 						q(57970, {	-- Ruinator Xok'nixx
 							["lvl"] = 120,
@@ -454,6 +466,12 @@ _.ExpansionFeatures =
 							["coord"] = { 40.8, 38.5, 1527 },
 							["provider"] = { "n", 154958 },	-- Laborer Mitchell
 							["sourceQuest"] = 57873,	-- Word from Orsis
+						}),
+						q(58779, {	-- Taking the Skies
+							["lvl"] = 120,
+							["coord"] = { 40.0, 21.3, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 159920 },	-- Zahra Sandstalker
 						}),
 						q(57969, {	-- Tend the Wounded
 							["lvl"] = 120,
@@ -519,11 +537,6 @@ _.ExpansionFeatures =
 								i(174227),	-- Writhing Feeler
 							},
 						}),
-						n(155531, {	-- Infested Wastewander Captain
-							["questID"] = 56823,
-							["coord"] = { 22.90, 59.42, 1527 },
-							["isDaily"] = true,
-						}),
 						n(162163, {	-- High Priest Ytaessis
 							--["questID"] = ,
 							["coords"] = {
@@ -532,6 +545,11 @@ _.ExpansionFeatures =
 								{ 45.7, 56.0, 1527 },
 								{ 43.8, 57.8, 1527 },
 							},
+						}),
+						n(155531, {	-- Infested Wastewander Captain
+							["questID"] = 56823,
+							["coord"] = { 22.90, 59.42, 1527 },
+							["isDaily"] = true,
 						}),
 						n(154604, {	-- Lord Aj'qirai
 							--["questID"] = ,
