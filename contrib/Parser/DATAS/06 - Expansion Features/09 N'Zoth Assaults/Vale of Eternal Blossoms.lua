@@ -592,7 +592,7 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-4,   {	-- Achievements
-				ach(14159, {		-- Combating the Corruption -- TODO:: update with criteria when they get added.  Only crit for the zone atm is uncommented, rest are in Uldum?
+				ach(14159, {		-- Combating the Corruption -- TODO:: update with criteria when they get added.  Only crit for the zone atm is uncommented, rest are in Uldum? -- Is attaching questID's to these really the best way to track the quest?
 					--[[crit(1, {	-- 	Corrupted Acolyte slain
 						["coords"] = {
 							{ 49.5, 39.9, 1527 },
@@ -691,6 +691,11 @@ _.ExpansionFeatures =
 							{ 61.4, 75.2, 1527 },
 							{ 63.5, 70.0, 1527 },
 						},
+						["g"] = {
+							q(58689, {
+								["isDaily"] = true,
+							}),
+						},
 					}),
 					crit(9,	{	-- Corrupted Fleshbeast slain
 						["coords"] = {
@@ -700,6 +705,11 @@ _.ExpansionFeatures =
 							{ 60.9, 69.3, 1527 },
 							{ 60.4, 67.5, 1527 },
 							{ 62.0, 66.7, 1527 },
+						},
+						["g"] = {
+							q(58690, {
+								["isDaily"] = true,
+							}),
 						},
 					}),
 					crit(10, {	-- Corrupted Jailer slain
@@ -720,6 +730,11 @@ _.ExpansionFeatures =
 							{ 60.2, 53.6, 1527 },
 							{ 58.4, 24.8, 1527 },
 							{ 55.6, 24.4, 1527 },
+						},
+						["g"] = {
+							q(58688, {
+								["isDaily"] = true,
+							}),
 						},
 					}),
 					crit(12, {	-- Corrupted Neferset Guard slain
@@ -750,6 +765,11 @@ _.ExpansionFeatures =
 							{ 47.4, 26.3, 1527 },
 							{ 57.1, 81.6, 1527 },
 							{ 60.8, 37.1, 1527 },
+						},
+						["g"] = {
+							q(58691, {
+								["isDaily"] = true,
+							}),
 						},
 					}),
 					crit(15, {	-- Corrupted Summoner slain
