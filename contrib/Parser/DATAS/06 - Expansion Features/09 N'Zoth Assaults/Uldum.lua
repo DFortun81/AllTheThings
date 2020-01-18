@@ -319,8 +319,7 @@ _.ExpansionFeatures =
 							["lvl"] = 120,
 							["isWorldQuest"] = true,
 							["g"] = {
-								i(173457),	-- Malignant Leviathan's Headguard (probably from all assault rewards?)
-								i(174955),	-- Nefarious Tormentor's Vambraces
+								i(174961),	-- Cache of the Amathet
 							},
 						}),
 						q(55356, {	-- Beacon of the Sun King
