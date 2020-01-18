@@ -2110,8 +2110,11 @@ _.NeverImplemented =
 		q(58228),	-- Vale of Eternal Blossoms - Ambered Cache
 		q(58770),	-- Vale of Eternal Blossoms - Ambered Coffer
 		
-		-- "Combating the Corruption" completion flags
-		q(58691),	-- Corrupted Doomsayer
+		-- "Combating the Corruption" completion flags. The IDs appear to be reused and aren't specific to any one mob. Track all mobs until we can make sense of the pattern.
+		q(58690),	-- Corrupted Acolyte - Vale of Eternal Blossoms, Corrupted Fleshbeat - Uldum?
+		q(58689),	-- Corrupted Doomsayer - Uldum
+		q(58691),	-- Corrupted Doomsayer - Vale of Eternal Blossoms, Corrupted Putrification - Uldum
+		q(58688),	-- Corrupted Mind Eater - Uldum
 		
 		-- Mechagon unlock chain
 		-- NOTE: these are probably mixed up a bit, but the IDs are definitely trackers
