@@ -2083,6 +2083,10 @@ _.NeverImplemented =
 		q(57628),	-- Uldum - Black Empire Coffer
 		q(58139),	-- Uldum - Infested Cache
 		q(58141),	-- Uldum - Infested Cache
+		q(59054),	-- Looting a bounty in Uldum as Alliance (all 4 trigger at the same time)
+		q(59055),	-- Looting a bounty in Uldum as Alliance
+		q(59056),	-- Looting a bounty in Uldum as Alliance
+		q(59057),	-- Looting a bounty in Uldum as Alliance
 		q(57201),	-- Vale of Eternal Blossoms - Black Empire Cache
 		q(57200),	-- Vale of Eternal Blossoms - Black Empire Cache
 		q(57203),	-- Vale of Eternal Blossoms - Black Empire Cache
