@@ -1197,6 +1197,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58803,	-- Match the Hatch
 					}),
+					q(58807, {	-- Wrapping Up (aqir invasion)
+						["coord"] = { 55.6, 35.3, 1527 },
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58804,	-- Void Incubation
+					}),
 					q(58806, {	-- Warmth of the Sun
 						["coord"] = { 55.6, 35.3, 1527 },
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
@@ -1206,7 +1211,10 @@ _.ExpansionFeatures =
 						["coord"] = { 55.6, 35.3, 1527 },
 						["isDaily"] = true,
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58806,	-- Warmth of the Sun
+						["sourceQuests"] = {
+							58806,	-- Warmth of the Sun
+							58807,	-- Wrapping Up (aqir invasion)
+						},
 					}),
 					q(58808, {	-- Encased in Amber
 						["coord"] = { 55.6, 35.3, 1527 },
