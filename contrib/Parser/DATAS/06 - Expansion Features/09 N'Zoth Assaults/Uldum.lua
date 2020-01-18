@@ -1306,9 +1306,31 @@ _.ExpansionFeatures =
 				q(58879, {	-- Alpaca It Up
 					["cost"] = { { "i", 174858, 7 }, },	-- Gersahl Greens
 					["isDaily"] = true,
+					["provider"] = { "n", 162765 },	-- Friendly Alpaca
 					["description"] = "Find the |cFFFFD700Gersahl Greens|r at the edge of the main river in Uldum, then complete this quest 7 times for the mount.",
+					["coords"] = {
+						{ 15.0, 62.0, 1527 },
+						{ 24.0, 9.0, 1527 },
+						{ 28.0, 49.0, 1527 },
+						{ 30.0, 29.0, 1527 },
+						{ 39.0, 10.0, 1527 },
+						{ 42.0, 70.0, 1527 },
+						{ 46.0, 48.0, 1527 },
+						{ 53.0, 19.0, 1527 },
+						{ 55.0, 69.0, 1527 },
+						{ 63.0, 53.0, 1527 },
+						{ 63.0, 14.0, 1527 },
+						{ 70.0, 39.0, 1527 },
+						{ 76.0, 68.0, 1527 },
+					},
 					["g"] = {
-						i(174859),	-- Springfur Alpaca
+						q(58887, {	-- Alpaca It In
+							["provider"] = { "n", 162765 },	-- Friendly Alpaca
+							["sourceQuest"] = 58879,	-- Alpaca It Up
+							["g"] = {
+								i(174859),	-- Springfur Alpaca
+							},
+						}),
 					},
 				}),
 				q(58283, {	-- Blind Leading the Blind
