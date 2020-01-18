@@ -1902,7 +1902,7 @@ _.Zones =
 				}),
 				q(40762, {	-- Zealot's Dues
 					["cr"] = 106275,	-- Commander Domitille
-					["provider"] = { "i", 1368551 },	-- Commander Domitille's Helm
+					["provider"] = { "i", 136851 },	-- Commander Domitille's Helm
 					["coords"] = {
 						{ 35.3, 13.1, 680 },
 						{ 35.9, 18.4, 680 },
