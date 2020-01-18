@@ -517,12 +517,19 @@ _.ExpansionFeatures =
 						n(155703, {	-- Anq'uri the Titanic
 							["questID"] = 56834,
 							["coord"] = { 32.4, 64.6, 1527 },
+							["isDaily"] = true,
 							["g"] = {
 								i(174227),	-- Writhing Feeler
 							},
 						}),
+						n(154578, {	-- Aqir Flayer
+							["questID"] = 58612,
+							["coord"] = { 46.8, 58.5, 1527 },
+							["isDaily"] = true,
+						}),
 						n(162172, {	-- Aqir Warcaster
 							["questID"] = 58694,
+							["isDaily"] = true,
 							["coords"] = {
 								{ 42.0, 37.8, 1527 },
 								{ 19.2, 59.1, 1527 },
@@ -539,6 +546,7 @@ _.ExpansionFeatures =
 						}),
 						n(162163, {	-- High Priest Ytaessis
 							--["questID"] = ,
+							["isDaily"] = true,
 							["coords"] = {
 								{ 45.1, 60.7, 1527 },
 								{ 46.8, 58.2, 1527 },
@@ -574,6 +582,7 @@ _.ExpansionFeatures =
 						}),
 						n(162170, {	-- Warcaster Xeshro
 							["questID"] = 58702,
+							["isDaily"] = true,
 							["coord"] = { 33.7, 25.4, 1527 },
 						}),
 					}),
