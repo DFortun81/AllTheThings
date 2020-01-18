@@ -519,6 +519,11 @@ _.ExpansionFeatures =
 								i(174227),	-- Writhing Feeler
 							},
 						}),
+						n(155531, {	-- Infested Wastewander Captain
+							["questID"] = 56823,
+							["coord"] = { 22.90, 59.42, 1527 },
+							["isDaily"] = true,
+						}),
 						n(162163, {	-- High Priest Ytaessis
 							--["questID"] = ,
 							["coords"] = {
