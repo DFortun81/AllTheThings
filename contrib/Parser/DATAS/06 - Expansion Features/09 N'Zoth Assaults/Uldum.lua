@@ -1173,12 +1173,6 @@ _.ExpansionFeatures =
 						["description"] = "Must be fishing in water currently affected by a N'Zoth assault.",
 					}),
 				}),
-				n(-184, {	-- Herbalism
-				-- No Filter cause you dont need Herbalism, but it makes it easier.
-					i(174858, {	-- Gersahl Greens
-						["description"] = "Can be found around the River. Herbalism can track it, but it can be collected without. Feed the Springfur Alpaca 7 days to receive the Mount.",		
-					}),
-				}),
 			}),
 			n(-17,    {	-- Quests
 				i(174771, {	-- Shadowbarb Drone
@@ -1329,10 +1323,13 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
-				i(174859, {	-- Springfur Alpaca
-				--	q(58802, {	-- The Incredible Egg
-				--		["coord"] = { 20.8, 61.9, 1527 },
-				--		["provider"] = { "o", 343611 },	-- Voidtouched Egg
+				q(58879, {	-- Alpaca It Up
+					["cost"] = { { "i", 174858, 7 }, },	-- Gersahl Greens
+					["isDaily"] = true,
+					["description"] = "Find the |cFFFFD700Gersahl Greens|r at the edge of the main river in Uldum, then complete this quest 7 times for the mount.",
+					["g"] = {
+						i(174859),	-- Springfur Alpaca
+					},
 				}),
 				q(58283, {	-- Blind Leading the Blind
 					["lvl"] = 120,
