@@ -12,6 +12,7 @@ _.ExpansionFeatures =
 			1548,	-- Mogu'Shan Vaults (The Engine of Nalak'sha scenario)
 			1549,	-- Mogu'Shan Vaults (The Engine of Nalak'sha scenario)
 			1570,	-- Vale of Eternal Blossoms
+			1579,	-- Vale of Eternal Blossoms - underground area
 		},
 		["g"] = {
 			n(-10072, {	-- N'Zoth Assaults
