@@ -327,6 +327,11 @@ _.ExpansionFeatures =
 							["lvl"] = 120,
 							["isWorldQuest"] = true,
 						}),
+						q(55357, {	-- Beacon of the Sun King
+							["lvl"] = 120,
+							["coord"] = { 83.49, 61.86, 1527 },
+							["isWorldQuest"] = true,
+						}),
 						q(55358, {	-- Beacon of the Sun King
 							["lvl"] = 120,
 							["coord"] = { 71.6, 45.9, 1527 },
