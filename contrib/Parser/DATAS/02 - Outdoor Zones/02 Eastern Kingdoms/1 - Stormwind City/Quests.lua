@@ -297,6 +297,11 @@ _.Zones =
 										["races"] = ALLIANCE_ONLY,
 										["provider"] = { "n", 160232 },	-- Christy Punchcog
 										["sourceQuest"] = 57490,	-- Voyage to Safety
+										["cost"] = {
+											{ "i", 173026, 1 },	-- Omni Electromagnetic Amplifier
+											{ "i", 172511, 1 },	-- Neural Accelerator
+											{ "i", 173028, 1 },	-- Flux Energized Servos
+										},
 									}),
 									q(57492, {	-- Him?
 										["maps"] = { 1462 },	-- Mechagon Island
