@@ -634,6 +634,16 @@ _.Zones =
 								i(171335),	-- Corrupting Core
 							},
 						}),
+						q(57393, {	-- Stepping Through the Darkness
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57402,	-- Reconstructing "The Curse of Stone"
+							["cost"] = { { "i", 174782, 1 } },	-- Fear and Flesh
+							["g"] = {
+								i(171354),	-- Horrific Core
+							},
+						}),
 						q(58631, {	-- Into Dreams
 							["lvl"] = 120,
 							["coord"] = { 50.1, 59.1, 1473 },
