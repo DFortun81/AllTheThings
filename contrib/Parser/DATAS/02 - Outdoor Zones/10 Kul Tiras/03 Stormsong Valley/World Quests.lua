@@ -117,11 +117,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52415, {	-- Work Order: Coarse Leather Barding
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(52345, {	-- Work Order: Ravenberry Tarts (this quest was added to Zuldazar WQ file but I'm not sure it can spawn there)
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -876,6 +871,11 @@ _.Zones =
 						},
 					}),
 					q(50993, {	-- Work Order: Coarse Leather
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(52415, {	-- Work Order: Coarse Leather Barding
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
