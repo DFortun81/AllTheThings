@@ -191,6 +191,56 @@ _.ExpansionFeatures =
 							["isDaily"] = true,
 						}),
 					}),
+					--[[n(-212, {	-- Treasure Chest  -- Todo Find specific objects for each chest.  More coords.
+						--n(-851, {	-- Black Empire Cache
+							o(, {	-- Black Empire Cache
+								["questID"] = 57197,
+								["isDaily"] = true,
+								["coords"] = {
+									{ 52.7, 39.7, 1530 },
+									{ 53.9, 41.8, 1530 },
+								},
+							}),
+							o(, {	-- Black Empire Cache
+								["questID"] = 57199,
+								["isDaily"] = true,
+								["coords"] = {
+									{ 46.4, 33.0, 1530 },
+								},
+							}),
+							o(, {	-- Black Empire Cache
+								["questID"] = 57200,
+								["isDaily"] = true,
+								["coords"] = {
+									{ 62.6, 57.1, 1530 },
+									{ 65.9, 59.7, 1530 },
+								},
+							}),
+							o(, {	-- Black Empire Cache
+								["questID"] = 57201,
+								["isDaily"] = true,
+								["coords"] = {
+									{ 81.3, 33.8, 1530 },
+									{ 77.1, 63.6, 1530 },
+								},
+							}),
+							o(, {	-- Black Empire Cache
+								["questID"] = 57202,
+								["isDaily"] = true,
+								["coords"] = {
+									{ 68.7, 58.8, 1530 },
+								},
+							}),
+							o(, {	-- Black Empire Cache
+								["questID"] = 57203,
+								["isDaily"] = true,
+								["coords"] = {
+									{ 42.4, 68.5, 1530 },
+									{ 51.2, 63.3, 1530 },
+								},
+							}),
+						}),
+					}),]]
 					n(-34,	{	-- World Quests
 						q(56076, {	-- Abyssal Ritual
 							["lvl"] = 120,
