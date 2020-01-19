@@ -417,6 +417,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 159682 },	-- Tracker Samara
 							["sourceQuest"] = 57955,	-- To Ankhaten Harbor
 						}),
+						q(58778, {	-- Getting Ahead
+							["lvl"] = 120,
+							["coord"] = { 40.0, 21.2, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 159920 },	-- Zahra Sandstalker
+						}),
 						q(58776, {	-- Hatching Problems
 							["lvl"] = 120,
 							["coord"] = { 40.0, 21.3, 1527 },
@@ -511,6 +517,12 @@ _.ExpansionFeatures =
 							["coord"] = { 40.1, 21.3, 1527 },
 							["provider"] = { "n", 159544 },	-- Arik Scorpidsting
 						}),
+						q(56889, {	-- Wounded Wastewanderers
+							["lvl"] = 120,
+							["coord"] = { 40.1, 21.3, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 159820 },	-- Mender Dyrin
+						}),
 					}),
 					n(-16, {	-- Rares
 						n(155703, {	-- Anq'uri the Titanic
@@ -523,8 +535,16 @@ _.ExpansionFeatures =
 						}),
 						n(154578, {	-- Aqir Flayer
 							["questID"] = 58612,
-							["coord"] = { 46.8, 58.5, 1527 },
 							["isDaily"] = true,
+							["coords"] = {
+								{ 46.8, 58.5, 1527 },
+								{ 31.3, 51.4, 1527 },
+							},
+						}),
+						n(154576, {	-- Aqir Titanus
+							["questID"] = 58614,
+							["isDaily"] = true,
+							["coord"] = { 39.3, 36.8, 1527 },
 						}),
 						n(162172, {	-- Aqir Warcaster
 							["questID"] = 58694,
@@ -577,6 +597,7 @@ _.ExpansionFeatures =
 							["coords"] = {	-- probably has a bigger patrol path but this is all i got before players pulled him
 								{ 36.4, 10.3, 1527 },
 								{ 34.0, 11.2, 1527 },
+								{ 24.8, 6.5, 1527 },
 							},
 						}),
 						n(162140, {	-- Skikx'traz
@@ -592,6 +613,11 @@ _.ExpansionFeatures =
 							["isDaily"] = true,
 							["coord"] = { 33.7, 25.4, 1527 },
 						}),
+						n(162141, {	-- Zuythiz
+							["questID"] = 58695,
+							["coord"] = { 41.1, 41.8, 1527 }, -- probably circles around Orsis
+							["isDaily"] = true,
+						}),
 					}),
 					n(-34, {	-- World Quests
 						q(56308, {	-- Assault: Aqir Unearthed
@@ -604,6 +630,11 @@ _.ExpansionFeatures =
 						q(58974, {	-- Ambushed Settlers
 							["lvl"] = 120,
 							["coord"] = { 27.8, 57.1, 1527 },
+							["isWorldQuest"] = true,
+						}),
+						q(58961, {	-- Ambushed Settlers
+							["lvl"] = 120,
+							["coord"] = { 37.2, 47.8, 1527 },
 							["isWorldQuest"] = true,
 						}),
 						q(58660, {	-- Burrowing Terrors
@@ -621,9 +652,34 @@ _.ExpansionFeatures =
 							["coord"] = { 37.2, 67.1, 1527 },
 							["isWorldQuest"] = true,
 						}),
+						q(59003, {	-- Combustible Cocoons
+							["lvl"] = 120,
+							["coord"] = { 36.5, 20.6, 1527 },
+							["isWorldQuest"] = true,
+						}),
+						q(58679, {	-- Dormant Destroyer
+							["lvl"] = 120,
+							["coord"] = { 34.4, 29.3, 1527 },
+							["isWorldQuest"] = true,
+						}),
 						q(58981, {	-- Hardened Hive
 							["lvl"] = 120,
 							["coord"] = { 46.9, 58.0, 1527 },
+							["isWorldQuest"] = true,
+						}),
+						q(58667, {	-- Obsidian Extraction
+							["lvl"] = 120,
+							["coord"] = { 31.4, 55.3, 1527 },
+							["isWorldQuest"] = true,
+						}),
+						q(58676, {	-- Obsidian Extraction
+							["lvl"] = 120,
+							["coord"] = { 20.7, 59.1, 1527 },
+							["isWorldQuest"] = true,
+						}),
+						q(58952, {	-- Purging Flames
+							["lvl"] = 120,
+							["coord"] = { 22.4, 64.1, 1527 },
 							["isWorldQuest"] = true,
 						}),
 						q(58990, {	-- Titanus Egg
@@ -1422,9 +1478,9 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(162196, {	-- Obsidian Annihilator
-					-- TODO: need questID for this one
-					--["questID"] = ,
+					["questID"] = 58681,
 					["coord"] = { 35.1, 17.3, 249 },
+					["isDaily"] = true,
 				}),
 			}),
 			n(-2,     {	-- Vendors
