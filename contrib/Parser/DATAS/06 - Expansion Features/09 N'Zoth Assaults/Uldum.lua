@@ -1248,10 +1248,13 @@ _.ExpansionFeatures =
 						["coord"] = { 55.6, 35.3, 1527 },
 						["isDaily"] = true,
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuests"] = {
-							58806,	-- Warmth of the Sun
-							58807,	-- Wrapping Up (aqir invasion)
-						},
+						["sourceQuest"] = 58806,	-- Warmth of the Sun
+					}),
+					q(58010, {	-- More Bits, More Bits!
+						["coord"] = { 55.6, 35.3, 1527 },
+						["isDaily"] = true,
+						["provider"] = { "n", 161738 },	-- H'partho Ardoros
+						["sourceQuest"] = 58806,	-- Warmth of the Sun
 					}),
 					q(58808, {	-- Encased in Amber
 						["coord"] = { 55.6, 35.3, 1527 },
