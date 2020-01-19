@@ -571,6 +571,14 @@ _.ExpansionFeatures =
 							["coord"] = { 37.5, 60.4, 1527 },
 							["isDaily"] = true,
 						}),
+						n(162173, {	-- R'krox the Runt
+							["questID"] = 58864,
+							["isDaily"] = true,
+							["coords"] = {	-- probably has a bigger patrol path but this is all i got before players pulled him
+								{ 36.4, 10.3, 1527 },
+								{ 34.0, 11.2, 1527 },
+							},
+						}),
 						n(162140, {	-- Skikx'traz
 							--["questID"] = ,
 							--["coord"] = { , 1527 },
