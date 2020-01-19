@@ -960,9 +960,9 @@ _.Zones =
 					}),
 					q(30121, {	-- Search Party
 						["provider"] = { "n", 58113 },	-- Sunwalker Dezco
+						["coord"] = { 62.6, 19.9, 418 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
-						["description"] = "Not available if quest \"Poisoned!\" is in your quest or or already completed.",
 					}),
 					q(30083, {	-- Securing the Province
 						["provider"] = { "n", 57744 },	-- Mei Barrelbottom
@@ -1109,7 +1109,7 @@ _.Zones =
 					}),
 					q(31058, {	-- The Funky Monkey Brew
 						["provider"] = { "n", 65289 },	-- Brewmaster Bo
-						["coord"] = { 52.0, 76.8, 418 },
+						["coord"] = { 54.4, 75.2, 418 },
 						["lvl"] = 90,
 						["maps"] = { 450 },	-- Unga Ingoo
 					}),
@@ -1891,7 +1891,7 @@ _.Zones =
 				n(-222, {	-- Treasure Hunter
 					o(214403, {	-- Stack of Papers
 						["questID"] = 31863,
-						["coord"] = { 52.1, 73.4, 418 },
+						["coord"] = { 54.3, 72.3, 418 },
 					}),
 				}),
 				n(-2, {		-- Vendor

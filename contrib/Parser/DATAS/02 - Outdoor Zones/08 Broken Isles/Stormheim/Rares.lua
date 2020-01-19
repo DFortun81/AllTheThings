@@ -228,6 +228,7 @@ _.Zones =
 				}), 
 				n(91780, {	-- Mother Clacker
 					["questID"] = 38422,
+					["coord"] = { 35.4, 18.4, 634 },
 					["crs"] = { 92343 },	-- Captain Tomas
 					["races"] = HORDE_ONLY,
 					["groups"] = {

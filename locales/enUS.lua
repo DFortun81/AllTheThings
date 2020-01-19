@@ -605,9 +605,10 @@ app.L = {
 		[-686] = "Interface\\Icons\\inv_stormdragonmount2light",							-- Fierce Gladiator: Legion Season 5
 		[-687] = "Interface\\Icons\\inv_stormdragonmount2yellow",							-- Dominant Gladiator: Legion Season 6
 		[-688] = "Interface\\Icons\\inv_stormdragonmount2_fel",								-- Demonic Gladiator: Legion Season 7
-		[-689] = "Interface\\Icons\\ability_mount_protodrakegladiatormount",				-- Dread Gladiator: Battle for Azeroth Season 1
-		[-690] = "Interface\\Icons\\inv_misc_tabard_forsaken",								-- Sinister Gladiator: Battle for Azeroth Season 2
+		[-689] = "Interface\\Icons\\inv_protodrakegladiatormount_blue",						-- Dread Gladiator: Battle for Azeroth Season 1
+		[-690] = "Interface\\Icons\\inv_protodrakegladiatormount_gold",						-- Sinister Gladiator: Battle for Azeroth Season 2
 		[-691] = "Interface\\Icons\\inv_protodrakegladiatormount_purple",					-- Notorious Gladiator: Battle for Azeroth Season 3
+		[-692] = "Interface\\Icons\\inv_protodrakegladiatormount_black",					-- Corrupted Gladiator: Battle for Azeroth Season 4
 		[-800] = "Interface\\Icons\\inv_horse2purple",										-- Lucid Nightmare
 		[-801] = "Interface\\Icons\\inv_serpentmount_darkblue",								-- Riddler's Mind-Worm
 		[-802] = "Interface\\Icons\\inv_faeriedragon2_orange",								-- Sun Darter Hatchling
@@ -1342,7 +1343,7 @@ app.L = {
 		[-689] = select(2, GetAchievementInfo(12945)),							-- Dread Gladiator: Battle for Azeroth Season 1
 		[-690] = select(2, GetAchievementInfo(13200)),							-- Sinister Gladiator: Battle for Azeroth Season 2
 		[-691] = select(2, GetAchievementInfo(13630)),							-- Notorious Gladiator: Battle for Azeroth Season 3
-	--	[-692] = select(2, GetAchievementInfo(13630)),							-- Corrupted Gladiator: Battle for Azeroth Season 4
+		[-692] = select(2, GetAchievementInfo(13957)),							-- Corrupted Gladiator: Battle for Azeroth Season 4
 
 -- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 		[-800] = GetSpellInfo(247402), 											-- Lucid Nightmare

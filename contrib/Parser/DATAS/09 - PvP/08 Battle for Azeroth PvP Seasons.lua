@@ -128,32 +128,6 @@ _.PVP =
 						["u"] = 2,
 					}),					
 				}),					
-				n(-322, {	-- Back					
-					i(163724, {	-- Dread Aspirant's Cape (A)
-						["u"] = 2,
-					}),
-					i(163721, {	-- Dread Aspirant's Cloak (A)
-						["u"] = 2,
-					}),
-					i(163723, {	-- Dread Aspirant's Drape (A)
-						["u"] = 2,
-					}),
-					i(163722, {	-- Dread Aspirant's Greatcloak (A)
-						["u"] = 2,
-					}),
-					i(162968, {	-- Dread Aspirant's Cape (H)
-						["u"] = 2,
-					}),
-					i(162864, {	-- Dread Aspirant's Cloak (H)
-						["u"] = 2,
-					}),					
-					i(162967, {	-- Dread Aspirant's Drape (H)
-						["u"] = 2,
-					}),					
-					i(162895, {	-- Dread Aspirant's Greatcloak (H)
-						["u"] = 2,
-					}),					
-				}),
 				n(-43, {	-- Cloth					
 					i(162925, {	-- Dread Aspirant's Silk Cord (A)
 						["u"] = 2,
@@ -354,6 +328,32 @@ _.PVP =
 						["u"] = 2,
 					}),
 				}),
+				n(-322, {	-- Back					
+					i(163724, {	-- Dread Aspirant's Cape (A)
+						["u"] = 2,
+					}),
+					i(163721, {	-- Dread Aspirant's Cloak (A)
+						["u"] = 2,
+					}),
+					i(163723, {	-- Dread Aspirant's Drape (A)
+						["u"] = 2,
+					}),
+					i(163722, {	-- Dread Aspirant's Greatcloak (A)
+						["u"] = 2,
+					}),
+					i(162968, {	-- Dread Aspirant's Cape (H)
+						["u"] = 2,
+					}),
+					i(162864, {	-- Dread Aspirant's Cloak (H)
+						["u"] = 2,
+					}),					
+					i(162967, {	-- Dread Aspirant's Drape (H)
+						["u"] = 2,
+					}),					
+					i(162895, {	-- Dread Aspirant's Greatcloak (H)
+						["u"] = 2,
+					}),					
+				}),
 				n(-385, {	-- Finger
 					i(162896, {	-- Dread Aspirant's Band
 						["u"] = 2,
@@ -485,32 +485,6 @@ _.PVP =
 						["u"] = 2,
 					}),
 					i(161693, {	-- Dread Gladiator's Warglaive (H)
-						["u"] = 2,
-					}),
-				}),
-				n(-322, {	-- Back
-					i(163732, {	-- Dread Gladiator's Cape (A)
-						["u"] = 2,
-					}),
-					i(163731, {	-- Dread Gladiator's Drape (A)
-						["u"] = 2,
-					}),
-					i(163730, {	-- Dread Gladiator's Greatcloak (A)
-						["u"] = 2,
-					}),
-					i(163729, {	-- Dread Gladiator's Shawl (A)
-						["u"] = 2,
-					}),
-					i(161907, {	-- Dread Gladiator's Cape (H)
-						["u"] = 2,
-					}),
-					i(161906, {	-- Dread Gladiator's Drape (H)
-						["u"] = 2,
-					}),
-					i(161669, {	-- Dread Gladiator's Greatcloak (H)
-						["u"] = 2,
-					}),
-					i(161668, {	-- Dread Gladiator's Shawl (H)
 						["u"] = 2,
 					}),
 				}),
@@ -906,6 +880,32 @@ _.PVP =
 						["u"] = 2,
 					}),
 				}),
+				n(-322, {	-- Back
+					i(163732, {	-- Dread Gladiator's Cape (A)
+						["u"] = 2,
+					}),
+					i(163731, {	-- Dread Gladiator's Drape (A)
+						["u"] = 2,
+					}),
+					i(163730, {	-- Dread Gladiator's Greatcloak (A)
+						["u"] = 2,
+					}),
+					i(163729, {	-- Dread Gladiator's Shawl (A)
+						["u"] = 2,
+					}),
+					i(161907, {	-- Dread Gladiator's Cape (H)
+						["u"] = 2,
+					}),
+					i(161906, {	-- Dread Gladiator's Drape (H)
+						["u"] = 2,
+					}),
+					i(161669, {	-- Dread Gladiator's Greatcloak (H)
+						["u"] = 2,
+					}),
+					i(161668, {	-- Dread Gladiator's Shawl (H)
+						["u"] = 2,
+					}),
+				}),
 				n(-385, {	-- Finger
 					i(161672, {	-- Dread Gladiator's Band
 						["u"] = 2,
@@ -1052,32 +1052,6 @@ _.PVP =
 						["u"] = 2,
 					}),
 					i(165193, {	-- Sinister Aspirant's Warglaive (H)
-						["u"] = 2,
-					}),
-				}),
-				n(-322, {	-- Back
-					i(165216, {	-- Sinister Aspirant's Cape (A)
-						["u"] = 2,
-					}),
-					i(165215, {	-- Sinister Aspirant's Drape (A)
-						["u"] = 2,
-					}),
-					i(165214, {	-- Sinister Aspirant's Greatcloak (A)
-						["u"] = 2,
-					}),
-					i(165213, {	-- Sinister Aspirant's Shawl (A)
-						["u"] = 2,
-					}),
-					i(165212, {	-- Sinister Aspirant's Cape (H)
-						["u"] = 2,
-					}),
-					i(165211, {	-- Sinister Aspirant's Drape (H)
-						["u"] = 2,
-					}),
-					i(165210, {	-- Sinister Aspirant's Greatcloak (H)
-						["u"] = 2,
-					}),
-					i(165209, {	-- Sinister Aspirant's Shawl (H)
 						["u"] = 2,
 					}),
 				}),
@@ -1281,6 +1255,32 @@ _.PVP =
 						["u"] = 2,
 					}),
 				}),
+				n(-322, {	-- Back
+					i(165216, {	-- Sinister Aspirant's Cape (A)
+						["u"] = 2,
+					}),
+					i(165215, {	-- Sinister Aspirant's Drape (A)
+						["u"] = 2,
+					}),
+					i(165214, {	-- Sinister Aspirant's Greatcloak (A)
+						["u"] = 2,
+					}),
+					i(165213, {	-- Sinister Aspirant's Shawl (A)
+						["u"] = 2,
+					}),
+					i(165212, {	-- Sinister Aspirant's Cape (H)
+						["u"] = 2,
+					}),
+					i(165211, {	-- Sinister Aspirant's Drape (H)
+						["u"] = 2,
+					}),
+					i(165210, {	-- Sinister Aspirant's Greatcloak (H)
+						["u"] = 2,
+					}),
+					i(165209, {	-- Sinister Aspirant's Shawl (H)
+						["u"] = 2,
+					}),
+				}),
 				n(-385, {	-- Finger
 					i(165219, {	-- Sinister Aspirant's Band
 						["u"] = 2,
@@ -1379,32 +1379,6 @@ _.PVP =
 						["u"] = 2,
 					}),
 					i(165028, {	-- Sinister Gladiator's Warglaive (H)
-						["u"] = 2,
-					}),
-				}),
-				n(-322, {	-- Back
-					i(165051, {	-- Sinister Gladiator's Cape (A)
-						["u"] = 2,
-					}),
-					i(165050, {	-- Sinister Gladiator's Drape (A)
-						["u"] = 2,
-					}),
-					i(165049, {	-- Sinister Gladiator's Greatcloak (A)
-						["u"] = 2,
-					}),
-					i(165048, {	-- Sinister Gladiator's Shawl (A)
-						["u"] = 2,
-					}),
-					i(165047, {	-- Sinister Gladiator's Cape (H)
-						["u"] = 2,
-					}),
-					i(165046, {	-- Sinister Gladiator's Drape (H)
-						["u"] = 2,
-					}),
-					i(165045, {	-- Sinister Gladiator's Greatcloak (H)
-						["u"] = 2,
-					}),
-					i(165044, {	-- Sinister Gladiator's Shawl (H)
 						["u"] = 2,
 					}),
 				}),
@@ -2016,6 +1990,32 @@ _.PVP =
 						["u"] = 2,
 					}),
 				}),
+				n(-322, {	-- Back
+					i(165051, {	-- Sinister Gladiator's Cape (A)
+						["u"] = 2,
+					}),
+					i(165050, {	-- Sinister Gladiator's Drape (A)
+						["u"] = 2,
+					}),
+					i(165049, {	-- Sinister Gladiator's Greatcloak (A)
+						["u"] = 2,
+					}),
+					i(165048, {	-- Sinister Gladiator's Shawl (A)
+						["u"] = 2,
+					}),
+					i(165047, {	-- Sinister Gladiator's Cape (H)
+						["u"] = 2,
+					}),
+					i(165046, {	-- Sinister Gladiator's Drape (H)
+						["u"] = 2,
+					}),
+					i(165045, {	-- Sinister Gladiator's Greatcloak (H)
+						["u"] = 2,
+					}),
+					i(165044, {	-- Sinister Gladiator's Shawl (H)
+						["u"] = 2,
+					}),
+				}),
 				n(-385, {	-- Finger
 					i(165053, {	-- Sinister Gladiator's Band
 						["u"] = 2,
@@ -2133,16 +2133,6 @@ _.PVP =
 					i(169739),	-- Notorious Aspirant's Wand (H)
 					i(170082),	-- Notorious Aspirant's Warglaive (H)
 				}),
-				n(-322, {	-- Back
-					i(167536),	-- Notorious Aspirant's Cape (A)
-					i(167535),	-- Notorious Aspirant's Drape (A)
-					i(167534),	-- Notorious Aspirant's Greatcloak (A)
-					i(167533),	-- Notorious Aspirant's Shawl (A)
-					i(167532),	-- Notorious Aspirant's Cape (H)
-					i(167531),	-- Notorious Aspirant's Drape (H)
-					i(167530),	-- Notorious Aspirant's Greatcloak (H)
-					i(167529),	-- Notorious Aspirant's Shawl (H)
-				}),
 				n(-43, {	-- Cloth
 					i(167514),	-- Notorious Aspirant's Silk Cord (A)
 					i(167517),	-- Notorious Aspirant's Silk Cuffs (A)
@@ -2215,6 +2205,16 @@ _.PVP =
 					i(167486),	-- Notorious Aspirant's Plate Pauldrons (H)
 					i(167483),	-- Notorious Aspirant's Plate Warboots (H)
 				}),
+				n(-322, {	-- Back
+					i(167536),	-- Notorious Aspirant's Cape (A)
+					i(167535),	-- Notorious Aspirant's Drape (A)
+					i(167534),	-- Notorious Aspirant's Greatcloak (A)
+					i(167533),	-- Notorious Aspirant's Shawl (A)
+					i(167532),	-- Notorious Aspirant's Cape (H)
+					i(167531),	-- Notorious Aspirant's Drape (H)
+					i(167530),	-- Notorious Aspirant's Greatcloak (H)
+					i(167529),	-- Notorious Aspirant's Shawl (H)
+				}),
 				n(-385, {	-- Finger
 					i(167523),	-- Notorious Aspirant's Ring
 					i(167524),	-- Notorious Aspirant's Band
@@ -2266,16 +2266,6 @@ _.PVP =
 					i(171154),	-- Notorious Gladiator's Staff (H)
 					i(169719),	-- Notorious Gladiator's Wand (H)
 					i(169707),	-- Notorious Gladiator's Warglaive (H)
-				}),
-				n(-322, {	-- Back
-					i(167373),	-- Notorious Gladiator's Cape (A)
-					i(167372),	-- Notorious Gladiator's Drape (A)
-					i(167370),	-- Notorious Gladiator's Shawl (A)
-					i(167371),	-- Notorious Gladiator's Greatcloak (A)
-					i(167369),	-- Notorious Gladiator's Cape (H)
-					i(167368),	-- Notorious Gladiator's Drape (H)
-					i(167366),	-- Notorious Gladiator's Shawl (H)
-					i(167367),	-- Notorious Gladiator's Greatcloak (H)
 				}),
 				n(-43, {	-- Cloth
 					i(167352),	-- Notorious Gladiator's Silk Amice (A)
@@ -2485,6 +2475,16 @@ _.PVP =
 					i(167388),	-- Notorious Gladiator's Plate Warhelm (H)
 					i(167452),	-- Notorious Gladiator's Shoulderplates (H)
 				}),
+				n(-322, {	-- Back
+					i(167373),	-- Notorious Gladiator's Cape (A)
+					i(167372),	-- Notorious Gladiator's Drape (A)
+					i(167370),	-- Notorious Gladiator's Shawl (A)
+					i(167371),	-- Notorious Gladiator's Greatcloak (A)
+					i(167369),	-- Notorious Gladiator's Cape (H)
+					i(167368),	-- Notorious Gladiator's Drape (H)
+					i(167366),	-- Notorious Gladiator's Shawl (H)
+					i(167367),	-- Notorious Gladiator's Greatcloak (H)
+				}),
 				n(-385, {	-- Finger
 					i(167375),	-- Notorious Gladiator's Band
 					i(167374),	-- Notorious Gladiator's Ring
@@ -2499,18 +2499,17 @@ _.PVP =
 					i(167384),	-- Notorious Gladiator's Safeguard
 				}),
 			}),
-			i(171095),	-- Warlord's Trophy Notorious Combatant
-			i(171096),	-- Warlord's Trophy Notorious Challenger
-			i(171097),	-- Warlord's Trophy Notorious Rival
-			i(171098),	-- Warlord's Trophy Notorious Duelist
-			i(171099),	-- Warlord's Trophy Notorious Elite
 			i(168316),	-- Battleborn Sigil Notorious Combatant
 			i(171090),	-- Battleborn Sigil Notorious Challenger
 			i(171091),	-- Battleborn Sigil Notorious Rival
 			i(171092),	-- Battleborn Sigil Notorious Duelist
 			i(171093),	-- Battleborn Sigil Notorious Elite
-			{	-- Mounts
-				["filter"] = 100,	-- Mounts
+			i(171095),	-- Warlord's Trophy Notorious Combatant
+			i(171096),	-- Warlord's Trophy Notorious Challenger
+			i(171097),	-- Warlord's Trophy Notorious Rival
+			i(171098),	-- Warlord's Trophy Notorious Duelist
+			i(171099),	-- Warlord's Trophy Notorious Elite
+			filter(100, {	-- Mounts
 				["g"] = {
 					i(163122, {	-- Vicious War Basilisk (A)
 						["races"] = ALLIANCE_ONLY,
@@ -2520,12 +2519,430 @@ _.PVP =
 					}),
 					--["description"] = "These mounts require 2400 points.\n\nAny win above 1400 rating will reward:\n\n10 Points in 2v2 (0.33%)\n\n25 Points in 3v3 (1%)\n\n50 Points in RBG (2%)",
 				},
-			},
+			}),
 		}),
+		n(-692, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
+			n(-659, {	-- Aspirant PvP Gear
+				n(-319, {	-- Weapons
+					i(172880),	-- Corrupted Aspirant's Chopper (A)
+					i(174013),	-- Corrupted Aspirant's Claw (A)
+					i(172878),	-- Corrupted Aspirant's Cleaver (A)
+					i(174015),	-- Corrupted Aspirant's Decapitator (A)
+					i(172872),	-- Corrupted Aspirant's Gavel (A)
+					i(172884),	-- Corrupted Aspirant's Greatsword (A)
+					i(172870),	-- Corrupted Aspirant's Longbow (A)
+					i(172882),	-- Corrupted Aspirant's Pike (A)
+					i(172874),	-- Corrupted Aspirant's Pummeler (A)
+					i(172866),	-- Corrupted Aspirant's Reprieve (A)
+					i(174017),	-- Corrupted Aspirant's Rifle (A)
+					i(172859),	-- Corrupted Aspirant's Shanker (A)
+					i(172868),	-- Corrupted Aspirant's Shield Wall (A)
+					i(172876),	-- Corrupted Aspirant's Slicer (A)
+					i(174011),	-- Corrupted Aspirant's Spellblade (A)
+					i(172858),	-- Corrupted Aspirant's Stabber (A)
+					i(172864),	-- Corrupted Aspirant's Staff (A)
+					i(172862),	-- Corrupted Aspirant's Wand (A)
+					i(174019),	-- Corrupted Aspirant's War Staff (A)
+					i(172886),	-- Corrupted Aspirant's Warglaive (A)
+					i(172881),	-- Corrupted Aspirant's Chopper (H)
+					i(174012),	-- Corrupted Aspirant's Claw (H)
+					i(172879),	-- Corrupted Aspirant's Cleaver (H)
+					i(174014),	-- Corrupted Aspirant's Decapitator (H)
+					i(172873),	-- Corrupted Aspirant's Gavel (H)
+					i(172885),	-- Corrupted Aspirant's Greatsword (H)
+					i(172871),	-- Corrupted Aspirant's Longbow (H)
+					i(172883),	-- Corrupted Aspirant's Pike (H)
+					i(172875),	-- Corrupted Aspirant's Pummeler (H)
+					i(172867),	-- Corrupted Aspirant's Reprieve (H)
+					i(174016),	-- Corrupted Aspirant's Rifle (H)
+					i(172861),	-- Corrupted Aspirant's Shanker (H)
+					i(172869),	-- Corrupted Aspirant's Shield Wall (H)
+					i(172877),	-- Corrupted Aspirant's Slicer (H)
+					i(174010),	-- Corrupted Aspirant's Spellblade (H)
+					i(172860),	-- Corrupted Aspirant's Stabber (H)
+					i(172865),	-- Corrupted Aspirant's Staff (H)
+					i(172863),	-- Corrupted Aspirant's Wand (H)
+					i(174018),	-- Corrupted Aspirant's War Staff (H)
+					i(172887),	-- Corrupted Aspirant's Warglaive (H)
+				}),
+				n(-43, {	-- Cloth
+					i(172837),	-- Corrupted Aspirant's Silk Cord (A)
+					i(172840),	-- Corrupted Aspirant's Silk Cuffs (A)
+					i(172823),	-- Corrupted Aspirant's Silk Gloves (A)
+					i(172825),	-- Corrupted Aspirant's Silk Hood (A)
+					i(172829),	-- Corrupted Aspirant's Silk Leggings (A)
+					i(172834),	-- Corrupted Aspirant's Silk Mantle (A)
+					i(172813),	-- Corrupted Aspirant's Silk Robe (A)
+					i(172818),	-- Corrupted Aspirant's Silk Treads (A)
+					i(172787),	-- Corrupted Aspirant's Silk Cord (H)
+					i(172786),	-- Corrupted Aspirant's Silk Cuffs (H)
+					i(172782),	-- Corrupted Aspirant's Silk Gloves (H)
+					i(172783),	-- Corrupted Aspirant's Silk Hood (H)
+					i(172784),	-- Corrupted Aspirant's Silk Leggings (H)
+					i(172785),	-- Corrupted Aspirant's Silk Mantle (H)
+					i(172780),	-- Corrupted Aspirant's Silk Robe (H)
+					i(172781),	-- Corrupted Aspirant's Silk Treads (H)
+				}),
+				n(-44, {	-- Leather
+					i(172839),	-- Corrupted Aspirant's Leather Belt (A)
+					i(172843),	-- Corrupted Aspirant's Leather Bindings (A)
+					i(172820),	-- Corrupted Aspirant's Leather Boots (A)
+					i(172821),	-- Corrupted Aspirant's Leather Gloves (A)
+					i(172827),	-- Corrupted Aspirant's Leather Helm (A)
+					i(172831),	-- Corrupted Aspirant's Leather Legguards (A)
+					i(172832),	-- Corrupted Aspirant's Leather Spaulders (A)
+					i(172816),	-- Corrupted Aspirant's Leather Tunic (A)
+					i(172794),	-- Corrupted Aspirant's Leather Belt (H)
+					i(172795),	-- Corrupted Aspirant's Leather Bindings (H)
+					i(172789),	-- Corrupted Aspirant's Leather Boots (H)
+					i(172790),	-- Corrupted Aspirant's Leather Gloves (H)
+					i(172791),	-- Corrupted Aspirant's Leather Helm (H)
+					i(172792),	-- Corrupted Aspirant's Leather Legguards (H)
+					i(172793),	-- Corrupted Aspirant's Leather Spaulders (H)
+					i(172788),	-- Corrupted Aspirant's Leather Tunic (H)
+				}),
+				n(-45, {	-- Mail
+					i(172842),	-- Corrupted Aspirant's Chain Armbands (A)
+					i(172815),	-- Corrupted Aspirant's Chain Armor (A)
+					i(172824),	-- Corrupted Aspirant's Chain Gauntlets (A)
+					i(172826),	-- Corrupted Aspirant's Chain Helm (A)
+					i(172830),	-- Corrupted Aspirant's Chain Leggings (A)
+					i(172819),	-- Corrupted Aspirant's Chain Sabatons (A)
+					i(172835),	-- Corrupted Aspirant's Chain Spaulders (A)
+					i(172838),	-- Corrupted Aspirant's Chain Waistguard (A)
+					i(172803),	-- Corrupted Aspirant's Chain Armbands (H)
+					i(172796),	-- Corrupted Aspirant's Chain Armor (H)
+					i(172798),	-- Corrupted Aspirant's Chain Gauntlets (H)
+					i(172799),	-- Corrupted Aspirant's Chain Helm (H)
+					i(172800),	-- Corrupted Aspirant's Chain Leggings (H)
+					i(172797),	-- Corrupted Aspirant's Chain Sabatons (H)
+					i(172801),	-- Corrupted Aspirant's Chain Spaulders (H)
+					i(172802),	-- Corrupted Aspirant's Chain Waistguard (H)
+				}),
+				n(-46, {	-- Plate
+					i(172841),	-- Corrupted Aspirant's Plate Armguards (A)
+					i(172814),	-- Corrupted Aspirant's Plate Chestpiece (A)
+					i(172822),	-- Corrupted Aspirant's Plate Gauntlets (A)
+					i(172836),	-- Corrupted Aspirant's Plate Girdle (A)
+					i(172812),	-- Corrupted Aspirant's Plate Helm (A)
+					i(172828),	-- Corrupted Aspirant's Plate Legguards (A)
+					i(172833),	-- Corrupted Aspirant's Plate Pauldrons (A)
+					i(172817),	-- Corrupted Aspirant's Plate Warboots (A)
+					i(172811),	-- Corrupted Aspirant's Plate Armguards (H)
+					i(172805),	-- Corrupted Aspirant's Plate Chestpiece (H)
+					i(172807),	-- Corrupted Aspirant's Plate Gauntlets (H)
+					i(172810),	-- Corrupted Aspirant's Plate Girdle (H)
+					i(172804),	-- Corrupted Aspirant's Plate Helm (H)
+					i(172808),	-- Corrupted Aspirant's Plate Legguards (H)
+					i(172809),	-- Corrupted Aspirant's Plate Pauldrons (H)
+					i(172806),	-- Corrupted Aspirant's Plate Warboots (H)
+				}),
+				n(-322, {	-- Back
+					i(172857),	-- Corrupted Aspirant's Cape (A)
+					i(172856),	-- Corrupted Aspirant's Drape (A)
+					i(172854),	-- Corrupted Aspirant's Shawl (A)
+					i(172853),	-- Corrupted Aspirant's Cape (H)
+					i(172852),	-- Corrupted Aspirant's Drape (H)
+					i(172850),	-- Corrupted Aspirant's Shawl (H)
+				}),
+				n(-385, {	-- Finger
+					i(172845),	-- Corrupted Aspirant's Band
+					i(172844),	-- Corrupted Aspirant's Ring
+				}),
+				n(-386, {	-- Trinkets
+					i(172849),	-- Corrupted Aspirant's Badge
+					i(172847),	-- Corrupted Aspirant's Emblem
+					i(172848),	-- Corrupted Aspirant's Insignia
+					i(172846),	-- Corrupted Aspirant's Medallion
+				}),
+			}),
+			n(-661, {	-- Gladiator PvP Gear
+				n(-319, {	-- Weapons
+					i(172754),	-- Corrupted Gladiator's Chopper (A)
+					i(172778),	-- Corrupted Gladiator's Claw (A)
+					i(172770),	-- Corrupted Gladiator's Cleaver (A)
+					i(172762),	-- Corrupted Gladiator's Decapitator (A)
+					i(172773),	-- Corrupted Gladiator's Gavel (A)
+					i(172767),	-- Corrupted Gladiator's Greatsword (A)
+					i(172758),	-- Corrupted Gladiator's Longbow (A)
+					i(172757),	-- Corrupted Gladiator's Pike (A)
+					i(172753),	-- Corrupted Gladiator's Pummeler (A)
+					i(172765),	-- Corrupted Gladiator's Reprieve (A)
+					i(173306),	-- Corrupted Gladiator's Rifle (A)
+					i(172751),	-- Corrupted Gladiator's Shanker (A)
+					i(172654),	-- Corrupted Gladiator's Shield Wall (A)
+					i(172755),	-- Corrupted Gladiator's Slicer (A)
+					i(173305),	-- Corrupted Gladiator's Spellblade (A)
+					i(172769),	-- Corrupted Gladiator's Stabber (A)
+					i(172775),	-- Corrupted Gladiator's Staff (A)
+					i(172760),	-- Corrupted Gladiator's Wand (A)
+					i(172776),	-- Corrupted Gladiator's War Staff (A)
+					i(172752),	-- Corrupted Gladiator's Warglaive (A)
+					i(172746),	-- Corrupted Gladiator's Chopper (H)
+					i(172779),	-- Corrupted Gladiator's Claw (H)
+					i(172771),	-- Corrupted Gladiator's Cleaver (H)
+					i(172777),	-- Corrupted Gladiator's Decapitator (H)
+					i(172772),	-- Corrupted Gladiator's Gavel (H)
+					i(172763),	-- Corrupted Gladiator's Greatsword (H)
+					i(172759),	-- Corrupted Gladiator's Longbow (H)
+					i(172756),	-- Corrupted Gladiator's Pike (H)
+					i(172747),	-- Corrupted Gladiator's Pummeler (H)
+					i(172764),	-- Corrupted Gladiator's Reprieve (H)
+					i(173304),	-- Corrupted Gladiator's Rifle (H)
+					i(172750),	-- Corrupted Gladiator's Shanker (H)
+					i(172653),	-- Corrupted Gladiator's Shield Wall (H)
+					i(172748),	-- Corrupted Gladiator's Slicer (H)
+					i(173303),	-- Corrupted Gladiator's Spellblade (H)
+					i(172768),	-- Corrupted Gladiator's Stabber (H)
+					i(172774),	-- Corrupted Gladiator's Staff (H)
+					i(172761),	-- Corrupted Gladiator's Wand (H)
+					i(172766),	-- Corrupted Gladiator's War Staff (H)
+					i(172749),	-- Corrupted Gladiator's Warglaive (H)
+				}),
+				n(-43, {	-- Cloth
+					i(172641),	-- Corrupted Gladiator's Silk Amice (A)
+					i(172718),	-- Corrupted Gladiator's Silk Armor (A)
+					i(172647),	-- Corrupted Gladiator's Silk Bracers (A)
+					i(172695),	-- Corrupted Gladiator's Silk Cap (A)
+					i(172710),	-- Corrupted Gladiator's Silk Chestwrap (A)
+					i(172580),	-- Corrupted Gladiator's Silk Cord (A)
+					i(172687),	-- Corrupted Gladiator's Silk Cover (A)
+					i(172632),	-- Corrupted Gladiator's Silk Cowl (A)
+					i(172583),	-- Corrupted Gladiator's Silk Cuffs (A)
+					i(172728),	-- Corrupted Gladiator's Silk Epaulets (A)
+					i(172566),	-- Corrupted Gladiator's Silk Gloves (A)
+					i(172630),	-- Corrupted Gladiator's Silk Handguards (A)
+					i(172679),	-- Corrupted Gladiator's Silk Helm (A)
+					i(172568),	-- Corrupted Gladiator's Silk Hood (A)
+					i(172572),	-- Corrupted Gladiator's Silk Leggings (A)
+					i(172577),	-- Corrupted Gladiator's Silk Mantle (A)
+					i(172620),	-- Corrupted Gladiator's Silk Raiment (A)
+					i(172556),	-- Corrupted Gladiator's Silk Robe (A)
+					i(172644),	-- Corrupted Gladiator's Silk Sash (A)
+					i(172744),	-- Corrupted Gladiator's Silk Shoulderguards (A)
+					i(172736),	-- Corrupted Gladiator's Silk Shoulderpads (A)
+					i(172625),	-- Corrupted Gladiator's Silk Slippers (A)
+					i(172561),	-- Corrupted Gladiator's Silk Treads (A)
+					i(172636),	-- Corrupted Gladiator's Silk Trousers (A)
+					i(172702),	-- Corrupted Gladiator's Silk Vestments (A)
+					i(172592),	-- Corrupted Gladiator's Silk Amice (H)
+					i(172714),	-- Corrupted Gladiator's Silk Armor (H)
+					i(172593),	-- Corrupted Gladiator's Silk Bracers (H)
+					i(172690),	-- Corrupted Gladiator's Silk Cap (H)
+					i(172706),	-- Corrupted Gladiator's Silk Chestwrap (H)
+					i(172530),	-- Corrupted Gladiator's Silk Cord (H)
+					i(172682),	-- Corrupted Gladiator's Silk Cover (H)
+					i(172590),	-- Corrupted Gladiator's Silk Cowl (H)
+					i(172529),	-- Corrupted Gladiator's Silk Cuffs (H)
+					i(172722),	-- Corrupted Gladiator's Silk Epaulets (H)
+					i(172525),	-- Corrupted Gladiator's Silk Gloves (H)
+					i(172589),	-- Corrupted Gladiator's Silk Handguards (H)
+					i(172674),	-- Corrupted Gladiator's Silk Helm (H)
+					i(172526),	-- Corrupted Gladiator's Silk Hood (H)
+					i(172527),	-- Corrupted Gladiator's Silk Leggings (H)
+					i(172528),	-- Corrupted Gladiator's Silk Mantle (H)
+					i(172587),	-- Corrupted Gladiator's Silk Raiment (H)
+					i(172523),	-- Corrupted Gladiator's Silk Robe (H)
+					i(172594),	-- Corrupted Gladiator's Silk Sash (H)
+					i(172738),	-- Corrupted Gladiator's Silk Shoulderguards (H)
+					i(172730),	-- Corrupted Gladiator's Silk Shoulderpads (H)
+					i(172588),	-- Corrupted Gladiator's Silk Slippers (H)
+					i(172524),	-- Corrupted Gladiator's Silk Treads (H)
+					i(172591),	-- Corrupted Gladiator's Silk Trousers (H)
+					i(172698),	-- Corrupted Gladiator's Silk Vestments (H)
+				}),
+				n(-44, {	-- Leather
+					i(172650),	-- Corrupted Gladiator's Leather Armwraps (A)
+					i(172582),	-- Corrupted Gladiator's Leather Belt (A)
+					i(172586),	-- Corrupted Gladiator's Leather Bindings (A)
+					i(172563),	-- Corrupted Gladiator's Leather Boots (A)
+					i(172681),	-- Corrupted Gladiator's Leather Cap (A)
+					i(172713),	-- Corrupted Gladiator's Leather Chestguard (A)
+					i(172627),	-- Corrupted Gladiator's Leather Footguards (A)
+					i(172564),	-- Corrupted Gladiator's Leather Gloves (A)
+					i(172628),	-- Corrupted Gladiator's Leather Handguards (A)
+					i(172721),	-- Corrupted Gladiator's Leather Harness (A)
+					i(172697),	-- Corrupted Gladiator's Leather Headpiece (A)
+					i(172570),	-- Corrupted Gladiator's Leather Helm (A)
+					i(172634),	-- Corrupted Gladiator's Leather Hood (A)
+					i(172705),	-- Corrupted Gladiator's Leather Jerkin (A)
+					i(172574),	-- Corrupted Gladiator's Leather Legguards (A)
+					i(172639),	-- Corrupted Gladiator's Leather Mantle (A)
+					i(172638),	-- Corrupted Gladiator's Leather Pants (A)
+					i(172734),	-- Corrupted Gladiator's Leather Pauldrons (A)
+					i(172726),	-- Corrupted Gladiator's Leather Shoulderguards (A)
+					i(172742),	-- Corrupted Gladiator's Leather Shoulderpads (A)
+					i(172689),	-- Corrupted Gladiator's Leather Skullguard (A)
+					i(172575),	-- Corrupted Gladiator's Leather Spaulders (A)
+					i(172559),	-- Corrupted Gladiator's Leather Tunic (A)
+					i(172623),	-- Corrupted Gladiator's Leather Vest (A)
+					i(172646),	-- Corrupted Gladiator's Leather Waistband (A)
+					i(172602),	-- Corrupted Gladiator's Leather Armwraps (H)
+					i(172537),	-- Corrupted Gladiator's Leather Belt (H)
+					i(172538),	-- Corrupted Gladiator's Leather Bindings (H)
+					i(172532),	-- Corrupted Gladiator's Leather Boots (H)
+					i(172675),	-- Corrupted Gladiator's Leather Cap (H)
+					i(172707),	-- Corrupted Gladiator's Leather Chestguard (H)
+					i(172596),	-- Corrupted Gladiator's Leather Footguards (H)
+					i(172533),	-- Corrupted Gladiator's Leather Gloves (H)
+					i(172597),	-- Corrupted Gladiator's Leather Handguards (H)
+					i(172715),	-- Corrupted Gladiator's Leather Harness (H)
+					i(172691),	-- Corrupted Gladiator's Leather Headpiece (H)
+					i(172534),	-- Corrupted Gladiator's Leather Helm (H)
+					i(172598),	-- Corrupted Gladiator's Leather Hood (H)
+					i(172699),	-- Corrupted Gladiator's Leather Jerkin (H)
+					i(172535),	-- Corrupted Gladiator's Leather Legguards (H)
+					i(172600),	-- Corrupted Gladiator's Leather Mantle (H)
+					i(172599),	-- Corrupted Gladiator's Leather Pants (H)
+					i(172731),	-- Corrupted Gladiator's Leather Pauldrons (H)
+					i(172723),	-- Corrupted Gladiator's Leather Shoulderguards (H)
+					i(172739),	-- Corrupted Gladiator's Leather Shoulderpads (H)
+					i(172683),	-- Corrupted Gladiator's Leather Skullguard (H)
+					i(172536),	-- Corrupted Gladiator's Leather Spaulders (H)
+					i(172531),	-- Corrupted Gladiator's Leather Tunic (H)
+					i(172595),	-- Corrupted Gladiator's Leather Vest (H)
+					i(172601),	-- Corrupted Gladiator's Leather Waistband (H)
+				}),
+				n(-45, {	-- Mail
+					i(172585),	-- Corrupted Gladiator's Chain Armbands (A)
+					i(172558),	-- Corrupted Gladiator's Chain Armor (A)
+					i(172622),	-- Corrupted Gladiator's Chain Chestguard (A)
+					i(172645),	-- Corrupted Gladiator's Chain Clasp (A)
+					i(172680),	-- Corrupted Gladiator's Chain Coif (A)
+					i(172745),	-- Corrupted Gladiator's Chain Epaulets (A)
+					i(172626),	-- Corrupted Gladiator's Chain Footguards (A)
+					i(172567),	-- Corrupted Gladiator's Chain Gauntlets (A)
+					i(172631),	-- Corrupted Gladiator's Chain Handguards (A)
+					i(172704),	-- Corrupted Gladiator's Chain Hauberk (A)
+					i(172688),	-- Corrupted Gladiator's Chain Headgear (A)
+					i(172633),	-- Corrupted Gladiator's Chain Headpiece (A)
+					i(172569),	-- Corrupted Gladiator's Chain Helm (A)
+					i(172573),	-- Corrupted Gladiator's Chain Leggings (A)
+					i(172637),	-- Corrupted Gladiator's Chain Legguards (A)
+					i(172737),	-- Corrupted Gladiator's Chain Mantle (A)
+					i(172729),	-- Corrupted Gladiator's Chain Pauldrons (A)
+					i(172562),	-- Corrupted Gladiator's Chain Sabatons (A)
+					i(172642),	-- Corrupted Gladiator's Chain Shoulderguards (A)
+					i(172696),	-- Corrupted Gladiator's Chain Skullcover (A)
+					i(172578),	-- Corrupted Gladiator's Chain Spaulders (A)
+					i(172720),	-- Corrupted Gladiator's Chain Vest (A)
+					i(172581),	-- Corrupted Gladiator's Chain Waistguard (A)
+					i(172649),	-- Corrupted Gladiator's Chain Wristguards (A)
+					i(172712),	-- Corrupted Gladiator's Chainmail (A)
+					i(172546),	-- Corrupted Gladiator's Chain Armbands (H)
+					i(172539),	-- Corrupted Gladiator's Chain Armor (H)
+					i(172603),	-- Corrupted Gladiator's Chain Chestguard (H)
+					i(172609),	-- Corrupted Gladiator's Chain Clasp (H)
+					i(172676),	-- Corrupted Gladiator's Chain Coif (H)
+					i(172740),	-- Corrupted Gladiator's Chain Epaulets (H)
+					i(172604),	-- Corrupted Gladiator's Chain Footguards (H)
+					i(172541),	-- Corrupted Gladiator's Chain Gauntlets (H)
+					i(172605),	-- Corrupted Gladiator's Chain Handguards (H)
+					i(172700),	-- Corrupted Gladiator's Chain Hauberk (H)
+					i(172684),	-- Corrupted Gladiator's Chain Headgear (H)
+					i(172606),	-- Corrupted Gladiator's Chain Headpiece (H)
+					i(172542),	-- Corrupted Gladiator's Chain Helm (H)
+					i(172543),	-- Corrupted Gladiator's Chain Leggings (H)
+					i(172607),	-- Corrupted Gladiator's Chain Legguards (H)
+					i(172732),	-- Corrupted Gladiator's Chain Mantle (H)
+					i(172724),	-- Corrupted Gladiator's Chain Pauldrons (H)
+					i(172540),	-- Corrupted Gladiator's Chain Sabatons (H)
+					i(172608),	-- Corrupted Gladiator's Chain Shoulderguards (H)
+					i(172692),	-- Corrupted Gladiator's Chain Skullcover (H)
+					i(172544),	-- Corrupted Gladiator's Chain Spaulders (H)
+					i(172716),	-- Corrupted Gladiator's Chain Vest (H)
+					i(172545),	-- Corrupted Gladiator's Chain Waistguard (H)
+					i(172610),	-- Corrupted Gladiator's Chain Wristguards (H)
+					i(172708),	-- Corrupted Gladiator's Chainmail (H)
+				}),
+				n(-46, {	-- Plate
+					i(172554),	-- Corrupted Gladiator's Plate Armguards (H)
+					i(172701),	-- Corrupted Gladiator's Plate Armor (H)
+					i(172709),	-- Corrupted Gladiator's Plate Breastplate (H)
+					i(172612),	-- Corrupted Gladiator's Plate Chestguard (H)
+					i(172548),	-- Corrupted Gladiator's Plate Chestpiece (H)
+					i(172717),	-- Corrupted Gladiator's Plate Chestplate (H)
+					i(172617),	-- Corrupted Gladiator's Plate Clasp (H)
+					i(172550),	-- Corrupted Gladiator's Plate Gauntlets (H)
+					i(172553),	-- Corrupted Gladiator's Plate Girdle (H)
+					i(172614),	-- Corrupted Gladiator's Plate Gloves (H)
+					i(172685),	-- Corrupted Gladiator's Plate Greathelm (H)
+					i(172613),	-- Corrupted Gladiator's Plate Greaves (H)
+					i(172611),	-- Corrupted Gladiator's Plate Headcover (H)
+					i(172547),	-- Corrupted Gladiator's Plate Helm (H)
+					i(172615),	-- Corrupted Gladiator's Plate Leg Armor (H)
+					i(172551),	-- Corrupted Gladiator's Plate Legguards (H)
+					i(172552),	-- Corrupted Gladiator's Plate Pauldrons (H)
+					i(172733),	-- Corrupted Gladiator's Plate Shoulderguards (H)
+					i(172616),	-- Corrupted Gladiator's Plate Shoulders (H)
+					i(172693),	-- Corrupted Gladiator's Plate Skullguard (H)
+					i(172725),	-- Corrupted Gladiator's Plate Spaulders (H)
+					i(172618),	-- Corrupted Gladiator's Plate Vambraces (H)
+					i(172549),	-- Corrupted Gladiator's Plate Warboots (H)
+					i(172677),	-- Corrupted Gladiator's Plate Warhelm (H)
+					i(172741),	-- Corrupted Gladiator's Shoulderplates (H)
+					i(172584),	-- Corrupted Gladiator's Plate Armguards (A)
+					i(172703),	-- Corrupted Gladiator's Plate Armor (A)
+					i(172711),	-- Corrupted Gladiator's Plate Breastplate (A)
+					i(172621),	-- Corrupted Gladiator's Plate Chestguard (A)
+					i(172557),	-- Corrupted Gladiator's Plate Chestpiece (A)
+					i(172719),	-- Corrupted Gladiator's Plate Chestplate (A)
+					i(172643),	-- Corrupted Gladiator's Plate Clasp (A)
+					i(172565),	-- Corrupted Gladiator's Plate Gauntlets (A)
+					i(172579),	-- Corrupted Gladiator's Plate Girdle (A)
+					i(172629),	-- Corrupted Gladiator's Plate Gloves (A)
+					i(172686),	-- Corrupted Gladiator's Plate Greathelm (A)
+					i(172624),	-- Corrupted Gladiator's Plate Greaves (A)
+					i(172619),	-- Corrupted Gladiator's Plate Headcover (A)
+					i(172555),	-- Corrupted Gladiator's Plate Helm (A)
+					i(172635),	-- Corrupted Gladiator's Plate Leg Armor (A)
+					i(172571),	-- Corrupted Gladiator's Plate Legguards (A)
+					i(172576),	-- Corrupted Gladiator's Plate Pauldrons (A)
+					i(172735),	-- Corrupted Gladiator's Plate Shoulderguards (A)
+					i(172640),	-- Corrupted Gladiator's Plate Shoulders (A)
+					i(172694),	-- Corrupted Gladiator's Plate Skullguard (A)
+					i(172727),	-- Corrupted Gladiator's Plate Spaulders (A)
+					i(172648),	-- Corrupted Gladiator's Plate Vambraces (A)
+					i(172560),	-- Corrupted Gladiator's Plate Warboots (A)
+					i(172678),	-- Corrupted Gladiator's Plate Warhelm (A)
+					i(172743),	-- Corrupted Gladiator's Shoulderplates (A)
+				}),
+				n(-322, {	-- Back
+				}),
+				n(-385, {	-- Finger
+					i(172664),	-- Corrupted Gladiator's Band
+					i(172663),	-- Corrupted Gladiator's Ring
+					i(172665),	-- Corrupted Gladiator's Signet
+				}),
+				n(-386, {	-- Trinkets
+					i(172669),	-- Corrupted Gladiator's Badge
+					i(174276),	-- Corrupted Gladiator's Breach
+					i(172667),	-- Corrupted Gladiator's Emblem
+					i(172668),	-- Corrupted Gladiator's Insignia
+					i(172672),	-- Corrupted Gladiator's Maledict
+					i(172666),	-- Corrupted Gladiator's Medallion
+					i(172673),	-- Corrupted Gladiator's Safeguard
+					i(174472),	-- Corrupted Gladiator's Spite
+				}),
+			}),
+			i(172890),	-- Battleborn Sigil Corrupted Combatant
+			i(172891),	-- Battleborn Sigil Corrupted Challenger
+			i(172892),	-- Battleborn Sigil Corrupted Rival
+			i(172893),	-- Battleborn Sigil Corrupted Duelist
+			i(172894),	-- Battleborn Sigil Corrupted Elite
+			i(172895),	-- Warlord's Trophy Corrupted Combatant
+			i(171096),	-- Warlord's Trophy Corrupted Challenger
+			i(171097),	-- Warlord's Trophy Corrupted Rival
+			i(171098),	-- Warlord's Trophy Corrupted Duelist
+			i(171099),	-- Warlord's Trophy Corrupted Elite
+			filter(100, {	-- Mounts
+			}),
+		}),	
 		i(163827, {	-- Quartermaster's Coin
 			["u"] = 2,
 		}),
 		i(171198),	-- Quartermaster's Prize
+		i(172519),	-- Quartermaster's Note
 		i(163826),	-- Raider's Supply Cache
 	}),
 };
