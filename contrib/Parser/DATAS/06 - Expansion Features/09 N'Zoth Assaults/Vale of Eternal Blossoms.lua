@@ -1042,13 +1042,18 @@ _.ExpansionFeatures =
 			}),
 			n(-34,  {	-- World Quests
 				q(58747, {	-- Brain Tickling
-					-- pet battle
+					["f"] = 101,	-- Battle Pet
 					["lvl"] = 120,
 					["coord"] = { 57.5, 54.3, 1530 },
 					["isWorldQuest"] = true,
 				}),
+				q(58748, {	-- Living Statues Are Tough
+					["f"] = 101,	-- Battle Pet
+					["lvl"] = 120,
+					["isWorldQuest"] = true,
+				}),
 				q(58746, {	-- Tiny Madness
-					-- pet battle
+					["f"] = 101,	-- Battle Pet
 					["lvl"] = 120,
 					["coord"] = { 56.2, 28.2, 1530 },
 					["isWorldQuest"] = true,
