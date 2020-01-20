@@ -206,6 +206,7 @@ _.ExpansionFeatures =
 								["isDaily"] = true,
 								["coords"] = {
 									{ 46.4, 33.0, 1530 },
+									{ 09.1, 52.8, 1579 },
 								},
 							}),
 							o(, {	-- Black Empire Cache
@@ -214,6 +215,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 62.6, 57.1, 1530 },
 									{ 65.9, 59.7, 1530 },
+									{ 62.0, 51.6, 1530 },
 								},
 							}),
 							o(, {	-- Black Empire Cache
@@ -222,6 +224,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 81.3, 33.8, 1530 },
 									{ 77.1, 63.6, 1530 },
+									{ 70.2, 53.7, 1530 },
 								},
 							}),
 							o(, {	-- Black Empire Cache
@@ -229,6 +232,7 @@ _.ExpansionFeatures =
 								["isDaily"] = true,
 								["coords"] = {
 									{ 68.7, 58.8, 1530 },
+									{ 68.3, 62.5, 1530 },
 								},
 							}),
 							o(, {	-- Black Empire Cache
@@ -237,6 +241,7 @@ _.ExpansionFeatures =
 								["coords"] = {
 									{ 42.4, 68.5, 1530 },
 									{ 51.2, 63.3, 1530 },
+									{ 47.9, 71.0, 1530 },
 								},
 							}),
 						}),
@@ -1038,6 +1043,9 @@ _.ExpansionFeatures =
 					["coord"] = { 9.5, 67.4, 1530 },
 					["isDaily"] = true,
 					["description"] = "Use the fishing pole.",
+					["g"] = {
+						i(174229),	-- Lantern of the Damned
+					},
 				}),
 			}),
 			n(-34,  {	-- World Quests

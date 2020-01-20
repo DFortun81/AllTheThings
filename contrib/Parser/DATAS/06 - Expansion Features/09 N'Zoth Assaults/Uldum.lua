@@ -561,6 +561,7 @@ _.ExpansionFeatures =
 							["g"] = {
 								i(174769),	-- Malevolent Drone
 								i(174227),	-- Writhing Feeler
+								i(174224),	-- Greatsword of Cruelty
 							},
 						}),
 						n(162163, {	-- High Priest Ytaessis
