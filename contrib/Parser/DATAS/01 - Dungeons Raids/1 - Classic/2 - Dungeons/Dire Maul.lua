@@ -706,7 +706,6 @@ _.Instances = { tier(1, {	-- Classic
 					cr(11489, e(406, {	-- Tendris Warpwood
 						i(18353),	-- Stoneflower Staff
 						i(18352),	-- Petrified Bark Shield
-						un(45, i(18382)),	-- Fluctuating Cloak (7.3.5 - Moved from Prince Tortheldrin, Made Unobtainable by Blizzard Incompetence.)
 						i(18393),	-- Warpwood Bindings
 						i(18390),	-- Tanglemoss Leggings
 					})),
@@ -740,7 +739,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(18392),	-- Distracting Dagger
 						i(18376),	-- Timeworn Mace
 						i(18388),	-- Stoneshatter
-					 -- i(18382),	-- Fluctuating Cloak (7.3.5 - Moved to Tendris Warpwood)
+						i(18382),	-- Fluctuating Cloak
 						i(18373),	-- Chestplate of Tranquility
 						i(18375),	-- Bracers of the Eclipse
 						i(18380),	-- Eldritch Reinforced Legplates
