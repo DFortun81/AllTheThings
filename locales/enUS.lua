@@ -913,6 +913,8 @@ app.L = {
 		[-10078] = "Interface\\Icons\\Paladin_Protection",							-- Assault: The Endless Swarm
 		[-10079] = "Interface\\Icons\\Paladin_Protection",							-- Assault: Aqir Unearthed
 		[-10080] = "Interface\\Icons\\Paladin_Protection",							-- Assault: Aqir Unearthed
+		[-10081] = "Interface\\Icons\\spell_priest_shadow-mend",					-- Corrupted Area (Vision Scenario)
+		[-10082] = "Interface\\Icons\\spell_priest_psyfiend",						-- Lost Area (Vision Scenario)
 
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
 		[-101502] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -1783,7 +1785,7 @@ app.L = {
 		[-10063] = BATTLE_PET_BREED_QUALITY3,			-- "Uncommon";
 		[-10064] = BATTLE_PET_BREED_QUALITY4,			-- "Rare";
 		[-10065] = BATTLE_PET_BREED_QUALITY5,			-- "Epic";
-]]--
+]]--	-- 8.3
 		[-10066] = BATTLE_PET_BREED_QUALITY6,			-- "Legendary";
 		[-10067] = ITEM_QUALITY6_DESC, 					-- Artifact
 		[-10068] = OPTION_TOOLTIP_ANIMATION,			-- PLACE_HOLDER
@@ -1799,6 +1801,8 @@ app.L = {
 		[-10078] = "Assault: The Endless Swarm",
 		[-10079] = "Assault: Aqir Unearthed",
 		[-10080] = "Horrific Visions",
+		[-10081] = "Corrupted Area",
+		[-10082] = "Lost Area",
 	},
 
 	["OBJECT_ID_ICONS"] = {
