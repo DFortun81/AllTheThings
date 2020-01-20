@@ -4,24 +4,6 @@
 _.PVP =
 {
 	n(-10052, {	-- Battle for Azeroth
-		n(-17, {	-- Quests
-			q(58274, {	-- Servant of N'Zoth
-				["races"] = ALLIANCE_ONLY,
-				["description"] = "Granted upon killing 10 Horde players without dying to become an Assassin.",
-				["g"] = {
-					title(414),	-- %s, Servant of N'Zoth
-					i(173951),	-- N'lyeth, Sliver of N'Zoth
-				},
-			}),
-			q(58273, {	-- Servant of N'Zoth
-				["races"] = HORDE_ONLY,
-				["description"] = "Granted upon killing 10 Alliance players without dying to become an Assassin.",
-				["g"] = {
-					title(414),	-- %s, Servant of N'Zoth
-					i(173951),	-- N'lyeth, Sliver of N'Zoth
-				},
-			}),
-		}),
 		n(-689, {	-- Dread Gladiator: Battle for Azeroth Season 1
 			n(-660, {	-- Aspirant PvP Gear
 				n(-319, {	-- Weapons
@@ -2931,10 +2913,10 @@ _.PVP =
 			i(172893),	-- Battleborn Sigil Corrupted Duelist
 			i(172894),	-- Battleborn Sigil Corrupted Elite
 			i(172895),	-- Warlord's Trophy Corrupted Combatant
-			i(171096),	-- Warlord's Trophy Corrupted Challenger
-			i(171097),	-- Warlord's Trophy Corrupted Rival
-			i(171098),	-- Warlord's Trophy Corrupted Duelist
-			i(171099),	-- Warlord's Trophy Corrupted Elite
+			i(172896),	-- Warlord's Trophy Corrupted Challenger
+			i(172897),	-- Warlord's Trophy Corrupted Rival
+			i(172898),	-- Warlord's Trophy Corrupted Duelist
+			i(172899),	-- Warlord's Trophy Corrupted Elite
 			filter(100, {	-- Mounts
 			}),
 		}),	

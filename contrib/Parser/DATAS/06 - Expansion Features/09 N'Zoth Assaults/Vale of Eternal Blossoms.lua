@@ -645,7 +645,7 @@ _.ExpansionFeatures =
 					}),
 				}),
 			}),
-			n(-10072, {    -- N'Zoth Assaults
+			n(-10072, {    -- N'Zoth Assault
 				n(-4,   {	-- Achievements
 					ach(14159, {		-- Combating the Corruption -- TODO:: update with criteria when they get added.  Only crit for the zone atm is uncommented, rest are in Uldum? -- Is attaching questID's to these really the best way to track the quest?
 						--[[crit(1, {	-- 	Corrupted Acolyte slain

@@ -1493,6 +1493,17 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
+				n(-10071, {	-- Visions of N'Zoth
+					["description"] = "Use the obelisk to see Uldum succumb to N'Zoth's corruption.",
+					["g"] = {
+						n(0, {	-- Zone Drops
+							i(174837),	-- Decaying Fusion Core (14 day timer on this. no sure what it is yet)
+							i(171312),	-- Recipe: Void Focus
+							i(174491),	-- Tome of Unspeakable Delicacies
+							i(174462),	-- Void Cocoon
+						}),
+					},
+				}),
 				n(-34,    {	-- World Quests
 					q(58743, {	-- Dune Buggy
 						-- pet battle
@@ -1528,17 +1539,6 @@ _.ExpansionFeatures =
 					i(174370),	-- Pattern: Unsettling Seaweave Gloves
 					i(171317),	-- Plans: Unsettling Osmenite Girdle
 					i(171316),	-- Plans: Unsettling Osmenite Legguards
-				}),
-				n(-10071, {	-- Visions of N'Zoth
-					["description"] = "Use the obelisk to see Uldum succumb to N'Zoth's corruption.",
-					["g"] = {
-						n(0, {	-- Zone Drops
-							i(174837),	-- Decaying Fusion Core (14 day timer on this. no sure what it is yet)
-							i(171312),	-- Recipe: Void Focus
-							i(174491),	-- Tome of Unspeakable Delicacies
-							i(174462),	-- Void Cocoon
-						}),
-					},
 				}),
 			}),
 		},

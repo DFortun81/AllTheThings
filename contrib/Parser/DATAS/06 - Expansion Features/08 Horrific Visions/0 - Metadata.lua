@@ -87,10 +87,10 @@ _.ExpansionFeatures =
 			n(-10073, {	-- Horrific Vision of Orgrimmar
 				["maps"] = { 1469 },
 				["g"] = {
-					n(155098,  {		-- Rexxar
-						i(174457),	-- C'Thuffer (pet) - rexxar
-					}),
-					n(-6015, {	-- Rewards	-- temporary grouping until we figure out how these are best organized
+					n(-6015, {				-- Rewards	-- temporary grouping until we figure out how these are best organized
+						n(155098,  {		-- Rexxar
+							i(174457),		-- C'Thuffer (pet) - rexxar
+						}),
 						i(174920),	-- Coifcurl's Close Shave Kit (Toy)
 						i(174926),	-- Overly Sensitive Void Spectacles (Toy)
 						i(174928),	-- Rotten Apple (Toy)
