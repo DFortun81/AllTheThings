@@ -610,7 +610,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 					}),
 				}),
-				n(-34, {	-- World Quests
+				n(-34,  {	-- World Quests
 					q(57728, {	-- Assault: The Endless Swarm
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
@@ -645,455 +645,457 @@ _.ExpansionFeatures =
 					}),
 				}),
 			}),
-			n(-4,   {	-- Achievements
-				ach(14159, {		-- Combating the Corruption -- TODO:: update with criteria when they get added.  Only crit for the zone atm is uncommented, rest are in Uldum? -- Is attaching questID's to these really the best way to track the quest?
-					--[[crit(1, {	-- 	Corrupted Acolyte slain
-						["coords"] = {
-							{ 49.5, 39.9, 1527 },
-							{ 51.2, 73.2, 1527 },
-							{ 49.0, 80.0, 1527 },
-							{ 46.2, 79.7, 1527 },
-							{ 47.7, 84.5, 1527 },
-							{ 49.1, 83.8, 1527 },
-							{ 57.1, 43.5, 1527 },
-							{ 55.8, 41.5, 1527 },
-							{ 54.9, 80.0, 1527 },
-							{ 46.2, 42.0, 1527 },
-							{ 53.8, 43.1, 1527 },
-						},
-					}),
-					crit(2, {	-- 	Corrupted Assassin slain
-						["coords"] = {
-							{ 51.7, 71.1, 1527 },
-							{ 50.7, 72.3, 1527 },
-							{ 50.2, 72.6, 1527 },
-							{ 50.4, 73.6, 1527 },
-							{ 50.0, 78.7, 1527 },
-							{ 51.2, 80.0, 1527 },
-							{ 49.4, 80.9, 1527 },
-							{ 48.6, 85.6, 1527 },
-							{ 50.0, 71.8, 1527 },
-							{ 52.2, 84.5, 1527 },
-							{ 50.7, 69.4, 1527 },
-							{ 52.0, 69.4, 1527 },
-							{ 50.0, 71.7, 1527 },
-						},
-					}),
-					crit(3,	{	--	Corrupted Beheader slain
-						["coords"] = {
-							{ 58.4, 42.8, 1527 },
-							{ 52.6, 46.4, 1527 },
-							{ 60.0, 49.5, 1527 },
-							{ 51.0, 71.2, 1527 },
-							{ 50.0, 78.7, 1527 },
-							{ 50.2, 73.1, 1527 },
-							{ 50.5, 85.8, 1527 },
-							{ 49.1, 84.7, 1527 },
-						},
-					}),
-					crit(4,	{	-- Corrupted Bloodseeker slain
-						["coords"] = {
-							{ 35.1, 17.3, 249 },
-							{ 35.1, 17.3, 249 },
-							{ 35.1, 17.3, 249 },
-							{ 35.1, 17.3, 249 },
-							{ 35.1, 17.3, 249 },
-							{ 35.1, 17.3, 249 },
-						},
-					}),
-					crit(5,	{	-- Corrupted Bonestripper slain
-						["description"] = "found in most water locations",
-						["coords"] = {
-							{ 55.7, 43.8, 1527 },
-							{ 57.5, 17.7, 1527 },
-							{ 56.6, 20.6, 1527 },
-							{ 56.5, 24.4, 1527 },
-							{ 57.3, 27.4, 1527 },
-							{ 59.6, 60.8, 1527 },
-						},
-					}),
-					crit(6,	{	-- Corrupted Despoiler slain
-						["description"] = "Shares a spawn with Mind Eater",
-						["coords"] = {
-							{ 59.5, 47.4, 1527 },
-							{ 59.1, 42.7, 1527 },
-							{ 55.1, 53.4, 1527 },
-							{ 49.4, 39.6, 1527 },
-							{ 60.2, 53.6, 1527 },
-							{ 58.4, 24.8, 1527 },
-							{ 55.6, 24.4, 1527 },
-						},
-					}),
-					crit(7,	{	-- Corrupted Dominator slain
-						["coords"] = {
-							{ 63.0, 71.0, 1527 },
-							{ 63.8, 72.8, 1527 },
-							{ 64.5, 74.5, 1527 },
-							{ 60.2, 66.4, 1527 },
-							{ 61.6, 69.4, 1527 },
-							{ 56.5, 42.1, 1527 },
-						},
-					}),
-					crit(8,	{	-- Corrupted Doomsayer slain
-						["coords"] = {
-							{ 60.8, 71.5, 1527 },
-							{ 60.2, 71.3, 1527 },
-							{ 62.0, 73.7, 1527 },
-							{ 49.8, 39.9, 1527 },
-							{ 49.6, 41.4, 1527 },
-							{ 61.8, 70.6, 1527 },
-							{ 61.4, 75.2, 1527 },
-							{ 63.5, 70.0, 1527 },
-						},
-					}),
-					crit(9,	{	-- Corrupted Fleshbeast slain
-						["coords"] = {
-							{ 59.5, 48.6, 1527 },
-							{ 49.0, 35.5, 1527 },
-							{ 62.2, 68.7, 1527 },
-							{ 60.9, 69.3, 1527 },
-							{ 60.4, 67.5, 1527 },
-							{ 62.0, 66.7, 1527 },
-						},
-					}),
-					crit(10, {	-- Corrupted Jailer slain
-						["coords"] = {
-							{ 60.8, 71.5, 1527 },
-							{ 62.1, 74.7, 1527 },
-							{ 63.4, 72.6, 1527 },
-							{ 62.2, 67.4, 1527 },
-						},
-					}),
-					crit(11, {	-- Corrupted Mind Eater slain
-						["description"] = "Shares a spawn with Faceless Despoiler",
-						["coords"] = {
-							{ 59.5, 47.4, 1527 },
-							{ 59.1, 42.7, 1527 },
-							{ 55.1, 53.4, 1527 },
-							{ 49.4, 39.6, 1527 },
-							{ 60.2, 53.6, 1527 },
-							{ 58.4, 24.8, 1527 },
-							{ 55.6, 24.4, 1527 },
-						},
-					}),
-					crit(12, {	-- Corrupted Neferset Guard slain
-						["coords"] = {
-							{ 50.9, 82.9, 1527 },
-							{ 51.6, 81.7, 1527 },
-							{ 49.8, 82.0, 1527 },
-							{ 49.8, 82.6, 1527 },
-							{ 49.0, 82.6, 1527 },
-							{ 47.3, 80.3, 1527 },
-							{ 50.7, 85.5, 1527 },
-							{ 50.3, 85.5, 1527 },
-							{ 50.5, 77.9, 1527 },
-							{ 50.8, 77.8, 1527 },
-							{ 50.9, 75.0, 1527 },
-							{ 50.5, 75.0, 1527 },
-						},
-					}),
-					crit(13, {	-- Corrupted Observer slain
-						["coords"] = {
-							{ 55.4, 51.0, 1527 },
-						},
-					}),
-					crit(14, {	-- Corrupted Putrefaction slain
-						["coords"] = {
-							{ 59.3, 41.4, 1527 },
-							{ 60.4, 39.9, 1527 },
-							{ 47.4, 26.3, 1527 },
-							{ 57.1, 81.6, 1527 },
-							{ 60.8, 37.1, 1527 },
-						},
-					}),
-					crit(15, {	-- Corrupted Summoner slain
-						["coords"] = {
-							{ 58.9, 46.2, 1527 },
-							{ 60.3, 50.9, 1527 },
-							{ 59.7, 50.9, 1527 },
-							{ 57.2, 56.4, 1527 },
-							{ 58.0, 59.7, 1527 },
-							{ 58.3, 60.9, 1527 },
-							{ 56.5, 54.9, 1527 },
-							{ 60.4, 49.5, 1527 },
-							{ 56.6, 51.4, 1527 },
-							{ 56.2, 52.7, 1527 },
-							{ 56.1, 50.1, 1527 },
-							{ 54.1, 49.5, 1527 },
-							{ 53.4, 49.4, 1527 },
-							{ 51.9, 50.1, 1527 },
-						},
-					}),
-					crit(16, {	-- Corrupted Thaumaturge slain
-						["coords"] = {
-							{ 51.9, 70.3, 1527 },
-							{ 50.5, 81.8, 1527 },
-							{ 50.1, 74.6, 1527 },
-							{ 50.6, 87.5, 1527 },
-							{ 51.9, 84.4, 1527 },
-							{ 51.9, 80.6, 1527 },
-						},
-					}),
-					crit(17, {	-- Corrupted Thoughtstealer slain
-						["coords"] = {
-							{ 62.7, 75.4, 1527 },
-							{ 61.0, 72.0, 1527 },
-							{ 60.5, 68.7, 1527 },
-							{ 60.5, 65.5, 1527 },
-							{ 61.1, 66.5, 1527 },
-							{ 62.9, 74.3, 1527 },
-						},
-					}),]]
-					crit(18, {	-- Corrupted Tormentor slain
-						["coords"] = {
-							{ 67.8, 55.0, 1530 },
-							{ 64.8, 54.6, 1530 },
-							{ 59.0, 61.3, 1530 },
-							{ 54.3, 63.5, 1530 },
-							{ 41.8, 64.6, 1530 },
-							{ 69.3, 30.8, 1530 },
-							{ 69.5, 44.6, 1530 },
-							{ 73.4, 49.3, 1530 },
-							{ 78.3, 58.0, 1530 },
-							{ 81.0, 34.1, 1530 },
-							{ 61.6, 33.7, 1530 },
-							{ 53.0, 66.2, 1530 },
-							{ 49.8, 68.1, 1530 },
-							{ 78.0, 47.3, 1530 },
-						},
-					}),
-					--[[crit(19, {	-- Corrupted Watcher slain
-						["coords"] = {
-							{ 61.8, 73.0, 1527 },
-							{ 63.4, 72.9, 1527 },
-							{ 52.0, 69.8, 1527 },
-							{ 50.5, 82.5, 1527 },
-							{ 52.2, 81.6, 1527 },
-							{ 52.1, 83.0, 1527 },
-							{ 50.8, 69.8, 1527 },
-						},
-					}),]]
-				}),
-				ach(14154, {	-- Defend the Vale
-					crit(1),	-- Assault: The Warring Clans
-					crit(2),	-- Assault: The Endless Swarm
-					crit(3),	-- Assault: The Black Empire
-				}),
-				ach(14161),		-- Get In My Belly!	-- TODO:: update with map-specific criteria when they get added
-				ach(14158),		-- It's Not A Tumor!
-				ach(14160),		-- Rare to Well Done -- TODO:: update criteria when they get added
-				ach(6754, {	-- The Dark Heart of the Mogu
-					crit(4, {	-- The Thunder King (Vale of Eternal Blossoms)
-						["coord"] = { 40.19, 75.63, 1530 },
-					}),
-				}),
-			}),
-			--[[	-- NOTE: looks like blizzard messed this one up. Commenting it out incase they fix their bug, but this is currently obtainable
-			n(-228, {	-- Flight Paths
-				fp(2544, {	-- Mistfall Village
-					["lvl"] = 120,
-					["coord"] = { 38.9, 72.8, 1530 },
-				}),
-			}),
-			]]--
-			f(101,  {	-- Battle Pets
-				p(2867, {	-- Golden Chirper
-				}),
-				p(2866, {	-- Voidglower
-					["crs"] = { 162506 },
-				}),
-				p(2865, {	-- Voidskimmer
-				}),
-			}),
-			n(-38,  {	-- Professions
-				prof(356, {	-- Fishing
-					i(174456, {	-- Bottle of Gloop (pet)
-						["description"] = "Must be fishing in water currently affected by a N'Zoth assault.",
-					}),
-				}),
-			}),
-			n(-17,  {	-- Quests
-				q(58168, {	-- A Dark, Glaring Reality
-					["coord"] = { 84.2, 51.7, 1530 },
-					["isDaily"] = true,
-					["provider"] = { "n", 160252 },	-- Blacktalon Agent
-				}),
-				q(58420, {	-- A Foul Annoyance
-					["coord"] = { 44.7, 73.8, 1530 },
-					["isDaily"] = true,
-					["provider"] = { "n", 154444 },	-- Stormspeaker Qian
-					["sourceQuest"] = 56771,	-- Time-Lost Warriors
-				}),
-				q(56538, {	-- Clans of the Mogu
-					["coord"] = { 83.7, 27.1, 1530 },
-					["provider"] = { "n", 156003 },	-- Lorewalker Cho
-					["sourceQuest"] = 56537,	-- The Mysterious Sigil
-				}),
-				q(56539, {	-- Finding the Rajani
-					["coord"] = { 83.7, 27.1, 1530 },
-					["provider"] = { "n", 156003 },	-- Lorewalker Cho
-					["sourceQuest"] = 56538,	-- Clans of the Mogu
-				}),
-				q(57068, {	-- Kite Surveillance
-					["coord"] = { 43.9, 4.9, 1530 },
-					["provider"] = { "n", 156297 },	-- Chen Stormstout
-					["sourceQuest"] = 57067,	-- Mogu at the Gates
-				}),
-				q(58460, {	-- Marshals of Madness
-					["coord"] = { 44.7, 73.8, 1530 },
-					["isDaily"] = true,
-					["provider"] = { "n", 154444 },	-- Stormspeaker Qian
-				}),
-				q(58161, {	-- Minions of N'Zoth
-					["coord"] = { 84.2, 51.7, 1530 },
-					["isDaily"] = true,
-					["provider"] = { "n", 160252 },	-- Blacktalon Agent
-					["g"] = {
-						currency(1755),	-- Coalescing Visions x20
-					},
-				}),
-				q(57067, {	-- Mogu at the Gates	-- showed up when the Warring Clans assault was up. is there a pre-req? 
-					["coord"] = { 44.7, 73.8, 1530 },
-					["provider"] = { "n", 154444 },	-- Stormspeaker Qian
-				}),
-				q(56575, {	-- Once More Into Kor'vess
-					["coord"] = { 13.9, 77.2, 1530 },
-					["provider"] = { "n", 155487 },	-- Taoshi
-					["sourceQuest"] = 56574,	-- Reflections in Amber
-				}),
-				q(58167, {	-- Preventative Measures
-					["coord"] = { 84.2, 51.7, 1530 },
-					["isDaily"] = true,
-					["provider"] = { "n", 160252 },	-- Blacktalon Agent
-					["g"] = {
-						i(174288),	-- Breath of Everlasting Spirit
-						currency(1755),	-- Coalescing Visions x200
-					},
-				}),
-				q(56540, {	-- Proof of Tenacity
-					["coord"] = { 44.7, 73.9, 1530 },
-					["provider"] = { "n", 154444 },	-- Stormspeaker Qian
-					["sourceQuest"] = 56771,	-- Time-Lost Warriors
-					["g"] = {
-						-- Plate
-						i(173837),	-- Malignant Leviathan's Hauberk
-						i(173836),	-- Malignant Leviathan's Helm
-						i(173835),	-- Malignant Leviathan's Pauldrons
-						-- Mail
-						i(173840),	-- Nefarious Tormentor's Chestpiece
-						i(173839),	-- Nefarious Tormentor's Cover
-						i(173838),	-- Nefarious Tormentor's Epaulets
-						-- Leather
-						-- Cloth
-						i(173846),	-- Vile Manipulator's Vestment
-						i(173845),	-- Vile Manipulator's Hood
-						i(173844),	-- Vile Manipulator's Amice
-					},
-				}),
-				q(56574, {	-- Reflections in Amber
-					["cr"] = 160825,	-- Amber-Shaper Esh'ri
-					["coord"] = { 20.0, 74.6, 1530 },
-					["provider"] = { "i", 169888 },	-- Ooze-covered Amber
-				}),
-				q(56542, {	-- Restored Hope
-					["coord"] = { 45.3, 74.3, 1530 },
-					["provider"] = { "n", 154418 },	-- Ra-den
-					["sourceQuest"] = 56541,	-- The Engine of Nalak'sha
-					["g"] = {
-						i(168573),	-- Death-Resistant Leaf (Rank 1)
-						i(168436),	-- Focused Star Point (Rank 1)
-					},
-				}),
-				q(58096, {	-- Supplies from the Rajani
-					["repeatable"] = true,
-					["g"] = {
-						i(174483, {	-- Rajani Supplies
-							i(174479),	-- Jade Defender (pet)
+			n(-10072, {    -- N'Zoth Assaults
+				n(-4,   {	-- Achievements
+					ach(14159, {		-- Combating the Corruption -- TODO:: update with criteria when they get added.  Only crit for the zone atm is uncommented, rest are in Uldum? -- Is attaching questID's to these really the best way to track the quest?
+						--[[crit(1, {	-- 	Corrupted Acolyte slain
+							["coords"] = {
+								{ 49.5, 39.9, 1527 },
+								{ 51.2, 73.2, 1527 },
+								{ 49.0, 80.0, 1527 },
+								{ 46.2, 79.7, 1527 },
+								{ 47.7, 84.5, 1527 },
+								{ 49.1, 83.8, 1527 },
+								{ 57.1, 43.5, 1527 },
+								{ 55.8, 41.5, 1527 },
+								{ 54.9, 80.0, 1527 },
+								{ 46.2, 42.0, 1527 },
+								{ 53.8, 43.1, 1527 },
+							},
 						}),
-					},
-				}),
-				q(56541, {	-- The Engine of Nalak'sha
-					["coord"] = { 45.3, 74.3, 1530 },
-					["provider"] = { "n", 154418 },	-- Ra-den
-					["sourceQuest"] = 56540,	-- Proof of Tenacity
-				}),
-				q(56647, {	-- The Mantid Threat
-					["lvl"] = 120,
-					["coord"] = { 12.2, 95.3, 422 },
-					["provider"] = { "n", 155487 },	-- Taoshi
-					["sourceQuest"] = 56645,	-- Heart of the Swarm
-				}),
-				q(58423, {	-- The Strongest Among Them
-					["coord"] = { 44.7, 73.8, 1530 },
-					["isDaily"] = true,
-					["provider"] = { "n", 154444 },	-- Stormspeaker Qian
-					["sourceQuest"] = 56771,	-- Time-Lost Warriors
-				}),
-				q(56771, {	-- Time-Lost Warriors
-					["coord"] = { 83.1, 27.2, 1530 },
-					["provider"] = { "n", 154532 },	-- Magni Bronzebeard
-					["sourceQuest"] = 56539,	-- Finding the Rajani
-				}),
-			}),
-			n(-16,  {	-- Rares
-				n(157468, {	-- Tisiphon
-					["questID"] = 57364,
-					["coord"] = { 9.5, 67.4, 1530 },
-					["isDaily"] = true,
-					["description"] = "Use the fishing pole.",
-					["g"] = {
-						i(174229),	-- Lantern of the Damned
-					},
-				}),
-			}),
-			n(-34,  {	-- World Quests
-				q(58747, {	-- Brain Tickling
-					["f"] = 101,	-- Battle Pet
-					["lvl"] = 120,
-					["coord"] = { 57.5, 54.3, 1530 },
-					["isWorldQuest"] = true,
-				}),
-				q(58748, {	-- Living Statues Are Tough
-					["f"] = 101,	-- Battle Pet
-					["lvl"] = 120,
-					["isWorldQuest"] = true,
-				}),
-				q(58746, {	-- Tiny Madness
-					["f"] = 101,	-- Battle Pet
-					["lvl"] = 120,
-					["coord"] = { 56.2, 28.2, 1530 },
-					["isWorldQuest"] = true,
-				}),
-			}),
-			n(-2,   {	-- Vendors
-				n(160711, {	-- Zhang Ku
-					["coord"] = { 44.5, 75.4, 1530 },
-					["g"] = {
-						i(168436, {	-- Focused Star Point (Rank 1)
-							["cost"] = { { "c", 1719, 10 }, },	-- 10x Corrupted Memento
+						crit(2, {	-- 	Corrupted Assassin slain
+							["coords"] = {
+								{ 51.7, 71.1, 1527 },
+								{ 50.7, 72.3, 1527 },
+								{ 50.2, 72.6, 1527 },
+								{ 50.4, 73.6, 1527 },
+								{ 50.0, 78.7, 1527 },
+								{ 51.2, 80.0, 1527 },
+								{ 49.4, 80.9, 1527 },
+								{ 48.6, 85.6, 1527 },
+								{ 50.0, 71.8, 1527 },
+								{ 52.2, 84.5, 1527 },
+								{ 50.7, 69.4, 1527 },
+								{ 52.0, 69.4, 1527 },
+								{ 50.0, 71.7, 1527 },
+							},
 						}),
-						i(174649, {	-- Rajani Warserpent
-							["cost"] = { { "i", 174230, 1 }, },	-- Pristine Cloud Serpent Scale
+						crit(3,	{	--	Corrupted Beheader slain
+							["coords"] = {
+								{ 58.4, 42.8, 1527 },
+								{ 52.6, 46.4, 1527 },
+								{ 60.0, 49.5, 1527 },
+								{ 51.0, 71.2, 1527 },
+								{ 50.0, 78.7, 1527 },
+								{ 50.2, 73.1, 1527 },
+								{ 50.5, 85.8, 1527 },
+								{ 49.1, 84.7, 1527 },
+							},
 						}),
-						i(172009, {	-- Recipe: Contract: Rajani
-							["cost"] = 14000000,	-- 1,400g
+						crit(4,	{	-- Corrupted Bloodseeker slain
+							["coords"] = {
+								{ 35.1, 17.3, 249 },
+								{ 35.1, 17.3, 249 },
+								{ 35.1, 17.3, 249 },
+								{ 35.1, 17.3, 249 },
+								{ 35.1, 17.3, 249 },
+								{ 35.1, 17.3, 249 },
+							},
 						}),
-						i(174480, {	-- Windfeather Quill
-							["cost"] = { { "i", 163036, 300 }, },	-- 300x Polished Pet Charms
+						crit(5,	{	-- Corrupted Bonestripper slain
+							["description"] = "found in most water locations",
+							["coords"] = {
+								{ 55.7, 43.8, 1527 },
+								{ 57.5, 17.7, 1527 },
+								{ 56.6, 20.6, 1527 },
+								{ 56.5, 24.4, 1527 },
+								{ 57.3, 27.4, 1527 },
+								{ 59.6, 60.8, 1527 },
+							},
 						}),
-						i(174906, {	-- Lightning-Forged Augment Rune
-							["cost"] = 500000000,	-- 50,000g
+						crit(6,	{	-- Corrupted Despoiler slain
+							["description"] = "Shares a spawn with Mind Eater",
+							["coords"] = {
+								{ 59.5, 47.4, 1527 },
+								{ 59.1, 42.7, 1527 },
+								{ 55.1, 53.4, 1527 },
+								{ 49.4, 39.6, 1527 },
+								{ 60.2, 53.6, 1527 },
+								{ 58.4, 24.8, 1527 },
+								{ 55.6, 24.4, 1527 },
+							},
 						}),
-						i(174647, {	-- Rajani Tabard
-							["cost"] = 2400000,	-- 240g
+						crit(7,	{	-- Corrupted Dominator slain
+							["coords"] = {
+								{ 63.0, 71.0, 1527 },
+								{ 63.8, 72.8, 1527 },
+								{ 64.5, 74.5, 1527 },
+								{ 60.2, 66.4, 1527 },
+								{ 61.6, 69.4, 1527 },
+								{ 56.5, 42.1, 1527 },
+							},
 						}),
-						i(168440, {	-- Gleaming Star Shard (Rank 3)
-							["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
+						crit(8,	{	-- Corrupted Doomsayer slain
+							["coords"] = {
+								{ 60.8, 71.5, 1527 },
+								{ 60.2, 71.3, 1527 },
+								{ 62.0, 73.7, 1527 },
+								{ 49.8, 39.9, 1527 },
+								{ 49.6, 41.4, 1527 },
+								{ 61.8, 70.6, 1527 },
+								{ 61.4, 75.2, 1527 },
+								{ 63.5, 70.0, 1527 },
+							},
 						}),
-						i(168575, {	-- Branch of Rejuvenating Rings (Rank 3)
-							["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
+						crit(9,	{	-- Corrupted Fleshbeast slain
+							["coords"] = {
+								{ 59.5, 48.6, 1527 },
+								{ 49.0, 35.5, 1527 },
+								{ 62.2, 68.7, 1527 },
+								{ 60.9, 69.3, 1527 },
+								{ 60.4, 67.5, 1527 },
+								{ 62.0, 66.7, 1527 },
+							},
 						}),
-					},
+						crit(10, {	-- Corrupted Jailer slain
+							["coords"] = {
+								{ 60.8, 71.5, 1527 },
+								{ 62.1, 74.7, 1527 },
+								{ 63.4, 72.6, 1527 },
+								{ 62.2, 67.4, 1527 },
+							},
+						}),
+						crit(11, {	-- Corrupted Mind Eater slain
+							["description"] = "Shares a spawn with Faceless Despoiler",
+							["coords"] = {
+								{ 59.5, 47.4, 1527 },
+								{ 59.1, 42.7, 1527 },
+								{ 55.1, 53.4, 1527 },
+								{ 49.4, 39.6, 1527 },
+								{ 60.2, 53.6, 1527 },
+								{ 58.4, 24.8, 1527 },
+								{ 55.6, 24.4, 1527 },
+							},
+						}),
+						crit(12, {	-- Corrupted Neferset Guard slain
+							["coords"] = {
+								{ 50.9, 82.9, 1527 },
+								{ 51.6, 81.7, 1527 },
+								{ 49.8, 82.0, 1527 },
+								{ 49.8, 82.6, 1527 },
+								{ 49.0, 82.6, 1527 },
+								{ 47.3, 80.3, 1527 },
+								{ 50.7, 85.5, 1527 },
+								{ 50.3, 85.5, 1527 },
+								{ 50.5, 77.9, 1527 },
+								{ 50.8, 77.8, 1527 },
+								{ 50.9, 75.0, 1527 },
+								{ 50.5, 75.0, 1527 },
+							},
+						}),
+						crit(13, {	-- Corrupted Observer slain
+							["coords"] = {
+								{ 55.4, 51.0, 1527 },
+							},
+						}),
+						crit(14, {	-- Corrupted Putrefaction slain
+							["coords"] = {
+								{ 59.3, 41.4, 1527 },
+								{ 60.4, 39.9, 1527 },
+								{ 47.4, 26.3, 1527 },
+								{ 57.1, 81.6, 1527 },
+								{ 60.8, 37.1, 1527 },
+							},
+						}),
+						crit(15, {	-- Corrupted Summoner slain
+							["coords"] = {
+								{ 58.9, 46.2, 1527 },
+								{ 60.3, 50.9, 1527 },
+								{ 59.7, 50.9, 1527 },
+								{ 57.2, 56.4, 1527 },
+								{ 58.0, 59.7, 1527 },
+								{ 58.3, 60.9, 1527 },
+								{ 56.5, 54.9, 1527 },
+								{ 60.4, 49.5, 1527 },
+								{ 56.6, 51.4, 1527 },
+								{ 56.2, 52.7, 1527 },
+								{ 56.1, 50.1, 1527 },
+								{ 54.1, 49.5, 1527 },
+								{ 53.4, 49.4, 1527 },
+								{ 51.9, 50.1, 1527 },
+							},
+						}),
+						crit(16, {	-- Corrupted Thaumaturge slain
+							["coords"] = {
+								{ 51.9, 70.3, 1527 },
+								{ 50.5, 81.8, 1527 },
+								{ 50.1, 74.6, 1527 },
+								{ 50.6, 87.5, 1527 },
+								{ 51.9, 84.4, 1527 },
+								{ 51.9, 80.6, 1527 },
+							},
+						}),
+						crit(17, {	-- Corrupted Thoughtstealer slain
+							["coords"] = {
+								{ 62.7, 75.4, 1527 },
+								{ 61.0, 72.0, 1527 },
+								{ 60.5, 68.7, 1527 },
+								{ 60.5, 65.5, 1527 },
+								{ 61.1, 66.5, 1527 },
+								{ 62.9, 74.3, 1527 },
+							},
+						}),]]
+						crit(18, {	-- Corrupted Tormentor slain
+							["coords"] = {
+								{ 67.8, 55.0, 1530 },
+								{ 64.8, 54.6, 1530 },
+								{ 59.0, 61.3, 1530 },
+								{ 54.3, 63.5, 1530 },
+								{ 41.8, 64.6, 1530 },
+								{ 69.3, 30.8, 1530 },
+								{ 69.5, 44.6, 1530 },
+								{ 73.4, 49.3, 1530 },
+								{ 78.3, 58.0, 1530 },
+								{ 81.0, 34.1, 1530 },
+								{ 61.6, 33.7, 1530 },
+								{ 53.0, 66.2, 1530 },
+								{ 49.8, 68.1, 1530 },
+								{ 78.0, 47.3, 1530 },
+							},
+						}),
+						--[[crit(19, {	-- Corrupted Watcher slain
+							["coords"] = {
+								{ 61.8, 73.0, 1527 },
+								{ 63.4, 72.9, 1527 },
+								{ 52.0, 69.8, 1527 },
+								{ 50.5, 82.5, 1527 },
+								{ 52.2, 81.6, 1527 },
+								{ 52.1, 83.0, 1527 },
+								{ 50.8, 69.8, 1527 },
+							},
+						}),]]
+					}),
+					ach(14154, {	-- Defend the Vale
+						crit(1),	-- Assault: The Warring Clans
+						crit(2),	-- Assault: The Endless Swarm
+						crit(3),	-- Assault: The Black Empire
+					}),
+					ach(14161),		-- Get In My Belly!	-- TODO:: update with map-specific criteria when they get added
+					ach(14158),		-- It's Not A Tumor!
+					ach(14160),		-- Rare to Well Done -- TODO:: update criteria when they get added
+					ach(6754, {	-- The Dark Heart of the Mogu
+						crit(4, {	-- The Thunder King (Vale of Eternal Blossoms)
+							["coord"] = { 40.19, 75.63, 1530 },
+						}),
+					}),
+				}),
+				--[[	-- NOTE: looks like blizzard messed this one up. Commenting it out incase they fix their bug, but this is currently obtainable
+				n(-228, {	-- Flight Paths
+					fp(2544, {	-- Mistfall Village
+						["lvl"] = 120,
+						["coord"] = { 38.9, 72.8, 1530 },
+					}),
+				}),
+				]]--
+				f(101,  {	-- Battle Pets
+					p(2867, {	-- Golden Chirper
+					}),
+					p(2866, {	-- Voidglower
+						["crs"] = { 162506 },
+					}),
+					p(2865, {	-- Voidskimmer
+					}),
+				}),
+				n(-38,  {	-- Professions
+					prof(356, {	-- Fishing
+						i(174456, {	-- Bottle of Gloop (pet)
+							["description"] = "Must be fishing in water currently affected by a N'Zoth assault.",
+						}),
+					}),
+				}),
+				n(-17,  {	-- Quests
+					q(58168, {	-- A Dark, Glaring Reality
+						["coord"] = { 84.2, 51.7, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+					}),
+					q(58420, {	-- A Foul Annoyance
+						["coord"] = { 44.7, 73.8, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
+					q(56538, {	-- Clans of the Mogu
+						["coord"] = { 83.7, 27.1, 1530 },
+						["provider"] = { "n", 156003 },	-- Lorewalker Cho
+						["sourceQuest"] = 56537,	-- The Mysterious Sigil
+					}),
+					q(56539, {	-- Finding the Rajani
+						["coord"] = { 83.7, 27.1, 1530 },
+						["provider"] = { "n", 156003 },	-- Lorewalker Cho
+						["sourceQuest"] = 56538,	-- Clans of the Mogu
+					}),
+					q(57068, {	-- Kite Surveillance
+						["coord"] = { 43.9, 4.9, 1530 },
+						["provider"] = { "n", 156297 },	-- Chen Stormstout
+						["sourceQuest"] = 57067,	-- Mogu at the Gates
+					}),
+					q(58460, {	-- Marshals of Madness
+						["coord"] = { 44.7, 73.8, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+					}),
+					q(58161, {	-- Minions of N'Zoth
+						["coord"] = { 84.2, 51.7, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["g"] = {
+							currency(1755),	-- Coalescing Visions x20
+						},
+					}),
+					q(57067, {	-- Mogu at the Gates	-- showed up when the Warring Clans assault was up. is there a pre-req? 
+						["coord"] = { 44.7, 73.8, 1530 },
+						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+					}),
+					q(56575, {	-- Once More Into Kor'vess
+						["coord"] = { 13.9, 77.2, 1530 },
+						["provider"] = { "n", 155487 },	-- Taoshi
+						["sourceQuest"] = 56574,	-- Reflections in Amber
+					}),
+					q(58167, {	-- Preventative Measures
+						["coord"] = { 84.2, 51.7, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["g"] = {
+							i(174288),	-- Breath of Everlasting Spirit
+							currency(1755),	-- Coalescing Visions x200
+						},
+					}),
+					q(56540, {	-- Proof of Tenacity
+						["coord"] = { 44.7, 73.9, 1530 },
+						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						["g"] = {
+							-- Plate
+							i(173837),	-- Malignant Leviathan's Hauberk
+							i(173836),	-- Malignant Leviathan's Helm
+							i(173835),	-- Malignant Leviathan's Pauldrons
+							-- Mail
+							i(173840),	-- Nefarious Tormentor's Chestpiece
+							i(173839),	-- Nefarious Tormentor's Cover
+							i(173838),	-- Nefarious Tormentor's Epaulets
+							-- Leather
+							-- Cloth
+							i(173846),	-- Vile Manipulator's Vestment
+							i(173845),	-- Vile Manipulator's Hood
+							i(173844),	-- Vile Manipulator's Amice
+						},
+					}),
+					q(56574, {	-- Reflections in Amber
+						["cr"] = 160825,	-- Amber-Shaper Esh'ri
+						["coord"] = { 20.0, 74.6, 1530 },
+						["provider"] = { "i", 169888 },	-- Ooze-covered Amber
+					}),
+					q(56542, {	-- Restored Hope
+						["coord"] = { 45.3, 74.3, 1530 },
+						["provider"] = { "n", 154418 },	-- Ra-den
+						["sourceQuest"] = 56541,	-- The Engine of Nalak'sha
+						["g"] = {
+							i(168573),	-- Death-Resistant Leaf (Rank 1)
+							i(168436),	-- Focused Star Point (Rank 1)
+						},
+					}),
+					q(58096, {	-- Supplies from the Rajani
+						["repeatable"] = true,
+						["g"] = {
+							i(174483, {	-- Rajani Supplies
+								i(174479),	-- Jade Defender (pet)
+							}),
+						},
+					}),
+					q(56541, {	-- The Engine of Nalak'sha
+						["coord"] = { 45.3, 74.3, 1530 },
+						["provider"] = { "n", 154418 },	-- Ra-den
+						["sourceQuest"] = 56540,	-- Proof of Tenacity
+					}),
+					q(56647, {	-- The Mantid Threat
+						["lvl"] = 120,
+						["coord"] = { 12.2, 95.3, 422 },
+						["provider"] = { "n", 155487 },	-- Taoshi
+						["sourceQuest"] = 56645,	-- Heart of the Swarm
+					}),
+					q(58423, {	-- The Strongest Among Them
+						["coord"] = { 44.7, 73.8, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
+					q(56771, {	-- Time-Lost Warriors
+						["coord"] = { 83.1, 27.2, 1530 },
+						["provider"] = { "n", 154532 },	-- Magni Bronzebeard
+						["sourceQuest"] = 56539,	-- Finding the Rajani
+					}),
+				}),
+				n(-16,  {	-- Rares
+					n(157468, {	-- Tisiphon
+						["questID"] = 57364,
+						["coord"] = { 9.5, 67.4, 1530 },
+						["isDaily"] = true,
+						["description"] = "Use the fishing pole.",
+						["g"] = {
+							i(174229),	-- Lantern of the Damned
+						},
+					}),
+				}),
+				n(-34,  {	-- World Quests
+					q(58747, {	-- Brain Tickling
+						["f"] = 101,	-- Battle Pet
+						["lvl"] = 120,
+						["coord"] = { 57.5, 54.3, 1530 },
+						["isWorldQuest"] = true,
+					}),
+					q(58748, {	-- Living Statues Are Tough
+						["f"] = 101,	-- Battle Pet
+						["lvl"] = 120,
+						["isWorldQuest"] = true,
+					}),
+					q(58746, {	-- Tiny Madness
+						["f"] = 101,	-- Battle Pet
+						["lvl"] = 120,
+						["coord"] = { 56.2, 28.2, 1530 },
+						["isWorldQuest"] = true,
+					}),
+				}),
+				n(-2,   {	-- Vendors
+					n(160711, {	-- Zhang Ku
+						["coord"] = { 44.5, 75.4, 1530 },
+						["g"] = {
+							i(168436, {	-- Focused Star Point (Rank 1)
+								["cost"] = { { "c", 1719, 10 }, },	-- 10x Corrupted Memento
+							}),
+							i(174649, {	-- Rajani Warserpent
+								["cost"] = { { "i", 174230, 1 }, },	-- Pristine Cloud Serpent Scale
+							}),
+							i(172009, {	-- Recipe: Contract: Rajani
+								["cost"] = 14000000,	-- 1,400g
+							}),
+							i(174480, {	-- Windfeather Quill
+								["cost"] = { { "i", 163036, 300 }, },	-- 300x Polished Pet Charms
+							}),
+							i(174906, {	-- Lightning-Forged Augment Rune
+								["cost"] = 500000000,	-- 50,000g
+							}),
+							i(174647, {	-- Rajani Tabard
+								["cost"] = 2400000,	-- 240g
+							}),
+							i(168440, {	-- Gleaming Star Shard (Rank 3)
+								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
+							}),
+							i(168575, {	-- Branch of Rejuvenating Rings (Rank 3)
+								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
+							}),
+						},
+					}),
 				}),
 			}),
 		},

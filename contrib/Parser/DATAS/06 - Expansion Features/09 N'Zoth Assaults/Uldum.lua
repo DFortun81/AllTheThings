@@ -945,598 +945,600 @@ _.ExpansionFeatures =
 					]]--
 				}),
 			}),
-			n(0, {	-- Zone Drops
-				i(174368),	-- Pattern: Unsettling Cragscale Boots
-				i(174369),	-- Pattern: Unsettling Cragscale Greaves
-				i(174366),	-- Pattern: Unsettling Dredged Leather Boots
-				i(174367),	-- Pattern: Unsettling Dredged Leather Leggings
-				i(174371),	-- Pattern: Unsettling Seaweave Breeches
-				i(174370),	-- Pattern: Unsettling Seaweave Gloves
-				i(171317),	-- Plans: Unsettling Osmenite Girdle
-				i(171316),	-- Plans: Unsettling Osmenite Legguards
-			}),
-			n(-10071, {	-- Visions of N'Zoth
-				["description"] = "Use the obelisk to see Uldum succumb to N'Zoth's corruption.",
-				["g"] = {
-					n(0, {	-- Zone Drops
-						i(174837),	-- Decaying Fusion Core (14 day timer on this. no sure what it is yet)
-						i(171312),	-- Recipe: Void Focus
-						i(174491),	-- Tome of Unspeakable Delicacies
-						i(174462),	-- Void Cocoon
+			n(-10072, {    -- N'Zoth Assault
+				n(-4,     {	-- Achievements
+					ach(14159, {		-- Combating the Corruption
+						crit(1, {	-- 	Corrupted Acolyte slain
+							["coords"] = {
+								{ 49.5, 39.9, 1527 },
+								{ 51.2, 73.2, 1527 },
+								{ 49.0, 80.0, 1527 },
+								{ 46.2, 79.7, 1527 },
+								{ 47.7, 84.5, 1527 },
+								{ 49.1, 83.8, 1527 },
+								{ 57.1, 43.5, 1527 },
+								{ 55.8, 41.5, 1527 },
+								{ 54.9, 80.0, 1527 },
+								{ 46.2, 42.0, 1527 },
+								{ 53.8, 43.1, 1527 },
+							},
+						}),
+						crit(2, {	-- 	Corrupted Assassin slain
+							["coords"] = {
+								{ 51.7, 71.1, 1527 },
+								{ 50.7, 72.3, 1527 },
+								{ 50.2, 72.6, 1527 },
+								{ 50.4, 73.6, 1527 },
+								{ 50.0, 78.7, 1527 },
+								{ 51.2, 80.0, 1527 },
+								{ 49.4, 80.9, 1527 },
+								{ 48.6, 85.6, 1527 },
+								{ 50.0, 71.8, 1527 },
+								{ 52.2, 84.5, 1527 },
+								{ 50.7, 69.4, 1527 },
+								{ 52.0, 69.4, 1527 },
+								{ 50.0, 71.7, 1527 },
+							},
+						}),
+						crit(3,	{	--	Corrupted Beheader slain
+							["coords"] = {
+								{ 58.4, 42.8, 1527 },
+								{ 52.6, 46.4, 1527 },
+								{ 60.0, 49.5, 1527 },
+								{ 51.0, 71.2, 1527 },
+								{ 50.0, 78.7, 1527 },
+								{ 50.2, 73.1, 1527 },
+								{ 50.5, 85.8, 1527 },
+								{ 49.1, 84.7, 1527 },
+							},
+						}),
+						crit(4,	{	-- Corrupted Bloodseeker slain
+							--[[["coords"] = {
+								{ 35.1, 17.3, 249 },
+								{ 35.1, 17.3, 249 },
+								{ 35.1, 17.3, 249 },
+								{ 35.1, 17.3, 249 },
+								{ 35.1, 17.3, 249 },
+								{ 35.1, 17.3, 249 },
+							},]]
+						}),
+						crit(5,	{	-- Corrupted Bonestripper slain
+							["description"] = "found in most water locations",
+							["coords"] = {
+								{ 55.7, 43.8, 1527 },
+								{ 57.5, 17.7, 1527 },
+								{ 56.6, 20.6, 1527 },
+								{ 56.5, 24.4, 1527 },
+								{ 57.3, 27.4, 1527 },
+								{ 59.6, 60.8, 1527 },
+							},
+						}),
+						crit(6,	{	-- Corrupted Despoiler slain
+							["description"] = "Shares a spawn with Mind Eater",
+							["coords"] = {
+								{ 59.5, 47.4, 1527 },
+								{ 59.1, 42.7, 1527 },
+								{ 55.1, 53.4, 1527 },
+								{ 49.4, 39.6, 1527 },
+								{ 60.2, 53.6, 1527 },
+								{ 58.4, 24.8, 1527 },
+								{ 55.6, 24.4, 1527 },
+							},
+						}),
+						crit(7,	{	-- Corrupted Dominator slain
+							["coords"] = {
+								{ 63.0, 71.0, 1527 },
+								{ 63.8, 72.8, 1527 },
+								{ 64.5, 74.5, 1527 },
+								{ 60.2, 66.4, 1527 },
+								{ 61.6, 69.4, 1527 },
+								{ 56.5, 42.1, 1527 },
+							},
+						}),
+						crit(8,	{	-- Corrupted Doomsayer slain
+							["coords"] = {
+								{ 60.8, 71.5, 1527 },
+								{ 60.2, 71.3, 1527 },
+								{ 62.0, 73.7, 1527 },
+								{ 49.8, 39.9, 1527 },
+								{ 49.6, 41.4, 1527 },
+								{ 61.8, 70.6, 1527 },
+								{ 61.4, 75.2, 1527 },
+								{ 63.5, 70.0, 1527 },
+							},
+						}),
+						crit(9,	{	-- Corrupted Fleshbeast slain
+							["coords"] = {
+								{ 59.5, 48.6, 1527 },
+								{ 49.0, 35.5, 1527 },
+								{ 62.2, 68.7, 1527 },
+								{ 60.9, 69.3, 1527 },
+								{ 60.4, 67.5, 1527 },
+								{ 62.0, 66.7, 1527 },
+							},
+						}),
+						crit(10, {	-- Corrupted Jailer slain
+							["coords"] = {
+								{ 60.8, 71.5, 1527 },
+								{ 62.1, 74.7, 1527 },
+								{ 63.4, 72.6, 1527 },
+								{ 62.2, 67.4, 1527 },
+							},
+						}),
+						crit(11, {	-- Corrupted Mind Eater slain
+							["description"] = "Shares a spawn with Faceless Despoiler",
+							["coords"] = {
+								{ 59.5, 47.4, 1527 },
+								{ 59.1, 42.7, 1527 },
+								{ 55.1, 53.4, 1527 },
+								{ 49.4, 39.6, 1527 },
+								{ 60.2, 53.6, 1527 },
+								{ 58.4, 24.8, 1527 },
+								{ 55.6, 24.4, 1527 },
+							},
+						}),
+						crit(12, {	-- Corrupted Neferset Guard slain
+							["coords"] = {
+								{ 50.9, 82.9, 1527 },
+								{ 51.6, 81.7, 1527 },
+								{ 49.8, 82.0, 1527 },
+								{ 49.8, 82.6, 1527 },
+								{ 49.0, 82.6, 1527 },
+								{ 47.3, 80.3, 1527 },
+								{ 50.7, 85.5, 1527 },
+								{ 50.3, 85.5, 1527 },
+								{ 50.5, 77.9, 1527 },
+								{ 50.8, 77.8, 1527 },
+								{ 50.9, 75.0, 1527 },
+								{ 50.5, 75.0, 1527 },
+							},
+						}),
+						crit(13, {	-- Corrupted Observer slain
+							["coords"] = {
+								{ 55.4, 51.0, 1527 },
+							},
+						}),
+						crit(14, {	-- Corrupted Putrefaction slain
+							["coords"] = {
+								{ 59.3, 41.4, 1527 },
+								{ 60.4, 39.9, 1527 },
+								{ 47.4, 26.3, 1527 },
+								{ 57.1, 81.6, 1527 },
+								{ 60.8, 37.1, 1527 },
+							},
+						}),
+						crit(15, {	-- Corrupted Summoner slain
+							["coords"] = {
+								{ 58.9, 46.2, 1527 },
+								{ 60.3, 50.9, 1527 },
+								{ 59.7, 50.9, 1527 },
+								{ 57.2, 56.4, 1527 },
+								{ 58.0, 59.7, 1527 },
+								{ 58.3, 60.9, 1527 },
+								{ 56.5, 54.9, 1527 },
+								{ 60.4, 49.5, 1527 },
+								{ 56.6, 51.4, 1527 },
+								{ 56.2, 52.7, 1527 },
+								{ 56.1, 50.1, 1527 },
+								{ 54.1, 49.5, 1527 },
+								{ 53.4, 49.4, 1527 },
+								{ 51.9, 50.1, 1527 },
+							},
+						}),
+						crit(16, {	-- Corrupted Thaumaturge slain
+							["coords"] = {
+								{ 51.9, 70.3, 1527 },
+								{ 50.5, 81.8, 1527 },
+								{ 50.1, 74.6, 1527 },
+								{ 50.6, 87.5, 1527 },
+								{ 51.9, 84.4, 1527 },
+								{ 51.9, 80.6, 1527 },
+							},
+						}),
+						crit(17, {	-- Corrupted Thoughtstealer slain
+							["coords"] = {
+								{ 62.7, 75.4, 1527 },
+								{ 61.0, 72.0, 1527 },
+								{ 60.5, 68.7, 1527 },
+								{ 60.5, 65.5, 1527 },
+								{ 61.1, 66.5, 1527 },
+								{ 62.9, 74.3, 1527 },
+							},
+						}),
+						--[[crit(18, {	-- Corrupted Tormentor slain
+							["coords"] = {
+								{ 67.8, 55.0, 1530 },
+								{ 64.8, 54.6, 1530 },
+								{ 59.0, 61.3, 1530 },
+								{ 54.3, 63.5, 1530 },
+								{ 41.8, 64.6, 1530 },
+								{ 69.3, 30.8, 1530 },
+								{ 69.5, 44.6, 1530 },
+								{ 73.4, 49.3, 1530 },
+								{ 78.3, 58.0, 1530 },
+								{ 81.0, 34.1, 1530 },
+								{ 61.6, 33.7, 1530 },
+								{ 53.0, 66.2, 1530 },
+								{ 49.8, 68.1, 1530 },
+								{ 78.0, 47.3, 1530 },
+							},
+						}),]]
+						crit(19, {	-- Corrupted Watcher slain
+							["coords"] = {
+								{ 61.8, 73.0, 1527 },
+								{ 63.4, 72.9, 1527 },
+								{ 52.0, 69.8, 1527 },
+								{ 50.5, 82.5, 1527 },
+								{ 52.2, 81.6, 1527 },
+								{ 52.1, 83.0, 1527 },
+								{ 50.8, 69.8, 1527 },
+							},
+						}),
 					}),
-				},
-			}),
-			n(-4,     {	-- Achievements
-				ach(14159, {		-- Combating the Corruption
-					crit(1, {	-- 	Corrupted Acolyte slain
-						["coords"] = {
-							{ 49.5, 39.9, 1527 },
-							{ 51.2, 73.2, 1527 },
-							{ 49.0, 80.0, 1527 },
-							{ 46.2, 79.7, 1527 },
-							{ 47.7, 84.5, 1527 },
-							{ 49.1, 83.8, 1527 },
-							{ 57.1, 43.5, 1527 },
-							{ 55.8, 41.5, 1527 },
-							{ 54.9, 80.0, 1527 },
-							{ 46.2, 42.0, 1527 },
-							{ 53.8, 43.1, 1527 },
-						},
-					}),
-					crit(2, {	-- 	Corrupted Assassin slain
-						["coords"] = {
-							{ 51.7, 71.1, 1527 },
-							{ 50.7, 72.3, 1527 },
-							{ 50.2, 72.6, 1527 },
-							{ 50.4, 73.6, 1527 },
-							{ 50.0, 78.7, 1527 },
-							{ 51.2, 80.0, 1527 },
-							{ 49.4, 80.9, 1527 },
-							{ 48.6, 85.6, 1527 },
-							{ 50.0, 71.8, 1527 },
-							{ 52.2, 84.5, 1527 },
-							{ 50.7, 69.4, 1527 },
-							{ 52.0, 69.4, 1527 },
-							{ 50.0, 71.7, 1527 },
-						},
-					}),
-					crit(3,	{	--	Corrupted Beheader slain
-						["coords"] = {
-							{ 58.4, 42.8, 1527 },
-							{ 52.6, 46.4, 1527 },
-							{ 60.0, 49.5, 1527 },
-							{ 51.0, 71.2, 1527 },
-							{ 50.0, 78.7, 1527 },
-							{ 50.2, 73.1, 1527 },
-							{ 50.5, 85.8, 1527 },
-							{ 49.1, 84.7, 1527 },
-						},
-					}),
-					crit(4,	{	-- Corrupted Bloodseeker slain
-						--[[["coords"] = {
-							{ 35.1, 17.3, 249 },
-							{ 35.1, 17.3, 249 },
-							{ 35.1, 17.3, 249 },
-							{ 35.1, 17.3, 249 },
-							{ 35.1, 17.3, 249 },
-							{ 35.1, 17.3, 249 },
-						},]]
-					}),
-					crit(5,	{	-- Corrupted Bonestripper slain
-						["description"] = "found in most water locations",
-						["coords"] = {
-							{ 55.7, 43.8, 1527 },
-							{ 57.5, 17.7, 1527 },
-							{ 56.6, 20.6, 1527 },
-							{ 56.5, 24.4, 1527 },
-							{ 57.3, 27.4, 1527 },
-							{ 59.6, 60.8, 1527 },
-						},
-					}),
-					crit(6,	{	-- Corrupted Despoiler slain
-						["description"] = "Shares a spawn with Mind Eater",
-						["coords"] = {
-							{ 59.5, 47.4, 1527 },
-							{ 59.1, 42.7, 1527 },
-							{ 55.1, 53.4, 1527 },
-							{ 49.4, 39.6, 1527 },
-							{ 60.2, 53.6, 1527 },
-							{ 58.4, 24.8, 1527 },
-							{ 55.6, 24.4, 1527 },
-						},
-					}),
-					crit(7,	{	-- Corrupted Dominator slain
-						["coords"] = {
-							{ 63.0, 71.0, 1527 },
-							{ 63.8, 72.8, 1527 },
-							{ 64.5, 74.5, 1527 },
-							{ 60.2, 66.4, 1527 },
-							{ 61.6, 69.4, 1527 },
-							{ 56.5, 42.1, 1527 },
-						},
-					}),
-					crit(8,	{	-- Corrupted Doomsayer slain
-						["coords"] = {
-							{ 60.8, 71.5, 1527 },
-							{ 60.2, 71.3, 1527 },
-							{ 62.0, 73.7, 1527 },
-							{ 49.8, 39.9, 1527 },
-							{ 49.6, 41.4, 1527 },
-							{ 61.8, 70.6, 1527 },
-							{ 61.4, 75.2, 1527 },
-							{ 63.5, 70.0, 1527 },
-						},
-					}),
-					crit(9,	{	-- Corrupted Fleshbeast slain
-						["coords"] = {
-							{ 59.5, 48.6, 1527 },
-							{ 49.0, 35.5, 1527 },
-							{ 62.2, 68.7, 1527 },
-							{ 60.9, 69.3, 1527 },
-							{ 60.4, 67.5, 1527 },
-							{ 62.0, 66.7, 1527 },
-						},
-					}),
-					crit(10, {	-- Corrupted Jailer slain
-						["coords"] = {
-							{ 60.8, 71.5, 1527 },
-							{ 62.1, 74.7, 1527 },
-							{ 63.4, 72.6, 1527 },
-							{ 62.2, 67.4, 1527 },
-						},
-					}),
-					crit(11, {	-- Corrupted Mind Eater slain
-						["description"] = "Shares a spawn with Faceless Despoiler",
-						["coords"] = {
-							{ 59.5, 47.4, 1527 },
-							{ 59.1, 42.7, 1527 },
-							{ 55.1, 53.4, 1527 },
-							{ 49.4, 39.6, 1527 },
-							{ 60.2, 53.6, 1527 },
-							{ 58.4, 24.8, 1527 },
-							{ 55.6, 24.4, 1527 },
-						},
-					}),
-					crit(12, {	-- Corrupted Neferset Guard slain
-						["coords"] = {
-							{ 50.9, 82.9, 1527 },
-							{ 51.6, 81.7, 1527 },
-							{ 49.8, 82.0, 1527 },
-							{ 49.8, 82.6, 1527 },
-							{ 49.0, 82.6, 1527 },
-							{ 47.3, 80.3, 1527 },
-							{ 50.7, 85.5, 1527 },
-							{ 50.3, 85.5, 1527 },
-							{ 50.5, 77.9, 1527 },
-							{ 50.8, 77.8, 1527 },
-							{ 50.9, 75.0, 1527 },
-							{ 50.5, 75.0, 1527 },
-						},
-					}),
-					crit(13, {	-- Corrupted Observer slain
-						["coords"] = {
-							{ 55.4, 51.0, 1527 },
-						},
-					}),
-					crit(14, {	-- Corrupted Putrefaction slain
-						["coords"] = {
-							{ 59.3, 41.4, 1527 },
-							{ 60.4, 39.9, 1527 },
-							{ 47.4, 26.3, 1527 },
-							{ 57.1, 81.6, 1527 },
-							{ 60.8, 37.1, 1527 },
-						},
-					}),
-					crit(15, {	-- Corrupted Summoner slain
-						["coords"] = {
-							{ 58.9, 46.2, 1527 },
-							{ 60.3, 50.9, 1527 },
-							{ 59.7, 50.9, 1527 },
-							{ 57.2, 56.4, 1527 },
-							{ 58.0, 59.7, 1527 },
-							{ 58.3, 60.9, 1527 },
-							{ 56.5, 54.9, 1527 },
-							{ 60.4, 49.5, 1527 },
-							{ 56.6, 51.4, 1527 },
-							{ 56.2, 52.7, 1527 },
-							{ 56.1, 50.1, 1527 },
-							{ 54.1, 49.5, 1527 },
-							{ 53.4, 49.4, 1527 },
-							{ 51.9, 50.1, 1527 },
-						},
-					}),
-					crit(16, {	-- Corrupted Thaumaturge slain
-						["coords"] = {
-							{ 51.9, 70.3, 1527 },
-							{ 50.5, 81.8, 1527 },
-							{ 50.1, 74.6, 1527 },
-							{ 50.6, 87.5, 1527 },
-							{ 51.9, 84.4, 1527 },
-							{ 51.9, 80.6, 1527 },
-						},
-					}),
-					crit(17, {	-- Corrupted Thoughtstealer slain
-						["coords"] = {
-							{ 62.7, 75.4, 1527 },
-							{ 61.0, 72.0, 1527 },
-							{ 60.5, 68.7, 1527 },
-							{ 60.5, 65.5, 1527 },
-							{ 61.1, 66.5, 1527 },
-							{ 62.9, 74.3, 1527 },
-						},
-					}),
-					--[[crit(18, {	-- Corrupted Tormentor slain
-						["coords"] = {
-							{ 67.8, 55.0, 1530 },
-							{ 64.8, 54.6, 1530 },
-							{ 59.0, 61.3, 1530 },
-							{ 54.3, 63.5, 1530 },
-							{ 41.8, 64.6, 1530 },
-							{ 69.3, 30.8, 1530 },
-							{ 69.5, 44.6, 1530 },
-							{ 73.4, 49.3, 1530 },
-							{ 78.3, 58.0, 1530 },
-							{ 81.0, 34.1, 1530 },
-							{ 61.6, 33.7, 1530 },
-							{ 53.0, 66.2, 1530 },
-							{ 49.8, 68.1, 1530 },
-							{ 78.0, 47.3, 1530 },
-						},
-					}),]]
-					crit(19, {	-- Corrupted Watcher slain
-						["coords"] = {
-							{ 61.8, 73.0, 1527 },
-							{ 63.4, 72.9, 1527 },
-							{ 52.0, 69.8, 1527 },
-							{ 50.5, 82.5, 1527 },
-							{ 52.2, 81.6, 1527 },
-							{ 52.1, 83.0, 1527 },
-							{ 50.8, 69.8, 1527 },
-						},
+					ach(14161),		-- Get In My Belly!
+					ach(14158),		-- It's Not A Tumor!
+					ach(14160),		-- Rare to Well Done
+					ach(14153, {	-- Uldum Under Assault
+						crit(1),	-- Assault: Amathet Advance
+						crit(2),	-- Assault: Aqir Unearthed
+						crit(3),	-- Assault: The Black Empire
 					}),
 				}),
-				ach(14161),		-- Get In My Belly!
-				ach(14158),		-- It's Not A Tumor!
-				ach(14160),		-- Rare to Well Done
-				ach(14153, {	-- Uldum Under Assault
-					crit(1),	-- Assault: Amathet Advance
-					crit(2),	-- Assault: Aqir Unearthed
-					crit(3),	-- Assault: The Black Empire
-				}),
-			}),
-			f(101,    {	-- Battle Pets
-				pet(2863, {	-- Oasis Void-Duster
-				}),
-				pet(2864, {	-- Void-Scarred Locust
-				}),
-			}),
-			n(-38,    {	-- Professions
-				prof(356, {	-- Fishing
-					i(174456, {	-- Bottle of Gloop (pet)
-						["description"] = "Must be fishing in water currently affected by a N'Zoth assault.",
+				f(101,    {	-- Battle Pets
+					pet(2863, {	-- Oasis Void-Duster
+					}),
+					pet(2864, {	-- Void-Scarred Locust
 					}),
 				}),
-			}),
-			n(-17,    {	-- Quests
-				i(174771, {	-- Shadowbarb Drone
-					q(58802, {	-- The Incredible Egg
-						["coord"] = { 20.8, 61.9, 1527 },
-						["provider"] = { "o", 343611 },	-- Voidtouched Egg
-					}),
-					q(58803, {	-- Match the Hatch
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58802,	-- The Incredible Egg
-					}),
-					q(58804, {	-- Void Incubation
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58803,	-- Match the Hatch
-					}),
-					q(58807, {	-- Wrapping Up (aqir invasion)
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58804,	-- Void Incubation
-					}),
-					q(58806, {	-- Warmth of the Sun
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58804,	-- Void Incubation
-					}),
-					q(58805, {	-- Continued Incubation
-						["coord"] = { 55.6, 35.3, 1527 },
-						["isDaily"] = true,
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58806,	-- Warmth of the Sun
-					}),
-					q(58010, {	-- More Bits, More Bits!
-						["coord"] = { 55.6, 35.3, 1527 },
-						["isDaily"] = true,
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58806,	-- Warmth of the Sun
-					}),
-					q(58808, {	-- Encased in Amber
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58805,	-- Continued Incubation
-						["description"] = "Must complete 2x |cFFFFD700Continued Incubation|r daily quests.",
-					}),
-					q(58809, {	-- A Shocking Technique
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58808,	-- Encased in Amber
-					}),
-					q(58810, {	-- Coming Out of His Shell
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58805,	-- Continued Incubation
-						["description"] = "Must reach 5000/5000 with the egg's progress bar.",
-						["g"] = {
-							i(175063),	-- Aqir Egg Cluster
-						},
-					}),
-					q(58811, {	-- A Balanced Diet
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58810,	-- Coming Out of His Shell
-					}),
-					q(58812, {	-- Meat Alternatives
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58811,	-- A Balanced Diet
-					}),
-					q(58813, {	-- Fetid Filets
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 558812,	-- Meat Alternatives
-					}),
-					q(58858, {	-- More Fetid Filets
-						["coord"] = { 55.6, 35.3, 1527 },
-						["isDaily"] = true,
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58813,	-- Fetid Filets
-					}),
-					q(58818, {	-- Bug Buddies
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58813,	-- Fetid Filets
-						["description"] = "Can appear during Aqir invasions in Uldum.",
-					}),
-					q(58817, {	-- Action Figures
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58813,	-- Fetid Filets
-						["description"] = "Can appear during Amathet invasions in Uldum.",
-					}),
-					q(58825, {	-- Super Jelly
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58813,	-- Fetid Filets
-						["description"] = "Can appear during Mantid invasions in the Vale of Eternal Blossoms.",
-					}),
-					q(58829, {	-- They Grow So Fast
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58813,	-- Fetid Filets
-						["description"] = "Must reach 5000/5000 with the larva's progress bar.",
-						["g"] = {
-							i(175049),	-- Shadowbarb Hatchling
-						},
-					}),
-					q(58830, {	-- Aqir Instincts
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58829,	-- They Grow So Fast
-					}),
-					q(58861, {	-- The Mantids' Mettle
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58830,	-- Aqir Instincts
-					}),
-					q(58831, {	-- Honing Instincts
-						["coord"] = { 55.6, 35.3, 1527 },
-						["isDaily"] = true,
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58861,	-- They Mantids' Mettle
-					}),
-					q(58862, {	-- The Littlest Defender
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58861,	-- The Mantid's Mettle
-					}),
-					q(58859, {	-- Someone His Own Size
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58862,	-- The Littlest Defender
-					}),
-					q(58863, {	-- A Custom Order
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58859,	-- Someone His Own Size
-						["description"] = "Must reach 5000/5000 with the hatchling's progress bar.",
-					}),
-					q(58865, {	-- Otherworldly Armaments
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58863,	-- A Custom Order
-					}),
-					q(58866, {	-- My Own Drone
-						["coord"] = { 55.6, 35.3, 1527 },
-						["provider"] = { "n", 161738 },	-- H'partho Ardoros
-						["sourceQuest"] = 58865,	-- Otherworldly Armaments
-						["g"] = {
-							i(174771),	-- Shadowbarb Drone
-						},
+				n(-38,    {	-- Professions
+					prof(356, {	-- Fishing
+						i(174456, {	-- Bottle of Gloop (pet)
+							["description"] = "Must be fishing in water currently affected by a N'Zoth assault.",
+						}),
 					}),
 				}),
-				q(58879, {	-- Alpaca It Up
-					["cost"] = { { "i", 174858, 7 }, },	-- Gersahl Greens
-					["isDaily"] = true,
-					["provider"] = { "n", 162765 },	-- Friendly Alpaca
-					["description"] = "Find the |cFFFFD700Gersahl Greens|r at the edge of the main river in Uldum, then complete this quest 7 times for the mount.",
-					["coords"] = {
-						{ 15.0, 62.0, 1527 },
-						{ 24.0, 9.0, 1527 },
-						{ 28.0, 49.0, 1527 },
-						{ 30.0, 29.0, 1527 },
-						{ 39.0, 10.0, 1527 },
-						{ 42.0, 70.0, 1527 },
-						{ 46.0, 48.0, 1527 },
-						{ 53.0, 19.0, 1527 },
-						{ 55.0, 69.0, 1527 },
-						{ 63.0, 53.0, 1527 },
-						{ 63.0, 14.0, 1527 },
-						{ 70.0, 39.0, 1527 },
-						{ 76.0, 68.0, 1527 },
-					},
-					["g"] = {
-						q(58887, {	-- Alpaca It In
-							["provider"] = { "n", 162765 },	-- Friendly Alpaca
-							["sourceQuest"] = 58879,	-- Alpaca It Up
+				n(-17,    {	-- Quests
+					i(174771, {	-- Shadowbarb Drone
+						q(58802, {	-- The Incredible Egg
+							["coord"] = { 20.8, 61.9, 1527 },
+							["provider"] = { "o", 343611 },	-- Voidtouched Egg
+						}),
+						q(58803, {	-- Match the Hatch
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58802,	-- The Incredible Egg
+						}),
+						q(58804, {	-- Void Incubation
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58803,	-- Match the Hatch
+						}),
+						q(58807, {	-- Wrapping Up (aqir invasion)
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58804,	-- Void Incubation
+						}),
+						q(58806, {	-- Warmth of the Sun
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58804,	-- Void Incubation
+						}),
+						q(58805, {	-- Continued Incubation
+							["coord"] = { 55.6, 35.3, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58806,	-- Warmth of the Sun
+						}),
+						q(58010, {	-- More Bits, More Bits!
+							["coord"] = { 55.6, 35.3, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58806,	-- Warmth of the Sun
+						}),
+						q(58808, {	-- Encased in Amber
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58805,	-- Continued Incubation
+							["description"] = "Must complete 2x |cFFFFD700Continued Incubation|r daily quests.",
+						}),
+						q(58809, {	-- A Shocking Technique
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58808,	-- Encased in Amber
+						}),
+						q(58810, {	-- Coming Out of His Shell
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58805,	-- Continued Incubation
+							["description"] = "Must reach 5000/5000 with the egg's progress bar.",
 							["g"] = {
-								i(174859),	-- Springfur Alpaca
+								i(175063),	-- Aqir Egg Cluster
 							},
 						}),
-					},
-				}),
-				q(58283, {	-- Blind Leading the Blind
-					["lvl"] = 120,
-					["coord"] = { 54.6, 32.8, 1527 },
-					["isDaily"] = true,
-					["provider"] = { "n", 155099 },	-- High Priest Amet
-					["sourceQuest"] = 56472,	-- The Uldum Accord
-				}),
-				q(56377, {	-- Forging Onward
-					["lvl"] = 120,
-					["coord"] = { 54.9, 33.1, 1527 },
-					["description"] = "Granted upon entering the Seat of Ramkahen.",
-					["sourceQuest"] = 56376,	-- Surfacing Threats
-				}),
-				q(57222, {	-- Investigating the Halls
-					["coord"] = { 68.9, 52.7, 1527 },
-					["provider"] = { "n", 154532 },	-- Magni Bronzebeard
-					["sourceQuest"] = 57221,	-- Re-origination
-				}),
-				q(58151, {	-- Minions of N'Zoth
-					["coord"] = { 56.6, 31.7, 1527 },
-					["provider"] = { "n", 160252 },	-- Blacktalon Agent
-					["isDaily"] = true,
-					["g"] = {
-						currency(1755),	-- Coalescing Visions
-					},
-				}),
-				q(58097, {	-- Supplies from the Uldum Accord
-					["repeatable"] = true,
-					["g"] = {
-						i(174484, {	-- Uldum Accord Supplies
-							i(174481),	-- Cursed Dune Watcher
+						q(58811, {	-- A Balanced Diet
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58810,	-- Coming Out of His Shell
 						}),
-					},
-				}),
-				q(56376, {	-- Surfacing Threats
-					["lvl"] = 120,
-					["coord"] = { 54.9, 32.7, 1527 },
-					["provider"] = { "n", 155095 },	-- King Phaoris
-					["sourceQuest"] = 56472,	-- The Uldum Accord
-					["g"] = {
-						i(173280),	-- Token of Death's Door
-					},
-				}),
-				q(56209, {	-- The Halls of Origination
-					["lvl"] = 120,
-					["coord"] = { 69.8, 52.1, 1527 },
-					["provider"] = { "n", 154532 },	-- Magni Bronzebeard
-					["sourceQuest"] = 56374,	-- A Titanic Problem
-				}),
-				q(56472, {	-- The Uldum Accord
-					["lvl"] = 120,
-					["coord"] = { 54.9, 32.7, 1527 },
-					["provider"] = { "n", 155095 },	-- King Phaoris
-					["sourceQuest"] = 56375,	-- To Ramkahen
-				}),
-				q(56375, {	-- To Ramkahen
-					["lvl"] = 120,
-					["maps"] = { 1542 },
-					["coord"] = { 47.0, 44.6, 1542 },
-					["provider"] = { "n", 154533 },	-- Magni Bronzebeard
-					["sourceQuest"] = 56209,	-- The Halls of Origination
-				}),
-				q(57874, {	-- Visions of a Dark Destiny
-					["lvl"] = 120,
-					["coord"] = { 56.6, 31.7, 1527 },
-					["provider"] = { "n", 160252 },	-- Blacktalon Agent
-					["g"] = {
-						currency(1755),	-- Coalescing Visions
-					},
-				}),
-			}),
-			n(-16,    {	-- Rares
-				n(157134, {	-- Ishak of the Four Winds
-					["questID"] = 57259,
-					["coord"] = { 73.9, 83.5, 1527 },
-					["isDaily"] = true,
-					["g"] = {
-						i(174641),	-- Drake of the Four Winds
-					},
-				}),
-				n(162196, {	-- Obsidian Annihilator
-					["questID"] = 58681,
-					["coord"] = { 35.1, 17.3, 249 },
-					["isDaily"] = true,
-				}),
-			}),
-			n(-2,     {	-- Vendors
-				n(160714, {	-- Provisioner Qorra
-					["coord"] = { 55.1, 32.9, 1527 },
-					["g"] = {
-						i(174995, {	-- Void Tendril Pet Leash
-							["cost"] = {
-								{ "i", 163036, 20 },	-- Polished Pet Charm
-								{ "c", 1719, 100 },		-- 100x Corrupted Memento
+						q(58812, {	-- Meat Alternatives
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58811,	-- A Balanced Diet
+						}),
+						q(58813, {	-- Fetid Filets
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 558812,	-- Meat Alternatives
+						}),
+						q(58858, {	-- More Fetid Filets
+							["coord"] = { 55.6, 35.3, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58813,	-- Fetid Filets
+						}),
+						q(58818, {	-- Bug Buddies
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58813,	-- Fetid Filets
+							["description"] = "Can appear during Aqir invasions in Uldum.",
+						}),
+						q(58817, {	-- Action Figures
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58813,	-- Fetid Filets
+							["description"] = "Can appear during Amathet invasions in Uldum.",
+						}),
+						q(58825, {	-- Super Jelly
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58813,	-- Fetid Filets
+							["description"] = "Can appear during Mantid invasions in the Vale of Eternal Blossoms.",
+						}),
+						q(58829, {	-- They Grow So Fast
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58813,	-- Fetid Filets
+							["description"] = "Must reach 5000/5000 with the larva's progress bar.",
+							["g"] = {
+								i(175049),	-- Shadowbarb Hatchling
 							},
 						}),
-						i(172011, {	-- Recipe: Contract: Uldum Accord
-							["cost"] = 13300000,	-- 1,330 gold
+						q(58830, {	-- Aqir Instincts
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58829,	-- They Grow So Fast
 						}),
-						i(174477, {	-- Pygmy Camel
-							["cost"] = { { "i", 163036, 300 }, },	-- 300x Polished Pet Charm
+						q(58861, {	-- The Mantids' Mettle
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58830,	-- Aqir Instincts
 						}),
-						i(174648, {	-- Uldum Accord Tabard
-							["cost"] = 2280000,	-- 228g
+						q(58831, {	-- Honing Instincts
+							["coord"] = { 55.6, 35.3, 1527 },
+							["isDaily"] = true,
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58861,	-- They Mantids' Mettle
 						}),
-						i(174754, {	-- Wastewander Skyterror
-							["cost"] = 228000000,	-- 22,800g
+						q(58862, {	-- The Littlest Defender
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58861,	-- The Mantid's Mettle
 						}),
-						i(173282, {	-- Token of Death's Glee (Rank 3)
-							["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
+						q(58859, {	-- Someone His Own Size
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58862,	-- The Littlest Defender
+						}),
+						q(58863, {	-- A Custom Order
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58859,	-- Someone His Own Size
+							["description"] = "Must reach 5000/5000 with the hatchling's progress bar.",
+						}),
+						q(58865, {	-- Otherworldly Armaments
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58863,	-- A Custom Order
+						}),
+						q(58866, {	-- My Own Drone
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58865,	-- Otherworldly Armaments
+							["g"] = {
+								i(174771),	-- Shadowbarb Drone
+							},
+						}),
+					}),
+					q(58879, {	-- Alpaca It Up
+						["cost"] = { { "i", 174858, 7 }, },	-- Gersahl Greens
+						["isDaily"] = true,
+						["provider"] = { "n", 162765 },	-- Friendly Alpaca
+						["description"] = "Find the |cFFFFD700Gersahl Greens|r at the edge of the main river in Uldum, then complete this quest 7 times for the mount.",
+						["coords"] = {
+							{ 15.0, 62.0, 1527 },
+							{ 24.0, 9.0, 1527 },
+							{ 28.0, 49.0, 1527 },
+							{ 30.0, 29.0, 1527 },
+							{ 39.0, 10.0, 1527 },
+							{ 42.0, 70.0, 1527 },
+							{ 46.0, 48.0, 1527 },
+							{ 53.0, 19.0, 1527 },
+							{ 55.0, 69.0, 1527 },
+							{ 63.0, 53.0, 1527 },
+							{ 63.0, 14.0, 1527 },
+							{ 70.0, 39.0, 1527 },
+							{ 76.0, 68.0, 1527 },
+						},
+						["g"] = {
+							q(58887, {	-- Alpaca It In
+								["provider"] = { "n", 162765 },	-- Friendly Alpaca
+								["sourceQuest"] = 58879,	-- Alpaca It Up
+								["g"] = {
+									i(174859),	-- Springfur Alpaca
+								},
+							}),
+						},
+					}),
+					q(58283, {	-- Blind Leading the Blind
+						["lvl"] = 120,
+						["coord"] = { 54.6, 32.8, 1527 },
+						["isDaily"] = true,
+						["provider"] = { "n", 155099 },	-- High Priest Amet
+						["sourceQuest"] = 56472,	-- The Uldum Accord
+					}),
+					q(56377, {	-- Forging Onward
+						["lvl"] = 120,
+						["coord"] = { 54.9, 33.1, 1527 },
+						["description"] = "Granted upon entering the Seat of Ramkahen.",
+						["sourceQuest"] = 56376,	-- Surfacing Threats
+					}),
+					q(57222, {	-- Investigating the Halls
+						["coord"] = { 68.9, 52.7, 1527 },
+						["provider"] = { "n", 154532 },	-- Magni Bronzebeard
+						["sourceQuest"] = 57221,	-- Re-origination
+					}),
+					q(58151, {	-- Minions of N'Zoth
+						["coord"] = { 56.6, 31.7, 1527 },
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["isDaily"] = true,
+						["g"] = {
+							currency(1755),	-- Coalescing Visions
+						},
+					}),
+					q(58097, {	-- Supplies from the Uldum Accord
+						["repeatable"] = true,
+						["g"] = {
+							i(174484, {	-- Uldum Accord Supplies
+								i(174481),	-- Cursed Dune Watcher
+							}),
+						},
+					}),
+					q(56376, {	-- Surfacing Threats
+						["lvl"] = 120,
+						["coord"] = { 54.9, 32.7, 1527 },
+						["provider"] = { "n", 155095 },	-- King Phaoris
+						["sourceQuest"] = 56472,	-- The Uldum Accord
+						["g"] = {
+							i(173280),	-- Token of Death's Door
+						},
+					}),
+					q(56209, {	-- The Halls of Origination
+						["lvl"] = 120,
+						["coord"] = { 69.8, 52.1, 1527 },
+						["provider"] = { "n", 154532 },	-- Magni Bronzebeard
+						["sourceQuest"] = 56374,	-- A Titanic Problem
+					}),
+					q(56472, {	-- The Uldum Accord
+						["lvl"] = 120,
+						["coord"] = { 54.9, 32.7, 1527 },
+						["provider"] = { "n", 155095 },	-- King Phaoris
+						["sourceQuest"] = 56375,	-- To Ramkahen
+					}),
+					q(56375, {	-- To Ramkahen
+						["lvl"] = 120,
+						["maps"] = { 1542 },
+						["coord"] = { 47.0, 44.6, 1542 },
+						["provider"] = { "n", 154533 },	-- Magni Bronzebeard
+						["sourceQuest"] = 56209,	-- The Halls of Origination
+					}),
+					q(57874, {	-- Visions of a Dark Destiny
+						["lvl"] = 120,
+						["coord"] = { 56.6, 31.7, 1527 },
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["g"] = {
+							currency(1755),	-- Coalescing Visions
+						},
+					}),
+				}),
+				n(-16,    {	-- Rares
+					n(157134, {	-- Ishak of the Four Winds
+						["questID"] = 57259,
+						["coord"] = { 73.9, 83.5, 1527 },
+						["isDaily"] = true,
+						["g"] = {
+							i(174641),	-- Drake of the Four Winds
+						},
+					}),
+					n(162196, {	-- Obsidian Annihilator
+						["questID"] = 58681,
+						["coord"] = { 35.1, 17.3, 249 },
+						["isDaily"] = true,
+					}),
+				}),
+				n(-2,     {	-- Vendors
+					n(160714, {	-- Provisioner Qorra
+						["coord"] = { 55.1, 32.9, 1527 },
+						["g"] = {
+							i(174995, {	-- Void Tendril Pet Leash
+								["cost"] = {
+									{ "i", 163036, 20 },	-- Polished Pet Charm
+									{ "c", 1719, 100 },		-- 100x Corrupted Memento
+								},
+							}),
+							i(172011, {	-- Recipe: Contract: Uldum Accord
+								["cost"] = 13300000,	-- 1,330 gold
+							}),
+							i(174477, {	-- Pygmy Camel
+								["cost"] = { { "i", 163036, 300 }, },	-- 300x Polished Pet Charm
+							}),
+							i(174648, {	-- Uldum Accord Tabard
+								["cost"] = 2280000,	-- 228g
+							}),
+							i(174754, {	-- Wastewander Skyterror
+								["cost"] = 228000000,	-- 22,800g
+							}),
+							i(173282, {	-- Token of Death's Glee (Rank 3)
+								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
+							}),
+						},
+					}),
+				}),
+				n(-34,    {	-- World Quests
+					q(58743, {	-- Dune Buggy
+						-- pet battle
+						["lvl"] = 120,
+						["coord"] = { 35.5, 31.6, 1527 },
+						["isWorldQuest"] = true,
+					}),
+					q(58744, {	-- I Am the One Who Whispers
+						-- pet battle
+						["lvl"] = 120,
+						["coord"] = { 61.7, 54.4, 1527 },
+						["isWorldQuest"] = true,
+					}),
+					q(58742, {	-- Retinus the Seeker
+						-- pet battle
+						["lvl"] = 120,
+						["coord"] = { 62.0, 31.9, 1527 },
+						["isWorldQuest"] = true,
+					}),
+					q(58745, {	-- Watch Where You Step
+						-- pet battle
+						["lvl"] = 120,
+						["coord"] = { 57.6, 43.6, 1527 },
+						["isWorldQuest"] = true,
+					}),
+				}),
+				n(0, {	-- Zone Drops
+					i(174368),	-- Pattern: Unsettling Cragscale Boots
+					i(174369),	-- Pattern: Unsettling Cragscale Greaves
+					i(174366),	-- Pattern: Unsettling Dredged Leather Boots
+					i(174367),	-- Pattern: Unsettling Dredged Leather Leggings
+					i(174371),	-- Pattern: Unsettling Seaweave Breeches
+					i(174370),	-- Pattern: Unsettling Seaweave Gloves
+					i(171317),	-- Plans: Unsettling Osmenite Girdle
+					i(171316),	-- Plans: Unsettling Osmenite Legguards
+				}),
+				n(-10071, {	-- Visions of N'Zoth
+					["description"] = "Use the obelisk to see Uldum succumb to N'Zoth's corruption.",
+					["g"] = {
+						n(0, {	-- Zone Drops
+							i(174837),	-- Decaying Fusion Core (14 day timer on this. no sure what it is yet)
+							i(171312),	-- Recipe: Void Focus
+							i(174491),	-- Tome of Unspeakable Delicacies
+							i(174462),	-- Void Cocoon
 						}),
 					},
-				}),
-			}),
-			n(-34,    {	-- World Quests
-				q(58743, {	-- Dune Buggy
-					-- pet battle
-					["lvl"] = 120,
-					["coord"] = { 35.5, 31.6, 1527 },
-					["isWorldQuest"] = true,
-				}),
-				q(58744, {	-- I Am the One Who Whispers
-					-- pet battle
-					["lvl"] = 120,
-					["coord"] = { 61.7, 54.4, 1527 },
-					["isWorldQuest"] = true,
-				}),
-				q(58742, {	-- Retinus the Seeker
-					-- pet battle
-					["lvl"] = 120,
-					["coord"] = { 62.0, 31.9, 1527 },
-					["isWorldQuest"] = true,
-				}),
-				q(58745, {	-- Watch Where You Step
-					-- pet battle
-					["lvl"] = 120,
-					["coord"] = { 57.6, 43.6, 1527 },
-					["isWorldQuest"] = true,
 				}),
 			}),
 		},
