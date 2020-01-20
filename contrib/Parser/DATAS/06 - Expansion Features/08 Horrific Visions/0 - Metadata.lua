@@ -87,6 +87,9 @@ _.ExpansionFeatures =
 			n(-10073, {	-- Horrific Vision of Orgrimmar
 				["maps"] = { 1469 },
 				["g"] = {
+					n(155098,  {		-- Rexxar
+						i(174457),	-- C'Thuffer (pet) - rexxar
+					}),
 					n(-6015, {	-- Rewards	-- temporary grouping until we figure out how these are best organized
 						i(174920),	-- Coifcurl's Close Shave Kit (Toy)
 						i(174926),	-- Overly Sensitive Void Spectacles (Toy)
@@ -101,7 +104,6 @@ _.ExpansionFeatures =
 						
 						i(174461),	-- Swirling Black Bottle (pet) -- thrall
 						i(174646),	-- Void-Link Frostwolf Collar (pet) - thrall
-						i(174457),	-- C'Thuffer (pet) - rexxar
 						i(173726),	-- Box With Faintly Glowing "Air" Holes (pet) - Zekhan
 					}),
 				},
