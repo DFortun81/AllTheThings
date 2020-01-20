@@ -80,8 +80,15 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-16, {	-- Rares
-				n(160708, {	-- Mail Muncher -- TODO:: need more information on exactly how to spawn this rare in the visions
-					i(174653),	-- Mail Muncher
+				n(160708, {	-- Mail Muncher
+					["description"] = "Click the mailbox!",
+					["coords"] = {
+						{ 40.0, 78.4, 1469 },
+						{ 52.8, 76.2, 1469 },
+					},
+					["g"] = {
+						i(174653),	-- Mail Muncher
+					},
 				}),
 			}),
 			n(-10073, {	-- Horrific Vision of Orgrimmar
