@@ -2042,19 +2042,20 @@ _.NeverImplemented =
 		q(58581),	-- first horrific vision cleared as horde
 		q(57039),	-- Valley of Spirits cleansed (Orgrimmar)
 		q(58896),	-- Valley of Spirits cleansed (Orgrimmar) - probably controls activation of the quick-navigation back to the start?
+		q(57029),	-- Valley of Spirits cleansed (Orgrimmar) - probably controls eligibility for looting bonus chest at the end
 		q(57129),	-- Valley of Wisdom cleansed (Orgrimmar)
 		q(57001),	-- Valley of Strength cleansed (Orgrimmar)
 		q(57372),	-- The Drag cleansed (Orgrimmar)
+		q(57028),	-- The Drag cleansed (Orgrimmar) - probably controls eligibility for looting bonus chest at the end
 		q(58577),	-- The Drag cleansed (Orgrimmar) - probably controls activation of the quick-navigation back to the start?
+		q(58895),	-- got this instead of 58577 after clearing The Drag
 		q(57153),	-- Dwarven District cleansed (Stormwind)
 		q(58894),	-- Dwarven District - kill the wing boss. Activates a portal to the cathedral district
 		q(57216),	-- Old Town cleansed (Stormwind)
 		q(57271),	-- Trade District cleansed (Stormwind)
 		q(27282),	-- Mage Quarter cleansed (Stormwind)
 		-- TODO:: Need to determine the alliance zones for the 4 area chests. They appear to be shared with horde except for the main boss chest
-		q(57029),	-- looted the chest from cleansing Valley of Spirits at the end of the scenario
 		q(57031),	-- looted the chest from cleansing Valley of Wisdom at the end of the scenario
-		q(57028),	-- looted the chest from cleansing The Drag at the end of the scenario
 		q(57030),	-- looted the chest from cleansing the Valley of Strength at the end of the scenario
 		q(57027),	-- looted the chest in front of Thrall's image at the end of the scenario. Doesn't matter if you defeat him or not
 		q(57360),	-- looted the chest in front of Alleria's image at the end of the scenario. Doesn't matter if you defeat her or not
@@ -2062,6 +2063,7 @@ _.NeverImplemented =
 		q(58578),	-- looted the chest from cleansing the Dwarven District at the end of the scenario (could possibly be from looting "Spark of Inspiration" Rank 2)
 		q(58579),	-- looted the Overflowing Azerite Geode (Rank 1)
 		--[[
+		q(57845)	-- got it when looting Valley of Spirits chest with Fear and Flesh quest book and Sparks of Unwavering Strength so could be anything. it was also my first bonus chest ever
 		58840 - looted the chest in front of zekhan. Torn Page of Compednium, Vol.II and Sparks of Unwavering Strength dropped
 		57841, 58581 -- both triggered on the first run of the Vision of Orgrimmar after unlocking it, then killing Thrall immediately.
 						Possibly related to Mark of Boistrous Duty (Rank 1) dropping? Torn Page of Compendium, Vol. 1 (item 171353) as well? Need to run a few times to see if this is guaranteed or not
