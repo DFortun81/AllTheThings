@@ -483,6 +483,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 159820 },	-- Mender Dyrin
 						["sourceQuest"] = 57971,	-- Ruins of Ammon
 					}),
+					q(58782, {	-- Things Left Behind
+						["lvl"] = 120,
+						["coord"] = { 40.1, 21.3, 1527 },
+						["isDaily"] = true,
+						["provider"] = { "n", 159544 },	-- Arik Scorpidsting
+					}),
 					q(57955, {	-- To Ankhaten Harbor
 						["lvl"] = 120,
 						["coord"] = { 39.9, 45.2, 1527 },
