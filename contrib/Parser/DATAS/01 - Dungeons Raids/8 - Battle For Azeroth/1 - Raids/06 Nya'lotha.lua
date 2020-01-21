@@ -18,7 +18,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					i(175010),	-- Maddened Adherent's Bulwark
 					i(175009),	-- Zealous Ritualist's Reverie
 					i(175008),	-- Lurking Schemer's Band
-					i(175507),	-- Footpads of Terrible Delusions
+					i(175007),	-- Footpads of Terrible Delusions
 					i(175006),	-- Gauntlets of Nightmare Manifest
 				}),
 				ach(14193, {	-- Vision of Destiny
@@ -219,7 +219,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					i(175010),	-- Maddened Adherent's Bulwark
 					i(175009),	-- Zealous Ritualist's Reverie
 					i(175008),	-- Lurking Schemer's Band
-					i(175507),	-- Footpads of Terrible Delusions
+					i(175007),	-- Footpads of Terrible Delusions
 					i(175006),	-- Gauntlets of Nightmare Manifest
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
@@ -428,7 +428,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					i(175010),	-- Maddened Adherent's Bulwark
 					i(175009),	-- Zealous Ritualist's Reverie
 					i(175008),	-- Lurking Schemer's Band
-					i(175507),	-- Footpads of Terrible Delusions
+					i(175007),	-- Footpads of Terrible Delusions
 					i(175006),	-- Gauntlets of Nightmare Manifest
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
@@ -645,7 +645,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					i(175010),	-- Maddened Adherent's Bulwark
 					i(175009),	-- Zealous Ritualist's Reverie
 					i(175008),	-- Lurking Schemer's Band
-					i(175507),	-- Footpads of Terrible Delusions
+					i(175007),	-- Footpads of Terrible Delusions
 					i(175006),	-- Gauntlets of Nightmare Manifest
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
