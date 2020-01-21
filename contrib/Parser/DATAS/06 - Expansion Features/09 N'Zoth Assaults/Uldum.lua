@@ -529,6 +529,7 @@ _.ExpansionFeatures =
 						["coord"] = { 32.4, 64.6, 1527 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174224),	-- Greatsword of Cruelty
 							i(174227),	-- Writhing Feeler
 						},
 					}),
@@ -539,11 +540,19 @@ _.ExpansionFeatures =
 							{ 46.8, 58.5, 1527 },
 							{ 31.3, 51.4, 1527 },
 						},
+						["g"] = {
+							i(174224),	-- Greatsword of Cruelty
+							i(174222),	-- Unspeakable Bloodletter
+							i(174227),	-- Writhing Feeler
+						},
 					}),
 					n(154576, {	-- Aqir Titanus
 						["questID"] = 58614,
 						["isDaily"] = true,
 						["coord"] = { 39.3, 36.8, 1527 },
+						["g"] = {
+							i(174227),	-- Writhing Feeler
+						},
 					}),
 					n(162172, {	-- Aqir Warcaster
 						["questID"] = 58694,
@@ -551,6 +560,10 @@ _.ExpansionFeatures =
 						["coords"] = {
 							{ 42.0, 37.8, 1527 },
 							{ 19.2, 59.1, 1527 },
+						},
+						["g"] = {
+							i(174224),	-- Greatsword of Cruelty
+							i(174227),	-- Writhing Feeler
 						},
 					}),
 					n(162171, {	-- Captain Dunewalker
@@ -583,6 +596,11 @@ _.ExpansionFeatures =
 						["questID"] = 56823,
 						["coord"] = { 22.90, 59.42, 1527 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174224),	-- Greatsword of Cruelty
+							i(174222),	-- Unspeakable Bloodletter
+							i(174227),	-- Writhing Feeler
+						},
 					}),
 					n(154604, {	-- Lord Aj'qirai
 						["questID"] = 56340,
@@ -590,6 +608,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174475),	-- Stinky Sack (pet)
+							i(174227),	-- Writhing Feeler
 						},
 						["description"] = "He is underground.",
 					}),
@@ -597,11 +616,19 @@ _.ExpansionFeatures =
 						["questID"] = 56952,
 						["coord"] = { 31.31, 66.01, 1527 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174224),	-- Greatsword of Cruelty
+							i(174227),	-- Writhing Feeler
+						},
 					}),
 					n(162142, {	-- Qho
 						["questID"] = 58693,
 						["coord"] = { 37.5, 60.4, 1527 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174224),	-- Greatsword of Cruelty
+							i(174222),	-- Unspeakable Bloodletter
+						},
 					}),
 					n(162173, {	-- R'krox the Runt
 						["questID"] = 58864,
@@ -611,6 +638,9 @@ _.ExpansionFeatures =
 							{ 34.0, 11.2, 1527 },
 							{ 24.8, 6.5, 1527 },
 						},
+						["g"] = {
+							i(174227),	-- Writhing Feeler
+						},
 					}),
 					n(162140, {	-- Skikx'traz
 						--["questID"] = ,
@@ -618,17 +648,26 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174476),	-- Black Chitinous Plate (pet)
+							i(174227),	-- Writhing Feeler
 						},
 					}),
 					n(162170, {	-- Warcaster Xeshro
 						["questID"] = 58702,
 						["isDaily"] = true,
 						["coord"] = { 33.7, 25.4, 1527 },
+						["g"] = {
+							i(174222),	-- Unspeakable Bloodletter
+							i(174227),	-- Writhing Feeler
+						},
 					}),
 					n(162141, {	-- Zuythiz
 						["questID"] = 58695,
 						["coord"] = { 41.1, 41.8, 1527 }, -- probably circles around Orsis
 						["isDaily"] = true,
+						["g"] = {
+							i(174224),	-- Greatsword of Cruelty
+							i(174227),	-- Writhing Feeler
+						},
 					}),
 				}),
 				n(-34, {	-- World Quests
@@ -1475,6 +1514,10 @@ _.ExpansionFeatures =
 						["questID"] = 58681,
 						["coord"] = { 35.1, 17.3, 249 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174224),	-- Greatsword of Cruelty
+							i(174227),	-- Writhing Feeler
+						},
 					}),
 				}),
 				n(-2,     {	-- Vendors
