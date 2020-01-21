@@ -594,7 +594,7 @@ _.Zones =
 								spell(315863),	-- Archival Research Database (unlocks the Horrific Visions upgrades)
 							},
 						}),
-						q(57378, {	-- Remnants of a Shattered World
+						q(57378, {	-- Remnants of a Shattered World (Rank 2)
 							["lvl"] = 120,
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
@@ -604,7 +604,7 @@ _.Zones =
 								i(171335),	-- Corrupting Core
 							},
 						}),
-						q(57391, {	-- Reconstructing "The Curse of Stone"
+						q(57391, {	-- Reconstructing "The Curse of Stone" (Rank 3)
 							["lvl"] = 120,
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
@@ -614,7 +614,7 @@ _.Zones =
 								i(171335),	-- Corrupting Core
 							},
 						}),
-						q(57392, {	-- Reconstructing "The Curse of Stone"
+						q(57392, {	-- Reconstructing "The Curse of Stone" (Rank 4)
 							["lvl"] = 120,
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
@@ -624,7 +624,7 @@ _.Zones =
 								i(171335),	-- Corrupting Core
 							},
 						}),
-						q(57402, {	-- Reconstructing "The Curse of Stone"
+						q(57402, {	-- Reconstructing "The Curse of Stone" (Rank 5)
 							["lvl"] = 120,
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
@@ -634,12 +634,62 @@ _.Zones =
 								i(171335),	-- Corrupting Core
 							},
 						}),
-						q(57393, {	-- Stepping Through the Darkness
+						q(57393, {	-- Stepping Through the Darkness (Rank 6)
 							["lvl"] = 120,
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57402,	-- Reconstructing "The Curse of Stone"
 							["cost"] = { { "i", 174782, 1 } },	-- Fear and Flesh
+							["g"] = {
+								i(171354),	-- Horrific Core
+							},
+						}),
+						q(57394, {	-- Reconstructing "Fear and Flesh" (Rank 7)
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57393,	-- Stepping Through the Darkness
+							["cost"] = { { "i", 174783, 2 } },	-- Torn Page of "Fear and Flesh"
+							["g"] = {
+								i(171354),	-- Horrific Core
+							},
+						}),
+						q(57395, {	-- Reconstructing "Fear and Flesh" (Rank 8)
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57394,	-- Reconstructing "Fear and Flesh"
+							["cost"] = { { "i", 174783, 2 } },	-- Torn Page of "Fear and Flesh"
+							["g"] = {
+								i(171354),	-- Horrific Core
+							},
+						}),
+						q(57396, {	-- Reconstructing "Fear and Flesh" (Rank 9)
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57395,	-- Reconstructing "Fear and Flesh"
+							["cost"] = { { "i", 174783, 4 } },	-- Torn Page of "Fear and Flesh"
+							["g"] = {
+								i(171354),	-- Horrific Core
+							},
+						}),
+						q(57403, {	-- Reconstructing "Fear and Flesh" (Rank 10)
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57396,	-- Reconstructing "Fear and Flesh"
+							["cost"] = { { "i", 174783, 6 } },	-- Torn Page of "Fear and Flesh"
+							["g"] = {
+								i(171354),	-- Horrific Core
+							},
+						}),
+						q(57397, {	-- Reconstructing "Fear and Flesh" (Rank 11)
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57403,	-- Reconstructing "Fear and Flesh"
+							["cost"] = { { "i", 174783, 8 } },	-- Torn Page of "Fear and Flesh"
 							["g"] = {
 								i(171354),	-- Horrific Core
 							},
