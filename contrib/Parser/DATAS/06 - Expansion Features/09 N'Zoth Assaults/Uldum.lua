@@ -553,6 +553,12 @@ _.ExpansionFeatures =
 							{ 19.2, 59.1, 1527 },
 						},
 					}),
+					n(162171, {	-- Captain Dunewalker
+						["questID"] = 58699,
+						["coord"] = { 45.61, 57.79, 1527 },
+						["isDaily"] = true,
+						["description"] = "He is inside the Chamber of the Sun.",
+					}),
 					n(162147, {	-- Corpse Eater
 						["questID"] = 58696,
 						["coord"] = { 30.7, 49.8, 1527 },
@@ -564,7 +570,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(162163, {	-- High Priest Ytaessis
-						--["questID"] = ,
+						["questID"] = 58701,
 						["isDaily"] = true,
 						["coords"] = {
 							{ 45.1, 60.7, 1527 },
@@ -579,12 +585,18 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 					}),
 					n(154604, {	-- Lord Aj'qirai
-						--["questID"] = ,
-						--["coord"] = { , 1527 },
+						["questID"] = 56340,
+						["coord"] = { 34.67, 18.90, 1527 },
 						["isDaily"] = true,
 						["g"] = {
 							i(174475),	-- Stinky Sack (pet)
 						},
+						["description"] = "He is underground.",
+					}),
+					n(156078, {	-- Magus Rehleth
+						["questID"] = 56952,
+						["coord"] = { 31.31, 66.01, 1527 },
+						["isDaily"] = true,
 					}),
 					n(162142, {	-- Qho
 						["questID"] = 58693,
