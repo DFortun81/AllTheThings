@@ -1010,10 +1010,10 @@ _.Zones =
 							["cost"] = { { "i", 78863, 1 }, },	-- Chest of the Corrupted Conqueror
 						}),
 						i(76345, {	-- Robes of Dying Light
-							["cost"] = { { "i", 78174, 1 }, },	-- Chest of the Corrupted Conqueror
+							["cost"] = { { "i", 78184, 1 }, },	-- Chest of the Corrupted Conqueror
 						}),
 						i(76360, {	-- Robes of Dying Light
-							["cost"] = { { "i", 78174, 1 }, },	-- Chest of the Corrupted Conqueror
+							["cost"] = { { "i", 78184, 1 }, },	-- Chest of the Corrupted Conqueror
 						}),
 						i(78731, {	-- Robes of Dying Light
 							["cost"] = { { "i", 78847, 1 }, },	-- Chest of the Corrupted Conqueror
