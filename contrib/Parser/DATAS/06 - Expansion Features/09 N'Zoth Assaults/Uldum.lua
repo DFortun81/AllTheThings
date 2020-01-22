@@ -813,7 +813,7 @@ _.ExpansionFeatures =
 				}),
 				n(-16, {	-- Rares
 					n(158557, {	-- Actiss the Deceiver
-						["questID"] = 58448,
+						["questID"] = 58448,	-- possibly changed to 57669
 						["coord"] = { 66.8, 74.3, 1527 },
 						["isDaily"] = true,
 					}),
@@ -885,7 +885,15 @@ _.ExpansionFeatures =
 							i(171317),	-- Plans: Unsettling Osmenite Girdle -- TODO:: probably drops from any rare/elite in a black empire assault
 						},
 					}),
-					n(160623, {	-- Hungering Miasma
+					n(158528, {	-- High Guard Reshef
+						["questID"] = 57664,
+						["coords"] = {
+							{ 47.4, 77.2, 1527 },
+							{ 47.6, 77.4, 1527 },
+						},
+						["isDaily"] = true,
+					}),
+					n(160623, {	-- Hungering Miasma (might be 160631 or maybe it's different one)
 						--["questID"] = ,
 						["coord"] = { 60.0, 39.0, 1527 },
 						["isDaily"] = true,
@@ -973,6 +981,10 @@ _.ExpansionFeatures =
 					q(58257, {	-- Consuming Maw
 						["lvl"] = 120,
 						["coord"] = { 55.4, 21.3, 1527 },
+						["isWorldQuest"] = true,
+					}),
+					q(57543, {	-- Executor of N'Zoth
+						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
 					q(57592, {	-- Executor of N'Zoth

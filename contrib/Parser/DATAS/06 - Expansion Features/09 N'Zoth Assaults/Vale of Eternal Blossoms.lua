@@ -333,6 +333,12 @@ _.ExpansionFeatures =
 			}),
 			n(-10077, {	-- Assault: The Warring Clans
 				n(-17,  {	-- Quests
+					q(57718, {	-- Bound in Stone
+						["coord"] = { 38.4, 75.1, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 158673 },	-- Kun Autumnlight
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
 					q(58485, {	-- Built to Fall
 						["coord"] = { 44.7, 73.8, 1530 },
 						["isDaily"] = true,
