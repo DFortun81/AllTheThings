@@ -445,6 +445,8 @@ _.ExpansionFeatures =
 							i(174230, {	-- Pristine Cloud Serpent Scale
 								i(174649),	-- Rajani Warserpent
 							}),
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174229),	-- Lantern of the Damned
 						},
 					}),
 					n(156083, {	-- Sanguifang
