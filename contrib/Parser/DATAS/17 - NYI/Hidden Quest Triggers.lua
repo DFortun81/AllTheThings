@@ -2140,5 +2140,7 @@ _.NeverImplemented =
 		q(58540),	-- kill vexiona - probably triggers when the right wing is cleared
 		q(59562),	-- kill vexiona - kill credit
 		q(59563),	-- kill shad'har
+		q(59046),	-- kill Jesh'ra, big add with 200 Mementos as loot
+		q(59047),	-- kill another big add which name I forgot, it's on the way down to Shad'Har, big add with 200 Mementos as loot
 	}),
 };
