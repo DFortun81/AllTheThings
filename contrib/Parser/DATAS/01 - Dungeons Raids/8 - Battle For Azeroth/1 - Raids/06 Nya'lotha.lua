@@ -10,8 +10,15 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			1580,	-- Vision of Destiny
 			1581,	-- Annex of Prophecy
 			1582,	-- Ny'alotha
-			1593,	--
-			1594,	--
+			1590,	-- The Hive
+		--	,	-- Terrace of Desolation
+			1592,	-- The Ritual Chamber
+			1593,	-- Twilight Landing
+			1594,	-- ??
+			1595,	-- Maw of Gor'na
+			1596,	-- Warren of Decay
+			1597,	-- Chamber of Rebirth
+		--	,	-- Locus of Infinite Truth
 		},
 		["g"] = {
 			n(-1,  {	-- Common Boss Drop
@@ -197,6 +204,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					e(2375, {	-- N'Zoth, the Corruptor
 						["crs"] = { 158041 },
 						["g"] = {
+							i(174452),	-- Eye of Corruption (Pet)
 							i(174279),	-- Encrypted Ny'alothan Text
 							i(172187),	-- Devastation's Hour
 							i(172229),	-- Dominion, Lurker Beyond Dreams
@@ -259,7 +267,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2369, {	-- The Prophet Skitra
-					["crs"] = { 157620, 157238 },
+					["crs"] = { 157238 },
 					["g"] = {
 						ach(14037),	-- Phase 3: Prophet
 						i(174279),	-- Encrypted Ny'alothan Text
@@ -276,7 +284,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2377, {	-- Dark Inquisitor Xanesh
-					["crs"] = { 160229 },
+					["crs"] = { 160229, 156575 },
 					["g"] = {
 						ach(14024),	-- Buzzer Beater
 						i(172196),	-- Vorzz Yoq'al
@@ -407,6 +415,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["crs"] = { 158041 },
 					["g"] = {
 						ach(14148),	-- Peer Pressure
+						i(174452),	-- Eye of Corruption (Pet)
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(172187),	-- Devastation's Hour
 						i(172229),	-- Dominion, Lurker Beyond Dreams
@@ -624,6 +633,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							}),
 						}),
 						ach(14148),	-- Peer Pressure
+						i(174452),	-- Eye of Corruption (Pet)
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(172187),	-- Devastation's Hour
 						i(172229),	-- Dominion, Lurker Beyond Dreams
@@ -856,6 +866,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							title(417),	-- the Uncorrupted
 						}),
 						ach(14148),	-- Peer Pressure
+						i(174452),	-- Eye of Corruption (Pet)
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(174872),	-- Ny'alotha Allseer
 						i(172187),	-- Devastation's Hour
