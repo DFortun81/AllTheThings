@@ -431,10 +431,21 @@ _.ExpansionFeatures =
 						["coord"] = { 26.7, 10.7, 1530 },
 						["isDaily"] = true,
 					}),
+					n(163042, {	-- Ivory Cloud Serpent
+						--["questID"] = 57350,
+						--["coord"] = { 26.7, 10.7, 1530 },
+						i(174752),	-- Ivory Cloud Serpent
+					}),
 					n(157162, {	-- Rei Lun
+						["description"] = "Scale drops from the rare, turn the scale into the Rajani quartermaster for the mount!",
 						["questID"] = 57346,
 						["coord"] = { 21.9, 12.4, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174230, {	-- Pristine Cloud Serpent Scale
+								i(174649),	-- Rajani Warserpent
+							}),
+						},
 					}),
 					n(156083, {	-- Sanguifang
 						["questID"] = 56954,
