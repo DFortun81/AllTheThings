@@ -2127,5 +2127,18 @@ _.NeverImplemented =
 		q(57940),	-- Yergin Galvaquad
 		q(57957),	-- Elya Codepunch talked to
 		q(57938),	-- Assember Hung talked to
+		
+		-- Ny'alotha raid
+		q(59557),	-- kill wrathion
+		q(59558),	-- kill Maut
+		q(58547),	-- kill skitra - probably triggers when first wing clears?
+		q(58548),	-- kill skitra - probably triggers when first wing clears?
+		q(59559),	-- kill skitra - kill credit
+		q(59136),	-- after coming up the elevator after first wing. Likely the RP and respawn point reset
+		q(59561),	-- kill dark inquisitor xanesh
+		q(58539),	-- kill vexiona - probably triggers when the right wing is cleared
+		q(58540),	-- kill vexiona - probably triggers when the right wing is cleared
+		q(59562),	-- kill vexiona - kill credit
+		q(59563),	-- kill shad'har
 	}),
 };
