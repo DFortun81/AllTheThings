@@ -75,6 +75,7 @@ _.PVP =
 				i(134689),	-- Recruit's Accolade*
 				i(134687),	-- Recruit's Barrier
 				i(134674),	-- Recruit's Battle Staff*
+				i(134690),	-- Recruit's Distinction
 				i(134673),	-- Recruit's Gavel*
 				i(134664),	-- Recruit's Greatsword
 				i(134665),	-- Recruit's Longbow
