@@ -97,6 +97,7 @@ _.ExpansionFeatures =
 				["g"] = {
 					n(-6015, {				-- Rewards	-- temporary grouping until we figure out how these are best organized
 						n(-10081, {			-- Corrupted Area
+							i(175053),			-- Ranged Veterans Contract (so far it only dropped from Garona chest?)
 						}),
 						n(-10082, {			-- Lost Area
 							n(155098,  {		-- Rexxar

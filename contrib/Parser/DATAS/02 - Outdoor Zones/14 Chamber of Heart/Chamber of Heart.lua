@@ -641,6 +641,7 @@ _.Zones =
 							["sourceQuest"] = 57402,	-- Reconstructing "The Curse of Stone"
 							["cost"] = { { "i", 174782, 1 } },	-- Fear and Flesh
 							["g"] = {
+								i(169223),	-- Ashjra'kamas, Shroud of Resolve (Rank 6 appearence)
 								i(171354),	-- Horrific Core
 							},
 						}),
