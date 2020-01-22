@@ -7,6 +7,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 		["isRaid"] = true,
 		["lvl"] = 120,
 		["maps"] = {
+			1580,	-- Vision of Destiny
+			1581,	-- Annex of Prophecy
+			1582,	-- Ny'alotha
+			1593,	--
+			1594,	--
 		},
 		["g"] = {
 			n(-1,  {	-- Common Boss Drop
@@ -254,7 +259,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2369, {	-- The Prophet Skitra
-					["crs"] = { 157620 },
+					["crs"] = { 157620, 157238 },
 					["g"] = {
 						ach(14037),	-- Phase 3: Prophet
 						i(174279),	-- Encrypted Ny'alothan Text
