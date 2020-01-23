@@ -1072,6 +1072,13 @@ _.NeverImplemented =
 		q(43133),	-- Tracking Quest: Freya's Spring 5
 		q(44647),	-- Tracking Quest: Triggers after finishing the mission 'Impending Danger' for quest 'Impending Danger (32442)'
 
+	-- Warlock class campaign
+		q(44438),	-- Tracking Quest: New Blood 1
+		q(44439),	-- Tracking Quest: New Blood 2
+		q(44440),	-- Tracking Quest: New Blood 3
+		q(44441),	-- Tracking Quest: New Blood 4
+		q(44442),	-- Tracking Quest: New Blood 5
+
 	--	World Boss
 		-- The Kill ID is added here because the WQ ID is attached to the Worldboss to show up in /att wq
 		q(44501),	-- Ana-Mouz killID
