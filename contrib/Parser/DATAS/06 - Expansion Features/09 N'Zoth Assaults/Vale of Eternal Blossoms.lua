@@ -538,11 +538,18 @@ _.ExpansionFeatures =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
+					q(57023, {	-- Weighted Mogu Artifact
+						["lvl"] = 120,
+						["isWorldQuest"] = true,
+					}),
 					q(57101, {	-- Zan-tien serpent cage
 						["lvl"] = 120,
 						["coord"] = { 47.7, 21.5, 1530 },
 						["isWorldQuest"] = true,
 					}),
+				}),
+				n(0,	{	-- Zone Drops
+					i(174759),	-- Mogu Relic Fragment
 				}),
 			}),
 			n(-10078, {	-- Assault: The Endless Swarm

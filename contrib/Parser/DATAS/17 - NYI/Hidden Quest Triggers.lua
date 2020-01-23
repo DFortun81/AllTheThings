@@ -2037,6 +2037,7 @@ _.NeverImplemented =
 		q(56134),	-- Vale of Eternal Blossoms - activated a celestial buff 1st time (chi-ji?)
 		q(56135),	-- Vale of Eternal Blossoms - activated a celestial buff 2nd time (niuzao?)
 		q(59141),	-- Vale of Eternal Blossoms - triggered after turning in the Black Empire assault. Probably a loot lock trigger?
+		q(58512),	-- Grand Empress Shek'zara bonus roll
 		-- Horrific Visions
 		q(57841),	-- first horrific vision cleared as horde
 		q(58581),	-- first horrific vision cleared as horde

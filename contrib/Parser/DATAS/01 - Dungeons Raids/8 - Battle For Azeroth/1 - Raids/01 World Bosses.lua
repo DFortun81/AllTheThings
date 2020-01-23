@@ -92,7 +92,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			e(2378, {	-- Grand Empress Shek'zara -- TODO: need more info
 				["isWeekly"] = true,
 				["isRaid"] = true,
-				["cr"] = 155851,
+				["cr"] = 154638,
 				["coord"] = { 5.9, 56.4, 1530 },
 				["g"] = {
 					i(174243),	-- Guise of the Voracious Prowler
@@ -115,7 +115,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["cr"] = 140252,	-- Hailstone Construct
 				["g"] = bubbleDown({["modID"] = 3}, {
 					crit(2, {	-- Hailstone
-						["achievementID"] = 12587,	-- Unbound Monstrosities 
+						["achievementID"] = 12587,	-- Unbound Monstrosities
 					}),
 					i(161372),	-- Ice-Carved Shoulderplates
 					i(161367),	-- Hailstone Hauberk
