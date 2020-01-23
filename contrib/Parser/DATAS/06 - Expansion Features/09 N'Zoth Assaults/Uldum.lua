@@ -1005,6 +1005,11 @@ _.ExpansionFeatures =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
+					q(57588, {	-- Spirit Drinker
+						["lvl"] = 120,
+						["coord"] = { 59.0, 28.0, 1527 },
+						["isWorldQuest"] = true,
+					}),
 					--[[
 					q(, {	-- 
 						["lvl"] = 120,
