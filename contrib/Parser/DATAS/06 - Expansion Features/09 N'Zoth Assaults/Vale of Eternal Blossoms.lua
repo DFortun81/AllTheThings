@@ -474,6 +474,14 @@ _.ExpansionFeatures =
 							{ 27.1, 71.5, 1530 },
 						},
 					}),
+					n(155958, {	-- Tashara
+						["questID"] = 58507,
+						["coord"] = { 31.0, 22.8, 1530 },
+						["isDaily"] = true,
+						["g"] = {
+							i(174873),	-- Trans-mogu-rifier
+						},
+					}),
 					n(154600, {	-- Teng the Awakened
 						["questID"] = 56332,
 						["coord"] = { 47.5, 63.7, 1530 },
