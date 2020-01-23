@@ -160,6 +160,7 @@ _.Toys =
 		i(130147), 		-- Thistleleaf Branch
 		i(127709), 		-- Throbbing Blood Orb
 		i(32782), 		-- Time-Lost Figurine
+		i(174873),		-- Trans-mogu-rifier
 		i(130169),		-- Tournament Favor
 		i(163828),		-- Toy Siege Tower
 		i(163829), 		-- Toy War Machine
