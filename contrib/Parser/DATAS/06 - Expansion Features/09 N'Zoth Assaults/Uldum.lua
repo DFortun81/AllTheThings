@@ -919,6 +919,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 					}),
 					n(158636, {	-- The Grand Executor
+						["description"] = "Up in the air on the platform",
 						["questID"] = 57688,
 						["coord"] = { 49.3, 82.3, 1527 },
 						["isDaily"] = true,
@@ -932,6 +933,11 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 					}),
 					n(157473, {	-- Yiphrim the Will Ravager
+						["coords"] = {
+							{ 55.2, 79.4, 1527 },
+							{ 50.0, 78.6, 1527 },
+							{ 50.8, 87.4, 1527 },
+						},
 						["g"] = {
 							i(174874),	-- Budget K'thir Disguise
 						},

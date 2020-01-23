@@ -443,7 +443,7 @@ _.ExpansionFeatures =
 						i(174752),	-- Ivory Cloud Serpent
 					}),
 					n(157162, {	-- Rei Lun
-						["description"] = "Scale drops from the rare, turn the scale into the Rajani quartermaster for the mount!",
+						["description"] = "Scale drops from the rare.  Turn the scale into the Rajani provisioner for the mount.",
 						["questID"] = 57346,
 						["coord"] = { 21.9, 12.4, 1530 },
 						["isDaily"] = true,
@@ -452,6 +452,7 @@ _.ExpansionFeatures =
 								i(174649),	-- Rajani Warserpent
 							}),
 							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(174229),	-- Lantern of the Damned
 						},
 					}),
