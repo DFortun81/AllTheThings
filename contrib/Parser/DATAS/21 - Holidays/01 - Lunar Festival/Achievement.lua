@@ -10,7 +10,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				crit(1),	-- Elder Stonebrand in the Temple of the Earth
 				crit(2),	-- Elder Menkhaf in Uldum
 				crit(3),	-- Elder Sekhemi in Uldum
-				crit(4), --	Elder Firebeard in Twilight Highlands
+				crit(4),	-- Elder Firebeard in Twilight Highlands
 				crit(5),	-- Elder Darkfeather in Twilight Highlands
 				crit(6),	-- Elder Windsong in Hyjal
 				crit(7),	-- Elder Evershade in Nordrassil
@@ -38,14 +38,14 @@ _.Holidays = bubbleDown({["u"] = 17},
 			}),
 			ach(911, {	-- Elders of Kalimdor
 				crit(1),	-- Elder Runetotem in Razor Hill
-				crit(2), --	Elder Skygleam in Azshara
-				crit(3), --	Elder Moonwarden in The Crossroads
+				crit(2),	-- Elder Skygleam in Azshara
+				crit(3),	-- Elder Moonwarden in The Crossroads
 				crit(4),	-- Elder High Mountain in Vendetta Point
 				crit(5),	-- Elder Windtotem in Ratchet
 				crit(6),	-- Elder Bladeleaf in Dolanaar
 				crit(7),	-- Elder Starweave in Lor'danel
 				crit(8),	-- Elder Bloodhoof in Bloodhoof Village
-				crit(9), --	Elder Riversong in Astranaar
+				crit(9),	-- Elder Riversong in Astranaar
 				crit(10),	-- Elder Grimtotem in Feralas
 				crit(11),	-- Elder Mistwalker in Dire Maul
 				crit(12),	-- Elder Nightwind in Felwood
