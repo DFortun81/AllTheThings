@@ -112,17 +112,18 @@ _.Zones =
 							["g"] = {
 								i(166468),	-- Bloodgorged Hunter
 								i(163583),	-- Craghorn Chasm-Leaper
-								i(163584),	-- Twilight Avenger
 								i(163586),	-- Squawks
 								i(166470),	-- Stonehide Elderhorn
 								i(163585),	-- Surf Jelly
+								i(163584),	-- Twilight Avenger
 							},
 						}),
 						i(173949, {	-- Dread Chain Salvage
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
 							["g"] = {
-								i(163582),	-- Qinsho's Eternal Hound
 								i(163583),	-- Craghorn Chasm-Leaper
+								i(163582),	-- Qinsho's Eternal Hound
+								i(166470),	-- Stonehide Elderhorn
 							},
 						}),
 						i(173988, {	-- Havenswood Salvage
@@ -136,9 +137,8 @@ _.Zones =
 							["g"] = {
 								i(166468),	-- Bloodgorged Hunter
 								i(166467),	-- Island Thunderscale
-								i(163585),	-- Surf Jelly
-								i(166468),	-- Bloodgorged Hunter
 								i(166470),	-- Stonehide Elderhorn
+								i(163585),	-- Surf Jelly
 							},
 						}),
 						i(173992, {	-- Skitting Hollow Salvage

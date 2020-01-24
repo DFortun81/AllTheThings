@@ -406,6 +406,7 @@ _.ExpansionFeatures =
 						["coord"] = { 33.7, 68.6, 1530 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174229),	-- Lantern of the Damned
 							i(174840),	-- Xinlao
 						},
 					}),
@@ -413,11 +414,17 @@ _.ExpansionFeatures =
 						["questID"] = 58296,
 						["coord"] = { 16.8, 66.7, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174229),	-- Lantern of the Damned
+						},
 					}),
 					n(157287, {	-- Dokani Obliterator
 						["questID"] = 57349,
 						["coord"] = { 39.2, 59.6, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174229),	-- Lantern of the Damned
+						},
 					}),
 					n(157153, {	-- Ha-Li
 						["questID"] = 57344,
@@ -429,12 +436,16 @@ _.ExpansionFeatures =
 						},
 						["g"] = {
 							i(173887),	-- Clutch of Ha-Li
+							i(174229),	-- Lantern of the Damned
 						},
 					}),
 					n(157171, {	-- Heixi the Stonelord
 						["questID"] = 57347,
 						["coord"] = { 28.3, 40.5, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174229),	-- Lantern of the Damned
+						},
 					}),
 					n(157160, {	-- Houndlord Ren
 						["questID"] = 57345,
@@ -442,6 +453,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						-- TODO:: determine patrol path
 						["g"] = {
+							i(174229),	-- Lantern of the Damned
 							i(174841),	-- Ren's Stalwart Hound
 						},
 					}),
@@ -478,11 +490,17 @@ _.ExpansionFeatures =
 						["questID"] = 56954,
 						["coord"] = { 46.4, 57.2, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174229),	-- Lantern of the Damned
+						},
 					}),
 					n(157291, {	-- Spymaster Hul'ach
 						["questID"] = 57351,
 						["coord"] = { 17.9, 37.5, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174229),	-- Lantern of the Damned
+						},
 					}),
 					n(157279, {	-- Stormhowl
 						["questID"] = 57348,
@@ -511,6 +529,9 @@ _.ExpansionFeatures =
 						["coord"] = { 53.8, 48.9, 1530 },
 						--["coord"] = { 42.2, 43.5, 1530 }, -- NOTE: these were the previous coords. He may have permanently moved, or he has multiple spawn points
 						["isDaily"] = true,
+						["g"] = {
+							i(174229),	-- Lantern of the Damned
+						},
 					}),
 				}),
 				n(-34,  {	-- World Quests

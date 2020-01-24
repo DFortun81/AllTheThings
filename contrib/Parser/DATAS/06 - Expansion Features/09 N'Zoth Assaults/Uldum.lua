@@ -826,6 +826,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 155095 },	-- King Phaoris
 						["sourceQuest"] = 56472,	-- The Uldum Accord
 					}),
+					q(58233, {	-- Twisted Corruptors
+						["coord"] = { 54.6, 32.8, 1527 },
+						["isDaily"] = true,
+						["provider"] = { "n", 155099 },	-- High Priest Amet
+						["sourceQuest"] = 56472,	-- The Uldum Accord
+					}),
 					q(58156, {	-- Vanquishing the Darkness
 						["coord"] = { 56.6, 31.7, 1527 },
 						["isDaily"] = true, -- TODO:: probably a weekly
@@ -951,7 +957,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 					}),
 					n(158636, {	-- The Grand Executor
-						["description"] = "Up in the air on the platform",
+						["description"] = "Up in the air on the platform.",
 						["questID"] = 57688,
 						["coord"] = { 49.3, 82.3, 1527 },
 						["isDaily"] = true,
@@ -960,8 +966,9 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(158595, {	-- Thoughtstealer Vos
-						--["questID"] = ,
-						["coord"] = { 65.0, 73.0, 1527 },
+						["description"] = "He is in stealth.",
+						["questID"] = 57673,
+						["coord"] = { 59.4, 49.8, 1527 },
 						["isDaily"] = true,
 					}),
 					q(57359, {	-- Summoning Ritual
@@ -1051,6 +1058,10 @@ _.ExpansionFeatures =
 						["isWorldQuest"] = true,
 					}),
 					q(57543, {	-- Executor of N'Zoth
+						["lvl"] = 120,
+						["isWorldQuest"] = true,
+					}),
+					q(57580, {	-- Executor of N'Zoth
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
