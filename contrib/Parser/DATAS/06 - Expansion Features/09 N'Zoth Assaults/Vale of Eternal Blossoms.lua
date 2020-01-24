@@ -369,6 +369,24 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
+					q(58487, {	-- Plunder the Plunderers
+						["coord"] = { 37.7, 79.3, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 161405 },	-- Taoshi
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						["g"] = {
+							o(211807, {	-- Mogu Plunder placeholder
+								["coords"] = {	-- Treasure chests
+									{ 51.1, 63.4, 1530 },	-- 57212
+									{ 38.4, 70.3, 1530 },	-- 57213
+									{ 20.3, 18.5, 1530 },	-- 57209
+									{ 25.3, 27.6, 1530 },	-- 57208
+									{ 15.5, 64.5, 1530 },	-- 57211
+									{ 17.7, 12.6, 1530 },	-- 57206	250 coals
+								},
+							}),
+						},
+					}),
 					q(57721, {	-- Spoils of War
 						["coord"] = { 43.9, 71.7, 1530 },
 						["isDaily"] = true,
@@ -518,9 +536,19 @@ _.ExpansionFeatures =
 						["coord"] = { 19.2, 72.0, 1530 },
 						["isWorldQuest"] = true,
 					}),
+					q(57339, {	-- Construction Ritual
+						["lvl"] = 120,
+						["coord"] = { 25.2, 17.2, 1530 },
+						["isWorldQuest"] = true,
+					}),
 					q(58370, {	-- Empowered Demolisher
 						["lvl"] = 120,
 						["coord"] = { 26.7, 16.9, 1530 },
+						["isWorldQuest"] = true,
+					}),
+					q(57171, {	-- Goldbough Guardian
+						["lvl"] = 120,
+						["coord"] = { 20.4, 12.6, 1530 },
 						["isWorldQuest"] = true,
 					}),
 					q(58334, {	-- Misfall in Flames

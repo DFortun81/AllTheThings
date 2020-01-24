@@ -760,11 +760,41 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 155099 },	-- High Priest Amet
 						["sourceQuest"] = 56472,	-- The Uldum Accord
 					}),
+					q(57773, {	-- Close to Tears	-- This quest also happens in Vale it looks like.
+						["coord"] = { 54.8, 32.9, 1527 },
+						["isDaily"] = true,
+						["provider"] = { "n", 155096 },	-- High Commander Kamses
+						["sourceQuest"] = 56472,	-- The Uldum Accord
+					}),
 					q(58277, {	-- Dark Deceivers
 						["coord"] = { 54.6, 32.8, 1527 },
 						["isDaily"] = true,
 						["provider"] = { "n", 155099 },	-- High Priest Amet
 						["sourceQuest"] = 56472,	-- The Uldum Accord
+					}),
+					q(58239, {	-- Lessons in Brigandry
+						["coord"] = { 54.8, 32.9, 1527 },
+						["isDaily"] = true,
+						["provider"] = { "n", 155096 },	-- High Commander Kamses
+						["sourceQuest"] = 56472,	-- The Uldum Accord
+						["g"] = {
+							o(334216, {	-- Black Empire Cache placeholder
+								["coords"] = {	-- Treasure chests
+									{ 48.9, 76.8, 1527 },
+									{ 50.8, 31.4, 1527 },
+									{ 51.0, 80.0, 1527 },
+									{ 51.8, 73.0, 1527 },
+									{ 55.7, 84.4, 1527 },
+									{ 58.3, 15.3, 1527 },
+									{ 59.3, 62.3, 1527 },
+									{ 60.2, 65.3, 1527 },
+									{ 63.4, 68.1, 1527 },
+									{ 64.4, 65.0, 1527 },
+									{ 71.0, 73.0, 1527 },
+									{ 50.2, 75.1, 1527 },
+								}
+							}),
+						},
 					}),
 					q(58238, {	-- Lost and Tormented
 						["coord"] = { 54.9, 32.7, 1527 },
