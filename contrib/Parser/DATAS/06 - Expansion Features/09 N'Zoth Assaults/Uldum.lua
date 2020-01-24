@@ -817,9 +817,10 @@ _.ExpansionFeatures =
 						["coord"] = { 66.8, 74.3, 1527 },
 						["isDaily"] = true,
 					}),
-					n(157593, {	-- Amalgamation of Flesh
+					n(157593, {	-- Amalgamation of Fless
+						["description"] = "This rare will only spawn when the event is up",
 						--["questID"] = ,
-						--["coord"] = { , 1527 },
+						["coord"] = { 59.8, 72.4, 1527 },
 						["isDaily"] = true,
 						["g"] = {
 							i(174478),	-- Wicked Lurker (pet)
@@ -864,6 +865,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							-- TODO: verify which eye drops from which rare, or if both can drop from the same mob
+							-- Confirmed right eye dropping from this one.
 							i(175141, {	-- All-Seeing Left Eye
 								i(175140),	-- All-Seeing Eyes (toy)
 							}),
@@ -932,14 +934,43 @@ _.ExpansionFeatures =
 						["coord"] = { 65.0, 73.0, 1527 },
 						["isDaily"] = true,
 					}),
-					n(157473, {	-- Yiphrim the Will Ravager
+					q(57359, {	-- Summoning Ritual
+						["description"] = "The portal needs to be clicked multiple times in order for the rares to spawn.  You can only click the portal once per day, so work together with others to get the spawn.  Three rares will spawn at a time and any of the rares can spawn in any of the locations.",
+						["isDaily"] = true,
+						--["isWorldQuest"] = true, -- maybe?  classified as wq on wowhead
 						["coords"] = {
 							{ 55.2, 79.4, 1527 },
 							{ 50.0, 78.6, 1527 },
 							{ 50.8, 87.4, 1527 },
 						},
 						["g"] = {
-							i(174874),	-- Budget K'thir Disguise
+							n(157472, {	-- Aphrom the Guise of Madness
+								["questID"] = 57437,
+								["isDaily"] = true,
+							}),
+							n(157470, {	-- R'aas the Anima Devourer
+								["questID"] = 57436,
+								["isDaily"] = true,
+							}),
+							n(157390, {	-- R'oyolok the Reality Eater
+								["questID"] = 57434,
+								["isDaily"] = true,
+							}),
+							n(157476, {	-- Shugshul the Flesh Gorger
+								["questID"] = 57439,
+								["isDaily"] = true,
+							}),
+							n(157473, {	-- Yiphrim the Will Ravager
+								["questID"] = 57438,
+								["isDaily"] = true,
+								["g"] = {
+									i(174874),	-- Budget K'thir Disguise
+								},
+							}),
+							n(157469, {	-- Zoth'rum the Intellect Pillager
+								["questID"] = 57435,
+								["isDaily"] = true,
+							}),
 						},
 					}),
 				}),
