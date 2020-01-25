@@ -948,6 +948,28 @@ _.Zones =
 						}),
 					},
 				}),
+				n(148228, {	-- Marvin Sipsquall <Shirt Vendor>
+					["coord"] = { 56.4, 26.9, 1161 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(42365),	-- Amber Filigreed Doublet
+						i(42371),	-- Amber Filigreeed Shirt
+						i(42374),	-- Blue Martial Shirt
+						i(42361),	-- Cerulean Filigreed Doublet
+						i(42370),	-- Cerulean Filigreed Shirt
+						i(42360),	-- Ebon Filigreed Doublet
+						i(42369),	-- Ebon Filigreed Shirt
+						i(53852),	-- Embroidered Shirt
+						i(42363),	-- Golden Filigreed Doublet
+						i(42373),	-- Golden Filigreed Shirt
+						i(42375),	-- Green Martial Shirt
+						i(42377),	-- Purple Martial Shirt
+						i(42378),	-- Red Martial Shirt
+						i(42368),	-- Scarlet Filigreed Doublet
+						i(42372),	-- Scarlet Filigreed Shirt
+						i(42376),	-- Yellow Martial Shirt
+					},
+				}),
 				n(135808, {	-- Provisioner Fray <Proudmoore Admiralty Emissary>
 					["coord"] = { 67.5, 21.5, 1161 },
 					["races"] = ALLIANCE_ONLY,
