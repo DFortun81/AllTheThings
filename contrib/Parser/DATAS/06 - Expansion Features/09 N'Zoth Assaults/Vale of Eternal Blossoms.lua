@@ -659,7 +659,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
 				}),
-				n(-16, {	-- Rares
+				n(-16, {	-- Rares	-- Theory is that i(174855)	-- Bow of Calamity, and i(174226)	-- Paragon's Will drop from these as well.
 					n(160825, {	-- Amber-Shaper Esh'ri
 						["questID"] = 58300,
 						["coord"] = { 20.0, 74.6, 1530 },
@@ -669,6 +669,14 @@ _.ExpansionFeatures =
 						["questID"] = 58307,
 						["coord"] = { 6.5, 70.7, 1530 },
 						["isDaily"] = true,
+					}),
+					n(160893, {	-- Captain Vor'lek
+						["questID"] = 58308,
+						["coord"] = { 04.0, 60.8, 1530 },
+						["isDaily"] = true,
+						["g"] = {
+							i(174223),	-- Ooze-Imbued Rifle
+						},
 					}),
 					n(160872, {	-- Destroyer Krox'tazar
 						["questID"] = 58304,
@@ -684,6 +692,9 @@ _.ExpansionFeatures =
 						["questID"] = 58306,
 						["coord"] = { 10.6, 40.6, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+						},
 					}),
 					n(160810, {	-- Harbinger Il'koxik
 						["questID"] = 58299,
@@ -695,9 +706,19 @@ _.ExpansionFeatures =
 						["coord"] = { 12.8, 51.3, 1530 },
 						["isDaily"] = true,
 					}),
+					n(160826, {	-- Hive-Guard Naz'ruzek
+						["questID"] = 58301,
+						["coord"] = { 21.1, 62.7, 1530 },
+						["isDaily"] = true,
+					}),
 					n(160930, {	-- Infused-Amber Ooze
 						["questID"] = 58312,
 						["coord"] = { 18.5, 66.5, 1530 },
+						["isDaily"] = true,
+					}),
+					n(160920, {	-- Kal'tik the Blight
+						["questID"] = 58310,
+						["coord"] = { 18.2, 09.9, 1530 },
 						["isDaily"] = true,
 					}),
 					n(160867, {	-- Kzit'kovok
