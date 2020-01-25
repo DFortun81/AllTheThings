@@ -1066,6 +1066,11 @@ _.ExpansionFeatures =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
+					q(58256, {	-- Consuming Maw
+						["lvl"] = 120,
+						["coord"] = { 46.79, 34.25, 1527 },
+						["isWorldQuest"] = true,
+					}),
 					q(58257, {	-- Consuming Maw
 						["lvl"] = 120,
 						["coord"] = { 55.4, 21.3, 1527 },
@@ -1107,6 +1112,11 @@ _.ExpansionFeatures =
 						["coord"] = { 47.0, 41.0, 1527 },
 						["isWorldQuest"] = true,
 					}),
+					q(58271, {	-- Voidflame Ritual
+						["lvl"] = 120,
+						["coord"] = { 62.02, 70.68, 1527 },
+						["isWorldQuest"] = true,
+					}),
 					--[[
 					q(, {	-- 
 						["lvl"] = 120,
@@ -1114,6 +1124,12 @@ _.ExpansionFeatures =
 						["isWorldQuest"] = true,
 					}),
 					]]--
+				}),
+				n(0, {	-- Zone Drops
+					i(170553, {	-- Void Focus Splinter
+						["description"] = "The fastest way is to farm them inside Lesser Vision.",
+					}),
+					i(174758),	-- Voidwarped Relic Fragment
 				}),
 			}),
 			n(-10072, {    -- N'Zoth Assault

@@ -328,6 +328,9 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(0,	{	-- Zone Drops
+					i(170553, {	-- Void Focus Splinter
+						["description"] = "The fastest way is to farm them inside Lesser Vision.",
+					}),
 					i(174758),	-- Voidwarped Relic Fragment
 				}),
 			}),
