@@ -754,6 +754,18 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 155095 },	-- King Phaoris
 						["sourceQuest"] = 56472,	-- The Uldum Accord
 					}),
+					q(58229, {	-- A Rallying Cry
+						["coord"] = { 54.8, 32.9, 1527 },
+						["isDaily"] = true,
+						["provider"] = { "n", 155096 },	-- High Commander Kamses
+						["sourceQuest"] = 56472,	-- The Uldum Accord
+					}),
+					q(58230, {	-- Blind the Eyes
+						["coord"] = { 54.6, 32.8, 1527 },
+						["isDaily"] = true,
+						["provider"] = { "n", 155099 },	-- High Priest Amet
+						["sourceQuest"] = 56472,	-- The Uldum Accord
+					}),
 					q(58237, {	-- Cleansing Uldum
 						["coord"] = { 54.6, 32.8, 1527 },
 						["isDaily"] = true,
