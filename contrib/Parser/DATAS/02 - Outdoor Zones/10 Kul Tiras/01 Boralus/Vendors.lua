@@ -7,6 +7,210 @@ _.Zones =
 	m(876, {	-- Kul'Tiras
 		m(1161, {	-- Boralus
 			n(-2, {		-- Vendors
+				n(161565, {	-- Bragni <Profession Liason>
+					["coord"] = { 56.3, 27.2, 1161 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(171153, {	-- Formula: Uncanny Combatant's Sorcerous Scepter (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(171152, {	-- Formula: Uncanny Combatant's Sorcerous Scepter (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170586, {	-- Pattern: Uncanny Combatant's Bow (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170587, {	-- Pattern: Uncanny Combatant's Bow (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170420, {	-- Pattern: Uncanny Combatant's Leather Armguards (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170421, {	-- Pattern: Uncanny Combatant's Leather Armguards (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170414, {	-- Pattern: Uncanny Combatant's Leather Gauntlets (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170415, {	-- Pattern: Uncanny Combatant's Leather Gauntlets (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170416, {	-- Pattern: Uncanny Combatant's Leather Leggings (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170417, {	-- Pattern: Uncanny Combatant's Leather Leggings (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170412, {	-- Pattern: Uncanny Combatant's Leather Treads (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170413, {	-- Pattern: Uncanny Combatant's Leather Treads (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170418, {	-- Pattern: Uncanny Combatant's Leather Waistguard (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170419, {	-- Pattern: Uncanny Combatant's Leather Waistguard (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170430, {	-- Pattern: Uncanny Combatant's Mail Armguards (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170431, {	-- Pattern: Uncanny Combatant's Mail Armguards (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170424, {	-- Pattern: Uncanny Combatant's Mail Gauntlets (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170425, {	-- Pattern: Uncanny Combatant's Mail Gauntlets (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170426, {	-- Pattern: Uncanny Combatant's Mail Leggings (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170427, {	-- Pattern: Uncanny Combatant's Mail Leggings (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170422, {	-- Pattern: Uncanny Combatant's Mail Treads (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170423, {	-- Pattern: Uncanny Combatant's Mail Treads (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170428, {	-- Pattern: Uncanny Combatant's Mail Waistguard (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170429, {	-- Pattern: Uncanny Combatant's Mail Waistguard (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170445, {	-- Pattern: Uncanny Combatant's Satin Belt (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170446, {	-- Pattern: Uncanny Combatant's Satin Belt (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170448, {	-- Pattern: Uncanny Combatant's Satin Boots (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170449, {	-- Pattern: Uncanny Combatant's Satin Boots (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170454, {	-- Pattern: Uncanny Combatant's Satin Bracers (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170455, {	-- Pattern: Uncanny Combatant's Satin Bracers (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170444, {	-- Pattern: Uncanny Combatant's Satin Cloak (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170447, {	-- Pattern: Uncanny Combatant's Satin Cloak (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170450, {	-- Pattern: Uncanny Combatant's Satin Mittens (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170451, {	-- Pattern: Uncanny Combatant's Satin Mittens (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170452, {	-- Pattern: Uncanny Combatant's Satin Pants (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170453, {	-- Pattern: Uncanny Combatant's Satin Pants (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170955, {	-- Plans: Uncanny Combatant's Cutlass (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170954, {	-- Plans: Uncanny Combatant's Cutlass (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170953, {	-- Plans: Uncanny Combatant's Deckpounder (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170952, {	-- Plans: Uncanny Combatant's Deckpounder (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170402, {	-- Plans: Uncanny Combatant's Plate Armguards (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170403, {	-- Plans: Uncanny Combatant's Plate Armguards (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170394, {	-- Plans: Uncanny Combatant's Plate Boots (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170395, {	-- Plans: Uncanny Combatant's Plate Boots (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170396, {	-- Plans: Uncanny Combatant's Plate Gauntlets (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170397, {	-- Plans: Uncanny Combatant's Plate Gauntlets (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170398, {	-- Plans: Uncanny Combatant's Plate Greaves (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170399, {	-- Plans: Uncanny Combatant's Plate Greaves (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170392, {	-- Plans: Uncanny Combatant's Plate Waistguard (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170393, {	-- Plans: Uncanny Combatant's Plate Waistguard (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170947, {	-- Plans: Uncanny Combatant's Polearm (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170946, {	-- Plans: Uncanny Combatant's Polearm (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170949, {	-- Plans: Uncanny Combatant's Shanker (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170948, {	-- Plans: Uncanny Combatant's Shanker (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170400, {	-- Plans: Uncanny Combatant's Shield (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170401, {	-- Plans: Uncanny Combatant's Shield (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(170951, {	-- Plans: Uncanny Combatant's Spellblade (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(170950, {	-- Plans: Uncanny Combatant's Spellblade (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(171159, {	-- Recipe: Uncanny Combatant's Intuitive Staff (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(171158, {	-- Recipe: Uncanny Combatant's Intuitive Staff (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(174273, {	-- Schematic: Uncanny Combatant's Discombobulator (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(174274, {	-- Schematic: Uncanny Combatant's Discombobulator (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(174271, {	-- Schematic: Uncanny Combatant's Stormsteel Destroyer (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(174272, {	-- Schematic: Uncanny Combatant's Stormsteel Destroyer (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+						i(171059, {	-- Technique: Uncanny Combatant's Etched Vessel (Rank 2)
+							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
+						}),
+						i(171058, {	-- Technique: Uncanny Combatant's Etched Vessel (Rank 3)
+							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
+						}),
+					},
+				}),
 				n(148922, {	-- Captain Klarisa
 					["coord"] = { 66.0, 32.2, 1161 },
 					["races"] = ALLIANCE_ONLY,
@@ -285,7 +489,7 @@ _.Zones =
 					},
 				}),
 				n(142564, {	-- Leedan Gustaf <Profession Liason> [NOTE: PvP Craftable Recipes]
-					["coord"] = { 56.3, 26.9, 1161 },
+					["coord"] = { 56.0, 26.8, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(162439, {	-- Pattern: Honorable Combatant's Satin Belt (Rank 2)
