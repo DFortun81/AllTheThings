@@ -1520,6 +1520,14 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
+					q(58168, {	-- A Dark, Glaring Reality
+						["coord"] = { 56.69, 31.75, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["g"] = {
+							i(174288),	-- Breath of Everlasting Spirit
+						},
+					}),
 					q(58879, {	-- Alpaca It Up
 						["cost"] = { { "i", 174858, 7 }, },	-- Gersahl Greens
 						["isDaily"] = true,
