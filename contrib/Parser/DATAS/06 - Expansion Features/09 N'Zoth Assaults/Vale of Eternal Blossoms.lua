@@ -634,6 +634,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161405 },	-- Taoshi
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
+					q(58765, {	-- Siege Breaker
+						["coord"] = { 38.4, 75.0, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 158674 },	-- Anji Autumnlight
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
 					q(58764, {	-- Standards of the Swarm
 						["coord"] = { 38.4, 75.0, 1530 },
 						["isDaily"] = true,
@@ -644,6 +650,12 @@ _.ExpansionFeatures =
 						["coord"] = { 38.4, 75.1, 1530 },
 						["isDaily"] = true,
 						["provider"] = { "n", 158673 },	-- Kun Autumnlight
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
+					q(58759, {	-- The Empress' Guard
+						["coord"] = { 37.2, 79.2, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 161405 },	-- Taoshi
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
 				}),
@@ -723,6 +735,16 @@ _.ExpansionFeatures =
 						["coord"] = { 11.0, 64.4, 1530 },
 						["isWorldQuest"] = true,
 					}),
+					q(57384, {	-- Mending Monstrosity
+						["lvl"] = 120,
+						["coord"] = { 19.0, 72.0, 1530 },
+						["isWorldQuest"] = true,
+					}),
+					--[[q(, {	-- Ravager Hive  -- Bugged 
+						["lvl"] = 120,
+						["coord"] = { 27.0, 47.0, 1530 },
+						["isWorldQuest"] = true,
+					}),]]
 					q(57484, {	-- Ritual of Wakening
 						["lvl"] = 120,
 						["coord"] = { 16.9, 45.7, 1530 },
@@ -736,6 +758,16 @@ _.ExpansionFeatures =
 					q(57517, {	-- Swarm Caller
 						["lvl"] = 120,
 						["coord"] = { 25.7, 36.4, 1530 },
+						["isWorldQuest"] = true,
+					}),
+					q(57519, {	-- Swarm Caller
+						["lvl"] = 120,
+						["coord"] = { 27.0, 17.0, 1530 },
+						["isWorldQuest"] = true,
+					}),
+					q(57453, {	-- Swarm Caller
+						["lvl"] = 120,
+						["coord"] = { 14.0, 33.0, 1530 },
 						["isWorldQuest"] = true,
 					}),
 					q(57476, {	-- Vil'thik Feeding Grounds
