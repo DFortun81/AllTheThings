@@ -397,6 +397,12 @@ _.ExpansionFeatures =
 							}),
 						},
 					}),
+					q(58481, {	-- Rituals of Blood
+						["coord"] = { 38.4, 75.1, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 158673 },	-- Kun Autumnlight
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
 					q(57721, {	-- Spoils of War
 						["coord"] = { 43.9, 71.7, 1530 },
 						["isDaily"] = true,
@@ -616,7 +622,7 @@ _.ExpansionFeatures =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
-					q(57101, {	-- Zan-tien serpent cage
+					q(57101, {	-- Zan-Tien Serpent Cage
 						["lvl"] = 120,
 						["coord"] = { 47.7, 21.5, 1530 },
 						["isWorldQuest"] = true,
@@ -1252,6 +1258,9 @@ _.ExpansionFeatures =
 							}),
 							i(168575, {	-- Branch of Rejuvenating Rings (Rank 3)
 								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
+							}),
+							i(174905, {	-- Troop Requisition: Rajani Sparkcaller
+								["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 							}),
 						},
 					}),
