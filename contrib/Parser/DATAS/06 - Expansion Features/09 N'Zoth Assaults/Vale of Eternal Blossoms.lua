@@ -357,6 +357,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
+					q(58741, {	-- Cutting Stone
+						["coord"] = { 43.8, 71.8, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 154677 },	-- Forgemaster Han <Repairs>
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
 					q(58479, {	-- Lightning Crashes
 						["coord"] = { 44.7, 73.8, 1530 },
 						["isDaily"] = true,
@@ -377,13 +383,16 @@ _.ExpansionFeatures =
 						["g"] = {
 							o(211807, {	-- Mogu Plunder placeholder
 								["coords"] = {	-- Treasure chests
-									{ 51.1, 63.4, 1530 },	-- 57212
-									{ 38.4, 70.3, 1530 },	-- 57213
-									{ 20.3, 18.5, 1530 },	-- 57209
-									{ 25.3, 27.6, 1530 },	-- 57208
-									{ 15.5, 64.5, 1530 },	-- 57211
 									{ 17.7, 12.6, 1530 },	-- 57206	250 coals
 									{ 20.5, 14.8, 1530 },	-- 57206	250 coals
+									{ 30.3, 37.6, 1530 },	-- 57208
+									{ 25.3, 27.6, 1530 },	-- 57208
+									{ 20.3, 18.5, 1530 },	-- 57209
+									{ 21.3, 13.9, 1530 },	-- 57209
+									{ 15.5, 64.5, 1530 },	-- 57211
+									{ 51.1, 63.4, 1530 },	-- 57212
+									{ 38.4, 70.3, 1530 },	-- 57213
+									{ 33.3, 69.9, 1530 },	-- 57213
 								},
 							}),
 						},
@@ -392,6 +401,12 @@ _.ExpansionFeatures =
 						["coord"] = { 43.9, 71.7, 1530 },
 						["isDaily"] = true,
 						["provider"] = { "n", 154677 },	-- Forgemaster Han
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
+					q(58740, {	-- Subjugated Serpents
+						["coord"] = { 38.4, 75.0, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 158674 },	-- Anji Autumnlight
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
 					q(58477, {	-- Through Blood and Dirt and Bone
@@ -1137,6 +1152,12 @@ _.ExpansionFeatures =
 						["f"] = 101,	-- Battle Pet
 						["lvl"] = 120,
 						["coord"] = { 57.5, 54.3, 1530 },
+						["isWorldQuest"] = true,
+					}),
+					q(58749, {	-- Flight of the Vil'thik
+						["f"] = 101,	-- Battle Pet
+						["lvl"] = 120,
+						["coord"] = { 07.4, 31.4, 1530 },
 						["isWorldQuest"] = true,
 					}),
 					q(58748, {	-- Living Statues Are Tough

@@ -439,6 +439,10 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
+					q(52115, {	-- In the Shadow of the Kraken
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+					}),
 					q(52168, {	-- It's Lit
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
