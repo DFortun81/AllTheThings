@@ -637,10 +637,22 @@ _.ExpansionFeatures =
 			}),
 			n(-10078, {	-- Assault: The Endless Swarm
 				n(-17, {	-- Quests
+					q(58760, {	-- Blades of Amber
+						["coord"] = { 43.8, 71.8, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 154677 },	-- Forgemaster Han <Repairs>
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
 					q(58756, {	-- Dread Menders
 						["coord"] = { 37.2, 79.2, 1530 },
 						["isDaily"] = true,
 						["provider"] = { "n", 161405 },	-- Taoshi
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
+					q(58758, {	-- Rampaging Destroyers
+						["coord"] = { 38.4, 75.0, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 158674 },	-- Anji Autumnlight
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
 					q(58765, {	-- Siege Breaker
@@ -656,6 +668,12 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
 					q(58755, {	-- Stashed Supplies
+						["coord"] = { 38.4, 75.1, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 158673 },	-- Kun Autumnlight
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
+					q(58762, {	-- Taken by the Swarm
 						["coord"] = { 38.4, 75.1, 1530 },
 						["isDaily"] = true,
 						["provider"] = { "n", 158673 },	-- Kun Autumnlight
@@ -765,6 +783,16 @@ _.ExpansionFeatures =
 						["coord"] = { 11.0, 64.4, 1530 },
 						["isWorldQuest"] = true,
 					}),
+					q(57521, {	-- Empowered War Wagon
+						["lvl"] = 120,
+						["coord"] = { 09.0, 27.0, 1530 },
+						["isWorldQuest"] = true,
+					}),
+					q(57089, {	-- Mantid Hatchery
+						["lvl"] = 120,
+						["coord"] = { 06.0, 71.0, 1530 },
+						["isWorldQuest"] = true,
+					}),
 					q(57384, {	-- Mending Monstrosity
 						["lvl"] = 120,
 						["coord"] = { 19.0, 72.0, 1530 },
@@ -803,6 +831,11 @@ _.ExpansionFeatures =
 					q(57476, {	-- Vil'thik Feeding Grounds
 						["lvl"] = 120,
 						["coord"] = { 11.3, 40.8, 1530 },
+						["isWorldQuest"] = true,
+					}),
+					q(57508, {	-- Zara'thik War Banner
+						["lvl"] = 120,
+						["coord"] = { 11.0, 48.0, 1530 },
 						["isWorldQuest"] = true,
 					}),
 				}),
