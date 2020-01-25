@@ -839,6 +839,9 @@ _.ExpansionFeatures =
 						["isWorldQuest"] = true,
 					}),
 				}),
+				n(0,	{	-- Zone Drops
+					i(174760),	-- Mantid Relic Fragment
+				}),
 			}),
 			n(-10072, {    -- N'Zoth Assault
 				n(-4,   {	-- Achievements
