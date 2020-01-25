@@ -910,12 +910,12 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(158633, {	-- Gaze of N'Zoth
-						--["questID"] = ,
+						["questID"] = 57680,
 						["coord"] = { 55.0, 53.0, 1527 },
 						["isDaily"] = true,
 						["g"] = {
 							-- TODO: verify which eye drops from which rare, or if both can drop from the same mob
-							-- Confirmed right eye dropping from this one.
+							-- Confirmed right eye dropping from this one two times.
 							i(175141, {	-- All-Seeing Left Eye
 								i(175140),	-- All-Seeing Eyes (toy)
 							}),
@@ -933,9 +933,6 @@ _.ExpansionFeatures =
 						["questID"] = 57675,
 						["coord"] = { 54.7, 43.2, 1527 },
 						["isDaily"] = true,
-						["g"] = {
-							i(171317),	-- Plans: Unsettling Osmenite Girdle -- TODO:: probably drops from any rare/elite in a black empire assault
-						},
 					}),
 					n(158528, {	-- High Guard Reshef
 						["questID"] = 57664,
@@ -959,6 +956,12 @@ _.ExpansionFeatures =
 						["questID"] = 57430,
 						["isDaily"] = true,
 						["description"] = "Roams around the southern half of Uldum.", -- TODO:: his path is HUGE. do we want to add coords?
+					}),
+					n(161033, {	-- Shadowmaw
+						["description"] = "In the waters surrounding the main hub.",
+						["questID"] = 58333,
+						["coord"] = { 56.4, 40.6, 1527 },
+						["isDaily"] = true,
 					}),
 					n(156654, {	-- Shol'thoss the Doomspeaker
 						["questID"] = 57432,
