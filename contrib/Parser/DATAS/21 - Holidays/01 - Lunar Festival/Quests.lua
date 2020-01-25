@@ -1020,15 +1020,15 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
 				["coord"] = { 53.1, 36.0, 80 },
 			}),
-			q(56903, {	-- Crown of Prosperity
+			q(56904, {	-- Crown of Prosperity
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
 				["coord"] = { 53.1, 36.0, 80 },
 				["sourceQuest"] = 56842,	-- Lunar Preservation
 				["g"] = {
-					un(17, i(170206)),	-- Crown of Infintite Prosperity
+					un(17, i(170206)),	-- Crown of Infinite Prosperity
 				},
 			}),
-			q(56904, {	-- Crown of Good Fortune
+			q(56906, {	-- Crown of Good Fortune
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
 				["coord"] = { 53.1, 36.0, 80 },
 				["sourceQuest"] = 56842,	-- Lunar Preservation
@@ -1044,7 +1044,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					un(17, i(170207)),	-- Crown of Eternal Memorial
 				},
 			}),
-			q(56906, {	-- Crown of Courage
+			q(56903, {	-- Crown of Courage
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
 				["coord"] = { 53.1, 36.0, 80 },
 				["sourceQuest"] = 56842,	-- Lunar Preservation
