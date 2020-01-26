@@ -17,7 +17,7 @@ _.Toys =
 		i(104329), 		-- Ash-Covered Horn
 		i(90067),		-- B. F. F. Necklace
 		i(113540),		-- Ba'ruun's Bountiful Bloom
-		i(153193),  	-- Baarut the Brisk Toy
+		i(153193),  	-- Baarut the Brisk
 		i(164375),		-- Bad Mojo Banana
 		i(129165), 		-- Barnacle-Encrusted Gem
 		i(153183),  	-- Barrier Generator
@@ -32,6 +32,7 @@ _.Toys =
 		i(163713),		-- Brazier Cap
 		i(116113),		-- Breath of Talador
 		i(114227), 		-- Bubble Wand
+		i(174874),		-- Budget K'thir Disguise
 		i(134022), 		-- Burgy Blackheart's Handsome Hat
 		i(116122), 		-- Burning Legion Missive
 		i(102467),		-- Censer of Eternal Agony
@@ -110,6 +111,7 @@ _.Toys =
 		i(1973),		-- Orb of Deception
 		i(35275),		-- Orb of the Sin'dorei
 		i(120276),		-- Outrider's Bridle Chain
+		i(174926),		-- Overly Sensitive Void Spectacles
 		i(86588),		-- Pandaren Firework Launcher
 		i(86586),		-- Panflute of Pandaria
 		i(118221),		-- Petrification Stone
@@ -126,6 +128,7 @@ _.Toys =
 		i(153181),  	-- Red Conservatory Scroll
 		i(104294), 		-- Rime of the Time-Lost Mariner
 		i(131811),		-- Rocfeather Skyhorn Kite
+		i(174928),		-- Rotten Apple
 		i(153253),  	-- S.F.E. Interceptor
 		i(86583), 		-- Salyin Battle Banner
 		i(127655), 		-- Sassy Imp
