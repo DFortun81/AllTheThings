@@ -39,6 +39,7 @@ _.Mounts =
 		i(63040),	-- Drake of the North Wind
 		i(63041),	-- Drake of the South Wind
 		i(163576),	-- Dune Scavenger
+		i(174860),	-- Elusive Quickhoof
 		i(78919),	-- Experiment 12-B
 		i(169201),	-- Fabious
 		i(138201),	-- Fathom Dweller
@@ -80,9 +81,12 @@ _.Mounts =
 		i(138258),	-- Long-Forgotten Hippogryph
 		i(151623),	-- Lucid Nightmare Mount [Note: Drop's from Puzzler's Demise; a puzzle mount similar  to Kosumoth, Riddler's Mind Worm and Sun Darter Hatchling]
 		i(152814),	-- Maddened Chaorunner
+		i(174653),	-- Mail Muncher
+		i(174769),	-- Malevolent Drone
 		i(168826),	-- Mechagon Peacekeeper
 		i(142236),	-- Midnight
 		i(45693),	-- Mimiron's Head
+		i(174842),	-- Mollie
 		i(116661),	-- Mottled Meadowstomper
 		i(161479),	-- Nazjatar Blood Serpentr
 		i(142233, {	-- Netherlord's Accursed Wrathsteed
@@ -96,6 +100,7 @@ _.Mounts =
 		i(32768),	-- Raven Lord
 		i(94291),	-- Red Primal Raptor
 		i(21321),	-- Red Qiraji Battle Tank
+		i(174841),	-- Ren's Stalwart Hound
 		i(147835),	-- Riddler's Mind-Worm
 		i(166466),	-- Risen Mare
 		i(13335),	-- Rivendare's Deathcharger
@@ -140,6 +145,7 @@ _.Mounts =
 		i(63043),	-- Vitreous Stone Drake
 		i(121815),	-- Voidtalon of the Dark Star
 		i(116780),	-- Warsong Direfang
+		i(174753),	-- Waste Marauder
 		i(147804),	-- Wild Dreamrunner
 		i(163706),	-- Witherbark Direwing
 		i(174840),	-- Xinlao

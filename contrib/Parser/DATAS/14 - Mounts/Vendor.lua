@@ -363,6 +363,7 @@ _.Mounts =
 		i(32316),	-- Purple Riding Nether Ray
 		i(18791),	-- Purple Skeletal Warhorse
 		i(46815),	-- Quel'dorei Steed
+		i(174649),	-- Rajani Warserpent
 		i(91007, {	-- Red Dragon Turtle [Panda Only]
 			["races"] = {
 				25,	-- Horde Pandaren
@@ -534,6 +535,7 @@ _.Mounts =
 		i(161667, {	-- Voldunai Dunescraper
 			["races"] = HORDE_ONLY,
 		}),
+		i(174754),	-- Wastewander Skyterror
 		i(46100),	-- White Kodo
 		i(5873),	-- White Ram
 		i(89390),	-- White Riding Goat

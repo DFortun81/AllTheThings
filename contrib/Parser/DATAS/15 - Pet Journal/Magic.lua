@@ -80,6 +80,7 @@ _.PetJournal =
 		p(547),		-- Nordrassil Wisp
 		p(530),		-- Oily Slimeling
 		un(3, p(240)),	-- Onyx Panther
+		p(2844),	-- Reek
 		p(1958),	-- Sanctum Cub
 		p(846),		-- Sapphire Cub
 		p(1601),	-- Servant of Demidos
