@@ -2143,7 +2143,11 @@ _.NeverImplemented =
 		q(59563),	-- kill shad'har
 		q(59046),	-- kill Jesh'ra, big add with 200 Mementos as loot
 		q(59047),	-- kill Sanguimar, big add with 200 Mementos as loot
+		q(59048),	-- kill Deresh of the Nothingness, big add with 200 Mementos as loot
 		q(59566),	-- kill drest'agath
 		q(59560),	-- kill hivemind
+		q(58535),	--\
+		q(58536),	--| got these three after defeating Il'gynoth, getting Gift of Flesh achievement (wing clear?) and looting [Encrypted Ny'alothian Text]x4
+		q(59564),	--/ so probably need more data to find out what's what here
 	}),
 };
