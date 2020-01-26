@@ -11,7 +11,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			1581,	-- Annex of Prophecy
 			1582,	-- Ny'alotha
 			1590,	-- The Hive
-			1531,	-- Terrace of Desolation
+			1591,	-- Terrace of Desolation
 			1592,	-- The Ritual Chamber
 			1593,	-- Twilight Landing
 			1594,	-- ??

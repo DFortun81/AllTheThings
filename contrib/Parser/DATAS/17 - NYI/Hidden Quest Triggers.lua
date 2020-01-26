@@ -2143,5 +2143,7 @@ _.NeverImplemented =
 		q(59563),	-- kill shad'har
 		q(59046),	-- kill Jesh'ra, big add with 200 Mementos as loot
 		q(59047),	-- kill Sanguimar, big add with 200 Mementos as loot
+		q(59566),	-- kill drest'agath
+		q(59560),	-- kill hivemind
 	}),
 };
