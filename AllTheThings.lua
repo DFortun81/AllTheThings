@@ -12617,7 +12617,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						{ 895, 5896, { 53939, 53711 }},	-- Tiragarde Sound (Breaching Boralus [H] / A Sound Defense [A])
 					}
 				},	
-				{ 
+				{
 					619, -- Broken Isles
 					{
 						{ 630, 5175, { 47063 }},	-- Azsuna
@@ -12631,6 +12631,24 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				{ 882 },	-- Mac'Aree
 				{ 1355 },	-- Nazjatar
 				-- { 1462 },	-- Mechagon does not need to be included as a separate mapID as it is contained in the the Kul Tiras mapID
+				{ 1527 },	-- Uldum
+				{ 1530 },	-- Vale of Eternal Blossoms
+				--[[{	-- { ?, poi, questID } Best guess at poi's, We might not even need this?
+					1527,	-- Uldum
+					{
+						{ ?, 6486, { 57157 }},	-- Assault: The Black Empire
+						{ ?, 6488, { 56308 }},	-- Assault: Aqir Unearthed
+						{ ?, 6487, { 55350 }},	-- Assault: Amathet Advance
+					},
+				},
+				{
+					1530,	-- Vale of Eternal Blossoms
+					{
+						{ ?, 6489, { 56064 }},	-- Assault: The Black Empire
+						{ ?, 6491, { 57728 }},	-- Assault: The Endless Swarm
+						{ ?, 6490, { 57008 }},	-- Assault: The Warring Clans
+					},
+				},]]
 			};
 			local OnUpdateForItem = function(self)
 				for i,o in ipairs(self.g) do
