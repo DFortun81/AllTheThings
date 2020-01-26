@@ -640,18 +640,11 @@ _.Zones =
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57402,	-- Reconstructing "The Curse of Stone"
 							["cost"] = { { "i", 174782, 1 } },	-- Fear and Flesh
-							["g"]  = bubbleDown({["bonusID"] = 6277 }, {
+							["g"] = {
 								i(169223),	-- Ashjra'kamas, Shroud of Resolve (Rank 6 appearence)
-								--i(171354),	-- Horrific Core  -- Moved below to avoid bubbledown tag.
-							}),
-						}),
-						q(57393, {	-- Stepping Through the Darkness (Rank 6)
-							["lvl"] = 120,
-							["coord"] = { 46.1, 64.0, 1473 },
-							["provider"] = { "n", 155496 },	-- Wrathion
-							["sourceQuest"] = 57402,	-- Reconstructing "The Curse of Stone"
-							["cost"] = { { "i", 174782, 1 } },	-- Fear and Flesh
-							["g"]  = {
+									--[[["modID"] = 11,
+									-- tested modids 7,6,11,5,62,4,3,23,22,14,8,151,1,
+								}),]]
 								i(171354),	-- Horrific Core
 							},
 						}),
