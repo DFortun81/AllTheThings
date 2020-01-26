@@ -172,10 +172,6 @@ namespace ATT
             {
                 foreach (var qg in qgs) NPCS_WITH_REFERENCES[Convert.ToInt32(qg)] = true;
             }
-            if (data.TryGetValue("questID", out int questID))
-            {
-                QUESTS_WITH_REFERENCES[questID] = true;
-            }
 
             // Cache whether or not this entry had an explicit spellID assignment already.
             bool hasSpellID = data.ContainsKey("spellID");
@@ -191,6 +187,18 @@ namespace ATT
             {
                 // Parse it!
                 filter = (Objects.Filters)f;
+            }
+
+            // Mark the quest as referenced
+            if (data.TryGetValue("questID", out int questID))
+            {
+                QUESTS_WITH_REFERENCES[questID] = true;
+
+                // Remove itself from the list of altQuests
+                if (data.TryGetValue("altQuests", out List<object> altQuests) && altQuests != null && altQuests.Count > 0)
+                {
+                    altQuests.Remove(questID);
+                }
             }
 
             // Throw away automatic Spell ID assignments for certain filter types.
