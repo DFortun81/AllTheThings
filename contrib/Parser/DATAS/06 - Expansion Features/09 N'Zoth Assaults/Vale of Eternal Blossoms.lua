@@ -1190,8 +1190,18 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(56574, {	-- Reflections in Amber
-						["cr"] = 160825,	-- Amber-Shaper Esh'ri
-						["coord"] = { 20.0, 74.6, 1530 },
+						["crs"] = {
+							160825,	-- Amber-Shaper Esh'ri
+							160872,	-- Destroyer Krox'tazar
+							160874,	-- Drone Keeper Ak'thet
+							160810,	-- Harbinger Il'koxik
+							160868,	-- Harrier Nir'verash
+							160826,	-- Hive-Guard Naz'ruzek
+							160930,	-- Infused Amber Ooze
+							160867,	-- Kzit'kovok
+							160922,	-- Needler Zhesalla
+						},
+						["description"] = "Quest item drops from many rares during Mantid Assault.",
 						["provider"] = { "i", 169888 },	-- Ooze-covered Amber
 					}),
 					q(56542, {	-- Restored Hope
