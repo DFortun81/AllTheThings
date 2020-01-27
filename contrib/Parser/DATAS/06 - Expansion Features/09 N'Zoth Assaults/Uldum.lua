@@ -785,9 +785,9 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 56472,	-- The Uldum Accord
 					}),
 					q(58239, {	-- Lessons in Brigandry
-						["coord"] = { 54.8, 32.9, 1527 },
+						["coord"] = { 54.6, 34.0, 1527 },
 						["isDaily"] = true,
-						["provider"] = { "n", 155096 },	-- High Commander Kamses
+						["provider"] = { "n", 160957 },	-- Arianna Swiftsand
 						["sourceQuest"] = 56472,	-- The Uldum Accord
 						["g"] = {
 							o(334216, {	-- Black Empire Cache placeholder
@@ -863,7 +863,7 @@ _.ExpansionFeatures =
 				}),
 				n(-16, {	-- Rares
 					n(158557, {	-- Actiss the Deceiver
-						["questID"] = 58448,	-- possibly changed to 57669
+						["questID"] = 57669,
 						["coord"] = { 66.8, 74.3, 1527 },
 						["isDaily"] = true,
 					}),
@@ -1077,6 +1077,11 @@ _.ExpansionFeatures =
 					q(58257, {	-- Consuming Maw
 						["lvl"] = 120,
 						["coord"] = { 55.4, 21.3, 1527 },
+						["isWorldQuest"] = true,
+					}),
+					q(58258, {	-- Consuming Maw
+						["lvl"] = 120,
+						["coord"] = { 62.39, 79.31, 1527 },
 						["isWorldQuest"] = true,
 					}),
 					q(57543, {	-- Executor of N'Zoth
