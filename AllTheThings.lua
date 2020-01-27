@@ -12631,8 +12631,8 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				{ 882 },	-- Mac'Aree
 				{ 1355 },	-- Nazjatar
 				-- { 1462 },	-- Mechagon does not need to be included as a separate mapID as it is contained in the the Kul Tiras mapID
-				{ 1527 },	-- Uldum
-				{ 1530 },	-- Vale of Eternal Blossoms
+				--{ 1527 },	-- Uldum
+				--{ 1530 },	-- Vale of Eternal Blossoms
 				--[[{	-- { ?, poi, questID } Best guess at poi's, We might not even need this?
 					1527,	-- Uldum
 					{
