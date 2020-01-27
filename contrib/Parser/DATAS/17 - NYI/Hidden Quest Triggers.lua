@@ -2039,6 +2039,7 @@ _.NeverImplemented =
 		q(59141),	-- Vale of Eternal Blossoms - triggered after turning in the Black Empire assault. Probably a loot lock trigger?
 		q(58512),	-- Grand Empress Shek'zara bonus roll
 		q(59060),	-- choosing Bitey McStabface as the name for your Aqir Hatchling
+		q(59062),	-- choosing Spike as the name for your Aqir Hatchling
 
 		-- Horrific Visions
 		q(57841),	-- first horrific vision cleared as horde

@@ -1129,6 +1129,11 @@ _.ExpansionFeatures =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
+					q(57582, {	-- Executor of N'Zoth
+						["lvl"] = 120,
+						["coord"] = { 66.57, 68.26, 1527 },
+						["isWorldQuest"] = true,
+					}),
 					q(57592, {	-- Executor of N'Zoth
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
