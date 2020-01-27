@@ -12,11 +12,52 @@ _.ExpansionFeatures =
 			1548,	-- Mogu'Shan Vaults (The Engine of Nalak'sha scenario)
 			1549,	-- Mogu'Shan Vaults (The Engine of Nalak'sha scenario)
 			1570,	-- Vale of Eternal Blossoms
-			1579,	-- Vale of Eternal Blossoms - underground area
+			1579,	-- Vale of Eternal Blossoms - Pools Of Power - underground area
 		},
 		["g"] = {
 			n(-10076, {	-- Assault: The Black Empire
 				n(-17,	{	-- Quests
+					-- Lesser Visions dailies
+					q(58168, {	-- A Dark, Glaring Reality
+						["coord"] = { 84.2, 51.7, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["g"] = {
+							i(174288),	-- Breath of Everlasting Spirit (once a week)
+						},
+					}),
+					q(58161, {	-- Minions of N'Zoth
+						["coord"] = { 84.2, 51.7, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["g"] = {
+							i(174288),	-- Breath of Everlasting Spirit (once a week)
+						},
+					}),
+					q(58167, {	-- Preventative Measures
+						["coord"] = { 84.2, 51.7, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["g"] = {
+							i(174288),	-- Breath of Everlasting Spirit (once a week)
+						},
+					}),
+					q(58156, {	-- Vanquishing the Darkness
+						["coord"] = { 84.2, 51.7, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors (is it really a prereq? should it be on all lesser visions quest?)
+						["g"] = {
+							i(174288),	-- Breath of Everlasting Spirit (once a week)
+						},
+					}),
+					-- Dailies
+					q(58420, {	-- A Foul Annoyance
+						["coord"] = { 44.7, 73.8, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
 					q(58468, {	-- A Growing Darkness
 						["coord"] = { 66.9, 39.8, 1530 },
 						["isDaily"] = true,
@@ -53,6 +94,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161405 },	-- Taoshi
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
+					q(58460, {	-- Marshals of Madness
+						["coord"] = { 44.7, 73.8, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+					}),
 					q(58595, {	-- Pillars of Oblivion
 						["coord"] = { 44.7, 73.8, 1530 },
 						["isDaily"] = true,
@@ -77,6 +123,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 154261 },	-- Chi-Ji
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
+					q(58423, {	-- The Strongest Among Them
+						["coord"] = { 44.7, 73.8, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
 					q(58466, {	-- Torment From Beyond
 						["coord"] = { 66.3, 40.6, 1530 },
 						["isDaily"] = true,
@@ -94,15 +146,6 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "n", 154261 },	-- Chi-Ji
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
-					}),
-					q(58156, {	-- Vanquishing the Darkness
-						["coord"] = { 84.2, 51.7, 1530 },
-						["isDaily"] = true,
-						["provider"] = { "n", 160252 },
-						["sourceQuest"] = 56771,	-- Time-Lost Warriors
-						["g"] = {
-							i(174288),	-- Breath of Everlasting Spirit
-						},
 					}),
 				}),
 				n(-16,	{	-- Rares
@@ -336,6 +379,17 @@ _.ExpansionFeatures =
 			}),
 			n(-10077, {	-- Assault: The Warring Clans
 				n(-17,  {	-- Quests
+					-- Assault questline
+					q(57067, {	-- Mogu at the Gates	-- showed up when the Warring Clans assault was up. is there a pre-req? 
+						["coord"] = { 44.7, 73.8, 1530 },
+						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+					}),
+					q(57068, {	-- Kite Surveillance
+						["coord"] = { 43.9, 4.9, 1530 },
+						["provider"] = { "n", 156297 },	-- Chen Stormstout
+						["sourceQuest"] = 57067,	-- Mogu at the Gates
+					}),
+					-- Dailies
 					q(57718, {	-- Bound in Stone
 						["coord"] = { 38.4, 75.1, 1530 },
 						["isDaily"] = true,
@@ -637,6 +691,34 @@ _.ExpansionFeatures =
 			}),
 			n(-10078, {	-- Assault: The Endless Swarm
 				n(-17, {	-- Quests
+					-- Assault questline
+					q(56574, {	-- Reflections in Amber
+						["crs"] = {
+							160825,	-- Amber-Shaper Esh'ri
+							160872,	-- Destroyer Krox'tazar
+							160874,	-- Drone Keeper Ak'thet
+							160810,	-- Harbinger Il'koxik
+							160868,	-- Harrier Nir'verash
+							160826,	-- Hive-Guard Naz'ruzek
+							160930,	-- Infused Amber Ooze
+							160867,	-- Kzit'kovok
+							160922,	-- Needler Zhesalla
+						},
+						["description"] = "Quest item drops from many rares during Mantid Assault.",
+						["provider"] = { "i", 169888 },	-- Ooze-covered Amber
+					}),
+					q(56575, {	-- Once More Into Kor'vess
+						["coord"] = { 13.9, 77.2, 1530 },
+						["provider"] = { "n", 155487 },	-- Taoshi
+						["sourceQuest"] = 56574,	-- Reflections in Amber
+					}),
+					q(56647, {	-- The Mantid Threat
+						["lvl"] = 120,
+						["coord"] = { 12.2, 95.3, 422 },
+						["provider"] = { "n", 155487 },	-- Taoshi
+						["sourceQuest"] = 56645,	-- Heart of the Swarm
+					}),
+					-- Dailies
 					q(58760, {	-- Blades of Amber
 						["coord"] = { 43.8, 71.8, 1530 },
 						["isDaily"] = true,
@@ -853,7 +935,7 @@ _.ExpansionFeatures =
 					i(174760),	-- Mantid Relic Fragment
 				}),
 			}),
-			n(-10072, {    -- N'Zoth Assault
+			n(-10072, {	-- N'Zoth Assault
 				n(-4,   {	-- Achievements
 					ach(14159, {		-- Combating the Corruption -- TODO:: update with criteria when they get added.  Only crit for the zone atm is uncommented, rest are in Uldum? -- Is attaching questID's to these really the best way to track the quest?
 						--[[crit(1, {	-- 	Corrupted Acolyte slain
@@ -1122,17 +1204,6 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(-17,  {	-- Quests
-					q(58168, {	-- A Dark, Glaring Reality
-						["coord"] = { 84.2, 51.7, 1530 },
-						["isDaily"] = true,
-						["provider"] = { "n", 160252 },	-- Blacktalon Agent
-					}),
-					q(58420, {	-- A Foul Annoyance
-						["coord"] = { 44.7, 73.8, 1530 },
-						["isDaily"] = true,
-						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
-						["sourceQuest"] = 56771,	-- Time-Lost Warriors
-					}),
 					q(56538, {	-- Clans of the Mogu
 						["coord"] = { 83.7, 27.1, 1530 },
 						["provider"] = { "n", 156003 },	-- Lorewalker Cho
@@ -1142,42 +1213,6 @@ _.ExpansionFeatures =
 						["coord"] = { 83.7, 27.1, 1530 },
 						["provider"] = { "n", 156003 },	-- Lorewalker Cho
 						["sourceQuest"] = 56538,	-- Clans of the Mogu
-					}),
-					q(57068, {	-- Kite Surveillance
-						["coord"] = { 43.9, 4.9, 1530 },
-						["provider"] = { "n", 156297 },	-- Chen Stormstout
-						["sourceQuest"] = 57067,	-- Mogu at the Gates
-					}),
-					q(58460, {	-- Marshals of Madness
-						["coord"] = { 44.7, 73.8, 1530 },
-						["isDaily"] = true,
-						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
-					}),
-					q(58161, {	-- Minions of N'Zoth
-						["coord"] = { 84.2, 51.7, 1530 },
-						["isDaily"] = true,
-						["provider"] = { "n", 160252 },	-- Blacktalon Agent
-						["g"] = {
-							currency(1755),	-- Coalescing Visions x20
-						},
-					}),
-					q(57067, {	-- Mogu at the Gates	-- showed up when the Warring Clans assault was up. is there a pre-req? 
-						["coord"] = { 44.7, 73.8, 1530 },
-						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
-					}),
-					q(56575, {	-- Once More Into Kor'vess
-						["coord"] = { 13.9, 77.2, 1530 },
-						["provider"] = { "n", 155487 },	-- Taoshi
-						["sourceQuest"] = 56574,	-- Reflections in Amber
-					}),
-					q(58167, {	-- Preventative Measures
-						["coord"] = { 84.2, 51.7, 1530 },
-						["isDaily"] = true,
-						["provider"] = { "n", 160252 },	-- Blacktalon Agent
-						["g"] = {
-							i(174288),	-- Breath of Everlasting Spirit
-							currency(1755),	-- Coalescing Visions x200
-						},
 					}),
 					q(56540, {	-- Proof of Tenacity
 						["coord"] = { 44.7, 73.9, 1530 },
@@ -1198,21 +1233,6 @@ _.ExpansionFeatures =
 							i(173845),	-- Vile Manipulator's Hood
 							i(173844),	-- Vile Manipulator's Amice
 						},
-					}),
-					q(56574, {	-- Reflections in Amber
-						["crs"] = {
-							160825,	-- Amber-Shaper Esh'ri
-							160872,	-- Destroyer Krox'tazar
-							160874,	-- Drone Keeper Ak'thet
-							160810,	-- Harbinger Il'koxik
-							160868,	-- Harrier Nir'verash
-							160826,	-- Hive-Guard Naz'ruzek
-							160930,	-- Infused Amber Ooze
-							160867,	-- Kzit'kovok
-							160922,	-- Needler Zhesalla
-						},
-						["description"] = "Quest item drops from many rares during Mantid Assault.",
-						["provider"] = { "i", 169888 },	-- Ooze-covered Amber
 					}),
 					q(56542, {	-- Restored Hope
 						["coord"] = { 45.3, 74.3, 1530 },
@@ -1235,18 +1255,6 @@ _.ExpansionFeatures =
 						["coord"] = { 45.3, 74.3, 1530 },
 						["provider"] = { "n", 154418 },	-- Ra-den
 						["sourceQuest"] = 56540,	-- Proof of Tenacity
-					}),
-					q(56647, {	-- The Mantid Threat
-						["lvl"] = 120,
-						["coord"] = { 12.2, 95.3, 422 },
-						["provider"] = { "n", 155487 },	-- Taoshi
-						["sourceQuest"] = 56645,	-- Heart of the Swarm
-					}),
-					q(58423, {	-- The Strongest Among Them
-						["coord"] = { 44.7, 73.8, 1530 },
-						["isDaily"] = true,
-						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
-						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
 					q(56771, {	-- Time-Lost Warriors
 						["coord"] = { 83.1, 27.2, 1530 },

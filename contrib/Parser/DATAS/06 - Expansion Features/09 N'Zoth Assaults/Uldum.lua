@@ -16,6 +16,31 @@ _.ExpansionFeatures =
 		["g"] = {
 			n(-10075, {	-- Assault: Amathet Advance
 				n(-17,  {	-- Quests
+					-- Assault questline
+					q(58636, {	-- Eyes on the Amathet
+						["lvl"] = 120,
+						["coord"] = { 54.9, 32.9, 1527 },
+						["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+						["sourceQuest"] = 56472,	-- The Uldum Accord
+					}),
+					q(58638, {	-- A Deeper Dive
+						["lvl"] = 120,
+						["coord"] = { 54.9, 32.9, 1527 },
+						["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+						["sourceQuest"] = 58636,	-- Eyes on the Amathet
+					}),
+					q(58639, {	-- Buried History
+						["lvl"] = 120,
+						["coord"] = { 68.9, 57.9, 1527 },
+						["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+						["sourceQuest"] = 58638,	-- A Deeper Dive
+					}),
+					q(58646, {	-- Chew On This!
+						["lvl"] = 120,
+						["coord"] = { 68.9, 57.9, 1527 },
+						["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+						["sourceQuest"] = 58638,	-- A Deeper Dive
+					}),
 					q(58640, {	-- A Crack in the Armor
 						["lvl"] = 120,
 						["coord"] = { 68.9, 57.9, 1527 },
@@ -25,12 +50,31 @@ _.ExpansionFeatures =
 							58646,	-- Chew On This!
 						},
 					}),
-					q(58638, {	-- A Deeper Dive
+					q(58641, {	-- Seekers of Corruption
 						["lvl"] = 120,
-						["coord"] = { 54.9, 32.9, 1527 },
+						["coord"] = { 72.9, 48.4, 1527 },
 						["provider"] = { "n", 155102 },	-- High Explorer Dellorah
-						["sourceQuest"] = 58636,	-- Eyes on the Amathet
+						["sourceQuest"] = 58640,	-- A Crack in the Armor
 					}),
+					q(58642, {	-- Shared Goals
+						["lvl"] = 120,
+						["coord"] = { 72.9, 48.4, 1527 },
+						["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+						["sourceQuest"] = 58641,	-- Seekers of Corruption
+					}),
+					q(58643, {	-- Mutually Assured Destruction
+						["lvl"] = 120,
+						["coord"] = { 72.9, 48.4, 1527 },
+						["provider"] = { "n", 155102 },	-- High Explorer Dellorah
+						["sourceQuest"] = 58642,	-- Shared Goals
+					}),
+					q(58645, {	-- A World Worth Saving
+						["lvl"] = 120,
+						["coord"] = { 71.6, 52.0, 1527 },
+						["provider"] = { "n", 161031 },	-- Captain Hadan
+						["sourceQuest"] = 58643,	-- Mutually Assured Destruction
+					}),
+					-- Dailies
 					q(58287, {	-- A Smashing Plan
 						["lvl"] = 120,
 						["coord"] = { 54.8, 32.9, 1527 },
@@ -41,12 +85,6 @@ _.ExpansionFeatures =
 							currency(1755),	-- Coalescing Visions
 						},
 					}),
-					q(58645, {	-- A World Worth Saving
-						["lvl"] = 120,
-						["coord"] = { 71.6, 52.0, 1527 },
-						["provider"] = { "n", 161031 },	-- Captain Hadan
-						["sourceQuest"] = 58643,	-- Mutually Assured Destruction
-					}),
 					q(58281, {	-- Ancient Armaments
 						["lvl"] = 120,
 						["coord"] = { 54.8, 32.9, 1527 },
@@ -56,11 +94,12 @@ _.ExpansionFeatures =
 							currency(1755),	-- Coalescing Visions
 						},
 					}),
-					q(58639, {	-- Buried History
+					q(58283, {	-- Blind Leading the Blind
 						["lvl"] = 120,
-						["coord"] = { 68.9, 57.9, 1527 },
-						["provider"] = { "n", 155102 },	-- High Explorer Dellorah
-						["sourceQuest"] = 58638,	-- A Deeper Dive
+						["coord"] = { 54.6, 32.8, 1527 },
+						["isDaily"] = true,
+						["provider"] = { "n", 155099 },	-- High Priest Amet
+						["sourceQuest"] = 56472,	-- The Uldum Accord
 					}),
 					q(58290, {	-- Champions of the Amathet
 						["lvl"] = 120,
@@ -70,12 +109,6 @@ _.ExpansionFeatures =
 						["g"] = {
 							currency(1755),	-- Coalescing Visions
 						},
-					}),
-					q(58646, {	-- Chew On This!
-						["lvl"] = 120,
-						["coord"] = { 68.9, 57.9, 1527 },
-						["provider"] = { "n", 155102 },	-- High Explorer Dellorah
-						["sourceQuest"] = 58638,	-- A Deeper Dive
 					}),
 					q(58282, {	-- Down From the Sky
 						["lvl"] = 120,
@@ -89,12 +122,6 @@ _.ExpansionFeatures =
 						["coord"] = { 54.6, 34.0, 1527 },
 						["isDaily"] = true,
 						["provider"] = { "n", 160957 },	-- Arianna Swiftsand
-						["sourceQuest"] = 56472,	-- The Uldum Accord
-					}),
-					q(58636, {	-- Eyes on the Amathet
-						["lvl"] = 120,
-						["coord"] = { 54.9, 32.9, 1527 },
-						["provider"] = { "n", 155102 },	-- High Explorer Dellorah
 						["sourceQuest"] = 56472,	-- The Uldum Accord
 					}),
 					q(58286, {	-- Far From Home
@@ -115,24 +142,6 @@ _.ExpansionFeatures =
 						["g"] = {
 							currency(1755),	-- Coalescing Visions
 						},
-					}),
-					q(58643, {	-- Mutually Assured Destruction
-						["lvl"] = 120,
-						["coord"] = { 72.9, 48.4, 1527 },
-						["provider"] = { "n", 155102 },	-- High Explorer Dellorah
-						["sourceQuest"] = 58642,	-- Shared Goals
-					}),
-					q(58641, {	-- Seekers of Corruption
-						["lvl"] = 120,
-						["coord"] = { 72.9, 48.4, 1527 },
-						["provider"] = { "n", 155102 },	-- High Explorer Dellorah
-						["sourceQuest"] = 58640,	-- A Crack in the Armor
-					}),
-					q(58642, {	-- Shared Goals
-						["lvl"] = 120,
-						["coord"] = { 72.9, 48.4, 1527 },
-						["provider"] = { "n", 155102 },	-- High Explorer Dellorah
-						["sourceQuest"] = 58641,	-- Seekers of Corruption
 					}),
 					q(58288, {	-- The Sun King's Chosen
 						["lvl"] = 120,
@@ -392,11 +401,66 @@ _.ExpansionFeatures =
 			}),
 			n(-10079, {	-- Assault: Aqir Unearthed
 				n(-17, {	-- Quests
-					q(58606, {	-- A Bit of Investigation
+					-- Assault questline
+					q(57873, {	-- Word from Orsis
 						["lvl"] = 120,
-						["coord"] = { 27.9, 63.3, 1527 },
-						["provider"] = { "n", 164196 },	-- H'partho Ardoros
+						["coord"] = { 40.1, 21.3, 1527 },
+						["provider"] = { "n", 159544 },	-- Arik Scorpidsting
+					}),
+					q(57915, {	-- Search for Survivors
+						["lvl"] = 120,
+						["coord"] = { 40.8, 38.5, 1527 },
+						["provider"] = { "n", 154958 },	-- Laborer Mitchell
+						["sourceQuest"] = 57873,	-- Word from Orsis
+					}),
+					q(57955, {	-- To Ankhaten Harbor
+						["lvl"] = 120,
+						["coord"] = { 39.9, 45.2, 1527 },
+						["provider"] = { "n", 159560 },	-- Outrider Lashan
+						["sourceQuest"] = 57915,	-- Search for Survivors
+					}),
+					q(57954, {	-- Burn the Bodies
+						["lvl"] = 120,
+						["coord"] = { 24.5, 55.2, 1527 },
+						["provider"] = { "n", 159682 },	-- Tracker Samara
+						["sourceQuest"] = 57955,	-- To Ankhaten Harbor
+					}),
+					q(57956, {	-- Wastewander Hosts
+						["lvl"] = 120,
+						["coord"] = { 24.5, 55.2, 1527 },
+						["provider"] = { "n", 159682 },	-- Tracker Samara
+						["sourceQuest"] = 57955,	-- To Ankhaten Harbor
+					}),
+					q(57971, {	-- Ruins of Ammon
+						["lvl"] = 120,
+						["coord"] = { 24.4, 55.2, 1527 },
+						["provider"] = { "n", 159682 },	-- Tracker Samara
+						["sourceQuests"] = {
+							57954,	-- Burn the Bodies
+							57956,	-- Wastewander Hosts
+						},
+					}),
+					q(57969, {	-- Tend the Wounded
+						["lvl"] = 120,
+						["coord"] = { 27.9, 63.4, 1527 },
+						["provider"] = { "n", 159820 },	-- Mender Dyrin
 						["sourceQuest"] = 57971,	-- Ruins of Ammon
+					}),
+					q(57970, {	-- Ruinator Xok'nixx
+						["lvl"] = 120,
+						["coord"] = { 27.9, 63.4, 1527 },
+						["provider"] = { "n", 159820 },	-- Mender Dyrin
+						["sourceQuest"] = 57971,	-- Ruins of Ammon
+					}),
+					q(57990, {	-- Obelisk of the Sun
+						["lvl"] = 120,
+						["coord"] = { 27.9, 63.4, 1527 },
+						["provider"] = { "n", 159820 },	-- Mender Dyrin
+						["sourceQuests"] = {
+							58606,	-- A Bit of Investigation
+							57970,	-- Ruinator Xok'nixx
+							57969,	-- Tend the Wounded
+						},
 					}),
 					q(58008, {	-- All Gassed Up
 						["lvl"] = 120,
@@ -410,11 +474,21 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 159920 },	-- Zahra Sandstalker
 						["sourceQuest"] = 159820,	-- Obelisk of the Sun
 					}),
-					q(57954, {	-- Burn the Bodies
+					q(58009, {	-- To the Moon
 						["lvl"] = 120,
-						["coord"] = { 24.5, 55.2, 1527 },
-						["provider"] = { "n", 159682 },	-- Tracker Samara
-						["sourceQuest"] = 57955,	-- To Ankhaten Harbor
+						["coord"] = { 42.4, 55.9, 1527 },
+						["provider"] = { "n", 159920 },	-- Zahra Sandstalker
+						["sourceQuests"] = {
+							58008,	-- All Gassed Up
+							56576,	-- Aqir Extermination
+						},
+					}),
+					-- Dailies
+					q(58606, {	-- A Bit of Investigation
+						["lvl"] = 120,
+						["coord"] = { 27.9, 63.3, 1527 },
+						["provider"] = { "n", 164196 },	-- H'partho Ardoros
+						["sourceQuest"] = 57971,	-- Ruins of Ammon
 					}),
 					q(58778, {	-- Getting Ahead
 						["lvl"] = 120,
@@ -434,42 +508,11 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "n", 154443 },	-- Captain Navid Sandstone
 					}),
-					q(57990, {	-- Obelisk of the Sun
-						["lvl"] = 120,
-						["coord"] = { 27.9, 63.4, 1527 },
-						["provider"] = { "n", 159820 },	-- Mender Dyrin
-						["sourceQuests"] = {
-							58606,	-- A Bit of Investigation
-							57970,	-- Ruinator Xok'nixx
-							57969,	-- Tend the Wounded
-						},
-					}),
 					q(58777, {	-- Put Your Foot Down
 						["lvl"] = 120,
 						["coord"] = { 40.0, 21.3, 1527 },
 						["isDaily"] = true,
 						["provider"] = { "n", 159920 },	-- Zahra Sandstalker
-					}),
-					q(57970, {	-- Ruinator Xok'nixx
-						["lvl"] = 120,
-						["coord"] = { 27.9, 63.4, 1527 },
-						["provider"] = { "n", 159820 },	-- Mender Dyrin
-						["sourceQuest"] = 57971,	-- Ruins of Ammon
-					}),
-					q(57971, {	-- Ruins of Ammon
-						["lvl"] = 120,
-						["coord"] = { 24.4, 55.2, 1527 },
-						["provider"] = { "n", 159682 },	-- Tracker Samara
-						["sourceQuests"] = {
-							57954,	-- Burn the Bodies
-							57956,	-- Wastewander Hosts
-						},
-					}),
-					q(57915, {	-- Search for Survivors
-						["lvl"] = 120,
-						["coord"] = { 40.8, 38.5, 1527 },
-						["provider"] = { "n", 154958 },	-- Laborer Mitchell
-						["sourceQuest"] = 57873,	-- Word from Orsis
 					}),
 					q(58779, {	-- Taking the Skies
 						["lvl"] = 120,
@@ -477,32 +520,11 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "n", 159920 },	-- Zahra Sandstalker
 					}),
-					q(57969, {	-- Tend the Wounded
-						["lvl"] = 120,
-						["coord"] = { 27.9, 63.4, 1527 },
-						["provider"] = { "n", 159820 },	-- Mender Dyrin
-						["sourceQuest"] = 57971,	-- Ruins of Ammon
-					}),
 					q(58782, {	-- Things Left Behind
 						["lvl"] = 120,
 						["coord"] = { 40.1, 21.3, 1527 },
 						["isDaily"] = true,
 						["provider"] = { "n", 159544 },	-- Arik Scorpidsting
-					}),
-					q(57955, {	-- To Ankhaten Harbor
-						["lvl"] = 120,
-						["coord"] = { 39.9, 45.2, 1527 },
-						["provider"] = { "n", 159560 },	-- Outrider Lashan
-						["sourceQuest"] = 57915,	-- Search for Survivors
-					}),
-					q(58009, {	-- To the Moon
-						["lvl"] = 120,
-						["coord"] = { 42.4, 55.9, 1527 },
-						["provider"] = { "n", 159920 },	-- Zahra Sandstalker
-						["sourceQuests"] = {
-							58008,	-- All Gassed Up
-							56576,	-- Aqir Extermination
-						},
 					}),
 					q(56402, {	-- Wastewander Coins
 						["lvl"] = 120,
@@ -510,17 +532,6 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "n", 159560 },	-- Outrider Lashan
 						["sourceQuest"] = 57915,	-- Search for Survivors
-					}),
-					q(57956, {	-- Wastewander Hosts
-						["lvl"] = 120,
-						["coord"] = { 24.5, 55.2, 1527 },
-						["provider"] = { "n", 159682 },	-- Tracker Samara
-						["sourceQuest"] = 57955,	-- To Ankhaten Harbor
-					}),
-					q(57873, {	-- Word from Orsis
-						["lvl"] = 120,
-						["coord"] = { 40.1, 21.3, 1527 },
-						["provider"] = { "n", 159544 },	-- Arik Scorpidsting
 					}),
 					q(56889, {	-- Wounded Wastewanderers
 						["lvl"] = 120,
@@ -748,6 +759,40 @@ _.ExpansionFeatures =
 			}),
 			n(-10076, {	-- Assault: The Black Empire
 				n(-17, {	-- Quests
+					-- Lesser Visions dailies
+					q(58168, {	-- A Dark, Glaring Reality
+						["coord"] = { 56.69, 31.75, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["g"] = {
+							i(174288),	-- Breath of Everlasting Spirit (once a week)
+						},
+					}),
+					q(58151, {	-- Minions of N'Zoth
+						["coord"] = { 56.6, 31.7, 1527 },
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["isDaily"] = true,
+						["g"] = {
+							i(174288),	-- Breath of Everlasting Spirit (once a week)
+						},
+					}),
+					q(58156, {	-- Vanquishing the Darkness
+						["coord"] = { 56.6, 31.7, 1527 },
+						["isDaily"] = true, -- TODO:: probably a weekly
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["g"] = {
+							i(174288),	-- Breath of Everlasting Spirit (once a week)
+						},
+					}),
+					q(57874, {	-- Visions of a Dark Destiny -- is it still in game?
+						["lvl"] = 120,
+						["coord"] = { 56.6, 31.7, 1527 },
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["g"] = {
+							i(174288),	-- Breath of Everlasting Spirit (once a week)
+						},
+					}),
+					-- Dailies
 					q(58235, {	-- Anchors of the Black Empire
 						["coord"] = { 54.9, 32.7, 1527 },
 						["isDaily"] = true,
@@ -845,14 +890,6 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "n", 155099 },	-- High Priest Amet
 						["sourceQuest"] = 56472,	-- The Uldum Accord
-					}),
-					q(58156, {	-- Vanquishing the Darkness
-						["coord"] = { 56.6, 31.7, 1527 },
-						["isDaily"] = true, -- TODO:: probably a weekly
-						["provider"] = { "n", 160252 },	-- Blacktalon Agent
-						["g"] = {
-							i(174288),	-- Breath of Everlasting Spirit
-						},
 					}),
 					q(58231, {	-- Wisdom From Madness
 						["coord"] = { 54.6, 32.8, 1527 },
@@ -1140,7 +1177,7 @@ _.ExpansionFeatures =
 					i(174758),	-- Voidwarped Relic Fragment
 				}),
 			}),
-			n(-10072, {    -- N'Zoth Assault
+			n(-10072, {	-- N'Zoth Assault
 				n(-4,     {	-- Achievements
 					ach(14159, {		-- Combating the Corruption
 						crit(1, {	-- 	Corrupted Acolyte slain
@@ -1544,14 +1581,6 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
-					q(58168, {	-- A Dark, Glaring Reality
-						["coord"] = { 56.69, 31.75, 1530 },
-						["isDaily"] = true,
-						["provider"] = { "n", 160252 },	-- Blacktalon Agent
-						["g"] = {
-							i(174288),	-- Breath of Everlasting Spirit
-						},
-					}),
 					q(58879, {	-- Alpaca It Up
 						["cost"] = { { "i", 174858, 7 }, },	-- Gersahl Greens
 						["isDaily"] = true,
@@ -1582,13 +1611,6 @@ _.ExpansionFeatures =
 							}),
 						},
 					}),
-					q(58283, {	-- Blind Leading the Blind
-						["lvl"] = 120,
-						["coord"] = { 54.6, 32.8, 1527 },
-						["isDaily"] = true,
-						["provider"] = { "n", 155099 },	-- High Priest Amet
-						["sourceQuest"] = 56472,	-- The Uldum Accord
-					}),
 					q(56377, {	-- Forging Onward
 						["lvl"] = 120,
 						["coord"] = { 54.9, 33.1, 1527 },
@@ -1599,14 +1621,6 @@ _.ExpansionFeatures =
 						["coord"] = { 68.9, 52.7, 1527 },
 						["provider"] = { "n", 154532 },	-- Magni Bronzebeard
 						["sourceQuest"] = 57221,	-- Re-origination
-					}),
-					q(58151, {	-- Minions of N'Zoth
-						["coord"] = { 56.6, 31.7, 1527 },
-						["provider"] = { "n", 160252 },	-- Blacktalon Agent
-						["isDaily"] = true,
-						["g"] = {
-							currency(1755),	-- Coalescing Visions
-						},
 					}),
 					q(58097, {	-- Supplies from the Uldum Accord
 						["repeatable"] = true,
@@ -1643,14 +1657,6 @@ _.ExpansionFeatures =
 						["coord"] = { 47.0, 44.6, 1542 },
 						["provider"] = { "n", 154533 },	-- Magni Bronzebeard
 						["sourceQuest"] = 56209,	-- The Halls of Origination
-					}),
-					q(57874, {	-- Visions of a Dark Destiny
-						["lvl"] = 120,
-						["coord"] = { 56.6, 31.7, 1527 },
-						["provider"] = { "n", 160252 },	-- Blacktalon Agent
-						["g"] = {
-							currency(1755),	-- Coalescing Visions
-						},
 					}),
 				}),
 				n(-16,    {	-- Rares

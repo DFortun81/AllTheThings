@@ -2038,6 +2038,8 @@ _.NeverImplemented =
 		q(56135),	-- Vale of Eternal Blossoms - activated a celestial buff 2nd time (niuzao?)
 		q(59141),	-- Vale of Eternal Blossoms - triggered after turning in the Black Empire assault. Probably a loot lock trigger?
 		q(58512),	-- Grand Empress Shek'zara bonus roll
+		q(59060),	-- choosing Bitey McStabface as the name for your Aqir Hatchling
+
 		-- Horrific Visions
 		q(57841),	-- first horrific vision cleared as horde
 		q(58581),	-- first horrific vision cleared as horde
@@ -2069,6 +2071,7 @@ _.NeverImplemented =
 		57841, 58581 -- both triggered on the first run of the Vision of Orgrimmar after unlocking it, then killing Thrall immediately.
 						Possibly related to Mark of Boistrous Duty (Rank 1) dropping? Torn Page of Compendium, Vol. 1 (item 171353) as well? Need to run a few times to see if this is guaranteed or not
 		]]--
+
 		-- N'Zoth assaults
 		q(55689),	-- Uldum - Amathet cache
 		q(55690),	-- Uldum - Amathet cache
