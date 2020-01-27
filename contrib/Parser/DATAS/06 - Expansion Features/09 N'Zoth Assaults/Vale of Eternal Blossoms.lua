@@ -778,6 +778,11 @@ _.ExpansionFeatures =
 							i(174959),	-- Cache of the Mantid Swarm -- TODO: can contain all the Black Empire token items. maybe symlink here?
 						},
 					}),
+					q(57445, {	-- Chin's Noodle Cart
+						["lvl"] = 120,
+						["coord"] = { 29.14, 60.89, 1530 },
+						["isWorldQuest"] = true,
+					}),
 					q(57085, {	-- Empowered War Wagon
 						["lvl"] = 120,
 						["coord"] = { 11.0, 64.4, 1530 },
@@ -791,6 +796,11 @@ _.ExpansionFeatures =
 					q(57089, {	-- Mantid Hatchery
 						["lvl"] = 120,
 						["coord"] = { 06.0, 71.0, 1530 },
+						["isWorldQuest"] = true,
+					}),
+					q(57558, {	-- Mantid Hatchery
+						["lvl"] = 120,
+						["coord"] = { 6.49, 42.25, 1530 },
 						["isWorldQuest"] = true,
 					}),
 					q(57384, {	-- Mending Monstrosity
