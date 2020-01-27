@@ -725,6 +725,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 154677 },	-- Forgemaster Han <Repairs>
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
+					q(58754, {	-- Champions of the Swarm
+						["coord"] = { 44.7, 73.8, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
 					q(58756, {	-- Dread Menders
 						["coord"] = { 37.2, 79.2, 1530 },
 						["isDaily"] = true,
@@ -873,6 +879,11 @@ _.ExpansionFeatures =
 					q(57521, {	-- Empowered War Wagon
 						["lvl"] = 120,
 						["coord"] = { 09.0, 27.0, 1530 },
+						["isWorldQuest"] = true,
+					}),
+					q(57540, {	-- Kuchong Incubator
+						["lvl"] = 120,
+						["coord"] = { 18.58, 65.75, 1530 },
 						["isWorldQuest"] = true,
 					}),
 					q(57089, {	-- Mantid Hatchery
