@@ -48,10 +48,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(53344, {	-- Iconoclasm
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(52115, {	-- In the Shadow of the Kraken
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -438,6 +434,10 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+					}),
+					q(53344, {	-- Iconoclasm
+						["lvl"] = 120,
+						["isWorldQuest"] = true,
 					}),
 					q(52115, {	-- In the Shadow of the Kraken
 						["isWorldQuest"] = true,
