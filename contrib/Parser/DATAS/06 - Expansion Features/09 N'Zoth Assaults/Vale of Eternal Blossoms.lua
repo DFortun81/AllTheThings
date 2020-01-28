@@ -774,7 +774,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
 				}),
-				n(-16, {	-- Rares	-- Theory is that i(174855)	-- Bow of Calamity, and i(174226)	-- Paragon's Will drop from these as well.
+				n(-16, {	-- Rares	-- Theory is that i(174855)	-- Bow of Calamity drops from these as well.  Put the drops under common boss drop header when we get more info?
 					n(160825, {	-- Amber-Shaper Esh'ri
 						["questID"] = 58300,
 						["coord"] = { 20.0, 74.6, 1530 },
@@ -802,6 +802,9 @@ _.ExpansionFeatures =
 						["questID"] = 58305,
 						["coord"] = { 10.7, 41.0, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160876, {	-- Enraged Amber Elemental
 						["questID"] = 58306,
@@ -835,6 +838,9 @@ _.ExpansionFeatures =
 						["questID"] = 58310,
 						["coord"] = { 18.2, 09.9, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160867, {	-- Kzit'kovok
 						["questID"] = 58302,

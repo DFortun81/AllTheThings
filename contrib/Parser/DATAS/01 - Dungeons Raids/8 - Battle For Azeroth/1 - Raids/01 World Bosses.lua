@@ -89,11 +89,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(161419),	-- Kraulok's Claw
 				}),
 			}),
-			e(2378, {	-- Grand Empress Shek'zara -- TODO: need more info
+			e(2378, {	-- Grand Empress Shek'zara
 				["isWeekly"] = true,
+				["questID"] = 58705,	-- 58508 also triggers, maybe the bonus roll automatically?
 				["isRaid"] = true,
 				["cr"] = 154638,
 				["coord"] = { 5.9, 56.4, 1530 },
+				["maps"] = { 1530 },	-- Vale of Eternal Blossoms
 				["g"] = {
 					i(174243),	-- Guise of the Voracious Prowler
 					i(174234),	-- Maniacal Speaker's Cover
@@ -300,6 +302,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["isRaid"] = true,
 				["cr"] = 160970,
 				["coord"] = { 45.7, 16.1, 1527 },
+				["maps"] = 1527,	-- Uldum
 				["g"] = {
 					i(174258),	-- Greathelm of Indiscriminate Brutality
 					i(174250),	-- Psyche Tormentor's Visage
