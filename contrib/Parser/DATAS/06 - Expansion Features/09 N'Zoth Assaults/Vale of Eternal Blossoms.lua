@@ -51,6 +51,15 @@ _.ExpansionFeatures =
 							i(174288),	-- Breath of Everlasting Spirit (once a week)
 						},
 					}),
+					q(58155, {	-- A Hand in the Dark
+						["coord"] = { 84.2, 51.7, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 160252 },
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors (is it really a prereq? should it be on all lesser visions quest?)
+						["g"] = {
+							i(174288),	-- Breath of Everlasting Spirit (once a week)
+						},
+					}),
 					-- Dailies
 					q(58420, {	-- A Foul Annoyance
 						["coord"] = { 44.7, 73.8, 1530 },
@@ -62,12 +71,6 @@ _.ExpansionFeatures =
 						["coord"] = { 66.9, 39.8, 1530 },
 						["isDaily"] = true,
 						["provider"] = { "n", 161405 },	-- Taoshi
-						["sourceQuest"] = 56771,	-- Time-Lost Warriors
-					}),
-					q(58155, {	-- A Hand in the Dark
-						["coord"] = { 84.2, 51.7, 1530 },
-						["isDaily"] = true,
-						["provider"] = { "n", 160252 },
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
 					q(58471, {	-- Aggressive Notation

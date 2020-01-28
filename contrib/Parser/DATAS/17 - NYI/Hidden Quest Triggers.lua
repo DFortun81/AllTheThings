@@ -2069,7 +2069,7 @@ _.NeverImplemented =
 		q(58578),	-- looted the chest from cleansing the Dwarven District at the end of the scenario (could possibly be from looting "Spark of Inspiration" Rank 2)
 		q(58579),	-- looted the Overflowing Azerite Geode (Rank 1)
 		--[[
-		q(57845)	-- got it when looting Valley of Spirits chest with Fear and Flesh quest book and Sparks of Unwavering Strength so could be anything. it was also my first bonus chest ever
+		q(57845)	-- probably triggers when looting first chest after clearing two corrupted areas + boss
 		58840 - looted the chest in front of zekhan. Torn Page of Compednium, Vol.II and Sparks of Unwavering Strength dropped
 		57841, 58581 -- both triggered on the first run of the Vision of Orgrimmar after unlocking it, then killing Thrall immediately.
 						Possibly related to Mark of Boistrous Duty (Rank 1) dropping? Torn Page of Compendium, Vol. 1 (item 171353) as well? Need to run a few times to see if this is guaranteed or not

@@ -541,15 +541,6 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(-16, {	-- Rares
-					n(155703, {	-- Anq'uri the Titanic
-						["questID"] = 56834,
-						["coord"] = { 32.4, 64.6, 1527 },
-						["isDaily"] = true,
-						["g"] = {
-							i(174224),	-- Greatsword of Cruelty
-							i(174227),	-- Writhing Feeler
-						},
-					}),
 					n(154578, {	-- Aqir Flayer
 						["questID"] = 58612,
 						["isDaily"] = true,
@@ -785,9 +776,16 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(57874, {	-- Visions of a Dark Destiny -- is it still in game?
-						["lvl"] = 120,
 						["coord"] = { 56.6, 31.7, 1527 },
 						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["g"] = {
+							i(174288),	-- Breath of Everlasting Spirit (once a week)
+						},
+					}),
+					q(58155, {	-- A Hand in the Dark
+						["coord"] = { 56.6, 31.7, 1527 },
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["isDaily"] = true,
 						["g"] = {
 							i(174288),	-- Breath of Everlasting Spirit (once a week)
 						},
@@ -1106,6 +1104,11 @@ _.ExpansionFeatures =
 					}),
 					q(57620, {	-- Call of the Void
 						["lvl"] = 120,
+						["isWorldQuest"] = true,
+					}),
+					q(58216, {	-- Consuming Maw
+						["lvl"] = 120,
+						["coord"] = { 60.13, 45.58, 1527 },
 						["isWorldQuest"] = true,
 					}),
 					q(58256, {	-- Consuming Maw
@@ -1667,6 +1670,15 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(-16,    {	-- Rares
+					n(155703, {	-- Anq'uri the Titanic
+						["questID"] = 56834,
+						["coord"] = { 32.4, 64.6, 1527 },
+						["isDaily"] = true,
+						["g"] = {
+							i(174224),	-- Greatsword of Cruelty
+							i(174227),	-- Writhing Feeler
+						},
+					}),
 					n(157134, {	-- Ishak of the Four Winds
 						["questID"] = 57259,
 						["coord"] = { 73.9, 83.5, 1527 },
