@@ -1554,7 +1554,9 @@ _.NeverImplemented =
 		q(54879),	-- Opening a Darkshore chest
 		q(54880),	-- Opening a Darkshore chest
 		q(54881),	-- Opening a Darkshore chest
+		q(54910),	-- Opening a Darkshore chest
 		q(54911),	-- Opening a Darkshore chest
+		q(54912),	-- Opening a Darkshore chest
 		q(53534),	-- when entering The Necropolis for the first time during "The Necropolis"
 		q(49695),	-- immediately after channeling on the drum finishes during "A Tribute For Death"
 		q(49367, {	-- when returning to Zo'bal Ruins during "We'll Meet Again"
