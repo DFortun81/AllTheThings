@@ -97,7 +97,6 @@ _.ExpansionFeatures =
 				["g"] = {
 					n(-6015, {				-- Rewards	-- temporary grouping until we figure out how these are best organized
 						n(-10081, {			-- Corrupted Area
-							i(175053),			-- Ranged Veterans Contract (so far it only dropped from Garona chest?)
 						}),
 						n(-10082, {			-- Lost Area
 							n(155098,  {		-- Rexxar
@@ -118,6 +117,13 @@ _.ExpansionFeatures =
 						i(174461),	-- Swirling Black Bottle (pet) -- thrall
 						i(174646),	-- Void-Link Frostwolf Collar (pet) - thrall
 						i(173726),	-- Box With Faintly Glowing "Air" Holes (pet) - Zekhan
+
+						i(175054),	-- Melee Veterans Contract
+						i(175052),	-- Mounted Veterans Contract
+						i(175053),	-- Ranged Veterans Contract
+						i(174891),	-- Veteran Rajani Spakcallers Contract
+						i(174890),	-- Veteran Ramkahen Lancers Contract
+						i(175056),	-- Waterborne Veterans Contract
 					}),
 				},
 			}),
