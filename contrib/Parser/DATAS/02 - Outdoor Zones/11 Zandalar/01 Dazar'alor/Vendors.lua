@@ -185,6 +185,10 @@ _.Zones =
 						}),
 						i(173995, {	-- Venture Co 'Salvage'
 							["cost"] = { { "c", 1710, 50 }, },	-- 50 Seafarer's Dubloons
+							["sym"] = {
+								{"sub", "islandexpeditions_sets", -45, -3327 },	-- Mail / Dragonrider Set
+								{"sub", "islandexpeditions_sets", -45, -3328 },	-- Mail / Saurok Set
+							},
 						}),
 					},
 				}),
@@ -485,8 +489,9 @@ _.Zones =
 						i(166464, {	-- Rubyshell Krolusk (MOUNT!)
 							["cost"] = { { "c", 1716, 200 }, },	-- 200x Honorbound Service Medal
 						}),
-						i(166436, {	-- Sandy Nightsaber
+						i(174373, {	-- Sandy Nightsaber
 							["cost"] = { { "c", 1716, 350 }, },	-- 350x Honorbound Service Medal
+							["sourceQuest"] = 57959,	-- Heroic Warfront: The Battle for Darkshore
 						}),
 						i(166752, {	-- Stone Guard's Bladed Cloak
 							["cost"] = { { "c", 1716, 75 }, },	-- 75x Honorbound Service Medal

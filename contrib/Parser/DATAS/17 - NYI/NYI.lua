@@ -1977,7 +1977,6 @@ _.NeverImplemented =
 			},
 			["u"] = 1,
 		}))),
-		un(1, i(174373)),	-- Sandy nightsaber (unused version)
 		un(1, i(168673)),	-- keys to the silver mono-wheel (no mount in yet)
 		un(1, spell(215545)),	-- Fel Bat (Test) (Actual name of the Item)
 		un(1, model(17890, i(25596))), 	-- Peep's Whistle	 					(Never added in Game)
@@ -3934,6 +3933,4 @@ m(893),		-- Azuremyst Isle (Argus Opening)
 m(889),		-- Arcatraz - scenario map
 m(890),		-- Arcatraz - scenario map
 m(1338),	-- Darkshore (Tyrande's Ascension scenario)
-m(933),		-- Forge of Souls (Lightbound Draenei scenario map)
-m(1170),	-- Gorgrond (Mag'har scenario)
 };

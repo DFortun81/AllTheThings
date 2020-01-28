@@ -241,6 +241,7 @@ _.Zones =
 										["sourceQuest"] = 49698,	-- The Lightforged
 										["races"] = ALLIANCE_ONLY,
 										["lvl"] = 120,
+										["maps"] = { 933 },	-- Forge of Souls (Lightbound Draenei Scenario)
 									}),
 									q(50071, {	-- For the Light!
 										["provider"] = { "n", 130810 },	-- High Exarch Turalyon

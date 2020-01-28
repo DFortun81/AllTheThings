@@ -391,7 +391,12 @@ _.Mounts =
 		i(152793),	-- Russet Ruinstrider
 		i(168829),	-- Rustbolt Resistor
 		i(152791),	-- Sable Ruinstrider
-		i(166436),	-- Sandy Nightsaber
+		i(166436, {	-- Sandy Nightsaber (A)
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(174373, {	-- Sandy Nightsaber (H)
+			["races"] = HORDE_ONLY,
+		}),
 		i(143491, {	-- Shadowblade's Baneful Omen (Rogue)
 			["classes"] = { 4 },	-- Rogue
 		}),
