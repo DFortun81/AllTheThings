@@ -723,6 +723,7 @@ _.Zones =
 							["coord"] = { 46.1, 63.9, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57275,	-- Something in Your Mind
+							["cost"] = { { "i", 171176, 20 }, },	-- Shred of Insanity x20
 						}),
 					}),
 					n(-2,   {	-- Vendors
