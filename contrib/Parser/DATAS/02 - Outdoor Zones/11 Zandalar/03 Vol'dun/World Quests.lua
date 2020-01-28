@@ -603,6 +603,7 @@ _.Zones =
 						["g"] = {
 							crit(1, { -- Faithless slain with Vorrik's Bulwark
 								["achievementID"] = 13014, -- Vorrik's Champion
+								["races"] = HORDE_ONLY,
 							}),
 						},
 					}),
@@ -616,6 +617,7 @@ _.Zones =
 						["g"] = {
 							crit(2, { -- Faithless slain with Rakjan the Unbroken
 								["achievementID"] = 13014, -- Vorrik's Champion
+								["races"] = HORDE_ONLY,
 							}),
 						},
 					}),
