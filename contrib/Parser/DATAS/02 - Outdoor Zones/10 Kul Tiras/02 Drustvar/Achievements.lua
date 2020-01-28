@@ -253,6 +253,7 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(12579),		-- Tour of Duty: Drustvar
 				ach(12995, {	-- Treasures of Drustvar
 					o(297879, {	-- Bespelled Chest
 						["description"] = "Click the inactive torches.",

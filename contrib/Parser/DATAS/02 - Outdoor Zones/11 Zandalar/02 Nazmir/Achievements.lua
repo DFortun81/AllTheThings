@@ -274,6 +274,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 53782,	-- Mysteries of Death
 				}),
+				ach(12574),		-- Tour of Duty: Nazmir
 				ach(12771, {	-- Treasures of Nazmir
 					o(279260, {		-- Cleverly Disguised Chest
 						["questID"] = 49885,

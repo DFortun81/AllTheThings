@@ -67,6 +67,7 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(12577),		-- Tour of Duty: Tiragarde Sound
 				ach(12852, {	-- Treasures of Tiragarde Sound
 					o(279750, {	-- Hay Covered Chest [Localized]
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
