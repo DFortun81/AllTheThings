@@ -12600,7 +12600,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 			};
 			local worldMapIDs = {
 				{ 14 },		-- Arathi Highlands
-				{ 62 },		-- Darkshore
+				--{ 62 },	-- Darkshore does not need to be included as a separate mapID as it is contained in the the Kalimdor mapID
 				{
 					875,	-- Zandalar
 					{
