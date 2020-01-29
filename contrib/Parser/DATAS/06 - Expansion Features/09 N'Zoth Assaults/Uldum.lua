@@ -490,6 +490,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 164196 },	-- H'partho Ardoros
 						["sourceQuest"] = 57971,	-- Ruins of Ammon
 					}),
+					q(56550, {	-- Corpse Cleanup
+						["lvl"] = 120,
+						["coord"] = { 24.5, 55.2, 1527 },
+						["isDaily"] = true,
+						["provider"] = { "n", 159682 },	-- Tracker Samara
+					}),
 					q(58778, {	-- Getting Ahead
 						["lvl"] = 120,
 						["coord"] = { 40.0, 21.2, 1527 },
@@ -519,6 +525,12 @@ _.ExpansionFeatures =
 						["coord"] = { 40.0, 21.3, 1527 },
 						["isDaily"] = true,
 						["provider"] = { "n", 159920 },	-- Zahra Sandstalker
+					}),
+					q(58781, {	-- Terrors from the Deep
+						["lvl"] = 120,
+						["coord"] = { 40.1, 21.3, 1527 },
+						["isDaily"] = true,
+						["provider"] = { "n", 159544 },	-- Arik Scorpidsting
 					}),
 					q(58782, {	-- Things Left Behind
 						["lvl"] = 120,
