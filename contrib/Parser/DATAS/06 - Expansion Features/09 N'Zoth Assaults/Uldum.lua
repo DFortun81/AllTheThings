@@ -15,7 +15,7 @@ _.ExpansionFeatures =
 		},
 		["g"] = {
 			n(-10075, {	-- Assault: Amathet Advance
-				n(-17,  {	-- Quests
+				n(-17,	{	-- Quests
 					-- Assault questline
 					q(58636, {	-- Eyes on the Amathet
 						["lvl"] = 120,
@@ -179,7 +179,7 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
-				n(-16,  {	-- Rares
+				n(-16,	{	-- Rares
 					n(157170, {	-- Acolyte Taspu
 						["questID"] = 57281,
 						["coord"] = { 64.5, 25.6, 1527 },
@@ -312,7 +312,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 					}),
 				}),
-				n(-34,  {	-- World Quests
+				n(-34,	{	-- World Quests
 					q(55670, {	-- Amathet Raiding Fleet
 						["lvl"] = 120,
 						["coord"] = { 84.2, 55.6, 1527 },
@@ -395,12 +395,12 @@ _.ExpansionFeatures =
 						["isWorldQuest"] = true,
 					}),
 				}),
-				n(0, {	-- Zone Drops
+				n(0,	{	-- Zone Drops
 					i(174764),	-- Tol'vir Relic Fragment
 				}),
 			}),
 			n(-10079, {	-- Assault: Aqir Unearthed
-				n(-17, {	-- Quests
+				n(-17,	{	-- Quests
 					-- Assault questline
 					q(57873, {	-- Word from Orsis
 						["lvl"] = 120,
@@ -552,7 +552,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 159820 },	-- Mender Dyrin
 					}),
 				}),
-				n(-16, {	-- Rares
+				n(-16,	{	-- Rares
 					n(154578, {	-- Aqir Flayer
 						["questID"] = 58612,
 						["isDaily"] = true,
@@ -690,7 +690,7 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
-				n(-34, {	-- World Quests
+				n(-34,	{	-- World Quests
 					q(56308, {	-- Assault: Aqir Unearthed
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
@@ -758,6 +758,9 @@ _.ExpansionFeatures =
 						["coord"] = { 28.3, 65.6, 1527 },
 						["isWorldQuest"] = true,
 					}),
+				}),
+				n(0,	{	-- Zone Drops
+					i(174756),	-- Aqir Relic Fragment
 				}),
 			}),
 			n(-10076, {	-- Assault: The Black Empire
@@ -1200,7 +1203,7 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-10072, {	-- N'Zoth Assault
-				n(-4,     {	-- Achievements
+				n(-4,	{	-- Achievements
 					ach(14159, {		-- Combating the Corruption
 						crit(1, {	-- 	Corrupted Acolyte slain
 							["coords"] = {
@@ -1438,20 +1441,20 @@ _.ExpansionFeatures =
 						crit(3),	-- Assault: The Black Empire
 					}),
 				}),
-				f(101,    {	-- Battle Pets
+				f(101,	{	-- Battle Pets
 					pet(2863, {	-- Oasis Void-Duster
 					}),
 					pet(2864, {	-- Void-Scarred Locust
 					}),
 				}),
-				n(-38,    {	-- Professions
+				n(-38,	{	-- Professions
 					prof(356, {	-- Fishing
 						i(174456, {	-- Bottle of Gloop (pet)
 							["description"] = "Must be fishing in water currently affected by a N'Zoth assault.",
 						}),
 					}),
 				}),
-				n(-17,    {	-- Quests
+				n(-17,	{	-- Quests
 					i(174771, {	-- Shadowbarb Drone
 						q(58802, {	-- The Incredible Egg
 							["coord"] = { 20.8, 61.9, 1527 },
@@ -1681,7 +1684,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 56209,	-- The Halls of Origination
 					}),
 				}),
-				n(-16,    {	-- Rares
+				n(-16,	{	-- Rares
 					n(155703, {	-- Anq'uri the Titanic
 						["questID"] = 56834,
 						["coord"] = { 32.4, 64.6, 1527 },
@@ -1709,7 +1712,7 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
-				n(-2,     {	-- Vendors
+				n(-2,	{	-- Vendors
 					n(160714, {	-- Provisioner Qorra
 						["coord"] = { 55.1, 32.9, 1527 },
 						["g"] = {
@@ -1737,18 +1740,18 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
-				n(-10071, {	-- Visions of N'Zoth
+				n(-10071,	{	-- Visions of N'Zoth
 					["description"] = "Use the obelisk to see Uldum succumb to N'Zoth's corruption.",
 					["g"] = {
 						n(0, {	-- Zone Drops
-							i(174837),	-- Decaying Fusion Core (14 day timer on this. no sure what it is yet)
+							i(174837),	-- Decaying Fusion Core (14 day timer on this. use it at 78/65 during Amathet assault to get fast percentage)
 							i(171312),	-- Recipe: Void Focus
 							i(174491),	-- Tome of Unspeakable Delicacies
 							i(174462),	-- Void Cocoon
 						}),
 					},
 				}),
-				n(-34,    {	-- World Quests
+				n(-34,	{	-- World Quests
 					q(58743, {	-- Dune Buggy
 						-- pet battle
 						["lvl"] = 120,
@@ -1774,7 +1777,7 @@ _.ExpansionFeatures =
 						["isWorldQuest"] = true,
 					}),
 				}),
-				n(0, {	-- Zone Drops
+				n(0,	{	-- Zone Drops
 					i(174368),	-- Pattern: Unsettling Cragscale Boots
 					i(174369),	-- Pattern: Unsettling Cragscale Greaves
 					i(174366),	-- Pattern: Unsettling Dredged Leather Boots
