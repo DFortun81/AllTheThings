@@ -63,7 +63,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						},
 					}),
 					e(2369, {	-- The Prophet Skitra
-						["crs"] = { 157620 },
+						["crs"] = { 157238, 157620 },
 						["g"] = {
 							i(174279),	-- Encrypted Ny'alothan Text
 							i(172201),	-- Bloodstained Ritual Athame
