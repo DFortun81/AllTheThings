@@ -2156,5 +2156,11 @@ _.NeverImplemented =
 		q(58535),	--\
 		q(58536),	--| got these three after defeating Il'gynoth, getting Gift of Flesh achievement (wing clear?) and looting [Encrypted Ny'alothian Text]x4
 		q(59564),	--/ so probably need more data to find out what's what here
+		
+		-- World Bosses
+		q(58510),	-- Vuk'laz the Earthbreaker first kill??
+		q(58514),	-- Vuk'laz the Earthbreaker bonus roll
+		q(58508),	-- Grand Empress Shek'zara first kill??
+		--q(58770),	-- Grand Empress Shek'zara bonus roll
 	}),
 };
