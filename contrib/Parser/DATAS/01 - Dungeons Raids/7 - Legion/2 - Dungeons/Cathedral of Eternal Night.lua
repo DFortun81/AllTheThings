@@ -17,6 +17,10 @@ _.Instances = { tier(7, {	-- Legion
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
+				q(46844, {	-- Cathedral of Eternal Night: Mistress of Blades
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 				q(46865, {	-- Cathedral of Eternal Night: Mother of Flame
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
