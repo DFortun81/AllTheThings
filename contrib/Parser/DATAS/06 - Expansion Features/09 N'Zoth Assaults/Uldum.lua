@@ -571,6 +571,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["coord"] = { 39.3, 36.8, 1527 },
 						["g"] = {
+							i(174224),	-- Greatsword of Cruelty
 							i(174227),	-- Writhing Feeler
 						},
 					}),
@@ -598,8 +599,9 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174769),	-- Malevolent Drone
-							i(174227),	-- Writhing Feeler
 							i(174224),	-- Greatsword of Cruelty
+							i(174222),	-- Unspeakable Bloodletter
+							i(174227),	-- Writhing Feeler
 						},
 					}),
 					n(162163, {	-- High Priest Ytaessis
@@ -610,6 +612,10 @@ _.ExpansionFeatures =
 							{ 46.8, 58.2, 1527 },
 							{ 45.7, 56.0, 1527 },
 							{ 43.8, 57.8, 1527 },
+						},
+						["g"] = {
+							i(174224),	-- Greatsword of Cruelty
+							i(174222),	-- Unspeakable Bloodletter
 						},
 					}),
 					n(155531, {	-- Infested Wastewander Captain
@@ -627,6 +633,7 @@ _.ExpansionFeatures =
 						["coord"] = { 34.67, 18.90, 1527 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174224),	-- Greatsword of Cruelty
 							i(174475),	-- Stinky Sack (pet)
 							i(174227),	-- Writhing Feeler
 						},
@@ -648,6 +655,7 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(174224),	-- Greatsword of Cruelty
 							i(174222),	-- Unspeakable Bloodletter
+							i(174227),	-- Writhing Feeler
 						},
 					}),
 					n(162173, {	-- R'krox the Runt
@@ -659,6 +667,7 @@ _.ExpansionFeatures =
 							{ 24.8, 6.5, 1527 },
 						},
 						["g"] = {
+							i(174224),	-- Greatsword of Cruelty
 							i(174227),	-- Writhing Feeler
 						},
 					}),
@@ -668,6 +677,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174476),	-- Black Chitinous Plate (pet)
+							i(174224),	-- Greatsword of Cruelty
 							i(174227),	-- Writhing Feeler
 						},
 					}),
@@ -676,6 +686,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["coord"] = { 33.7, 25.4, 1527 },
 						["g"] = {
+							i(174224),	-- Greatsword of Cruelty
 							i(174222),	-- Unspeakable Bloodletter
 							i(174227),	-- Writhing Feeler
 						},
@@ -1708,6 +1719,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174224),	-- Greatsword of Cruelty
+							i(174222),	-- Unspeakable Bloodletter
 							i(174227),	-- Writhing Feeler
 						},
 					}),
