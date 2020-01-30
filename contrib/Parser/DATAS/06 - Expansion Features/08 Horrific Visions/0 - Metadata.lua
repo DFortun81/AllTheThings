@@ -83,9 +83,14 @@ _.ExpansionFeatures =
 				n(160708, {	-- Mail Muncher
 					["description"] = "Click the mailbox!",
 					["coords"] = {
-						{ 40.0, 78.4, 1469 },
-						{ 52.8, 76.2, 1469 },
-						{ 60.2, 51.0, 1469 },
+						{ 40.0, 78.4, 1469 },	-- Org
+						{ 52.8, 76.2, 1469 },	-- Org
+						{ 60.2, 51.0, 1469 },	-- Org
+						--{ 60.2, 51.0, 1469 },	-- Org
+						{ 61.8, 75.6, 1470 },	-- Stormwind
+						{ 54.8, 57.8, 1470 },	-- Stormwind
+						{ 62.0, 30.6, 1470 },	-- Stormwind
+						--{ 62.0, 30.6, 1470 },	-- Stormwind
 					},
 					["g"] = {
 						i(174653),	-- Mail Muncher
