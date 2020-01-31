@@ -570,6 +570,7 @@ _.ExpansionFeatures =
 						["questID"] = 58614,
 						["isDaily"] = true,
 						["coord"] = { 39.3, 36.8, 1527 },
+						["description"] = "Spawns in the sand dunes between Orsis and the Ruins of Ammon.",
 						["g"] = {
 							i(174224),	-- Greatsword of Cruelty
 							i(174227),	-- Writhing Feeler
@@ -641,6 +642,7 @@ _.ExpansionFeatures =
 					}),
 					n(156078, {	-- Magus Rehleth
 						["questID"] = 56952,
+						["description"] = "Spawns in Ruins of Ammon.",
 						["coord"] = { 31.31, 66.01, 1527 },
 						["isDaily"] = true,
 						["g"] = {
