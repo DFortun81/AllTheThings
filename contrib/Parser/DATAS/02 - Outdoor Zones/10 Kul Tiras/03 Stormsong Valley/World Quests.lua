@@ -68,10 +68,6 @@ _.Zones =
 							i(163601),	-- Overgrown Anchor Weed (QI)
 						},	
 					}),
-					q(52936, {	-- Plagued Earth Policy
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53345, {	-- Plunder and Provisions
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -131,6 +127,10 @@ _.Zones =
 					q(52935, {	-- A New Era
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+					}),
+					q(52936, {	-- A New Era
+						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
 					q(51855, {	-- A Pirate's Life For Me
