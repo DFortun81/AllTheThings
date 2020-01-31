@@ -7,10 +7,12 @@ _.Zones =
 		m(942, {	-- Stormsong Valley
 			n(-4,   {	-- Achievement
 				ach(12940),		-- Adventurer of Stormsong Valley
+				ach(13047),		-- Clever Use of Mechanical Explosives
 				ach(13053, {	-- Deadliest Cache
 					["sourceQuests"] = { 52130 },	-- Deadliest Cache: Carpe Diem
 					["races"] = ALLIANCE_ONLY,
 				}),
+				ach(13045),		-- Every Day I'm Truffling
 				ach(13051, {	-- Legends of the Tidesages
 					crit(1, {	-- Legends of the Tidesages - Part 1
 						["coord"] = { 49.51, 80.90, 942 },
