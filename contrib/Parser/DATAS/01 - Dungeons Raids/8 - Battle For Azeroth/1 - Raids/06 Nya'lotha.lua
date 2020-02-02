@@ -22,6 +22,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 		},
 		["g"] = {
 			n(-1,  {	-- Common Boss Drop
+				i(171202),	-- Vantus Rune Technique: Ny'alotha, the Waking City(Rank 1)
+				i(171201),	-- Vantus Rune Technique: Ny'alotha, the Waking City(Rank 2)
+				i(171200),	-- Vantus Rune Technique: Ny'alotha, the Waking City(Rank 3)
 			}),
 			d(17, {	-- LFR
 				n(0, {	-- Zone Drops
