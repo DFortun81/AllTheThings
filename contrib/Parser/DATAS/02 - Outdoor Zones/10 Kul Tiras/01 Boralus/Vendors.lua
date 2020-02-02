@@ -311,19 +311,32 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						-- TODO: These crates rotate every week and contain 3-4 random items from the related island expedition. Should we map all the items here?
-						i(173950, {	-- Crestfall Salvage -- Confirmed and finished.
+						i(173950, {	-- Crestfall Salvage
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+							["sym"] = {
+								{"sub", "islandexpeditions_sets", -46, -3347 },	-- Plate / Black Tooth Grunt Set
+								{"sub", "islandexpeditions_sets", -46, -3337 },	-- Plate / Twilight Dragon Set
+							},
 							["g"] = {
+								-- Mounts
 								i(166468),	-- Bloodgorged Hunter
 								i(163583),	-- Craghorn Chasm-Leaper
 								i(163586),	-- Squawks
 								i(166470),	-- Stonehide Elderhorn
 								i(163585),	-- Surf Jelly
 								i(163584),	-- Twilight Avenger
+								-- Pets
+								i(163798),	-- Captain Nibs
+								i(169205),	-- Ghostly Whelpling
 							},
 						}),
 						i(173949, {	-- Dread Chain Salvage
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+							["sym"] = {
+								{"sub", "islandexpeditions_sets", -43, -3317 },	-- Cloth / Frostwind Set
+								{"sub", "islandexpeditions_sets", -44, -3322 },	-- Leather / Miststalker Set
+								{"sub", "islandexpeditions_sets", -46, -3334 },	-- Plate / Tomb-Keeper Set
+							},
 							["g"] = {
 								i(163583),	-- Craghorn Chasm-Leaper
 								i(163582),	-- Qinsho's Eternal Hound
@@ -332,54 +345,145 @@ _.Zones =
 						}),
 						i(173988, {	-- Havenswood Salvage
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+							["sym"] = {
+								{"sub", "islandexpeditions_sets", -43, -3340 },	-- Cloth / Dark Animator Set
+								{"sub", "islandexpeditions_sets", -43, -3341 },	-- Cloth / Duskhaven Set
+								{"sub", "islandexpeditions_sets", -43, -3318 },	-- Cloth / Faceless Follower Set
+							},
 							["g"] = {
+								-- Mounts
 								i(166466),	-- Risen Mare
+								i(166470),	-- Stonehide Elderhorn - wowhead
+								-- Pets
+								i(166494),	-- Lord Woofington
 							},
 						}),
-						i(173989, {	-- Jorundall Salvage - Confirmed and finished.
+						i(173989, {	-- Jorundall Salvage
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+							["sym"] = {
+								{"sub", "islandexpeditions_sets", -44, -3343 },	-- Leather / Choking Winter Set (Frosthoof)
+								{"sub", "islandexpeditions_sets", -44, -3342 },	-- Leather / Fallen Runelord Set
+								{"sub", "islandexpeditions_sets", -45, -3344 },	-- Mail / Frostsworn Bone Mail Set (Winterscale)
+								{"sub", "islandexpeditions_sets", -46, -3335 },	-- Plate / Bloodwake Set
+								{"sub", "islandexpeditions_sets", -46, -3345 },	-- Plate / Sanctified Scourgelord's Plate Set (Sleetguard)
+							},
 							["g"] = {
+								-- Mounts
 								i(166468),	-- Bloodgorged Hunter
 								i(166467),	-- Island Thunderscale
 								i(166470),	-- Stonehide Elderhorn
 								i(163585),	-- Surf Jelly
+								-- Pets
+								i(166499),	-- Thunderscale Whelpling
 							},
 						}),
-						i(173992, {	-- Skitting Hollow Salvage
+						i(173991, {	-- Rotting Mire Salvage
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
-						}),
-						i(173991, {	-- Rotting Mire Salvage -- Confirmed and finished.
-							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+							["sym"] = {
+								{"sub", "islandexpeditions_sets", -45, -3328 },	-- Mail / Saurok Set
+								{"sub", "islandexpeditions_sets", -46, -3333 },	-- Plate / Razorfin Set
+							},
 							["g"] = {
+								-- Mounts
 								i(166468),	-- Bloodgorged Hunter
 								i(163586),	-- Squawks
 								i(166470),	-- Stonehide Elderhorn
 								i(163585),	-- Surf Jelly
+								-- Pets
+								i(163799),	-- Barnaby
+								i(163798),	-- Captain Nibs
+							},
+						}),
+						i(173992, {	-- Skitting Hollow Salvage
+							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+							["sym"] = {
+								{"sub", "islandexpeditions_sets", -43, -3315 },	-- Cloth / Spider Acolyte Set - wowhead
+							},
+							["g"] = {
+								-- Mounts
+								i(163583),	-- Craghorn Chasm-Leaper - wowhead
+								i(166470),	-- Stonehide Elderhorn - wowhead
 							},
 						}),
 						i(173993, {	-- Snowblossom Salvage
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+							["sym"] = {
+								{"sub", "islandexpeditions_sets", -43, -3319 },	-- Cloth / Swarmfury Set
+								{"sub", "islandexpeditions_sets", -46, -3334 },	-- Plate / Tomb-Keeper's Set
+							},
+							["g"] = {
+								-- Mounts
+								i(163582),	-- Qinsho's Eternal Hound - wowhead
+								i(166470),	-- Stonehide Elderhorn - wowhead
+								-- Pets
+								i(169322),	-- Adventurous Hopling Pack
+							},
 						}),
 						i(173990, {	-- Molten Cay Salvage
 							["cost"] = { { "c", 1710, 120 }, },	-- 120x Seafarer's Dubloons
+							["sym"] = {
+								{"sub", "islandexpeditions_sets", -45, -3331 },	-- Mail / Voodoo Stalker Set - wowhead
+								{"sub", "islandexpeditions_sets", -45, -3326 },	-- Mail / Wild Marauder Set - wowhead
+								{"sub", "islandexpeditions_sets", -46, -3336 },	-- Plate / Rattling Bone Set - wowhead
+							},
+							["g"] = {
+								i(166470),	-- Stonehide Elderhorn - wowhead
+							},
 						}),
 						i(173994, {	-- Un'gol Ruins Salvage
 							["cost"] = { { "c", 1710, 120 }, },	-- 120 Seafarer's Dubloons
+							["sym"] = {
+								{"sub", "islandexpeditions_sets", -44, -3321 },	-- Leather / Tranquil Path Set
+								{"sub", "islandexpeditions_sets", -45, -3330 },	-- Mail / Headshrinker Set
+							},
+							["g"] = {
+								-- Mounts
+								i(166470),	-- Stonehide Elderhorn - wowhead
+								-- Toys
+								i(164375),	-- Bad Mojo Banana
+								i(164374),	-- Magic Monkey Banana
+								i(163795),	-- Oomgut Ritual Drum
+							},
 						}),
 						i(173996, {	-- Verdant Wilds Salvage
 							["cost"] = { { "c", 1710, 120 }, },	-- 120 Seafarer's Dubloons
+							["sym"] = {
+								{"sub", "islandexpeditions_sets", -44, -3324 },	-- Leather / Feralbark Set
+								{"sub", "islandexpeditions_sets", -44, -3320 },	-- Leather / Spiritbough Set
+							},
+							["g"] = {
+								-- Mounts
+								i(166470),	-- Stonehide Elderhorn - wowhead
+							},
 						}),
 						i(173997, {	-- Whispering Reef Salvage Salvage
 							["cost"] = { { "c", 1710, 120 }, },	-- 120 Seafarer's Dubloons
+							["sym"] = {
+								{"sub", "islandexpeditions_sets", -45, -3329 },	-- Mail / Mrrglurggl Set
+							},
+							["g"] = {
+								-- Mounts
+								i(166470),	-- Stonehide Elderhorn - wowhead
+								i(163823),	-- Coldlight Surfrunner - wowhead
+								i(163821),	-- Juvenile Brineshell - wowhead
+								-- Pets
+								i(163823),	-- Coldlight Surfrunner
+								i(163821),	-- Juvenile Brineshell
+							},
 						}),
 						i(173987, {	-- Elemental Salvage
 							["cost"] = { { "c", 1710, 75 }, },	-- 75 Seafarer's Dubloons
+							["sym"] = {
+								{"sub", "islandexpeditions_sets", -43, -3316 },	-- Cloth / Hydraxian Set - wowhead
+								{"sub", "islandexpeditions_sets", -44, -3325 },	-- Leather / Firekin Set - wowhead
+								{"sub", "islandexpeditions_sets", -44, -3323 },	-- Leather / Whirling Dervish Set - wowhead
+								{"sub", "islandexpeditions_sets", -46, -3332 },	-- Plate / Geocrag Set - wowhead
+							},
 						}),
 						i(173995, {	-- Venture Co 'Salvage'
 							["cost"] = { { "c", 1710, 50 }, },	-- 50 Seafarer's Dubloons
 							["sym"] = {
-								{"sub", "islandexpeditions_sets", -45, -3327 },	-- Mail / Dragonrider Set
-								{"sub", "islandexpeditions_sets", -45, -3328 },	-- Mail / Saurok Set
+								{"sub", "islandexpeditions_sets", -45, -3327 },	-- Mail / Dragonrider Set		
 							},
 						}),
 					},
