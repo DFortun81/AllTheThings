@@ -2143,6 +2143,7 @@ _.NeverImplemented =
 		q(59558),	-- kill Maut
 		q(58547),	-- kill skitra - probably triggers when first wing clears?
 		q(58548),	-- kill skitra - probably triggers when first wing clears?
+		q(58549),	-- kill skitra on heroic?
 		q(59559),	-- kill skitra - kill credit
 		q(59136),	-- after coming up the elevator after first wing. Likely the RP and respawn point reset
 		q(59561),	-- kill dark inquisitor xanesh
