@@ -674,8 +674,12 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(162140, {	-- Skikx'traz
-						--["questID"] = ,
-						--["coord"] = { , 1527 },
+						["questID"] = 58697,
+						["coords"] = {
+							{ 22.6, 61.4, 1527 },
+							{ 19.6, 63.0, 1527 },
+							{ 25.2, 59.6, 1527 },
+						},
 						["isDaily"] = true,
 						["g"] = {
 							i(174476),	-- Black Chitinous Plate (pet)
