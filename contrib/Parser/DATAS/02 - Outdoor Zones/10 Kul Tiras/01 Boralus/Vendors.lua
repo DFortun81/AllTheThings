@@ -377,6 +377,10 @@ _.Zones =
 						}),
 						i(173995, {	-- Venture Co 'Salvage'
 							["cost"] = { { "c", 1710, 50 }, },	-- 50 Seafarer's Dubloons
+							["sym"] = {
+								{"sub", "islandexpeditions_sets", -45, -3327 },	-- Mail / Dragonrider Set
+								{"sub", "islandexpeditions_sets", -45, -3328 },	-- Mail / Saurok Set
+							},
 						}),
 					},
 				}),

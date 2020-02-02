@@ -570,6 +570,7 @@ _.Zones =
 						["isDaily"] = true,
 					}),
 					q(31443, {	-- Flying Tiger Gourami
+						["provider"] = { "i", 86542 },	-- Flying Tiger Gourami
 						["requireSkill"] = 356,
 						["isDaily"] = true,
 						["description"] = "Found while fishing in any inland body of water on Pandaria",
