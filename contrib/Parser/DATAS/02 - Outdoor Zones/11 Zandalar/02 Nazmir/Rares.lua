@@ -315,6 +315,11 @@ _.Zones =
 						},
 					}),
 				}),
+				n(134002, {	-- Underlord Xerxiz
+					["description"] = "This rare is only up when its associated world quest is active.",
+					["questID"] = 50480,
+					["coord"] = { 55.2, 57.8, 863 },
+				}),
 				o(282666, {	-- Urn of Agussu
 					["questID"] = 50888,
 					["coord"] = { 38.1, 57.6, 863 },
