@@ -27,7 +27,6 @@ _.Zones =
 						["sourceQuest"] = 27328,	-- Grimtotem Chiefs: The Chief of Chiefs
 					}),
 					crit(4, {	-- Mind the Drop
-						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 28098,	-- The Twilight Skymaster
 					}),
 					crit(5, {	-- The Evil You Know (A)
