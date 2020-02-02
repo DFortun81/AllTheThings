@@ -118,11 +118,15 @@ _.ExpansionFeatures =
 						i(38663),	-- Blood-Soaked Saronite Plated Spaulders
 						i(38667),	-- Bloodbane's Gauntlets of Command
 						i(140538),	-- Broadaxe of the Ebon Blade
+						i(174485),	-- Burning Greatsword of the Ebon Blade
+						i(174662),	-- Burning Saber of the Ebon Blade
 						i(143727, {	-- Champion's Salute (TOY!)
 							["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
 						}),
 						i(34657),	-- Choker of Damnation
 						i(38147),	-- Corrupted Band
+						i(174486),	-- Crimson Greatsword of the Ebon Blade
+						i(174659),	-- Crimson Saber of the Ebon Blade
 						i(140935, {	-- Deathlord's Armor Kit
 							["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
 						}),
@@ -157,6 +161,8 @@ _.ExpansionFeatures =
 							["cost"] = 5000000,	-- 500g
 						}),
 						i(38669),	-- Engraved Saronite Legplates
+						i(174488),	-- Freezing Greatsword of the Ebon Blade
+						i(174660),	-- Freezing Saber of the Ebon Blade
 						i(38633),	-- Greataxe of the Ebon Blade
 						i(38661),	-- Greathelm of the Scourge Champion
 						i(38632),	-- Greatsword of the Ebon Blade
@@ -176,6 +182,8 @@ _.ExpansionFeatures =
 						i(38664),	-- Sky Darkener's Shroud of the Unholy
 						i(38674),	-- Soul Harvester's Charm
 						i(38668),	-- The Plaguebringer's Girdle
+						i(174487),	-- Unholy Greatsword of the Ebon Blade
+						i(174661),	-- Unholy Saber of the Ebon Blade
 						i(38671),	-- Valanar's Signet Ring
 						i(140554),	-- Warsword of the Ebon Blade
 						i(40775, {	-- Winged Steed of the Ebon Blade (MOUNT!)
