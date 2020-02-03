@@ -1057,7 +1057,7 @@ _.Zones =
 					},
 				}),
 				n(148228, {	-- Marvin Sipsquall <Shirt Vendor>
-					["coord"] = { 56.4, 26.9, 1161 },
+					["coord"] = { 76.8, 11.6, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(42365),	-- Amber Filigreed Doublet
