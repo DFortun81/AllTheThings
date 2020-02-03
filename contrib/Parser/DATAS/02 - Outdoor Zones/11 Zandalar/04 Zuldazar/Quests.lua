@@ -1560,6 +1560,12 @@ _.Zones =
 					},
 				}),
 				-- Start How to Train Your Direhorn Crit 4
+				q(55249, {	-- Away From the Herd
+					["coord"] = { 68.2, 41.8, 862 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+					["provider"] = { "n", 151286 },	-- Child of Torcali
+				}),
 				q(55462, { 	-- The Wanderer's Call
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 151999 },	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
