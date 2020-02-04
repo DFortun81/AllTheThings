@@ -12,21 +12,65 @@ _.ExpansionFeatures =
 			1548,	-- Mogu'Shan Vaults (The Engine of Nalak'sha scenario)
 			1549,	-- Mogu'Shan Vaults (The Engine of Nalak'sha scenario)
 			1570,	-- Vale of Eternal Blossoms
-			1579,	-- Vale of Eternal Blossoms - underground area
+			1579,	-- Vale of Eternal Blossoms - Pools Of Power - underground area
 		},
 		["g"] = {
 			n(-10076, {	-- Assault: The Black Empire
 				n(-17,	{	-- Quests
-					q(58468, {	-- A Growing Darkness
-						["coord"] = { 66.9, 39.8, 1530 },
+					-- Lesser Visions dailies
+					q(58168, {	-- A Dark, Glaring Reality
+						["coord"] = { 84.2, 51.7, 1530 },
 						["isDaily"] = true,
-						["provider"] = { "n", 161405 },	-- Taoshi
-						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["g"] = {
+							i(174288),	-- Breath of Everlasting Spirit (once a week)
+						},
+					}),
+					q(58161, {	-- Minions of N'Zoth
+						["coord"] = { 84.2, 51.7, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["g"] = {
+							i(174288),	-- Breath of Everlasting Spirit (once a week)
+						},
+					}),
+					q(58167, {	-- Preventative Measures
+						["coord"] = { 84.2, 51.7, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["g"] = {
+							i(174288),	-- Breath of Everlasting Spirit (once a week)
+						},
+					}),
+					q(58156, {	-- Vanquishing the Darkness
+						["coord"] = { 84.2, 51.7, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors (is it really a prereq? should it be on all lesser visions quest?)
+						["g"] = {
+							i(174288),	-- Breath of Everlasting Spirit (once a week)
+						},
 					}),
 					q(58155, {	-- A Hand in the Dark
 						["coord"] = { 84.2, 51.7, 1530 },
 						["isDaily"] = true,
 						["provider"] = { "n", 160252 },
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors (is it really a prereq? should it be on all lesser visions quest?)
+						["g"] = {
+							i(174288),	-- Breath of Everlasting Spirit (once a week)
+						},
+					}),
+					-- Dailies
+					q(58420, {	-- A Foul Annoyance
+						["coord"] = { 44.7, 73.8, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
+					q(58468, {	-- A Growing Darkness
+						["coord"] = { 66.9, 39.8, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 161405 },	-- Taoshi
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
 					q(58471, {	-- Aggressive Notation
@@ -40,6 +84,78 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "n", 156003 },	-- Lorewalker Cho
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						["g"] = {
+							n(-851, {	-- Black Empire Cache placeholder
+								["coords"] = {
+									{ 52.7, 39.7, 1530 },	-- 57197
+									{ 53.9, 41.8, 1530 },	-- 57197
+									{ 46.4, 33.0, 1530 },	-- 57199
+									{ 62.6, 57.1, 1530 },	-- 57200
+									{ 65.9, 59.7, 1530 },	-- 57200
+									{ 62.0, 51.6, 1530 },	-- 57200
+									{ 57.3, 41.7, 1530 },	-- 57200
+									{ 81.3, 33.8, 1530 },	-- 57201
+									{ 77.1, 63.6, 1530 },	-- 57201
+									{ 70.2, 53.7, 1530 },	-- 57201
+									{ 68.7, 58.8, 1530 },	-- 57202
+									{ 68.3, 62.5, 1530 },	-- 57202
+									{ 42.4, 68.5, 1530 },	-- 57203
+									{ 51.2, 63.3, 1530 },	-- 57203
+									{ 47.9, 71.0, 1530 },	-- 57203
+								},
+								--[[o(, {	-- Black Empire Cache
+									["questID"] = 57197,
+									["isDaily"] = true,
+									["coords"] = {
+										{ 52.7, 39.7, 1530 },
+										{ 53.9, 41.8, 1530 },
+									},
+								}),
+								o(, {	-- Black Empire Cache
+									["questID"] = 57199,
+									["isDaily"] = true,
+									["coords"] = {
+										{ 46.4, 33.0, 1530 },
+										{ 09.1, 52.8, 1579 },
+									},
+								}),
+								o(, {	-- Black Empire Cache
+									["questID"] = 57200,
+									["isDaily"] = true,
+									["coords"] = {
+										{ 62.6, 57.1, 1530 },
+										{ 65.9, 59.7, 1530 },
+										{ 62.0, 51.6, 1530 },
+									},
+								}),
+								o(, {	-- Black Empire Cache
+									["questID"] = 57201,
+									["isDaily"] = true,
+									["coords"] = {
+										{ 81.3, 33.8, 1530 },
+										{ 77.1, 63.6, 1530 },
+										{ 70.2, 53.7, 1530 },
+									},
+								}),
+								o(, {	-- Black Empire Cache
+									["questID"] = 57202,
+									["isDaily"] = true,
+									["coords"] = {
+										{ 68.7, 58.8, 1530 },
+										{ 68.3, 62.5, 1530 },
+									},
+								}),
+								o(, {	-- Black Empire Cache
+									["questID"] = 57203,
+									["isDaily"] = true,
+									["coords"] = {
+										{ 42.4, 68.5, 1530 },
+										{ 51.2, 63.3, 1530 },
+										{ 47.9, 71.0, 1530 },
+									},
+								}),]]
+							}),
+						},
 					}),
 					q(58465, {	-- Corruption Manifest
 						["coord"] = { 66.3, 40.6, 1530 },
@@ -52,6 +168,11 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "n", 161405 },	-- Taoshi
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
+					q(58460, {	-- Marshals of Madness
+						["coord"] = { 44.7, 73.8, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
 					}),
 					q(58595, {	-- Pillars of Oblivion
 						["coord"] = { 44.7, 73.8, 1530 },
@@ -77,6 +198,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 154261 },	-- Chi-Ji
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
+					q(58423, {	-- The Strongest Among Them
+						["coord"] = { 44.7, 73.8, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
 					q(58466, {	-- Torment From Beyond
 						["coord"] = { 66.3, 40.6, 1530 },
 						["isDaily"] = true,
@@ -94,15 +221,6 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "n", 154261 },	-- Chi-Ji
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
-					}),
-					q(58156, {	-- Vanquishing the Darkness
-						["coord"] = { 84.2, 51.7, 1530 },
-						["isDaily"] = true,
-						["provider"] = { "n", 160252 },
-						["sourceQuest"] = 56771,	-- Time-Lost Warriors
-						["g"] = {
-							i(174288),	-- Breath of Everlasting Spirit
-						},
 					}),
 				}),
 				n(-16,	{	-- Rares
@@ -190,61 +308,6 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 					}),
 				}),
-				--[[n(-212, {	-- Treasure Chest  -- Todo Find specific objects for each chest.  More coords.
-					--n(-851, {	-- Black Empire Cache
-						o(, {	-- Black Empire Cache
-							["questID"] = 57197,
-							["isDaily"] = true,
-							["coords"] = {
-								{ 52.7, 39.7, 1530 },
-								{ 53.9, 41.8, 1530 },
-							},
-						}),
-						o(, {	-- Black Empire Cache
-							["questID"] = 57199,
-							["isDaily"] = true,
-							["coords"] = {
-								{ 46.4, 33.0, 1530 },
-								{ 09.1, 52.8, 1579 },
-							},
-						}),
-						o(, {	-- Black Empire Cache
-							["questID"] = 57200,
-							["isDaily"] = true,
-							["coords"] = {
-								{ 62.6, 57.1, 1530 },
-								{ 65.9, 59.7, 1530 },
-								{ 62.0, 51.6, 1530 },
-							},
-						}),
-						o(, {	-- Black Empire Cache
-							["questID"] = 57201,
-							["isDaily"] = true,
-							["coords"] = {
-								{ 81.3, 33.8, 1530 },
-								{ 77.1, 63.6, 1530 },
-								{ 70.2, 53.7, 1530 },
-							},
-						}),
-						o(, {	-- Black Empire Cache
-							["questID"] = 57202,
-							["isDaily"] = true,
-							["coords"] = {
-								{ 68.7, 58.8, 1530 },
-								{ 68.3, 62.5, 1530 },
-							},
-						}),
-						o(, {	-- Black Empire Cache
-							["questID"] = 57203,
-							["isDaily"] = true,
-							["coords"] = {
-								{ 42.4, 68.5, 1530 },
-								{ 51.2, 63.3, 1530 },
-								{ 47.9, 71.0, 1530 },
-							},
-						}),
-					}),
-				}),]]
 				n(-34,	{	-- World Quests
 					q(56076, {	-- Abyssal Ritual
 						["lvl"] = 120,
@@ -328,11 +391,25 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(0,	{	-- Zone Drops
+					i(170553, {	-- Void Focus Splinter
+						["description"] = "The fastest way is to farm them inside Lesser Vision.",
+					}),
 					i(174758),	-- Voidwarped Relic Fragment
 				}),
 			}),
 			n(-10077, {	-- Assault: The Warring Clans
 				n(-17,  {	-- Quests
+					-- Assault questline
+					q(57067, {	-- Mogu at the Gates	-- showed up when the Warring Clans assault was up. is there a pre-req? 
+						["coord"] = { 44.7, 73.8, 1530 },
+						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+					}),
+					q(57068, {	-- Kite Surveillance
+						["coord"] = { 43.9, 4.9, 1530 },
+						["provider"] = { "n", 156297 },	-- Chen Stormstout
+						["sourceQuest"] = 57067,	-- Mogu at the Gates
+					}),
+					-- Dailies
 					q(57718, {	-- Bound in Stone
 						["coord"] = { 38.4, 75.1, 1530 },
 						["isDaily"] = true,
@@ -357,6 +434,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
+					q(58741, {	-- Cutting Stone
+						["coord"] = { 43.8, 71.8, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 154677 },	-- Forgemaster Han <Repairs>
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
 					q(58479, {	-- Lightning Crashes
 						["coord"] = { 44.7, 73.8, 1530 },
 						["isDaily"] = true,
@@ -369,10 +452,44 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
+					q(58487, {	-- Plunder the Plunderers
+						["coord"] = { 37.7, 79.3, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 161405 },	-- Taoshi
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+						["g"] = {
+							o(211807, {	-- Mogu Plunder placeholder
+								["coords"] = {	-- Treasure chests
+									{ 17.7, 12.6, 1530 },	-- 57206	250 coals
+									{ 20.5, 14.8, 1530 },	-- 57206	250 coals
+									{ 30.3, 37.6, 1530 },	-- 57208
+									{ 25.3, 27.6, 1530 },	-- 57208
+									{ 20.3, 18.5, 1530 },	-- 57209
+									{ 21.3, 13.9, 1530 },	-- 57209
+									{ 15.5, 64.5, 1530 },	-- 57211
+									{ 51.1, 63.4, 1530 },	-- 57212
+									{ 38.4, 70.3, 1530 },	-- 57213
+									{ 33.3, 69.9, 1530 },	-- 57213
+								},
+							}),
+						},
+					}),
+					q(58481, {	-- Rituals of Blood
+						["coord"] = { 38.4, 75.1, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 158673 },	-- Kun Autumnlight
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
 					q(57721, {	-- Spoils of War
 						["coord"] = { 43.9, 71.7, 1530 },
 						["isDaily"] = true,
 						["provider"] = { "n", 154677 },	-- Forgemaster Han
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
+					q(58740, {	-- Subjugated Serpents
+						["coord"] = { 38.4, 75.0, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 158674 },	-- Anji Autumnlight
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
 					q(58477, {	-- Through Blood and Dirt and Bone
@@ -388,6 +505,7 @@ _.ExpansionFeatures =
 						["coord"] = { 33.7, 68.6, 1530 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174229),	-- Lantern of the Damned
 							i(174840),	-- Xinlao
 						},
 					}),
@@ -395,11 +513,17 @@ _.ExpansionFeatures =
 						["questID"] = 58296,
 						["coord"] = { 16.8, 66.7, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174229),	-- Lantern of the Damned
+						},
 					}),
 					n(157287, {	-- Dokani Obliterator
 						["questID"] = 57349,
 						["coord"] = { 39.2, 59.6, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174229),	-- Lantern of the Damned
+						},
 					}),
 					n(157153, {	-- Ha-Li
 						["questID"] = 57344,
@@ -411,12 +535,16 @@ _.ExpansionFeatures =
 						},
 						["g"] = {
 							i(173887),	-- Clutch of Ha-Li
+							i(174229),	-- Lantern of the Damned
 						},
 					}),
 					n(157171, {	-- Heixi the Stonelord
 						["questID"] = 57347,
 						["coord"] = { 28.3, 40.5, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174229),	-- Lantern of the Damned
+						},
 					}),
 					n(157160, {	-- Houndlord Ren
 						["questID"] = 57345,
@@ -424,6 +552,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						-- TODO:: determine patrol path
 						["g"] = {
+							i(174229),	-- Lantern of the Damned
 							i(174841),	-- Ren's Stalwart Hound
 						},
 					}),
@@ -443,7 +572,7 @@ _.ExpansionFeatures =
 						i(174752),	-- Ivory Cloud Serpent
 					}),
 					n(157162, {	-- Rei Lun
-						["description"] = "Scale drops from the rare, turn the scale into the Rajani quartermaster for the mount!",
+						["description"] = "Scale drops from the rare.  Turn the scale into the Rajani provisioner for the mount.",
 						["questID"] = 57346,
 						["coord"] = { 21.9, 12.4, 1530 },
 						["isDaily"] = true,
@@ -452,6 +581,7 @@ _.ExpansionFeatures =
 								i(174649),	-- Rajani Warserpent
 							}),
 							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(174229),	-- Lantern of the Damned
 						},
 					}),
@@ -459,11 +589,17 @@ _.ExpansionFeatures =
 						["questID"] = 56954,
 						["coord"] = { 46.4, 57.2, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174229),	-- Lantern of the Damned
+						},
 					}),
 					n(157291, {	-- Spymaster Hul'ach
 						["questID"] = 57351,
 						["coord"] = { 17.9, 37.5, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174229),	-- Lantern of the Damned
+						},
 					}),
 					n(157279, {	-- Stormhowl
 						["questID"] = 57348,
@@ -492,6 +628,9 @@ _.ExpansionFeatures =
 						["coord"] = { 53.8, 48.9, 1530 },
 						--["coord"] = { 42.2, 43.5, 1530 }, -- NOTE: these were the previous coords. He may have permanently moved, or he has multiple spawn points
 						["isDaily"] = true,
+						["g"] = {
+							i(174229),	-- Lantern of the Damned
+						},
 					}),
 				}),
 				n(-34,  {	-- World Quests
@@ -517,9 +656,19 @@ _.ExpansionFeatures =
 						["coord"] = { 19.2, 72.0, 1530 },
 						["isWorldQuest"] = true,
 					}),
+					q(57339, {	-- Construction Ritual
+						["lvl"] = 120,
+						["coord"] = { 25.2, 17.2, 1530 },
+						["isWorldQuest"] = true,
+					}),
 					q(58370, {	-- Empowered Demolisher
 						["lvl"] = 120,
 						["coord"] = { 26.7, 16.9, 1530 },
+						["isWorldQuest"] = true,
+					}),
+					q(57171, {	-- Goldbough Guardian
+						["lvl"] = 120,
+						["coord"] = { 20.4, 12.6, 1530 },
 						["isWorldQuest"] = true,
 					}),
 					q(58334, {	-- Misfall in Flames
@@ -550,7 +699,7 @@ _.ExpansionFeatures =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
-					q(57101, {	-- Zan-tien serpent cage
+					q(57101, {	-- Zan-Tien Serpent Cage
 						["lvl"] = 120,
 						["coord"] = { 47.7, 21.5, 1530 },
 						["isWorldQuest"] = true,
@@ -562,10 +711,62 @@ _.ExpansionFeatures =
 			}),
 			n(-10078, {	-- Assault: The Endless Swarm
 				n(-17, {	-- Quests
+					-- Assault questline
+					q(56574, {	-- Reflections in Amber
+						["crs"] = {
+							160825,	-- Amber-Shaper Esh'ri
+							160872,	-- Destroyer Krox'tazar
+							160874,	-- Drone Keeper Ak'thet
+							160810,	-- Harbinger Il'koxik
+							160868,	-- Harrier Nir'verash
+							160826,	-- Hive-Guard Naz'ruzek
+							160930,	-- Infused Amber Ooze
+							160867,	-- Kzit'kovok
+							160922,	-- Needler Zhesalla
+						},
+						["description"] = "Quest item drops from many rares during Mantid Assault.",
+						["provider"] = { "i", 169888 },	-- Ooze-covered Amber
+					}),
+					q(56575, {	-- Once More Into Kor'vess
+						["coord"] = { 13.9, 77.2, 1530 },
+						["provider"] = { "n", 155487 },	-- Taoshi
+						["sourceQuest"] = 56574,	-- Reflections in Amber
+					}),
+					q(56647, {	-- The Mantid Threat
+						["lvl"] = 120,
+						["coord"] = { 12.2, 95.3, 422 },
+						["provider"] = { "n", 155487 },	-- Taoshi
+						["sourceQuest"] = 56645,	-- Heart of the Swarm
+					}),
+					-- Dailies
+					q(58760, {	-- Blades of Amber
+						["coord"] = { 43.8, 71.8, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 154677 },	-- Forgemaster Han <Repairs>
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
+					q(58754, {	-- Champions of the Swarm
+						["coord"] = { 44.7, 73.8, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
 					q(58756, {	-- Dread Menders
 						["coord"] = { 37.2, 79.2, 1530 },
 						["isDaily"] = true,
 						["provider"] = { "n", 161405 },	-- Taoshi
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
+					q(58758, {	-- Rampaging Destroyers
+						["coord"] = { 38.4, 75.0, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 158674 },	-- Anji Autumnlight
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
+					q(58765, {	-- Siege Breaker
+						["coord"] = { 38.4, 75.0, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 158674 },	-- Anji Autumnlight
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
 					q(58764, {	-- Standards of the Swarm
@@ -580,8 +781,20 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 158673 },	-- Kun Autumnlight
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
+					q(58762, {	-- Taken by the Swarm
+						["coord"] = { 38.4, 75.1, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 158673 },	-- Kun Autumnlight
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
+					q(58759, {	-- The Empress' Guard
+						["coord"] = { 37.2, 79.2, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 161405 },	-- Taoshi
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
 				}),
-				n(-16, {	-- Rares
+				n(-16, {	-- Rares	-- Theory is that i(174855)	-- Bow of Calamity drops from these as well.  Put the drops under common boss drop header when we get more info?
 					n(160825, {	-- Amber-Shaper Esh'ri
 						["questID"] = 58300,
 						["coord"] = { 20.0, 74.6, 1530 },
@@ -592,6 +805,14 @@ _.ExpansionFeatures =
 						["coord"] = { 6.5, 70.7, 1530 },
 						["isDaily"] = true,
 					}),
+					n(160893, {	-- Captain Vor'lek
+						["questID"] = 58308,
+						["coord"] = { 04.0, 60.8, 1530 },
+						["isDaily"] = true,
+						["g"] = {
+							i(174223),	-- Ooze-Imbued Rifle
+						},
+					}),
 					n(160872, {	-- Destroyer Krox'tazar
 						["questID"] = 58304,
 						["coord"] = { 26.7, 66.4, 1530 },
@@ -601,11 +822,17 @@ _.ExpansionFeatures =
 						["questID"] = 58305,
 						["coord"] = { 10.7, 41.0, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160876, {	-- Enraged Amber Elemental
 						["questID"] = 58306,
 						["coord"] = { 10.6, 40.6, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+						},
 					}),
 					n(160810, {	-- Harbinger Il'koxik
 						["questID"] = 58299,
@@ -617,10 +844,23 @@ _.ExpansionFeatures =
 						["coord"] = { 12.8, 51.3, 1530 },
 						["isDaily"] = true,
 					}),
+					n(160826, {	-- Hive-Guard Naz'ruzek
+						["questID"] = 58301,
+						["coord"] = { 21.1, 62.7, 1530 },
+						["isDaily"] = true,
+					}),
 					n(160930, {	-- Infused-Amber Ooze
 						["questID"] = 58312,
 						["coord"] = { 18.5, 66.5, 1530 },
 						["isDaily"] = true,
+					}),
+					n(160920, {	-- Kal'tik the Blight
+						["questID"] = 58310,
+						["coord"] = { 18.2, 09.9, 1530 },
+						["isDaily"] = true,
+						["g"] = {
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160867, {	-- Kzit'kovok
 						["questID"] = 58302,
@@ -652,11 +892,46 @@ _.ExpansionFeatures =
 							i(174959),	-- Cache of the Mantid Swarm -- TODO: can contain all the Black Empire token items. maybe symlink here?
 						},
 					}),
+					q(57445, {	-- Chin's Noodle Cart
+						["lvl"] = 120,
+						["coord"] = { 29.14, 60.89, 1530 },
+						["isWorldQuest"] = true,
+					}),
 					q(57085, {	-- Empowered War Wagon
 						["lvl"] = 120,
 						["coord"] = { 11.0, 64.4, 1530 },
 						["isWorldQuest"] = true,
 					}),
+					q(57521, {	-- Empowered War Wagon
+						["lvl"] = 120,
+						["coord"] = { 09.0, 27.0, 1530 },
+						["isWorldQuest"] = true,
+					}),
+					q(57540, {	-- Kuchong Incubator
+						["lvl"] = 120,
+						["coord"] = { 18.58, 65.75, 1530 },
+						["isWorldQuest"] = true,
+					}),
+					q(57089, {	-- Mantid Hatchery
+						["lvl"] = 120,
+						["coord"] = { 06.0, 71.0, 1530 },
+						["isWorldQuest"] = true,
+					}),
+					q(57558, {	-- Mantid Hatchery
+						["lvl"] = 120,
+						["coord"] = { 6.49, 42.25, 1530 },
+						["isWorldQuest"] = true,
+					}),
+					q(57384, {	-- Mending Monstrosity
+						["lvl"] = 120,
+						["coord"] = { 19.0, 72.0, 1530 },
+						["isWorldQuest"] = true,
+					}),
+					--[[q(, {	-- Ravager Hive  -- Bugged 
+						["lvl"] = 120,
+						["coord"] = { 27.0, 47.0, 1530 },
+						["isWorldQuest"] = true,
+					}),]]
 					q(57484, {	-- Ritual of Wakening
 						["lvl"] = 120,
 						["coord"] = { 16.9, 45.7, 1530 },
@@ -672,14 +947,32 @@ _.ExpansionFeatures =
 						["coord"] = { 25.7, 36.4, 1530 },
 						["isWorldQuest"] = true,
 					}),
+					q(57519, {	-- Swarm Caller
+						["lvl"] = 120,
+						["coord"] = { 27.0, 17.0, 1530 },
+						["isWorldQuest"] = true,
+					}),
+					q(57453, {	-- Swarm Caller
+						["lvl"] = 120,
+						["coord"] = { 14.0, 33.0, 1530 },
+						["isWorldQuest"] = true,
+					}),
 					q(57476, {	-- Vil'thik Feeding Grounds
 						["lvl"] = 120,
 						["coord"] = { 11.3, 40.8, 1530 },
 						["isWorldQuest"] = true,
 					}),
+					q(57508, {	-- Zara'thik War Banner
+						["lvl"] = 120,
+						["coord"] = { 11.0, 48.0, 1530 },
+						["isWorldQuest"] = true,
+					}),
+				}),
+				n(0,	{	-- Zone Drops
+					i(174760),	-- Mantid Relic Fragment
 				}),
 			}),
-			n(-10072, {    -- N'Zoth Assault
+			n(-10072, {	-- N'Zoth Assault
 				n(-4,   {	-- Achievements
 					ach(14159, {		-- Combating the Corruption -- TODO:: update with criteria when they get added.  Only crit for the zone atm is uncommented, rest are in Uldum? -- Is attaching questID's to these really the best way to track the quest?
 						--[[crit(1, {	-- 	Corrupted Acolyte slain
@@ -948,17 +1241,6 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(-17,  {	-- Quests
-					q(58168, {	-- A Dark, Glaring Reality
-						["coord"] = { 84.2, 51.7, 1530 },
-						["isDaily"] = true,
-						["provider"] = { "n", 160252 },	-- Blacktalon Agent
-					}),
-					q(58420, {	-- A Foul Annoyance
-						["coord"] = { 44.7, 73.8, 1530 },
-						["isDaily"] = true,
-						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
-						["sourceQuest"] = 56771,	-- Time-Lost Warriors
-					}),
 					q(56538, {	-- Clans of the Mogu
 						["coord"] = { 83.7, 27.1, 1530 },
 						["provider"] = { "n", 156003 },	-- Lorewalker Cho
@@ -968,42 +1250,6 @@ _.ExpansionFeatures =
 						["coord"] = { 83.7, 27.1, 1530 },
 						["provider"] = { "n", 156003 },	-- Lorewalker Cho
 						["sourceQuest"] = 56538,	-- Clans of the Mogu
-					}),
-					q(57068, {	-- Kite Surveillance
-						["coord"] = { 43.9, 4.9, 1530 },
-						["provider"] = { "n", 156297 },	-- Chen Stormstout
-						["sourceQuest"] = 57067,	-- Mogu at the Gates
-					}),
-					q(58460, {	-- Marshals of Madness
-						["coord"] = { 44.7, 73.8, 1530 },
-						["isDaily"] = true,
-						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
-					}),
-					q(58161, {	-- Minions of N'Zoth
-						["coord"] = { 84.2, 51.7, 1530 },
-						["isDaily"] = true,
-						["provider"] = { "n", 160252 },	-- Blacktalon Agent
-						["g"] = {
-							currency(1755),	-- Coalescing Visions x20
-						},
-					}),
-					q(57067, {	-- Mogu at the Gates	-- showed up when the Warring Clans assault was up. is there a pre-req? 
-						["coord"] = { 44.7, 73.8, 1530 },
-						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
-					}),
-					q(56575, {	-- Once More Into Kor'vess
-						["coord"] = { 13.9, 77.2, 1530 },
-						["provider"] = { "n", 155487 },	-- Taoshi
-						["sourceQuest"] = 56574,	-- Reflections in Amber
-					}),
-					q(58167, {	-- Preventative Measures
-						["coord"] = { 84.2, 51.7, 1530 },
-						["isDaily"] = true,
-						["provider"] = { "n", 160252 },	-- Blacktalon Agent
-						["g"] = {
-							i(174288),	-- Breath of Everlasting Spirit
-							currency(1755),	-- Coalescing Visions x200
-						},
 					}),
 					q(56540, {	-- Proof of Tenacity
 						["coord"] = { 44.7, 73.9, 1530 },
@@ -1024,11 +1270,6 @@ _.ExpansionFeatures =
 							i(173845),	-- Vile Manipulator's Hood
 							i(173844),	-- Vile Manipulator's Amice
 						},
-					}),
-					q(56574, {	-- Reflections in Amber
-						["cr"] = 160825,	-- Amber-Shaper Esh'ri
-						["coord"] = { 20.0, 74.6, 1530 },
-						["provider"] = { "i", 169888 },	-- Ooze-covered Amber
 					}),
 					q(56542, {	-- Restored Hope
 						["coord"] = { 45.3, 74.3, 1530 },
@@ -1052,18 +1293,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 154418 },	-- Ra-den
 						["sourceQuest"] = 56540,	-- Proof of Tenacity
 					}),
-					q(56647, {	-- The Mantid Threat
-						["lvl"] = 120,
-						["coord"] = { 12.2, 95.3, 422 },
-						["provider"] = { "n", 155487 },	-- Taoshi
-						["sourceQuest"] = 56645,	-- Heart of the Swarm
-					}),
-					q(58423, {	-- The Strongest Among Them
-						["coord"] = { 44.7, 73.8, 1530 },
-						["isDaily"] = true,
-						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
-						["sourceQuest"] = 56771,	-- Time-Lost Warriors
-					}),
 					q(56771, {	-- Time-Lost Warriors
 						["coord"] = { 83.1, 27.2, 1530 },
 						["provider"] = { "n", 154532 },	-- Magni Bronzebeard
@@ -1086,6 +1315,12 @@ _.ExpansionFeatures =
 						["f"] = 101,	-- Battle Pet
 						["lvl"] = 120,
 						["coord"] = { 57.5, 54.3, 1530 },
+						["isWorldQuest"] = true,
+					}),
+					q(58749, {	-- Flight of the Vil'thik
+						["f"] = 101,	-- Battle Pet
+						["lvl"] = 120,
+						["coord"] = { 07.4, 31.4, 1530 },
 						["isWorldQuest"] = true,
 					}),
 					q(58748, {	-- Living Statues Are Tough
@@ -1127,6 +1362,9 @@ _.ExpansionFeatures =
 							}),
 							i(168575, {	-- Branch of Rejuvenating Rings (Rank 3)
 								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
+							}),
+							i(174905, {	-- Troop Requisition: Rajani Sparkcaller
+								["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 							}),
 						},
 					}),

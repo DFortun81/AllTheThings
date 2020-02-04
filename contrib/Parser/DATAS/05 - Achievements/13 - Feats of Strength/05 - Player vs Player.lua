@@ -216,7 +216,7 @@ _.Achievements =
 							},
 						}),
 					}),
-					n(-691, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
+					n(-692, {	-- Corrupted Gladiator: Battle for Azeroth Season 4
 						ach(13959, {	-- Challenger: Battle for Azeroth Season 4
 						--	["u"] = 4, S3
 							["g"] = {

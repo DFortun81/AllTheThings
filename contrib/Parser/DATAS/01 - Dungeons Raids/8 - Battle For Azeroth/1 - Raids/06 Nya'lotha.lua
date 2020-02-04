@@ -11,7 +11,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			1581,	-- Annex of Prophecy
 			1582,	-- Ny'alotha
 			1590,	-- The Hive
-		--	,	-- Terrace of Desolation
+			1591,	-- Terrace of Desolation
 			1592,	-- The Ritual Chamber
 			1593,	-- Twilight Landing
 			1594,	-- ??
@@ -22,6 +22,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 		},
 		["g"] = {
 			n(-1,  {	-- Common Boss Drop
+				i(171202),	-- Vantus Rune Technique: Ny'alotha, the Waking City(Rank 1)
+				i(171201),	-- Vantus Rune Technique: Ny'alotha, the Waking City(Rank 2)
+				i(171200),	-- Vantus Rune Technique: Ny'alotha, the Waking City(Rank 3)
 			}),
 			d(17, {	-- LFR
 				n(0, {	-- Zone Drops
@@ -63,7 +66,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						},
 					}),
 					e(2369, {	-- The Prophet Skitra
-						["crs"] = { 157620 },
+						["crs"] = { 157238, 157620 },
 						["g"] = {
 							i(174279),	-- Encrypted Ny'alothan Text
 							i(172201),	-- Bloodstained Ritual Athame

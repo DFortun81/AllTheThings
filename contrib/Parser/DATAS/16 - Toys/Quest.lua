@@ -6,6 +6,7 @@ _.Toys =
 	n(-17, { 	-- Quest
 		i(147838), 		-- Akazamzarak's Spare Hat
 		i(119217),		-- Alliance Flag of Victory (Alliance)
+		i(175063),		-- Aqir Egg Cluster
 		i(118191), 		-- Archmage Vargoth's Spare Staff
 		i(118427),		-- Autographed Hearthstone Card
 		i(119093),		-- Aviana's Feather
@@ -49,7 +50,9 @@ _.Toys =
 		i(52201), 		-- Muradin's Favor
 		i(119001), 		-- Mystery Keg
 		i(138873),		-- Mystical Frosh Hat
+		i(173951),		-- N'lyeth, Sliver of N'Zoth
 		i(130209), 		-- Never Ending Toy Chest
+		i(173727),		-- Nomi's Vintage
 		i(44820),		-- Red Ribbon Pet Leash
 		i(123851),		-- Photo B.O.M.B.
 		i(30690),		-- Power Converter (Alliance)

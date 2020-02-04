@@ -482,7 +482,7 @@ _.Instances =
 					},
 					{	-- Codex: Prayer of Fortitude
 						["itemID"] = 29549,	-- Codex: Prayer of Fortitude
-						["u"] = 2,			-- Removed in Patch 3.0
+					--	["u"] = 2,			-- Grey since 3.0, but still lootable.
 						["crs"] = {
 							26800,	-- Alliance Berserker
 							26805,	-- Alliance Cleric

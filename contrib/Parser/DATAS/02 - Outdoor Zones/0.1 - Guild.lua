@@ -394,7 +394,7 @@ _.Zones =
 						["itemID"] = 62286,	-- Guild Vault Voucher (7th Slot)
 					},
 					{	-- Guild Vault Voucher (8th Slot)
-						["itemID"] = 62287,	-- Guild Vault Voucher (8th Slot)
+						["itemID"] = 62287 -- and 68136?,	-- Guild Vault Voucher (8th Slot)
 					},
 				},
 			}),

@@ -363,6 +363,7 @@ _.Mounts =
 		i(32316),	-- Purple Riding Nether Ray
 		i(18791),	-- Purple Skeletal Warhorse
 		i(46815),	-- Quel'dorei Steed
+		i(174649),	-- Rajani Warserpent
 		i(91007, {	-- Red Dragon Turtle [Panda Only]
 			["races"] = {
 				25,	-- Horde Pandaren
@@ -390,7 +391,12 @@ _.Mounts =
 		i(152793),	-- Russet Ruinstrider
 		i(168829),	-- Rustbolt Resistor
 		i(152791),	-- Sable Ruinstrider
-		i(166436),	-- Sandy Nightsaber
+		i(166436, {	-- Sandy Nightsaber (A)
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(174373, {	-- Sandy Nightsaber (H)
+			["races"] = HORDE_ONLY,
+		}),
 		i(143491, {	-- Shadowblade's Baneful Omen (Rogue)
 			["classes"] = { 4 },	-- Rogue
 		}),
@@ -534,6 +540,7 @@ _.Mounts =
 		i(161667, {	-- Voldunai Dunescraper
 			["races"] = HORDE_ONLY,
 		}),
+		i(174754),	-- Wastewander Skyterror
 		i(46100),	-- White Kodo
 		i(5873),	-- White Ram
 		i(89390),	-- White Riding Goat

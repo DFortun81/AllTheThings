@@ -439,6 +439,9 @@ profession(356, { 	-- Fishing
 		p(193, {	-- Giant Sewer Rat
 			["description"] = "Can be obtained from fishing in the underbelly in Dalaran(Northrend).",
 		}),
+		p(2837, {	-- Gloop
+			["description"] = "Can be fished from pools in Uldum/Vale when assaults are active.",
+		}),
 		p(115, {	-- Land Shark
 			["description"] = "Can be bought from Nat Pagle in Garrison after becoming Good Friends for 50 Nat's Lucky Coin",
 		}),

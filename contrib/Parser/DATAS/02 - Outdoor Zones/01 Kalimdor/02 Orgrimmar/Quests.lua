@@ -264,6 +264,7 @@ _.Zones =
 										["sourceQuest"] = 52942,	-- Restoring Old Bonds
 										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
+										["maps"] = { 1170 },	-- Gorgrond (Mag'har scenario)
 									}),
 									q(52945, {	-- Bonds Forged Through Battle
 										["provider"] = { "n", 142275 },	-- Grommash Hellscream
@@ -271,6 +272,7 @@ _.Zones =
 										["sourceQuest"] = 52943,	-- Calling Out the Clans
 										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
+										["maps"] = { 1170 },	-- Gorgrond (Mag'har scenario)
 									}),
 									q(52955, {	-- Tyranny of the Light
 										["provider"] = { "n", 137837 },	-- Overlord Geya'rah
@@ -278,6 +280,7 @@ _.Zones =
 										["sourceQuest"] = 52945,	-- Bonds Forged Through Battle
 										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
+										["maps"] = { 1170 },	-- Gorgrond (Mag'har scenario)
 									}),
 									q(51479, {	-- The Uncorrupted
 										["provider"] = { "n", 143845 },	-- Overlord Geya'rah

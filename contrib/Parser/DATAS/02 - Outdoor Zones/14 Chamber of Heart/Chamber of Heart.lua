@@ -642,6 +642,9 @@ _.Zones =
 							["cost"] = { { "i", 174782, 1 } },	-- Fear and Flesh
 							["g"] = {
 								i(169223),	-- Ashjra'kamas, Shroud of Resolve (Rank 6 appearence)
+									--[[["modID"] = 11,
+									-- tested modids 7,6,11,5,62,4,3,23,22,14,8,151,1,
+								}),]]
 								i(171354),	-- Horrific Core
 							},
 						}),
@@ -720,6 +723,7 @@ _.Zones =
 							["coord"] = { 46.1, 63.9, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57275,	-- Something in Your Mind
+							["cost"] = { { "i", 171176, 20 }, },	-- Shred of Insanity x20
 						}),
 					}),
 					n(-2,   {	-- Vendors

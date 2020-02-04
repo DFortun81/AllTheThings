@@ -75,8 +75,10 @@ _.Achievements =
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							ach(13557),	-- Rustbolt Rebellion
-							faction(2391),	-- Rustbelt Resistance
-							i(174067),	-- Mechagon Mechanostrider -- TODO:: needs the source quest linked here to be consistent with other entries
+							faction(2391),	-- Rustbolt Resistance
+							q(57497, {	-- Propagate The News
+								i(174067),	-- Mechagon Mechanostrider
+							}),
 						},
 					}),
 					ach(12446, {	-- Allied Races: Nightborne

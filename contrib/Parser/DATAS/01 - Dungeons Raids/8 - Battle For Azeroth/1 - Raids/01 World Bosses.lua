@@ -89,11 +89,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(161419),	-- Kraulok's Claw
 				}),
 			}),
-			e(2378, {	-- Grand Empress Shek'zara -- TODO: need more info
+			e(2378, {	-- Grand Empress Shek'zara
 				["isWeekly"] = true,
+				["questID"] = 58705,	-- Grand Empress Shek'zara
 				["isRaid"] = true,
 				["cr"] = 154638,
 				["coord"] = { 5.9, 56.4, 1530 },
+				["maps"] = { 1530 },	-- Vale of Eternal Blossoms
 				["g"] = {
 					i(174243),	-- Guise of the Voracious Prowler
 					i(174234),	-- Maniacal Speaker's Cover
@@ -226,19 +228,6 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(161411),	-- T'zane's Barkspines
 				}),
 			}),
-			--[[ -- doesn't appear to be a world boss anymore. Keeping it here temporarily for more confirmation
-			e(2380, {	-- Tashara -- TODO: determine questID
-				["isWeekly"] = true,
-				--["questID"] = ,
-				["isRaid"] = true,
-				["coord"] = { 29.3, 22.2, 1530 },
-				["maps"] = { 1530 },	-- Vale of Eternal Blossoms
-				["cr"] = 155958,
-				["g"] = {
-					i(174873),	-- Trans-mogu-rifier (Toy)
-				},
-			}),
-			]]--
 			e(2212, {	-- The Lion's Roar [Warfront]
 				["isWeekly"] = true,
 				["questID"] = 52848,	-- The Lion's Roar (WQ)
@@ -295,11 +284,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					i(169317),	-- Enthraller's Bindstone
 				}),
 			}),
-			e(2381, {	-- Vuk'laz the Earthbreaker -- TODO: need more info
+			e(2381, {	-- Vuk'laz the Earthbreaker
 				["isWeekly"] = true,
+				["questID"] = 55466,	-- Vuk'laz the Earthbreaker
 				["isRaid"] = true,
 				["cr"] = 160970,
 				["coord"] = { 45.7, 16.1, 1527 },
+				["maps"] = { 1527 },	-- Uldum
 				["g"] = {
 					i(174258),	-- Greathelm of Indiscriminate Brutality
 					i(174250),	-- Psyche Tormentor's Visage

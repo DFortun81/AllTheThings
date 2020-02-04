@@ -48,10 +48,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(53344, {	-- Iconoclasm
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(52115, {	-- In the Shadow of the Kraken
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -71,10 +67,6 @@ _.Zones =
 						["g"] = {
 							i(163601),	-- Overgrown Anchor Weed (QI)
 						},	
-					}),
-					q(52936, {	-- Plagued Earth Policy
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
 					}),
 					q(53345, {	-- Plunder and Provisions
 						["isWorldQuest"] = true,
@@ -135,6 +127,10 @@ _.Zones =
 					q(52935, {	-- A New Era
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+					}),
+					q(52936, {	-- A New Era
+						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
 					q(51855, {	-- A Pirate's Life For Me
@@ -438,6 +434,14 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+					}),
+					q(53344, {	-- Iconoclasm
+						["lvl"] = 120,
+						["isWorldQuest"] = true,
+					}),
+					q(52115, {	-- In the Shadow of the Kraken
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
 					}),
 					q(52168, {	-- It's Lit
 						["isWorldQuest"] = true,
@@ -1049,7 +1053,7 @@ _.Zones =
 				i(158088),	-- Wintersail Striker
 				i(158159),	-- Boralus Sailor's Cloak
 				i(166668),	-- Battalion Veteran Greatcloak
-				i(165685),	-- House of Nobles Cape
+				un(45, i(165685)),	-- House of Nobles Cape
 				i(158160),	-- Smuggler's Cove Ring
 				i(158163),	-- First Mate's Spyglass
 				i(158162),	-- Pearl Driver Compass

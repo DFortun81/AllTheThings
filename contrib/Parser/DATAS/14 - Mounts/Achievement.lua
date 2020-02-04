@@ -10,6 +10,7 @@ _.Mounts =
 		i(116781),	-- Armored Frostwolf
 		i(98104),	-- Armored Red Dragonhawk
 		i(93662),	-- Armored Skyscreamer
+		i(174836),	-- Awakened Mindborer
 		i(167171),	-- Azshari Bloatray
 		i(174654),	-- Black Serpent of N'Zoth
 		i(44223),	-- Black War Bear (Alliance)

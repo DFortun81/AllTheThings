@@ -464,6 +464,11 @@ _.Zones =
 				["isBreadcrumb"] = true,
 				["lvl"] = 30,
 			}),
+			q(38931, {	-- Hero's Call: The Hinterlands!
+				["isBreadcrumb"] = true,
+				["lvl"] = 30,
+				["u"] = 40,	-- Legacy quest
+			}),
 			q(28503, {	-- Hero's Call: Thousand Needles! (breadcrumb quest for 25486, not available if 25479,25481 are completed) (max level 43)
 				["isBreadcrumb"] = true,
 				["lvl"] = 40,

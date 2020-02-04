@@ -87,6 +87,13 @@ _.Zones =
 						["coord"] = { 44.01, 32.21, 1163 },
 						["isWorldQuest"] = true,
 					}),
+					q(51051, {	-- Supplies Needed: Deep Sea Satin
+						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["coord"] = { 44.01, 32.21, 1163 },
+						["isWorldQuest"] = true,
+					}),
 					q(52387, {	-- Supplies Needed: Frenzied Fangtooth
 						["provider"] = { "n", 141936 },	-- Hanul Swiftgale <Trade Supplies>
 						["lvl"] = 120,

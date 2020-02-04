@@ -36,10 +36,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(51737, {	-- Bruin Potions
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53312, {	-- Burnished Platinum
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -318,9 +314,13 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(50369, { 	-- Bruin Potions
+					q(50369, { 	-- Bruin Potions (A)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+					}),
+					q(51737, {	-- Bruin Potions
+						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
 					q(55264, {	-- Calligraphy

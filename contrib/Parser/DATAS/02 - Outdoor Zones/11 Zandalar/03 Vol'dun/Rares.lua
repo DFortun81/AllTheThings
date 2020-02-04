@@ -121,6 +121,12 @@ _.Zones =
 						},
 					}),
 				}),
+				n(162681, {	-- Elusive Quickhoof
+					["description"] = "Feed it Seaside Leafy Greens Mix to get the mount.",
+					["g"] = {
+						i(174860),	-- Reins of the Elusive Quickhoof
+					},
+				}),
 				n(136335, {	-- Enraged Krolusk
 					["questID"] = 51077,
 					["coord"] = { 61.8, 37.8, 864 },

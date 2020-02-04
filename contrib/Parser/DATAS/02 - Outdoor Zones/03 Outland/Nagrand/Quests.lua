@@ -431,7 +431,7 @@ _.Zones =
 					["provider"] = { "n", 19844 },	-- Nitrin the Learned
 					["coord"] = { 51.8, 56.8, 107 },
 					["sourceQuest"] = 10252,	-- Vision of the Dead
-					["group"] = {
+					["g"] = {
 						i(29312),	-- Cover of Righteous Fury
 						i(29313),	-- Earthbreaker's Greaves
 						i(29315),	-- Gloves of Penitence

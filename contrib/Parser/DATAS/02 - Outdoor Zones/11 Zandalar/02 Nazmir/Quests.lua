@@ -706,6 +706,11 @@ _.Zones =
 					["sourceQuest"] = 50082,	-- Target of Opportunity
 					["races"] = HORDE_ONLY,
 				}),
+				q(50976, {	-- An Ancient Curse
+					["provider"] = { "o", 287081 },	-- Ancient Tablet
+					["coord"] = { 29.2, 52.0, 863 },
+					["lvl"] = 110,
+				}),
 				q(50933, {	-- An Unfortunate Event
 					["provider"] = { "n", 135784 },	-- Imperial Guard
 					["coord"] = { 29.2, 52.0, 863 },

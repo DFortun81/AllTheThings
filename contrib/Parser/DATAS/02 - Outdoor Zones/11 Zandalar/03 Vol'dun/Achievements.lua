@@ -232,6 +232,7 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(12576),		-- Tour of Duty: Vol'dun
 				ach(12849, {	-- Treasures of Vol'dun
 					o(280951, {	-- Ashvane Spoils
 						["questID"] = 50237,

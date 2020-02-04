@@ -184,7 +184,8 @@ i(166417, 237288);	-- Reins of the Onyx War Hyena
 i(166466, 288722);	-- Risen Mare
 i(166464, 288735);	-- Rubyshell Krolusk
 i(166471, 288711);	-- Saltwater Seahorse
-i(166436, 288506);	-- Sandy Nightsaber
+i(166436, 288506);	-- Sandy Nightsaber (A)
+i(174373, 288506);	-- Sandy Nightsaber (H)
 i(166745, 266925);	-- Siltwing Albatross
 i(156880, 262023);	-- Sinister Gladiator's Proto-Drake
 i(166470, 288712);	-- Stonehide Elderhorn

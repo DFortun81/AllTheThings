@@ -680,8 +680,12 @@ _.Zones =
 					["lvl"] = 2,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(3277),	-- Executor Staff
-						i(3276),	-- Deathguard Buckler
+						i(3277, {	-- Executor Staff
+							["collectible"] = false,	-- White item
+						}),
+						i(3276, {	-- Deathguard Buckler
+							["collectible"] = false,	-- White item
+						}),
 					},
 				}),
 				q(24980, {	-- The Scarlet Palisade

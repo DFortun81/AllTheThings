@@ -1319,6 +1319,8 @@ _.NeverImplemented =
 		q(53956),	-- Triggered when turning in "We Are Coming" as alliance. Probably related to darkshore warfront unlock?
 		q(49610),	-- looting Adventurer's Society Loot Stash to unlock the Nigel Rifthold pet vendor
 		q(56684),	-- Flag used to track if 160489 (340 engineering goggles) had been crafted. This identifies if the recipe for rank 2 can drop
+		q(49037),	-- triggered after getting achievement The Reining Champion
+		q(55494),	-- Torcali quest of the day completed
 
 		q(54704),	-- War Campaign - triggered when turning in "Time for War"
 		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track
@@ -1375,8 +1377,9 @@ _.NeverImplemented =
 		q(57060),	-- IE-related mission — not sure if this is the Stalwart Worldvein Rank 2 one or one that awarded Saurok Scale Headgear
 		q(56528),	-- IE-related mission — Investigating the Rumors (done on Alliance, awarded Captured Documents, which procs the mission "Finding a Key")
 		q(56529),	-- IE-related mission — Finding a Key (done on Alliance, awarded Resonance Locator, which procs the mission "Tracking the Worldvein")
-		q(56530),	-- IE-related mission — Tracking the Worldvein (done on Alliance, awarded Fluctuating Worldvein, Rank 3 Worldvein Resonance, popped while mission complete thing played
+		q(56530),	-- IE-related mission — Tracking the Worldvein (done on Alliance, awarded Fluctuating Worldvein, Rank 3 Worldvein Resonance, popped while mission complete thing played)
 		q(57061),	-- popped when i manually refreshed after fully completing the mission / getting Fluctuating Worldvein in my inventory
+		q(57332),	-- using Map to the Last Worldvein to get mission The Last Worldvein (rank 4 Worldvein Resonance)
 		
 
 	--	PVP / WAR MODE
@@ -1561,7 +1564,10 @@ _.NeverImplemented =
 		q(54879),	-- Opening a Darkshore chest
 		q(54880),	-- Opening a Darkshore chest
 		q(54881),	-- Opening a Darkshore chest
+		q(54909),	-- Opening a Darkshore chest
+		q(54910),	-- Opening a Darkshore chest
 		q(54911),	-- Opening a Darkshore chest
+		q(54912),	-- Opening a Darkshore chest
 		q(53534),	-- when entering The Necropolis for the first time during "The Necropolis"
 		q(49695),	-- immediately after channeling on the drum finishes during "A Tribute For Death"
 		q(49367, {	-- when returning to Zo'bal Ruins during "We'll Meet Again"
@@ -1806,6 +1812,7 @@ _.NeverImplemented =
 		q(51363),	-- Weekly m+ chest looted (Horde, probably alliance too?)
 		
 	-- Nazjatar
+		q(57167),	-- Killed Vyz'olgo the Mind-Taker. Probably related to a daily loot flag from the lieutenants
 		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance
 		q(56505),	-- Triggered when walking through the Alliance crash site as horde. Bodyguard dialog fires
 		q(56881),	-- Triggered upon first entry into Nazjatar
@@ -2045,6 +2052,9 @@ _.NeverImplemented =
 		q(56135),	-- Vale of Eternal Blossoms - activated a celestial buff 2nd time (niuzao?)
 		q(59141),	-- Vale of Eternal Blossoms - triggered after turning in the Black Empire assault. Probably a loot lock trigger?
 		q(58512),	-- Grand Empress Shek'zara bonus roll
+		q(59060),	-- choosing Bitey McStabface as the name for your Aqir Hatchling
+		q(59062),	-- choosing Spike as the name for your Aqir Hatchling
+
 		-- Horrific Visions
 		q(57841),	-- first horrific vision cleared as horde
 		q(58581),	-- first horrific vision cleared as horde
@@ -2065,17 +2075,19 @@ _.NeverImplemented =
 		-- TODO:: Need to determine the alliance zones for the 4 area chests. They appear to be shared with horde except for the main boss chest
 		q(57031),	-- looted the chest from cleansing Valley of Wisdom at the end of the scenario
 		q(57030),	-- looted the chest from cleansing the Valley of Strength at the end of the scenario
-		q(57027),	-- looted the chest in front of Thrall's image at the end of the scenario. Doesn't matter if you defeat him or not
+		q(57027),	-- triggers in the chest room at the end of the Orgrimmar scenario. Doesn't matter if you defeat Thrall or not
 		q(57360),	-- looted the chest in front of Alleria's image at the end of the scenario. Doesn't matter if you defeat her or not
 		
 		q(58578),	-- looted the chest from cleansing the Dwarven District at the end of the scenario (could possibly be from looting "Spark of Inspiration" Rank 2)
 		q(58579),	-- looted the Overflowing Azerite Geode (Rank 1)
 		--[[
-		q(57845)	-- got it when looting Valley of Spirits chest with Fear and Flesh quest book and Sparks of Unwavering Strength so could be anything. it was also my first bonus chest ever
+		q(57845)	-- probably triggers after clearing two corrupted areas + boss
+		q(58963)	-- got it while fighting Thrall after two corrupted areas
 		58840 - looted the chest in front of zekhan. Torn Page of Compednium, Vol.II and Sparks of Unwavering Strength dropped
 		57841, 58581 -- both triggered on the first run of the Vision of Orgrimmar after unlocking it, then killing Thrall immediately.
 						Possibly related to Mark of Boistrous Duty (Rank 1) dropping? Torn Page of Compendium, Vol. 1 (item 171353) as well? Need to run a few times to see if this is guaranteed or not
 		]]--
+
 		-- N'Zoth assaults
 		q(55689),	-- Uldum - Amathet cache
 		q(55690),	-- Uldum - Amathet cache
@@ -2124,7 +2136,7 @@ _.NeverImplemented =
 		-- "Combating the Corruption" completion flags. The IDs appear to be reused and aren't specific to any one mob. Track all mobs until we can make sense of the pattern.
 		q(58690),	-- Corrupted Acolyte - Vale of Eternal Blossoms, Corrupted Fleshbeat - Uldum?
 		q(58689),	-- Corrupted Doomsayer - Uldum
-		q(58691),	-- Corrupted Doomsayer - Vale of Eternal Blossoms, Corrupted Putrification - Uldum
+		q(58691),	-- Corrupted Doomsayer/Bonestripper - Vale of Eternal Blossoms, Corrupted Putrification - Uldum
 		q(58688),	-- Corrupted Mind Eater - Uldum
 		
 		-- Mechagon unlock chain
@@ -2141,6 +2153,7 @@ _.NeverImplemented =
 		q(59558),	-- kill Maut
 		q(58547),	-- kill skitra - probably triggers when first wing clears?
 		q(58548),	-- kill skitra - probably triggers when first wing clears?
+		q(58549),	-- kill skitra on heroic?
 		q(59559),	-- kill skitra - kill credit
 		q(59136),	-- after coming up the elevator after first wing. Likely the RP and respawn point reset
 		q(59561),	-- kill dark inquisitor xanesh
@@ -2149,6 +2162,22 @@ _.NeverImplemented =
 		q(59562),	-- kill vexiona - kill credit
 		q(59563),	-- kill shad'har
 		q(59046),	-- kill Jesh'ra, big add with 200 Mementos as loot
-		q(59047),	-- kill another big add which name I forgot, it's on the way down to Shad'Har, big add with 200 Mementos as loot
+		q(59047),	-- kill Sanguimar, big add with 200 Mementos as loot
+		q(59048),	-- kill Deresh of the Nothingness, big add with 200 Mementos as loot
+		q(59566),	-- kill drest'agath
+		q(59560),	-- kill hivemind
+		q(58535),	--\
+		q(58536),	--| got these three after defeating Il'gynoth, getting Gift of Flesh achievement (wing clear?) and looting [Encrypted Ny'alothian Text]x4
+		q(59564),	--/ so probably need more data to find out what's what here
+		q(59565),	-- kill ra-den
+		q(58543),	-- kill ra-den - either the wing clear OR the beacon placement
+		q(58544),	-- kill ra-den - either the wing clear OR the beacon placement
+		q(58527),	-- combined 15 nyalotha pages
+		
+		-- World Bosses
+		q(58510),	-- Vuk'laz the Earthbreaker first kill??
+		q(58514),	-- Vuk'laz the Earthbreaker bonus roll
+		q(58508),	-- Grand Empress Shek'zara first kill??
+		--q(58770),	-- Grand Empress Shek'zara bonus roll
 	}),
 };

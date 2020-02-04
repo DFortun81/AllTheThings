@@ -9,6 +9,7 @@ _.ExpansionFeatures =
 				q(53198, {	-- Back to Boralus
 					["provider"] = { "n", 143018 },	-- Captain Roderick Brewston
 					["sourceQuest"] = 53197,	-- Touring the Front
+					["lvl"] = 120,
 					["coord"] = { 19.26, 61.77, 14 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -22,6 +23,7 @@ _.ExpansionFeatures =
 				q(53212, {	-- Back to Zuldazar
 					["provider"] = { "n", 143019 },	-- Wistel Sliversnitch
 					["sourceQuest"] = 53210,	-- Touring the Front
+					["lvl"] = 120,
 					["coord"] = { 26.11, 35.59, 14 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -38,6 +40,7 @@ _.ExpansionFeatures =
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["sourceQuest"] = 53198,	-- Back to Boralus
+					["lvl"] = 120,
 					["providers"] = {
 						{ "n", 143172 },	-- Yvera Dawnwing [Arathi Highlands Location]
 						{ "n", 143380 },	-- Yvera Dawnwing [Boralus Location]
@@ -63,6 +66,7 @@ _.ExpansionFeatures =
 					["races"] = ALLIANCE_ONLY,
 					["altQuests"] = { 53206 },	-- Battle for Stromgarde unlock flag (A)
 					["sourceQuest"] = 53194,	-- To The Front
+					["lvl"] = 120,
 				}),
 				q(53210, {	-- Touring the Front (H)
 					["provider"] = { "n", 143019 },	-- Wistel Sliversnitch
@@ -70,11 +74,13 @@ _.ExpansionFeatures =
 					["coord"] = { 26.11, 35.59, 14 },
 					["altQuests"] = { 53220 },	-- Battle for Stromgarde unlock flag (H)
 					["sourceQuest"] = 53208,	-- To The Front
+					["lvl"] = 120,
 				}),
 				q(53154, { 	-- The League Will Lose [Horde]
 					["u"] = 2,
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
+					["lvl"] = 120,
 					["g"] = {
 						i(164577, {	-- Warfronts Equipment Cache
 							["sym"] = {

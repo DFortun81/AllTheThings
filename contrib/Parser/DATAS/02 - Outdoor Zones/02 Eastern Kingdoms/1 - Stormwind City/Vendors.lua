@@ -359,7 +359,7 @@ _.Zones =
 							["cost"] = { { "i", 78863, 1 }, },	-- Chest of the Corrupted Conqueror
 						}),
 						i(76874, {	-- Battleplate of Radiant Glory
-							["cost"] = { { "i", 78174, 1 }, },	-- Chest of the Corrupted Conqueror
+							["cost"] = { { "i", 78184, 1 }, },	-- Chest of the Corrupted Conqueror
 						}),
 						i(78727, {	-- Battleplate of Radiant Glory
 							["cost"] = { { "i", 78847, 1 }, },	-- Chest of the Corrupted Conqueror

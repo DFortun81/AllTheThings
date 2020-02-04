@@ -25,7 +25,11 @@ _.Zones =
 								["sym"] = {{"select", "instanceID", 1176}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
 							i(168269, {	-- Cache of Palace Treasures (Normal Quality)
+								["u"] = 2,
 								["sym"] = {{"select", "instanceID", 1179}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+							i(175021, {	-- Cache of Ny'alothan Treasures (Normal Quality)
+								["sym"] = {{"select", "instanceID", 1180}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
 						},
 					}),
@@ -45,7 +49,11 @@ _.Zones =
 								["sym"] = {{"select", "instanceID", 1176}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
 							i(168269, {	-- Cache of Palace Treasures (Normal Quality)
+								["u"] = 2,
 								["sym"] = {{"select", "instanceID", 1179}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+							i(175021, {	-- Cache of Ny'alothan Treasures (Normal Quality)
+								["sym"] = {{"select", "instanceID", 1180}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
 						},
 					}),
@@ -65,7 +73,59 @@ _.Zones =
 								["sym"] = {{"select", "instanceID", 1176}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
 							i(168269, {	-- Cache of Palace Treasures (Normal Quality)
+								["u"] = 2,
 								["sym"] = {{"select", "instanceID", 1179}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+							i(175021, {	-- Cache of Ny'alothan Treasures (Normal Quality)
+								["sym"] = {{"select", "instanceID", 1180}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+						},
+					}),
+					q(53035, {	-- A Shrouded Path Through Time (MoP Timewalking)
+						["providers"] = {
+							{ "n", 144384 },	-- Chronicler Shoopa
+							{ "n", 144383 },	-- Chronicler Toopa
+						},
+						["isWeekly"] = true,
+						["g"] = {
+							i(164579, {	-- Cache of Uldir Treasures (Normal Quality)
+								["u"] = 2,
+								["sym"] = {{"select", "instanceID", 1031}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+							i(165724, {	-- Cache of Dazar'alor Treasures (Normal Quality)
+								["u"] = 2,
+								["sym"] = {{"select", "instanceID", 1176}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+							i(168269, {	-- Cache of Palace Treasures (Normal Quality)
+								["u"] = 2,
+								["sym"] = {{"select", "instanceID", 1179}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+							i(175021, {	-- Cache of Ny'alothan Treasures (Normal Quality)
+								["sym"] = {{"select", "instanceID", 1180}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+						},
+					}),
+					q(54995, {	-- A Savage Path Through Time (WoD Timewalking)
+						["providers"] = {
+							{ "n", 144384 },	-- Chronicler Shoopa
+							{ "n", 144383 },	-- Chronicler Toopa
+						},
+						["isWeekly"] = true,
+						["g"] = {
+							i(164579, {	-- Cache of Uldir Treasures (Normal Quality)
+								["u"] = 2,
+								["sym"] = {{"select", "instanceID", 1031}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+							i(165724, {	-- Cache of Dazar'alor Treasures (Normal Quality)
+								["u"] = 2,
+								["sym"] = {{"select", "instanceID", 1176}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+							i(168269, {	-- Cache of Palace Treasures (Normal Quality)
+								["u"] = 2,
+								["sym"] = {{"select", "instanceID", 1179}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+							i(175021, {	-- Cache of Ny'alothan Treasures (Normal Quality)
+								["sym"] = {{"select", "instanceID", 1180}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
 						},
 					}),
@@ -83,7 +143,11 @@ _.Zones =
 								["sym"] = {{"select", "instanceID", 1176}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
 							i(170144, {	-- Cache of Palace Treasures (Heroic Quality)
+								["u"] = 2,
 								["sym"] = {{"select", "instanceID", 1179}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
+							}),
+							i(175024, {	-- Cache of Ny'alothan Treasures (Heroic Quality)
+								["sym"] = {{"select", "instanceID", 1180}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 							}),
 						},
 					}),
@@ -94,7 +158,7 @@ _.Zones =
 						["g"] = {
 							i(154992, {	-- Brawler's Footlocker
 								["sym"] = {
-								{"select", "npcID", -691},	-- BFA Season 3
+								{"select", "npcID", -692},	-- BFA Season 4
 								{"pop"},	-- Discard the header and acquire the children.
 								{"where", "npcID", -661},	-- Gladiator Gear
 								{"pop"},	-- Discard the header and acquire the children.

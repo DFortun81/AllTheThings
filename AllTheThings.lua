@@ -1615,6 +1615,20 @@ subroutines = {
 			{"is", "f"},	-- If it has a filterID, keep it, otherwise throw it away.
 		};
 	end,
+	-- Island Expeditions Sets
+	["islandexpeditions_sets"] = function(headerID1, headerID2)
+		return {
+			{"select", "npcID", -3338 },	-- Select the Island Expeditions header
+			{"pop"},	-- Discard the Island Expeditions header and acquire the children.
+			{"where", "npcID", -6015 },	-- Select the Rewards header
+			{"pop"},	-- Discard the Rewards header and acquire the children.
+			{"where", "npcID", -3339 },	-- Select the Item Sets header
+			{"pop"},	-- Discard the Item Sets header and acquire the children.
+			{"where", "npcID", headerID1 },	-- Select the Armor Typ header
+			{"pop"},	-- Discard the Set header and acquire the children.
+			{"where", "npcID", headerID2 },	-- Select the Set header
+		};
+	end,
 	["legion_relinquished_base"] = function()
 		return {
 			-- Legion Legendaries
@@ -12600,7 +12614,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 			};
 			local worldMapIDs = {
 				{ 14 },		-- Arathi Highlands
-				{ 62 },		-- Darkshore
+				--{ 62 },	-- Darkshore does not need to be included as a separate mapID as it is contained in the the Kalimdor mapID
 				{
 					875,	-- Zandalar
 					{
@@ -12617,7 +12631,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						{ 895, 5896, { 53939, 53711 }},	-- Tiragarde Sound (Breaching Boralus [H] / A Sound Defense [A])
 					}
 				},	
-				{ 
+				{
 					619, -- Broken Isles
 					{
 						{ 630, 5175, { 47063 }},	-- Azsuna
@@ -12631,6 +12645,22 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				{ 882 },	-- Mac'Aree
 				{ 1355 },	-- Nazjatar
 				-- { 1462 },	-- Mechagon does not need to be included as a separate mapID as it is contained in the the Kul Tiras mapID
+				{
+					12,		-- Kalimdor
+					{
+						{ 1527, 6486, { 57157 }},	-- Assault: The Black Empire
+						{ 1527, 6488, { 56308 }},	-- Assault: Aqir Unearthed
+						{ 1527, 6487, { 55350 }},	-- Assault: Amathet Advance
+					},
+				},
+				{
+					424,	-- Pandaria
+					{
+						{ 1530, 6489, { 56064 }},	-- Assault: The Black Empire
+						{ 1530, 6491, { 57728 }},	-- Assault: The Endless Swarm
+						{ 1530, 6490, { 57008 }},	-- Assault: The Warring Clans
+					},
+				},
 			};
 			local OnUpdateForItem = function(self)
 				for i,o in ipairs(self.g) do

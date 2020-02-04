@@ -4088,14 +4088,14 @@ app.L = {
 		{3, "|CFFFF0000This item is purchased from the In-Game Store.|r", "In-Game Store (35)"}; --35
 		{21, "|CFFFF0000This was obtainable only during the WoW Anniversary when it was active and is no longer available.|r\n", "WoW Anniversary [Removed] (36)"}; -- 36
 		{1, "|CFFFF0000This title is no longer obtainable in game.|r", "Titles (37)"}; --37
-		{4, "|CFFFF0000These items are only available for players that completed the Legendary Cloak quest chain during Mists of Pandaria|r", "Ordos - Legendary Cloak (38)"}; --38
+		{4, "|CFFFF0000These items are only available for players that completed the Legendary Cloak quest chain during Mists of Pandaria or via the BMAH|r", "Ordos - Legendary Cloak (38)"}; --38
 		{4, "|CFFFF0000This title is no longer available.|r", "Legacy Titles (39)"}; --39
 		{4, "|CFFFF0000This is a Legacy quest or quest item, and is no longer available.|r", "Legacy Quests (40)"}; -- 40
 		{4, "|CFFFF0000These appearances are only available for players that completed the respective Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances (41)"}; -- 41
 		{21, "|CFFFF0000These appearances are only available during the weekly Timewalking Event.\nOnly dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}; -- 42
 		{1, "|CFFFF0000This NPC or creature has been removed from the game.|r", "Removed NPCs (43)"}; -- 43
 		{2, "|CFFFF0000This Item was only available from the BMAH for a limited Time.|r", "BMAH Limited Time (44)"}; -- 44
-		{1, "|CFFFF0000Blizzard's Legacy Loot changes broke several Items and made them Unobtainable.\nWarpwood (DM West) & Kara (Chess Event)\nare currently broken and need to be fixed.|r", "Broken Loot (45)"}; -- 45
+		{1, "|CFFFF0000Blizzard's Loot changes broke several Items and made them Unobtainable.\nHouse of Nobles Cape & Gurubashi Empire Greatcloak (both BFA Emissary Rewards) \nare currently broken and need to be fixed.|r", "Broken Loot (45)"}; -- 45
 	--	{3, "|CFFFF0000This item is only available from War Chests while under max level.|r", "Incursion Loot (46)"}; -- 46
 	--	{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation broke Gruul' loot table.|r", "Gruul Non-Tier Loot (47)"}; -- 47
 	};
