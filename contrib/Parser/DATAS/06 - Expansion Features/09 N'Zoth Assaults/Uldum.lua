@@ -354,6 +354,10 @@ _.ExpansionFeatures =
 						["coord"] = { 64.5, 22.7, 1527 },
 						["isWorldQuest"] = true,
 					}),
+					q(55359, {	-- Ritual of Ascendancy
+						["lvl"] = 120,
+						["isWorldQuest"] = true,
+					}),
 					q(57234, {	-- Solar Collector
 						["lvl"] = 120,
 						["coord"] = { 80.3, 66.1, 1527 },
@@ -1183,10 +1187,6 @@ _.ExpansionFeatures =
 					q(58275, {	-- Monstrous Summoning
 						["lvl"] = 120,
 						["coord"] = { 50.6, 82.4, 1527 },
-						["isWorldQuest"] = true,
-					}),
-					q(55359, {	-- Ritual of Ascendancy
-						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
 					q(57588, {	-- Spirit Drinker
