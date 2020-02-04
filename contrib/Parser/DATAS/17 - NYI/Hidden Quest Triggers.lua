@@ -959,6 +959,7 @@ _.NeverImplemented =
 		q(40304),	-- FLAG - Prospecting 03 - triggered when completing a jewelcrafting world quest in Dalaran
 		q(45318),	-- Nighthold - tracking quest. triggers before the door to Chronomatic Anomaly opens
 		q(45328),	-- Nighthold - tracking quest. triggers before the door to Chronomatic Anomaly opens
+		q(44297),	-- Tracking Quest - W2 - Jaina Gone
 		
 		-- Suramar - Withered Training
 		-- additional note: objectID 252452 (Glimmering Treasure Chest) is the big chest at the end of training that can contain toys
