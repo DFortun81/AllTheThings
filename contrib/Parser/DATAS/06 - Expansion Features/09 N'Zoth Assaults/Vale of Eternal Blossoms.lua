@@ -927,11 +927,11 @@ _.ExpansionFeatures =
 						["coord"] = { 19.0, 72.0, 1530 },
 						["isWorldQuest"] = true,
 					}),
-					--[[q(, {	-- Ravager Hive  -- Bugged 
+					q(57404, {	-- Ravager Hive
 						["lvl"] = 120,
 						["coord"] = { 27.0, 47.0, 1530 },
 						["isWorldQuest"] = true,
-					}),]]
+					}),
 					q(57484, {	-- Ritual of Wakening
 						["lvl"] = 120,
 						["coord"] = { 16.9, 45.7, 1530 },

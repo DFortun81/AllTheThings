@@ -119,7 +119,7 @@ _.ExpansionFeatures =
 								i(166451),	-- Rattling Bones
 							},
 						}),
-						n(149661, {	-- Croz Bloodrage [A Only]
+						n(149655, {	-- Croz Bloodrage [A Only]
 							["questID"] = 54891,	-- Croz Bloodrage [Alliance]
 							["races"] = ALLIANCE_ONLY,
 							["questID"] = 54886,

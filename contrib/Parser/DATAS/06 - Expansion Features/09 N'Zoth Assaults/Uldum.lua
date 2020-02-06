@@ -921,6 +921,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 155095 },	-- King Phaoris
 						["sourceQuest"] = 56472,	-- The Uldum Accord
 					}),
+					q(58236, {	-- Symbolic Destruction
+						["coord"] = { 54.8, 32.9, 1527 },
+						["isDaily"] = true,
+						["provider"] = { "n", 155096 },	-- High Commander Kamses
+						["sourceQuest"] = 56472,	-- The Uldum Accord
+					}),
 					q(58233, {	-- Twisted Corruptors
 						["coord"] = { 54.6, 32.8, 1527 },
 						["isDaily"] = true,
@@ -940,9 +946,9 @@ _.ExpansionFeatures =
 						["coord"] = { 66.8, 74.3, 1527 },
 						["isDaily"] = true,
 					}),
-					n(157593, {	-- Amalgamation of Fless
+					n(157593, {	-- Amalgamation of Flesh
 						["description"] = "This rare will only spawn when the event is up",
-						--["questID"] = ,
+						["questID"] = 57429,
 						["coord"] = { 59.8, 72.4, 1527 },
 						["isDaily"] = true,
 						["g"] = {
@@ -1187,6 +1193,11 @@ _.ExpansionFeatures =
 					q(58275, {	-- Monstrous Summoning
 						["lvl"] = 120,
 						["coord"] = { 50.6, 82.4, 1527 },
+						["isWorldQuest"] = true,
+					}),
+					q(58330, {	-- Pyre of the Amalgamated One
+						["lvl"] = 120,
+						["coord"] = { 59.77, 72.41, 1527 },
 						["isWorldQuest"] = true,
 					}),
 					q(57588, {	-- Spirit Drinker
