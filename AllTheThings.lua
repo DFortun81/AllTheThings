@@ -8957,15 +8957,15 @@ local function RowOnEnter(self)
 		if reference.flightPathID and app.Settings:GetTooltipSetting("flightPathID")  then GameTooltip:AddDoubleLine(L["FLIGHT_PATH_ID"], tostring(reference.flightPathID)); end
 		if reference.mapID and app.Settings:GetTooltipSetting("mapID") then GameTooltip:AddDoubleLine(L["MAP_ID"], tostring(reference.mapID)); end
 		if reference.coords and app.Settings:GetTooltipSetting("Coordinates") then
-			local j = 0;
+			local currentMapID, j, str = app.GetCurrentMapID(), 0;
 			for i,coord in ipairs(reference.coords) do
-				local x = coord[1];
-				local y = coord[2];
-				local str;
-				local mapID = coord[3];
-				if mapID then
-					str = tostring(mapID);
-					if mapID == app.GetCurrentMapID() then str = str .. "*"; end
+				local x, y = coord[1], coord[2];
+				local mapID = coord[3] or currentMapID;
+				if mapID ~= currentMapID then
+					str = app.GetMapName(mapID) or "??";
+					if app.Settings:GetTooltipSetting("mapID") then
+						str = str .. " (" .. mapID .. ")";
+					end
 					str = str .. ": ";
 				else
 					str = "";
