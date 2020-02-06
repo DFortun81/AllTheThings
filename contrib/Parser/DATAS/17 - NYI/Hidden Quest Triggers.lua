@@ -2047,6 +2047,7 @@ _.NeverImplemented =
 		q(58512),	-- Grand Empress Shek'zara bonus roll
 		q(59060),	-- choosing Bitey McStabface as the name for your Aqir Hatchling
 		q(59062),	-- choosing Spike as the name for your Aqir Hatchling
+		q(58906),	-- using Troop Requisition: Ramkahen Lancer
 
 		-- Horrific Visions
 		q(57841),	-- first horrific vision cleared as horde

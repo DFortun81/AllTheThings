@@ -1745,7 +1745,10 @@ _.ExpansionFeatures =
 					n(160714, {	-- Provisioner Qorra
 						["coord"] = { 55.1, 32.9, 1527 },
 						["g"] = {
-							i(174995, {	-- Void Tendril Pet Leash
+							i(174925, {	-- Void Tendril Pet Leash
+								["cost"] = { { "c", 1719, 1 }, },	-- 1x Corrupted Memento
+							}),
+							i(174995, {	-- Void Tendril Pet Leash (Toy)
 								["cost"] = {
 									{ "i", 163036, 20 },	-- Polished Pet Charm
 									{ "c", 1719, 100 },		-- 100x Corrupted Memento
@@ -1753,6 +1756,9 @@ _.ExpansionFeatures =
 							}),
 							i(172011, {	-- Recipe: Contract: Uldum Accord
 								["cost"] = 13300000,	-- 1,330 gold
+							}),
+							i(174904, {	-- Troop Requisition: Ramkahen Lancer
+								["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 							}),
 							i(174477, {	-- Pygmy Camel
 								["cost"] = { { "i", 163036, 300 }, },	-- 300x Polished Pet Charm
