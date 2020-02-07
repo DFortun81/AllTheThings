@@ -751,6 +751,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
+					q(58761, {	-- Crushed Underfoot
+						["coord"] = { 44.7, 73.8, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
 					q(58756, {	-- Dread Menders
 						["coord"] = { 37.2, 79.2, 1530 },
 						["isDaily"] = true,
