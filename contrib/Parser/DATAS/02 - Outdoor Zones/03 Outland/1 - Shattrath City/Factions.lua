@@ -1619,6 +1619,7 @@ _.Zones =
 								10885, 	-- Trial of the Naaru: Strength
 								10886,	-- Trial of the Naaru: Tenacity
 							},
+							["altQuests"] = { 10888 },	-- Trial of the Naaru: Magtheridon (legacy version)
 							["provider"] = { "n", 18481 },	-- A'dal
 							["g"] = {
 								i(31746) -- Phoenix-Fire Band
