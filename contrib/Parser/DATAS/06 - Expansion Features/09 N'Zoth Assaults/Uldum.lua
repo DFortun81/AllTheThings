@@ -1210,6 +1210,11 @@ _.ExpansionFeatures =
 						["coord"] = { 47.0, 41.0, 1527 },
 						["isWorldQuest"] = true,
 					}),
+					q(57591, {	-- Spirit Drinker
+						["lvl"] = 120,
+						["coord"] = { 60.0, 53.0, 1527 },
+						["isWorldQuest"] = true,
+					}),
 					q(58271, {	-- Voidflame Ritual
 						["lvl"] = 120,
 						["coord"] = { 62.02, 70.68, 1527 },

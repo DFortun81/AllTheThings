@@ -142,9 +142,18 @@ _.NeverImplemented =
 		q(30552),	-- [DNT] The Master Strategist TRACKER - triggers after completing The Master Strategist (questID 29451)
 		q(30560),	-- [DNT] Tools of Divination TRACKER - triggers after completing Tools of Divination (questID 29464)
 		q(30546),	-- [DNT] Writing the Future TRACKER - triggers after completing Writing the Future (questID 29515)
+		-- DMF Arcade 8.3
+		q(45038),	-- Hexsweeper lvl 1
+		q(45039),	-- Hexsweeper lvl 2
+		q(45040),	-- Hexsweeper lvl 3
+		q(45041),	-- Hexsweeper lvl 4
+		q(45042),	-- Hexsweeper lvl 5
+		q(57827),	-- Rune Matching easy
+		q(57828),	-- Rune Matching normal
+		q(57829),	-- Rune Matching hard
+		q(57835),	-- Totems lvl 1
+		q(57836),	-- Totems lvl 2
 		
-		
-
 		-------------------
 		---   CLASSIC   ---
 		-------------------
