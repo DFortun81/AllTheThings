@@ -6,11 +6,7 @@ _.Zones =
 	m(101, {	-- Outland
 		m(104, {	-- Shadowmoon Valley (Outland)
 			n(-17, {	-- Quests
-				q(10985, {	-- A Distraction for Akama
-				--	there may be a situation where this quest is accessible, but i'm not sure what it is.  didn't show up for horde or alliance or aldor or scryer.
-				--	there's no additional information in the quest info provided by wowhead that makes it seem any different than #13429.
-				--	not sure if this is legacy or NYI or if there's some magical situation during which it pops up so i'm just marking it legacy for now.
-					["altQuests"] = { 13429 },	-- A Distraction for Akama
+				q(10985, {	-- A Distraction for Akama (legacy version)
 					["provider"] = { "n", 18528 },	-- Xi'ri
 					["coord"] = { 65.2, 44.0, 104 },
 					["sourceQuests"] = { 10949 },	-- Entry Into the Black Temple
@@ -20,6 +16,7 @@ _.Zones =
 					},
 				}),
 				q(13429, {	-- A Distraction for Akama
+					["altQuests"] = { 10985 },	-- A Distraction for Akama (legacy version)
 					["sourceQuests"] = { 10949 },	-- Entry Into the Black Temple
 					["provider"] = { "n", 18528 },	-- Xi'ri
 					["coord"] = { 65.2, 43.9, 104 },
