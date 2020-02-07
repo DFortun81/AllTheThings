@@ -877,6 +877,7 @@ _.Zones =
 						{ "n", 20679 },	-- Aylaan the Waterwaker
 						{ "n", 20677 },	-- Morod the Windstirrer
 					},
+					["isBreadcrumb"] = true,
 				}),
 				q(10351, {	-- Natural Remedies
 					["coord"] = { 15.9, 51.5, 100 },
