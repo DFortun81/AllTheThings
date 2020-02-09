@@ -2169,9 +2169,9 @@ _.NeverImplemented =
 		q(59048),	-- kill Deresh of the Nothingness, big add with 200 Mementos as loot
 		q(59566),	-- kill drest'agath
 		q(59560),	-- kill hivemind
-		q(58535),	--\
-		q(58536),	--| got these three after defeating Il'gynoth, getting Gift of Flesh achievement (wing clear?) and looting [Encrypted Ny'alothian Text]x4
-		q(59564),	--/ so probably need more data to find out what's what here
+		q(58535),	-- Il'gynoth wing clear. probably triggers the azerite beacon
+		q(58536),	-- Il'gynoth wing clear. triggers dialog?
+		q(59564),	-- kill Il'gynoth
 		q(59565),	-- kill ra-den
 		q(58543),	-- kill ra-den - either the wing clear OR the beacon placement
 		q(58544),	-- kill ra-den - either the wing clear OR the beacon placement
