@@ -2176,6 +2176,7 @@ _.NeverImplemented =
 		q(58543),	-- kill ra-den - either the wing clear OR the beacon placement
 		q(58544),	-- kill ra-den - either the wing clear OR the beacon placement
 		q(58527),	-- combined 15 nyalotha pages
+		q(59567),	-- kill Carapce of N'Zoth (Fury of N'Zoth)
 		
 		-- World Bosses
 		q(58510),	-- Vuk'laz the Earthbreaker first kill??
