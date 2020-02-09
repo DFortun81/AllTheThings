@@ -1995,7 +1995,8 @@ _.NeverImplemented =
 		q(55903),	-- Triggered when completing "Armed for Action" achievement. May be related to picking up the weapon (e.g. Bolt Spitter)
 		q(56330),	-- Triggered shortly after completing "Chopped Bots". Possibly shuts down the magnet?
 		q(56660),	-- Triggered on Mechagon randomly
-		
+		q(56840),	-- Toys of Destruction - made the Volatile Blaster. Maybe triggers for all the toys to indicate the toy extra action button is available?
+		q(56627),	-- collected Roadtrogg mini
 	--	Dungeons
 		q(53623),	-- Battle for Azeroth Dungeon Reward Quest
 	
