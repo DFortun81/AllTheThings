@@ -229,6 +229,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(174861),	-- Wriggling Parasite
 					}),
 				}),
+				n(-17, {	-- Quests
+					q(58373, {	-- Ny'alotha: MOTHER's Guidance
+						["provider"] = { "n", 160177 },	-- Wrathion
+					}),
+				}),
 				n(0, {	-- Zone Drops
 					i(175004),	-- Legwraps of Horrifying Figments
 					i(175005),	-- Belt of Concealed Intent
@@ -437,6 +442,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				n(-4, {	-- Achievements
 					ach(14146, {	-- Glory of the Ny'alotha Raider
 						i(174861),	-- Wriggling Parasite
+					}),
+				}),
+				n(-17, {	-- Quests
+					q(58374, {	-- Ny'alotha: MOTHER's Guidance
+						["provider"] = { "n", 160177 },	-- Wrathion
 					}),
 				}),
 				n(0, {	-- Zone Drops
