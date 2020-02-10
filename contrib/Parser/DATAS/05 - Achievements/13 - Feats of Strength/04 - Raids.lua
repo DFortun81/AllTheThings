@@ -31,6 +31,7 @@ _.Achievements =
 					un(2, ach(13322)),		-- Ahead of the Curve: Lady Jaina Proudmoore
 					un(2, ach(8249)),		-- Ahead of the Curve: Lei Shen
 					ach(14068),				-- Ahead of the Curve: N'Zoth, the Corruptor
+					un(2, ach(13784)),		-- Ahead of the Curve: Queen Azshara
 					un(2, ach(8248)),		-- Ahead of the Curve: Sha of Fear
 					un(2, ach(10044)),		-- Ahead of the Curve: The Black Gate
 					un(2, ach(13418)),		-- Ahead of the Curve: Uu'nat, Harbinger of the Void
@@ -50,6 +51,7 @@ _.Achievements =
 					un(2, ach(13323)),		-- Cutting Edge: Lady Jaina Proudmoore
 					un(2, ach(8238)),		-- Cutting Edge: Lei Shen
 					ach(14069),				-- Cutting Edge: N'Zoth, the Corruptor
+					un(2, ach(13785)),		-- Cutting Edge: Queen Azshara
 					un(2, ach(8260)),		-- Cutting Edge: Ra-den
 					un(2, ach(7487)),		-- Cutting Edge: Sha of Fear
 					un(2, ach(10045)),		-- Cutting Edge: The Black Gate

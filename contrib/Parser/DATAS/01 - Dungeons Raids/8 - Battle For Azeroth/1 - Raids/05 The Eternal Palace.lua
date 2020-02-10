@@ -666,11 +666,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				e(2361, {	-- Queen Azshara
 					["cr"] = 152910,
 					["g"] = {
-						ach(13784),	-- Ahead of the Curve: Queen Azshara
 						{	-- The Circle of Stars (Queen Azshara)
 							["achievementID"] = 13725,
 							["criteriaID"] = 2,
 						},
+						un(2, ach(13784)),	-- Ahead of the Curve: Queen Azshara
 						ach(13768),	-- The Best of Us
 						i(169348),	-- Zanj'ir Poker
 						i(169694),	-- Aqueous Reliquary
@@ -898,11 +898,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						ach(13733, {	-- Mythic: Queen Azshara
 							title(404),	-- the Eternal
 						}),
-						ach(13785),	-- Cutting Edge: Queen Azshara
 						{	-- The Circle of Stars (Queen Azshara)
 							["achievementID"] = 13725,
 							["criteriaID"] = 2,
 						},
+						un(2, ach(13785)),	-- Cutting Edge: Queen Azshara
 						ach(13768),	-- The Best of Us
 						i(169348),	-- Zanj'ir Poker
 						i(169694),	-- Aqueous Reliquary
