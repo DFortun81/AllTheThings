@@ -26,45 +26,43 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			}),
 			d(17, {	-- LFR
 				ach(13414, {	-- Crucible of Storms
-					["g"] = {
-						e(2328, {	-- The Restless Cabal
-							["crs"] = {
-								144754,	-- Fa'thuul the Feared
-								144755,	-- Zaxasj the Speaker
-							},
-							["g"] = {
-								crit(1, {	-- The Restless Cabal
-									["achievementID"] = 13414,	-- Crucible of Storms
-								}),
-								i(167863),	-- Pillar of the Drowned Cabal
-								i(167841),	-- Abyssal Speaker's Gauntlets
-								i(167833),	-- Fathom Dredgers
-								i(167219),	-- Gloves of the Undying Pact
-								i(167837),	-- Insurgent's Scouring Chain
-								i(167840),	-- Mindthief's Eldritch Clasp
-								i(167842),	-- Fa'thuul's Floodguards
-								i(167838),	-- Leggings of the Aberrant Tidesage
-								i(167218),	-- Zaxasj's Deepstriders
-							},
-						}),
-						e(2332, {	-- Uu'nat, Harbinger of the Void
-							["crs"] = {	145371 },	-- Uu'nat, Harbinger of the Void
-							["g"] = {
-								crit(2, {	-- Uu'nat, Harbinger of the Void
-									["achievementID"] = 13414,	-- Crucible of Storms
-								}),
-								i(167864),	-- Trident of Deep Ocean
-								i(167839),	-- Grips of Forsaken Sanity
-								i(167217),	-- Legplates of Unbound Anguish
-								i(167835),	-- Malformed Herald's Legwraps
-								i(167834),	-- Stormglide Steps
-								i(167867),	-- Harbinger's Inscrutable Will
-								i(167868),	-- Idol of Indiscriminate Consumption
-								i(167866),	-- Lurker's Insidious Gift
-								i(167865),	-- Void Stone
-							},
-						}),
-					},
+					e(2328, {	-- The Restless Cabal
+						["crs"] = {
+							144754,	-- Fa'thuul the Feared
+							144755,	-- Zaxasj the Speaker
+						},
+						["g"] = {
+							crit(1, {	-- The Restless Cabal
+								["achievementID"] = 13414,	-- Crucible of Storms
+							}),
+							i(167863),	-- Pillar of the Drowned Cabal
+							i(167841),	-- Abyssal Speaker's Gauntlets
+							i(167833),	-- Fathom Dredgers
+							i(167219),	-- Gloves of the Undying Pact
+							i(167837),	-- Insurgent's Scouring Chain
+							i(167840),	-- Mindthief's Eldritch Clasp
+							i(167842),	-- Fa'thuul's Floodguards
+							i(167838),	-- Leggings of the Aberrant Tidesage
+							i(167218),	-- Zaxasj's Deepstriders
+						},
+					}),
+					e(2332, {	-- Uu'nat, Harbinger of the Void
+						["crs"] = {	145371 },	-- Uu'nat, Harbinger of the Void
+						["g"] = {
+							crit(2, {	-- Uu'nat, Harbinger of the Void
+								["achievementID"] = 13414,	-- Crucible of Storms
+							}),
+							i(167864),	-- Trident of Deep Ocean
+							i(167839),	-- Grips of Forsaken Sanity
+							i(167217),	-- Legplates of Unbound Anguish
+							i(167835),	-- Malformed Herald's Legwraps
+							i(167834),	-- Stormglide Steps
+							i(167867),	-- Harbinger's Inscrutable Will
+							i(167868),	-- Idol of Indiscriminate Consumption
+							i(167866),	-- Lurker's Insidious Gift
+							i(167865),	-- Void Stone
+						},
+					}),
 				}),
 			}),
 			d(14, {	-- Normal

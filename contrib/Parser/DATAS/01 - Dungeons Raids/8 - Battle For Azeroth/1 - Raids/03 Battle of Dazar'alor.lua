@@ -5,7 +5,6 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 	inst(1176, { 	-- Battle of Dazar'alor
 		["order"] = "03",
 		["isRaid"] = true,
-	--  ["coord"] = {  },	-- 
 		["maps"] = {
 			1348,	-- Zandalari Treasury
 			1352,	-- Port of Zandalar
@@ -20,11 +19,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 		["lvl"] = 120,
 		["g"] = {
 			n(-1, {	-- Common Boss Drops
-				["groups"] = {
-					i(165693),	-- Vantus Rune Technique: Battle of Dazar'alor Rank1
-					i(165694),	-- Vantus Rune Technique: Battle of Dazar'alor Rank2
-					i(165695),	-- Vantus Rune Technique: Battle of Dazar'alor Rank3
-				},
+				i(165693),	-- Vantus Rune Technique: Battle of Dazar'alor Rank1
+				i(165694),	-- Vantus Rune Technique: Battle of Dazar'alor Rank2
+				i(165695),	-- Vantus Rune Technique: Battle of Dazar'alor Rank3
 			}),
 			d(17, {	-- LFR
 				["g"] = bubbleDown({["modID"] = 4}, {
@@ -39,29 +36,26 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(165563),	-- Boots of the Dark Iron Raider
 						i(165925),	-- Drape of Valiant Defense
 					}),
-					{	-- WING 1 — Siege of Dazar'alor (A) / Defense of Dazar'alor (H)
-						["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor
-						["hordeAchievementID"] = 13289,	-- Defense of Dazar'alor
+					n(-351, {	-- Boss Drops
+						i(165703),	-- Breath of Bwonsamdi
+					}),
+					ach(13286, {	-- Siege of Dazar'alor (A)
+						["hordeAchievementID"] = 13289,	-- Defense of Dazar'alor (H)
 						["g"] = {
-							i(165703),		-- Breath of Bwonsamdi
-							{	-- Champion of the Light
-								["encounterID"] = 2344,	-- 2333 Horde
+							e(2344, {	-- Champion of the Light	-- 2333 Horde
 								["crs"] = {
 									144683,	-- Ra'wani Kanae (A)
 									144680,	-- Frida Ironbellows (H)
 								},
 								["g"] = {
-									{  -- Champion of the Light (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
-										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-										["g"] = {
-											{
-												["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-												["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-												["criteriaID"] = 1,	-- Champion of the Light [Alliance] // [Horde]
-											},
-										},
-									},
+									crit(1, {	-- Champion of the Light (A)
+										["races"] = ALLIANCE_ONLY,
+										["achievementID"] = 13286,	-- Siege of Dazar'alor
+									}),
+									crit(1, {	-- Champion of the Light (H)
+										["races"] = HORDE_ONLY,
+										["achievementID"] = 13289,	-- Defense of Dazar'alor
+									}),
 									i(165586),	-- Dawnbreaker
 									i(165919),	-- Desecrated Blade of the Disciples
 									i(165584),	-- Sunburst Crest
@@ -76,9 +70,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									i(165533),	-- Lightgrace Sabatons
 									i(165569),	-- Ward of Envelopment
 								},
-							},
-							{	-- Jadefire Masters
-								["encounterID"] = 2323,	-- 2341 Horde
+							}),
+							e(2323, {	-- Jadefire Masters	-- 2341 Horde
 								["crs"] = {
 									144692,	-- Anathos Firecaller (A)
 									144691,	-- Ma'ra Grimfang (A)
@@ -86,17 +79,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									148270,	-- Mestrah <The Illuminated> (H)
 								},
 								["g"] = {
-									{  -- Jadefire Masters (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
-										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-										["g"] = {
-											{
-												["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-												["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-												["criteriaID"] = 3,	-- Jadefire Masters [Alliance] // [Horde]
-											},
-										},
-									},
+									crit(3, {	-- Jadefire Masters (A)
+										["races"] = ALLIANCE_ONLY,
+										["achievementID"] = 13286,	-- Siege of Dazar'alor
+									}),
+									crit(3, {	-- Jadefire Masters (H)
+										["races"] = HORDE_ONLY,
+										["achievementID"] = 13289,	-- Defense of Dazar'alor
+									}),
 									i(165587),	-- Phoenixfire Staff
 									i(165500),	-- Blazewing Hood
 									i(165548),	-- Helm of Tempered Jade
@@ -111,25 +101,21 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									i(165565),	-- Band of Multi-Sided Strikes
 									i(165568),	-- Invocation of Yu'lon
 								},
-							},
-							{	-- Grong, the Revenant
-								["encounterID"] = 2340,	-- 2325 Horde
+							}),
+							e(2340, {	-- Grong, the Revenant	-- 2325 Horde
 								["crs"] = {
 									144638,	-- Grong the Revenant (A)
 									148117,	-- Grong the Revenant (H)
 								},
 								["g"] = {
-									{  -- Grong, the Revenant (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
-										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-										["g"] = {
-											{
-												["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-												["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-												["criteriaID"] = 2,	-- Grong, the Revenant [Alliance] // [Horde]
-											},
-										},
-									},
+									crit(2, {	-- Grong, the Revenant (A)
+										["races"] = ALLIANCE_ONLY,
+										["achievementID"] = 13286,	-- Siege of Dazar'alor
+									}),
+									crit(2, {	-- Grong, the Revenant (H)
+										["races"] = HORDE_ONLY,
+										["achievementID"] = 13289,	-- Defense of Dazar'alor
+									}),
 									i(165589),	-- Hornridged Crusher
 									i(165920),	-- Apetagonizer's Claw
 									i(165588),	-- Bonelash Paw
@@ -145,32 +131,27 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									i(165499),	-- Leggings of Dire Research
 									i(165574),	-- Grong's Primal Rage
 								},
-							},
+							}),
 						},
-					},
-					{	-- WING 2 — Empire's Fall (A) / Death's Bargain (H)
-						["allianceAchievementID"] = 13287,	-- Empire's Fall
-						["hordeAchievementID"] = 13290,	-- Death's Bargain
+					}),
+					ach(13287, {	-- Empire's Fall (A)
+						["hordeAchievementID"] = 13290,	-- Death's Bargain (H)
 						["g"] = {
-							{	-- Opulence
-								["encounterID"] = 2342,
+							e(2342, {	-- Opulence
 								["crs"] = {
 									145261,	-- Opulence
 									145274,	-- Yalat's Bulwark
 									145273,	-- The Hand of In'zashi
 								},
 								["g"] = {
-									{  --  Opulence Empire's Fall [Alliance] // Death's Bargain [Horde]
-										["allianceAchievementID"] = 13287,	-- Empire's Fall
-										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["g"] = {
-											{
-												["allianceAchievementID"] = 13287,	-- Empire's Fall
-												["hordeAchievementID"] = 13290,		-- Death's Bargain
-												["criteriaID"] = 1,	-- Opulence [Alliance] // [Horde]
-											},
-										},
-									},
+									crit(1, {	-- Opulence (A)
+										["races"] = ALLIANCE_ONLY,
+										["achievementID"] = 13287,	-- Empire's Fall
+									}),
+									crit(1, {	-- Opulence (H)
+										["races"] = HORDE_ONLY,
+										["achievementID"] = 13290,	-- Death's Bargain
+									}),
 									i(165591),	-- Bloodtooth, the Soulfeaster
 									i(165592),	-- Goblet of Glittering Favor
 									i(165593),	-- Greed's Folly
@@ -186,9 +167,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									i(165573),	-- Diamond-Laced Refracting Prism
 									i(165571),	-- Incandescent Sliver
 								},
-							},
-							{	-- Loa Council / Conclave of the Chosen
-								["encounterID"] = 2330,
+							}),
+							e(2330, {	-- Loa Council / Conclave of the Chosen
 								["crs"] = {
 									144941,	-- Akunda's Aspect
 									144767,	-- Gonk's Aspect
@@ -196,17 +176,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									144747,	-- Pa'ku's Aspect
 								},
 								["g"] = {
-									{  -- Loa Council/Conclave of the Chosen; Empire's Fall [Alliance] // Death's Bargain [Horde]
-										["allianceAchievementID"] = 13287,	-- Empire's Fall
-										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["g"] = {
-											{
-												["allianceAchievementID"] = 13287,	-- Empire's Fall
-												["hordeAchievementID"] = 13290,		-- Death's Bargain
-												["criteriaID"] = 2,	-- Loa Council [Alliance] // Conclave of the Chosen [Horde]
-											},
-										},
-									},
+									crit(2, {	-- Loa Council/Conclave of the Chosen (A)
+										["races"] = ALLIANCE_ONLY,
+										["achievementID"] = 13287,	-- Empire's Fall
+									}),
+									crit(2, {	-- Loa Council/Conclave of the Chosen (H)
+										["races"] = HORDE_ONLY,
+										["achievementID"] = 13290,	-- Death's Bargain
+									}),
 									i(165594),	-- Akunda's Shocksplitter
 									i(165595),	-- Blade of Encroaching Death
 									i(165599),	-- Pterrorwing Longbow
@@ -221,9 +198,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									h(i(165581)),	-- Crest of Pa'ku (Horde)
 									i(165579),	-- Kimbul's Razor Claw
 								},
-							},
-							{	-- King Rastakhan
-								["encounterID"] = 2335,
+							}),
+							e(2335, {	-- King Rastakhan
 								["crs"] = {
 									145644,	-- Bwonsamdi
 									145616,	-- King Rastakhan
@@ -231,17 +207,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									146322,	-- Siegebreaker Roka
 								},
 								["g"] = {
-									{  -- King Rastakhan Empire's Fall [Alliance] // Death's Bargain [Horde]
-										["allianceAchievementID"] = 13287,	-- Empire's Fall
-										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["g"] = {
-											{
-												["allianceAchievementID"] = 13287,	-- Empire's Fall
-												["hordeAchievementID"] = 13290,		-- Death's Bargain
-												["criteriaID"] = 3,	-- King Rastakhan [Alliance] // [Horde]
-											},
-										},
-									},
+									crit(3, {	-- King Rastakhan (A)
+										["races"] = ALLIANCE_ONLY,
+										["achievementID"] = 13287,	-- Empire's Fall
+									}),
+									crit(3, {	-- King Rastakhan (H)
+										["races"] = HORDE_ONLY,
+										["achievementID"] = 13290,	-- Death's Bargain
+									}),
 									i(165597),	-- Deathspeaker Spire
 									i(165596),	-- Last Fang of Rezan
 									i(165537),	-- Mantle of the Soulbinder's Caress
@@ -256,28 +229,23 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									i(165696),	-- Formula: Enchanted Tiki Mask
 									i(165703),	-- Breath of Bwonsamdi
 								},
-							},
+							}),
 						},
-					},
-					{	-- WING 3 — Might of the Alliance (A) / Victory or Death (H)
-						["allianceAchievementID"] = 13288,	-- Might of the Alliance
-						["hordeAchievementID"] = 13291,	-- Victory or Death
+					}),
+					ach(13288, {	-- Might of the Alliance (A)
+						["hordeAchievementID"] = 13291,	-- Victory or Death (H)
 						["g"] = {
-							{	-- High Tinker Mekkatorque
-								["encounterID"] = 2334,
+							e(2334, {	-- High Tinker Mekkatorque
 								["crs"] = { 144796 },	-- High Tinker Mekkatorque
 								["g"] = {
-									{  -- High Tinker Mekkatorque; Might of the Alliance [Alliance] // Victory or Death [Horde]
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-										["g"] = {
-											{
-												["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-												["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-												["criteriaID"] = 1,	-- Mekkatorque [Alliance] // [Horde]
-											},
-										},
-									},
+									crit(1, {	-- High Tinker Mekkatorque (A)
+										["races"] = ALLIANCE_ONLY,
+										["achievementID"] = 13288,	-- Might of the Alliance
+									}),
+									crit(1, {	-- High Tinker Mekkatorque (H)
+										["races"] = HORDE_ONLY,
+										["achievementID"] = 13291,	-- Victory of Death
+									}),
 									i(165598),	-- Servo-Claw Smasher
 									i(165600),	-- Twin-Pipe Buster Cannon
 									i(165543),	-- Target-Tracking Headgear
@@ -291,26 +259,22 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									i(165572),	-- Variable Intensity Gigavolt Oscillating Reactor
 									i(166276),	-- Schematic: Unstable Temporal Time Shifter
 								},
-							},
-							{	-- Stormwall Blockade
-								["encounterID"] = 2337,
+							}),
+							e(2337, {	-- Stormwall Blockade
 								["crs"] = {
 									146253,	-- Brother Joseph
 									146256,	-- Laminaria
 									146251,	-- Sister Katherine
 								},
 								["g"] = {
-									{  -- Stormwall Blockade; Might of the Alliance [Alliance] // Victory or Death [Horde]
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-										["g"] = {
-											{
-												["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-												["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-												["criteriaID"] = 2,	-- Stormwall Blockade [Alliance] // [Horde]
-											},
-										},
-									},
+									crit(2, {	-- Stormwall Blockade (A)
+										["races"] = ALLIANCE_ONLY,
+										["achievementID"] = 13288,	-- Might of the Alliance
+									}),
+									crit(2, {	-- Stormwall Blockade (H)
+										["races"] = HORDE_ONLY,
+										["achievementID"] = 13291,	-- Victory of Death
+									}),
 									i(165602),	-- Crash of Tides
 									i(165590),	-- Docksplitter Siege Hook
 									i(165601),	-- Storm-Toothed Kasuyu
@@ -325,22 +289,18 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									i(165528),	-- Kelp-Laced Greaves
 									i(165506),	-- Wavecaller Leggings
 								},
-							},
-							{	-- Lady Jaina Proudmoore
-								["encounterID"] = 2343,
+							}),
+							e(2343, {	-- Lady Jaina Proudmoore
 								["crs"] = { 146409 },	-- Lady Jaina Proudmoore
 								["g"] = {
-									{  -- Lady Jaina Proudmoore; Might of the Alliance [Alliance] // Victory or Death [Horde]
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-										["g"] = {
-											{
-												["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-												["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-												["criteriaID"] = 3,	-- Lady Jaina Proudmoore [Alliance] // [Horde]
-											},
-										},
-									},
+									crit(3, {	-- Jaina Proudmoore (A)
+										["races"] = ALLIANCE_ONLY,
+										["achievementID"] = 13288,	-- Might of the Alliance
+									}),
+									crit(3, {	-- Jaina Proudmoore (H)
+										["races"] = HORDE_ONLY,
+										["achievementID"] = 13291,	-- Victory of Death
+									}),
 									i(166518),	-- G.M.O.D. (MOUNT!  Moved from High Tinker Mekkatorque in 2.26.19 hotfix, change to LFR only)
 									i(166582),	-- Technique: Glyph of the Tides
 									i(165604),	-- Daelin Proudmoore's Saber
@@ -357,9 +317,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									i(165576),	-- Tidestorm Codex
 									i(165703),	-- Breath of Bwonsamdi
 								},
-							},
+							}),
 						},
-					},
+					}),
 				}),
 			}),
 			d(14, {	-- Normal
@@ -376,25 +336,25 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(165925),	-- Drape of Valiant Defense
 					}),
 					n(-351, {	-- Boss Drop
-						["groups"] = {
-							i(165703),	-- Breath of Bwonsamdi
-						},
+						i(165703),	-- Breath of Bwonsamdi
 					}),
 					ach(13315, {	-- Glory of the Dazar'alor Raider
 						i(166539),	-- Dazar'alor Windreaver
 					}),
-					{	-- Champion of the Light
-						["encounterID"] = 2344,	-- 2333 Horde
+					e(2344, {	-- Champion of the Light	-- 2333 Horde
 						["crs"] = {
 							144683,	-- Ra'wani Kanae (A)
 							144680,	-- Frida Ironbellows (H)
 						},
 						["g"] = {
-							{  -- Champion of the Light (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
-								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-								["criteriaID"] = 1,	-- Champion of the Light [Alliance] // [Horde]
-							},
+							crit(1, {	-- Champion of the Light (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13286,	-- Siege of Dazar'alor
+							}),
+							crit(1, {	-- Champion of the Light (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13289,	-- Defense of Dazar'alor
+							}),
 							ach(13316),	-- Can I Get a Hek Hek Hek Yeah?
 							i(165586),	-- Dawnbreaker
 							i(165919),	-- Desecrated Blade of the Disciples
@@ -410,9 +370,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165533),	-- Lightgrace Sabatons
 							i(165569),	-- Ward of Envelopment
 						},
-					},
-					{	-- Jadefire Masters
-						["encounterID"] = 2323,	-- 2341 Horde
+					}),
+					e(2323, {	-- Jadefire Masters	-- 2341 Horde
 						["crs"] = {
 							144692,	-- Anathos Firecaller (A)
 							144691,	-- Ma'ra Grimfang (A)
@@ -420,17 +379,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							148270,	-- Mestrah <The Illuminated> (H)
 						},
 						["g"] = {
-							{  -- Jadefire Masters (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
-								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-										["criteriaID"] = 3,	-- Jadefire Masters [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(3, {	-- Jadefire Masters (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13286,	-- Siege of Dazar'alor
+							}),
+							crit(3, {	-- Jadefire Masters (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13289,	-- Defense of Dazar'alor
+							}),
 							ach(13431),	-- Hidden Dragon
 							i(165587),	-- Phoenixfire Staff
 							i(165500),	-- Blazewing Hood
@@ -446,25 +402,21 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165565),	-- Band of Multi-Sided Strikes
 							i(165568),	-- Invocation of Yu'lon
 						},
-					},
-					{	-- Grong, the Revenant
-						["encounterID"] = 2340,	-- 2325 Horde
+					}),
+					e(2340, {	-- Grong, the Revenant	-- 2325 Horde
 						["crs"] = {
 							144638,	-- Grong the Revenant (A)
 							148117,	-- Grong the Revenant (H)
 						},
 						["g"] = {
-							{  -- Grong, the Revenant (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
-								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-										["criteriaID"] = 2,	-- Grong, the Revenant [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(2, {	-- Grong, the Revenant (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13286,	-- Siege of Dazar'alor
+							}),
+							crit(2, {	-- Grong, the Revenant (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13289,	-- Defense of Dazar'alor
+							}),
 							ach(13383),	-- Barrel of Monkeys
 							i(165589),	-- Hornridged Crusher
 							i(165920),	-- Apetagonizer's Claw
@@ -481,26 +433,22 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165499),	-- Leggings of Dire Research
 							i(165574),	-- Grong's Primal Rage
 						},
-					},
-					{	-- Opulence
-						["encounterID"] = 2342,
+					}),
+					e(2342, {	-- Opulence
 						["crs"] = {
 							145261,	-- Opulence
 							145274,	-- Yalat's Bulwark
 							145273,	-- The Hand of In'zashi
 						},
 						["g"] = {
-							{  --  Opulence Empire's Fall [Alliance] // Death's Bargain [Horde]
-								["allianceAchievementID"] = 13287,	-- Empire's Fall
-								["hordeAchievementID"] = 13290,		-- Death's Bargain
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13287,	-- Empire's Fall
-										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["criteriaID"] = 1,	-- Opulence [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(1, {	-- Opulence (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13287,	-- Empire's Fall
+							}),
+							crit(1, {	-- Opulence (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13290,	-- Death's Bargain
+							}),
 							ach(13345),	-- Praise the Sunflower
 							i(165591),	-- Bloodtooth, the Soulfeaster
 							i(165592),	-- Goblet of Glittering Favor
@@ -517,9 +465,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165573),	-- Diamond-Laced Refracting Prism
 							i(165571),	-- Incandescent Sliver
 						},
-					},
-					{	-- Loa Council / Conclave of the Chosen
-						["encounterID"] = 2330,
+					}),
+					e(2330, {	-- Loa Council / Conclave of the Chosen
 						["crs"] = {
 							144941,	-- Akunda's Aspect
 							144767,	-- Gonk's Aspect
@@ -527,17 +474,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							144747,	-- Pa'ku's Aspect
 						},
 						["g"] = {
-							{  -- Loa Council/Conclave of the Chosen; Empire's Fall [Alliance] // Death's Bargain [Horde]
-								["allianceAchievementID"] = 13287,	-- Empire's Fall
-								["hordeAchievementID"] = 13290,		-- Death's Bargain
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13287,	-- Empire's Fall
-										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["criteriaID"] = 2,	-- Loa Council [Alliance] // Conclave of the Chosen [Horde]
-									},
-								},
-							},
+							crit(2, {	-- Loa Council/Conclave of the Chosen (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13287,	-- Empire's Fall
+							}),
+							crit(2, {	-- Loa Council/Conclave of the Chosen (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13290,	-- Death's Bargain
+							}),
 							ach(13325),	-- Walk the Dinosaur
 							i(165846),	-- Enchanted Talon of Pa'ku (PET!)
 							i(165847),	-- Thundering Scale of Akunda (PET!)
@@ -555,9 +499,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							h(i(165581)),	-- Crest of Pa'ku (Horde)
 							i(165579),	-- Kimbul's Razor Claw
 						},
-					},
-					{	-- King Rastakhan
-						["encounterID"] = 2335,
+					}),
+					e(2335, {	-- King Rastakhan
 						["crs"] = {
 							145644,	-- Bwonsamdi
 							145616,	-- King Rastakhan
@@ -565,17 +508,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							146322,	-- Siegebreaker Roka
 						},
 						["g"] = {
-							{  -- King Rastakhan Empire's Fall [Alliance] // Death's Bargain [Horde]
-								["allianceAchievementID"] = 13287,	-- Empire's Fall
-								["hordeAchievementID"] = 13290,		-- Death's Bargain
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13287,	-- Empire's Fall
-										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["criteriaID"] = 3,	-- King Rastakhan [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(3, {	-- King Rastakhan (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13287,	-- Empire's Fall
+							}),
+							crit(3, {	-- King Rastakhan (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13290,	-- Death's Bargain
+							}),
 							ach(13425),	-- We Got Spirit, How About You?
 							i(165597),	-- Deathspeaker Spire
 							i(165596),	-- Last Fang of Rezan
@@ -590,22 +530,18 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165578),	-- Mirror of Entwined Fate
 							i(165696),	-- Formula: Enchanted Tiki Mask
 						},
-					},
-					{	-- High Tinker Mekkatorque
-						["encounterID"] = 2334,
+					}),
+					e(2334, {	-- High Tinker Mekkatorque
 						["crs"] = { 144796 },	-- High Tinker Mekkatorque
 						["g"] = {
-							{  -- High Tinker Mekkatorque; Might of the Alliance [Alliance] // Victory or Death [Horde]
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-										["criteriaID"] = 1,	-- Mekkatorque [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(1, {	-- High Tinker Mekkatorque (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13288,	-- Might of the Alliance
+							}),
+							crit(1, {	-- High Tinker Mekkatorque (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13291,	-- Victory of Death
+							}),
 							ach(13401),	-- I Got Next!
 							i(166518),	-- G.M.O.D. (MOUNT!)
 							i(165598),	-- Servo-Claw Smasher
@@ -621,26 +557,22 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165572),	-- Variable Intensity Gigavolt Oscillating Reactor
 							i(166276),	-- Schematic: Unstable Temporal Time Shifter
 						},
-					},
-					{	-- Stormwall Blockade
-						["encounterID"] = 2337,
+					}),
+					e(2337, {	-- Stormwall Blockade
 						["crs"] = {
 							146253,	-- Brother Joseph
 							146256,	-- Laminaria
 							146251,	-- Sister Katherine
 						},
 						["g"] = {
-							{  -- Stormwall Blockade; Might of the Alliance [Alliance] // Victory or Death [Horde]
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-										["criteriaID"] = 2,	-- Stormwall Blockade [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(2, {	-- Stormwall Blockade (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13288,	-- Might of the Alliance
+							}),
+							crit(2, {	-- Stormwall Blockade (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13291,	-- Victory of Death
+							}),
 							ach(13430),	-- De Lurker Be'loa
 							i(165602),	-- Crash of Tides
 							i(165590),	-- Docksplitter Siege Hook
@@ -656,22 +588,18 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165528),	-- Kelp-Laced Greaves
 							i(165506),	-- Wavecaller Leggings
 						},
-					},
-					{	-- Lady Jaina Proudmoore
-						["encounterID"] = 2343,
+					}),
+					e(2343, {	-- Lady Jaina Proudmoore
 						["crs"] = { 146409 },	-- Lady Jaina Proudmoore
 						["g"] = {
-							{  -- Lady Jaina Proudmoore; Might of the Alliance [Alliance] // Victory or Death [Horde]
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-										["criteriaID"] = 3,	-- Lady Jaina Proudmoore [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(3, {	-- Jaina Proudmoore (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13288,	-- Might of the Alliance
+							}),
+							crit(3, {	-- Jaina Proudmoore (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13291,	-- Victory of Death
+							}),
 							ach(13410),	-- Snow Fun Allowed
 							i(166582),	-- Technique: Glyph of the Tides
 							i(165604),	-- Daelin Proudmoore's Saber
@@ -687,7 +615,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165570),	-- Everchill Anchor
 							i(165576),	-- Tidestorm Codex
 						},
-					},
+					}),
 				}),
 			}),
 			d(15, {	-- Heroic
@@ -704,25 +632,25 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(165925),	-- Drape of Valiant Defense
 					}),
 					n(-351, {	-- Boss Drop
-						["groups"] = {
-							i(165703),	-- Breath of Bwonsamdi
-						},
+						i(165703),	-- Breath of Bwonsamdi
 					}),
 					ach(13315, {	-- Glory of the Dazar'alor Raider
 						i(166539),	-- Dazar'alor Windreaver
 					}),
-					{	-- Champion of the Light
-						["encounterID"] = 2344,	-- 2333 Horde
+					e(2344, {	-- Champion of the Light	-- 2333 Horde
 						["crs"] = {
 							144683,	-- Ra'wani Kanae (A)
 							144680,	-- Frida Ironbellows (H)
 						},
 						["g"] = {
-							{  -- Champion of the Light (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
-								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-								["criteriaID"] = 1,	-- Champion of the Light [Alliance] // [Horde]
-							},
+							crit(1, {	-- Champion of the Light (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13286,	-- Siege of Dazar'alor
+							}),
+							crit(1, {	-- Champion of the Light (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13289,	-- Defense of Dazar'alor
+							}),
 							ach(13316),	-- Can I Get a Hek Hek Hek Yeah?
 							i(165586),	-- Dawnbreaker
 							i(165919),	-- Desecrated Blade of the Disciples
@@ -738,9 +666,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165533),	-- Lightgrace Sabatons
 							i(165569),	-- Ward of Envelopment
 						},
-					},
-					{	-- Jadefire Masters
-						["encounterID"] = 2323,	-- 2341 Horde
+					}),
+					e(2323, {	-- Jadefire Masters	-- 2341 Horde
 						["crs"] = {
 							144692,	-- Anathos Firecaller (A)
 							144691,	-- Ma'ra Grimfang (A)
@@ -748,17 +675,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							148270,	-- Mestrah <The Illuminated> (H)
 						},
 						["g"] = {
-							{  -- Jadefire Masters (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
-								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-										["criteriaID"] = 3,	-- Jadefire Masters [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(3, {	-- Jadefire Masters (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13286,	-- Siege of Dazar'alor
+							}),
+							crit(3, {	-- Jadefire Masters (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13289,	-- Defense of Dazar'alor
+							}),
 							ach(13431),	-- Hidden Dragon
 							i(165587),	-- Phoenixfire Staff
 							i(165500),	-- Blazewing Hood
@@ -774,25 +698,21 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165565),	-- Band of Multi-Sided Strikes
 							i(165568),	-- Invocation of Yu'lon
 						},
-					},
-					{	-- Grong, the Revenant
-						["encounterID"] = 2340,	-- 2325 Horde
+					}),
+					e(2340, {	-- Grong, the Revenant	-- 2325 Horde
 						["crs"] = {
 							144638,	-- Grong the Revenant (A)
 							148117,	-- Grong the Revenant (H)
 						},
 						["g"] = {
-							{  -- Grong, the Revenant (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
-								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-										["criteriaID"] = 2,	-- Grong, the Revenant [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(2, {	-- Grong, the Revenant (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13286,	-- Siege of Dazar'alor
+							}),
+							crit(2, {	-- Grong, the Revenant (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13289,	-- Defense of Dazar'alor
+							}),
 							ach(13383),	-- Barrel of Monkeys
 							i(165589),	-- Hornridged Crusher
 							i(165920),	-- Apetagonizer's Claw
@@ -809,26 +729,22 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165499),	-- Leggings of Dire Research
 							i(165574),	-- Grong's Primal Rage
 						},
-					},
-					{	-- Opulence
-						["encounterID"] = 2342,
+					}),
+					e(2342, {	-- Opulence
 						["crs"] = {
 							145261,	-- Opulence
 							145274,	-- Yalat's Bulwark
 							145273,	-- The Hand of In'zashi
 						},
 						["g"] = {
-							{  --  Opulence Empire's Fall [Alliance] // Death's Bargain [Horde]
-								["allianceAchievementID"] = 13287,	-- Empire's Fall
-								["hordeAchievementID"] = 13290,		-- Death's Bargain
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13287,	-- Empire's Fall
-										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["criteriaID"] = 1,	-- Opulence [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(1, {	-- Opulence (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13287,	-- Empire's Fall
+							}),
+							crit(1, {	-- Opulence (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13290,	-- Death's Bargain
+							}),
 							ach(13345),	-- Praise the Sunflower
 							i(165591),	-- Bloodtooth, the Soulfeaster
 							i(165592),	-- Goblet of Glittering Favor
@@ -845,9 +761,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165573),	-- Diamond-Laced Refracting Prism
 							i(165571),	-- Incandescent Sliver
 						},
-					},
-					{	-- Loa Council / Conclave of the Chosen
-						["encounterID"] = 2330,
+					}),
+					e(2330, {	-- Loa Council / Conclave of the Chosen
 						["crs"] = {
 							144941,	-- Akunda's Aspect
 							144767,	-- Gonk's Aspect
@@ -855,17 +770,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							144747,	-- Pa'ku's Aspect
 						},
 						["g"] = {
-							{  -- Loa Council/Conclave of the Chosen; Empire's Fall [Alliance] // Death's Bargain [Horde]
-								["allianceAchievementID"] = 13287,	-- Empire's Fall
-								["hordeAchievementID"] = 13290,		-- Death's Bargain
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13287,	-- Empire's Fall
-										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["criteriaID"] = 2,	-- Loa Council [Alliance] // Conclave of the Chosen [Horde]
-									},
-								},
-							},
+							crit(2, {	-- Loa Council/Conclave of the Chosen (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13287,	-- Empire's Fall
+							}),
+							crit(2, {	-- Loa Council/Conclave of the Chosen (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13290,	-- Death's Bargain
+							}),
 							ach(13325),	-- Walk the Dinosaur
 							i(165846),	-- Enchanted Talon of Pa'ku (PET!)
 							i(165847),	-- Thundering Scale of Akunda (PET!)
@@ -883,9 +795,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							h(i(165581)),	-- Crest of Pa'ku (Horde)
 							i(165579),	-- Kimbul's Razor Claw
 						},
-					},
-					{	-- King Rastakhan
-						["encounterID"] = 2335,
+					}),
+					e(2335, {	-- King Rastakhan
 						["crs"] = {
 							145644,	-- Bwonsamdi
 							145616,	-- King Rastakhan
@@ -893,17 +804,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							146322,	-- Siegebreaker Roka
 						},
 						["g"] = {
-							{  -- King Rastakhan Empire's Fall [Alliance] // Death's Bargain [Horde]
-								["allianceAchievementID"] = 13287,	-- Empire's Fall
-								["hordeAchievementID"] = 13290,		-- Death's Bargain
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13287,	-- Empire's Fall
-										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["criteriaID"] = 3,	-- King Rastakhan [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(3, {	-- King Rastakhan (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13287,	-- Empire's Fall
+							}),
+							crit(3, {	-- King Rastakhan (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13290,	-- Death's Bargain
+							}),
 							ach(13425),	-- We Got Spirit, How About You?
 							i(165597),	-- Deathspeaker Spire
 							i(165596),	-- Last Fang of Rezan
@@ -918,22 +826,18 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165578),	-- Mirror of Entwined Fate
 							i(165696),	-- Formula: Enchanted Tiki Mask
 						},
-					},
-					{	-- High Tinker Mekkatorque
-						["encounterID"] = 2334,
+					}),
+					e(2334, {	-- High Tinker Mekkatorque
 						["crs"] = { 144796 },	-- High Tinker Mekkatorque
 						["g"] = {
-							{  -- High Tinker Mekkatorque; Might of the Alliance [Alliance] // Victory or Death [Horde]
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-										["criteriaID"] = 1,	-- Mekkatorque [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(1, {	-- High Tinker Mekkatorque (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13288,	-- Might of the Alliance
+							}),
+							crit(1, {	-- High Tinker Mekkatorque (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13291,	-- Victory of Death
+							}),
 							ach(13401),	-- I Got Next!
 							i(166518),	-- G.M.O.D. (MOUNT!)
 							i(165598),	-- Servo-Claw Smasher
@@ -949,26 +853,22 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165572),	-- Variable Intensity Gigavolt Oscillating Reactor
 							i(166276),	-- Schematic: Unstable Temporal Time Shifter
 						},
-					},
-					{	-- Stormwall Blockade
-						["encounterID"] = 2337,
+					}),
+					e(2337, {	-- Stormwall Blockade
 						["crs"] = {
 							146253,	-- Brother Joseph
 							146256,	-- Laminaria
 							146251,	-- Sister Katherine
 						},
 						["g"] = {
-							{  -- Stormwall Blockade; Might of the Alliance [Alliance] // Victory or Death [Horde]
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-										["criteriaID"] = 2,	-- Stormwall Blockade [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(2, {	-- Stormwall Blockade (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13288,	-- Might of the Alliance
+							}),
+							crit(2, {	-- Stormwall Blockade (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13291,	-- Victory of Death
+							}),
 							ach(13430),	-- De Lurker Be'loa
 							i(165602),	-- Crash of Tides
 							i(165590),	-- Docksplitter Siege Hook
@@ -984,22 +884,18 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165528),	-- Kelp-Laced Greaves
 							i(165506),	-- Wavecaller Leggings
 						},
-					},
-					{	-- Lady Jaina Proudmoore
-						["encounterID"] = 2343,
+					}),
+					e(2343, {	-- Lady Jaina Proudmoore
 						["crs"] = { 146409 },	-- Lady Jaina Proudmoore
 						["g"] = {
-							{  -- Lady Jaina Proudmoore; Might of the Alliance [Alliance] // Victory or Death [Horde]
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-										["criteriaID"] = 3,	-- Lady Jaina Proudmoore [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(3, {	-- Jaina Proudmoore (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13288,	-- Might of the Alliance
+							}),
+							crit(3, {	-- Jaina Proudmoore (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13291,	-- Victory of Death
+							}),
 							ach(13410),		-- Snow Fun Allowed
 							un(2, ach(13322)),	-- Ahead of the Curve: Lady Jaina Proudmoore
 							i(166582),	-- Technique: Glyph of the Tides
@@ -1016,7 +912,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165570),	-- Everchill Anchor
 							i(165576),	-- Tidestorm Codex
 						},
-					},
+					}),
 				}),
 			}),
 			d(16, {	-- Mythic
@@ -1033,25 +929,25 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(165925),	-- Drape of Valiant Defense
 					}),
 					n(-351, {	-- Boss Drop
-						["groups"] = {
-							i(165703),	-- Breath of Bwonsamdi
-						},
+						i(165703),	-- Breath of Bwonsamdi
 					}),
 					ach(13315, {	-- Glory of the Dazar'alor Raider
 						i(166539),	-- Dazar'alor Windreaver
 					}),
-					{	-- Champion of the Light
-						["encounterID"] = 2344,	-- 2333 Horde
+					e(2344, {	-- Champion of the Light	-- 2333 Horde
 						["crs"] = {
 							144683,	-- Ra'wani Kanae (A)
 							144680,	-- Frida Ironbellows (H)
 						},
 						["g"] = {
-							{	-- Champion of the Light (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
-								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-								["criteriaID"] = 1,	-- Champion of the Light [Alliance] // [Horde]
-							},
+							crit(1, {	-- Champion of the Light (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13286,	-- Siege of Dazar'alor
+							}),
+							crit(1, {	-- Champion of the Light (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13289,	-- Defense of Dazar'alor
+							}),
 							ach(13316),	-- Can I Get a Hek Hek Hek Yeah?
 							ach(13292),	-- Mythic: Champion of the Light
 							i(165586),	-- Dawnbreaker
@@ -1068,9 +964,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165533),	-- Lightgrace Sabatons
 							i(165569),	-- Ward of Envelopment
 						},
-					},
-					{	-- Jadefire Masters
-						["encounterID"] = 2323,	-- 2341 Horde
+					}),
+					e(2323, {	-- Jadefire Masters	-- 2341 Horde
 						["crs"] = {
 							144692,	-- Anathos Firecaller (A)
 							144691,	-- Ma'ra Grimfang (A)
@@ -1078,22 +973,21 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							148270,	-- Mestrah <The Illuminated> (H)
 						},
 						["g"] = {
-							{  -- Jadefire Masters (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
-								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-										["criteriaID"] = 3,	-- Jadefire Masters [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(3, {	-- Jadefire Masters (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13286,	-- Siege of Dazar'alor
+							}),
+							crit(3, {	-- Jadefire Masters (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13289,	-- Defense of Dazar'alor
+							}),
 							ach(13431),		-- Hidden Dragon
-							{  -- Mythic: Jadefire Masters [Alliance] // [Horde]
-								["allianceAchievementID"] = 13298,	-- Mythic: Jadefire Masters (A)
-								["hordeAchievementID"] = 13295,		-- Mythic: Jadefire Masters (H)
-							},
+							ach(13298, {	-- Mythic: Jadefire Masters (A)
+								["races"] = ALLIANCE_ONLY,
+							}),
+							ach(13295, {	-- Mythic: Jadefire Masters (H)
+								["races"] = HORDE_ONLY,
+							}),
 							i(165587),	-- Phoenixfire Staff
 							i(165500),	-- Blazewing Hood
 							i(165548),	-- Helm of Tempered Jade
@@ -1102,31 +996,27 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165540),	-- Mistfire Raiment
 							i(165764),	-- Firecaller's Handwraps
 							i(165531),	-- Grips of Harmonious Spirits
-							i(165503),    -- Manceroy's Flamefists
+							i(165503),	-- Manceroy's Flamefists
 							i(165552),	-- Embersear Waistguard
 							i(165521),	-- Cranedancer Leggings
 							i(165565),	-- Band of Multi-Sided Strikes
 							i(165568),	-- Invocation of Yu'lon
 						},
-					},
-					{	-- Grong, the Revenant
-						["encounterID"] = 2340,	-- 2325 Horde
+					}),
+					e(2340, {	-- Grong, the Revenant	-- 2325 Horde
 						["crs"] = {
 							144638,	-- Grong the Revenant (A)
 							148117,	-- Grong the Revenant (H)
 						},
 						["g"] = {
-							{  -- Grong, the Revenant (Siege of Dazar'alor) [Alliance] //  Champion of the Light (Defense of Dazar'alor)[Horde]
-								["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-								["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13286,	-- Siege of Dazar'alor [Alliance]
-										["hordeAchievementID"] = 13289,		-- Defense of Dazar'alor
-										["criteriaID"] = 2,	-- Grong, the Revenant [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(2, {	-- Grong, the Revenant (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13286,	-- Siege of Dazar'alor
+							}),
+							crit(2, {	-- Grong, the Revenant (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13289,	-- Defense of Dazar'alor
+							}),
 							ach(13383),	-- Barrel of Monkeys
 							ach(13293),	-- Mythic: Grong
 							i(165589),	-- Hornridged Crusher
@@ -1144,26 +1034,22 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165499),	-- Leggings of Dire Research
 							i(165574),	-- Grong's Primal Rage
 						},
-					},
-					{	-- Opulence
-						["encounterID"] = 2342,
+					}),
+					e(2342, {	-- Opulence
 						["crs"] = {
 							145261,	-- Opulence
 							145274,	-- Yalat's Bulwark
 							145273,	-- The Hand of In'zashi
 						},
 						["g"] = {
-							{  --  Opulence Empire's Fall [Alliance] // Death's Bargain [Horde]
-								["allianceAchievementID"] = 13287,	-- Empire's Fall
-								["hordeAchievementID"] = 13290,		-- Death's Bargain
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13287,	-- Empire's Fall
-										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["criteriaID"] = 1,	-- Opulence [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(1, {	-- Opulence (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13287,	-- Empire's Fall
+							}),
+							crit(1, {	-- Opulence (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13290,	-- Death's Bargain
+							}),
 							ach(13345),	-- Praise the Sunflower
 							ach(13299),	-- Mythic: Opulence
 							i(165591),	-- Bloodtooth, the Soulfeaster
@@ -1181,9 +1067,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165573),	-- Diamond-Laced Refracting Prism
 							i(165571),	-- Incandescent Sliver
 						},
-					},
-					{	-- Loa Council / Conclave of the Chosen
-						["encounterID"] = 2330,
+					}),
+					e(2330, {	-- Loa Council / Conclave of the Chosen
 						["crs"] = {
 							144941,	-- Akunda's Aspect
 							144767,	-- Gonk's Aspect
@@ -1191,17 +1076,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							144747,	-- Pa'ku's Aspect
 						},
 						["g"] = {
-							{  -- Loa Council/Conclave of the Chosen; Empire's Fall [Alliance] // Death's Bargain [Horde]
-								["allianceAchievementID"] = 13287,	-- Empire's Fall
-								["hordeAchievementID"] = 13290,		-- Death's Bargain
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13287,	-- Empire's Fall
-										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["criteriaID"] = 2,	-- Loa Council [Alliance] // Conclave of the Chosen [Horde]
-									},
-								},
-							},
+							crit(2, {	-- Loa Council/Conclave of the Chosen (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13287,	-- Empire's Fall
+							}),
+							crit(2, {	-- Loa Council/Conclave of the Chosen (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13290,	-- Death's Bargain
+							}),
 							ach(13325),	-- Walk the Dinosaur
 							ach(13300),	-- Mythic: Conclave of the Chosen
 							i(165846),	-- Enchanted Talon of Pa'ku (PET!)
@@ -1221,9 +1103,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							h(i(165581)),	-- Crest of Pa'ku (Horde)
 							i(165579),	-- Kimbul's Razor Claw
 						},
-					},
-					{	-- King Rastakhan
-						["encounterID"] = 2335,
+					}),
+					e(2335, {	-- King Rastakhan
 						["crs"] = {
 							145644,	-- Bwonsamdi
 							145616,	-- King Rastakhan
@@ -1231,17 +1112,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							146322,	-- Siegebreaker Roka
 						},
 						["g"] = {
-							{  -- King Rastakhan Empire's Fall [Alliance] // Death's Bargain [Horde]
-								["allianceAchievementID"] = 13287,	-- Empire's Fall
-								["hordeAchievementID"] = 13290,		-- Death's Bargain
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13287,	-- Empire's Fall
-										["hordeAchievementID"] = 13290,		-- Death's Bargain
-										["criteriaID"] = 3,	-- King Rastakhan [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(3, {	-- King Rastakhan (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13287,	-- Empire's Fall
+							}),
+							crit(3, {	-- King Rastakhan (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13290,	-- Death's Bargain
+							}),
 							ach(13425),	-- We Got Spirit, How About You?
 							ach(13311),	-- Mythic: King Rastakhan
 							i(165597),	-- Deathspeaker Spire
@@ -1257,22 +1135,18 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165578),	-- Mirror of Entwined Fate
 							i(165696),	-- Formula: Enchanted Tiki Mask
 						},
-					},
-					{	-- High Tinker Mekkatorque
-						["encounterID"] = 2334,
+					}),
+					e(2334, {	-- High Tinker Mekkatorque
 						["crs"] = { 144796 },	-- High Tinker Mekkatorque
 						["g"] = {
-							{  -- High Tinker Mekkatorque; Might of the Alliance [Alliance] // Victory or Death [Horde]
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-										["criteriaID"] = 1,	-- Mekkatorque [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(1, {	-- High Tinker Mekkatorque (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13288,	-- Might of the Alliance
+							}),
+							crit(1, {	-- High Tinker Mekkatorque (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13291,	-- Victory of Death
+							}),
 							ach(13401),	-- I Got Next!
 							ach(13312),	-- Mythic: Mekkatorque
 							i(166518),	-- G.M.O.D. (MOUNT!)
@@ -1289,26 +1163,22 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165572),	-- Variable Intensity Gigavolt Oscillating Reactor
 							i(166276),	-- Schematic: Unstable Temporal Time Shifter
 						},
-					},
-					{	-- Stormwall Blockade
-						["encounterID"] = 2337,
+					}),
+					e(2337, {	-- Stormwall Blockade
 						["crs"] = {
 							146253,	-- Brother Joseph
 							146256,	-- Laminaria
 							146251,	-- Sister Katherine
 						},
 						["g"] = {
-							{  -- Stormwall Blockade; Might of the Alliance [Alliance] // Victory or Death [Horde]
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-										["criteriaID"] = 2,	-- Stormwall Blockade [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(2, {	-- Stormwall Blockade (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13288,	-- Might of the Alliance
+							}),
+							crit(2, {	-- Stormwall Blockade (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13291,	-- Victory of Death
+							}),
 							ach(13430),	-- De Lurker Be'loa
 							ach(13313),	-- Mythic: Stormwall Blockade
 							i(165602),	-- Crash of Tides
@@ -1325,22 +1195,18 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165528),	-- Kelp-Laced Greaves
 							i(165506),	-- Wavecaller Leggings
 						},
-					},
-					{	-- Lady Jaina Proudmoore
-						["encounterID"] = 2343,
+					}),
+					e(2343, {	-- Lady Jaina Proudmoore
 						["crs"] = { 146409 },	-- Lady Jaina Proudmoore
 						["g"] = {
-							{  -- Lady Jaina Proudmoore; Might of the Alliance [Alliance] // Victory or Death [Horde]
-								["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-								["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-								["g"] = {
-									{
-										["allianceAchievementID"] = 13288,	-- Might of the Alliance [Alliance]
-										["hordeAchievementID"] = 13291,		-- Victory or Death [Horde]
-										["criteriaID"] = 3,	-- Lady Jaina Proudmoore [Alliance] // [Horde]
-									},
-								},
-							},
+							crit(3, {	-- Jaina Proudmoore (A)
+								["races"] = ALLIANCE_ONLY,
+								["achievementID"] = 13288,	-- Might of the Alliance
+							}),
+							crit(3, {	-- Jaina Proudmoore (H)
+								["races"] = HORDE_ONLY,
+								["achievementID"] = 13291,	-- Victory of Death
+							}),
 							ach(13410),		-- Snow Fun Allowed
 							ach(13314, {	-- Mythic: Lady Jaina Proudmoore
 								title(386),	-- <Name>, Hero of Dazar'alor
@@ -1376,7 +1242,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(165570),	-- Everchill Anchor
 							i(165576),	-- Tidestorm Codex
 						},
-					},
+					}),
 				}),
 			}),
 		},
