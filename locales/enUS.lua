@@ -269,6 +269,7 @@ app.L = {
 		[101] = "Interface\\Icons\\Tracking_WildPet", 						-- Battle Pet
 		[102] = "Interface\\Icons\\INV_Misc_Toy_10",						-- Toy
 		[113] = "Interface\\Icons\\INV_Misc_Bag_08",						-- Bag
+		[114] = "Interface\\Icons\\inv_blacksmith_leystonehoofplates_orange",	-- Mount Equipment
 		[200] = "Interface\\Icons\\inv_scroll_05",							-- Recipes
 		[999] = "Interface\\Icons\\INV_Holiday_Christmas_Present_01",		-- Event Item
 

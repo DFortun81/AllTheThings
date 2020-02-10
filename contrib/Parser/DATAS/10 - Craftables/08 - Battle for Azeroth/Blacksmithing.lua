@@ -10,7 +10,7 @@ _.Craftables =
 					i(153594),	-- Xiwyllag ATV
 				}),
 			}),
-			n(114, {	-- Mount Equipment
+			filter(114, {	-- Mount Equipment
 				i(168417),	-- Inflatable Mount Shoes
 			}),
 			filter(20, {	-- Daggers
