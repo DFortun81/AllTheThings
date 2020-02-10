@@ -83,60 +83,36 @@ MAGHAR = 36;
 MECHAGNOME = 37;
 
 ALLIANCE_ONLY = {
-	1,	-- Human
-	3,	-- Dwarf
-	4,	-- Night Elf
-	7,	-- Gnome
-	11,	-- Draenei
-	22,	-- Worgen
-	25,	-- Pandaren [Alliance]
-	29,	-- Void Elf
-	30,	-- Lightforged
-	32,	-- Kul Tiran
-	34,	-- Dark Iron
-	37,	-- Mechagnome
+	HUMAN,
+	DWARF,
+	NIGHTELF,
+	GNOME,
+	DRAENEI,
+	WORGEN,
+	PANDAREN_ALLIANCE,
+	VOIDELF,
+	LIGHTFORGED,
+	KULTIRAN,
+	DARKIRON,
+	MECHAGNOME,
 };
 HORDE_ONLY = {
-	2,	-- Orc
-	5,	-- Undead
-	6,	-- Tauren
-	8,	-- Troll
-	9,	-- Goblin
-	10,	-- Blood Elf
-	26,	-- Pandaren [Horde]
-	27,	-- Nightborne
-	28,	-- Highmountain
-	31,	-- Zandalari
-	36,	-- Mag'har
-	35,	-- Vulpera
+	ORC,
+	UNDEAD,
+	TAUREN,
+	TROLL,
+	GOBLIN,
+	BLOODELF,
+	PANDAREN_HORDE,
+	NIGHTBORNE,
+	HIGHMOUNTAIN,
+	ZANDALARI,
+	MAGHAR,
+	VULPERA,
 };
-ALL_RACES = {	-- NOTE: Use this with the exclude function.
-	1,	-- Human
-	2,	-- Orc
-	3,	-- Dwarf
-	4,	-- Night Elf
-	5,	-- Undead
-	6,	-- Tauren
-	7,	-- Gnome
-	8,	-- Troll
-	9,	-- Goblin
-	10,	-- Blood Elf
-	11,	-- Draenei
-	22,	-- Worgen
-	24,	-- Pandaren [Neutral]
-	25,	-- Pandaren [Alliance]
-	26,	-- Pandaren [Horde]
-	27,	-- Nightborne
-	28,	-- Highmountain
-	29,	-- Void Elf
-	30,	-- Lightforged
-	31,	-- Zandalari
-	32,	-- Kul Tiran
-	34,	-- Dark Iron
-	35,	-- Vulpera
-	36,	-- Mag'har
-	37,	-- Mechagnome
-};
+ALL_RACES = { PANDAREN_NEUTRAL, }
+for _,v in pairs(ALLIANCE_ONLY) do table.insert(ALL_RACES,v) end
+for _,v in pairs(HORDE_ONLY) do table.insert(ALL_RACES,v) end
 
 -- CLASSES
 WARRIOR = 1;
@@ -153,19 +129,20 @@ DRUID = 11;
 DEMONHUNTER = 12;
 
 ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
-	1,	-- Warrior
-	2,	-- Paladin
-	3,	-- Hunter
-	4,	-- Rogue
-	5,	-- Priest
-	6,	-- Death Knight
-	7,	-- Shaman
-	8,	-- Mage
-	9,	-- Warlock
-	10,	-- Monk
-	11,	-- Druid
-	12,	-- Demon Hunter
+	WARRIOR,
+	PALADIN,
+	HUNTER,
+	ROGUE,
+	PRIEST,
+	DEATHKNIGHT,
+	SHAMAN,
+	MAGE,
+	WARLOCK,
+	MONK,
+	DRUID,
+	DEMONHUNTER,
 };
+
 ItemClassInfo = {
 	{
 		"Soul Bag", -- [1]
