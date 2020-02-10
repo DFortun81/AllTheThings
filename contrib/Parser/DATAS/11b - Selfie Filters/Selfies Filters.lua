@@ -3,13 +3,10 @@
 ---------------------------------------------
 _.SelfieFilters =
 {
-	{
-		["spellID"] = 258803,	-- Argus Filter
+	spell(258803, {	-- Argus Filter
 		["questID"] = 49762,	-- Completed
 		["f"] = 60,				-- S.E.L.F.I.E. Camera Filter
-		["crs"] = {
-			124828,		-- Argus the Unmaker
-		},
+		["cr"] = 124828,		-- Argus the Unmaker
 		["maps"] = {	-- Antorus
 			909,
 			910,
@@ -25,27 +22,21 @@ _.SelfieFilters =
 			920,
 			946,
 		},
-	},
-	{
-		["spellID"] = 258749,	-- Firelands Filter
+	}),
+	spell(258749, {	-- Firelands Filter
 		["questID"] = 49761,	-- Completed
 		["f"] = 60,				-- S.E.L.F.I.E. Camera Filter
-		["crs"] = {
-			52409,		-- Ragnaros
-		},
+		["cr"] = 52409,		-- Ragnaros
 		["maps"] = {	-- Firelands
 			367,
 			368,
 			369,
 		},
-	},
-	{
-		["spellID"] = 258750,	-- Frostmourne Filter
+	}),
+	spell(258750, {	-- Frostmourne Filter
 		["questID"] = 49760,	-- Completed
 		["f"] = 60,				-- S.E.L.F.I.E. Camera Filter
-		["crs"] = {
-			36597,		-- The Lich King
-		},
+		["cr"] = 36597,		-- The Lich King
 		["maps"] = {	-- Icecrown Citadel
 			186,
 			187,
@@ -57,29 +48,23 @@ _.SelfieFilters =
 			193,
 			1359,
 		},
-	},
-	{
-		["spellID"] = 258751,	-- Sha Filter
+	}),
+	spell(258751, {	-- Sha Filter
 		["questID"] = 49763,	-- Completed
 		["f"] = 60,				-- S.E.L.F.I.E. Camera Filter
-		["crs"] = {
-			60999,		-- Sha of Fear
-		},
+		["cr"] = 60999,		-- Sha of Fear
 		["maps"] = {	-- Terrace of Endless Spring
 			456,
 		},
-	},
-	{
-		["spellID"] = 258752,	-- Twilight Filter
+	}),
+	spell(258752, {	-- Twilight Filter
 		["questID"] = 49764,	-- Completed
 		["f"] = 60,				-- S.E.L.F.I.E. Camera Filter
-		["crs"] = {
-			43324,		-- Cho'gall
-		},
+		["cr"] = 43324,		-- Cho'gall
 		["maps"] = {	-- Bastion of Twilight
 			294,
 			295,
 			296,
 		},
-	},
+	}),
 };

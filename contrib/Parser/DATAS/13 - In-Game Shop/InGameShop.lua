@@ -1,7 +1,7 @@
 -------------------------------------
 --     I N - G A M E   S H O P     --
 -------------------------------------
-_.InGameShop = 
+_.InGameShop =
 {
 	n(-163, {	-- Armor
 		un(2, i(95475)),	-- Crown of Eternal Winter
@@ -24,9 +24,7 @@ _.InGameShop =
 		un(35, i(166776)),	-- Sylverian Dreamer
 		un(35, i(160589)),	-- The Dreadwake
 		un(35, i(112326, {	-- Warforged Nightmare
-			["g"] = {
-				un(35, i(112324)),	-- Nightmarish Hitching Post
-			},
+			un(35, i(112324)),	-- Nightmarish Hitching Post
 		})),
 		un(35, i(69846)),	-- Winged Guardian
 		un(35, i(166775)),	-- Vulpine Familiar
