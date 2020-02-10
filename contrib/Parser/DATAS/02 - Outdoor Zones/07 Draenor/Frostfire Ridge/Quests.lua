@@ -1070,13 +1070,25 @@ _.Zones =
 					["sourceQuest"] = 32792,	-- Leave Nothing Behind!
 				}),
 				q(35737, {	-- Writing in the Snow (A)
-					["coord"] = { 47.9, 19.0, 525 },
+					["coords"] = {
+						{ 47.9, 19.0, 525 },
+						{ 44.9, 14.0, 525 },
+						{ 40.0, 11.7, 525 },
+						{ 44.3, 14.7, 525 },
+						{ 46.4, 15.9, 525 },
+					},
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 82833 },	-- Tattered Journal Page
 					["description"] = "|cFFFFD700Assault on Stonefury Cliffs|r must be active.",
 				}),
 				q(35736, {	-- Writing in the Snow (H)
-					["coord"] = { 47.9, 19.0, 525 },
+					["coords"] = {
+						{ 47.9, 19.0, 525 },
+						{ 44.9, 14.0, 525 },
+						{ 40.0, 11.7, 525 },
+						{ 44.3, 14.7, 525 },
+						{ 46.4, 15.9, 525 },
+					},
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 82833 },	-- Tattered Journal Page
 					["description"] = "|cFFFFD700Assault on Stonefury Cliffs|r must be active.",

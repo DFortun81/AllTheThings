@@ -148,11 +148,15 @@ _.NeverImplemented =
 		q(45040),	-- Hexsweeper lvl 3
 		q(45041),	-- Hexsweeper lvl 4
 		q(45042),	-- Hexsweeper lvl 5
+		q(59312),	-- Hexsweeper lvl X
 		q(57827),	-- Rune Matching easy
 		q(57828),	-- Rune Matching normal
 		q(57829),	-- Rune Matching hard
 		q(57835),	-- Totems lvl 1
 		q(57836),	-- Totems lvl 2
+		q(57837),	-- Totems lvl 3
+		q(57838),	-- Totems lvl 4
+		q(57839),	-- Totems lvl 5
 		
 		-------------------
 		---   CLASSIC   ---
@@ -800,7 +804,9 @@ _.NeverImplemented =
 		q(39058),	-- Critters of Draenor — looks like an unused version of #38299
 		q(36492),	-- Garrison Pet Battle — discord report, "for today's EU garrison menagerie fight, the Blingtron/protectron one"
 		q(36886),	-- Ogre Waygate — opening waygate in gorgrond
-
+		q(36294),	-- Lumber Mill — Phylarch the Evergreen first attack
+		q(36295),	-- Lumber Mill — Phylarch the Evergreen second attack
+		
 	--	TREASURES
 		q(34521),	-- Treasure: Glowing Obsidian Shard (secondary quest triggered when looting Burning Pearl in Frostfire Ridge)
 		q(34968),	-- Treasure: Ice-Covered Supplies (secondary quest triggered when looting Forgotten Supplies in Frostfire Ridge)

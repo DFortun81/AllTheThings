@@ -156,7 +156,7 @@ _.Zones =
 					["sourceQuest"] = 10227,	-- I See Dead Draenei
 				}),
 				q(10012, {	-- Fel Orc Plans
-					["coord"] = { 63.4, 42.7, 108 },
+					["coord"] = { 67.9, 53.5, 108 },
 					["races"] = ALLIANCE_ONLY,
 					["model"] = 198457,
 					["provider"] = { "o", 182549 },	-- Fel Orc Plans

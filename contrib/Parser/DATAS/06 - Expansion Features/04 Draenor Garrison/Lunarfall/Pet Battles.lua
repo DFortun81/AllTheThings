@@ -13,6 +13,7 @@ _.ExpansionFeatures =
 						["crs"] = { 62953 },	-- Sea Gull
 					}),
 					q(36483, {	-- Battle Pet Roundup
+						["isDaily"] = true,
 						["provider"] = { "n", 85418 },	-- Lio the Lioness
 						["coord"] = { 28.3, 38.8, 582 },
 						["races"] = ALLIANCE_ONLY,

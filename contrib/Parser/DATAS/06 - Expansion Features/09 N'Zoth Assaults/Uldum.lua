@@ -1200,9 +1200,24 @@ _.ExpansionFeatures =
 						["coord"] = { 59.77, 72.41, 1527 },
 						["isWorldQuest"] = true,
 					}),
+					q(57586, {	-- Spirit Drinker
+						["lvl"] = 120,
+						["coord"] = { 47.8, 32.7, 1527 },
+						["isWorldQuest"] = true,
+					}),
+					q(57587, {	-- Spirit Drinker
+						["lvl"] = 120,
+						["coord"] = { 52.3, 31.6, 1527 },
+						["isWorldQuest"] = true,
+					}),
 					q(57588, {	-- Spirit Drinker
 						["lvl"] = 120,
 						["coord"] = { 59.0, 28.0, 1527 },
+						["isWorldQuest"] = true,
+					}),
+					q(57589, {	-- Spirit Drinker
+						["lvl"] = 120,
+						["coord"] = { 64.2, 65.5, 1527 },
 						["isWorldQuest"] = true,
 					}),
 					q(57456, {	-- Spirit Drinker

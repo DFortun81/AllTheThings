@@ -576,7 +576,10 @@ _.ExpansionFeatures =
 							33059,	-- The Fate of Karabor
 						},
 						["races"] = ALLIANCE_ONLY,
-						["coord"] = { 30.2, 18.1, 582 },	-- level 2 garrison
+						["coords"] = {
+							{ 30.2, 18.1, 582 },	-- level 2 garrison
+							{ 39.8, 29.4, 539 },	-- Lost Packmule
+						},
 						["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 						--["objectID"] = 230865,	-- List of Ingredients
 					}),

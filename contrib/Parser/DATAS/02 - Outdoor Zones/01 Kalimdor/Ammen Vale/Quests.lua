@@ -10,7 +10,7 @@ _.Zones =
 					["sourceQuests"] = { 9309 },	-- The Missing Scout
 					["crs"] = { 16522 },	-- Surveyor Candress
 					["provider"] = { "i", 24414 },	-- Blood Elf Plans
-					["coord"] = { 69.0, 65.4, 468 },
+					["coord"] = { 27.8, 80.4, 468 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9311,  {	-- Blood Elf Spy

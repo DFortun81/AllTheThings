@@ -72,7 +72,17 @@ _.ExpansionFeatures =
 							q(36429, {	-- The Rise and Fall of Barov Industries: Weldon Barov
 								["provider"] = { "n", 85378 },	-- Weldon Barov <Barov Industries>
 								["races"] = ALLIANCE_ONLY,
-								["description"] = "Weldon Barov is found at 73.7, 64.0 in Talador. He is stuck under a log and it seems you need lumber mill to be able to get him out of there.",
+								["description"] = "Weldon Barov is found at various locations in Draenor. He is stuck under a log and you need the lumber mill to get him out of there.",
+								["coords"] = {
+									{ 54.9, 79.7, 542 },	-- Spires of Arak
+									{ 59.0, 38.4, 550 },	-- Nagrand
+									{ 56.0, 70.0, 550 },	-- Nagrand
+									{ 59.0, 29.0, 535 },	-- Talador
+									{ 73.0, 28.0, 535 },	-- Talador
+									{ 73.7, 64.0, 535 },	-- Talador
+									{ 46.0, 31.5, 539 },	-- SMV
+									{ 45.5, 66.3, 543 },	-- Gorgrond
+								},
 								["g"] = {
 									follower(195),	-- Weldon Barov / Alexi Barov
 								},
