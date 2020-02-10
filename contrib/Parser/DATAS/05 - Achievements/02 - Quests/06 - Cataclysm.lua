@@ -123,30 +123,7 @@ _.Achievements =
 					h(ach(5321)),	-- King of the Mountain (Twilight Highlands) (Horde)]]
 					ach(5872),		-- King of the Spider-Hill  (Mount Hyjal - The Molten Front)
 					ach(5859, {		-- Legacy of Leyara (Mount Hyjal)
-						i(69854, {		-- Smoke-Stained Locket
-							q(29298),		-- A Smoke-Stained Locket
-							q(29302, {		-- Unlocking the Secrets Within
-								["groups"] = {
-								},
-								["sourceQuests"] = {29298},	-- A Smoke-Stained Locket
-							}),
-							q(29303, {		-- Tragedy and Family
-								["groups"] = {
-								},
-								["sourceQuests"] = {29302},	-- A Smoke-Stained Locket
-							}),
-							q(29310, {		-- The Tipping Point
-								["groups"] = {
-								},
-								["sourceQuests"] = {29303},	-- A Smoke-Stained Locket
-							}),
-							q(29311, {		-- The Rest is History
-								["groups"] = {
-									i(71259),	-- Leyara's Locket
-								},
-								["sourceQuests"] = {29310},	-- A Smoke-Stained Locket
-							}),
-						}),
+						i(69854),		-- Smoke-Stained Locket (quest item reward)
 						crit(1),		-- A Ritual of Flame
 						crit(2),		-- Leyara
 						crit(3),		-- Into the Depths

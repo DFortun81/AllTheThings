@@ -369,7 +369,7 @@ _.Zones =
 				q(9364,  {	-- Fragmented Magic (removed with Cataclysm)
 					["u"] = 40,
 					["provider"] = { "n", 8379 },	-- Archmage Xylem
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["sourceQuest"] = 9362,	-- Warlord Krellian
 					["g"] = {
 						spell(28272),	-- Polymorph: Pig

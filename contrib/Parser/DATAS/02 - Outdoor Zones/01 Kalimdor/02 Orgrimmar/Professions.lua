@@ -218,7 +218,7 @@ _.Zones =
 							["coord"] = { 56.5, 62.5, 85 },
 							["isDaily"] = true,
 							["requireSkill"] = 185,	-- Cooking
-							["races"] = { 8 },	-- Troll
+							["races"] = { TROLL },
 							["groups"] = {
 								crit(5, {	-- Stealing From Our Own
 									["achievementID"] = 5475,	-- Let's Do Lunch: Orgrimmar

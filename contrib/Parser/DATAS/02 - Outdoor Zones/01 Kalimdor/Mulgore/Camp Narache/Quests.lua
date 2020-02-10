@@ -141,7 +141,7 @@ _.Zones =
 						["provider"] = { "n", 63327 },	-- Shoyu
 						["coord"] = { 27.8, 28.6, 462 },
 						["races"] = HORDE_ONLY,
-						["classes"]= { 10 },	-- Monk
+						["classes"] = { MONK },
 					}),
 				}),
 			}),

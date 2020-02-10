@@ -14,12 +14,12 @@ _.Zones =
 				}),
 				fp(62, {	-- Nighthaven, Moonglade
 					["collectible"] = false,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["coord"] = { 44.0, 45.4, 80 },
 				}),
 				fp(63, {	-- Nighthaven, Moonglade
 					["collectible"] = false,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["coord"] = { 44.2, 45.6, 80 },
 				}),
 			}),

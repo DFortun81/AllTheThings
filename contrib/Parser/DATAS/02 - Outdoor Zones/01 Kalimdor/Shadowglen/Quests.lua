@@ -16,11 +16,8 @@ _.Zones =
 					q(31168, {	-- Calligraphed Sigil
 						["u"] = 40,
 						["provider"] = { "n", 2077 },	-- Melithar Staghelm
-						["classes"] = { 10 },	-- Monk
-						["races"] = {
-							4,	-- Night Elf
-							22,	-- Worgen
-						},
+						["classes"] = { MONK },
+						["races"] = { NIGHTELF, WORGEN },
 					}),
 					q(28715, {	-- Demonic Thieves
 						["provider"] = { "n", 2077 },	-- Melithar Staghelm
@@ -42,8 +39,8 @@ _.Zones =
 					q(3118,  {	-- Encrypted Sigil
 						["u"] = 40,
 						["provider"] = { "n", 2077 },	-- Melithar Staghelm
-						["races"] = { 4 },	-- Night Elf
-						["classes"] = { 4 },	-- Rogue
+						["races"] = { NIGHTELF },
+						["classes"] = { ROGUE },
 					}),
 					q(28714, {	-- Fel Moss Corruption
 						["provider"] = { "n", 2079 },	-- Ilthalaine
@@ -54,8 +51,8 @@ _.Zones =
 					q(3119,  {	-- Hallowed Sigil
 						["u"] = 40,
 						["provider"] = { "n", 2077 },	-- Melithar Staghelm
-						["races"] = { 4 },	-- Night Elf
-						["classes"] = { 5 },	-- Priest
+						["races"] = { NIGHTELF },
+						["classes"] = { PRIEST },
 					}),
 					q(28724, {	-- Iverron's Antidote
 						["provider"] = { "n", 49479 },	-- Dentaria Silverglade
@@ -66,8 +63,8 @@ _.Zones =
 					q(26949, {	-- Learning the Word
 						["u"] = 40,
 						["provider"] = { "n", 3595 },	-- Shanda
-						["races"] = { 4 },	-- Night Elf
-						["classes"] = { 5 },	-- Priest
+						["races"] = { NIGHTELF },
+						["classes"] = { PRIEST },
 					}),
 					q(28730, {	-- Precious Waters
 						["provider"] = { "n", 49479 },	-- Dentaria Silverglade
@@ -93,11 +90,8 @@ _.Zones =
 					q(3116,  {	-- Simple Sigil
 						["u"] = 40,
 						["provider"] = { "n", 2079 },	-- Ilthalaine
-						["classes"] = { 1 },	-- Warrior
-						["races"] = {
-							4,	-- Night Elf
-							22,	-- Worgen
-						},
+						["classes"] = { WARRIOR },
+						["races"] = { NIGHTELF, WORGEN },
 					}),
 					q(28729, {	-- Teldrassil: Crown of Azeroth
 						["provider"] = { "n", 49479 },	-- Dentaria Silverglade

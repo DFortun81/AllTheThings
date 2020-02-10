@@ -33,16 +33,16 @@ _.Zones =
 							},
 						}),
 						p(70, {	-- Brown Praire Dog
-							["races"] = { 6 },	-- Tauren
+							["races"] = { TAUREN },
 						}),
 						p(142, {	-- Golden Dragonhawk Hatchling
-							["races"] = { 10 },	-- Blood Elf
+							["races"] = { BLOODELF },
 						}),
 						p(792, {	-- Jade Crane Chick
 							["races"] = { 26 },	-- Pandaren
 						}),
 						p(629, {	-- Shore Crawler
-							["races"] = { 9 },	-- Goblin
+							["races"] = { GOBLIN },
 						}),
 						p(55, {	-- Undercity Cockroach
 							["races"] = { 5 },	-- Undead
@@ -61,16 +61,16 @@ _.Zones =
 							},
 						}),
 						p(70, {	-- Brown Praire Dog
-							["races"] = { 6 },	-- Tauren
+							["races"] = { TAUREN },
 						}),
 						p(142, {	-- Golden Dragonhawk Hatchling
-							["races"] = { 10 },	-- Blood Elf
+							["races"] = { BLOODELF },
 						}),
 						p(792, {	-- Jade Crane Chick
 							["races"] = { 26 },	-- Pandaren
 						}),
 						p(629, {	-- Shore Crawler
-							["races"] = { 9 },	-- Goblin
+							["races"] = { GOBLIN },
 						}),
 						p(55, {	-- Undercity Cockroach
 							["races"] = { 5 },	-- Undead

@@ -323,7 +323,7 @@ _.Zones =
 					["provider"] = { "n", 17554 },	-- Laando
 					["coord"] = { 57.7, 53.9, 106 },
 					["sourceQuest"] = 9603,	-- Beds, Bandages, and Beyond
-					["races"] = { 11 },	-- Draenei
+					["races"] = { DRAENEI },
 					["u"] = 40, 	-- Legacy Quest, quest moved to Azuremyst Isle 
 				}),
 				q(9548,  {	-- Pilfered Equipment
@@ -464,7 +464,7 @@ _.Zones =
 				q(9762,  {	-- The Unwritten Prophecy
 					["provider"] = { "n", 17468 },	-- Prophet Velen
 					["coord"] = { 54.0, 55.4, 106 },
-					["races"] = { 11 },	-- Draenei
+					["races"] = { DRAENEI },
 					["sourceQuest"] = 9759,	-- Ending Their World
 					["g"] = {
 						i(24344),	-- Tabard of the Hand

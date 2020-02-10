@@ -9,7 +9,7 @@ _.Zones =
 				q(6361,  {	-- A Bundle of Hides
 					["provider"] = { "n", 3079 },	-- Varg Windwhisper
 					["coord"] = { 46.0, 58.2, 7 },
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 				}),
 				q(833,   {	-- A Sacred Burial
 					["provider"] = { "n", 3233 },	-- Lorekeeper Raintotem
@@ -53,7 +53,7 @@ _.Zones =
 				q(24550, {	-- Journey into Thunder Bluff
 					["provider"] = { "n", 37024 },	-- Una Wildmane
 					["coord"] = { 49.4, 17.4, 7 },
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 					["sourceQuest"] = 24524,	-- Wildmane Cleansing
 				}),
 				q(11129, {	-- Kyle's Gond Missing!
@@ -63,7 +63,7 @@ _.Zones =
 				}),
 				q(32670, {	-- Learn to Ride
 					["lvl"] = 20,
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
 					["description"] = "This quest is available Tauren upon reaching level 20.",
@@ -71,7 +71,7 @@ _.Zones =
 				q(14087, {	-- Learn to Ride
 					["u"] = 40,
 					["lvl"] = 20,
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 					["provider"] = { "i", 46884 },	-- Riding Training Pamphlet
 				}),
 				q(766,   {	-- Mazzranache
@@ -113,7 +113,7 @@ _.Zones =
 				q(20440, {	-- Poison Water
 					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
 					["coord"] = { 48.6, 59.5, 7 },
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 				}),
 				q(744,   {	-- Preparation for Ceremony
 					["provider"] = { "n", 2987 },	-- Eyahn Eagletalon
@@ -129,7 +129,7 @@ _.Zones =
 				q(6362,  {	-- Ride to Thunder Bluff
 					["provider"] = { "n", 40809 },	-- Tak
 					["coord"] = { 47.4, 58.6, 7 },
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 				}),
 				q(767,   {	-- Rite of Vision
 					["u"] = 40,
@@ -152,20 +152,20 @@ _.Zones =
 				q(24457, {	-- Rite of Vision
 					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
 					["coord"] = { 48.6, 59.8, 7 },
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 					["sourceQuest"] = 24456,	-- Thunderhorn Cleansing
 					["isBreadcrumb"] = true,
 				}),
 				q(20441, {	-- Rite of Vision
 					["provider"] = { "n", 3054 },	-- Zarlman Two-Moons
 					["coord"] = { 47.8, 57.2, 7 },
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 					["sourceQuest"] = 24457,	-- Rite of Vision
 				}),
 				q(773,   {	-- Rite of Wisdom
 					["provider"] = { "n", 3233 },	-- Lorekeeper Raintotem
 					["coord"] = { 49.4, 17.2, 7 },
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 				}),
 				q(745,   {	-- Sharing the Land
 					["u"] = 40,
@@ -274,19 +274,19 @@ _.Zones =
 				q(24456, {	-- Thunderhorn Cleansing
 					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
 					["coord"] = { 48.6, 59.8, 7 },
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 					["sourceQuest"] = 24441,	-- Thunderhorn Totem
 				}),
 				q(24441, {	-- Thunderhorn Totem
 					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
 					["coord"] = { 48.6, 59.8, 7 },
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 					["sourceQuest"] = 24440,	-- Winterhoof Cleansing
 				}),
 				q(24524, {	-- Wildmane Cleansing
 					["provider"] = { "n", 37024 },	-- Una Wildmane
 					["coord"] = { 49.4, 17.4, 7 },
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 					["sourceQuest"] = 24523,	-- Wildmane Totem
 					["g"] = {
 						i(57238),	-- Cliff Running Boots
@@ -299,13 +299,13 @@ _.Zones =
 				q(24523, {	-- Wildmane Totem
 					["provider"] = { "n", 37024 },	-- Una Wildmane
 					["coord"] = { 49.4, 17.4, 7 },
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 					["sourceQuest"] = 20441,	-- Rite of Vision
 				}),
 				q(24440, {	-- Winterhoof Cleansing
 					["provider"] = { "n", 2948 },	-- Mull Thunderhorn
 					["coord"] = { 48.6, 59.8, 7 },
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 					["sourceQuest"] = 20440,	-- Poison Water
 				}),
 			}),

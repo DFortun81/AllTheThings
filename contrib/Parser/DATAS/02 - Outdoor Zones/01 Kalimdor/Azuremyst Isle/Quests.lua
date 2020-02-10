@@ -26,7 +26,7 @@ _.Zones =
 						{ 56.8, 59.6, 97 },
 						{ 58.0, 41.6, 97 },
 					},
-					["races"] = { 11 },	-- Draenei
+					["races"] = { DRAENEI },
 					["description"] = "1. Find a |cFFFFD700Draenei Youngling|r\n2. Get them to engage in combat with an aggressive mob\n3. Once they take damage, use |cFFFFD700Gift of the Naaru.|r\n4. Kill the creature for the quest to be offered.",
 				}),
 				q(9506,  {	-- A Small Start
@@ -44,14 +44,14 @@ _.Zones =
 				q(9473,  {	-- An Alternative Alternative
 					["provider"] = { "n", 17215 },	-- Daedal
 					["coord"] = { 48.4, 51.4, 97 },
-					["races"] = { 11 },	-- Draenei
+					["races"] = { DRAENEI },
 					["sourceQuest"] = 9463,	-- Medicinal Purpose
 				}),
 				q(27273, {	-- An Invitation from Moonglade
 					["provider"] = { "n", 16721 },	-- Shalannius
 					["coord"] = { 24.4, 54.4, 97 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["isBreadcrumb"] = true,
 				}),
 				q(9616,  {	-- Bandits!
@@ -86,13 +86,13 @@ _.Zones =
 				q(9603,  {	-- Beds, Bandages, and Beyond
 					["provider"] = { "n", 16553 },	-- Caregiver Chellan
 					["coord"] = { 48.3, 49.1, 97 },
-					["races"] = { 11 },	-- Draenei
+					["races"] = { DRAENEI },
 				}),
 				q(10350, {	-- Behomat
 					["provider"] = { "n", 17480 },	-- Ruada
 					["coord"] = { 49.8, 50.4, 97 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["sourceQuest"] = 9582,	-- Strength of One
 					["g"] = {
 						i(23429),	-- Mercenary Clout
@@ -161,8 +161,8 @@ _.Zones =
 				q(9586,  {	-- Help Tavara
 					["u"] = 40,
 					["provider"] = { "n", 17482 },	-- Guvan
-					["races"] = { 11 },	-- Draenei
-					["classes"] = { 5 },	-- Priest
+					["races"] = { DRAENEI },
+					["classes"] = { PRIEST },
 					["g"] = {
 						un(2, i(23931)),	-- Azure Watch Robes
 					},
@@ -181,18 +181,18 @@ _.Zones =
 				q(14082, {	-- Learn to Ride at the Exodar (removed in Patch 4.0.1)
 					["u"] = 40,
 					["lvl"] = 20,
-					["races"] = { 11 },	-- Draenei
+					["races"] = { DRAENEI },
 				}),
 				q(9463,  {	-- Medicinal Purpose
 					["provider"] = { "n", 17214 },	-- Anchorite Fateema
 					["coord"] = { 48.4, 51.8, 97 },
-					["races"] = { 11 },	-- Draenei
+					["races"] = { DRAENEI },
 				}),
 				q(28289, {	-- Moonglade Calls
 					["provider"] = { "n", 16721 },	-- Shalannius
 					["lvl"] = 50,
 					["coord"] = { 24.4, 54.5, 97 },
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["isBreadcrumb"] = true,
 				}),
 				q(9562,  {	-- Murlocs... Why Here? Why Now?
@@ -210,7 +210,7 @@ _.Zones =
 					["provider"] = { "n", 43991 },	-- Zaldaan
 					["coord"] = { 49.7, 49.1, 97 },
 					["sourceQuest"] = 9603,	-- Beds, Bandages, and Beyond
-					["races"] = { 11 },	-- Draenei
+					["races"] = { DRAENEI },
 				}),
 				q(9523,  {	-- Precious and Fragile Things Need Special Handling
 					["provider"] = { "n", 17242 },	-- Archaeologist Adamant Ironheart
@@ -282,7 +282,7 @@ _.Zones =
 					["provider"] = { "n", 17480 },	-- Ruada
 					["coord"] = { 49.8, 50.4, 97 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 				}),
 				q(9672,  {	-- The Bloodcurse Legacy
 					["provider"] = { "n", 17240 },	-- Admiral Odesyus
@@ -351,7 +351,7 @@ _.Zones =
 				q(9505,  {	-- The Prophecy of Velen
 					["provider"] = { "n", 17215 },	-- Daedal
 					["coord"] = { 48.4, 51.4, 97 },
-					["races"] = { 11 },	-- Draenei
+					["races"] = { DRAENEI },
 					["sourceQuest"] = 9473,	-- An Alternative Alternative
 					["isBreadcrumb"] = true,
 				}),

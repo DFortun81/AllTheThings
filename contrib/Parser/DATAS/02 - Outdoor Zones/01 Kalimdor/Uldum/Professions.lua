@@ -7,13 +7,11 @@ _.Zones =
 		m(249, {	-- Uldum
 			n(-38, {	-- Profession
 				prof(794, {	-- Archaeology
-					sp(91790, {	-- Canopic Jar (Skill)
-						i(64657, {	-- Canopic Jar
-							["description"] = "Alchemy is not required to get the recipe.\n\nNOTE TO BLUES: Why isn't this item BoA? You have the technology!\n  - Crieve",
-							["g"] = {
-								i(67538),	-- Recipe: Vial of the Sands
-							},
-						}),
+					i(64657, {	-- Canopic Jar
+						["description"] = "Alchemy is not required to get the recipe.\n\nNOTE TO BLUES: Why isn't this item BoA? You have the technology!\n  - Crieve",
+						["g"] = {
+							i(67538),	-- Recipe: Vial of the Sands
+						},
 					}),
 				}),
 				prof(356, {	-- Fishing
@@ -22,7 +20,7 @@ _.Zones =
 						["g"] = {
 							i(22739, {	-- Tome of Polymorph: Turtle
 								["spellID"] = 28271,	-- Polymorph(Turtle)
-								["classes"] = { 8 },	-- Mage
+								["classes"] = { MAGE },
 							}),
 						},
 					}),
@@ -31,7 +29,7 @@ _.Zones =
 						["g"] = {
 							i(22739, {	-- Tome of Polymorph: Turtle
 								["spellID"] = 28271,	-- Polymorph(Turtle)
-								["classes"] = { 8 },	-- Mage
+								["classes"] = { MAGE },
 							}),
 						},
 					}),

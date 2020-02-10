@@ -8,6 +8,7 @@ _.Zones =
 			n(-6013, {	-- Factions
 				faction(576, {	-- Timbermaw Hold
 					["creatureID"] = 11558,	-- Kernda
+					["collectible"] = false,
 					["g"] = {
 						q(28614, {	-- Bearzerker
 							["provider"] = { "n", 48722 },	-- Burndl
@@ -46,7 +47,6 @@ _.Zones =
 							},
 						}),
 					},
-					["collectible"] = false,
 				}),
 				faction(589, {	-- Wintersaber Trainers
 					["creatureID"] = 10618,	-- Rivern Frostwind

@@ -11,14 +11,14 @@ _.Zones =
 					["coord"] = { 56.4, 46.2, 103 },	-- Behomat (The Exodar)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
-					["lvl"] = 20,					
+					["classes"] = { WARRIOR },
+					["lvl"] = 20,
 				}),
 				q(9675, {	-- Beast Training
 					["provider"] = { "n", 16712 },	-- Ganaar
 					["coord"] = { 44.6, 87.6, 103 },
-					["races"] = { 11 },	-- Draenei
-					["classes"] = { 3 },	-- Hunter
+					["races"] = { DRAENEI },
+					["classes"] = { HUNTER },
 					["lvl"] = 10,
 					["u"] = 40,
 					["g"] = {
@@ -36,7 +36,7 @@ _.Zones =
 					["provider"] = { "n", 16768 },	-- Nurguni
 					["coord"] = { 56.8, 49.8, 103 },
 					["sourceQuest"] = 9604,	-- On the Wings of a Hippogryph
-					["races"] = { 11 },	-- Draenei
+					["races"] = { DRAENEI },
 					["lvl"] = 5,
 				}),
 				q(27271, {	-- Journey to the Wizard's Sanctum
@@ -44,14 +44,14 @@ _.Zones =
 					["coord"] = { 47.2, 61.8, 103 },	--- Edirah (The Exodar)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 20,
 				}),
 				q(32661, {	-- Learn To Ride
 					["description"] = "This quest is available to Draenei upon reaching level 20.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
-					["races"] = { 11 },	-- Draenei
+					["races"] = { DRAENEI },
 					["lvl"] = 20,
 				}),
 				i(46879, {	-- Riding Training Pamphlet
@@ -66,7 +66,7 @@ _.Zones =
 					["coord"] = { 43.6, 78.4, 103 },	-- Baatun (The Exodar)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 20,
 				}),
 				q(27268, {	-- Make Haste to the Cathedral
@@ -74,7 +74,7 @@ _.Zones =
 					["coord"] = { 33.0, 65.4, 103 },	-- Caedmos (The Exodar)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
 				q(28258, {	-- Meet with Ander Germaine
@@ -82,15 +82,15 @@ _.Zones =
 					["coord"] = { 56.4, 46.2, 103 },	-- Behomat (The Exodar)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
-					["lvl"] = 50,	
+					["classes"] = { WARRIOR },
+					["lvl"] = 50,
 				}),
 				q(28285, {	-- Meet with High Priestess Laurena
 					["provider"] = { "n", 16756 },	-- Caedmos (The Exodar)
 					["coord"] = { 33.0, 65.4, 103 },	-- Caedmos (The Exodar)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
 				q(28268, {	-- Meet with Lord Grayson Shadowbreaker
@@ -98,7 +98,7 @@ _.Zones =
 					["coord"] = { 39.0, 84.2, 103 },	-- Baatun (The Exodar)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 50,
 				}),
 				q(28263, {	-- Meet with Maginor Dumas
@@ -106,7 +106,7 @@ _.Zones =
 					["coord"] = { 26.2, 6.2, 103 },	-- Edirah (The Exodar)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 50,
 				}),
 				q(28260, {	-- Meet with Wulf Hansreim
@@ -114,7 +114,7 @@ _.Zones =
 					["coord"] = { 47.2, 88.4, 103 },	-- Vord (The Exodar)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 50,
 				}),
 				q(9606, {	-- Return to Caregiver Chellan
@@ -128,7 +128,7 @@ _.Zones =
 					["provider"] = { "n", 17468 },	-- Prophet Velen
 					["coord"] = { 32.6, 54.2, 103 },
 					["sourceQuest"] =	9759,	-- Ending Their World
-					["races"] = { 11 },	-- Draenei
+					["races"] = { DRAENEI },
 					["lvl"] = 10,
 					["g"] = {
 						i(24344),	-- Tabard of the Hand
@@ -146,8 +146,8 @@ _.Zones =
 				q(10371, {	-- Yorus Barleybrew (Draenei)
 					["provider"] = { "n", 16771 },	-- Ahonan
 					["coord"] = { 55.0, 83.4, 103 },
-					["races"] = { 11 },	-- Draenei
-					["classes"] = { 1 },	-- Warrior
+					["races"] = { DRAENEI },
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
@@ -156,7 +156,7 @@ _.Zones =
 					["coord"] = { 47.2, 88.4, 103 },	-- Vord (The Exodar)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 20,
 				}),
 			}),

@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-_.Zones = 
+_.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(198, {	-- Mount Hyjal
@@ -32,24 +32,7 @@ _.Zones =
 						ach(5867),	-- Flawless Victory
 						ach(5872),	-- King of the Spider-Hill  (Mount Hyjal - The Molten Front)
 						ach(5859, {	-- Legacy of Leyara (Mount Hyjal)
-							i(69854, {	-- Smoke-Stained Locket
-								q(29298),	-- A Smoke-Stained Locket
-								q(29302, {	-- Unlocking the Secrets Within
-									["sourceQuests"] = {29298},	-- A Smoke-Stained Locket
-								}),
-								q(29303, {		-- Tragedy and Family
-									["sourceQuests"] = {29302},	-- A Smoke-Stained Locket
-								}),
-								q(29310, {	-- The Tipping Point
-									["sourceQuests"] = {29303},	-- A Smoke-Stained Locket
-								}),
-								q(29311, {	-- The Rest is History
-									["g"] = {
-										i(71259),	-- Leyara's Locket
-									},
-									["sourceQuests"] = {29310},	-- A Smoke-Stained Locket
-								}),
-							}),
+							i(69854),	-- Smoke-Stained Locket (quest item reward)
 							crit(1),		-- A Ritual of Flame
 							crit(2),		-- Leyara
 							crit(3),		-- Into the Depths
@@ -201,119 +184,119 @@ _.Zones =
 								currency(416),	-- Mark of the World Tree
 							},
 						}),
-						
+
 						--[[
-						
+
 						q(29263, {	-- A Bitter Pill
-							["provider"] = { "n", 53196 },	-- 
+							["provider"] = { "n", 53196 },	--
 						}),
 						q(29244, {	-- A Lieutenant of Flame
-							["provider"] = { "n", 52493 },	-- 
+							["provider"] = { "n", 52493 },	--
 						}),
 						q(29297, {	-- Bye Bye Burdy
-							["provider"] = { "n", 54163 },	-- 
+							["provider"] = { "n", 54163 },	--
 						}),
 						q(29160, {	-- Egg-stinction
-							["provider"] = { "n", 52921 },	-- 
+							["provider"] = { "n", 52921 },	--
 						}),
 						q(29255, {	-- Embergris
-							["provider"] = { "n", 52489 },	-- 
+							["provider"] = { "n", 52489 },	--
 						}),
 						q(29210, {	-- Enduring the Heat
-							["provider"] = { "n", 52494 },	-- 
+							["provider"] = { "n", 52494 },	--
 						}),
 						q(29275, {	-- Fandral's Methods
-							["provider"] = { "n", 52478 },	-- 
+							["provider"] = { "n", 52478 },	--
 						}),
 						q(29265, {	-- Fire Flowers
-							["provider"] = { "n", 52444 },	-- 
+							["provider"] = { "n", 52444 },	--
 						}),
 						q(29290, {	-- Fire in the Skies
-							["provider"] = { "n", 52491 },	-- 
+							["provider"] = { "n", 52491 },	--
 						}),
 						q(29264, {	-- Flamewakers of the Molten Flow
-							["provider"] = { "n", 52444 },	-- 
+							["provider"] = { "n", 52444 },	--
 						}),
 						q(29274, {	-- Hounds of Shannox
-							["provider"] = { "n", 52478 },	-- 
+							["provider"] = { "n", 52478 },	--
 						}),
 						q(29273, {	-- How Hot
-							["provider"] = { "n", 52477 },	-- 
+							["provider"] = { "n", 52477 },	--
 						}),
 						q(29203, {	-- Into the Depths
-							["provider"] = { "n", 52135 },	-- 
+							["provider"] = { "n", 52135 },	--
 						}),
 						q(29209, {	-- Into the Fiery Depths
-							["provider"] = { "n", 52494 },	-- 
+							["provider"] = { "n", 52494 },	--
 						}),
 						q(29206, {	-- Into the Fire
-							["provider"] = { "n", 52824 },	-- 
+							["provider"] = { "n", 52824 },	--
 						}),
 						q(29254, {	-- Little Lasher
-							["provider"] = { "n", 52489 },	-- 
+							["provider"] = { "n", 52489 },	--
 						}),
 						q(29278, {	-- Living Obsidium
-							["provider"] = { "n", 53196 },	-- 
+							["provider"] = { "n", 53196 },	--
 						}),
 						q(29289, {	-- Mother's Malice
-							["provider"] = { "n", 52491 },	-- 
+							["provider"] = { "n", 52491 },	--
 						}),
 						q(29272, {	-- Need... Water... Badly...
-							["provider"] = { "n", 53233 },	-- 
+							["provider"] = { "n", 53233 },	--
 						}),
 						q(29287, {	-- Peaked Interest
-							["provider"] = { "n", 52491 },	-- 
+							["provider"] = { "n", 52491 },	--
 						}),
 						q(29249, {	-- Planting Season
-							["provider"] = { "n", 52489 },	-- 
+							["provider"] = { "n", 52489 },	--
 						}),
 						q(29159, {	-- Pyrorachnophobia
-							["provider"] = { "n", 52921 },	-- 
+							["provider"] = { "n", 52921 },	--
 						}),
 						q(29293, {	-- Singed Wings
-							["provider"] = { "n", 53259 },	-- 
+							["provider"] = { "n", 53259 },	--
 						}),
 						q(29211, {	-- Solar Core Destruction
-							["provider"] = { "n", 52494 },	-- 
+							["provider"] = { "n", 52494 },	--
 						}),
 						q(29288, {	-- Starting Young
-							["provider"] = { "n", 52491 },	-- 
+							["provider"] = { "n", 52491 },	--
 						}),
 						q(29257, {	-- Steal Magmolias
-							["provider"] = { "n", 52489 },	-- 
+							["provider"] = { "n", 52489 },	--
 						}),
 						q(29243, {	-- Strike at the Heart
-							["provider"] = { "n", 52495 },	-- 
+							["provider"] = { "n", 52495 },	--
 						}),
 						q(29305, {	-- Strike at the Heart
-							["provider"] = { "n", 52490 },	-- 
+							["provider"] = { "n", 52490 },	--
 						}),
 						q(29296, {	-- Territorial Birds
-							["provider"] = { "n", 53259 },	-- 
+							["provider"] = { "n", 53259 },	--
 						}),
 						q(29295, {	-- The Bigger They Are
-							["provider"] = { "n", 53304 },	-- 
+							["provider"] = { "n", 53304 },	--
 						}),
 						q(29304, {	-- The Dogs of War
-							["provider"] = { "n", 52824 },	-- 
+							["provider"] = { "n", 52824 },	--
 						}),
 						q(29276, {	-- The Flame Spider Queen
-							["provider"] = { "n", 52477 },	-- 
+							["provider"] = { "n", 52477 },	--
 						}),
 						q(29205, {	-- The Forlorn Spire
-							["provider"] = { "n", 52824 },	-- 
+							["provider"] = { "n", 52824 },	--
 						}),
 						o(208535, {	-- Dried Acorn
 							q(29245),	-- The Mysterious Seed
 						}),
 						q(29204, {	-- The Warden's Charge
-							["provider"] = { "n", 52824 },	-- 
+							["provider"] = { "n", 52824 },	--
 						}),
 						q(29192, {	-- The Wardens are Watching
-							["provider"] = { "n", 52494 },	-- 
+							["provider"] = { "n", 52494 },	--
 						}),
 						q(29189, {	-- Wicked Webs
-							["provider"] = { "n", 52921 },	-- 
+							["provider"] = { "n", 52921 },	--
 						}),
 						]]--
 					}),
@@ -348,18 +331,18 @@ _.Zones =
 								i(67115),	-- Soulheart Bindings
 								i(66976),	-- Spaulders of the Savage Beast
 								i(67071),	-- Staff of Old Woes
-								i(67117),	-- Woundsealer Spaulders								
+								i(67117),	-- Woundsealer Spaulders
 							},
-						}),					
-		--[[						
+						}),
+		--[[
 		--					n(54338, { 	-- Anthriss 	}),
-		--					n(54322, { 	-- Deth'tilac 	}), 
-		--					n(50959, { 	-- Karkin 	}), 
-		--					n(54323, { 	-- Kirix	}), 
-		--					n(50815, { 	-- Skarr 	}), 
-		--					n(54324, { 	-- Skitterflame 	}), 
+		--					n(54322, { 	-- Deth'tilac 	}),
+		--					n(50959, { 	-- Karkin 	}),
+		--					n(54323, { 	-- Kirix	}),
+		--					n(50815, { 	-- Skarr 	}),
+		--					n(54324, { 	-- Skitterflame 	}),
 		--					n(54321, { 	-- Solix 	}),
-		--]]		
+		--]]
 					}),
 					n(-2,  {	-- Vendors
 						n(53881, {	-- Ayla Shadowstorm <Treasures of Elune>

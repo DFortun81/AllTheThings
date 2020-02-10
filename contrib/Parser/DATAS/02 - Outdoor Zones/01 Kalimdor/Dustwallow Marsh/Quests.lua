@@ -128,7 +128,7 @@ _.Zones =
 				q(1958,  {	-- Celestial Power
 					["u"] = 40,
 					["provider"] = { "n", 6546 },	-- Tabetha
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["g"] = {
 						un(2, i(7515)),	-- Celestial Orb
 						un(2, i(9517)),	-- Celestial Stave
@@ -303,7 +303,7 @@ _.Zones =
 				q(1949, {	-- Hidden Secrets
 					["races"] = HORDE_ONLY,
 					["u"] = 40,	-- Legacy Quests
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				q(1135,  {	-- Highperch Venom
 					["u"] = 40,
@@ -373,7 +373,7 @@ _.Zones =
 				q(1948, {	-- Items of Power
 					["races"] = HORDE_ONLY,
 					["u"] = 40,	-- Legacy Quests
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				q(27238, {	-- Jaina Must Know
 					["provider"] = { "n", 23569 },	-- Renn McGill
@@ -458,7 +458,7 @@ _.Zones =
 				q(1952,  {	-- Mage's Wand
 					["u"] = 40,
 					["provider"] = { "n", 6546 },	-- Tabetha
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["g"] = {
 						un(2, i(7514)),	-- Icefury Wand
 						un(2, i(11263)),	-- Nether Force Wand
@@ -468,7 +468,7 @@ _.Zones =
 				q(1957, {	-- Mana Surges
 					["races"] = HORDE_ONLY,
 					["u"] = 40,	-- Legacy Quests
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				q(27183, {	-- Marsh Frog Legs
 					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
@@ -582,7 +582,7 @@ _.Zones =
 				q(1956, {	-- Power in Uldaman
 					["races"] = HORDE_ONLY,
 					["u"] = 40,	-- Legacy Quests
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				q(27245, {	-- Prisoners of the Grimtotems (awarded "Prisoners of the Grimtotem" criteria)
 					["provider"] = { "n", 23723 },	-- Sergeant Lukas
@@ -690,7 +690,7 @@ _.Zones =
 				q(1953, {	-- Return to the Marsh
 					["races"] = HORDE_ONLY,
 					["u"] = 40,	-- Legacy Quests
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				q(27236, {	-- Secondhand Diving Gear
 					["provider"] = { "n", 23569 },	-- Renn McGill
@@ -1012,7 +1012,7 @@ _.Zones =
 				q(1955, {	-- The Exorcism
 					["races"] = HORDE_ONLY,
 					["u"] = 40,	-- Legacy Quests
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				q(27293, {	-- The Grimtotem Plot
 					["provider"] = { "n", 4926 },	-- Krog
@@ -1051,7 +1051,7 @@ _.Zones =
 				q(1954, {	-- The Infernal Orb
 					["races"] = HORDE_ONLY,
 					["u"] = 40,	-- Legacy Quests
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				q(1238,  {	-- The Lost Report
 					["u"] = 40,

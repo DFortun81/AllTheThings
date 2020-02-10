@@ -206,7 +206,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 3702 },	-- Alanndarian Nightsong
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["g"] = {
 						un(2, i(15866)),	-- Veildust Medicine Bag
 					},
@@ -437,7 +437,7 @@ _.Zones =
 					["provider"] = { "n", 4200 },	-- Laird
 					["coord"] = { 36.8, 44.2, 62 },
 					["sourceQuest"] = 26758,	-- Flight to Auberdine
-					["races"] = { 4 },	-- Night Elf
+					["races"] = { NIGHTELF },
 					["lvl"] = 10,
 					["u"] = 40,
 				}),

@@ -32,7 +32,7 @@ _.Zones =
 					["provider"] = { "n", 3598 },	-- Kyra Windblade
 					["coord"] = { 56.2, 59.2, 57 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 10,
 					["u"] = 40,
 				}),					
@@ -52,14 +52,14 @@ _.Zones =
 					["provider"] = { "n", 3838 },	-- Vesprystus
 					["coord"] = { 58.4, 94.0, 57 },
 					["sourceQuest"] = 26757,	-- The Bounty of Teldrassil
-					["races"] = { 4 },	-- Night Elf
+					["races"] = { NIGHTELF },
 					["lvl"] = 10,
 					["u"] = 40,
 				}),
 				q(5621,  {	-- Garments of the Moon
 					["u"] = 40,
-					["races"] = { 4 },	-- Night Elf
-					["classes"] = { 5 },	-- Priest
+					["races"] = { NIGHTELF },
+					["classes"] = { PRIEST },
 					["g"] = {
 						un(2, i(16604)),	-- Moon Robes of Elune
 					},
@@ -139,7 +139,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 4265 },	-- Nyoma
 					["coord"] = { 56.7, 53.5, 57 },
-					["races"] = { 4 },	-- Night Elf
+					["races"] = { NIGHTELF },
 				}),
 				q(13945, {	-- Resident Danger
 					["provider"] = { "n", 2081 },	-- Sentinel Kyra Starsong
@@ -181,7 +181,7 @@ _.Zones =
 					["provider"] = { "n", 10118 },	-- Nessa Shadowsong
 					["coord"] = { 56.2, 92.4, 57 },
 					["sourceQuest"] = 26756,	-- Nessa Shadowsong
-					["races"] = { 4 },	-- Night Elf
+					["races"] = { NIGHTELF },
 					["lvl"] = 10,
 					["u"] = 40,
 				}),
@@ -216,7 +216,7 @@ _.Zones =
 				q(28517, {	-- The Howling Oak
 					["provider"] = { "n", 42968 },	-- Krennan Aranas
 					["coord"] = { 55.2, 89.2, 57 },
-					["races"] = { 22 },	-- Worgen
+					["races"] = { WORGEN },
 				}),
 				q(927,   {	-- The Moss-twined Heart
 					["crs"] = { 3535 },	-- Blackmoss the Fetid
@@ -306,7 +306,7 @@ _.Zones =
 				q(6341,  {	-- To Darnassus
 					["provider"] = { "n", 40553 },	-- Fidelio
 					["coord"] = { 55.4, 50.4, 57 },
-					["races"] = { 4 },	-- Night Elf
+					["races"] = { NIGHTELF },
 					["sourceQuest"] = 6344,	-- Reminders of Home
 				}),
 				q(932,   {	-- Twisted Hatred

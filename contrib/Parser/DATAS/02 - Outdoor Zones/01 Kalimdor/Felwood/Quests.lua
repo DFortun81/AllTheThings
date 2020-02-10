@@ -68,6 +68,13 @@ _.Zones =
 						27997,	-- The Corruption of the Jadefire
 					},
 				}),
+				q(7634, {	-- Ancient Sinew Wrapped Lamina
+					["u"] = 40,
+					["provider"] = { "n", 14526 },	-- Hastat the Ancient
+					["g"] = {
+						un(2, i(18714)),	-- Ancient Sinew Wrapped Lamina
+					},
+				}),
 				q(4261,  {	-- Ancient Spirit
 					["u"] = 40,
 					["provider"] = { "n", 9598 },	-- Arei
@@ -416,7 +423,7 @@ _.Zones =
 				q(7603,  {	-- Kroshius' Infernal Core
 					["u"] = 40,
 					["provider"] = { "n", 14470 },	-- Impsy
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["g"] = {
 						un(2, i(18762)),	-- Shard of the Green Flame
 					},

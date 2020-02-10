@@ -43,7 +43,7 @@ _.Zones =
 					["coord"] = { 77.0, 27.4, 88 },	-- Sheal Runetotem (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 20,
 				}),
 				q(1102, {	-- A Vengeful Fate
@@ -63,7 +63,7 @@ _.Zones =
 					["coord"] = { 22.6, 15.0, 88 },	-- Archmage Shymm (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 20,
 				}),
 				q(5088, {	-- Arikara
@@ -87,7 +87,7 @@ _.Zones =
 					["provider"] = { "n", 6410 },	-- Orm Stonehoof
 					["coord"] = { 38.9, 56.0, 88 },
 					["sourceQuest"] = 1844,	-- Chimaeric Horn
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 					["g"] = {
@@ -98,7 +98,7 @@ _.Zones =
 					["provider"] = { "n", 6410 },	-- Orm Stonehoof
 					["coord"] = { 38.9, 56.0, 88 },
 					["sourceQuest"] = 1840,	-- Orm Stonehoof and the Brutal Helm
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
@@ -124,8 +124,8 @@ _.Zones =
 						{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
 					},
 					["isBreadcrumb"] = true,
-					["races"] = { 5 },	-- Undead
-					["classes"] = { 5 },	-- Priest
+					["races"] = { UNDEAD },
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
 				q(1205, {	-- Deadmire
@@ -159,8 +159,8 @@ _.Zones =
 					["provider"] = { "n", 43795 },	-- Aponi Brightmane
 					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
 					["isBreadcrumb"] = true,
-					["races"] = { 6 },	-- Tauren
-					["classes"] = { 2 },	-- Paladin
+					["races"] = { TAUREN },
+					["classes"] = { PALADIN },
 					["lvl"] = 20,
 				}),
 				q(1064,  {	-- Forsaken Aid
@@ -181,7 +181,7 @@ _.Zones =
 					["coord"] = { 57.2, 89.0, 88 },	-- Sark Ragetotem (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 				}),
 				q(27278, {	-- Grimshot's Call
@@ -189,7 +189,7 @@ _.Zones =
 					["coord"] = { 57.4, 89.2, 88 },	-- Holt Thunderhorn (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 20,
 				}),
 				q(27335, {	-- Journey to Orgrimmar
@@ -202,8 +202,8 @@ _.Zones =
 						{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
 					},
 					["isBreadcrumb"] = true,
-					["races"] = { 5 },	-- Blood Elf
-					["classes"] = { 5 },	-- Priest
+					["races"] = { BLOODELF },
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
 				q(1065,  {	-- Journey to Tarren Mill
@@ -227,8 +227,8 @@ _.Zones =
 					["coord"] = { 25.2, 14.4, 88 },	-- Delano Morisett (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 9 },	-- Warlock
-					["maps"] = { 88, 90, 110 }, 
+					["classes"] = { WARLOCK },
+					["maps"] = { 88, 90, 110 },
 					["lvl"] = 20,
 				}),
 				q(914, {	-- Leaders of the Fang
@@ -260,16 +260,16 @@ _.Zones =
 						{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
 					},
 					["isBreadcrumb"] = true,
-					["races"] = { 9 },	-- Goblin
-					["classes"] = { 5 },	-- Priest
+					["races"] = { GOBLIN },
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
 				q(28304, {	-- Meet with Dark Cleric Cecille
 					["provider"] = { "n", 3045 },	-- Malakai Cross
 					["coord"] = { 24.8, 22.4, 88 },	-- Malakai Cross (Thunder Bluff)
 					["isBreadcrumb"] = true,
-					["races"] = { 5 },	-- Undead
-					["classes"] = { 5 },	-- Priest
+					["races"] = { UNDEAD },
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
 				q(28290, {	-- Meet with Grezz Ragefist
@@ -277,7 +277,7 @@ _.Zones =
 					["coord"] = { 57.2, 89.0, 88 },	-- Sark Ragetotem (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 50,
 				}),
 				q(28299, {	-- Meet with Kranosh
@@ -285,31 +285,31 @@ _.Zones =
 					["coord"] = { 25.2, 14.4, 88 },	-- Delano Morisett (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 50,
 				}),
 				q(28303, {	-- Meet with Master Pyreanor
 					["provider"] = { "n", 43795 },	-- Aponi Brightmane
 					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
 					["isBreadcrumb"] = true,
-					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["races"] = { BLOODELF },
+					["classes"] = { PALADIN },
 					["lvl"] = 50,
 				}),
-				q(28297, {	-- Meet with Ormak Grimshot 
+				q(28297, {	-- Meet with Ormak Grimshot
 					["provider"] = { "n", 3039 },	-- Holt Thunderhorn
 					["coord"] = { 57.4, 89.2, 88 },	-- Holt Thunderhorn (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 50,
 				}),
 				q(28302, {	-- Meet with Sunwalker Atohmo
 					["provider"] = { "n", 43795 },	-- Aponi Brightmane
 					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
 					["isBreadcrumb"] = true,
-					["races"] = { 6 },	-- Tauren
-					["classes"] = { 2 },	-- Paladin
+					["races"] = { TAUREN },
+					["classes"] = { PALADIN },
 					["lvl"] = 50,
 				}),
 				q(28301, {	-- Meet with Terga Earthbreaker
@@ -317,7 +317,7 @@ _.Zones =
 					["coord"] = { 22.2, 19.0, 88 },	-- Kador Cloudsong (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["lvl"] = 50,
 				}),
 				q(28307, {	-- Meet with Tyelis
@@ -330,8 +330,8 @@ _.Zones =
 						{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
 					},
 					["isBreadcrumb"] = true,
-					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 5 },	-- Priest
+					["races"] = { BLOODELF },
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
 				q(28300, {	-- Meet with Ureda
@@ -339,14 +339,14 @@ _.Zones =
 					["coord"] = { 22.6, 15.0, 88 },	-- Archmage Shymm (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 50,
 				}),
 				q(28289, {	-- Moonglade Calls
 					["provider"] = { "n", 3034 },	-- Sheal Runetotem
 					["coord"] = { 77.0, 27.4, 88 },	-- Sheal Runetotem (Thunder Bluff)
 					["isBreadcrumb"] = true,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 50,
 				}),
 				q(3782, {	-- Morrowgrain Research
@@ -373,7 +373,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 					["u"] = 40,
-				}),				
+				}),
 				q(1123,  {	-- Rabine Saturna
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -396,7 +396,7 @@ _.Zones =
 					["provider"] = { "n", 2995 },	-- Tal
 					["coord"] = { 46.8, 50.0, 88 },
 					["sourceQuest"] = 6363,	-- Tal the Wind Rider Master
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 					["lvl"] = 4,
 				}),
 				q(776, {	-- Rites of the Earthmother
@@ -418,16 +418,16 @@ _.Zones =
 					["provider"] = { "n", 43870 },	-- Seer Beryl
 					["coord"] = { 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
 					["isBreadcrumb"] = true,
-					["races"] = { 9 },	-- Goblin
-					["classes"] = { 5 },	-- Priest
+					["races"] = { GOBLIN },
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
 				q(27298, {	-- Seek Out Master Pyreanor
 					["provider"] = { "n", 43795 },	-- Aponi Brightmane
 					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
 					["isBreadcrumb"] = true,
-					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladon
+					["races"] = { BLOODELF },
+					["classes"] = { PALADIN },
 					["lvl"] = 20,
 				}),
 				q(27332, {	-- Seek the Shadow-Walker
@@ -440,8 +440,8 @@ _.Zones =
 						{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
 					},
 					["isBreadcrumb"] = true,
-					["races"] = { 8 },	-- Troll
-					["classes"] = { 5 },	-- Priest
+					["races"] = { TROLL },
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
 				q(2966, {	-- Seeing What Happens
@@ -472,7 +472,7 @@ _.Zones =
 					["provider"] = { "n", 8359 },	-- Ahanu
 					["coord"] = { 45.5, 55.8, 88 },
 					["sourceQuest"] = 6362,	-- Ride to Thunder Bluff
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 					["lvl"] = 4,
 				}),
 				q(5723, {	-- Testing an Enemy's Strength
@@ -490,7 +490,7 @@ _.Zones =
 					["coord"] = { 22.2, 19.0, 88 },	-- Kador Cloudsong (Thunder Bluff)
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["lvl"] = 20,
 				}),
 				q(1086,  {	-- The Flying Machine Airport
@@ -535,10 +535,10 @@ _.Zones =
 						{ 75.4, 28.0, 88 },	-- Seer Beryl (Thunder Bluff)
 					},
 					["isBreadcrumb"] = true,
-					["races"] = { 6 },	-- Tauren
-					["classes"] = { 5 },	-- Priest
+					["races"] = { TAUREN },
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
-				}),			
+				}),
 				q(3761, {	-- Un'Goro Soil
 					["u"] = 40,
 					["provider"] = { "n", 5769 },	-- Arch Druid Hamuul Runetotem
@@ -557,14 +557,14 @@ _.Zones =
 				q(26397, {	-- Walk With The Earth Mother
 					["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
 					["coord"] = { 60.3, 51.7, 88 },
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 					["lvl"] = 4,
 				}),
 				q(24540, {	-- War Dance
 					["provider"] = { "n", 36648 },	-- Baine Bloodhoof
 					["coord"] = { 60.3, 51.7, 88 },
 					["sourceQuest"] = 24550,	-- Journey into Thunder Bluff
-					["races"] = { 6 },	-- Tauren
+					["races"] = { TAUREN },
 					["lvl"] = 4,
 					["g"] = {
 						i(57241),	-- Dreamwalking Staff
@@ -574,7 +574,6 @@ _.Zones =
 						i(156986),	-- Kodo Gavel
 					},
 				}),
-				
 			}),
 		}),
 	}),

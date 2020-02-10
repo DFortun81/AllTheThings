@@ -856,7 +856,7 @@ _.Zones =
 				}),
 				q(9428, {	-- Report to Spintertree Post
 					["u"] = 40,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 				}),
 				q(13626, {	-- Respect for the Fallen
 					["provider"] = { "n", 11806 },	-- Sentinel Onaeya

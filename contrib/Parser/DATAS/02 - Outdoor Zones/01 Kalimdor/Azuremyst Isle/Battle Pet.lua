@@ -23,22 +23,22 @@ _.Zones =
 					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
 					["g"] = {
 						p(138, {	-- Blue Moth
-							["races"] = { 11 },	-- Draenei
+							["races"] = { DRAENEI },
 						}),
 						p(630, {	-- Gilnean Raven
-							["races"] = { 22 },	-- Worgan
+							["races"] = { WORGEN },
 						}),
 						p(68, {	-- Great Horned Owl
-							["races"] = { 4 },	-- Night Elf
+							["races"] = { NIGHTELF },
 						}),
 						p(792, {	-- Jade Crane Chick
-							["races"] = { 25 },	-- Pandaren
+							["races"] = { PANDAREN_ALLIANCE },
 						}),
 						p(43, {	-- Orange Tabby Cat
-							["races"] = { 1 },	-- Human
+							["races"] = { HUMAN },
 						}),
 						p(72, {	-- Snowshoe Rabbit
-							["races"] = { 3, 7 },	-- Gnome, Dwarf
+							["races"] = { GNOME, DWARF },
 						}),
 					},
 				}),

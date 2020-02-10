@@ -315,7 +315,7 @@ _.Zones =
 						i(67161),	-- Dagger of Wretched Spectres
 						i(67195),	-- Mace of the Sin'dorei Spirit
 						i(67178),	-- Blade of Wretched Spirits
-						i(157021),	-- Staff of Haunted Memory 
+						i(157021),	-- Staff of Haunted Memory
 						i(67211),	-- Orb of Kel'theril
 					},
 				}),
@@ -450,7 +450,18 @@ _.Zones =
 					["provider"] = { "n", 49407 },	-- Rinno Curtainfire
 					["coord"] = { 45.7, 41.0, 83 },
 				}),
-				q(28656),	-- Strange Life Forces
+				q(28656, {	-- Strange Life Forces
+					["description"] = "Kill mobs at close range until you recieve an E'ko buff.",
+					["coords"] = {
+						{ 46.3, 18.0, 83 },
+						{ 55.6, 23.6, 83 },
+						{ 63.7, 28.1, 83 },
+						{ 57.5, 40.9, 83 },
+						{ 67.6, 48.7, 83 },
+						{ 68.0, 54.1, 83 },
+						{ 60.7, 76.3, 83 },
+					},
+				}),
 				q(4842,  {	-- Strange Sources
 					["u"] = 40,
 					["provider"] = { "n", 9298 },	-- Donova Snowden

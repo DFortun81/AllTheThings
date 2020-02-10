@@ -71,7 +71,7 @@ _.Zones =
 					["coord"] = { 57.2, 30.2, 10 },
 					["sourceQuest"] = 1824,	-- Trial at the Field of Giant
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
@@ -80,7 +80,7 @@ _.Zones =
 					["coord"] = { 57.2, 30.2, 10 },
 					["sourceQuest"] = 1838,	-- Brutal Armor
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 					["g"] = {
@@ -162,7 +162,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 3448 },	-- Tonga Runetotem
 					["races"] = HORDE_ONLY,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["g"] = {
 						un(2, i(15866)),	-- Veildust Medicine Bag
 					},
@@ -276,7 +276,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 5878 },	-- Thun'grim Firegaze
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["g"] = {
 						un(2, i(7326)),	-- Thun'grim's Axe
 						un(2, i(7328)),	-- Thun'grim's Mace
@@ -489,11 +489,7 @@ _.Zones =
 				q(6365,  {	-- Meats to Orgrimmar
 					["provider"] = { "n", 3489 },	-- Zargh
 					["coord"] = { 50.6, 57.8, 10 },
-					["races"] = {
-						2,	-- Orc
-						8,	-- Troll
-						36,	-- Mag'har
-					},
+					["races"] = { ORC, TROLL, MAGHAR },
 				}),
 				q(9267,  {	-- Mending Old Wounds (repeatable quest to repair lost rep with Ratchet from getting Insane title)
 					["provider"] = { "n", 16418 },	-- Mupsi Shacklefridd
@@ -575,7 +571,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 3484 },	-- Kil'hala
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["g"] = {
 						un(2, i(7512)),	-- Nether-Lace Robe
 						un(2, i(9515)),	-- Nether-Lace Tunic
@@ -592,7 +588,7 @@ _.Zones =
 					["coord"] = { 57.2, 30.2, 10 },
 					["sourceQuest"] = 1838,	-- Brutal Armor
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["u"] = 40,
 				}),
 				q(7866,  {	-- Outrider Basic Care Package
@@ -669,11 +665,7 @@ _.Zones =
 					["provider"] = { "n", 3615 },	-- Devrak
 					["coord"] = { 48.6, 58.6, 10 },
 					["sourceQuest"] = 6365,	-- Meats to Orgrimmar
-					["races"] = { 
-						2,	-- Orc
-						8,	-- Troll
-						36,	--Mag'har
-					},
+					["races"] = { ORC, TROLL, MAGHAR },
 				}),
 				q(866,   {	-- Root Samples
 					["provider"] = { "n", 3446 },	-- Mebok Mizzyrix
@@ -760,7 +752,7 @@ _.Zones =
 					["coord"] = { 44.6, 59.4, 10 },
 					["sourceQuest"] = 1824,	-- Trial at the Field of Giants
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
@@ -794,7 +786,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 6251 },	-- Strahad Farsan
 					["lvl"] = 30,
-					["classes"] = { 9 },	-- Warlock Only
+					["classes"] = { WARLOCK },
 					["sourceQuest"] = 1804,	-- Tome of the Cabal
 					["g"] = {
 						i(22244),	-- Box of Souls
@@ -804,7 +796,7 @@ _.Zones =
 				q(4964,  {	-- The Completed Orb of Dar'Orahil
 					["u"] = 40,
 					["provider"] = { "n", 6266 },	-- Menara Voidrender
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["g"] = {
 						un(2, i(15108)),	-- Orb of Dar'Orahil
 						un(2, i(15106)),	-- Staff of Dar'Orahil
@@ -813,7 +805,7 @@ _.Zones =
 				q(4975,  {	-- The Completed Orb of Noh'Orahil
 					["u"] = 40,
 					["provider"] = { "n", 6266 },	-- Menara Voidrender
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["g"] = {
 						un(2, i(15107)),	-- Orb of Noh'Orahil
 						un(2, i(15105)),	-- Staff of Noh'Orahil
@@ -822,7 +814,7 @@ _.Zones =
 				q(4786,  {	-- The Completed Robe
 					["u"] = 40,
 					["provider"] = { "n", 6266 },	-- Menara Voidrender
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["g"] = {
 						un(2, i(6900)),	-- Enchanted Gold Bloodrobe
 					},
@@ -972,7 +964,7 @@ _.Zones =
 					["provider"] = { "n", 6251 },	-- Strahad Farsan
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock Only
+					["classes"] = { WARLOCK },
 					["sourceQuest"] = 1798,	-- Seeking Strahad
 				}),
 				q(1824,  {	-- Trial at the Field of Giants
@@ -980,7 +972,7 @@ _.Zones =
 					["coord"] = { 44.6, 59.4, 10 },
 					["sourceQuest"] = 1823,	-- Speak with Ruga
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 					["g"] = {
@@ -992,7 +984,7 @@ _.Zones =
 					["coord"] = { 57.2, 30.2, 10 },
 					["sourceQuest"] = 1838,	-- Brutal Armor
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
@@ -1001,7 +993,7 @@ _.Zones =
 					["coord"] = { 57.2, 30.2, 10 },
 					["sourceQuest"] = 1838,	-- Brutal Armor
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 				}),

@@ -717,7 +717,7 @@ _.Zones =
 					["coord"] = { 73.6, 45.6, 85 },
 					["sourceQuest"] = 28290,	-- Meet with Grezz Ragefist
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 50,
 					["g"] = {
 						i(65625),	-- Faceguard of the Horde
@@ -777,7 +777,7 @@ _.Zones =
 					["coord"] = { 73.6, 45.6, 85 },
 					["sourceQuest"] = 27281,	-- Grezz Ragefist
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["g"] = {
 						i(65494),	-- Broadaxe of the Horde
@@ -795,7 +795,7 @@ _.Zones =
 					},
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 20,
 				}),
 				q(13266, {	-- A Life Without Regret
@@ -809,7 +809,7 @@ _.Zones =
 					["coord"] = { 63.8, 32.8, 85 },
 					["sourceQuest"] = 27278,	-- Grimshot's Call
 					["races"] = HORDE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 20,
 					["g"] = {
 						i(65466),	-- Bow of the Great Hunter
@@ -831,7 +831,7 @@ _.Zones =
 						6,	-- Tauren
 						9,	-- Goblin
 					},
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 					["g"] = {
 						i(65484),	-- Staff of the Earthmother
@@ -841,8 +841,8 @@ _.Zones =
 					["provider"] = { "n", 45347 },	-- Brother Silverhallow
 					["coord"] = { 37.8, 87.4, 85 },
 					["sourceQuest"] = 28164,	-- Seek Brother Silverhallow
-					["races"] = { 9 },	-- Goblin
-					["classes"] = { 5 },	-- Priest
+					["races"] = { GOBLIN },
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 					["g"] = {
 						i(65481),	-- Staff of Golden Worship
@@ -871,7 +871,7 @@ _.Zones =
 					["coord"] = { 53.8, 35.8, 85 },
 					["sourceQuest"] = 32307,	-- Reader for the Dead Tongue
 					["races"] = HORDE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 90,
 				}),
 				q(27403, {	-- A True Sunwalker
@@ -882,7 +882,7 @@ _.Zones =
 						6,	-- Tauren
 						10,	-- Blood Elf
 					},
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 20,
 					["g"] = {
 						i(65472),	-- Mace of the Sunwalker
@@ -919,7 +919,7 @@ _.Zones =
 					["provider"] = { "n", 14720 },	-- High Overlord Saurfang
 					["coord"] = { 48.6, 71.0, 85 },
 					["sourceQuest"] = 9626,	-- Meeting the Orcs
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["lvl"] = 10,
 				}),
 				q(1431,  {	-- Alliance Relations
@@ -941,7 +941,7 @@ _.Zones =
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -952,7 +952,7 @@ _.Zones =
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -963,7 +963,7 @@ _.Zones =
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -974,7 +974,7 @@ _.Zones =
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -985,7 +985,7 @@ _.Zones =
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -996,7 +996,7 @@ _.Zones =
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1007,7 +1007,7 @@ _.Zones =
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1018,7 +1018,7 @@ _.Zones =
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1029,7 +1029,7 @@ _.Zones =
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1044,8 +1044,8 @@ _.Zones =
 				q(40976, {	-- Audience with the Warchief
 					["provider"] = { "n", 97296 },	-- Archmage Khadgar
 					["coord"] = { 52.6, 88.2, 85 },
-					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 12 },	-- Demon Hunter
+					["races"] = { BLOODELF },
+					["classes"] = { DEMONHUNTER },
 					["lvl"] = 98,
 				}),
 				q(3504,  {	-- Betrayed
@@ -1060,7 +1060,7 @@ _.Zones =
 					["coord"] = { 32.9, 65.8, 85 },
 					["sourceQuest"] = 27279,	-- The Shattered Hand
 					["races"] = HORDE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 20,
 					["g"] = {
 						i(65487),	-- Blade of the Shattered Hand
@@ -1194,7 +1194,7 @@ _.Zones =
 					["provider"] = { "n", 3310 },	-- Doras
 					["coord"] = { 49.4, 59.2, 85 },
 					["sourceQuest"] = 26803,	-- Missing Reports
-					["races"] = { 9 },	-- Goblin
+					["races"] = { GOBLIN },
 					["lvl"] = 5,
 				}),
 				q(7491,  {	-- For All To See
@@ -1325,14 +1325,14 @@ _.Zones =
 				q(1947, {	-- Journey to the Marsh
 					["races"] = HORDE_ONLY,
 					["u"] = 40,	-- Legacy Quests
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				q(8944,  {	-- Just Compensation (Warrior)
 					["provider"] = { "n", 16012 },	-- Mokvar
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1345,7 +1345,7 @@ _.Zones =
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["races"] = HORDE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1358,7 +1358,7 @@ _.Zones =
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["races"] = HORDE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1371,7 +1371,7 @@ _.Zones =
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["races"] = HORDE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1384,7 +1384,7 @@ _.Zones =
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["races"] = HORDE_ONLY,
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1397,7 +1397,7 @@ _.Zones =
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["races"] = HORDE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1410,7 +1410,7 @@ _.Zones =
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1423,7 +1423,7 @@ _.Zones =
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["races"] = HORDE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1436,7 +1436,7 @@ _.Zones =
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8978,	-- Return to Mokvar
 					["races"] = HORDE_ONLY,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1447,11 +1447,11 @@ _.Zones =
 				q(1945, {	-- Laughing Sisters
 					["races"] = HORDE_ONLY,
 					["u"] = 40,	-- Legacy Quests
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				q(32673, {	-- Learn To Ride
 					["description"] = "This quest is available to Goblins upon reaching level 20.",
-					["races"] = { 9 },	-- Goblin
+					["races"] = { GOBLIN },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
 					["lvl"] = 20,
@@ -1500,7 +1500,7 @@ _.Zones =
 					["coord"] = { 51.2, 72.4, 85 },
 					["sourceQuest"] = 27277,	-- An Audience with Ureda
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["g"] = {
 						i(65468),	-- Staff of the Arcane Path
 					},
@@ -1509,7 +1509,7 @@ _.Zones =
 					["provider"] = { "n", 13417 },	-- Sagorne Creststrider
 					["coord"] = { 39.2, 48.4, 85 },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["lvl"] = 58,
 					["u"] = 40,
 				}),
@@ -1529,14 +1529,14 @@ _.Zones =
 				q(26803, {	-- Missing Reports
 					["provider"] = { "n", 3144 },	-- Eitrigg
 					["coord"] = { 48.6, 71.0, 85 },
-					["races"] = { 9 },	-- Goblin
+					["races"] = { GOBLIN },
 					["lvl"] = 5,
 				}),
 				q(28289, {	-- Moonglade Calls
 					["provider"] = { "n", 44978 },	-- Sesebi
 					["coord"] = { 35.0, 67.6, 85 },	-- Sesebi (Orgrimmar)
 					["isBreadcrumb"] = true,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 50,
 				}),
 				q(2283, {	-- Necklace Recovery
@@ -1586,7 +1586,7 @@ _.Zones =
 					["provider"] = { "n", 88705 },	-- Kranosh (Orgrimmar)
 					["coord"] = { 53.8, 35.8, 85 },	-- Kranosh (Orgrimmar)
 					["isBreadcrumb"] = true,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 90,
 				}),
 				q(1361,  {	-- Regthar Deathgate
@@ -1597,7 +1597,7 @@ _.Zones =
 				q(25275, {	-- Report to the Labor Captain
 					["provider"] = { "n", 14720 },	-- High Overlord Saurfang
 					["coord"] = { 48.6, 71.0, 85 },
-					["races"] = { 9 },	-- Goblin
+					["races"] = { GOBLIN },
 					["lvl"] = 10,
 				}),
 				q(6386,  {	-- Return to Razor Hill
@@ -1658,7 +1658,7 @@ _.Zones =
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 9015,	-- The Challenge
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1671,7 +1671,7 @@ _.Zones =
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 9015,	-- The Challenge
 					["races"] = HORDE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1684,7 +1684,7 @@ _.Zones =
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
 					["races"] = HORDE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1697,7 +1697,7 @@ _.Zones =
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
 					["races"] = HORDE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1710,7 +1710,7 @@ _.Zones =
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
 					["races"] = HORDE_ONLY,
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1723,7 +1723,7 @@ _.Zones =
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
 					["races"] = HORDE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1736,7 +1736,7 @@ _.Zones =
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1749,7 +1749,7 @@ _.Zones =
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
 					["races"] = HORDE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1762,7 +1762,7 @@ _.Zones =
 					["coord"] = { 48.6, 72.8, 85 },
 					["sourceQuest"] = 8998,	-- Back to the Beginning [Horde]
 					["races"] = HORDE_ONLY,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1774,7 +1774,7 @@ _.Zones =
 					["provider"] = { "n", 88705 },	-- Kranosh
 					["coord"] = { 53.8, 35.8, 85 },
 					["sourceQuest"] = 32309,	-- A Tale of Six Masters
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 90,
 				}),
 				q(28465, {	-- Slaves of the Firelord
@@ -1782,7 +1782,7 @@ _.Zones =
 					["coord"] = { 39.0, 47.4, 85 },
 					["sourceQuest"] = 28301,	-- Meet with Terga Earthbreaker
 					["races"] = HORDE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["lvl"] = 50,
 					["g"] = {
 						i(65643),	-- Mask of the Speaker
@@ -1798,7 +1798,7 @@ _.Zones =
 					["provider"] = { "n", 3354 },	-- Sorek
 					["coord"] = { 80.0, 32.2, 85 },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
@@ -1806,8 +1806,8 @@ _.Zones =
 					["provider"] = { "n", 45337 },	-- Tyelis
 					["coord"] = { 49.0, 71.0, 85 },
 					["sourceQuest"] = 27335,	-- Journey to Orgrimmar
-					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 5 },	-- Priest
+					["races"] = { BLOODELF },
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 					["g"] = {
 						i(65478),	-- Staff of the Sunchaser
@@ -1818,7 +1818,7 @@ _.Zones =
 					["coord"] = { 49.0, 55.2, 85 },
 					["sourceQuest"] = 28299,	-- Meet with Kranosh
 					["races"] = HORDE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 50,
 					["g"] = {
 						i(65627),	-- Horns of the Left Hand Path
@@ -1834,7 +1834,7 @@ _.Zones =
 					["coord"] = { 39.0, 47.4, 85 },
 					["sourceQuest"] = 27280,	-- The Earthbreaker Calls
 					["races"] = HORDE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["lvl"] = 20,
 					["g"] = {
 						i(65490),	-- Battleaxe of the Speaker
@@ -1845,8 +1845,8 @@ _.Zones =
 					["provider"] = { "n", 23128 },	-- Master Pyreanor
 					["coord"] = { 49.2, 71.2, 85 },
 					["sourceQuest"] = 27298,	-- Seek Out Master Pyreanor
-					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["races"] = { BLOODELF },
+					["classes"] = { PALADIN },
 					["lvl"] = 20,
 					["g"] = {
 						i(65469),	-- Morningstar of the Order
@@ -1883,7 +1883,7 @@ _.Zones =
 					["coord"] = { 48.2, 72.8, 85 },
 					["sourceQuest"] = 27334,	-- Dark Cleric Cecille
 					["races"] = { 5 },	-- Undead
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 					["g"] = {
 						i(65479),	-- Staff of the Forsaken Faith
@@ -1894,7 +1894,7 @@ _.Zones =
 					["coord"] = { 44.6, 61.4, 85 },
 					["sourceQuest"] = 28298,	-- Meet with Gordul
 					["races"] = HORDE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 50,
 					["g"] = {
 						i(65629),	-- Facemask of the Shattered Hand
@@ -1913,7 +1913,7 @@ _.Zones =
 					["provider"] = { "n", 13417 },	-- Sagorne Creststrider
 					["coord"] = { 39.2, 48.4, 85 },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -1945,7 +1945,7 @@ _.Zones =
 					["coord"] = { 63.8, 32.8, 85 },
 					["sourceQuest"] = 28297,	-- Meet with Ormak Grimshot
 					["races"] = HORDE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 50,
 					["g"] = {
 						i(65628),	-- Helm of the Great Hunter
@@ -1992,7 +1992,7 @@ _.Zones =
 					["coord"] = { 48.4, 62.6, 85 },
 					["sourceQuest"] = 28300,	-- Meet with Ureda
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 50,
 					["g"] = {
 						i(65626),	-- Hood of the Arcane Path
@@ -2008,7 +2008,7 @@ _.Zones =
 					["provider"] = { "n", 6446 },	-- Therzok
 					["coord"] = { 33.4, 65.2, 85 },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 13,
 					["u"] = 40,
 					["g"] = {
@@ -2023,7 +2023,7 @@ _.Zones =
 						8,	-- Troll
 						31,	-- Zandalari Troll
 					},
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 					["g"] = {
 						i(65485),	-- Shadow-Walker Staff
@@ -2066,7 +2066,7 @@ _.Zones =
 					["coord"] = { 76.8, 37.4, 85 },
 					["sourceQuest"] = 27282,	-- Kranosh's Behest
 					["races"] = HORDE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 20,
 					["g"] = {
 						i(65497),	-- Staff of the Left Hand Path
@@ -2101,8 +2101,8 @@ _.Zones =
 					["provider"] = { "n", 45337 },	-- Tyelis
 					["coord"] = { 49.0, 71.0, 85 },
 					["sourceQuest"] = 28307,	-- Meet with Tyelis
-					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 5 },	-- Priest
+					["races"] = { BLOODELF },
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 					["g"] = {
 						i(65634),	-- Crown of the Sunchaser
@@ -2112,8 +2112,8 @@ _.Zones =
 					["provider"] = { "n", 45347 },	-- Brother Silverhallow
 					["coord"] = { 37.8, 87.4, 85 },
 					["sourceQuest"] = 28323,	-- Meet with Brother Silverhallow
-					["races"] = { 9 },	-- Goblin
-					["classes"] = { 5 },	-- Priest
+					["races"] = { GOBLIN },
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 					["g"] = {
 						i(65637),	-- Crown of Golden Worship
@@ -2124,7 +2124,7 @@ _.Zones =
 					["coord"] = { 48.2, 72.8, 85 },
 					["sourceQuest"] = 28304,	-- Meet with Dark Cleric Cecille
 					["races"] = { 5 },	-- Undead
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 					["g"] = {
 						i(65633),	-- Crown of Forsaken Faith
@@ -2134,8 +2134,8 @@ _.Zones =
 					["provider"] = { "n", 44735 },	-- Seer Liwatha
 					["coord"] = { 45.4, 53.4, 85 },
 					["sourceQuest"] = 28308,	-- Meet with Seer Liwatha
-					["races"] = { 6 },	-- Tauren
-					["classes"] = { 5 },	-- Priest
+					["races"] = { TAUREN },
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 					["g"] = {
 						i(65635),	-- Crown of the Earthmother
@@ -2149,7 +2149,7 @@ _.Zones =
 						8,	-- Troll
 						31,	-- Zandalari Troll
 					},
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 					["g"] = {
 						i(65636),	-- Crown of the Shadow-Walker
@@ -2170,14 +2170,14 @@ _.Zones =
 				q(1944, {	-- Waters of Xavian
 					["races"] = HORDE_ONLY,
 					["u"] = 40,	-- Legacy Quests
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				q(28466, {	-- Weapons of Darkness
 					["provider"] = { "n", 44725 },	-- Sunwalker Atohmo
 					["coord"] = { 45.2, 53.4, 85 },
 					["sourceQuest"] = 28302,	-- Meet with Sunwalker Atohmo
-					["races"] = { 6 },	-- Tauren
-					["classes"] = { 2 },	-- Paladin
+					["races"] = { TAUREN },
+					["classes"] = { PALADIN },
 					["lvl"] = 50,
 					["g"] = {
 						i(65631),	-- Helm of the Sunwalker
@@ -2189,8 +2189,8 @@ _.Zones =
 					["provider"] = { "n", 23128 },	-- Master Pyreanor
 					["coord"] = { 49.2, 71.2, 85 },
 					["sourceQuest"] = 28303,	-- Meet with Master Pyreanor
-					["races"] = { 10 },	-- Blood Elf
-					["classes"] = { 2 },	-- Paladin
+					["races"] = { BLOODELF },
+					["classes"] = { PALADIN },
 					["lvl"] = 50,
 					["g"] = {
 						i(65632),	-- Helm of the Order

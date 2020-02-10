@@ -31,7 +31,7 @@ _.Zones =
 				}),
 				q(42046, {	-- A New Beginning
 					["provider"] = { "n", 106250 },	-- 
-					["classes"]= { 11 },	-- Druid
+					["classes"] = { DRUID },
 				}),
 				q(25411, {	-- A New Master
 					["provider"] = { "n", 39933 },	-- Tyrus Blackhorn
@@ -114,7 +114,7 @@ _.Zones =
 				}),
 				q(44877, {	-- Attack on the Roost
 					["lvl"] = 110,
-					["classes"]= { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["sourceQuest"]	= 44869,	-- Talon Terror
 					["providers"] = {
 						{ "n", 115802 },	-- Thisalee Crow
@@ -123,7 +123,7 @@ _.Zones =
 				}),
 				q(44888, {	-- Aviana's Grace
 					["lvl"] = 110,
-					["classes"]= { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["providers"] = {
 						{ "n", 115802 },	-- Thisalee Crow
 						{ "n", 119982 },	-- Druid of the Talon
@@ -603,7 +603,7 @@ _.Zones =
 				q(44921, {	-- Lone Wolf
 					["provider"] = { "n", 115749 },	-- Aviana
 					["lvl"] = 110,
-					["classes"]= { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["sourceQuest"]	= 44888,	-- Aviana's Grace
 				}),
 				q(25881, {	-- Lost Wardens
@@ -658,7 +658,7 @@ _.Zones =
 				}),
 				q(45532, {	-- Mother's Orders
 					["lvl"] = 110,
-					["classes"]= { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["sourceQuest"]	= 44869,	-- Talon Terror
 					["providers"] = {
 						{ "n", 115802 },	-- Thisalee Crow

@@ -11,15 +11,15 @@ _.Zones =
 					["coord"] = { 56.4, 46.2, 89 },	-- Arias'ta Bladesinger (Darnassus)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
-					["lvl"] = 20,					
+					["classes"] = { WARRIOR },
+					["lvl"] = 20,
 				}),
 				q(27270, {	-- An Audience with the Farseer
 					["provider"] = { "n", 52292 },	-- Droha (Darnassus)
 					["coord"] = { 43.8, 78.8, 89 },	-- Droha (Darnassus)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 7 },	-- Shaman	
+					["classes"] = { SHAMAN },
 					["lvl"] = 50,
 				}),
 				q(27273, {	-- An Invitation from Moonglade
@@ -27,16 +27,16 @@ _.Zones =
 					["coord"] = { 40.4, 27.6, 89 },	-- Mathrengyl Bearwalker (Darnassus)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 20,
-				}),		
+				}),
 				q(6342, {	-- An Unexpected Gift
 					["provider"] = { "n", 7316 },	-- Sister Aquinne
 					["coord"] = { 36.0, 53.4, 89 },
 					["sourceQuest"] = 6341,	-- To Darnassus
-					["races"] = { 4 },	-- Night Elf
+					["races"] = { NIGHTELF },
 					["lvl"] = 5,
-				}),			
+				}),
 				q(26383, {	-- Breaking Waves of Change
 					["provider"] = { "n", 42936 },	-- Sentinel Cordressa Briarbow
 					["coord"] = { 43.8, 76.2, 89 },
@@ -48,7 +48,7 @@ _.Zones =
 					["provider"] = { "n", 48736 },	-- Genn Greymane
 					["coord"] = { 48.2, 14.6, 89 },
 					["isBreadcrumb"] = true,
-					["races"] = { 22 },	-- Worgen
+					["races"] = { WORGEN },
 					["lvl"] = 10,
 				}),
 				q(4510, {	-- Calm Before the Storm
@@ -62,32 +62,32 @@ _.Zones =
 						un(2, i(11872)),	-- Eschewal Greaves
 						un(2, i(11870)),	-- Oblivion Orb
 						un(2, i(11871)),	-- Snarkshaw Spaulders
-					},	
+					},
 				}),
 				q(27362, {	-- Favored of Elune
 					["provider"] = { "n", 7999 },	-- Tyrande Whisperwind
 					["coord"] = { 43.0, 77.8, 89 },
 					["sourceQuest"] = 27269,	-- The Temple of the Moon
-					["races"] = { 4 },	-- Night Elf
-					["classes"] = { 5 },	-- Priest
+					["races"] = { NIGHTELF },
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 					["g"] = {
 						i(65483),	-- Moon Staff of Elune
 					},
-				}),		
+				}),
 				q(27271, {	-- Journey to the Wizard's Sanctum
 					["provider"] = { "n", 50690 },	-- Tarelvir (Darnassus)
 					["coord"] = { 37.6, 80.0, 89 },	-- Tarelvir (Darnassus)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 20,
 				}),
 				q(32664, {	-- Learn to Ride
 					["description"] = "This quest is available to Night Elves upon reaching level 20.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
-					["races"] = { 4 },	-- Night Elf
+					["races"] = { NIGHTELF },
 					["lvl"] = 20,
 				}),
 				q(14085, {	-- Learn to Ride in Darnassus
@@ -101,7 +101,7 @@ _.Zones =
 					["coord"] = { 43.6, 78.4, 89 },	-- Rukua (Darnassus)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 20,
 				}),
 				q(27267, {	-- Make Contact with SI:7
@@ -109,15 +109,15 @@ _.Zones =
 					["coord"] = { 40.0, 39.6, 89 },	-- Erion Shadewhisper (Darnassus)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
-					["lvl"] = 20,	
+					["classes"] = { ROGUE },
+					["lvl"] = 20,
 				}),
 				q(27268,{	-- Make Haste to the Cathedral
 					["provider"] = { "n", 11401 },	-- Priestess Alathea (Darnassus)
 					["coord"] = { 43.4, 79.2, 89 },	-- Priestess Alathea (Darnassus)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
 				q(4493, {	-- March of the Silithid [Alliance]
@@ -133,7 +133,7 @@ _.Zones =
 					["coord"] = { 56.8, 53.2, 89 },
 					["sourceQuest"] = 1710,	-- Sunscorched Shells
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 					["g"] = {
@@ -145,7 +145,7 @@ _.Zones =
 					["coord"] = { 56.4, 46.2, 89 },	-- Arias'ta Bladesinger (Darnassus)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 50,
 				}),
 				q(28287, {	-- Meet with Farseer Umbrua
@@ -153,7 +153,7 @@ _.Zones =
 					["coord"] = { 43.8, 78.8, 89 },	-- Droha (Darnassus)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["lvl"] = 50,
 				}),
 				q(28285, {	-- Meet with High Priestess Laurena
@@ -161,7 +161,7 @@ _.Zones =
 					["coord"] = { 43.4, 79.2, 89 },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
 				q(28268, {	-- Meet with Lord Grayson Shadowbreaker
@@ -169,7 +169,7 @@ _.Zones =
 					["coord"] = { 43.6, 78.4, 89 },	-- Rukua (Darnassus)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 50,
 				}),
 				q(28262, {	-- Meet with Lord Tony Romano
@@ -177,7 +177,7 @@ _.Zones =
 					["coord"] = { 40.0, 39.6, 89 },	-- Erion Shadewhisper (Darnassus)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 50,
 				}),
 				q(28263, {	-- Meet with Maginor Dumas
@@ -185,14 +185,14 @@ _.Zones =
 					["coord"] = { 37.6, 80.0, 89 },	-- Tarelvir (Darnassus)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 50,
 				}),
 				q(28260, {	-- Meet with Wulf Hansreim
 					["provider"] = { "n", 4138 },	-- Jeen'ra Nightrunner (Darnassus)
 					["coord"] = { 43.4, 26.0, 89 },	-- Jeen'ra Nightrunner (Darnassus)
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
 				}),
@@ -200,21 +200,21 @@ _.Zones =
 					["provider"] = { "n", 4217 },	-- Mathrengyl Bearwalker
 					["coord"] = { 40.4, 27.6, 89 },
 					["isBreadcrumb"] = true,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 50,
 				}),
 				q(26756, {	-- Nessa Shadowsong
 					["provider"] = { "n", 4241 },	-- Mydrannul
 					["coord"] = { 64.6, 53.0, 89 },
-					["races"] = { 4 },	-- Night Elf
+					["races"] = { NIGHTELF },
 					["lvl"] = 10,
 					["u"] = 40,
-				}),	
+				}),
 				q(6343, {	-- Return to Nyoma
 					["provider"] = { "n", 40552 },	-- Leora
 					["coord"] = { 36.5, 47.8, 89 },
 					["sourceQuest"] = 6342,	-- An Unexpected Gift
-					["races"] = { 4 },	-- Night Elf
+					["races"] = { NIGHTELF },
 					["lvl"] = 5,
 				}),
 				q(1692, {	-- Smith Mathiel
@@ -222,7 +222,7 @@ _.Zones =
 					["coord"] = { 57.8, 34.4, 89 },
 					["sourceQuest"] = 1686,	-- The Shade of Elura
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 10,
 					["u"] = 40,
 				}),
@@ -231,7 +231,7 @@ _.Zones =
 					["coord"] = { 56.8, 53.2, 89 },
 					["sourceQuest"] = 1703,	-- Mathiel
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 25,
 					["u"] = 40,
 				}),
@@ -242,13 +242,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 					["u"] = 40,
-				}),	
+				}),
 				q(1686, {	-- The Shade of Elura
 					["provider"] = { "n", 4088 },	-- Elanaria
 					["coord"] = { 57.8, 34.4, 89 },
 					["sourceQuest"] = 1683,	-- Vorlus Vilehoof
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 10,
 					["u"] = 40,
 				}),
@@ -256,8 +256,8 @@ _.Zones =
 					["provider"] = { "n", 11401 },	-- Priestess Alathea
 					["coord"] = { 43.4, 79.2, 89 },
 					["isBreadcrumb"] = true,
-					["races"] = { 4 },	-- Night Elf
-					["classes"] = { 5 },	-- Priest
+					["races"] = { NIGHTELF },
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
 				q(32460, {	-- Tracking the Thieves
@@ -280,7 +280,7 @@ _.Zones =
 					["coord"] = { 57.8, 34.4, 89 },
 					["sourceQuest"] = 1684,	-- Elanaria
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 10,
 					["u"] = 40,
 				}),
@@ -289,7 +289,7 @@ _.Zones =
 					["coord"] = { 56.8, 53.2, 89 },
 					["sourceQuest"] = 1692,	-- Smith Mathiel
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 10,
 					["u"] = 40,
 					["g"] = {
@@ -304,7 +304,7 @@ _.Zones =
 					["coord"] = { 43.4, 26.0, 89 },	-- Jeen'ra Nightrunner (Darnassus)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 20,
 				}),
 			}),

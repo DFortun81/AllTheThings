@@ -73,7 +73,7 @@ _.Zones =
 					["coord"] = { 56.4, 74.4, 1 },
 					["sourceQuest"] = 1842,	-- Satyr Hooves
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 					["g"] = {
@@ -202,8 +202,8 @@ _.Zones =
 				q(5648,  {	-- Garments of Spirituality
 					["u"] = 40,
 					["provider"] = { "n", 3706 },	-- Tai'jin
-					["races"] = { 8 },	-- Troll
-					["classes"] = { 5 },	-- Priest
+					["races"] = { TROLL },
+					["classes"] = { PRIEST },
 					["g"] = {
 						un(2, i(16606)),	-- Juju Hex Robes
 					},
@@ -248,12 +248,12 @@ _.Zones =
 				q(31012, {	-- Joining the Horde
 					["provider"] = { "n", 60570 },	-- Ji Firepaw
 					["coord"] = { 45.6, 12.6, 1 },
-					["races"] = { 24 },	-- Pandaren (Neutral)
+					["races"] = { PANDAREN_NEUTRAL },
 				}),
 				q(1884, {	-- Ju-Ju Heaps
 					["races"] = HORDE_ONLY,
 					["u"] = 40,	-- Legacy Quests
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["g"] = {
 						i(9513),	-- Ley Staff
 						i(7508),	-- Ley Orb
@@ -274,7 +274,7 @@ _.Zones =
 				}),
 				q(32671, {	-- Learn To Ride
 					["lvl"] = 20,
-					["races"] = { 8 },	-- Troll
+					["races"] = { TROLL },
 					["description"] = "This quest is available to Trolls upon reaching level 20.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
@@ -324,24 +324,16 @@ _.Zones =
 					["provider"] = { "n", 39379 },	-- Gor the Enforcer
 					["coord"] = { 44.9, 14.7, 1 },
 					["sourceQuest"] = 25260,	-- Fizzled
-					["races"] = {
-						2,	-- Orc
-						8,	-- Troll
-						36,	-- Mag'har
-					},
+					["races"] = { ORC, TROLL, MAGHAR },
 				}),
 				q(6365,  {	-- Meats to Orgrimmar
 					["provider"] = { "n", 3881 },	-- Grimtak
 					["coord"] = { 50.7, 42.8, 1 },
-					["races"] = {
-						2,	-- Orc
-						8,	-- Troll
-						36,	-- Mag'har
-					},
+					["races"] = { ORC, TROLL, MAGHAR },
 				}),
 				q(25267, {	-- Message for Saurfang
 					["coord"] = { 57.6, 9.6, 1 },
-					["races"] = { 9 },	-- Goblin
+					["races"] = { GOBLIN },
 					["sourceQuest"] = 25266,	-- Warchief's Emissary
 					["providers"] = {
 						{ "n", 86884 },	-- Darkspear Loyalist
@@ -437,25 +429,21 @@ _.Zones =
 					["provider"] = { "n", 41140 },	-- Burok
 					["coord"] = { 53.0, 43.6, 1 },
 					["sourceQuest"] = 6365,	-- Meats to Orgrimmar
-					["races"] = {
-						2,	-- Orc
-						8,	-- Troll
-						36,	-- Mag'har
-					},
+					["races"] = { ORC, TROLL, MAGHAR },
 				}),
 				q(1842,  {	-- Satyr Hooves
 					["provider"] = { "n", 6408 },	-- Ula'elek
 					["coord"] = { 56.4, 74.4, 1 },
 					["sourceQuest"] = 1839,	-- Ula'elek and the Brutal Gauntlets
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
 				q(40982, {	-- Second Sight
 					["provider"] = { "n", 100873 },	-- Allari the Souleater
 					["races"] = HORDE_ONLY,
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 				}),
 				q(835,   {	-- Securing the Lines
 					["provider"] = { "n", 3293 },	-- Rezlak
@@ -503,7 +491,7 @@ _.Zones =
 				q(1883, {	-- Speak with Un'thuwa
 					["races"] = HORDE_ONLY,
 					["u"] = 40,	-- Legacy Quests
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				q(25177, {	-- Storming the Beaches
 					["provider"] = { "n", 3139 },	-- Gar'Thok
@@ -576,7 +564,7 @@ _.Zones =
 				}),
 				q(42484, {	-- The Firstborn Rises
 					["provider"] = { "n", 107554 },	-- Thassarian
-					["classes"] = { 6 },	-- Death Knight
+					["classes"] = { DEATHKNIGHT },
 				}),
 				q(2936, {	-- The Spider God
 					["u"] = 40,

@@ -11,11 +11,14 @@ _.Zones =
 					["provider"] = { "n", 11801 },	-- Rabine Saturna
 					["lvl"] = 56,
 				}),
+				q(29298, {	-- A Smoke-Stained Locket
+					["provider"] = { "i", 69854 },	-- Smoke-Stained Locked
+				}),
 				q(5061,  {	-- Aquatic Form
 					["hordeQuestID"] = 31,
 					["u"] = 40,
 					["provider"] = { "n", 11802 },	-- Dendrite Starblaze
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(2, i(16608)),	-- Aquarius Belt
@@ -35,7 +38,7 @@ _.Zones =
 					["provider"] = { "n", 101064 },	-- Archdruid Hamuul Runetotem
 					["lvl"] = 98,
 					["coord"] = { 56.2, 32.0, 80 },
-					["classes"]= { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["sourceQuest"] = 40643,	-- A Summons From Moonglade
 				}),
 				q(40962, {	-- Dark Waters
@@ -50,7 +53,7 @@ _.Zones =
 				q(45498, {	-- Let Sleeping Dogs Lie
 					["lvl"] = 110,
 					["coord"] = { 68.0, 54.8, 80 },
-					["classes"]= { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["sourceQuest"]	= 44921,	-- Lone Wolf
 					["providers"] = {
 						{ "n", 120032 },	-- Thisalee Crow
@@ -72,7 +75,7 @@ _.Zones =
 					["provider"] = { "n", 115750 },	-- Goldrinn <Ancient>
 					["lvl"] = 110,
 					["coord"] = { 69.4, 47.8, 80 },
-					["classes"]= { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["sourceQuest"] = 46924,	-- The Wolf's Tale
 				}),
 				q(5526,  {	-- Shards of the Felvine
@@ -84,9 +87,13 @@ _.Zones =
 						un(2, i(18536)),	-- Milli's Lexicon
 					},
 				}),
+				q(8446, {	-- Shrouded in Nightmare
+					["u"] = 40,
+					["provider"] = { "i", 20644 },	-- Nightmare Engulfed Object
+				}),
 				q(45528, {	-- The Befouled Barrows
 					["lvl"] = 110,
-					["classes"]= { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["coord"] = { 68.0, 54.8, 80 },
 					["sourceQuest"]	= 44921,	-- Lone Wolf
 					["providers"] = {
@@ -99,7 +106,7 @@ _.Zones =
 					["provider"] = { "n", 12042 },	-- Loganaar
 					["lvl"] = 47,
 					["coord"] = { 52.4, 40.4, 80 },
-					["classes"]= { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["g"] = {
 						i(65638),	-- Headdress of the Green Circle
 						i(65617),	-- Headdress of the Verdant Circle
@@ -110,7 +117,7 @@ _.Zones =
 					["coord"] = { 52.4, 40.4, 80 },
 					["sourceQuest"] = 27273,	-- An Invitation from Moonglade
 					["races"] = ALLIANCE_ONLY,
-					["classes"]= { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 20,
 					["g"] = {
 						i(65461),	-- Staff of the Green Circle
@@ -122,7 +129,7 @@ _.Zones =
 					["coord"] = { 52.4, 40.4, 80 },
 					["sourceQuest"] = 27283,	-- A Journey to Moonglade
 					["races"] = HORDE_ONLY,
-					["classes"]= { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 20,
 					["g"] = {
 						i(65463),	-- Staff of the Green Circle
@@ -133,12 +140,12 @@ _.Zones =
 					["provider"] = { "n", 101064 },	-- Archdruid Hamuul Runetotem
 					["lvl"] = 98,
 					["coord"] = { 56.2, 32.0, 80 },
-					["classes"]= { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["sourceQuest"] = 41106,	-- Call of the Wilds
 				}),
 				q(46924, {	-- The Wolf's Tale
 					["lvl"] = 110,
-					["classes"]= { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["providers"] = {
 						{ "n", 120032 },	-- Thisalee Crow
 						{ "n", 120041 },	-- Druid of the Talon
@@ -152,7 +159,7 @@ _.Zones =
 					["provider"] = { "n", 103875 },	-- Malfurion Stormrage
 					["lvl"] = 98,
 					["coord"] = { 66.8, 60.4, 80 },
-					["classes"]= { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["sourceQuest"] = 40644,	-- The Dreamway
 				}),
 				q(29303, {	-- Tragedy and Family

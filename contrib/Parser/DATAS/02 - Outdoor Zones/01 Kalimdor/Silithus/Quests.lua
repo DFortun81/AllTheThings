@@ -35,7 +35,7 @@ _.Zones =
 				q(8316,  {	-- Armaments of War (Warrior)
 					["u"] = 40,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
 						un(2, i(20699)),	-- Cenarion Reservist's Legplates
@@ -45,7 +45,7 @@ _.Zones =
 				q(8376,  {	-- Armaments of War (Paladin)
 					["u"] = 40,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
 						un(2, i(20700)),	-- Cenarion Reservist's Legplates
@@ -55,7 +55,7 @@ _.Zones =
 				q(8377,  {	-- Armaments of War (Hunter)
 					["u"] = 40,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
 						un(2, i(20702)),	-- Cenarion Reservist's Legguards
@@ -65,7 +65,7 @@ _.Zones =
 				q(8378,  {	-- Armaments of War (Rogue)
 					["u"] = 40,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
 						un(2, i(20703)),	-- Cenarion Reservist's Leggings
@@ -75,7 +75,7 @@ _.Zones =
 				q(8379,  {	-- Armaments of War (Priest)
 					["u"] = 40,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
 						un(2, i(20707)),	-- Cenarion Reservist's Pants
@@ -85,7 +85,7 @@ _.Zones =
 				q(8380,  {	-- Armaments of War (Shaman)
 					["u"] = 40,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
 						un(2, i(20701)),	-- Cenarion Reservist's Legguards
@@ -95,7 +95,7 @@ _.Zones =
 				q(8381,  {	-- Armaments of War (Mage, Warlock)
 					["u"] = 40,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
-					["classes"] = { 8, 9 },	-- Mage, Warlock
+					["classes"] = { MAGE, WARLOCK },
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
 						un(2, i(20705)),	-- Cenarion Reservist's Pants
@@ -106,7 +106,7 @@ _.Zones =
 				q(8382,  {	-- Armaments of War (Druid)
 					["u"] = 40,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["sourceQuest"] = 8315,	-- The Calling
 					["g"] = {
 						un(2, i(20704)),	-- Cenarion Reservist's Leggings

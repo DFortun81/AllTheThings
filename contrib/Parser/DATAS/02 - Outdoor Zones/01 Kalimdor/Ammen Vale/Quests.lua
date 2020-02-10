@@ -36,7 +36,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 16500 },	-- Valaatu
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				q(9294,  {	-- Healing the Lake
 					["provider"] = { "n", 16514 },	-- Botanist Taerix
@@ -48,7 +48,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 16499 },	-- Keilnei
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 				}),
 				q(9303,  {	-- Inoculation
 					["provider"] = { "n", 16535 },	-- Vindicator Aldar
@@ -71,54 +71,54 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 16502 },	-- Zalduun
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 				}),
 				q(9290,  {	-- Mage Training
 					["u"] = 40,
 					["provider"] = { "n", 16500 },	-- Valaatu
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				q(9287,  {	-- Paladin Training
 					["u"] = 40,
 					["provider"] = { "n", 16501 },	-- Aurelon
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 				}),
 				q(9291,  {	-- Priest Training
 					["u"] = 40,
 					["provider"] = { "n", 16502 },	-- Zalduun
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 				}),
 				q(26969, {	-- Primal Strike
 					["u"] = 40,
 					["provider"] = { "n", 17089 },	-- Firmanvaar
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 				}),
 				q(9280,  {	-- Replenishing the Healing Crystals
 					["provider"] = { "n", 16477 },	-- Proenitus
 					["coord"] = { 52.7, 35.9, 468 },
-					["races"] = { 11 },	-- Draenei
+					["races"] = { DRAENEI },
 					["sourceQuest"] = 9279,
 				}),
 				q(9369,  {	-- Replenishing the Healing Crystals
 					["provider"] = { "n", 16477 },	-- Proenitus
 					["coord"] = { 52.7, 35.9, 468 },
-					["races"] = exclude({ 11 }, ALLIANCE_ONLY),	-- all other races except draenei
+					["races"] = exclude({ DRAENEI }, ALLIANCE_ONLY),	-- all other races except draenei
 				}),
 				q(9283,  {	-- Rescue the Survivors!
 					["provider"] = { "n", 16502 },	-- Zalduun
 					["coord"] = { 52.1, 42.4, 468 },
-					["races"] = { 11 },	-- Draenei
+					["races"] = { DRAENEI },
 					["sourceQuest"] = 9409,	-- Urgent Delivery!
 				}),
 				q(9421,  {	-- Shaman Training
 					["u"] = 40,
 					["provider"] = { "n", 17089 },	-- Firmanvaar
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 				}),
 				q(9305,  {	-- Spare Parts
 					["u"] = 40,
@@ -135,7 +135,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 16499 },	-- Keilnei
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 				}),
 				q(10303, {	-- The Blood Elves
 					["provider"] = { "n", 16546 },	-- Tolaan
@@ -153,7 +153,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 16501 },	-- Aurelon
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 				}),
 				q(9309,  {	-- The Missing Scout
 					["provider"] = { "n", 16535 },	-- Vindicator Aldar
@@ -168,7 +168,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 63335 },	-- Mojo Stormstout
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 10 },	-- Monk
+					["classes"] = { MONK },
 				}),
 				q(9313,  {	-- Travel to Azure Watch
 					["provider"] = { "n", 17071 },	-- Technician Zhanaa
@@ -205,7 +205,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 16503 },	-- Kore
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 				}),
 				q(9293,  {	-- What Must Be Done...
 					["provider"] = { "n", 16514 },	-- Botanist Taerix
@@ -216,14 +216,14 @@ _.Zones =
 				q(9279,  {	-- You Survived!
 					["provider"] = { "n", 16475 },	-- Megelon
 					["coord"] = { 61.2, 29.5, 468 },
-					["races"] = { 11 },	-- Draenei
+					["races"] = { DRAENEI },
 					["isBreadcrumb"] = true,
 				}),
 				q(26958, {	-- Your First Lesson
 					["u"] = 40,
 					["provider"] = { "n", 16503 },	-- Kore
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 10 },	-- Monk
+					["classes"] = { MONK },
 				}),
 			}),
 		}),

@@ -12,12 +12,12 @@ _.Zones =
 				}),
 				q(9431, {	-- A Different Approach
 					["u"] = 40,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["provider"] = { "n", 17093 },	-- Magistrix Elosai
 				}),
 				q(9433, {	-- A Dip in the Moonwell
 					["u"] = 40,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["provider"] = { "n", 10941 },	-- Magistrix Elosai
 					["sourceQuest"] = 9431,	-- A Different Approach
 				}),
@@ -389,7 +389,7 @@ _.Zones =
 				q(1950, {	-- Get the Scoop
 					["races"] = HORDE_ONLY,
 					["u"] = 40,	-- Legacy Quests
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				q(25756, {	-- Get Zherin!
 					["provider"] = { "n", 41190 },	-- Crazzle Sprysprocket
@@ -726,7 +726,7 @@ _.Zones =
 				q(1951, {	-- Rituals of Power
 					["races"] = HORDE_ONLY,
 					["u"] = 40,	-- Legacy Quests
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 				}),
 				q(1194,  {	-- Rizzle's Schematics
 					["u"] = 40,
@@ -841,7 +841,7 @@ _.Zones =
 				}),
 				q(9434, {	-- Testing the Tonic
 					["u"] = 40,
-					["races"] = { 10 },	-- Blood Elf
+					["races"] = { BLOODELF },
 					["provider"] = { "n", 10941 },	-- Wizlo Bearingshiner
 					["sourceQuest"] = 9433,	-- A Dip in the Moonwell
 				}),
