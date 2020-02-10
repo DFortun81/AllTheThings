@@ -1,7 +1,7 @@
 ---------------------------------------------
 --   P E T   J O U R N A L   M O D U L E   --
 ---------------------------------------------
-_.PetJournal = 
+_.PetJournal =
 {
 	pa(241, { 	-- Elemental
 		p(2433),	-- Aldrusian Sproutling

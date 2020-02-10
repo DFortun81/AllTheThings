@@ -1,7 +1,7 @@
 ---------------------------------------------
 --   P E T   J O U R N A L   M O D U L E   --
 ---------------------------------------------
-_.PetJournal = 
+_.PetJournal =
 {
 	pa(245, { 	-- Dragonkin
 		p(2072),	-- Ageless Bronze Drake
@@ -85,5 +85,5 @@ _.PetJournal =
 		p(818), 	-- Wild Golden Hatchling
 		p(817), 	-- Wild Jade Hatchling
 		p(1304), 	-- Yu'la, Broodling of Yu'lon
-	}),	
+	}),
 };

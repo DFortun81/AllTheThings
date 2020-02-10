@@ -1,7 +1,7 @@
 ---------------------------------------------
 --   P E T   J O U R N A L   M O D U L E   --
 ---------------------------------------------
-_.PetJournal = 
+_.PetJournal =
 {
 	pa(240, { 	-- Aquatic
 		p(2403),	-- Abyssal Eel
@@ -30,17 +30,17 @@ _.PetJournal =
 		p(174), 	-- Chuck
 		p(2400),	-- Coastal Bounder
 		p(2386),	-- Coastal Scuttler
-		p(1775), 	-- Coralback Fiddler 
+		p(1775), 	-- Coralback Fiddler
 		p(2427),	-- Cou'pa
 		p(2424),	-- Crimson Frog
 		p(2562),	-- Crimson Octopode
 		p(2695),	-- Daggertooth Frenzy
-		p(751), 	-- Dancing Water Skimmer 
+		p(751), 	-- Dancing Water Skimmer
 		p(335), 	-- Darkmoon Turtle
 		p(2651),	-- Deeptide Fingerling
 		p(2389),	-- Elusive Swimmer
-		p(564), 	-- Emerald Turtle 
-		p(746), 	-- Emperor Crab 
+		p(564), 	-- Emerald Turtle
+		p(746), 	-- Emperor Crab
 		p(383), 	-- Eternal Strider
 		p(1581), 	-- Fen Crab
 		p(847), 	-- Fishy

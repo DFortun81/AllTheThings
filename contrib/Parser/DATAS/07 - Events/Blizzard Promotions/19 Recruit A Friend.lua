@@ -52,7 +52,7 @@ _.WorldEvents =
 				un(3, title(410)),	-- Renowned Explorer <Name>
 				un(3, i(171333)),	-- Renowned Explorer's Rucksack
 				un(3, i(171361)),	-- Renowned Explorer's Tabard
-				un(3, i(173296)),	-- Rikki (PET!)
+				un(3, i(173296)),	-- Rikki's Pith Helmet (PET!)
 				un(3, i(173301)),	-- Game Time
 			}),
 		},

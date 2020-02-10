@@ -1,7 +1,7 @@
 ---------------------------------------------
 --   P E T   J O U R N A L   M O D U L E   --
 ---------------------------------------------
-_.PetJournal = 
+_.PetJournal =
 {
 	pa(244, { 	-- Mechanical
 		p(1805),	-- Alarm-o-Bot

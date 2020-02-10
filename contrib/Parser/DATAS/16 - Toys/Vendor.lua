@@ -14,14 +14,14 @@ _.Toys =
 		i(168012),		-- Apexis Focusing Shard
 		i(46843),		-- Argent Crusader's Banner
 		i(147537, { 	-- A Tiny Set of Warglaives -- demon hunter class hall
-			["classes"] = { 12 },	-- Demon Hunter
+			["classes"] = { DEMONHUNTER },
 		}),
 		i(168014),		-- Banner of the Burning Blade
 		i(120857, {		-- Barrel of Bandanas -- only rogue
-			["classes"] = { 4 },	-- Rogue
+			["classes"] = { ROGUE },
 		}),
 		i(151877, { 	-- Barrel of Eyepatches -- only rogue
-			["classes"] = { 4 },	-- Rogue
+			["classes"] = { ROGUE },
 		}),
 		i(166743),		-- Blight Bomber
 		i(113096), 		-- Bloodmane Charm
@@ -36,7 +36,7 @@ _.Toys =
 		i(163200),		-- Cursed Spyglass
 		i(129057),		-- Dalaran Disc
 		i(137294, {		-- Dalaran Initiates' Pin -- only Mage
-			["classes"] = { 8 },	-- Mage
+			["classes"] = { MAGE },
 		}),
 		i(131812),		-- Darkshard Fragment
 		i(45021),		-- Darnassus Banner (Alliance)
@@ -68,7 +68,7 @@ _.Toys =
 			["races"] = HORDE_ONLY,
 		}),
 		i(136855, {		-- Hunter's Call -- only Hunter
-			["classes"] = { 3 },	-- Hunter
+			["classes"] = { HUNTER },
 		}),
 		i(163705),		-- Imaginary Gun
 		i(127707),		-- Indestructible Bone
@@ -79,7 +79,7 @@ _.Toys =
 		i(128462),		-- Karabor Councilor's Attire (Alliance)
 		i(115501),		-- Kowalski's Music Box
 		i(116396),		-- LeBlanc's Recorder (A)
-		i(115505),		-- LeBlanc's Recorder (H)	
+		i(115505),		-- LeBlanc's Recorder (H)
 		i(147708), 		-- Legion Invasion Simulator
 		i(130199), 		-- Legion Pocket Portal
 		i(142452), 		-- Lingering Wyrmtongue Essence
@@ -92,7 +92,7 @@ _.Toys =
 		i(70159), 		-- Mylune's Call
 		i(140231),		-- Narcissa's Mirror
 		i(136849, {		-- Nature's Beacon -- only Druid
-			["classes"] = { 11 },	-- Druid
+			["classes"] = { DRUID },
 		}),
 		i(134004),		-- Noble's Eternal Elementium Signet
 		i(45014),		-- Orgrimmar Banner (Horde)
@@ -107,7 +107,7 @@ _.Toys =
 		i(127864),		-- Personal Spotlight
 		i(140309),		-- Prismatic Bauble
 		i(136934, { 	-- Raging Elemental Stone
-			["classes"] = { 7 },	-- Shaman
+			["classes"] = { SHAMAN },
 		}),
 		i(44820),		-- Red Ribbon Pet Leash
 		i(164983),		-- Rhan'ka's Escape Plan
@@ -115,7 +115,7 @@ _.Toys =
 		i(122283), 		-- Rukhmar's Sacred Memory
 		i(169108),		-- Rustbolt Banner
 		i(136927, {		-- Scarlet Confessional Book
-			["classes"] = { 5 },	-- Priest
+			["classes"] = { PRIEST },
 		}),
 		i(45015),		-- Sen'jin Banner (Horde)
 		i(97942), 		-- Sen'jin Spirit Drum
@@ -132,11 +132,11 @@ _.Toys =
 		i(170204),		-- Symbol of Gral
 		i(130157),		-- Syxsehnz Rod
 		i(136935, {		-- Tadpole Cloudseeder
-			["classes"] = { 7 },	-- Shaman
+			["classes"] = { SHAMAN },
 		}),
 		i(130170),		-- Tear of the Green Aspect
 		i(136928, {		-- Thaumaturgist's Orb
-			["classes"] = { 5 },	-- Priest
+			["classes"] = { PRIEST },
 		}),
 		i(130151),		-- The "Devilsaur" Lunchbox
 		i(150745),		-- The Azeroth Campaign (Horde)
@@ -150,12 +150,12 @@ _.Toys =
 		i(45016),		-- Undercity Banner (Horde)
 		i(174995),		-- Void Tendril Pet Leash
 		i(136937, { 	-- Vol'jin's Serpent Totem -- only Shaman
-			["classes"] = { 7 },	-- Shaman
+			["classes"] = { SHAMAN },
 		}),
 		i(129367),		-- Vrykul Toy Boat Kit
 		i(150744),		-- Walking Kalimdor with the Earthmother (Horde)
 		i(138490, {		-- Waterspeaker's Totem -- only Shaman
-			["classes"] = { 7 },	-- Shaman
+			["classes"] = { SHAMAN },
 		}),
 		i(131814),		-- Whitewater Carp
 		i(97919, {		-- Whole-Body Shrinka'

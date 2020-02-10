@@ -1,7 +1,7 @@
 ---------------------------------------------
 --   P E T   J O U R N A L   M O D U L E   --
 ---------------------------------------------
-_.PetJournal = 
+_.PetJournal =
 {
 	pa(242, { 	-- Undead
 		p(2456),	-- Barnaby
@@ -26,7 +26,7 @@ _.PetJournal =
 		p(266),		-- Fossilized Hatchling
 		p(1625),	-- Fragment of Anger
 		p(1627),	-- Fragment of Desire
-		p(1626),	-- Fragment of Suffering 
+		p(1626),	-- Fragment of Suffering
 		p(2036),	-- Frostbrood Whelpling
 		p(1530),	-- Frostwolf Ghostpup
 		un(6, p(188)),	-- Frosty

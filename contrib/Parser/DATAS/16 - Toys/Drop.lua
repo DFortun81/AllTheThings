@@ -62,7 +62,7 @@ _.Toys =
 		i(129113), 		-- Faintly Glowing Flagon of Mead
 		i(140780), 		-- Fal'dorei Egg
 		i(122304, { 	-- Fandral's Seed Pouch (Druid Only)
-			["classes"] = {11},	-- Druid
+			["classes"] = { DRUID },
 		}),
 		i(86581),		-- Farwater Conch
 		i(127652),		-- Felflame Campfire
@@ -89,7 +89,7 @@ _.Toys =
 		i(163750),		-- Kovork Kostume
 		i(88566), 		-- Krastinov's Bag of Horrors
 		i(140632, {		-- Lava Fountain -- only Shaman
-			["classes"] = {7},	-- Shaman
+			["classes"] = { SHAMAN },
 		}),
 		i(163603),		-- Lucille's Handkerchief
 		i(153194),  	-- Legion Communication Orb
@@ -117,13 +117,12 @@ _.Toys =
 		i(118221),		-- Petrification Stone
 		i(13379),		-- Piccolo of the Flaming Fire
 		i(147867), 		-- Pilfered Sweeper
-		{
-			["itemID"] = 140363,	-- Pocket Fel Spreader
+		i(140363, {	-- Pocket Fel Spreader
 			["timeline"] = {
 				"added 7.0.3.22248",
 				"removed 7.0.3.22810",
 			},
-		},
+		}),
 		i(127394), 		-- Podling Camouflage
 		i(153181),  	-- Red Conservatory Scroll
 		i(104294), 		-- Rime of the Time-Lost Mariner
@@ -139,7 +138,7 @@ _.Toys =
 		i(153293),  	-- Sightless Eye
 		i(128328), 		-- Skoller's Bag of Squirrel Treats
 		i(143544, { 	-- Skull of Corruption -- only demon hunter
-			["classes"] = {12},	-- Demon Hunter
+			["classes"] = { DEMONHUNTER },
 		}),
 		i(127669), 		-- Skull of the Mad Chief
 		i(119163),		-- Soul Inhaler
@@ -151,11 +150,11 @@ _.Toys =
 		i(122681), 		-- Sternfathom's Pet Journal
 		i(111476),		-- Stolen Breath
 		i(140160, { 	-- Stormforged Vrykul Horn -- only Warrior
-			["classes"] = {1},	-- Warrior
+			["classes"] = { WARRIOR },
 		}),
 		i(37254), 		-- Super Simian Sphere
 		i(139587, { 	-- Suspicious Crate -- only Rogue
-			["classes"] = {4},	-- Rogue
+			["classes"] = { ROGUE },
 		}),
 		i(163738),		-- Syndicate Mask
 		i(116120),		-- Tasty Talador Lunch

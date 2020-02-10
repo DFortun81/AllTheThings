@@ -1,7 +1,7 @@
 ---------------------------------------------
 --   P E T   J O U R N A L   M O D U L E   --
 ---------------------------------------------
-_.PetJournal = 
+_.PetJournal =
 {
 	pa(239, { 	-- Flying
 		p(1708),			-- Albatross Chick
@@ -210,5 +210,5 @@ _.PetJournal =
 		p(2000),			-- Young Venomfang
 		p(850),				-- Yu'lon Kite
 		p(1536),			-- Zangar Spore
-	}),	
+	}),
 };

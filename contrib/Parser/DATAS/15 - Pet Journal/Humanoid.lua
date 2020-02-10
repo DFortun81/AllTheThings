@@ -1,7 +1,7 @@
 ---------------------------------------------
 --   P E T   J O U R N A L   M O D U L E   --
 ---------------------------------------------
-_.PetJournal = 
+_.PetJournal =
 {
 	pa(238, { 	-- Humanoid
 		p(2755),			-- Adventurous Hopling
@@ -97,7 +97,6 @@ _.PetJournal =
 		un(35, p(248)),		-- Pandaren Monk
 		p(122),				-- Peddlefeet
 		p(513),				-- Qiraji Guardling
-		-- rikky
 		p(2417),			-- Ranishu Runt
 		p(2135),		 	-- Rebellious Imp
 		p(1349),			-- Rotten Little Helper
