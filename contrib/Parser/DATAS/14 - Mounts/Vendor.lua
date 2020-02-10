@@ -15,7 +15,7 @@ _.Mounts =
 		i(167167),	-- Ankoan Waveray
 		i(141713),	-- Arcadian War Turtle
 		i(47179, {	-- Argent Charger
-			["classes"] = { 2 },	-- Paladin
+			["classes"] = { PALADIN },
 		}),
 		i(45725),	-- Argent Hippogryph
 		i(47180),	-- Argent Warhorse
@@ -36,18 +36,10 @@ _.Mounts =
 		i(152795),	-- Beryl Ruinstrider
 		i(29465),	-- Black Battlestrider
 		i(91008, {	-- Black Dragon Turtle [Panda Only]
-			["races"] = {
-				25,	-- Horde Pandaren
-				26,	-- Alliance Pandaren
-			},
+			["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 		}),
 		i(87795, {	-- Black Dragon Turtle (All races except pandaren)
-			["races"] = exclude(
-				{
-					24,	-- Pandaren [Neutral]
-					25,	-- Pandaren [Alliance]
-					26,	-- Pandaren [Horde]
-				}, ALL_RACES),
+			["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 		}),
 		i(29221),	-- Black Hawkstrider
 		i(89391),	-- Black Riding Goat
@@ -70,18 +62,10 @@ _.Mounts =
 		i(87789),	-- Blonde Riding Yak
 		i(137570),	-- Bloodfang Widow
 		i(91009, {	-- Blue Dragon Turtle [Panda Only]
-			["races"] = {
-				25,	-- Horde Pandaren
-				26,	-- Alliance Pandaren
-			},
+			["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 		}),
 		i(87796, {	-- Blue Dragon Turtle (All races except pandaren)
-			["races"] = exclude(
-				{
-					24,	-- Pandaren [Neutral]
-					25,	-- Pandaren [Alliance]
-					26,	-- Pandaren [Horde]
-				}, ALL_RACES),
+			["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 		}),
 		i(29220),	-- Blue Hawkstrider
 		i(166442),	-- Blue Marsh Hopper
@@ -90,22 +74,14 @@ _.Mounts =
 		i(89307),	-- Blue Shado-Pan Riding Tiger
 		i(13332),	-- Blue Skeletal Horse
 		i(25475),	-- Blue Wind Rider
-		i(116775),	-- Breezestrider Stallion 
+		i(116775),	-- Breezestrider Stallion
 		i(128481),	-- Bristling Hellboar
 		un(1, i(128480)),	-- Bristling Hellboar
 		i(91005, {	-- Brown Dragon Turtle [Panda Only]
-			["races"] = {
-				25,	-- Horde Pandaren
-				26,	-- Alliance Pandaren
-			},
+			["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 		}),
 		i(87797, {	-- Brown Dragon Turtle (all races except pandaren)
-			["races"] = exclude(
-				{
-					24,	-- Pandaren [Neutral]
-					25,	-- Pandaren [Alliance]
-					26,	-- Pandaren [Horde]
-				}, ALL_RACES), -- all races except pandaren
+			["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 		}),
 		i(28481),	-- Brown Elekk
 		i(5656),	-- Brown Horse
@@ -193,115 +169,59 @@ _.Mounts =
 		i(15277),	-- Gray Kodo
 		i(5864),	-- Gray Ram
 		i(91011, {	-- Great Black Dragon Turtle [Panda Only]
-			["races"] = {
-				25,	-- Horde Pandaren
-				26,	-- Alliance Pandaren
-			},
+			["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 		}),
 		i(87802, {	-- Great Black Dragon Turtle (non-pandaren)
-			["races"] = exclude(
-				{
-					24,	-- Pandaren [Neutral]
-					25,	-- Pandaren [Alliance]
-					26,	-- Pandaren [Horde]
-				}, ALL_RACES),
+			["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 		}),
 		i(91013, {	-- Great Blue Dragon Turtle [Panda Only]
-			["races"] = {
-				25,	-- Horde Pandaren
-				26,	-- Alliance Pandaren
-			},
+			["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 		}),
 		i(87803, {	-- Great Blue Dragon Turtle (non-pandaren)
-			["races"] = exclude(
-				{
-					24,	-- Pandaren [Neutral]
-					25,	-- Pandaren [Alliance]
-					26,	-- Pandaren [Horde]
-				}, ALL_RACES),
+			["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 		}),
 		i(29745),	-- Great Blue Elekk
 		i(91014, {	-- Great Brown Dragon Turtle [Panda Only]
-			["races"] = {
-				25,	-- Horde Pandaren
-				26,	-- Alliance Pandaren
-			},
+			["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 		}),
 		i(87804, {	-- Great Brown Dragon Turtle (non-pandaren)
-			["races"] = exclude(
-				{
-					24,	-- Pandaren [Neutral]
-					25,	-- Pandaren [Alliance]
-					26,	-- Pandaren [Horde]
-				}, ALL_RACES),
+			["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 		}),
 		i(18794),	-- Great Brown Kodo
 		i(46750),	-- Great Golden Kodo
 		i(18795),	-- Great Gray Kodo
 		i(91012, {	-- Great Green Dragon Turtle [Panda Only]
-			["races"] = {
-				25,	-- Horde Pandaren
-				26,	-- Alliance Pandaren
-			},
+			["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 		}),
 		i(87801, {	-- Great Green Dragon Turtle (non-pandaren)
-			["races"] = exclude(
-				{
-					24,	-- Pandaren [Neutral]
-					25,	-- Pandaren [Alliance]
-					26,	-- Pandaren [Horde]
-				}, ALL_RACES),
+			["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 		}),
 		i(29746),	-- Great Green Elekk
 		i(91015, {	-- Great Purple Dragon Turtle [Panda Only]
-			["races"] = {
-				25,	-- Horde Pandaren
-				26,	-- Alliance Pandaren
-			},
+			["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 		}),
 		i(87805, {	-- Great Purple Dragon Turtle (non-pandaren)
-			["races"] = exclude(
-				{
-					24,	-- Pandaren [Neutral]
-					25,	-- Pandaren [Alliance]
-					26,	-- Pandaren [Horde]
-				}, ALL_RACES),
-		}),			
+			["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
+		}),
 		i(29747),	-- Great Purple Elekk
 		i(91010, {	-- Great Red Dragon Turtle [Panda Only]
-			["races"] = {
-				25,	-- Horde Pandaren
-				26,	-- Alliance Pandaren
-			},
+			["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 		}),
 		i(82811, {	-- Great Red Dragon Turtle (non-pandaren)
-			["races"] = exclude(
-				{
-					24,	-- Pandaren [Neutral]
-					25,	-- Pandaren [Alliance]
-					26,	-- Pandaren [Horde]
-				}, ALL_RACES),
+			["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 		}),
 		i(46745, {	-- Great Red Elekk (draenei)
-			["races"] = { 11 },	-- Draenei
+			["races"] = { DRAENEI },
 		}),
 		i(46756, {	-- Great Red Elekk (Alliance, except draenei)
-			["races"] = exclude({ 11 }, ALLIANCE_ONLY),
+			["races"] = exclude({ DRAENEI }, ALLIANCE_ONLY),
 		}),
 		i(18793),	-- Great White Kodo
 		i(91004, {	-- Green Dragon Turtle [Panda Only]
-			["races"] = {
-				25,	-- Horde Pandaren
-				26,	-- Alliance Pandaren
-			},
+			["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 		}),
 		i(82765, {	-- Green Dragon Turtle (non-pandaren)
-			["races"] = exclude(
-				{
-					24,	-- Pandaren [Neutral]
-					25,	-- Pandaren [Alliance]
-					26,	-- Pandaren [Horde]
-				}, ALL_RACES),
+			["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 		}),
 		i(163183),	-- Green Marsh Hopper
 		i(13321),	-- Green Mechanostrider
@@ -312,10 +232,10 @@ _.Mounts =
 		i(87788),	-- Grey Riding Yak
 		i(87774),	-- Heavenly Golden Cloud Serpent
 		i(142228, {	-- Huntmaster's Dire Wolfhawk (Hunter)
-			["classes"] = { 3 },	-- Hunter
+			["classes"] = { HUNTER },	
 		}),
 		i(142226, {	-- Huntmaster's Fierce Wolfhawk (Hunter)
-			["classes"] = { 3 },	-- Hunter
+			["classes"] = { HUNTER },	
 		}),
 		i(43958, {	-- Ice Mammoth [Alliance Only]
 			["races"] = ALLIANCE_ONLY,
@@ -333,30 +253,22 @@ _.Mounts =
 		i(116768),	-- Mosshide Riverwallow
 		i(73838),	-- Mountain Horse
 		i(143637, {	-- Netherlord's Brimstone Wrathsteed (Warlock)
-			["classes"] = { 9 },	-- Warlock
+			["classes"] = { WARLOCK },
 		}),
 		mount(232412, {	-- Netherlord's Chaotic Wrathsteed [Warlock Only]
-			["classes"] = { 9 },
+			["classes"] = { WARLOCK },
 		}),
 		i(47101),	-- Ochre Skeletal Warhorse
 		i(45595),	-- Orgrimmar Wolf
-		i(116776),	-- Pale Thorngrazer 
+		i(116776),	-- Pale Thorngrazer
 		i(163589),	-- Palehide Direhorn
 		i(2414),	-- Pinto
 		i(161879),	-- Proudmoore Sea Scout
 		i(91006, {	-- Purple Dragon Turtle [Panda Only]
-			["races"] = {
-				25,	-- Horde Pandaren
-				26,	-- Alliance Pandaren
-			},
+			["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 		}),
 		i(87799, {	-- Purple Dragon Turtle (All races except pandaren)
-			["races"] = exclude(
-				{
-					24,	-- Pandaren [Neutral]
-					25,	-- Pandaren [Alliance]
-					26,	-- Pandaren [Horde]
-				}, ALL_RACES),
+			["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 		}),
 		i(29743),	-- Purple Elekk
 		i(29222),	-- Purple Hawkstrider
@@ -365,18 +277,10 @@ _.Mounts =
 		i(46815),	-- Quel'dorei Steed
 		i(174649),	-- Rajani Warserpent
 		i(91007, {	-- Red Dragon Turtle [Panda Only]
-			["races"] = {
-				25,	-- Horde Pandaren
-				26,	-- Alliance Pandaren
-			},
+			["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 		}),
 		i(87800, {	-- Red Dragon Turtle (All races except pandaren)
-			["races"] = exclude(
-				{
-					24,	-- Pandaren [Neutral]
-					25,	-- Pandaren [Alliance]
-					26,	-- Pandaren [Horde]
-				}, ALL_RACES),
+			["races"] = exclude({ PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE }, ALL_RACES),
 		}),
 		i(43955),	-- Red Drake
 		i(89363),	-- Red Flying Cloud
@@ -398,13 +302,13 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(143491, {	-- Shadowblade's Baneful Omen (Rogue)
-			["classes"] = { 4 },	-- Rogue
+			["classes"] = { ROGUE },	
 		}),
 		i(143490, {	-- Shadowblade's Crimson Omen (Rogue)
-			["classes"] = { 4 },	-- Rogue
+			["classes"] = { ROGUE },	
 		}),
 		i(143492, {	-- Shadowblade's Lethal Omen (Rogue)
-			["classes"] = { 4 },	-- Rogue
+			["classes"] = { ROGUE },	
 		}),
 		i(116772),	-- Shadowmane Charger
 		i(46813),	-- Silver Covenant Hippogryph
@@ -454,10 +358,10 @@ _.Mounts =
 		i(116785),	-- Swift Frostwolf
 		i(18787),	-- Swift Gray Ram
 		i(46752, {	-- Swift Gray Steed (human)
-			["races"] = { 1 },	-- Human
+			["races"] = { HUMAN },	
 		}),
 		i(46758, {	-- Swift Grey Steed [Alliance, except Human]
-			["races"] = exclude({ 1 }, ALLIANCE_ONLY),	-- Alliance except humnans
+			["races"] = exclude({ HUMAN }, ALLIANCE_ONLY),
 		}),
 		i(18798),	-- Swift Gray Wolf
 		i(25528),	-- Swift Green Gryphon
@@ -466,10 +370,10 @@ _.Mounts =
 		i(25531),	-- Swift Green Wind Rider
 		i(18767),	-- Swift Mistsaber
 		i(46744, {	-- Swift Moonsaber (night elf)
-			["races"] = { 4 },	-- Night Elf
+			["races"] = { NIGHTELF },	
 		}),
 		i(46759, {	-- Swift Moonsaber (alliance, except night elf)
-			["races"] = exclude({ 4 }, ALLIANCE_ONLY),
+			["races"] = exclude({ NIGHTELF }, ALLIANCE_ONLY),
 		}),
 		i(73839),	-- Swift Mountain Horse
 		i(18789),	-- Swift Olive Raptor
@@ -482,19 +386,19 @@ _.Mounts =
 		i(25533),	-- Swift Purple Wind Rider
 		i(25527),	-- Swift Red Gryphon
 		i(46751, {	-- Swift Red Hawkstrider (blood elf)
-			["races"] = { 10 },	-- Blood Elves
+			["races"] = { BLOODELF },	-- Blood Elves
 		}),
 		i(46761, {	-- Swift Red Hawkstrider (Horde, except blood elf)
-			["races"] = exclude({ 10 }, HORDE_ONLY),	-- All horde, non-blood elf
+			["races"] = exclude({ BLOODELF }, HORDE_ONLY),
 		}),
 		i(25477),	-- Swift Red Wind Rider
 		i(18902),	-- Swift Stormsaber
 		i(18797),	-- Swift Timber Wolf
 		i(46748, {	-- Swift Violet Ram (dwarf)
-			["races"] = { 3 },	-- Dwarf
+			["races"] = { DWARF },	-- Dwarf
 		}),
 		i(46762, {	-- Swift Violet Ram (Alliance, except dwarf)
-			["races"] = exclude({ 3 }, ALLIANCE_ONLY),	-- All alliance except Dwarf
+			["races"] = exclude({ DWARF }, ALLIANCE_ONLY),
 		}),
 		i(34129),	-- Swift Warstrider
 		i(18773),	-- Swift White Mechanostrider
@@ -527,10 +431,10 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(46747, {	-- Turbostrider (Gnomes)
-			["races"] = { 7 },	-- Gnomes
+			["races"] = { GNOME },
 		}),
 		i(46763, {	-- Turbostrider (Alliance, except gnomes)
-			["races"] = exclude({ 7 }, ALLIANCE_ONLY),	-- All alliance except Gnomes
+			["races"] = exclude({ GNOME }, ALLIANCE_ONLY),
 		}),
 		i(8591),	-- Turquoise Raptor
 		i(152796),	-- Umber Ruinstrider
@@ -560,7 +464,7 @@ _.Mounts =
 		i(174770),	-- Wicked Swarmer
 		i(116671),	-- Wild Goretusk
 		i(40775, {	-- Winged Steed of the Ebon Blade [Death Knight Only]
-			["classes"] = { 6 },	-- Death Knight
+			["classes"] = { DEATHKNIGHT },
 		}),
 		i(116655),	-- Witherhide Cliffstomper
 		i(44230, {	-- Wooly Mammoth [Alliance Only]

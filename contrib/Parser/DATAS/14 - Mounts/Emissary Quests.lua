@@ -4,6 +4,5 @@
 _.Mounts =
 {
 	n(-169, {	-- Emissary Quests
-	
 	}),
 };

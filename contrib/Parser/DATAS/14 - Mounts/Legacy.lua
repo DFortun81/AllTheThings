@@ -34,8 +34,8 @@ _.Mounts =
 			["u"] = 2,	-- BoP / BoA Item — unobtainable as of BFA prepatch
 		}),
 		i(98405, {			-- Brawler's Burly Mushan Beast
-			["description"] = "If you completed rank 8 in Season 1 or 2 of the Brawler's Guild, you can purchase this mount from Quartermaster in Brawler's Guild.",
 			["u"] = 4,
+			["description"] = "If you completed rank 8 in Season 1 or 2 of the Brawler's Guild, you can purchase this mount from Quartermaster in Brawler's Guild.",
 		}),
 		i(33976, {			-- Brewfest Ram
 			["u"] = 4,
