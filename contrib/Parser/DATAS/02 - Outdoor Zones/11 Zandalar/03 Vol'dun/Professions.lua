@@ -6,7 +6,7 @@ _.Zones =
 	m(875, {	-- Zandalar
 		m(864, {	-- Vol'dun
 			n(-38, {	-- Professions
-				n(-182, {	-- Herbalism
+				prof(182, {	-- Herbalism
 					q(51360, {	-- Enormous Anchor Pod
 						["sourceQuests"] = { 51016 },	-- Seeking More Knowledge
 						["requireSkill"] = 182,	-- Herbalism
