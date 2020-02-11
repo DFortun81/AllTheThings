@@ -169,6 +169,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161405 },	-- Taoshi
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
+					q(58422, {	-- Mark of the Conquerors
+						["coord"] = { 44.7, 73.8, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
 					q(58460, {	-- Marshals of Madness
 						["coord"] = { 44.7, 73.8, 1530 },
 						["isDaily"] = true,
@@ -659,6 +665,11 @@ _.ExpansionFeatures =
 					q(57339, {	-- Construction Ritual
 						["lvl"] = 120,
 						["coord"] = { 25.2, 17.2, 1530 },
+						["isWorldQuest"] = true,
+					}),
+					q(57158, {	-- Electric Empowerment
+						["lvl"] = 120,
+						["coord"] = { 15.0, 23.0, 1530 },
 						["isWorldQuest"] = true,
 					}),
 					q(58370, {	-- Empowered Demolisher

@@ -1108,7 +1108,7 @@ _.Zones =
 					["coord"] = { 64.0, 50.3, 863 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(51139, {	-- WANTED: Ayame
+				q(52480, {	-- WANTED: Ayame
 					["coord"] = { 62.3, 41.3, 863 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 293568 },	-- Wanted Poster
