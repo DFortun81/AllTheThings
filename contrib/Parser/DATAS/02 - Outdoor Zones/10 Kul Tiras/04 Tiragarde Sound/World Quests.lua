@@ -134,11 +134,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52340, {	-- Work Order: Monel-Hardened Hoofplates
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(52404, {	-- Work Order: Solstone
 						["isWorldQuest"] = true,
 						["lvl"] = 120,

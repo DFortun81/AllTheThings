@@ -318,6 +318,12 @@ _.Zones =
 						["requireSkill"] = 755,	-- Jewelcrafting
 						["coord"] = { 67.61, 21.81, 1161 },
 					}),
+					q(52340, {	-- Work Order: Monel-Hardened Hoofplates
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = 164,	-- Blacksmithing
+					}),
 					q(52339, {	-- Work Order: Monel-Hardened Stirrups
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
