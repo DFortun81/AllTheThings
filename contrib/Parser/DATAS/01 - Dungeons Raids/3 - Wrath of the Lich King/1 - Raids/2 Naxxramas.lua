@@ -1823,6 +1823,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(40297),	-- Sabatons of Endurance
 							i(39706),	-- Sabatons of Sudden Reprisal
 							i(40236),	-- Serene Echoes
+							i(40325),	-- Bindings of the Expansive Mind
 						},
 					})),
 					cr(15928, e(1613, {	-- Thaddius
