@@ -1529,7 +1529,7 @@ _.NeverImplemented =
 		q(58348),	-- Conquest's Reward — automatically offered when you cap conquest for the week
 		q(58352),	-- Conquest's Reward — automatically offered when you cap conquest for the week
 		q(57064),	-- triggered when looting War Chest as Alliance — picked up Finger-Bone Trophy of Battle, Rank 1 Conflict and Strife, so not sure if this is a weekly quest for War Chest or possibly tracking for the Azerite Essence
-
+		q(54931),	-- first Cooking Impossible brawl win of the week? not general brawl victory cause it's 47144 and it still triggered
 
 	--	WORLD BOSSES
 		q(52997),	-- Azurethos, The Winged Typhoon Kill ID
@@ -2183,7 +2183,7 @@ _.NeverImplemented =
 		q(58543),	-- kill ra-den - either the wing clear OR the beacon placement
 		q(58544),	-- kill ra-den - either the wing clear OR the beacon placement
 		q(58527),	-- combined 15 nyalotha pages
-		q(59567),	-- kill Carapce of N'Zoth (Fury of N'Zoth)
+		q(59567),	-- kill Carapace of N'Zoth (Fury of N'Zoth)
 		
 		-- World Bosses
 		q(58510),	-- Vuk'laz the Earthbreaker first kill??
