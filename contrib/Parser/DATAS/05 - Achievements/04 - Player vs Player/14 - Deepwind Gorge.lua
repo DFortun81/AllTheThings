@@ -15,7 +15,10 @@ _.Achievements =
 	n(-9958, {	-- Player vs Player
 		["g"] = {
 			n(-9994, {	-- Deepwind Gorge
-				["maps"] = { 519 },	-- Deepwind Gorge
+				["maps"] = {
+					519,	-- Deepwind Gorge (old)
+					1576,	-- Deepwind Gorge (revamped)
+				},
 				["g"] = {
 					ach(14175, {	-- Master of Deepwind Gorge
 						ach(8331),	-- Deepwind Gorge Victory
