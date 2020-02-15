@@ -24,8 +24,6 @@ _.Zones =
 					["provider"] = { "n", 9999 },	-- Ringo
 					["coord"] = { 51.9, 49.8, 78 },
 					["sourceQuest"] = 24734,	-- Lost!
-					["isBreadcrumb"] = true,
-					["description"] = "Unavailable if you do not complete |cFFFFD700Speak with Spraggle|r quest before doing |cFFFFD700Shizzle's Flyer|r",
 					["g"] = {
 						i(53566),	-- Woodland Leggings
 						i(53567),	-- Clayridge Headpiece
@@ -345,9 +343,6 @@ _.Zones =
 					["provider"] = { "n", 9997 },	-- Spraggle Frock
 					["coord"] = { 54.9, 62.6, 78 },
 					["sourceQuest"] = 24794,	-- Speak with Spraggle
-					["altQuests"] = {
-						4492,	-- Lost Pre Cata Version
-					},
 				}),
 				q(4492,  {	-- Lost!
 					["u"] = 40,
