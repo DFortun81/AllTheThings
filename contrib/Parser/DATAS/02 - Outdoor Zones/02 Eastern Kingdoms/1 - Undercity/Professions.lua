@@ -228,6 +228,16 @@ _.Zones =
 						})
 					}),
 				}),
+				prof(202, {	-- Engineering
+					n(-17, {	-- Quests
+						q(3637, {	-- Gnome Engineering
+							["u"] = 40,	-- Legacy
+							["races"] = HORDE_ONLY,
+							["requireSkill"] = 202,	-- Engineering
+							["provider"] = { "n", 4586 },	-- Graham Van Talen
+						}),
+					}),
+				}),
 			}),
 		}),
 	}),
