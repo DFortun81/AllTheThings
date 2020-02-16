@@ -5,7 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
 		cl(4, {	-- The Hall of Shadows (Rogue)
-			["classes"] = { 4 },	-- Rogue
+			["classes"] = { ROGUE },
 			["lvl"] = 98,
 			["maps"] = {
 				626,	-- The Hall of Shadows (Rogue)
@@ -82,18 +82,18 @@ _.ExpansionFeatures =
 				}),
 				n(-17, {	-- Quests
 					q(45571, {	-- A Bit of Espionage
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 					}),
 					q(43958, {	-- A Body of Evidence
 						["coord"] = { 41.4, 78.0, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 43015,	-- What Winstone Suggests
 					}),
 					q(43485, {	-- A Burning Distraction
 						["maps"] = { 627 },	-- Dalaran
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 98100 },	-- Taoshi
 						["sourceQuests"] = {
 							43469,	-- Where In the World is Mathias?
@@ -102,7 +102,7 @@ _.ExpansionFeatures =
 					}),
 					q(40847, {	-- A Friendly Accord
 						["coord"] = { 41.2, 74.3, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 40840,	-- A Worthy Blade
 						["description"] = "Pursue |cFFFFD700The Dreadblades|r.",
@@ -112,62 +112,67 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(43422, {	-- A Hero's Weapon
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 113362 },	-- Lord Jorach Ravenholdt
 					}),
 					q(41920, {	-- A Matter of Finesse
 						["maps"] = { 627 },	-- Dalaran
 						["coord"] = { 51.6, 70.4, 627 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinara
 						["sourceQuest"] = 41919,	-- The Shadows Reveal
 					}),
 					q(42140, {	-- A More Wretched Hive of Scum and Villainy
 						["coord"] = { 37.7, 44.9, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["sourceQuest"] = 42139,	-- Rise, Champions
 					}),
 					q(44178, {	-- A Particularly Potent Potion
 						["coord"] = { 30.5, 70.4, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 						["sourceQuest"] = 42730,	-- Noggenfogger's Reasonable Request
 					}),
 					q(44252, {	-- A Sheath For Every Blade
 						["lvl"] = 110,
 						["coord"] = { 26.9, 36.7, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 105986 },	-- Kelsey Steelspark
 						["g"] = {
 							i(139742),	-- Mask of the Uncrowned
 						},
 					}),
+					q(44159, {	-- A Ticket for Marin
+						["isWeekly"] = true,
+						["classes"] = { ROGUE },
+						["provider"] = { "i", 140774 },	-- Vault Ticket
+					}),
 					q(40840, {	-- A Worthy Blade
 						["coord"] = { 41.3, 78.1, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 40839,	-- The Final Shadow
 					}),
 					q(44034, {	-- Another Worthy Blade
 						["lvl"] = 102,
 						["coord"] = { 41.3, 78.1, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 					}),
 					q(43468, {	-- Blood for the Wolfe
 						["coord"] = { 40.8, 75.3, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuest"] = 44181,	-- Champion: Fleet Admiral Tethys
 					}),
 					q(40832, {	-- Call of The Uncrowned
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 102018 },	-- Ravenholdt Courier
 					}),
 					q(44181, {	-- Champion: Fleet Admiral Tethys
 						["coord"] = { 41.2, 74.3, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 43852,	-- Fancy Lads and Buccaneers
 						["g"] = {
@@ -176,7 +181,7 @@ _.ExpansionFeatures =
 					}),
 					q(43262, {	-- Champion: Garona Halforcen
 						["coord"] = { 42.4, 74.7, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 94141 },	-- Garona Halforcen
 						["sourceQuest"] = 42139,	-- Rise, Champions
 						["g"] = {
@@ -185,7 +190,7 @@ _.ExpansionFeatures =
 					}),
 					q(44183, {	-- Champion: Lord Jorach Ravenholdt
 						["coord"] = { 41.4, 78.1, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 44177,	-- Dark Secrets and Shady Deals
 						["g"] = {
@@ -194,7 +199,7 @@ _.ExpansionFeatures =
 					}),
 					q(44180, {	-- Champion: Marin Noggenfogger
 						["coord"] = { 30.5, 70.4, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 102594 },	-- Marin Noggenfogger <Baron of Gadgetzan>
 						["sourceQuest"] = 44178,	-- A Particularly Potent Potion
 						["g"] = {
@@ -202,7 +207,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(43724, {	-- Champion: Master Mathias Shaw
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 110953 },	-- Master Mathias Shaw <Leader of SI:7>
 						["g"] = {
 							follower(893),	-- Master Mathias Shaw
@@ -210,7 +215,7 @@ _.ExpansionFeatures =
 					}),
 					q(46059, {	-- Champion: Tess Greymane
 						["races"] = ALLIANCE_ONLY,
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 						["g"] = {
 							follower(988),	-- Princess Tess Greymane / Lilian Voss
@@ -218,21 +223,21 @@ _.ExpansionFeatures =
 					}),
 					q(46058, {	-- Champion: Lilian Voss
 						["races"] = HORDE_ONLY,
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 98099 },	-- Lilian Voss
 						["g"] = {
 							follower(988),	-- Princess Tess Greymane / Lilian Voss
 						},
 					}),
 					q(43723, {	-- Champion: Taoshi
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 98100 },	-- Taoshi
 						["g"] = {
 							follower(892),	-- Taoshi
 						},
 					}),
 					q(42800, {	-- Champion: Valeera Sanguinar
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["g"] = {
 							follower(891),	-- Valeera Sanguinar
@@ -240,7 +245,7 @@ _.ExpansionFeatures =
 					}),
 					q(43261, {	-- Champion: Vanessa VanCleef
 						["coord"] = { 42.4, 68.3, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 102636 },	-- Vanessa VanCleef
 						["sourceQuest"] = 42139,	-- Rise, Champions
 						["g"] = {
@@ -251,7 +256,7 @@ _.ExpansionFeatures =
 						["lvl"] = 100,
 						["maps"] = { 47 },	-- Duskwood
 						["coord"] = { 38.1, 67.6, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "o", 250671 },	-- Notes on the Veiled Hand
 						["sourceQuests"] = {
 							42501,	-- Finishing the Job
@@ -261,7 +266,7 @@ _.ExpansionFeatures =
 					q(41921, {	-- Closing In
 						["maps"] = { 628 },	-- The Underbelly
 						["coord"] = { 67.9, 63.1, 628 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuest"] = 41920,	-- A Matter of Finesse
 					}),
@@ -284,7 +289,7 @@ _.ExpansionFeatures =
 					}),
 					q(47605, {	-- Coins of Air
 						["coord"] = { 45.0, 26.8, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 123087 },	-- Al'Abas
 						["sourceQuest"] = 47604,	-- In the Land of Magic
 						["g"] = {
@@ -293,14 +298,14 @@ _.ExpansionFeatures =
 					}),
 					q(43841, {	-- Convincin' Old Yancey
 						["coord"] = { 41.2, 74.3, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 44177,	-- Dark Secrets and Shady Deals
 					}),
 					q(44177, {	-- Dark Secrets and Shady Deals
 						["maps"] = { 634 },	-- Stormheim
 						["coord"] = { 77.2, 55.0, 634 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 112959 },	-- Fleet Admiral Tethys
 						["sourceQuests"] = {
 							44155,	-- Searching For Clues
@@ -308,45 +313,45 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42680, {	-- Deciphering the Letter
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["g"] = {
 							i(139746),	-- Wristbands of the Uncrowned
 						},
 					}),
 					q(40996, {	-- Delegation
 						["coord"] = { 41.3, 78.0, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 						["sourceQuest"] = 40950,	-- Honoring Success
 					}),
 					q(43852, {	-- Fancy Lads and Buccaneers
 						["coord"] = { 41.2, 74.3, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 43841,	-- Convincin' Old Yancey
 					}),
 					q(41924, {	-- Fangs of the Devourer
 						["maps"] = { 628 },	-- The Underbelly
 						["coord"] = { 67.9, 63.1, 628 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 105464 },	-- Val'zuun
 						["sourceQuest"] = 41922,	-- Traitor!
 					}),
 					q(42501, {	-- Finishing the Job
 						["coord"] = { 42.3, 755.9, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 						["description"] = "Pursue |cFFFFD700The Kingslayer|r.",
 					}),
 					q(45848, {	-- Fit For a Pirate
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["g"] = {
 							i(143679),	-- Crackers Pet
 						},
 					}),
 					q(47607, {	-- High Fash-Djinn
 						["coord"] = { 45.0, 26.8, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 123087 },	-- Al'Abas
 						["sourceQuest"] = 47606,	-- Loyalty Is Its Own Reward
 						["g"] = {
@@ -355,7 +360,7 @@ _.ExpansionFeatures =
 					}),
 					q(40950, {	-- Honoring Success
 						["coord"] = { 41.4, 78.0, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuests"] = {
 							-- TODO:: add the other rogue scenario quests here
@@ -366,33 +371,33 @@ _.ExpansionFeatures =
 					}),
 					q(47595, {	-- I Don't Need Them, But I'll Take Them
 						["coord"] = { 45.4, 27.6, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 103792 },	-- Griftah
 						["repeatable"] = true,
 						["sourceQuest"] = 47594,	-- I'll Take Those, Thanks!
 					}),
 					q(47594, {	-- I'll Take Those, Thanks!
 						["coord"] = { 45.4, 27.6, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["isWeekly"] = true,
 						["provider"] = { "n", 103792 },	-- Griftah
 						["sourceQuest"] = 47605,	-- Coins of Air
 					}),
 					q(47604, {	-- In the Land of Magic
 						["coord"] = { 45.0, 26.8, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 123087 },	-- Al'Abas
 						["sourceQuest"] = 47603,	-- The Mysterious, Magnificent Al'Abas
 					}),
 					q(40997, {	-- Lethal Efficiency
 						["coord"] = { 37.7, 44.8, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["sourceQuest"] = 40996,	-- Delegation
 					}),
 					q(47606, {	-- Loyalty Is Its Own Reward
 						["coord"] = { 45.0, 26.8, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 123087 },	-- Al'Abas
 						["sourceQuest"] = 47605,	-- Coins of Air
 						["g"] = {
@@ -402,7 +407,7 @@ _.ExpansionFeatures =
 					q(43253, {	-- Maw of Souls: Ancient Vrykul Legends
 						["lvl"] = 110,
 						["coord"] = { 40.9, 75.5, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuests"] = {
 							42684,	-- Throwing SI:7 Off the Trail
@@ -412,24 +417,24 @@ _.ExpansionFeatures =
 					q(44116, {	-- Mystery at Citrine Bay
 						["lvl"] = 103,
 						["coord"] = { 41.3, 78.1, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 44041,	-- The Bloody Truth
 					}),
 					q(42502, {	-- No Sanctuary
 						["coord"] = { 42.3, 755.9, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 						["description"] = "Pursue |cFFFFD700The Kingslayer|r.",
 					}),
 					q(42730, {	-- Noggenfogger's Reasonable Request
 						["coord"] = { 40.8, 75.3, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuest"] = 44181,	-- Champion: Fleet Admiral Tethys
 					}),
 					q(37666, {	-- Picking a Fight
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 110793 },	-- Taoshi
 						["sourceQuest"] = 43508,	-- The Captive Spymaster
 					}),
@@ -437,21 +442,21 @@ _.ExpansionFeatures =
 						["lvl"] = 100,
 						["maps"] = { 47 },	-- Duskwood
 						["coord"] = { 38.1, 67.6, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "o", 250671 },	-- Notes on the Veiled Hand
 						["sourceQuest"] = 42503,	-- Codebreaker
 					}),
 					q(43007, {	-- Return to the Chamber of Shadows
 						["lvl"] = 101,
 						["maps"] = { 627 },	-- Dalaran
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 112679 },	-- Valeera Sanguinar
 						["isBreadcrumb"] = true,
 					}),
 					q(40994, {	-- Right Tools for the Job
 						["u"] = 40,
 						["coord"] = { 41.3, 78.1, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 					}),
 					q(42139, {	-- Rise, Champions
@@ -463,19 +468,19 @@ _.ExpansionFeatures =
 					q(44155, {	-- Searching For Clues
 						["maps"] = { 634 },	-- Stormheim
 						["coord"] = { 77.2, 55.0, 634 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 112959 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 44116,	-- Mystery at Citrine Bay
 					}),
 					q(47592, {	-- Shine Bright Like a Diamond
 						["coord"] = { 45.4, 27.6, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 103792 },	-- Griftah
 						["sourceQuest"] = 47591,	-- Wanna Buy a Lamp?
 					}),
 					q(43829, {	-- Spy vs. Spy
 						["coord"] = { 41.3, 78.1, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 43958,	-- A Body of Evidence
 					}),
@@ -489,12 +494,12 @@ _.ExpansionFeatures =
 					q(44041, {	-- The Bloody Truth
 						["lvl"] = 103,
 						["coord"] = { 41.3, 78.1, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 43829,	-- Spy vs. Spy
 					}),
 					q(43508, {	-- The Captive Spymaster
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 110714 },	-- Taoshi
 					}),
 					q(40849, {	-- The Dreadblades
@@ -508,12 +513,12 @@ _.ExpansionFeatures =
 					q(44375, {	-- The Final Blade
 						["lvl"] = 102,
 						["coord"] = { 41.4, 78.0, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 					}),
 					q(40839, {	-- The Final Shadow
 						["coord"] = { 41.3, 78.0, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 40832,	-- Call of the Uncrowned
 						["g"] = {
@@ -521,14 +526,14 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(37689, {	-- The Imposter
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["g"] = {
 							i(139739),	-- Chestguard of the Uncrowned
 						},
 					}),
 					q(47603, {	-- The Mysterious, Magnificent Al'Abas
 						["coord"] = { 45.0, 26.8, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 123087 },	-- Al'Abas
 						["sourceQuest"] = 47592,	-- Shine Bright Like a Diamond
 					}),
@@ -540,7 +545,7 @@ _.ExpansionFeatures =
 					}),
 					q(41919, {	-- The Shadows Reveal
 						["coord"] = { 40.8, 75.4, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuest"] = 40840,	-- A Worthy Blade
 						["description"] = "Pursue |cFFFFD700Fangs of the Devourer|r.",
@@ -548,18 +553,18 @@ _.ExpansionFeatures =
 					q(46089, {	-- The Sunken Vault
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 					}),
 					q(46178, {	-- The Sunken Vault
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 					}),
 					q(42504, {	-- The Unseen Blade (A)
 						["lvl"] = 100,
 						["maps"] = { 37 },	-- Elwynn Forest
 						["races"] = ALLIANCE_ONLY,
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 107979 },	-- Garona Halforcen
 						["sourceQuest"] = 42568,	-- Preparation
 						["g"] = {
@@ -571,7 +576,7 @@ _.ExpansionFeatures =
 						["lvl"] = 100,
 						["maps"] = { 37 },	-- Elwynn Forest
 						["races"] = HORDE_ONLY,
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 107979 },	-- Garona Halforcen
 						["sourceQuest"] = 42568,	-- Preparation
 						["g"] = {
@@ -581,32 +586,32 @@ _.ExpansionFeatures =
 					}),
 					q(42684, {	-- Throwing SI:7 Off the Trail
 						["coord"] = { 40.8, 75.3, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuest"] = 44181,	-- Champion: Fleet Admiral Tethys
 					}),
 					q(44117, {	-- Time Flies When Yer Havin' Rum!
 						["maps"] = { 634 },	-- Stormheim
 						["coord"] = { 77.2, 55.0, 634 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 112959 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 44116,	-- Mystery at Citrine Bay
 					}),
 					q(41922, {	-- Traitor!
 						["maps"] = { 627 },	-- Dalaran
 						["coord"] = { 49.4, 41.2, 627 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuest"] = 41920,	-- A Matter of Finesse
 					}),
 					q(47591, {	-- Wanna Buy a Lamp?
 						["coord"] = { 45.4, 27.6, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 103792 },	-- Griftah
 					}),
 					q(43015, {	-- What Winstone Suggests
 						["coord"] = { 37.8, 44.9, 626 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["sourceQuest"] = 43014,	-- The Big Bad Wolfe
 					}),

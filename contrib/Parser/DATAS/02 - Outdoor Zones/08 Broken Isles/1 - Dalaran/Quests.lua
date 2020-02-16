@@ -10,8 +10,7 @@ _.Zones =
 					["description"] = "If you see this item listed and you know the toy, it is likely you need the Pepe appearance that spawns in this zone.",
 					["collectible"] = false,
 					["g"] = {
-						{
-							["itemID"] = 139632,	-- A Tiny Pair of Goggles
+						i(139632, {	-- A Tiny Pair of Goggles
 							["questID"] = 43695,	-- Pepe can be sometimes be summoned with this mask
 							["coords"] = {
 								{ 42.31, 57.51, 625 },	-- Near Fruit Vendor
@@ -22,7 +21,7 @@ _.Zones =
 								{ 42.01, 19.01, 625 },	-- Antonidas Memoria
 								{ 36.01, 37.01, 625 },	-- Angelique Butler (First Aid Shop)
 							},
-						},
+						}),
 					},
 				}),
 				n(-176, { 	-- Weekly World Events
@@ -79,7 +78,7 @@ _.Zones =
 					},
 				}),
 				q(41541, {	-- A Beastly Expedition
-					["classes"] = { 3 },
+					["classes"] = { HUNTER },
 					["providers"] = {
 						{ "n", 102478 },	-- Emmarel Shadewarden
 						{ "n", 107317 },	-- Emmarel Shadewarden
@@ -93,27 +92,27 @@ _.Zones =
 					},
 				}),
 				q(41052, {	-- A Desperate Plea
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },	-- Warrior
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 93775 },	-- Eitrigg
 				}),
 				q(46083, {	-- A Few Things First
 					["sourceQuests"] = { 46071 },	-- The Hammer of Dalaran
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 92183 },	-- Alard Schmied
 				}),
 				q(45645, {	-- A Fool's Errand
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 117438 },	-- Doloria
 				}),
 				q(45865, {	-- A Gift From the Six
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["classes"] = {
-						6,	-- Death Knight (Frost)
-						12,	-- Demon Hunter (Havoc)
-						3,	-- Hunter (Survival)
-						4,	-- Rogue (Subtlety)
-						1,	-- Warrior (Arms)
+						DEATHKNIGHT,	-- Frost
+						DEMONHUNTER,	-- Havoc
+						HUNTER,			-- Survival
+						ROGUE,			-- Subtlety
+						WARRIOR,		-- Arms
 					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
@@ -130,22 +129,22 @@ _.Zones =
 				}),
 				q(45842, {	-- A Gift From the Six
 					["classes"] = {	-- may be the "healers only" one instead -- needs to be double-checked/confirmed
-						11,	-- Druid (Balance)
-						3,	-- Hunter (Marksmanship)
-						8,	-- Mage (Frost)
-						5,	-- Priest (Shadow)
-						9,	-- Warlock (Affliction)
+						DRUID,		-- Balance
+						HUNTER,		-- Marksmanship
+						MAGE,		-- Frost
+						PRIEST,		-- Shadow
+						WARLOCK,	-- Affliction
 					},
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 				}),
 				q(45866, {	-- A Gift From the Six
-					["classes"] = { 3, 5, 8, 9, 11 },
+					["classes"] = { HUNTER, PRIEST, MAGE, WARLOCK, DEMONHUNTER },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 				}),
 				q(45861, {	-- A Gift From the Six
-					["classes"] = { 1, 4, 6, 7, 8, 11 },
+					["classes"] = { WARRIOR, ROGUE, DEATHKNIGHT, SHAMAN, MAGE, DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 				}),
@@ -153,23 +152,23 @@ _.Zones =
 					["sourceQuests"] = { 45843 },	-- Dark Omens
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["classes"] = {
-						6,	-- Death Knight (Blood)
-						12,	-- Demon Hunter (Vengeance)
-						11,	-- Druid (Guardian)
-						10,	-- Monk (Brewmaster)
-						2,	-- Paladin (Protection)
-						1,	-- Warrior (Protection)
+						DEATHKNIGHT,	-- Blood
+						DEMONHUNTER,	-- Vengeance
+						DRUID,			-- Guardian
+						MONK,			-- Brewmaster
+						PALADIN,		-- Protection
+						WARRIOR,		-- Protection
 					},
 					["coord"] = { 28.8, 48.8, 627 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(41632, {	-- A Gift of Time
-					["classes"] = { 5 },
+					["classes"] = { PRIEST },
 					["provider"] = { "n", 105081 },	-- Archmage Kalec
 				}),
 				q(44099, {	-- A Mutual Friend
 					["sourceQuests"] = { 40823 },	-- Rebuilding the Council
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 101,
 					["provider"] = { "n", 112693 },	-- Black Harvest Acolyte
 				}),
@@ -178,24 +177,24 @@ _.Zones =
 						42001,	-- Aluneth, Greatstaff of the Magna
 						42003,	-- Kept Secret, Kept Safe
 					},
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 105081 },	-- Archmage Kalec
 				}),
 				q(41626, {	-- A New Threat
 					["sourceQuests"] = { 41625 },	-- The Light's Wrath
-					["classes"] = { 5 },
+					["classes"] = { PRIEST },
 					["provider"] = { "n", 105081 },	-- Archmage Kalec
 				}),
 				q(40715, {	-- A Pact of Necessity
 					["sourceQuests"] = { 40714 },	-- The Call to War
-					["classes"] = { 6 },	-- Death Knight
+					["classes"] = { DEATHKNIGHT },
 					["provider"] = { "n", 101441 },	-- Duke Lankral
 				}),
 				q(40930, {	-- Apocalypse
-					["classes"] = { 6 },	-- Death Knight
+					["classes"] = { DEATHKNIGHT },
 				}),
 				q(39746, {	-- A Ring Unbroken
-					["classes"] = { 7 },
+					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 91731 },	-- Thrall
 				}),
@@ -209,38 +208,30 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(43441, {	-- A Second Weapon
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["providers"] = {
 						{ "n", 102700 },	-- Meryl Felstorm
 						{ "n", 109222 },	-- Meryl Felstorm (alliance)
 					},
 				}),
 				q(44252, {	-- A Sheath For Every Blade
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 105986 },	-- Kelsey Steelspark
 				}),
 				q(42866, {	-- A Sign From The Sky
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 				}),
 				q(37448, {	-- A Simple Plan
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 110953 },	-- Master Mathias Shaw
 				}),
 				q(40643, {	-- A Summons From Moonglade
-					["classes"] = { 11 },
+					["classes"] = { DRUID },
 					["provider"] = { "n", 101061 },  -- Archdruid Hamuul Runetotem
 				}),
-				i(140774, {	-- Vault Ticket
-					["isWeekly"] = true,
-					["g"] = {
-						q(44159, {	-- A Ticket for Marin
-							["classes"] = { 4 },
-						}),
-					},
-				}),
 				q(47041, {	-- Affliction: The Twisted Twin
-					["classes"] = { 9 },
+					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90463 },	-- Archmage Karlain
@@ -248,44 +239,44 @@ _.Zones =
 					},
 				}),
 				q(44406, {	-- Aggra's Guidance
-					["classes"] = { 7 },
+					["classes"] = { SHAMAN },
 					["providers"] = {
 						{ "n", 96528 },	-- Farseer Nobundo
 						{ "n", 106519 },	-- Farseer Nobundo
 					},
 				}),
 				q(42001, {	-- Aluneth, Greatstaff of the Magna
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 102700 },	-- Meryl Felstorm
 				}),
 				q(42814, {	-- An Important Mission
-					["classes"] = { 1 },
+					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 108961 },	-- Sergeant Dalton
 				}),
 				q(46065, {	-- An Impossible Foe
-					["classes"] = { 1, 4, 6, 7, 8, 11 },
+					["classes"] = { WARRIOR, ROGUE, DEATHKNIGHT, SHAMAN, MAGE, DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 117871 },	-- War Councilor Victoria
 					["u"] = 40,
 				}),
 				q(40267, {	-- An Unexpected Message
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 102700 },	-- Meryl Felstorm
 				}),
 				q(38710, {	-- An Urgent Gathering
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 92909 },	-- Lord Maxwell Tyrosus
 				}),
 				q(45437, {	-- An Urgent Situation
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 				}),
 				q(45991, {	-- An Urgent Warning
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 118424 },	-- Injured Bandit
 				}),
 				q(45482, {	-- Arcane: Fate of the Tideskorn
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["providers"] = {
 						{ "n", 90417 },	-- Archmage Khadgar
 						{ "n", 115464 },	-- Archmage Khadgar
@@ -293,7 +284,7 @@ _.Zones =
 				}),
 				q(42423, {	-- Archmage Vargoth's Retreat
 					["sourceQuests"] = { 42416 },	-- The Council is in Session
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 90431 },	-- Archmage Ansirem Runeweaver
 				}),
@@ -305,12 +296,12 @@ _.Zones =
 				}),
 				q(46000, {	-- Arming Dalaran
 					["sourceQuests"] = { 45586 },	-- Shield Amplification
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 119001 },	-- Sin'dorei Archmage
 				}),
 				q(44914, {	-- Arms: The Thieving Apprentice
 					["sourceQuests"] = { 47032 },	-- Legion Threat: Azshara
-					["classes"] = { 1 },
+					["classes"] = { WARRIOR },
 					["providers"] = {
 						{ "n", 105081 },	-- Archmage Kalec
 						{ "n", 115467 },	-- Archmage Kalec
@@ -321,7 +312,7 @@ _.Zones =
 						41803,	-- Asking a Favor (Altruis)
 						40247,	-- Asking a Favor (Kayn)
 					},
-					["classes"] = { 12 },
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 28.8, 48.6, 627 },
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 				}),
@@ -330,7 +321,7 @@ _.Zones =
 						40814,	-- The Power to Survive (if chosen first)
 						44383,	-- In Pursuit of Power (if chosen second)
 					},
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["providers"] = {
 						{ "n", 99254 },	-- Altruis the Sufferer
 						{ "n", 108571 },	-- Altruis the Sufferer
@@ -341,7 +332,7 @@ _.Zones =
 						40814,	-- The Power to Survive (if chosen first)
 						44383,	-- In Pursuit of Power (if chosen second)
 					},
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 74.5, 48.7, 627 },
 					["providers"] = {
 						{ "n", 99247 },	-- Kayne Sunfury
@@ -349,7 +340,7 @@ _.Zones =
 					},
 				}),
 				q(47051, {	-- Assassination: Fate of the Tideskorn
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["providers"] = {
 						{ "n", 90417 },	-- Archmage Khadgar
 						{ "n", 115464 },	-- Archmage Khadgar
@@ -377,7 +368,7 @@ _.Zones =
 						43486,	-- Cracking the Codex
 						49812,	-- Delas in Dalaran
 					},
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 110571 },	-- Delas Moonfang
 				}),
 				q(44782, {	-- Away From Prying Eyes
@@ -399,11 +390,11 @@ _.Zones =
 				}),
 				q(44766, {	-- Backup Plan
 					["sourceQuests"] = { 45437 },	-- An Urgent Situation
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 118242 },	-- Aethas Sunreaver
 				}),
 				q(47037, {	-- Balance: The Twisted Twin
-					["classes"] = { 11 },
+					["classes"] = { DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90463 },	-- Archmage Karlain
@@ -413,17 +404,17 @@ _.Zones =
 				q(46327, {	-- Bargaining with Shadows
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["classes"] = {
-						11,	-- Druid (Feral)
-						6,	-- Death Knight (Unholy)
-						8,	-- Mage (Fire)
-						4,	-- Rogue (Outlaw)
-						7,	-- Shaman (Elemental)
-						1,	-- Warrior (Fury)
+						DRUID,			-- Feral
+						DEATHKNIGHT,	-- Unholy
+						MAGE,			-- Fire
+						ROGUE,			-- Outlaw
+						SHAMAN,			-- Elemental
+						WARRIOR,		-- Fury
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47018, {	-- Beast Mastery: Rumblings Near Feltotem
-					["classes"] = { 3 },
+					["classes"] = { HUNTER },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
@@ -434,12 +425,12 @@ _.Zones =
 					["sourceQuests"] = { 45414 },	-- Confirming Suspicions
 					["provider"] = { "n", 117042 },	-- Prophet Velen
 					["classes"] = {
-						6,	-- Death Knight (Blood)
-						12,	-- Demon Hunter (Vengeance)
-						11,	-- Druid (Guardian)
-						10,	-- Monk (Brewmaster)
-						2,	-- Paladin (Protection)
-						1,	-- Warrior (Protection)
+						DEATHKNIGHT,	-- Blood
+						DEMONHUNTER,	-- Vengeance
+						DRUID,			-- Guardian
+						MONK,			-- Brewmaster
+						PALADIN,		-- Protection
+						WARRIOR,		-- Protection
 					},
 					["coord"] = { 74.3, 45.6, 627 },
 					["lvl"] = 110,
@@ -449,18 +440,18 @@ _.Zones =
 						43251,	-- In Search of the Eye
 						43252,	-- Eternal Unrest
 					},
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 110164 },	-- Valeera Sanguinar
 				}),
 				q(40710, {	-- Blade in Twilight
-					["classes"] = { 5 },
+					["classes"] = { PRIEST },
 					["providers"] = { 
 						{ "n", 101314 },	-- Alonsus Faol
 						{ "n", 110564 },	-- Alonsus Faol
 					},
 				}),
 				q(43488, {	-- Blood of Our Enemy
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 110571 },	-- Delas Moonfang
 				}),
 				q(44760, {	-- Blood On Your Hands
@@ -468,7 +459,7 @@ _.Zones =
 				}),
 				q(47025, {	-- Blood: Aid of the Illidari
 					["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
-					["classes"] = { 6 },
+					["classes"] = { DEATHKNIGHT },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90431 },	-- Archmage Ansirem Runeweaver
@@ -478,7 +469,7 @@ _.Zones =
 				}),
 				q(47024, {	-- Brewmaster: Aid of the Illidari
 					["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
-					["classes"] = { 10 },
+					["classes"] = { MONK },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90431 },	-- Archmage Ansirem Runeweaver
@@ -487,26 +478,26 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(41121, {	-- By Any Means
-					["classes"] = { 12 },
+					["classes"] = { DEMONHUNTER },
 					["provider"] = { "n", 103156 },	-- Altruis the Sufferer
 				}),
 				q(39051, {	-- By Any Means
 					["sourceQuests"] = { 40819 },	-- Making Arrangements
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 65.3, 66.9, 627 },
 					["provider"] = { "n", 94902 },	-- Kayn Sunfury
 				}),
-				q(39047, {	-- Call of the Illidari
-					["classes"] = { 12 },
+				q(39047, {	-- Call of the Illidari (Altruis)
+					["classes"] = { DEMONHUNTER },
 					["provider"] = { "n", 99343 },	-- Kor'vas Bloodthorn
 				}),
-				q(39261, {	-- Call of the Illidari
-					["classes"] = { 12 },	-- Demon Hunter
+				q(39261, {	-- Call of the Illidari (Kayn)
+					["classes"] = { DEMONHUNTER },
 					["provider"] = { "n", 99343 },	-- Kor'vas Bloodthorn
 				}),
 				q(40392, {	-- Call of the Marksman
 					["sourceQuests"] = { 41540 },	-- Rendezvous with the Courier
-					["classes"] = { 3 },
+					["classes"] = { HUNTER },
 					["providers"] = {
 						{ "n", 103415 },	-- Courier Larkspur
 						{ "n", 103741 },	-- Courier Larkspur
@@ -514,7 +505,7 @@ _.Zones =
 				}),
 				q(46724, {	-- Champion: The Great Akazamzarak
 					["sourceQuests"] = { 46723 },	-- Down the Rabbit Hole
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 					["g"] = {
 						follower(995),	-- The Great Akazamzarak
@@ -530,22 +521,22 @@ _.Zones =
 					["sourceQuests"] = { 45413 },	-- Gathering Information
 					["provider"] = { "n", 116880 },	-- Kor'vas Bloodthorn
 					["classes"] = {
-						6,	-- Death Knight (Blood)
-						12,	-- Demon Hunter (Vengeance)
-						11,	-- Druid (Guardian)
-						10,	-- Monk (Brewmaster)
-						2,	-- Paladin (Protection)
-						1,	-- Warrior (Protection)
+						DEATHKNIGHT,	-- Blood
+						DEMONHUNTER,	-- Vengeance
+						DRUID,			-- Guardian
+						MONK,			-- Brewmaster
+						PALADIN,		-- Protection
+						WARRIOR,		-- Protection
 					},
 					["coord"] = { 51.9, 20.1, 627 },
 					["lvl"] = 110,
 				}),
 				q(43486, {	-- Cracking the Codex
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 90251 },	-- Aponi Brightmane
 				}),
 				q(43394, {	-- Crossing Legion Lines
-					["classes"] = { 5 },
+					["classes"] = { PRIEST },
 					["provider"] = { "n", 111044 },	-- Lord Maxwell Tyrosus
 				}),
 				q(45239, {	-- Cubic Coalescing
@@ -567,7 +558,7 @@ _.Zones =
 					["provider"] = { "n", 116714 },	-- Ritssyn Flamescowl
 				}),
 				q(42477, {	-- Daio the Decrepit
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["providers"] = {
 						{ "n", 102700 },	-- Meryl Felstorm
 						{ "n", 109222 },	-- Meryl Felstorm
@@ -575,13 +566,13 @@ _.Zones =
 				}),
 				q(45843, {	-- Dark Omens
 					["provider"] = { "n", 116880 },	-- Kor'vas Bloodthorn
-					["classes"] = {	-- tank classes
-						6,	-- Death Knight
-						12,	-- Demon Hunter
-						11,	-- Druid
-						10,	-- Monk
-						2,	-- Paladin
-						1,	-- Warrior
+					["classes"] = {
+						DEATHKNIGHT,	-- Blood
+						DEMONHUNTER,	-- Vengeance
+						DRUID,			-- Guardian
+						MONK,			-- Brewmaster
+						PALADIN,		-- Protection
+						WARRIOR,		-- Protection
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -591,13 +582,13 @@ _.Zones =
 						41155,	-- The Dark Riders
 						42168,	-- Looking into the Darkness
 					},
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["coord"] = { 54.0, 47.0, 627 },
 					["provider"] = { "n", 106610 },	-- Calydus
 				}),
 				q(42680, {	-- Deciphering the Letter
 					["sourceQuests"] = { 42678 },	-- Black Rook Hold: Into Black Rook Hold
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 					["g"] = {
 						i(139746),	-- Wristbands of the Uncrowned
@@ -605,7 +596,7 @@ _.Zones =
 				}),
 			--	q(47079)	-- Delivering Lost Knowledge -- removed?
 				q(47049, {	-- Demonology: Fate of the Tideskorn
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["providers"] = {
 						{ "n", 90417 },		-- Archmage Khadgar
 						{ "n", 115464 },	-- Archmage Khadgar
@@ -618,7 +609,7 @@ _.Zones =
 						47035,	-- Legion Threat: The Missing Mage
 					},
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },
+					["classes"] = { WARLOCK },
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 				}),
 				q(47020, {	-- Discipline: Rumblings Near Feltotem
@@ -627,14 +618,14 @@ _.Zones =
 						47035,	-- Legion Threat: The Missing Mage
 					},
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 5 },
+					["classes"] = { PRIEST },
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
 				}),
 				q(46723, {	-- Down the Rabbit Hole
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 					["g"] = {
 						i(147838),	-- Akazamzarak's Spare Hat
@@ -647,14 +638,14 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(46103, {	-- Dread Infiltrators
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 119259 },	-- Apothecary Keever
 				}),
 				q(42911, {	-- Drowned Mana
 					["provider"] = { "n", 108825 },	-- Conjurer Margoss
 				}),
 				q(45123, {	-- Elemental: The Folly of Levia Laurence
-					["classes"] = { 7 },
+					["classes"] = { SHAMAN },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
@@ -662,7 +653,7 @@ _.Zones =
 					},
 				}),
 				q(47050, {	-- Enhancement: Fate of the Tideskorn
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },	-- Shaman
 					["providers"] = {
 						{ "n", 90417 },		-- Archmage Khadgar
 						{ "n", 115464 },	-- Archmage Khadgar
@@ -670,19 +661,19 @@ _.Zones =
 				}),
 				q(41807, {	-- Establishing a Connection
 					["sourceQuests"] = { 41806 },	-- Return to Jace
-					["classes"] = { 12 },
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 74.0, 50.5, 627 },
 					["provider"] = { "n", 99262 },	-- Jace Darkweaver
 				}),
 				q(42869, {	-- Eternal Vigil
 					["sourceQuests"] = { 39247 },	-- The Hunt
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 74.3, 46.2, 627 },
 					["provider"] = { "n", 102799 },	-- Kor'vas Bloodthorn
 				}),
 				q(43945, {	-- Expanding Your Horizons
 					["sourceQuests"] = { 44406 },	-- Aggra's Guidance
-					["classes"] = { 7 },
+					["classes"] = { SHAMAN },
 					["provider"] = { "n", 99531 },	-- Aggra
 				}),
 				q(43473, {	-- Experimental Potion: Test Subjects Needed
@@ -711,10 +702,10 @@ _.Zones =
 				}),
 			--	q(44486)	-- Fel-Ravaged Tome -- granted by i(141360) in Vault of the Wardens
 				q(41035, {	-- Felstorm's Plea
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 				}),
 				q(47059, {	-- Feral: The Folly of Levia Laurence
-					["classes"] = { 11 },
+					["classes"] = { DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
@@ -722,11 +713,11 @@ _.Zones =
 					},
 				}),
 				q(45615, {	-- Finders Keepers
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 				}),
 				q(42452, {	-- Finding Ebonchill
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["providers"] = {
 						{ "n", 102700 },	-- Meryl Felstorm
 						{ "n", 109222 },	-- Meryl Felstorm
@@ -738,12 +729,12 @@ _.Zones =
 						43984,	-- The Tome Opens Again (if this artifact is chosen second)
 						44089,	-- A Greater Arsenal (if this artifact is picked last)
 					},
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["coord"] = { 56.3, 65.0, 628 },
 					["provider"] = { "n", 101097 },	-- Calydus
 				}),
 				q(47055, {	-- Fire: The Folly of Levia Laurence
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
@@ -757,7 +748,7 @@ _.Zones =
 				}),
 				q(42424, {	-- Following In His Footsteps
 					["sourceQuests"] = { 42423 },	-- Archmage Vargoth's Retreat
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 107423 },	-- Archmage Kalec
 				}),
 				q(45917, {	-- Following the Scent
@@ -765,32 +756,32 @@ _.Zones =
 					["provider"] = { "n", 116714 },	-- Ritssyn Flamescowl
 				}),
 				q(44203, {	-- For the Cause
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 113213 },	-- Master Mathias Shaw
 				}),
 				q(44202, {	-- For the Cause
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["provider"] = { "n", 113213 },	-- Master Mathias Shaw
 				}),
 				q(39763, {	-- For Whom the Fel Tolls
 					["sourceQuests"] = { 39790 },	-- Infernal Brimstone Theory
-					["classes"] = { 2, 3, 9 },
-					["races"] = { 3, 9 },
+					["classes"] = { PALADIN, HUNTER, WARLOCK },
+					["races"] = { DWARF, GOBLIN },
 					["provider"] = { "n", 97360 },	-- Matthew Rabis
 				}),
 				q(47046, {	-- Frost: The Thieving Apprentice
-					["classes"] = { 6 },
+					["classes"] = { DEATHKNIGHT },
 					["providers"] = {
 						{ "n", 115467 },	-- Archmage Kalec
 						{ "n", 105081 },	-- Archmage Kalec
 					},
 				}),
 				q(45182, {	-- Frost: The Twisted Twin
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90463 },	-- Archmage Karlain
@@ -798,11 +789,11 @@ _.Zones =
 					},
 				}),
 				q(46779, {	-- Further Advancement
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 98092 },	-- Nikki the Gossip
 				}),
 				q(47056, {	-- Fury: The Folly of Levia Laurence
-					["classes"] = { 1 },
+					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
@@ -820,12 +811,12 @@ _.Zones =
 					},
 					["provider"] = { "n", 116880 },	-- Kor'vas Bloodthorn
 					["classes"] = {
-						6,	-- Death Knight (Blood)
-						12,	-- Demon Hunter (Vengeance)
-						11,	-- Druid (Guardian)
-						10,	-- Monk (Brewmaster)
-						2,	-- Paladin (Protection)
-						1,	-- Warrior (Protection)
+						DEATHKNIGHT,	-- Blood
+						DEMONHUNTER,	-- Vengeance
+						DRUID,			-- Guardian
+						MONK,			-- Brewmaster
+						PALADIN,		-- Protection
+						WARRIOR,		-- Protection
 					},
 					["coord"] = { 51.9, 20.1, 627 },
 					["lvl"] = 110,
@@ -844,12 +835,12 @@ _.Zones =
 					},
 				}),
 				q(42175, {	-- Growing Power
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 112688 },	-- Meryl Felstorm
 				}),
 				q(47023, {	-- Guardian: Aid of the Illidari
 					["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
-					["classes"] = { 11 },
+					["classes"] = { DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90431 },	-- Archmage Ansirem Runeweaver
@@ -863,11 +854,11 @@ _.Zones =
 						{ "n", 115467 },	-- Archmage Kalec
 						{ "n", 105081 },	-- Archmage Kalec
 					},
-					["classes"] = { 12 },	-- Demon Hunter (Havoc)
+					["classes"] = { DEMONHUNTER },
 					["lvl"] = 110,
 				}),
 				q(46178, {	-- Hiding In Plain Sight
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 98099 },	-- Lilian Voss
 					["g"] = {
@@ -875,7 +866,7 @@ _.Zones =
 					},
 				}),
 				q(46089, {	-- Hiding In Plain Sight
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 98099 },	-- Lilian Voss
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -883,12 +874,12 @@ _.Zones =
 					},
 				}),
 				q(47607, {	-- High Fash-Djinn
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 123087 },	-- Al'Abas
 				}),
 				q(47006, {	-- Holy: The Bradensbrook Investigation
 					["sourceQuests"] = { 47027 },	-- Legion Threat: Val'sharah
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
@@ -897,7 +888,7 @@ _.Zones =
 				}),
 				q(46078, {	-- Holy: The Bradensbrook Investigation
 					["sourceQuests"] = { 47027 },	-- Legion Threat: Val'sharah
-					["classes"] = { 5 },
+					["classes"] = { PRIEST },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
@@ -905,21 +896,21 @@ _.Zones =
 					},
 				}),
 				q(42774, {	-- Hope Prevails
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
 				}),
 				q(41966, {	-- House Call
-					["classes"] = { 5 },
+					["classes"] = { PRIEST },
 					["provider"] = { "n", 105602 },	-- Vindicator Boros
 				}),
 				q(41009, {	-- Hunter to Hunter
 					["sourceQuests"] = { 40419 },	-- Rescue Mission
-					["classes"] = { 3 },
+					["classes"] = { HUNTER },
 					["provider"] = { "n", 106879 },	-- Grif Wildheart
 				}),
 				q(40952, {	-- Hunter to Hunter
 					["sourceQuests"] = { 40419 },	-- Rescue Mission
-					["classes"] = { 3 },
+					["classes"] = { HUNTER },
 					["provider"] = { "n", 102570 },	-- Grif Wildheart
 				}),
 				q(44821, {	-- In Dire Need
@@ -939,11 +930,11 @@ _.Zones =
 					i(143785),	-- Tome of the Tranquil Mind
 				}),
 				q(40995, {	-- Injection of Power
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 				}),
 				q(45992, {	-- Investigate the Broken Shore
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 				}),
 				q(44547, {	-- Isle Hopping
@@ -951,7 +942,7 @@ _.Zones =
 				}),
 				q(45906, {	-- Jarod's Gift
 					["sourceQuests"] = { 46035 },	-- End of the Risen Threat
-					["classes"] = { 2, 5, 7, 11 },
+					["classes"] = { PALADIN, PRIEST, SHAMAN, DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["u"] = 40,
@@ -975,7 +966,7 @@ _.Zones =
 				}),
 				q(46074, {	-- Leather to Legendary
 					["sourceQuests"] = { 46083 },	-- A Few Things First
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 92183 },	-- Alard Schmied
 				}),
 				q(42168, {	-- Looking into the Darkness
@@ -983,7 +974,7 @@ _.Zones =
 						40611,	-- The Fate of Deadwind
 						42128,	-- Ritual Reagents
 					},
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["coord"] = { 54.0, 47.0, 627 },
 					["provider"] = { "n", 106610 },	-- Calydus
 				}),
@@ -1001,7 +992,7 @@ _.Zones =
 						40814,	-- The Power to Survive (if chosen first)
 						44383,	-- In Pursuit of Power (if chosen second)
 					},
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 74.5, 48.7, 627 },
 					["providers"] = {
 						{ "n", 99247 },	-- Kayne Sunfury
@@ -1009,14 +1000,14 @@ _.Zones =
 					},
 				}),
 				q(41120, {	-- Making Arrangements
-					["classes"] = { 12 },
+					["classes"] = { DEMONHUNTER },
 					["providers"] = {
 						{ "n", 99254 },	-- Altruis the Sufferer
 						{ "n", 108571 },	-- Altruis the Sufferer
 					},
 				}),
 				q(47039, {	-- Marksmanship: The Twisted Twin
-					["classes"] = { 3 },
+					["classes"] = { HUNTER },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90463 },	-- Archmage Karlain
@@ -1036,22 +1027,22 @@ _.Zones =
 						45629,	-- This Time, Leave a Trail
 					},
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 				}),
 				q(45185, {	-- Message from the Shadows
 					["provider"] = { "n", 116175 },	-- Karam Magespear
 					["classes"] = {
-						11,	-- Druid (Balance)
-						3,	-- Hunter (Marksmanship)
-						8,	-- Mage (Frost)
-						5,	-- Priest (Shadow)
-						9,	-- Warlock (Affliction)
+						DRUID,		-- Balance
+						HUNTER,		-- Marksmanship
+						MAGE,		-- Frost
+						PRIEST,		-- Shadow
+						WARLOCK,	-- Affliction
 					},
 				}),
 				q(47005, {	-- Mistweaver: The Bradensbrook Investigation
 					["sourceQuests"] = { 47027 },	-- Legion Threat: Val'sharah
-					["classes"] = { 10 },
+					["classes"] = { MONK },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
@@ -1060,7 +1051,7 @@ _.Zones =
 				}),
 				q(42594, {	-- Move Like No Other
 					["sourceQuests"] = { 42593 },	-- The Arcane Way
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 25.7, 51.5, 627 },
 					["provider"] = { "n", 107968 },	-- Archmage Lan'dalock
 				}),
@@ -1071,25 +1062,25 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(40384, {	-- Needs of the Hunters
-					["classes"] = { 3 },
+					["classes"] = { HUNTER },
 					["provider"] = { "n", 100786 },	-- Snowfeather
 				}),
 				q(42185, {	-- Never Hunt Alone -- actually started in an instanced version of Ulduar
-					["classes"] = { 3 },
+					["classes"] = { HUNTER },
 					["provider"] = { "n", 106558 },	-- Mimiron
 				}),
 				q(46722, {	-- Nothing Up My Sleeve
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 				}),
 				q(43250, {	-- Off to Court
 					["sourceQuests"] = { 43249 },	-- The Raven's Eye
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 				}),
 				q(45644, {	-- Oh Doloria, My Sweet Doloria
 					["sourceQuests"] = { 45568 },	-- They Stole Excaliberto!
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 118009 },	-- Maximillian of Northshire
 				}),
 				q(40953, {	-- On Eagle's Wings
@@ -1098,22 +1089,22 @@ _.Zones =
 						41008,	-- Hunter to Hunter
 						41009,	-- Hunter to Hunter
 					},
-					["classes"] = { 3 },
+					["classes"] = { HUNTER },
 					["provider"] = { "n", 102478 },	-- Emmarel Shadwarden
 				}),
 				q(44215, {	-- One More Thing...
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 				}),
 				q(45193, {	-- One Step Behind
 					["provider"] = { "n", 116175 },	-- Karam Magespear
 				}),
 				q(41967, {	-- Out of the Darkness
-					["classes"] = { 5 },
+					["classes"] = { PRIEST },
 					["provider"] = { "n", 105603 },	-- Defender Barrem
 				}),
 				q(47058, {	-- Outlaw: The Folly of Levia Laurence
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
@@ -1122,16 +1113,16 @@ _.Zones =
 				}),
 				q(37666, {	-- Picking a Fight
 					["sourceQuests"] = { 43508 },	-- The Captive Spymaster
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 110793 },	-- Taoshi
 				}),
 				q(40821, {	-- Power Overwhelming
 					["sourceQuests"] = { 40731 },	-- The Heart of the Dreadscar
-					["classes"] = { 9 },
+					["classes"] = { WARLOCK },
 					["provider"] = { "n", 101097 },	-- Calydus
 				}),
 				q(41542, {	-- Preparation for the Hunt
-					["classes"] = { 3 },
+					["classes"] = { HUNTER },
 					["providers"] = {
 						{ "n", 102478 },	-- Emmarel Shadewarden
 						{ "n", 107317 },	-- Emmarel Shadewarden
@@ -1150,13 +1141,13 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(44100, {	-- Proper Introductions
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },	-- Priest
 					["lvl"] = 101,
 					["provider"] = { "n", 112695 },	-- Hooded Priest
 				}),
 				q(47022, {	-- Protection: Aid of the Illidari
 					["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90431 },	-- Archmage Ansirem Runeweaver
@@ -1166,7 +1157,7 @@ _.Zones =
 				}),
 				q(45412, {	-- Protection: Aid of the Illidari
 					["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
-					["classes"] = { 1 },
+					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90431 },	-- Archmage Ansirem Runeweaver
@@ -1175,7 +1166,7 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(43470, {	-- Pruning the Garden
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 98100 },	-- Taoshi
 				}),
 				q(45910, {	-- Raest's Gift
@@ -1185,15 +1176,15 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(40823, {	-- Rebuilding the Council
-					["classes"] = { 9 },
+					["classes"] = { WARLOCK },
 					["provider"] = { "n", 101097 },	-- Calydus
 				}),
 				q(45251, {	-- Redundancy
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 118242 },	-- Aethas Sunreaver
 				}),
 				q(41540, {	-- Rendezvous with the Courier
-					["classes"] = { 3 },
+					["classes"] = { HUNTER },
 					["providers"] = {
 						{ "n", 102478 },	-- Emmarel Shadewarden
 						{ "n", 107317 },	-- Emmarel Shadewarden
@@ -1206,12 +1197,12 @@ _.Zones =
 						40402,	-- Clandestine Operation (horde)
 						40403,	-- Clandestine Operation (horde v2)
 					},
-					["classes"] = { 3 },
+					["classes"] = { HUNTER },
 					["provider"] = { "n", 100190 },	-- Vareesa Windrunner
 				}),
 				q(47004, {	-- Restoration: The Bradensbrook Investigation
 					["sourceQuests"] = { 47027 },	-- Legion Threat: Val'sharah
-					["classes"] = { 11 },
+					["classes"] = { DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
@@ -1220,7 +1211,7 @@ _.Zones =
 				}),
 				q(47003, {	-- Restoration: The Bradensbrook Investigation
 					["sourceQuests"] = { 47027 },	-- Legion Threat: Val'sharah
-					["classes"] = { 7 },
+					["classes"] = { SHAMAN },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
@@ -1228,17 +1219,17 @@ _.Zones =
 					},
 				}),
 				q(47052, {	-- Retribution: Fate of the Tideskorn
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 				}),
 				q(46290, {	-- Return of the Archmage
 					["sourceQuests"] = { 46000 },	-- Arming Dalaran
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 118242 },	-- Aethas Sunreaver
 				}),
 				q(41806, {	-- Return to Jace
 					["sourceQuests"] = { 41804 },	-- Ask and You Shall Receive
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 28.8, 48.6, 627 },
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 				}),
@@ -1248,40 +1239,40 @@ _.Zones =
 				}),
 				q(41221, {	-- Return to Mardum
 					["sourceQuests"] = { 42872 },	-- Securing the Way
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 95.0, 65.7, 627 },
 					["provider"] = { "n", 109295 },	-- Matron Mother Malevolence
 				}),
 				q(41033, {	-- Return to Mardum
-					["classes"] = { 12 },
+					["classes"] = { DEMONHUNTER },
 					["provider"] = { "n", 109295 },	-- Matron Mother Malevolence
 				}),
 				q(42815, {	-- Return to the Broken Shore
 					["sourceQuests"] = { 42814 },	-- An Important Mission
-					["classes"] = { 1 },
+					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 96183 },	-- Danath Trollbane
 				}),
 				q(38904, {	-- Return to the Broken Shore
 					["sourceQuests"] = { 41052 },	-- A Desperate Plea
-					["classes"] = { 1 },
+					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 93773 },	-- High Overlord Saurfang
 				}),
 				q(44087, {	-- Return to the Fel Hammer
 					["sourceQuests"] = { 41069 },	-- Direct Our Wrath
 					["isBreadcrumb"] = true,
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["lvl"] = 101,
 					["provider"] = { "n", 112666 },	-- Asha Ravensong
 				}),
 				q(42663, {	-- Rise, Champions
 					["sourceQuests"] = { 42175 },	-- Growing Power
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 102700 },	-- Meryl Felstorm
 				}),
 				q(42608, {	-- Rise, Champions
-					["classes"] = { 9 },
+					["classes"] = { WARLOCK },
 					["provider"] = { "n", 101097 },	-- Calydus
 				}),
 				q(42128, {	-- Ritual Reagents
@@ -1290,19 +1281,19 @@ _.Zones =
 						43984,	-- The Tome Opens Again (if this artifact is chosen second)
 						44089,	-- A Greater Arsenal (if this artifact is picked last)
 					},
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["coord"] = { 56.3, 65.0, 628 },
 					["lvl"] = 98,
 					["provider"] = { "n", 101097 },	-- Calydus
 				}),
 				q(43254, {	-- Ritual Ruination
 					["sourceQuests"] = { 43153 },	-- An Eye for a Scepter
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["coord"] = { 73.8, 42.9, 627 },
 					["provider"] = { "n", 109838 },	-- Calydus
 				}),
 				q(44204, {	-- Seal their Fates
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 110820 },	-- Scythe
 				}),
 				q(47864, {	-- Sealing Fate: Additional Marks of Honor
@@ -1353,39 +1344,39 @@ _.Zones =
 				q(45187, {	-- Secrets in the Underbelly
 					["provider"] = { "n", 116175 },	-- Karam Magespear
 					["classes"] = {
-						11,	-- Druid (Balance)
-						3,	-- Hunter (Marksmanship)
-						8,	-- Mage (Frost)
-						5,	-- Priest (Shadow)
-						9,	-- Warlock (Affliction)
+						DRUID,		-- Balance
+						HUNTER,		-- Marksmanship
+						MAGE,		-- Frost
+						PRIEST,		-- Shadow
+						WARLOCK,	-- Affliction
 					},
 				}),
 				q(42872, {	-- Securing the Way
 					["sourceQuests"] = { 42869 },	-- Eternal Vigil
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 95.3, 65.1, 627 },
 					["provider"] = { "n", 109196 },	-- Jace Darkweaver
 				}),
 				q(42000, {	-- Seeker of Truth
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["providers"] = {
 						{ "n", 90259 },	-- Lord Maxwell Tyrosus
 						{ "n", 90369 },	-- Lord Maxwell Tyrosus
 					},
 				}),
 				q(42770, {	-- Seeking Guidance
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["providers"] = {
 						{ "n", 90259 },	-- Lord Maxwell Tyrosus
 						{ "n", 90369 },	-- Lord Maxwell Tyrosus
 					},
 				}),
 				q(45630, {	-- Servant to No One
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 				}),
 				q(47042, {	-- Shadow: The Twisted Twin
-					["classes"] = { 5 },
+					["classes"] = { PRIEST },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90463 },	-- Archmage Karlain
@@ -1393,25 +1384,25 @@ _.Zones =
 					},
 				}),
 				q(42017, {	-- Shrine of the Truthguard
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 105813 },	-- Orik Trueheart
 				}),
 			--	q(47148),	-- Something Different -- granted when entering a brawl. weekly?
 				q(41574, {	-- Stolen Thunder
 					["sourceQuests"] = { 41541 },	-- A Beastly Expedition
-					["classes"] = { 3 },
+					["classes"] = { HUNTER },
 					["provider"] = { "n", 104381 },	-- Grif Wildheart
 				}),
 			--	q(44411),	-- Strange Humming Crystal -- granted by i(141349)
 				q(47048, {	-- Subtlety: The Thieving Apprentice
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["providers"] = {
 						{ "n", 115467 },	-- Archmage Kalec
 						{ "n", 105081 },	-- Archmage Kalec
 					},
 				}),
 				q(47047, {	-- Survival: The Thieving Apprentice
-					["classes"] = { 3 },
+					["classes"] = { HUNTER },
 					["providers"] = {
 						{ "n", 115467 },	-- Archmage Kalec
 						{ "n", 105081 },	-- Archmage Kalec
@@ -1419,15 +1410,15 @@ _.Zones =
 				}),
 				q(42703, {	-- Technical Wizardry
 					["sourceQuests"] = { 42663 },	-- Rise, Champions
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 102700 },	-- Meryl Felstorm
 				}),
 				q(45916, {	-- The Acolyte Imperiled
-					["classes"] = { 1, 4, 6, 7, 11 },
+					["classes"] = { WARRIOR, ROGUE, DEATHKNIGHT, SHAMAN, DRUID },
 					["provider"] = { "n", 116714 },	-- Ritssyn Flamescowl
 				}),
 				q(42593, {	-- The Arcane Way
-					["classes"] = { 12 },
+					["classes"] = { DEMONHUNTER },
 					["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
 				}),
 				q(44172, {	-- The Arena Calls
@@ -1435,23 +1426,23 @@ _.Zones =
 					["provider"] = { "n", 111246 },	-- Archmage Timear
 				}),
 				q(43373, {	-- The Best and Brightest
-					["classes"] = { 5 },
+					["classes"] = { PRIEST },
 					["provider"] = { "n", 110557 },	-- Prophet Velen
 				}),
 				q(42377, {	-- The Brother's Trail
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 106337 },	-- Travard
 				}),
 				q(40714, {	-- The Call To War
 					["description"] = "Automatically given to you when you arrive in Dalaran.",
-					["classes"] = { 6 },
+					["classes"] = { DEATHKNIGHT },
 				}),
 				q(41114, {	-- The Champion's Return -- no qg info
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 				}),
 				q(42416, {	-- The Council is in Session
 					["sourceQuests"] = { 42222 },	-- Empyrean Society Report
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 107351 },	-- Archmage Khadgar
 				}),
@@ -1461,12 +1452,12 @@ _.Zones =
 					}),
 				}),
 				q(42476, {	-- The Deadwind Site
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 102700 },	-- Meryl Felstorm
 				}),
 				q(41036, {	-- The Dreadlord's Prize
 					["sourceQuests"] = { 41035 },	-- Felstorm's Plea
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 102700 },	-- Meryl Felstorm
 					["g"] = {
 						sp(204287),	-- Teleport: Hall of the Guardian
@@ -1474,7 +1465,7 @@ _.Zones =
 				}),
 				q(39427, {	-- The Eagle Spirit's Blessing
 					["sourceQuests"] = { 41542 },	-- Preparation for the Hunt
-					["classes"] = { 3 },
+					["classes"] = { HUNTER },
 					["provider"] = { "n", 104382 },	-- Apata Highmountain
 				}),
 			--	q(42005),	-- The End of the Saga -- starts in Howling Fjord
@@ -1486,13 +1477,13 @@ _.Zones =
 					},
 				}),
 				q(45904, {	-- The God-Queen's Gift
-					["classes"] = { 2, 4, 7, 8, 9 },
+					["classes"] = { PALADIN, ROGUE, SHAMAN, MAGE, WARLOCK },
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 					["u"] = 40,
 				}),
 				q(41112, {	-- The Great Akazamzarak
 					["sourceQuests"] = { 41125 },	-- Unlocked Potential
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 102700 },	-- Meryl Felstorm
 				}),
 				q(48506, {	-- The Hand of Fate (A)
@@ -1510,21 +1501,21 @@ _.Zones =
 						41156,	-- The Power Possessed
 						42125,	-- Dark Whispers
 					},
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["coord"] = { 56.4, 65.0, 628 },
 					["lvl"] = 98,
 					["provider"] = { "n", 101097 },	-- Calydus
 				}),
 				q(41119, {	-- The Hunt
-					["classes"] = { 12 },
+					["classes"] = { DEMONHUNTER },
 					["provider"] = { "n", 94902 },	-- Kayn Sunfury
 				}),
 				q(41415, {	-- The Hunter's Call
-					["classes"] = { 3 },
+					["classes"] = { HUNTER },
 					["provider"] = { "n", 102478 },	-- Emmarel Shadewarden
 				}),
 				q(45902, {	-- The Imp Mother's Gift
-					["classes"] = { 1, 4, 6, 7, 8, 11, },
+					["classes"] = { WARRIOR, ROGUE, DEATHKNIGHT, SHAMAN, MAGE, DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["u"] = 40,
@@ -1533,7 +1524,7 @@ _.Zones =
 					["provider"] = { "n", 111049 },	-- Master Mathias Shaw
 					["coord"] = { 35.6, 60.0, 84 },
 					["sourceQuests"] = { 37494 },	-- Under Cover of Darkness
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },	-- Rogue
 					["maps"] = { 84 },	 -- Stormwind City
 					["lvl"] = 98,
 					["g"] = {
@@ -1542,12 +1533,12 @@ _.Zones =
 				}),
 				q(40938, {	-- The Light and the Void
 					["sourceQuests"] = { 40710 },	-- Blade in Twilight
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },	-- Priest
 					["coord"] = { 46.6, 20.9, 627 },
 					["provider"] = { "n", 101313 },	-- Prophet Velen
 				}),
 				q(41625, {	-- The Light's Wrath
-					["classes"] = { 5 },
+					["classes"] = { PRIEST },
 					["providers"] = {
 						{ "n", 101314 },	-- Alonsus Faol
 						{ "n", 110564 },	-- Alonsus Faol
@@ -1557,7 +1548,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(42479, {	-- The Mage Hunter
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["providers"] = {
 						{ "n", 102700 },	-- Meryl Felstorm
 						{ "n", 109222 },	-- Meryl Felstorm
@@ -1568,7 +1559,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42231, {	-- The Mysterious Paladin
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["providers"] = {
 						{ "n", 90259 },	-- Lord Maxwell Tyrosus
 						{ "n", 90369 },	-- Lord Maxwell Tyrosus
@@ -1576,74 +1567,74 @@ _.Zones =
 				}),
 				q(40729, {	-- The New Blood
 					["sourceQuests"] = { 40716 },	-- The Sixth
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["coord"] = { 57.3, 60.8, 628 },	-- Dalaran Underbelly
 					["provider"] = { "n", 101456 },	-- Ritssyn Flamescowl
 				}),
 				q(42011, {	-- The Nexus Vault
 					["sourceQuests"] = { 42010 },	-- Arcane Unleashed
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 				}),
 				q(41631, {	-- The Nexus Vault
 					["sourceQuests"] = { 41630 },	-- Unleashing Judgment
-					["classes"] = { 5 },
+					["classes"] = { PRIEST },
 				}),
 				q(45207, {	-- The Nightborne Apprentice
 					["sourceQuests"] = { 46338 },	-- A Creative Solution
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 118242 },	-- Aethas Sunreaver
 				}),
 				q(41113, {	-- The Only Way to Travel
 					["sourceQuests"] = { 41112 },	-- The Great Akazamzarak
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 				}),
 				q(46322, {	-- The Pirate's Bay
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 				}),
 				q(45833, {	-- The Pirate's Bay
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 				}),
 				q(40816, {	-- The Power to Survive
-					["classes"] = { 12 },
+					["classes"] = { DEMONHUNTER },
 					["provider"] = { "n", 99254 },	-- Altruis the Sufferer
 				}),
 				q(40814, {	-- The Power to Survive
 					["sourceQuests"] = { 39261 },	-- Call of the Illidari
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 74.5, 48.7, 627 },
 					["provider"] = { "n", 99247 },	-- Kayn Sunfury
 				}),
 				q(43249, {	-- The Raven's Eye
 					["sourceQuests"] = { 43253 },	-- Maw of Souls: Ancient Vrykul Legends
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 				}),
 				q(38376, {	-- The Search for the Highlord
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 90369 },	-- Lord Maxwell Tyrosus
 				}),
 				q(42120, {	-- The Silver Hand
 					["sourceQuests"] = { 42377 },	-- The Brother's Trail
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 106337 },	-- Travard
 				}),
 				q(40716, {	-- The Sixth
 					["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["provider"] = { "n", 103506 },	-- Ritssyn Flamescowl
 				}),
 				q(41124, {	-- The Tirisgarde Reborn
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["provider"] = { "n", 102700 },	-- Meryl Felstorm
 				}),
 				q(40684, {	-- The Tome of Blighted Implements
 					["sourceQuests"] = { 40729 },	-- The New Blood
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["coord"] = { 56.3, 65.0, 628 },
 					["lvl"] = 98,
 					["provider"] = { "n", 101097 },	-- Calydus
@@ -1666,11 +1657,11 @@ _.Zones =
 				q(45188, {	-- The Wisdom of the Council
 					["provider"] = { "n", 116308 },	-- Karam Magespear
 					["classes"] = {
-						11,	-- Druid (Balance)
-						3,	-- Hunter (Marksmanship)
-						8,	-- Mage (Frost)
-						5,	-- Priest (Shadow)
-						9,	-- Warlock (Affliction)
+						DRUID,		-- Balance
+						HUNTER,		-- Marksmanship
+						MAGE,		-- Frost
+						PRIEST,		-- Shadow
+						WARLOCK,	-- Affliction
 					},
 					["races"] = ALLIANCE_ONLY,	-- may not be alliance-only, but wowhead says it is, so /shrug
 				}),
@@ -1680,11 +1671,11 @@ _.Zones =
 				}),
 				q(43479, {	-- The World is Not Enough
 					["sourceQuests"] = { 43470 },	-- Pruning the Garden
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 98100 },	-- Taoshi
 				}),
 				q(44310, {	-- Thrice the Power
-					["classes"] = { 8 },
+					["classes"] = { MAGE },
 					["providers"] = {
 						{ "n", 102700 },	-- Maryl Felstorm
 						{ "n", 109222 },	-- Maryl Felstorm
@@ -1718,7 +1709,7 @@ _.Zones =
 			--	q(45172),	-- To Battle! -- granted by mission board
 				q(42002, {	-- To Northrend
 					["sourceQuests"] = { 42000 },	-- Seeker of Truth
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 105689 },	-- Orik Trueheart
 				}),
 				q(46810, {	-- To the Forge It Goes...
@@ -1733,7 +1724,7 @@ _.Zones =
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 				}),
 				q(43535, {	-- Translation: Danger!
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 110571 },	-- Delas Moonfang
 				}),
 				q(39861, {	-- Tying Up Loose Ends
@@ -1747,17 +1738,17 @@ _.Zones =
 						43984,	-- The Tome Opens Again (if this artifact is chosen second)
 						44089,	-- A Greater Arsenal (if this artifact is picked last)
 					},
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["coord"] = { 56.3, 65.0, 628 },
 					["provider"] = { "n", 101097 },	-- Calydus
 				}),
 				q(37494, {	-- Under Cover of Darkness
 					["sourceQuests"] = { 37448 },	-- A Simple Plan
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 98100 },	-- Taoshi
 				}),
 				q(47057, {	-- Unholy: The Folly of Levia Laurence
-					["classes"] = { 6 },
+					["classes"] = { DEATHKNIGHT },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
@@ -1779,19 +1770,19 @@ _.Zones =
 				}),
 				q(41125, {	-- Unlocked Potential
 					["u"] = 40,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["provider"] = { "n", 102700 },	-- Meryl Felstorm
 					["sourceQuests"] = { 41114 },	-- The Champion's Return
 				}),
 				q(41863, {	-- Vengeance Will Be Ours (Altruis)
 					["sourceQuests"] = { 41807 },	-- Establishing a Connection
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 74.6, 48.6, 210 },
 					["provider"] = { "n", 99254 },	-- Altruis the Sufferer
 				}),
 				q(40249, {	-- Vengeance Will Be Ours (Kayn)
 					["sourceQuests"] = { 41807 },	-- Establishing a Connection
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 74.6, 48.6, 210 },
 					["provider"] = { "n", 99247 },	-- Kayn Sunfury
 				}),
@@ -1801,13 +1792,13 @@ _.Zones =
 						{ "n", 90431 },		-- Archmage Ansirem Runeweaver
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
 					},
-					["classes"] = { 12 },	-- Demon Hunter (Vengeance)
+					["classes"] = { DEMONHUNTER },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
 				q(38576, {	-- We Meet at Light's Hope
 					["sourceQuests"] = { 38376 },	-- The Search for the Highlord
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["providers"] = {
 						{ "n", 106209 },	-- Lord Maxwell Tyrosus
 						{ "n", 106834 },	-- Lord Maxwell Tyrosus
@@ -1815,7 +1806,7 @@ _.Zones =
 				}),
 				q(40408, {	-- Weapons of Legend
 					["sourceQuests"] = { 38710 },	-- An Urgent Gathering
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 90369 },	-- Lord Maxwell Tyrosus
 				}),
 				q(40618, {	-- Weapons of Legend
@@ -1823,11 +1814,11 @@ _.Zones =
 						40384,	-- Needs of the Hunters
 						41415,	-- The Hunter's Call
 					},
-					["classes"] = { 3 },
+					["classes"] = { HUNTER },
 					["provider"] = { "n", 102478 },	-- Emmarel Shadewarden
 				}),
 				q(45813, {	-- Where Art Thou, My Sweet
-					["classes"] = { 2 },
+					["classes"] = { PALADIN },
 					["provider"] = { "n", 118088 },	-- Maximillian of Northshire
 					["g"] = {
 						sp(234259),	-- Follower: Maximillian of Northshire
@@ -1835,17 +1826,17 @@ _.Zones =
 				}),
 				q(43469, {	-- Where In the World is Mathias?
 					["sourceQuests"] = { 43470 },	-- Pruning the Garden
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 98100 },	-- Taoshi
 				}),
 				q(45190, {	-- Where it's Thinnest
 					["provider"] = { "n", 90463 },	-- Archmage Karlain
 					["classes"] = {
-						11,	-- Druid (Balance)
-						3,	-- Hunter (Marksmanship)
-						8,	-- Mage (Frost)
-						5,	-- Priest (Shadow)
-						9,	-- Warlock (Affliction)
+						DRUID,		-- Balance
+						HUNTER,		-- Marksmanship
+						MAGE,		-- Frost
+						PRIEST,		-- Shadow
+						WARLOCK,	-- Affliction
 					},
 					["races"] = ALLIANCE_ONLY,	-- may not be alliance-only, but wowhead says it is, so /shrug
 				}),
@@ -1864,7 +1855,7 @@ _.Zones =
 						47031,	-- Legion Threat: Highmountain
 						47035,	-- Legion Threat: The Missing Mage
 					},
-					["classes"] = { 10 },
+					["classes"] = { MONK },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
@@ -1872,7 +1863,7 @@ _.Zones =
 					},
 				}),
 				q(44195, {	-- Workorders for Armaments
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 					["provider"] = { "n", 110348 },	-- Mal
 				}),
 				q(45908, {	-- Xylem's Gift
@@ -1880,7 +1871,7 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(44006, {	-- Your Fullest Potential
-					["classes"] = { 7 },
+					["classes"] = { SHAMAN },
 					["provider"] = { "n", 99531 },	-- Aggra
 				}),
 --[[			Need to be added

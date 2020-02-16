@@ -4,8 +4,8 @@
 _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
-		cl(12, {	-- Mardum, The Shattered Abyss (Demon Hunter)
-			["classes"] = { 12 },	-- Demon Hunter
+		cl(DEMONHUNTER, {	-- Mardum, The Shattered Abyss (Demon Hunter)
+			["classes"] = { DEMONHUNTER },
 			["maps"] = {
 				720,	-- Mardum, The Shattered Abyss
 				721,	-- Lower Command Center
@@ -85,7 +85,7 @@ _.ExpansionFeatures =
 							{ "n", 99247 },		-- Kayn Sunfury
 							{ "n", 108572 },	-- Kayn Sunfury
 						},
-						["classes"] = { 12 },	-- Demon Hunter
+						["classes"] = { DEMONHUNTER },
 						["coord"] = { 58.6, 56.5, 720 },
 					}),
 					q(42733, {	-- A Very Special Kind of Fuel
@@ -227,7 +227,7 @@ _.ExpansionFeatures =
 					q(42787, {	-- Deal With It Personally
 						["sourceQuests"] = { 42731 },	-- Working With the Wardens
 						["provider"] = { "n", 108782 },	-- Belath Dawnblade
-						["classes"] = { 12 },	-- Demon Hunter
+						["classes"] = { DEMONHUNTER },
 						["coord"] = { 57.5, 53.2, 720 },
 						["lvl"] = 110,
 					}),
@@ -252,7 +252,7 @@ _.ExpansionFeatures =
 					q(41069, {	-- Direct Our Wrath (Kayn)
 						["sourceQuests"] = { 41067 },	-- Time is of the Essence
 						["provider"] = { "n", 95240 },	-- Kayn Sunfury
-						["classes"] = { 12 },	-- Demon Hunter
+						["classes"] = { DEMONHUNTER },
 						["coord"] = { 59.5, 58.0, 720 },
 					}),
 					q(46780, {	-- Further Advancement
@@ -397,7 +397,7 @@ _.ExpansionFeatures =
 					q(41062, {	-- Spoils of Victory
 						["sourceQuests"] = { 41037 },	-- Unbridled Power
 						["provider"] = { "n", 95240 },	-- Kayn Sunfury
-						["classes"] = { 12 },	-- Demon Hunter
+						["classes"] = { DEMONHUNTER },
 						["coord"] = { 58.6, 58.9, 720 },
 					}),
 					q(45301, {	-- Taking Charge
@@ -427,7 +427,7 @@ _.ExpansionFeatures =
 					q(41066, {	-- The Hunter's Gaze
 						["sourceQuests"] = { 41062 },	-- Spoils of Victory
 						["provider"] = { "n", 95238 },	-- Allari the Souleater
-						["classes"] = { 12 },	-- Demon Hunter
+						["classes"] = { DEMONHUNTER },
 						["coord"] = { 59.4, 50.4, 721 },
 					}),
 					q(42920, {	-- The Invasion of Niskara (Altruis)
@@ -465,13 +465,13 @@ _.ExpansionFeatures =
 					q(41067, {	-- Time is of the Essence
 						["sourceQuests"] = { 41066 },	-- The Hunter's Gaze
 						["provider"] = { "n", 95238 },	-- Allari the Souleater
-						["classes"] = { 12 },	-- Demon Hunter
+						["classes"] = { DEMONHUNTER },
 						["coord"] = { 58.8, 51.2, 721 },
 					}),
 					q(46334, {	-- To Fel and Back
 						["sourceQuests"] = { 46333 },	-- Livin' on the Ledge
 						["provider"] = { "n", 108784 },	-- Maton Mother Malevolence
-						["classes"] = { 12 },	-- Demon Hunter
+						["classes"] = { DEMONHUNTER },
 						["coord"] = { 60.1, 50.8, 720 },
 						["maps"] = { 861 },	-- Mardum, the Shattered Abyss (scenario)
 						["lvl"] = 110,
@@ -494,7 +494,7 @@ _.ExpansionFeatures =
 					q(41037, {	-- Unbridled Power
 						["sourceQuests"] = { 41221 },	-- Return to Mardum
 						["provider"] = { "n", 95240 },	-- Kayn Sunfury
-						["classes"] = { 12 },	-- Demon Hunter
+						["classes"] = { DEMONHUNTER },
 						["coord"] = { 57.7, 68.4, 720 },
 					}),
 					q(42131, {	-- Unexpected Visitors
