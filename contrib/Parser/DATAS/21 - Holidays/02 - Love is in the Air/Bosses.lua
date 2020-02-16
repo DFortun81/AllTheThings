@@ -9,19 +9,19 @@ _.Holidays = bubbleDown({["u"] = 18},
 				i(147907, {	-- Heart-Shaped Carton
 					["lvl"] = 16,
 					["g"] = {
-						un(18, i(49715)),		-- Forever-Lovely Rose
-						un(18, i(50446)),		-- Toxic Wasteling
-						un(18, i(50741)),		-- Vile Fumigator's Mask
-						un(18, i(50471)),		-- The Heartbreaker
+						i(49715),		-- Forever-Lovely Rose
+						i(50446),		-- Toxic Wasteling
+						i(50741),		-- Vile Fumigator's Mask
+						i(50471),		-- The Heartbreaker
 					},
 				}),
 				i(54537, {	-- Heart-Shaped Box
 					["lvl"] = 110,
 					["g"] = {
-						un(18, i(49715)),		-- Forever-Lovely Rose
-						un(18, i(50446)),		-- Toxic Wasteling
-						un(18, i(50741)),		-- Vile Fumigator's Mask
-						un(18, i(50471)),		-- The Heartbreaker
+						i(49715),		-- Forever-Lovely Rose
+						i(50446),		-- Toxic Wasteling
+						i(50741),		-- Vile Fumigator's Mask
+						i(50471),		-- The Heartbreaker
 						i(50250, {				-- Big Love Rocket
 							ach(4627),	-- Big Love Rocket
 						}),
@@ -59,22 +59,22 @@ _.Holidays = bubbleDown({["u"] = 18},
 				i(143905),	-- Winking Eye of Love [Level 110]
 				
 				-- Other Items
-				un(18, i(21813)),	-- Bag of Heart Candies
-				un(18, i(49909)),	-- Box of Chocolates
-				un(18, i(34258)),	-- Love Rocket
+				i(21813),	-- Bag of Heart Candies
+				i(49909),	-- Box of Chocolates
+				i(34258),	-- Love Rocket
 			}),
 			tier(3, {	-- Northrend
 				inst(277, {	-- Halls of Stone
 					d(2, {	-- Heroic
 						n(27975, {	-- Maiden of Grief
-							un(18, i(44731)),	-- Bouquet of Ebon Roses
+							i(44731),	-- Bouquet of Ebon Roses
 						}),
 					}),
 				}),
 				inst(285, {	-- Utgarde Keep
 					d(1, {	-- Normal
 						n(23953, {	-- Prince Keleseth
-							un(18, i(22206)),	-- Bouquet of Red Roses
+							i(22206),	-- Bouquet of Red Roses
 						}),
 					}),
 				}),
@@ -83,69 +83,69 @@ _.Holidays = bubbleDown({["u"] = 18},
 				inst(66, {	-- Blackrock Caverns
 					d(1, {	-- Normal
 						n(39679, {	-- Corla, Herald of Twilight
-							un(18, i(22206)),	-- Bouquet of Red Roses
+							i(22206),	-- Bouquet of Red Roses
 						}),
 					}),
 					d(2, {	-- Heroic
 						n(39679, {	-- Corla, Herald of Twilight
-							un(18, i(22206)),	-- Bouquet of Red Roses
+							i(22206),	-- Bouquet of Red Roses
 						}),
 					}),
 				}),
 				inst(184, {	-- End Time
 					d(2, {	-- Heroic
 						n(54445, {	-- Echo of Jaina
-							un(18, i(22206)),	-- Bouquet of Red Roses
+							i(22206),	-- Bouquet of Red Roses
 						}),
 						n(54123, {	-- Echo of Sylvanas
-							un(18, i(44731)),	-- Bouquet of Ebon Roses
+							i(44731),	-- Bouquet of Ebon Roses
 						}),
 					}),
 				}),
 				inst(71, {	-- Grim Batol
 					d(1, {	-- Normal
 						n(40319, {	-- Drahga Shadowburner
-							un(18, i(22206)),	-- Bouquet of Red Roses
+							i(22206),	-- Bouquet of Red Roses
 						}),
 					}),
 					d(2, {	-- Heroic
 						n(40319, {	-- Drahga Shadowburner
-							un(18, i(22206)),	-- Bouquet of Red Roses
+							i(22206),	-- Bouquet of Red Roses
 						}),
 					}),
 				}),
 				inst(186, {	-- Hour of Twilight
 					d(2, {	-- Heroic
 						n(54968, {	-- Asira Dawnslayer
-							un(18, i(22206)),	-- Bouquet of Red Roses
+							i(22206),	-- Bouquet of Red Roses
 						}),
 					}),
 				}),
 				inst(64, {	-- Shadowfang Keep
 					d(2, {	-- Heroic
 						n(46964, {	-- Lord Godfrey
-							un(18, i(44731)),	-- Bouquet of Ebon Roses
-							un(18, i(22206)),	-- Bouquet of Red Roses
+							i(44731),	-- Bouquet of Ebon Roses
+							i(22206),	-- Bouquet of Red Roses
 						}),
 					}),
 				}),
 				inst(63, {	-- The Deadmines
 					d(2, {	-- Heroic
 						n(47626, {	-- Admiral Ripsnarl
-							un(18, i(44731)),	-- Bouquet of Ebon Roses
-							un(18, i(22206)),	-- Bouquet of Red Roses
+							i(44731),	-- Bouquet of Ebon Roses
+							i(22206),	-- Bouquet of Red Roses
 						}),
 					}),
 				}),
 				inst(67, {	-- The Stonecore
 					d(1, {	-- Normal
 						n(42333, {	-- High Priestess Azil
-							un(18, i(22206)),	-- Bouquet of Red Roses
+							i(22206),	-- Bouquet of Red Roses
 						}),
 					}),
 					d(2, {	-- Heroic
 						n(42333, {	-- High Priestess Azil
-							un(18, i(22206)),	-- Bouquet of Red Roses
+							i(22206),	-- Bouquet of Red Roses
 						}),
 					}),
 				}),
@@ -154,12 +154,12 @@ _.Holidays = bubbleDown({["u"] = 18},
 				inst(537, {	-- Shadowmoon Burial Grounds
 					d(1, {	-- Normal
 						cr(75509, e(1139, {	-- Sadana Bloodfury
-							un(18, i(44731)),	-- Bouquet of Ebon Roses
+							i(44731),	-- Bouquet of Ebon Roses
 						})),
 					}),
 					--[[d(23, {	-- Mythic
 						cr(75509, e(1139, {	-- Sadana Bloodfury
-							un(18, i(44731)),	-- Bouquet of Ebon Roses
+							i(44731),	-- Bouquet of Ebon Roses
 						})),
 					}),]]--
 				}),
