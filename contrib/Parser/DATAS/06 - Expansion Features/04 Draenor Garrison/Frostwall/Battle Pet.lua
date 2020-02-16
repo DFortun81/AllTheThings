@@ -25,6 +25,7 @@ _.ExpansionFeatures =
 							{ "n", 91363 },	-- Kura Thunderhoof (Sprouts, Prince Charming and Runts)
 							{ "n", 91364 },	-- Kura Thunderhoof (Nicodemus, Brisby and Jenner)
 						},
+						["isDaily"] = true,
 						["g"] = {
 							i(122535, {	-- Traveler's Pet Supplies
 								i(122532),	-- Bone Serpent
