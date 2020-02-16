@@ -76,23 +76,46 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 47137 },	-- Champions of Legionfall (must be in log)
 						["lvl"] = 110,
 					}),
-					q(40247, {	-- Asking a Favor
+					q(41803, {	-- Asking a Favor (Altruis)
+						["maps"] = { 627 },
+						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = {
 							40814,	-- The Power to Survive (if chosen first)
 							44383,	-- In Pursuit of Power (if chosen second)
 						},
 						["providers"] = {
-							{ "n", 99247 },		-- Kayn Sunfury
+							{ "n", 99254 },	-- Altruis the Sufferer
+							{ "n", 108571 },	-- Altruis the Sufferer
+						},
+					}),
+					q(40247, {	-- Asking a Favor (Kayn)
+						["maps"] = { 627 },
+						["classes"] = { DEMONHUNTER },
+						["coord"] = { 74.5, 48.7, 627 },
+						["sourceQuests"] = {
+							40814,	-- The Power to Survive (if chosen first)
+							44383,	-- In Pursuit of Power (if chosen second)
+						},
+						["providers"] = {
+							{ "n", 99247 },	-- Kayne Sunfury
 							{ "n", 108572 },	-- Kayn Sunfury
 						},
-						["classes"] = { DEMONHUNTER },
-						["coord"] = { 58.6, 56.5, 720 },
 					}),
 					q(42733, {	-- A Very Special Kind of Fuel
 						["sourceQuests"] = { 44694 },	-- One Battle at a Time
 						["provider"] = { "n", 98648 },	-- Allari the Souleater
 						["coord"] = { 55.6, 50.1, 721 },
 						["lvl"] = 110,
+					}),
+					q(41804, {	-- Ask and You Shall Receive
+						["maps"] = { 627 },
+						["classes"] = { DEMONHUNTER },
+						["coord"] = { 28.5, 48.3, 627 },
+						["provider"] = { "n", 90417 },	-- Archmage Khadgar
+						["sourceQuests"] = {
+							41803,	-- Asking a Favor (Altruis)
+							40247,	-- Asking a Favor (Kayn)
+						},
 					}),
 					q(42801, {	-- Back in Black
 						["sourceQuests"] = { 42593 },	-- The Arcane Way
@@ -109,6 +132,30 @@ _.ExpansionFeatures =
 						["coord"] = { 59.1, 58.7, 720 },
 						["lvl"] = 101,
 					}),
+					q(41121, {	-- By Any Means
+						["maps"] = { 627 },
+						["coord"] = { 65.6, 67.2, 627 },
+						["classes"] = { DEMONHUNTER },
+						["provider"] = { "n", 103156 },	-- Altruis the Sufferer
+						["sourceQuest"] = 41120,	-- Making Arrangements
+					}),
+					q(39051, {	-- By Any Means
+						["maps"] = { 627 },
+						["coord"] = { 65.3, 66.9, 627 },
+						["classes"] = { DEMONHUNTER },
+						["provider"] = { "n", 94902 },	-- Kayn Sunfury
+						["sourceQuest"] = 40819,	-- Making Arrangements
+					}),
+					q(39047, {	-- Call of the Illidari (Altruis)
+						["maps"] = { 627 },
+						["classes"] = { DEMONHUNTER },
+						["provider"] = { "n", 99343 },	-- Kor'vas Bloodthorn
+					}),
+					q(39261, {	-- Call of the Illidari (Kayn)
+						["maps"] = { 627 },
+						["classes"] = { DEMONHUNTER },
+						["provider"] = { "n", 99343 },	-- Kor'vas Bloodthorn
+					}),
 					q(43184, {	-- Champion: Allari the Souleater
 						["sourceQuests"] = { 42132 },	-- Last, But Not Least (must be in log)
 						["provider"] = { "n", 98648 },	-- Allari the Souleater
@@ -120,6 +167,7 @@ _.ExpansionFeatures =
 					q(42690, {	-- Champion: Altruis the Sufferer
 						["sourceQuests"] = { 42670 },	-- Rise, Champions (Altruis) — must be on this quest
 						["provider"] = { "n", 108571 },	-- Altruis the Sufferer
+						["coord"] = { 58.6, 57.7, 720 },
 						["lvl"] = 101,
 						["g"] = {
 							follower(498),	-- Champion: Altruis the Sufferer
@@ -131,6 +179,7 @@ _.ExpansionFeatures =
 							42670,	-- Rise, Champions (Altruis) — must be on this quest
 						}, 
 						["provider"] = { "n", 108326 },  -- Asha Ravensong
+						["coord"] = { 56.2, 38.9, 720 },
 						["lvl"] = 101,
 						["g"] = {
 							follower(722),	-- Champion: Asha Ravensong
@@ -154,9 +203,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42695, {	-- Champion: Kayn Sunfury
-						["sourceQuests"] = {
-							42671,	-- Rise, Champions (Kayn) — must be on this quest
-						}, 
+						["sourceQuest"] = 42671,	-- Rise, Champions (Kayn) — must be on this quest
 						["provider"] = { "n", 108572 },	-- Kayn Sunfury
 						["coord"] = { 59.1, 58.7, 720 },
 						["lvl"] = 101,
@@ -249,11 +296,31 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
 						["coord"] = { 59.1, 58.8, 720 },
 					}),
+					q(41099, {	-- Direct Our Wrath (Altruis)
+						["sourceQuests"] = { 41067 },	-- Time is of the Essence
+						["provider"] = { "n", 95237 },	-- Altruis the Sufferer
+						["classes"] = { DEMONHUNTER },
+						["coord"] = { 59.5, 58.0, 720 },
+					}),
 					q(41069, {	-- Direct Our Wrath (Kayn)
 						["sourceQuests"] = { 41067 },	-- Time is of the Essence
 						["provider"] = { "n", 95240 },	-- Kayn Sunfury
 						["classes"] = { DEMONHUNTER },
 						["coord"] = { 59.5, 58.0, 720 },
+					}),
+					q(41807, {	-- Establishing a Connection
+						["maps"] = { 627 },
+						["classes"] = { DEMONHUNTER },
+						["coord"] = { 74.4, 51.2, 627 },
+						["provider"] = { "n", 99262 },	-- Jace Darkweaver
+						["sourceQuests"] = { 41806 },	-- Return to Jace
+					}),
+					q(42869, {	-- Eternal Vigil
+						["maps"] = { 627 },	-- Dalaran
+						["classes"] = { DEMONHUNTER },
+						["coord"] = { 74.3, 46.2, 627 },
+						["sourceQuests"] = { 39247, 41119 },	-- The Hunt
+						["provider"] = { "n", 102799 },	-- Kor'vas Bloodthorn
 					}),
 					q(46780, {	-- Further Advancement
 						["sourceQuests"] = { 45391 },	-- Champion: Lady S'theno
@@ -292,6 +359,18 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 107724 },	-- Kayn Sunfury
 						["coord"] = { 57.7, 51.7, 721 },
 						["lvl"] = 103,
+					}),
+					q(44379, {	-- In Pursuit of Power (Altruis)
+						["lvl"] = 120,
+						["coord"] = { 58.6, 57.8, 720 },
+						["provider"] = { "n", 95237 },	-- Altruis the Sufferer
+						["sourceQuest"] = 41099,	-- Direct Our Wrath
+					}),
+					q(44383, {	-- In Pursuit of Power (Kayn)
+						["lvl"] = 120,
+						["coord"] = { 58.6, 57.8, 720 },
+						["provider"] = { "n", 95240 },	-- Kayn
+						["sourceQuest"] = 41069,	-- Direct Our Wrath
 					}),
 					q(39741, {	-- Into Our Ranks (Altruis)
 						["sourceQuests"] = { 42634 },	-- Confrontation at the Black Temple (Altruis)
@@ -332,8 +411,33 @@ _.ExpansionFeatures =
 					q(42681, {	-- Loramus, Is That You?
 						["sourceQuests"] = { 42679 },	-- Broken Warriors
 						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
-						["coord"] = { 59.1, 58.7, 720 },
+						["coord"] = { 59.3, 57.6, 720 },
 						["lvl"] = 101,
+					}),
+					q(40819, {	-- Making Arrangements (Kayn)
+						["maps"] = { 627 },
+						["classes"] = { DEMONHUNTER },
+						["coord"] = { 74.5, 48.7, 627 },
+						["sourceQuests"] = {
+							40814,	-- The Power to Survive (if chosen first)
+							44383,	-- In Pursuit of Power (if chosen second)
+						},
+						["providers"] = {
+							{ "n", 99247 },	-- Kayn Sunfury
+							{ "n", 108572 },	-- Kayn Sunfury
+						},
+					}),
+					q(41120, {	-- Making Arrangements (Altruis)
+						["maps"] = { 627 },	-- Dalaran
+						["coord"] = { 74.9, 48.9, 627 },
+						["classes"] = { DEMONHUNTER },
+						["sourceQuests"] = {
+							40816,	-- The Power to Survive (if chosen first)
+						},
+						["providers"] = {
+							{ "n", 99254 },	-- Altruis the Sufferer
+							{ "n", 108571 },	-- Altruis the Sufferer
+						},
 					}),
 					q(42735, {	-- Malace in Vrykul Land
 						["sourceQuests"] = { 42787 },	-- Deal With it Personally
@@ -372,11 +476,58 @@ _.ExpansionFeatures =
 						["coord"] = { 62.3, 58.8, 721 },
 						["lvl"] = 110,
 					}),
-					q(42671, {	-- Rise, Champions (Kayn)
-						["sourceQuests"] = { 44087 },	-- Return to the Fel Hammer
-						["provider"] = { "n", 103025 },	-- Battlelord Gaardoun
-						["coord"] = { 56.4, 55.1, 720 },
+					q(41806, {	-- Return to Jace
+						["maps"] = { 627 },
+						["classes"] = { DEMONHUNTER },
+						["coord"] = { 28.8, 48.6, 627 },
+						["provider"] = { "n", 90417 },	-- Archmage Khadgar
+						["sourceQuests"] = { 41804 },	-- Ask and You Shall Receive
+					}),
+					q(41033, {	-- Return to Mardum (Altruis)
+						["maps"] = { 627 },
+						["coord"] = { 94.9, 66.5, 627 },
+						["classes"] = { DEMONHUNTER },
+						["provider"] = { "n", 109295 },	-- Matron Mother Malevolence
+						["sourceQuest"] = 42872,	-- Securing the Way
+					}),
+					q(41221, {	-- Return to Mardum (Kayn)
+						["maps"] = { 627 },
+						["coord"] = { 95.0, 65.7, 627 },
+						["classes"] = { DEMONHUNTER },
+						["provider"] = { "n", 109295 },	-- Matron Mother Malevolence
+						["sourceQuests"] = { 42872 },	-- Securing the Way
+					}),
+					q(42666, {	-- Return to the Fel Hammer (Altruis)
+						["sourceQuests"] = { 41069 },	-- Direct Our Wrath
+						["isBreadcrumb"] = true,
+						["classes"] = { DEMONHUNTER },
 						["lvl"] = 101,
+						["provider"] = { "n", 112666 },	-- Asha Ravensong
+					}),
+					q(44087, {	-- Return to the Fel Hammer (Kayn)
+						["sourceQuests"] = { 41069 },	-- Direct Our Wrath
+						["isBreadcrumb"] = true,
+						["classes"] = { DEMONHUNTER },
+						["lvl"] = 101,
+						["provider"] = { "n", 112666 },	-- Asha Ravensong
+					}),
+					q(42670, {	-- Rise, Champions (Altruis)
+						["lvl"] = 101,
+						["coord"] = { 56.1, 54.1, 720 },
+						["provider"] = { "n", 103025 },	-- Battlelord Gaardoun
+						["sourceQuests"] = {
+							41099,	-- Direct Our Wrath
+							42666,	-- Return to the Fel Hammer
+						},
+					}),
+					q(42671, {	-- Rise, Champions (Kayn)
+						["lvl"] = 101,
+						["coord"] = { 56.4, 55.1, 720 },
+						["provider"] = { "n", 103025 },	-- Battlelord Gaardoun
+						["sourceQuests"] = {
+							41099,	-- Direct Our Wrath
+							44087,	-- Return to the Fel Hammer
+						},
 					}),
 					q(45330, {	-- Scouting Party
 						["sourceQuests"] = { 45301 },	-- Taking Charge
@@ -394,11 +545,24 @@ _.ExpansionFeatures =
 						["coord"] = { 59.5, 50.6, 720 },
 						["lvl"] = 103,
 					}),
-					q(41062, {	-- Spoils of Victory
+					q(42872, {	-- Securing the Way
+						["maps"] = { 627 },	-- Dalaran
+						["coord"] = { 95.3, 65.1, 627 },
+						["provider"] = { "n", 109196 },	-- Jace Darkweaver
+						["classes"] = { DEMONHUNTER },
+						["sourceQuests"] = { 42869 },	-- Eternal Vigil
+					}),
+					q(41062, {	-- Spoils of Victory (Kayn)
 						["sourceQuests"] = { 41037 },	-- Unbridled Power
 						["provider"] = { "n", 95240 },	-- Kayn Sunfury
 						["classes"] = { DEMONHUNTER },
 						["coord"] = { 58.6, 58.9, 720 },
+					}),
+					q(41070, {	-- Spoils of Victory (Altruis)
+						["coord"] = { 58.6, 58.9, 720 },
+						["classes"] = { DEMONHUNTER },
+						["provider"] = { "n", 95237 },	-- Altruis the Sufferer
+						["sourceQuests"] = { 41060 },	-- Unbridled Power
 					}),
 					q(45301, {	-- Taking Charge
 						["sourceQuests"] = { 46159 },	-- An Urgent Message
@@ -424,8 +588,20 @@ _.ExpansionFeatures =
 						["coord"] = { 57.5, 53.3, 720 },
 						["lvl"] = 110,
 					}),
+					q(41119, {	-- The Hunt (Altruis)
+						["maps"] = { 723 },	-- Violet Hold
+						["classes"] = { DEMONHUNTER },
+						["provider"] = { "n", 103156 },	-- Altruis the Sufferer
+						["sourceQuest"] = 41121,	-- By Any Means (Altruis)
+					}),
+					q(39247, {	-- The Hunt (Kayn)
+						["maps"] = { 723 },	-- Violet Hold
+						["classes"] = { DEMONHUNTER },
+						["provider"] = { "n", 94902 },	-- Kayn Sunfury
+						["sourceQuest"] = 39051,	-- By Any Means (Kayn)
+					}),
 					q(41066, {	-- The Hunter's Gaze
-						["sourceQuests"] = { 41062 },	-- Spoils of Victory
+						["sourceQuests"] = { 41062, 41070 },	-- Spoils of Victory (Kayne/Altruis)
 						["provider"] = { "n", 95238 },	-- Allari the Souleater
 						["classes"] = { DEMONHUNTER },
 						["coord"] = { 59.4, 50.4, 721 },
@@ -444,13 +620,27 @@ _.ExpansionFeatures =
 						["maps"] = { 714 },	-- Niskara
 						["lvl"] = 110,
 					}),
+					q(40816, {	-- The Power to Survive (Altruis)
+						["maps"] = { 627 },
+						["coord"] = { 74.9, 48.9, 627 },
+						["classes"] = { DEMONHUNTER },
+						["provider"] = { "n", 99254 },	-- Altruis the Sufferer
+						["sourceQuests"] = { 39047 },	-- Call of the Illidari
+					}),
+					q(40814, {	-- The Power to Survive (Kayn)
+						["maps"] = { 627 },
+						["coord"] = { 74.9, 48.9, 627 },
+						["classes"] = { DEMONHUNTER },
+						["provider"] = { "n", 99247 },	-- Kayn Sunfury
+						["sourceQuests"] = { 39261 },	-- Call of the Illidari
+					}),
 					q(44161, {	-- Things Gaardoun Needs (Altruis)
 						["sourceQuests"] = {
 							42697,	-- Champion: Asha Ravensong
 							42690,	-- Champion: Altruis the Sufferer
 						},
 						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
-						["coord"] = { 59.5, 58.7, 720 },
+						["coord"] = { 59.3, 57.6, 720 },
 						["lvl"] = 101,
 					}),
 					q(42677, {	-- Things Gaardoun Needs (Kayn)
@@ -459,7 +649,7 @@ _.ExpansionFeatures =
 							42695,	-- Champion: Kayn Sunfury
 						},
 						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
-						["coord"] = { 59.5, 58.7, 720 },
+						["coord"] = { 59.3, 57.6, 720 },
 						["lvl"] = 101,
 					}),
 					q(41067, {	-- Time is of the Essence
@@ -491,11 +681,17 @@ _.ExpansionFeatures =
 							i(139722),	-- Wristwraps of the Shattered Abyss
 						},
 					}),
-					q(41037, {	-- Unbridled Power
-						["sourceQuests"] = { 41221 },	-- Return to Mardum
-						["provider"] = { "n", 95240 },	-- Kayn Sunfury
-						["classes"] = { DEMONHUNTER },
+					q(41060, {	-- Unbridled Power (Altruis)
 						["coord"] = { 57.7, 68.4, 720 },
+						["classes"] = { DEMONHUNTER },
+						["provider"] = { "n", 95237 },	-- Altruis the Sufferer
+						["sourceQuests"] = { 41033 },	-- Return to Mardum
+					}),
+					q(41037, {	-- Unbridled Power (Kayn)
+						["coord"] = { 57.7, 68.4, 720 },
+						["classes"] = { DEMONHUNTER },
+						["provider"] = { "n", 95240 },	-- Kayn Sunfury
+						["sourceQuests"] = { 41221 },	-- Return to Mardum
 					}),
 					q(42131, {	-- Unexpected Visitors
 						["sourceQuests"] = {
@@ -510,6 +706,20 @@ _.ExpansionFeatures =
 								["achievementID"] = 10461,	-- Fighting with Style: Classic
 							}),
 						},
+					}),
+					q(41863, {	-- Vengeance Will Be Ours (Altruis)
+						["maps"] = { 627 },	-- Dalaran
+						["coord"] = { 74.9, 49.0, 210 },
+						["classes"] = { DEMONHUNTER },
+						["provider"] = { "n", 99254 },	-- Altruis the Sufferer
+						["sourceQuests"] = { 41807 },	-- Establishing a Connection
+					}),
+					q(40249, {	-- Vengeance Will Be Ours (Kayn)
+						["maps"] = { 627 },	-- Dalaran
+						["coord"] = { 74.9, 49.0, 210 },
+						["classes"] = { DEMONHUNTER },
+						["provider"] = { "n", 99247 },	-- Kayn Sunfury
+						["sourceQuests"] = { 41807 },	-- Establishing a Connection
 					}),
 					q(45385, {	-- We Must be Prepared!
 						["sourceQuests"] = { 45339 },	-- Defense of the Fel Hammer
@@ -541,7 +751,6 @@ _.ExpansionFeatures =
 					q(44057),	-- A "Noble" Event
 					q(45180),	-- An Island of War
 					q(45993),	-- An Urgent Warning
-					q(41803),	-- Asking a Favor
 					q(44223),	-- Champion Armaments
 					q(42653, {	-- Champion: Akama
 						["provider"] = { "n", 108239 },	-- Akama
@@ -552,34 +761,13 @@ _.ExpansionFeatures =
 					q(41064),	-- Cursed Forge of the Nathrezim
 					q(47078),	-- Delivering Lost Knowledge
 					q(45173),	-- Desperate Times
-					q(41099),	-- Direct Our Wrath [Altruis
 					q(43552),	-- Eye of Azshara
 					q(44226),	-- Fate Favors Us
 					q(46152),	-- Furthering Knowledge
-					q(44383, {	-- In Pursuit of Power
-						["lvl"] = 102,
-					}),
-					q(44379),	-- In Pursuit of Power
 					q(45994),	-- Investigate the Broken Shore
 					q(46333),	-- Livin' on the Ledge
-					q(40819),	-- Making Arrangements
-					q(41120),	-- Making Arrangements
-					q(41033),	-- Return to Mardum
-					q(41221),	-- Return to Mardum
-					q(42666, {	-- Return to the Fel Hammer
-						["provider"] = { "n", 112666 },	-- Asha Ravensong
-						--["sourceQuests"] = { },	-- DH was already on this point
-					}),
-					q(42670, {	-- Rise, Champions (Altruis)
-						["sourceQuests"] = { 42666 },	-- Return to the Fel Hammer [Note: I *believe* this is the right ID, I forgot to check]
-						["provider"] = { "n", 103025 },	-- Battlelord Gaardoun
-					}),
-					q(41070),	-- Spoils of Victory
-					q(39247),	-- The Hunt
-					q(41119),	-- The Hunt
 					q(41096),	-- Time is of the Essence
 					q(45172),	-- To Battle!
-					q(41060),	-- Unbridled Power
 					q(42131),	-- Unexpected Visitors
 					q(44224),	-- Unleashing our Wrath
 					q(43557, {	-- Violet Hold

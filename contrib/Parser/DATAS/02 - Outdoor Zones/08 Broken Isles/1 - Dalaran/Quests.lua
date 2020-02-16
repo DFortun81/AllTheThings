@@ -307,38 +307,6 @@ _.Zones =
 						{ "n", 115467 },	-- Archmage Kalec
 					},
 				}),
-				q(41804, {	-- Ask and You Shall Receive
-					["sourceQuests"] = {
-						41803,	-- Asking a Favor (Altruis)
-						40247,	-- Asking a Favor (Kayn)
-					},
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 28.8, 48.6, 627 },
-					["provider"] = { "n", 90417 },	-- Archmage Khadgar
-				}),
-				q(41803, {	-- Asking a Favor (Altruis)
-					["sourceQuests"] = {
-						40814,	-- The Power to Survive (if chosen first)
-						44383,	-- In Pursuit of Power (if chosen second)
-					},
-					["classes"] = { DEMONHUNTER },
-					["providers"] = {
-						{ "n", 99254 },	-- Altruis the Sufferer
-						{ "n", 108571 },	-- Altruis the Sufferer
-					},
-				}),
-				q(40247, {	-- Asking a Favor (Kayn)
-					["sourceQuests"] = {
-						40814,	-- The Power to Survive (if chosen first)
-						44383,	-- In Pursuit of Power (if chosen second)
-					},
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 74.5, 48.7, 627 },
-					["providers"] = {
-						{ "n", 99247 },	-- Kayne Sunfury
-						{ "n", 108572 },	-- Kayn Sunfury
-					},
-				}),
 				q(47051, {	-- Assassination: Fate of the Tideskorn
 					["classes"] = { ROGUE },
 					["providers"] = {
@@ -476,24 +444,6 @@ _.Zones =
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
 					},
 					["u"] = 40,
-				}),
-				q(41121, {	-- By Any Means
-					["classes"] = { DEMONHUNTER },
-					["provider"] = { "n", 103156 },	-- Altruis the Sufferer
-				}),
-				q(39051, {	-- By Any Means
-					["sourceQuests"] = { 40819 },	-- Making Arrangements
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 65.3, 66.9, 627 },
-					["provider"] = { "n", 94902 },	-- Kayn Sunfury
-				}),
-				q(39047, {	-- Call of the Illidari (Altruis)
-					["classes"] = { DEMONHUNTER },
-					["provider"] = { "n", 99343 },	-- Kor'vas Bloodthorn
-				}),
-				q(39261, {	-- Call of the Illidari (Kayn)
-					["classes"] = { DEMONHUNTER },
-					["provider"] = { "n", 99343 },	-- Kor'vas Bloodthorn
 				}),
 				q(40392, {	-- Call of the Marksman
 					["sourceQuests"] = { 41540 },	-- Rendezvous with the Courier
@@ -658,18 +608,6 @@ _.Zones =
 						{ "n", 90417 },		-- Archmage Khadgar
 						{ "n", 115464 },	-- Archmage Khadgar
 					},
-				}),
-				q(41807, {	-- Establishing a Connection
-					["sourceQuests"] = { 41806 },	-- Return to Jace
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 74.0, 50.5, 627 },
-					["provider"] = { "n", 99262 },	-- Jace Darkweaver
-				}),
-				q(42869, {	-- Eternal Vigil
-					["sourceQuests"] = { 39247 },	-- The Hunt
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 74.3, 46.2, 627 },
-					["provider"] = { "n", 102799 },	-- Kor'vas Bloodthorn
 				}),
 				q(43945, {	-- Expanding Your Horizons
 					["sourceQuests"] = { 44406 },	-- Aggra's Guidance
@@ -987,25 +925,6 @@ _.Zones =
 					["coord"] = { 28.8, 48.4, 627 },
 					["lvl"] = 110,
 				}),
-				q(40819, {	-- Making Arrangements
-					["sourceQuests"] = {
-						40814,	-- The Power to Survive (if chosen first)
-						44383,	-- In Pursuit of Power (if chosen second)
-					},
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 74.5, 48.7, 627 },
-					["providers"] = {
-						{ "n", 99247 },	-- Kayne Sunfury
-						{ "n", 108572 },	-- Kayn Sunfury
-					},
-				}),
-				q(41120, {	-- Making Arrangements
-					["classes"] = { DEMONHUNTER },
-					["providers"] = {
-						{ "n", 99254 },	-- Altruis the Sufferer
-						{ "n", 108571 },	-- Altruis the Sufferer
-					},
-				}),
 				q(47039, {	-- Marksmanship: The Twisted Twin
 					["classes"] = { HUNTER },
 					["races"] = ALLIANCE_ONLY,
@@ -1227,25 +1146,9 @@ _.Zones =
 					["classes"] = { MAGE },
 					["provider"] = { "n", 118242 },	-- Aethas Sunreaver
 				}),
-				q(41806, {	-- Return to Jace
-					["sourceQuests"] = { 41804 },	-- Ask and You Shall Receive
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 28.8, 48.6, 627 },
-					["provider"] = { "n", 90417 },	-- Archmage Khadgar
-				}),
 				q(45238, {	-- Return to Karazhan: Cubic Cynosure
 					["sourceQuests"] = { 45160 },	-- Cubic Currents
 					["provider"] = { "n", 93538 },	-- Dariness the Learned
-				}),
-				q(41221, {	-- Return to Mardum
-					["sourceQuests"] = { 42872 },	-- Securing the Way
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 95.0, 65.7, 627 },
-					["provider"] = { "n", 109295 },	-- Matron Mother Malevolence
-				}),
-				q(41033, {	-- Return to Mardum
-					["classes"] = { DEMONHUNTER },
-					["provider"] = { "n", 109295 },	-- Matron Mother Malevolence
 				}),
 				q(42815, {	-- Return to the Broken Shore
 					["sourceQuests"] = { 42814 },	-- An Important Mission
@@ -1258,13 +1161,6 @@ _.Zones =
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 93773 },	-- High Overlord Saurfang
-				}),
-				q(44087, {	-- Return to the Fel Hammer
-					["sourceQuests"] = { 41069 },	-- Direct Our Wrath
-					["isBreadcrumb"] = true,
-					["classes"] = { DEMONHUNTER },
-					["lvl"] = 101,
-					["provider"] = { "n", 112666 },	-- Asha Ravensong
 				}),
 				q(42663, {	-- Rise, Champions
 					["sourceQuests"] = { 42175 },	-- Growing Power
@@ -1350,12 +1246,6 @@ _.Zones =
 						PRIEST,		-- Shadow
 						WARLOCK,	-- Affliction
 					},
-				}),
-				q(42872, {	-- Securing the Way
-					["sourceQuests"] = { 42869 },	-- Eternal Vigil
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 95.3, 65.1, 627 },
-					["provider"] = { "n", 109196 },	-- Jace Darkweaver
 				}),
 				q(42000, {	-- Seeker of Truth
 					["classes"] = { PALADIN },
@@ -1506,10 +1396,6 @@ _.Zones =
 					["lvl"] = 98,
 					["provider"] = { "n", 101097 },	-- Calydus
 				}),
-				q(41119, {	-- The Hunt
-					["classes"] = { DEMONHUNTER },
-					["provider"] = { "n", 94902 },	-- Kayn Sunfury
-				}),
 				q(41415, {	-- The Hunter's Call
 					["classes"] = { HUNTER },
 					["provider"] = { "n", 102478 },	-- Emmarel Shadewarden
@@ -1598,16 +1484,6 @@ _.Zones =
 					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
-				}),
-				q(40816, {	-- The Power to Survive
-					["classes"] = { DEMONHUNTER },
-					["provider"] = { "n", 99254 },	-- Altruis the Sufferer
-				}),
-				q(40814, {	-- The Power to Survive
-					["sourceQuests"] = { 39261 },	-- Call of the Illidari
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 74.5, 48.7, 627 },
-					["provider"] = { "n", 99247 },	-- Kayn Sunfury
 				}),
 				q(43249, {	-- The Raven's Eye
 					["sourceQuests"] = { 43253 },	-- Maw of Souls: Ancient Vrykul Legends
@@ -1773,18 +1649,6 @@ _.Zones =
 					["classes"] = { MAGE },
 					["provider"] = { "n", 102700 },	-- Meryl Felstorm
 					["sourceQuests"] = { 41114 },	-- The Champion's Return
-				}),
-				q(41863, {	-- Vengeance Will Be Ours (Altruis)
-					["sourceQuests"] = { 41807 },	-- Establishing a Connection
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 74.6, 48.6, 210 },
-					["provider"] = { "n", 99254 },	-- Altruis the Sufferer
-				}),
-				q(40249, {	-- Vengeance Will Be Ours (Kayn)
-					["sourceQuests"] = { 41807 },	-- Establishing a Connection
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 74.6, 48.6, 210 },
-					["provider"] = { "n", 99247 },	-- Kayn Sunfury
 				}),
 				q(46314, {	-- Vengeance: Seeking Kor'vas
 					["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration

@@ -1014,6 +1014,17 @@ _.NeverImplemented =
 		q(42115),	-- Generic Order Hall - Tracking Quest: Chapter 1 completed - Triggers when you complete the quest that gets your first order hall upgrade
 		q(42116),	-- Generic Order Hall - Tracking Quest: Chapter 2 Completed - triggers after completing your first order hall campaign effort
 		
+		q(40817),	-- Demon Hunter Order Hall - Twinblades of the Deceiver chosen first
+		q(40818),	-- Demon Hunter Order Hall - Aldrachi Warblades chosen first
+		q(44381),	-- Demon Hunter Order Hall - Twinblades of the Deceiver chosen
+		q(41129),	-- Demon Hunter Altruis - wrong answer chosen at the violet citadel during "By Any Means"
+		q(43467),	-- Demon Hunter Order Hall - Boarding the Fel Hammer - triggers when entering Mardum for the first time
+		q(41045),	-- Demon Hunter Order Hall - Matron Moves - triggers after walking into the Fel Hammer
+		q(44640),	-- Demon Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Demon Hunter - Tutorial 1 - Spread the Word - Altruis
+		q(44641),	-- Demon Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Demon Hunter - Tutorial 1 - Spread the Word - Kayn
+		q(49238),	-- Demon Hunter Order Hall - triggers immediately after completing the "Things Gaardoun Needs" mission
+		q(44382),	-- Demon Hunter Order Hall - Vengeance Chosen — chose to pursue Vengeance artifact while on "In Pursuit of Power"
+		
 		q(40621),	-- Hunter Order Hall - Beast Mastery Chosen first
 		q(44045),	-- Hunter Order Hall - Beast Mastery Chosen
 		q(44367),	-- Hunter Order Hall - Beast Mastery Chosen
@@ -1082,7 +1093,6 @@ _.NeverImplemented =
 		q(44599),	-- Tracking Quest: Working with the Wardens 3
 		q(44600),	-- Tracking Quest: Working with the Wardens 4
 		q(44601),	-- Tracking Quest: Working with the Wardens 5
-		q(44382),	-- Vengeance Chosen — chose to pursue Vengeance artifact while on quest 44383, "In Pursuit of Power"
 		q(42117),	-- Tracking Quest: Chapter 3 Completed — triggered when turning in "two worthies" after recruiting Belath Dawnblade and Matron Mother Malevolence on DH
 		q(44602),	-- Tracking Quest: Preparations for Invasion 1 — completing first mission on DH class campaign quest "Preparations for Invasion"
 		q(44604),	-- Tracking Quest: Preparations for Invasion 2
