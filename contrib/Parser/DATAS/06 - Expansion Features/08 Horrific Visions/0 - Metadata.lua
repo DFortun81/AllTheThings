@@ -77,14 +77,14 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(58297, {	-- Mask of the Daredevil
-						["description"] = "Obtained from completing the Valley of Honor obective with one mask active.",
+						["description"] = "Obtained from completing the Valley of Honor objective with one mask active.",
 						["provider"] = { "i", 174082 },	-- Faceless Mask of the Daredevil
 						["g"] = {
 							i(173955),	-- Mask of the Daredevil
 						},
 					}),
 					q(58316, {	-- Mask of the Dark Imagination
-						["description"] = "Obtained from completing the Mage Quarter obective with one mask active.",
+						["description"] = "Obtained from completing the Mage Quarter objective with one mask active.",
 						["provider"] = { "i", 174081 },	-- Faceless Mask of the Dark Imagination
 						["g"] = {
 							i(173953),	-- Mask of the Dark Imagination
@@ -98,7 +98,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(58317, {	-- Mask of the Pained
-						["description"] = "Obtained from completing the Old Town obective with one mask active.",
+						["description"] = "Obtained from completing the Old Town objective with one mask active.",
 						["provider"] = { "i", 174079 },	-- Faceless Mask of the Pained
 						["g"] = {
 							i(173524),	-- Mask of the Pained
