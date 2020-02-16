@@ -881,6 +881,16 @@ _.NeverImplemented =
 		--    Legion     --
 		-------------------
 	--	Various tracking quests
+		q(40076),	-- Start Demon Hunter Tracking - triggers right after creating a demon hunter
+		q(39517),	-- Demon Hunter - picked Havoc during "Fel Secrets" on Mardum
+		q(39518),	-- Demon Hunter - picked Vengeance during "Fel Secrets" on Mardum
+		q(40422),	-- Demon Hunter - triggers when you take the portal to the black temple to start the Vault of the Wardens scenario
+		q(40921),	-- Demon Hunter - triggers when Bastillax dialog starts in the Vault of the Wardens scenario
+		q(40923),	-- Demon Hunter - triggers when Bastillax dialog starts when flying to the second floor in the Vault of the Wardens scenario
+		q(40924),	-- Demon Hunter - triggers when Bastillax dialog starts at the top of the Vault of the Wardens scenario
+		q(40374),	-- Demon Hunter - chose Kayn during "A New Direction" in the Vault of the Wardens scenario
+		q(40375),	-- Demon Hunter - chose Altruis during "A New Direction" in the Vault of the Wardens scenario
+		q(40386),	-- Demon Hunter - escaped the Vault of the Wardens entry scenario
 		q(42741),	-- Legion Expansion Started Tracking Quest
 		q(46733),	-- Legion Expansion Started Tracking Quest
 		q(40658),	-- Durotar - Tracking Quest - W1 - See Demon Attack ("Demons Among Us" quest)

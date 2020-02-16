@@ -3413,6 +3413,7 @@ app.L = {
 		[245602] = "Treasure Chest",
 		[245603] = "Small Treasure Chest",
 		[245688] = "Shattered Burial Urn",
+		[245996] = "Small Treasure Chest",
 		[246037] = "Treasure Chest",
 		[246147] = "Small Treasure Chest",
 		[246205] = "Small Treasure Chest",
