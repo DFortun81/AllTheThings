@@ -18,8 +18,9 @@ _.Zones =
 				}),
 				q(41002, {	-- A Weapon of the Horde
 					["provider"] = { "n", 101035 },	-- Lady Sylvanas Windrunner
-					["races"] = HORDE_ONLY,
-					["classes"]= { 12 },	-- Demon Hunter
+					["races"] = { BLOODELF },
+					["classes"] = { DEMONHUNTER },
+					["sourceQuest"] = 40983,	-- Demons Among Them
 				}),
 				q(25263, {	-- Arnak Fireblade
 					["provider"] = { "n", 3208 },	-- Margoz
@@ -127,7 +128,7 @@ _.Zones =
 					["lvl"] = 98,
 					["coord"] = { 45.8, 15.1, 1 },
 					["races"] = HORDE_ONLY,
-					["classes"] = exclude({12}, ALL_CLASSES),	-- All exception demon hunters
+					["classes"] = exclude({DEMONHUNTER}, ALL_CLASSES),
 					["sourceQuests"] = { 40760 },	-- Emissary
 					["g"] = {
 						i(129104),	-- Brand of the Banshee Queen
@@ -139,9 +140,9 @@ _.Zones =
 					["provider"] = { "n", 100873 },	-- Allari the Souleater
 					["lvl"] = 98,
 					["coord"] = { 45.8, 15.1, 1 },
-					["races"] = HORDE_ONLY,
-					["classes"]= { 12 },	-- Demon Hunter
-					["sourceQuests"] = { 40760 },	-- Emissary
+					["races"] = { BLOODELF },
+					["classes"]= { DEMONHUNTER },
+					["sourceQuests"] = { 40982 },	-- Second Sight
 					["g"] = {
 						i(129104),	-- Brand of the Banshee Queen
 					},
@@ -406,13 +407,13 @@ _.Zones =
 				q(26806, {	-- Reports to Orgrimmar
 					["provider"] = { "n", 3139 },	-- Gar'Thok
 					["coord"] = { 51.8, 43.4, 1 },
-					["races"]= { 9 },	-- Goblin
+					["races"] = { GOBLIN },
 					["sourceQuest"] = 26804,	-- Flight to Razor Hill
 				}),
 				q(26807, {	-- Return to Eitrigg
 					["provider"] = { "n", 41140 },	-- Burok
 					["coord"] = { 53.0, 43.6, 1 },
-					["races"]= { 9 },	-- Goblin
+					["races"] = { GOBLIN },
 					["sourceQuest"] = 26806,	-- Reports to Orgrimmar
 				}),
 				q(25171, {	-- Riding On
@@ -441,8 +442,9 @@ _.Zones =
 					["u"] = 40,
 				}),
 				q(40982, {	-- Second Sight
+					["coord"] = { 45.8, 15.1, 1 },
 					["provider"] = { "n", 100873 },	-- Allari the Souleater
-					["races"] = HORDE_ONLY,
+					["races"] = { BLOODELF },
 					["classes"] = { DEMONHUNTER },
 				}),
 				q(835,   {	-- Securing the Lines
