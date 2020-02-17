@@ -77,10 +77,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(52160, {	-- Restocking
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(52199, {	-- Rum- Paaaage!
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -586,6 +582,10 @@ _.Zones =
 					q(52142, {	-- Restocking
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+					}),
+					q(52160, {	-- Restocking
+						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
 					q(52979, {	-- Ritual Cleansing

@@ -1565,7 +1565,7 @@ _.NeverImplemented =
 		q(52997),	-- Azurethos, The Winged Typhoon Kill ID
 					-- Azurethos, The Winged Typhoon Bonus Roll
 		q(53002),	-- Doom's Howl Kill ID
-					-- Doom's Howl Bonus Roll
+		q(52273),	-- Doom's Howl Bonus Roll
 		q(53000),	-- Dunegorger Kraulok Kill ID
 		q(52265),	-- Dunegorger Kraulok Bonus Roll
 		q(52999),	-- Hailstone Construct Kill ID
