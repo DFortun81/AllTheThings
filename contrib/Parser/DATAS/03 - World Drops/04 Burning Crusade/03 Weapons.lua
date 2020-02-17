@@ -226,6 +226,7 @@ _.WorldDrops =
 			}),			
 			n(-332, {	-- Shield
 				i(25072),	-- Northman's Shield
+				i(25073),	-- Emperor Shield
 				i(25074),	-- Telaari Shield
 				i(25076),	-- Screaming Shield
 				i(25077),	-- Modani War-Shield

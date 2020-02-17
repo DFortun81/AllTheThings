@@ -331,7 +331,6 @@ _.WorldDrops =
 				i(4064),	-- Emblazoned Buckler
 				i(9935),	-- Embossed Plate Shield
 				i(10365),	-- Emerald Shield
-				i(25073),	-- Emperor Shield
 				i(15990),	-- Enduring Shield
 				i(10363),	-- Engraved Wall
 				i(14982),	-- Exalted Shield
