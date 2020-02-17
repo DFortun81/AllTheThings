@@ -2130,6 +2130,7 @@ _.NeverImplemented =
 		
 		q(58579),	-- looted the Overflowing Azerite Geode (Rank 1)
 		q(57845),	-- looted the Water Dancer's Technique (Rank 2) (Possibly only comes from valley of wisdom?)
+		q(58971),	-- killing Mail Muncher
 		--[[
 		q(57845)	-- probably triggers after clearing two corrupted areas + boss
 		q(58963)	-- got it while fighting Thrall after two corrupted areas
