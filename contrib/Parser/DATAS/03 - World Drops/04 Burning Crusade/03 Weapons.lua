@@ -148,6 +148,7 @@ _.WorldDrops =
 				i(25088),	-- Laughing Skull Orb
 				i(25089),	-- Supplicant's Rod
 				i(25090),	-- Slavehandler Rod
+				i(25091),	-- Mistyreed Torch
 				i(25092),	-- Consortium Crystal
 				i(25093),	-- Shadow Council Orb
 				i(25094),	-- Eldr'naan Scepter

@@ -185,7 +185,6 @@ _.WorldDrops =
 				i(15981),	-- Lunar Sphere
 				i(15942),	-- Master's Rod
 				i(7611),	-- Mistscape Stave
-				i(25091),	-- Mistyreed Torch
 				i(15946),	-- Mystic's Sphere
 				i(15938),	-- Mystical Orb
 				i(15970),	-- Native Branch

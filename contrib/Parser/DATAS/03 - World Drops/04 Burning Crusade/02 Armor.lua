@@ -80,6 +80,7 @@ _.WorldDrops =
 			}),
 			n(-327, {	-- Hands
 				i(31137),	-- Gauntlets of Purification
+				i(31126),	-- Gloves of Ferocity
 				i(31149),	-- Gloves of Pandemonium
 				i(31150),	-- Gloves of Piety
 				i(31180),	-- Gauntlets of the Skullsplitter

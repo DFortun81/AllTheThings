@@ -20,7 +20,6 @@ _.WorldDrops =
 			f(51,   {	-- Neck
 				un(7, i(20695)),	-- Abyssal War Beads
 				un(1, i(21793)),	-- Arcanite Sword Pendant
-				i(30726),	-- Archaic Charm of Presence
 				i(12044),	-- Arctic Pendant
 				i(12028),	-- Basalt Necklace
 				i(12019),	-- Cerulean Talisman
@@ -317,7 +316,6 @@ _.WorldDrops =
 				i(720),		-- Brawler Gloves
 				i(14551),	-- Edgemaster's Handguards
 				i(2564),	-- Elven Spirit Claws
-				i(31126),	-- Gloves of Ferocity
 				i(867),		-- Gloves of Holy Might
 				i(9395),	-- Gloves of Old
 				i(12977),	-- Magefist Gloves
