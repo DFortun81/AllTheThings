@@ -1003,7 +1003,6 @@ _.Zones =
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
 					},
-					
 				}),
 				n(145838, {	-- Marshal Frazer
 					["coord"] = { 56.4, 26.9, 1161 },
@@ -1362,8 +1361,29 @@ _.Zones =
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(163043, {	-- Scouting Report: Grimwatt's Crash
+							--["questID"] = ,	-- Mission Start Trigger
+							["races"] = ALLIANCE_ONLY,
 							["cost"] = { { "c", 1560, 50 }, },	-- 50x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
+							["g"] = {
+								mission(2090, {	-- Grimwatt's Crash
+									--["questID"] = ,	-- Triggers when completed
+									["races"] = ALLIANCE_ONLY,
+									--["sourceQuests"] = {  },	-- Mission Start Trigger
+								}),
+								q(53186, {	-- Mission Report: Ambush at Grimwatt's Crash
+									["provider"] = { "n", 138704 },		-- Mission Command Table
+									["races"] = ALLIANCE_ONLY,
+									["coord"] = { 70.5, 27.2, 1161 },	-- The Banshee's Wail Location [Original]
+									--["sourceQuests"] = {  },	-- Grimwatt's Crash Mission Complete
+								}),
+								q(53187, {	-- An Unexpected Guest
+									["provider"] = { "n", 135612 },		-- Halford Wyrmbane
+									["races"] = ALLIANCE_ONLY,
+									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
+									["sourceQuests"] = { 53186 },		-- Mission Report: Ambush at Grimwatt's Crash
+								}),
+							},
 						}),
 						i(163044, {	-- Scouting Report: Mistvine Ledge
 							["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources

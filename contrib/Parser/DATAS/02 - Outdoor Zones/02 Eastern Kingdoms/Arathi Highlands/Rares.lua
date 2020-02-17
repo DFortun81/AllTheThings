@@ -603,7 +603,7 @@ _.Zones =
 					},
 				}),
 				n(50770, { 	-- Zorn
-					["coord"] = { 14.0, 22.0, 14 },
+					["coord"] = { 22.0, 14.0, 14 },
 					["g"] = {
 						i(6597),	-- Battleforge Shoulderguards
 						i(9809),	-- Superior Tunic
