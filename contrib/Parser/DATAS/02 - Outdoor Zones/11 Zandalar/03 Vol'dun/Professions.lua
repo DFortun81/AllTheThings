@@ -14,12 +14,19 @@ _.Zones =
 						["itemID"] = 160035,	-- Enormous Anchor Pod
 						["races"] = ALLIANCE_ONLY,
 					}),
+					q(51480, {	-- Enormous Anchor Pod
+						["sourceQuests"] = { 51482 },	-- Seeking More Knowledge
+						["requireSkill"] = 182,	-- Herbalism
+						["description"] = "This drops from |cFFFFD700Anchor Weed|r and can drop at any herbalism level. You can only turn it in at Level 150 Kul Tiran Herbalism.",
+						["itemID"] = 160035,	-- Enormous Anchor Pod
+						["races"] = HORDE_ONLY,
+					}),
 					q(51399, {	-- Foul Harvest
 						["provider"] = { "n", 137572 },	-- Patu
 						["coord"] = { 62.21, 25.81, 864 },
 						["sourceQuests"] = {
-							51398,	-- An Unusual Mentor
-							51432,	-- An Unusual Mentor
+							51398,	-- An Unusual Mentor (A)
+							51432,	-- An Unusual Mentor (H)
 						},
 						["requireSkill"] = 182,	-- Herbalism	
 					}),
@@ -37,7 +44,6 @@ _.Zones =
 						["sourceQuests"] = { 53142 },	-- Foul Harvest
 						["requireSkill"] = 182,	-- Herbalism
 						["itemID"] = 160117,	-- Fully Charged Lightning Pod
-						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							recipe(252413),	-- Akunda's Bite (Rank 3)
 						},

@@ -113,6 +113,130 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 				}),
+				prof(182, {	-- Herbalism
+					q(51432, {	-- An Unusual Mentor
+						["provider"] = { "n", 122704 },	-- Jahden Fla
+						["lvl"] = 120,
+						["coord"] = { 42.2, 35.6, 1165 },
+						["races"] = HORDE_ONLY,
+						["description"] = "Requires 50 Zandalari Herbalism.",
+						["isBreadcrumb"] = true,
+						["requireSkill"] = 182,	-- Herbalism
+					}),
+					q(51243, {	-- Breaking the Food Chain
+						["provider"] = { "n", 122704 },	-- Jahden Fla
+						["coord"] = { 42.2, 35.6, 1165 },
+						["races"] = HORDE_ONLY,
+						["description"] = "Requires 150 Zandalari Herbalism.",
+						["requireSkill"] = 182,		-- Herbalism
+						["sourceQuest"] = 51230,	-- Emergency Transplants
+						["g"] = {
+							recipe(252407),	-- Riverbud [Rank 3]
+						},
+					}),
+					q(51498, {	-- Cultural Signifcance
+						["provider"] = { "n", 122704 },	-- Jahden Fla
+						["coord"] = { 42.2, 35.6, 1165 },
+						["races"] = HORDE_ONLY,
+						["description"] = "Requires 50 Zandalari Herbalism.",
+						["requireSkill"] = 182,	-- Herbalism
+						["g"] = {
+							recipe(252422),	-- Sea Stalk (Rank 2)
+						},
+					}),
+					q(51230, {	-- Emergency Transplants
+						["provider"] = { "n", 122704 },	-- Jahden Fla
+						["coord"] = { 42.2, 35.6, 1165 },
+						["races"] = HORDE_ONLY,
+						["requireSkill"] = 182,	-- Herbalism
+						["description"] = "Requires 50 Zandalari Herbalism.",
+						["g"] = {
+							recipe(252406),	-- Riverbud [Rank 2]
+						},
+					}),
+					q(51503, {	-- Gathering Mementos
+						["provider"] = { "n", 122704 },	-- Jahden Fla
+						["coord"] = { 42.2, 35.6, 1165 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 51498,	-- Cultural Significance
+						["description"] = "Requires 150 Zandalari Herbalism.",
+						["requireSkill"] = 182,	-- Herbalism
+						["g"] = {
+							recipe(252423),	-- Sea Stalk [Rank 3]
+						},
+					}),
+					q(51478, {	-- Ghost Busting
+						["provider"] = { "n", 122704 },	-- Jahden Fla
+						["coord"] = { 42.2, 35.6, 1165 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 51464,	-- Here in Spirit
+						["requireSkill"] = 182,	-- Herbalism
+						["description"] = "Requires 150 Zandalari Herbalism.",
+						["g"] = {
+							recipe(252410),	-- Star Moss (Rank 3)
+						},
+					}),
+					q(51464, {	-- Here in Spirit
+						["provider"] = { "n", 122704 },	-- Jahden Fla
+						["coord"] = { 42.2, 35.6, 1165 },
+						["races"] = HORDE_ONLY,
+						["requireSkill"] = 182,	-- Herbalism
+						["description"] = "Requires 50 Zandalari Herbalism.",
+						["g"] = {
+							recipe(252409),	-- Star Moss [Rank 2]
+						},
+					}),
+					q(51448, {	-- Learn From the Best
+						["provider"] = { "n", 122704 },	-- Jahden Fla
+						["coord"] = { 42.2, 35.6, 1165 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 51447,	-- Aromatic Pollenator
+						["requireSkill"] = 182,		-- Herbalism
+						["description"] = "Requires 50 Zandalari Herbalism.",
+						["g"] = {
+							recipe(252419),	-- Siren's Pollen [Rank 2]
+						},
+					}),
+					q(51446, {	-- Meet Sweetflower
+						["provider"] = { "n", 122704 },	-- Jahden Fla
+						["coord"] = { 42.2, 35.6, 1165 },
+						["races"] = HORDE_ONLY,
+						["requireSkill"] = 182,	-- Herbalism
+						["description"] = "Requires 50 Zandalari Herbalism.\nMake sure to bring |cFFFFD7007 Lane Snappers|r for the follow-up quest.",
+					}),
+					q(51481, {	-- More Anchor Pods
+						["provider"] = { "n", 122704 },	-- Jahden Fla
+						["coord"] = { 42.2, 35.6, 1165 },
+						["races"] = HORDE_ONLY,
+						["requireSkill"] = 182,		-- Herbalism
+						["description"] = "Requires 150 Zandalari Herbalism.",
+						["sourceQuest"] = 51480,	-- Enormous Anchor Pod
+						["g"] = {
+							recipe(252426),	-- Anchor Weed (Rank 3)
+						},
+					}),
+					q(51452, {	-- Pollen Punching
+						["provider"] = { "n", 122704 },	-- Jahden Fla
+						["coord"] = { 42.2, 35.6, 1165 },
+						["races"] = HORDE_ONLY,
+						["requireSkill"] = 182,		-- Herbalism
+						["description"] = "Requires 150 Zandalari Herbalism.",
+						["sourceQuest"] = 48758,	-- Disgustingly Damp Flower
+						["g"] = {
+							recipe(252420),	-- Siren's Pollen (Rank 3)
+						},
+					}),
+					q(51482, {	-- Seeking More Knowledge
+						["provider"] = { "n", 122704 },	-- Jahden Fla
+						["coord"] = { 42.2, 35.6, 1165 },
+						["races"] = HORDE_ONLY,
+						["requireSkill"] = 182,	-- Herbalism
+						["description"] = "Requires 100 Zandalari Herbalism.",
+						["g"] = {
+							recipe(252425),	-- Anchor Weed [Rank 2]
+						},
+					}),
+				}),
 				prof(755, {	-- Jewelcrafting
 					-- Tools of Trade Questline
 					q(49585, {	-- A Rocky Start (H)

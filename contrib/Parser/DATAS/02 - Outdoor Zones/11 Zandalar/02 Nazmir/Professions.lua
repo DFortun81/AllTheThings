@@ -8,6 +8,32 @@ _.Zones =
 		m(863, {	-- Nazmir
 			n(-38, {	-- Professions
 				prof(182, {	-- Herbalism
+					q(51312, {	-- Aromatic Pollenator
+						["requireSkill"] = 182,	-- Herbalism
+						["description"] = "This drops from |cFFFFD700Siren's Pollen|r and can drop at any herbalism level. You can only turn it in at Level 50 Kul Tiran Herbalism.",
+						["itemID"] = 159877,	-- Dead Pollen-Covered Bee
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(51447, {	-- Aromatic Pollenator
+						["requireSkill"] = 182,	-- Herbalism
+						["description"] = "This drops from |cFFFFD700Siren's Pollen|r and can drop at any herbalism level. You can only turn it in at Level 50 Kul Tiran Herbalism.",
+						["itemID"] = 159877,	-- Dead Pollen-Covered Bee
+						["races"] = HORDE_ONLY,
+					}),
+					q(48758, {	-- Disgustingly Damp Flower
+						["sourceQuests"] = { 51313 },	-- Learn From the Best
+						["requireSkill"] = 182,	-- Herbalism
+						["description"] = "This drops from |cFFFFD700Siren's Pollen|r and can drop at any herbalism level. You can only turn it in at Level 150 Kul Tiran Herbalism.",
+						["itemID"] = 159956,	-- Disgustingly Damp Flower
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(51451, {	-- Disgustingly Damp Flower
+						["sourceQuests"] = { 51448 },	-- Learn From the Best
+						["requireSkill"] = 182,	-- Herbalism
+						["description"] = "This drops from |cFFFFD700Siren's Pollen|r and can drop at any herbalism level. You can only turn it in at Level 150 Kul Tiran Herbalism.",
+						["itemID"] = 159956,	-- Disgustingly Damp Flower
+						["races"] = HORDE_ONLY,
+					}),
 					q(51360, {	-- Enormous Anchor Pod
 						["sourceQuests"] = { 51016 },	-- Seeking More Knowledge
 						["requireSkill"] = 182,	-- Herbalism
@@ -15,12 +41,18 @@ _.Zones =
 						["itemID"] = 160035,	-- Enormous Anchor Pod
 						["races"] = ALLIANCE_ONLY,
 					}),
+					q(51480, {	-- Enormous Anchor Pod
+						["sourceQuests"] = { 51482 },	-- Seeking More Knowledge
+						["requireSkill"] = 182,	-- Herbalism
+						["description"] = "This drops from |cFFFFD700Anchor Weed|r and can drop at any herbalism level. You can only turn it in at Level 150 Kul Tiran Herbalism.",
+						["itemID"] = 160035,	-- Enormous Anchor Pod
+						["races"] = HORDE_ONLY,
+					}),
 					q(51404, {	-- What Happens Next
 						["description"] = "When harvesting, make sure to stand at max range.",
 						["sourceQuests"] = { 53142 },	-- Foul Harvest
 						["requireSkill"] = 182,	-- Herbalism
 						["itemID"] = 160117,	-- Fully Charged Lightning Pod
-						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							recipe(252413),	-- Akunda's Bite (Rank 3)
 						},

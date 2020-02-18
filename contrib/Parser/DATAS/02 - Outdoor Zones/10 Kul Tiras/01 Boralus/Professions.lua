@@ -58,6 +58,7 @@ _.Zones =
 						["lvl"] = 120,
 						["coord"] = { 70.45, 5.13, 1161 },
 						["races"] = ALLIANCE_ONLY,
+						["description"] = "Requires 50 Kul Tiran Herbalism.",
 						["isBreadcrumb"] = true,
 						["requireSkill"] = 182,	-- Herbalism
 					}),
@@ -65,6 +66,7 @@ _.Zones =
 						["provider"] = { "n", 136096 },	-- Declan Senal
 						["coord"] = { 70.45, 5.13, 1161 },
 						["races"] = ALLIANCE_ONLY,
+						["description"] = "Requires 150 Kul Tiran Herbalism.",
 						["requireSkill"] = 182,	-- Herbalism
 						["sourceQuest"] = 48753,	-- Emergency Transplants
 						["g"] = {
@@ -91,11 +93,12 @@ _.Zones =
 							recipe(252406),	-- Riverbud [Rank 2]
 						},
 					}),
-					q(48769, {	-- Gathering Memento
+					q(48769, {	-- Gathering Mementos
 						["provider"] = { "n", 136096 },	-- Declan Senal
 						["coord"] = { 70.45, 5.13, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 51365,	-- Cultural Significance
+						["description"] = "Requires 150 Kul Tiran Herbalism.",
 						["requireSkill"] = 182,	-- Herbalism
 						["g"] = {
 							recipe(252423),	-- Sea Stalk [Rank 3]
@@ -107,6 +110,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 48756,	-- Here in Spirit
 						["requireSkill"] = 182,	-- Herbalism
+						["description"] = "Requires 150 Kul Tiran Herbalism.",
 						["g"] = {
 							recipe(252410),	-- Star Moss (Rank 3)
 						},
@@ -126,7 +130,8 @@ _.Zones =
 						["coord"] = { 70.45, 5.13, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 51312,	-- Aromatic Pollenator
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = 182,		-- Herbalism
+						["description"] = "Requires 50 Kul Tiran Herbalism.",
 						["g"] = {
 							recipe(252419),	-- Siren's Pollen [Rank 2]
 						},
@@ -141,7 +146,9 @@ _.Zones =
 					q(51361, {	-- More Anchor Pods
 						["provider"] = { "n", 136096 },	-- Declan Senal
 						["coord"] = { 70.45, 5.13, 1161 },
+						["races"] = ALLIANCE_ONLY,
 						["requireSkill"] = 182,	-- Herbalism
+						["description"] = "Requires 150 Kul Tiran Herbalism.",
 						["sourceQuest"] = 51360,	-- Enormous Anchor Pod
 						["g"] = {
 							recipe(252426),	-- Anchor Weed (Rank 3)
@@ -150,7 +157,9 @@ _.Zones =
 					q(48755, {	-- Pollen Punching
 						["provider"] = { "n", 136096 },	-- Declan Senal
 						["coord"] = { 70.45, 5.13, 1161 },
-						["requireSkill"] = 182,	-- Herbalism
+						["races"] = ALLIANCE_ONLY,
+						["requireSkill"] = 182,		-- Herbalism
+						["description"] = "Requires 150 Kul Tiran Herbalism.",
 						["sourceQuest"] = 48758,	-- Disgustingly Damp Flower
 						["g"] = {
 							recipe(252420),	-- Siren's Pollen (Rank 3)

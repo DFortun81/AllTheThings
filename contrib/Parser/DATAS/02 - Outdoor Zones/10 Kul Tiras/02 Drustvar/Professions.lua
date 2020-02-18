@@ -102,10 +102,19 @@ _.Zones =
 						["itemID"] = 159877,	-- Dead Pollen-Covered Bee
 						["races"] = ALLIANCE_ONLY,
 					}),
+					q(51447, {	-- Aromatic Pollenator
+						["requireSkill"] = 182,	-- Herbalism
+						["description"] = "This drops from |cFFFFD700Siren's Pollen|r and can drop at any herbalism level. You can only turn it in at Level 50 Kul Tiran Herbalism.",
+						["itemID"] = 159877,	-- Dead Pollen-Covered Bee
+						["races"] = HORDE_ONLY,
+					}),
 					q(51376, {	-- Can't Teach on an Empty Stomach
 						["provider"] = { "n", 136141 },	-- Xun Xun Sweetflower
 						["coord"] = { 20.61, 45.61, 896 },
-						["sourceQuests"] = { 48762 },	-- Meet Sweetflower
+						["sourceQuests"] = {
+							48762,	-- Meet Sweetflower (A)
+							51446,	-- Meet Sweetflower (H)
+						},
 						["requireSkill"] = 182,	-- Herbalism
 						["g"] = {
 							recipe(252416),	-- Winter's Kiss (Rank 2)
@@ -118,12 +127,26 @@ _.Zones =
 						["itemID"] = 159956,	-- Disgustingly Damp Flower
 						["races"] = ALLIANCE_ONLY,
 					}),
+					q(51451, {	-- Disgustingly Damp Flower
+						["sourceQuests"] = { 51448 },	-- Learn From the Best
+						["requireSkill"] = 182,	-- Herbalism
+						["description"] = "This drops from |cFFFFD700Siren's Pollen|r and can drop at any herbalism level. You can only turn it in at Level 150 Kul Tiran Herbalism.",
+						["itemID"] = 159956,	-- Disgustingly Damp Flower
+						["races"] = HORDE_ONLY,
+					}),
 					q(51360, {	-- Enormous Anchor Pod
 						["sourceQuests"] = { 51016 },	-- Seeking More Knowledge
 						["requireSkill"] = 182,	-- Herbalism
-						["description"] = "This drops from |cFFFFD700Anchor Weed|r and can drop at any herbalism level.  You can only turn it in at Level 150 Kul Tiran Herbalism.",
+						["description"] = "This drops from |cFFFFD700Anchor Weed|r and can drop at any herbalism level. You can only turn it in at Level 150 Kul Tiran Herbalism.",
 						["itemID"] = 160035,	-- Enormous Anchor Pod
 						["races"] = ALLIANCE_ONLY,
+					}),
+					q(51480, {	-- Enormous Anchor Pod
+						["sourceQuests"] = { 51482 },	-- Seeking More Knowledge
+						["requireSkill"] = 182,	-- Herbalism
+						["description"] = "This drops from |cFFFFD700Anchor Weed|r and can drop at any herbalism level. You can only turn it in at Level 150 Kul Tiran Herbalism.",
+						["itemID"] = 160035,	-- Enormous Anchor Pod
+						["races"] = HORDE_ONLY,
 					}),
 					q(48763, {	-- The Frigid Boon
 						["sourceQuests"] = { 51376 },	-- Can't Teach on an Empty Stomach
