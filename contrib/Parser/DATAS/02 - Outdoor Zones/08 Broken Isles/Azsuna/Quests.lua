@@ -688,7 +688,7 @@ _.Zones =
 				q(37565, {	-- The Right Weapon for the Job
 					["sourceQuests"] = { 37538 },	-- Round 1, Fight!
 					["provider"] = { "o", 239120 },	-- Okuna Longtusk's Pack
-					["coord"] = { 43.4, 24.4, 632 },	-- Oceanus Cove
+					["coord"] = { 43.8, 24.6, 632 },	-- Oceanus Cove
 				}),
 				q(37660, {	-- The Scythe of Souls
 					["sourceQuests"] = {
