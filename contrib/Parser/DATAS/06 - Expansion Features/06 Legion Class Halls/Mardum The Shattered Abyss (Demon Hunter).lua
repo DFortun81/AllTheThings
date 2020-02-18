@@ -52,11 +52,6 @@ _.ExpansionFeatures =
 				}),
 				n(-17,  {	-- Quests
 					-- confirmed/sourced
-					q(42682, {	-- Additional Accoutrements
-						["provider"] = { "n", 98632 },  -- Matron Mother Malevolence
-						["sourceQuests"] = { 42683 },	-- Demonic Improvements
-						["coord"] = { 59.7, 50.3, 720 },
-					}),
 					q(42810, {	-- A Final Offer
 						["sourceQuests"] = { 42754 },	-- Jump-Capable
 						["provider"] = { "n", 98646 },	-- Jace Darkweaver
@@ -71,6 +66,11 @@ _.ExpansionFeatures =
 						},
 						["coord"] = { 57.7, 33.7, 721 },
 						["lvl"] = 110,
+					}),
+					q(42682, {	-- Additional Accoutrements
+						["provider"] = { "n", 98632 },  -- Matron Mother Malevolence
+						["sourceQuests"] = { 42683 },	-- Demonic Improvements
+						["coord"] = { 59.9, 48.7, 720 },
 					}),
 					q(46159, {	-- An Urgent Message
 						["sourceQuests"] = { 47137 },	-- Champions of Legionfall (must be in log)
@@ -579,7 +579,7 @@ _.ExpansionFeatures =
 					q(37447, {	-- The Blood of Demons
 						["sourceQuests"] = { 42682 },	-- Additional Accoutrements
 						["provider"] = { "n", 103761 },	-- Kor'vas Bloodthorn
-						["coord"] = { 59.1, 58.8, 720 },
+						["coord"] = { 59.3, 57.7, 720 },
 						["lvl"] = 103,
 					}),
 					q(42775, {	-- The Crux of the Plan
