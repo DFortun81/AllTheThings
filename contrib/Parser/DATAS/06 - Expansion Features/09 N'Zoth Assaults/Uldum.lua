@@ -1781,6 +1781,7 @@ _.ExpansionFeatures =
 							}),
 							i(174904, {	-- Troop Requisition: Ramkahen Lancer
 								["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
+								["questID"] = 58906,
 							}),
 							i(174477, {	-- Pygmy Camel
 								["cost"] = { { "i", 163036, 300 }, },	-- 300x Polished Pet Charm

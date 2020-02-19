@@ -1382,6 +1382,7 @@ _.ExpansionFeatures =
 							}),
 							i(174905, {	-- Troop Requisition: Rajani Sparkcaller
 								["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
+								["questID"] = 58907,
 							}),
 						},
 					}),

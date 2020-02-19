@@ -75,6 +75,7 @@ _.Zones =
 					}),
 				}),
 				prof(164, {	-- Blacksmithing
+					-- Tools of Trade Questline
 					q(50276, {	-- A Recipe For the Ages
 						["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
 						["coord"] = { 43.6, 38.3, 1165 },
@@ -83,18 +84,18 @@ _.Zones =
 							recipe(253145),	-- Khaz'gorian Smithing Hammer
 						},
 					}),
-					q(50278, {	-- Deep In the Core
-						["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
-						["coord"] = { 43.6, 38.3, 1165 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 50277,	-- Hammering Out Information
-					}),
 					q(50277, {	-- Hammering Out Information
 						["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
 						["coord"] = { 43.6, 38.3, 1165 },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 50276,	-- A Recipe For the Ages
 					}),
+					q(50278, {	-- Deep In the Core
+						["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
+						["coord"] = { 43.6, 38.3, 1165 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 50277,	-- Hammering Out Information
+					}),	
 				}),
 				prof(333, {	-- Enchanting
 					-- Tools of Trade Questline
@@ -333,6 +334,81 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							recipe(256703),	-- Design: Jewelhammer's Focus
+						},
+					}),
+				}),
+				prof(165, {	-- Leatherwortking
+					-- Tools of Trade Questline
+					q(53995, {	-- The Tauren Tanner
+						["provider"] = { "n", 122698 },	-- Xanjo
+						["coord"] = { 44.1, 34.6, 1165 },
+						["races"] = HORDE_ONLY,
+						["requireSkill"] = 165,	-- Leatherwortking
+					}),
+					q(55216, {	-- The Audition (H)
+						["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
+						["coord"] = { 53.4, 92.5, 1165 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 53995,	-- The Tauren Tanner
+						["requireSkill"] = 165,	-- Leatherwortking
+					}),
+					q(55217, {	-- Repaying the Life Debt
+						["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
+						["coord"] = { 53.4, 92.5, 1165 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55216,	-- The Audition (H)
+						["requireSkill"] = 165,	-- Leatherwortking
+					}),
+					q(55218, {	-- Sheza's Prized Leather
+						["provider"] = { "n", 3037 },	-- Sheza Wildmane
+						["coord"] = { 69.7, 26.7, 88 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55217,	-- Repaying the Life Debt
+						["requireSkill"] = 165,	-- Leatherwortking
+					}),
+					q(55219, {	-- Dropping by the Base
+						["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
+						["coord"] = { 53.4, 92.5, 1165 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55216,	-- The Audition (H)
+						["requireSkill"] = 165,	-- Leatherwortking
+					}),
+					q(55220, {	-- Bass Fishing
+						["provider"] = { "n", 108017 },	-- Torv Dubstomp
+						["coord"] = { 54.9, 77.9, 750 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55219,	-- Dropping by the Base
+						["requireSkill"] = 165,	-- Leatherwortking
+					}),
+					q(55221, {	-- Picking Bones
+						["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
+						["coord"] = { 53.4, 92.5, 1165 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55216,	-- The Audition (H)
+						["requireSkill"] = 165,	-- Leatherwortking
+					}),
+					q(55222, {	-- Make Some Noise (H)
+						["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
+						["coord"] = { 53.4, 92.5, 1165 },
+						["races"] = HORDE_ONLY,
+						["sourceQuests"] = {
+							55218,	-- Sheza's Prized Leather
+							55220,	-- Bass Fishing
+							55221,	-- Picking Bones
+						},
+						["requireSkill"] = 165,	-- Leatherwortking
+						["g"] = {
+							un(15, recipe(293135)),	-- Recipe: Drum of Primal Might
+						},
+					}),
+					q(55223, {	-- Instruments of Destruction (H)
+						["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
+						["coord"] = { 53.4, 92.5, 1165 },
+						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 55222,	-- Make Some Noise (H)
+						["requireSkill"] = 165,	-- Leatherwortking
+						["g"] = {
+							recipe(293076),	-- Recipe: Mallet of Thunderous Skins
 						},
 					}),
 				}),

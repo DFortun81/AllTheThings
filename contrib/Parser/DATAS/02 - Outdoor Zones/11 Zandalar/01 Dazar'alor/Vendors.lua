@@ -1215,7 +1215,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(168028, {	-- Recipe: Mallet of Thunderous Skins
-							["cost"] = 11000000,	-- 1,100g
+							["sourceQuest"] = 55223,	-- Instruments of Destruction (H)
 						}),
 					},
 				}),

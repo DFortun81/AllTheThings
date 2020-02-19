@@ -1558,8 +1558,10 @@ _.NeverImplemented =
 		q(58347),	-- Conquest's Reward — automatically offered when you cap conquest for the week
 		q(58348),	-- Conquest's Reward — automatically offered when you cap conquest for the week
 		q(58352),	-- Conquest's Reward — automatically offered when you cap conquest for the week
-		q(57064),	-- triggered when looting War Chest as Alliance — picked up Finger-Bone Trophy of Battle, Rank 1 Conflict and Strife, so not sure if this is a weekly quest for War Chest or possibly tracking for the Azerite Essence
 		q(54931),	-- first Cooking Impossible brawl win of the week? not general brawl victory cause it's 47144 and it still triggered
+		q(57064),	-- War Chest Azerit Essence Conflict and Strife (Rank 1)
+		q(57065),	-- War Chest Azerit Essence Conflict and Strife (Rank 2)
+
 
 	--	WORLD BOSSES
 		q(52997),	-- Azurethos, The Winged Typhoon Kill ID

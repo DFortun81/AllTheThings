@@ -493,7 +493,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(168028, {	-- Recipe: Mallet of Thunderous Skins
-							["cost"] = 9350000,	-- 935g
+							["sourceQuest"] = 55235,	-- Instruments of Destruction (A)
 						}),
 					},
 				}),

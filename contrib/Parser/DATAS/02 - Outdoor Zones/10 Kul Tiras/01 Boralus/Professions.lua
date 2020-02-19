@@ -275,6 +275,81 @@ _.Zones =
 						},
 					}),
 				}),
+				prof(165, {	-- Leatherwortking
+					-- Tools of Trade Questline
+					q(55227, {	-- The Aeonian Artisan
+						["provider"] = { "n", 136063 },	-- Cassandra Brennor
+						["coord"] = { 75.5, 12.6, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["requireSkill"] = 165,	-- Leatherwortking
+					}),
+					q(55228, {	-- The Audition (A)
+						["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
+						["coord"] = { 69.6, 29.8, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 55227,	-- The Aeonian Artisan
+						["requireSkill"] = 165,	-- Leatherwortking
+					}),
+					q(55229, {	-- Repaying the Debt
+						["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
+						["coord"] = { 69.6, 29.8, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 55228,	-- The Audition (A)
+						["requireSkill"] = 165,	-- Leatherwortking
+					}),
+					q(55230, {	-- Telonis' Prized Leather
+						["provider"] = { "n", 151287 },	-- Telonis
+						["coord"] = { 42.6, 60.6, 84 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 55228,	-- The Audition (A)
+						["requireSkill"] = 165,	-- Leatherwortking
+					}),
+					q(55231, {	-- The Other Ghostdancer
+						["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
+						["coord"] = { 69.6, 29.8, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 55228,	-- The Audition (A)
+						["requireSkill"] = 165,	-- Leatherwortking
+					}),
+					q(55232, {	-- Mevris' Menace
+						["provider"] = { "n", 151285 },	-- Mevris Ghostdancer
+						["coord"] = { 53.6, 54.4, 641 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 55231,	-- The Other Ghostdancer
+						["requireSkill"] = 165,	-- Leatherwortking
+					}),
+					q(55233, {	-- Picking Bones (A)
+						["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
+						["coord"] = { 69.6, 29.8, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 55228,	-- The Audition (A)
+						["requireSkill"] = 165,	-- Leatherwortking
+					}),
+					q(55234, {	-- Make Some Noise (A)
+						["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
+						["coord"] = { 69.6, 29.8, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuests"] = {
+							55230,	-- Telonis' Prized Leather
+							55232,	-- Mevris' Menace
+							55233,	-- Picking Bones (A)
+						},
+						["requireSkill"] = 165,	-- Leatherwortking
+						["g"] = {
+							un(15, recipe(293135)),	-- Recipe: Drum of Primal Might
+						},
+					}),
+					q(55235, {	-- Instruments of Destruction (A)
+						["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
+						["coord"] = { 69.6, 29.8, 1161 },
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 55234,	-- Make Some Noise
+						["requireSkill"] = 165,	-- Leatherwortking
+						["g"] = {
+							recipe(293076),	-- Recipe: Mallet of Thunderous Skins
+						},
+					}),
+				}),
 				prof(186, {	-- Mining
 					q(48752, {	-- A Need For Coal
 						["provider"] = { "n", 136091 },	-- Myra Cabot

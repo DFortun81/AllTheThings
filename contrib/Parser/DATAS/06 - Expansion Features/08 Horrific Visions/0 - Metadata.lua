@@ -181,6 +181,8 @@ _.ExpansionFeatures =
 						i(174459),	-- Voidwoven Cat Collar (pet) -- alleria
 						i(174458),	-- Void-scarred Hare (pet) -- Umbric
 						i(174460),	-- Box Labeled "Danger: Void Rat Inside" (pet) - Kelsey
+						
+						i(174932),	-- Illusion: Void Edge -- Valeera
 					}),
 				},
 				--[[ notes:
