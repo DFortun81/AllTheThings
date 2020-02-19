@@ -490,7 +490,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2369, {	-- The Prophet Skitra
-					["crs"] = { 157620 },
+					["crs"] = { 157238, 157620 },
 					["g"] = {
 						ach(14037),	-- Phase 3: Prophet
 						i(174279),	-- Encrypted Ny'alothan Text

@@ -2172,6 +2172,13 @@ _.Zones =
 					["u"] = 40,	-- Legacy Quests
 					["classes"] = { MAGE },
 				}),
+				q(58673, {	-- Warchief of the Horde
+					["coord"] = { 39.4, 79.6, 85 },
+					["provider"] = { "n", 162190 },	-- Valeera Sanguinar
+					["sourceQuests"] = { 58672 },	-- A Gathering of Champions
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(28466, {	-- Weapons of Darkness
 					["provider"] = { "n", 44725 },	-- Sunwalker Atohmo
 					["coord"] = { 45.2, 53.4, 85 },

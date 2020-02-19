@@ -2097,7 +2097,7 @@ _.NeverImplemented =
 		q(59062),	-- choosing Spike as the name for your Aqir Hatchling
 
 		-- Horrific Visions
-		-- orgrimmar
+		-- Orgrimmar
 		q(57841),	-- first horrific vision cleared as horde
 		q(58581),	-- first horrific vision cleared as horde
 		q(57039),	-- Valley of Spirits cleansed (Orgrimmar)
