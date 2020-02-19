@@ -1317,6 +1317,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 				}),
+				q(58675, {	-- The Price of Peace
+					["provider"] = { "n", 162178 },	-- Master Mathias Shaw
+					["coord"] = { 53.2, 15.0, 84 },
+					["sourceQuests"] = { 58674 },	-- A Gathering of Champions
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(28398, {	-- The Pyromancer's Grimoire
 					["provider"] = { "n", 331 },	-- Maginor Dumas
 					["coord"] = { 49.2, 87.6, 84 },

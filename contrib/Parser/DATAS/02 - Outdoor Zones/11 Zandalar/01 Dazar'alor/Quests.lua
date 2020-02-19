@@ -7,6 +7,13 @@ _.Zones =
 	m(875, { 	-- Zandalar
 		m(1163, {	-- Dazar'alor
 			n(-17, {	-- Quests
+				q(58672, {	-- A Gathering of Champions
+					["coord"] = { 55.9, 30.3, 1163 },
+					["provider"] = { "n", 161458 },	-- Valeera Sanguinar
+					["sourceQuests"] = { 58632 },	-- Ny'alotha, the Waking City: The Corruptor's End
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(51465, {	-- A Load of Scrap
 					["sourceQuests"] = { 46931 },	-- Speaker of the Horde
 					["coord"] = { 44.9, 39.6, 1165 },

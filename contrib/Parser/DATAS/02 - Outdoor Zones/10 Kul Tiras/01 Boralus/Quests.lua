@@ -256,6 +256,13 @@ _.Zones =
 					["coord"] = { 72.2, 16.2, 1161 },
 					["provider"] = { "n", 124289 },	-- "Risky" Liz Seminario <Fur Trader>
 				}),
+				q(58674, {	-- A Gathering of Champions
+					["provider"] = { "n", 135614 },	-- Master Mathias Shaw
+					["coord"] = { 70.4, 27.0, 1161 },
+					["sourceQuests"] = { 58632 },	-- Ny'alotha, the Waking City: The Corruptor's End
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(52462, {	-- A Load of Scrap
 					["sourceQuests"] = { 46728 },	-- The Nation of Kul Tiras
 					["coord"] = { 77.1, 16.4, 1161 },
