@@ -1559,8 +1559,8 @@ _.NeverImplemented =
 		q(58348),	-- Conquest's Reward — automatically offered when you cap conquest for the week
 		q(58352),	-- Conquest's Reward — automatically offered when you cap conquest for the week
 		q(54931),	-- first Cooking Impossible brawl win of the week? not general brawl victory cause it's 47144 and it still triggered
-		q(57064),	-- War Chest Azerit Essence Conflict and Strife (Rank 1)
-		q(57065),	-- War Chest Azerit Essence Conflict and Strife (Rank 2)
+		q(57064),	-- War Chest Azerite Essence Conflict and Strife (Rank 1)
+		q(57065),	-- War Chest Azerite Essence Conflict and Strife (Rank 2)
 
 
 	--	WORLD BOSSES
@@ -2095,7 +2095,6 @@ _.NeverImplemented =
 		q(58512),	-- Grand Empress Shek'zara bonus roll
 		q(59060),	-- choosing Bitey McStabface as the name for your Aqir Hatchling
 		q(59062),	-- choosing Spike as the name for your Aqir Hatchling
-		q(58906),	-- using Troop Requisition: Ramkahen Lancer
 
 		-- Horrific Visions
 		-- orgrimmar
