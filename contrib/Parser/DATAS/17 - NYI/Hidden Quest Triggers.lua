@@ -2119,11 +2119,16 @@ _.NeverImplemented =
 		q(57027),	-- triggers in the chest room at the end of the Orgrimmar scenario. Doesn't matter if you defeat Thrall or not
 		q(59044),	-- completed all objectives
 		q(58966),	-- triggered after completing all of zek'han's area but before killing the boss
-		-- stormwind
+		-- Stormwind
+		q(58965),	-- triggered when going to Dwarven District (during the fight with 3 gnomes)
 		q(57153),	-- Dwarven District cleansed (Stormwind)
+		q(58970),	-- triggered when detonating explosives in Dwarven District
 		q(58894),	-- Dwarven District - kill the wing boss. Activates a portal to the cathedral district
+		q(58964),	-- taking portal from Dwarven District back to Cathedral
 		q(57216),	-- Old Town cleansed (Stormwind)
+		q(58967),	-- probably defeating Slavemaster Ul'rok in Trade District
 		q(57271),	-- Trade District cleansed (Stormwind)
+		q(58897),	-- triggered together with 57271
 		q(27282),	-- Mage Quarter cleansed (Stormwind)
 		-- TODO:: Need to determine the alliance zones for the 4 area chests. They appear to be shared with horde except for the main boss chest
 		q(57360),	-- looted the chest in front of Alleria's image at the end of the scenario. Doesn't matter if you defeat her or not
