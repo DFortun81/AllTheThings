@@ -75,7 +75,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(13181),	-- Demonskin Gloves
 								i(13182),	-- Phase Blade
-								un(2, i(9214)),	-- Grimoire of Inferno
+								i(9214),	-- Grimoire of Inferno
 							},
 						}),
 					},

@@ -82,10 +82,198 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 			}),
+			q(44558, {	-- Crushing the Crown (Alliance)
+				["provider"] = { "n", 38066 },		-- Detective Snip Snagglebolt
+				["coord"] = { 61.51, 75.28, 84 },	-- Stormwind
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 10,
+				["sourceQuest"] = 24657,		-- A Friendly Chat... (Alliance)
+				["isDaily"] = true,
+			}),
+			q(24658, {	-- Crushing the Crown
+				["u"] = 40,
+				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
+				["coord"] = { 61.51, 75.28, 84 },	-- Stormwind
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 5,
+				["isDaily"] = true,
+				["description"] = "Available until level 9.",
+			}),
+			q(24659, {	-- Crushing the Crown
+				["u"] = 40,
+				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
+				["coord"] = { 61.51, 75.28, 84 },	-- Stormwind
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 14,
+				["isDaily"] = true,
+				["description"] = "Available until level 22.",
+			}),
+			q(24660, {	-- Crushing the Crown
+				["u"] = 40,
+				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
+				["coord"] = { 61.51, 75.28, 84 },	-- Stormwind
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 23,
+				["isDaily"] = true,
+				["description"] = "Available until level 31.",
+			}),
+			q(24662, {	-- Crushing the Crown
+				["u"] = 40,
+				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
+				["coord"] = { 61.51, 75.28, 84 },	-- Stormwind
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 32,
+				["isDaily"] = true,
+				["description"] = "Available until level 40.",
+			}),
+			q(24663, {	-- Crushing the Crown
+				["u"] = 40,
+				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
+				["coord"] = { 61.51, 75.28, 84 },	-- Stormwind
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 41,
+				["isDaily"] = true,
+				["description"] = "Available until level 50.",
+			}),
+			q(24664, {	-- Crushing the Crown
+				["u"] = 40,
+				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
+				["coord"] = { 61.51, 75.28, 84 },	-- Stormwind
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 51,
+				["isDaily"] = true,
+				["description"] = "Available until level 60.",
+			}),
+			q(24665, {	-- Crushing the Crown
+				["u"] = 40,
+				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
+				["coord"] = { 61.51, 75.28, 84 },	-- Stormwind
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 61,
+				["isDaily"] = true,
+				["description"] = "Available until level 70.",
+			}),
+			q(24666, {	-- Crushing the Crown
+				["u"] = 40,
+				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
+				["coord"] = { 61.51, 75.28, 84 },	-- Stormwind
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 71,
+				["isDaily"] = true,
+				["description"] = "Available until level 80.",
+			}),
+			q(28934, {	-- Crushing the Crown
+				["u"] = 40,
+				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
+				["coord"] = { 61.51, 75.28, 84 },	-- Stormwind
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 81,
+				["isDaily"] = true,
+			}),
+			q(44546, {	-- Crushing the Crown (Horde)
+				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["races"] = HORDE_ONLY,
+				["lvl"] = 10,
+				["sourceQuest"] = 24576,		-- A Friendly Chat... (Horde)
+				["isDaily"] = true,
+			}),
+			q(24638, {	-- Crushing the Crown
+				["u"] = 40,
+				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["races"] = HORDE_ONLY,
+				["lvl"] = 5,
+				["isDaily"] = true,
+				["description"] = "Available until level 9.",
+			}),
+			q(24645, {	-- Crushing the Crown
+				["u"] = 40,
+				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["races"] = HORDE_ONLY,
+				["lvl"] = 14,
+				["isDaily"] = true,
+				["description"] = "Available until level 22.",
+			}),
+			q(24647, {	-- Crushing the Crown
+				["u"] = 40,
+				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["races"] = HORDE_ONLY,
+				["lvl"] = 23,
+				["isDaily"] = true,
+				["description"] = "Available until level 31.",
+			}),
+			q(24648, {	-- Crushing the Crown
+				["u"] = 40,
+				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["races"] = HORDE_ONLY,
+				["lvl"] = 32,
+				["isDaily"] = true,
+				["description"] = "Available until level 40.",
+			}),
+			q(24649, {	-- Crushing the Crown
+				["u"] = 40,
+				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["races"] = HORDE_ONLY,
+				["lvl"] = 41,
+				["isDaily"] = true,
+				["description"] = "Available until level 50.",
+			}),
+			q(24650, {	-- Crushing the Crown
+				["u"] = 40,
+				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["races"] = HORDE_ONLY,
+				["lvl"] = 51,
+				["isDaily"] = true,
+				["description"] = "Available until level 60.",
+			}),
+			q(24651, {	-- Crushing the Crown
+				["u"] = 40,
+				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["races"] = HORDE_ONLY,
+				["lvl"] = 61,
+				["isDaily"] = true,
+				["description"] = "Available until level 70.",
+			}),
+			q(24652, {	-- Crushing the Crown
+				["u"] = 40,
+				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["races"] = HORDE_ONLY,
+				["lvl"] = 71,
+				["isDaily"] = true,
+				["description"] = "Available until level 80.",
+			}),
+			q(28935, {	-- Crushing the Crown
+				["u"] = 40,
+				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
+				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["races"] = HORDE_ONLY,
+				["lvl"] = 81,
+				["isDaily"] = true,
+			}),
 			q(24848, {	-- Fireworks At The Gilded Rose
 				["provider"] = { "n", 38066 },	-- Inspector Snip Snagglebolt
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 24656,	-- Pilfering Perfume (Alliance)
+			}),
+			q(44560, {	-- Follow the Recipe (Alliance)
+				["provider"] = { "o", 259806 },	-- Love Potion Recipe
+				["coord"] = { 45.2, 73.8, 21 },	-- Silverpine Forest
+				["races"] = ALLIANCE_ONLY,
+				["isDaily"] = true,
+			}),
+			q(44559, {	-- Follow the Recipe (Horde)
+				["provider"] = { "o", 259806 },	-- Love Potion Recipe
+				["coord"] = { 45.2, 73.8, 21 },	-- Silverpine Forest
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(24849, {	-- Hot On The Trail (Alliance)
 				["provider"] = { "n", 38325 },	-- Marion Sutton
