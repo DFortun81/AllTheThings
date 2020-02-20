@@ -183,7 +183,6 @@ for key, value in pairs({
 		[-175] = "垃圾场匠技",
 		
 		[-211] = NEW .. CHARACTER,												-- New Character
-		[-211] = NEW.." "..CHARACTER,											-- New Character
 		[-212] = "宝箱",															-- Treasure Chest
 		[-214] = "夜之子",								-- Nightborne Home
 		[-217] = "Lures",														-- Lures (for Fishing)
