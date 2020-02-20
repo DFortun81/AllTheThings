@@ -54,6 +54,9 @@ L["SHARED"] = "Shared"
 L["SPLIT"] = "Per Difficulty"
 L["REQUIRES"] = "要求"
 L["REQUIRES_LEVEL"] = "要求等级"
+L["SECRETS_HEADER"] = "解密"
+L["SELFIE_FILTERS_HEADER"] = "自拍滤镜"
+L["LIMITED_QUANTITY"] = "此物品有数量限制，在商人处并非总是可见。"
 
 -- Filter Text
 L["ACHIEVEMENT_ID"] = "成就ID"
@@ -93,10 +96,16 @@ L["NOT_TRADEABLE"] = "不可交易"
 L["TRADEABLE"] = "可交易"
 
 -- Icons and Collection Text
+L["LOGO_SMALL"] = "Interface\\Addons\\AllTheThings\\assets\\logo_tiny";		-- Winner of the Logo Contest (Used to be "Interface\\Icons\\INV_Axe_106.blp")
+L["COLLECTED_ICON"] = "|TInterface\\Addons\\AllTheThings\\assets\\known:0|t";	-- Acquired the colors and icon from CanIMogIt.
+L["COLLECTED_APPEARANCE_ICON"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_circle:0|t";		-- Acquired the colors and icon from CanIMogIt.
+L["COMPLETE_ICON"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_green:0|t";		-- Acquired the colors and icon from CanIMogIt.
+L["NOT_COLLECTED_ICON"] = "|TInterface\\Addons\\AllTheThings\\assets\\unknown:0|t";		-- Acquired the colors and icon from CanIMogIt.
 L["COLLECTED"] = "|TInterface\\Addons\\AllTheThings\\assets\\known:0|t |cff15abff已收集|r" -- Acquired the colors and icon from CanIMogIt.
 L["COLLECTED_APPEARANCE"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_circle:0|t |cff15abff已收集*|r" -- Acquired the colors and icon from CanIMogIt.
 L["NOT_COLLECTED"] = "|TInterface\\Addons\\AllTheThings\\assets\\unknown:0|t |cffff9333未收集|r" -- Acquired the colors and icon from CanIMogIt.
 L["COMPLETE"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_green:0|t |cff6dce47已完成|r" -- Acquired the colors and icon from CanIMogIt.
+L["COMPLETE_OTHER"] = "|TInterface\\Addons\\AllTheThings\\assets\\known_green:0|t |cff6dce47已完成*|r";		-- Acquired the colors and icon from CanIMogIt.
 L["INCOMPLETE"] = "|TInterface\\Addons\\AllTheThings\\assets\\unknown:0|t |cffff9333未完成|r" -- Acquired the colors and icon from CanIMogIt.
 L["KNOWN_ON_CHARACTER"] = "|TInterface\\Addons\\AllTheThings\\assets\\known:0|t |cff15abff当前角色已习得|r"
 L["UNKNOWN_ON_CHARACTER"] = "|TInterface\\Addons\\AllTheThings\\assets\\unknown:0|t |cffff9333当前角色未习得|r"
@@ -108,16 +117,6 @@ L["CUSTOM_DIFFICULTIES"] = {
 	[-4] = "英雄 (5.4)",
 }
 
-L["FILTER_ID_TYPES"][11] = "神器"
-L["FILTER_ID_TYPES"][55] = "消耗品"
-L["FILTER_ID_TYPES"][59] = "职业技能书"
-L["FILTER_ID_TYPES"][103] = "幻象"
-L["FILTER_ID_TYPES"][107] = "Vignettes"
-L["FILTER_ID_TYPES"][108] = "乐谱"
-L["FILTER_ID_TYPES"][110] = "头衔"
-L["FILTER_ID_TYPES"][999] = "Event Item"
-
-
 local a = L.FILTER_ID_TYPES
 for key, value in pairs({
 		[11] = "神器",
@@ -127,11 +126,13 @@ for key, value in pairs({
 		[107] = "Vignettes",
 		[108] = "乐谱",
 		[110] = "头衔",
+		[114] = "坐骑装备",
 		[999] = "Event Item",
 }) do a[key] = value end
 
 local a = L.NPC_ID_NAMES
 for key, value in pairs({
+
 		[0] = ZONE .. BATTLE_PET_SOURCE_1,
 		[-1] = BATTLE_PET_BREED_QUALITY2 .. TRANSMOG_SOURCE_1,
 		[-7] = WORLD .. RAID_BOSSES,
@@ -148,10 +149,10 @@ for key, value in pairs({
 		[-70] = DUNGEON_FLOOR_DESOLACE22,
 		[-71] = DUNGEON_FLOOR_DESOLACE21,
 		[-72] = "萨格雷战争议会",
-		[-90] = "精英",
 		[-93] = "希利苏斯：创伤之痕",
 		[-94] = "黑市拍卖行",
-		
+		[-99] = "建筑",
+		[-101] = "追随者",
 		[-124] = "要塞套装", 
 		[-130] = "暮色森林 "..GetSpellInfo(133137),
 		[-131] = "辛特兰 "..GetSpellInfo(133137),
@@ -161,15 +162,32 @@ for key, value in pairs({
 		[-134] = "奥格瑞玛套装",
 		[-135] = "暴风城套装",
 		
+		[-140] = "共济",
+		[-141] = "邪魂",
+		[-142] = "摧心",
+		[-143] = "浅酌者",
+		[-144] = "烟舞者",
+		[-145] = "山岳贤者",
+		[-146] = "誓约者",
+		[-147] = "春雨",
+		[-148] = "溪语者",
+		[-149] = "阳魂",
+		[-150] = "探路者",
+		[-152] = "要塞战役",
+		
 		[-157] = "辛特兰 "..GetSpellInfo(78741),
 		[-158] = "菲拉斯 "..GetSpellInfo(78741),
-		[-159] = "Event Roll",
-		
+		[-159] = "事件roll点",
+		[-168] = FACTION_OTHER..QUESTS_LABEL,
 		[-171] = "任务线",
-		[-175] = "Junkyard Tinkering",
+		[-175] = "垃圾场匠技",
 		
-		[-211] = NEW .. CHARACTER,
-		
+		[-211] = NEW .. CHARACTER,												-- New Character
+		[-211] = NEW.." "..CHARACTER,											-- New Character
+		[-212] = "宝箱",															-- Treasure Chest
+		[-214] = "夜之子",								-- Nightborne Home
+		[-217] = "Lures",														-- Lures (for Fishing)
+		[-218] = "鱼饵",														-- Coastal (for Fishing)
 		[-224] = "伊利达雷",
 		[-236] = "联盟阵营战役",
 		
@@ -177,11 +195,14 @@ for key, value in pairs({
 		[-243] = "Bounty",
 		[-244] = "黑铁矮人",
 		[-245] = "玛格汉兽人",
-		
+		[-246] = "Is Another Man's Treasure",									-- Is Another Man's Treasure
+		[-247] = "Riches of Pandaria",											-- Riches of Pandaria
 		[-251] = "赞达拉巨魔",
 		[-252] = "库尔提拉斯人",
 		[-253] = "部落阵营战役",
 		[-254] = "传承护甲",
+		[-255] = "狐人",
+		[-256] = "机械侏儒",
 		
 		[-351] = "首领掉落",
 		[-356] = "进攻黑暗之门",
@@ -198,7 +219,7 @@ for key, value in pairs({
 		[-491] = "塔罗牌",
 		[-492] = "幻象",
 		
-		[-518] = "库尔提拉斯he赞达拉",
+		[-518] = "库尔提拉斯和赞达拉",
 		[-520] = "资料片前夕",
 		[-521] = "燃烧的远征：Dark Portal Opens", -- 这些谁知道官翻？
 		[-522] = "巫妖王之怒：Zombie Infestation",
@@ -255,15 +276,41 @@ for key, value in pairs({
 		[-650] = "任务物品",
 		
 -- PvP Set Names
-		[-660] = "Aspirant / Combatant Gear",									-- Aspirant (WoD, BfA) / Combatant (WoD, Legion) PvP Gear
-		[-661] = "Gladiator Gear",												-- Gladiator PvP Gear
-		[-662] = "Elite Gear",													-- Elite PvP Gear
-		
--- Pet Battles		
-		[-700] = "天神比武大会",
+		[-659] = "候选者套装",												-- Aspirant PvP Gear (WoD, BfA)
+		[-660] = "争斗者套装",												-- Combatant PvP Gear (WoD, Legion)
+		[-661] = "角斗士套装",												-- Gladiator PvP Gear
+		[-662] = "精锐套装",													-- Elite PvP Gear
 
+-- Classic PvP Seasons
+		[-663] = "Classic Pre-Season Gear",										-- Classic Pre-Season PvP Gear (need a icon)
+
+-- The Burning Crusade PvP Seasons
+		[-664] = select(2, GetAchievementInfo(2091)).."：第1赛季",				-- Gladiator: Season 1
+		[-665] = select(2, GetAchievementInfo(418)).."：第2赛季",				-- Merciless Gladiator: Season 2
+		[-666] = select(2, GetAchievementInfo(419)).."：第3赛季",				-- Vengeful Gladiator: Season 3
+		[-667] = select(2, GetAchievementInfo(420)).."：第4赛季",				-- Brutal Gladiator: Season 4
+
+-- Wrath of the Lichking PvP Seasons
+		[-668] = select(2, GetAchievementInfo(3336)).."第5赛季",				-- Deadly Gladiator: Season 5
+		[-669] = select(2, GetAchievementInfo(3436)).."第6赛季",				-- Furious Gladiator: Season 6
+		[-670] = select(2, GetAchievementInfo(3758)).."第7赛季",				-- Relentless Gladiator: Season 7
+		[-671] = select(2, GetAchievementInfo(4599)).."第8赛季",				-- Wrathful Gladiator: Season 8
+
+-- Cataclysm PvP Seasons
+		[-672] = select(2, GetAchievementInfo(6002)).."第9赛季",				-- Vicious Gladiator: Season 9
+		[-673] = select(2, GetAchievementInfo(6124)).."第10赛季",			-- Ruthless Gladiator: Season 10
+		[-674] = select(2, GetAchievementInfo(6938)).."第11赛季",			-- Cataclysmic Gladiator: Season 11
+
+-- Mists of Pandaria PvP Seasons
+		[-675] = select(2, GetAchievementInfo(8214)).."第12赛季",			-- Malevolent Gladiator: Season 12
+		[-676] = select(2, GetAchievementInfo(8791)).."第13赛季",			-- Tyrannical Gladiator: Season 13
+		
+		
+		[-806] = "钟示贤德腰带",
+		
 -- Mechagon		
 		[-850] = "机械化的宝箱",													-- Mechanized Chest
+		[-851] = "铁潮宝箱",												-- Irontide Chest
 		[-1001] = "The Black Vault",
 		
 		[-3159] = "T6.5套装",
@@ -301,25 +348,25 @@ for key, value in pairs({
 		[-3199] = "Midsummer Reveler Set",
 		
 -- Dungeon 1 Sets [Tier 0]
-		[-3200] = "Vestments of the Devout", -- Priest
-		[-3201] = "奥术师", -- Mage
-		[-3202] = "Dreadmist Rainment", -- Warlock
-		[-3203] = "Wildheart Rainment", -- Druid
-		[-3204] = "Shadowcraft Armor", -- Rogue
-		[-3205] = "Beaststalker Armor", -- Hunter
-		[-3206] = "The Elements", -- Shaman
-		[-3207] = "Lightforge Armor", -- Paladin
-		[-3208] = "Battlegear of Valor",  -- Warrior
+		[-3200] = "虔诚", -- Priest
+		[-3201] = "博学者", -- Mage
+		[-3202] = "鬼雾", -- Warlock
+		[-3203] = "野性之心", -- Druid
+		[-3204] = "迅影", -- Rogue
+		[-3205] = "野兽追猎者", -- Hunter
+		[-3206] = "元素", -- Shaman
+		[-3207] = "光铸护甲", -- Paladin
+		[-3208] = "勇气",  -- Warrior
 -- Dungeon 2 Sets [Tier 0.5]
-		[-3209] = "Vestments of the Virtuous", -- Priest
-		[-3210] = "Sorcerer's Regalia", -- Mage
-		[-3211] = "Deathmist Rainment", -- Warlock
-		[-3212] = "Feralheart Rainment", -- Druid
-		[-3213] = "Darkmantle Armor", -- Rogue
-		[-3214] = "Beastmaster Armor", -- Hunter
-		[-3215] = "The Five Thunders", -- Shaman
-		[-3216] = "Soulforge Armor", -- Paladin
-		[-3217] = "Battlegear of Heroism", -- Warrior
+		[-3209] = "坚贞", -- Priest
+		[-3210] = "巫师", -- Mage
+		[-3211] = "死雾", -- Warlock
+		[-3212] = "狂野之心", -- Druid
+		[-3213] = "暗幕", -- Rogue
+		[-3214] = "兽王", -- Hunter
+		[-3215] = "五雷", -- Shaman
+		[-3216] = "魂铸", -- Paladin
+		[-3217] = "英勇", -- Warrior
 -- Anti-Undead Armor Sets [Scourge Event]
 		[-3218] = "Blessed Regalia of Undead Cleansing",
 		[-3219] = "Undead Slayer's Blessed Armor",
@@ -333,10 +380,10 @@ for key, value in pairs({
 -- Instance Sets
 		[-3226] = "铁纹作战套装", -- Cloth
 		[-3227] = "邮差", -- Cloth
-		[-3228] = "Necropile Raiment", -- Cloth
-		[-3229] = "Cadaverous Garb", -- Leather
-		[-3230] = "Bloodmail Regalia", -- Mail
-		[-3231] = "Deathbone Guardian", -- Plate
+		[-3228] = "骨堆", -- Cloth
+		[-3229] = "苍白", -- Leather
+		[-3230] = "血链", -- Mail
+		[-3231] = "亡骨", -- Plate
 -- Cenarion Circle Set (Ruins of Ahn'Qiraj")
 		[-3232] = "Finery of Infinite Wisdom", -- Priest
 		[-3233] = "神秘套装", -- Mage
@@ -358,15 +405,15 @@ for key, value in pairs({
 		[-3248] = "Seawitch Set",
 		[-3249] = "Sunfrost Set",
 -- Zandalar Tribe Set (Zul'Gurub) [Tier 1.5]
-		[-3250] = "Confessor's Raiment", -- Priest
-		[-3251] = "Illusionist's Attire", -- Mage
-		[-3252] = "Demoniac's Threads", -- Warlock
-		[-3253] = "Haruspex's Garb", -- Druid
-		[-3254] = "Madcap's Outfit", -- Rogue
-		[-3255] = "Predator's Armor", -- Hunter
-		[-3256] = "Augur's Regalia", -- Shaman
-		[-3257] = "Freethinker's Armor", -- Paladin
-		[-3258] = "Vindicator's Battlegear", -- Warrior
+		[-3250] = "忏悔者衣饰", -- Priest
+		[-3251] = "幻术师套装", -- Mage
+		[-3252] = "恶魔师护甲", -- Warlock
+		[-3253] = "占卜师套装", -- Druid
+		[-3254] = "狂妄者套装", -- Rogue
+		[-3255] = "捕猎者套装", -- Hunter
+		[-3256] = "预言者套装", -- Shaman
+		[-3257] = "思考者护甲", -- Paladin
+		[-3258] = "辩护者重甲", -- Warrior
 -- Cloth WQ Gear Continued
 		[-3259] = "Terrorweave Set",
 		[-3260] = "Vault-Minder's Set",
@@ -398,19 +445,19 @@ for key, value in pairs({
 		[-3284] = "Galvanized Stormscale Set",
 		[-3285] = "If you see this contact Lucetia please",
 -- Dungeon 3 Sets [Tier 3.5]
-		[-3286] = "Hallowed Raiment", -- Priest
-		[-3287] = "Incanter's Regalia", -- Mage
-		[-3288] = "Oblivion Raiment", -- Warlock
-		[-3289] = "Moonglade Raiment", -- Druid
-		[-3290] = "Assassination Armor", -- Rogue
-		[-3291] = "Beast Lord Armor", -- Hunter
-		[-3292] = "Tidefury Raiment", -- Shaman
-		[-3293] = "Righteous Armor", -- Paladin
-		[-3294] = "Bold Armor", -- Warrior
-		[-3295] = "Mana-Etched Regalia", -- Cloth
-		[-3296] = "Wastewalker Armor", -- Leather
-		[-3297] = "Desolation Battlegear", -- Mail
-		[-3298] = "Doomplate Battlegear", -- Plate
+		[-3286] = "圣徒", -- Priest
+		[-3287] = "魔咒师", -- Mage
+		[-3288] = "湮灭", -- Warlock
+		[-3289] = "月光林地", -- Druid
+		[-3290] = "刺杀", -- Rogue
+		[-3291] = "巨兽之王", -- Hunter
+		[-3292] = "潮汐之怒", -- Shaman
+		[-3293] = "正义", -- Paladin
+		[-3294] = "鲁莽套装", -- Warrior
+		[-3295] = "法力蚀刻魔装", -- Cloth
+		[-3296] = "废土行者", -- Leather
+		[-3297] = "荒芜", -- Mail
+		[-3298] = "末日板甲", -- Plate
 -- Plate WQ Gear
 		[-3299] = "Arcane Defender Set",
 		[-3300] = "Greystone Set",
@@ -475,15 +522,15 @@ for key, value in pairs({
 		[-4191] = "Tournament",
 -- Tier/Dungeon/Event/Holiday Sets
 	-- Artifact Strings
-		[-5200] = "Base Appearance",
+		[-5200] = "基础外观",
 		[-5201] = "职业大厅战役",
 		[-5202] = "能量的平衡",
-		[-5203] = "Prestige Rewards",
+		[-5203] = "荣誉奖励",
 		[-5204] = "挑战外观",
 		[-5205] = "隐藏外观",
 		
 		[-5349] = MAC_OPTIONS_MISC.." "..LOOT_JOURNAL_ITEM_SETS, 					-- Miscellaneous Item Sets
-		[-5350] = "Class Trial Item Sets",											-- Class Trial
+		[-5350] = "职业试用套装",                                                    -- Class Trial
 		[-5351] = GAMEMENU_BOOST_BUTTON,											-- Character Boost
 		
 		[-5352] = "Tier套装", -- 想不到更好的翻译了
@@ -495,8 +542,23 @@ for key, value in pairs({
 		[-7780] = "Third Chest",
 		[-7781] = "Final Chest",
 		
+		[-10066] = BATTLE_PET_BREED_QUALITY6,			-- "Legendary";
+		[-10067] = ITEM_QUALITY6_DESC, 					-- Artifact
+		[-10068] = OPTION_TOOLTIP_ANIMATION,			-- PLACE_HOLDER
 		[-10069] = "场景战役",
-		
+		[-10070] = select(1, GetCategoryInfo(15417)),		-- Heart of Azeroth
+		[-10071] = "恩佐斯的幻象",
+		[-10072] = "恩佐斯突袭",
+		[-10073] = "奥格瑞玛的惊魂幻象",
+		[-10074] = "暴风城的惊魂幻象",
+		[-10075] = "突袭：阿玛赛特进军",
+		[-10076] = "突袭：黑暗帝国",
+		[-10077] = "突袭：战争氏族",
+		[-10078] = "突袭：无尽虫群",
+		[-10079] = "突袭：亚基重现",
+		[-10080] = "惊魂幻象",
+		[-10081] = "腐化区域",
+		[-10082] = "失落区域",
 }) do a[key] = value end
 
 local a = L.OBJECT_ID_NAMES
@@ -519,7 +581,7 @@ L["UNOBTAINABLE_ITEM_REASONS"] = {
     {3, "|CFFFF0000此物品拾取后绑定，但是如果你有召唤首领所需的物品仍可获得。|r", "需要召唤道具 (11)"}, -- There is Hope -- 11
     {4, "|CFFFF0000副本或首领已绝版。|r", "绝版副本 (12)"}, -- 12
     {1, "|CFFFF0000你的追随者等级过高，奖励此物品的任务不再刷新。|r", "绝版物资 (13)"}, -- 13
-    {2, "|CFFFF0000此物品无法购买，除非你在对应赛季的PvP平分或排名达标。|r", "PvP Elite/Gladiator (14)"}, -- 14
+    {2, "|CFFFF0000此物品无法购买，除非你在对应赛季的PvP评分或排名达标。|r", "PvP Elite/Gladiator (14)"}, -- 14
     {1, "|CFFFF0000This item has a Source ID (Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes / Unlearnable (15)"}, -- 15
     {2, "|CFFFF0000此物品是参加嘉年华或购买虚拟门票的奖励。在网络上可能有高价出售的激活码。|r", "暴雪嘉年华 (16)"}, --16
     {6, "|CFF00FFDE只能在春节期间获得。|r", "春节 (17)"}, --17
