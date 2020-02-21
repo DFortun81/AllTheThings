@@ -507,6 +507,8 @@ _.ExpansionFeatures =
 						["coord"] = { 33.7, 68.6, 1530 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(174229),	-- Lantern of the Damned
 							i(174840),	-- Xinlao
 						},
@@ -516,6 +518,8 @@ _.ExpansionFeatures =
 						["coord"] = { 16.8, 66.7, 1530 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(174229),	-- Lantern of the Damned
 						},
 					}),
@@ -524,6 +528,8 @@ _.ExpansionFeatures =
 						["coord"] = { 39.2, 59.6, 1530 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(174229),	-- Lantern of the Damned
 						},
 					}),
@@ -536,6 +542,8 @@ _.ExpansionFeatures =
 							{ 32.4, 44.0, 1530 },
 						},
 						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(173887),	-- Clutch of Ha-Li
 							i(174229),	-- Lantern of the Damned
 						},
@@ -545,6 +553,8 @@ _.ExpansionFeatures =
 						["coord"] = { 28.3, 40.5, 1530 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(174229),	-- Lantern of the Damned
 						},
 					}),
@@ -554,6 +564,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						-- TODO:: determine patrol path
 						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(174229),	-- Lantern of the Damned
 							i(174841),	-- Ren's Stalwart Hound
 						},
@@ -562,11 +574,20 @@ _.ExpansionFeatures =
 						["questID"] = 58295,
 						["coord"] = { 17.2, 11.6, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
+						},
 					}),
 					n(157290, {	-- Jade Watcher
 						["questID"] = 57350,
 						["coord"] = { 26.7, 10.7, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
+							i(174229),	-- Lantern of the Damned
+						},
 					}),
 					n(163042, {	-- Ivory Cloud Serpent
 						--["questID"] = 57350,
@@ -592,6 +613,8 @@ _.ExpansionFeatures =
 						["coord"] = { 46.4, 57.2, 1530 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(174229),	-- Lantern of the Damned
 						},
 					}),
@@ -600,6 +623,8 @@ _.ExpansionFeatures =
 						["coord"] = { 17.9, 37.5, 1530 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(174229),	-- Lantern of the Damned
 						},
 					}),
@@ -610,6 +635,11 @@ _.ExpansionFeatures =
 							{ 23.0, 76.7, 1530 },
 							{ 25.5, 75.8, 1530 },
 							{ 27.1, 71.5, 1530 },
+						},
+						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
+							i(174229),	-- Lantern of the Damned
 						},
 					}),
 					n(155958, {	-- Tashara
@@ -624,6 +654,11 @@ _.ExpansionFeatures =
 						["questID"] = 56332,
 						["coord"] = { 47.5, 63.7, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
+							i(174229),	-- Lantern of the Damned
+						},
 					}),
 					n(157443, {	-- Xiln the Mountain
 						["questID"] = 57358,
@@ -631,6 +666,7 @@ _.ExpansionFeatures =
 						--["coord"] = { 42.2, 43.5, 1530 }, -- NOTE: these were the previous coords. He may have permanently moved, or he has multiple spawn points
 						["isDaily"] = true,
 						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
 							i(174229),	-- Lantern of the Damned
 						},
 					}),
@@ -1319,6 +1355,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["description"] = "Use the fishing pole.",
 						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(174229),	-- Lantern of the Damned
 						},
 					}),
