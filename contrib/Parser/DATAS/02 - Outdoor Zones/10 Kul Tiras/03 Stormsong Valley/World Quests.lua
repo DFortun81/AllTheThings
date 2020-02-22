@@ -68,10 +68,6 @@ _.Zones =
 							i(163601),	-- Overgrown Anchor Weed (QI)
 						},	
 					}),
-					q(53345, {	-- Plunder and Provisions
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53012, {	-- Put Away Your Toys
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -560,6 +556,10 @@ _.Zones =
 					q(53107, {	-- Plunder and Provisions
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+					}),
+					q(53345, {	-- Plunder and Provisions
+						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
 					q(52474, {	-- Poacher Zane

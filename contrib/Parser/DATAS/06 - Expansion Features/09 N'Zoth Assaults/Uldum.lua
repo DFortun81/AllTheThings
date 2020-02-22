@@ -580,19 +580,6 @@ _.ExpansionFeatures =
 							i(174227),	-- Writhing Feeler
 						},
 					}),
-					n(162172, {	-- Aqir Warcaster
-						["questID"] = 58694,
-						["isDaily"] = true,
-						["coords"] = {
-							{ 42.0, 37.8, 1527 },
-							{ 19.2, 59.1, 1527 },
-						},
-						["g"] = {
-							i(174224),	-- Greatsword of Cruelty
-							i(174222),	-- Unspeakable Bloodletter
-							i(174227),	-- Writhing Feeler
-						},
-					}),
 					n(162171, {	-- Captain Dunewalker
 						["questID"] = 58699,
 						["coord"] = { 45.61, 57.79, 1527 },
@@ -1019,9 +1006,10 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 					}),
 					n(160623, {	-- Hungering Miasma (might be 160631 or maybe it's different one)
-						--["questID"] = ,
+						["questID"] = 58206,
 						["coord"] = { 60.0, 39.0, 1527 },
 						["isDaily"] = true,
+						["description"] = "To activate, you must feed it the surrounding oozelings by dragging them on top of it.",
 					}),
 					n(156655, {	-- Korzaran the Slaughterer
 						["questID"] = 57433,
@@ -1163,6 +1151,11 @@ _.ExpansionFeatures =
 					q(58258, {	-- Consuming Maw
 						["lvl"] = 120,
 						["coord"] = { 62.39, 79.31, 1527 },
+						["isWorldQuest"] = true,
+					}),
+					q(57449, {	-- Executor of N'Zoth
+						["lvl"] = 120,
+						["coord"] = { 60.08, 38.09, 1527 },
 						["isWorldQuest"] = true,
 					}),
 					q(57543, {	-- Executor of N'Zoth
@@ -1736,6 +1729,19 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174224),	-- Greatsword of Cruelty
+							i(174227),	-- Writhing Feeler
+						},
+					}),
+					n(162172, {	-- Aqir Warcaster
+						["questID"] = 58694,
+						["isDaily"] = true,
+						["coords"] = {
+							{ 42.0, 37.8, 1527 },
+							{ 19.2, 59.1, 1527 },
+						},
+						["g"] = {
+							i(174224),	-- Greatsword of Cruelty
+							i(174222),	-- Unspeakable Bloodletter
 							i(174227),	-- Writhing Feeler
 						},
 					}),
