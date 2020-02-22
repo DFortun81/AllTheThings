@@ -113,6 +113,7 @@ _.Zones =
 						37450,	-- Saving Stellagosa
 						37656,	-- Fel Machinations
 					},
+					["coord"] = { 37.6, 57.6, 630 },
 					["provider"] = { "n", 90474 },	-- Kor'vas Bloodthorn
 					["g"] = {
 						i(132984),	-- Abandoned Highborne Mana Crystal

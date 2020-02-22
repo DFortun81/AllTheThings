@@ -120,7 +120,7 @@ _.ExpansionFeatures =
 					q(42801, {	-- Back in Black
 						["sourceQuests"] = { 42593 },	-- The Arcane Way
 						["provider"] = { "n", 108782 },	-- Belath Dawnblade
-						["coord"] = { 57.0, 53.1, 720 },
+						["coord"] = { 57.5, 52.3, 720 },
 						["lvl"] = 103,
 					}),
 					q(42679, {	-- Broken Warriors
@@ -404,9 +404,12 @@ _.ExpansionFeatures =
 					}),
 					q(42522, {	-- Leader of the Illidari
 						["sourceQuests"] = { 42510 },
-						["provider"] = { "n", 107724 },	-- Kayn Sunfury
-						["coord"] = { 57.7, 51.7, 721 },
+						["coord"] = { 58.3, 51.5, 721 },
 						["lvl"] = 103,
+						["providers"] = {
+							{ "n", 107724 },	-- Kayn Sunfury
+							{ "n", 107723 },	-- Altruis the Sufferer
+						},
 					}),
 					q(42681, {	-- Loramus, Is That You?
 						["sourceQuests"] = { 42679 },	-- Broken Warriors
@@ -444,6 +447,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 108782 },	-- Belath Dawnblade
 						["coord"] = { 57.6, 53.3, 720 },
 						["lvl"] = 110,
+					}),
+					q(42594, {	-- Move Like No Other
+						["maps"] = { 627 },	-- Dalaran
+						["sourceQuests"] = { 42593 },	-- The Arcane Way
+						["classes"] = { DEMONHUNTER },
+						["coord"] = { 26.0, 52.0, 627 },
+						["provider"] = { "n", 107968 },	-- Archmage Lan'dalock
 					}),
 					q(44694, {	-- One Battle at a Time
 						["sourceQuests"] = { 42669 },	-- Preparations for Invasion
@@ -573,7 +583,7 @@ _.ExpansionFeatures =
 					q(42593, {	-- The Arcane Way
 						["sourceQuests"] = { 42522 },	-- Leader of the Illidari
 						["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
-						["coord"] = { 59.6, 50.3, 720 },
+						["coord"] = { 59.9, 48.7, 720 },
 						["lvl"] = 103,
 					}),
 					q(37447, {	-- The Blood of Demons

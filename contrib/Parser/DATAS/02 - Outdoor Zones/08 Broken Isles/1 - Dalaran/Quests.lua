@@ -968,12 +968,6 @@ _.Zones =
 						{ "n", 115465 },	-- Archmage Modera
 					},
 				}),
-				q(42594, {	-- Move Like No Other
-					["sourceQuests"] = { 42593 },	-- The Arcane Way
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 25.7, 51.5, 627 },
-					["provider"] = { "n", 107968 },	-- Archmage Lan'dalock
-				}),
 				q(45909, {	-- Navarrogg's Gift
 					["sourceQuests"] = { 45627 },	-- Feltotem's Fall
 					["provider"] = { "n", 90418 },	-- Archmage Modera
