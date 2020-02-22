@@ -21,11 +21,11 @@ _.Zones =
 				}),
 				fp(2080, {	-- Grimwatt's Crash, Nazmir [Alliance] (Confirmed by Vandiel)
 					["description"] = "Grimwatt's Crash, Nazmir \n\nRequires completion of Mission Report: Grimwatt's Crash and related quest line to unlock.",
-					["coord"] = { 34.2, 63.2863 },
+					["coord"] = { 34.2, 63.2, 863 },
 				}),
 				fp(2161, {	-- Redfield's Watch, Nazmir [Alliance]
 					["description"] = "Redfield's Watch, Nazmir",
-					["coord"] = { 50.8, 20.8863 },
+					["coord"] = { 50.8, 20.8, 863 },
 				}),
 				fp(1954, {	-- Zo'bal Ruins, Nazmir [Horde]
 					["description"] = "Zo'bal Ruins, Nazmir",
