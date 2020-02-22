@@ -179,7 +179,7 @@ _.Zones =
 					}),
 				}),
 				n(125214, {	-- Krubbs
-					["questID"] = 50355,
+					["questID"] = 48052,
 					["coord"] = { 75.8, 36.3, 863 },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(161110),	-- Crusty Chitin Armguards
