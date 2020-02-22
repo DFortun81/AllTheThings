@@ -336,6 +336,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							i(133477), 	-- Tunic of the Ranger Lord
 							i(133449), 	-- Cord of Reconstitution
 							i(133475), 	-- Greaves of the Penitent Knight
+							i(35303),	-- Pattern: Gloves of the Living Touch (BoP version)
 						},
 					})
 				}

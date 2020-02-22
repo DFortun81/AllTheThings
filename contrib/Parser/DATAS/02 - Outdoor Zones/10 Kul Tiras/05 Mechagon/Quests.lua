@@ -972,6 +972,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
+				q(55378, {	-- Rustbolt Requisitions: Shimmerscale (A)
+					["provider"] = { "n", 149813 },	-- Gila Crosswires
+					["coord"] = { 77.7, 40.4, 1462 },
+					["races"] = ALLIANCE_ONLY,
+					["isDaily"] = true,
+				}),
 				q(55382, {	-- Rustbolt Requisitions: Shimmerscale (H)
 					["provider"] = { "n", 150563 },	-- Skaggit
 					["coord"] = { 73.8, 26.0, 1462 },
