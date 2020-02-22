@@ -9,39 +9,39 @@ _.Zones =
 			n(-38, {	-- Professions
 				prof(182, {	-- Herbalism
 					q(51312, {	-- Aromatic Pollenator
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = 182,	-- Herbalism (A)
 						["description"] = "This drops from |cFFFFD700Siren's Pollen|r and can drop at any herbalism level. You can only turn it in at Level 50 Kul Tiran Herbalism.",
 						["itemID"] = 159877,	-- Dead Pollen-Covered Bee
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(51447, {	-- Aromatic Pollenator
+					q(51447, {	-- Aromatic Pollenator (H)
 						["requireSkill"] = 182,	-- Herbalism
 						["description"] = "This drops from |cFFFFD700Siren's Pollen|r and can drop at any herbalism level. You can only turn it in at Level 50 Kul Tiran Herbalism.",
 						["itemID"] = 159877,	-- Dead Pollen-Covered Bee
 						["races"] = HORDE_ONLY,
 					}),
-					q(48758, {	-- Disgustingly Damp Flower
+					q(48758, {	-- Disgustingly Damp Flower (A)
 						["sourceQuests"] = { 51313 },	-- Learn From the Best
 						["requireSkill"] = 182,	-- Herbalism
 						["description"] = "This drops from |cFFFFD700Siren's Pollen|r and can drop at any herbalism level. You can only turn it in at Level 150 Kul Tiran Herbalism.",
 						["itemID"] = 159956,	-- Disgustingly Damp Flower
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(51451, {	-- Disgustingly Damp Flower
+					q(51451, {	-- Disgustingly Damp Flower (H)
 						["sourceQuests"] = { 51448 },	-- Learn From the Best
 						["requireSkill"] = 182,	-- Herbalism
 						["description"] = "This drops from |cFFFFD700Siren's Pollen|r and can drop at any herbalism level. You can only turn it in at Level 150 Kul Tiran Herbalism.",
 						["itemID"] = 159956,	-- Disgustingly Damp Flower
 						["races"] = HORDE_ONLY,
 					}),
-					q(51360, {	-- Enormous Anchor Pod
+					q(51360, {	-- Enormous Anchor Pod (A)
 						["sourceQuests"] = { 51016 },	-- Seeking More Knowledge
 						["requireSkill"] = 182,	-- Herbalism
 						["description"] = "This drops from |cFFFFD700Anchor Weed|r and can drop at any herbalism level.  You can only turn it in at Level 150 Kul Tiran Herbalism.",
 						["itemID"] = 160035,	-- Enormous Anchor Pod
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(51480, {	-- Enormous Anchor Pod
+					q(51480, {	-- Enormous Anchor Pod (H)
 						["sourceQuests"] = { 51482 },	-- Seeking More Knowledge
 						["requireSkill"] = 182,	-- Herbalism
 						["description"] = "This drops from |cFFFFD700Anchor Weed|r and can drop at any herbalism level. You can only turn it in at Level 150 Kul Tiran Herbalism.",

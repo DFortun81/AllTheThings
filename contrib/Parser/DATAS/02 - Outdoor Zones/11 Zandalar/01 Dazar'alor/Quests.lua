@@ -430,8 +430,9 @@ _.Zones =
 					},
 				}),
 				q(47103, {	-- Journey to Nazmir
-					["provider"] = { "n", 133050 },
+					["coord"] = { 41.1, 66.8, 1164 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 133050 },
 					["sourceQuests"] = { 47512 },	-- Nazmir
 				}),
 				q(47512, {	-- Nazmir
@@ -441,8 +442,9 @@ _.Zones =
 					["sourceQuest"] = 52131,	-- We Need Each Other
 				}),
 				q(48535, {	-- Nazmir, the Forbidden Swamp
-					["provider"] = { "n", 126549 },
+					["coord"] = { 51.6, 41.2, 1165 },
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 126549 },
 					["sourceQuests"] = { 47103 },	-- Journey to Nazmir
 				}),
 				q(47433, {	-- Offensively Defensive
