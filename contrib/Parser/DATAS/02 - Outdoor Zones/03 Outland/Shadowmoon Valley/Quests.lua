@@ -303,6 +303,7 @@ _.Zones =
 				q(10481, {	-- Enraged Spirits of Air
 					["provider"] = { "n", 21024 },	-- Earthmender Torlok
 					["coord"] = { 42.1, 45.0, 104 },
+					["sourceQuests"] = { 10480 },	-- Enraged Spirits of Water
 					["g"] = {
 						i(30953),	-- Boots of the Skybreaker
 						i(30930),	-- Grips of the Void
