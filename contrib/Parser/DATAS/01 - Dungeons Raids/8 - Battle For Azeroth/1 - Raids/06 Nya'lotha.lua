@@ -447,6 +447,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				n(-17, {	-- Quests
 					q(58374, {	-- Ny'alotha: MOTHER's Guidance
 						["provider"] = { "n", 160177 },	-- Wrathion
+						["cost"] = {
+							{ "i", 174909, 4 },	-- Dragon Heart x4
+							{ "i", 174911, 4 },	-- Prophetic Eye x4
+							{ "i", 174064, 4 },	-- Titan Core x4
+						},
 					}),
 				}),
 				n(0, {	-- Zone Drops

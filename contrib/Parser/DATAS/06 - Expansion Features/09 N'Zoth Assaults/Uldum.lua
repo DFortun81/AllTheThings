@@ -1217,7 +1217,7 @@ _.ExpansionFeatures =
 					}),
 					q(57590, {	-- Spirit Drinker
 						["lvl"] = 120,
-						--["coord"] = { 58.0, 74.0, 1527 },
+						["coord"] = { 58.0, 74.0, 1527 },
 						["isWorldQuest"] = true,
 					}),
 					q(57591, {	-- Spirit Drinker

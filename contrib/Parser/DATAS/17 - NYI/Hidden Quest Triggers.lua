@@ -2235,7 +2235,8 @@ _.NeverImplemented =
 		q(58543),	-- kill ra-den - either the wing clear OR the beacon placement
 		q(58544),	-- kill ra-den - either the wing clear OR the beacon placement
 		q(58545),	-- triggered together with 58543, 58544 and 59565. My first ever kill of Ra-den (happened on heroic)
-		q(58527),	-- combined 15 nyalotha pages
+		q(58527),	-- combined 15 Encrypted Ny'alothan Text
+		q(58528),	-- combined 30 Encrypted Ny'alothan Text
 		q(59567),	-- kill Carapace of N'Zoth (Fury of N'Zoth)
 		
 		-- World Bosses
