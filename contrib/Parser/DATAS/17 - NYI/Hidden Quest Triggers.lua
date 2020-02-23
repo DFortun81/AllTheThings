@@ -1366,19 +1366,19 @@ _.NeverImplemented =
 		q(54704),	-- War Campaign - triggered when turning in "Time for War"
 		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track
 		q(53532),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Akunda". Makes the loa book available to read in The Great Seal
-		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Bwonsamdi". Makes the loa book available to read in The Great Seal
+		q(53534),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Bwonsamdi". Makes the loa book available to read in The Great Seal
 		q(53535),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Gonk". Makes the loa book available to read in The Great Seal
 		q(53536),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Gral". Makes the loa book available to read in The Great Seal
-		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Hir'eek". Makes the loa book available to read in The Great Seal
+		q(53537),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Hir'eek". Makes the loa book available to read in The Great Seal
 		q(53538),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Jani". Makes the loa book available to read in The Great Seal
 		q(53539),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Kimbul". Makes the loa book available to read in The Great Seal
-		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Krag'wa". Makes the loa book available to read in The Great Seal
+		q(53540),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Krag'wa". Makes the loa book available to read in The Great Seal
 		q(53541),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Pa'ku". Makes the loa book available to read in The Great Seal
 		q(53542),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Rezan". Makes the loa book available to read in The Great Seal
 		q(53543),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Sethraliss". Makes the loa book available to read in The Great Seal
 		q(53544),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Shadra". Makes the loa book available to read in The Great Seal
 		q(53546),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Torcali". Makes the loa book available to read in The Great Seal
-		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Torga". Makes the loa book available to read in The Great Seal
+		q(53547),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Torga". Makes the loa book available to read in The Great Seal
 		q(53548),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Zandalar". Makes the loa book available to read in The Great Seal
 
 	--	HONEYBACK HIVE
@@ -1611,7 +1611,6 @@ _.NeverImplemented =
 		q(54910),	-- Opening a Darkshore chest
 		q(54911),	-- Opening a Darkshore chest
 		q(54912),	-- Opening a Darkshore chest
-		q(53534),	-- when entering The Necropolis for the first time during "The Necropolis"
 		q(49695),	-- immediately after channeling on the drum finishes during "A Tribute For Death"
 		q(49367, {	-- when returning to Zo'bal Ruins during "We'll Meet Again"
 			["isWorldQuest"] = true,	-- without this field, this quest inexplicably shows up in /attwq for some characters
@@ -1644,6 +1643,9 @@ _.NeverImplemented =
 		q(50844),	-- give Jani the Charged Ranishu Antennae in Vol'dun
 		q(50889),	-- give Jani the Polished Ringhorn Hoof in Vol'dun
 		q(50891),	-- give Jani the Sturdy Redrock Jaw in Vol'dun
+		q(50440),	-- give Jani the Nazwathan Relic in Nazmir
+		q(50436),	-- give Jani the Snapjaw Tail in Nazmir
+		q(50434),	-- give Jani the Vilescale Pearl in Nazmir
 		
 	--	Drustvar
 		-- Bonus Objectives

@@ -144,60 +144,31 @@ _.Zones =
 				ach(12482, {	-- Get Hek'd
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["g"] = {
-						{	-- Nazwathan Relic
-							["itemID"] = 157802,
-							["provider"] = { "n", 133845 },	-- Jani
+						i(157802, {	-- Nazwathan Relic
 							["questID"] = 50441,	-- Loot Treasure
-							["sourceQuest"] = 50440,	--  Item Turn-In
-							["coord"] = { 68.50, 32.77, 863 },	-- Nazmir (Nazwatha)
+							["coord"] = { 68.50, 32.77, 863 },
 							["crs"] = {
 								131157,	-- Nazwathan Blood Bender
 								131155,	-- Nazwathan Guardian
 								131156,	-- Nazwathan Hulk
 							},
 							["g"] = {
-								{	-- Communing with Jani
-									["questID"] = 50440,	-- Item Turn-In
-									["npcID"] = -599,	-- Communing with Jani
-									["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
-									["provider"] = { "n", 133845 },	-- Jani
-									["coord"] = { 68.50, 32.77 },
-									["sourceQuests"] = {
-										51145,	-- Curse of Jani [Alliance]
-										47442,	-- Curse of Jani [Horde]
-									},
-								},
 								crit(8),	-- Nazwathan Relic
 							},
-						},
-						{	-- Snapjaw Tail
-							["itemID"] = 157801,	-- Snapjaw Tail
-							["provider"] = { "n", 133840 },	-- Jani
+						}),
+						i(157801, {	-- Snapjaw Tail
 							["questID"] = 50437,	-- Loot Treasure
-							["sourceQuest"] = 50436,	-- Item Turn-In
 							["coord"] = { 34.04, 75.07, 863 },
 							["crs"] = {
 								126723,	-- Primal Snapjaw
 								120588,	-- Rivermarsh Snapjaw
 							},
 							["g"] = {
-								{	-- Communing with Jani
-									["npcID"] = -601,	-- Communing with Jani
-									["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
-									["provider"] = { "n", 133840 },	-- Jani
-									["questID"] = 50436,	-- Item Turn-In
-									["sourceQuests"] = {
-										51145,	-- Curse of Jani [Alliance]
-										47442,	-- Curse of Jani [Horde]
-									},
-									["coord"] = { 34.04, 75.07, 863 },
-								},
 								crit(5),	-- Snapjaw Tail
 							},
-						},
-						{	-- Taking the Loa Road
+						}),
+						q(50444, {	-- Taking the Loa Road
 							["provider"] = { "n", 136608 },	-- Jani
-							["questID"] = 50444,	-- Taking the Loa Road
 							["coord"] = { 53.99, 74.14, 863 },
 							["description"] = "Click on trash pile to start quest.",
 							["sourceQuests"] = {
@@ -207,13 +178,10 @@ _.Zones =
 							["g"] = {
 								crit(11),	-- Taking the Loa Road
 							},
-						},
-						{	-- Vilescale Pearl
-							["itemID"] = 157797,	-- Vilescale Pearl
-							["provider"] = { "n", 133828 },	-- Jani
+						}),
+						i(157797, {	-- Vilescale Pearl
 							["questID"] = 50435,	-- Loot Treasure
-							["coord"] = { 80.86, 46.79, 863 },	-- Nazmir (Krag'wa's Shore)
-							["sourceQuest"] = 50434,	-- Item Turn-In
+							["coord"] = { 80.86, 46.79, 863 },
 							["crs"] = {
 								125328,	-- Priestess Zaldraxia
 								125393,	-- Vilescale Guardian
@@ -221,23 +189,13 @@ _.Zones =
 								125366,	-- Vilescale Poacher
 							},
 							["g"] = {
-								{	-- Communing with Jani
-									["npcID"] = -600,	-- Communing with Jani
-									["icon"] = "Interface\\Icons\\ability_priest_clarityofpower",
-									["provider"] = { "n", 133828 },	-- Jani
-									["questID"] = 50434,	-- Item Turn-In
-									["coord"] = { 80.86, 46.79, 863 },
-									["sourceQuests"] = {
-										51145,	-- Curse of Jani [Alliance]
-										47442,	-- Curse of Jani [Horde]
-									},
-								},
 								crit(2),	-- Vilescale Parl
 							},
-						},
+						}),
 					},
 				}),
 				ach(13028, {	-- Hoppin' Sad
+					-- TODO:: maybe add individual records here, one for each coord and respective ID
 					["coords"] = {
 						{ 44.62, 92.78, 863 },	-- q(53422),
 						{ 28.89, 83.16, 863 },	-- q(53423),
@@ -252,9 +210,12 @@ _.Zones =
 					},
 				}),
 				ach(13048, {	-- Life Finds a Way... To Die!
-					crit(4, {		-- Makatau the Pterrordax slain
-						["coord"] = { 26.31, 73.37 },
-					}),
+					["collectible"] = false,
+					["g"] = {
+						crit(4, {		-- Makatau the Pterrordax slain
+							["coord"] = { 26.31, 73.37 },
+						}),
+					},
 				}),
 				ach(13027, {	-- Mushroom Harvest
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
