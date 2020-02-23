@@ -806,6 +806,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161405 },	-- Taoshi
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
+					q(58763, {	-- Halting Production
+						["coord"] = { 67.0, 40.0, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 161405 },	-- Taoshi
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
 					q(58758, {	-- Rampaging Destroyers
 						["coord"] = { 38.4, 75.0, 1530 },
 						["isDaily"] = true,
@@ -834,6 +840,12 @@ _.ExpansionFeatures =
 						["coord"] = { 38.4, 75.1, 1530 },
 						["isDaily"] = true,
 						["provider"] = { "n", 158673 },	-- Kun Autumnlight
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
+					q(58757, {	-- Testing the Untested
+						["coord"] = { 44.7, 73.8, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
 					q(58759, {	-- The Empress' Guard
