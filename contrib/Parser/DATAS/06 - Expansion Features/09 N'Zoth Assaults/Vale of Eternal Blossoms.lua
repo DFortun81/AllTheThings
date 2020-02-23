@@ -860,17 +860,26 @@ _.ExpansionFeatures =
 						["questID"] = 58300,
 						["coord"] = { 20.0, 74.6, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160878, {	-- Buh'gzaki the Blasphemous
 						["questID"] = 58307,
 						["coord"] = { 6.5, 70.7, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+						},
 					}),
 					n(160893, {	-- Captain Vor'lek
 						["questID"] = 58308,
 						["coord"] = { 04.0, 60.8, 1530 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174220),	-- Ambered Greatstaff
 							i(174223),	-- Ooze-Imbued Rifle
 						},
 					}),
@@ -878,12 +887,18 @@ _.ExpansionFeatures =
 						["questID"] = 58304,
 						["coord"] = { 26.7, 66.4, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160874, {	-- Drone Keeper Ak'thet
 						["questID"] = 58305,
 						["coord"] = { 10.7, 41.0, 1530 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
 							i(174226)	-- Paragon's Will
 						},
 					}),
@@ -893,27 +908,48 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
+							i(174226)	-- Paragon's Will
 						},
 					}),
 					n(160810, {	-- Harbinger Il'koxik
 						["questID"] = 58299,
 						["coord"] = { 28.9, 52.7, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160868, {	-- Harrier Nir'verash
 						["questID"] = 58303,
 						["coord"] = { 12.8, 51.3, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160826, {	-- Hive-Guard Naz'ruzek
 						["questID"] = 58301,
 						["coord"] = { 21.1, 62.7, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160930, {	-- Infused-Amber Ooze
 						["questID"] = 58312,
 						["coord"] = { 18.5, 66.5, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160920, {	-- Kal'tik the Blight
 						["questID"] = 58310,
@@ -933,16 +969,28 @@ _.ExpansionFeatures =
 							{ 27.4, 37.7, 1530 },
 							{ 25.9, 35.6, 1530 },
 						},
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160922, {	-- Needler Zhesalla
 						["questID"] = 58311,
 						["coord"] = { 14.7, 37.2, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160906, {	-- Skiver
 						["questID"] = 58309,
 						["coord"] = { 25.4, 45.7, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+						},
 					}),
 				}),
 				n(-34,  {	-- World Quests
