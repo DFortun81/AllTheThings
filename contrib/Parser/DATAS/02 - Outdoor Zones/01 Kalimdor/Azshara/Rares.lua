@@ -45,7 +45,7 @@ _.Zones =
 						i(6536),	-- Willow Vest
 					},
 				}),
-				n(44372, { 	-- Avalanchion
+				n(14464, { 	-- Avalanchion
 					["description"] = "This was only available during the Elemental Invasion.",
 					["u"] = 43,	-- Removed NPCs
 					["g"] = {
