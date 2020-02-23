@@ -4709,6 +4709,7 @@ app.FACTION_RACES = {
 		30,	-- Lightforged
 		32,	-- Kul Tiran
 		34,	-- Dark Iron
+		37,	-- Mechagnome
 	},
 	[2] = {
 		2,	-- Orc
@@ -4721,6 +4722,7 @@ app.FACTION_RACES = {
 		27,	-- Nightborne
 		28,	-- Highmountain
 		31,	-- Zandalari
+		35,	-- Vulpera
 		36,	-- Mag'har
 	}
 };
