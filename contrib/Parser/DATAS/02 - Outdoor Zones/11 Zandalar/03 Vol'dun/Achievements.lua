@@ -7,24 +7,6 @@ _.Zones =
 		m(864, {	-- Vol'dun
 			n(-4, {	-- Achievements
 				ach(12943),		-- Adventurer of Vol'dun
-				ach(13020, {	-- Bow to Your Masters
-					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						crit(3, {	-- Akunda respected
-							["npcID"] = 128152,	-- Akunda
-							["coord"] = { 53.18, 91.56, 864 },
-						}),
-						crit(5, {	-- Kimbul respected
-							["npcID"] = 123052,	-- Kimbul
-							["coord"] = { 57.00, 10.88, 864 },
-						}),
-						crit(9, {	-- Avatar of Sethraliss respected
-							["npcID"] = 135210,	-- Avatar of Sethraliss
-							["coord"] = { 27.04, 52.58, 864 },
-						}),
-					}
-				}),
 				ach(13036, {	-- A Loa of a Tale
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["g"] = {
@@ -47,6 +29,24 @@ _.Zones =
 							},
 						}),
 					},
+				}),
+				ach(13020, {	-- Bow to Your Masters
+					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(3, {	-- Akunda respected
+							["npcID"] = 128152,	-- Akunda
+							["coord"] = { 53.18, 91.56, 864 },
+						}),
+						crit(5, {	-- Kimbul respected
+							["npcID"] = 123052,	-- Kimbul
+							["coord"] = { 57.00, 10.88, 864 },
+						}),
+						crit(9, {	-- Avatar of Sethraliss respected
+							["npcID"] = 135210,	-- Avatar of Sethraliss
+							["coord"] = { 27.04, 52.58, 864 },
+						}),
+					}
 				}),
 				ach(13018, {	-- Dune Rider
 					["coords"] = {
@@ -308,6 +308,14 @@ _.Zones =
 							}),
 						},
 					}),
+				}),
+				ach(13014, {	-- Vorrik's Champion
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(1),	-- Faithless slain with Vorrik's Bulwark slain
+						crit(2),	-- Faithless slain with Rakjan the Unbroken slain
+						crit(3),	-- Faithless charged with a Battle Krolusk slain
+					},
 				}),
 			}),
 		}),

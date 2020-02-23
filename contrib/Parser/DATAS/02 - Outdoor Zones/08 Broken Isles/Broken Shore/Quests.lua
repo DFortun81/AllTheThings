@@ -838,7 +838,6 @@ _.Zones =
 				q(47045),	-- Further Progress
 				q(46125),	-- Furthering Knowledge
 				q(46501),	-- Grave Robbin'
-				q(46744),	-- Greater Power for Greater Threats
 				q(46320),	-- Hope For a Cure
 				q(45831),	-- Hunter
 				q(40136),	-- Immaculate Stonehide Leather

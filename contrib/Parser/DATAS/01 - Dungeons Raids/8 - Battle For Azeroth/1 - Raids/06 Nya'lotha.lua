@@ -63,6 +63,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(174141),	-- Boots of Manifest Shadow
 							i(173944),	-- Forbidden Obsidian Claw
 							i(173940),	-- Sigil of Warding
+							i(174446),	-- Fractured Obsidian Claw (pet)
 						},
 					}),
 					e(2369, {	-- The Prophet Skitra
