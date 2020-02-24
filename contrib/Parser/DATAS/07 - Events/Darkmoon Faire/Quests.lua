@@ -643,7 +643,7 @@ _.WorldEvents =
 				},
 			}),
 			q(29455, {	-- Target: Turtle
-				["provider"] = { "n", 29455 },	-- Jessica Rogers
+				["provider"] = { "n", 54485 },	-- Jessica Rogers
 				["isDaily"] = true,
 				["coord"] = { 51.5, 77.1, 407 },
 				["g"] = {
