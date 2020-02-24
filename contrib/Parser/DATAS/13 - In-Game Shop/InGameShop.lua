@@ -43,6 +43,7 @@ _.InGameShop =
 		un(35, i(160588)),	-- Cap'n Crackers
 		un(2, i(70099)),	-- Cenarion Hatchling
 		un(35, i(92707)),	-- Cinder Kitten
+		un(35, battlepet(2623)),	-- Dottie (no in-game item)
 		un(2, i(69847)),	-- Guardian Cub (Original Version which was bound for 24h)
 		un(7, i(72068)),	-- Guardian Cub
 		un(2, i(49662, {	-- Gryphon Hatchling
