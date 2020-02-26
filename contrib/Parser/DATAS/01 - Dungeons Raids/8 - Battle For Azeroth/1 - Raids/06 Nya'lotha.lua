@@ -233,6 +233,11 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				n(-17, {	-- Quests
 					q(58373, {	-- Ny'alotha: MOTHER's Guidance
 						["provider"] = { "n", 160177 },	-- Wrathion
+						["cost"] = {
+							{ "i", 174910, 4 },	-- 4x Dragon Heart
+							{ "i", 174913, 4 },	-- 4x Prophetic Eye
+							{ "i", 174063, 4 },	-- 4x Titan Core
+						},
 					}),
 				}),
 				n(0, {	-- Zone Drops
@@ -671,6 +676,16 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				n(-4, {	-- Achievements
 					ach(14146, {	-- Glory of the Ny'alotha Raider
 						i(174861),	-- Wriggling Parasite
+					}),
+				}),
+				n(-17, {	-- Quests
+					q(58375, {	-- Ny'alotha: MOTHER's Guidance
+						["provider"] = { "n", 160177 },	-- Wrathion
+						["cost"] = {
+							{ "i", 174908, 4 },	-- 4x Dragon Heart
+							{ "i", 174912, 4 },	-- 4x Prophetic Eye
+							{ "i", 174065, 4 },	-- 4x Titan Core
+						},
 					}),
 				}),
 				n(0, {	-- Zone Drops

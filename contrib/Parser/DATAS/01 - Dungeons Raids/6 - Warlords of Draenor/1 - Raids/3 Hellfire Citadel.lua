@@ -337,6 +337,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							39504,	-- The Fel Spire [Heroic]
 							39505,	-- The Fel Spire [Mythic]
 						},
+						["cost"] = { { "i", 128419, 4 } },	-- 4x Fel Essence
 					}),
 					q(39499, {	-- Well of Souls
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
@@ -344,6 +345,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							39500,	-- Well of Souls [Heroic]
 							39501,	-- Well of Souls [Mythic]
 						},
+						["cost"] = { { "i", 128416, 4 } },	-- 4x Soul Remnant
 					}),
 				}),
 				n(0, {	-- Zone Drop
@@ -739,10 +741,12 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					q(39504, {	-- The Fel Spire [Heroic]
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["altQuests"] = { 39505 },	-- The Fel Spire [Mythic]
+						["cost"] = { { "i", 128420, 4 } },	-- 4x Fel Essence
 					}),
 					q(39500, {	-- Well of Souls [Heroic]
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["altQuests"] = { 39501 },	-- Well of Souls [Mythic]
+						["cost"] = { { "i", 128417, 4 } },	-- 4x Soul Remnant
 					}),
 				}),
 				n(0, {	-- Zone Drop
@@ -1136,9 +1140,11 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				n(-17, {	-- Quests
 					q(39505, {	-- The Fel Spire [Mythic]
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
+						["cost"] = { { "i", 128421, 4 } },	-- 4x Fel Essence
 					}),
 					q(39501, {	-- Well of Souls [Mythic]
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
+						["cost"] = { { "i", 128418, 4 } },	-- 4x Soul Remnant
 					}),
 				}),
 				n(0, {	-- Zone Drop
