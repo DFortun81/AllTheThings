@@ -715,6 +715,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 162393 },	-- Gila Crosswires
 					["isBreadcrumb"] = true,
+					["lvl"] = 120,
 				}),
 				q(27361, {	-- Favored of the Light
 					["provider"] = { "n", 376 },	-- High Priestess Laurena
@@ -1303,6 +1304,7 @@ _.Zones =
 						49556,	-- Hero's Call: Jade Forest!
 						49866,	-- To Pandaria!
 					},
+					["lvl"] = 80,
 				}),
 				q(46728, {	-- The Nation of Kul Tiras
 					["provider"] = { "n", 120756 },	-- Anduin Wyrnn

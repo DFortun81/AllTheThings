@@ -933,6 +933,7 @@ _.ExpansionFeatures =
 						-- ^This puts just this quest in SW.  It looks weird without context, but the only alternative I can think of is attaching the SW map at the very beginning of the achievement with the Boralus map, which would list the entirety of Ready for War in SW, which doesn't make much sense.
 						["coord"] = { 85.7, 31.7, 84 },	-- Stormwind City
 						["sourceQuests"] = { 52790 },	-- An End to the Killing
+						["lvl"] = 120,
 						["g"] = {
 							follower(1062),	-- Shandris Feathermoon
 						},
