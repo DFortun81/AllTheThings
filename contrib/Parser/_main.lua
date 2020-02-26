@@ -143,6 +143,30 @@ ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 	DEMONHUNTER,
 };
 
+-- Common Custom NPCs used for headers
+COMMON_BOSS_DROPS = -1;
+QUESTS = -17;
+RARES = -16;
+VENDORS = -2;
+ZONEDROPS = 0;
+
+-- Professions
+ALCHEMY = 171;
+ARCHAEOLOGY = 794;
+BLACKSMITHING = 164;
+COOKING = 185;
+ENCHANTING = 333;
+ENGINEERING = 202;
+FIRST_AID = 129;
+FISHING = 356;
+HERBALISM = 182;
+INSCRIPTION = 773;
+JEWELCRAFTING = 755;
+LEATHERWORKING = 165;
+MINING = 186;
+SKINNING = 393;
+TAILORING = 197;
+
 ItemClassInfo = {
 	{
 		"Soul Bag", -- [1]
