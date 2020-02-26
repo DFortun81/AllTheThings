@@ -609,6 +609,7 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(174224),	-- Greatsword of Cruelty
 							i(174222),	-- Unspeakable Bloodletter
+							i(174227),	-- Writhing Feeler
 						},
 					}),
 					n(155531, {	-- Infested Wastewander Captain
@@ -628,6 +629,7 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(174224),	-- Greatsword of Cruelty
 							i(174475),	-- Stinky Sack (pet)
+							i(174222),	-- Unspeakable Bloodletter
 							i(174227),	-- Writhing Feeler
 						},
 						["description"] = "He is underground.",
@@ -676,6 +678,7 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(174476),	-- Black Chitinous Plate (pet)
 							i(174224),	-- Greatsword of Cruelty
+							i(174222),	-- Unspeakable Bloodletter
 							i(174227),	-- Writhing Feeler
 						},
 					}),

@@ -436,7 +436,7 @@ _.Zones =
 								i(169768),	-- Heart of a Champion
 							},
 						}),
-						-- War Campain finished
+						-- War Campaign finished
 						q(56185, {	-- Whispers of N'zoth (A)
 							["provider"] = { "n", 154464 },	-- Earthen Guardian
 							["coord"] = { 74.9, 15.1, 1161 },
@@ -728,6 +728,26 @@ _.Zones =
 								i(169223, {	-- Ashjra'kamas, Shroud of Resolve
 									["bonusID"] = 6283,	 -- (Rank 12 Appearence)
 								}),
+								i(171355),	-- Voidborn Core
+							},
+						}),
+						q(57399, {	-- Reconstructing "The Final Truth" (Rank 13)
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57398,	-- Walking in the Darkness
+							["cost"] = { { "i", 174785, 4 } },	-- Torn Page of "The Final Truth"
+							["g"] = {
+								i(171355),	-- Voidborn Core
+							},
+						}),
+						q(57400, {	-- Reconstructing "The Final Truth" (Rank 14)
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57399,	-- Reconstructing "The Final Truth"
+							["cost"] = { { "i", 174785, 6 } },	-- Torn Page of "The Final Truth"
+							["g"] = {
 								i(171355),	-- Voidborn Core
 							},
 						}),
