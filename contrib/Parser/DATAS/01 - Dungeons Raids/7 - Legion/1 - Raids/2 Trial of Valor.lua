@@ -10,7 +10,11 @@ _.Instances = { tier(7, {	-- Legion
 		["maps"] = { 806, 807, 808 },
 		["lvl"] = 110,
 		["g"] = {
-			n(-17, {	-- Quests 			
+			n(-17, {	-- Quests
+				q(44868, {	-- Trial of Valor: Odyn's Judgment
+					["sourceQuest"] = 44729,	-- Trial of Valor: Odyn's Favor
+					["provider"] = { "n", 114263 },	-- Odyn
+				}),
 				q(45088, {	-- Trial of Valor: The Lost Army
 					["sourceQuest"] = 44729,	-- Trial of Valor: Odyn's Favor
 					["provider"] = { "n", 114263 },	-- Odyn

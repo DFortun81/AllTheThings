@@ -765,7 +765,8 @@ _.Zones =
 				q(44338, {	-- Goddess Watch Over You
 					["provider"] = { "n", 113686 },	-- Archmage Khadgar
 				}),
-				q(46744, {	-- Greater Power for Greater Threats -- removed?
+				q(46744, {	-- Greater Power for Greater Threats
+					["u"] = 40,
 					["isBreadcrumb"] = true,
 					["providers"] = {
 						{ "n", 90417 },	-- Archmage Khadgar
