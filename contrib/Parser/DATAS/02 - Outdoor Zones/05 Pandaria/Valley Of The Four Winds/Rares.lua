@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(376, {	-- Valley of the Four Winds				
-			n(-16,  {	-- Rares
+			n(RARES, {
 				n(51059, {	-- Blackhoof
 					["coords"] = {
 						{ 39.6, 57.6, 376 },

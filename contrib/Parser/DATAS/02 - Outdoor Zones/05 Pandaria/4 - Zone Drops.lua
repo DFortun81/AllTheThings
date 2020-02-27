@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(424, {	-- Pandaria
-		n(0, {	-- Zone Drops
+		n(ZONEDROPS, {
 			["order"] = "04",
 			["maps"] = {
 				422,	-- Dread Wastes

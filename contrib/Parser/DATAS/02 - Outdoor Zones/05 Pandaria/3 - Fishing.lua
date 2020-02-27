@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(424, {	-- Pandaria
-		prof(356, {	-- Fishing
+		prof(FISHING, {
 			["order"] = "03",
 			["maps"] = {
 				422,	-- Dread Wastes

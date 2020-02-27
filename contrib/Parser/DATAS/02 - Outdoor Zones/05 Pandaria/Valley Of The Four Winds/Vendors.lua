@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(376, {	-- Valley of the Four Winds				
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(58713, {	-- Anthea Ironpaw <Master of the Wok>
 					["coord"] = { 52.8, 51.8, 376 },
 					["g"] = {

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(388, {	-- Townlong Steppes
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(30954, {	-- A Blade is a Blade
 					["coord"] = { 39.3, 62.2, 388 },
 					["isDaily"] = true,

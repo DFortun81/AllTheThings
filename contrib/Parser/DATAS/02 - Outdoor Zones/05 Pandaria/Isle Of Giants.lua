@@ -17,7 +17,7 @@ _.Zones =
 						["coord"] = { 51.8, 75.4, 507 },
 					}),
 				}),
-				n(-16, {	-- Rares
+				n(RARES, {
 					n(70096, { 		-- War-God Dokah
 						["coords"] = {
 							{ 77.6, 82.6, 507 },
@@ -29,7 +29,7 @@ _.Zones =
 						},
 					}),
 				}),
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(94573, {	-- Direhorn Runt (PET!)
 						["crs"] = { 69983 },	-- Primal Direhorn
 					}),

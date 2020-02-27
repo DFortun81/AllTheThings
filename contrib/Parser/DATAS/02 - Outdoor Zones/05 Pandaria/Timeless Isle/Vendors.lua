@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(554, {	-- Timeless Isle
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(73656, {	-- Crafter Kwon <Arms & Armor Repairs>
 					["coord"] = { 38.5, 46.4, 554 },
 					["g"] = {
