@@ -14,7 +14,7 @@ _.Instances = { tier(1, {	-- Classic
 		},
 		["coord"] = { 54.18, 83.25, 35 },	-- Molten Core, Blackrock Mountain [Blackrock Depths]
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				{
 					["questID"] = 7848,	-- Attunement to the Core
 					["altQuests"] = {
@@ -91,7 +91,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				},
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(16802, {	-- Arcanist Belt (Mage)
 					["crs"] = {
 						11673,	-- Ancient Core Hound
@@ -435,7 +435,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			n(-1, {	-- Common Boss Drop
+			n(COMMON_BOSS_DROPS, {
 				i(18260, {	-- Formula: Enchant Weapon - Healing Power
 					["crs"]	= {
 						12118,	-- Lucifron

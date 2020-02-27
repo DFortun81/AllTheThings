@@ -8,7 +8,7 @@ _.Instances = { tier(1, {	-- Classic
 		["mapID"] = 279,
 		["coord"] = { 55.19, 66.09, 11 },	-- Wailing Caverns, Wailing Caverns [Northern Barrens]
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(26870, {	-- Cleansing the Caverns
 					["provider"] = { "n", 5768 },	-- Ebru
 					["g"] = {
@@ -59,7 +59,7 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "i", 10441 },	-- Glowing Shard
 				}),
 			}),
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(5783, {	-- Kalldan Felmoon <Specialist Leatherworking Supplies>
 					["u"] = 43,	-- Removed from game
 					["g"] = {
@@ -68,7 +68,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(48114, {	-- Deviate Hatchling (PET!)
 					["crs"] = {
 						3637,	-- Deviate Guardian

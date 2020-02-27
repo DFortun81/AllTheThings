@@ -8,7 +8,7 @@ _.Instances = { tier(1, {	-- Classic
 		["mapID"] = 225,
 		["coord"] = { 50.48, 66.46, 84 },	-- The Stockade, Stormwind City
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(27737, {	-- By Fire Be Saved!
 					["provider"] = { "n", 46410 },	-- Nurse Lillian
 					["races"] = ALLIANCE_ONLY,
@@ -64,7 +64,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(7360, {  -- Recipe: Dark Leather Gloves
 					["crs"] = {
 						46382,	-- Petty Criminal

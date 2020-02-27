@@ -15,7 +15,7 @@ _.Instances = { tier(1, {	-- Classic
 		},
 		["coord"] = { 46.76, 7.53, 327 },	-- Temple of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				faction(910, { 	-- Quests / Brood of Nozdormu
 					["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
 				}),
@@ -422,7 +422,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 				}),
 			}),
-			n(-1, {	-- Common Boss Drops
+			n(COMMON_BOSS_DROPS, {
 				i(20736, {	-- Formula: Enchant Cloak - Dodge
 					["crs"] = {
 						15516,	-- Battleguard Sartura
@@ -557,7 +557,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(21230, {	-- Ancient Qiraji Artifact
 					["questID"] = 8784,	-- Secrets of the Qiraji
 					["repeatable"] = true,
@@ -760,7 +760,7 @@ _.Instances = { tier(1, {	-- Classic
 			e(1547, {	-- Silithid Royalty
 				["description"] = "This can be a fairly -buggy- encounter if you don't do it right. Kill 1 boss at a time and allow it to get consumed. Then kill the next one and allow it to also get consumed. The last boss you leave alive determines the loot that can drop.",
 				["groups"] = {
-					n(-1, {	-- Common Boss Drops
+					n(COMMON_BOSS_DROPS, {
 						["description"] = "These items can drop from killing the Silithid Royalty bosses regardless of order. For the other items, refer to their individual listings.",
 						["crs"] = {
 							15511,	-- Lord Kri

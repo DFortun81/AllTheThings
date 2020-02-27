@@ -9,7 +9,7 @@ _.Instances = { tier(1, {	-- Classic
 		["lvl"] = 11,
 		["g"] = {
 			d(1, {		-- Normal
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(27917, { 	-- Sniffing Them Out
 						["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
 						["races"] = ALLIANCE_ONLY,
@@ -67,7 +67,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 				}),
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(1935, {	-- Assassin's Blade
 						["crs"] = {
 							47232,	-- Ghostly Cook
@@ -285,7 +285,7 @@ _.Instances = { tier(1, {	-- Classic
 			n(-40, { 	-- Legacy
 				["description"] = "During the Third War, the wizards of the Kirin Tor battled against the undead armies of the Scourge. When the wizards of Dalaran died in battle, they would rise soon after - adding their former might to the growing Scourge. Frustrated by their lack of progress (and against the advice of his peers) the Archmage, Arugal elected to summon extra-dimensional entities to bolster Dalaran's diminishing ranks. Arugal's summoning brought the ravenous worgen into the world of Azeroth. The feral wolf-men slaughtered not only the Scourge, but quickly turned on the wizards themselves. The worgen sieged the keep of the noble, Baron Silverlaine. Situated above the tiny hamlet of Pyrewood, the keep quickly fell into shadow and ruin. Driven mad with guilt, Arugal adopted the worgen as his children and retreated to the newly dubbed 'Shadowfang Keep'. It's said he still resides there, protected by his massive pet, Fenrus - and haunted by the vengeful ghost of Baron Silverlaine.",
 				["g"] = {
-					n(-17, { 		-- Legacy Quests
+					n(QUESTS, {
 						q(1014, {	-- Arugal Must Die
 							["u"] = 40,
 							["races"] = HORDE_ONLY,

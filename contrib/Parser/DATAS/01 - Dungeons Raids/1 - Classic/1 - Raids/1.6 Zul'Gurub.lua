@@ -14,7 +14,7 @@ _.Instances = { tier(1, {	-- Classic
 			d(1, {	-- Normal (Legacy)
 				["u"] = 12,
 				["groups"] = {
-					n(-17, {	-- Legacy Quests
+					n(QUESTS, {
 						{
 							["itemID"] = 18330,	-- Arcanum of Focus
 							["u"] = 2,			-- Legacy Content
@@ -491,7 +491,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "i", 19973 },	-- Nat's Measuring Tape
 						}),
 					}),
-					n(0, {		-- Zone Drop
+					n(ZONEDROPS, {
 						un(2, i(19727)),	-- Blood Scythe
 						un(2, i(19708)),	-- Blue Hakkari Bijou
 						un(2, i(19713)),	-- Bronze Hakkari Bijou

@@ -8,7 +8,7 @@ _.Instances = { tier(1, {	-- Classic
 		["mapID"] = 213,
 		["coord"] = { 52.52, 57.83, 86 },	-- Ragefire Chasm, Orgrimmar [Cleft of Shadow]
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(30998, {	-- A New Enemy
 					["provider"] = { "n", 61823 },	-- High Sorceress Aryna
 					["races"] = ALLIANCE_ONLY,
@@ -113,7 +113,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(82886),	-- Gorewalker Treads
 			})),
 			n(-40, {	-- Legacy
-				n(0, {	-- Zone Drop (Legacy)
+				n(ZONEDROPS, {
 					un(43, n(11519, {	-- Bazzalan
 						un(2, i(68195)),	-- Bazzalan's Blade
 					})),

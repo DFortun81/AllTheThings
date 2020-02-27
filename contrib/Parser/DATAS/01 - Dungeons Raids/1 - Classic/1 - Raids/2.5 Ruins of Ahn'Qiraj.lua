@@ -165,7 +165,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				},
 			},
-			n(-1, {	-- Common Boss Drop
+			n(COMMON_BOSS_DROPS, {
 				["groups"] = { -- The class items are grey, adding them for classic in summer
 					-- Enchants
 					i(20729),	-- Formula: Enchant Gloves - Fire Power

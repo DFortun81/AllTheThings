@@ -9,7 +9,7 @@ _.Instances = { tier(1, {	-- Classic
 		["maps"] = { 243, },
 		["coord"] = { 39.06, 18.12, 35 },	-- Blackrock Depths, Blackrock Mountain [Blackrock Depths]
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				n(-75, {	-- Detention Block
 					q(27569, {	-- Dark Iron Tacticians
 						["provider"] = { "n", 45894 },	-- Prospector Seymour
@@ -244,7 +244,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(12546, {	-- Aristocratic Cuffs
 					["crs"] = {
 						8903,	-- Anvilrage Captain
@@ -502,7 +502,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(18235, {	-- Schematic: Field Repair Bot 74A
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["description"] = "On the floor next to Golem Lord Argelmach.",
 				}),
 				i(18654, {	-- Schematic: Gnomish Alarm-o-Bot
@@ -865,7 +865,7 @@ _.Instances = { tier(1, {	-- Classic
 					["description"]	= "Speak to him to start the encounter.",
 				})),
 				cr(9499, e(383, {	-- Plugger Spazzring
-					n(-2, { 	-- Vendors
+					n(VENDORS, {
 						i(15759),	-- Pattern:	Black Dragonscale Breastplate
 						i(13483),	-- Recipe: Transmute Fire to Earth
 					}),
@@ -945,7 +945,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				n(9037, {			-- Gloom'rel
 					["description"] = "If you are a miner, speak with Gloom'rel to have him summon the Spectral Chalice so you can learn to smelt Dark Iron Ore.\nThe quest requires 2x Star Ruby, 20x Gold Bar, and 10x Truesilver Bar to complete.",
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 					["g"] = {
 						{
 							--["objectID"] = 164869,	-- The Spectral Chalice (Object)

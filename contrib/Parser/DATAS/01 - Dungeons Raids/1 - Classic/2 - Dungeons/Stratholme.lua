@@ -12,7 +12,7 @@ _.Instances = { tier(1, {	-- Classic
 				["maps"] = { 317 },	-- Stratholme Living Side
 				["coord"] = { 27.66, 11.64, 23 },	-- Stratholme [Main Gate], Eastern Plaguelands
 				["groups"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(27185, {	-- Cutting the Competition
 							["provider"] = { "n", 45201 },	-- Master Craftsman Wilhelm
 						}),
@@ -35,7 +35,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 45323 },	-- Packmaster Stonebruiser
 						}),
 					}),
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						i(17683, {	-- Book: Gift of the Wild Rank 2
 						--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
 						}),
@@ -89,7 +89,7 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						i(12827, {	-- Plans: Serenity
 							["description"] = "This plan is found in the Scarlet Bastion. Only a Blacksmith can loot the plans. This will despawn once a player interacts with it.",
-							["requireSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = BLACKSMITHING,
 						}),
 						i(18745),	-- Sacred Cloth Leggings
 						i(18658,  { -- Schematic: Ultra-Flash Shadow Reflector
@@ -198,7 +198,7 @@ _.Instances = { tier(1, {	-- Classic
 							["lvl"] = 58,
 							["u"] = 40,
 						}),
-						n(0, {	-- Zone Drop (Legacy)
+						n(ZONEDROPS, {
 							un(43, n(14684, { 	-- Balzaphon
 								["description"] = "This boss was only available during the Scourge Invasions.",
 								["groups"] = {
@@ -281,7 +281,7 @@ _.Instances = { tier(1, {	-- Classic
 				["maps"] = { 318 },	-- Undead Side
 				["coord"] = { 43.76, 17.52, 23 },	-- Stratholme [Undead Side], Eastern Plaguelands
 				["groups"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(27359, {	-- Argent Reinforcements
 							["provider"] = { "n", 45330 },	-- Archmage Angela Dosantos
 						}),
@@ -298,7 +298,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 45331 },	-- Master Craftsman Wilhelm
 						}),
 					}),
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						i(17683, {	-- Book: Gift of the Wild Rank 2
 						--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
 						}),
@@ -354,7 +354,7 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						i(12830, {	-- Plans: Corruption
 							["description"] = "This plan is found near the second ziggurat. Only a Blacksmith can loot the plans. This will despawn once a player interacts with it.",
-							["requireSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = BLACKSMITHING,
 						}),
 						i(74274, {	-- Plans: Phantom Blade
 							["crs"] = {
@@ -453,7 +453,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(13345),	-- Seal of Rivendare
 					})),
 					n(-40, {	-- Legacy
-						n(-17, {	-- Quests (Legacy)
+						n(QUESTS, {
 							un(40, q(5125, {	-- Aurius' Reckoning
 								un(2, i(17045)),	-- Blood of the Martyr
 								un(2, i(17044)),	-- Will of the Martyr
@@ -470,7 +470,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							})),
 						}),
-						n(0, {	-- Zone Drop (Legacy)
+						n(ZONEDROPS, {
 							un(7, i(16681, {	-- Beaststalker's Bindings
 								["crs"] = {
 									10407, 	-- Fleshflayer Ghoul

@@ -13,7 +13,7 @@ _.Instances = { tier(1, {	-- Classic
 		},
 		["coord"] = { 30.11, 74.64, 30 },	-- Gnomeregan, Gnomeregan [Dun Morogh]
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(2904, {	-- A Fine Mess
 					["u"] = 40,
 					["g"] = {
@@ -168,9 +168,9 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(9281, {	-- Red Punch Card
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["g"] = {
 						i(9327, {	-- Security DELTA Data Access Card
 							i(4413),  	-- Schematic: Discombobulator Ray
@@ -178,7 +178,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(9280, {	-- Yellow Punch Card
-					["requireSkill"] = 202,  	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["description"] = "You can learn the schematic from the Matrix Punchograph 3005-B.",
 					["g"] = {
 						i(14639),  	-- Schematic: Minor Recombobulator

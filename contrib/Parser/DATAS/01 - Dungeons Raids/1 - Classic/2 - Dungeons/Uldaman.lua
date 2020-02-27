@@ -12,7 +12,7 @@ _.Instances = { tier(1, {	-- Classic
 			{ 60.68, 37.43, 15 },	-- Uldaman [Side], Badlands
 		},
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(27677, {	-- Archaedas, The Ancient Stone Watcher
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27672 },	-- The Chamber of Khaz'mul
@@ -87,7 +87,7 @@ _.Instances = { tier(1, {	-- Classic
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(9420, {	-- Adventurer's Pith Helmet
 					["crs"] = {
 						4848,	-- Shadowforge Darkcaster
