@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(84, {	-- Stormwind City
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(69334, {	-- Adherent Hanjun
 					["coord"] = { 68.0, 17.0, 84 },
 					["races"] = ALLIANCE_ONLY,

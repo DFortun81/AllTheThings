@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(84, {	-- Stormwind City
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(130828, {	-- Gordon MacKellar
 					["coord"] = { 43.0, 78.0, 84 },
 					["races"] = HORDE_ONLY,

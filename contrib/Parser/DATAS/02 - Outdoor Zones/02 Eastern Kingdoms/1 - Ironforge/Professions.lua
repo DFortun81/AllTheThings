@@ -6,13 +6,13 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(87, {	-- Ironforge
 			n(-38, {	-- Profession
-				prof(171, {	-- Alchemy
-					n(-17, {	-- Quests
+				prof(ALCHEMY, {
+					n(QUESTS, {
 						q(29481, {	-- Elixir Master
 							["provider"] = { "n", 5177 },	-- Tally Berryfizz (Ironfoge)
 							["coord"] = { 66.6, 55.0, 87 },	-- Tally Berryfizz (Ironfoge)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = 171,	-- Alchemy
+							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -27,7 +27,7 @@ _.Zones =
 							["provider"] = { "n", 5177 },	-- Tally Berryfizz (Ironfoge)
 							["coord"] = { 66.6, 55.0, 87 },	-- Tally Berryfizz (Ironfoge)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = 171,	-- Alchemy
+							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -42,7 +42,7 @@ _.Zones =
 							["provider"] = { "n", 5177 },	-- Tally Berryfizz (Ironfoge)
 							["coord"] = { 66.6, 55.0, 87 },	-- Tally Berryfizz (Ironfoge)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = 171,	-- Alchemy
+							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -55,18 +55,18 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(185, {	-- Cooking
+				prof(COOKING, {
 					n(-4, {	-- Achievements
 						ach(5841, {	-- Let's Do Lunch: Ironforge
 							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
-					n(-17, { 	-- Quests
+					n(QUESTS, {
 						q(29352, {	-- A Fowl Shortage
 							["provider"] = { "n", 5159 },	-- Daryl Riknussun
 							["coord"] = { 60.1, 36.4, 87 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -80,7 +80,7 @@ _.Zones =
 							["provider"] = { "n", 5159 },	-- Daryl Riknussun
 							["coord"] = { 60.1, 36.4, 87 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -94,7 +94,7 @@ _.Zones =
 							["provider"] = { "n", 5159 },	-- Daryl Riknussun
 							["coord"] = { 60.1, 36.4, 87 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -108,7 +108,7 @@ _.Zones =
 							["provider"] = { "n", 5159 },	-- Daryl Riknussun
 							["coord"] = { 60.1, 36.4, 87 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -121,7 +121,7 @@ _.Zones =
 						q(6612, {	-- I Know A Guy...
 							["provider"] = { "n", 5159 },	-- Daryl Riknussun
 							["coord"] = { 60.1, 36.4, 87 },
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 35,
 							["u"] = 40,    -- Legacy Quests
@@ -130,7 +130,7 @@ _.Zones =
 							["provider"] = { "n", 5159 },	-- Daryl Riknussun
 							["coord"] = { 60.1, 36.4, 87 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -142,12 +142,12 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(164, {	-- Blacksmithing
-					n(-17, {	-- Quests
+				prof(BLACKSMITHING, {
+					n(QUESTS, {
 						q(1618,  {	-- Gearing Redridge
 							["provider"] = { "n", 6031 },	-- Tormus Deepforge
 							["coord"] = { 49.0, 42.4, 87 },
-							["requireSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = BLACKSMITHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 15,
 							["g"] = {
@@ -157,7 +157,7 @@ _.Zones =
 						q(1578,  {	-- Supplying the Front
 							["provider"] = { "n", 6031 },	-- Tormus Deepforge
 							["coord"] = { 49.0, 42.4, 87 },
-							["requireSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = BLACKSMITHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -166,13 +166,13 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(202, {	-- Engineering
-					n(-17, {	-- Quests
+				prof(ENGINEERING, {
+					n(QUESTS, {
 						q(29477, {	-- Gnomish Engineering
 							["provider"] = { "n", 5174 },	-- Springspindle Fizzlegear
 							["coord"] = { 68.8, 45.2, 87 },
 							["description"] = "Exclusive with |cFFFFD700Goblin Engineering|r. Becomes available at lvl 200 classic engineering.",
-							["requireSkill"] = 202,	-- Engineering
+							["requireSkill"] = ENGINEERING,
 							["lvl"] = 20,
 							["repeatable"] = true,
 						}),
@@ -180,24 +180,24 @@ _.Zones =
 							["provider"] = { "n", 5174 },	-- Springspindle Fizzlegear
 							["coord"] = { 68.8, 45.2, 87 },
 							["description"] = "Exclusive with |cFFFFD700Gnomish Engineering|r. Becomes available at lvl 200 classic engineering.",
-							["requireSkill"] = 202,	-- Engineering
+							["requireSkill"] = ENGINEERING,
 							["lvl"] = 20,
 							["repeatable"] = true,
 						}),
 					}),
 				}),
-				prof(356, {	-- Fishing
+				prof(FISHING, {
 					n(-4, {	-- Achievements
 						ach(5847, {	-- Fish or Cut Bait: Ironforge
 							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(29342, {	-- Cold Water Fishing
 							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
 							["coord"] = { 48.4, 8.2, 87 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -216,7 +216,7 @@ _.Zones =
 							["provider"] = { "n", 15119 },	-- Barrus
 							["coord"] = { 28.6, 74.6, 87 },
 							["isBreadcrumb"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 50,
 						}),
@@ -224,7 +224,7 @@ _.Zones =
 							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
 							["coord"] = { 48.4, 8.2, 87 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -243,7 +243,7 @@ _.Zones =
 							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
 							["coord"] = { 48.4, 8.2, 87 },
 							["isBreadcrumb"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 35,
 							["u"] = 40,    -- Legacy Quests
@@ -252,7 +252,7 @@ _.Zones =
 							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
 							["coord"] = { 48.4, 8.2, 87 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -271,7 +271,7 @@ _.Zones =
 							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
 							["coord"] = { 48.4, 8.2, 87 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -290,7 +290,7 @@ _.Zones =
 							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
 							["coord"] = { 48.4, 8.2, 87 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -311,13 +311,13 @@ _.Zones =
 					}),
 					i(34484),		-- Old Ironjaw
 				}),
-				prof(773, {	-- Inscription
-					n(-17, {	-- Quests
+				prof(INSCRIPTION, {
+					n(QUESTS, {
 						q(39956, {	-- The Legacy Passed On
 							["provider"] = { "n", 97762 },	-- Bill Spearshaker <Author Extrodinaire>
 							["coord"] = { 77.2, 10.4, 87 },
 							["sourceQuest"] = 39955,	-- The Plot Thickens
-							["requireSkill"] = 773,	-- Inscription
+							["requireSkill"] = INSCRIPTION,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 108,
 							["g"]= {
@@ -326,13 +326,13 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(197, {	-- Tailoring
-					n(-17, {	-- Quests
+				prof(TAILORING, {
+					n(QUESTS, {
 						q(6625,  {	-- Alliance Trauma
 							["provider"] = { "n", 5150 },	-- Nissa Firestone
 							["coord"] = { 55.1, 58.3, 87 },
 							["isBreadcrumb"] = true,
-							["requireSkill"] = 197,	-- Tailoring
+							["requireSkill"] = TAILORING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 35,
 						}),

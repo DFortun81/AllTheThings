@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(87, {	-- Ironforge
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(38396, {	-- A Curious Oddity
 					["provider"] = { "n", 6294 },	-- Krom Stoutarm
 					["coord"] = { 74.6, 9.8, 87 },
