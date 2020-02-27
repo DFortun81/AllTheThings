@@ -6,7 +6,7 @@ _.Zones =
 	m(101, {	-- Outland
 		m(102, {	-- Zangarmarsh
 			n(-38, {	-- Professions
-				prof(356, {	-- Fishing
+				prof(FISHING, {
 					o(182952, {	-- Steam Pump Flotsam
 						["model"] = 219411,
 						["g"] = {

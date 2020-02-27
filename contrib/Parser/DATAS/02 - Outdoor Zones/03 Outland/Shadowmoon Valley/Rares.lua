@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(104, {	-- Shadowmoon Valley (Outland)
-			n(-16,  {	-- Rares
+			n(RARES, {
 				n(18695, {	-- Ambassador Jerrikar
 					["coords"] = {
 						{ 30.6, 58.2, 104 },

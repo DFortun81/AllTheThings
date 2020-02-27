@@ -9,7 +9,7 @@ _.Zones =
 				["creatureID"] = 23367,	-- Grella <Skyguard Quartermaster>
 				["g"] = {
 					ach(894), -- Flying High Over Skettis
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(11885, {	-- Adversarial Blood
 							["provider"] = { "n", 23306 },	-- Hazzik
 							["coord"] = { 64.2, 66.9, 108 },
@@ -112,7 +112,7 @@ _.Zones =
 							},
 						}),	
 					}),
-					n(-2,  {	-- Vendors
+					n(VENDORS, {
 						n(23367, {	-- Grella <Skyguard Quartermaster>
 							["coord"] = { 64.3, 66.2, 108 },
 							["g"] = {

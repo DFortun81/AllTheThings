@@ -9,7 +9,7 @@ _.Zones =
 				faction(942, {	-- Cenarion Expedition
 					["creatureID"] = 17904,	-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
 					["g"] = {
-						n(-17,  {	-- Quests
+						n(QUESTS, {
 							q(9784, {	-- Identify Plant Parts
 								["provider"] = { "n", 17909 },	-- Lauranna Thar'well
 								["coord"] = { 80.3, 64.2, 102 },
@@ -29,7 +29,7 @@ _.Zones =
 								["maxReputation"] = { 942, HONORED },
 							}),
 						}),
-						n(-2,   {	-- Vendors
+						n(VENDORS, {
 							n(17904,  {		-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
 								["coord"] = { 79.25, 63.66, 102 },
 								["g"] = {
@@ -88,7 +88,7 @@ _.Zones =
 				faction(970, {	-- Sporeggar
 					["creatureID"] = 18382,	-- Mycah <Sporeggar Quartermaster>
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(9807, {	-- More Fertile Spores
 								["provider"] = { "n", 17925 },	-- Gshaff
 								["coord"] = { 19.1, 49.4, 102 },
@@ -125,7 +125,7 @@ _.Zones =
 								["repeatable"] = true,
 							}),
 						}),
-						n(-2,  {	-- Vendors
+						n(VENDORS, {
 							n(18382, {	-- Mycah <Sporeggar Quartermaster>
 								["coord"] = { 18.27, 51.12, 102 },
 								["g"] = {

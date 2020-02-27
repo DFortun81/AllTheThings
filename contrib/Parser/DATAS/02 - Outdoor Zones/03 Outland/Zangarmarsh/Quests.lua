@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(102, {	-- Zangarmarsh
-			n(-17,  {	-- Quests
+			n(QUESTS, {
 				q(9788,  {	-- A Damp, Dark Place
 					["provider"] = { "n", 17956 },	-- Ikeyen
 					["coord"] = { 80.4, 64.2, 102 },
@@ -519,7 +519,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 34469 },	-- Strange Engine Part
 					["repeatable"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(9903,  {	-- The Biggest of Them All
 					["provider"] = { "n", 18018 },	-- Zurjaya
@@ -609,7 +609,7 @@ _.Zones =
 					["provider"] = { "n", 17634 },	-- K. Lee Smallfry
 					["coord"] = { 68.6, 50.2, 102 },
 					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["g"] = {
 						i(23888),	-- Schematic: Zapthrottle Mote Extractor
 					},
@@ -618,7 +618,7 @@ _.Zones =
 					["provider"] = { "n", 17637 },	-- Mack Diver
 					["coord"] = { 34.0, 51.0, 102 },
 					["races"] = HORDE_ONLY,
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["g"] = {
 						i(23888),	-- Schematic: Zapthrottle Mote Extractor
 					},

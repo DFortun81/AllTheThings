@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(108, {	-- Terokkar Forest
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(19296, {	-- Innkeeper Biribi <Innkeeper>
 					["coord"] = { 56.6, 53.2, 108 },
 					["races"] = ALLIANCE_ONLY,

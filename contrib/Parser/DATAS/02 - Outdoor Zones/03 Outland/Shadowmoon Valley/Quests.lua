@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(104, {	-- Shadowmoon Valley (Outland)
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(10985, {	-- A Distraction for Akama (legacy version)
 					["provider"] = { "n", 18528 },	-- Xi'ri
 					["coord"] = { 65.2, 44.0, 104 },

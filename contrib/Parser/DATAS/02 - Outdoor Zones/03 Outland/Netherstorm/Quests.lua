@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(109, {	-- Netherstorm
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				ach(1194, {		-- Into the Nether
 					crit(1, {		-- Socrethar
 						faction(932, {	-- The Aldor

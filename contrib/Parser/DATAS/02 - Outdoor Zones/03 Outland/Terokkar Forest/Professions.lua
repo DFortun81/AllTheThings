@@ -6,7 +6,7 @@ _.Zones =
 	m(101, {	-- Outland
 		m(108, {	-- Terokkar Forest
 			n(-38, {	-- Professions
-				prof(356, {	-- Fishing
+				prof(FISHING, {
 					i(27446, {	-- Mr Punchys Gift
 						i(27388, {	-- Mr. Pinchy
 							i(27445, {	-- Magical Crawdad Box
@@ -14,13 +14,13 @@ _.Zones =
 							}),
 						}),
 					}),
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(11665,  {  -- Crocolisks in the City
 							["provider"] = { "n", 25580 },	-- Old Man Barlo
 							["coord"] = { 38.6, 12.8, 108 },
 							["description"] = "One of five random fishing daily quests. The other four do not drop minipets.",
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["g"] = {
 								i(35348,  { -- Bag of Fishing Treasures
 									i(35350),	-- Chuck's Bucket
@@ -39,7 +39,7 @@ _.Zones =
 							["provider"] = { "n", 25580 },	-- Old Man Barlo
 							["coord"] = { 38.6, 12.8, 108 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["g"] = {
 								i(34863,  {  -- Bag of Fishing Treasures
 									i(33820),  -- Weather-Beaten Fishing Hat
@@ -53,7 +53,7 @@ _.Zones =
 							["provider"] = { "n", 25580 },	-- Old Man Barlo
 							["coord"] = { 38.6, 12.8, 108 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["g"] = {
 								i(34863,  {  -- Bag of Fishing Treasures
 									i(33820),  -- Weather-Beaten Fishing Hat
@@ -67,7 +67,7 @@ _.Zones =
 							["provider"] = { "n", 25580 },	-- Old Man Barlo
 							["coord"] = { 38.6, 12.8, 108 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["g"] = {
 								i(34863,  {  -- Bag of Fishing Treasures
 									i(33820),  -- Weather-Beaten Fishing Hat
@@ -81,7 +81,7 @@ _.Zones =
 							["provider"] = { "n", 25580 },	-- Old Man Barlo
 							["coord"] = { 38.6, 12.8, 108 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["g"] = {
 								i(34863,  {  -- Bag of Fishing Treasures
 									i(33820),  -- Weather-Beaten Fishing Hat
