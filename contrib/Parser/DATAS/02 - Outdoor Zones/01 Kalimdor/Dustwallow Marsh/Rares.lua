@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(70, {	-- Dustwallow Marsh
-			n(-16, {	-- Rares	
+			n(RARES, {	
 				n(50784,  {	-- Anith
 					["coord"] = { 32.6, 30.8, 70 },
 					["g"] = {

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(62, {	-- Darkshore
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(5773, {	-- Pattern: Robes of Arcana
 					["crs"] = { 2337 },	-- Dark Strand Voidcaller (removed in cata)
 					["u"] = 7,	-- BoE Item

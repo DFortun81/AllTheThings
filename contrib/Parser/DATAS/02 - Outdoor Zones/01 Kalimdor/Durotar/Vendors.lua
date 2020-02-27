@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(1, {	-- Durotar
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(3881,   {	-- Grimtak
 					["coord"] = { 50.8, 42.8, 1 },
 					["races"] = HORDE_ONLY,

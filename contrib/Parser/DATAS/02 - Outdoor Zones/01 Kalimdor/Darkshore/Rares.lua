@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(62, {	-- Darkshore
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(2186, {	-- Carnivous the Breaker
 					["coord"] = { 44.4, 83.0, 62 },
 					["g"] = {

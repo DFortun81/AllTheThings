@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(76, {	-- Azshara
-			n(-16, {	-- Rares	
+			n(RARES, {	
 				n(6648, {	-- Antilos
 					["coord"] = { 45.2, 27.2, 76 },
 					["g"] = {

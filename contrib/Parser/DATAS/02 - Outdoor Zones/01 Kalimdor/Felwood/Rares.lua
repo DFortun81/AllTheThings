@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(77, {	-- Felwood
-			n(-16, {	-- Rares	
+			n(RARES, {	
 				n(14340,  {	-- Alshirr Banebreath
 					["coords"] = {
 						{ 40.0, 82.2, 77 },

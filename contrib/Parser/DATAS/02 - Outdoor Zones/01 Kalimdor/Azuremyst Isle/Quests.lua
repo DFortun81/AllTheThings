@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(97, {	-- Azuremyst Isle
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(9528,  {	-- A Cry For Help
 					["provider"] = { "n", 17312 },	-- Magwin
 					["races"] = ALLIANCE_ONLY,

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(70, {	-- Dustwallow Marsh
-			n(-2,  {	-- Vendors
+			n(VENDORS, {
 				n(4894,  {	-- Craig Nollward <Cooking Trainer>
 					["coord"] = { 66.8, 45.2, 70 },
 					["races"] = ALLIANCE_ONLY,

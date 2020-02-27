@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(76, {	-- Azshara
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(16219, {	-- Formula: Enchant Gloves - Greater Agility
 					["u"] = 7,	-- now learned from trainer, formula was removed from game
 					["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe

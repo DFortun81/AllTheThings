@@ -6,7 +6,7 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(1, {	-- Durotar
 			m(463, {	-- Echo Isles
-				n(-2, {	-- Vendors
+				n(VENDORS, {
 					n(113615, {	-- Ravika <Darkspear Quartermaster>
 						["coord"] = { 57.4, 62.2, 463 },
 						["races"] = HORDE_ONLY,

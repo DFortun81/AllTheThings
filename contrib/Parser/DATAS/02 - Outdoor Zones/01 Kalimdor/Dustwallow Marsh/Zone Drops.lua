@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(70, {	-- Dustwallow Marsh
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(10822, {	-- Dark Whelpling
 					["crs"] = {
 						4323,	-- Searing Hatchling

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(62, {	-- Darkshore
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(13554, {	-- A Cure In The Dark
 					["model"] = 197760,
 					["coord"] = { 54.1, 29.2, 62 },
@@ -60,7 +60,7 @@ _.Zones =
 					["provider"] = { "n", 33175 },	-- Johnathan Staats
 					["coord"] = { 52.3, 17.9, 62 },
 					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 					["sourceQuests"] = {
 						13518,	-- The Last Wave of Survivors
 						13522,	-- Threat From the Water

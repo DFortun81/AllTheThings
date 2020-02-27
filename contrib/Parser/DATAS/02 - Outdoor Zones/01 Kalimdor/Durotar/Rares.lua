@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(1, {	-- Durotar
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(5824, {	-- Captain Flat Tusk -- NO TRANSMOGGABLE LOOT!
 					["coords"] = {
 						{ 38.6, 53.8, 1 },

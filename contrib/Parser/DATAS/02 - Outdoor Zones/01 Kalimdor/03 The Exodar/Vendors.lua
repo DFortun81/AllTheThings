@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(103, {	-- The Exodar
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(16705, {	-- Altaa <Alchemy Supplies>
 					["coord"] = { 27.8, 61.8, 103 },
 					["races"] = ALLIANCE_ONLY,

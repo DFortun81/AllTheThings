@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(63, {	-- Ashenvale
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(26453, {	-- A Helping Hand
 					["provider"] = { "n", 17106 },	-- Vindicator Palanaar
 					["coord"] = { 35.0, 49.9, 63 },

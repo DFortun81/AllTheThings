@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(66, {	-- Desolace
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(14284, {	-- A Revenant's Vengeance
 					["provider"] = { "n", 35902 },	-- Lord Hydronis
 					["coord"] = { 29.0, 8.0, 66 },

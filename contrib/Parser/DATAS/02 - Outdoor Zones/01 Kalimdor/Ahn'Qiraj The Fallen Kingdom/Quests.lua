@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(327, {	-- Ahn'Qiraj: The Fallen Kingdom
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(8700, {	-- Band of Unending Life
 					["provider"] = { "n", 15498 },	-- Windcaller Yessendra
 					["coord"] = { 59.4, 14.0, 327 },

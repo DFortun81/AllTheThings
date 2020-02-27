@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(88, {	-- Thunder Bluff
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(50483, {	-- Brave Tuho <Thunder Bluff Quartermaster>
 					["coord"] = { 47.05, 50.23, 88 },
 					["races"] = HORDE_ONLY,

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(69, {	-- Feralas
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(5347, {	-- Antilus the Soarer
 					["coords"] = {
 						{ 55.0, 65.8, 69 },

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(468, {	-- Ammen Vale
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(9798,  {	-- Blood Elf Plans
 					["sourceQuests"] = { 9309 },	-- The Missing Scout
 					["crs"] = { 16522 },	-- Surveyor Candress

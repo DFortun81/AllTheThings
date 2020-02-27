@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(69, {	-- Feralas
-			n(-17, { 	-- Quests
+			n(QUESTS, {
 				q(2974, {	-- A Grim Discovery
 					["u"] = 40,
 					["races"] = HORDE_ONLY,

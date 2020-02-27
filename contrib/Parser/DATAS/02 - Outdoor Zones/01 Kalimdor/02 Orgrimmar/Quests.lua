@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(85, {	-- Orgrimmar
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				gsh(1522, {	-- Allied Races
 					["icon"] = "Interface\\Icons\\FactionChange",
 					["g"] = {
@@ -2091,7 +2091,7 @@ _.Zones =
 					["provider"] = { "n", 7790 },	-- Orokk Omosh
 					["coord"] = { 76.8, 37.4, 85 },
 					["sourceQuest"] = 2752,	-- On Iron Pauldrons
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(7981),	-- Plans: Barbaric Iron Boots

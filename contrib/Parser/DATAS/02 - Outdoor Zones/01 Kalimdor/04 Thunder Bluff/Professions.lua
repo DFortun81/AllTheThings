@@ -6,13 +6,13 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(88, {	-- Thunder Bluff
 			n(-38, {	-- Professions
-				prof(171, {	-- Alchemy
-					n(-17, {	-- Quests
+				prof(ALCHEMY, {
+					n(QUESTS, {
 						q(29481, {	-- Elixir Master
 							["provider"] = { "n", 3009 },	-- Bena Winterhoof (Thunder Bluff)
 							["coord"] = { 46.8, 33.6, 88 },	-- Bena Winterhoof (Thunder Bluff)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = 171,	-- Alchemy	
+							["requireSkill"] = ALCHEMY,	
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -27,7 +27,7 @@ _.Zones =
 							["provider"] = { "n", 3009 },	-- Bena Winterhoof (Thunder Bluff)
 							["coord"] = { 46.8, 33.6, 88 },	-- Bena Winterhoof (Thunder Bluff)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = 171,	-- Alchemy
+							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -42,7 +42,7 @@ _.Zones =
 							["provider"] = { "n", 3009 },	-- Bena Winterhoof (Thunder Bluff)
 							["coord"] = { 46.8, 33.6, 88 },	-- Bena Winterhoof (Thunder Bluff)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = 171,	-- Alchemy
+							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -55,18 +55,18 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(185, {	-- Cooking
+				prof(COOKING, {
 					n(-4, {	-- Achievements
 						ach(5843, {	-- Let's Do Lunch: Thunder Bluff
 							["races"] = HORDE_ONLY,
 						}),
 					}),
-					n(-17, { 	-- Quests
+					n(QUESTS, {
 						q(29364, {	-- Corn Mash
 							["provider"] = { "n", 3026 },	-- Aska Mistrunner
 							["coord"] = { 51.2, 52.2, 88 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -80,7 +80,7 @@ _.Zones =
 							["provider"] = { "n", 3026 },	-- Aska Mistrunner
 							["coord"] = { 51.2, 52.2, 88 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -94,7 +94,7 @@ _.Zones =
 							["provider"] = { "n", 3026 },	-- Aska Mistrunner
 							["coord"] = { 51.2, 52.2, 88 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -108,7 +108,7 @@ _.Zones =
 							["provider"] = { "n", 3026 },	-- Aska Mistrunner
 							["coord"] = { 51.2, 52.2, 88 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -122,7 +122,7 @@ _.Zones =
 							["provider"] = { "n", 3026 },	-- Aska Mistrunner
 							["coord"] = { 51.2, 52.2, 88 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -134,13 +134,13 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(202, {	-- Engineering
-					n(-17, {	-- Quests
+				prof(ENGINEERING, {
+					n(QUESTS, {
 						q(29477, {	-- Gnomish Engineering
 							["provider"] = { "n", 52651 },	-- Engineer Palehoof
 							["coord"] = { 36.8, 59.6, 88 },
 							["description"] = "Exclusive with |cFFFFD700Goblin Engineering|r. Becomes available at lvl 200 classic engineering.",
-							["requireSkill"] = 202,	-- Engineering
+							["requireSkill"] = ENGINEERING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 20,
 							["repeatable"] = true,
@@ -149,25 +149,25 @@ _.Zones =
 							["provider"] = { "n", 52651 },	-- Engineer Palehoof
 							["coord"] = { 36.8, 59.6, 88 },
 							["description"] = "Exclusive with |cFFFFD700Gnomish Engineering|r. Becomes available at lvl 200 classic engineering.",
-							["requireSkill"] = 202,	-- Engineering
+							["requireSkill"] = ENGINEERING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 20,
 							["repeatable"] = true,
 						}),
 					}),
 				}),
-				prof(356, {	-- Fishing
+				prof(FISHING, {
 					n(-4, {	-- Achievements
 						ach(5849, {	-- Fish or Cut Bait: Thunder Bluff
 							["races"] = HORDE_ONLY,
 						}),
 					}),
-					n(-17, { 	-- Quests
+					n(QUESTS, {
 						q(29349, {	-- Craving Crayfish
 							["provider"] = { "n", 3028 },	-- Kah Mistrunner
 							["coord"] = { 56.12, 46.34, 88 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -186,7 +186,7 @@ _.Zones =
 							["provider"] = { "n", 3028 },	-- Kah Mistrunner
 							["coord"] = { 56.12, 46.34, 88 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -205,7 +205,7 @@ _.Zones =
 							["provider"] = { "n", 3028 },	-- Kah Mistrunner
 							["coord"] = { 56.12, 46.34, 88 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -224,7 +224,7 @@ _.Zones =
 							["provider"] = { "n", 3028 },	-- Kah Mistrunner
 							["coord"] = { 56.12, 46.34, 88 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -243,7 +243,7 @@ _.Zones =
 							["provider"] = { "n", 3028 },	-- Kah Mistrunner
 							["coord"] = { 56.12, 46.34, 88 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 10,
 							["g"] = {

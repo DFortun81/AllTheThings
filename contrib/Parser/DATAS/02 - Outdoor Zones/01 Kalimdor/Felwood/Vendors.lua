@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(77, {	-- Felwood
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(48577, {	-- Ciana <Weaponsmith>
 					["coord"] = { 43.2, 28.4, 77 },
 					["g"] = {

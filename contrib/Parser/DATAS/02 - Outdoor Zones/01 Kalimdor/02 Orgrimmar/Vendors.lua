@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(85, {	-- Orgrimmar
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(149806, {	-- A. Shady
 					["coord"] = { 76.7, 35.6, 85 },
 					["g"] = {

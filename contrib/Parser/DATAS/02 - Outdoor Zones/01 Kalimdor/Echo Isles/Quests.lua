@@ -6,7 +6,7 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(1, {	-- Durotar
 			m(463, {	-- Echo Isles
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						q(24767, {	-- A Rough Start (Druid)

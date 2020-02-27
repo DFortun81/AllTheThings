@@ -10,7 +10,7 @@ _.Zones =
 					["creatureID"] = 11558,	-- Kernda
 					["g"] = {
 						ach(944),	-- They Love Me In That Tunnel
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(8470, {	-- Deadwood Ritual Totem
 								["provider"] = { "i", 20741 },
 								["crs"] = {
@@ -47,7 +47,7 @@ _.Zones =
 								["minReputation"] = { 576, FRIENDLY },
 								["provider"] = { "n", 11557 },	-- Meilosh
 								["coord"] = { 64.8, 5.2, 77 },
-								["requireSkill"] = 197,	-- Requires: Tailoring
+								["requireSkill"] = TAILORING,
 								["g"] = {
 									recipe(19435),	-- Mooncloth Boots
 								},
@@ -70,7 +70,7 @@ _.Zones =
 								},
 							}),
 						}),
-						n(-2, {	-- Vendors
+						n(VENDORS, {
 							n(11555, {	-- Gorn One Eye
 								["coord"] = { 64.4, 5.1, 77 },
 								["g"] = {

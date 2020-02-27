@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(89, {	-- Darnassus
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(55285, {	-- Astrid Langstrump <Mountain Horse Handler>
 					["coord"] = { 48.2, 21.8, 89 },
 					["races"] = ALLIANCE_ONLY,

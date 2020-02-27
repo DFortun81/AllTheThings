@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(77, {	-- Felwood
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(28340, {	-- A Bomb Deal
 					["provider"] = { "n", 48333 },	-- Foreman Pikwik
 					["coord"] = { 54.6, 18.3, 77 },

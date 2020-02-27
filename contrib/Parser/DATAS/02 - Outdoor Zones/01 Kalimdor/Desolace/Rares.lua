@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(66, {	-- Desolace
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(14229, {	-- Accursed Slitherblade
 					["coords"] = {
 						{ 29.4, 13.8, 66 },

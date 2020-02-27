@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(106, {	-- Bloodmyst Isle
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(9624,  {	-- A Favorite Treat
 					["provider"] = { "n", 17599 },	-- Aonar
 					["coord"] = { 63.4, 88.7, 106 },

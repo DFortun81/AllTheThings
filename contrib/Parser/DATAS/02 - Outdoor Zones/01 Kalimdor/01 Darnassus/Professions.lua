@@ -6,13 +6,13 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(89, {	-- Darnassus			
 			n(-38, {	-- Professions
-				prof(171, {	-- Alchemy
-					n(-17, {	-- Quests
+				prof(ALCHEMY, {
+					n(QUESTS, {
 						q(29481, {	-- Elixir Master
 							["provider"] = { "n", 4160 },	-- Ainethil (Darnassus)
 							["coord"] = { 54.0, 38.6, 89 },	-- Ainethil (Darnassus)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = 171,	-- Alchemy
+							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -27,7 +27,7 @@ _.Zones =
 							["provider"] = { "n", 4160 },	-- Ainethil (Darnassus)
 							["coord"] = { 54.0, 38.6, 89 },	-- Ainethil (Darnassus)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = 171,	-- Alchemy
+							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -42,7 +42,7 @@ _.Zones =
 							["provider"] = { "n", 4160 },	-- Ainethil (Darnassus)
 							["coord"] = { 54.0, 38.6, 89 },	-- Ainethil (Darnassus)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = 171,	-- Alchemy
+							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -55,18 +55,18 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(185, {	-- Cooking
+				prof(COOKING, {
 					n(-4, {	-- Achievements
 						ach(5842, {	-- Let's Do Lunch: Darnassus
 							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
-					n(-17, { 	-- Quests
+					n(QUESTS, {
 						q(29316, {	-- Back to Basics
 							["provider"] = { "n", 4210 },	-- Alegorn
 							["coord"] = { 50.0, 36.6, 89 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -80,7 +80,7 @@ _.Zones =
 							["provider"] = { "n", 4210 },	-- Alegorn
 							["coord"] = { 50.0, 36.6, 89 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -94,7 +94,7 @@ _.Zones =
 							["provider"] = { "n", 4210 },	-- Alegorn
 							["coord"] = { 50.0, 36.6, 89 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -108,7 +108,7 @@ _.Zones =
 							["provider"] = { "n", 4210 },	-- Alegorn
 							["coord"] = { 50.0, 36.6, 89 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -122,7 +122,7 @@ _.Zones =
 							["provider"] = { "n", 4210 },	-- Alegorn
 							["coord"] = { 50.0, 36.6, 89 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -134,18 +134,18 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(356, {	-- Fishing
+				prof(FISHING, {
 					n(-4, {	-- Achievements
 						ach(5848, {	-- Fish or Cut Bait: Darnassus
 							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
-					n(-17, { 	-- Quests
+					n(QUESTS, {
 						q(29325, {	-- A Slippery Snack
 							["provider"] = { "n", 4156 },	-- Astaia
 							["coord"] = { 49.0, 61.0, 89 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -164,7 +164,7 @@ _.Zones =
 							["provider"] = { "n", 4156 },	-- Astaia
 							["coord"] = { 49.0, 61.0, 89 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -183,7 +183,7 @@ _.Zones =
 							["provider"] = { "n", 4156 },	-- Astaia
 							["coord"] = { 49.0, 61.0, 89 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -202,7 +202,7 @@ _.Zones =
 							["provider"] = { "n", 4156 },	-- Astaia
 							["coord"] = { 49.0, 61.0, 89 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -221,7 +221,7 @@ _.Zones =
 							["provider"] = { "n", 4156 },	-- Astaia
 							["coord"] = { 49.0, 61.0, 89 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
 							["g"] = {
@@ -238,12 +238,12 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(165, {	-- Leatherworking
-					n(-17, { 	-- Quests
+				prof(LEATHERWORKING, {
+					n(QUESTS, {
 						q(1582, {	-- Moonglow Vest
 							["provider"] = { "n", 6034 },	-- Lotherias
 							["coord"] = { 60.4, 37.0, 89 },
-							["requireSkill"] = 165,	-- Leatherworking
+							["requireSkill"] = LEATHERWORKING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 8,
 							["g"] = {
