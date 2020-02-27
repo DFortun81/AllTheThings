@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(84, {	-- Stormwind City
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				gsh(1522, {	-- Allied Races
 					["icon"] = "Interface\\Icons\\FactionChange",
 					["g"] = {

@@ -82,7 +82,7 @@ _.Zones =
 						}),	
 					}),
 				}),
-				prof(185, {	-- Cooking
+				prof(COOKING, {
 					n(-4, {	-- Achievements
 						ach(5474, {	-- Let's Do Lunch: Stormwind
 							["races"] = ALLIANCE_ONLY,
@@ -93,7 +93,7 @@ _.Zones =
 							["provider"] = { "n", 42288 },	-- Robby Flay
 							["coord"] = { 50.6, 71.6, 84 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								crit(1, {	-- A Fisherman's Feast
@@ -106,7 +106,7 @@ _.Zones =
 							["provider"] = { "n", 42288 },	-- Robby Flay
 							["coord"] = { 50.6, 71.6, 84 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								crit(2, {	-- Feeling Crabby?
@@ -119,7 +119,7 @@ _.Zones =
 							["provider"] = { "n", 42288 },	-- Robby Flay
 							["coord"] = { 50.6, 71.6, 84 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								crit(3, {	-- Orphans Like Cookies Too!
@@ -132,7 +132,7 @@ _.Zones =
 							["provider"] = { "n", 42288 },	-- Robby Flay
 							["coord"] = { 50.6, 71.6, 84 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								crit(4, {	-- Penny's Pumpkin Pancakes
@@ -145,7 +145,7 @@ _.Zones =
 							["provider"] = { "n", 42288 },	-- Robby Flay
 							["coord"] = { 50.6, 71.6, 84 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								crit(5, {	-- The King's Cider
