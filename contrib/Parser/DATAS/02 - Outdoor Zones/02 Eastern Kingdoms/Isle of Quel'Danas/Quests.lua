@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(122, {	-- Isle of Quel'Danas
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(11545, {	-- A Charitable Donation (Removed completion of Phase 4)
 					["u"] = 40,
 					["provider"] = { "n", 25112 },	-- Anchorite Ayuri

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(23, {	-- Eastern Plaguelands
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(10819, { 	-- Baron Bloodbane
 					["coord"] = { 35.4, 21.2, 23 },
 					["g"] = {

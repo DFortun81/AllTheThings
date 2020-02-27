@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(37, {	-- Elwynn Forest
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(5545,  {	-- A Bundle of Trouble
 					["provider"] = { "n", 10616 },	-- Supervisor Raelen
 					["coord"] = { 81.3, 66.1, 37 },

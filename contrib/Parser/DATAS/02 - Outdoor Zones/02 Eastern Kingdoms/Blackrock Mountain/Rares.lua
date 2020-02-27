@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(35, {	-- Blackrock Mountain
-			n(-16, { 	-- Rares
+			n(RARES, {
 				n(50839, { 	-- Chromehound
 					["description"] = "Patrols around the circular path above the lava.",
 					["coords"] = {

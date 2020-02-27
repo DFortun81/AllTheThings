@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(27, {	-- Dun Morogh
-			n(-16,  {	-- Rares
+			n(RARES, {
 				n(1130, {	-- Bjarn
 					["coords"] = {
 						{ 69.2, 55.8, 27 },

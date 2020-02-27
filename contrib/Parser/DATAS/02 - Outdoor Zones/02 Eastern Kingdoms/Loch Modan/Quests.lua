@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(48, {	-- Loch Modan
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(283,   {	-- A Dark Threat Looms
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests

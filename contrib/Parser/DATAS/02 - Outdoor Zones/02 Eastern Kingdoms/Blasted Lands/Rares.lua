@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(17, {	-- Blasted Lands
-			n(-16,  {	-- Rares
+			n(RARES, {
 				["description"] = "If you are above level 90 and need to go to the low-level Blasted Lands, then you need to speak with Zidormi, who is standing on a small hill near the entrance of the zone from Swamp of Sorrows.",
 				["g"] = {
 					n(8298,  { 	-- Akubar the Seer

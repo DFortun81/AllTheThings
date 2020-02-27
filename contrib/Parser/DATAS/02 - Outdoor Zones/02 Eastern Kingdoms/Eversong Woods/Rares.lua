@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(94, {	-- Eversong Woods
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(16854, {	-- Eldinarcus
 					["coords"] = {
 						{ 68.4, 46.0, 94 },

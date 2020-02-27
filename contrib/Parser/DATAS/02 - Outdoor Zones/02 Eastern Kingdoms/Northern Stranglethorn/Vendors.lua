@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(50, {	-- Northern Stranglethorn
-			n(-2,   {	-- Vendors
+			n(VENDORS, {
 				n(734, {	-- Corporal Bluth <Camp Trader>
 					["coord"] = { 47.2, 10.2, 50 },
 					["races"] = ALLIANCE_ONLY,

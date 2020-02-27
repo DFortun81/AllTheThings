@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(50, {	-- Northern Stranglethorn
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(14487, { 	-- Gluggl
 					["coords"] = {
 						{ 43.6, 43.4, 50 },

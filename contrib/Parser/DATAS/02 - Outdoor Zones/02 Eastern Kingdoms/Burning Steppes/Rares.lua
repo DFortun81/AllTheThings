@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(36, {	-- Burning Steppes
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(50725, { 	-- Azelisk
 					["coord"] = { 71.8, 23.0, 36 },
 					["g"] = {

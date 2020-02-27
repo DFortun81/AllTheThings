@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms		
 		m(42, {	-- Deadwind Pass
-			n(-17, {	-- Quests
+			n(QUESTS, {
 --[[			
 				q(40933, {	-- A Grisly Task
 					["provider"] = { "n", 100729 },	-- 

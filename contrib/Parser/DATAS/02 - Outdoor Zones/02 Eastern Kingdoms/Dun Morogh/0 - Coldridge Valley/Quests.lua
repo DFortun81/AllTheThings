@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(27, {	-- Dun Morogh
 			m(427,  {	-- Coldridge Valley
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(3361,  {	-- A Refugee's Quandary
 						["provider"] = { "n", 8416 },	-- Felix Whindlebolt
 						["coord"] = { 41.8, 63.7, 427 },

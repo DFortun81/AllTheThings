@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(48, {	-- Loch Modan
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(45380,  {	-- Ashtail
 					["coords"] = {
 						{ 68.8, 38.2, 48 },

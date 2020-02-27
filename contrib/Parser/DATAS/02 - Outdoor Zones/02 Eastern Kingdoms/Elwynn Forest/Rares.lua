@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(37, {	-- Elwynn Forest
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(51077, {	-- Bushtail
 					["coords"] = {
 						{ 83.8, 85.0, 37 },

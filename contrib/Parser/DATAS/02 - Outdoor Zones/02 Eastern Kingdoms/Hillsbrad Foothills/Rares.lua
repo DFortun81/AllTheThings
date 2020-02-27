@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(25, {	-- Hillsbrad Foothills
-			n(-16,  {	-- Rares
+			n(RARES, {
 				n(50335, { 	-- Alitus
 					["coord"] = { 46.8, 66.8, 25 },
 					["g"] = {

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(94, {	-- Eversong Woods
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(18951, {	-- Erilia <Enchanting Vendor>
 					["coord"] = { 56.2, 54.6, 94 },
 					["races"] = HORDE_ONLY,

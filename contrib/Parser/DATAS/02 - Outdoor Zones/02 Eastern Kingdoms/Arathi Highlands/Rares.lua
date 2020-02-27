@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(14, {	-- Arathi Highlands
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(50891, { 	-- Boros
 					["coord"] = { 48.4, 35.6, 14 },
 					["g"] = {

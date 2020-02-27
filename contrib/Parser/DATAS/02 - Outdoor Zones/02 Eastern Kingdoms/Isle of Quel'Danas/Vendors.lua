@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(122, {	-- Isle of Quel'Danas
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 			-- TO DO: Olus
 				n(25032, {	-- Eldara Dawnrunner <Shattered Sun Quartermaster>
 					["coord"] = { 47.2, 30.7, 122 },

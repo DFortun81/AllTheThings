@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(47, {	-- Duskwood
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(45785, {	-- Carved One
 					["coords"] = {	-- pats in a circle, coords not exhaustive
 						{ 48.4, 70.4, 47 },

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(14, {	-- Arathi Highlands
-			n(-2,  {	-- Vendors
+			n(VENDORS, {
 				n(2816, {	-- Androd Fadran <Leatherworking Supplies>
 					["coord"] = { 39.2, 48.2, 14 },
 					["races"] = ALLIANCE_ONLY,

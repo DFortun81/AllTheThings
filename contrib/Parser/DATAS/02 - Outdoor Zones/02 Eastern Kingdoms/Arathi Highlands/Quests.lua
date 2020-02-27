@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(14, {	-- Arathi Highlands
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(26081, {	-- Alina's Reward
 					["provider"] = { "n", 41944 },	-- Galen Trollbane
 					["coord"] = { 12.9, 36.1, 14 },
@@ -630,7 +630,7 @@ _.Zones =
 					["coord"] = { 68.4, 37.8, 14 },
 					["sourceQuest"] = 6623,	-- Horde Trauma
 					["description"] = "This quest requires a skill of 225 in First Aid.",
-					["requireSkill"] = 129,	-- First Aid
+					["requireSkill"] = FIRST_AID,
 					["races"] = HORDE_ONLY,
 					["u"] = 40,
 				}),

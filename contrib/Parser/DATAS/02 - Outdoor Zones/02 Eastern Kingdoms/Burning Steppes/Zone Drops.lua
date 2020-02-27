@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(36, {	-- Burning Steppes
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(10822, {	-- Dark Whelpling (PET!)
 					["crs"] = { 7049 },	-- Flamescale Broodling
 				}),

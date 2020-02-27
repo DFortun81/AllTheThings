@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(15, {	-- Badlands
-			n(-16,  {	-- Rares
+			n(RARES, {
 				n(14224, { 	-- 7:XT
 					["coord"] = { 78.6, 31.6, 15 },
 					["g"] = {

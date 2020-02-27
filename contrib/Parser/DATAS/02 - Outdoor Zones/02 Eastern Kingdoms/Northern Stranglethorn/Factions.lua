@@ -10,7 +10,7 @@ _.Zones =
 				["creatureID"] = 14875,	-- Molthor <Hand of Rastakhan>
 				["maps"] = { 337 },	-- Zul'Gurub
 				["g"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(8240, {	-- A Bijou for Zanza
 							["provider"] = { "n", 15070 },		-- Vinchaxa <Servitor of Zanza>
 							["u"] = 40,			-- Legacy Content
@@ -587,7 +587,7 @@ _.Zones =
 							}),
 						}),
 					}),
-					n(-2, {	-- Vendors
+					n(VENDORS, {
 						n(14921, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 							["u"] = 43,
 							["g"] = {

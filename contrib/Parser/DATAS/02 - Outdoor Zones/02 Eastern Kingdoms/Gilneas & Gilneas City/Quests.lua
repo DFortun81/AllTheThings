@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(179, {	-- Gilneas
 			m(202, {	-- Gilneas City
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(14093, {	-- All Hell Breaks Loose
 						["provider"] = { "n", 34913 },	-- Prince Liam Greymane
 						["sourceQuest"] = 14091,	-- Something's Amiss
@@ -408,7 +408,7 @@ _.Zones =
 					}),
 				}),
 			}),
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(14467, {	-- Alas, Gilneas!
 					["provider"] = { "n", 36743 },	-- King Genn Greymane
 					["sourceQuest"] = 14466,	-- The King's Observatory

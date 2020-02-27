@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(47, {	-- Duskwood
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(26720, {	-- A Curse We Cannot Lift
 					["provider"] = { "n", 43730 },	-- Oliver Harris
 					["coord"] = { 18.3, 57.6, 47 },
