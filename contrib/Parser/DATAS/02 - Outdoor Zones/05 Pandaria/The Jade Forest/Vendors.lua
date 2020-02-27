@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(371, {	-- The Jade Forest
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(56707, {	-- Chin <Master of Noodles>
 					["coord"] = { 46.2, 45.4, 371 },
 					["g"] = {

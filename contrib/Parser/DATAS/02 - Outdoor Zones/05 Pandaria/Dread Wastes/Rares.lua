@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, { 	-- Pandaria
 		m(422, {	-- Dread Wastes
-			n(-16, { 	-- Rares
+			n(RARES, {
 				n(50821, {	-- Ai-Li Skymirror
 					["coord"] = { 34.8, 23.2, 422 },
 					["g"] = {

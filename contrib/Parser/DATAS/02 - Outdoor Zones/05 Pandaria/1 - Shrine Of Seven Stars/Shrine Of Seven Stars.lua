@@ -19,7 +19,7 @@ _.Zones =
 				n(-4,  {	--Achievements
 					ach(7285),	-- Every Day I'm Pand-a-ren
 				}),
-				n(-17, {	-- Quests	
+				n(QUESTS, {	
 					q(32900, {	-- Heroic Deeds
 						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Bulging Heroic Cache of Treasures are class- and spec-specific. Not all items are available to all classes able to equip them.|r",
 						["coord"] = { 47.23, 49.71, 393 },
@@ -40,7 +40,7 @@ _.Zones =
 						["provider"] = { "n", 64101 },	-- Taijin the Cyclone
 					}),
 					q(32683, {	-- So You Want to Be a Blacksmith...
-						["requireSkill"] = 164,	-- Blacksmithing
+						["requireSkill"] = BLACKSMITHING,
 						["provider"] = { "n", 64085 },	-- Cullen Hammerbrow
 						["coord"] = { 71.27, 50.52, 393 },
 					}),
@@ -62,7 +62,7 @@ _.Zones =
 					}),
 					]]--
 				}),
-				n(-2,  {	-- Vendors
+				n(VENDORS, {
 					n(74021, {	-- Clarice Chapmann <Heroic Vendor>
 						["coord"] = { 43.0, 45.5, 394 },
 						["g"] = {
@@ -459,7 +459,7 @@ _.Zones =
 						},
 					}),
 					n(64085, {	-- Cullen Hammerbrow <Blacksmithing Supplies>
-						["requireSkill"] = 164,	-- Blacksmithing
+						["requireSkill"] = BLACKSMITHING,
 						["coord"] = { 71.2, 50.5, 393 },
 						["g"] = {
 							i(84158, {	-- Plans: Contender's Revenant Belt
@@ -945,7 +945,7 @@ _.Zones =
 						},
 					}),
 					n(64052, {	-- Raishen the Needle <Tailoring Supplies>
-						["requireSkill"] = 197,	-- Tailoring
+						["requireSkill"] = TAILORING,
 						["coord"] = { 64.7, 44.1, 393 },
 						["g"] = {
 							i(86361, {	-- Pattern: Contender's Satin Amice
@@ -1006,7 +1006,7 @@ _.Zones =
 						},
 					}),
 					n(64094, {	-- Tanner Pang <Leatherworking & Skinning Supplies>
-						["requireSkill"] = 165,	-- Leatherworking
+						["requireSkill"] = LEATHERWORKING,
 						["coord"] = { 75.6, 50.2, 393 },
 						["g"] = {
 							i(86240, {	-- Pattern: Contender's Dragonscale Belt

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(504, {	-- Isle of Thunder
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(70000, {	-- Al'tabim the All-Seeing
 					["isWeekly"] = true,
 					["questID"] = 32610,

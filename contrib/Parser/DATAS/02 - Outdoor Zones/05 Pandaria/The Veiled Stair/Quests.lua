@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(433, {	-- The Veiled Stair
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(33104, {	-- A Pandaren Legend
 					["u"] = 40,
 					["g"] = {

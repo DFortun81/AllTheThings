@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(504, {	-- Isle of Thunder
-			n(-17, { 	-- Quests
+			n(QUESTS, {
 				q(32655, {	-- A Bold Idea
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -501,7 +501,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				{	---------- Lightning Steel
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["questID"] = 32621,	-- Lightning Steel
 					["itemID"] = 94721,	-- Strange Metal Ingot
 					["coord"] = { 57.6, 33.8, 504 },

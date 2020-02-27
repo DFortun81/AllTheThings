@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(371, {	-- The Jade Forest
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(50750, {	-- Aethis
 					["coord"] = { 33.5, 50.7, 371 },
 					["g"] = {
