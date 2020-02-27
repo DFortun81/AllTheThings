@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(71, {	-- Tanaris
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(5594,   {	-- Alchemist Pestlezugg <Alchemy Supplies>
 					["coord"] = { 50.8, 28.0, 71 },
 					["g"] = {

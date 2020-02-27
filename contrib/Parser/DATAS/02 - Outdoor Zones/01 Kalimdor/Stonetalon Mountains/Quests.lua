@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(65, {	-- Stonetalon Mountains
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(1071,  {	-- A Gnome's Respite
 					["u"] = 40,
 					["provider"] = { "n", 4077 },	-- Gaxim Rustfizzle

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(198, {	-- Mount Hyjal
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(50314, {	-- Provisioner Whitecloud <Guardians of Hyjal Quartermaster>
 					["coord"] = { 62.7, 23.8, 198 },
 					["g"] = {

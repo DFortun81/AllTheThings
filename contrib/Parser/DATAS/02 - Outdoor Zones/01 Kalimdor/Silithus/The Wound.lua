@@ -8,7 +8,7 @@ _.Zones =
 			n(-93, {	-- Silithus (The Wound)
 				["lvl"] = 110,
 				["g"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(53112, {	-- Azeroth's Tear
 							["repeatable"] = true,
 							["lvl"] = 120,
@@ -184,7 +184,7 @@ _.Zones =
 							["u"] = 40,	-- Retired with the implementation of 8.2
 						}),
 					}),
-					n(-16, {	-- Rares
+					n(RARES, {
 						n(132591, {	-- Ogmot the Mad
 							["questID"] = 50334,	-- also triggered 50225. First kill questID?
 							["coord"] = { 28.9, 74.6, 81 },

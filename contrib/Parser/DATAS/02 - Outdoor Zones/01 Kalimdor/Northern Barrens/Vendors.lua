@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(10, {	-- Northern Barrens
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(3495,	{	-- Gagsprocket <Engineering Supplies>
 					["coord"] = { 68.4, 69.2, 10 },
 					["g"] = {

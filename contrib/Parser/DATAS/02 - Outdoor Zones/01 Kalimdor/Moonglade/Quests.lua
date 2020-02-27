@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(80, {	-- Moonglade
-			n(-17, { 	-- Quests
+			n(QUESTS, {
 				q(5527,  {	-- A Reliquary of Purity
 					["u"] = 40,
 					["provider"] = { "n", 11801 },	-- Rabine Saturna

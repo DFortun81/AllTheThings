@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor		
 		m(80, {	-- Moonglade
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(12023, {	-- Darnall <Tailoring Supplies>
 					["coord"] = { 51.6, 33.2, 80 },
 					["g"] = {

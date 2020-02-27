@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(83, {	-- Winterspring
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(51045,  {	-- Arcanus
 					["coord"] = { 48.0, 59.6, 83 },
 					["g"] = {

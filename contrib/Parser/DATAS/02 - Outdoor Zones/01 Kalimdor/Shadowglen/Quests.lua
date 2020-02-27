@@ -6,7 +6,7 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(57, {	-- Teldrassil
 			m(460, {	-- Shadowglen
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(28734, {	-- A Favor for Melithar
 						["provider"] = { "n", 2079 },	-- Ilthalaine
 						["coord"] = { 46.3, 73.5, 460 },

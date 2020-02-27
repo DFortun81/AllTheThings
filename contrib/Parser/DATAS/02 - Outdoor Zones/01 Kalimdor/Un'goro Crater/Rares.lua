@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(78, {	-- Un'Goro Crater
-			n(-16, {	-- Rares	
+			n(RARES, {	
 				n(14461,  {	-- Baron Charr
 					["description"] = "This rare was only available during the Elemental Invasions.",
 					["u"] = 43,	-- Removed NPCs

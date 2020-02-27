@@ -6,7 +6,7 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(1, {	-- Durotar
 			m(461, {	-- Valley of Trials
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(25130, {	-- Back to the Den
 						["provider"] = { "n", 3287 },	-- Hana'zua
 						["coord"] = { 34.6, 44.2, 461 },

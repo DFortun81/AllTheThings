@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(78, {	-- Un'Goro Crater
-			n(-2,  {	-- Vendors
+			n(VENDORS, {
 				n(38561, {	-- Dramm Riverhorn <Light Armor Merchant>
 					["coord"] = { 43.4, 41.6, 78 },
 					["g"] = {

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(7, {	-- Mulgore
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(3068, {	-- Mazzranache
 					["coord"] = { 50.4, 42.6, 7 },
 					["u"] = 43,	-- Removed NPCs

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(57, {	-- Teldrassil
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(44030, {	-- Draelan <Enchanting Supplies>
 					["coord"] = { 39.0, 30.0, 57 },
 					["races"] = ALLIANCE_ONLY,

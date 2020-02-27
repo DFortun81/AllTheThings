@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(71, {	-- Tanaris
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(47386, {	-- Ainamiss the Hive Queen
 					["coords"] = {
 						{ 33.0, 49.0, 71 },

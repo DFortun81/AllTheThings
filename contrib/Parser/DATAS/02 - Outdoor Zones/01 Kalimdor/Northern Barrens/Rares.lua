@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(10, {	-- Northern Barrens
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(3672, {	-- Boahn
 					["description"] = "Roams around the waterfall just outside the Wailing Caverns dungeon portal.",
 					["g"] = {

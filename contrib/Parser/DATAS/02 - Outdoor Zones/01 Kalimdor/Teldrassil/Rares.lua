@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(57, {	-- Teldrassil
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(2162, {	-- Agal
 					["coord"] = { 47.2, 44.8, 57 },
 					["g"] = {

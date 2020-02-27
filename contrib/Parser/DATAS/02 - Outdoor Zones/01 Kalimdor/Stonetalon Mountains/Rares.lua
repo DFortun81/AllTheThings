@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(65, {	-- Stonetalon Mountains
-			n(-16, {	-- Rares	
+			n(RARES, {	
 				n(50812, {	-- Arae
 					["coord"] = { 49.4, 65.6, 65 },
 					["g"] = {

@@ -62,7 +62,7 @@ _.Zones =
 							crit(9),		-- Save Anren Shadowseeker
 						}),
 					}),
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(29281, {	-- Additional Armaments
 							["provider"] = { "n", 53214 },	-- Damek Bloombeard
 							["coord"] = { 47.0, 90.0, 338 },
@@ -300,7 +300,7 @@ _.Zones =
 						}),
 						]]--
 					}),
-					n(-16, {	-- Rares
+					n(RARES, {
 						o(207496, {	-- Dark Iron Treasure Chest
 							["model"] = 446673,
 							--["modelScale"] = 1.5,
@@ -344,7 +344,7 @@ _.Zones =
 		--					n(54321, { 	-- Solix 	}),
 		--]]
 					}),
-					n(-2,  {	-- Vendors
+					n(VENDORS, {
 						n(53881, {	-- Ayla Shadowstorm <Treasures of Elune>
 							["description"] = "This vendor unlocks once you complete the quest Filling the Moonwell.",
 							["sourceQuest"] = 29279,	-- Filling the Moonwell

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(10, {	-- Northern Barrens
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(29090, {	-- A Burning Threat
 					["provider"] = { "n", 52192 },	-- Brogor
 					["coord"] = { 44.2, 25.0, 10 },
@@ -670,7 +670,7 @@ _.Zones =
 				q(866,   {	-- Root Samples
 					["provider"] = { "n", 3446 },	-- Mebok Mizzyrix
 					["coord"] = { 67.8, 71.6, 10 },
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 					["g"] = {
 						i(5341),	-- Spore-Covered Tunic
 					},

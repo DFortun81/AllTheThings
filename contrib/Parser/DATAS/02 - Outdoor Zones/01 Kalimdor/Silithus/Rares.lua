@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(81, {	-- Silithus
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(50737, {	-- Acroniss
 					["coord"] = { 73.6, 16.0, 81 },
 					["g"] = {

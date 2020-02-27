@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(198, {	-- Mount Hyjal
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(25731, {	-- A Bird in Hand
 					["provider"] = { "n", 41006 },	-- Thisalee Crow
 					["coord"] = { 42.1, 45.4, 198 },

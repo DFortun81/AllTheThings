@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(64, {	-- Thousand Needles
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(5933,  {	-- Achellios the Banished
 					["coords"] = {
 						{ 70.0, 49.2, 64 },

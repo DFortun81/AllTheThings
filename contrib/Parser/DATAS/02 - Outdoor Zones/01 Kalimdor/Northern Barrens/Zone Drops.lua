@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(10, {	-- Northern Barrens
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(5107, {	-- Deckhand's Shirt
 					["crs"] = {
 						3382,	-- Southsea Cannoneer

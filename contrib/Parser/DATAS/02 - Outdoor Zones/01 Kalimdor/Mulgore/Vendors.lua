@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(7, {	-- Mulgore
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(3685, {	-- Harb Clawhoof <Kodo Mounts>
 					["coord"] = { 47.6, 58.0, 7 },
 					["races"] = HORDE_ONLY,

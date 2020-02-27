@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(199, {	-- Southern Barrens
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(5834, {	-- Azzere the Skyblade
 					["coords"] = {
 						{ 45.8, 55.0, 199 },
