@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(111, {	-- Shattrath City
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(19662,  {	-- Aaron Hollman <Blacksmithing Supplies>
 					["coord" ] = { 64.0, 71.8, 111 },
 					["g"] = {

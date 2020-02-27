@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(105, {	-- Blade's Edge Mountains
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(29750, {	-- Ethereum Stasis Chamber Key (required to summon/"release" mobs)(5x prison keys)
 					["description"] = "Requires 5 Ethereum Prison Keys to purchase.",
 					["coords"] = {

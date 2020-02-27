@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(107, {	-- Nagrand (Outland)
-			n(-16,  {	-- Rares	
+			n(RARES, {
 				n(17144, {	-- Goretooth
 					["coords"] = {
 						{ 58.2, 27.8, 107 },

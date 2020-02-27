@@ -5,11 +5,11 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(107, {	-- Nagrand (Outland)
-			n(-17,  {	-- Quests
+			n(QUESTS, {
 				faction(932, {	-- The Aldor
 					["collectible"] = false,
 					["g"] = {
-						n(-17,  {	-- Quests
+						n(QUESTS, {
 							q(10669, {	-- Against All Odds
 								["provider"] = { "n", 18417 },	-- Altruis the Sufferer
 								["sourceQuests"] = {
@@ -53,7 +53,7 @@ _.Zones =
 				faction(934,  {	-- The Scryers
 					["collectible"] = false,
 					["g"] = {
-						n(-17,  {	-- Quests
+						n(QUESTS, {
 							q(10669, {	-- Against All Odds
 								["provider"] = { "n", 18417 },	-- Altruis the Sufferer
 								["coord"] = { 27.3, 43.0, 107 },

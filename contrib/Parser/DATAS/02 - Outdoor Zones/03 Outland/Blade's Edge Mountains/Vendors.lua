@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(105, {	-- Blade's Edge Mountains
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(23245, {	-- Aether-tech Master
 					["description"] = "The Skyguard sends out a group to study the Bash'ir Crystalforge at Bash'ir Landing once every two hours.|nOnce the event is underway, you must protect the Skyguard from three waves of attacks.|nWave one: fight until the elite Bash'ir Flesh Fiend spawns, then kill it.|nWave two: Fight until the three Disruptor Towers spawn, then destroy them.|nWave three: Fight until The Grand Collector shows up. He will be unattackable initially, but once you have defeated enough of the Bash'ir, he will decide to kill you himself, and become attackable.|nOnce the Grand Collector has been dealt with, the Aether-tech Master will arrive and you may purchase his goods with Apexis Crystals.|r",
 					["coord"] = { 54.4, 10.8, 105 },

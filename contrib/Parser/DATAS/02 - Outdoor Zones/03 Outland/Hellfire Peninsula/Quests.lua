@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(100, {	-- Hellfire Peninsula
-			n(-17, {  	-- Quests
+			n(QUESTS, {
 				q(10864, {	-- A Burden of Souls
 					["coord"] = { 52.2, 36.4, 100 },
 					["races"] = HORDE_ONLY,

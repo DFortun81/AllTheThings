@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(100, {	-- Hellfire Peninsula
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(18678, {	-- Fulgore
 					["description"] = "This rare cannot be manually targeted, and you may not be able to see it if you're flying too high.  Search along its three possible paths and be on the lookout for red rumbling rocks.",
 					["coords"] = {

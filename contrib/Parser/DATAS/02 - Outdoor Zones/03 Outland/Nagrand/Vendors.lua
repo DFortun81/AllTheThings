@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(107, {	-- Nagrand (Outland)
-			n(-2,   {	-- Vendors
+			n(VENDORS, {
 				n(21485, {	-- Aldraan <Blade Merchant>
 					["description"] = "This vendor is only accessible when the Alliance controls Halaa.",
 					["coord"] = { 42.8, 42.6, 107 },

@@ -49,7 +49,7 @@ _.Zones =
 					["creatureID"] = 23428,	-- Jho'nass <Ogri'la Quartermaster>
 					["g"] = {
 						ach(896),	-- A Quest a Day Keeps the Ogres at Bay
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(11091, {	-- A Special Thank You
 								["provider"] = { "n", 23233 },	-- Chu'a'lor
 								["coord"] = { 28.8, 57.4, 105 },
@@ -95,7 +95,7 @@ _.Zones =
 								["isDaily"] = true,
 							}),
 						}),	
-						n(-2,  {	-- Vendors
+						n(VENDORS, {
 							n(23428, {	-- Jho'nass <Ogri'la Quartermaster>
 								["coord"] = { 28.0, 58.6, 105 },
 								["g"] = {

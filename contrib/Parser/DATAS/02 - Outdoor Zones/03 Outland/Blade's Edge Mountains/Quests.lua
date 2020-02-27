@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(105, {	-- Blade's Edge Mountains
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				ach(1193, {	-- On the Blade's Edge
 					crit(1, {	-- On the Blade's Edge (H) / Sylvanaar (A)
 					-- Horde questline

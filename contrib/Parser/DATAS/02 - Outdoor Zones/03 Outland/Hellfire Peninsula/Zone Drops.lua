@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(100, {	-- Hellfire Peninsula
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				["maps"] = {
 					347,	-- Hellfire Ramparts
 					261,	-- The Blood Furnace

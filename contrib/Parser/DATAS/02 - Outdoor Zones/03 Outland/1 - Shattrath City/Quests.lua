@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(111, {	-- Shattrath City
-			n(-17,  {	-- Quests
+			n(QUESTS, {
 				q(12753, {	-- A Desperate Alliance
 					["u"] = 40,
 					["races"] = { 3 },	-- Dwarf
@@ -54,7 +54,7 @@ _.Zones =
 					["isBreadcrumb"] = true,	-- for "A Haunted History" in Shadowmoon Valley
 				}),
 				q(44863, {	-- Clearing the Air
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["coord"] = { 64.1, 71.5, 111 },
 					["provider"] = { "n", 115546 },	-- Lunelli
 					["g"] = {
@@ -99,7 +99,7 @@ _.Zones =
 					["description"] = "This quest is only available during BC Timewalking.",
 				}),
 				q(41160, {	-- Earth to Earth
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["coord"] = { 64.1, 71.5, 111 },
 					["provider"] = { "n", 115546 },	-- Lunelli
 					["g"] = {
