@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, { 	-- Northrend
 		m(118, { 	-- Icecrown
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(13286, {	-- ...All the Help We Can Get.
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 30344 },	-- High Captain Justin Bartlett

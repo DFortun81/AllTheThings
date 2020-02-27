@@ -8,7 +8,7 @@ _.Zones =
 			faction(1104, {	-- Frenzyheart Tribe
 				["achievementID"] = 950,	-- Frenzyheart Tribe
 				["g"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(12758, {	-- A Hero's Headgear
 							["coord"] = { 55.7, 69.4, 119 },
 							["isDaily"] = true,
@@ -134,7 +134,7 @@ _.Zones =
 			faction(1105, {	-- The Oracles
 				["achievementID"] = 951,	-- The Oracles
 				["g"] = {
-					n(-17, { 	-- Quests
+					n(QUESTS, {
 						q(12735, {	-- A Cleansing Song
 							["coord"] = { 53.3, 56.4, 119 },
 							["isDaily"] = true,

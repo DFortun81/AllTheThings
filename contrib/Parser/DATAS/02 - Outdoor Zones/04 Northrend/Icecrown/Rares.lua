@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(118, {	-- Icecrown
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(32501, {	-- High Thane Jorfus
 					["coords"] = {
 						{ 32.0, 69.8 },

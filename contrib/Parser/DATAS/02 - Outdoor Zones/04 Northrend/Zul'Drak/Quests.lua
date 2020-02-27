@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(121, {	-- Zul'Drak
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(12912, {	-- A Great Storm Approaches
 					["coord"] = { 19.7, 56.3, 121 },
 					["provider"] = { "n", 29647 },	-- Gymer

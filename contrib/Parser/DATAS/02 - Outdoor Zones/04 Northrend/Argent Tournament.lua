@@ -236,7 +236,7 @@ _.Zones =
 						["coord"] = { 72.6, 22.6, 118 },
 					}),
 				}),
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					i(45724, {	-- Champion's Purse
 						["description"] = "You get 1 Champion's Seal from these bags.",
 						["g"] = {
@@ -1397,7 +1397,7 @@ _.Zones =
 						},
 					}),
 				}),
-				n(-2, {	-- Vendors
+				n(VENDORS, {
 					n(-15, {	-- Common Vendor Items
 						i(45725, {	-- Argent Hippogryph
 							["cost"] = { { "c", 241, 150 }, },	-- 150x Champion's Seal

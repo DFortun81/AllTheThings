@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(120, {	-- The Storm Peaks
-			n(-17,  {	-- Quests
+			n(QUESTS, {
 				i(44751, {	-- Hyldnir Spoils
 					["coord"] = { 50.8, 65.6, 120 },
 					["description"] = "Reward from the following daily quests: Back to the Pit, Defending Your Title, Maintaining Discipline, and The Aberrations Must Die. \n\nOne of the quests is offered at random each day.",
@@ -625,7 +625,7 @@ _.Zones =
 					["provider"] = { "n", 29724 },	-- Library Guardian
 					["coord"] = { 39.2, 42.0, 120 },	-- general area
 					["itemID"] = 41267,	-- SCRAP-E Access Card
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 				}),
 				q(13064, {	-- Sibling Rivalry
 					["provider"] = { "n", 29445 },	-- Thorim
@@ -902,7 +902,7 @@ _.Zones =
 				q(12889, {	-- The Prototype Console
 					["provider"] = { "n", 29806 },	-- SCRAP-E
 					["coord"] = { 37.6, 46.4, 120 },
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["sourceQuests"] = { 12888 },	-- SCRAP-E
 					["g"] = {
 						recipe(55252),	-- Schematic: Scrapbot Construction Kit
@@ -932,7 +932,7 @@ _.Zones =
 					["model"] = 243957,
 					["provider"] = { "o", 191761 },	-- Prototype Console
 					["repeatable"] = true,
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["sourceQuests"] = { 12889 },	-- The Prototype Console
 					-- wh says this ALSO teaches Scrapbot Construction Kit, spell 55252
 					-- not sure how to list reward/what quest it comes from, or if the questline has changed, so i guess an engineer needs to check it out

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(120, {	-- The Storm Peaks
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(30464, {	-- "Honest" Max <Slightly Used Flying Mounts>
 					["coord"] = { 40.6, 84.6, 120 },
 					["g"] = {
