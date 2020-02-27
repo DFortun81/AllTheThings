@@ -8,7 +8,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["mapID"] = 593,
 		["coord"] = { 46.27, 73.92, 535 },	-- Talador, Draenor
 		["groups"] = {
-			n(-1, {	-- Common Boss Drop
+			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					75839,	-- Vigilant Kaathar
 					76177,	-- Soulbinder Nyami
@@ -229,7 +229,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			d(2, {		-- Heroic
 				["lvl"] = 100,
 				["groups"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(37156, {
 							i(119039),	-- Lilian's Warning Sign Toy
 						}),

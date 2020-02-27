@@ -8,7 +8,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["maps"] = { 620, 621 },
 		["lvl"] = 100,
 		["g"] = {
-			n(-1, {	-- Common Boss Drop
+			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					81522,	-- Witherbark
 					83894,	-- Ancient Protectors
@@ -21,7 +21,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				},
 			}),
 			d(1, {	-- Normal
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(37150, {
 						i(118921),	-- Everbloom Peachick (PET!)
 					}),
@@ -296,7 +296,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				}),
 			}),
 			d(2, {	-- Heroic
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(37165, {
 						i(118935),	-- Ever-Blooming Frond
 					}),

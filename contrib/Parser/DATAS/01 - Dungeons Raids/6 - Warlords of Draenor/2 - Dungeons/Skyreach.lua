@@ -8,7 +8,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["maps"] = { 601, 602 },
 		["coord"] = { 35.58, 33.6, 542 },	-- Spires of Arak, Draenor
 		["groups"] = {
-			n(-1, {	-- Common Boss Drop
+			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					75964,	-- Ranjit
 					76141,	-- Araknath
@@ -229,7 +229,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			d(2, {	-- Heroic
 				["lvl"] = 100,
 				["groups"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(37159, {
 							i(119093), --Aviana's Feather
 						}),
@@ -593,7 +593,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						},
 						i(127771, {	-- Gemcutter Module: Haste
 							["spellID"] = 187635,
-							["requireSkill"] = 755,	-- Jewelcrafting
+							["requireSkill"] = JEWELCRAFTING,
 							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 							["coord"] = {
 								25.84, 39.79
@@ -808,7 +808,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					cr(76266, e(968, {	-- High Sage Viryx
 						i(127771, {	-- Gemcutter Module: Haste
 							["spellID"] = 187635,
-							["requireSkill"] = 755,	-- Jewelcrafting
+							["requireSkill"] = JEWELCRAFTING,
 							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 							["coord"] = {
 								25.84, 39.79

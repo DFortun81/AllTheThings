@@ -8,7 +8,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["maps"] = { 606, 607, 608, 609 },
 		["lvl"] = 100,
 		["g"] = {
-			n(-1, {	-- Common Boss Drop
+			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					77803,	-- Railmaster Rocketspark
 					79545,	-- Nitrogg Thundertower
@@ -19,7 +19,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				},
 			}),
 			d(1,  {	-- Normal
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(37151, {	-- Cold Steel
 						i(118918),  -- Bloody Bandanna
 					}),
@@ -199,7 +199,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				}),
 			}),
 			d(2,  {	-- Heroic
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(37160, {	-- Cleaving Time
 						i(118937),  -- Gamon's Braid Toy
 					}),

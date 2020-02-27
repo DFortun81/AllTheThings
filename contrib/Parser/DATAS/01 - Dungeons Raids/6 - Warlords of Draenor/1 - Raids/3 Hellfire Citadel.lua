@@ -69,7 +69,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				}),
 			}),
 			d(17, {	-- LFR
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					un(40, i(127115, {	-- Tome of Chaos
 						["crs"] = {
 							95068,	-- Hellfire Assault
@@ -207,7 +207,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						cr(90316, e(1433, {	-- Shadow-Lord Iskar
 							i(127771, {	-- Gemcutter Module: Critical Strike
 								["spellID"] = 187634,
-								["requireSkill"] = 755,	-- Jewelcrafting
+								["requireSkill"] = JEWELCRAFTING,
 								["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 								["coord"] = {
 									25.84, 39.79
@@ -330,7 +330,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				}),
 			}),
 			d(14, {	-- Normal
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(39502, {	-- The Fel Spire
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["altQuests"] = {
@@ -348,7 +348,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						["cost"] = { { "i", 128416, 4 } },	-- 4x Soul Remnant
 					}),
 				}),
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(124182),	-- Cord of Unhinged Malice
 					i(124323),	-- Cruel Hope Crushers
 					i(124311),	-- Cursed Demonchain Belt
@@ -534,7 +534,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				cr(90316, e(1433, {	-- Shadow-Lord Iskar
 					i(127771, {	-- Gemcutter Module: Critical Strike
 						["spellID"] = 187634,
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["coord"] = {
 							25.84, 39.79
@@ -737,7 +737,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 			}),
 			d(15, {		-- Heroic
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(39504, {	-- The Fel Spire [Heroic]
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["altQuests"] = { 39505 },	-- The Fel Spire [Mythic]
@@ -749,7 +749,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						["cost"] = { { "i", 128417, 4 } },	-- 4x Soul Remnant
 					}),
 				}),
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(124182),	-- Cord of Unhinged Malice
 					i(124323),	-- Cruel Hope Crushers
 					i(124311),	-- Cursed Demonchain Belt
@@ -932,7 +932,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				cr(90316, e(1433, {	-- Shadow-Lord Iskar
 					i(127771, {	-- Gemcutter Module: Critical Strike
 						["spellID"] = 187634,
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["coord"] = {
 							25.84, 39.79
@@ -1137,7 +1137,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 			}),
 			d(16, {		-- Mythic
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(39505, {	-- The Fel Spire [Mythic]
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["cost"] = { { "i", 128421, 4 } },	-- 4x Fel Essence
@@ -1147,7 +1147,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						["cost"] = { { "i", 128418, 4 } },	-- 4x Soul Remnant
 					}),
 				}),
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(124182),	-- Cord of Unhinged Malice
 					i(124323),	-- Cruel Hope Crushers
 					i(124311),	-- Cursed Demonchain Belt
@@ -1330,7 +1330,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				cr(90316, e(1433, {	-- Shadow-Lord Iskar
 					i(127771, {	-- Gemcutter Module: Critical Strike
 						["spellID"] = 187634,
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["coord"] = {
 							25.84, 39.79

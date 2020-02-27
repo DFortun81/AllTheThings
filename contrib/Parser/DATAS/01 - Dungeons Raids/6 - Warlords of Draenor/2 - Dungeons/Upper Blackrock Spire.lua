@@ -9,7 +9,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["maps"] = { 616, 617, 618 },
 		["lvl"] = 100,
 		["g"] = {
-			n(-1, {	-- Common Boss Drop
+			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					76413,	-- Orebender Gor'ashan
 					76021,	-- Kyrak
@@ -311,7 +311,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				}),
 			}),
 			d(2, {	-- Heroic
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(37179, {
 						i(118938),	-- Manastorm's Duplicator
 					}),
