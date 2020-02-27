@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(117, {	-- Howling Fjord
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(11476, {	-- A Carver and a Croaker
 					["provider"] = { "n", 24537 },	-- Handsome Terry
 					["coord"] = { 35.6, 80.2, 117 },
@@ -279,13 +279,13 @@ _.Zones =
 					["coord"] = { 58.6, 62.6, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26914 },	-- Benjamin Clegg
-					["requireSkill"] = 197,	-- Tailoring
+					["requireSkill"] = TAILORING,
 				}),
 				q(13269, {	-- Cloth Scavenging (H)
 					["coord"] = { 79.4, 30.8, 117 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26964 },	-- Alexandra McQueen
-					["requireSkill"] = 197,	-- Tailoring
+					["requireSkill"] = TAILORING,
 				}),
 				q(11479, {	-- "Crowleg" Dan
 					["provider"] = { "n", 24525 },	-- Zeh'gehn
@@ -447,13 +447,13 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26915 },	-- Ounhulo
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 				}),
 				q(12952, {	-- Gem Perfection (H)
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26960 },	-- Carter Tiffens
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 				}),
 				q(12181, {	-- Give it a Name
 					["coord"] = { 53.5, 66.3, 117 },
@@ -901,7 +901,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26905 },	-- Brom Brewbaster
 					["description"] = "Requires |cFFFFD700Northrend Cooking|r.",
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 					["g"] = {
 						recipe(57421),	-- Northern Stew
 					},
@@ -911,7 +911,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26953 },	-- Thomas Kolichio
 					["description"] = "Requires |cFFFFD700Northrend Cooking|r.",
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 					["g"] = {
 						recipe(57421),	-- Northern Stew
 					},

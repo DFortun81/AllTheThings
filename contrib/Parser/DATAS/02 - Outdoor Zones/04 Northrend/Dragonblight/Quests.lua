@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(115, {	-- Dragonblight
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(12439, {	-- A Disturbance In The West
 					["coord"] = { 78.9, 45.3, 115 },
 					["races"] = ALLIANCE_ONLY,

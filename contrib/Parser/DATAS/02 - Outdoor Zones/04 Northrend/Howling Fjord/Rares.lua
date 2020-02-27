@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(117, {	-- Howling Fjord
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(32398, {	-- King Ping
 					["coords"] = {
 						{ 31.2, 56.8, 117 },

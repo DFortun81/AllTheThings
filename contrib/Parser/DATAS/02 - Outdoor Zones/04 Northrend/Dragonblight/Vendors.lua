@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(115, {	-- Dragonblight
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(26569, {	-- Alys Vol'tyr <Reagents & Enchanting Supplies>
 					["coord"] = { 36.2, 46.6, 115 },
 					["races"] = HORDE_ONLY,

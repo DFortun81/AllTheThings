@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(116, {	-- Grizzly Hills
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				["description"] = "The PVP vendors in this zone (Grizzly D. Adams and Purkom) are only visible while your faction controls Venture Bay.",
 				["g"] = {
 					n(27760, {	-- "Grizzly" D. Adams <Venture Coin Vendor>

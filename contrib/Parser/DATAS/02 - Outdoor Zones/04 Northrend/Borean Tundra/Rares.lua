@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(114, {	-- Borean Tundra
-			n(-16, { 	-- Rares
+			n(RARES, {
 				n(32358, {	-- Fumblub Gearwind
 					["coords"] = {
 						{ 67.0, 23.0, 114 },

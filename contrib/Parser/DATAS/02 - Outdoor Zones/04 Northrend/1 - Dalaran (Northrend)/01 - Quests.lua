@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(125, {	-- Dalaran: Northrend
-			n(-17,  {	-- Quests
+			n(QUESTS, {
 				q(32413, {	-- A Return to Krasarang
 					["provider"] = { "n", 68586 },	-- Grand Magister Rommath
 					["races"] = HORDE_ONLY,
@@ -49,7 +49,7 @@ _.Zones =
 					["coord"] = { 53.0, 64.9, 125 },
 					["isDaily"] = true,
 					["provider"] = { "n", 28742 },	-- Marcia Chase
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 					["g"] = {
 						i(46007),	-- Bag of Fishing Treasures
 						crit(4, {	-- Chasing Marcia (Blood is Thicker)
@@ -61,7 +61,7 @@ _.Zones =
 					["provider"] = { "n", 28703 },	-- Quest Giver: Linzy Blackbolt <Alchemy Trainer>
 					["coord"] = { 42.4, 32.0 },
 					["description"] = "This quest is currently broken. Ticket a GM and they can autocomplete the quest for you to get you the recipe.\n\nNOTE FOR BLUES: Please fix this so that we stop bugging Customer Support.\n  - Crieve",
-					["requireSkill"] = 171,	-- Alchemy
+					["requireSkill"] = ALCHEMY,
 					["g"] = {
 						recipe(66659),	-- Transmute: Cardinal Ruby
 					},
@@ -69,7 +69,7 @@ _.Zones =
 				q(13272, {	-- Cloth Scavenging
 					["coord"] = { 36.1, 33.5, 125 },
 					["provider"] = { "n", 28699 },	-- Charles Worth
-					["requireSkill"] = 197,	-- Tailoring
+					["requireSkill"] = TAILORING,
 					["g"] = {
 						spell(59390),	-- Cloth Scavenging -- NOTE: there doesn't appear to be a recipe for this
 					},
@@ -89,7 +89,7 @@ _.Zones =
 					["coord"] = { 53.0, 64.9, 125 },
 					["isDaily"] = true,
 					["provider"] = { "n", 28742 },	-- Marcia Chase
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 					["g"] = {
 						i(46007),	-- Bag of Fishing Treasures
 						crit(3, {	-- Chasing Marcia (Dangerously Delicious)
@@ -101,7 +101,7 @@ _.Zones =
 					["coord"] = { 53.0, 64.9, 125 },
 					["isDaily"] = true,
 					["provider"] = { "n", 28742 },	-- Marcia Chase
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 					["g"] = {
 						i(46007),	-- Bag of Fishing Treasures
 						crit(5, {	-- Chasing Marcia (Disarmed!)
@@ -121,7 +121,7 @@ _.Zones =
 				q(13041, {	-- Finish the Shipment
 					["coord"] = { 40.7, 35.4, 125 },
 					["provider"] = { "n", 28701 },	-- Timothy Jones
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 					["g"] = {
 						currency(61),	-- Dalaran Jewelcrafter's Token
 					},
@@ -165,7 +165,7 @@ _.Zones =
 					["coord"] = { 53.0, 64.9, 125 },
 					["isDaily"] = true,
 					["provider"] = { "n", 28742 },	-- Marcia Chase
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 					["g"] = {
 						i(46007),	-- Bag of Fishing Treasures
 						crit(2, {	-- Chasing Marcia (The Jewel of the Sewers)
@@ -261,13 +261,13 @@ _.Zones =
 				q(13845, {	-- Sealed Vial of Poison
 					["provider"] = { "i", 46004 },	-- Sealed Vial of Poison
 					["repeatable"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(12958, {	-- Shipment: Blood Jade Amulet
 					["coord"] = { 40.7, 35.4, 125 },
 					["isDaily"] = true,
 					["provider"] = { "n", 28701 },	-- Timothy Jones
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 					["g"] = {
 						currency(61),	-- Dalaran Jewelcrafter's Token
 					},
@@ -276,7 +276,7 @@ _.Zones =
 					["coord"] = { 40.7, 35.4, 125 },
 					["isDaily"] = true,
 					["provider"] = { "n", 28701 },	-- Timothy Jones
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 					["g"] = {
 						currency(61),	-- Dalaran Jewelcrafter's Token
 					},
@@ -285,7 +285,7 @@ _.Zones =
 					["coord"] = { 40.7, 35.4, 125 },
 					["isDaily"] = true,
 					["provider"] = { "n", 28701 },	-- Timothy Jones
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 					["g"] = {
 						currency(61),	-- Dalaran Jewelcrafter's Token
 					},
@@ -294,7 +294,7 @@ _.Zones =
 					["coord"] = { 40.7, 35.4, 125 },
 					["isDaily"] = true,
 					["provider"] = { "n", 28701 },	-- Timothy Jones
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 					["g"] = {
 						currency(61),	-- Dalaran Jewelcrafter's Token
 					},
@@ -303,7 +303,7 @@ _.Zones =
 					["coord"] = { 40.7, 35.4, 125 },
 					["isDaily"] = true,
 					["provider"] = { "n", 28701 },	-- Timothy Jones
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 					["g"] = {
 						currency(61),	-- Dalaran Jewelcrafter's Token
 					},
@@ -312,7 +312,7 @@ _.Zones =
 					["coord"] = { 40.7, 35.4, 125 },
 					["isDaily"] = true,
 					["provider"] = { "n", 28701 },	-- Timothy Jones
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 					["g"] = {
 						currency(61),	-- Dalaran Jewelcrafter's Token
 					},
@@ -333,7 +333,7 @@ _.Zones =
 					["coord"] = { 53.0, 64.9, 125 },
 					["isDaily"] = true,
 					["provider"] = { "n", 28742 },	-- Marcia Chase
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 					["g"] = {
 						i(46007),	-- Bag of Fishing Treasures
 						crit(1, {	-- Chasing Marcia (The Ghostfish)
@@ -359,7 +359,7 @@ _.Zones =
 					["coord"] = { 40.7, 35.4, 125 },
 					["provider"] = { "n", 28701 },	-- Timothy Jones
 					["repeatable"] = true,
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 					["g"] = {
 						currency(61),	-- Dalaran Jewelcrafter's Token
 					},
@@ -377,7 +377,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 48681 },	-- Waterlogged Recipe
 					["repeatable"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 					["g"] = {
 						currency(81),	-- Epicurean's Award 5x
 					},
@@ -393,7 +393,7 @@ _.Zones =
 				q(14160, {	-- Writ of Merit
 					["u"] = 40,
 					["provider"] = { "i", 47246 },	-- Writ of Merit
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 				}),
 				q(24588, {	-- XT-002 Deconstructor Must Die!
 					["coord"] = { 57.3, 66.7, 125 },
