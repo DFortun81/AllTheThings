@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(390, {	-- Vale of Eternal Blossoms
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(33229, {	-- A Flash of Bronze...
 					["hordeQuestID"] = 33230,	-- A Flash of Bronze...
 					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
