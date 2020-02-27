@@ -13,7 +13,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			1029,	-- Waycrest Dimension
 		},
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(50990, {	-- Cutting Edge Poultry Science
 					["description"] = "This quest pops up when killing mobs in the kitchen.  It is unknown for certain if the World Quest \"Witchy Kitchen\"  is required.",
 					["g"] = {

@@ -12,7 +12,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			1363,	-- Introquest (Twist the Knife)
 		},
 		["g"] = {
-			n(-1,  {	-- Common Boss Drop
+			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					144754,	-- Fa'thuul the Feared
 					144755,	-- Zaxasj the Speaker

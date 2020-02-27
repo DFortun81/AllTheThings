@@ -18,14 +18,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 		},
 		["lvl"] = 120,
 		["g"] = {
-			n(-1, {	-- Common Boss Drops
+			n(COMMON_BOSS_DROPS, {
 				i(165693),	-- Vantus Rune Technique: Battle of Dazar'alor Rank1
 				i(165694),	-- Vantus Rune Technique: Battle of Dazar'alor Rank2
 				i(165695),	-- Vantus Rune Technique: Battle of Dazar'alor Rank3
 			}),
 			d(17, {	-- LFR
 				["g"] = bubbleDown({["modID"] = 4}, {
-					n(0, {	-- Zone Drops
+					n(ZONEDROPS, {
 						i(165765),	-- Cord of Zandalari Resolve
 						i(165564),	-- Last Stand Greatbelt
 						i(165545),	-- Waistguard of Elemental Resistance
@@ -324,7 +324,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			}),
 			d(14, {	-- Normal
 				["g"] = bubbleDown({["modID"] = 3}, {
-					n(0, {	-- Zone Drops
+					n(ZONEDROPS, {
 						i(165765),	-- Cord of Zandalari Resolve
 						i(165518),	-- Warbeast Hide Cinch
 						i(165545),	-- Waistguard of Elemental Resistance
@@ -620,7 +620,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			}),
 			d(15, {	-- Heroic
 				["g"] = bubbleDown({["modID"] = 5}, {
-					n(0, {	-- Zone Drops
+					n(ZONEDROPS, {
 						i(165765),	-- Cord of Zandalari Resolve
 						i(165518),	-- Warbeast Hide Cinch
 						i(165545),	-- Waistguard of Elemental Resistance
@@ -917,7 +917,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			}),
 			d(16, {	-- Mythic
 				["g"] = bubbleDown({["modID"] = 6}, {
-					n(0, {	-- Zone Drops
+					n(ZONEDROPS, {
 						i(165765),	-- Cord of Zandalari Resolve
 						i(165518),	-- Warbeast Hide Cinch
 						i(165545),	-- Waistguard of Elemental Resistance

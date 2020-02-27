@@ -12,7 +12,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			1497,	-- Mechagon City
 		},
 		["groups"] = {
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(170212),	-- Mecha-Bytes
 				i(170211),	-- Recipe: Famine Evaluator and Snack Table
 				i(170210),	-- Recipe: Abyssal Healing Potion (Rank 3)
@@ -33,7 +33,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = { 154794 },
 				}),
 			}),
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(55609, {	-- Operation: Mechagon - The Mechoriginator
 					["sourceQuests"] = { 55736 },	-- Welcome to the Resistance
 					["provider"] = { "n", 149816 },	-- Prince Erazmin

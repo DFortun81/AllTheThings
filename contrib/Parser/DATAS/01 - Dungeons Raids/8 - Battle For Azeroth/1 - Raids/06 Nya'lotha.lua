@@ -21,13 +21,13 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 		--	,	-- Locus of Infinite Truth
 		},
 		["g"] = {
-			n(-1,  {	-- Common Boss Drop
+			n(COMMON_BOSS_DROPS, {
 				i(171202),	-- Vantus Rune Technique: Ny'alotha, the Waking City(Rank 1)
 				i(171201),	-- Vantus Rune Technique: Ny'alotha, the Waking City(Rank 2)
 				i(171200),	-- Vantus Rune Technique: Ny'alotha, the Waking City(Rank 3)
 			}),
 			d(17, {	-- LFR
-				n(0, {	-- Zone Drops
+				n(ZONEDROPS, {
 					i(175004),	-- Legwraps of Horrifying Figments
 					i(175005),	-- Belt of Concealed Intent
 					i(175010),	-- Maddened Adherent's Bulwark
@@ -230,7 +230,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(174861),	-- Wriggling Parasite
 					}),
 				}),
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(58373, {	-- Ny'alotha: MOTHER's Guidance
 						["provider"] = { "n", 160177 },	-- Wrathion
 						["cost"] = {
@@ -240,7 +240,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						},
 					}),
 				}),
-				n(0, {	-- Zone Drops
+				n(ZONEDROPS, {
 					i(175004),	-- Legwraps of Horrifying Figments
 					i(175005),	-- Belt of Concealed Intent
 					i(175010),	-- Maddened Adherent's Bulwark
@@ -450,7 +450,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(174861),	-- Wriggling Parasite
 					}),
 				}),
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(58374, {	-- Ny'alotha: MOTHER's Guidance
 						["provider"] = { "n", 160177 },	-- Wrathion
 						["cost"] = {
@@ -460,7 +460,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						},
 					}),
 				}),
-				n(0, {	-- Zone Drops
+				n(ZONEDROPS, {
 					i(175004),	-- Legwraps of Horrifying Figments
 					i(175005),	-- Belt of Concealed Intent
 					i(175010),	-- Maddened Adherent's Bulwark
@@ -678,7 +678,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(174861),	-- Wriggling Parasite
 					}),
 				}),
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(58375, {	-- Ny'alotha: MOTHER's Guidance
 						["provider"] = { "n", 160177 },	-- Wrathion
 						["cost"] = {
@@ -688,7 +688,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						},
 					}),
 				}),
-				n(0, {	-- Zone Drops
+				n(ZONEDROPS, {
 					i(175004),	-- Legwraps of Horrifying Figments
 					i(175005),	-- Belt of Concealed Intent
 					i(175010),	-- Maddened Adherent's Bulwark
