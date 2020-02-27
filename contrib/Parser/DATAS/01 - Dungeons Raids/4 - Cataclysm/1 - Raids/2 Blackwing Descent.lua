@@ -15,7 +15,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["coord"] = { 47.54, 68.93, 13 },	-- Blackwing Descent, Eastern Kingdoms (This is the metamap it uses, don't change!)
 		["groups"] = {
 			ach(4842),	-- Blackwing Descent
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				["crs"] = {
 					46083,	-- Drakeadon Mongrel
 					42803,	-- Drakeadon Mongrel

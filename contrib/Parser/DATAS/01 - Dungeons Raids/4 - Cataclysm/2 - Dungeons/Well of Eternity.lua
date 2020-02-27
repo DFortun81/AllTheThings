@@ -11,7 +11,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
 		},
 		["g"] = {
-			n(-17, {	-- Quests 			
+			n(QUESTS, { 			
 				q(30104, {	-- Documenting the Timeways
 					["provider"] = { "n", 57864 },	-- Alurmi
 					["g"] = {
@@ -44,7 +44,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					["sourceQuests"] = { 30099 },	-- In Unending Numbers
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				["crs"] = {
 					55654,	-- Corrupted Arcanist
 					55656,	-- Dreadlord Defender

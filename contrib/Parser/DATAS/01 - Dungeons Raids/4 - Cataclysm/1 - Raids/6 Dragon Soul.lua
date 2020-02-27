@@ -83,7 +83,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			d(7, {	-- LFR
 				["ignoreBonus"] = true,
 				["groups"] = {
-					n(-1, {	-- Common Boss Drops
+					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
 							55265,	-- Morchok
 							55308,	-- Warlord Zon'ozz
@@ -348,7 +348,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["ignoreBonus"] = true,
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						ql(q(29802, {	-- A Hidden Message
 							["provider"] = { "n", 55476 },	-- Lord Afrasastrasz
 							["classes"] = { 4 },	-- Rogue
@@ -359,8 +359,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							["classes"] = { 4 },	-- Rogue									
 						})),
 					}),
-					{	-- Common Boss Drops
-						["npcID"] = -1,	-- Common Boss Drops
+					n(COMMON_BOSS_DROPS, {
 						["g"] = {
 							{	-- Breathstealer Band
 								["itemID"] =  77230,	-- Breathstealer Band
@@ -504,8 +503,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 								},
 							},
 						},
-					},
-					n(0, {	-- Zone Drop
+					}),
+					n(ZONEDROPS, {
 						["crs"] = {
 							57333,	-- Acidic Globule
 							57160,	-- Ancient Water Lord
@@ -867,7 +866,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["ignoreBonus"] = true,
 				["difficulties"] = { 5, 6 },
 				["groups"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						ql(q(29802, {	-- A Hidden Message
 							["provider"] = { "n", 55476 },	-- Lord Afrasastrasz
 							["classes"] = { 4 },	-- Rogue
@@ -878,8 +877,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							["classes"] = { 4 },	-- Rogue									
 						})),
 					}),
-					{	-- Common Boss Drops
-						["npcID"] = -1,	-- Common Boss Drops
+					n(COMMON_BOSS_DROPS, {
 						["g"] = {
 							{	-- Breathstealer Band
 								["itemID"] =  78492,	-- Breathstealer Band
@@ -1023,8 +1021,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 								},
 							},
 						},
-					},
-					n(0, {	-- Zone Drop
+					}),
+					n(ZONEDROPS, {
 						["crs"] = {
 							57333,	-- Acidic Globule
 							57160,	-- Ancient Water Lord
@@ -1413,7 +1411,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					})),
 				},
 			}),
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(58153, {	-- Dasnurimi <Geologist & Conservator>
 					i(78890),	-- Crystalline Geode
 					i(78891),	-- Elementium-coated Geode

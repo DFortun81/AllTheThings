@@ -12,7 +12,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		},
 		["coord"] = { 71.81, 52.16, 249 },	-- Halls of Origination, Uldum
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(28746, {	-- Penetrating Their Defenses
 					["provider"] = { "n", 39908 },	-- Brann Bronzebeard
 					["sourceQuests"] = { 28654 },	-- The Heart of the Matter
@@ -33,7 +33,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				}),
 			}),
 			d(1, {	-- Normal
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(56109, {    -- Book of Origination
 						["crs"] = {
 							39803,	-- Air Warden
@@ -161,7 +161,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					n(-4, {	-- Achievements
 						ach(5296),	-- Faster Than the Speed of Light
 					}),
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						i(56109, {    -- Book of Origination
 							["crs"] = {
 								39803,	-- Air Warden

@@ -9,7 +9,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["maps"] = { 284 },
 		["coord"] = { 71.77, 52.98, 34 },	-- Blackrock Caverns, Blackrock Caverns
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				{	-- Ascendant Lord Obsidius
 					["questID"] = 28741,
 					["provider"] = { "n", 49476 },	-- Finkle Einhorn
@@ -45,7 +45,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					["sourceQuest"] = 28735,	-- To the Chamber of Incineration!
 				},
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				{	-- Acanthia's Lost Pendant
 					["itemID"] = 55791,	-- Acanthia's Lost Pendant
 					["crs"] = {

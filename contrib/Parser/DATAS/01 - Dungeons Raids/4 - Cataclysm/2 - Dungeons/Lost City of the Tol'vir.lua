@@ -8,7 +8,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["mapID"] = 277,
 		["coord"] = { 60.53, 64.29, 249 },	-- Lost City of Tol'vir, Uldum
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(28781, {	-- Targets of Opportunity
 					["provider"] = { "n", 50038 },	-- Captain Hadan
 					["groups"] = {
@@ -26,7 +26,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					},
 				}),
 			}),
-			n(0,   {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(55881, {	-- Impetuous Query
 					["crs"] = {
 						45007,	-- Enslaved Bandit

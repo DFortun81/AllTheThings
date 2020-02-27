@@ -8,7 +8,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["maps"] = { 322, 323 },
 		["groups"] = {
 			d( 1, {	-- Normal
-				n(-17, {	-- Quests 				
+				n(QUESTS, { 				
 					q(28834, {	-- Rescue the Earthspeaker!
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -42,7 +42,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						},
 					}),
 				}),
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					["crs"] = {
 						40936, 	-- Faceless Watcher
 						40943,	-- Gilgoblin Aquamage

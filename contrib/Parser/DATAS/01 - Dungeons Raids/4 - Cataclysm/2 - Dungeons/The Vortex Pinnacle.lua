@@ -8,7 +8,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["mapID"] = 325,
 		["coord"] = { 76.76, 84.44, 249 },	-- Vortex Pinnacle, Uldum
 		["groups"] = {
-			n(-17, {	-- Quests 
+			n(QUESTS, { 
 				q(28779, {	-- A Long Way from Home
 					["provider"] = { "n", 49943 },	-- Itesh
 					["groups"] = {
@@ -30,7 +30,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				}),
 			}),
 			d(1,   {	-- Normal
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(55855, {	-- Darksky Treads
 						["crs"] = {
 							45915,	-- Armored Mistal
@@ -122,7 +122,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					n(-4, {	-- Achievements
 						ach(5289),	-- Extra Credit Bonus Stage
 					}),
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						i(55855, {	-- Darksky Treads
 							["crs"] = {
 								45915,	-- Armored Mistal

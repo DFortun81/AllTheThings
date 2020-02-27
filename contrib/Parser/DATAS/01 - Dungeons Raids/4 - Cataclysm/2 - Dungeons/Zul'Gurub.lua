@@ -12,7 +12,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			d(2, {	-- Heroic
 				["lvl"] = 85,
 				["g"] = {
-					n(0,   {	-- Zone Drop
+					n(ZONEDROPS, {
 						i(69803, {	-- Gurubashi Punisher
 							["crs"] = {
 								52348,	-- Berserking Boulder Roller
@@ -201,7 +201,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							},
 						}),
 					}),
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(29155, {	-- A Shiny Reward
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {

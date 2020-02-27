@@ -12,7 +12,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["maps"] = { 295, 296 },
 		["groups"] = {
 			ach(4850),	-- The Bastion of Twilight
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				["crs"] = {
 					47087,	-- Azureborne Destroyer
 					49825,	-- Bound Deluge
