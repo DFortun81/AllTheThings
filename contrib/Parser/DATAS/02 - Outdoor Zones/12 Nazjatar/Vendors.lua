@@ -256,6 +256,9 @@ _.Zones =
 					i(168863, {	-- Unbound Azerite Slivershards
 						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
 					}),
+					i(174523, {	-- Waveswept Abyssal Conch
+						["cost"] = { { "c", 1721, 20 }, },	-- 20x Prismatic Manapearl
+					}),
 				},
 			}),
 			n(154653, {	-- Crafticus Mindbender <Nazjatar PvP Quartermaster>
@@ -1062,6 +1065,9 @@ _.Zones =
 					}),
 					i(168863, {	-- Unbound Azerite Slivershards
 						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					}),
+					i(174522, {	-- Waveswept Abyssal Conch
+						["cost"] = { { "c", 1721, 20 }, },	-- 20x Prismatic Manapearl
 					}),
 				},
 			}),
