@@ -17,7 +17,7 @@ _.Instances = { tier(7, {	-- Legion
 			856,
 		},
 		["groups"] = {
-			n(-1, {	-- Common Boss Drop
+			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					-- * confirmed in HEROIC MODE (jic they somehow vary in each difficulty)
 					111246,	-- Archmage Timear
@@ -44,7 +44,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			}),
 			d(17, {		-- LFR
-				n(-17, { 	-- Quests
+				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
 						{
@@ -85,7 +85,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 				}),
-				n(0, { 		-- Zone Drop
+				n(ZONEDROPS, {
 					["crs"] = {
 						111246,	-- Archmage Timear
 					},
@@ -380,7 +380,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			d(14, {		-- Normal
-				n(-17, { 	-- Quests
+				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
 						{
@@ -421,7 +421,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 				}),
-				n(0, { 		-- Zone Drop
+				n(ZONEDROPS, {
 					i(147423),
 					i(147422),
 					i(146989),
@@ -683,7 +683,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 			}),
 			d(15, {		-- Heroic
-				n(-17, { 	-- Quests
+				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
 						{
@@ -724,7 +724,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 				}),
-				n(0, { 		-- Zone Drop
+				n(ZONEDROPS, {
 					i(147423),
 					i(147422),
 					i(146989),
@@ -986,7 +986,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 			}),
 			d(16, {		-- Mythic
-				n(-17, { 	-- Quests
+				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
 						{
@@ -1027,7 +1027,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 				}),
-				n(0, { 		-- Zone Drop
+				n(ZONEDROPS, {
 					i(147423),
 					i(147422),
 					i(146989),

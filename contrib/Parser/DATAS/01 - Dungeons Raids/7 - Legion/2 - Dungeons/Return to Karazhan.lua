@@ -11,7 +11,7 @@ _.Instances = { tier(7, {	-- Legion
 		},
 		["lvl"] = 110,
 		["g"] = {
-			n(-1, {	-- Common Boss Drop
+			n(COMMON_BOSS_DROPS, {
 				["g"] = {
 					i(143615),	-- Technique: Glyph of Crackling Ox Lightning
 					i(143616),	-- Technique: Glyph of the Trusted Steed
@@ -29,7 +29,7 @@ _.Instances = { tier(7, {	-- Legion
 					114790,	-- Viz'aduum the Watcher
 				},
 			}),
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(114815, {	-- Koren
 					["description"] = "This vendor is located in the Livery Stables.",
 					["g"] = {

@@ -8,7 +8,7 @@ _.Instances = { tier(7, {	-- Legion
 		["mapID"] = 903,
 		["coord"] = { 22.2, 55.9, 882 },	-- Mac'Aree
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				crit(9, {	-- Shadowguard Incursion
 					["achievementID"] = 12069,
 					["description"] = "|cFFFFD700Glowing Key Fragment|r can drop from any mob in the |cFFFFFFFFShadowguard Incursion|r area.  Rares and Elites have a higher drop chance than normal mobs.",

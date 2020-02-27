@@ -13,7 +13,7 @@ _.Instances = { tier(7, {	-- Legion
 		["maps"] = { 764, 765, 766, 767, 768, 769, 770, 771, 772 },
 		["lvl"] = 110,
 		["g"] = {
-			n(-17, { 	-- Quests
+			n(QUESTS, {
 				q(45417, {	-- The Nighthold: Lord of the Shadow Council
 					["provider"] = { "n", 115367 },	-- Archmage Khadgar
 					["sourceQuest"] = 44719,	-- Breaching the Sanctum
@@ -25,7 +25,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			d(17, {		-- LFR
-				n(-17, { 	-- Quests
+				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
 						{	-- Cache of Nightborne Treasures [Raid Finder]
@@ -71,7 +71,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 				}),
-				n(0, { 		-- Zone Drop
+				n(ZONEDROPS, {
 					["crs"] = { 111246 },	-- Archmage Timear
 					["groups"] = {
 						i(144399),	-- Aristocrat's Winter Drape
@@ -388,7 +388,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			d(14, {		-- Normal
-				n(-17, { 	-- Quests
+				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
 						{	-- Cache of Nightborne Treasures [Normal]
@@ -441,13 +441,13 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 				}),
-				n(-1, {	-- Common Boss Drops
+				n(COMMON_BOSS_DROPS, {
 					i(140199),	-- Nightshard
 					i(140200, {	-- Immaculate Nightshard Curio
 						i(140199),	-- Nightshard
 					}),
 				}),
-				n(0, { 		-- Zone Drop
+				n(ZONEDROPS, {
 					i(144399),	-- Aristocrat's Winter Drape
 					i(144401),	-- Cloak of Multitudinous Sheaths
 					i(144403),	-- Fashionable Autumn Cloak
@@ -797,7 +797,7 @@ _.Instances = { tier(7, {	-- Legion
 				}))
 			}),
 			d(15, {		-- Heroic
-				n(-17, { 	-- Quests
+				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
 						{	-- Cache of Nightborne Treasures [Heroic]
@@ -850,13 +850,13 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 				}),
-				n(-1, {	-- Common Boss Drops
+				n(COMMON_BOSS_DROPS, {
 					i(140199),	-- Nightshard
 					i(140200, {	-- Immaculate Nightshard Curio
 						i(140199),	-- Nightshard
 					}),
 				}),
-				n(0, { 		-- Zone Drop
+				n(ZONEDROPS, {
 					i(144399),	-- Aristocrat's Winter Drape
 					i(144401),	-- Cloak of Multitudinous Sheaths
 					i(144403),	-- Fashionable Autumn Cloak
@@ -1209,7 +1209,7 @@ _.Instances = { tier(7, {	-- Legion
 				}))
 			}),
 			d(16, {		-- Mythic
-				n(-17, { 	-- Quests
+				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
 						{	-- Cache of Nightborne Treasures [Mythic]
@@ -1262,13 +1262,13 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 				}),
-				n(-1, {	-- Common Boss Drops
+				n(COMMON_BOSS_DROPS, {
 					i(140199),	-- Nightshard
 					i(140200, {	-- Immaculate Nightshard Curio
 						i(140199),	-- Nightshard
 					}),
 				}),
-				n(0, { 		-- Zone Drop
+				n(ZONEDROPS, {
 					i(144399),	-- Aristocrat's Winter Drape
 					i(144401),	-- Cloak of Multitudinous Sheaths
 					i(144403),	-- Fashionable Autumn Cloak

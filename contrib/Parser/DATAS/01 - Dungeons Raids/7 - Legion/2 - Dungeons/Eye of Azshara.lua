@@ -8,7 +8,7 @@ _.Instances = { tier(7, {	-- Legion
 		["coord"] = { 61.2, 41.1, 630 },
 		["lvl"] = 98,
 		["g"] = {
-			n(0,      {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(137726),	-- Schematic: Leystone Buoy
 			}),
 			n(-10067, {	-- Artifacts
@@ -23,7 +23,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 			}),
-			n(-17,    {	-- Quests
+			n(QUESTS, {
 				q(42213, {	-- Eye of Azshara: The Tidestone of Golganneth
 					["provider"] = { "n", 106780 },	-- Tidestone of Golganneth
 					["sourceQuest"] = 38286,	-- Eye of Azshara: Wrath of Azshara

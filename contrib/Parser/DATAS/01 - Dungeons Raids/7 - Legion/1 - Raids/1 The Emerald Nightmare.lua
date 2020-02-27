@@ -32,7 +32,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			d(17, {	-- LFR
-				n(-17, { 	-- Quests
+				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
 						{	-- Cache of Nightmarish Treasures [Raid Finder]
@@ -69,7 +69,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 				}),
-				n(0,   {	-- Zone Drop
+				n(ZONEDROPS, {
 					["crs"] = { 111246 },	-- Archmage Timear
 					["groups"] = {
 						i(141696),	-- Pendant of Liquid Horror
@@ -273,7 +273,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			d(14, {	-- Normal
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
 						{	-- Cache of Nightmarish Treasures [Normal]
@@ -315,13 +315,13 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 				}),
-				n(-1, {	-- Common Boss Drops
+				n(COMMON_BOSS_DROPS, {
 					i(139706),	-- Corrupted Essence
 					i(139771, {	-- Seething Essence
 						i(139706),	-- Corrupted Essence
 					}),
 				}),
-				n(0,   {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(141696),	-- Pendant of Liquid Horror
 					i(141694),	-- Gauntlets of Fractured Dreams
 					i(140993),	-- Gloves of Murmured Promises
@@ -527,7 +527,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 			}),
 			d(15, {	-- Heroic
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
 						{	-- Cache of Nightmarish Treasures [Heroic]
@@ -569,13 +569,13 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 				}),
-				n(-1, {	-- Common Boss Drops
+				n(COMMON_BOSS_DROPS, {
 					i(139706),	-- Corrupted Essence
 					i(139771, {	-- Seething Essence
 						i(139706),	-- Corrupted Essence
 					}),
 				}),
-				n(0,   {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(141696),	-- Pendant of Liquid Horror
 					i(141694),	-- Gauntlets of Fractured Dreams
 					i(140993),	-- Gloves of Murmured Promises
@@ -786,7 +786,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 			}),
 			d(16, {	-- Mythic
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
 						{	-- Cache of Nightmarish Treasures [Mythic]
@@ -828,13 +828,13 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 				}),
-				n(-1, {	-- Common Boss Drops
+				n(COMMON_BOSS_DROPS, {
 					i(139706),	-- Corrupted Essence
 					i(139771, {	-- Seething Essence
 						i(139706),	-- Corrupted Essence
 					}),
 				}),
-				n(0,   {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(141696),	-- Pendant of Liquid Horror
 					i(141694),	-- Gauntlets of Fractured Dreams
 					i(140993),	-- Gloves of Murmured Promises
