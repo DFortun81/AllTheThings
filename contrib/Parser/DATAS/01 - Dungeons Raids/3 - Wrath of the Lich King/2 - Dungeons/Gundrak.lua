@@ -7,7 +7,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["lvl"] = 63,
 		["maps"] = { 153, 154 },
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(29840, {	-- For Posterity
 					["provider"] = { "n", 55737 },	-- Chronicler Bah'Kini
 					["g"] = {
@@ -66,7 +66,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 			}),
 			d(  1, {	-- Normal
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(35593, {	-- Steel Bear Trap Bracers
 						["crs"] = {
 							29836,	-- Drakkari Battle Rider
@@ -162,7 +162,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			d(  2, {	-- Heroic
 				["lvl"] = 80,
 				["g"] = {
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						i(37646, {	-- Burning Skull Pendant
 							["crs"] = {
 								29822,	-- Drakkari Fire Weaver

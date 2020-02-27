@@ -8,7 +8,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["coord"] = { 52.3, 89.3, 118 },
 		["lvl"] = 78,
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(24500, {	-- Wrath of the Lich King
 					["provider"] = { "n", 37582 },	-- Archmage Koreln <Kirin Tor>
 					["races"] = ALLIANCE_ONLY,
@@ -20,7 +20,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			d(1,   {	-- Normal
 				ach(4518),	-- The Halls of Reflection
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(49852, {	-- Coffin Nail
 						["crs"] = {
 							38177,	-- Shadowy Mercenary
@@ -118,7 +118,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				["lvl"] = 80,
 				["g"] = {
 					ach(4521),	-- Heroic: The Halls of Reflection
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						i(50379),	-- Battered Hilt (Alliance)
 						i(50380),	-- Battered Hilt (Horde)
 						i(50318, {	-- Ghostly Wristwraps

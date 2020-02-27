@@ -7,7 +7,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["lvl"] = 65,
 		["mapID"] = 171,
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				{
 					["questID"] = 29851,	-- Champion of the Tournament
 					["provider"] = { "n", 34996 },	-- Highlord Tirion Fordring

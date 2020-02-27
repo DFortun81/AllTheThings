@@ -25,7 +25,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					},
 				},
-				n(0, {		-- Zone Drop
+				n(ZONEDROPS, {
 					i(39467, {	-- Minion Bracers
 						["crs"] = {
 							16018,	-- Bile Retcher
@@ -892,7 +892,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					},
 				},
-				n(0, {		-- Zone Drop
+				n(ZONEDROPS, {
 					i(40410, {	-- Shadow of the Ghoul
 						["crs"] = {
 							16018,	-- Bile Retcher

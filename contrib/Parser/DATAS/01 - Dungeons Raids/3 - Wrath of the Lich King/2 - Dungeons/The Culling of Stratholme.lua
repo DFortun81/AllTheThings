@@ -12,7 +12,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
 		},
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(13149, {	-- Dispelling Illusions
 					["provider"] = { "n", 26527 },	-- Chromie
 					["g"] = {
@@ -30,7 +30,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				}),
 			}),
-			n(0,   {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(37115, {	-- Crusader's Square Pauldrons
 					["crs"] = {
 						27731,	-- Acolyte	

@@ -8,7 +8,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["mapID"] = 132,
 		["coord"] = { 28.3, 51.6, 115 },
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(13204, {	-- Funky Fungi
 					["u"] = 40,
 					["cr"] = 30329,	-- Savage Cave Beast
@@ -33,7 +33,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 			}),
 			d(1, {	-- Normal
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(35615, {	-- Glowworm Cavern Bindings
 						["crs"] = {
 							30277,	-- Ahn'kahar Slasher
@@ -135,7 +135,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				["lvl"] = 80,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						i(37624, {	-- Stained-Glass Shard Ring
 							["crs"] = {
 								30277,	-- Ahn'kahar Slasher

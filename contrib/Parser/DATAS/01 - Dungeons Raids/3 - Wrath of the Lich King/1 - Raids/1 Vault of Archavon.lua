@@ -11,7 +11,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["mapID"] = 156,
 		["coord"] = { 50.0, 11.9, 123 },	-- Vault of Archavon, Wintergrasp
 		["groups"] = {
-			n(-1, {	-- Common Boss Drops
+			n(COMMON_BOSS_DROPS, {
 				["description"] = "These can drop from any of the bosses on any difficulty.",
 				["crs"] = {
 					35013,	-- Koralon the Flame Watcher

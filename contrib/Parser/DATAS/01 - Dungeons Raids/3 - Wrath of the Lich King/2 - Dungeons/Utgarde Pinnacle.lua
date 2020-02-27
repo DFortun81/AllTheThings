@@ -7,7 +7,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["lvl"] = 65,
 		["maps"] = { 136, 137 },
 		["groups"] = {
-			n(-17, {	-- Quests 	
+			n(QUESTS, { 	
 				q(13131,{ 	-- Junk in My Trunk
 					i(44404), 	-- Bauble-Woven Gown
 					i(44405),	-- Exotic Leather Tunic
@@ -23,7 +23,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 				q(29864),	-- Working at the Source, No actual awards.
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				{	-- Bands of Fading Light
 					["itemID"] = 37590,	-- Bands of Fading Light
 					["crs"] = {

@@ -8,7 +8,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["mapID"] = 133,
 		["maps"] = { 134, 135 },
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(30112,{ 	-- A Score to Settle
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 24137 },	-- Dark Ranger Marrah
@@ -69,7 +69,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 			}),
 			d(1, {	-- Normal
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					{	-- Skein Woven Mantle
 						["itemID"] = 35580,	-- Skein Woven Mantle
 						["crs"]	= {
@@ -159,7 +159,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			d(  2, {	-- Heroic
 				["lvl"] = 80,
 				["groups"] = {
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						{	-- Dragon Prow Amulet
 							["itemID"] = 37290,	-- Dragon Prow Amulet
 							["crs"]	= {

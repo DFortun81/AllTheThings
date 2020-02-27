@@ -8,7 +8,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["coord"] = { 52.3, 89.3, 118 },
 		["lvl"] = 78,
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(24710, {	-- Deliverance from the Pit
 					["sourceQuest"] = 24498,	-- The Path to the Citadel
 					["provider"] = { "n", 37591 },	-- Martin Victus
@@ -42,7 +42,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			d(1,   {	-- Normal
 				ach(4517),	-- The Pit of Saron
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(49852, {	-- Coffin Nail
 						["crs"] = {
 							37712,	-- Deathwhisper Shadowcaster
@@ -160,7 +160,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				["lvl"] = 80,
 				["g"] = {
 					ach(4520),	-- Heroic: The Pit of Saron
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						["g"] = {
 							i(50379),	-- Battered Hilt (Alliance)
 							i(50380),	-- Battered Hilt (Horde)

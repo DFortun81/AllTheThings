@@ -7,7 +7,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["lvl"] = 65,
 		["maps"] = { 142, 143, 144, 145, 146 },
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(13124, {	-- The Struggle Persists
 					["provider"] = { "n", 26117 },	-- Raelorasz
 					["groups"] = {
@@ -37,7 +37,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 			}),
 			d(1,   {	-- Normal
-				n(0, {		-- Zone Drop
+				n(ZONEDROPS, {
 					i(36977, {	-- Bindings of the Construct
 						["crs"] = {
 							27633,	-- Azure Inquisitor
@@ -166,7 +166,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			d(2,   {	-- Heroic
 				["lvl"] = 80,
 				["groups"] = {
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						i(37365, {	-- Bands of the Sky Ring
 							["crs"] = {
 								27633,	-- Azure Inquisitor

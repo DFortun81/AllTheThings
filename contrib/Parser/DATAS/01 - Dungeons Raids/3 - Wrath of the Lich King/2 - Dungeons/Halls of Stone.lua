@@ -7,7 +7,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["lvl"] = 64,
 		["mapID"] = 140,
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(29850, {	-- Corrupt Constructs
 					["provider"] = { "n", 55835 },	-- Kaldir Ironbane
 					["coord"] = { 35.6, 35.2 },
@@ -28,7 +28,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 			}),
 			d(1, {	-- Normal
-				n(0, {		-- Zone Drop
+				n(ZONEDROPS, {
 					i(35683, {	-- Palladium Ring
 						["crs"] = {
 							27962,	-- Dark Rune Elementalist
@@ -133,7 +133,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				["lvl"] = 80,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						i(37673, {	-- Dark Runic Mantle
 							["crs"] = {
 								27966,	-- Dark Rune Controller

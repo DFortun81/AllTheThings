@@ -8,7 +8,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["mapID"] = 168,
 		["coord"] = { 66.6, 67.9, 125 },
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(29830,{ 	-- Containment
 					["provider"] = { "n", 30658 },	-- Lieutenant Sinclari
 					["sourceQuest"] = 29829,	-- Discretion is Key
@@ -21,7 +21,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 			}),
 			d(1,   {	-- Normal
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(35654, {	-- Bindings of the Bastille
 						["crs"] = {
 							30666,	-- Azure Captain
@@ -129,7 +129,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			d(2,   {	-- Heroic
 				["lvl"] = 80,
 				["groups"] = {
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						i(35654, {	-- Bindings of the Bastille
 							["crs"] = {
 								30666,	-- Azure Captain

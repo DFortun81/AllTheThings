@@ -433,7 +433,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["u"] = 15,			-- Unlearnable Filter
 				}),
 			}),
-			n(0,  {	-- Zone Drop
+			n(ZONEDROPS, {
 				["crs"] = {
 					37012,	-- Ancient Skeletal Soldier
 					37022,	-- Blighted Abomination
@@ -500,7 +500,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(50452),	-- Wodin's Lucky Necklace
 				},
 			}),
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(37999, { 	-- Alana Moonstrike <Druid Armor>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -2897,7 +2897,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 			}),
 			d(5,  {	-- 10-Player (Heroic)
-				n(-1, {	-- Common Boss Drop
+				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
 						37813,	-- Deathbringer Saurfang
 						36678,	-- Professor Putricide
@@ -3340,7 +3340,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 			}),
 			d(4,  {	-- 25-Player (Normal)
-				n(-1, {	-- Common Boss Drop
+				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
 						37813,	-- Deathbringer Saurfang
 						36678,	-- Professor Putricide
@@ -3790,7 +3790,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 			}),
 			d(6, {	-- 25-Player (Heroic)
-				n(-1, {	-- Common Boss Drop
+				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
 						37813,	-- Deathbringer Saurfang
 						36678,	-- Professor Putricide

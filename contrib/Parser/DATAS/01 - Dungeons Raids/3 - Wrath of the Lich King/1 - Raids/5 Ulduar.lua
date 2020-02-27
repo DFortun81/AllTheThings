@@ -43,7 +43,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				},
 			}),
 			d(14, {	-- Normal
-				n(0,   {	-- Zone Drop
+				n(ZONEDROPS, {
 					["crs"] = {
 						34183,	-- Arachnopod Destroyer
 						34197,	-- Chamber Overseer
@@ -104,7 +104,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(45540),	-- Bladebearer's Signet
 					},
 				}),
-				n(-1,  {	-- Common Boss Drop
+				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
 						33113,	-- Flame Leviathan
 						33118,	-- Ignis the Furnace Master
@@ -144,7 +144,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(45091),	-- Plans: Treads of Destiny
 					},
 				}),
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(13607, {	-- The Celestial Planetarium
 						["sourceQuest"] = 13604,	-- Archivum Data Disc
 						["provider"] = { "n", 33957 },	-- Prospector Loren
@@ -903,7 +903,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(45936),	-- Legplates of Fluorishing Resolve
 					i(45483),	-- Boots of the Servant
 					i(46110, {	-- Alchemist's Cache
-						["requireSkill"] = 171,	-- Alchemy
+						["requireSkill"] = ALCHEMY,
 					}),
 				})),
 				cr(33350, e(1647, {	-- Mimiron
@@ -1155,7 +1155,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				["lvl"] = 81,
 				["crs"] = { 130654 },	-- Vormu
 				["g"] = {
-					n(0, {		-- Zone Drop
+					n(ZONEDROPS, {
 						i(156462),	-- Drape of the Spellweaver
 						-- i(156468),	-- Cloak of the Dormant Blaze	(no equivalent in TW, 'Retrieving Data' on possible item, no data on WoWHead)
 						-- i(156465),	-- Iceshear Mantle	(no equivalent in TW, 'Retrieving Data' on possible item, no data on WoWHead)

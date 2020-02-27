@@ -10,7 +10,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			370,	-- The Nexus (Dragonwrath, Tarecgosa's Rest Quest Chain)
 		},
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(13094,{ 	-- Have They No Shame?
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 55537 },	-- Image of Warmage Kaitlyn
