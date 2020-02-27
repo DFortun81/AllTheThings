@@ -11,14 +11,14 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		},
 		["coord"] = { 44.93, 65.61, 108 },	-- Sethekk Halls, Terokkar Forest
 		["groups"] = {
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(25731, {	-- Pattern: Stylin' Crimson Hat
 					["crs"] = {
 						18322,	-- Sethekk Ravenguard
 					},
 				}),
 			}),
-			n(-17, {	-- Quests 	
+			n(QUESTS, { 	
 					q(10097,  {	-- Brother Against Brother
 						["u"] = 40,
 						["provider"] = { "n", 18933 },	-- Isfar

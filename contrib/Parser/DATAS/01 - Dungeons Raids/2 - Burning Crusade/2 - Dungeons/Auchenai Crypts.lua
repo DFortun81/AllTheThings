@@ -11,7 +11,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		},
 		["coord"] = { 34.34, 65.61, 108 },	-- Auchenai Crypts, Terokkar Forest
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				["g"] = {
 					q(29591, {	-- Raging Spirits
 						["provider"] = { "n", 54698 },			-- Tormented Soulpriest
@@ -34,7 +34,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					}),
 				},
 			}),
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(22544, {	-- Formula: Enchant Boots - Dexterity
 					["cr"] = 18521,	-- Raging Skeleton
 				}),

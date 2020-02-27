@@ -7,9 +7,8 @@ _.Instances =
 	{	-- The Burning Crusade
 		["tierID"] = 2,	-- The Burning Crusade
 		["g"] = {
-			{	-- Zone Drops
+			n(ZONEDROPS, {
 				["order"] = "99",
-				["npcID"] = 0,	-- Zone Drops
 				["maps"] = {
 					350,	-- Servant's Quarters, Karazhan
 					351,	-- Upper Livery Stables, Karazhan
@@ -1709,7 +1708,7 @@ _.Instances =
 					-- Pendant of Cunning
 					-- Shroud of Frenzy
 				},
-			},
+			}),
 		},
 	},
 };

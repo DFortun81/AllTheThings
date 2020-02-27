@@ -11,7 +11,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
 		},
 		["groups"] = {
-			n(-17, {
+			n(QUESTS, {
 				q(10298,  {	-- Hero of the Brood
 					["u"] = 40,
 					["provider"] = { "n", 20201 },	-- Sa'at
@@ -36,7 +36,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(25730, {	-- Pattern: Stylin' Jungle Hat
 					["crs"] = {
 						21104,	-- Rift Keeper

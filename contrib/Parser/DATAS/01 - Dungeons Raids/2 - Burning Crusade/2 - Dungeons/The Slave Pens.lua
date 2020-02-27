@@ -8,7 +8,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["mapID"] = 265,
 		["coord"] = { 48.95, 35.84, 102 },	-- The Slave Pens, Zangarmarsh
 		["g"] = {
-			n(-17, {	-- Quests 					
+			n(QUESTS, { 					
 				{	-- A Brother Betrayed
 					["questID"] = 29564,	-- A Brother Betrayed
 					["provider"] = { "n", 54668 },	-- Nahuud
@@ -181,10 +181,9 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					})),
 				},
 			}),
-			{	-- Zone Drops
-				["npcID"] = 0,	-- Zone Drops
+			n(ZONEDROPS, {
 				-- Note!! Blank so when map merges into the list it's in this spot rather than top
-			},
+			}),
 		},
 	}),
 })};

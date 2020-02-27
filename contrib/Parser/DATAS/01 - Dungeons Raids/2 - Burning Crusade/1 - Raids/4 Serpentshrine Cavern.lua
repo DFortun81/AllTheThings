@@ -14,14 +14,14 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			{ 51.9, 32.9, 102 },	-- pipe entrance
 		},
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(10944, {	-- The Secret Compromised
 					["sourceQuests"] = { 10708 },	-- Akama's Promise
 					["description"] = "After you defeat Fathom-Lord Karathress, Seer Olum will be freed from his cage and offer you the quest.",
 					["provider"] = { "n", 22820 },	-- Seer Olum
 				}),
 			}),
-			n(0, {		-- Zone Drop
+			n(ZONEDROPS, {
 				i(30027),	-- Boots of Courage Unending
 				i(30280),	-- Pattern: Belt of Blasting
 				i(30302),	-- Pattern: Belt of Deep Shadow

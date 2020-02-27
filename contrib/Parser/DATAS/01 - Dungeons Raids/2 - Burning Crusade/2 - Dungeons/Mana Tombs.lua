@@ -8,7 +8,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["mapID"] = 272,
 		["coord"] = { 39.63, 57.67, 108 },	-- Mana-Tombs, Terokkar Forest
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(10216,  {	-- Safety is Job One
 					["u"] = 40,
 					["provider"] = { "n", 19670 },	-- Artificer Morphalius
@@ -34,7 +34,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["provider"] = { "n", 54694 },	-- Mamdy the "Ologist"
 				}),
 			}),
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				n(18317, {	-- Ethereal Priest
 					i(22543),	-- Formula: Enchant Boots - Fortitude
 				}),

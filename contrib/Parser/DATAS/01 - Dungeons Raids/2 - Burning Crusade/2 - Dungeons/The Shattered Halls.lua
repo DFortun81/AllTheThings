@@ -8,7 +8,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["mapID"] = 246,
 		["coord"] = { 47.66, 51.98, 100 },	-- The Shattered Halls, Hellfire Peninsula
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				{	-- A Very Special Cloth
 					["questID"] = 29655,	-- A Very Special Cloth
 					["provider"] = { "n", 54931 },			-- Stone Guard Stok'ton
@@ -223,8 +223,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					})),
 				},
 			}),
-			{	-- Zone Drops
-				["npcID"] = 0,	-- Zone Drops
+			n(ZONEDROPS, {
 				["g"] = {
 					{	-- Formula: Enchant 2H Weapon - Savagery
 						["itemID"] = 22554,	-- Formula: Enchant 2H Weapon - Savagery
@@ -233,7 +232,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						},
 					},
 				},
-			},
+			}),
 		},
 	}),
 })};

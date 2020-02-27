@@ -12,7 +12,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		},
 		["coord"] = { 74.42, 57.72, 109 },	-- The Arcatraz, Netherstorm
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(29675, {	-- Hey There Dalliah
 					["sourceQuest"] = 29674,	-- Unbound Darkness
 					["provider"] = { "n", 18481 },	-- A'dal
@@ -49,7 +49,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 			}),
-			n(0,  {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(22556, {	-- Formula: Enchant 2H Weapon - Major Agility
 					["crs"] = { 20880 },	-- Eredar Deathbringer
 				}),

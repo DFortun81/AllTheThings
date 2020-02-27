@@ -11,7 +11,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		},
 		["coord"] = { 50.35, 33.39, 102 },	-- The Steamvault, Zangarmarsh
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(29613, {	-- A Proper Fate
 					["provider"] = { "n", 54848 }, 		-- Watcher Jhang
 				}),
@@ -26,7 +26,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["provider"] = { "n", 54851 }, 		-- Windcaller Claw
 				}),
 			}),
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(24159, {	-- Design: Khorium Band of Frost
 					["crs"] = { 17722 },	-- Coilfang Sorceress
 				}),

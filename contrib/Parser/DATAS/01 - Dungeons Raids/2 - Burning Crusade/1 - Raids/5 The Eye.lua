@@ -13,7 +13,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		},
 		["coord"] = { 73.73, 63.71, 109 },	-- The Eye, Netherstorm
 		["groups"] = {
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				["crs"] = {
 					20043,	-- Apprentice Star Scryer
 					20033,	-- Astromancer

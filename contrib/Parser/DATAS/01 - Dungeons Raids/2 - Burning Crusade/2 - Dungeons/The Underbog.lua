@@ -8,7 +8,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["mapID"] = 262,
 		["coord"] = { 54.24, 34.45, 102 },	-- The Underbog, Zangarmarsh
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				{	-- A Necessary Evil
 					["questID"] = 29568,	-- A Necessary Evil
 					["provider"] = { "n", 54678 },			-- Naturalist Bite
@@ -168,14 +168,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					})),
 				},
 			}),
-			{	-- Zone Drops
-				["npcID"] = 0,	-- Zone Drops
+			n(ZONEDROPS, {
 				["g"] = {
-					{	-- Sanguine Hibiscus
-						["itemID"] = 24246,	-- Sanguine Hibiscus
-					},
+					i(24246),	-- Sanguine Hibiscus
 				},
-			},
+			}),
 		},
 	}),
 })};

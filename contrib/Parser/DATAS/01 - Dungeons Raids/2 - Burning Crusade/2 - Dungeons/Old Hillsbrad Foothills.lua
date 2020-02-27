@@ -11,7 +11,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
 		},
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(10283,  {	-- Taretha's Diversion
 					["u"] = 40,
 					["provider"] = { "n", 18723 },	-- Erozion
@@ -46,7 +46,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["sourceQuest"] = 10284,	-- Escape from Durnholde
 				}),
 			}),
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(18672, {	-- Thomas Yance
 					i(45),	-- Squire's Shirt
 					i(38),	-- Recruit's Shirt
@@ -59,7 +59,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(22539),	-- Formula: Enchant Shield - Intellect
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(25729, {	-- Pattern: Stylin' Adventure Hat
 					["crs"] = {
 						28132,	-- Don Carlos
