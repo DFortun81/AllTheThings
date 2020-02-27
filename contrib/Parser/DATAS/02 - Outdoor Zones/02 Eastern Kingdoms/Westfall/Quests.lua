@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(52, {	-- Westfall
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(26320, {	-- A Vision of the Past
 					["sourceQuests"] = { 26319 },	-- Secrets Revealed
 					["coord"] = { 42.8, 65.1, 52 },

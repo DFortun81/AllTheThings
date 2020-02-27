@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(22, {	-- Western Plaguelands
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(50345, { 	-- Alit
 					["coord"] = { 31.8, 72.2, 22 },
 					["g"] = {

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(18, {	-- Tirisfal Glades
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(10356, {	-- Bayne
 					["coord"] = { 46.0, 49.6, 18 },
 					["g"] = {

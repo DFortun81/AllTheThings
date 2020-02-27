@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(21, {	-- Silverpine Forest
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(1920,  {	-- Ambermill Spellscribe
 					["races"] = HORDE_ONLY,
 					["u"] = 43,	-- Removed NPCs

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(49, {	-- Redridge Mountains
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(1446, {	-- Blackrock Boots
 					["u"] = 7,
 					["crs"] = { 440 },	-- Blackrock Grunt

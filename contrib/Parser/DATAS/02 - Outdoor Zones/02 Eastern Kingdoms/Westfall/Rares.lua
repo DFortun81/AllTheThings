@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(52, {	-- Westfall
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(520,  {	-- Brack
 					["coord"] = { 28.8, 72.8, 52 },
 					["g"] = {

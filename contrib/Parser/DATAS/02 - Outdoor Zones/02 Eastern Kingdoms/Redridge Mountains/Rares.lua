@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(49, {	-- Redridge Mountains
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(14273, { 	-- Boulderheart
 					["coord"] = { 56.6, 51.6, 49 },
 					["g"] = {

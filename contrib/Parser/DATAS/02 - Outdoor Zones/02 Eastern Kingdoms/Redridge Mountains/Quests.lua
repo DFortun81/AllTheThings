@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(49, {	-- Redridge Mountains
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(26708, {	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
 					["provider"] = { "n", 43733 },	-- Colonel Troteman
 					["coord"] = { 77.2, 65.9, 49 },

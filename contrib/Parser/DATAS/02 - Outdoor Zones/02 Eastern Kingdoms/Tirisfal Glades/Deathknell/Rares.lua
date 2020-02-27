@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(18, {	-- Tirisfal Glades
 			m(465, {	-- Deathknell
-				n(-16, {	-- Rares
+				n(RARES, {
 					n(50328, {	-- Fangor
 						["coords"] = {
 							{ 61.6, 79.6, 465 },

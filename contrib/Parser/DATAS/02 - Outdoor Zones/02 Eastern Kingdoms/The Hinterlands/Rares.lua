@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(26, {	-- The Hinterlands
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(8215, { 	-- Grimungous
 					["coords"] = {
 						{ 71.6, 62.6, 26 },

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(22, {	-- Western Plaguelands
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(26954, {	-- A Different Approach
 					["provider"] = { "n", 44456 },	-- Adrine Towhide
 					["coord"] = { 48.8, 54.7, 22 },

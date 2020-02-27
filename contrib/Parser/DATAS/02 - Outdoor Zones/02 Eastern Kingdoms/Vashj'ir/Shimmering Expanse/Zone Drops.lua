@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(203, {	-- Vashj'ir
 			m(205, {	-- Shimmering Expanse
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(65649),	-- Technique: Origami Slime
 				}),
 			}),

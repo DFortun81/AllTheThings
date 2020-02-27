@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(56, {	-- Wetlands
-			n(-2,  {	-- Vendors
+			n(VENDORS, {
 				n(1441, {	-- Brak Durnad <Weaponsmith>
 					["coord"] = { 11.6, 59.6, 56 },
 					["races"] = ALLIANCE_ONLY,

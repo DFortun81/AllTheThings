@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(241, {	-- Twilight Highlands
-			n(-16,  {	-- Rares
+			n(RARES, {
 				n(50085, {	-- Overlord Sunderfury
 					["coord"] = { 58.0, 33.8, 241 },
 					["g"] = {

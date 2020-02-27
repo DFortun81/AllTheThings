@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(203, {	-- Vashj'ir
 			m(205, {	-- Shimmering Expanse
-				n(-16, {	-- Rares
+				n(RARES, {
 					n(50005, {	-- Poseidus
 						["coords"] = {
 							{ 66.4, 44.2, 205 },

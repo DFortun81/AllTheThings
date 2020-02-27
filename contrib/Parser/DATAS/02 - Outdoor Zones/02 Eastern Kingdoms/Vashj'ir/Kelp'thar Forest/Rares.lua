@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(203, {	-- Vashj'ir
 			m(201, {	-- Kelp'thar Forest
-				n(-16, {	-- Rares
+				n(RARES, {
 					n(49913, {	-- Lady La-La
 						["coords"] = {
 							{ 56.4, 77.0, 201 },

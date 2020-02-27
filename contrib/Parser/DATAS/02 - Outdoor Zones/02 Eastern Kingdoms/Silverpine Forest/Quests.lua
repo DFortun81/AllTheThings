@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(21, {	-- Silverpine Forest
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(27577, {	-- 7th Legion Battle Plans
 					["provider"] = { "n", 45879 },	-- Lord Walden
 					["coord"] = { 51.8, 65.0, 21 },

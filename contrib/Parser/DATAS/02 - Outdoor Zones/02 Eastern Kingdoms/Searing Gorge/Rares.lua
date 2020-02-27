@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(32, {	-- Searing Gorge
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(50876,  {	-- Avis
 					["coord"] = { 71.6, 19.2, 32 },
 					["g"] = {

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(51, {	-- Swamp of Sorrows
-			n(-16,  {	-- Rares
+			n(RARES, {
 				n(14445, {	-- Captain Wyrmak
 					["coord"] = { 75.0, 45.4, 51 },	-- in temple
 					["g"] = {

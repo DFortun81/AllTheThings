@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(467, {	-- Sunstrider Isle
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(8336, {	-- A Fistful of Slivers
 					["u"] = 40,
 					["races"] = { 10 },	-- Blood Elves

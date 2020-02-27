@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(26, {	-- The Hinterlands
-			n(0, {	-- Zone Drop -- note: these are listed as NPCs first because of how CRS works. Until/unless it's fixed, we should probably keep these as they are [Pr3vention]
+			n(ZONEDROPS, {	-- note: these are listed as NPCs first because of how CRS works. Until/unless it's fixed, we should probably keep these as they are [Pr3vention]
 				n(7996, {	-- Qiaga the Keeper
 					["u"] = 43,
 					["g"] = {

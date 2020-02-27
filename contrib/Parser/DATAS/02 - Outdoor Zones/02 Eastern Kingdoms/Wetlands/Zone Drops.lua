@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(56, {	-- Wetlands
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				un(43, n(1028, { 	-- Bluegill Muckdweller
 					un(7, i(3022)),	-- Bluegill Breeches
 				})),

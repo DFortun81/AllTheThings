@@ -9,7 +9,7 @@ _.Zones =
 				faction(87, {	-- Bloodsail Buccaneers
 					["collectible"] = false,
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(4621,  {	-- Avast Ye, Admiral!
 								["provider"] = { "n", 2546 },	-- Fleet Master Firallon
 								["coord"] = { 46.7, 95.2, 210 },
