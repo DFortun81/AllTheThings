@@ -16,7 +16,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["coord"] = { 83.0, 30.6, 390 },	-- Seat of Knowledge, Vale of Eternal Blossoms
 				["ignoreBonus"] = true,
 				["groups"] = {
-					n(-1, {	-- Common Boss Drop
+					n(COMMON_BOSS_DROPS, {
 						["groups"] = {
 							un(2, i(95619, {	-- Amber Encased Treasure Pouch
 								["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
@@ -293,7 +293,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["ignoreBonus"] = true,
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						["crs"] = {
 							62980,	-- Imperial Vizier Zor'lok
 							62543,  -- Blade Lord Ta'yak
@@ -548,7 +548,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["ignoreBonus"] = true,
 				["difficulties"] = { 5, 6 },
 				["groups"] = {
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						["crs"] = {
 							62980,	-- Imperial Vizier Zor'lok
 							62543,  -- Blade Lord Ta'yak

@@ -7,7 +7,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["lvl"] = 87,
 		["maps"] = { 443, 444, 445, 446 },
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(30757, {	-- Lord of the Shado-Pan
 					["provider"] = { "n", 62236 },	-- Ban Bearheart
 					["sourceQuests"] = {

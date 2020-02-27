@@ -7,7 +7,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["lvl"] = 88,
 		["maps"] = { 457, 458, 459},
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(31365),	-- Somewhere Inside
 				q(31366, {	-- Take Down the Wing Leader
 					i(87356),	-- Badge of the Amber Siege

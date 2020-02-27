@@ -11,7 +11,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["lvl"] = 90,
 				["g"] = {
 					ach(6396),	-- Sanguinarian
-					n(-17,   {	-- Quests
+					n(QUESTS, {
 						q(31448, {	-- An End to the Suffering
 							["provider"] = { "n", 64563 },	-- Talking Skull
 							["g"] = {

@@ -20,7 +20,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		},
 		["coord"] = { 63.4, 32.6, 504 },	-- Throne of Thunder, Isle of Thunder
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				i(97153, {	-- Spoils of the Thunder King
 					["description"] = "This bag contains gold, flasks, reagents, epic necklaces, and has chance to drop a Primal Egg.",
 					["groups"] = {
@@ -142,7 +142,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				["crs"] = {
 					69909,	-- Amani'shi Flame Chanter
 					70448,	-- Ancient Python
@@ -236,7 +236,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["description"] = "|cff66ccffSpeak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from this LFR is NOT tradeable to others in group.|r",
 				["coord"] = { 83.0, 30.6, 390 },	-- Seat of Knowledge, Vale of Eternal Blossoms
 				["groups"] = {
-					n(-1, {	-- Common Boss Drops
+					n(COMMON_BOSS_DROPS, {
 						["description"] = "These can drop from any of the bosses other than Ra-den.",
 						["crs"] = {
 							69465,	-- Jin'rokh the Breaker
@@ -743,7 +743,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["ignoreBonus"] = true,
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
-					n(-1, {	-- Common Boss Drops
+					n(COMMON_BOSS_DROPS, {
 						["description"] = "These can drop from any of the bosses other than Ra-den.",
 						["crs"] = {
 							69465,	-- Jin'rokh the Breaker
@@ -1475,7 +1475,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["ignoreBonus"] = true,
 				["difficulties"] = { 5, 6 },
 				["groups"] = {
-					n(-1, {	-- Common Boss Drops
+					n(COMMON_BOSS_DROPS, {
 						["description"] = "These can drop from any of the bosses other than Ra-den.",
 						["crs"] = {
 							69465,	-- Jin'rokh the Breaker

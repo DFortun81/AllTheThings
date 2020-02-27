@@ -7,7 +7,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["lvl"] = 85,
 		["maps"] = { 439, 440, 441, 442 },
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(31324, {	-- Family Secrets
 					["provider"] = { "n", 59822 },	-- Auntie Stormstout
 					["groups"] = {

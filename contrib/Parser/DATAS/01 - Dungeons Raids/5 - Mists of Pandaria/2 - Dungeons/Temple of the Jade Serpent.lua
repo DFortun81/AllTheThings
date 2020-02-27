@@ -7,7 +7,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["lvl"] = 85,
 		["maps"] = { 429, 430 },
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(31356, {	-- Deep Doubts, Deep Wisdom
 					i(87283),	-- Windstrong Leggings
 					i(87284),	-- Leggings of the Fifth Sun
@@ -32,7 +32,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				}),
 			}),
 			d( 1, {	-- Normal
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					{
 						["questID"] = 33107,		-- Bad Feeling, Worse Result
 						["objectID"] = 221413,		-- Lin Family Scroll
@@ -49,13 +49,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["modelScale"] = 2,
 						["g"] = {
 							q(33107, {	-- Bad Feeling, Worse Result
-								["requireSkill"] = 185,	-- Cooking
+								["requireSkill"] = COOKING,
 								["sourceQuests"] = { 33020 },	-- The Lost Secret of the Secret Ingredient
 							}),
 						},
 					}),
 				}),
-				n(0, {	-- Zone Drops
+				n(ZONEDROPS, {
 					n(65317, {	-- Xiang <The Two Jugglers>
 						i(87522),	-- Star Carrier Bracers  [Lucetia: Only drops from this mob don't remove]
 					}),

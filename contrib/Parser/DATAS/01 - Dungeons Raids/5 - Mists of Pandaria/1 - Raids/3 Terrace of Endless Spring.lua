@@ -15,7 +15,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["coord"] = { 83.0, 30.6, 390 },	-- Seat of Knowledge, Vale of Eternal Blossoms
 				["ignoreBonus"] = true,
 				["groups"] = {
-					n(-1, {	-- Common Boss Drop
+					n(COMMON_BOSS_DROPS, {
 						["groups"] = {
 							un(2, i(95617, {	-- Dividends of the Everlasting Spring
 								["description"] = "Since the introduction of Legacy Loot, this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1.",
@@ -247,7 +247,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["ignoreBonus"] = true,
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
-					n(-1, {	-- Common Boss Drop
+					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
 							60583,	-- Protector Kaolan
 							60586,	-- Elder Asani
@@ -451,7 +451,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["ignoreBonus"] = true,
 				["difficulties"] = { 5, 6 },
 				["groups"] = {
-					n(-1, {	-- Common Boss Drop
+					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
 							60583,	-- Protector Kaolan
 							60586,	-- Elder Asani

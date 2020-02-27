@@ -7,7 +7,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["lvl"] = 88,
 		["maps"] = { 437, 438 },
 		["groups"] = {
-			n(-17, {	-- Quests 
+			n(QUESTS, { 
 				q(31363),	-- Lighting the Way
 				q(31364, {	-- That's a Big Bug!
 					i(87351),	-- Carapace Inlaid Drape
