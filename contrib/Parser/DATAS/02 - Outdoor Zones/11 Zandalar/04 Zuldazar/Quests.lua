@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(875, {	-- Zandalar
 		m(862, {	-- Zuldazar
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				n(-9, {		-- PvP
 					["lvl"] = 120,	-- Don't become available until this level.
 					["g"] = {

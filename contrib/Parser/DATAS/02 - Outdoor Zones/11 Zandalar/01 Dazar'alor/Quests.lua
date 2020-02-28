@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(875, { 	-- Zandalar
 		m(1163, {	-- Dazar'alor
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(58672, {	-- A Gathering of Champions
 					["coord"] = { 55.9, 30.3, 1163 },
 					["provider"] = { "n", 161458 },	-- Valeera Sanguinar

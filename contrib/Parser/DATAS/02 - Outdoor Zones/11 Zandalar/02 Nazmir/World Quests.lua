@@ -6,7 +6,7 @@ _.Zones =
 	m(875, {	-- Zandalar
 		m(863, {	-- Nazmir
 			n(-34,  {	-- World Quests
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(51131, {	-- Absolutely Barbaric (A)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -95,12 +95,12 @@ _.Zones =
 					q(53292, {	-- Blooming Siren's Sting
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(53291, {	-- Blooming Star Moss
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(54691, {	-- Brewmaster Lin (Faction Assault WQ)
 						["lvl"] = 110,
@@ -125,7 +125,7 @@ _.Zones =
 					q(53323, {	-- Burnished Platinum
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 186,	-- Mining
+						["requireSkill"] = MINING,
 					}),
 					q(55342, {	-- Calligraphy
 						["lvl"] = 120,
@@ -224,12 +224,12 @@ _.Zones =
 					q(53290, {	-- Flourishing Riverbud
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(53289, {	-- Flourishing Sea Stalks
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(51172, {	-- Forked Lightning (A)
 						["lvl"] = 120,
@@ -252,7 +252,7 @@ _.Zones =
 					q(53322, {	-- Gleaming Storm Silver
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 186,	-- Mining
+						["requireSkill"] = MINING,
 					}),
 					q(50496, {	-- Glompmaw
 						["lvl"] = 120,
@@ -325,7 +325,7 @@ _.Zones =
 					q(53321, {	-- Luminous Monelite
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 186,	-- Mining
+						["requireSkill"] = MINING,
 					}),
 					q(50517, {	-- Mala'kili and Rohnkor
 						["lvl"] = 120,
@@ -380,7 +380,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(53293, {	-- Overgrown Anchor Weed
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["g"] = {
@@ -641,7 +641,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 197,	-- Tailoring
+						["requireSkill"] = TAILORING,
 						["g"] = {
 							i(162444),	-- Pattern: Battle Flag: Phalanx Defense (Rank 3)
 						},
@@ -655,7 +655,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 773,	-- Inscription
+						["requireSkill"] = INSCRIPTION,
 						["g"] = {
 							i(162368),	-- Contract: Talanji's Expedition [Rank 3]
 						},
@@ -674,7 +674,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 333,	-- Enchanting
+						["requireSkill"] = ENCHANTING,
 						["g"] = {
 							i(162315),	-- Formula: Enchant Weapon - Coastal Surge (Rank 3)
 						},
@@ -683,7 +683,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 333,	-- Enchanting
+						["requireSkill"] = ENCHANTING,
 						["g"] = {
 							i(162319),	-- Formula: Enchant Weapon - Torrent of Elements (Rank 3)
 						},
@@ -702,7 +702,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 171,	-- Alchemy
+						["requireSkill"] = ALCHEMY,
 						["g"] = {
 							i(162259),	-- Recipe: Sea Mist Potion (Rank 3)
 						},
@@ -731,7 +731,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 202,	-- Engineering
+						["requireSkill"] = ENGINEERING,
 						["g"] = {
 							i(162339), 	-- Schematic: XA-1000 Surface Skimmer [Rank 3]
 						},

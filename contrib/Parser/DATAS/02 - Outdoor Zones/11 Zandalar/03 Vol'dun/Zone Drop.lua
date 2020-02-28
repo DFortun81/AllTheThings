@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(875, {	-- Zandalar
 		m(864, {	-- Vol'dun
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(163576, {	-- Captured Dune Scavenger
 					["crs"] = {
 						134429,	-- Diamondback Warbringer

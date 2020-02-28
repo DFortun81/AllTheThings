@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(875, {	-- Zandalar
 		m(862, {	-- Zuldazar
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(140137, {	-- Bugcatacher Cal'yoon
 					["coord"] = { 77.0, 15.8, 862 },
 					["races"] = HORDE_ONLY,

@@ -6,17 +6,17 @@ _.Zones =
 	m(875, {	-- Zandalar
 		m(864, {	-- Vol'dun
 			n(-38, {	-- Professions
-				prof(182, {	-- Herbalism
+				prof(HERBALISM, {
 					q(51360, {	-- Enormous Anchor Pod
 						["sourceQuests"] = { 51016 },	-- Seeking More Knowledge
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["description"] = "This drops from |cFFFFD700Anchor Weed|r and can drop at any herbalism level.  You can only turn it in at Level 150 Kul Tiran Herbalism.",
 						["itemID"] = 160035,	-- Enormous Anchor Pod
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(51480, {	-- Enormous Anchor Pod
 						["sourceQuests"] = { 51482 },	-- Seeking More Knowledge
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["description"] = "This drops from |cFFFFD700Anchor Weed|r and can drop at any herbalism level. You can only turn it in at Level 150 Kul Tiran Herbalism.",
 						["itemID"] = 160035,	-- Enormous Anchor Pod
 						["races"] = HORDE_ONLY,
@@ -28,13 +28,13 @@ _.Zones =
 							51398,	-- An Unusual Mentor (A)
 							51432,	-- An Unusual Mentor (H)
 						},
-						["requireSkill"] = 182,	-- Herbalism	
+						["requireSkill"] = HERBALISM,	
 					}),
 					q(51408, {	-- Giving Back to Nature
 						["provider"] = { "n", 137572 },	-- Patu
 						["coord"] = { 62.21, 25.81, 864 },
 						["sourceQuest"] = 51399,	-- Foul Harvest
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["g"] = {
 							recipe(252412),	-- Akunda's Bite Rank 2
 						},
@@ -42,26 +42,26 @@ _.Zones =
 					q(51404, {	-- What Happens Next
 						["description"] = "When harvesting, make sure to stand at max range.",
 						["sourceQuests"] = { 53142 },	-- Foul Harvest
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["itemID"] = 160117,	-- Fully Charged Lightning Pod
 						["g"] = {
 							recipe(252413),	-- Akunda's Bite (Rank 3)
 						},
 					}),
 				}),
-				prof(755, {	-- Jewelcrafting
+				prof(JEWELCRAFTING, {
 					q(55581, {	-- Sun-Speckled Dunes (A)
 						["provider"] = { "n", 150895 },	-- Shrine of the Sands
 						["coord"] = { 44.2, 38.0, 864 },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49584,	-- The Missing Chapter (A)
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
 				n(-188, {	-- Mining
 					q(52044, {	-- An Exceptional Platinum Shard
-						["requireSkill"] = 186,	-- Mining
+						["requireSkill"] = MINING,
 						["description"] = "Requires 150 Kul'Tiran Mining.  The quest item can be mined from Platinum Deposits and Rich Platinum Deposits.",
 						["itemID"] = 161078,	-- Exceptional Platinum Shard
 						["races"] = ALLIANCE_ONLY,
@@ -73,7 +73,7 @@ _.Zones =
 						["provider"] = { "n", 139792 },	-- Ta'mil Nadu
 						["coord"] = { 27.6, 69.8, 864 },
 						["sourceQuest"] = 52053,	-- The Platinum Map
-						["requireSkill"] = 186,	-- Mining
+						["requireSkill"] = MINING,
 						["description"] = "Requires 150 Zandalari Mining.",
 						["races"] = HORDE_ONLY,
 						["g"] = {
@@ -82,7 +82,7 @@ _.Zones =
 					}),
 					q(48767, {	-- Seams Familiar
 						["races"] = ALLIANCE_ONLY,
-						["requireSkill"] = 186,	-- Mining
+						["requireSkill"] = MINING,
 						["sourceQuest"] = 48764, 	-- Don't Pick a Fight
 						["description"] = "This drops from mining |cFFFFD700Monelite Seam|r.  You can only turn it in at Level 150 Kul Tiran Mining.",
 						["g"] = {
@@ -90,13 +90,13 @@ _.Zones =
 						},
 					}),
 					q(52049, {	-- X Marks the Plat!
-						["requireSkill"] = 186,	-- Mining
+						["requireSkill"] = MINING,
 						["description"] = "Requires 150 Kul'Tiran Mining.  The quest item can be mined from Platinum Deposits or Rich Platinum Deposits.",
 						["itemID"] = 161085,	-- Tattered Map
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52053, {	-- The Platinum Map
-						["requireSkill"] = 186,	-- Mining
+						["requireSkill"] = MINING,
 						["description"] = "Requires 150 Zandalari Mining.",
 						["itemID"] = 161088,	-- Platinum Map
 						["races"] = HORDE_ONLY,

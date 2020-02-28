@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(875, {	-- Zandalar
 		m(863, {	-- Nazmir
-			n(-17,  {	-- Quests
+			n(QUESTS, {
 				ach(11868, {	-- The Dark Heart of Nazmir [Note: Quest line starts here and a few quests are in the zone.  So we want to make them stand out amongst the crowd.]
 					["races"] = HORDE_ONLY,
 					["g"] = {

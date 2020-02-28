@@ -12,7 +12,7 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["description"] = "|cff66ccffLocated in the Arathi Highlands, Stromgarde is one of the key locations in the struggle for control of the Eastern Kingdoms. For the Alliance, Stromgarde sits in a critical defensive position. Following the battle for Lordaeron, the Horde threat still looms over the continent and holding Stromgarde will be key if you hope to keep the Horde's aggression at bay.\n\nFor the Horde, securing Stromgarde would set the stage for an assault on the heart of the Eastern Kingdoms and serve as a launching point for a campaign against the worgen of the kingdom of Gilneas. This location is also key in the defense of the blood elven capital, Silvermoon City, in the north.|r",
 				["g"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(52792, {	-- Arathi Donations: Akunda's Bite
 							["lvl"] = 120,
 							["coord"] = { 51.2, 95.5, 1165 },
@@ -670,7 +670,7 @@ _.Zones =
 										{"pop"},	-- Discard the War Effort Header and acquire the children.
 										{"where", "mapID", 14},	-- Arathi Highlands
 										{"pop"},	-- Discard the Map Header and acquire the children.
-										{"where", "npcID", -1 },	-- Select the Common Boss Drop Header.
+										{"where", "npcID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
 										{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
 										{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 										{"modID", 6},	-- iLvl 370
@@ -690,7 +690,7 @@ _.Zones =
 								{"pop"},	-- Discard the War Effort Header and acquire the children.
 								{"where", "mapID", 14},	-- Arathi Highlands
 								{"pop"},	-- Discard the Map Header and acquire the children.
-								{"where", "npcID", -1 },	-- Select the Common Boss Drop Header.
+								{"where", "npcID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
 								{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
 								{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 								{"modID", 5},	-- iLvl 340

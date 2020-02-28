@@ -6,7 +6,7 @@ _.Zones =
 	m(875, { 	-- Zandalar
 		m(1163, {	-- Dazar'alor
 			n(-34, {	-- World Quests
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(52251, {	-- Compromised Reconnaissance
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -222,7 +222,7 @@ _.Zones =
 						["coord"] = { 65.61, 72.01, 1163 },
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 197,	-- Tailoring
+						["requireSkill"] = TAILORING,
 						["g"] = {
 							i(162443),	-- Pattern: Battle Flag: Spirit of Freedom [Rank 3]
 						},
@@ -231,7 +231,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 773,	-- Inscription
+						["requireSkill"] = INSCRIPTION,
 						["g"] = {
 							i(162366),	-- Recipe: Contract: Zandalari Empire [Rank 3]
 						},
@@ -240,7 +240,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 202,	-- Engineering
+						["requireSkill"] = ENGINEERING,
 						["g"] = {
 							i(162343), 	-- Schematic: Crow's Nest Scope [Rank 3]
 						},
@@ -249,7 +249,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 202,	-- Engineering
+						["requireSkill"] = ENGINEERING,
 						["g"] = {
 							i(162340),	-- Schematic: Electroshock Mount Motivator
 						},
@@ -258,7 +258,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 333,	-- Enchanting
+						["requireSkill"] = ENCHANTING,
 						["g"] = {
 							i(162299), 	-- Formula: Enchant Ring - Seal of Haste [Rank 3]
 						},
@@ -267,7 +267,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 333,	-- Enchanting
+						["requireSkill"] = ENCHANTING,
 						["g"] = {
 							i(162300), 	-- Formula: Enchant Ring - Seal of Mastery [Rank 3]
 						},
@@ -276,7 +276,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 202,	-- Engineering
+						["requireSkill"] = ENGINEERING,
 						["g"] = {
 							i(162321), 	-- Schematic: Incendiary Ammunition [Rank 3]
 						},
@@ -285,13 +285,13 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(52398, {	-- Work Order: Ultramarine Pigment
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 773,	-- Inscription
+						["requireSkill"] = INSCRIPTION,
 					}),
 				}),
 			}),

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(875, {	-- Zandalar
 		m(863, {	-- Nazmir
-			n(-16,  {	-- Rares
+			n(RARES, {
 				n(133505, {	-- Aiji the Accursed
 					["questID"] = 50339,
 					["coord"] = { 53.0, 72.1, 863 },

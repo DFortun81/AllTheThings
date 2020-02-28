@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(875, { 	-- Zandalar
 		m(1163, {	-- Dazar'alor
-			n(-2, { 	-- Vendors
+			n(VENDORS, {
 				n(132153, {	-- "Black Eye" Zenru
 					["coord"] = { 53.7, 85.9, 1165 },
 					["races"] = HORDE_ONLY,
