@@ -21,7 +21,7 @@ _.PVP =
 					["icon"] = "Interface\\Icons\\spell_shadow_psychichorrors",
 					["g"] = {
 						ach(710), 	-- The Defiler
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(8265, {	-- Defiler's Advanced Care Package
 								["provider"] = { "n", 15126 },	-- Rutherford Twing
 								["lvl"] = 45,
@@ -41,7 +41,7 @@ _.PVP =
 								["minReputation"] = { 510, FRIENDLY },
 							}),
 						}),
-						n(-2, {	-- Vendors
+						n(VENDORS, {
 							n(15126, {	-- Rutherford Twing
 								["itemID"] = 137642,	-- Mark of Honor
 								["coord"] = { 68.4, 30.6, 14 },
@@ -128,7 +128,7 @@ _.PVP =
 					["icon"] = "Interface\\Icons\\ability_warrior_rallyingcry",
 					["g"] = {
 						ach(711), 	-- Knight of Arathor
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(8262, {	-- Arathor Advanced Care Package
 								["provider"] = { "n", 15127 },	-- Samuel Hawke
 								["lvl"] = 45,
@@ -148,7 +148,7 @@ _.PVP =
 								["minReputation"] = { 509, FRIENDLY },
 							}),
 						}),
-						n(-2, {	-- Vendors
+						n(VENDORS, {
 							n(15127, {	-- Samuel Hawke
 								["itemID"] = 137642,	-- Mark of Honor
 								["coord"] = { 40.2, 46.4, 14 },

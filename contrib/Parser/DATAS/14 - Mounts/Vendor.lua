@@ -3,7 +3,7 @@
 ---------------------------------------------
 _.Mounts =
 {
-	n(-2, {	-- Vendor
+	n(VENDORS, {
 		i(161911, {	-- Admiralty Stallion
 			["races"] = ALLIANCE_ONLY,
 		}),

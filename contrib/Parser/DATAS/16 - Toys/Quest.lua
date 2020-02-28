@@ -3,7 +3,7 @@
 ---------------------------------------------
 _.Toys =
 {
-	n(-17, { 	-- Quest
+	n(QUESTS, {
 		i(147838), 		-- Akazamzarak's Spare Hat
 		i(119217),		-- Alliance Flag of Victory (Alliance)
 		i(175063),		-- Aqir Egg Cluster

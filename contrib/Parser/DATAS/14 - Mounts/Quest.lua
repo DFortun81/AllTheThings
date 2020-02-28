@@ -3,7 +3,7 @@
 ---------------------------------------------
 _.Mounts =
 {
-	n(-17, { 	-- Quest
+	n(QUESTS, {
 		i(142436),		-- Arcanist's Manasaber
 		mount(48778, {	-- Acherus Deathcharger
 			["classes"] = { DEATHKNIGHT },

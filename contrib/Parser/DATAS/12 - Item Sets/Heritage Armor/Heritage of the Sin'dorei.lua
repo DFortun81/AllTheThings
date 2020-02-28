@@ -15,7 +15,7 @@ _.GearSets =
 			i(166352),	-- Sin'dorei Belt
 			i(166353),	-- Sin'dorei Leggings
 			i(166354),	-- Sin'dorei Slippers
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(53791, {	-- The Pride of the Sin'dorei
 					["provider"] = { "n", 146939 },	-- Ambassador Dawnsworn
 					["coord"] = { 39.2, 79.0, 85 },

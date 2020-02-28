@@ -3,7 +3,7 @@
 ---------------------------------------------
 _.Toys =
 {
-	n(-2,  { 	-- Vendor
+	n(VENDORS, {
 		i(163211),		-- Akunda's Firesticks
 		i(169275, {		-- Alliance War Banner
 			["races"] = ALLIANCE_ONLY,

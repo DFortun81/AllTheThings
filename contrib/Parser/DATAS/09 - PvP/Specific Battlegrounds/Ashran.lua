@@ -155,7 +155,7 @@ _.PVP =
 						},
 					}),
 				}),
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(56336, {	-- Uncovering the Artifact Fragments (A)
 						["provider"] = { "n", 155283 },	-- Ecilam
 						["coord"] = { 44.6, 74.4, 1478 },
@@ -414,7 +414,7 @@ _.PVP =
 						},
 					}),
 				}),
-				n(-2, {		-- Vendors
+				n(VENDORS, {
 					n(80882, {	-- Crafticus Mindbender <Stormshield Quartermaster>
 						["coord"] = { 44.2, 74.0, 1478 },
 						["races"] = ALLIANCE_ONLY,
