@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(876, {	-- Kul'Tiras
 		m(1161, {	-- Boralus
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(161565, {	-- Bragni <Profession Liason>
 					["coord"] = { 56.3, 27.2, 1161 },
 					["races"] = ALLIANCE_ONLY,

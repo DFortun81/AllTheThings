@@ -6,8 +6,8 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(896, {	-- Drustvar
-			n(0, {	-- Zone Drop
-				i(163574, {	-- Chewed- On Reins of the Terrified Pack Mule
+			n(ZONEDROPS, {
+				i(163574, {	-- Chewed-On Reins of the Terrified Pack Mule
 					["crs"] = {
 						133892,	-- Hexthralled Crossbowman
 						131534,	-- Hexthralled Guardsman

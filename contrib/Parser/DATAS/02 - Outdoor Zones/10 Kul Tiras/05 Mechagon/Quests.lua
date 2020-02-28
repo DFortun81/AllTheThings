@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(876, {	-- Kul'Tiras
 		m(1462, {	-- Mechagon
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				--[[
 					55623 triggered after killing crazed trogg, but isn't a killID for him. Not sure what this is from
 					
@@ -372,7 +372,7 @@ _.Zones =
 				q(55298, {	-- Fishing for Something Bigger (possibly only available after Welcome to the Resistance?)
 					["provider"] = { "n", 151462 },	-- Danielle Anglers
 					["coord"] = { 37.0, 47.1, 1462 },
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(54083, {	-- Grease The Wheels
 					["provider"] = { "n", 150573 },	-- Recycler Kerchunk

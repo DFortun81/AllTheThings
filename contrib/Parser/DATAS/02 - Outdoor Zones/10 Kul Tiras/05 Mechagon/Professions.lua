@@ -6,7 +6,7 @@ _.Zones =
 	m(876, {	-- Kul'Tiras
 		m(1462, {	-- Mechagon
 			n(-38, {	-- Professions
-				prof(356, {	-- Fishing
+				prof(FISHING, {
 					i(167661, {	 -- Energized Lightning Cod
 						["questID"] = 55311,
 						["isDaily"] = true,

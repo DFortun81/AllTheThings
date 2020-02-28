@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(876, {	-- Kul'Tiras
 		m(895, {	-- Tiragarde Sound
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(142838, {	-- Grumpy Grimble
 					["description"] = "When you have 150 BfA Inscription, speak to the NPC and he will teach you the technique.",
 					["coord"] = { 49.8, 36.8, 895 },

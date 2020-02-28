@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(876, {	-- Kul'Tiras
 		m(1161, {	-- Boralus
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(139287, {	-- Sawtooth
 					["questID"] = 51877,
 					["coords"] = {

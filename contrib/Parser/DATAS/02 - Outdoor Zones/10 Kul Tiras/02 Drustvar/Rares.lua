@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(896, {	-- Drustvar
-			n(-16, {	-- Rares
+			n(RARES, {
 				o(277333, {	-- Ancient Sarcophagus
 					["modelScale"] = 2,
 					["questID"] = 49137,

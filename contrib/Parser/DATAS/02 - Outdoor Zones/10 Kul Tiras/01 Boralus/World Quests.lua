@@ -6,7 +6,7 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(1161, {	-- Boralus
 			n(-34, {	-- World Quests
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(52047, {	-- Against the Storm
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
@@ -263,13 +263,13 @@ _.Zones =
 						["coord"] = { 67.61, 21.81, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 					}),
 					q(52389, {	-- Work Order: Contract: Proudmoore Admiralty
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 773,	-- Inscription
+						["requireSkill"] = INSCRIPTION,
 						["g"] = {
 							i(162360), 	-- Recipe: Contract: Proudmoore Admiralty [Rank 3]
 						},
@@ -278,7 +278,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 202,	-- Engineering
+						["requireSkill"] = ENGINEERING,
 						["g"] = {
 							i(162343), 	-- Schematic: Crow's Nest Scope [Rank 3]
 						},
@@ -287,7 +287,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 333,	-- Enchanting
+						["requireSkill"] = ENCHANTING,
 						["g"] = {
 							i(162315), 	-- Formula: Enchant Weapon - Coastal Surge [Rank 3]
 						},
@@ -296,7 +296,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 333,	-- Enchanting
+						["requireSkill"] = ENCHANTING,
 						["g"] = {
 							i(162319), 	-- Formula: Enchant Weapon - Torrent of Elements [Rank 3]
 						},
@@ -305,7 +305,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 202,	-- Engineering
+						["requireSkill"] = ENGINEERING,
 						["g"] = {
 							i(162321), 	-- Schematic: Incendiary Ammunition [Rank 3]
 						},
@@ -315,26 +315,26 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 						["coord"] = { 67.61, 21.81, 1161 },
 					}),
 					q(52340, {	-- Work Order: Monel-Hardened Hoofplates
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 164,	-- Blacksmithing
+						["requireSkill"] = BLACKSMITHING,
 					}),
 					q(52339, {	-- Work Order: Monel-Hardened Stirrups
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 164,	-- Blacksmithing
+						["requireSkill"] = BLACKSMITHING,
 					}),
 					q(50995, {	-- Work Order: Shimmerscale
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 					}),
 					q(52417, {	-- Work Order: Shimmerscale Diving Helmet
 						["provider"] = { "n", 135808 },	-- Provisioner Fray
@@ -342,7 +342,7 @@ _.Zones =
 						["coord"] = { 67.61, 21.81, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 165,	-- Leatherworking
+						["requireSkill"] = LEATHERWORKING,
 					}),
 					q(52416, {	-- Work Order: Shimmerscale Diving Suit
 						["provider"] = { "n", 135808 },	-- Provisioner Fray
@@ -350,25 +350,25 @@ _.Zones =
 						["coord"] = { 67.61, 21.81, 1161 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 165,	-- Leatherworking
+						["requireSkill"] = LEATHERWORKING,
 					}),
 					q(52392, {	-- Work Order: Ultramarine Pigment
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 773,	-- Inscription
+						["requireSkill"] = INSCRIPTION,
 					}),
 					q(50984, {	-- Work Order: Winter's Kiss
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(52366, {	-- Work Order: XA-1000 Surface Skimmer
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 202,	-- Engineering
+						["requireSkill"] = ENGINEERING,
 						["g"] = {
 							i(162339), 	-- Schematic: XA-1000 Surface Skimmer [Rank 3]
 						},
