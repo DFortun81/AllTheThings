@@ -7,7 +7,7 @@ _.Zones =
 		["g"] = {
 			{	-- Skinning
 				["order"] = "04",
-				["professionID"] = 393,	-- Skinning
+				["professionID"] = SKINNING,
 				["maps"] = {
 					885,	-- Antoran Wastes
 					830,	-- Krokuun

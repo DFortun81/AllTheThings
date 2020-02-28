@@ -162,10 +162,10 @@ _.Zones =
 						}),
 					}),
 				}),
-				n(-17,  {	-- Quests
+				n(QUESTS, {
 					q(48075, {	-- A Colorful Key
 						["provider"] = { "n", 125343 },		-- Vorel
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 						["sourceQuests"] = { 46941 },	-- The Path Forward
 						["g"] = {
 							i(151736),	-- Design: Deadly Deep Chemirine
@@ -176,7 +176,7 @@ _.Zones =
 					}),
 					q(48076, {	-- A Crowning Achievment
 						["provider"] = { "n", 125343 },		-- Vorel
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 						["sourceQuests"] = { 48075 },	-- A Colorful Key
 						["coords"] = { 44.45, 73.35, 831 },
 						["g"] = {
@@ -213,7 +213,7 @@ _.Zones =
 						["coord"] = { 53.1, 48.8, 883 },
 					}),
 					q(48078, {	-- Counterbalancing
-						["requireSkill"] = 165,	-- Leatherworking
+						["requireSkill"] = LEATHERWORKING,
 						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
 						["g"] = {
 							i(151740),	-- Recipe: Fiendish Shoulderguards (Rank 1)					
@@ -222,7 +222,7 @@ _.Zones =
 					}),
 					q(48055, {	-- Empyrial Strength
 						["provider"] = { "n", 125341 },	-- Khamir
-						["requireSkill"] = 164,	-- Blacksmithing
+						["requireSkill"] = BLACKSMITHING,
 						["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
 						["g"] = {
 							i(151711),	-- Plans: Empyrial Breastplate [Rank 1]
@@ -234,7 +234,7 @@ _.Zones =
 						["coord"] = { 45.9, 34.0, 831 },
 					}),
 					q(48065, {	-- Extraterrestrial Exploration
-						["requireSkill"] = 202,	-- Engineering
+						["requireSkill"] = ENGINEERING,
 						["sourceQuests"] = { 48069 },	-- The Wrench Calls
 						["g"] = {
 							recipe(247744),	-- Wormhole Generator: Argus
@@ -272,7 +272,7 @@ _.Zones =
 						["coord"] = { 40.2, 21.4, 831 },
 					}),
 					q(48074, {	-- Looming Over Me
-						["requireSkill"] = 197,	-- Tailoring
+						["requireSkill"] = TAILORING,
 						["sourceQuests"] = { 46941 },	-- The Path Forward
 						["g"] = {
 							i(151571),	-- Lightweave Breeches
@@ -370,7 +370,7 @@ _.Zones =
 						["coord"] = { 43.7, 29.2, 831 },
 					}),
 					q(48069, {	-- The Wrench Calls
-						["requireSkill"] = 202,	-- Engineering
+						["requireSkill"] = ENGINEERING,
 						["sourceQuests"] = { 46941 },	-- The Path Forward
 					}),
 					q(48344, {	-- We Have a Problem
@@ -393,20 +393,20 @@ _.Zones =
 					["achievementID"] = 11217,
 					["modelScale"] = 0.65,
 				}),
-				n(-2,   {	-- Vendors
+				n(VENDORS, {
 					n(127120, {	-- Vindicator Jaelaana <Army of the Light Emissary>
 						i(152399),	-- Army of the Light Tabard
 						i(151725, {	-- Design: Empyrial Cosmic Crown (Rank 2)
-							["cost"] = 20000000,	-- 2,0000g
+							["cost"] = 20000000,	-- 2,000g
 						}),
 						i(151728, {	-- Design: Empyrial Deep Crown (Rank 2)
-							["cost"] = 20000000,	-- 2,0000g
+							["cost"] = 20000000,	-- 2,000g
 						}),
 						i(151731, {	-- Design: Empyrial Elemental Crown (Rank 2)
-							["cost"] = 20000000,	-- 2,0000g
+							["cost"] = 20000000,	-- 2,000g
 						}),
 						i(151734, {	-- Design: Empyrial Titan Crown (Rank 2)
-							["cost"] = 20000000,	-- 2,0000g
+							["cost"] = 20000000,	-- 2,000g
 						}),
 						i(152726),	-- Design: Mass Prospect Empyrium
 						i(152400, {	-- Embroidered Lightforged Drape
@@ -416,16 +416,16 @@ _.Zones =
 							["cost"] = 6250000000,	-- 625,000g
 						}),
 						i(151712, {	-- Recipe: Empyrial Breastplate (Rank 2)
-							["cost"] = 20000000,	-- 2,0000g
+							["cost"] = 20000000,	-- 2,000g
 						}),
 						i(151741, {	-- Recipe: Fiendish Shoulderguards (Rank 2)
-							["cost"] = 20000000,	-- 2,0000g
+							["cost"] = 20000000,	-- 2,000g
 						}),
 						i(151744, {	-- Recipe: Fiendish Spaulders (Rank 2)
-							["cost"] = 20000000,	-- 2,0000g
+							["cost"] = 20000000,	-- 2,000g
 						}),
 						i(151747, {	-- Recipe: Lightweave Breeches (Rank 2)
-							["cost"] = 20000000,	-- 2,0000g
+							["cost"] = 20000000,	-- 2,000g
 						}),
 						i(153032),	-- Technique: Glyph of the Lightspawn
 					}),

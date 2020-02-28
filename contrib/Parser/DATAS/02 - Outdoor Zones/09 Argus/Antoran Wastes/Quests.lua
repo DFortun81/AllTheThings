@@ -5,11 +5,11 @@ _.Zones =
 {
 	m(905, { 	-- Argus
 		m(885, {	-- Antoran Wastes
-			n(-17, { 	-- Quests
+			n(QUESTS, {
 				{	-- A Colorful Key
 					["questID"] = 48075,	-- A Colorful Key
 					["provider"] = { "n", 125343 },		-- Vorel
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 					["sourceQuests"] = { 46941 },	-- The Path Forward
 					["groups"] = {
 						{	-- Design: Deadly Deep Chemirine
@@ -29,7 +29,7 @@ _.Zones =
 				{	-- A Crowning Achievement
 					["questID"] = 48076,	--  A Crowning Achievment
 					["provider"] = { "n", 125343 },		-- Vorel
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 					["sourceQuests"] = {
 						48075,	-- A Colorful Key
 					},

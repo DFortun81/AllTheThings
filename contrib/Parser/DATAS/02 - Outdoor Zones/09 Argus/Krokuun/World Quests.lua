@@ -176,18 +176,18 @@ _.Zones =
 				q(48337, {	-- Work Order: Astral Glory
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(48318, {	-- Work Order: Lightblood Elixirs
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 171,	-- Alchemy
+					["requireSkill"] = ALCHEMY,
 					["g"] = {
 						i(151658),	-- Recipe: Lightblood Elixir (Rank 2)
 					},
 				}),
 				q(48323, {	-- Work Order: Tears of the Naaru
-					["requireSkill"] = 171,	-- Alchemy
+					["requireSkill"] = ALCHEMY,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["g"] = {

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(905, { 	-- Argus
 		m(882, {	-- Mac'Aree
-			n(-17,  {	-- Quests
+			n(QUESTS, {
 				q(47220, {	-- A Beacon in the Dark
 					["sourceQuests"] = { 47219 },	-- A Vessel Made Ready
 					["provider"] = { "n", 121230 },	-- Alleria Windrunner
@@ -13,7 +13,7 @@ _.Zones =
 				}),
 				q(48075, {	-- A Colorful Key
 					["sourceQuests"] = { 46941 },	-- The Path Forward
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 					["provider"] = { "n", 125343 },		-- Vorel
 					["g"] = {
 						i(151736),	-- Design: Deadly Deep Chemirine
@@ -29,7 +29,7 @@ _.Zones =
 				}),
 				q(48076, {	-- A Crowning Achievment
 					["sourceQuests"] = { 48075 },	-- A Colorful Key
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 					["provider"] = { "n", 125343 },		-- Vorel
 					["g"] = {
 						i(151724),	-- Design: Empyrial Cosmic Crown (Rank 1)

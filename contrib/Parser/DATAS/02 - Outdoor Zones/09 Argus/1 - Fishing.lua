@@ -7,7 +7,7 @@ _.Zones =
 		["g"] = {
 			{	-- Fishing
 				["order"] = "02",
-				["professionID"] = 356,	-- Fishing
+				["professionID"] = FISHING,
 				["maps"] = {
 					885,	-- Antoran Wastes
 					830,	-- Krokuun

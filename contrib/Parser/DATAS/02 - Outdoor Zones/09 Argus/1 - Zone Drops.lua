@@ -5,9 +5,8 @@ _.Zones =
 {
 	m(905, {	-- Argus
 		["g"] = {
-			{	-- Zone Drop
+			n(ZONEDROPS, {
 				["order"] = "06",
-				["npcID"] = 0,	-- Zone Drop
 				["description"] = "These tokens can drop from any mobs or treasure chest.",
 				["maps"] = {
 					885,	-- Antoran Wastes
@@ -140,7 +139,7 @@ _.Zones =
 						i(150999),	-- Wakener's Demonic Focus
 					}),
 				},
-			},
+			}),
 		},
 	}),
 };
