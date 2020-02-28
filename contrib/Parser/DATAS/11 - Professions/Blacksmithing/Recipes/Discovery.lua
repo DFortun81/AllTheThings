@@ -1,4 +1,4 @@
-profession(164, {    -- Blacksmithing
+profession(BLACKSMITHING, {
 	filter(200, {
 		{
 			["categoryID"] = 553,  -- Pandaren Plans

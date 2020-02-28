@@ -1,5 +1,5 @@
 -- Cooking - Skill ID 185 / Spell ID 2550
-profession(185, {	-- Cooking
+profession(COOKING, {
 	n(-37, {	-- Discovery
 		["description"] = "These items have a chance to appear in your bag after cooking any recipe from Warlords of Draenor.",
 		["groups"] = {
@@ -311,7 +311,7 @@ profession(185, {	-- Cooking
 					{ "postprocess" },
 				},
 			},
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(40989, {	-- The Prodigal Sous Chef
 					["description"] = "If you cooked with Nomi while questing in Pandaria, you will receive this quest instead of 'Too Many Chefs'.",
 					["groups"] = {
@@ -329,7 +329,7 @@ profession(185, {	-- Cooking
 					ach(10591),	-- All Grown Up
 				}),
 			}),
-			n(-2, { 	-- Vendors
+			n(VENDORS, {
 				["description"] = "Before Nomi will sell you any of these, you need to complete the quest that awards them.\n\nUse the ATT Source Text in the tooltip for more information on where you can find them.",
 				["groups"] = {
 					i(133818),	-- Recipe: Barracuda Mrglgagh [Rank 1]
@@ -370,7 +370,7 @@ profession(185, {	-- Cooking
 		--Classic, Wrath have actual item recipes that will be adjusted
 		--WoD is uncommented on the filtered recipes until I manually do it in automation
 		tier(1, {	-- Classic
-			["groups"] = bubbleDown({["requireSkill"] = 185 },  {
+			["groups"] = bubbleDown({["requireSkill"] = COOKING},  {
 				-- Note!! Only commenting out actual items as Automation takes care of the recipes themselves
 				un(2, i(16072)),	-- Expert Cookbook
 				un(2, i(16073)),	-- Artisan Cookbook
@@ -495,7 +495,7 @@ profession(185, {	-- Cooking
 		}),
 		--[[
 		tier(2, {	-- Burning Crusade
-			["groups"] = bubbleDown({["requireSkill"] = 185 },  {
+			["groups"] = bubbleDown({["requireSkill"] = COOKING},  {
 				recipe(33290),	-- Blackened Trout
 				recipe(43761),	-- Broiled Bloodfin
 				recipe(33279),	-- Buzzard Bites
@@ -525,7 +525,7 @@ profession(185, {	-- Cooking
 		}),
 		--]]
 		tier(3, {	-- Wrath
-			["groups"] = bubbleDown({["requireSkill"] = 185 },  {
+			["groups"] = bubbleDown({["requireSkill"] = COOKING},  {
 				-- Note!! Only commenting out actual items as Automation takes care of the recipes themselves
 				un(1, i(34126)),	-- Recipe: Shoveltusk Soup
 				un(1, i(39692)),	-- Recipe: Succulent Orca Stew
@@ -583,7 +583,7 @@ profession(185, {	-- Cooking
 		}),
 		--[[
 		tier(4, {	-- Cata
-			["groups"] = bubbleDown({["requireSkill"] = 185 },  {
+			["groups"] = bubbleDown({["requireSkill"] = COOKING},  {
 				recipe(88006),	-- Blackened Surprise
 				recipe(88003),	-- Baked Rockfish
 				recipe(88004),	-- Basilisk Liverdog
@@ -619,7 +619,7 @@ profession(185, {	-- Cooking
 			}),
 		}),
 		tier(5, {	-- Mists
-			["groups"] = bubbleDown({["requireSkill"] = 185 },  {
+			["groups"] = bubbleDown({["requireSkill"] = COOKING},  {
 				recipe(124233),	-- Blanched Needle Mushrooms
 				recipe(124228),	-- Boiled Silkworm Pupa
 				recipe(124227),	-- Dried Needle Mushrooms
@@ -735,7 +735,7 @@ profession(185, {	-- Cooking
 		}),
 		--]]
 		tier(6, {	-- WoD
-			["groups"] = bubbleDown({["requireSkill"] = 185 },  {
+			["groups"] = bubbleDown({["requireSkill"] = COOKING},  {
 				un(1, recipe(169696)),		-- Marinated Elekk Steak (Never made it to Live)
 				un(1, recipe(169699)),		-- Seasoned Elekk Ribeye (Never made it to Live)
 				un(1, recipe(169701)),		-- Seasoned Elekk Ribeye (Never made it to Live)
@@ -775,7 +775,7 @@ profession(185, {	-- Cooking
 		}),
 		--[[
 		tier(7, {	-- Legion
-			["groups"] = bubbleDown({["requireSkill"] = 185 },  {
+			["groups"] = bubbleDown({["requireSkill"] = COOKING},  {
 				recipe(201502),		-- Barracuda Mrglgagh [Rank 1]
 				recipe(201531),		-- Barracuda Mrglgagh [Rank 2]
 				recipe(201551),		-- Barracuda Mrglgagh [Rank 3]
@@ -846,7 +846,7 @@ profession(185, {	-- Cooking
 			}),
 		}),
 		tier(8, {	-- Battle For Azeroth
-			["groups"] = bubbleDown({["requireSkill"] = 185 },  {
+			["groups"] = bubbleDown({["requireSkill"] = COOKING},  {
 				recipe(259422, { ["spellID"] = 259422, }),	-- Bountiful Captain's Feast
 				recipe(259423, { ["spellID"] = 259423, }),	-- Bountiful Captain's Feast
 				recipe(259421, { ["spellID"] = 259421, }),	-- Bountiful Captain's Feast

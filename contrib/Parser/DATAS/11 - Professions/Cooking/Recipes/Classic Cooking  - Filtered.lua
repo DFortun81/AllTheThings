@@ -1,5 +1,5 @@
 -- Edited October 22, 2018.  Should be almost accurate? -- Lucetia
-profession(185, {	-- Cooking
+profession(COOKING, {
 	filter(200, {	-- Recipes
 		{	-- Old World Recipes
 			["categoryID"] = 72,	-- Old World Recipes

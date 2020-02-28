@@ -1,4 +1,4 @@
-profession(202, {	-- Engineering
+profession(ENGINEERING, {
 	filter(200, {
 		{
 			["name"] = "Engineering",

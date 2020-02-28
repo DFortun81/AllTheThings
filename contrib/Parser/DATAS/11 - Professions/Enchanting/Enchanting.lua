@@ -5,10 +5,10 @@
 --       Craftable Items.
 
 -- Enchanting - Skill ID 333 / Spell ID 7411
-profession(333, {	-- Enchanting
+profession(ENCHANTING, {
 	n(-26, {	-- Drop
 		q(36308, {	-- Enchanted Highmaul Bracer (A)
-			["requireSkill"] = 333,	-- Enchanting
+			["requireSkill"] = ENCHANTING,
 			["description"] = "This item can drop from any Draenor mob.",
 			["provider"] = { "i", 115281 },	-- Enchanted Highmaul Bracer
 			["races"] = ALLIANCE_ONLY,
@@ -23,7 +23,7 @@ profession(333, {	-- Enchanting
 			["lvl"] = 90,
 		}),
 		q(36255, {	-- Enchanted Highmaul Bracer (H)
-			["requireSkill"] = 333,	-- Enchanting
+			["requireSkill"] = ENCHANTING,
 			["description"] = "This item can drop from any Draenor mob.",
 			["provider"] = { "i", 115008 },	-- Enchanted Highmaul Bracer
 			["races"] = HORDE_ONLY,

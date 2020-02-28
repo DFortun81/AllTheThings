@@ -1,4 +1,4 @@
-profession(333, {	-- Enchanting
+profession(ENCHANTING, {
 	filter(200, {	-- Recipes
 		{
 			["categoryID"] = 661--[[Cataclysm Enchanting]],
