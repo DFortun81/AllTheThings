@@ -20,7 +20,7 @@ _.ExpansionFeatures =
 								ach(9498),		-- Wingman
 							}),
 						}),
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(37080, {	-- Glorious Slaughter
 								["provider"] = { "n", 86927 },	-- Stormshield Death Knight(Delvar Ironfist)
 								["g"] = {
@@ -102,7 +102,7 @@ _.ExpansionFeatures =
 								}
 							}),
 						}),
-						n(-2, {		-- Vendors
+						n(VENDORS, {
 							n(77379, {	-- Jonathan Stephens <Steward>
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {

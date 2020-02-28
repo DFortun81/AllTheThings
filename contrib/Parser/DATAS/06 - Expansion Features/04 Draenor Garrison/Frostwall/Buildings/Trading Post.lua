@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(145, {	-- Trading Post (rank 1: 111, rank 2: 144, rank 3: 145)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(37014, {	-- Auctioning for Parts
 								["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
 								["provider"] = { "n", 86806 },	-- Ancient Trading Mechanism
@@ -48,7 +48,7 @@ _.ExpansionFeatures =
 								})),
 							}),
 						}),
-						n(-2,  {	-- Vendors
+						n(VENDORS, {
 							n(87015, {	-- Kil'rip <Laughing Skull Quartermaster>
 								["races"] = HORDE_ONLY,
 								["crs"] = { 86698 },	-- Kil'rip

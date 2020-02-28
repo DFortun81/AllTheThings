@@ -14,13 +14,13 @@ _.ExpansionFeatures =
 								i(86596), 	-- Nat's Fishing Chair
 							}),
 						}),
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(35075, {	-- Abyssal Gulper Eel
 								["provider"] = { "n", 79892 },	-- Mak'jin
 								["coord"] = { 38.0, 72.2, 590 },
 								["isDaily"] = true,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["g"] = {
 									i(112623, {	-- Pack of Fishing Supplies
 										i(34834),	-- Recipe: Captain Rumsey's Lager
@@ -32,7 +32,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							q(36802, {	-- Abyssal Gulper Lunker
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 116818, 1 }, },	-- Abyssal Gulper Lunker
@@ -42,19 +42,19 @@ _.ExpansionFeatures =
 								["coord"] = { 38.0, 72.2, 590 },
 								["isDaily"] = true,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["g"] = {
 									i(112623),	-- Pack of Fishing Supplies
 								},
 							}),
 							q(36803, {	-- Blackwater Whiptail Lunker
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 116817, 1 }, },	-- Blackwater Whiptail Lunker
 							}),
 							q(36804, {	-- Blind Lake Lunker
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 116820, 1 }, },	-- Blind Lake Lunker
@@ -64,7 +64,7 @@ _.ExpansionFeatures =
 								["coord"] = { 38.0, 72.2, 590 },
 								["isDaily"] = true,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["g"] = {
 									i(112623),	-- Pack of Fishing Supplies
 								},
@@ -74,19 +74,19 @@ _.ExpansionFeatures =
 								["coord"] = { 38.0, 72.2, 590 },
 								["isDaily"] = true,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["g"] = {
 									i(112623),	-- Pack of Fishing Supplies
 								},
 							}),
 							q(36805, {	-- Fat Sleeper Lunker
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 116821, 1 }, },	-- Fat Sleeper Lunker
 							}),
 							q(39283, {	-- Felmouth Frenzy Lunker
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 127994, 1 }, },	-- Felmouth Frenzy Lunker
@@ -96,13 +96,13 @@ _.ExpansionFeatures =
 								["coord"] = { 38.0, 72.2, 590 },
 								["isDaily"] = true,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["g"] = {
 									i(112623),	-- Pack of Fishing Supplies
 								},
 							}),
 							q(36800, {	-- Fire Ammonite Lunker
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 116819, 1 }, },	-- Fire Ammonite Lunker
@@ -112,13 +112,13 @@ _.ExpansionFeatures =
 								["coord"] = { 38.0, 72.2, 590 },
 								["isDaily"] = true,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["g"] = {
 									i(112623),	-- Pack of Fishing Supplies
 								},
 							}),
 							q(36806, {	-- Jawless Skulker Lunker
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 116822, 1 }, },	-- Jawless Skulker Lunker
@@ -127,16 +127,16 @@ _.ExpansionFeatures =
 								["provider"] = { "n", 79892 },	-- Mak'jin
 								["coord"] = { 38.1, 72.2, 590 },
 								["races"] = HORDE_ONLY,
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 							}),
 							q(38406, {	-- Sea Scorpion Lunker
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 122696, 1 }, },	-- Sea Scorpion Lunker
 							}),
 						}),
-						n(-16, {	-- Rares
+						n(RARES, {
 							i(118380, {	-- Hightfish Cap
 								["collectible"] = false,
 								["u"] = 15,
@@ -160,7 +160,7 @@ _.ExpansionFeatures =
 								}),
 							}),
 						}),
-						n(-2,  {	-- Vendors
+						n(VENDORS, {
 							n(85984, {	--  Nat Pagle <Master Fisherman>
 								["races"] = HORDE_ONLY,
 								["g"] = {

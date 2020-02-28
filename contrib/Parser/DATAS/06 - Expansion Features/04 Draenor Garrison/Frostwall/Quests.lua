@@ -5,7 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(590, {	-- Frostwall
-			n(-17, { 	-- Quests
+			n(QUESTS, {
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					n(-152,  {	-- Garrison Campaign
@@ -561,7 +561,7 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 85882 },	-- Blixthraz Blastcharge
 						["sourceQuest"] = 36594,	-- "Spare" Parts
-						["requireSkill"] = 202,	-- Engineering
+						["requireSkill"] = ENGINEERING,
 						["g"] = {
 							i(111921),	-- Draenor Engineering
 							i(109258),	-- Engineering Works, lvl 1
@@ -678,7 +678,7 @@ _.ExpansionFeatures =
 					q(39175, {	-- Gems of the Apexis
 						["provider"] = { "n", 78466 },	-- Gazlowe
 						["races"] = HORDE_ONLY,
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 						["g"] = {
 							recipe(187639),	-- Immaculate Versatility Taladite
 						},
@@ -686,7 +686,7 @@ _.ExpansionFeatures =
 					q(36589, {	-- Heavy Arms
 						["races"] = HORDE_ONLY,
 						["provider"] = { "i", 116438 },	-- Burned-Out Hand Cannon
-						["requireSkill"] = 202,	-- Engineering
+						["requireSkill"] = ENGINEERING,
 					}),
 					q(38296, {	-- Herbs Galore
 						["providers"] = {
@@ -723,7 +723,7 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 84967 },	-- "Appraiser" Sazsel Stickyfingers
 						["sourceQuest"] = 36314,	-- The Intricate Pendant
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 					}),
 					q(36614, {	-- My Very Own Fortress
 						["coord"] = { 42.1, 55.5, 590 },	-- Rank 2
@@ -793,7 +793,7 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 85882 },	-- Blixthraz Blastcharge
 						["sourceQuest"] = 36589,	-- Heavy Arms
-						["requireSkill"] = 202,	-- Engineering
+						["requireSkill"] = ENGINEERING,
 					}),
 					q(38293, {	-- Sumptuous Fur
 						["providers"] = {
@@ -825,17 +825,17 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 81166 },	-- Refugee Lo'nash
 						["sourceQuest"] = 35058,	-- The Mysterious Flask
-						["requireSkill"] = 171,	-- Alchemy
+						["requireSkill"] = ALCHEMY,
 					}),
 					q(35058, {	-- The Mysterious Flask
 						["races"] = HORDE_ONLY,
 						["provider"] = { "i", 112566 },	-- Mysterious Flask
-						["requireSkill"] = 171,	-- Alchemy
+						["requireSkill"] = ALCHEMY,
 					}),
 					q(36314, {	-- The Intricate Pendant
 						["races"] = HORDE_ONLY,
 						["provider"] = { "i", 115287 },	-- Intricate Crimson Pendant
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 					}),
 					q(35557, {	-- The Secrets of Gorgrond
 						["races"] = HORDE_ONLY,

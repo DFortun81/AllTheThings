@@ -5,7 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(590, {	-- Frostwall
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(88779, {	-- Benjamin Brode <Traveling Merchant>
 					["races"] = HORDE_ONLY,
 					["g"] = {

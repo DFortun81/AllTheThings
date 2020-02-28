@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(118, {	-- The Forge (rank 1: 60, rank 2: 117, rank 3: 118)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(-2, {	-- Vendors
+						n(VENDORS, {
 							n(79867, {	-- Orgek Ironhand
 								["races"] = HORDE_ONLY,
 								["g"] = {

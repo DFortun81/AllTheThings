@@ -50,7 +50,7 @@ _.ExpansionFeatures =
 								crit(6),		-- Karak Killed
 							}),
 						}),
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(36913, {	-- Besting a Boar
 								["provider"] = { "n", 86973 },	-- Keegan Firebeard
 								["races"] = ALLIANCE_ONLY,

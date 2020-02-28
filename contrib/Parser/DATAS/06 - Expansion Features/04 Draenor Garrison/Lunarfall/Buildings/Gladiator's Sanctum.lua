@@ -50,7 +50,7 @@ _.ExpansionFeatures =
 								ach(9639),		-- Fight, Kill, Salute!
 							}),
 						}),
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(37082),	-- Call of the Gladiator
 							q(37083, {	-- Fight, Kill, Salute!
 								i(120142, {	-- Coliseum Champion's Spoils

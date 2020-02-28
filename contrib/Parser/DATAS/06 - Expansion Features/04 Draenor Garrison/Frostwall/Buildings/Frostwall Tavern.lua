@@ -289,7 +289,7 @@ _.ExpansionFeatures =
 							follower(263),	-- Zen'tika
 							follower(256),	-- Zen'tiki
 						}),
-						n(-17,  {	-- Quests
+						n(QUESTS, {
 							i(119036, {	-- Box of Storied Treasures [4]
 								["description"] = "Commonly rewarded from quests provided from the Inn.",
 								["g"] = {
@@ -1575,7 +1575,7 @@ _.ExpansionFeatures =
 								},
 							}),
 						}),
-						n(-2,   {	-- Vendors
+						n(VENDORS, {
 							n(87302, {	-- Murg <Cook>
 								["races"] = HORDE_ONLY,
 								["g"] = {

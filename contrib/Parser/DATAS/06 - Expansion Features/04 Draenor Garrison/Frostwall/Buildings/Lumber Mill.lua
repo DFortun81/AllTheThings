@@ -27,7 +27,7 @@ _.ExpansionFeatures =
 								},
 							}),
 						}),
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(36137, {	-- Easing into Lumberjacking
 								["provider"] = { "n", 84247 },	-- Lumber Lord Oktron <Work Orders>
 							}),

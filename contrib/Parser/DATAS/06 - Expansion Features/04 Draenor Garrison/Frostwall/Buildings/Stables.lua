@@ -50,7 +50,7 @@ _.ExpansionFeatures =
 								crit(6),		-- Karak Killed
 							}),
 						}),
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(36944, {	-- Besting a Boar
 								["provider"] = { "n", 86979 },	-- Tormak the Scarred
 								["races"] = HORDE_ONLY,

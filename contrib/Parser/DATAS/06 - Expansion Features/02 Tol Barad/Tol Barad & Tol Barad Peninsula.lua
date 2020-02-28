@@ -11,7 +11,7 @@ _.ExpansionFeatures =
 			filter(101, {	-- Battle Pet
 				p(410),	-- Wharf Rat
 			}),
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(28684, {	-- A Sticky Task
 					["lvl"] = 85,
 					["isDaily"] = true,
@@ -498,7 +498,7 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-38, {	-- Profession
-				prof(356, {	-- Fishing
+				prof(FISHING, {
 					o(207724, {	-- Shipwreck Debris
 						["g"] = {
 							i(22739, {	-- Tome of Polymorph: Turtle
@@ -516,12 +516,11 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
-				prof(186, {	-- Mining
+				prof(MINING, {
 					i(67282),	-- Pet Elementium Geode
 				}),
-				
 			}),
-			n(-2,  {	-- Vendor
+			n(VENDORS, {
 				n(48531, {	-- Pogg <Hellscream's Reach Quartermaster>
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -679,7 +678,7 @@ _.ExpansionFeatures =
 					},
 				}),
 			}),
-			n(0,   {	-- Zone Drop
+			n(ZONEDROPS, {
 				n(47676, {	-- Baradin Fox
 					i(64403),  -- Fox Kit Pet
 				}),
@@ -689,7 +688,7 @@ _.ExpansionFeatures =
 				["icon"] = "Interface\\Icons\\achievement_bg_winwsg",
 				["maps"] =  { 773 },	-- Tol Barad (used in "An Eye for a Scepter" Warlock artifact scenario
 				["g"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(28122, {	-- A Huge Problem
 							["lvl"] = 85,
 							["isDaily"] = true,
@@ -980,7 +979,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(-38, {	-- Profession
-						prof(186, {	-- Mining
+						prof(MINING, {
 							i(67282),	-- Pet Elementium Geode
 						}),
 					}),

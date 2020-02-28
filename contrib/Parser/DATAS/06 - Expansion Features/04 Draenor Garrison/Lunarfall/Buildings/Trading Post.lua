@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(145, {	-- Trading Post (rank 1: 111, rank 2: 144, rank 3: 145)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(36948, {	-- Auctioning for Parts
 								["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
 								["provider"] = { "n", 87206 },	-- Ancient Trading Mechanism
@@ -66,7 +66,7 @@ _.ExpansionFeatures =
 								["races"] = ALLIANCE_ONLY,
 							}),
 						}),
-						n(-2,  {	-- Vendors
+						n(VENDORS, {
 							n(85427, { 	-- Maaria <Sha'tari Defense Quartermaster>
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {

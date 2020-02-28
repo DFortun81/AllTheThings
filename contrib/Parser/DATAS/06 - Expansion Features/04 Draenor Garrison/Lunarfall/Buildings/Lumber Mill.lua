@@ -27,7 +27,7 @@ _.ExpansionFeatures =
 								},
 							}),
 						}),
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(36189, {	-- Easing into Lumberjacking
 								["provider"] = { "n", 84248 },	-- Justin Timberlord <Work Orders>
 								["races"] = ALLIANCE_ONLY,

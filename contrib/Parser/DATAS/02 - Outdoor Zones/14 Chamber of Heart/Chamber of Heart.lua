@@ -79,7 +79,7 @@ _.Zones =
 							["cost"] = { { "i", 171176, 200 }, },	-- 200x Shred of Insanity
 						}),
 					}),
-					n(-17,  {	-- Quests
+					n(QUESTS, {
 						q(52428, {	-- Infusing the Heart
 							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
 							["coord"] = { 50.3, 54.4, 1021 },
@@ -767,7 +767,7 @@ _.Zones =
 							["description"] = "Automatically granted when you get your first corrupted item.",
 						}),
 					}),
-					n(-2,   {	-- Vendors
+					n(VENDORS, {
 						["lvl"] = 120,
 						["g"] = {
 							n(130216, {	-- Magni Bronzebeard

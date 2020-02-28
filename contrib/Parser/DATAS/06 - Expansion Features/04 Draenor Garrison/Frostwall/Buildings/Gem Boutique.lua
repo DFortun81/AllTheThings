@@ -9,13 +9,13 @@ _.ExpansionFeatures =
 				garrisonBuilding(132, {	-- Gem Boutique (rank 1: 96, rank 2: 131, rank 3: 132)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(37573, {	-- Your First Jewelcrafting Work Order
 								["races"] = HORDE_ONLY,
 								["provider"] = { "n", 79832 },	-- Dorogarr
 							}),
 						}),
-						n(-2,  {	-- Vendors
+						n(VENDORS, {
 							n(79832, {	-- Dorogarr <Jewelcrafter>
 								["races"] = HORDE_ONLY,
 								["g"] = {

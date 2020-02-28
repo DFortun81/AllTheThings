@@ -36,7 +36,7 @@ _.ExpansionFeatures =
 								crit(11),	-- Blast Furnace
 							}),
 						}),
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(39676, {	-- A True Naval Commander
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 39675,	-- Equipping Our Fleet

@@ -9,9 +9,9 @@ _.ExpansionFeatures =
 				garrisonBuilding(124,  {	-- Engineering Works (rank 1: 91, rank 2: 123, rank 3: 124)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 						}),
-						n(-2, {	-- Vendors
+						n(VENDORS, {
 							n(88607, {	-- Engineering Follower <Engineering Entrepreneur>
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {

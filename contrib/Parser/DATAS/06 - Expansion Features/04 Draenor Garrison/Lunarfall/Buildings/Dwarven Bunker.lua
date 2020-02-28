@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(10,  {	-- War Mill (rank 1: 8, rank 2: 9, rank 3: 10)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(37092, {	-- Scraps of Iron
 								["provider"] = { "n", 77377 },	-- Kristen Stoneforge
 								["races"] = ALLIANCE_ONLY,
@@ -18,7 +18,7 @@ _.ExpansionFeatures =
 								},
 							}),
 						}),
-						n(-2,  {	-- Vendors
+						n(VENDORS, {
 							n(77377, {	-- Kristen Stoneforge <Quartermaster>
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {

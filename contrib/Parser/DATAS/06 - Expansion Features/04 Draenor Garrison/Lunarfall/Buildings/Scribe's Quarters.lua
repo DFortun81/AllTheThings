@@ -9,13 +9,13 @@ _.ExpansionFeatures =
 				garrisonBuilding(130, {	-- Scribe's quarters (rank 1: 95, rank 2: 129, rank 3: 130)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(36647, {	-- Your First Inscription Work Order
 								["provider"] = { "n", 77372 },	-- Eric Broadoak
 								["races"] = ALLIANCE_ONLY
 							}),
 						}),
-						n(-2,  {	-- Vendors
+						n(VENDORS, {
 							n(77372, { 	-- Eric Broadoak <Scribe>
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {

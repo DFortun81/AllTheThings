@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(118, {	-- The Forge (rank 1: 60, rank 2: 117, rank 3: 118)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-2, {	-- Vendors
+						n(VENDORS, {
 							n(77359, {	-- Auria Irondreamer <Blacksmith>
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {

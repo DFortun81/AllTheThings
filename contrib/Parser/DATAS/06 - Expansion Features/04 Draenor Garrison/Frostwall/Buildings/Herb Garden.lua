@@ -17,7 +17,7 @@ _.ExpansionFeatures =
 								},
 							}),
 						}),
-						n(-2, {	-- Vendors
+						n(VENDORS, {
 							n(81981, {	-- Tarnon
 								["races"] = HORDE_ONLY,
 								["g"] = {

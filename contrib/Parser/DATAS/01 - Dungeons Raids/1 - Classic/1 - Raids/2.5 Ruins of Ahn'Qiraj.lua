@@ -13,8 +13,7 @@ _.Instances = { tier(1, {	-- Classic
 		},
 		["coord"] = { 58.93, 14.26, 327 },	-- Ruins of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
 		["groups"] = {
-			{	-- Zone Drops
-				["npcID"] = 0,	-- Zone Drops
+			n(ZONEDROPS, {
 				["g"] = {
 					{	-- Antenna of Invigoration
 						["itemID"] = 21801,	-- Antenna of Invigoration
@@ -164,7 +163,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					},
 				},
-			},
+			}),
 			n(COMMON_BOSS_DROPS, {
 				["groups"] = { -- The class items are grey, adding them for classic in summer
 					-- Enchants
