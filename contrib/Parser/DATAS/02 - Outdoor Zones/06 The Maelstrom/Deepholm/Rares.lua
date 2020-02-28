@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(948, {	-- The Maelstrom
 		m(207, {	-- Deepholm
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(50062, {	-- Aeonaxx <Mate of Aeosera>
 					["g"] = {
 						i(63042),	-- Reins of the Phosphorescent Stone Drake (MOUNT!)

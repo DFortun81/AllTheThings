@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(948, {	-- The Maelstrom
 		m(194, {	-- Kezan
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(14125, {	-- 447
 					["coord"] = { 59.6, 77.0, 194 },
 					["provider"] = { "n", 34668 },	-- Sassy Hardwrench

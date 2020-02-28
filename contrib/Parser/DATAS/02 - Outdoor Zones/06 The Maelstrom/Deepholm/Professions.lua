@@ -6,7 +6,7 @@ _.Zones =
 	m(948, {	-- The Maelstrom
 		m(207, {	-- Deepholm
 			n(-38, {	-- Profession
-				prof(164, {	-- Blacksmith
+				prof(BLACKSMITHING, {
 					q(50272, {	-- An Ear to the Ground
 						["provider"] = { "n", 133489 },	-- Ormhun Stonehammer
 						["lvl"] = 120,
@@ -41,7 +41,7 @@ _.Zones =
 						["sourceQuest"] = 50288,	-- Therazane's Choice
 					}),
 				}),
-				prof(356, {	-- Fishing
+				prof(FISHING, {
 					o(202778, {	-- Albino Cavefish School
 						i(22739, {	-- Tome of Polymorph: Turtle
 							["spellID"] = 28271,	-- Polymorph(Turtle)
@@ -49,7 +49,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(186, {	-- Mining
+				prof(MINING, {
 					["description"] = "|cff66ccffElementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require Cataclysm Mining.|r",
 					["g"] = {
 						i(67282), 	-- Pet Elementium Geode

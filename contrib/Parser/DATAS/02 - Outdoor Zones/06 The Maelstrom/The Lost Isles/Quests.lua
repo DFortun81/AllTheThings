@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(948, {	-- The Maelstrom
 		m(174, {	-- The Lost Isles
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(24817, {	-- A Goblin in Shark's Clothing
 					["coord"] = { 45.2, 65.5, 174 },
 					["provider"] = { "n", 38124 },	-- Assistant Greely
