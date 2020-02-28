@@ -20,7 +20,7 @@ _.Zones =
 						["coord"] = { 44.2, 33.9, 624 },
 					}),
 				}),
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(36709, {	-- Burning Beauty
 						["provider"] = { "n", 86312 },	-- Lieutenant Kragil
 						["coord"] = { 44.1, 45.4, 624 },
@@ -168,7 +168,7 @@ _.Zones =
 						["sourceQuest"] = 36706,	-- Ashran Appearance
 					}),
 				}),
-				n(-2, {	-- Vendors
+				n(VENDORS, {
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						n(86036, {	-- Beska Redtusk <Frostwolf Orcs Quartermaster>

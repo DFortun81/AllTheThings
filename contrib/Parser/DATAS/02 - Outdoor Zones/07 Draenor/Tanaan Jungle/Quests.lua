@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(534, {	-- Tanaan Jungle
-			n(-17, { 	-- Quests
+			n(QUESTS, {
 --[[
 				q(40235),	-- Abrogator Arbitrator
 				q(38462),	-- Breaching the Barrier

@@ -5,14 +5,14 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(539, {	-- Shadowmoon Valley (Draenor)
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(36176, {	-- A Call for Huntsman
 					["providers"] = {
 						{ "i", 114877 },	-- Dirty Note
 						{ "n", 75043 },		-- Karnoth
 					},
 					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = 165,	-- Leatherworking
+					["requireSkill"] = LEATHERWORKING,
 				}),
 				q(33795, {	-- Across the Stars
 					["sourceQuests"] = { 34043 },	-- Darkest Night
@@ -50,7 +50,7 @@ _.Zones =
 				}),
 				q(36202, {	-- Anglin' In Our Garrison
 					["sourceQuests"] = { 36201 },	-- Proving Your Worth
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 					["coord"] = { 26.9, 6.6, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 84372 },	-- Madari
@@ -232,7 +232,7 @@ _.Zones =
 					["provider"] = { "n", 84385 },	-- Fanara
 					["coord"] = { 44.2, 40.9, 539 },
 					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = 165,	-- Leatherworking
+					["requireSkill"] = LEATHERWORKING,
 					["g"] = {
 						i(111818),	-- The Tannery, Level 1
 						i(115358),	-- Draenor Leatherworking
@@ -246,7 +246,7 @@ _.Zones =
 				}),
 				q(36311, {	-- Father and Son
 					["sourceQuests"] = { 36309 },	-- The Strength of Iron
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80827 },	-- Haephest
 					["g"] = {
@@ -320,7 +320,7 @@ _.Zones =
 					["coord"] = { 44.2, 40.9, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 36176,	-- A Call for Huntsman
-					["requireSkill"] = 165,	-- Leatherworking
+					["requireSkill"] = LEATHERWORKING,
 				}),
 				q(37332, {	-- Fungal Bundle
 					["providers"] = {
@@ -429,7 +429,7 @@ _.Zones =
 				}),
 				q(36199, {	-- Moonshell Claws
 					["sourceQuests"] = { 34194 },	-- Looking For Help
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 26.9, 6.6, 539 },
 					["provider"] = { "n", 84372 },	-- Madari
@@ -465,7 +465,7 @@ _.Zones =
 				}),
 				q(36201, {	-- Proving Your Worth
 					["sourceQuests"] = { 36199 },	-- Moonshell Claws
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 26.9, 6.6, 539 },
 					["provider"] = { "n", 84372 },	-- Madari
@@ -486,7 +486,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 84830 },	-- Artificer Baleera
 					["sourceQuest"] = 36408,	-- A Power Lost
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 				}),
 				q(34996, {	-- Rotting Riverbeasts
 					["coord"] = { 52.6, 59.6, 539 },
@@ -547,7 +547,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 82496 },	-- Telos
 					["sourceQuest"] = 35344,	-- The Missing Father
-					["requireSkill"] = 171,	-- Alchemy
+					["requireSkill"] = ALCHEMY,
 					["g"] = {
 						i(109558),	-- A Treatise on the Alchemy of Draenor
 						i(111812),	-- Alchemy Lab, lvl 1
@@ -567,7 +567,7 @@ _.Zones =
 				}),
 				q(36240, {	-- Slow and Steady
 					["sourceQuests"] = { 36239 },	-- A Mysterious Satchel
-					["requireSkill"] = 773,	-- Inscription
+					["requireSkill"] = INSCRIPTION,
 					["provider"] = { "n", 84724 },	-- Sha'la
 					["coord"] = { 57.8, 21.6, 539 },
 					["races"] = ALLIANCE_ONLY,
@@ -582,7 +582,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 84825 },	-- Goggles
 					["sourceQuest"] = 36286,	-- Transponder 047-B
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["g"] = {
 						i(111921),	-- Draenor Engineering
 						i(109258),	-- Engineering Works, lvl 1
@@ -708,11 +708,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 82497 },	-- Abatha
 					["sourceQuest"] = 35343,	-- The Young Alchemist
-					["requireSkill"] = 171,	-- Alchemy
+					["requireSkill"] = ALCHEMY,
 				}),
 				q(36241, {	-- The Power of Preservation
 					["sourceQuests"] = { 36240 },	-- Slow and Steady
-					["requireSkill"] = 773,	-- Inscription
+					["requireSkill"] = INSCRIPTION,
 					["provider"] = { "n", 84724 },	-- Sha'la
 					["coord"] = { 57.8, 21.6, 539 },
 					["races"] = ALLIANCE_ONLY,
@@ -776,7 +776,7 @@ _.Zones =
 					["provider"] = { "n", 82537 },	-- Rangari Chel
 				}),
 				q(36309, {	-- The Strength of Iron
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["description"] = "This can be looted from almost any mob in Shadowmoon Valley; however, Karnoth has a guaranteed drop for the item.",
 					["itemID"] = 115343,	-- Haephest's Satchel
 					["races"] = ALLIANCE_ONLY,
@@ -847,7 +847,7 @@ _.Zones =
 				q(36286, {	-- Transponder 047-B
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 115278 },	-- Gnomish Location Transponder
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 				}),
 				q(35552, {	-- Trust No One
 					["sourceQuests"] = { 34787 },	-- Exarch Maladaar

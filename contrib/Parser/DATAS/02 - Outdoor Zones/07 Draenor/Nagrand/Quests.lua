@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(572, { 	-- Draenor
 		m(550, {	-- Nagrand (Draenor)
-			n(-17, { 	-- Quests
+			n(QUESTS, {
 				q(34719, {	-- ... and My Hammer
 					["provider"] = { "n", 79743 },	-- Vindicator Mo'mor
 					["coord"] = { 66.7, 68.6, 550 },

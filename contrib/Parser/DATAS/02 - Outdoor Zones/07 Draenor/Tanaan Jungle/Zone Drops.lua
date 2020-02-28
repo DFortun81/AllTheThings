@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(534, {	-- Tanaan Jungle
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				["g"] = {
 					i(126950, {	-- Equipment Blueprint: Bilge Pump
 						["questID"] = 38932,	-- Equipment Blueprint: Bilge Pump

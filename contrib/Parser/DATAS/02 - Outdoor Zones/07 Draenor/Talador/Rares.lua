@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(535, {	-- Talador
-			n(-16, {	-- Rares
+			n(RARES, {
 				-- Coords have been confirmed on rares except for Silthide and some noted rares on longer spawn timers.
 				n(88043, {	-- Avatar of Socrethar
 					["questID"] = 37338,

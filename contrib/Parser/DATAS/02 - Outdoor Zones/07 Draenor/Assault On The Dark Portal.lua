@@ -20,7 +20,7 @@ _.Zones =
 						["sourceQuest"] = 35884,
 					}),
 				}),
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(34478, {	-- A Potential Ally
 						["hordeQuestID"] = 34427,
 						["provider"] = { "n", 78560 },	-- Archmage Khadgar

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(542, {	-- Spires of Arak
-			n(-16, {	-- Rares
+			n(RARES, {
 				-- Coords have been confirmed on rares except for Edge of Reality and some noted rares on longer spawn timers.
 				n(84887, {	-- Betsi Boombasket
 					["questID"] = 36291,

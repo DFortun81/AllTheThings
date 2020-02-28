@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(535, {	-- Talador
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(84212, {	-- Kazbala
 					["description"] = "This vendor is only available until you reach level 100. Items are also available from vendors in Stormwind, Orgrimmar, and Dalaran.|r",
 					["coord"] = { 45.2, 38.8, 535 },
