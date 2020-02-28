@@ -1,4 +1,4 @@
-profession(165, {    -- Leatherworking
+profession(LEATHERWORKING, {
 	filter(200, {
 		{
 			["name"] = "Pandaria Patterns",

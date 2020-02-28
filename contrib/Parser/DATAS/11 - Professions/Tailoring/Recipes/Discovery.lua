@@ -1,4 +1,4 @@
-profession(197, {    -- Tailoring
+profession(TAILORING, {
 	filter(200, {
 		{
 			["categoryID"] = 950,  -- Pandaria Patterns

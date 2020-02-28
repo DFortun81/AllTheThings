@@ -1,5 +1,5 @@
 -- Mining - Skill ID 186 / Spell ID 2575
-profession(186, {	-- Mining
+profession(MINING, {
 	n(-26, {	-- Drop
 		i(111349, {		-- A Treatise on Mining in Draenor
 			["collectible"] = false,
@@ -275,7 +275,7 @@ profession(186, {	-- Mining
 		i(67282),	-- Elementium Geode
 		i(118919),	-- Red Goren Egg
 	}),
-	n(-17,  {	-- Quests
+	n(QUESTS, {
 		{
 			["questID"] = 38807,	-- Infernal Brimstone Analysis
 			["sourceQuest"] = 38806,	-- Source Quest: Infernal Brimstone Sample (Quest)

@@ -1,4 +1,4 @@
-profession(755, {    -- Jewelcrafting
+profession(JEWELCRAFTING, {
 	filter(200, {
 		{
 			["categoryID"] = 805,  -- Zandalari Designs

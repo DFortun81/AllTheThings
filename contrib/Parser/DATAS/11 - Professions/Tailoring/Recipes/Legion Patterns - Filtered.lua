@@ -1,4 +1,4 @@
-profession(197, {	-- Tailoring
+profession(TAILORING, {
 	filter(200, {	-- Recipes
 		{
 			["categoryID"] = 432--[[Training]],
