@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(630, {	-- Azsuna
-			n(-17, { 	-- Quests
+			n(QUESTS, {
 				q(38857, {	-- A Favor for Mr. Shackle
 					["coord"] = { 50.2, 61.0, 630 },
 					["provider"] = { "n", 88863 },	-- Seska Seafang

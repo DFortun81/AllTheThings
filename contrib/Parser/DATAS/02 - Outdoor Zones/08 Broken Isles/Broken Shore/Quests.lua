@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(646, {	-- Broken Shore
-			n(-17, {	-- Quests
+			n(QUESTS, {
 			--[[	putting this in achievements file, commenting out until quests have been confirmed and moved
 				ach(11546, {	-- Breaching the Tomb
 					crit(3, {	-- Begin Construction
@@ -148,7 +148,7 @@ _.Zones =
 					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 					["repeatable"] = true,
 					["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 				}),
 				q(46245, {	-- Begin Construction
 					["sourceQuests"] = { 46286 },	-- Legionfall Supplies
@@ -274,7 +274,7 @@ _.Zones =
 					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 					["repeatable"] = true,
 					["sourceQuest"] = 46678,	-- The Legend of the Threads
-					["requireSkill"] = 197,	-- Tailoring
+					["requireSkill"] = TAILORING,
 				}),
 				q(46804, {	-- Fashion History and a Philosophy of Style
 					["coord"] = { 41.1, 59.3, 646 },
@@ -295,7 +295,7 @@ _.Zones =
 					["coord"] = { 41.1, 59.3, 646 },
 					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 					["repeatable"] = true,
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["sourceQuests"] = {
 						46700,	-- Armor of the Ancients
 						46698,	-- The Dragonhunter
@@ -407,7 +407,7 @@ _.Zones =
 						46679,	-- The Thread of Shadow
 						46681, 	-- The Thread of Souls
 					},
-					["requireSkill"] = 197,	-- Tailoring
+					["requireSkill"] = TAILORING,
 				}),
 				q(46246, {	-- Strike Them Down
 					["sourceQuests"] = { 46249 },	-- Championing Our Cause
@@ -461,21 +461,21 @@ _.Zones =
 					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 					["repeatable"] = true,
 					["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 				}),
 				q(46697, {	-- The Godfighter
 					["coord"] = { 41.1, 59.3, 646 },
 					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 					["repeatable"] = true,
 					["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 				}),
 				q(46699, {	-- The Hellslayer
 					["coord"] = { 41.1, 59.3, 646 },
 					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 					["repeatable"] = true,
 					["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 				}),
 				q(46282, {	-- The King's Path
 					["sourceQuests"] = { 47112 },	-- Lost Souls
@@ -495,7 +495,7 @@ _.Zones =
 					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 					["repeatable"] = true,
 					["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
-					["requireSkill"] = 197,	-- Tailoring
+					["requireSkill"] = TAILORING,
 				}),
 				q(46666, {	-- The Motherlode
 					["sourceQuests"] = { 46511 },	-- We're Treasure Hunters
@@ -517,21 +517,21 @@ _.Zones =
 					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 					["repeatable"] = true,
 					["sourceQuest"] = 46678,	-- The Legend of the Threads
-					["requireSkill"] = 197,	-- Tailoring
+					["requireSkill"] = TAILORING,
 				}),
 				q(46681, {	-- The Thread of Souls
 					["coord"] = { 41.2, 59.4, 646 },
 					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 					["repeatable"] = true,
 					["sourceQuest"] = 46678,	-- The Legend of the Threads
-					["requireSkill"] = 197,	-- Tailoring
+					["requireSkill"] = TAILORING,
 				}),
 				q(46680, {	-- The Thread of Starlight
 					["coord"] = { 41.2, 59.4, 646 },
 					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 					["repeatable"] = true,
 					["sourceQuest"] = 46678,	-- The Legend of the Threads
-					["requireSkill"] = 197,	-- Tailoring
+					["requireSkill"] = TAILORING,
 				}),
 				q(46509, {	-- Tomb Raidering
 					["sourceQuests"] = { 46501 },	-- Grave Robbin'

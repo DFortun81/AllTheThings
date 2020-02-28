@@ -6,13 +6,13 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(630, {	-- Azsuna
 			n(-38, { 	-- Profession
-				prof(171, {	-- Alchemy
+				prof(ALCHEMY, {
 					q(39390, {	-- A Mysterious Text
 						["provider"] = { "o", 243392 },	-- Alchemy Book
 						["sourceQuests"] = { 39566 },	-- The Search for Knowledge
 					}),
 				}),
-				prof(794, {	-- Archaeology
+				prof(ARCHAEOLOGY, {
 					q(41162, {	-- And Into the Fel Fire
 						["isWeekly"] = true,
 					}),
@@ -32,7 +32,7 @@ _.Zones =
 						["isWeekly"] = true,
 					}),
 				}),
-				prof(333, {	-- Enchanting
+				prof(ENCHANTING, {
 					q(40169),	-- Crossroads Rendezvous
 					q(39923, {	-- Down to the Core
 						["provider"] = { "n", 99420 },	-- Kharmeera
@@ -79,11 +79,11 @@ _.Zones =
 						},
 					}),
 				}),
-				prof(202, {	-- Engineering
+				prof(ENGINEERING, {
 					q(40856, {	-- It'll Cost You
 						["sourceQuest"] = 40855,	-- Our Man in Azsuna
 						["provider"] = { "n", 102195 },	-- Fargo Flintlocke
-						["requireSkill"] = 202,
+						["requireSkill"] = ENGINEERING,
 					}),
 					q(40876, {	-- 'Locke, Stock and Barrel
 						["provider"] = { "n", 102196 },	-- Fargo Flintlocke
@@ -99,7 +99,7 @@ _.Zones =
 					q(40859, {	-- The Latest Fashion: Headguns!
 						["sourceQuest"] = 40856,	-- It'll Cost You
 						["provider"] = { "n", 102195 },	-- Fargo Flintlocke
-						["requireSkill"] = 202,
+						["requireSkill"] = ENGINEERING,
 						["g"] = {
 							recipe(198939),	-- Schematic: Blink-Trigger Headgun
 							recipe(198965),	-- Schematic: Tactical Headgun
@@ -110,13 +110,13 @@ _.Zones =
 					q(40858, {	-- The Missing Pieces
 						["sourceQuest"] = 40855,	-- Our Man in Azsuna
 						["provider"] = { "n", 102195 },	-- Fargo Flintlocke
-						["requireSkill"] = 202,
+						["requireSkill"] = ENGINEERING,
 						["g"] = {
 							recipe(198976),	-- Schematic: Auto-Hammer [Rank 1]
 						},
 					}),
 				}),
-				prof(356, {	-- Fishing
+				prof(FISHING, {
 					ach(10596, {	-- Bigger Fish to Fry
 						n(-218, {		-- Coastal
 							i(133722, {		-- Axefish Lure
@@ -280,7 +280,7 @@ _.Zones =
 								}),
 							},
 							["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF43.2, 40.6|r north of Illidari Stand.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-							["requireSkill"] = 356,
+							["requireSkill"] = FISHING,
 							["creatureID"] = 120266
 						}),
 					}),
@@ -299,7 +299,7 @@ _.Zones =
 						["description"] = "I got it after about ~20-30 min of fishing from a Cursed Queenfish pool in the lake near Narthalas Academy. No legendary pole equipped or any special lures.",
 					}),
 				}),
-				prof(182, {	-- Herbalism
+				prof(HERBALISM, {
 					q(40013, {	-- Aethril Sample
 						["itemID"] = 129117,	-- Aethril Sample
 					}),
@@ -317,7 +317,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(773, {	-- Inscription
+				prof(INSCRIPTION, {
 					q(39938, {	-- Containing the Demon Within
 						["g"] = {
 							i(137743),	-- Technique: Glyph of Fallow Wings
@@ -368,12 +368,12 @@ _.Zones =
 						},
 					}),
 				}),
-				prof(755, {	-- Jewelcrafting
+				prof(JEWELCRAFTING, {
 				--	most of these quests need SQs added/to be verified.  data was taken from wowhead after they were reported as missing on discord.
 					q(40528, {	-- Finishing Touches (Azsunite Loop)
 						["coord"] = { 46.6, 41.4, 630 },
 						["description"] = "You can pick one recipe to learn first, and then purchase the other two recipes from Jabrul.",
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 						["sourceQuests"] = {
 							42214,	-- Knocked for a Loop
 							40525,	-- Getting the Band Back Together
@@ -385,7 +385,7 @@ _.Zones =
 					q(40526, {	-- Finishing Touches (Skystone Loop)
 						["coord"] = { 46.6, 41.4, 630 },
 						["description"] = "You can pick one recipe to learn first, and then purchase the other two recipes from Jabrul.",
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 						["sourceQuests"] = {
 							42214,	-- Knocked for a Loop
 							40525,	-- Getting the Band Back Together
@@ -397,7 +397,7 @@ _.Zones =
 					q(40527, {	-- Finishing Touches (Deep Amber Loop)
 						["coord"] = { 46.6, 41.4, 630 },
 						["description"] = "You can pick one recipe to learn first, and then purchase the other two recipes from Jabrul.",
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 						["sourceQuests"] = {
 							42214,	-- Knocked for a Loop
 							40525,	-- Getting the Band Back Together
@@ -410,21 +410,21 @@ _.Zones =
 						["coord"] = { 46.6, 41.4, 630 },
 						["provider"] = { "n", 100538 },	-- Timothy Jones
 						["sourceQuest"] = 40524,	-- A Familiar Ring to It
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 					}),
 					q(42214, {	-- Knocked for a Loop
 						["coord"] = { 46.6, 41.4, 630 },
 						["provider"] = { "n", 100538 },	-- Timothy Jones
 						["sourceQuest"] = 40524,	-- A Familiar Ring to It
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 					}),
 					q(40547, {	-- To Dalaran, With Love
 						["sourceQuests"] = { 40556 },	-- Jabrul Needs You
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 						["provider"] = { "n", 100521 },	-- Jabrul
 					}),
 				}),
-				prof(165, {	-- Leatherworking
+				prof(LEATHERWORKING, {
 					q(40195),	-- A Daring Rescue
 					q(40188, {	-- Best Served Cold
 						["g"] = {
@@ -466,7 +466,7 @@ _.Zones =
 						["provider"] = { "n", 99689 },	-- Taldranis
 					}),
 					q(40210, {	-- Time Well Spent
-						["requireSkill"] = 165,	-- Leatherworking
+						["requireSkill"] = LEATHERWORKING,
 						["sourceQuests"] = {
 							40203,	-- Strength of the Past
 							40204,	-- Evolution of the Past
@@ -478,10 +478,10 @@ _.Zones =
 						["provider"] = { "n", 98964 },	-- Celea
 					}),
 				}),
-				prof(393, {	-- Skinning
+				prof(SKINNING, {
 					q(40145, {	-- Under Down
 						["sourceQuests"] = { 40144 },	-- Glielle
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 						["coord"] = { 47.0, 45.2, 630 },
 						["provider"] = { "n", 98791 },	-- Glielle
 						["g"] = {
@@ -490,21 +490,21 @@ _.Zones =
 					}),
 					q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
 						["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 						["description"] = "The item that starts this quest can be skinned from any scaled creature found across the Broken Isles.",
 						["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
 					}),
 				}),
-				prof(197, {	-- Tailoring
+				prof(TAILORING, {
 				--	not sure if these quests actually start in azsuna.  may start in dalaran, or both zones.
 					q(38959, {	-- Left Behind
 						["sourceQuests"] = { 38957 },	-- Taking Inspiration
-						["requireSkill"] = 197,	-- Tailoring
+						["requireSkill"] = TAILORING,
 						["provider"] = { "n", 93967 },	-- Lyndras
 					}),
 					q(38960, {	-- Lining Them Up
 						["sourceQuests"] = { 38957 },	-- Taking Inspiration
-						["requireSkill"] = 197,	-- Tailoring
+						["requireSkill"] = TAILORING,
 						["provider"] = { "n", 93967 },	-- Lyndras
 					}),
 				}),

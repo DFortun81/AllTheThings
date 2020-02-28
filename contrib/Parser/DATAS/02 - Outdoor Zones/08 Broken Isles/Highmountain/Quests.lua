@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(650, {	-- Highmountain
-			n(-17,  {	-- Quests	
+			n(QUESTS, {	
 				q(40216, {	-- A Hunter at Heart
 					["sourceQuests"] = {
 						40170,	-- Amateur Hour

@@ -6,24 +6,24 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(650, {	-- Highmountain
 			n(-38,  {	-- Profession
-				prof(171, {	-- Alchemy
+				prof(ALCHEMY, {
 					q(39334, {	-- Thanks for Flasking
 						["sourceQuests"] = { 39430 },	-- Flasking for a Favor
 						["provider"] = { "n", 92242 },	-- Barm Stonebreaker
 					}),
 				}),
-				prof(794, {	-- Archaeology
+				prof(ARCHAEOLOGY, {
 					i(137867),	-- Design: Shadowruby Band (Rank 3)
 					q(41190, {	-- Crystal Eyes
 						["sourceQuests"] = { 41189 },	-- A New Lead
-						["requireSkill"] = 794,	-- Archaeology
+						["requireSkill"] = ARCHAEOLOGY,
 						["provider"] = { "n", 103485 },	-- Lessah Moonwater
 						["isWeekly"] = true,
 						["coord"] = { 46.9, 60.2, 750 },	-- Thunder Totem
 					}),
 					q(41191, {	-- Drogbar Deception
 						["sourceQuests"] = { 41190 },	-- Crystal Eyes
-						["requireSkill"] = 794,	-- Archaeology
+						["requireSkill"] = ARCHAEOLOGY,
 						["provider"] = { "n", 103485 },	-- Lessah Moonwater
 						["isWeekly"] = true,
 						["coord"] = { 46.9, 60.2, 750 },	-- Thunder Totem
@@ -32,7 +32,7 @@ _.Zones =
 						},
 					}),
 				}),
-				prof(164, {	-- Blacksmithing
+				prof(BLACKSMITHING, {
 					q(38514, {	-- You Are Not Worthy
 						["sourceQuests"] = { 38513 },	-- The Highmountain Smiths
 						["provider"] = { "n", 92242 },	-- Barm Stonebreaker
@@ -138,12 +138,12 @@ _.Zones =
 						},
 					}),
 				}),
-				prof(185, {	-- Cooking
+				prof(COOKING, {
 					i(133820, {	-- Recipe: Drogbar-Style Salmon
 						["description"] = "Can drop from any Drogbar.",
 					}),
 				}),
-				prof(333, {	-- Enchanting
+				prof(ENCHANTING, {
 					q(39883, {	-- Cloaked in Tradition
 						["sourceQuests"] = {
 							39879,	-- Strong Like the Earth
@@ -157,7 +157,7 @@ _.Zones =
 						},
 					}),
 				}),
-				prof(356, {	-- Fishing
+				prof(FISHING, {
 					n(-10067, { 	-- Artifact
 						["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 						["lvl"] = 110,
@@ -306,15 +306,15 @@ _.Zones =
 								}),
 							},
 							["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF32.4, 41.8|r at the bottom of Thunder Totem in the boat on the water.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-							["requireSkill"] = 356,
+							["requireSkill"] = FISHING,
 							["creatureID"] = 120457
 						}),
 					}),
 					i(137695), 	-- Schematic: Reaves Module: Wormhole Generator Mode
 				}),
-				prof(182, {	-- Herbalism
+				prof(HERBALISM, {
 					q(40040, {	-- Felwort Sample
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["itemID"] = 129122,	-- Felwort Sample
 						["groups"] = {
 							recipe(193307),	-- Felwort [Rank 1]
@@ -322,7 +322,7 @@ _.Zones =
 					}),
 					q(40024, {	-- Foxflower Sample
 						["itemID"] = 129119,	-- Foxflower Sample
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["groups"] = {
 							recipe(193298),	-- Foxflower [Rank 1]
 						},
@@ -330,7 +330,7 @@ _.Zones =
 					q(40028, {	-- The Pied Picker
 						["itemID"] = 129278,	-- Foxflower Scent Gland
 						["sourceQuests"] = { 40026 },	-- Chase the Culprit
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["groups"] = {
 							recipe(193300),	-- Foxflower [Rank 3]
 						},
@@ -338,10 +338,10 @@ _.Zones =
 					q(40025, {	-- Teeeny Bite Marks
 						["itemID"] = 129137,	-- Nibbled Foxflower Stem
 						["sourceQuests"] = { 40024 },	-- Foxflower Sample
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 				}),
-				prof(165, {	-- Leatherworking
+				prof(LEATHERWORKING, {
 					q(40192, {	-- Claw of the Land
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 						["groups"] = {
@@ -374,11 +374,11 @@ _.Zones =
 						},
 					}),
 					q(40415, {	-- Well Spent Time
-						["requireSkill"] = 165,	-- Leatherworking
+						["requireSkill"] = LEATHERWORKING,
 						["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 					}),
 				}),
-				prof(393, {	-- Skinning
+				prof(SKINNING, {
 					q(40134, {	-- Highmountain Hides
 						["groups"] = {
 							i(130064, {	-- Deadeye Monocle
@@ -387,7 +387,7 @@ _.Zones =
 						},
 					}),
 					i(139893, {	-- Skinning Technique: Unbroken Tooth
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 						["crs"] = { 97449 },	-- Bristlemaul
 						["groups"] = {
 							recipe(194170),	-- Unbroken Tooth
@@ -395,12 +395,12 @@ _.Zones =
 					}),
 					q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
 						["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 						["description"] = "The item that starts this quest can be skinned from any scaled creature found across the Broken Isles.",
 						["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
 					}),
 				}),
-				prof(197, {	-- Tailoring
+				prof(TAILORING, {
 					i(137681, {	-- Recipe: Bloodtotem Saddle Blanket
 						["description"] = "Can drop from any Feltotem.",
 					}),

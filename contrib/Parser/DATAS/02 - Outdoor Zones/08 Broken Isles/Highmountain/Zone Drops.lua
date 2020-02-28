@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(650, {	-- Highmountain
-			n(0,    {	-- Zone Drops
+			n(ZONEDROPS, {
 				["crs"] = {
 					104481,	-- Ala'washte
 					104294,	-- Archmage Brixton

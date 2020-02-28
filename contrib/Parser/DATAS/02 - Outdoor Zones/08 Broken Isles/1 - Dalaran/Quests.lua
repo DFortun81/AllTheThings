@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		m(627, { 	-- Dalaran
-			n(-17,  {	-- Quests
+			n(QUESTS, {
 				i(122293, {	-- Trans-Dimensional Bird Whistle
 					["description"] = "If you see this item listed and you know the toy, it is likely you need the Pepe appearance that spawns in this zone.",
 					["collectible"] = false,

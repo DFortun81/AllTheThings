@@ -6,7 +6,7 @@ _.Zones =
 	m(619, { 	-- The Broken Isles
 		m(627, { 	-- Dalaran
 			n(-38,  {	-- Profession
-				prof(171, {	-- Alchemy
+				prof(ALCHEMY, {
 					q(39329, {	-- A Dormant Burner
 						["provider"] = { "n", 92458 },	-- Deucus Valdera
 						["sourceQuests"] = { 39328 },	-- Ancient Knowledge
@@ -94,7 +94,7 @@ _.Zones =
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 					}),
 					q(39342, {	-- The Price of the Black Market
-						["requireSkill"] = 171,	-- Alchemy
+						["requireSkill"] = ALCHEMY,
 						["provider"] = { "n", 101492 },	-- Ms. Xiulan
 					}),
 					q(39566, {	-- The Search for Knowledge
@@ -125,7 +125,7 @@ _.Zones =
 					n(-34, {	-- World Quests
 						q(41662, {	-- Work Order: Ancient Rejuvenation Potions
 							["isWorldQuest"] = true,
-							["requireSkill"] = 171,	-- Alchemy
+							["requireSkill"] = ALCHEMY,
 							["lvl"] = 110,
 							["g"] = {
 								i(127920),	-- Recipe: Draught of Raw Magic (Rank 2)
@@ -133,7 +133,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(794, {	-- Archaeology
+				prof(ARCHAEOLOGY, {
 					q(41189, {	-- A New Lead
 						["isWeekly"] = true,
 						["coord"] = { 40.4, 24.0, 627 },
@@ -200,7 +200,7 @@ _.Zones =
 						["provider"] = { "n", 93538 },	-- Dariness the Learned
 					}),
 				}),
-				prof(164, {	-- Blacksmithing
+				prof(BLACKSMITHING, {
 					q(38499, {	-- Strange New Ores
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 						["g"] = {
@@ -319,7 +319,7 @@ _.Zones =
 					n(-34, {	-- World Quests
 						q(41638, {	-- Work Order: Leystone Gauntlets
 							["isWorldQuest"] = true,
-							["requireSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = BLACKSMITHING,
 							["lvl"] = 110,
 							["g"] = {
 								i(137606),	-- Recipe: Leystone Gauntlets (Rank 3)
@@ -327,7 +327,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(185, {	-- Cooking
+				prof(COOKING, {
 					q(40990, {	-- A Good Recipe List
 						["sourceQuests"] = {
 							40988,	-- Too Many Cooks
@@ -359,7 +359,7 @@ _.Zones =
 						},
 					}),
 				}),
-				prof(333, {	-- Enchanting
+				prof(ENCHANTING, {
 					q(39903, {	-- An Enchanting Home
 						["provider"] = { "n", 93531 },	-- Enchanter Nalthanis
 					}),
@@ -394,7 +394,7 @@ _.Zones =
 					}),
 					n(-34, {	-- World Quests
 						q(41674, {	-- Work Order: Word of Intellect
-							["requireSkill"] = 333,	-- Enchanting
+							["requireSkill"] = ENCHANTING,
 							["provider"] = { "n", 32725 },	-- Warmage Silva
 							["lvl"] = 110,
 							["isWorldQuest"] = true,
@@ -404,7 +404,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(202, {	-- Engineering
+				prof(ENGINEERING, {
 					q(40871, {	-- 'Locke and Load
 						["provider"] = { "n", 93539 },
 					}),
@@ -514,7 +514,7 @@ _.Zones =
 					}),
 					n(-34, {	-- World Quests
 						q(41680, {	-- Work Order: Failure Detection Pylon
-							["requireSkill"] = 202,	-- Engineering
+							["requireSkill"] = ENGINEERING,
 							["lvl"] = 110,
 							["isWorldQuest"] = true,
 							["provider"] = { "n", 32725 },	-- Warmage Silva
@@ -524,7 +524,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(356, {	-- Fishing
+				prof(FISHING, {
 					n(-10067, { 	-- Artifact
 						["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 						["lvl"] = 110,
@@ -580,7 +580,7 @@ _.Zones =
 							}),
 						},
 						["description"] = "Can be found on a floating island called Margoss' Retreat just North of Dalaran.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-						["requireSkill"] = 356,
+						["requireSkill"] = FISHING,
 						["creatureID"] = 108825
 					}),
 					n(95844, {	-- Marcia Chase <Fishing Trainer & Supplies>
@@ -757,7 +757,7 @@ _.Zones =
 								},
 							},
 							["description"] = "You need to use the special lures sold by the trainer to earn this achievement.",
-							["requireSkill"] = 356,
+							["requireSkill"] = FISHING,
 						}),
 					}),
 					q(41010, {	-- Fish Frenzy
@@ -769,7 +769,7 @@ _.Zones =
 						["sourceQuests"] = { 40960 },	-- Luminous Pearl
 					}),
 				}),
-				prof(182, {	-- Herbalism
+				prof(HERBALISM, {
 					q(40019, {	-- An Empathetic Herb
 						["sourceQuests"] = { 40018 },	-- Dreamleaf Sample
 						["provider"] = { "n", 92464 },	-- Kuhuine Tenderstride
@@ -847,7 +847,7 @@ _.Zones =
 						},
 					}),
 				}),
-				prof(773, {	-- Inscription
+				prof(INSCRIPTION, {
 					q(39942, {	-- Aethrem Crystal
 						["provider"] = { "i", 136909 },	-- Aethrem Crystal
 						["description"] = "There is a chance of getting this quest when milling Aethril.",
@@ -997,14 +997,14 @@ _.Zones =
 						q(41668, {	-- Vantus Rune Work Order: Il'gynoth, The Heart of Corruption
 							["lvl"] = 110,
 							["isWorldQuest"] = true,
-							["requireSkill"] = 773,	-- Inscription
+							["requireSkill"] = INSCRIPTION,
 							["g"] = {
 								i(137769),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption (Rank 3)
 							},
 						}),
 					}),
 				}),
-				prof(755, {	-- Jewelcrafting
+				prof(JEWELCRAFTING, {
 					q(40524,  {	-- A Familiar Ring to It
 						["coord"] = { 40.0, 35.3, 627 },
 						["provider"] = { "n", 93527 },	-- Timothy Jones
@@ -1118,32 +1118,32 @@ _.Zones =
 					n(-34, {	-- World Quests
 						q(46134, {	-- Gemcutter Needed
 							["isWorldQuest"] = true,
-							["requireSkill"] = 755,	-- Jewelcrafting
+							["requireSkill"] = JEWELCRAFTING,
 							["lvl"] = 110,
 						}),
 						q(46135, {	-- Gemcutter Needed
 							["isWorldQuest"] = true,
-							["requireSkill"] = 755,	-- Jewelcrafting
+							["requireSkill"] = JEWELCRAFTING,
 							["lvl"] = 110,
 						}),
 						q(46136, {	-- Gemcutter Needed
 							["isWorldQuest"] = true,
-							["requireSkill"] = 755,	-- Jewelcrafting
+							["requireSkill"] = JEWELCRAFTING,
 							["lvl"] = 110,
 						}),
 						q(46137, {	-- Gemcutter Needed
 							["isWorldQuest"] = true,
-							["requireSkill"] = 755,	-- Jewelcrafting
+							["requireSkill"] = JEWELCRAFTING,
 							["lvl"] = 110,
 						}),
 						q(46138, {	-- Gemcutter Needed
 							["isWorldQuest"] = true,
-							["requireSkill"] = 755,	-- Jewelcrafting
+							["requireSkill"] = JEWELCRAFTING,
 							["lvl"] = 110,
 						}),
 						q(46139, {	-- Gemcutter Needed
 							["isWorldQuest"] = true,
-							["requireSkill"] = 755,	-- Jewelcrafting
+							["requireSkill"] = JEWELCRAFTING,
 							["lvl"] = 110,
 						}),
 						q(41656,  {	-- Work Order: Azsunite Loop
@@ -1155,7 +1155,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(165, {	-- Leatherworking
+				prof(LEATHERWORKING, {
 					q(40206,  {	-- A Debt Paid
 						["sourceQuests"] = { 40199 },	-- Leather Legwork
 						["provider"] = { "n", 98931 },	-- Thanid Glowergold
@@ -1286,7 +1286,7 @@ _.Zones =
 					}),
 					n(-34, {	-- World Quests
 						q(41644, {	-- Work Order: Warhide Gloves
-							["requireSkill"] = 165,	-- Leatherworking
+							["requireSkill"] = LEATHERWORKING,
 							["lvl"] = 110,
 							["isWorldQuest"] = true,
 							["provider"] = { "n", 32725 },	-- Warmage Silva
@@ -1296,7 +1296,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(186, {	-- Mining
+				prof(MINING, {
 					q(38795, {	-- Felslate Deposit Sample
 						["provider"] = { "i", 124496 },	-- Felslate Deposit Sample
 					}),
@@ -1354,9 +1354,9 @@ _.Zones =
 						["provider"] = { "n", 93189 },	-- Mama Diggs
 					}),
 				}),
-				prof(393, {	-- Skinning
+				prof(SKINNING, {
 					q(40157,  {	-- An Unseemly Task
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 						["provider"] = { "n", 93541 },	-- Kondal Huntsworn
 					}),
 					q(40156, {	-- Felhide Sample
@@ -1370,7 +1370,7 @@ _.Zones =
 					}),
 					q(40144, {	-- Glielle
 						["sourceQuests"] = { 40143 },	-- Unfinished Treatise on the Properties of Stormscale
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 						["coord"] = { 35.9, 28.5, 627 },
 						["provider"] = { "n", 93541 },	-- Kondal Huntsworn
 					}),
@@ -1392,7 +1392,7 @@ _.Zones =
 					}),
 					q(40146, {	-- Seymour and Agnes
 						["sourceQuests"] = { 40143 },	-- Unfinished Treatise on the Properties of Stormscale
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 						["coord"] = { 35.9, 28.5, 627 },
 						["provider"] = { "n", 93541 },	-- Kondal Huntsworn
 					}),
@@ -1416,7 +1416,7 @@ _.Zones =
 						},
 					}),
 				}),
-				prof(197, {	-- Tailoring
+				prof(TAILORING, {
 					q(38951, {	-- A Needle Need
 						["provider"] = { "n", 93967 },	-- Lyndras
 					}),
@@ -1548,7 +1548,7 @@ _.Zones =
 					}),
 					n(-34, {	-- World Quests
 						q(41650, {	-- Work Order: Silkweave Hood
-							["requireSkill"] = 197,	-- Tailoring
+							["requireSkill"] = TAILORING,
 							["lvl"] = 110,
 							["isWorldQuest"] = true,
 							["g"] = {
