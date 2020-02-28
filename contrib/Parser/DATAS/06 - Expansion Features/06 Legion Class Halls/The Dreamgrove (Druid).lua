@@ -23,7 +23,7 @@ _.ExpansionFeatures =
 				filter(101, { 	-- Pet Battle
 					p(479),	-- Elfin Rabbit
 				}),
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					spell(241857, {	-- Archdruid's Lunarwing Form
 						q(46317, {	-- Talon's Call
 							["provider"] = { "n", 118105 },	-- Grovewarden Proudhorn
@@ -262,7 +262,7 @@ _.ExpansionFeatures =
 					["modelScale"] = 2.25,
 				}),
 				]]--
-				n(-2,  {	-- Vendors
+				n(VENDORS, {
 					n(112323, {	-- Amurra Thistledew <Proprietor>
 						i(139728, {	-- Amice of the Dreamgrove
 							["cost"] = 5000000,	-- 500g
@@ -323,7 +323,7 @@ _.ExpansionFeatures =
 				m(715, {	-- Emerald Dreamway
 					["icon"] = "Interface\\Icons\\spell_arcane_portalshattrath",	-- Dream Portal Icon
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							{	-- Communing With Malorne
 								["questID"] = 42045,
 								["provider"] = { "n", 106204 },	-- Archdruid Hamuul Runetotem

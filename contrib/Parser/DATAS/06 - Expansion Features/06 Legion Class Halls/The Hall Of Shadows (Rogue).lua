@@ -80,7 +80,7 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(45571, {	-- A Bit of Espionage
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
@@ -630,7 +630,7 @@ _.ExpansionFeatures =
 					["modelScale"] = 1.5,
 				}),
 				]]--
-				n(-2,  {	-- Vendors
+				n(VENDORS, {
 					n(103792, {	-- Griftah <Amazing Amulets>
 						["coord"] = { 45.4, 27.6, 626 },
 						["g"] = {

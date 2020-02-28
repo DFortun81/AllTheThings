@@ -19,7 +19,7 @@ _.ExpansionFeatures =
 						["classes"] = { 3 },	-- Hunter
 					}),
 				}),
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(41541, {	-- A Beastly Expedition 
 						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
 						["classes"] = {3},
@@ -290,7 +290,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				]]--
-				n(-2, {	--  Vendors
+				n(VENDORS, {
 					n(105099, {	-- Dark Ranger Velonara
 						["classes"] = {3},
 						["description"] = "|c808080FAHunters will need to have completed the hidden quest|r |cFFFFD700Dark Memento|r |c808080FAin order to see items on this vendor.|r\n\n|cffff0000How to activate the quest:|r\n|c0070DEFFStep 1:|r\n|c808080FASpeak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA and complete the dialogue with him.\n|c0070DEFFStep 2:|r\n|c808080FABuy 13x|r |cFFFFFFFFBlack Roses|r|c808080FA from him.\n|c0070DEFFStep 3:|r\n|c808080FASpeak to|r |cABD473FFDark Ranger Velonara|r |c808080FA and complete the dialogue with her.  Afterwards she will take the 13 |r|cFFFFFFFFBlack Roses|r|c808080FA from you.\n|c0070DEFFStep 4:|r\n|c808080FAGo back and speak to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA who will finish the story between the two.  Once doing this he will no longer sell you anything.\n|c0070DEFFStep 5:|r\n|c808080FFFind|r |cABD473FFDark Ranger Velonara|r |c808080FA who will offer the quest, |r|cFFFFD700Dark Memento|r.\n|c0070DEFFStep 6:|r\n|c808080FAAccept the quest and then deliver the hood to|r |cABD473FFDeath Hunter Moorgoth|r |c808080FA.\n|c0070DEFFStep 7:|r\n|c808080FAUpon finishing that quest he will now offer you the two items.",

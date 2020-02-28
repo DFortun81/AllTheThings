@@ -21,7 +21,7 @@ _.ExpansionFeatures =
 						i(141530),	-- Snowfang's Trust Pet
 					},
 				}),
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(46792, {	-- Gathering of the Storms
 						["lvl"] = 110,
 						["classes"] = {7},
@@ -162,7 +162,7 @@ _.ExpansionFeatures =
 					["achievementID"] = 11217,
 					["modelScale"] = 0.5,
 				}),
-				n(-2,  {	-- Vendors
+				n(VENDORS, {
 					n(112318, {	-- Flamesmith Lanying <Earthen Ring Quartermaster>
 						i(143727, {	-- Champion's Salute (TOY!)
 							["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources

@@ -90,7 +90,7 @@ _.ExpansionFeatures =
 						i(163673),	-- Honorbound Centurion's Pauldrons
 					},
 				}),
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(53602, {	-- Adapting Our Tactics
 						["lvl"] = 114,
 						["coord"] = { 58.5, 62.7, 1164 },

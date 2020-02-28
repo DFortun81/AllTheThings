@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 		n(-237, {	-- War Front: The Battle for Darkshore
 			["maps"] = { 1203 },
 			["g"] = {
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					-- Alliance Quests
 					q(53977, {	-- The War Chest (A)
 						["provider"] = { "n", 145770 },	-- Thisalee Crow

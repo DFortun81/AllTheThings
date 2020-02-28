@@ -12,7 +12,7 @@ _.ExpansionFeatures =
 				}),
 			}),
 		}),
-		n(-17, {	-- Quests
+		n(QUESTS, {
 			q(53436, { 	-- Azerite for the Alliance
 				["isWeekly"] = true,
 				["coord"] = { 66.6, 35.5, 1161 },

@@ -26,7 +26,7 @@ _.ExpansionFeatures =
 					739,	-- Trueshot Lodge (Hunter)
 				},
 				["g"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(44057, {	-- A "Noble" Event
 							["provider"] = { "i", 140495 },	-- Torn Invitation
 						}),

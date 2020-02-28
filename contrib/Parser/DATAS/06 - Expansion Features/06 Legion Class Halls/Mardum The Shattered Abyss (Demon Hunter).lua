@@ -50,7 +50,7 @@ _.ExpansionFeatures =
 						i(141961),	-- Soul Flame of Rejuvenation
 					},
 				}),
-				n(-17,  {	-- Quests
+				n(QUESTS, {
 					-- confirmed/sourced
 					q(42810, {	-- A Final Offer
 						["sourceQuests"] = { 42754 },	-- Jump-Capable
@@ -796,7 +796,7 @@ _.ExpansionFeatures =
 					}),
 					--]]
 				}),
-				n(-2,   {	-- Vendors
+				n(VENDORS, {
 					n(116621, {	--Demissya Gladestrider <Illidari Provisioner's Assistant>
 						i(123960),	-- Charm of Demonic Fire
 						i(123959),	-- Demon Trophy

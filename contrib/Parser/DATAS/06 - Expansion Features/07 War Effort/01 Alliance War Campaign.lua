@@ -97,7 +97,7 @@ _.ExpansionFeatures =
 						i(163663),	-- 7th Legionnaire's Breastplate
 					},
 				}),
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(47099, { 	-- Get Your Bearings
 						["coord"] = { 75.7, 23.5, 1161 },
 						["races"] = ALLIANCE_ONLY,

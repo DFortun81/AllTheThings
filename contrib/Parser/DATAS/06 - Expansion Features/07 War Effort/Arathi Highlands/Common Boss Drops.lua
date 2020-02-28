@@ -5,7 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-10057, {	-- War Effort
 		m(14, {	-- Arathi Highlands
-			n(-1, {	-- Common Boss Drop [Tier 2]
+			n(COMMON_BOSS_DROPS, { -- [Tier 2]
 				["description"] = "These items can drop off any rare in the zone and in the warfront.",
 				["crs"] = {
 					142709,	-- Beastrider Kama

@@ -12,7 +12,7 @@ _.ExpansionFeatures =
 			},
 			["lvl"] = 98,
 			["g"] = {
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					n(111093, {	-- Stitchwork
 						["questID"] = 44188,	-- Hidden Tracking
 						["classes"] = { 6 },	-- Death Knight Only!
@@ -103,7 +103,7 @@ _.ExpansionFeatures =
 					["modelScale"] = 1.95,
 				}),
 				]]--
-				n(-2,  {	-- Vendors
+				n(VENDORS, {
 					n(93550, {	-- Quartermaster Ozorg
 						i(34649),	-- Archerus Knight's Gauntlets
 						i(34651),	-- Archerus Knight's Girdle

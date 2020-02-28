@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 		{	-- Darkshore
 			["mapID"] = 62,	-- Darkshore
 			["g"] = {
-				n(-1, {	-- Common Boss Drop [Tier 2]
+				n(COMMON_BOSS_DROPS, { -- [Tier 2]
 					["groups"] = bubbleDown({["modID"] = 5}, {
 									-- ALLIANCE SET --
 						i(164966),	-- Glade Warden's Glaive

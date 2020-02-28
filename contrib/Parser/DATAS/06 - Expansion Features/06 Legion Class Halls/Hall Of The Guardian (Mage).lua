@@ -119,7 +119,7 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				n(-17,  {		-- Quests
+				n(QUESTS, {
 					q(41141, { 	-- A Conjuror's Duty (mage class hall)
 						["provider"] = { "n", 103092 },	-- The Great Akazamzarak
 						["classes"] = {8},
@@ -357,7 +357,7 @@ _.ExpansionFeatures =
 					["modelScale"] = 2.5,
 				}),
 				]]--
-				n(-2,   {		-- Vendors
+				n(VENDORS, {
 					n(112440, {	-- Jackson Watkins <Tirisgarde Quartermaster>
 						i(140939, {	-- Archmage's Armor Kit
 							["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources

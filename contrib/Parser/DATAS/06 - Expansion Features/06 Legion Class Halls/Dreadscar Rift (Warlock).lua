@@ -61,7 +61,7 @@ _.ExpansionFeatures =
 					["achievementID"] = 11217,
 					["modelScale"] = 2.5,
 				}),
-				n(-17, { 	-- Quests
+				n(QUESTS, {
 					q(44089, {	-- A Greater Arsenal
 						["sourceQuests"] = { 43984 },	-- The Tome Opens Again
 						["classes"] = { 9 },	-- Warlock
@@ -342,7 +342,7 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
-				n(-2,  {	-- Vendors
+				n(VENDORS, {
 					n(101097, {	-- Calydus
 						["sourceQuests"] = { 46243 },	-- The Wrathsteed of Xoroth
 						["classes"] = { 9 },	-- Warlock
