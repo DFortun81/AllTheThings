@@ -4,7 +4,7 @@
 _.Holidays = bubbleDown({["u"] = 28}, 
 {
 	holiday(235465, {	-- Pilgrim's Bounty
-		n(-2, {	-- Vendors
+		n(VENDORS, {
 			i(46810, {	-- Bountiful Cookbook
 				["races"] = HORDE_ONLY,
 				["crs"] = {

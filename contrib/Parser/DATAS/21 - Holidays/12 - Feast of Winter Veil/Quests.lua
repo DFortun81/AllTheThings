@@ -5,7 +5,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 {
 	holiday(235485, {	-- Feast of Winter Veil
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				["g"] = {
 					-- ALLIANCE QUESTS --
 					q(7022,  {	-- Greatfather Winter is Here!

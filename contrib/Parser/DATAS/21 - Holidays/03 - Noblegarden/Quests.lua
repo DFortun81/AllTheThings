@@ -4,7 +4,7 @@
 _.Holidays = bubbleDown({["u"] = 19},
 {
 	holiday(235477, {	-- Noblegarden
-		n(-17, {	-- Quests
+		n(QUESTS, {
 			{	--	A Tisket, a Tasket, a Noblegarden Basket [Alliance]
 				["questID"] = 13502,	-- A Tisket, a Tasket, a Noblegarden Basket
 				["u"] = 19,				-- Noblegarden Filter

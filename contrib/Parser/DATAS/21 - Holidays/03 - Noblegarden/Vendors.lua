@@ -7,8 +7,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 		["holidayID"] = 235477,	-- Noblegarden
 		["u"] = 19,				-- Noblegarden Filter
 		["g"] = {
-			{	-- Vendors
-				["npcID"] = -2,	-- Vendors
+			n(VENDORS, {
 				["g"] = {
 					{	-- Noblegarden Merchant
 						["npcID"] = 32837,	-- Noblegarden Merchant
@@ -259,7 +258,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 						},
 					},
 				},
-			},
+			}),
 		},
 	},
 });

@@ -7,8 +7,7 @@ _.Holidays =
 		["holidayID"] = 1574965,	-- Call of the Scarab
 		["u"] = 22,					-- Micro-Holiday Filter
 		["g"] = {
-			{	-- Vendors
-				["npcID"] = -2,	-- Vendors
+			n(VENDORS, {
 				["g"] = {
 					{	-- Field Marshal Snowfall
 						["npcID"] = 117435,		-- Field Marshal Snowfall
@@ -210,7 +209,7 @@ _.Holidays =
 						},
 					},
 				},
-			},
+			}),
 		},
 	},
 };

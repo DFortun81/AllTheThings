@@ -7,8 +7,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 		["holidayID"] = 235477,	-- Noblegarden
 		["u"] = 19,				-- Noblegarden Filter
 		["g"] = {
-			{	-- Zone Drop
-				["npcID"] = 0,
+			n(ZONEDROPS, {
 				["g"] = {
 					{	-- Brightly Colored Egg
 						["itemID"] = 45072,		-- Brightly Colored Egg
@@ -80,7 +79,7 @@ _.Holidays = bubbleDown({["u"] = 19},
 						},
 					},
 				},
-			},
+			}),
 		},
 	},
 });

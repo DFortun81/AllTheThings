@@ -4,7 +4,7 @@
 _.Holidays = bubbleDown({["u"] = 24},
 {
 	holiday(235442, {	-- Brewfest
-		n(-2, {	-- Vendors
+		n(VENDORS, {
 			--["u"] = 24,	-- Brewfest
 			["g"] = {
 				n(23604,  {	-- Agnes Farwithers <Cheese Vendor>

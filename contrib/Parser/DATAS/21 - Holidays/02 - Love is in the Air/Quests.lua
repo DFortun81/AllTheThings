@@ -4,7 +4,7 @@
 _.Holidays = bubbleDown({["u"] = 18},
 {
 	holiday(235468, {	-- Love is in the Air
-		n(-17, {	-- Quests
+		n(QUESTS, {
 			i(50320, {	-- Faded Lovely Greeting Card
 				q(24635, {	-- A Cloudlet of Classy Cologne
 					["provider"] = { "n", 37675 },	-- Public Relations Agent

@@ -6,7 +6,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 	holiday(235462, {	-- Hallow's End
 		["u"] = 26,	-- Hallow's End
 		["g"] = {
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(53757,  {	-- Chub <Candy & Toy Vendor>
 					["races"] = HORDE_ONLY,
 					["coord"] = { 62.1, 66.4, 18 },

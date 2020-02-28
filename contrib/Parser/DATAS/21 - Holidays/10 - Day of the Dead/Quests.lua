@@ -4,7 +4,7 @@
 _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 {
 	holiday(307365, {	-- Day of the Dead
-		n(-17, {	-- Quests
+		n(QUESTS, {
 			q(14169, {	-- The Grateful Dead — Azuremyst Isle, Draenei
 				["provider"] = { "n", 34484 },	-- Cheerful Draenei Spirit
 				["isYearly"] = true,

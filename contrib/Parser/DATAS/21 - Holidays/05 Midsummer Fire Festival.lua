@@ -1269,7 +1269,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 				},
 			}),
 		}),
-		n(-17,  {	-- Quests
+		n(QUESTS, {
 		--	q(11696),	-- Ahune is Here!
 		--	q(11955),	-- Ahune, the Frost Lord
 			q(11891, {	-- An Innocent Disguise
@@ -3593,7 +3593,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 				["provider"] = { "n", 26221 },	-- Earthen Ring Elder
 			}),
 		}),
-		n(-2,   {	-- Vendors
+		n(VENDORS, {
 			n(26123, {	-- Midsummer Supplier (Alliance Vendor)
 				["coords"] = {
 					{ 49.2, 71.8, 84 },		-- Stormwind City
