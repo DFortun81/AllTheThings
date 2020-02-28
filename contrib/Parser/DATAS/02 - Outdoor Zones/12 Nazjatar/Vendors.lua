@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
-		n(-2, {		-- Vendors
+		n(VENDORS, {
 			n(153510, {	-- Artisan Itanu <Vaultkeeper of the Ankoan>
 				["coord"] = { 37.8, 55.7, 1355 },
 				["races"] = ALLIANCE_ONLY,

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(1355, {	-- Nazjatar
 		n(-38, {	-- Professions
-			prof(182, {	-- Herbalism
+			prof(HERBALISM, {
 				q(56098, {	-- Defensive in Death (A)
 					["itemID"] = 168919,	-- Zin'anthid Tentacle
 					["races"] = ALLIANCE_ONLY,
@@ -21,7 +21,7 @@ _.Zones =
 					},
 				}),
 			}),
-			prof(186, {	-- Mining
+			prof(MINING, {
 				q(56103, {	-- Ounces of Osmenite (A)
 					["itemID"] = 168939,	-- Osmenite Shards
 					["races"] = ALLIANCE_ONLY,
