@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		m(680, {	-- Suramar
-			n(0, { 		-- Zone Drops
+			n(ZONEDROPS, {
 				["g"] = {
 					i(137841),	-- Design: Deep Amber Pendant (Rank 3)
 					i(136704),	-- Formula: Immaculate Fibril
@@ -283,7 +283,7 @@ _.Zones =
 					114874,	-- Wyrmtongue Pilferer
 				},
 			}),
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(136901, {	-- Eye of Inquisition (PET!)
 					["crs"] = { 101878 },	-- Felsoul Inquisitor
 				}),

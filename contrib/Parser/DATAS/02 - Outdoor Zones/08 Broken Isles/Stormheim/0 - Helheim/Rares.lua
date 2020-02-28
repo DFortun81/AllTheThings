@@ -6,7 +6,7 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(634, {	-- Stormheim
 			m(649, {	-- Helheim
-				n(-16, {	-- Rares
+				n(RARES, {
 					n(92040,  {	-- Fenri
 						["questID"] = 38461,
 						["coord"] = { 84.6, 49.2, 649 },

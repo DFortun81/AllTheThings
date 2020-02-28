@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(641, {	-- Val'sharah
-			n(0,    {	-- Zone Drops (Need to change this to list crs individually because not all items drop from all of those mobs)
+			n(ZONEDROPS, {	-- (Need to change this to list crs individually because not all items drop from all of those mobs)
 				["groups"] = {
 					i(144318),	-- Formula: Enchant Neck - Mark of the Deadly (Rank 2)
 					i(141043),	-- Technique: Glyph of Arachnophobia

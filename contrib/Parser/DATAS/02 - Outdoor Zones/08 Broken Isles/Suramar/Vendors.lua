@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		m(680, {	-- Suramar
-			n(-2, { 	-- Vendors
+			n(VENDORS, {
 				n(115710, {	-- Chief Telemancer Oculeth
 					["coord"] = { 37.0, 46.6, 680 },
 					["g"] = {

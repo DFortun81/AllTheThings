@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(641, {	-- Val'sharah
-			n(-2,   {	-- Vendors
+			n(VENDORS, {
 				n(93974, {	-- Leyweaver Erenyi
 					["coord"] = { 70.4, 46.6, 641 },
 					["g"] = {

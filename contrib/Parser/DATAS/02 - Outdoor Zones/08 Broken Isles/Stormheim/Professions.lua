@@ -6,7 +6,7 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(634, {	-- Stormheim
 			n(-38, {	-- Profession
-				prof(794, {	-- Archaeology
+				prof(ARCHAEOLOGY, {
 					q(41157, {	-- Corrupted Studies
 						["isWeekly"] = true,
 					}),
@@ -14,7 +14,7 @@ _.Zones =
 						["isWeekly"] = true,
 					}),
 				}),
-				prof(356, {	-- Fishing
+				prof(FISHING, {
 					n(-10067, { 	-- Artifact
 						["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 						["lvl"] = 110,
@@ -153,7 +153,7 @@ _.Zones =
 								}),
 							},
 							["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF90.5, 10.7|r on Shield's Rest.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-							["requireSkill"] = 356,
+							["requireSkill"] = FISHING,
 							["creatureID"] = 120458
 						}),
 					}),
@@ -161,11 +161,11 @@ _.Zones =
 						["itemID"] = 137695, 	-- Schematic: Reaves Module: Wormhole Generator Mode
 					},
 				}),
-				prof(182, {	-- Herbalism
+				prof(HERBALISM, {
 					{	-- Felwort Sample [Felwort I]
 						["itemID"] = 129122,	-- Felwort Sample
 						["questID"] = 40040,	-- Felwort Sample
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["groups"] = {
 							{	-- Felwort [Rank 1]
 								["recipeID"] = 193307,	-- Felwort [Rank 1]
@@ -175,7 +175,7 @@ _.Zones =
 					{	-- Fjarnskaggl Sample [Fjarnskaggl I]
 						["itemID"] = 129120,	-- Fjarnskaggl Sample
 						["questID"] = 40029,	-- Fjarnskaggl Sample
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["groups"] = {
 							{	-- Fjarnskaggl [Rank 1]
 								["recipeID"] =  193301,	-- Fjarnskaggl [Rank 1]
@@ -188,7 +188,7 @@ _.Zones =
 						["sourceQuests"] = {
 							129120,	-- Fjarnskaggl Sample
 						},
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					},
 					{	-- Runed Journal Page [Fjarnskaggl III]
 						["itemID"] = 129142,	-- Runed Journal Page
@@ -197,16 +197,16 @@ _.Zones =
 							40031,	-- Vrykul Herblore
 						},	
 						
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					},
 				}),
-				prof(393, {	-- Skinning
+				prof(SKINNING, {
 					q(40149, {	-- Drakol'nir Must Die
 						["sourceQuests"] = {
 							40147,	-- Mother's Prized Knife
 							40148,	-- Red-Eyed Revenge
 						},
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 						["coord"] = { 45.7, 25.6, 634 },
 						["provider"] = { "n", 98721 },	-- Seymour
 						["groups"] = {
@@ -215,19 +215,19 @@ _.Zones =
 					}),
 					q(40147, {	-- Mother's Prized Knife
 						["sourceQuests"] = { 40146 },	-- Seymour and Agnes
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 						["coord"] = { 45.7, 25.6, 634 },
 						["provider"] = { "n", 98721 },	-- Seymour
 					}),
 					q(40148, {	-- Red-Eyed Revenge
 						["sourceQuests"] = { 40146 },	-- Seymour and Agnes
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 						["coord"] = { 45.7, 25.6, 634 },
 						["provider"] = { "n", 98721 },	-- Seymour
 					}),
 					{	-- Skinning Technique: Unbroken Claw
 						["itemID"] = 139894,	-- Skinning Technique: Unbroken Claw
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 						["crs"] = {
 							91799,	-- Juvenile Stormwing
 						},
@@ -239,7 +239,7 @@ _.Zones =
 					},
 					q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
 						["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 						["description"] = "The item that starts this quest can be skinned from any scaled creature found across the Broken Isles.",
 						["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
 					}),

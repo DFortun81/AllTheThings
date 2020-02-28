@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(634, {	-- Stormheim
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(38412, {	-- Above the Winter Moonlight (Alliance)
 					["sourceQuests"] = { 38342 },	-- Another Way
 					["races"] = ALLIANCE_ONLY,
@@ -1044,7 +1044,7 @@ _.Zones =
 				}),
 				n(-38, {	-- Professions
 					n(-182, {	-- Enchanting
-						["requireSkill"] = 333,	-- Enchanting
+						["requireSkill"] = ENCHANTING,
 						["g"] = {
 							q(39904, {	-- Halls of Valor: Revenge of the Enchantress
 								["provider"] = { "n", 98367 },	-- Tigrid the Charmer
@@ -1055,7 +1055,7 @@ _.Zones =
 						},
 					}),
 					n(-183, {	-- Engineering
-						["requireSkill"] = 202,	-- Engineering
+						["requireSkill"] = ENGINEERING,
 						["g"] = {
 							q(40866, {	-- The Shell, You Say?
 								["provider"] = { "n", 102198 },	-- Fargo Flintlocke
@@ -1077,7 +1077,7 @@ _.Zones =
 						},
 					}),
 					n(-185, {	-- Inscription
-						["requireSkill"] = 773,
+						["requireSkill"] = INSCRIPTION,
 						["g"] = {
 							q(40052, {	-- Ancient Vrykul Mastered
 								["sourceQuests"] = { 39947 },	-- Not So Complex?
@@ -1089,7 +1089,7 @@ _.Zones =
 						},
 					}),
 					n(-186, {	-- Jewelcrafting
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 						["g"] = {
 							q(40546, {
 								["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
@@ -1100,7 +1100,7 @@ _.Zones =
 						},
 					}),
 					n(-190, {	-- Tailoring
-						["requireSkill"] = 197,	-- Tailoring
+						["requireSkill"] = TAILORING,
 						["g"] = {
 							q(38974, {	-- Halls of Valor: The Right Question
 								["coord"] = { 65.6, 56.2, 634 },

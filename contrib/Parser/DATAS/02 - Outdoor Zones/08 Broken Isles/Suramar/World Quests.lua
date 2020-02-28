@@ -41,22 +41,22 @@ _.Zones =
 				q(41493, {	-- Brimstone Destroyer
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41492, {	-- Brimstone Destroyer
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41491, {	-- Brimstone Destroyer
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41447, {	-- Burning Felslate Deposits
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41990, {	-- Chopped
 					["isWorldQuest"] = true,
@@ -145,7 +145,7 @@ _.Zones =
 				q(41446, {	-- Darkened Felslate Deposits
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(44801, {	-- Defending Shal'aran
 					["lvl"] = 110,
@@ -158,52 +158,52 @@ _.Zones =
 				q(41347, {	-- Extra-Rancid Felhound Hide
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(41572, {	-- Felhide
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(41573, {	-- Felhide
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(41571, {	-- Felhide
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(41508, {	-- Felslate Basilisks
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41509, {	-- Felslate Basilisks
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41352, {	-- Felslate Basilisks
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41523, {	-- Felwort
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41524, {	-- Felwort
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41522, {	-- Felwort
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(43930, {	-- Fiends of Tel'anor
 					["lvl"] = 110,
@@ -212,7 +212,7 @@ _.Zones =
 				q(41304, {	-- Flourishing Starlight Roses
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(40337, {	-- Flummoxed
 					["isWorldQuest"] = true,
@@ -235,7 +235,7 @@ _.Zones =
 				q(41448, {	-- Heavy Felslate Deposits
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(44811, {	-- Help on the Way
 					["lvl"] = 110,
@@ -248,17 +248,17 @@ _.Zones =
 				q(41280, {	-- Huge Runescale Koi
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41616, {	-- Huge Runescale Koi
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41617, {	-- Huge Runescale Koi
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(44805, {	-- In the Thick of It
 					["lvl"] = 110,
@@ -267,7 +267,7 @@ _.Zones =
 				q(41538, {	-- Iridescent Starlight Roses
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(42169, {	-- Left for Dead
 					["lvl"] = 110,
@@ -296,27 +296,27 @@ _.Zones =
 				q(41279, {	-- Lively Runescale Koi
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41605, {	-- Lively Runescale Koi
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41604, {	-- Lively Runescale Koi
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41537, {	-- Lively Starlight Roses
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41461, {	-- Malevolent Felslate Outcropping
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41931, {	-- Mana Tap
 					["isWorldQuest"] = true,
@@ -339,7 +339,7 @@ _.Zones =
 				q(41305, {	-- Nightborne Herb Trader
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(44857, {	-- Not There, Not Then, Not Forever
 					["lvl"] = 110,
@@ -348,7 +348,7 @@ _.Zones =
 				q(41353, {	-- Odious Felslate Outcropping
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(42830, {	-- Pest Management
 					["lvl"] = 110,
@@ -357,12 +357,12 @@ _.Zones =
 				q(41357, {	-- Primordial Felslate Deposits
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41349, {	-- Rock-Hard Crab Chitin
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(44812, {	-- Running on Empty
 					["lvl"] = 110,
@@ -383,7 +383,7 @@ _.Zones =
 				q(41354, {	-- Shattered Felslate Seams
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(44815, {	-- Sick of the Sycophants
 					["lvl"] = 110,
@@ -396,27 +396,27 @@ _.Zones =
 				q(41558, {	-- Slab of Bacon
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 				}),
 				q(41557, {	-- Slab of Bacon
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 				}),
 				q(41262, {	-- Slab of Bacon
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 				}),
 				q(41539, {	-- Sparkling Starlight Roses
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41301, {	-- Starlight Rose Cluster
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(43959, {	-- Stelleris Shakedown
 					["lvl"] = 110,
@@ -425,7 +425,7 @@ _.Zones =
 				q(41548, {	-- Starlight Rose Cluster
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(44817, {	-- Stirring the Swarm
 					["lvl"] = 110,
@@ -434,12 +434,12 @@ _.Zones =
 				q(41318, {	-- Supplies Needed: Felslate
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41303, {	-- Supplies Needed: Starlight Roses
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41351, {	-- Supplies Needed: Stonehide Leather
 					["lvl"] = 110,
@@ -496,7 +496,7 @@ _.Zones =
 				q(41667, {	-- Vantus Rune Work Order: Xavius
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 773,	-- Inscription
+					["requireSkill"] = INSCRIPTION,
 					["g"] = {
 						i(137771),	-- Vantus Rune Technique: Xavius [Rank 3]
 					},
@@ -504,7 +504,7 @@ _.Zones =
 				q(41346, {	-- Velvety Stalker Hide
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(44017, {	-- WANTED: Apothecary Faldren
 					["lvl"] = 110,
@@ -658,14 +658,14 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(41643, {	-- Work Order: Battlebound Leggings
-					["requireSkill"] = 165,	-- Leatherworking
+					["requireSkill"] = LEATHERWORKING,
 					["isWorldQuest"] = true,
 					["g"] = {
 						i(137909),	-- Recipe: Battlebound Leggings (Rank 3)
 					},
 				}),
 				q(41679, {	-- Work Order: Deployable Bullet Dispenser
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["isWorldQuest"] = true,
 					["g"] = {
 						i(137719),	-- Schematic: Deployable Bullet Dispenser (Rank 3)
@@ -674,11 +674,11 @@ _.Zones =
 				q(41314, {	-- Work Order: Felslate
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41637, {	-- Work Order: Leystone Pauldrons
 					["isWorldQuest"] = true,
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["lvl"] = 110,
 					["g"] = {
 						i(123938),	-- Recipe: Leystone Pauldrons (Rank 3)
@@ -686,7 +686,7 @@ _.Zones =
 				}),
 				q(41655, {	-- Work Order: Queen's Opal Pendant
 					["isWorldQuest"] = true,
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 					["g"] = {
 						i(137866),	-- Design: Queen's Opal Pendant (Rank 3)
 					},
@@ -694,10 +694,10 @@ _.Zones =
 				q(41282, {	-- Work Order: Runescale Koi
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41649, {	-- Work Order: Silkweave Slippers
-					["requireSkill"] = 197,	-- Tailoring
+					["requireSkill"] = TAILORING,
 					["isWorldQuest"] = true,
 					["g"] = {
 						i(138014),	-- Pattern: Silkweave Slippers (Rank 3)
@@ -706,7 +706,7 @@ _.Zones =
 				q(41661, {	-- Work Order: Skystep Potions
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 171,	-- Alchemy
+					["requireSkill"] = ALCHEMY,
 					["g"] = {
 						i(127924),	-- Recipe: Skystep Potion (Rank 2)
 					},
@@ -714,15 +714,15 @@ _.Zones =
 				q(41302, {	-- Work Order: Starlight Roses
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41350, {	-- Work Order: Stonehide Leather
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(41673, {	-- Work Order: Word of Mastery
-					["requireSkill"] = 333,	-- Enchanting
+					["requireSkill"] = ENCHANTING,
 					["isWorldQuest"] = true,
 					["g"] = {
 						i(128598),	-- Formula: Enchant Ring - Word of Mastery (Rank 3)

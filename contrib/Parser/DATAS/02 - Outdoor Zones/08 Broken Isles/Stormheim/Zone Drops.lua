@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(634, {	-- Stormheim		
-			n(0,      {	-- Zone Drops
+			n(ZONEDROPS, {
 				["groups"] = {
 					i(144309),	-- Formula: Enchant Neck - Mark of the Master (Rank 2)
 					i(137717, {	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
