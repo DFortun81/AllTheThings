@@ -5,7 +5,7 @@ _.NeverImplemented =
 {
 	tier(8, {	-- Battle for Azeroth
 		["g"] = bubbleDown({["u"]=1}, {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(47860),	-- A Rude Awakening
 				q(48994),	-- Akunda the Liar
 				q(49331),	-- An Interesting Find
