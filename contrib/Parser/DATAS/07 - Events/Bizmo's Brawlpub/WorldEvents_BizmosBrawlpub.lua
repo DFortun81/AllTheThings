@@ -27,7 +27,7 @@ _.WorldEvents =
 					["description"] = "\nAwarded for winning a Rumble. If you haven't already finished the quest chain for Bruce, save these for the 'Super Soul Splinters' quest.\n",
 				}),
 			}),
-			n(-17,  {	-- Quests
+			n(QUESTS, {
 				q(36702, {	-- Meatball
 					["provider"] = { "n", 86272 },	-- Meatball
 					["description"] = "Reach Rank 5 in the arena.",
@@ -147,7 +147,7 @@ _.WorldEvents =
 					},
 				}),
 			}),
-			n(-2,   {	-- Vendors
+			n(VENDORS, {
 				n(70752,  {	-- Card Trader Leila
 					i(94178, {	-- Challenge Card: G.G. Engineering
 						["questID"] = 55013,	-- The Precious 13-Tooth Gogglegear
@@ -203,7 +203,7 @@ _.WorldEvents =
 						i(98079),	-- Floot-Tooter's Tunic
 						i(127773, {	-- Gemcutter Module: Mastery
 							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-							["requireSkill"] = 755,	-- Jewelcrafting
+							["requireSkill"] = JEWELCRAFTING,
 							["spellID"] = 187636,
 							["coord"] = { 25.8, 39.7, 534 },	-- Tanaan Jungle
 						}),

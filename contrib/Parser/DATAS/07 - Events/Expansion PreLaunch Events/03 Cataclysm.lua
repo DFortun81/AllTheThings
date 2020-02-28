@@ -52,7 +52,7 @@ _.WorldEvents =
 							}),
 						},
 					})),
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(27566, {	-- A Gathering in Outland
 							["u"] = 3,
 							["races"] = ALLIANCE_ONLY,

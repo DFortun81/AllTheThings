@@ -56,7 +56,7 @@ _.WorldEvents =
 					i(139166),	-- Soulstealer's Barrier
 				},
 			}),
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(46205, {	-- A Conduit No More
 					["sourceQuests"] = { 45795 },	-- Presence of Power
 					["repeatable"] = true,

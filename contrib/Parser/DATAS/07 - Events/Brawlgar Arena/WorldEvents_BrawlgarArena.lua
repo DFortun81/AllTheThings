@@ -8,7 +8,7 @@ _.WorldEvents =
 		["lvl"] = 120,
 		["icon"] = "Interface\\Icons\\INV_MISC_HEAD_ORC2_BRN",
 		["g"] = {
-			n(-17, { 	-- Quests
+			n(QUESTS, {
 				q(36702, {	-- Meatball
 					["provider"] = { "n", 86272 },	-- Meatball
 					["description"] = "Reach Rank 5 in the arena.",
@@ -146,7 +146,7 @@ _.WorldEvents =
 					},
 				}),
 			}),
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(68364, {	-- Paul North <Brawl'gar Arena Quartermaster>  This vendor will change if you start the murder questline  New vendor = 145695 "Bad Luck" Symmes <Brawl'gar Arena Quartermaster>
 					["races"] = HORDE_ONLY,
 					["description"] = "Brawler's Burly Mushan Beast is only available to those who had reached Rank 8 in Season 1 or Season 2.|nShirts are only available to those who have already earned them.|r",
@@ -178,7 +178,7 @@ _.WorldEvents =
 						i(98079),	-- Floot-Tooter's Tunic
 						i(127773, {	-- Gemcutter Module: Mastery
 							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
-							["requireSkill"] = 755,	-- Jewelcrafting
+							["requireSkill"] = JEWELCRAFTING,
 							["spellID"] = 187636,
 							["coord"] = { 25.8, 39.7, 534 },	-- Tanaan Jungle
 						}),

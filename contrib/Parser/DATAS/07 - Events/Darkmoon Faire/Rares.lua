@@ -4,7 +4,7 @@
 _.WorldEvents =
 {
 	m(407, {	-- Darkmoon Island
-		n(-16, {	-- Rares
+		n(RARES, {
 			n(58336, {	-- Darkmoon Rabbit
 				["coord"] = { 75.69, 78.17, 407 },
 				["g"] = {

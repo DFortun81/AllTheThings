@@ -4,7 +4,7 @@
 _.WorldEvents =
 {
 	m(407, {	-- Darkmoon Island
-		n(-2, {		-- Vendors
+		n(VENDORS, {
 			n(55072,  {	-- Barum
 				["coord"] = { 47.5, 66.3, 407 },
 				["g"] = {

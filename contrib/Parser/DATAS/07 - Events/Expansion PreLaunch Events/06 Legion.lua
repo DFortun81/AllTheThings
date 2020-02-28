@@ -227,7 +227,7 @@ _.WorldEvents =
 							},
 						},
 					}),
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(44421, {	-- Anomalous Anomalies
 							["provider"] = { "n", 113986 },	-- Archmage Khadgar
 							["sourceQuests"] = { 44182 },	-- City Under Siege
@@ -318,7 +318,7 @@ _.WorldEvents =
 						--q(43286),	-- Demon Commander (REMOVED, from Legion pre-patch)
 						--q(43297),	-- Repel (Hillsbrad Foothills)
 					}),
-					n(-2, {	-- Vendors
+					n(VENDORS, {
 						n(109912, {	-- Captive Wyrmtongue <Reluctant 'Quartermaster'>
 							un(7, i(136924)),	-- Felbat Pup Pet
 							un(3, i(141604)),	-- Glaive of the Fallen
@@ -384,7 +384,7 @@ _.WorldEvents =
 							})),
 						}),
 					}),
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						n(112315, { 	-- Dread Infiltrator
 							["groups"] = {
 								un(7, i(140363)),	-- Pocket Fel Spreader Toy

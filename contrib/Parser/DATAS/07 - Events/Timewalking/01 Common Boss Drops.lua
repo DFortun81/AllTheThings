@@ -7,7 +7,7 @@ local InfiniteTimereaver =
 		["u"] = 42,	--  Timewalking
 		["lvl"] = 65,
 		["groups"] = {
-			n(-1, {	-- Common Boss Drops
+			n(COMMON_BOSS_DROPS, {
 				["maps"] = TIMEWALKING_DUNGEON_MAP_IDS,
 				["groups"] = {
 					{

@@ -36,7 +36,7 @@ _.WorldEvents =
 							}),
 						},
 					}),
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(57302, {	-- Alterac Valley Graveyards
 							["provider"] = { "n", 159811 },	-- Sergeant Durgen Stormpike
 							["isDaily"] = true,
@@ -250,7 +250,7 @@ _.WorldEvents =
 							["lvl"] = 10,
 						}),
 					}),
-					n(-2,  {	-- Vendors
+					n(VENDORS, {
 						n(158386, {	-- Time-Displaced Jorek Ironside <Frostwolf Supply Officer>
 							["coord"] = { 58.1, 33.6, 25 },
 							["races"] = HORDE_ONLY,
@@ -1686,7 +1686,7 @@ _.WorldEvents =
 					},
 				}),
 			}),
-			n(-17,  {	-- Quests
+			n(QUESTS, {
 				q(57300, {	-- Soldier of Time
 					["sourceQuests"] = { 57249 },	-- A Timely Invitation
 					["provider"] = { "n", 157113 },	-- Chromie
@@ -1747,7 +1747,7 @@ _.WorldEvents =
 					["u"] = 31,	-- WoW Anniversary
 				}),
 			}),
-			n(-2,   {	-- Vendors
+			n(VENDORS, {
 				n(158061, {	-- Historian Ma'di
 					["coord"] = { 50.7, 41.1, 75 },
 					["g"] = {

@@ -43,8 +43,7 @@ _.WorldEvents =
 					},
 				},
 			},
-			{	-- Quests
-				["npcID"] = -17,	-- Quests
+			n(QUESTS, {
 				["g"] = {
 					{	-- A Time to Reflect [Horde]
 						["questID"] = 43461,	-- A Time to Reflect
@@ -101,9 +100,8 @@ _.WorldEvents =
 						["u"] = 31,				-- WoW Anniversary Filter
 					},
 				},
-			},
-			{	-- Vendors
-				["npcID"] = -2,		-- Vendors
+			}),
+			n(VENDORS, {
 				["g"] = {
 					{	-- Historian Jupa [Horde]
 						["npcID"] = 110035,		-- Historian Jupa
@@ -134,7 +132,7 @@ _.WorldEvents =
 						},
 					},
 				},
-			},
+			}),
 		},
 	},
 };
