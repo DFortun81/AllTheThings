@@ -16,7 +16,7 @@ _.ExpansionFeatures =
 		},
 		["g"] = {
 			n(-10076, {	-- Assault: The Black Empire
-				n(-17,	{	-- Quests
+				n(QUESTS, {
 					-- Lesser Visions dailies
 					q(58168, {	-- A Dark, Glaring Reality
 						["coord"] = { 84.2, 51.7, 1530 },
@@ -229,7 +229,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
 				}),
-				n(-16,	{	-- Rares
+				n(RARES, {
 					n(154447, {	-- Brother Meller
 						["questID"] = 56237,
 						["coord"] = { 57.1, 41.0, 1530 },
@@ -392,7 +392,7 @@ _.ExpansionFeatures =
 						["isWorldQuest"] = true,
 					}),
 				}),
-				n(0,	{	-- Zone Drops
+				n(ZONEDROPS, {
 					i(170553, {	-- Void Focus Splinter
 						["description"] = "The fastest way is to farm them inside Lesser Vision.",
 					}),
@@ -400,7 +400,7 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-10077, {	-- Assault: The Warring Clans
-				n(-17,  {	-- Quests
+				n(QUESTS, {
 					-- Assault questline
 					q(57067, {	-- Mogu at the Gates	-- showed up when the Warring Clans assault was up. is there a pre-req? 
 						["coord"] = { 44.7, 73.8, 1530 },
@@ -501,7 +501,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
 				}),
-				n(-16,  {	-- Rares
+				n(RARES, {
 					n(157466, {	-- Anh-De the Loyal
 						["questID"] = 57363,
 						["coord"] = { 33.7, 68.6, 1530 },
@@ -748,12 +748,12 @@ _.ExpansionFeatures =
 						["isWorldQuest"] = true,
 					}),
 				}),
-				n(0,	{	-- Zone Drops
+				n(ZONEDROPS, {
 					i(174759),	-- Mogu Relic Fragment
 				}),
 			}),
 			n(-10078, {	-- Assault: The Endless Swarm
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					-- Assault questline
 					q(56574, {	-- Reflections in Amber
 						["crs"] = {
@@ -855,7 +855,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
 				}),
-				n(-16, {	-- Rares	-- Theory is that i(174855)	-- Bow of Calamity drops from these as well.  Put the drops under common boss drop header when we get more info?
+				n(RARES, {	-- Theory is that i(174855)	-- Bow of Calamity drops from these as well.  Put the drops under common boss drop header when we get more info?
 					n(160825, {	-- Amber-Shaper Esh'ri
 						["questID"] = 58300,
 						["coord"] = { 20.0, 74.6, 1530 },
@@ -1077,7 +1077,7 @@ _.ExpansionFeatures =
 						["isWorldQuest"] = true,
 					}),
 				}),
-				n(0,	{	-- Zone Drops
+				n(ZONEDROPS, {
 					i(174760),	-- Mantid Relic Fragment
 				}),
 			}),
@@ -1343,13 +1343,13 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(-38,  {	-- Professions
-					prof(356, {	-- Fishing
+					prof(FISHING, {
 						i(174456, {	-- Bottle of Gloop (pet)
 							["description"] = "Must be fishing in water currently affected by a N'Zoth assault.",
 						}),
 					}),
 				}),
-				n(-17,  {	-- Quests
+				n(QUESTS, {
 					q(56538, {	-- Clans of the Mogu
 						["coord"] = { 83.7, 27.1, 1530 },
 						["provider"] = { "n", 156003 },	-- Lorewalker Cho
@@ -1408,7 +1408,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 56539,	-- Finding the Rajani
 					}),
 				}),
-				n(-16,  {	-- Rares
+				n(RARES, {
 					n(157468, {	-- Tisiphon
 						["questID"] = 57364,
 						["coord"] = { 9.5, 67.4, 1530 },
@@ -1446,7 +1446,7 @@ _.ExpansionFeatures =
 						["isWorldQuest"] = true,
 					}),
 				}),
-				n(-2,   {	-- Vendors
+				n(VENDORS, {
 					n(160711, {	-- Zhang Ku
 						["coord"] = { 44.5, 75.4, 1530 },
 						["g"] = {
