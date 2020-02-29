@@ -9,232 +9,237 @@ _.Zones =
 			n(-38, {	-- Professions
 				prof(ALCHEMY, {
 					-- Tools of Trade Questline
-					q(50112, {	-- Casting the First Stone
-						["provider"] = { "n", 122703 },	-- Clever Kumali <Alchemist Trainer>
+					q(50112, {	-- Casting the First Stone (H)
+						["provider"] = { "n", 122703 },	-- Clever Kumali
 						["coord"] = { 42.2, 38.0, 1165 },
-						["races"] = HORDE_ONLY,
+						["description"] = "This quest chain requires 150 in Zandalari Alchemy.",
 						["requireSkill"] = ALCHEMY,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
-					q(50113, {	-- Ocular Extracts
-						["provider"] = { "n", 122703 },	-- Clever Kumali <Alchemist Trainer>
+					q(50113, {	-- Ocular Extracts (H)
+						["provider"] = { "n", 122703 },	-- Clever Kumali
 						["coord"] = { 42.2, 38.0, 1165 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 50112,	-- Casting the First Stone
+						["sourceQuest"] = 50112,	-- Casting the First Stone (H)
 						["requireSkill"] = ALCHEMY,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
-					q(50115, {	-- Changing the Scenery
-						["provider"] = { "n", 122703 },	-- Clever Kumali <Alchemist Trainer>
+					q(50115, {	-- Changing the Scenery (H)
+						["provider"] = { "n", 122703 },	-- Clever Kumali
 						["coord"] = { 42.2, 38.0, 1165 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 50112,	-- Casting the First Stone
+						["sourceQuest"] = 50112,	-- Casting the First Stone (H)
 						["requireSkill"] = ALCHEMY,
-					}),
-					q(50116, {	-- A Possible Solution
-						["provider"] = { "n", 122703 },	-- Clever Kumali <Alchemist Trainer>
-						["coord"] = { 42.2, 38.0, 1165 },
 						["races"] = HORDE_ONLY,
-						["sourceQuests"] = {
-							50115,	-- Changing the Scenery
-							50113,	-- Ocular Extracts
-						},
-						["requireSkill"] = ALCHEMY,
-					}),
-					q(50117, {	-- A Deathly Draught
-						["provider"] = { "n", 132680 },	-- Zukashi <Master of Transmutations>
-						["coord"] = { 65.2, 36.9, 863 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 50116,	-- A Possible Solution
-						["requireSkill"] = ALCHEMY,
-					}),
-					q(50118, {	-- A Stone's Throw
-						["provider"] = { "n", 132680 },	-- Zukashi <Master of Transmutations>
-						["coord"] = { 65.2, 36.9, 863 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 50116,	-- A Possible Solution
-						["requireSkill"] = ALCHEMY,
-					}),
-					q(50119, {	-- Chemically Compounded
-						["provider"] = { "n", 132680 },	-- Zukashi <Master of Transmutations>
-						["coord"] = { 65.2, 36.9, 863 },
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = {
-							50117,	-- A Deathly Draught
-							50118,	-- A Stone's Throw
-						},
-						["requireSkill"] = ALCHEMY,
-					}),
-					q(50120, {	-- A Recipe for Success
-						["provider"] = { "o", 280957 },	-- Zukashi's Satchel
-						["coord"] = { 62.9, 28.9, 863 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 50119,	-- Chemically Compounded
-						["requireSkill"] = ALCHEMY,
-						["g"] = {
-							recipe(260403),	-- Recipe: Silus' Sphere of Transmutation
-						},
+						["lvl"] = 120,
 					}),
 				}),
 				prof(BLACKSMITHING, {
 					-- Tools of Trade Questline
-					q(50276, {	-- A Recipe For the Ages
+					q(50276, {	-- A Recipe For the Ages (H)
 						["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
 						["coord"] = { 43.6, 38.3, 1165 },
+						["description"] = "Requires 150 Zandalari Blacksmithing.",
+						["requireSkill"] = BLACKSMITHING,
 						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 						["g"] = {
 							recipe(253145),	-- Khaz'gorian Smithing Hammer
 						},
 					}),
-					q(50277, {	-- Hammering Out Information
+					q(50277, {	-- Hammering Out Information (H)
 						["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
 						["coord"] = { 43.6, 38.3, 1165 },
+						["sourceQuest"] = 50276,	-- A Recipe For the Ages (H)
+						["requireSkill"] = BLACKSMITHING,
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 50276,	-- A Recipe For the Ages
+						["lvl"] = 120,
 					}),
-					q(50278, {	-- Deep In the Core
+					q(50278, {	-- Deep In the Core (H)
 						["provider"] = { "n", 127112 },	-- Forgemaster Zak'aal
 						["coord"] = { 43.6, 38.3, 1165 },
+						["sourceQuest"] = 50277,	-- Hammering Out Information (H)
+						["requireSkill"] = BLACKSMITHING,
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 50277,	-- Hammering Out Information
+						["lvl"] = 120,
 					}),	
 				}),
 				prof(ENCHANTING, {
 					-- Tools of Trade Questline
-					q(54161, {	-- What the Drust Knew
+					q(54161, {	-- What the Drust Knew (H)
 						["provider"] = { "n", 122702 },	-- Enchantress Quinni
 						["coord"] = { 47.1, 35.7, 1165 },
-						["requireSkill"] = ENCHANTING,
 						["description"] = "This quest chain requires 150 in Zandalari Enchanting.",
+						["requireSkill"] = ENCHANTING,
 						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(55635, {	-- A Voice on the Wind (H)
 						["provider"] = { "n", 147014 },	-- Ancient Drust Relic Dust
 						["coord"] = { 47.1, 35.3, 1165 },
-						["sourceQuest"] = 54161,	-- What the Drust Knew
+						["sourceQuest"] = 54161,	-- What the Drust Knew (H)
 						["requireSkill"] = ENCHANTING,
 						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+				}),
+				prof(ENGINEERING, {
+					-- Tools of Trade Questline
+					q(55031, {	-- It's Scrap Work... (H)
+						["provider"] = { "n", 131840 },	-- Shuga Blastcaps
+						["coord"] = { 45.1, 40.6, 1165 },
+						["description"] = "Requires 150 Zandalari Engineering.",
+						["requireSkill"] = ENGINEERING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(53783, {	-- In the Dunes (H)
+						["provider"] = { "n", 131840 },	-- Shuga Blastcaps
+						["coord"] = { 45.1, 40.6, 1165 },
+						["sourceQuest"] = 55031,	-- It's Scrap Work... (H)
+						["requireSkill"] = ENGINEERING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(53937, {	-- The Ub3r-Spanner (H)
+						["provider"] = { "n", 131840 },	-- Shuga Blastcaps
+						["coord"] = { 45.1, 40.6, 1165 },
+						["sourceQuest"] = 53833,	-- Vengeful Venture (H)
+						["requireSkill"] = ENGINEERING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+						["g"] = {
+							recipe(282975), -- Schematic: The Ub3r-Spanner
+						},
 					}),
 				}),
 				prof(HERBALISM, {
-					q(51432, {	-- An Unusual Mentor
+					-- Akunda's Bite
+					q(51432, {	-- An Unusual Mentor (H)
 						["provider"] = { "n", 122704 },	-- Jahden Fla
-						["lvl"] = 120,
 						["coord"] = { 42.2, 35.6, 1165 },
-						["races"] = HORDE_ONLY,
 						["description"] = "Requires 50 Zandalari Herbalism.",
 						["isBreadcrumb"] = true,
 						["requireSkill"] = HERBALISM,
+						["races"] = HORDE_ONLY,
+					}),
+					-- Riverbud
+					q(51230, {	-- Emergency Transplants
+						["provider"] = { "n", 122704 },	-- Jahden Fla
+						["coord"] = { 42.2, 35.6, 1165 },
+						["description"] = "Requires 50 Zandalari Herbalism.",
+						["requireSkill"] = HERBALISM,
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							recipe(252406),	-- Riverbud (Rank 2)
+						},
 					}),
 					q(51243, {	-- Breaking the Food Chain
 						["provider"] = { "n", 122704 },	-- Jahden Fla
 						["coord"] = { 42.2, 35.6, 1165 },
-						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 51230,	-- Emergency Transplants
 						["description"] = "Requires 150 Zandalari Herbalism.",
 						["requireSkill"] = HERBALISM,
-						["sourceQuest"] = 51230,	-- Emergency Transplants
+						["races"] = HORDE_ONLY,
 						["g"] = {
-							recipe(252407),	-- Riverbud [Rank 3]
+							recipe(252407),	-- Riverbud (Rank 3)
 						},
 					}),
-					q(51498, {	-- Cultural Signifcance
+					-- Sea Stalk
+					q(51498, {	-- Cultural Signifcance (H)
 						["provider"] = { "n", 122704 },	-- Jahden Fla
 						["coord"] = { 42.2, 35.6, 1165 },
-						["races"] = HORDE_ONLY,
 						["description"] = "Requires 50 Zandalari Herbalism.",
 						["requireSkill"] = HERBALISM,
+						["races"] = HORDE_ONLY,
 						["g"] = {
 							recipe(252422),	-- Sea Stalk (Rank 2)
 						},
 					}),
-					q(51230, {	-- Emergency Transplants
+					q(51503, {	-- Gathering Mementos (H)
 						["provider"] = { "n", 122704 },	-- Jahden Fla
 						["coord"] = { 42.2, 35.6, 1165 },
-						["races"] = HORDE_ONLY,
+						["sourceQuest"] = 51498,	-- Cultural Significance (H)
+						["description"] = "Requires 150 Zandalari Herbalism.",
 						["requireSkill"] = HERBALISM,
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							recipe(252423),	-- Sea Stalk (Rank 3)
+						},
+					}),
+					-- Star Moss
+					q(51464, {	-- Here in Spirit (H)
+						["provider"] = { "n", 122704 },	-- Jahden Fla
+						["coord"] = { 42.2, 35.6, 1165 },
 						["description"] = "Requires 50 Zandalari Herbalism.",
+						["requireSkill"] = HERBALISM,
+						["races"] = HORDE_ONLY,
 						["g"] = {
-							recipe(252406),	-- Riverbud [Rank 2]
+							recipe(252409),	-- Star Moss (Rank 2)
 						},
 					}),
-					q(51503, {	-- Gathering Mementos
+					q(51478, {	-- Ghost Busting (H)
 						["provider"] = { "n", 122704 },	-- Jahden Fla
 						["coord"] = { 42.2, 35.6, 1165 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 51498,	-- Cultural Significance
+						["sourceQuest"] = 51464,	-- Here in Spirit (H)
 						["description"] = "Requires 150 Zandalari Herbalism.",
 						["requireSkill"] = HERBALISM,
-						["g"] = {
-							recipe(252423),	-- Sea Stalk [Rank 3]
-						},
-					}),
-					q(51478, {	-- Ghost Busting
-						["provider"] = { "n", 122704 },	-- Jahden Fla
-						["coord"] = { 42.2, 35.6, 1165 },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 51464,	-- Here in Spirit
-						["requireSkill"] = HERBALISM,
-						["description"] = "Requires 150 Zandalari Herbalism.",
 						["g"] = {
 							recipe(252410),	-- Star Moss (Rank 3)
 						},
 					}),
-					q(51464, {	-- Here in Spirit
+					-- Siren's Pollen
+					q(51448, {	-- Learn From the Best (H)
 						["provider"] = { "n", 122704 },	-- Jahden Fla
 						["coord"] = { 42.2, 35.6, 1165 },
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = HERBALISM,
+						["sourceQuest"] = 51447,	-- Aromatic Pollenator (H)
 						["description"] = "Requires 50 Zandalari Herbalism.",
+						["requireSkill"] = HERBALISM,
+						["races"] = HORDE_ONLY,
 						["g"] = {
-							recipe(252409),	-- Star Moss [Rank 2]
+							recipe(252419),	-- Siren's Pollen (Rank 2)
 						},
 					}),
-					q(51448, {	-- Learn From the Best
+					q(51452, {	-- Pollen Punching (H)
 						["provider"] = { "n", 122704 },	-- Jahden Fla
 						["coord"] = { 42.2, 35.6, 1165 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 51447,	-- Aromatic Pollenator
-						["requireSkill"] = HERBALISM,
-						["description"] = "Requires 50 Zandalari Herbalism.",
-						["g"] = {
-							recipe(252419),	-- Siren's Pollen [Rank 2]
-						},
-					}),
-					q(51446, {	-- Meet Sweetflower
-						["provider"] = { "n", 122704 },	-- Jahden Fla
-						["coord"] = { 42.2, 35.6, 1165 },
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = HERBALISM,
-						["description"] = "Requires 50 Zandalari Herbalism.\nMake sure to bring |cFFFFD7007 Lane Snappers|r for the follow-up quest.",
-					}),
-					q(51481, {	-- More Anchor Pods
-						["provider"] = { "n", 122704 },	-- Jahden Fla
-						["coord"] = { 42.2, 35.6, 1165 },
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = HERBALISM,
+						["sourceQuest"] = 48758,	-- Disgustingly Damp Flower (H)
 						["description"] = "Requires 150 Zandalari Herbalism.",
-						["sourceQuest"] = 51480,	-- Enormous Anchor Pod
-						["g"] = {
-							recipe(252426),	-- Anchor Weed (Rank 3)
-						},
-					}),
-					q(51452, {	-- Pollen Punching
-						["provider"] = { "n", 122704 },	-- Jahden Fla
-						["coord"] = { 42.2, 35.6, 1165 },
-						["races"] = HORDE_ONLY,
 						["requireSkill"] = HERBALISM,
-						["description"] = "Requires 150 Zandalari Herbalism.",
-						["sourceQuest"] = 48758,	-- Disgustingly Damp Flower
+						["races"] = HORDE_ONLY,
 						["g"] = {
 							recipe(252420),	-- Siren's Pollen (Rank 3)
 						},
 					}),
-					q(51482, {	-- Seeking More Knowledge
+					-- Winter's Kiss
+					q(51446, {	-- Meet Sweetflower (H)
 						["provider"] = { "n", 122704 },	-- Jahden Fla
 						["coord"] = { 42.2, 35.6, 1165 },
-						["races"] = HORDE_ONLY,
+						["description"] = "Requires 50 Zandalari Herbalism.\nMake sure to bring |cFFFFD7007 Lane Snappers|r for the follow-up quest.",
 						["requireSkill"] = HERBALISM,
+						["races"] = HORDE_ONLY,
+					}),
+					-- Anchor Weed
+					q(51482, {	-- Seeking More Knowledge (H)
+						["provider"] = { "n", 122704 },	-- Jahden Fla
+						["coord"] = { 42.2, 35.6, 1165 },
 						["description"] = "Requires 100 Zandalari Herbalism.",
+						["requireSkill"] = HERBALISM,
+						["races"] = HORDE_ONLY,
 						["g"] = {
-							recipe(252425),	-- Anchor Weed [Rank 2]
+							recipe(252425),	-- Anchor Weed (Rank 2)
+						},
+					}),
+					q(51481, {	-- More Anchor Pods (H)
+						["provider"] = { "n", 122704 },	-- Jahden Fla
+						["coord"] = { 42.2, 35.6, 1165 },
+						["sourceQuest"] = 51480,	-- Enormous Anchor Pod (H)
+						["description"] = "Requires 150 Zandalari Herbalism.",
+						["requireSkill"] = HERBALISM,
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							recipe(252426),	-- Anchor Weed (Rank 3)
 						},
 					}),
 				}),
@@ -243,9 +248,10 @@ _.Zones =
 					q(49585, {	-- A Rocky Start (H)
 						["provider"] = { "o", 278570 },	-- Ancient Journal
 						["coord"] = { 46.9, 38.0, 1165 },
-						["requireSkill"] = JEWELCRAFTING,
 						["description"] = "This quest chain requires 150 in Zandalari Jewelcrafting.",
+						["requireSkill"] = JEWELCRAFTING,
 						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(49586, {	-- Digging Through the Past (H)
 						["provider"] = { "n", 130901 },	-- Chronicler Grazzul
@@ -253,6 +259,7 @@ _.Zones =
 						["sourceQuest"] = 49585,	-- A Rocky Start (H)
 						["requireSkill"] = JEWELCRAFTING,
 						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(49589, {	-- The Shrine of the Dawning
 						["provider"] = { "n", 122695 },	-- Seshuli
@@ -260,6 +267,7 @@ _.Zones =
 						["sourceQuest"] = 49586,	-- Digging Through the Past (H)
 						["requireSkill"] = JEWELCRAFTING,
 						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(49583, {	-- Out With the Old (H)
 						["provider"] = { "n", 150897 },	-- Shrine of the Dawning
@@ -268,6 +276,7 @@ _.Zones =
 						["sourceQuest"] = 49589,	-- The Shrine of the Dawning
 						["requireSkill"] = JEWELCRAFTING,
 						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(55592, {	-- A Promising Beginning (H)
 						["provider"] = { "n", 152490 },	-- Shrine of the Dawning
@@ -276,6 +285,7 @@ _.Zones =
 						["sourceQuest"] = 49583,	-- Out With the Old (H)
 						["requireSkill"] = JEWELCRAFTING,
 						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(49587, {	-- The Shrine of Nature
 						["provider"] = { "n", 122695 },	-- Seshuli
@@ -283,22 +293,25 @@ _.Zones =
 						["sourceQuest"] = 55592,	-- A Promising Beginning (H)
 						["requireSkill"] = JEWELCRAFTING,
 						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
-					q(49582, {	-- Atal'Dazar: Not All That Glitters... (H)
+					q(49582, {	-- Atal'Dazar: Not All That Glitters...
 						["provider"] = { "n", 150894 },	-- Shrine of Nature
 						["coord"] = { 43.2, 64.3, 862 },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49587,	-- The Shrine of Nature
 						["requireSkill"] = JEWELCRAFTING,
 						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(55596, {	-- Setting Things Right (H)
 						["provider"] = { "n", 152496 },	-- Shrine of Nature
 						["coord"] = { 43.2, 64.3, 862 },
 						["modelScale"] = 2,
-						["sourceQuest"] = 49582,	-- Atal'Dazar: Not All That Glitters... (H)
+						["sourceQuest"] = 49582,	-- Atal'Dazar: Not All That Glitters...
 						["requireSkill"] = JEWELCRAFTING,
 						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(49588, {	-- The Shrine of the Sands
 						["provider"] = { "n", 122695 },	-- Seshuli
@@ -306,22 +319,25 @@ _.Zones =
 						["sourceQuest"] = 55592,	-- A Promising Beginning
 						["requireSkill"] = JEWELCRAFTING,
 						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
-					q(49581, {	-- Sun-Speckled Dunes (H)
+					q(49581, {	-- Sun-Speckled Dunes
 						["provider"] = { "n", 150895 },	-- Shrine of the Sands
 						["coord"] = { 44.2, 38.0, 864 },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49588,	-- The Shrine of the Sands
 						["requireSkill"] = JEWELCRAFTING,
 						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(55594, {	-- Polished Up (H)
 						["provider"] = { "n", 152493 },	-- Shrine of the Sands
 						["coord"] = { 44.2, 38.0, 864 },
 						["modelScale"] = 2,
-						["sourceQuest"] = 49581,	-- Sun-Speckled Dunes (H)
+						["sourceQuest"] = 49581,	-- Sun-Speckled Dunes
 						["requireSkill"] = JEWELCRAFTING,
 						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(49599, {	-- The Missing Chapter (H)
 						["provider"] = { "n", 122695 },	-- Seshuli
@@ -332,6 +348,7 @@ _.Zones =
 						},
 						["requireSkill"] = JEWELCRAFTING,
 						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 						["g"] = {
 							recipe(256703),	-- Design: Jewelhammer's Focus
 						},
@@ -342,61 +359,70 @@ _.Zones =
 					q(53995, {	-- The Tauren Tanner
 						["provider"] = { "n", 122698 },	-- Xanjo
 						["coord"] = { 44.1, 34.6, 1165 },
-						["races"] = HORDE_ONLY,
+						["description"] = "Requires 150 Zandalari Leatherworking.",
 						["requireSkill"] = LEATHERWORKING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(55216, {	-- The Audition (H)
 						["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 						["coord"] = { 53.4, 92.5, 1165 },
-						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 53995,	-- The Tauren Tanner
 						["requireSkill"] = LEATHERWORKING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(55217, {	-- Repaying the Life Debt
 						["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 						["coord"] = { 53.4, 92.5, 1165 },
-						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55216,	-- The Audition (H)
 						["requireSkill"] = LEATHERWORKING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(55218, {	-- Sheza's Prized Leather
 						["provider"] = { "n", 3037 },	-- Sheza Wildmane
 						["coord"] = { 69.7, 26.7, 88 },
-						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55217,	-- Repaying the Life Debt
 						["requireSkill"] = LEATHERWORKING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(55219, {	-- Dropping by the Base
 						["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 						["coord"] = { 53.4, 92.5, 1165 },
-						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55216,	-- The Audition (H)
 						["requireSkill"] = LEATHERWORKING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(55220, {	-- Bass Fishing
 						["provider"] = { "n", 108017 },	-- Torv Dubstomp
 						["coord"] = { 54.9, 77.9, 750 },
-						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55219,	-- Dropping by the Base
 						["requireSkill"] = LEATHERWORKING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
-					q(55221, {	-- Picking Bones
+					q(55221, {	-- Picking Bones (H)
 						["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 						["coord"] = { 53.4, 92.5, 1165 },
-						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55216,	-- The Audition (H)
 						["requireSkill"] = LEATHERWORKING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(55222, {	-- Make Some Noise (H)
 						["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 						["coord"] = { 53.4, 92.5, 1165 },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							55218,	-- Sheza's Prized Leather
 							55220,	-- Bass Fishing
-							55221,	-- Picking Bones
+							55221,	-- Picking Bones (H)
 						},
 						["requireSkill"] = LEATHERWORKING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 						["g"] = {
 							un(15, recipe(293135)),	-- Recipe: Drum of Primal Might
 						},
@@ -404,115 +430,129 @@ _.Zones =
 					q(55223, {	-- Instruments of Destruction (H)
 						["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 						["coord"] = { 53.4, 92.5, 1165 },
-						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 55222,	-- Make Some Noise (H)
 						["requireSkill"] = LEATHERWORKING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 						["g"] = {
 							recipe(293076),	-- Recipe: Mallet of Thunderous Skins
 						},
 					}),
 				}),
 				prof(MINING, {
+					-- Monelite Deposit
 					q(51962, {	-- Lumbering Away
 						["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = MINING,
 						["description"] = "Requires 50 Zandalari Mining",
+						["requireSkill"] = MINING,
+						["races"] = HORDE_ONLY,
 						["g"] = {
-							recipe(253334),	-- Monelite Deposit Rank 2
+							recipe(253334),	-- Monelite Deposit (Rank 2)
 						},
 					}),
 					q(51964, {	-- Insufferable Bloodsuckers
 						["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = MINING,
 						["description"] = "Requires 130 Zandalari Mining",
+						["requireSkill"] = MINING,
+						["races"] = HORDE_ONLY,
 						["g"] = {
-							recipe(253335),	-- Monelite Deposit Rank 3
+							recipe(253335),	-- Monelite Deposit (Rank 3)
 						},
 					}),
+					-- Monelite Seam
 					q(51965, {	-- Lending a Hand
 						["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = MINING,
 						["description"] = "Requires 50 Zandalari Mining",
+						["requireSkill"] = MINING,
+						["races"] = HORDE_ONLY,
 						["g"] = {
-							recipe(253343),	-- Monelite Seam Rank 2
+							recipe(253343),	-- Monelite Seam (Rank 2)
 						},
 					}),
-					q(51971, {	-- An Exquisite Brooch
+					-- Storm Silver Deposit
+					q(52014, {	-- Ritualistic Prepartions (H)
 						["provider"] = { "n", 122694 },	-- Secott the Goldsmith
-						["coord"] = { 44.0, 39.0, 1165 },
-						["races"] = HORDE_ONLY,
+						["coords"] = {
+							{ 44.0, 39.0, 1165 },	-- Trainer Location
+							{ 44.0, 38.3, 1165 },	-- Forge
+							{ 52.8, 95.6, 1165 },	-- Ingot Blessing
+						},
+						["description"] = "Requires 50 Zandalari Mining\n44.0, 38.3 in Daza'alor is location of the Forge\n52.8, 95.6 in Daza'alor harbor is the location to get the Blessing",
 						["requireSkill"] = MINING,
-						["description"] = "Requires 150 Zandalari Mining",
+						["races"] = HORDE_ONLY,
 						["g"] = {
-							recipe(253344),	-- Monelite Seam Rank 3
+							recipe(253337),	-- Storm Silver Deposit (Rank 2)
 						},
 					}),
-					q(52014, {	-- Ritualistic Prepartions
+					q(52015, {	-- Brined Justice (H)
 						["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = MINING,
-						["description"] = "Requires 50 Zandalari Mining",
-						["g"] = {
-							recipe(253337),	-- Storm Silver Deposit Rank 2
-						},
-					}),
-					q(52015, {	-- Brined Justice
-						["provider"] = { "n", 122694 },	-- Secott the Goldsmith
-						["coord"] = { 44.0, 39.0, 1165 },
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = MINING,
+						["sourceQuest"] = 52014,	-- Ritualistic Preparations (H)
 						["description"] = "Requires 135 Zandalari Mining",
+						["requireSkill"] = MINING,
+						["races"] = HORDE_ONLY,
 						["g"] = {
-							recipe(253338),	-- Storm Silver Deposit Rank 3
+							recipe(253338),	-- Storm Silver Deposit (Rank 3)
 						},
 					}),
-					q(52016, {	-- Three Sheets to the Wind
+					-- Storm Silver Seam
+					q(52016, {	-- Three Sheets to the Wind (H)
 						["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = MINING,
 						["description"] = "Requires 125 Zandalari Mining",
+						["requireSkill"] = MINING,
+						["races"] = HORDE_ONLY,
 						["g"] = {
-							recipe(253346),	-- Storm Silver Seam Rank 2
+							recipe(253346),	-- Storm Silver Seam (Rank 2)
 						},
 					}),
 					q(52017, {	-- Back to Biru
 						["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 						["coord"] = { 44.0, 39.0, 1165 },
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = MINING,
+						["sourceQuest"] = 52016,	-- Three Sheets to the Wind (H)
 						["description"] = "Requires 150 Zandalari Mining",
+						["requireSkill"] = MINING,
+						["races"] = HORDE_ONLY,
 					}),
-					q(52043, {	-- The Wrath of Grapes
+					q(52043, {	-- The Wrath of Grapes (H)
 						["provider"] = { "n", 139634 },	-- Biru The Drunk
 						["coord"] = { 52.7, 84.3, 1165 },
-						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 52017,	-- Back to Biru
-						["requireSkill"] = MINING,
 						["description"] = "Requires 150 Zandalari Mining",
+						["requireSkill"] = MINING,
+						["races"] = HORDE_ONLY,
 						["g"] = {
-							recipe(253347),	-- Storm Silver Seam Rank 3
+							recipe(253347),	-- Storm Silver Seam (Rank 3)
 						},
-					}),
-					i(161079, {	-- Exceptional Platinum Shard
-						q(52046, {	-- An Exceptional Platinum Shard
-							["races"] = HORDE_ONLY,
-							["requireSkill"] = MINING,
-							["description"] = "Requires 130 Zandalari Mining",
-							["g"] = {
-								recipe(253340),	-- Platinum Deposit Rank 2
-							},
-						}),
 					}),
 				}),
 				prof(SKINNING, {
+					-- Bone Gathering
+					q(52216, {	-- Hexoskeleton
+						["provider"] = { "n", 122699 },	-- Rana the Cutta
+						["coord"] = { 43.8, 34.7, 1165 },
+						["description"] = "Requires 50 Zandalari Skinning",
+						["requireSkill"] = SKINNING,
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							recipe(257153),	-- Skinning Technique: Bone Gathering (Rank 2)
+						},
+					}),
+					q(52217, {	-- Loa Fit For A King
+						["provider"] = { "n", 122699 },	-- Rana the Cutta
+						["coord"] = { 43.8, 34.7, 1165 },
+						["sourceQuest"] = 52216,	-- Hexoskeleton
+						["description"] = "Requires 150 Zandalari Skinning",
+						
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							recipe(257154),	-- Skinning Technique: Bone Gathering (Rank 3)
+						},
+					}),
+					-- Leather Gathering
 					q(51575, {	-- Lost But Not Forgotten
 						["provider"] = { "n", 122699 },	-- Rana the Cutta
 						["coord"] = { 43.8, 34.7, 1165 },
@@ -520,140 +560,121 @@ _.Zones =
 						["description"] = "Requires 50 Zandalari Skinning",
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							recipe(257147),	-- Leather Gathering (Rank 2)
+							recipe(257147),	-- Skinning Technique: Leather Gathering (Rank 2)
 						},
 					}),
-					q(52213, {	-- Ancient Skinning Knife
-						["provider"] = { "i", 161431 },	-- Ancient Skinning Knife
-						["sourceQuest"] = 51575,	-- Lost But Not Forgotten
-						["requireSkill"] = SKINNING,
-						["description"] = "Requires 150 Zandalari Skinning to get the item.",
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							recipe(257148),	-- Leather Gathering (Rank 3)
-						},
-					}),
+					-- Scale Gathering
 					q(52214, {	-- Ceremonial Vestments
 						["provider"] = { "n", 122699 },	-- Rana the Cutta
 						["coord"] = { 43.8, 34.7, 1165 },
-						["requireSkill"] = SKINNING,
 						["description"] = "Requires 50 Zandalari Skinning",
+						["requireSkill"] = SKINNING,
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							recipe(257150),	-- Scale Gathering (Rank 2)
+							recipe(257150),	-- Skinning Technique: Scale Gathering (Rank 2)
 						},
 					}),
 					q(52215, {	-- A Thicker Thread
 						["provider"] = { "n", 122699 },	-- Rana the Cutta
 						["coord"] = { 43.8, 34.7, 1165 },
 						["sourceQuest"] = 52214,	-- Ceremonial Vestments
-						["requireSkill"] = SKINNING,
 						["description"] = "Requires 150 Zandalari Skinning",
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							recipe(257151),	-- Scale Gathering (Rank 3)
-						},
-					}),
-					q(52216, {	-- Hexoskeleton
-						["provider"] = { "n", 122699 },	-- Rana the Cutta
-						["coord"] = { 43.8, 34.7, 1165 },
 						["requireSkill"] = SKINNING,
-						["description"] = "Requires 50 Zandalari Skinning",
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							recipe(257153),	-- Bone Gathering (Rank 2)
-						},
-					}),
-					q(52217, {	-- Loa Fit For A King
-						["provider"] = { "n", 122699 },	-- Rana the Cutta
-						["coord"] = { 43.8, 34.7, 1165 },
-						["sourceQuest"] = 52216,	-- Hexoskeleton
-						["requireSkill"] = SKINNING,
-						["description"] = "Requires 150 Zandalari Skinning",
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							recipe(257154),	-- Bone Gathering (Rank 3)
+							recipe(257151),	-- Skinning Technique: Scale Gathering (Rank 3)
 						},
 					}),
 				}),
 				prof(TAILORING, {
 					-- Tools of Trade Questline
-					q(53938, {	-- A Friend in Needle
-						["provider"] = { "n", 145022 },	-- Timeweaver Delormi <Synchronous Tailors>
+					q(53938, {	-- A Friend in Needle (H)
+						["provider"] = { "n", 145022 },	-- Timeweaver Delormi
 						["coord"] = { 43.5, 34.8, 1165 },
-						["races"] = HORDE_ONLY,
 						["requireSkill"] = TAILORING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
-					q(53940, {	-- A Stitch in Time
-						["provider"] = { "n", 145022 },	-- Timeweaver Delormi <Synchronous Tailors>
+					q(53940, {	-- A Stitch in Time (H)
+						["provider"] = { "n", 145022 },	-- Timeweaver Delormi
 						["coord"] = { 43.5, 34.8, 1165 },
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 53938,	-- A Friend in Needle
+						["sourceQuest"] = 53938,	-- A Friend in Needle (H)
 						["requireSkill"] = TAILORING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
-					q(55188, {	-- Tearing at the Seams
-						["provider"] = { "n", 145022 },	-- Timeweaver Delormi <Synchronous Tailors>
-						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 53940,	-- A Stitch in Time
+					q(55188, {	-- Tearing at the Seams (H)
+						["provider"] = { "n", 145022 },	-- Timeweaver Delormi
+						["sourceQuest"] = 53940,	-- A Stitch in Time (H)
 						["requireSkill"] = TAILORING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(53810, {	-- The Severed Thread
-						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi
 						["coord"] = { 62.0, 53.9, 75 },
 						["sourceQuests"] = {
-							55177,	-- Tearing at the Seams (Alliance)
-							55188,	-- Tearing at the Seams (Horde)
+							55177,	-- Tearing at the Seams (A)
+							55188,	-- Tearing at the Seams (H)
 						},
 						["requireSkill"] = TAILORING,
+						["lvl"] = 120,
 					}),
 					q(53813, {	-- Rolling Up the Sleeves
-						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi
 						["coord"] = { 43.5, 34.8, 75 },
 						["sourceQuests"] = {
-							55177,	-- Tearing at the Seams (Alliance)
-							55188,	-- Tearing at the Seams (Horde)
+							55177,	-- Tearing at the Seams (A)
+							55188,	-- Tearing at the Seams (H)
 						},
 						["requireSkill"] = TAILORING,
+						["lvl"] = 120,
 					}),
 					q(53858, {	-- Step Into Her Shoes
-						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi
 						["coord"] = { 39.1, 63.3, 75 },
 						["sourceQuests"] = {
 							53810,	-- The Severed Thread
 							53813,	-- Rolling Up the Sleeves
 						},
 						["requireSkill"] = TAILORING,
+						["lvl"] = 120,
 					}),
 					q(53866, {	-- If The Shoe Fits...
-						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi
 						["coord"] = { 63.8, 68.8, 680 },
 						["sourceQuest"] = 53858,	-- Step Into Her Shoes
 						["requireSkill"] = TAILORING,
+						["lvl"] = 120,
 					}),
 					q(55214, {	-- Seam Stress
-						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi
 						["coord"] = { 64.2, 69.5, 680 },
 						["sourceQuest"] = 53866,	-- If The Shoe Fits...
 						["requireSkill"] = TAILORING,
+						["lvl"] = 120,
 					}),
 					q(53868, {	-- Saving Nine
-						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi
 						["coord"] = { 7.2, 24.5, 942 },
 						["sourceQuest"] = 55214,	-- Seam Stress
 						["requireSkill"] = TAILORING,
+						["lvl"] = 120,
 					}),
 					q(53869, {	-- Killing Time
-						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi
 						["coord"] = { 71.6, 39.8, 115 },
 						["sourceQuest"] = 53868,	-- Saving Nine
 						["requireSkill"] = TAILORING,
+						["lvl"] = 120,
 					}),
-					q(53962, {	-- Cut from the Same Cloth
-						["provider"] = { "n", 151134 },	-- Timeweaver Delormi <Synchronous Tailors>
+					q(53962, {	-- Cut from the Same Cloth (H)
+						["provider"] = { "n", 151134 },	-- Timeweaver Delormi
 						["coord"] = { 71.6, 39.8, 115 },
-						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 53869,	-- Killing Time
 						["requireSkill"] = TAILORING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 						["g"] = {
 							recipe(292946, {	-- Recipe: Synchronous Thread
 								["requireSkill"] = TAILORING,

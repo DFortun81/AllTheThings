@@ -977,6 +977,8 @@ for key,value in pairs({
 	[303016] = "|cFFFFFFFFSchritt 14:|r Gewöhnlicher Kieselstein XIII",
 	[303017] = "|cFFFFFFFFSchritt 13:|r Gewöhnlicher Kieselstein XII",
 	[303018] = "|cFFFFFFFFSchritt 12:|r Gewöhnlicher Kieselstein XI",
+	[307265] = "Steckbrief",
+	[307748] = "Brief der Venture Co.",
 	[310709] = "Durchnässte Truhe",
 	[311218] = "Xal'atath, Klinge des Schwarzen Imperiums",
 	[311902] = "Lockere Teile",

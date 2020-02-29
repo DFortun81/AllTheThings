@@ -832,7 +832,7 @@ for key,value in pairs({
 	[280619] = "Vecchia Cassa Rinforzata",
 	[280727] = "Nota Carbonizzata",
 	[280751] = "Cassa del Tesoro Piccola",
---	[280755] = "Quintin's Satchel",								-- No translation
+	[280755] = "Borsa di Quintin",
 	[280951] = "Spoglie dei Bracescura",
 --	[280957] = "Zukashi's Satchel",								-- No translation
 	[281092] = "Scorta del Taumaturgo",
@@ -962,10 +962,12 @@ for key,value in pairs({
 	[303016] = "|cFFFFFFFFStep 14:|r Sasso Comune XIII",
 	[303017] = "|cFFFFFFFFStep 13:|r Sasso Comune XII",
 	[303018] = "|cFFFFFFFFStep 12:|r Sasso Comune XI",
+	[307265] = "Manifesto dei Ricercati",
+--	[307748] = "Venture Co. Letter",							-- No Translation
 	[310709] = "Cassa Fradicia",
 	[311218] = "Xal'atath, Lama dell'Impero Nero",
---	[311902] = "Loose Parts",	-- Loose Parts (Horde Won)		-- No Translation
---	[311903] = "Loose Parts",	-- Loose Parts (Alliance Won)	-- No Translation
+	[311902] = "Componenti Sciolti",	-- Loose Parts (Horde Won)
+	[311903] = "Componenti Sciolti",	-- Loose Parts (Alliance Won)
 	[322413] = "Cassa Luccicante",
 	[322533] = "Tomo degli Elementi di Mardivas",
 	[324407] = "Radici del Vuoto",

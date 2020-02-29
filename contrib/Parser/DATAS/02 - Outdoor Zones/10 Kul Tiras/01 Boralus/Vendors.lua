@@ -616,12 +616,20 @@ _.Zones =
 									i(164463),	-- Tomb-Keeper's Legguards
 									i(164465),	-- Tomb-Keeper's Sabatons
 								}),
+								n(-319, {	-- Weapons
+									i(168644),	-- Converted Carrot Carbine
+									i(164282),	-- Plundered Jadefury Shield
+									i(164335),	-- Plundered Paragon's Mace
+									i(164284),	-- Plundered Poleaxe of Intimidation
+								}),
 								n(-160, {	-- Mounts
 									i(163582),	-- Qinsho's Eternal Hound - wowhead
 									i(166470),	-- Stonehide Elderhorn - wowhead
 								}),
 								n(-162, {	-- Pets
 									i(169322),	-- Adventurous Hopling Pack
+									i(163815),	-- Littlehoof
+									i(163810),	-- Thistlebrush Bud
 								}),
 							},
 						}),
@@ -927,7 +935,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(168024, {	-- Recipe: Iwen's Enchanting Rod
-							["cost"] = 8800000,	-- 880g
+							["soureceQuest"] = 54002,	-- Putting it All Togethereeee
 						}),
 					},
 				}),
@@ -936,7 +944,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(166422, {	-- Recipe: Silas' Sphere of Transmutation
-							["cost"] = 9350000,	-- 935g
+							["sourceQuest"] = 50129,	-- A Recipe for Success (A)
 						}),
 					},
 				}),
@@ -945,7 +953,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(168022, {	-- Recipe: Khaz'gorian Smithing Hammer
-							["cost"] = 9350000,	-- 935g
+							["sourceQuest"] = 50275,	-- Anvil's Away (A)
 						}),
 					},
 				}),
@@ -954,7 +962,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(168025, {	-- Book of Schematics: Ub3r-Spanner
-							["cost"] = 9900000,	-- 990g
+							["sourceQuest"] = 53949,	-- The Ub3r-Spanner (A)
 						}),
 					},
 				}),
@@ -1585,7 +1593,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(168027, {	-- Recipe: Jewelhammer's Focus
-							["cost"] = 9350000,	-- 935g
+							["sourceQuest"] = 49584,	-- The Missing Chapter (A)
 						}),
 					},
 				}),
