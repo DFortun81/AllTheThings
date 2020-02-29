@@ -809,7 +809,7 @@ _.Zones =
 										["cost"] = { { "c", 1719, 25000 }, },	-- 25,000 Corrupted Mementos
 									}),
 									i(174361, {	-- Black Dragonscale Backpack
-										["cost"] = { { "c", 1719, 40000 }, },	-- 40,000 Corrupted Mementos
+										["cost"] = { { "c", 1719, 5000 }, },	-- 5,000 Corrupted Mementos
 									}),
 									i(174770, {	-- Wicked Swarmer
 										["cost"] = { { "c", 1719, 100000 }, },	-- 100,000 Corrupted Mementos

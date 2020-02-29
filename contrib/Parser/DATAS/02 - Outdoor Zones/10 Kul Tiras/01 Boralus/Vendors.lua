@@ -935,7 +935,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(168024, {	-- Recipe: Iwen's Enchanting Rod
-							["soureceQuest"] = 54002,	-- Putting it All Togethereeee
+							["sourceQuest"] = 54002,	-- Putting it All Together
 						}),
 					},
 				}),
