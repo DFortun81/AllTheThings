@@ -94,6 +94,10 @@ _.Zones =
 				}),
 				n(3792,   {	-- Terrowulf Packlord
 					["coord"] = { 53.0, 37.6, 63 },
+					["g"] = {
+						un(7, i(5753)),	-- Ruffled Chaplet
+						un(7, i(5754)),	-- Wolfpack Medallion
+					},
 				}),
 				n(12037,  {	-- Ursol'lok
 					["coords"] = {

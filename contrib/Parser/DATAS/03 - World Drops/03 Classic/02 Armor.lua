@@ -67,7 +67,6 @@ _.WorldDrops =
 				i(12024),	-- Vanadium Talisman
 				i(12027),	-- Vermilion Necklace
 				i(16009),	-- Voice Amplification Modulator
-				un(7, i(5754)),	-- Wolfpack Medallion
 			}),
 			n(-321, {	-- Shoulder
 				i(13133),	-- Drakesfire Epaulets

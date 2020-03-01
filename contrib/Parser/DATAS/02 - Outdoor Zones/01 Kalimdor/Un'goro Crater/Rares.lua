@@ -22,6 +22,9 @@ _.Zones =
 						{ 32.0, 78.6, 78 },
 						{ 33.0, 79.4, 78 },
 					},
+					["g"] = {
+						i(45052),	-- Gruffscale Leggings
+					},
 				}), 
 				n(6584,   {	-- King Mosh
 					["coords"] = {
