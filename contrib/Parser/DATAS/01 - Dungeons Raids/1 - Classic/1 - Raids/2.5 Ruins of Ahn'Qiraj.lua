@@ -849,33 +849,6 @@ _.Instances = { tier(1, {	-- Classic
 					i(21488),	-- Fetish of Chitinous Spikes
 				},
 			}),
-			n(15333, {	-- Silicate Feeder
-				["description"] = "These bugs are like loot piñatas. Their loot tables for random greens is insanely long and despite the individual % for each piece being low, they have an overall common drop rate for rare world drops. If you're going for 100%, we advise that you kill these guys whenever you see them.",
-				["groups"] = {
-					i(14304),	-- Bonecaster's Belt
-					i(15295),	-- Quillfire Bow
-					i(14311),	-- Celestial Bindings
-					i(15218),	-- Crystal Sword
-					i(14295),	-- Arachnidian Legguards
-					i(14802),	-- Bloodlust Gauntlets
-					i(15237),	-- Corpse Harvester
-					i(14671),	-- Pridelord Boots
-					i(14321),	-- Resplendent Cloak
-					i(15229),	-- Blesswind Hammer
-					i(14674),	-- Pridelord Girdle
-					i(14299),	-- Bonecaster's Boots
-					i(15254),	-- Dark Espadon
-					i(14855),	-- Vanguard Gauntlets
-					i(21800),	-- Silithid Husked Launcher
-					i(14314),	-- Celestial Handwraps
-					i(15391),	-- Jadefire Cap
-					i(15181),	-- Praetorian Boots
-					i(15663),	-- Impenetrable Belt
-					i(15217),	-- Widow Blade
-					i(21803),	-- Helm of the Holy Avenger
-					i(14813),	-- Warstrike Cape
-				},
-			}),
 			e(1541, { 	-- Ayamiss the Hunter
 				["creatureID"] = 15369,
 				["groups"] = {
