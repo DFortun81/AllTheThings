@@ -604,11 +604,6 @@ _.Instances = { tier(1, {	-- Classic
 				["description"] = "Speak with Lieutenant General Andorov before starting this encounter if you need to interact with the vendor.",
 				["creatureID"] = 15341,
 			}),
-			n(15335, {	-- Flesh Hunter
-				i(20768, {	-- Oozing Bag <Disgusting Oozling>
-					i(20769),
-				}),
-			}),
 			e(1540, { 	-- Buru the Gorger
 				["creatureID"] = 15370,
 				["groups"] = {
