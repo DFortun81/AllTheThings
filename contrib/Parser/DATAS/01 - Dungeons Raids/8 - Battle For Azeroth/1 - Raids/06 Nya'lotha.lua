@@ -115,6 +115,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							157254,	-- Tek'ris
 						},
 						["g"] = {
+							i(174449),	-- Ra'kim (pet)
 							i(174106),	-- Qwor N'lyeth
 							i(172192),	-- The All-Seeing Eye
 							i(174154),	-- Nightmarish Chain Shackles
