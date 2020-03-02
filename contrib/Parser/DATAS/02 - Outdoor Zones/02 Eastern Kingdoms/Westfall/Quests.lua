@@ -6,6 +6,13 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(52, {	-- Westfall
 			n(QUESTS, {
+				q(6181, {	-- A Swift Message
+					["provider"] = { "n", 491 },	-- Quartermaster Lewis
+					["coord"] = { 56.8, 47.2, 52 },
+					["races"] = { HUMAN },
+					["lvl"] = 10,
+					["u"] = 40,
+				}),
 				q(26320, {	-- A Vision of the Past
 					["sourceQuests"] = { 26319 },	-- Secrets Revealed
 					["coord"] = { 42.8, 65.1, 52 },
@@ -187,7 +194,7 @@ _.Zones =
 					["provider"] = { "n", 392 },	-- Captain Grayson
 				}),
 				q(2359,  {	-- Klaven's Tower
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,
 					["g"] = {
@@ -346,7 +353,7 @@ _.Zones =
 					},
 				}),
 				q(1652,  {	-- The Tome of Valor
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 6182 },	-- Daphne Stilwell
 					["u"] = 40,	-- Legacy Quests
