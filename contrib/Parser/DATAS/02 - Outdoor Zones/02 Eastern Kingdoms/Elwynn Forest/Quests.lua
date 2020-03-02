@@ -166,6 +166,7 @@ _.Zones =
 					["races"] = { HUMAN },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
+					["lvl"] = 20,
 				}),
 				q(14079, {	-- Learn to Ride in Elwynn Forest
 					["u"] = 40,

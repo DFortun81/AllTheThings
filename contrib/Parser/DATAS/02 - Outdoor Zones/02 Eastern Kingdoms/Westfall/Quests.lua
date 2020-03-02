@@ -64,6 +64,14 @@ _.Zones =
 						i(3343),	-- Captain Sanders' Booty Bag
 					},
 				}),
+				q(6281, {	-- Continue to Stormwind
+					["provider"] = { "n", 523 },	-- Thor
+					["coord"] = { 56.6, 49.4, 52 },
+					["races"] = { HUMAN },
+					["sourceQuest"] = 6181,	-- A Swift Message
+					["lvl"] = 10,
+					["u"] = 40,
+				}),
 				q(43287, {	-- Defend
 					["u"] = 40,	-- Legacy Quests (Legion prepatch)
 				}),
@@ -114,6 +122,7 @@ _.Zones =
 					["coord"] = { 54.4, 33.2, 52 },	-- center of area where Harvest Watchers spawn
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = { 114 },	-- Harvest Watcher
+					["lvl"] = 10,
 				}),
 				q(26266, {	-- Hope for the People
 					["sourceQuests"] = { 26270 },	-- You Have Our Thanks
