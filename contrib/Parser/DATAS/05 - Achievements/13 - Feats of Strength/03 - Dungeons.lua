@@ -92,6 +92,8 @@ _.Achievements =
 						crit(8),	-- The Underrot
 						crit(9),	-- Tol Dagor
 						crit(10),	-- Waycrest Manor
+						crit(11),	-- Mechagon Junkyard
+						crit(12),	-- Mechagon Workshop
 					}),
 					ach(14145, {	-- Battle for Azeroth Keystone Master: Season Four
 						i(174836),	-- Awakened Mindborer
@@ -105,6 +107,8 @@ _.Achievements =
 						crit(8),	-- The Underrot
 						crit(9),	-- Tol Dagor
 						crit(10),	-- Waycrest Manor
+						crit(11),	-- Mechagon Junkyard
+						crit(12),	-- Mechagon Workshop
 					}),
 					un(2, ach(9622, {		-- Challenge Master: Auchindoun
 						un(39, title(293)),	-- the Soul Preserver
