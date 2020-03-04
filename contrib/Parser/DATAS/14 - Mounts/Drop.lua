@@ -12,12 +12,14 @@ _.Mounts =
 		i(152816),	-- Antoran Charhound
 		i(116669),	-- Armored Razorback
 		i(68823),	-- Armored Razzashi Raptor
+		i(166432),	-- Ashenvale Chimaera
 		i(32458),	-- Ashes of Al'ar
 		i(87777),	-- Astral Cloud Serpent
 		i(153044),	-- Avenging Felcrusher Mount
 		i(43952),	-- Azure Drake
 		i(152903),	-- Biletooth Gnasher Mount [Note: Drop Argus]
 		i(43986),	-- Black Drake
+		i(166428),	-- Blackpaw
 		i(94292),	-- Black Primal Raptor
 		i(77067),	-- Blazing Drake
 		i(153043),	-- Blessed Felcrusher Mount
@@ -48,6 +50,7 @@ _.Mounts =
 		i(123890),	-- Felsteel Annihilator
 		i(30480),	-- Fiery Warhorse
 		i(71665),	-- Flametalon of Alysrazor
+		i(166433),	-- Frightened Kodo
 		i(116794),	-- Garn Nighthowl
 		i(116779),	-- Garn Steelmaw
 		i(116673),	-- Giant Coldsnout
@@ -72,6 +75,7 @@ _.Mounts =
 		i(174752),	-- Ivory Cloud Serpent
 		i(94231),	-- Jade Primordial Direhorn
 		i(168370),	-- Junkheap Drifter
+		i(166435),	-- Kaldorei Nightsaber
 		i(104253),	-- Kor'kron Juggernaut
 		i(152844),	-- Lambent Mana Ray
 		i(163575),	-- Leaping Veinseeker
@@ -138,6 +142,7 @@ _.Mounts =
 		i(116658),	-- Tundra Icehoof
 		i(163584),  -- Twilight Avenger
 		i(43954),	-- Twilight Drake
+		i(166803),	-- Umber Nightsaber
 		i(160829),	-- Underrot Crawg Harness
 		i(147805),	-- Valarjar Stormwing
 		i(152842),	-- Vibrant Mana Ray Mount

@@ -8,6 +8,7 @@ _.Mounts =
 		un(2, i(118515)),	-- Cindermane Charger
 		un(6, i(109013)),	-- Dread Raven
 		un(2, i(106246)),	-- Emerald Hippogryph
+		mount(307932),	-- Ensorcelled Everwyrm
 		un(6, i(153540)),	-- Gilded Ravasaur
 		i(98618),			-- Hearthsteed
 		un(2, i(83086)), 	-- Heart of the Nightwing

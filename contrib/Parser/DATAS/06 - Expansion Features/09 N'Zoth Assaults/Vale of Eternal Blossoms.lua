@@ -872,6 +872,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174220),	-- Ambered Greatstaff
+							i(174226)	-- Paragon's Will
 						},
 					}),
 					n(160893, {	-- Captain Vor'lek

@@ -320,6 +320,7 @@ _.Zones =
 					},
 				}),
 				q(26348, {	-- The Coast Isn't Clear
+					["sourceQuests"] = { 26371 },	-- The Legend of Captain Grayson
 					["coord"] = { 30.5, 85.4, 52 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 392 },	-- Captain Grayson

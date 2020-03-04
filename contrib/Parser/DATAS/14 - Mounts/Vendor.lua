@@ -30,6 +30,10 @@ _.Mounts =
 		i(44689),	-- Armored Snowy Gryphon
 		i(103638),	-- Ashhide Mushan Beast
 		i(87781),	-- Azure Riding Crane
+		i(166465, {	-- Azureshell Krolusk
+			["races"] = ALLIANCE_ONLY,
+			["cost"] = { { "c", 1717, 200 }, },	-- 200x 7th Legion Service Medal
+		}),
 		i(81354),	-- Azure Water Strider
 		i(167894),	-- Beastlord's Irontusk
 		i(167895),	-- Beastlord's Warwolf
@@ -61,6 +65,10 @@ _.Mounts =
 		i(46099),	-- Black Wolf
 		i(87789),	-- Blonde Riding Yak
 		i(137570),	-- Bloodfang Widow
+		i(166469, {	-- Bloodthirsty Dreadwing
+			["races"] = HORDE_ONLY,
+			["cost"] = { { "c", 1716, 750 }, },	-- 750x Honorbound Service Medal
+		}),
 		i(91009, {	-- Blue Dragon Turtle [Panda Only]
 			["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 		}),
@@ -119,6 +127,9 @@ _.Mounts =
 		i(87791),	-- Crimson Water Strider
 		i(161912, {	-- Dapple Gray
 			["races"] = ALLIANCE_ONLY,
+		}),
+		i(153485, {	-- Darkmoon Dirigible
+			["cost"] = { { "c", 515, 1000 }, },	-- 1000x Darkmoon Prize Ticket
 		}),
 		i(63125),	-- Dark Phoenix
 		i(28915),	-- Dark Riding Talbuk
@@ -263,6 +274,10 @@ _.Mounts =
 		i(116776),	-- Pale Thorngrazer
 		i(163589),	-- Palehide Direhorn
 		i(2414),	-- Pinto
+		i(166463, {	-- Priestess' Moonsaber
+			["races"] = ALLIANCE_ONLY,
+			["cost"] = { { "c", 1717, 750 }, },	-- 750x 7th Legion Service Medal
+		}),
 		i(161879),	-- Proudmoore Sea Scout
 		i(91006, {	-- Purple Dragon Turtle [Panda Only]
 			["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
@@ -292,9 +307,16 @@ _.Mounts =
 		i(29470),	-- Red Skeletal Warhorse
 		i(87783),	-- Regal Riding Crane
 		i(116667),	-- Rocktusk Battleboar
+		i(166464, {	-- Rubyshell Krolusk
+			["races"] = HORDE_ONLY,
+			["cost"] = { { "c", 1716, 200 }, },	-- 200x Honorbound Service Medal
+		}),
 		i(152793),	-- Russet Ruinstrider
 		i(168829),	-- Rustbolt Resistor
 		i(152791),	-- Sable Ruinstrider
+		i(166471, {	-- Saltwater Seahorse
+			["cost"] = { { "c", 1710, 500 }, },	-- 500x Seafarer's Dubloon
+		}),
 		i(166436, {	-- Sandy Nightsaber (A)
 			["races"] = ALLIANCE_ONLY,
 		}),
@@ -311,6 +333,9 @@ _.Mounts =
 			["classes"] = { ROGUE },	
 		}),
 		i(116772),	-- Shadowmane Charger
+		i(166745, {	-- Siltwing Albatross
+			["cost"] = { { "c", 1710, 1000 }, },	-- 1000x Seafarer's Dubloon
+		}),
 		i(46813),	-- Silver Covenant Hippogryph
 		i(32318),	-- Silver Riding Nether Ray
 		i(31832, {	-- Silver Riding Talbuk [Alliance Only]

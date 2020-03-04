@@ -708,7 +708,7 @@ _.Zones =
 				}),
 				q(50976, {	-- An Ancient Curse
 					["provider"] = { "o", 287081 },	-- Ancient Tablet
-					["coord"] = { 29.2, 52.0, 863 },
+					["coord"] = { 52.92, 75.96, 863 },
 					["lvl"] = 110,
 				}),
 				q(50933, {	-- An Unfortunate Event

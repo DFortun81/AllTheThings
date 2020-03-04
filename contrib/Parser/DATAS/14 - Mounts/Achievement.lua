@@ -4,6 +4,7 @@
 _.Mounts =
 {
 	n(-4, { 	-- Achievement
+		i(152815),	-- Antoran Gloomhound
 		i(44178),	-- Albino Drake
 		i(98259),	-- Armored Blue Dragonhawk
 		i(116668),	-- Armored Frostboar
@@ -72,6 +73,7 @@ _.Mounts =
 		i(140230),	-- Prestigious Royal Courser
 		i(129280),	-- Prestigious War Steed
 		i(143864),	-- Prestigious War Wolf
+		i(163982),	-- Pureheart Courser
 		un(1, i(166417)),	-- Reins of the Onyx War Hyena	-- Nobody obtained it since Season 2 start. Hopefully will be added later
 		i(138387),	-- Ratstallion
 		i(44842),	-- Red Dragonhawk
@@ -85,9 +87,21 @@ _.Mounts =
 		i(120968),	-- Summon Chauffeur (A)
 		i(122703),	-- Summon Chauffeur (H)
 		i(77068),	-- Twilight Harbinger
+		i(165020, {	-- Vicious Black Bonesteed
+			["races"] = HORDE_ONLY,
+		}),
+		i(165019, {	-- Vicious Black Warsaber
+			["races"] = ALLIANCE_ONLY,
+		}),
 		i(140353),	-- Vicious Gilnean Warhorse*
 		i(102514),	-- Vicious Kaldorei Warsaber*
 		i(102533),	-- Vicious Skeletal Warhorse*
+		i(163122, {	-- Vicious War Basilisk (A)
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(163121, {	-- Vicious War Basilisk (H)
+			["races"] = HORDE_ONLY,
+		}),
 		i(142234),	-- Vicious War Bear (Alliance)*
 		i(142235),	-- Vicious War Bear (Horde)*
 		i(163124),	-- Vicious War Clefthoof
