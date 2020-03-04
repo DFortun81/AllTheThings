@@ -361,24 +361,28 @@ _.IllusionDB = {
 		["illusionID"] = 6096,
 		["text"] = "Dreadflame",
 	},
-	--[[ -- TODO:: need to find and add the effectIDs
+	{	-- Stinging Sands
+		["itemID"] = 171363,	-- Illusion: Stinging Sands
+		["illusionID"] = 6158,
+		["text"] = "Stinging Sands",
+		["questID"] = 57569,
+	},
 	{	-- Void Edge
 		["itemID"] = 174932,	-- Illusion: Void Edge
-		["illusionID"] = ,
+		["illusionID"] = 6174,
 		["text"] = "Void Edge",
 		["questID"] = 58927,
 	},
-	{	-- Voidwrath
+	--[[{	-- Voidwrath
 		["itemID"] = 174933,	-- Illusion: Voidwrath
 		["illusionID"] = ,
 		["text"] = "Voidwrath",
 		["questID"] = 58925,
-	},
+	},]]
 	{	-- Wraithchill
 		["itemID"] = 172177,	-- Illusion: Wraithchill
-		["illusionID"] = ,
+		["illusionID"] = 6162,
 		["text"] = "Wraithchill",
 		["questID"] = 57596,
 	},
-	]]--
 };
