@@ -4092,6 +4092,8 @@ end
 		[55976] = 169939,	-- Waveblade Ankoan // Supplies From the Waveblade Ankoan
 		[53982] = 169940,	-- Unshackled // Supplies From The Unshackled
 		[55348] = 170061,	-- Rustbolt // Supplies from the Rustbolt Resistance
+		[58096] = 174483,	-- Rajani // Supplies from the Rajani
+		[58097] = 174484,	-- Uldum Accord // Supplies from the Uldum Accord
 	};
 	hooksecurefunc("ReputationParagonFrame_SetupParagonTooltip",function(frame)
 		-- Let's make sure the user isn't in combat and if they are do they have In Combat turned on.  Finally check to see if Tootltips are turned on.
