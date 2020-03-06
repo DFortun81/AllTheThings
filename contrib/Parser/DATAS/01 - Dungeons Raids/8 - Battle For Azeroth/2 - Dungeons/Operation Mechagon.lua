@@ -93,7 +93,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					e(2355, {	-- HK-8 Aerial Oppression Unit
 						["crs"] = { 155157 },	-- HK-8 Aerial Oppression Unit
 						["g"] = {
-							i(168826),	-- Mechagon Peacekeeper
+						--	i(168826),	-- Mechagon Peacekeeper. Only on Mythic or Mythic+
 							i(169385),	-- Microbot 8D
 							i(168742),	-- Forceful Adaptable Logic Board
 							i(168743),	-- Forceful Efficient Logic Board

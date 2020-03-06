@@ -15,6 +15,10 @@ _.GearSets =
 						{	-- Communal Staff	*LA0104	
 							["itemID"] = 170701,	-- Communal Staff	*LA0104	
 						},
+						{	-- Communal Stave	NYI
+							["itemID"] = 170703,	-- Communal Stave
+							["u"] = 1,	-- Not available	
+						},
 						{	-- Communal Hood	*LA0104	
 							["itemID"] = 170857,	-- Communal Hood	*LA0104	
 						},
