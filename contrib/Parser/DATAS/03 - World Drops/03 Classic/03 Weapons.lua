@@ -23,7 +23,6 @@ _.WorldDrops =
 				i(15234),	-- Greater Scythe
 				i(4568),	-- Grunt Axe
 				i(15232),	-- Hacking Cleaver
-				i(7786),	-- Headsplitter
 				i(2080),	-- Hillborne Axe
 				i(15236),	-- Moon Cleaver
 				i(12990),	-- Razor's Edge

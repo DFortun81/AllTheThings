@@ -798,7 +798,7 @@ namespace ATT
                     {
                         if (item.TryGetValue("itemID", out int itemID))
                         {
-                            itemNameBuilder.Clear().Append("i(").Append(itemID).Append(");");
+                            itemNameBuilder.Clear().Append("i(").Append(itemID).Append("),");
                             if (item.TryGetValue("name", out string name)) itemNameBuilder.Append("\t-- ").Append(name.Replace("]", "").Replace("[", ""));
                             itemNameBuilder.AppendLine();
                             builder2.Append(itemNameBuilder);

@@ -7,10 +7,6 @@ _.Zones =
 		m(83, {	-- Winterspring
 			n(ZONEDROPS, {
 				i(34535),	-- Azure Whelpling
-				i(20697, {	-- Crystalline Threaded Cape
-					["crs"] = { 7449 },	-- Chillwind Ravager
-					["u"] = 7,	-- BoE Item
-				}),
 				i(16223, {	-- Formula: Enchant Weapon - Icy Chill
 					["crs"] = {
 						7524,	-- Anguished Highborne

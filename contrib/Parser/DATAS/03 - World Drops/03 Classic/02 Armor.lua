@@ -18,7 +18,6 @@ _.WorldDrops =
 				i(13112),	-- Winged Helm
 			}),
 			f(51,   {	-- Neck
-				un(7, i(20695)),	-- Abyssal War Beads
 				un(1, i(21793)),	-- Arcanite Sword Pendant
 				i(12044),	-- Arctic Pendant
 				i(12028),	-- Basalt Necklace
@@ -376,7 +375,6 @@ _.WorldDrops =
 				i(13095),	-- Assault Band
 				i(4999),	-- Azora's Will
 				i(12996),	-- Band of Purification
-				un(7, i(20721)),	-- Band of the Cultist
 				i(13096),	-- Band of the Hierophant
 				i(7553),	-- Band of the Unicorn
 				i(5007),	-- Band of Thorns
@@ -426,7 +424,6 @@ _.WorldDrops =
 				i(12006),	-- Meadow Ring
 				i(5009),	-- Mindbender Loop
 				i(10634),	-- Mindseye Circle
-				un(7, i(20692)),	-- Multicolored Band
 				i(2246),	-- Myrmidon's Signet
 				i(12004),	-- Obsidian Band
 				i(1993),	-- Ogremind Ring

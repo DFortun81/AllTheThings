@@ -277,9 +277,9 @@ _.Zones =
 					["provider"] = { "n", 15306 },	-- Bor Wildmane
 					["g"] = {
 						un(2, i(20602, { 	-- Chest of Spoils
+							un(7, i(20721)),	-- Band of the Cultist
 							un(7, i(20722)), 	-- Crystal Slugthrower
 							un(7, i(20720)), 	-- Dark Whisper Blade
-							un(7, i(20721)),	-- Band of the Cultist
 						})),
 					},
 				}),
@@ -334,7 +334,9 @@ _.Zones =
 					["provider"] = { "n", 15306 },	-- Bor Wildmane
 					["g"] = {
 						un(2, i(20601, { 	-- Sack of Spoils
-							un(7, i(20696)), 	-- Crystal Spiked Maul
+							un(7, i(20695)),	-- Abyssal War Beads
+							un(7, i(20696)),	-- Crystal Spiked Maul
+							un(7, i(20697)),	-- Crystalline Threaded Cape
 							un(7, i(20698)),	-- Elemental Attuned Blade
 						})),
 					},
