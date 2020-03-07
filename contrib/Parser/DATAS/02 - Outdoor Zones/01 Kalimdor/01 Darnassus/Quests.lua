@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(89, {	-- Darnassus
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(27225, {	-- A Summons from Ander Germaine
 					["provider"] = { "n", 4087 },	-- Arias'ta Bladesinger (Darnassus)
 					["coord"] = { 56.4, 46.2, 89 },	-- Arias'ta Bladesinger (Darnassus)

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(249, {	-- Uldum
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(50065, {	-- Armagedillo
 					["coord"] = { 45.0, 42.5, 249 },
 					["g"] = {

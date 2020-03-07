@@ -7,8 +7,7 @@ _.Holidays =
 		["holidayID"] = 235445,	-- Children's Week
 		["u"] = 20,				-- Children's Week Filter
 		["g"] = {
-			{	-- Vendors
-				["npcID"] = -2,	-- Vendors
+			n(VENDORS, {
 				["g"] = {
 					{	-- Blax Bottlerocket <Toys and Novelties>
 						["npcID"] = 52809,	-- Blax Bottlerocket <Toys and Novelties>
@@ -82,7 +81,7 @@ _.Holidays =
 						},
 					},
 				},
-			},
+			}),
 		},
 	},
 };

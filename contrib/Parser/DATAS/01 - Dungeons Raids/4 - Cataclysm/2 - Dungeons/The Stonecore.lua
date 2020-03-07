@@ -8,7 +8,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["mapID"] = 324,
 		["groups"] = {
 			d( 1, {	-- Normal
-				n(-17, {	-- Quests 				
+				n(QUESTS, { 				
 					q(28814, {	-- Followers and Leaders
 						["provider"] = { "n", 50048 },	-- Earthwarden Yrsa
 						["sourceQuests"] = {28815},	-- Twilight Documents
@@ -30,7 +30,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						},
 					}),
 				}),
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(55822, {	-- Heavy Geode Mace
 						["crs"] = {
 							42810,	-- Crystalspawn Giant

@@ -6,13 +6,13 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(90, {	-- Undercity
 			n(-38, {	-- Profession
-				prof(171, {	-- Alchemy
-					n(-17, {	-- Quests
+				prof(ALCHEMY, {
+					n(QUESTS, {
 						q(29481, {	-- Elixir Master
 							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey (Undercity)
 							["coord"] = { 47.6, 72.8, 90 },	-- Doctor Herbert Halsey (Undercity)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = 171,	-- Alchemy	
+							["requireSkill"] = ALCHEMY,	
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -27,7 +27,7 @@ _.Zones =
 							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey (Undercity)
 							["coord"] = { 47.6, 72.8, 90 },	-- Doctor Herbert Halsey (Undercity)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = 171,	-- Alchemy
+							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -42,7 +42,7 @@ _.Zones =
 							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey (Undercity)
 							["coord"] = { 47.6, 72.8, 90 },	-- Doctor Herbert Halsey (Undercity)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = 171,	-- Alchemy
+							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -55,18 +55,18 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(356, {	-- Fishing
+				prof(FISHING, {
 					n(-4, {	-- Achievements
 						ach(5850, {	-- Fish or Cut Bait: Undercity
 							["races"] = HORDE_ONLY,
 						}),
 					}),
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(29317, {	-- Fish Head
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
 							["coord"] = { 62.2, 44.6, 90 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								crit(1, {	-- Fish Head
@@ -84,7 +84,7 @@ _.Zones =
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
 							["coord"] = { 62.2, 44.6, 90 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								crit(3, {	-- Like Pike?
@@ -102,7 +102,7 @@ _.Zones =
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
 							["coord"] = { 62.2, 44.6, 90 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								crit(5, {	-- Moat Monster!
@@ -120,7 +120,7 @@ _.Zones =
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
 							["coord"] = { 62.2, 44.6, 90 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								crit(2, {	-- Tadpole Terror
@@ -138,7 +138,7 @@ _.Zones =
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
 							["coord"] = { 62.2, 44.6, 90 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								crit(4, {	-- Time for Slime
@@ -154,18 +154,18 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(185, {	-- Cooking
+				prof(COOKING, {
 					n(-4, {	-- Achievements
 						ach(5844, {	-- Let's Do Lunch: Undercity
 							["races"] = HORDE_ONLY,
 						}),
 					}),
-					n(-17, { 	-- Quests
+					n(QUESTS, {
 						q(29333, {	-- Escargot A Go-Go
 							["provider"] = { "n", 4552 },	-- Eunice Burch
 							["coord"] = { 62.2, 44.6, 90 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								crit(3, {	-- Escargot A Go-Go
@@ -178,7 +178,7 @@ _.Zones =
 							["provider"] = { "n", 4552 },	-- Eunice Burch
 							["coord"] = { 62.2, 44.6, 90 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								crit(1, {	-- Fungus Among Us
@@ -191,7 +191,7 @@ _.Zones =
 							["provider"] = { "n", 4552 },	-- Eunice Burch
 							["coord"] = { 62.2, 44.6, 90 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								crit(2, {	-- Lily, Oh Lily
@@ -204,7 +204,7 @@ _.Zones =
 							["provider"] = { "n", 4552 },	-- Eunice Burch
 							["coord"] = { 62.2, 44.6, 90 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								crit(4, {	-- Roach Coach
@@ -217,7 +217,7 @@ _.Zones =
 							["provider"] = { "n", 4552 },	-- Eunice Burch
 							["coord"] = { 62.2, 44.6, 90 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								crit(5, {	-- Would You Like Some Flies With That?
@@ -228,12 +228,12 @@ _.Zones =
 						})
 					}),
 				}),
-				prof(202, {	-- Engineering
-					n(-17, {	-- Quests
+				prof(ENGINEERING, {
+					n(QUESTS, {
 						q(3637, {	-- Gnome Engineering
 							["u"] = 40,	-- Legacy
 							["races"] = HORDE_ONLY,
-							["requireSkill"] = 202,	-- Engineering
+							["requireSkill"] = ENGINEERING,
 							["provider"] = { "n", 4586 },	-- Graham Van Talen
 						}),
 					}),

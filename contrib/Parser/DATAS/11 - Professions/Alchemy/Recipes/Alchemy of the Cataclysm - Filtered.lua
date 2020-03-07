@@ -1,4 +1,4 @@
-profession(171, {	-- Alchemy
+profession(ALCHEMY, {
 	filter(200, {	-- Recipes
 				{
 			["categoryID"] = 598--[[Alchemy of the Cataclysm]],

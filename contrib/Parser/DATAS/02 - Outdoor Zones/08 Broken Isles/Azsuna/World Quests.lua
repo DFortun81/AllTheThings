@@ -29,12 +29,12 @@ _.Zones =
 				q(41545, {	-- Aethril Cluster
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41286, {	-- Aethril Cluster
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(42652, {	-- Ancient Exemplars
 					["lvl"] = 110,
@@ -43,7 +43,7 @@ _.Zones =
 				q(41290, {	-- Aqueous Aethril
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(42165, {	-- Azsuna Specimens
 					["isWorldQuest"] = true,
@@ -70,32 +70,32 @@ _.Zones =
 				q(41495, {	-- Brilliant Leystone Seams
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41481, {	-- Brimstone Destroyer
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41482, {	-- Brimstone Destroyer
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41483, {	-- Brimstone Destroyer
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41529, {	-- Bushy Aethril
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41438, {	-- Charged Leystone Deposits
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(46168, {	-- Commander Vorlax (Invasion WQ)
 					["lvl"] = 98,
@@ -218,7 +218,7 @@ _.Zones =
 				q(41323, {	-- Fatty Lion Seal Skin
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(46161, {	-- Felcaller Thalezra (Invasion WQ)
 					["lvl"] = 98,
@@ -231,42 +231,42 @@ _.Zones =
 				q(41562, {	-- Felhide
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(41563, {	-- Felhide
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(41564, {	-- Felhide
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(41513, {	-- Felwort
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41514, {	-- Felwort
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41515, {	-- Felwort
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41437, {	-- Fine Leystone Deposits
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41289, {	-- Flourishing Aethril
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(46166, {	-- Garthulak the Crusher (Invasion wq)
 					["lvl"] = 98,
@@ -275,12 +275,12 @@ _.Zones =
 				q(41455, {	-- Gleaming Leystone Outcropping
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41434, {	-- Glowing Leystone Deposits
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(43804, {	-- Hate the Hatecoil
 					["lvl"] = 110,
@@ -307,17 +307,17 @@ _.Zones =
 				q(41611, {	-- Huge Cursed Queenfish
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41265, {	-- Huge Cursed Queenfish
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41610, {	-- Huge Cursed Queenfish
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(45495, {	-- Immolian
 					["lvl"] = 110,
@@ -334,7 +334,7 @@ _.Zones =
 				q(41528, {	-- Iridescent Aethril
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(46165, {	-- Kazruul (Invasion WQ)
 					["lvl"] = 98,
@@ -363,17 +363,17 @@ _.Zones =
 				q(41498, {	-- Leystone Basilisks
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41501, {	-- Leystone Basilisks
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41500, {	-- Leyworms
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(45046, {	-- Like the Wind
 					["lvl"] = 110,
@@ -382,27 +382,27 @@ _.Zones =
 				q(41527, {	-- Lively Aethril
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41598, {	-- Lively Cursed Queenfish
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41599, {	-- Lively Cursed Queenfish
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41264, {	-- Lively Cursed Queenfish
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41454, {	-- Luminous Leystone Outcropping
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(46164, {	-- Mal'serus (Invasion WQ)
 					["lvl"] = 98,
@@ -444,12 +444,12 @@ _.Zones =
 				q(41268, {	-- Queen Queenfish
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41266, {	-- Raft Fishing
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(42108, {	-- Rally the Nightwatchers
 					["lvl"] = 110,
@@ -478,7 +478,7 @@ _.Zones =
 				q(41324, {	-- Silky Prowler Fur
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(42063, {	-- Size Doesn't Matter
 					["isWorldQuest"] = true,
@@ -493,27 +493,27 @@ _.Zones =
 				q(41551, {	-- Slab of Bacon
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 				}),
 				q(41259, {	-- Slab of Bacon
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 				}),
 				q(41552, {	-- Slab of Bacon
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 				}),
 				q(41435, {	-- Smooth Leystone Deposits
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41582, {	-- Smooth Sunrunner Hide
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(44847, {	-- Straight From the Source
 					["lvl"] = 110,
@@ -606,7 +606,7 @@ _.Zones =
 				q(41322, {	-- Unscratched Hippogryph Scale
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(42160, {	-- Unwelcome Visitors
 					["lvl"] = 110,
@@ -616,7 +616,7 @@ _.Zones =
 					["provider"] = { "n", 107376 },	-- Veridis Fallon <Court of Farondis Emissary>
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 773,	-- Inscription
+					["requireSkill"] = INSCRIPTION,
 					["g"] = {
 						i(137772),	-- Vantus Rune Technique: Elerethe Renferal [Rank 3]
 					},
@@ -724,24 +724,24 @@ _.Zones =
 				q(41287, {	-- Work Order: Aethril
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41651, {	-- Work Order: Azsunite Pendant
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 					["isWorldQuest"] = true,
 					["g"] = {
 						i(137843),	-- Design: Azsunite Pendant (Rank 3)
 					},					
 				}),
 				q(41639, {	-- Work Order: Battlebound Spaulders
-					["requireSkill"] = 165,	-- Leatherworking
+					["requireSkill"] = LEATHERWORKING,
 					["isWorldQuest"] = true,
 					["g"] = {
 						i(137914),	-- Recipe: Battlebound Spaulders (Rank 3)
 					},
 				}),
 				q(41675, {	-- Work Order: Blink-Trigger Headgun
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["isWorldQuest"] = true,
 					["g"] = {
 						i(137711),	-- Schematic: Blink-Trigger Headgun (Rank 3)
@@ -750,10 +750,10 @@ _.Zones =
 				q(41267, {	-- Work Order: Cursed Queenfish
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41652, {	-- Work Order: Deep Amber Loop
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 					["isWorldQuest"] = true,
 					["g"] = {
 						i(137838),	-- Design: Deep Amber Loop (Rank 3)
@@ -762,23 +762,23 @@ _.Zones =
 				q(41657, {	-- Work Order: Draughts of Raw Magic
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 171,	-- Alchemy
+					["requireSkill"] = ALCHEMY,
 				}),
 				q(41311, {	-- Work Order: Leystone
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41633, {	-- Work Order: Leystone Greaves (WQ)
 					["isWorldQuest"] = true,
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["lvl"] = 110,
 					["g"] = {
 						i(123931),	-- Recipe: Leystone Greaves (Rank 3)
 					},
 				}),
 				q(41645, {	-- Work Order: Silkweave Epaulets
-					["requireSkill"] = 197,	-- Tailoring
+					["requireSkill"] = TAILORING,
 					["isWorldQuest"] = true,
 					["g"] = {
 						i(137963),	-- Pattern: Silkweave Epaulets (Rank 3)
@@ -787,10 +787,10 @@ _.Zones =
 				q(41326, {	-- Work Order: Stormscales
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(41669, {	-- Work Order: Word of Critical Strike
-					["requireSkill"] = 333,	-- Enchanting
+					["requireSkill"] = ENCHANTING,
 					["isWorldQuest"] = true,
 					["g"] = {
 						i(128596),	-- Formula: Enchant Ring - Word of Critical Strike (Rank 3)

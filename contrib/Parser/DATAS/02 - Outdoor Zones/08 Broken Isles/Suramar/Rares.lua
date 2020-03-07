@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		m(680, {	-- Suramar
-			n(-16, { 	-- Rares
+			n(RARES, {
 				n(111649, {	-- Ambassador D'vwinn
 					["questID"] = 43794,
 					["coord"] = { 54.8, 63.8, 680 },

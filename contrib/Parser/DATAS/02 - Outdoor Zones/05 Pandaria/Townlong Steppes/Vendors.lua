@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(388, {	-- Townlong Steppes
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(65171, {	-- Alin the Finder <Adventuring Supplies>
 					["coord"] = { 71.4, 57.2, 388 },
 					["g"] = {

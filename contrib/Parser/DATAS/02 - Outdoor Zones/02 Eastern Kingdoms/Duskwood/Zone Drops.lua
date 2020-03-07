@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(47, {	-- Duskwood
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(2014, {	-- Black Metal Greatsword
 					["u"] = 7,
 					["crs"] = { 1270 },	-- Fetid Corpse

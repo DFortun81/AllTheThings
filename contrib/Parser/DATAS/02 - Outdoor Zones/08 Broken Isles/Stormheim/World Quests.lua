@@ -41,7 +41,7 @@ _.Zones =
 				q(41443, {	-- Ancient Leystone Deposits
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41451, {	-- Assault on Hrydshal
 					["lvl"] = 110,
@@ -81,22 +81,22 @@ _.Zones =
 				q(41534, {	-- Brambly Fjarnskaggl
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41490, {	-- Brimstone Destroyer
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41489, {	-- Brimstone Destroyer
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41488, {	-- Brimstone Destroyer
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41938, {	-- Brothers of Skovald
 					["lvl"] = 110,
@@ -165,12 +165,12 @@ _.Zones =
 				q(41444, {	-- Dark Leystone Deposits
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41459, {	-- Dense Leystone Outcropping
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(43710, {	-- Dark Runes
 					["lvl"] = 110,
@@ -203,32 +203,32 @@ _.Zones =
 				q(41570, {	-- Felhide
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(41569, {	-- Felhide
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(41568, {	-- Felhide
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(41520, {	-- Felwort
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41521, {	-- Felwort
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41519, {	-- Felwort
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(46013, {	-- Firecaller Rok'duun (Invasion wq)
 					["lvl"] = 98,
@@ -237,17 +237,17 @@ _.Zones =
 				q(41296, {	-- Fjarnskaggl Cluster
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41547, {	-- Fjarnskaggl Cluster
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41299, {	-- Flourishing Fjarnskaggl
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(46014, {	-- Gelthrog (Invasion WQ)
 					["lvl"] = 98,
@@ -268,17 +268,17 @@ _.Zones =
 				q(41614, {	-- Huge Stormrays
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41275, {	-- Huge Stormrays
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41615, {	-- Huge Stormrays
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(46015, {	-- Idra'zuul (Invasion wq)
 					["lvl"] = 98,
@@ -301,17 +301,17 @@ _.Zones =
 				q(41505, {	-- Leystone Basilisks
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41506, {	-- Leystone Basilisks
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41507, {	-- Leystone Basilisks
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(45049, {	-- Like the Wind
 					["lvl"] = 110,
@@ -320,17 +320,17 @@ _.Zones =
 				q(41602, {	-- Lively Stormrays
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41274, {	-- Lively Stormrays
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41603, {	-- Lively Stormrays
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(46016, {	-- Magdrezoth (Invasion wq)
 					["lvl"] = 98,
@@ -373,7 +373,7 @@ _.Zones =
 				q(41340, {	-- Perfect Storm Drake Scale
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(43786, {	-- Pesty Nests
 					["lvl"] = 110,
@@ -382,17 +382,17 @@ _.Zones =
 				q(41535, {	-- Prickly Fjarnskaggl
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41460, {	-- Primal Leystone Outcropping
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41536, {	-- Pungent Fjarnskaggl
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41925, {	-- Razing Hel
 					["lvl"] = 110,
@@ -413,7 +413,7 @@ _.Zones =
 				q(41276, {	-- Rocket Boot Fishing
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41927, {	-- Ruining the Runewood
 					["lvl"] = 110,
@@ -438,32 +438,32 @@ _.Zones =
 				q(41300, {	-- Singed Fjarnskaggl
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41555, {	-- Slab of Bacon
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 				}),
 				q(41556, {	-- Slab of Bacon
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 				}),
 				q(41261, {	-- Slab of Bacon
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 				}),
 				q(41278, {	-- Slippery Stormrays
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41343, {	-- Solid Crabshell Fragment
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(45390, {	-- Souls of the Vrykul (Invasion WQ)
 					["lvl"] = 98,
@@ -476,12 +476,12 @@ _.Zones =
 				q(41445, {	-- Stormy Leystone Deposits
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41442, {	-- Striking Leystone Deposits
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41298, {	-- Supplies Needed: Fjarnskaggl
 					["lvl"] = 110,
@@ -530,7 +530,7 @@ _.Zones =
 				q(41342, {	-- Thick Bear Hide
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(42183, {	-- To Battle! (A)
 					["lvl"] = 110,
@@ -645,10 +645,10 @@ _.Zones =
 				q(41497, {	-- Wild Leystone Seams
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41678, {	-- Work Order: Gunpack
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["isWorldQuest"] = true,
 					["provider"] = { "n", 106904 },	-- Valdemar Stormseeker
 					["groups"] = {
@@ -656,7 +656,7 @@ _.Zones =
 					},
 				}),
 				q(41636, {	-- Work Order: Leystone Breastplate
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["isWorldQuest"] = true,
 					["provider"] = { "n", 106904 },	-- Valdemar Stormseeker
 					["groups"] = {
@@ -664,7 +664,7 @@ _.Zones =
 					},
 				}),
 				q(41654, {	-- Work Order: Queen's Opal Loop
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["g"] = {
@@ -674,15 +674,15 @@ _.Zones =
 				q(41297, {	-- Work Order: Fjarnskaggl
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41313, {	-- Work Order: Leystone
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41648, {	-- Work Order: Silkweave Bracers
-					["requireSkill"] = 197,	-- Tailoring
+					["requireSkill"] = TAILORING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["g"] = {
@@ -692,7 +692,7 @@ _.Zones =
 				q(41660, {	-- Work Order: Skaggldrynk
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 171,	-- Alchemy
+					["requireSkill"] = ALCHEMY,
 					["g"] = {
 						i(127923),	-- Recipe: Skaggldrynk (Rank 2)
 					},
@@ -700,15 +700,15 @@ _.Zones =
 				q(41277, {	-- Work Order: Stormrays
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41344, {	-- Work Order: Stormscales
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(41642, {	-- Work Order: Warhide Footpads
-					["requireSkill"] = 165,	-- Leatherworking
+					["requireSkill"] = LEATHERWORKING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["provider"] = { "n", 106904 },	-- Valdemar Stormseeker
@@ -717,7 +717,7 @@ _.Zones =
 					},
 				}),
 				q(41672, {	-- Work Order: Word of Haste
-					["requireSkill"] = 333,	-- Enchanting
+					["requireSkill"] = ENCHANTING,
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 					["provider"] = { "n", 106904 },	-- Valdemar Stormseeker

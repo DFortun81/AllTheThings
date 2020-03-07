@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(143, {	-- Storehouse (rank 1: 51, rank 2: 142, rank 3: 143)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(37087, {	-- Lost in Transition
 								["provider"] = { "n", 84857 },	-- Kyra Goldhands
 								["races"] = ALLIANCE_ONLY,

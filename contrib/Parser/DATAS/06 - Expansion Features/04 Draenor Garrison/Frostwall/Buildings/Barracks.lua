@@ -20,7 +20,7 @@ _.ExpansionFeatures =
 								ach(9498),		-- Wingman
 							}),
 						}),
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(37070, {	-- Power of the Nether
 								["provider"] = { "n", 86945 },	-- Sunsworn Warlock(Aeda Brightdawn)
 								["g"] = {
@@ -102,7 +102,7 @@ _.ExpansionFeatures =
 								}
 							}),
 						}),
-						n(-2, {		-- Vendors
+						n(VENDORS, {
 							n(79812, {	-- Moz'def
 								["races"] = HORDE_ONLY,
 								["g"] = {

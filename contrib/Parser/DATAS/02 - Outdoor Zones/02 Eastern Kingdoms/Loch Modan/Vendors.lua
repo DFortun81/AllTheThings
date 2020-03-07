@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(48, {	-- Loch Modan
-			n(-2,  {	-- Vendors
+			n(VENDORS, {
 				n(1214, {	-- Aldren Cordon <Clothier>
 					["coord"] = { 64.8, 66.0, 48 },
 					["races"] = ALLIANCE_ONLY,

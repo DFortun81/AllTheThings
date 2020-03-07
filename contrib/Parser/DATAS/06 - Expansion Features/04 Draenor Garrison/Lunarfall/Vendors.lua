@@ -5,7 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
-			n(-2, { 	-- Vendors
+			n(VENDORS, {
 				n(90894, { 	-- Alexi Hackercam <Ore Trader>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

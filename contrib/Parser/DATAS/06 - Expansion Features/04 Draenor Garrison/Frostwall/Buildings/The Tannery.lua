@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(122, {	-- The Tannery (rank 1: 90, rank 2: 121, rank 3: 122)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(-2, {	-- Vendors
+						n(VENDORS, {
 							n(79834, {	-- Murne Greenhoof <Leatherworker>
 								["races"] = HORDE_ONLY,
 								["g"] = {

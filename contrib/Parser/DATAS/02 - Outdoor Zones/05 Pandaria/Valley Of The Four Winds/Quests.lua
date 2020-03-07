@@ -5,9 +5,9 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(376, {	-- Valley of the Four Winds
-			n(-17, {	-- Quests
-				prof(185, {	-- Cooking
-					["requireSkill"] = 185,
+			n(QUESTS, {
+				prof(COOKING, {
+					["requireSkill"] = COOKING,
 					["g"] = {
 						q(31337, {	-- A Token of Appreciation
 							["isDaily"] = true,
@@ -234,8 +234,8 @@ _.Zones =
 						}),
 					},
 				}),
-				prof(356, {	-- Fishing
-					["requireSkill"] = 356,
+				prof(FISHING, {
+					["requireSkill"] = FISHING,
 					["g"] = {
 						q(32684, {	-- You Want Fish?
 							["sourceQuests"] = { 31281 },	-- So You Want to be a Chef...

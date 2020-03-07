@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(83, {	-- Winterspring
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(28782, {	-- A Bird of Legend (granted automatically. Coords are relative to player position)
 					["sourceQuest"] = 28745,	-- Screechy Keen
 					["g"] = {
@@ -27,7 +27,7 @@ _.Zones =
 					["sourceQuest"] = 5163,	-- [DEPRECATED]Are We There, Yeti?
 					["u"] = 40,
 					["provider"] = { "n", 10305 },	-- Umi Rumplesnicker
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["g"] = {
 						un(8, recipe(26011)),	-- Tranquil Mechanical Yeti
 					},
@@ -196,7 +196,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 10637 },	-- Malyfous Darkhammer
 					["sourceQuest"] = 5103,	-- Hot Fiery Death
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						un(2, i(12699)),	-- Plans: Fiery Plate Gauntlets
 						un(8, i(12631)),	-- Fiery Plate Gauntlets
@@ -277,7 +277,7 @@ _.Zones =
 				q(5126,  {	-- Lorax's Tale
 					["u"] = 40,
 					["provider"] = { "n", 10918 },	-- Lorax
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 				}),
 				q(969,   {	-- Luck Be With You
 					["u"] = 40,
@@ -473,7 +473,7 @@ _.Zones =
 				q(5305,  {	-- Sweet Serenity
 					["u"] = 40,
 					["provider"] = { "n", 11191 },	-- Lilith the Lithe
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						un(2, i(12824)),	-- Plans: Enchanted Battlehammer
 					},
@@ -503,7 +503,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 10918 },	-- Lorax
 					["sourceQuest"] = 5126,	-- Lorax's Tale
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						un(2, i(12696)),	-- Plans: Demon Forged Breastplate
 						un(2, i(12849, {	-- Demon Kissed Sack

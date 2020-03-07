@@ -180,19 +180,19 @@ _.Zones =
 							["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
 							["isDaily"] = true,
 							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
-							["requireSkill"] = 186,	-- Mining
+							["requireSkill"] = MINING,
 						}),
 						q(11016, {	-- Nethermine Flayer Hide
 							["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
 							["isDaily"] = true,
 							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
-							["requireSkill"] = 393,	-- Skinning
+							["requireSkill"] = SKINNING,
 						}),
 						q(11017, {	-- Netherdust Pollen
 							["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
 							["isDaily"] = true,
 							["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
-							["requireSkill"] = 182,	-- Herbalism
+							["requireSkill"] = HERBALISM,
 						}),
 						q(11019, {	-- Your Friend On The Inside
 							["provider"] = { "n", 23141 },	-- Yarzill the Merc

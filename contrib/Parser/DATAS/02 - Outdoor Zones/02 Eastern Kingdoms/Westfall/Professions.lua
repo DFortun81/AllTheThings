@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(52, {	-- Westfall
 			n(-38, {	-- Professions
-				prof(356, {	-- Fishing
+				prof(FISHING, {
 					i(68795, {	-- Stendel's Bane
 						i(68797),	-- Stendel's Wedding Band
 					}),

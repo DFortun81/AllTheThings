@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(37, {	-- Elwynn Forest
 			n(-38, {	-- Profession
-				prof(356, {	-- Fishing
+				prof(FISHING, {
 					i(6643),	-- Bloated Smallfish. He contains a Malachite & a Tiyerseye, but the rate to fish him is 1 to 2000-4000.
 				}),
 			}),

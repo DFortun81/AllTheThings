@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(64, {	-- Thousand Needles
-			n(-2,  {	-- Vendors
+			n(VENDORS, {
 				n(40475, {	-- Jinky Twizzlefixxit <Engineering Supplies>
 					["coord"] = { 76.6, 73.6, 64 },
 					["g"] = {

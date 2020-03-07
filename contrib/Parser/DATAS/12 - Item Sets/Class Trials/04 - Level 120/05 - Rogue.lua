@@ -59,7 +59,7 @@ _.GearSets =
 							["itemID"] = 170708,	-- Lightdrinker Ring of Onslaught
 						},
 						{	-- Lightdrinker Idol of Rage
-							["itemID"] = 170709,	-- Lightdrinker Idol of Rage
+							["itemID"] = 170706,	-- Lightdrinker Idol of Rage
 						},
 						{	-- Lightdrinker Stone of Rage
 							["itemID"] = 170709,	-- Lightdrinker Stone of Rage

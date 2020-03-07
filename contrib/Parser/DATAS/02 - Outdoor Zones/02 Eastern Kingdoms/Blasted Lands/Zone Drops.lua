@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(17, {	-- Blasted Lands
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(10593, {	-- Imperfect Draenethyst Fragment
 					["description"] = "This has a high chance (about 50%) to drop from rares in the zone, but can technically drop from any mob in the zone.",
 					["g"] = {

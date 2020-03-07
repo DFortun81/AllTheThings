@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(126,  {	-- Enchanter's Study (rank 1: 93, rank 2: 125, rank 3: 126)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(38290, {	-- Some Dust
 								["providers"] = {
 									{ "n", 91020 },	-- Enchantress Ismae

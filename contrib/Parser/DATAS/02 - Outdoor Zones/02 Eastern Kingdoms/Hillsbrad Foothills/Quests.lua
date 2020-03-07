@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(25, {	-- Hillsbrad Foothills
-			n(-17,  {	-- Quests
+			n(QUESTS, {
 				q(28345, {	-- *Gurgle* HELP! *Gurgle*
 					["provider"] = { "n", 48218 },	-- Kingslayer Orkus
 					["coord"] = { 49.5, 74.4, 25 },
@@ -659,7 +659,7 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2393 },	-- Christoph Jeffcoat
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 					["g"] = {
 						un(7, i(3737)),	-- Recipe: Soothing Turtle Bisque
 					},

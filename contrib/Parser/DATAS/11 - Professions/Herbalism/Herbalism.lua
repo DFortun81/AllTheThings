@@ -1,5 +1,5 @@
 -- Herbalism - Skill ID 182 / Spell ID 2366
-profession(182, {	-- Herbalism
+profession(HERBALISM, {
 	n(-26, {	-- Drop
 		i(111350, {		-- A Compendium of the Herbs of Draenor
 			["collectible"] = false,
@@ -7,11 +7,11 @@ profession(182, {	-- Herbalism
 		}),
 		i(124101, {	-- Aethril
 			q(40013, {	-- Aethril Sample
-				["requireSkill"] = 182,	-- Herbalism
+				["requireSkill"] = HERBALISM,
 				["provider"] = { "i", 129117 },	-- Aethril Sample
 			}),
 			q(40014, {	-- Spayed by the Spade
-				["requireSkill"] = 182,	-- Herbalism
+				["requireSkill"] = HERBALISM,
 				["sourceQuest"] = 40013,	-- Aethril Sample
 				["provider"] = { "n", 92464 },	-- Kuhuine Tenderstride <Herbalism Trainer>
 				["groups"] = {
@@ -19,12 +19,12 @@ profession(182, {	-- Herbalism
 				},
 			}),
 			q(40015, {	-- Ragged Strips of Silk
-				["requireSkill"] = 182,	-- Herbalism
+				["requireSkill"] = HERBALISM,
 				["sourceQuest"] = 40014,	-- Spayed by the Spade
 				["provider"] = { "i", 129135 },	-- Ragged Strips of Silk
 			}),
 			q(40016, {	-- Desperation Breeds Ingenuity
-				["requireSkill"] = 182,	-- Herbalism
+				["requireSkill"] = HERBALISM,
 				["sourceQuest"] = 40015,	-- Ragged Strips of Silk
 				["provider"] = { "n", 92464 },		-- Kuhuine Tenderstride <Herbalism Trainer>
 				["g"] = {
@@ -32,7 +32,7 @@ profession(182, {	-- Herbalism
 				},
 			}),
 			q(40017, {	-- A Slip of the Hand
-				["requireSkill"] = 182,	-- Herbalism
+				["requireSkill"] = HERBALISM,
 				["sourceQuest"] = 40016,	-- Desperation Breeds Ingenuity
 				["g"] = {
 					recipe(193294),	-- Aethril (Rank 3)
@@ -43,7 +43,7 @@ profession(182, {	-- Herbalism
 			{
 				["itemID"] = 151856,	-- Withered Astral Glory
 				["questID"] = 48027,	-- The Glory of Argus
-				["requireSkill"] = 182,	-- Herbalism
+				["requireSkill"] = HERBALISM,
 				["groups"] = {
 					recipe(247812),	-- Astral Glory [Rank 1]
 				},
@@ -51,7 +51,7 @@ profession(182, {	-- Herbalism
 			{
 				["itemID"] = 151857,	-- Adolescent Astral Glory
 				["questID"] = 48028,	-- Youthful Resistance
-				["requireSkill"] = 182,	-- Herbalism
+				["requireSkill"] = HERBALISM,
 				["sourceQuest"] = 48027,	-- The Glory of Argus
 				["groups"] = {
 					recipe(247813),	-- Astral Glory [Rank 2]
@@ -60,7 +60,7 @@ profession(182, {	-- Herbalism
 			{
 				["itemID"] = 151858,	-- Astral Glory Root Cluster
 				["questID"] = 48029,	-- The Heart of It
-				["requireSkill"] = 182,	-- Herbalism
+				["requireSkill"] = HERBALISM,
 				["sourceQuest"] = 48028,	-- Youthful Resistance
 				["groups"] = {
 					recipe(247814),	-- Astral Glory [Rank 3]

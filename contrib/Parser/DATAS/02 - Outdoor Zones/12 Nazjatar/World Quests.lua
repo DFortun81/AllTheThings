@@ -537,7 +537,7 @@ _.Zones =
 				["lvl"] = 120,
 			}),
 			q(56795, {	-- Work Order: Abyssal-Fried Rissole (A)
-				["requireSkill"] = 185,	-- Cooking
+				["requireSkill"] = COOKING,
 				["lvl"] = 120,
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
@@ -546,7 +546,7 @@ _.Zones =
 				},
 			}),
 			q(56800, {	-- Work Order: Abyssal-Fried Rissole (H)
-				["requireSkill"] = 185,	-- Cooking
+				["requireSkill"] = COOKING,
 				["lvl"] = 120,
 				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
@@ -555,7 +555,7 @@ _.Zones =
 				},
 			}),
 			q(56794, {	-- Work Order: Baked Port Tato (A)
-				["requireSkill"] = 185,	-- Cooking
+				["requireSkill"] = COOKING,
 				["isWorldQuest"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
@@ -564,7 +564,7 @@ _.Zones =
 				},
 			}),
 			q(56801, {	-- Work Order: Baked Port Tato (H)
-				["requireSkill"] = 185,	-- Cooking
+				["requireSkill"] = COOKING,
 				["isWorldQuest"] = true,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
@@ -573,7 +573,7 @@ _.Zones =
 				},
 			}),
 			q(56797, {	-- Work Order: Bil'Tong (A)
-				["requireSkill"] = 185,	-- Cooking
+				["requireSkill"] = COOKING,
 				["isWorldQuest"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
@@ -582,7 +582,7 @@ _.Zones =
 				},
 			}),
 			q(56798, {	-- Work Order: Bil'Tong (H)
-				["requireSkill"] = 185,	-- Cooking
+				["requireSkill"] = COOKING,
 				["isWorldQuest"] = true,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
@@ -592,7 +592,7 @@ _.Zones =
 			}),
 			q(56826, {	-- Work Order: Enchant Weapon - Force Multiplier (A)
 				["isWorldQuest"] = true,
-				["requireSkill"] = 333,	-- Enchanting
+				["requireSkill"] = ENCHANTING,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -601,7 +601,7 @@ _.Zones =
 			}),
 			q(56820, {	-- Work Order: Enchant Weapon - Force Multiplier (H)
 				["isWorldQuest"] = true,
-				["requireSkill"] = 333,	-- Enchanting
+				["requireSkill"] = ENCHANTING,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -610,7 +610,7 @@ _.Zones =
 			}),
 			q(56824, {	-- Work Order: Enchant Weapon - Machinist's Brilliance (A)
 				["isWorldQuest"] = true,
-				["requireSkill"] = 333,	-- Enchanting
+				["requireSkill"] = ENCHANTING,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -619,7 +619,7 @@ _.Zones =
 			}),
 			q(56821, {	-- Work Order: Enchant Weapon - Machinist's Brilliance (H)
 				["isWorldQuest"] = true,
-				["requireSkill"] = 333,	-- Enchanting
+				["requireSkill"] = ENCHANTING,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -628,7 +628,7 @@ _.Zones =
 			}),
 			q(56827, {	-- Work Order: Enchant Weapon - Naga Hide (A)
 				["isWorldQuest"] = true,
-				["requireSkill"] = 333,	-- Enchanting
+				["requireSkill"] = ENCHANTING,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -637,7 +637,7 @@ _.Zones =
 			}),
 			q(56818, {	-- Work Order: Enchant Weapon - Naga Hide (H)
 				["isWorldQuest"] = true,
-				["requireSkill"] = 333,	-- Enchanting
+				["requireSkill"] = ENCHANTING,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -646,7 +646,7 @@ _.Zones =
 			}),
 			q(56825, {	-- Work Order: Enchant Weapon - Oceanic Restoration (A)
 				["isWorldQuest"] = true,
-				["requireSkill"] = 333,	-- Enchanting
+				["requireSkill"] = ENCHANTING,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -655,7 +655,7 @@ _.Zones =
 			}),
 			q(56819, {	-- Work Order: Enchant Weapon - Oceanic Restoration (H)
 				["isWorldQuest"] = true,
-				["requireSkill"] = 333,	-- Enchanting
+				["requireSkill"] = ENCHANTING,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -664,7 +664,7 @@ _.Zones =
 			}),
 			q(56570, {	-- Work Order: Greater Flask of the Currents (A)
 				["isWorldQuest"] = true,
-				["requireSkill"] = 171,	-- Alchemy
+				["requireSkill"] = ALCHEMY,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -673,7 +673,7 @@ _.Zones =
 			}),
 			q(56770, {	-- Work Order: Greater Flask of the Currents (H)
 				["isWorldQuest"] = true,
-				["requireSkill"] = 171,	-- Alchemy
+				["requireSkill"] = ALCHEMY,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -682,7 +682,7 @@ _.Zones =
 			}),
 			q(56767, {	-- Work Order: Greater Flask of Endless Fathoms (A)
 				["isWorldQuest"] = true,
-				["requireSkill"] = 171,	-- Alchemy
+				["requireSkill"] = ALCHEMY,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -691,7 +691,7 @@ _.Zones =
 			}),
 			q(56772, {	-- Work Order: Greater Flask of Endless Fathoms (H)
 				["isWorldQuest"] = true,
-				["requireSkill"] = 171,	-- Alchemy
+				["requireSkill"] = ALCHEMY,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -700,7 +700,7 @@ _.Zones =
 			}),
 			q(56768, {	-- Work Order: Greater Flask of the Undertow (A)
 				["isWorldQuest"] = true,
-				["requireSkill"] = 171,	-- Alchemy
+				["requireSkill"] = ALCHEMY,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -709,7 +709,7 @@ _.Zones =
 			}),
 			q(56774, {	-- Work Order: Greater Flask of the Undertow (H)
 				["isWorldQuest"] = true,
-				["requireSkill"] = 171,	-- Alchemy
+				["requireSkill"] = ALCHEMY,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -718,7 +718,7 @@ _.Zones =
 			}),
 			q(56769, {	-- Work Order: Greater Flask of the Vast Horizon (A)
 				["isWorldQuest"] = true,
-				["requireSkill"] = 171,	-- Alchemy
+				["requireSkill"] = ALCHEMY,
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 120,
 				["g"] = {
@@ -727,7 +727,7 @@ _.Zones =
 			}),
 			q(56773, {	-- Work Order: Greater Flask of the Vast Horizon (h)
 				["isWorldQuest"] = true,
-				["requireSkill"] = 171,	-- Alchemy
+				["requireSkill"] = ALCHEMY,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,
 				["g"] = {

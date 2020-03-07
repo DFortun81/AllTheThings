@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(119, {	-- Sholazar Basin
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(32481, {	-- Aotona
 					["coords"] = {
 						{ 43.0, 52.4, 119 },

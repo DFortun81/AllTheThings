@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(634, {	-- Stormheim
-			n(-16,    {	-- Rares
+			n(RARES, {
 				n(91874,  {	-- Bladesquall
 					["questID"] = 38431,
 					["coord"] = { 46.0, 77.7, 634 },

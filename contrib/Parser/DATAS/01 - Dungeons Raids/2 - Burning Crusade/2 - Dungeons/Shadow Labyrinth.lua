@@ -9,7 +9,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		},
 		["coord"] = { 39.63, 73.55, 108 },	-- Shadow Labyrinth, Terokkar Forest
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				["g"] = {
 					q(29645, {	-- Ambassador Hellmaw
 						["provider"] = { "n", 54890 },	-- Field Commander Mahfuun
@@ -61,7 +61,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					}),
 				},
 			}),
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(23607, {	-- Plans: Felsteel Helm
 					["crs"] = { 18830 },	-- Cabal Fanatic
 				}),

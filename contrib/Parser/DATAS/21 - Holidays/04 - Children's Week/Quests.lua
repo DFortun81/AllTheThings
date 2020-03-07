@@ -7,8 +7,7 @@ _.Holidays =
 		["holidayID"] = 235445,	-- Children's Week
 		["u"] = 20,				-- Children's Week Filter
 		["g"] = {
-			{	-- Quests
-				["npcID"] = -17,	-- Quests
+			n(QUESTS, {
 				["g"] = {
 					--Note!! Each "set" of questlines will always be linked to the main city for that expansion so that there is a reminder to finish the questline if you haven't already.
 					{	-- A Trip to the Dark Portal [Alliance - Draenei]
@@ -1740,7 +1739,7 @@ _.Holidays =
 						["isYearly"] = true,
 					},
 				},
-			},
+			}),
 		},
 	},
 };

@@ -6,13 +6,13 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(84, {	-- Stormwind City
 			n(-38, {	-- Profession
-				prof(171, {	-- Alchemy
-					n(-17, {	-- Quests
+				prof(ALCHEMY, {
+					n(QUESTS, {
 						q(29481, {	-- Elixir Master
 							["provider"] = { "n", 5499 },	-- Lilyssia Nightbreeze (Stormwind)
 							["coord"] = { 55.6, 85.8, 84 },	-- Lilyssia Nightbreeze (Stormwind)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = 171,	-- Alchemy
+							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -27,7 +27,7 @@ _.Zones =
 							["provider"] = { "n", 5499 },	-- Lilyssia Nightbreeze (Stormwind)
 							["coord"] = { 55.6, 85.8, 84 },	-- Lilyssia Nightbreeze (Stormwind)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = 171,	-- Alchemy
+							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -42,7 +42,7 @@ _.Zones =
 							["provider"] = { "n", 5499 },	-- Lilyssia Nightbreeze (Stormwind)
 							["coord"] = { 55.6, 85.8, 84 },	-- Lilyssia Nightbreeze (Stormwind)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = 171,	-- Alchemy
+							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -55,13 +55,13 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(164, {	-- Blacksmithing
-					n(-17, {	-- Quests
+				prof(BLACKSMITHING, {
+					n(QUESTS, {
 						q(2759, {	-- In Search of Galvan
 							["provider"] = { "n", 7798 },	-- Hank the Hammer
 							["coord"] = { 56.0, 16.0, 84 },
 							["sourceQuest"] = 2758,	-- The Origins of Smithing
-							["requireSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = BLACKSMITHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
 							["u"] = 40,
@@ -72,7 +72,7 @@ _.Zones =
 						q(2758, {	-- The Origins of Smithing
 							["provider"] = { "n", 7798 },	-- Hank the Hammer
 							["coord"] = { 56.0, 16.0, 84 },
-							["requireSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = BLACKSMITHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
 							["u"] = 40,
@@ -82,18 +82,18 @@ _.Zones =
 						}),	
 					}),
 				}),
-				prof(185, {	-- Cooking
+				prof(COOKING, {
 					n(-4, {	-- Achievements
 						ach(5474, {	-- Let's Do Lunch: Stormwind
 							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(26190, {	-- A Fisherman's Feast
 							["provider"] = { "n", 42288 },	-- Robby Flay
 							["coord"] = { 50.6, 71.6, 84 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								crit(1, {	-- A Fisherman's Feast
@@ -106,7 +106,7 @@ _.Zones =
 							["provider"] = { "n", 42288 },	-- Robby Flay
 							["coord"] = { 50.6, 71.6, 84 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								crit(2, {	-- Feeling Crabby?
@@ -119,7 +119,7 @@ _.Zones =
 							["provider"] = { "n", 42288 },	-- Robby Flay
 							["coord"] = { 50.6, 71.6, 84 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								crit(3, {	-- Orphans Like Cookies Too!
@@ -132,7 +132,7 @@ _.Zones =
 							["provider"] = { "n", 42288 },	-- Robby Flay
 							["coord"] = { 50.6, 71.6, 84 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								crit(4, {	-- Penny's Pumpkin Pancakes
@@ -145,7 +145,7 @@ _.Zones =
 							["provider"] = { "n", 42288 },	-- Robby Flay
 							["coord"] = { 50.6, 71.6, 84 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								crit(5, {	-- The King's Cider
@@ -156,13 +156,13 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(202, {	-- Engineering
-					n(-17, {	-- Quests
+				prof(ENGINEERING, {
+					n(QUESTS, {
 						q(29477, {	-- Gnomish Engineering
 							["provider"] = { "n", 5518 },	-- Lilliam Sparkspindle
 							["coord"] = { 62.8, 32.0, 84 },
 							["description"] = "Exclusive with |cFFFFD700Goblin Engineering|r. Becomes available at lvl 200 classic engineering.",
-							["requireSkill"] = 202,	-- Engineering
+							["requireSkill"] = ENGINEERING,
 							["lvl"] = 20,
 							["repeatable"] = true,
 						}),
@@ -170,29 +170,29 @@ _.Zones =
 							["provider"] = { "n", 5518 },	-- Lilliam Sparkspindle
 							["coord"] = { 62.8, 32.0, 84 },
 							["description"] = "Exclusive with |cFFFFD700Gnomish Engineering|r. Becomes available at lvl 200 classic engineering.",
-							["requireSkill"] = 202,	-- Engineering
+							["requireSkill"] = ENGINEERING,
 							["lvl"] = 20,
 							["repeatable"] = true,
 						}),
 						q(3630, {	-- Gnome Engineering
 							["u"] = 40,	-- Legacy
-							["requireSkill"] = 202,	-- Engineering
+							["requireSkill"] = ENGINEERING,
 							["provider"] = { "n", 5518 },	-- Lilliam Sparkspindle
 						}),
 					}),
 				}),
-				prof(356, {	-- Fishing
+				prof(FISHING, {
 					n(-4, {	-- Achievements
 						ach(5476, {	-- Fish or Cut Bait: Stormwind
 							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(26488, {	-- Big Gulp
 							["provider"] = { "n", 5494 },	-- Catherine Leland
 							["coord"] = { 55.0, 69.6, 84 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								crit(4, {	-- Big Gulp
@@ -210,7 +210,7 @@ _.Zones =
 							["provider"] = { "n", 5494 },	-- Catherine Leland
 							["coord"] = { 55.0, 69.6, 84 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								crit(2, {	-- Diggin' For Worms
@@ -228,7 +228,7 @@ _.Zones =
 							["provider"] = { "n", 5494 },	-- Catherine Leland
 							["coord"] = { 55.0, 69.6, 84 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								crit(1, {	-- Hitting a Walleye
@@ -246,7 +246,7 @@ _.Zones =
 							["provider"] = { "n", 5494 },	-- Catherine Leland
 							["coord"] = { 55.0, 69.6, 84 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								crit(3, {	-- Rock Lobster
@@ -264,7 +264,7 @@ _.Zones =
 							["provider"] = { "n", 5494 },	-- Catherine Leland
 							["coord"] = { 55.0, 69.6, 84 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								crit(5, {	-- Thunder Falls
@@ -280,13 +280,13 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(755, {	-- Jewelcrafting
-					n(-17, {	-- Quests
+				prof(JEWELCRAFTING, {
+					n(QUESTS, {
 						q(25154, {	-- A Present for Lila
 							["provider"] = { "n", 50480 },	-- Isabel Jones
 							["coord"] = { 63.8, 61.2, 84 },
 							["isDaily"] = true,
-							["requireSkill"] = 755,	-- Jewelcrafting
+							["requireSkill"] = JEWELCRAFTING,
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								currency(361),	-- Illustrious Jewelcrafter's Token
@@ -296,7 +296,7 @@ _.Zones =
 							["provider"] = { "n", 50480 },	-- Isabel Jones
 							["coord"] = { 63.8, 61.2, 84 },
 							["isDaily"] = true,
-							["requireSkill"] = 755,	-- Jewelcrafting
+							["requireSkill"] = JEWELCRAFTING,
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								currency(361),	-- Illustrious Jewelcrafter's Token
@@ -306,7 +306,7 @@ _.Zones =
 							["provider"] = { "n", 50480 },	-- Isabel Jones
 							["coord"] = { 63.8, 61.2, 84 },
 							["isDaily"] = true,
-							["requireSkill"] = 755,	-- Jewelcrafting
+							["requireSkill"] = JEWELCRAFTING,
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								currency(361),	-- Illustrious Jewelcrafter's Token
@@ -316,7 +316,7 @@ _.Zones =
 							["provider"] = { "n", 50480 },	-- Isabel Jones
 							["coord"] = { 63.8, 61.2, 84 },
 							["isDaily"] = true,
-							["requireSkill"] = 755,	-- Jewelcrafting
+							["requireSkill"] = JEWELCRAFTING,
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								currency(361),	-- Illustrious Jewelcrafter's Token
@@ -326,7 +326,7 @@ _.Zones =
 							["provider"] = { "n", 50480 },	-- Isabel Jones
 							["coord"] = { 63.8, 61.2, 84 },
 							["isDaily"] = true,
-							["requireSkill"] = 755,	-- Jewelcrafting
+							["requireSkill"] = JEWELCRAFTING,
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								currency(361),	-- Illustrious Jewelcrafter's Token
@@ -334,13 +334,13 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(165, {	-- Leatherworking
-					n(-17, {	-- Quests
+				prof(LEATHERWORKING, {
+					n(QUESTS, {
 						q(7497, {	-- The Journey Has Just Begun
 							["provider"] = { "n", 14394 },	-- Major Mattingly
 							["coord"] = { 67.2, 85.1, 84 },
 							["sourceQuest"] = 24428, -- A Most Puzzling Circumstance (A)
-							["requireSkill"] = 165,	-- Leatherworking
+							["requireSkill"] = LEATHERWORKING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 60,
 							["g"] = {

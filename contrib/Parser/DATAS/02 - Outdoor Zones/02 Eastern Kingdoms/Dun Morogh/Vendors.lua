@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(27, {	-- Dun Morogh
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(7955, {	-- Milli Featherwhistle <Mechanostrider Merchant>
 					["coord"] = { 56.2, 46.3, 27 },
 					["races"] = ALLIANCE_ONLY,

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(15, {	-- Badlands
-			n(-17,  {	-- Quests
+			n(QUESTS, {
 				q(719,   {	-- A Dwarf and His Tools
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
@@ -198,7 +198,7 @@ _.Zones =
 					["sourceQuests"] = { 27764 },	-- A Strange Request
 				}),
 				q(1559, {	-- Flash Bomb Recipe
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
 						i(6672),	-- Schematic: Flash Bomb

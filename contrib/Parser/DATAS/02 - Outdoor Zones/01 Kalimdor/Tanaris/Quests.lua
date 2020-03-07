@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(71, {	-- Tanaris
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(25072, {	-- A Few Good Goblins
 					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
 					["coord"] = { 55.6, 60.8, 71 },
@@ -21,7 +21,7 @@ _.Zones =
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
 					["coord"] = { 51.6, 28.6, 71 },
 					["sourceQuest"] = 2764,	-- Galvin's Finest Pupil
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["u"] = 40,
 					["g"] = {
 						un(2, i(7987)),	-- Plans: Ornate Mithril Helm
@@ -215,7 +215,7 @@ _.Zones =
 					["u"] = 40,	
 					["provider"] = { "n", 40589 },	-- Dirge Quikcleave
 					["description"] = "This quest is only available if you learned Artisan Cooking before 3.1.0",
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 					["g"] = {
 						recipe(64054),	-- Clamlette Magnifique
 					},
@@ -227,7 +227,7 @@ _.Zones =
 						6611,	-- To Gadgetzan You Go!
 						6612,	-- I Know A Guy...
 					},
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 					["g"] = {
 						recipe(64054),	-- Clamlette Magnifique
 					},
@@ -300,7 +300,7 @@ _.Zones =
 						2773,	-- The Mithril Kid
 						2772,	-- The World At Your Feet
 					},
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["u"] = 40,
 					["g"] = {
 						un(2, i(10418)),	-- Glimmering Mithril Insignia
@@ -433,7 +433,7 @@ _.Zones =
 				q(7653,  {	-- Imperial Plate Belt
 					["u"] = 40,
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						un(2, i(12688, {	-- Plans: Imperial Plate Belt
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
@@ -443,7 +443,7 @@ _.Zones =
 				q(7654,  {	-- Imperial Plate Boots
 					["u"] = 40,
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						un(2, i(12700, {	-- Plans: Imperial Plate Boots
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
@@ -453,7 +453,7 @@ _.Zones =
 				q(7655,  {	-- Imperial Plate Bracer
 					["u"] = 40,
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						un(2, i(12690, {	-- Plans: Imperial Plate Bracers
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
@@ -463,7 +463,7 @@ _.Zones =
 				q(7656,  {	-- Imperial Plate Chest
 					["u"] = 40,
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						un(2, i(12705, {	-- Plans: Imperial Plate Chest
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
@@ -473,7 +473,7 @@ _.Zones =
 				q(7657,  {	-- Imperial Plate Helm
 					["u"] = 40,
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						un(2, i(12701, {	-- Plans: Imperial Plate Helm
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
@@ -483,7 +483,7 @@ _.Zones =
 				q(7658,  {	-- Imperial Plate Leggings
 					["u"] = 40,
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						un(2, i(12715, {	-- Plans: Imperial Plate Leggings
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
@@ -493,7 +493,7 @@ _.Zones =
 				q(7659,  {	-- Imperial Plate Shoulders
 					["u"] = 40,
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						un(2, i(12687, {	-- Plans: Imperial Plate Shoulders
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
@@ -634,7 +634,7 @@ _.Zones =
 				q(40881, {	-- Oil Rags to Riches
 					["coord"] = { 69.5, 68.4, 71 },
 					["provider"] = { "o", 246438 },	-- Blingtron Circuit Design
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 				}),
 				q(10282, {	-- Old Hillsbrad
 					["provider"] = { "n", 20130 },	-- Andormu
@@ -1033,7 +1033,7 @@ _.Zones =
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
 					["coord"] = { 51.6, 28.6, 71 },
 					["sourceQuest"] = 2764,	-- Galvin's Finest Pupil
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["u"] = 40,
 					["g"] = {
 						un(2, i(7986)),	-- Plans: Ornate Mithril Breastplate
@@ -1237,7 +1237,7 @@ _.Zones =
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
 					["coord"] = { 51.6, 28.6, 71 },
 					["sourceQuest"] = 2764,	-- Galvin's Finest Pupil
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["u"] = 40,
 					["g"] = {
 						un(2, i(7988)),	-- Plans: Ornate Mithril Boots

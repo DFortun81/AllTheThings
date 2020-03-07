@@ -10,7 +10,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 	holiday(235462, {	-- Hallow's End
 		["u"] = 26,	-- Hallow's End
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(12135, {	-- "Let the Fires Come!" (Alliance)
 					["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
 					["isDaily"] = true,

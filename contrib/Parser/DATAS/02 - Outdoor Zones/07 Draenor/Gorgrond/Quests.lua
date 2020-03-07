@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(543, {	-- Gorgrond
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				--[[ notes:
 				
 					-- unknown trigger/flag criteria

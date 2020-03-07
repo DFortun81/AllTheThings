@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(199, {	-- Southern Barrens
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(25183, {	-- ...And Bury the Rest
 					["provider"] = { "n", 39118 },	-- General Twinbraid
 					["coord"] = { 43.5, 78.3, 199 },

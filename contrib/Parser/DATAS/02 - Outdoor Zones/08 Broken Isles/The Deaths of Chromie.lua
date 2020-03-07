@@ -10,7 +10,7 @@ _.Zones =
 			["description"] = "The Chromie Scenario sends you through multiple timeways to defeat Chromie's attackers. As you gain reputation with Chromie by killing mobs in the scenario, you will unlock more powerful abilities for Chromie to help speed up your run. Unlike past solo scenarios like Withered Army Training, you do not need to worry about gearing up--your gear is scaled up to 1000 and your player level is increased as well to 112. You can also fly inside this scenario--unusual for instanced content.\n\nEach scenario attempt lasts 15 minutes and the ultimate goal is to defeat 8 timeways in one attempt. Progress can be sped up through obtaining items that grant extra time, buffs from Chromie, and items which auto-complete a timeway threat.",
 			["maps"] = { 115, 898, 899, 900, 901, 902 },	-- Dragonblight / Scenario
 			["g"] = {
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(48021, {	-- Chromie
 						["maps"] = { 627 },	-- Dalaran (Legion)
 						["coord"] = { 26.4, 44.6, 627 },

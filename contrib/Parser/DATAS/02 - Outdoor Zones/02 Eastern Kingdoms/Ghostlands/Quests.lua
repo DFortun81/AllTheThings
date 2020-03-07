@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(95, {	-- Ghostlands
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(10372, {	-- A Discreet Inquiry
 					["u"] = 40,
 					["races"] = HORDE_ONLY,

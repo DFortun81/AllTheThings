@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
-			n(-16,  {	-- Rares
+			n(RARES, {
 				n(137025, {	-- Broodmother
 					["questID"] = 51298,
 					["coord"] = { 29.5, 69.6, 942 },	-- entrance to cellar

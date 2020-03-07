@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(104, {	-- Shadowmoon Valley (Outland)
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(19521, {	-- Arrond <Tailoring Supplies>
 					["coord"] = { 55.8, 58.2, 104 },
 					["g"] = {

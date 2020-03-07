@@ -31,7 +31,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				]]--
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					i(144436, {	-- Lost Legend of Odyn
 						["description"] = "This item can drop off of any Vyrkul in the Broken Isles as a Warrior. (any spec)",
 						["g"] = {
@@ -238,7 +238,7 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
-				n(-2,  {	-- Vendors
+				n(VENDORS, {
 					n(112392, {	-- Quartermaster Durnolf
 						i(140946, {	-- Battlelord's Armor Kit
 							["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources

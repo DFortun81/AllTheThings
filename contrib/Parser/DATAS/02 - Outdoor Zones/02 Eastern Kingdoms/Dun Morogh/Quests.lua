@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(27, {	-- Dun Morogh
-			n(-17,  {	-- Quests
+			n(QUESTS, {
 				q(319,   {	-- A Favor for Evershine
 					["u"] = 40,
 					["provider"] = { "n", 1374 },	-- Rejold Barleybrew

@@ -12,7 +12,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["coord"] = { 32.96, 38.36, 550 },	-- Nagrand, Draenor
 		["g"] = {
 			d(17, {	-- LFR
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					un(40, i(115280, {	-- Abrogator Stone
 						["crs"] = {
 							78714,	-- Kargath
@@ -138,7 +138,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				}),
 			}),
 			d(14, {	-- Normal
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(119343, {	-- Eye-Blinder Greatcloak
 						["crs"] = {
 							86290,	-- Underbelly Vagrant
@@ -331,7 +331,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 			}),
 			d(15, {	-- Heroic
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(119343, {	-- Eye-Blinder Greatcloak
 						["crs"] = {
 							86290,	-- Underbelly Vagrant
@@ -524,7 +524,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 			}),
 			d(16, {	-- Mythic
-				n(0, {		-- Zone Drop
+				n(ZONEDROPS, {
 					i(119343, {	-- Eye-Blinder Greatcloak
 						["crs"] = {
 							86290,	-- Underbelly Vagrant

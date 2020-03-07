@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(650, {	-- Highmountain
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(93975,  {	-- Leyweaver Yaphisteia
 					["coord"] = { 29.4, 26.2, 650 },
 					["g"] = {

@@ -7,93 +7,139 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
 			n(-38, {	-- Professions
-				prof(182, {	-- Herbalism
-					q(51312, {	-- Aromatic Pollenator
-						["requireSkill"] = 182,	-- Herbalism
-						["description"] = "This drops from |cFFFFD700Siren's Pollen|r and can drop at any herbalism level. You can only turn it in at Level 50 Kul Tiran Herbalism.",
-						["itemID"] = 159877,	-- Dead Pollen-Covered Bee
+				prof(HERBALISM, {
+					-- Siren's Pollen
+					q(51312, {	-- Aromatic Pollenator (A)
+						["provider"] = { "n", 159877 },	-- Dead Pollen-Covered Bee
+						["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Kul Tiran Herbalism.",
+						["requireSkill"] = HERBALISM,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(51447, {	-- Aromatic Pollenator
-						["requireSkill"] = 182,	-- Herbalism
-						["description"] = "This drops from |cFFFFD700Siren's Pollen|r and can drop at any herbalism level. You can only turn it in at Level 50 Kul Tiran Herbalism.",
-						["itemID"] = 159877,	-- Dead Pollen-Covered Bee
+					q(51447, {	-- Aromatic Pollenator (H)
+						["provider"] = { "n", 159877 },	-- Dead Pollen-Covered Bee
+						["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Zandalari Herbalism.",
+						["requireSkill"] = HERBALISM,
 						["races"] = HORDE_ONLY,
 					}),
-					q(48758, {	-- Disgustingly Damp Flower
-						["sourceQuests"] = { 51313 },	-- Learn From the Best
-						["requireSkill"] = 182,	-- Herbalism
-						["description"] = "This drops from |cFFFFD700Siren's Pollen|r and can drop at any herbalism level. You can only turn it in at Level 150 Kul Tiran Herbalism.",
-						["itemID"] = 159956,	-- Disgustingly Damp Flower
+					q(48758, {	-- Disgustingly Damp Flower (A)
+						["provider"] = { "n", 159956 },	-- Disgustingly Damp Flower
+						["sourceQuest"] = 51313,	-- Learn From the Best
+						["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
+						["requireSkill"] = HERBALISM,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(51451, {	-- Disgustingly Damp Flower
-						["sourceQuests"] = { 51448 },	-- Learn From the Best
-						["requireSkill"] = 182,	-- Herbalism
-						["description"] = "This drops from |cFFFFD700Siren's Pollen|r and can drop at any herbalism level. You can only turn it in at Level 150 Kul Tiran Herbalism.",
+					q(51451, {	-- Disgustingly Damp Flower (H)
+						["provider"] = { "n", 159956 },	-- Disgustingly Damp Flower
+						["sourceQuest"] = 51448,	-- Learn From the Best
+						["description"] = "This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
 						["itemID"] = 159956,	-- Disgustingly Damp Flower
+						["requireSkill"] = HERBALISM,
 						["races"] = HORDE_ONLY,
 					}),
-					q(51360, {	-- Enormous Anchor Pod
-						["sourceQuests"] = { 51016 },	-- Seeking More Knowledge
-						["requireSkill"] = 182,	-- Herbalism
-						["description"] = "This drops from |cFFFFD700Anchor Weed|r and can drop at any herbalism level.  You can only turn it in at Level 150 Kul Tiran Herbalism.",
-						["itemID"] = 160035,	-- Enormous Anchor Pod
+					-- Anchor Weed
+					q(51360, {	-- Enormous Anchor Pod (A)
+						["provider"] = { "i", 160035 },	-- Enormous Anchor Pod
+						["sourceQuest"] = 51016,	-- Seeking More Knowledge (A)
+						["description"] = "This can drop from |cFFFFD700Anchor Weed|r at any herbalism level.  You can only turn it in at Level 150 Kul Tiran Herbalism.",
+						["requireSkill"] = HERBALISM,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(51480, {	-- Enormous Anchor Pod
-						["sourceQuests"] = { 51482 },	-- Seeking More Knowledge
-						["requireSkill"] = 182,	-- Herbalism
-						["description"] = "This drops from |cFFFFD700Anchor Weed|r and can drop at any herbalism level. You can only turn it in at Level 150 Kul Tiran Herbalism.",
-						["itemID"] = 160035,	-- Enormous Anchor Pod
+					q(51480, {	-- Enormous Anchor Pod (H)
+						["provider"] = { "i", 160035 },	-- Enormous Anchor Pod
+						["sourceQuest"] = 51482,	-- Seeking More Knowledge (H)
+						["description"] = "This can drop from |cFFFFD700Anchor Weed|r at any herbalism level. You can only turn it in at Level 150 Zandalari Herbalism.",
+						["requireSkill"] = HERBALISM,
 						["races"] = HORDE_ONLY,
 					}),
 				}),
-				prof(755, {	-- Jewelcrafting
+				prof(JEWELCRAFTING, {
 					q(55579, {	-- Cracking the Surface (H)
 						["provider"] = { "n", 150898 },	-- Shrine of Storms
 						["coord"] = { 60.7, 58.5, 942 },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49599,	-- The Missing Chapter (H)
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 				}),
-				prof(186, {	-- Mining
-					q(52044, {	-- An Exceptional Platinum Shard
-						["requireSkill"] = 186,	-- Mining
-						["description"] = "Requires 150 Kul'Tiran Mining.  The quest item can be mined from Platinum Deposits and Rich Platinum Deposits.",
-						["itemID"] = 161078,	-- Exceptional Platinum Shard
+				prof(MINING, {
+					-- Monelite Seam
+					q(48767, {	-- Seams Familiar
+						["provider"] = { "i", 160905 },	-- Lost Anchor Necklace
+						["sourceQuest"] = 48764,	-- Don't Pick a Fight
+						["description"] = "This can drop from |cFFFFD700Monelite Seam|r at any mining level.  You can only turn it in at Level 150 Kul Tiran Mining.",
+						["requireSkill"] = MINING,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							recipe(253340),	-- Platinum Deposit [Rank 2]
+							recipe(253344),	-- Monelite Seam (Rank 3)
 						},
 					}),
-					q(48767, {	-- Seams Familiar
-						["races"] = ALLIANCE_ONLY,
-						["requireSkill"] = 186,	-- Mining
-						["sourceQuest"] = 48764, 	-- Don't Pick a Fight
-						["description"] = "This drops from mining |cFFFFD700Monelite Seam|r.  You can only turn it in at Level 150 Kul Tiran Mining.",
+					q(51971, {	-- An Exquisite Brooch
+						["provider"] = { "i", 160944 },	-- An Exquisite Brooch
+						["coord"] = { 44.0, 39.0, 1165 },
+						["description"] = "This can drop from |cFFFFD700Monelite Seam|r at any mining level.  You can only turn it in at Level 150 Zandalari Mining.",
+						["requireSkill"] = MINING,
+						["races"] = HORDE_ONLY,
 						["g"] = {
-							recipe(253344),	-- Monelite Seam Rank 3
+							recipe(253344),	-- Monelite Seam (Rank 3)
+						},
+					}),
+					-- Platinum Deposit
+					q(52044, {	-- An Exceptional Platinum Shard (A)
+						["provider"] = { "i", 161078 },	-- Exceptional Platinum Shard (A)
+						["description"] = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level.  You can only turn it in at Level 150 Kul Tiran Mining.",
+						["requireSkill"] = MINING,
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							recipe(253340),	-- Platinum Deposit (Rank 2)
+						},
+					}),
+					q(52046, {	-- An Exceptional Platinum Shard (H)
+						["provider"] = { "i", 161079 },	-- Exceptional Platinum Shard (H)
+						["description"] = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level.  You can only turn it in at Level 150 Zandalari Mining.",
+						["requireSkill"] = MINING,
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							recipe(253340),	-- Platinum Deposit (Rank 2)
 						},
 					}),
 					q(52049, {	-- X Marks the Plat!
-						["requireSkill"] = 186,	-- Mining
-						["description"] = "Requires 150 Kul'Tiran Mining.  The quest item can be mined from Platinum Deposits or Rich Platinum Deposits.",
-						["itemID"] = 161085,	-- Tattered Map
+						["provider"] = { "i", 161085 },	-- Tattered Map
+						["sourceQuest"] = 52044,	-- An Exceptional Platinum Shard (A)
+						["description"] = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level.  You can only turn it in at Level 150 Kul Tiran Mining.",
+						["requireSkill"] = MINING,
 						["races"] = ALLIANCE_ONLY,
 					}),
+					q(52053, {	-- The Platinum Map
+						["provider"] = { "i", 161088 },	-- Platinum Map
+						["sourceQuest"] = 52046,	-- An Exceptional Platinum Shard (H)
+						["description"] = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level.  You can only turn it in at Level 150 Zandalari Mining.",
+						["requireSkill"] = MINING,
+						["races"] = HORDE_ONLY,
+					}),
 				}),
-				prof(393, {	-- Skinning
-					q(52224, {	-- Ivory Handled Dagger
-						["sourceQuests"] = { 52223 },	-- Brinepinch
-						["description"] = "Requires 150 Kul Tiran Skinning.",
-						["races"] = ALLIANCE_ONLY,
+				prof(SKINNING, {
+					q(52213, {	-- Ancient Skinning Knife
+						["provider"] = { "i", 161431 },	-- Ancient Skinning Knife
+						["sourceQuest"] = 51575,	-- Lost But Not Forgotten
+						["description"] = "Requires 150 Zandalari Skinning to get the item.",
+						["requireSkill"] = SKINNING,
+						["races"] = HORDE_ONLY,
 						["g"] = {
 							recipe(257148),	-- Skinning Technique: Leather Gathering (Rank 3)
 						},
 					}),
+					q(52224, {	-- Ivory Handled Dagger
+						["provider"] = { "i", 161424 },	-- Ivory Handled Dagger
+						["sourceQuest"] = 52223,	-- Brinepinch
+						["description"] = "Requires 150 Kul Tiran Skinning to get the item.",
+						["requireSkill"] = SKINNING,
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							recipe(257148),	-- Skinning Technique: Leather Gathering (Rank 3)
+						},
+					}),	
 				}),
 			}),
 		}),

@@ -8,7 +8,7 @@ _.Instances = { tier(1, {	-- Classic
 		["mapID"] = 301,
 		["lvl"] = 25,
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(26906, {	-- Agamaggan
 					["provider"] = { "n", 44402 },	-- Auld Stonespire
 				}),
@@ -82,7 +82,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			n(0,   {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(1488, {	-- Avenger's Armor
 					["crs"] = {
 						74620,	-- Battle Boar

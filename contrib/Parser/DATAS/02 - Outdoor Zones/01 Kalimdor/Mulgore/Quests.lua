@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(7, {	-- Mulgore
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(6361,  {	-- A Bundle of Hides
 					["provider"] = { "n", 3079 },	-- Varg Windwhisper
 					["coord"] = { 46.0, 58.2, 7 },

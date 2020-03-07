@@ -6,7 +6,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 	holiday(235462, {	-- Hallow's End
 		["u"] = 26,	-- Hallow's End
 		["g"] = {
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				["maps"] = { 539 },	-- Shadowmoon Valley (Draenor)
 				["g"] = {
 					i(128807, {	-- Coin of Many Faces (TOY!)
@@ -21,7 +21,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					}),
 				},
 			}),
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(33117),	-- Jack-o'-Lantern
 				i(20400),	-- Pumpkin Bag
 			}),

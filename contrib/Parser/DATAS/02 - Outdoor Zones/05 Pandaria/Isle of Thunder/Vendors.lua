@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(504, {	-- Isle of Thunder
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(68000, {	-- Hiren Loresong <Kirin Tor Offensive Quartermaster>
 					["coord"] = { 64.6, 74.6, 504 },
 					["races"] = ALLIANCE_ONLY,

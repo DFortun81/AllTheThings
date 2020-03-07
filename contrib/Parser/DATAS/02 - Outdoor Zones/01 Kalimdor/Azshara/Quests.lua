@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(76, {	-- Azshara
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(3382,  {	-- A Crew Under Fire
 					["u"] = 40,
 					["provider"] = { "n", 8380 },	-- Captain Vanessa Beltis

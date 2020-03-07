@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(51, {	-- Swamp of Sorrows
-			n(-17,  {	-- Quests
+			n(QUESTS, {
 				q(2801,  {	-- A Tale of Sorrow
 					["u"] = 40,
 					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde

@@ -11,7 +11,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["mapID"] = 331,
 		["coord"] = { 47.51, 52.08, 100 },	-- Magtheridon's Lair, Hellfire Peninsula
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(11002, {	-- The Fall of Magtheridon (A)
 					["crs"] = { 17257 },	-- Magtheridon
 					["races"] = ALLIANCE_ONLY,

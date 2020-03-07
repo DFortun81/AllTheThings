@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(18, {	-- Tirisfal Glades
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(25046, {	-- A Daughter's Embrace
 					["provider"] = { "n", 13158 },	-- Lieutenant Sanders
 					["coord"] = { 87.5, 43.2, 18 },

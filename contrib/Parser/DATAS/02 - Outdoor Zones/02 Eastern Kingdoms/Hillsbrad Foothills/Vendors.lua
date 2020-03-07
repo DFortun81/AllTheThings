@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(25, {	-- Hillsbrad Foothills
-			n(-2,   {	-- Vendors
+			n(VENDORS, {
 				n(2480,  {	-- Bro'kin <Alchemy Supplies>
 					["coord"] = { 44.0, 21.8, 25 },
 					["g"] = {

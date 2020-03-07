@@ -9,13 +9,13 @@ _.ExpansionFeatures =
 				garrisonBuilding(122, {	-- The Tannery (rank 1: 90, rank 2: 121, rank 3: 122)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(36642, {	-- Your First Leatherworking Work Order
 								["provider"] = { "n", 77383 },	-- Anders Longstitch
 								["races"] = ALLIANCE_ONLY,
 							}),
 						}),
-						n(-2,  {	-- Vendors
+						n(VENDORS, {
 							n(77383, { 	-- Anders Longstitch <Leatherworker>
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {

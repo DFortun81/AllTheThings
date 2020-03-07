@@ -6,7 +6,7 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(198, {	-- Mount Hyjal
 			n(-38, {	-- Profession
-				prof(356, {	-- Fishing
+				prof(FISHING, {
 					o(202776, {	-- Mountain Trout School
 						["model"] = 219405,
 						["g"] = {

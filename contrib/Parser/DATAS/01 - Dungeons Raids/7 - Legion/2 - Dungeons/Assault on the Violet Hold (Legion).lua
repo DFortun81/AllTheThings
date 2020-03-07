@@ -10,7 +10,7 @@ _.Instances = { tier(7, {	-- Legion
 			723,	-- The Violet Hold (used in Demon Hunter Artifact questline)
 		},
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(39247,  {	-- The Hunt
 					["sourceQuests"] = { 39051 },	-- By Any Means
 					["classes"] = { 12 },	-- Demon Hunter

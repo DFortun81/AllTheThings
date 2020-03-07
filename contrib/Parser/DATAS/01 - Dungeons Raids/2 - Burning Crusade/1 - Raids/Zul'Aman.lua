@@ -14,7 +14,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			d(1, {	-- Normal (Legacy)
 				["u"] = 12,
 				["groups"] = {
-					n(-17, {	-- Quests 
+					n(QUESTS, { 
 						{
 							["questID"] = 11165,	-- A Troll Among Trolls
 							["provider"] = { "n", 23761 },	-- Quest Giver: Prigmon
@@ -64,7 +64,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							["u"] = 2,			-- Legacy Content
 						},
 					}),
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						i(33865, {	-- Amani Hex Stick
 							n(24396, { 	-- Forest Frog
 								["description"] = "Use an Amani Hex Stick on a Forest Frog for a chance to have Mojo spawn and hop into your bags.",

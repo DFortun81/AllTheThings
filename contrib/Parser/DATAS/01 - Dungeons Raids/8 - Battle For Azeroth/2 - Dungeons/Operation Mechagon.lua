@@ -12,7 +12,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			1497,	-- Mechagon City
 		},
 		["groups"] = {
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(170212),	-- Mecha-Bytes
 				i(170211),	-- Recipe: Famine Evaluator and Snack Table
 				i(170210),	-- Recipe: Abyssal Healing Potion (Rank 3)
@@ -33,7 +33,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = { 154794 },
 				}),
 			}),
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(55609, {	-- Operation: Mechagon - The Mechoriginator
 					["sourceQuests"] = { 55736 },	-- Welcome to the Resistance
 					["provider"] = { "n", 149816 },	-- Prince Erazmin
@@ -93,7 +93,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					e(2355, {	-- HK-8 Aerial Oppression Unit
 						["crs"] = { 155157 },	-- HK-8 Aerial Oppression Unit
 						["g"] = {
-							i(168826),	-- Mechagon Peacekeeper
+						--	i(168826),	-- Mechagon Peacekeeper. Only on Mythic or Mythic+
 							i(169385),	-- Microbot 8D
 							i(168742),	-- Forceful Adaptable Logic Board
 							i(168743),	-- Forceful Efficient Logic Board

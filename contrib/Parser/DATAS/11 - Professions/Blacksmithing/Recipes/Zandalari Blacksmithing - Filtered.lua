@@ -1,4 +1,4 @@
-profession(164, {	-- Blacksmithing
+profession(BLACKSMITHING, {
 	filter(200, {	-- Recipes
 	-- Reviewed and updated as of 12.15.2018 BfA 8.1, leaving all items from _Automation in for easier future updates
 		{	-- Zandalari Plans

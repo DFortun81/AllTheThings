@@ -742,6 +742,28 @@ namespace ATT
             #endregion
             #region Export
             /// <summary>
+            /// Export all items found within the relative path.
+            /// </summary>
+            /// <param name="group">The group of objects potentially containing item data.</param>
+            /// <param name="result">The result list to be exported.</param>
+            private static void ExportItems(List<object> group, List<Dictionary<string, object>> result)
+            {
+                foreach (var entry in group)
+                {
+                    if (entry is Dictionary<string, object> o)
+                    {
+                        if(o.TryGetValue("itemID", out int itemID))
+                        {
+                            var itemData = Items.GetNull(itemID);
+                            if (itemData != null && itemData.TryGetValue("name", out object nameRef)) o["name"] = nameRef;
+                            result.Add(o);
+                        }
+                        if (o.TryGetValue("g", out List<object> g)) ExportItems(g, result);
+                    }
+                }
+            }
+
+            /// <summary>
             /// Export Debugging Files to the supplied directory.
             /// </summary>
             /// <param name="directory">The directory to file the debug files to.</param>
@@ -756,38 +778,9 @@ namespace ATT
                 // Cache the "Unsorted" list.
                 if (AllContainers.TryGetValue("Unsorted", out List<object> unsorted))
                 {
-                    // Export all Unsorted.
-                    File.WriteAllText(Path.Combine(directory, "Unsorted.lua"), ATT.Export.ExportRawLua(unsorted).ToString());
-
                     // Export all Unsorted items... in a sorted way.
                     var sortedList = new List<Dictionary<string, object>>();
-                    foreach (var tierList in unsorted)
-                    {
-                        if (tierList is Dictionary<string, object> tier && tier.TryGetValue("g", out object g) && g is List<object> groups)
-                        {
-                            foreach (var o in groups)
-                            {
-                                if (o is Dictionary<string, object> itemType && itemType.TryGetValue("g", out object its) && its is List<object> items)
-                                {
-                                    foreach (var i in items)
-                                    {
-                                        if (i is Dictionary<string, object> item && item.TryGetValue("itemID", out object itemIDRef))
-                                        {
-                                            if (item.TryGetValue("itemID", out object idObj))
-                                            {
-                                                var itemData = Items.GetNull(Convert.ToInt32(idObj));
-                                                if (itemData != null && itemData.TryGetValue("name", out object nameRef))
-                                                {
-                                                    item["name"] = nameRef;
-                                                }
-                                            }
-                                            sortedList.Add(item);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    ExportItems(unsorted, sortedList);
                     sortedList.Sort(delegate (Dictionary<string, object> a, Dictionary<string, object> b)
                     {
                         if (a.TryGetValue("name", out object nameRefA))
@@ -799,20 +792,68 @@ namespace ATT
                         }
                         return 0;
                     });
-                    var builder2 = new StringBuilder();
+                    var bindingSpecification = new Dictionary<int, Dictionary<int, List<string>>>();
+                    StringBuilder builder2 = new StringBuilder(), itemNameBuilder = new StringBuilder();
                     foreach (var item in sortedList)
                     {
-                        if (item.TryGetValue("itemID", out object itemIDRef))
+                        if (item.TryGetValue("itemID", out int itemID))
                         {
-                            builder2.Append("i(").Append(itemIDRef).Append(");");
-                            if (item.TryGetValue("name", out object nameRef))
+                            itemNameBuilder.Clear().Append("i(").Append(itemID).Append(");");
+                            if (item.TryGetValue("name", out string name)) itemNameBuilder.Append("\t-- ").Append(name.Replace("]", "").Replace("[", ""));
+                            itemNameBuilder.AppendLine();
+                            builder2.Append(itemNameBuilder);
+
+                            // Determine the Binding and Filter Types
+                            if (!item.TryGetValue("b", out int b)) b = 0;
+                            if (!item.TryGetValue("f", out int f)) f = 0;
+
+                            // Write the Item Name to the correct Binding Filtered Dictionary List.
+                            if(!bindingSpecification.TryGetValue(b, out Dictionary<int, List<string>> filterSpecification))
                             {
-                                builder2.Append("\t-- ").Append(nameRef.ToString().Replace("]", "").Replace("[", ""));
+                                bindingSpecification[b] = filterSpecification = new Dictionary<int, List<string>>();
+                            }
+                            if (!filterSpecification.TryGetValue(f, out List<string> listOfItems))
+                            {
+                                filterSpecification[f] = listOfItems = new List<string> { itemNameBuilder.ToString() };
+                            }
+                            else listOfItems.Add(itemNameBuilder.ToString());
+                        }
+                    }
+                    File.WriteAllText(Path.Combine(directory, "SortedItems.lua"), builder2.ToString());
+
+                    // Export the Binding Filtered Dictionary List.
+                    builder2.Clear();
+                    var allBindings = bindingSpecification.Keys.ToList();
+                    allBindings.Sort();
+                    foreach (var b in allBindings)
+                    {
+                        builder2.Append("-- Bind Type ").Append(b).AppendLine();
+                        var filterSpecification = bindingSpecification[b];
+                        var allFilters = filterSpecification.Keys.ToList();
+                        allFilters.Sort();
+                        foreach (var f in allFilters)
+                        {
+                            builder2.Append("\t-- ");
+                            try
+                            {
+                                builder2.Append(Enum.GetName(typeof(Filters), f));
+                            }
+                            catch
+                            {
+                                builder2.Append("Filter Type ").Append(f);
+                            }
+                            builder2.AppendLine();
+                            foreach(var item in filterSpecification[f])
+                            {
+                                builder2.Append('\t').Append(item);
                             }
                             builder2.AppendLine();
                         }
                     }
-                    File.WriteAllText(Path.Combine(directory, "SortedItems.lua"), builder2.ToString());
+                    File.WriteAllText(Path.Combine(directory, "SortedItemsByFilteredBinding.lua"), builder2.ToString());
+
+                    // Export all Unsorted.
+                    File.WriteAllText(Path.Combine(directory, "Unsorted.lua"), ATT.Export.ExportRawLua(unsorted).ToString());
                 }
 
                 // Load in the Locale File and Warn about Unused Custom NPC IDs.

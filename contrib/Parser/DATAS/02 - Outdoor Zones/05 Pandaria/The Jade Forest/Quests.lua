@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(371, { -- The Jade Forest
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(29619, {	-- A Courteous Guest
 					["sourceQuests"] = { 29618 } ,	-- The High Elder
 					["provider"] = { "n", 54913 },	-- Lin Tenderpaw
@@ -1019,7 +1019,7 @@ _.Zones =
 
 				q(31539, {	-- A Thing of Beauty
 					["provider"] = { "n", 56065 },	-- Inkmaster Wei
-					["requireSkill"] = 773,
+					["requireSkill"] = INSCRIPTION,
 					["isWeekly"] = true,
 					["g"] = {
 						{	-- Commissioned Painting
@@ -1033,7 +1033,7 @@ _.Zones =
 				}),
 				q(31544, {	-- A Tribute to the Dead
 					["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
-					["requireSkill"] = 773,
+					["requireSkill"] = INSCRIPTION,
 					["isWeekly"] = true,
 					["g"] = {
 						recipe(127481),	-- Inscribed Monument
@@ -1148,7 +1148,7 @@ _.Zones =
 						30500,	-- Residual Fallout
 					},
 					["provider"] = { "n", 62322 },	-- Graceful Swan
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 					["coord"] = { 48.1, 34.5, 371 },
 				}),
 				q(31486, {	-- Everything I Know About Cooking
@@ -1164,7 +1164,7 @@ _.Zones =
 						{ "n", 62872 },	-- Cranfur the Noodler
 						{ "n", 63013 },	-- Sway Dish Chef
 					},
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 					["coord"] = { 46.2, 45.4, 371 },
 				}),
 				q(30156, {	-- Feeding Time
@@ -1243,7 +1243,7 @@ _.Zones =
 				q(31542, {	-- Incarnadine Ink
 					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
 					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = 773,
+					["requireSkill"] = INSCRIPTION,
 					["isWeekly"] = true,
 					["g"] = {
 						recipe(127475),	-- Incarnadine Ink
@@ -1308,7 +1308,7 @@ _.Zones =
 				}),
 				q(31543, {	-- Portrait of a Lady
 					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
-					["requireSkill"] = 773,
+					["requireSkill"] = INSCRIPTION,
 					["isWeekly"] = true,
 					["g"] = {
 						recipe(128922),	-- Portrait of Madam Goya
@@ -1361,7 +1361,7 @@ _.Zones =
 				q(31541, {	-- Set in Jade
 					["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
 					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = 773,
+					["requireSkill"] = INSCRIPTION,
 					["isWeekly"] = true,
 					["g"] = {
 						recipe(127391),	-- Engraved Jade Disk
@@ -1457,7 +1457,7 @@ _.Zones =
 				q(31876, {	-- The Inkmasters of the Arboretum
 					["provider"] = { "n", 64691 },	-- Lorewalker Huynh
 					["isWeekly"] = true,
-					["requireSkill"] = 773,
+					["requireSkill"] = INSCRIPTION,
 				}),
 				q(29723, {	-- The Jade Witch
 					-- picked up around the Lair of the Jade Witch. should we pick arbitrary coords?

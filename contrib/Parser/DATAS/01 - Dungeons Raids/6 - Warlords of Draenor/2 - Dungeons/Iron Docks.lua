@@ -8,7 +8,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["coord"] = { 45.36, 13.52, 543 },	-- Gorgrond, Draenor
 		["lvl"] = 92,
 		["g"] = {
-			n(-1, {	-- Common Boss Drop
+			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					81297,	-- Dreadfang (Fleshrender Nok'gar)
 					81305,	-- Fleshrender Nok'gar
@@ -255,7 +255,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			d(2,  {	-- Heroic
 				["lvl"] = 100,
 				["g"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(37157, {	-- Feeling a Bit Morose
 							i(119092),	-- Moroes' Famous Polish (TOY!)
 						}),

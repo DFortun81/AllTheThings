@@ -135,7 +135,7 @@ _.Zones =
 						["coord"] = { 76.6, 8.40, 418 },
 					}),
 				}),
-				n(-17, { 	-- Quests
+				n(QUESTS, {
 --[[	Achievement info for Loremaster related zone quests
 					ach(6535, {	-- Mighty Roamin' Krasaranger (Alliance)
 						["races"] = ALLIANCE_ONLY,
@@ -571,7 +571,7 @@ _.Zones =
 					}),
 					q(31443, {	-- Flying Tiger Gourami
 						["provider"] = { "i", 86542 },	-- Flying Tiger Gourami
-						["requireSkill"] = 356,
+						["requireSkill"] = FISHING,
 						["isDaily"] = true,
 						["description"] = "Found while fishing in any inland body of water on Pandaria",
 					}),
@@ -809,7 +809,7 @@ _.Zones =
 					}),
 					i(86545, {
 						q(31446, {	-- Mimic Octopus
-							["requireSkill"] = 356,
+							["requireSkill"] = FISHING,
 							["isDaily"] = true,
 							["description"] = "Found while fishing in any inland body of water on Pandaria",
 						}),
@@ -956,7 +956,7 @@ _.Zones =
 					}),
 					q(30698, {	-- Scavenger Hunt
 						["provider"] = { "n", 60136 },	-- Fiznix
-						["requireSkill"] = 356,
+						["requireSkill"] = FISHING,
 						["isDaily"] = true,
 					}),
 					q(30121, {	-- Search Party
@@ -1011,7 +1011,7 @@ _.Zones =
 					}),
 					q(30584, {	-- Shocking!
 						["provider"] = { "n", 59584 },	-- Fisherman Haito
-						["requireSkill"] = 356,
+						["requireSkill"] = FISHING,
 						["isDaily"] = true,
 					}),
 					q(32152, {	-- Siege Damage
@@ -1026,7 +1026,7 @@ _.Zones =
 					}),
 					q(30700, {	-- Snapclaw
 						["provider"] = { "n", 59586 },	-- Angler Shen
-						["requireSkill"] = 356,
+						["requireSkill"] = FISHING,
 						["isDaily"] = true,
 					}),
 					q(32284, {	-- Someone You Should See
@@ -1036,7 +1036,7 @@ _.Zones =
 					i(86544, {	-- Spinefish Alpha
 						["g"] = {
 							q(31444, {	-- Spinefish Alpha
-								["requireSkill"] = 356,
+								["requireSkill"] = FISHING,
 								["isDaily"] = true,
 							}),
 						},
@@ -1117,7 +1117,7 @@ _.Zones =
 					q(36882, {	-- The Great Angler Returns
 						["provider"] = { "n", 63721 },	-- Nat Pagle
 						["races"] = ALLIANCE_ONLY,
-						["requireSkill"] = 356,
+						["requireSkill"] = FISHING,
 					}),
 					q(36609, {	-- The Great Angler Returns
 						["provider"] = { "n", 63721 },	-- Nat Pagle
@@ -1464,7 +1464,7 @@ _.Zones =
 					}),
 					q(30701, {	-- Viseclaw Soup
 						["provider"] = { "n", 60675 },	-- Fo Fook
-						["requireSkill"] = 356,
+						["requireSkill"] = FISHING,
 						["isDaily"] = true,
 					}),
 					o(216322, {	-- Bounty Board
@@ -1507,7 +1507,7 @@ _.Zones =
 					}),
 					q(30585, {	-- What Lurks Below
 						["provider"] = { "n", 60673 },	-- Elder Fisherman Rassan
-						["requireSkill"] = 356,
+						["requireSkill"] = FISHING,
 						["isDaily"] = true,
 					}),
 					q(30079, {	-- What's Eating Zhu's Watch?
@@ -1521,7 +1521,7 @@ _.Zones =
 					}),
 					q(30598, {	-- Who Knew Fish Liked Eggs?
 						["provider"] = { "n", 60673 },	-- Elder Fisherman Rassan
-						["requireSkill"] = 356,
+						["requireSkill"] = FISHING,
 						["isDaily"] = true,
 					}),
 					q(30088, {	-- Why So Serious?
@@ -1618,7 +1618,7 @@ _.Zones =
 					}),
 ]]--
 				}),
-				n(-16, { 	-- Rares
+				n(RARES, {
 					n(50787, {	-- Arness the Scale
 						["coords"] = {
 							{ 58.6, 43.8, 418 },
@@ -1895,7 +1895,7 @@ _.Zones =
 						["coord"] = { 54.3, 72.3, 418 },
 					}),
 				}),
-				n(-2, {		-- Vendor
+				n(VENDORS, {
 					n(69059, {	-- Agent Malley <Operation: Shieldwall Quartermaster>
 						["coord"] = { 94.5, 29.2, 418 },
 						["races"] = ALLIANCE_ONLY,

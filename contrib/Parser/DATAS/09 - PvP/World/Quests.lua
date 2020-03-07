@@ -4,7 +4,7 @@
 _.PVP =
 {
 	n(-10058, {	-- World
-		n(-17,  {	-- Quests
+		n(QUESTS, {
 			q(58274, {	-- Servant of N'Zoth
 				["races"] = ALLIANCE_ONLY,
 				["description"] = "Granted upon killing 10 Horde players without dying after you became an Assassin.",

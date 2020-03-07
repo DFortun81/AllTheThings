@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(634, {	-- Stormheim
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(98367, {	-- Tigrid the Charmer <Enchantress>
 					["coord"] = { 39.4, 42.6, 634 },
 					["g"] = {

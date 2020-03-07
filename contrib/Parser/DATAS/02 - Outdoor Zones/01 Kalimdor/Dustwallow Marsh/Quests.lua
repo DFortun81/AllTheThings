@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(70, {	-- Dustwallow Marsh
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(11144, {	-- [DEPRECATED]Confirming the Suspicion
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,	-- Legacy Quests
@@ -515,7 +515,7 @@ _.Zones =
 				q(6607,  {	-- Nat Pagle, Angler Extreme
 					["provider"] = { "n", 12919 },	-- Nat Pagle
 					["coord"] = { 58.6, 60.2, 70 },
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 					["g"] = {
 						i(45858)	-- Nat's Lucky Fishing Pole
 					},
@@ -524,7 +524,7 @@ _.Zones =
 					["provider"] = { "n", 12919 },	-- Nat Pagle
 					["coord"] = { 58.6, 60.2, 70 },
 					["description"] = "If you deleted your fishing pole from the old version of the quest, you can get a new one by completing this quest.",
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 					["g"] = {
 						i(45858),	-- Nat's Lucky Fishing Pole
 					},
@@ -1180,7 +1180,7 @@ _.Zones =
 					["provider"] = { "n", 12939 },	-- Doctor Gustaf VanHowzen
 					["coord"] = { 67.7, 48.9, 70 },
 					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = 197,	-- Tailoring
+					["requireSkill"] = TAILORING,
 					["sourceQuest"] = 6625,	-- Alliance Trauma
 				}),
 				q(9437,  {	-- Twilight of the Dawn Runner

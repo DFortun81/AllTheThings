@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(539, {	-- Shadowmoon Valley (Draenor)
-			n(-16, {	-- Rares
+			n(RARES, {
 				-- Coords have been confirmed on rares except for Edge of Reality, Pathrunner, and some noted rares on longer spawn timers.
 				n(77140, {	-- Amaukwa
 					["description"] = "Flies in a roughly oval pattern between the two coords.",

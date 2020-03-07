@@ -12,7 +12,7 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\inv_cooking_80_choralhoney3",
 				["g"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(56473, {	-- Envenomed Spider Fang
 							["provider"] = { "i", 169656 },	-- Envenomed Spider Fang
 							["isWeekly"] = true,	-- according to wowhead!
@@ -62,7 +62,7 @@ _.Zones =
 							["cr"] = 155173,	-- Honeyback Usurper
 						}),
 					}),
-					n(-16, {	-- Rares
+					n(RARES, {
 						n(155069, {	-- Honeyback Harvester
 							["description"] = "You can participate in Honeyback Harvester events as many times a day as you want, but there is a one-hour cooldown on being able to loot the final jelly left behind after the event ends.  If you can see the vignette star for the Harvester or a treasure icon surrounded by a spiky star, you are eligible for hourly loot.\n\nThe quests that drop from rares are weekly, but the rares may drop jelly even during the one-hour cooldown and even if you have already completed the specific rare's weekly quest.",
 							["coords"] = {

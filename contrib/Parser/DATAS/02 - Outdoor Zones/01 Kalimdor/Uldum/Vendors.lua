@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(249, {	-- Uldum
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(48617, {	-- Blacksmith Abasi <Ramkahen Quartermaster>
 					["coord"] = { 54.0, 33.2, 249 },
 					["g"] = {

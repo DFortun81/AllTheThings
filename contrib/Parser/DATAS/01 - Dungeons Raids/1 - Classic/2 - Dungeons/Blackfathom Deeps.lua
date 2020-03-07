@@ -8,7 +8,7 @@ _.Instances = { tier(1, {	-- Classic
 		["maps"] = { 221, 222, 223 },
 		["coord"] =	{ 16.53, 11.01, 63 },	-- Blackfathom Deeps, Ashenvale
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(6922, {	-- Baron Aquanis
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -103,7 +103,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(1454, {	-- Axe of the Enforcer
 					["crs"] = {
 						74721,	-- Blindlight Bilefin

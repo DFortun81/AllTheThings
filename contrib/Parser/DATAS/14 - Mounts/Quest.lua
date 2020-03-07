@@ -3,7 +3,7 @@
 ---------------------------------------------
 _.Mounts =
 {
-	n(-17, { 	-- Quest
+	n(QUESTS, {
 		i(142436),		-- Arcanist's Manasaber
 		mount(48778, {	-- Acherus Deathcharger
 			["classes"] = { DEATHKNIGHT },
@@ -30,6 +30,14 @@ _.Mounts =
 		i(128311),		-- Coalfist Gronnling
 		i(32859),		-- Cobalt Netherwing Drake
 		i(52200),		-- Crimsom Deathcharger
+		mount(270562, {	-- Darkforge Ram
+			["classes"] = { PALADIN },
+			["races"] = { DARKIRON },
+		}),
+		mount(270564, {	-- Dawnforge Ram
+			["classes"] = { PALADIN },
+			["races"] = { DWARF },
+		}),
 		i(142231, {		-- Deathlord's Vilebrood Vanquisher
 			["classes"] = { DEATHKNIGHT },
 		}),
@@ -131,6 +139,7 @@ _.Mounts =
 		i(46102),		-- Venomhide Ravasaur
 		i(32861),		-- Veridian Netherwing Drake
 		i(32862),		-- Violet Netherwing Drake
+		i(152901),		-- Violet Spellwing
 		i(137580),		-- Viridian Sharptalon
 		i(163128), 		-- War-Torn Reins of the Undercity Plaguebat
 		mount(13819, {	-- Warhorse

@@ -29,7 +29,7 @@ _.ExpansionFeatures =
 						i(140292),	-- Tumblerun Brew
 					},
 				}),
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(45440, {	-- A Brewing Situation
 						["provider"] = { "n", 116929 },	-- Brewmaster Blancee
 						["sourceQuests"] = { 47137 },	-- Champions of Legionfall
@@ -289,7 +289,7 @@ _.ExpansionFeatures =
 					["modelScale"] = 2.5,
 				}),
 				]]--
-				n(-2,  {	-- Vendors
+				n(VENDORS, {
 					n(112338, {	-- Caydori Brightstar <Purveyor of Rare Goods>
 						i(143727, {	-- Champion's Salute (TOY!)
 							["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources

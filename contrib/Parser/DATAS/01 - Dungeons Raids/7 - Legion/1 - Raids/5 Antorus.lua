@@ -22,7 +22,7 @@ _.Instances = { tier(7, {	-- Legion
 			920,
 		},
 		["groups"] = {
-			n(-1, {	-- Common Boss Drop
+			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					-- * = ID confirmed in H
 					122450,	-- Garothi Worldbreaker*
@@ -50,7 +50,7 @@ _.Instances = { tier(7, {	-- Legion
 				},
 			}),
 			d(17, {	-- Looking For Raid
-				n(-17, { 	-- Quests
+				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
 						{
@@ -102,7 +102,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 				}),
-				n(0, {	-- Zone Drops
+				n(ZONEDROPS, {
 					["crs"] = { 111246 },	-- Archmage Timear
 					["groups"] = {
 						i(152084),	-- Gloves of Abhorrent Strategies
@@ -446,7 +446,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			d(14, {	-- Normal
-				n(-17, { 	-- Quests
+				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
 						{
@@ -501,7 +501,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 				}),
-				n(0, {	-- Zone Drops
+				n(ZONEDROPS, {
 					i(152084),	-- Gloves of Abhorrent Strategies
 					i(152085),	-- Cuffs of the Viridian Flameweavers
 					i(153018),	-- Corrupted Mantle of the Felseekers
@@ -833,7 +833,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 			}),
 			d(15, {	-- Heroic
-				n(-17, { 	-- Quests
+				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
 						{
@@ -888,7 +888,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 				}),
-				n(0, {	-- Zone Drops
+				n(ZONEDROPS, {
 					i(152084),	-- Gloves of Abhorrent Strategies
 					i(152085),	-- Cuffs of the Viridian Flameweavers
 					i(153018),	-- Corrupted Mantle of the Felseekers
@@ -1225,7 +1225,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 			}),
 			d(16, {	-- Mythic
-				n(-17, { 	-- Quests
+				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["groups"] = {
 						{
@@ -1280,7 +1280,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					},
 				}),
-				n(0, {	-- Zone Drops
+				n(ZONEDROPS, {
 					i(152084),	-- Gloves of Abhorrent Strategies
 					i(152085),	-- Cuffs of the Viridian Flameweavers
 					i(153018),	-- Corrupted Mantle of the Felseekers

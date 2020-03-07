@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(634, {	-- Stormheim
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(38412, {	-- Above the Winter Moonlight (Alliance)
 					["sourceQuests"] = { 38342 },	-- Another Way
 					["races"] = ALLIANCE_ONLY,
@@ -148,6 +148,11 @@ _.Zones =
 				q(42639, {	-- A Stone of Blood
 					["coord"] = { 74.8, 55.5, 634 },
 					["provider"] = { "n", 108072 },	-- Sir Finley Mrrggglton
+				}),
+				q(44771, {	-- A Threat Rises
+					["provider"] = { "n", 92539 },	-- Havi
+					["coord"] = { 60.2, 50.8, 634 },
+					["sourceQuest"] = 44720,	-- A Call to Action
 				}),
 				q(39594, {	-- A Trial of Might
 					["provider"] = { "n", 96257 },	-- Yotnar
@@ -382,6 +387,11 @@ _.Zones =
 						38412,	-- Above the Winter Moonlight (Alliance)
 						38618,	-- Above the Winter Moonlight (Horde)
 					},
+				}),
+				q(44721, {	-- Helya's Conquest
+					["provider"] = { "n", 92539 },	-- Havi
+					["coord"] = { 60.2, 50.8, 634 },
+					["sourceQuest"] = 44771,	-- A Threat Rises
 				}),
 				q(38410, {	-- Impalement Insurance (Alliance)
 					["sourceQuests"] = {
@@ -907,6 +917,11 @@ _.Zones =
 						i(129319),	-- Lodestone of the Stormbreaker
 					},
 				}),
+				q(44729, {	-- Trial of Valor: Odyn's Favor
+					["provider"] = { "n", 92539 },	-- Havi
+					["coord"] = { 60.2, 50.8, 634 },
+					["sourceQuest"] = 44721,	-- Helya's Conquest
+				}),
 				q(38778, {	-- Turn the Keys
 					["sourceQuests"] = { 39796 },	-- To Haustvald
 					["coord"] = { 68.4, 54.2, 634 },
@@ -1029,7 +1044,7 @@ _.Zones =
 				}),
 				n(-38, {	-- Professions
 					n(-182, {	-- Enchanting
-						["requireSkill"] = 333,	-- Enchanting
+						["requireSkill"] = ENCHANTING,
 						["g"] = {
 							q(39904, {	-- Halls of Valor: Revenge of the Enchantress
 								["provider"] = { "n", 98367 },	-- Tigrid the Charmer
@@ -1040,7 +1055,7 @@ _.Zones =
 						},
 					}),
 					n(-183, {	-- Engineering
-						["requireSkill"] = 202,	-- Engineering
+						["requireSkill"] = ENGINEERING,
 						["g"] = {
 							q(40866, {	-- The Shell, You Say?
 								["provider"] = { "n", 102198 },	-- Fargo Flintlocke
@@ -1062,7 +1077,7 @@ _.Zones =
 						},
 					}),
 					n(-185, {	-- Inscription
-						["requireSkill"] = 773,
+						["requireSkill"] = INSCRIPTION,
 						["g"] = {
 							q(40052, {	-- Ancient Vrykul Mastered
 								["sourceQuests"] = { 39947 },	-- Not So Complex?
@@ -1074,7 +1089,7 @@ _.Zones =
 						},
 					}),
 					n(-186, {	-- Jewelcrafting
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 						["g"] = {
 							q(40546, {
 								["provider"] = { "n", 100499 },	-- Jabrul <Jewelcrafting Master>
@@ -1085,7 +1100,7 @@ _.Zones =
 						},
 					}),
 					n(-190, {	-- Tailoring
-						["requireSkill"] = 197,	-- Tailoring
+						["requireSkill"] = TAILORING,
 						["g"] = {
 							q(38974, {	-- Halls of Valor: The Right Question
 								["coord"] = { 65.6, 56.2, 634 },
@@ -1098,13 +1113,11 @@ _.Zones =
 					}),
 				}),				  
 			--[[ These quests will be organized soon™
-				q(44720),	-- A Call to Action
 				q(45534, {	-- A Common Enemy
 					["provider"] = { "n", 117394 },	-- Sigryn
 				}),
 				q(40614),	-- A Feast Fit for Odyn
 				q(40078),	-- A Heavy Burden
-				q(44771),	-- A Threat Rises
 				q(40265),	-- A Touch of Magic
 				q(39903),	-- An Enchanting Home
 				q(41162),	-- And Into the Fel Fire
@@ -1143,7 +1156,6 @@ _.Zones =
 				q(38607),	-- Gates of Valhallas
 				q(38670),	-- Goredome 2
 				q(40615),	-- Halls of Valor: Odyn's Blessing
-				q(44721),	-- Helya's Conquest
 				q(42393),	-- Homecoming
 				q(38625),	-- Hook & Sinker
 				q(38630),	-- Horde Kill Squad (Alliance Only)
@@ -1211,7 +1223,6 @@ _.Zones =
 				q(45406),	-- The Storm's Fury
 				q(45522),	-- To Silence the Bonespeakers
 				q(45523),	-- To Tame the Drekirjar
-				q(44729),	-- Trial of Valor: Odyn's Favor
 				q(45525),	-- Unanswered Questions
 				q(40143),	-- Unfinished Treatise on the Properties of Stormscale
 				q(38642),	-- Vrykul Longboat

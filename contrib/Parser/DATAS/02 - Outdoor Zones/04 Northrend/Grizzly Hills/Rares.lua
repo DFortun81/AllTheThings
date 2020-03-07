@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(116, {	-- Grizzly Hills
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(38453, {	-- Arcturis
 					["description"] = "This is a highly sought-after Hunter Pet. If you see this mob, be a kind soul and announce to General chat instead of killing it.",
 					["coord"] = { 31.2, 55.4, 116 },

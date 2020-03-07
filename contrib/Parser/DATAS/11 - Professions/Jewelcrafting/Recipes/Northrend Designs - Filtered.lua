@@ -1,4 +1,4 @@
-profession(755, {	-- Jewelcrafting
+profession(JEWELCRAFTING, {
 	filter(200, {
 	-- Reviewed and updated as of 11.25.2018 BfA 8.0, leaving all items from _Automation in for easier future updates
 		{	-- Northrend Designs

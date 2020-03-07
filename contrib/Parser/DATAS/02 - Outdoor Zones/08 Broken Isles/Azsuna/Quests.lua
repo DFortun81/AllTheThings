@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(630, {	-- Azsuna
-			n(-17, { 	-- Quests
+			n(QUESTS, {
 				q(38857, {	-- A Favor for Mr. Shackle
 					["coord"] = { 50.2, 61.0, 630 },
 					["provider"] = { "n", 88863 },	-- Seska Seafang
@@ -113,6 +113,7 @@ _.Zones =
 						37450,	-- Saving Stellagosa
 						37656,	-- Fel Machinations
 					},
+					["coord"] = { 37.6, 57.6, 630 },
 					["provider"] = { "n", 90474 },	-- Kor'vas Bloodthorn
 					["g"] = {
 						i(132984),	-- Abandoned Highborne Mana Crystal

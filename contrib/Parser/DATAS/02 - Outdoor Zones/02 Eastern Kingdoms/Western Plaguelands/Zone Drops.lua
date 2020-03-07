@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(22, {	-- Western Plaguelands
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				un(7, i(15771, {	-- Pattern: Living Breastplate
 					["crs"] = { 1813 },	-- Decaying Horror
 				})),

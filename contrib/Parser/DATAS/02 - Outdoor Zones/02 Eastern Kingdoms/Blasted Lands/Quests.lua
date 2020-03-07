@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(17, {	-- Blasted Lands
-			n(-17,  {	-- Quests
+			n(QUESTS, {
 				q(26172, {	-- A Bloodmage's Gotta Eat Too
 					["provider"] = { "n", 42298 },	-- Kasim Sharim
 					["coord"] = { 62.4, 25.8, 17 },

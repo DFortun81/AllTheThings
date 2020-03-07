@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(119, {	-- Sholazar Basin
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(12581, {	-- A Hero's Burden
 					["coord"] = { 74.1, 50.7, 119 },
 					["provider"] = { "n", 28122 },	-- Moodle

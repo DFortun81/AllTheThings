@@ -20,7 +20,7 @@ _.Zones =
 						["coord"] = { 23.4, 48.2, 1169 },
 					}),
 				}),
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(47098, {	-- Out Like Flynn
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 121239 },	-- Flynn Fairwind

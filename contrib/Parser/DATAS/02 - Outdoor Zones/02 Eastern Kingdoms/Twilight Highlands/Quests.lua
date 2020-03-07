@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(241, {	-- Twilight Highlands
-			n(-17,  {	-- Quests
+			n(QUESTS, {
 				q(28001, {	-- A Coward's Due
 					["sourceQuests"] = { 27817 },	-- Dropping the Hammer
 					["coord"] = { 60.1, 57.8, 241 },

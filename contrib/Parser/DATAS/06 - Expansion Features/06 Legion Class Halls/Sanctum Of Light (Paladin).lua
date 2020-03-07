@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 				["classes"] = { 2 },	-- Paladin
 				["lvl"] = 98,
 				["g"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						--[[
 						q(43424),	-- A Hero's Weapon
 						q(43700),	-- A Light in the Darkness
@@ -187,7 +187,7 @@ _.ExpansionFeatures =
 						["modelScale"] = 2.5,
 					}),
 					]]--
-					n(-2,  {	-- Vendors
+					n(VENDORS, {
 						n(99976,  {	--  Crusader Lord Dalfors
 							["classes"] = {2},
 							["description"] = "|c808080FAThese mounts are only available to paladins who have completed|r |cFFFFD700Stirring in the Shadows|r |c808080FAquest from the class mount campaign.",

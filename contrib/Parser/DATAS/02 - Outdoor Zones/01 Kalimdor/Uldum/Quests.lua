@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(249, {	-- Uldum
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(27761, {	-- A Disarming Distraction
 					["coord"] = { 74.1, 64.4, 249 },
 					["model"] = "World\\Goober\\g_gnometerminal.mdx",

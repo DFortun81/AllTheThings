@@ -9,12 +9,12 @@ _.ExpansionFeatures =
 				garrisonBuilding(130, {	-- Scribe's quarters (rank 1: 95, rank 2: 129, rank 3: 130)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(37572, {	-- Your First Inscription Work Order
 								["provider"] = { "n", 79829 },	-- Urgra
 							}),
 						}),
-						n(-2,  {	-- Vendors
+						n(VENDORS, {
 							n(79829, {	-- Urgra <Scribe>
 								["races"] = HORDE_ONLY,
 								["g"] = {

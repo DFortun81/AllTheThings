@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(120, {	-- The Storm Peaks
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(32500, {	-- Dirkee
 					["coords"] = {
 						{ 41.6, 40.6, 120 },

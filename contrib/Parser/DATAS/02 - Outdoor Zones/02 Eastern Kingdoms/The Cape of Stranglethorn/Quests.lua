@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(210, {	-- The Cape of Stranglethorn
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(26602, {	-- A Dish Best Served Huge
 					["sourceQuests"] = { 26600 },	-- A Giant's Feast
 					["coord"] = { 40.4, 67.8, 210 },
@@ -263,7 +263,7 @@ _.Zones =
 					["provider"] = { "n", 2542 },	-- Catelyn the Blade
 					["coord"] = { 41.3, 74.1, 210 },
 					["isDaily"] = true,
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 				}),
 				q(26839, {	-- Get Away From It All!
 					["u"] = 40,
@@ -754,7 +754,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 7794 },	-- McGavan
 					["coord"] = { 43.8, 70.7, 210 },
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["sourceQuests"] = {
 						2757,	-- Booty Bay or Bust!
 						2759,	-- In Search of Galvan

@@ -9,7 +9,7 @@ _.Zones =
 			["icon"] = "Interface\\Icons\\INV_Misc_Fish_Turtle_03",
 			["lvl"] = 1,
 			["g"] = {
-				n(-17, { 	-- Quests
+				n(QUESTS, {
 					q(31450, {	-- A New Fate
 						["provider"] = { "n", 56013 },	-- Spirit of Master Shang Xi
 						["sourceQuests"] = { 29800 },	-- New Allies

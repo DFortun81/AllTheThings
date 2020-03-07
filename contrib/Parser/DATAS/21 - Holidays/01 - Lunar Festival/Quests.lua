@@ -4,7 +4,7 @@
 _.Holidays = bubbleDown({["u"] = 17}, 
 {
 	holiday(235471, {	-- Lunar Festival
-		n(-17, {	-- Quests
+		n(QUESTS, {
 			q(8870, {	-- The Lunar Festival (A)
 				["provider"] = { "n", 15892 },	-- Lunar Festival Emissary
 				["isBreadcrumb"] = true,

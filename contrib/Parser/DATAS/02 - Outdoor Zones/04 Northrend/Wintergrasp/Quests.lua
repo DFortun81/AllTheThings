@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(123, {	-- Wintergrasp
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(13156, {	-- A Rare Herb
 					["provider"] = { "n", 31054 },	-- Anchorite Tessa
 					["coord"] = { 72.4, 31.6, 123 },

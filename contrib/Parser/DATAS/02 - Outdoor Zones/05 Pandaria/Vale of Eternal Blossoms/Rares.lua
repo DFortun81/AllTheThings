@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(390, {	-- Vale of Eternal Blossoms
-			n(-16, {	-- Rares
+			n(RARES, {
 				i(87779, {	-- Ancient Guo-Lai Cache Key
 					["description"] = "Use these keys to unlock Ancient Guo Lai Cache chests in the Vault.",
 					["groups"] = {

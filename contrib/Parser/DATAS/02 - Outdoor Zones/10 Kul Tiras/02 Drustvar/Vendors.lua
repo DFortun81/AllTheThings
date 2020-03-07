@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(876, {	-- Kul'Tiras
 		m(896, {	-- Drustvar
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(142197, {	-- Nigel Rifthold <Adventurer's Society>
 					["description"] = "In order to unlock this vendor you will need to buy 10 \"Tirasreli Gourmet Chocolate\", then find the tree house at his coords and click on the chest twice.",	
 					["coord"] = { 52.2, 31.6, 896 },

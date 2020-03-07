@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(534, {	-- Tanaan Jungle
-			n(-16, {	-- Rares
+			n(RARES, {
 				-- Coords have been confirmed on rares except for some noted rares on longer spawn timers.
 				n(91871, {	-- Argosh the Destroyer
 					["questID"] = 38430,

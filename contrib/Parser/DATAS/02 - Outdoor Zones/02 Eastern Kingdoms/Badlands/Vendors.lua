@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(15, {	-- Badlands
-			n(-2,   {	-- Vendors
+			n(VENDORS, {
 				n(49918, {	-- Buckslappy <Engineering Supply Specialist>
 					["coord"] = { 91.0, 38.4, 15 },
 					["g"] = {

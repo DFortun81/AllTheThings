@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(118, {	-- Icecrown
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(37331, {	-- Formula: Enchant Cloak - Superior Fire Resistance
 					["u"] = 2,
 					["spellID"] = 0,

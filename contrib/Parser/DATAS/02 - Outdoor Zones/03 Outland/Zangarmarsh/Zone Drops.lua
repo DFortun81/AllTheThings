@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(102, {	-- Zangarmarsh
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				["maps"] = {
 					265,	-- The Slave Pens
 					263,	-- The Steamvault, The Steamvault

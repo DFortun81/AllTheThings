@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(109, {	-- Netherstorm
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(29460, {	-- Ethereum Prison Key (required to summon/"release" mobs)
 					["sourceQuests"] = { 10970 },	-- A Mission of Mercy (required to be able to find the prison keys)
 					["description"] = "Ethereum Prison Key, a fairly common drop in Heroic Mana-Tombs, can be used to open prisons west of Manaforge Ultris in Netherstorm.  There is a chance that one of these mobs will be released when you open a prison.  To loot Ethereum Prison Keys, you must first complete the quest 'A Mission of Mercy' in Netherstorm.",

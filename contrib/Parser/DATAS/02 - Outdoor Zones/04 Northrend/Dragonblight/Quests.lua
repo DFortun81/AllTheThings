@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(115, {	-- Dragonblight
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(12439, {	-- A Disturbance In The West
 					["coord"] = { 78.9, 45.3, 115 },
 					["races"] = ALLIANCE_ONLY,
@@ -1490,9 +1490,15 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(12791, {	-- The Magical Kingdom of Dalaran (H)
-					["coord"] = { 38.0, 46.2, 115 },
+					["providers"] = {
+						{ "n", 26471 },	-- Image of Archmage Aethas Sunreaver
+						{ "n", 29162 },	-- Magister Tyr'ganal
+					},
+					["coords"] = {
+						{ 38.0, 46.2, 115 },	-- Image of Archmage Aethas Sunreaver
+						{ 76.8, 63.2, 115 },	-- Magister Tyr'ganal
+					},
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 26471 },	-- Image of Archmage Aethas Sunreaver
 					["isBreadcrumb"] = true,
 				}),
 				q(12053, {	-- The Might of the Horde

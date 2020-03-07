@@ -8,7 +8,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["mapID"] = 160,
 		["maps"] = { 161 },
 		["groups"] = {
-			n(-17, {	-- Quests 	
+			n(QUESTS, { 	
 				q(30120,{ 	-- Cleansing Drak'Tharon
 					["provider"] = { "n", 58149 },	-- Image of Drakuru
 					["groups"] = {
@@ -32,7 +32,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 			}),
 			d(  1, {	-- Normal
-				n(0, {		-- Zone Drop
+				n(ZONEDROPS, {
 					i(37800, {	-- Aviary Guardsman's Hauberk
 						["crs"] = {
 							26625,	-- Darkweb Recluse
@@ -219,7 +219,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				["lvl"] = 80,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					n(0, {		-- Zone Drop
+					n(ZONEDROPS, {
 						i(37800, {	-- Aviary Guardsman's Hauberk
 							["crs"] = {
 								26625,	-- Darkweb Recluse

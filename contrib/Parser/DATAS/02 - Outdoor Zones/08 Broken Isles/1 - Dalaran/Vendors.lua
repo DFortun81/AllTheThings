@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(627, {	-- Dalaran
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(93528,  {	-- Angelique Butler <First Aid Supplies>
 					["coord"] = { 36.6, 37.6, 627 },
 					["g"] = {

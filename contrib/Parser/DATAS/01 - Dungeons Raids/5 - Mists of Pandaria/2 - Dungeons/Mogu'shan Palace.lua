@@ -8,7 +8,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["maps"] = { 453, 454, 455 },
 		["lvl"] = 87,
 		["g"] = {
-			n(-17, {	-- Quests 						
+			n(QUESTS, { 						
 				q(31360, {	-- A New Lesson for the Master
 					["provider"] = { "n", 64432 },	-- Sinan the Dreamer
 					["g"] = {

@@ -6,7 +6,7 @@ _.Zones =
 	m(875, {	-- Zandalar
 		m(864, {	-- Vol'dun
 			n(-34, {	-- World Quests
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(52798, {	-- A Few More Charges
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
@@ -30,7 +30,7 @@ _.Zones =
 					q(53294, {	-- Akunda's Bite Cluster
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(51095, {	-- Ashmane
 						["lvl"] = 120,
@@ -121,7 +121,7 @@ _.Zones =
 					q(53298, {	-- Blooming Star Moss
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(54254, {	-- Bombs Away (Faction Assault WQ)
 						["lvl"] = 110,
@@ -172,7 +172,7 @@ _.Zones =
 					q(53325, {	-- Coarse Storm Silver
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 186,	-- Mining
+						["requireSkill"] = MINING,
 					}),
 					q(51098, {	-- Commodore Calhoun
 						["lvl"] = 120,
@@ -262,7 +262,7 @@ _.Zones =
 					q(53296, {	-- Flourishing Sea Stalks
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(54645, {	-- Fury of the Earth (Faction Assault WQ)
 						["lvl"] = 110,
@@ -420,7 +420,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(53300, {	-- Overgrown Anchor Weed
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
@@ -463,7 +463,7 @@ _.Zones =
 					q(53324, {	-- Rough Monelite
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 186,
+						["requireSkill"] = MINING,
 					}),
 					q(51804, {	-- Running Interference
 						["lvl"] = 120,
@@ -528,7 +528,7 @@ _.Zones =
 					}),
 					q(53326, {	-- Smooth Platinum
 						["isWorldQuest"] = true,
-						["requireSkill"] = 186,	-- Mining
+						["requireSkill"] = MINING,
 						["lvl"] = 120,
 					}),
 					q(52856, {	-- Snakes on a Terrace
@@ -686,13 +686,13 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(52427, {	-- Work Order: Battle Flag: Rallying Swiftness
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 197,	-- Tailoring
+						["requireSkill"] = TAILORING,
 						["g"] = {
 							i(162445),	-- Pattern: Battle Flag: Rallying Swiftness (Rank 3)
 						},
@@ -701,19 +701,19 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 					}),
 					q(52419, {	-- Work Order: Coarse Leather Barding
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 165,	-- Leatherworking
+						["requireSkill"] = LEATHERWORKING,
 					}),
 					q(52397, {	-- Work Order: Contract: Voldunai
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 773,	-- Inscription
+						["requireSkill"] = INSCRIPTION,
 						["g"] = {
 							i(162370),	-- Contract: Voldunai [Rank 3]
 						},
@@ -722,7 +722,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 333,	-- Enchanting
+						["requireSkill"] = ENCHANTING,
 						["g"] = {
 							i(162314),	-- Formula: Enchant Weapon - Quick Navigation [Rank 3]
 						},
@@ -731,7 +731,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 202,	-- Engineering
+						["requireSkill"] = ENGINEERING,
 						["g"] = {
 							i(162331), 	-- Schematic: F.R.I.E.D. [Rank 3]
 						},
@@ -740,13 +740,13 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 					}),
 					q(52338, {	-- Work Order: Potion of Concealment
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 171,	-- Alchemy
+						["requireSkill"] = ALCHEMY,
 						["g"] = {
 							i(162260),	-- Recipe: Potion of Concealment (Rank 3)
 						},
@@ -755,25 +755,25 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 					}),
 					q(51007, {	-- Work Order: Storm Silver Ore
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 186,	-- Mining
+						["requireSkill"] = MINING,
 					}),
 					q(51011, {	-- Work Order: Tempest Hide
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 					}),
 					q(52370, {	-- Work Order: Thermo-Accelerated Plague Spreader
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 202,	-- Engineering
+						["requireSkill"] = ENGINEERING,
 						["g"] = {
 							i(162736), 	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3]
 						},
@@ -782,7 +782,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(51783, {	-- Zem'lan Rescue
 						["lvl"] = 120,

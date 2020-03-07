@@ -988,6 +988,9 @@ _.NeverImplemented =
 		q(45328),	-- Nighthold - tracking quest. triggers before the door to Chronomatic Anomaly opens
 		q(44297),	-- Tracking Quest - W2 - Jaina Gone
 		
+		-- demon hunter hidden demons - maybe add this to the zone maps?
+		q(42825),	-- kill Horkus in azsuna at 56.3, 59.7
+		
 		-- Suramar - Withered Training
 		-- additional note: objectID 252452 (Glimmering Treasure Chest) is the big chest at the end of training that can contain toys
 		q(43120),	-- 7.0 Suramar Collapse Scenario - Treasure 07 - Focus Attacks 01
@@ -1334,6 +1337,7 @@ _.NeverImplemented =
 		]]--
 		
 	--	VARIOUS
+		q(52781),	-- use zidormi in arathi highlands to travel to the past
 		q(47332),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(49766),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(49767),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
@@ -1363,19 +1367,19 @@ _.NeverImplemented =
 		q(54704),	-- War Campaign - triggered when turning in "Time for War"
 		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track
 		q(53532),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Akunda". Makes the loa book available to read in The Great Seal
-		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Bwonsamdi". Makes the loa book available to read in The Great Seal
+		q(53534),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Bwonsamdi". Makes the loa book available to read in The Great Seal
 		q(53535),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Gonk". Makes the loa book available to read in The Great Seal
 		q(53536),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Gral". Makes the loa book available to read in The Great Seal
-		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Hir'eek". Makes the loa book available to read in The Great Seal
+		q(53537),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Hir'eek". Makes the loa book available to read in The Great Seal
 		q(53538),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Jani". Makes the loa book available to read in The Great Seal
 		q(53539),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Kimbul". Makes the loa book available to read in The Great Seal
-		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Krag'wa". Makes the loa book available to read in The Great Seal
+		q(53540),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Krag'wa". Makes the loa book available to read in The Great Seal
 		q(53541),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Pa'ku". Makes the loa book available to read in The Great Seal
 		q(53542),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Rezan". Makes the loa book available to read in The Great Seal
 		q(53543),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Sethraliss". Makes the loa book available to read in The Great Seal
 		q(53544),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Shadra". Makes the loa book available to read in The Great Seal
 		q(53546),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Torcali". Makes the loa book available to read in The Great Seal
-		--q(),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Torga". Makes the loa book available to read in The Great Seal
+		q(53547),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Torga". Makes the loa book available to read in The Great Seal
 		q(53548),	-- Zuldazar - Triggered when picking up "Tales of de Loa: Zandalar". Makes the loa book available to read in The Great Seal
 
 	--	HONEYBACK HIVE
@@ -1608,7 +1612,6 @@ _.NeverImplemented =
 		q(54910),	-- Opening a Darkshore chest
 		q(54911),	-- Opening a Darkshore chest
 		q(54912),	-- Opening a Darkshore chest
-		q(53534),	-- when entering The Necropolis for the first time during "The Necropolis"
 		q(49695),	-- immediately after channeling on the drum finishes during "A Tribute For Death"
 		q(49367, {	-- when returning to Zo'bal Ruins during "We'll Meet Again"
 			["isWorldQuest"] = true,	-- without this field, this quest inexplicably shows up in /attwq for some characters
@@ -1641,6 +1644,9 @@ _.NeverImplemented =
 		q(50844),	-- give Jani the Charged Ranishu Antennae in Vol'dun
 		q(50889),	-- give Jani the Polished Ringhorn Hoof in Vol'dun
 		q(50891),	-- give Jani the Sturdy Redrock Jaw in Vol'dun
+		q(50440),	-- give Jani the Nazwathan Relic in Nazmir
+		q(50436),	-- give Jani the Snapjaw Tail in Nazmir
+		q(50434),	-- give Jani the Vilescale Pearl in Nazmir
 		
 	--	Drustvar
 		-- Bonus Objectives
@@ -2095,6 +2101,7 @@ _.NeverImplemented =
 		q(58512),	-- Grand Empress Shek'zara bonus roll
 		q(59060),	-- choosing Bitey McStabface as the name for your Aqir Hatchling
 		q(59062),	-- choosing Spike as the name for your Aqir Hatchling
+		q(59059),	-- chose "Yu'gaz" as the name for your Aqir Hatchling
 
 		-- Horrific Visions
 		-- Orgrimmar
@@ -2118,8 +2125,9 @@ _.NeverImplemented =
 		q(57030),	-- looted the chest from cleansing the Valley of Strength at the end of the scenario
 		q(57027),	-- triggers in the chest room at the end of the Orgrimmar scenario. Doesn't matter if you defeat Thrall or not
 		q(59044),	-- completed all objectives
-		q(58966),	-- triggered after completing all of zek'han's area but before killing the boss
+		q(58966),	-- triggered after completing all of zek'han's area but before killing the boss. Also triggers in Stormwind in valeria's wing
 		-- Stormwind
+		q(58968),	-- 3rd wing clear
 		q(58965),	-- triggered when going to Dwarven District (during the fight with 3 gnomes)
 		q(57153),	-- Dwarven District cleansed (Stormwind)
 		q(58970),	-- triggered when detonating explosives in Dwarven District
@@ -2130,6 +2138,10 @@ _.NeverImplemented =
 		q(57271),	-- Trade District cleansed (Stormwind)
 		q(58897),	-- triggered together with 57271
 		q(27282),	-- Mage Quarter cleansed (Stormwind)
+		q(58890),	-- Dwarven district
+		q(58893),	-- cleared mage quarter
+		q(57282),	-- cleared mage quarter
+		q(57842),	-- end of vision clear - possibly only triggers when all other wings are cleared?
 		-- TODO:: Need to determine the alliance zones for the 4 area chests. They appear to be shared with horde except for the main boss chest
 		q(57360),	-- looted the chest in front of Alleria's image at the end of the scenario. Doesn't matter if you defeat her or not
 		q(58578),	-- looted the chest from cleansing the Dwarven District at the end of the scenario (could possibly be from looting "Spark of Inspiration" Rank 2)
@@ -2206,6 +2218,7 @@ _.NeverImplemented =
 		q(57938),	-- Assember Hung talked to
 		
 		-- Ny'alotha raid
+		q(58529),	-- obtained Volatile Void Droplet (Rank 3 Formless Void) from encrypted ny'alothan texts. Renders the texts unusable
 		q(59557),	-- kill wrathion
 		q(59558),	-- kill Maut
 		q(58547),	-- kill skitra - probably triggers when first wing clears?
@@ -2216,6 +2229,7 @@ _.NeverImplemented =
 		q(59561),	-- kill dark inquisitor xanesh
 		q(58539),	-- kill vexiona - probably triggers when the right wing is cleared
 		q(58540),	-- kill vexiona - probably triggers when the right wing is cleared
+		q(58541),	-- looted Dragon Heart from vexiona on heroic. May be different ID for different difficulties
 		q(59562),	-- kill vexiona - kill credit
 		q(59563),	-- kill shad'har
 		q(59046),	-- kill Jesh'ra, big add with 200 Mementos as loot
@@ -2225,13 +2239,18 @@ _.NeverImplemented =
 		q(59560),	-- kill hivemind
 		q(58535),	-- Il'gynoth wing clear. probably triggers the azerite beacon
 		q(58536),	-- Il'gynoth wing clear. triggers dialog?
+		q(58537),	-- looted eye of prophecy from il'gynoth on heroic. May be different ID for different difficulties
 		q(59564),	-- kill Il'gynoth
 		q(59565),	-- kill ra-den
 		q(58543),	-- kill ra-den - either the wing clear OR the beacon placement
 		q(58544),	-- kill ra-den - either the wing clear OR the beacon placement
 		q(58545),	-- triggered together with 58543, 58544 and 59565. My first ever kill of Ra-den (happened on heroic)
-		q(58527),	-- combined 15 nyalotha pages
 		q(59567),	-- kill Carapace of N'Zoth (Fury of N'Zoth)
+		q(59568),	-- nzoth killed on heroic. possibly the same for other difficulties?
+		
+		-- Azerite essences assembled with -Encrypted Ny'alothan Text
+		q(58527),	-- Replicating Void Droplets (Rank 1)
+		q(58528),	-- Replicating Void Droplets (Rank 2)
 		
 		-- World Bosses
 		q(58510),	-- Vuk'laz the Earthbreaker first kill??

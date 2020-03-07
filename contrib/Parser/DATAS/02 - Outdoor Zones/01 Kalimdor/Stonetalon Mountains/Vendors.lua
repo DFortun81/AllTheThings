@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(65, {	-- Stonetalon Mountains
-			n (-2, {	-- Vendors
+			n(VENDORS, {
 				n(9549, {	-- Borand <Bowyer>
 					["coord"] = { 48.6, 61.4, 65 },
 					["races"] = HORDE_ONLY,

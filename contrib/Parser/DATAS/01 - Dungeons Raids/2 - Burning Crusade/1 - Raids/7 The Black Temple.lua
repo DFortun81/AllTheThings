@@ -52,7 +52,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(32489),	-- Ashtongue Talisman of Zeal
 				},
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(32606,	{	-- Girdle of the Lightbearer
 					["crs"] = {
 						22844,	-- Ashtongue Battlelord
@@ -968,7 +968,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["u"] = 1,
 				},
 			}),
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(10957, {	-- Redemption of the Ashtongue (UNTESTED, NEEDS CONFIRMATION)
 					["provider"] = { "n", 23158 },	-- Seer Kanai
 					["coord"] = { 62.0, 50.2 },

@@ -395,11 +395,14 @@ _.Achievements =
 						crit(2),		-- Flynn Fairwind recruited
 						crit(3),		-- Leeroy Jenkins recruited
 					})),
-					h(ach(13014, {	-- Vorrik's Champion
-						crit(1),		-- Faithless slain with Vorrik's Bulwark slain
-						crit(2),		-- Faithless slain with Rakjan the Unbroken slain
-						crit(3),		-- Faithless charged with a Battle Krolusk slain
-					})),
+					ach(13014, {	-- Vorrik's Champion
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							crit(1),	-- Faithless slain with Vorrik's Bulwark slain
+							crit(2),	-- Faithless slain with Rakjan the Unbroken slain
+							crit(3),	-- Faithless charged with a Battle Krolusk slain
+						},
+					}),
 					h(ach(12555)),	-- Welcome to Zandalar
 					ach(13144),		-- Wide World of Quests
 					h(ach(12479, {	-- Zandalar Forever!

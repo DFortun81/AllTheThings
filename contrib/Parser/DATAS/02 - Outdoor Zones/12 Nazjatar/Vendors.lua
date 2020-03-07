@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
-		n(-2, {		-- Vendors
+		n(VENDORS, {
 			n(153510, {	-- Artisan Itanu <Vaultkeeper of the Ankoan>
 				["coord"] = { 37.8, 55.7, 1355 },
 				["races"] = ALLIANCE_ONLY,
@@ -255,6 +255,9 @@ _.Zones =
 					}),
 					i(168863, {	-- Unbound Azerite Slivershards
 						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					}),
+					i(174523, {	-- Waveswept Abyssal Conch
+						["cost"] = { { "c", 1721, 20 }, },	-- 20x Prismatic Manapearl
 					}),
 				},
 			}),
@@ -1062,6 +1065,9 @@ _.Zones =
 					}),
 					i(168863, {	-- Unbound Azerite Slivershards
 						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+					}),
+					i(174522, {	-- Waveswept Abyssal Conch
+						["cost"] = { { "c", 1721, 20 }, },	-- 20x Prismatic Manapearl
 					}),
 				},
 			}),

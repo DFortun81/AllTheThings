@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(95, {	-- Ghostlands
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(22062, {	-- Dr. Whitherlimb
 					["coords"] = {
 						{ 34.6, 47.6, 95 },

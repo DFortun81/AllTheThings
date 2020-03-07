@@ -15,7 +15,7 @@ _.ExpansionFeatures =
 		},
 		["g"] = {
 			n(-10075, {	-- Assault: Amathet Advance
-				n(-17,	{	-- Quests
+				n(QUESTS, {
 					-- Assault questline
 					q(58636, {	-- Eyes on the Amathet
 						["lvl"] = 120,
@@ -179,7 +179,7 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
-				n(-16,	{	-- Rares
+				n(RARES, {
 					n(157170, {	-- Acolyte Taspu
 						["questID"] = 57281,
 						["coord"] = { 64.5, 25.6, 1527 },
@@ -399,12 +399,12 @@ _.ExpansionFeatures =
 						["isWorldQuest"] = true,
 					}),
 				}),
-				n(0,	{	-- Zone Drops
+				n(ZONEDROPS, {
 					i(174764),	-- Tol'vir Relic Fragment
 				}),
 			}),
 			n(-10079, {	-- Assault: Aqir Unearthed
-				n(-17,	{	-- Quests
+				n(QUESTS, {
 					-- Assault questline
 					q(57873, {	-- Word from Orsis
 						["lvl"] = 120,
@@ -556,7 +556,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 159820 },	-- Mender Dyrin
 					}),
 				}),
-				n(-16,	{	-- Rares
+				n(RARES, {
 					n(154578, {	-- Aqir Flayer
 						["questID"] = 58612,
 						["isDaily"] = true,
@@ -577,19 +577,6 @@ _.ExpansionFeatures =
 						["description"] = "Spawns in the sand dunes between Orsis and the Ruins of Ammon.",
 						["g"] = {
 							i(174224),	-- Greatsword of Cruelty
-							i(174227),	-- Writhing Feeler
-						},
-					}),
-					n(162172, {	-- Aqir Warcaster
-						["questID"] = 58694,
-						["isDaily"] = true,
-						["coords"] = {
-							{ 42.0, 37.8, 1527 },
-							{ 19.2, 59.1, 1527 },
-						},
-						["g"] = {
-							i(174224),	-- Greatsword of Cruelty
-							i(174222),	-- Unspeakable Bloodletter
 							i(174227),	-- Writhing Feeler
 						},
 					}),
@@ -622,6 +609,7 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(174224),	-- Greatsword of Cruelty
 							i(174222),	-- Unspeakable Bloodletter
+							i(174227),	-- Writhing Feeler
 						},
 					}),
 					n(155531, {	-- Infested Wastewander Captain
@@ -641,6 +629,7 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(174224),	-- Greatsword of Cruelty
 							i(174475),	-- Stinky Sack (pet)
+							i(174222),	-- Unspeakable Bloodletter
 							i(174227),	-- Writhing Feeler
 						},
 						["description"] = "He is underground.",
@@ -689,6 +678,7 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(174476),	-- Black Chitinous Plate (pet)
 							i(174224),	-- Greatsword of Cruelty
+							i(174222),	-- Unspeakable Bloodletter
 							i(174227),	-- Writhing Feeler
 						},
 					}),
@@ -782,12 +772,12 @@ _.ExpansionFeatures =
 						["isWorldQuest"] = true,
 					}),
 				}),
-				n(0,	{	-- Zone Drops
+				n(ZONEDROPS, {
 					i(174756),	-- Aqir Relic Fragment
 				}),
 			}),
 			n(-10076, {	-- Assault: The Black Empire
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					-- Lesser Visions dailies
 					q(58168, {	-- A Dark, Glaring Reality
 						["coord"] = { 56.69, 31.75, 1530 },
@@ -942,7 +932,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 56472,	-- The Uldum Accord
 					}),
 				}),
-				n(-16, {	-- Rares
+				n(RARES, {
 					n(158557, {	-- Actiss the Deceiver
 						["questID"] = 57669,
 						["coord"] = { 66.8, 74.3, 1527 },
@@ -1019,9 +1009,10 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 					}),
 					n(160623, {	-- Hungering Miasma (might be 160631 or maybe it's different one)
-						--["questID"] = ,
+						["questID"] = 58206,
 						["coord"] = { 60.0, 39.0, 1527 },
 						["isDaily"] = true,
+						["description"] = "To activate, you must feed it the surrounding oozelings by dragging them on top of it.",
 					}),
 					n(156655, {	-- Korzaran the Slaughterer
 						["questID"] = 57433,
@@ -1165,6 +1156,11 @@ _.ExpansionFeatures =
 						["coord"] = { 62.39, 79.31, 1527 },
 						["isWorldQuest"] = true,
 					}),
+					q(57449, {	-- Executor of N'Zoth
+						["lvl"] = 120,
+						["coord"] = { 60.08, 38.09, 1527 },
+						["isWorldQuest"] = true,
+					}),
 					q(57543, {	-- Executor of N'Zoth
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
@@ -1197,6 +1193,11 @@ _.ExpansionFeatures =
 						["coord"] = { 59.77, 72.41, 1527 },
 						["isWorldQuest"] = true,
 					}),
+					q(57456, {	-- Spirit Drinker
+						["lvl"] = 120,
+						["coord"] = { 47.0, 41.0, 1527 },
+						["isWorldQuest"] = true,
+					}),
 					q(57586, {	-- Spirit Drinker
 						["lvl"] = 120,
 						["coord"] = { 47.8, 32.7, 1527 },
@@ -1217,9 +1218,9 @@ _.ExpansionFeatures =
 						["coord"] = { 64.2, 65.5, 1527 },
 						["isWorldQuest"] = true,
 					}),
-					q(57456, {	-- Spirit Drinker
+					q(57590, {	-- Spirit Drinker
 						["lvl"] = 120,
-						["coord"] = { 47.0, 41.0, 1527 },
+						["coord"] = { 58.0, 74.0, 1527 },
 						["isWorldQuest"] = true,
 					}),
 					q(57591, {	-- Spirit Drinker
@@ -1240,7 +1241,7 @@ _.ExpansionFeatures =
 					}),
 					]]--
 				}),
-				n(0, {	-- Zone Drops
+				n(ZONEDROPS, {
 					i(170553, {	-- Void Focus Splinter
 						["description"] = "The fastest way is to farm them inside Lesser Vision.",
 					}),
@@ -1493,13 +1494,13 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(-38,	{	-- Professions
-					prof(356, {	-- Fishing
+					prof(FISHING, {
 						i(174456, {	-- Bottle of Gloop (pet)
 							["description"] = "Must be fishing in water currently affected by a N'Zoth assault.",
 						}),
 					}),
 				}),
-				n(-17,	{	-- Quests
+				n(QUESTS, {
 					i(174771, {	-- Shadowbarb Drone
 						q(58802, {	-- The Incredible Egg
 							["coord"] = { 20.8, 61.9, 1527 },
@@ -1729,13 +1730,26 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 56209,	-- The Halls of Origination
 					}),
 				}),
-				n(-16,	{	-- Rares
+				n(RARES, {
 					n(155703, {	-- Anq'uri the Titanic
 						["questID"] = 56834,
 						["coord"] = { 32.4, 64.6, 1527 },
 						["isDaily"] = true,
 						["g"] = {
 							i(174224),	-- Greatsword of Cruelty
+							i(174227),	-- Writhing Feeler
+						},
+					}),
+					n(162172, {	-- Aqir Warcaster
+						["questID"] = 58694,
+						["isDaily"] = true,
+						["coords"] = {
+							{ 42.0, 37.8, 1527 },
+							{ 19.2, 59.1, 1527 },
+						},
+						["g"] = {
+							i(174224),	-- Greatsword of Cruelty
+							i(174222),	-- Unspeakable Bloodletter
 							i(174227),	-- Writhing Feeler
 						},
 					}),
@@ -1758,7 +1772,7 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
-				n(-2,	{	-- Vendors
+				n(VENDORS, {
 					n(160714, {	-- Provisioner Qorra
 						["coord"] = { 55.1, 32.9, 1527 },
 						["g"] = {
@@ -1796,7 +1810,7 @@ _.ExpansionFeatures =
 				n(-10071,	{	-- Visions of N'Zoth
 					["description"] = "Use the obelisk to see Uldum succumb to N'Zoth's corruption.",
 					["g"] = {
-						n(0, {	-- Zone Drops
+						n(ZONEDROPS, {
 							i(174837),	-- Decaying Fusion Core (14 day timer on this. use it at 78/65 during Amathet assault to get fast percentage)
 							i(171312),	-- Recipe: Void Focus
 							i(174491),	-- Tome of Unspeakable Delicacies
@@ -1830,7 +1844,7 @@ _.ExpansionFeatures =
 						["isWorldQuest"] = true,
 					}),
 				}),
-				n(0,	{	-- Zone Drops
+				n(ZONEDROPS, {
 					i(174368),	-- Pattern: Unsettling Cragscale Boots
 					i(174369),	-- Pattern: Unsettling Cragscale Greaves
 					i(174366),	-- Pattern: Unsettling Dredged Leather Boots

@@ -6,7 +6,7 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(7, {	-- Mulgore
 			m(462, {	-- Camp Narache
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(752,   {	-- A Humble Task
 						["u"] = 40,
 						["provider"] = { "n", 2981 },	-- Chief Hawkwind

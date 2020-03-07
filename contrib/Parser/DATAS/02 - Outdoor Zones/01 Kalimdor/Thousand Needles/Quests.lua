@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(64, {	-- Thousand Needles
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(1175,  {	-- A Bump in the Road
 					["u"] = 40,
 					["provider"] = { "n", 4629 },	-- Trackmaster Zherin

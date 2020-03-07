@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(168, {	-- Menagerie (rank 1: 42, rank 2: 167, rank 3: 168)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(-2, {	-- Vendors
+						n(VENDORS, {
 							n(94516, {	-- Giada Goldleash
 								["races"] = HORDE_ONLY,
 								["g"] = {

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(379, {	-- Kun-Lai Summit
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(30581, {	-- ... and the Pot, Too!
 					["coord"] = { 60.1, 85.9, 379 },
 					["provider"] = { "n", 59636 },	-- Uyen Chow
@@ -465,7 +465,7 @@ _.Zones =
 				q(31279, {	-- Everything I Know About Cooking
 					["coord"] = { 64.2, 61.3, 379 },
 					["provider"] = { "n", 59405 },	-- Li Goldendraft
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 				}),
 				q(30571, {	-- Farmhand Freedom
 					["coord"] = { 60.2, 85.7, 379 },

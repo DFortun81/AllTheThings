@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, { 	-- Pandaria
 		m(554, {	-- Timeless Isle
-			n(-16, {	-- Rares
+			n(RARES, {
 				--[[
 				{	-- Blackguard's Jetsam
 					["coord"] = { 22.69, 58.93, 554 },

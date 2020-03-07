@@ -8,7 +8,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["maps"] = { 574, 575, 576 },
 		["coord"] = { 31.91, 42.55, 539 },	-- Shadowmoon Valley, Draenor
 		["groups"] = {
-			n(-1, {	-- Common Boss Drop
+			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					75509,	-- Sadana Bloodfury
 					75829,	-- Nhallish
@@ -226,7 +226,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 			}),
 			d(2, {	-- Heroic
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(37163, {
 						i(119003),	-- Void Totem
 					}),

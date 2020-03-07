@@ -21,13 +21,13 @@ _.ExpansionFeatures =
 								ach(9450),		-- The Trap Game (50)
 							}),
 						}),
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(36274, {	-- Bigger Trap, Better Rewards
 								["provider"] = { "n", 84524 },	-- Homer Stonefield
 								["races"] = ALLIANCE_ONLY,
 							}),
 						}),
-						n(-16, {	-- Rares
+						n(RARES, {
 							o(239171, {	-- Glass of Warm Milk
 								i(120309),	-- Glass of Warm Milk (Pygmy Cow pet)
 							}),

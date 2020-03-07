@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(15, {	-- Badlands
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(10822, {	-- Dark Whelpling (PET!)
 					["crs"] = {
 						46916,	-- Nyxondra's Broodling

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(23, {	-- Eastern Plaguelands
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(12384, {	-- Agustus the Touched
 					["description"]	= "Vendor will not sell to you until you complete his quest.|r",
 					["coord"] = { 11.4, 28.6, 23 },

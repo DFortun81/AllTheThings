@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(108, {	-- Terokkar Forest
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(34491, {    -- Pattern: Bag of Many Hides
 					["crs"] = {
 						22143,    -- Gordunni Back-Breaker

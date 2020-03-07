@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(37, {	-- Elwynn Forest
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(844, {	-- Antonio Perelli <Traveling Salesman>
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "This vendor travels in a big circuit from Elwynn Forest (stopping in Goldshire) to Westfall (stopping in Sentinel Hill) to Duskwood (stopping in Darkshire) to Redridge Mountains (stopping in Lakeshire) and then back to Elwynn Forest.  If you cannot find him in this zone, check one of the other three.|r",

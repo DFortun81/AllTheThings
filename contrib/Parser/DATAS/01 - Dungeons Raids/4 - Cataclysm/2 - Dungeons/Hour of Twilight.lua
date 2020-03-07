@@ -12,7 +12,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
 		},
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(30103, {	-- To Wyrmrest!
 					["sourceQuests"] = { 30102 },	-- The Hour of Twilight
 					["providers"] = {
@@ -42,7 +42,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					},
 				},
 			}),
-			n(0,   {	-- Zone Drop
+			n(ZONEDROPS, {
 				["crs"] = {
 					55559,	-- Crystalline Elemental
 					54555,	-- Frozen Servitor

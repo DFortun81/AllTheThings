@@ -1,4 +1,4 @@
-profession(164, {	-- Blacksmithing
+profession(BLACKSMITHING, {
 	filter(200, {	-- Recipes
 		{	-- Training
 			["categoryID"] = 424,	-- Training

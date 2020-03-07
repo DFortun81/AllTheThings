@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(26, {	-- The Hinterlands
-			n(-2,  {	-- Vendors
+			n(VENDORS, {
 				n(12040, {	-- Brannik Ironbelly <Armorsmith>
 					["coord"] = { 66.6, 44.2, 26 },
 					["races"] = ALLIANCE_ONLY,

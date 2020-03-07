@@ -16,7 +16,7 @@ _.ExpansionFeatures =
 		},
 		["g"] = {
 			n(-10076, {	-- Assault: The Black Empire
-				n(-17,	{	-- Quests
+				n(QUESTS, {
 					-- Lesser Visions dailies
 					q(58168, {	-- A Dark, Glaring Reality
 						["coord"] = { 84.2, 51.7, 1530 },
@@ -229,7 +229,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
 				}),
-				n(-16,	{	-- Rares
+				n(RARES, {
 					n(154447, {	-- Brother Meller
 						["questID"] = 56237,
 						["coord"] = { 57.1, 41.0, 1530 },
@@ -392,7 +392,7 @@ _.ExpansionFeatures =
 						["isWorldQuest"] = true,
 					}),
 				}),
-				n(0,	{	-- Zone Drops
+				n(ZONEDROPS, {
 					i(170553, {	-- Void Focus Splinter
 						["description"] = "The fastest way is to farm them inside Lesser Vision.",
 					}),
@@ -400,7 +400,7 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-10077, {	-- Assault: The Warring Clans
-				n(-17,  {	-- Quests
+				n(QUESTS, {
 					-- Assault questline
 					q(57067, {	-- Mogu at the Gates	-- showed up when the Warring Clans assault was up. is there a pre-req? 
 						["coord"] = { 44.7, 73.8, 1530 },
@@ -501,12 +501,14 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
 				}),
-				n(-16,  {	-- Rares
+				n(RARES, {
 					n(157466, {	-- Anh-De the Loyal
 						["questID"] = 57363,
 						["coord"] = { 33.7, 68.6, 1530 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(174229),	-- Lantern of the Damned
 							i(174840),	-- Xinlao
 						},
@@ -516,6 +518,8 @@ _.ExpansionFeatures =
 						["coord"] = { 16.8, 66.7, 1530 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(174229),	-- Lantern of the Damned
 						},
 					}),
@@ -524,6 +528,8 @@ _.ExpansionFeatures =
 						["coord"] = { 39.2, 59.6, 1530 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(174229),	-- Lantern of the Damned
 						},
 					}),
@@ -536,6 +542,8 @@ _.ExpansionFeatures =
 							{ 32.4, 44.0, 1530 },
 						},
 						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(173887),	-- Clutch of Ha-Li
 							i(174229),	-- Lantern of the Damned
 						},
@@ -545,6 +553,8 @@ _.ExpansionFeatures =
 						["coord"] = { 28.3, 40.5, 1530 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(174229),	-- Lantern of the Damned
 						},
 					}),
@@ -554,6 +564,8 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						-- TODO:: determine patrol path
 						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(174229),	-- Lantern of the Damned
 							i(174841),	-- Ren's Stalwart Hound
 						},
@@ -562,11 +574,20 @@ _.ExpansionFeatures =
 						["questID"] = 58295,
 						["coord"] = { 17.2, 11.6, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
+						},
 					}),
 					n(157290, {	-- Jade Watcher
 						["questID"] = 57350,
 						["coord"] = { 26.7, 10.7, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
+							i(174229),	-- Lantern of the Damned
+						},
 					}),
 					n(163042, {	-- Ivory Cloud Serpent
 						--["questID"] = 57350,
@@ -592,6 +613,8 @@ _.ExpansionFeatures =
 						["coord"] = { 46.4, 57.2, 1530 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(174229),	-- Lantern of the Damned
 						},
 					}),
@@ -600,6 +623,8 @@ _.ExpansionFeatures =
 						["coord"] = { 17.9, 37.5, 1530 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(174229),	-- Lantern of the Damned
 						},
 					}),
@@ -610,6 +635,11 @@ _.ExpansionFeatures =
 							{ 23.0, 76.7, 1530 },
 							{ 25.5, 75.8, 1530 },
 							{ 27.1, 71.5, 1530 },
+						},
+						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
+							i(174229),	-- Lantern of the Damned
 						},
 					}),
 					n(155958, {	-- Tashara
@@ -624,6 +654,11 @@ _.ExpansionFeatures =
 						["questID"] = 56332,
 						["coord"] = { 47.5, 63.7, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
+							i(174229),	-- Lantern of the Damned
+						},
 					}),
 					n(157443, {	-- Xiln the Mountain
 						["questID"] = 57358,
@@ -631,6 +666,7 @@ _.ExpansionFeatures =
 						--["coord"] = { 42.2, 43.5, 1530 }, -- NOTE: these were the previous coords. He may have permanently moved, or he has multiple spawn points
 						["isDaily"] = true,
 						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
 							i(174229),	-- Lantern of the Damned
 						},
 					}),
@@ -712,12 +748,12 @@ _.ExpansionFeatures =
 						["isWorldQuest"] = true,
 					}),
 				}),
-				n(0,	{	-- Zone Drops
+				n(ZONEDROPS, {
 					i(174759),	-- Mogu Relic Fragment
 				}),
 			}),
 			n(-10078, {	-- Assault: The Endless Swarm
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					-- Assault questline
 					q(56574, {	-- Reflections in Amber
 						["crs"] = {
@@ -770,6 +806,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161405 },	-- Taoshi
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
+					q(58763, {	-- Halting Production
+						["coord"] = { 67.0, 40.0, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 161405 },	-- Taoshi
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
 					q(58758, {	-- Rampaging Destroyers
 						["coord"] = { 38.4, 75.0, 1530 },
 						["isDaily"] = true,
@@ -800,6 +842,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 158673 },	-- Kun Autumnlight
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
+					q(58757, {	-- Testing the Untested
+						["coord"] = { 44.7, 73.8, 1530 },
+						["isDaily"] = true,
+						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
+						["sourceQuest"] = 56771,	-- Time-Lost Warriors
+					}),
 					q(58759, {	-- The Empress' Guard
 						["coord"] = { 37.2, 79.2, 1530 },
 						["isDaily"] = true,
@@ -807,22 +855,32 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors
 					}),
 				}),
-				n(-16, {	-- Rares	-- Theory is that i(174855)	-- Bow of Calamity drops from these as well.  Put the drops under common boss drop header when we get more info?
+				n(RARES, {	-- Theory is that i(174855)	-- Bow of Calamity drops from these as well.  Put the drops under common boss drop header when we get more info?
 					n(160825, {	-- Amber-Shaper Esh'ri
 						["questID"] = 58300,
 						["coord"] = { 20.0, 74.6, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160878, {	-- Buh'gzaki the Blasphemous
 						["questID"] = 58307,
 						["coord"] = { 6.5, 70.7, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160893, {	-- Captain Vor'lek
 						["questID"] = 58308,
 						["coord"] = { 04.0, 60.8, 1530 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174220),	-- Ambered Greatstaff
 							i(174223),	-- Ooze-Imbued Rifle
 						},
 					}),
@@ -830,12 +888,18 @@ _.ExpansionFeatures =
 						["questID"] = 58304,
 						["coord"] = { 26.7, 66.4, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160874, {	-- Drone Keeper Ak'thet
 						["questID"] = 58305,
 						["coord"] = { 10.7, 41.0, 1530 },
 						["isDaily"] = true,
 						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
 							i(174226)	-- Paragon's Will
 						},
 					}),
@@ -845,27 +909,48 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
+							i(174226)	-- Paragon's Will
 						},
 					}),
 					n(160810, {	-- Harbinger Il'koxik
 						["questID"] = 58299,
 						["coord"] = { 28.9, 52.7, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160868, {	-- Harrier Nir'verash
 						["questID"] = 58303,
 						["coord"] = { 12.8, 51.3, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160826, {	-- Hive-Guard Naz'ruzek
 						["questID"] = 58301,
 						["coord"] = { 21.1, 62.7, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160930, {	-- Infused-Amber Ooze
 						["questID"] = 58312,
 						["coord"] = { 18.5, 66.5, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160920, {	-- Kal'tik the Blight
 						["questID"] = 58310,
@@ -885,16 +970,28 @@ _.ExpansionFeatures =
 							{ 27.4, 37.7, 1530 },
 							{ 25.9, 35.6, 1530 },
 						},
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160922, {	-- Needler Zhesalla
 						["questID"] = 58311,
 						["coord"] = { 14.7, 37.2, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+							i(174223),	-- Ooze-Imbued Rifle
+							i(174226)	-- Paragon's Will
+						},
 					}),
 					n(160906, {	-- Skiver
 						["questID"] = 58309,
 						["coord"] = { 25.4, 45.7, 1530 },
 						["isDaily"] = true,
+						["g"] = {
+							i(174220),	-- Ambered Greatstaff
+						},
 					}),
 				}),
 				n(-34,  {	-- World Quests
@@ -981,7 +1078,7 @@ _.ExpansionFeatures =
 						["isWorldQuest"] = true,
 					}),
 				}),
-				n(0,	{	-- Zone Drops
+				n(ZONEDROPS, {
 					i(174760),	-- Mantid Relic Fragment
 				}),
 			}),
@@ -1247,13 +1344,13 @@ _.ExpansionFeatures =
 					}),
 				}),
 				n(-38,  {	-- Professions
-					prof(356, {	-- Fishing
+					prof(FISHING, {
 						i(174456, {	-- Bottle of Gloop (pet)
 							["description"] = "Must be fishing in water currently affected by a N'Zoth assault.",
 						}),
 					}),
 				}),
-				n(-17,  {	-- Quests
+				n(QUESTS, {
 					q(56538, {	-- Clans of the Mogu
 						["coord"] = { 83.7, 27.1, 1530 },
 						["provider"] = { "n", 156003 },	-- Lorewalker Cho
@@ -1312,13 +1409,15 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 56539,	-- Finding the Rajani
 					}),
 				}),
-				n(-16,  {	-- Rares
+				n(RARES, {
 					n(157468, {	-- Tisiphon
 						["questID"] = 57364,
 						["coord"] = { 9.5, 67.4, 1530 },
 						["isDaily"] = true,
 						["description"] = "Use the fishing pole.",
 						["g"] = {
+							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(174229),	-- Lantern of the Damned
 						},
 					}),
@@ -1348,7 +1447,7 @@ _.ExpansionFeatures =
 						["isWorldQuest"] = true,
 					}),
 				}),
-				n(-2,   {	-- Vendors
+				n(VENDORS, {
 					n(160711, {	-- Zhang Ku
 						["coord"] = { 44.5, 75.4, 1530 },
 						["g"] = {

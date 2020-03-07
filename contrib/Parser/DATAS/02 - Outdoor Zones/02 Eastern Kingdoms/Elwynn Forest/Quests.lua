@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(37, {	-- Elwynn Forest
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(5545,  {	-- A Bundle of Trouble
 					["provider"] = { "n", 10616 },	-- Supervisor Raelen
 					["coord"] = { 81.3, 66.1, 37 },
@@ -19,7 +19,7 @@ _.Zones =
 				q(26393, {	-- A Swift Message
 					["provider"] = { "n", 514 },	-- Smith Argus
 					["coord"] = { 41.7, 65.5, 37 },
-					["races"] = { 1 },	-- Human
+					["races"] = { HUMAN },
 				}),
 				q(26150, {	-- A Visit With Maybell
 					["isBreadcrumb"] = true,
@@ -52,7 +52,7 @@ _.Zones =
 					["provider"] = { "n", 261 },	-- Guard Thomas
 					["coord"] = { 73.9, 72.1, 37 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 171,	-- Report to Thomas
+					["sourceQuest"] = 71,	-- Report to Thomas
 					["g"] = {
 						i(1171),	-- Well-Stitched Robe
 						i(2237),	-- Patched Pants
@@ -62,7 +62,7 @@ _.Zones =
 				}),
 				q(1667,  {	-- Dead-tooth Jack
 					["u"] = 40,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(2, i(6979)),	-- Haggard's Axe
@@ -80,7 +80,7 @@ _.Zones =
 				q(26394, {	-- Continue to Stormwind
 					["provider"] = { "n", 42983 },	-- Bartlett the Brave
 					["coord"] = { 41.7, 64.6, 37 },
-					["races"] = { 1 },	-- Human
+					["races"] = { HUMAN },
 					["sourceQuest"] = 26393,	-- A Swift Message
 				}),
 				q(45,    {	-- Discover Rolf's Fate
@@ -127,8 +127,8 @@ _.Zones =
 				}),
 				q(5624,  {	-- Garments of the Light
 					["u"] = 40,
-					["races"] = { 1 },	-- Human
-					["classes"] = { 5 },	-- Priest
+					["races"] = { HUMAN },
+					["classes"] = { PRIEST },
 					["g"] = {
 						un(2, i(16605)),	-- Friar's Robes of the Light
 					},
@@ -163,9 +163,10 @@ _.Zones =
 				}),
 				q(32618, {	-- Learn To Ride
 					["description"] = "This quest is available to Humans upon reaching level 20.",
-					["races"] = { 1 },	-- Human
+					["races"] = { HUMAN },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
+					["lvl"] = 20,
 				}),
 				q(14079, {	-- Learn to Ride in Elwynn Forest
 					["u"] = 40,

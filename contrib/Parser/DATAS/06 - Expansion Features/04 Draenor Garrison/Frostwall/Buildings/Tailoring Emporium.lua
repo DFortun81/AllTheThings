@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(128,  {	-- Enchanter's Study (rank 1: 94, rank 2: 127, rank 3: 128)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(-2, {	-- Vendors
+						n(VENDORS, {
 							n(79864, { 	-- Warra the Weaver <Tailor>
 								["races"] = HORDE_ONLY,
 								["g"] = {

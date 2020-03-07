@@ -7,7 +7,7 @@ _.GearSets =
 		gs(1977, {	-- Heritage of Kezan
 			["races"] = { 9 },	-- Goblin
 			["g"] = {
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(57043, {	-- Old Friends, New Opportunities
 						["maps"] = { 85 },	-- Orgrimmar
 						["coord"] = { 39.5, 80.2, 85 },

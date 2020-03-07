@@ -6,7 +6,7 @@ _.Zones =
 	m(113, {	-- Northrend
 		m(125, {	-- Dalaran: Northrend
 			n(-213, {	-- The Underbelly
-				n(-2, {		-- Vendors
+				n(VENDORS, {
 					n(30885, {	-- Blazik Fireclaw <Hateful Gladiator>
 						["coord"] = { 59.5, 57.9, 126 },
 						["sym"] = {

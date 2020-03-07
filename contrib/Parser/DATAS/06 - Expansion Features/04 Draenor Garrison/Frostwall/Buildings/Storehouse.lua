@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(143, {	-- Storehouse (rank 1: 51, rank 2: 142, rank 3: 143)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(37060, {	-- Lost In Transition
 								["provider"] = { "n", 79862 },	-- Yorn Longhoof
 								["races"] = HORDE_ONLY,

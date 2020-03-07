@@ -83,7 +83,7 @@ _.Achievements =
 						crit(4),		-- Ruins of Ahn'Qiraj
 					}),
 					ach(5506, {		-- Defender of a Shattered World
-						title(185),		-- ,Defender of a Shattered World
+						title(185),		-- <Name>, Defender of a Shattered World
 						crit(1),		-- Heroic: Blackrock Caverns
 						crit(2),		-- Heroic: Throne of the Tides
 						crit(3),		-- Heroic: The Stonecore

@@ -1,5 +1,5 @@
 -- Skinning - Skill ID 393 / Spell ID 8613
-profession(393, {	-- Skinning
+profession(SKINNING, {
 	n(-26, {	-- Drop
 		i(111351, {		-- A Guide to Skinning in Draenor
 			["collectible"] = false,
@@ -222,7 +222,7 @@ profession(393, {	-- Skinning
 	}),
 	q(40134, {	-- Highmountain Hides
 		["groups"] = { i(130064) },	-- Deadeye Monocle
-		["requireSkill"] = 393
+		["requireSkill"] = SKINNING,
 	}),
 	--[==[--
 	filter(200, {	-- Recipes

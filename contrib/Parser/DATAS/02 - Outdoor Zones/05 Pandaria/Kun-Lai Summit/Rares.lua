@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(379, {	-- Kun-Lai Summit
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(50817, {	-- Ahone the Wanderer
 					["coord"] = { 40.8, 42.5, 379 },
 					["g"] = {

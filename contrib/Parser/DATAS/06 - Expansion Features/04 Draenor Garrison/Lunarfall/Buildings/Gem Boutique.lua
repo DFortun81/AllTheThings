@@ -9,13 +9,13 @@ _.ExpansionFeatures =
 				garrisonBuilding(132, {	-- Gem Boutique (rank 1: 96, rank 2: 131, rank 3: 132)
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(36644, {	-- Your First Jewelcrafting Work Order
 								["races"] = ALLIANCE_ONLY,
 								["provider"] = { "n", 77356 },	-- Costan Highwall
 							}),
 						}),
-						n(-2,  {	-- Vendors
+						n(VENDORS, {
 							n(77356, {	-- Costan Highwall <Jewelcrafter>
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {

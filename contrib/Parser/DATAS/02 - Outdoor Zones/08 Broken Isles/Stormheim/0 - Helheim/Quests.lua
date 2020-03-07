@@ -6,7 +6,7 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(634, {	-- Stormheim
 			m(649,    {	-- Helheim
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(39837, {	-- An Unworthy Task
 						["provider"] = { "n", 97319 },	-- Ashildir
 						["coord"] = { 65.3, 46.9, 649 },

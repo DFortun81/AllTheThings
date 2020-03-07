@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(203, {	-- Vashj'ir
 			m(204, {	-- Abyssal Depths
-				n(-17,  {	-- Quests
+				n(QUESTS, {
 					q(26017, {	-- A Lure
 						["provider"] = { "n", 41910 },	-- Humphrey Digsong
 						["coord"] = { 47.3, 49.7, 204 },

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(109, {	-- Netherstorm
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(19540,  {	-- Asarnan <Enchanting Trainer>
 					["coord"] = { 44.2, 33.6, 109 },
 					["g"] = {

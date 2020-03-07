@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(121, {	-- Zul'Drak
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(33776, {	-- Gondria
 					["description"] = "This is a very sought-after Hunter Pet. If you see this mob, be a kind soul and announce to General chat instead of killing it.",
 					["coords"] = {

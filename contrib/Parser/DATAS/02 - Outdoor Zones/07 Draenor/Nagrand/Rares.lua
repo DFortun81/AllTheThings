@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(550, {	-- Nagrand (Draenor)
-			n(-16, { 	-- Rares
+			n(RARES, {
 				-- Coords have been confirmed on rares except for Luk'hok, Nakk, and a few noted long spawns.
 				n(82899, {	-- Ancient Blademaster
 					["questID"] = 35778,

@@ -9,7 +9,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["coords"] = { 26.0, 50.6, 115 },
 		["maps"] =  { 158, 159 },
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(29807, {	-- Death to the Traitor King
 					["provider"] = { "n", 55564 },	-- Reclaimer A'zak
 					["groups"] = {
@@ -34,7 +34,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			d(1,   {	-- Normal
 				ach(480),	-- Azjol-Nerub
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(35664, {	-- Unknown Archaeologist's Hammer
 						["crs"] = {
 							29128,	-- Anub'ar Prime Guard
@@ -115,7 +115,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				["lvl"] = 80,
 				["groups"] = {
 					ach(491),	-- Heroic: Azjol-Nerub
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						i(37624, {	-- Stained-Glass Shard Ring
 							["crs"] = {
 								29128,	-- Anub'ar Prime Guard

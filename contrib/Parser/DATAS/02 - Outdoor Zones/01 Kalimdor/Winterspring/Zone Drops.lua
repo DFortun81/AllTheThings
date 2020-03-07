@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(83, {	-- Winterspring
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(34535),	-- Azure Whelpling
 				i(20697, {	-- Crystalline Threaded Cape
 					["crs"] = { 7449 },	-- Chillwind Ravager

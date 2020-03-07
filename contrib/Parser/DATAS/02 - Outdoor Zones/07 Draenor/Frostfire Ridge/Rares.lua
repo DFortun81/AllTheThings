@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(525, {	-- Frostfire Ridge
-			n(-16, {	-- Rares
+			n(RARES, {
 				-- Coords have been confirmed on rares except for Edge of Reality, Iron Siegeworks rares (looks like the daily needs to be active), and some noted rares on longer spawn timers.
 				n(84378, {	-- Ak'ox the Slaughterer
 					["questID"] = 37525,

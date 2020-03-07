@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(109, {	-- Netherstorm
-			n(-16, {	-- Rares	
+			n(RARES, {	
 				n(18697, { 	-- Chief Engineer Lorthander
 					["coords"] = {
 						{ 26.8, 36.0, 109 },

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(88, {	-- Thunder Bluff
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(7822, {	-- A Donation of Mageweave
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -172,7 +172,7 @@ _.Zones =
 				q(768, {    -- Gathering Leather
 					["provider"] = { "n", 3050 },    -- Veren Tallstrider
 					["coord"] = { 44.0, 44.6, 88 },
-					["requireSkill"] = 393,    -- Skinning
+					["requireSkill"] = SKINNING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
 				}),
@@ -215,7 +215,7 @@ _.Zones =
 				q(769, {	-- Kodo Hide Bag
 					["provider"] = { "n", 3050 },	-- Veren Tallstrider
 					["coord"] = { 44.0, 44.6, 88 },
-					["requireSkill"] = 165,    -- Leatherworking
+					["requireSkill"] = LEATHERWORKING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
 					["g"] = {

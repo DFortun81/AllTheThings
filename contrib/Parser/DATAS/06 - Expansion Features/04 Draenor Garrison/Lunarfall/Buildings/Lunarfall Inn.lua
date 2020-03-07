@@ -288,7 +288,7 @@ _.ExpansionFeatures =
 							follower(369),	-- Zelena Moonbreak
 							follower(389),	-- Zian
 						}),
-						n(-17,  {	-- Quests
+						n(QUESTS, {
 							i(119036, {	-- Box of Storied Treasures [4]
 								["description"] = "Commonly rewarded from quests provided from the Inn.",
 								["g"] = {
@@ -1603,7 +1603,7 @@ _.ExpansionFeatures =
 								},
 							}),
 						}),
-						n(-2,   {	-- Vendors
+						n(VENDORS, {
 							n(77368, {	-- Madison Clark <Cook>
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {

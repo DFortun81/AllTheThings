@@ -1,4 +1,4 @@
-profession(129, {	-- First Aid
+profession(FIRST_AID, {
 	["groups"] =  {
 		un(2, ach(10599, {	-- Legion Medic (800) *
 			["groups"] = {

@@ -1,4 +1,4 @@
-profession(171, {	-- Alchemy
+profession(ALCHEMY, {
 	filter(200, {	-- Recipes
 		{
 			["categoryID"] = 332--[[Alchemy of Draenor]],

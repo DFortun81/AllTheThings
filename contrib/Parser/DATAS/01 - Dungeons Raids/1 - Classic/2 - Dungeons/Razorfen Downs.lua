@@ -8,7 +8,7 @@ _.Instances = { tier(1, {	-- Classic
 		["mapID"] = 300,
 		["lvl"] = 35,
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(33513, {	-- Blackthorn's Lieutenants
 					["providers"] = {
 						{ "n", 74367 },	-- Koristrasza
@@ -86,7 +86,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			n(0,   {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(10573, {	-- Boneslasher
 					["crs"] = {
 						74947,	-- Boneflayer Ghoul

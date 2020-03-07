@@ -6,7 +6,7 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(646, {	-- Broken Shore
 			n(-10050, {	-- Nether Disruptor
-				["g"] = bubbleDown({["requireSkill"] = 164}, {	-- Blacksmithing
+				["g"] = bubbleDown({["requireSkill"] = BLACKSMITHING}, {
 					q(46774, {	-- The Nether Disruptor
 						["provider"] = { "n", 120183 },	-- Commander Chambers
 						["repeatable"] = true,

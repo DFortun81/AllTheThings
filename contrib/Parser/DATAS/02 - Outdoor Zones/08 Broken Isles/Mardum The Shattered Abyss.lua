@@ -14,7 +14,7 @@ _.Zones =
 				675,	-- Soul Engine
 			},
 			["g"] = {
-				n(-17,  {	-- Quests
+				n(QUESTS, {
 					q(40077, {	-- The Invasion Begins
 						["coord"] = { 22.0, 55.8, 672 },
 						["provider"] = { "n", 93011 },	-- Kayn Sunfury
@@ -166,7 +166,7 @@ _.Zones =
 						},
 					}),
 				}),
-				n(-16,  {	-- Rares
+				n(RARES, {
 					n(97058,  { -- Count Nefarious
 						["questID"] = 40231,	-- Nefarious Ring
 						["coord"] = { 51.5, 56.4, 672 },
@@ -295,7 +295,7 @@ _.Zones =
 						679,	-- Third Floor
 					},
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(38672, {	-- Breaking Out
 								["coord"] = { 80.1, 36.6, 677 },
 								["description"] = "Maiev upgrades your uncommon Illidari Glaives to these two glaives.",
@@ -418,7 +418,7 @@ _.Zones =
 								["sourceQuests"] = { 39688, 40255 },	-- Between Us and Freedom
 							}),
 						}),
-						n(-16, {	-- Rares
+						n(RARES, {
 							n(96997, {	-- Kethrazor
 								["questID"] = 40251,	-- Inquisitor's Glowering Eye
 								["coord"] = { 49.5, 32.8, 677 },

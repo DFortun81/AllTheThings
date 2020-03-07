@@ -17,7 +17,7 @@ _.ExpansionFeatures =
 								},
 							}),
 						}),
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(37045, {	-- Salvaging the Situation
 								["races"] = HORDE_ONLY,
 								["provider"] = { "n", 79857 },	-- Lumba the Crusher

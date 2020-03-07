@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(18, {	-- Tirisfal Glades
 			m(465, {	-- Deathknell
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(24971, {	-- Assault on the Rotbrain Encampment
 						["provider"] = { "n", 49425 },	-- Darnell
 						["coord"] = { 67.0, 42.3, 465 },

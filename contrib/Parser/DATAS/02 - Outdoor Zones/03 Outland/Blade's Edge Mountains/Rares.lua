@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(105, {	-- Blade's Edge Mountains
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(18692, {	-- Hemathion
 					["coords"] = {
 						{ 30.0, 45.4, 105 },

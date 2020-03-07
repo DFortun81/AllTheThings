@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(117, {	-- Howling Fjord
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(24539, {	-- "Silvermoon" Harry
 					["coord"] = { 35.0, 80.8, 117 },
 					["g"] = {

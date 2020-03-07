@@ -6,7 +6,7 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
 			n(-34,  {	-- World Quests
-				n(-17, {	-- Quests
+				n(QUESTS, {
 	--[[	raw quest list to check against
 					q(52063, {	-- Boarder Patrol
 						["isWorldQuest"] = true,
@@ -61,16 +61,12 @@ _.Zones =
 						["lvl"] = 120,
 					}),
 					q(53288, {	-- Overgrown Anchor Weed
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["g"] = {
 							i(163601),	-- Overgrown Anchor Weed (QI)
 						},	
-					}),
-					q(53345, {	-- Plunder and Provisions
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
 					}),
 					q(53012, {	-- Put Away Your Toys
 						["isWorldQuest"] = true,
@@ -219,10 +215,10 @@ _.Zones =
 					q(53286, {	-- Blooming Siren's Sting
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(53285, {	-- Blooming Star Moss
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
@@ -390,7 +386,7 @@ _.Zones =
 					}),
 					q(53316, {	-- Hardened Monelite
 						["isWorldQuest"] = true,
-						["requireSkill"] = 186,	-- Mining
+						["requireSkill"] = MINING,
 						["lvl"] = 120,
 					}),
 					q(53717, {	-- Hold the Highland
@@ -560,6 +556,10 @@ _.Zones =
 					q(53107, {	-- Plunder and Provisions
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+					}),
+					q(53345, {	-- Plunder and Provisions
+						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
 					q(52474, {	-- Poacher Zane
@@ -863,11 +863,11 @@ _.Zones =
 					q(53287, {	-- Winter's Kiss Cluster
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(52422, {	-- Work Order: Battle Flag: Spirit of Freedom
 						["isWorldQuest"] = true,
-						["requireSkill"] = 197,	-- Tailoring
+						["requireSkill"] = TAILORING,
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 120,
 						["g"] = {
@@ -887,7 +887,7 @@ _.Zones =
 					q(52394, {	-- Work Order: Contract: Champions of Azeroth (Rank 3)
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 773,	-- Inscription
+						["requireSkill"] = INSCRIPTION,
 						["g"] = {
 							i(162374),	-- Recipe: Contract: Champions of Azeroth (Rank 3)
 						},
@@ -896,7 +896,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 773,	-- Inscription
+						["requireSkill"] = INSCRIPTION,
 						["g"] = {
 							i(162364), 	-- Recipe: Contract: Storm's Wake (Rank 3)
 						},
@@ -905,7 +905,7 @@ _.Zones =
 						["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 185,	-- Cooking
+						["requireSkill"] = COOKING,
 						["g"] = {
 							i(162286),	-- Recipe: Honey-Glazed Haunchs (Rank 3)
 						},
@@ -914,7 +914,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 202,	-- Engineering
+						["requireSkill"] = ENGINEERING,
 						["g"] = {
 							i(162340),	-- Schematic: Electroshock Mount Motivator
 						},
@@ -923,7 +923,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 333,	-- Enchanting
+						["requireSkill"] = ENCHANTING,
 						["g"] = {
 							i(162299), 	-- Formula: Enchant Ring - Seal of Haste (Rank 3)
 						},
@@ -932,7 +932,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 333,	-- Enchanting
+						["requireSkill"] = ENCHANTING,
 						["g"] = {
 							i(162300), 	-- Formula: Enchant Ring - Seal of Mastery (Rank 3)
 						},
@@ -941,14 +941,14 @@ _.Zones =
 						["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 185,	-- Cooking
+						["requireSkill"] = COOKING,
 						["g"] = {
 							i(162285),	-- Recipe: Kul Tiramisu (Rank 3)
 						},
 					}),
 					q(52400, {	-- Work Order: Kyanite
 						["isWorldQuest"] = true,
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 120,
 					}),
@@ -956,7 +956,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 171,	-- Alchemy
+						["requireSkill"] = ALCHEMY,
 						["g"] = {
 							i(162258),	-- Recipe: Lightfoot Potion (Rank 3)
 						},
@@ -965,19 +965,19 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 					}),
 					q(50981, {	-- Work Order: Riverbud
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(52346, {	-- Work Order: Sailor's Pie (Rank 3)
 						["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 185,	-- Cooking
+						["requireSkill"] = COOKING,
 						["g"] = {
 							i(162295),	-- Recipe: Sailor's Pie (Rank 3)
 						},
@@ -986,7 +986,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(50989, {	-- Work Order: Storm Silver Ore
 						["isWorldQuest"] = true,

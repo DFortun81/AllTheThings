@@ -11,7 +11,7 @@ _.WorldEvents =
 				["icon"] = "Interface\\Icons\\Spell_Shaman_StormEarthFire",
 				["lvl"] = 110,
 				["g"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						-- Attaching the quests to each zone that is involved in the "War of the Thorns" Campaign.  Excluding Undercity, Stomrwind and Northern Barrens due to only one quest taking place in these zones and it's not relevant to link for just the one.
 						["maps"] = { 
 							63,	-- Ashenvale
@@ -333,7 +333,7 @@ _.WorldEvents =
 					n(-34, {	-- World Quests
 						["maps"] = { 62 },	-- Darkshore; Let's attach the map to this zone since all the WQ's are here.
 						["g"] = {
-							n(-17, {	-- Quests
+							n(QUESTS, {
 								["g"] = bubbleDown({["u"] = 3, ["lvl"] = 110}, {
 									q(52895, {	-- Arboria
 										["races"] = ALLIANCE_ONLY,

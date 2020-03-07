@@ -11,7 +11,7 @@ _.Holidays =
 			84,	-- Stormwind
 		},
 		["g"] = {
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(145826, {	-- Orgrimmar Entertainer
 					["description"] = "This NPC wanders around in Ogrimmar and shoots T-Shirts on the ground where you can pick them up.",
 					["races"] = HORDE_ONLY,
@@ -83,7 +83,7 @@ _.Holidays =
 					},
 				}),
 			}),
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(150948, {	-- Gild Crewneck
 					["coord"] = { 60.3, 52.5, 634 },
 					["maps"] = { 634 },	-- Stormheim

@@ -26,7 +26,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		},
 		["coords"] = { 72.4, 44.3, 390 },	-- Siege of Orgrimmar, Vale of Eternal Blossoms (door leading downstairs to entrance)
 		["g"] = {
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(5643, {	-- Tyranis Malem
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -317,12 +317,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 				},
 			}),
-			d(-2, {	-- Flexible (Pre-Patch 6.0) >> Items unmarked after 6.0, used to be marked "Flexible" <<
+			n(VENDORS, {	-- Flexible (Pre-Patch 6.0) >> Items unmarked after 6.0, used to be marked "Flexible" <<
 				["u"] = 12,
 				["ignoreBonus"] = true,
 				["description"] = "This version of the instance was the original Flexible difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 				["g"] = {
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						un(2, i(105838)),	-- Aeth's Swiftcinder Cloak Normal
 						un(2, i(105830)),	-- Brave Niunai's Cloak Normal
 						un(2, i(105826)),	-- Cape of the Alpha Normal
@@ -620,7 +620,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["ignoreBonus"] = true,
 				["description"] = "This version of the instance was the original Normal difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 				["g"] = {
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						un(2, i(103846)),	-- Aeth's Swiftcinder Cloak Heroic
 						un(2, i(103960)),	-- Brave Niunai's Cloak Heroic
 						un(2, i(103935)),	-- Cape of the Alpha Heroic
@@ -1167,7 +1167,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["ignoreBonus"] = true,
 				["description"] = "This version of the instance was the original Heroic difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 				["g"] = {
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						un(2, i(105852)),	-- Aeth's Swiftcinder Cloak Mythic
 						un(2, i(105844)),	-- Brave Niunai's Cloak Mythic
 						un(2, i(105840)),	-- Cape of the Alpha Mythic
@@ -1713,7 +1713,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["description"] = "|cff66ccffSpeak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from this LFR is NOT tradeable to others in group.|r",
 				["coord"] = { 83.0, 30.6, 390 },	-- Seat of Knowledge, Vale of Eternal Blossoms
 				["g"] = {
-					n(-1, {		-- Shared Boss Loot
+					n(COMMON_BOSS_DROPS, {
 						un(2, i(104275, {	-- Twisted Treasures of the Vale
 							["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
 							--[[
@@ -2335,7 +2335,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				},
 			}),
 			d(14, {	-- Normal
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					{	-- Aeth's Swiftcinder Cloak
 						["itemID"] = 113224,	-- Aeth's Swiftcinder Cloak
 						["crs"] = {
@@ -3539,7 +3539,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				})),
 			}),
 			d(15, {	-- Heroic
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					{	-- Aeth's Swiftcinder Cloak
 						["itemID"] = 113224,	-- Aeth's Swiftcinder Cloak
 						["crs"] = {
@@ -4758,7 +4758,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				})),
 			}),
 			d(16, {	-- Mythic
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					{	-- Aeth's Swiftcinder Cloak
 						["itemID"] = 113224,	-- Aeth's Swiftcinder Cloak
 						["crs"] = {

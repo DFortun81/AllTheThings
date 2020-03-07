@@ -1,4 +1,4 @@
-profession(185, {	-- Cooking
+profession(COOKING, {
 	filter(200, {	-- Recipes
 			{
 			["categoryID"] = 90--[[Pandaren Cuisine]],

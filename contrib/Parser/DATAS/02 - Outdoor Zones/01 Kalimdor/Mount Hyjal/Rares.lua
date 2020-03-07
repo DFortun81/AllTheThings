@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(198, {	-- Mount Hyjal
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(54318, {	-- Ankha
 					["coords"] = {
 						{ 28.0, 52.0, 198 },

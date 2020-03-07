@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(17, {	-- Blasted Lands
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(8178, {	-- Nina Lightbrew <Alchemy Supplies>
 					["coord"] = { 62.5, 16.0, 17 },
 					["races"] = ALLIANCE_ONLY,

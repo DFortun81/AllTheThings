@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(103, {	-- The Exodar
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(27225, {	-- A Summons from Ander Germaine
 					["provider"] = { "n", 17120 },	-- Behomat (The Exodar)
 					["coord"] = { 56.4, 46.2, 103 },	-- Behomat (The Exodar)

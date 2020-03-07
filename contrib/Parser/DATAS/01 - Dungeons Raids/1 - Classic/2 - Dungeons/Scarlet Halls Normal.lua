@@ -10,7 +10,7 @@ _.Instances = { tier(1, {	-- Classic
 		["lvl"] = 21,
 		["g"] = {
 			d(1, {		-- Normal
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(31493, {	-- Just for Safekeeping, Of Course
 						["provider"] = { "n", 64738 },	-- Hooded Crusader
 					}),
@@ -18,7 +18,7 @@ _.Instances = { tier(1, {	-- Classic
 						["provider"] = { "n", 64738 },	-- Hooded Crusader
 					}),
 				}),
-				n(0, { 		-- Zone Drop
+				n(ZONEDROPS, {
 					i(7754, {    -- Harbinger Boots
 						["crs"] = {
 							59175,	-- Master Archer

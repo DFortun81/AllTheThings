@@ -13,7 +13,7 @@ _.Instances = { tier(1, {	-- Classic
 		["g"] = {
 			n(-40, {	-- Legacy
 				un(2, ach(2188)),	-- Leeeeeeeeeeeeeroy!
-				n(-17, {	-- Quests (Legacy)
+				n(QUESTS, {
 					q(6602, {	-- Blood of the Black Dragon Champion
 						["u"] = 40,
 						["races"] = HORDE_ONLY,
@@ -95,7 +95,7 @@ _.Instances = { tier(1, {	-- Classic
 						["sourceQuest"] = 8995,	-- Mea Culpa, Lord Valthalak
 					}),
 				}),
-				n(0, {	-- Zone Drop (Legacy)
+				n(ZONEDROPS, {
 					n(10318, {	-- Blackhand Assassin
 						un(7, i(15774)),	-- Pattern: Heavy Scorpid Shoulders
 						un(7, i(16713)),	-- Shadowcraft Belt

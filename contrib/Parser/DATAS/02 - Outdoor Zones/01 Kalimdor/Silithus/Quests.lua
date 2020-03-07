@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(81, {	-- Silithus
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(9248,  {	-- A Humble Offering
 					["u"] = 40,
 					["provider"] = { "n", 15282 },	-- Aurel Goldleaf
@@ -193,7 +193,7 @@ _.Zones =
 					["provider"] = { "n", 15174 },	-- Calandrath
 					["coord"] = { 55.4, 36.6, 81 },
 					["description"] = "This quest is invisible until you reach Cooking 285.",
-					["requiredSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 					["g"] = {
 						recipe(24801),	-- Smoked Desert Dumplings
 					},
@@ -232,7 +232,7 @@ _.Zones =
 					["provider"] = { "n", 15174 },	-- Calandrath
 					["coord"] = { 55.4, 36.6, 81 },
 					["sourceQuest"] = 8313,	-- Sharing the Knowledge
-					["requiredSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 				}),
 				q(8341, {	-- Lords of the Council
 					["u"] = 40,
@@ -327,7 +327,7 @@ _.Zones =
 					["coord"] = { 43.6, 42.0, 81 },
 					["provider"] = { "o", 180503 },	-- Sandy Cookbook
 					["sourceQuest"] = 8307,	-- Desert Recipe
-					["requiredSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 				}),
 				q(8348,  {	-- Signet of the Dukes
 					["u"] = 40,

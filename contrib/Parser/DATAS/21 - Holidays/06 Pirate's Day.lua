@@ -13,7 +13,7 @@ _.Holidays = bubbleDown({["u"] = 23},
 					["u"] = 23,	-- Pirate's Day
 				}),
 			}),
-			n(-17, {	-- Quests 
+			n(QUESTS, { 
 				q(42758, {	-- You're Gonna Need A Bigger Boat!
 					["isYearly"] = true,
 					["provider"] = { "n", 28048 },	-- Dread Captain DeMeza <Scourge of the South Seas>
@@ -24,7 +24,7 @@ _.Holidays = bubbleDown({["u"] = 23},
 					},
 				}),
 			}),
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(108715, {  -- Ol' Eary 
 					["coord"] = { 37.8, 66.2, 210 },
 					["g"] = {
@@ -32,7 +32,7 @@ _.Holidays = bubbleDown({["u"] = 23},
 					},
 				}),
 			}),
-			n(-2,  {	-- Vendors
+			n(VENDORS, {
 				n(28048,  {	-- Dread Captain DeMeza <Scourge of the South Seas>
 					["coord"] = { 40.0, 72.6, 210 },	-- Booty Bay Pirate Day Location
 					["g"] = bubbleDown({["u"] = 23}, {

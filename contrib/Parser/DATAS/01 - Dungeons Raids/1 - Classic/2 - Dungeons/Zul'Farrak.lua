@@ -8,7 +8,7 @@ _.Instances = { tier(1, {	-- Classic
 		["mapID"] = 219,
 		["coord"] = { 39.21, 21.29, 71 },	-- Zul'Farrak, Tanaris
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(27070, {	-- A Fool's Errand
 					["provider"] = { "n", 7407 },	-- Chief Engineer Bildewhizzle
 					["g"] = {
@@ -42,7 +42,7 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 40712 },	-- Mazoga's Spirit
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(142402, {	-- Plans: Light Earthforged Blade
 					["crs"] = {
 						8127,	-- Antu'sul

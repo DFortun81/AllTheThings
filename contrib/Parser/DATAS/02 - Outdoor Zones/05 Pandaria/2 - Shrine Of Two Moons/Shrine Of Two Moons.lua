@@ -16,7 +16,7 @@ _.Zones =
 				n(-4,  {	-- Achievements
 					ach(7285),	-- Every Day I'm Pand-a-ren
 				}),
-				n(-17, {	-- Quests
+				n(QUESTS, {
 --[[
 					q(32352, {	-- A Gathering Storm
 						["races"] = HORDE_ONLY,
@@ -72,7 +72,7 @@ _.Zones =
 					q(32726, {	-- So You Want to Be a Blacksmith...
 						["provider"] = { "n", 64058 },	-- Jorunga Stonehoof
 						["races"] = HORDE_ONLY,
-						["requireSkill"] = 164,	-- Blacksmithing
+						["requireSkill"] = BLACKSMITHING,
 					}),
 --[[
 					q(33249, {	-- Proving Grounds
@@ -101,7 +101,7 @@ _.Zones =
 					}),
 					]]--
 				}),
-				n(-2,  {	-- Vendors
+				n(VENDORS, {
 					n(64067, {	-- Barleyflower <Cooking Supplies>
 						["coord"] = { 68.7, 69.5, 392 },
 						["races"] = HORDE_ONLY,
@@ -507,7 +507,7 @@ _.Zones =
 						},
 					}),
 					n(64051, {	-- Esha the Loommaiden <Tailoring Supplies>
-						["requireSkill"] = 197,	-- Tailoring
+						["requireSkill"] = TAILORING,
 						["coord"] = { 31.5, 53.6, 391 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
@@ -570,7 +570,7 @@ _.Zones =
 						},
 					}),
 					n(64058, {	-- Jorunga Stonehoof <Blacksmithing Supplies>
-						["requireSkill"] = 164,	-- Blacksmithing
+						["requireSkill"] = BLACKSMITHING,
 						["coord"] = { 26.0, 46.2, 391 },
 						["races"] = HORDE_ONLY,
 						["g"] = {
@@ -1051,7 +1051,7 @@ _.Zones =
 						},
 					}),
 					n(64054, {	-- Krogo Darkhide <Leatherworking & Skinning Supplies>
-						["requireSkill"] = 165,	-- Leatherworking
+						["requireSkill"] = LEATHERWORKING,
 						["coord"] = { 30.5, 46.5, 391 },
 						["races"] = HORDE_ONLY,
 						["g"] = {

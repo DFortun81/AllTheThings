@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(106, {	-- Bloodmyst Isle
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(18427, {	-- Fazu <Tradesman>
 					["coord"] = { 53.4, 56.6, 106 },
 					["races"] = ALLIANCE_ONLY,

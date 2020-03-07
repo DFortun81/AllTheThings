@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(95, {	-- Ghostlands
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(16268, {	-- Eralan <Poison Supplies>
 					["coord"] = { 47.0, 34.2, 95 },
 					["races"] = HORDE_ONLY,

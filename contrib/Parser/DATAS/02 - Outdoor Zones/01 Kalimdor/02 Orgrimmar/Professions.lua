@@ -6,13 +6,13 @@ _.Zones =
 	m(12, {	-- Kalimdor
 		m(85, {	-- Orgrimmar
 			n(-38, {	-- Profession
-				prof(171, {	-- Alchemy
-					n(-17, {	-- Quests
+				prof(ALCHEMY, {
+					n(QUESTS, {
 						q(29481, {	-- Elixir Master
 							["provider"] = { "n", 3347 },	-- Yelmak (Orgrimmar)
 							["coord"] = { 55.6, 45.8, 85 },	-- Yelmak (Orgrimmar)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = 171,	-- Alchemy	
+							["requireSkill"] = ALCHEMY,	
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -27,7 +27,7 @@ _.Zones =
 							["provider"] = { "n", 3347 },	-- Yelmak (Orgrimmar)
 							["coord"] = { 55.6, 45.8, 85 },	-- Yelmak (Orgrimmar)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = 171,	-- Alchemy
+							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -42,7 +42,7 @@ _.Zones =
 							["provider"] = { "n", 3347 },	-- Yelmak (Orgrimmar)
 							["coord"] = { 55.6, 45.8, 85 },	-- Yelmak (Orgrimmar)
 							["description"] = "Requires 300 Classic Alchemy.",
-							["requireSkill"] = 171,	-- Alchemy
+							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
 							--[[["altQuests"] = {
 								29481,	-- Elixir Master
@@ -55,12 +55,12 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(164, {	-- Blacksmithing
-					n(-17, {	-- Quests
+				prof(BLACKSMITHING, {
+					n(QUESTS, {
 						q(2751, {	-- Barbaric Battlements
 							["provider"] = { "n", 7790 },	-- Orokk Omosh
 							["coord"] = { 76.8, 37.7, 85 },
-							["requireSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = BLACKSMITHING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 32,
 							["g"] = {
@@ -71,7 +71,7 @@ _.Zones =
 							["provider"] = { "n", 7793 },	-- Ox
 							["coord"] = { 75.6, 36.8, 85 },
 							["sourceQuest"] = 2756,	-- The Old Ways
-							["requireSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = BLACKSMITHING,
 							["races"] = HORDE_ONLY,
 							["u"] = 40,
 							["g"] = {
@@ -82,7 +82,7 @@ _.Zones =
 							["provider"] = { "n", 7790 },	-- Orokk Omosh
 							["coord"] = { 76.8, 37.7, 85 },
 							["sourceQuest"] = 2753,	-- Trampled Under Foot
-							["requireSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = BLACKSMITHING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 32,
 							["g"] = {
@@ -93,7 +93,7 @@ _.Zones =
 							["provider"] = { "n", 7790 },	-- Orokk Omosh
 							["coord"] = { 76.8, 37.7, 85 },
 							["sourceQuest"] = 2754,	-- Horns of Frenzy
-							["requireSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = BLACKSMITHING,
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								i(7982),	-- Plans: Barbaric Iron Gloves
@@ -102,7 +102,7 @@ _.Zones =
 						q(2756, {	-- The Old Ways
 							["provider"] = { "n", 7792 },	-- Aturk the Anvil
 							["coord"] = { 75.6, 36.8, 85 },
-							["requireSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = BLACKSMITHING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 40,
 							["u"] = 40,
@@ -114,7 +114,7 @@ _.Zones =
 							["provider"] = { "n", 7790 },	-- Orokk Omosh
 							["coord"] = { 76.8, 37.7, 85 },
 							["sourceQuest"] = 2751,	-- Barbaric Battlements
-							["requireSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = BLACKSMITHING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 32,
 							["g"] = {
@@ -123,18 +123,18 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(185, {	-- Cooking
+				prof(COOKING, {
 					n(-4, {	-- Achievements
 						ach(5475, {	-- Let's Do Lunch: Orgrimmar
 							["races"] = HORDE_ONLY,
 						}),
 					}),
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(26227, {	-- Careful, This Fruit Bites Back
 							["provider"] = { "n", 42506 },	-- Marogg
 							["coord"] = { 56.5, 62.5, 85 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								crit(1, {	-- Careful, This Fruit Bites Back
@@ -147,7 +147,7 @@ _.Zones =
 							["provider"] = { "n", 42506 },	-- Marogg
 							["coord"] = { 56.5, 62.5, 85 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								crit(2, {	-- Crawfish Creole
@@ -160,7 +160,7 @@ _.Zones =
 							["provider"] = { "n", 42506 },	-- Marogg
 							["coord"] = { 56.5, 62.5, 85 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								crit(3, {	-- Even Thieves Get Hungry
@@ -173,7 +173,7 @@ _.Zones =
 							["provider"] = { "n", 42506 },	-- Marogg
 							["coord"] = { 56.5, 62.5, 85 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								crit(4, {	-- Everything Is Better with Bacon
@@ -186,14 +186,14 @@ _.Zones =
 							["provider"] = { "n", 3399 },	-- Zamja
 							["coord"] = { 32.2, 69.4, 85 },
 							["races"] = HORDE_ONLY,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["isBreadcrumb"] = true,
 						}),
 						q(26233, {	-- Stealing From Our Own
 							["provider"] = { "n", 42506 },	-- Marogg
 							["coord"] = { 56.5, 62.5, 85 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = {
 								2,	-- Orc
 								5,	-- Undead
@@ -217,7 +217,7 @@ _.Zones =
 							["provider"] = { "n", 42506 },	-- Marogg
 							["coord"] = { 56.5, 62.5, 85 },
 							["isDaily"] = true,
-							["requireSkill"] = 185,	-- Cooking
+							["requireSkill"] = COOKING,
 							["races"] = { TROLL },
 							["groups"] = {
 								crit(5, {	-- Stealing From Our Own
@@ -228,13 +228,13 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(202, {	-- Engineering
-					n(-17, {	-- Quests
+				prof(ENGINEERING, {
+					n(QUESTS, {
 						q(29477, {	-- Gnomish Engineering
 							["provider"] = { "n", 11017 },	-- Roxxik
 							["coord"] = { 56.8, 56.4, 85 },
 							["description"] = "Exclusive with |cFFFFD700Goblin Engineering|r. Becomes available at lvl 200 classic engineering.",
-							["requireSkill"] = 202,	-- Engineering
+							["requireSkill"] = ENGINEERING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 20,
 							["repeatable"] = true,
@@ -243,37 +243,37 @@ _.Zones =
 							["provider"] = { "n", 11017 },	-- Roxxik
 							["coord"] = { 56.8, 56.4, 85 },
 							["description"] = "Exclusive with |cFFFFD700Gnomish Engineering|r. Becomes available at lvl 200 classic engineering.",
-							["requireSkill"] = 202,	-- Engineering
+							["requireSkill"] = ENGINEERING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 20,
 							["repeatable"] = true,
 						}),
 					}),
 				}),
-				prof(129, {	-- First Aid
-					n(-17, {	-- Quests
+				prof(FIRST_AID, {
+					n(QUESTS, {
 						q(6623, {	-- Horde Trauma
 							["provider"] = { "n", 45540 },	-- Krenk Choplimb
 							["coord"] = { 37.6, 87.2, 85 },
-							["requireSkill"] = 129,	-- First Aid
+							["requireSkill"] = FIRST_AID,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 25,
 							["u"] = 40,
 						}),
 					}),
 				}),
-				prof(356, {	-- Fishing
+				prof(FISHING, {
 					n(-4, {	-- Achievements
 						ach(5477, {	-- Fish or Cut Bait: Orgrimmar
 							["races"] = HORDE_ONLY,
 						}),
 					}),
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(26588, {	-- A Furious Catch
 							["provider"] = { "n", 43239 },	-- Razgar
 							["coord"] = { 65.7, 41.1, 85 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								crit(4, {	-- A Furious Catch
@@ -291,7 +291,7 @@ _.Zones =
 							["provider"] = { "n", 43239 },	-- Razgar
 							["coord"] = { 65.7, 41.1, 85 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								crit(5, {	-- A Golden Opportunity
@@ -309,7 +309,7 @@ _.Zones =
 							["provider"] = { "n", 43239 },	-- Razgar
 							["coord"] = { 65.7, 41.1, 85 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								crit(3, {	-- A Staggering Effort
@@ -327,7 +327,7 @@ _.Zones =
 							["provider"] = { "n", 43239 },	-- Razgar
 							["coord"] = { 65.7, 41.1, 85 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								crit(1, {	-- Clammy Hands
@@ -344,7 +344,7 @@ _.Zones =
 						q(8228, {	-- Could I get a Fishing Flier?
 							["provider"] = { "n", 15116 },	-- Grinkle
 							["coord"] = { 52.2, 77.0, 85 },
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 35,
@@ -353,7 +353,7 @@ _.Zones =
 							["provider"] = { "n", 43239 },	-- Razgar
 							["coord"] = { 65.7, 41.1, 85 },
 							["isDaily"] = true,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
 							["groups"] = {
 								crit(2, {	-- No Dumping Allowed
@@ -371,28 +371,28 @@ _.Zones =
 							["provider"] = { "n", 3332 },	-- Lumak
 							["coord"] = { 66.6, 41.6, 85 },
 							["races"] = HORDE_ONLY,
-							["requireSkill"] = 356,	-- Fishing
+							["requireSkill"] = FISHING,
 							["isBreadcrumb"] = true,
 						}),
 					}),
 					i(34486),	-- Old Crafty
 				}),
-				prof(773, {	-- Inscription
-					n(-17, {	-- Quests
+				prof(INSCRIPTION, {
+					n(QUESTS, {
 						q(27686, {	-- Forged Documents
 							["provider"] = { "i", 63276 },	-- Forged Documents
-							["requireSkill"] = 773,	-- Inscription
+							["requireSkill"] = INSCRIPTION,
 							["description"] = "After creating Forged Documents with Inscription, search the city for an NPC to accept them - the quest can end in a variety of different places.",
 							["races"] = HORDE_ONLY,
 						}),
 					}),
 				}),
-				prof(755, {	-- Jewelcrafting
-					n(-17, {	-- Quests
+				prof(JEWELCRAFTING, {
+					n(QUESTS, {
 						q(25160, {	-- A Present for Lila
 							["provider"] = { "n", 50482 },	-- Marith Lazuria
 							["coord"] = { 72.4, 34.6, 85 },
-							["requireSkill"] = 755,	-- Jewelcrafting
+							["requireSkill"] = JEWELCRAFTING,
 							["isDaily"] = true,
 							["races"] = HORDE_ONLY,
 							["g"] = {
@@ -402,7 +402,7 @@ _.Zones =
 						q(25162, {	-- Elemental Goo
 							["provider"] = { "n", 50482 },	-- Marith Lazuria
 							["coord"] = { 72.4, 34.4, 85 },
-							["requireSkill"] = 755,	-- Jewelcrafting
+							["requireSkill"] = JEWELCRAFTING,
 							["isDaily"] = true,
 							["races"] = HORDE_ONLY,
 							["g"] = {
@@ -412,7 +412,7 @@ _.Zones =
 						q(25158, {	-- Nibbler! No!
 							["provider"] = { "n", 50482 },	-- Marith Lazuria
 							["coord"] = { 72.4, 34.4, 85 },
-							["requireSkill"] = 755,	-- Jewelcrafting
+							["requireSkill"] = JEWELCRAFTING,
 							["isDaily"] = true,
 							["races"] = HORDE_ONLY,
 							["g"] = {
@@ -423,7 +423,7 @@ _.Zones =
 							["provider"] = { "n", 50482 },	-- Marith Lazuria
 							["coord"] = { 72.4, 34.4, 85 },
 							["isDaily"] = true,
-							["requireSkill"] = 755,	-- Jewelcrafting
+							["requireSkill"] = JEWELCRAFTING,
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								currency(361),	-- Illustrious Jewelcrafter's Token
@@ -432,7 +432,7 @@ _.Zones =
 						q(25161, {	-- Ogrezonians in the Mood
 							["provider"] = { "n", 50482 },	-- Marith Lazuria
 							["coord"] = { 72.4, 34.4, 85 },
-							["requireSkill"] = 755,	-- Jewelcrafting
+							["requireSkill"] = JEWELCRAFTING,
 							["isDaily"] = true,
 							["races"] = HORDE_ONLY,
 							["g"] = {
@@ -441,13 +441,13 @@ _.Zones =
 						}),	
 					}),
 				}),
-				prof(165, {	-- Leatherworking
-					n(-17, {	-- Quests
+				prof(LEATHERWORKING, {
+					n(QUESTS, {
 						q(7493, {	-- The Journey Has Just Begun
 							["provider"] = { "n", 14392 },	-- Overlord Natoj
 							["coord"] = { 51.3, 83.2, 85 },
 							["sourceQuest"] = 24429, -- A Most Puzzling Circumstance (H)
-							["requireSkill"] = 165,	-- Leatherworking
+							["requireSkill"] = LEATHERWORKING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 60,
 							["g"] = {

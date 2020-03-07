@@ -11,7 +11,7 @@ _.Zones =
 			["lvl"] = 100,	
 			["u"] = 12,	-- Instance removed in 8.0.1 [BfA Pre-Patch]
 			["g"] = {
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(35872, {	-- A Bunch of Artifact Fragments
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
@@ -1654,7 +1654,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 					}),
 				}),
-				n(-16, { 	-- Rares
+				n(RARES, {
 				--	n(82876, {	-- Grand Marshal Tremblade	}), 
 				--	n(82877, {	-- High Warlord Volrath	}), 
 				--	n(82878, {	-- Marshal Gabriel	}), 
@@ -1683,7 +1683,7 @@ _.Zones =
 				--	n(91921, {	-- Wyrmple	}), 
 				--	n(94113, {	-- Rukmaz	}),
 				}),
-				n(-2, {		-- Vendors
+				n(VENDORS, {
 					n(80882, {	-- Crafticus Mindbender <Stormshield Quartermaster>
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {

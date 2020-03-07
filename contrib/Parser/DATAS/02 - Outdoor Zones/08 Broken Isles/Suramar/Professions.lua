@@ -6,7 +6,7 @@ _.Zones =
 	m(619, { 	-- The Broken Isles
 		m(680, {	-- Suramar
 			n(-38, { 	-- Profession
-				prof(794, {	-- Archaeology
+				prof(ARCHAEOLOGY, {
 					q(41173, {	-- A Beacon of Hope
 						["isWeekly"] = true,
 						["g"] = {
@@ -40,7 +40,7 @@ _.Zones =
 						},
 					}),
 				}),
-				prof(164, {	-- Blacksmithing
+				prof(BLACKSMITHING, {
 					q(38525, {	-- Part of the Team
 						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
 						["sourceQuest"] = 38524,	-- Felsmith Nal'ryssa
@@ -69,7 +69,7 @@ _.Zones =
 						["isBreadcrumb"] = true,
 					}),
 				}),
-				prof(185, {	-- Cooking
+				prof(COOKING, {
 					i(141011, {	-- Recipe: Surf
 						["description"] = "Drops from any marine mob in the zone.",
 						["g"] = {
@@ -83,7 +83,7 @@ _.Zones =
 						},
 					}),
 				}),
-				prof(356, {	-- Fishing
+				prof(FISHING, {
 					n(-10067, { 	-- Artifact
 						["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 						["lvl"] = 110,
@@ -218,7 +218,7 @@ _.Zones =
 								}),
 							},
 							["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF50.7, 49.3|r in The Grand Promenade near the edge of Suramar City.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-							["requireSkill"] = 356,
+							["requireSkill"] = FISHING,
 							["creatureID"] = 120459
 						}),
 					}),
@@ -227,11 +227,11 @@ _.Zones =
 						["itemID"] = 137695, 	-- Schematic: Reaves Module: Wormhole Generator Mode
 					},
 				}),
-				prof(182, {	-- Herbalism
+				prof(HERBALISM, {
 					{	-- Felwort Sample [Felwort I]
 						["itemID"] = 129122,	-- Felwort Sample
 						["questID"] = 40040,	-- Felwort Sample
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["g"] = {
 							{	-- Felwort [Rank 1]
 								["recipeID"] = 193307,	-- Felwort [Rank 1]
@@ -244,22 +244,22 @@ _.Zones =
 						["sourceQuests"] = {
 							40035,	-- The Gentlest Touch
 						},
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					},
 					{	-- Scribbled Ramblings [Starlight Rose III]
 						["itemID"] = 129143,	-- Scribbled Ramblings
 						["questID"] = 40038,	-- Insame Ramblings
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["sourceQuests"] = {
 							40037,	-- The Spade's Blade
 						},
 					},
 					q(40034, {	-- Starlight Rosedust
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["itemID"] = 129121,	-- Starlight Rosedust
 					}),
 				}),
-				prof(165, {	-- Leatherworking
+				prof(LEATHERWORKING, {
 					q(40214, {	-- Fel Tanning
 						["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
 						["g"] = {
@@ -269,17 +269,17 @@ _.Zones =
 					}),
 					q(40213),	-- Hounds Abound
 				}),
-				prof(186, {	-- Mining
+				prof(MINING, {
 					q(38798, {	-- A Shred of Your Humanity
 						["coord"] = { 30.0, 53.2, 680 },
 						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
-						["requireSkill"] = 186, -- Mining
+						["requireSkill"] = MINING,
 						["sourceQuest"] = 38901,	-- The Felsmiths
 					}),
 					q(38799, {	-- Darkheart Thicket: Nal'ryssa's Sisters
 						["coord"] = { 30.0, 53.2, 680 },
 						["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa
-						["requireSkill"] = 186, -- Mining
+						["requireSkill"] = MINING,
 						["sourceQuest"] = 38798,	-- A Shred of Your Humanity
 					}),
 					q(38804),	-- Lyrelle
@@ -290,7 +290,7 @@ _.Zones =
 					q(38803),	-- Rin'thissa
 					q(38800),	-- Rin'thissa's Eye
 				}),
-				prof(393, {	-- Skinning
+				prof(SKINNING, {
 					q(40158),	-- Darkheart Thicket: Demons Be Different
 					q(40154),	-- Eye of Azshara: The Scales of Serpentrix
 					q(40139),	-- Halls of Valor: The Hide of Fenryr
@@ -299,7 +299,7 @@ _.Zones =
 					q(40153),	-- Return to Karazhan: Scales of Legend
 					q(40152),	-- Scales for Ske'rit
 					q(40140, {	-- Ske'rit's Leather Handbook
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 						["sourceQuests"] = {
 							40138,	-- Trial of the Crusader: Hides of Legend
 							40139,	-- Halls of Valor: The Hide of Fenryr
@@ -320,21 +320,21 @@ _.Zones =
 						},
 					}),
 					q(40138, {	-- Trial of the Crusader: Hides of Legend
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 					}),
 					q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
 						["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 						["description"] = "The item that starts this quest can be skinned from any scaled creature found across the Broken Isles.",
 						["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
 					}),
 					q(40212, {	-- Wrong End of the Knife
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 					}),
 				}),
-				prof(197, {	-- Tailoring
+				prof(TAILORING, {
 					q(38971, {	-- Exotic Textiles
-						["requireSkill"] = 197,	-- Tailoring
+						["requireSkill"] = TAILORING,
 						["coord"] = { 26.6, 71.4 },
 						["provider"] = { "n", 93978 },	-- Leyweaver Athystro
 						["g"] = {
@@ -342,7 +342,7 @@ _.Zones =
 						},
 					}),
 					q(38975, {	-- Inspire Me!
-						["requireSkill"] = 197,	-- Tailoring
+						["requireSkill"] = TAILORING,
 						["coord"] = { 40.2, 69.6 },
 						["provider"] = { "n", 93976 },	-- Leyweaver Mithrogane
 						["g"] = {
@@ -352,7 +352,7 @@ _.Zones =
 					q(38969),	-- Master of Silkweave
 					q(38968),	-- Proof of Loyalty
 					q(44741, {	-- Return to Karazhan: The Big Bag Theory
-						["requireSkill"] = 197,	-- Tailoring
+						["requireSkill"] = TAILORING,
 						["coord"] = { 40.4, 69.4 },
 						["provider"] = { "n", 93969 },	-- Leyweaver Tytallo
 						["g"] = {

@@ -10,7 +10,7 @@ _.Instances = { tier(1, {	-- Classic
 		["coord"] = { 69.07, 72.96, 22 },	-- Scholomance, Western Plaguelands
 		["g"] = {
 			d(1, {		-- Normal
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(31447, {	-- An End to the Suffering
 						["provider"] = { "n", 64562 },	-- Talking Skull
 					}),
@@ -18,7 +18,7 @@ _.Instances = { tier(1, {	-- Classic
 						["provider"] = { "n", 64562 },	-- Talking Skull
 					}),
 				}),
-				n(0,   {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(18702, {	-- Belt of the Ordained
 						["crs"] = {
 							59501,	-- Reanimated Corpse
@@ -94,7 +94,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(-40, {	-- Legacy
 				["g"] = {
-					n(-17, {	-- Quests (Legacy)
+					n(QUESTS, {
 						q(4771, { 	-- Dawn's Gambit
 							["u"] = 40,
 							["g"] = {
@@ -141,7 +141,7 @@ _.Instances = { tier(1, {	-- Classic
 							["sourceQuest"] = 5251,	-- The Archivist
 						}),
 					}),
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						un(7, i(16254)),	-- Formula: Enchant Weapon - Lifestealing [Scholomance, Removed from game with revamp? Might have been added back in 7.3.5, but not sure.]
 						n(10495, { 	-- Diseased Ghoul
 							un(7, i(16714)),	-- Wildheart Bracers

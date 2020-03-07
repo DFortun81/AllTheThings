@@ -58,7 +58,28 @@ _.Zones =
 							},
 						}),
 					}),
-					n(-17,  {	-- Quests
+					n(-38, {	-- Professions
+						-- Void Focus quests
+						q(57275, {	-- Something in Your Mind
+							["provider"] = { "i", 171320 },	-- Void Focus
+							["description"] = "Can be made with any secondary crafting profession.",
+						}),
+						q(57276, {	-- Maintaining Focus
+							["lvl"] = 120,
+							["coord"] = { 46.1, 63.9, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57275,	-- Something in Your Mind
+							["cost"] = { { "i", 171176, 20 }, },	-- 20x Shred of Insanity
+						}),
+						q(57462, {	-- Dream Catcher
+							["lvl"] = 120,
+							["coord"] = { 46.1, 63.9, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57276,	-- Maintaining Focus
+							["cost"] = { { "i", 171176, 200 }, },	-- 200x Shred of Insanity
+						}),
+					}),
+					n(QUESTS, {
 						q(52428, {	-- Infusing the Heart
 							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
 							["coord"] = { 50.3, 54.4, 1021 },
@@ -143,18 +164,16 @@ _.Zones =
 							["provider"] = { "n", 152385 },	-- Highmountain Shaman (Ebonhorn)
 							["coord"] = { 18.9, 58.0, 1472 },
 							["sourceQuest"] = 55425,	-- Dominating the Indomitable
+							["cost"] = { { "i", 167830, 1 } },	-- Petrified Ebony Scale (QI)
 							["lvl"] = 120,
 							["maps"] = { 1472 },	-- The Dragon's Spine
-							["g"] = {
-								i(167830), 	-- Petrified Ebony Scale (QI)
-							},
 						}),
 						q(55618, {	-- The Heart Forge
 							["provider"] = { "n", 152194 },	-- MOTHER
 							["coord"] = { 48.1, 72.4, 1473 },
 							["sourceQuest"] = 55497,	-- A Friendly Face
+							["cost"] = { { "i", 169325, 1 } },	-- Petrified Ebony Scale (QI)
 							["g"] = {
-								i(169325),	-- Petrified Ebony Scale (QI)
 								i(168611, {	-- Petrified Ebony Scale
 									{ ["azeriteEssenceID"] = 12 },	-- The Crusible of Flame (Rank 1)
 								}),
@@ -247,10 +266,10 @@ _.Zones =
 							["provider"] = { "n", 151825 },	-- Merithra of the Dream
 							["coord"] = { 46.5, 39.7, 1475 },
 							["sourceQuest"] = 55397,	-- Before I Wake
+							["cost"] = { { "i", 167875, 1 } },	-- Reforged Dreamglow Dragonscale (QI)
 							["lvl"] = 120,
 							["maps"] = { 1475 },	-- The Emerald Dream
 							["g"] = {
-								i(167875),	-- Reforged Dreamglow Dragonscale (QI)
 								i(168612, {	-- Dreamglow Dragonscale
 									{ ["azeriteEssenceID"] = 12 },	-- The Crusible of Flame (Rank 2)
 								}),
@@ -318,13 +337,13 @@ _.Zones =
 							["provider"] = { "n", 152720 },	-- Kalecgos
 							["coord"] = { 36.0, 50.5, 241 },
 							["sourceQuest"] = 56167,	-- Investigating the Highlands
+							["cost"] = { { "i", 168280, 1 } },	-- Lost Scale of the Scarlet Broodmother (QI)
 							["lvl"] = 120,
 							["maps"] = { 
 								241,	-- Twilight Highlands
 								1476,	-- Twilight Highlands (Szenario)
 							},
 							["g"] = {
-								i(168280),	-- Lost Scale of the Scarlet Broodmother (QI)
 								i(168613, {	-- Tempered Scale of the Scarlet Broodmother
 									{ ["azeriteEssenceID"] = 12 },	-- The Crusible of Flame (Rank 3)
 								}),
@@ -401,8 +420,8 @@ _.Zones =
 								56263,	-- Unlocking the Power (A)
 								56260,	-- Unlocking the Power (H)
 							},
-							["g"] = {
-								i(169292),	-- Charged Scale of the Blue Aspect (QI)
+							["cost"] = { { "i", 169292, 1 } },	-- Charged Scale of the Blue Aspect (QI)
+							["g"] = { 
 								i(168614, {	-- Charged Scale of the Blue Aspect
 									{ ["azeriteEssenceID"] = 12 },	-- The Crusible of Flame (Rank 4)
 								}),
@@ -417,7 +436,7 @@ _.Zones =
 								i(169768),	-- Heart of a Champion
 							},
 						}),
-						-- War Campain finished
+						-- War Campaign finished
 						q(56185, {	-- Whispers of N'zoth (A)
 							["provider"] = { "n", 154464 },	-- Earthen Guardian
 							["coord"] = { 74.9, 15.1, 1161 },
@@ -641,10 +660,11 @@ _.Zones =
 							["sourceQuest"] = 57402,	-- Reconstructing "The Curse of Stone"
 							["cost"] = { { "i", 174782, 1 } },	-- Fear and Flesh
 							["g"] = {
-								i(169223),	-- Ashjra'kamas, Shroud of Resolve (Rank 6 appearence)
-									--[[["modID"] = 11,
-									-- tested modids 7,6,11,5,62,4,3,23,22,14,8,151,1,
-								}),]]
+									
+								i(169223, {	-- Ashjra'kamas, Shroud of Resolve
+									["bonusID"] = 6277,	-- (Rank 6 appearence)
+								--	["modID"] = 11,	-- tested modIDs 7,6,11,5,62,4,3,23,22,14,8,151,1,
+								}),
 								i(171354),	-- Horrific Core
 							},
 						}),
@@ -698,6 +718,39 @@ _.Zones =
 								i(171354),	-- Horrific Core
 							},
 						}),
+						q(57398, {	-- Walking in the Darkness (Rank 12)
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57397,	-- Reconstructing "Fear and Flesh"
+							["cost"] = { { "i", 174784, 1 } },	-- The Final Truth
+							["g"] = {
+								i(169223, {	-- Ashjra'kamas, Shroud of Resolve
+									["bonusID"] = 6283,	 -- (Rank 12 Appearence)
+								}),
+								i(171355),	-- Voidborn Core
+							},
+						}),
+						q(57399, {	-- Reconstructing "The Final Truth" (Rank 13)
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57398,	-- Walking in the Darkness
+							["cost"] = { { "i", 174785, 4 } },	-- Torn Page of "The Final Truth"
+							["g"] = {
+								i(171355),	-- Voidborn Core
+							},
+						}),
+						q(57400, {	-- Reconstructing "The Final Truth" (Rank 14)
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57399,	-- Reconstructing "The Final Truth"
+							["cost"] = { { "i", 174785, 6 } },	-- Torn Page of "The Final Truth"
+							["g"] = {
+								i(171355),	-- Voidborn Core
+							},
+						}),
 						q(58631, {	-- Into Dreams
 							["lvl"] = 120,
 							["coord"] = { 50.1, 59.1, 1473 },
@@ -713,20 +766,8 @@ _.Zones =
 						q(58991, {	-- Curious Corruption
 							["description"] = "Automatically granted when you get your first corrupted item.",
 						}),
-						-- Void Focus quests here. Not sure where to put them right now
-						q(57275, {	-- Something in Your Mind
-							["provider"] = { "i", 171320 },
-							["description"] = "Can be made with any secondary crafting profession.",
-						}),
-						q(57276, {	-- Maintaining Focus
-							["lvl"] = 120,
-							["coord"] = { 46.1, 63.9, 1473 },
-							["provider"] = { "n", 155496 },	-- Wrathion
-							["sourceQuest"] = 57275,	-- Something in Your Mind
-							["cost"] = { { "i", 171176, 20 }, },	-- Shred of Insanity x20
-						}),
 					}),
-					n(-2,   {	-- Vendors
+					n(VENDORS, {
 						["lvl"] = 120,
 						["g"] = {
 							n(130216, {	-- Magni Bronzebeard
@@ -768,7 +809,7 @@ _.Zones =
 										["cost"] = { { "c", 1719, 25000 }, },	-- 25,000 Corrupted Mementos
 									}),
 									i(174361, {	-- Black Dragonscale Backpack
-										["cost"] = { { "c", 1719, 40000 }, },	-- 40,000 Corrupted Mementos
+										["cost"] = { { "c", 1719, 5000 }, },	-- 5,000 Corrupted Mementos
 									}),
 									i(174770, {	-- Wicked Swarmer
 										["cost"] = { { "c", 1719, 100000 }, },	-- 100,000 Corrupted Mementos

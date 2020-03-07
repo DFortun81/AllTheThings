@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, { 	-- Eastern Kingdoms
 		m(110, { 	-- Silvermoon City
-			n(-17, { 	-- Quests
+			n(QUESTS, {
 				q(9725,  {	-- A Demonstration of Loyalty
 					["u"] = 40,
 					["races"] = { 10 },	-- Blood Elf

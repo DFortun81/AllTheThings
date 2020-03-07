@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(535, {	-- Talador
-			n(-17, { 	-- Quests
+			n(QUESTS, {
 				n(-360, {	-- Arcane Sanctum
 					q(34631, {	-- An Audience With The Archmage
 						["provider"] = { "n", 79133 },	-- Foreman Eksos

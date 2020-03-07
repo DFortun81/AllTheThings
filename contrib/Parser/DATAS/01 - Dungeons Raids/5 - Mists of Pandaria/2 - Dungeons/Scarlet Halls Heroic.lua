@@ -11,7 +11,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			d(2, {	-- Heroic
 				["lvl"] = 90,
 				["g"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(31497, {	-- Just for Safekeeping, Of Course
 							["provider"] = { "n", 64764 },	-- Hooded Crusader
 							["g"] = {

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(57, {	-- Teldrassil
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(475,   {	-- A Troubling Breeze
 					["provider"] = { "n", 2078 },	-- Athridas Bearmantle
 					["coord"] = { 55.7, 51.9, 57 },
@@ -40,7 +40,7 @@ _.Zones =
 					["provider"] = { "n", 2083 },	-- Syral Bladeleaf
 					["coord"] = { 55.8, 50.4, 57 },
 					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = 171,	-- Alchemy
+					["requireSkill"] = ALCHEMY,
 				}),
 				q(2459,  {	-- Ferocitas the Dream Eater
 					["provider"] = { "n", 3567 },	-- Tallonkai Swiftroot

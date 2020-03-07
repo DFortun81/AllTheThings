@@ -5,9 +5,9 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(78, {	-- Un'Goro Crater
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(142377, {	-- Badly Broken Dark Spear
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["crs"] = {
 						9376,	-- Blazerunner
 						6510,	-- Bloodpetal Flayer
@@ -22,7 +22,7 @@ _.Zones =
 					},
 					["g"] = {
 						q(45044, {	-- Weapon No More
-							["requireSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = BLACKSMITHING,
 						}),
 					},
 				}),

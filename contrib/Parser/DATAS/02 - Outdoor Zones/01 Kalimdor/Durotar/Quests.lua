@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(1, {	-- Durotar
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(2161, {	-- A Peon's Budren
 					["u"] = 40,
 					["races"] = HORDE_ONLY,

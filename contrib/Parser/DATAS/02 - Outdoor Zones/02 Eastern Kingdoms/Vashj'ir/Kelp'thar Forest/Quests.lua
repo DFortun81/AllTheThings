@@ -6,7 +6,7 @@ _.Zones =
 	m(13, { 	-- Eastern Kingdoms
 		m(203, {	-- Vashj'ir
 			m(201, {	-- Kelp'thar Forest
-				n(-17,  {	-- Quests
+				n(QUESTS, {
 					q(25732, {	-- A Bone To Pick
 						["description"] = "Take the quest 'A Bone to Pick' from Budd, turn in all quests at the Smuggler's Scar cave, and then start killing Gilbin Collectors to get the quest 'Lady La-La's Medallion.'",
 						["provider"] = { "n", 46458 },	-- Budd

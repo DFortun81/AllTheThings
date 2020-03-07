@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(646, {	-- Broken Shore
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(118403, {	-- Syaith <Loaner Demon>
 					["description"] = "/kiss her during the Where There is a Whip... WQ.",
 					["coord"] = { 49.0, 55.8, 646 },

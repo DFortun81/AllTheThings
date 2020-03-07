@@ -17,7 +17,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["coord"] = { 83.0, 30.6, 390 },	-- Seat of Knowledge, Vale of Eternal Blossoms
 				["ignoreBonus"] = true,
 				["groups"] = {
-					n(-1, {	-- Common Boss Drop
+					n(COMMON_BOSS_DROPS, {
 						["groups"] = {
 							un(2, i(95618, {	-- Cache of Mogu Riches
 								["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
@@ -246,7 +246,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["ignoreBonus"] = true,
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
-					n(-0,  {	-- Common Zone Drop
+					n(ZONEDROPS, {
 						["crs"] = {
 							60047, 	-- Amethyst Guardian
 							60051, 	-- Cobalt Guardian
@@ -300,7 +300,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(87408),	-- Plans: Unyielding Bloodplate
 						},
 					}),
-					n(0,   {	-- Zone Drop
+					n(ZONEDROPS, {
 						i(86043),	-- Jade Bandit Figurine
 						i(86042),	-- Jade Charioteer Figurine
 						i(86045),	-- Jade Courtesan Figurine
@@ -492,7 +492,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["ignoreBonus"] = true,
 				["difficulties"] = { 5, 6 },
 				["g"] = {
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						["crs"] = {
 							60047, 	-- Amethyst Guardian
 							60051, 	-- Cobalt Guardian

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(69, {	-- Feralas
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(44381, {	-- Apprentice of Estulan <Enchanting Supplies>
 					["coord"] = { 56.8, 54.4, 69 },
 					["races"] = ALLIANCE_ONLY,

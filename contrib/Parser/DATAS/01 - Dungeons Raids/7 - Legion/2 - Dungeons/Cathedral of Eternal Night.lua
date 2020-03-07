@@ -31,7 +31,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			d(2, {	-- Heroic
-				n(0, {	-- Zone Drops
+				n(ZONEDROPS, {
 					i(147117, {	-- Orb of the Fel Temptress
 						["crs"] = {
 							118714,  -- Hellblaze Temptress
@@ -99,7 +99,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 			}),
 			d(23, {	-- Mythic
-				n(0, {	-- Zone Drops
+				n(ZONEDROPS, {
 					i(147514, {	-- Felguard Destroyer's Legplates
 						["crs"] = {
 							118704,	-- Dul'zak

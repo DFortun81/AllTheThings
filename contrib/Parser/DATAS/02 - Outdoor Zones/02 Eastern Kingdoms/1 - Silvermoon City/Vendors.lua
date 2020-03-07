@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(110, {	-- Silvermoon City
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					n(16631, {	-- Andra <Clothier>

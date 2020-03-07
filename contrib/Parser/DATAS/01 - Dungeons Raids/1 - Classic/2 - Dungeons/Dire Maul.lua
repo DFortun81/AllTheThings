@@ -16,7 +16,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				["coord"] = { 64.83, 30.24, 69 },	-- Dire Maul [East], Feralas
 				["g"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(27104, {	-- Alzzin the Wildshaper
 							["provider"] = { "n", 44969 },	-- Furgus Warpwood
 							["g"] = {
@@ -32,7 +32,7 @@ _.Instances = { tier(1, {	-- Classic
 						q(7651, {	-- Enchanted Thorium Platemail: Volume III
 							["u"] = 40,
 							["itemID"] = 18771, -- revisit. Maybe swap this with quest?
-							["requireSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = BLACKSMITHING,
 							["g"] = {
 								un(2, i(12725)),	-- Plans: Enchanted Thorium Helm
 							},
@@ -92,7 +92,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 44969 },	-- Furgus Warpwood
 						}),
 					}),
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
 							["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.  It can be found in various places throughout all the wings of Dire Maul.\n\nDire Maul North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\nDire Maul East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\nDire Maul West: By the southern generator in Immol'thar's room.\n",
 						}),
@@ -209,7 +209,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				["coord"] = { 62.48, 24.48, 69 },	-- Dire Maul [North], Feralas
 				["g"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						o(179485, {	-- A Broken Trap
 							["model"] = 199580,
 							["g"] = {
@@ -372,7 +372,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 					}),
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
 							["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.  It can be found in various places throughout all the wings of Dire Maul.\n\nDire Maul North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\nDire Maul East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\nDire Maul West: By the southern generator in Immol'thar's room.\n",
 						}),
@@ -501,10 +501,10 @@ _.Instances = { tier(1, {	-- Classic
 				["coord"] = { 60.32, 30.17, 69 },	-- Dire Maul [West], Feralas
 				["description"] = "This is the instance on the left side.",
 				["g"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(7650, {	-- Enchanted Thorium Platemail: Volume II
 							["u"] = 40,
-							["requireSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = BLACKSMITHING,
 							["g"] = {
 								un(2, i(12726)),	-- Plans: Enchanted Thorium Leggings
 							},
@@ -615,12 +615,12 @@ _.Instances = { tier(1, {	-- Classic
 							["u"] = 40,
 						}),
 					}),
-					n(-2, {	-- Vendors
+					n(VENDORS, {
 						n(14371, {	-- Shen'dralar Provisioner
 							i(18487),	-- Pattern: Mooncloth Robe
 						}),
 					}),
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
 							["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.  It can be found in various places throughout all the wings of Dire Maul.\n\nDire Maul North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\nDire Maul East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\nDire Maul West: By the southern generator in Immol'thar's room.\n",
 						}),

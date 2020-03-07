@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(1355, {	-- Nazjatar
-		n(-16, {	-- Rares
+		n(RARES, {
 			n(152415, { -- Alga the Eyeless
 				["questID"] = 56279, 
 				["isDaily"] = true,

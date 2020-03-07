@@ -13,19 +13,19 @@ _.PVP =
 					{	-- Pattern: Imbued Silkweave Epaulets (Rank 3)
 						["itemID"] = 137975,	-- Pattern: Imbued Silkweave Epaulets
 						["description"] = "This has a CHANCE to drop from any rated battleground win.",
-						["requireSkill"] = 197,	-- Tailoring
+						["requireSkill"] = TAILORING,
 					},
 					i(123950, {	-- Recipe: Demonsteel Pauldrons (Rank 3)
 						["description"] = "This has a CHANCE to drop from any rated battleground win.",
-						["requireSkill"] = 164,	-- Blacksmithing
+						["requireSkill"] = BLACKSMITHING,
 					}),
 					i(137894, {	-- Recipe: Dreadleather Shoulderguard (Rank 3)
 						["description"] = "This has a CHANCE to drop from any rated battleground win.",
-						["requireSkill"] = 165,	-- Leatherworking
+						["requireSkill"] = LEATHERWORKING,
 					}),
 					i(137926, {	-- Recipe: Gravenscale Spaulders (Rank 3)
 						["description"] = "This has a CHANCE to drop from any rated battleground win.",
-						["requireSkill"] = 165,	-- Leatherworking
+						["requireSkill"] = LEATHERWORKING,
 					}),
 				},
 			},

@@ -2,7 +2,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(102, {	-- Zangarmarsh
-			n(-16,  {	-- Rares
+			n(RARES, {
 				n(18682, {	-- Bog Lurker
 					["coords"] = {
 						{ 23.0, 21.4, 102 },

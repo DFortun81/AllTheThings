@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(876, {	-- Kul'Tiras
 		m(1161, {	-- Boralus
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(161565, {	-- Bragni <Profession Liason>
 					["coord"] = { 56.3, 27.2, 1161 },
 					["races"] = ALLIANCE_ONLY,
@@ -313,53 +313,148 @@ _.Zones =
 						-- TODO: These crates rotate every week and contain 3-4 random items from the related island expedition. Should we map all the items here?
 						i(173950, {	-- Crestfall Salvage
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+							--[[
 							["sym"] = {
 								{"sub", "islandexpeditions_sets", -46, -3347 },	-- Plate / Black Tooth Grunt Set
 								{"sub", "islandexpeditions_sets", -46, -3337 },	-- Plate / Twilight Dragon Set
 							},
+							]]--
 							["g"] = {
-								-- Mounts
-								i(166468),	-- Bloodgorged Hunter
-								i(163583),	-- Craghorn Chasm-Leaper
-								i(163586),	-- Squawks
-								i(166470),	-- Stonehide Elderhorn
-								i(163585),	-- Surf Jelly
-								i(163584),	-- Twilight Avenger
-								-- Pets
-								i(163798),	-- Captain Nibs
-								i(169205),	-- Ghostly Whelpling
+								n(-3347, {	-- Black Tooth Grunt
+									i(169284),	-- Black Tooth Grunt's Helm
+									i(169286),	-- Black Tooth Grunt's Pauldrons
+									i(169281),	-- Black Tooth Grunt's Breastplate
+									i(169288),	-- Black Tooth Grunt's Armplates
+									i(169282),	-- Black Tooth Grunt's Crushers
+									i(169283),	-- Black Tooth Grunt's Greatbelt
+									i(169285),	-- Black Tooth Grunt's Legplates
+									i(169287),	-- Black Tooth Grunt's Warboots
+								}),
+								n(-3337, {	-- Twilight Dragon
+									i(164406),	-- Twilight Dragon's Helm
+									i(164408),	-- Twilight Dragon's Pauldrons
+									i(164403),	-- Twilight Dragon's Breastplate
+									i(164410),	-- Twilight Dragon's Armplates
+									i(164404),	-- Twilight Dragon's Crushers
+									i(164405),	-- Twilight Dragon's Greatbelt
+									i(164407),	-- Twilight Dragon's Legplates
+									i(164409),	-- Twilight Dragon's Warboots
+								}),
+								n(-160, {	-- Mounts
+									i(166468),	-- Bloodgorged Hunter
+									i(163583),	-- Craghorn Chasm-Leaper
+									i(163586),	-- Squawks
+									i(166470),	-- Stonehide Elderhorn
+									i(163585),	-- Surf Jelly
+									i(163584),	-- Twilight Avenger
+								}),
+								n(-162, {	-- Pets
+									i(163798),	-- Captain Nibs
+									i(169205),	-- Ghostly Whelpling
+								}),
 							},
 						}),
 						i(173949, {	-- Dread Chain Salvage
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+							--[[
 							["sym"] = {
 								{"sub", "islandexpeditions_sets", -43, -3317 },	-- Cloth / Frostwind Set
 								{"sub", "islandexpeditions_sets", -44, -3322 },	-- Leather / Miststalker Set
 								{"sub", "islandexpeditions_sets", -46, -3334 },	-- Plate / Tomb-Keeper Set
 							},
+							]]--
 							["g"] = {
-								i(163583),	-- Craghorn Chasm-Leaper
-								i(163582),	-- Qinsho's Eternal Hound
-								i(166470),	-- Stonehide Elderhorn
+								n(-3317, {	-- Frostwind
+									i(164508),	-- Frostwind Cowl
+									i(164513),	-- Frostwind Mantle
+									i(164511),	-- Frostwind Vestments
+									i(164514),	-- Frostwind Bracers
+									i(164509),	-- Frostwind Gloves
+									i(164507),	-- Frostwind Cord
+									i(164510),	-- Frostwind Pants
+									i(164512),	-- Frostwind Anklewraps
+								}),
+								n(-3322, {	-- Miststalker
+									i(164567),	-- Miststalker's Hood
+									i(164569),	-- Miststalker's Shoulderpads
+									i(164568),	-- Miststalker's Jerkin
+									i(164563),	-- Miststalker's Bindings
+									i(164566),	-- Miststalker's Grasps
+									i(164570),	-- Miststalker's Belt
+									i(164565),	-- Miststalker's Pants
+									i(164564),	-- Miststalker's Waders
+								}),
+								n(-3334, {	-- Tomb-Keeper
+									i(164462),	-- Tomb-Keeper's Helm
+									i(164464),	-- Tomb-Keeper's Spaulders
+									i(164459),	-- Tomb-Keeper's Breastplate
+									i(164466),	-- Tomb-Keeper's Wristplates
+									i(164460),	-- Tomb-Keeper's Gauntlets
+									i(164461),	-- Tomb-Keeper's Girdle
+									i(164463),	-- Tomb-Keeper's Legguards
+									i(164465),	-- Tomb-Keeper's Sabatons
+								}),
+								n(-160, {	-- Mounts
+									i(163583),	-- Craghorn Chasm-Leaper
+									i(163582),	-- Qinsho's Eternal Hound
+									i(166470),	-- Stonehide Elderhorn
+								}),
 							},
 						}),
 						i(173988, {	-- Havenswood Salvage
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+							--[[
 							["sym"] = {
 								{"sub", "islandexpeditions_sets", -43, -3340 },	-- Cloth / Dark Animator Set
 								{"sub", "islandexpeditions_sets", -43, -3341 },	-- Cloth / Duskhaven Set
 								{"sub", "islandexpeditions_sets", -43, -3318 },	-- Cloth / Faceless Follower Set
 							},
+							]]--
 							["g"] = {
-								-- Mounts
-								i(166466),	-- Risen Mare
-								i(166470),	-- Stonehide Elderhorn - wowhead
-								-- Pets
-								i(166494),	-- Lord Woofington
+								n(-3340, {	-- Dark Animator
+									i(166828),	-- Dark Animator's Cowl
+									i(166825),	-- Dark Animator's Mantle
+									i(166824),	-- Dark Animator's Robe
+									i(166829),	-- Dark Animator's Bracers
+									i(166827),	-- Dark Animator's Gloves
+									i(166822),	-- Dark Animator's Belt
+									i(166826),	-- Dark Animator's Pants
+									i(166823),	-- Dark Animator's Boots
+								}),
+								n(-3341, {	-- Duskhaven
+									i(166844),	-- Duskhaven Top Hat
+									i(166831),	-- Duskhaven Dress
+									i(166833),	-- Duskhaven Jacket
+									i(166834),	-- Duskhaven Breeches
+									i(166832),	-- Duskhaven Boots
+									i(166830),	-- Duskhaven Slippers
+								}),
+								n(-3318, {	-- Faceless Follower
+									i(164484),	-- Faceless Follower's Guise
+									i(164489),	-- Faceless Follower's Mantle
+									i(164487),	-- Faceless Follower's Vestments
+									i(164490),	-- Faceless Follower's Armbands
+									i(164485),	-- Faceless Follower's Gloves
+									i(164483),	-- Faceless Follower's Waistcord
+									i(164486),	-- Faceless Follower's Legwraps
+									i(164488),	-- Faceless Follower's Sandals
+								}),
+								n(-160, {	-- Mounts
+									i(166466),	-- Risen Mare
+									i(166470),	-- Stonehide Elderhorn
+								}),
+								n(-162, {	-- Pets
+									i(163809),	-- Deathsting Scorpid
+									i(166494),	-- Lord Woofington
+								}),
+								n(-319, {	-- Weapons
+									i(164363),	-- Plundered Darkblade of the Old Gods
+								}),
 							},
 						}),
 						i(173989, {	-- Jorundall Salvage
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+							--[[
 							["sym"] = {
 								{"sub", "islandexpeditions_sets", -44, -3343 },	-- Leather / Choking Winter Set (Frosthoof)
 								{"sub", "islandexpeditions_sets", -44, -3342 },	-- Leather / Fallen Runelord Set
@@ -367,123 +462,398 @@ _.Zones =
 								{"sub", "islandexpeditions_sets", -46, -3335 },	-- Plate / Bloodwake Set
 								{"sub", "islandexpeditions_sets", -46, -3345 },	-- Plate / Sanctified Scourgelord's Plate Set (Sleetguard)
 							},
+							]]--
 							["g"] = {
-								-- Mounts
-								i(166468),	-- Bloodgorged Hunter
-								i(166467),	-- Island Thunderscale
-								i(166470),	-- Stonehide Elderhorn
-								i(163585),	-- Surf Jelly
-								-- Pets
-								i(166499),	-- Thunderscale Whelpling
+								n(-3343, {	-- Choking Winter (partial set)
+									["description"] = "These pieces were added to fill out a previously incomplete set called Choking Winter's Garb.  The rest of the set is available from sources outside of Island Expeditions.",
+									["g"] = {
+										i(166836),	-- Frosthoof Gloves
+										i(166835),	-- Frosthood Waistcord
+									},
+								}),
+								n(-3342, {	-- Fallen Runelord
+									i(166818),	-- Fallen Runelord's Cowl
+									i(166815),	-- Fallen Runelord's Shoulders
+									i(166816),	-- Fallen Runelord's Robe
+									i(166820),	-- Fallen Runelord's Bracers
+									i(166817),	-- Fallen Runelord's Gloves
+									i(166821),	-- Fallen Runelord's Belt
+									i(166819),	-- Fallen Runelord's Breeches
+									i(166814),	-- Fallen Runelord's Striders
+								}),
+								n(-3344, {	-- Frostsworn Bone Mail  (partial set)
+									["description"] = "These pieces were added to fill out a previously incomplete recolor of the Frostsworn Bone Mail set.  The rest of the set is available from sources outside of Island Expeditions.",
+									["g"] = {
+										i(166840),	-- Winterscale Spaulders
+										i(166839),	-- Winterscale Waistguard
+									},
+								}),
+								n(-3335, {	-- Bloodwake
+									i(164534),	-- Bloodwake Helmet
+									i(164536),	-- Bloodwake Spaulders
+									i(164531),	-- Bloodwake Breastplate
+									i(164538),	-- Bloodwake Bracers
+									i(164532),	-- Bloodwake Gauntlets
+									i(164533),	-- Bloodwake Girdle
+									i(164535),	-- Bloodwake Legplates
+									i(164537),	-- Bloodwake Sabatons
+								}),
+								n(-3345, {	-- Sanctified Scourgelord's Plate (partial set)
+									["description"] = "These pieces were added to fill out a previously incomplete recolor of the Sanctified Scourgelord's Plate set.  The rest of the set is available from sources outside of Island Expeditions.",
+									["g"] = {
+										i(166837),	-- Sleetguard Greatbelt
+										i(166838),	-- Sleetguard Warboots
+									},
+								}),
+								n(-160, {	-- Mounts
+									i(166468),	-- Bloodgorged Hunter
+									i(163583),	-- Craghorn Chasm-Leaper 
+									i(166467),	-- Island Thunderscale
+									i(166470),	-- Stonehide Elderhorn
+									i(163585),	-- Surf Jelly
+								}),
+								n(-162, {	-- Pets
+									i(166492),	-- Shadefeather Hatchling
+									i(166499),	-- Thunderscale Whelpling
+								}),
 							},
 						}),
 						i(173991, {	-- Rotting Mire Salvage
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+							--[[
 							["sym"] = {
 								{"sub", "islandexpeditions_sets", -45, -3328 },	-- Mail / Saurok Set
 								{"sub", "islandexpeditions_sets", -46, -3333 },	-- Plate / Razorfin Set
 							},
+							]]--
 							["g"] = {
-								-- Mounts
-								i(166468),	-- Bloodgorged Hunter
-								i(163586),	-- Squawks
-								i(166470),	-- Stonehide Elderhorn
-								i(163585),	-- Surf Jelly
-								-- Pets
-								i(163799),	-- Barnaby
-								i(163798),	-- Captain Nibs
+								n(-3328, {	-- Saurok
+									i(164503),	-- Saurok Scale Headgear
+									i(164505),	-- Saurok Scale Pauldrons
+									i(164506),	-- Saurok Scale Chainmail [Verdant Wilds]
+									i(164500),	-- Saurok Scale Bindings
+									i(164501),	-- Saurok Scale Grips
+									i(164499),	-- Saurok Scale Belt
+									i(164504),	-- Saurok Scale Greaves
+									i(164502),	-- Saurok Scale Boots
+								}),
+								n(-3333, {	-- Razorfin
+									i(164438),	-- Razorfin Helm
+									i(164440),	-- Razorfin Shoulderguards
+									i(164435),	-- Razorfin Battleplate
+									i(164442),	-- Razorfin Vambraces
+									i(164436),	-- Razorfin Gauntlets
+									i(164437),	-- Razorfin Greatbelt
+									i(164439),	-- Razorfin Legplates
+									i(164441),	-- Razorfin Warboots
+								}),
+								n(-160, {	-- Mounts
+									i(166468),	-- Bloodgorged Hunter
+									i(163586),	-- Squawks
+									i(166470),	-- Stonehide Elderhorn
+									i(163585),	-- Surf Jelly
+								}),
+								n(-162, {	-- Pets
+									i(163799),	-- Barnaby
+									i(163798),	-- Captain Nibs
+									i(166493),	-- Firesting Buzzer
+								}),
+								n(-319, {	-- Weapons
+									i(164304),	-- Plundered Celestial Finblade
+								}),
 							},
 						}),
-						i(173992, {	-- Skitting Hollow Salvage
+						i(173992, {	-- Skittering Hollow Salvage
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+							--[[
 							["sym"] = {
-								{"sub", "islandexpeditions_sets", -43, -3315 },	-- Cloth / Spider Acolyte Set - wowhead
+								{"sub", "islandexpeditions_sets", -43, -3315 },	-- Cloth / Spider Acolyte Set
 							},
+							]]--
 							["g"] = {
-								-- Mounts
-								i(163583),	-- Craghorn Chasm-Leaper - wowhead
-								i(166470),	-- Stonehide Elderhorn - wowhead
+								n(-3315, {	-- Spider Acolyte
+									i(164476),	-- Spider Acolyte's Cowl
+									i(164481),	-- Spider Acolyte's Amice
+									i(164479),	-- Spider Acolyte's Robes
+									i(164482),	-- Spider Acolyte's Wristwraps
+									i(164477),	-- Spider Acolyte's Handwraps
+									i(164475),	-- Spider Acolyte's Cord
+									i(164478),	-- Spider Acolyte's Leggings
+									i(164480),	-- Spider Acolyte's Anklewraps
+								}),
+								n(-160, {	-- Mounts
+									i(163583),	-- Craghorn Chasm-Leaper - wowhead
+									i(166470),	-- Stonehide Elderhorn - wowhead
+								}),
 							},
 						}),
 						i(173993, {	-- Snowblossom Salvage
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
+							--[[
 							["sym"] = {
 								{"sub", "islandexpeditions_sets", -43, -3319 },	-- Cloth / Swarmfury Set
 								{"sub", "islandexpeditions_sets", -46, -3334 },	-- Plate / Tomb-Keeper's Set
 							},
+							]]--
 							["g"] = {
-								-- Mounts
-								i(163582),	-- Qinsho's Eternal Hound - wowhead
-								i(166470),	-- Stonehide Elderhorn - wowhead
-								-- Pets
-								i(169322),	-- Adventurous Hopling Pack
+								n(-3319, {	-- Swarmfury
+									i(164452),	-- Swarmfury Crown
+									i(164457),	-- Swarmfury Amice
+									i(164455),	-- Swarmfury Raiment
+									i(164458),	-- Swarmfury Armbands
+									i(164453),	-- Swarmfury Gloves
+									i(164451),	-- Swarmfury Waistcord
+									i(164454),	-- Swarmfury Legwraps
+									i(164456),	-- Swarmfury Footwraps
+								}),
+								n(-3334, {	-- Tomb-Keeper
+									i(164462),	-- Tomb-Keeper's Helm
+									i(164464),	-- Tomb-Keeper's Spaulders
+									i(164459),	-- Tomb-Keeper's Breastplate
+									i(164466),	-- Tomb-Keeper's Wristplates
+									i(164460),	-- Tomb-Keeper's Gauntlets
+									i(164461),	-- Tomb-Keeper's Girdle
+									i(164463),	-- Tomb-Keeper's Legguards
+									i(164465),	-- Tomb-Keeper's Sabatons
+								}),
+								n(-319, {	-- Weapons
+									i(168644),	-- Converted Carrot Carbine
+									i(164282),	-- Plundered Jadefury Shield
+									i(164335),	-- Plundered Paragon's Mace
+									i(164284),	-- Plundered Poleaxe of Intimidation
+								}),
+								n(-160, {	-- Mounts
+									i(163582),	-- Qinsho's Eternal Hound - wowhead
+									i(166470),	-- Stonehide Elderhorn - wowhead
+								}),
+								n(-162, {	-- Pets
+									i(169322),	-- Adventurous Hopling Pack
+									i(163815),	-- Littlehoof
+									i(163810),	-- Thistlebrush Bud
+								}),
 							},
 						}),
 						i(173990, {	-- Molten Cay Salvage
 							["cost"] = { { "c", 1710, 120 }, },	-- 120x Seafarer's Dubloons
+							--[[
 							["sym"] = {
 								{"sub", "islandexpeditions_sets", -45, -3331 },	-- Mail / Voodoo Stalker Set - wowhead
 								{"sub", "islandexpeditions_sets", -45, -3326 },	-- Mail / Wild Marauder Set - wowhead
 								{"sub", "islandexpeditions_sets", -46, -3336 },	-- Plate / Rattling Bone Set - wowhead
 							},
+							]]--
 							["g"] = {
-								i(166470),	-- Stonehide Elderhorn - wowhead
+								n(-3331, {	-- Voodoo Stalker - wowhead
+									i(164519),	-- Voodoo Stalker's Mask
+									i(164521),	-- Voodoo Stalker's Mantle
+									i(164522),	-- Voodoo Stalker's Chestguard
+									i(164516),	-- Voodoo Stalker's Vambraces
+									i(164517),	-- Voodoo Stalker's Gloves
+									i(164515),	-- Voodoo Stalker's Belt
+									i(164520),	-- Voodoo Stalker's Legguards
+									i(164518),	-- Voodoo Stalker's Boots
+								}),
+								n(-3326, {	-- Wild Marauder - wowhead
+									i(164543),	-- Wild Marauder Helm
+									i(164545),	-- Wild Marauder Pauldrons
+									i(164546),	-- Wild Marauder Chainmail
+									i(164540),	-- Wild Marauder Bracers
+									i(164541),	-- Wild Marauder Glovs
+									i(164539),	-- Wild Marauder Chain
+									i(164544),	-- Wild Marauder Breeches
+									i(164542),	-- Wild Marauder Boots
+								}),
+								n(-3336, {	-- Rattling Bone - wowhead
+									i(164526),	-- Rattling Bone Mask
+									i(164528),	-- Rattling Bone Spaulders
+									i(164523),	-- Rattling Bone Hauberk
+									i(164530),	-- Rattling Bone Armplates
+									i(164524),	-- Rattling Bone Crushers
+									i(164525),	-- Rattling Bone Greatbelt
+									i(164527),	-- Rattling Bone Legguards
+									i(164529),	-- Rattling Bone Warboots
+								}),
+								n(-160, {	-- Mounts
+									i(166470),	-- Stonehide Elderhorn - wowhead
+								}),
+								n(-162, {	-- Pets
+									i(163817),	-- Sunscale Hatchling
+								}),
 							},
 						}),
 						i(173994, {	-- Un'gol Ruins Salvage
 							["cost"] = { { "c", 1710, 120 }, },	-- 120 Seafarer's Dubloons
+							--[[
 							["sym"] = {
 								{"sub", "islandexpeditions_sets", -44, -3321 },	-- Leather / Tranquil Path Set
 								{"sub", "islandexpeditions_sets", -45, -3330 },	-- Mail / Headshrinker Set
 							},
+							]]--
 							["g"] = {
-								-- Mounts
-								i(166470),	-- Stonehide Elderhorn - wowhead
-								-- Toys
-								i(164375),	-- Bad Mojo Banana
-								i(164374),	-- Magic Monkey Banana
-								i(163795),	-- Oomgut Ritual Drum
+								n(-3321, {	-- Tranquil Path
+									i(164431),	-- Helm of the Tranquil Path
+									i(164433),	-- Shoulderpads of the Tranquil Path
+									i(164432),	-- Vest of the Tranquil Path
+									i(164427),	-- Bindings of the Tranquil Path
+									i(164430),	-- Gloves of the Tranquil Path
+									i(164434),	-- Waistcord of the Tranquil Path
+									i(164429),	-- Leggings of the Tranquil Path
+									i(164428),	-- Footpads of the Tranquil Path
+								}),
+								n(-3330, {	-- Headshrinker
+									i(164495),	-- Headshrinker's Cowl
+									i(164497),	-- Headshrinker's Shoulders
+									i(164498),	-- Headshrinker's Vestments
+									i(164492),	-- Headshrinker's Wristguards
+									i(164493),	-- Headshrinker's Grips
+									i(164491),	-- Headshrinker's Waistguard
+									i(164496),	-- Headshrinker's Legguards
+									i(164494),	-- Headshrinker's Boots
+								}),
+								n(-160, {	-- Mounts
+									i(166470),	-- Stonehide Elderhorn - wowhead
+								}),
+								n(-161, {	-- Toys
+									i(164375),	-- Bad Mojo Banana
+									i(164374),	-- Magic Monkey Banana
+									i(163795),	-- Oomgut Ritual Drum
+								}),
 							},
 						}),
 						i(173996, {	-- Verdant Wilds Salvage
 							["cost"] = { { "c", 1710, 120 }, },	-- 120 Seafarer's Dubloons
+							--[[
 							["sym"] = {
 								{"sub", "islandexpeditions_sets", -44, -3324 },	-- Leather / Feralbark Set
 								{"sub", "islandexpeditions_sets", -44, -3320 },	-- Leather / Spiritbough Set
 							},
+							]]--
 							["g"] = {
-								-- Mounts
-								i(166470),	-- Stonehide Elderhorn - wowhead
+								n(-3324, {	-- Feralbark
+									i(164391),	-- Feralbark Cover
+									i(164393),	-- Feralbark Shoulders
+									i(164392),	-- Feralbark Raiment
+									i(164387),	-- Feralbark Bindings
+									i(164390),	-- Feralbark Gloves
+									i(164394),	-- Feralbark Belt
+									i(164389),	-- Feralbark Breeches
+									i(164388),	-- Feralbark Striders
+								}),
+								n(-3320, {	-- Spiritbough
+									i(164447),	-- Spiritbough Crown
+									i(164449),	-- Spiritbough Mantle
+									i(164448),	-- Spiritbough Chestguard
+									i(164443),	-- Spiritbough Bindings
+									i(164446),	-- Spiritbough Grasps
+									i(164450),	-- Spiritbough Belt
+									i(164445),	-- Spiritbough Breeches
+									i(164444),	-- Spiritbough Striders
+								}),
+								n(-160, {	-- Mounts
+									i(166470),	-- Stonehide Elderhorn - wowhead
+								}),
 							},
 						}),
 						i(173997, {	-- Whispering Reef Salvage Salvage
 							["cost"] = { { "c", 1710, 120 }, },	-- 120 Seafarer's Dubloons
+							--[[
 							["sym"] = {
 								{"sub", "islandexpeditions_sets", -45, -3329 },	-- Mail / Mrrglurggl Set
 							},
+							]]--
 							["g"] = {
-								-- Mounts
-								i(166470),	-- Stonehide Elderhorn - wowhead
-								i(163823),	-- Coldlight Surfrunner - wowhead
-								i(163821),	-- Juvenile Brineshell - wowhead
-								-- Pets
-								i(163823),	-- Coldlight Surfrunner
-								i(163821),	-- Juvenile Brineshell
+								n(-3329, {	-- Mrrglurggl
+									i(164471),	-- Mrrglurggl Helm
+									i(164473),	-- Mrrglurggl Spaulders
+									i(164474),	-- Mrrglurggl Hauberk
+									i(164468),	-- Mrrglurggl Bindings
+									i(164469),	-- Mrrglurggl Grips
+									i(164467),	-- Mrrglurggl Girdle
+									i(164472),	-- Mrrglurggl Legguards
+									i(164470),	-- Mrrglurggl Boots
+								}),
+								n(-160, {	-- Mounts
+									i(166470),	-- Stonehide Elderhorn - wowhead
+									i(163823),	-- Coldlight Surfrunner - wowhead
+									i(163821),	-- Juvenile Brineshell - wowhead
+								}),
+								n(-162, {	-- Pets
+									i(163823),	-- Coldlight Surfrunner
+									i(163821),	-- Juvenile Brineshell
+								}),
 							},
 						}),
 						i(173987, {	-- Elemental Salvage
 							["cost"] = { { "c", 1710, 75 }, },	-- 75 Seafarer's Dubloons
+							--[[
 							["sym"] = {
-								{"sub", "islandexpeditions_sets", -43, -3316 },	-- Cloth / Hydraxian Set - wowhead
+								{"sub", "islandexpeditions_sets", -43, -3316 },	-- Cloth / Hydraxian Set
 								{"sub", "islandexpeditions_sets", -44, -3325 },	-- Leather / Firekin Set - wowhead
 								{"sub", "islandexpeditions_sets", -44, -3323 },	-- Leather / Whirling Dervish Set - wowhead
 								{"sub", "islandexpeditions_sets", -46, -3332 },	-- Plate / Geocrag Set - wowhead
 							},
+							]]--
+							["g"] = {
+								n(-3316, {	-- Hydraxian - wowhead
+									i(164412),	-- Hydraxian Cover
+									i(164417),	-- Hydraxian Mantle
+									i(164415),	-- Hydraxian Robes
+									i(164418),	-- Hydraxian Armbands
+									i(164413),	-- Hydraxian Handwraps
+									i(164411),	-- Hydraxian Waistcord
+									i(164414),	-- Hydraxian Legwraps
+									i(164416),	-- Hydraxian Slippers
+								}),
+								n(-3325, {	-- Firekin - wowhead
+									i(164559),	-- Firekin Headgear
+									i(164561),	-- Firekin Amice
+									i(164560),	-- Firekin Robes
+									i(164555),	-- Firekin Bindings
+									i(164558),	-- Firekin Gloves
+									i(164562),	-- Firekin Belt
+									i(164557),	-- Firekin Breeches
+									i(164556),	-- Firekin Boots
+								}),
+								n(-3323, {	-- Whirling Dervish - wowhead
+									i(164551),	-- Whirling Dervish Turban
+									i(164553),	-- Whirling Dervish Shoulders
+									i(164552),	-- Whirling Dervish Vest
+									i(164547),	-- Whirling Dervish Bindings
+									i(164550),	-- Whirling Dervish Gloves
+									i(164554),	-- Whirling Dervish Belt
+									i(164549),	-- Whirling Dervish Breeches
+									i(164548),	-- Whirling Dervish Striders
+								}),
+								n(-3332, {	-- Geocrag - wowhead
+									i(164422),	-- Geocrag Helm
+									i(164424),	-- Geocrag Spaulders
+									i(164419),	-- Geocrag Chestplate
+									i(164426),	-- Geocrag Armplates
+									i(164420),	-- Geocrag Grips
+									i(164421),	-- Geocrag Girdle
+									i(164423),	-- Geocrag Legguards
+									i(164425),	-- Geocrag Stompers
+								}),
+							},
 						}),
 						i(173995, {	-- Venture Co 'Salvage'
 							["cost"] = { { "c", 1710, 50 }, },	-- 50 Seafarer's Dubloons
+							--[[
 							["sym"] = {
 								{"sub", "islandexpeditions_sets", -45, -3327 },	-- Mail / Dragonrider Set		
+							},
+							]]--
+							["g"] = {
+								n(-3327, {	-- Dragonrider
+									i(164399),	-- Dragonrider's Helmet
+									i(164401),	-- Dragonrider's Spaulders
+									i(164402),	-- Dragonrider's Harness
+									i(164396),	-- Dragonrider's Wristguards
+									i(164397),	-- Dragonrider's Grips
+									i(164395),	-- Dragonrider's Waistguard
+									i(164400),	-- Dragonrider's Legguards
+									i(164398),	-- Dragonrider's Boots
+								}),
 							},
 						}),
 					},
@@ -565,7 +935,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(168024, {	-- Recipe: Iwen's Enchanting Rod
-							["cost"] = 8800000,	-- 880g
+							["sourceQuest"] = 54002,	-- Putting it All Together
 						}),
 					},
 				}),
@@ -574,7 +944,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(166422, {	-- Recipe: Silas' Sphere of Transmutation
-							["cost"] = 9350000,	-- 935g
+							["sourceQuest"] = 50129,	-- A Recipe for Success (A)
 						}),
 					},
 				}),
@@ -583,7 +953,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(168022, {	-- Recipe: Khaz'gorian Smithing Hammer
-							["cost"] = 9350000,	-- 935g
+							["sourceQuest"] = 50275,	-- Anvil's Away (A)
 						}),
 					},
 				}),
@@ -592,7 +962,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(168025, {	-- Book of Schematics: Ub3r-Spanner
-							["cost"] = 9900000,	-- 990g
+							["sourceQuest"] = 53949,	-- The Ub3r-Spanner (A)
 						}),
 					},
 				}),
@@ -1223,7 +1593,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(168027, {	-- Recipe: Jewelhammer's Focus
-							["cost"] = 9350000,	-- 935g
+							["sourceQuest"] = 49584,	-- The Missing Chapter (A)
 						}),
 					},
 				}),

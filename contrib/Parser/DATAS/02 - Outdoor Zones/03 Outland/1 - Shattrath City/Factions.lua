@@ -9,7 +9,7 @@ _.Zones =
 				faction(1011, {	-- Lower City
 					["creatureID"] = 21655,	-- Nakodu <Lower City Quartermaster>
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(10917,  {  -- The Outcast's Plight
 								["provider"] = { "n", 22429 },	-- Vekax
 								["g"] = {
@@ -44,7 +44,7 @@ _.Zones =
 								},
 							}),
 						}),
-						n(-2,  {	-- Vendors
+						n(VENDORS, {
 							n(21655, {	-- Nakodu <Lower City Quartermaster>
 								["coord" ] = { 62.6, 69.0, 111 },
 								["g"] = {
@@ -189,7 +189,7 @@ _.Zones =
 				faction(932,  {	-- The Aldor
 					["creatureID"] = 19321,	-- Quartermaster Endarin <Aldor Quartermaster>
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(10551, {	-- Allegiance to the Aldor
 								["sourceQuest"] = 10211,	-- City of Light
 								["coord"] = { 54.7, 44.3, 111 },
@@ -287,7 +287,7 @@ _.Zones =
 								["provider"] = { "n", 18597 },	-- Sha'nir
 							}),
 						}),
-						n(-2,  {	-- Vendors
+						n(VENDORS, {
 							n(20616, {	-- Asuur <Keeper of Sha'tari Artifacts>
 								["coord"] = { 23.6, 32.6, 111 },
 								["g"] = {
@@ -905,7 +905,7 @@ _.Zones =
 				faction(934,  {	-- The Scryers
 					["creatureID"] = 19331,	-- Quartermaster Enuril <Scryer Quartermaster>
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(10552, {	-- Allegiance to the Scryers
 								["sourceQuest"] = 10211,	-- City of Light
 								["coord"] = { 54.7, 44.3, 111 },
@@ -997,7 +997,7 @@ _.Zones =
 								["lvl"] = 70,
 							}),
 						}),
-						n(-2,  {	-- Vendors
+						n(VENDORS, {
 							n(23483, {	-- Arcanist Xorith
 								["coord"] = { 60.6, 63.6, 111 },
 								["g"] = {
@@ -1625,7 +1625,7 @@ _.Zones =
 								i(31746) -- Phoenix-Fire Band
 							},
 						}),
-						n(-2,  {	-- Vendors
+						n(VENDORS, {
 							n(21432, {	-- Almaador <Sha'tari Quartermaster>
 								["coord"] = { 51.6, 41.6, 111 },
 								["g"] = {

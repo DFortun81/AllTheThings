@@ -16,7 +16,7 @@ _.Zones =
 				filter(101, {	-- Battle Pet
 					p(1915),	-- Blind Rat
 				}),
-				n(-2, {	-- Vendors
+				n(VENDORS, {
 					n(97362, {	-- Dazzik "Proudmoore" <Magical Things>
 						["coord"] = { 66.2, 74.8, 628 },
 						["g"] = {
@@ -197,7 +197,7 @@ _.Zones =
 						},
 					}),
 				}),
-				n(0, { 	-- Zone Drops
+				n(ZONEDROPS, {
 					i(139572, {	-- Lost Codex of the Amani
 						["crs"] = {
 							97380,	-- Splint

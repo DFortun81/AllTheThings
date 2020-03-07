@@ -962,6 +962,8 @@ for key,value in pairs({
 	[303016] = "|cFFFFFFFFStep 14:|r Piedra corriente XIII",
 	[303017] = "|cFFFFFFFFStep 13:|r Piedra corriente XII",
 	[303018] = "|cFFFFFFFFStep 12:|r Piedra corriente XI",
+	[307265] = "Cartel de Se busca",
+	[307748] = "Carta de Ventura y Cía.",
 	[310709] = "Cofre empapado",
 	[311218] = "Xal'atath, Daga del Imperio Negro",
 	[311902] = "Piezas sueltas",

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(875, { 	-- Zandalar
 		m(1163, {	-- Dazar'alor
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(133208, {	-- Da White Shark
 					["questID"] = 50948,
 					["coord"] = { 59.2, 88.8, 1165 },

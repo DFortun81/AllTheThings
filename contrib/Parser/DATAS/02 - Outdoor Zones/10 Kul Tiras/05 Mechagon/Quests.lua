@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(876, {	-- Kul'Tiras
 		m(1462, {	-- Mechagon
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				--[[
 					55623 triggered after killing crazed trogg, but isn't a killID for him. Not sure what this is from
 					
@@ -372,7 +372,7 @@ _.Zones =
 				q(55298, {	-- Fishing for Something Bigger (possibly only available after Welcome to the Resistance?)
 					["provider"] = { "n", 151462 },	-- Danielle Anglers
 					["coord"] = { 37.0, 47.1, 1462 },
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(54083, {	-- Grease The Wheels
 					["provider"] = { "n", 150573 },	-- Recycler Kerchunk
@@ -970,6 +970,12 @@ _.Zones =
 					["provider"] = { "n", 150563 },	-- Skaggit
 					["coord"] = { 73.8, 26.0, 1462 },
 					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+				}),
+				q(55378, {	-- Rustbolt Requisitions: Shimmerscale (A)
+					["provider"] = { "n", 149813 },	-- Gila Crosswires
+					["coord"] = { 77.7, 40.4, 1462 },
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(55382, {	-- Rustbolt Requisitions: Shimmerscale (H)

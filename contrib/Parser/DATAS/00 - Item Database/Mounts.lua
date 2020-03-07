@@ -85,7 +85,7 @@ i(152841, 253108);	-- Felglow Mana Ray Mount
 i(152842, 253106);	-- Vibrant Mana Ray Mount
 i(152843, 235764);	-- Darkspore Mana Ray Mount
 i(152844, 253107);	-- Lambent Mana Ray
-i(152901, 253639);	-- Kirin Tor Summoning Crystal
+i(152901, 253639);	-- Kirin Tor Summoning Crystal - Violet Spellwing
 i(152903, 253660);	-- Biletooth Gnasher Mount
 i(152904, 253662);	-- Acid Belcher
 i(152905, 253661);	-- Crimson Slavermaw

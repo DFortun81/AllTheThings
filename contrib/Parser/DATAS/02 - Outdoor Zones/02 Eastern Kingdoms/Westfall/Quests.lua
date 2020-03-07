@@ -5,7 +5,14 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(52, {	-- Westfall
-			n(-17, {	-- Quests
+			n(QUESTS, {
+				q(6181, {	-- A Swift Message
+					["provider"] = { "n", 491 },	-- Quartermaster Lewis
+					["coord"] = { 56.8, 47.2, 52 },
+					["races"] = { HUMAN },
+					["lvl"] = 10,
+					["u"] = 40,
+				}),
 				q(26320, {	-- A Vision of the Past
 					["sourceQuests"] = { 26319 },	-- Secrets Revealed
 					["coord"] = { 42.8, 65.1, 52 },
@@ -57,6 +64,14 @@ _.Zones =
 						i(3343),	-- Captain Sanders' Booty Bag
 					},
 				}),
+				q(6281, {	-- Continue to Stormwind
+					["provider"] = { "n", 523 },	-- Thor
+					["coord"] = { 56.6, 49.4, 52 },
+					["races"] = { HUMAN },
+					["sourceQuest"] = 6181,	-- A Swift Message
+					["lvl"] = 10,
+					["u"] = 40,
+				}),
 				q(43287, {	-- Defend
 					["u"] = 40,	-- Legacy Quests (Legion prepatch)
 				}),
@@ -107,6 +122,7 @@ _.Zones =
 					["coord"] = { 54.4, 33.2, 52 },	-- center of area where Harvest Watchers spawn
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = { 114 },	-- Harvest Watcher
+					["lvl"] = 10,
 				}),
 				q(26266, {	-- Hope for the People
 					["sourceQuests"] = { 26270 },	-- You Have Our Thanks
@@ -187,7 +203,7 @@ _.Zones =
 					["provider"] = { "n", 392 },	-- Captain Grayson
 				}),
 				q(2359,  {	-- Klaven's Tower
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 40,
 					["g"] = {
@@ -304,6 +320,7 @@ _.Zones =
 					},
 				}),
 				q(26348, {	-- The Coast Isn't Clear
+					["sourceQuests"] = { 26371 },	-- The Legend of Captain Grayson
 					["coord"] = { 30.5, 85.4, 52 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 392 },	-- Captain Grayson
@@ -346,7 +363,7 @@ _.Zones =
 					},
 				}),
 				q(1652,  {	-- The Tome of Valor
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 6182 },	-- Daphne Stilwell
 					["u"] = 40,	-- Legacy Quests

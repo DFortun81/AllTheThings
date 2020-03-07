@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, { 	-- Pandaria
 		m(422, {	-- Dread Wastes
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(64599, {	-- Ambersmith Zikk <Klaxxi Quartermaster>
 					["coord"] = { 55.0, 35.5, 422 },
 					["g"] = {

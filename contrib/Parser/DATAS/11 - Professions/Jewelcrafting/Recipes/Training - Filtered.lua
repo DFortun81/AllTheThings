@@ -1,4 +1,4 @@
-profession(755, {	-- Jewelcrafting
+profession(JEWELCRAFTING, {
 	filter(200, {
 		{	-- Training
 			["categoryID"] = 536,	-- Training

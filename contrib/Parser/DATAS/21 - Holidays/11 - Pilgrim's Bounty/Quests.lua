@@ -4,7 +4,7 @@
 _.Holidays = bubbleDown({["u"] = 28}, 
 {
 	holiday(235465, {	-- Pilgrim's Bounty
-		n(-17, {	-- Quests
+		n(QUESTS, {
 			["g"] = {
 				-- ALLIANCE QUESTS --
 				q(14022, {	-- Pilgrim's Bounty (Alliance)

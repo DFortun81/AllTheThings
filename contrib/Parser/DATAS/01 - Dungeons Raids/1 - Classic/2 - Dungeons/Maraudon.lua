@@ -11,7 +11,7 @@ _.Instances = { tier(1, {	-- Classic
 			n(-70, {	-- Foulspore Cavern [Orange]
 				["coord"] = { 78.01, 55.68, 67 },	-- Maraudon [Orange], The Wicked Grotto [Desolace]
 				["groups"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(27698),	-- Servants of Theradras
 					}),
 					cr(13282, e(423, {	-- Noxxion
@@ -35,7 +35,7 @@ _.Instances = { tier(1, {	-- Classic
 			n(-71, {	-- The Wicked Grotto [Purple]
 				["coord"] = { 51.68, 24.73, 68 },	-- Maraudon [Purple], Foulspore Cavern [Desolace]
 				["groups"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(27697),	-- Corruption in Maraudon
 					}),
 					cr(13601, e(425, {	-- Tinkerer Gizlock
@@ -67,7 +67,7 @@ _.Instances = { tier(1, {	-- Classic
 			n(-69, {	-- Maraudon Portal
 				["coord"] = { 44.49, 77.14, 68 },	-- Maraudon [Falls], Foulspore Cavern [Desolace]
 				["groups"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(27692, {	-- Princess Theradras
 							i(131682),	-- Boots of Endless Vitality
 							i(131681),	-- Leggings of Flourishing Vigor
@@ -118,7 +118,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			n(-40, {	-- Legacy
-				n(-17, {	-- Quests (Legacy)
+				n(QUESTS, {
 					q(7044, {	-- Legends of Maraudon
 						["u"] = 40,
 						["provider"] = { "n", 13697 },	-- Cavindra

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(630, {	-- Azsuna
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(107139, {	-- Enchantress Ilyana
 					["coord"] = { 46.8, 40.8, 630 },
 					["g"] = {

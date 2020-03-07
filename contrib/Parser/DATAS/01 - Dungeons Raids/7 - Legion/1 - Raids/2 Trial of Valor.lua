@@ -10,7 +10,11 @@ _.Instances = { tier(7, {	-- Legion
 		["maps"] = { 806, 807, 808 },
 		["lvl"] = 110,
 		["g"] = {
-			n(-17, {	-- Quests 			
+			n(QUESTS, {
+				q(44868, {	-- Trial of Valor: Odyn's Judgment
+					["sourceQuest"] = 44729,	-- Trial of Valor: Odyn's Favor
+					["provider"] = { "n", 114263 },	-- Odyn
+				}),
 				q(45088, {	-- Trial of Valor: The Lost Army
 					["sourceQuest"] = 44729,	-- Trial of Valor: Odyn's Favor
 					["provider"] = { "n", 114263 },	-- Odyn
@@ -75,13 +79,13 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			d(17,  {	-- LFR
-				n(0,  {	-- Zone Drop
+				n(ZONEDROPS, {
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						i(142541),	-- Drape of the Forgotten Souls
 					},
 				}),
-				n(-1, {	-- Common Boss Drop
+				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
 						114263,	-- Odyn
 						114344,	-- Guarm
@@ -229,7 +233,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			d(14,  {	-- Normal
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
 				cr(114263, e(1819, {	-- Odyn
@@ -309,10 +313,10 @@ _.Instances = { tier(7, {	-- Legion
 				}))
 			}),
 			d(15,  {	-- Heroic
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
-				n(-1, {	-- Common Boss Drop
+				n(COMMON_BOSS_DROPS, {
 					i(143507, {	-- Ensemble: Vestment of the Chosen Dead
 						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties",
 						["classes"] = { 5, 8, 9 },	-- Priest, Mage, Warlock
@@ -471,7 +475,7 @@ _.Instances = { tier(7, {	-- Legion
 				}))
 			}),
 			d(16, {	-- Mythic
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
 				cr(114263, e(1819, {	-- Odyn

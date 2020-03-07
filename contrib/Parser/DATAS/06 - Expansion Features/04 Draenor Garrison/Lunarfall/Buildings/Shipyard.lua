@@ -36,7 +36,7 @@ _.ExpansionFeatures =
 								crit(11),	-- Blast Furnace
 							}),
 						}),
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(39665, {	-- A True Naval Commander
 								["provider"] = { "n", 93812 },	-- Salty Jorren
 								["coord"] = { 28.6, 10.8, 539 },

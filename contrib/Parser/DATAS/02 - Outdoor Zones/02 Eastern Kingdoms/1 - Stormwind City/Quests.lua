@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(84, {	-- Stormwind City
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				gsh(1522, {	-- Allied Races
 					["icon"] = "Interface\\Icons\\FactionChange",
 					["g"] = {
@@ -68,7 +68,7 @@ _.Zones =
 										["provider"] = { "n", 133362 },	-- Ambassador Moorgard
 										["coord"] = { 53.1, 15.4, 84 },
 										["sourceQuest"] = 51486,	-- Fer the Alliance
-										["races"] = { 34 },	-- Dark Iron Dwarf
+										["races"] = { DARKIRON },
 										["lvl"] = 20,
 									}),
 								}),
@@ -260,7 +260,7 @@ _.Zones =
 										["provider"] = { "n", 133362 },	-- Ambassador Moorgard
 										["coord"] = { 53.1, 15.4, 84 },
 										["sourceQuest"] = 49772,	-- For the Alliance
-										["races"] = { 30 },	-- Lightforge Draenei
+										["races"] = { LIGHTFORGED },
 										["lvl"] = 20,
 									}),
 								}),
@@ -377,7 +377,7 @@ _.Zones =
 										["provider"] = { "n", 133362 },	-- Ambassador Moorgard
 										["coord"] = { 53.1, 15.4, 84 },
 										["sourceQuest"] = 49788,	-- For the Alliance
-										["races"] = { 29 },	-- Void Elf
+										["races"] = { VOIDELF },
 										["lvl"] = 20,
 									}),
 								}),
@@ -402,7 +402,7 @@ _.Zones =
 					["provider"] = { "n", 461 },	-- Demisette Cloyce
 					["coord"] = { 39.4, 84.8, 84 },
 					["sourceQuest"] = 27272,	-- Demisette Sends Word
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["g"] = {
@@ -413,8 +413,8 @@ _.Zones =
 					["provider"] = { "n", 45306 },	-- Chief Surgeon Gashweld
 					["coord"] = { 63.0, 34.2, 84 },
 					["sourceQuest"] = 27274,	-- The Chief Surgeon
-					["races"] = { 7 },	-- Gnome
-					["classes"] = { 5 },	-- Priest
+					["races"] = { GNOME },
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 					["g"] = {
 						i(65480),	-- Staff of the Technocrat
@@ -425,7 +425,7 @@ _.Zones =
 					["coord"] = { 79.4, 69.0, 84 },
 					["sourceQuests"] = 28258,	-- Meet with Ander Germaine
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 50,
 					["g"] = {
 						i(65618),	-- Faceguard of the Crown
@@ -444,7 +444,7 @@ _.Zones =
 					["coord"] = { 79.4, 69.0, 84 },
 					["sourceQuest"] = 27225,	-- A Summons from Ander Germaine
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,	
 					["g"] = {
 						i(65492),	-- Broadsword of the Crown
@@ -498,7 +498,7 @@ _.Zones =
 					},
 					["sourceQuests"] = 27267,	-- Make Contact with SI:7
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 20,
 					["g"] = {
 						i(65486),	-- SI:7 Special Issue Dagger
@@ -509,7 +509,7 @@ _.Zones =
 					["coord"] = { 39.8, 85.4, 84 },	-- Sandahl (Stormwind City)
 					["sourceQuest"] = 32307,	-- Reader for the Dead Tongue
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 90,
 				}),
 				q(27106, {	-- A Villain Unmasked
@@ -531,7 +531,7 @@ _.Zones =
 					["coord"] = { 85.6, 31.8, 84 },
 					["sourceQuest"] = 44463,	-- Demons Among Them
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["lvl"] = 98,
 				}),
 				q(27344, {	-- A Well-Earned Reward
@@ -539,7 +539,7 @@ _.Zones =
 					["coord"] = { 79.0, 71.0, 84 },
 					["sourceQuest"] = 27266,	-- Wulf Calls
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 20,
 					["g"] = {
 						i(65465),	-- Crossbow of the Crown
@@ -572,7 +572,7 @@ _.Zones =
 					},
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 20,
 				}),
 				q(325,   {	-- Armed and Ready
@@ -587,7 +587,7 @@ _.Zones =
 					["coord"] = { 41.6, 76.6, 84 },
 					["sourceQuest"] = 1940,	-- Pristine Spider Silk
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 26,
 					["u"] = 40,
 					["g"] = {
@@ -600,7 +600,7 @@ _.Zones =
 					["coord"] = { 64.6, 33.0, 84 },
 					["sourceQuest"] = 27270,	-- An Audience with the Farseer
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["lvl"] = 20,
 					["g"] = {
 						i(65488),	-- Battleaxe of the Farseer
@@ -620,7 +620,7 @@ _.Zones =
 					["coord"] = { 51.6, 12.4, 84 },
 					["sourceQuest"] = 1700,	-- Grimand Elmore
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
@@ -685,7 +685,7 @@ _.Zones =
 					["coord"] = { 84.4, 33.6, 84 },
 					["sourceQuest"] = 44471,	-- Second Sight
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["lvl"] = 98,
 					["g"] = {
 						i(128959),	-- Seal of House Wrynn
@@ -707,21 +707,30 @@ _.Zones =
 					["provider"] = { "n", 1323 },	-- Osric Strang
 					["coord"] = { 77.0, 61.2, 84 },
 					["sourceQuest"] = 26394,	-- Continue to Stormwind
-					["races"] = { 1 },	-- Human
+					["races"] = { HUMAN },
 					["lvl"] = 4,
+				}),
+				q(6261, {	-- Dungar Longdrink
+					["provider"] = { "n", 1323 },	-- Osric Strang
+					["coord"] = { 77.0, 61.2, 84 },
+					["sourceQuest"] = 6281,	-- Continue to Stormwind
+					["races"] = { HUMAN },
+					["lvl"] = 10,
+					["u"] = 40,
 				}),
 				q(58708, {	-- Fame Waits for Gnome One
 					["coord"] = { 52.7, 14.1, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 162393 },	-- Gila Crosswires
 					["isBreadcrumb"] = true,
+					["lvl"] = 120,
 				}),
 				q(27361, {	-- Favored of the Light
 					["provider"] = { "n", 376 },	-- High Priestess Laurena
 					["coord"] = { 49.6, 44.8, 84 },
 					["sourceQuest"] = 27268,	-- Make Haste to the Cathedral
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 					["g"] = {
 						i(65482),	-- Staff of the Hallowed
@@ -739,7 +748,7 @@ _.Zones =
 					["coord"] = { 58.0, 16.6, 84 },
 					["sourceQuest"] = 1702,	-- The Shieldsmith
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
@@ -748,7 +757,7 @@ _.Zones =
 					["coord"] = { 58.0, 16.6, 84 },
 					["sourceQuest"] = 1701,	-- Fire Hardened Mail
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 					["g"] = {
@@ -785,7 +794,7 @@ _.Zones =
 					["coord"] = { 51.6, 12.4, 84 },
 					["sourceQuest"] = 1705,	-- Burning Blood
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 					["g"] = {
@@ -797,7 +806,7 @@ _.Zones =
 					["coord"] = { 58.0, 16.6, 84 },
 					["sourceQuest"] = 1701,	-- Fire Hardened Mail
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
@@ -811,7 +820,7 @@ _.Zones =
 					["provider"] = { "n", 5497 },	-- Jennea Cannon
 					["coord"] = { 38.6, 79.6, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 26,
 					["u"] = 40,
 				}),
@@ -867,7 +876,7 @@ _.Zones =
 				q(30987, {	-- Joining the Alliance
 					["provider"] = { "n", 60566 },	-- Aysa Cloudsinger
 					["coord"] = { 74.2, 92.4, 84 },
-					["races"] = { 24 },	-- Pandaren (neutral)
+					["races"] = { PANDAREN_NEUTRAL },
 					["lvl"] = 5,
 				}),
 				q(1704,  {	-- Klockmort Spannerspan
@@ -875,13 +884,13 @@ _.Zones =
 					["coord"] = { 58.0, 16.6, 84 },
 					["sourceQuest"] = 1701,	-- Fire Hardened Mail
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 22,
 					["u"] = 40,
 				}),
 				q(32665, {	-- Learn To Ride
 					["description"] = "This quest is available to Pandaren upon reaching level 20.",
-					["races"] = { 25 },	-- Pandaren (A)
+					["races"] = { PANDAREN_ALLIANCE },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
 					["lvl"] = 20,
@@ -907,7 +916,7 @@ _.Zones =
 					["provider"] = { "n", 1309 },	-- Wynne Larson
 					["coord"] = { 41.8, 76.4, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 15,
 					["u"] = 40,
 					["g"] = {
@@ -919,7 +928,7 @@ _.Zones =
 					["coord"] = { 49.2, 87.6, 84 },
 					["sourceQuest"] = 27271,	-- Journey to the Wizard's Sanctum
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 20,
 					["g"] = {
 						i(65467),	-- Staff of the Royal Wizard
@@ -930,7 +939,7 @@ _.Zones =
 					["coord"] = { 58.0, 16.6, 84 },
 					["sourceQuest"] = 1701,	-- Fire Hardened Mail
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 22,
 					["u"] = 40,
 				}),
@@ -957,7 +966,7 @@ _.Zones =
 					["provider"] = { "n", 5497 },	-- Jennea Cannon
 					["coord"] = { 49.6, 86.6, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 10,
 					["u"] = 40,
 					["g"] = {
@@ -981,7 +990,7 @@ _.Zones =
 					["provider"] = { "n", 44395 },	-- Celestine of the Harvest
 					["coords"] = { 57.6, 24.8, 84 },	-- Celestine of the Harvest (Stormwind City)
 					["isBreadcrumb"] = true,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 50,
 				}),
 				q(167,   {	-- Oh Brother...
@@ -1021,7 +1030,7 @@ _.Zones =
 					["coord"] = { 37.6, 81.6, 84 },
 					["sourceQuest"] = 1938,	-- Ur's Treatise on Shadow Magic
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 26,
 					["u"] = 40,
 				}),
@@ -1036,7 +1045,7 @@ _.Zones =
 					["provider"] = { "n", 5496 },	-- Sandahl (Stormwind City)
 					["coord"] = { 57.6, 24.8, 84 },	-- Sandahl (Stormwind City)
 					["isBreadcrumb"] = true,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 90,
 				}),
 				q(1078,  {	-- Retrieval for Mauren
@@ -1060,7 +1069,7 @@ _.Zones =
 					["provider"] = { "n", 352 },	-- Dungar Longdrink
 					["coord"] = { 71.0, 72.6, 84 },
 					["sourceQuest"] = 26395,	-- Dungar Longdrink
-					["races"] = { 1 },	-- Human
+					["races"] = { HUMAN },
 					["lvl"] = 4,
 				}),
 				q(27241, {	-- Return to Jaina
@@ -1069,6 +1078,14 @@ _.Zones =
 					["sourceQuest"] = 27240,	-- Proof of Treachery
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
+				}),
+				q(6285, {	-- Return to Lewis
+					["provider"] = { "n", 352 },	-- Dungar Longdrink
+					["coord"] = { 71.0, 72.6, 84 },
+					["sourceQuest"] = 6261,	-- Dungar Longdrink
+					["races"] = { HUMAN },
+					["lvl"] = 10,
+					["u"] = 40,
 				}),
 				q(26370, {	-- Return to Sentinel Hill
 					["providers"] = {
@@ -1085,7 +1102,7 @@ _.Zones =
 					["coord"] = { 84.4, 33.6, 84 },
 					["sourceQuest"] = 39691,	-- The Call of War
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["lvl"] = 98,
 				}),
 				q(1798,  {	-- Seeking Strahad
@@ -1093,7 +1110,7 @@ _.Zones =
 					["coord"] = { 39.6, 84.6, 84 },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 30,
 					["u"] = 40,
 				}),
@@ -1101,7 +1118,7 @@ _.Zones =
 					["provider"] = { "n", 5496 },	-- Sandahl
 					["coord"] = { 39.8, 85.4, 84 },
 					["sourceQuest"] = 32310,	-- A Tale of Six Masters
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 90,
 				}),
 				q(28401, {	-- Slaves of the Firelord
@@ -1109,7 +1126,7 @@ _.Zones =
 					["coord"] = { 64.6, 33.0, 84 },
 					["sourceQuest"] = 28287,	-- Meet with Farseer Umbrua
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["lvl"] = 50,
 					["g"] = {
 						i(65640), 		-- Mask of the Farseer
@@ -1120,7 +1137,7 @@ _.Zones =
 					["provider"] = { "n", 332 },	-- Master Mathias Shaw
 					["coord"] = { 81.2, 63.2, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 10,
 					["u"] = 40,
 					["g"] = {
@@ -1132,7 +1149,7 @@ _.Zones =
 					["coord"] = { 39.4, 84.8, 84 },
 					["sourceQuest"] = 28259,	-- Meet with Demisette Cloyce
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 50,
 					["g"] = {
 						i(65621),	-- Horns of Justified Sins
@@ -1149,13 +1166,12 @@ _.Zones =
 					["provider"] = { "n", 2504 },	-- Donyal Tovald
 					["coord"] = { 84.6, 24.2, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 1,
 					["u"] = 40,
 				}),
 				q(55146, {	-- Stranger in a Strange Lane
 					["provider"] = { "n", 133362 },	-- Ambassador Moorgard
 					["coord"] = { 53.2, 15.4, 84 },
-					["races"] = { 32 },	-- Kul Tiran
+					["races"] = { KULTIRAN },
 					["lvl"] = 20,
 				}),
 				q(50371, {	-- Summons to Stormwind
@@ -1200,7 +1216,7 @@ _.Zones =
 					["provider"] = { "n", 39691 },	-- Archmage Khadgar
 					["coord"] = { 72.4, 47.2, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["lvl"] = 98,
 				}),
 				q(28406, {	-- The Dark Iron Army
@@ -1208,7 +1224,7 @@ _.Zones =
 					["coord"] =  { 79.6, 60.8, 84 },
 					["sourceQuest"] = 28262,	-- Meet with Lord Tony Romano
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 50,
 					["g"] = {
 						i(65624),	-- SI:7 Special Issue Facemask
@@ -1218,7 +1234,6 @@ _.Zones =
 					["provider"] = { "n", 54334 },	-- Darkmoon Faire Mystic Mage
 					["coord"] = { 62.2, 73.0, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 1,
 					["g"] = {
 						currency(515),	-- Darkmoon Prize Ticket
 					},
@@ -1250,7 +1265,7 @@ _.Zones =
 					["coord"] = { 79.0, 71.0, 84 },
 					["sourceQuest"] = 28260,	-- Meet with Wulf Hansreim
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 50,
 					["g"] = {
 						i(65619),	-- Helm of the Crown
@@ -1261,7 +1276,7 @@ _.Zones =
 					["coord"] = { 52.6, 45.0, 84 },
 					["sourceQuest"] = 27265,	-- Lord Grayson Shadowbreaker
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 20,
 					["g"] = {
 						i(65475),	-- Mace of the Order
@@ -1303,6 +1318,7 @@ _.Zones =
 						49556,	-- Hero's Call: Jade Forest!
 						49866,	-- To Pandaria!
 					},
+					["lvl"] = 80,
 				}),
 				q(46728, {	-- The Nation of Kul Tiras
 					["provider"] = { "n", 120756 },	-- Anduin Wyrnn
@@ -1329,7 +1345,7 @@ _.Zones =
 					["coord"] = { 49.2, 87.6, 84 },
 					["sourceQuest"] = 28263,	-- Meet with Maginor Dumas
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 50,
 					["g"] = {
 						i(65620),	-- Hood of the Royal Wizard
@@ -1338,8 +1354,8 @@ _.Zones =
 				q(1790,  {	-- The Symbol of Life
 					["provider"] = { "n", 6171 },	-- Duthorian Rall
 					["coord"] = { 51.0, 47.6, 84 },
-					["races"] = { 1 },	-- Human
-					["classes"] = { 2 },	-- Paladin
+					["races"] = { HUMAN },
+					["classes"] = { PALADIN },
 					["lvl"] = 12,
 					["g"] = {
 						un(2, i(6866)),	-- Symbol of Life
@@ -1386,7 +1402,7 @@ _.Zones =
 					["coord"] = { 49.6, 44.8, 84 },
 					["sourceQuest"] = 28285,	-- Meet with High Priestess Laurena
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 					["g"] = {
 						i(65616),	-- Crown of the Hallowed
@@ -1425,7 +1441,7 @@ _.Zones =
 					["coord"] = { 37.6, 81.6, 84 },
 					["sourceQuest"] = 1939,	-- High Sorcerer Andromath
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 26,
 					["u"] = 40,
 				}),
@@ -1434,7 +1450,7 @@ _.Zones =
 					["coord"] = { 52.6, 45.0, 84 },
 					["sourceQuest"] = 28268,	-- Meet with Lord Grayson Shadowbreaker
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 50,
 					["g"] = {
 						i(65623),	-- Helm of the Order
@@ -1466,8 +1482,8 @@ _.Zones =
 				q(1698,  {	-- Yorus Barleybrew
 					["provider"] = { "n", 5479 },	-- Wu Shen
 					["coord"] = { 78.8, 45.4, 84 },
-					["races"] = exclude(11, ALLIANCE_ONLY),	-- All alliance races exception Draenei
-					["classes"] = { 1 },	-- Warrior
+					["races"] = exclude(DRAENEI, ALLIANCE_ONLY),	-- All alliance races except Draenei
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
@@ -1476,7 +1492,7 @@ _.Zones =
 					["coord"] = { 26.4, 78.7, 84 },
 					["sourceQuest"] = 336,	-- A Noble Brew
 					["races"] = ALLIANCE_ONLY,
-					["classes"]	= { 9 },	-- Warlock
+					["classes"]	= { WARLOCK },
 					["lvl"] = 25,
 					["u"] = 40,
 					["g"] = {

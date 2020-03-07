@@ -10,7 +10,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
 		},
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(30097, {	-- Archival Purposes
 					["provider"] = { "n", 57864 },	-- Alurmi
 					["g"] = {
@@ -35,7 +35,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				}),
 			}),
 			d(  2, {	-- Heroic
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					{	--  Breastplate of Despair
 						["itemID"] = 76154,	-- Breastplate of Despair
 						["crs"] = {
@@ -69,7 +69,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						},
 					},
 				}),
-				n(-1,	{	-- Common Boss Drops
+				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
 						54431,	-- Echo of Baine
 						54445,	-- Echo of Jaina
@@ -127,7 +127,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			d( 24, {	-- Timewalking
 				["lvl"] = 86,
 				["g"] = {
-					n(-1,	{	-- Common Boss Drops
+					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
 							54431,	-- Echo of Baine
 							54445,	-- Echo of Jaina

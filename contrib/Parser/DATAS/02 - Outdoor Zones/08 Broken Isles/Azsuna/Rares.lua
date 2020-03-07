@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(630, {	-- Azsuna
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(107657, {	-- Arcanist Shal'iman
 					["questID"] = 42505,
 					["coord"] = { 35.4, 33.8, 630 },

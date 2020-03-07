@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(896, {	-- Drustvar
-			n(-17, {	-- Quests [Alliance]
+			n(QUESTS, {	-- [Alliance]
 				i(163603, {	-- Lucille's Handkerchief
 					["sourceQuests"] = { 50763 },	-- One Last Request
 					["description"] = "After completing the quest \"One Last Request\" you can return back to the house, go upstairs and it will be in the dresser.",
@@ -1389,7 +1389,7 @@ _.Zones =
 					["sourceQuests"] = { 48941 },	-- A Slight Detour
 				}),
 			}),
-			n(-17, {	-- Quests [Horde]
+			n(QUESTS, {	-- [Horde]
 				q(51240, {	-- WANTED: Anchorface
 					--["objectID"] = 288214,	-- Wanted Poster
 					["coord"] = { 19.57, 43.65, 896 },

@@ -7,7 +7,7 @@ _.GearSets =
 		gs(1976, {	-- Heritage of Gilneas
 			["races"] = { 22 },	-- Worgen
 			["g"] = {
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(54976, {	-- The Shadow of Gilneas
 						--["maps"] = {  },
 						--["coord"] = {  },

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(390, {	-- Vale of Eternal Blossoms
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(64922, {	-- Brann Bronzebeard <Archaeology Trainer>
 					["coord"] = { 83.4, 30.9, 390 },
 					["g"] = {

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(905, { 	-- Argus
 		m(830, {	-- Krokuun
-			n(-16, { 	-- Rares
+			n(RARES, {
 				n(124775, {	-- Commander Endaxis
 					["isDaily"] = true,
 					["questID"] = 48564,

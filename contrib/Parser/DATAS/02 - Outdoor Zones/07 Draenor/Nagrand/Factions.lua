@@ -9,7 +9,7 @@ _.Zones =
 				faction(1711, {	-- Cenarion Expedition
 					["creatureID"] = 87394,	-- Kwilax Fuseshiv <Reputation Vendor>
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(37125, {	-- A Rare Find
 								["provider"] = { "n", 87393 },	-- Sallee Silverclamp
 								["coord"] = { 50.4, 41.3, 550 },
@@ -66,7 +66,7 @@ _.Zones =
 								["repeatable"] = true,
 							}),
 						}),
-						n(-16, {	-- Rares
+						n(RARES, {
 							n(86774, {	-- Aogexon
 								["coord"] = { 51.6, 16.1, 550 },
 								["g"] = {
@@ -147,7 +147,7 @@ _.Zones =
 							}),
 							
 						}),
-						n(-2,  {	-- Vendors
+						n(VENDORS, {
 							n(87394, {	-- Kwilax Fuseshiv <Reputation Vendor>
 								["coord"] = { 50.5, 41.4, 550 },
 								["g"] = {

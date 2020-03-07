@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(203, {	-- Vashj'ir
 			m(205, {	-- Shimmering Expanse
-				n(-17,  {	-- Quests
+				n(QUESTS, {
 					q(25582, {	-- A Better Vantage (A)
 						["provider"] = { "n", 40643 },	-- Admiral Dvorek
 						["coord"] = { 49.1, 56.9, 205 },

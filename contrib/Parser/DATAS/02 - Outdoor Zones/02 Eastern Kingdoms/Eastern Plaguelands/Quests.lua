@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(23, {	-- Eastern Plaguelands
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(27463, {	-- A Boyhood Dream
 					["provider"] = { "n", 45431 },	-- Gidwin Goldbraids
 					["coord"] = { 74.3, 53.3, 23 },

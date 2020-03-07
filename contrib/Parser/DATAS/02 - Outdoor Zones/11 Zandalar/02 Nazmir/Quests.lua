@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(875, {	-- Zandalar
 		m(863, {	-- Nazmir
-			n(-17,  {	-- Quests
+			n(QUESTS, {
 				ach(11868, {	-- The Dark Heart of Nazmir [Note: Quest line starts here and a few quests are in the zone.  So we want to make them stand out amongst the crowd.]
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -708,7 +708,7 @@ _.Zones =
 				}),
 				q(50976, {	-- An Ancient Curse
 					["provider"] = { "o", 287081 },	-- Ancient Tablet
-					["coord"] = { 29.2, 52.0, 863 },
+					["coord"] = { 52.92, 75.96, 863 },
 					["lvl"] = 110,
 				}),
 				q(50933, {	-- An Unfortunate Event

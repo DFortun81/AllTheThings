@@ -1,5 +1,5 @@
 -- Archaeology - Skill ID 794 / Spell ID 158762
-profession(794, {	-- Archaeology
+profession(ARCHAEOLOGY, {
 	currency(829,  {	-- Arakkoa
 		f(101,  {	-- Battle Pet
 			i(117354),	-- Ancient Nest Guardian
@@ -16,11 +16,11 @@ profession(794, {	-- Archaeology
 			i(114201),	-- Sundial
 			i(114202),	-- Talonpriest Mask
 		}),
-		n(-17,  {	-- Quests
+		n(QUESTS, {
 			q(36778, {	-- Pristine Apexis Crystal
 				["lvl"] = 100,
 				["provider"] = { "i", 114222 },	-- Pristine Apexis Crystal
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(8, {	-- Pristine Apexis Crystal
 						["achievementID"] = 9412,	-- Arakkoa Archivist
@@ -33,7 +33,7 @@ profession(794, {	-- Archaeology
 			q(36779, {	-- Pristine Apexis Heiroglyph
 				["lvl"] = 100,
 				["provider"] = { "i", 114223 },	-- Pristine Apexis Heiroglyph
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(9, {	-- Pristine Apexis Heiroglyph
 						["achievementID"] = 9412,	-- Arakkoa Archivist
@@ -46,7 +46,7 @@ profession(794, {	-- Archaeology
 			q(36780, {	-- Pristine Apexis Scroll
 				["lvl"] = 100,
 				["provider"] = { "i", 114224 },	-- Pristine Apexis Scroll
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(10, {	-- Pristine Apexis Scroll
 						["achievementID"] = 9412,	-- Arakkoa Archivist
@@ -59,7 +59,7 @@ profession(794, {	-- Archaeology
 			q(36772, {	-- Pristine Burial Urn
 				["lvl"] = 100,
 				["provider"] = { "i", 114216 },	-- Pristine Burial Urn
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(2, {	-- Pristine Burial Urn
 						["achievementID"] = 9412,	-- Arakkoa Archivist
@@ -72,7 +72,7 @@ profession(794, {	-- Archaeology
 			q(36773, {	-- Pristine Decree Scrolls
 				["lvl"] = 100,
 				["provider"] = { "i", 114217 },	-- Pristine Decree Scrolls
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(3, {	-- Pristine Decree Scrolls
 						["achievementID"] = 9412,	-- Arakkoa Archivist
@@ -85,7 +85,7 @@ profession(794, {	-- Archaeology
 			q(36771, {	-- Pristine Dreamcatcher
 				["lvl"] = 100,
 				["provider"] = { "i", 114215 },	-- Pristine Dreamcatcher
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(1, {	-- Pristine Dreamcatcher
 						["achievementID"] = 9412,	-- Arakkoa Archivist
@@ -98,7 +98,7 @@ profession(794, {	-- Archaeology
 			q(36777, {	-- Pristine Outcast Dreamcatcher
 				["lvl"] = 100,
 				["provider"] = { "i", 114221 },	-- Pristine Outcast Dreamcatcher
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(7, {	-- Pristine Outcast Dreamcatcher
 						["achievementID"] = 9412,	-- Arakkoa Archivist
@@ -111,7 +111,7 @@ profession(794, {	-- Archaeology
 			q(36774, {	-- Pristine Solar Orb
 				["lvl"] = 100,
 				["provider"] = { "i", 114218 },	-- Pristine Solar Orb
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(4, {	-- Pristine Solar Orb
 						["achievementID"] = 9412,	-- Arakkoa Archivist
@@ -124,7 +124,7 @@ profession(794, {	-- Archaeology
 			q(36775, {	-- Pristine Sundial
 				["lvl"] = 100,
 				["provider"] = { "i", 114219 },	-- Pristine Sundial
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(5, {	-- Pristine Sundial
 						["achievementID"] = 9412,	-- Arakkoa Archivist
@@ -137,7 +137,7 @@ profession(794, {	-- Archaeology
 			q(36776, {	-- Pristine Talonpriest Mask
 				["lvl"] = 100,
 				["provider"] = { "i", 114220 },	-- Pristine Talonpriest Mask
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(6, {	-- Pristine Talonpriest Mask
 						["achievementID"] = 9412,	-- Arakkoa Archivist
@@ -160,7 +160,7 @@ profession(794, {	-- Archaeology
 			i(130918),	-- Malformed Abyssal
 			i(130919),	-- Orb of Inner Chaos
 		}),
-		n(-17, {	-- Quests
+		n(QUESTS, {
 			-- Crystalline Eye of Undravius
 			q(41157, {	-- Corrupted Studies
 				["provider"] = { "n", 103484 },	-- Brann Bronzebeard
@@ -268,7 +268,7 @@ profession(794, {	-- Archaeology
 			q(40360, {	-- Pristine Flayed Skin Chronicle
 				["lvl"] = 98,
 				["provider"] = { "i", 130932 },	-- Pristine Flayed Skin Chronicle
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(2, {	-- Pristine Flayed Skin Chronicle
 						["achievementID"] = 10604,	-- Legion Curator
@@ -276,7 +276,7 @@ profession(794, {	-- Archaeology
 				},
 			}),
 			q(40363, {	-- Pristine Houndstooth Hauberk
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["provider"] = { "i", 130935 },	-- Pristine Houndstooth Hauberk
 				["lvl"] = 98,
 				["g"] = {
@@ -288,7 +288,7 @@ profession(794, {	-- Archaeology
 			q(40359, {	-- Pristine Imp's Cup
 				["lvl"] = 98,
 				["provider"] = { "i", 130931 },	-- Pristine Imp's Cup
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(1, {	-- Pristine Imp's Cup
 						["achievementID"] = 10604,	-- Legion Curator
@@ -298,7 +298,7 @@ profession(794, {	-- Archaeology
 			q(40361, {	-- Pristine Malformed Abyssal
 				["lvl"] = 98,
 				["provider"] = { "i", 130933 },	-- Pristine Malformed Abyssal
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(3, {	-- Pristine Malformed Abyssal
 						["achievementID"] = 10604,	-- Legion Curator
@@ -308,7 +308,7 @@ profession(794, {	-- Archaeology
 			q(40362, {	-- Pristine Orb of Inner Chaos
 				["lvl"] = 98,
 				["provider"] = { "i", 130934 },	-- Pristine Orb of Inner Chaos
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(4, {	-- Pristine Malformed Abyssal
 						["achievementID"] = 10604,	-- Legion Curator
@@ -363,11 +363,11 @@ profession(794, {	-- Archaeology
 			i(114159),	-- Weighted Chopping Axe
 			i(114145),	-- Wolfskin Snowshoes
 		}),
-		n(-17,  {	-- Quests
+		n(QUESTS, {
 			q(36756, {	-- Pristine Ancestral Talisman
 				["lvl"] = 100,
 				["provider"] = { "i", 114172 },	-- Pristine Ancestral Talisman
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(25, {	-- Pristine Ancestral Talisman
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -380,7 +380,7 @@ profession(794, {	-- Archaeology
 			q(36753, {	-- Pristine Barbed Fishing Hook
 				["lvl"] = 100,
 				["provider"] = { "i", 114164 },	-- Pristine Barbed Fishing Hook
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(22, {	-- Pristine Barbed Fishing Hook
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -393,7 +393,7 @@ profession(794, {	-- Archaeology
 			q(36750, {	-- Pristine Blackrock Razor
 				["lvl"] = 100,
 				["provider"] = { "i", 114158 },	-- Pristine Blackrock Razor
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(19, {	-- Pristine Blackrock Razor
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -406,7 +406,7 @@ profession(794, {	-- Archaeology
 			q(36754, {	-- Pristine Calcified Eye In A Jar
 				["lvl"] = 100,
 				["provider"] = { "i", 114166 },	-- Pristine Calcified Eye In A Jar
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(23, {	-- Pristine Calcified Eye In A Jar
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -419,7 +419,7 @@ profession(794, {	-- Archaeology
 			q(36755, {	-- Pristine Ceremonial Tattoo Needles
 				["lvl"] = 100,
 				["provider"] = { "i", 114168 },	-- Pristine Ceremonial Tattoo Needles
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(24, {	-- Pristine Ceremonial Tattoo Needles
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -432,7 +432,7 @@ profession(794, {	-- Archaeology
 			q(36757, {	-- Pristine Cracked Ivory Idol
 				["lvl"] = 100,
 				["provider"] = { "i", 114170 },	-- Pristine Cracked Ivory Idol
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(26, {	-- Pristine Cracked Ivory Idol
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -445,7 +445,7 @@ profession(794, {	-- Archaeology
 			q(36760, {	-- Pristine Doomsday Prophecy
 				["lvl"] = 100,
 				["provider"] = { "i", 114178 },	-- Pristine Doomsday Prophecy
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(29, {	-- Pristine Doomsday Prophecy
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -458,7 +458,7 @@ profession(794, {	-- Archaeology
 			q(36749, {	-- Pristine Elemental Bellows
 				["lvl"] = 100,
 				["provider"] = { "i", 114156 },	-- Pristine Elemental Bellows
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(18, {	-- Pristine Elemental Bellows
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -471,7 +471,7 @@ profession(794, {	-- Archaeology
 			q(36725, {	-- Pristine Fang-Scarred Frostwolf Axe
 				["lvl"] = 100,
 				["provider"] = { "i", 114142 },	-- Pristine Fang-Scarred Frostwolf Axe
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(11, {	-- Pristine Fang-Scarred Frostwolf Axe
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -484,7 +484,7 @@ profession(794, {	-- Archaeology
 			q(36758, {	-- Pristine Flask of Blazegrease
 				["lvl"] = 100,
 				["provider"] = { "i", 114174 },	-- Pristine Flask of Blazegrease
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(27, {	-- Pristine Flask of Blazegrease
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -497,7 +497,7 @@ profession(794, {	-- Archaeology
 			q(36743, {	-- Pristine Frostwolf Ancestry Scrimshaw
 				["lvl"] = 100,
 				["provider"] = { "i", 114144 },	-- Pristine Frostwolf Ancestry Scrimshaw
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(12, {	-- Pristine Frostwolf Ancestry Scrimshaw
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -510,7 +510,7 @@ profession(794, {	-- Archaeology
 			q(36759, {	-- Pristine Gronn-Tooth Necklace
 				["lvl"] = 100,
 				["provider"] = { "i", 114176 },	-- Pristine Gronn-Tooth Necklace
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(28, {	-- Pristine Gronn-Tooth Necklace
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -523,7 +523,7 @@ profession(794, {	-- Archaeology
 			q(36752, {	-- Pristine Hooked Dagger
 				["lvl"] = 100,
 				["provider"] = { "i", 114162 },	-- Pristine Hooked Dagger
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(21, {	-- Pristine Hooked Dagger
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -536,7 +536,7 @@ profession(794, {	-- Archaeology
 			q(36748, {	-- Pristine Metalworker's Hammer
 				["lvl"] = 100,
 				["provider"] = { "i", 114154 },	-- Pristine Metalworker's Hammer
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(17, {	-- Pristine Metalworker's Hammer
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -549,7 +549,7 @@ profession(794, {	-- Archaeology
 			q(36746, {	-- Pristine Screaming Bullroarer
 				["lvl"] = 100,
 				["provider"] = { "i", 114150 },	-- Pristine Screaming Bullroarer
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(15, {	-- Pristine Screaming Bullroarer
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -562,7 +562,7 @@ profession(794, {	-- Archaeology
 			q(36745, {	-- Pristine Warsinger's Drums
 				["lvl"] = 100,
 				["provider"] = { "i", 114148 },	-- Pristine Warsinger's Drums
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(14, {	-- Pristine Warsinger's Drums
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -575,7 +575,7 @@ profession(794, {	-- Archaeology
 			q(36747, {	-- Pristine Warsong Ceremonial Pike
 				["lvl"] = 100,
 				["provider"] = { "i", 114152 },	-- Pristine Warsong Ceremonial Pike
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(16, {	-- Pristine Warsong Ceremonial Pike
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -588,7 +588,7 @@ profession(794, {	-- Archaeology
 			q(36751, {	-- Pristine Weighted Chopping Axe
 				["lvl"] = 100,
 				["provider"] = { "i", 114160 },	-- Pristine Weighted Chopping Axe
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(20, {	-- Pristine Weighted Chopping Axe
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -601,7 +601,7 @@ profession(794, {	-- Archaeology
 			q(36744, {	-- Pristine Wolfskin Snowshoes
 				["lvl"] = 100,
 				["provider"] = { "i", 114146 },	-- Pristine Wolfskin Snowshoes
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(13, {	-- Pristine Wolfskin Snowshoes
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -625,11 +625,11 @@ profession(794, {	-- Archaeology
 			i(154925),	-- Ritual Fetish
 			i(160741),	-- Soul Coffer
 		}),
-		n(-17,  {	-- Quests
+		n(QUESTS, {
 			q(51951, {	-- Pristine Ancient Runebound Tome
 				["lvl"] = 110,
 				["provider"] = { "i", 154927 },	-- Pristine Ancient Runebound Tome
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(2, {	-- Pristine Ancient Runebound Tome
 						["achievementID"] = 12762,	-- Kul Tiran Curator
@@ -644,7 +644,7 @@ profession(794, {	-- Archaeology
 			q(51950, {	-- Pristine Ceremonial Bonesaw
 				["lvl"] = 110,
 				["provider"] = { "i", 154926 },	-- Pristine Ceremonial Bonesaw
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(1, {	-- Pristine Ceremonial Bonesaw
 						["achievementID"] = 12762,	-- Kul Tiran Curator
@@ -659,7 +659,7 @@ profession(794, {	-- Archaeology
 			q(51952, {	-- Pristine Disembowling Sickle
 				["lvl"] = 110,
 				["provider"] = { "i", 154928 },	-- Pristine Disembowling Sickle
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(3, {	-- Pristine Disembowling Sickle
 						["achievementID"] = 12762,	-- Kul Tiran Curator
@@ -674,7 +674,7 @@ profession(794, {	-- Archaeology
 			q(51953, {	-- Pristine Jagged Blade of the Drust
 				["lvl"] = 110,
 				["provider"] = { "i", 154929 },	-- Pristine Jagged Blade of the Drust
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(4, {	-- Pristine Jagged Blade of the Drust
 						["achievementID"] = 12762,	-- Kul Tiran Curator
@@ -689,7 +689,7 @@ profession(794, {	-- Archaeology
 			q(51954, {	-- Pristine Ritual Fetish
 				["lvl"] = 110,
 				["provider"] = { "i", 154930 },	-- Pristine Ritual Fetish
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(5, {	-- Pristine Ritual Fetish
 						["achievementID"] = 12762,	-- Kul Tiran Curator
@@ -704,7 +704,7 @@ profession(794, {	-- Archaeology
 			q(51955, {	-- Pristine Soul Coffer
 				["lvl"] = 110,
 				["provider"] = { "i", 160742 },	-- Pristine Soul Coffer
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(6, {	-- Pristine Soul Coffer
 						["achievementID"] = 12762,	-- Kul Tiran Curator
@@ -795,7 +795,7 @@ profession(794, {	-- Archaeology
 		}),
 	}),
 	currency(1172, {	-- Highborne
-		prof(773, {	-- Inscription
+		prof(INSCRIPTION, {
 			i(137782),	-- Vantus Rune Technique: Grand Magistrix Elisande (Rank 3)			
 		}),
 		f(50,     {	-- Miscellaneous
@@ -805,7 +805,7 @@ profession(794, {	-- Archaeology
 			i(130908),	-- Quietwine Vial
 			i(130906),	-- Violetglass Vessel
 		}),
-		n(-17,    {	-- Quests
+		n(QUESTS, {
 			-- Key of Kalyndras
 			q(41178, {	-- Explosive Results
 				["provider"] = { "n", 103482 },	-- Tae'thelan Bloodwatcher <High Examiner>
@@ -913,7 +913,7 @@ profession(794, {	-- Archaeology
 			q(40350, {	-- Pristine Inert Leystone Charm
 				["lvl"] = 98,
 				["provider"] = { "i", 130922 },	-- Pristine Inert Leystone Charm
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(7, {	-- Pristine Inert Leystone Charm)
 						["achievementID"] = 10604,	-- Legion Curator
@@ -923,7 +923,7 @@ profession(794, {	-- Archaeology
 			q(40353, {	-- Pristine Nobleman's Letter Opener
 				["lvl"] = 98,
 				["provider"] = { "i", 130925 },	-- Pristine Nobleman's Letter Opener
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(10, {	-- Pristine Nobleman's Letter Opener)
 						["achievementID"] = 10604,	-- Legion Curator
@@ -933,7 +933,7 @@ profession(794, {	-- Archaeology
 			q(40352, {	-- Pristine Pre-War Highborne Tapestry
 				["lvl"] = 98,
 				["provider"] = { "i", 130924 },	-- Pristine
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(9, {	-- Pristine Pre-War Highborne Tapestry)
 						["achievementID"] = 10604,	-- Legion Curator
@@ -943,7 +943,7 @@ profession(794, {	-- Archaeology
 			q(40351, {	-- Pristine Quietwine Vial
 				["lvl"] = 98,
 				["provider"] = { "i", 130923 },	-- Pristine Quietwine Vial
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(8, {	-- Pristine Quietwine Vial)
 						["achievementID"] = 10604,	-- Legion Curator
@@ -953,7 +953,7 @@ profession(794, {	-- Archaeology
 			q(40349, {	-- Pristine Violetglass Vessel
 				["lvl"] = 98,
 				["provider"] = { "i", 130921 },	-- Pristine Violetglass Vessel
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(6, {	-- Pristine Violetglass Vessel)
 						["achievementID"] = 10604,	-- Legion Curator
@@ -963,7 +963,7 @@ profession(794, {	-- Archaeology
 		}),
 	}),
 	currency(1173, {	-- Highmountain Tauren
-		prof(755, {	-- Jewelcrafting
+		prof(JEWELCRAFTING, {
 			i(137867),	-- Design: Shadowruby Band (Rank 3)
 		}),
 		f(50,     {	-- Miscellaneous
@@ -973,7 +973,7 @@ profession(794, {	-- Archaeology
 			i(130915),	-- Stonewood Bow
 			i(130911),	-- Trailhead Drum
 		}),
-		n(-17,    {	-- Quests
+		n(QUESTS, {
 			-- Spirit of Eche'ro
 			q(41193, {	-- Laying to Rest
 				["provider"] = { "n", 103485 },	-- Lessah Moonwater <Archaeologist>
@@ -1028,7 +1028,7 @@ profession(794, {	-- Archaeology
 			q(40357, {	-- Pristine Drogbar Gem-Roller
 				["lvl"] = 98,
 				["provider"] = { "i", 130929 },	-- Pristine Drogbar Gem-Roller
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(14, {	-- Pristine Drogbar Gem-Roller
 						["achievementID"] = 10604,	-- Legion Curator
@@ -1038,7 +1038,7 @@ profession(794, {	-- Archaeology
 			q(40356, {	-- Pristine Hand-Smoothed Pyrestone
 				["lvl"] = 98,
 				["provider"] = { "i", 130928 },	-- Pristine Hand-Smoothed Pyrestone
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(13, {	-- Pristine Hand-Smoothed Pyrestone
 						["achievementID"] = 10604,	-- Legion Curator
@@ -1048,7 +1048,7 @@ profession(794, {	-- Archaeology
 			q(40355, {	-- Pristine Moosebone Fish-Hook
 				["lvl"] = 98,
 				["provider"] = { "i", 130927 },	-- Pristine Moosebone Fish-Hook
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(12, {	-- Pristine Moosebone Fish-Hook
 						["achievementID"] = 10604,	-- Legion Curator
@@ -1058,7 +1058,7 @@ profession(794, {	-- Archaeology
 			q(40358, {	-- Pristine Stonewood Bow
 				["lvl"] = 98,
 				["provider"] = { "i", 130930 },	-- Pristine Stonewood Bow
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(15, {	-- Pristine Stonewood Bow
 						["achievementID"] = 10604,	-- Legion Curator
@@ -1068,7 +1068,7 @@ profession(794, {	-- Archaeology
 			q(40354, {	-- Pristine Trailhead Drum
 				["lvl"] = 98,
 				["provider"] = { "i", 130926 },	-- Pristine Trailhead Drum
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(11, {	-- Pristine Trailhead Drum
 						["achievementID"] = 10604,	-- Legion Curator
@@ -1106,11 +1106,11 @@ profession(794, {	-- Archaeology
 			i(79915),	-- Warlord's Branding Iron
 			i(79917),	-- Worn Monument Ledger
 		}),
-		n(-17,  {	-- Quests
+		n(QUESTS, {
 			q(31793, {	-- Pristine Branding Iron
 				["lvl"] = 85,
 				["provider"] = { "i", 89176 },	-- Pristine Branding Iron
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(8, {	-- Pristine Branding Iron
 						["achievementID"] = 7612,	-- The Seat of Knowledge
@@ -1120,7 +1120,7 @@ profession(794, {	-- Archaeology
 			q(31791, {	-- Pristine Edicts of the Thunder King
 				["lvl"] = 85,
 				["provider"] = { "i", 89174 },	-- Pristine Edicts of the Thunder King
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(6, {	-- Pristine Edicts of the Thunder King
 						["achievementID"] = 7612,	-- The Seat of Knowledge
@@ -1130,7 +1130,7 @@ profession(794, {	-- Archaeology
 			q(31792, {	-- Pristine Iron Amulet
 				["lvl"] = 85,
 				["provider"] = { "i", 89175 },	-- Pristine Iron Amulet
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(7, {	-- Pristine Iron Amulet
 						["achievementID"] = 7612,	-- The Seat of Knowledge
@@ -1140,7 +1140,7 @@ profession(794, {	-- Archaeology
 			q(31786, {	-- Pristine Manacles of Rebellion
 				["lvl"] = 85,
 				["provider"] = { "i", 89169 },	-- Pristine Manacles of Rebellion
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(1, {	-- Pristine Manacles of Rebellion
 						["achievementID"] = 7612,	-- The Seat of Knowledge
@@ -1150,7 +1150,7 @@ profession(794, {	-- Archaeology
 			q(31794, {	-- Pristine Mogu Coin
 				["lvl"] = 85,
 				["provider"] = { "i", 85477 },	-- Pristine Mogu Coin
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(9, {	-- Pristine Mogu Coin
 						["achievementID"] = 7612,	-- The Seat of Knowledge
@@ -1160,7 +1160,7 @@ profession(794, {	-- Archaeology
 			q(31787, {	-- Pristine Mogu Runestone
 				["lvl"] = 85,
 				["provider"] = { "i", 89170 },	-- Pristine Mogu Runestone
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(2, {	-- Pristine Mogu Runestone
 						["achievementID"] = 7612,	-- The Seat of Knowledge
@@ -1170,7 +1170,7 @@ profession(794, {	-- Archaeology
 			q(31805, {	-- Pristine Monument Ledger
 				["lvl"] = 85,
 				["provider"] = { "i", 89209 },	-- Pristine Monument Ledger
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(10, {	-- Pristine Monument Ledger
 						["achievementID"] = 7612,	-- The Seat of Knowledge
@@ -1180,7 +1180,7 @@ profession(794, {	-- Archaeology
 			q(31789, {	-- Pristine Petrified Bone Whip
 				["lvl"] = 85,
 				["provider"] = { "i", 89172 },	-- Pristine Petrified Bone Whip
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(4, {	-- Pristine Petrified Bone Whip
 						["achievementID"] = 7612,	-- The Seat of Knowledge
@@ -1190,7 +1190,7 @@ profession(794, {	-- Archaeology
 			q(31788, {	-- Pristine Terracotta Arm
 				["lvl"] = 85,
 				["provider"] = { "i", 89171 },	-- Pristine Terracotta Arm
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(3, {	-- Pristine Terracotta Arm
 						["achievementID"] = 7612,	-- The Seat of Knowledge
@@ -1200,7 +1200,7 @@ profession(794, {	-- Archaeology
 			q(31790, {	-- Pristine Thunder King Insignia
 				["lvl"] = 85,
 				["provider"] = { "i", 89173 },	-- Pristine Thunder King Insignia
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(5, {	-- Pristine Thunder King Insignia
 						["achievementID"] = 7612,	-- The Seat of Knowledge
@@ -1281,11 +1281,11 @@ profession(794, {	-- Archaeology
 		n(-384, {	-- Neck
 			i(117385),	-- Sorcerer-King Toe Ring
 		}),
-		n(-17,  {	-- Quests
+		n(QUESTS, {
 			q(36767, {	-- Pristine Eye of Har'guun
 				["lvl"] = 100,
 				["provider"] = { "i", 114210 },	-- Pristine Eye of Har'guun the Blind
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(36, {	-- Pristine Eye of Har'guun
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -1298,7 +1298,7 @@ profession(794, {	-- Archaeology
 			q(36765, {	-- Pristine Gladiator's Shield
 				["lvl"] = 100,
 				["provider"] = { "i", 114208 },	-- Pristine Gladiator's Shield
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(34, {	-- Pristine Gladiator's Shield
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -1311,7 +1311,7 @@ profession(794, {	-- Archaeology
 			q(36770, {	-- Pristine Imperial Decree Stele
 				["lvl"] = 100,
 				["provider"] = { "i", 114213 },	-- Pristine Imperial Decree Stele
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(39, {	-- Pristine Imperial Decree Stele
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -1324,7 +1324,7 @@ profession(794, {	-- Archaeology
 			q(36766, {	-- Pristine Mortar and Pestle
 				["lvl"] = 100,
 				["provider"] = { "i", 114209 },	-- Pristine Mortar and Pestle
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(35, {	-- Pristine Mortar and Pestle
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -1337,7 +1337,7 @@ profession(794, {	-- Archaeology
 			q(36763, {	-- Pristine Ogre Figurine
 				["lvl"] = 100,
 				["provider"] = { "i", 114186 },	-- Pristine Ogre Figurine
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(32, {	-- Pristine Ogre Figurine
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -1350,7 +1350,7 @@ profession(794, {	-- Archaeology
 			q(36764, {	-- Pristine Pictogram Carving
 				["lvl"] = 100,
 				["provider"] = { "i", 114188 },	-- Pristine Pictogram Carving
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(33, {	-- Pristine Pictogram Carving
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -1363,7 +1363,7 @@ profession(794, {	-- Archaeology
 			q(36769, {	-- Pristine Rylak Riding Harness
 				["lvl"] = 100,
 				["provider"] = { "i", 114212 },	-- Pristine Rylak Riding Harness
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(38, {	-- Pristine Rylak Riding Harness
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -1376,7 +1376,7 @@ profession(794, {	-- Archaeology
 			q(36768, {	-- Pristine Stone Dentures
 				["lvl"] = 100,
 				["provider"] = { "i", 114211 },	-- Pristine Stone Dentures
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(37, {	-- Pristine Stone Dentures
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -1389,7 +1389,7 @@ profession(794, {	-- Archaeology
 			q(36762, {	-- Pristine Stone Manacles
 				["lvl"] = 100,
 				["provider"] = { "i", 114184 },	-- Pristine Stone Manacles
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(31, {	-- Pristine Stone Manacles
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -1402,7 +1402,7 @@ profession(794, {	-- Archaeology
 			q(36761, {	-- Pristine Stonemaul Succession Stone
 				["lvl"] = 100,
 				["provider"] = { "i", 114182 },	-- Pristine Stonemaul Succession Stone
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(30, {	-- Pristine Stonemaul Succession Stone
 						["achievementID"] = 9419,	-- Draenor Curator
@@ -1446,11 +1446,11 @@ profession(794, {	-- Archaeology
 			i(79898),	-- Twin Stein Set
 			i(79899),	-- Walking Cane
 		}),
-		n(-17,  {	-- Quests
+		n(QUESTS, {
 			q(31802, {	-- Pristine Apothecary Tins
 				["lvl"] = 85,
 				["provider"] = { "i", 89183 },	-- Pristine Apothecary Tins
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(18, {	-- Pristine Apothecary Tins
 						["achievementID"] = 7612,	-- The Seat of Knowledge
@@ -1460,7 +1460,7 @@ profession(794, {	-- Archaeology
 			q(31800, {	-- Pristine Carved Bronze Mirror
 				["lvl"] = 85,
 				["provider"] = { "i", 89181 },	-- Pristine Carved Brone Mirror
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(16, {	-- Pristine Carved Bronze Mirror
 						["achievementID"] = 7612,	-- The Seat of Knowledge
@@ -1470,7 +1470,7 @@ profession(794, {	-- Archaeology
 			q(31799, {	-- Pristine Empty Keg
 				["lvl"] = 85,
 				["provider"] = { "i", 89180 },	-- Pristine Empty Keg
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(15, {	-- Pristine Empty Keg
 						["achievementID"] = 7612,	-- The Seat of Knowledge
@@ -1480,7 +1480,7 @@ profession(794, {	-- Archaeology
 			q(31796, {	-- Pristine Game Board
 				["lvl"] = 85,
 				["provider"] = { "i", 85558 },	-- Pristine Game Board
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(12, {	-- Pristine Game Board
 						["achievementID"] = 7612,	-- The Seat of Knowledge
@@ -1490,7 +1490,7 @@ profession(794, {	-- Archaeology
 			q(31801, {	-- Pristine Gold-Inlaid Figurine
 				["lvl"] = 85,
 				["provider"] = { "i", 89182 },	-- Pristine Gold-Inlaid Figurine
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(17, {	-- Pristine Gold-Inlaid Figurine
 						["achievementID"] = 7612,	-- The Seat of Knowledge
@@ -1500,7 +1500,7 @@ profession(794, {	-- Archaeology
 			q(31795, {	-- Pristine Pandaren Tea Set
 				["lvl"] = 85,
 				["provider"] = { "i", 85557 },	-- Pristine Pandaren Tea Set
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(11, {	-- Pristine Pandaren Tea Set
 						["achievementID"] = 7612,	-- The Seat of Knowledge
@@ -1510,7 +1510,7 @@ profession(794, {	-- Archaeology
 			q(31803, {	-- Pristine Pearl of Yu'lon
 				["lvl"] = 85,
 				["provider"] = { "i", 89184 },	-- Pristine Pearl of Yu'lon
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(19, {	-- Pristine Pearl of Yu'lon
 						["achievementID"] = 7612,	-- The Seat of Knowledge
@@ -1520,7 +1520,7 @@ profession(794, {	-- Archaeology
 			q(31804, {	-- Pristine Standard of Niuzao
 				["lvl"] = 85,
 				["provider"] = { "i", 89185 },	-- Pristine Standard of Niuzao
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(20, {	-- Pristine Standard of Niuzao
 						["achievementID"] = 7612,	-- The Seat of Knowledge
@@ -1530,7 +1530,7 @@ profession(794, {	-- Archaeology
 			q(31797, {	-- Pristine Twin Stein Set
 				["lvl"] = 85,
 				["provider"] = { "i", 89178 },	-- Pristine Twin Stein Set
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(13, {	-- Pristine Twin Stein
 						["achievementID"] = 7612,	-- The Seat of Knowledge
@@ -1540,7 +1540,7 @@ profession(794, {	-- Archaeology
 			q(31798, {	-- Pristine Walking Cane
 				["lvl"] = 85,
 				["provider"] = { "i", 89179 },	-- Pristine Walking Cane
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(14, {	-- Pristine Walking Cane
 						["achievementID"] = 7612,	-- The Seat of Knowledge
@@ -1554,9 +1554,9 @@ profession(794, {	-- Archaeology
 		}),
 	}),
 	currency(401,  {	-- Tol'vir
-		prof(171, {	-- Alchemy
+		prof(ALCHEMY, {
 			i(64657, {	-- Canopic Jar
-				["requireSkill"] = 171,	-- Alchemy,
+				["requireSkill"] = ALCHEMY,
 				["g"] = {
 					i(67538),	-- Recipe: Vial of the Sands
 				},
@@ -1645,11 +1645,11 @@ profession(794, {	-- Archaeology
 			i(154915),	-- Rezan Idol
 			i(154914),	-- Urn of Passage
 		}),
-		n(-17,  {	-- Quests
+		n(QUESTS, {
 			q(51926, {	-- Pristine Akun'Jar Vase
 				["lvl"] = 110,
 				["provider"] = { "i", 154931 },	-- Pristine Akun'Jar Vase
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(7, {	-- Pristine Akun'Jar Vase
 						["achievementID"] = 12762,	-- Kul Tiran Curator
@@ -1664,7 +1664,7 @@ profession(794, {	-- Archaeology
 			q(51937, {	-- Pristine Blowgun of the Sethrak
 				["lvl"] = 110,
 				["provider"] = { "i", 160744 },	-- Pristine Blowgun of the Sethrak
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(12, {	-- Pristine Blowgun of the Sethrak
 						["achievementID"] = 12762,	-- Kul Tiran Curator
@@ -1679,7 +1679,7 @@ profession(794, {	-- Archaeology
 			q(51936, {	-- Pristine Bwonsamdi Voodoo Mask
 				["lvl"] = 110,
 				["provider"] = { "i", 154935 },	-- Pristine Bwonsamdi Voodoo Mask
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(11, {	-- Pristine Bwonsamdi Voodoo Mask
 						["achievementID"] = 12762,	-- Kul Tiran Curator
@@ -1694,7 +1694,7 @@ profession(794, {	-- Archaeology
 			q(51934, {	-- Pristine High Apothecary's Hood
 				["lvl"] = 110,
 				["provider"] = { "i", 154934 },	-- Pristine High Apothecary's Hood
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(10, {	-- Pristine High Apothecary's Hood
 						["achievementID"] = 12762,	-- Kul Tiran Curator
@@ -1709,7 +1709,7 @@ profession(794, {	-- Archaeology
 			q(51932, {	-- Pristine Rezan Idol
 				["lvl"] = 110,
 				["provider"] = { "i", 154933 },	-- Pristine Rezan Idol
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(9, {	-- Pristine Rezan Idol
 						["achievementID"] = 12762,	-- Kul Tiran Curator
@@ -1724,7 +1724,7 @@ profession(794, {	-- Archaeology
 			q(51929, {	-- Pristine Urn of Passage
 				["lvl"] = 110,
 				["provider"] = { "i", 154932 },	-- Pristine Urn of Passage
-				["requireSkill"] = 794,	-- Archaeology
+				["requireSkill"] = ARCHAEOLOGY,
 				["g"] = {
 					crit(8, {	-- Pristine Urn of Passage
 						["achievementID"] = 12762,	-- Kul Tiran Curator

@@ -17,7 +17,7 @@ _.ExpansionFeatures =
 								},
 							}),
 						}),
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(37086, {	-- Salvaging the Situation
 								["provider"] = { "n", 77378 },	-- Hennick Helmsley
 								["races"] = ALLIANCE_ONLY,

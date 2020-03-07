@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(85, {	-- Orgrimmar
-			n(-16, {	-- Rares 
+			n(RARES, {
 				n(130911, {	-- Charles Gastly
 					["coord"] = { 50.8, 55.1, 85 },
 					["races"] = ALLIANCE_ONLY,

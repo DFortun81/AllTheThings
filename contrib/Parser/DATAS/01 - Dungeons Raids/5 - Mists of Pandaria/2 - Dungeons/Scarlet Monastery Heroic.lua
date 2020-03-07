@@ -14,7 +14,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			d(2, {		-- Heroic
 				["lvl"] = 90,
 				["g"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(31515, {	-- Blades of the Anointed
 							["provider"] = { "n", 64838 },	-- Hooded Crusader
 						}),

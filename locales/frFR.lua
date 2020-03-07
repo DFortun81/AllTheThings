@@ -966,6 +966,8 @@ for key,value in pairs({
 	[303016] = "|cFFFFFFFFStep 14:|r Caillou ordinaire XIII",
 	[303017] = "|cFFFFFFFFStep 13:|r Caillou ordinaire XII",
 	[303018] = "|cFFFFFFFFStep 12:|r Caillou ordinaire XI",
+	[307265] = "Avis de recherche",
+	[307748] = "Lettre de la KapitalRisk",
 	[310709] = "Coffre détrempé",
 	[311218] = "Xal’atath, lame de l’Empire noir",
 	[311902] = "Pièces détachées",

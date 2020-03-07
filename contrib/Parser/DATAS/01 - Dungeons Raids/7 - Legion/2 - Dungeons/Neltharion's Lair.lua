@@ -56,7 +56,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 			}),
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(42454, {	-- The Hammer of Khaz'goroth
 					["sourceQuests"] = { 39781 },	-- Neltharion's Lair: Death to the Underking
 					["icon"] = "Interface\\Icons\\inv_mace_1h_titanpillar_b_01",

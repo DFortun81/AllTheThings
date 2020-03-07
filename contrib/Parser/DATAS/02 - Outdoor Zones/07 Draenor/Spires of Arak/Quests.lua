@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(542, {	-- Spires of Arak
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				n(-391, {	-- Stroktron Brewery
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

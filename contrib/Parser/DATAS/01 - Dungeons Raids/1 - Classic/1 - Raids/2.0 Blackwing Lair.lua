@@ -12,7 +12,7 @@ _.Instances = { tier(1, {	-- Classic
 		["maps"] = { 288, 289, 290 },
 		["coord"] = { 64.29, 71.02, 33 },	-- Blackwing Lair, Blackrock Mountain [Blackrock Spire]
 		["groups"] = {
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(19434, {	-- Band of Dark Dominion
 					["crs"] = {
 						12457,	-- Blackwing Spellbinder

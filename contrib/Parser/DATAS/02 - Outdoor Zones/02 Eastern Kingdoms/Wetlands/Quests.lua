@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(56, {	-- Wetlands
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(25726, {	-- A Dumpy Job
 					["sourceQuests"] = { 25722 },	-- Sedimentary, My Dear
 					["coord"] = { 57.4, 71.4, 56 },

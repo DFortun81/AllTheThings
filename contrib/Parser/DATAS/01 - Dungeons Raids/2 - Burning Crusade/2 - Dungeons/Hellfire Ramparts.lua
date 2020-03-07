@@ -8,7 +8,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["mapID"] = 347,
 		["coord"] = { 47.65, 53.57, 100 },	-- Hellfire Ramparts, Hellfire Peninsula
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(29529, {	-- Demons in the Citadel
 					["provider"] = { "n", 54603 },	-- Advance Scout Chadwick
 					["races"] = ALLIANCE_ONLY,
@@ -200,7 +200,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					}),
 				}
 			}),
-			n(0),	-- Zone Drops -- Note!! Blank so when map merges into the list it's in this spot rather than top
+			n(ZONEDROPS),	-- Note!! Blank so when map merges into the list it's in this spot rather than top
 		},
 	}),
 })};

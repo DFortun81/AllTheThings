@@ -3035,7 +3035,7 @@ _.GearSets =
 					}),
 				}),
 			}),
-			prof(356, {	-- Fishing
+			prof(FISHING, {
 				i(133755, {	-- Underlight Angler
 					["model"] = "World\\Expansion06\\Doodads\\Artifact\\doodad_misc_2H_artifactfishingpole.mdx",
 					["modelScale"] = 1.25,

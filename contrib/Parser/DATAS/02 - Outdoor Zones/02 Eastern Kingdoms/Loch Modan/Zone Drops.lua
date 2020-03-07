@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(48, {	-- Loch Modan
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				un(43, n(1222, {	-- Dark Iron Sapper
 					un(7, i(2274)),	-- Sapper's Gloves
 				})),

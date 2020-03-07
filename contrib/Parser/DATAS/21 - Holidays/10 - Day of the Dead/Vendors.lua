@@ -4,7 +4,7 @@
 _.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
 {
 	holiday(307365, {	-- Day of the Dead
-		n(-2, {	-- Vendors
+		n(VENDORS, {
 			n(34382, {	-- Chapman
 				["coords"] = {
 					{ 47.8, 55.9, 97 },		-- Azuremyst Isle

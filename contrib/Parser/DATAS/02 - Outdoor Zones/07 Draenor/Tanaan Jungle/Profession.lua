@@ -7,7 +7,7 @@ _.Zones =
 		m(534, {	-- Tanaan Jungle
 			n(-38, {	-- Profession
 				o(243334, {	-- Withered Herb
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 					["g"] = {
 						n(95132, {	-- Disturbed Podling
 							i(118595),	-- Nightshade Sproutling
@@ -15,7 +15,7 @@ _.Zones =
 					},
 				}),
 				n(94605, {	-- Apexis Gemcutter
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 					["description"] = "In order to learn these recipes, you have to take the appropriate gemcutter module to this NPC and then right-click to learn how to craft it.",
 					["coord"] = { 25.8, 39.7, 534 },
 					["g"] = {

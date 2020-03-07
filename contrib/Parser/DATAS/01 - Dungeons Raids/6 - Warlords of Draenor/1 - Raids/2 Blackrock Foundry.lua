@@ -12,7 +12,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["coord"] = { 51.55, 27.23, 543 },	-- Gorgrond, Draenor
 		["g"] = {
 			d(17, {		-- LFR
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					un(40, i(115510, {	-- Elemental Rune
 						["g"] = {
 							un(40, i(115509)),	-- Elemental Tablet
@@ -257,7 +257,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				}),
 			}),
 			d(14, {		-- Normal
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(37029, {	-- Sigil of the Black Hand
 						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
 						["description"] = "The quest giver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Normal Difficulty each week.",
@@ -267,7 +267,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						},
 					}),
 				}),
-				n(0, {		-- Zone Drop
+				n(ZONEDROPS, {
 					i(119332),	-- Bracers of Darkened Skies
 					i(119333),	-- Bracers of Shattered Limbs
 					i(119331),	-- Bracers of Visceral Force
@@ -836,13 +836,13 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 			}),
 			d(15, {		-- Heroic
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(37030, {	-- Sigil of the Black Hand [Heroic]
 						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
 						["altQuests"] = { 37031 },	-- Sigil of the Black Hand [Mythic]
 					}),
 				}),
-				n(0, {		-- Zone Drop
+				n(ZONEDROPS, {
 					i(119334),	-- Bracers of Callous Disregard
 					i(119332),	-- Bracers of Darkened Skies
 					i(119333),	-- Bracers of Shattered Limbs
@@ -1405,13 +1405,13 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				}))
 			}),
 			d(16, {		-- Mythic
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(37031, {	-- Sigil of the Black Hand [Mythic]
 						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
 						["description"] = "The quest giver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Mythic Difficulty each week.",
 					}),
 				}),
-				n(0, {		-- Zone Drop
+				n(ZONEDROPS, {
 					i(119334),	-- Bracers of Callous Disregard
 					i(119332),	-- Bracers of Darkened Skies
 					i(119333),	-- Bracers of Shattered Limbs

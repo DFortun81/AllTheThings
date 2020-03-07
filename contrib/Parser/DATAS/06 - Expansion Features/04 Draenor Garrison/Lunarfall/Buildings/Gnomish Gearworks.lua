@@ -27,7 +27,7 @@ _.ExpansionFeatures =
 								},
 							}),
 						}),
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(37091, {	-- Unconventional Inventions
 								["provider"] = { "n", 84286 },	-- Zee
 								["races"] = ALLIANCE_ONLY,

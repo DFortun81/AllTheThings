@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(641, {	-- Val'sharah
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(38889, {	-- Adopting the Adorable
 					["description"] = "|cff66ccffYou have to kill Jinikki the Puncturer to get this quest.|n",
 					["coord"] = { 53.0, 87.7, 641 },	-- cave entrance

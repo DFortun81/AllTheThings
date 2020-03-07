@@ -1,4 +1,4 @@
-profession(773, {	-- Inscription
+profession(INSCRIPTION, {
 	filter(200, {	-- Recipes
 	-- Reviewed and updated as of 11.23.2018 BfA 8.0, leaving all items from _Automation in for easier future updates
 		{	-- Inscription

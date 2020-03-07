@@ -65,7 +65,7 @@ _.ExpansionFeatures =
 						ach(9203),		-- Shadow Council Invasion
 						ach(9206),		-- Shadowmoon Clan Invasion
 					}),
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(36171, {	-- Botani Invasion!
 							["repeatable"] = true,
 							["provider"] = { "n", 78564 },	-- Sergeant Crowler

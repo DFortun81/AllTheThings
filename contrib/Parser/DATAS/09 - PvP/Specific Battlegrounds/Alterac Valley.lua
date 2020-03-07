@@ -15,7 +15,7 @@ _.PVP =
 					["races"] = HORDE_ONLY,
 					["icon"] = "Interface\\Icons\\inv_jewelry_frostwolftrinket_05",
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(7385, {	-- A Gallon of Blood
 								["provider"] = { "n", 13236 },	-- Primalist Thurloga
 								["coord"] = { 50.1, 85.1, 91 },
@@ -174,7 +174,7 @@ _.PVP =
 								},
 							}),
 						}),
-						n(-2, {	-- Vendors
+						n(VENDORS, {
 							n(13219, {	-- Jorek Ironside
 								["itemID"] = 137642,	-- Mark of Honor
 								["coord"] = { 58.1, 33.6, 25 },
@@ -319,7 +319,7 @@ _.PVP =
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\inv_jewelry_stormpiketrinket_05",
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(7081, {	-- Alterac Valley Graveyards
 								["provider"] = { "n", 13777 },	-- Sergeant Durgen Stormpike
 								["coord"] = { 43.0, 43.8, 25 },
@@ -491,7 +491,7 @@ _.PVP =
 								["lvl"] = 51,
 							}),
 						}),
-						n(-2, {	-- Vendors
+						n(VENDORS, {
 							n(154478, {	-- Prospector Stonehewer
 							--	["coord"] = { , 91 },
 								["races"] = ALLIANCE_ONLY,
@@ -630,7 +630,7 @@ _.PVP =
 						}),
 					},
 				}),
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(18229, {	-- Nat Pagle's Guide to Extreme Anglin'
 						["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nLooted from Player Corpses in Alterac Valley.",
 					}),

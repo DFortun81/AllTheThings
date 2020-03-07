@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(26, {	-- The Hinterlands
-			n(-17, { 	-- Quests
+			n(QUESTS, {
 				q(26486, {	-- 99 Bottles of Booze on the Beach
 					["provider"] = { "n", 43109 },	-- Dron Blastbrew
 					["coord"] = { 66.2, 44.2, 26 },

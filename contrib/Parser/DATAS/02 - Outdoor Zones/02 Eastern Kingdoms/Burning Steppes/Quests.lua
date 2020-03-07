@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(36, {	-- Burning Steppes
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(28316, {	-- A Deal With a Dragon
 					["provider"] = { "n", 48306 },	-- John J. Keeshan
 					["coord"] = { 73.5, 67.2, 36 },
@@ -64,7 +64,7 @@ _.Zones =
 				}),
 				q(44926, {	-- A Familiar Axe to Grind
 					["provider"] = { "i", 142344 },	-- Broken Axe Blade
-					["requireSkill"] = 164,	-- Classic Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["crs"] = {
 						48201,	-- Blackrock Sergeant
 						7027,	-- Blackrock Slayer
@@ -912,7 +912,7 @@ _.Zones =
 					["provider"] = { "n", 115805 },	-- Hoddruc Bladebender
 					["coord"] = { 46.8, 44.9, 36 },
 					["sourceQuests"] = { 44926 },	-- A Familiar Axe to Grind
-					["requireSkill"] = 164,	-- Classic Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						i(142346),	-- Plans: Bleakwood Hew
 					},

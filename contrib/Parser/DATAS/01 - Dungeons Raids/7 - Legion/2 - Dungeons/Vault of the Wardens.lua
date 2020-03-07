@@ -7,10 +7,10 @@ _.Instances = { tier(7, {	-- Legion
 		["coord"] = { 48.0, 82.1, 630 },
 		["maps"] = { 710, 711, 712 },
 		["g"] = {
-			n(-17, {
+			n(QUESTS, {
 				i(127877, {	-- Bendy Glass Tubes
 					["provider"] = { "n", 105824 },	-- Grimoira
-					["requireSkill"] = 171,	-- Alchemy
+					["requireSkill"] = ALCHEMY,
 					["g"] = {
 						q(39343),	-- Vault of the Wardens: Bendy Glass Tubes
 					},

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(106, {	-- Bloodmyst Isle
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(22060, {	-- Fenissa the Assassin
 					["coords"] = {	-- need to verify top spawn/path at vector coil
 						{ 40.1, 61.2, 106 },	-- cryo-core

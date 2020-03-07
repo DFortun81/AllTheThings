@@ -149,7 +149,7 @@ _.Zones =
 					},
 				}),
 				o(226967, {	-- Lagoon Pool
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 					["modelScale"] = 10,
 					["questID"] = 33926,
 					["model"] = "World\\Dungeon\\WellofEternity\\WOE_Fountain_Pool.mdx",

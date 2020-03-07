@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 				garrisonBuilding(10,  {	-- War Mill (rank 1: 8, rank 2: 9, rank 3: 10)
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(37043, {	-- Scraps of Iron
 								["races"] = HORDE_ONLY,
 								["provider"] = { "n", 79815 },	-- Gun'lek
@@ -18,7 +18,7 @@ _.ExpansionFeatures =
 								},
 							}),
 						}),
-						n(-2,  {	-- Vendors
+						n(VENDORS, {
 							n(79815, {	-- Grun'lek - Quartermaster	-- War Mill
 								["races"] = HORDE_ONLY,
 								["g"] = {

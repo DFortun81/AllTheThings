@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(119, {	-- Sholazar Basin
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(28040, {	-- Mardan Thunderhoof <Gunsmith>
 					["classes"] = { 3 },	-- Hunter
 					["coord"] = { 27.2, 59.6, 119 },

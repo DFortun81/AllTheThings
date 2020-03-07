@@ -9,7 +9,7 @@ _.Zones =
 				["creatureID"] = 23007,	-- Paulsta'ats <Consortium Quartermaster>
 				["g"] = {
 					ach(902),	-- Chief Exalted Officer
-					n(-17,  {	-- Quests
+					n(QUESTS, {
 						q(9914, {	-- A Head Full of Ivory
 						--	NOT A TRUE BREADCRUMB.  if we come up with a way to invalidate a quest by maxReputation level, then this tag should be removed.
 							["provider"] = { "n", 18333 },	-- Shadrek
@@ -94,7 +94,7 @@ _.Zones =
 							["maxReputation"] = { 933, FRIENDLY },
 						}),	
 					}),
-					n(-2,   {	-- Vendors
+					n(VENDORS, {
 						n(23007,   {	-- Paulsta'ats <Consortium Quartermaster>
 							["coord"] = { 30.5, 56.9, 107 },
 							["g"] = {
@@ -157,7 +157,7 @@ _.Zones =
 					ach(901, {	-- Mag'har of Draenor
 						["races"] = HORDE_ONLY,
 					}),
-					n(-17,  {	-- Quests
+					n(QUESTS, {
 						q(10478, {	-- More Warbeads!
 							["provider"] = { "n", 18407 },	-- Warden Bullrok
 							["coord"] = { 55.8, 37.8, 107 },
@@ -172,7 +172,7 @@ _.Zones =
 							
 						}),
 					}),
-					n(-2,   {	-- Vendors
+					n(VENDORS, {
 						n(20241, {	-- Provisioner Nasela <Mag'har Quartermaster>
 							["coord"] = { 53.4, 36.8, 107 },
 							["coord"] = { 55.8, 37.8, 107 },
@@ -212,7 +212,7 @@ _.Zones =
 					ach(899, {	-- Oh My, Kurenai
 						["races"] = ALLIANCE_ONLY,
 					}),
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(10476, {	-- Fierce Enemies
 							["provider"] = { "n", 18408 },	-- Warden Moi'bff Jill
 							["coord"] = { 54.8, 70.8, 107 },
@@ -226,7 +226,7 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
-					n(-2,  {	-- Vendors
+					n(VENDORS, {
 						n(20240, {	-- Trader Narasu <Kurenai Quartermaster>
 							["coord"] = { 54.5, 75.1, 107 },
 							["races"] = ALLIANCE_ONLY,

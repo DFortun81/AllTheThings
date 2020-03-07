@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(35, {	-- Blackrock Mountain
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(8961, {	-- Three Kings of Flame
 					["provider"] = { "n", 16033 },	-- Bodley
 					["coord"] = { 20.6, 29.1, 35 },

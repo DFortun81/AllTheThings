@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(23, {	-- Eastern Plaguelands
 			m(124, {	-- The Scarlet Enclave
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					["classes"] = { 6 },	-- Death Knight
 					["g"] = {
 						q(12738, {	-- A Cry For Vengeance!

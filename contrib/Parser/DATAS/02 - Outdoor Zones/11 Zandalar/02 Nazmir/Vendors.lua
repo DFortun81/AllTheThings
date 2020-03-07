@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(875, {	-- Zandalar
 		m(863, {	-- Nazmir
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(126833, {	-- Blind Wunja <Medicine Woman>
 					["coord"] = { 35.4, 55.2, 863 },
 					["g"] = {

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(66, {	-- Desolace
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(12045, {	-- Hae'Wilani <Axecrafter>
 					["coord"] = { 25.6, 70.8, 66 },
 					["races"] = HORDE_ONLY,

@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(21, {	-- Silverpine Forest
 			m(217, {	-- Ruins of Gilneas
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(27406, {	-- A Man Named Godfrey
 						["provider"] = { "n", 45312 },	-- Deathstalker Commander Belmont (secondary QG ID 45474)
 						["coord"] = { 72.9, 30.1, 217 },

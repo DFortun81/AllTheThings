@@ -62,7 +62,7 @@ _.ExpansionFeatures =
 				ach(14060),	-- Unwavering Resolve
 				ach(14061),	-- We have the Technology
 			}),
-			n(-17, {	-- Quests	-- TODO Seperate these mog items out at a later point?
+			n(QUESTS, {	-- TODO Seperate these mog items out at a later point?
 				["description"] = "Mogs are looted at the end from a full clear with that specific mask on.",
 				["maps"] = {
 					1469,	-- Org
@@ -106,7 +106,7 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-			n(-16, {	-- Rares
+			n(RARES, {
 				["maps"] = {
 					1469,	-- Orgrimmar
 					1470,	-- Stormwind
@@ -115,11 +115,11 @@ _.ExpansionFeatures =
 					n(160708, {	-- Mail Muncher
 						["description"] = "Click the mailbox!",
 						["coords"] = {
-							{ 40.0, 78.4, 1469 },	-- Org
-							{ 52.8, 76.2, 1469 },	-- Org
-							{ 60.2, 51.0, 1469 },	-- Org
-							{ 67.6, 39.2, 1469 },	-- Org
-							{ 39.2, 49.1, 1469 },	-- Org
+							{ 40.0, 78.4, 1469 },	-- Orgrimmar
+							{ 52.8, 76.2, 1469 },	-- Orgrimmar
+							{ 60.2, 51.0, 1469 },	-- Orgrimmar
+							{ 67.6, 39.2, 1469 },	-- Orgrimmar
+							{ 39.2, 49.1, 1469 },	-- Orgrimmar
 							{ 61.8, 75.6, 1470 },	-- Stormwind
 							{ 54.8, 57.8, 1470 },	-- Stormwind
 							{ 62.0, 30.6, 1470 },	-- Stormwind

@@ -6,7 +6,7 @@ _.ExpansionFeatures =
 {
 	n(-10057, {	-- War Effort
 		n(-233, {	-- War Front: The Battle for Stromgarde
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(53673, {	-- Armor Up!
 					["races"] = ALLIANCE_ONLY,
 				}),

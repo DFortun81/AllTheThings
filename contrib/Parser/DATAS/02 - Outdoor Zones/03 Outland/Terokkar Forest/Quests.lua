@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(108, {	-- Terokkar Forest
-			n(-17, { 	-- Quests
+			n(QUESTS, {
 				q(10914, {	-- A Hero Is Needed
 					["provider"] = { "n", 22446 },	-- Commander Ra'vaj
 					["coord"] = { 31.0, 76.1, 108 },

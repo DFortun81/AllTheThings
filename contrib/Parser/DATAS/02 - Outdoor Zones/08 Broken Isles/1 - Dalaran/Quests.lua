@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, { 	-- The Broken Isles
 		m(627, { 	-- Dalaran
-			n(-17,  {	-- Quests
+			n(QUESTS, {
 				i(122293, {	-- Trans-Dimensional Bird Whistle
 					["description"] = "If you see this item listed and you know the toy, it is likely you need the Pepe appearance that spawns in this zone.",
 					["collectible"] = false,
@@ -765,7 +765,8 @@ _.Zones =
 				q(44338, {	-- Goddess Watch Over You
 					["provider"] = { "n", 113686 },	-- Archmage Khadgar
 				}),
-				q(46744, {	-- Greater Power for Greater Threats -- removed?
+				q(46744, {	-- Greater Power for Greater Threats
+					["u"] = 40,
 					["isBreadcrumb"] = true,
 					["providers"] = {
 						{ "n", 90417 },	-- Archmage Khadgar
@@ -967,12 +968,6 @@ _.Zones =
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
-				}),
-				q(42594, {	-- Move Like No Other
-					["sourceQuests"] = { 42593 },	-- The Arcane Way
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 25.7, 51.5, 627 },
-					["provider"] = { "n", 107968 },	-- Archmage Lan'dalock
 				}),
 				q(45909, {	-- Navarrogg's Gift
 					["sourceQuests"] = { 45627 },	-- Feltotem's Fall

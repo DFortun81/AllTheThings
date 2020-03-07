@@ -118,7 +118,7 @@ _.GearSets =
 									["itemID"] = 170721,	-- Streamtalker Ring of Destruction
 								},
 								{	-- Streamtalker Stone of Destruction [Elemental]
-									["itemID"] = 170732,	-- Streamtalker Stone of Destruction
+									["itemID"] = 170723,	-- Streamtalker Stone of Destruction
 								},
 							},
 						},

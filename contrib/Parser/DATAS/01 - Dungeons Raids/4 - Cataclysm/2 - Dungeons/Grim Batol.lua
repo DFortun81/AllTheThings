@@ -10,7 +10,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["coord"] = { 19.2, 54.2, 241 },
 		["g"] = {
 			d(1,  {	-- Normal
-				n(-17, {	-- Quests 				
+				n(QUESTS, { 				
 					q(28854, {	-- Closing A Dark Chapter
 						i(66933),	-- Breastplate of the Witness
 						i(66935),	-- Eradicator's Bracers
@@ -22,7 +22,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(66938),	-- Tooranu's Spaulders
 					}),
 				}),
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					["crs"] = {
 						39415,	-- Ascended Flameseeker
 						40272,	-- Ascended Rockbreaker

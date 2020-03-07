@@ -5,7 +5,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 {
 	holiday(235485, {	-- Feast of Winter Veil
 		["g"] = {
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(52358, {	-- Craggle Wobbletop
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

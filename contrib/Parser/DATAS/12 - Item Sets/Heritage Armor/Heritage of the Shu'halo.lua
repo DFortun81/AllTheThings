@@ -15,7 +15,7 @@ _.GearSets =
 			i(170063),	-- Ancestral Chieftain's Totem
 			i(168295),	-- Ancestral Chieftain's Wristbands
 			i(167860),	-- Ancient Tauren Talisman (not collectible, just here so it's not in Unsorted)
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(54759, {	-- When Spririts Whisper	
 					["provider"] = { "n", 149088 },	-- Spiritwalker Isahi
 					["coord"] = { 39.1, 79.0, 85 },

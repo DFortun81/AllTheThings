@@ -6,7 +6,7 @@ _.Zones =
 	m(101, {	-- Outland
 		m(109, {	-- Netherstorm
 			n(-40, {	-- Legacy
-				n(-2, {	-- Vendors
+				n(VENDORS, {
 					n(34094, {	-- Grex Brainboiler <Veteran Arena Vendor> [Note: Yes, two NPCs with same name. One is removed]
 						["u"] = 43,	-- Removed NPCs
 						["g"] = {

@@ -20,7 +20,7 @@ _.Zones =
 						["coord"] = { 30.6, 48.4, 622 },
 					}),
 				}),
-				n(-17,  {	-- Quests
+				n(QUESTS, {
 					q(36630 , {	-- A Surly Dwarf
 						["provider"] = { "n", 86069 },	-- Lieutenant Howell
 						["coord"] = { 35.6, 75.1, 622 },
@@ -168,7 +168,7 @@ _.Zones =
 						["lvl"] = 100,
 					}),
 				}),
-				n(-2,  {	-- Vendors
+				n(VENDORS, {
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						n(87052, {	-- Artificer Harlaan <Jewelcrafting Designs>

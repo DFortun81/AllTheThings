@@ -3,7 +3,7 @@
 -- marking something unobtainable or faction only, or adding a new recipe that is
 -- not yet in the automation.
 
-profession(165, {	-- Leatherworking
+profession(LEATHERWORKING, {
 	filter(200, {
 		{
 			["name"] = "Pandaria Patterns",

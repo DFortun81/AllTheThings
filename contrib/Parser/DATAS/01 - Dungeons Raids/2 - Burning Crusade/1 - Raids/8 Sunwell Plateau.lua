@@ -13,7 +13,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		},
 		["coord"] = { 44.28, 45.71, 122 },	-- Sunwell Plateau, Isle of Quel'Danas
 		["groups"] = {
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				--Note!! All items are CRS'ed as of October 25, 2018
 				i(35202, {	-- Design: Amulet of Flowing Life
 					["crs"] = {

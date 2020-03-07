@@ -5,7 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-10057, {	-- War Effort
 		m(62, {	-- Darkshore
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(54050, {	-- Aftermath
 					["provider"] = { "n", 146601 },	-- Sira Moonwarden
 					["lvl"] = 120,

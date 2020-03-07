@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(78, {	-- Un'Goro Crater
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(3941,  {	-- A Gnome's Assistance
 					["u"] = 40,
 					["provider"] = { "n", 8737 },	-- Linken
@@ -43,7 +43,7 @@ _.Zones =
 				q(45055, {	-- A Taste of Their Own Medicine
 					["provider"] = { "n", 115923 },	-- Ko'Zan
 					["coord"] = { 43.6, 41.4, 78 },
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["sourceQuests"] = {
 						45044,	-- Weapon No More
 						45051,	-- Reverse Blacksmithing (alliance-only criteria)
@@ -403,7 +403,7 @@ _.Zones =
 					["coord"] = { 43.6, 41.4, 78 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 45044,	-- Weapon No More
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 				}),
 				q(3882,  {	-- Roll the Bones
 					["u"] = 40,
@@ -426,7 +426,7 @@ _.Zones =
 					["provider"] = { "n", 115923 },	-- Ko'Zan
 					["coord"] = { 43.6, 41.4, 78 },
 					["sourceQuest"] = 45055,	-- A Taste of Their Own Medicine
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						i(142383),	-- Plans: Darkspear
 					},

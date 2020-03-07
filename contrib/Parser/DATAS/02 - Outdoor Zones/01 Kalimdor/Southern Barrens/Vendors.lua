@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(199, {	-- Southern Barrens
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(44283, {	-- Camran <Mail Armor>
 					["coord"] = { 67.4, 48.2, 199 },
 					["races"] = ALLIANCE_ONLY,

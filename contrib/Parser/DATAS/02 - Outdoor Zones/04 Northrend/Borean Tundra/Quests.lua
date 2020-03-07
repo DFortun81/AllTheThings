@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(114, {	-- Borean Tundra
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(11718, {	-- A Bot in Mammoth's Clothing
 					["coord"] = { 57.0, 20.1, 114 },
 					["races"] = ALLIANCE_ONLY,
@@ -250,13 +250,13 @@ _.Zones =
 					["coord"] = { 57.4, 72.2, 114 },
 					["provider"] = { "n", 27001 },	-- Darin Goodstitch
 					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = 197,	-- Tailoring
+					["requireSkill"] = TAILORING,
 				}),
 				q(13270, {	-- Cloth Scavenging (H)
 					["coord"] = { 41.6, 53.4, 114 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26969 },	-- Raenah
-					["requireSkill"] = 197,	-- Tailoring
+					["requireSkill"] = TAILORING,
 				}),
 				q(13412, {	-- Corastrasza
 					["provider"] = { "n", 26110 },	-- Librarian Serrah
@@ -540,13 +540,13 @@ _.Zones =
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26997 },	-- Alestos
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 				}),
 				q(13002, {	-- Gem Perfection (H)
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26982 },	-- Geba'li
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 				}),
 				q(11673, {	-- Get Me Outa Here!
 					["coord"] = { 55.5, 12.5, 114 },

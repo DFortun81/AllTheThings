@@ -14,9 +14,9 @@ _.ExpansionFeatures =
 								i(86596), 	-- Nat's Fishing Chair
 							}),
 						}),
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(36517, {	-- Abyssal Gulper Eel
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 								["isDaily"] = true,
 								["provider"] = { "n", 77733 },	-- Ron Ashton
@@ -33,13 +33,13 @@ _.ExpansionFeatures =
 								},
 							}),
 							q(36802, {	-- Abyssal Gulper Lunker
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 116818, 1 }, },	-- Abyssal Gulper Lunker
 							}),
 							q(36515, {	-- Blackwater Whiptail
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 								["isDaily"] = true,
 								["provider"] = { "n", 77733 },	-- Ron Ashton
@@ -50,19 +50,19 @@ _.ExpansionFeatures =
 								},
 							}),
 							q(36803, {	-- Blackwater Whiptail Lunker
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 116817, 1 }, },	-- Blackwater Whiptail Lunker
 							}),
 							q(36804, {	-- Blind Lake Lunker
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 116820, 1 }, },	-- Blind Lake Lunker
 							}),
 							q(36514, {	-- Blind Lake Sturgeon
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 								["isDaily"] = true,
 								["provider"] = { "n", 77733 },	-- Ron Ashton
@@ -73,7 +73,7 @@ _.ExpansionFeatures =
 								},
 							}),
 							q(36513, {	-- Fat Sleeper
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 								["isDaily"] = true,
 								["provider"] = { "n", 77733 },	-- Ron Ashton
@@ -84,19 +84,19 @@ _.ExpansionFeatures =
 								},
 							}),
 							q(36805, {	-- Fat Sleeper Lunker
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 116821, 1 }, },	-- Fat Sleeper Lunker
 							}),
 							q(39283, {	-- Felmouth Frenzy Lunker
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 127994, 1 }, },	-- Felmouth Frenzy Lunker
 							}),
 							q(36510, {	-- Fire Ammonite
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 								["isDaily"] = true,
 								["provider"] = { "n", 77733 },	-- Ron Ashton
@@ -107,13 +107,13 @@ _.ExpansionFeatures =
 								},
 							}),
 							q(36800, {	-- Fire Ammonite Lunker
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 116819, 1 }, },	-- Fire Ammonite Lunker
 							}),
 							q(36511, {	-- Jawless Skulker
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
 								["isDaily"] = true,
 								["provider"] = { "n", 77733 },	-- Ron Ashton
@@ -124,19 +124,19 @@ _.ExpansionFeatures =
 								},
 							}),
 							q(36806, {	-- Jawless Skulker Lunker
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 116822, 1 }, },	-- Jawless Skulker Lunker
 							}),
 							q(38406, {	-- Sea Scorpion Lunker
-								["requireSkill"] = 356,	-- Fishing
+								["requireSkill"] = FISHING,
 								["repeatable"] = true,
 								["provider"] = { "n", 85984 },	-- Nat Pagle
 								["cost"] = { { "i", 122696, 1 }, },	-- Sea Scorpion Lunker
 							}),
 						}),
-						n(-16, {	-- Rares
+						n(RARES, {
 							i(118380, {	-- Hightfish Cap
 								["collectible"] = false,
 								["u"] = 15,
@@ -160,7 +160,7 @@ _.ExpansionFeatures =
 								}),
 							}),
 						}),
-						n(-2,  {	-- Vendors
+						n(VENDORS, {
 							n(85984, {	--  Nat Pagle <Master Fisherman>
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {

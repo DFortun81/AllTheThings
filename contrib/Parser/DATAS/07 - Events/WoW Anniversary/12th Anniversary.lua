@@ -45,8 +45,7 @@ _.WorldEvents =
 					},
 				},
 			},
-			{	-- Quests
-				["npcID"] = -17,	-- Quests
+			n(QUESTS, {
 				["g"] = {
 					{	-- A Time to Reflect
 						["questID"] = 43461,	-- A Time to Reflect
@@ -71,9 +70,8 @@ _.WorldEvents =
 						--Was going to list it in description, but too many and terrible looking
 					},
 				},
-			},
-			{	-- Vendors
-				["npcID"] = -2,		-- Vendors
+			}),
+			n(VENDORS, {
 				["g"] = {
 					{	-- Historian Jupa [Horde]
 						["npcID"] = 110035,		-- Historian Jupa
@@ -148,7 +146,7 @@ _.WorldEvents =
 						},
 					},
 				},
-			},
+			}),
 		},
 	},
 };

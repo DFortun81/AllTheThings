@@ -15,7 +15,7 @@ _.ExpansionFeatures =
 					{"pop"},	-- Discard the War Effort Header and acquire the children.
 					{"where", "mapID", 14},	-- Arathi Highlands
 					{"pop"},	-- Discard the Map Header and acquire the children.
-					{"where", "npcID", -1 },	-- Select the Common Boss Drop Header.
+					{"where", "npcID", COMMON_BOSS_DROPS},	-- Select the Common Boss Drop Header.
 					{"pop"},	-- Discard the Common Boss Drop Header and acquire the children.
 					{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 					{"modID", 3},	-- Set the ModID to 3.

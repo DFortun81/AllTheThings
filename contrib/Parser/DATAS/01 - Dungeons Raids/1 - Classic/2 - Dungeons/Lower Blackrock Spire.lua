@@ -8,7 +8,7 @@ _.Instances = { tier(1, {	-- Classic
 		["maps"] = { 250, 251, 252, 253, 254, 255 },
 		["coord"] = { 80.46, 40.65, 33 },	-- Lower Blackrock Spire, Blackrock Mountain [Blackrock Spire]
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(4982, {	-- Bijou's Belongings
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -31,7 +31,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(65981),	-- War Master's Pauldrons
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(17683, {	-- Book: Gift of the Wild Rank 2
 				--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
 				}),
@@ -75,7 +75,7 @@ _.Instances = { tier(1, {	-- Classic
 							["groups"] = {
 								i(13181),	-- Demonskin Gloves
 								i(13182),	-- Phase Blade
-								un(2, i(9214)),	-- Grimoire of Inferno
+								i(9214),	-- Grimoire of Inferno
 							},
 						}),
 					},
@@ -261,7 +261,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 			})),
 			n(-40, {	-- Legacy
-				n(0, {		-- Zone Drop (Legacy)
+				n(ZONEDROPS, {
 					un(7, i(16680, {	-- Beaststalker's Belt
 						["crs"] = {
 							9692,	-- Bloodaxe Raider
@@ -337,13 +337,13 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					})),
 				}),
-				n(-17, {	-- Quests (Legacy)
+				n(QUESTS, {	-- Legacy quests
 					{	-- Human Remains
 						["objectID"] = 176090,	-- Human Remains
 						["g"] = {
 							{	-- Hot Fiery Death
 								["questID"] = 5103,	-- Hot Fiery Death
-								["requireSkill"] = 164,	-- Blacksmithing
+								["requireSkill"] = BLACKSMITHING,
 								["isBreadcrumb"] = true,
 								["u"] = 40,
 							},

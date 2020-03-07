@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(14, {	-- Arathi Highlands
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(5624,  {	-- Circlet of the Order
 					["crs"] = { 2584 },	-- Stromgarde Defender
 					["u"] = 7,	-- BoE Item

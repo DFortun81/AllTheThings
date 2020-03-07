@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(876, {	-- Kul'Tiras
 		m(1161, {	-- Boralus
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				n(-9, {		-- PvP
 					["lvl"] = 120,
 					["g"] = {
@@ -24,7 +24,7 @@ _.Zones =
 										{ "pop" },	-- Discard the War Effort Header and acquire the children.
 										{ "where", "mapID", 14 },	-- Arathi Highlands
 										{ "pop" },	-- Discard the Map Header and acquire the children.
-										{ "where", "npcID", -1 },	-- Select the Common Boss Drop Header.
+										{ "where", "npcID", COMMON_BOSS_DROPS },	-- Select the Common Boss Drop Header.
 										{ "pop" },	-- Discard the Common Boss Drop Header and acquire the children.
 										{ "postprocess" },	-- Post Process the search results to ensure no duplicate keys exist.
 										{ "modID", 53 },	-- iLvl 415

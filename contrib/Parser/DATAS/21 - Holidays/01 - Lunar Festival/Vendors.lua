@@ -4,7 +4,7 @@
 _.Holidays = bubbleDown({["u"] = 17}, 
 {
 	holiday(235471, {	-- Lunar Festival
-		n(-2, {	-- Vendors
+		n(VENDORS, {
 			n(15909, {	-- Fariel Starsong <Coin of Ancestry Collector>
 				["coord"] = { 53.7, 35.4, 80 },
 				["g"] = {

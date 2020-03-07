@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(100, {	-- Hellfire Peninsula
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(18802, {	-- Alchemist Gribble <Alchemy Trainer>
 					["coord"] = { 53.8, 65.8, 100 },
 					["races"] = ALLIANCE_ONLY,

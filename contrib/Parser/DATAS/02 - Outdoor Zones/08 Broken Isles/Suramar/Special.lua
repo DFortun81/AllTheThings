@@ -27,7 +27,7 @@ _.Zones =
 			}),
 			n(-214, { 	-- Nightborne Home
 				["g"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(49933, {	-- For the Horde
 							["g"] = {
 								--i(157028),	-- Letter from Lady Sylvanas Windrunner

@@ -8,7 +8,7 @@ _.Instances = { tier(1, {	-- Classic
 		["mapID"] = 220,
 		["coord"] = { 76.04, 45.21, 51 },	-- The Temple of Atal'hakkar, Swamp of Sorrows
 		["g"] = {
-			n(-1, {	-- Common Boss Drop
+			n(COMMON_BOSS_DROPS, {
 				["providers"] = {
 					{ "n", 5713 },	-- Gasher
 					{ "n", 5715 },	-- Hukku
@@ -26,7 +26,7 @@ _.Instances = { tier(1, {	-- Classic
 					un(2, i(10786)),	-- Atal'ai Boots
 				},
 			}),
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(9053, {	-- A Better Ingredient
 					["u"] = 40,
 					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
@@ -175,7 +175,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(78346, {	-- Pattern: Green Dragonscale Breastplate
 					["crs"] = {
 						5721,	-- Dreamscythe

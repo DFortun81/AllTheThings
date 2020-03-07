@@ -11,7 +11,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		},
 		["coord"] = { 61.23, 30.94, 122 },	-- Magister's Terrace, Isle of Quel'Danas
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(29686, {	-- A Radical Notion
 					["provider"] = { "n", 55007 },	-- Exarch Larethor
 				}),
@@ -39,7 +39,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["provider"] = { "n", 55007 },	-- Exarch Larethor
 				}),
 			}),
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(35516, {	-- Sun Touched Satchel
 					["crs"] = {
 						24686,	-- Sunblade Warlock
@@ -58,7 +58,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 			}),
-			n(-1, {	-- Common Boss Drop
+			n(COMMON_BOSS_DROPS, {
 				i(35275, { 	-- Orb of Sin'dorei
 					["crs"] = {
 						24723,	-- Selin Fireheart
@@ -336,6 +336,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							i(133477), 	-- Tunic of the Ranger Lord
 							i(133449), 	-- Cord of Reconstitution
 							i(133475), 	-- Greaves of the Penitent Knight
+							i(35303),	-- Pattern: Gloves of the Living Touch (BoP version)
 						},
 					})
 				}

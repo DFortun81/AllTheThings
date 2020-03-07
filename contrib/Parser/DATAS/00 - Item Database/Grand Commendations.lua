@@ -238,6 +238,9 @@ i(168828, 2395);	-- Royal Jelly, Honeyback Hive (+160)
 i(168822, 2395);	-- Thin Jelly, Honeyback Hive (+20)
 i(173375, 2415);	-- Rajani Insignia (+250)
 i(173374, 2415);	-- Rajani Insignia (+250, BoA)
+i(174523, 2373);	-- Waveswept Abyssal Conch [Unshackled]
+i(174522, 2400);	-- Waveswept Abyssal Conch [Waveblade Ankoan]
+
 
 -- in BFA the reputation rewards from the mission table / quests are actually currencies, not items like in legion
 -- so when you get a Proudmoore Admiralty Commendation for 100 reputation, you're actually getting 100 Invisible Proudmoore Admiralty Coins (since the "currencies" aren't tracked on the currency tab but are seemingly immediately exchanged for reputation)

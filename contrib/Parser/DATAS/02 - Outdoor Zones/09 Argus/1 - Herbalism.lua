@@ -7,7 +7,7 @@ _.Zones =
 		["g"] = {
 			{	-- Herbalism
 				["order"] = "03",
-				["professionID"] = 182,	-- Herbalism
+				["professionID"] = HERBALISM,
 				["maps"] = {
 					885,	-- Antoran Wastes
 					830,	-- Krokuun

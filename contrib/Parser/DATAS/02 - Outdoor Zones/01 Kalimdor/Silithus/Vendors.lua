@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(81, {	-- Silithus
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(15293,  {	-- Aendel Windspear
 					["coord"] = { 64.6, 45.8, 81 },
 					["g"] = {

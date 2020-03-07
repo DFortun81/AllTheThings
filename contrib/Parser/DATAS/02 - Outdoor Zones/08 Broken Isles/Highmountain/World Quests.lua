@@ -57,22 +57,22 @@ _.Zones =
 				q(41203, {	-- Bright Leystone Deposits
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41208, {	-- Brimstone Destroyer
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41209, {	-- Brimstone Destroyer
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41210, {	-- Brimstone Destroyer
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41706, {	-- Briny Waters
 					["lvl"] = 110,
@@ -81,17 +81,17 @@ _.Zones =
 				q(41233, {	-- Bristled Bear Skin
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(41526, {	-- Bushy Foxflower
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41238, {	-- Calcified Wormscales
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(41623, {	-- Champions of Highmountain
 					["lvl"] = 110,
@@ -104,7 +104,7 @@ _.Zones =
 				q(41201, {	-- Coarse Leystone Outcropping
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(46183, {	-- Commander Zarthak (Invasion wq)
 					["lvl"] = 98,
@@ -125,7 +125,7 @@ _.Zones =
 				q(41202, {	-- Crude Leystone Seams
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41685, {	-- DANGER: Ala'washte
 					["lvl"] = 110,
@@ -179,52 +179,52 @@ _.Zones =
 				q(41561, {	-- Felhide
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(41560, {	-- Felhide
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(41239, {	-- Felhide
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(41511, {	-- Felwort
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41512, {	-- Felwort
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41225, {	-- Felwort
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41432, {	-- Fiery Leystone Deposits
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41219, {	-- Flourishing Foxflower
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41228, {	-- Foxflower Cluster
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41544, {	-- Foxflower Cluster
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(46197, {	-- From the Skies They Fel (Invasion WQ)
 					["lvl"] = 98,
@@ -249,7 +249,7 @@ _.Zones =
 				q(41204, {	-- Hard Leystone Deposits
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(44746, {	-- Helarjar Landing: Rockaway Coast
 					["lvl"] = 110,
@@ -258,12 +258,12 @@ _.Zones =
 				q(41609, {	-- Huge Highmountain Salmon
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41243, {	-- Huge Highmountain Salmon
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(46185, {	-- Iroxus (Invasion wq)
 					["lvl"] = 98,
@@ -294,17 +294,17 @@ _.Zones =
 				q(41196, {	-- Leystone Basilisks
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41198, {	-- Leystone Basilisks
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41199, {	-- Leystone Rumblers
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(45048, {	-- Like the Wind
 					["lvl"] = 110,
@@ -313,17 +313,17 @@ _.Zones =
 				q(41596, {	-- Lively Highmountain Salmon
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41244, {	-- Lively Highmountain Salmon
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41597, {	-- Lively Highmountain Salmon
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41090, {	-- Lords of the Hills
 					["lvl"] = 110,
@@ -340,12 +340,12 @@ _.Zones =
 				q(41433, {	-- Massive Leystone Deposits
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41253, {	-- Migrating Highmountain Salmon
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41122, {	-- Mists Take You
 					["lvl"] = 110,
@@ -420,7 +420,7 @@ _.Zones =
 				q(41200, {	-- Rough Leystone Outcropping
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(46262, {	-- Save the Tadpoles! (Invasion wq)
 					["lvl"] = 98,
@@ -433,7 +433,7 @@ _.Zones =
 				q(41234, {	-- Shaggy Saber Hide
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(46189, {	-- Shel'zuul (Invasion WQ)
 					["lvl"] = 98,
@@ -446,17 +446,17 @@ _.Zones =
 				q(41242, {	-- Slab of Bacon
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 				}),
 				q(41549, {	-- Slab of Bacon
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 				}),
 				q(41550, {	-- Slab of Bacon
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 				}),
 				q(41687, {	-- Snail Fight!
 					["isWorldQuest"] = true,
@@ -507,7 +507,7 @@ _.Zones =
 				q(41232, {	-- Thick Ironhorn Hide
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(40896, {	-- Threnody of Chieftains
 					["lvl"] = 110,
@@ -552,7 +552,7 @@ _.Zones =
 				q(41665, {	-- Vantus Rune Work Order: Ursoc
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 773,	-- Inscription
+					["requireSkill"] = INSCRIPTION,
 					["g"] = {
 						i(137767),	-- Vantus Rune Technique: Ursoc [Rank 3]
 					},
@@ -660,7 +660,7 @@ _.Zones =
 				q(41205, {	-- Warm Leystone Deposits
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41145, {	-- Water of Life
 					["lvl"] = 110,
@@ -677,7 +677,7 @@ _.Zones =
 				q(41252, {	-- Wild Northern Barracuda
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41766, {	-- Wildlife Protection Force
 					["isWorldQuest"] = true,
@@ -692,14 +692,14 @@ _.Zones =
 				q(41525, {	-- Wispy Foxflower
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(46194, {	-- Wolves of the Legion (Invasion WQ)
 					["lvl"] = 98,
 					["isWorldQuest"] = true,
 				}),
 				q(41677, {	-- Work Order: Auto-Hammer
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 					["g"] = {
@@ -709,13 +709,13 @@ _.Zones =
 				q(41659, {	-- Work Order: Avalanche Elixirs
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 171,	-- Alchemy
+					["requireSkill"] = ALCHEMY,
 					["g"] = {
 						i(127922),	-- Recipe: Avalanche Elixir (Rank 2)
 					},
 				}),
 				q(41641, {	-- Work Order: Battlebound Armbands
-					["requireSkill"] = 165,	-- Leatherworking
+					["requireSkill"] = LEATHERWORKING,
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 					["g"] = {
@@ -725,21 +725,21 @@ _.Zones =
 				q(41223, {	-- Work Order: Foxflower
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 182,	-- Herbalism
+					["requireSkill"] = HERBALISM,
 				}),
 				q(41240, {	-- Work Order: Highmountain Salmon
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(41206, {	-- Work Order: Leystone
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 				}),
 				q(41635, {	-- Work Order: Leystone Boots
 					["isWorldQuest"] = true,
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["lvl"] = 110,
 					["g"] = {
 						i(137605),	-- Recipe: Leystone Boots (Rank 3)
@@ -748,13 +748,13 @@ _.Zones =
 				q(41647, {	-- Work Order: Silkweave Robe
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 197,	-- Tailoring
+					["requireSkill"] = TAILORING,
 					["g"] = {
 						i(137964),	-- Pattern: Silkweave Robe (Rank 3)
 					},
 				}),
 				q(41653, {	-- Work Order: Skystone Pendant
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 					["g"] = {
@@ -764,10 +764,10 @@ _.Zones =
 				q(41235, {	-- Work Order: Stonehide Leather
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
-					["requireSkill"] = 393,	-- Skinning
+					["requireSkill"] = SKINNING,
 				}),
 				q(41671, {	-- Work Order: Word of Strength
-					["requireSkill"] = 333,	-- Enchanting
+					["requireSkill"] = ENCHANTING,
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 					["g"] = {

@@ -5,7 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					n(-152,  {	-- Garrison Campaign
@@ -382,7 +382,7 @@ _.ExpansionFeatures =
 					q(36408, {	-- A Power Lost
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "i", 115507 },	-- Drained Crystal Fragment
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 					}),
 					q(38259, {	-- All Hands on Deck
 						["provider"] = { "n", 92219 },	-- King Varian Wrynn
@@ -561,11 +561,11 @@ _.ExpansionFeatures =
 						["description"] = "Automatically granted upon entering your garrison.",
 					}),
 					q(39195, {	-- Gems of the Apexis
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 						["isBreadcrumb"] = true,
 						["provider"] = { "n", 77209 },	-- Baros Alexston
 						["races"] = ALLIANCE_ONLY,
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 						["g"] = {
 							recipe(187639),	-- Immaculate Versatility Taladite
 						},
@@ -605,7 +605,7 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34194, {	-- Looking For Help
-						["requireSkill"] = 356,	-- Fishing
+						["requireSkill"] = FISHING,
 						["sourceQuest"] = 36592,	-- Bigger is Better
 						["provider"] = { "n", 77733 },	-- Ron Ashton
 						["coord"] = { 53.9, 13.4, 582 },	-- lvl 2 garrison
@@ -804,7 +804,7 @@ _.ExpansionFeatures =
 					q(35342, {	-- The Mysterious Flask
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "i", 113103 },	-- Mysterious Flask
-						["requireSkill"] = 171,	-- Alchemy
+						["requireSkill"] = ALCHEMY,
 					}),
 					q(35556, {	-- The Secrets of Gorgrond
 						["isBreadcrumb"] = true,
@@ -828,7 +828,7 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 82466 },	-- Aenir
 						["sourceQuest"] = 35342,	-- The Mysterious Flask
-						["requireSkill"] = 171,	-- Alchemy
+						["requireSkill"] = ALCHEMY,
 					}),
 					q(34192, {	-- Things Are Not Goren Our Way
 						["sourceQuests"] = { 36592 },	-- Bigger is Better

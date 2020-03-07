@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(114, {	-- Borean Tundra
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(25206, {	-- Ahlurglgr <Clam Vendor>
 					["coord"] = { 43.0, 13.8, 114 },
 					["g"] = {

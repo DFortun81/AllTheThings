@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(905, { 	-- Argus
 		m(885, {	-- Antoran Wastes
-			n(-2, { 	-- Vendors
+			n(VENDORS, {
 				n(128134, {	-- Orix the All-Seer
 					["coord"] = { 59.5, 44.9, 885 },
 					["g"] = {

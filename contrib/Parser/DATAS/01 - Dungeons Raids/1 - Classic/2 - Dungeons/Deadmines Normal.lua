@@ -9,7 +9,7 @@ _.Instances = { tier(1, {	-- Classic
 		["maps"] = { 292 },
 		["coord"] = { 25.59, 50.97, 55 },	-- Deadmines, The Deadmines [Westfall]
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(44930,{ -- Deadmines: Sea'in Red
 					["provider"] = { "n", 115818 },	-- Captain Bramblebeard
 					["classes"] = { 4 },
@@ -105,7 +105,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 			}),
 			d(1, {	-- Normal
-				n(0, {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(10401, {	-- Blackened Defias Gloves
 						["crs"] = { 48421 },	-- Defias Overseer
 					}),
@@ -187,7 +187,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				n(-40, {	-- Legacy
-					n(0, {	-- Zone Drops -- TODO:: These are all from the original version of deadmines. Should these be merged into the rest of this file or left in a dedicated header?
+					n(ZONEDROPS, {	-- TODO:: These are all from the original version of deadmines. Should these be merged into the rest of this file or left in a dedicated header?
 						un(43, n(647, { 	-- Captain Greenskin
 							i(10403, {	-- Blackened Defias Belt **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
 								["description"] = "You can obtain this appearance by doing a Rogue-only quest in the current Deadmines instance.",

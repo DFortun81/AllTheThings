@@ -12,7 +12,7 @@ _.Instances = { tier(1, {	-- Classic
 		},
 		["coord"] = { 69.2, 24.9, 19 },	-- Scarlet Monastery, Scarlet Monastery [Tirisfal Glades]
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(31513, {	-- Blades of the Anointed
 					["provider"] = { "n", 64827 },	-- Hooded Crusader
 				}),
@@ -34,7 +34,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 			}),
 			d(1,   {	-- Normal
-				n(0,   {	-- Zone Drop
+				n(ZONEDROPS, {
 					i(7759),	-- Archon Chestpiece
 					i(7728, {	-- Beguiler's Robes
 						["crs"] = {
@@ -181,7 +181,7 @@ _.Instances = { tier(1, {	-- Classic
 				})),
 				n(-40, {	-- Legacy
 					n(-85, {	-- Graveyard
-						n(-17, {	-- Quests (Legacy)
+						n(QUESTS, {
 							q(26972, {	-- The Dark Side of the Light
 								["u"] = 40,
 								["races"] = ALLIANCE_ONLY,
@@ -205,7 +205,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 						}),
-						n(-16, {	-- Rares (Legacy)
+						n(RARES, {
 							un(43, n(6488, {	-- Fallen Champion
 								un(2, i(7690)),	-- Ebon Vise
 								un(2, i(7691)),	-- Embalmed Shroud
@@ -240,7 +240,7 @@ _.Instances = { tier(1, {	-- Classic
 						})),
 					}),
 					n(-86, {	-- Library
-						n(-17, {	-- Quests (Legacy)
+						n(QUESTS, {
 							q(26959, {	-- Stripping Their Defenses
 								["u"] = 40,
 								["races"] = HORDE_ONLY,
@@ -274,7 +274,7 @@ _.Instances = { tier(1, {	-- Classic
 						})),
 					}),
 					n(-87, {	-- Armory
-						n(-17, {	-- Quests (Legacy)
+						n(QUESTS, {
 							q(26962, {	-- Stripping Their Offense
 								["u"] = 40,
 								["races"] = HORDE_ONLY,
@@ -306,7 +306,7 @@ _.Instances = { tier(1, {	-- Classic
 						})),
 					}),
 					n(-88, {	-- Cathedral
-						n(-17, {	-- Quests (Legacy)
+						n(QUESTS, {
 							q(26976, {	-- Battle for the Scarlet Monastery
 								["u"] = 40,
 								["races"] = ALLIANCE_ONLY,

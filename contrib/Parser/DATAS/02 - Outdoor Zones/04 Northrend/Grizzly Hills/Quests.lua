@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(116, {	-- Grizzly Hills
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(12138, {	-- ... Or Maybe We Don't (A)
 					["coord"] = { 77.0, 48.6, 116 },
 					["races"] = ALLIANCE_ONLY,

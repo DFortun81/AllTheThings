@@ -14,7 +14,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
 		},
 		["groups"] = {
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(23437, {	-- Indormi <Keeper of Ancient Gem Lore>
 					i(32274),	-- Design: Bold Crimson Spinel
 					i(32282),	-- Design: Brilliant Crimson Spinel
@@ -204,7 +204,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					}),
 				})
 			}),
-			n(-1, {	-- Common Boss Drops
+			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					17767,	-- Rage Winterchill
 					17808,	-- Anetheron
@@ -222,7 +222,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(32307),	-- Design: Veiled Shadowsong Amethyst
 				},
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				["crs"] = {
 					17898,	-- Abomination
 					17905,	-- Banshee

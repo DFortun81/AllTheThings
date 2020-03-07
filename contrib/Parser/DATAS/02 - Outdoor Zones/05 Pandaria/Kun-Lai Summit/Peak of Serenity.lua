@@ -11,7 +11,7 @@ _.Zones =
 				["classes"] = { 10 },	-- Monk
 				["icon"] = "Interface\\Icons\\ability_monk_legacyoftheemperor",
 				["g"] = {
-					n(-17, { 	-- Quests
+					n(QUESTS, {
 						q(31834, {	-- Begin Your Training: Master Cheng - Monk Only
 							i(89551),
 							i(89553),
@@ -64,7 +64,7 @@ _.Zones =
 						q(31861),	-- The Peak of Serenity - Continue Your Training
 						q(31858),	-- The Peak of Serenity - Continue Your Training
 					}),
-					n(-2, {	-- Vendors
+					n(VENDORS, {
 						n(66354, {	-- Master Cannon <Tanner>
 							["description"] = "All items on this vendor are quest rewards. You must have completed the quest to purchase the reward.|r",
 							["g"] = {

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(875, {	-- Zandalar
 		m(864, {	-- Vol'dun
-			n(-17,  {	-- Quests
+			n(QUESTS, {
 				q(47320, {	-- A Balm to Calm
 					["provider"] = { "n", 123586 },	-- Kiro
 					["coord"] = { 56.7, 50.5, 864 },	-- Vulpera Hideaway (Vol'dun)

@@ -83,7 +83,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						},
 					}),
-					n(-17, { 	-- Quests
+					n(QUESTS, {
 						{	-- Echoes of War
 							["questID"] = 9033,	-- Echoes of War
 							["sourceQuests"] = {
@@ -1028,7 +1028,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 					}),
-					n(0, { 		-- Zone Drops
+					n(ZONEDROPS, {
 						un(2, i(23221)),	-- Misplaced Servo Arm
 						un(2, i(23044)),	-- Harbinger of Doom
 						un(2, i(23238)),	-- Stygian Buckler

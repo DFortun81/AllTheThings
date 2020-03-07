@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(104, {	-- Shadowmoon Valley (Outland)
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(34689, {	-- Design: Chaotic Skyfire Diamond
 					["crs"] = { 19768 },  -- Coilskar Siren
 				}),

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
-			n(-2, { 	-- Vendors
+			n(VENDORS, {
 				n(135793, {	-- Collector Kojo <Tortollan Seekers Emissary>
 					["coord"] = { 40.4, 36.4, 942 },
 					["g"] = {

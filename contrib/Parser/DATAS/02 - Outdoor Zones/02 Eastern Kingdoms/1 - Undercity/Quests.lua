@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(90, {	-- Undercity
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(4294, {	-- ... and a Batch of Ooze
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -626,7 +626,7 @@ _.Zones =
 					["provider"] = { "n", 97766 },	-- Francis Serbacon <Author Extrodinaire>
 					["coord"] = { 77.8, 38.8, 90 },
 					["sourceQuest"] = 39959,	-- The Plot Thickens
-					["requireSkill"] = 773,	-- Inscription
+					["requireSkill"] = INSCRIPTION,
 					["races"] = HORDE_ONLY,
 					["groups"]= {
 						recipe(192804),	-- Steamy Romance Novel Kit

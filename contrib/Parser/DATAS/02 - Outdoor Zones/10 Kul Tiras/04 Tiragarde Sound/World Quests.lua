@@ -6,7 +6,7 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(895, {	-- Tiragarde Sound
 			n(-34, {	-- World Quests
-				n(-17, {	-- Quests
+				n(QUESTS, {
 --[[	raw quest list to check against
 					-- Unknown
 					q(48104, {	-- A Greater Challenge
@@ -320,7 +320,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
-						["requireSkill"] = 197,	-- Tailoring
+						["requireSkill"] = TAILORING,
 					}),
 					q(53716, {	-- Eastpoint Emergency (Faction Assault WQ)
 						["lvl"] = 110,
@@ -360,12 +360,12 @@ _.Zones =
 					q(53278, {	-- Flourishing Riverbud
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(53277, {	-- Flourishing Sea Stalks
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(53875, {	-- Fogsail for a Day (Faction Assault WQ)
 						["lvl"] = 110,
@@ -784,13 +784,13 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(52423, {	-- Work Order: Battle Flag: Phalanx Defense
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 197,	-- Tailoring
+						["requireSkill"] = TAILORING,
 						["groups"] = {
 							i(162444),	-- Pattern: Battle Flag: Phalanx Defense (Rank 3)
 						},
@@ -799,7 +799,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 171,	-- Alchemy
+						["requireSkill"] = ALCHEMY,
 						["groups"] = {
 							i(162257),	-- Recipe: Demitri's Draught of Deception (Rank 3)
 						},
@@ -808,7 +808,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 171,	-- Alchemy
+						["requireSkill"] = ALCHEMY,
 						["groups"] = {
 							i(162259),	-- Recipe: Sea Mist Potion (Rank 3)
 						},

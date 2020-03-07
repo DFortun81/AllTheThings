@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(905, { 	-- Argus
 		m(830, {	-- Krokuun
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				["g"] = {
 					q(40238, {	-- A Grim Equation
 						["sourceQuests"] = { 47431 },	-- Gathering Light
@@ -337,7 +337,7 @@ _.Zones =
 							["groups"] = {
 								i(151706),	-- Recipe: Astral Alchemist Stone (Rank 1)
 							},
-							["requireSkill"] = 171,	-- Alchemy
+							["requireSkill"] = ALCHEMY,
 						}),
 						q(48002, {	-- Limited Supplies
 							["provider"] = { "n", 125346 },	-- Alchemist Funen
@@ -345,7 +345,7 @@ _.Zones =
 							["groups"] = {
 								i(151657),	-- Recipe: Lightblood Elixir (Rank 1)
 							},
-							["requireSkill"] = 171,	-- Alchemy
+							["requireSkill"] = ALCHEMY,
 						}),
 						q(48013, {	-- Tracking the Trackers
 							["provider"] = { "n", 125346 },	-- Alchemist Funen
@@ -353,7 +353,7 @@ _.Zones =
 							["groups"] = {
 								i(151703),	-- Recipe: Tears of the Naaru (Rank 1)
 							},
-							["requireSkill"] = 171,	-- Alchemy
+							["requireSkill"] = ALCHEMY,
 						}),
 					}),
 				},

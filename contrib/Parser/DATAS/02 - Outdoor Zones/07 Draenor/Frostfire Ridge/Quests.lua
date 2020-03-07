@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(525, {	-- Frostfire Ridge
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(34228, {	-- A Clew of Worms
 					["provider"] = { "n", 72836 },	-- Cordana Felsong
 					["coord"] = { 31.8, 11.8, 525 },
@@ -59,7 +59,7 @@ _.Zones =
 					["coord"] = { 55.7, 75.3, 525 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 36131,	-- Proving Your Worth
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 					["g"] = {
 						garrisonBuilding(64),	-- Fishing Shack
 					},
@@ -96,7 +96,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 81210 },	-- Ang'kra
 					["sourceQuest"] = 35104,	-- The Apprentice
-					["requireSkill"] = 171,	-- Alchemy
+					["requireSkill"] = ALCHEMY,
 					["g"] = {
 						i(109558),	-- A Treatise on the Alchemy of Draenor
 						i(111812),	-- Alchemy Lab, lvl 1
@@ -144,14 +144,14 @@ _.Zones =
 					["provider"] = { "n", 85439 },	-- Raleigh Puule
 					["coord"] = { 21.0, 56.0, 525 },
 					["races"] = HORDE_ONLY,
-					["requireSkill"] = 773,	-- Inscription
+					["requireSkill"] = INSCRIPTION,
 					["sourceQuest"] = 36435,	-- Unintelligible Intelligence
 				}),
 				q(36516, {	-- Cut 'Em Out!
 					["provider"] = { "n", 85751 },	-- Gaoda Hidecleaver
 					["coord"] = { 20.6, 60.2, 525 },
 					["races"] = HORDE_ONLY,
-					["requireSkill"] = 165,	-- Leatherworking
+					["requireSkill"] = LEATHERWORKING,
 					["g"] = {
 						i(115358),	-- Draenor Leatherworking
 						i(117566),	-- Heavy Frostwolf Shroud
@@ -189,7 +189,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 85106 },	-- Gem Grinder Orolak
 					["sourceQuest"] = 36378,	-- Locating the Lapidarist
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 					["g"] = {
 						i(115503),	-- Blazing Diamond Pendant
 						i(115359),	-- Draenor Jewelcrafting
@@ -352,7 +352,7 @@ _.Zones =
 					["coord"] = { 55.7, 75.3, 525 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34758,	-- Looking For Help
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(32991, {	-- Into the Boneslag
 					["provider"] = { "n", 72274 },	-- Lokra
@@ -418,7 +418,7 @@ _.Zones =
 					["coord"] = { 46.0, 48.6, 525 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 36230,	-- The Restless Spirit
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						i(115356, {	-- Draenor Blacksmithing
 							["collectible"] = false,
@@ -493,7 +493,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 85106 },	-- Gem Grinder Orolak
 					["sourceQuest"] = 36352,	-- Locating the Lapidarist
-					["requireSkill"] = 755,	-- Jewelcrafting
+					["requireSkill"] = JEWELCRAFTING,
 				}),
 				q(34731, {	-- Oath of Shadow Hunter Rala
 					["provider"] = { "n", 78208 },	-- Shadow Hunter Rala
@@ -555,7 +555,7 @@ _.Zones =
 					["coord"] = { 55.7, 75.3, 525 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 36141,	-- Icespine Stingers
-					["requireSkill"] = 356,	-- Fishing
+					["requireSkill"] = FISHING,
 				}),
 				q(34380, {	-- Rally the Frostwolves
 					["provider"] = { "n", 70860 },	-- Durotan
@@ -643,7 +643,7 @@ _.Zones =
 					["coord"] = { 61.2, 71.2, 525 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 36457,	-- Bypassing Security
-					["requireSkill"] = 773,	-- Inscription
+					["requireSkill"] = INSCRIPTION,
 					["g"] = {
 						i(111815),	-- Scribe's Quarters, Level 1
 						i(111923, {	-- Draenor Inscription
@@ -683,7 +683,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 81209 },	-- Kadar
 					["sourceQuest"] = 35103,	-- The Alchemist
-					["requireSkill"] = 171,	-- Alchemy
+					["requireSkill"] = ALCHEMY,
 				}),
 				q(34124, {	-- The Battle of Thunder Pass
 					["provider"] = { "n", 76487 },	-- Lokra
@@ -785,7 +785,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 114965 },	-- Fractured Forge Hammer
 					["description"] = "This can be looted from almost any mob in Frostfire Ridge; however, Dorogg has a guaranteed drop for the item.",
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 				}),
 				q(37563, {	-- The Frostwolves Stand Ready
 					["races"] = HORDE_ONLY,
@@ -873,7 +873,7 @@ _.Zones =
 					["provider"] = { "n", 84494 },	-- Waruk the Frostforger
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 36207,	-- Waruk the Frostforger
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 				}),
 				q(34867, {	-- The Secrets of Gorgrond
 					["provider"] = { "n", 76484 },	-- Durotan
@@ -1018,7 +1018,7 @@ _.Zones =
 					["provider"] = { "n", 78989 },	-- Axe-Shaper Kugra
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 36205,	-- The Fractured Hammer
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 				}),
 				q(34861, {	-- We Need An Army
 					["maps"] = { 590 },	-- Garrison

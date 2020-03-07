@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(27, {	-- Dun Morogh
 			m(469, {	-- New Tinkertown [Above]
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(26205, {	-- A Job for the Multi-Bot
 						["provider"] = { "n", 42553 },	-- Engineer Grindspark
 						["coord"] = { 40.5, 28.0, 469 },
@@ -278,7 +278,7 @@ _.Zones =
 				}),
 			}),
 			m(30, {	-- New Tinkertown (below)
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(27635, {	-- Decontamination
 						["provider"] = { "n", 46274 },	-- Gaffer Coilspring
 						["coord"] = { 53.0, 82.3, 30 },

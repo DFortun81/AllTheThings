@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(50, {	-- Northern Stranglethorn
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(26317, {	-- A Lashtail Hatchling
 					["provider"] = { "n", 2465 },	-- Far Seer Mok'thardin
 					["coord"] = { 38.3, 51.0, 50 },
@@ -228,7 +228,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 7802 },	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, 50 },
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["sourceQuests"] = {
 						2761,	-- Smelt On, Smelt Off
 						2762,	-- The Great Silver Deceiver
@@ -300,7 +300,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 7802 },	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, 50 },
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["sourceQuests"] = {
 						2761,	-- Smelt On, Smelt Off
 						2762,	-- The Great Silver Deceiver
@@ -679,7 +679,7 @@ _.Zones =
 					["provider"] = { "n", 7802 },	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, 50 },
 					["sourceQuest"] = 2760,	-- The Mithril Order
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						un(2, i(7983)),	-- Plans: Ornate Mithril Pants
 					},
@@ -783,7 +783,7 @@ _.Zones =
 					["provider"] = { "n", 7802 },	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, 50 },
 					["sourceQuest"] = 2760,	-- The Mithril Order
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						un(2, i(7985)),	-- Plans: Ornate Mithril Shoulders
 					},
@@ -850,7 +850,7 @@ _.Zones =
 					["provider"] = { "n", 7802 },	-- Galvan the Ancient
 					["coord"] = { 67.1, 37.4, 50 },
 					["sourceQuest"] = 2760,	-- The Mithril Order
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
 						un(2, i(7984)),	-- Plans: Ornate Mithril Gloves
 					},
@@ -912,7 +912,7 @@ _.Zones =
 				q(2760,  {	-- The Mithril Order
 					["u"] = 40,
 					["provider"] = { "n", 7794 },	-- McGaven
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["sourceQuests"] = {
 						2757,	-- Booty Bay or Bust! (Horde)
 						2759,	-- In Search of Galvan (Alliance)

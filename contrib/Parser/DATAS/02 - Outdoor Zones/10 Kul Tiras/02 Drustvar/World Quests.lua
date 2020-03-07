@@ -6,7 +6,7 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(896, {	-- Drustvar
 			n(-34, {	-- World Quests
-				n(-17, {	-- Quests
+				n(QUESTS, {
 --[[	raw quest list to check against
 				-- Unknown
 					q(51719, {	-- A Glaive Mistake
@@ -85,7 +85,7 @@ _.Zones =
 					}),
 					q(53274, {	-- Overgrown Anchor Weed
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["g"] = {
@@ -94,7 +94,7 @@ _.Zones =
 					}),
 					q(53282, {	-- Overgrown Anchor Weed
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["g"] = {
@@ -292,7 +292,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(53272, {	-- Blooming Siren's Sting
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
@@ -405,7 +405,7 @@ _.Zones =
 					q(53266, {	-- Flourishing Sea Stalks
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(51658, { 	-- Fly the Coop!
 						["lvl"] = 120,
@@ -501,7 +501,7 @@ _.Zones =
 					q(53308, {	-- Luminous Monelite
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 186,	-- Mining
+						["requireSkill"] = MINING,
 					}),
 					q(54690, {	-- Maddok the Sniper (Faction Assault WQ)
 						["lvl"] = 110,
@@ -755,7 +755,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 197,	-- Tailoring
+						["requireSkill"] = TAILORING,
 						["g"] = {
 							i(162445),	-- Pattern: Battle Flag: Rallying Swiftness (Rank 3)
 						},
@@ -764,10 +764,10 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 					}),
 					q(52390, {	-- Work Order: Contract: Order of Embers
-						["requireSkill"] = 773,	-- Inscription
+						["requireSkill"] = INSCRIPTION,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
@@ -779,10 +779,10 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 165,	-- Leatherworking
+						["requireSkill"] = LEATHERWORKING,
 					}),
 					q(52357, {	-- Work Order: Enchant Weapon - Quick Navigation
-						["requireSkill"] = 333,	-- Enchanting
+						["requireSkill"] = ENCHANTING,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
@@ -794,7 +794,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 202,	-- Engineering
+						["requireSkill"] = ENGINEERING,
 						["g"] = {
 							i(162331), 	-- Schematic: F.R.I.E.D. [Rank 3]
 						},
@@ -803,7 +803,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 171,	-- Alchemy
+						["requireSkill"] = ALCHEMY,
 						["g"] = {
 							i(162260),	-- Recipe: Potion of Concealment (Rank 3)
 						},
@@ -817,7 +817,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 202,	-- Engineering
+						["requireSkill"] = ENGINEERING,
 						["g"] = {
 							i(162332), 	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3]
 						},

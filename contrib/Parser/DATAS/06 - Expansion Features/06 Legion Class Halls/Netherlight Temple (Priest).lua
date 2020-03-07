@@ -16,7 +16,7 @@ _.ExpansionFeatures =
 					["achievementID"] = 11217,
 					["modelScale"] = 1.5,
 				}),		]]--
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					--[[
 						q(43797),	-- Aiding the Conclave
 						q(43397),	-- United As One
@@ -425,7 +425,7 @@ _.ExpansionFeatures =
 					}),
 					--]]
 				}),
-				n(-2,  {	-- Vendors
+				n(VENDORS, {
 					n(112401, {	-- Meridelle Lightspark <Logistics>
 						["coord"] = { 39.0, 24.6, 702 },
 						["g"] = {

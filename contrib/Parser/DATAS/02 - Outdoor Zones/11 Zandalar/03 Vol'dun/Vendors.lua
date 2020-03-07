@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(875, {	-- Zandalar
 		m(864, {	-- Vol'dun
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(135804, {	-- Hoarder Jena <Voldunai Emissary>
 					["coord"] = { 56.7, 49.7, 864 },
 					["races"] = HORDE_ONLY,

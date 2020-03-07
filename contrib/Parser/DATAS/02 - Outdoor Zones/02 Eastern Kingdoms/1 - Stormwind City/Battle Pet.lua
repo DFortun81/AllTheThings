@@ -15,7 +15,7 @@ _.Zones =
 				p(675, {	-- Stormwind Rat
 					["crs"] = { 62954 },	-- Stormwind Rat
 				}),
-				n(-17, { -- Quests
+				n(QUESTS, {
 					q(32008, {	-- Audrey Burnhep
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 						["coord"] = { 69.2, 25.0, 84 },
@@ -123,7 +123,7 @@ _.Zones =
 						},
 					}),
 				}),
-				n(-2, {	-- Vendors
+				n(VENDORS, {
 					n(63596, {  -- Audrey Burnhep
 						["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
 						["races"] = ALLIANCE_ONLY,

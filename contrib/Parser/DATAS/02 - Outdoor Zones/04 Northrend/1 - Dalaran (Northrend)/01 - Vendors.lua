@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(125, {	-- Dalaran: Northrend
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(29512,  {	-- Ainderu Summerleaf <Mooncloth Tailoring Specialist>
 					["coord"] = { 36.4, 33.8, 125 },
 					["g"] = {
@@ -480,12 +480,12 @@ _.Zones =
 					["g"] = {
 						ach(41, {	-- Loremaster of Northrend
 							recipe(56017, {	-- Deathchill Cloak
-								["requireSkill"] = 197,	-- Tailoring
+								["requireSkill"] = TAILORING,
 							}),
 						}),
 						ach(1288, {	-- Northrend Dungeonmaster
 							recipe(56016, {	-- Wispcloak
-								["requireSkill"] = 197,	-- Tailoring
+								["requireSkill"] = TAILORING,
 							}),
 						}),
 					},
@@ -1729,7 +1729,7 @@ _.Zones =
 				}),
 				n(35826,  {	-- Kaye Toogie
 					["description"] = "When using |cff0070ddWormhole Generator: Northrend|r, you have a chance to recieve the option 'Underground...,' which ports you to the vendor.  You must have Engineering to use the toy.",
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["g"] = {
 						i(16054),	-- Schematic: Arcanite Dragonling
 						i(13311),	-- Schematic: Mechanical Dragonling

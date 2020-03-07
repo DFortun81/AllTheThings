@@ -1,5 +1,5 @@
 -- As of 22.November.2018, there are no recipes requiring a filter
-profession(197, {	-- Tailoring
+profession(TAILORING, {
 	filter(200, {	-- Recipes
 		{
 			["categoryID"] = 952--[[Cataclysm Patterns]],

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(948, {	-- The Maelstrom
 		m(207, {	-- Deepholm
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				ach(4871, {	-- Deep into Deepholm
 					-- NOTE: Criteria are out of order because of how the questline flows
 					crit(2, {	-- The Upper World Pillar Fragment

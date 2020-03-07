@@ -6,7 +6,7 @@ _.Zones =
 	m(875, {	-- Zandalar
 		m(862, {	-- Zuldazar
 			n(-34,  {	-- World Quests
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(52923, {	-- Add More to the Collection
 						["provider"] = { "n", 142114 },	-- Talia Sparkbrow
 						["lvl"] = 120,
@@ -84,12 +84,12 @@ _.Zones =
 					q(53304, {	-- Blooming Siren's Sting
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(53303, {	-- Blooming Star Moss
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(50868, {	-- Bramblewing
 						["lvl"] = 120,
@@ -175,7 +175,7 @@ _.Zones =
 					q(53328, {	-- Dense Storm Silver
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 186,	-- Mining
+						["requireSkill"] = MINING,
 					}),
 					q(54513, {	-- Dino Time! (Faction Assault WQ)
 						["lvl"] = 110,
@@ -195,7 +195,7 @@ _.Zones =
 					q(53329, {	-- Ductile Platinum
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 186,	-- Mining
+						["requireSkill"] = MINING,
 					}),
 					q(51373, {	-- Ears Everywhere
 						["lvl"] = 120,
@@ -219,7 +219,7 @@ _.Zones =
 					q(53301, {	-- Flourishing Sea Stalks
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					}),
 					q(50877, {	-- Gahz'ralka
 						["lvl"] = 120,
@@ -263,7 +263,7 @@ _.Zones =
 					q(53327, {	-- Hardened Monelite
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
-						["requireSkill"] = 186,	-- Mining
+						["requireSkill"] = MINING,
 					}),
 					q(50846, {	-- Headhunter Lee'za
 						["lvl"] = 120,
@@ -360,7 +360,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(53305, {	-- Overgrown Anchor Weed
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["g"] = {
@@ -603,7 +603,7 @@ _.Zones =
 					}),
 					q(52393, {	-- Work Order: Contract: Tortollan Seekers
 						["lvl"] = 120,
-						["requireSkill"] = 773,	-- Inscription
+						["requireSkill"] = INSCRIPTION,
 						["isWorldQuest"] = true,
 						["g"] = {
 							i(162372),	-- Contract: Tortollan Seekers [Rank 3]
@@ -612,7 +612,7 @@ _.Zones =
 					q(52335, {	-- Work Order: Demitri's Draught of Deception
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["requireSkill"] = 171,	-- Alchemy
+						["requireSkill"] = ALCHEMY,
 						["isWorldQuest"] = true,
 						["g"] = {
 							i(162257),	-- Recipe: Demitri's Draught of Deception (Rank 3)
@@ -621,15 +621,21 @@ _.Zones =
 					q(52336, {	-- Work Order: Lightfoot Potion
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
-						["requireSkill"] = 171,	-- Alchemy
+						["requireSkill"] = ALCHEMY,
 						["isWorldQuest"] = true,
 						["g"] = {
 							i(162258),	-- Recipe: Lightfoot Potion (Rank 3)
 						},
 					}),
+					q(52342, {	-- Work Order: Monel-Hardened Hoofplates
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = BLACKSMITHING,
+					}),
 					q(52349, {	-- Work Order: Loa Loaf
 						["lvl"] = 120,
-						["requireSkill"] = 185,	-- Cooking
+						["requireSkill"] = COOKING,
 						["isWorldQuest"] = true,
 						["g"] = {
 							i(162294),	-- Recipe: Loa Loaf [Rank 3]
@@ -637,7 +643,7 @@ _.Zones =
 					}),
 					q(52348, {	-- Work Order: Mon'Dazi [Note: This WQ stays here as it is in the city and not the zone]
 						["lvl"] = 120,
-						["requireSkill"] = 185,	-- Cooking
+						["requireSkill"] = COOKING,
 						["isWorldQuest"] = true,
 						["g"] = {
 							i(162296),	-- Recipe: Mon'Dazi [Rank 3]
@@ -645,7 +651,7 @@ _.Zones =
 					}),
 					q(52345, {	-- Work Order: Ravenberry Tarts [Rank 3]
 						["lvl"] = 120,
-						["requireSkill"] = 185,	-- Cooking
+						["requireSkill"] = COOKING,
 						["isWorldQuest"] = true,
 						["g"] = {
 							i(162290),	-- Recipe: Ravenberry Tarts [Rank 3]
@@ -653,7 +659,7 @@ _.Zones =
 					}),
 					q(52351, {	-- Work Order: Spiced Snapper [Rank 3]
 						["lvl"] = 120,
-						["requireSkill"] = 185,	-- Cooking
+						["requireSkill"] = COOKING,
 						["isWorldQuest"] = true,
 						["g"] = {
 							i(162297),	-- Recipe: Spiced Snapper [Rank 3]
@@ -661,7 +667,7 @@ _.Zones =
 					}),
 					q(52350, {	-- Work Order: Swamp Fish 'n Chips [Rank 3]
 						["lvl"] = 120,
-						["requireSkill"] = 185,	-- Cooking
+						["requireSkill"] = COOKING,
 						["isWorldQuest"] = true,
 						["g"] = {
 							i(162291),	-- Recipe: Swamp Fish 'n Chips [Rank 3]

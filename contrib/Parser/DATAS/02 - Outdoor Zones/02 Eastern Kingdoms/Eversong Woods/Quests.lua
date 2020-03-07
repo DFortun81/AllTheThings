@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(94, {	-- Eversong Woods
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(8891,  {	-- Abandoned Investigations
 					["model"] = 191948,
 					["coord"] = { 69.2, 52.1, 94 },

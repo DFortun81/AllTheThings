@@ -57,7 +57,7 @@ _.PVP =
 						ach(1755),	-- Within Our Grasp
 					}),
 				}),
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(55510, {	-- No Mercy for the Merciless
 						["provider"] = { "n", 151795 },	-- Commander Zanneth
 						["coord"] = { 49.6, 20.4, 1334 },

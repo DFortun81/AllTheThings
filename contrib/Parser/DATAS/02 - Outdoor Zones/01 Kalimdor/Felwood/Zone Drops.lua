@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(77, {	-- Felwood
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				un(7, i(15752, {	-- Pattern: Living Leggings
 					["crs"] = { 7158 },	-- Deadwood Shaman
 				})),

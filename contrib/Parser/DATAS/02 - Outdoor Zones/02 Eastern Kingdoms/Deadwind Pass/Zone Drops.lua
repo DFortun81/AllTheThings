@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(42, {	-- Deadwind Pass
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(16246, {	-- Formula: Enchant Bracer - Superior Strength
 					["crs"] = {
 						7371,	-- Deadwind Mauler

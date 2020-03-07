@@ -7,8 +7,7 @@ _.Holidays =
 		["holidayID"] = 1574965,	-- Call of the Scarab
 		["u"] = 22,					-- Micro-Holiday Filter
 		["g"] = {
-			{	-- Quests
-				["npcID"] = -17,	-- Quests
+			n(QUESTS, {
 				["g"] = {
 					{	-- Call of the Scarab [Alliance]
 						["questID"] = 45787,	-- Call of the Scarab
@@ -139,7 +138,7 @@ _.Holidays =
 						["description"] = "Call of the Scarab must be available for this quest to be active.",
 					},
 				},
-			},
+			}),
 		},
 	},
 };

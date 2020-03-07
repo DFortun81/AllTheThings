@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(115, {	-- Dragonblight
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(32409, {	-- Crazed Indu'le Survivor
 					["coords"] = {
 						{ 15.6, 45.4, 115 },

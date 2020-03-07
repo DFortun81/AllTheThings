@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(110, {	-- Silvermoon City
 			n(-40, {	-- Legacy
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(9489, {	-- Cleansing the Scar
 						["classes"] = { 5 },	-- Priest
 						["races"] = { 10 },	-- Blood Elf
@@ -24,10 +24,6 @@ _.Zones =
 						},
 					}),
 				}),
-				--n(-16, {	-- Rares (Legacy)
-				--}),
-				--n(0, {	-- Zone Drop (Legacy)
-				--}),
 			}),
 		}),
 	}),

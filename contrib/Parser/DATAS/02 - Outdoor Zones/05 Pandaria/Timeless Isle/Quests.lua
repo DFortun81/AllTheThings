@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(554, {	-- Timeless Isle
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(33211, {	-- A Timeless Question
 					["isDaily"] = true,
 					["provider"] = { "n", 73570 },	-- Senior Historian Evelyna <The Timewalkers>

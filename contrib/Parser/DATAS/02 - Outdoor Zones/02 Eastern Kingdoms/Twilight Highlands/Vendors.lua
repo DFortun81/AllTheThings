@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(241, {	-- Twilight Highlands
-			n(-2,  {	-- Vendors
+			n(VENDORS, {
 				n(50146, {	-- Agatian Fallanos <Shard Trader>
 					["coord"] = { 76.8, 49.4, 241 },
 					["races"] = HORDE_ONLY,

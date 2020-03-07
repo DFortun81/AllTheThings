@@ -30,7 +30,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["coord"] = { 46.87, 74.69, 42 },	-- Karazhan, Deadwind Pass
 		["groups"] = {
 			ach(960),	-- The Violet Eye
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(16388, { 	-- Koren
 					["description"] = "This vendor is located in the Livery Stables.",
 					["groups"] = {	
@@ -47,7 +47,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				n(16406, {	-- Phantom Attendant
 					i(21903),	-- Pattern: Soulcloth Shoulders
 				}),
@@ -154,7 +154,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				},
 			}),
 			cr(16812, e(1556, {	-- Opera Hall
-				n(-1, {	-- Common Boss Drops
+				n(COMMON_BOSS_DROPS, {
 					["description"] = "These items can drop from any of the Opera Hall bosses.",
 					["crs"] = {
 						17603,	-- Grandmother

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(12, {	-- Kalimdor
 		m(63, {	-- Ashenvale
-			n(-2, {	-- Vendor
+			n(VENDORS, {
 				n(3951,  {	-- Bhaldaran Ravenshade
 					["coord"] = { 34.6, 71.2, 63 },
 					["races"] = ALLIANCE_ONLY,

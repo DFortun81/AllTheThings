@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(388, {	-- Townlong Steppes
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(30954, {	-- A Blade is a Blade
 					["coord"] = { 39.3, 62.2, 388 },
 					["isDaily"] = true,
@@ -612,7 +612,7 @@ _.Zones =
 					["provider"] = { "n", 66247 },	-- Tigermaster Liu-Do
 				}),
 				q(30900, {	-- Terror of the Dread Wastes
-					["coord"] = { 74.2, 855.0, 388 },
+					["coord"] = { 74.2, 85.0, 388 },
 					["provider"] = { "n", 61021 },	-- Taoshi
 					["sourceQuests"] = { 30898 },	-- Cutting the Swarm
 					["g"] = {

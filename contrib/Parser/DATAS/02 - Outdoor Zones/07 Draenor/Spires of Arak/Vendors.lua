@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(572, {	-- Draenor
 		m(542, {	-- Spires of Arak
-			n(-2, {		-- Vendors
+			n(VENDORS, {
 				n(-390, {	-- Smuggler's Den
 					n(82459, {	-- Honest Jim
 						["description"] = "Use the |cFFFFD700Smuggling Run!|r ability to summon.",

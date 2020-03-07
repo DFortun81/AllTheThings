@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(388, {	-- Townlong Steppes
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(50772, {	-- Eshelon
 					["coords"] = {
 						{ 65.4, 87.6, 388 },

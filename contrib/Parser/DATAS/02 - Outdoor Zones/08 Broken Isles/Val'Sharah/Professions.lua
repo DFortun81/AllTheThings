@@ -6,13 +6,13 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(641, {	-- Val'sharah
 			n(-38,  {	-- Profession
-				prof(171, {	-- Alchemy
+				prof(ALCHEMY, {
 					q(39338, {	-- Return the Filter
 						["provider"] = { "n", 93974 },	-- Leyweaver Erenyi
 						["sourceQuests"] = { 44112 },	-- Trading for Dreams
 					}),
 				}),
-				prof(794, {	-- Archaeology
+				prof(ARCHAEOLOGY, {
 					q(41178, {	-- Explosive Results
 						["isWeekly"] = true,
 					}),
@@ -23,7 +23,7 @@ _.Zones =
 						["isWeekly"] = true,
 					}),
 				}),
-				prof(164, {	-- Blacksmithing
+				prof(BLACKSMITHING, {
 					q(39680, {	-- Between the Hammer...
 						["sourceQuests"] = { 39702 },	-- Legend of Black Rook Hold
 						["provider"] = { "n", 96763 },	-- Saris Swifthammer
@@ -51,7 +51,7 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(356, {	-- Fishing
+				prof(FISHING, {
 					n(-10067, { 	-- Artifact
 						["description"] = "Prerequisites:\n\n  Be level 110.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 						["lvl"] = 110,
@@ -245,17 +245,17 @@ _.Zones =
 								}),
 							},
 							["description"] = "This Fisherfriend NPC is located at: |cFFFFFFFF53.41, 72.86|r in Lorlathil.\n\nThe Fisherfriend NPC's will not always be up and only one is up at any given time.  You will have to either travel to the zone, ask a friend or check group finder to see if they are up.\n\nWhen fishing for the item for this particular fisherfriend make sure that you are close enough so that you recive the buff |cFFFFD700Something's Fishy|r, otherwise you won't be able to receive the turn-in items or the boss that is summoned.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
-							["requireSkill"] = 356,
+							["requireSkill"] = FISHING,
 							["creatureID"] = 120456
 						}),
 					}),
 					i(137695), 	-- Schematic: Reaves Module: Wormhole Generator Mode
 				}),
-				prof(182, {	-- Herbalism
+				prof(HERBALISM, {
 					{	-- Blight-Choked Herb [Dreamleaf II]
 						["itemID"] = 129141,	-- Blight-Choked Herb
 						["questID"] = 40022,	-- Choked By Nightmare
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["sourceQuests"] = {
 							40021,	-- One Dead Plant is One Too Many
 						},
@@ -263,7 +263,7 @@ _.Zones =
 					{	-- Blight-Twisted Herb [Dreamleaf III]
 						["itemID"] = 129136,	-- Blight-Twisted Herb
 						["questID"] = 40020,	-- Twisted to Death
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["sourceQuests"] = {
 							40019,	-- An Empathetic Herb
 						},
@@ -271,22 +271,22 @@ _.Zones =
 					{	-- Dreamleaf Sample [Dreamleaf I]
 						["itemID"] = 129118,	-- Dreamleaf Sample
 						["questID"] = 40018,	-- Dreamleaf Sample
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 					},
 					{	-- Felwort Sample [Felwort I]
 						["itemID"] = 129122,	-- Felwort Sample
 						["questID"] = 40040,	-- Felwort Sample
-						["requireSkill"] = 182,	-- Herbalism
+						["requireSkill"] = HERBALISM,
 						["groups"] = {
 							recipe(193307),	-- Felwort [Rank 1]
 						},
 					},
 				}),
-				prof(755, {	-- Jewelcrafting
+				prof(JEWELCRAFTING, {
 					q(40536, {	-- Bruls Before Jewels
 						["coord"] = { 45.3, 73.3, 755 },
 						["provider"] = { "n", 100776 },	-- Jabrul <Jewelcrafting Master>
-						["requireSkill"] = 755,	-- Jewelcrafting
+						["requireSkill"] = JEWELCRAFTING,
 						["sourceQuest"] = 40535,	-- Raising the Drogbar
 						["groups"] = {
 							i(132469),	-- Design: Azsunite Pendant
@@ -295,10 +295,10 @@ _.Zones =
 						},
 					}),
 				}),
-				prof(393, {	-- Skinning
+				prof(SKINNING, {
 					q(40143, {	-- Unfinished Treatise on the Properties of Stormscale
 						["sourceQuests"] = { 40142 },	-- The Core of the Stormscale
-						["requireSkill"] = 393,	-- Skinning
+						["requireSkill"] = SKINNING,
 						["description"] = "The item that starts this quest can be skinned from any scaled creature found across the Broken Isles.",
 						["itemID"] = 129865,	-- Unfinished Treatise on the Properties of Stormscale
 					}),

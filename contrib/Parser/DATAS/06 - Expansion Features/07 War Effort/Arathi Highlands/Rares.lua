@@ -5,7 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-10057, {	-- War Effort
 		m(14, {	-- Arathi Highlands
-			n(-16,	{ -- Rares
+			n(RARES, {
 				{	-- Beastmaster Kaman
 					["allianceQuestID"] = 53083, 	-- Beastrider Kama [Alliance]
 					["hordeQuestID"] = 53504,		-- Beastrider Kama [Horde]

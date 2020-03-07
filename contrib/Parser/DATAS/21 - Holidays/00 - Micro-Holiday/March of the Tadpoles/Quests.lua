@@ -6,7 +6,7 @@ _.Holidays =
 	holiday(1572472, {	-- March of the Tadpoles
 		["u"] = 22,	-- Micro-Holiday Filter
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(46049, {	-- A Gift From Your Tadpole
 					["isWeekly"] = true,
 					["provider"] = { "n", 118590 },	-- Loco

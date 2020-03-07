@@ -17,7 +17,7 @@ _.ExpansionFeatures =
 								},
 							}),
 						}),
-						n(-2, {	-- Vendors
+						n(VENDORS, {
 							n(85344, {	-- Naron Bloomthistle
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {

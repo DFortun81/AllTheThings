@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(424, { 	-- Pandaria
 		m(422, {	-- Dread Wastes
-			n(0, { 	-- Zone Drops
+			n(ZONEDROPS, {
 				i(120140, {	-- Tome of Polymorph: Porcupine
 					["spellID"] = 126819,	-- Polymorph(Porcupine)
 					["classes"] = { 8 },	-- Mage

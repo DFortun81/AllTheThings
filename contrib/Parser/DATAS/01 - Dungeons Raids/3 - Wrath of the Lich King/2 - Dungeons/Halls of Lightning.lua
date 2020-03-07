@@ -8,7 +8,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["lvl"] = 65,
 		["maps"] = { 138, 139 },
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(29862, {	-- Clearing the Way
 					["provider"] = { "n", 56027 },	-- Stormherald Eljrrin
 				}),
@@ -34,7 +34,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 			}),
 			d(1,   {	-- Normal
-				n(0, {		-- Zone Drop
+				n(ZONEDROPS, {
 					i(36999, {	-- Boots of the Terrestrial Guardian
 						["crs"] = {
 							28583,	-- Blistering Steamrager
@@ -169,7 +169,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				["lvl"] = 80,
 				["ignoreBonus"] = true,
 				["groups"] = {
-					n(0, {		-- Zone Drop
+					n(ZONEDROPS, {
 						i(37858, {	-- Awakened Handguards
 							["crs"] = {
 								28583,	-- Blistering Steamrager

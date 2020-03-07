@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(101, {	-- Outland
 		m(104, {	-- Shadowmoon Valley (Outland)
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(10985, {	-- A Distraction for Akama (legacy version)
 					["provider"] = { "n", 18528 },	-- Xi'ri
 					["coord"] = { 65.2, 44.0, 104 },
@@ -303,6 +303,7 @@ _.Zones =
 				q(10481, {	-- Enraged Spirits of Air
 					["provider"] = { "n", 21024 },	-- Earthmender Torlok
 					["coord"] = { 42.1, 45.0, 104 },
+					["sourceQuests"] = { 10480 },	-- Enraged Spirits of Water
 					["g"] = {
 						i(30953),	-- Boots of the Skybreaker
 						i(30930),	-- Grips of the Void

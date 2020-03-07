@@ -12,7 +12,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["maps"] = { 173 },
 		["lvl"] = 80,
 		["g"] = {
-			n(-1, {	-- Common Boss Drops
+			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					34796,	-- Gormok
 					35144,	-- Acidmaw
@@ -330,7 +330,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 			}),
 			d(5, {	-- 10-Player Heroic
-				n(-1, {	-- Common Boss Drops
+				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
 						34796,	-- Gormok
 						35144,	-- Acidmaw
@@ -611,7 +611,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 			}),
 			d(4, {	-- 25-Player
-				n(-1, {	-- Common Boss Drops
+				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
 						34796,	-- Gormok
 						35144,	-- Acidmaw
@@ -919,7 +919,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 			}),
 			d(6, {	-- 25-Player Heroic	
-				n(-1, {	-- Common Boss Drops
+				n(COMMON_BOSS_DROPS, {
 					["crs"] = {
 						34796,	-- Gormok
 						35144,	-- Acidmaw

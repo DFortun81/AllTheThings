@@ -10,7 +10,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			d(2, {	-- Heroic
 				["lvl"] = 85,
 				["groups"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						{	-- A Troll Among Trolls
 							["questID"] = 29188,
 							["provider"] = { "n", 23761 },	-- Quest Giver: Prigmon
@@ -36,7 +36,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							},
 						}),
 					}),
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						i(69801, {	-- Amani Armguards
 							["crs"] = {
 								23584,	-- Amani Bear

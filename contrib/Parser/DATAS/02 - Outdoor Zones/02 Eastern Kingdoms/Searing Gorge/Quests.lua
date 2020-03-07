@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(13, {	-- Eastern Kingdoms
 		m(32, {	-- Searing Gorge
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(27962, {	-- A Lumbering Relic
 					["provider"] = { "n", 47267 },	-- Burrian Coalpart
 					["coord"] = { 68.4, 53.2, 32 },
@@ -323,7 +323,7 @@ _.Zones =
 				q(3379,  {	-- Shadoweaver
 					["u"] = 40,
 					["provider"] = { "n", 8439 },	-- Nilith Lokrav
-					["requireSkill"] = 197,	-- Tailoring
+					["requireSkill"] = TAILORING,
 					["g"] = {
 						un(2, i(10461)),	-- Shadowy Bracers
 						un(2, i(10479)),	-- Kovic's Trading Satchel
@@ -408,7 +408,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 8439 },	-- Nilith Lokrav
 					["sourceQuest"] = 3379,	-- Shadoweaver
-					["requireSkill"] = 197,	-- Tailoring
+					["requireSkill"] = TAILORING,
 					["g"] = {
 						un(2, i(10462)),	-- Shadowy Belt
 					},
@@ -417,7 +417,7 @@ _.Zones =
 					["u"] = 40,
 					["provider"] = { "n", 8439 },	-- Nilith Lokrav
 					["sourceQuest"] = 3385,	-- The Undermarket
-					["requireSkill"] = 197,	-- Tailoring
+					["requireSkill"] = TAILORING,
 					["g"] = {
 						i(10463),	-- Pattern: Shadoweave Mask
 					},

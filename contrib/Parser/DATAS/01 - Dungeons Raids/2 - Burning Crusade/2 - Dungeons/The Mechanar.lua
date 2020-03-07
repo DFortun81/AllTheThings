@@ -11,7 +11,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		},
 		["coord"] = { 70.61, 69.75, 109 },	-- The Mechanar, Netherstorm
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(29659, {	-- Lost Treasure
 					["provider"] = { "n", 18481 },	-- Adal, auto-granted
 				}),
@@ -23,7 +23,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["provider"] = { "n", 18481 },	-- Adal, auto-granted
 				}),
 			}),
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(21906, { 	-- Pattern: Arcanoweave Boots
 					["crs"] = { 19168 },	-- Sunseeker Astromage
 				}),
