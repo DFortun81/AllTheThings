@@ -24,9 +24,7 @@ _.WorldDrops =
 				i(12019),	-- Cerulean Talisman
 				i(5003),	-- Crystal Starfire Medallion
 				i(12043),	-- Desert Choker
-				un(7, i(5005)),	-- Emberspark Pendant
-				un(7, i(7551)),	-- Entwined Opaline Talisman
-				un(7, i(7549)),	-- Fairy's Embrace
+				un(1, i(5005)),	-- Emberspark Pendant
 				i(12040),	-- Forest Pendant
 				i(13088),	-- Gazlowe's Charm
 				i(5002),	-- Glowing Green Talisman

@@ -36,6 +36,11 @@ profession(FISHING, {
 			["u"] = 2,
 		},
 	}),
+	filter(52, {	-- Finger
+		i(8350, {	-- The 1 Ring
+			["description"] = "Interestingly enough, you can fish this out of the lava in Ironforge. I guess the gnomes failed their quest...",
+		}),
+	}),
 	n(-167, { 	-- Fishing Poles
 		["groups"] = {	
 			i(19970, {	-- Arcanite Fishing Pole
@@ -413,6 +418,12 @@ profession(FISHING, {
 					},
 				}),
 			},
+		}),
+	}),
+	filter(50, {	-- Miscellaneous
+		i(13881, {	-- Bloated Redgill
+			i(7551),	-- Entwined Opaline Talisman
+			i(7549),	-- Fairy's Embrace
 		}),
 	}),
 	n(-160, { 	-- Mounts
