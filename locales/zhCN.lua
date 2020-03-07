@@ -172,7 +172,7 @@ for key, value in pairs({=
 		[-99] = "建筑", -- Buildings
 		[-101] = "追随者", -- Followers
 
-		[-124] = "要塞套装", 
+		[-124] = "要塞套装", -- Garrison Sets
 		[-130] = "暮色森林 "..GetSpellInfo(133137),
 		[-131] = "辛特兰 "..GetSpellInfo(133137),
 		[-132] = "菲拉斯 "..GetSpellInfo(133137),
@@ -306,34 +306,34 @@ for key, value in pairs({=
 		[-663] = "Classic Pre-Season Gear",										-- Classic Pre-Season PvP Gear (need a icon)
 
 -- The Burning Crusade PvP Seasons
-		[-664] = select(2, GetAchievementInfo(2091)).."：第1赛季",				-- Gladiator: Season 1
-		[-665] = select(2, GetAchievementInfo(418)).."：第2赛季",				-- Merciless Gladiator: Season 2
-		[-666] = select(2, GetAchievementInfo(419)).."：第3赛季",				-- Vengeful Gladiator: Season 3
-		[-667] = select(2, GetAchievementInfo(420)).."：第4赛季",				-- Brutal Gladiator: Season 4
+		[-664] = select(2, GetAchievementInfo(2091)).."：第1赛季", -- Gladiator: Season 1
+		[-665] = select(2, GetAchievementInfo(418)).."：第2赛季", -- Merciless Gladiator: Season 2
+		[-666] = select(2, GetAchievementInfo(419)).."：第3赛季", -- Vengeful Gladiator: Season 3
+		[-667] = select(2, GetAchievementInfo(420)).."：第4赛季", -- Brutal Gladiator: Season 4
 
 -- Wrath of the Lichking PvP Seasons
-		[-668] = select(2, GetAchievementInfo(3336)).."第5赛季",				-- Deadly Gladiator: Season 5
-		[-669] = select(2, GetAchievementInfo(3436)).."第6赛季",				-- Furious Gladiator: Season 6
-		[-670] = select(2, GetAchievementInfo(3758)).."第7赛季",				-- Relentless Gladiator: Season 7
-		[-671] = select(2, GetAchievementInfo(4599)).."第8赛季",				-- Wrathful Gladiator: Season 8
+		[-668] = select(2, GetAchievementInfo(3336)).."第5赛季", -- Deadly Gladiator: Season 5
+		[-669] = select(2, GetAchievementInfo(3436)).."第6赛季", -- Furious Gladiator: Season 6
+		[-670] = select(2, GetAchievementInfo(3758)).."第7赛季", -- Relentless Gladiator: Season 7
+		[-671] = select(2, GetAchievementInfo(4599)).."第8赛季", -- Wrathful Gladiator: Season 8
 
 -- Cataclysm PvP Seasons
-		[-672] = select(2, GetAchievementInfo(6002)).."第9赛季",				-- Vicious Gladiator: Season 9
-		[-673] = select(2, GetAchievementInfo(6124)).."第10赛季",			-- Ruthless Gladiator: Season 10
-		[-674] = select(2, GetAchievementInfo(6938)).."第11赛季",			-- Cataclysmic Gladiator: Season 11
+		[-672] = select(2, GetAchievementInfo(6002)).."第9赛季", -- Vicious Gladiator: Season 9
+		[-673] = select(2, GetAchievementInfo(6124)).."第10赛季", -- Ruthless Gladiator: Season 10
+		[-674] = select(2, GetAchievementInfo(6938)).."第11赛季", -- Cataclysmic Gladiator: Season 11
 
 -- Mists of Pandaria PvP Seasons
-		[-675] = select(2, GetAchievementInfo(8214)).."第12赛季",			-- Malevolent Gladiator: Season 12
-		[-676] = select(2, GetAchievementInfo(8791)).."第13赛季",			-- Tyrannical Gladiator: Season 13
+		[-675] = select(2, GetAchievementInfo(8214)).."第12赛季", -- Malevolent Gladiator: Season 12
+		[-676] = select(2, GetAchievementInfo(8791)).."第13赛季", -- Tyrannical Gladiator: Season 13
 		
-		
-		[-806] = "钟示贤德腰带",
+		[-806] = "钟示贤德腰带", -- Waist of Time
 		
 -- Mechagon		
-		[-850] = "机械化的宝箱",													-- Mechanized Chest
-		[-851] = "铁潮宝箱",												-- Irontide Chest
+		[-850] = "机械化的宝箱", -- Mechanized Chest
+		[-851] = "铁潮宝箱", -- Irontide Chest
 		[-1001] = "The Black Vault",
-		
+
+-- Other Sets
 		[-3159] = "T6.5套装",
 		[-3160] = "T21套装",
 		[-3161] = "T20套装",
@@ -362,22 +362,22 @@ for key, value in pairs({=
 		[-3184] = "T1套装",
 		[-3185] = "T0.5套装",
 		[-3186] = "T0套装",
-		[-3187] = "副本套装", 
+		[-3187] = "副本套装", -- Instance Item Sets
 		[-3188] = "Dungeon, Tier and Class Sets",
 		[-3189] = "Fel-Touched Weapons",
 		
 		[-3199] = "Midsummer Reveler Set",
 		
 -- Dungeon 1 Sets [Tier 0]
-		[-3200] = "虔诚", -- Priest
-		[-3201] = "博学者", -- Mage
-		[-3202] = "鬼雾", -- Warlock
-		[-3203] = "野性之心", -- Druid
-		[-3204] = "迅影", -- Rogue
-		[-3205] = "野兽追猎者", -- Hunter
-		[-3206] = "元素", -- Shaman
-		[-3207] = "光铸护甲", -- Paladin
-		[-3208] = "勇气",  -- Warrior
+		[-3200] = "虔诚", -- Vestments of the Devout (Priest)
+		[-3201] = "博学者", -- Magister's Regalia (Mage)
+		[-3202] = "鬼雾", -- Dreadmist Rainment (Warlock)
+		[-3203] = "野性之心", -- Wildheart Rainment (Druid)
+		[-3204] = "迅影", -- Shadowcraft Armor (Rogue)
+		[-3205] = "野兽追猎者", -- Beaststalker Armor (Hunter)
+		[-3206] = "元素", -- The Elements (Shaman)
+		[-3207] = "光铸护甲", -- Lightforge Armor (Paladin)
+		[-3208] = "勇气",  -- Battlegear of Valor (Warrior)
 -- Dungeon 2 Sets [Tier 0.5]
 		[-3209] = "坚贞", -- Priest
 		[-3210] = "巫师", -- Mage
