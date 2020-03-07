@@ -2218,7 +2218,6 @@ _.NeverImplemented =
 		q(57938),	-- Assember Hung talked to
 		
 		-- Ny'alotha raid
-		q(58529),	-- obtained Volatile Void Droplet (Rank 3 Formless Void) from encrypted ny'alothan texts. Renders the texts unusable
 		q(59557),	-- kill wrathion
 		q(59558),	-- kill Maut
 		q(58547),	-- kill skitra - probably triggers when first wing clears?
@@ -2248,9 +2247,10 @@ _.NeverImplemented =
 		q(59567),	-- kill Carapace of N'Zoth (Fury of N'Zoth)
 		q(59568),	-- nzoth killed on heroic. possibly the same for other difficulties?
 		
-		-- Azerite essences assembled with -Encrypted Ny'alothan Text
-		q(58527),	-- Replicating Void Droplets (Rank 1)
-		q(58528),	-- Replicating Void Droplets (Rank 2)
+		-- Azerite essences assembled with Encrypted Ny'alothan Text
+		q(58527),	-- Replicating Void Droplets (Rank 1 Formless Void)
+		q(58528),	-- Burgeoning Void Droplet (Rank 2 Formless Void)
+		q(58529),	-- Volatile Void Droplet (Rank 3 Formless Void). Renders the texts unusable.
 		
 		-- World Bosses
 		q(58510),	-- Vuk'laz the Earthbreaker first kill??

@@ -153,6 +153,13 @@ _.Craftables =
 					i(168740, {	-- Blingtron 7000 Gift Package
 						["questID"] = 56042,
 						["isDaily"] = true,
+						["g"] = {
+							i(87250),	-- Depleted-Kyparium Rocket Mount
+							i(112057),	-- Lifelike Mechanical Frostboar Pet
+							i(103670),	-- Lil'Bling Pet
+							i(41508),	-- Mechano-Hog Mount
+							i(44413),	-- Mekgineer's Chopper Mount
+						},
 					}),
 				}),
 			}),

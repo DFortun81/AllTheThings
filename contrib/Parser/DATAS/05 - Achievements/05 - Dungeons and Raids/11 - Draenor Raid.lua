@@ -98,7 +98,7 @@ _.Achievements =
 					ach(10027),		-- Mythic: Hellfire Assault
 					ach(10034),		-- Mythic: Hellfire High Council
 					ach(8965, {		-- Mythic: Imperator's Fall
-						title(304),		-- ,Empire's Twilight
+						title(304),		-- <Name>, Empire's Twilight
 					}),
 					ach(8972),		-- Mythic: Iron Maidens
 					ach(10032),		-- Mythic: Iron Reaver

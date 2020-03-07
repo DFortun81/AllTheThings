@@ -252,7 +252,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },
-					["g"] = { -- Most names still pending
+					["g"] = {
 						ach(14019),	-- Smoke Test
 						i(172185),	-- Destroyer's Shadowblade
 						i(172199),	-- Faralos, Empire's Dream
@@ -472,7 +472,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },
-					["g"] = { -- Most names still pending
+					["g"] = {
 						ach(14019),	-- Smoke Test
 						i(172185),	-- Destroyer's Shadowblade
 						i(172199),	-- Faralos, Empire's Dream
@@ -700,7 +700,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },
-					["g"] = { -- Most names still pending
+					["g"] = {
 						ach(14041),	-- Mythic: Wrathion, the Black Emperor
 						ach(14019),	-- Smoke Test
 						i(172185),	-- Destroyer's Shadowblade

@@ -577,6 +577,7 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(174225),	-- Bulwark of the Traitorous Disciple
 							i(174221),	-- Cleaver of the Fractured Dynasty
+							i(174229),	-- Lantern of the Damned
 						},
 					}),
 					n(157290, {	-- Jade Watcher
@@ -667,6 +668,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["g"] = {
 							i(174225),	-- Bulwark of the Traitorous Disciple
+							i(174221),	-- Cleaver of the Fractured Dynasty
 							i(174229),	-- Lantern of the Damned
 						},
 					}),

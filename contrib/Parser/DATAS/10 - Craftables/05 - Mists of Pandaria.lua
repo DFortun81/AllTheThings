@@ -269,7 +269,7 @@ _.Craftables =
 								i(87251),	-- Geosynchronous World Spinner Mount
 								i(41508),	-- Mechano-Hog Mount
 								i(44413),	-- Mekgineer's Chopper Mount
-								i(103670),	-- Lil'Bling Pet
+								i(103670),	-- Lil' Bling Pet
 								i(15996),	-- Lifelike Mechanical Toad Pet
 								i(11826),	-- Lil' Smoky Pet
 								i(4401),	-- Mechanical Squirrel Box Pet

@@ -38,7 +38,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						},
 					})),
 				}),
-				ach(8986, {	-- The Walled City	
+				ach(8986, {	-- The Walled City
 					["crs"] = { 94870 },	-- Seer Kazal <Shadowmoon Exile>
 					["g"] = {
 						cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
@@ -218,6 +218,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					})),
 				}),
 				cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
+					ach(8948),	-- Flame On!
 					i(138807),	-- Illusion: Mark of the Shattered Hand
 					i(113591),	-- The Bladefist
 					i(113592),	-- Bileslinger's Censer
@@ -233,6 +234,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113604),	-- Kargath's Last Link
 				})),
 				cr(77404, e(971, {	-- The Butcher
+					ach(8947),	-- Hurry Up, Maggot!
 					i(113606),	-- Butcher's Bloody Cleaver
 					i(113607),	-- Butcher's Terrible Tenderizer
 					i(113608),	-- Hood of Dispassionate Execution
@@ -248,6 +250,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113612),	-- Scales of Doom
 				})),
 				cr(78491, e(1196, {	-- Brackenspore <Walker of the Deep>
+					ach(8975),	-- A Fungus Among Us
 					i(113652),	-- Crystalline Branch of the Brackenspore
 					i(113653),	-- Maw of Souls
 					i(113662),	-- Collar of Wailing Mouths
@@ -262,6 +265,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113658),	-- Bottle of Infesting Spores
 				})),
 				cr(78948, e(1195, {	-- Tectus <The Living Mountain>
+					ach(8974),	-- More Like Wrecked-us
 					i(138835),	-- Illusion: Rockbiter
 					i(113640),	-- Earthwarped Bladestaff
 					i(113639),	-- Spire of Tectus
@@ -283,6 +287,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						78238,	-- Twin Ogron (Pol)
 					},
 					["g"] = {
+						ach(8958),	-- Brothers in Arms
 						i(113667),	-- Phemos' Double Slasher
 						i(113666),	-- Absalom's Bloody Bulwark
 						i(113833),	-- Odyssian Choker
@@ -298,6 +303,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					},
 				}),
 				cr(79015, e(1153, {	-- Ko'ragh <Breaker of Magic>
+					ach(8976),	-- Pair Annihilation
 					i(113838),	-- Gar'tash, Hammer of the Breakers
 					i(113836),	-- Ko'ragh's Boot Knife
 					i(113837),	-- Rod of Fel Nullification
@@ -313,6 +319,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					un(40, i(115288)),	-- Felbreaker's Tome
 				})),
 				cr(77428, e(1197, {	-- Imperator Mar'gok <Sorcerer King>
+					ach(8977),	-- Lineage of Power
 					i(113848),	-- Gor'gah, High Blade of the Gorians
 					i(113857),	-- Staff of the Grand Imperator
 					i(113858),	-- Choker of Violent Displacement
@@ -411,6 +418,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					})),
 				}),
 				cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
+					ach(8948),	-- Flame On!
 					i(138807),	-- Illusion: Mark of the Shattered Hand
 					i(113591),	-- The Bladefist
 					i(113592),	-- Bileslinger's Censer
@@ -426,6 +434,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113604),	-- Kargath's Last Link
 				})),
 				cr(77404, e(971, {	-- The Butcher
+					ach(8947),	-- Hurry Up, Maggot!
 					i(113606),	-- Butcher's Bloody Cleaver
 					i(113607),	-- Butcher's Terrible Tenderizer
 					i(113608),	-- Hood of Dispassionate Execution
@@ -441,6 +450,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113612),	-- Scales of Doom
 				})),
 				cr(78491, e(1196, {	-- Brackenspore <Walker of the Deep>
+					ach(8975),	-- A Fungus Among Us
 					i(113652),	-- Crystalline Branch of the Brackenspore
 					i(113653),	-- Maw of Souls
 					i(113662),	-- Collar of Wailing Mouths
@@ -455,6 +465,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113658),	-- Bottle of Infesting Spores
 				})),
 				cr(78948, e(1195, {	-- Tectus <The Living Mountain>
+					ach(8974),	-- More Like Wrecked-us
 					i(138835),	-- Illusion: Rockbiter
 					i(113640),	-- Earthwarped Bladestaff
 					i(113639),	-- Spire of Tectus
@@ -470,12 +481,13 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113650),	-- Pillar of the Earth
 					i(113645),	-- Tectus' Beating Heart
 				})),
-				e(1148, {	-- Twin Ogron (Phemos; 78238 is Pol)
+				e(1148, {	-- Twin Ogron
 					["crs"] = {
 						78237,	-- Twin Ogron (Phemos)
 						78238,	-- Twin Ogron (Pol)
 					},
 					["g"] = {
+						ach(8958),	-- Brothers in Arms
 						i(113667),	-- Phemos' Double Slasher
 						i(113666),	-- Absalom's Bloody Bulwark
 						i(113833),	-- Odyssian Choker
@@ -491,6 +503,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					},
 				}),
 				cr(79015, e(1153, {	-- Ko'ragh <Breaker of Magic>
+					ach(8976),	-- Pair Annihilation
 					i(113838),	-- Gar'tash, Hammer of the Breakers
 					i(113836),	-- Ko'ragh's Boot Knife
 					i(113837),	-- Rod of Fel Nullification
@@ -506,6 +519,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					un(40, i(115288)),	-- Felbreaker's Tome
 				})),
 				cr(77428, e(1197, {	-- Imperator Mar'gok <Sorcerer King>
+					ach(8977),	-- Lineage of Power
 					i(113848),	-- Gor'gah, High Blade of the Gorians
 					i(113857),	-- Staff of the Grand Imperator
 					i(113858),	-- Choker of Violent Displacement
@@ -604,6 +618,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					})),
 				}),
 				cr(78714, e(1128, {	-- Kargath Bladefist <Warlord of the Shattered Hand>
+					ach(8949),	-- Mythic: Kargath Bladefist
+					ach(8948),	-- Flame On!
 					i(138807),	-- Illusion: Mark of the Shattered Hand
 					i(113591),	-- The Bladefist
 					i(113592),	-- Bileslinger's Censer
@@ -619,6 +635,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113604),	-- Kargath's Last Link
 				})),
 				cr(77404, e(971, {	-- The Butcher
+					ach(8960),	-- Mythic: The Butcher
+					ach(8947),	-- Hurry Up, Maggot!
 					i(113606),	-- Butcher's Bloody Cleaver
 					i(113607),	-- Butcher's Terrible Tenderizer
 					i(113608),	-- Hood of Dispassionate Execution
@@ -634,6 +652,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113612),	-- Scales of Doom
 				})),
 				cr(78491, e(1196, {	-- Brackenspore <Walker of the Deep>
+					ach(8962),	-- Mythic: Brackenspore
+					ach(8975),	-- A Fungus Among Us
 					i(113652),	-- Crystalline Branch of the Brackenspore
 					i(113653),	-- Maw of Souls
 					i(113662),	-- Collar of Wailing Mouths
@@ -648,6 +668,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(113658),	-- Bottle of Infesting Spores
 				})),
 				cr(78948, e(1195, {	-- Tectus <The Living Mountain>
+					ach(8961),	-- Mythic: Tectus
+					ach(8974),	-- More Like Wrecked-us
 					i(138835),	-- Illusion: Rockbiter
 					i(113640),	-- Earthwarped Bladestaff
 					i(113639),	-- Spire of Tectus
@@ -669,6 +691,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						78238,	-- Twin Ogron (Pol)
 					},
 					["g"] = {
+						ach(8963),	-- Mythic: Twin Ogron
+						ach(8958),	-- Brothers in Arms
 						i(113667),	-- Phemos' Double Slasher
 						i(113666),	-- Absalom's Bloody Bulwark
 						i(113833),	-- Odyssian Choker
@@ -684,6 +708,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					},
 				}),
 				cr(79015, e(1153, {	-- Ko'ragh <Breaker of Magic>
+					ach(8964),	-- Mythic: Ko'ragh
+					ach(8976),	-- Pair Annihilation
 					i(113838),	-- Gar'tash, Hammer of the Breakers
 					i(113836),	-- Ko'ragh's Boot Knife
 					i(113837),	-- Rod of Fel Nullification
@@ -704,6 +730,11 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						78623,	-- Cho'gall
 					},
 					["g"] = {
+						ach(8965, {	-- Mythic: Imperator's Fall
+							title(304),	-- <Name>, Empire's Twilight
+						}),
+						un(2, ach(9442)),	-- Cutting Edge: Imperator's Fall
+						ach(8977),	-- Lineage of Power
 						i(113848),	-- Gor'gah, High Blade of the Gorians
 						i(113857),	-- Staff of the Grand Imperator
 						i(113858),	-- Choker of Violent Displacement
