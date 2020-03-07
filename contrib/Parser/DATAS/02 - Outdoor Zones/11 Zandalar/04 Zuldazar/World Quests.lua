@@ -627,6 +627,12 @@ _.Zones =
 							i(162258),	-- Recipe: Lightfoot Potion (Rank 3)
 						},
 					}),
+					q(52342, {	-- Work Order: Monel-Hardened Hoofplates
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = BLACKSMITHING,
+					}),
 					q(52349, {	-- Work Order: Loa Loaf
 						["lvl"] = 120,
 						["requireSkill"] = COOKING,
