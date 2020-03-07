@@ -59,7 +59,7 @@ _.Zones =
 					["provider"] = { "n", 5173 },	-- Alexander Calder (Ironfoge)
 					["coord"] = { 50.2, 6.8, 87 },	-- Alexander Calder (Ironfoge)
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 90,
 				}),
 				q(762,   {	-- An Ambassador of Evil
@@ -77,14 +77,14 @@ _.Zones =
 					["coord"] = { 55.0, 30.2, 87 },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["lvl"] = 50,
 				}),
 				q(8912,  {	-- An Earnest Proposition (Warrior)
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -95,7 +95,7 @@ _.Zones =
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -106,7 +106,7 @@ _.Zones =
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -117,7 +117,7 @@ _.Zones =
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -128,7 +128,7 @@ _.Zones =
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -139,7 +139,7 @@ _.Zones =
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -150,7 +150,7 @@ _.Zones =
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -161,7 +161,7 @@ _.Zones =
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -172,7 +172,7 @@ _.Zones =
 					["provider"] = { "n", 16013 },	-- Deliana
 					["coord"] = { 42.6, 53.8, 87 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -230,7 +230,7 @@ _.Zones =
 					["coord"] = { 50.2, 6.8, 87 },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 20,
 				}),
 				q(2039,  {	-- Find Bingles
@@ -263,7 +263,7 @@ _.Zones =
 					["provider"] = { "n", 6031 },	-- Tormus Deepforge
 					["coord"] = { 48.6, 42.5, 87 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 10,
 					["u"] = 40,
 					["g"] = {
@@ -278,8 +278,8 @@ _.Zones =
 					["coord"] = { 51.0, 26.2, 87 },
 					["sourceQuest"] = 6391,	-- Ride to Ironforge
 					["races"] = {
-						3,	-- Dwarf
-						7,	-- Gnome
+						DWARF,
+						GNOME,
 					},
 					["lvl"] = 5,
 				}),
@@ -295,7 +295,7 @@ _.Zones =
 					["coord"] = { 67.9, 46.1, 87 },
 					["sourceQuest"] = 1704,	-- Klockmort Spannerspan
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 				}),
@@ -304,7 +304,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -317,7 +317,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -330,7 +330,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -343,7 +343,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -356,7 +356,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -369,7 +369,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -382,7 +382,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -395,7 +395,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -408,7 +408,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8977,	-- Return to Deliana
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -421,7 +421,7 @@ _.Zones =
 					["coord"] = { 51.0, 26.2, 87 },	-- Nittlebur Sparkfizzle (Ironforge)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 20,
 				}),
 				q(1709,  {	-- Klockmort's Creation
@@ -429,7 +429,7 @@ _.Zones =
 					["coord"] = { 67.9, 46.1, 87 },
 					["sourceQuest"] = 1708,	-- Iron Coral
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["u"] = 40,
 					["g"] = {
@@ -441,14 +441,14 @@ _.Zones =
 					["coord"] = { 51.0, 26.2, 87 },	-- Nittlebur Sparkfizzle (Ironforge)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 20,
 				}),
 				q(1880,  {	-- Mage-tastic Gizmonitor
 					["provider"] = { "n", 5144 },	-- Bink
 					["coord"] = { 27.2, 8.3, 87 },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 10,
 					["u"] = 40,
 					["g"] = {
@@ -461,7 +461,7 @@ _.Zones =
 					["coord"] = { 51.6, 14.6, 87 },	-- Hulfdan Blackbeard (Ironforge)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 20,	
 				}),
 				q(27268, {	-- Make Haste to the Cathedral
@@ -469,7 +469,7 @@ _.Zones =
 					["coord"] = { 25.0, 8.2, 87 },	-- High Priest Rohan (Ironforge)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
 				q(28259, {	-- Meet with Demisette Cloyce
@@ -477,7 +477,7 @@ _.Zones =
 					["coord"] = { 50.2, 6.8, 87 },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 50,	
 				}),
 				q(28287, {	-- Meet with Farseer Umbrua
@@ -485,7 +485,7 @@ _.Zones =
 					["coord"] = { 55.2, 29.0, 87 },	-- Farseer Javad (Ironforge)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["lvl"] = 50,
 				}),
 				q(28285, {	-- Meet with High Priestess Laurena
@@ -493,7 +493,7 @@ _.Zones =
 					["coord"] = { 25.0, 8.2, 87 }, -- High Priest Rohan (Ironforge)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
 				q(28268, {	-- Meet with Lord Grayson Shadowbreaker
@@ -501,7 +501,7 @@ _.Zones =
 					["coord"] = { 51.0, 26.2, 87 },	-- Nittlebur Sparkfizzle (Ironforge)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 50,
 				}),
 				q(28262, {	-- Meet with Lord Tony Romano
@@ -509,7 +509,7 @@ _.Zones =
 					["coord"] = { 51.6, 14.6, 87 },	-- Hulfdan Blackbeard (Ironforge)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 50,
 				}),
 				q(28263, {	-- Meet with Maginor Dumas
@@ -517,7 +517,7 @@ _.Zones =
 					["coord"] = { 26.2, 6.2, 87 },	-- Nittlebur Sparkfizzle (Ironforge)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 50,
 				}),
 				q(28260, {	-- Meet with Wulf Hansreim
@@ -525,7 +525,7 @@ _.Zones =
 					["coord"] = { 47.2, 88.4, 87 },	-- Daera Brightspear (Ironforge)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 50,
 				}),
 				q(1050,  {	-- Mythology of the Titans
@@ -598,8 +598,8 @@ _.Zones =
 					["coord"] = { 55.8, 47.8, 87 },
 					["sourceQuest"] = 6388,	-- Gryth Thurden
 					["races"] = {
-						3,	-- Dwarf
-						7,	-- Gnome
+						DWARF,
+						GNOME,
 					},
 				}),
 				q(9006,  {	-- Saving the Best for Last (Warrior)
@@ -607,7 +607,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
 					["races"] = ALLIANCE_ONLY,	
-					["classes"] = { 1 },	-- Warrior						
+					["classes"] = { WARRIOR },						
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -620,7 +620,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 2 },	-- Paladin						
+					["classes"] = { PALADIN },						
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -633,7 +633,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 3 },	-- Hunter						
+					["classes"] = { HUNTER },						
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -646,7 +646,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue						
+					["classes"] = { ROGUE },						
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -659,7 +659,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 5 },	-- Priest						
+					["classes"] = { PRIEST },						
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -672,7 +672,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 7 },	-- Shaman						
+					["classes"] = { SHAMAN },						
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -685,7 +685,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage						
+					["classes"] = { MAGE },						
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -698,7 +698,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock						
+					["classes"] = { WARLOCK },						
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -711,7 +711,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["sourceQuest"] = 8997,	-- Back to the Beginning [Alliance]
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 11 },	-- Druid						
+					["classes"] = { DRUID },						
 					["lvl"] = 58,
 					["u"] = 40,
 					["g"] = {
@@ -731,7 +731,7 @@ _.Zones =
 					["provider"] = { "n", 5173 },	-- Alexander Calder
 					["coord"] = { 50.2, 6.8, 87 },
 					["sourceQuest"] = 32310,	-- A Tale of Six Masters
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 90,
 				}),
 				q(26118, {	-- Seize the Ambassador
@@ -751,8 +751,8 @@ _.Zones =
 					["provider"] = { "n", 11406 },	-- High Priest Rohan
 					["coord"] = { 25.0, 8.2, 87 },
 					["isBreadcrumb"] = true,
-					["races"] = { 7 },	-- Gnome
-					["classes"] = { 5 },	-- Priest
+					["races"] = { GNOME },
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
 				q(2439,  {	-- The Platinum Discs
@@ -796,8 +796,8 @@ _.Zones =
 				q(1789,  {	-- The Symbol of Life
 					["provider"] = { "n", 6179 },	-- Tiza Battleforge
 					["coord"] = { 27.4, 12.2, 87 },
-					["races"] = { 3 },	-- Dwarf
-					["classes"] = { 2 },	-- Paladin
+					["races"] = { DWARF },
+					["classes"] = { PALADIN },
 					["lvl"] = 12,
 					["g"] = {
 						un(2, i(6866)),	-- Symbol of Life
@@ -807,8 +807,8 @@ _.Zones =
 					["provider"] = { "n", 11406 },	-- High Priest Rohan
 					["coord"] = { 25.0, 8.2, 87 },
 					["isBreadcrumb"] = true,
-					["races"] = { 4 },	-- Night Elf
-					["classes"] = { 5 },	-- Priest
+					["races"] = { NIGHTELF },
+					["classes"] = { PRIEST },
 					["lvl"] = 20,
 				}),
 				q(1802,  {	-- Tome of the Cabal
@@ -816,7 +816,7 @@ _.Zones =
 					["coord"] = { 74.2, 9.4, 87 },
 					["sourceQuest"] = 1758,	-- Tome of the Cabal
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 30,
 					["u"] = 40,
 				}),
@@ -825,16 +825,16 @@ _.Zones =
 					["coord"] = { 74.2, 9.4, 87 },
 					["sourceQuest"] = 1802,	-- Tome of the Cabal						
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 30,
 					["u"] = 40,
 				}),
 				q(27266, {	-- Wulf Calls
 					["provider"] = { "n", 5115 },	-- Daera Brightspear (Ironforge)
-					["coord"] = { 47.2, 88.4, 87 },	-- Daera Brightspear (Ironforge)
+					["coord"] = { 70.97, 89.81, 87 },	-- Daera Brightspear (Ironforge)
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 20,
 				}),
 			}),

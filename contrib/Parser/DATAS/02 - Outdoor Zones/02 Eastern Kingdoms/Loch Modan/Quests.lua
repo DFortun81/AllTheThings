@@ -102,9 +102,9 @@ _.Zones =
 					["provider"] = { "n", 44345 },	-- Cannary Caskshot
 				}),
 				q(1655,  {	-- Bailor's Ore Shipment
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 6241 },	--
+					["provider"] = { "n", 6241 },	-- Bailor Stonehand
 					["u"] = 40,	-- Legacy Quests
 				}),
 				q(26147, {	-- Bigger and Uglier
