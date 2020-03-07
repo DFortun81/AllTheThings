@@ -1337,6 +1337,7 @@ _.NeverImplemented =
 		]]--
 		
 	--	VARIOUS
+		q(52781),	-- use zidormi in arathi highlands to travel to the past
 		q(47332),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(49766),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
 		q(49767),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
@@ -2100,6 +2101,7 @@ _.NeverImplemented =
 		q(58512),	-- Grand Empress Shek'zara bonus roll
 		q(59060),	-- choosing Bitey McStabface as the name for your Aqir Hatchling
 		q(59062),	-- choosing Spike as the name for your Aqir Hatchling
+		q(59059),	-- chose "Yu'gaz" as the name for your Aqir Hatchling
 
 		-- Horrific Visions
 		-- Orgrimmar
@@ -2123,8 +2125,9 @@ _.NeverImplemented =
 		q(57030),	-- looted the chest from cleansing the Valley of Strength at the end of the scenario
 		q(57027),	-- triggers in the chest room at the end of the Orgrimmar scenario. Doesn't matter if you defeat Thrall or not
 		q(59044),	-- completed all objectives
-		q(58966),	-- triggered after completing all of zek'han's area but before killing the boss
+		q(58966),	-- triggered after completing all of zek'han's area but before killing the boss. Also triggers in Stormwind in valeria's wing
 		-- Stormwind
+		q(58968),	-- 3rd wing clear
 		q(58965),	-- triggered when going to Dwarven District (during the fight with 3 gnomes)
 		q(57153),	-- Dwarven District cleansed (Stormwind)
 		q(58970),	-- triggered when detonating explosives in Dwarven District
@@ -2135,6 +2138,10 @@ _.NeverImplemented =
 		q(57271),	-- Trade District cleansed (Stormwind)
 		q(58897),	-- triggered together with 57271
 		q(27282),	-- Mage Quarter cleansed (Stormwind)
+		q(58890),	-- Dwarven district
+		q(58893),	-- cleared mage quarter
+		q(57282),	-- cleared mage quarter
+		q(57842),	-- end of vision clear - possibly only triggers when all other wings are cleared?
 		-- TODO:: Need to determine the alliance zones for the 4 area chests. They appear to be shared with horde except for the main boss chest
 		q(57360),	-- looted the chest in front of Alleria's image at the end of the scenario. Doesn't matter if you defeat her or not
 		q(58578),	-- looted the chest from cleansing the Dwarven District at the end of the scenario (could possibly be from looting "Spark of Inspiration" Rank 2)
@@ -2211,6 +2218,7 @@ _.NeverImplemented =
 		q(57938),	-- Assember Hung talked to
 		
 		-- Ny'alotha raid
+		q(58529),	-- obtained Volatile Void Droplet (Rank 3 Formless Void) from encrypted ny'alothan texts. Renders the texts unusable
 		q(59557),	-- kill wrathion
 		q(59558),	-- kill Maut
 		q(58547),	-- kill skitra - probably triggers when first wing clears?
@@ -2221,6 +2229,7 @@ _.NeverImplemented =
 		q(59561),	-- kill dark inquisitor xanesh
 		q(58539),	-- kill vexiona - probably triggers when the right wing is cleared
 		q(58540),	-- kill vexiona - probably triggers when the right wing is cleared
+		q(58541),	-- looted Dragon Heart from vexiona on heroic. May be different ID for different difficulties
 		q(59562),	-- kill vexiona - kill credit
 		q(59563),	-- kill shad'har
 		q(59046),	-- kill Jesh'ra, big add with 200 Mementos as loot
@@ -2230,12 +2239,14 @@ _.NeverImplemented =
 		q(59560),	-- kill hivemind
 		q(58535),	-- Il'gynoth wing clear. probably triggers the azerite beacon
 		q(58536),	-- Il'gynoth wing clear. triggers dialog?
+		q(58537),	-- looted eye of prophecy from il'gynoth on heroic. May be different ID for different difficulties
 		q(59564),	-- kill Il'gynoth
 		q(59565),	-- kill ra-den
 		q(58543),	-- kill ra-den - either the wing clear OR the beacon placement
 		q(58544),	-- kill ra-den - either the wing clear OR the beacon placement
 		q(58545),	-- triggered together with 58543, 58544 and 59565. My first ever kill of Ra-den (happened on heroic)
 		q(59567),	-- kill Carapace of N'Zoth (Fury of N'Zoth)
+		q(59568),	-- nzoth killed on heroic. possibly the same for other difficulties?
 		
 		-- Azerite essences assembled with -Encrypted Ny'alothan Text
 		q(58527),	-- Replicating Void Droplets (Rank 1)
