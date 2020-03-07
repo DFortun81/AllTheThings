@@ -81,6 +81,32 @@ profession(FISHING, {
 		},
 		["icon"] = "Interface\\Icons\\inv_fishingpole_02",
 	}),	
+	filter(1, {	-- Held in Off-hand
+		i(6292),	-- 10 Pound Mud Snapper
+		i(6294),	-- 12 Pound Mud Snapper
+		i(6295),	-- 15 Pound Mud Snapper
+		i(13901),	-- 15 Pound Salmon
+		i(6309),	-- 17 Pound Catfish
+		i(13902),	-- 18 Pound Salmon
+		i(6310),	-- 19 Pound Catfish
+		i(6311),	-- 22 Pound Catfish
+		i(13903),	-- 22 Pound Salmon
+		i(13904),	-- 25 Pound Salmon
+		i(6363),	-- 26 Pound Catfish
+		i(13905),	-- 29 Pound Salmon
+		i(6364),	-- 32 Pound Catfish
+		i(13906),	-- 32 Pound Salmon
+		i(13885),	-- 34 Pound Redgill
+		i(13886),	-- 37 Pound Redgill
+		i(13882),	-- 42 Pound Redgill
+		i(13883),	-- 45 Pound Redgill
+		i(13884),	-- 49 Pound Redgill
+		i(13887),	-- 52 Pound Redgill
+		i(13914),	-- 70 Pound Mightfish
+		i(13915),	-- 85 Pound Mightfish
+		i(13916),	-- 92 Pound Mightfish
+		i(13917),	-- 103 Pound Mightfish
+	}),
 	n(-217, {	-- Lures
 		i(133715, {		-- Ancient Vrykul Ring
 			["description"] = "This item will give you a buff that will allow you to see and fish from Oodelfjisk schools.",
@@ -421,10 +447,33 @@ profession(FISHING, {
 		}),
 	}),
 	filter(50, {	-- Miscellaneous
+		i(13907),	-- 7 Pound Lobster
+		i(13908),	-- 9 Pound Lobster
+		i(13909),	-- 12 Pound Lobster
+		i(13910),	-- 15 Pound Lobster
+		i(13911),	-- 19 Pound Lobster
+		i(13912),	-- 21 Pound Lobster
+		i(13913),	-- 22 Pound Lobster
+		i(13876),	-- 40 Pound Grouper
+		i(13877),	-- 47 Pound Grouper
+		i(13878),	-- 53 Pound Grouper
+		i(13879),	-- 59 Pound Grouper
+		i(13880),	-- 68 Pound Grouper
+		i(6646),	-- Bloated Albacore
+		i(6647),	-- Bloated Catfish
+		i(21163),	-- Bloated Firefin
+		i(6644),	-- Bloated Mackerel
+		i(21243),	-- Bloated Mightfish
+		i(6645),	-- Bloated Mud Snapper
+		i(21162),	-- Bloated Oily Blackmouth
 		i(13881, {	-- Bloated Redgill
 			i(7551),	-- Entwined Opaline Talisman
 			i(7549),	-- Fairy's Embrace
 		}),
+		i(21164),	-- Bloated Rockscale Cod
+		i(13891),	-- Bloated Salmon
+		i(6643),	-- Bloated Smallfish
+		i(8366),	-- Bloated Trout
 	}),
 	n(-160, { 	-- Mounts
 		i(142398, {	-- Darkwater Skate
