@@ -29,6 +29,7 @@ _.Secrets =
 			539,
 			542,
 		},
+		["lvl"] = 110,
 		["g"] = {
 			o(9999946, { 	-- Summon Baa'l
 				["modelID"] = 80456,	-- Baa'l
