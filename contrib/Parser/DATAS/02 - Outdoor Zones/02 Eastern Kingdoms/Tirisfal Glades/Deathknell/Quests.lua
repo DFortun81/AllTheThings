@@ -62,17 +62,6 @@ _.Zones =
 							10,	-- Blood Elf
 						},
 					}),
-					q(1822,  {	-- Heirloom Weapon
-						["u"] = 40,
-						["races"] = HORDE_ONLY,
-						["classes"] = { 1 },	-- Warrior
-						["g"] = {
-							un(2, i(7115)),	-- Heirloom Axe
-							un(2, i(7117)),	-- Heirloom Hammer
-							un(2, i(7116)),	-- Heirloom Dagger
-							un(2, i(7118)),	-- Heirloom Sword
-						},
-					}),
 					q(24965, {	-- Magic Training
 						["u"] = 40,
 						["provider"] = { "n", 2124 },	-- Isabella
