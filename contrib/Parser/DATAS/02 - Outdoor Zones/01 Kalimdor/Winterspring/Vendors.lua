@@ -52,7 +52,7 @@ _.Zones =
 					},
 				}),
 				n(10618, {	-- Rivern Frostwind <Wintersaber Trainer>
-					["description"] = "Must be exalted with the Wintersaber Trainers.|r",
+					["minReputation"] = { 589, EXALTED },	-- Wintersaber Trainers, Exalted.
 					["coord"] = { 46.6, 17.6, 83 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -60,7 +60,7 @@ _.Zones =
 					},
 				}),
 				n(11184, {	-- Wixxrak <Weaponsmith & Gunsmith>
-					["description"] = "Must have completed the quest 'Blackrock Depths: Jewel of the Depths'|r.",
+					["description"] = "Must have completed the quest 'Blackrock Depths: Jewel of the Depths'.",
 					["coord"] = { 60.2, 50.2, 83 },
 					["g"] = {
 						i(142357),	-- Plans: Dawn's Edge
