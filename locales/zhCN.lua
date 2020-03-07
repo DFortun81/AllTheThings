@@ -131,154 +131,176 @@ for key, value in pairs({
 }) do a[key] = value end
 
 local a = L.NPC_ID_NAMES
-for key, value in pairs({
-
-		[0] = ZONE .. BATTLE_PET_SOURCE_1,
-		[-1] = BATTLE_PET_BREED_QUALITY2 .. TRANSMOG_SOURCE_1,
-		[-7] = WORLD .. RAID_BOSSES,
-		[-12] = DUNGEON_FLOOR_DIREMAUL5 .. " [东 - 恶魔]",
-		[-13] = DUNGEON_FLOOR_DIREMAUL1 .. " [北 - 食人魔]",
-		[-14] = DUNGEON_FLOOR_DIREMAUL2 .. " [西 - 精灵]",
+for key, value in pairs({=
+		[0] = ZONE .. BATTLE_PET_SOURCE_1, -- Zone Drop 地区掉落
+		[-1] = BATTLE_PET_BREED_QUALITY2 .. TRANSMOG_SOURCE_1, -- Common Boss Drop 普通首领掉落
+		[-5] = "Prospecting",
+		[-7] = WORLD .. RAID_BOSSES, -- World Bosses 世界首领
+		[-10] = "小队同步", -- Party Sync
+		[-12] = DUNGEON_FLOOR_DIREMAUL5 .. " [东 - 恶魔]", -- Warpwood Quarter [East - Demon] 扭木广场
+		[-13] = DUNGEON_FLOOR_DIREMAUL1 .. " [北 - 食人魔]", -- Gordok Commons [North - Ogres] 戈多克议会
+		[-14] = DUNGEON_FLOOR_DIREMAUL2 .. " [西 - 精灵]", -- Capital Gardens [West - Elves] 中心花园
 		[-15] = "Common Vendor Items",
+		[-16] = "稀有", -- Rares
+		
+		[-40] = "绝版", -- Legacy
 		[-41] = "Cache of Madness",
-		[-53] = "仲夏火焰节",
-		[-55] = "海盗日",
-		[-59] = "亡灵节",
-		[-62] = "荆棘谷钓鱼大赛",
-		[-65] = "暴雪" .. select(1, GetCategoryInfo(15268)),
-		[-70] = DUNGEON_FLOOR_DESOLACE22,
-		[-71] = DUNGEON_FLOOR_DESOLACE21,
-		[-72] = "萨格雷战争议会",
-		[-93] = "希利苏斯：创伤之痕",
-		[-94] = "黑市拍卖行",
-		[-99] = "建筑",
-		[-101] = "追随者",
+-- Armor Types
+		[-43] = GetItemSubClassInfo(4,1) -- Cloth 布甲
+		[-44] = GetItemSubClassInfo(4,2) -- Leather 皮甲
+		[-45] = GetItemSubClassInfo(4,3) -- Mail 锁甲
+		[-46] = GetItemSubClassInfo(4,4) -- Plate 板甲
+-- World Events
+		[-50] = "情人节", -- Love is in the Air
+		
+		[-53] = "仲夏火焰节", -- Midsummer Fire Festival
+		[-55] = "海盗日", -- Pirate's Day
+		[-59] = "亡灵节", -- Day of the Dead
+		[-61] = "冬幕节", -- The Feast of Winter Veil
+		[-62] = "荆棘谷钓鱼大赛", -- Stranglethorn Fishing Extravaganza
+		[-65] = "暴雪推广活动", -- Blizzard Promotions
+		[-70] = DUNGEON_FLOOR_DESOLACE22, -- Foulspore Cavern [Orange]
+		[-71] = DUNGEON_FLOOR_DESOLACE21, -- The Wicked Grotto [Purple]
+		[-72] = "萨格雷战争议会", -- Sargerei War Council
+		[-85] = "墓地", -- Graveyard
+		[-86] = "Library",
+		[-87] = "Armory",
+		[-88] = "Cathedral",
+		[-93] = "希利苏斯：创伤之痕", -- Silithus (The Wound)
+		[-94] = "黑市拍卖行", -- Black Market Auction House
+-- Garrison Note: These will be changed into a new class soon(TM)
+		[-99] = "建筑", -- Buildings
+		[-101] = "追随者", -- Followers
+
 		[-124] = "要塞套装", 
 		[-130] = "暮色森林 "..GetSpellInfo(133137),
 		[-131] = "辛特兰 "..GetSpellInfo(133137),
 		[-132] = "菲拉斯 "..GetSpellInfo(133137),
 		[-133] = "暮色森林 "..GetSpellInfo(78741),
 		
-		[-134] = "奥格瑞玛套装",
-		[-135] = "暴风城套装",
-		
-		[-140] = "共济",
-		[-141] = "邪魂",
-		[-142] = "摧心",
-		[-143] = "浅酌者",
-		[-144] = "烟舞者",
-		[-145] = "山岳贤者",
-		[-146] = "誓约者",
-		[-147] = "春雨",
-		[-148] = "溪语者",
-		[-149] = "阳魂",
-		[-150] = "探路者",
+--Transmog Sets
+		[-134] = "奥格瑞玛套装", -- Orgrimmar Set
+		[-135] = "暴风城套装", -- Stormwind Set
+-- Class Trial Sets
+		[-140] = "共济", -- Communal
+		[-141] = "邪魂", -- Felsoul
+		[-142] = "摧心", -- Heart-Lesion
+		[-143] = "浅酌者", -- Lightdrinker
+		[-144] = "烟舞者", -- Mistdancer
+		[-145] = "山岳贤者", -- Mountainsage
+		[-146] = "誓约者", -- Oathsworn
+		[-147] = "春雨", -- Springrain
+		[-148] = "溪语者", -- Streamtalker
+		[-149] = "阳魂", -- Sunsoul
+		[-150] = "探路者", -- Trailseeker
 		[-152] = "要塞战役",
-		
 		[-157] = "辛特兰 "..GetSpellInfo(78741),
 		[-158] = "菲拉斯 "..GetSpellInfo(78741),
-		[-159] = "事件roll点",
-		[-168] = FACTION_OTHER..QUESTS_LABEL,
-		[-171] = "任务线",
-		[-175] = "垃圾场匠技",
+		[-159] = "事件roll点", -- Event Roll (Daily Dreamway Event Roll)
+		[-168] = FACTION_OTHER .. QUESTS_LABEL,
 		
-		[-211] = NEW .. CHARACTER,												-- New Character
-		[-212] = "宝箱",															-- Treasure Chest
-		[-214] = "夜之子",								-- Nightborne Home
-		[-217] = "Lures",														-- Lures (for Fishing)
-		[-218] = "鱼饵",														-- Coastal (for Fishing)
-		[-224] = "伊利达雷",
-		[-236] = "联盟阵营战役",
+		[-171] = "任务线", -- Quest Chains
+		[-175] = "垃圾场匠技", -- Junkyard Tinkering
+		
+		[-206] = "典范", -- Paragon
+		
+		[-211] = NEW .. CHARACTER, -- New Character 新建角色
+		[-212] = "宝箱", -- Treasure Chest
+		[-214] = "夜之子", -- Nightborne Home
+		[-217] = "Lures", -- Lures (for Fishing)
+		[-218] = "鱼饵", -- Coastal (for Fishing)
+		[-224] = "伊利达雷", -- Illidari
+		[-236] = "联盟阵营战役", -- Alliance War Campaign
 		
 		[-242] = "Unrated",
 		[-243] = "Bounty",
-		[-244] = "黑铁矮人",
-		[-245] = "玛格汉兽人",
-		[-246] = "Is Another Man's Treasure",									-- Is Another Man's Treasure
-		[-247] = "Riches of Pandaria",											-- Riches of Pandaria
-		[-251] = "赞达拉巨魔",
-		[-252] = "库尔提拉斯人",
-		[-253] = "部落阵营战役",
-		[-254] = "传承护甲",
-		[-255] = "狐人",
-		[-256] = "机械侏儒",
+		[-244] = "黑铁矮人", -- Dark Iron Dwarf
+		[-245] = "玛格汉兽人", -- Mag'har Orc
+		[-246] = "Is Another Man's Treasure", -- Is Another Man's Treasure
+		[-247] = "Riches of Pandaria", -- Riches of Pandaria
+		[-251] = "赞达拉巨魔", -- Zandalari Troll
+		[-252] = "库尔提拉斯人", -- Kul Tiran
+		[-253] = "部落阵营战役", -- Horde War Campaign
+		[-254] = "传承护甲", -- Heritage Armor
+		[-255] = "狐人", -- Vulpera
+		[-256] = "机械侏儒", -- Mechagnome
 		
-		[-351] = "首领掉落",
-		[-356] = "进攻黑暗之门",
-		[-359] = "酿酒厂",
-		[-362] = "晴日峰",
+		[-351] = "首领掉落", -- Boss Drop
+		[-356] = "进攻黑暗之门", -- Assault on the Dark Portal
+		[-359] = "酿酒厂", -- Brewery
+		[-362] = "晴日峰", -- Peak of Serenity
 		
 		[-366] = "武器系列",
 		
-		[-388] = "主门",
-		[-389] = "仆从入口",
+		[-388] = "主门", -- Main Gate (Stratholme)
+		[-389] = "仆从入口", -- Service Entrance (Stratholme)
 		
-		[-488] = "战争宝箱",
-		[-489] = "周常PvP宝箱",
-		[-491] = "塔罗牌",
-		[-492] = "幻象",
+		[-488] = "战争宝箱", -- War Chest
+		[-489] = "周常PvP宝箱", -- Weekly PVP Chest
+		[-491] = "塔罗牌", -- Tarot Cards
+		[-492] = "幻象", -- Illusions
 		
-		[-518] = "库尔提拉斯和赞达拉",
-		[-520] = "资料片前夕",
+		[-518] = "库尔提拉斯和赞达拉", -- Kul Tiras and Zandalar
+		[-520] = "资料片前夕", -- Expansion Pre-Launch
 		[-521] = "燃烧的远征：Dark Portal Opens", -- 这些谁知道官翻？
 		[-522] = "巫妖王之怒：Zombie Infestation",
 		[-523] = "大地的裂变：Elemental Unrest",
 		[-525] = "德拉诺之王：Iron Horde Incursion",
 		[-526] = "军团再临：Legion Invasion",
 		[-527] = "争霸艾泽拉斯：荆棘之战",
-		[-528] = "破碎群岛",												-- Broken Isles [Mole Machine]
+		[-528] = "破碎群岛", -- Broken Isles [Mole Machine]
 		[-531] = "2008 Spirit of Competition Event",
-		[-532] = "风暴英雄推广活动",
-		[-533] = "炉石传说推广活动",
-		[-534] = "典藏版",
+		[-532] = "风暴英雄推广活动", -- Heroes of the Storm Promotion
+		[-533] = "炉石传说推广活动", -- Hearthstone Promotion
+		[-534] = "典藏版", -- Collector's Edition
 		
-		[-536] = "守望先锋推广活动",
-		[-537] = "星际争霸推广活动",
-		[-538] = "暗黑破坏神20周年庆",
-		[-539] = "安其拉开门",
-		[-540] = "天灾入侵",
+		[-536] = "守望先锋推广活动", -- Overwatch Promotion
+		[-537] = "星际争霸推广活动", -- Starcraft Promotion
+		[-538] = "暗黑破坏神20周年庆", -- Diablo 20th Anniversary Promotion
+		[-539] = "安其拉之门", -- Gates of Ahn'Qiraj
+		[-540] = "天灾入侵", -- The Scourge Invasion
 		[-541] = "Battle for Sun's Reach",
 		[-542] = "Battlefield: Barrens",
-		[-543] = "军团入侵",
-		[-544] = "魔兽世界典藏版",
-		[-545] = "暴雪嘉年华",
-		[-546] = REFER_A_FRIEND,												-- Recruit A Friend
-		[-547] = "欧洲限定",
-		[-548] = "中国限定",
-		[-549] = "韩国限定",
-		[-550] = "星际争霸典藏版",
-		[-551] = "暗黑破坏神典藏版",
+		[-543] = "军团入侵", -- Legion Invasions
+		[-544] = "魔兽世界典藏版", -- WoW Collector's Edition
+		[-545] = "暴雪嘉年华", -- Blizzcon
+		[-546] = REFER_A_FRIEND, -- Recruit A Friend 招募战友
+		[-547] = "欧洲限定", -- EU Only
+		[-548] = "中国限定", -- China Only
+		[-549] = "韩国限定", -- Korea Only
+		[-550] = "星际争霸典藏版", -- Starcraft Collector's Edition
+		[-551] = "暗黑破坏神典藏版", -- Diablo Collector's Edition
 		[-552] = "Warcraft 3 Spoils of War Edition",
 		[-553] = "2006 ICoke Promotion",
 		[-554] = "EU Fansite Promotion",
 		[-555] = "Korean Promotional Event",
 		[-556] = "Arena Tournament",
 		[-557] = "Korea World Event",
-		[-558] = "上海2012年战网世界锦标赛",
+		[-558] = "上海2012年战网世界锦标赛", -- Battle.net World Championship Shanghai 2012
 
-		[-561] = "2007世界邀请赛",
-		[-562] = "2008世界邀请赛",
+		[-561] = "2007世界邀请赛", -- 2007 Worldwide Invitational
+		[-562] = "2008世界邀请赛", -- 2008 Worldwide Invitational
 		[-563] = "Azeroth's Choppers",
-		[-564] = "星际争霸2：自由之翼",
-		[-565] = "星际争霸2：虫群之心",
-		[-566] = "暗黑破坏神3",
-		[-567] = "炉石传说",
+		[-564] = "星际争霸2：自由之翼", -- Starcraft II: Wings of Liberty
+		[-565] = "星际争霸2：虫群之心", -- Starcraft II: Heart of the Swarm
+		[-566] = "暗黑破坏神3", -- Diablo III
+		[-567] = "炉石传说", -- Hearthstone
 		[-568] = "Overwatch: Origins",
 		[-569] = "Azeroth Academy Mentor Recruitment Promotion",
 
-		[-572] = "风暴英雄",
+		[-572] = "风暴英雄", -- Heroes of the Storm
 		[-574] = "Diablo III Annual Pass",
-		[-575] = "暗黑破坏神3：夺魂之镰",
-		[-576] = "星际争霸2：虚空之遗",
-		[-577] = "魔兽世界电影",
+		[-575] = "暗黑破坏神3：夺魂之镰", -- Diablo III: Reaper of Souls
+		[-576] = "星际争霸2：虚空之遗", -- StarCraft II: Legacy of the Void
+		[-577] = "魔兽世界电影", -- World of Warcraft Movie
 		
-		[-650] = "任务物品",
+		[-650] = "任务物品", -- Quest Items
 		
 -- PvP Set Names
-		[-659] = "候选者套装",												-- Aspirant PvP Gear (WoD, BfA)
-		[-660] = "争斗者套装",												-- Combatant PvP Gear (WoD, Legion)
-		[-661] = "角斗士套装",												-- Gladiator PvP Gear
-		[-662] = "精锐套装",													-- Elite PvP Gear
+		[-659] = "候选者套装", -- Aspirant PvP Gear (WoD, BfA)
+		[-660] = "争斗者套装", -- Combatant PvP Gear (WoD, Legion)
+		[-661] = "角斗士套装", -- Gladiator PvP Gear
+		[-662] = "精锐套装", -- Elite PvP Gear
 
 -- Classic PvP Seasons
 		[-663] = "Classic Pre-Season Gear",										-- Classic Pre-Season PvP Gear (need a icon)
@@ -562,7 +584,81 @@ for key, value in pairs({
 
 local a = L.OBJECT_ID_NAMES
 for key, value in pairs({
-
+		[273301] = "上古艾瑞达宝箱", -- Ancient Eredar Cache
+		[273407] = "上古艾瑞达宝箱", -- Ancient Eredar Cache
+		[273412] = "上古艾瑞达宝箱", -- Ancient Eredar Cache
+		[273414] = "上古艾瑞达宝箱", -- Ancient Eredar Cache
+		[273415] = "上古艾瑞达宝箱", -- Ancient Eredar Cache
+		[273439] = "上古艾瑞达宝箱", -- Ancient Eredar Cache
+		[273519] = "军团战争物资", -- Legion War Supplies
+		[273521] = "军团战争物资", -- Legion War Supplies
+		[273523] = "军团战争物资", -- Legion War Supplies
+		[273524] = "军团战争物资", -- Legion War Supplies
+		[273527] = "军团战争物资", -- Legion War Supplies
+		[273528] = "军团战争物资", -- Legion War Supplies
+		[273533] = "军团战争物资", -- Legion War Supplies
+		[273535] = "军团战争物资", -- Legion War Supplies
+		[273538] = "军团战争物资", -- Legion War Supplies
+		[273814] = "Bladed Charm",
+		[273854] = "Backpack",
+		[273900] = "Small Treasure Chest",
+		[273902] = "Small Treasure Chest",
+		[273903] = "Small Treasure Chest",
+		[273905] = "Small Treasure Chest",
+		[273910] = "Small Treasure Chest",
+		[273917] = "Small Treasure Chest",
+		[273918] = "Small Treasure Chest",
+		[273919] = "Small Treasure Chest",
+		[275070] = "Small Treasure Chest",
+		[275071] = "Small Treasure Chest",
+		[275074] = "Small Treasure Chest",
+		[275076] = "Small Treasure Chest",
+		[276187] = "Junji",
+		[276223] = "艾瑞达宝箱", -- Eredar Treasure Cache
+		[276224] = "来路不明的箱子", -- Chest of Ill-Gotten Gains
+		[276225] = "学徒的惊喜留念", -- Student's Surprising Surplus
+		[276226] = "虚空回荡的宝箱", -- Void-Tinged Chest
+		[276227] = "奥古雷隐秘存储箱", -- Augari Secret Stash
+		[276228] = "绝望的艾瑞达的储物箱", -- Desperate Eredar's Cache
+		[276229] = "房屋废墟宝箱", -- Shattered House Chest
+		[276230] = "末日追寻者的宝藏", -- Doomseeker's Treasure
+		[276251] = "Excavation Inventory",
+		[276488] = "Azurite Cannonball",
+		[276489] = "军团塔楼宝箱", -- Legion Tower Chest
+		[276490] = "克罗库紧急储物箱", -- Krokul Emergency Cache
+		[276491] = "丢失的克罗库宝箱", -- Lost Krokul Chest
+		[276515] = "Fishing Rod",
+		[276513] = "Intact Mudfish",
+		[276735] = "Offerings of the Chosen",
+		[277204] = "被遗忘的军团补给", -- Forgotten Legion Supplies
+		[277205] = "古老的军团战争储物箱", -- Ancient Legion War Cache
+		[277206] = "邪能缠绕的宝箱", -- Fel-Bound Chest
+		[277207] = "军团财宝", -- Legion Treasure Hoard
+		[277208] = "历时久远的邪能宝箱", -- Timeworn Fel Chest
+		[277327] = "奥古雷符文宝箱", -- Augari-Runed Chest
+		[277333] = "Ancient Sarcophagus",
+		[277340] = "隐秘奥古雷宝箱", -- Secret Augari Chest
+		[277342] = "奥古雷货物", -- Augari Goods
+		[277343] = "失落已久的奥古雷宝藏", -- Long-Lost Augari Treasure
+		[277344] = "珍贵的奥古雷信物", -- Precious Augari Keepsakes
+		[277346] = "丢失的奥古雷宝箱", -- Missing Augari Chest
+		[277373] = "Glimmering Seaweed",
+		[277459] = "Pig Effigy",
+		[277561] = "Warlord's Cache",
+		[277715] = "Cursed Nazmani Chest",
+		[277885] = "Wunja's Trove",
+		[277897] = "Seething Cache",
+		[278313] = "Sternly Worded Letter",
+		[278368] = "Tattered Note",
+		[278436] = "Shipwrecked Chest",
+		[278437] = "Offering to Bwonsamdi",
+		[278447] = "Faithless Trapper's Spear",
+		[278669] = "Fallhaven Ledger",
+		[278675] = "Cursed Effigy",
+		[279042] = "Smuggler's Stash",
+		[279253] = "Lucky Horace's Lucky Chest",
+		[279260] = "Cleverly Disguised Chest",
+		[279299] = "Venomous Seal",
 }) do a[key] = value end
 
 L["UNOBTAINABLE_ITEM_REASONS"] = {
