@@ -67,8 +67,8 @@ L["CURRENCY_ID"] = "货币ID"
 L["DIFFICULTY_ID"] = "难度ID"
 L["ENCOUNTER_ID"] = "首领战ID"
 L["EXPANSION_ID"] = "资料片ID"
-L["FILTER_ID"] = "过滤器ID"
-L["FOLLOWER_ID"] = "追随者 ID";
+L["FILTER_ID"] = "滤镜ID"
+L["FOLLOWER_ID"] = "追随者ID";
 L["INSTANCE_ID"] = "副本ID"
 L["ITEM_ID"] = "物品ID"
 L["FACTION_ID"] = "阵营ID"
@@ -119,14 +119,14 @@ L["CUSTOM_DIFFICULTIES"] = {
 
 local a = L.FILTER_ID_TYPES
 for key, value in pairs({
-		[11] = "神器",
-		[55] = "消耗品",
-		[59] = "职业技能书",
-		[103] = "幻象",
+		[11] = "神器", -- Artifacts
+		[55] = "消耗品", -- Consumables
+		[59] = "职业技能书", -- Class Books
+		[103] = "幻象", -- Illusions
 		[107] = "Vignettes",
-		[108] = "乐谱",
-		[110] = "头衔",
-		[114] = "坐骑装备",
+		[108] = "乐谱", -- Music Rolls
+		[110] = "头衔", -- Titles
+		[114] = "坐骑装备", -- Mount Equipment
 		[999] = "Event Item",
 }) do a[key] = value end
 
