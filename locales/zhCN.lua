@@ -531,16 +531,16 @@ for key, value in pairs({
 		[-3335] = "Bloodwake",
 		[-3336] = "Rattling Bone",
 		[-3337] = "Twilight Dragon",
-		[-3338] = ISLANDS_HEADER,													-- Island Expeditions
-		[-3339] = LOOT_JOURNAL_ITEM_SETS,											-- Item Sets
+		[-3338] = ISLANDS_HEADER, -- Island Expeditions
+		[-3339] = "套装", -- Item Sets
 
 -- PvP Sets
 	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
-		[-4168] = "The Scale's Embrace",
-		[-4169] = "Embrace of the Viper",
-		[-4189] = CALENDAR_TYPE_PVP.." "..LOOT_JOURNAL_ITEM_SETS, 					-- Instance Item Sets, PvP
-		[-4190] = "Pre-Season",
-		[-4191] = "Tournament",
+		[-4168] = "鳞族之拥", -- The Scale's Embrace
+		[-4169] = "毒蛇的拥抱", -- Embrace of the Viper
+		[-4189] = "PvP套装", -- Instance Item Sets, PvP
+		[-4190] = "季前赛", -- Pre-Season
+		[-4191] = "竞技装备", -- Tournament
 -- Tier/Dungeon/Event/Holiday Sets
 	-- Artifact Strings
 		[-5200] = "基础外观",
