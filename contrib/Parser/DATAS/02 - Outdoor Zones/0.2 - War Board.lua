@@ -533,10 +533,18 @@ _.Zones =
 			q(26365, {	-- Hero's Call: Redridge Mountains!
 				["description"] = "This is a breadcrumb quest and is mutually exclusive with other Redridge Mountains breadcrumbs.  It also seems to be unobtainable at higher levels, so if you want to collect the transmog from this quest then you'll need to do it early.",
 				["lvl"] = 15,
-				["coord"] = { 85.6, 31.8, 84 },
+				["coords"] = {
+					{ 85.6, 31.8, 84 },	-- Anduin Wrynn <King of Stormwind> -- not sure about this one
+					{ 85.8, 32.4, 84 },	-- Grand Admiral Jes-Tereth
+					{ 56.3, 47.6, 52 },	-- Captain Danuvin
+				},
 				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["provider"] = { "n", 107574 },	-- Anduin Wrynn <King of Stormwind> 
+				["providers"] = {
+					{ "n", 107574 },	-- Anduin Wrynn <King of Stormwind> -- not sure about this one
+					{ "n", 1750 },		-- Grand Admiral Jes-Tereth
+					{ "n", 821 },		-- Captain Danuvin
+				},
 				["g"] = {
 					i(60689),	-- Belt of Unsolvable Problems
 					i(60690),	-- Doody Boots

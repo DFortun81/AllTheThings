@@ -119,7 +119,7 @@ _.Zones =
 				}),
 				q(8308,  {	-- Brann Bronzebeard's Lost Letter
 					["provider"] = { "i", 20461 },	-- Brann Bronzebeard's Lost Letter
-					["description"] = "This quest is only available during or after 'Dearest Natalia', but before picking up 'Breaking the Code' and 'Glyph Chasing.'",
+					["description"] = "This quest is only available during or after 'Dearest Natalia', but before picking up 'Breaking the Code'.",
 					["sourceQuest"] = 8304,	-- Dearest Natalia
 					--["isBreadcrumb"] = true,	--Note!! It's technically not a breadcrumb.  Just a quest with odd restrictions so we still want to display it, especially with a reward.
 					["crs"] = {
