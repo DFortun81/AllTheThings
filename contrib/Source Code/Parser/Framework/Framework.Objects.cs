@@ -897,7 +897,9 @@ namespace ATT
             /// <param name="directory">The directory to file the debug files to.</param>
             public static void Export(string directory)
             {
-                File.WriteAllText(Path.Combine(directory, "Categories.lua"), ATT.Export.ExportCompressedLuaCategories(AllContainers).ToString());
+                var AllContainerClones = new Dictionary<string, List<object>>(AllContainers);
+                AllContainerClones.Remove("Blacklist");
+                File.WriteAllText(Path.Combine(directory, "Categories.lua"), ATT.Export.ExportCompressedLuaCategories(AllContainerClones).ToString());
             }
             #endregion
             #region Export DB

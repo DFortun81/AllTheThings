@@ -473,7 +473,7 @@ _.Zones =
 						cl(9, { 	-- Warlock
 							q(8076, {	-- Paragons of Power: The Demoniac's Mantle
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {9},	-- Warlock
+								["classes"] = { WARLOCK },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19849)),	-- Zandalar Demoniac's Mantle
@@ -481,7 +481,7 @@ _.Zones =
 							}),
 							q(8077, {	-- Paragons of Power: The Demoniac's Robes
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {9},	-- Warlock
+								["classes"] = { WARLOCK },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(20033)),	-- Zandalar Demoniac's Robe
@@ -489,7 +489,7 @@ _.Zones =
 							}),
 							q(8059, {	-- Paragons of Power: The Demoniac's Wraps
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {9},	-- Warlock
+								["classes"] = { WARLOCK },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19848)),	-- Zandalar Demoniac's Wraps
@@ -497,7 +497,7 @@ _.Zones =
 							}),
 							q(8106, {	-- Kezan's Taint [Friendly]
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {9},	-- Warlock
+								["classes"] = { WARLOCK },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19602)),	-- Kezan's Taint
@@ -505,7 +505,7 @@ _.Zones =
 							}),
 							q(8107, {	-- Kezan's Taint [Honored]
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {9},	-- Warlock
+								["classes"] = { WARLOCK },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19603)),	-- Kezan's Taint
@@ -513,7 +513,7 @@ _.Zones =
 							}),
 							q(8108, {	-- Kezan's Taint [Revered]
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {9},	-- Warlock
+								["classes"] = { WARLOCK },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19604)),	-- Kezan's Taint
@@ -521,7 +521,7 @@ _.Zones =
 							}),
 							q(8109, {	-- Kezan's Unstoppable Taint
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {9},	-- Warlock
+								["classes"] = { WARLOCK },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19605)),	-- Kezan's Unstoppable Taint
@@ -531,7 +531,7 @@ _.Zones =
 						cl(11, { 	-- Druid
 							q(8065, {	-- Paragons of Power: The Haruspex's Tunic
 								["provider"] = { "n", 14904 },		-- Maywiki of Zuldazar
-								["classes"] = {9},	-- Warlock
+								["classes"] = { DRUID },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19838)),	-- Zandalar Haruspex's Tunic
@@ -539,7 +539,7 @@ _.Zones =
 							}),
 							q(8057, {	-- Paragons of Power: The Haruspex's Bracers
 								["provider"] = { "n", 14904 },		-- Maywiki of Zuldazar
-								["classes"] = {9},	-- Warlock
+								["classes"] = { DRUID },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19840)),	-- Zandalar Haruspex's Bracers
@@ -547,7 +547,7 @@ _.Zones =
 							}),
 							q(8064, {	-- Paragons of Power: The Haruspex's Belt
 								["provider"] = { "n", 14904 },		-- Maywiki of Zuldazar
-								["classes"] = {9},	-- Warlock
+								["classes"] = { DRUID },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19839)),	-- Zandalar Haruspex's Belt
@@ -555,7 +555,7 @@ _.Zones =
 							}),
 							q(8110, {	-- Enchanted South Seas Kelp [Friendly]
 								["provider"] = { "n", 14904 },		-- Maywiki of Zuldazar
-								["classes"] = {9},	-- Warlock
+								["classes"] = { DRUID },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19610)),	-- Enchanted South Seas Kelp
@@ -563,7 +563,7 @@ _.Zones =
 							}),
 							q(8111, {	-- Enchanted South Seas Kelp [Honored]
 								["provider"] = { "n", 14904 },		-- Maywiki of Zuldazar
-								["classes"] = {9},	-- Warlock
+								["classes"] = { DRUID },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19611)),	-- Enchanted South Seas Kelp
@@ -571,7 +571,7 @@ _.Zones =
 							}),
 							q(8112, {	-- Enchanted South Seas Kelp [Revered]
 								["provider"] = { "n", 14904 },		-- Maywiki of Zuldazar
-								["classes"] = {9},	-- Warlock
+								["classes"] = { DRUID },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19612)),	-- Enchanted South Seas Kelp
@@ -579,7 +579,7 @@ _.Zones =
 							}),
 							q(8113, {	-- Pristine Enchanted South Seas Kelp
 								["provider"] = { "n", 14904 },		-- Maywiki of Zuldazar
-								["classes"] = {9},	-- Warlock
+								["classes"] = { DRUID },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19613)),	-- Pristine Enchanted South Seas Kelp
