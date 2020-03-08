@@ -685,6 +685,19 @@ for key, value in pairs({
 		[279260] = "Cleverly Disguised Chest",
 		[279299] = "Venomous Seal",
 
+-- 巴尔
+		[293837] = "|cFFFFFFFF步骤2:|r 普通的卵石 I", -- Ordinary Pebble I
+		[293838] = "|cFFFFFFFF步骤3:|r 普通的卵石 II", -- Ordinary Pebble II
+		[293839] = "|cFFFFFFFF步骤4:|r 普通的卵石 III", -- Ordinary Pebble III
+		[293840] = "|cFFFFFFFF步骤5:|r 普通的卵石 IV", -- Ordinary Pebble IV
+		[293841] = "|cFFFFFFFF步骤6:|r 普通的卵石 V", -- Ordinary Pebble V
+		[293842] = "|cFFFFFFFF步骤7:|r 普通的卵石 VI", -- Ordinary Pebble VI
+		[293843] = "|cFFFFFFFF步骤8:|r 普通的卵石 VII", -- Ordinary Pebble VII
+		[293844] = "|cFFFFFFFF步骤9:|r 普通的卵石 VIII", -- Ordinary Pebble VIII
+		[293845] = "|cFFFFFFFF步骤10:|r 普通的卵石 IX", -- Ordinary Pebble IX
+		[293846] = "|cFFFFFFFF步骤11:|r 普通的卵石 X", -- Step11: Ordinary Pebble X
+		[293849] = "|cFFFFFFFF步骤1:|r 不起眼的纸条", -- Step1: Conspicious Note
+		
 -- 钟示贤德腰带
 		[294096] = "点亮的宝珠", -- Lit Orb
 		[294097] = "奇怪的种子", -- Strange Seed
