@@ -131,7 +131,7 @@ for key, value in pairs({
 }) do a[key] = value end
 
 local a = L.NPC_ID_NAMES
-for key, value in pairs({=
+for key, value in pairs({
 		[0] = ZONE .. BATTLE_PET_SOURCE_1, -- Zone Drop 地区掉落
 		[-1] = BATTLE_PET_BREED_QUALITY2 .. TRANSMOG_SOURCE_1, -- Common Boss Drop 普通首领掉落
 		[-5] = "Prospecting",
@@ -146,10 +146,10 @@ for key, value in pairs({=
 		[-40] = "绝版", -- Legacy
 		[-41] = "Cache of Madness",
 -- Armor Types
-		[-43] = GetItemSubClassInfo(4,1) -- Cloth 布甲
-		[-44] = GetItemSubClassInfo(4,2) -- Leather 皮甲
-		[-45] = GetItemSubClassInfo(4,3) -- Mail 锁甲
-		[-46] = GetItemSubClassInfo(4,4) -- Plate 板甲
+		[-43] = GetItemSubClassInfo(4,1), -- Cloth 布甲
+		[-44] = GetItemSubClassInfo(4,2), -- Leather 皮甲
+		[-45] = GetItemSubClassInfo(4,3), -- Mail 锁甲
+		[-46] = GetItemSubClassInfo(4,4), -- Plate 板甲
 -- World Events
 		[-50] = "情人节", -- Love is in the Air
 		
@@ -584,6 +584,31 @@ for key, value in pairs({=
 
 local a = L.OBJECT_ID_NAMES
 for key, value in pairs({
+		[269830] = "|cFFFFFFFFStep 9:|r Gift of the Mind-Seekers",
+		[270855] = "|cFFFFFFFF步骤1:|r 不起眼的字条", -- Step1: Inconspicuous Note
+		[270917] = "Glenbrook Register",
+		[271706] = "Hunters' Board",
+		[271849] = "艾瑞达战争物资", -- Eredar War Supplies
+		[271850] = "艾瑞达战争物资", -- Eredar War Supplies
+		[272039] = "|cFFFFFFFF步骤2:|r 不起眼的字条", -- Step2: Inconspicuous Note
+		[272046] = "|cFFFFFFFF步骤3:|r 思维幼虫", -- Step3: Mind Larva
+		[272061] = "|cFFFFFFFF步骤4:|r 不起眼的字条", -- Step4: Inconspicuous Note
+		[272163] = "|cFFFFFFFF步骤5:|r 奇怪的头骨", -- Step5: Strange Skull
+		[272165] = "|cFFFFFFFF步骤6:|r 不起眼的字条", -- Step5: Inconspicuous Note
+		[272172] = "|cFFFFFFFF步骤7:|r 不起眼的字条", -- Step7: Inconspicuous Note
+		[272179] = "Mayor's Bulletin",
+		[272181] = "|cFFFFFFFF步骤8:|r 不起眼的字条", -- Step8: Inconspicuous Note
+		[272220] = "|cFFFFFFFF步骤9:|r 不起眼的字条", -- Step9: Inconspicuous Note
+		[272270] = "|cFFFFFFFF步骤10:|r 解谜者的愿望", -- Step10: Puzzler's Desire
+		[272422] = "Gentle's Spellbook",
+		[272455] = "艾瑞达战争物资", -- Eredar War Supplies
+		[272456] = "艾瑞达战争物资", -- Eredar War Supplies
+		[272487] = "|cFFFFFFFF步骤14:|r Oddly-Colored Egg",
+		[272768] = "Empyrium Deposit",
+		[272770] = "艾瑞达战争物资", -- Eredar War Supplies
+		[272771] = "艾瑞达战争物资", -- Eredar War Supplies
+		[272780] = "Empyrium Seam",
+		[273222] = "艾瑞达战争物资", -- Eredar War Supplies
 		[273301] = "上古艾瑞达宝箱", -- Ancient Eredar Cache
 		[273407] = "上古艾瑞达宝箱", -- Ancient Eredar Cache
 		[273412] = "上古艾瑞达宝箱", -- Ancient Eredar Cache
@@ -659,6 +684,42 @@ for key, value in pairs({
 		[279253] = "Lucky Horace's Lucky Chest",
 		[279260] = "Cleverly Disguised Chest",
 		[279299] = "Venomous Seal",
+
+-- 钟示贤德腰带
+		[294096] = "点亮的宝珠", -- Lit Orb
+		[294097] = "奇怪的种子", -- Strange Seed
+		[294098] = "小青蛙", -- Tiny Frog
+		[294099] = "易脆的骨头", -- Brittle Bone
+		[294100] = "错放的蜡烛", -- Misplaced Candle
+		[294101] = "奇异的杯子", -- Odd Cup
+		[294102] = "奇趣的石头", -- Interesting Rock
+		[294103] = "绽放的睡莲", -- Blooming Lily
+		[294104] = "漂亮的花朵", -- Pretty Flower
+		[294105] = "古旧的书籍", -- Old Book
+		[294106] = "死鱼", -- Dead Fish
+		[294107] = "有抓痕的木板", -- Scratched Board
+		[294108] = "失落的戒指", -- Lost Ring
+		[294109] = "变质的苹果", -- Spoiled Apple
+		[294110] = "断牙", -- Broken Tooth
+		[294111] = "古旧的头盔", -- Worn Helm
+		[294112] = "繁茂之叶", -- Leafy Leaf
+		[294113] = "发霉的布块", -- Musty Cloth
+		[294114] = "破碎石板", -- Broken Tablet
+		[294115] = "飞灰火把", -- Ashed Torch
+		[294173] = "Venture Co. Supply Chest",
+		[294174] = "Forgotten Chest",
+		[294311] = "Small Treasure Chest",
+		[294312] = "格里米的好友列表", -- Grimmy's List of Friends
+		[294314] = "格里米的敌人列表", -- Grimmy's List of Enemies
+		[294315] = "格里米钟爱的配方", -- Grimmy's Favorite Recipe
+		[294316] = "Lost Offerings of Kimbul",
+		[294317] = "Deadwood Chest",
+		[294319] = "Sandsunken Treasure",
+		[294335] = "腐烂的土豆", -- Rotten Potato
+		[294703] = "Grimmy's Rusty Lockbox",
+		
+		[9999938] = "尤娜的世界旅行",
+		[9999946] = "召唤巴尔",
 }) do a[key] = value end
 
 L["UNOBTAINABLE_ITEM_REASONS"] = {
