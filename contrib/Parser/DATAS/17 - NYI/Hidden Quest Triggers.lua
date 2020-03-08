@@ -1569,7 +1569,7 @@ _.NeverImplemented =
 
 	--	WORLD BOSSES
 		q(52997),	-- Azurethos, The Winged Typhoon Kill ID
-					-- Azurethos, The Winged Typhoon Bonus Roll
+		q(52267),	-- Azurethos, The Winged Typhoon Bonus Roll
 		q(53002),	-- Doom's Howl Kill ID
 		q(52273),	-- Doom's Howl Bonus Roll
 		q(53000),	-- Dunegorger Kraulok Kill ID
@@ -1577,9 +1577,9 @@ _.NeverImplemented =
 		q(52999),	-- Hailstone Construct Kill ID
 		q(52268),	-- Hailstone Construct Bonus Roll
 		q(54862),	-- Ivus the Decayed Kill ID
-					-- Ivus the Decayed Bonus Roll
+		q(54864),	-- Ivus the Decayed Bonus Roll
 		q(54861),	-- Ivus the Forest Lord Kill ID
-					-- Ivus the Forest Lord Bonus Roll
+		q(54865),	-- Ivus the Forest Lord Bonus Roll
 		q(52998),	-- Ji'arak Kill ID
 		q(52264),	-- Ji'arak Bonus Roll
 		q(52996),	-- T'zane Kill ID
@@ -1589,7 +1589,7 @@ _.NeverImplemented =
 		q(56058),	-- Ulmath, the Soulbinder Kill ID
 		q(56900),	-- Ulmath, the Soulbinder Bonus Roll
 		q(52995),	-- Warbringer Yenajz Kill ID
-					-- Warbringer Yenajz Bonus Roll
+		q(52266),	-- Warbringer Yenajz Bonus Roll
 		q(56055),	-- Wekemara Kill ID
 		q(56899),	-- Wekemara Bonus Roll
 		
@@ -1602,7 +1602,7 @@ _.NeverImplemented =
 	
 
 	--	TREASURES
-		q(13541),	-- Triggered when opening a Maplewood Treasure Chest in darkshore
+		q(13541),	-- Triggered when opening a Maplewood Treasure Chest in Darkshore
 		q(54872),	-- Opening a Darkshore chest
 		q(54877),	-- Opening a Darkshore chest
 		q(54879),	-- Opening a Darkshore chest
