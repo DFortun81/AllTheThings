@@ -47,13 +47,13 @@ L["ITEM_ID_REMOVED"] = "%s (%d) 已从收藏中移除。"
 L["ITEM_ID_REMOVED_SHARED"] = "%s (%d) [+%d] 已从收藏中移除。"
 
 -- Tooltip Text 鼠标提示
-L["DROP_RATE"] = "掉率"
-L["QUEST_GIVER"] = "任务发放者"
+L["DROP_RATE"] = "掉率" -- Drop Rate
+L["QUEST_GIVER"] = "任务发放者" -- Quest Giver
 L["LOCKOUT"] = "Lockout"
 L["SHARED"] = "Shared"
 L["SPLIT"] = "Per Difficulty"
-L["REQUIRES"] = "要求"
-L["REQUIRES_LEVEL"] = "要求等级"
+L["REQUIRES"] = "要求" -- Requires
+L["REQUIRES_LEVEL"] = "要求等级" -- Requires Level
 L["SECRETS_HEADER"] = "解密"
 L["SELFIE_FILTERS_HEADER"] = "自拍滤镜"
 L["LIMITED_QUANTITY"] = "此物品有数量限制，在商人处并非总是可见。"
