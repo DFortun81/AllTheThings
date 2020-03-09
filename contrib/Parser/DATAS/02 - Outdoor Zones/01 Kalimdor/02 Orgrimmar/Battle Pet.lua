@@ -27,10 +27,7 @@ _.Zones =
 					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
 					["g"] = {
 						p(75, {	-- Black Kingsnake
-							["races"] = {
-								2,	-- Orc
-								8,	-- Troll
-							},
+							["races"] = { ORC, TROLL },
 						}),
 						p(70, {	-- Brown Praire Dog
 							["races"] = { TAUREN },
@@ -55,10 +52,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						p(75, {	-- Black Kingsnake
-							["races"] = {
-								2,	-- Orc
-								8,	-- Troll
-							},
+							["races"] = { ORC, TROLL },
 						}),
 						p(70, {	-- Brown Praire Dog
 							["races"] = { TAUREN },
@@ -73,7 +67,7 @@ _.Zones =
 							["races"] = { GOBLIN },
 						}),
 						p(55, {	-- Undercity Cockroach
-							["races"] = { 5 },	-- Undead
+							["races"] = { UNDEAD },
 						}),
 					},
 				}),
