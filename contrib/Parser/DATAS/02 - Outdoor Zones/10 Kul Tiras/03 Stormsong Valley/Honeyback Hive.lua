@@ -32,6 +32,7 @@ _.Zones =
 							["cr"] = 155055,	-- Gurg the Hivethief
 						}),
 						q(56108, {	-- Leaving the Hive
+							["provider"] = { "n", 155745 },	-- Honeyback Harvester
 							["coord"] = { 62.5, 26.3, 942 },
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
@@ -51,7 +52,10 @@ _.Zones =
 							["cr"] = 155059,	-- Yorag the Jelly Feaster
 						}),
 						q(57670, {	-- Unbeelievable Quality
-							["provider"] = { "i", 172383 },	-- Collected Tidebloom Honey
+							["providers"] = {
+								{ "i", 173533 },	-- Collected Tidebloom Honey
+								{ "i", 172383 },	-- Collected Tidebloom Honey (changes to this version after you get your mount)
+							},
 							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 						}),
