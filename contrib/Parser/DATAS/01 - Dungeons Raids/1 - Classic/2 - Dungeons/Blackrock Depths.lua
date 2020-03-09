@@ -430,7 +430,7 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				i(11611, {	-- Plans: Dark Iron Sunderer
 					["crs"] = {
-						 9554,	-- Hammered Patron
+						9554,	-- Hammered Patron
 						10043,	-- Ribbly's Crony
 					},
 				}),

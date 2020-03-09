@@ -67,7 +67,7 @@ _.Zones =
 						cl(1, {		-- Warrior
 							q(8079, {	-- Paragon's of Power: The Vindicator's Breastplate
 								["provider"] = { "n", 14902 },		-- Jin'rokh the Breaker
-								["classes"] = {1},	-- Warrior
+								["classes"] = { WARRIOR },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19822)),	-- Zandalar Vindicator's Breastplate
@@ -75,7 +75,7 @@ _.Zones =
 							}),
 							q(8058, {	-- Paragon's of Power: The Vindicator's Armguards
 								["provider"] = { "n", 14902 },		-- Jin'rokh the Breaker
-								["classes"] = {1},	-- Warrior
+								["classes"] = { WARRIOR },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19824)),	-- Zandalar Vindicator's Armguards
@@ -83,7 +83,7 @@ _.Zones =
 							}),
 							q(8078, {	-- Paragon's of Power: The Vindicator's Belt
 								["provider"] = { "n", 14902 },		-- Jin'rokh the Breaker
-								["classes"] = {1},	-- Warrior
+								["classes"] = { WARRIOR },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19823)),	-- Zandalar Vindicator's Belt
@@ -91,7 +91,7 @@ _.Zones =
 							}),
 							q(8041, {	-- Strength of Mount Mugamba [Friendly]
 								["provider"] = { "n", 14902 },		-- Jin'rokh the Breaker
-								["classes"] = {1},	-- Warrior
+								["classes"] = { WARRIOR },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19574)),	-- Strength of Mugamba
@@ -99,7 +99,7 @@ _.Zones =
 							}),
 							q(8042, {	-- Strength of Mount Mugamba [Honored]
 								["provider"] = { "n", 14902 },		-- Jin'rokh the Breaker
-								["classes"] = {1},	-- Warrior
+								["classes"] = { WARRIOR },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19575)),	-- Strength of Mugamba
@@ -107,7 +107,7 @@ _.Zones =
 							}),
 							q(8043, {	-- Strength of Mount Mugamba [Revered]
 								["provider"] = { "n", 14902 },		-- Jin'rokh the Breaker
-								["classes"] = {1},	-- Warrior
+								["classes"] = { WARRIOR },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19576)),	-- Strength of Mugamba
@@ -115,7 +115,7 @@ _.Zones =
 							}),
 							q(8044, {	-- The Rage of Mount Mugamba
 								["provider"] = { "n", 14902 },		-- Jin'rokh the Breaker
-								["classes"] = {1},	-- Warrior
+								["classes"] = { WARRIOR },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19577)),	-- Rage of Mugamba
@@ -125,7 +125,7 @@ _.Zones =
 						cl(2, {		-- Paladin
 							q(8055, {	-- Paragon's of Power: The Freethinker's Breastplate
 								["provider"] = { "n", 14902 },		-- Jin'rokh the Breaker
-								["classes"] = {2},	-- Paladin
+								["classes"] = { PALADIN },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19825)),	-- Zandalar Freethinker's Breastplate
@@ -133,7 +133,7 @@ _.Zones =
 							}),
 							q(8053, {	-- Paragon's of Power: The Freethinker's Armguards
 								["provider"] = { "n", 14902 },		-- Jin'rokh the Breaker
-								["classes"] = {2},	-- Paladin
+								["classes"] = { PALADIN },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19827)),	-- Zandalar Freethinker's Armguards
@@ -141,7 +141,7 @@ _.Zones =
 							}),
 							q(8054, {	-- Paragon's of Power: The Freethinker's Belt
 								["provider"] = { "n", 14902 },		-- Jin'rokh the Breaker
-								["classes"] = {2},	-- Paladin
+								["classes"] = { PALADIN },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19826)),	-- Zandalar Freethinker's Belt
@@ -149,7 +149,7 @@ _.Zones =
 							}),
 							q(8045, {	-- The Heathen's Brand [Friendly]
 								["provider"] = { "n", 14902 },		-- Jin'rokh the Breaker
-								["classes"] = {2},	-- Paladin
+								["classes"] = { PALADIN },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19579)),	-- Heathen's Brand
@@ -157,7 +157,7 @@ _.Zones =
 							}),
 							q(8046, {	-- The Heathen's Brand [Honored]
 								["provider"] = { "n", 14902 },		-- Jin'rokh the Breaker
-								["classes"] = {2},	-- Paladin
+								["classes"] = { PALADIN },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19585)),	-- Heathen's Brand
@@ -165,7 +165,7 @@ _.Zones =
 							}),
 							q(8047, {	-- The Heathen's Brand [Revered]
 								["provider"] = { "n", 14902 },		-- Jin'rokh the Breaker
-								["classes"] = {2},	-- Paladin
+								["classes"] = { PALADIN },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19586)),	-- Heathen's Brand
@@ -173,7 +173,7 @@ _.Zones =
 							}),
 							q(8048, {	-- The Hero's Brand
 								["provider"] = { "n", 14902 },		-- Jin'rokh the Breaker
-								["classes"] = {2},	-- Paladin
+								["classes"] = { PALADIN },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19588)),	-- Hero's Brand
@@ -183,7 +183,7 @@ _.Zones =
 						cl(3, {		-- Hunter
 							q(8067, {	-- Paragon's of Power: The Predator's Mantle
 								["provider"] = { "n", 14905 },		-- Falthir the Sightless
-								["classes"] = {3},	-- Hunter
+								["classes"] = { HUNTER },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19831)),	-- Zandalar Predator's Mantle
@@ -191,7 +191,7 @@ _.Zones =
 							}),
 							q(8062, {	-- Paragon's of Power: The Predator's Bracers
 								["provider"] = { "n", 14905 },		-- Falthir the Sightless
-								["classes"] = {3},	-- Hunter
+								["classes"] = { HUNTER },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19833)),	-- Zandalar Predator's Bracers
@@ -199,7 +199,7 @@ _.Zones =
 							}),
 							q(8066, {	-- Paragon's of Power: The Predator's Belt
 								["provider"] = { "n", 14905 },		-- Falthir the Sightless
-								["classes"] = {3},	-- Hunter
+								["classes"] = { HUNTER },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19832)),	-- Zandalar Predator's Belt
@@ -207,7 +207,7 @@ _.Zones =
 							}),
 							q(8145, {	-- The Maelstrom's Tendril [Friendly]
 								["provider"] = { "n", 14905 },		-- Falthir the Sightless
-								["classes"] = {3},	-- Hunter
+								["classes"] = { HUNTER },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19618)),	-- Maelstrom's Tendril
@@ -215,7 +215,7 @@ _.Zones =
 							}),
 							q(8146, {	-- The Maelstrom's Tendril [Honored]
 								["provider"] = { "n", 14905 },		-- Falthir the Sightless
-								["classes"] = {3},	-- Hunter
+								["classes"] = { HUNTER },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19619)),	-- Maelstrom's Tendril
@@ -223,7 +223,7 @@ _.Zones =
 							}),
 							q(8147, {	-- The Maelstrom's Tendril [Revered]
 								["provider"] = { "n", 14905 },		-- Falthir the Sightless
-								["classes"] = {3},	-- Hunter
+								["classes"] = { HUNTER },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19620)),	-- Maelstrom's Tendril
@@ -231,7 +231,7 @@ _.Zones =
 							}),
 							q(8148, {	-- The Maelstrom's Wrath
 								["provider"] = { "n", 14905 },		-- Falthir the Sightless
-								["classes"] = {3},	-- Hunter
+								["classes"] = { HUNTER },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19621)),	-- Maelstrom's Wrath
@@ -241,7 +241,7 @@ _.Zones =
 						cl(4, { 	-- Rogue
 							q(8072, {	-- Paragon's of Power: The Madcap's Mantle
 								["provider"] = { "n", 14905 },		-- Falthir the Sightless
-								["classes"] = {4},	-- Rogue
+								["classes"] = { ROGUE },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19835)),	-- Zandalar Madcap's Mantle
@@ -249,7 +249,7 @@ _.Zones =
 							}),
 							q(8073, {	-- Paragon's of Power: The Madcap's Tunic
 								["provider"] = { "n", 14905 },		-- Falthir the Sightless
-								["classes"] = {4},	-- Rogue
+								["classes"] = { ROGUE },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19834)),	-- Zandalar Madcap's Tunic
@@ -257,7 +257,7 @@ _.Zones =
 							}),
 							q(8063, {	-- Paragon's of Power: The Madcap's Bracers
 								["provider"] = { "n", 14905 },		-- Falthir the Sightless
-								["classes"] = {4},	-- Rogue
+								["classes"] = { ROGUE },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19836)),	-- Zandalar Madcap's Bracers
@@ -265,7 +265,7 @@ _.Zones =
 							}),
 							q(8141, {	-- Zandalrian Shadow Talisman [Friendly]
 								["provider"] = { "n", 14905 },		-- Falthir the Sightless
-								["classes"] = {4},	-- Rogue
+								["classes"] = { ROGUE },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19614)),	-- Zandalrian Shadow Talisman
@@ -273,7 +273,7 @@ _.Zones =
 							}),
 							q(8142, {	-- Zandalrian Shadow Talisman [Honored]
 								["provider"] = { "n", 14905 },		-- Falthir the Sightless
-								["classes"] = {4},	-- Rogue
+								["classes"] = { ROGUE },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19615)),	-- Zandalrian Shadow Talisman
@@ -281,7 +281,7 @@ _.Zones =
 							}),
 							q(8143, {	-- Zandalrian Shadow Talisman [Revered]
 								["provider"] = { "n", 14905 },		-- Falthir the Sightless
-								["classes"] = {4},	-- Rogue
+								["classes"] = { ROGUE },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19616)),	-- Zandalrian Shadow Talisman
@@ -289,7 +289,7 @@ _.Zones =
 							}),
 							q(8144, {	-- Zandalrian Shadow Mastery Talisman
 								["provider"] = { "n", 14905 },		-- Falthir the Sightless
-								["classes"] = {4},	-- Rogue
+								["classes"] = { ROGUE },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19617)),	-- Zandalrian Shadow Mastery Talisman
@@ -299,7 +299,7 @@ _.Zones =
 						cl(5, { 	-- Priest
 							q(8071, {	-- Paragon's of Power: The Confessor's Mantle
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {5},	-- Priest
+								["classes"] = { PRIEST },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19841)),	-- Zandalar Confessor's Mantle
@@ -307,7 +307,7 @@ _.Zones =
 							}),
 							q(8061, {	-- Paragon's of Power: The Confessor's Wraps
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {5},	-- Priest
+								["classes"] = { PRIEST },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19843)),	-- Zandalar Confessor's Wraps
@@ -315,7 +315,7 @@ _.Zones =
 							}),
 							q(8070, {	-- Paragon's of Power: The Confessor's Bindings
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {5},	-- Priest
+								["classes"] = { PRIEST },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19842)),	-- Zandalar Confessor's Bindings
@@ -323,7 +323,7 @@ _.Zones =
 							}),
 							q(8049, {	-- The Eye of Zuldazar [Friendly]
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {5},	-- Priest
+								["classes"] = { PRIEST },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19591)),	-- The Eye of Zuldazar
@@ -331,7 +331,7 @@ _.Zones =
 							}),
 							q(8050, {	-- The Eye of Zuldazar [Honored]
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {5},	-- Priest
+								["classes"] = { PRIEST },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19592)),	-- The Eye of Zuldazar
@@ -339,7 +339,7 @@ _.Zones =
 							}),
 							q(8051, {	-- The Eye of Zuldazar [Revered]
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {5},	-- Priest
+								["classes"] = { PRIEST },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19593)),	-- The Eye of Zuldazar
@@ -347,7 +347,7 @@ _.Zones =
 							}),
 							q(8052, {	-- The All-Seeing Eye of Zuldazar
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {5},	-- Priest
+								["classes"] = { PRIEST },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19594)),	-- The All-Seeing Eye of Zuldazar
@@ -415,7 +415,7 @@ _.Zones =
 						cl(8, { 	-- Mage
 							q(8068, {	-- Paragon's of Power: The Illusionist's Mantle
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {8},	-- Mage
+								["classes"] = { MAGE },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19845)),	-- Zandalar Illusionist's Mantle
@@ -423,7 +423,7 @@ _.Zones =
 							}),
 							q(8069, {	-- Paragon's of Power: The Illusionist's Robes
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {8},	-- Mage
+								["classes"] = { MAGE },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(20034)),	-- Zandalar Illusionist's Robe
@@ -431,7 +431,7 @@ _.Zones =
 							}),
 							q(8060, {	-- Paragon's of Power: The Illusionist's Wraps
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {8},	-- Mage
+								["classes"] = { MAGE },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19846)),	-- Zandalar Illusionist's Wraps
@@ -439,7 +439,7 @@ _.Zones =
 							}),
 							q(8101, {	-- The Pebble of Kajaro [Friendly]
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {8},	-- Mage
+								["classes"] = { MAGE },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19598)),	-- Pebble of Kajaro
@@ -447,7 +447,7 @@ _.Zones =
 							}),
 							q(8102, {	-- The Pebble of Kajaro [Honored]
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {8},	-- Mage
+								["classes"] = { MAGE },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19599)),	-- Pebble of Kajaro
@@ -455,7 +455,7 @@ _.Zones =
 							}),
 							q(8103, {	-- The Pebble of Kajaro [Revered]
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {8},	-- Mage
+								["classes"] = { MAGE },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19600)),	-- Pebble of Kajaro
@@ -463,7 +463,7 @@ _.Zones =
 							}),
 							q(8104, {	-- The Jewel of Kajaro
 								["provider"] = { "n", 14903 },		-- Al'tabim the All-Seeing
-								["classes"] = {8},	-- Mage
+								["classes"] = { MAGE },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19601)),	-- Jewel of Kajaro

@@ -106,7 +106,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8063,	-- Paragon's of Power: The Madcap's Bracers
 									["provider"] = { "n", 14905 },		-- Quest Giver: Falthir the Sightless
-									["classes"] = {4},	-- Rogue
+									["classes"] = { ROGUE },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19836)),	-- Zandalar Madcap's Bracers
@@ -115,7 +115,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8058,	-- Paragon's of Power: The Vindicator's Armguards
 									["provider"] = { "n", 14902 },		-- Quest Giver: Jin'rokh the Breaker
-									["classes"] = {1},	-- Warrior
+									["classes"] = { WARRIOR },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19824)),	-- Zandalar Vindicator's Armguards
@@ -130,7 +130,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8053,	-- Paragon's of Power: The Freethinker's Armguards
 									["provider"] = { "n", 14902 },		-- Quest Giver: Jin'rokh the Breaker
-									["classes"] = {2},	-- Paladin
+									["classes"] = { PALADIN },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19827)),	-- Zandalar Freethinker's Armguards
@@ -139,7 +139,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8060,	-- Paragon's of Power: The Illusionist's Wraps
 									["provider"] = { "n", 14903 },		-- Quest Giver: Al'tabim the All-Seeing
-									["classes"] = {8},	-- Mage
+									["classes"] = { MAGE },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19846)),	-- Zandalar Illusionist's Wraps
@@ -148,7 +148,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8062,	-- Paragon's of Power: The Predator's Bracers
 									["provider"] = { "n", 14905 },		-- Quest Giver: Falthir the Sightless
-									["classes"] = {3},	-- Hunter
+									["classes"] = { HUNTER },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19833)),	-- Zandalar Predator's Bracers
@@ -172,7 +172,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8072,	-- Paragon's of Power: The Madcap's Mantle
 									["provider"] = { "n", 14905 },		-- Quest Giver: Falthir the Sightless
-									["classes"] = {4},	-- Rogue
+									["classes"] = { ROGUE },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19835)),	-- Zandalar Madcap's Mantle
@@ -181,7 +181,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8078,	-- Paragon's of Power: The Vindicator's Belt
 									["provider"] = { "n", 14902 },		-- Quest Giver: Jin'rokh the Breaker
-									["classes"] = {1},	-- Warrior
+									["classes"] = { WARRIOR },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19823)),	-- Zandalar Vindicator's Belt
@@ -196,7 +196,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8077,	-- Paragons of Power: The Demoniac's Robes
 									["provider"] = { "n", 14903 },		-- Quest Giver: Al'tabim the All-Seeing
-									["classes"] = {9},	-- Warlock
+									["classes"] = { WARLOCK },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(20033)),	-- Zandalar Demoniac's Robe
@@ -205,7 +205,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8069,	-- Paragon's of Power: The Illusionist's Robes
 									["provider"] = { "n", 14903 },		-- Quest Giver: Al'tabim the All-Seeing
-									["classes"] = {8},	-- Mage
+									["classes"] = { MAGE },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(20034)),	-- Zandalar Illusionist's Robe
@@ -214,7 +214,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8079,	-- Paragon's of Power: The Vindicator's Breastplate
 									["provider"] = { "n", 14902 },		-- Quest Giver: Jin'rokh the Breaker
-									["classes"] = {1},	-- Warrior
+									["classes"] = { WARRIOR },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19822)),	-- Zandalar Vindicator's Breastplate
@@ -238,7 +238,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8076,	-- Paragons of Power: The Demoniac's Mantle
 									["provider"] = { "n", 14903 },		-- Quest Giver: Al'tabim the All-Seeing
-									["classes"] = {9},	-- Warlock
+									["classes"] = { WARLOCK },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19849)),	-- Zandalar Demoniac's Mantle
@@ -247,7 +247,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8064,	-- Paragons of Power: The Haruspex's Belt
 									["provider"] = { "n", 14904 },		-- Quest Giver: Maywiki of Zuldazar
-									["classes"] = {9},	-- Warlock
+									["classes"] = { WARLOCK },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19839)),	-- Zandalar Haruspex's Belt
@@ -262,7 +262,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8054,	-- Paragon's of Power: The Freethinker's Belt
 									["provider"] = { "n", 14902 },		-- Quest Giver: Jin'rokh the Breaker
-									["classes"] = {2},	-- Paladin
+									["classes"] = { PALADIN },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19826)),	-- Zandalar Freethinker's Belt
@@ -271,7 +271,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8068,	-- Paragon's of Power: The Illusionist's Mantle
 									["provider"] = { "n", 14903 },		-- Quest Giver: Al'tabim the All-Seeing
-									["classes"] = {8},	-- Mage
+									["classes"] = { MAGE },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19845)),	-- Zandalar Illusionist's Mantle
@@ -280,7 +280,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8066,	-- Paragon's of Power: The Predator's Belt
 									["provider"] = { "n", 14905 },		-- Quest Giver: Falthir the Sightless
-									["classes"] = {3},	-- Hunter
+									["classes"] = { HUNTER },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19832)),	-- Zandalar Predator's Belt
@@ -304,7 +304,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8059,	-- Paragons of Power: The Demoniac's Wraps
 									["provider"] = { "n", 14903 },		-- Quest Giver: Al'tabim the All-Seeing
-									["classes"] = {9},	-- Warlock
+									["classes"] = { WARLOCK },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19848)),	-- Zandalar Demoniac's Wraps
@@ -313,7 +313,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8057,	-- Paragons of Power: The Haruspex's Bracers
 									["provider"] = { "n", 14904 },		-- Quest Giver: Maywiki of Zuldazar
-									["classes"] = {9},	-- Warlock
+									["classes"] = { WARLOCK },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19840)),	-- Zandalar Haruspex's Bracers
@@ -337,7 +337,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8055,	-- Paragon's of Power: The Freethinker's Breastplate
 									["provider"] = { "n", 14902 },		-- Quest Giver: Jin'rokh the Breaker
-									["classes"] = {2},	-- Paladin
+									["classes"] = { PALADIN },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19825)),	-- Zandalar Freethinker's Breastplate
@@ -346,7 +346,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8065,	-- Paragons of Power: The Haruspex's Tunic
 									["provider"] = { "n", 14904 },		-- Quest Giver: Maywiki of Zuldazar
-									["classes"] = {9},	-- Warlock
+									["classes"] = { WARLOCK },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19838)),	-- Zandalar Haruspex's Tunic
@@ -743,7 +743,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(19947)),	-- Nat Pagle's Broken Reel
 						i(22739, {	-- Tome of Polymorph: Turtle (still obtainable via fishing)
 							["spellID"] = 28271,	-- Polymorph(Turtle)
-							["classes"] = { 8 },	-- Mage
+							["classes"] = { MAGE },
 						}),
 					}),
 					n(14515, {	-- High Priestess Arlokk

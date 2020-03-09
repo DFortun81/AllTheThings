@@ -459,7 +459,7 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(17044)),	-- Will of the Martyr
 							})),
 							un(40, q(9737, { 	-- True Masters of the Light
-								["classes"] = { 2 },
+								["classes"] = { PALADIN },
 								["races"] = { 10 },
 								["groups"] = {
 									{

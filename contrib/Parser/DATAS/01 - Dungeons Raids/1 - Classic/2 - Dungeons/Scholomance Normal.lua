@@ -127,7 +127,7 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						q(7668, { 	-- The Darkreaver Menace
 							["u"] = 40,
-							["classes"] = { 7 },
+							["classes"] = { SHAMAN },
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								un(32, i(18807)), 	-- Helm of Latent Power (1.4 till 1.7 only)

@@ -30,7 +30,7 @@ _.Instances = { tier(1, {	-- Classic
 				q(9053, {	-- A Better Ingredient
 					["u"] = 40,
 					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["g"] = {
 						un(2, i(22272)),	-- Forest's Embrace
 						un(2, i(53562)),	-- Grizzled Hide
@@ -43,7 +43,7 @@ _.Instances = { tier(1, {	-- Classic
 				q(8257, {	-- Blood of Morphaz
 					["u"] = 40,
 					["provider"] = { "n", 8405 },	-- Ogtinc
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["g"] = {
 						un(2, i(19990)),	-- Blessed Prayer Beads
 						un(2, i(20006)),	-- Circle of Hope
@@ -53,7 +53,7 @@ _.Instances = { tier(1, {	-- Classic
 				q(8413, {	-- Da Voodoo
 					["u"] = 40,
 					["provider"] = { "n", 6176 },	-- Bath'rah the Windwatcher
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["g"] = {
 						un(2, i(20369)),	-- Azurite Fists
 						un(2, i(20503)),	-- Enamored Water Spirit
@@ -63,7 +63,7 @@ _.Instances = { tier(1, {	-- Classic
 				q(8253, {	-- Destroy Morphaz
 					["u"] = 40,
 					["provider"] = { "n", 8379 },	-- Archmage Xylem
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["g"] = {
 						un(2, i(20037)),	-- Arcane Crystal Pendant
 						un(2, i(20036)),	-- Fire Ruby
@@ -81,7 +81,7 @@ _.Instances = { tier(1, {	-- Classic
 					["u"] = 40,
 					["provider"] = { "n", 10838 },	-- Commander Ashlam Valorfist
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["g"] = {
 						un(2, i(20505)),	-- Chivalrous Signet
 						un(2, i(20504)),	-- Lightforged Blade
@@ -111,7 +111,7 @@ _.Instances = { tier(1, {	-- Classic
 				q(8236, {	-- The Azure Key
 					["u"] = 40,
 					["provider"] = { "n", 8379 },	-- Archmage Xylem
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["g"] = {
 						un(2, i(19982)),	-- Duskbat Drape
 						un(2, i(19984)),	-- Ebon Mask
@@ -140,7 +140,7 @@ _.Instances = { tier(1, {	-- Classic
 				q(8232, {	-- The Green Drake
 					["u"] = 40,
 					["provider"] = { "n", 8405 },	-- Ogtinc
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["g"] = {
 						un(2, i(19991)),	-- Devilsaur Eye
 						un(2, i(19992)),	-- Devilsaur Tooth
@@ -157,7 +157,7 @@ _.Instances = { tier(1, {	-- Classic
 				q(8422, {	-- Trolls of a Feather
 					["u"] = 40,
 					["provider"] = { "n", 14470 },	-- Impsy
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["g"] = {
 						un(2, i(20534)),	-- Abyss Shard
 						un(2, i(20530)),	-- Robes of Servitude
@@ -167,7 +167,7 @@ _.Instances = { tier(1, {	-- Classic
 				q(8425, {	-- Voodoo Feathers
 					["u"] = 40,
 					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["g"] = {
 						un(2, i(20130)),	-- Diamond Flask
 						un(2, i(20521)),	-- Fury Visor

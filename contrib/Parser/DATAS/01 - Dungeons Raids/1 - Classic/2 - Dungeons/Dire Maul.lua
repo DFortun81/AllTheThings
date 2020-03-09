@@ -39,7 +39,7 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						i(18401, {	-- Foror's Compendium of Dragon Slaying
 							["u"] = 2,
-							["classes"] = { 1, 2 },
+							["classes"] = { WARRIOR, PALADIN },
 							["description"] = "This item used to drop from any boss in Dire Maul.",
 							["g"] = {
 								un(40, q(7507)),	-- Furor's Compendium
@@ -220,7 +220,7 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						q(7499, {	-- Codex of Defense
 							["u"] = 40,
-							["classes"] = { 1 },	-- Warrior
+							["classes"] = { WARRIOR },
 							["g"] = {
 								un(2, i(18466)),	--Royal Seal of Eldre'Thalas
 							},
@@ -238,7 +238,7 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						i(18401, {	-- Foror's Compendium of Dragon Slaying
 							["u"] = 2,
-							["classes"] = {1,2},
+							["classes"] = { WARRIOR, PALADIN },
 							["description"] = "This item used to drop from any boss in Dire Maul.",
 							["g"] = {
 								un(40, q(7507)),	-- Furor's Compendium
@@ -258,14 +258,14 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						q(7502, {	-- Harnessing Shadows
 							["u"] = 40,
-							["classes"] = { 9 },	-- Warlock
+							["classes"] = { WARLOCK },
 							["g"] = {
 								un(2, i(18467)),	-- Royal Seal of Eldre'Thalas
 							},
 						}),
 						q(7504, {	-- Holy Bologna: What the Light Won't Tell You
 							["u"] = 40,
-							["classes"] = { 5 },	-- Priest
+							["classes"] = { PRIEST },
 							["g"] = {
 								un(2, i(18469)),	-- Royal Seal of Eldre'Thalas
 							},
@@ -317,14 +317,14 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						q(7500, {	-- The Arcanist's Cookbook
 							["u"] = 40,
-							["classes"] = { 8 },	-- Mage
+							["classes"] = { MAGE },
 							["g"] = {
 								un(2, i(18468)),	-- Royal Seal of Eldre'Thalas
 							},
 						}),
 						q(7506, {	-- The Emerald Dream...
 							["u"] = 40,
-							["classes"] = { 11 },	-- Druid
+							["classes"] = { DRUID },
 							["g"] = {
 								un(2, i(18470)),	-- Royal Seal of Eldre'Thalas
 							},
@@ -349,14 +349,14 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						q(7503, {	-- The Greatest Race of Hunters
 							["u"] = 40,
-							["classes"] = { 3 },	-- Hunter
+							["classes"] = { HUNTER },
 							["g"] = {
 								un(2, i(18473)),	-- Royal Seal of Eldre'Thalas
 							},
 						}),
 						q(7501, {	-- The Light and How To Swing It
 							["u"] = 40,
-							["classes"] = { 2 },	-- Paladin
+							["classes"] = { PALADIN },
 							["g"] = {
 								un(2, i(18472)),	-- Royal Seal of Eldre'Thalas
 							},
@@ -511,7 +511,7 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						i(18401, {	-- Foror's Compendium of Dragon Slaying
 							["u"] = 2,
-							["classes"] = { 1, 2 },
+							["classes"] = { WARRIOR, PALADIN },
 							["description"] = "This item used to drop from any boss in Dire Maul.",
 							["g"] = {
 								un(40, q(7507)),	-- Furor's Compendium
@@ -523,14 +523,14 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						q(7505, {	-- Frost Shock and You
 							["u"] = 40,
-							["classes"] = { 7 },	-- Shaman
+							["classes"] = { SHAMAN },
 							["g"] = {
 								un(2, i(18471)),	-- Royal Seal of Eldre'Thalas
 							},
 						}),
 						q(7498, {	-- Garona: A Study on Stealth and Treachery
 							["u"] = 40,
-							["classes"] = { 4 },	-- Rogue
+							["classes"] = { ROGUE },
 							["g"] = {
 								un(2, i(18465)),	-- Royal Seal of Eldre'Thalas
 							},
@@ -748,7 +748,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(139620, {	-- A Complete Copy of "Nat Pagle's Guide to Extreme Anglin'."
 							["questID"] = 43682,	-- Book Presented [Retribution Paladin Hidden Artifact Appearance]
 							["description"] = "You need to bring the Complete Copy of Nat Pagle's Fishing Guide and the Head of Nefarian for him to grant you this interaction.\n\nAlliance: Go to Western Plaguelands and talk to Alexia Ironknife.\n\nHorde: Go to Tirisfal Glades and talk to Bardu Sharpeye.",
-							["classes"] = { 2 },	-- Paladin Only
+							["classes"] = { PALADIN },
 							["sourceQuests"] = { -91190 },	-- Special Quest ID for Sister Elda <Keeper of the Ancient Tomes>
 							["lvl"] = 110,
 							["g"] = {

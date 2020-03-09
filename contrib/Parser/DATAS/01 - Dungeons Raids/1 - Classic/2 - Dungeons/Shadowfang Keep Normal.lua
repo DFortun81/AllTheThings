@@ -310,7 +310,7 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						q(1740, {	-- The Orb of Soran'ruk
 							["u"] = 40,
-							["classes"] = { 9 },
+							["classes"] = { WARLOCK },
 							["g"] = {
 								un(2, i(6898)),	-- Orb of Soran'ruk
 								un(2, i(15109)),	-- Staff of Soran'ruk
@@ -319,11 +319,11 @@ _.Instances = { tier(1, {	-- Classic
 						q(1654, {	-- The Test of Righteousness
 							["u"] = 40,
 							["races"] = ALLIANCE_ONLY,
-							["classes"] = { 2 },
+							["classes"] = { PALADIN },
 							["g"] = {
 								q(1806, {	-- The Test of Righteousness
 									["u"] = 40,
-									["classes"] = { 2 },
+									["classes"] = { PALADIN },
 									["g"] = {
 										un(2, i(6953)),	-- Verigan's Fist
 									},

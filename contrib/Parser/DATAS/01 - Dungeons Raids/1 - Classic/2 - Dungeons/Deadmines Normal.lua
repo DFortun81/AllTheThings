@@ -16,7 +16,7 @@ _.Instances = { tier(1, {	-- Classic
 					["description"] = "|cff3399ffSTEP 1:|r|cff66ccff Must be playing a Rogue in Outlaw Specialization, and you must have a Green Wing Macaw pet.|r \n|cff3399ffSTEP 2:|r|cff66ccff Go to Ironclad Cove, near the end of the dungeon (the area with the dock and ship).|r \n|cff3399ffSTEP 3:|r|cff66ccff Locate the Ghostly Parrot (36.5, 17.0).|r \n|cff3399ffSTEP 4:|r|cff66ccff Summon your Green Wing Macaw.  An Extra Action Button will appear, allowing you to grapple up the wall.|r \n|cff3399ffSTEP 5:|r|cff66ccff Accept the quest and kill pirates to collect 100 bandanas.|r \n|cff3399ffSTEP 6:|r|cff66ccff Repeat the process to get back to questgiver to turn it in.|r",
 					["g"] = {
 						i(142273, {	-- Ensemble: Blackened Defias Armor
-							["classes"] = { 4 },	-- Rogue
+							["classes"] = { ROGUE },
 							["g"] = {
 								i(10399),	-- Blackened Defias Armor
 								i(10401),	-- Blackened Defias Gloves
