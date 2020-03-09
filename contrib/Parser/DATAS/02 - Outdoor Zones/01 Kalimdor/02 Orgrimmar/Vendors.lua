@@ -59,14 +59,14 @@ _.Zones =
 					},
 					["g"] = {
 						n(-4178, {	-- Old Season 11 (Header Missing, need new Header)
-							cl(6, {	-- Death Knight
+							cl(DEATHKNIGHT, {
 								un(2, i(72332)), -- Ruthless Gladiator's Dreadplate Chestpiece
 								un(2, i(72333)), -- Ruthless Gladiator's Dreadplate Gauntlets
 								un(2, i(72334)), -- Ruthless Gladiator's Dreadplate Helm
 								un(2, i(72335)), -- Ruthless Gladiator's Dreadplate Legguards
 								un(2, i(72336)), -- Ruthless Gladiator's Dreadplate Shoulders
 							}),
-							cl(11, {	-- Druid
+							cl(DRUID, {
 								un(2, i(72337)), -- Ruthless Gladiator's Dragonhide Gloves
 								un(2, i(72338)), -- Ruthless Gladiator's Dragonhide Helm
 								un(2, i(72339)), -- Ruthless Gladiator's Dragonhide Legguards
@@ -83,21 +83,21 @@ _.Zones =
 								un(2, i(72356)), -- Ruthless Gladiator's Wyrmhide Robes
 								un(2, i(72357)), -- Ruthless Gladiator's Wyrmhide Spaulders
 							}),
-							cl(3, {	-- Hunter
+							cl(HUNTER, {
 								un(2, i(72368)), -- Ruthless Gladiator's Chain Armor
 								un(2, i(72369)), -- Ruthless Gladiator's Chain Gauntlets
 								un(2, i(72370)), -- Ruthless Gladiator's Chain Helm
 								un(2, i(72371)), -- Ruthless Gladiator's Chain Leggings
 								un(2, i(72372)), -- Ruthless Gladiator's Chain Spaulders
 							}),
-							cl(8, {	-- Mage
+							cl(MAGE, {
 								un(2, i(72373)), -- Ruthless Gladiator's Silk Handguards
 								un(2, i(72374)), -- Ruthless Gladiator's Silk Cowl
 								un(2, i(72375)), -- Ruthless Gladiator's Silk Trousers
 								un(2, i(72376)), -- Ruthless Gladiator's Silk Robe
 								un(2, i(72377)), -- Ruthless Gladiator's Silk Amice
 							}),
-							cl(2, {	-- Paladin
+							cl(PALADIN, {
 								un(2, i(72378)), -- Ruthless Gladiator's Scaled Chestpiece
 								un(2, i(72379)), -- Ruthless Gladiator's Scaled Gauntlets
 								un(2, i(72380)), -- Ruthless Gladiator's Scaled Helm
@@ -109,7 +109,7 @@ _.Zones =
 								un(2, i(72392)), -- Ruthless Gladiator's Ornamented Legplates
 								un(2, i(72393)), -- Ruthless Gladiator's Ornamented Spaulders
 							}),
-							cl(5, {	-- Priest
+							cl(PRIEST, {
 								un(2, i(72400)), -- Ruthless Gladiator's Mooncloth Gloves
 								un(2, i(72401)), -- Ruthless Gladiator's Mooncloth Helm
 								un(2, i(72402)), -- Ruthless Gladiator's Mooncloth Leggings
@@ -121,14 +121,14 @@ _.Zones =
 								un(2, i(72408)), -- Ruthless Gladiator's Satin Robe
 								un(2, i(72409)), -- Ruthless Gladiator's Satin Mantle
 							}),
-							cl(4, {	-- Rogue
+							cl(ROGUE, {
 								un(2, i(72422)), -- Ruthless Gladiator's Leather Tunic
 								un(2, i(72423)), -- Ruthless Gladiator's Leather Gloves
 								un(2, i(72424)), -- Ruthless Gladiator's Leather Helm
 								un(2, i(72425)), -- Ruthless Gladiator's Leather Legguards
 								un(2, i(72426)), -- Ruthless Gladiator's Leather Spaulders
 							}),
-							cl(7, {	-- Shaman
+							cl(SHAMAN, {
 								un(2, i(72432)),	-- Ruthless Gladiator's Ringmail Armor
 								un(2, i(72433)),	-- Ruthless Gladiator's Ringmail gauntlets
 								un(2, i(72434)),	-- Ruthless Gladiator's Ringmail Helm
@@ -145,14 +145,14 @@ _.Zones =
 								un(2, i(72437)),	-- Ruthless Gladiator's Mail Legs
 								un(2, i(72437)),	-- Ruthless Gladiator's Mail Spaulders
 							}),
-							cl(9, {	-- Warlock
+							cl(WARLOCK, {
 								un(2, i(72459)), -- Ruthless Gladiator's Felweave Handguards
 								un(2, i(72460)), -- Ruthless Gladiator's Felweave Cowl
 								un(2, i(72461)), -- Ruthless Gladiator's Felweave Trousers
 								un(2, i(72462)), -- Ruthless Gladiator's Felweave Raiment
 								un(2, i(72463)), -- Ruthless Gladiator's Felweave Amice
 							}),
-							cl(1, {	-- Warrior
+							cl(WARRIOR, {
 								un(2, i(72464)), -- Ruthless Gladiator's Plate Chestpiece
 								un(2, i(72465)), -- Ruthless Gladiator's Plate Gauntlets
 								un(2, i(72466)), -- Ruthless Gladiator's Plate Helm
@@ -671,7 +671,7 @@ _.Zones =
 						i(22862), 	-- Blood Guard's Chain Vices
 						i(22863), 	-- Blood Guard's Dragonhide Grips
 						i(22864), 	-- Blood Guard's Leather Grips
-						i(22852),		-- Blood Guard's Leather Treads
+						i(22852),	-- Blood Guard's Leather Treads
 						i(22865), 	-- Blood Guard's Dreadweave Handwraps
 						i(22867), 	-- Blood Guard's Mail Vices
 						i(22868), 	-- Blood Guard's Plate Gauntlets
@@ -751,9 +751,9 @@ _.Zones =
 						}),
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {
-								{ "g", 5000000 },			-- 500g
+								{ "g", 5000000 },		-- 500g
 								{ "i", 23247, 350 },	-- 350x Burning Blossom
-								{ "c", 241, 55 },			-- 55x  Champion's Seal
+								{ "c", 241, 55 },		-- 55x  Champion's Seal
 								{ "i", 21100, 40 },		-- 40x  Coin of Ancestry
 								{ "c", 515, 100 },		-- 100x Darkmoon Prize Ticket
 								{ "i", 137642, 12 },	-- 12x  Mark of Honor
@@ -763,9 +763,9 @@ _.Zones =
 						}),
 						i(122339, {	-- Ancient Heirloom Scabbard
 							["cost"] = {
-								{ "g", 7500000 },			-- 750g
+								{ "g", 7500000 },		-- 750g
 								{ "i", 37829, 300 },	-- 300x Brewfest Prize Token
-								{ "c", 241, 65 },			-- 65x  Champion's Seal
+								{ "c", 241, 65 },		-- 65x  Champion's Seal
 								{ "c", 515, 120 },		-- 120x Darkmoon Prize Ticket
 								{ "i", 49927, 200 },	-- 200x Love Token
 								{ "i", 137642, 14 },	-- 14x  Mark of Honor

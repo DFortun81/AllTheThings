@@ -74,7 +74,7 @@ _.ExpansionFeatures =
 					q(53975, {	-- Flying at Night
 						["provider"] = { "n", 144786 },	-- Archmage Mordent Evenshade
 						["coord"] = { 49.4, 34.6, 1203 },
-						["sourceQuest"] = 53961,	-- Glaiveworks For Me
+						["sourceQuest"] = 53974,	-- Druids of Gloomtide -- It's not "Glaiveworks For Me" so I'm guessing this one if anything
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 120,
 						["g"] = {
