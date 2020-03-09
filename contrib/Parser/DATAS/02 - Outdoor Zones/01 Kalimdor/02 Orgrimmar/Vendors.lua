@@ -671,7 +671,7 @@ _.Zones =
 						i(22862), 	-- Blood Guard's Chain Vices
 						i(22863), 	-- Blood Guard's Dragonhide Grips
 						i(22864), 	-- Blood Guard's Leather Grips
-						i(22852),	-- Blood Guard's Leather Treads
+						i(22852),		-- Blood Guard's Leather Treads
 						i(22865), 	-- Blood Guard's Dreadweave Handwraps
 						i(22867), 	-- Blood Guard's Mail Vices
 						i(22868), 	-- Blood Guard's Plate Gauntlets
@@ -751,9 +751,9 @@ _.Zones =
 						}),
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {
-								{ "g", 5000000 },		-- 500g
+								{ "g", 5000000 },			-- 500g
 								{ "i", 23247, 350 },	-- 350x Burning Blossom
-								{ "c", 241, 55 },		-- 55x  Champion's Seal
+								{ "c", 241, 55 },			-- 55x  Champion's Seal
 								{ "i", 21100, 40 },		-- 40x  Coin of Ancestry
 								{ "c", 515, 100 },		-- 100x Darkmoon Prize Ticket
 								{ "i", 137642, 12 },	-- 12x  Mark of Honor
@@ -763,9 +763,9 @@ _.Zones =
 						}),
 						i(122339, {	-- Ancient Heirloom Scabbard
 							["cost"] = {
-								{ "g", 7500000 },		-- 750g
+								{ "g", 7500000 },			-- 750g
 								{ "i", 37829, 300 },	-- 300x Brewfest Prize Token
-								{ "c", 241, 65 },		-- 65x  Champion's Seal
+								{ "c", 241, 65 },			-- 65x  Champion's Seal
 								{ "c", 515, 120 },		-- 120x Darkmoon Prize Ticket
 								{ "i", 49927, 200 },	-- 200x Love Token
 								{ "i", 137642, 14 },	-- 14x  Mark of Honor
