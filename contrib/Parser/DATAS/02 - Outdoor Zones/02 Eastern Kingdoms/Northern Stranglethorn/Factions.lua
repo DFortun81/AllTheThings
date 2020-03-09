@@ -357,7 +357,7 @@ _.Zones =
 						cl(7, {		-- Shaman
 							q(8075, {	-- Paragons of Power: The Augur's Hauberk
 								["provider"] = { "n", 14904 },		-- Maywiki of Zuldazar
-								["classes"] = {7},	-- Shaman
+								["classes"] = { SHAMAN },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19828)),	-- Zandalar Augur's Hauberk
@@ -365,7 +365,7 @@ _.Zones =
 							}),
 							q(8056, {	-- Paragons of Power: The Augur's Bracers
 								["provider"] = { "n", 14904 },		-- Maywiki of Zuldazar
-								["classes"] = {7},	-- Shaman
+								["classes"] = { SHAMAN },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19830)),	-- Zandalar Augur's Bracers
@@ -373,7 +373,7 @@ _.Zones =
 							}),
 							q(8074, {	-- Paragons of Power: The Augur's Belt
 								["provider"] = { "n", 14904 },		-- Maywiki of Zuldazar
-								["classes"] = {7},	-- Shaman
+								["classes"] = { SHAMAN },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19829)),	-- Zandalar Augur's Belt
@@ -381,7 +381,7 @@ _.Zones =
 							}),
 							q(8116, {	-- Vision of Voodress [Friendly]
 								["provider"] = { "n", 14904 },		-- Maywiki of Zuldazar
-								["classes"] = {7},	-- Shaman
+								["classes"] = { SHAMAN },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19606)),	-- Vision of Voodress
@@ -389,7 +389,7 @@ _.Zones =
 							}),
 							q(8117, {	-- Vision of Voodress [Honored]
 								["provider"] = { "n", 14904 },		-- Maywiki of Zuldazar
-								["classes"] = {7},	-- Shaman
+								["classes"] = { SHAMAN },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19607)),	-- Vision of Voodress
@@ -397,7 +397,7 @@ _.Zones =
 							}),
 							q(8118, {	-- Vision of Voodress [Revered]
 								["provider"] = { "n", 14904 },		-- Maywiki of Zuldazar
-								["classes"] = {7},	-- Shaman
+								["classes"] = { SHAMAN },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19608)),	-- Vision of Voodress
@@ -405,7 +405,7 @@ _.Zones =
 							}),
 							q(8119, {	-- The Unmarred Vision of Voodress
 								["provider"] = { "n", 14904 },		-- Maywiki of Zuldazar
-								["classes"] = {7},	-- Shaman
+								["classes"] = { SHAMAN },
 								["u"] = 40,			-- Legacy Content
 								["g"] = {
 									un(2, i(19609)),	-- Unmarred Vision of Voodress

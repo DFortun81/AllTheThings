@@ -64,7 +64,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8071,	-- Paragon's of Power: The Confessor's Mantle
 									["provider"] = { "n", 14903 },		-- Quest Giver: Al'tabim the All-Seeing
-									["classes"] = {5},	-- Priest
+									["classes"] = { PRIEST },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19841)),	-- Zandalar Confessor's Mantle
@@ -73,7 +73,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8073,	-- Paragon's of Power: The Madcap's Tunic
 									["provider"] = { "n", 14905 },		-- Quest Giver: Falthir the Sightless
-									["classes"] = {4},	-- Rogue
+									["classes"] = { ROGUE },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19834)),	-- Zandalar Madcap's Tunic
@@ -82,7 +82,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8067,	-- Paragon's of Power: The Predator's Mantle
 									["provider"] = { "n", 14905 },		-- Quest Giver: Falthir the Sightless
-									["classes"] = {3},	-- Hunter
+									["classes"] = { HUNTER },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19831)),	-- Zandalar Predator's Mantle
@@ -97,7 +97,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8056,	-- Paragons of Power: The Augur's Bracers
 									["provider"] = { "n", 14904 },		-- Quest Giver: Maywiki of Zuldazar
-									["classes"] = {7},	-- Shaman
+									["classes"] = { SHAMAN },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19830)),	-- Zandalar Augur's Bracers
@@ -163,7 +163,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8074,	-- Paragons of Power: The Augur's Belt
 									["provider"] = { "n", 14904 },		-- Quest Giver: Maywiki of Zuldazar
-									["classes"] = {7},	-- Shaman
+									["classes"] = { SHAMAN },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19829)),	-- Zandalar Augur's Belt
@@ -328,7 +328,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8075,	-- Paragons of Power: The Augur's Hauberk
 									["provider"] = { "n", 14904 },		-- Quest Giver: Maywiki of Zuldazar
-									["classes"] = {7},	-- Shaman
+									["classes"] = { SHAMAN },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19828)),	-- Zandalar Augur's Hauberk

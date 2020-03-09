@@ -92,7 +92,7 @@ _.Instances = { tier(1, {	-- Classic
 							}),
 							i(18705, {	-- Mature Black Dragon Sinew
 								["questID"] = 7635,	-- A Proper String
-								["classes"] = { 3 },	-- Hunter
+								["classes"] = { HUNTER },
 								["lvl"] = 60,
 								["u"] = 40,
 								["g"] = {

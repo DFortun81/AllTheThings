@@ -735,14 +735,14 @@ _.Instances = { tier(1, {	-- Classic
 				{
 					["itemID"] = 18703,	-- Ancient Petrified Leaf
 					["questID"] = 7632,	-- The Ancient Leaf
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 60,
 					["u"] = 2,
 				},
 				i(18646, {	-- The Eye of Divinity
 					["description"] = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
 					["sourceQuest"] = 7622,	-- The Balance of Light and Shadow
-					["classes"] = { 5 },
+					["classes"] = { PRIEST },
 					["u"] = 2,
 				}),
 				i(18803),	-- Finkle's Lava Dredger
@@ -765,11 +765,11 @@ _.Instances = { tier(1, {	-- Classic
 				{	-- Eye of Sulfuras
 					["itemID"] = 17204,	-- Eye of Sulfuras
 					["classes"] = {
-						6,	-- Death Knight
-						11,	-- Druid
-						2,	-- Paladin
-						7,	-- Shaman
-						1,	-- Warrior
+						DEATHKNIGHT,
+						DRUID,
+						PALADIN,
+						SHAMAN,
+						WARRIOR,
 					},
 					["f"] = 24,	-- To match Sulfuras, Hand of Ragnaros and cause it to display even if Quest Items are filtered
 					["cost"] = {

@@ -995,7 +995,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8602,	-- Stormcaller's Pauldrons (Quest)
 							["provider"] = { "n", 15502 },		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
-							["classes"] = {7},	-- Shaman
+							["classes"] = { SHAMAN },
 							["groups"] = {
 								i(21376),	-- Stormcaller's Pauldrons
 							},
@@ -1004,7 +1004,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8621,	-- Stormcaller's Footguards (Quest)
 							["provider"] = { "n", 15503 },		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
-							["classes"] = {7},	-- Shaman
+							["classes"] = { SHAMAN },
 							["groups"] = {
 								i(21373),	-- Stormcaller's Footguards
 							},
@@ -1173,7 +1173,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8602,	-- Stormcaller's Pauldrons (Quest)
 							["provider"] = { "n", 15502 },		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
-							["classes"] = {7},	-- Shaman
+							["classes"] = { SHAMAN },
 							["groups"] = {
 								i(21376),	-- Stormcaller's Pauldrons
 							},
@@ -1182,7 +1182,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8621,	-- Stormcaller's Footguards (Quest)
 							["provider"] = { "n", 15503 },		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
-							["classes"] = {7},	-- Shaman
+							["classes"] = { SHAMAN },
 							["groups"] = {
 								i(21373),	-- Stormcaller's Footguards
 							},
@@ -1230,7 +1230,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8623,	-- Stormcaller's Diadem (Quest)
 							["provider"] = { "n", 15502 },		-- Quest Giver: Andorgos <Brood of Malygos>
 							["repeatable"] = true,
-							["classes"] = {7},	-- Shaman
+							["classes"] = { SHAMAN },
 							["groups"] = {
 								i(21372),	-- Stormcaller's Diadem
 							},
@@ -1376,7 +1376,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8624,	-- Stormcaller's Leggings (Quest)
 							["provider"] = { "n", 15503 },		-- Quest Giver: Kandrostrasz <Brood of Alexstrasza>
 							["repeatable"] = true,
-							["classes"] = {7},	-- Shaman
+							["classes"] = { SHAMAN },
 							["groups"] = {
 								i(21375),	-- Stormcaller's Leggings
 							},
@@ -1435,7 +1435,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 8622,	-- Stormcaller's Hauberk (Quest)
 							["provider"] = { "n", 15504 },		-- Quest Giver: Vethsera <Brood of Ysera>
 							["repeatable"] = true,
-							["classes"] = {7},	-- Shaman
+							["classes"] = { SHAMAN },
 							["groups"] = {
 								i(21374),	-- Stormcaller's Hauberk
 							},
