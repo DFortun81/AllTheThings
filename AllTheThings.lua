@@ -2140,7 +2140,7 @@ end
 end)();
 local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	for i,group in ipairs(groups) do
-		if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
+		if app.RecursiveGroupRequirementsFilter(group) then
 			local right = nil;
 			if group.total and (group.total > 1 or (group.total > 0 and not group.collectible)) then
 				if (group.progress / group.total) < 1 or app.Settings:Get("Show:CompletedGroups") then
@@ -2239,7 +2239,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				else
 					for i,j in ipairs(group) do
-						if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) then
+						if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
 							tinsert(regroup, j);
 						end
 					end
@@ -2287,7 +2287,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			else
 				for i,j in ipairs(group) do
-					if j.criteriaID == criteriaID and app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) then
+					if j.criteriaID == criteriaID and app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
 						if j.mapID or j.parent == nil or j.parent.parent == nil then
 							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
 						else
@@ -2309,7 +2309,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			else
 				for i,j in ipairs(group) do
-					if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) then
+					if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
 						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
 					end
 				end
@@ -2327,7 +2327,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			else
 				for i,j in ipairs(group) do
-					if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) then
+					if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
 						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
 					end
 				end
@@ -7329,6 +7329,13 @@ app.RequiredSkillFilter = app.NoFilter;
 app.ShowIncompleteThings = app.Filter;
 
 -- Recursive Checks
+app.RecursiveGroupRequirementsFilter = function(group)
+	if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
+		if group.parent then return app.RecursiveGroupRequirementsFilter(group.parent); end
+		return true;
+	end
+	return false;
+end
 app.RecursiveClassAndRaceFilter = function(group)
 	if app.ClassRequirementFilter(group) and app.RaceRequirementFilter(group) then
 		if group.parent then return app.RecursiveClassAndRaceFilter(group.parent); end
