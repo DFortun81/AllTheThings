@@ -1193,11 +1193,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							},
 							["achievementID"] = 426,	-- Warglaives of Azzinoth
 							["classes"] = {
-								1,	-- Warrior
-								4,	-- Rogue
-								6,	-- Death Knight
-								10,	-- Monk
-								12,	-- Demon Hunter
+								WARRIOR, 
+								ROGUE, 
+								DEATHKNIGHT, 
+								MONK, 
+								DEMONHUNTER
 							},
 						}),
 						i(31089, {	-- Chestguard of the Forgotten Conqueror
@@ -1385,7 +1385,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					})),
 					cr(22917, e(1590, {	-- Illidan Stormrage
 						ach(11869, {	-- I'll Hold These For You Until You Get Out
-							["classes"] = { 12 },
+							["classes"] = { DEMONHUNTER },
 							["g"] = {
 								i(150372, {	-- Arsenal: The Warglaives of Azzinoth
 									i(151137),	-- Warglaive of Azzinoth
