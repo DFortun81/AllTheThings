@@ -14,10 +14,10 @@ _.GearSets =
 		}),
 		gs(1470, {	-- Burnished Triumvirate Armor
 			["classes"] = {
-				11,	--  Druid
-				4,  -- Rogue
-				10,	-- Monk
-				12,	-- Demon  Hunter
+				DRUID, 
+				ROGUE, 
+				MONK,
+				DEMONHUNTER
 			},
 			["lvl"] = 110,
 			--["itemID"] =  152242,	-- Ensemble: Burnished Armor

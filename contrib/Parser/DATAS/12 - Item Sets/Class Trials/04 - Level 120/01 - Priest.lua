@@ -115,7 +115,7 @@ _.GearSets =
 							["itemID"] = 170697,	-- Communal Idol of Wisdom	*LA0104	
 						},
 					},
-					["classes"] = { 5 }
+					["classes"] = { PRIEST }
 				}),
 			},
 		}),

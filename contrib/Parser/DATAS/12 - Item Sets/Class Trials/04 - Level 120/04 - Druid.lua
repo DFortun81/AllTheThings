@@ -202,7 +202,7 @@ _.GearSets =
 							},
 						},
 					},
-					["classes"] = { 11 }
+					["classes"] = { DRUID }
 				}),
 			},
 		}),

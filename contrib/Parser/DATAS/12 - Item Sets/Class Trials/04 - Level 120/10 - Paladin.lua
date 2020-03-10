@@ -7,9 +7,7 @@ _.GearSets =
 		n(-155, {	-- Level 120
 			["groups"] = {
 				n(-149, {	-- Sunsoul [Paladin]
-					["classes"] = {
-						2,	-- Paladin
-					},
+					["classes"] = { PALADIN },
 					["g"] = {
 						{	-- Adventurer's Footlocker
 							["itemID"] = 171988,	-- Adventurer's Footlocker
@@ -161,7 +159,7 @@ _.GearSets =
 							["itemID"] = 170689,	-- Sunsoul Defender Stone
 						},
 					},
-					["classes"] = { 2 }
+					["classes"] = { PALADIN }
 				}),
 			},
 		}),

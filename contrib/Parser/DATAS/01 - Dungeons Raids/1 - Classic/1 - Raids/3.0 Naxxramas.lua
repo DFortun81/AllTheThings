@@ -17,7 +17,7 @@ _.Instances = { tier(1, {	-- Classic
 				["sourceQuest"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
 				["groups"] = {
 					n(-10066, {	-- Legendary Questline
-						["classes"] = { 5, 8, 9, 11 },    -- Priest, Mage, Warlock, Druid
+						["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
 						["title"] = "Atiesh, Greatstaff of the Guardian",
 						["icon"] = "Interface\\Icons\\INV_Staff_Medivh",
 						["isRaid"] = true,
@@ -44,7 +44,7 @@ _.Instances = { tier(1, {	-- Classic
 							{
 								["questID"] = 9257,	-- Atiesh, Greatstaff of the Guardian [Priest]
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
-								["classes"] = { 5 },	-- Priest
+								["classes"] = { PRIEST },
 								["provider"] = { "n", 15192 },	-- Anachronos
 								["u"] = 2,
 								["groups"] = {
@@ -54,7 +54,7 @@ _.Instances = { tier(1, {	-- Classic
 							{
 								["questID"] = 9270,	-- Atiesh, Greatstaff of the Guardian [Mage]
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
-								["classes"] = { 8 },	-- Mage
+								["classes"] = { MAGE },
 								["provider"] = { "n", 15192 },	-- Anachronos
 								["u"] = 2,
 								["groups"] = {
@@ -64,7 +64,7 @@ _.Instances = { tier(1, {	-- Classic
 							{
 								["questID"] = 9271,	-- Atiesh, Greatstaff of the Guardian [Warlock]
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
-								["classes"] = { 9 },	-- Warlock
+								["classes"] = { WARLOCK },
 								["provider"] = { "n", 15192 },	-- Anachronos
 								["u"] = 2,
 								["groups"] = {
@@ -74,7 +74,7 @@ _.Instances = { tier(1, {	-- Classic
 							{
 								["questID"] = 9269,	-- Atiesh, Greatstaff of the Guardian [Druid]
 								["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
-								["classes"] = { 11 },	-- Druid
+								["classes"] = { DRUID },
 								["provider"] = { "n", 15192 },	-- Anachronos
 								["u"] = 2,
 								["groups"] = {

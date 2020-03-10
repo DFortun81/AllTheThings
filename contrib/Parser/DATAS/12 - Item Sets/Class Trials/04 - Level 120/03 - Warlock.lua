@@ -24,7 +24,7 @@ _.GearSets =
 						i(170740),	-- Felsoul Stone of Destruction
 						i(170737),	-- Felsoul Idol of Destruction
 					},
-					["classes"] = { 9 }
+					["classes"] = { WARLOCK }
 				}),
 			},
 		}),

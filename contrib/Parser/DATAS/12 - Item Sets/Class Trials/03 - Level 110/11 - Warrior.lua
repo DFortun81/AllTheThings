@@ -7,7 +7,7 @@ _.GearSets =
 		n(-154, {	-- Level 110
 			["groups"] = {
 				n(-146, {	-- Oathsworn [Warrior]
-					["classes"] = { 1 },
+					["classes"] = { WARRIOR },
 					["groups"] = {
 						{	-- Adventurer's Footlocker
 							["itemID"] = 160439,	-- Adventurer's Footlocker

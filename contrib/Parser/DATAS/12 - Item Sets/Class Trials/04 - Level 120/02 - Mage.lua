@@ -52,7 +52,7 @@ _.GearSets =
 							["itemID"] = 170641,	-- Mountainsage Idol of Destruction
 						},
 					},
-					["classes"] = { 8 }
+					["classes"] = { MAGE }
 				}),
 			},
 		}),

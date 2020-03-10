@@ -14,7 +14,7 @@ _.GearSets =
 		},
 		["g"] = {
 			cl(5, {	-- Priest
-				["classes"] = { 5 },	-- Priest
+				["classes"] = { PRIEST },
 				["g"] = {
 					i(157710),	-- Curate's Robe
 					i(157713),	-- Curate's Bindings
@@ -26,7 +26,7 @@ _.GearSets =
 				},
 			}),
 			cl(8, {	-- Mage
-				["classes"] = { 8 },	-- Mage
+				["classes"] = { MAGE },
 				["g"] = {
 					i(157686),	-- Spellsculptor's Robe
 					i(157689),	-- Spellsculptor's Wristwraps
@@ -38,7 +38,7 @@ _.GearSets =
 				},
 			}),
 			cl(9, {	-- Warlock
-				["classes"] = { 9 },	-- Warlock
+				["classes"] = { WARLOCK },
 				["g"] = {
 					i(157734),	-- Felburner's Robe
 					i(157737),	-- Felburner's Wristwraps
@@ -50,7 +50,7 @@ _.GearSets =
 				},
 			}),
 			cl(11, {	-- Druid
-				["classes"] = { 11 },	-- Druid
+				["classes"] = { DRUID },
 				["g"] = {
 					i(157666),	-- Wildshifter Tunic
 					i(157673),	-- Wildshifter Bracers
@@ -62,7 +62,7 @@ _.GearSets =
 				},
 			}),
 			cl(4, {	-- Rogue
-				["classes"] = { 4 },	-- Rogue
+				["classes"] = { ROGUE },
 				["g"] = {
 					i(157714),	-- Nimblefinger Jerkin
 					i(157721),	-- Nimblefinger Bindings
@@ -74,7 +74,7 @@ _.GearSets =
 				},
 			}),
 			cl(10, {	-- Monk
-				["classes"] = { 10 },	-- Monk
+				["classes"] = { MONK },
 				["g"] = {
 					i(157690),	-- Ascetic's Vest
 					i(157697),	-- Ascetic's Cuffs
@@ -86,7 +86,7 @@ _.GearSets =
 				},
 			}),
 			cl(12, {	-- Demon Hunter
-				["classes"] = { 12 },	-- Demon Hunter
+				["classes"] = { DEMONHUNTER },
 				["g"] = {
 					i(112458),	-- Illidari Warglaive
 					i(129181),	-- Illidari Warglaive
@@ -108,7 +108,7 @@ _.GearSets =
 				},
 			}),
 			cl(3, {	-- Hunter
-				["classes"] = { 3 },	-- Hunter
+				["classes"] = { HUNTER },
 				["g"] = {
 					i(157674),	-- Heartbonded Vest
 					i(157681),	-- Heartbonded Bracers
@@ -120,7 +120,7 @@ _.GearSets =
 				},
 			}),
 			cl(7, {	-- Shaman
-				["classes"] = { 7 },	-- Shaman
+				["classes"] = { SHAMAN },
 				["g"] = {
 					i(157722),	-- Totem-Caller Tunic
 					i(157729),	-- Totem-Caller Armbands
@@ -133,7 +133,7 @@ _.GearSets =
 				},
 			}),
 			cl(2, {	-- Paladin
-				["classes"] = { 2 },	-- Paladin
+				["classes"] = { PALADIN },
 				["g"] = {
 					i(157698),	-- Lightsoul Battleplate
 					i(157705),	-- Lightsoul Vambraces
@@ -145,7 +145,7 @@ _.GearSets =
 				},
 			}),
 			cl(1, {	-- Warrior
-				["classes"] = { 1 },	-- Warrior
+				["classes"] = { WARRIOR },
 				["g"] = {
 					i(157738),	-- Warsinger's Breastplate
 					i(157745),	-- Warsinger's Vambraces
@@ -157,7 +157,7 @@ _.GearSets =
 				},
 			}),
 			cl(6, {	-- Death Knight
-				["classes"] = { 6 },	-- Death Knight
+				["classes"] = { DEATHKNIGHT },
 				["g"] = {
 					i(34652),	-- Archerus Knight's Hood
 					i(34655),	-- Archerus Knight's Pauldrons

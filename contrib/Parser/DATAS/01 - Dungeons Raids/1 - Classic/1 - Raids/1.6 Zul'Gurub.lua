@@ -229,7 +229,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8070,	-- Paragon's of Power: The Confessor's Bindings
 									["provider"] = { "n", 14903 },		-- Quest Giver: Al'tabim the All-Seeing
-									["classes"] = {5},	-- Priest
+									["classes"] = { PRIEST },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19842)),	-- Zandalar Confessor's Bindings
@@ -295,7 +295,7 @@ _.Instances = { tier(1, {	-- Classic
 								{
 									["questID"] = 8061,	-- Paragon's of Power: The Confessor's Wraps
 									["provider"] = { "n", 14903 },		-- Quest Giver: Al'tabim the All-Seeing
-									["classes"] = {5},	-- Priest
+									["classes"] = { PRIEST },
 									["u"] = 2,			-- Legacy Content
 									["groups"] = {
 										un(2, i(19843)),	-- Zandalar Confessor's Wraps

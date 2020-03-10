@@ -12,7 +12,13 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["coord"] = { 41.5, 17.9, 120 },	-- Ulduar, The Storm Peaks
 		["g"] = {
 			i(45038, {	-- Fragment of Val'anyr
-				["classes"] = { 2, 5, 7, 10, 11 },
+				["classes"] = {
+					PALADIN,
+					PRIEST,
+					SHAMAN,
+					MONK,
+					DRUID
+				},
 				["crs"] = {
 					33113,	-- Flame Leviathan
 					33118,	-- Ignis the Furnace Master

@@ -7,7 +7,7 @@ _.GearSets =
 		n(-155, {	-- Level 120
 			["groups"] = {
 				n(-148, {	-- Streamtalker [Shaman]
-					["classes"] = { 7 },
+					["classes"] = { SHAMAN },
 					["groups"] = {
 						{	-- Adventurer's Footlocker
 							["itemID"] = 171988,	-- Adventurer's Footlocker
