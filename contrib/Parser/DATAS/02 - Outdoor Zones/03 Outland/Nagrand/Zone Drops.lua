@@ -11,7 +11,6 @@ _.Zones =
 				}),
 				i(23611, {	-- Plans: Ragesteel Gloves
 					["crs"] = {
-						17137,	-- Boulderfist Mage
 						17136,	-- Boulderfist Warrior
 					},
 				}),
