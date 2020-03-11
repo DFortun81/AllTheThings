@@ -656,7 +656,7 @@ for key, value in pairs({
 		[220832] = "Sunken Treasure",
 		[221376] = "Old Sign Fragment",
 		[221413] = "Lin Family Scroll",
-		[222685] = "Crane Nest",
+		[222685] = "鹤巢", -- Crane Nest
 		[223533] = "Peaceful Offering",
 		[224228] = "Bubbling Cauldron",
 		[224306] = "Broken Chains",
