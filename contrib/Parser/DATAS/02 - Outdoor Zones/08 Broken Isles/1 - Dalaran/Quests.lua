@@ -1010,9 +1010,6 @@ _.Zones =
 					["classes"] = { ROGUE },
 					["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 				}),
-				q(45193, {	-- One Step Behind
-					["provider"] = { "n", 116175 },	-- Karam Magespear
-				}),
 				q(41967, {	-- Out of the Darkness
 					["classes"] = { PRIEST },
 					["provider"] = { "n", 105603 },	-- Defender Barrem

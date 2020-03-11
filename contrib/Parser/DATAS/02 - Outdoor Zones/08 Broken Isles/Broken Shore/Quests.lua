@@ -335,6 +335,16 @@ _.Zones =
 					["coord"] = { 44.6, 63.1, 646 },
 					["lvl"] = 110,
 				}),
+				q(45193, {	-- One Step Behind
+					["provider"] = { "n", 116175 },	-- Karam Magespear
+					["classes"] = {
+						11,	-- Druid (Balance)
+						3,	-- Hunter (Marksmanship)
+						8,	-- Mage (Frost)
+						5,	-- Priest (Shadow)
+						9,	-- Warlock (Affliction)
+					},
+				}),
 				q(46253, {	-- Pillars of Creation
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
@@ -881,18 +891,6 @@ _.Zones =
 				q(45243),	-- On Daumyr's Wings
 				q(38805),	-- Ondri
 				q(38802),	-- Ondri's Still-Beating Heart
---]]
-				q(45193, {	-- One Step Behind
-					["provider"] = { "n", 116175 },	-- Karam Magespear
-					["classes"] = {
-						11,	-- Druid (Balance)
-						3,	-- Hunter (Marksmanship)
-						8,	-- Mage (Frost)
-						5,	-- Priest (Shadow)
-						9,	-- Warlock (Affliction)
-					},
-				}),
---[[
 				q(47017),	-- Only the Best
 				q(39799),	-- Our Next Move
 				q(41967),	-- Out of the Darkness
