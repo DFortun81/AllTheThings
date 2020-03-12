@@ -684,10 +684,10 @@ for key, value in pairs({
 		[272455] = "艾瑞达战争物资", -- Eredar War Supplies
 		[272456] = "艾瑞达战争物资", -- Eredar War Supplies
 		[272487] = "|cFFFFFFFF步骤14:|r Oddly-Colored Egg",
-		[272768] = "Empyrium Deposit",
+		[272768] = "天界金矿脉", -- Empyrium Deposit
 		[272770] = "艾瑞达战争物资", -- Eredar War Supplies
 		[272771] = "艾瑞达战争物资", -- Eredar War Supplies
-		[272780] = "Empyrium Seam",
+		[272780] = "天界金矿层", -- Empyrium Seam
 		[273222] = "艾瑞达战争物资", -- Eredar War Supplies
 		[273301] = "上古艾瑞达宝箱", -- Ancient Eredar Cache
 		[273407] = "上古艾瑞达宝箱", -- Ancient Eredar Cache
