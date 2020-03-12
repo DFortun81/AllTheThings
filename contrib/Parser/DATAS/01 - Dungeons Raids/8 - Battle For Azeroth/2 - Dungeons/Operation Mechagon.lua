@@ -138,7 +138,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(168745),	-- Optimized Effective Logic Board
 							i(168744),	-- Optimized Efficient Logic Board
 							i(168970, {	-- Trashmaster's Mantle
-								["description"] = "Equiping this cloak gives you a temporary Trashmaster title.  To get a permanant character specfic Trashmaster title take this cloak to Jani's trashpile in Dazar'alor(Horde) or Vol'dun(Alliance).",
+								["description"] = "Equiping this cloak gives you a temporary Trashmaster title.  To get a permanant character specific Trashmaster title take this cloak to Jani's trashpile in Dazar'alor (Horde) or Vol'dun (Alliance).",
 								["g"] = {
 									q(56250, {	-- I Am the Trashmaster
 										--["sourceQuests"] = { },
@@ -330,7 +330,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(168745),	-- Optimized Effective Logic Board
 							i(168744),	-- Optimized Efficient Logic Board
 							i(168970, {	-- Trashmaster's Mantle
-								["description"] = "Equiping this cloak gives you a temporary Trashmaster title.  To get a permanant character specfic Trashmaster title take this cloak to Jani's trashpile in Dazar'alor(Horde) or Vol'dun(Alliance).",
+								["description"] = "Equiping this cloak gives you a temporary Trashmaster title.  To get a permanant character specific Trashmaster title take this cloak to Jani's trashpile in Dazar'alor (Horde) or Vol'dun (Alliance).",
 								["g"] = {
 									q(56250, {	-- I Am the Trashmaster
 										--["sourceQuests"] = { },

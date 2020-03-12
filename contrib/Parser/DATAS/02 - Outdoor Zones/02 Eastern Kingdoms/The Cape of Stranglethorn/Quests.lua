@@ -658,6 +658,7 @@ _.Zones =
 					["coord"] = { 40.4, 68.1, 210 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 48808 },	-- Corporal Jeyne
+					["lvl"] = 35,
 				}),
 				q(26696, {	-- The Call of Kalimdor (H)
 					["provider"] = { "n", 48797 },	-- Gim'hila
@@ -665,6 +666,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["description"] = "Swims in a circle near the dock.",
 					["isBreadcrumb"] = true,
+					["lvl"] = 35,
 				}),
 				q(614,   {	-- The Captain's Chest (A)
 					["u"] = 40,

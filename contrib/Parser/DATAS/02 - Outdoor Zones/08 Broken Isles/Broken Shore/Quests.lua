@@ -27,8 +27,8 @@ _.Zones =
 							["provider"] = { "n", 116576 },	-- Maiev Shadowsong
 							["sourceQuests"] = { 46247 },	-- Defending Broken Isles
 							["g"] = {
-								cl(10, {	-- Monk
-									["classes"] = { 10 },	-- Monk
+								cl(MONK, {
+									["classes"] = { MONK },
 									["g"] = {
 										q(45440, {	-- A Brewing Situation
 											["provider"] = { "n", 116929 },	-- Brewmaster Blancee
@@ -318,7 +318,7 @@ _.Zones =
 				q(46333, {	-- Livin' on the Ledge
 					["sourceQuests"] = { 46246 },	-- Strike Them Down
 					["provider"] = { "n", 118316 },	-- Illidari Enforcer
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 44.0, 62.7, 646 },
 					["lvl"] = 110,
 				}),
@@ -338,11 +338,11 @@ _.Zones =
 				q(45193, {	-- One Step Behind
 					["provider"] = { "n", 116175 },	-- Karam Magespear
 					["classes"] = {
-						11,	-- Druid (Balance)
-						3,	-- Hunter (Marksmanship)
-						8,	-- Mage (Frost)
-						5,	-- Priest (Shadow)
-						9,	-- Warlock (Affliction)
+						DRUID,		-- Balance
+						HUNTER,		-- Marksmanship
+						MAGE,		-- Frost
+						PRIEST,		-- Shadow
+						WARLOCK,	-- Affliction
 					},
 				}),
 				q(46253, {	-- Pillars of Creation
@@ -354,7 +354,7 @@ _.Zones =
 				q(46725, {	-- Power Outage
 					["sourceQuests"] = { 45385 },	-- We Must be Prepared!
 					["provider"] = { "n", 117709 },	-- Lady S'theno
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 52.1, 21.3, 646 },
 					["lvl"] = 110,
 				}),
@@ -367,7 +367,7 @@ _.Zones =
 				q(45764, {	-- Restoring Equilibrium
 					["sourceQuests"] = { 45385 },	-- We Must be Prepared!
 					["provider"] = { "n", 117709 },	-- Lady S'theno
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 52.1, 21.3, 646 },
 					["lvl"] = 110,
 				}),
@@ -378,7 +378,7 @@ _.Zones =
 						45798,	-- War'zuul the Provoker
 					},
 					["provider"] = { "n", 117709 },	-- Lady S'theno
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 52.1, 21.3, 646 },
 					["lvl"] = 110,
 				}),
@@ -558,7 +558,7 @@ _.Zones =
 				q(45798, {	-- War'zuul the Provoker
 					["sourceQuests"] = { 45385 },	-- We Must be Prepared!
 					["provider"] = { "n", 117709 },	-- Lady S'theno
-					["classes"] = { 12 },	-- Demon Hunter
+					["classes"] = { DEMONHUNTER },
 					["coord"] = { 52.1, 21.3, 646 },
 					["lvl"] = 110,
 				}),
@@ -582,7 +582,7 @@ _.Zones =
 			-- unconfirmed or old af data that needs to be re-confirmed anyway
 				q(45425, {	-- Grovebound
 					["sourceQuests"] = { 46677 },	-- Prick of a Thistle
-					["classes"]= { 11 },	-- Druid
+					["classes"]= { DRUID },
 					["lvl"] = 110,
 					["providers"] = {
 						{ "n", 120070 },	-- Thisalee Crow
@@ -595,18 +595,18 @@ _.Zones =
 				q(47032, {	-- Legion Threat: Azshara
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
-					["classes"] = { 1 },	-- Warrior (Arms)
+					["classes"] = { WARRIOR },	-- Arms
 				}),
 				q(47030, {	-- Legion Threat: Dalaran Infiltration
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["classes"] = {
-						6,	-- Death Knight (Blood)
-						12,	-- Demon Hunter (Vengeance)
-						11,	-- Druid (Guardian)
-						10,	-- Monk (Brewmaster)
-						2,	-- Paladin (Protection)
-						1,	-- Warrior (Protection)
+						DEATHKNIGHT,	-- Blood
+						DEMONHUNTER,	-- Vengeance
+						DRUID,			-- Guardian
+						MONK,			-- Brewmaster
+						PALADIN,		-- Protection
+						WARRIOR,		-- Protection
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -615,10 +615,10 @@ _.Zones =
 					["altQuests"] = { 47035 },	-- Legion Threat: The Missing Mage
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["classes"] = {
-						3,	-- Hunter (Beast Mastery)
-						10,	-- Monk (Windwalker)
-						5,	-- Priest (Discipline)
-						9,	-- Warlock (Destruction)
+						HUNTER,		-- Beast Mastery
+						MONK,		-- Windwalker
+						PRIEST,		-- Discipline
+						WARLOCK,	-- Destruction
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -626,17 +626,17 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["altQuests"] = { 47034 },	-- Legion Threat: The Necromancer
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
-					["classes"] = { 8 },	-- Mage (Arcane)
+					["classes"] = { MAGE },	-- Arcane
 				}),
 				q(47035, {	-- Legion Threat: The Missing Mage
 					["isBreadcrumb"] = true,
 					["altQuests"] = { 47031 },	-- Legion Threat: Highmountain
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["classes"] = {
-						3,	-- Hunter (Beast Mastery)
-						10,	-- Monk (Windwalker)
-						5,	-- Priest (Discipline)
-						9,	-- Warlock (Destruction)
+						HUNTER,		-- Beast Mastery
+						MONK,		-- Windwalker
+						PRIEST,		-- Discipline
+						WARLOCK,	-- Destruction
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -644,29 +644,29 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["altQuests"] = { 47033 },	-- Legion Threat: Suramar
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
-					["classes"] = { 8 },	-- Mage (Arcane)
+					["classes"] = { MAGE },	-- Arcane
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47027, {	-- Legion Threat: Val'sharah
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["classes"] = {
-						11,	-- Druid (Restoration)
-						10,	-- Monk (Mistweaver)
-						2,	-- Paladin (Holy)
-						5,	-- Priest (Holy)
-						7,	-- Shaman (Restoration)
+						DRUID,		-- Restoration
+						MONK,		-- Mistweaver
+						PALADIN,	-- Holy
+						PRIEST,		-- Holy
+						SHAMAN,		-- Restoration
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(46827, {	-- Meld Into the Shadows
 					["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 					["races"] = HORDE_ONLY,
-					["classes"] = { 4 },
+					["classes"] = { ROGUE },
 				}),
 				q(46676, {	-- Nature's Touch
 					["lvl"] = 110,
-					["classes"]= { 11 },	-- Druid
+					["classes"]= { DRUID },
 					["sourceQuests"]	= { 46674 },	-- The Preservation of Nature
 					["providers"] = {
 						{ "n", 120070 },	-- Thisalee Crow
@@ -675,7 +675,7 @@ _.Zones =
 				}),
 				q(46677, {	-- Prick of a Thistle
 					["lvl"] = 110,
-					["classes"]= { 11 },	-- Druid
+					["classes"]= { DRUID },
 					["providers"] = {
 						{ "n", 120070 },	-- Thisalee Crow
 						{ "n", 120084 },	-- Druid of the Talon
@@ -687,7 +687,7 @@ _.Zones =
 				}),
 				q(42074, {	-- Return of the Light
 					["provider"] = { "n", 106011 },	-- Jace Darkweaver
-					["classes"] = { 5 },
+					["classes"] = { PRIEST },
 				}),
 				q(47067, {	-- Seeking Lost Knowledge
 					["u"] = 2,
@@ -696,7 +696,7 @@ _.Zones =
 				q(46317, {	-- Talon's Call
 					["provider"] = { "n", 118105 },	-- Grovewarden Proudhorn
 					["sourceQuests"] = { 46246 },	-- Strike Them Down
-					["classes"] = { 11 },  -- Druid
+					["classes"] = { DRUID },
 				}),
 				q(54120, {	-- To Orgrimmar
 					["provider"] = { "n", 145965 },	-- Spirit of Vol'jin
@@ -707,7 +707,7 @@ _.Zones =
 				}),
 				q(46675, {	-- To Track a Demon
 					["lvl"] = 110,
-					["classes"]= { 11 },	-- Druid
+					["classes"]= { DRUID },
 					["sourceQuests"] = { 46674 },	-- The Preservation of Nature
 					["providers"] = {
 						{ "n", 120070 },	-- Thisalee Crow
@@ -925,11 +925,11 @@ _.Zones =
 				q(45192, {	-- Runes of Rending
 					["provider"] = { "n", 116175 },	-- Karam Magespear
 					["classes"] = {
-						11,	-- Druid (Balance)
-						3,	-- Hunter (Marksmanship)
-						8,	-- Mage (Frost)
-						5,	-- Priest (Shadow)
-						9,	-- Warlock (Affliction)
+						DRUID,		-- Balance
+						HUNTER,		-- Marksmanship
+						MAGE,		-- Frost
+						PRIEST,		-- Shadow
+						WARLOCK,	-- Affliction
 					},
 				}),
 --[[
@@ -940,7 +940,7 @@ _.Zones =
 				q(45344),	-- Sampling the Source
 --]]
 				q(46235, {	-- Secured Surroundings
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 				}),
 --[[
 				q(47067),	-- Seeking Lost Knowledge

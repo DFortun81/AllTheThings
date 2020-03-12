@@ -2245,7 +2245,10 @@ _.NeverImplemented =
 		q(58544),	-- kill ra-den - either the wing clear OR the beacon placement
 		q(58545),	-- triggered together with 58543, 58544 and 59565. My first ever kill of Ra-den (happened on heroic)
 		q(59567),	-- kill Carapace of N'Zoth (Fury of N'Zoth)
-		q(59568),	-- nzoth killed on heroic. possibly the same for other difficulties?
+		q(59568),	-- N'Zoth killed on Heroic. Possibly the same for other difficulties?
+		q(59531),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
+		q(59532),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
+		q(59533),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
 		
 		-- Azerite essences assembled with Encrypted Ny'alothan Text
 		q(58527),	-- Replicating Void Droplets (Rank 1 Formless Void)

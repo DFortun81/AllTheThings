@@ -104,6 +104,7 @@ _.Zones =
 				}),
 				q(56249, {	-- I Am the Trashmaster
 					--["sourceQuests"] = { },
+					["description"] = "You need to get Trashmaster's Mantle from K.U.-J.0. boss in Mechagon for this quest.",
 					["coord"] = { 35.3, 7.70, 1165 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126334 },	-- Jani <Loa of Scavengers>

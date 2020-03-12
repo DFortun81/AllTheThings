@@ -1753,6 +1753,11 @@ _.ExpansionFeatures =
 							i(174227),	-- Writhing Feeler
 						},
 					}),
+					n(162370, {	-- Armagedillo
+						["questID"] = 58718,
+						["coord"] = { 44.54, 41.86, 1527 },
+						["isDaily"] = true,
+					}),
 					n(157134, {	-- Ishak of the Four Winds
 						["questID"] = 57259,
 						["coord"] = { 73.9, 83.5, 1527 },
@@ -1769,6 +1774,16 @@ _.ExpansionFeatures =
 							i(174224),	-- Greatsword of Cruelty
 							i(174222),	-- Unspeakable Bloodletter
 							i(174227),	-- Writhing Feeler
+						},
+					}),
+					n(162372, {	-- Spirit of Cyrus the Black
+						["questID"] = 58715,
+						["isDaily"] = true,
+						["coords"] = {
+							{ 58.0, 83.6, 1527 },
+							{ 58.8, 61.2, 1527 },
+							{ 66.6, 68.6, 1527 },
+							{ 71.0, 74.2, 1527 },
 						},
 					}),
 				}),
