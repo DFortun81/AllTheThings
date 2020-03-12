@@ -104,6 +104,51 @@ _.ExpansionFeatures =
 							i(173524),	-- Mask of the Pained
 						},
 					}),
+					--[[o(???, {	-- This section is for gear rewards
+						["description"] = "You can only recieve each tier of gear rewards once per week.  Ex. Completing multiple 5 mask runs rewards the next lower tier reward each time.  After all tier rewards are looted for the week no more gear is given.",
+						["g"] = {
+							o(???,	{	-- Main Objective Only(420)
+								["description"] = "Rewards ilvl 420 loot.",
+								["questID"] = ,
+								["isWeekly"] = true,
+							}),
+							o(???,	{	-- Main Objective + 2 bonus
+								["description"] = "Rewards ilvl 430 loot.",
+								["questID"] = ,
+								["isWeekly"] = true,
+							}),
+							o(???,	{	-- Full Clear
+								["description"] = "Rewards ilvl 445 loot.",
+								["questID"] = ,
+								["isWeekly"] = true,
+							}),
+							o(???,	{	-- Full Clear + 1 Mask
+								["description"] = "Rewards ilvl 450 loot.",
+								["questID"] = ,
+								["isWeekly"] = true,
+							}),
+							o(???,	{	-- Full Clear + 2 Masks
+								["description"] = "Rewards ilvl 455 loot.",
+								["questID"] = ,
+								["isWeekly"] = true,
+							}),
+							o(???,	{	-- Full Clear + 3 Masks
+								["description"] = "Rewards ilvl 460 loot.",
+								["questID"] = ,
+								["isWeekly"] = true,
+							}),
+							o(???,	{	-- Full Clear + 4 Masks
+								["description"] = "Rewards ilvl 465 loot.",
+								["questID"] = ,
+								["isWeekly"] = true,
+							}),
+							o(???,	{	-- Full Clear + 5 Masks
+								["description"] = "Rewards ilvl 470 loot.",
+								["questID"] = ,
+								["isWeekly"] = true,
+							}),
+						},
+					}),]]
 				},
 			}),
 			n(RARES, {
