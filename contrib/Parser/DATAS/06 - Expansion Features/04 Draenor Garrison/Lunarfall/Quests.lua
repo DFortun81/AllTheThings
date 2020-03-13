@@ -565,10 +565,6 @@ _.ExpansionFeatures =
 						["isBreadcrumb"] = true,
 						["provider"] = { "n", 77209 },	-- Baros Alexston
 						["races"] = ALLIANCE_ONLY,
-						["requireSkill"] = JEWELCRAFTING,
-						["g"] = {
-							recipe(187639),	-- Immaculate Versatility Taladite
-						},
 					}),
 					q(33461, {	-- Gloomshade Game Hunter
 						["sourceQuests"] = {

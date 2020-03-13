@@ -50,9 +50,7 @@ _.Zones =
 				q(37839, {	-- Light Be With You
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(39176),	-- Mastery Of Taladite
 				q(39395),	-- Oronok's Offer
-				q(39177),	-- Ruined Construct
 				q(38273),	-- Spirits of the Bleeding Hollow
 				q(34366),	-- Tanaan 01: Front of the Portal
 				q(38272),	-- The Bleeding Hollow
@@ -348,6 +346,11 @@ _.Zones =
 						}),
 					},
 				}),
+				q(39176, {	-- Mastery Of Taladite
+					["requireSkill"] = JEWELCRAFTING,
+					["provider"] = { "n", 94686 },	-- Sun-Sage Chakkis
+					["coord"] = { 25.8, 39.8, 534 },
+				}),
 				q(38436, {	-- Obstacle Course
 					["provider"] = { "n", 91913 },	-- Exarch Yrel
 					["coord"] = { 73.4, 71.1, 534 },
@@ -369,6 +372,15 @@ _.Zones =
 					["coord"] = { 58.4, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
+				}),
+				q(39177, {	-- Ruined Construct
+					["requireSkill"] = JEWELCRAFTING,
+					["provider"] = { "n", 94605 },	-- Apexis Gemcutter
+					["coord"] = { 17.5, 45.1, 534 },
+					["sourceQuest"] = 39176,	-- Mastery of Taladite
+					["g"] = {
+						recipe(187639),	-- Immaculate Versatility Taladite
+					},
 				}),
 				q(39565, {	-- Rumble in the Jungle
 					["provider"] = { "n", 92805 },	-- Z'tenga the Walker

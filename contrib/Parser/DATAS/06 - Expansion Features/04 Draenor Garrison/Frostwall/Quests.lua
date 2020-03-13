@@ -676,12 +676,10 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 					}),
 					q(39175, {	-- Gems of the Apexis
+						["requireSkill"] = JEWELCRAFTING,
+						["isBreadcrumb"] = true,
 						["provider"] = { "n", 78466 },	-- Gazlowe
 						["races"] = HORDE_ONLY,
-						["requireSkill"] = JEWELCRAFTING,
-						["g"] = {
-							recipe(187639),	-- Immaculate Versatility Taladite
-						},
 					}),
 					q(36589, {	-- Heavy Arms
 						["races"] = HORDE_ONLY,
