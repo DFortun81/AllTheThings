@@ -390,7 +390,7 @@ _.Achievements =
 						crit(2),		-- Locked and Loaded
 						crit(3),		-- Officer of the Light
 						crit(4),		-- Protector of the Argussian Reach
-						crit(5),			-- Shoot First, Loot Later
+						crit(5),		-- Shoot First, Loot Later
 						crit(6),		-- Envision Invasion Eradication
 						crit(7),		-- Invasion Obliteration
 						crit(8),		-- Heroic: Seat of the Triumvirate

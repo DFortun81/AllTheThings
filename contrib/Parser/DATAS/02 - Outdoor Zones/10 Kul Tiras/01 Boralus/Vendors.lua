@@ -1668,7 +1668,7 @@ _.Zones =
 							["cost"] = { { "c", 1560, 200 }, },	-- 200x War Resources
 						}),
 						i(165880, {	-- Outpost Upgrade: Arom's Stand
-							--["questID"] = ,	-- Mission Start Trigger
+							["questID"] = 54261,	-- Mission Start Trigger
 							["races"] = ALLIANCE_ONLY,
 							["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
@@ -1676,7 +1676,7 @@ _.Zones =
 								mission(2111, {	-- Upgrade: Arom's Stand
 									--["questID"] = ,	-- Triggers when completed
 									["races"] = ALLIANCE_ONLY,
-									--["sourceQuests"] = {  },	-- Mission Start Trigger
+									["sourceQuests"] = { 54261 },	-- Mission Start Trigger
 								}),
 								q(54306, {	-- Mission Report: Arom's Stand
 									["provider"] = { "n", 138704 },		-- Mission Command Table
@@ -1693,7 +1693,7 @@ _.Zones =
 							},
 						}),
 						i(165836, {	-- Outpost Upgrade: Brennadam
-							--["questID"] = ,	-- Mission Start Trigger
+							["questID"] = 54304,	-- Mission Start Trigger
 							["races"] = ALLIANCE_ONLY,
 							["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
@@ -1701,7 +1701,7 @@ _.Zones =
 								mission(2109, {	-- Upgrade: Brennadam
 									--["questID"] = ,	-- Triggers when completed
 									["races"] = ALLIANCE_ONLY,
-									--["sourceQuests"] = {  },	-- Mission Start Trigger
+									["sourceQuests"] = { 54304 },	-- Mission Start Trigger
 								}),
 								q(54262, {	-- Mission Report: Brennadam
 									["provider"] = { "n", 138704 },		-- Mission Command Table
@@ -1718,7 +1718,7 @@ _.Zones =
 							},
 						}),
 						i(165873, {	-- Outpost Upgrade: Castaway Point
-							--["questID"] = ,	-- Mission Start Trigger
+							["questID"] = 54283,	-- Mission Start Trigger
 							["races"] = ALLIANCE_ONLY,
 							["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
@@ -1726,7 +1726,7 @@ _.Zones =
 								mission(2110, {	-- Upgrade: Castaway Point
 									--["questID"] = ,	-- Triggers when completed
 									["races"] = ALLIANCE_ONLY,
-									--["sourceQuests"] = {  },	-- Mission Start Trigger
+									["sourceQuests"] = { 54283 },	-- Mission Start Trigger
 								}),
 								q(54284, {	-- Mission Report: Castaway Point
 									["provider"] = { "n", 138704 },		-- Mission Command Table

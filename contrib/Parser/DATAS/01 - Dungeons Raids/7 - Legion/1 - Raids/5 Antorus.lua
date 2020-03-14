@@ -521,6 +521,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(1992, {	-- Garothi Worldbreaker
 					["crs"] = { 122450 },	-- Garothi Worldbreaker
 					["g"] = {
+						ach(11930),	-- Worm-monger
 						i(151713),	-- Recipe: Empyrial Breastplate (Rank 3)
 						i(151943),	-- Crown of Relentless Annihilation
 						i(151988),	-- Shoulderpads of the Demonic Blitz
@@ -545,6 +546,7 @@ _.Instances = { tier(7, {	-- Legion
 						122135,	-- Shatug
 					},
 					["g"] = {
+						ach(12065),	-- Hounds Good To Me
 						i(152816),	-- Antoran Charhound (MOUNT!)
 						i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
 						i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
@@ -574,6 +576,7 @@ _.Instances = { tier(7, {	-- Legion
 						122333,	-- General Erodus
 					},
 					["g"] = {
+						ach(12129),	-- This is the War Room!
 						i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
 						i(151745),	-- Recipe: Fiendish Spaulders (Rank 3)
 						i(151985),	-- General Erodus' Tricorne
@@ -610,6 +613,7 @@ _.Instances = { tier(7, {	-- Legion
 						124445,	-- The Paraxis
 					},
 					["g"] = {
+						ach(12067),	-- Spheres of Influence
 						i(152681),	-- Headdress of Living Brambles
 						i(152013),	-- Helmet of the Hidden Sanctuary
 						i(152124),	-- Bearmantle Harness
@@ -639,6 +643,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(1985, {	-- Portal Keeper Hasabel
 					["crs"] = { 122104 },	-- Portal Keeper Hasabel
 					["g"] = {
+						ach(11928),	-- Portal Combat
 						i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
 						i(152001),	-- Nexus Conductor's Headgear
 						i(151965),	-- Vulcanarcore Pendant
@@ -660,6 +665,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(2009, {	-- Imonar the Soulhunter
 					["crs"] = { 124158 },	-- Imonar the Soulhunter
 					["g"] = {
+						ach(11949),	-- Hard to Kill
 						i(151944),	-- Soulhunter's Cowl
 						i(152416),	-- Shoulderguards of Indomitable Purpose
 						i(151989),	-- Spaulders of the Relentless Tracker
@@ -689,6 +695,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(2004, {	-- Kin'garoth
 					["crs"] = { 122578 },	-- Kin'garoth
 					["g"] = {
+						ach(12030),	-- The World Revolves Around Me
 						i(152014),	-- Titan-Subjugator's Visage
 						i(151948),	-- Magma-Spattered Smock
 						i(152280),	-- Scalding Shatterguards
@@ -718,6 +725,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(1983, {	-- Varimathras
 					["crs"] = { 122366 },	-- Varimathras
 					["g"] = {
+						ach(11948),	-- Together We Stand
 						i(151966),	-- Riveted Choker of Delirium
 						i(151995),	-- Robes of the Forsaken Dreadlord
 						i(151979),	-- Vest of Unfathomable Anguish
@@ -742,6 +750,7 @@ _.Instances = { tier(7, {	-- Legion
 						122468,	-- Noura, Mother of Flames
 					},
 					["g"] = {
+						ach(12046),	-- Remember the Titans
 						i(152129),	-- Bearmantle Shoulders
 						i(152117),	-- Dreadwake Pauldrons
 						i(152123),	-- Felreaper Spaulders
@@ -772,6 +781,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(1984, {	-- Aggramar
 					["crs"] = { 121975 },	-- Aggramar
 					["g"] = {
+						ach(11915),	-- Don't Sweat the Technique
 						i(152094),	-- Taeshalach
 						i(152127),	-- Bearmantle Headdress
 						i(152163),	-- Cavalier Hat of the Dashing Scoundrel
@@ -802,6 +812,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				cr(124828, e(2031, {	-- Argus the Unmaker
+					ach(12257),	-- Stardust Crusaders
 					i(153115),	-- Scythe of the Unmaker [BLUE]
 					i(152423),	-- Helm of the Awakened Soul
 					i(152283),	-- Chain of the Unmaker
@@ -908,6 +919,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(1992, {	-- Garothi Worldbreaker
 					["crs"] = { 122450 },	-- Garothi Worldbreaker
 					["g"] = {
+						ach(11930),	-- Worm-monger
 						i(151713),	-- Recipe: Empyrial Breastplate (Rank 3)
 						i(151943),	-- Crown of Relentless Annihilation
 						i(151988),	-- Shoulderpads of the Demonic Blitz
@@ -932,6 +944,7 @@ _.Instances = { tier(7, {	-- Legion
 						122135,	-- Shatug
 					},
 					["g"] = {
+						ach(12065),	-- Hounds Good To Me
 						i(152816),	-- Antoran Charhound (MOUNT!)
 						i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
 						i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
@@ -961,6 +974,7 @@ _.Instances = { tier(7, {	-- Legion
 						122333,	-- General Erodus
 					},
 					["g"] = {
+						ach(12129),	-- This is the War Room!
 						i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
 						i(151745),	-- Recipe: Fiendish Spaulders (Rank 3)
 						i(151985),	-- General Erodus' Tricorne
@@ -997,6 +1011,7 @@ _.Instances = { tier(7, {	-- Legion
 						124445,	-- The Paraxis
 					},
 					["g"] = {
+						ach(12067),	-- Spheres of Influence
 						i(152681),	-- Headdress of Living Brambles
 						i(152013),	-- Helmet of the Hidden Sanctuary
 						i(152124),	-- Bearmantle Harness
@@ -1026,6 +1041,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(1985, {	-- Portal Keeper Hasabel
 					["crs"] = { 122104 },	-- Portal Keeper Hasabel
 					["g"] = {
+						ach(11928),	-- Portal Combat
 						i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
 						i(152001),	-- Nexus Conductor's Headgear
 						i(151965),	-- Vulcanarcore Pendant
@@ -1047,6 +1063,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(2009, {	-- Imonar the Soulhunter
 					["crs"] = { 124158 },	-- Imonar the Soulhunter
 					["g"] = {
+						ach(11949),	-- Hard to Kill
 						i(151944),	-- Soulhunter's Cowl
 						i(152416),	-- Shoulderguards of Indomitable Purpose
 						i(151989),	-- Spaulders of the Relentless Tracker
@@ -1076,6 +1093,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(2004, {	-- Kin'garoth
 					["crs"] = { 122578 },	-- Kin'garoth
 					["g"] = {
+						ach(12030),	-- The World Revolves Around Me
 						i(152014),	-- Titan-Subjugator's Visage
 						i(151948),	-- Magma-Spattered Smock
 						i(152280),	-- Scalding Shatterguards
@@ -1105,6 +1123,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(1983, {	-- Varimathras
 					["crs"] = { 122366 },	-- Varimathras
 					["g"] = {
+						ach(11948),	-- Together We Stand
 						i(151966),	-- Riveted Choker of Delirium
 						i(151995),	-- Robes of the Forsaken Dreadlord
 						i(151979),	-- Vest of Unfathomable Anguish
@@ -1129,6 +1148,7 @@ _.Instances = { tier(7, {	-- Legion
 						122468,	-- Noura, Mother of Flames
 					},
 					["g"] = {
+						ach(12046),	-- Remember the Titans
 						i(152129),	-- Bearmantle Shoulders
 						i(152117),	-- Dreadwake Pauldrons
 						i(152123),	-- Felreaper Spaulders
@@ -1159,6 +1179,7 @@ _.Instances = { tier(7, {	-- Legion
 				e(1984, {	-- Aggramar
 					["crs"] = { 121975 },	-- Aggramar
 					["g"] = {
+						ach(11915),	-- Don't Sweat the Technique
 						i(152094),	-- Taeshalach
 						i(152127),	-- Bearmantle Headdress
 						i(152163),	-- Cavalier Hat of the Dashing Scoundrel
@@ -1194,6 +1215,8 @@ _.Instances = { tier(7, {	-- Legion
 							un(2, i(152901)),	-- Kirin Tor Summoning Cystal (MOUNT!)
 						}),
 					})),
+					un(2, ach(12110)),	-- Ahead of the Curve: Argus the Unmaker
+					ach(12257),	-- Stardust Crusaders
 					i(153115),	-- Scythe of the Unmaker [BLUE]
 					i(152423),	-- Helm of the Awakened Soul
 					i(152283),	-- Chain of the Unmaker
@@ -1300,6 +1323,8 @@ _.Instances = { tier(7, {	-- Legion
 				e(1992, {	-- Garothi Worldbreaker
 					["crs"] = { 122450 },	-- Garothi Worldbreaker
 					["g"] = {
+						ach(11992),	-- Mythic: Garothi Worldbreaker
+						ach(11930),	-- Worm-monger
 						i(151943),	-- Crown of Relentless Annihilation
 						i(151988),	-- Shoulderpads of the Demonic Blitz
 						i(151937),	-- Cloak of  the Burning Vanguard
@@ -1323,6 +1348,8 @@ _.Instances = { tier(7, {	-- Legion
 						122135,	-- Shatug
 					},
 					["g"] = {
+						ach(11993),	-- Mythic: Hounds of Sargeras
+						ach(12065),	-- Hounds Good To Me
 						i(152816),	-- Antoran Charhound (MOUNT!)
 						i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
 						i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
@@ -1352,6 +1379,8 @@ _.Instances = { tier(7, {	-- Legion
 						122333,	-- General Erodus
 					},
 					["g"] = {
+						ach(11994),	-- Mythic: Antoran High Command
+						ach(12129),	-- This is the War Room!
 						i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
 						i(151745),	-- Recipe: Fiendish Spaulders (Rank 3)
 						i(151985),	-- General Erodus' Tricorne
@@ -1388,6 +1417,8 @@ _.Instances = { tier(7, {	-- Legion
 						124445,	-- The Paraxis
 					},
 					["g"] = {
+						ach(11996),	-- Mythic: Eonar
+						ach(12067),	-- Spheres of Influence
 						i(152681),	-- Headdress of Living Brambles
 						i(152013),	-- Helmet of the Hidden Sanctuary
 						i(152124),	-- Bearmantle Harness
@@ -1417,6 +1448,8 @@ _.Instances = { tier(7, {	-- Legion
 				e(1985, {	-- Portal Keeper Hasabel
 					["crs"] = { 122104 },	-- Portal Keeper Hasabel
 					["g"] = {
+						ach(11995),	-- Mythic: Portal Keeper Hasabel
+						ach(11928),	-- Portal Combat
 						i(151748),	-- Recipe: Lightweave Breeches (Rank 3)
 						i(152001),	-- Nexus Conductor's Headgear
 						i(151965),	-- Vulcanarcore Pendant
@@ -1438,6 +1471,8 @@ _.Instances = { tier(7, {	-- Legion
 				e(2009, {	-- Imonar the Soulhunter
 					["crs"] = { 124158 },	-- Imonar the Soulhunter
 					["g"] = {
+						ach(11997),	-- Mythic: Imonar the Soulhunter
+						ach(11949),	-- Hard to Kill
 						i(151944),	-- Soulhunter's Cowl
 						i(152416),	-- Shoulderguards of Indomitable Purpose
 						i(151989),	-- Spaulders of the Relentless Tracker
@@ -1467,6 +1502,8 @@ _.Instances = { tier(7, {	-- Legion
 				e(2004, {	-- Kin'garoth
 					["crs"] = { 122578 },	-- Kin'garoth
 					["g"] = {
+						ach(11998),	-- Mythic: Kin'garoth
+						ach(12030),	-- The World Revolves Around Me
 						i(152014),	-- Titan-Subjugator's Visage
 						i(151948),	-- Magma-Spattered Smock
 						i(152280),	-- Scalding Shatterguards
@@ -1496,6 +1533,8 @@ _.Instances = { tier(7, {	-- Legion
 				e(1983, {	-- Varimathras
 					["crs"] = { 122366 },	-- Varimathras
 					["g"] = {
+						ach(11999),	-- Mythic: Varimathras
+						ach(11948),	-- Together We Stand
 						i(151966),	-- Riveted Choker of Delirium
 						i(151995),	-- Robes of the Forsaken Dreadlord
 						i(151979),	-- Vest of Unfathomable Anguish
@@ -1520,6 +1559,8 @@ _.Instances = { tier(7, {	-- Legion
 						122468,	-- Noura, Mother of Flames
 					},
 					["g"] = {
+						ach(12000),	-- Mythic: The Coven of Shivarra
+						ach(12046),	-- Remember the Titans
 						i(152129),	-- Bearmantle Shoulders
 						i(152117),	-- Dreadwake Pauldrons
 						i(152123),	-- Felreaper Spaulders
@@ -1550,6 +1591,8 @@ _.Instances = { tier(7, {	-- Legion
 				e(1984, {	-- Aggramar
 					["crs"] = { 121975 },	-- Aggramar
 					["g"] = {
+						ach(12001),	-- Mythic: Aggramar
+						ach(11915),	-- Don't Sweat the Technique
 						i(152094),	-- Taeshalach
 						i(152127),	-- Bearmantle Headdress
 						i(152163),	-- Cavalier Hat of the Dashing Scoundrel
@@ -1585,26 +1628,13 @@ _.Instances = { tier(7, {	-- Legion
 							un(2, i(152901)),	-- Kirin Tor Summoning Cystal (MOUNT!)
 						}),
 					})),
-					{	-- Cutting Edge: Argus the Unmaker
-						["achievementID"] = 12111,	-- Cutting Edge: Argus the Unmaker
-						["u"] = 2,	-- Legacy Achievement
-					},
-					{	-- Ahead of the Curve: Argus the Unmaker
-						["achievementID"] = 12110,	-- Ahead of the Curve: Argus the Unmaker
-						["u"] = 2,	-- Legacy Achievement
-					},
-					{	-- Realm First! Argus the Unmaker
-						["achievementID"] = 12258,	-- Realm First! Argus the Unmaker
-						["u"] = 2,	-- Legacy Achievement
-					},
-					{	-- Mythic: Argus the Unmaker
-						["achievementID"] = 12002,	-- Mythic: Argus the Unmaker
-						["g"] = {
-							{	-- Titanslayer <Name>
-								["titleID"] = 364,	-- Titanslayer %s
-							},
-						},
-					},
+					un(2, ach(12110)),	-- Ahead of the Curve: Argus the Unmaker
+					un(2, ach(12111)),	-- Cutting Edge: Argus the Unmaker
+					un(2, ach(12258)),	-- Realm First! Argus the Unmaker
+					ach(12002, {	-- Mythic: Argus the Unmaker
+						title(364),		-- Titanslayer
+					}),
+					ach(12257),	-- Stardust Crusaders
 					i(152789),	-- Shackled Ur'zul (MOUNT!)
 					i(155880),	-- Scythe of the Unmaker [RED]
 					i(153115),	-- Scythe of the Unmaker [BLUE]
