@@ -412,6 +412,10 @@ _.Craftables =
 				i(90904),	-- Ornate Band
 				i(83798),	-- Roguestone Shadowband
 			}),
+			i(95469, {	-- Serpent's Heart
+				i(90470),	-- Design: Jade Owl
+				i(90471),	-- Design: Sapphire Cub
+			}),
 		}),
 		n(-187, { 	-- Leatherworking
 			n(-322, { 	-- Cloak
