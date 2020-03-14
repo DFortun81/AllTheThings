@@ -806,6 +806,7 @@ _.ExpansionFeatures =
 					q(57874, {	-- Visions of a Dark Destiny -- is it still in game?
 						["coord"] = { 56.6, 31.7, 1527 },
 						["provider"] = { "n", 160252 },	-- Blacktalon Agent
+						["u"] = 1,	-- Never Available
 						["g"] = {
 							i(174288),	-- Breath of Everlasting Spirit (once a week)
 						},
