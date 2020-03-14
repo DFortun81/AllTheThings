@@ -957,7 +957,7 @@ _.Zones =
 					}),
 					q(43726, {	-- Tales of the Broken Isles
 						["provider"] = { "n", 97362 },	-- Dazzik "Proudmoore"
-						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 					}),
 					q(39933, {	-- The Card Shark
 						["sourceQuests"] = { 39932 },	-- Fish Ink
