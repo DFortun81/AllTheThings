@@ -236,6 +236,7 @@ for key,value in pairs({
 	[202975] = "Toilettes submergées",
 	[203128] = "Bouteille cassée",
 	[203134] = "Piédestal vide",
+	[203140] = "Dent de trident naga brisée",
 	[203186] = "ENTRÉE INTERDITE !",
 	[203207] = "Codex des ombres",
 	[203733] = "Tableau de récompense",

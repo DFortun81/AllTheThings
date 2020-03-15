@@ -19,7 +19,7 @@ _.Zones =
 				}),
 				q(50130, {	-- A Friendly Gesture
 					["provider"] = { "n", 17924 },	-- Msshi'fn
-					["coord"] = { 19.1, 49.4, 102 },
+					["coord"] = { 19.7, 52.1, 102 },
 					["sourceQuest"] = 50131,	-- An Outside Perspective
 					["minReputation"] = { 970, NEUTRAL },
 					["maxReputation"] = { 970, HONORED },

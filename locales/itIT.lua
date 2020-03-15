@@ -232,6 +232,7 @@ for key,value in pairs({
 	[202975] = "Latrina Sommersa",
 	[203128] = "Bottiglia Rotta",
 	[203134] = "Piedistallo Vuoto",
+	[203140] = "Forcone Spezzato",
 	[203186] = "ALLA LARGA!",
 	[203207] = "Codice delle Ombre",
 	[203733] = "Bacheca delle Taglie",

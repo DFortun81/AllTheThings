@@ -45,7 +45,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(10201, {	-- And Now, the Moment of Truth
-					["provider"] = { "n", 18358 },	-- Rakoria
+					["provider"] = { "n", 18385 },	-- Rakoria
 					["coord"] = { 50.1, 44.9, 108 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 9993,	-- Olemba Seed Oil
@@ -296,7 +296,7 @@ _.Zones =
 					["coord"] = { 37.7, 51.3, 108 },
 				}),
 				q(9993,  {	-- Olemba Seed Oil
-					["provider"] = { "n", 18358 },	-- Rakoria
+					["provider"] = { "n", 18385 },	-- Rakoria
 					["coord"] = { 50.1, 44.9, 108 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {

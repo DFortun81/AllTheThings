@@ -542,8 +542,9 @@ _.Zones =
 						},
 					}),
 					q(27716, {	-- Piece of the Past (A)
-						["races"] = ALLIANCE_ONLY,
+						["provider"] = { "i", 62281 },	-- Ancient Elven Etching (A)
 						["sourceQuest"] = 25747,	-- Looking Forward
+						["races"] = ALLIANCE_ONLY,
 						["crs"] = {
 							41227,	-- Azsh'ir Infantry
 							39638,	-- Azsh'ir Patroller
@@ -555,8 +556,9 @@ _.Zones =
 						},
 					}),
 					q(27717, {	-- Piece of the Past (H)
-						["races"] = HORDE_ONLY,
+						["provider"] = { "i", 62282 },	-- Ancient Elven Etching (H)
 						["sourceQuest"] = 25958,	-- Looking Forward
+						["races"] = HORDE_ONLY,
 						["crs"] = {
 							41227,	-- Azsh'ir Infantry
 							39638,	-- Azsh'ir Patroller

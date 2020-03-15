@@ -2769,6 +2769,7 @@ app.L = {
 		[202975] = "Submerged Outhouse",
 		[203128] = "Broken Bottle",
 		[203134] = "Empty Pedestal",
+		[203140] = "Broken Prong",
 		[203186] = "STAY OUT!",
 		[203207] = "Codex of Shadows",
 		[203733] = "Bounty Board",

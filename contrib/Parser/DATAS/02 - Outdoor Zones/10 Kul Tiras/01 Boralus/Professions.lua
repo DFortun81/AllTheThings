@@ -47,7 +47,7 @@ _.Zones =
 				}),
 				prof(BLACKSMITHING, {
 					-- Tools of Trade Questline
-					q(50114, {	-- A Recipe For the Ages (A)
+					q(50123, {	-- A Recipe For the Ages (A)
 						["provider"] = { "n", 133536 },	-- Grix "Ironfists" Barlow
 						["coord"] = { 73.6, 8.6, 1161 },
 						["description"] = "Requires 150 Kul Tiran Blacksmithing.",

@@ -7,60 +7,60 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["lvl"] = 77,
 		["maps"] = { 322, 323 },
 		["groups"] = {
-			d( 1, {	-- Normal
-				n(QUESTS, { 				
-					q(28834, {	-- Rescue the Earthspeaker!
-						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							i(65654),	-- Belt of a Thousand Deaths
-							i(65655),	-- Leggings of Opportune Strikes
-							i(65656),	-- Sea Witch Charm
-						},
-					}),
-					q(28833, {	-- Rescue the Earthspeaker!
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(65654),	-- Belt of a Thousand Deaths
-							i(65655),	-- Leggings of Opportune Strikes
-							i(65656),	-- Sea Witch Charm
-						},
-					}),
-					q(28836, {	-- Sins of the Sea Witch
-						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							i(65657),	-- Deepmist Robes
-							i(65659),	-- Kelp Forest Vest
-							i(65658),	-- Stonespeaker's Belt
-						},
-					}),
-					q(28843, {	-- Sins of the Sea Witch
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(65657),	-- Deepmist Robes
-							i(65659),	-- Kelp Forest Vest
-							i(65658),	-- Stonespeaker's Belt
-						},
-					}),
+			n(QUESTS, { 				
+				q(28834, {	-- Rescue the Earthspeaker!
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(65654),	-- Belt of a Thousand Deaths
+						i(65655),	-- Leggings of Opportune Strikes
+						i(65656),	-- Sea Witch Charm
+					},
 				}),
-				n(ZONEDROPS, {
-					["crs"] = {
-						40936, 	-- Faceless Watcher
-						40943,	-- Gilgoblin Aquamage
-						40935,	-- Gilgoblin Hunter
-						39616,	-- Naz'jar Invader
-						40584,	-- Naz'jar Invader
-						40577, 	-- Naz'jar Sentinel
-						41139,	-- Naz'jar Spiritmender
-						41096,	-- Naz'jar Spiritmender
-						40634,	-- Naz'jar Tempest Witch
-						40925,	-- Tainted Sentry
+				q(28833, {	-- Rescue the Earthspeaker!
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(65654),	-- Belt of a Thousand Deaths
+						i(65655),	-- Leggings of Opportune Strikes
+						i(65656),	-- Sea Witch Charm
 					},
-					["groups"] = {
-						i(55260),	-- Alpheus Legguards
-						i(55262),	-- Barnacle Pendant
-						i(55261),	-- Ring of the Great Whale
+				}),
+				q(28836, {	-- Sins of the Sea Witch
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(65657),	-- Deepmist Robes
+						i(65659),	-- Kelp Forest Vest
+						i(65658),	-- Stonespeaker's Belt
 					},
-				}),	
+				}),
+				q(28843, {	-- Sins of the Sea Witch
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(65657),	-- Deepmist Robes
+						i(65659),	-- Kelp Forest Vest
+						i(65658),	-- Stonespeaker's Belt
+					},
+				}),
+			}),
+			n(ZONEDROPS, {
+				["crs"] = {
+					40936, 	-- Faceless Watcher
+					40943,	-- Gilgoblin Aquamage
+					40935,	-- Gilgoblin Hunter
+					39616,	-- Naz'jar Invader
+					40584,	-- Naz'jar Invader
+					40577, 	-- Naz'jar Sentinel
+					41139,	-- Naz'jar Spiritmender
+					41096,	-- Naz'jar Spiritmender
+					40634,	-- Naz'jar Tempest Witch
+					40925,	-- Tainted Sentry
+				},
+				["groups"] = {
+					i(55260),	-- Alpheus Legguards
+					i(55262),	-- Barnacle Pendant
+					i(55261),	-- Ring of the Great Whale
+				},
+			}),	
+			d( 1, {	-- Normal
 				cr(40586, e(101, {	-- Lady Naz'jar
 					i(56266),	-- Lightning Whelk Axe
 					i(56269),	-- Aurelian Mitre

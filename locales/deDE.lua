@@ -247,6 +247,7 @@ for key,value in pairs({
 	[202975] = "Plumpsklo unter Wasser",
 	[203128] = "Zerbrochene Flasche",
 	[203134] = "Leeres Podest",
+	[203140] = "Zerbrochene Zacke",
 	[203186] = "BETRETEN VERBOTEN!",
 	[203207] = "Kodex der Schatten",
 	[203733] = "Steckbrieftafel",

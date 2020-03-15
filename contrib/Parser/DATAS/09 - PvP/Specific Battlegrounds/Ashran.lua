@@ -235,9 +235,7 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							crit(6, {	-- Forsaken Brains
-								["achievementID"] = 9104,	-- Bounty Hunter
-							}),
+							ach(9104, crit(6)),	-- Bounty Hunter / Forsaken Brains
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
@@ -249,9 +247,7 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							crit(7, {	-- Goblin Nose
-								["achievementID"] = 9104,	-- Bounty Hunter
-							}),
+							ach(9104, crit(7)),	-- Bounty Hunter / Goblin Nose
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
@@ -263,9 +259,7 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							crit(4, {	-- Orc Tooth
-								["achievementID"] = 9104,	-- Bounty Hunter
-							}),
+							ach(9104, crit(4)),	-- Bounty Hunter / Orc Tooth
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
@@ -276,10 +270,9 @@ _.PVP =
 						["questID"] = 36038,	-- Pandaren Hide (A)
 						["repeatable"] = true,
 						["g"] = {
-							crit(1, {	-- Pandaren Hide
-								["achievementID"] = 9104,	-- Bounty Hunter
+							ach(9104, crit(1, {	-- Bounty Hunter / Pandaren Hide
 								["races"] = ALLIANCE_ONLY,
-							}),
+							})),
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
@@ -291,9 +284,7 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							crit(3, {	-- Tauren Hoof
-								["achievementID"] = 9104,	-- Bounty Hunter
-							}),
+							ach(9104, crit(3)),	-- Bounty Hunter / Tauren Hoof
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
@@ -305,9 +296,7 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							crit(5, {	-- Troll Feet
-								["achievementID"] = 9104,	-- Bounty Hunter
-							}),
+							ach(9104, crit(5)),	-- Bounty Hunter / Troll Feet
 							i(128216, {	-- Dented Ashmaul Strongbox
 								["races"] = ALLIANCE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9914, -660 }, },
@@ -320,9 +309,7 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							crit(7, {	-- Draenei Tail
-								["achievementID"] = 9104,	-- Bounty Hunter
-							}),
+							ach(9103, crit(7)),	-- Bounty Hunter / Draenei Tail
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
@@ -334,9 +321,7 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							crit(4, {	-- Dwarf Spine
-								["achievementID"] = 9104,	-- Bounty Hunter
-							}),
+							ach(9103, crit(4)),	-- Bounty Hunter / Dwarf Spine
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
@@ -348,9 +333,7 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							crit(6, {	-- Human Bone Chip
-								["achievementID"] = 9104,	-- Bounty Hunter
-							}),
+							ach(9103, crit(6)),	-- Bounty Hunter / Human Bone Chip
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
@@ -361,10 +344,9 @@ _.PVP =
 						["questID"] = 35942,	-- Pandaren Hide (H)
 						["repeatable"] = true,
 						["g"] = {
-							crit(1, {	-- Pandaren Hide
-								["achievementID"] = 9104,	-- Bounty Hunter
+							ach(9103, crit(1, {	-- Bounty Hunter / Pandaren Hide
 								["races"] = HORDE_ONLY,
-							}),
+							})),
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
@@ -376,9 +358,7 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							crit(3, {	-- Severed Night Elf Head
-								["achievementID"] = 9104,	-- Bounty Hunter
-							}),
+							ach(9103, crit(3)),	-- Bounty Hunter / Severed Night Elf Head
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
@@ -390,9 +370,7 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							crit(5, {	-- Tuft of Gnome Hair
-								["achievementID"] = 9104,	-- Bounty Hunter
-							}),
+							ach(9103, crit(5)),	-- Bounty Hunter / Tuft of Gnome Hair
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },
@@ -404,9 +382,7 @@ _.PVP =
 						["repeatable"] = true,
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							crit(2, {	-- Worgen Snout
-								["achievementID"] = 9104,	-- Bounty Hunter
-							}),
+							ach(9103, crit(2)),	-- Bounty Hunter / Worgen Snout
 							i(128215, {	-- Dented Ashmaul Strongbox
 								["races"] = HORDE_ONLY,
 								["sym"] = { {"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 }, },

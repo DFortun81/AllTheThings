@@ -320,6 +320,8 @@ _.Zones =
 							},
 							]]--
 							["g"] = {
+								i(164368),	-- Plundered Crimson Captain's Hat
+								i(164369),	-- Plundered Pirate Admiral's Bicorne
 								n(-3347, {	-- Black Tooth Grunt
 									i(169284),	-- Black Tooth Grunt's Helm
 									i(169286),	-- Black Tooth Grunt's Pauldrons
@@ -351,6 +353,9 @@ _.Zones =
 								n(-162, {	-- Pets
 									i(163798),	-- Captain Nibs
 									i(169205),	-- Ghostly Whelpling
+								}),
+								n(-319, {	-- Weapons
+									i(164356),	-- Plundered Twinscale Handblade
 								}),
 							},
 						}),
@@ -527,6 +532,7 @@ _.Zones =
 							},
 							]]--
 							["g"] = {
+								i(164368),	-- Plundered Crimson Captain's Hat
 								n(-3328, {	-- Saurok
 									i(164503),	-- Saurok Scale Headgear
 									i(164505),	-- Saurok Scale Pauldrons
@@ -560,6 +566,7 @@ _.Zones =
 								}),
 								n(-319, {	-- Weapons
 									i(164304),	-- Plundered Celestial Finblade
+									i(164306),	-- Plundered Waterspeaker's Spellblade
 								}),
 							},
 						}),
