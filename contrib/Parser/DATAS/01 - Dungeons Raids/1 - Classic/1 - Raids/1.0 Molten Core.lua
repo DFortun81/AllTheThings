@@ -810,62 +810,6 @@ _.Instances = { tier(1, {	-- Classic
 				i(18815),	-- Essence of the Pure Flame
 				i(17082),	-- Shard of the Flame
 				un(2, i(17982)),	-- Ragnaros Core
-			 -- BLUES (NOT IN DUNGEON JOURNAL/WOWHEAD)
-				i(1203),	-- Aegis of Stormwind
-				i(13036),	-- Assassination Blade
-				i(13096),	-- Band of the Hierophant
-				i(13030),	-- Basilisk Bone
-				i(13126),	-- Battlecaller Gauntlets
-				i(13046),	-- Blanchard's Stout
-				i(13009),	-- Cow King's Hide
-				i(13008),	-- Dalewind Trousers
-				i(13120),	-- Deepfury Bracers
-				i(13075),	-- Direwing Legguards
-				i(13053),	-- Doombringer
-				i(13133),	-- Drakesfire Epaulets
-				i(13123),	-- Dreamwalker Armor
-				i(9402),	-- Earthborn Kilt
-				i(13013),	-- Elder Wizard's Mantle
-				i(13125),	-- Elven Chain Boots
-				i(2564),	-- Elven Spirit Claws
-				i(5266),	-- Eye of Adaegus
-				i(13113),	-- Feathermoon Headdress
-				i(13083),	-- Garrett Family Crest
-				i(13077),	-- Girdle of Uther
-				i(13139),	-- Guttbuster
-				i(13040),	-- Heartseeking Crossbow
-				i(13085),	-- Horizon Choker
-				i(13067),	-- Hydralick Armor
-				i(13002),	-- Lady Alizabeth's Pendant
-				i(4696),	-- Lapidis Tankard of Tidesippe
-				i(13003),	-- Lord Alexander's Battle Axe
-				i(13135),	-- Lordly Armguards
-				i(13007),	-- Mageflame Cloak
-				i(13107),	-- Magiskull Cuffs
-				i(13001),	-- Maiden's Circle
-				i(13006),	-- Mass of McGowan
-				i(13091),	-- Medallion of Grand Marshal Morris
-				i(13073),	-- Mugthol's Helm
-				i(1973),	-- Orb of Deception
-				i(13111),	-- Sandals of the Insurgent
-				i(13070),	-- Sapphiron's Scale Boots
-				i(5267),	-- Scarlet Kris
-				i(13015),	-- Serathil
-				i(13144),	-- Serenity Belt
-				i(13118),	-- Serpentine Sash
-				i(13146),	-- Shell Launcher Shotgun
-				i(7734),	-- Six Demon Bag
-				i(13116),	-- Spaulders of the Unseen
-				i(13000),	-- Staff of Hale Magefire
-				i(13072),	-- Stonegrip Gauntlets
-				i(6622),	-- Sword of Zeal
-				i(13060),	-- The Needler
-				i(13004),	-- Torch of Austen
-				i(13047),	-- Twig of the World Tree
-				i(11302),	-- Uther's Strength
-				i(13065),	-- Wand of Allistarj
-				i(13130),	-- Windrunner Legguards
-				i(13066),	-- Wyrmslayer Spaulders
 			})),
 		},
 	}),
