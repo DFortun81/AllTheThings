@@ -32,9 +32,6 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 			}),
 			n(ZONEDROPS, {
-				i(17683, {	-- Book: Gift of the Wild Rank 2
-				--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
-				}),
 				i(16244, {			-- Formula: Enchant Gloves - Greater Strength
 					["crs"] = {
 						9198,	-- Spirestone Mystic

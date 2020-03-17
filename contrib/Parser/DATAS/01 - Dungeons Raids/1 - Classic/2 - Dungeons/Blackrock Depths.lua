@@ -318,10 +318,6 @@ _.Instances = { tier(1, {	-- Classic
 						8920,	-- Weapon Technician
 					},
 				}),
-				i(17682),	-- Book: Gift of the Wild Rank 1
-				i(17683, {	-- Book: Gift of the Wild Rank 2
-				--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
-				}),
 				i(12549, {	-- Braincage
 					["crs"] = {
 						8892,	-- Anvilrage Footman

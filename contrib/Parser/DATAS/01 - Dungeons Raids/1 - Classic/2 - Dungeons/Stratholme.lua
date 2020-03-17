@@ -36,9 +36,6 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 					}),
 					n(ZONEDROPS, {
-						i(17683, {	-- Book: Gift of the Wild Rank 2
-						--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
-						}),
 						i(16249,  {  -- Formula: Enchant 2H Weapon - Major Intellect
 							["crs"] = {
 								10422,  -- Risen Sorcerer
@@ -299,9 +296,6 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 					}),
 					n(ZONEDROPS, {
-						i(17683, {	-- Book: Gift of the Wild Rank 2
-						--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
-						}),
 						i(16248, {	-- Formula: Enchant Weapon - Unholy
 							["crs"] = {
 								10398,	-- Thuzadin Shadowcaster

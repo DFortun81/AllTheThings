@@ -96,15 +96,6 @@ _.Instances = { tier(1, {	-- Classic
 						i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
 							["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.  It can be found in various places throughout all the wings of Dire Maul.\n\nDire Maul North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\nDire Maul East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\nDire Maul West: By the southern generator in Immol'thar's room.\n",
 						}),
-						i(17682),	-- Book: Gift of the Wild Rank 1
-						i(17683, {	-- Book: Gift of the Wild Rank 2
-						--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
-						}),
-						i(8384, {	-- Pattern: Comfortable Leather Hat
-							["crs"] = {
-								13197,	-- Fel Lash
-							},
-						}),
 						i(18289, {	-- Barbed Thorn Necklace
 							["crs"] = {
 								11461,	-- Warpwood Guardian
@@ -376,10 +367,6 @@ _.Instances = { tier(1, {	-- Classic
 						i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
 							["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.  It can be found in various places throughout all the wings of Dire Maul.\n\nDire Maul North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\nDire Maul East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\nDire Maul West: By the southern generator in Immol'thar's room.\n",
 						}),
-						i(17682),	-- Book: Gift of the Wild Rank 1
-						i(17683, {	-- Book: Gift of the Wild Rank 2
-						--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
-						}),
 					}),
 					cr(14326, e(411, {	-- Guard Mol'dar
 						i(18498),	-- Hedgecutter
@@ -623,10 +610,6 @@ _.Instances = { tier(1, {	-- Classic
 					n(ZONEDROPS, {
 						i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
 							["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.  It can be found in various places throughout all the wings of Dire Maul.\n\nDire Maul North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\nDire Maul East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\nDire Maul West: By the southern generator in Immol'thar's room.\n",
-						}),
-						i(17682),	-- Book: Gift of the Wild Rank 1
-						i(17683, {	-- Book: Gift of the Wild Rank 2
-						--	["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
 						}),
 						i(18339, {	-- Eidolon Cloak
 							["crs"] = {
