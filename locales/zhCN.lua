@@ -425,16 +425,6 @@ for key, value in pairs({
 		[-3247] = "Roggthread Set",
 		[-3248] = "Seawitch Set",
 		[-3249] = "Sunfrost Set",
--- Zandalar Tribe Set (Zul'Gurub) [Tier 1.5]
-		[-3250] = "忏悔者衣饰", -- Priest
-		[-3251] = "幻术师套装", -- Mage
-		[-3252] = "恶魔师护甲", -- Warlock
-		[-3253] = "占卜师套装", -- Druid
-		[-3254] = "狂妄者套装", -- Rogue
-		[-3255] = "捕猎者套装", -- Hunter
-		[-3256] = "预言者套装", -- Shaman
-		[-3257] = "思考者护甲", -- Paladin
-		[-3258] = "辩护者重甲", -- Warrior
 -- Cloth WQ Gear Continued
 		[-3259] = "Terrorweave Set",
 		[-3260] = "Vault-Minder's Set",
