@@ -1155,7 +1155,7 @@ _.Zones =
 					["coord"] = { 23.9, 72.3, 100 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 16851 },	-- Mirren Longbeard
-					["sourceQuest"] = 9420,	-- The Finest Down
+					["sourceQuest"] = 9563,	-- Gaining Mirren's Trust
 					["g"] = {
 						i(23587),	-- Mirren's Drinking Hat
 					},

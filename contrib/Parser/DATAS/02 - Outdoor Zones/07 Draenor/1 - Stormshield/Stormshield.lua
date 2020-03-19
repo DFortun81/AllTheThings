@@ -216,18 +216,42 @@ _.Zones =
 							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 54.8, 17.0, 622 },
 							["g"] = {
-								i(138633),	-- Arsenal: Wild Gladiator's Weapons
-								-- Ensemble: Wild Gladiator's Chain Armor (Hunter)
-								-- Ensemble: Wild Gladiator's Dragonhide Armor (Druid)
-								-- Ensemble: Wild Gladiator's Dreadplate Armor (DK)
-								-- Ensemble: Wild Gladiator's Felweave Armor (Warlock)
-								-- Ensemble: Wild Gladiator's Ironskin Armor (Monk)
-								-- Ensemble: Wild Gladiator's Leather Armor (Rogue)
-								-- Ensemble: Wild Gladiator's Plate Armor (Warrior)
-								-- Ensemble: Wild Gladiator's Ringmail Armor (Shaman)
-								-- Ensemble: Wild Gladiator's Satin Armor (Priest)
-								-- Ensemble: Wild Gladiator's Scaled Armor (Paladin)
-								-- Ensemble: Wild Gladiator's Silk Armor (Mage)
+								i(138633, {	-- Arsenal: Wild Gladiator's Weapons
+									["cost"] = { { "i", 137642, 80 }, },	-- 80x Mark of Honor
+								}),
+								--i(138521, {	-- Ensemble: Wild Gladiator's Chain Armor (Hunter)
+								--	["cost"] = { { "i", 137642, 12 }, },	-- 12x Mark of Honor
+								--}),
+								--i(138523, {	-- Ensemble: Wild Gladiator's Dragonhide Armor (Druid)
+								--	["cost"] = { { "i", 137642, 12 }, },	-- 12x Mark of Honor
+								--}),
+								--i(138515, {	-- Ensemble: Wild Gladiator's Dreadplate Armor (DK)
+								--	["cost"] = { { "i", 137642, 12 }, },	-- 12x Mark of Honor
+								--}),
+								--i(138533, {	-- Ensemble: Wild Gladiator's Felweave Armor (Warlock)
+								--	["cost"] = { { "i", 137642, 12 }, },	-- 12x Mark of Honor
+								--}),
+								--i(138525, {	-- Ensemble: Wild Gladiator's Ironskin Armor (Monk)
+								--	["cost"] = { { "i", 137642, 12 }, },	-- 12x Mark of Honor
+								--}),
+								--i(138527, {	-- Ensemble: Wild Gladiator's Leather Armor (Rogue)
+								--	["cost"] = { { "i", 137642, 12 }, },	-- 12x Mark of Honor
+								--}),
+								--i(138513, {	-- Ensemble: Wild Gladiator's Plate Armor (Warrior)
+								--	["cost"] = { { "i", 137642, 12 }, },	-- 12x Mark of Honor
+								--}),
+								--i(138519, {	-- Ensemble: Wild Gladiator's Ringmail Armor (Shaman)
+								--	["cost"] = { { "i", 137642, 12 }, },	-- 12x Mark of Honor
+								--}),
+								--i(138531, {	-- Ensemble: Wild Gladiator's Satin Armor (Priest)
+								--	["cost"] = { { "i", 137642, 12 }, },	-- 12x Mark of Honor
+								--}),
+								--i(138517, {	-- Ensemble: Wild Gladiator's Scaled Armor (Paladin)
+								--	["cost"] = { { "i", 137642, 12 }, },	-- 12x Mark of Honor
+								--}),
+								--i(138529, {	-- Ensemble: Wild Gladiator's Silk Armor (Mage)
+								--	["cost"] = { { "i", 137642, 12 }, },	-- 12x Mark of Honor
+								--}),
 								i(124675),	-- Wild Gladiator's Cleaver
 								i(124676),	-- Wild Gladiator's Shanker
 								i(124677),	-- Wild Gladiator's Ripper

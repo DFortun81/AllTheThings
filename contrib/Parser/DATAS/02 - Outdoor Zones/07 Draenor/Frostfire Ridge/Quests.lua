@@ -995,6 +995,7 @@ _.Zones =
 					},
 				}),
 				q(33918, {	-- WANTED: Grondo's Bounty
+					["coord"] = { 54.4, 42.4, 525 },
 					["races"] = HORDE_ONLY,
 					["description"] = "Granted automatically when you are near Grondo in The Cracking Plains.",
 					["g"] = {

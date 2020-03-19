@@ -20,7 +20,7 @@ _.Zones =
 					i(167662, {	 -- Solarsprocket Barbel
 						["questID"] = 55312,
 						["isDaily"] = true,
-						["description"] = "Can be caught near Danielle, though it's likely they can be caught anywhere along the coast of the island.",
+						["description"] = "Can be caught anywhere on the island.",
 						["groups"] = {
 							crit(9, {	-- Secret Fish of Mechagon
 								["achievementID"] = 13489,

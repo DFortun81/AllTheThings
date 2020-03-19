@@ -33,6 +33,7 @@ _.Zones =
 				n(86257, {	-- Basten (Protectors of the Grove)
 					["description"] = "Kill Basten LAST or you will not be able to loot him.",
 					["modelID"]	= 57964,
+					["questID"] = 37369,
 					["isDaily"] = true,
 					["coord"] = { 69.2, 44.6, 543 },
 					["crs"] = {

@@ -83,13 +83,15 @@ _.Zones =
 			q(56455, {	-- Frenzy Fang (A)
 				["itemID"] = 169633,
 				["crs"] = { 154920 },	-- Frenzied Knifefang
-				["coord"] = { 59.1, 26.6, 1355 },
+				["coord"] = { 61.40, 19.85, 1355 },	-- cave entrance
+				["description"] = "Inside the cave.",
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56467, {	-- Frenzy Fang (H)
 				["itemID"] = 169636,
 				["crs"] = { 154920 },	-- Frenzied Knifefang
-				["coord"] = { 59.1, 26.6, 1355 },
+				["coord"] = { 61.40, 19.85, 1355 },	-- cave entrance
+				["description"] = "Inside the cave.",
 				["races"] = HORDE_ONLY,
 			}),
 			q(56447, {	-- Half-Digested Deepcoral Pod (A)
