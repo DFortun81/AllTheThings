@@ -185,6 +185,14 @@ _.Zones =
 						i(113175),	-- Rangari Skinning Knife
 					},
 				}),
+				q(34352, {	-- Darktide Defender
+					["sourceQuests"] = { 
+						35861,	-- Garrison Campaign: Darktide Roost (A)
+						35876,	-- Garrison Campaign: Darktide Roost (H)
+					},
+					["coord"] = { 59.0, 82.2, 539 },
+					["provider"] = { "n", 83494 },	-- Darktide Pilferer
+				}),
 				q(34781, {	-- Defenstrations
 					["sourceQuests"] = { 34780 },	-- Invisible Ramparts
 					["coord"] = { 56.9, 34.6, 539 },
@@ -194,6 +202,20 @@ _.Zones =
 				}),
 				q(33267, {	-- [Deprecated}
 					["u"] = 1,
+				}),
+				q(34355, {	-- Dirty Rats
+					["sourceQuests"] = { 
+						34353,	-- Shredder Suppressor
+					},
+					["coord"] = { 59.2, 82.2, 539 },
+					["provider"] = { "n", 77982 },	-- Rexxar
+				}),
+				q(34397, {	-- Downsizing the Darktide
+					["sourceQuests"] = { 
+						34355,	-- Dirty Rats
+					},
+					["coord"] = { 58.1, 93.9, 539 },
+					["provider"] = { "n", 78258 },	-- Rexxar
 				}),
 				q(34786, {	-- Engorged Goren
 					["sourceQuests"] = { 34785 },	-- Hataaru, the Artificer
@@ -481,6 +503,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80378 },	-- Rangari Navra
 				}),
+				q(34365, {	-- Releasing Rylak
+					["sourceQuests"] = { 
+						34355,	-- Dirty Rats
+					},
+					["coord"] = { 58.1, 93.9, 539 },
+					["provider"] = { "n", 78258 },	-- Rexxar
+				}),
 				q(36409, {	-- Restoration
 					["coord"] = { 47.0, 38.6, 539 },
 					["races"] = ALLIANCE_ONLY,
@@ -507,6 +536,14 @@ _.Zones =
 					["g"] = {
 						follower(183),	-- Rulkan
 					},
+				}),
+				q(34450, {	-- Rylak Rescue
+					["sourceQuests"] = { 
+						34365,	-- Releasing Rylak
+						34397,	-- Downsizing the Darktide
+					},
+					["coord"] = { 58.1, 93.9, 539 },
+					["provider"] = { "n", 78258 },	-- Rexxar
 				}),
 				q(33113, {	-- Shadowmoonwell
 					["sourceQuests"] = {
@@ -552,6 +589,14 @@ _.Zones =
 						i(109558),	-- A Treatise on the Alchemy of Draenor
 						i(111812),	-- Alchemy Lab, lvl 1
 					},
+				}),
+				q(34353, {	-- Shredder Suppressor
+					["sourceQuests"] = { 
+						35861,	-- Garrison Campaign: Darktide Roost (A)
+						35876,	-- Garrison Campaign: Darktide Roost (H)
+					},
+					["coord"] = { 59.2, 82.2, 539 },
+					["provider"] = { "n", 77982 },	-- Rexxar
 				}),
 				q(33115, {	-- Shrouding Stones
 					["sourceQuests"] = { 33062 },	-- Catching his Eye

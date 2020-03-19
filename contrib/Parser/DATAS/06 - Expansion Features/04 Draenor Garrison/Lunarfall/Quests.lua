@@ -14,6 +14,10 @@ _.ExpansionFeatures =
 							q(35679, {	-- Garrison Campaign: The Fall of Shattrath
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(35861, {	-- Garrison Campaign: Darktide Roost (A)
+								["provider"] = { "n", 81492 },	-- Bodrick Gray
+								["races"] = ALLIANCE_ONLY,
+							}),
 							q(35837, {	-- Garrison Campaign: Deep Recon
 								["races"] = ALLIANCE_ONLY,
 							}),

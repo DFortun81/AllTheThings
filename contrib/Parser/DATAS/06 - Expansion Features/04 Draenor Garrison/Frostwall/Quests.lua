@@ -14,6 +14,10 @@ _.ExpansionFeatures =
 							q(34335, {	-- Garrison Campaign: Crows In The Field
 								["races"] = HORDE_ONLY,
 							}),
+							q(35876, {	-- Garrison Campaign: Darktide Roost (H)
+								["provider"] = { "n", 78487 },	-- Rokhan
+								["races"] = HORDE_ONLY,
+							}),
 							q(35680, {	-- Garrison Campaign: The Fall of Shattrath
 								["races"] = HORDE_ONLY,
 							}),
