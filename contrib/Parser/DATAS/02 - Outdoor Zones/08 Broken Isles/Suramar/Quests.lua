@@ -1901,6 +1901,7 @@ _.Zones =
 					},
 				}),
 				q(40762, {	-- Zealot's Dues
+					["u"] = 40,	-- Item doesn't appear to drop anymore, so marking quest as removed for now
 					["cr"] = 106275,	-- Commander Domitille
 					["provider"] = { "i", 136851 },	-- Commander Domitille's Helm
 					["coords"] = {
