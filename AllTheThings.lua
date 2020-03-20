@@ -3066,15 +3066,22 @@ fieldConverters = {
 			_cache(group, questGiverID);
 		end
 	end,
+	["altQuests"] = function(group, value)
+		_cache = rawget(fieldConverters, "questID");
+		for i,questID in ipairs(value) do
+			_cache(group, questID);
+		end
+	end,
 	["providers"] = function(group, value)
 		for k,v in pairs(value) do
-			if v[1] == "n" and v[2] > 0 then
-				_cache = rawget(fieldConverters, "creatureID");
-				_cache(group, v[2]);
-			elseif v[1] == "i" and v[2] > 0 then
-				CacheField(group, "itemID", v[2]);
-			elseif v[1] == "o" and v[2] > 0 then
-				CacheField(group, "objectID", v[2]);
+			if v[2] > 0 then
+				if v[1] == "n" then
+					rawget(fieldConverters, "creatureID")(group, v[2]);
+				elseif v[1] == "i" then
+					rawget(fieldConverters, "itemID")(group, v[2]);
+				elseif v[1] == "o" then
+					rawget(fieldConverters, "objectID")(group, v[2]);
+				end
 			end
 		end
 	end,
