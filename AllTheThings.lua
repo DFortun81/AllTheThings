@@ -2260,7 +2260,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						return not (a.npcID and a.npcID == -1) and b.npcID and b.npcID == -1;
 					end);
 					for i,j in ipairs(group) do
-						tinsert(subgroup, j);
+						if j.g and not (j.achievementID and j.parent.difficultyID) and j.npcID ~= 0 then
+							for k,l in ipairs(j.g) do
+								tinsert(subgroup, l);
+							end
+						else
+							tinsert(subgroup, j);
+						end
 					end
 					group = subgroup;
 				end
