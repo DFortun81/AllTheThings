@@ -2148,9 +2148,9 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				end
 			elseif paramA and paramB and (not group[paramA] or (group[paramA] and group[paramA] ~= paramB)) then
 				if group.collectible then
-					if group.collected or (group.trackable and group.saved) then
+					if group.collected then
 						if app.Settings:Get("Show:CollectedThings") then
-							right = L["COLLECTED_ICON"];
+							right = GetCollectionIcon(group.collected);
 						end
 					else
 						right = L["NOT_COLLECTED_ICON"];
@@ -2166,7 +2166,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 						end
 					end
 				elseif group.visible then
-					right = "---";
+					right = group.count and (group.count .. "x") or "---";
 				end
 			end
 			
@@ -2205,71 +2205,65 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		
 		-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
 		if paramA == "creatureID" or paramA == "encounterID" then
-			if IsInInstance() then
-				local difficultyID = select(3, GetInstanceInfo());
-				if difficultyID and difficultyID > 0 then
-					local subgroup = {};
-					for i,j in ipairs(group) do
-						if GetRelativeDifficulty(j, difficultyID) then
-							tinsert(subgroup, j);
+			if group and #group > 0 then
+				if IsInInstance() then
+					local difficultyID = select(3, GetInstanceInfo());
+					if difficultyID and difficultyID > 0 then
+						local subgroup = {};
+						for i,j in ipairs(group) do
+							if GetRelativeDifficulty(j, difficultyID) then
+								tinsert(subgroup, j);
+							end
 						end
+						group = subgroup;
 					end
-					group = subgroup;
-				end
-			elseif paramA == "encounterID" then
-				local difficultyID = EJ_GetDifficulty();
-				if difficultyID and difficultyID > 0 then
-					local subgroup = {};
-					for i,j in ipairs(group) do
-						if GetRelativeDifficulty(j, difficultyID) then
-							tinsert(subgroup, j);
+				elseif paramA == "encounterID" then
+					local difficultyID = EJ_GetDifficulty();
+					if difficultyID and difficultyID > 0 then
+						local subgroup = {};
+						for i,j in ipairs(group) do
+							if GetRelativeDifficulty(j, difficultyID) then
+								tinsert(subgroup, j);
+							end
 						end
-					end
-					group = subgroup;
-				end
-			end
-			
-			if not app.Settings:Get("DebugMode") then
-				local regroup = {};
-				if app.Settings:Get("AccountMode") then
-					for i,j in ipairs(group) do
-						if app.RecursiveUnobtainableFilter(j) then
-							tinsert(regroup, j);
-						end
-					end
-				else
-					for i,j in ipairs(group) do
-						if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
-							tinsert(regroup, j);
-						end
+						group = subgroup;
 					end
 				end
 				
-				group = regroup;
-			end
-			
-			if group and #group > 0 then
-				if app.Settings:GetTooltipSetting("Descriptions") and paramA ~= "encounterID" then
-					for i,j in ipairs(group) do
-						if j.description and j[paramA] and j[paramA] == paramB then
-							tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
-						end
-					end
-				end
-				local subgroup = {};
-				table.sort(group, function(a, b)
-					return not (a.npcID and a.npcID == -1) and b.npcID and b.npcID == -1;
-				end);
-				for i,j in ipairs(group) do
-					if j.g and not (j.achievementID and j.parent.difficultyID) and j.npcID ~= 0 then
-						for k,l in ipairs(j.g) do
-							tinsert(subgroup, l);
+				if not app.Settings:Get("DebugMode") then
+					local regroup = {};
+					if app.Settings:Get("AccountMode") then
+						for i,j in ipairs(group) do
+							if app.RecursiveUnobtainableFilter(j) then
+								tinsert(regroup, j);
+							end
 						end
 					else
+						for i,j in ipairs(group) do
+							if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
+								tinsert(regroup, j);
+							end
+						end
+					end
+					group = regroup;
+				end
+				if #group > 0 then
+					if app.Settings:GetTooltipSetting("Descriptions") and paramA ~= "encounterID" then
+						for i,j in ipairs(group) do
+							if j.description and j[paramA] and j[paramA] == paramB then
+								tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
+							end
+						end
+					end
+					local subgroup = {};
+					table.sort(group, function(a, b)
+						return not (a.npcID and a.npcID == -1) and b.npcID and b.npcID == -1;
+					end);
+					for i,j in ipairs(group) do
 						tinsert(subgroup, j);
 					end
+					group = subgroup;
 				end
-				group = subgroup;
 			end
 		elseif paramA == "achievementID" then
 			-- Don't do anything for things linked to maps.
