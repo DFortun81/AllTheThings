@@ -192,9 +192,13 @@ _.Zones =
 						["provider"] = { "n", 124975 },	-- Image of Grand Artificer Romuul
 						["coord"] = { 60.8, 47.3, 830 },
 					}),
-					q(47641, {	-- Sign of Resistance
+					q(47641, {	-- Signs of Resistance
 						["sourceQuests"] = { 47627 },	-- Vengeance
 						["provider"] = { "n", 119543 },	-- Prophet Velen
+						["providers"] = {
+							{ "n", 119543 },	-- Prophet Velen
+							{ "n", 123149 },	-- Prophet Velen (phased version of him available right after you finish previous quest)
+						},
 						["coord"] = { 54.2, 75.4, 830 },
 					}),
 					q(47541, {	-- The Best Prevention
@@ -208,7 +212,7 @@ _.Zones =
 						["coord"] = { 36.2, 56.9, 830 },
 					}),
 					q(46732, {	-- The Prophet's Gambit
-						["sourceQuests"] = { 47641 },	-- Sign of Resistance
+						["sourceQuests"] = { 47641 },	-- Signs of Resistance
 						["provider"] = { "n", 121345 },	-- Prophet Velen
 						["coord"] = { 59.9, 69.3, 830 },
 					}),

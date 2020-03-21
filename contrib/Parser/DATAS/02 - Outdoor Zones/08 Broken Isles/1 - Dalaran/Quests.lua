@@ -1374,7 +1374,16 @@ _.Zones =
 					["coord"] = { 28.8, 48.4, 627 },
 					["lvl"] = 110,
 				}),
+				q(48507, {	-- The Hand of Fate (H)
+					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
+					["provider"] = { "n", 90417 },	-- Archmage Khadgar
+					["coord"] = { 28.8, 48.4, 627 },
+					["lvl"] = 110,
+				}),
 				q(47221, {	-- The Hand of Fate (A)
+					["u"] = 40,	-- Legacy Quests — old version that used to be automatically provided
+				}),
+				q(47835, {	-- The Hand of Fate (H)
 					["u"] = 40,	-- Legacy Quests — old version that used to be automatically provided
 				}),
 				q(40731, {	-- The Heart of the Dreadscar
@@ -1730,10 +1739,6 @@ _.Zones =
 					["classes"] = { SHAMAN },
 					["provider"] = { "n", 99531 },	-- Aggra
 				}),
---[[			Need to be added
-				q(47835)),	-- The Hand of Fate (H)
-				q(48507)),	-- The Hand of Fate (H)
-]]--
 --[[
 				The following quests have been removed from the game:
 				q(49472)	-- A Titanic Effort
