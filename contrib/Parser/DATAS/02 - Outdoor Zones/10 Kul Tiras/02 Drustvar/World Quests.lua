@@ -493,6 +493,9 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
+						["g"] = {
+							ach(13435),	-- Doomsoul Surprise
+						},
 					}),
 					q(51972, {	-- Lost Goat
 						["lvl"] = 120,
