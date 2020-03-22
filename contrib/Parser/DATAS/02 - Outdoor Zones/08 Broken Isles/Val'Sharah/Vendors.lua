@@ -20,7 +20,9 @@ _.Zones =
 						i(23712, {	-- Ash'ana (PET!)
 							["cost"] = 5000000,	-- 500g
 						}),
-						i(140578),	-- Dreamweaver Initiate's Tabard
+						i(140578, {	-- Dreamweaver Initiate's Tabard
+							["cost"] = 3000000,	-- 300g
+						}),
 						i(128608, {	-- Formula: Enchant Cloak - Binding of Agility (Rank 3)
 							["cost"] = 30000000,	-- 3,000g
 						}),
@@ -36,7 +38,9 @@ _.Zones =
 						i(130232, {	-- Moonfeather Statue (TOY!)
 							["cost"] = 5000000,	-- 500g
 						}),
-						i(130158),	-- Path of Elothir (TOY!)
+						i(130158, {	-- Path of Elothir (TOY!)
+							["cost"] = 1000000,	-- 100g
+						}),
 						i(139596, {	-- Pauldrons of Entwined Roots
 							["cost"] = 50000000,	-- 5,000g
 						}),
@@ -61,8 +65,12 @@ _.Zones =
 						i(140667, {	-- Tabard of the Dreamweavers
 							["cost"] = 6000000,	-- 600g
 						}),
-						i(130170),	-- Tear of the Green Aspect (TOY!)
-						i(140745),	-- Treasure Map: Val'sharah
+						i(130170, {	-- Tear of the Green Aspect (TOY!)
+							["cost"] = 3000000,	-- 300g
+						}),
+						i(140745, {	-- Treasure Map: Val'sharah
+							["cost"] = 200000,	-- 20g
+						}),
 					},
 				}),
 			}),
