@@ -663,7 +663,6 @@ _.Zones =
 									
 								i(169223, {	-- Ashjra'kamas, Shroud of Resolve
 									["bonusID"] = 6277,	-- (Rank 6 appearence)
-								--	["modID"] = 11,	-- tested modIDs 7,6,11,5,62,4,3,23,22,14,8,151,1,
 								}),
 								i(171354),	-- Horrific Core
 							},
