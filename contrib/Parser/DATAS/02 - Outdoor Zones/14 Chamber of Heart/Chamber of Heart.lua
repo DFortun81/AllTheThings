@@ -553,7 +553,9 @@ _.Zones =
 							["sourceQuest"] = 57222,	-- Investigating the Halls
 							["cost"] = { { "i", 171219, 1 } },	-- Corrupt Black Dragonscales
 							["g"] = {
-								i(169223),	-- Ashjra'kamas, Shroud of Resolve
+								i(169223, {	-- Ashjra'kamas, Shroud of Resolve
+									["bonusID"] = 6272,	-- Rank 1 Appearence
+								}),
 							},
 						}),
 						q(57362, {	-- Deeper Into the Darkness
