@@ -106,15 +106,20 @@ _.Zones =
 						}),
 						o(213956, {	-- Fragment of Dread
 							["questID"] = 31423,
-							["coord"] = { 64.2, 20.3, 389 },
-							["description"] = "Inside |cFFFFD700The Ghastly Confines|r near |cFFFFD700Huggalon the Heart Watcher|r.",
+							["coords"] = {
+								{ 64.2, 20.3, 389 },	-- Niuzao Catacombs
+								{ 37.7, 87.0, 389 },	-- Niuzao Catacombs
+								{ 47.8, 89.0, 389 },	-- Niuzao Catacombs
+								{ 56.5, 64.7, 389 },	-- Niuzao Catacombs
+							},
+							["description"] = "Entrance is at |cFFFFD70032.6 61.8|r. There are 4 possible spawn points.",
 							["g"] = {
 								i(86516),	-- Fragment of Dread
 							},
 						}),
 						o(213959, {	-- Hardened Sap of Kri'vess
 							["questID"] = 31424,
-							["description"] = "Located all around Kri'vess",
+							["description"] = "Located all around Kri'vess.",
 							["g"] = {
 								i(86517),	-- Hardened Sap of Kri'vess
 							},

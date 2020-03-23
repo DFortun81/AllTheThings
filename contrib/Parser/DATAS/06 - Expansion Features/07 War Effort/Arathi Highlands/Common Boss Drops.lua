@@ -59,33 +59,33 @@ _.ExpansionFeatures =
 					{	-- 7th Legionnaire's Silk Cloak
 						["itemID"] = 163246,	-- 7th Legionnaire's Silk Cloak
 						["classes"] = {
-							5,	-- Priest
-							8,	-- Mage
-							9,	-- Warlock
+							PRIEST,
+							MAGE,
+							WARLOCK,
 						},
 					},
 					{	-- 7th Legionnaire's Long Cloak
 						["itemID"] = 163347,	-- 7th Legionnaire's Long Cloak
 						["classes"] = {
-							11,	-- Druid
-							4,	-- Rogue
-							10,	-- Monk
-							12,	-- Demon Hunter
+							DRUID,
+							ROGUE,
+							MONK,
+							DEMONHUNTER,
 						},
 					},
 					{	-- 7th Legionnaire's Chain Drape
 						["itemID"] = 163351,	-- 7th Legionnaire's Chain Drape
 						["classes"] = {
-							3,	-- Hunter
-							7,	-- Shaman
+							HUNTER,
+							SHAMAN,
 						},
 					},
 					{	-- 7th Legionnaire's Bloody Drape
 						["itemID"] = 163355,	-- 7th Legionnaire's Bloody Drape
 						["classes"] = {
-							2,	-- Paladin
-							1,	-- Warrior
-							6,	-- Death Knight
+							PALADIN,
+							WARRIOR,
+							DEATHKNIGHT,
 						},
 					},
 					i(163339),	-- 7th Legionnaire's Hood
@@ -140,33 +140,33 @@ _.ExpansionFeatures =
 					{	-- Honorbound Artificer's Cloak
 						["itemID"] = 163357,	-- Honorbound Artificer's Cloak
 						["classes"] = {
-							5,	-- Priest
-							8,	-- Mage
-							9,	-- Warlock
+							PRIEST,
+							MAGE,
+							WARLOCK,
 						},
 					},
 					{	-- Honorbound Outrider's Drape
 						["itemID"] = 163360,	-- Honorbound Outrider's Drape
 						["classes"] = {
-							11,	-- Druid
-							4,	-- Rogue
-							10,	-- Monk
-							12,	-- Demon Hunter
+							DRUID,
+							ROGUE,
+							MONK,
+							DEMONHUNTER,
 						},
 					},
 					{	-- Honorbound Vanguard's Cloak
 						["itemID"] = 163366,	-- Honorbound Vanguard's Cloak
 						["classes"] = {
-							3,	-- Hunter
-							7,	-- Shaman
+							HUNTER,
+							SHAMAN,
 						},
 					},
 					{	-- Honorbound Centurion's Long Cloak
 						["itemID"] = 163368,	-- Honorbound Centurion's Long Cloak
 						["classes"] = {
-							2,	-- Paladin
-							1,	-- Warrior
-							6,	-- Death Knight
+							PALADIN,
+							WARRIOR,
+							DEATHKNIGHT,
 						},
 					},
 					i(163426),	-- Honorbound Artificer's Guise

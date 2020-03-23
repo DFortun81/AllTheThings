@@ -37,6 +37,7 @@ _.Zones =
 					["collectible"] = false,
 					["g"] = {
 						o(213768, {	-- Hozen Warrior Spear
+							["description"] = "Cave entrance is at |cFFFFD70052.8 71.3|r, go down and to the section with water, it is in a rock. Might take some time to spawn.",
 							["questID"] = 31413,
 							["coord"] = { 51.50, 74.0, 379 },
 							["g"] = {
@@ -87,6 +88,7 @@ _.Zones =
 					["collectible"] = false,
 					["g"] = {
 						o(214438, {	-- Ancient Mogu Tablet
+							["description"] = "Entrance is at |cFFFFD70063.94 49.84|r.",
 							["questID"] = 31420,
 							["coord"] = { 64.2, 45.2, 379 },
 							["g"] = {
@@ -113,8 +115,9 @@ _.Zones =
 							["coord"] = { 72.0, 33.9, 379 },
 						}),
 						o(213770, {	-- Stolen Sprite Treasure
+							["description"] = "Entrance is at |cFFFFD70059.5 52.9|r.",
 							["questID"] = 31415,	-- Stolen Sprite Treasure
-							["coord"] = { 41.6, 44.1, 379 },
+							["coord"] = { 41.6, 44.1, 380 },	-- Howlingwind Cavern
 						}),
 						o(213782, {	-- Terracotta Head
 							["questID"] = 31422,

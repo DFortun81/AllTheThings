@@ -11,7 +11,7 @@ _.Zones =
 						["model"] = 219405,
 						["g"] = {
 							i(22739, {	-- Tome of Polymorph: Turtle
-								["spellID"] = 28271,	-- Polymorph(Turtle)
+								["spellID"] = 28271,	-- Polymorph (Turtle)
 								["classes"] = { MAGE },
 							}),
 						},
