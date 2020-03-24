@@ -423,7 +423,7 @@ _.Zones =
 				q(8284,  {	-- The Twilight Mystery
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["coord"] = { 53.6, 35.3, 81 },
-					["sourceQuest"] = 8321,	-- Vyral the Vile -- this is wrong. Possibly unlocks after "Dearest Natalia" ?
+					["sourceQuest"] = 8321,	-- Vyral the Vile
 				}),
 				q(8323,  {	-- True Believers
 					["provider"] = { "n", 15194 },	-- Hermit Ortell
