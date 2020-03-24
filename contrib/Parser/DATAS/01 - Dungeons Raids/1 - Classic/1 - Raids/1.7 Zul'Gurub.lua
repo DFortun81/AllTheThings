@@ -1148,12 +1148,22 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(ZONEDROPS, {
 				i(19727),	-- Blood Scythe
-				i(20263),	-- Gurubashi Helm
+				i(20263, {	-- Gurubashi Helm
+					["u"] = 7,
+				}),
 				i(19908),	-- Sceptre of Smiting
-				i(20261),	-- Shadow Panther Hide Belt
-				i(20259),	-- Shadow Panther Hide Gloves
-				i(20258),	-- Zulian Ceremonial Staff
-				i(19921),	-- Zulian Hacker
+				i(20261, {	-- Shadow Panther Hide Belt
+					["u"] = 7,
+				}),
+				i(20259, {	-- Shadow Panther Hide Gloves
+					["u"] = 7,
+				}),
+				i(20258, {	-- Zulian Ceremonial Staff
+					["u"] = 7,
+				}),
+				i(19921, {	-- Zulian Hacker
+					["u"] = 7,
+				}),
 				i(19708),	-- Blue Hakkari Bijou
 				i(19713),	-- Bronze Hakkari Bijou
 				i(19715),	-- Gold Hakkari Bijou
@@ -1163,17 +1173,36 @@ _.Instances = { tier(1, {	-- Classic
 				i(19707),	-- Red Hakkari Bijou
 				i(19714),	-- Silver Hakkari Bijou
 				i(19709),	-- Yellow Hakkari Bijou
-				i(19706),	-- Bloodscalp Coin
-				i(19701),	-- Gurubashi Coin
-				i(19700),	-- Hakkari Coin
-				i(19699),	-- Razzashi Coin
-				i(19704),	-- Sandfury Coin
-				i(19705),	-- Skullsplitter Coin
-				i(19702),	-- Vilebranch Coin
-				i(19703),	-- Witherbark Coin
-				i(19698),	-- Zulian Coin
+				i(19706, {	-- Bloodscalp Coin
+					["u"] = 7,
+				}),
+				i(19701, {	-- Gurubashi Coin
+					["u"] = 7,
+				}),
+				i(19700, {	-- Hakkari Coin
+					["u"] = 7,
+				}),
+				i(19699, {	-- Razzashi Coin
+					["u"] = 7,
+				}),
+				i(19704, {	-- Sandfury Coin
+					["u"] = 7,
+				}),
+				i(19705, {	-- Skullsplitter Coin
+					["u"] = 7,
+				}),
+				i(19702, {	-- Vilebranch Coin
+					["u"] = 7,
+				}),
+				i(19703, {	-- Witherbark Coin
+					["u"] = 7,
+				}),
+				i(19698, {	-- Zulian Coin
+					["u"] = 7,
+				}),
 				{
-					["itemID"] = 19821,	-- Punctured Voodoo Doll [Druid]
+					["itemID"] = 19821,	-- Punctured Voodoo Doll [Druid]\
+					["u"] = 7,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1186,6 +1215,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19814,	-- Punctured Voodoo Doll [Rogue]
+					["u"] = 7,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1198,6 +1228,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19816,	-- Punctured Voodoo Doll [Hunter]
+					["u"] = 7,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1210,6 +1241,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19819,	-- Punctured Voodoo Doll [Warlock]
+					["u"] = 7,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1222,6 +1254,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19813,	-- Punctured Voodoo Doll [Warrior]
+					["u"] = 7,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1234,6 +1267,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19818,	-- Punctured Voodoo Doll [Mage]
+					["u"] = 7,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1246,6 +1280,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19820,	-- Punctured Voodoo Doll [Priest]
+					["u"] = 7,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1258,6 +1293,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19815,	-- Punctured Voodoo Doll [Paladin]
+					["u"] = 7,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1270,6 +1306,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19817,	-- Punctured Voodoo Doll [Shaman]
+					["u"] = 7,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1286,14 +1323,19 @@ _.Instances = { tier(1, {	-- Classic
 					{ "i", 19727, 1 },	-- Blood Scythe
 				},
 				["groups"] = {
-					i(19726),	-- Bloodvine
+					i(19726, {	-- Bloodvine
+						["u"] = 7,
+					}),
 				},
 			}),
 			prof(MINING, {
-				i(19774),	-- Souldarite
+				i(19774, {	-- Souldarite
+					["u"] = 7,
+				}),
 			}),
 			prof(SKINNING, {
 				i(19768, {	-- Primal Tiger Leather
+					["u"] = 7,
 					["crs"] = {
 						11361,	-- Zulian Tiger
 						15067,	-- Zulian Stalker
@@ -1301,6 +1343,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(19767, {	-- Primal Bat Leather
+					["u"] = 7,
 					["cr"] = 11368,	-- Bloodseeker Bat
 				}),
 			}),
@@ -1420,11 +1463,11 @@ _.Instances = { tier(1, {	-- Classic
 					i(19946),	-- Tigule's Harpoon
 					i(19945),	-- Foror's Eyepatch
 					i(19947),	-- Nat Pagle's Broken Reel
-					{
+					--[[{	-- Commented out so the un tag dosnt apply to the obtainable retail drop
 						["itemID"] = 22739,	-- Tome of Polymorph: Turtle
 						["recipeID"] = 28271,	-- Polymorph (Turtle)
 						["classes"] = { MAGE },
-					},
+					},]]
 				},
 			}),
 			n(14515, {	-- High Priestess Arlokk
