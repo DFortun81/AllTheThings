@@ -1201,7 +1201,7 @@ _.Instances = { tier(1, {	-- Classic
 					["u"] = 7,
 				}),
 				{
-					["itemID"] = 19821,	-- Punctured Voodoo Doll [Druid]\
+					["itemID"] = 19821,	-- Punctured Voodoo Doll [Druid]
 					["u"] = 7,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
@@ -1463,7 +1463,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(19946),	-- Tigule's Harpoon
 					i(19945),	-- Foror's Eyepatch
 					i(19947),	-- Nat Pagle's Broken Reel
-					--[[{	-- Commented out so the un tag dosnt apply to the obtainable retail drop
+					--[[{	-- Commented out so the unobtainable tag (12) doesn't apply to the obtainable retail drop
 						["itemID"] = 22739,	-- Tome of Polymorph: Turtle
 						["recipeID"] = 28271,	-- Polymorph (Turtle)
 						["classes"] = { MAGE },

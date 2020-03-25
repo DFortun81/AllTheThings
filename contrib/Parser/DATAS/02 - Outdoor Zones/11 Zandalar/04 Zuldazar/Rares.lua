@@ -49,7 +49,7 @@ _.Zones =
 				}),
 				n(133190, {	-- Daggerjaw
 					["questID"] = 50269,
-					["coord"] = { 75.62, 36.25, 862 },
+					["coord"] = { 74.2, 39.6, 862 },
 					["g"] = {
 						i(160952, {	--  Daggerjaw's Incisor
 							["bonusID"] = 4776,

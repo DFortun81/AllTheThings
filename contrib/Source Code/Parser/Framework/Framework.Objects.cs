@@ -963,7 +963,6 @@ namespace ATT
                 if (data.TryGetValue("creatureID", out g)) ProcessNPCData(Convert.ToInt32(g), data);
                 if (data.TryGetValue("npcID", out g)) ProcessNPCData(Convert.ToInt32(g), data);
                 if (data.TryGetValue("itemID", out g)) ProcessItemData(Convert.ToInt32(g), data);
-
             }
 
             private static void ProcessItemData(int itemID, Dictionary<string, object> data)

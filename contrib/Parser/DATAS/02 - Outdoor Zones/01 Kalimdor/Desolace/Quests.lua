@@ -650,6 +650,7 @@ _.Zones =
 				}),
 				q(14384, {	-- Rerouted!
 					["provider"] = { "n", 36410 },	-- Officer Jankie
+					["coord"] = { 54.25, 9.29, 66 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 28531,	-- Hero's Call: Desolace!
 				}),
@@ -869,12 +870,23 @@ _.Zones =
 					["provider"] = { "o", 35251 },	-- Karnitol's Chest
 					["sourceQuest"] = 1454,	-- The Karnitol Shipwreck
 				}),
-				q(14410, {	-- The Wilds of Feralas
-					["hordeQuestID"] = 26589,	-- The Wilds of Feralas
+				q(14410, {	-- The Wilds of Feralas (A)
 					["provider"] = { "n", 36487 },	-- Khan Shodo
 					["coord"] = { 73.3, 73.0, 66 },
 					["isBreadcrumb"] = true,
-					["sourceQuest"] = 14394,	-- Death to Agogridon
+					["sourceQuests"] = {
+						14381,	-- Cleansing Our Crevasse (A)
+						14394,	-- Death to Agogridon
+					},
+				}),
+				q(26589, {	-- The Wilds of Feralas (H)
+					["provider"] = { "n", 36487 },	-- Khan Shodo
+					["coord"] = { 73.3, 73.0, 66 },
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						14346,	-- Cleansing Our Crevasse (H)
+						14394,	-- Death to Agogridon
+					},
 				}),
 				q(14328, {	-- Three Princes
 					["provider"] = { "n", 36056 },	-- Khan Leh'Prah
