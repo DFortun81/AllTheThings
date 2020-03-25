@@ -114,12 +114,12 @@ _.ExpansionFeatures =
 							}),
 							o(9999892,	{	-- Main Objective + 2 bonus
 								["description"] = "Rewards ilvl 430 loot.",
-								--["questID"] = ,
+								["questID"] = 57845,
 								["isWeekly"] = true,
 							}),
 							o(9999893,	{	-- Full Clear
 								["description"] = "Rewards ilvl 445 loot.",
-								--["questID"] = ,
+								["questID"] = 57842,
 								["isWeekly"] = true,
 							}),
 							o(9999894,	{	-- Full Clear + 1 Mask

@@ -5,6 +5,7 @@
 _.ExpansionFeatures =
 {
 	m(1530, {	-- Vale of Eternal Blossoms
+		["icon"] = "Interface\\Icons\\INV_FACTION_83_RAJANI",
 		["lvl"] = 120,
 		["maps"] = {
 			1544,	-- Mogu'Shan Palace (The Engine of Nalak'sha scenario)

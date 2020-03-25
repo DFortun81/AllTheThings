@@ -5,6 +5,7 @@
 _.ExpansionFeatures =
 {
 	m(1527, {	-- Uldum (under assault)
+		["icon"] = "Interface\\Icons\\INV_FACTION_83_ULDUMACCORD",
 		["lvl"] = 120,
 		["maps"] = {
 			249,	-- Uldum (pre-120, funky map changes forces us to put the old map here too)
