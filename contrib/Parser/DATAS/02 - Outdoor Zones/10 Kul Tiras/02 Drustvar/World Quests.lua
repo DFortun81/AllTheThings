@@ -148,11 +148,6 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(52406, {	-- Work Order: Rubellite
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(50986, {	-- Work Order: Sea Stalk
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -810,6 +805,12 @@ _.Zones =
 						["g"] = {
 							i(162260),	-- Recipe: Potion of Concealment (Rank 3)
 						},
+					}),
+					q(52406, {	-- Work Order: Rubellite
+						["lvl"] = 120,
+						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+						["requireSkill"] = JEWELCRAFTING,
 					}),
 					q(50994, {	-- Work Order: Tempest Hide
 						["lvl"] = 120,
