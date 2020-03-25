@@ -861,6 +861,10 @@ _.Zones =
 									i(164400),	-- Dragonrider's Legguards
 									i(164398),	-- Dragonrider's Boots
 								}),
+								n(-319, {	-- Weapons
+									i(164358),	-- Plundered Sand-Dweller's Scimitar
+									i(164360),	-- Plundered Sandstone Gavel
+								}),
 							},
 						}),
 					},
