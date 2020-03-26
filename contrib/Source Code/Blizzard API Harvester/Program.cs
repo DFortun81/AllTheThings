@@ -107,6 +107,47 @@ namespace Item_Harvester
             Console.ReadLine();
         }
 
+        static bool TryParseQuality(string quality, out int qualityID)
+        {
+            switch (quality)
+            {
+                case "POOR":
+                    qualityID = 0;
+                    return true;
+                case "COMMON":
+                    qualityID = 1;
+                    return true;
+                case "UNCOMMON":
+                    qualityID = 2;
+                    return true;
+                case "RARE":
+                    qualityID = 3;
+                    return true;
+                case "EPIC":
+                    qualityID = 4;
+                    return true;
+                case "LEGENDARY":
+                    qualityID = 5;
+                    return true;
+                case "ARTIFACT":
+                    qualityID = 6;
+                    return true;
+                case "HEIRLOOM":
+                    qualityID = 7;
+                    return true;
+                case "WOWTOKEN":
+                    qualityID = 8;
+                    return true;
+                default:
+                    Console.Write("Unhandled Quality Type ");
+                    Console.Write(quality);
+                    Console.WriteLine();
+                    Console.ReadLine();
+                    qualityID = 0;
+                    return false;
+            }
+        }
+
         static void Parse()
         {
             Console.WriteLine("Parsing all of the raw data...");
@@ -171,10 +212,21 @@ namespace Item_Harvester
                 {
                     var dict = new Dictionary<string, object>();
                     data.Add(dict);
-                    if (subData.ContainsKey("name")) dict["name"] = subData["name"];
-                    if (subData.ContainsKey("id")) dict["itemID"] = subData["id"];
+                    if (subData.TryGetValue("name", out object o)) dict["name"] = o;
+                    if (subData.TryGetValue("id", out o)) dict["itemID"] = o;
+
+                    // New Format 2020-03-26
+                    if (subData.TryGetValue("quality", out o) && o is Dictionary<string, object> d)
+                    {
+                        if (d.TryGetValue("type", out o) && TryParseQuality(o.ToString(), out int qualityID))
+                        {
+                            dict["quality"] = qualityID;
+                        }
+                    }
+
+                    // Old pre-BFA format
                     if (subData.ContainsKey("equippable")) dict["equippable"] = subData["equippable"];
-                    if (subData.ContainsKey("quality")) dict["quality"] = subData["quality"];
+                    //if (subData.ContainsKey("quality")) dict["quality"] = subData["quality"];
                     if (subData.TryGetValue("itemBind", out object r) && Convert.ToInt32(r) != 0) dict["bind"] = r;
                     if (subData.ContainsKey("itemClass")) dict["class"] = subData["itemClass"];
                     if (subData.ContainsKey("itemSubClass")) dict["subclass"] = subData["itemSubClass"];
