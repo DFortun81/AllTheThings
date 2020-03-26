@@ -107,6 +107,32 @@ namespace Item_Harvester
             Console.ReadLine();
         }
 
+        static bool TryParseBinding(string binding, out int bindingID)
+        {
+            switch (binding)
+            {
+                // We don't care about these types:
+                case "QUEST":
+                case "UNBOUND":
+                case "ON_EQUIP":
+                case "ON_USE":
+                case "TO_ACCOUNT":
+                case "TO_BNETACCOUNT":
+                    bindingID = 0;
+                    return false;
+                case "ON_ACQUIRE":  // BOP
+                    bindingID = 1;
+                    return true;
+                default:
+                    Console.Write("Unhandled Binding Type ");
+                    Console.Write(binding);
+                    Console.WriteLine();
+                    Console.ReadLine();
+                    bindingID = 0;
+                    return false;
+            }
+        }
+
         static bool TryParseQuality(string quality, out int qualityID)
         {
             switch (quality)
@@ -152,22 +178,6 @@ namespace Item_Harvester
         {
             Console.WriteLine("Parsing all of the raw data...");
             var rawData = new Dictionary<int, object>();
-            if (File.Exists("RAW_itemDB.json"))
-            {
-                //rawData = JsonConvert.DeserializeObject<Dictionary<int, object>>(File.ReadAllText("RAW_itemDB.json"));
-                if (MiniJSON.Json.Deserialize(File.ReadAllText("RAW_itemDB.json")) is Dictionary<string, object> rawDataFormat)
-                {
-                    foreach(var pair in rawDataFormat)
-                    {
-                        rawData[Convert.ToInt32(pair.Key)] = pair.Value;
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("WRONG!");
-                    Console.ReadLine();
-                }
-            }
             var rawDataDirectory = Directory.CreateDirectory("RAW/items");
             foreach (var fileInfo in rawDataDirectory.EnumerateFiles("*.raw"))
             {
@@ -181,7 +191,7 @@ namespace Item_Harvester
                 }
             }
             Console.WriteLine("Done parsing the raw data.");
-            File.WriteAllText("RAW_itemDB.json", MiniJSON.Json.Serialize(rawData));
+            //File.WriteAllText("RAW_itemDB.json", MiniJSON.Json.Serialize(rawData));
             //File.WriteAllText("RAW_itemDB.json", JsonConvert.SerializeObject(rawData, Formatting.None));
 
             // write JSON directly to a file
@@ -200,7 +210,7 @@ namespace Item_Harvester
                 }
             }
             */
-            Console.WriteLine("Done exporting the raw data.");
+            //Console.WriteLine("Done exporting the raw data.");
 
             // Convert the data into a more meaningful format structure.
             var data = new List<object>();
@@ -216,21 +226,38 @@ namespace Item_Harvester
                     if (subData.TryGetValue("id", out o)) dict["itemID"] = o;
 
                     // New Format 2020-03-26
-                    if (subData.TryGetValue("quality", out o) && o is Dictionary<string, object> d)
+                    if (subData.TryGetValue("is_equippable", out o) && o is bool b && b)
                     {
-                        if (d.TryGetValue("type", out o) && TryParseQuality(o.ToString(), out int qualityID))
+                        dict["equippable"] = 1;
+                    }
+                    if (subData.TryGetValue("quality", out o))
+                    {
+                        if (o is Dictionary<string, object> d 
+                            && d.TryGetValue("type", out o) && TryParseQuality(o.ToString(), out int qualityID))
                         {
                             dict["quality"] = qualityID;
                         }
                     }
+                    if (subData.TryGetValue("preview_item", out o) && o is Dictionary<string, object> preview_item)
+                    {
+                        if (preview_item.TryGetValue("binding", out o))
+                        {
+                            if (o is Dictionary<string, object> d
+                                && d.TryGetValue("type", out o) && TryParseBinding(o.ToString(), out int bindingID))
+                            {
+                                dict["bind"] = bindingID;
+                            }
+                        }
+                    }
 
                     // Old pre-BFA format
-                    if (subData.ContainsKey("equippable")) dict["equippable"] = subData["equippable"];
+                    //if (subData.ContainsKey("equippable")) dict["equippable"] = subData["equippable"];
                     //if (subData.ContainsKey("quality")) dict["quality"] = subData["quality"];
-                    if (subData.TryGetValue("itemBind", out object r) && Convert.ToInt32(r) != 0) dict["bind"] = r;
+                    //if (subData.TryGetValue("itemBind", out object r) && Convert.ToInt32(r) != 0) dict["bind"] = r;
+                    /*
                     if (subData.ContainsKey("itemClass")) dict["class"] = subData["itemClass"];
                     if (subData.ContainsKey("itemSubClass")) dict["subclass"] = subData["itemSubClass"];
-                    if (subData.TryGetValue("itemLevel", out r) && Convert.ToInt32(r) > 1) dict["iLvl"] = r;
+                    if (subData.TryGetValue("itemLevel", out object r) && Convert.ToInt32(r) > 1) dict["iLvl"] = r;
                     if (subData.ContainsKey("inventoryType")) dict["inventoryType"] = subData["inventoryType"];
                     if (subData.TryGetValue("requiredLevel", out r) && Convert.ToInt32(r) > 1) dict["Lvl"] = r;
                     if (subData.ContainsKey("allowableClasses")) dict["classes"] = subData["allowableClasses"];
@@ -368,6 +395,7 @@ namespace Item_Harvester
                             }
                         }
                     }
+                    */
                     /*
                     if (subData.ContainsKey("itemSource"))
                     {
