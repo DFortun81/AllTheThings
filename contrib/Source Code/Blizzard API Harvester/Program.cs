@@ -327,16 +327,6 @@ namespace ATT
                             dict["quality"] = qualityID;
                         }
                     }
-                    if (subData.TryGetValue("preview_item", out Dictionary<string, object> preview_item))
-                    {
-                        if (preview_item.TryGetValue("binding", out d))
-                        {
-                            if (d.TryGetValue("type", out o) && TryParseBinding(o.ToString(), out int bindingID))
-                            {
-                                dict["bind"] = bindingID;
-                            }
-                        }
-                    }
                     if (subData.TryGetValue("item_class", out d))
                     {
                         if (d.TryGetValue("id", out int id)) dict["class"] = id;
@@ -352,39 +342,101 @@ namespace ATT
                             dict["inventoryType"] = inventoryTypeID;
                         }
                     }
+                    if (subData.TryGetValue("preview_item", out Dictionary<string, object> preview_item))
+                    {
+                        if (preview_item.TryGetValue("binding", out d))
+                        {
+                            if (d.TryGetValue("type", out o) && TryParseBinding(o.ToString(), out int bindingID))
+                            {
+                                dict["bind"] = bindingID;
+                            }
+                        }
+                        if (preview_item.TryGetValue("requirements", out Dictionary<string, object> requirements))
+                        {
+                            if (requirements.TryGetValue("playable_classes", out d) && d.TryGetValue("links", out List<object> l))
+                            {
+                                var list = new List<int>();
+                                foreach(var entry in l)
+                                {
+                                    if(entry is Dictionary<string, object> c && c.TryGetValue("id", out int id) && !list.Contains(id)) list.Add(id);
+                                }
+                                list.Sort();
+                                dict["classes"] = list;
+                            }
+                            if (requirements.TryGetValue("playable_races", out d) && d.TryGetValue("links", out l))
+                            {
+                                var list = new List<int>();
+                                foreach (var entry in l)
+                                {
+                                    if (entry is Dictionary<string, object> c && c.TryGetValue("id", out int id) && !list.Contains(id)) list.Add(id);
+                                }
+
+                                // Check for Blizzard Mistakes (They love messing up Allied Race ID assignments...)
+                                if (list.Contains(34))
+                                {
+                                    if (list.Contains(2) && !list.Contains(1))
+                                    {
+                                        // This was supposed to include Maghar Orcs instead... silly Blizzard!
+                                        list.Remove(34);
+                                        list.Add(36);
+                                    }
+                                }
+                                else if (list.Contains(36))
+                                {
+                                    if (!list.Contains(2) && list.Contains(1))
+                                    {
+                                        // This was supposed to include Dark Iron Dwarves instead... silly Blizzard!
+                                        list.Remove(36);
+                                        list.Add(34);
+                                    }
+                                }
+
+                                if (list.Contains(35))
+                                {
+                                    if (list.Contains(2) && !list.Contains(1))
+                                    {
+                                        // This was supposed to include Mechagnome instead... silly Blizzard!
+                                        list.Remove(35);
+                                        list.Add(37);
+                                    }
+                                }
+                                else if (list.Contains(37))
+                                {
+                                    if (!list.Contains(2) && list.Contains(1))
+                                    {
+                                        // This was supposed to include Vulpera instead... silly Blizzard!
+                                        list.Remove(37);
+                                        list.Add(35);
+                                    }
+                                }
+
+                                if (list.Contains(31))
+                                {
+                                    if (list.Contains(2) && !list.Contains(1))
+                                    {
+                                        // This was supposed to include Kul'Tiran instead... silly Blizzard!
+                                        list.Remove(31);
+                                        list.Add(32);
+                                    }
+                                }
+                                else if (list.Contains(32))
+                                {
+                                    if (!list.Contains(2) && list.Contains(1))
+                                    {
+                                        // This was supposed to include Zandalari Trolls instead... silly Blizzard!
+                                        list.Remove(32);
+                                        list.Add(31);
+                                    }
+                                }
+
+                                list.Sort();
+                                dict["races"] = list;
+                            }
+                        }
+                    }
 
                     // Old pre-BFA format
                     /*
-                    if (subData.ContainsKey("allowableClasses")) dict["classes"] = subData["allowableClasses"];
-                    if (subData.TryGetValue("allowableRaces", out object allowableRacesRef) && allowableRacesRef is List<object> races)
-                    {
-                        var cleanedUpRaces = new List<int>();
-                        foreach(var raceRef in races)
-                        {
-                            var race = Convert.ToInt32(raceRef);
-                            if (cleanedUpRaces.Contains(race)) continue;
-                            cleanedUpRaces.Add(race);
-                        }
-                        if (cleanedUpRaces.Contains(34))
-                        {
-                            if (cleanedUpRaces.Contains(2) && !cleanedUpRaces.Contains(1))
-                            {
-                                // This was supposed to include Maghar Orcs instead... silly Blizzard!
-                                cleanedUpRaces.Remove(34);
-                                cleanedUpRaces.Add(36);
-                            }
-                        }
-                        else if(cleanedUpRaces.Contains(36))
-                        {
-                            if (!cleanedUpRaces.Contains(2) && cleanedUpRaces.Contains(1))
-                            {
-                                // This was supposed to include Dark Iron Dwarves instead... silly Blizzard!
-                                cleanedUpRaces.Remove(36);
-                                cleanedUpRaces.Add(34);
-                            }
-                        }
-                        dict["races"] = cleanedUpRaces;
-                    }
                     if (subData.TryGetValue("requiredSkill", out r) && Convert.ToInt32(r) > 0) dict["requiredSkill"] = r;
                     if (subData.TryGetValue("itemSpells", out object itemSpellsRef) && itemSpellsRef is List<object> itemSpells && itemSpells.Count > 0)
                     {
