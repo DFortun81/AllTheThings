@@ -75,8 +75,16 @@ namespace ATT
         {
             if (dict.TryGetValue(key, out object o))
             {
-                value = Convert.ToInt32(o);
-                return true;
+                try
+                {
+                    value = Convert.ToInt32(o);
+                    return true;
+                }
+                catch
+                {
+                    value = 0;
+                    return false;
+                }
             }
             value = 0;
             return false;

@@ -132,6 +132,97 @@ namespace ATT
                     return false;
             }
         }
+        
+        static bool TryParseInventoryType(string inventoryType, out int inventoryTypeID)
+        {
+            switch (inventoryType)
+            {
+                // Ignore these.
+                case "AMMO":
+                case "BAG":
+                case "NON_EQUIP":
+                    inventoryTypeID = 0;
+                    return false;
+                
+                // Valid types.
+                case "HEAD":
+                    inventoryTypeID = 1;
+                    return true;
+                case "NECK":
+                    inventoryTypeID = 2;
+                    return true;
+                case "SHOULDER":
+                    inventoryTypeID = 3;
+                    return true;
+                case "SHIRT":
+                    inventoryTypeID = 4;
+                    return true;
+                case "BODY":
+                case "CHEST":
+                case "ROBE":
+                    inventoryTypeID = 5;
+                    return true;
+                case "WAIST":
+                    inventoryTypeID = 6;
+                    return true;
+                case "LEGS":
+                    inventoryTypeID = 7;
+                    return true;
+                case "FEET":
+                    inventoryTypeID = 8;
+                    return true;
+                case "WRIST":
+                    inventoryTypeID = 9;
+                    return true;
+                case "HAND":
+                case "HANDS":
+                    inventoryTypeID = 10;
+                    return true;
+                case "FINGER":
+                case "FINGER1":
+                case "FINGER2":
+                    inventoryTypeID = 11;
+                    return true;
+                case "TRINKET":
+                case "TRINKET1":
+                case "TRINKET2":
+                    inventoryTypeID = 13;
+                    return true;
+                case "BACK":
+                case "CLOAK":
+                    inventoryTypeID = 15;
+                    return true;
+                case "HOLDABLE":
+                case "MAINHAND":
+                case "WEAPONMAINHAND":
+                case "TWOHAND":
+                case "TWOWEAPON":
+                case "TWOHWEAPON":
+                case "WEAPON":
+                    inventoryTypeID = 16;
+                    return true;
+                case "OFFHAND":
+                case "WEAPONOFFHAND":
+                case "SHIELD":
+                    inventoryTypeID = 17;
+                    return true;
+                case "RANGED":
+                case "RANGEDRIGHT":
+                case "THROWN":
+                    inventoryTypeID = 18;
+                    return true;
+                case "TABARD":
+                    inventoryTypeID = 19;
+                    return true;
+                default:
+                    Console.Write("Unhandled Inventory Type ");
+                    Console.Write(inventoryType);
+                    Console.WriteLine();
+                    Console.ReadLine();
+                    inventoryTypeID = 0;
+                    return false;
+            }
+        }
 
         static bool TryParseQuality(string quality, out int qualityID)
         {
@@ -246,12 +337,24 @@ namespace ATT
                             }
                         }
                     }
+                    if (subData.TryGetValue("item_class", out d))
+                    {
+                        if (d.TryGetValue("id", out int id)) dict["class"] = id;
+                    }
+                    if (subData.TryGetValue("item_subclass", out d))
+                    {
+                        if (d.TryGetValue("id", out int id)) dict["subclass"] = id;
+                    }
+                    if (subData.TryGetValue("inventory_type", out d))
+                    {
+                        if (d.TryGetValue("type", out o) && TryParseInventoryType(o.ToString(), out int inventoryTypeID))
+                        {
+                            dict["inventoryType"] = inventoryTypeID;
+                        }
+                    }
 
                     // Old pre-BFA format
                     /*
-                    if (subData.ContainsKey("itemClass")) dict["class"] = subData["itemClass"];
-                    if (subData.ContainsKey("itemSubClass")) dict["subclass"] = subData["itemSubClass"];
-                    if (subData.ContainsKey("inventoryType")) dict["inventoryType"] = subData["inventoryType"];
                     if (subData.ContainsKey("allowableClasses")) dict["classes"] = subData["allowableClasses"];
                     if (subData.TryGetValue("allowableRaces", out object allowableRacesRef) && allowableRacesRef is List<object> races)
                     {
