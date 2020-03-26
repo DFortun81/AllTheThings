@@ -37,3 +37,5 @@ obj/
 contrib/Parser/log.txt
 contrib/Harvesters/API.key
 contrib/Parser/ATT.pdb
+contrib/Source Code/Blizzard API Harvester/bin/
+contrib/Source Code/Classic Item Detector/bin/
