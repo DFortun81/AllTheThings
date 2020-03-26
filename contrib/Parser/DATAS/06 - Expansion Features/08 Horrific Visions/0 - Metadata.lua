@@ -124,12 +124,12 @@ _.ExpansionFeatures =
 							}),
 							o(9999894,	{	-- Full Clear + 1 Mask
 								["description"] = "Rewards ilvl 450 loot.",
-								--["questID"] = ,
+								["questID"] = 57846,
 								["isWeekly"] = true,
 							}),
 							o(9999895,	{	-- Full Clear + 2 Masks
 								["description"] = "Rewards ilvl 455 loot.",
-								--["questID"] = ,
+								["questID"] = 57843,
 								["isWeekly"] = true,
 							}),
 							o(9999896,	{	-- Full Clear + 3 Masks
