@@ -65,7 +65,7 @@ _.Zones =
 					["coord"] = { 46.8, 63.6, 56 },
 					["g"] = {
 						i(6199),	-- Black Widow Band
-						i(4444),	-- Black Husk Shield
+						un(7, i(4444)),	-- Black Husk Shield
 					},
 				}), 
 				n(2090,   {	-- Ma'ruk Wyrmscale
