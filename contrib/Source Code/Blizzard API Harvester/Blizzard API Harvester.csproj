@@ -7,7 +7,7 @@
     <ProjectGuid>{E33C5F0B-E269-44DF-BE1E-E0D1CB17AC4C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Item_Harvester</RootNamespace>
+    <RootNamespace>ATT</RootNamespace>
     <AssemblyName>Blizzard API Harvester</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -60,6 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions.cs" />
     <Compile Include="lib\MiniJSON.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -8,7 +8,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
-namespace Item_Harvester
+namespace ATT
 {
     class Program
     {
@@ -226,24 +226,21 @@ namespace Item_Harvester
                     if (subData.TryGetValue("id", out o)) dict["itemID"] = o;
 
                     // New Format 2020-03-26
-                    if (subData.TryGetValue("is_equippable", out o) && o is bool b && b)
+                    if (subData.TryGetValue("level", out int level) && level > 1) dict["iLvl"] = level;
+                    if (subData.TryGetValue("required_level", out level) && level > 1) dict["Lvl"] = level;
+                    if (subData.TryGetValue("is_equippable", out bool b) && b) dict["equippable"] = 1;
+                    if (subData.TryGetValue("quality", out Dictionary<string, object> d))
                     {
-                        dict["equippable"] = 1;
-                    }
-                    if (subData.TryGetValue("quality", out o))
-                    {
-                        if (o is Dictionary<string, object> d 
-                            && d.TryGetValue("type", out o) && TryParseQuality(o.ToString(), out int qualityID))
+                        if (d.TryGetValue("type", out o) && TryParseQuality(o.ToString(), out int qualityID))
                         {
                             dict["quality"] = qualityID;
                         }
                     }
-                    if (subData.TryGetValue("preview_item", out o) && o is Dictionary<string, object> preview_item)
+                    if (subData.TryGetValue("preview_item", out Dictionary<string, object> preview_item))
                     {
-                        if (preview_item.TryGetValue("binding", out o))
+                        if (preview_item.TryGetValue("binding", out d))
                         {
-                            if (o is Dictionary<string, object> d
-                                && d.TryGetValue("type", out o) && TryParseBinding(o.ToString(), out int bindingID))
+                            if (d.TryGetValue("type", out o) && TryParseBinding(o.ToString(), out int bindingID))
                             {
                                 dict["bind"] = bindingID;
                             }
@@ -251,15 +248,10 @@ namespace Item_Harvester
                     }
 
                     // Old pre-BFA format
-                    //if (subData.ContainsKey("equippable")) dict["equippable"] = subData["equippable"];
-                    //if (subData.ContainsKey("quality")) dict["quality"] = subData["quality"];
-                    //if (subData.TryGetValue("itemBind", out object r) && Convert.ToInt32(r) != 0) dict["bind"] = r;
                     /*
                     if (subData.ContainsKey("itemClass")) dict["class"] = subData["itemClass"];
                     if (subData.ContainsKey("itemSubClass")) dict["subclass"] = subData["itemSubClass"];
-                    if (subData.TryGetValue("itemLevel", out object r) && Convert.ToInt32(r) > 1) dict["iLvl"] = r;
                     if (subData.ContainsKey("inventoryType")) dict["inventoryType"] = subData["inventoryType"];
-                    if (subData.TryGetValue("requiredLevel", out r) && Convert.ToInt32(r) > 1) dict["Lvl"] = r;
                     if (subData.ContainsKey("allowableClasses")) dict["classes"] = subData["allowableClasses"];
                     if (subData.TryGetValue("allowableRaces", out object allowableRacesRef) && allowableRacesRef is List<object> races)
                     {
@@ -394,12 +386,6 @@ namespace Item_Harvester
                                 }
                             }
                         }
-                    }
-                    */
-                    /*
-                    if (subData.ContainsKey("itemSource"))
-                    {
-                        // Ha jk, pos blizzard doesn't give this data
                     }
                     */
                 }
