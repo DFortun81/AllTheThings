@@ -353,6 +353,10 @@ namespace ATT
                         }
                         if (preview_item.TryGetValue("requirements", out Dictionary<string, object> requirements))
                         {
+                            if (requirements.TryGetValue("skill", out d) && d.TryGetValue("profession", out d))
+                            {
+                                if (d.TryGetValue("id", out int id)) dict["requiredSkill"] = id;
+                            }
                             if (requirements.TryGetValue("playable_classes", out d) && d.TryGetValue("links", out List<object> l))
                             {
                                 var list = new List<int>();
