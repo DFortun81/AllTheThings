@@ -347,7 +347,7 @@ _.Achievements =
 					},
 					{	-- Only the Penitent...
 						["achievementID"] = 5799,	-- Only the Penitent...
-						["description"] = "Group of 6 needed."
+						["description"] = "Group of 2 needed."
 					},
 					{	-- Parasite Evening
 						["achievementID"] = 5306,	-- Parasite Evening

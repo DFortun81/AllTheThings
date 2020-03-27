@@ -436,7 +436,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["creatureID"] = 52571,
 						["g"] = {
 							ach(5799, {	-- Only the Penitent...
-								["description"] = "This achievement requires a group of 6.",
+								["description"] = "This achievement requires a group of 2.",
 							}),
 							i(152978),	-- Fandral's Pet Carrier (PET!)
 							i(122304),	-- Fandral's Seed Pouch (TOY!)
@@ -810,7 +810,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["g"] = {
 							ach(5804),	-- Heroic: Majordomo Fandral Staghelm
 							ach(5799, {	-- Only the Penitent...
-								["description"] = "This achievement requires a group of 6.",
+								["description"] = "This achievement requires a group of 2.",
 							}),
 							i(152978),	-- Fandral's Pet Carrier (PET!)
 							i(122304),	-- Fandral's Seed Pouch (TOY!)
