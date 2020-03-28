@@ -26,26 +26,32 @@ _.Zones =
 				["coords"] = {
 					{ 48.47, 75.58, 85 },	-- Goram [Orgrimmar]
 					{ 69.84, 43.72, 90 },	-- Kim Horn [Undercity]
+					{ 56.80, 88.60, 85 },	-- Kim Horn [Orgrimmar]
 					{ 78.33, 85.24, 110 },	-- Larissia [Silvermoon]
 					{ 52.52, 54.97, 125 },	-- Mirla Silverblaze [Dalaran: Northrend]
 					{ 53.64, 69.68, 103 },	-- Nuri [The Exodar]
+					{ 70.20, 14.75, 1161 },	-- Perry Charlton [Boralus]
 					{ 37.12, 63.33, 88 },	-- Randah Songhorn [Thunder Bluff]
 					{ 58.74, 46.41, 111 },	-- Riha [Shattrath]
 					{ 64.15, 77.02, 84 },	-- Shay Pressler [Stormwind]
 					{ 36.30, 85.78, 87 },	-- Steeg Haskell [Ironforge]
 					{ 64.79, 37.65, 89 },	-- Velia Moonbow [Darnassus]
+					{ 58.09, 43.66, 1163 },	-- Ulla Skycloven [Dazar'alor]
 				},
 				["crs"] = {
 					46572,	-- Goram (Orgrimmar)
 					51496,	-- Kim Horn (Undercity)
+					142856,	-- Kim Horn (Orgrimmar)
 					51502,	-- Larissia (Silvermoon)
 					51512,	-- Mirla Silverblaze (Dalaran)
 					51501,	-- Nuri (The Exodar)
+					142086,	-- Perry Charlton (Boralus)
 					51503,	-- Randah Songhorn (Thunder Bluff)
 					52268,	-- Riha (Shattrath)
 					46602,	-- Shay Pressler (Stormwind)
 					51495,	-- Steeg Haskell (Ironforge)
 					51504,	-- Velia Moonbow (Darnassus)
+					142185,	-- Ulla Skycloven (Dazar'alor)
 				},
 				["g"] = {
 					ach(4989, {	-- A Class Act

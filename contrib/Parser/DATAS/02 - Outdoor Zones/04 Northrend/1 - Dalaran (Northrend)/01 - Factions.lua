@@ -6,9 +6,6 @@ _.Zones =
 	m(113, {	-- Northrend
 		m(125, {	-- Dalaran: Northrend
 			n(-6013, {	-- Factions
-				faction(1168, {	-- Your Guild (Faction) <Guild Vendor>
-					["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO",
-				}),
 				faction(1124, {	-- The Sunreavers
 					["creatureID"] = 30116,	-- Archmage Aethas Sunreaver <Kirin Tor>
 					["races"] = HORDE_ONLY,
