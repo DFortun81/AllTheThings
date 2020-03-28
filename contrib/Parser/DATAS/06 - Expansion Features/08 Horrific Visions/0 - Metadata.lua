@@ -109,7 +109,7 @@ _.ExpansionFeatures =
 						["g"] = {
 							o(9999891,	{	-- Main Objective Only(420)
 								["description"] = "Rewards ilvl 420 loot.",
-								--["questID"] = ,
+								["questID"] = 57841,
 								["isWeekly"] = true,
 							}),
 							o(9999892,	{	-- Main Objective + 2 bonus
@@ -144,7 +144,7 @@ _.ExpansionFeatures =
 							}),
 							o(9999898,	{	-- Full Clear + 5 Masks
 								["description"] = "Rewards ilvl 470 loot.",
-								--["questID"] = ,
+								["questID"] = 57848,
 								["isWeekly"] = true,
 							}),
 						},
