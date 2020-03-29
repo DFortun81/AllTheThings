@@ -1058,13 +1058,13 @@ _.Zones =
 							q(10969, {	-- Seek Out Ameer
 								["provider"] = { "n", 22899 },	-- Protectorate Advisor Rahim
 								["coord"] = { 32.4, 64.2, 109 },
-								["description"] = "Requires Honored with The Consortium.",
+								["minReputation"] = { 933, HONORED },
 								["isBreadcrumb"] = true, 	-- for "A Mission of Mercy"
 							}),
 							q(10970, {	-- A Mission of Mercy
 								["provider"] = { "n", 20448 },	-- Commander Ameer
 								["coord"] = { 59.5, 32.4, 109 },
-								["description"] = "Requires Honored with The Consortium.",
+								["minReputation"] = { 933, HONORED },
 							}),
 							q(10971, {	-- Ethereum Secrets
 								["provider"] = { "n", 20448 },	-- Commander Ameer
@@ -1080,7 +1080,7 @@ _.Zones =
 							}),
 							q(10973, {	-- A Thousand Worlds
 								["provider"] = { "n", 20448 },	-- Commander Ameer
-								["description"] = "Requires Revered with The Consortium.",
+								["minReputation"] = { 933, REVERED },
 							}),
 							q(10974, {	-- Stasis Chambers of Bash'ir
 								["provider"] = { "n", 20448 },	-- Commander Ameer
