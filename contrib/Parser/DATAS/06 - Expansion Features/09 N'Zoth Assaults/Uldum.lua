@@ -1252,8 +1252,8 @@ _.ExpansionFeatures =
 			}),
 			n(-10072, {	-- N'Zoth Assault
 				n(-4,	{	-- Achievements
-					ach(14159, {		-- Combating the Corruption
-						crit(1, {	-- 	Corrupted Acolyte slain
+					ach(14159, {	-- Combating the Corruption
+						crit(1, {		-- Corrupted Acolyte slain
 							["coords"] = {
 								{ 49.5, 39.9, 1527 },
 								{ 51.2, 73.2, 1527 },
@@ -1268,7 +1268,7 @@ _.ExpansionFeatures =
 								{ 53.8, 43.1, 1527 },
 							},
 						}),
-						crit(2, {	-- 	Corrupted Assassin slain
+						crit(2, {		-- Corrupted Assassin slain
 							["coords"] = {
 								{ 51.7, 71.1, 1527 },
 								{ 50.7, 72.3, 1527 },
@@ -1285,7 +1285,7 @@ _.ExpansionFeatures =
 								{ 50.0, 71.7, 1527 },
 							},
 						}),
-						crit(3,	{	--	Corrupted Beheader slain
+						crit(3,	{		-- Corrupted Beheader slain
 							["coords"] = {
 								{ 58.4, 42.8, 1527 },
 								{ 52.6, 46.4, 1527 },
@@ -1297,7 +1297,7 @@ _.ExpansionFeatures =
 								{ 49.1, 84.7, 1527 },
 							},
 						}),
-						crit(4,	{	-- Corrupted Bloodseeker slain
+						crit(4,	{		-- Corrupted Bloodseeker slain -- TODO:: Add coords
 							--[[["coords"] = {
 								{ 35.1, 17.3, 249 },
 								{ 35.1, 17.3, 249 },
@@ -1307,8 +1307,8 @@ _.ExpansionFeatures =
 								{ 35.1, 17.3, 249 },
 							},]]
 						}),
-						crit(5,	{	-- Corrupted Bonestripper slain
-							["description"] = "found in most water locations",
+						crit(5,	{		-- Corrupted Bonestripper slain
+							["description"] = "Found in most water locations.",
 							["coords"] = {
 								{ 55.7, 43.8, 1527 },
 								{ 57.5, 17.7, 1527 },
@@ -1318,8 +1318,8 @@ _.ExpansionFeatures =
 								{ 59.6, 60.8, 1527 },
 							},
 						}),
-						crit(6,	{	-- Corrupted Despoiler slain
-							["description"] = "Shares a spawn with Mind Eater",
+						crit(6,	{		-- Corrupted Despoiler slain
+							["description"] = "Shares a spawn with Mind Eater.",
 							["coords"] = {
 								{ 59.5, 47.4, 1527 },
 								{ 59.1, 42.7, 1527 },
@@ -1330,7 +1330,7 @@ _.ExpansionFeatures =
 								{ 55.6, 24.4, 1527 },
 							},
 						}),
-						crit(7,	{	-- Corrupted Dominator slain
+						crit(7,	{		-- Corrupted Dominator slain
 							["coords"] = {
 								{ 63.0, 71.0, 1527 },
 								{ 63.8, 72.8, 1527 },
@@ -1340,7 +1340,7 @@ _.ExpansionFeatures =
 								{ 56.5, 42.1, 1527 },
 							},
 						}),
-						crit(8,	{	-- Corrupted Doomsayer slain
+						crit(8,	{		-- Corrupted Doomsayer slain
 							["coords"] = {
 								{ 60.8, 71.5, 1527 },
 								{ 60.2, 71.3, 1527 },
@@ -1352,7 +1352,7 @@ _.ExpansionFeatures =
 								{ 63.5, 70.0, 1527 },
 							},
 						}),
-						crit(9,	{	-- Corrupted Fleshbeast slain
+						crit(9,	{		-- Corrupted Fleshbeast slain
 							["coords"] = {
 								{ 59.5, 48.6, 1527 },
 								{ 49.0, 35.5, 1527 },
@@ -1362,7 +1362,7 @@ _.ExpansionFeatures =
 								{ 62.0, 66.7, 1527 },
 							},
 						}),
-						crit(10, {	-- Corrupted Jailer slain
+						crit(10, {		-- Corrupted Jailer slain
 							["coords"] = {
 								{ 60.8, 71.5, 1527 },
 								{ 62.1, 74.7, 1527 },
@@ -1370,8 +1370,8 @@ _.ExpansionFeatures =
 								{ 62.2, 67.4, 1527 },
 							},
 						}),
-						crit(11, {	-- Corrupted Mind Eater slain
-							["description"] = "Shares a spawn with Faceless Despoiler",
+						crit(11, {		-- Corrupted Mind Eater slain
+							["description"] = "Shares a spawn with Faceless Despoiler.",
 							["coords"] = {
 								{ 59.5, 47.4, 1527 },
 								{ 59.1, 42.7, 1527 },
@@ -1382,7 +1382,7 @@ _.ExpansionFeatures =
 								{ 55.6, 24.4, 1527 },
 							},
 						}),
-						crit(12, {	-- Corrupted Neferset Guard slain
+						crit(12, {		-- Corrupted Neferset Guard slain
 							["coords"] = {
 								{ 50.9, 82.9, 1527 },
 								{ 51.6, 81.7, 1527 },
@@ -1398,12 +1398,12 @@ _.ExpansionFeatures =
 								{ 50.5, 75.0, 1527 },
 							},
 						}),
-						crit(13, {	-- Corrupted Observer slain
+						crit(13, {		-- Corrupted Observer slain
 							["coords"] = {
 								{ 55.4, 51.0, 1527 },
 							},
 						}),
-						crit(14, {	-- Corrupted Putrefaction slain
+						crit(14, {		-- Corrupted Putrefaction slain
 							["coords"] = {
 								{ 59.3, 41.4, 1527 },
 								{ 60.4, 39.9, 1527 },
@@ -1412,7 +1412,7 @@ _.ExpansionFeatures =
 								{ 60.8, 37.1, 1527 },
 							},
 						}),
-						crit(15, {	-- Corrupted Summoner slain
+						crit(15, {		-- Corrupted Summoner slain
 							["coords"] = {
 								{ 58.9, 46.2, 1527 },
 								{ 60.3, 50.9, 1527 },
@@ -1430,7 +1430,7 @@ _.ExpansionFeatures =
 								{ 51.9, 50.1, 1527 },
 							},
 						}),
-						crit(16, {	-- Corrupted Thaumaturge slain
+						crit(16, {		-- Corrupted Thaumaturge slain
 							["coords"] = {
 								{ 51.9, 70.3, 1527 },
 								{ 50.5, 81.8, 1527 },
@@ -1440,7 +1440,7 @@ _.ExpansionFeatures =
 								{ 51.9, 80.6, 1527 },
 							},
 						}),
-						crit(17, {	-- Corrupted Thoughtstealer slain
+						crit(17, {		-- Corrupted Thoughtstealer slain
 							["coords"] = {
 								{ 62.7, 75.4, 1527 },
 								{ 61.0, 72.0, 1527 },
@@ -1450,25 +1450,8 @@ _.ExpansionFeatures =
 								{ 62.9, 74.3, 1527 },
 							},
 						}),
-						--[[crit(18, {	-- Corrupted Tormentor slain
-							["coords"] = {
-								{ 67.8, 55.0, 1530 },
-								{ 64.8, 54.6, 1530 },
-								{ 59.0, 61.3, 1530 },
-								{ 54.3, 63.5, 1530 },
-								{ 41.8, 64.6, 1530 },
-								{ 69.3, 30.8, 1530 },
-								{ 69.5, 44.6, 1530 },
-								{ 73.4, 49.3, 1530 },
-								{ 78.3, 58.0, 1530 },
-								{ 81.0, 34.1, 1530 },
-								{ 61.6, 33.7, 1530 },
-								{ 53.0, 66.2, 1530 },
-								{ 49.8, 68.1, 1530 },
-								{ 78.0, 47.3, 1530 },
-							},
-						}),]]
-						crit(19, {	-- Corrupted Watcher slain
+						crit(18),		-- Corrupted Tormentor slain -- TODO:: Add coords
+						crit(19, {		-- Corrupted Watcher slain
 							["coords"] = {
 								{ 61.8, 73.0, 1527 },
 								{ 63.4, 72.9, 1527 },
@@ -1484,9 +1467,9 @@ _.ExpansionFeatures =
 					ach(14158),		-- It's Not A Tumor!
 					ach(14160),		-- Rare to Well Done
 					ach(14153, {	-- Uldum Under Assault
-						crit(1),	-- Assault: Amathet Advance
-						crit(2),	-- Assault: Aqir Unearthed
-						crit(3),	-- Assault: The Black Empire
+						crit(1),		-- Assault: Amathet Advance
+						crit(2),		-- Assault: Aqir Unearthed
+						crit(3),		-- Assault: The Black Empire
 					}),
 				}),
 				f(101,	{	-- Battle Pets

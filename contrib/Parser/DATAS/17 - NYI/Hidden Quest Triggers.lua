@@ -2203,7 +2203,7 @@ _.NeverImplemented =
 		q(58770),	-- Vale of Eternal Blossoms - Ambered Coffer
 		
 		-- "Combating the Corruption" completion flags. The IDs appear to be reused and aren't specific to any one mob. Track all mobs until we can make sense of the pattern.
-		q(58690),	-- Corrupted Acolyte - Vale of Eternal Blossoms, Corrupted Fleshbeat - Uldum?
+		q(58690),	-- Corrupted Acolyte - Vale of Eternal Blossoms, Corrupted Fleshbeast - Uldum?
 		q(58689),	-- Corrupted Doomsayer - Uldum
 		q(58691),	-- Corrupted Doomsayer/Bonestripper - Vale of Eternal Blossoms, Corrupted Putrification/Dominator - Uldum
 		q(58688),	-- Corrupted Mind Eater - Uldum

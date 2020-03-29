@@ -285,7 +285,27 @@ _.Achievements =
 						crit(3),		-- Cracked Tablet
 						crit(4),		-- Fractured Tablet
 					}),
-					ach(14159),		-- Combating the Corruption -- TODO:: update criteria when they get added
+					ach(14159, {	-- Combating the Corruption
+						crit(1),		-- Corrupted Acolyte slain
+						crit(2),		-- Corrupted Assassin slain
+						crit(3),		-- Corrupted Beheader slain
+						crit(4),		-- Corrupted Bloodseeker slain
+						crit(5),		-- Corrupted Bonestripper slain
+						crit(6),		-- Corrupted Despoiler slain
+						crit(7),		-- Corrupted Dominator slain
+						crit(8),		-- Corrupted Doomsayer slain
+						crit(9),		-- Corrupted Fleshbeast slain
+						crit(10),		-- Corrupted Jailer slain
+						crit(11),		-- Corrupted Mind Eater slain
+						crit(12),		-- Corrupted Neferset Guard slain
+						crit(13),		-- Corrupted Observer slain
+						crit(14),		-- Corrupted Putrefaction slain
+						crit(15),		-- Corrupted Summoner slain
+						crit(16),		-- Corrupted Thaumaturge slain
+						crit(17),		-- Corrupted Thoughtstealer slain
+						crit(18),		-- Corrupted Tormentor slain
+						crit(19),		-- Corrupted Watcher slain
+					}),
 					ach(13094, {	-- Cursed Game Hunter
 						--[[
 						crit(1),		-- Goats
