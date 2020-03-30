@@ -650,7 +650,7 @@ _.Zones =
 				q(10675, {	-- Show Them Gnome Mercy!
 					["provider"] = { "n", 21691 },	-- Toshley
 					["coord"] = { 60.5, 69.0, 105 },
-					["sourceQuest"] = 10584,	-- Picking Up Some Power Converters
+					["sourceQuest"] = 10674,	-- Trapping The Light Fantastic
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(31456),	-- Gnomish Casting Boots
@@ -758,11 +758,16 @@ _.Zones =
 				q(10711, {	-- Test Flight: Razaan's Landing
 					["provider"] = { "n", 21460 },	-- Tally Zapnabber
 					["coord"] = { 60.3, 68.4, 105 },
+					["sourceQuest"] = 10710,	-- Test Flight: The Singing Ridge
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10712, {	-- Test Flight: Ruuan Weald
 					["provider"] = { "n", 21460 },	-- Tally Zapnabber
 					["coord"] = { 60.3, 68.4, 105 },
+					["sourceQuests"] = {
+						10675,	-- Show Them Gnome Mercy!
+						10711,	-- Test Flight: Razaan's Landing
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10710, {	-- Test Flight: The Singing Ridge
