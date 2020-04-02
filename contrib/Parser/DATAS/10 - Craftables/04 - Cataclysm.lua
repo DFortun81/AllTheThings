@@ -303,6 +303,9 @@ _.Craftables =
 				i(52307, {	-- Alicite Pendant
 					i(52312),	-- Alicite Pendant
 				}),
+				un(7, i(70075)),	-- Bloodthirsty Amberjewel Pendant
+				un(7, i(70076)),	-- Bloodthirsty Ruby Choker
+				un(7, i(70074)),	-- Bloodthirsty Sapphire Necklace
 				i(52350),	-- Brazen Elementium Medallion
 				i(52323),	-- Elementium Guardian
 				i(52321),	-- Entwined Elementium Choker
@@ -316,6 +319,9 @@ _.Craftables =
 			}),
 			filter(52, {	-- Finger
 				i(52318),	-- Band of Blades
+				un(7, i(70072)),	-- Bloodthirsty Amberjewel Band
+				un(7, i(70073)),	-- Bloodthirsty Ruby Signet
+				un(7, i(70071)),	-- Bloodthirsty Sapphire Ring
 				i(52348),	-- Elementium Destroyer's Ring
 				i(52320),	-- Elementium Moebius Band
 				i(52308, {	-- Hessonite Band

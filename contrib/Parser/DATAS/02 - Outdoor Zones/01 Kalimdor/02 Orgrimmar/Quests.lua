@@ -1174,7 +1174,8 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 15,
 					["g"] = {
-						i(119325),	-- Bow of Fire
+						un(2, i(56708)),	-- Bow of Ire (old version)
+						i(119325),	-- Bow of Ire
 						i(119326), 	-- Ring of Pardons
 						i(119327),	-- Durak's Downfall
 					},
