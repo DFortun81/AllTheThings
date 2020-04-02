@@ -101,7 +101,6 @@ _.WorldDrops =
 				i(37786),	-- Legguards of the Forlorn Seas
 			}),
 			n(-330, {	-- Feet
-				i(37070),	-- Tundra Wolf Boots
 				i(37744),	-- Horrorblood Treads
 				i(37752),	-- Sandals of Broken Dreams
 				i(37763),	-- Treads of the Purifier
