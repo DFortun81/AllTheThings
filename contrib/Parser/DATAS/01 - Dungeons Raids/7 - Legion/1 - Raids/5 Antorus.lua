@@ -965,6 +965,8 @@ _.Instances = { tier(7, {	-- Legion
 						i(152056),	-- Corrupting Dewclaw
 						i(152291),	-- Fraternal Fervor
 						i(152027),	-- Gravitational Condensate
+						i(152059),	-- Whistling Ulna
+						
 					},
 				}),
 				e(1997, {	-- Antoran High Command

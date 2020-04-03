@@ -1458,6 +1458,17 @@ _.NeverImplemented =
 			un(1, i(134605)),	-- Vanguard Cloak
 			un(1, i(154698)),	-- Tidespray Linen Cloak of the Feather (Doesnt load ingame)
 			un(1, i(154701)),	-- Tidespray Linen Cloak of Resilience (Doesnt load ingame)
+			un(1, i(172655)),	-- Unknown
+			un(1, i(172656)),	-- Unknown
+			un(1, i(172657)),	-- Unknown
+			un(1, i(172658)),	-- Unknown
+			un(1, i(172659)),	-- Unknown
+			un(1, i(172660)),	-- Unknown
+			un(1, i(172661)),	-- Unknown
+			un(1, i(172662)),	-- Unknown
+			un(1, i(172851)),	-- Unknown
+			un(1, i(172855)),	-- Unknown
+			un(1, i(174857)),	-- Hidden Cloak (Vulpera?)
 			un(1, i(163371)),	-- Honorbound Centurions Cloak
 			un(1, i(163356)),	-- Honorbound Artificier Drape (different version used with locked to specific classes)
 			un(1, i(163358)),	-- Honorbound Artificier greatcloak (different version used with locked to specific classes)

@@ -94,6 +94,7 @@ _.GearSets =
 									["u"] = 1,				-- Not Available
 								},
 								un(1, i(170627)),	-- Springrain Choker
+								un(1, i(170606)),	-- Springrain Choker
 								un(1, i(170619)),	-- Springrain Necklace
 								{	-- Springrain Pauldrons *LA0422Feral
 									["itemID"] = 170888,	-- Springrain Pauldrons
@@ -110,7 +111,7 @@ _.GearSets =
 									["itemID"] = 170605,	-- Springrain Cloak of Rage
 								},
 								{	-- Springrain Cloak of Wisdom [NYI]
-									["itemID"] = 170624,	-- Springrain Cloak of Wisdom
+									["itemID"] = 170618,	-- Springrain Cloak of Wisdom
 									["u"] = 1,				-- Not Available
 								},
 								{	-- Springrain Jerkin [NYI]
