@@ -33,9 +33,7 @@ _.Instances = { tier(7, {	-- Legion
 			d(2, {	-- Heroic
 				n(ZONEDROPS, {
 					i(147117, {	-- Orb of the Fel Temptress
-						["crs"] = {
-							118714,  -- Hellblaze Temptress
-						},
+						["cr"] = 118714,  -- Hellblaze Temptress
 						["classes"] = {9},	-- Warlock
 					}),
 				}),
@@ -145,9 +143,7 @@ _.Instances = { tier(7, {	-- Legion
 						},
 					}),
 					i(147117, {	-- Orb of the Fel Temptress
-						["crs"] = {
-							120366,  -- Hellblaze Temptress
-						},
+						["cr"] = 120366,  -- Hellblaze Temptress
 						["classes"] = {9},	-- Warlock
 					}),
 				}),
@@ -210,6 +206,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(144465),	-- Essence of the Legion Tempest
 					i(144464),	-- Mephistroth's Nail
 					i(144463),	-- Shard of Kaldorei Stained Glass
+					i(146696),	-- Rusted Legplates of Mephistroth (Leatherworking QI)
 				})),
 			}),
 		},

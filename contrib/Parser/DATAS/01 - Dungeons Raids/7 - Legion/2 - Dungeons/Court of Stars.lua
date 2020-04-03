@@ -140,6 +140,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(137486),	-- Windscar Whetstone
 					i(137495),	-- Crux of Blind Faith
 					i(137493),	-- Edge of the First Blade
+					i(146680),	-- Melandrus' Star-Touched Bracers (Tailoring QI)
 				})),
 			}),
 		},

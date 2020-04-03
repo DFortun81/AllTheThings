@@ -293,6 +293,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(139283),	-- Wristbands of Magnificent Splender
 						i(133685),	-- Odyn's Boon
 						i(133686),	-- Stormforged Inferno
+						i(146702),	-- White Lightningsteel (Blacksmithing QI)
 					})),
 				},
 			})

@@ -35,43 +35,39 @@ _.Instances = { tier(7, {	-- Legion
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
-						{	-- Cache of Nightmarish Treasures [Raid Finder]
-							["itemID"] = 139484,	-- Cache of Nightmarish Treasures [Raid Finder]
+						i(139484, {	-- Cache of Nightmarish Treasures [Raid Finder]
 							["u"] = 2,
 							["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-						},
-						{	-- The Emerald Nightmare: Il'gynoth [Raid Finder]
-							["itemID"] = 139480,	-- Corrupted Egg Fragment [Raid Finder]
+						}),
+						i(139480, {	-- Corrupted Egg Fragment [Raid Finder]
 							["questID"] = 43546,	-- The Emerald Nightmare: Il'gynoth [Raid Finder]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
 							},
-						},
-						{	-- The Emerald Nightmare: Fall of Cenarius [Raid Finder]
-							["itemID"] = 140163,	-- Tainted Moonglade Leaf [Raid Finder]
+						}),
+						i(140163, {	-- Tainted Moonglade Leaf [Raid Finder]
 							["questID"] = 43902,	-- The Emerald Nightmare: Fall of Cenarius [Raid Finder]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
 							},
-						},
-						{	-- The Emerald Nightmare: Xavius [Raid Finder]
-							["itemID"] = 140164,	-- Vial of Swirling Shadow [Raid Finder]
+						}),
+						i(140164, {	-- Vial of Swirling Shadow [Raid Finder]
 							["questID"] = 43903,	-- The Emerald Nightmare: Xavius [Raid Finder]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
 							},
-						},
+						}),
 					},
 				}),
 				n(ZONEDROPS, {
 					["crs"] = { 111246 },	-- Archmage Timear
-					["groups"] = {
+					["g"] = {
 						i(141696),	-- Pendant of Liquid Horror
 						i(141694),	-- Gauntlets of Fractured Dreams
 						i(140993),	-- Gloves of Murmured Promises
@@ -81,12 +77,9 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 				ach(10818, { 	-- Darkbough
 					["crs"] = { 111246 },	-- Archmage Timear
-					["groups"] = {
+					["g"] = {
 						cr(102672, e(1703, {	-- Nythendra
-							{	-- Darkbough (Nythendra)
-								["achievementID"] = 10818,	-- Darkbough
-								["criteriaID"] = 1,			-- Nythendra
-							},
+							ach(10818, crit(1)),	-- Darkbough / Nythendra
 							i(139636),	-- Vantus Rune Technique: Nythendra [Rank 1]
 							i(137748),	-- Vantus Rune Technique: Nythendra [Rank 2]
 							i(139214),	-- Greyed Dragonscale Coif
@@ -105,10 +98,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(139250),	-- Unwaking Slumber
 						})),
 						cr(106087, e(1744, {	-- Elerethe Renferal
-							{	-- Darkbough (Elerethe Renferal)
-								["achievementID"] = 10818,	-- Darkbough
-								["criteriaID"] = 2,			-- Elerethe Renferal
-							},
+							ach(10818, crit(2)),	-- Darkbough / Elerethe Renferal
 							i(128611),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 3]
 							i(139640),	-- Vantus Rune Technique: Elerethe Renferal [Rank 1]
 							i(137752),	-- Vantus Rune Technique: Elerethe Renferal [Rank 2]
@@ -129,10 +119,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(137008),	-- Stormfury Diamond
 						})),
 						cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
-							{	-- Darkbough (Il'gynoth, Heart of Corruption)
-								["achievementID"] = 10818,	-- Darkbough
-								["criteriaID"] = 3,			-- Il'gynoth, Heart of Corruption
-							},
+							ach(10818, crit(3)),	-- Darkbough / Il'gynoth, Heart of Corruption							},
 							i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1]
 							i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2]
 							i(139569, {	-- Claw of N'Zoth
@@ -160,12 +147,9 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 				ach(10819, { 	-- Tormented Guardians
 					["crs"] = { 111246 },	-- Archmage Timear
-					["groups"] = {
+					["g"] = {
 						cr(100497, e(1667, {	-- Ursoc
-							{	-- Tormented Guardians (Ursoc)
-								["achievementID"] = 10819,	-- Tormented Guardians
-								["criteriaID"] = 1,			-- Ursoc
-							},
+							ach(10819, crit(1)),	-- Tormented Guardians / Ursoc
 							i(141917),	-- Formula: Enchant Neck - Mark of the Heavy Hide [Rank 3]
 							i(139635),	-- Vantus Rune Technique: Ursoc [Rank 1]
 							i(137747),	-- Vantus Rune Technique: Ursoc [Rank 2]
@@ -193,10 +177,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(139261),	-- Tuft of Ironfur
 						})),
 						cr(102679, e(1704, {	-- Dragons of Nightmare (Ysondre)
-							{	-- Tormented Guardians (Dragons of Nightmare)
-								["achievementID"] = 10819,	-- Tormented Guardians
-								["criteriaID"] = 2,			-- Dragons of Nightmare
-							},
+							ach(10819, crit(2)),	-- Tormented Guardians / Dragons of Nightmare
 							i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1]
 							i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2]
 							i(139562, {	-- Breath of the Undying Serpent
@@ -220,10 +201,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(138226),	-- Nightmare Engulfed Jewel
 						})),
 						cr(104636, e(1750, {	-- Cenarius
-							{	-- Tormented Guardians (Cenarius)
-								["achievementID"] = 10819,	-- Tormented Guardians
-								["criteriaID"] = 3,			-- Cenarius
-							},
+							ach(10819, crit(3)),	-- Tormented Guardians / Cenarius
 							i(127934),	-- Recipe: Spirit Cauldron [Rank 2]
 							i(139641),	-- Vantus Rune Technique: Cenarius [Rank 1]
 							i(137753),	-- Vantus Rune Technique: Cenarius [Rank 2]
@@ -246,7 +224,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 				ach(10820, { 	-- Rift of Aln
 					["crs"] = { 111246 },	-- Archmage Timear
-					["groups"] = {
+					["g"] = {
 						cr(103769, e(1726, {	-- Xavius <Nightmare Lord>
 							i(128612),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 3]
 							i(139639),	-- Vantus Rune Technique: Xavius [Rank 1]
@@ -268,6 +246,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(139269),	-- Crystallized Drop of Eternity
 							i(139266),	-- Fragment of Eternal Spite
 							i(139268),	-- Nightmarish Elm Branch
+							i(146690),	-- Xavius' Torn Spellsash (Leatherworking QI)
 						})),
 					},
 				}),
@@ -275,44 +254,39 @@ _.Instances = { tier(7, {	-- Legion
 			d(14, {	-- Normal
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["groups"] = {
-						{	-- Cache of Nightmarish Treasures [Normal]
-							["itemID"] = 139486,	-- Cache of Nightmarish Treasures [Normal]
+					["g"] = {
+						i(139486, {	-- Cache of Nightmarish Treasures [Normal]
 							["u"] = 2,
 							["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-						},
-						{	-- The Emerald Nightmare: Il'gynoth [Normal]
-							["itemID"] = 139481,	-- Corrupted Egg Fragment [Normal]
+						}),
+						i(139481, {	-- Corrupted Egg Fragment [Normal]
 							["questID"] = 43547,	-- The Emerald Nightmare: Il'gynoth [Normal]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
 							},
-						},
-						{	-- The Emerald Nightmare: Fall of Cenarius [Normal]
-							["itemID"] = 140165,	-- Tainted Moonglade Leaf [Normal]
+						}),
+						i(140165, {	-- Tainted Moonglade Leaf [Normal]
 							["questID"] = 43904,	-- The Emerald Nightmare: Fall of Cenarius [Normal]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
 							},
-						},
-						{	-- The Emerald Nightmare: Xavius [Normal]
-							["itemID"] = 140166,	-- Vial of Swirling Shadow [Normal]
+						}),
+						i(140166, {	-- Vial of Swirling Shadow [Normal]
 							["questID"] = 43905,	-- The Emerald Nightmare: Xavius [Normal]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
 							},
-						},
-						{	-- The Emerald Nightmare: Piercing the Veil
-							["questID"] = 44283,	-- The Emerald Nightmare: Piercing the Veil
+						}),
+						i(44283, {	-- The Emerald Nightmare: Piercing the Veil
 							["provider"] = { "n", 106482 },	-- Malfurion Stormrage
 							["description"] = "This quest requires you to kill Cenarius in Emerald nightmare 4 times.\n\nThe reward is skipping the 4 bosses and getting instantly to Cenarius.",
-						},
+						}),
 					},
 				}),
 				n(COMMON_BOSS_DROPS, {
@@ -329,14 +303,10 @@ _.Instances = { tier(7, {	-- Legion
 					i(141695),	-- Tarnished Dreamkeeper's Gauntlets
 				}),
 				cr(102672, e(1703, {	-- Nythendra
-					{	-- Buggy Fight
-						["achievementID"] = 10555,	-- Buggy Fight
+					ach(10555, {	-- Buggy Fight
 						["creatureID"] = 105097,	-- Glow Bug
-					},
-					{	-- Darkbough (Nythendra)
-						["achievementID"] = 10818,	-- Darkbough
-						["criteriaID"] = 1,			-- Nythendra
-					},
+					}),
+					ach(10818, crit(1)),	-- Darkbough / Nythendra
 					i(139636),	-- Vantus Rune Technique: Nythendra [Rank 1]
 					i(137748),	-- Vantus Rune Technique: Nythendra [Rank 2]
 					i(139214),	-- Greyed Dragonscale Coif
@@ -356,10 +326,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
 					ach(10830),	-- Took the Red Eye Down
-					{	-- Darkbough (Il'gynoth, Heart of Corruption)
-						["achievementID"] = 10818,	-- Darkbough
-						["criteriaID"] = 3,			-- Il'gynoth, Heart of Corruption
-					},
+					ach(10818, crit(3)),	-- Darkbough / Il'gynoth, Heart of Corruption
 					i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1]
 					i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2]
 					i(139569, {	-- Claw of N'Zoth
@@ -385,10 +352,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(106087, e(1744, {	-- Elerethe Renferal
 					ach(10771),	-- Webbing Crashers
-					{	-- Darkbough (Elereth Renferal)
-						["achievementID"] = 10818,	-- Darkbough
-						["criteriaID"] = 2,			-- Elerethe Renferal
-					},
+					ach(10818, crit(2)),	-- Darkbough / Elerethe Renferal
 					i(128611),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 3]
 					i(139640),	-- Vantus Rune Technique: Elerethe Renferal [Rank 1]
 					i(137752),	-- Vantus Rune Technique: Elerethe Renferal [Rank 2]
@@ -410,10 +374,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(100497, e(1667, {	-- Ursoc
 					ach(10753),	-- Scare Bear
-					{	-- Tormented Guardians (Ursoc)
-						["achievementID"] = 10819,	-- Tormented Guardians
-						["criteriaID"] = 1,			-- Ursoc
-					},
+					ach(10819, crit(1)),	-- Tormented Guardians / Ursoc
 					i(141917),	-- Formula: Enchant Neck - Mark of the Heavy Hide [Rank 3]
 					i(139635),	-- Vantus Rune Technique: Ursoc [Rank 1]
 					i(137747),	-- Vantus Rune Technique: Ursoc [Rank 2]
@@ -442,10 +403,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(102679, e(1704, {	-- Dragons of Nightmare (Ysondre)
 					ach(10663),	-- Imagined Dragons World Tour
-					{	-- Tormented Guardians (Dragons of Nightmare)
-						["achievementID"] = 10819,	-- Tormented Guardians
-						["criteriaID"] = 2,			-- Dragons of Nightmare
-					},
+					ach(10819, crit(2)),	-- Tormented Guardians / Dragons of Nightmare
 					i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1]
 					i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2]
 					i(139562, {	-- Breath of the Undying Serpent
@@ -475,14 +433,10 @@ _.Instances = { tier(7, {	-- Legion
 						crit(3),	-- Wisps Uncleansed
 						crit(4),	-- Drakes Uncleansed
 					}),
-					{	-- Tormented Guardians (Cenarius)
-						["achievementID"] = 10819,	-- Tormented Guardians
-						["criteriaID"] = 3,			-- Cenarius
-					},
-					{	-- The Emerald Nightmare: Piercing the Veil
-						["itemID"] = 141303,	-- Essence of Clarity
+					ach(10819, crit(3)),	-- Tormented Guardians / Cenarius
+					i(141303, {	-- Essence of Clarity
 						["questID"] = 44283,	-- The Emerald Nightmare: Piercing the Veil
-					},
+					}),
 					i(127934),	-- Recipe: Spirit Cauldron [Rank 2]
 					i(139641),	-- Vantus Rune Technique: Cenarius [Rank 1]
 					i(137753),	-- Vantus Rune Technique: Cenarius [Rank 2]
@@ -524,49 +478,45 @@ _.Instances = { tier(7, {	-- Legion
 					i(139269),	-- Crystallized Drop of Eternity
 					i(139266),	-- Fragment of Eternal Spite
 					i(139268),	-- Nightmarish Elm Branch
+					i(146690),	-- Xavius' Torn Spellsash (Leatherworking QI)
 				})),
 			}),
 			d(15, {	-- Heroic
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["groups"] = {
-						{	-- Cache of Nightmarish Treasures [Heroic]
-							["itemID"] = 139487,	-- Cache of Nightmarish Treasures [Heroic]
+					["g"] = {
+						i(139487, {	-- Cache of Nightmarish Treasures [Heroic]
 							["u"] = 2,
 							["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-						},
-						{	-- The Emerald Nightmare: Il'gynoth [Heroic]
-							["itemID"] = 139482,	-- Corrupted Egg Fragment [Heroic]
+						}),
+						i(139482, {	-- Corrupted Egg Fragment [Heroic]
 							["questID"] = 43548,	-- The Emerald Nightmare: Il'gynoth [Heroic]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
 							},
-						},
-						{	-- The Emerald Nightmare: Fall of Cenarius [Heroic]
-							["itemID"] = 140167,	-- Tainted Moonglade Leaf [Heroic]
+						}),
+						i(140167, {	-- Tainted Moonglade Leaf [Heroic]
 							["questID"] = 43906,	-- The Emerald Nightmare: Fall of Cenarius [Heroic]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
 							},
-						},
-						{	-- The Emerald Nightmare: Xavius [Heroic]
-							["itemID"] = 140168,	-- Vial of Swirling Shadow [Heroic]
+						}),
+						i(140168, {	-- Vial of Swirling Shadow [Heroic]
 							["questID"] = 43907,	-- The Emerald Nightmare: Xavius [Heroic]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
 							},
-						},
-						{	-- The Emerald Nightmare: Piercing the Veil [Heroic]
-							["questID"] = 44284,	-- The Emerald Nightmare: Piercing the Veil [Heroic]
+						}),
+						i(44284, {	-- The Emerald Nightmare: Piercing the Veil [Heroic]
 							["provider"] = { "n", 106482 },	-- Malfurion Stormrage
 							["description"] = "This quest requires you to kill Cenarius in Emerald nightmare 4 times.\n\nThe reward is skipping the 4 bosses and getting instantly to Cenarius.",
-						},
+						}),
 					},
 				}),
 				n(COMMON_BOSS_DROPS, {
@@ -583,14 +533,10 @@ _.Instances = { tier(7, {	-- Legion
 					i(141695),	-- Tarnished Dreamkeeper's Gauntlets
 				}),
 				cr(102672, e(1703, {	-- Nythendra
-					{	-- Buggy Fight
-						["achievementID"] = 10555,	-- Buggy Fight
+					ach(10555, {	-- Buggy Fight
 						["creatureID"] = 105097,	-- Glow Bug
-					},
-					{	-- Darkbough (Nythendra)
-						["achievementID"] = 10818,	-- Darkbough
-						["criteriaID"] = 1,			-- Nythendra
-					},
+					}),
+					ach(10818, crit(1)),	-- Darkbough / Nythendra
 					i(139636),	-- Vantus Rune Technique: Nythendra [Rank 1]
 					i(137748),	-- Vantus Rune Technique: Nythendra [Rank 2]
 					i(139214),	-- Greyed Dragonscale Coif
@@ -610,10 +556,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
 					ach(10830),	-- Took the Red Eye Down
-					{	-- Darkbough (Il'gynoth)
-						["achievementID"] = 10818,	-- Darkbough
-						["criteriaID"] = 3,			-- Il'gynoth, Heart of Corruption
-					},
+					ach(10818, crit(3)),	-- Darkbough / Il'gynoth, Heart of Corruption
 					i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1]
 					i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2]
 					i(139569, {	-- Claw of N'Zoth
@@ -639,10 +582,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(106087, e(1744, {	-- Elerethe Renferal
 					ach(10771),	-- Webbing Crashers
-					{	-- Darkbough (Elerethe Renferal)
-						["achievementID"] = 10818,	-- Darkbough
-						["criteriaID"] = 2,			-- Elerethe Renferal
-					},
+					ach(10818, crit(2)),	-- Darkbough / Elerethe Renferal
 					i(128611),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 3]
 					i(139640),	-- Vantus Rune Technique: Elerethe Renferal [Rank 1]
 					i(137752),	-- Vantus Rune Technique: Elerethe Renferal [Rank 2]
@@ -664,10 +604,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(100497, e(1667, {	-- Ursoc
 					ach(10753),	-- Scare Bear
-					{	-- Tormented Guardians (Ursoc)
-						["achievementID"] = 10819,	-- Tormented Guardians
-						["criteriaID"] = 1,			-- Ursoc
-					},
+					ach(10819, crit(1)),	-- Tormented Guardians / Ursoc
 					i(141917),	-- Formula: Enchant Neck - Mark of the Heavy Hide [Rank 3]
 					i(139635),	-- Vantus Rune Technique: Ursoc [Rank 1]
 					i(137747),	-- Vantus Rune Technique: Ursoc [Rank 2]
@@ -696,10 +633,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(102679, e(1704, {	-- Dragons of Nightmare (Ysondre)
 					ach(10663),	-- Imagined Dragons World Tour
-					{	-- Tormented Guardians (Dragons of Nightmare)
-						["achievementID"] = 10819,	-- Tormented Guardians
-						["criteriaID"] = 2,			-- Dragons of Nightmare
-					},
+					ach(10819, crit(2)),	-- Tormented Guardians / Dragons of Nightmare
 					i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1]
 					i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2]
 					i(139562, {	-- Breath of the Undying Serpent
@@ -729,14 +663,10 @@ _.Instances = { tier(7, {	-- Legion
 						crit(3),	-- Wisps Uncleansed
 						crit(4),	-- Drakes Uncleansed
 					}),
-					{	-- Tormented Guardians (Cenarius)
-						["achievementID"] = 10819,	-- Tormented Guardians
-						["criteriaID"] = 3,			-- Cenarius
-					},
-					{	-- The Emerald Nightmare: Piercing the Veil
-						["itemID"] = 141304,	-- Essence of Clarity [Heroic]
+					ach(10819, crit(3)),	-- Tormented Guardians / Cenarius
+					i(141304, {	-- Essence of Clarity [Heroic]
 						["questID"] = 44284,	-- The Emerald Nightmare: Piercing the Veil [Heroic]
-					},
+					}),
 					i(127934),	-- Recipe: Spirit Cauldron [Rank 2]
 					i(139641),	-- Vantus Rune Technique: Cenarius [Rank 1]
 					i(137753),	-- Vantus Rune Technique: Cenarius [Rank 2]
@@ -756,10 +686,9 @@ _.Instances = { tier(7, {	-- Legion
 					i(139264),	-- Uplifting Emerald
 				})),
 				cr(103769, e(1726, {	-- Xavius <Nightmare Lord>
-					{	-- Ahead of the Curve: Xavius
-						["achievementID"] = 11194,	-- Ahead of the Curve: Xavius
+					ach(11194, {	-- Ahead of the Curve: Xavius
 						["u"] = 2,	-- Legacy Achievement
-					},
+					}),
 					ach(10755),	-- I Attack the Darkness
 					ach(10820),	-- Rift of Aln
 					i(128612),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 3]
@@ -783,49 +712,45 @@ _.Instances = { tier(7, {	-- Legion
 					i(139269),	-- Crystallized Drop of Eternity
 					i(139266),	-- Fragment of Eternal Spite
 					i(139268),	-- Nightmarish Elm Branch
+					i(146690),	-- Xavius' Torn Spellsash (Leatherworking QI)
 				})),
 			}),
 			d(16, {	-- Mythic
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["groups"] = {
-						{	-- Cache of Nightmarish Treasures [Mythic]
-							["itemID"] = 139488,	-- Cache of Nightmarish Treasures [Mythic]
+					["g"] = {
+						i(139488, {	-- Cache of Nightmarish Treasures [Mythic]
 							["u"] = 2,
 							["sym"] = {{"select", "instanceID", 768}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-						},
-						{	-- The Emerald Nightmare: Il'gynoth [Mythic]
-							["itemID"] = 139483,	-- Corrupted Egg Fragment [Mythic]
+						}),
+						i(139483, {	-- Corrupted Egg Fragment [Mythic]
 							["questID"] = 43549,	-- The Emerald Nightmare: Il'gynoth [Mythic]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
 							},
-						},
-						{	-- The Emerald Nightmare: Fall of Cenarius [Mythic]
-							["itemID"] = 140169,	-- Tainted Moonglade Leaf [Mythic]
+						}),
+						i(140169, {	-- Tainted Moonglade Leaf [Mythic]
 							["questID"] = 43908,	-- The Emerald Nightmare: Fall of Cenarius [Mythic]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
 							},
-						},
-						{	-- The Emerald Nightmare: Xavius [Mythic]
-							["itemID"] = 140170,	-- Vial of Swirling Shadow [Mythic]
+						}),
+						i(140170, {	-- Vial of Swirling Shadow [Mythic]
 							["questID"] = 43909,	-- The Emerald Nightmare: Xavius [Mythic]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
 							},
-						},
-						{	-- The Emerald Nightmare: Piercing the Veil [Mythic]
-							["questID"] = 44285,	-- The Emerald Nightmare: Piercing the Veil [Mythic]
+						}),
+						i(44285, {	-- The Emerald Nightmare: Piercing the Veil [Mythic]
 							["provider"] = { "n", 106482 },	-- Malfurion Stormrage
 							["description"] = "This quest requires you to kill Cenarius in Emerald nightmare 4 times.\n\nThe reward is skipping the 4 bosses and getting instantly to Cenarius.",
-						},
+						}),
 					},
 				}),
 				n(COMMON_BOSS_DROPS, {
@@ -842,15 +767,10 @@ _.Instances = { tier(7, {	-- Legion
 					i(141695),	-- Tarnished Dreamkeeper's Gauntlets
 				}),
 				cr(102672, e(1703, {	-- Nythendra
-					{	-- Buggy Fight
-						["achievementID"] = 10555,	-- Buggy Fight
+					ach(10555, {	-- Buggy Fight
 						["creatureID"] = 105097,	-- Glow Bug
-					},
-					ach(10821),	-- Mythic: Nythendra
-					{	-- Darkbough (Nythendra)
-						["achievementID"] = 10818,	-- Darkbough
-						["criteriaID"] = 1,			-- Nythendra
-					},
+					}),
+					ach(10818, crit(1)),	-- Darkbough / Nythendra
 					i(139636),	-- Vantus Rune Technique: Nythendra [Rank 1]
 					i(137748),	-- Vantus Rune Technique: Nythendra [Rank 2]
 					i(139214),	-- Greyed Dragonscale Coif
@@ -870,10 +790,7 @@ _.Instances = { tier(7, {	-- Legion
 				})),
 				cr(105393, e(1738, {	-- Il'gynoth, Heart of Corruption
 					ach(10830),	-- Took the Red Eye Down
-					{	-- Darkbough (Il'gynoth)
-						["achievementID"] = 10818,	-- Darkbough
-						["criteriaID"] = 3,			-- Il'gynoth, Heart of Corruption
-					},
+					ach(10818, crit(3)),	-- Darkbough / Il'gynoth, Heart of Corruption
 					i(139637),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 1]
 					i(137749),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 2]
 					i(139569, {	-- Claw of N'Zoth
@@ -900,10 +817,7 @@ _.Instances = { tier(7, {	-- Legion
 				cr(106087, e(1744, {	-- Elerethe Renferal
 					ach(10771),	-- Webbing Crashers
 					ach(10822),	-- Mythic: Elerethe Renferal
-					{	-- Darkbough (Elerethe Renferal)
-						["achievementID"] = 10818,	-- Darkbough
-						["criteriaID"] = 2,			-- Elerethe Renferal
-					},
+					ach(10818, crit(2)),	-- Darkbough / Elerethe Renferal
 					i(128611),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 3]
 					i(139640),	-- Vantus Rune Technique: Elerethe Renferal [Rank 1]
 					i(137752),	-- Vantus Rune Technique: Elerethe Renferal [Rank 2]
@@ -926,10 +840,7 @@ _.Instances = { tier(7, {	-- Legion
 				cr(100497, e(1667, {	-- Ursoc
 					ach(10753),	-- Scare Bear
 					ach(10824),	-- Mythic: Ursoc
-					{	-- Tormented Guardians (Ursoc)
-						["achievementID"] = 10819,	-- Tormented Guardians
-						["criteriaID"] = 1,			-- Ursoc
-					},
+					ach(10819, crit(1)),	-- Tormented Guardians / Ursoc
 					i(141917),	-- Formula: Enchant Neck - Mark of the Heavy Hide [Rank 3]
 					i(139635),	-- Vantus Rune Technique: Ursoc [Rank 1]
 					i(137747),	-- Vantus Rune Technique: Ursoc [Rank 2]
@@ -959,10 +870,7 @@ _.Instances = { tier(7, {	-- Legion
 				cr(102679, e(1704, {	-- Dragons of Nightmare (Ysondre)
 					ach(10663),	-- Imagined Dragons World Tour
 					ach(10825),	-- Mythic: Dragons of Nightmare
-					{	-- Tormented Guardians (Dragons of Nightmare)
-						["achievementID"] = 10819,	-- Tormented Guardians
-						["criteriaID"] = 2,			-- Dragons of Nightmare
-					},
+					ach(10819, crit(2)),	-- Tormented Guardians / Dragons of Nightmare
 					i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1]
 					i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2]
 					i(139562, {	-- Breath of the Undying Serpent
@@ -993,14 +901,10 @@ _.Instances = { tier(7, {	-- Legion
 						crit(4),	-- Drakes Uncleansed
 					}),
 					ach(10826),	-- Mythic: Cenarius
-					{	-- Tormented Guardians (Cenarius)
-						["achievementID"] = 10819,	-- Tormented Guardians
-						["criteriaID"] = 3,			-- Cenarius
-					},
-					{	-- The Emerald Nightmare: Piercing the Veil (Mythic)
-						["itemID"] = 141305,	-- Essence of Clarity [Mythic]
+					ach(10819, crit(3)),	-- Tormented Guardians / Cenarius
+					i(141305, {	-- Essence of Clarity [Mythic]
 						["questID"] = 44285,	-- The Emerald Nightmare: Piercing the Veil [Mythic]
-					},
+					}),
 					i(127934),	-- Recipe: Spirit Cauldron [Rank 2]
 					i(139641),	-- Vantus Rune Technique: Cenarius [Rank 1]
 					i(137753),	-- Vantus Rune Technique: Cenarius [Rank 2]
@@ -1020,18 +924,15 @@ _.Instances = { tier(7, {	-- Legion
 					i(139264),	-- Uplifting Emerald
 				})),
 				cr(103769, e(1726, {	-- Xavius <Nightmare Lord>
-					{	-- Ahead of the Curve: Xavius
-						["achievementID"] = 11194,	-- Ahead of the Curve: Xavius
+					ach(11194, {	-- Ahead of the Curve: Xavius
 						["u"] = 2,	-- Legacy Achievement
-					},
-					{	-- Cutting Edge: Xavius
-						["achievementID"] = 11191,	-- Cutting Edge: Xavius
+					}),
+					ach(11191, {	-- Cutting Edge: Xavius
 						["u"] = 2,	-- Legacy Achievement
-					},
-					{	-- Realm First! Xavius
-						["achievementID"] = 10854,	-- Realm First! Xavius
+					}),
+					ach(10854, {	-- Realm First! Xavius
 						["u"] = 2,	-- Legacy Achievement
-					},
+					}),
 					ach(10755),	-- I Attack the Darkness
 					ach(10820),	-- Rift of Aln
 					ach(10827, {	-- Mythic: Xavius
@@ -1058,6 +959,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(139269),	-- Crystallized Drop of Eternity
 					i(139266),	-- Fragment of Eternal Spite
 					i(139268),	-- Nightmarish Elm Branch
+					i(146690),	-- Xavius' Torn Spellsash (Leatherworking QI)
 				})),
 			}),
 		},

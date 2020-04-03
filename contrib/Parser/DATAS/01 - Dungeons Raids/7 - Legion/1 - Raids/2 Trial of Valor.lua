@@ -164,10 +164,7 @@ _.Instances = { tier(7, {	-- Legion
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						cr(114263, e(1819, {	-- Odyn
-							{	-- Odyn (Trial of Valor)
-								["achievementID"] = 11394,	-- Trial of Valor
-								["criteriaID"] = 1,			-- Odyn
-							},
+							ach(11394, crit(1)),	-- Trial of Valor / Odyn
 							i(142110),	-- Vantus Rune Technique: Odyn [Rank 1]
 							i(142104),	-- Vantus Rune Technique: Odyn [Rank 2]
 							i(142540),	-- Mantle of the Victorious Dead
@@ -186,10 +183,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(142511),	-- Unforged Titansteel
 						})),
 						cr(114323, e(1830, {	-- Guarm
-							{	-- Guarm (Trial of Valor)
-								["achievementID"] = 11394,	-- Trial of Valor
-								["criteriaID"] = 2,			-- Guarm
-							},
+							ach(11394, crit(2)),	-- Trial of Valor / Guarm
 							i(142111),	-- Vantus Rune Technique: Guarm [Rank 1]
 							i(142105),	-- Vantus Rune Technique: Guarm [Rank 2]
 							i(142412),	-- Windwhipped Sailcloth
@@ -207,10 +201,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(142516),	-- Sizzling Fang
 						})),
 						cr(114537, e(1829, {	-- Helya
-							{	-- Helya (Trial of Valor)
-								["achievementID"] = 11394,	-- Trial of Valor
-								["criteriaID"] = 3,			-- Helya
-							},
+							ach(11394, crit(3)),	-- Trial of Valor / Helya
 							i(142112),	-- Vantus Rune Technique: Helya [Rank 1]
 							i(142106),	-- Vantus Rune Technique: Helya [Rank 2]
 							i(142428),	-- Sea Fan Pendant
@@ -228,6 +219,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(142510),	-- Phylactery of Unwilling Servitude
 							i(142517),	-- Swell of the Tides
 							i(142513),	-- Token of the Lightning Keeper
+							i(146706),	-- Frostveined Shale (Blacksmithing QI)
 						})),
 					},
 				}),
@@ -237,10 +229,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
 				cr(114263, e(1819, {	-- Odyn
-					{	-- Odyn (Trial of Valor)
-						["achievementID"] = 11394,	-- Trial of Valor
-						["criteriaID"] = 1,			-- Odyn
-					},
+					ach(11394, crit(1)),	-- Trial of Valor / Odyn
 					ach(11337),	-- You Runed Everything!
 					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1]
 					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2]
@@ -265,11 +254,8 @@ _.Instances = { tier(7, {	-- Legion
 						114323,	-- Guarm
 					},
 					["g"] = {
+						ach(11394, crit(2)),	-- Trial of Valor / Guarm
 						ach(11386),	-- Boneafide Tri Tip
-						{	-- Guarm (Trial of Valor)
-							["achievementID"] = 11394,	-- Trial of Valor
-							["criteriaID"] = 2,			-- Guarm
-						},
 						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1]
 						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2]
 						i(142412),	-- Windwhipped Sailcloth
@@ -288,11 +274,8 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				cr(114537, e(1829, {	-- Helya
+					ach(11394, crit(3)),	-- Trial of Valor / Helya
 					ach(11377),	-- Patient Zero
-					{	-- Helya (Trial of Valor)
-						["achievementID"] = 11394,	-- Trial of Valor
-						["criteriaID"] = 3,			-- Helya
-					},
 					i(142112),	-- Vantus Rune Technique: Helya [Rank 1]
 					i(142106),	-- Vantus Rune Technique: Helya [Rank 2]
 					i(142428),	-- Sea Fan Pendant
@@ -310,6 +293,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(142510),	-- Phylactery of Unwilling Servitude
 					i(142517),	-- Swell of the Tides
 					i(142513),	-- Token of the Lightning Keeper
+					i(146706),	-- Frostveined Shale (Blacksmithing QI)
 				}))
 			}),
 			d(15,  {	-- Heroic
@@ -383,14 +367,8 @@ _.Instances = { tier(7, {	-- Legion
 					}),	
 				}),
 				cr(114263, e(1819, {	-- Odyn
-					{	-- Odyn (Trial of Valor)
-						["achievementID"] = 11394,	-- Trial of Valor
-						["criteriaID"] = 1,			-- Odyn
-					},
-					{	-- Odyn (Heroic: Trial of Valor)
-						["achievementID"] = 11426,	-- Heroic: Trial of Valor
-						["criteriaID"] = 1,			-- Odyn
-					},
+					ach(11394, crit(1)),	-- Trial of Valor / Odyn
+					ach(11426, crit(1)),	-- Heroic: Trial of Valor / Odyn
 					ach(11337),	-- You Runed Everything!
 					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1]
 					i(142104),	-- Vantus Rune Technique: Odyn [Rank 2]
@@ -415,15 +393,9 @@ _.Instances = { tier(7, {	-- Legion
 						114323,	-- Guarm
 					},
 					["g"] = {
+						ach(11394, crit(2)),	-- Trial of Valor / Guarm
+						ach(11426, crit(2)),	-- Heroic: Trial of Valor / Guarm
 						ach(11386),	-- Boneafide Tri Tip
-						{	-- Guarm (Trial of Valor)
-							["achievementID"] = 11394,	-- Trial of Valor
-							["criteriaID"] = 2,	-- Guarm
-						},
-						{	-- Guarm (Heroic: Trial of Valor)
-							["achievementID"] = 11426,	-- Heroic: Trial of Valor
-							["criteriaID"] = 2,	-- Guarm
-						},
 						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1]
 						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2]
 						i(142412),	-- Windwhipped Sailcloth
@@ -442,18 +414,11 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				cr(114537, e(1829, {	-- Helya
-					{	-- Ahead of the Curve: Helya
-						["achievementID"] = 11581,	-- Ahead of the Curve: Helya
+					ach(11581, {	-- Ahead of the Curve: Helya
 						["u"] = 2,	-- Legacy Achievement
-					},
-					{	-- Helya (Trial of Valor)
-						["achievementID"] = 11394,	-- Trial of Valor
-						["criteriaID"] = 3,			-- Helya
-					},
-					{	-- Helya (Heroic: Trial of Valor)
-						["achievementID"] = 11426,	-- Heroic: Trial of Valor
-						["criteriaID"] = 3,			-- Heroic: Helya
-					},
+					}),
+					ach(11394, crit(3)),	-- Trial of Valor / Helya
+					ach(11426, crit(3)),	-- Heroic: Trial of Valor / Helya
 					ach(11377),	-- Patient Zero
 					i(142112),	-- Vantus Rune Technique: Helya [Rank 1]
 					i(142106),	-- Vantus Rune Technique: Helya [Rank 2]
@@ -472,6 +437,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(142510),	-- Phylactery of Unwilling Servitude
 					i(142517),	-- Swell of the Tides
 					i(142513),	-- Token of the Lightning Keeper
+					i(146706),	-- Frostveined Shale (Blacksmithing QI)
 				}))
 			}),
 			d(16, {	-- Mythic
@@ -479,14 +445,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
 				cr(114263, e(1819, {	-- Odyn
-					{	-- Odyn (Trial of Valor)
-						["achievementID"] = 11394,	-- Trial of Valor
-						["criteriaID"] = 1,			-- Odyn
-					},
-					{	-- Odyn (Heroic: Trial of Valor)
-						["achievementID"] = 11426,	-- Heroic: Trial of Valor
-						["criteriaID"] = 1,	-- Odyn
-					},
+					ach(11394, crit(1)),	-- Trial of Valor / Odyn
+					ach(11426, crit(1)),	-- Heroic: Trial of Valor / Odyn
 					ach(11396),	-- Mythic: Odyn
 					ach(11337),	-- You Runed Everything!
 					i(142110),	-- Vantus Rune Technique: Odyn [Rank 1]
@@ -512,16 +472,10 @@ _.Instances = { tier(7, {	-- Legion
 						114323,	-- Guarm
 					},
 					["g"] = {
-						ach(11386),	-- Boneafide Tri Tip
-						{	-- Guarm (Trial of Valor)
-							["achievementID"] = 11394,	-- Trial of Valor
-							["criteriaID"] = 2,			-- Guarm
-						},
-						{	-- Guarm (Heroic: Trial of Valor)
-							["achievementID"] = 11426,	-- Heroic: Trial of Valor
-							["criteriaID"] = 2,	-- Guarm
-						},
+						ach(11394, crit(2)),	-- Trial of Valor / Guarm
+						ach(11426, crit(2)),	-- Heroic: Trial of Valor / Guarm
 						ach(11397),	-- Mythic: Guarm
+						ach(11386),	-- Boneafide Tri Tip
 						i(142111),	-- Vantus Rune Technique: Guarm [Rank 1]
 						i(142105),	-- Vantus Rune Technique: Guarm [Rank 2]
 						i(142412),	-- Windwhipped Sailcloth
@@ -546,16 +500,10 @@ _.Instances = { tier(7, {	-- Legion
 					ach(11580, {	-- Cutting Edge: Helya
 						["u"] = 2,	-- Legacy Achievement
 					}),
-					{				-- Helya (Trial of Valor)
-						["achievementID"] = 11394,	-- Trial of Valor
-						["criteriaID"] = 3,	-- Helya
-					},
-					{				-- Helya (Heroic: Trial of Valor)
-						["achievementID"] = 11426,	-- Heroic: Trial of Valor
-						["criteriaID"] = 3,	-- Helya
-					},
-					ach(11398),		-- Mythic: Helya
-					ach(11377),		-- Patient Zero
+					ach(11394, crit(3)),	-- Trial of Valor / Helya
+					ach(11426, crit(3)),	-- Heroic: Trial of Valor / Helya
+					ach(11398),	-- Mythic: Helya
+					ach(11377),	-- Patient Zero
 					ach(11405, {	-- Realm First! Helya
 						["u"] = 2,	-- Legacy Achievement
 					}),
@@ -645,6 +593,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(142510),	-- Phylactery of Unwilling Servitude
 					i(142517),	-- Swell of the Tides
 					i(142513),	-- Token of the Lightning Keeper
+					i(146706),	-- Frostveined Shale (Blacksmithing QI)
 				})),
 			}),
 		},

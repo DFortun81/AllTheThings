@@ -87,10 +87,18 @@ _.Zones =
 					}),
 				}),
 				ach(5861, {	-- The Fiery Lords of Sethria's Roost
-					crit(3),	-- Andrazor slain
-					crit(4),	-- Fah Jarakk slain
-					crit(2),	-- Kelbnar slain
-					crit(1),	-- Searris slain
+					crit(3, {	-- Andrazor slain
+						["cr"] = 53267,	-- Andrazor
+					}),
+					crit(4, {	-- Fah Jarakk slain
+						["cr"] = 53271,	-- Fah Jarakk
+					}),
+					crit(2, {	-- Kelbnar slain
+						["cr"] = 53265,	-- Kelbnar
+					}),
+					crit(1, {	-- Searris slain
+						["cr"] = 53264,	-- Searris
+					}),
 				}),
 			}),
 		}),

@@ -8,65 +8,65 @@ _.Instances = { tier(1, {	-- Classic
 		["maps"] = { 310, 311, 312, 313, 314, 315, 316 },
 		["lvl"] = 11,
 		["g"] = {
-			d(1, {		-- Normal
-				n(QUESTS, {
-					q(27917, { 	-- Sniffing Them Out
-						["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(27920, { 	-- Armored to the Teeth
-						["sourceQuests"] = { 27917 },	-- Sniffing Them Out
-						["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(27921, { 	-- Fighting Tooth and Claw
-						["sourceQuests"] = { 27920 },	-- Armored to the Teeth
-						["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(27968, { 	-- Fury of the Pack
-						["sourceQuests"] = { 27921 },	-- Fighting Tooth and Claw
-						["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
-						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							i(65984), 	-- Breastplate of the Terrible Price
-							i(66002), 	-- Packleader's Pauldrons
-							i(65960), 	-- Shadowfang Shoulderpads
-							i(65936), 	-- Sandals of Sacrifice
-							i(65910), 	-- Godfrey's Britches
-							i(131684), 	-- Packleader's Chain Spaulders
-							i(131685), 	-- Boots of Painful Cost
-						},
-					}),
-					q(27974, { 	-- This Land is Our Land
-						["provider"] = { "n", 47293 },	-- Deathstalker Commander Belmont
-						["races"] = HORDE_ONLY,
-					}),
-					q(27988, { 	-- Plague...Plague Everywhere!
-						["sourceQuests"] = { 27974 },	-- This Land is Our Land
-						["provider"] = { "n", 47293 },	-- Deathstalker Commander Belmont
-						["races"] = HORDE_ONLY,
-					}),
-					q(27996, { 	-- Orders Are For the Living
-						["sourceQuests"] = { 27988 },	-- Plague...Plague Everywhere!
-						["provider"] = { "n", 47293 },	-- Deathstalker Commander Belmont
-						["races"] = HORDE_ONLY,
-					}),
-					q(27998, { 	-- Sweet, Merciless Revenge
-						["sourceQuests"] = { 27988 },	-- Plague...Plague Everywhere!
-						["provider"] = { "n", 47293 },	-- Deathstalker Commander Belmont
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(66038), 	-- Breastplate of the Terrible Price
-							i(66044), 	-- Deathstalker Pauldrons
-							i(66029), 	-- Shadowfanger Shoulderpads
-							i(66020), 	-- Sandals of Sacrifice
-							i(66011), 	-- Godfrey's Britches
-							i(131686),	-- Packleader's Chain Spaulders
-							i(131687), 	-- Boots of Painful Cost
-						},
-					}),
+			n(QUESTS, {
+				q(27917, { 	-- Sniffing Them Out
+					["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
+					["races"] = ALLIANCE_ONLY,
 				}),
+				q(27920, { 	-- Armored to the Teeth
+					["sourceQuests"] = { 27917 },	-- Sniffing Them Out
+					["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(27921, { 	-- Fighting Tooth and Claw
+					["sourceQuests"] = { 27920 },	-- Armored to the Teeth
+					["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(27968, { 	-- Fury of the Pack
+					["sourceQuests"] = { 27921 },	-- Fighting Tooth and Claw
+					["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(65984), 	-- Breastplate of the Terrible Price
+						i(66002), 	-- Packleader's Pauldrons
+						i(65960), 	-- Shadowfang Shoulderpads
+						i(65936), 	-- Sandals of Sacrifice
+						i(65910), 	-- Godfrey's Britches
+						i(131684), 	-- Packleader's Chain Spaulders
+						i(131685), 	-- Boots of Painful Cost
+					},
+				}),
+				q(27974, { 	-- This Land is Our Land
+					["provider"] = { "n", 47293 },	-- Deathstalker Commander Belmont
+					["races"] = HORDE_ONLY,
+				}),
+				q(27988, { 	-- Plague...Plague Everywhere!
+					["sourceQuests"] = { 27974 },	-- This Land is Our Land
+					["provider"] = { "n", 47293 },	-- Deathstalker Commander Belmont
+					["races"] = HORDE_ONLY,
+				}),
+				q(27996, { 	-- Orders Are For the Living
+					["sourceQuests"] = { 27988 },	-- Plague...Plague Everywhere!
+					["provider"] = { "n", 47293 },	-- Deathstalker Commander Belmont
+					["races"] = HORDE_ONLY,
+				}),
+				q(27998, { 	-- Sweet, Merciless Revenge
+					["sourceQuests"] = { 27988 },	-- Plague...Plague Everywhere!
+					["provider"] = { "n", 47293 },	-- Deathstalker Commander Belmont
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(66038), 	-- Breastplate of the Terrible Price
+						i(66044), 	-- Deathstalker Pauldrons
+						i(66029), 	-- Shadowfanger Shoulderpads
+						i(66020), 	-- Sandals of Sacrifice
+						i(66011), 	-- Godfrey's Britches
+						i(131686),	-- Packleader's Chain Spaulders
+						i(131687), 	-- Boots of Painful Cost
+					},
+				}),
+			}),
+			d(1, {		-- Normal
 				n(ZONEDROPS, {
 					i(1935, {	-- Assassin's Blade
 						["crs"] = {

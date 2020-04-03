@@ -27,53 +27,48 @@ _.Instances = { tier(7, {	-- Legion
 			d(17, {		-- LFR
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["groups"] = {
-						{	-- Cache of Nightborne Treasures [Raid Finder]
-							["itemID"] = 140148,	-- Cache of Nightborne Treasures [Raid Finder]
+					["g"] = {
+						i(140148, {	-- Cache of Nightborne Treasures [Raid Finder]
 							["u"] = 2,
 							["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-						},
-						{	-- Ancient Nightborne Tome [Raid Finder]
-							["itemID"] = 140172,	-- Ancient Nightborne Tome [Raid Finder]
+						}),
+						i(140172, {	-- Ancient Nightborne Tome [Raid Finder]
 							["questID"] = 43911,	-- The Nighthold: Elisande [Raid Finder]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(140148)),	-- Cache of Nightborne Treasures [Raid Finder]
 							},
-						},
-						{	-- The Nighthold: High Botanist Tel'arn [Raid Finder]
-							["itemID"] = 140171,	-- Glowing Lily [Raid Finder]
+						}),
+						i(140171, {	-- Glowing Lily [Raid Finder]
 							["questID"] = 43910,	-- The Nighthold: High Botanist Tel'arn [Raid Finder]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(140148)),	-- Cache of Nightborne Treasures [Raid Finder]
 							},
-						},
-						{	-- The Nighthold: Vaults [Raid Finder]
-							["itemID"] = 140147,	-- Pulsauron Bindings [Raid Finder]
+						}),
+						i(140147, {	-- Pulsauron Bindings [Raid Finder]
 							["questID"] = 43882,	-- The Nighthold: Vaults [Raid Finder]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(140148)),	-- Cache of Nightborne Treasures [Raid Finder]
 							},
-						},
-						{	-- The Nighthold: Gul'dan [Raid Finder]
-							["itemID"] = 140173,	-- Shred of Tattered Robe [Raid Finder]
+						}),
+						i(140173, {	-- Shred of Tattered Robe [Raid Finder]
 							["questID"] = 43912,	-- The Nighthold: Gul'dan [Raid Finder]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(140148)),	-- Cache of Nightborne Treasures [Raid Finder]
 							},
-						},
+						}),
 					},
 				}),
 				n(ZONEDROPS, {
 					["crs"] = { 111246 },	-- Archmage Timear
-					["groups"] = {
+					["g"] = {
 						i(144399),	-- Aristocrat's Winter Drape
 						i(144401),	-- Cloak of Multitudinous Sheaths
 						i(144403),	-- Fashionable Autumn Cloak
@@ -86,12 +81,9 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 				ach(10829, { 	-- Arcing Aqueducts
 					["crs"] = { 111246 },	-- Archmage Timear
-					["groups"] = {
+					["g"] = {
 						cr(102263, e(1706, {	-- Skorpyron
-							{	-- Skorpyron (Arcing Aqueducts)
-								["achievementID"] = 10829,	-- Arcing Aqueducts
-								["criteriaID"] = 1,			-- Skorpyron
-							},
+							ach(10829, crit(1)),	-- Arcing Aqueducts / Skorpyron
 							i(139642),	-- Vantus Rune Technique: Skorpyron [Rank 1]
 							i(137754),	-- Vantus Rune Technique: Skorpyron [Rank 2]
 							i(140901),	-- Vintage Suramar Nobility Hat
@@ -110,10 +102,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(140827),	-- Manatoxin Gland
 						})),
 						cr(104415, e(1725, {	-- Chronomatic Anomaly
-							{	-- Chronomatic Anomaly (Arcing Aqueducts)
-								["achievementID"] = 10829,	-- Arcing Aqueducts
-								["criteriaID"] = 2,			-- Chronomatic Anomaly
-							},
+							ach(10829, crit(2)),	-- Arcing Aqueducts / Chronomatic Anomaly
 							i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1]
 							i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2]
 							i(138828),	-- Illusion: Chronos
@@ -133,10 +122,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(140831),	-- Suspended Nightwell Droplet
 						})),
 						cr(104288, e(1731, {	-- Trilliax
-							{	-- Trilliax (Arcing Aqueducts)
-								["achievementID"] = 10829,	-- Arcing Aqueducts
-								["criteriaID"] = 3,			-- Trilliax
-							},
+							ach(10829, crit(3)),	-- Arcing Aqueducts / Trilliax
 							i(139644),	-- Vantus Rune Technique: Trilliax [Rank 1]
 							i(137756),	-- Vantus Rune Technique: Trilliax [Rank 2]
 							i(138375),	-- Cape of Second Sight
@@ -169,12 +155,9 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 				ach(10837, { 	-- Royal Athenaeum
 					["crs"] = { 111246 },	-- Archmage Timear
-					["groups"] = {
+					["g"] = {
 						cr(104881, e(1751, {	-- Spellblade Aluriel
-							{	-- Spellblade Aluriel (Royal Athenaeum)
-								["achievementID"] = 10837,	-- Royal Athenaeum
-								["criteriaID"] = 1,			-- Spellblade Aluriel
-							},
+							ach(10837, crit(1)),	-- Royal Athenaeum / Spellblade Aluriel
 							i(139645),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 1]
 							i(137757),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 2]
 							i(140866),	-- Nightborne Battle-Magus Hood
@@ -193,10 +176,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(140834),	-- Soul of Flame
 						})),
 						cr(103758, e(1732, {	-- Star Augur Etraeus
-							{	-- Star Augur Etraeus (Royal Athenaeum
-								["achievementID"] = 10837,	-- Royal Athenaeum
-								["criteriaID"] = 2,			-- Star Augur Etraeus
-							},
+							ach(10837, crit(2)),	-- Royal Athenaeum / Star Augur Etraeus
 							i(142078),	-- Pattern: Imbued Silkweave Bag (Rank 3)
 							i(139649),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 1]
 							i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2]
@@ -231,10 +211,7 @@ _.Instances = { tier(7, {	-- Legion
 								109038,	-- Solarist Tel'arn
 							},
 							["g"] = {
-								{	-- High Botanist Tel'arn (Royal Athenaeum)
-									["achievementID"] = 10837,	-- Royal Athenaeum
-									["criteriaID"] = 3,			-- High Botanist Tel'arn
-								},
+								ach(10837, crit(3)),	-- Royal Athenaeum / High Botanist Tel'arn
 								i(143751),	-- Technique: Glyph of Twilight Bloom
 								i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1]
 								i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2]
@@ -257,13 +234,9 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 				ach(10838, { 	-- Nightspire
 					["crs"] = { 111246 },	-- Archmage Timear
-					["groups"] = {
+					["g"] = {
 						cr(103685, e(1762, {	-- Tichondrius
-							{	-- Tichondrius (Nightspire)
-								["achievementID"] = 10838,	-- Nightspire
-								["criteriaID"] = 2,	-- Tichondrius
-							},
-							-- i(137687),	-- Recipe: Fel Core Hound Harness [DOES NOT DROP ON LFR]
+							ach(10838, crit(2)),	-- Nightspire / Tichondrius
 							i(139646),	-- Vantus Rune Technique: Tichondrius [Rank 1]
 							i(137758),	-- Vantus Rune Technique: Tichondrius [Rank 2]
 							i(138338),	-- Doomblade Spaulders
@@ -289,10 +262,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(140824),	-- Writ of Subjugation
 						})),
 						cr(101002, e(1713, {	-- Krosus
-							{	-- Krosus (Nightspire)
-								["achievementID"] = 10838,	-- Nightspire
-								["criteriaID"] = 1,	-- Krosus
-							},
+							ach(10838, crit(1)),	-- Nightspire / Krosus
 							i(139648),	-- Vantus Rune Technique: Krosus [Rank 1]
 							i(137760),	-- Vantus Rune Technique: Krosus [Rank 2]
 							i(140870),	-- Architect's Coif of Despair
@@ -319,10 +289,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(140835),	-- Unkindled Ember
 						})),
 						cr(106643, e(1743, {	-- Elisande
-							{	-- Elisande (Nightspire)
-								["achievementID"] = 10838,	-- Nightspire
-								["criteriaID"] = 3,	-- Elisande
-							},
+							ach(10838, crit(3)),	-- Nightspire / Elisande
 							i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1]
 							i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2]
 							i(138332),	-- Doomblade Cowl
@@ -348,12 +315,13 @@ _.Instances = { tier(7, {	-- Legion
 							i(140842),	-- Collapsing Epoch
 							i(140837),	-- Exothermic Core
 							i(140810),	-- Farsight Spiritjewel
+							i(146682),	-- Suramari Soul-Wraps (Tailoring QI)
 						})),
 					},
 				}),
 				ach(10839, { 	-- Betrayer's Rise
 					["crs"] = { 111246 },	-- Archmage Timear
-					["groups"] = {
+					["g"] = {
 						cr(104154, e(1737, {	-- Gul'dan
 							i(139651),	-- Vantus Rune Technique: Gul'dan [Rank 1]
 							i(137763),	-- Vantus Rune Technique: Gul'dan [Rank 2]
@@ -390,55 +358,49 @@ _.Instances = { tier(7, {	-- Legion
 			d(14, {		-- Normal
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["groups"] = {
-						{	-- Cache of Nightborne Treasures [Normal]
-							["itemID"] = 140150,	-- Cache of Nightborne Treasures [Normal]
+					["g"] = {
+						i(140150, {	-- Cache of Nightborne Treasures [Normal]
 							["u"] = 2,
 							["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-						},
-						{	-- The Nighthold: Elisande [Normal]
-							["itemID"] = 140175,	-- Ancient Nightborne Tome [Normal]
+						}),
+						i(140175, {	-- Ancient Nightborne Tome [Normal]
 							["questID"] = 43914,	-- The Nighthold: Elisande [Normal]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(140150)),	-- Cache of Nightborne Treasures [Normal]
 							},
-						},
-						{	-- The Nighthold: High Botanist Tel'arn [Normal]
-							["itemID"] = 140174,	-- Glowing Lily [Normal]
+						}),
+						i(140174, {	-- Glowing Lily [Normal]
 							["questID"] = 43913,	-- The Nighthold: High Botanist Tel'arn [Normal]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(140150)),	-- Cache of Nightborne Treasures [Normal]
 							},
-						},
-						{	-- The Nighthold: Vaults [Normal]
-							["itemID"] = 140149,	-- Pulsauron Bindings [Normal]
+						}),
+						i(140149, {	-- Pulsauron Bindings [Normal]
 							["questID"] = 43889,	-- The Nighthold: Vaults [Normal]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(140150)),	-- Cache of Nightborne Treasures [Normal]
 							},
-						},
-						{	-- The Nighthold: Gul'dan [Normal]
-							["itemID"] = 140177,	-- Shred of Tattered Robe [Normal]
+						}),
+						i(140177, {	-- Shred of Tattered Robe [Normal]
 							["questID"] = 43915,	-- The Nighthold: Gul'dan [Normal]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(140150)),	-- Cache of Nightborne Treasures [Normal]
 							},
-						},
-						{	-- The Nighthold: Talisman of the Shal'dorei [Normal]
-							["questID"] = 45381,	-- The Nighthold: Talisman of the Shal'dorei [Normal]
+						}),
+						i(45381, {	-- The Nighthold: Talisman of the Shal'dorei [Normal]
 							["provider"] = { "n", 110791 },	-- First Arcanist Thalyssra
-							["groups"] = {
+							["g"] = {
 								ig(141324),	-- Talisman of the Shal'dorei [Normal]
 							},
-						},
+						}),
 					},
 				}),
 				n(COMMON_BOSS_DROPS, {
@@ -458,11 +420,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(144405),	-- Waistclasp of Unethical Power
 				}),
 				cr(102263, e(1706, {	-- Skorpyron
+					ach(10829, crit(1)),	-- Arcing Aqueducts / Skorpyron
 					ach(10678),	-- Cage Rematch
-					{	-- Skorpyron (Arcing Aqueducts)
-						["achievementID"] = 10829,	-- Arcing Aqueducts
-						["criteriaID"] = 1,			-- Skorpyron
-					},
 					i(139642),	-- Vantus Rune Technique: Skorpyron [Rank 1]
 					i(137754),	-- Vantus Rune Technique: Skorpyron [Rank 2]
 					i(140901),	-- Vintage Suramar Nobility Hat
@@ -481,11 +440,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(140827),	-- Manatoxin Gland
 				})),
 				cr(104415, e(1725, {	-- Chronomatic Anomaly
+					ach(10829, crit(2)),	-- Arcing Aqueducts / Chronomatic Anomaly
 					ach(10697),	-- Grand Opening
-					{	-- Chronomatic Anomaly (Arcing Aqueducts
-						["achievementID"] = 10829,	-- Arcing Aqueducts
-						["criteriaID"] = 2,			-- Chronomatic Anomaly
-					},
 					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1]
 					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2]
 					i(138828),	-- Illusion: Chronos
@@ -505,11 +461,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(140831),	-- Suspended Nightwell Droplet
 				})),
 				cr(104288, e(1731, {	-- Trilliax
+					ach(10829, crit(3)),	-- Arcing Aqueducts / Trilliax
 					ach(10742),	-- Gluten Free
-					{	-- Trilliax (Arcing Aqueducts)
-						["achievementID"] = 10829,	-- Arcing Aqueducts
-						["criteriaID"] = 3,			-- Trilliax
-					},
 					i(139644),	-- Vantus Rune Technique: Trilliax [Rank 1]
 					i(137756),	-- Vantus Rune Technique: Trilliax [Rank 2]
 					i(143577, {	-- Cloak of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
@@ -545,15 +498,12 @@ _.Instances = { tier(7, {	-- Legion
 					i(140812),	-- Soggy Manascrubber Brush
 				})),
 				cr(104881, e(1751, {	-- Spellblade Aluriel
+					ach(10837, crit(1)),	-- Royal Athenaeum / Spellblade Aluriel
 					ach(10817, {	-- A Change In Scenery
 						crit(1),	-- The Shal'dorei Terrace
 						crit(2),	-- The Shattered Walkway
 						crit(3),	-- Astromancer's Rise
 					}),
-					{	-- Spellblade Aluriel (Royal Athenaeum)
-						["achievementID"] = 10837,	-- Royal Athenaeum
-						["criteriaID"] = 1,			-- Spellblade Aluriel
-					},
 					i(139645),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 1]
 					i(137757),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 2]
 					i(140866),	-- Nightborne Battle-Magus Hood
@@ -572,11 +522,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(140834),	-- Soul of Flame
 				})),
 				cr(103685, e(1762, {	-- Tichondrius
+					ach(10838, crit(2)),	-- Nightspire / Tichondrius
 					ach(10704),	-- Not For You
-					{	-- Tichondrius (Nightspire)
-						["achievementID"] = 10838,	-- Nightspire
-						["criteriaID"] = 2,			-- Tichondrius
-					},
 					i(137687),	-- Recipe: Fel Core Hound Harness
 					i(139646),	-- Vantus Rune Technique: Tichondrius [Rank 1]
 					i(137758),	-- Vantus Rune Technique: Tichondrius [Rank 2]
@@ -609,11 +556,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(140824),	-- Writ of Subjugation
 				})),
 				cr(101002, e(1713, {	-- Krosus
+					ach(10838, crit(1)),	-- Nightspire / Krosus
 					ach(10575),	-- Burning Bridges
-					{	-- Krosus (Nightspire)
-						["achievementID"] = 10838,	-- Nightspire
-						["criteriaID"] = 1,	-- Krosus
-					},
 					i(139648),	-- Vantus Rune Technique: Krosus [Rank 1]
 					i(137760),	-- Vantus Rune Technique: Krosus [Rank 2]
 					i(143562, {	-- Chest of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
@@ -653,11 +597,8 @@ _.Instances = { tier(7, {	-- Legion
 						109038,	-- Solarist Tel'arn
 					},
 					["g"] = {
+						ach(10837, crit(3)),	-- Royal Athenaeum / High Botanist Tel'arn
 						ach(10754),	-- Fruit of All Evil
-						{	-- High Botanist Tel'arn (Royal Athenaeum)
-							["achievementID"] = 10837,	-- Royal Athenaeum
-							["criteriaID"] = 3,			-- High Botanist Tel'arn
-						},
 						i(143751),	-- Technique: Glyph of Twilight Bloom
 						i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1]
 						i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2]
@@ -677,11 +618,8 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				cr(103758, e(1732, {	-- Star Augur Etraeus
+					ach(10837, crit(2)),	-- Royal Athenaeum / Star Augur Etraeus
 					ach(10851),	-- Elementalry!
-					{	-- Star Augur Etraeus (Royal Athenaeum)
-						["achievementID"] = 10837,	-- Royal Athenaeum
-						["criteriaID"] = 2,	-- Star Augur Etraeus
-					},
 					i(142078),	-- Pattern: Imbued Silkweave Bag
 					i(139649),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 1]
 					i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2]
@@ -715,15 +653,11 @@ _.Instances = { tier(7, {	-- Legion
 					i(140841),	-- Tempest of the Heavens
 				})),
 				cr(106643, e(1743, {	-- Elisande
+					ach(10838, crit(3)),	-- Nightspire / Elisande
 					ach(10699),	-- Infinitesimal
-					{	-- Elisande (Nightspire)
-						["achievementID"] = 10838,	-- Nightspire
-						["criteriaID"] = 3,			-- Elisande
-					},
-					{	-- The Nighthold: Talisman of the Shal'dorei [Normal]
-						["itemID"] = 143656,	-- Echo of Time [Normal]
+					i(143656, {	-- Echo of Time [Normal]
 						["questID"] = 45381,	-- The Nighthold: Talisman of the Shal'dorei [Normal]
-					},
+					}),
 					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1]
 					i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2]
 					i(143565, {	-- Helm of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
@@ -755,6 +689,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(140842),	-- Collapsing Epoch
 					i(140837),	-- Exothermic Core
 					i(140810),	-- Farsight Spiritjewel
+					i(146682),	-- Suramari Soul-Wraps (Tailoring QI)
 				})),
 				cr(104154, e(1737, {	-- Gul'dan
 					ach(10696),	-- I've Got My Eyes On You
@@ -799,55 +734,49 @@ _.Instances = { tier(7, {	-- Legion
 			d(15, {		-- Heroic
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["groups"] = {
-						{	-- Cache of Nightborne Treasures [Heroic]
-							["itemID"] = 140152,	-- Cache of Nightborne Treasures [Heroic]
+					["g"] = {
+						i(140152, {	-- Cache of Nightborne Treasures [Heroic]
 							["u"] = 2,
 							["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-						},
-						{	-- The Nighthold: Elisande [Heroic]
-							["itemID"] = 140472,	-- Ancient Nightborne Tome [Heroic]
+						}),
+						i(140472, {	-- Ancient Nightborne Tome [Heroic]
 							["questID"] = 43917,	-- The Nighthold: Elisande [Heroic]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(140152)),	-- Cache of Nightborne Treasures [Heroic]
 							},
-						},
-						{	-- The Nighthold: High Botanist Tel'arn [Heroic]
-							["itemID"] = 140178,	-- Glowing Lily [Heroic]
+						}),
+						i(140178, {	-- Glowing Lily [Heroic]
 							["questID"] = 43916,	-- The Nighthold: High Botanist Tel'arn [Heroic]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(140152)),	-- Cache of Nightborne Treasures [Heroic]
 							},
-						},
-						{	-- The Nighthold: Vaults [Heroic]
-							["itemID"] = 140151,	-- Pulsauron Bindings [Heroic]
+						}),
+						i(140151, {	-- Pulsauron Bindings [Heroic]
 							["questID"] = 43890,	-- The Nighthold: Vaults [Heroic]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(140152)),	-- Cache of Nightborne Treasures [Heroic]
 							},
-						},
-						{	-- The Nighthold: Gul'dan [Heroic]
-							["itemID"] = 140180,	-- Shred of Tattered Robe [Heroic]
+						}),
+						i(140180, {	-- Shred of Tattered Robe [Heroic]
 							["questID"] = 43918,	-- The Nighthold: Gul'dan [Heroic]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(140152)),	-- Cache of Nightborne Treasures [Heroic]
 							},
-						},
-						{	-- The Nighthold: Talisman of the Shal'dorei [Heroic]
-							["questID"] = 45382,	-- The Nighthold: Talisman of the Shal'dorei [Heroic]
+						}),
+						i(45382, {	-- The Nighthold: Talisman of the Shal'dorei [Heroic]
 							["provider"] = { "n", 110791 },	-- First Arcanist Thalyssra
-							["groups"] = {
+							["g"] = {
 								ig(141325),	-- Talisman of the Shal'dorei [Heroic]
 							},
-						},
+						}),
 					},
 				}),
 				n(COMMON_BOSS_DROPS, {
@@ -867,11 +796,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(144405),	-- Waistclasp of Unethical Power
 				}),
 				cr(102263, e(1706, {	-- Skorpyron
+					ach(10829, crit(1)),	-- Arcing Aqueducts / Skorpyron
 					ach(10678),	-- Cage Rematch
-					{	-- Skorpyron (Arcing Aqueducts)
-						["achievementID"] = 10829,	-- Arcing Aqueducts
-						["criteriaID"] = 1,			-- Skorpyron
-					},
 					i(139642),	-- Vantus Rune Technique: Skorpyron [Rank 1]
 					i(137754),	-- Vantus Rune Technique: Skorpyron [Rank 2]
 					i(140901),	-- Vintage Suramar Nobility Hat
@@ -890,11 +816,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(140827),	-- Manatoxin Gland
 				})),
 				cr(104415, e(1725, {	-- Chronomatic Anomaly
+					ach(10829, crit(2)),	-- Arcing Aqueducts / Chronomatic Anomaly
 					ach(10697),	-- Grand Opening
-					{	-- Chronomatic Anomaly (Arcing Aqueducts)
-						["achievementID"] = 10829,	-- Arcing Aqueducts
-						["criteriaID"] = 2,			-- Chronomatic Anomaly
-					},
 					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1]
 					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2]
 					i(138828),	-- Illusion: Chronos
@@ -914,11 +837,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(140831),	-- Suspended Nightwell Droplet
 				})),
 				cr(104288, e(1731, {	-- Trilliax
+					ach(10829, crit(3)),	-- Arcing Aqueducts / Trilliax
 					ach(10742),	-- Gluten Free
-					{	-- Trilliax (Arcing Aqueducts)
-						["achievementID"] = 10829,	-- Arcing Aqueducts
-						["criteriaID"] = 3,			-- Trilliax
-					},
 					i(139644),	-- Vantus Rune Technique: Trilliax [Rank 1]
 					i(137756),	-- Vantus Rune Technique: Trilliax [Rank 2]
 					i(143577, {	-- Cloak of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
@@ -954,15 +874,12 @@ _.Instances = { tier(7, {	-- Legion
 					i(140812),	-- Soggy Manascrubber Brush
 				})),
 				cr(104881, e(1751, {	-- Spellblade Aluriel
+					ach(10837, crit(1)),	-- Royal Athenaeum / Spellblade Aluriel
 					ach(10817, {	-- A Change In Scenery
 						crit(1),	-- The Shal'dorei Terrace
 						crit(2),	-- The Shattered Walkway
 						crit(3),	-- Astromancer's Rise
 					}),
-					{	-- Spellblade Aluriel (Royal Athenaeum)
-						["achievementID"] = 10837,	-- Royal Athenaeum
-						["criteriaID"] = 1,			-- Spellblade Aluriel
-					},
 					i(139645),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 1]
 					i(137757),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 2]
 					i(140866),	-- Nightborne Battle-Magus Hood
@@ -981,11 +898,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(140834),	-- Soul of Flame
 				})),
 				cr(103685, e(1762, {	-- Tichondrius
+					ach(10838, crit(2)),	-- Nightspire / Tichondrius
 					ach(10704),	-- Not For You
-					{	-- Tichondrius (Nightspire)
-						["achievementID"] = 10838,	-- Nightspire
-						["criteriaID"] = 2,			-- Tichondrius
-					},
 					i(137687),	-- Recipe: Fel Core Hound Harness
 					i(139646),	-- Vantus Rune Technique: Tichondrius [Rank 1]
 					i(137758),	-- Vantus Rune Technique: Tichondrius [Rank 2]
@@ -1018,11 +932,8 @@ _.Instances = { tier(7, {	-- Legion
 					i(140824),	-- Writ of Subjugation
 				})),
 				cr(101002, e(1713, {	-- Krosus
+					ach(10838, crit(1)),	-- Nightspire / Krosus
 					ach(10575),	-- Burning Bridges
-					{	-- Krosus (Nightspire)
-						["achievementID"] = 10838,	-- Nightspire
-						["criteriaID"] = 1,			-- Krosus
-					},
 					i(139648),	-- Vantus Rune Technique: Krosus [Rank 1]
 					i(137760),	-- Vantus Rune Technique: Krosus [Rank 2]
 					i(143562, {	-- Chest of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
@@ -1062,11 +973,8 @@ _.Instances = { tier(7, {	-- Legion
 						109038,	-- Solarist Tel'arn
 					},
 					["g"] = {
+						ach(10837, crit(3)),	-- Royal Athenaeum / High Botanist Tel'arn
 						ach(10754),	-- Fruit of All Evil
-						{	-- High Botanist Tel'arn (Royal Athenaeum)
-							["achievementID"] = 10837,	-- Royal Athenaeum
-							["criteriaID"] = 3,			-- High Botanist Tel'arn
-						},
 						i(143751),	-- Technique: Glyph of Twilight Bloom
 						i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1]
 						i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2]
@@ -1086,11 +994,8 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				cr(103758, e(1732, {	-- Star Augur Etraeus
+					ach(10837, crit(2)),	-- Royal Athenaeum / Star Augur Etraeus
 					ach(10851),	-- Elementalry!
-					{	-- Star Augur Etraeus (Royal Athenaeum)
-						["achievementID"] = 10837,	-- Royal Athenaeum
-						["criteriaID"] = 2,			-- Star Augur Etraeus
-					},
 					i(142078),	-- Pattern: Imbued Silkweave Bag
 					i(139649),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 1]
 					i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2]
@@ -1124,15 +1029,11 @@ _.Instances = { tier(7, {	-- Legion
 					i(140841),	-- Tempest of the Heavens
 				})),
 				cr(106643, e(1743, {	-- Elisande
+					ach(10838, crit(3)),	-- Nightspire / Elisande
 					ach(10699),	-- Infinitesimal
-					{	-- Elisande (Nightspire)
-						["achievementID"] = 10838,	-- Nightspire
-						["criteriaID"] = 3,			-- Elisande
-					},
-					{	-- The Nighthold: Talisman of the Shal'dorei [Heroic]
-						["itemID"] = 143657,	-- Echo of Time [Heroic]
+					i(143657, {	-- Echo of Time [Heroic]
 						["questID"] = 45382,	-- The Nighthold: Talisman of the Shal'dorei [Heroic]
-					},
+					}),
 					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1]
 					i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2]
 					i(143565, {	-- Helm of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
@@ -1164,6 +1065,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(140842),	-- Collapsing Epoch
 					i(140837),	-- Exothermic Core
 					i(140810),	-- Farsight Spiritjewel
+					i(146682),	-- Suramari Soul-Wraps (Tailoring QI)
 				})),
 				cr(104154, e(1737, {	-- Gul'dan
 					ach(11195, {	-- Ahead of the Curve: Gul'dan
@@ -1211,55 +1113,49 @@ _.Instances = { tier(7, {	-- Legion
 			d(16, {		-- Mythic
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["groups"] = {
-						{	-- Cache of Nightborne Treasures [Mythic]
-							["itemID"] = 140154,	-- Cache of Nightborne Treasures [Mythic]
+					["g"] = {
+						i(140154, {	-- Cache of Nightborne Treasures [Mythic]
 							["u"] = 2,
 							["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-						},
-						{	-- The Nighthold: Elisande [Mythic]
-							["itemID"] = 140182,	-- Ancient Nightborne Tome [Mythic]
+						}),
+						i(140182, {	-- Ancient Nightborne Tome [Mythic]
 							["questID"] = 43920,	-- The Nighthold: Elisande [Mythic]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(140154)),	-- Cache of Nightborne Treasures [Mythic]
 							},
-						},
-						{	-- The Nighthold: High Botanist Tel'arn [Mythic]
-							["itemID"] = 140181,	-- Glowing Lily [Mythic]
+						}),
+						i(140181, {	-- Glowing Lily [Mythic]
 							["questID"] = 43919,	-- The Nighthold: High Botanist Tel'arn [Mythic]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(140154)),	-- Cache of Nightborne Treasures [Mythic]
 							},
-						},
-						{	-- The Nighthold: Vaults [Mythic]
-							["itemID"] = 140153,	-- Pulsauron Bindings [Mythic]
+						}),
+						i(140153, {	-- Pulsauron Bindings [Mythic]
 							["questID"] = 43891,	-- The Nighthold: Vaults [Mythic]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(140154)),	-- Cache of Nightborne Treasures [Mythic]
 							},
-						},
-						{	-- The Nighthold: Gul'dan [Mythic]
-							["itemID"] = 140183,	-- Shred of Tattered Robe [Mythic]
+						}),
+						i(140183, {	-- Shred of Tattered Robe [Mythic]
 							["questID"] = 43921,	-- The Nighthold: Gul'dan [Mythic]
 							["repeatable"] = true,
 							["u"] = 40,
-							["groups"] = {
+							["g"] = {
 								un(2, i(140154)),	-- Cache of Nightborne Treasures [Mythic]
 							},
-						},
-						{	-- The Nighthold: Talisman of the Shal'dorei [Mythic]
-							["questID"] = 45383,	-- The Nighthold: Talisman of the Shal'dorei [Mythic]
+						}),
+						i(45383, {	-- The Nighthold: Talisman of the Shal'dorei [Mythic]
 							["provider"] = { "n", 110791 },	-- First Arcanist Thalyssra
-							["groups"] = {
+							["g"] = {
 								ig(141326),	-- Talisman of the Shal'dorei [Mythic]
 							},
-						},
+						}),
 					},
 				}),
 				n(COMMON_BOSS_DROPS, {
@@ -1279,12 +1175,9 @@ _.Instances = { tier(7, {	-- Legion
 					i(144405),	-- Waistclasp of Unethical Power
 				}),
 				cr(102263, e(1706, {	-- Skorpyron
-					ach(10678),	-- Cage Rematch
+					ach(10829, crit(1)),	-- Arcing Aqueducts / Skorpyron
 					ach(10840),	-- Mythic: Skorpyron
-					{	-- Skorpyron (Arcing Aqueducts)
-						["achievementID"] = 10829,	-- Arcing Aqueducts
-						["criteriaID"] = 1,			-- Skorpyron
-					},
+					ach(10678),	-- Cage Rematch
 					i(139642),	-- Vantus Rune Technique: Skorpyron [Rank 1]
 					i(137754),	-- Vantus Rune Technique: Skorpyron [Rank 2]
 					i(140901),	-- Vintage Suramar Nobility Hat
@@ -1303,12 +1196,9 @@ _.Instances = { tier(7, {	-- Legion
 					i(140827),	-- Manatoxin Gland
 				})),
 				cr(104415, e(1725, {	-- Chronomatic Anomaly
-					ach(10697),	-- Grand Opening
+					ach(10829, crit(2)),	-- Arcing Aqueducts / Chronomatic Anomaly
 					ach(10842),	-- Mythic: Chronomatic Anomaly
-					{	-- Chronomatic Anomaly (Arcing Aqueducts)
-						["achievementID"] = 10829,	-- Arcing Aqueducts
-						["criteriaID"] = 2,			-- Chronomatic Anomaly
-					},
+					ach(10697),	-- Grand Opening
 					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1]
 					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2]
 					i(138828),	-- Illusion: Chronos
@@ -1328,12 +1218,9 @@ _.Instances = { tier(7, {	-- Legion
 					i(140831),	-- Suspended Nightwell Droplet
 				})),
 				cr(104288, e(1731, {	-- Trilliax
-					ach(10742),	-- Gluten Free
+					ach(10829, crit(3)),	-- Arcing Aqueducts / Trilliax
 					ach(10843),	-- Mythic: Trilliax
-					{	-- Trilliax (Arcing Aqueducts)
-						["achievementID"] = 10829,	-- Arcing Aqueducts
-						["criteriaID"] = 3,			-- Trilliax
-					},
+					ach(10742),	-- Gluten Free
 					i(139644),	-- Vantus Rune Technique: Trilliax [Rank 1]
 					i(137756),	-- Vantus Rune Technique: Trilliax [Rank 2]
 					i(143577, {	-- Cloak of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
@@ -1369,16 +1256,13 @@ _.Instances = { tier(7, {	-- Legion
 					i(140812),	-- Soggy Manascrubber Brush
 				})),
 				cr(104881, e(1751, {	-- Spellblade Aluriel
+					ach(10837, crit(1)),	-- Royal Athenaeum / Spellblade Aluriel
+					ach(10844),	-- Mythic: Spellblade Aluriel
 					ach(10817, {	-- A Change In Scenery
 						crit(1),	-- The Shal'dorei Terrace
 						crit(2),	-- The Shattered Walkway
 						crit(3),	-- Astromancer's Rise
 					}),
-					ach(10844),	-- Mythic: Spellblade Aluriel
-					{	-- Spellblade Aluriel (Royal Athenaeum)
-						["achievementID"] = 10837,	-- Royal Athenaeum
-						["criteriaID"] = 1,			-- Spellblade Aluriel
-					},
 					i(139645),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 1]
 					i(137757),	-- Vantus Rune Technique: Spellblade Aluriel [Rank 2]
 					i(140866),	-- Nightborne Battle-Magus Hood
@@ -1397,12 +1281,9 @@ _.Instances = { tier(7, {	-- Legion
 					i(140834),	-- Soul of Flame
 				})),
 				cr(103685, e(1762, {	-- Tichondrius
-					ach(10704),	-- Not For You
+					ach(10838, crit(2)),	-- Nightspire / Tichondrius
 					ach(10847),	-- Mythic: Tichondrius
-					{	-- Tichondrius (Nightspire)
-						["achievementID"] = 10838,	-- Nightspire
-						["criteriaID"] = 2,			-- Tichondrius
-					},
+					ach(10704),	-- Not For You
 					i(137687),	-- Recipe: Fel Core Hound Harness
 					i(139646),	-- Vantus Rune Technique: Tichondrius [Rank 1]
 					i(137758),	-- Vantus Rune Technique: Tichondrius [Rank 2]
@@ -1435,12 +1316,9 @@ _.Instances = { tier(7, {	-- Legion
 					i(140824),	-- Writ of Subjugation
 				})),
 				cr(101002, e(1713, {	-- Krosus
-					ach(10575),	-- Burning Bridges
+					ach(10838, crit(1)),	-- Nightspire / Krosus
 					ach(10848),	-- Mythic: Krosus
-					{	-- Krosus (Nightspire)
-						["achievementID"] = 10838,	-- Nightspire
-						["criteriaID"] = 1,			-- Krosus
-					},
+					ach(10575),	-- Burning Bridges
 					i(139648),	-- Vantus Rune Technique: Krosus [Rank 1]
 					i(137760),	-- Vantus Rune Technique: Krosus [Rank 2]
 					i(143562, {	-- Chest of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
@@ -1480,12 +1358,9 @@ _.Instances = { tier(7, {	-- Legion
 						109038,	-- Solarist Tel'arn
 					},
 					["g"] = {
-						ach(10754),	-- Fruit of All Evil
+						ach(10837, crit(3)),	-- Royal Athenaeum / High Botanist Tel'arn
 						ach(10846),	-- Mythic: High Botanist Tel'arn
-						{	-- High Botanist Tel'arn (Royal Athenaeum)
-							["achievementID"] = 10837,	-- Royal Athenaeum
-							["criteriaID"] = 3,			-- High Botanist Tel'arn
-						},
+						ach(10754),	-- Fruit of All Evil
 						i(143751),	-- Technique: Glyph of Twilight Bloom
 						i(139647),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 1]
 						i(137759),	-- Vantus Rune Technique: High Botanist Tel'arn [Rank 2]
@@ -1505,12 +1380,9 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				cr(103758, e(1732, {	-- Star Augur Etraeus
-					ach(10851),	-- Elementalry!
+					ach(10837, crit(2)),	-- Royal Athenaeum / Star Augur Etraeus
 					ach(10845),	-- Mythic: Star Augur Etraeus
-					{	-- Star Augur Etraeus (Royal Athenaeum)
-						["achievementID"] = 10837,	-- Royal Athenaeum
-						["criteriaID"] = 2,			-- Star Augur Etraeus
-					},
+					ach(10851),	-- Elementalry!
 					i(142078),	-- Pattern: Imbued Silkweave Bag
 					i(139649),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 1]
 					i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2]
@@ -1544,16 +1416,12 @@ _.Instances = { tier(7, {	-- Legion
 					i(140841),	-- Tempest of the Heavens
 				})),
 				cr(106643, e(1743, {	-- Elisande
-					{	-- Elisande (Nightspire)
-						["achievementID"] = 10838,	-- Nightspire
-						["criteriaID"] = 3,			-- Elisande
-					},
-					ach(10699),	-- Infinitesimal
+					ach(10838, crit(3)),	-- Nightspire / Elisande
 					ach(10849),	-- Mythic: Grand Magistrix Elisande
-					{	-- The Nighthold: Talisman of the Shal'dorei [Mythic]
-						["itemID"] = 143658,	-- Echo of Time [Mythic]
+					ach(10699),	-- Infinitesimal
+					i(143658, {	-- Echo of Time [Mythic]
 						["questID"] = 45383,	-- The Nighthold: Talisman of the Shal'dorei [Mythic]
-					},
+					}),
 					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1]
 					i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2]
 					i(143565, {	-- Helm of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
@@ -1591,7 +1459,7 @@ _.Instances = { tier(7, {	-- Legion
 						104154,	-- Gul'dan
 						111022,	-- The Demon Within
 					},
-					["groups"] = {
+					["g"] = {
 						ach(11195, {	-- Ahead of the Curve: Gul'dan
 							["u"] = 2,	-- Legacy Achievement
 						}),

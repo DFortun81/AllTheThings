@@ -84,6 +84,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						i(159407),	-- Lockjaw Shoulderplate
 						i(158301),	-- Ruffled Poet Blouse
 						i(155881),	-- Harlan's Loaded Dice
+						i(168132),	-- Sweete's Diamond-Studded Spyglass
 					}),
 				}),
 			}),
@@ -151,6 +152,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159407),	-- Lockjaw Shoulderplate
 							i(158301),	-- Ruffled Poet Blouse
 							i(155881),	-- Harlan's Loaded Dice
+							i(168132),	-- Sweete's Diamond-Studded Spyglass
 						},
 					}),
 				},
@@ -224,6 +226,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(159407),	-- Lockjaw Shoulderplate
 							i(158301),	-- Ruffled Poet Blouse
 							i(155881),	-- Harlan's Loaded Dice
+							i(168132),	-- Sweete's Diamond-Studded Spyglass
 						},
 					}),
 				},

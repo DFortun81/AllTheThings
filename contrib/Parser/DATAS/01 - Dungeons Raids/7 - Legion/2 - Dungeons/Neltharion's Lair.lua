@@ -282,6 +282,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(137352),	-- Tunic of Smoldering Ire
 						i(137358),	-- Hate-Sculpted Magma
 						i(137359),	-- Pebble of Ages
+						i(146704),	-- Red-Hot Draconic Slag (Blacksmithing QI)
 					})),
 				},
 			}),

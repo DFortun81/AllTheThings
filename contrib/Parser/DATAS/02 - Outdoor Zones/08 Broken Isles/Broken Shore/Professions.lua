@@ -6,6 +6,75 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(646, {	-- Broken Shore
 			n(-38, {	-- Profession
+				q(46804, {	-- Fashion History and a Philosophy of Style
+					["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+					["coord"] = { 41.1, 59.3, 646 },
+					["sourceQuest"] = 47015,	-- Boon of the Nether Disruptor
+					["repeatable"] = true,
+					["cost"] = { { "i", 147451, 1 }, },	-- 1x Armorcrafter's Commendatio
+				}),
+				prof(BLACKSMITHING, {
+					q(46696, {	-- The Legend of the Four Hammers
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.2, 59.4, 646 },
+						["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
+						["repeatable"] = true,
+						["requireSkill"] = BLACKSMITHING,
+						["cost"] = { { "i", 147197, 1 }, },	-- 1x Legends of the Four Hammers
+					}),
+					q(46700, {	-- Armor of the Ancients
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.2, 59.4, 646 },
+						["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
+						["repeatable"] = true,
+						["requireSkill"] = BLACKSMITHING,
+						["cost"] = { { "i", 146708, 20 }, },	-- ~20x Ancient Demonsteel Armor
+					}),
+					q(46698, {	-- The Dragonhunter
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.2, 59.4, 646 },
+						["sourceQuest"] = 46696,	-- The Legend of the Four Hammers
+						["repeatable"] = true,
+						["requireSkill"] = BLACKSMITHING,
+						["cost"] = { { "i", 146704, 1 }, },	-- 1x Red-Hot Draconic Slag
+					}),
+					q(46697, {	-- The Godfighter
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.2, 59.4, 646 },
+						["sourceQuest"] = 46696,	-- The Legend of the Four Hammers
+						["repeatable"] = true,
+						["requireSkill"] = BLACKSMITHING,
+						["cost"] = { { "i", 146702, 1 }, },	-- 1x White Lightningsteel
+					}),
+					q(46699, {	-- The Hellslayer
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.2, 59.4, 646 },
+						["sourceQuest"] = 46696,	-- The Legend of the Four Hammers
+						["repeatable"] = true,
+						["requireSkill"] = BLACKSMITHING,
+						["cost"] = { { "i", 146706, 1 }, },	-- 1x Frostveined Shale
+					}),
+					q(46701, {	-- Hammer of Forgotten Heroes
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.1, 59.3, 646 },
+						["sourceQuests"] = {
+							46700,	-- Armor of the Ancients
+							46698,	-- The Dragonhunter
+							46697,	-- The Godfighter
+							46699,	-- The Hellslayer
+						},
+						["repeatable"] = true,
+						["requireSkill"] = BLACKSMITHING,
+						["cost"] = { 
+							{ "i", 147207, 1 },	-- 1x Legendary Blacksmithing Supplies
+							{ "i", 147443, 1 },	-- 1x Carrying Case For Hammer of Forgotten Heroes
+						},
+						["g"] = {
+							i(146714),	-- 	Hammer of Forgotten Heroes
+						},
+					}),
+					i(146667),	-- Rethu's Incessant Courage
+				}),
 				prof(FISHING, {
 					ach(10596, {	-- Bigger Fish to Fry
 						n(-218, {	-- Coastal
@@ -86,6 +155,190 @@ _.Zones =
 							["creatureID"] = 120460,
 						}),
 					}),
+				}),
+				prof(LEATHERWORKING, {
+					q(46684, {	-- The Legend of the Elderhide
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.2, 59.4, 646 },
+						["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
+						["repeatable"] = true,
+						["requireSkill"] = LEATHERWORKING,
+					}),
+					q(46688, {	-- Leather of the Ancients
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.2, 59.4, 646 },
+						["sourceQuest"] = 46684,	-- The Legend of the Elderhide
+						["repeatable"] = true,
+						["requireSkill"] = LEATHERWORKING,
+						["cost"] = { { "i", 146692, 20 }, },	-- ~20x Ancient Dreadleather Armor
+					}),
+					q(46686, {	-- The Wisp and the Sea
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.2, 59.4, 646 },
+						["sourceQuest"] = 46684,	-- The Legend of the Elderhide
+						["repeatable"] = true,
+						["requireSkill"] = LEATHERWORKING,
+						["cost"] = { { "i", 146688, 1 }, },	-- 1x Waterlogged Handmaiden's Gloves
+					}),
+					q(46685, {	-- The Wisp and the Shadow
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.2, 59.4, 646 },
+						["sourceQuest"] = 46684,	-- The Legend of the Elderhide
+						["repeatable"] = true,
+						["requireSkill"] = LEATHERWORKING,
+						["cost"] = { { "i", 146686, 1 }, },	-- 1x Colorless Shroud of Xavius
+					}),
+					q(46699, {	-- The Wisp and the Nightmare
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.2, 59.4, 646 },
+						["sourceQuest"] = 46684,	-- The Legend of the Elderhide
+						["repeatable"] = true,
+						["requireSkill"] = LEATHERWORKING,
+						["cost"] = { { "i", 146690, 1 }, },	-- 1x Xavius' Torn Spellsash
+					}),
+					q(46689, {	-- Wisp-Touched Elderhide
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.1, 59.3, 646 },
+						["sourceQuests"] = {
+							46688,	-- Leather of the Ancients
+							46686,	-- The Wisp and the Sea
+							46685,	-- The Wisp and the Shadow
+							46699,	-- The Wisp and the Nightmare
+						},
+						["repeatable"] = true,
+						["requireSkill"] = LEATHERWORKING,
+						["cost"] = { 
+							{ "i", 146977, 1 },	-- 1x Legendary Tanner's Kit
+							{ "i", 147438, 1 },	-- 1x Bag of Wisp-Touched Elderhide
+						},
+						["g"] = {
+							i(146712),	-- 	Wisp-Touched Elderhide
+						},
+					}),
+					i(146669),	-- The Sentinel's Eternal Refuge
+					q(46690, {	-- The Legend of the Wardenscale
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.2, 59.4, 646 },
+						["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
+						["repeatable"] = true,
+						["requireSkill"] = LEATHERWORKING, 
+						["cost"] = { { "i", 147075, 1 }, },	-- 1x Spirit Net
+					}),
+					q(46694, {	-- Mail of the Ancients
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.2, 59.4, 646 },
+						["sourceQuest"] = 46690,	-- The Legend of the Wardenscale
+						["repeatable"] = true,
+						["requireSkill"] = LEATHERWORKING,
+						["cost"] = { { "i", 146700, 20 }, },	-- ~20x Ancient Gravenscale Armor
+					}),
+					q(46691, {	-- The Owl and the Traitor
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.2, 59.4, 646 },
+						["sourceQuest"] = 46690,	-- The Legend of the Wardenscale
+						["repeatable"] = true,
+						["requireSkill"] = LEATHERWORKING,
+						["cost"] = { { "i", 146694, 1 }, },	-- 1x Chipped Felsong Mantle
+					}),
+					q(46693, {	-- The Owl and the Observer
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.2, 59.4, 646 },
+						["sourceQuest"] = 46690,	-- The Legend of the Wardenscale
+						["repeatable"] = true,
+						["requireSkill"] = LEATHERWORKING,
+						["cost"] = { { "i", 146698, 1 }, },	-- 1x Torn Bracers of the First War
+					}),
+					q(46699, {	-- The Owl and the Dreadlord
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.2, 59.4, 646 },
+						["sourceQuest"] = 46690,	-- The Legend of the Wardenscale
+						["repeatable"] = true,
+						["requireSkill"] = LEATHERWORKING,
+						["cost"] = { { "i", 146696, 1 }, },	-- 1x Rusted Legplates of Mephistroth
+					}),
+					q(46695, {	-- Prime Wardenscale
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.1, 59.3, 646 },
+						["sourceQuests"] = {
+							46694,	-- Mail of the Ancients
+							46691,	-- The Owl and the Traitor
+							46693,	-- The Owl and the Observer
+							46692,	-- The Owl and the Dreadlord
+						},
+						["repeatable"] = true,
+						["requireSkill"] = LEATHERWORKING,
+						["cost"] = { 
+							{ "i", 147209, 1 },	-- 1x Legendary Wardenscale Supplies
+							{ "i", 147439, 1 },	-- 1x Box of Completed Prime Wardenscale
+						},
+						["g"] = {
+							i(146713),	-- Prime Wardenscale
+						},
+					}),
+					i(146668),	-- Vigilance Perch
+				}),
+				prof(TAILORING, {
+					q(46678, {	-- The Legend of the Threads
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.2, 59.4, 646 },
+						["sourceQuest"] = 46804,	-- Fashion History and a Philosophy of Style
+						["repeatable"] = true,
+						["requireSkill"] = TAILORING,
+						["cost"] = { { "i", 147281, 1 }, },	-- 1x Nights with the Nightborne
+					}),
+					q(46682, {	-- Drapings of the Ancients
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.1, 59.3, 646 },
+						["sourceQuest"] = 46678,	-- The Legend of the Threads
+						["repeatable"] = true,
+						["requireSkill"] = TAILORING,
+						["cost"] = { { "i", 146684, 20 }, },	-- ~20x Ancient Imbued Silkweave Armor
+					}),
+					q(46680, {	-- The Thread of Starlight
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.1, 59.3, 646 },
+						["sourceQuest"] = 46678,	-- The Legend of the Threads
+						["repeatable"] = true,
+						["requireSkill"] = TAILORING,
+						["cost"] = { { "i", 146680, 1 }, },	-- 1x Melandrus' Star-Touched Bracers
+					}),
+					q(46679, {	-- The Thread of Shadow
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.1, 59.3, 646 },
+						["sourceQuest"] = 46678,	-- The Legend of the Threads
+						["repeatable"] = true,
+						["requireSkill"] = TAILORING,
+						["cost"] = { { "i", 146678, 1 }, },	-- 1x Vandros' Shadoweave Robes
+					}),
+					q(46681, {	-- The Thread of Souls
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.1, 59.3, 646 },
+						["sourceQuest"] = 46678,	-- The Legend of the Threads
+						["repeatable"] = true,
+						["requireSkill"] = TAILORING,
+						["cost"] = { { "i", 146682, 1 }, },	-- 1x Suramari Soul-Wraps
+					}),
+					q(46683, {	-- Starweave and Shadowcloth
+						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
+						["coord"] = { 41.1, 59.3, 646 },
+						["sourceQuests"] = {
+							46682,	-- Drapings of the Ancients
+							46680,	-- The Thread of Starlight
+							46679,	-- The Thread of Shadow
+							46681, 	-- The Thread of Souls
+						},
+						["repeatable"] = true,
+						["requireSkill"] = TAILORING,
+						["cost"] = { 
+							{ "i", 146952, 1 },	-- 1x Legendary Tailor's Materials
+							{ "i", 147437, 1 },	-- 1x Satchel of Starweave and Shadowcloth
+						},
+						["g"] = {
+							i(146710),	-- Bolt of Shadowcloth
+							i(146711),	-- Bolt of Starweave
+						},
+					}),
+					i(146666),	-- Celumbra, the Night's Dichotomy (This is linked here to see the Questline as long as you don't have the appearance) - sadidorf
 				}),
 			}),
 		}),

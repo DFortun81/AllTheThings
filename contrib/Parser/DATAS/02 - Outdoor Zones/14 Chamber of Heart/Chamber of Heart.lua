@@ -746,8 +746,18 @@ _.Zones =
 							["lvl"] = 120,
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
-							["sourceQuest"] = 57399,	-- Reconstructing "The Final Truth"
+							["sourceQuest"] = 57399,	-- Reconstructing "The Final Truth" (Rank 13)
 							["cost"] = { { "i", 174785, 6 } },	-- Torn Page of "The Final Truth"
+							["g"] = {
+								i(171355),	-- Voidborn Core
+							},
+						}),
+						q(57401, {	-- Reconstructing "The Final Truth" (Rank 15)
+							["lvl"] = 120,
+							["coord"] = { 46.1, 64.0, 1473 },
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["sourceQuest"] = 57400,	-- Reconstructing "The Final Truth"  (Rank 14)
+							["cost"] = { { "i", 174785, 8 } },	-- Torn Page of "The Final Truth"
 							["g"] = {
 								i(171355),	-- Voidborn Core
 							},

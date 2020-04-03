@@ -1138,9 +1138,7 @@ _.Zones =
 					["coord"] = { 27.1, 62.5, 198 },
 					["sourceQuest"] = 29197,	-- Caught Unawares
 					["g"] = {
-						crit(1, {	-- The Molten Front Offensive (Stop the assault on the Sanctuary of Malorne)
-							["achievementID"] = 5866,
-						}),
+						ach(5866, crit(1)),	-- The Molten Front Offensive / Stop the assault on the Sanctuary of Malorne
 					},
 				}),
 				q(25549, {	-- The Sanctum of the Prophets
@@ -1233,9 +1231,7 @@ _.Zones =
 					["coord"] = { 27.0, 62.7, 198 },
 					["sourceQuest"] = 29200,	-- Leyara
 					["g"] = {
-						crit(2, {	-- The Molten Front Offensive (Gain access to the Molten Front)
-							["achievementID"] = 5866,
-						}),
+						ach(5866, crit(2)),	-- The Molten Front Offensive / Gain access to the Molten Front
 					},
 				}),
 				q(29196, {	-- To the Sanctuary!
