@@ -14341,8 +14341,8 @@ app.events.VARIABLES_LOADED = function()
 	-- Cache some collection states for account wide quests that aren't actually account wide. (Allied Races)
 	for i,achievementQuests in ipairs({
 		{ 12453, { 49973, 49613, 49354, 49614 } },	-- Allied Races: Nightborne
-		{ 12517, { 53466, 53467, 53353, 53355, 52942, 52943, 52945, 52955, 51479 } },	-- Allied Races: Mag'har
 		{ 13156, { 53831, 53823, 53824, 54419, 53826, 54301, 54300, 53825, 53827, 53828, 54031, 54033, 54032, 54034, 53830, 53719 } },	-- Allied Races: Zandalari Troll
+		{ 12517, { 53466, 53467, 53354, 53353, 53355, 52942, 52943, 52945, 52955, 51479 } },	-- Allied Races: Mag'har
 		{ 12452, { 48066, 48067, 49756, 48079, 41884, 41764, 48185, 41799, 48190, 41800, 48434, 41815, 41840, 41882, 41841, 48403, 48433 } },	-- Allied Races: Highmountain Tauren
 		{ 12450, { 49787, 48962 } },	-- Allied Races: Void Elf
 		{ 12516, { 51813, 53351, 53342, 53352, 51474, 53566 } },	-- Allied Races: Dark Iron Dwarf
