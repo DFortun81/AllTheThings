@@ -1567,10 +1567,11 @@ _.PVP =
 					i(172678),	-- Corrupted Gladiator's Plate Warhelm (A)
 					i(172743),	-- Corrupted Gladiator's Shoulderplates (A)
 				}),
-				n(-322, {	-- Back
+				-- Only via the Duelist Achievement obtainable.
+				--[[n(-322, {	-- Back
 					i(172671),	-- Corrupted Gladiator's Cloak (A)
 					i(172670),	-- Corrupted Gladiator's Cloak (H)
-				}),
+				}),--]]
 				n(-385, {	-- Finger
 					i(172664),	-- Corrupted Gladiator's Band
 					i(172663),	-- Corrupted Gladiator's Ring

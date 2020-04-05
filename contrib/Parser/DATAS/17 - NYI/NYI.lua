@@ -3441,6 +3441,8 @@ _.NeverImplemented =
 			un(1, i(77559)),	-- Replica Grand Marshal's left hand blade
 			un(1, i(77583)),	-- Replica High Warlords left claw
 			un(1, i(108787)),   	-- Unknown
+			un(1, i(171191)),   	-- owen test
+			un(1, i(171192)),   	-- owen test
 			un(1, i(115797)),	-- test fist weapon
 			un(1, i(64826)),	-- Bloodthirsty Gladiator's Ripper (Epic BG Item, never made it out of beta))
 			un(1, i(108788)),   	-- Unknown
