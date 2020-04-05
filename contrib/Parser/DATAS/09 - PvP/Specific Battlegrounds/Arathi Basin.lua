@@ -91,32 +91,84 @@ _.PVP =
 									i(20200),	-- Defiler's Mail Greaves
 									i(20201),	-- Defiler's Mail Greaves
 									i(20202),	-- Defiler's Mail Greaves
-									i(20184),	-- Defiler's Lamellar Spaulders
-									i(20177),	-- Defiler's Lamellar Girdle
-									i(20178),	-- Defiler's Lamellar Girdle
-									i(20179),	-- Defiler's Lamellar Girdle
-									i(20180),	-- Defiler's Lamellar Girdle
-									i(20181),	-- Defiler's Lamellar Greaves
-									i(20182),	-- Defiler's Lamellar Greaves
-									i(20183),	-- Defiler's Lamellar Greaves
-									i(20185),	-- Defiler's Lamellar Greaves
-									i(20212),	-- Defiler's Plate Spaulders
-									i(20204),	-- Defiler's Plate Girdle
-									i(20205),	-- Defiler's Plate Girdle
-									i(20206),	-- Defiler's Plate Girdle
-									i(20207),	-- Defiler's Plate Girdle
-									i(20208),	-- Defiler's Plate Greaves
-									i(20209),	-- Defiler's Plate Greaves
-									i(20210),	-- Defiler's Plate Greaves
-									i(20211), 	-- Defiler's Plate Greaves
-									i(20220),	-- Ironbark Staff
-									i(20214),	-- Mindfang
-									i(20131),	-- Battle Tabard of the Defilers
-									i(20068),	-- Deathguard's Cloak
-									i(20072),	-- Defiler's Talisman
-									i(21115),	-- Defiler's Talisman
-									i(21116),	-- Defiler's Talisman
-									i(21120),	-- Defiler's Talisman
+									i(20184, {	-- Defiler's Lamellar Spaulders
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(20177, {	-- Defiler's Lamellar Girdle
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(20178, {	-- Defiler's Lamellar Girdle
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(20179, {	-- Defiler's Lamellar Girdle
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(20180, {	-- Defiler's Lamellar Girdle
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(20181, {	-- Defiler's Lamellar Greaves
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(20182, {	-- Defiler's Lamellar Greaves
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(20183, {	-- Defiler's Lamellar Greaves
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(20185, {	-- Defiler's Lamellar Greaves
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(20212, {	-- Defiler's Plate Spaulders
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(20204, {	-- Defiler's Plate Girdle
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(20205, {	-- Defiler's Plate Girdle
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(20206, {	-- Defiler's Plate Girdle
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(20207, {	-- Defiler's Plate Girdle
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(20208, {	-- Defiler's Plate Greaves
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(20209, {	-- Defiler's Plate Greaves
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(20210, {	-- Defiler's Plate Greaves
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(20211, { 	-- Defiler's Plate Greaves
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(20220, {	-- Ironbark Staff
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(20214, {	-- Mindfang
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(20131, {	-- Battle Tabard of the Defilers
+										["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
+									}),
+									i(20068, {	-- Deathguard's Cloak
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(20072, {	-- Defiler's Talisman
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(21115, {	-- Defiler's Talisman
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(21116, {	-- Defiler's Talisman
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(21120, {	-- Defiler's Talisman
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
 								},
 							}),
 						}),
