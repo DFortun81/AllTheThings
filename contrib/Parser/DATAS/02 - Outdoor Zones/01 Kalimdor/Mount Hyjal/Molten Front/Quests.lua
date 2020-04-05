@@ -483,7 +483,7 @@ _.Zones =
 						},
 						["cost"] = { "c", 416, 125 },	-- 125x Mark of the World Tree
 						["g"] = {
-							ach(5866, crit(7)),	-- The Molten Front Offensive / Recruit an armorer
+							ach(5866, crit(7)),	-- The Molten Front Offensive / Filling the Moonwell
 						},
 					}),
 					q(29203, {	-- Into the Depths

@@ -1714,142 +1714,12 @@ _.Zones =
 						}),
 						n(87774, {	-- Stone Guard Brokefist <Primal Combatant>
 							["coord"] = { 48.3, 57.5, 624 },
-							["g"] = {
-								i(138626),	-- Arsenal: Primal Combatant's Weapons
-								i(115024),	-- Primal Combatant's Cleaver
-								i(115025),	-- Primal Combatant's Shanker
-								i(115026),	-- Primal Combatant's Ripper
-								i(115027),	-- Primal Combatant's Pummeler
-								i(115028),	-- Primal Combatant's Quickblade
-								i(115029),	-- Primal Combatant's Longbow
-								i(115031),	-- Primal Combatant's Rifle
-								i(115032),	-- Primal Combatant's Pike
-								i(115033),	-- Primal Combatant's Staff
-								i(115064),	-- Primal Combatant's Spellblade
-								i(115065),	-- Primal Combatant's Gavel
-								i(115067),	-- Primal Combatant's Baton of Light
-								i(115068),	-- Primal Combatant's Touch of Defeat
-								i(115069),	-- Primal Combatant's Battle Staff
-								i(115070),	-- Primal Combatant's Energy Staff
-								i(119858),	-- Primal Combatant's Endgame
-								i(119859),	-- Primal Combatant's Reprieve
-								i(119865),	-- Primal Combatant's Redoubt
-								i(119866),	-- Primal Combatant's Barrier
-								i(115132),	-- Primal Combatant's Hacker
-								i(115133),	-- Primal Combatant's Render
-								i(115134),	-- Primal Combatant's Bonecracker
-								i(115135),	-- Primal Combatant's Slicer
-								i(115136),	-- Primal Combatant's Decapitator
-								i(115137),	-- Primal Combatant's Bonegrinder
-								i(115138),	-- Primal Combatant's Greatsword
-								i(119925),	-- Primal Combatant's Shield Wall
-								i(119960),	-- Primal Combatant's Cape of Cruelty
-								i(119961),	-- Primal Combatant's Cape of Prowess
-								i(119833),	-- Primal Combatant's Cord of Cruelty
-								i(119834),	-- Primal Combatant's Cord of Prowess
-								i(119835),	-- Primal Combatant's Treads of Cruelty
-								i(119836),	-- Primal Combatant's Treads of Prowess
-								i(119837),	-- Primal Combatant's Cuffs of Prowess
-								i(119838),	-- Primal Combatant's Cuffs of Cruelty
-								i(119828),	-- Primal Combatant's Gloves of Prowess
-								i(119829),	-- Primal Combatant's Hood of Prowess
-								i(119830),	-- Primal Combatant's Leggings of Prowess
-								i(119831),	-- Primal Combatant's Robes of Prowess
-								i(119832),	-- Primal Combatant's Amice of Prowess
-								i(119839),	-- Primal Combatant's Dreadplate Chestpiece
-								i(119840),	-- Primal Combatant's Dreadplate Gauntlets
-								i(119841),	-- Primal Combatant's Dreadplate Helm
-								i(119842),	-- Primal Combatant's Dreadplate Legguards
-								i(119843),	-- Primal Combatant's Dreadplate Shoulders
-								i(119844),	-- Primal Combatant's Dragonhide Gloves
-								i(119845),	-- Primal Combatant's Dragonhide Helm
-								i(119846),	-- Primal Combatant's Dragonhide Legguards
-								i(119847),	-- Primal Combatant's Dragonhide Robes
-								i(119848),	-- Primal Combatant's Dragonhide Spaulders
-								i(119849),	-- Primal Combatant's Chain Armor
-								i(119850),	-- Primal Combatant's Chain Gauntlets
-								i(119851),	-- Primal Combatant's Chain Helm
-								i(119852),	-- Primal Combatant's Chain Leggings
-								i(119853),	-- Primal Combatant's Chain Spaulders
-								i(119962),	-- Primal Combatant's Drape of Cruelty
-								i(119963),	-- Primal Combatant's Drape of Prowess
-								i(119964),	-- Primal Combatant's Drape of Meditation
-								i(119965),	-- Primal Combatant's Drape of Contemplation
-								i(119867),	-- Primal Combatant's Belt of Prowess
-								i(119868),	-- Primal Combatant's Belt of Cruelty
-								i(119869),	-- Primal Combatant's Boots of Cruelty
-								i(119870),	-- Primal Combatant's Boots of Prowess
-								i(119871),	-- Primal Combatant's Bindings of Cruelty
-								i(119872),	-- Primal Combatant's Bindings of Prowess
-								i(119950),	-- Primal Combatant's Tunic
-								i(119951),	-- Primal Combatant's Gloves
-								i(119952),	-- Primal Combatant's Helm
-								i(119953),	-- Primal Combatant's Legguards
-								i(119954),	-- Primal Combatant's Spaulders
-								i(119873),	-- Primal Combatant's Silk Handguards
-								i(119874),	-- Primal Combatant's Silk Cowl
-								i(119875),	-- Primal Combatant's Silk Trousers
-								i(119876),	-- Primal Combatant's Silk Robe
-								i(119877),	-- Primal Combatant's Silk Amice
-								i(119878),	-- Primal Combatant's Waistguard of Cruelty
-								i(119879),	-- Primal Combatant's Waistguard of Prowess
-								i(119880),	-- Primal Combatant's Footguards of Cruelty
-								i(119881),	-- Primal Combatant's Footguards of Prowess
-								i(119882),	-- Primal Combatant's Armbands of Prowess
-								i(119883),	-- Primal Combatant's Armbands of Cruelty
-								i(119955),	-- Primal Combatant's Armor
-								i(119956),	-- Primal Combatant's Gauntlets
-								i(119957),	-- Primal Combatant's Helm
-								i(119958),	-- Primal Combatant's Leggings
-								i(119959),	-- Primal Combatant's Spaulders
-								i(119884),	-- Primal Combatant's Ironskin Gloves
-								i(119885),	-- Primal Combatant's Ironskin Helm
-								i(119886),	-- Primal Combatant's Ironskin Legguards
-								i(119887),	-- Primal Combatant's Ironskin Spaulders
-								i(119888),	-- Primal Combatant's Ironskin Tunic
-								i(119889),	-- Primal Combatant's Scaled Chestpiece
-								i(119890),	-- Primal Combatant's Scaled Gauntlets
-								i(119891),	-- Primal Combatant's Scaled Helm
-								i(119892),	-- Primal Combatant's Scaled Legguards
-								i(119893),	-- Primal Combatant's Scaled Shoulders
-								i(119894),	-- Primal Combatant's Girdle of Cruelty
-								i(119895),	-- Primal Combatant's Girdle of Prowess
-								i(119896),	-- Primal Combatant's Warboots of Cruelty
-								i(119897),	-- Primal Combatant's Warboots of Prowess
-								i(119898),	-- Primal Combatant's Armplates of Cruelty
-								i(119899),	-- Primal Combatant's Armplates of Prowess
-								i(119918),	-- Primal Combatant's Plate Breastplate
-								i(119919),	-- Primal Combatant's Plate Gloves
-								i(119920),	-- Primal Combatant's Plate Helmet
-								i(119921),	-- Primal Combatant's Legplates
-								i(119922),	-- Primal Combatant's Shoulderplates
-								i(119900),	-- Primal Combatant's Satin Gloves
-								i(119901),	-- Primal Combatant's Satin Hood
-								i(119902),	-- Primal Combatant's Satin Leggings
-								i(119903),	-- Primal Combatant's Satin Robe
-								i(119904),	-- Primal Combatant's Satin Mantle
-								i(119905),	-- Primal Combatant's Leather Tunic
-								i(119906),	-- Primal Combatant's Leather Gloves
-								i(119907),	-- Primal Combatant's Leather Helm
-								i(119908),	-- Primal Combatant's Leather Legguards
-								i(119909),	-- Primal Combatant's Leather Spaulders
-								i(119910),	-- Primal Combatant's Ringmail Armor
-								i(119911),	-- Primal Combatant's Ringmail Gauntlets
-								i(119912),	-- Primal Combatant's Ringmail Helm
-								i(119913),	-- Primal Combatant's Ringmail Leggings
-								i(119915),	-- Primal Combatant's Ringmail Spaulders
-								i(119966),	-- Primal Combatant's Cloak of Cruelty
-								i(119967),	-- Primal Combatant's Cloak of Prowess
-								i(119938),	-- Primal Combatant's Felweave Handguards
-								i(119939),	-- Primal Combatant's Felweave Cowl
-								i(119940),	-- Primal Combatant's Felweave Trousers
-								i(119941),	-- Primal Combatant's Felweave Raiment
-								i(119942),	-- Primal Combatant's Felweave Amice
-								i(119943),	-- Primal Combatant's Plate Chestpiece
-								i(119944),	-- Primal Combatant's Plate Gauntlets
-								i(119945),	-- Primal Combatant's Plate Helm
-								i(119946),	-- Primal Combatant's Plate Legguards
-								i(119947),	-- Primal Combatant's Plate Shoulders
+							["sym"] = { 
+								{"sub", "pvp_gear_faction_base", -9981, -679, -9913, -660 },
+								{"pop"},
+								{"exclude", "npcID", -384 },	-- Exclude Neck
+								{"exclude", "npcID", -385 },	-- Exclude Finger
+								{"exclude", "npcID", -386 },	-- Exclude Tinket
 							},
 						}),
 						n(93916, {	-- Tae'loxe Soulshrivel <Warmongering Combatant>
@@ -1859,10 +1729,14 @@ _.Zones =
 								{"pop"},
 								{"exclude", "npcID", -320 },	-- Exclude Head Header
 								{"exclude", "npcID", -321 },	-- Exclude Shoulder Header
-								{"exclude", "npcID", -322 },	-- Exclude Back Header
 								{"exclude", "npcID", -323 },	-- Exclude Chest Header
 								{"exclude", "npcID", -327 },	-- Exclude Hands Header
 								{"exclude", "npcID", -329 },	-- Exclude Legs Header
+								{"exclude", "npcID", -384 },	-- Exclude Neck
+								{"exclude", "npcID", -385 },	-- Exclude Finger
+								{"exclude", "npcID", -386 },	-- Exclude Tinket
+								-- Need to exclude the back slot because Blizzard messed it up and put the Wild Combatant's Gear on this vendor too instead of Warmongering Combatant's Gear
+								{"exclude", "npcID", -322 },	-- Exclude Back Header
 							},
 						}),
 						n(85840, {	-- Torgg Flexington <Blueprints Trader>

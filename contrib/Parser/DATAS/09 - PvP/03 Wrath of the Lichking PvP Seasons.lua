@@ -2214,7 +2214,7 @@ _.PVP =
 				cl(6, {	-- Death Knight
 					i(146570, {	-- Ensemble: Relentless Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 6 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -670, -661, 6 }, },
 					}),
 					i(40791, {	-- Relentless Gladiator's Dreadplate Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -2235,7 +2235,7 @@ _.PVP =
 				cl(11, {	-- Druid
 					i(146569, {	-- Ensemble: Relentless Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 11 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -670, -661, 11 }, },
 					}),
 					i(41774, {	-- Relentless Gladiator's Dragonhide Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -2286,7 +2286,7 @@ _.PVP =
 				cl(3, {	-- Hunter
 					i(146568, {	-- Ensemble: Relentless Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 3 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -670, -661, 3 }, },
 					}),
 					i(41088, {	-- Relentless Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -2307,7 +2307,7 @@ _.PVP =
 				cl(8, {	-- Mage
 					i(146577, {	-- Ensemble: Relentless Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 8 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -670, -661, 8 }, },
 					}),
 					i(41966, {	-- Relentless Gladiator's Silk Amice
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -2328,7 +2328,7 @@ _.PVP =
 				cl(2, {	-- Paladin
 					i(146576, {	-- Ensemble: Relentless Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 2 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -670, -661, 2 }, },
 					}),
 					i(40910, {	-- Relentless Gladiator's Ornamented Chestguard
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -2364,7 +2364,7 @@ _.PVP =
 				cl(5, {	-- Priest
 					i(146575, {	-- Ensemble: Relentless Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 5 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -670, -661, 5 }, },
 					}),
 					i(41875, {	-- Relentless Gladiator's Mooncloth Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -2400,7 +2400,7 @@ _.PVP =
 				cl(4, {	-- Rogue
 					i(146572, {	-- Ensemble: Relentless Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 4 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -670, -661, 4 }, },
 					}),
 					i(41768, {	-- Relentless Gladiator's Leather Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -2421,7 +2421,7 @@ _.PVP =
 				cl(7, {	-- Shaman
 					i(146574, {	-- Ensemble: Relentless Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 7 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -670, -661, 7 }, },
 					}),
 					i(41082, {	-- Relentless Gladiator's Linked Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -2472,7 +2472,7 @@ _.PVP =
 				cl(9, {	-- Warlock
 					i(146571, {	-- Ensemble: Relentless Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 9 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -670, -661, 9 }, },
 					}),
 					i(42012, {	-- Relentless Gladiator's Felweave Amice
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -2493,7 +2493,7 @@ _.PVP =
 				cl(1, {	-- Warrior
 					i(146573, {	-- Ensemble: Relentless Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -669, -661, 1 }, },
+						["sym"] = { {"sub", "pvp_set_ensemble", -10014, -670, -661, 1 }, },
 					}),
 					i(40790, {	-- Relentless Gladiator's Plate Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -2670,6 +2670,7 @@ _.PVP =
 				n(-319, {	-- Weapons
 					un(2, i(48412)),	-- Relentless Gladiator's Acute Staff
 					un(2, i(49191)),	-- Relentless Gladiator's Blade of Celerity
+					un(2, i(48444)),	-- Relentless Gladiator's Claw (wrong itemtag from blizzard)
 					un(2, i(48406)),	-- Relentless Gladiator's Claymore
 					un(2, i(48414)),	-- Relentless Gladiator's Combat Staff
 					un(2, i(48404)),	-- Relentless Gladiator's Crusher

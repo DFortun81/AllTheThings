@@ -478,155 +478,13 @@ _.Zones =
 							},
 						}),
 						n(86175, {	-- Bregg Coppercast <Primal Combatant>
-							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 56.2, 20.0, 622 },
-							["g"] = {
-								i(138625),	-- Arsenal: Primal Combatant's Weapons
-								-- Ensemble: Primal Combatant's Chain Armor (Hunter)
-								-- Ensemble: Primal Combatant's Dragonhide Armor (Druid)
-								-- Ensemble: Primal Combatant's Dreadplate Armor (DK)
-								-- Ensemble: Primal Combatant's Felweave Armor (Warlock)
-								-- Ensemble: Primal Combatant's Ironskin Armor (Monk)
-								-- Ensemble: Primal Combatant's Leather Armor (Rogue)
-								-- Ensemble: Primal Combatant's Plate Armor (Warrior)
-								-- Ensemble: Primal Combatant's Ringmail Armor (Shaman)
-								-- Ensemble: Primal Combatant's Satin Armor (Priest)
-								-- Ensemble: Primal Combatant's Scaled Armor (Paladin)
-								-- Ensemble: Primal Combatant's Silk Armor (Mage)
-								i(120053),	-- Primal Combatant's Cleaver
-								i(120054),	-- Primal Combatant's Shanker
-								i(120055),	-- Primal Combatant's Ripper
-								i(120056),	-- Primal Combatant's Pummeler
-								i(120057),	-- Primal Combatant's Quickblade
-								i(120058),	-- Primal Combatant's Longbow
-								i(120060),	-- Primal Combatant's Rifle
-								i(120061),	-- Primal Combatant's Pike
-								i(120062),	-- Primal Combatant's Staff
-								i(120063),	-- Primal Combatant's Spellblade
-								i(120064),	-- Primal Combatant's Gavel
-								i(120066),	-- Primal Combatant's Baton of Light
-								i(120067),	-- Primal Combatant's Touch of Defeat
-								i(120068),	-- Primal Combatant's Battle Staff
-								i(120069),	-- Primal Combatant's Energy Staff
-								i(115075),	-- Primal Combatant's Endgame
-								i(115076),	-- Primal Combatant's Reprieve
-								i(115082),	-- Primal Combatant's Redoubt
-								i(115083),	-- Primal Combatant's Barrier
-								i(120070),	-- Primal Combatant's Hacker
-								i(120071),	-- Primal Combatant's Render
-								i(120072),	-- Primal Combatant's Bonecracker
-								i(120073),	-- Primal Combatant's Slicer
-								i(120074),	-- Primal Combatant's Decapitator
-								i(120075),	-- Primal Combatant's Bonegrinder
-								i(120076),	-- Primal Combatant's Greatsword
-								i(115148),	-- Primal Combatant's Shield Wall
-								i(115183),	-- Primal Combatant's Cape of Cruelty
-								i(115184),	-- Primal Combatant's Cape of Prowess
-								i(115043),	-- Primal Combatant's Cord of Cruelty
-								i(115044),	-- Primal Combatant's Cord of Prowess
-								i(115045),	-- Primal Combatant's Treads of Cruelty
-								i(115046),	-- Primal Combatant's Treads of Prowess
-								i(115047),	-- Primal Combatant's Cuffs of Prowess
-								i(115048),	-- Primal Combatant's Cuffs of Cruelty
-								i(115038),	-- Primal Combatant's Gloves of Prowess
-								i(115039),	-- Primal Combatant's Hood of Prowess
-								i(115040),	-- Primal Combatant's Leggings of Prowess
-								i(115041),	-- Primal Combatant's Robes of Prowess
-								i(115042),	-- Primal Combatant's Amice of Prowess
-								i(115049),	-- Primal Combatant's Dreadplate Chestpiece
-								i(115050),	-- Primal Combatant's Dreadplate Gauntlets
-								i(115051),	-- Primal Combatant's Dreadplate Helm
-								i(115052),	-- Primal Combatant's Dreadplate Legguards
-								i(115053),	-- Primal Combatant's Dreadplate Shoulders
-								i(115054),	-- Primal Combatant's Dragonhide Gloves
-								i(115055),	-- Primal Combatant's Dragonhide Helm
-								i(115056),	-- Primal Combatant's Dragonhide Legguards
-								i(115057),	-- Primal Combatant's Dragonhide Tunic
-								i(115058),	-- Primal Combatant's Dragonhide Spaulders
-								i(115059),	-- Primal Combatant's Chain Armor
-								i(115060),	-- Primal Combatant's Chain Gauntlets
-								i(115061),	-- Primal Combatant's Chain Helm
-								i(115062),	-- Primal Combatant's Chain Leggings
-								i(115063),	-- Primal Combatant's Chain Spaulders
-								i(115185),	-- Primal Combatant's Drape of Cruelty
-								i(115186),	-- Primal Combatant's Drape of Prowess
-								i(115187),	-- Primal Combatant's Drape of Meditation
-								i(115188),	-- Primal Combatant's Drape of Contemplation
-								i(115084),	-- Primal Combatant's Belt of Prowess
-								i(115085),	-- Primal Combatant's Belt of Cruelty
-								i(115086),	-- Primal Combatant's Boots of Cruelty
-								i(115087),	-- Primal Combatant's Boots of Prowess
-								i(115088),	-- Primal Combatant's Bindings of Cruelty
-								i(115089),	-- Primal Combatant's Bindings of Prowess
-								i(115173),	-- Primal Combatant's Tunic
-								i(115174),	-- Primal Combatant's Gloves
-								i(115175),	-- Primal Combatant's Helm
-								i(115176),	-- Primal Combatant's Legguards
-								i(115177),	-- Primal Combatant's Spaulders
-								i(115090),	-- Primal Combatant's Silk Handguards
-								i(115091),	-- Primal Combatant's Silk Cowl
-								i(115092),	-- Primal Combatant's Silk Trousers
-								i(115093),	-- Primal Combatant's Silk Robe
-								i(115094),	-- Primal Combatant's Silk Amice
-								i(115095),	-- Primal Combatant's Waistguard of Cruelty
-								i(115096),	-- Primal Combatant's Waistguard of Prowess
-								i(115097),	-- Primal Combatant's Footguards of Cruelty
-								i(115098),	-- Primal Combatant's Footguards of Prowess
-								i(115099),	-- Primal Combatant's Armbands of Prowess
-								i(115100),	-- Primal Combatant's Armbands of Cruelty
-								i(115178),	-- Primal Combatant's Armor
-								i(115179),	-- Primal Combatant's Gauntlets
-								i(115180),	-- Primal Combatant's Helm
-								i(115181),	-- Primal Combatant's Leggings
-								i(115182),	-- Primal Combatant's Spaulders
-								i(115101),	-- Primal Combatant's Ironskin Gloves
-								i(115102),	-- Primal Combatant's Ironskin Helm
-								i(115103),	-- Primal Combatant's Ironskin Legguards
-								i(115104),	-- Primal Combatant's Ironskin Spaulders
-								i(115105),	-- Primal Combatant's Ironskin Tunic
-								i(115106),	-- Primal Combatant's Scaled Chestpiece
-								i(115107),	-- Primal Combatant's Scaled Gauntlets
-								i(115108),	-- Primal Combatant's Scaled Helm
-								i(115109),	-- Primal Combatant's Scaled Legguards
-								i(115110),	-- Primal Combatant's Scaled Shoulders
-								i(115111),	-- Primal Combatant's Girdle of Cruelty
-								i(115112),	-- Primal Combatant's Girdle of Prowess
-								i(115113),	-- Primal Combatant's Warboots of Cruelty
-								i(115114),	-- Primal Combatant's Warboots of Prowess
-								i(115115),	-- Primal Combatant's Armplates of Cruelty
-								i(115116),	-- Primal Combatant's Armplates of Prowess
-								i(115141),	-- Primal Combatant's Plate Breastplate
-								i(115142),	-- Primal Combatant's Plate Gloves
-								i(115143),	-- Primal Combatant's Plate Helmet
-								i(115144),	-- Primal Combatant's Legplates
-								i(115145),	-- Primal Combatant's Shoulderplates
-								i(115117),	-- Primal Combatant's Satin Gloves
-								i(115118),	-- Primal Combatant's Satin Hood
-								i(115119),	-- Primal Combatant's Satin Leggings
-								i(115120),	-- Primal Combatant's Satin Robe
-								i(115121),	-- Primal Combatant's Satin Mantle
-								i(115122),	-- Primal Combatant's Leather Tunic
-								i(115123),	-- Primal Combatant's Leather Gloves
-								i(115124),	-- Primal Combatant's Leather Helm
-								i(115125),	-- Primal Combatant's Leather Legguards
-								i(115126),	-- Primal Combatant's Leather Spaulders
-								i(115127),	-- Primal Combatant's Ringmail Armor
-								i(115128),	-- Primal Combatant's Ringmail Gauntlets
-								i(115129),	-- Primal Combatant's Ringmail Helm
-								i(115130),	-- Primal Combatant's Ringmail Leggings
-								i(115131),	-- Primal Combatant's Ringmail Spaulders
-								i(115189),	-- Primal Combatant's Cloak of Cruelty
-								i(115190),	-- Primal Combatant's Cloak of Prowess
-								i(115161),	-- Primal Combatant's Felweave Handguards
-								i(115162),	-- Primal Combatant's Felweave Cowl
-								i(115163),	-- Primal Combatant's Felweave Trousers
-								i(115164),	-- Primal Combatant's Felweave Raiment
-								i(115165),	-- Primal Combatant's Felweave Amice
-								i(115166),	-- Primal Combatant's Plate Chestpiece
-								i(115167),	-- Primal Combatant's Plate Gauntlets
-								i(115168),	-- Primal Combatant's Plate Helm
-								i(115169),	-- Primal Combatant's Plate Legguards
-								i(115170),	-- Primal Combatant's Plate Shoulders
+							["sym"] = { 
+								{"sub", "pvp_gear_faction_base", -9981, -679, -9914, -660 },
+								{"pop"},
+								{"exclude", "npcID", -384 },	-- Exclude Neck
+								{"exclude", "npcID", -385 },	-- Exclude Finger
+								{"exclude", "npcID", -386 },	-- Exclude Tinket
 							},
 						}),
 						n(88155, {	-- Challenger Savina
@@ -1697,6 +1555,9 @@ _.Zones =
 								{"exclude", "npcID", -323 },	-- Exclude Chest Header
 								{"exclude", "npcID", -327 },	-- Exclude Hands Header
 								{"exclude", "npcID", -329 },	-- Exclude Legs Header
+								{"exclude", "npcID", -384 },	-- Exclude Neck
+								{"exclude", "npcID", -385 },	-- Exclude Finger
+								{"exclude", "npcID", -386 },	-- Exclude Tinket
 							},
 						}),
 						n(87062, { 	-- Royce Bigbeard <Blacksmithing Plans>

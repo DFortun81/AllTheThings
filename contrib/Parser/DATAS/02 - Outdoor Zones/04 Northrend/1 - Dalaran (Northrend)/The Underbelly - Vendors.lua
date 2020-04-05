@@ -276,7 +276,6 @@ _.Zones =
 							{"pop"},	-- Discard the Set header and acquire the children.
 							{"exclude", "npcID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 						},
-						i(48444),	-- Relentless Gladiator's Claw
 					}),
 					n(54651, {	-- Zom Bocom (Same name, different npc)
 						["u"] = 43,	-- Vendor no longer exists

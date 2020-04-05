@@ -857,6 +857,12 @@ _.NeverImplemented =
 		q(39713),	-- Tracking Quest. Pops immediately on new characters but no other info known. Possibly legendary ring related
 		
 	--	PvP Set Completed
+		q(43092),	-- Primal Combatant's Felweave Armor (Alliance, Warlock)
+		q(43093),	-- Primal Combatant's Felweave Armor (Horde, Warlock)
+		q(43094),	-- Primal Combatant's Satin Armor (Alliance, Priest)
+		q(43095),	-- Primal Combatant's Satin Armor (Horde, Priest)
+		q(43096),	-- Primal Combatant's Silk Armor (Alliance, Mage)
+		q(43097),	-- Primal Combatant's Silk Armor (Horde, Mage)
 		
 		q(43045),	-- Warmongering Combatant's Satin Armor (Alliance, Priest)
 		q(43046),	-- Warmongering Combatant's Satin Armor (Horde, Priest)
@@ -871,9 +877,12 @@ _.NeverImplemented =
 		q(43160),	-- Warmongering Gladiator's Felweave Armor (Alliance, Warlock)
 		q(43161),	-- Warmongering Gladiator's Felweave Armor (Horde, Warlock)
 		
+		q(43167),	-- Warmongering Gladiator's Plate Armor (Alliance, Warrior)
+		q(43168),	-- Warmongering Gladiator's Plate Armor (Horde, Warrior)
 		q(43169),	-- Warmongering Gladiator's Satin Armor (Alliance, Priest)
 		q(43170),	-- Warmongering Gladiator's Satin Armor (Horde, Priest)
-		
+		q(43171),	-- Warmongering Gladiator's Scaled Armor (Alliance, Paladin)
+		q(43172),	-- Warmongering Gladiator's Scaled Armor (Horde, Paladin)
 		q(43173),	-- Warmongering Gladiator's Silk Armor (Alliance, Mage)
 		q(43174),	-- Warmongering Gladiator's Silk Armor (Horde, Mage)
 		
@@ -1307,6 +1316,20 @@ _.NeverImplemented =
 		q(47935),	-- Tracking Quest - kill Icefist
 		q(47921),	-- Tracking Quest. Triggered after using the cloth ensemble
 		
+		
+	-- Raids
+		-- These trigger just once a week
+	-- The Emerald Nightmare
+		q(44142),	-- Nythendra
+		q(44143),	-- Il'gynoth, Heart of Corruption
+		q(44144),	-- Elerethe Renferal
+		q(44145),	-- Ursoc
+		q(44146),	-- Dragons of Nightmare
+		q(44147),	-- Cenarius
+		q(44148),	-- Xavius
+	
+	-- Nighthold
+		q(46328),	-- Krosus
 
 		
 		-------------------
