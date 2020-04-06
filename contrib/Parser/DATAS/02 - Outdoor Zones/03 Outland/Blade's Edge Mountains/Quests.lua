@@ -879,6 +879,9 @@ _.Zones =
 					["provider"] = { "n", 22919 },	-- Image of Commander Ameer
 					["coord"] = { 52.8, 15.0, 105 },
 					["sourceQuest"] = 10975,	-- Purging the Chambers of Bash'ir
+					["cost"] = {
+						{ "i", 31941, 1 },	-- Mark of the Nexus-King
+					},
 				}),
 				q(11080, {	-- The Relic's Emanation
 					["provider"] = { "n", 23233 },	-- Chu'a'lor
