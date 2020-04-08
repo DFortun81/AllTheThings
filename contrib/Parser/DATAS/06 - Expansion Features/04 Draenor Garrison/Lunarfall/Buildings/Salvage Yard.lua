@@ -225,9 +225,11 @@ _.ExpansionFeatures =
 									},
 									{	-- Streamtalker Cowl [Restoration]
 										["itemID"] = 119749,	-- Streamtalker Cowl
+										["u"] = 1,	-- Not available
 									},
 									{	-- Streamtalker Helm [Enhancement]
 										["itemID"] = 119733,	-- Streamtalker Helm
+										["u"] = 1,	-- Not available										
 									},
 									{	-- Streamtalker Choker [Enhancement]
 										["itemID"] = 119709,	-- Streamtalker Choker
@@ -243,60 +245,75 @@ _.ExpansionFeatures =
 									},
 									{	-- Streamtalker Shoulderguards [Enhancement]
 										["itemID"] = 119735,	-- Streamtalker Shoulderguards
+										["u"] = 1,	-- Not available
 									},
 									{	-- Streamtalker Spaulders [Restoration]
 										["itemID"] = 119752,	-- Streamtalker Spaulders
+										["u"] = 1,	-- Not available
 									},
 									{	-- Streamtalker Cloak of Destruction [Elemental]
 										["itemID"] = 119744,	-- Streamtalker Cloak of Destruction
+										["u"] = 1,	-- Not available
 									},
 									{	-- Streamtalker Cloak of Rage [Enhancement]
 										["itemID"] = 119708,	-- Streamtalker Cloak of Rage
+										["u"] = 1,	-- Not available
 									},
 									{	-- Streamtalker Cloak of Wisdom [Restoration]
 										["itemID"] = 119738,	-- Streamtalker Cloak of Wisdom
+										["u"] = 1,	-- Not available
 									},
 									{	-- Streamtalker Chestguard [Enhancement]
 										["itemID"] = 119730,	-- Streamtalker Chestguard
+										["u"] = 1,	-- Not available										
 									},
 									{	-- Streamtalker Tunic [Elemental]
 										["itemID"] = 119720,	-- Streamtalker Tunic
 									},
 									{	-- Streamtalker Vest [Restoration]
 										["itemID"] = 119746,	-- Streamtalker Vest
+										["u"] = 1,	-- Not available										
 									},
 									{	-- Streamtalker Armbands [Elemental]
 										["itemID"] = 119728,	-- Streamtalker Armbands
 									},
 									{	-- Streamtalker Armguard [Enhancement]
 										["itemID"] = 119737,	-- Streamtalker Armguard
+										["u"] = 1,	-- Not available
 									},
 									{	-- Streamtalker Bracers [Restoration]
 										["itemID"] = 119754,	-- Streamtalker Bracers
+										["u"] = 1,	-- Not available									
 									},
 									{	-- Streamtalker Gloves [Elemental]
 										["itemID"] = 119722,	-- Streamtalker Gloves
 									},
 									{	-- Streamtalker Grips [Restoration]
 										["itemID"] = 119748,	-- Streamtalker Grips
+										["u"] = 1,	-- Not available
 									},
 									{	-- Streamtalker Handguards [Enhancement]
 										["itemID"] = 119732,	-- Streamtalker Handguards
+										["u"] = 1,	-- Not available										
 									},
 									{	-- Streamtalker Belt [Elemental]
 										["itemID"] = 119727,	-- Streamtalker Belt
 									},
 									{	-- Streamtalker Girdle [Restoration]
 										["itemID"] = 119753,	-- Streamtalker Girdle
+										["u"] = 1,	-- Not available
 									},
 									{	-- Streamtalker Waistguard [Enhancement]
 										["itemID"] = 119736,	-- Streamtalker Waistguard
+										["u"] = 1,	-- Not available
 									},
 									{	-- Streamtalker Leggings [Restoration]
 										["itemID"] = 119750,	-- Streamtalker Leggings
+										["u"] = 1,	-- Not available
 									},
 									{	-- Streamtalker Legguards [Enhancement]
 										["itemID"] = 119734,	-- Streamtalker Legguards
+										["u"] = 1,	-- Not available
 									},
 									{	-- Streamtalker Legwraps [Elemental]
 										["itemID"] = 119724,	-- Streamtalker Legwraps
@@ -306,9 +323,11 @@ _.ExpansionFeatures =
 									},
 									{	-- Streamtalker Greaves [Enhancement]
 										["itemID"] = 119731,	-- Streamtalker Greaves
+										["u"] = 1,	-- Not available
 									},
 									{	-- Streamtalker Sabatons [Restoration]
 										["itemID"] = 119747,	-- Streamtalker Sabatons
+										["u"] = 1,	-- Not available
 									},
 									{	-- Streamtalker Band of Destruction [Elemental]
 										["itemID"] = 119717,	-- Streamtalker Band of Destruction
