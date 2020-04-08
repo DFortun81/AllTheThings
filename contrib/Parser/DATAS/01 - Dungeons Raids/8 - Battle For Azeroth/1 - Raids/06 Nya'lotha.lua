@@ -410,7 +410,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2366, {	-- Carapace of N'Zoth
-					["cr"] = 162429,	-- Fury of N'Zoth
+					["crs"] = { 162429, 157439 },	-- Fury of N'Zoth
 					["g"] = {
 						ach(14147),	-- Cleansing Treatment
 						i(174109),	-- Lurker's Piercing Gaze
