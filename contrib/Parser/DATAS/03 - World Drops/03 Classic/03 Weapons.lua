@@ -9,7 +9,6 @@ _.WorldDrops =
 				i(13014),	-- Axe of Rin'ji
 				i(811),		-- Axe of the Deep Woods
 				i(2878),	-- Bearded Boneaxe
-				un(7, i(885)),	-- Black Metal Axe
 				i(15237),	-- Corpse Harvester
 				i(15235),	-- Crescent Edge
 				i(2815),	-- Curve-Bladed Ripper
@@ -38,7 +37,6 @@ _.WorldDrops =
 				i(3201),	-- Barbarian War Axe
 				i(3195),	-- Barbaric Battle Axe
 				i(3199),	-- Battle Slayer
-				un(7, i(2015)),	-- Black Metal War Axe
 				i(1263),	-- Brain Hacker
 				i(3210),	-- Brutal War Axe
 				i(2299),	-- Burning War Axe
@@ -48,7 +46,6 @@ _.WorldDrops =
 				i(870),		-- Fiery War Axe
 				i(15270),	-- Gigantic War Axe
 				i(1639),	-- Grinning Axe
-				un(7, i(2227)),	-- Heavy Ogre War Axe
 				i(13017),	-- Hellslayer Battle Axe
 				i(2291),	-- Kang the Decapitator
 				i(13016),	-- Killmaim
@@ -107,7 +104,6 @@ _.WorldDrops =
 				i(4088),	-- Dreadblade
 				un(7, i(3336)),	-- Flesh Piercer (Originally a World Drop)
 				i(2164),	-- Gut Ripper
-				un(7, i(2020)),	-- Hollowfang Blade
 				i(15242),	-- Honed Stiletto
 				i(3184),	-- Hook Dagger
 				i(6660),	-- Julie's Dagger
@@ -118,7 +114,6 @@ _.WorldDrops =
 				i(24222),	-- The Shadowfoot Stabber
 				i(8006),	-- The Ziggler
 				i(1465),	-- Tigerbane
-				un(7, i(899)),	-- Venom Web Fang
 				i(15245),	-- Vorpal Dagger
 				i(4571),	-- War Knife
 				i(4091),	-- Widowmaker
@@ -443,7 +438,6 @@ _.WorldDrops =
 				i(15276),	-- Magus Long Staff
 				i(4575),	-- Medicine Staff
 				i(866),		-- Monk's Staff
-				un(7, i(2226)),	-- Ogremage Staff
 				i(15278),	-- Solstice Staff
 				i(1607),	-- Soulkeeper
 				i(12532),	-- Spire of the Stoneshaper
@@ -491,7 +485,6 @@ _.WorldDrops =
 				i(1265),	-- Scorpion Sting
 				i(13035),	-- Serpent Slicer
 				i(754),		-- Shortsword of Vengeance
-				un(7, i(2018)),	-- Skeletal Longsword
 				i(13034),	-- Speedsteel Rapier
 				i(13032),	-- Sword of Corruption
 				i(6622),	-- Sword of Zeal
