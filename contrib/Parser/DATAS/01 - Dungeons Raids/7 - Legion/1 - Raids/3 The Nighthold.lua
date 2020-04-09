@@ -625,7 +625,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2]
 					i(143563, {	-- Gauntlets of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138311),	-- Clutch of Azj'Aqir
-						i(138352),	-- Dreadwyrm Gauntlets
+						i(138377),	-- Gloves of Second Sight
 						i(138353),	-- Gauntlets of the Highlord
 						i(138310),	-- Purifier's Gloves
 					}),
@@ -638,7 +638,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(143567, {	-- Gauntlets of the Foreseen Vanquisher [Death Knight, Druid, Mage, Rogue]
 						i(138329),	-- Doomblade Gauntlets
 						i(138309),	-- Gloves of Everburning Knowledge
-						i(138377),	-- Gloves of Second Sight
+						i(138352),	-- Dreadwyrm Gauntlets
 						i(138327),	-- Gloves of the Astral Warden
 					}),
 					i(140900),	-- Brooch of the Astral Scryer
@@ -1001,7 +1001,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2]
 					i(143563, {	-- Gauntlets of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138311),	-- Clutch of Azj'Aqir
-						i(138352),	-- Dreadwyrm Gauntlets
+						i(138377),	-- Gloves of Second Sight
 						i(138353),	-- Gauntlets of the Highlord
 						i(138310),	-- Purifier's Gloves
 					}),
@@ -1014,7 +1014,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(143567, {	-- Gauntlets of the Foreseen Vanquisher [Death Knight, Druid, Mage, Rogue]
 						i(138329),	-- Doomblade Gauntlets
 						i(138309),	-- Gloves of Everburning Knowledge
-						i(138377),	-- Gloves of Second Sight
+						i(138352),	-- Dreadwyrm Gauntlets
 						i(138327),	-- Gloves of the Astral Warden
 					}),
 					i(140900),	-- Brooch of the Astral Scryer
@@ -1388,7 +1388,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2]
 					i(143563, {	-- Gauntlets of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]
 						i(138311),	-- Clutch of Azj'Aqir
-						i(138352),	-- Dreadwyrm Gauntlets
+						i(138377),	-- Gloves of Second Sight
 						i(138353),	-- Gauntlets of the Highlord
 						i(138310),	-- Purifier's Gloves
 					}),
@@ -1401,7 +1401,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(143567, {	-- Gauntlets of the Foreseen Vanquisher [Death Knight, Druid, Mage, Rogue]
 						i(138329),	-- Doomblade Gauntlets
 						i(138309),	-- Gloves of Everburning Knowledge
-						i(138377),	-- Gloves of Second Sight
+						i(138352),	-- Dreadwyrm Gauntlets
 						i(138327),	-- Gloves of the Astral Warden
 					}),
 					i(140900),	-- Brooch of the Astral Scryer
