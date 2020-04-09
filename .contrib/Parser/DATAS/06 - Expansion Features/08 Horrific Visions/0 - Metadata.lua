@@ -62,7 +62,7 @@ _.ExpansionFeatures =
 				ach(14060),	-- Unwavering Resolve
 				ach(14061),	-- We have the Technology
 			}),
-			n(QUESTS, {	-- TODO Seperate these mog items out at a later point?
+			n(QUESTS, {
 				["description"] = "Mogs are looted at the end from a full clear with that specific mask on.",
 				["maps"] = {
 					1469,	-- Org
@@ -148,6 +148,10 @@ _.ExpansionFeatures =
 								["isWeekly"] = true,
 							}),
 						},
+					}),
+					q(59834, {	-- Weekly Horrific Core
+						["description"] = "Weekly Horrific Core completion",
+						["isWeekly"] = true,
 					}),
 				},
 			}),
