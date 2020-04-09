@@ -129,6 +129,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					e(2364, {	-- Ra-den the Despoiled
 						["crs"] = { 156866 },
 						["g"] = {
+							i(174447),	-- Void-Scarred Anubisath (pet)
 							i(174279),	-- Encrypted Ny'alothan Text
 							i(172228),	-- Shandai, Watcher of Cosmos
 							i(172197),	-- Unguent Caress
