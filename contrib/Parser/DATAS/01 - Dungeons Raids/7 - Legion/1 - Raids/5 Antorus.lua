@@ -170,43 +170,43 @@ _.Instances = { tier(7, {	-- Legion
 								i(152027),	-- Gravitational Condensate
 							},
 						}),
-						e(1997, {	-- Antoran High Command
+						un(45, e(1997, {	-- Antoran High Command
 							["crs"] = {
 								122367,	-- Admiral Svirax
 								122369,	-- Chief Engineer Ishkar
 								122333,	-- General Erodus
 							},
 							["g"] = {
-								un(45, i(151742)),	-- Recipe: Fiendish Shoulderguards (Rank 3)
-								un(45, i(151745)),	-- Recipe: Fiendish Spaulders (Rank 3)
-								un(45, i(151985)),	-- General Erodus' Tricorne
-								un(45, i(152019)),	-- Pauldrons of the Eternal Offensive
-								un(45, i(152125)),	-- Bearmantle Cloak
-								un(45, i(152143)),	-- Cloak of Chi'Ji
-								un(45, i(152161)),	-- Cloak of the Dashing Scoundrel
-								un(45, i(152167)),	-- Drape of Venerated Spirits
-								un(45, i(152113)),	-- Dreadwake Greatcloak
-								un(45, i(152119)),	-- Felreaper Drape
-								un(45, i(152154)),	-- Gilded Seraph's Drape
-								un(45, i(152172)),	-- Grim Inquisitor's Cloak
-								un(45, i(152179)),	-- Juggernaut Cloak
-								un(45, i(152149)),	-- Light's Vanguard Greatcloak
-								un(45, i(152136)),	-- Runebound Cape
-								un(45, i(152131)),	-- Serpentstalker Drape
-								un(45, i(151994)),	-- Fleet Commander's Hauberk
-								un(45, i(151992)),	-- Fiendish Logistician's Wristwraps
-								un(45, i(151953)),	-- Man'ari Pyromancer Cuffs
-								un(45, i(152006)),	-- Depraved Tactician's Waistguard
-								un(45, i(152424)),	-- Legwraps of the Seasoned Exterminator
-								un(45, i(152011)),	-- Eredar Warcouncil Sabatons
-								un(45, i(151957)),	-- Ishkar's Felshield Emitter
-								un(45, i(151969)),	-- Terminus Signaling Beacon
-								un(45, i(152293)),	-- Fasces of the Endless Legions
-								un(45, i(152043)),	-- Lightshield Amplifier
-								un(45, i(152295)),	-- Svirax's Grim Trophy
-								un(45, i(152032)),	-- Twisted Engineer's Fel-Infuser
+								i(151742),	-- Recipe: Fiendish Shoulderguards (Rank 3)
+								i(151745),	-- Recipe: Fiendish Spaulders (Rank 3)
+								i(151985),	-- General Erodus' Tricorne
+								i(152019),	-- Pauldrons of the Eternal Offensive
+								i(152125),	-- Bearmantle Cloak
+								i(152143),	-- Cloak of Chi'Ji
+								i(152161),	-- Cloak of the Dashing Scoundrel
+								i(152167),	-- Drape of Venerated Spirits
+								i(152113),	-- Dreadwake Greatcloak
+								i(152119),	-- Felreaper Drape
+								i(152154),	-- Gilded Seraph's Drape
+								i(152172),	-- Grim Inquisitor's Cloak
+								i(152179),	-- Juggernaut Cloak
+								i(152149),	-- Light's Vanguard Greatcloak
+								i(152136),	-- Runebound Cape
+								i(152131),	-- Serpentstalker Drape
+								i(151994),	-- Fleet Commander's Hauberk
+								i(151992),	-- Fiendish Logistician's Wristwraps
+								i(151953),	-- Man'ari Pyromancer Cuffs
+								i(152006),	-- Depraved Tactician's Waistguard
+								i(152424),	-- Legwraps of the Seasoned Exterminator
+								i(152011),	-- Eredar Warcouncil Sabatons
+								i(151957),	-- Ishkar's Felshield Emitter
+								i(151969),	-- Terminus Signaling Beacon
+								i(152293),	-- Fasces of the Endless Legions
+								i(152043),	-- Lightshield Amplifier
+								i(152295),	-- Svirax's Grim Trophy
+								i(152032),	-- Twisted Engineer's Fel-Infuser
 							},
-						}),
+						})),
 					},
 				}),
 				ach(11989, {	-- Hope's End [Eonar / Hasabel / Imonar]

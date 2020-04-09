@@ -10283,7 +10283,7 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 						return true;
 					end,
 				},
-				app.CreateInstance(746, {	-- Gruul's Lair
+				--[[app.CreateInstance(746, {	-- Gruul's Lair
 					['description'] = "Gruul's Lair has been hotfixed! All of the items previously marked Unobtainable from Gruul the Dragonkiller have been fixed and confirmed as dropping once again!",
 					['isRaid'] = true,
 					['visible'] = true, 
@@ -10307,14 +10307,25 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 					end,
 				}),
 				app.CreateInstance(230, {	-- Dire Maul (West)
-					['description'] = "This item used to drop from Prince Tortheldrin, but was moved to Tendris Warpwood during 7.3.5's Legacy Loot Mode adjustments. It remained on the loot table in the Adventure Guide until 8.1 when it was removed from the Adventure Guide completely.\n\nDon't be lazy.\nPlease add this item back.",
+					['description'] = "This item has been hotfixed, and is confirmed dropping once again.  TY Blizzard.",
 					['g'] = {
 						app.CreateItemSource(7303, 18382),	-- Fluctuating Cloak
 					},
 				}),
 				app.CreateInstance(277, { 	-- Halls of Stone
 					['description'] = "The reward chest for completing the Tribunal of Ages Event in Halls of Stone appears to be fixed! Please let us know if this is still a problem!",
+				}),]]
+				app.CreateEncounter(1997, {	-- LFR High Command
+					['description'] = "|cffFF0000In LFR, The portal to High Command will not spawn after you defeat the Felhounds.  Therefore there is no way to obtain the High Command loot from LFR.  Other difficulties work fine!|r",
 				}),
+				app.CreateNPC(-34, {
+					['description'] = "|cffFF0000These two cloaks have very limited confirmed drops if any and are presumed broken!|r",
+					['g'] = {
+						app.CreateItemSource(102106, 165685),	-- House of Nobles Cape
+						app.CreateItemSource(102105, 165684),	-- Gurubashi Empire Greatcloak
+					},
+				}),
+				
 			},
 		};
 		BuildGroups(self.data, self.data.g);

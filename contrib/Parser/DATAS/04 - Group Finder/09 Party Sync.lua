@@ -24,35 +24,24 @@ _.GroupFinder =
 						i(173539),	-- Unholy Runeblade
 					},
 				}),
-				cl(12, {	-- Demon Hunter (Alliance)
-				--	["classes"] = { 12 },	-- Demon Hunter
-					["g"] = bubbleDown({ ["races"] = ALLIANCE_ONLY, }, {
+				cl(12, {	-- Demon Hunter
+					["g"] = {	-- Confirmed obtaining all this stuff on horde DH.  If anything it has to do with spec.
 						i(173688),	-- Illidari Belt
-						i(173683),	-- Illidari Blindfold (probably Alliance version?  model is not available on wowhead to check)
-						i(173687),	-- Illidari Boots
-						i(173686),	-- Illidari Bracers (probably Alliance version?  they look identical)
-						i(173684),	-- Illidari Gloves
+						i(173683),	-- Illidari Blindfold 
+						i(173687),	-- Illidari Boots	
+						i(173686),	-- Illidari Bracers 
+						i(173684),	-- Illidari Gloves 
 						i(173682),	-- Illidari Leggings
-						i(173685),	-- Illidari Robe
+						i(173685),	-- Illidari Robe 
 						i(173681),	-- Illidari Shoulders
-					}),
-				}),
-				cl(12, {	-- Demon Hunter (Horde)
-				--	["classes"] = { 12 },	-- Demon Hunter
-					["g"] = bubbleDown({ ["races"] = HORDE_ONLY, }, {
-						i(173676),	-- Illidari Belt
-						i(173673),	-- Illidari Blindfold (probably Horde version?  model is not available on wowhead to check)
+						i(173676),	-- Illidari Belt	
+						i(173673),	-- Illidari Blindfold 
 						i(173680),	-- Illidari Boots
-						i(173675),	-- Illidari Bracers (probably Horde version?  they look identical)
+						i(173675),	-- Illidari Bracers
 						i(173678),	-- Illidari Gloves
 						i(173674),	-- Illidari Leggings
-						i(173677),	-- Illidari Robe
-						i(173679),	-- Illidari Shoulders
-					}),
-				}),
-				cl(12, {	-- Demon Hunter (neutral — parser merges all 3 DH headers but keeps appropriate faction tagging due to bubbleDown!  OH, OH, IT'S MAGIC, YOU KNO-O-OW)
-				--	["classes"] = { 12 },	-- Demon Hunter
-					["g"] = {
+						i(173677),	-- Illidari Robe 
+						i(173679),	-- Illidari Shoulders	
 						i(173672),	-- Illidari Warglaive
 					},
 				}),
