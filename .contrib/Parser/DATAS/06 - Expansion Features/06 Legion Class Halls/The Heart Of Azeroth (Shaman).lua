@@ -356,6 +356,7 @@ _.ExpansionFeatures =
 						["lvl"] = 98,
 						["provider"] = { "n", 42465 },	-- Therazane
 						["sourceQuests"] = { 
+							42936,	-- Clutch Play
 							42935,	-- Stone Drake Rescue
 							42933,	-- The Troggs that Fel to Earth
 						},	
@@ -545,6 +546,10 @@ _.ExpansionFeatures =
 						["lvl"] = 98,
 						["provider"] = { "n", 96527 },	-- Thrall
 						["sourceQuests"] = { 42937 },	-- Needlerock Beatdown
+						["maps"] = {
+							729,	-- Crumbling Depths
+							207,	-- Deepholm							
+						},
 					}),
 					q(40276, {	-- The Maelstrom Beckons
 						["u"] = 40,	-- Legacy Quest
@@ -658,6 +663,7 @@ _.ExpansionFeatures =
 						["lvl"] = 98,
 						["provider"] = { "n", 96527 },	-- Thrall
 						["sourceQuests"] = { 42931 },	-- Where the Hammer Falls
+						["maps"] = { 207 },	-- Deepholm
 					}),
 					q(42931, {	-- Where the Hammer Falls
 						["classes"] = { SHAMAN },

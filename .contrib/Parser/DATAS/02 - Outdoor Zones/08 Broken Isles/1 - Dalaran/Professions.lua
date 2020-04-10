@@ -18,6 +18,10 @@ _.Zones =
 						["provider"] = { "n", 101492 },	-- Ms. Xiulan
 						["sourceQuests"] = { 39342 },	-- The Price of the Black Market
 					}),
+					q(39328, {	-- Ancient Knowledge
+						["sourceQuests"] = { 39327 },	-- There's a Scribe for That
+						["provider"] = { "n", 92458 },	-- Deucus Valdera
+					}),
 					q(39349, {	-- Black Rook Hold: Heavy, But Helpful
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 					}),
@@ -864,10 +868,6 @@ _.Zones =
 						["g"] = {
 							recipe(192855),	-- Prophecy Tarot (Rank 2)
 						},
-					}),
-					q(39328, {	-- Ancient Knowledge
-						["sourceQuests"] = { 39327 },	-- There's a Scribe for That
-						["provider"] = { "n", 92458 },	-- Deucus Valdera
 					}),
 					q(40062, {	-- Bulging Nightmare Pod
 						["provider"] = { "i", 136912 },	-- Bulging Nightmare Pod

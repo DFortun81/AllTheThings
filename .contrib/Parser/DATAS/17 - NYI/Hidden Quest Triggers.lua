@@ -1082,6 +1082,7 @@ _.NeverImplemented =
 		q(44399),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 4
 		q(44499),	-- Shaman Order Hall - Snowfang Tracking Quest
 		q(44653),	-- Shaman Order Hall - Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 1
+		q(44654),	-- Shaman Order Hall - Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 2A-5
 		
 		q(38544),	-- FLAG: Demonsteel Waistguard Crafted
 		q(38546),	-- FLAG: Demonsteel Boots Crafted
