@@ -344,6 +344,7 @@ _.Craftables =
 		}),
 		n(-183, { 	-- Engineering
 			filter(100, {	-- Mounts
+				i(34060),	-- Flying Machine*
 				i(34061),	-- Turbo-Charged Flying Machine*
 			}),
 			filter(102, {	-- Toys

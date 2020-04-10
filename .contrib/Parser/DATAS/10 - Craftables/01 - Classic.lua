@@ -352,9 +352,6 @@ _.Craftables =
 			}),
 		}),
 		n(-183, { 	-- Engineering
-			filter(100, {	-- Mounts
-				i(34060),	-- Flying Machine*
-			}),
 			filter(200, {	-- Recipes
 				i(10644, {	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
 					["description"] = "This recipe is crafted by Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
