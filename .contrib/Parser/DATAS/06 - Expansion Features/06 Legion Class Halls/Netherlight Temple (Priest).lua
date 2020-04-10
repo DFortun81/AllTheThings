@@ -392,10 +392,6 @@ _.ExpansionFeatures =
 							{ ["mountID"] = 229377 },	-- High Priest's Lightsworn Seeker
 						},
 					}),
-					q(39731, {	-- The Tranquil Forest
-						["sourceQuests"] = { 44545 },	-- Pressing the Assault
-						["lvl"] = 98,
-					}),
 					q(43276, {	-- Troops in the Field
 						["sourceQuests"] = { 43275 },	-- Recruiting the Troops
 						["classes"] = { 5 },	-- Priest

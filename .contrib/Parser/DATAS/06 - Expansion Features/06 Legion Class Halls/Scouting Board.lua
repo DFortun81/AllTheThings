@@ -91,6 +91,11 @@ _.ExpansionFeatures =
 						un(40, q(44276)),	-- The Lord of Black Rook Hold
 						un(40, q(43545)),	-- The Lord of Black Rook Hold
 						un(40, q(44277)),	-- The Lord of Black Rook Hold
+						q(39731, {	-- The Tranquil Forest
+							["sourceQuests"] = { 44545 },	-- Pressing the Assault
+							["lvl"] = 98,
+							["isBreadcrumb"] = true,
+						}),
 						un(40, q(43556)),	-- Vault of the Wardens
 						un(40, q(44260)),	-- Vault of the Wardens
 						un(40, q(44261)),	-- Vault of the Wardens

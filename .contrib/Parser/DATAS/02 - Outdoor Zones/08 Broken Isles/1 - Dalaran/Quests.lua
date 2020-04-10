@@ -1590,6 +1590,7 @@ _.Zones =
 					["sourceQuests"] = { 39731 },	-- The Tranquil Forest
 					["coord"] = { 70.1, 43.7, 627 },
 					["provider"] = { "n", 91172 },	-- Archmage Khadgar
+					["isBreadcrumb"] = true,
 				}),
 				q(40495, {	-- Ulthalesh, the Deadwind Harvester
 					["sourceQuests"] = {
