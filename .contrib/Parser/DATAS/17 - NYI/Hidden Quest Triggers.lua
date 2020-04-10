@@ -1072,6 +1072,17 @@ _.NeverImplemented =
 		q(43716),	-- Rogue Order Hall - loot spawned in the vault
 		q(43634),	-- Rogue Order Hall - looted the rogue vault
 		
+		q(43901),	-- Shaman Order Hall - Tracking Quest: All - Troop B Enabled
+		q(43946),	-- Shaman Order Hall - Enhancement Chosen
+		q(43947),	-- Shaman Order Hall - Elemental Chosen
+		q(43948),	-- Shaman Order Hall - Restoration Chosen
+		q(44396),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 1
+		q(44397),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 2
+		q(44398),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 3
+		q(44399),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 4
+		q(44499),	-- Shaman Order Hall - Snowfang Tracking Quest
+		q(44653),	-- Shaman Order Hall - Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 1
+		
 		q(38544),	-- FLAG: Demonsteel Waistguard Crafted
 		q(38546),	-- FLAG: Demonsteel Boots Crafted
 		q(38550),	-- FLAG: Demonsteel Greaves Crafted

@@ -141,11 +141,6 @@ _.Zones =
 						i(20723),	-- Brann's Trusty Pick
 					},
 				}),
-				q(43002, {	-- Blessed Blade of the Windseeker
-					["provider"] = { "n", 14347 },	-- Highlord Demitrian
-					["coord"] = { 29.6, 10.6, 81 },
-					["classes"]= { 7 },	-- Shaman
-				}),
 				q(8349, {	-- Bor Wildmane
 					["u"] = 40,
 					["races"] = HORDE_ONLY,

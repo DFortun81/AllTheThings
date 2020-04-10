@@ -193,11 +193,6 @@ _.Zones =
 				q(40930, {	-- Apocalypse
 					["classes"] = { DEATHKNIGHT },
 				}),
-				q(39746, {	-- A Ring Unbroken
-					["classes"] = { SHAMAN },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 91731 },	-- Thrall
-				}),
 				q(38035, {	-- A Royal Summons
 					["provider"] = { "n", 96644 },	-- Sky Admiral Rogers
 					["coord"] = { 29.2, 47.2, 627 },
@@ -236,13 +231,6 @@ _.Zones =
 					["providers"] = {
 						{ "n", 90463 },	-- Archmage Karlain
 						{ "n", 115468 },	-- Archmage Karlain
-					},
-				}),
-				q(44406, {	-- Aggra's Guidance
-					["classes"] = { SHAMAN },
-					["providers"] = {
-						{ "n", 96528 },	-- Farseer Nobundo
-						{ "n", 106519 },	-- Farseer Nobundo
 					},
 				}),
 				q(42001, {	-- Aluneth, Greatstaff of the Magna
@@ -608,11 +596,6 @@ _.Zones =
 						{ "n", 90417 },		-- Archmage Khadgar
 						{ "n", 115464 },	-- Archmage Khadgar
 					},
-				}),
-				q(43945, {	-- Expanding Your Horizons
-					["sourceQuests"] = { 44406 },	-- Aggra's Guidance
-					["classes"] = { SHAMAN },
-					["provider"] = { "n", 99531 },	-- Aggra
 				}),
 				q(43473, {	-- Experimental Potion: Test Subjects Needed
 					["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
@@ -1734,10 +1717,6 @@ _.Zones =
 				q(45908, {	-- Xylem's Gift
 					["provider"] = { "n", 105081 },	-- Archmage Kalec
 					["u"] = 40,
-				}),
-				q(44006, {	-- Your Fullest Potential
-					["classes"] = { SHAMAN },
-					["provider"] = { "n", 99531 },	-- Aggra
 				}),
 --[[
 				The following quests have been removed from the game:

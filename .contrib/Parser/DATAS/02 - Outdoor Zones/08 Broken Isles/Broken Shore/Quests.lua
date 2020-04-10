@@ -225,6 +225,12 @@ _.Zones =
 					["provider"] = { "n", 120183 },	-- Commander Chambers
 					["sourceQuest"] = 46774,	-- The Nether Disruptor
 				}),
+				q(46791, {	-- Carried On the Wind
+					["classes"] = { SHAMAN },
+					["lvl"] = 110,
+					["provider"] = { "n", 117888 },	-- Orono
+					["sourceQuests"] = { 46246 },	-- Strike Them Down
+				}),
 				q(46244, {	-- Cathedral of Eternal Night: Altar of the Aegis
 					["sourceQuests"] = { 46286 },	-- Legionfall Supplies
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
@@ -666,7 +672,6 @@ _.Zones =
 				q(45765),	-- Brothers and Sisters
 				q(40392),	-- Call of the Marksman
 				q(44550),	-- Called to Acherus
-				q(46791),	-- Carried On the Wind
 				q(44247),	-- Champion: Amal'thazad
 				q(44248),	-- Champion: Darion Mograine
 				q(44244),	-- Champion: Koltira Deathweaver
@@ -687,7 +692,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(44925),	-- Closing the Eye
-				q(45769),	-- Conflagration
 				q(45350),	-- Countering the Contagion
 				q(44275),	-- Court of Stars
 				q(45347),	-- Crafting a Cure
@@ -713,12 +717,10 @@ _.Zones =
 				q(46809),	-- Delivering Lost Knowledge
 				q(47079),	-- Delivering Lost Knowledge
 				q(45828),	-- Demon Hunter
-				q(45763),	-- Demonic Disruption
 				q(45173),	-- Desperate Times
 				q(46103),	-- Dread Infiltrators
 				q(42911),	-- Drowned Mana
 				q(45829),	-- Druid
-				q(45767),	-- Elemental Cores
 				q(46035, {	-- End of the Risen Threat
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -749,7 +751,6 @@ _.Zones =
 				q(45831),	-- Hunter
 				q(40136),	-- Immaculate Stonehide Leather
 				q(40151),	-- Immaculate Stormscale
-				q(45971),	-- Infernal Phenomena
 				q(45794),	-- Informing the Council
 				q(46031),	-- Investigate the Broken Shore
 				q(39757),	-- Keeping Your Edge
@@ -875,7 +876,6 @@ _.Zones =
 				q(47125),	-- The Fallen Avatar
 				q(47124),	-- The Fallen Avatar
 				q(45028),	-- The Fate of Kanrethad
-				q(45883),	-- The Firelord's Offense
 				q(42484),	-- The Firstborn Rises
 				q(43686),	-- The Fourth Horseman
 				q(45526),	-- The God-Queen's Fury

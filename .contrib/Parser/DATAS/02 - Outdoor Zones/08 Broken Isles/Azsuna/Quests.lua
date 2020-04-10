@@ -890,7 +890,6 @@ _.Zones =
 				q(41170),	-- The Relic Renewed
 				q(41171),	-- The Reliquary Calls
 				q(37660),	-- The Scythe of Souls
-				q(41770),	-- The Skies Above
 				q(38950),	-- The Wayward Tailor
 				q(43581),	-- The Wisdom of Patience
 				q(42887),	-- This Is Retribution
