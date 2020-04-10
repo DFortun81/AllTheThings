@@ -118,18 +118,17 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(45864, {	-- A Gift From the Six
-					["classes"] = { 2, 5, 7, 10, 11 },
+					["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 				}),
 				q(45862, {	-- A Gift From the Six
-					["classes"] = { 2, 4, 7, 8, 9 },
+					["classes"] = { PALADIN, ROGUE, SHAMAN, MAGE, WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 				}),
 				q(45842, {	-- A Gift From the Six
 					["classes"] = {	-- may be the "healers only" one instead -- needs to be double-checked/confirmed
-						DRUID,		-- Balance
 						HUNTER,		-- Marksmanship
 						MAGE,		-- Frost
 						PRIEST,		-- Shadow
@@ -139,7 +138,7 @@ _.Zones =
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 				}),
 				q(45866, {	-- A Gift From the Six
-					["classes"] = { HUNTER, PRIEST, MAGE, WARLOCK, DEMONHUNTER },
+					["classes"] = { HUNTER, PRIEST, MAGE, WARLOCK, DEMONHUNTER, DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 				}),
