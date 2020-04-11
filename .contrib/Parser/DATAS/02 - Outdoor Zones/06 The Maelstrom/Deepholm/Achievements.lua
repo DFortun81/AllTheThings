@@ -16,6 +16,24 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(4871, {	-- Deep into Deepholm
+					crit(1, {	-- The Middle World Pillar Fragment
+						["sourceQuest"] = 27938,	-- The Middle Fragment
+					}),
+					crit(2, {	-- The Upper World Pillar Fragment
+						["sourceQuest"] = 26876,	-- The World Pillar Fragment
+					}),
+					crit(3, {	-- The Stone Lords
+						["sourceQuests"] = {
+							26585,	-- Corruption Destruction
+							26584,	-- Shaken and Stirred
+							26583,	-- Wrath of the Fungalmancer
+						},
+					}),
+					crit(4, {	-- Mending the Wound
+						["sourceQuest"] = 26971,	-- The Binding
+					}),					
+				}),
 				ach(5450),	-- Fungal Frenzy
 				ach(5445),	-- Fungalophobia
 				ach(5447),	-- My Very Own Broodmother
