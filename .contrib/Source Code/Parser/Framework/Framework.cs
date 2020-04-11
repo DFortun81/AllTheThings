@@ -45,6 +45,12 @@ namespace ATT
         /// </summary>
         private static readonly long LEGION_VERSION = LEGION_VERSION_ARR.ConvertVersion();
 
+        // These get loaded from _main.lua now.
+        public static List<object> ALLIANCE_ONLY;
+        public static List<object> HORDE_ONLY;
+        public static Dictionary<object, bool> ALLIANCE_ONLY_DICT;
+        public static Dictionary<object, bool> HORDE_ONLY_DICT;
+
         /// <summary>
         /// All of the NPC IDs that have been referenced somewhere in the database.
         /// </summary>

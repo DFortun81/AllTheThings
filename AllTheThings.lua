@@ -6276,6 +6276,30 @@ app.CreateProfession = function(id, t)
 	return setmetatable(constructor(id, t, "requireSkill"), app.BaseProfession);
 end
 
+-- PVP Ranks
+app.BasePVPRank = {
+	__index = function(t, key)
+		if key == "key" then
+			return "pvpRankID";
+		elseif key == "text" then
+			return _G["PVP_RANK_" .. (t.pvpRankID + 4) .. "_" .. (t.s or 0)];
+		elseif key == "icon" then
+			return format("%s%02d","Interface\\PvPRankBadges\\PvPRank", t.pvpRankID);
+		elseif key == "description" then
+			return "Opposite faction equivalent: " .. _G["PVP_RANK_" .. (t.pvpRankID + 4) .. "_" .. ((t.s == 1 and 0 or 1))];
+		elseif key == "title" then
+			return RANK .. " " .. t.pvpRankID;
+		elseif key == "r" then
+			return t.parent.r or app.FactionID;
+		elseif key == "s" then
+			return t.r == Enum.FlightPathFaction.Alliance and 1 or 0;
+		end
+	end
+};
+app.CreatePVPRank = function(id, t)
+	return setmetatable(constructor(id, t, "pvpRankID"), app.BasePVPRank);
+end
+
 -- Quest Lib
 app.BaseQuest = {
 	__index = function(t, key)

@@ -110,7 +110,7 @@ HORDE_ONLY = {
 	MAGHAR,
 	VULPERA,
 };
-ALL_RACES = { PANDAREN_NEUTRAL, }
+ALL_RACES = { PANDAREN_NEUTRAL }
 for _,v in pairs(ALLIANCE_ONLY) do table.insert(ALL_RACES,v) end
 for _,v in pairs(HORDE_ONLY) do table.insert(ALL_RACES,v) end
 
@@ -688,6 +688,9 @@ profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: 
 	local p = prof(skillID, t);
 	_.Professions = { p };
 	return p;
+end
+pvprank = function(id, t)								-- Create a PVP Rank Object.
+	return struct("pvpRankID", id, t);
 end
 quest = function(id, t)									-- Create a QUEST Object
 	return struct("questID", id, t);

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -56,6 +57,46 @@ namespace ATT
 
             Lua lua = new Lua();
             lua.DoFile("./_main.lua");
+
+            // Try to Copy in the Alliance Only / Horde Only lists
+            try
+            {
+                var list = new List<object>();
+                var dict = new Dictionary<object, bool>();
+                foreach(var keyValue in lua.GetTable("ALLIANCE_ONLY").Values)
+                {
+                    var race = Convert.ToInt32(keyValue);
+                    if(!dict.ContainsKey(race))
+                    {
+                        dict[race] = true;
+                        list.Add(race);
+                    }
+                }
+                list.Sort();
+                Framework.ALLIANCE_ONLY = list;
+                Framework.ALLIANCE_ONLY_DICT = dict;
+
+                list = new List<object>();
+                dict = new Dictionary<object, bool>();
+                foreach (var keyValue in lua.GetTable("HORDE_ONLY").Values)
+                {
+                    var race = Convert.ToInt32(keyValue);
+                    if (!dict.ContainsKey(race))
+                    {
+                        dict[race] = true;
+                        list.Add(race);
+                    }
+                }
+                list.Sort();
+                Framework.HORDE_ONLY = list;
+                Framework.HORDE_ONLY_DICT = dict;
+            }
+            catch(Exception e)
+            {
+                Trace.WriteLine(e);
+                Trace.WriteLine("Press Enter once you have resolved the issue.");
+                Console.ReadLine();
+            }
             foreach (var fileName in luaFiles)
             {
                 //Trace.WriteLine(fileName);

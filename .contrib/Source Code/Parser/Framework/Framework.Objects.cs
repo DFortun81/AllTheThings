@@ -583,60 +583,6 @@ namespace ATT
 	            {2533, 197},    // Kul Tiran Tailoring [8.0.1]
             };
 
-            private static List<object> ALLIANCE_ONLY = new List<object> {
-                1,  // Human
-                3,  // Dwarf
-                4,  // Night Elf
-                7,  // Gnome
-                11, // Draenei
-                22, // Worgen
-                25, // Pandaren [Alliance]
-                29, // Void Elf
-                30, // Lightforged
-                32, // Kul Tiran
-                34, // Dark Iron
-            };
-            private static List<object> HORDE_ONLY = new List<object> {
-                2,	// Orc
-                5,	// Undead
-                6,	// Tauren
-                8,	// Troll
-                9,	// Goblin
-                10,	// Blood Elf
-                26, // Pandaren[Horde]
-                27,	// Nightborne
-                28,	// Highmountain
-                31,	// Zandalari
-                36,	// Mag'har
-            };
-
-            private static Dictionary<object, bool> _ALLIANCE_ONLY_DICT;
-            private static Dictionary<object, bool> ALLIANCE_ONLY_DICT
-            {
-                get
-                {
-                    if(_ALLIANCE_ONLY_DICT == null)
-                    {
-                        _ALLIANCE_ONLY_DICT = new Dictionary<object, bool>();
-                        foreach (var o in ALLIANCE_ONLY) _ALLIANCE_ONLY_DICT[o] = true;
-                    }
-                    return _ALLIANCE_ONLY_DICT;
-                }
-            }
-            private static Dictionary<object, bool> _HORDE_ONLY_DICT;
-            private static Dictionary<object, bool> HORDE_ONLY_DICT
-            {
-                get
-                {
-                    if (_HORDE_ONLY_DICT == null)
-                    {
-                        _HORDE_ONLY_DICT = new Dictionary<object, bool>();
-                        foreach (var o in HORDE_ONLY) _HORDE_ONLY_DICT[o] = true;
-                    }
-                    return _HORDE_ONLY_DICT;
-                }
-            }
-
             /// <summary>
             /// Assign the Faction ID for this data dictionary if a valid ID hasn't already been assigned.
             /// </summary>
