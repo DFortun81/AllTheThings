@@ -31,36 +31,56 @@ _.ExpansionFeatures =
 				}),
 				n(QUESTS, {
 					q(45440, {	-- A Brewing Situation
+						["classes"] = { MONK },
 						["provider"] = { "n", 116929 },	-- Brewmaster Blancee
 						["sourceQuests"] = { 47137 },	-- Champions of Legionfall
 					}),
 					q(41086, {	-- A Peaceful World
+						["classes"] = { MONK },
 						["provider"] = { "n", 102820 },	-- Chen Stormstout
 						["coord"] = { 55.2, 57, 709 },
 					}),
+					q(40793, {	-- A Matter of Planning
+						["classes"] = { MONK },
+						["lvl"] = 98,
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
+					}),
 					q(45771, {	-- A Time for Everything
+						["classes"] = { MONK },
 						["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
 						["sourceQuests"] = { 45442 },	-- Not Felling Well
 					}),
 					q(45449, {	-- Alchemist Koryla
+						["classes"] = { MONK },
 						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["sourceQuests"] = { 45459 },	-- Storming the Legion
 					}),
 					q(41911, {	-- Amaranthine Hops
+						["classes"] = { MONK },
 						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
 					}),
 					q(45545, {	-- Barrel Toss
+						["classes"] = { MONK },
 						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["sourceQuests"] = { 45459 },	-- Storming the Legion
 					}),
+					q(12103, {	-- Before the Storm
+						-- Note: Weird quest number for Legion, and wowhead says this is no longer available, but it gave me the quest in 8.3
+						["classes"] = { MONK },
+						["lvl"] = 98,
+						["provider"] = { "n", 98519 },	-- Initiate Da-Nel
+						["maps"] = { 627 },	-- Dalaran
+					}),
 					q(41739, {	-- Champion: Aegira
+						["classes"] = { MONK },
 						["provider"] = { "n", 105226 },	-- Aegira <Brewmaster>
 						["g"] = {
 							follower(607),	-- Aegira
 						},
 					}),
 					q(45790, {	-- Champion: Almai
+						["classes"] = { MONK },
 						["provider"] = { "n", 117504 },	-- Brewer Almai
 						["sourceQuests"] = { 45771 },	-- A Time for Everything
 						["g"] = {
@@ -68,68 +88,81 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(41736, {	-- Champion: Angus Ironfist
+						["classes"] = { MONK },
 						["provider"] = { "n", 105046 },	-- Angus Ironfist
 						["g"] = {
 							follower(605),	-- Angus Ironfist
 						},
 					}),
 					q(41115, {	-- Champion: Chen Stormstout
+						["classes"] = { MONK },
 						["provider"] = { "n", 102820 },	-- Chen Stormstout
 						["g"] = {
 							follower(596),	-- Chen Stormstout
 						},
 					}),
 					q(41737, {	-- Champion: Hiro
+						["classes"] = { MONK },
 						["provider"] = { "n", 105058 },	-- Hiro
 						["g"] = {
 							follower(606),	-- Hiro
 						},
 					}),
 					q(40704, {	-- Champion: Li Li Stormstout
+						["classes"] = { MONK },
 						["provider"] = { "n", 101046 },	-- Li Li Stormstout
 						["g"] = {
 							follower(588),	-- Li Li Stormstout
 						},
 					}),
 					q(41738, {	-- Champion: Sylara Steelsong
+						["classes"] = { MONK },
 						["provider"] = { "n", 105056 },	-- Sylara Steelsong
 						["g"] = {
 							follower(604),	-- Sylara Steelsong
 						},
 					}),
 					q(41734, {	-- Champion: Taran Zhu
+						["classes"] = { MONK },
 						["provider"] = { "n", 104984 },	-- Taran Zhu <Lord of the Shado-Pan>
 						["g"] = {
 							follower(603),	-- Taran Zhu
 						},
 					}),
 					q(41735, {	-- Champion: The Monkey King
+						["classes"] = { MONK },
 						["provider"] = { "n", 102902 },	-- The Monkey King
 						["g"] = {
 							follower(602),	-- The Monkey King
 						},
 					}),
 					q(46347, {	-- Clean-up on Aisle Sha
+						["classes"] = { MONK },
 						["provider"] = { "n", 120722 },	-- Master Bu
 						["sourceQuests"] = { 46346 },	-- The Shadow of Ban-Lu
 					}),
 					q(45574, {	-- Fel Ingredients
+						["classes"] = { MONK },
 						["provider"] = { "n", 117305 },	-- Brewmaster Almai
 						["sourceQuests"] = { 45459 },	-- Storming the Legion
 					}),
 					q(41910, {	-- Freya's Spring
+						["classes"] = { MONK },
 						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
 					}),
 					q(41040, {	-- Halls of Valor: The Brewmaster
+						["classes"] = { MONK },
 						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
 					}),
 					q(41059, {	-- Halls of Valor: Odyn's Cauldron
+						["classes"] = { MONK },
 						["provider"] = { "n", 103049 },	-- Melba
 						["sourceQuests"] = { 41040 },	-- Halls of Valor: The Brewmaster
 					}),
 					q(46320, {	-- Hope For a Cure
+						["classes"] = { MONK },
 						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["sourceQuests"] = {
 							45574,	-- Fel Ingredients
@@ -138,37 +171,61 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(32442, {	-- Impending Danger
+						["classes"] = { MONK },
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 41086 },	-- A Peaceful World
 					}),
+					q(42957, {	-- Journey to the East
+						["classes"] = { MONK },
+						["lvl"] = 98,
+						["provider"] = { "n", 109049 },	-- The Monkey King
+						["sourceQuests"] = { 42766, 42767, 42768 },	-- The Riddle of the Barrel, The Riddle of the Land, The Riddle of Purity
+						["maps"] = { 376 },	-- Valley of the Four Winds
+					}),
 					q(44249, {	-- Inner Sanctuary
-						i(139734),	-- Grandmaster's Crown
+						["classes"] = { MONK },
+						["g"] = {
+							i(139734),	-- Grandmaster's Crown
+						},
 					}),
 					q(46349, {	-- Lilies for Ryuli
+						["classes"] = { MONK },
 						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 						["sourceQuests"] = { 46348 },	-- The River to Ban-Lu
 					}),
 					q(46353, {	-- Master Who?
+						["classes"] = { MONK },
 						["provider"] = { "n", 118214 },	-- Yiska
 						["sourceQuests"] = { 46246 },	-- Strike Them Down
 					}),
 					q(45442, {	-- Not Felling Well
+						["classes"] = { MONK },
 						["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
 						["sourceQuests"] = { 46320 },	-- Hope For a Cure
 					}),
 					q(45404, {	-- Panic at the Brewery
+						["classes"] = { MONK },
 						["provider"] = { "n", 119664 },	-- Brewmaster Almai
 						["sourceQuests"] = { 45440 },	-- A Brewing Situation
 					}),
+					q(40636, {	-- Prepare To Strike
+						["classes"] = { MONK },
+						["lvl"] = 98,
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
+						["sourceQuests"] = { 40236 },	-- The Dawning Light
+					}),
 					q(46342, {	-- Return to the Broken Peak
+						["classes"] = { MONK },
 						["provider"] = { "n", 120758 },	-- Master Bu
 						["sourceQuests"] = { 46341 },	-- The Tale of Ban-Lu
 					}),
 					q(46344, {	-- Smelly's Luckydo
+						["classes"] = { MONK },
 						["provider"] = { "n", 120744 },	-- Smelly Mountaintop
 						["sourceQuests"] = { 46343 },	-- The Trail of Ban-Lu
 					}),
 					q(41087, {	-- Storm Brew
+						["classes"] = { MONK },
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 32442 },	-- Impending Danger
 						["g"] = {
@@ -187,36 +244,93 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(45459, {	-- Storming the Legion
+						["classes"] = { MONK },
 						["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
 						["sourceQuests"] = { 45404 },	-- Panic at the Brewery
 					}),
+					q(40236, {	-- The Dawning Light
+						["classes"] = { MONK },
+						["lvl"] = 98,
+						["provider"] = { "n", 99181 },	-- Fearsome Jang
+						["sourceQuests"] = { 12103 },	-- Before The Storm
+					}),
+					q(40795, {	-- The Fight Begins
+						["classes"] = { MONK },
+						["lvl"] = 98,
+						["provider"] = { "n", 99179 },	-- Master Hsu
+						["sourceQuests"] = { 40793 },	-- A Matter of Planningq
+					}),
+					q(42868, {	-- The Monkey King's Challenge
+						["classes"] = { MONK },
+						["lvl"] = 98,
+						["provider"] = { "n", 109187 },	-- The Monkey King
+						["sourceQuests"] = { 42957 },	-- Journey to the East
+					}),
+					q(42768, {	-- The Riddle of Purity
+						["classes"] = { MONK },
+						["lvl"] = 98,
+						["provider"] = { "n", 108700 },	-- The Monkey King
+						["sourceQuests"] = { 42762 },	-- The Wanderer's Companion
+						["maps"] = { 371 },	-- Jade Forest
+					}),
+					q(42766, {	-- The Riddle of the Barrel
+						["classes"] = { MONK },
+						["lvl"] = 98,
+						["provider"] = { "n", 108700 },	-- The Monkey King
+						["sourceQuests"] = { 42762 },	-- The Wanderer's Companion
+						["maps"] = { 371 },	-- Jade Forest
+					}),
+					q(42767, {	-- The Riddle of the Land
+						["classes"] = { MONK },
+						["lvl"] = 98,
+						["provider"] = { "n", 108700 },	-- The Monkey King
+						["sourceQuests"] = { 42762 },	-- The Wanderer's Companion
+						["maps"] = { 371 },	-- Jade Forest
+					}),
 					q(46348, {	-- The River to Ban-Lu
+						["classes"] = { MONK },
 						["provider"] = { "n", 120722 },	-- Master Bu
 						["sourceQuests"] = { 46347 },	-- Clean-up on Aisle Sha
 					}),
 					q(46346, {	-- The Shadow of Ban-Lu
+						["classes"] = { MONK },
 						["provider"] = { "n", 120722 },	-- Master Bu
 						["sourceQuests"] = { 46344 },	-- Smelly's Luckydo
 					}),
 					q(46341, {	-- The Tale of Ban-Lu
+						["classes"] = { MONK },
 						["provider"] = { "n", 120758 },	-- Master Bu
 						["sourceQuests"] = { 46353 },	-- Master Who?
 					}),
 					q(46343, {	-- The Trail of Ban-Lu
+						["classes"] = { MONK },
 						["provider"] = { "n", 120722 },	-- Master Bu
 						["sourceQuests"] = { 46342 },	-- Return ot the Broken Peak
 					}),
+					q(42765, {	-- The Trial at the Temple
+						["classes"] = { MONK },
+						["lvl"] = 98,
+						["provider"] = { "n", 109187 },	-- The Monkey King
+						["sourceQuests"] = { 42868 },	-- The Monkey King's Challenge
+					}),
 					q(46350, {	-- The Trial of Ban-Lu
+						["classes"] = { MONK },
 						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 						["sourceQuests"] = { 46349 },	-- Lilies for Ryuli
 						["g"] = {
 							i(142225),	-- Ban-Lu, Grandmaster's Companion
 						},
 					}),
+					q(42762, {	-- The Wanderer's Companion
+						["classes"] = { MONK },
+						["lvl"] = 98,
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
+						["sourceQuests"] = { 40636 },	-- Prepare To Strike
+					}),
+
 					--[[
 					q(44057),	-- A "Noble" Event
 					q(43359),	-- A Hero's Weapon
-					q(40793),	-- A Matter of Planning
 					q(43054),	-- An Ample Stockpile
 					q(45180),	-- An Island of War
 					q(46024),	-- An Urgent Warning
@@ -236,7 +350,6 @@ _.ExpansionFeatures =
 					q(46025),	-- Investigate the Broken Shore
 					q(44238),	-- Meditations on Fate
 					q(40633),	-- Off To Adventure!
-					q(40636),	-- Prepare To Strike
 					q(40698),	-- Purity of Form
 					q(41733),	-- Rebuilding the Order
 					q(41905),	-- Report from Tian Monastery
@@ -245,17 +358,12 @@ _.ExpansionFeatures =
 					q(43061),	-- Silkweave Bandages
 					q(43058),	-- Spiced Rib Roast
 					q(42191),	-- Tech It Up A Notch
-					q(40516),	-- The Dawning Bit
-					q(40236),	-- The Dawning Light
 					q(41728),	-- The Defense of Tian Monastery
 					q(41003),	-- The Emperor's Gift
-					q(40795),	-- The Fight Begins
 					q(41732),	-- The Hand of Keletress
 					q(41849),	-- The Iron Fist
 					q(40569),	-- The Legend of the Sands
 					q(41038),	-- The Mead Master
-					q(42765),	-- The Trial at the Temple
-					q(42762),	-- The Wanderer's Companion
 					q(43319),	-- The Way of the Tiger
 					q(44424),	-- Three Paths, Three Weapons
 					q(41945),	-- Tianji of the Ox
@@ -291,53 +399,59 @@ _.ExpansionFeatures =
 				]]--
 				n(VENDORS, {
 					n(112338, {	-- Caydori Brightstar <Purveyor of Rare Goods>
-						i(143727, {	-- Champion's Salute (TOY!)
-							["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-						}),
-						i(140543),	-- Fist of the Broken Temple
-						i(140940, {	-- Grandmaster's Armor Kit
-							["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
-						}),
-						i(139734, {	-- Grandmaster's Crown
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(139738, {	-- Grandmaster's Cuffs
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(139732, {	-- Grandmaster's Footwraps
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(140973, {	-- Grandmaster's Greater Armor Kit
-							["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
-						}),
-						i(139735, {	-- Grandmaster's Legguards
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(140972, {	-- Grandmaster's Lesser Armor Kit
-							["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
-						}),
-						i(139733, {	-- Grandmaster's Palms
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(139736, {	-- Grandmaster's Shoulderguards
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(139731, {	-- Grandmaster's Tunic
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(139737, {	-- Grandmaster's Waistband
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(136800, {	-- Meditation Manual: Zen Flight
-							["spellID"] = 125883,	-- Zen Flight
-						}),
-						i(140564),	-- Rod of the Broken Temple
-						i(140551),	-- Staff of the Broken Temple
+						["coord"] = { 50.3, 59.0, 709 },
+						["g"] = {
+							i(143727, {	-- Champion's Salute (TOY!)
+								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+							}),
+							i(140543),	-- Fist of the Broken Temple
+							i(140940, {	-- Grandmaster's Armor Kit
+								["cost"] = { { "c", 1220, 2000 }, },	-- 2,000x Order Resources
+							}),
+							i(139734, {	-- Grandmaster's Crown
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139738, {	-- Grandmaster's Cuffs
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139732, {	-- Grandmaster's Footwraps
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(140973, {	-- Grandmaster's Greater Armor Kit
+								["cost"] = { { "c", 1220, 4000 }, },	-- 4,000x Order Resources
+							}),
+							i(139735, {	-- Grandmaster's Legguards
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(140972, {	-- Grandmaster's Lesser Armor Kit
+								["cost"] = { { "c", 1220, 500 }, },		-- 500x Order Resources
+							}),
+							i(139733, {	-- Grandmaster's Palms
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139736, {	-- Grandmaster's Shoulderguards
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139731, {	-- Grandmaster's Tunic
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(139737, {	-- Grandmaster's Waistband
+								["cost"] = 5000000,	-- 500g
+							}),
+							i(136800, {	-- Meditation Manual: Zen Flight
+								["spellID"] = 125883,	-- Zen Flight
+							}),
+							i(140564),	-- Rod of the Broken Temple
+							i(140551),	-- Staff of the Broken Temple
+						},
 					}),
 					n(99154, {	-- Mei Chele
-						i(147542, {	-- Ban-Fu, Cub of Ban-Lu (PET!)
-							["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
-						}),
+						["coord"] = { 54.9, 62.4, 709 },
+						["g"] = {
+							i(147542, {	-- Ban-Fu, Cub of Ban-Lu (PET!)
+								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
+							}),
+						},
 					}),
 				}),
 			},

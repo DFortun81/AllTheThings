@@ -1249,11 +1249,6 @@ _.Zones =
 						recipe(127475),	-- Incarnadine Ink
 					},
 				}),
-				q(42957, {	-- Journey to the East
-					["provider"] = { "n", 109049 },	-- The Monkey King
-					["sourceQuests"] = { 42766, 42767, 42768 },	-- The Riddle of the Barrel, The Riddle of the Land, The Riddle of Purity
-					["classes"] = { 10 },
-				}),
 				q(30148, {	-- Just a Flesh Wound
 					["provider"] = { "n", 58413 },	-- Jenova Longeye
 					["isDaily"] = true,
@@ -1467,30 +1462,9 @@ _.Zones =
 						{ "n", 55274 },	-- An Windfur
 					},
 				}),
-				
-				q(42868, {	-- The Monkey King's Challenge
-					["provider"] = { "n", 109187 },	-- The Monkey King
-					["sourceQuests"] = { 42957 },	-- Journey to the East
-					["classes"] = { 10 },
-				}),
 				q(29881, {	-- The Perfect Color
 					["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
 					["coord"] = { 54.8, 45.3, 371 },
-				}),
-				q(42768, {	-- The Riddle of Purity
-					["provider"] = { "n", 108700 },	-- The Monkey King
-					["sourceQuests"] = { 42762 },	-- The Wanderer's Companion
-					["classes"] = { 10 },
-				}),
-				q(42766, {	-- The Riddle of the Barrel
-					["provider"] = { "n", 108700 },	-- The Monkey King
-					["sourceQuests"] = { 42762 },	-- The Wanderer's Companion
-					["classes"] = { 10 },
-				}),
-				q(42767, {	-- The Riddle of the Land
-					["provider"] = { "n", 108700 },	-- The Monkey King
-					["sourceQuests"] = { 42762 },	-- The Wanderer's Companion
-					["classes"] = { 10 },
 				}),
 				q(30139, {	-- The Rider's Journey (blue egg)
 					-- picked the blue and got this one, but some notes indicate all colors now grant this quest. 
@@ -1536,16 +1510,6 @@ _.Zones =
 					["provider"] = { "n", 55209 },	-- Traumatized Nectarbreeze Farmer
 					["coord"] = { 43.2, 75.9, 371 },
 				}),
-				q(42765, {	-- The Trial at the Temple
-					["provider"] = { "n", 109187 },	-- The Monkey King
-					["sourceQuests"] = { 42868 },	-- The Monkey King's Challenge
-					["classes"] = { 10 },
-				}),
-				q(42762, {	-- The Wanderer's Companion
-					["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
-					["classes"] = { 10 },
-				}),
-
 				q(30143, {	-- They Grow Like Weeds
 					["provider"] = { "n", 58564 },	-- Elder Anli
 				}),

@@ -35,7 +35,6 @@ _.Zones =
 				q(41874),	-- Talked to Tyrande to Start Events
 				q(41879),	-- TBD
 				q(38697),	-- The Sword of Truth
-				q(39731),	-- The Tranquil Forest
 				q(38673),	-- The Wormtalon Crone
 				q(40921),	-- Tracking Quest: Bastillax 1
 				q(40924),	-- Tracking Quest: Bastillax 4

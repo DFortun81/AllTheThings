@@ -1498,7 +1498,6 @@ _.Zones =
 					["lvl"] = 98,
 					["provider"] = { "n", 101097 },	-- Calydus
 				}),
-			--	q(39731),	-- The Tranquil Forest -- granted by scouting map
 				q(44174, {	-- The Very Best
 					["u"] = 40,
 					["isWeekly"] = true,

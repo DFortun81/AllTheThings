@@ -996,6 +996,7 @@ _.NeverImplemented =
 		q(45318),	-- Nighthold - tracking quest. triggers before the door to Chronomatic Anomaly opens
 		q(45328),	-- Nighthold - tracking quest. triggers before the door to Chronomatic Anomaly opens
 		q(44297),	-- Tracking Quest - W2 - Jaina Gone
+		q(44659),	-- Dalaran - I Skipped The Intro Tracking Quest		
 		
 		-- demon hunter hidden demons - maybe add this to the zone maps?
 		q(42825),	-- kill Horkus in azsuna at 56.3, 59.7
@@ -1048,6 +1049,11 @@ _.NeverImplemented =
 		q(40620),	-- Hunter Order Hall - Marksmanship Chosen
 		q(44368),	-- Hunter Order Hall - Marksmanship Chosen
 		q(43158),	-- Hunter Order Hall - conversation flag for a hidden romance quest
+		
+		q(40516),	-- Monk Order Hall - The Dawning Bit (Triggered after accepting The Dawning Light)
+		q(40638),	-- Monk Order Hall - Windwalker Chosen
+		q(40639),	-- Monk Order Hall - Mistweaver Chosen
+		q(40640),	-- Monk Order Hall - Brewmaster Chosen
 		
 		q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
 		q(44036),	-- Rogue Order Hall - Assassination Chosen second
@@ -1127,6 +1133,7 @@ _.NeverImplemented =
 		q(45117),	-- TRACKING — triggered when returning to the Fel Hammer while on "Defense of the Fel Hammer"
 
 	-- Monk class campaign
+		q(40127),	-- Da-Nel's quest, sends you from Dalaran to Peak of Serenity
 		q(43129),	-- Tracking Quest: Freya's Spring 1
 		q(43130),	-- Tracking Quest: Freya's Spring 2
 		q(43131),	-- Tracking Quest: Freya's Spring 3
