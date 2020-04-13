@@ -232,6 +232,7 @@ _.NeverImplemented =
 		q(35532),	-- Magisters' Terrace heroic completion
 		q(35546),	-- Mana Tombs normal completion
 		q(35547),	-- Mana Tombs heroic completion
+		q(35548),	-- Mana-Tombs Bonus Objective (Yor)
 		q(35539),	-- Sethekk Halls normal completion
 		q(35540),	-- Sethekk Halls heroic completion
 		q(35517),	-- Shattered Halls normal completion
@@ -1350,6 +1351,9 @@ _.NeverImplemented =
 	-- Nighthold
 		q(46328),	-- Krosus
 
+	-- Trial of Valor
+		q(45430),	-- Guarm
+		q(45431),	-- Helya
 		
 		-------------------
 		--      BFA      --
