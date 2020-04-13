@@ -34,13 +34,6 @@ _.Zones =
 						27721,	-- Warchief's Command: Mount Hyjal!
 					},
 				}),
-				q(41106, {	-- Call of the Wilds
-					["provider"] = { "n", 101064 },	-- Archdruid Hamuul Runetotem
-					["lvl"] = 98,
-					["coord"] = { 56.2, 32.0, 80 },
-					["classes"] = { DRUID },
-					["sourceQuest"] = 40643,	-- A Summons From Moonglade
-				}),
 				q(40962, {	-- Dark Waters
 					["u"] = 40,
 					["provider"] = { "n", 102432 },	-- Malfurion Stormrage
@@ -136,13 +129,6 @@ _.Zones =
 						i(65464),	-- Staff of the Verdant Circle
 					},
 				}),
-				q(40644, {	-- The Dreamway
-					["provider"] = { "n", 101064 },	-- Archdruid Hamuul Runetotem
-					["lvl"] = 98,
-					["coord"] = { 56.2, 32.0, 80 },
-					["classes"] = { DRUID },
-					["sourceQuest"] = 41106,	-- Call of the Wilds
-				}),
 				q(46924, {	-- The Wolf's Tale
 					["lvl"] = 110,
 					["classes"] = { DRUID },
@@ -154,13 +140,6 @@ _.Zones =
 						45498,	-- Let Sleeping Dogs Lie
 						45528,	-- The Befouled Barrows
 					},
-				}),
-				q(40645, {	-- To The Dreamgrove
-					["provider"] = { "n", 103875 },	-- Malfurion Stormrage
-					["lvl"] = 98,
-					["coord"] = { 66.8, 60.4, 80 },
-					["classes"] = { DRUID },
-					["sourceQuest"] = 40644,	-- The Dreamway
 				}),
 				q(29303, {	-- Tragedy and Family
 					["provider"] = { "n", 11801 },	-- Rabine Saturna

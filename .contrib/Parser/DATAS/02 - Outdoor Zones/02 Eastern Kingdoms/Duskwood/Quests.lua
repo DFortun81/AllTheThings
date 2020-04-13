@@ -43,13 +43,6 @@ _.Zones =
 						i(157003),	-- Corpseweed Hewer
 					},
 				}),
-				q(40785, {	-- A Foe of the Dark
-					["provider"] = { "n", 101651 },	-- Belysra Starbreeze
-					["lvl"] = 98,
-					["coord"] = { 48.8, 34.4, 47 },
-					["classes"] = { 11 },	-- Druid
-					["sourceQuest"] = 40784,	-- Its Rightful Place
-				}),
 				q(26787, {	-- Bear In Mind
 					["provider"] = { "n", 288 },	-- Jitters
 					["coord"] = { 18.6, 58.3, 47 },
@@ -160,13 +153,6 @@ _.Zones =
 						i(3683),	-- Recipe: Gooey Spider Cake
 					},
 				}),
-				q(40834, {	-- Following the Curse
-					["provider"] = { "n", 100323 },	-- Revil Kost
-					["lvl"] = 98,
-					["coord"] = { 77.4, 36.2, 47 },
-					["classes"] = { 11 },	-- Druid
-					["sourceQuest"] = 40785,	-- A Foe in the Dark
-				}),
 				q(40588, {	-- Following the Curse
 					["provider"] = { "n", 100323 },	-- Revil Kost
 					["lvl"] = 98,
@@ -217,13 +203,6 @@ _.Zones =
 					["coord"] = { 24.4, 37.8, 47 },
 					["classes"] = { 5 },	-- Priest
 					["sourceQuest"] = 43391,	-- Secrets of the Void
-				}),
-				q(40784, {	-- Its Rightful Place
-					["provider"] = { "n", 101656 },	-- Valorn Stillbough
-					["lvl"] = 98,
-					["coord"] = { 48.8, 34.3, 47 },
-					["classes"] = { 11 },	-- Druid
-					["sourceQuest"] = 40783,	-- The Scythe of Elune
 				}),
 				q(26676, {	-- Juice Delivery
 					["provider"] = { "n", 273 },	-- Tavernkeep Smitts

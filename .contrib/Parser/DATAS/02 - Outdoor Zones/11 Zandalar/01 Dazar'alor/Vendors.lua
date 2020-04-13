@@ -118,7 +118,6 @@ _.Zones =
 					["coord"] = { 44.4, 94.3, 1165 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						-- TODO: These crates rotate every week and contain 3-4 random items from the related island expedition. Should we map all the items here?
 						i(173950, {	-- Crestfall Salvage
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
 							--[[
@@ -326,8 +325,14 @@ _.Zones =
 									i(163585),	-- Surf Jelly
 								}),
 								n(-162, {	-- Pets
+									i(163809),	-- Deathsting Scorpid
+									i(163820),	-- Muskflank Calfling
 									i(166492),	-- Shadefeather Hatchling
+									i(163803),	-- Sparkleshell Sandcrawler
 									i(166499),	-- Thunderscale Whelpling
+								}),
+								n(-319, {	-- Weapons
+									i(164334),	-- Plundered Blade of Northern Kings
 								}),
 							},
 						}),
@@ -371,9 +376,12 @@ _.Zones =
 									i(163799),	-- Barnaby
 									i(163798),	-- Captain Nibs
 									i(166493),	-- Firesting Buzzer
+									i(166487),	-- Leatherwing Screecher
 								}),
 								n(-319, {	-- Weapons
 									i(164304),	-- Plundered Celestial Finblade
+									i(164303),	-- Plundered Splitblade Slicer
+									i(164302),	-- Plundered Twinbarb Shanker
 									i(164306),	-- Plundered Waterspeaker's Spellblade
 								}),
 							},
@@ -399,6 +407,14 @@ _.Zones =
 								n(-160, {	-- Mounts
 									i(163583),	-- Craghorn Chasm-Leaper - wowhead
 									i(166470),	-- Stonehide Elderhorn - wowhead
+									i(163585),	-- Surf Jelly
+								}),
+								n(-162, {	-- Pets
+									i(163805),	-- Craghoof Kid
+									i(163809),	-- Deathsting Scorpid
+									i(163806),	-- False Knucklebump
+									i(166487),	-- Leatherwing Screecher
+									i(163815),	-- Littlehoof
 								}),
 							},
 						}),
@@ -438,13 +454,19 @@ _.Zones =
 									i(164284),	-- Plundered Poleaxe of Intimidation
 								}),
 								n(-160, {	-- Mounts
-									i(163582),	-- Qinsho's Eternal Hound - wowhead
+									i(163582),	-- Qinsho's Eternal Hound
 									i(166470),	-- Stonehide Elderhorn - wowhead
 								}),
 								n(-162, {	-- Pets
 									i(169322),	-- Adventurous Hopling Pack
 									i(163815),	-- Littlehoof
 									i(163810),	-- Thistlebrush Bud
+								}),
+								n(-319, {	-- Weapons
+									i(164337),	-- Plundered Amber Slinger
+									i(164338),	-- Plundered Ambershaper's Egg
+									i(164283),	-- Plundered Mogu Scepter
+									i(164335),	-- Plundered Paragon's Mace
 								}),
 							},
 						}),

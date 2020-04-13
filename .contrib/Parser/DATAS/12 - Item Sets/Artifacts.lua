@@ -2580,38 +2580,31 @@ _.GearSets =
 				i(128860, {	-- Fangs of Ashamane [Main Hand]
 					-- https://www.wowhead.com/acquiring-fangs-of-ashamane-feral-druid-artifact
 					BaseAppearance("Interface\\Icons\\inv_knife_1h_artifactfrostsaber_d_01",{
-						{
-							["artifactID"] = 426,	-- Standard Troll
-							["races"] = {8},		-- Troll
+						artifact(426, {	-- Standard Troll
+							["races"] = { TROLL, ZANDALARI },
 							["displayID"] = 66779,	-- Rainbow Druid Form
-						},
-						{
-							["artifactID"] = 427,	-- Standard Tauren
-							["races"] = {6},		-- Tauren
+						}),
+						artifact(427, {	-- Standard Tauren
+							["races"] = { TAUREN, HIGHMOUNTAIN },
 							["displayID"] = 66777,	-- Brown Druid Form
-						},
-						{
-							["artifactID"] = 428,	-- Standard Worgen
-							["races"] = {22},		-- Worgen
+						}),
+						artifact(428, {	-- Standard Worgen / Kultiran
+							["races"] = { WORGEN, KULTIRAN },
 							["displayID"] = 66778,	-- Light Brown Form
-						},
-						{
-							["artifactID"] = 430,	-- Standard Night Elf
-							["races"] = {4},		-- Night Elf
+						}),
+						artifact(430, {	-- Standard Night Elf
+							["races"] = { NIGHTELF },
 							["displayID"] = 66780,	-- Purple Druid Form
-						},
-						{
-							["artifactID"] = 287,	-- Recover one of the Pillars
+						}),
+						artifact(287, {	-- Recover one of the Pillars
 							["displayID"] = 66775,	-- Black Druid Form
-						},
-						{
-							["artifactID"] = 429,	-- Recover Light's Heart
+						}),
+						artifact(429, {	-- Recover Light's Heart
 							["displayID"] = 66776,	-- Blue Druid Form
-						},
-						{
-							["artifactID"] = 431,	-- Complete first major Order Hall campaign
+						}),
+						artifact(431, {	-- Complete first major Order Hall campaign
 							["displayID"] = 66781,	-- White Druid Form
-						},
+						}),
 					}),
 					ClassHallAppearance("Interface\\Icons\\inv_knife_1h_artifactfrostsaber_d_01",{
 						artifact(436),	-- Finish Class Campaign
@@ -2646,38 +2639,31 @@ _.GearSets =
 				}),
 				i(128859, {	-- Fangs of Ashamane [Off Hand]
 					BaseAppearance("Interface\\Icons\\inv_knife_1h_artifactfrostsaber_d_01",{
-						{
-							["artifactID"] = 426,	-- Standard Troll
-							["races"] = {8},		-- Troll
+						artifact(426, {	-- Standard Troll
+							["races"] = { TROLL, ZANDALARI },
 							["displayID"] = 66779,	-- Rainbow Druid Form
-						},
-						{
-							["artifactID"] = 427,	-- Standard Tauren
-							["races"] = {6},		-- Tauren
+						}),
+						artifact(427, {	-- Standard Tauren
+							["races"] = { TAUREN, HIGHMOUNTAIN },
 							["displayID"] = 66777,	-- Brown Druid Form
-						},
-						{
-							["artifactID"] = 428,	-- Standard Worgen
-							["races"] = {22},		-- Worgen
+						}),
+						artifact(428, {	-- Standard Worgen / Kultiran
+							["races"] = { WORGEN, KULTIRAN },
 							["displayID"] = 66778,	-- Light Brown Form
-						},
-						{
-							["artifactID"] = 430,	-- Standard Night Elf
-							["races"] = {4},		-- Night Elf
+						}),
+						artifact(430, {	-- Standard Night Elf
+							["races"] = { NIGHTELF },
 							["displayID"] = 66780,	-- Purple Druid Form
-						},
-						{
-							["artifactID"] = 287,	-- Recover one of the Pillars
+						}),
+						artifact(287, {	-- Recover one of the Pillars
 							["displayID"] = 66775,	-- Black Druid Form
-						},
-						{
-							["artifactID"] = 429,	-- Recover Light's Heart
+						}),
+						artifact(429, {	-- Recover Light's Heart
 							["displayID"] = 66776,	-- Blue Druid Form
-						},
-						{
-							["artifactID"] = 431,	-- Complete first major Order Hall campaign
+						}),
+						artifact(431, {	-- Complete first major Order Hall campaign
 							["displayID"] = 66781,	-- White Druid Form
-						},
+						}),
 					}),
 					ClassHallAppearance("Interface\\Icons\\inv_knife_1h_artifactfrostsaber_d_01",{
 						artifact(436),	-- Finish Class Campaign
@@ -2712,17 +2698,17 @@ _.GearSets =
 				}),
 				i(128821, {	-- Claws of Ursoc [Main Hand]
 					BaseAppearance("Interface\\Icons\\inv_hand_1h_artifactursoc_d_01",{
-						artifact(266, {	-- Standard Troll
-							["races"] = { 8 },
-						}),
-						artifact(265, {	-- Standard Worgen
-							["races"] = { 22 },
+						artifact(265, {	-- Standard Troll
+							["races"] = { TROLL, ZANDALARI },
 						}),
 						artifact(264, {	-- Standard Tauren
-							["races"] = { 6 },
+							["races"] = { TAUREN, HIGHMOUNTAIN },
+						}),
+						artifact(266, {	-- Standard Worgen / Kultiran
+							["races"] = { WORGEN, KULTIRAN },
 						}),
 						artifact(121, {	-- Standard Night Elf
-							["races"] = { 4 },
+							["races"] = { NIGHTELF },
 						}),
 						artifact(267),	-- Recover one of the Pillars
 						artifact(268),	-- Recover Light's Heart
@@ -2761,17 +2747,17 @@ _.GearSets =
 				}),
 				i(128822, {	-- Claws of Ursoc [Offhand]
 					BaseAppearance("Interface\\Icons\\inv_hand_1h_artifactursoc_d_01",{
-						artifact(266, {	-- Standard Troll
-							["races"] = { 8 },
-						}),
-						artifact(265, {	-- Standard Worgen
-							["races"] = { 22 },
+						artifact(265, {	-- Standard Troll
+							["races"] = { TROLL, ZANDALARI },
 						}),
 						artifact(264, {	-- Standard Tauren
-							["races"] = { 6 },
+							["races"] = { TAUREN, HIGHMOUNTAIN },
+						}),
+						artifact(266, {	-- Standard Worgen / Kultiran
+							["races"] = { WORGEN, KULTIRAN },
 						}),
 						artifact(121, {	-- Standard Night Elf
-							["races"] = { 4 },
+							["races"] = { NIGHTELF },
 						}),
 						artifact(267),	-- Recover one of the Pillars
 						artifact(268),	-- Recover Light's Heart

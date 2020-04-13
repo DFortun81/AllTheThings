@@ -77,10 +77,6 @@ _.Zones =
 					["sourceQuest"] = 40588,	-- Following the Curse
 				}),
 				--[[
-				q(40835, {	-- Disturbing the Past
-					["provider"] = { "n", 100729 },	-- 
-					["classes"] = {11},
-				}),
 				q(40932, {	-- Disturbing the Past
 					["provider"] = { "n", 100729 },	-- 
 					["classes"] = {6},
@@ -99,10 +95,6 @@ _.Zones =
 				q(40588, {	-- Following the Curse
 					["provider"] = { "n", 100323 },	-- 
 					["classes"] = {9},
-				}),
-				q(40834, {	-- Following the Curse
-					["provider"] = { "n", 100323 },	-- 
-					["classes"] = {11},
 				}),
 				]]--
 				q(44734, {	-- Fragments of the Past
@@ -233,10 +225,6 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				--[[
-				q(40900, {	-- The Burden Borne (map blank, not sure if starts in Deadwind Pass, a scenario, or elsewhere)
-					["provider"] = { "n", 101282 },	-- 
-					["classes"] = {11},
-				}),
 				q(40935, {	-- The Call of Vengeance (map blank
 					["provider"] = { "n", 101282 },	-- 
 					["classes"] = {6},
@@ -253,10 +241,6 @@ _.Zones =
 					["provider"] = { "n", 100812 },	-- 
 					["classes"] = {6},
 				}),
-				q(40838, {	-- The Dark Riders
-					["provider"] = { "n", 100812 },	-- 
-					["classes"] = {11},
-				}),
 				q(41155, {	-- The Dark Riders
 					["provider"] = { "n", 100812 },	-- 
 					["classes"] = {9},
@@ -269,11 +253,7 @@ _.Zones =
 					["classes"] = { 9 },	-- Warlock
 					["sourceQuest"] = 40611,	-- The Fate of Deadwind
 				}),
---[[
-				q(40837, {	-- The Deadwind Hunt
-					["provider"] = { "n", 100729 },	-- 
-					["classes"] = {11},
-				}),
+--[[´
 				q(42970, {	-- The Diamond King
 					["provider"] = { "n", 113655 },	-- 
 				}),

@@ -201,9 +201,8 @@ _.Zones =
 					},
 				}),
 				i(92426, {	-- Sealed Tome of the Lost Legion
-					["spellID"] = 101508,	-- The Codex of Zerrath(added the spellID here until the full questline is put in)
 					["collectible"] = true,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["crs"] = {
 						70000,	-- Al'tabim the All-Seeing
 						70001,	-- Backbreaker Uru

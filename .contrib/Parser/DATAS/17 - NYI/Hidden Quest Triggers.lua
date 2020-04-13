@@ -468,6 +468,9 @@ _.NeverImplemented =
 		q(31607),	-- Townlong Steppes - Tracking Event: Finished Spiteful Spirits & Hatred Becomes Us
 		q(30936),	-- Townlong Steppes - unused. Triggers when turning in "Behind the Battlefront"
 		
+		q(32725),	-- Warlock Green Fire Questline - Reached Kanrethad
+		q(32666),	-- Warlock Green Fire Questline - Reached Kanrethad
+		
 	--	DUNGEONS
 		q(35316),	-- Gate of the Setting Sun Reward Quest
 		q(31631),	-- Gate of the Setting Sun Challenge Mode - Bronze Addition (Nth)
@@ -994,8 +997,6 @@ _.NeverImplemented =
 		q(40302),	-- FLAG - Prospecting 01
 		q(40303),	-- FLAG - Prospecting 02
 		q(40304),	-- FLAG - Prospecting 03 - triggered when completing a jewelcrafting world quest in Dalaran
-		q(45318),	-- Nighthold - tracking quest. triggers before the door to Chronomatic Anomaly opens
-		q(45328),	-- Nighthold - tracking quest. triggers before the door to Chronomatic Anomaly opens
 		q(44297),	-- Tracking Quest - W2 - Jaina Gone
 		q(44659),	-- Dalaran - I Skipped The Intro Tracking Quest		
 		
@@ -1039,6 +1040,27 @@ _.NeverImplemented =
 		q(49238),	-- Demon Hunter Order Hall - triggers immediately after completing the "Things Gaardoun Needs" mission
 		q(44382),	-- Demon Hunter Order Hall - Vengeance Chosen — chose to pursue Vengeance artifact while on "In Pursuit of Power"
 		q(44638),	-- Demon Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Demon Hunter - Chapter 1.5 - Pacing Mission — triggers when "Additional Accoutrements" is completed
+		
+	-- Druid Order Hall
+		q(41194),	-- Druid Order Hall - Remulos Tracker - When you enter the Dreamway the first time
+		q(40703),	-- Druid Order Hall - Restoration Chosen (First)
+		q(40781),	-- Druid Order Hall - Balance Chosen (First)
+		q(43976),	-- Druid Order Hall - Balance Chosen (Second)
+		q(44432),	-- Druid Order Hall - Balance Chosen (Third)
+		q(44444),	-- Druid Order Hall - Balance Chosen (Forth)
+		q(40701),	-- Druid Order Hall - Feral Chosen (First)
+		q(43978),	-- Druid Order Hall - Feral Chosen (Second)
+		q(44433),	-- Druid Order Hall - Feral Chosen (Third)
+		q(44445),	-- Druid Order Hall - Feral Chosen (Forth)
+		q(40702),	-- Druid Order Hall - Guardian Chosen (First)
+		q(43977),	-- Druid Order Hall - Guardian Chosen (Second)
+		q(44434),	-- Druid Order Hall - Guardian Chosen (Third)
+		q(44446),	-- Druid Order Hall - Guardian Chosen (Forth)
+		q(43353),	-- Gathering the Dreamweavers: Celestine of the Harvest
+		q(43354),	-- Gathering the Dreamweavers: Thisalee Crow
+		q(43355),	-- Gathering the Dreamweavers: Matoclaw
+		q(43356),	-- Gathering the Dreamweavers: Talza
+		q(43357),	-- Gathering the Dreamweavers: Graham Silverclaw
 		
 		q(40621),	-- Hunter Order Hall - Beast Mastery Chosen first
 		q(44045),	-- Hunter Order Hall - Beast Mastery Chosen
@@ -1336,9 +1358,8 @@ _.NeverImplemented =
 		q(47935),	-- Tracking Quest - kill Icefist
 		q(47921),	-- Tracking Quest. Triggered after using the cloth ensemble
 		
-		
 	-- Raids
-		-- These trigger just once a week
+	-- These trigger just once a week
 	-- The Emerald Nightmare
 		q(44142),	-- Nythendra
 		q(44143),	-- Il'gynoth, Heart of Corruption
@@ -1348,12 +1369,27 @@ _.NeverImplemented =
 		q(44147),	-- Cenarius
 		q(44148),	-- Xavius
 	
-	-- Nighthold
-		q(46328),	-- Krosus
-
 	-- Trial of Valor
 		q(45430),	-- Guarm
 		q(45431),	-- Helya
+		
+	-- Nighthold
+		q(45318),	-- Skorpyron
+		q(45328),	-- Triggers when the door to Chronomatic Anomaly opens
+		q(45319),	-- Chronomatic Anomaly
+		q(45320),	-- Triliax
+		q(45321),	-- Spellblade Aluriel
+		q(45322),	-- Tichondrius
+		q(45323),	-- Krosus
+		q(45324),	-- High Botanist Tel'arn
+		q(45325),	-- Star Augur Etraeus
+		q(46328),	-- Triggers when the port to Elisande is activated
+		q(45326),	-- Elisande
+	
+	-- Tomb of Sargeras
+		q(48643),	-- Goroth
+		q(48645),	-- Harjatan
+		q(48646),	-- Mistress Sassz'ine
 		
 		-------------------
 		--      BFA      --

@@ -860,6 +860,61 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10751 },	-- Breaching the Path
 				}),
+				q(32324, {	-- Seek the Signal
+					["sourceQuest"] = 32317,	-- Seeking the Soulstones
+					["classes"] = { WARLOCK },
+					["lvl"] = 90,
+				}),
+				q(32325, {	-- Infiltrating the Black Temple
+					["sourceQuest"] = 32324,	-- Seek the Signal
+					["classes"] = { WARLOCK },
+					["lvl"] = 90,
+					["cost"] = { { "i", 92556, 1 } },	-- Empowered Soulcore
+					["maps"] = { 
+						490,	-- The Black Temple (Illidari Training Grounds)
+						491,	-- The Black Temple (Karabor Sewers)
+						492,	-- The Black Temple (Sanctuary of Shadows)
+						493,	-- The Black Temple (Halls of Anguish)
+						494,	-- The Black Temple (Gorefiend's Vigil)
+						495,	-- The Black Temple (Den of Mortal Delights)
+						496,	-- The Black Temple (Chamber of Command)
+						497,	-- The Black Temple (Temple Summit)
+					},
+					["g"] = {
+						spell(101508),	-- The Codex of Xerrath
+					},
+				}),
+				q(32340, {	-- Plunder the Black Temple
+					["sourceQuest"] = 32325,	-- Infiltrating the Black Temple
+					["classes"] = { WARLOCK },
+					["lvl"] = 90,
+					["maps"] = { 
+						490,	-- The Black Temple (Illidari Training Grounds)
+						491,	-- The Black Temple (Karabor Sewers)
+						492,	-- The Black Temple (Sanctuary of Shadows)
+						493,	-- The Black Temple (Halls of Anguish)
+						494,	-- The Black Temple (Gorefiend's Vigil)
+						495,	-- The Black Temple (Den of Mortal Delights)
+						496,	-- The Black Temple (Chamber of Command)
+						497,	-- The Black Temple (Temple Summit)
+					},
+				}),
+				q(32341, {	-- Demonstrate Your Power
+					["sourceQuest"] = 32325,	-- Infiltrating the Black Temple
+					["classes"] = WARLOCK,
+					["lvl"] = 90,
+					["maps"] = { 
+						490,	-- The Black Temple (Illidari Training Grounds)
+						491,	-- The Black Temple (Karabor Sewers)
+						492,	-- The Black Temple (Sanctuary of Shadows)
+						493,	-- The Black Temple (Halls of Anguish)
+						494,	-- The Black Temple (Gorefiend's Vigil)
+						495,	-- The Black Temple (Den of Mortal Delights)
+						496,	-- The Black Temple (Chamber of Command)
+						497,	-- The Black Temple (Temple Summit)
+					},
+					["u"] = 1,
+				}),
 			}),
 		}),
 	}),
