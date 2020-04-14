@@ -6321,6 +6321,7 @@ app.BaseQuest = {
 					end
 				end
 			end
+			if t["isBreadcrumb"] then questName = "|cff663399" .. questName .. "|r"; end
 			return questName;
 		elseif key == "questName" then
 			local questID = t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID;
