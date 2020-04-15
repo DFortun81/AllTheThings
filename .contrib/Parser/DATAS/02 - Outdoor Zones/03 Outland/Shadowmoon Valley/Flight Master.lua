@@ -7,9 +7,11 @@ _.Zones =
 		m(104, {	-- Shadowmoon Valley (Outland)
 			n(-228, {	-- Flight Master
 				fp(140, {	-- Altar of Sha'tar, Shadowmoon Valley
+					["altQuests"] = { 10553 },	-- Voren'thal the Seer
 					["coord"] = { 63.2, 30.4, 104 },
 				}),
 				fp(159, {	-- Sanctum of the Stars, Shadowmoon Valley
+					["altQuests"] = { 10554 },	-- Ishanah
 					["coord"] = { 56.2, 57.8, 104 },
 				}),
 				fp(123, {	-- Shadowmoon Village, Shadowmoon Valley

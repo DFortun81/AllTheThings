@@ -391,6 +391,7 @@ select(2, ...).FlightPathDB = {
 	}, -- [139]
 	{
 		name="Altar of Sha'tar, Shadowmoon Valley",
+		["altQuests"] = { 10553 },	-- Voren'thal the Seer
 		faction=0,
 	}, -- [140]
 	{
@@ -426,6 +427,7 @@ select(2, ...).FlightPathDB = {
 	{
 		name="Sanctum of the Stars, Shadowmoon Valley",
 		faction=0,
+		["altQuests"] = { 10554 },	-- Ishanah
 	}, -- [159]
 	{
 		name="Evergrove, Blade's Edge Mountains",
@@ -717,11 +719,11 @@ select(2, ...).FlightPathDB = {
 	nil, -- [312]
 	nil, -- [313]
 	nil, -- [314]
-	{
-		name="Acherus: The Ebon Hold",
-		faction=0,
-		["classes"] = { 6 },	-- Death Knight
-	}, -- [315]
+{
+	name="Acherus: The Ebon Hold",
+	faction=0,
+	["classes"] = { 6 },	-- Death Knight
+}, -- [315]
 	nil, -- [316]
 	nil, -- [317]
 	nil, -- [318]
@@ -1071,6 +1073,7 @@ select(2, ...).FlightPathDB = {
 	[650] = {
 		name="Andorhal, Western Plaguelands",
 		faction=2,
+		["altQuests"] = { 27206 },	-- Alas, Andorhal
 	},
 	[2083] = {
 		name="Tradewinds Market, Tiragarde Sound",

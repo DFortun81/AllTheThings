@@ -10,6 +10,7 @@ _.Zones =
 					["coord"] = { 46.6, 64.6, 22 },
 				}),
 				fp(650, {	-- Andorhal, Western Plaguelands
+					["altQuests"] = { 27206 },	-- Alas, Andorhal
 					["coord"] = { 39.4, 69.4, 22 },
 				}),
 				fp(66, {	-- Chillwind Camp, Western Plaguelands
