@@ -19,6 +19,7 @@ _.GroupFinder =
 				i(113770),	-- Firecracker Boots
 				i(113731),	-- Firecracker Cap
 				i(113773),	-- Firecracker Girdle
+				i(113746),	-- Firecracker Gloves*	— confirmed w/screenshot in #errors on April 15, 2020
 				i(113733),	-- Firecracker Helm
 				i(113771),	-- Firecracker Slippers
 				i(113730),	-- Venomtail Helm
@@ -80,7 +81,6 @@ _.GroupFinder =
 				i(113765),	-- Blossoming Robe
 				i(113742),	-- Firecracker Chestguard
 				i(113748),	-- Firecracker Gauntlets
-				i(113746),	-- Firecracker Gloves
 				i(113752),	-- Firecracker Mantle
 				i(113754),	-- Firecracker Pauldrons
 				i(113740),	-- Firecracker Tunic
