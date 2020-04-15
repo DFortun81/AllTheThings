@@ -26,6 +26,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
+				q(51216, {	-- Waycrest Manor: Something to Crow About
+					["isWorldQuest"] = true,
+					["lvl"] = 120,
+				}),
 				q(51212, {	-- Waycrest Manor: Witchy Kithcen
 					["isWorldQuest"] = true,
 					["lvl"] = 120,
