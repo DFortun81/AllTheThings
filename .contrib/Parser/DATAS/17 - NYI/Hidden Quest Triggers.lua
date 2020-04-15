@@ -1370,6 +1370,8 @@ _.NeverImplemented =
 		q(44148),	-- Xavius
 	
 	-- Trial of Valor
+		q(45429),	-- Odyn
+		q(46661),	-- teleporting post-Odyn
 		q(45430),	-- Guarm
 		q(45431),	-- Helya
 		
@@ -1390,6 +1392,19 @@ _.NeverImplemented =
 		q(48643),	-- Goroth
 		q(48645),	-- Harjatan
 		q(48646),	-- Mistress Sassz'ine
+		q(48644),	-- Demonic Inquisition
+		q(48647),	-- Sisters of the Moon
+	--	q(),	-- The Desolate Host
+		q(48649),	-- Maiden of Vigilance
+		q(49612),	-- Maiden of Vigilance (triggered at the same time as above)
+	--	q(),	-- Fallen Avatar
+	--	q(),	-- Kil'jaeden
+	
+	-- Antorus, the Burning Throne
+		q(45460),	-- Garothi Worldbreaker
+		q(48420),	-- Garothi Worldbreaker (triggered at the same time as above)
+		q(45461),	-- Felhounds of Sargeras
+		q(48422),	-- Felhounds of Sargeras (triggered at the same time as above)
 		
 		-------------------
 		--      BFA      --
