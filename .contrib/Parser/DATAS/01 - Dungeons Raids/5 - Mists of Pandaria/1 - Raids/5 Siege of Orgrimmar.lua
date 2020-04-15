@@ -317,7 +317,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 				},
 			}),
-			n(VENDORS, {	-- Flexible (Pre-Patch 6.0) >> Items unmarked after 6.0, used to be marked "Flexible" <<
+			d(-2, {	-- Flexible (Pre-Patch 6.0) >> Items unmarked after 6.0, used to be marked "Flexible" <<
 				["u"] = 12,
 				["ignoreBonus"] = true,
 				["description"] = "This version of the instance was the original Flexible difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
