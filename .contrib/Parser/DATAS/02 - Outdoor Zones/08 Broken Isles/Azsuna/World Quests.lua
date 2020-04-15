@@ -918,6 +918,7 @@ _.Zones =
 					i(134234),	-- Barnacled Azsharan Insignia
 					i(134248),	-- Leycoral Shard
 					i(134247),	-- Silent Seashell
+					i(136750),	-- Vault Guardian's Talisman
 				}),
 				n(-387,  {	-- Relics
 					i(141273),	-- Echo of Eons
