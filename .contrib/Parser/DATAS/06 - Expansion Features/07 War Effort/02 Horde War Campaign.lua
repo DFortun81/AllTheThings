@@ -482,7 +482,9 @@ _.ExpansionFeatures =
 						["lvl"] = 120,
 						["g"] = {
 							spell(273743),	-- World Quests (BFA)
-							i(141605),	-- Flight Master Whistle
+							i(141605, {	-- Flight Master Whistle
+								["modID"] = 11,
+							}),
 						},
 					}),
 					q(52451, {	-- Uniting Zandalar		(Also grants credit for the two Alliance Quests "Uniting Kul Tiras" (ID 51918 & ID 52450))
@@ -493,7 +495,9 @@ _.ExpansionFeatures =
 						["lvl"] = 120,
 						["g"] = {
 							spell(273743),	-- World Quests (BFA)
-							i(141605),	-- Flight Master Whistle
+							i(141605, {	-- Flight Master Whistle
+								["modID"] = 11,
+							}),
 						},
 					}),
 					-- First Assault

@@ -1620,14 +1620,18 @@ _.Zones =
 				q(43341, {	-- Uniting the Isles
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 					["g"] = {
-						i(141605),	-- Flight Master Whistle
+						i(141605, {	-- Flight Master Whistle
+							["modID"] = 11,
+						}),
 					},
 				}),
 				q(45727, {	-- Uniting the Isles
 					["coord"] = { 28.5, 48.3, 627 },
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 					["g"] = {
-						i(141605),	-- Flight Master Whistle
+						i(141605, {	-- Flight Master Whistle
+							["modID"] = 11,
+						}),
 					},
 				}),
 				q(41125, {	-- Unlocked Potential

@@ -496,7 +496,9 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 52654 },	-- The War Campaign
 						["g"] = {
 							spell(273746),	-- World Quests
-							i(141605),	-- Flight Master Whistle
+							i(141605, {	-- Flight Master Whistle
+								["modID"] = 11,
+							}),
 						},
 					}),
 					q(52450, {	-- Uniting Kul Tiras - version that alts unlock at 120
@@ -507,7 +509,9 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 52654 },	-- The War Campaign
 						["g"] = {
 							spell(273746),	-- World Quests
-							i(141605),	-- Flight Master Whistle
+							i(141605, {	-- Flight Master Whistle
+								["modID"] = 11,
+							}),
 						},
 					}),
 				--	BLOOD ON THE SAND STARTS HERE
