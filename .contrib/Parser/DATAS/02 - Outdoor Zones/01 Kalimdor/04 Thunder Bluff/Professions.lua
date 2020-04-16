@@ -262,6 +262,7 @@ _.Zones =
 					i(122214, {	-- Music Roll: Mulgore Plains
 						["description"] = "Go fishing for a bit in the Pools of Vision beneath the Spirit Rise.",
 						["coord"] = { 28.61, 24.61, 88 },
+						["races"] = HORDE_ONLY,
 					}),
 				}),
 			}),
