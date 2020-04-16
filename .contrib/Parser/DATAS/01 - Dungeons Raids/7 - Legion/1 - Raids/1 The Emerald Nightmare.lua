@@ -283,9 +283,9 @@ _.Instances = { tier(7, {	-- Legion
 								un(2, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
 							},
 						}),
-						i(44283, {	-- The Emerald Nightmare: Piercing the Veil
+						q(44283, {	-- The Emerald Nightmare: Piercing the Veil
 							["provider"] = { "n", 106482 },	-- Malfurion Stormrage
-							["description"] = "This quest requires you to kill Cenarius in Emerald nightmare 4 times.\n\nThe reward is skipping the 4 bosses and getting instantly to Cenarius.",
+							["description"] = "The reward is skipping the 4 bosses and getting instantly to Cenarius.",
 						}),
 					},
 				}),
@@ -513,9 +513,9 @@ _.Instances = { tier(7, {	-- Legion
 								un(2, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
 							},
 						}),
-						i(44284, {	-- The Emerald Nightmare: Piercing the Veil [Heroic]
+						q(44284, {	-- The Emerald Nightmare: Piercing the Veil [Heroic]
 							["provider"] = { "n", 106482 },	-- Malfurion Stormrage
-							["description"] = "This quest requires you to kill Cenarius in Emerald nightmare 4 times.\n\nThe reward is skipping the 4 bosses and getting instantly to Cenarius.",
+							["description"] = "The reward is skipping the 4 bosses and getting instantly to Cenarius.",
 						}),
 					},
 				}),
@@ -747,9 +747,9 @@ _.Instances = { tier(7, {	-- Legion
 								un(2, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
 							},
 						}),
-						i(44285, {	-- The Emerald Nightmare: Piercing the Veil [Mythic]
+						q(44285, {	-- The Emerald Nightmare: Piercing the Veil [Mythic]
 							["provider"] = { "n", 106482 },	-- Malfurion Stormrage
-							["description"] = "This quest requires you to kill Cenarius in Emerald nightmare 4 times.\n\nThe reward is skipping the 4 bosses and getting instantly to Cenarius.",
+							["description"] = "The reward is skipping the 4 bosses and getting instantly to Cenarius.",
 						}),
 					},
 				}),
