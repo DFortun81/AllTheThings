@@ -10,7 +10,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["mapID"] = 661,
 		["maps"] = { 662, 663, 664, 665, 666, 667, 668, 669, 670 },
 		["coord"] = { 45.56, 53.61, 534 },	-- Tanaan Jungle, Draenor
-		["groups"] = {
+		["g"] = {
 			n(-4, {	-- Achievements
 				ach(10149, {	-- Glory of the Hellfire Raider
 					i(127140),	-- Infernal Direwolf
@@ -92,7 +92,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
-					["groups"] = {
+					["g"] = {
 						cr(95068, e(1426, {	-- Hellfire Assault (Siegemaster Mar'tak)
 							i(128092),	-- Wicked Bonecarver's Knife
 							i(128098),	-- Snub-Nosed Iron Rifle
@@ -147,24 +147,31 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
-					["groups"] = {
-						cr(92146, e(1432, {	-- Hellfire High Council (Gurtogg Bloodboil)
-							i(128097),	-- Riverspike Cleaver
-							i(128100),	-- Spring-Loaded Jawstaff
-							i(128095),	-- Viscera-Stained Longsword
-							i(128191),	-- Hellfire Mindblade
-							i(128065),	-- Fel-Crazed Pauldrons
-							i(128061),	-- Wailing Woe Pauldrons
-							i(128184),	-- Gorget of Induced Madness
-							i(128077),	-- Gauntlets of Reckless Assault
-							i(128068),	-- Blade-Chipped Waistguard
-							i(128089),	-- Sash of Guttural Intonation
-							i(128062),	-- Void-Pact Leggings
-							i(128040),	-- Bladewalk Boots
-							i(128114),	-- Hazy Voidstone Band
-							i(128115),	-- Shadowmoon Ancestry Ring
-							i(128140),	-- Smoldering Felblade Remnant
-						})),
+					["g"] = {
+						e(1432, {	-- Hellfire High Council
+							["crs"] = {
+								92142,	-- Blademaster Jubei'thos
+								92144,	-- Dia Darkwhisper
+								92146,	-- Gurtogg Bloodboil
+							},
+							["g"] = {
+								i(128097),	-- Riverspike Cleaver
+								i(128100),	-- Spring-Loaded Jawstaff
+								i(128095),	-- Viscera-Stained Longsword
+								i(128191),	-- Hellfire Mindblade
+								i(128065),	-- Fel-Crazed Pauldrons
+								i(128061),	-- Wailing Woe Pauldrons
+								i(128184),	-- Gorget of Induced Madness
+								i(128077),	-- Gauntlets of Reckless Assault
+								i(128068),	-- Blade-Chipped Waistguard
+								i(128089),	-- Sash of Guttural Intonation
+								i(128062),	-- Void-Pact Leggings
+								i(128040),	-- Bladewalk Boots
+								i(128114),	-- Hazy Voidstone Band
+								i(128115),	-- Shadowmoon Ancestry Ring
+								i(128140),	-- Smoldering Felblade Remnant
+							},
+						}),
 						cr(90378, e(1396, {	-- Kilrogg Deadeye
 							ig(138808),	-- Illusion: Mark of the Bleeding Hollow
 							i(128093),	-- Demonhorn Spike
@@ -203,7 +210,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
-					["groups"] = {
+					["g"] = {
 						cr(90316, e(1433, {	-- Shadow-Lord Iskar
 							i(127771, {	-- Gemcutter Module: Critical Strike
 								["spellID"] = 187634,
@@ -261,7 +268,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
-					["groups"] = {
+					["g"] = {
 						cr(89890, e(1391, {	-- Fel Lord Zakuun
 							i(128202),	-- Ironblade Knuckles
 							i(128043),	-- Gaze of Superiority
@@ -308,7 +315,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
-					["groups"] = {
+					["g"] = {
 						cr(91331, e(1438, {	-- Archimonde
 							i(128199),	-- Fractured Soulgem Staff
 							i(128201),	-- Greatsword of Chaos
@@ -452,25 +459,32 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124239),	-- Imbued Stone Sigil
 					i(124235),	-- Rumbling Pebble
 				})),
-				cr(92146, e(1432, {	-- Hellfire High Council (Gurtogg Bloodboil)
-					i(124388),	-- Fel-Burning Blade
-					i(124385),	-- Blazing Demonhilt Sword
-					i(124383),	-- Mindbender's Flameblade
-					i(124258),	-- Gurtogg's Discarded Hood
-					i(124271),	-- Blood-Tanned Pauldrons
-					i(124220),	-- Spiked Bloodstone Pendant
-					i(124142),	-- Rugged Bloodcaked Drape
-					i(124133),	-- Windswept Wanderer's Drape
-					i(124312),	-- Bloody Berserker's Bracers
-					i(124184),	-- Cursed Blood Bracers
-					i(124347),	-- Girdle of Savage Resolve
-					i(124336),	-- Acid-Etched Legplates
-					i(124163),	-- Dia's Nightmarish Leggings
-					i(124299),	-- Kilt of Self-Reflection
-					i(124193),	-- Shimmering Voidstone Band
-					i(124228),	-- Desecrated Shadowmoon Insignia
-					i(124224),	-- Mirror of the Blademaster
-				})),
+				e(1432, {	-- Hellfire High Council
+					["crs"] = {
+						92142,	-- Blademaster Jubei'thos
+						92144,	-- Dia Darkwhisper
+						92146,	-- Gurtogg Bloodboil
+					},
+					["g"] = {
+						i(124388),	-- Fel-Burning Blade
+						i(124385),	-- Blazing Demonhilt Sword
+						i(124383),	-- Mindbender's Flameblade
+						i(124258),	-- Gurtogg's Discarded Hood
+						i(124271),	-- Blood-Tanned Pauldrons
+						i(124220),	-- Spiked Bloodstone Pendant
+						i(124142),	-- Rugged Bloodcaked Drape
+						i(124133),	-- Windswept Wanderer's Drape
+						i(124312),	-- Bloody Berserker's Bracers
+						i(124184),	-- Cursed Blood Bracers
+						i(124347),	-- Girdle of Savage Resolve
+						i(124336),	-- Acid-Etched Legplates
+						i(124163),	-- Dia's Nightmarish Leggings
+						i(124299),	-- Kilt of Self-Reflection
+						i(124193),	-- Shimmering Voidstone Band
+						i(124228),	-- Desecrated Shadowmoon Insignia
+						i(124224),	-- Mirror of the Blademaster
+					},
+				}),
 				cr(90378, e(1396, {	-- Kilrogg Deadeye
 					ig(138808),	-- Illusion: Mark of the Bleeding Hollow
 					i(124379),	-- Bite of the Bleeding Hollow
@@ -853,25 +867,32 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124239),	-- Imbued Stone Sigil
 					i(124235),	-- Rumbling Pebble
 				})),
-				cr(92146, e(1432, {	-- Hellfire High Council (Gurtogg Bloodboil)
-					i(124388),	-- Fel-Burning Blade
-					i(124385),	-- Blazing Demonhilt Sword
-					i(124383),	-- Mindbender's Flameblade
-					i(124258),	-- Gurtogg's Discarded Hood
-					i(124271),	-- Blood-Tanned Pauldrons
-					i(124220),	-- Spiked Bloodstone Pendant
-					i(124142),	-- Rugged Bloodcaked Drape
-					i(124133),	-- Windswept Wanderer's Drape
-					i(124312),	-- Bloody Berserker's Bracers
-					i(124184),	-- Cursed Blood Bracers
-					i(124347),	-- Girdle of Savage Resolve
-					i(124336),	-- Acid-Etched Legplates
-					i(124163),	-- Dia's Nightmarish Leggings
-					i(124299),	-- Kilt of Self-Reflection
-					i(124193),	-- Shimmering Voidstone Band
-					i(124228),	-- Desecrated Shadowmoon Insignia
-					i(124224),	-- Mirror of the Blademaster
-				})),
+				e(1432, {	-- Hellfire High Council
+					["crs"] = {
+						92142,	-- Blademaster Jubei'thos
+						92144,	-- Dia Darkwhisper
+						92146,	-- Gurtogg Bloodboil
+					},
+					["g"] = {
+						i(124388),	-- Fel-Burning Blade
+						i(124385),	-- Blazing Demonhilt Sword
+						i(124383),	-- Mindbender's Flameblade
+						i(124258),	-- Gurtogg's Discarded Hood
+						i(124271),	-- Blood-Tanned Pauldrons
+						i(124220),	-- Spiked Bloodstone Pendant
+						i(124142),	-- Rugged Bloodcaked Drape
+						i(124133),	-- Windswept Wanderer's Drape
+						i(124312),	-- Bloody Berserker's Bracers
+						i(124184),	-- Cursed Blood Bracers
+						i(124347),	-- Girdle of Savage Resolve
+						i(124336),	-- Acid-Etched Legplates
+						i(124163),	-- Dia's Nightmarish Leggings
+						i(124299),	-- Kilt of Self-Reflection
+						i(124193),	-- Shimmering Voidstone Band
+						i(124228),	-- Desecrated Shadowmoon Insignia
+						i(124224),	-- Mirror of the Blademaster
+					},
+				}),
 				cr(90378, e(1396, {	-- Kilrogg Deadeye
 					ig(138808),	-- Illusion: Mark of the Bleeding Hollow
 					i(124379),	-- Bite of the Bleeding Hollow
@@ -1251,25 +1272,32 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124239),	-- Imbued Stone Sigil
 					i(124235),	-- Rumbling Pebble
 				})),
-				cr(92146, e(1432, {	-- Hellfire High Council (Gurtogg Bloodboil)
-					i(124388),	-- Fel-Burning Blade
-					i(124385),	-- Blazing Demonhilt Sword
-					i(124383),	-- Mindbender's Flameblade
-					i(124258),	-- Gurtogg's Discarded Hood
-					i(124271),	-- Blood-Tanned Pauldrons
-					i(124220),	-- Spiked Bloodstone Pendant
-					i(124142),	-- Rugged Bloodcaked Drape
-					i(124133),	-- Windswept Wanderer's Drape
-					i(124312),	-- Bloody Berserker's Bracers
-					i(124184),	-- Cursed Blood Bracers
-					i(124347),	-- Girdle of Savage Resolve
-					i(124336),	-- Acid-Etched Legplates
-					i(124163),	-- Dia's Nightmarish Leggings
-					i(124299),	-- Kilt of Self-Reflection
-					i(124193),	-- Shimmering Voidstone Band
-					i(124228),	-- Desecrated Shadowmoon Insignia
-					i(124224),	-- Mirror of the Blademaster
-				})),
+				e(1432, {	-- Hellfire High Council
+					["crs"] = {
+						92142,	-- Blademaster Jubei'thos
+						92144,	-- Dia Darkwhisper
+						92146,	-- Gurtogg Bloodboil
+					},
+					["g"] = {
+						i(124388),	-- Fel-Burning Blade
+						i(124385),	-- Blazing Demonhilt Sword
+						i(124383),	-- Mindbender's Flameblade
+						i(124258),	-- Gurtogg's Discarded Hood
+						i(124271),	-- Blood-Tanned Pauldrons
+						i(124220),	-- Spiked Bloodstone Pendant
+						i(124142),	-- Rugged Bloodcaked Drape
+						i(124133),	-- Windswept Wanderer's Drape
+						i(124312),	-- Bloody Berserker's Bracers
+						i(124184),	-- Cursed Blood Bracers
+						i(124347),	-- Girdle of Savage Resolve
+						i(124336),	-- Acid-Etched Legplates
+						i(124163),	-- Dia's Nightmarish Leggings
+						i(124299),	-- Kilt of Self-Reflection
+						i(124193),	-- Shimmering Voidstone Band
+						i(124228),	-- Desecrated Shadowmoon Insignia
+						i(124224),	-- Mirror of the Blademaster
+					},
+				}),
 				cr(90378, e(1396, {	-- Kilrogg Deadeye
 					ig(138808),	-- Illusion: Mark of the Bleeding Hollow
 					i(124379),	-- Bite of the Bleeding Hollow
