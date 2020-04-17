@@ -1481,7 +1481,7 @@ _.ExpansionFeatures =
 				n(-38,	{	-- Professions
 					prof(FISHING, {
 						i(174456, {	-- Bottle of Gloop (pet)
-							["description"] = "Must be fishing in water currently affected by a N'Zoth assault.",
+							["description"] = "Can be caught from schools of fish in zone currently affected by a N'Zoth assault.",
 						}),
 					}),
 				}),
@@ -1556,7 +1556,7 @@ _.ExpansionFeatures =
 						q(58813, {	-- Fetid Filets
 							["coord"] = { 55.6, 35.3, 1527 },
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
-							["sourceQuest"] = 558812,	-- Meat Alternatives
+							["sourceQuest"] = 58812,	-- Meat Alternatives
 						}),
 						q(58858, {	-- More Fetid Filets
 							["coord"] = { 55.6, 35.3, 1527 },
@@ -1596,6 +1596,11 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
 							["sourceQuest"] = 58829,	-- They Grow So Fast
 						}),
+						q(58860, {	-- Big Bad Beetle
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58830,	-- Aqir Instincts
+						}),
 						q(58861, {	-- The Mantids' Mettle
 							["coord"] = { 55.6, 35.3, 1527 },
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
@@ -1605,22 +1610,22 @@ _.ExpansionFeatures =
 							["coord"] = { 55.6, 35.3, 1527 },
 							["isDaily"] = true,
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
-							["sourceQuest"] = 58861,	-- They Mantids' Mettle
+							["sourceQuest"] = 58830,	-- Aqir Instincts
 						}),
 						q(58862, {	-- The Littlest Defender
 							["coord"] = { 55.6, 35.3, 1527 },
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
-							["sourceQuest"] = 58861,	-- The Mantid's Mettle
+							["sourceQuest"] = 58830,	-- Aqir Instincts
 						}),
 						q(58859, {	-- Someone His Own Size
 							["coord"] = { 55.6, 35.3, 1527 },
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
-							["sourceQuest"] = 58862,	-- The Littlest Defender
+							["sourceQuest"] = 58830,	-- Aqir Instincts
 						}),
 						q(58863, {	-- A Custom Order
 							["coord"] = { 55.6, 35.3, 1527 },
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
-							["sourceQuest"] = 58859,	-- Someone His Own Size
+							["sourceQuest"] = 58830,	-- Aqir Instincts
 							["description"] = "Must reach 5000/5000 with the hatchling's progress bar.",
 						}),
 						q(58865, {	-- Otherworldly Armaments
