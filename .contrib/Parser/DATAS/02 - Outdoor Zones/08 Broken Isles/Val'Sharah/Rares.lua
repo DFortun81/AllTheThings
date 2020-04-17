@@ -98,6 +98,10 @@ _.Zones =
 						},
 					},
 				}),
+				n(110361, {	-- Harbinger of Screams
+					["questID"] = 45484,
+					["coord"] = { 70.4, 52.4, 641 },
+				}),
 				n(93030,  {	-- Ironbranch
 					["questID"] = 40080,
 					["coord"] = { 58.8, 33.9, 641 },
@@ -236,7 +240,6 @@ _.Zones =
 			--	n(93758, { 		-- Antydas Nightcaller	}), 
 			--	n(107924, { 	-- Darkfiend Tormentor	}), 
 			--	v(45483, { 		-- Ealdis	}), 
-			--	v(45484, {	 	-- Harbinger of Screams	}),
 			--	n(93686, { 		-- Jinikki the Puncturer	}), 
 			--	n(106042, { 	-- Kalazzius the Guileful	}), 
 			--	n(109125, { 	-- Kathaw the Savage	}), 

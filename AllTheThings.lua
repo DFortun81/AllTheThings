@@ -10339,14 +10339,14 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 				}),
 				app.CreateInstance(277, { 	-- Halls of Stone
 					['description'] = "The reward chest for completing the Tribunal of Ages Event in Halls of Stone appears to be fixed! Please let us know if this is still a problem!",
-				}),]]
+				}),
 				app.CreateEncounter(1997, {	-- LFR High Command
 					['description'] = "|cffFF0000In LFR, The portal to High Command will not spawn after you defeat the Felhounds.  Therefore there is no way to obtain the High Command loot from LFR.  Other difficulties work fine!|r",
 					['visible'] = true, 
 					['OnUpdate'] = function(data) 
 						data.visible = true;
 					end,
-				}),
+				}),]]
 				app.CreateNPC(-34, {
 					['description'] = "|cffFF0000These two cloaks have very limited confirmed drops if any and are presumed broken!|r",
 					['g'] = {

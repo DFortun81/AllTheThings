@@ -151,6 +151,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
 					}),
+					q(42186, {	-- Growing Power
+						["classes"] = { MONK },
+						["lvl"] = 101,
+						["provider"] = { "n", 112696 },	-- Initiate Da-Nel
+						["maps"] = { 627 },	-- Dalaran
+						["isBreadcrumb"] = true,
+					}),
 					q(41040, {	-- Halls of Valor: The Brewmaster
 						["classes"] = { MONK },
 						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
@@ -343,7 +350,6 @@ _.ExpansionFeatures =
 					q(46785),	-- Further Advancement
 					q(43062),	-- Further Training
 					q(46157),	-- Furthering Knowledge
-					q(42186),	-- Growing Power
 					q(43060),	-- Highmountain Salmon
 					q(46320),	-- Hope For a Cure
 					q(40570),	-- Into The Heavens

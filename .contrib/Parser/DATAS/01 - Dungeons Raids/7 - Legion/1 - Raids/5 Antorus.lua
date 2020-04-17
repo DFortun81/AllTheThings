@@ -170,7 +170,7 @@ _.Instances = { tier(7, {	-- Legion
 								i(152027),	-- Gravitational Condensate
 							},
 						}),
-						un(45, e(1997, {	-- Antoran High Command
+						e(1997, {	-- Antoran High Command
 							["crs"] = {
 								122367,	-- Admiral Svirax
 								122369,	-- Chief Engineer Ishkar
@@ -206,7 +206,7 @@ _.Instances = { tier(7, {	-- Legion
 								i(152295),	-- Svirax's Grim Trophy
 								i(152032),	-- Twisted Engineer's Fel-Infuser
 							},
-						})),
+						}),
 					},
 				}),
 				ach(11989, {	-- Hope's End [Eonar / Hasabel / Imonar]
