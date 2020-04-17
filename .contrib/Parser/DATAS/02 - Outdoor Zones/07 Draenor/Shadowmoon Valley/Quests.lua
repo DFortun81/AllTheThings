@@ -138,12 +138,15 @@ _.Zones =
 					["provider"] = { "n", 76204 },	-- Fiona
 				}),
 				q(44488, {	-- Cursed Tome
-					["itemID"] = 141361,	-- Cursed Tome
-					--["objectID"] = 258980,	-- Cursed Tome
-					["coord"] = { 37.6, 59.3, 539 },
-					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\inv_misc_book_06",
 					["lvl"] = 110,
+					["provider"] = { "o", 258980 },	-- Cursed Tome
+					["coord"] = { 37.6, 59.3, 539 },
+					["icon"] = "Interface\\Icons\\inv_misc_book_06",
+					["g"] = {
+						crit(3, {	-- Cursed Tome
+							["achievementID"] = 11240,	-- Harbinger
+						}),
+					},
 				}),
 				q(33765, {	-- Dark Enemies
 					["sourceQuests"] = { 33075 },	-- A Hero's Welcome

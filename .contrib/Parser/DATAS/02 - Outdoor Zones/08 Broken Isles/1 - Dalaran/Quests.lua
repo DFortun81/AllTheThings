@@ -620,7 +620,6 @@ _.Zones =
 					["provider"] = { "n", 110642 },	-- Fizzi Liverzapper
 					["isDaily"] = true,
 				}),
-			--	q(44486)	-- Fel-Ravaged Tome -- granted by i(141360) in Vault of the Wardens
 				q(41035, {	-- Felstorm's Plea
 					["classes"] = { MAGE },
 				}),

@@ -15,6 +15,14 @@ _.Instances = { tier(7, {	-- Legion
 						q(39343),	-- Vault of the Wardens: Bendy Glass Tubes
 					},
 				}),
+				q(44486, {	-- Fel-Ravaged Tome
+					["provider"] = { "o", 258979 },	-- Fel-Ravaged Tome
+					["g"] = {
+						crit(2, {	-- Fel-Ravaged Tome
+							["achievementID"] = 11240,	-- Harbinger
+						}),
+					},
+				}),
 			}),
 			n(-34, {	-- World Quests
 				q(42924, {	-- Vault of the Wardens: A Grim Matter
