@@ -531,6 +531,10 @@ _.Zones =
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
 				}),
+				q(41327, {	-- Supplies Needed: Stormscales
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 				q(46170, {	-- Thar'gokk (Invasion WQ)
 					["lvl"] = 98,
 					["isWorldQuest"] = true,
