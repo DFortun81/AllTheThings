@@ -166,8 +166,8 @@ _.Zones =
 								}),
 								n(-210, {	-- Nightborne
 									q(49973, {	-- Thalyssra's Estate
-										["provider"] = { "n", 126062 },	-- Lady Liadrin
-										["coord"] = { 38.0, 80.6, 85 },
+										["provider"] = { "n", 133523 },	-- Ji Firepaw
+										["coord"] = { 37.8, 81.1, 85 },
 										["races"] = HORDE_ONLY,
 										["lvl"] = 110,
 									}),
