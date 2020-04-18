@@ -166,19 +166,6 @@ _.WorldDrops =
 				i(121260),	-- Warpwind Belt
 				i(121265),	-- Warpwind Legguards
 				i(121263),	-- Warpwind Greaves
-				-- Cathedral BoEs (rage)
-				i(147517, {	-- Inquisitor's Battle Cowl
-					["modID"] = 0,
-				}),
-				i(147516, {	-- Legion Stalker's Hood
-					["modID"] = 0,
-				}),
-				i(147515, {	-- Hellblaze Invader's Greaves
-					["modID"] = 0,
-				}),
-				i(147514, {	-- Felguard Destroyer's Legplates
-					["modID"] = 0,
-				}),
 			}),
 		}),
 	}),
