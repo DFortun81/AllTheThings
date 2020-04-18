@@ -186,7 +186,7 @@ _.Zones =
 						["itemID"] = 129138,	-- Ram's-Horn Trowel
 						["questID"] = 40030,	-- Ram's-Horn Trowel
 						["sourceQuests"] = {
-							129120,	-- Fjarnskaggl Sample
+							40029,	-- Fjarnskaggl Sample
 						},
 						["requireSkill"] = HERBALISM,
 					},
