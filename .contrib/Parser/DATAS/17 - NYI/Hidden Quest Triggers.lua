@@ -1370,8 +1370,11 @@ _.NeverImplemented =
 		q(44148),	-- Xavius
 	
 	-- Trial of Valor
-		q(45429),	-- Odyn
-		q(46661),	-- teleporting post-Odyn
+		q(46661),	-- Odyn (LFR)
+		q(45429),	-- Odyn (LFR — triggered at the same time as above)
+		q(46662),	-- Odyn (Normal)
+		q(46663),	-- Odyn (Heroic)
+		q(46664),	-- Odyn (Mythic)
 		q(45430),	-- Guarm
 		q(45431),	-- Helya
 		
@@ -1405,6 +1408,17 @@ _.NeverImplemented =
 		q(48420),	-- Garothi Worldbreaker (triggered at the same time as above)
 		q(45461),	-- Felhounds of Sargeras
 		q(48422),	-- Felhounds of Sargeras (triggered at the same time as above)
+		q(45464),	-- Eonar
+		q(48425),	-- Eonar (triggered at the same time as above)
+		q(49357),	-- Eonar (triggered at the same time as above)
+		q(45463),	-- Portal Keeper Hasabel
+		q(48424),	-- Portal Keeper Hasabel (triggered at the same time as above)
+		q(45466),	-- Kingaroth
+		q(48427),	-- Kingaroth (triggered at the same time as above)
+		q(45467),	-- Varimathras
+		q(48428),	-- Varimathras (triggered at the same time as above)
+		q(45468),	-- The Coven of Shivarra
+		q(48429),	-- The Coven of Shivarra (triggered at the same time as above)
 		
 		-------------------
 		--      BFA      --
@@ -1696,6 +1710,7 @@ _.NeverImplemented =
 		q(52002),	-- Soul Goliath killID
 		q(51999),	-- Stone Golem killID
 		q(53612),	-- Pest Remover Mk. II killID
+		q(50480),	-- Underlord Xerxiz killID
 	
 
 	--	TREASURES
