@@ -1358,6 +1358,10 @@ _.NeverImplemented =
 		q(47935),	-- Tracking Quest - kill Icefist
 		q(47921),	-- Tracking Quest. Triggered after using the cloth ensemble
 		
+	--	Artifact questlines
+		q(45849),	-- Tracking Quest - 3+ Targets Trait Complete
+		q(45854),	-- Tracking Quest - Ranged DPS Trait Complete
+		
 	-- Raids
 	-- These trigger just once a week
 	-- The Emerald Nightmare

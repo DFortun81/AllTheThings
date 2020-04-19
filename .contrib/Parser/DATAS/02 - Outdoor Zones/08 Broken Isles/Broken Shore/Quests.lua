@@ -308,6 +308,7 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(45193, {	-- One Step Behind
+					["sourceQuests"] = { 45192 },	-- Runes of Rending
 					["provider"] = { "n", 116175 },	-- Karam Magespear
 					["classes"] = {
 						DRUID,		-- Balance

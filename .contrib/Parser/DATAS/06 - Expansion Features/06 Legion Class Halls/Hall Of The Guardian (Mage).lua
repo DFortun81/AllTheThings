@@ -150,7 +150,12 @@ _.ExpansionFeatures =
 					q(42433, {	-- Ancient Magic
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(42126),	-- Archmage Omniara
+					q(42126, {	-- Archmage Omniara
+						["classes"] = { MAGE },
+						["lvl"] = 101,
+						["provider"] = { "n", 108515 },	-- Archmage Melis
+						["sourceQuests"] = { 42703 },	-- Technical Wizardry
+					}),
 					q(42956, {	-- Ari's Package
 						i(141880),	-- Ari's Wooden Ring
 					}),
@@ -159,7 +164,12 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(44766),	-- Backup Plan
-					q(42127),	-- Building Our Troops
+					q(42127, {	-- Building Our Troops
+						["classes"] = { MAGE },
+						["lvl"] = 101,
+						["provider"] = { "n", 108515 },	-- Archmage Melis
+						["sourceQuests"] = { 42126 },	-- Archmage Omniara
+					}),
 					q(45845),	-- Burning Within
 					q(46043),	-- Champion: Aethas Sunreaver
 					q(42704),	-- Champion: Arcane Destroyer
@@ -188,7 +198,13 @@ _.ExpansionFeatures =
 					q(42424),	-- Following In His Footsteps
 					q(46782),	-- Further Advancement
 					q(46156),	-- Furthering Knowledge
-					q(42175),	-- Growing Power
+					q(42175, {	-- Growing Power
+						["classes"] = { MAGE },
+						["lvl"] = 101,
+						["provider"] = { "n", 112688 },	-- Meryl Felstorm
+						["maps"] = { 627 },	-- Dalaran
+						["isBreadcrumb"] = true,
+					}),
 					q(42493, {	-- Impending Dooooooom!
 						["classes"] = { 8 },	-- Mage
 					}),
@@ -227,13 +243,28 @@ _.ExpansionFeatures =
 						["classes"] = { 8 },	-- Mage
 					}),
 					q(46290),	-- Return of the Archmage
-					q(42663),	-- Rise, Champions
+					q(42663, {	-- Rise, Champions
+						["classes"] = { MAGE },
+						["lvl"] = 101,
+						["provider"] = { "n", 102700 },	-- Meryl Felstorm
+						["sourceQuests"] = { 42175 },	-- Growing Power
+					}),
 					q(44770, {	-- Secrets of the Shal'dorei
 						["classes"] = { 8 },	-- Mage
 					}),
 					q(45630),	-- Servant to No One
-					q(42696),	-- Tech It Up A Notch
-					q(42703),	-- Technical Wizardry
+					q(42696, {	-- Tech It Up A Notch
+						["classes"] = { MAGE },
+						["lvl"] = 101,
+						["provider"] = { "n", 108515 },	-- Archmage Melis
+						["sourceQuests"] = { 42687 },	-- Troops in the Field
+					}),
+					q(42703, {	-- Technical Wizardry
+						["classes"] = { MAGE },
+						["lvl"] = 101,
+						["provider"] = { "n", 102700 },	-- Meryl Felstorm
+						["sourceQuests"] = { 42663 },	-- Rise, Champions
+					}),
 					q(41114),	-- The Champion's Return
 					q(42416, {	-- The Council is in Session
 						["races"] = ALLIANCE_ONLY,
@@ -261,7 +292,12 @@ _.ExpansionFeatures =
 					q(42959),	-- Three Is a Lucky Number
 					q(44310),	-- Thrice the Power
 					q(45172),	-- To Battle!
-					q(42687),	-- Troops in the Field
+					q(42687, {	-- Troops in the Field
+						["classes"] = { MAGE },
+						["lvl"] = 101,
+						["provider"] = { "n", 108515 },	-- Archmage Melis
+						["sourceQuests"] = { 42127 },	-- Building Our Troops
+					}),
 					q(41125),	-- Unlocked Potential
 					q(42940),	-- When There's a Will, There's a Way
 					q(45179),	-- Win the Crowd

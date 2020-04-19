@@ -106,7 +106,9 @@ _.Zones =
 					["provider"] = { "n", 117438 },	-- Doloria
 				}),
 				q(45865, {	-- A Gift From the Six
+					["lvl"] = 110,
 					["provider"] = { "n", 90418 },	-- Archmage Modera
+					["coord"] = { 28.8, 48.8, 627 },
 					["classes"] = {
 						DEATHKNIGHT,	-- Frost
 						DEMONHUNTER,	-- Havoc
@@ -115,41 +117,78 @@ _.Zones =
 						WARRIOR,		-- Arms
 					},
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 110,
 				}),
 				q(45864, {	-- A Gift From the Six
-					["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
-					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
 					["provider"] = { "n", 90418 },	-- Archmage Modera
+					["coord"] = { 28.8, 48.8, 627 },
+					["classes"] = { 
+						PALADIN, 
+						PRIEST, 
+						SHAMAN, 
+						MONK, 
+						DRUID 
+					},
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(45862, {	-- A Gift From the Six
-					["classes"] = { PALADIN, ROGUE, SHAMAN, MAGE, WARLOCK },
-					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
+					["sourceQuests"] = { 46340 },	-- The Gates Are Closed
 					["provider"] = { "n", 90418 },	-- Archmage Modera
+					["coord"] = { 28.8, 48.8, 627 },
+					["classes"] = { 
+						MAGE,		-- Arcane
+						PALADIN,	-- Retribution
+						ROGUE,		-- Assassination
+						SHAMAN,		-- Enhancement
+						WARLOCK,	-- Demonology
+					},
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(45842, {	-- A Gift From the Six
+					["lvl"] = 110,
+					["provider"] = { "n", 90418 },	-- Archmage Modera
+					["coord"] = { 28.8, 48.8, 627 },
 					["classes"] = {	-- may be the "healers only" one instead -- needs to be double-checked/confirmed
 						HUNTER,		-- Marksmanship
-						MAGE,		-- Frost
 						PRIEST,		-- Shadow
 						WARLOCK,	-- Affliction
 					},
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 90418 },	-- Archmage Modera
 				}),
 				q(45866, {	-- A Gift From the Six
-					["classes"] = { HUNTER, PRIEST, MAGE, WARLOCK, DEMONHUNTER, DRUID },
-					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
 					["provider"] = { "n", 90418 },	-- Archmage Modera
+					["coord"] = { 28.8, 48.8, 627 },
+					["classes"] = { 
+						HUNTER, 
+						PRIEST, 
+						MAGE, 	-- Frost
+						WARLOCK, 
+						DEMONHUNTER, 
+						DRUID 
+					},
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(45861, {	-- A Gift From the Six
-					["classes"] = { WARRIOR, ROGUE, DEATHKNIGHT, SHAMAN, MAGE, DRUID },
-					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
 					["provider"] = { "n", 90418 },	-- Archmage Modera
+					["coord"] = { 28.8, 48.8, 627 },
+					["classes"] = { 
+						WARRIOR, 
+						ROGUE, 
+						DEATHKNIGHT, 
+						SHAMAN, 
+						MAGE, 
+						DRUID 
+					},
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(45863, {	-- A Gift From the Six
+					["lvl"] = 110,
 					["sourceQuests"] = { 45843 },	-- Dark Omens
 					["provider"] = { "n", 90418 },	-- Archmage Modera
+					["coord"] = { 28.8, 48.8, 627 },
 					["classes"] = {
 						DEATHKNIGHT,	-- Blood
 						DEMONHUNTER,	-- Vengeance
@@ -158,7 +197,6 @@ _.Zones =
 						PALADIN,		-- Protection
 						WARRIOR,		-- Protection
 					},
-					["coord"] = { 28.8, 48.8, 627 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(41632, {	-- A Gift of Time
@@ -754,10 +792,6 @@ _.Zones =
 						{ "n", 116302 },	-- Archmage Khadgar
 					},
 				}),
-				q(42175, {	-- Growing Power
-					["classes"] = { MAGE },
-					["provider"] = { "n", 112688 },	-- Meryl Felstorm
-				}),
 				q(47023, {	-- Guardian: Aid of the Illidari
 					["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
 					["classes"] = { DRUID },
@@ -1135,11 +1169,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 93773 },	-- High Overlord Saurfang
 				}),
-				q(42663, {	-- Rise, Champions
-					["sourceQuests"] = { 42175 },	-- Growing Power
-					["classes"] = { MAGE },
-					["provider"] = { "n", 102700 },	-- Meryl Felstorm
-				}),
 				q(42608, {	-- Rise, Champions
 					["classes"] = { WARLOCK },
 					["provider"] = { "n", 101097 },	-- Calydus
@@ -1270,11 +1299,6 @@ _.Zones =
 						{ "n", 115467 },	-- Archmage Kalec
 						{ "n", 105081 },	-- Archmage Kalec
 					},
-				}),
-				q(42703, {	-- Technical Wizardry
-					["sourceQuests"] = { 42663 },	-- Rise, Champions
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 102700 },	-- Meryl Felstorm
 				}),
 				q(45916, {	-- The Acolyte Imperiled
 					["classes"] = { WARRIOR, ROGUE, DEATHKNIGHT, SHAMAN, DRUID },

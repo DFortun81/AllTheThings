@@ -780,18 +780,30 @@ _.Zones =
 					["provider"] = { "n", 93234 },	-- Ashildir
 				}),
 				q(45524, {	-- The Forgotten Heir
+					["lvl"] = 110,
+					["sourceQuests"] = { 45523 },	-- To Tame the Drekirjar
+					["provider"] = { "n", 116568 },	-- Sigryn
+					["coord"] = { 41.4, 71.7, 634 },
 					["classes"] = {
-						8,	-- Mage (Arcane)
-						2,	-- Paladin (Retribution)
-						4,	-- Rogue (Assassination)
-						7,	-- Shaman (Enhancement)
-						9,	-- Warlock (Demonology)
+						MAGE,		-- Arcane
+						PALADIN,	-- Retribution
+						ROGUE,		-- Assassination
+						SHAMAN,		-- Enhancement
+						WARLOCK,	-- Demonology
 					},
 				}),
 				q(46340, {	-- The Gates Are Closed
-					["provider"] = { "n", 93628 },	-- Eyir
 					["lvl"] = 110,
-					["u"] = 40,		-- Mage Tower Questline
+					["sourceQuests"] = { 45525 },	-- Unanswered Questions
+					["provider"] = { "n", 93628 },	-- Eyir
+					["coord"] = { 71.9, 51.1, 634 },
+					["classes"] = {
+						MAGE,		-- Arcane
+						PALADIN,	-- Retribution
+						ROGUE,		-- Assassination
+						SHAMAN,		-- Enhancement
+						WARLOCK,	-- Demonology
+					},
 				}),
 				q(38057, {	-- The Lost Legion
 					["sourceQuests"] = {
@@ -812,6 +824,17 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["coord"] = { 36.1, 27.5, 634 },
 					["provider"] = { "n", 91473 },	-- Dread-Rider Cullen
+				}),
+				q(45486, {	-- The Reluctant Queen
+					["lvl"] = 110,
+					["provider"] = { "n", 116568 },	-- Sigryn
+					["classes"] = {
+						MAGE,		-- Arcane
+						PALADIN,	-- Retribution
+						ROGUE,		-- Assassination
+						SHAMAN,		-- Enhancement
+						WARLOCK,	-- Demonology
+					},
 				}),
 				q(38823, {	-- The Runes that Bind
 					["sourceQuests"] = {
@@ -864,6 +887,19 @@ _.Zones =
 					["coord"] = { 59.0, 42.9, 634 },
 					["provider"] = { "n", 97973 },	-- Havi
 				}),
+				q(45522, {	-- To Silence the Bonespeakers
+					["lvl"] = 110,
+					["sourceQuests"] = { 45486 },	-- The Reluctant Queen
+					["provider"] = { "n", 93628 },	-- Eyir
+					["coord"] = { 65.0, 68.0, 634 },
+					["classes"] = {
+						MAGE,		-- Arcane
+						PALADIN,	-- Retribution
+						ROGUE,		-- Assassination
+						SHAMAN,		-- Enhancement
+						WARLOCK,	-- Demonology
+					},
+				}),
 				q(39062, {	-- To Skold-Ashil (Alliance)
 					["sourceQuests"] = {
 						39060,	-- Combustible Contagion
@@ -885,12 +921,16 @@ _.Zones =
 					["provider"] = { "n", 93603 },	-- Nathanos Blightcaller
 				}),
 				q(45523, {	-- To Tame the Drekirjar
+					["lvl"] = 110,
+					["sourceQuests"] = { 45522 },	-- To Silence the Bonespeakers
+					["provider"] = { "n", 116568 },	-- Sigryn
+					["coord"] = { 72.9, 40.4, 634 },
 					["classes"] = {
-						8,	-- Mage (Arcane)
-						2,	-- Paladin (Retribution)
-						4,	-- Rogue (Assassination)
-						7,	-- Shaman (Enhancement)
-						9,	-- Warlock (Demonology)
+						MAGE,		-- Arcane
+						PALADIN,	-- Retribution
+						ROGUE,		-- Assassination
+						SHAMAN,		-- Enhancement
+						WARLOCK,	-- Demonology
 					},
 				}),
 				q(38405, {	-- To Weather the Storm (Alliance)
@@ -928,12 +968,16 @@ _.Zones =
 					["provider"] = { "n", 93231 },	-- Vydhar
 				}),
 				q(45525, {	-- Unanswered Questions
+					["lvl"] = 110,
+					["sourceQuests"] = { 45524 },	-- The Forgotten Heir
+					["provider"] = { "n", 116568 },	-- Sigryn
+					["coord"] = { 74.2, 85.0, 634 },
 					["classes"] = {
-						8,	-- Mage (Arcane)
-						2,	-- Paladin (Retribution)
-						4,	-- Rogue (Assassination)
-						7,	-- Shaman (Enhancement)
-						9,	-- Warlock (Demonology)
+						MAGE,		-- Arcane
+						PALADIN,	-- Retribution
+						ROGUE,		-- Assassination
+						SHAMAN,		-- Enhancement
+						WARLOCK,	-- Demonology
 					},
 				}),
 				q(42752, {	-- Vault of the Wardens: Vault Break-In (not sure why there are 2 versions, but they complete each other)
@@ -1195,10 +1239,8 @@ _.Zones =
 				q(41039),	-- Stolen Knowledge
 				q(40131),	-- Stonehide Leather Sample
 				q(42651),	-- Svergan's Promise
-				q(38424),	-- Thane's Mead Hall
 				q(41163),	-- The Apocalypse Bringer
 				q(40541),	-- The Charge Within
-				q(45524),	-- The Forgotten Heir
 				q(41802),	-- The Gates of Valor
 				q(42193),	-- The Gjallarhorn
 				q(41849),	-- The Iron Fist
@@ -1211,19 +1253,7 @@ _.Zones =
 				q(44775),	-- The Peak of Bones
 				q(41168),	-- The Purple Hills of Mac'Aree
 				q(41170),	-- The Relic Renewed
-				q(45486, {	-- The Reluctant Queen
-					["classes"] = {
-						8,	-- Mage (Arcane)
-						2,	-- Paladin (Retribution)
-						4,	-- Rogue (Assassination)
-						7,	-- Shaman (Enhancement)
-						9,	-- Warlock (Demonology)
-					},
-				}),
 				q(45406),	-- The Storm's Fury
-				q(45522),	-- To Silence the Bonespeakers
-				q(45523),	-- To Tame the Drekirjar
-				q(45525),	-- Unanswered Questions
 				q(40143),	-- Unfinished Treatise on the Properties of Stormscale
 				q(38642),	-- Vrykul Longboat
 				q(38472),	-- Whitewater Typhoon
