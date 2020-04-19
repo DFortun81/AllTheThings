@@ -19,6 +19,19 @@ _.Craftables =
 					i(163858),	-- Slippy
 				}),
 			}),
+			spell(286547, {	-- Transmute: Herbs to Anchors
+				i(165851, {	-- Bag of Anchors
+					i(159386, {	-- Anchor Chain Girdle
+						["modID"] = 1,	-- Normal Dungeon version (Siege only has heroic/mythic, but a normal version of this item drops from the transmute bag)
+					}),
+					i(142420, {	-- Anchor Chain Waistguard
+						["modID"] = 3,	-- Normal Raid version
+					}),
+					i(15865),	-- Anchorhold Buckler
+					i(152692),	-- Devastator Anchor Crystal
+					i(151013),	-- Ethereal Anchor
+				}),
+			}),
 			filter(53, {	-- Trinkets
 				i(168674, {	-- Abyssal Alchemist Stone
 					i(168757),	-- Recipe: Crushing Alchemist Stone
