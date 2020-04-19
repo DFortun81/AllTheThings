@@ -292,7 +292,7 @@ _.Zones =
 						["sourceQuest"] = 46678,	-- The Legend of the Threads
 						["repeatable"] = true,
 						["requireSkill"] = TAILORING,
-						["cost"] = { { "i", 146684, 20 }, },	-- ~20x Ancient Imbued Silkweave Armor
+						["cost"] = { { "i", 146684, 100 }, },	-- 100x Ancient Imbued Silkweave Armor
 					}),
 					q(46680, {	-- The Thread of Starlight
 						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard

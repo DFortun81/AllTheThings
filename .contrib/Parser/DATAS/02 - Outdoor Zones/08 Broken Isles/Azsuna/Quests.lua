@@ -207,14 +207,15 @@ _.Zones =
 					["provider"] = { "n", 106915 },	-- Marius Felbane
 				}),
 				q(45127, {	-- Fel-Crossed Lovers
+					["sourceQuests"] = { 45126 },	-- Unlikely Seduction
 					["provider"] = { "n", 116189 },	-- Levia Laurence
 					["classes"] = {
-						11,	-- Druid (Feral)
-						4,	-- Rogue (Outlaw)
-						6,	-- Death Knight (Unholy)
-						1,	-- Warrior (Fury)
-						8,	-- Mage (Fire)
-						7,	-- Shaman (Elemental)
+						DRUID,			-- Feral
+						DEATHKNIGHT,	-- Unholy
+						MAGE,			-- Fire
+						ROGUE,			-- Outlaw
+						SHAMAN,			-- Elemental
+						WARRIOR,		-- Fury
 					},
 					["coord"] = { 25.6, 57.6, 630 },
 					["races"] = ALLIANCE_ONLY,
@@ -759,6 +760,20 @@ _.Zones =
 					["coord"] = { 47.0, 41.2, 630 },
 					["provider"] = { "n", 88115 },	-- Prince Farondis
 				}),
+				q(45126, {	-- Unlikely Seduction
+					["sourceQuests"] = { 45917 },	-- Following the Scent
+					["classes"] = {
+						DRUID,			-- Feral
+						DEATHKNIGHT,	-- Unholy
+						MAGE,			-- Fire
+						ROGUE,			-- Outlaw
+						SHAMAN,			-- Elemental
+						WARRIOR,		-- Fury
+					},
+					["provider"] = { "n", 116189 },	-- Levia Laurence
+					["coord"] = { 25.7, 57.7, 630 },
+					["lvl"] = 110,
+				}),
 				q(42370, {	-- Wanding 101
 					["sourceQuests"] = { 37518 },	-- The Haunted Halls
 					["coord"] = { 29.7, 42.5, 631 },	-- Nar'thalas Academy
@@ -907,7 +922,6 @@ _.Zones =
 				q(41184),	-- Tried and True
 				q(39916),	-- Turnabout Betrayal
 				q(41182),	-- Uncovering the Orb of Sciallax
-				q(45126),	-- Unlikely Seduction
 				q(41180),	-- Unspeakable Power
 				q(40130),	-- Washed Clean					
 				q(42166),	-- What Is Going On Here?

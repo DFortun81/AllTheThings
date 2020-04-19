@@ -1113,6 +1113,14 @@ _.NeverImplemented =
 		q(44653),	-- Shaman Order Hall - Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 1
 		q(44654),	-- Shaman Order Hall - Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 2A-5
 		
+	--	Professions
+	--	Archaeology
+		q(41867),	-- FLAG - Brann Week 1
+		q(41868),	-- FLAG - Brann Week 2
+		q(41869),	-- FLAG - Brann Week 3
+		q(41870),	-- FLAG - Brann Week 4
+		q(41871),	-- FLAG - Brann Week 5
+	--	Blacksmithing
 		q(38544),	-- FLAG: Demonsteel Waistguard Crafted
 		q(38546),	-- FLAG: Demonsteel Boots Crafted
 		q(38550),	-- FLAG: Demonsteel Greaves Crafted
@@ -1121,6 +1129,9 @@ _.NeverImplemented =
 		q(38545),	-- FLAG: Demonsteel Pauldrons Crafted
 		q(38547),	-- FLAG: Demonsteel Gauntlets Crafted
 		q(38549),	-- FLAG: Demonsteel Helm Crafted
+	--	Leatherworking
+		q(47094),	-- Choice: Leatherworking (L) - triggers when you choose whether to craft the leather or mail legendary at Eliezer Hammerbeard (Nether Disruptor)
+	--	Tailoring
 		q(38976),	-- FLAG: Undying Silkweave Bracers
 		q(38977),	-- FLAG: Undying Silkweave Cinch Crafted
 		q(38978),	-- FLAG: Undying Silkweave Epaulets Crafted
@@ -1129,14 +1140,6 @@ _.NeverImplemented =
 		q(38982),	-- FLAG: Undying Silkweave Pantaloons Crafted
 		q(38983),	-- FLAG: Undying Silkweave Robe Crafted
 		q(38979),	-- FLAG: Undying Silkweave Slippers Crafted
-		
-	--	Professions
-	--	Archaeology
-		q(41867),	-- FLAG - Brann Week 1
-		q(41868),	-- FLAG - Brann Week 2
-		q(41869),	-- FLAG - Brann Week 3
-		q(41870),	-- FLAG - Brann Week 4
-		q(41871),	-- FLAG - Brann Week 5
 	
 	--	DH class campaign
 		q(47661),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
@@ -1197,7 +1200,7 @@ _.NeverImplemented =
 		q(44903),	-- Nithogg bonus roll
 		q(44509),	-- Shar'thos killID
 		q(44904),	-- Shar'thos bonus roll
-	--	q(),	-- Si'vash killID
+		q(47090),	-- Si'vash killID
 	--	q(),	-- Si'vash bonus roll
 		q(44510),	-- The Soultakers killID
 		q(44905),	-- The Soultakers bonus roll
@@ -1359,8 +1362,10 @@ _.NeverImplemented =
 		q(47921),	-- Tracking Quest. Triggered after using the cloth ensemble
 		
 	--	Artifact questlines
-		q(45849),	-- Tracking Quest - 3+ Targets Trait Complete
-		q(45854),	-- Tracking Quest - Ranged DPS Trait Complete
+		q(45849),	-- Tracking Quest - 3+ Targets Trait Complete (A Gift From The Six)
+		q(45850),	-- Tracking Quest - AoE Chosen (A Gift From The Six)
+		q(45854),	-- Tracking Quest - Ranged DPS Trait Complete (A Gift From The Six)
+		q(45915),	-- Triggers when you do any of "The Folly of Levia Laurence" quests
 		
 	-- Raids
 	-- These trigger just once a week

@@ -172,15 +172,16 @@ _.Zones =
 				}),
 				q(45861, {	-- A Gift From the Six
 					["lvl"] = 110,
+					["sourceQuests"] = { 45127 },	-- Fel-Crossed Lovers
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["coord"] = { 28.8, 48.8, 627 },
-					["classes"] = { 
-						WARRIOR, 
-						ROGUE, 
-						DEATHKNIGHT, 
-						SHAMAN, 
-						MAGE, 
-						DRUID 
+					["classes"] = {
+						DRUID,			-- Feral
+						DEATHKNIGHT,	-- Unholy
+						MAGE,			-- Fire
+						ROGUE,			-- Outlaw
+						SHAMAN,			-- Elemental
+						WARRIOR,		-- Fury
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -325,7 +326,8 @@ _.Zones =
 					["provider"] = { "n", 119001 },	-- Sin'dorei Archmage
 				}),
 				q(44914, {	-- Arms: The Thieving Apprentice
-					["sourceQuests"] = { 47032 },	-- Legion Threat: Azshara
+					["lvl"] = 110,
+					["sourceQuests"] = { 44821 },	-- In Dire Need
 					["classes"] = { WARRIOR },
 					["providers"] = {
 						{ "n", 105081 },	-- Archmage Kalec
@@ -395,6 +397,14 @@ _.Zones =
 					},
 				}),
 				q(46327, {	-- Bargaining with Shadows
+					["sourceQuests"] = {
+						45123,	-- Elemental: The Folly of Levia laurence
+						47059,	-- Feral: The Folly of Levia laurence
+						47055,	-- Fire: The Folly of Levia laurence
+						47056,	-- Fury: The Folly of Levia laurence
+						47058,	-- Outlaw: The Folly of Levia laurence
+						47057,	-- Unholy: The Folly of Levia laurence
+					},
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["classes"] = {
 						DRUID,			-- Feral
@@ -405,6 +415,7 @@ _.Zones =
 						WARRIOR,		-- Fury
 					},
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
 				}),
 				q(47018, {	-- Beast Mastery: Rumblings Near Feltotem
 					["classes"] = { HUNTER },
@@ -529,8 +540,18 @@ _.Zones =
 					["provider"] = { "n", 93538 },	-- Dariness the Learned
 				}),
 				q(45125, {	-- Dabbling in the Demonic
-					["classes"] = { 1, 4, 6, 7, 11 },
+					["sourceQuests"] = { 45916 },	-- The Acolyte Imperiled
+					["classes"] = {
+						DRUID,			-- Feral
+						DEATHKNIGHT,	-- Unholy
+						MAGE,			-- Fire
+						ROGUE,			-- Outlaw
+						SHAMAN,			-- Elemental
+						WARRIOR,		-- Fury
+					},
 					["provider"] = { "n", 116714 },	-- Ritssyn Flamescowl
+					["coord"] = { 57.9, 72.6, 629 },
+					["lvl"] = 110,
 				}),
 				q(42477, {	-- Daio the Decrepit
 					["classes"] = { MAGE },
@@ -709,8 +730,18 @@ _.Zones =
 					["provider"] = { "n", 107423 },	-- Archmage Kalec
 				}),
 				q(45917, {	-- Following the Scent
-					["classes"] = { 1, 4, 6, 7, 11 },
+					["sourceQuests"] = { 45125 },	-- Dabbling in the Demonic
+					["classes"] = {
+						DRUID,			-- Feral
+						DEATHKNIGHT,	-- Unholy
+						MAGE,			-- Fire
+						ROGUE,			-- Outlaw
+						SHAMAN,			-- Elemental
+						WARRIOR,		-- Fury
+					},
 					["provider"] = { "n", 116714 },	-- Ritssyn Flamescowl
+					["coord"] = { 57.9, 72.6, 629 },
+					["lvl"] = 110,
 				}),
 				q(44203, {	-- For the Cause
 					["classes"] = { ROGUE },
@@ -750,6 +781,8 @@ _.Zones =
 					["provider"] = { "n", 98092 },	-- Nikki the Gossip
 				}),
 				q(47056, {	-- Fury: The Folly of Levia Laurence
+					["lvl"] = 110,
+					["sourceQuests"] = { 44821 },	-- In Dire Need
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
@@ -1081,15 +1114,15 @@ _.Zones =
 					},
 					["u"] = 40,
 				}),
-				q(45412, {	-- Protection: Aid of the Illidari
-					["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
+				q(45412, {	-- Protection: Aid of the Illidari (Warrior) -- this is still obtainable, confirmed in 8.3
+					["lvl"] = 110,
+					["sourceQuests"] = { 44821 },	-- In Dire Need
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90431 },	-- Archmage Ansirem Runeweaver
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
 					},
-					["u"] = 40,
 				}),
 				q(43470, {	-- Pruning the Garden
 					["classes"] = { ROGUE },
@@ -1301,8 +1334,18 @@ _.Zones =
 					},
 				}),
 				q(45916, {	-- The Acolyte Imperiled
-					["classes"] = { WARRIOR, ROGUE, DEATHKNIGHT, SHAMAN, DRUID },
+					["sourceQuests"] = { 46327 },	-- Bargaining With Shadows
+					["classes"] = {
+						DRUID,			-- Feral
+						DEATHKNIGHT,	-- Unholy
+						MAGE,			-- Fire
+						ROGUE,			-- Outlaw
+						SHAMAN,			-- Elemental
+						WARRIOR,		-- Fury
+					},
 					["provider"] = { "n", 116714 },	-- Ritssyn Flamescowl
+					["coord"] = { 52.7, 59.2, 629 },
+					["lvl"] = 110,
 				}),
 				q(42593, {	-- The Arcane Way
 					["classes"] = { DEMONHUNTER },
