@@ -9,6 +9,8 @@ _.WorldEvents =
 		["coord"] = { 41.4, 73.0, 210 },
 		["maps"] = { 210 },	-- The Cape of Stranglethorn
 		["u"] = 30,
+		["questID"] = 44765,	-- Stranglethorn Fishing Extravaganza
+		["isWorldQuest"] = true, -- Added quest up here for full visibility in /attwq.  Clean up at a later point.
 		["g"] = {
 			i(19807, {	-- Speckled Tastyfish
 				["description"] = "You need 40. Fish from the pools! Good luck!",
@@ -45,6 +47,7 @@ _.WorldEvents =
 						["provider"] = { "n", 15077 },	-- Riggle Bassbait <Fishmaster>
 						["coord"] = { 41.4, 73.0, 210 },
 						["repeatable"] = true,
+						--["isWorldQuest"] = true,
 						["g"] = {
 							un(30, i(19970)),	-- Arcanite Fishing Pole
 							un(30, i(50287)),	-- Boots of the Bay

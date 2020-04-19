@@ -12671,7 +12671,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				{ app.FactionID == Enum.FlightPathFaction.Horde and 875 or 876, 895 },	-- Kul'Tiras or Zandalar, Stormsong Valley
 			};
 			local worldMapIDs = {
-				{ 14 },		-- Arathi Highlands
+				--{ 14 },		-- Arathi Highlands does not need to be included as a separate mapID as it is contained in the the EK mapID
 				--{ 62 },	-- Darkshore does not need to be included as a separate mapID as it is contained in the the Kalimdor mapID
 				{
 					875,	-- Zandalar
@@ -12690,7 +12690,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					}
 				},	
 				{
-					619, -- Broken Isles
+					619, 	-- Broken Isles
 					{
 						{ 630, 5175, { 47063 }},	-- Azsuna
 						{ 650, 5177, { 47063 }},	-- Highmountain
@@ -12719,6 +12719,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						{ 1530, 6490, { 57008 }},	-- Assault: The Warring Clans
 					},
 				},
+				{ 13 },		-- Eastern Kingdoms
 			};
 			local OnUpdateForItem = function(self)
 				for i,o in ipairs(self.g) do
