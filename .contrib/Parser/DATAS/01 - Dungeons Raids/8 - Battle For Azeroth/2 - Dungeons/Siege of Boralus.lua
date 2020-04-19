@@ -9,6 +9,11 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		},
 		["g"] = {
 			n(-34, {	-- World Quests
+				q(52761, {	-- Siege of Boralus: Blood Money
+					["isWorldQuest"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(52771, {	-- Siege of Boralus: Breaking Irons
 					["isWorldQuest"] = true,
 					["races"] = ALLIANCE_ONLY,
