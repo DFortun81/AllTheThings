@@ -1184,8 +1184,8 @@ _.NeverImplemented =
 		q(47088),	-- Brutallus bonus roll
 		q(44502),	-- Calamir killID
 	--	q(),	-- Calamir bonus roll
-	--	q(),	-- Drugon the Frostblood 
-	--	q(),	-- Drugon the Frostblood 
+		q(44503),	-- Drugon the Frostblood killID
+		q(44898),	-- Drugon the Frostblood bonus roll
 	--	q(),	-- Flotsam killID
 	--	q(),	-- Flotsam bonus roll
 		q(44505),	-- Humongris killID
@@ -1201,7 +1201,7 @@ _.NeverImplemented =
 		q(44509),	-- Shar'thos killID
 		q(44904),	-- Shar'thos bonus roll
 		q(47090),	-- Si'vash killID
-	--	q(),	-- Si'vash bonus roll
+		q(47091),	-- Si'vash bonus roll
 		q(44510),	-- The Soultakers killID
 		q(44905),	-- The Soultakers bonus roll
 	--	q(),	-- Withered J'im killID

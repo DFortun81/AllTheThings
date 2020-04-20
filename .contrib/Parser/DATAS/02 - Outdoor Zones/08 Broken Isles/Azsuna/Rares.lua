@@ -104,10 +104,11 @@ _.Zones =
 					},
 				}),
 				n(107266, {	-- Commander Soraax
+					["u"] = 43,	-- as of 8.3, no sign of him or his world quest for a very long time
 					["questID"] = 44673,
 					["coord"] = { 27.8, 51.0, 630 },
 					["g"] = {	
-						i(141871),	-- Soraax's Gauntlets of Command
+						un(2, i(141871)),	-- Soraax's Gauntlets of Command
 					},
 				}), 
 				n(90057,  {	-- Daggerbeak
