@@ -11,7 +11,7 @@ _.GroupFinder =
 			["g"] = {
 				i(112348),	-- Snow-Coated Cloth Cap*
 				i(113758),	-- Snow-Coated Cloth Gloves*
-				i(112367),	-- Snow-Coated Cloth Belt
+				i(112367),	-- Snow-Coated Cloth Belt*
 				i(112355),	-- Snow-Coated Cloth Leggings*
 				i(112352),	-- Winterfrost Leather Cap
 				i(112351),	-- Winterfrost Leather Helm*
@@ -22,13 +22,13 @@ _.GroupFinder =
 				i(112360),	-- Winterfrost Leather Leggings
 				i(112359),	-- Winterfrost Leather Waders
 				i(112349),	-- Icefall Chain Helm
-				i(112350),	-- Icefall Mail Helm*ii
+				i(112350),	-- Icefall Mail Helm*
 				i(113694),	-- Icefall Chain Gloves
 				i(113693),	-- Icefall Mail Gloves
-				i(112364),	-- Icefall Mail Girdle
+				i(112364),	-- Icefall Mail Girdle*
 				i(112363),	-- Icefall Chain Belt
 				i(112358),	-- Icefall Chain Leggings
-				i(112357),	-- Icefall Mail Leggings
+				i(112357),	-- Icefall Mail Leggings*
 				i(112346),	-- Ice-Encrusted Plate Headguard*
 				i(113692),	-- Ice-Encrusted Gauntlets*
 				i(112361),	-- Ice-Encrusted Plate Belt*
