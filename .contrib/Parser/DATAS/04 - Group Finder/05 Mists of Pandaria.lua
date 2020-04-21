@@ -34,7 +34,7 @@ _.GroupFinder =
 				i(113738),	-- Kyparite Chestguard*
 				i(113784),	-- Kyparite Belt
 				i(113782),	-- Kyparite Boots
-				i(113785),	-- Kyparite Girdle
+				i(113785),	-- Kyparite Girdle*		— confirmed by Reaperman on discord on April 20, 2020 (blaze it)
 				i(113729),	-- Kyparite Headguard
 				i(113728),	-- Kyparite Helm*
 				i(113783),	-- Kyparite Stompers*

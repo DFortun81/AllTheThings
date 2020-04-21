@@ -30,7 +30,7 @@ _.GroupFinder =
 				i(113711),	-- Sparkmail Legguards*
 				i(113713),	-- Emberspark Chestplate*
 				i(113780),	-- Emberspark Plate Boots
-				i(113701),	-- Emberspark Plate Bracers
+				i(113701),	-- Emberspark Plate Bracers*	— confirmed by Carbion on discord on April 20, 2020 (blaze it)
 				i(113696),	-- Emberspark Plate Headguard
 				i(113695),	-- Emberspark Plate Helm
 				i(113707),	-- Emberspark Plate Leggings*
