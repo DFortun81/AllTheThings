@@ -32,7 +32,7 @@ _.GroupFinder =
 				i(113780),	-- Emberspark Plate Boots
 				i(113701),	-- Emberspark Plate Bracers*	— confirmed by Carbion on discord on April 20, 2020 (blaze it)
 				i(113696),	-- Emberspark Plate Headguard
-				i(113695),	-- Emberspark Plate Helm
+				i(113695),	-- Emberspark Plate Helm*		— confirmed by Carbion on discord on April 21, 2020
 				i(113707),	-- Emberspark Plate Leggings*
 				i(113781),	-- Emberspark Plate Sabatons*
 				i(113702),	-- Emberspark Plate Wristguards
