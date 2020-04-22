@@ -1183,7 +1183,7 @@ _.NeverImplemented =
 		q(47085),	-- Brutallus killID
 		q(47088),	-- Brutallus bonus roll
 		q(44502),	-- Calamir killID
-	--	q(),	-- Calamir bonus roll
+		q(44897),	-- Calamir bonus roll
 		q(44503),	-- Drugon the Frostblood killID
 		q(44898),	-- Drugon the Frostblood bonus roll
 	--	q(),	-- Flotsam killID

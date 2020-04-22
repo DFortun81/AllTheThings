@@ -1113,10 +1113,15 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 293568 },	-- Wanted Poster
 				}),
-				q(51139, {	-- WANTED: Tojek
+				q(51139, {	-- WANTED: Tojek (A)
 					["coord"] = { 62.1, 41.0, 863 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 287327 },	-- Scouting Report
+				}),
+				q(51089, {	-- WANTED: Tojek (H)
+					["coord"] = { 39.5, 79.9, 863 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 287232 },	-- Scouting Report
 				}),
 				q(51244, {	-- What Rots Beneath
 					["provider"] = { "n", 140656 },	-- Rokhan
