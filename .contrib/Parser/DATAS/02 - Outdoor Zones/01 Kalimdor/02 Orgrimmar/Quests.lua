@@ -878,10 +878,7 @@ _.Zones =
 					["provider"] = { "n", 44725 },	-- Sunwalker Atohmo
 					["coord"] = { 45.2, 53.6, 85 },
 					["sourceQuest"] = 27304,	-- Follow the Sun
-					["races"] = {
-						6,	-- Tauren
-						10,	-- Blood Elf
-					},
+					["races"] = { TAUREN },
 					["classes"] = { PALADIN },
 					["lvl"] = 20,
 					["g"] = {
