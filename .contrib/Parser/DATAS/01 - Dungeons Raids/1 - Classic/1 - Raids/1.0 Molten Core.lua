@@ -644,6 +644,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(19144),	-- Sabatons of the Flamewalker
 				i(18821),	-- Quick Strike Ring
 				i(18820),	-- Talisman of Ephemeral Power
+				un(2, i(17782)),	-- Talisman of Binding Shard
 			})),
 			cr(12264, e(1523, {	-- Shazzrah
 				i(18878),	-- Sorcerous Dagger

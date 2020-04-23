@@ -1040,6 +1040,14 @@ _.NeverImplemented =
 			un(1, i(166410)),	-- Flaskzertauren Mail Shoulderguards
 			un(1, i(12105)),	-- Pridemail Leggings
 			un(1, i(37420)),	-- Sharkproof Boots
+			un(1, i(153381)),	-- aiguille-Scaler's wristguards
+			un(1, i(153382)),	-- aiguille-Scaler's gloves
+			un(1, i(153383)),	-- aiguille-Scaler's leggings
+			un(1, i(153384)),	-- aiguille-Scaler's coif
+			un(1, i(153385)),	-- aiguille-Scaler's boosts
+			un(1, i(153386)),	-- aiguille-Scaler's girdle
+			un(1, i(153387)),	-- aiguille-Scaler's chestguard
+			un(1, i(153388)),	-- aiguille-Scaler's spaulders
 			un(1, i(54551)),	-- Unknown
 			un(1, i(56492)),	-- Unknown
 			un(1, i(65744)),	-- Unknown
@@ -1587,6 +1595,10 @@ _.NeverImplemented =
 			un(1, i(108820)),	-- Unknown
 			un(1, i(108821)),	-- Unknown
 			un(1, i(109277)),	-- Unknown
+			un(1, i(174050)),	-- Corrupted Ring - revel in violence
+			un(1, i(174051)),	-- Corrupted Ring - spontaneous fury
+			un(1, i(174056)),	-- Corrupted Ring - face the truth
+			un(1, i(174057)),	-- Corrupted Ring - mesmerizing
 			un(1, i(141907)),	-- Arena Victory Bonus
 			un(1, i(143604)),	-- rating min item level reward
 			un(1, i(144455)),	-- rating min item level reward
