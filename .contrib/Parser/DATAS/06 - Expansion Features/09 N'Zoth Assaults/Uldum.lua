@@ -1253,7 +1253,8 @@ _.ExpansionFeatures =
 			n(-10072, {	-- N'Zoth Assault
 				n(-4,	{	-- Achievements
 					ach(14159, {	-- Combating the Corruption
-						crit(1, {		-- Corrupted Acolyte slain
+						crit(1,  {		-- Corrupted Acolyte slain
+							["description"] = "Shares a spawn with Acolyte of N'Zoth.",
 							["coords"] = {
 								{ 49.5, 39.9, 1527 },
 								{ 51.2, 73.2, 1527 },
@@ -1268,7 +1269,8 @@ _.ExpansionFeatures =
 								{ 53.8, 43.1, 1527 },
 							},
 						}),
-						crit(2, {		-- Corrupted Assassin slain
+						crit(2,  {		-- Corrupted Assassin slain
+							["description"] = "Shares a spawn with Black Empire Assassin.",
 							["coords"] = {
 								{ 51.7, 71.1, 1527 },
 								{ 50.7, 72.3, 1527 },
@@ -1285,7 +1287,8 @@ _.ExpansionFeatures =
 								{ 50.0, 71.7, 1527 },
 							},
 						}),
-						crit(3,	{		-- Corrupted Beheader slain
+						crit(3,	 {		-- Corrupted Beheader slain
+							["description"] = "Shares a spawn with Black Empire Beheader.",
 							["coords"] = {
 								{ 58.4, 42.8, 1527 },
 								{ 52.6, 46.4, 1527 },
@@ -1297,7 +1300,8 @@ _.ExpansionFeatures =
 								{ 49.1, 84.7, 1527 },
 							},
 						}),
-						crit(4,	{		-- Corrupted Bloodseeker slain -- TODO:: Add coords
+						crit(4,	 {		-- Corrupted Bloodseeker slain -- TODO:: Add coords
+							["description"] = "This doesn't appear to share a spawn with any other mob, but it's an elite shark that spawns off the southern coast of Uldum.",
 							--[[["coords"] = {
 								{ 35.1, 17.3, 249 },
 								{ 35.1, 17.3, 249 },
@@ -1307,8 +1311,8 @@ _.ExpansionFeatures =
 								{ 35.1, 17.3, 249 },
 							},]]
 						}),
-						crit(5,	{		-- Corrupted Bonestripper slain
-							["description"] = "Found in most water locations.",
+						crit(5,	 {		-- Corrupted Bonestripper slain
+							["description"] = "Shares a spawn with N'Zoth Bonestripper.  Found in most water locations.",
 							["coords"] = {
 								{ 55.7, 43.8, 1527 },
 								{ 57.5, 17.7, 1527 },
@@ -1318,8 +1322,8 @@ _.ExpansionFeatures =
 								{ 59.6, 60.8, 1527 },
 							},
 						}),
-						crit(6,	{		-- Corrupted Despoiler slain
-							["description"] = "Shares a spawn with Mind Eater.",
+						crit(6,	 {		-- Corrupted Despoiler slain
+							["description"] = "Shares a spawn with Faceless Despoiler and Mind Eater.  Can also result in Corrupted Mind Eater spawning.",
 							["coords"] = {
 								{ 59.5, 47.4, 1527 },
 								{ 59.1, 42.7, 1527 },
@@ -1330,7 +1334,8 @@ _.ExpansionFeatures =
 								{ 55.6, 24.4, 1527 },
 							},
 						}),
-						crit(7,	{		-- Corrupted Dominator slain
+						crit(7,	 {		-- Corrupted Dominator slain
+							["description"] = "Shares a spawn with Faceless Dominator.",
 							["coords"] = {
 								{ 63.0, 71.0, 1527 },
 								{ 63.8, 72.8, 1527 },
@@ -1340,7 +1345,8 @@ _.ExpansionFeatures =
 								{ 56.5, 42.1, 1527 },
 							},
 						}),
-						crit(8,	{		-- Corrupted Doomsayer slain
+						crit(8,	 {		-- Corrupted Doomsayer slain
+							["description"] = "Shares a spawn with K'thir Doomsayer.",
 							["coords"] = {
 								{ 60.8, 71.5, 1527 },
 								{ 60.2, 71.3, 1527 },
@@ -1352,7 +1358,8 @@ _.ExpansionFeatures =
 								{ 63.5, 70.0, 1527 },
 							},
 						}),
-						crit(9,	{		-- Corrupted Fleshbeast slain
+						crit(9,	 {		-- Corrupted Fleshbeast slain
+							["description"] = "Shares a spawn with Burbling Fleshbeast.",
 							["coords"] = {
 								{ 59.5, 48.6, 1527 },
 								{ 49.0, 35.5, 1527 },
@@ -1363,6 +1370,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						crit(10, {		-- Corrupted Jailer slain
+							["description"] = "Shares a spawn with Faceless Jailer.",
 							["coords"] = {
 								{ 60.8, 71.5, 1527 },
 								{ 62.1, 74.7, 1527 },
@@ -1371,7 +1379,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						crit(11, {		-- Corrupted Mind Eater slain
-							["description"] = "Shares a spawn with Faceless Despoiler.",
+							["description"] = "Shares a spawn with Mind Eater and Faceless Despoiler.  Can also result in Corrupted Despoiler spawning.",
 							["coords"] = {
 								{ 59.5, 47.4, 1527 },
 								{ 59.1, 42.7, 1527 },
@@ -1383,6 +1391,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						crit(12, {		-- Corrupted Neferset Guard slain
+							["description"] = "Shares a spawn with Voidwarped Neferset and Voidwarped Neferset High Guard.",
 							["coords"] = {
 								{ 50.9, 82.9, 1527 },
 								{ 51.6, 81.7, 1527 },
@@ -1399,11 +1408,13 @@ _.ExpansionFeatures =
 							},
 						}),
 						crit(13, {		-- Corrupted Observer slain
+							["description"] = "Shares a spawn with Foul Observer.",
 							["coords"] = {
 								{ 55.4, 51.0, 1527 },
 							},
 						}),
 						crit(14, {		-- Corrupted Putrefaction slain
+							["description"] = "Shares a spawn with Oozing Putrefaction.",
 							["coords"] = {
 								{ 59.3, 41.4, 1527 },
 								{ 60.4, 39.9, 1527 },
@@ -1413,6 +1424,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						crit(15, {		-- Corrupted Summoner slain
+							["description"] = "Shares a spawn with Black Empire Conjurers.",
 							["coords"] = {
 								{ 58.9, 46.2, 1527 },
 								{ 60.3, 50.9, 1527 },
@@ -1431,6 +1443,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						crit(16, {		-- Corrupted Thaumaturge slain
+							["description"] = "Shares a spawn with Black Empire Thaumaturge.",
 							["coords"] = {
 								{ 51.9, 70.3, 1527 },
 								{ 50.5, 81.8, 1527 },
@@ -1441,6 +1454,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						crit(17, {		-- Corrupted Thoughtstealer slain
+							["description"] = "Shares a spawn with K'thir Thoughtstealer.",
 							["coords"] = {
 								{ 62.7, 75.4, 1527 },
 								{ 61.0, 72.0, 1527 },
@@ -1450,8 +1464,11 @@ _.ExpansionFeatures =
 								{ 62.9, 74.3, 1527 },
 							},
 						}),
-						crit(18),		-- Corrupted Tormentor slain -- TODO:: Add coords
+						crit(18, {		-- Corrupted Tormentor slain -- TODO:: Add coords
+							["description"] = "Shares a spawn with Tentacle Tormentors, found off the southern coast of Uldum.",
+						}),
 						crit(19, {		-- Corrupted Watcher slain
+							["description"] = "Shares a spawn with Voidwarped Watcher.",
 							["coords"] = {
 								{ 61.8, 73.0, 1527 },
 								{ 63.4, 72.9, 1527 },

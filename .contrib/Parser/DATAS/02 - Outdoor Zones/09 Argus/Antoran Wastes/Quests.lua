@@ -114,7 +114,6 @@ _.Zones =
 				q(38805),	-- Ondri
 				q(48042),	-- Order of Operations
 				q(49031),	-- Out With The Inquisitors
-				q(48973),	-- Paragon of Argussian Reach
 				q(48974),	-- Paragon of the Army of the Light
 				q(48036),	-- Precision Perfected
 				q(48201),	-- Reinforce Light's Purchase

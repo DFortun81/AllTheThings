@@ -81,6 +81,29 @@ _.NeverImplemented =
 		-------------------
 		--    VARIOUS    --
 		-------------------
+		-- WEIRD SHIT
+		-- all of these trigger when you get a paragon box, i guess?  it's not the *first* paragon box for the character, because i had some legion paragons unlocked on the character it happened on (maybe added later, but some of these questIDs are pretty old).  it looks like a quest to introduce you to the concept of paragon rewards, and it triggers all of these at once, BFA + legion at the same time.  not sure the requirements to actually get one of the quests in the first place, and completing one completes them all, so it doesn't seem worth it to list them in the zone files.
+		q(46794),	-- Paragon of the Court
+		q(46796),	-- Paragon of Highmountain
+		q(46797),	-- Paragon of the Dreamweavers
+		q(46798),	-- Paragon of the Valarjar
+		q(46799),	-- Paragon of the Nightfallen
+		q(46800),	-- Paragon of the Wardens
+		q(46802),	-- Paragon of the Legionfall Armies
+		q(48973),	-- Paragon of Argussian Reach
+		q(48974),	-- Paragon of the Army of the Light
+		q(54610),	-- Paragon of the Tortollan Seekers
+		q(54611),	-- Paragon of the Champions of Azeroth
+		q(54618),	-- Paragon of the 7th Legion
+		q(54626),	-- Paragon of the Honorbound
+		q(54627),	-- Paragon of the Order of Embers
+		q(54628),	-- Paragon of the Storm's Wake
+		q(54629),	-- Paragon of the Proudmoore Admiralty
+		q(54630),	-- Paragon of Talanji's Expedition
+		q(54631),	-- Paragon of the Voldunai
+		q(54632),	-- Paragon of the Zandalari Empire
+		
+		
 		q(47954),	-- Tracking Quest (Triggered when using the "Surviving Kalimdor" toy to unlock flightpaths)
 		q(47956),	-- Tracking Quest (triggered when using "To Modernize the Provisioning of Azeroth" toy to unlock EK flight paths)
 		q(50659),	-- Silithus - talk to Zidormi to phase into the past version of the map
@@ -929,7 +952,6 @@ _.NeverImplemented =
 		q(40612),	-- 7.0 Highmountain - Vignette - Amateur Hunters - Tracking Quest Credit - See Treasure (JAP) - NYI. Triggered after killing Irewing during Scout It Out
 		q(46775),	-- Campaign Cooldown - triggers after turning in "Champions of Legionfall" during the legionfall campaign
 		q(47133),	-- Rare Mob Daily Bonus. Triggered after killing Doombringer Zar'thoz. Possible killID?
-		q(48974),	-- Paragon of the Army of the Light — looks like this is an unused version and 48977 is the one that pops in-game
 		q(44455),	-- Downfall tracking — in Suramar, possibly tied to a Demon Hunter artifact?
 		q(41694),	-- World Quests Available — triggers when turning in "Uniting the Isles," along with the original "have all friendly reps" and present "just be 110" versions
 		q(46735),	-- Contribute to Command Center — during "Begin Construction" quest, not sure if that matters
@@ -957,7 +979,6 @@ _.NeverImplemented =
 		q(45855),	-- Tank Trait Complete — triggered when raising weapon during "A Gift From the Six," #45863, on vengeance DH
 		q(43511),	-- Kalec Arrives — triggered when turning in "The Power Within" at Azurewing Repose (starting Balance of Power)
 		q(45302),	-- 7.1.5 Class Hall - Brawlers Missions - Has Completed Any Brawlers Mission with Overmax - Tracking Quest — triggered when doing my first brawl for BFA
-		q(48973),	-- Unused Paragon quest, it seems the active one is #48976, "Supplies From the Argussian Reach"
 		q(48974),	-- Unused Paragon quest, it seems the active one is #48977, "Supplies From the Army of the Light"
 		q(40584),	-- Azsuna - FLAG - Witnessed Drake Lift Crystal - triggers shortly after arriving in Azurewing Repose when turning in "Journey to the Repose"
 		q(46709),	-- Broken Isles - Ready for Crafted Legendary flag
@@ -1483,6 +1504,7 @@ _.NeverImplemented =
 		q(56684),	-- Flag used to track if 160489 (340 engineering goggles) had been crafted. This identifies if the recipe for rank 2 can drop
 		q(49037),	-- triggered after getting achievement The Reining Champion
 		q(55494),	-- Torcali quest of the day completed
+		q(58881),	-- triggered when i fed the uldum friendly alpaca for the last time (not with the quest that gives the mount afterward, but the final feed)
 
 		q(54704),	-- War Campaign - triggered when turning in "Time for War"
 		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track

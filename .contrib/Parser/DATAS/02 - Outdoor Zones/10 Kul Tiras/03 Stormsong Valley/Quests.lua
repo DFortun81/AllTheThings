@@ -1002,10 +1002,6 @@ _.Zones =
 				q(50815, {	-- Orcs Versus Humans
 					["u"] = 1,	-- Never Available
 				}),
-				q(54628, {	-- Paragon of the Storm's Wake
-					["races"] = ALLIANCE_ONLY,
-					["u"] = 1,	-- Never Available
-				}),
 				q(50679, {	-- Piercing the Shield
 					["sourceQuests"] = {
 						50644,	-- Facing the Invaders

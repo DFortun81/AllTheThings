@@ -277,6 +277,7 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 					}),
 					n(157176, {	-- The Forgotten
+						["description"] = "Spawns on a platform high up in the air.",
 						["questID"] = 57342,
 						["coord"] = { 52.0, 41.7, 1530 },
 						["isDaily"] = true,
@@ -1088,21 +1089,33 @@ _.ExpansionFeatures =
 			n(-10072, {	-- N'Zoth Assault
 				n(-4,   {	-- Achievements
 					ach(14159, {	-- Combating the Corruption -- TODO::  Add coords. -- Is attaching questID's to these really the best way to track the quest?
-						crit(1),		-- Corrupted Acolyte slain
-						crit(3),		-- Corrupted Beheader slain
-						crit(5,	{		-- Corrupted Bonestripper slain
-							["description"] = "Found in most water locations.",
+						crit(1,  {		-- Corrupted Acolyte slain
+							["description"] = "Shares a spawn with Acolyte of N'Zoth.",
 						}),
-						crit(6,	{		-- Corrupted Despoiler slain
-							["description"] = "Shares a spawn with Mind Eater.",
+						crit(3,  {		-- Corrupted Beheader slain
+							["description"] = "Shares a spawn with Black Empire Beheader.",
 						}),
-						crit(8),		-- Corrupted Doomsayer slain
-						crit(9),		-- Corrupted Fleshbeast slain
+						crit(5,	 {		-- Corrupted Bonestripper slain
+							["description"] = "Shares a spawn with N'Zoth Bonestripper.  Found in most water locations.",
+						}),
+						crit(6,	 {		-- Corrupted Despoiler slain
+							["description"] = "Shares a spawn with Faceless Despoiler and Mind Eater.  Can also result in Corrupted Mind Eater spawning.",
+						}),
+						crit(8,  {		-- Corrupted Doomsayer slain
+							["description"] = "Shares a spawn with K'thir Doomsayer.",
+						}),
+						crit(9,  {		-- Corrupted Fleshbeast slain
+							["description"] = "Shares a spawn with Burbling Fleshbeast.",
+						}),
 						crit(11, {		-- Corrupted Mind Eater slain
-							["description"] = "Shares a spawn with Faceless Despoiler.",
+							["description"] = "Shares a spawn with Mind Eater and Faceless Despoiler.  Can also result in Corrupted Despoiler spawning.",
 						}),
-						crit(13),		-- Corrupted Observer slain
-						crit(16),		-- Corrupted Thaumaturge slain
+						crit(13, {		-- Corrupted Observer slain
+							["description"] = "Shares a spawn with Foul Observer.",
+						}),
+						crit(16, {		-- Corrupted Thaumaturge slain
+							["description"] = "Shares a spawn with Black Empire Thaumaturge.",
+						}),
 					}),
 					ach(14154, {	-- Defend the Vale
 						crit(1),		-- Assault: The Warring Clans
