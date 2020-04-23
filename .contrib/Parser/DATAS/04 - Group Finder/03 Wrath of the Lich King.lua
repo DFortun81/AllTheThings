@@ -24,7 +24,7 @@ _.GroupFinder =
 				i(112349),	-- Icefall Chain Helm
 				i(112350),	-- Icefall Mail Helm*
 				i(113694),	-- Icefall Chain Gloves
-				i(113693),	-- Icefall Mail Gloves
+				i(113693),	-- Icefall Mail Gloves					— confirmed by user on discord on April 22, 2020
 				i(112364),	-- Icefall Mail Girdle*
 				i(112363),	-- Icefall Chain Belt
 				i(112358),	-- Icefall Chain Leggings
