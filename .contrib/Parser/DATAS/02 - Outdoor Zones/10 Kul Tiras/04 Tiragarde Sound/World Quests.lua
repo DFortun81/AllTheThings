@@ -80,10 +80,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(53313, {	-- Rough Monelite
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(49464, {	-- Saurolisk Tails
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -548,6 +544,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(53313, {	-- Rough Monelite
+						["isWorldQuest"] = true,
+						["lvl"] = 120,
+						["requireSkill"] = MINING,
 					}),
 					q(51656, {	-- Saurolisk Tamer Mugg
 						["lvl"] = 120,
