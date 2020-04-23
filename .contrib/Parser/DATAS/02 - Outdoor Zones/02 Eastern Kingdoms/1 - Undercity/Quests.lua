@@ -192,11 +192,8 @@ _.Zones =
 					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
 					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
 					["isBreadcrumb"] = true,
-					["races"] = {
-						6,	-- Tauren
-						10,	-- Blood Elf
-					},
-					["classes"] = { 2 },	-- Paladin
+					["races"] = { TAUREN },
+					["classes"] = { PALADIN },
 					["lvl"] = 20,
 				}),
 				q(737,   {	-- Forbidden Knowledge
