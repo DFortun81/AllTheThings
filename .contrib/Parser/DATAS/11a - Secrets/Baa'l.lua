@@ -23,11 +23,8 @@ _.Secrets =
 			o(293849, {	-- Step 1: Conspicuous Note
 				["model"] = 1661948,
 				["questID"] = 52819,
-				["coords"] = {
-					{ 46.3, 53.9, 863 },	-- Bridge
-					{ 51.8, 59.0, 863 },	-- Conspicuous Note
-				},
-				["description"] = "|cFFFFFFFFStep 1:|r Your journey begins in Nazmir...  The note reads: \"Begin at the beginning\"",
+				["coord"] = { 51.8, 59.0, 863 },	-- Conspicuous Note
+				["description"] = "|cFFFFFFFFStep 1:|r Head to Nazmir.  The note is high up on the side of the temple in the middle of the zone.  If you don't have flying, you can access the top of the temple via a bridge that starts at |cFFFFFFFF46.3, 53.9|r.\r\rThe note reads: \"Begin at the beginning\"\r",
 			}),
 			o(293837, {	-- Step 2: First Ordinary Pebble
 				["model"] = 1068320,
@@ -35,7 +32,7 @@ _.Secrets =
 				["questID"] = 52809,
 				["coord"] = { 37.5, 71.6, 646 },
 				["sourceQuest"] = 52819,	-- Step 1: Conspicuous Note
-				["description"] = "|cFFFFFFFFStep 2:|r Broken Shore",-- |cFFFFFFFFStep 2:|r Head to |cFFFFD700The Broken Shore|r, and interact with the pebble on the table in next to |cFFFFD700Drak'Thul|r. If you can't click the pebble, interact with |cFFFFD700Drak'Thul|r so he turns away from the table, or use an |cFFFFD700invsibility potion|r.",  -- Pebble txt "<An ordinary pebble, unremarkable in every way.>
+				["description"] = "|cFFFFFFFFStep 2:|r Head to Broken Shore.  At the coordinates provided, there is a small stone table with various non-interactable objects — some candles, parchment, a quill, a purple crystal ball, and some scattered grey pebbles.  One of the pebbles is pale, almost the same color as the table, and it's the only thing on the table you can interact with.  You may need to zoom in to see it.\r\rThe text reads: \"<An ordinary pebble, unremarkable in every way.>\"\r",
 			}),
 			o(293838, {	-- Step 3: Second Ordinary Pebble
 				["model"] = 1068320,
@@ -46,7 +43,7 @@ _.Secrets =
 					{ 44.7, 38.5, 1161 },	-- Ordinary Pebble
 				},
 				["sourceQuest"] = 52809,	-- Step 3: Second Ordinary Pebble
-				["description"] = "|cFFFFFFFFStep 3:|r Boralus",	
+				["description"] = "|cFFFFFFFFStep 3:|r Head to Boralus.  ",
 			}),
 			o(293839, {	-- Step 4: Third Ordinary Pebble
 				["model"] = 1068320,

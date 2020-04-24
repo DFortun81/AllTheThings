@@ -176,30 +176,38 @@ _.Instances = { tier(7, {	-- Legion
 							i(139262),	-- Reverberating Femur
 							i(139261),	-- Tuft of Ironfur
 						})),
-						cr(102679, e(1704, {	-- Dragons of Nightmare (Ysondre)
-							ach(10819, crit(2)),	-- Tormented Guardians / Dragons of Nightmare
-							i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1]
-							i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2]
-							i(139562, {	-- Breath of the Undying Serpent
-								artifact(519),	-- Mistweaver Hidden Artifact Appearance
-							}),
-							i(136903),	-- Nightmare Whelpling (PET!)
-							i(139205),	-- Cowl of Fright
-							i(138215),	-- Dreamscale Inlaid Vestments
-							i(138216),	-- Horror Inscribed Chestguard
-							i(138218),	-- Dragonbone Wristclamps
-							i(138219),	-- Dragonspur Wristguards
-							i(138214),	-- Gauntlets of the Demented Mind
-							i(138212),	-- Handwraps of Delusional Power
-							i(138211),	-- Malignant Sabatons
-							i(138220),	-- Mindrend Band
-							i(138225),	-- Phantasmal Echo
-							i(138224),	-- Unstable Horrorslime
-							i(138222),	-- Vial of Nightmare Fog
-							i(138228),	-- Bioluminescent Mushroom
-							i(138227),	-- Entrancing Stone
-							i(138226),	-- Nightmare Engulfed Jewel
-						})),
+						e(1704, {	-- Dragons of Nightmare
+							["crs"] = {
+								102679,	-- Ysondre
+								102681,	-- Taerar
+								102682,	-- Lethon
+								102683,	-- Emeriss
+							},
+							["g"] = {
+								ach(10819, crit(2)),	-- Tormented Guardians / Dragons of Nightmare
+								i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1]
+								i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2]
+								i(139562, {	-- Breath of the Undying Serpent
+									artifact(519),	-- Mistweaver Hidden Artifact Appearance
+								}),
+								i(136903),	-- Nightmare Whelpling (PET!)
+								i(139205),	-- Cowl of Fright
+								i(138215),	-- Dreamscale Inlaid Vestments
+								i(138216),	-- Horror Inscribed Chestguard
+								i(138218),	-- Dragonbone Wristclamps
+								i(138219),	-- Dragonspur Wristguards
+								i(138214),	-- Gauntlets of the Demented Mind
+								i(138212),	-- Handwraps of Delusional Power
+								i(138211),	-- Malignant Sabatons
+								i(138220),	-- Mindrend Band
+								i(138225),	-- Phantasmal Echo
+								i(138224),	-- Unstable Horrorslime
+								i(138222),	-- Vial of Nightmare Fog
+								i(138228),	-- Bioluminescent Mushroom
+								i(138227),	-- Entrancing Stone
+								i(138226),	-- Nightmare Engulfed Jewel
+							},
+						}),
 						cr(104636, e(1750, {	-- Cenarius
 							ach(10819, crit(3)),	-- Tormented Guardians / Cenarius
 							i(127934),	-- Recipe: Spirit Cauldron [Rank 2]
@@ -401,31 +409,39 @@ _.Instances = { tier(7, {	-- Legion
 					i(139262),	-- Reverberating Femur
 					i(139261),	-- Tuft of Ironfur
 				})),
-				cr(102679, e(1704, {	-- Dragons of Nightmare (Ysondre)
-					ach(10663),	-- Imagined Dragons World Tour
-					ach(10819, crit(2)),	-- Tormented Guardians / Dragons of Nightmare
-					i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1]
-					i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2]
-					i(139562, {	-- Breath of the Undying Serpent
-						artifact(519),	-- Mistweaver Hidden Artifact Appearance
-					}),
-					i(136903),	-- Nightmare Whelpling (PET!)
-					i(139205),	-- Cowl of Fright
-					i(138215),	-- Dreamscale Inlaid Vestments
-					i(138216),	-- Horror Inscribed Chestguard
-					i(138218),	-- Dragonbone Wristclamps
-					i(138219),	-- Dragonspur Wristguards
-					i(138214),	-- Gauntlets of the Demented Mind
-					i(138212),	-- Handwraps of Delusional Power
-					i(138211),	-- Malignant Sabatons
-					i(138220),	-- Mindrend Band
-					i(138225),	-- Phantasmal Echo
-					i(138224),	-- Unstable Horrorslime
-					i(138222),	-- Vial of Nightmare Fog
-					i(138228),	-- Bioluminescent Mushroom
-					i(138227),	-- Entrancing Stone
-					i(138226),	-- Nightmare Engulfed Jewel
-				})),
+				e(1704, {	-- Dragons of Nightmare
+					["crs"] = {
+						102679,	-- Ysondre
+						102681,	-- Taerar
+						102682,	-- Lethon
+						102683,	-- Emeriss
+					},
+					["g"] = {
+						ach(10663),	-- Imagined Dragons World Tour
+						ach(10819, crit(2)),	-- Tormented Guardians / Dragons of Nightmare
+						i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1]
+						i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2]
+						i(139562, {	-- Breath of the Undying Serpent
+							artifact(519),	-- Mistweaver Hidden Artifact Appearance
+						}),
+						i(136903),	-- Nightmare Whelpling (PET!)
+						i(139205),	-- Cowl of Fright
+						i(138215),	-- Dreamscale Inlaid Vestments
+						i(138216),	-- Horror Inscribed Chestguard
+						i(138218),	-- Dragonbone Wristclamps
+						i(138219),	-- Dragonspur Wristguards
+						i(138214),	-- Gauntlets of the Demented Mind
+						i(138212),	-- Handwraps of Delusional Power
+						i(138211),	-- Malignant Sabatons
+						i(138220),	-- Mindrend Band
+						i(138225),	-- Phantasmal Echo
+						i(138224),	-- Unstable Horrorslime
+						i(138222),	-- Vial of Nightmare Fog
+						i(138228),	-- Bioluminescent Mushroom
+						i(138227),	-- Entrancing Stone
+						i(138226),	-- Nightmare Engulfed Jewel
+					},
+				}),
 				cr(104636, e(1750, {	-- Cenarius
 					ach(10772, {	-- Use the Force(s)
 						crit(1),	-- Dryads Uncleansed
@@ -631,31 +647,39 @@ _.Instances = { tier(7, {	-- Legion
 					i(139262),	-- Reverberating Femur
 					i(139261),	-- Tuft of Ironfur
 				})),
-				cr(102679, e(1704, {	-- Dragons of Nightmare (Ysondre)
-					ach(10663),	-- Imagined Dragons World Tour
-					ach(10819, crit(2)),	-- Tormented Guardians / Dragons of Nightmare
-					i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1]
-					i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2]
-					i(139562, {	-- Breath of the Undying Serpent
-						artifact(519),	-- Mistweaver Hidden Artifact Appearance
-					}),
-					i(136903),	-- Nightmare Whelpling (PET!)
-					i(139205),	-- Cowl of Fright
-					i(138215),	-- Dreamscale Inlaid Vestments
-					i(138216),	-- Horror Inscribed Chestguard
-					i(138218),	-- Dragonbone Wristclamps
-					i(138219),	-- Dragonspur Wristguards
-					i(138214),	-- Gauntlets of the Demented Mind
-					i(138212),	-- Handwraps of Delusional Power
-					i(138211),	-- Malignant Sabatons
-					i(138220),	-- Mindrend Band
-					i(138225),	-- Phantasmal Echo
-					i(138224),	-- Unstable Horrorslime
-					i(138222),	-- Vial of Nightmare Fog
-					i(138228),	-- Bioluminescent Mushroom
-					i(138227),	-- Entrancing Stone
-					i(138226),	-- Nightmare Engulfed Jewel
-				})),
+				e(1704, {	-- Dragons of Nightmare
+					["crs"] = {
+						102679,	-- Ysondre
+						102681,	-- Taerar
+						102682,	-- Lethon
+						102683,	-- Emeriss
+					},
+					["g"] = {
+						ach(10663),	-- Imagined Dragons World Tour
+						ach(10819, crit(2)),	-- Tormented Guardians / Dragons of Nightmare
+						i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1]
+						i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2]
+						i(139562, {	-- Breath of the Undying Serpent
+							artifact(519),	-- Mistweaver Hidden Artifact Appearance
+						}),
+						i(136903),	-- Nightmare Whelpling (PET!)
+						i(139205),	-- Cowl of Fright
+						i(138215),	-- Dreamscale Inlaid Vestments
+						i(138216),	-- Horror Inscribed Chestguard
+						i(138218),	-- Dragonbone Wristclamps
+						i(138219),	-- Dragonspur Wristguards
+						i(138214),	-- Gauntlets of the Demented Mind
+						i(138212),	-- Handwraps of Delusional Power
+						i(138211),	-- Malignant Sabatons
+						i(138220),	-- Mindrend Band
+						i(138225),	-- Phantasmal Echo
+						i(138224),	-- Unstable Horrorslime
+						i(138222),	-- Vial of Nightmare Fog
+						i(138228),	-- Bioluminescent Mushroom
+						i(138227),	-- Entrancing Stone
+						i(138226),	-- Nightmare Engulfed Jewel
+					},
+				}),
 				cr(104636, e(1750, {	-- Cenarius
 					ach(10772, {	-- Use the Force(s)
 						crit(1),	-- Dryads Uncleansed
@@ -867,32 +891,40 @@ _.Instances = { tier(7, {	-- Legion
 					i(139262),	-- Reverberating Femur
 					i(139261),	-- Tuft of Ironfur
 				})),
-				cr(102679, e(1704, {	-- Dragons of Nightmare (Ysondre)
-					ach(10663),	-- Imagined Dragons World Tour
-					ach(10825),	-- Mythic: Dragons of Nightmare
-					ach(10819, crit(2)),	-- Tormented Guardians / Dragons of Nightmare
-					i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1]
-					i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2]
-					i(139562, {	-- Breath of the Undying Serpent
-						artifact(519),	-- Mistweaver Hidden Artifact Appearance
-					}),
-					i(136903),	-- Nightmare Whelpling (PET!)
-					i(139205),	-- Cowl of Fright
-					i(138215),	-- Dreamscale Inlaid Vestments
-					i(138216),	-- Horror Inscribed Chestguard
-					i(138218),	-- Dragonbone Wristclamps
-					i(138219),	-- Dragonspur Wristguards
-					i(138214),	-- Gauntlets of the Demented Mind
-					i(138212),	-- Handwraps of Delusional Power
-					i(138211),	-- Malignant Sabatons
-					i(138220),	-- Mindrend Band
-					i(138225),	-- Phantasmal Echo
-					i(138224),	-- Unstable Horrorslime
-					i(138222),	-- Vial of Nightmare Fog
-					i(138228),	-- Bioluminescent Mushroom
-					i(138227),	-- Entrancing Stone
-					i(138226),	-- Nightmare Engulfed Jewel
-				})),
+				e(1704, {	-- Dragons of Nightmare
+					["crs"] = {
+						102679,	-- Ysondre
+						102681,	-- Taerar
+						102682,	-- Lethon
+						102683,	-- Emeriss
+					},
+					["g"] = {
+						ach(10663),	-- Imagined Dragons World Tour
+						ach(10825),	-- Mythic: Dragons of Nightmare
+						ach(10819, crit(2)),	-- Tormented Guardians / Dragons of Nightmare
+						i(139638),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 1]
+						i(137750),	-- Vantus Rune Technique: Dragons of Nightmare [Rank 2]
+						i(139562, {	-- Breath of the Undying Serpent
+							artifact(519),	-- Mistweaver Hidden Artifact Appearance
+						}),
+						i(136903),	-- Nightmare Whelpling (PET!)
+						i(139205),	-- Cowl of Fright
+						i(138215),	-- Dreamscale Inlaid Vestments
+						i(138216),	-- Horror Inscribed Chestguard
+						i(138218),	-- Dragonbone Wristclamps
+						i(138219),	-- Dragonspur Wristguards
+						i(138214),	-- Gauntlets of the Demented Mind
+						i(138212),	-- Handwraps of Delusional Power
+						i(138211),	-- Malignant Sabatons
+						i(138220),	-- Mindrend Band
+						i(138225),	-- Phantasmal Echo
+						i(138224),	-- Unstable Horrorslime
+						i(138222),	-- Vial of Nightmare Fog
+						i(138228),	-- Bioluminescent Mushroom
+						i(138227),	-- Entrancing Stone
+						i(138226),	-- Nightmare Engulfed Jewel
+					},
+				}),
 				cr(104636, e(1750, {	-- Cenarius
 					ach(10772, {	-- Use the Force(s)
 						crit(1),	-- Dryads Uncleansed
