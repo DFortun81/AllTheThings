@@ -112,9 +112,6 @@ _.Zones =
 					q(50206, {	-- Strike Back
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(50960, {	-- Sweete's Orders
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(51765, {	-- Tangled Webs
 						["isWorldQuest"] = true,
 						["lvl"] = 120,

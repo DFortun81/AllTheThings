@@ -555,12 +555,11 @@ _.Zones =
 					-- Needs confirmation -- the quest didn't auto-pop and I didn't notice the item in my bags until later.  This source is based on a wowhead comment.
 					-- Not required for "Drust Do It."
 				}),
-				o(276513, {	-- Intact Mudfish
-					q(48882, {	-- I Like Fish Guts and I Cannot Lie
-						["coord"] = { 70.7, 50.8, 896 },
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 48880 },	-- Mean Gulls (must be ON quest for this one to appear)
-					}),
+				q(48882, {	-- I Like Fish Guts and I Cannot Lie
+					["provider"] = { "o", 276513 },	-- Intact Mudfish
+					["coord"] = { 70.7, 50.8, 896 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 48880 },	-- Mean Gulls (must be ON quest for this one to appear)
 				}),
 				o(292523, {	-- Heartsbane Grimoire
 					q(49805, {	-- Implements of Ill Intent
@@ -654,8 +653,6 @@ _.Zones =
 					["provider"] = { "n", 127558 },	-- Art Hughie
 					["coord"] = { 71.7, 50.4, 896 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 48622 },	-- The Vanishing Lord
-					-- May have different source quest(s); needs confirmation.
 				}),
 				q(48792, {	-- Menace to Society
 					["provider"] = { "n", 127015 },	-- Thaddeus "Gramps" Rifthold
@@ -996,13 +993,16 @@ _.Zones =
 				}),
 --						   51851	-- Storming the Manor \	-- Not sure why, but there are three versions of this quest on wowhead.
 --						   51852	-- Storming the Manor /	-- Not sure why, but there are three versions of this quest on wowhead.
---						   50960	-- Sweete's Orders
+				q(50960, {	-- Sweete's Orders
+					["provider"] = { "o", 286016 },	-- Ship's Log
+					["coord"] = { 27.4, 11.6, 896 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 110,
+				}),
 				q(48904, {	-- Take the Bait
 					["provider"] = { "n", 127558 },	-- Art Hughie
 					["coord"] = { 71.7, 50.4, 896 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 48622 },	-- The Vanishing Lord
-					-- May have different source quest(s); needs confirmation.
 				}),
 				q(48986, {	-- Take the High Road
 					["provider"] = { "n", 127715 },	-- Lucille Waycrest
@@ -1169,17 +1169,16 @@ _.Zones =
 					["sourceQuests"] = { 48945 },	-- The Ruins of Gol Var
 					-- Awarder "The Order of Embers" criteria.
 				}),
-				o(276515, {	-- Fishing Rod
-					q(48881, {	-- The Reel Deal
-						["coord"] = { 71.1, 52.3, 896 },
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 48880 },	-- Mean Gulls (must be ON quest for this one to appear)
-						["groups"] = {
-							i(152868, {	-- Anglin' Art's Mudfish Bait
-								i(7307),	-- Flesh Eating Worm
-							}),
-						},
-					}),
+				q(48881, {	-- The Reel Deal
+					["provider"] = { "o", 276515 },	-- Fishing Rod
+					["coord"] = { 71.1, 52.3, 896 },
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 48880 },	-- Mean Gulls (must be ON quest for this one to appear)
+					["groups"] = {
+						i(152868, {	-- Anglin' Art's Mudfish Bait
+							i(7307),	-- Flesh Eating Worm
+						}),
+					},
 				}),
 				q(49926, {	-- The Road to Corlain
 					["provider"] = { "n", 129643 },	-- Marshal Everit Reade
