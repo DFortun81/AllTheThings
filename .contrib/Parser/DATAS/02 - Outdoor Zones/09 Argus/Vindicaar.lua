@@ -240,6 +240,12 @@ _.Zones =
 							recipe(247744),	-- Wormhole Generator: Argus
 						},
 					}),
+					q(47134, {	-- Foiling the Legion's Jailbreak
+						["sourceQuests"] = { 47104 },	-- Imprisoned Inquisitor
+						["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
+						["coord"] = { 43.2, 25.5, 831 },
+						["lvl"] = 110,
+					}),
 					q(47994, {	-- Forming a Bond
 						["sourceQuests"] = { 47993 },	-- Lord of the Spire
 						["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
@@ -270,6 +276,12 @@ _.Zones =
 						["sourceQuests"] = { 48440 },	-- Into the Night
 						["provider"] = { "n", 120978 },	-- Illidan Stormrage
 						["coord"] = { 40.2, 21.4, 831 },
+					}),
+					q(47182, {	-- Long Overdue
+						["sourceQuests"] = { 47134 },	-- Foiling the Legion's Jailbreak
+						["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
+						["coord"] = { 43.2, 25.5, 831 },
+						["lvl"] = 110,
 					}),
 					q(48074, {	-- Looming Over Me
 						["requireSkill"] = TAILORING,

@@ -245,14 +245,11 @@ _.Zones =
 				q(48034),	-- Empyrium Deposit Chunk
 				q(48037),	-- Empyrium Seam Chunk
 				q(48601),	-- Felfire Shattering
-				q(47134),	-- Foiling the Legion's Jailbreak
 				q(48230),	-- Fragment of the Past
 				q(48636),	-- Fueling the Antoran Campaign
 				q(48448),	-- Hindering the Legion War Machine
-				q(47104),	-- Imprisoned Inquisitor
 				q(49293),	-- Invasion Onslaught
 				q(48668),	-- Lightforged Beacon: City Center
-				q(47182),	-- Long Overdue
 				q(48074),	-- Looming Over Me
 				q(48042),	-- Order of Operations
 				q(48974),	-- Paragon of the Army of the Light

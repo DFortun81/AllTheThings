@@ -287,6 +287,27 @@ _.Zones =
 					["coord"] = { 44.4, 63.0, 646 },
 					["lvl"] = 110,
 				}),
+				q(47032, {	-- Legion Threat: Azshara
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["coord"] = { 44.6, 63.2, 646 },
+					["classes"] = { WARRIOR },	-- Arms
+					["lvl"] = 110,
+				}),
+				q(47030, {	-- Legion Threat: Dalaran Infiltration
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["coord"] = { 44.6, 63.2, 646 },
+					["classes"] = {
+						DEATHKNIGHT,	-- Blood
+						DEMONHUNTER,	-- Vengeance
+						DRUID,			-- Guardian
+						MONK,			-- Brewmaster
+						PALADIN,		-- Protection
+						WARRIOR,		-- Protection
+					},
+					["lvl"] = 110,
+				}),
 				q(46333, {	-- Livin' on the Ledge
 					["sourceQuests"] = { 46246 },	-- Strike Them Down
 					["provider"] = { "n", 118316 },	-- Illidari Enforcer
@@ -498,24 +519,6 @@ _.Zones =
 					["g"] = {
 						i(147461),	-- Unblemished Leaf of Shaladrassil
 					},
-				}),
-				q(47032, {	-- Legion Threat: Azshara
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 116302 },	-- Archmage Khadgar
-					["classes"] = { WARRIOR },	-- Arms
-				}),
-				q(47030, {	-- Legion Threat: Dalaran Infiltration
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 116302 },	-- Archmage Khadgar
-					["classes"] = {
-						DEATHKNIGHT,	-- Blood
-						DEMONHUNTER,	-- Vengeance
-						DRUID,			-- Guardian
-						MONK,			-- Brewmaster
-						PALADIN,		-- Protection
-						WARRIOR,		-- Protection
-					},
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47031, {	-- Legion Threat: Highmountain
 					["isBreadcrumb"] = true,
@@ -789,7 +792,6 @@ _.Zones =
 				q(42730),	-- Noggenfogger's Reasonable Request
 				q(44269),	-- Odyn's Challenge
 				q(44268),	-- Odyn's Challenge
-				q(43250),	-- Off to Court
 				q(45243),	-- On Daumyr's Wings
 				q(38805),	-- Ondri
 				q(38802),	-- Ondri's Still-Beating Heart

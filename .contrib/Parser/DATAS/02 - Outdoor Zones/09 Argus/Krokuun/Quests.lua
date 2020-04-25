@@ -95,6 +95,18 @@ _.Zones =
 						["provider"] = { "n", 125443 },	-- Alleria Windrunner
 						["coord"] = { 61.6, 46.8, 830 },
 					}),
+					q(47104, {	-- Imprisoned Inquisitor
+						["sourceQuests"] = { 47554 },	-- Intercepting the Legion's Plans
+						["provider"] = { "n", 121519 },	-- Captain Fareeya
+						["coord"] = { 40.5, 63.6, 830 },
+						["lvl"] = 110,
+					}),
+					q(47554, {	-- Intercepting the Legion's Plans
+						["sourceQuests"] = { 47102 },	-- The Mysterious Missive
+						["provider"] = { "n", 121519 },	-- Captain Fareeya
+						["coord"] = { 40.5, 63.6, 830 },
+						["lvl"] = 110,
+					}),
 					q(48440, {	-- Into the Night
 						["sourceQuests"] = { 47224 },	-- The Vidicaar
 						["provider"] = { "n", 120977 },	-- Prophet Velen
@@ -210,6 +222,12 @@ _.Zones =
 						["sourceQuests"] = { 47754 },	-- Lightly Roasted
 						["provider"] = { "n", 122621 },	-- High Exarch Turalyon
 						["coord"] = { 36.2, 56.9, 830 },
+					}),
+					q(47102, {	-- The Mysterious Missive
+						["sourceQuests"] = { 47994 },	-- Forming a Bond
+						["provider"] = { "n", 121260 },	-- Lightforged Courier
+						["coord"] = { 40.6, 70.0, 830 },
+						["lvl"] = 110,
 					}),
 					q(46732, {	-- The Prophet's Gambit
 						["sourceQuests"] = { 47641 },	-- Signs of Resistance

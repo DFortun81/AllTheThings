@@ -327,7 +327,10 @@ _.Zones =
 				}),
 				q(44914, {	-- Arms: The Thieving Apprentice
 					["lvl"] = 110,
-					["sourceQuests"] = { 44821 },	-- In Dire Need
+					["sourceQuests"] = { 
+						44821,	-- In Dire Need
+						47032,	-- Legion Threat: Azshara
+					},
 					["classes"] = { WARRIOR },
 					["providers"] = {
 						{ "n", 105081 },	-- Archmage Kalec
@@ -380,7 +383,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 					["coord"] = { 28.8, 48.4, 627 },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
 				q(44766, {	-- Backup Plan
@@ -419,7 +421,7 @@ _.Zones =
 				}),
 				q(47018, {	-- Beast Mastery: Rumblings Near Feltotem
 					["classes"] = { HUNTER },
-					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 44821 },	-- In Dire Need
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera (2 versions)
@@ -438,14 +440,6 @@ _.Zones =
 					},
 					["coord"] = { 74.3, 45.6, 627 },
 					["lvl"] = 110,
-				}),
-				q(42678, {	-- Black Rook Hold: Into Black Rook Hold
-					["sourceQuests"] = {
-						43251,	-- In Search of the Eye
-						43252,	-- Eternal Unrest
-					},
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 110164 },	-- Valeera Sanguinar
 				}),
 				q(40710, {	-- Blade in Twilight
 					["classes"] = { PRIEST },
@@ -904,7 +898,6 @@ _.Zones =
 					["sourceQuests"] = { 44782 },	-- Away From Prying Eyes
 					["provider"] = { "n", 115465 },	-- Archmage Modera
 					["coord"] = { 22.5, 39.2, 627 },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
 				q(44184, {	-- In the Blink of an Eye
@@ -976,7 +969,7 @@ _.Zones =
 				}),
 				q(47039, {	-- Marksmanship: The Twisted Twin
 					["classes"] = { HUNTER },
-					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 44821 },	-- In Dire Need
 					["providers"] = {
 						{ "n", 90463 },	-- Archmage Karlain
 						{ "n", 115468 },	-- Archmage Karlain
@@ -1116,9 +1109,11 @@ _.Zones =
 				}),
 				q(45412, {	-- Protection: Aid of the Illidari (Warrior) -- this is still obtainable, confirmed in 8.3
 					["lvl"] = 110,
-					["sourceQuests"] = { 44821 },	-- In Dire Need
+					["sourceQuests"] = { 
+						47030,	-- Legion Threat: Dalaran Inflitration
+						44821,	-- In Dire Need
+					},
 					["classes"] = { WARRIOR },
-					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90431 },	-- Archmage Ansirem Runeweaver
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
@@ -1328,6 +1323,7 @@ _.Zones =
 				}),
 				q(47047, {	-- Survival: The Thieving Apprentice
 					["classes"] = { HUNTER },
+					["sourceQuests"] = { 44821 },	-- In Dire Need
 					["providers"] = {
 						{ "n", 115467 },	-- Archmage Kalec
 						{ "n", 105081 },	-- Archmage Kalec

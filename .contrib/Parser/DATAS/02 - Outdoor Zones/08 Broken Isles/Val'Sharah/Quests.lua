@@ -60,6 +60,15 @@ _.Zones =
 					["coord"] = { 49.0, 82.2, 641 },
 					["provider"] = { "n", 73426 },	-- Rylissa Bearsong
 				}),
+				q(42678, {	-- Black Rook Hold: Into Black Rook Hold
+					["sourceQuests"] = {
+						43251,	-- In Search of the Eye
+						43252,	-- Eternal Unrest
+					},
+					["classes"] = { ROGUE },
+					["provider"] = { "n", 110164 },	-- Valeera Sanguinar
+					["coord"] = { 40.4, 52.9, 642 },
+				}),
 				q(38717, {	-- Black Rook Prison
 					["sourceQuests"] = {
 						38714,	-- Maiev's Trail
@@ -183,11 +192,6 @@ _.Zones =
 					["coord"] = { 59.4, 81.9, 641 },
 					["provider"] = { "n", 108358 },	-- Leirana
 				}),
-				q(38647, {	-- For the Corn!
-					["sourceQuests"] = { 38643 },	-- A Village in Peril
-					["coord"] = { 38.9, 61.4, 641 },
-					["provider"] = { "n", 92618 },	-- Granny Marl
-				}),
 				q(42748, {	-- Emerald Sisters
 					["coord"] = { 59.4, 84.1, 641 },
 					["provider"] = { "n", 108304 },	-- Guviena Bladesong
@@ -209,6 +213,17 @@ _.Zones =
 						i(121575),	-- Thornbrace Chainmail
 						i(121587),	-- Thornbrace Helm
 					},
+				}),
+				q(43252, {	-- Eternal Unrest
+					["sourceQuests"] = { 43250 },	-- Off to Court
+					["classes"] = { ROGUE },
+					["provider"] = { "n", 110164 },	-- Valeera Sanguinar
+					["coord"] = { 40.4, 52.9, 642 },
+				}),
+				q(38647, {	-- For the Corn!
+					["sourceQuests"] = { 38643 },	-- A Village in Peril
+					["coord"] = { 38.9, 61.4, 641 },
+					["provider"] = { "n", 92618 },	-- Granny Marl
 				}),
 				q(38455, {	-- Frenzied Furbolgs
 					["sourceQuests"] = { 38142 },	-- Archdruid of the Claw
@@ -270,6 +285,12 @@ _.Zones =
 					["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },	-- not Demon Hunter
 					["coord"] = { 42.3, 81.7, 642 },	-- Darkpens
 					["provider"] = { "n", 93029 },	-- Arduen Soulblade
+				}),
+				q(43251, {	-- In Search of the Eye
+					["sourceQuests"] = { 43250 },	-- Off to Court
+					["classes"] = { ROGUE },
+					["provider"] = { "n", 110164 },	-- Valeera Sanguinar
+					["coord"] = { 40.4, 52.9, 642 },
 				}),
 				q(38691, {	-- Jarod's Mission
 					["sourceQuests"] = {
