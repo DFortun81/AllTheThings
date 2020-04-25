@@ -490,6 +490,7 @@ _.Zones =
 							["isWeekly"] = true,
 						}),
 						q(56136, {	-- Heroic Warfront: The Battle For Stromgarde [Tier 3]
+							["isWeekly"] = true,
 							["provider"] = { "n", 142721 },	-- Ralston Karn <Recruitment Officer>
 							["coord"] = { 66.01, 26.01, 1161 },
 							["races"] = ALLIANCE_ONLY,
@@ -587,6 +588,7 @@ _.Zones =
 							["altQuests"] = { 53206 },	-- Battle for Stromgarde unlock flag (A)
 						}),
 						q(53992, {	-- Warfront: The Battle for Darkshore [Tier 3]
+							["isWeekly"] = true,
 							["provider"] = { "n", 142721 },	-- Ralston Karn <Recruitment Officer>
 							["coord"] = { 66.01, 26.01, 1161 },
 							["races"] = ALLIANCE_ONLY,
@@ -659,6 +661,7 @@ _.Zones =
 							},
 						}),
 						q(53414, {	-- Warfront: The Battle For Stromgarde [Tier 3]
+							["isWeekly"] = true,
 							["provider"] = { "n", 142721 },	-- Ralston Karn <Recruitment Officer>
 							["coord"] = { 66.01, 26.01, 1161 },
 							["races"] = ALLIANCE_ONLY,

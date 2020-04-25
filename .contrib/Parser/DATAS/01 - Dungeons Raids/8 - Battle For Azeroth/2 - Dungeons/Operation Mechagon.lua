@@ -74,7 +74,11 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2360, {	-- Trixie & Naeno
-						["crs"] = { 155407 },	-- Trixie & Naeno
+						["crs"] = {
+							150712,	-- Trixie Tazer
+							153755,	-- Naeno Megacrash
+							153756,	-- Mechacycle
+						},
 						["g"] = {
 							i(168747),	-- Performant Adaptable Logic Board
 							i(168749),	-- Performant Effective Logic Board
@@ -91,7 +95,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2355, {	-- HK-8 Aerial Oppression Unit
-						["crs"] = { 155157 },	-- HK-8 Aerial Oppression Unit
+						["crs"] = { 150190 },	-- HK-8 Aerial Oppression Unit
 						["g"] = {
 						--	i(168826),	-- Mechagon Peacekeeper. Only on Mythic or Mythic+
 							i(169385),	-- Microbot 8D
@@ -266,7 +270,11 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2360, {	-- Trixie & Naeno
-						["crs"] = { 155407 },	-- Trixie & Naeno
+						["crs"] = {
+							150712,	-- Trixie Tazer
+							153755,	-- Naeno Megacrash
+							153756,	-- Mechacycle
+						},
 						["g"] = {
 							i(168747),	-- Performant Adaptable Logic Board
 							i(168749),	-- Performant Effective Logic Board
@@ -283,7 +291,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2355, {	-- HK-8 Aerial Oppression Unit
-						["crs"] = { 155157 },	-- HK-8 Aerial Oppression Unit
+						["crs"] = { 150190 },	-- HK-8 Aerial Oppression Unit
 						["g"] = {
 							i(168826),	-- Mechagon Peacekeeper
 							i(169385),	-- Microbot 8D

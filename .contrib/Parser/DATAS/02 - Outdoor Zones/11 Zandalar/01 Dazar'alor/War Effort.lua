@@ -485,6 +485,7 @@ _.Zones =
 						q(56137, {	-- Heroic Warfront: The Battle For Stromgarde [Tier 3]
 							["sourceQuests"] = { 53212 },	-- Back to Zuldazar
 							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
+							["isWeekly"] = true,
 							["coord"] = { 52.97, 94.35, 1165 },
 							["races"] = HORDE_ONLY,
 							["g"] = {
@@ -585,6 +586,7 @@ _.Zones =
 						}),
 						q(53955, {	-- Warfront: The Battle for Darkshore [Tier 3]
 							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
+							["isWeekly"] = true,
 							["coords"] = {
 								{ 52.97, 94.35, 1165 },
 							},
@@ -661,6 +663,7 @@ _.Zones =
 						q(53416, {	-- Warfront: The Battle For Stromgarde [Tier 3]
 							["sourceQuests"] = { 53212 },	-- Back to Zuldazar
 							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
+							["isWeekly"] = true,
 							["coord"] = { 52.97, 94.35, 1165 },
 							["races"] = HORDE_ONLY,
 							["g"] = {

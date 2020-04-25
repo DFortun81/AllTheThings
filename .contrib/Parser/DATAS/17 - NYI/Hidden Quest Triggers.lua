@@ -1417,6 +1417,7 @@ _.NeverImplemented =
 		q(45321),	-- Spellblade Aluriel
 		q(45322),	-- Tichondrius
 		q(45323),	-- Krosus
+		q(46330),	-- Krosus (Heroic)
 		q(45324),	-- High Botanist Tel'arn
 		q(45325),	-- Star Augur Etraeus
 		q(46328),	-- Triggers when the port to Elisande is activated
