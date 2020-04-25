@@ -119,7 +119,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2336, {	-- Tussle Tonks
-						["crs"] = { 144244 },	-- Tussle Tonks
+						["crs"] = {
+							144244,	-- The Platinum Pummeler
+							145185,	-- Gnomercy 4.U.
+						},
 						["g"] = {
 							ach(13723),	-- M.C., Hammered
 							i(168742),	-- Forceful Adaptable Logic Board
@@ -142,7 +145,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(168745),	-- Optimized Effective Logic Board
 							i(168744),	-- Optimized Efficient Logic Board
 							i(168970, {	-- Trashmaster's Mantle
-								["description"] = "Equiping this cloak gives you a temporary Trashmaster title.  To get a permanant character specific Trashmaster title take this cloak to Jani's trashpile in Dazar'alor (Horde) or Vol'dun (Alliance).",
+								["description"] = "Equipping this cloak gives you a temporary Trashmaster title.  To get a permanant character-specific Trashmaster title, take this cloak to Jani's trashpile in Dazar'alor (Horde) or Vol'dun (Alliance).",
 								["g"] = {
 									q(56250, {	-- I Am the Trashmaster
 										--["sourceQuests"] = { },
@@ -193,7 +196,11 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2331, {	-- King Mechagon
-						["crs"] = { 155438 },	-- King Mechagon
+						["crs"] = {
+							150396,	-- Aerial Unit R-21/X
+							150397,	-- King Mechagon
+							144249,	-- Omega Buster
+						},
 						["g"] = {
 							i(168830),	-- Aerial Unit R-21/X
 							i(169378),	-- Golden Snorf
@@ -315,7 +322,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2336, {	-- Tussle Tonks
-						["crs"] = { 144244 },	-- Tussle Tonks
+						["crs"] = {
+							144244,	-- The Platinum Pummeler
+							145185,	-- Gnomercy 4.U.
+						},
 						["g"] = {
 							ach(13723),	-- M.C., Hammered
 							i(168742),	-- Forceful Adaptable Logic Board
@@ -338,7 +348,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(168745),	-- Optimized Effective Logic Board
 							i(168744),	-- Optimized Efficient Logic Board
 							i(168970, {	-- Trashmaster's Mantle
-								["description"] = "Equiping this cloak gives you a temporary Trashmaster title.  To get a permanant character specific Trashmaster title take this cloak to Jani's trashpile in Dazar'alor (Horde) or Vol'dun (Alliance).",
+								["description"] = "Equipping this cloak gives you a temporary Trashmaster title.  To get a permanant character-specific Trashmaster title, take this cloak to Jani's trashpile in Dazar'alor (Horde) or Vol'dun (Alliance).",
 								["g"] = {
 									q(56250, {	-- I Am the Trashmaster
 										--["sourceQuests"] = { },
@@ -390,7 +400,11 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2331, {	-- King Mechagon
-						["crs"] = { 155438 },	-- King Mechagon
+						["crs"] = {
+							150396,	-- Aerial Unit R-21/X
+							150397,	-- King Mechagon
+							144249,	-- Omega Buster
+						},
 						["g"] = {
 							ach(13624),	-- Keep DPS-ing and Nobody Explodes
 							i(168830),	-- Aerial Unit R-21/X
