@@ -8917,6 +8917,14 @@ local function RowOnEnter(self)
 			end
 		end
 		
+		-- achievement progress. If it has a measurable statistic, show it under the achievement description
+		if reference.achievementID then
+			local statistic = GetStatistic(reference.achievementID)
+			if statistic and statistic ~= '0' then
+				GameTooltip:AddDoubleLine('Progress', statistic)
+			end
+		end
+		
 		-- Relative ATT location
 		if reference.parent and not reference.itemID then
 			if reference.parent.parent then
