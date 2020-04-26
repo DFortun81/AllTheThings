@@ -2093,6 +2093,8 @@ _.NeverImplemented =
 		q(56584),	-- Urduu first kill
 		q(57083),	-- Wayward Algan Benthic loot
 		q(57166),	-- triggered when completing #55891, "Champion Aldrantiss, Defender of Her Kingdom," in nazjatar
+		q(57140),	-- pretty sure this is for looting Ancient Reefwalker Bark
+		q(57169),	-- triggered when completing WQ to kill Alzana, Arrow of Thunder (not WQ ID)
 	--	PVP
 		q(56792),	-- Nazjatar Horde supply chest
 		q(57111),	-- Nazjatar Horde supply chest (both triggered simultaneously)
@@ -2187,8 +2189,12 @@ _.NeverImplemented =
 		q(56660),	-- Triggered on Mechagon randomly
 		q(56840),	-- Toys of Destruction - made the Volatile Blaster. Maybe triggers for all the toys to indicate the toy extra action button is available?
 		q(56627),	-- collected Roadtrogg mini
+	
+	
 	--	Dungeons
 		q(53623),	-- Battle for Azeroth Dungeon Reward Quest
+		q(57046),	-- Operaton: Mechagon — triggered upon killing King Mechagon for the first time (Heroic).  Could be from killing the boss or from looting the Azerite Essence
+	
 	
 	--	Raids
 	--	Uldir

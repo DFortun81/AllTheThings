@@ -4,9 +4,9 @@
 dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
 _.Instances = { tier(7, {	-- Legion
 	inst(875, { 	-- Tomb of Sargeras
-		["order"] = "04",
 		["isRaid"] = true,
-		["lvl"] = 110,
+		["coord"] = { 64.3, 21.0, 646 },	-- Broken Shore
+		["order"] = "04",
 		["maps"] = {
 			850,
 			851,
@@ -16,7 +16,8 @@ _.Instances = { tier(7, {	-- Legion
 			855,
 			856,
 		},
-		["groups"] = {
+		["lvl"] = 110,
+		["g"] = {
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					-- * confirmed in HEROIC MODE (jic they somehow vary in each difficulty)
@@ -37,7 +38,7 @@ _.Instances = { tier(7, {	-- Legion
 					117264,	-- Fallen Avatar — Maiden of Valor*
 					117269,	-- Kil'jaeden
 				},
-				["groups"] = {
+				["g"] = {
 					i(146411),	-- Vantus Rune Technique: Tomb of Sargeras [Rank 1]
 					i(146412),	-- Vantus Rune Technique: Tomb of Sargeras [Rank 2]
 					i(146413),	-- Vantus Rune Technique: Tomb of Sargeras [Rank 3]
@@ -46,153 +47,151 @@ _.Instances = { tier(7, {	-- Legion
 			d(17, {		-- LFR
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["groups"] = {
-						{
-							["itemID"] = 147518,	-- Cache of Fel Treasures [Raid Finder]
+					["g"] = {
+						i(147518, {	-- Cache of Fel Treasures [Raid Finder]
 							["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 17 }, {"pop"}, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-						},
-						{
-							["itemID"] = 147497,	-- Encrusted Naga Scale [Raid Finder]
+						}),
+						i(147497, {	-- Encrusted Naga Scale [Raid Finder]
+							["repeatable"] = true,
 							["questID"] = 47114,	-- Tomb of Sargeras: The Tomb's Mistress [Raid Finder]
-							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(147518),	-- Cache of Fel Treasures [Raid Finder]
 							},
-						},
-						{
-							["itemID"] = 147509,	-- Seal of the Deceiver [Raid Finder]
+						}),
+						i(147509, {	-- Seal of the Deceiver [Raid Finder]
+							["repeatable"] = true,
 							["questID"] = 47126,	-- Tomb of Sargeras: The Deceiver [Raid Finder]
-							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(147518),	-- Cache of Fel Treasures [Raid Finder]
 							},
-						},
-						{
-							["itemID"] = 147505,	-- Wailing Soul [Raid Finder]
+						}),
+						i(147505, {	-- Wailing Soul [Raid Finder]
+							["repeatable"] = true,
 							["questID"] = 47122,	-- Tomb of Sargeras: The Fallen Avatar [Raid Finder]
-							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(147518),	-- Cache of Fel Treasures [Raid Finder]
 							},
-						},
-						{
-							["itemID"] = 147501,	-- Worshipper's Scrawlings [Raid Finder]
+						}),
+						i(147501, {	-- Worshipper's Scrawlings [Raid Finder]
+							["repeatable"] = true,
 							["questID"] = 47118,	-- Tomb of Sargeras: Free The Tormented [Raid Finder]
-							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(147518),	-- Cache of Fel Treasures [Raid Finder]
 							},
-						},
+						}),
 					},
 				}),
 				n(ZONEDROPS, {
-					["crs"] = {
-						111246,	-- Archmage Timear
-					},
-					["groups"] = {
-						i(147423),
-						i(147422),
-						i(146989),
-						i(147425),
-						i(147424),
-						i(147038),
-						i(147427),
-						i(147426),
-						i(147044),
-						i(147429),
-						i(147428),
-						i(147064),
+					["cr"] = 111246,	-- Archmage Timear
+					["g"] = {
+						i(147422),	-- Acolyte's Abandoned Footwraps
+						i(147425),	-- Cord of Pilfered Rosaries
+						i(147064),	-- Diadem of the Highborne
+						i(146989),	-- Fel-Flecked Grips
+						i(147429),	-- Girdle of the Crumbling Sanctum
+						i(147427),	-- Pristine Moon-Wrought Clasp
+						i(147423),	-- Sash of the Unredeemed
+						i(147044),	-- Soul-Rattle Ribcage
+						i(147428),	-- Spiked Terrorwake Greatboots
+						i(147426),	-- Treads of Panicked Escape
+						i(147424),	-- Treads of Violent Intrusion
+						i(147038),	-- Wakening Horror Spaulders
 					},
 				}),
 				ach(11787, { 	-- The Gates of Hell	
-					["crs"] = {
-						111246,	-- Archmage Timear
-					},
-					["groups"] = {
-						cr(115844, e(1862, {	-- Goroth
-							i(147069),	-- Shoulderplates of Crackling Flame
-							i(146984),	-- Cloak of Stifling Brimstone
-							i(147027),	-- Spirebreaker Harness
-							i(147057),	-- Pain-Singed Armguards
-							i(147055),	-- Belt of Screaming Slag
-							i(147039),	-- Cinch of Sizzling Flesh
-							i(147065),	-- Lava-Slough Legguards
-							i(146992),	-- Legwraps of Fused Loathing
-							i(146986),	-- Emberscatter Treads
-							i(147022),	-- Feverish Carapace
-							i(147009),	-- Infernal Cinders
-							i(147108),	-- Brand of Relentless Agony
-							i(147076),	-- Charred Hymnal of the Moon
-							i(147112),	-- Felsoul Vortex
-							i(147104),	-- Icon of Perverse Animation
-							i(147084),	-- Imploding Infernal Star
-						})),
-						cr(116407, e(1856, {	-- Harjatan
-							i(147037),	-- Dripping Arcfin Shoulderpads
-							i(147043),	-- Hauberk of Frozen Mist
-							i(146994),	-- Robe of Aqueous Command
-							i(147067),	-- Wave-Hammered Breastplate
-							i(147000),	-- Ravenous Devotee's Bracelets
-							i(147129),	-- Demonbane Gauntlets
-							i(147182),	-- Diabolic Gloves
-							i(147171),	-- Fanged Slayer's Handguards
-							i(147164),	-- Gloves of Blind Absolution
-							i(147146),	-- Gloves of the Arcane Tempest
-							i(147123),	-- Gravewarden Handguards
-							i(147177),	-- Grips of the Skybreaker
-							i(147159),	-- Radiant Lightbringer Gauntlets
-							i(147135),	-- Stormheart Gloves
-							i(147189),	-- Titanic Onslaught Handguards
-							i(147141),	-- Wildstalker Gauntlets
-							i(147153),	-- Xuen's Gauntlets
-							i(147071),	-- Shiversleet Waistguard
-							i(147029),	-- Glacier Walkers
-							i(147045),	-- Insulated Finpads
-							i(147020),	-- Scaled Band of Servitude
-							i(147002),	-- Charm of the Rising Tide
-							i(147100),	-- Calcified Barnacle
-							i(147109),	-- Harjatan's Leering Eye
-							i(147092),	-- Ice-Threaded Conch
-						})),
-						cr(115767, e(1861, {	-- Mistress Sassz'ine
-							i(143643),	-- Abyss Worm
-							i(147049),	-- Azure Squallshaper's Helm
-							i(146990),	-- Hundred-Fathom Veil
-							i(146985),	-- Shroud of the Drowned Adherent
-							i(147028),	-- Hide of the Abyssal Behemoth
-							i(147131),	-- Demonbane Leggings
-							i(147184),	-- Diabolic Leggings
-							i(147173),	-- Fanged Slayer's Legguards
-							i(147125),	-- Gravewarden Legplates
-							i(147166),	-- Leggings of Blind Absolution
-							i(147148),	-- Leggings of the Arcane Tempest
-							i(147179),	-- Legguards of the Skybreaker
-							i(147161),	-- Radiant Lightbringer Greaves
-							i(147137),	-- Stormheart Legguards
-							i(147191),	-- Titanic Onslaught Greaves
-							i(147143),	-- Wildstalker Leggings
-							i(147155),	-- Xuen's Legguards
-							i(147059),	-- Iron Ballast Sabatons
-							i(147023),	-- Leviathan's Hunger
-							i(147004),	-- Sea Star of the Depthmother
-							i(147016),	-- Terror From Below
-							i(147011),	-- Vial of Ceaseless Toxins
-							i(147113),	-- Flawless Hurricane Pearl
-							i(147093),	-- Globe of Frothing Eddies
-							i(147085),	-- Mutated Nautilus
-							i(147081),	-- Pungent Chum
-						})),
+					["cr"] = 111246,	-- Archmage Timear
+					["g"] = {
+						e(1862, {	-- Goroth
+							["cr"] = 115844,	-- Goroth
+							["g"] = {
+								i(147069),	-- Shoulderplates of Crackling Flame
+								i(146984),	-- Cloak of Stifling Brimstone
+								i(147027),	-- Spirebreaker Harness
+								i(147057),	-- Pain-Singed Armguards
+								i(147055),	-- Belt of Screaming Slag
+								i(147039),	-- Cinch of Sizzling Flesh
+								i(147065),	-- Lava-Slough Legguards
+								i(146992),	-- Legwraps of Fused Loathing
+								i(146986),	-- Emberscatter Treads
+								i(147022),	-- Feverish Carapace
+								i(147009),	-- Infernal Cinders
+								i(147108),	-- Brand of Relentless Agony
+								i(147076),	-- Charred Hymnal of the Moon
+								i(147112),	-- Felsoul Vortex
+								i(147104),	-- Icon of Perverse Animation
+								i(147084),	-- Imploding Infernal Star
+							},
+						}),
+						e(1856, {	-- Harjatan
+							["cr"] = 116407,	-- Harjatan
+							["g"] = {
+								i(147037),	-- Dripping Arcfin Shoulderpads
+								i(147043),	-- Hauberk of Frozen Mist
+								i(146994),	-- Robe of Aqueous Command
+								i(147067),	-- Wave-Hammered Breastplate
+								i(147000),	-- Ravenous Devotee's Bracelets
+								i(147129),	-- Demonbane Gauntlets
+								i(147182),	-- Diabolic Gloves
+								i(147171),	-- Fanged Slayer's Handguards
+								i(147164),	-- Gloves of Blind Absolution
+								i(147146),	-- Gloves of the Arcane Tempest
+								i(147123),	-- Gravewarden Handguards
+								i(147177),	-- Grips of the Skybreaker
+								i(147159),	-- Radiant Lightbringer Gauntlets
+								i(147135),	-- Stormheart Gloves
+								i(147189),	-- Titanic Onslaught Handguards
+								i(147141),	-- Wildstalker Gauntlets
+								i(147153),	-- Xuen's Gauntlets
+								i(147071),	-- Shiversleet Waistguard
+								i(147029),	-- Glacier Walkers
+								i(147045),	-- Insulated Finpads
+								i(147020),	-- Scaled Band of Servitude
+								i(147002),	-- Charm of the Rising Tide
+								i(147100),	-- Calcified Barnacle
+								i(147109),	-- Harjatan's Leering Eye
+								i(147092),	-- Ice-Threaded Conch
+							},
+						}),
+						e(1861, {	-- Mistress Sassz'ine
+							["cr"] = 115767,	-- Mistress Sassz'ine
+							["g"] = {
+								i(143643),	-- Abyss Worm
+								i(147049),	-- Azure Squallshaper's Helm
+								i(146990),	-- Hundred-Fathom Veil
+								i(146985),	-- Shroud of the Drowned Adherent
+								i(147028),	-- Hide of the Abyssal Behemoth
+								i(147131),	-- Demonbane Leggings
+								i(147184),	-- Diabolic Leggings
+								i(147173),	-- Fanged Slayer's Legguards
+								i(147125),	-- Gravewarden Legplates
+								i(147166),	-- Leggings of Blind Absolution
+								i(147148),	-- Leggings of the Arcane Tempest
+								i(147179),	-- Legguards of the Skybreaker
+								i(147161),	-- Radiant Lightbringer Greaves
+								i(147137),	-- Stormheart Legguards
+								i(147191),	-- Titanic Onslaught Greaves
+								i(147143),	-- Wildstalker Leggings
+								i(147155),	-- Xuen's Legguards
+								i(147059),	-- Iron Ballast Sabatons
+								i(147023),	-- Leviathan's Hunger
+								i(147004),	-- Sea Star of the Depthmother
+								i(147016),	-- Terror From Below
+								i(147011),	-- Vial of Ceaseless Toxins
+								i(147113),	-- Flawless Hurricane Pearl
+								i(147093),	-- Globe of Frothing Eddies
+								i(147085),	-- Mutated Nautilus
+								i(147081),	-- Pungent Chum
+							},
+						}),
 					},
 				}),
 				ach(11788, { 	-- Wailing Halls
-					["crs"] = {
-						111246,	-- Archmage Timear
-					},
-					["groups"] = {
-						e(1867, {	-- Demonic Inquisition (Atrigan)
+					["cr"] = 111246,	-- Archmage Timear
+					["g"] = {
+						e(1867, {	-- Demonic Inquisition
 							["crs"] = {
-								116689,	-- Atrigan*
-								116691,	-- Belac*
+								116689,	-- Atrigan
+								116691,	-- Belac
 							},
 							["g"] = {
 								i(147147),	-- Crown of the Arcane Tempest
@@ -285,38 +284,39 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				ach(11789, { 	-- Chamber of the Avatar
-					["crs"] = {
-						111246,	-- Archmage Timear
-					},
-					["groups"] = {
-						cr(118289, e(1897, {	-- Maiden of Vigilance
-							i(151524),	-- Hammer of Vigilance
-							i(147050),	-- Crown of Discarded Hope
-							i(147127),	-- Demonbane Harness
-							i(147185),	-- Diabolic Robe
-							i(147169),	-- Fanged Slayer's Chestguard
-							i(147121),	-- Gravewarden Chestguard
-							i(147175),	-- Harness of the Skybreaker
-							i(147157),	-- Radiant Lightbringer Breastplate
-							i(147167),	-- Robes of Blind Absolution
-							i(147149),	-- Robes of the Arcane Tempest
-							i(147133),	-- Stormheart Tunic
-							i(147187),	-- Titanic Onslaught Breastplate
-							i(147139),	-- Wildstalker Chestguard
-							i(147151),	-- Xuen's Tunic
-							i(147032),	-- Gloves of Wayward Compulsions
-							i(146999),	-- Strife-Riddled Cinch
-							i(146993),	-- Leggings of Divine Portents
-							i(147060),	-- Steadfast Purifier's Warboots
-							i(147194),	-- Band of Rescinded Truths
-							i(147015),	-- Engine of Eradication
-							i(147025),	-- Recompiled Guardian Module
-							i(147098),	-- Fragment of Grace
-							i(147090),	-- Stabilized Extinction Protocol
-							i(151189),	-- Tears of the Maiden
-							i(147115),	-- Unfurling Origination
-							i(147094),	-- Virus of Lethargy
-						})),
+					["cr"] = 111246,	-- Archmage Timear
+					["g"] = {
+						e(1897, {	-- Maiden of Vigilance
+							["cr"] = 118289,	-- Maiden of Vigilance
+							["g"] = {
+								i(151524),	-- Hammer of Vigilance
+								i(147050),	-- Crown of Discarded Hope
+								i(147127),	-- Demonbane Harness
+								i(147185),	-- Diabolic Robe
+								i(147169),	-- Fanged Slayer's Chestguard
+								i(147121),	-- Gravewarden Chestguard
+								i(147175),	-- Harness of the Skybreaker
+								i(147157),	-- Radiant Lightbringer Breastplate
+								i(147167),	-- Robes of Blind Absolution
+								i(147149),	-- Robes of the Arcane Tempest
+								i(147133),	-- Stormheart Tunic
+								i(147187),	-- Titanic Onslaught Breastplate
+								i(147139),	-- Wildstalker Chestguard
+								i(147151),	-- Xuen's Tunic
+								i(147032),	-- Gloves of Wayward Compulsions
+								i(146999),	-- Strife-Riddled Cinch
+								i(146993),	-- Leggings of Divine Portents
+								i(147060),	-- Steadfast Purifier's Warboots
+								i(147194),	-- Band of Rescinded Truths
+								i(147015),	-- Engine of Eradication
+								i(147025),	-- Recompiled Guardian Module
+								i(147098),	-- Fragment of Grace
+								i(147090),	-- Stabilized Extinction Protocol
+								i(151189),	-- Tears of the Maiden
+								i(147115),	-- Unfurling Origination
+								i(147094),	-- Virus of Lethargy
+							},
+						}),
 						e(1873, {	-- Fallen Avatar
 							["crs"] = {
 								116939,	-- Fallen Avatar
@@ -351,114 +351,119 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				ach(11790, { 	-- Deceiver's Fall
-					["crs"] = {
-						111246,	-- Archmage Timear
-					},
-					["groups"] = {
-						cr(117269, e(1898, {	-- Kil'jaeden
-							i(151539),	-- Technique: Glyph of Ember Shards
-							i(147034),	-- Shadow-Scarred Headcover
-							i(146988),	-- Gloves of Furtive Oppression
-							i(147048),	-- Vicegrip of the Unrepentant
-							i(147072),	-- Soul-Render's Greatbelt
-							i(147347),	-- Waistguard of Profane Duplicity
-							i(147066),	-- Greaves of Impure Midnight
-							i(147046),	-- Star-Stalker Treads
-							i(147195),	-- Seal of the Second Duumvirate
-							i(147026),	-- Shifting Cosmic Sliver
-							i(151190),	-- Specter of Betrayal
-							i(147007),	-- The Deceiver's Grand Design
-							i(147019),	-- Tome of Unraveling Sanity
-							i(147099),	-- Boon of the Prophet
-							i(147082),	-- Man'ari Blood Pact
-							i(147087),	-- Ruinous Ashes
-							i(147111),	-- Scornful Reflection
-							i(147095),	-- Sphere of Entropy
-							i(147079),	-- Torn Fabric of Reality
-						})),
+					["cr"] = 111246,	-- Archmage Timear
+					["g"] = {
+						e(1898, {	-- Kil'jaeden
+							["cr"] = 117269,	-- Kil'jaeden
+							["g"] = {
+								i(151539),	-- Technique: Glyph of Ember Shards
+								i(147034),	-- Shadow-Scarred Headcover
+								i(146988),	-- Gloves of Furtive Oppression
+								i(147048),	-- Vicegrip of the Unrepentant
+								i(147072),	-- Soul-Render's Greatbelt
+								i(147347),	-- Waistguard of Profane Duplicity
+								i(147066),	-- Greaves of Impure Midnight
+								i(147046),	-- Star-Stalker Treads
+								i(147195),	-- Seal of the Second Duumvirate
+								i(147026),	-- Shifting Cosmic Sliver
+								i(151190),	-- Specter of Betrayal
+								i(147007),	-- The Deceiver's Grand Design
+								i(147019),	-- Tome of Unraveling Sanity
+								i(147099),	-- Boon of the Prophet
+								i(147082),	-- Man'ari Blood Pact
+								i(147087),	-- Ruinous Ashes
+								i(147111),	-- Scornful Reflection
+								i(147095),	-- Sphere of Entropy
+								i(147079),	-- Torn Fabric of Reality
+							},
+						}),
 					},
 				}),
 			}),
 			d(14, {		-- Normal
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["groups"] = {
-						{
-							["itemID"] = 147519,	-- Cache of Fel Treasures [Normal]
+					["g"] = {
+						i(147519, {	-- Cache of Fel Treasures [Normal]
 							["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-						},
-						{
-							["itemID"] = 147498,	-- Encrusted Naga Scale [Normal]
+						}),
+						i(147498, {	-- Encrusted Naga Scale [Normal]
 							["questID"] = 47115,	-- Tomb of Sargeras: The Tomb's Mistress [Normal]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(147519),	-- Cache of Fel Treasures [Normal]
 							},
-						},
-						{
-							["itemID"] = 147510,	-- Seal of the Deceiver [Normal]
+						}),
+						i(147510, {	-- Seal of the Deceiver [Normal]
 							["questID"] = 47127,	-- Tomb of Sargeras: The Deceiver [Normal]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(147519),	-- Cache of Fel Treasures [Normal]
 							},
-						},
-						{
-							["itemID"] = 147506,	-- Wailing Soul [Normal]
+						}),
+						i(147506, {	-- Wailing Soul [Normal]
 							["questID"] = 47123,	-- Tomb of Sargeras: The Fallen Avatar [Normal]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(147519),	-- Cache of Fel Treasures [Normal]
 							},
-						},
-						{
-							["itemID"] = 147502,	-- Worshipper's Scrawlings [Normal]
+						}),
+						i(147502, {	-- Worshipper's Scrawlings [Normal]
 							["questID"] = 47119,	-- Tomb of Sargeras: Free The Tormented [Normal]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(147519),	-- Cache of Fel Treasures [Normal]
 							},
-						},
+						}),
 					},
 				}),
 				n(ZONEDROPS, {
-					i(147423),
-					i(147422),
-					i(146989),
-					i(147425),
-					i(147424),
-					i(147038),
-					i(147427),
-					i(147426),
-					i(147044),
-					i(147429),
-					i(147428),
-					i(147064),
+					i(147422),	-- Acolyte's Abandoned Footwraps
+					i(147425),	-- Cord of Pilfered Rosaries
+					i(147064),	-- Diadem of the Highborne
+					i(146989),	-- Fel-Flecked Grips
+					i(147429),	-- Girdle of the Crumbling Sanctum
+					i(147427),	-- Pristine Moon-Wrought Clasp
+					i(147423),	-- Sash of the Unredeemed
+					i(147044),	-- Soul-Rattle Ribcage
+					i(147428),	-- Spiked Terrorwake Greatboots
+					i(147426),	-- Treads of Panicked Escape
+					i(147424),	-- Treads of Violent Intrusion
+					i(147038),	-- Wakening Horror Spaulders
 				}),
-				cr(115844, e(1862, {	-- Goroth
-					i(147069),	-- Shoulderplates of Crackling Flame
-					i(146984),	-- Cloak of Stifling Brimstone
-					i(147027),	-- Spirebreaker Harness
-					i(147057),	-- Pain-Singed Armguards
-					i(147055),	-- Belt of Screaming Slag
-					i(147039),	-- Cinch of Sizzling Flesh
-					i(147065),	-- Lava-Slough Legguards
-					i(146992),	-- Legwraps of Fused Loathing
-					i(146986),	-- Emberscatter Treads
-					i(147022),	-- Feverish Carapace
-					i(147009),	-- Infernal Cinders
-					i(147108),	-- Brand of Relentless Agony
-					i(147076),	-- Charred Hymnal of the Moon
-					i(147112),	-- Felsoul Vortex
-					i(147104),	-- Icon of Perverse Animation
-					i(147084),	-- Imploding Infernal Star
-				})),
-				e(1867, {	-- Demonic Inquisition (Atrigan)
+				ach(11763, {	-- Glory of the Tomb Raider
+					title(362),	-- <Name> the Tomb Raider
+					i(101426),	-- Micronax Controller
+				}),
+				e(1862, {	-- Goroth
+					["cr"] = 115844,	-- Goroth
+					["g"] = {
+						ach(11724),	-- Fel Turkey
+						i(147069),	-- Shoulderplates of Crackling Flame
+						i(146984),	-- Cloak of Stifling Brimstone
+						i(147027),	-- Spirebreaker Harness
+						i(147057),	-- Pain-Singed Armguards
+						i(147055),	-- Belt of Screaming Slag
+						i(147039),	-- Cinch of Sizzling Flesh
+						i(147065),	-- Lava-Slough Legguards
+						i(146992),	-- Legwraps of Fused Loathing
+						i(146986),	-- Emberscatter Treads
+						i(147022),	-- Feverish Carapace
+						i(147009),	-- Infernal Cinders
+						i(147108),	-- Brand of Relentless Agony
+						i(147076),	-- Charred Hymnal of the Moon
+						i(147112),	-- Felsoul Vortex
+						i(147104),	-- Icon of Perverse Animation
+						i(147084),	-- Imploding Infernal Star
+					},
+				}),
+				e(1867, {	-- Demonic Inquisition
 					["crs"] = {
-						116689,	-- Atrigan*
-						116691,	-- Belac*
+						116689,	-- Atrigan
+						116691,	-- Belac
 					},
 					["g"] = {
+						ach(11696),	-- Grin and Bear It
 						i(147147),	-- Crown of the Arcane Tempest
 						i(147130),	-- Demonbane Faceguard
 						i(147183),	-- Diabolic Helm
@@ -487,33 +492,37 @@ _.Instances = { tier(7, {	-- Legion
 						i(147088),	-- Smoldering Thumbscrews
 					},
 				}),
-				cr(116407, e(1856, {	-- Harjatan
-					i(147037),	-- Dripping Arcfin Shoulderpads
-					i(147043),	-- Hauberk of Frozen Mist
-					i(146994),	-- Robe of Aqueous Command
-					i(147067),	-- Wave-Hammered Breastplate
-					i(147000),	-- Ravenous Devotee's Bracelets
-					i(147129),	-- Demonbane Gauntlets
-					i(147182),	-- Diabolic Gloves
-					i(147171),	-- Fanged Slayer's Handguards
-					i(147164),	-- Gloves of Blind Absolution
-					i(147146),	-- Gloves of the Arcane Tempest
-					i(147123),	-- Gravewarden Handguards
-					i(147177),	-- Grips of the Skybreaker
-					i(147159),	-- Radiant Lightbringer Gauntlets
-					i(147135),	-- Stormheart Gloves
-					i(147189),	-- Titanic Onslaught Handguards
-					i(147141),	-- Wildstalker Gauntlets
-					i(147153),	-- Xuen's Gauntlets
-					i(147071),	-- Shiversleet Waistguard
-					i(147029),	-- Glacier Walkers
-					i(147045),	-- Insulated Finpads
-					i(147020),	-- Scaled Band of Servitude
-					i(147002),	-- Charm of the Rising Tide
-					i(147100),	-- Calcified Barnacle
-					i(147109),	-- Harjatan's Leering Eye
-					i(147092),	-- Ice-Threaded Conch
-				})),
+				e(1856, {	-- Harjatan
+					["cr"] = 116407,	-- Harjatan
+					["g"] = {
+						ach(11699),	-- Grand Fin-ale
+						i(147037),	-- Dripping Arcfin Shoulderpads
+						i(147043),	-- Hauberk of Frozen Mist
+						i(146994),	-- Robe of Aqueous Command
+						i(147067),	-- Wave-Hammered Breastplate
+						i(147000),	-- Ravenous Devotee's Bracelets
+						i(147129),	-- Demonbane Gauntlets
+						i(147182),	-- Diabolic Gloves
+						i(147171),	-- Fanged Slayer's Handguards
+						i(147164),	-- Gloves of Blind Absolution
+						i(147146),	-- Gloves of the Arcane Tempest
+						i(147123),	-- Gravewarden Handguards
+						i(147177),	-- Grips of the Skybreaker
+						i(147159),	-- Radiant Lightbringer Gauntlets
+						i(147135),	-- Stormheart Gloves
+						i(147189),	-- Titanic Onslaught Handguards
+						i(147141),	-- Wildstalker Gauntlets
+						i(147153),	-- Xuen's Gauntlets
+						i(147071),	-- Shiversleet Waistguard
+						i(147029),	-- Glacier Walkers
+						i(147045),	-- Insulated Finpads
+						i(147020),	-- Scaled Band of Servitude
+						i(147002),	-- Charm of the Rising Tide
+						i(147100),	-- Calcified Barnacle
+						i(147109),	-- Harjatan's Leering Eye
+						i(147092),	-- Ice-Threaded Conch
+					},
+				}),
 				e(1903, {	-- Sisters of the Moon
 					["crs"] = {
 						118374,	-- Sisters of the Moon (Captain Yathae Moonstrike)
@@ -521,6 +530,7 @@ _.Instances = { tier(7, {	-- Legion
 						118518,	-- Sisters of the Moon (Priestess Lunaspyre)
 					},
 					["g"] = {
+						ach(11773),	-- Wax On, Wax Off
 						i(147033),	-- Lunar-Wrath Headgear
 						i(147054),	-- Mantle of Waning Radiance
 						i(146997),	-- Shoulderpads of Whispering Twilight
@@ -540,34 +550,38 @@ _.Instances = { tier(7, {	-- Legion
 						i(147078),	-- Mote of Astral Suffusion
 					},
 				}),
-				cr(115767, e(1861, {	-- Mistress Sassz'ine
-					i(143643),	-- Abyss Worm
-					i(147049),	-- Azure Squallshaper's Helm
-					i(146990),	-- Hundred-Fathom Veil
-					i(146985),	-- Shroud of the Drowned Adherent
-					i(147028),	-- Hide of the Abyssal Behemoth
-					i(147131),	-- Demonbane Leggings
-					i(147184),	-- Diabolic Leggings
-					i(147173),	-- Fanged Slayer's Legguards
-					i(147125),	-- Gravewarden Legplates
-					i(147166),	-- Leggings of Blind Absolution
-					i(147148),	-- Leggings of the Arcane Tempest
-					i(147179),	-- Legguards of the Skybreaker
-					i(147161),	-- Radiant Lightbringer Greaves
-					i(147137),	-- Stormheart Legguards
-					i(147191),	-- Titanic Onslaught Greaves
-					i(147143),	-- Wildstalker Leggings
-					i(147155),	-- Xuen's Legguards
-					i(147059),	-- Iron Ballast Sabatons
-					i(147023),	-- Leviathan's Hunger
-					i(147004),	-- Sea Star of the Depthmother
-					i(147016),	-- Terror From Below
-					i(147011),	-- Vial of Ceaseless Toxins
-					i(147113),	-- Flawless Hurricane Pearl
-					i(147093),	-- Globe of Frothing Eddies
-					i(147085),	-- Mutated Nautilus
-					i(147081),	-- Pungent Chum
-				})),
+				e(1861, {	-- Mistress Sassz'ine
+					["cr"] = 115767,	-- Mistress Sassz'ine
+					["g"] = {
+						ach(11676),	-- Five Course Seafood Buffet
+						i(143643),	-- Abyss Worm
+						i(147049),	-- Azure Squallshaper's Helm
+						i(146990),	-- Hundred-Fathom Veil
+						i(146985),	-- Shroud of the Drowned Adherent
+						i(147028),	-- Hide of the Abyssal Behemoth
+						i(147131),	-- Demonbane Leggings
+						i(147184),	-- Diabolic Leggings
+						i(147173),	-- Fanged Slayer's Legguards
+						i(147125),	-- Gravewarden Legplates
+						i(147166),	-- Leggings of Blind Absolution
+						i(147148),	-- Leggings of the Arcane Tempest
+						i(147179),	-- Legguards of the Skybreaker
+						i(147161),	-- Radiant Lightbringer Greaves
+						i(147137),	-- Stormheart Legguards
+						i(147191),	-- Titanic Onslaught Greaves
+						i(147143),	-- Wildstalker Leggings
+						i(147155),	-- Xuen's Legguards
+						i(147059),	-- Iron Ballast Sabatons
+						i(147023),	-- Leviathan's Hunger
+						i(147004),	-- Sea Star of the Depthmother
+						i(147016),	-- Terror From Below
+						i(147011),	-- Vial of Ceaseless Toxins
+						i(147113),	-- Flawless Hurricane Pearl
+						i(147093),	-- Globe of Frothing Eddies
+						i(147085),	-- Mutated Nautilus
+						i(147081),	-- Pungent Chum
+					},
+				}),
 				e(1896, {	-- The Desolate Host
 					["crs"] = {
 						119072,	-- The Desolate Host
@@ -575,6 +589,7 @@ _.Instances = { tier(7, {	-- Legion
 						118462,	-- The Desolate Host — Soul Queen Dejahna
 					},
 					["g"] = {
+						ach(11674),	-- Great Soul, Great Purpose
 						i(147063),	-- Armet of the Rotten Mind
 						i(147014),	-- Locket of Splintered Souls
 						i(147070),	-- Grave-Dredged Pauldrons
@@ -601,40 +616,45 @@ _.Instances = { tier(7, {	-- Legion
 						i(147114),	-- Preserved Starlight Incense
 					},
 				}),
-				cr(118289, e(1897, {	-- Maiden of Vigilance
-					i(151524),	-- Hammer of Vigilance
-					i(147050),	-- Crown of Discarded Hope
-					i(147127),	-- Demonbane Harness
-					i(147185),	-- Diabolic Robe
-					i(147169),	-- Fanged Slayer's Chestguard
-					i(147121),	-- Gravewarden Chestguard
-					i(147175),	-- Harness of the Skybreaker
-					i(147157),	-- Radiant Lightbringer Breastplate
-					i(147167),	-- Robes of Blind Absolution
-					i(147149),	-- Robes of the Arcane Tempest
-					i(147133),	-- Stormheart Tunic
-					i(147187),	-- Titanic Onslaught Breastplate
-					i(147139),	-- Wildstalker Chestguard
-					i(147151),	-- Xuen's Tunic
-					i(147032),	-- Gloves of Wayward Compulsions
-					i(146999),	-- Strife-Riddled Cinch
-					i(146993),	-- Leggings of Divine Portents
-					i(147060),	-- Steadfast Purifier's Warboots
-					i(147194),	-- Band of Rescinded Truths
-					i(147015),	-- Engine of Eradication
-					i(147025),	-- Recompiled Guardian Module
-					i(147098),	-- Fragment of Grace
-					i(147090),	-- Stabilized Extinction Protocol
-					i(151189),	-- Tears of the Maiden
-					i(147115),	-- Unfurling Origination
-					i(147094),	-- Virus of Lethargy
-				})),
+				e(1897, {	-- Maiden of Vigilance
+					["cr"] = 118289,	-- Maiden of Vigilance
+					["g"] = {
+						ach(11675),	-- Sky Walker
+						i(151524),	-- Hammer of Vigilance
+						i(147050),	-- Crown of Discarded Hope
+						i(147127),	-- Demonbane Harness
+						i(147185),	-- Diabolic Robe
+						i(147169),	-- Fanged Slayer's Chestguard
+						i(147121),	-- Gravewarden Chestguard
+						i(147175),	-- Harness of the Skybreaker
+						i(147157),	-- Radiant Lightbringer Breastplate
+						i(147167),	-- Robes of Blind Absolution
+						i(147149),	-- Robes of the Arcane Tempest
+						i(147133),	-- Stormheart Tunic
+						i(147187),	-- Titanic Onslaught Breastplate
+						i(147139),	-- Wildstalker Chestguard
+						i(147151),	-- Xuen's Tunic
+						i(147032),	-- Gloves of Wayward Compulsions
+						i(146999),	-- Strife-Riddled Cinch
+						i(146993),	-- Leggings of Divine Portents
+						i(147060),	-- Steadfast Purifier's Warboots
+						i(147194),	-- Band of Rescinded Truths
+						i(147015),	-- Engine of Eradication
+						i(147025),	-- Recompiled Guardian Module
+						i(147098),	-- Fragment of Grace
+						i(147090),	-- Stabilized Extinction Protocol
+						i(151189),	-- Tears of the Maiden
+						i(147115),	-- Unfurling Origination
+						i(147094),	-- Virus of Lethargy
+					},
+				}),
 				e(1873, {	-- Fallen Avatar
 					["crs"] = {
 						116939,	-- Fallen Avatar
 						117264,	-- Fallen Avatar — Maiden of Valor
 					},
 					["g"] = {
+						ach(11683),	-- Bingo!
 						i(146991),	-- Blackened Mask of Disgrace
 						i(147132),	-- Demonbane Shoulderpads
 						i(147186),	-- Diabolic Mantle
@@ -660,108 +680,116 @@ _.Instances = { tier(7, {	-- Legion
 						i(147107),	-- Valorous Spark of Hope
 					},
 				}),
-				cr(117269, e(1898, {	-- Kil'jaeden
-					i(151539),	-- Technique: Glyph of Ember Shards
-					i(147034),	-- Shadow-Scarred Headcover
-					i(146988),	-- Gloves of Furtive Oppression
-					i(147048),	-- Vicegrip of the Unrepentant
-					i(147072),	-- Soul-Render's Greatbelt
-					i(147347),	-- Waistguard of Profane Duplicity
-					i(147066),	-- Greaves of Impure Midnight
-					i(147046),	-- Star-Stalker Treads
-					i(147195),	-- Seal of the Second Duumvirate
-					i(147026),	-- Shifting Cosmic Sliver
-					i(151190),	-- Specter of Betrayal
-					i(147007),	-- The Deceiver's Grand Design
-					i(147019),	-- Tome of Unraveling Sanity
-					i(147099),	-- Boon of the Prophet
-					i(147082),	-- Man'ari Blood Pact
-					i(147087),	-- Ruinous Ashes
-					i(147111),	-- Scornful Reflection
-					i(147095),	-- Sphere of Entropy
-					i(147079),	-- Torn Fabric of Reality
-				})),
+				e(1898, {	-- Kil'jaeden
+					["cr"] = 117269,	-- Kil'jaeden
+					["g"] = {
+						ach(11770),	-- Dark Souls
+						i(151539),	-- Technique: Glyph of Ember Shards
+						i(147034),	-- Shadow-Scarred Headcover
+						i(146988),	-- Gloves of Furtive Oppression
+						i(147048),	-- Vicegrip of the Unrepentant
+						i(147072),	-- Soul-Render's Greatbelt
+						i(147347),	-- Waistguard of Profane Duplicity
+						i(147066),	-- Greaves of Impure Midnight
+						i(147046),	-- Star-Stalker Treads
+						i(147195),	-- Seal of the Second Duumvirate
+						i(147026),	-- Shifting Cosmic Sliver
+						i(151190),	-- Specter of Betrayal
+						i(147007),	-- The Deceiver's Grand Design
+						i(147019),	-- Tome of Unraveling Sanity
+						i(147099),	-- Boon of the Prophet
+						i(147082),	-- Man'ari Blood Pact
+						i(147087),	-- Ruinous Ashes
+						i(147111),	-- Scornful Reflection
+						i(147095),	-- Sphere of Entropy
+						i(147079),	-- Torn Fabric of Reality
+					},
+				}),
 			}),
 			d(15, {		-- Heroic
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["groups"] = {
-						{
-							["itemID"] = 147520,	-- Cache of Fel Treasures [Heroic]
+					["g"] = {
+						i(147520, {	-- Cache of Fel Treasures [Heroic]
 							["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-						},
-						{
-							["itemID"] = 147499,	-- Encrusted Naga Scale [Heroic]
+						}),
+						i(147499, {	-- Encrusted Naga Scale [Heroic]
 							["questID"] = 47116,	-- Tomb of Sargeras: The Tomb's Mistress [Heroic]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(147520),	-- Cache of Fel Treasures [Heroic]
 							},
-						},
-						{
-							["itemID"] = 147511,	-- Seal of the Deceiver [Heroic]
+						}),
+						i(147511, {	-- Seal of the Deceiver [Heroic]
 							["questID"] = 47128,	-- Tomb of Sargeras: The Deceiver [Heroic]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(147520),	-- Cache of Fel Treasures [Heroic]
 							},
-						},
-						{
-							["itemID"] = 147507,	-- Wailing Soul [Heroic]
+						}),
+						i(147507, {	-- Wailing Soul [Heroic]
 							["questID"] = 47124,	-- Tomb of Sargeras: The Fallen Avatar [Heroic]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(147520),	-- Cache of Fel Treasures [Heroic]
 							},
-						},
-						{
-							["itemID"] = 147503,	-- Worshipper's Scrawlings [Heroic]
+						}),
+						i(147503, {	-- Worshipper's Scrawlings [Heroic]
 							["questID"] = 47120,	-- Tomb of Sargeras: Free The Tormented [Heroic]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(147520),	-- Cache of Fel Treasures [Heroic]
 							},
-						},
+						}),
 					},
 				}),
 				n(ZONEDROPS, {
-					i(147423),
-					i(147422),
-					i(146989),
-					i(147425),
-					i(147424),
-					i(147038),
-					i(147427),
-					i(147426),
-					i(147044),
-					i(147429),
-					i(147428),
-					i(147064),
+					i(147422),	-- Acolyte's Abandoned Footwraps
+					i(147425),	-- Cord of Pilfered Rosaries
+					i(147064),	-- Diadem of the Highborne
+					i(146989),	-- Fel-Flecked Grips
+					i(147429),	-- Girdle of the Crumbling Sanctum
+					i(147427),	-- Pristine Moon-Wrought Clasp
+					i(147423),	-- Sash of the Unredeemed
+					i(147044),	-- Soul-Rattle Ribcage
+					i(147428),	-- Spiked Terrorwake Greatboots
+					i(147426),	-- Treads of Panicked Escape
+					i(147424),	-- Treads of Violent Intrusion
+					i(147038),	-- Wakening Horror Spaulders
 				}),
-				cr(115844, e(1862, {	-- Goroth
-					i(147069),	-- Shoulderplates of Crackling Flame
-					i(146984),	-- Cloak of Stifling Brimstone
-					i(147027),	-- Spirebreaker Harness
-					i(147057),	-- Pain-Singed Armguards
-					i(147055),	-- Belt of Screaming Slag
-					i(147039),	-- Cinch of Sizzling Flesh
-					i(147065),	-- Lava-Slough Legguards
-					i(146992),	-- Legwraps of Fused Loathing
-					i(146986),	-- Emberscatter Treads
-					i(147022),	-- Feverish Carapace
-					i(147009),	-- Infernal Cinders
-					i(147108),	-- Brand of Relentless Agony
-					i(147076),	-- Charred Hymnal of the Moon
-					i(147112),	-- Felsoul Vortex
-					i(147104),	-- Icon of Perverse Animation
-					i(147084),	-- Imploding Infernal Star
-				})),
+				ach(11763, {	-- Glory of the Tomb Raider
+					title(362),	-- <Name> the Tomb Raider
+					i(101426),	-- Micronax Controller
+				}),
+				e(1862, {	-- Goroth
+					["cr"] = 115844,
+					["g"] = {
+						ach(11724),	-- Fel Turkey
+						i(147069),	-- Shoulderplates of Crackling Flame
+						i(146984),	-- Cloak of Stifling Brimstone
+						i(147027),	-- Spirebreaker Harness
+						i(147057),	-- Pain-Singed Armguards
+						i(147055),	-- Belt of Screaming Slag
+						i(147039),	-- Cinch of Sizzling Flesh
+						i(147065),	-- Lava-Slough Legguards
+						i(146992),	-- Legwraps of Fused Loathing
+						i(146986),	-- Emberscatter Treads
+						i(147022),	-- Feverish Carapace
+						i(147009),	-- Infernal Cinders
+						i(147108),	-- Brand of Relentless Agony
+						i(147076),	-- Charred Hymnal of the Moon
+						i(147112),	-- Felsoul Vortex
+						i(147104),	-- Icon of Perverse Animation
+						i(147084),	-- Imploding Infernal Star
+					},
+				}),
 				e(1867, {	-- Demonic Inquisition (Atrigan)
 					["crs"] = {
 						116689,	-- Atrigan*
 						116691,	-- Belac*
 					},
 					["g"] = {
+						ach(11696),	-- Grin and Bear It
 						i(147147),	-- Crown of the Arcane Tempest
 						i(147130),	-- Demonbane Faceguard
 						i(147183),	-- Diabolic Helm
@@ -790,33 +818,37 @@ _.Instances = { tier(7, {	-- Legion
 						i(147088),	-- Smoldering Thumbscrews
 					},
 				}),
-				cr(116407, e(1856, {	-- Harjatan
-					i(147037),	-- Dripping Arcfin Shoulderpads
-					i(147043),	-- Hauberk of Frozen Mist
-					i(146994),	-- Robe of Aqueous Command
-					i(147067),	-- Wave-Hammered Breastplate
-					i(147000),	-- Ravenous Devotee's Bracelets
-					i(147129),	-- Demonbane Gauntlets
-					i(147182),	-- Diabolic Gloves
-					i(147171),	-- Fanged Slayer's Handguards
-					i(147164),	-- Gloves of Blind Absolution
-					i(147146),	-- Gloves of the Arcane Tempest
-					i(147123),	-- Gravewarden Handguards
-					i(147177),	-- Grips of the Skybreaker
-					i(147159),	-- Radiant Lightbringer Gauntlets
-					i(147135),	-- Stormheart Gloves
-					i(147189),	-- Titanic Onslaught Handguards
-					i(147141),	-- Wildstalker Gauntlets
-					i(147153),	-- Xuen's Gauntlets
-					i(147071),	-- Shiversleet Waistguard
-					i(147029),	-- Glacier Walkers
-					i(147045),	-- Insulated Finpads
-					i(147020),	-- Scaled Band of Servitude
-					i(147002),	-- Charm of the Rising Tide
-					i(147100),	-- Calcified Barnacle
-					i(147109),	-- Harjatan's Leering Eye
-					i(147092),	-- Ice-Threaded Conch
-				})),
+				e(1856, {	-- Harjatan
+					["cr"] = 116407,	-- Harjatan
+					["g"] = {
+						ach(11699),	-- Grand Fin-ale
+						i(147037),	-- Dripping Arcfin Shoulderpads
+						i(147043),	-- Hauberk of Frozen Mist
+						i(146994),	-- Robe of Aqueous Command
+						i(147067),	-- Wave-Hammered Breastplate
+						i(147000),	-- Ravenous Devotee's Bracelets
+						i(147129),	-- Demonbane Gauntlets
+						i(147182),	-- Diabolic Gloves
+						i(147171),	-- Fanged Slayer's Handguards
+						i(147164),	-- Gloves of Blind Absolution
+						i(147146),	-- Gloves of the Arcane Tempest
+						i(147123),	-- Gravewarden Handguards
+						i(147177),	-- Grips of the Skybreaker
+						i(147159),	-- Radiant Lightbringer Gauntlets
+						i(147135),	-- Stormheart Gloves
+						i(147189),	-- Titanic Onslaught Handguards
+						i(147141),	-- Wildstalker Gauntlets
+						i(147153),	-- Xuen's Gauntlets
+						i(147071),	-- Shiversleet Waistguard
+						i(147029),	-- Glacier Walkers
+						i(147045),	-- Insulated Finpads
+						i(147020),	-- Scaled Band of Servitude
+						i(147002),	-- Charm of the Rising Tide
+						i(147100),	-- Calcified Barnacle
+						i(147109),	-- Harjatan's Leering Eye
+						i(147092),	-- Ice-Threaded Conch
+					},
+				}),
 				e(1903, {	-- Sisters of the Moon
 					["crs"] = {
 						118374,	-- Sisters of the Moon (Captain Yathae Moonstrike)
@@ -824,6 +856,7 @@ _.Instances = { tier(7, {	-- Legion
 						118518,	-- Sisters of the Moon (Priestess Lunaspyre)
 					},
 					["g"] = {
+						ach(11773),	-- Wax On, Wax Off
 						i(147033),	-- Lunar-Wrath Headgear
 						i(147054),	-- Mantle of Waning Radiance
 						i(146997),	-- Shoulderpads of Whispering Twilight
@@ -843,34 +876,38 @@ _.Instances = { tier(7, {	-- Legion
 						i(147078),	-- Mote of Astral Suffusion
 					},
 				}),
-				cr(115767, e(1861, {	-- Mistress Sassz'ine
-					i(143643),	-- Abyss Worm
-					i(147049),	-- Azure Squallshaper's Helm
-					i(146990),	-- Hundred-Fathom Veil
-					i(146985),	-- Shroud of the Drowned Adherent
-					i(147028),	-- Hide of the Abyssal Behemoth
-					i(147131),	-- Demonbane Leggings
-					i(147184),	-- Diabolic Leggings
-					i(147173),	-- Fanged Slayer's Legguards
-					i(147125),	-- Gravewarden Legplates
-					i(147166),	-- Leggings of Blind Absolution
-					i(147148),	-- Leggings of the Arcane Tempest
-					i(147179),	-- Legguards of the Skybreaker
-					i(147161),	-- Radiant Lightbringer Greaves
-					i(147137),	-- Stormheart Legguards
-					i(147191),	-- Titanic Onslaught Greaves
-					i(147143),	-- Wildstalker Leggings
-					i(147155),	-- Xuen's Legguards
-					i(147059),	-- Iron Ballast Sabatons
-					i(147023),	-- Leviathan's Hunger
-					i(147004),	-- Sea Star of the Depthmother
-					i(147016),	-- Terror From Below
-					i(147011),	-- Vial of Ceaseless Toxins
-					i(147113),	-- Flawless Hurricane Pearl
-					i(147093),	-- Globe of Frothing Eddies
-					i(147085),	-- Mutated Nautilus
-					i(147081),	-- Pungent Chum
-				})),
+				e(1861, {	-- Mistress Sassz'ine
+					["cr"] = 115767,	-- Mistress Sassz'ine
+					["g"] = {
+						ach(11676),	-- Five Course Seafood Buffet
+						i(143643),	-- Abyss Worm
+						i(147049),	-- Azure Squallshaper's Helm
+						i(146990),	-- Hundred-Fathom Veil
+						i(146985),	-- Shroud of the Drowned Adherent
+						i(147028),	-- Hide of the Abyssal Behemoth
+						i(147131),	-- Demonbane Leggings
+						i(147184),	-- Diabolic Leggings
+						i(147173),	-- Fanged Slayer's Legguards
+						i(147125),	-- Gravewarden Legplates
+						i(147166),	-- Leggings of Blind Absolution
+						i(147148),	-- Leggings of the Arcane Tempest
+						i(147179),	-- Legguards of the Skybreaker
+						i(147161),	-- Radiant Lightbringer Greaves
+						i(147137),	-- Stormheart Legguards
+						i(147191),	-- Titanic Onslaught Greaves
+						i(147143),	-- Wildstalker Leggings
+						i(147155),	-- Xuen's Legguards
+						i(147059),	-- Iron Ballast Sabatons
+						i(147023),	-- Leviathan's Hunger
+						i(147004),	-- Sea Star of the Depthmother
+						i(147016),	-- Terror From Below
+						i(147011),	-- Vial of Ceaseless Toxins
+						i(147113),	-- Flawless Hurricane Pearl
+						i(147093),	-- Globe of Frothing Eddies
+						i(147085),	-- Mutated Nautilus
+						i(147081),	-- Pungent Chum
+					},
+				}),
 				e(1896, {	-- The Desolate Host
 					["crs"] = {
 						119072,	-- The Desolate Host
@@ -878,6 +915,7 @@ _.Instances = { tier(7, {	-- Legion
 						118462,	-- The Desolate Host — Soul Queen Dejahna
 					},
 					["g"] = {
+						ach(11674),	-- Great Soul, Great Purpose
 						i(147063),	-- Armet of the Rotten Mind
 						i(147014),	-- Locket of Splintered Souls
 						i(147070),	-- Grave-Dredged Pauldrons
@@ -904,40 +942,45 @@ _.Instances = { tier(7, {	-- Legion
 						i(147114),	-- Preserved Starlight Incense
 					},
 				}),
-				cr(118289, e(1897, {	-- Maiden of Vigilance
-					i(151524),	-- Hammer of Vigilance
-					i(147050),	-- Crown of Discarded Hope
-					i(147127),	-- Demonbane Harness
-					i(147185),	-- Diabolic Robe
-					i(147169),	-- Fanged Slayer's Chestguard
-					i(147121),	-- Gravewarden Chestguard
-					i(147175),	-- Harness of the Skybreaker
-					i(147157),	-- Radiant Lightbringer Breastplate
-					i(147167),	-- Robes of Blind Absolution
-					i(147149),	-- Robes of the Arcane Tempest
-					i(147133),	-- Stormheart Tunic
-					i(147187),	-- Titanic Onslaught Breastplate
-					i(147139),	-- Wildstalker Chestguard
-					i(147151),	-- Xuen's Tunic
-					i(147032),	-- Gloves of Wayward Compulsions
-					i(146999),	-- Strife-Riddled Cinch
-					i(146993),	-- Leggings of Divine Portents
-					i(147060),	-- Steadfast Purifier's Warboots
-					i(147194),	-- Band of Rescinded Truths
-					i(147015),	-- Engine of Eradication
-					i(147025),	-- Recompiled Guardian Module
-					i(147098),	-- Fragment of Grace
-					i(147090),	-- Stabilized Extinction Protocol
-					i(151189),	-- Tears of the Maiden
-					i(147115),	-- Unfurling Origination
-					i(147094),	-- Virus of Lethargy
-				})),
+				e(1897, {	-- Maiden of Vigilance
+					["cr"] = 118289,	-- Maiden of Vigilance
+					["g"] = {
+						ach(11675),	-- Sky Walker
+						i(151524),	-- Hammer of Vigilance
+						i(147050),	-- Crown of Discarded Hope
+						i(147127),	-- Demonbane Harness
+						i(147185),	-- Diabolic Robe
+						i(147169),	-- Fanged Slayer's Chestguard
+						i(147121),	-- Gravewarden Chestguard
+						i(147175),	-- Harness of the Skybreaker
+						i(147157),	-- Radiant Lightbringer Breastplate
+						i(147167),	-- Robes of Blind Absolution
+						i(147149),	-- Robes of the Arcane Tempest
+						i(147133),	-- Stormheart Tunic
+						i(147187),	-- Titanic Onslaught Breastplate
+						i(147139),	-- Wildstalker Chestguard
+						i(147151),	-- Xuen's Tunic
+						i(147032),	-- Gloves of Wayward Compulsions
+						i(146999),	-- Strife-Riddled Cinch
+						i(146993),	-- Leggings of Divine Portents
+						i(147060),	-- Steadfast Purifier's Warboots
+						i(147194),	-- Band of Rescinded Truths
+						i(147015),	-- Engine of Eradication
+						i(147025),	-- Recompiled Guardian Module
+						i(147098),	-- Fragment of Grace
+						i(147090),	-- Stabilized Extinction Protocol
+						i(151189),	-- Tears of the Maiden
+						i(147115),	-- Unfurling Origination
+						i(147094),	-- Virus of Lethargy
+					},
+				}),
 				e(1873, {	-- Fallen Avatar
 					["crs"] = {
 						116939,	-- Fallen Avatar
 						117264,	-- Fallen Avatar — Maiden of Valor
 					},
 					["g"] = {
+						ach(11683),	-- Bingo!
 						i(146991),	-- Blackened Mask of Disgrace
 						i(147132),	-- Demonbane Shoulderpads
 						i(147186),	-- Diabolic Mantle
@@ -963,108 +1006,118 @@ _.Instances = { tier(7, {	-- Legion
 						i(147107),	-- Valorous Spark of Hope
 					},
 				}),
-				cr(117269, e(1898, {	-- Kil'jaeden
-					i(151539),	-- Technique: Glyph of Ember Shards
-					i(147034),	-- Shadow-Scarred Headcover
-					i(146988),	-- Gloves of Furtive Oppression
-					i(147048),	-- Vicegrip of the Unrepentant
-					i(147072),	-- Soul-Render's Greatbelt
-					i(147347),	-- Waistguard of Profane Duplicity
-					i(147066),	-- Greaves of Impure Midnight
-					i(147046),	-- Star-Stalker Treads
-					i(147195),	-- Seal of the Second Duumvirate
-					i(147026),	-- Shifting Cosmic Sliver
-					i(151190),	-- Specter of Betrayal
-					i(147007),	-- The Deceiver's Grand Design
-					i(147019),	-- Tome of Unraveling Sanity
-					i(147099),	-- Boon of the Prophet
-					i(147082),	-- Man'ari Blood Pact
-					i(147087),	-- Ruinous Ashes
-					i(147111),	-- Scornful Reflection
-					i(147095),	-- Sphere of Entropy
-					i(147079),	-- Torn Fabric of Reality
-				})),
+				e(1898, {	-- Kil'jaeden
+					["cr"] = 117269,	-- Kil'jaeden
+					["g"] = {
+						ach(11770),	-- Dark Souls
+						i(151539),	-- Technique: Glyph of Ember Shards
+						i(147034),	-- Shadow-Scarred Headcover
+						i(146988),	-- Gloves of Furtive Oppression
+						i(147048),	-- Vicegrip of the Unrepentant
+						i(147072),	-- Soul-Render's Greatbelt
+						i(147347),	-- Waistguard of Profane Duplicity
+						i(147066),	-- Greaves of Impure Midnight
+						i(147046),	-- Star-Stalker Treads
+						i(147195),	-- Seal of the Second Duumvirate
+						i(147026),	-- Shifting Cosmic Sliver
+						i(151190),	-- Specter of Betrayal
+						i(147007),	-- The Deceiver's Grand Design
+						i(147019),	-- Tome of Unraveling Sanity
+						i(147099),	-- Boon of the Prophet
+						i(147082),	-- Man'ari Blood Pact
+						i(147087),	-- Ruinous Ashes
+						i(147111),	-- Scornful Reflection
+						i(147095),	-- Sphere of Entropy
+						i(147079),	-- Torn Fabric of Reality
+					},
+				}),
 			}),
 			d(16, {		-- Mythic
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["groups"] = {
-						{
-							["itemID"] = 147521,	-- Cache of Fel Treasures [Mythic]
+					["g"] = {
+						i(147521, {	-- Cache of Fel Treasures [Mythic]
 							["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
-						},
-						{
-							["itemID"] = 147500,	-- Encrusted Naga Scale [Mythic]
+						}),
+						i(147500, {	-- Encrusted Naga Scale [Mythic]
 							["questID"] = 47117,	-- Tomb of Sargeras: The Tomb's Mistress [Mythic]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(147521),	-- Cache of Fel Treasures [Mythic]
 							},
-						},
-						{
-							["itemID"] = 147512,	-- Seal of the Deceiver [Mythic]
+						}),
+						i(147512, {	-- Seal of the Deceiver [Mythic]
 							["questID"] = 47129,	-- Tomb of Sargeras: The Deceiver [Mythic]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(147521),	-- Cache of Fel Treasures [Mythic]
 							},
-						},
-						{
-							["itemID"] = 147508,	-- Wailing Soul [Mythic]
+						}),
+						i(147508, {	-- Wailing Soul [Mythic]
 							["questID"] = 47125,	-- Tomb of Sargeras: The Fallen Avatar [Mythic]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(147521),	-- Cache of Fel Treasures [Mythic]
 							},
-						},
-						{
-							["itemID"] = 147504,	-- Worshipper's Scrawlings [Mythic]
+						}),
+						i(147504, {	-- Worshipper's Scrawlings [Mythic]
 							["questID"] = 47121,	-- Tomb of Sargeras: Free The Tormented [Mythic]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(147521),	-- Cache of Fel Treasures [Mythic]
 							},
-						},
+						}),
 					},
 				}),
 				n(ZONEDROPS, {
-					i(147423),
-					i(147422),
-					i(146989),
-					i(147425),
-					i(147424),
-					i(147038),
-					i(147427),
-					i(147426),
-					i(147044),
-					i(147429),
-					i(147428),
-					i(147064),
+					i(147422),	-- Acolyte's Abandoned Footwraps
+					i(147425),	-- Cord of Pilfered Rosaries
+					i(147064),	-- Diadem of the Highborne
+					i(146989),	-- Fel-Flecked Grips
+					i(147429),	-- Girdle of the Crumbling Sanctum
+					i(147427),	-- Pristine Moon-Wrought Clasp
+					i(147423),	-- Sash of the Unredeemed
+					i(147044),	-- Soul-Rattle Ribcage
+					i(147428),	-- Spiked Terrorwake Greatboots
+					i(147426),	-- Treads of Panicked Escape
+					i(147424),	-- Treads of Violent Intrusion
+					i(147038),	-- Wakening Horror Spaulders
 				}),
-				cr(115844, e(1862, {	-- Goroth
-					i(147069),	-- Shoulderplates of Crackling Flame
-					i(146984),	-- Cloak of Stifling Brimstone
-					i(147027),	-- Spirebreaker Harness
-					i(147057),	-- Pain-Singed Armguards
-					i(147055),	-- Belt of Screaming Slag
-					i(147039),	-- Cinch of Sizzling Flesh
-					i(147065),	-- Lava-Slough Legguards
-					i(146992),	-- Legwraps of Fused Loathing
-					i(146986),	-- Emberscatter Treads
-					i(147022),	-- Feverish Carapace
-					i(147009),	-- Infernal Cinders
-					i(147108),	-- Brand of Relentless Agony
-					i(147076),	-- Charred Hymnal of the Moon
-					i(147112),	-- Felsoul Vortex
-					i(147104),	-- Icon of Perverse Animation
-					i(147084),	-- Imploding Infernal Star
-				})),
+				ach(11763, {	-- Glory of the Tomb Raider
+					title(362),	-- <Name> the Tomb Raider
+					i(101426),	-- Micronax Controller
+				}),
+				e(1862, {	-- Goroth
+					["cr"] = 115844,	-- Goroth
+					["g"] = {
+						ach(11767),	-- Mythic: Goroth
+						ach(11724),	-- Fel Turkey
+						i(147069),	-- Shoulderplates of Crackling Flame
+						i(146984),	-- Cloak of Stifling Brimstone
+						i(147027),	-- Spirebreaker Harness
+						i(147057),	-- Pain-Singed Armguards
+						i(147055),	-- Belt of Screaming Slag
+						i(147039),	-- Cinch of Sizzling Flesh
+						i(147065),	-- Lava-Slough Legguards
+						i(146992),	-- Legwraps of Fused Loathing
+						i(146986),	-- Emberscatter Treads
+						i(147022),	-- Feverish Carapace
+						i(147009),	-- Infernal Cinders
+						i(147108),	-- Brand of Relentless Agony
+						i(147076),	-- Charred Hymnal of the Moon
+						i(147112),	-- Felsoul Vortex
+						i(147104),	-- Icon of Perverse Animation
+						i(147084),	-- Imploding Infernal Star
+					},
+				}),
 				e(1867, {	-- Demonic Inquisition
 					["crs"] = {
 						116689,	-- Atrigan*
 						116691,	-- Belac*
 					},
 					["g"] = {
+						ach(11774),	-- Mythic: Demonic Inquisition
+						ach(11696),	-- Grin and Bear It
 						i(147147),	-- Crown of the Arcane Tempest
 						i(147130),	-- Demonbane Faceguard
 						i(147183),	-- Diabolic Helm
@@ -1093,33 +1146,38 @@ _.Instances = { tier(7, {	-- Legion
 						i(147088),	-- Smoldering Thumbscrews
 					},
 				}),
-				cr(116407, e(1856, {	-- Harjatan
-					i(147037),	-- Dripping Arcfin Shoulderpads
-					i(147043),	-- Hauberk of Frozen Mist
-					i(146994),	-- Robe of Aqueous Command
-					i(147067),	-- Wave-Hammered Breastplate
-					i(147000),	-- Ravenous Devotee's Bracelets
-					i(147129),	-- Demonbane Gauntlets
-					i(147182),	-- Diabolic Gloves
-					i(147171),	-- Fanged Slayer's Handguards
-					i(147164),	-- Gloves of Blind Absolution
-					i(147146),	-- Gloves of the Arcane Tempest
-					i(147123),	-- Gravewarden Handguards
-					i(147177),	-- Grips of the Skybreaker
-					i(147159),	-- Radiant Lightbringer Gauntlets
-					i(147135),	-- Stormheart Gloves
-					i(147189),	-- Titanic Onslaught Handguards
-					i(147141),	-- Wildstalker Gauntlets
-					i(147153),	-- Xuen's Gauntlets
-					i(147071),	-- Shiversleet Waistguard
-					i(147029),	-- Glacier Walkers
-					i(147045),	-- Insulated Finpads
-					i(147020),	-- Scaled Band of Servitude
-					i(147002),	-- Charm of the Rising Tide
-					i(147100),	-- Calcified Barnacle
-					i(147109),	-- Harjatan's Leering Eye
-					i(147092),	-- Ice-Threaded Conch
-				})),
+				e(1856, {	-- Harjatan
+					["cr"] = 116407,	-- Harjatan
+					["g"] = {
+						ach(11775),	-- Mythic: Harjatan
+						ach(11699),	-- Grand Fin-ale
+						i(147037),	-- Dripping Arcfin Shoulderpads
+						i(147043),	-- Hauberk of Frozen Mist
+						i(146994),	-- Robe of Aqueous Command
+						i(147067),	-- Wave-Hammered Breastplate
+						i(147000),	-- Ravenous Devotee's Bracelets
+						i(147129),	-- Demonbane Gauntlets
+						i(147182),	-- Diabolic Gloves
+						i(147171),	-- Fanged Slayer's Handguards
+						i(147164),	-- Gloves of Blind Absolution
+						i(147146),	-- Gloves of the Arcane Tempest
+						i(147123),	-- Gravewarden Handguards
+						i(147177),	-- Grips of the Skybreaker
+						i(147159),	-- Radiant Lightbringer Gauntlets
+						i(147135),	-- Stormheart Gloves
+						i(147189),	-- Titanic Onslaught Handguards
+						i(147141),	-- Wildstalker Gauntlets
+						i(147153),	-- Xuen's Gauntlets
+						i(147071),	-- Shiversleet Waistguard
+						i(147029),	-- Glacier Walkers
+						i(147045),	-- Insulated Finpads
+						i(147020),	-- Scaled Band of Servitude
+						i(147002),	-- Charm of the Rising Tide
+						i(147100),	-- Calcified Barnacle
+						i(147109),	-- Harjatan's Leering Eye
+						i(147092),	-- Ice-Threaded Conch
+					},
+				}),
 				e(1903, {	-- Sisters of the Moon
 					["crs"] = {
 						118374,	-- Sisters of the Moon (Captain Yathae Moonstrike)
@@ -1127,6 +1185,8 @@ _.Instances = { tier(7, {	-- Legion
 						118518,	-- Sisters of the Moon (Priestess Lunaspyre)
 					},
 					["g"] = {
+						ach(11777),	-- Mythic: Sisters of the Moon
+						ach(11773),	-- Wax On, Wax Off
 						i(147033),	-- Lunar-Wrath Headgear
 						i(147054),	-- Mantle of Waning Radiance
 						i(146997),	-- Shoulderpads of Whispering Twilight
@@ -1146,34 +1206,39 @@ _.Instances = { tier(7, {	-- Legion
 						i(147078),	-- Mote of Astral Suffusion
 					},
 				}),
-				cr(115767, e(1861, {	-- Mistress Sassz'ine
-					i(143643),	-- Abyss Worm
-					i(147049),	-- Azure Squallshaper's Helm
-					i(146990),	-- Hundred-Fathom Veil
-					i(146985),	-- Shroud of the Drowned Adherent
-					i(147028),	-- Hide of the Abyssal Behemoth
-					i(147131),	-- Demonbane Leggings
-					i(147184),	-- Diabolic Leggings
-					i(147173),	-- Fanged Slayer's Legguards
-					i(147125),	-- Gravewarden Legplates
-					i(147166),	-- Leggings of Blind Absolution
-					i(147148),	-- Leggings of the Arcane Tempest
-					i(147179),	-- Legguards of the Skybreaker
-					i(147161),	-- Radiant Lightbringer Greaves
-					i(147137),	-- Stormheart Legguards
-					i(147191),	-- Titanic Onslaught Greaves
-					i(147143),	-- Wildstalker Leggings
-					i(147155),	-- Xuen's Legguards
-					i(147059),	-- Iron Ballast Sabatons
-					i(147023),	-- Leviathan's Hunger
-					i(147004),	-- Sea Star of the Depthmother
-					i(147016),	-- Terror From Below
-					i(147011),	-- Vial of Ceaseless Toxins
-					i(147113),	-- Flawless Hurricane Pearl
-					i(147093),	-- Globe of Frothing Eddies
-					i(147085),	-- Mutated Nautilus
-					i(147081),	-- Pungent Chum
-				})),
+				e(1861, {	-- Mistress Sassz'ine
+					["cr"] = 115767,	-- Mistress Sassz'ine
+					["g"] = {
+						ach(11776),	-- Mythic: Mistress Sassz'ine
+						ach(11676),	-- Five Course Seafood Buffet
+						i(143643),	-- Abyss Worm
+						i(147049),	-- Azure Squallshaper's Helm
+						i(146990),	-- Hundred-Fathom Veil
+						i(146985),	-- Shroud of the Drowned Adherent
+						i(147028),	-- Hide of the Abyssal Behemoth
+						i(147131),	-- Demonbane Leggings
+						i(147184),	-- Diabolic Leggings
+						i(147173),	-- Fanged Slayer's Legguards
+						i(147125),	-- Gravewarden Legplates
+						i(147166),	-- Leggings of Blind Absolution
+						i(147148),	-- Leggings of the Arcane Tempest
+						i(147179),	-- Legguards of the Skybreaker
+						i(147161),	-- Radiant Lightbringer Greaves
+						i(147137),	-- Stormheart Legguards
+						i(147191),	-- Titanic Onslaught Greaves
+						i(147143),	-- Wildstalker Leggings
+						i(147155),	-- Xuen's Legguards
+						i(147059),	-- Iron Ballast Sabatons
+						i(147023),	-- Leviathan's Hunger
+						i(147004),	-- Sea Star of the Depthmother
+						i(147016),	-- Terror From Below
+						i(147011),	-- Vial of Ceaseless Toxins
+						i(147113),	-- Flawless Hurricane Pearl
+						i(147093),	-- Globe of Frothing Eddies
+						i(147085),	-- Mutated Nautilus
+						i(147081),	-- Pungent Chum
+					},
+				}),
 				e(1896, {	-- The Desolate Host
 					["crs"] = {
 						119072,	-- The Desolate Host
@@ -1181,6 +1246,8 @@ _.Instances = { tier(7, {	-- Legion
 						118462,	-- The Desolate Host — Soul Queen Dejahna
 					},
 					["g"] = {
+						ach(11778),	-- Mythic: The Desolate Host
+						ach(11674),	-- Great Soul, Great Purpose
 						i(147063),	-- Armet of the Rotten Mind
 						i(147014),	-- Locket of Splintered Souls
 						i(147070),	-- Grave-Dredged Pauldrons
@@ -1207,40 +1274,47 @@ _.Instances = { tier(7, {	-- Legion
 						i(147114),	-- Preserved Starlight Incense
 					},
 				}),
-				cr(118289, e(1897, {	-- Maiden of Vigilance
-					i(151524),	-- Hammer of Vigilance
-					i(147050),	-- Crown of Discarded Hope
-					i(147127),	-- Demonbane Harness
-					i(147185),	-- Diabolic Robe
-					i(147169),	-- Fanged Slayer's Chestguard
-					i(147121),	-- Gravewarden Chestguard
-					i(147175),	-- Harness of the Skybreaker
-					i(147157),	-- Radiant Lightbringer Breastplate
-					i(147167),	-- Robes of Blind Absolution
-					i(147149),	-- Robes of the Arcane Tempest
-					i(147133),	-- Stormheart Tunic
-					i(147187),	-- Titanic Onslaught Breastplate
-					i(147139),	-- Wildstalker Chestguard
-					i(147151),	-- Xuen's Tunic
-					i(147032),	-- Gloves of Wayward Compulsions
-					i(146999),	-- Strife-Riddled Cinch
-					i(146993),	-- Leggings of Divine Portents
-					i(147060),	-- Steadfast Purifier's Warboots
-					i(147194),	-- Band of Rescinded Truths
-					i(147015),	-- Engine of Eradication
-					i(147025),	-- Recompiled Guardian Module
-					i(147098),	-- Fragment of Grace
-					i(147090),	-- Stabilized Extinction Protocol
-					i(151189),	-- Tears of the Maiden
-					i(147115),	-- Unfurling Origination
-					i(147094),	-- Virus of Lethargy
-				})),
+				e(1897, {	-- Maiden of Vigilance
+					["cr"] = 118289,	-- Maiden of Vigilance
+					["g"] = {
+						ach(11779),	-- Mythic: Maiden of Vigilance
+						ach(11675),	-- Sky Walker
+						i(151524),	-- Hammer of Vigilance
+						i(147050),	-- Crown of Discarded Hope
+						i(147127),	-- Demonbane Harness
+						i(147185),	-- Diabolic Robe
+						i(147169),	-- Fanged Slayer's Chestguard
+						i(147121),	-- Gravewarden Chestguard
+						i(147175),	-- Harness of the Skybreaker
+						i(147157),	-- Radiant Lightbringer Breastplate
+						i(147167),	-- Robes of Blind Absolution
+						i(147149),	-- Robes of the Arcane Tempest
+						i(147133),	-- Stormheart Tunic
+						i(147187),	-- Titanic Onslaught Breastplate
+						i(147139),	-- Wildstalker Chestguard
+						i(147151),	-- Xuen's Tunic
+						i(147032),	-- Gloves of Wayward Compulsions
+						i(146999),	-- Strife-Riddled Cinch
+						i(146993),	-- Leggings of Divine Portents
+						i(147060),	-- Steadfast Purifier's Warboots
+						i(147194),	-- Band of Rescinded Truths
+						i(147015),	-- Engine of Eradication
+						i(147025),	-- Recompiled Guardian Module
+						i(147098),	-- Fragment of Grace
+						i(147090),	-- Stabilized Extinction Protocol
+						i(151189),	-- Tears of the Maiden
+						i(147115),	-- Unfurling Origination
+						i(147094),	-- Virus of Lethargy
+					},
+				}),
 				e(1873, {	-- Fallen Avatar
 					["crs"] = {
 						116939,	-- Fallen Avatar
 						117264,	-- Fallen Avatar — Maiden of Valor
 					},
 					["g"] = {
+						ach(11780),	-- Mythic: Fallen Avatar
+						ach(11683),	-- Bingo!
 						i(146991),	-- Blackened Mask of Disgrace
 						i(147132),	-- Demonbane Shoulderpads
 						i(147186),	-- Diabolic Mantle
@@ -1266,47 +1340,43 @@ _.Instances = { tier(7, {	-- Legion
 						i(147107),	-- Valorous Spark of Hope
 					},
 				}),
-				cr(117269, e(1898, {	-- Kil'jaeden					
-					{	-- Cutting Edge: Kil'jaeden
-						["achievementID"] = 11875,	-- Cutting Edge: Kil'jaeden
-						["u"] = 2,	-- Legacy Achievement
+				e(1898, {	-- Kil'jaeden
+					["cr"] = 117269,	-- Kil'jaeden
+					["g"] = {
+						ach(11875, {	-- Cutting Edge: Kil'jaeden
+							["u"] = 2,	-- Legacy Achievement
+						}),
+						ach(11874, {	-- Ahead of the Curve: Kil'jaeden
+							["u"] = 2,	-- Legacy Achievement
+						}),
+						ach(11783, {	-- Realm First! Kil'jaeden
+							["u"] = 2,	-- Legacy Achievement
+						}),
+						ach(11781, {	-- Mythic: Kil'jaeden
+							title(357),	-- %s the Darkener
+						}),
+						ach(11770),	-- Dark Souls
+						i(151539),	-- Technique: Glyph of Ember Shards
+						i(147034),	-- Shadow-Scarred Headcover
+						i(146988),	-- Gloves of Furtive Oppression
+						i(147048),	-- Vicegrip of the Unrepentant
+						i(147072),	-- Soul-Render's Greatbelt
+						i(147347),	-- Waistguard of Profane Duplicity
+						i(147066),	-- Greaves of Impure Midnight
+						i(147046),	-- Star-Stalker Treads
+						i(147195),	-- Seal of the Second Duumvirate
+						i(147026),	-- Shifting Cosmic Sliver
+						i(151190),	-- Specter of Betrayal
+						i(147007),	-- The Deceiver's Grand Design
+						i(147019),	-- Tome of Unraveling Sanity
+						i(147099),	-- Boon of the Prophet
+						i(147082),	-- Man'ari Blood Pact
+						i(147087),	-- Ruinous Ashes
+						i(147111),	-- Scornful Reflection
+						i(147095),	-- Sphere of Entropy
+						i(147079),	-- Torn Fabric of Reality
 					},
-					{	-- Ahead of the Curve: Kil'jaeden
-						["achievementID"] = 11874,	-- Ahead of the Curve: Kil'jaeden
-						["u"] = 2,	-- Legacy Achievement
-					},
-					{	-- Realm First! Kil'jaeden
-						["achievementID"] = 11783,	-- Realm First! Kil'jaeden
-						["u"] = 2,	-- Legacy Achievement
-					},
-					{	-- Mythic: Kil'jaeden
-						["achievementID"] = 11781,	-- Mythic: Kil'jaeden
-						["g"] = {
-							{	-- <Name> the Darkener
-								["titleID"] = 357,	-- %s the Darkener
-							},
-						},
-					},
-					i(151539),	-- Technique: Glyph of Ember Shards
-					i(147034),	-- Shadow-Scarred Headcover
-					i(146988),	-- Gloves of Furtive Oppression
-					i(147048),	-- Vicegrip of the Unrepentant
-					i(147072),	-- Soul-Render's Greatbelt
-					i(147347),	-- Waistguard of Profane Duplicity
-					i(147066),	-- Greaves of Impure Midnight
-					i(147046),	-- Star-Stalker Treads
-					i(147195),	-- Seal of the Second Duumvirate
-					i(147026),	-- Shifting Cosmic Sliver
-					i(151190),	-- Specter of Betrayal
-					i(147007),	-- The Deceiver's Grand Design
-					i(147019),	-- Tome of Unraveling Sanity
-					i(147099),	-- Boon of the Prophet
-					i(147082),	-- Man'ari Blood Pact
-					i(147087),	-- Ruinous Ashes
-					i(147111),	-- Scornful Reflection
-					i(147095),	-- Sphere of Entropy
-					i(147079),	-- Torn Fabric of Reality
-				})),
+				}),
 			})
 		},
 	}),
