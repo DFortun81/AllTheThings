@@ -1433,7 +1433,7 @@ _.NeverImplemented =
 		q(48649),	-- Maiden of Vigilance
 		q(49612),	-- Maiden of Vigilance (triggered at the same time as above)
 	--	q(),	-- Fallen Avatar
-	--	q(),	-- Kil'jaeden
+		q(48083),	-- Kil'jaeden
 	
 	-- Antorus, the Burning Throne
 		q(45460),	-- Garothi Worldbreaker
@@ -2134,8 +2134,10 @@ _.NeverImplemented =
 		q(56893),	-- Warlord Zalzjar
 	
 	--	Mechagon
-					-- Arachnoid Harvester first kill	-- 55913 and 56506 both (Missing in ATT) triggered
-					-- Armored Vaultbot first kill
+		q(56089),	-- triggered on first rare kill — possibly blueprint looting?
+		q(56506),	-- triggered on third rare kill — was Mr. Fixthis for me, but someone else had it trigger on Arachnoid Harvester.  looted Performant Refined Logic Board and a Chain Ignitercoil
+		q(55913),	-- Arachnoid Harvester first kill
+		q(56996),	-- Armored Vaultbot first kill
 					-- Boilburn first kill  -- No first kill id
 		q(55920),	-- Boggac Skullbash first kill
 		q(55919),	-- Bonepicker first kill

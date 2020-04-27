@@ -661,6 +661,7 @@ _.Zones =
 				["sourceQuest"] = 54969,	-- Descent
 				["g"] = {
 					i(163887),	-- 7th Legionnaire's Longsword
+					i(163881),	-- 7th Legionnaire's Longbow
 					i(163890),	-- 7th Legionnaire's Claymore
 					i(163885),	-- 7th Legionnaire's Halberd
 					i(163886),	-- 7th Legionnaire's Stave
