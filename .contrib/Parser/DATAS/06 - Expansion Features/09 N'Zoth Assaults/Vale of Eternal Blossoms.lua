@@ -1114,7 +1114,7 @@ _.ExpansionFeatures =
 							["description"] = "Shares a spawn with Foul Observer.",
 						}),
 						crit(16, {		-- Corrupted Thaumaturge slain
-							["description"] = "Shares a spawn with Black Empire Thaumaturge.",
+							["description"] = "Shares a spawn with Black Empire Thaumaturge and Black Empire Conjurer.",
 						}),
 					}),
 					ach(14154, {	-- Defend the Vale

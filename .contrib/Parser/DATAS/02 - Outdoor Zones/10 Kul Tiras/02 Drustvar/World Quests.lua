@@ -64,10 +64,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(53311, {	-- Gleaming Storm Silver
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(48604, {	-- Home Again, Home Again
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -417,6 +413,12 @@ _.Zones =
 					q(51887, {	-- Fungi Trio
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
+					}),
+					q(53311, {	-- Gleaming Storm Silver
+						["requireSkill"] = MINING,
+						["isWorldQuest"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(51507, {	-- Gorehorn
 						["lvl"] = 120,

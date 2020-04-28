@@ -346,6 +346,19 @@ _.NeverImplemented =
 		-------------------
 		--   CATACLYSM   --
 		-------------------
+	--	Dungeons & Raids
+		q(35348),	-- Blackrock Caverns Reward Quest
+		q(35587),	-- Deadmines heroic completion
+		q(35358),	-- End Time heroic completion
+		q(35439),	-- Hour of Twilight dungeon reward (Kill benedictus)
+		q(35414),	-- Lost City of the Tol'vir dungeon reward (Kill Siamat)
+		q(35311),	-- Shadowfang Keep heroic bonus objective complete
+		q(35309),	-- Shadowfang Keep heroic completion (Kill Lord Godfrey)
+		q(35911),	-- Stonecore Reward Quest
+		q(35913),	-- Stonecore (Heroic) reward quest
+		q(35403),	-- Vortex Pinnacle dungeon reward (Kill Asaad)
+		q(35411),	-- Zul'Gurub Reward Quest
+
 		q(28347),	-- Coffer of Promise TRACKING QUEST
 		q(25071),	-- FLAG - Purple Murloc
 		q(28889),	-- Arcane Instructions Tracking Quest
@@ -360,21 +373,11 @@ _.NeverImplemented =
 		q(29592),	-- Caster Legendary BREADCRUMB TRACKER
 		
 		q(26565),	-- A Furious Catch (REMOVED) — unused version of Orgrimmar Cata fishing daily "A Golden Opportunity"
-		q(35348),	-- Blackrock Caverns Reward Quest
-		q(35587),	-- Deadmines heroic completion
-		q(35358),	-- End Time heroic completion
-		q(35439),	-- Hour of Twilight dungeon reward (Kill benedictus)
-		q(35414),	-- Lost City of the Tol'vir dungeon reward (Kill Siamat)
-		q(35911),	-- Stonecore Reward Quest
-		q(35913),	-- Stonecore (Heroic) reward quest
 		q(25829),	-- Mount Hyjal - goldrinn hub complete
 		q(27872),	-- Mount Hyjal - tortolla hub complete
 		q(27873),	-- Mount Hyjal - aviana hub complete
-		q(35311),	-- Shadowfang Keep heroic bonus objective complete
-		q(35309),	-- Shadowfang Keep heroic completion (Kill Lord Godfrey)
 		q(28106),	-- Twilight Highlands - triggers when the Grim Batol gates are broken open during "If The Key Fits"
 		q(26119),	-- Vashj'ir - FLAG - Claim Our Stake Launched
-		q(35403),	-- Vortex Pinnacle dungeon reward (Kill Asaad)
 		q(26415),	-- Questflag for Captain's Log — while on #26246, "Captain's Log" in Deepholm
 		q(27079),	-- Twilight Gate Tracking — blowing up the gate during #26861, "Block the Gates" in Deepholm
 		q(27080),	-- Twilight Gate Tracking — blowing up elemental during #26861, "Block the Gates" in Deepholm

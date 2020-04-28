@@ -1443,7 +1443,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						crit(16, {		-- Corrupted Thaumaturge slain
-							["description"] = "Shares a spawn with Black Empire Thaumaturge.",
+							["description"] = "Shares a spawn with Black Empire Thaumaturge and Black Empire Conjurer.",
 							["coords"] = {
 								{ 51.9, 70.3, 1527 },
 								{ 50.5, 81.8, 1527 },

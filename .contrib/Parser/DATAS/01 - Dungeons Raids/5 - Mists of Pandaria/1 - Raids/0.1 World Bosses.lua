@@ -428,6 +428,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					un(38, i(104273, {	-- Flame-Scarred Cache of Offerings
 						["description"] = "Awarded if you fail your loot roll. Usually contains gold or crafting materials.",
 						["g"] = {
+							un(38, i(105827)),	-- Kalaena's Arcane Handwraps
 							un(38, i(105833)),	-- Keengrip Arrowpullers
 							un(38, i(105831)),	-- Siid's Silent Stranglers
 							un(38, i(105836)),	-- Zoid's Molten Gauntlets Normal
