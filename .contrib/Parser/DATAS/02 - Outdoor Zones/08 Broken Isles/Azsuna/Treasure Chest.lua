@@ -191,8 +191,8 @@ _.Zones =
 				}),
 				o(250109, {	-- Treasure Chest
 					["questID"] = 42339,
-					["coord"] = { 52.8, 20.6, 630 },
-					["description"] = "At the end of the cave full of sleeping caves. Tread lightly!",
+					["coord"] = { 53.9, 22.5, 630 },
+					["description"] = "At the end of the cave full of sleeping bears. Tread lightly!",
 				}),
 			}),
 		}),
