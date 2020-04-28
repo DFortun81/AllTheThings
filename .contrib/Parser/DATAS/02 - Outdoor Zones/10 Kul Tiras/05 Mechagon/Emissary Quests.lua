@@ -7,24 +7,33 @@ _.Zones =
 		m(1462, {	-- Mechagon
 			n(-169, { 	-- Emissary Quests
 				q(55348, {	-- Supplies from the Rustbolt Resistance
-					--["provider"] = { "n",  }
 					["lvl"] = 120,
-					--["coord"] = { 39.11, 79.47, 1462 },
 					["repeatable"] = true,
 					["g"] = {
 						i(170061, {	-- Rustbolt Supplies
-							i(168494, {	-- Blueprint Rustbolt Resistance Insignia
+							i(168906, {	-- Blueprint: Holographic Digitalization Relay
+								["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
+								["g"] = {
+									crit(25, {	-- Holographic Digitalization Relay
+										["achievementID"] = 13479,	-- Junkyard Architect
+									}),
+								},
+							}),
+							i(169171, {	-- Blueprint: Microbot XD
+								["questID"] = 55079,	-- Blueprint: Microbot XD
+								["g"] = {
+									crit(31, {	-- Microbot XD
+										["achievementID"] = 13479,	-- Junkyard Architect
+									}),
+								},
+							}),
+							i(168494, {	-- Blueprint: Rustbolt Resistance Insignia
 								["questID"] = 55073,
 								["g"] = {
 									crit(19, {	-- Rustbolt Resistance Insignia
 										["achievementID"] = 13479,	-- Junkyard Architect
 									}),
 								},
-							}),
-							i(169171, {	-- Blueprint MicroBot XD
-								crit(31, {	-- Microbot XD
-									["achievementID"] = 13479,	-- Junkyard Architect
-								}),
 							}),
 							i(168935, {	-- Existence Vibrancy Display
 								["model"] = 2974000,

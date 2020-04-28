@@ -353,6 +353,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 135259 },	-- Taelia
 				}),
+				q(52194, { 	-- Lost Shipment
+					["sourceQuest"] = 52194,	-- Lost Shipment
+					["provider"] = { "n", 140495 },	-- Katherine Proudmoore
+					["coord"] = { 67.0, 36.2, 895 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(50787, {	-- Make Our Case
 					["sourceQuests"] = { 50795 },	-- Prepare for Trouble
 					["races"] = ALLIANCE_ONLY,
@@ -550,6 +557,12 @@ _.Zones =
 					["coord"] = { 53.0, 13.6, 864 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 146384 },	-- Xal'atath
+				}),
+				q(52194, { 	-- What You May Regret
+					["provider"] = { "n", 122370 },	-- Cyrus Crestfall
+					["coord"] = { 67.9, 22.0, 1161 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 120,
 				}),
 				q(53815, {	-- Whatever Happened to Saffy Flivvers?
 					["sourceQuests"] = { 55119 },	-- Reporting In!
