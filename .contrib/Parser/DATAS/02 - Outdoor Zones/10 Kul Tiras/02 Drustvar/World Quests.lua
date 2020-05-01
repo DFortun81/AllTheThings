@@ -67,10 +67,6 @@ _.Zones =
 					q(48604, {	-- Home Again, Home Again
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(51742, {	-- Intercepting the Irontide
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(54692, {	-- Magister Crystalynn
 						["isWorldQuest"] = true,
 						["lvl"] = 110,
@@ -109,10 +105,6 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(51765, {	-- Tangled Webs
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(54190, {	-- Tea for Two -- only triggers 54187 for me on ally, might be horde thing?
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
@@ -483,6 +475,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
+					q(51742, {	-- Intercepting the Irontide
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
 					q(54689, {	-- Lights Out (Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
@@ -651,6 +648,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(54190, {	-- Tea for Two
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(54471, {	-- Tend the Wounded (Faction Assault WQ)
 						["lvl"] = 110,

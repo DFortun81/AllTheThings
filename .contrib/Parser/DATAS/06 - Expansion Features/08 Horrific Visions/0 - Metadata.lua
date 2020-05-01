@@ -181,31 +181,35 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
+		--	maybe add descriptions with which subsection a reward comes from?  like for rexxar, "Defeat Rexxar and his creatures in the Valley of Honor," or even just "Found in the Valley of Honor"?  seems like information people might need but i'm not sure the best way to supply it.  don't really want to create a "valley of honor" (etc) custom header for one item, either	
 			n(-10073, {	-- Horrific Vision of Orgrimmar
 				["maps"] = { 1469 },
 				["g"] = {
-					n(-6015, {				-- Rewards	-- temporary grouping until we figure out how these are best organized
-						n(-10081, {			-- Corrupted Area
+					i(174920, {	-- Coifcurl's Close Shave Kit (TOY!)
+					--	does this actually require doing valley of spirits?  if so, move it
+						["description"] = "Chest is inside the barber shop on the right.",
+						["coord"] = { 40.5, 60.3, 1469 },
+					}),
+					n(-10081, {	-- Corrupted Area
+						n(153244, {	-- Oblivion Elemental
+							i(174924),	-- Void-Touched Souvenir Totem (TOY!)  Looted from Valley of Spirits completion chest at the end.
+							i(173726),	-- Box With Faintly Glowing "Air" Holes (PET!) - Zekhan
 						}),
-						n(-10082, {			-- Lost Area
-							n(155098,  {		-- Rexxar
-								i(174457),		-- C'Thuffer (pet) - rexxar
-							}),
+					}),
+					n(-10082, {	-- Lost Area
+						n(155098, {	-- Rexxar
+							i(174457),	-- C'Thuffer (PET!) - rexxar
 						}),
-						i(174920, {	-- Coifcurl's Close Shave Kit (Toy)
-							["description"] = "Chest inside the barber shop on the right",
-							["coord"] = { 40.5, 60.3, 1469 },
-						}),
-						i(174924),	-- Void-Touched Souvenir Totem (Toy)  Looted from Valley of Spirits completion chest at the end.
+					}),
+					n(-6015, {	-- Rewards	-- temporary grouping until we figure out how these are best organized
 						i(173308),	-- Mark of Boistrous Duty (Rank 1)
 						i(168936),	-- Ward of Unwavering Hope (Rank 1)
 						i(173288),	-- Overflowing Azerite Geode
 						i(174287),	-- Sparks of Unwavering Strength
 						i(173289),	-- Spark of Inspiration (Rank 2)
 						
-						i(174461),	-- Swirling Black Bottle (pet) -- thrall
-						i(174646),	-- Void-Link Frostwolf Collar (pet) - thrall
-						i(173726),	-- Box With Faintly Glowing "Air" Holes (pet) - Zekhan
+						i(174461),	-- Swirling Black Bottle (PET!) -- Thrall
+						i(174646),	-- Void-Link Frostwolf Collar (PET!) - Thrall
 
 						i(175054),	-- Melee Veterans Contract
 						i(175052),	-- Mounted Veterans Contract
@@ -219,19 +223,51 @@ _.ExpansionFeatures =
 			n(-10074, {	-- Horrific Vision of Stormwind
 				["maps"] = { 1470 },
 				["g"] = {
-					n(-6015, {	-- Rewards	-- temporary grouping until we figure out how these are best organized
-						i(174926),	-- Overly Sensitive Void Spectacles (Toy)
-						i(174928),	-- Rotten Apple (Toy)
-						i(174921),	-- Void-Touched Skull (Toy)
+				-- in-zone rewards that require doing something specific (aside from final boss/specific sections of town) -- not sure how to categorize them
+					n(158284, {	-- Craggle Wobbletop <Toys and Novelties>
+						["description"] = "Craggle pats around outside of the Trade District, so selecting a Corrupted or Lost Area is not required.  You need to kill the shielding robot to damage him, which requires using player CC or dropping a Toy Train Set in Craggle's path and pulling the bot while he's distracted.",
+						["coords"] = {
+							{ 58.4, 77.2, 1470 },
+							{ 56.6, 67.6, 1470 },
+							{ 62.6, 61.2, 1470 },
+							{ 69.6, 68.2, 1470 },
+						},
+						["g"] = {
+							i(174926),	-- Overly Sensitive Void Spectacles (TOY!)
+						},
+					}),
+					i(174928, {	-- Rotten Apple (TOY!)
+						["description"] = "Repeatedly click the bouncing apples at the coordinates provided.  Supposedly, clicking them 100 times will guarantee that the toy is in your final chest, but any click should give you a chance if you're running short on time.",
+						["coords"] = { -- may need to add more precision to these waypoints, taken from wowhead comment
+							{ 57, 55, 1470 },
+							{ 60, 58, 1470 },
+							{ 65, 62, 1470 },
+							{ 72, 67, 1470 },
+							{ 67, 51, 1470 },
+						},
+					}),
+					i(174921, {	-- Void-Touched Skull (TOY!)
+						["description"] = "Behind the orphanage in Cathedral Square.  It's on the ground next to some crates, is very small, and doesn't have the typical interactable sparkle.",
+						["coord"] = { 58.9, 52.9, 1470 },
+					}),
+					n(-10081, {	-- Corrupted Area
+						n(156577, {	-- Therum Deepforge (Dwarven District)
+							i(174460),	-- Box Labeled "Danger: Void Rat Inside" (pet) - Kelsey
+						}),
+					}),
+					n(-10082, {	-- Lost Area
+						n(158157, {	-- Overlord Mathias Shaw (Old Town)
+							i(174932),	-- Illusion: Void Edge -- Valeera
+						}),
+						n(158035, {	-- Magister Umbric (Mage Quarter)
+							i(174458),	-- Void-scarred Hare (PET!) -- Umbric
+						}),
+					}),
+					n(-6015,  {	-- Rewards	-- temporary grouping until we figure out how these are best organized
 						i(174287),	-- Sparks of Unwavering Strength
 						i(173289),	-- Spark of Inspiration (Rank 2)
-						
-						i(174461),	-- Swirling Black Bottle (pet) -- alleria
-						i(174459),	-- Voidwoven Cat Collar (pet) -- alleria
-						i(174458),	-- Void-scarred Hare (pet) -- Umbric
-						i(174460),	-- Box Labeled "Danger: Void Rat Inside" (pet) - Kelsey
-						
-						i(174932),	-- Illusion: Void Edge -- Valeera
+						i(174461),	-- Swirling Black Bottle (PET!) -- Alleria
+						i(174459),	-- Voidwoven Cat Collar (PET!) -- Alleria
 					}),
 				},
 				--[[ notes:

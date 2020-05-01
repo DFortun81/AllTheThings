@@ -589,7 +589,7 @@ _.Zones =
 						i(169176, {	-- Blueprint: Encrypted Black Market Radio
 							["questID"] = 55084,	-- Blueprint: Encrypted Black Market Radio
 							["g"] = {
-								crit(36, {	-- Encrypted Black Market Radio
+								crit(35, {	-- Encrypted Black Market Radio
 									["achievementID"] = 13479,	-- Junkyard Architect
 								}),
 							},
@@ -731,7 +731,7 @@ _.Zones =
 									i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
 										["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
 										["g"] = {
-											crit(37, {	-- Re-Procedurally Generated Punchcard
+											crit(36, {	-- Re-Procedurally Generated Punchcard
 												["achievementID"] = 13479,	-- Junkyard Architect
 											}),
 										},
@@ -758,7 +758,7 @@ _.Zones =
 									i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
 										["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
 										["g"] = {
-											crit(37, {	-- Re-Procedurally Generated Punchcard
+											crit(36, {	-- Re-Procedurally Generated Punchcard
 												["achievementID"] = 13479,	-- Junkyard Architect
 											}),
 										},
@@ -779,7 +779,7 @@ _.Zones =
 									i(169175, {	-- Blueprint: Annoy-o-Tron Gang
 										["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
 										["groups"] = {
-											crit(35, {	-- Annoy-o-Tron Gang
+											crit(34, {	-- Annoy-o-Tron Gang
 												["achievementID"] = 13479,	-- Junkyard Architect
 											}),
 										},
@@ -810,7 +810,7 @@ _.Zones =
 									i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
 										["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
 										["g"] = {
-											crit(37, {	-- Re-Procedurally Generated Punchcard
+											crit(36, {	-- Re-Procedurally Generated Punchcard
 												["achievementID"] = 13479,	-- Junkyard Architect
 											}),
 										},
@@ -834,7 +834,7 @@ _.Zones =
 									i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
 										["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
 										["g"] = {
-											crit(37, {	-- Re-Procedurally Generated Punchcard
+											crit(36, {	-- Re-Procedurally Generated Punchcard
 												["achievementID"] = 13479,	-- Junkyard Architect
 											}),
 										},
@@ -852,7 +852,7 @@ _.Zones =
 									i(169175, {	-- Blueprint: Annoy-o-Tron Gang
 										["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
 										["groups"] = {
-											crit(35, {	-- Annoy-o-Tron Gang
+											crit(34, {	-- Annoy-o-Tron Gang
 												["achievementID"] = 13479,	-- Junkyard Architect
 											}),
 										},
@@ -1077,7 +1077,7 @@ _.Zones =
 					["coord"] = { 71.2, 32.3, 1462 },
 					["sourceQuest"] = 55101,	-- Junkyard Tinkering and You
 					["g"] = {
-						crit(38, {	-- S.P.A.R.E. Crate
+						crit(37, {	-- S.P.A.R.E. Crate
 							["achievementID"] = 13479,	-- Junkyard Architect
 						}),
 					},

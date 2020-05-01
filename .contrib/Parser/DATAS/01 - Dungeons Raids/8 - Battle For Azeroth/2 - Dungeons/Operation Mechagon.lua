@@ -206,11 +206,6 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(169378),	-- Golden Snorf
 							i(169172, {	-- Blueprint: Perfectly Timed Differential
 								["questID"] = 55080,
-								["g"] = {
-									crit(32, {	-- Perfectly Timed Differential
-										["achievementID"] = 13479,	-- Junkyard Architect
-									}),
-								},
 							}),
 							i(168842),	-- Engine of Mecha-Perfection (Rank 1)
 							i(168671),	-- Electromagnetic Resistors
@@ -411,11 +406,6 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							i(169378),	-- Golden Snorf
 							i(169172, {	-- Blueprint: Perfectly Timed Differential
 								["questID"] = 55080,
-								["g"] = {
-									crit(32, {	-- Perfectly Timed Differential
-										["achievementID"] = 13479,	-- Junkyard Architect
-									}),
-								},
 							}),
 							i(168842),	-- Engine of Mecha-Perfection (Rank 1)
 							i(168671),	-- Electromagnetic Resistors

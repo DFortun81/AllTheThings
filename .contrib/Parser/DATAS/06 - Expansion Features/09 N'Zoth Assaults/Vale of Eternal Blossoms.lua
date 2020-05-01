@@ -593,9 +593,17 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(163042, {	-- Ivory Cloud Serpent
-						--["questID"] = 57350,
-						--["coord"] = { 26.7, 10.7, 1530 },
-						i(174752),	-- Ivory Cloud Serpent
+					--	["questID"] = 57350,
+					--	["coord"] = { 26.7, 10.7, 1530 },
+						["description"] = "Requires a Zan-Tien Lasso to wrangle!",
+						["g"] = {
+							i(174927, {	-- Zan-Tien Lasso
+								["description"] = "The lasso is a zone drop from various Mogu mobs.",
+								["g"] = {
+									i(174752),	-- Ivory Cloud Serpent
+								},
+							}),
+						},
 					}),
 					n(157162, {	-- Rei Lun
 						["description"] = "Scale drops from the rare.  Turn the scale into the Rajani provisioner for the mount.",

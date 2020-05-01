@@ -350,7 +350,7 @@ _.Zones =
 						i(169174, {	-- Blueprint: Rustbolt Pocket Turret
 							["questID"] = 55082,
 							["g"] = {
-								crit(34, {	-- Rustbolt Pocket Turret
+								crit(33, {	-- Rustbolt Pocket Turret
 									["achievementID"] = 13479,	-- Junkyard Architect
 								}),
 							},
@@ -449,6 +449,14 @@ _.Zones =
 					["g"] = {
 						crit(19, {	-- Malfunctioning Beastbot
 							["achievementID"] = 13470,	-- Rest in Pistons
+						}),
+						i(169173, {	-- Blueprint: Anti-Gravity Pack
+							["questID"] = 55081,
+							["g"] = {
+								crit(32, {	-- Anti-Gravity Pack
+									["achievementID"] = 13479,	-- Junkyard Architect
+								}),
+							},
 						}),
 						i(169382),	-- Lost Robogrip
 						i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
@@ -655,7 +663,7 @@ _.Zones =
 								i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
 									["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
 									["g"] = {
-										crit(37, {	-- Re-Procedurally Generated Punchcard
+										crit(36, {	-- Re-Procedurally Generated Punchcard
 											["achievementID"] = 13479,	-- Junkyard Architect
 										}),
 									},
@@ -686,7 +694,7 @@ _.Zones =
 								i(168220, {	-- Blueprint: Re-Procedurally Generated Punchcard
 									["questID"] = 55067,	-- Blueprint: Re-Procedurally Generated Punchcard
 									["g"] = {
-										crit(37, {	-- Re-Procedurally Generated Punchcard
+										crit(36, {	-- Re-Procedurally Generated Punchcard
 											["achievementID"] = 13479,	-- Junkyard Architect
 										}),
 									},
@@ -707,7 +715,7 @@ _.Zones =
 								i(169175, {	-- Blueprint: Annoy-o-Tron Gang
 									["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
 									["groups"] = {
-										crit(35, {	-- Annoy-o-Tron Gang
+										crit(34, {	-- Annoy-o-Tron Gang
 											["achievementID"] = 13479,	-- Junkyard Architect
 										}),
 									},
@@ -747,7 +755,7 @@ _.Zones =
 						i(169173, {	-- Blueprint: Anti-Gravity Pack
 							["questID"] = 55081,
 							["g"] = {
-								crit(33, {	-- Anti-Gravity Pack
+								crit(32, {	-- Anti-Gravity Pack
 									["achievementID"] = 13479,	-- Junkyard Architect
 								}),
 							},
