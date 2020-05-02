@@ -384,15 +384,13 @@ _.ExpansionFeatures =
 						},
 					}),
 				}),
-				--[[
 				n(98695, {	-- Scouting Map
 					["g"] = {
-						-- Blank for Class Only Missions in the future
+						i(138883),	-- Meryl's Conjured Refreshment
 					},
 					["achievementID"] = 11217,
 					["modelScale"] = 2.5,
 				}),
-				]]--
 				n(VENDORS, {
 					n(112440, {	-- Jackson Watkins <Tirisgarde Quartermaster>
 						i(140939, {	-- Archmage's Armor Kit

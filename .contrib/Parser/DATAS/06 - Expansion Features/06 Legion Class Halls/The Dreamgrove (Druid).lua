@@ -670,15 +670,13 @@ _.ExpansionFeatures =
 					}),
 					
 				}),
-				--[[
 				n(98000, {	-- Scouting Map
 					["g"] = {
-						-- Blank for Class Only Missions in the future
+						i(139420),	-- Wild Mushroom
 					},
 					["achievementID"] = 11217,
 					["modelScale"] = 2.25,
 				}),
-				]]--
 				n(VENDORS, {
 					n(112323, {	-- Amurra Thistledew <Proprietor>
 						i(139728, {	-- Amice of the Dreamgrove

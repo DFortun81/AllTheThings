@@ -394,15 +394,13 @@ _.ExpansionFeatures =
 						}),
 	--]]
 				}),
-				--[[
 				n(99041, {	-- Scouting Map
 					["g"] = {
-						-- Blank for Class Only Missions in the future
+						i(139419),	-- Golden Banana
 					},
 					["achievementID"] = 11217,
 					["modelScale"] = 2.5,
 				}),
-				]]--
 				n(VENDORS, {
 					n(112338, {	-- Caydori Brightstar <Purveyor of Rare Goods>
 						["coord"] = { 50.3, 59.0, 709 },

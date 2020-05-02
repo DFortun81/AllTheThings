@@ -621,15 +621,13 @@ _.ExpansionFeatures =
 					}),
 					--]]
 				}),
-				--[[
 				n(98093, {	-- Scouting Map
 					["g"] = {
-						-- Blank for Class Only Missions in the future
+						i(139428),	-- A Master Plan
 					},
 					["achievementID"] = 11217,
 					["modelScale"] = 1.5,
 				}),
-				]]--
 				n(VENDORS, {
 					n(103792, {	-- Griftah <Amazing Amulets>
 						["coord"] = { 45.4, 27.6, 626 },

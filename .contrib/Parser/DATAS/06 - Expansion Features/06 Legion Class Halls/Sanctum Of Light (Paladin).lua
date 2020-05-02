@@ -178,15 +178,13 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
-					--[[
 					n(93787, {	-- Scouting Map
 						["g"] = {
-							-- Blank for Class Only Missions in the future
+							i(139376),	-- Healing Well
 						},
 						["achievementID"] = 11217,
 						["modelScale"] = 2.5,
 					}),
-					]]--
 					n(VENDORS, {
 						n(99976,  {	--  Crusader Lord Dalfors
 							["classes"] = {2},
