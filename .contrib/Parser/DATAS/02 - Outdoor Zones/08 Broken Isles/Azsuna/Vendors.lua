@@ -53,6 +53,12 @@ _.Zones =
 				n(107379, {	-- Marin Bladewing <Wardens Emissary>
 					["coord"] = { 48.2, 73.9, 630 },
 					["g"] = {
+						i(140219, {	-- Boon of the Bloodhunter
+							["cost"] = 2000000,	-- 200g
+							["g"] = {
+								i(140227),	-- Bloodhunter's Quarry
+							},
+						}),
 						i(137849, {	-- Design: Twisted Pandemonite Choker (Rank 3)
 							["cost"] = 30000000,	-- 3,000g
 						}),

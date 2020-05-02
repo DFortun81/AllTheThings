@@ -18,6 +18,7 @@ _.ExpansionFeatures =
 						}),
 						i(129362),	-- Broot Pet
 						i(140741),	-- Nightmare Lasher Pet
+						i(140397),	-- G'hanir's Blossom
 					},
 				}),
 				filter(101, { 	-- Pet Battle
