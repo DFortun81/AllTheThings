@@ -13,6 +13,21 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			1029,	-- Waycrest Dimension
 		},
 		["g"] = {
+			n(ZONEDROPS, {
+				i(168143, {	-- Purposefully Potent Potion
+					["crs"] = {
+						131819,	-- Coven Diviner
+						131666,	-- Coven Thornshaper
+						131677,	-- Heartsbane Runeweaver
+						131812,	-- Heartsbane Soulcharmer
+						131670,	-- Heartsbane Vinetwister
+						134041,	-- Infected Peasant
+						131818,	-- Marked Sister
+						131685,	-- Runic Disciple
+						135474,	-- Thistle Acolyte
+					},
+				}),
+			}),
 			n(QUESTS, {
 				q(50990, {	-- Cutting Edge Poultry Science
 					["description"] = "This quest pops up when killing mobs in the kitchen.  It is unknown for certain if the World Quest \"Witchy Kitchen\"  is required.",

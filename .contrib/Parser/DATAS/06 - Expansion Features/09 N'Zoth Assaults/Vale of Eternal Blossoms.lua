@@ -606,7 +606,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(157162, {	-- Rei Lun
-						["description"] = "Scale drops from the rare.  Turn the scale into the Rajani provisioner for the mount.",
+						["description"] = "Spawns inside Guo-Lai Halls, all the way to the back (not off to the left or right).\n\nThe scale drops from the rare and can be turned in to the Rajani provisioner for the mount.",
 						["questID"] = 57346,
 						["coord"] = { 21.9, 12.4, 1530 },
 						["isDaily"] = true,

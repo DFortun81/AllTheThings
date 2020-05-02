@@ -22,6 +22,15 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["isWorldQuest"] = true,
 				}),
 			}),
+			n(ZONEDROPS, {
+				i(168144, {	-- Extremely Precise Vial
+					["crs"] = {
+						133432,	-- Venture Co. Alchemist
+						133430,	-- Venture Co. Mastermind
+						140902,	-- Vog'rish, the Ascended
+					},
+				}),
+			}),
 			d(1, {	-- Normal
 				e(2109, {	-- Coin-Operated Crowd Pummeler
 					["crs"] = {

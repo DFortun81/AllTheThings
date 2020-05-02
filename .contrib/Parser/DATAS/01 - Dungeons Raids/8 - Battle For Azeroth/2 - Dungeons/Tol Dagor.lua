@@ -44,6 +44,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				e(2098, {	-- Jes Howlis
 					["crs"] = { 127484 },	-- Jes Howlis
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+						i(168145),	-- Sly Rogue's Decanter (for Silas' Sphere of Transmutation)
 						i(159131),	-- Howlis' Crystal Shiv
 						i(159666),	-- Improvised Riot Shield
 						i(159293),	-- Turncoat's Cape
