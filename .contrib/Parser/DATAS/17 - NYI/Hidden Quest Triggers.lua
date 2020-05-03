@@ -2366,7 +2366,9 @@ _.NeverImplemented =
 		q(58690),	-- Corrupted Acolyte - Vale of Eternal Blossoms, Corrupted Fleshbeast - Uldum?
 		q(58689),	-- Corrupted Doomsayer - Uldum
 		q(58691),	-- Corrupted Doomsayer/Bonestripper - Vale of Eternal Blossoms, Corrupted Putrification/Dominator - Uldum
+		q(57834),	-- this was listed as Corrupted Bonestripper in Uldum
 		q(58688),	-- Corrupted Mind Eater - Uldum
+		q(57666),	-- this was listed as "Corrupted Sanity Despoiler" in Uldum
 		
 		-- Mechagon unlock chain
 		-- NOTE: these are probably mixed up a bit, but the IDs are definitely trackers

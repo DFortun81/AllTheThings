@@ -949,16 +949,6 @@ _.ExpansionFeatures =
 							i(174478),	-- Wicked Lurker (pet)
 						},
 					}),
-					n(159087, {	-- Corrupted Bonestripper
-						["questID"] = 57834,
-						["coord"] = { 56.6, 21.0, 1527 },
-						["isDaily"] = true,
-					}),
-					n(156709, {	-- Corrupted Sanity Despoiler
-						["questID"] = 57666,
-						["coord"] = { 51.3, 32.0, 1527 },
-						["isDaily"] = true,
-					}),
 					n(158594, {	-- Doomsayer Vathiris
 						["questID"] = 57672,
 						["coord"] = { 49.4, 38.3, 1527 },
