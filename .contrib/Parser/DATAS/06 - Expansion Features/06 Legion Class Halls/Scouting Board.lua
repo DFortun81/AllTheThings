@@ -155,7 +155,7 @@ _.ExpansionFeatures =
 						q(45172, {	-- To Battle!
 							["provider"] = { "i", 143328 },	-- Battle Report
 							["g"] = {
-								un(2, i(143606)),	-- Satchel of Battlefield Spoils
+								 i(143606),	-- Satchel of Battlefield Spoils
 							},
 						}),
 					}),
