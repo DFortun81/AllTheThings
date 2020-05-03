@@ -26,6 +26,10 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 			}),
 			n(-34, {	-- World Quests
+				q(42241, {	-- Halls of Valor: A Worthy Challenge
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
 				q(42243, {	-- Halls of Valor: Deeds of the Past
 					["isWorldQuest"] = true,
 					["lvl"] = 110,

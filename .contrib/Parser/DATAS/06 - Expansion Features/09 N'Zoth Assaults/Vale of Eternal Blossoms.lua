@@ -593,8 +593,8 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(163042, {	-- Ivory Cloud Serpent
-					--	["questID"] = 57350,
-					--	["coord"] = { 26.7, 10.7, 1530 },
+					--	["questID"] = 57350,	-- i didn't get a quest completion notification on either collecting or using the mount
+						["coord"] = { 29.0, 53.0, 1530 },
 						["description"] = "Requires a Zan-Tien Lasso to wrangle!",
 						["g"] = {
 							i(174927, {	-- Zan-Tien Lasso
@@ -1099,30 +1099,157 @@ _.ExpansionFeatures =
 					ach(14159, {	-- Combating the Corruption -- TODO::  Add coords. -- Is attaching questID's to these really the best way to track the quest?
 						crit(1,  {		-- Corrupted Acolyte slain
 							["description"] = "Shares a spawn with Acolyte of N'Zoth.",
+							["coords"] = {
+								{ 43.8, 71.6, 1530 },
+								{ 42.4, 68.0, 1530 },
+								{ 54.4, 63.4, 1530 },
+								{ 51.8, 60.4, 1530 },
+							},
+							["cr"] = 162249,	-- Corrupted Acolyte
 						}),
 						crit(3,  {		-- Corrupted Beheader slain
 							["description"] = "Shares a spawn with Black Empire Beheader.",
+							["coords"] = {
+								{ 43.0, 59.4, 1530 },
+								{ 45.4, 71.6, 1530 },
+								{ 57.0, 58.8, 1530 },
+							},
+							["cr"] = 162252,	-- Corrupted Beheader
 						}),
 						crit(5,	 {		-- Corrupted Bonestripper slain
 							["description"] = "Shares a spawn with N'Zoth Bonestripper.  Found in most water locations.",
+							["coords"] = {
+								{ 63.4, 52.0, 1530 },
+								{ 74.8, 58.6, 1530 },
+								{ 90.6, 46.6, 1530 },
+								{ 72.0, 43.8, 1530 },
+								{ 72.8, 29.8, 1530 },
+							},
+							["cr"] = 159087,	-- Corrupted Bonestripper
 						}),
 						crit(6,	 {		-- Corrupted Despoiler slain
 							["description"] = "Shares a spawn with Faceless Despoiler and Mind Eater.  Can also result in Corrupted Mind Eater spawning.",
+							["coords"] = {
+								{ 42.8, 37.2, 1530 },
+								{ 45.6, 48.4, 1530 },
+								{ 43.6, 64.2, 1530 },
+								{ 44.6, 71.0, 1530 },
+								{ 58.6, 61.4, 1530 },
+								{ 61.6, 55.0, 1530 },
+								{ 64.8, 65.2, 1530 },
+								{ 65.6, 56.6, 1530 },
+								{ 52.2, 42.2, 1530 },
+								{ 60.4, 42.6, 1530 },
+								{ 67.0, 37.4, 1530 },
+								{ 68.8, 49.6, 1530 },
+								{ 75.4, 52.2, 1530 },
+								{ 79.8, 50.8, 1530 },
+								{ 85.8, 40.2, 1530 },
+								{ 76.4, 37.0, 1530 },
+								{ 61.8, 33.4, 1530 },
+								{ 75.0, 23.6, 1530 },
+							},
+							["cr"] = 156709,	-- Corrupted Despoiler
 						}),
 						crit(8,  {		-- Corrupted Doomsayer slain
 							["description"] = "Shares a spawn with K'thir Doomsayer.",
+							["coords"] = {
+								{ 45.8, 43.4, 1530 },
+								{ 55.2, 62.4, 1530 },
+								{ 60.6, 56.2, 1530 },
+								{ 65.6, 64.6, 1530 },
+								{ 65.6, 56.6, 1530 },
+								{ 59.0, 40.4, 1530 },
+								{ 64.8, 46.0, 1530 },
+								{ 72.8, 53.4, 1530 },
+								{ 77.6, 48.8, 1530 },
+								{ 67.8, 36.4, 1530 },
+								{ 68.6, 24.0, 1530 },
+								{ 78.6, 31.6, 1530 },
+								{ 86.2, 42.4, 1530 },
+							},
+							["cr"] = 162244,	-- Corrupted Doomsayer
 						}),
 						crit(9,  {		-- Corrupted Fleshbeast slain
 							["description"] = "Shares a spawn with Burbling Fleshbeast.",
+							["coords"] = {
+								{ 40.0, 39.4, 1530 },
+								{ 46.0, 47.0, 1530 },
+								{ 47.6, 36.4, 1530 },
+								{ 57.0, 41.8, 1530 },
+								{ 60.4, 59.0, 1530 },
+								{ 65.6, 53.2, 1530 },
+								{ 61.0, 32.4, 1530 },
+								{ 65.4, 26.0, 1530 },
+								{ 70.2, 31.6, 1530 },
+								{ 69.4, 46.8, 1530 },
+								{ 78.0, 50.4, 1530 },
+								{ 84.8, 46.8, 1530 },
+							},
+							["cr"] = 158632,	-- Corrupted Fleshbeast
 						}),
 						crit(11, {		-- Corrupted Mind Eater slain
 							["description"] = "Shares a spawn with Mind Eater and Faceless Despoiler.  Can also result in Corrupted Despoiler spawning.",
+							["coords"] = {
+								{ 42.8, 37.2, 1530 },
+								{ 45.6, 48.4, 1530 },
+								{ 43.6, 64.2, 1530 },
+								{ 44.6, 71.0, 1530 },
+								{ 58.6, 61.4, 1530 },
+								{ 61.6, 55.0, 1530 },
+								{ 64.8, 65.2, 1530 },
+								{ 65.6, 56.6, 1530 },
+								{ 52.2, 42.2, 1530 },
+								{ 60.4, 42.6, 1530 },
+								{ 67.0, 37.4, 1530 },
+								{ 68.8, 49.6, 1530 },
+								{ 75.4, 52.2, 1530 },
+								{ 79.8, 50.8, 1530 },
+								{ 85.8, 40.2, 1530 },
+								{ 76.4, 37.0, 1530 },
+								{ 61.8, 33.4, 1530 },
+								{ 75.0, 23.6, 1530 },
+							},
+							["cr"] = 162243,	-- Corrupted Mind Eater
 						}),
 						crit(13, {		-- Corrupted Observer slain
-							["description"] = "Shares a spawn with Foul Observer.",
+							["description"] = "Shares a spawn with Foul Observer.",	-- add Vale mob to description (can't remember what it's called, the eye mob ugh)
+							["coords"] = {
+								{ 43.0, 62.2, 1530 },
+								{ 52.0, 67.6, 1530 },
+								{ 54.8, 61.2, 1530 },
+								{ 55.4, 57.0, 1530 },
+								{ 61.0, 55.6, 1530 },
+								{ 63.2, 62.6, 1530 },
+								{ 69.6, 60.8, 1530 },
+								{ 81.8, 55.8, 1530 },
+								{ 55.6, 40.2, 1530 },
+								{ 56.8, 43.8, 1530 },
+								{ 60.6, 37.8, 1530 },
+								{ 63.0, 41.6, 1530 },
+								{ 65.0, 43.4, 1530 },
+								{ 67.2, 42.4, 1530 },
+								{ 65.6, 27.0, 1530 },
+								{ 69.6, 24.0, 1530 },
+								{ 71.8, 23.8, 1530 },
+								{ 74.0, 24.0, 1530 },
+								{ 80.8, 46.4, 1530 },
+								{ 86.0, 46.6, 1530 },
+							},
+							["cr"] = 162254,	-- Corrupted Observer
 						}),
 						crit(16, {		-- Corrupted Thaumaturge slain
 							["description"] = "Shares a spawn with Black Empire Thaumaturge and Black Empire Conjurer.",
+							["coords"] = {
+								{ 42.8, 68.6, 1530 },
+								{ 43.6, 71.6, 1530 },
+								{ 45.0, 65.6, 1530 },
+								{ 49.4, 61.4, 1530 },
+								{ 52.6, 61.8, 1530 },
+								{ 49.0, 66.8, 1530 },
+								{ 52.6,66.0 , 1530 },
+							},
+							["cr"] = 162253,	-- Corrupted Thaumaturge
 						}),
 					}),
 					ach(14154, {	-- Defend the Vale

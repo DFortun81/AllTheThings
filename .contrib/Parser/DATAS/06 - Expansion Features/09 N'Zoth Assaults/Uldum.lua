@@ -1268,6 +1268,7 @@ _.ExpansionFeatures =
 								{ 46.2, 42.0, 1527 },
 								{ 53.8, 43.1, 1527 },
 							},
+							["cr"] = 162249,	-- Corrupted Acolyte
 						}),
 						crit(2,  {		-- Corrupted Assassin slain
 							["description"] = "Shares a spawn with Black Empire Assassin.",
@@ -1286,6 +1287,7 @@ _.ExpansionFeatures =
 								{ 52.0, 69.4, 1527 },
 								{ 50.0, 71.7, 1527 },
 							},
+							["cr"] = 162250,	-- Corrupted Assassin
 						}),
 						crit(3,	 {		-- Corrupted Beheader slain
 							["description"] = "Shares a spawn with Black Empire Beheader.",
@@ -1299,17 +1301,16 @@ _.ExpansionFeatures =
 								{ 50.5, 85.8, 1527 },
 								{ 49.1, 84.7, 1527 },
 							},
+							["cr"] = 162252,	-- Corrupted Beheader
 						}),
-						crit(4,	 {		-- Corrupted Bloodseeker slain -- TODO:: Add coords
+						crit(4,	 {		-- Corrupted Bloodseeker slain
 							["description"] = "This doesn't appear to share a spawn with any other mob, but it's an elite shark that spawns off the southern coast of Uldum.",
-							--[[["coords"] = {
-								{ 35.1, 17.3, 249 },
-								{ 35.1, 17.3, 249 },
-								{ 35.1, 17.3, 249 },
-								{ 35.1, 17.3, 249 },
-								{ 35.1, 17.3, 249 },
-								{ 35.1, 17.3, 249 },
-							},]]
+							["coords"] = {
+								{ 13.8, 63.6, 1527 },
+								{ 26.8, 76.6, 1527 },
+								{ 46.6, 91.2, 1527 },
+							},
+							["cr"] = 162290,	-- Corrupted Bloodseeker
 						}),
 						crit(5,	 {		-- Corrupted Bonestripper slain
 							["description"] = "Shares a spawn with N'Zoth Bonestripper.  Found in most water locations.",
@@ -1321,6 +1322,7 @@ _.ExpansionFeatures =
 								{ 57.3, 27.4, 1527 },
 								{ 59.6, 60.8, 1527 },
 							},
+							["cr"] = 159087,	-- Corrupted Bonestripper
 						}),
 						crit(6,	 {		-- Corrupted Despoiler slain
 							["description"] = "Shares a spawn with Faceless Despoiler and Mind Eater.  Can also result in Corrupted Mind Eater spawning.",
@@ -1333,6 +1335,7 @@ _.ExpansionFeatures =
 								{ 58.4, 24.8, 1527 },
 								{ 55.6, 24.4, 1527 },
 							},
+							["cr"] = 156709,	-- Corrupted Despoiler
 						}),
 						crit(7,	 {		-- Corrupted Dominator slain
 							["description"] = "Shares a spawn with Faceless Dominator.",
@@ -1344,6 +1347,7 @@ _.ExpansionFeatures =
 								{ 61.6, 69.4, 1527 },
 								{ 56.5, 42.1, 1527 },
 							},
+							["cr"] = 162246,	-- Corrupted Dominator
 						}),
 						crit(8,	 {		-- Corrupted Doomsayer slain
 							["description"] = "Shares a spawn with K'thir Doomsayer.",
@@ -1357,6 +1361,7 @@ _.ExpansionFeatures =
 								{ 61.4, 75.2, 1527 },
 								{ 63.5, 70.0, 1527 },
 							},
+							["cr"] = 162244,	-- Corrupted Doomsayer
 						}),
 						crit(9,	 {		-- Corrupted Fleshbeast slain
 							["description"] = "Shares a spawn with Burbling Fleshbeast.",
@@ -1368,6 +1373,7 @@ _.ExpansionFeatures =
 								{ 60.4, 67.5, 1527 },
 								{ 62.0, 66.7, 1527 },
 							},
+							["cr"] = 158632,	-- Corrupted Fleshbeast
 						}),
 						crit(10, {		-- Corrupted Jailer slain
 							["description"] = "Shares a spawn with Faceless Jailer.",
@@ -1377,6 +1383,7 @@ _.ExpansionFeatures =
 								{ 63.4, 72.6, 1527 },
 								{ 62.2, 67.4, 1527 },
 							},
+							["cr"] = 162247,	-- Corrupted Jailer
 						}),
 						crit(11, {		-- Corrupted Mind Eater slain
 							["description"] = "Shares a spawn with Mind Eater and Faceless Despoiler.  Can also result in Corrupted Despoiler spawning.",
@@ -1389,6 +1396,7 @@ _.ExpansionFeatures =
 								{ 58.4, 24.8, 1527 },
 								{ 55.6, 24.4, 1527 },
 							},
+							["cr"] = 162243,	-- Corrupted Mind Eater
 						}),
 						crit(12, {		-- Corrupted Neferset Guard slain
 							["description"] = "Shares a spawn with Voidwarped Neferset and Voidwarped Neferset High Guard.",
@@ -1406,12 +1414,14 @@ _.ExpansionFeatures =
 								{ 50.9, 75.0, 1527 },
 								{ 50.5, 75.0, 1527 },
 							},
+							["cr"] = 158531,	-- Corrupted Neferset Guard
 						}),
 						crit(13, {		-- Corrupted Observer slain
-							["description"] = "Shares a spawn with Foul Observer.",
+							["description"] = "Shares a spawn with Foul Observer.",	-- add Vale mob to description (can't remember what it's called, the eye mob ugh)
 							["coords"] = {
 								{ 55.4, 51.0, 1527 },
 							},
+							["cr"] = 162254,	-- Corrupted Observer
 						}),
 						crit(14, {		-- Corrupted Putrefaction slain
 							["description"] = "Shares a spawn with Oozing Putrefaction.",
@@ -1422,6 +1432,7 @@ _.ExpansionFeatures =
 								{ 57.1, 81.6, 1527 },
 								{ 60.8, 37.1, 1527 },
 							},
+							["cr"] = 158706,	-- Corrupted Putrefaction
 						}),
 						crit(15, {		-- Corrupted Summoner slain
 							["description"] = "Shares a spawn with Black Empire Conjurers.",
@@ -1441,6 +1452,7 @@ _.ExpansionFeatures =
 								{ 53.4, 49.4, 1527 },
 								{ 51.9, 50.1, 1527 },
 							},
+							["cr"] = 162251,	-- Corrupted Summoner
 						}),
 						crit(16, {		-- Corrupted Thaumaturge slain
 							["description"] = "Shares a spawn with Black Empire Thaumaturge and Black Empire Conjurer.",
@@ -1452,6 +1464,7 @@ _.ExpansionFeatures =
 								{ 51.9, 84.4, 1527 },
 								{ 51.9, 80.6, 1527 },
 							},
+							["cr"] = 162253,	-- Corrupted Thaumaturge
 						}),
 						crit(17, {		-- Corrupted Thoughtstealer slain
 							["description"] = "Shares a spawn with K'thir Thoughtstealer.",
@@ -1463,9 +1476,18 @@ _.ExpansionFeatures =
 								{ 61.1, 66.5, 1527 },
 								{ 62.9, 74.3, 1527 },
 							},
+							["cr"] = 162241,	-- Corrupted Thoughtstealer
 						}),
 						crit(18, {		-- Corrupted Tormentor slain -- TODO:: Add coords
 							["description"] = "Shares a spawn with Tentacle Tormentors, found off the southern coast of Uldum.",
+							["coords"] = {
+								{ 13.0, 64.6, 1527 },
+								{ 32.6, 73.2, 1527 },
+								{ 49.6, 91.8, 1527 },
+								{ 75.6, 79.0, 1527 },
+								{ 87.2, 47.2, 1527 },
+							},
+							["cr"] = 162245,	-- Corrupted Tormentor
 						}),
 						crit(19, {		-- Corrupted Watcher slain
 							["description"] = "Shares a spawn with Voidwarped Watcher.",
@@ -1478,6 +1500,7 @@ _.ExpansionFeatures =
 								{ 52.1, 83.0, 1527 },
 								{ 50.8, 69.8, 1527 },
 							},
+							["cr"] = 150829,	-- Corrupted Watcher
 						}),
 					}),
 					ach(14161),		-- Get In My Belly!
@@ -1598,6 +1621,12 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
 							["sourceQuest"] = 58813,	-- Fetid Filets
 							["description"] = "Can appear during Mantid invasions in the Vale of Eternal Blossoms.",
+						}),
+						q(58826, {	-- A Bloody Treat
+							["coord"] = { 55.6, 35.3, 1527 },
+							["provider"] = { "n", 161738 },	-- H'partho Ardoros
+							["sourceQuest"] = 58813,	-- Fetid Filets
+							["description"] = "Can appear during Mogu invasions in the Vale of Eternal Blossoms.",
 						}),
 						q(58829, {	-- They Grow So Fast
 							["coord"] = { 55.6, 35.3, 1527 },

@@ -1747,6 +1747,7 @@ _.NeverImplemented =
 		q(51999),	-- Stone Golem killID
 		q(53612),	-- Pest Remover Mk. II killID
 		q(50480),	-- Underlord Xerxiz killID
+		q(53624),	-- Zeritarj killID
 	
 
 	--	TREASURES
