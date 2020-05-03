@@ -71,6 +71,7 @@ profession(FISHING, {
 			i(84660, {	-- Pandaren Fishing Pole
 				["description"] = "Bought from Nat Pagle in Krasarang Wilds after obtaining Honored with The Anglers for 20g.",
 			}),
+			i(168804),	-- Powered Piscine Procurement Pole
 			i(116825, {	-- Savage Fishing Pole
 				["races"] = HORDE_ONLY,
 				["description"] = "Bought from Nat Pagle in Garrison once a Friend for 25 Nat's Lucky Coin.",
@@ -78,6 +79,7 @@ profession(FISHING, {
 			i(25978, {	-- Seth's Graphite Fishing Pole
 				["description"] = "Reward from quest Rather Be Fishin' in Terokkar Forest.",
 			}),
+			i(120163),	-- Thruk's Fishing Rod
 		},
 		["icon"] = "Interface\\Icons\\inv_fishingpole_02",
 	}),	
