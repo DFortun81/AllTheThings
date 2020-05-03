@@ -603,6 +603,15 @@ _.Zones =
 						un(2, i(44349)),	-- Warchief's Legplates of Carnage
 					},
 				}),
+				q(1474, {	-- The Binding
+					["u"] = 40,	-- Legacy Quest
+					["provider"] = { "n", 5675 },	-- Carendin Halgar
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(22243)),	-- Small Soul Pouch
+					},				
+				}),
 				q(5961, {	-- The Champion of the Banshee Queen
 					["u"] = 40,
 					["races"] = HORDE_ONLY,

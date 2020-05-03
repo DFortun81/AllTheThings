@@ -720,6 +720,13 @@ _.Craftables =
 			}),
 		}),
 		n(-187, {	-- Leatherworking
+			filter(113, {	-- Bags
+				un(8, i(7372)),	-- Heavy Leather Ammo Pouch
+				un(8, i(7371)),	-- Heavy Quiver
+				i(34482),	-- Leatherworker's Satchel
+				un(8, i(8217)),	-- Quickdraw Quiver
+				un(8, i(8218)),	-- Thick Leather Ammo Pouch
+			}),
 			n(-322, {	-- Cloak
 				un(8, i(18509)),	-- Chromatic Cloak
 				un(8, i(6466)),		-- Deviate Scale Cloak
@@ -972,6 +979,7 @@ _.Craftables =
 				i(21342),	-- Core Felcloth Bag
 				i(22246),	-- Enchanted Mageweave Pouch
 				i(22248),	-- Enchanted Runecloth Bag
+				i(21341),	-- Felcloth Bag
 				i(5764),	-- Green Silk Pack
 				i(4241),	-- Green Woolen Bag
 				i(4238),	-- Linen Bag

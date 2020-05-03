@@ -1870,6 +1870,15 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 110,
 				}),
+				q(1513, {	-- The Binding
+					["u"] = 40,	-- Legacy Quest
+					["provider"] = { "n", 5875 },	-- Gan'rul Bloodeye
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(22243)),	-- Small Soul Pouch
+					},				
+				}),
 				q(29440, {	-- The Call of the World-Shaman
 					["provider"] = { "n", 45244 },	-- Farseer Krogar
 					["coord"] = { 50.4, 38.2, 85 },

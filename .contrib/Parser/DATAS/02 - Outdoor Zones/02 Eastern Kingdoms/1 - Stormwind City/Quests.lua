@@ -1206,6 +1206,15 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
 				}),
+				q(1739, {	-- The Binding
+					["u"] = 40,	-- Legacy Quest
+					["provider"] = { "n", 6122 },	-- Gakin the Darkbinder
+					["classes"] = { WARLOCK },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(22243)),	-- Small Soul Pouch
+					},				
+				}),
 				q(29439, {	-- The Call of the World-Shaman
 					["provider"] = { "n", 45226 },	-- Naraat the Earthspeaker
 					["coord"] = { 74.4, 18.8, 84 },

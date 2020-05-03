@@ -151,6 +151,11 @@ _.Craftables =
 			}),
 		}),
 		n(-187, { 	-- Leatherworking
+			filter(113, {	-- Bags
+				i(116261),	-- Burnished Inscription Bag
+				i(116259),	-- Burnished Leather Bag
+				i(116260),	-- Burnished Mining Bag
+			}),
 			n(-322, { 	-- Cloak
 				i(128014, {	-- Burnished Essence
 					WOD_CRAFTED_ITEM(116175),	-- Brilliant Burnished Cloak

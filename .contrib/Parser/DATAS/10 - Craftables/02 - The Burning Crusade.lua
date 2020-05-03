@@ -514,7 +514,20 @@ _.Craftables =
 		}),
 		n(-187, { 	-- Leatherworking
 			filter(113, {	-- Bags
+				i(34490),	-- Bag of Many Hides
 				i(34099, {	-- Knothide Ammo Pouch
+					["timeline"] = {
+						"added 2.3.0.7382",
+						"removed 4.0.1.13287",
+					},
+				}),
+				i(34100, {	-- Knothide Quiver
+					["timeline"] = {
+						"added 2.3.0.7382",
+						"removed 4.0.1.13287",
+					},
+				}),
+				i(34106, {	-- Netherscale Ammo Pouch
 					["timeline"] = {
 						"added 2.3.0.7382",
 						"removed 4.0.1.13287",
