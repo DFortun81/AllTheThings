@@ -463,7 +463,7 @@ _.Holidays =
 						["isYearly"] = true,
 					},
 					{	-- Back To The Orphanage [Neutral - Oracles - FINAL]
-						["questID"] = 28879,	-- Back to the Orphanage	Note!! 13959 depracated
+						["questID"] = 28879,	-- Back to the Orphanage
 						["u"] = 20,				-- Children's Week Filter
 						["provider"] = { "n", 33533 },			-- Oracle Orphan
 						["crs"] = {
@@ -533,7 +533,7 @@ _.Holidays =
 						["isYearly"] = true,
 					},
 					{	-- Back To The Orphanage [Neutral - Wolvar - FINAL]
-						["questID"] = 28880,	-- Back To The Orphanage	Note!! 13960 depracated
+						["questID"] = 28880,	-- Back To The Orphanage
 						["u"] = 20,				-- Children's Week Filter
 						["provider"] = { "n", 33532 },			-- Wolvar Orphan
 						["crs"] = {

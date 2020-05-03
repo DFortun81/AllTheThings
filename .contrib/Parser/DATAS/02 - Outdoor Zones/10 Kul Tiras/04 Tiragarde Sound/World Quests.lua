@@ -44,11 +44,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 110,
 					}),
-					q(52145, {	-- Heave-Ho!
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-						["races"] = ALLIANCE_ONLY,
-					}),
 					q(47894, {	-- Jump Around
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -432,6 +427,12 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(52145, {	-- Heave-Ho!
+						["lvl"] = 120,
+						["isWorldQuest"] = true,
+						["description"] = "This WQ doesn't show up on the map when active, plot waypoint to find the location!",
+						["coord"] = { 77.10, 76.25, 895 }
 					}),
 					q(51245, {	-- I'm a Lumberjack and I'm Okay
 						["lvl"] = 120,
