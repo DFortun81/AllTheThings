@@ -915,8 +915,8 @@ app.L = {
 		[-10077] = "Interface\\Icons\\inv_misc_treasurechest03b",					-- Assault: The Warring Clans
 		[-10078] = "Interface\\Icons\\inv_misc_archaeology_mantidbasket_01",		-- Assault: The Endless Swarm
 		[-10079] = "Interface\\Icons\\inv_misc_ahnqirajtrinket_03",					-- Assault: Aqir Unearthed
-		[-10080] = "Interface\\Icons\\trade_alchemy_potiond2",					-- Horrific Visions
-		[-10081] = "Interface\\Icons\\spell_priest_shadow-mend",					-- Corrupted Area (Vision Scenario)
+		[-10080] = "Interface\\Icons\\trade_alchemy_potiond2",						-- Horrific Visions
+		[-10081] = "Interface\\Icons\\spell_shadow_shadowmend",						-- Corrupted Area (Vision Scenario)
 		[-10082] = "Interface\\Icons\\spell_priest_psyfiend",						-- Lost Area (Vision Scenario)
 
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
