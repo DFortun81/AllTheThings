@@ -64,18 +64,27 @@ _.Zones =
 							["provider"] = { "i", 171320 },	-- Void Focus
 							["description"] = "Can be made with any secondary crafting profession.",
 						}),
-						q(57276, {	-- Maintaining Focus
+						q(57276, {	-- Maintaining Focus (A)
+							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 120,
 							["coord"] = { 46.1, 63.9, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57275,	-- Something in Your Mind
 							["cost"] = { { "i", 171176, 20 }, },	-- 20x Shred of Insanity
 						}),
+						q(57464, {	-- Maintaining Focus (H)
+							["sourceQuest"] = 57275,	-- Something in Your Mind
+							["provider"] = { "n", 155496 },	-- Wrathion
+							["coord"] = { 46.1, 63.9, 1473 },
+							["races"] = HORDE_ONLY,
+							["cost"] = { { "i", 171176, 20 }, },	-- 20x Shred of Insanity
+							["lvl"] = 120,
+						}),
 						q(57462, {	-- Dream Catcher
 							["lvl"] = 120,
 							["coord"] = { 46.1, 63.9, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
-							["sourceQuest"] = 57276,	-- Maintaining Focus
+							["sourceQuests"] = { 57276, 57464 },	-- Maintaining Focus (A, H)
 							["cost"] = { { "i", 171176, 200 }, },	-- 200x Shred of Insanity
 						}),
 					}),

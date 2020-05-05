@@ -6,11 +6,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(302, { 	-- Stormstout Brewery
 		["lvl"] = 85,
 		["maps"] = { 439, 440, 441, 442 },
-		["groups"] = {
+		["g"] = {
 			n(QUESTS, {
 				q(31324, {	-- Family Secrets
 					["provider"] = { "n", 59822 },	-- Auntie Stormstout
-					["groups"] = {
+					["g"] = {
 						i(87310),	-- Stormstout Drink Napkin
 						i(87311),	-- Used Bar Rag
 						i(87312),	-- Auntie's Cooking Apron
@@ -20,7 +20,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				}),
 				q(31327, {	-- Trouble Brewing
 					["provider"] = { "n", 59704 },	-- Chen Stormstout
-					["groups"] = {
+					["g"] = {
 						i(87301),	-- Master Brewer's Gloves
 						i(87302),	-- Barrel Stacker's Mitts
 						i(87303),	-- Wine Tasting Gloves
@@ -34,71 +34,59 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				}),
 			}),
 			d( 1, {	-- Normal
-				["groups"] = {
-					ach(6400),	-- How Did He Get Up There?
-					{	-- Ling-Ting's Herbal Journey
-						["achievementID"] = 6402,	-- Ling-Ting's Herbal Journey
-						["g"] = {
-							{	-- Hopling
-								["itemID"] = 86562,	-- Hopling
-							},
-						},
-					},
-					cr(56637, e(668, {	-- Ook-Ook
-						i(144084),	-- Ook's Hozen Slicer
-						i(143957),	-- Nimbletoe Chestguard
-						i(144087),	-- Bracers of Displaced Air
-						i(143989),	-- Barreldodger Boots
-						i(144119),	-- Empty Fruit Barrel
-						un(2, i(80892)),	-- Ook's Hozen Slicer (7.1 - Removed from Game!)
-						un(2, i(80896)),	-- Nimbletoe Chestguard (7.1 - Removed from Game!)
-						un(2, i(80897)),	-- Bracers of Displaced Air (7.1 - Removed from Game!)
-					})),
-					cr(56717, e(669, {	-- Hoptallus
-						i(144092),	-- Bottle of Potent Potables
-						i(144121),	-- Cloak of Hidden Flasks
-						i(144088),	-- Bubble-Breaker Bracers
-						i(144120),	-- Belt of Brazen Inebriation
-						i(143975),	-- Hopping Mad Leggings
-						un(2, i(80893)),	-- Bottle of Potent Potables (7.1 - Removed from Game!)
-						un(2, i(80899)),	-- Bubble-Breaker Bracers (7.1 - Removed from Game!)
-						un(2, i(80898)),	-- Hopping Mad Leggings (7.1 - Removed from Game!)
-					})),
-					cr(59479, e(670, {	-- Yan-Zhu the Uncasked
-						ach(6457),	-- Stormstout Brewery
-						i(144124),	-- Wort Stirring Rod
-						i(144085),	-- Gao's Keg Tapper
-						i(144217),	-- Inelava, Spirit of Inebriation
-						i(144089),	-- Yan-Zhu's Pressure Valve
-						i(143969),	-- Fizzy Spaulders
-						i(143958),	-- Uncasked Chestguard
-						i(144082),	-- Fermenting Belt
-						i(143976),	-- Sudsy Legplates
-						i(144125),	-- Alemental Seal
-						i(144123),	-- Lime-Rimmed Signet
-						i(144122),	-- Carbonic Carbuncle
-						un(2, i(80894)),	-- Gao's Keg Tapper (7.1 - Removed from Game!)
-						un(2, i(80895)),	-- Yan-Zhu's Pressure Valve (7.1 - Removed from Game!)
-						un(2, i(80900)),	-- Fizzy Spaulders (7.1 - Removed from Game!)
-						un(2, i(80902)),	-- Uncasked Chestguard (7.1 - Removed from Game!)
-						un(2, i(80903)),	-- Fermenting Belt (7.1 - Removed from Game!)
-						un(2, i(80901)),	-- Sudsy Legplates (7.1 - Removed from Game!)
-					})),
-				},
+				ach(6400),	-- How Did He Get Up There?
+				ach(6402, {	-- Ling-Ting's Herbal Journey
+					i(86562),	-- Hopling
+				}),
+				cr(56637, e(668, {	-- Ook-Ook
+					i(144084),	-- Ook's Hozen Slicer
+					i(143957),	-- Nimbletoe Chestguard
+					i(144087),	-- Bracers of Displaced Air
+					i(143989),	-- Barreldodger Boots
+					i(144119),	-- Empty Fruit Barrel
+					un(2, i(80892)),	-- Ook's Hozen Slicer (7.1 - Removed from Game!)
+					un(2, i(80896)),	-- Nimbletoe Chestguard (7.1 - Removed from Game!)
+					un(2, i(80897)),	-- Bracers of Displaced Air (7.1 - Removed from Game!)
+				})),
+				cr(56717, e(669, {	-- Hoptallus
+					i(144092),	-- Bottle of Potent Potables
+					i(144121),	-- Cloak of Hidden Flasks
+					i(144088),	-- Bubble-Breaker Bracers
+					i(144120),	-- Belt of Brazen Inebriation
+					i(143975),	-- Hopping Mad Leggings
+					un(2, i(80893)),	-- Bottle of Potent Potables (7.1 - Removed from Game!)
+					un(2, i(80899)),	-- Bubble-Breaker Bracers (7.1 - Removed from Game!)
+					un(2, i(80898)),	-- Hopping Mad Leggings (7.1 - Removed from Game!)
+				})),
+				cr(59479, e(670, {	-- Yan-Zhu the Uncasked
+					ach(6457),	-- Stormstout Brewery
+					i(144124),	-- Wort Stirring Rod
+					i(144085),	-- Gao's Keg Tapper
+					i(144217),	-- Inelava, Spirit of Inebriation
+					i(144089),	-- Yan-Zhu's Pressure Valve
+					i(143969),	-- Fizzy Spaulders
+					i(143958),	-- Uncasked Chestguard
+					i(144082),	-- Fermenting Belt
+					i(143976),	-- Sudsy Legplates
+					i(144125),	-- Alemental Seal
+					i(144123),	-- Lime-Rimmed Signet
+					i(144122),	-- Carbonic Carbuncle
+					un(2, i(80894)),	-- Gao's Keg Tapper (7.1 - Removed from Game!)
+					un(2, i(80895)),	-- Yan-Zhu's Pressure Valve (7.1 - Removed from Game!)
+					un(2, i(80900)),	-- Fizzy Spaulders (7.1 - Removed from Game!)
+					un(2, i(80902)),	-- Uncasked Chestguard (7.1 - Removed from Game!)
+					un(2, i(80903)),	-- Fermenting Belt (7.1 - Removed from Game!)
+					un(2, i(80901)),	-- Sudsy Legplates (7.1 - Removed from Game!)
+				})),
 			}),
 			d( 2, {	-- Heroic
 				["lvl"] = 90,
-				["groups"] = {
+				["g"] = {
 					ach(6420),	-- Hopocalypse Now!
 					ach(6400),	-- How Did He Get Up There?
-					{	-- Ling-Ting's Herbal Journey
-						["achievementID"] = 6402,	-- Ling-Ting's Herbal Journey
-						["g"] = {
-							{	-- Hopling
-								["itemID"] = 86562,	-- Hopling
-							},
-						},
-					},
+					ach(6402, {	-- Ling-Ting's Herbal Journey
+						i(86562),	-- Hopling
+					}),
 					cr(56637, e(668, {	-- Ook-Ook
 						ach(6089),	-- Keep Rollin' Rollin' Rollin'
 						i(144084),	-- Ook's Hozen Slicer
@@ -125,11 +113,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 					cr(59479, e(670, {	-- Yan-Zhu the Uncasked
 						ach(6456),	-- Heroic: Stormstout Brewery
-						{	-- Polyformic Acid Science: Yan-Zhu the Uncasked
+						crit(6, {	-- Yan-Zhu the Uncasked
 							["achievementID"] = 6715,	-- Polyformic Acid Science
-							["criteriaID"] = 6,	-- Yan-Zhu the Uncasked
 							["description"] = "Requires Polyformic Acid Potion disguise to be active. Potion is obtained by filling the Empty Polyformic Acid Vial dropped by Professor Slate in Scholomance.",
-						},
+						}),
 						ach(6457),	-- Stormstout Brewery
 						i(144124),	-- Wort Stirring Rod
 						i(144085),	-- Gao's Keg Tapper
@@ -144,7 +131,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(144122),	-- Carbonic Carbuncle
 						un(2, i(81140)),	-- Wort Stirring Rod (7.1 - Removed from Game!)
 						un(2, i(81062)),	-- Gao's Keg Tapper (7.1 - Removed from Game!)
-						un(2, i(87545)),	-- Inelava, Spirit of Inebriation (7.1 - Removed from Game!)
+						i(87545),	-- Inelava, Spirit of Inebriation — this specific itemID dropped for a discord user on May 4th, 2020 (a screenshot was provided).  possible that both versions drop?
 						un(2, i(81066)),	-- Yan-Zhu's Pressure Valve (7.1 - Removed from Game!)
 						un(2, i(81068)),	-- Fizzy Spaulders (7.1 - Removed from Game!)
 						un(2, i(81081)),	-- Uncasked Chestguard (7.1 - Removed from Game!)
@@ -155,7 +142,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			}),
 			d(24, {	-- Timewalking
 				["lvl"] = 91,
-				["groups"] = {
+				["g"] = {
 					cr(56637, e(668, {	-- Ook-Ook
 						i(144084),	-- Ook's Hozen Slicer
 						i(143957),	-- Nimbletoe Chestguard
