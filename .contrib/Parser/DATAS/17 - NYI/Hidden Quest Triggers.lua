@@ -2262,6 +2262,7 @@ _.NeverImplemented =
 		q(59060),	-- choosing Bitey McStabface as the name for your Aqir Hatchling
 		q(59062),	-- choosing Spike as the name for your Aqir Hatchling
 		q(59059),	-- chose "Yu'gaz" as the name for your Aqir Hatchling
+		q(59132),	-- probably "Unwavering Resolve" achievement (upgrade cloak to rank 15)
 
 		-- Horrific Visions
 		-- Orgrimmar
