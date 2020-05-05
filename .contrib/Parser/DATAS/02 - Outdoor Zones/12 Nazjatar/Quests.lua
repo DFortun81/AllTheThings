@@ -1349,12 +1349,6 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56240,	-- Strange Silver Knife
 			}),
-			q(57326, {	-- Prototypes for Profit
-				["provider"] = { "n", 150567 },	-- Gazlowe
-				["coord"] = { 74.0, 36.8, 1355 },
-				["races"] = HORDE_ONLY,
-				["isBreadcrumb"] = true,
-			}),
 			q(55573, {	-- Purging the Defilers
 				["sourceQuests"] = {
 					55569,	-- Echoes of Pain

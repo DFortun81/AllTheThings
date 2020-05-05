@@ -659,6 +659,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55651,	-- To Mechagon!
 				}),
+				q(57326, {	-- Prototypes for Profit
+					["provider"] = { "n", 150567 },	-- Gazlowe
+					["coord"] = { 74.0, 36.8, 1355 },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
 				q(57327, {	-- Prototypes for Inspiration
 					["provider"] = { "n", 150282 },	-- Tinkmaster Overspark
 					["coord"] = { 73.96, 36.93, 1462 },
