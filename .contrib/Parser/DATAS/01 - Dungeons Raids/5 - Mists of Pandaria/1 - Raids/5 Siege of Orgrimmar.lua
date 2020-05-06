@@ -327,7 +327,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						un(2, i(105830)),	-- Brave Niunai's Cloak Normal
 						un(2, i(105826)),	-- Cape of the Alpha Normal
 						un(2, i(105829)),	-- Drape of the Omega Normal
-						un(2, i(105839)),	-- Turtleshell Greatcloak Normal
+						un(38, i(105839)),	-- Turtleshell Greatcloak Normal (confirmed to drop from Ordos cache on May 5, 2020)
 						un(38, i(105827)),	-- Kalaena's Arcane Handwraps (confirmed to drop from Ordos cache on April 28, 2020)
 						un(2, i(105828)),	-- Seebo's Sainted Touch Normal
 						un(2, i(105832)),	-- Crimson Gauntlets of Death Normal

@@ -181,36 +181,39 @@ _.ExpansionFeatures =
 					}),
 				},
 			}),
-		--	maybe add descriptions with which subsection a reward comes from?  like for rexxar, "Defeat Rexxar and his creatures in the Valley of Honor," or even just "Found in the Valley of Honor"?  seems like information people might need but i'm not sure the best way to supply it.  don't really want to create a "valley of honor" (etc) custom header for one item, either	
 			n(-10073, {	-- Horrific Vision of Orgrimmar
 				["maps"] = { 1469 },
 				["g"] = {
-					i(174920, {	-- Coifcurl's Close Shave Kit (TOY!)
-					--	does this actually require doing valley of spirits?  if so, move it
-						["description"] = "Chest is inside the barber shop on the right.",
-						["coord"] = { 40.5, 60.3, 1469 },
-					}),
 					n(-10081, {	-- Corrupted Area
 						n(153244, {	-- Oblivion Elemental
-							i(174924),	-- Void-Touched Souvenir Totem (TOY!)  Looted from Valley of Spirits completion chest at the end.
-							i(173726),	-- Box With Faintly Glowing "Air" Holes (PET!) - Zekhan
+							["description"] = "Help Zekhan save Orgrimmar's shamans in the Valley of Spirits.",
+							["g"] = {
+								i(174924),	-- Void-Touched Souvenir Totem (TOY!)
+								i(173726),	-- Box With Faintly Glowing "Air" Holes (PET!)
+							},
+						}),
+						i(174920, {	-- Coifcurl's Close Shave Kit (TOY!)
+							["description"] = "Requires entering the Valley of Spirits.  The chest is inside the barber shop on the right.",
+							["coord"] = { 40.5, 60.3, 1469 },
 						}),
 					}),
 					n(-10082, {	-- Lost Area
 						n(155098, {	-- Rexxar
-							i(174457),	-- C'Thuffer (PET!) - rexxar
+							["description"] = "Defeat Rexxar and his creatures in the Valley of Honor.",
+							["g"] = {
+								i(174457),	-- C'Thuffer (PET!) - rexxar
+								i(173289),	-- Spark of Inspiration (Rank 2) — from completing first Lost Area
+							},
 						}),
 					}),
-					n(-6015, {	-- Rewards	-- temporary grouping until we figure out how these are best organized
-						i(173308),	-- Mark of Boistrous Duty (Rank 1)
-						i(168936),	-- Ward of Unwavering Hope (Rank 1)
-						i(173288),	-- Overflowing Azerite Geode
-						i(174287),	-- Sparks of Unwavering Strength
-						i(173289),	-- Spark of Inspiration (Rank 2)
-						
+					n(152089, {	-- Thrall
 						i(174461),	-- Swirling Black Bottle (PET!) -- Thrall
 						i(174646),	-- Void-Link Frostwolf Collar (PET!) - Thrall
-
+						i(174287, {	-- Sparks of Unwavering Strength
+							i(173308),	-- Mark of Boistrous Duty (Rank 1)
+							i(168936),	-- Ward of Unwavering Hope (Rank 1)
+							i(173288),	-- Overflowing Azerite Geode (Rank 1)
+						}),
 						i(175054),	-- Melee Veterans Contract
 						i(175052),	-- Mounted Veterans Contract
 						i(175053),	-- Ranged Veterans Contract
@@ -251,23 +254,43 @@ _.ExpansionFeatures =
 						["coord"] = { 58.9, 52.9, 1470 },
 					}),
 					n(-10081, {	-- Corrupted Area
-						n(156577, {	-- Therum Deepforge (Dwarven District)
-							i(174460),	-- Box Labeled "Danger: Void Rat Inside" (pet) - Kelsey
+						n(156577, {	-- Therum Deepforge
+							["description"] = "Aid Kelsey and play with explosives in the Dwarven District.",
+							["g"] = {
+								i(174460),	-- Box Labeled "Danger: Void Rat Inside" (PET!) - Kelsey
+							},
 						}),
 					}),
 					n(-10082, {	-- Lost Area
-						n(158157, {	-- Overlord Mathias Shaw (Old Town)
-							i(174932),	-- Illusion: Void Edge -- Valeera
+						n(158157, {	-- Overlord Mathias Shaw
+							["description"] = "Assist Valeera with some Defias Company downsizing in Old Town.",
+							["g"] = {
+								i(174932),	-- Illusion: Void Edge -- Valeera
+								i(173289),	-- Spark of Inspiration (Rank 2) — from completing first Lost Area
+							},
 						}),
-						n(158035, {	-- Magister Umbric (Mage Quarter)
-							i(174458),	-- Void-scarred Hare (PET!) -- Umbric
+						n(158035, {	-- Magister Umbric
+							["description"] = "Stop Magister Umbric's assault in the Mage Quarter.",
+							["g"] = {
+								i(174458),	-- Void-scarred Hare (PET!) -- Umbric
+								i(173289),	-- Spark of Inspiration (Rank 2) — from completing first Lost Area
+							},
 						}),
 					}),
-					n(-6015,  {	-- Rewards	-- temporary grouping until we figure out how these are best organized
-						i(174287),	-- Sparks of Unwavering Strength
-						i(173289),	-- Spark of Inspiration (Rank 2)
-						i(174461),	-- Swirling Black Bottle (PET!) -- Alleria
-						i(174459),	-- Voidwoven Cat Collar (PET!) -- Alleria
+					n(152718, {	-- Alleria Windrunner
+						i(174461),	-- Swirling Black Bottle (PET!)
+						i(174459),	-- Voidwoven Cat Collar (PET!)
+						i(174287, {	-- Sparks of Unwavering Strength
+							i(173308),	-- Mark of Boistrous Duty (Rank 1)
+							i(168936),	-- Ward of Unwavering Hope (Rank 1)
+							i(173288),	-- Overflowing Azerite Geode (Rank 1)
+						}),
+						i(175054),	-- Melee Veterans Contract
+						i(175052),	-- Mounted Veterans Contract
+						i(175053),	-- Ranged Veterans Contract
+						i(174891),	-- Veteran Rajani Spakcallers Contract
+						i(174890),	-- Veteran Ramkahen Lancers Contract
+						i(175056),	-- Waterborne Veterans Contract
 					}),
 				},
 				--[[ notes:
