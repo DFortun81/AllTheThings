@@ -24,6 +24,9 @@ _.Achievements =
 						ach(8331),	-- Deepwind Gorge Victory
 						ach(8332),	-- Deepwind Gorge Veteran
 						ach(8333),	-- Deepwind Gorge Perfection
+						ach(14187),	-- Cruisin' for a Brewsin'
+						ach(14186),	-- Market Dominance
+						ach(14188),	-- Well Gorged
 						title(229),	-- Gorgeous
 					}),
 				},
