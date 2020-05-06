@@ -530,6 +530,95 @@ _.Zones =
 					["provider"] = { "n", 10267 },	-- Thinkee Steamboil
 					["sourceQuest"] = 4734,	-- Egg Freezing
 				}),
+				q(4481, {	-- Libram of Constitution
+					["u"] = 40,
+					["qg"] = 9836,	-- Mathredis Firestar
+					["coord"] = { 65, 23.6, 36 },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11754, 1 },	-- Black Diamond
+						{ "i", 8411, 1 },  -- Lung Juice Cocktail
+						{ "i", 11733, 1 },	-- Libram of Constitution
+						{ "i", 11952, 4 },	-- Night Dragon's Breath
+						{ "g", 300000 },   -- 30g
+					},
+					["lvl"] = 50,
+					["g"] = {
+						i(11642),	-- Lesser Arcanum of Constitution
+					},
+				}),
+				q(4483, {	-- Libram of Resilience
+					["u"] = 40,
+					["qg"] = 9836,	-- Mathredis Firestar
+					["coord"] = { 65, 23.6, 36 },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11754, 1 },	-- Black Diamond
+						{ "i", 11567, 4 },	-- Crystal Spire
+						{ "i", 11751, 1 },  -- Bruning Essence
+						{ "i", 11736, 1 },	-- Libram of Resilience
+						{ "g", 300000 },   -- 30g
+					},
+					["lvl"] = 50,
+					["g"] = {
+						i(11644),	-- Lesser Arcanum of Resilience
+					},
+				}),
+				q(4463, {	-- Libram of Rumination
+					["u"] = 40,
+					["qg"] = 9836,	-- Mathredis Firestar
+					["coord"] = { 65, 23.6, 36 },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11754, 1 },	-- Black Diamond
+						{ "i", 11752, 1 },	-- Black Blood of the Tormented
+						{ "i", 8424, 1 },  -- Gizzard Gum
+						{ "i", 11732, 1 },	-- Libram of Rumination
+						{ "g", 300000 },   -- 30g
+					},
+					["lvl"] = 50,
+					["g"] = {
+						i(11622),	-- Lesser Arcanum of Rumination
+					},
+				}),
+				q(4482, {	-- Libram of Tenacity
+					["u"] = 40,
+					["qg"] = 9836,	-- Mathredis Firestar
+					["coord"] = { 65, 23.6, 36 },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11754, 1 },	-- Black Diamond
+						{ "i", 11734, 1 },	-- Libram of Tenacity
+						{ "i", 11564, 4 },	-- Crystal Ward 
+						{ "i", 11753, 1 },	-- Eye of Kajal
+						{ "g", 300000 },   -- 30g
+					},
+					["lvl"] = 50,
+					["g"] = {
+						i(11643),	-- Lesser Arcanum of Tenacity
+					},
+				}),
+				q(4484, {	-- Libram of Voracity
+					["u"] = 40,
+					["qg"] = 9836,	-- Mathredis Firestar
+					["coord"] = { 65, 23.6, 36 },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11754, 1 },	-- Black Diamond
+						{ "i", 11737, 1 },	-- Libram of Voracity
+						{ "i", 11951, 4 },	-- Whipper Root Tuber
+						{ "i", 11563, 4 },	-- Crystal Force
+						{ "g", 300000 },   -- 30g
+					},
+					["lvl"] = 50,
+					["g"] = {
+						i(11647),	-- Lesser Arcanum of Voracity
+						i(11648),	-- Lesser Arcanum of Voracity
+						i(11649),	-- Lesser Arcanum of Voracity
+						i(11645),	-- Lesser Arcanum of Voracity
+						i(11646),	-- Lesser Arcanum of Voracity
+					},
+				}),
 				q(28327, {	-- Locked and Loaded
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {

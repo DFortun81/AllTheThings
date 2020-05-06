@@ -71,6 +71,12 @@ _.Instances = { tier(1, {	-- Classic
 						q(7483, {	-- Libram of Rapidity
 							["u"] = 40,
 							["provider"] = { "n", 14368 },	-- Lorekeeper Lydros
+							["cost"] = {
+								{ "i", 18332, 1 },	-- Libram of Rapidity
+								{ "i", 18335, 1 },	-- Pristine Black Diamond
+								{ "i", 14344, 2 },	-- Large Brilliant Shard
+								{ "i", 12938, 2 },	-- Blood of Heroes
+							},
 							["g"] = {
 								un(2, i(18329, {	-- Arcanum of Rapidity
 									["f"] = 55,	-- Consumable
@@ -300,6 +306,12 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						q(7485, {	-- Libram of Protection
 							["u"] = 40,
+							["cost"] = {
+								{ "i", 18334, 1 },	-- Libram of Protection
+								{ "i", 18335, 1 },	-- Pristine Black Diamond
+								{ "i", 14344, 2 },	-- Large Brilliant Shard
+								{ "i", 12735, 1 },	-- Frayed Abomination Stitching
+							},
 							["g"] = {
 								un(2, i(18331, {	-- Arcanum of Protection
 									["f"] = 55,	-- Consumable
@@ -524,6 +536,12 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						q(7484, {	-- Libram of Focus
 							["u"] = 40,
+							["cost"] = {
+								{ "i", 18333, 1 },	-- Libram of Focus
+								{ "i", 18335, 1 },	-- Pristine Black Diamond
+								{ "i", 14344, 4 },	-- Large Brilliant Shard
+								{ "i", 12753, 2 },	-- Skin of Shadow
+							},
 							["g"] = {
 								un(2, i(18330, {	-- Arcanum of Focus
 									["f"] = 55,	-- Consumable

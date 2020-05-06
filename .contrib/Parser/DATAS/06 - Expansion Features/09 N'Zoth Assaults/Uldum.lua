@@ -1049,6 +1049,7 @@ _.ExpansionFeatures =
 					}),
 					q(57359, {	-- Summoning Ritual
 						["description"] = "The portal needs to be clicked multiple times in order for the rares to spawn.  You can only click the portal once per day, so work together with others to get the spawn.  Three rares will spawn at a time and any of the rares can spawn in any of the locations.",
+						["altQuests"] = { 57621, 57620 },	-- Summoning Ritual (there seem to be 3 separate questIDs, probably depending on the location that's up)
 						["isDaily"] = true,
 						--["isWorldQuest"] = true, -- maybe?  classified as wq on wowhead
 						["coords"] = {
