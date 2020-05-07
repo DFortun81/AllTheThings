@@ -354,7 +354,7 @@ _.Zones =
 							["isDaily"] = true,
 							["g"] = {
 								n(152961, {	-- Data Anomaly <Balnazzar>
-									["questID"] = 57385,
+									["questID"] = 57387,
 									["isDaily"] = true,
 									["g"] = {
 										i(13353),	-- Book of the Dead
@@ -387,7 +387,7 @@ _.Zones =
 									},
 								}),
 								n(152922, {	-- Data Anomaly <Captain Kromcrush>
-									["questID"] = 57385,
+									["questID"] = 57387,
 									["isDaily"] = true,
 									["g"] = {
 										i(18507),	-- Boots of the Full Moon
@@ -876,12 +876,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55651,	-- To Mechagon!
 				}),
-				q(57326, {	-- Prototypes for Profit
-					["provider"] = { "n", 150567 },	-- Gazlowe
-					["coord"] = { 74.0, 36.8, 1355 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
 				q(57327, {	-- Prototypes for Inspiration
 					["provider"] = { "n", 150282 },	-- Tinkmaster Overspark
 					["coord"] = { 73.96, 36.93, 1462 },
@@ -970,6 +964,41 @@ _.Zones =
 									i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 								}),
 								i(168266, {	-- Strange Recycling Requisiton(Epic)
+									i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
+										i(169843, {	-- Azeroth Mini: Cork Stuttguard
+											crit(7, {	-- Cork Stuttguard
+												["achievementID"] = 13708,	-- Most Minis Wins
+											}),
+										}),
+										i(169842, {	-- Azeroth Mini: Roadtrogg
+											crit(8, {	-- Roadtrogg
+												["achievementID"] = 13708,	-- Most Minis Wins
+											}),
+										}),
+										i(169840, {	-- Azeroth Mini: Gazlowe
+											crit(3, {	-- Gazlowe
+												["achievementID"] = 13708,	-- Most Minis Wins
+											}),
+										}),
+										i(169795, {	-- Azeroth Mini: Bondo Bigblock
+											crit(6, {	-- Bondo Bigblock
+												["achievementID"] = 13708,	-- Most Minis Wins
+											}),
+										}),
+										i(169849, {	-- Azeroth Mini: Naeno Megacrash
+											crit(9, {	-- Naeno Megacrash
+												["achievementID"] = 13708,	-- Most Minis Wins
+											}),
+										}),
+									}),
+									i(169175, {	-- Blueprint: Annoy-o-Tron Gang
+										["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
+										["groups"] = {
+											crit(34, {	-- Annoy-o-Tron Gang
+												["achievementID"] = 13479,	-- Junkyard Architect
+											}),
+										},
+									}),
 									i(169167, {	-- Blueprint: Orange Spraybot
 										["questID"] = 55075,
 										["g"] = {
@@ -999,15 +1028,6 @@ _.Zones =
 											["achievementID"] = 13686,    -- Junkyard Melomanic
 										}),
 									}),
-									i(169175, {	-- Blueprint: Annoy-o-Tron Gang
-										["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
-										["groups"] = {
-											crit(34, {	-- Annoy-o-Tron Gang
-												["achievementID"] = 13479,	-- Junkyard Architect
-											}),
-										},
-									}),
-									i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 								}),
 							},
 						}),
@@ -1046,6 +1066,41 @@ _.Zones =
 									i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 								}),
 								i(168266, {	-- Strange Recycling Requisiton(Epic)
+									i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
+										i(169843, {	-- Azeroth Mini: Cork Stuttguard
+											crit(7, {	-- Cork Stuttguard
+												["achievementID"] = 13708,	-- Most Minis Wins
+											}),
+										}),
+										i(169842, {	-- Azeroth Mini: Roadtrogg
+											crit(8, {	-- Roadtrogg
+												["achievementID"] = 13708,	-- Most Minis Wins
+											}),
+										}),
+										i(169840, {	-- Azeroth Mini: Gazlowe
+											crit(3, {	-- Gazlowe
+												["achievementID"] = 13708,	-- Most Minis Wins
+											}),
+										}),
+										i(169795, {	-- Azeroth Mini: Bondo Bigblock
+											crit(6, {	-- Bondo Bigblock
+												["achievementID"] = 13708,	-- Most Minis Wins
+											}),
+										}),
+										i(169849, {	-- Azeroth Mini: Naeno Megacrash
+											crit(9, {	-- Naeno Megacrash
+												["achievementID"] = 13708,	-- Most Minis Wins
+											}),
+										}),
+									}),
+									i(169175, {	-- Blueprint: Annoy-o-Tron Gang
+										["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
+										["groups"] = {
+											crit(34, {	-- Annoy-o-Tron Gang
+												["achievementID"] = 13479,	-- Junkyard Architect
+											}),
+										},
+									}),
 									i(169167, {	-- Blueprint: Orange Spraybot
 										["questID"] = 55075,
 										["g"] = {
@@ -1063,24 +1118,18 @@ _.Zones =
 										},
 									}),
 									i(167795, {	-- Paint Vial: Copper Trim
-										crit(4, {	-- Copper Trim
-											["achievementID"] = 13513,	-- Available in Eight Colors
-										}),
+										["questID"] = 55456,	-- Paint Vial: Copper Trim
+										["g"] = {
+											crit(4, {	-- Copper Trim
+												["achievementID"] = 13513,	-- Available in Eight Colors
+											}),
+										},
 									}),
 									i(169689, {	-- Vinyl: Mimiron's Brainstorm
 										crit(3, {	-- Mimiron's Brainstorm
 											["achievementID"] = 13686,    -- Junkyard Melomanic
 										}),
 									}),
-									i(169175, {	-- Blueprint: Annoy-o-Tron Gang
-										["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
-										["groups"] = {
-											crit(34, {	-- Annoy-o-Tron Gang
-												["achievementID"] = 13479,	-- Junkyard Architect
-											}),
-										},
-									}),
-									i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 								}),
 							},
 						}),

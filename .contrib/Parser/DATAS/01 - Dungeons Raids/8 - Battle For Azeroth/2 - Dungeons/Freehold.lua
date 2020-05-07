@@ -3,10 +3,11 @@
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	inst(1001, {	-- Freehold
-		["lvl"] = 110,
+		["coord"] = { 84.6, 78.7, 895 },
 		["maps"] = {
 			936,	-- Freehold
 		},
+		["lvl"] = 110,
 		["g"] = {
 			n(-34, {	-- World Quests
 				q(52454, {	-- Freehold: Dread Captain Vandegrim
@@ -22,7 +23,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["lvl"] = 120,
 				}),
 			}),
-			d(1, {	-- Normal
+			d(1,  {	-- Normal
 				e(2102, {	-- Skycap'n Kragg
 					["crs"] = {
 						126832,	-- Skycap'n Kragg
@@ -56,6 +57,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 				e(2094, {	-- Ring of Booty
 					["crs"] = {
+						130086,	-- Davey "Two Eyes"
+						130099,	-- Lightning
+						129699,	-- Ludwig Von Tortollan
 						126969,	-- Trothak <The Shark Puncher>
 					},
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -88,7 +92,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 			}),
-			d(2, {	-- Heroic
+			d(2,  {	-- Heroic
 				["lvl"] = 120,
 				["g"] = {
 					e(2102, {	-- Skycap'n Kragg
@@ -124,6 +128,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 					e(2094, {	-- Ring of Booty
 						["crs"] = {
+							130086,	-- Davey "Two Eyes"
+							130099,	-- Lightning
+							129699,	-- Ludwig Von Tortollan
 							126969,	-- Trothak <The Shark Puncher>
 						},
 						["g"] = {
@@ -195,6 +202,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 					e(2094, {	-- Ring of Booty
 						["crs"] = {
+							130086,	-- Davey "Two Eyes"
+							130099,	-- Lightning
+							129699,	-- Ludwig Von Tortollan
 							126969,	-- Trothak <The Shark Puncher>
 						},
 						["g"] = {

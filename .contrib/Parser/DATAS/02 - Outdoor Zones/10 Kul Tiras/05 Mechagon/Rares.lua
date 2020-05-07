@@ -683,6 +683,41 @@ _.Zones =
 							["questID"] = 56079,	-- triggered when completing normal-mode rig and receiving this item on top of normal box
 							["isDaily"] = true,
 							["g"] = {
+								i(169848, {	-- Azeroth Mini Pack: Bondo's Yard
+									i(169843, {	-- Azeroth Mini: Cork Stuttguard
+										crit(7, {	-- Cork Stuttguard
+											["achievementID"] = 13708,	-- Most Minis Wins
+										}),
+									}),
+									i(169842, {	-- Azeroth Mini: Roadtrogg
+										crit(8, {	-- Roadtrogg
+											["achievementID"] = 13708,	-- Most Minis Wins
+										}),
+									}),
+									i(169840, {	-- Azeroth Mini: Gazlowe
+										crit(3, {	-- Gazlowe
+											["achievementID"] = 13708,	-- Most Minis Wins
+										}),
+									}),
+									i(169795, {	-- Azeroth Mini: Bondo Bigblock
+										crit(6, {	-- Bondo Bigblock
+											["achievementID"] = 13708,	-- Most Minis Wins
+										}),
+									}),
+									i(169849, {	-- Azeroth Mini: Naeno Megacrash
+										crit(9, {	-- Naeno Megacrash
+											["achievementID"] = 13708,	-- Most Minis Wins
+										}),
+									}),
+								}),
+								i(169175, {	-- Blueprint: Annoy-o-Tron Gang
+									["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
+									["groups"] = {
+										crit(34, {	-- Annoy-o-Tron Gang
+											["achievementID"] = 13479,	-- Junkyard Architect
+										}),
+									},
+								}),
 								i(169167, {	-- Blueprint: Orange Spraybot
 									["questID"] = 55075,
 									["g"] = {
@@ -712,15 +747,6 @@ _.Zones =
 										["achievementID"] = 13686,    -- Junkyard Melomanic
 									}),
 								}),
-								i(169175, {	-- Blueprint: Annoy-o-Tron Gang
-									["questID"] = 55083,	-- Blueprint: Annoy-o-Tron Gang
-									["groups"] = {
-										crit(34, {	-- Annoy-o-Tron Gang
-											["achievementID"] = 13479,	-- Junkyard Architect
-										}),
-									},
-								}),
-								i(169848),	-- Azeroth Mini Pack: Bondo's Yard
 							},
 						}),
 					},
