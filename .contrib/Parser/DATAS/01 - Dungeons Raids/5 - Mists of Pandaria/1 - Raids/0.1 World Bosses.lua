@@ -430,9 +430,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["g"] = {
 							un(38, i(105827)),	-- Kalaena's Arcane Handwraps
 							un(38, i(105833)),	-- Keengrip Arrowpullers
+							un(38, i(105834)),	-- Marco's Crackling Gloves
 							un(38, i(105831)),	-- Siid's Silent Stranglers
-							un(38, i(105839)),	-- Turtleshell Greatcloak Normal
-							un(38, i(105836)),	-- Zoid's Molten Gauntlets Normal
+							un(38, i(105839)),	-- Turtleshell Greatcloak
+							un(38, i(105836)),	-- Zoid's Molten Gauntlets
 							-- NOTE FOR CONTRIBS: Only add items you receive to this. The old listings on WoWHead may be inaccurate or out of date.
 						},
 					})),

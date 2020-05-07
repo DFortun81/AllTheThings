@@ -255,62 +255,279 @@ _.Zones =
 					["provider"] = { "n", 153750 },	-- Koupal Oilshins
 				}),
 				q(56410, {	-- Discs of Norgannon
+					["description"] = "The |cFF0070ddCorrupted Data Disc|r is the quest item for Discs of Norgannon, but on the day the quest is up you can loot the other four items.  They each have a daily cooldown, so you can use them to summon 4 Data Anomalies, abandon the quests, and use the items again the next day.\n\nIf the disc can summon more than one Data Anomaly, they share a daily lockout and you can only loot one of the two each day.\n",
 					["provider"] = { "n", 154982 },	-- Archivist Bitbyte
-					["coord"] = { 72.0, 36.5, 1462 },
 					["isDaily"] = true,
+					["coord"] = { 72.0, 36.5, 1462 },
 					["g"] = {
-						n(152961, {	-- Data Anomaly Balnazzar
-							["crs"] = {
-							--	could technically separate this into 6 different listings with the same stuff under each one so people could more easily track that they'd killed every rare that can drop this loot, but it seems like an insane amount of duplication when people can just...make a list.  idk!
-							--	Balnazzar questID: 57387
-								153486,	-- Data Anomaly Baron Gedden (questID 57389)
-								152979,	-- Data Anomaly Baron Kazum (questID 57388)
-								152922,	-- Data Anomaly Captain Kromcrush (questID 57387)
-								152983,	-- Data Anomaly Crowd Pummeler 9-60 (questID 57388)
-							--	152959,	-- Data Anomaly Hogger (listed as a rare on wowhead so might have a questID, but it's never rare for me)
-							--	152964,	-- Data Anomaly Lord Incendius
-							--	152976,	-- Data Anomaly Meathook
-								152923,	-- Data Anomaly Razorclaw the Butcher (questID 57385)
-							--	152969,	-- Data Anomaly Razorlash
-							},
-							["g"] = {
-								i(168631),	-- Metal Detector
-								i(169169, {	-- Blueprint: Blue Spraybot (any)
-									["questID"] = 55077,
-									["g"] = {
-										crit(29, {	-- Blue Spraybot
-											["achievementID"] = 13479,	-- Junkyard Architect
-										}),
-									},
-								}),
-								i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
-									["questID"] = 56517,
-									["g"] = {
-										crit(4, {	-- Battle of Gnomeregan
-											["achievementID"] = 13686,	-- Junkyard Melomaniac
-										}),
-									},
-								}),
-								i(18507),	-- Boots of the Full Moon
-								i(16844),	-- Earthfury Epaulets (Geddon?)
-								i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
-									["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
-									["g"] = {
-										crit(25, {	-- Holographic Digitalization Relay
-											["achievementID"] = 13479,	-- Junkyard Architect
-										}),
-									},
-								}),
-								i(13348),	-- Demonshear (Balnazaar?)
+						i(169474, {	-- Corrupted Data Disc
+							n(152964, {	-- Data Anomaly <Lord Incendius>
 								i(11764),	-- Cinderhide Armsplints
-								i(37081),	-- Meathook's SLicer
-								i(151451),	-- Strip-Thorn Gauntlets (Razorlash)?
-								i(6341),	-- Eerie-Stable Lantern
-								i(1292),    -- Butcher's Cleaver
+							}),
+							n(152976, {	-- Data Anomaly <Meathook>
+								i(37081),	-- Meathook's Slicer
+							}),
+							n(152969, {	-- Data Anomaly <Razorlash>
+								i(151451),	-- Strip-Thorn Gauntlets
+							}),
+							crit(26, {	-- Discs of Norgannon
+								["achievementID"] = 13556,	-- Outside Influences
+							}),
+						}),
+						i(169591, {	-- Cracked Numeric Cylinder
+							["description"] = "Dropped by trogg mobs.",
+							["questID"] = 56421,	-- Cracked Numeric Cylinder
+							["isDaily"] = true,
+							["g"] = {
+								n(152958, {	-- Data Anomaly <Hogger>
+									["questID"] = 57385,
+									["isDaily"] = true,
+									["g"] = {
+										i(1934),	-- Hogger's Trousers
+										i(168631),	-- Metal Detector
+										i(169169, {	-- Blueprint: Blue Spraybot (any)
+											["questID"] = 55077,
+											["g"] = {
+												crit(29, {	-- Blue Spraybot
+													["achievementID"] = 13479,	-- Junkyard Architect
+												}),
+											},
+										}),
+										i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
+											["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
+											["g"] = {
+												crit(25, {	-- Holographic Digitalization Relay
+													["achievementID"] = 13479,	-- Junkyard Architect
+												}),
+											},
+										}),
+										i(168631),	-- Metal Detector
+										i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
+											["questID"] = 56517,
+											["g"] = {
+												crit(4, {	-- Battle of Gnomeregan
+													["achievementID"] = 13686,	-- Junkyard Melomaniac
+												}),
+											},
+										}),
+									},
+								}),
+								n(152923, {	-- Data Anomaly <Razorclaw the Butcher>
+									["questID"] = 57385,
+									["isDaily"] = true,
+									["g"] = {
+										i(6341),	-- Eerie Stable Lantern
+										i(1292),	-- Butcher's Cleaver
+										i(168631),	-- Metal Detector
+										i(169169, {	-- Blueprint: Blue Spraybot (any)
+											["questID"] = 55077,
+											["g"] = {
+												crit(29, {	-- Blue Spraybot
+													["achievementID"] = 13479,	-- Junkyard Architect
+												}),
+											},
+										}),
+										i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
+											["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
+											["g"] = {
+												crit(25, {	-- Holographic Digitalization Relay
+													["achievementID"] = 13479,	-- Junkyard Architect
+												}),
+											},
+										}),
+										i(168631),	-- Metal Detector
+										i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
+											["questID"] = 56517,
+											["g"] = {
+												crit(4, {	-- Battle of Gnomeregan
+													["achievementID"] = 13686,	-- Junkyard Melomaniac
+												}),
+											},
+										}),
+									},
+								}),
 							},
 						}),
-						crit(26, {	-- Discs of Norgannon
-							["achievementID"] = 13556,	-- Outside Influences
+						i(169593, {	-- Large Storage Fragment
+							["description"] = "Dropped by mobs in Junkwatt Depot.  This appears to have a lower droprate than the other three discs.",
+							["questID"] = 56423,	-- Large Storage Fragment
+							["isDaily"] = true,
+							["g"] = {
+								n(152961, {	-- Data Anomaly <Balnazzar>
+									["questID"] = 57385,
+									["isDaily"] = true,
+									["g"] = {
+										i(13353),	-- Book of the Dead
+										i(13348),	-- Demonshear
+										i(169169, {	-- Blueprint: Blue Spraybot (any)
+											["questID"] = 55077,
+											["g"] = {
+												crit(29, {	-- Blue Spraybot
+													["achievementID"] = 13479,	-- Junkyard Architect
+												}),
+											},
+										}),
+										i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
+											["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
+											["g"] = {
+												crit(25, {	-- Holographic Digitalization Relay
+													["achievementID"] = 13479,	-- Junkyard Architect
+												}),
+											},
+										}),
+										i(168631),	-- Metal Detector
+										i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
+											["questID"] = 56517,
+											["g"] = {
+												crit(4, {	-- Battle of Gnomeregan
+													["achievementID"] = 13686,	-- Junkyard Melomaniac
+												}),
+											},
+										}),
+									},
+								}),
+								n(152922, {	-- Data Anomaly <Captain Kromcrush>
+									["questID"] = 57385,
+									["isDaily"] = true,
+									["g"] = {
+										i(18507),	-- Boots of the Full Moon
+										i(169169, {	-- Blueprint: Blue Spraybot (any)
+											["questID"] = 55077,
+											["g"] = {
+												crit(29, {	-- Blue Spraybot
+													["achievementID"] = 13479,	-- Junkyard Architect
+												}),
+											},
+										}),
+										i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
+											["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
+											["g"] = {
+												crit(25, {	-- Holographic Digitalization Relay
+													["achievementID"] = 13479,	-- Junkyard Architect
+												}),
+											},
+										}),
+										i(168631),	-- Metal Detector
+										i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
+											["questID"] = 56517,
+											["g"] = {
+												crit(4, {	-- Battle of Gnomeregan
+													["achievementID"] = 13686,	-- Junkyard Melomaniac
+												}),
+											},
+										}),
+									},
+								}),
+							},
+						}),
+						i(169594, {	-- Rust Covered Disc
+							["description"] = "Contained in Recycling Requisitions.",
+							["questID"] = 56424,	-- Rust Covered Disc
+							["isDaily"] = true,
+							["g"] = {
+								n(152979, {	-- Data Anomaly <Baron Kazum>
+									["questID"] = 57388,
+									["isDaily"] = true,
+									["g"] = {
+										i(169169, {	-- Blueprint: Blue Spraybot (any)
+											["questID"] = 55077,
+											["g"] = {
+												crit(29, {	-- Blue Spraybot
+													["achievementID"] = 13479,	-- Junkyard Architect
+												}),
+											},
+										}),
+										i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
+											["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
+											["g"] = {
+												crit(25, {	-- Holographic Digitalization Relay
+													["achievementID"] = 13479,	-- Junkyard Architect
+												}),
+											},
+										}),
+										i(168631),	-- Metal Detector
+										i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
+											["questID"] = 56517,
+											["g"] = {
+												crit(4, {	-- Battle of Gnomeregan
+													["achievementID"] = 13686,	-- Junkyard Melomaniac
+												}),
+											},
+										}),
+									},
+								}),
+								n(152983, {	-- Data Anomaly <Crowd Pummeler 9-60>
+									["questID"] = 57388,
+									["isDaily"] = true,
+									["g"] = {
+										i(132558),	-- Bot Operator's Treads
+										i(169169, {	-- Blueprint: Blue Spraybot (any)
+											["questID"] = 55077,
+											["g"] = {
+												crit(29, {	-- Blue Spraybot
+													["achievementID"] = 13479,	-- Junkyard Architect
+												}),
+											},
+										}),
+										i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
+											["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
+											["g"] = {
+												crit(25, {	-- Holographic Digitalization Relay
+													["achievementID"] = 13479,	-- Junkyard Architect
+												}),
+											},
+										}),
+										i(168631),	-- Metal Detector
+										i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
+											["questID"] = 56517,
+											["g"] = {
+												crit(4, {	-- Battle of Gnomeregan
+													["achievementID"] = 13686,	-- Junkyard Melomaniac
+												}),
+											},
+										}),
+									},
+								}),
+							},
+						}),
+						i(169595, {	-- Scorched Data Disc
+							["description"] = "Contained in Recycling Requisitions.",
+							["questID"] = 56425,	-- Scorched Data Disc
+							["isDaily"] = true,
+							["g"] = {
+								n(153486, {	-- Data Anomaly <Baron Geddon>
+									["questID"] = 57389,
+									["isDaily"] = true,
+									["g"] = {
+										i(16844),	-- Earthfury Epaulets
+										i(169169, {	-- Blueprint: Blue Spraybot (any)
+											["questID"] = 55077,
+											["g"] = {
+												crit(29, {	-- Blue Spraybot
+													["achievementID"] = 13479,	-- Junkyard Architect
+												}),
+											},
+										}),
+										i(168906, {	-- Blueprint: Holographic Digitalization Relay (Any)
+											["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
+											["g"] = {
+												crit(25, {	-- Holographic Digitalization Relay
+													["achievementID"] = 13479,	-- Junkyard Architect
+												}),
+											},
+										}),
+										i(168631),	-- Metal Detector
+										i(169690, {	-- Vinyl: Battle of Gnomeregan (any)
+											["questID"] = 56517,
+											["g"] = {
+												crit(4, {	-- Battle of Gnomeregan
+													["achievementID"] = 13686,	-- Junkyard Melomaniac
+												}),
+											},
+										}),
+									},
+								}),
+							},
 						}),
 					},
 				}),

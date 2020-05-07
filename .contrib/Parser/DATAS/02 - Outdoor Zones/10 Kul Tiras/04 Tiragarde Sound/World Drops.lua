@@ -69,9 +69,7 @@ _.Zones =
 					--i(159561),	-- Stagheart Poleaxe
 					i(159564),	-- Stagheart Staff
 					i(159502),	-- Stagheart Warglaives
-					i(155228),	-- Tideguard Bulwark
 					i(159474),	-- Tideguard Handaxe
-					i(155216),	-- Tideguard Harpoon
 					i(159551),	-- Tideguard Maul
 					--i(159562),	-- Tideguard Pike
 					i(159523),	-- Tideguard Shanker

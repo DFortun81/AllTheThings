@@ -444,6 +444,22 @@ _.Achievements =
 							},
 						}
 					},
+					ach(13738, {	-- Heroic: Tour of War(Horde)
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							crit(1),	-- Danath Trollbane
+							crit(2),	-- Turalyon
+							crit(3),	-- Muradin
+						},
+					}),
+					ach(13739, {	-- Heroic: Tour of War(Alliance)
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							crit(1),	-- Eitrigg
+							crit(2),	-- Lady Liadrin
+							crit(3),	-- Rokhan
+						},
+					}),
 					{	-- War for the Shore [Alliance] // [Horde]
 						["allianceAchievementID"] = 13297,	-- War for the Shore (Alliance)
 						["hordeAchievementID"] = 13296,		-- War for the Shore (Horde)
