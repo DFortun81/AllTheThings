@@ -6,18 +6,6 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(634, {	-- Stormheim
 			n(QUESTS, {
-				q(38412, {	-- Above the Winter Moonlight (Alliance)
-					["sourceQuests"] = { 38342 },	-- Another Way
-					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 45.7, 72.9, 634 },
-					["provider"] = { "n", 91558 },	-- Commander Lorna Crowley <Gilneas Brigade>
-				}),
-				q(38618, {	-- Above the Winter Moonlight (Horde)
-					["provider"] = { "n", 92569 },	-- Dread-Rider Cullen
-					["races"] = HORDE_ONLY,
-					["coord"] = { 45.7, 72.9, 634 },
-					["sourceQuests"] = { 38617 },	-- Another Way
-				}),
 				q(40002, {	-- A Familiar Fate
 					["sourceQuests"] = { 40001 },	-- Knocking on Valor's Door
 					["coord"] = { 65.8, 59.4, 634 },
@@ -69,11 +57,6 @@ _.Zones =
 						i(129305),	-- Wildsky's Unused Helmet
 					},
 				}),
-				q(39590, {	-- Ahead of the Game
-					["sourceQuests"] = { 38331 },	-- Havi's Test
-					["coord"] = { 41.8, 42.9, 634 },
-					["provider"] = { "n", 96254 },	-- Havi
-				}),
 				q(40078, {	-- A Heavy Burden
 					["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
 					["coord"] = { 60.0, 50.7, 634 },
@@ -99,34 +82,6 @@ _.Zones =
 						i(129343),	-- Plaguebringer's Mask
 						i(129344),	-- Dark Ranger's Coif
 						i(129345),	-- Blightcaller's Braincage
-					},
-				}),
-				q(38342, {	-- Another Way (Alliance)
-					["sourceQuests"] = { 38410 },	-- Impalement Insurance
-					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 46.2, 70.3, 634 },
-					["provider"] = { "n", 91553 },	-- Commander Lorna Crowley <Gilneas Brigade>
-				}),
-				q(38617, {	-- Another Way (Horde)
-					["provider"] = { "n", 92573 },	-- Dread-Rider Cullen
-					["races"] = HORDE_ONLY,
-					["coord"] = { 47.0, 71.7, 634 },
-					["sourceQuests"] = { 38410 },	-- Impalement Insurance
-				}),
-				q(38053, {	-- Assault and Battery
-					["sourceQuests"] = { 39800 },	-- Greymane's Gambit
-					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 33.6, 50.8, 634 },
-					["provider"] = { "n", 90866 },	-- Tinkmaster Overspark
-					["g"] = {
-						i(134554),	-- Runespeaker's Gloves
-						i(134555),	-- Runesworn Grips
-						i(134556),	-- Stormborn Gloves
-						i(134557),	-- Dreadsworn Gauntlets
-						i(134558),	-- Runespeaker's Robes
-						i(134559),	-- Runesworn Chestguard
-						i(134560),	-- Stormborn Tunic
-						i(134561),	-- Dreadsworn Chestguard
 					},
 				}),
 				q(39792, {	-- A Stack of Racks
@@ -169,6 +124,54 @@ _.Zones =
 				q(39592, {	-- A Trial of Will
 					["coord"] = { 46.6, 44.4, 634 },
 					["sourceQuests"] = { 39590 },	-- Ahead of the Game
+				}),
+				q(38412, {	-- Above the Winter Moonlight (Alliance)
+					["sourceQuests"] = { 38342 },	-- Another Way
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 45.7, 72.9, 634 },
+					["provider"] = { "n", 91558 },	-- Commander Lorna Crowley <Gilneas Brigade>
+				}),
+				q(38618, {	-- Above the Winter Moonlight (Horde)
+					["provider"] = { "n", 92569 },	-- Dread-Rider Cullen
+					["races"] = HORDE_ONLY,
+					["coord"] = { 45.7, 72.9, 634 },
+					["sourceQuests"] = { 38617 },	-- Another Way
+				}),
+				q(39590, {	-- Ahead of the Game
+					["sourceQuests"] = { 38331 },	-- Havi's Test
+					["coord"] = { 41.8, 42.9, 634 },
+					["provider"] = { "n", 96254 },	-- Havi
+				}),
+				q(38342, {	-- Another Way (Alliance)
+					["sourceQuests"] = { 38410 },	-- Impalement Insurance
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 46.2, 70.3, 634 },
+					["provider"] = { "n", 91553 },	-- Commander Lorna Crowley <Gilneas Brigade>
+				}),
+				q(38617, {	-- Another Way (Horde)
+					["provider"] = { "n", 92573 },	-- Dread-Rider Cullen
+					["races"] = HORDE_ONLY,
+					["coord"] = { 47.0, 71.7, 634 },
+					["sourceQuests"] = { 38410 },	-- Impalement Insurance
+				}),
+				q(38053, {	-- Assault and Battery
+					["sourceQuests"] = { 39800 },	-- Greymane's Gambit
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 33.6, 50.8, 634 },
+					["provider"] = { "n", 90866 },	-- Tinkmaster Overspark
+					["g"] = {
+						i(134554),	-- Runespeaker's Gloves
+						i(134555),	-- Runesworn Grips
+						i(134556),	-- Stormborn Gloves
+						i(134557),	-- Dreadsworn Gauntlets
+						i(134558),	-- Runespeaker's Robes
+						i(134559),	-- Runesworn Chestguard
+						i(134560),	-- Stormborn Tunic
+						i(134561),	-- Dreadsworn Chestguard
+					},
+				}),
+				q(39119, {	-- Assault on Skold-Ashil (Bonus Objective)
+					["coord"] = { 60.0, 63.8, 634 },
 				}),
 				q(39092, {	-- Becoming the Ascendant (Alliance)
 					["sourceQuests"] = { 39063 },	-- Shielded Secrets
