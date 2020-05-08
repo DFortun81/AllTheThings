@@ -125,6 +125,9 @@ _.Zones =
 					["coord"] = { 46.6, 44.4, 634 },
 					["sourceQuests"] = { 39590 },	-- Ahead of the Game
 				}),
+				q(38442, {	-- A Worthy Challenger (Bonus Objective)
+					["coord"] = { 44.8, 45.6, 634 },
+				}),
 				q(38412, {	-- Above the Winter Moonlight (Alliance)
 					["sourceQuests"] = { 38342 },	-- Another Way
 					["races"] = ALLIANCE_ONLY,
@@ -172,6 +175,9 @@ _.Zones =
 				}),
 				q(39119, {	-- Assault on Skold-Ashil (Bonus Objective)
 					["coord"] = { 60.0, 63.8, 634 },
+				}),
+				q(38374, {	-- Assault the Drekirjar (Bonus Objective)
+					["coord"] = { 43.2, 69.4, 634 },
 				}),
 				q(39092, {	-- Becoming the Ascendant (Alliance)
 					["sourceQuests"] = { 39063 },	-- Shielded Secrets
@@ -331,6 +337,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["coord"] = { 54.9, 72.5, 634 },
 					["provider"] = { "n", 93603 },	-- Nathanos Blightcaller
+				}),
+				q(39998, {	-- Drive Back the Tideskorn(Bonus Objective)
+					["coord"] = { 69.2, 68.0, 634 },
 				}),
 				q(39789, {	-- Eating Into Our Business
 					["provider"] = { "n", 97258 },	-- Ootasa Galehoof
@@ -558,6 +567,9 @@ _.Zones =
 					["coord"] = { 51.2, 57.1, 634 },
 					["provider"] = { "n", 107674 },		-- Snaggle Sixtrigger
 				}),
+				q(40111, {	-- Rout the Bilgefin Invaders (Bonus Objective)
+					["coord"] = { 81.0, 61.4, 634 },
+				}),
 				q(42736, {	-- Rune Ruination
 					["sourceQuests"] = { 42735 },	-- Malace in Vrykul Land
 					["provider"] = { "n", 108576 },	-- Malace Shade
@@ -762,6 +774,9 @@ _.Zones =
 						i(132776),	-- Yotnar's Pride
 						i(132788),	-- Yotnar's Turmoil
 					},
+				}),
+				q(42431, {	-- The Brood of Nithogg (Bonus Objective)
+					["coord"] = { 45.2, 36.8, 634 },
 				}),
 				q(38872, {	-- The Dark Lady's Bidding
 					["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
