@@ -32,6 +32,9 @@ _.Zones =
 					["coord"] = { 47.0, 41.4, 630 },
 					["provider"] = { "n", 88798 },	-- Lady Irisse
 				}),
+				q(37965, {	-- A Tainted Vintage (Bonus Objective)
+					["coord"] = { 47.0, 11.4, 630 },
+				}),
 				q(42367, {	-- Arkethrax
 					["sourceQuests"] = { 42375 },	-- Eye See You
 					["coord"] = { 63.8, 28.8, 630 },
@@ -428,6 +431,9 @@ _.Zones =
 						i(132937),	-- Traitor's Bane Breastplate
 					},
 				}),
+				q(37965, {	-- Plunder the Cove (Bonus Objective)
+					["coord"] = { 49.2, 58.8, 630 },
+				}),
 				q(37729, {	-- Pop Quiz: Advanced Rune Drawing
 					["sourceQuests"] = { 42371 },	-- Study Hall: Combat Research
 					["coord"] = { 29.5, 42.6, 631 },	-- Nar'thalas Academy
@@ -465,6 +471,9 @@ _.Zones =
 						i(141626),	-- Soul-Stealer's Chain Pants
 						i(141625),	-- Soul-Trapper's Greaves
 					},
+				}),
+				q(36811, {	-- Retake Faronaar (Bonus Objective)
+					["coord"] = { 39.4, 50.2, 630 },
 				}),
 				q(37538, {	-- Round 1, Fight!
 					["sourceQuests"] = { 37536 },	-- Morale Booster
@@ -565,6 +574,9 @@ _.Zones =
 					["sourceQuests"] = { 42370 },	-- Wanding 101
 					["coord"] = { 30.9, 44.6, 631 },	-- Nar'thalas Academy
 					["provider"] = { "n", 107334 },	-- Sythorne
+				}),
+				q(37466, {	-- The Broken Academy (Bonus Objective)
+					["coord"] = { 55.6, 43.2, 630 },
 				}),
 				q(37659, {	-- The Captain's Foot Locker
 					["sourceQuests"] = { 37654 },	-- Maritime Law
@@ -750,10 +762,16 @@ _.Zones =
 						i(138878),	-- Copy of Daglop's Contract (TOY!)
 					},
 				}),
+				q(37963, {	-- Those Beyond Redemption (Bonus Objective)
+					["coord"] = { 57.6, 15.6, 630 },
+				}),
 				q(37690, {	-- Those Who Remember
 					["sourceQuests"] = { 42271 },	-- Their Dying Breaths
 					["coord"] = { 48.0, 26.9, 630 },
 					["provider"] = { "n", 89975 },	-- Senegos
+				}),
+				q(37779, {	-- Tip the Scales (Bonus Objective)
+					["coord"] = { 62.6, 42.6, 630 },
 				}),
 				q(37497, {	-- Trailing the Tidestone
 					["sourceQuests"] = { 37257 },	-- Our Very Bones
