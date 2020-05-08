@@ -882,6 +882,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
+				q(57326, {	-- Prototypes for Profit
+					["provider"] = { "n", 150567 },	-- Gazlowe
+					["coord"] = { 74.0, 36.8, 1355 },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
 				q(54929, {	-- Ready to Rumble
 					["provider"] = { "n", 150573 },	-- Recycler Kerchunk
 					["coord"] = { 71.4, 38.7, 1462 },
