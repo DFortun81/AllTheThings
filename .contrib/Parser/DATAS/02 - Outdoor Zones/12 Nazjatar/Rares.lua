@@ -309,9 +309,12 @@ _.Zones =
 						["achievementID"] = 13691,
 					}),
 					i(170180, {	-- Razorshell
-						crit(42, {	-- Razorshell
-							["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-						}),
+						["description"] = "Only drops when War Mode is enabled.",
+						["g"] = {
+							crit(42, {	-- Razorshell
+								["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
+							}),
+						},
 					}),
 				},
 			}),

@@ -253,7 +253,8 @@ _.Zones =
 				},
 			}),
 			i(170180, {	-- Razorshell
-				["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.
+				["description"] = "Only drops when War Mode is enabled.",
+				["crs"] = {
 					145970,	-- Razorshell Turtle
 					152383,	-- Snapshell Tortoise
 				},
