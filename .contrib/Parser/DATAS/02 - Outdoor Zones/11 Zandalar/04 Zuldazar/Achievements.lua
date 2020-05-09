@@ -304,6 +304,18 @@ _.Zones =
 						["coord"] = { 71.24, 21.84 },
 					}),
 				}),
+				ach(12861, {	-- Master of Duels
+					title(383),		-- Contender
+					ach(12863, {		-- Dueling Master
+						i(163055),		-- Dueler's Tabard
+						ach(12860),		-- Contender
+						ach(12858),		-- Slugfest
+						ach(12857),		-- Trial by Combat
+						ach(12856),		-- The First Rule of Dueler's Guild
+					}),
+					ach(12859),		-- Prize Fighter
+					ach(12862),		-- Thirty Six and Two
+				}),
 				ach(13027, {	-- Mushroom Harvest
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["g"] = {

@@ -35,30 +35,6 @@ _.Achievements =
 						crit(8),		-- Tour of Duty: Tiragarde Sound [A] / [H]
 						crit(9),		-- Tour of Duty: Zuldazar [A] / [H]
 					}),
-					--[[a(ach(12605, {	-- Conqueror of Azeroth (Alliance)
-						title(377),		-- , Conqueror of Azeroth
-						crit(1),		-- Band of Brothers
-						crit(2),		-- Bounty Hunting
-						crit(3),		-- War Supplied
-						crit(4),		-- Tour of Duty: Nazmir
-						crit(5),		-- Tour of Duty: Vol'dun
-						crit(6),		-- Tour of Duty: Drustvar
-						crit(7),		-- Tour of Duty: Stormsong Valley
-						crit(8),		-- Tour of Duty: Tiragarde Sound
-						crit(9),		-- Tour of Duty: Zuldazar
-					})),
-					h(ach(12604, {	-- Conqueror of Azeroth (Horde)
-						title(377),		-- , Conqueror of Azeroth
-						crit(1),		-- Band of Brothers
-						crit(2),		-- Bounty Hunting
-						crit(3),		-- War Supplied
-						crit(4),		-- Tour of Duty: Nazmir
-						crit(5),		-- Tour of Duty: Vol'dun
-						crit(6),		-- Tour of Duty: Drustvar
-						crit(7),		-- Tour of Duty: Stormsong Valley
-						crit(8),		-- Tour of Duty: Tiragarde Sound
-						crit(9),		-- Tour of Duty: Zuldazar
-					})),]]
 					ach(12863, {	-- Dueling Master
 						i(163055),		-- Dueler's Tabard
 						ach(12860),		-- Contender

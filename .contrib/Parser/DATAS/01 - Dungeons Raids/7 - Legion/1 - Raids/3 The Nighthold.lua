@@ -102,7 +102,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(140827),	-- Manatoxin Gland
 						})),
 						cr(104415, e(1725, {	-- Chronomatic Anomaly
-							ach(10829, crit(2)),	-- Arcing Aqueducts / Chronomatic Anomaly
+							ach(10829, crit(3)),	-- Arcing Aqueducts / Chronomatic Anomaly
 							i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1]
 							i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2]
 							i(138828),	-- Illusion: Chronos
@@ -122,7 +122,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(140831),	-- Suspended Nightwell Droplet
 						})),
 						cr(104288, e(1731, {	-- Trilliax
-							ach(10829, crit(3)),	-- Arcing Aqueducts / Trilliax
+							ach(10829, crit(2)),	-- Arcing Aqueducts / Trilliax
 							i(139644),	-- Vantus Rune Technique: Trilliax [Rank 1]
 							i(137756),	-- Vantus Rune Technique: Trilliax [Rank 2]
 							i(138375),	-- Cape of Second Sight
@@ -440,7 +440,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(140827),	-- Manatoxin Gland
 				})),
 				cr(104415, e(1725, {	-- Chronomatic Anomaly
-					ach(10829, crit(2)),	-- Arcing Aqueducts / Chronomatic Anomaly
+					ach(10829, crit(3)),	-- Arcing Aqueducts / Chronomatic Anomaly
 					ach(10697),	-- Grand Opening
 					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1]
 					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2]
@@ -461,7 +461,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(140831),	-- Suspended Nightwell Droplet
 				})),
 				cr(104288, e(1731, {	-- Trilliax
-					ach(10829, crit(3)),	-- Arcing Aqueducts / Trilliax
+					ach(10829, crit(2)),	-- Arcing Aqueducts / Trilliax
 					ach(10742),	-- Gluten Free
 					i(139644),	-- Vantus Rune Technique: Trilliax [Rank 1]
 					i(137756),	-- Vantus Rune Technique: Trilliax [Rank 2]
@@ -816,7 +816,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(140827),	-- Manatoxin Gland
 				})),
 				cr(104415, e(1725, {	-- Chronomatic Anomaly
-					ach(10829, crit(2)),	-- Arcing Aqueducts / Chronomatic Anomaly
+					ach(10829, crit(3)),	-- Arcing Aqueducts / Chronomatic Anomaly
 					ach(10697),	-- Grand Opening
 					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1]
 					i(137755),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 2]
@@ -837,7 +837,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(140831),	-- Suspended Nightwell Droplet
 				})),
 				cr(104288, e(1731, {	-- Trilliax
-					ach(10829, crit(3)),	-- Arcing Aqueducts / Trilliax
+					ach(10829, crit(2)),	-- Arcing Aqueducts / Trilliax
 					ach(10742),	-- Gluten Free
 					i(139644),	-- Vantus Rune Technique: Trilliax [Rank 1]
 					i(137756),	-- Vantus Rune Technique: Trilliax [Rank 2]
@@ -1196,7 +1196,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(140827),	-- Manatoxin Gland
 				})),
 				cr(104415, e(1725, {	-- Chronomatic Anomaly
-					ach(10829, crit(2)),	-- Arcing Aqueducts / Chronomatic Anomaly
+					ach(10829, crit(3)),	-- Arcing Aqueducts / Chronomatic Anomaly
 					ach(10842),	-- Mythic: Chronomatic Anomaly
 					ach(10697),	-- Grand Opening
 					i(139643),	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 1]
@@ -1218,7 +1218,7 @@ _.Instances = { tier(7, {	-- Legion
 					i(140831),	-- Suspended Nightwell Droplet
 				})),
 				cr(104288, e(1731, {	-- Trilliax
-					ach(10829, crit(3)),	-- Arcing Aqueducts / Trilliax
+					ach(10829, crit(2)),	-- Arcing Aqueducts / Trilliax
 					ach(10843),	-- Mythic: Trilliax
 					ach(10742),	-- Gluten Free
 					i(139644),	-- Vantus Rune Technique: Trilliax [Rank 1]

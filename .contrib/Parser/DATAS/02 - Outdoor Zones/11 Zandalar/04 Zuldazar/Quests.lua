@@ -207,6 +207,20 @@ _.Zones =
 								i(168578),	-- Sphere of Suppressed Force (Rank 1)
 							},
 						}),
+						q(53053, {	-- To The Mugambala!
+							["provider"] = { "n", 138708 },	-- Garona Halforcen
+							["coord"] = { 58.4, 62.6, 862 },
+							["description"] = "You have to enable Warmode to get this quest.",
+							["races"] = HORDE_ONLY,
+							["lvl"] = 110,
+						}),
+						q(53054, {	-- Dueler's Guild
+							["provider"] = { "n", 143536 },	-- High Warlord Volrath
+							["coord"] = { 51.5, 58.2, 862 },
+							["sourceQuest"] = 53053,	-- To The Mugambala!
+							["races"] = HORDE_ONLY,
+							["lvl"] = 110,
+						}),
 					},
 				}),
 				q(48399, {	-- A Dark (Iron) Tide
