@@ -52,10 +52,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52239, {	-- Loose Change
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(51840, {	-- Oily Mess
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -475,9 +471,14 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(52230, {	-- Loose Change
+					q(52230, {	-- Loose Change (A)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+					}),
+					q(52239, {	-- Loose Change (H)
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51633, {	-- Make Loh Go

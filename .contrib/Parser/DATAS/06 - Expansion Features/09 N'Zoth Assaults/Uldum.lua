@@ -537,6 +537,12 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "n", 159544 },	-- Arik Scorpidsting
 					}),
+					q(57968, {	-- The Wastewandering Dead
+						["lvl"] = 120,
+						["coord"] = { 24.5, 55.3, 1527 },
+						["isDaily"] = true,
+						["provider"] = { "n", 159682 },	-- Tracker Samara
+					}),
 					q(58782, {	-- Things Left Behind
 						["lvl"] = 120,
 						["coord"] = { 40.1, 21.3, 1527 },

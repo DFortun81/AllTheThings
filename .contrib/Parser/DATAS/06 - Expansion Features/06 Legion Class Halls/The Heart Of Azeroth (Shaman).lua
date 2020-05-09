@@ -475,6 +475,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 41741 },	-- Troops in the Field
 					}),
+					q(44206, {	-- The Ascended
+						["classes"] = { SHAMAN },
+						["lvl"] = 110,
+						["provider"] = { "n", 109829 },	-- Alexor
+					}),
 					q(41934, {	-- The Brand of Damnation
 						["classes"] = { SHAMAN },
 						["lvl"] = 110,

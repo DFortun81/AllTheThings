@@ -9,10 +9,6 @@ _.Zones =
 				n(QUESTS, {
 --[[	raw quest list to check against
 				-- Unknown
-					q(51719, {	-- A Glaive Mistake
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(51832, {	-- Beat Around The Bush
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -161,6 +157,11 @@ _.Zones =
 					q(51616, {	-- A Final Rest
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+						["isWorldQuest"] = true,
+					}),
+					q(51719, {	-- A Glaive Mistake
+						["lvl"] = 120,
+						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
 					q(51727, {	-- A Shot at the Dark Iron
