@@ -28,6 +28,7 @@ _.WorldEvents =
 				i(77069),	-- Life-Binder's Handmaiden
 				i(137574),	-- Living Infernal Core
 				i(45693),	-- Mimiron's Head
+				un(9, i(172012)),	-- Obsidian Worldbreaker
 				i(94230),	-- Reins of the Amber Primordial Direhorn
 				i(87777),	-- Reins of the Astral Cloud Serpent
 				i(43952),	-- Reins of the Azure Drake
