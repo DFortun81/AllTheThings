@@ -540,6 +540,9 @@ namespace ATT
 
 	            // Leatherworking Skills
 	            {165, 165},	// Leatherworking [7.3.5]
+                {10656, 10656},    // Dragonscale Leatherworking
+                {10658, 10658},    // Elemental Leatherworking
+                {10660, 10660},    // Tribal Leatherworking
 	            {2532, 165},	// Classic Leatherworking [8.0.1]
 	            {2531, 165},	// Outland Leatherworking [8.0.1]
 	            {2530, 165},	// Northrend Leatherworking [8.0.1]
