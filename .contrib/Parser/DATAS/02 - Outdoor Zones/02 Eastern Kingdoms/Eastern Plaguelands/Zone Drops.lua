@@ -38,6 +38,10 @@ _.Zones =
 					["crs"] = { 8526 },	-- Dark Caster
 					["u"] = 2,	-- BoP / BoA Item
 				}),
+				i(14505, {	-- Pattern: Wizardweave Turban
+					["crs"] = { 8526 },	-- Dark Caster
+					["u"] = 7,	-- now learned from trainer, pattern was removed from game
+				}),
 				i(13499, {	-- Recipe: Greater Shadow Protection Potion
 					["crs"] = {
 						8546,	-- Dark Adept <Cult of the Damned>
