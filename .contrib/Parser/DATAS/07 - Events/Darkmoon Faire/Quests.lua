@@ -701,6 +701,11 @@ _.WorldEvents =
 					i(93724),	-- Darkmoon Game Prize
 				},
 			}),
+			q(29454, {	-- The Master Strategist
+				["isMonthly"] = true,
+				["provider"] = { "i", 71715 },	-- A Treatise on Strategy
+				["u"] = 40,	-- Legacy Quests
+			}),
 			q(29451, {	-- The Master Strategist
 				["isMonthly"] = true,
 				["provider"] = { "i", 71715 },	-- A Treatise on Strategy
