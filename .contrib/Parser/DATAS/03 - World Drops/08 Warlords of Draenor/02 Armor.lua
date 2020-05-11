@@ -115,6 +115,7 @@ _.WorldDrops =
 			filter(53, {	-- Trinket
 				i(118877),	-- Fizzlebang's Folly
 				i(118876),	-- Lucky Double-Sided Coin
+				i(118883),	-- Bronze Elekk Statue
 			}),
 		}),
 	}),
