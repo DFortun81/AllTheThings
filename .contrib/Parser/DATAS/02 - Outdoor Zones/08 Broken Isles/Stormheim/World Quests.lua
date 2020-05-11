@@ -43,6 +43,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["requireSkill"] = MINING,
 				}),
+				q(46006, {	-- Arkuthaz (invasion WQ)
+					["isWorldQuest"] = true,
+					["lvl"] = 98,
+				}),
 				q(41451, {	-- Assault on Hrydshal
 					["lvl"] = 110,
 					["isWorldQuest"] = true,

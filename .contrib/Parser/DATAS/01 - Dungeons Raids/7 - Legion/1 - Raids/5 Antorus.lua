@@ -21,7 +21,7 @@ _.Instances = { tier(7, {	-- Legion
 			919,
 			920,
 		},
-		["groups"] = {
+		["g"] = {
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					-- * = ID confirmed in H
@@ -43,7 +43,7 @@ _.Instances = { tier(7, {	-- Legion
 					121975,	-- Aggramar*
 					124828,	-- Argus the Unmaker*
 				},
-				["groups"] = {
+				["g"] = {
 					i(151654),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 1]
 					i(151655),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 2]
 					i(151656),	-- Vantus Rune Technique: Antorus, the Burning Throne [Rank 3]
@@ -52,9 +52,8 @@ _.Instances = { tier(7, {	-- Legion
 			d(17, {	-- Looking For Raid
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["groups"] = {
-						{
-							["itemID"] = 153502,	-- Cache of Antoran Treasures [Looking For Raid]
+					["g"] = {
+						i(153502, {	-- Cache of Antoran Treasures [Looking For Raid]
 							["sym"] = {
 								{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
 								{"pop"},	-- Discard the Instance Header and acquire the children.
@@ -67,44 +66,40 @@ _.Instances = { tier(7, {	-- Legion
 								{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
 								{"exclude", "itemID", 152094, 153115 },	-- Exclude Taeshalach and Scythe of the Unmaker
 							},
-						},
-						{	-- Antoran High Command [Raid Finder]
-							["itemID"] = 152313,	-- Azeroth Invasion Plans [Raid Finder]
-							["questID"] = 48288,	-- Antoran High Command [Raid Finder]
+						}),
+						q(48288, {	-- Antoran High Command [Raid Finder]
 							["repeatable"] = true,
-							["groups"] = {
+							["provider"] = { "i", 152313 },	-- Azeroth Invasion Plans [Raid Finder]
+							["g"] = {
 								i(153502),	-- Cache of Antoran Treasures [Raid Finder]
 							},
-						},
-						{	-- The Soulhunter [Raid Finder]
-							["itemID"] = 152317,	-- Discharged Shock Lance [Raid Finder]
-							["questID"] = 48292,	-- The Soulhunter [Raid Finder]
+						}),
+						q(48292, {	-- The Soulhunter [Raid Finder]
 							["repeatable"] = true,
-							["groups"] = {
+							["provider"] = { "i", 152317 },	-- Discharged Shock Lance [Raid Finder]
+							["g"] = {
 								i(153502),	-- Cache of Antoran Treasures [Raid Finder]
 							},
-						},
-						{	-- The Unmaker [Raid Finder]
-							["itemID"] = 152325,	-- Sanguine Argunite [Raid Finder]
-							["questID"] = 48294,	-- The Unmaker [Raid Finder]
+						}),
+						q(48294, {	-- The Unmaker [Raid Finder]
 							["repeatable"] = true,
-							["groups"] = {
+							["provider"] = { "i", 152325 },	-- Sanguine Argunite [Raid Finder]
+							["g"] = {
 								i(153502),	-- Cache of Antoran Treasures [Raid Finder]
 							},
-						},
-						{	-- The Burning Coven [Raid Finder]
-							["itemID"] = 152321,	-- Sargerei Manifesto [Raid Finder]
-							["questID"] = 48293,	-- The Burning Coven [Raid Finder]
+						}),
+						q(48293, {	-- The Burning Coven [Raid Finder]
 							["repeatable"] = true,
-							["groups"] = {
+							["provider"] = { "i", 152321 },	-- Sargerei Manifesto [Raid Finder]
+							["g"] = {
 								i(153502),	-- Cache of Antoran Treasures [Raid Finder]
 							},
-						},
+						}),
 					},
 				}),
 				n(ZONEDROPS, {
 					["crs"] = { 111246 },	-- Archmage Timear
-					["groups"] = {
+					["g"] = {
 						i(152084),	-- Gloves of Abhorrent Strategies
 						i(152085),	-- Cuffs of the Viridian Flameweavers
 						i(153018),	-- Corrupted Mantle of the Felseekers
@@ -121,7 +116,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 				ach(11988, {	-- Light's Breach [Garothi / Hounds / High Command]
 					["crs"] = { 111246 },	-- Archmage Timear
-					["groups"] = {
+					["g"] = {
 						e(1992, {	-- Garothi Worldbreaker
 							["crs"] = { 122450 },	-- Garothi Worldbreaker
 							["g"] = {
@@ -147,7 +142,7 @@ _.Instances = { tier(7, {	-- Legion
 								122477,	-- F'Harg
 								122135,	-- Shatug
 							},
-							["groups"] = {
+							["g"] = {
 								i(152816),	-- Antoran Charhound (MOUNT!)
 								i(151726),	-- Design: Empyrial Cosmic Crown (Rank 3)
 								i(151729),	-- Design: Empyrial Deep Crown (Rank 3)
@@ -164,6 +159,7 @@ _.Instances = { tier(7, {	-- Legion
 								i(151983),	-- Vicious Flamepaws
 								i(153544),	-- Eye of F'Harg
 								i(152645),	-- Eye of Shatug
+								i(151974),	-- Eye of Shatug — this one isn't in DJ, but it dropped in LFR on May 11, 2020 and was "Unsorted."
 								i(151968),	-- Shadow-Singed Fang
 								i(152056),	-- Corrupting Dewclaw
 								i(152291),	-- Fraternal Fervor
@@ -211,7 +207,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 				ach(11989, {	-- Hope's End [Eonar / Hasabel / Imonar]
 					["crs"] = { 111246 },	-- Archmage Timear
-					["groups"] = {
+					["g"] = {
 						e(2025, {	-- Eonar the Life-Bender
 							["crs"] = {
 								122500,	-- Essence of Eonar
@@ -298,7 +294,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 				ach(11990, {	-- Forbidden Descent [Kin'garoth / Varimathras / Coven]
 					["crs"] = { 111246 },	-- Archmage Timear
-					["groups"] = {
+					["g"] = {
 						e(2004, {	-- Kin'garoth
 							["crs"] = { 122578 },	-- Kin'garoth
 							["g"] = {
@@ -386,7 +382,7 @@ _.Instances = { tier(7, {	-- Legion
 				}),
 				ach(11991, {	-- Seat of the Pantheon [Aggramar / Argus]
 					["crs"] = { 111246 },	-- Archmage Timear
-					["groups"] = {
+					["g"] = {
 						e(1984, {	-- Aggramar
 							["crs"] = { 121975 },	-- Aggramar
 							["g"] = {
@@ -448,7 +444,7 @@ _.Instances = { tier(7, {	-- Legion
 			d(14, {	-- Normal
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["groups"] = {
+					["g"] = {
 						{
 							["itemID"] = 153504,	-- Cache of Antoran Treasures [Normal]
 							["sym"] = {
@@ -471,7 +467,7 @@ _.Instances = { tier(7, {	-- Legion
 							["itemID"] = 152314,	-- Azeroth Invasion Plans [Normal]
 							["questID"] = 48295,	-- Antoran High Command [Normal]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(153504),	-- Cache of Antoran Treasures [Normal]
 							},
 						},
@@ -479,7 +475,7 @@ _.Instances = { tier(7, {	-- Legion
 							["itemID"] = 152318,	-- Discharged Shock Lance [Normal]
 							["questID"] = 48296,	-- The Soulhunter [Normal]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(153504),	-- Cache of Antoran Treasures [Normal]
 							},
 						},
@@ -487,7 +483,7 @@ _.Instances = { tier(7, {	-- Legion
 							["itemID"] = 152326,	-- Sanguine Argunite [Normal]
 							["questID"] = 48298,	-- The Unmaker [Normal]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(153504),	-- Cache of Antoran Treasures [Normal]
 							},
 						},
@@ -495,7 +491,7 @@ _.Instances = { tier(7, {	-- Legion
 							["itemID"] = 152322,	-- Sargerei Manifesto [Normal]
 							["questID"] = 48297,	-- The Burning Coven [Normal]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(153504),	-- Cache of Antoran Treasures [Normal]
 							},
 						},
@@ -563,6 +559,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(151983),	-- Vicious Flamepaws
 						i(153544),	-- Eye of F'Harg
 						i(152645),	-- Eye of Shatug
+						i(151974),	-- Eye of Shatug — this one isn't in DJ, but it dropped in LFR on May 11, 2020 and was "Unsorted."
 						i(151968),	-- Shadow-Singed Fang
 						i(152056),	-- Corrupting Dewclaw
 						i(152291),	-- Fraternal Fervor
@@ -846,7 +843,7 @@ _.Instances = { tier(7, {	-- Legion
 			d(15, {	-- Heroic
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["groups"] = {
+					["g"] = {
 						{
 							["itemID"] = 153501,	-- Cache of Antoran Treasures [Heroic]
 							["sym"] = {
@@ -869,7 +866,7 @@ _.Instances = { tier(7, {	-- Legion
 							["itemID"] = 152315,	-- Azeroth Invasion Plans [Heroic]
 							["questID"] = 48299,	-- Antoran High Command [Heroic]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(153501),	-- Cache of Antoran Treasures [Heroic]
 							},
 						},
@@ -877,7 +874,7 @@ _.Instances = { tier(7, {	-- Legion
 							["itemID"] = 152319,	-- Discharged Shock Lance [Heroic]
 							["questID"] = 48300,	-- The Soulhunter [Heroic]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(153501),	-- Cache of Antoran Treasures [Heroic]
 							},
 						},
@@ -885,7 +882,7 @@ _.Instances = { tier(7, {	-- Legion
 							["itemID"] = 152327,	-- Sanguine Argunite [Heroic]
 							["questID"] = 48302,	-- The Unmaker [Heroic]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(153501),	-- Cache of Antoran Treasures [Heroic]
 							},
 						},
@@ -893,7 +890,7 @@ _.Instances = { tier(7, {	-- Legion
 							["itemID"] = 152323,	-- Sargerei Manifesto [Heroic]
 							["questID"] = 48301,	-- The Burning Coven [Heroic]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(153501),	-- Cache of Antoran Treasures [Heroic]
 							},
 						},
@@ -961,6 +958,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(151983),	-- Vicious Flamepaws
 						i(153544),	-- Eye of F'Harg
 						i(152645),	-- Eye of Shatug
+						i(151974),	-- Eye of Shatug — this one isn't in DJ, but it dropped in LFR on May 11, 2020 and was "Unsorted."
 						i(151968),	-- Shadow-Singed Fang
 						i(152056),	-- Corrupting Dewclaw
 						i(152291),	-- Fraternal Fervor
@@ -1252,7 +1250,7 @@ _.Instances = { tier(7, {	-- Legion
 			d(16, {	-- Mythic
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
-					["groups"] = {
+					["g"] = {
 						{
 							["itemID"] = 153503,	-- Cache of Antoran Treasures [Mythic]
 							["sym"] = {
@@ -1275,7 +1273,7 @@ _.Instances = { tier(7, {	-- Legion
 							["itemID"] = 152316,	-- Azeroth Invasion Plans [Mythic]
 							["questID"] = 48303,	-- Antoran High Command [Mythic]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(153503),	-- Cache of Antoran Treasures [Mythic]
 							},
 						},
@@ -1283,7 +1281,7 @@ _.Instances = { tier(7, {	-- Legion
 							["itemID"] = 152320,	-- Discharged Shock Lance [Mythic]
 							["questID"] = 48304,	-- The Soulhunter [Mythic]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(153503),	-- Cache of Antoran Treasures [Mythic]
 							},
 						},
@@ -1291,7 +1289,7 @@ _.Instances = { tier(7, {	-- Legion
 							["itemID"] = 152328,	-- Sanguine Argunite [Mythic]
 							["questID"] = 48306,	-- The Unmaker [Mythic]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(153503),	-- Cache of Antoran Treasures [Mythic]
 							},
 						},
@@ -1299,7 +1297,7 @@ _.Instances = { tier(7, {	-- Legion
 							["itemID"] = 152324,	-- Sargerei Manifesto [Mythic]
 							["questID"] = 48305,	-- The Burning Coven [Mythic]
 							["repeatable"] = true,
-							["groups"] = {
+							["g"] = {
 								i(153503),	-- Cache of Antoran Treasures [Mythic]
 							},
 						},
@@ -1368,6 +1366,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(151983),	-- Vicious Flamepaws
 						i(153544),	-- Eye of F'Harg
 						i(152645),	-- Eye of Shatug
+						i(151974),	-- Eye of Shatug — this one isn't in DJ, but it dropped in LFR on May 11, 2020 and was "Unsorted."
 						i(151968),	-- Shadow-Singed Fang
 						i(152056),	-- Corrupting Dewclaw
 						i(152291),	-- Fraternal Fervor
