@@ -680,7 +680,9 @@ _.Zones =
 				["g"] = {
 					i(170275),	-- Honorbound Warmaul
 					i(163874),	-- Honorbound Decapitator
+					i(163868),	-- Honorbound Dagger
 					i(163880),	-- Honorbound Gladius
+					i(163867),	-- Honorbound Longbow
 					i(163869),	-- Honorbound Skullcrusher
 					i(163878),	-- Honorbound Barrier
 				},
