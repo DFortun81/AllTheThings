@@ -909,6 +909,7 @@ _.Zones =
 					i(141271),	-- Hope of the Forest
 					i(141255),	-- Mockery of Life
 					i(141256),	-- Promise of Rebirth
+					i(143683),	-- Rampant Wildfire
 					i(139064),	-- Resilient Heart of the Forest
 					i(141269),	-- Tranquil Clipping
 					i(143682),	-- Viscous Terror

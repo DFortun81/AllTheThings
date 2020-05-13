@@ -1055,6 +1055,7 @@ _.NeverImplemented =
 		q(43433),	-- Generic Order Hall - Tracking Quest: Tutorial - Troops Built
 		q(42115),	-- Generic Order Hall - Tracking Quest: Chapter 1 completed - Triggers when you complete the quest that gets your first order hall upgrade
 		q(42116),	-- Generic Order Hall - Tracking Quest: Chapter 2 Completed - triggers after completing your first order hall campaign effort
+		q(42118),	-- Generic Order Hall - Tracking Quest: Chapter 4 Completed — triggers after completing order hall campaign
 		
 		q(40817),	-- Demon Hunter Order Hall - Twinblades of the Deceiver chosen first
 		q(40818),	-- Demon Hunter Order Hall - Aldrachi Warblades chosen first
@@ -1128,6 +1129,11 @@ _.NeverImplemented =
 		q(43716),	-- Rogue Order Hall - loot spawned in the vault
 		q(43634),	-- Rogue Order Hall - looted the rogue vault
 		
+		q(38275),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 1 Mission Completed
+		q(42998),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 2 Mission Completed
+		q(42999),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 3 Mission Completed
+		q(43000),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 4 Mission Completed
+		q(43001),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 5 Mission Completed
 		q(43901),	-- Shaman Order Hall - Tracking Quest: All - Troop B Enabled
 		q(43946),	-- Shaman Order Hall - Enhancement Chosen
 		q(43947),	-- Shaman Order Hall - Elemental Chosen
@@ -1182,7 +1188,6 @@ _.NeverImplemented =
 		q(44605),	-- Tracking Quest: Preparations for Invasion 3
 		q(44606),	-- Tracking Quest: Preparations for Invasion 4
 		q(44607),	-- Tracking Quest: Preparations for Invasion 5
-		q(42118),	-- Tracking Quest: Chapter 4 Completed — finished order hall campaign on DH
 		q(45117),	-- TRACKING — triggered when returning to the Fel Hammer while on "Defense of the Fel Hammer"
 
 	-- Monk class campaign

@@ -262,7 +262,7 @@ _.ExpansionFeatures =
 					i(146945),	-- Wardens Insignia
 					-- Misc
 					un(2, i(143478)),	-- Arena Invitation
-					un(2, i(143328)),	-- Battle Report
+					i(143328),	-- Battle Report
 					un(2, i(143329)),	-- Dire Summons
 					un(2, i(143479)),	-- Frayed Banner
 					un(2, i(142522)),	-- Rude Letter

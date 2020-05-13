@@ -111,6 +111,7 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 						["provider"] = { "n", 105120 },	-- Lord Smolderon
 						["sourceQuests"] = { 41934 },	-- The Brand of Damnation
+						["maps"] = { 738 },	-- Firelands
 						["g"] = {
 							i(139698),	-- Farseer's Harness
 							title(336),	-- Farseer %s
@@ -326,7 +327,7 @@ _.ExpansionFeatures =
 						["classes"] = { SHAMAN },
 						["lvl"] = 110,
 						["provider"] = { "n", 109464 },	-- Elementalist Janai
-						["sourceQuests"] = { 42988 },	-- Worldmender
+						["sourceQuests"] = { 42997 },	-- The Maelstrom Pillar: Earth
 						["maps"] = { 207 },	-- Deepholm
 					}),
 					q(42184, {	-- Mission: Elemental Diplomacy
@@ -485,7 +486,7 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 						["provider"] = { "n", 105120 },	-- Lord Smolderon
 						["sourceQuests"] = { 41773 },	-- The Firelord's Command
-						["maps"] = { 367 },	-- Firelands
+						["maps"] = { 738 },	-- Firelands
 					}),
 					q(46258, {	-- The Calm After the Storm
 						["classes"] = { SHAMAN },
@@ -523,7 +524,7 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 						["provider"] = { "n", 105055 },	-- Baron Scaldius
 						["sourceQuests"] = { 41772 },	-- Ascendant of Flames
-						["maps"] = { 367 },	-- Firelands
+						["maps"] = { 738 },	-- Firelands
 					}),
 					q(45883, {	-- The Firelord's Offense
 						["classes"] = { SHAMAN },
@@ -567,6 +568,12 @@ _.ExpansionFeatures =
 						["lvl"] = 103,
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 41901 },	-- Oath of the Windlord
+					}),
+					q(42997, {	-- The Maelstrom Pillar: Earth
+						["classes"] = { SHAMAN },
+						["lvl"] = 110,
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
+						["sourceQuests"] = { 41900 },	-- A Promise of Earth
 					}),
 					q(41897, {	-- The Master's Plan
 						["classes"] = { SHAMAN },
@@ -680,6 +687,7 @@ _.ExpansionFeatures =
 						["classes"] = { SHAMAN },
 						["lvl"] = 110,
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
+						["sourceQuests"] = { 41900 },	-- A Promise of Earth
 					}),
 					q(44006, {	-- Your Fullest Potential
 						["classes"] = { SHAMAN },

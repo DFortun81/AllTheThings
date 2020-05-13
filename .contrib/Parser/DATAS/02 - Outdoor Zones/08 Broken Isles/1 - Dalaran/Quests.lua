@@ -636,7 +636,7 @@ _.Zones =
 				}),
 				q(45123, {	-- Elemental: The Folly of Levia Laurence
 					["classes"] = { SHAMAN },
-					["races"] = ALLIANCE_ONLY,
+					["sourceQuests"] = { 44821 },	-- In Dire Need
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
@@ -644,6 +644,7 @@ _.Zones =
 				}),
 				q(47050, {	-- Enhancement: Fate of the Tideskorn
 					["classes"] = { SHAMAN },	-- Shaman
+					["sourceQuests"] = { 44821 },	-- In Dire Need
 					["providers"] = {
 						{ "n", 90417 },		-- Archmage Khadgar
 						{ "n", 115464 },	-- Archmage Khadgar
@@ -1154,19 +1155,17 @@ _.Zones =
 					["classes"] = { HUNTER },
 					["provider"] = { "n", 100190 },	-- Vareesa Windrunner
 				}),
-				q(47004, {	-- Restoration: The Bradensbrook Investigation
-					["sourceQuests"] = { 47027 },	-- Legion Threat: Val'sharah
+				q(47004, {	-- Restoration: The Bradensbrook Investigation (Druid version)
+					["sourceQuests"] = { 44821 },	-- In Dire Need
 					["classes"] = { DRUID },
-					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
 					},
 				}),
-				q(47003, {	-- Restoration: The Bradensbrook Investigation
-					["sourceQuests"] = { 47027 },	-- Legion Threat: Val'sharah
+				q(47003, {	-- Restoration: The Bradensbrook Investigation (Shaman version)
+					["sourceQuests"] = { 44821 },	-- In Dire Need
 					["classes"] = { SHAMAN },
-					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "n", 90418 },	-- Archmage Modera
 						{ "n", 115465 },	-- Archmage Modera
