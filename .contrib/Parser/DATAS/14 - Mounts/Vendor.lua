@@ -151,7 +151,9 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(116664),	-- Dusky Rockhide
-		i(161908),	-- Dusky Waycrest Gryphon
+		i(161908, {	-- Dusky Waycrest Gryphon
+			["races"] = ALLIANCE_ONLY,
+		}),
 		i(25471),	-- Ebon Gryphon
 		i(8588),	-- Emerald Raptor
 		i(161774, {	-- Expedition Bloodswarmer
@@ -278,7 +280,9 @@ _.Mounts =
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = { { "c", 1717, 750 }, },	-- 750x 7th Legion Service Medal
 		}),
-		i(161879),	-- Proudmoore Sea Scout
+		i(161879, {	-- Proudmoore Sea Scout
+			["races"] = ALLIANCE_ONLY,
+		}),
 		i(91006, {	-- Purple Dragon Turtle [Panda Only]
 			["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 		}),
@@ -366,7 +370,9 @@ _.Mounts =
 		}),
 		i(8632),	-- Spotted Frostsaber
 		i(19030),	-- Stormpike Battle Charger
-		i(161909),	-- Stormsong Coastwatcher
+		i(161909, {	-- Stormsong Coastwatcher
+			["races"] = ALLIANCE_ONLY,
+		}),
 		i(45125),	-- Stormwind Steed
 		i(47100),	-- Striped Dawnsaber
 		i(8631),	-- Striped Frostsaber

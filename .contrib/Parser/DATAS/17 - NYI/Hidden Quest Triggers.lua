@@ -987,7 +987,6 @@ _.NeverImplemented =
 		q(48974),	-- Unused Paragon quest, it seems the active one is #48977, "Supplies From the Army of the Light"
 		q(40584),	-- Azsuna - FLAG - Witnessed Drake Lift Crystal - triggers shortly after arriving in Azurewing Repose when turning in "Journey to the Repose"
 		q(46709),	-- Broken Isles - Ready for Crafted Legendary flag
-		q(47096),	-- Broken Isles - Choice: Blacksmithing
 		q(47092),	-- Broken Isles - Working on Crafted Legendary
 		q(46871),	-- Broken Isles - 7.2 Broken Shore - Buildings - Nether Disruptor - Buff Activiation - Tracking Quest
 		q(46283),	-- Broken Isles - 7.2 Broken Shore - Buildings - Mage Tower - Personal Reward Received
@@ -1162,8 +1161,10 @@ _.NeverImplemented =
 		q(38545),	-- FLAG: Demonsteel Pauldrons Crafted
 		q(38547),	-- FLAG: Demonsteel Gauntlets Crafted
 		q(38549),	-- FLAG: Demonsteel Helm Crafted
+		q(47096),	-- Broken Isles - Choice: Blacksmithing
 	--	Leatherworking
-		q(47094),	-- Choice: Leatherworking (L) - triggers when you choose whether to craft the leather or mail legendary at Eliezer Hammerbeard (Nether Disruptor)
+		q(47094),	-- Choice: Leatherworking (L) - triggers when you choose to craft the leather legendary at Eliezer Hammerbeard (Nether Disruptor)
+		q(47095),	-- Choice: Leatherworking (M) - triggers when you choose to craft the mail legendary at Eliezer Hammerbeard (Nether Disruptor)
 	--	Tailoring
 		q(38976),	-- FLAG: Undying Silkweave Bracers
 		q(38977),	-- FLAG: Undying Silkweave Cinch Crafted
