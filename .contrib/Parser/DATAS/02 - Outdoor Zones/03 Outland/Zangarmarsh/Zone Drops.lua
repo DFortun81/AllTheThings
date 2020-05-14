@@ -13,7 +13,7 @@ _.Zones =
 					262,	-- The Underbog
 				},
 				["g"] = {
-					i(25104),	-- Anzac Dagger
+			--[[	i(25104),	-- Anzac Dagger
 					i(25118),	-- Battle Star
 					i(25087),	-- Bleeding Eye
 					i(24942),	-- Bloodscale Belt
@@ -31,11 +31,11 @@ _.Zones =
 					i(24954),	-- Bogslayer Helm
 					i(24955),	-- Bogslayer Legplates
 					i(24956),	-- Bogslayer Pauldrons
-					i(24951),	-- Bogslayer Sabatons					
+					i(24951),	-- Bogslayer Sabatons	--]]				
 					i(29960, {	-- Captured Firefly
 						["crs"] = { 20197 },	-- Bogflare Needler
 					}),
-					i(25314),	-- Ceremonial Hammer
+					--[[i(25314),	-- Ceremonial Hammer
 					i(25313),	-- Cold-Iron Scepter
 					i(25298),	-- Combustion Dagger
 					i(24934),	-- Darkcrest Belt
@@ -174,7 +174,7 @@ _.Zones =
 					i(24844),	-- Wrathfin Mantle
 					i(24838),	-- Wrathfin Waistband
 					i(25286),	-- Yew Wand
-					i(25062),	-- Zircon Amulet
+					i(25062),	-- Zircon Amulet--]]
 				},
 			}),
 		}),

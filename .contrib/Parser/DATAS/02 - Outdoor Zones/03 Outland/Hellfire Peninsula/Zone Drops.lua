@@ -13,7 +13,7 @@ _.Zones =
 					102,	-- Zangarmarsh	!!Note Some spillover to this zone as well, but not completely.  So we'll link with maps instead of duplicating
 				},
 				["g"] = {
-					i(25296),	-- Absorption Dagger
+				--[[	i(25296),	-- Absorption Dagger
 					i(25058),	-- Anglesite Choker
 					i(24927),	-- Ango'rosh Sabatons
 					i(25045),	-- Azurite Ring
@@ -59,7 +59,7 @@ _.Zones =
 					i(24811),	-- Unyielding Leggings
 					i(24716),	-- Vengeance Bands
 					i(24714),	-- Vengeance Legguards
-					i(24618),	-- Vindicator Pants
+					i(24618),	-- Vindicator Pants--]]
 				},
 			}),
 		}),
