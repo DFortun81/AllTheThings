@@ -51,12 +51,12 @@ _.Craftables =
 				i(67605),	-- Forged Elementium Mindcrusher
 			}),
 			filter(25, {	-- 1H Swords
+				i(70162),	-- Pyrium Spellward
 				i(70163),	-- Unbreakable Guardian
 			}),
 			filter(26, {	-- 2H Swords
 				i(70164),	-- Masterwork Elementium Deathblade
 				i(55052),	-- Obsidium Executioner
-				i(70162),	-- Pyrium Spellward
 			}),
 			filter(29, {	-- Polearms
 				i(55066),	-- Elementium Poleaxe
