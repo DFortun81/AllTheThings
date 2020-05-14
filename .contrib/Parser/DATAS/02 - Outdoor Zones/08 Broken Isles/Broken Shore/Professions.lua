@@ -188,7 +188,7 @@ _.Zones =
 						["requireSkill"] = LEATHERWORKING,
 						["cost"] = { { "i", 146686, 1 }, },	-- 1x Colorless Shroud of Xavius
 					}),
-					q(46699, {	-- The Wisp and the Nightmare
+					q(46687, {	-- The Wisp and the Nightmare
 						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 						["coord"] = { 41.2, 59.4, 646 },
 						["sourceQuest"] = 46684,	-- The Legend of the Elderhide
@@ -203,7 +203,7 @@ _.Zones =
 							46688,	-- Leather of the Ancients
 							46686,	-- The Wisp and the Sea
 							46685,	-- The Wisp and the Shadow
-							46699,	-- The Wisp and the Nightmare
+							46687,	-- The Wisp and the Nightmare
 						},
 						["repeatable"] = true,
 						["requireSkill"] = LEATHERWORKING,
@@ -248,7 +248,7 @@ _.Zones =
 						["requireSkill"] = LEATHERWORKING,
 						["cost"] = { { "i", 146698, 1 }, },	-- 1x Torn Bracers of the First War
 					}),
-					q(46699, {	-- The Owl and the Dreadlord
+					q(46692, {	-- The Owl and the Dreadlord
 						["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 						["coord"] = { 41.2, 59.4, 646 },
 						["sourceQuest"] = 46690,	-- The Legend of the Wardenscale
