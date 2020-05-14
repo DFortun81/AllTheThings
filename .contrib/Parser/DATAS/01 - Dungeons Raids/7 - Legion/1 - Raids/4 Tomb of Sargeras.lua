@@ -18,6 +18,40 @@ _.Instances = { tier(7, {	-- Legion
 		},
 		["lvl"] = 110,
 		["g"] = {
+			n(-34, {	-- World Quests
+				q(46503, {	-- Tomb of Sargeras: A Lesson in Pain
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(46508, {	-- Tomb of Sargeras: Azshara's Reach
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(46504, {	-- Tomb of Sargeras: Crushing Depths
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(46502, {	-- Tomb of Sargeras: Hand of the Legion
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(46500, {	-- Tomb of Sargeras: Legend of the Deep
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(46506, {	-- Tomb of Sargeras: Life After Death
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(46505, {	-- Tomb of Sargeras: Lost But Not Forgotten
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+				q(46507, {	-- Tomb of Sargeras: The Dread Stalker
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+				}),
+			}),
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {
 					-- * confirmed in HEROIC MODE (jic they somehow vary in each difficulty)
