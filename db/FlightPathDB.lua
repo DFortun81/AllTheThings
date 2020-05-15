@@ -722,7 +722,7 @@ select(2, ...).FlightPathDB = {
 {
 	name="Acherus: The Ebon Hold",
 	faction=0,
-	["classes"] = { 6 },	-- Death Knight
+	c={ 6 },	-- Death Knight
 }, -- [315]
 	nil, -- [316]
 	nil, -- [317]
@@ -1335,7 +1335,7 @@ select(2, ...).FlightPathDB = {
 	[1862] = {
 		name="Acherus: The Ebon Hold",
 		faction=0,
-		["classes"] = { 6 },	-- Death Knight
+		c={ 6 },	-- Death Knight
 	},
 	[1863] = {
 		name="Hafr Fjall, Stormheim",

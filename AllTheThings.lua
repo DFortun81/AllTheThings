@@ -4929,24 +4929,49 @@ end)();
 				return t.info.name or "Visit the Flight Master to cache.";
 			elseif key == "u" then
 				return t.info.u;
+			elseif key == "coord" then
+				return t.info.coord;
+			elseif key == "crs" then
+				local qg = t.info.qg;
+				if qg then return { qg }; end
 			elseif key == "mapID" then
 				return t.info.mapID;
+			elseif key == "r" then
+				return t.info.faction;
+			elseif key == "nmc" then
+				local c = t.info.c;
+				if c and not containsValue(c, app.ClassIndex) then
+					rawset(t, "nmc", true); -- "Not My Class"
+					return true;
+				end
+				rawset(t, "nmc", false); -- "My Class"
+				return false;
+			elseif key == "nmr" then
+				local faction = t.info.faction;
+				if faction and faction > 0 then
+					return faction ~= app.FactionID;
+				end
 			elseif key == "info" then
 				local info = app.FlightPathDB[t.flightPathID];
 				if info then
-					if info.faction and info.faction > 0 then
-						t.nmr = info.faction ~= app.FactionID;
-						t.r = info.faction;
-					end
+					rawset(t, key, info);
+					if info.mapID then CacheField(t, "mapID", info.mapID); end
+					if info.qg then CacheField(t, "creatureID", info.qg); end
 					return info;
 				end
 				return {};
 			elseif key == "description" then
-				return "Flight paths are cached when you talk to the flight master on each continent.";
+				local description = t.info.description;
+				if description then
+					description = description .."\n\n";
+				else
+					description = "";
+				end
+				return description .. "Flight paths are cached when you talk to the flight master on each continent.\n  - Crieve";
 			elseif key == "icon" then
-				local info = t.info;
-				if info and info.faction and info.faction > 0 then
-					if info.faction == Enum.FlightPathFaction.Horde then
+				local faction = t.info.faction;
+				if faction and faction > 0 then
+					if faction == Enum.FlightPathFaction.Horde then
 						return "Interface\\Addons\\AllTheThings\\assets\\fp_horde";
 					else
 						return "Interface\\Addons\\AllTheThings\\assets\\fp_alliance";
