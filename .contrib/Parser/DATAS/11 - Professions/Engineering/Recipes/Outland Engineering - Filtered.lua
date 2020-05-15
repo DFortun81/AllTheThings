@@ -132,7 +132,7 @@ profession(ENGINEERING, {
 						{
 							["name"] = "Mayhem Projection Goggles",
 							["recipeID"] = 46114,
-							["classes"] = { 11 } -- Druid
+							["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT }
 						},
 						{
 							["name"] = "Power Amplification Goggles",

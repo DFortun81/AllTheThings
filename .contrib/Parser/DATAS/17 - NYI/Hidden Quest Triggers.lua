@@ -1055,6 +1055,7 @@ _.NeverImplemented =
 		q(42115),	-- Generic Order Hall - Tracking Quest: Chapter 1 completed - Triggers when you complete the quest that gets your first order hall upgrade
 		q(42116),	-- Generic Order Hall - Tracking Quest: Chapter 2 Completed - triggers after completing your first order hall campaign effort
 		q(42118),	-- Generic Order Hall - Tracking Quest: Chapter 4 Completed — triggers after completing order hall campaign
+		q(45171),	-- Generic Order Hall - 7.1 Class Hall - Special - PVP - PVP Intro Mission - Tracking Quest
 		
 		q(40817),	-- Demon Hunter Order Hall - Twinblades of the Deceiver chosen first
 		q(40818),	-- Demon Hunter Order Hall - Aldrachi Warblades chosen first
@@ -1161,10 +1162,10 @@ _.NeverImplemented =
 		q(38545),	-- FLAG: Demonsteel Pauldrons Crafted
 		q(38547),	-- FLAG: Demonsteel Gauntlets Crafted
 		q(38549),	-- FLAG: Demonsteel Helm Crafted
-		q(47096),	-- Broken Isles - Choice: Blacksmithing
+		q(47096),	-- Broken Shore - Choice: Blacksmithing
 	--	Leatherworking
-		q(47094),	-- Choice: Leatherworking (L) - triggers when you choose to craft the leather legendary at Eliezer Hammerbeard (Nether Disruptor)
-		q(47095),	-- Choice: Leatherworking (M) - triggers when you choose to craft the mail legendary at Eliezer Hammerbeard (Nether Disruptor)
+		q(47094),	-- Broken Shore - Choice: Leatherworking (L) - triggers when you choose to craft the leather legendary at Eliezer Hammerbeard (Nether Disruptor)
+		q(47095),	-- Broken Shore - Choice: Leatherworking (M) - triggers when you choose to craft the mail legendary at Eliezer Hammerbeard (Nether Disruptor)
 	--	Tailoring
 		q(38976),	-- FLAG: Undying Silkweave Bracers
 		q(38977),	-- FLAG: Undying Silkweave Cinch Crafted
@@ -1174,6 +1175,7 @@ _.NeverImplemented =
 		q(38982),	-- FLAG: Undying Silkweave Pantaloons Crafted
 		q(38983),	-- FLAG: Undying Silkweave Robe Crafted
 		q(38979),	-- FLAG: Undying Silkweave Slippers Crafted
+		q(47093),	-- Broken Shore - Choice: Tailoring
 	
 	--	DH class campaign
 		q(47661),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
