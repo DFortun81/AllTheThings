@@ -2206,7 +2206,8 @@ _.NeverImplemented =
 		q(56330),	-- Triggered shortly after completing "Chopped Bots". Possibly shuts down the magnet?
 		q(56660),	-- Triggered on Mechagon randomly
 		q(56840),	-- Toys of Destruction - made the Volatile Blaster. Maybe triggers for all the toys to indicate the toy extra action button is available?
-		q(56627),	-- collected Roadtrogg mini
+		q(56627),	-- collected Roadtrogg mini for "Most Minis Wins"
+		q(56630),	-- collected HK-8 mini for "Most Minis Wins"
 	
 	
 	--	Dungeons
@@ -2423,6 +2424,7 @@ _.NeverImplemented =
 		q(59531),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
 		q(59532),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
 		q(59533),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
+		q(59134),	-- my guess is that it triggers after getting Malefic Core from N'Zoth. I got it on heroic and it wasn't present on my previous heroic kills
 		
 		-- Azerite essences assembled with Encrypted Ny'alothan Text
 		q(58527),	-- Replicating Void Droplets (Rank 1 Formless Void)

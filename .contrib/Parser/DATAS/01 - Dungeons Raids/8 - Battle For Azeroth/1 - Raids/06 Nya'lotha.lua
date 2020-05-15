@@ -434,6 +434,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["crs"] = { 158041 },
 					["g"] = {
 						ach(14148),	-- Peer Pressure
+						i(175062),	-- Malefic Core
 						i(174452),	-- Eye of Corruption (Pet)
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(172187),	-- Devastation's Hour
@@ -662,6 +663,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							}),
 						}),
 						ach(14148),	-- Peer Pressure
+						i(175062),	-- Malefic Core
 						i(174452),	-- Eye of Corruption (Pet)
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(172187),	-- Devastation's Hour
@@ -905,6 +907,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							title(417),	-- the Uncorrupted
 						}),
 						ach(14148),	-- Peer Pressure
+						i(175062),	-- Malefic Core
 						i(174452),	-- Eye of Corruption (Pet)
 						i(174279),	-- Encrypted Ny'alothan Text
 						i(174872),	-- Ny'alotha Allseer

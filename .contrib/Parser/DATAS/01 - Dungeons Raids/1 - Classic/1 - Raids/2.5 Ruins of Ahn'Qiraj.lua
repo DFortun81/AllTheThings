@@ -184,6 +184,7 @@ _.Instances = { tier(1, {	-- Classic
 										i(20864),	-- Bone Scarab
 										i(20863),	-- Clay Scarab
 									}),
+									i(20866),	-- Azure Idol
 									i(20869),	-- Amber Idol
 									i(20870),	-- Jasper Idol
 									i(20872),	-- Vermillion Idol

@@ -220,6 +220,7 @@ _.ExpansionFeatures =
 						i(174891),	-- Veteran Rajani Spakcallers Contract
 						i(174890),	-- Veteran Ramkahen Lancers Contract
 						i(175056),	-- Waterborne Veterans Contract
+						i(175062),	-- Malefic Core
 					}),
 				},
 			}),
@@ -291,6 +292,7 @@ _.ExpansionFeatures =
 						i(174891),	-- Veteran Rajani Spakcallers Contract
 						i(174890),	-- Veteran Ramkahen Lancers Contract
 						i(175056),	-- Waterborne Veterans Contract
+						i(175062),	-- Malefic Core
 					}),
 				},
 				--[[ notes:
