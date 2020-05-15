@@ -256,7 +256,7 @@ _.Zones =
 					}),
 					o(246269, {	-- Small Treasure Chest
 						["questID"] = 40772,	-- Fel Crystal Fragments x2
-						["coord"] = { 63.0, 54.5, 672 },
+						["coord"] = { 50.24, 49.75, 672 },
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 					}),
 					o(244701, {	-- Small Treasure Chest
