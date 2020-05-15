@@ -2106,6 +2106,7 @@ _.NeverImplemented =
 		q(56584),	-- Urduu first kill
 		q(57083),	-- Wayward Algan Benthic loot
 		q(57166),	-- triggered when completing #55891, "Champion Aldrantiss, Defender of Her Kingdom," in nazjatar
+		q(57165),	-- triggered when completing #55892, "Champion Eldanar, Shield of Her Glory," in nazjatar
 		q(57140),	-- pretty sure this is for looting Ancient Reefwalker Bark
 		q(57169),	-- triggered when completing WQ to kill Alzana, Arrow of Thunder (not WQ ID)
 	--	PVP
@@ -2416,6 +2417,7 @@ _.NeverImplemented =
 		q(58545),	-- triggered together with 58543, 58544 and 59565. My first ever kill of Ra-den (happened on heroic)
 		q(59567),	-- kill Carapace of N'Zoth (Fury of N'Zoth)
 		q(59568),	-- N'Zoth killed on Heroic. Possibly the same for other difficulties?
+		q(58532),	-- triggered when killing N'Zoth in LFR
 		q(59531),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
 		q(59532),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
 		q(59533),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
