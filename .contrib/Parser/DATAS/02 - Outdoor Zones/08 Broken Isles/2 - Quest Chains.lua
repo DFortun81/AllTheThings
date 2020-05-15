@@ -584,6 +584,9 @@ _.Zones =
 							["provider"] = { "n", 103976 },	-- The Postmaster
 							["maps"] = { 701 },	-- Icecrown Citadel (scenario version)
 							["lvl"] = 98,
+							["cost"] = {
+								{ "i", 134857, 1 },	-- Invincible's Reins
+							},
 						}),
 						q(41394, {	-- Service with a Smile
 							["sourceQuests"] = { 41367 },	-- Priority Delivery
