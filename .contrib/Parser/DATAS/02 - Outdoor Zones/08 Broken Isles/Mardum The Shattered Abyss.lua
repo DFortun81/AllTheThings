@@ -233,7 +233,10 @@ _.Zones =
 					}),
 					o(244694, {	-- Small Treasure Chest
 						["questID"] = 39973,	-- Mardum Lord Signet
-						["coord"] = { 64.1, 58.4, 672 },
+						["coords"] = {
+							{ 64.1, 58.4, 672 },
+							{ 54.9, 58.7, 673 },
+						},
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 						["g"] = {
 							i(128946),	-- Mardum Lord Signet
@@ -241,7 +244,10 @@ _.Zones =
 					}),
 					o(244692, {	-- Small Treasure Chest
 						["questID"] = 39972,	-- Legion Healthstone
-						["coord"] = { 48.8, 15.6, 673 },
+						["coords"] = {
+							{ 48.8, 15.6, 673 },
+							{ 63.7, 54.3, 672 },
+						},
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 					}),
 					o(244698, {	-- Small Treasure Chest
@@ -256,7 +262,10 @@ _.Zones =
 					}),
 					o(246269, {	-- Small Treasure Chest
 						["questID"] = 40772,	-- Fel Crystal Fragments x2
-						["coord"] = { 50.24, 49.75, 672 },
+						["coords"] = {
+							{ 63.0, 21.0, 672 },
+							{ 50.2, 49.8, 675 },
+						},
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 					}),
 					o(244701, {	-- Small Treasure Chest
