@@ -69,6 +69,8 @@ _.Zones =
 						i(158646),	-- Curseform Sickle
 						i(155143),	-- Marshal's Halberd
 						i(159536),	-- Gol Osigr Hammer
+						--Horde Source id's(not actual reward)
+						i(161298),	-- Strong Juju Bloodhexxer
 					},
 				}),
 				q(50988, {	-- An Economic Opportunity
@@ -108,6 +110,10 @@ _.Zones =
 						i(155104),	-- Waycrest Militia Helmet
 						i(160888),	-- Banisher Jerkin
 						i(160890),	-- Waycrest Militia Battleplate
+						i(160889),	-- Crone-Seeker's Chainmail
+						i(155106),	-- Crone-Seeker's Helm
+						--i(155112),	-- Wickerwoven Robe Possible source, needs verification
+						i(155105),	-- Wickerwoven Crown
 					},
 				}),
 				q(50253, {	-- An Improvised Arsenal
@@ -517,6 +523,13 @@ _.Zones =
 						i(160202),	-- Banisher Bands
 						i(160203),	-- Crone-Seeker's Bands
 						i(160204),	-- Waycrest Militia Bindings
+						-- Horde sourceid's(not actual reward)
+						i(159067),	-- Loa Speaker's Waistwrap
+						i(159070),	-- Loa Speaker's Cuffs
+						i(159068),	-- Death-Pledged Waistguard
+						i(159072),	-- Death-Pledged Armguards
+						i(159069),	-- Ritual Flayer's Cord
+						i(159073),	-- Ritual Flayer's Bracers
 					},
 
 				}),
@@ -626,6 +639,10 @@ _.Zones =
 						i(155469),	-- Banisher Grips
 						i(155477),	-- Crone-Seeker's Strikers
 						i(155485),	-- Waycrest Militia Crushers
+						-- Horde Sourceid's(not actual reward)
+						i(155316),	-- Loa Speaker's Treads
+						i(155318),	-- Ritual Flayer's Boots
+						i(155315),	-- Nazmani Warboots
 					},
 				}),
 				q(48477, {	-- Looking for One More
@@ -684,6 +701,8 @@ _.Zones =
 						i(160194),	-- Banisher Grasps
 						i(160195),	-- Crone-Seeker's Mitts
 						i(160196),	-- Waycrest Militia Grips
+						-- Horde sourceid's(not actual reward)
+						i(155373),	-- Golden Lilypad
 					},
 				}),
 				q(48170, {	-- Once Bitten, Twice Shy

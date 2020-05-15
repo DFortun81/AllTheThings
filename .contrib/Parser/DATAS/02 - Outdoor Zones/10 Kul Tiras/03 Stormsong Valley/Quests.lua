@@ -212,6 +212,10 @@ _.Zones =
 						i(160376),	-- Darkwater Clasp
 						i(160379),	-- Stormchaser Buckle
 						i(160382), -- Dread Corsair Cincture
+						-- Horde sourceid's(not actual reward)
+						i(161280), -- Lastwind Shoes
+						i(161283), -- Exiled Veteran's Sabatons
+						i(161282), -- Resilient Outcast's Footguards
 					},
 				}),
 				q(52070, {	-- Bauer Backup
@@ -801,6 +805,9 @@ _.Zones =
 						i(160367),	-- Stormchaser Greaves
 						i(158690),	-- Tidespeaker Cord
 						i(160361),	-- Tidespeaker Pants
+						-- Horde sourceid's(not actual reward)
+						i(161276),	-- Lastwind Legguards
+						i(161278),	-- Resilient Outcast's Leggings
 					},
 				}),
 				q(52068, {	-- Helping Out, Somewhere Else
@@ -1290,6 +1297,8 @@ _.Zones =
 						i(155218),	-- Kraulguard Poleaxe
 						i(155203),	-- Needleshot Repeater
 						i(155200),	-- Thornmatron's Vinecaller
+						-- Horde sourceid's(not actual reward)
+						i(161310),	-- Glaive of Zak'rajan
 					},
 				}),
 				q(50783, {	-- The Abyssal Council

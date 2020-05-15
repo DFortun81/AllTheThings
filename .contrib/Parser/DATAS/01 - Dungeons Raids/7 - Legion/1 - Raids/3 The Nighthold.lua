@@ -395,7 +395,7 @@ _.Instances = { tier(7, {	-- Legion
 								un(2, i(140150)),	-- Cache of Nightborne Treasures [Normal]
 							},
 						}),
-						i(45381, {	-- The Nighthold: Talisman of the Shal'dorei [Normal]
+						q(45381, {	-- The Nighthold: Talisman of the Shal'dorei [Normal]
 							["provider"] = { "n", 110791 },	-- First Arcanist Thalyssra
 							["g"] = {
 								ig(141324),	-- Talisman of the Shal'dorei [Normal]
@@ -771,7 +771,7 @@ _.Instances = { tier(7, {	-- Legion
 								un(2, i(140152)),	-- Cache of Nightborne Treasures [Heroic]
 							},
 						}),
-						i(45382, {	-- The Nighthold: Talisman of the Shal'dorei [Heroic]
+						q(45382, {	-- The Nighthold: Talisman of the Shal'dorei [Heroic]
 							["provider"] = { "n", 110791 },	-- First Arcanist Thalyssra
 							["g"] = {
 								ig(141325),	-- Talisman of the Shal'dorei [Heroic]
@@ -1150,7 +1150,7 @@ _.Instances = { tier(7, {	-- Legion
 								un(2, i(140154)),	-- Cache of Nightborne Treasures [Mythic]
 							},
 						}),
-						i(45383, {	-- The Nighthold: Talisman of the Shal'dorei [Mythic]
+						q(45383, {	-- The Nighthold: Talisman of the Shal'dorei [Mythic]
 							["provider"] = { "n", 110791 },	-- First Arcanist Thalyssra
 							["g"] = {
 								ig(141326),	-- Talisman of the Shal'dorei [Mythic]
