@@ -17,6 +17,9 @@ _.Zones =
 							}),
 						},
 					}),
+					i(167562, {	 -- Ionized Minnow
+					--	["description"] = "Can be caught near Danielle, though it's likely they can be caught anywhere along the coast of the island.",
+					}),
 					i(167662, {	 -- Solarsprocket Barbel
 						["questID"] = 55312,
 						["isDaily"] = true,
