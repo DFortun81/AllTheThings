@@ -297,7 +297,6 @@ app.L = {
 		[-17] = "Interface\\Icons\\inv_misc_book_07", 										-- Quests
 		[-18] = "Interface\\Icons\\icon_scenarios",											-- Scenarios
 		[-19] = "Interface\\Icons\\achievement_scenario_arenaofannihilation", 				-- Arena of Annihilation
-		[-20] = "Interface\\Icons\\achievement_level_110",									-- Class Hall
 		[-21] = "Interface\\Icons\\inv_misc_enggizmos_17",									-- Containers
 		[-26] = "Interface\\Icons\\INV_Misc_Bag_07_Green", 									-- Drop
 		[-29] = "Interface\\Icons\\Inv_misc_bag_17", 										-- Raid Finder Bag
@@ -942,6 +941,7 @@ app.L = {
 		[-15] = "Common Vendor Items",											-- Common Vendor Items
 		[-16] = BATTLE_PET_BREED_QUALITY4, 										-- Rares
 		[-17] = TRACKER_HEADER_QUESTS, 											-- Quests
+		[-20] = "Silithid Royalty",												-- Silithid Royalty
 		[-21] = AUCTION_CATEGORY_CONTAINERS,									-- Containers
 
 		[-26] = BATTLE_PET_SOURCE_1,											-- Drop
