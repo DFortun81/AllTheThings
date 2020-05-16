@@ -3393,6 +3393,7 @@ _.NeverImplemented =
 			un(1, i(5748)),	-- Centaur Longbow
 			un(1, i(108783)),   	-- Unknown
 			un(1, i(167144)),   	-- Unknown
+			un(1, i(154971)),	-- howdah-riers bow
 			un(1, i(115294)),	-- Spectral Longbow
 			un(1, i(109283)),   	-- 6.0 QA Combat Test Hunter Bow
 			un(1, i(140717)),	-- Marksman Recurve Bow
@@ -3559,6 +3560,10 @@ _.NeverImplemented =
 			un(1, i(147379)),	-- Wooden Toy Axe (H) used to apply the mog
 		}),
 		n(-338, {	-- One-Handed Swords
+			un(1, i(134586)),	-- Vanguard Hatchet
+			un(1, i(134755)),	-- Covert Hatchet
+			un(1, i(140713)),	-- Protectors 'axe
+			un(1, i(150608)),	-- Protectors 'axe
 			un(1, i(108803)),	-- Unknown - was under Legion>1Handed Swords
 			un(1, i(108804)),	-- Unknown - was under Legion>1Handed Swords
 			un(1, i(134562)),	-- Odyns Fury

@@ -511,9 +511,6 @@ _.WorldDrops =
 			i(10554, {	-- Foreman Pants
 				["u"] = 7,	-- Boe Item
 			}),
-			i(10553, {	-- Foreman Vest
-				["u"] = 7,	-- BoE Item
-			}),
 			i(6382),	-- Forest Leather Belt
 			i(3057),	-- Forest Leather Boots
 			i(3202),	-- Forest Leather Bracers
