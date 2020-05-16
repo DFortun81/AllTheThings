@@ -242,6 +242,7 @@ _.WorldDrops =
 				i(31200),	-- Shield of the Wayward Footman
 				i(31287),	-- Draenei Honor Guard Shield
 				i(31292),	-- Crystal Pulse Shield
+				i(25075),	-- Hardened Steel Shield
 			}),
 			n(-342, {	-- Staves
 				i(25170),	-- Rattan Bo Staff

@@ -778,6 +778,25 @@ _.NeverImplemented =
 			un(1, i(42875)),	-- Worg-Hide Pants
 			un(1, i(21613)),	-- Wormhide Boots (Leather)
 			un(1, i(21614)),	-- Wormhide Protector (Leather)
+			un(1, i(109358)),	-- Unknown
+			un(1, i(109366)),	-- Unknown
+			un(1, i(109375)),	-- Unknown
+			un(1, i(109388)),	-- Unknown
+			un(1, i(109400)),	-- Unknown
+			un(1, i(109414)),	-- Unknown
+			un(1, i(109415)),	-- Unknown
+			un(1, i(109428)),	-- Unknown
+			un(1, i(109432)),	-- Unknown
+			un(1, i(109440)),	-- Unknown
+			un(1, i(109444)),	-- Unknown
+			un(1, i(109469)),	-- Unknown
+			un(1, i(109475)),	-- Unknown
+			un(1, i(109479)),	-- Unknown
+			un(1, i(109486)),	-- Unknown
+			un(1, i(109493)),	-- Unknown
+			un(1, i(109513)),	-- Unknown
+			un(1, i(109547)),	-- Unknown
+			un(1, i(120363)),	-- Unknown
 		}),
 		n(-45, {	-- Mail
 			cl(7, {	-- Shaman
@@ -1595,6 +1614,8 @@ _.NeverImplemented =
 			un(1, i(108820)),	-- Unknown
 			un(1, i(108821)),	-- Unknown
 			un(1, i(109277)),	-- Unknown
+			un(1, i(157748)),	-- Simple Golden Ring
+			un(1, i(157749)),	-- Ornate Silver Loop
 			un(1, i(174050)),	-- Corrupted Ring - revel in violence
 			un(1, i(174051)),	-- Corrupted Ring - spontaneous fury
 			un(1, i(174056)),	-- Corrupted Ring - face the truth
@@ -3028,6 +3049,10 @@ _.NeverImplemented =
 			un(1, i(168585)),	-- "REUSE ME [MTMM]"
 			un(1, i(168586)),	-- "REUSE ME [MTMM]"
 			un(1, i(169537)),	-- "REUSE ME [MTMM] (DNT)" (naga hide rank 3 recipe in game is 170213)
+			un(1, i(168587)),	-- "REUSE ME [MTMM]"
+			un(1, i(168588)),	-- "REUSE ME [MTMM]"
+			un(1, i(168589)),	-- "REUSE ME [MTMM]"
+			un(1, i(168590)),	-- "REUSE ME [MTMM]"
 		}),
 		n(-185, { 	-- Inscription
 			un(1, i(87830)),	-- Recipe: Tigersblood Tincture
