@@ -18,12 +18,30 @@ namespace ATT
         /// <summary>
         /// The current version of Retail WoW.
         /// </summary>
-        private static readonly int[] CURRENT_VERSION_ARR = new int[] { 8, 2, 0, 30918 };
+        private static readonly int[] CURRENT_VERSION_ARR = new int[]
+        {
+#if CLASSIC
+            1, 13, 3, 28211
+#else
+            // BFA
+            8, 3, 0, 30918
+#endif
+        };
 
         /// <summary>
         /// The current version of Retail WoW. [Format: ABBBCCCFFFFFF]
         /// </summary>
         private static readonly long CURRENT_VERSION = CURRENT_VERSION_ARR.ConvertVersion();
+
+        /// <summary>
+        /// The initial build version for the Burning Crusade Expansion.
+        /// </summary>
+        private static readonly int[] BURNING_CRUSADE_VERSION_ARR = new int[] { 2, 0, 1, 18471 };
+
+        /// <summary>
+        /// The initial build version for the Burning Crusade Expansion.
+        /// </summary>
+        private static readonly long BURNING_CRUSADE_VERSION = BURNING_CRUSADE_VERSION_ARR.ConvertVersion();
 
         /// <summary>
         /// The initial build version for the Warlords of Draenor Expansion.
@@ -44,6 +62,17 @@ namespace ATT
         /// The initial build version for the Legion Expansion.
         /// </summary>
         private static readonly long LEGION_VERSION = LEGION_VERSION_ARR.ConvertVersion();
+
+        /// <summary>
+        /// The maximum ItemID available to a given distribution type.
+        /// </summary>
+        public static readonly long MAX_ITEMID =
+#if CLASSIC
+            23796
+#else
+            99999999
+#endif
+            ;
 
         // These get loaded from _main.lua now.
         public static List<object> ALLIANCE_ONLY;
@@ -136,10 +165,17 @@ namespace ATT
         /// <param name="data">The data container.</param>
         /// <param name="modID">The modID.</param>
         /// <param name="minLevel">The minimum required level.</param>
-        private static void Process(Dictionary<string, object> data, int modID, int minLevel)
+        /// <returns>Whether or not the data is valid.</returns>
+        private static bool Process(Dictionary<string, object> data, int modID, int minLevel)
         {
             // Check to make sure the data is valid.
-            if (data == null) return;
+            if (data == null) return false;
+
+            // Items that were added to the game after the current expansion shouldn't be included in the game.
+            if (data.TryGetValue("itemID", out int itemID))
+            {
+                if (itemID > MAX_ITEMID) return false;
+            }
 
             // Assign the modID if not already specified.
             if (data.TryGetValue("modID", out object modIDRef))
@@ -157,7 +193,6 @@ namespace ATT
                 // Assign the modID, but only for items.
                 data["modID"] = modID;
             }
-
             if(data.TryGetValue("npcID", out int npcID))
             {
                 NPCS_WITH_REFERENCES[npcID] = true;
@@ -311,14 +346,19 @@ namespace ATT
                                 }
                                 break;
                             }
-                        case "removed":
+                        case "deleted":
                             {
                                 if (CURRENT_VERSION >= version) removed = 1;
                                 break;
                             }
-                        case "blackmarket":
+                        case "removed":
                             {
                                 if (CURRENT_VERSION >= version) removed = 2;
+                                break;
+                            }
+                        case "blackmarket":
+                            {
+                                if (CURRENT_VERSION >= version) removed = 3;
                                 break;
                             }
                     }
@@ -326,28 +366,38 @@ namespace ATT
                 }
                 if (removed > 0)
                 {
-                    if (removed == 2)
+                    if (removed == 3)
                     {
                         // Black Market
                         data["u"] = 9;
                     }
+                    else if (removed == 1)
+                    {
+                        // Never Implemented
+                        data["u"] = 1;
+                    }
                     else
                     {
-                        // If the version is the same as the last version, mark it as "Never Implemented".
-                        if (firstVersion == lastVersion || firstVersion > CURRENT_VERSION) data["u"] = 1;
-                        else if (data.TryGetValue("b", out int b))
+#if CLASSIC
+                        data["u"] = 2;  // Removed From Game
+#else
+                        if(data.TryGetValue("b", out int b))
                         {
                             switch (b)
                             {
                                 case 1:
-                                    data["u"] = 2;
+                                    data["u"] = 2;  // Removed From Game
                                     break;
                                 default:
-                                    data["u"] = 7;
+                                    data["u"] = 7;  // Legacy BOE Removed (TODO: Deprecate this.)
                                     break;
                             }
                         }
-                        else data["u"] = 7;
+                        else
+                        {
+                            data["u"] = 7;  // Legacy BOE Removed (TODO: Deprecate this.)
+                        }
+#endif
                     }
                 }
             }
@@ -356,6 +406,37 @@ namespace ATT
             if (data.TryGetValue("g", out List<object> groups))
             {
                 Process(groups, modID, minLevel);
+            }
+
+            if (data.TryGetValue("cost", out object costRef) && costRef is List<List<object>> cost)
+            {
+                for (int i = cost.Count - 1;i >= 0;--i)
+                {
+                    var c = cost[i];
+                    if(c != null && c.Any())
+                    {
+                        switch (c[0].ToString())
+                        {
+                            case "i":
+                                itemID = Convert.ToInt32(c[1]);
+                                if (itemID > MAX_ITEMID) cost.RemoveAt(i);
+                                else
+                                {
+                                    var item = Items.GetNull(itemID);
+                                    if (item != null)
+                                    {
+                                        // The item was classified as never being implemented or being completely removed from the game.
+                                        if (item.TryGetValue("u", out int u) && u == 1)
+                                        {
+                                            cost.RemoveAt(i);
+                                        }
+                                    }
+                                }
+                                break;
+                            default: break;
+                        }
+                    }
+                }
             }
 
             if (data.TryGetValue("requireSkill", out object requiredSkill))
@@ -405,6 +486,8 @@ namespace ATT
                     data.Remove("name");
                 }
             }
+
+            return true;
         }
 
         /// <summary>
@@ -419,9 +502,9 @@ namespace ATT
             if (list == null) return;
 
             // Iterate through the list and process all of the relative data dictionaries.
-            foreach (var dataRef in list)
+            for(int i = list.Count - 1;i >= 0;--i)
             {
-                Process(dataRef as Dictionary<string, object>, modID, minLevel);
+                if (!Process(list[i] as Dictionary<string, object>, modID, minLevel)) list.RemoveAt(i);
             }
         }
 
