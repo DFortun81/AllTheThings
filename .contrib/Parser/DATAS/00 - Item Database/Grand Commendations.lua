@@ -238,6 +238,7 @@ i(168828, 2395);	-- Royal Jelly, Honeyback Hive (+160)
 i(168822, 2395);	-- Thin Jelly, Honeyback Hive (+20)
 i(173375, 2415);	-- Rajani Insignia (+250)
 i(173374, 2415);	-- Rajani Insignia (+250, BoA)
+i(174521, 2391);	-- Transferable Kernel of E-steam (+250, Rustbolt Resistance)
 i(174523, 2373);	-- Waveswept Abyssal Conch [Unshackled]
 i(174522, 2400);	-- Waveswept Abyssal Conch [Waveblade Ankoan]
 
