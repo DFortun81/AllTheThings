@@ -441,6 +441,7 @@ _.Zones =
 					["coord"] = { 68.5, 53.4, 32 },
 					["sourceQuests"] = {
 						27964,	-- Dig-Boss Dinwhisker
+						27957,	-- Lunk No Kill
 					},
 				}),
 				q(3481, {	-- Trinkets...
