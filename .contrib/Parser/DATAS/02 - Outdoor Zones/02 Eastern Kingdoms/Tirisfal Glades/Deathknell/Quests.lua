@@ -93,6 +93,7 @@ _.Zones =
 						["sourceQuests"] = { 24973 },	-- Night Web's Hollow
 					}),
 					q(28651, {	-- Novice Elreth
+						["isBreadcrumb"] = true,
 						["provider"] = { "n", 1569 },	-- Shadow Priest Elreth
 						["coord"] = { 46.6, 58.8, 465 },
 						["races"] = HORDE_ONLY,

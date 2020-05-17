@@ -15,13 +15,14 @@ _.GroupFinder =
 				i(113767),	-- Blossoming Mantle*
 				i(113765),	-- Blossoming Robe*
 				i(113787),	-- Blossoming Slippers*
-				i(113772),	-- Firecracker Belt
-				i(113770),	-- Firecracker Boots
+				i(113772),	-- Firecracker Belt*		— confirmed by Carbion on discord on May 16, 2020
+				i(113770),	-- Firecracker Boots*		— confirmed by Carbion on discord on May 16, 2020
 				i(113731),	-- Firecracker Cap
 				i(113773),	-- Firecracker Girdle
-				i(113746),	-- Firecracker Gloves*	— confirmed w/screenshot in #errors on April 15, 2020
+				i(113746),	-- Firecracker Gloves*		— confirmed w/screenshot in #errors on April 15, 2020
 				i(113733),	-- Firecracker Helm
 				i(113771),	-- Firecracker Slippers
+				i(113740),	-- Firecracker Tunic*		— confirmed by Carbion on discord on May 16, 2020
 				i(113730),	-- Venomtail Helm
 				i(113753),	-- Venomtail Shoulderguards *
 				i(113741),	-- Venomtail Chestguard*
@@ -34,7 +35,7 @@ _.GroupFinder =
 				i(113738),	-- Kyparite Chestguard*
 				i(113784),	-- Kyparite Belt
 				i(113782),	-- Kyparite Boots
-				i(113785),	-- Kyparite Girdle*		— confirmed by Reaperman on discord on April 20, 2020 (blaze it)
+				i(113785),	-- Kyparite Girdle*			— confirmed by Reaperman on discord on April 20, 2020 (blaze it)
 				i(113729),	-- Kyparite Headguard
 				i(113728),	-- Kyparite Helm*
 				i(113783),	-- Kyparite Stompers*
@@ -42,7 +43,7 @@ _.GroupFinder =
 				i(113735),	-- Drifting Cloud Necklace*
 				i(113755),	-- Ring of Flowing Water*
 				i(113734),	-- Tranquil Breeze Pendant of the Peerless
-				i(113756),	-- Loop of Inner Clarity
+				i(113756),	-- Loop of Inner Clarity*	— confirmed by Reaperman on discord on May 3, 2020
 			},
 		}),
 		i(114662, {	-- Tranquil Satchel of Helpful Goods 85-87, 88-90
@@ -58,6 +59,7 @@ _.GroupFinder =
 				i(113773),	-- Firecracker Girdle
 				i(113733),	-- Firecracker Helm
 				i(113771),	-- Firecracker Slippers
+				i(113740),	-- Firecracker Tunic
 				i(113778),	-- Venomtail Belt
 				i(113777),	-- Venomtail Boots
 				i(113779),	-- Venomtail Girdle
@@ -83,7 +85,6 @@ _.GroupFinder =
 				i(113748),	-- Firecracker Gauntlets
 				i(113752),	-- Firecracker Mantle
 				i(113754),	-- Firecracker Pauldrons
-				i(113740),	-- Firecracker Tunic
 				i(113741),	-- Venomtail Chestguard
 				i(113747),	-- Venomtail Gauntlets
 				i(113745),	-- Venomtail Gloves
