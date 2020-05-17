@@ -297,6 +297,12 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42983 },	-- Mistral Essence
 						["maps"] = { 713 },	-- Eye of Azshara
 					}),
+					q(46781, {	-- Further Advancement
+						["classes"] = { SHAMAN },
+						["lvl"] = 110,
+						["provider"] = { "n", 96746 },	-- Advisor Sevel
+						["sourceQuests"] = { 46057 },	-- Champion: Magatha Grimtotem
+					}),
 					q(46792, {	-- Gathering of the Storms
 						["classes"] = { SHAMAN },
 						["lvl"] = 110,
