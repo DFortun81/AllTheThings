@@ -2132,8 +2132,8 @@ _.GearSets =
 						["groups"] = {
 						artifact(319),	-- Reach Honor Level 10
 						artifact(323),	-- Reach Honor Level 30
-						artifact(325),	-- Reach Honor Level 50
-						artifact(324),	-- Reach Honor Level 80
+						artifact(324),	-- Reach Honor Level 50
+						artifact(325),	-- Reach Honor Level 80
 						}
 					}),
 					ChallengeAppearance({
