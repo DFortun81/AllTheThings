@@ -318,20 +318,6 @@ _.Zones =
 					}),
 				}),
 				prof(INSCRIPTION, {
-					q(39936, {	-- Inscription of the Body
-						["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },
-					}),
-					q(40058, {	-- Inscription of the Body
-						["classes"] = { 12 },
-					}),
-					q(39937, {	-- Opposites Repel
-						["sourceQuest"] = 39936,	-- Inscription of the Body
-						["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },
-					}),
-					q(40059, {	-- Opposites Repel
-						["sourceQuest"] = 40058,	-- Inscription of the Body
-						["classes"] = { 12 },
-					}),
 					q(39938, {	-- Containing the Demon Within
 						["g"] = {
 							i(137743),	-- Technique: Glyph of Fallow Wings
@@ -346,33 +332,32 @@ _.Zones =
 						["sourceQuest"] = 40059,	-- Opposites Repel
 						["classes"] = { 12 },
 					}),
-					q(39939, {	-- Scribal Knowledge
-						["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },	-- This may not have a DH restriction
-					}),
 					q(39941, {	-- Control is Key
 						["sourceQuest"] = 39939,	-- Scribal Knowledge
 						["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },
 					}),
-					q(40061, {	-- To Know Your Enemy
-						["classes"] = { 12 },
-					}),
 					q(40063, {	-- Control is Key
 						["classes"] = { 12 },
 					}),
-					q(39935, {	-- The Price of Power
-						["g"] = {
-							i(137741),	-- Technique: Glyph of Fel Touched Souls
-						},
+					q(39936, {	-- Inscription of the Body
 						["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },
 					}),
-					q(40057, {	-- The Price of Power
-						["g"] = {
-							i(137741),	-- Technique: Glyph of Fel Touched Souls
-						},
+					q(40058, {	-- Inscription of the Body
+						["classes"] = { 12 },
+					}),
+					q(39937, {	-- Opposites Repel
+						["sourceQuest"] = 39936,	-- Inscription of the Body
+						["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },
+					}),
+					q(40059, {	-- Opposites Repel
+						["sourceQuest"] = 40058,	-- Inscription of the Body
 						["classes"] = { 12 },
 					}),
 					q(39940, {	-- Runes of Power
 						i(137742),	-- Technique: Glyph of Crackling Flames
+					}),
+					q(39939, {	-- Scribal Knowledge
+						["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },
 					}),
 					q(39943, {	-- The Burdens of Hunting
 						["g"] = {
@@ -389,6 +374,21 @@ _.Zones =
 							39941,	-- Control is Key
 							40063,	-- Control is Key
 						},
+					}),
+					q(39935, {	-- The Price of Power
+						["g"] = {
+							i(137741),	-- Technique: Glyph of Fel Touched Souls
+						},
+						["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },
+					}),
+					q(40057, {	-- The Price of Power
+						["g"] = {
+							i(137741),	-- Technique: Glyph of Fel Touched Souls
+						},
+						["classes"] = { 12 },
+					}),
+					q(40061, {	-- To Know Your Enemy
+						["classes"] = { 12 },
 					}),
 				}),
 				prof(JEWELCRAFTING, {
