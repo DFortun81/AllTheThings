@@ -846,7 +846,6 @@ _.Zones =
 				q(39877),	-- In the Loop
 				q(45794),	-- Informing the Council
 				q(37908),	-- Inquisitor Ernstenbok
-				q(39936),	-- Inscription of the Body
 				q(39389),	-- It Hungers for Blood
 				q(40556),	-- Jabrul Needs You
 				q(40873),	-- Keep Yer Powder Dry
@@ -865,8 +864,6 @@ _.Zones =
 				q(44873),	-- Oculeth Ex Machina
 				q(39920),	-- On Azure Wings
 				q(41164),	-- One Step Closer
-				q(40059),	-- Opposites Repel
-				q(39937),	-- Opposites Repel
 				q(40855),	-- Our Man in Azsuna
 				q(39934),	-- Our New Allies
 				q(40056),	-- Our New Allies
@@ -888,7 +885,6 @@ _.Zones =
 				q(38947),	-- Runic Catgut
 				q(43527),	-- Saving the Guard
 				q(40133),	-- Scrap of Pants
-				q(39939),	-- Scribal Knowledge
 				q(38955),	-- Sew Far, Sew Good
 				q(46795),	-- Ship - Azsuna
 				q(46808),	-- Ship - Highmountain
@@ -930,7 +926,6 @@ _.Zones =
 				q(43942),	-- Timeworn Artifact
 				q(42886),	-- To Faronaar
 				q(43489),	-- To Felblaze Ingress
-				q(40061),	-- To Know Your Enemy
 				q(42406),	-- To Tame the Beast
 				q(45027),	-- To the Broken Shore
 				q(47064),	-- Tracking Quest

@@ -346,10 +346,18 @@ _.Zones =
 						["sourceQuest"] = 40059,	-- Opposites Repel
 						["classes"] = { 12 },
 					}),
+					q(39939, {	-- Scribal Knowledge
+						["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },	-- This may not have a DH restriction
+					}),
+--					q(40061, {	-- To Know Your Enemy
+--						["classes"] = { 12 },
+--					}),
 					q(39941, {	-- Control is Key
+						["sourceQuest"] = 39939,	-- Scribal Knowledge
 						["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },
 					}),
 					q(40063, {	-- Control is Key
+--						["sourceQuest"] = 40061,	-- To Know Your Enemy
 						["classes"] = { 12 },
 					}),
 					q(39935, {	-- The Price of Power
