@@ -60,6 +60,18 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
 					}),
+					q(43054, {	-- An Ample Stockpile
+						["classes"] = { MONK },
+						["lvl"] = 103,
+						["provider"] = { "n", 98945 },	-- Lao Shu
+						["sourceQuests"] = { 41907 },	-- Appropriations
+					}),
+					q(41907, {	-- Appropriations
+						["classes"] = { MONK },
+						["lvl"] = 103,
+						["provider"] = { "n", 104744 },	-- High Elder Cloudfall
+						["sourceQuests"] = { 41733 },	-- Rebuilding the Order
+					}),
 					q(45545, {	-- Barrel Toss
 						["classes"] = { MONK },
 						["provider"] = { "n", 117305 },	-- Brewer Almai
@@ -74,6 +86,7 @@ _.ExpansionFeatures =
 					}),
 					q(41946, {	-- Building our Troops
 						["classes"] = { MONK },
+						["lvl"] = 101,
 						["provider"] = { "n", 99179 },	-- Master Hsu
 						["sourceQuests"] = { 41945 }	-- Tianji of the Ox
 					}),
@@ -101,6 +114,7 @@ _.ExpansionFeatures =
 					}),
 					q(41115, {	-- Champion: Chen Stormstout
 						["classes"] = { MONK },
+						["lvl"] = 101,
 						["provider"] = { "n", 102820 },	-- Chen Stormstout
 						["g"] = {
 							follower(596),	-- Chen Stormstout
@@ -116,6 +130,7 @@ _.ExpansionFeatures =
 					}),
 					q(40704, {	-- Champion: Li Li Stormstout
 						["classes"] = { MONK },
+						["lvl"] = 101,
 						["provider"] = { "n", 101046 },	-- Li Li Stormstout
 						["g"] = {
 							follower(588),	-- Li Li Stormstout
@@ -131,22 +146,33 @@ _.ExpansionFeatures =
 					}),
 					q(41734, {	-- Champion: Taran Zhu
 						["classes"] = { MONK },
+						["lvl"] = 103,
 						["provider"] = { "n", 104984 },	-- Taran Zhu <Lord of the Shado-Pan>
 						["g"] = {
 							follower(603),	-- Taran Zhu
 						},
+						["sourceQuests"] = { 43319 },	-- The Way of the Tiger
 					}),
 					q(41735, {	-- Champion: The Monkey King
 						["classes"] = { MONK },
+						["lvl"] = 103,
 						["provider"] = { "n", 102902 },	-- The Monkey King
 						["g"] = {
 							follower(602),	-- The Monkey King
 						},
+						["sourceQuests"] = { 43319 },	-- The Way of the Tiger
 					}),
 					q(46347, {	-- Clean-up on Aisle Sha
 						["classes"] = { MONK },
 						["provider"] = { "n", 120722 },	-- Master Bu
 						["sourceQuests"] = { 46346 },	-- The Shadow of Ban-Lu
+					}),
+					q(41730, {	-- Desperate Strike
+						["classes"] = { MONK },
+						["lvl"] = 103,
+						["provider"] = { "n", 104784 },	-- Taran Zhu
+						["sourceQuests"] = { 41728 },	-- The Defense of Tian Monastery
+						["maps"] = { 371 },	-- Jade Forest
 					}),
 					q(45574, {	-- Fel Ingredients
 						["classes"] = { MONK },
@@ -157,6 +183,12 @@ _.ExpansionFeatures =
 						["classes"] = { MONK },
 						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
+					}),
+					q(43062, {	-- Further Training
+						["classes"] = { MONK },
+						["lvl"] = 103,
+						["provider"] = { "n", 104744 },	-- High Elder Cloudfall
+						["sourceQuests"] = { 41733 },	-- Rebuilding the Order
 					}),
 					q(42186, {	-- Growing Power
 						["classes"] = { MONK },
@@ -189,18 +221,25 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 41086 },	-- A Peaceful World
 					}),
-					q(42957, {	-- Journey to the East
-						["classes"] = { MONK },
-						["lvl"] = 98,
-						["provider"] = { "n", 109049 },	-- The Monkey King
-						["sourceQuests"] = { 42766, 42767, 42768 },	-- The Riddle of the Barrel, The Riddle of the Land, The Riddle of Purity
-						["maps"] = { 376 },	-- Valley of the Four Winds
-					}),
 					q(44249, {	-- Inner Sanctuary
 						["classes"] = { MONK },
 						["g"] = {
 							i(139734),	-- Grandmaster's Crown
 						},
+					}),
+					q(40570, {	-- Into The Heavens
+						["classes"] = { MONK },
+						["lvl"] = 98,
+						["provider"] = { "n", 47684 },	-- King Phaoris
+						["sourceQuests"] = { 40634 },	-- Thunder on the Sands
+						["maps"] = { 1527 },	-- Uldum
+					}),
+					q(42957, {	-- Journey to the East
+						["classes"] = { MONK },
+						["lvl"] = 98,
+						["provider"] = { "n", 109049 },	-- The Monkey King
+						["sourceQuests"] = { 42766, 42767, 42768 },	-- The Riddle of the Barrel, The Riddle of the Land, The Riddle of Purity
+						["maps"] = { 371 },	-- Jade Forest
 					}),
 					q(46349, {	-- Lilies for Ryuli
 						["classes"] = { MONK },
@@ -217,6 +256,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
 						["sourceQuests"] = { 46320 },	-- Hope For a Cure
 					}),
+					q(40633, {	-- Off To Adventure!
+						["classes"] = { MONK },
+						["lvl"] = 98,
+						["provider"] = { "n", 100475 },	-- Li Li Stormstout
+						["sourceQuests"] = { 40569 },	-- The Legend of the Sands
+					}),
 					q(45404, {	-- Panic at the Brewery
 						["classes"] = { MONK },
 						["provider"] = { "n", 119664 },	-- Brewmaster Almai
@@ -228,6 +273,19 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 40236 },	-- The Dawning Light
 					}),
+					q(41733, {	-- Rebuilding the Order
+						["classes"] = { MONK },
+						["lvl"] = 103,
+						["provider"] = { "n", 104744 },	-- High Elder Cloudfall
+						["sourceQuests"] = { 41732 },	-- The Hand of Keletress
+						["maps"] = { 371 },	-- Jade Forest
+					}),
+					q(41905, {	-- Report from Tian Monastery
+						["classes"] = { MONK },
+						["lvl"] = 101,						
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
+						["sourceQuests"] = { 42191 } -- Tech It Up a Notch
+					}),
 					q(46342, {	-- Return to the Broken Peak
 						["classes"] = { MONK },
 						["provider"] = { "n", 120758 },	-- Master Bu
@@ -235,14 +293,23 @@ _.ExpansionFeatures =
 					}),
 					q(42187, {	-- Rise, Champions
 						["classes"] = { MONK },
+						["lvl"] = 101,
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 42186 },	-- Growing Power
 						["altQuests"] = { 44296 },
 					}),
 					q(42210, {	-- Scrolls of Knowledge
 						["classes"] = { MONK },
+						["lvl"] = 101,
 						["provider"] = { "n", 99179 },	-- Master Hsu
 						["sourceQuests"] = { 41946 },	-- Building Our Troops
+					}),
+					q(41729, {	-- Slowing the Spread
+						["classes"] = { MONK },
+						["lvl"] = 103,
+						["provider"] = { "n", 104745 },	-- Instructor Myang
+						["sourceQuests"] = { 41728 },	-- The Defense of Tian Monastery
+						["maps"] = { 371 }	-- Jade Forest
 					}),
 					q(46344, {	-- Smelly's Luckydo
 						["classes"] = { MONK },
@@ -268,10 +335,23 @@ _.ExpansionFeatures =
 							i(142062),	-- Prosperity of the Order
 						},
 					}),
+					q(41731, {	-- Storm, Earth, and Fire
+						["classes"] = { MONK },
+						["lvl"] = 103,
+						["provider"] = { "n", 104784 },	-- Taran Zhu
+						["sourceQuests"] = { 41728 },	-- The Defense of Tian Monastery
+						["maps"] = { 371 },	-- Jade Forest
+					}),
 					q(45459, {	-- Storming the Legion
 						["classes"] = { MONK },
 						["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
 						["sourceQuests"] = { 45404 },	-- Panic at the Brewery
+					}),
+					q(42191, {	-- Tech It Up A Notch
+						["classes"] = { MONK },
+						["lvl"] = 101,
+						["provider"] = { "n", 99179 },	-- Master Hsu
+						["sourceQuests"] = { 42210 },	-- Scrolls of Knowledge
 					}),
 					q(40236, {	-- The Dawning Light
 						["classes"] = { MONK },
@@ -279,25 +359,43 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 99181 },	-- Fearsome Jang
 						["sourceQuests"] = { 12103 },	-- Before The Storm
 					}),
+					q(41728, {	-- The Defense of Tian Monastery
+						["classes"] = { MONK },
+						["lvl"] = 103,
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
+						["sourceQuests"] = { 41905 },	-- Report From Tian Monastery
+					}),
 					q(41003, {	-- The Emperor's Gift
 						["classes"] = { MONK },
+						["lvl"] = 98,						
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
+						["sourceQuests"] = { 40636 },	-- Prepare To Strike
 					}),
 					q(40795, {	-- The Fight Begins
 						["classes"] = { MONK },
 						["lvl"] = 98,
 						["provider"] = { "n", 99179 },	-- Master Hsu
-						["sourceQuests"] = { 40793 },	-- A Matter of Planningq
+						["sourceQuests"] = { 40793 },	-- A Matter of Planning
+					}),
+					q(41732, {	-- The Hand of Keletress
+						["classes"] = { MONK },
+						["lvl"] = 103,
+						["provider"] = { "n", 104850 },	-- The Monkey King
+						["sourceQuests"] = { 41729, 41730, 41731 },	-- Slowing the Spread, Desperate Strike, Storm Earth and Fire
+						["maps"] = { 371 },	-- Jade Forest					
 					}),
 					q(40569, {	-- The Legend of the Sands
 						["classes"] = { MONK },
-						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu					
+						["lvl"] = 98,
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
+						["sourceQuests"] = { 40636 },	-- Prepare To Strike						
 					}),
 					q(42868, {	-- The Monkey King's Challenge
 						["classes"] = { MONK },
 						["lvl"] = 98,
 						["provider"] = { "n", 109187 },	-- The Monkey King
 						["sourceQuests"] = { 42957 },	-- Journey to the East
+						["maps"] = { 371 },	-- Jade Forest
 					}),
 					q(42768, {	-- The Riddle of Purity
 						["classes"] = { MONK },
@@ -345,6 +443,7 @@ _.ExpansionFeatures =
 						["lvl"] = 98,
 						["provider"] = { "n", 109187 },	-- The Monkey King
 						["sourceQuests"] = { 42868 },	-- The Monkey King's Challenge
+						["maps"] = { 371 },	-- Jade Forest
 					}),
 					q(46350, {	-- The Trial of Ban-Lu
 						["classes"] = { MONK },
@@ -360,17 +459,39 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 40636 },	-- Prepare To Strike
 					}),
+					q(43319, {	-- The Way of the Tiger
+						["classes"] = { MONK },
+						["lvl"] = 103,
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
+						["sourceQuests"] = { 41733 },	-- Rebuilding the Order
+					}),
 					q(44424, {	-- Three Paths, Three Weapons
 						["classes"] = { MONK },
+						["lvl"] = 102,
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
+					}),
+					q(40634, {	-- Thunder on the Sands
+						["classes"] = { MONK },
+						["lvl"] = 98,
+						["provider"] = { "n", 47684 },	-- King Phaoris
+						["sourceQuests"] = { 40633 },	-- Off To Adventure!
+						["maps"] = { 1527 },	-- Uldum
 					}),
 					q(41945, {	-- Tianji of the Ox
 						["classes"] = { MONK },
+						["lvl"] = 103,
 						["provider"] = { "n", 99179 },	-- Master Hsu
 						["sourceQuests"] = { 42187 },	-- Rise, Champions
 					}),
+					q(41909, {	-- Tracking the Tideskorn
+						["classes"] = { MONK },
+						["lvl"] = 103,
+						["provider"] = { "n", 104744 },	-- High Elder Cloudfall
+						["sourceQuests"] = { 41733 },	-- Rebuilding the Order
+					}),
 					q(43973, {	-- Two Paths, Two Weapons
 						["classes"] = { MONK },
+						["lvl"] = 102,
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 40793 },	-- A Matter of Planning
 					}),
@@ -378,36 +499,24 @@ _.ExpansionFeatures =
 					--[[
 					q(44057),	-- A "Noble" Event
 					q(43359),	-- A Hero's Weapon
-					q(43054),	-- An Ample Stockpile
 					q(45180),	-- An Island of War
 					q(46024),	-- An Urgent Warning
-					q(41907),	-- Appropriations
 					q(41854),	-- Brick By Brick
 					q(47069),	-- Delivering Lost Knowledge
 					q(45173),	-- Desperate Times
 					q(44239),	-- Echo of a Celestial
 					q(46785),	-- Further Advancement
-					q(43062),	-- Further Training
 					q(46157),	-- Furthering Knowledge
-					q(43060),	-- Highmountain Salmon
+					q(43060),	-- Highmountain Salmon (Repeatable hand in quest but always returns false for completed even when the overarching quest(41907) is completed)
 					q(46320),	-- Hope For a Cure
-					q(40570),	-- Into The Heavens
 					q(46025),	-- Investigate the Broken Shore
 					q(44238),	-- Meditations on Fate
-					q(40633),	-- Off To Adventure!
 					q(40698),	-- Purity of Form
-					q(41733),	-- Rebuilding the Order
-					q(41905),	-- Report from Tian Monastery
-					q(43061),	-- Silkweave Bandages
-					q(43058),	-- Spiced Rib Roast
-					q(42191),	-- Tech It Up A Notch
-					q(41728),	-- The Defense of Tian Monastery
-					q(41732),	-- The Hand of Keletress
+					q(43061),	-- Silkweave Bandages (Repeatable hand in quest but always returns false for completed even when the overarching quest(41907) is completed)
+					q(43058),	-- Spiced Rib Roast (Repeatable hand in quest but always returns false for completed even when the overarching quest(41907) is completed)
 					q(41849),	-- The Iron Fist
 					q(41038),	-- The Mead Master
-					q(43319),	-- The Way of the Tiger
 					q(45172),	-- To Battle!
-					q(41909),	-- Tracking the Tideskorn
 					q(45179),	-- Win the Crowd
 					--]]
 					--[[ Artifact Appearance  Quests Commented Out For Now
@@ -415,16 +524,6 @@ _.ExpansionFeatures =
 						sp(219663) -- Heroic Weapons [No item associated]
 					}),
 					--]]
-	--[[ These quests moved here from Uldum. Organize later plz?
-						q(40570, {	-- Into The Heavens
-							["provider"] = { "n", 47684 },	-- King Phaoris
-							["classes"] = {10},
-						}),
-						q(40634, {	-- Thunder on the Sands
-							["provider"] = { "n", 47684 },	-- King Phaoris
-							["classes"] = {10},
-						}),
-	--]]
 				}),
 				n(99041, {	-- Scouting Map
 					["g"] = {

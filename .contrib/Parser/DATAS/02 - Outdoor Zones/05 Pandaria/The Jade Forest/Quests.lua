@@ -1063,18 +1063,11 @@ _.Zones =
 					["provider"] = { "n", 59550 },	-- Sully "The Pickle" McLeary
 					["races"] = ALLIANCE_ONLY,
 				}),
-
 				q(29901, {	-- Anduin's Decision
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 29900, 29899 },	-- An Ancient Legend, Rest in Peace
 					["description"] = "Automatically given when prequisites have been fulfilled.",
 				}),
-				q(41907, {	-- Appropriations
-					["provider"] = { "n", 104744 },	-- High Elder Cloudfall
-					["classes"] = { 10 },
-				}),
-
-
 				q(30567, {	-- Blanche's Boomer Brew
 					-- not available until lvl 90?
 					["provider"] = { "n", 59569 },	-- Brewmaster Blanche
@@ -1106,11 +1099,6 @@ _.Zones =
 				q(31701, {	-- Dark Huntress
 					["provider"] = { "n", 56564 },	-- Elder Anli
 					["isDaily"] = true,
-				}),
-				q(41730, {	-- Desperate Strike
-					["provider"] = { "n", 104784 },	-- Taran Zhu
-					["sourceQuests"] = { 41728 },	-- The Defense of Tian Monastery
-					["classes"] = { 10 },
 				}),
 				q(30158, {	-- Disarming the Enemy
 					["sourceQuests"] = { 30142 },	-- It's A...
@@ -1205,10 +1193,6 @@ _.Zones =
 				q(30147, {	-- Fragments of the Past
 					["provider"] = { "n", 58413 },	-- Jenova Longeye
 					["isDaily"] = true,
-				}),
-				q(43062, {	-- Further Training
-					["provider"] = { "n", 104744 },	-- High Elder Cloudfall
-					["classes"] = { 10 },
 				}),
 				q(30498, {	-- Get Back Here!
 					-- horde equivalent is a breadcrumb, so this almost certainly is too
@@ -1320,11 +1304,6 @@ _.Zones =
 					["provider"] = { "n", 58510 },	-- Suchi the Sweet
 					["isDaily"] = true,
 				}),
-				q(41733, {	-- Rebuilding the Order
-					["provider"] = { "n", 104744 },	-- High Elder Cloudfall
-					["sourceQuests"] = { 41732 },	-- The Hand of Keletress
-					["classes"] = { 10 },
-				}),
 				q(29899, {	-- Rest in Peace
 					["provider"] = { "n", 56432 },	-- Ren Whitepaw
 					["races"] = ALLIANCE_ONLY,
@@ -1368,11 +1347,6 @@ _.Zones =
 					["coord"] = { 57.5, 45.1, 371 },
 					["isDaily"] = true,
 				}),
-				q(41729, {	-- Slowing the Spread
-					["provider"] = { "n", 104745 },	-- Instructor Myang
-					["sourceQuests"] = { 41728 },	-- The Defense of Tian Monastery
-					["classes"] = { 10 },
-				}),
 				q(30146, {	-- Snack Time
 					["provider"] = { "n", 58413 },	-- Jenova Longeye
 					["isDaily"] = true,
@@ -1386,11 +1360,6 @@ _.Zones =
 					["provider"] = { "n", 56065 },	-- Inkmaster Wei
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
-				}),
-				q(41731, {	-- Storm, Earth, and Fire
-					["provider"] = { "n", 104784 },	-- Taran Zhu
-					["sourceQuests"] = { 41728 },	-- The Defense of Tian Monastery
-					["classes"] = { 10 },
 				}),
 				q(30150, {	-- Sweet as Honey
 					["providers"] = {
@@ -1426,10 +1395,6 @@ _.Zones =
 					["provider"] = { "n", 58564 },	-- Elder Anli
 					["isDaily"] = true,
 				}),
-				q(41728, {	-- The Defense of Tian Monastery
-					["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
-					["classes"] = { 10 },
-				}),
 				q(30154, {	-- The Easiest Way To A Serpent's Heart
 					["providers"] = {
 						{ "n", 65669 },	-- Your Hatchling
@@ -1443,11 +1408,6 @@ _.Zones =
 						{ "n", 65724 },	-- Azure Hatchling
 					},
 					["isDaily"] = true,
-				}),
-				q(41732, {	-- The Hand of Keletress
-					["provider"] = { "n", 104850 },	-- The Monkey King
-					["sourceQuests"] = { 41729, 41730, 41731 },	-- Slowing the Spread, Desperate Strike, Storm Earth and Fire
-					["classes"] = { 10 },
 				}),
 				q(31876, {	-- The Inkmasters of the Arboretum
 					["provider"] = { "n", 64691 },	-- Lorewalker Huynh
@@ -1516,10 +1476,6 @@ _.Zones =
 				q(31698, {	-- Thinning The Pack
 					["provider"] = { "n", 58228 },	-- Instructor Skythorn
 					["isDaily"] = true,
-				}),
-				q(41909, {	-- Tracking the Tideskorn
-					["provider"] = { "n", 104744 },	-- High Elder Cloudfall
-					["classes"] = { 10 },
 				}),
 				q(31613, {	-- Volatile Greenstone Brew
 					-- this wasn't available at lvl 88. Possibly only available at level 90+?
