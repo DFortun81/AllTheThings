@@ -318,16 +318,32 @@ _.Zones =
 					}),
 				}),
 				prof(INSCRIPTION, {
+					q(39936, {	-- Inscription of the Body
+						["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },
+					}),
+					q(40058, {	-- Inscription of the Body
+						["classes"] = { 12 },
+					}),
+					q(39937, {	-- Opposites Repel
+						["sourceQuest"] = 39936,	-- Inscription of the Body
+						["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },
+					}),
+					q(40059, {	-- Opposites Repel
+						["sourceQuest"] = 40058,	-- Inscription of the Body
+						["classes"] = { 12 },
+					}),
 					q(39938, {	-- Containing the Demon Within
 						["g"] = {
 							i(137743),	-- Technique: Glyph of Fallow Wings
 						},
+						["sourceQuest"] = 39937,	-- Opposites Repel
 						["classes"] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 },
 					}),
 					q(40060, {	-- Containing the Demon Within
 						["g"] = {
 							i(137743),	-- Technique: Glyph of Fallow Wings
 						},
+						["sourceQuest"] = 40059,	-- Opposites Repel
 						["classes"] = { 12 },
 					}),
 					q(39941, {	-- Control is Key
