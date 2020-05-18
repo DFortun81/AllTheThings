@@ -72,6 +72,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 98519 },	-- Initiate Da-Nel
 						["maps"] = { 627 },	-- Dalaran
 					}),
+					q(41946, {	-- Building our Troops
+						["classes"] = { MONK },
+						["provider"] = { "n", 99179 },	-- Master Hsu
+						["sourceQuests"] = { 41945 }	-- Tianji of the Ox
+					}),
 					q(41739, {	-- Champion: Aegira
 						["classes"] = { MONK },
 						["provider"] = { "n", 105226 },	-- Aegira <Brewmaster>
@@ -100,6 +105,7 @@ _.ExpansionFeatures =
 						["g"] = {
 							follower(596),	-- Chen Stormstout
 						},
+						["sourceQuests"] = { 42187 },	-- Rise, Champions
 					}),
 					q(41737, {	-- Champion: Hiro
 						["classes"] = { MONK },
@@ -114,6 +120,7 @@ _.ExpansionFeatures =
 						["g"] = {
 							follower(588),	-- Li Li Stormstout
 						},
+						["sourceQuests"] = { 42187 },	-- Rise, Champions
 					}),
 					q(41738, {	-- Champion: Sylara Steelsong
 						["classes"] = { MONK },
@@ -226,6 +233,17 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 120758 },	-- Master Bu
 						["sourceQuests"] = { 46341 },	-- The Tale of Ban-Lu
 					}),
+					q(42187, {	-- Rise, Champions
+						["classes"] = { MONK },
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
+						["sourceQuests"] = { 42186 },	-- Growing Power
+						["altQuests"] = { 44296 },
+					}),
+					q(42210, {	-- Scrolls of Knowledge
+						["classes"] = { MONK },
+						["provider"] = { "n", 99179 },	-- Master Hsu
+						["sourceQuests"] = { 41946 },	-- Building Our Troops
+					}),
 					q(46344, {	-- Smelly's Luckydo
 						["classes"] = { MONK },
 						["provider"] = { "n", 120744 },	-- Smelly Mountaintop
@@ -261,11 +279,19 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 99181 },	-- Fearsome Jang
 						["sourceQuests"] = { 12103 },	-- Before The Storm
 					}),
+					q(41003, {	-- The Emperor's Gift
+						["classes"] = { MONK },
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
+					}),
 					q(40795, {	-- The Fight Begins
 						["classes"] = { MONK },
 						["lvl"] = 98,
 						["provider"] = { "n", 99179 },	-- Master Hsu
 						["sourceQuests"] = { 40793 },	-- A Matter of Planningq
+					}),
+					q(40569, {	-- The Legend of the Sands
+						["classes"] = { MONK },
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu					
 					}),
 					q(42868, {	-- The Monkey King's Challenge
 						["classes"] = { MONK },
@@ -334,7 +360,21 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 40636 },	-- Prepare To Strike
 					}),
-
+					q(44424, {	-- Three Paths, Three Weapons
+						["classes"] = { MONK },
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
+					}),
+					q(41945, {	-- Tianji of the Ox
+						["classes"] = { MONK },
+						["provider"] = { "n", 99179 },	-- Master Hsu
+						["sourceQuests"] = { 42187 },	-- Rise, Champions
+					}),
+					q(43973, {	-- Two Paths, Two Weapons
+						["classes"] = { MONK },
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
+						["sourceQuests"] = { 40793 },	-- A Matter of Planning
+					}),
+					
 					--[[
 					q(44057),	-- A "Noble" Event
 					q(43359),	-- A Hero's Weapon
@@ -343,7 +383,6 @@ _.ExpansionFeatures =
 					q(46024),	-- An Urgent Warning
 					q(41907),	-- Appropriations
 					q(41854),	-- Brick By Brick
-					q(41946),	-- Building Our Troops
 					q(47069),	-- Delivering Lost Knowledge
 					q(45173),	-- Desperate Times
 					q(44239),	-- Echo of a Celestial
@@ -359,23 +398,16 @@ _.ExpansionFeatures =
 					q(40698),	-- Purity of Form
 					q(41733),	-- Rebuilding the Order
 					q(41905),	-- Report from Tian Monastery
-					q(42187),	-- Rise, Champions
-					q(42210),	-- Scrolls of Knowledge
 					q(43061),	-- Silkweave Bandages
 					q(43058),	-- Spiced Rib Roast
 					q(42191),	-- Tech It Up A Notch
 					q(41728),	-- The Defense of Tian Monastery
-					q(41003),	-- The Emperor's Gift
 					q(41732),	-- The Hand of Keletress
 					q(41849),	-- The Iron Fist
-					q(40569),	-- The Legend of the Sands
 					q(41038),	-- The Mead Master
 					q(43319),	-- The Way of the Tiger
-					q(44424),	-- Three Paths, Three Weapons
-					q(41945),	-- Tianji of the Ox
 					q(45172),	-- To Battle!
 					q(41909),	-- Tracking the Tideskorn
-					q(43973),	-- Two Paths, Two Weapons
 					q(45179),	-- Win the Crowd
 					--]]
 					--[[ Artifact Appearance  Quests Commented Out For Now
