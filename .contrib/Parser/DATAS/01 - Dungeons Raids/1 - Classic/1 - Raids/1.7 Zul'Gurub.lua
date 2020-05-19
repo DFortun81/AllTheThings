@@ -20,6 +20,7 @@ _.Instances = { tier(1, {	-- Classic
 							q(8192, {	-- Animist's Caress [Druid]
 								["u"] = 40,	-- Legacy Quest
 								["qg"] = 15042,		-- Zanza the Restless
+								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19821, 1 },	-- Punctured Voodoo Doll [Druid]
@@ -108,6 +109,7 @@ _.Instances = { tier(1, {	-- Classic
 							q(8187, {	-- Falcon's Call [Hunter]
 								["u"] = 40,	-- Legacy Quest
 								["qg"] = 15042,		-- Zanza the Restless
+								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19816, 1 },	-- Punctured Voodoo Doll [Hunter]
@@ -196,6 +198,7 @@ _.Instances = { tier(1, {	-- Classic
 							q(8189, {	-- Presence of Sight [Mage]
 								["u"] = 40,	-- Legacy Quest
 								["qg"] = 15042,		-- Zanza the Restless
+								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19818, 1 },	-- Punctured Voodoo Doll [Mage]
@@ -284,6 +287,7 @@ _.Instances = { tier(1, {	-- Classic
 							q(8185, {	-- Syncretist's Sigil [Paladin]
 								["u"] = 40,	-- Legacy Quest
 								["qg"] = 15042,		-- Zanza the Restless
+								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19815, 1 },	-- Punctured Voodoo Doll [Paladin]
@@ -372,6 +376,7 @@ _.Instances = { tier(1, {	-- Classic
 							q(8191, {	-- Prophetic Aura [Priest]
 								["u"] = 40,	-- Legacy Quest
 								["qg"] = 15042,		-- Zanza the Restless
+								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19820, 1 },	-- Punctured Voodoo Doll [Priest]
@@ -460,6 +465,7 @@ _.Instances = { tier(1, {	-- Classic
 							q(8186, {	-- Death's Embrace [Rogue]
 								["u"] = 40,	-- Legacy Quest
 								["qg"] = 15042,		-- Zanza the Restless
+								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19814, 1 },	-- Punctured Voodoo Doll [Rogue]
@@ -548,6 +554,7 @@ _.Instances = { tier(1, {	-- Classic
 							q(8188, {	-- Vodouisant's Vigilant Embrace [Shaman]
 								["u"] = 40,	-- Legacy Quest
 								["qg"] = 15042,		-- Zanza the Restless
+								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19817, 1 },	-- Punctured Voodoo Doll [Shaman]
@@ -636,6 +643,7 @@ _.Instances = { tier(1, {	-- Classic
 							q(8190, {	-- Hoodoo Hex [Warlock]
 								["u"] = 40,	-- Legacy Quest
 								["qg"] = 15042,		-- Zanza the Restless
+								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19819, 1 },	-- Punctured Voodoo Doll [Warlock]
@@ -724,6 +732,7 @@ _.Instances = { tier(1, {	-- Classic
 							q(8184, {	-- Presence of Might [Warrior]
 								["u"] = 40,	-- Legacy Quest
 								["qg"] = 15042,		-- Zanza the Restless
+								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19813, 1 },	-- Punctured Voodoo Doll [Warrior]
