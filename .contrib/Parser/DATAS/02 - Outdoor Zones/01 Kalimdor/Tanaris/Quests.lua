@@ -945,33 +945,6 @@ _.Zones =
 					["coord"] = { 41.5, 38.5, 71 },
 					["sourceQuest"] = 10279,	-- To The Master's Lair
 				}),
-				q(8766,  {	-- The Changing of Paths - Conqueror No More
-					["minReputation"] = { 910, EXALTED },
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["repeatable"] = true,
-					["g"] = {
-						i(21200),	-- Signet Ring of the Bronze Dragonflight
-						i(21210),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8765,  {	-- The Changing of Paths - Invoker No More
-					["minReputation"] = { 910, EXALTED },
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["repeatable"] = true,
-					["g"] = {
-						i(21200),	-- Signet Ring of the Bronze Dragonflight
-						i(21205),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8764,  {	-- The Changing of Paths - Protector No More
-					["minReputation"] = { 910, EXALTED },
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["repeatable"] = true,
-					["g"] = {
-						i(21210),	-- Signet Ring of the Bronze Dragonflight
-						i(21205),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
 				q(25068, {	-- The Crumbling Past
 					["provider"] = { "n", 38922 },	-- Examiner Andoren Dawnrise
 					["coord"] = { 33.2, 77.0, 71 },
@@ -992,15 +965,6 @@ _.Zones =
 					["sourceQuest"] = 8923,	-- A Supernatural Device
 					["lvl"] = 58,
 					["u"] = 40,
-				}),
-				q(8761,  {	-- The Grand Invoker
-					["minReputation"] = { 910, EXALTED },
-					["isBreadcrumb"] = true,	-- Exalted Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["sourceQuest"] = 8760,	-- The Path of the Invoker
-					["g"] = {
-						i(21210),	-- Signet Ring of the Bronze Dragonflight
-					},
 				}),
 				q(25421, {	-- The Grand Tablet (A)
 					["coord"] = { 37.8, 82.4, 71 },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
@@ -1039,130 +1003,10 @@ _.Zones =
 						un(2, i(7986)),	-- Plans: Ornate Mithril Breastplate
 					},
 				}),
-				q(8754,  {	-- The Path of the Conqueror
-					["minReputation"] = { 910, HONORED },
-					["isBreadcrumb"] = true,	-- Honored Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["sourceQuest"] = 8753,	-- The Path of the Conquerer
-					["g"] = {
-						i(21203),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8755,  {	-- The Path of the Conqueror
-					["minReputation"] = { 910, REVERED },
-					["isBreadcrumb"] = true,	-- Revered Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["sourceQuest"] = 8754,	-- The Path of the Conquerer
-					["g"] = {
-						i(21204),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8753,  {	-- The Path of the Conqueror
-					["minReputation"] = { 910, FRIENDLY },
-					["isBreadcrumb"] = true,	-- Friendly Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["sourceQuest"] = 8752,	-- The Path of the Conquerer
-					["g"] = {
-						i(21202),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8752,  {	-- The Path of the Conqueror
-					["minReputation"] = { 910, NEUTRAL },
-					["isBreadcrumb"] = true,	-- Neutral Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["g"] = {
-						i(21201),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8760,  {	-- The Path of the Invoker
-					["minReputation"] = { 910, REVERED },
-					["isBreadcrumb"] = true,	-- Revered Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["sourceQuest"] = 8759,	-- The Path of the Invoker
-					["g"] = {
-						i(21209),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8759,  {	-- The Path of the Invoker
-					["minReputation"] = { 910, HONORED },
-					["isBreadcrumb"] = true,	-- Honored Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["sourceQuest"] = 8758,	-- The Path of the Invoker
-					["g"] = {
-						i(21208),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8758,  {	-- The Path of the Invoker
-					["minReputation"] = { 910, FRIENDLY },
-					["isBreadcrumb"] = true,	-- Friendly Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["sourceQuest"] = 8757,	-- The Path of the Invoker
-					["g"] = {
-						i(21207),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8757,  {	-- The Path of the Invoker
-					["minReputation"] = { 910, NEUTRAL },
-					["isBreadcrumb"] = true,	-- Neutral Intellect User Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["g"] = {
-						i(21206),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8747,  {	-- The Path of the Protector
-					["minReputation"] = { 910, NEUTRAL },
-					["isBreadcrumb"] = true,	-- Neutral Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["g"] = {
-						i(21196),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8748,  {	-- The Path of the Protector
-					["minReputation"] = { 910, FRIENDLY },
-					["isBreadcrumb"] = true,	-- Friendly Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["sourceQuest"] = 8747,	-- The Path of the Protector
-					["g"] = {
-						i(21197),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8749,  {	-- The Path of the Protector
-					["minReputation"] = { 910, HONORED },
-					["isBreadcrumb"] = true,	-- Honored Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["sourceQuest"] = 8748,	-- The Path of the Protector
-					["g"] = {
-						i(21198),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8750,  {	-- The Path of the Protector
-					["minReputation"] = { 910, REVERED },
-					["isBreadcrumb"] = true,	-- Revered Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["sourceQuest"] = 8749,	-- The Path of the Protector
-					["g"] = {
-						i(21199),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
 				q(3527, {	-- The Prophecy of Mosh'aru
 					["u"] = 40,
 					["provider"] = { "n", 8579 },	-- Yeh'kinya
 					["sourceQuest"] = 3520,	-- Screecher Spirits
-				}),
-				q(8751,  {	-- The Protector of Kalimdor
-					["minReputation"] = { 910, EXALTED },
-					["isBreadcrumb"] = true,	-- Exalted Strength Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["sourceQuest"] = 8750,	-- The Path of the Protector
-					["g"] = {
-						i(21200),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8756,  {	-- The Qiraji Conqueror
-					["minReputation"] = { 910, EXALTED },
-					["provider"] = { "n", 15192 },	-- Anachronos
-					["isBreadcrumb"] = true,	-- Exalted Agility User Ring. Only 1 out of 3 Quests per reputation level can be done.
-					["sourceQuest"] = 8755,	-- The Path of the Conqueror
 				}),
 				q(10,    {	-- The Scrimshank Redemption
 					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
