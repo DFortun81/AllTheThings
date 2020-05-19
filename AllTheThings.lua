@@ -8199,7 +8199,7 @@ local function CreateMiniListForGroup(group)
                 if searchResults and #searchResults > 1 then
                     for i=1,#searchResults,1 do
                         local searchResult = searchResults[i];
-                        if searchResult.sourceQuests then
+                        if searchResult.questID == questID and searchResult.sourceQuests then
                             searchResult = CloneData(searchResult);
                             searchResult.collectible = true;
                             searchResult.g = g;
@@ -8224,24 +8224,29 @@ local function CreateMiniListForGroup(group)
 							for i=1,#sourceQuest,1 do
 								-- Only care about the first search result.
 								local sq = sourceQuest[i];
-								if sq.parent and sq.parent.questID == sq.questID then
-									sq = sq.parent;
-								end
-								if sq and app.GroupFilter(sq) and not sq.isBreadcrumb then
-									if sq.altQuestID then
-										-- Alt Quest IDs are always Horde.
-										if app.FactionID == Enum.FlightPathFaction.Horde then
-											if sq.altQuestID == sourceQuestID then
-												found = sq;
-												break;
+								if sq and sq.questID then
+									if sq.parent and sq.parent.questID == sq.questID then
+										sq = sq.parent;
+									end
+									if app.GroupFilter(sq) and not sq.isBreadcrumb then
+										if sq.altQuestID then
+											-- Alt Quest IDs are always Horde.
+											if app.FactionID == Enum.FlightPathFaction.Horde then
+												if sq.altQuestID == sourceQuestID then
+													if not found or (not found.sourceQuests and sq.sourceQuests) then
+														found = sq;
+													end
+												end
+											elseif sq.questID == sourceQuestID then
+												if not found or (not found.sourceQuests and sq.sourceQuests) then
+													found = sq;
+												end
 											end
-										elseif sq.questID == sourceQuestID then
-											found = sq;
-											break;
+										elseif app.RecursiveClassAndRaceFilter(sq) then
+											if not found or (not found.sourceQuests and sq.sourceQuests) then
+												found = sq;
+											end
 										end
-									elseif app.RecursiveClassAndRaceFilter(sq) then
-										found = sq;
-										break;
 									end
 								end
 							end
@@ -8277,27 +8282,15 @@ local function CreateMiniListForGroup(group)
 						for sourceQuestID,i in pairs(subSourceQuests) do
 							tinsert(sourceQuests, tonumber(sourceQuestID));
 						end
-						
-						-- Insert the header for the source quest
-						if #prereqs > 0 then
-							tinsert(prereqs, {
-								["text"] = "Upon Completion",
-								["description"] = "The above quests need to be completed before being able to complete the things listed below.",
-								["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
-								["visible"] = true,
-								["expanded"] = true,
-								["g"] = g,
-								["hideText"] = true
-							});
-						else
-							local prereq = prereqs[1];
-							if prereq.g then
-								for i,group in ipairs(prereq.g) do
-									tinsert(g, 1, group);
-								end
-							end
-							prereq["g"] = g;
-						end
+						tinsert(prereqs, {
+							["text"] = "Upon Completion",
+							["description"] = "The above quests need to be completed before being able to complete the things listed below.",
+							["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
+							["visible"] = true,
+							["expanded"] = true,
+							["g"] = g,
+							["hideText"] = true
+						});
 						g = prereqs;
 						breakafter = breakafter + 1;
 						if breakafter >= 100 then
@@ -8339,30 +8332,23 @@ local function CreateMiniListForGroup(group)
 				-- Clean up standalone "Upon Completion" headers.
 				prereqs = g;
 				repeat
-					local orig = prereqs;
-					if #orig == 2 then
-						prereqs = orig[1].g;
-						if not prereqs or #prereqs < 1 then
-							prereqs = orig[2].g;
-							if orig[2].text == "Upon Completion" then
-								orig[1].g = prereqs;
-								table.remove(orig, 2);
-							end
-						else
-							sourceQuests = orig[2].g;
-							if sourceQuests then
-								table.remove(orig, 2);
-								if #sourceQuests == 2 then
-									sourceQuests[1].g = sourceQuests[2].g;
-									table.remove(sourceQuests, 2);
-								end
-								for i,sourceQuest in ipairs(sourceQuests) do
-									table.insert(prereqs, sourceQuest);
-								end
+					local n = #prereqs;
+					local lastprereq = prereqs[n];
+					if lastprereq.text == "Upon Completion" and n > 1 then
+						table.remove(prereqs, n);
+						local g = prereqs[n-1].g;
+						if not g then
+							g = {};
+							prereqs[n-1].g = g;
+						end
+						if lastprereq.g then
+							for i,data in ipairs(lastprereq.g) do
+								table.insert(g, data);
 							end
 						end
+						prereqs = g;
 					else
-						prereqs = orig[#orig].g;
+						prereqs = lastprereq.g;
 					end
 				until not prereqs or #prereqs < 1;
 			end
