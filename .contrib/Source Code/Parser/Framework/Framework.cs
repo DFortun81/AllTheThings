@@ -214,6 +214,110 @@ namespace ATT
                 foreach (var qg in qgs) NPCS_WITH_REFERENCES[Convert.ToInt32(qg)] = true;
             }
 
+
+            // Check to see what patch this data was made relevant for.
+            if (data.TryGetValue("timeline", out object timelineRef) && !data.ContainsKey("u") && timelineRef is List<object> timeline)
+            {
+                // 2.0.1 or older items.
+                int removed = 0;
+                var index = 0;
+                long firstVersion = 0;
+                long lastVersion = 0;
+                foreach (var entry in timeline)
+                {
+                    var commandSplit = Convert.ToString(entry).Split(' ');
+                    var version = commandSplit[1].Split('.').ConvertVersion();
+                    if (version > lastVersion) lastVersion = version;
+                    switch (commandSplit[0])
+                    {
+                        case "created":
+                            {
+                                removed = 1;
+                                break;
+                            }
+                        case "added":
+                            {
+                                // If this is the first patch the thing was added.
+                                if (index == 0)
+                                {
+                                    firstVersion = version;
+                                    if (CURRENT_VERSION < version) removed = 1;
+                                }
+                                else
+                                {
+                                    if (CURRENT_VERSION >= version) removed = 0;
+                                }
+                                break;
+                            }
+                        case "deleted":
+                            {
+                                if (CURRENT_VERSION >= version) removed = 4;
+                                break;
+                            }
+                        case "removed":
+                            {
+                                if (CURRENT_VERSION >= version) removed = 2;
+                                break;
+                            }
+                        case "blackmarket":
+                            {
+                                if (CURRENT_VERSION >= version) removed = 3;
+                                break;
+                            }
+                    }
+                    ++index;
+                }
+                if (removed > 0)
+                {
+                    if (removed == 3)
+                    {
+                        // Black Market
+                        data["u"] = 9;
+                    }
+                    else if (removed == 1)
+                    {
+                        // Never Implemented
+                        data["u"] = 1;
+                    }
+                    else if (removed == 4)
+                    {
+                        // Never Implemented
+                        data["u"] = 1;
+#if RETAIL
+                        // Merge all relevant Item Data into the data container.
+                        Items.Merge(data);
+                        Items.MergeInto(data);
+                        Objects.AssignFactionID(data);
+                        return false;
+#endif
+
+                    }
+                    else
+                    {
+#if CLASSIC
+                        data["u"] = 2;  // Removed From Game
+#else
+                        if (data.TryGetValue("b", out int b))
+                        {
+                            switch (b)
+                            {
+                                case 1:
+                                    data["u"] = 2;  // Removed From Game
+                                    break;
+                                default:
+                                    data["u"] = 7;  // Legacy BOE Removed (TODO: Deprecate this.)
+                                    break;
+                            }
+                        }
+                        else
+                        {
+                            data["u"] = 7;  // Legacy BOE Removed (TODO: Deprecate this.)
+                        }
+#endif
+                    }
+                }
+            }
+
             // Cache whether or not this entry had an explicit spellID assignment already.
             bool hasSpellID = data.ContainsKey("spellID");
 
@@ -309,96 +413,6 @@ namespace ATT
                         break;
                     default:
                         break;
-                }
-            }
-
-            // Check to see what patch this data was made relevant for.
-            if (data.TryGetValue("timeline", out object timelineRef) && !data.ContainsKey("u") && timelineRef is List<object> timeline)
-            {
-                // 2.0.1 or older items.
-                int removed = 0;
-                var index = 0;
-                long firstVersion = 0;
-                long lastVersion = 0;
-                foreach (var entry in timeline)
-                {
-                    var commandSplit = Convert.ToString(entry).Split(' ');
-                    var version = commandSplit[1].Split('.').ConvertVersion();
-                    if (version > lastVersion) lastVersion = version;
-                    switch (commandSplit[0])
-                    {
-                        case "created":
-                            {
-                                removed = 1;
-                                break;
-                            }
-                        case "added":
-                            {
-                                // If this is the first patch the thing was added.
-                                if (index == 0)
-                                {
-                                    firstVersion = version;
-                                    if (CURRENT_VERSION < version) removed = 1;
-                                }
-                                else
-                                {
-                                    if (CURRENT_VERSION >= version) removed = 0;
-                                }
-                                break;
-                            }
-                        case "deleted":
-                            {
-                                if (CURRENT_VERSION >= version) removed = 1;
-                                break;
-                            }
-                        case "removed":
-                            {
-                                if (CURRENT_VERSION >= version) removed = 2;
-                                break;
-                            }
-                        case "blackmarket":
-                            {
-                                if (CURRENT_VERSION >= version) removed = 3;
-                                break;
-                            }
-                    }
-                    ++index;
-                }
-                if (removed > 0)
-                {
-                    if (removed == 3)
-                    {
-                        // Black Market
-                        data["u"] = 9;
-                    }
-                    else if (removed == 1)
-                    {
-                        // Never Implemented
-                        data["u"] = 1;
-                    }
-                    else
-                    {
-#if CLASSIC
-                        data["u"] = 2;  // Removed From Game
-#else
-                        if(data.TryGetValue("b", out int b))
-                        {
-                            switch (b)
-                            {
-                                case 1:
-                                    data["u"] = 2;  // Removed From Game
-                                    break;
-                                default:
-                                    data["u"] = 7;  // Legacy BOE Removed (TODO: Deprecate this.)
-                                    break;
-                            }
-                        }
-                        else
-                        {
-                            data["u"] = 7;  // Legacy BOE Removed (TODO: Deprecate this.)
-                        }
-#endif
-                    }
                 }
             }
 
