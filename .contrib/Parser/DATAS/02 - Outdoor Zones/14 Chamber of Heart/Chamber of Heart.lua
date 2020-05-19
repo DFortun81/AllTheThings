@@ -713,7 +713,7 @@ _.Zones =
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57396,	-- Reconstructing "Fear and Flesh"
-							["cost"] = { { "i", 174783, 6 } },	-- Torn Page of "Fear and Flesh"
+							["cost"] = { { "i", 174783, 4 } },	-- Torn Page of "Fear and Flesh"
 							["g"] = {
 								i(171354),	-- Horrific Core
 							},
@@ -723,7 +723,7 @@ _.Zones =
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57403,	-- Reconstructing "Fear and Flesh"
-							["cost"] = { { "i", 174783, 8 } },	-- Torn Page of "Fear and Flesh"
+							["cost"] = { { "i", 174783, 4 } },	-- Torn Page of "Fear and Flesh"
 							["g"] = {
 								i(171354),	-- Horrific Core
 							},
@@ -746,7 +746,7 @@ _.Zones =
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57398,	-- Walking in the Darkness
-							["cost"] = { { "i", 174785, 4 } },	-- Torn Page of "The Final Truth"
+							["cost"] = { { "i", 174785, 2 } },	-- Torn Page of "The Final Truth"
 							["g"] = {
 								i(171355),	-- Voidborn Core
 							},
@@ -756,7 +756,7 @@ _.Zones =
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57399,	-- Reconstructing "The Final Truth" (Rank 13)
-							["cost"] = { { "i", 174785, 6 } },	-- Torn Page of "The Final Truth"
+							["cost"] = { { "i", 174785, 2 } },	-- Torn Page of "The Final Truth"
 							["g"] = {
 								i(171355),	-- Voidborn Core
 							},
@@ -766,7 +766,7 @@ _.Zones =
 							["coord"] = { 46.1, 64.0, 1473 },
 							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57400,	-- Reconstructing "The Final Truth"  (Rank 14)
-							["cost"] = { { "i", 174785, 8 } },	-- Torn Page of "The Final Truth"
+							["cost"] = { { "i", 174785, 2 } },	-- Torn Page of "The Final Truth"
 							["g"] = {
 								i(171355),	-- Voidborn Core
 							},
