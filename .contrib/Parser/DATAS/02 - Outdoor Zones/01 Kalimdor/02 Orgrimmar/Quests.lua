@@ -1593,7 +1593,7 @@ _.Zones =
 					["provider"] = { "n", 4485 },	-- Belgrom Rockmaul
 				}),
 				q(25275, {	-- Report to the Labor Captain
-					["provider"] = { "n", 14720 },	-- High Overlord Saurfang
+					["provider"] = { "n", 3144 },	-- Eitrigg
 					["coord"] = { 48.6, 71.0, 85 },
 					["races"] = { GOBLIN },
 					["lvl"] = 10,
