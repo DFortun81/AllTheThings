@@ -4,6 +4,7 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
+		["icon"] = "Interface\\Icons\\achievement_general",
 		["groups"] = {
 			{	-- Contest Winner's Tabard
 				["itemID"] = 19160,	-- Contest Winner's Tabard
@@ -11,6 +12,5 @@ _.WorldEvents =
 				["u"] = 3,
 			},
 		},
-		["icon"] = "Interface\\Icons\\achievement_general",
 	}),
 };
