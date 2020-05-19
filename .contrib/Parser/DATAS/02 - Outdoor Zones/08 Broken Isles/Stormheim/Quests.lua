@@ -1254,7 +1254,6 @@ _.Zones =
 				q(40404),	-- Show Legion Portal
 				q(41787),	-- Someone Else's Mess
 				q(42194),	-- Stolen Honor
-				q(41039),	-- Stolen Knowledge
 				q(40131),	-- Stonehide Leather Sample
 				q(42651),	-- Svergan's Promise
 				q(41163),	-- The Apocalypse Bringer
@@ -1265,8 +1264,6 @@ _.Zones =
 				q(45999),	-- The Legion Assault
 				q(46002),	-- The Legion Assault - Viewed
 				q(40608),	-- The Mark
-				q(41850),	-- The Master of Swords
-				q(41038),	-- The Mead Master
 				q(38685),	-- The Nameless King
 				q(44775),	-- The Peak of Bones
 				q(41168),	-- The Purple Hills of Mac'Aree

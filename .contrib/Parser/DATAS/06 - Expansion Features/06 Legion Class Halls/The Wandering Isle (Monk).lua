@@ -37,8 +37,10 @@ _.ExpansionFeatures =
 					}),
 					q(41086, {	-- A Peaceful World
 						["classes"] = { MONK },
+						["lvl"] = 110,
 						["provider"] = { "n", 102820 },	-- Chen Stormstout
 						["coord"] = { 55.2, 57, 709 },
+						["sourceQuests"] = { 41039 }	-- Stolen Knowledge
 					}),
 					q(40793, {	-- A Matter of Planning
 						["classes"] = { MONK },
@@ -57,8 +59,10 @@ _.ExpansionFeatures =
 					}),
 					q(41911, {	-- Amaranthine Hops
 						["classes"] = { MONK },
+						["lvl"] = 110,
 						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
+						["maps"] = { 634 }	-- Stormheim
 					}),
 					q(43054, {	-- An Ample Stockpile
 						["classes"] = { MONK },
@@ -83,6 +87,17 @@ _.ExpansionFeatures =
 						["lvl"] = 98,
 						["provider"] = { "n", 98519 },	-- Initiate Da-Nel
 						["maps"] = { 627 },	-- Dalaran
+					}),
+					q(41854, {	-- Brick by Brick
+						["classes"] = { MONK },
+						["lvl"] = 110,
+						["provider"] = { "n", 105152 },	-- Hiro
+						["sourceQuests"] = {
+							41851,	-- Quelling the Tide
+							41852,	-- No Monk Left Behind
+							41853,	-- Zero to Hiro
+						},
+						["maps"] = { 634 },	-- Stormheim
 					}),
 					q(41946, {	-- Building our Troops
 						["classes"] = { MONK },
@@ -111,6 +126,7 @@ _.ExpansionFeatures =
 						["g"] = {
 							follower(605),	-- Angus Ironfist
 						},
+						["sourceQuests"] = { 41854 },	-- Brick by Brick
 					}),
 					q(41115, {	-- Champion: Chen Stormstout
 						["classes"] = { MONK },
@@ -127,6 +143,7 @@ _.ExpansionFeatures =
 						["g"] = {
 							follower(606),	-- Hiro
 						},
+						["sourceQuests"] = { 41854 },	-- Brick by Brick
 					}),
 					q(40704, {	-- Champion: Li Li Stormstout
 						["classes"] = { MONK },
@@ -143,6 +160,7 @@ _.ExpansionFeatures =
 						["g"] = {
 							follower(604),	-- Sylara Steelsong
 						},
+						["sourceQuests"] = { 41854 },	-- Brick by Brick
 					}),
 					q(41734, {	-- Champion: Taran Zhu
 						["classes"] = { MONK },
@@ -181,8 +199,10 @@ _.ExpansionFeatures =
 					}),
 					q(41910, {	-- Freya's Spring
 						["classes"] = { MONK },
-						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
+						["lvl"] = 110,
+						["provider"] = { "n", 102843 },	-- Aegira (Broken Temple Brewmaster)
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
+						["maps"] = { 634 },	-- Stormheim
 					}),
 					q(43062, {	-- Further Training
 						["classes"] = { MONK },
@@ -199,8 +219,10 @@ _.ExpansionFeatures =
 					}),
 					q(41040, {	-- Halls of Valor: The Brewmaster
 						["classes"] = { MONK },
-						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
+						["lvl"] = 110,
+						["provider"] = { "n", 102843 },	-- Aegira (Broken Temple Brewmaster)
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
+						["maps"] = { 634 },	-- Stormheim
 					}),
 					q(41059, {	-- Halls of Valor: Odyn's Cauldron
 						["classes"] = { MONK },
@@ -223,6 +245,8 @@ _.ExpansionFeatures =
 					}),
 					q(44249, {	-- Inner Sanctuary
 						["classes"] = { MONK },
+						["lvl"] = 110,
+						["provider"] = { "n", 112338 },	-- Caydori Brightstar
 						["g"] = {
 							i(139734),	-- Grandmaster's Crown
 						},
@@ -246,10 +270,25 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 						["sourceQuests"] = { 46348 },	-- The River to Ban-Lu
 					}),
+					q(43151, {	-- Making a Trade
+						["classes"] = { MONK },
+						["lvl"] = 110,
+						["provider"] = { "n", 109738 },	-- Fleuris Asterleaf
+						["sourceQuests"] = { 41911 },	-- Amaranthine Hops
+						["maps"] = { 641 },	-- Val'sharah
+					}),
 					q(46353, {	-- Master Who?
 						["classes"] = { MONK },
 						["provider"] = { "n", 118214 },	-- Yiska
 						["sourceQuests"] = { 46246 },	-- Strike Them Down
+					}),
+					q(41852, {	-- No Monk Left Behind
+						["classes"] = { MONK },
+						["lvl"] = 110,
+						["provider"] = { "n", 105072 },	-- Angus Ironfist
+						["sourceQuests"] = { 41850 },	-- The Master of Swords
+						["maps"] = { 634 },	-- Stormheim
+						["altQuests"] = { 41858 },
 					}),
 					q(45442, {	-- Not Felling Well
 						["classes"] = { MONK },
@@ -272,6 +311,13 @@ _.ExpansionFeatures =
 						["lvl"] = 98,
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 40236 },	-- The Dawning Light
+					}),
+					q(41851, {	-- Quelling the Tide
+						["classes"] = { MONK },
+						["lvl"] = 110,
+						["provider"] = { "n", 105088 },	-- Sylara Steelsong
+						["sourceQuests"] = { 41850 },	-- The Master of Swords
+						["maps"] = { 634 },	-- Stormheim
 					}),
 					q(41733, {	-- Rebuilding the Order
 						["classes"] = { MONK },
@@ -315,6 +361,13 @@ _.ExpansionFeatures =
 						["classes"] = { MONK },
 						["provider"] = { "n", 120744 },	-- Smelly Mountaintop
 						["sourceQuests"] = { 46343 },	-- The Trail of Ban-Lu
+					}),
+					q(41039, {	-- Stolen Knowledge
+						["classes"] = { MONK },
+						["lvl"] = 110,
+						["provider"] = { "n", 102843 },	-- Aegira
+						["sourceQuests"] = { 41038 },	-- The Mead Master
+						["maps"] = { 634 },	-- Stormheim
 					}),
 					q(41087, {	-- Storm Brew
 						["classes"] = { MONK },
@@ -384,11 +437,35 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41729, 41730, 41731 },	-- Slowing the Spread, Desperate Strike, Storm Earth and Fire
 						["maps"] = { 371 },	-- Jade Forest					
 					}),
+					q(41849, {	-- The Iron Fist
+						["classes"] = { MONK },
+						["lvl"] = 110,
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
+						["sourceQuests"] = { 43054 },	-- An Ample Stockpile
+					}),
 					q(40569, {	-- The Legend of the Sands
 						["classes"] = { MONK },
 						["lvl"] = 98,
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 40636 },	-- Prepare To Strike						
+					}),
+					q(41850, {	-- The Master of Swords
+						["classes"] = { MONK },
+						["lvl"] = 110,
+						["provider"] = { "n", 105045 },	-- Angus Ironfist
+						["sourceQuests"] = { 41849 },	-- The Iron Fist
+						["maps"] = { 634 },	-- Stormheim
+					}),
+					q(41038, {	-- The Mead Master
+						["classes"] = { MONK },
+						["lvl"] = 110,
+						["provider"] = { "n", 41736 },	-- Iron-Body Ponshu
+						["sourceQuests"] = {
+							41736,	-- Champion: Angus Ironfist
+							41737,	-- Champion: Hiro
+							41738,	-- Champion: Sylara Steelsong
+						},
+						["altQuests"] = { 41873 },
 					}),
 					q(42868, {	-- The Monkey King's Challenge
 						["classes"] = { MONK },
@@ -495,13 +572,29 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 40793 },	-- A Matter of Planning
 					}),
+					q(41853, {	-- Zero to Hiro
+						["classes"] = { MONK },
+						["lvl"] = 110,
+						["provider"] = { "n", 105072 },	-- Angus Ironfist
+						["sourceQuests"] = { 41850 },	-- The Master of Swords
+						["maps"] = { 634 },	-- Stormheim
+					}),
+
+					--[[
+					q(, {	-- 
+						["classes"] = { MONK },
+						["lvl"] = ,
+						["provider"] = { "n",  },	-- 
+						["sourceQuests"] = {  },	-- 
+						["maps"] = {  },	-- 
+					}),	
+					--]]
 					
 					--[[
 					q(44057),	-- A "Noble" Event
 					q(43359),	-- A Hero's Weapon
 					q(45180),	-- An Island of War
 					q(46024),	-- An Urgent Warning
-					q(41854),	-- Brick By Brick
 					q(47069),	-- Delivering Lost Knowledge
 					q(45173),	-- Desperate Times
 					q(44239),	-- Echo of a Celestial
@@ -514,8 +607,6 @@ _.ExpansionFeatures =
 					q(40698),	-- Purity of Form
 					q(43061),	-- Silkweave Bandages (Repeatable hand in quest but always returns false for completed even when the overarching quest(41907) is completed)
 					q(43058),	-- Spiced Rib Roast (Repeatable hand in quest but always returns false for completed even when the overarching quest(41907) is completed)
-					q(41849),	-- The Iron Fist
-					q(41038),	-- The Mead Master
 					q(45172),	-- To Battle!
 					q(45179),	-- Win the Crowd
 					--]]
