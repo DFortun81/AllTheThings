@@ -1301,7 +1301,7 @@ _.ExpansionFeatures =
 							["cr"] = 162252,	-- Corrupted Beheader
 						}),
 						crit(4,	 {		-- Corrupted Bloodseeker slain
-							["description"] = "This doesn't appear to share a spawn with any other mob, but it's an elite shark that spawns off the southern coast of Uldum.",
+							["description"] = "This doesn't appear to share a spawn with any other mob, but it's an elite shark that spawns off the southern coast of Uldum.  It can swim very far out, close to fatigue waters, so if you're searching for Corrupted Bloodseeker it may be helpful to follow the outside edge rather than sticking to the coast.",
 							["coords"] = {
 								{ 13.8, 63.6, 1527 },
 								{ 26.8, 76.6, 1527 },
@@ -1603,6 +1603,7 @@ _.ExpansionFeatures =
 						}),
 						q(58818, {	-- Bug Buddies
 							["coord"] = { 55.6, 35.3, 1527 },
+							["isDaily"] = true,
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
 							["sourceQuest"] = 58813,	-- Fetid Filets
 							["description"] = "Can appear during Aqir invasions in Uldum.",
@@ -1645,6 +1646,7 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 58830,	-- Aqir Instincts
 						}),
 						q(58861, {	-- The Mantids' Mettle
+							["isDaily"] = true,
 							["coord"] = { 55.6, 35.3, 1527 },
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
 							["sourceQuest"] = 58830,	-- Aqir Instincts
@@ -1656,11 +1658,13 @@ _.ExpansionFeatures =
 							["sourceQuest"] = 58830,	-- Aqir Instincts
 						}),
 						q(58862, {	-- The Littlest Defender
+							["isDaily"] = true,
 							["coord"] = { 55.6, 35.3, 1527 },
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
 							["sourceQuest"] = 58830,	-- Aqir Instincts
 						}),
 						q(58859, {	-- Someone His Own Size
+							["isDaily"] = true,
 							["coord"] = { 55.6, 35.3, 1527 },
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
 							["sourceQuest"] = 58830,	-- Aqir Instincts

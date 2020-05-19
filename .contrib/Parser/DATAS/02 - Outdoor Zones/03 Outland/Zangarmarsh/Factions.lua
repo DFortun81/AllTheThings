@@ -89,6 +89,25 @@ _.Zones =
 					["creatureID"] = 18382,	-- Mycah <Sporeggar Quartermaster>
 					["g"] = {
 						n(QUESTS, {
+							q(50130, {	-- A Friendly Gesture
+								["isBreadcrumb"] = true,
+								["provider"] = { "n", 17924 },	-- Msshi'fn
+								["coord"] = { 19.7, 52.1, 102 },
+								["sourceQuest"] = 50131,	-- An Outside Perspective
+								["minReputation"] = { 970, NEUTRAL },
+								["maxReputation"] = { 970, HONORED },
+							}),
+							q(50131, {	-- An Outside Perspective
+								["isBreadcrumb"] = true,
+								["provider"] = { "n", 17923 },	-- Fahssn
+								["coord"] = { 19.0, 63.4, 102 },
+								["minReputation"] = { 970, NEUTRAL },
+								["maxReputation"] = { 970, FRIENDLY },
+								["sourceQuests"] = {
+									9743,	-- Natural Enemies
+									9739,	-- The Sporelings' Plight
+								},
+							}),
 							q(9807, {	-- More Fertile Spores
 								["provider"] = { "n", 17925 },	-- Gshaff
 								["coord"] = { 19.1, 49.4, 102 },

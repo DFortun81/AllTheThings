@@ -17,13 +17,6 @@ _.Zones =
 						i(27716),	-- Refuge Armor
 					},
 				}),
-				q(50130, {	-- A Friendly Gesture
-					["provider"] = { "n", 17924 },	-- Msshi'fn
-					["coord"] = { 19.7, 52.1, 102 },
-					["sourceQuest"] = 50131,	-- An Outside Perspective
-					["minReputation"] = { 970, NEUTRAL },
-					["maxReputation"] = { 970, HONORED },
-				}),
 				q(9899,  {	-- A Job Undone
 					["provider"] = { "n", 18016 },	-- Magasha
 					["coord"] = { 84.4, 54.3, 102 },
@@ -55,16 +48,6 @@ _.Zones =
 					["provider"] = { "n", 17858 },	-- Warden Hamoot
 					["coord"] = { 79.1, 65.3, 102 },
 					["sourceQuest"] = 9778,	-- Warden Hamoot
-				}),
-				q(50131, {	-- An Outside Perspective
-					["provider"] = { "n", 17923 },	-- Fahssn
-					["coord"] = { 19.0, 63.4, 102 },
-					["minReputation"] = { 970, NEUTRAL },
-					["maxReputation"] = { 970, FRIENDLY },
-					["sourceQuests"] = {
-						9743,	-- Natural Enemies
-						9739,	-- The Sporelings' Plight
-					},
 				}),
 				q(9783,  {	-- An Unnatural Drought
 					["provider"] = { "n", 18004 },	-- Vindicator Idaar

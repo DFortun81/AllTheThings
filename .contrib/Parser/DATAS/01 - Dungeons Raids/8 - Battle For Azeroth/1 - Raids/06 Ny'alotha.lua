@@ -31,13 +31,25 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			}),
 			d(17, {	-- LFR
 				n(ZONEDROPS, {
-					i(175004),	-- Legwraps of Horrifying Figments
-					i(175005),	-- Belt of Concealed Intent
-					i(175010),	-- Maddened Adherent's Bulwark
-					i(175009),	-- Zealous Ritualist's Reverie
+					i(175005, {	-- Belt of Concealed Intent
+						["f"] = 6,	-- Mail
+					}),
+					i(175007, {	-- Footpads of Terrible Delusions
+						["f"] = 5,	-- Leather
+					}),
+					i(175006, {	-- Gauntlets of Nightmare Manifest
+						["f"] = 7,	-- Plate
+					}),
+					i(175004, {	-- Legwraps of Horrifying Figments
+						["f"] = 4,	-- Cloth
+					}),
 					i(175008),	-- Lurking Schemer's Band
-					i(175007),	-- Footpads of Terrible Delusions
-					i(175006),	-- Gauntlets of Nightmare Manifest
+					i(175010, {	-- Maddened Adherent's Bulwark
+						["f"] = 8,	-- Shield
+					}),
+					i(175009, {	-- Zealous Ritualist's Reverie
+						["f"] = 1,	-- Held in Off-hand
+					}),
 				}),
 				ach(14193, {	-- Vision of Destiny
 					e(2368, {	-- Wrathion, the Black Emperor
@@ -246,13 +258,25 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					}),
 				}),
 				n(ZONEDROPS, {
-					i(175004),	-- Legwraps of Horrifying Figments
-					i(175005),	-- Belt of Concealed Intent
-					i(175010),	-- Maddened Adherent's Bulwark
-					i(175009),	-- Zealous Ritualist's Reverie
+					i(175005, {	-- Belt of Concealed Intent
+						["f"] = 6,	-- Mail
+					}),
+					i(175007, {	-- Footpads of Terrible Delusions
+						["f"] = 5,	-- Leather
+					}),
+					i(175006, {	-- Gauntlets of Nightmare Manifest
+						["f"] = 7,	-- Plate
+					}),
+					i(175004, {	-- Legwraps of Horrifying Figments
+						["f"] = 4,	-- Cloth
+					}),
 					i(175008),	-- Lurking Schemer's Band
-					i(175007),	-- Footpads of Terrible Delusions
-					i(175006),	-- Gauntlets of Nightmare Manifest
+					i(175010, {	-- Maddened Adherent's Bulwark
+						["f"] = 8,	-- Shield
+					}),
+					i(175009, {	-- Zealous Ritualist's Reverie
+						["f"] = 1,	-- Held in Off-hand
+					}),
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },
@@ -467,13 +491,25 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					}),
 				}),
 				n(ZONEDROPS, {
-					i(175004),	-- Legwraps of Horrifying Figments
-					i(175005),	-- Belt of Concealed Intent
-					i(175010),	-- Maddened Adherent's Bulwark
-					i(175009),	-- Zealous Ritualist's Reverie
+					i(175005, {	-- Belt of Concealed Intent
+						["f"] = 6,	-- Mail
+					}),
+					i(175007, {	-- Footpads of Terrible Delusions
+						["f"] = 5,	-- Leather
+					}),
+					i(175006, {	-- Gauntlets of Nightmare Manifest
+						["f"] = 7,	-- Plate
+					}),
+					i(175004, {	-- Legwraps of Horrifying Figments
+						["f"] = 4,	-- Cloth
+					}),
 					i(175008),	-- Lurking Schemer's Band
-					i(175007),	-- Footpads of Terrible Delusions
-					i(175006),	-- Gauntlets of Nightmare Manifest
+					i(175010, {	-- Maddened Adherent's Bulwark
+						["f"] = 8,	-- Shield
+					}),
+					i(175009, {	-- Zealous Ritualist's Reverie
+						["f"] = 1,	-- Held in Off-hand
+					}),
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },
@@ -696,13 +732,25 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					}),
 				}),
 				n(ZONEDROPS, {
-					i(175004),	-- Legwraps of Horrifying Figments
-					i(175005),	-- Belt of Concealed Intent
-					i(175010),	-- Maddened Adherent's Bulwark
-					i(175009),	-- Zealous Ritualist's Reverie
+					i(175005, {	-- Belt of Concealed Intent
+						["f"] = 6,	-- Mail
+					}),
+					i(175007, {	-- Footpads of Terrible Delusions
+						["f"] = 5,	-- Leather
+					}),
+					i(175006, {	-- Gauntlets of Nightmare Manifest
+						["f"] = 7,	-- Plate
+					}),
+					i(175004, {	-- Legwraps of Horrifying Figments
+						["f"] = 4,	-- Cloth
+					}),
 					i(175008),	-- Lurking Schemer's Band
-					i(175007),	-- Footpads of Terrible Delusions
-					i(175006),	-- Gauntlets of Nightmare Manifest
+					i(175010, {	-- Maddened Adherent's Bulwark
+						["f"] = 8,	-- Shield
+					}),
+					i(175009, {	-- Zealous Ritualist's Reverie
+						["f"] = 1,	-- Held in Off-hand
+					}),
 				}),
 				e(2368, {	-- Wrathion, the Black Emperor
 					["crs"] = { 156818 },

@@ -739,6 +739,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(10113, {	-- The Nesingwary Safari (A)
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 19137 },	-- "Shotgun" Jones <Nesingwary Safari>
 					["coord"] = { 55.0, 70.4, 107 },
 					["races"] = ALLIANCE_ONLY,
