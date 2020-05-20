@@ -265,7 +265,7 @@ _.ExpansionFeatures =
 					i(143328),	-- Battle Report
 					un(2, i(143329)),	-- Dire Summons
 					un(2, i(143479)),	-- Frayed Banner
---					un(2, i(142522)),	-- Rude Letter
+					i(142522),			-- Rude Letter
 					-- Dungeons
 					un(2, i(139471)),	-- Black Rook Missive -> Black Rook Hold: The Lord of Black Rook Hold -> Black Rook Hold
 					un(2, i(139476)),	-- Broken Dragon Scale -> Neltharion's Lair: Into Neltharion's Lair -> Neltharion's Lair
