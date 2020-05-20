@@ -226,8 +226,10 @@ _.ExpansionFeatures =
 					}),
 					q(41059, {	-- Halls of Valor: Odyn's Cauldron
 						["classes"] = { MONK },
+						["lvl"] = 110,
 						["provider"] = { "n", 103049 },	-- Melba
 						["sourceQuests"] = { 41040 },	-- Halls of Valor: The Brewmaster
+						["maps"] = { 704 }	-- Halls of Valor, Stormheim
 					}),
 					q(46320, {	-- Hope For a Cure
 						["classes"] = { MONK },
