@@ -305,19 +305,34 @@ _.Zones =
 					},
 				}),
 				q(41611, {	-- Huge Cursed Queenfish
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(7, {	-- Huge Cursed Queenfish
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41265, {	-- Huge Cursed Queenfish
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(7, {	-- Huge Cursed Queenfish
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41610, {	-- Huge Cursed Queenfish
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(7, {	-- Huge Cursed Queenfish
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(45495, {	-- Immolian
 					["lvl"] = 110,
@@ -385,19 +400,34 @@ _.Zones =
 					["requireSkill"] = HERBALISM,
 				}),
 				q(41598, {	-- Lively Cursed Queenfish
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(4, {	-- Lively Cursed Queenfish
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41599, {	-- Lively Cursed Queenfish
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(4, {	-- Lively Cursed Queenfish
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41264, {	-- Lively Cursed Queenfish
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(4, {	-- Lively Cursed Queenfish
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41454, {	-- Luminous Leystone Outcropping
 					["lvl"] = 110,
@@ -442,14 +472,24 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(41268, {	-- Queen Queenfish
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(5, {	-- Queen Queenfish
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41266, {	-- Raft Fishing
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(13, {	-- Raft Fishing
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(42108, {	-- Rally the Nightwatchers
 					["lvl"] = 110,
@@ -752,9 +792,14 @@ _.Zones =
 					},
 				}),
 				q(41267, {	-- Work Order: Cursed Queenfish
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(2, {	-- Work Order: Cursed Queenfish
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41652, {	-- Work Order: Deep Amber Loop
 					["requireSkill"] = JEWELCRAFTING,

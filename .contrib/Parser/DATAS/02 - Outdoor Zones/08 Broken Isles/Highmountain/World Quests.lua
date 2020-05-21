@@ -256,14 +256,24 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(41609, {	-- Huge Highmountain Salmon
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(11, {	-- Huge Highmountain Salmon
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41243, {	-- Huge Highmountain Salmon
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(11, {	-- Huge Highmountain Salmon
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(46185, {	-- Iroxus (Invasion wq)
 					["lvl"] = 98,
@@ -311,19 +321,34 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(41596, {	-- Lively Highmountain Salmon
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(9, {	-- Lively Highmountain Salmon
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41244, {	-- Lively Highmountain Salmon
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(9, {	-- Lively Highmountain Salmon
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41597, {	-- Lively Highmountain Salmon
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(9, {	-- Lively Highmountain Salmon
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41090, {	-- Lords of the Hills
 					["lvl"] = 110,
@@ -343,9 +368,14 @@ _.Zones =
 					["requireSkill"] = MINING,
 				}),
 				q(41253, {	-- Migrating Highmountain Salmon
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(20, {	-- Migrating Highmountain Salmon
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41122, {	-- Mists Take You
 					["lvl"] = 110,
@@ -675,9 +705,14 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(41252, {	-- Wild Northern Barracuda
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(6, {	-- Wild Northern Barracuda
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41766, {	-- Wildlife Protection Force
 					["isWorldQuest"] = true,
@@ -728,9 +763,14 @@ _.Zones =
 					["requireSkill"] = HERBALISM,
 				}),
 				q(41240, {	-- Work Order: Highmountain Salmon
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(18, {	-- Work Order: Highmountain Salmon
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41206, {	-- Work Order: Leystone
 					["lvl"] = 110,

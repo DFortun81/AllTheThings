@@ -207,7 +207,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 				}),
 				ach(14196, {	-- The Waking Dream
 					e(2366, {	-- Carapace of N'Zoth
-						["cr"] = 162429,	-- Fury of N'Zoth
+						["crs"] = { 162429, 157439 },	-- Fury of N'Zoth
 						["g"] = {
 							i(174109),	-- Lurker's Piercing Gaze
 							i(172227),	-- Shard of the Black Empire
@@ -922,7 +922,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2366, {	-- Carapace of N'Zoth
-					["cr"] = 162429,	-- Fury of N'Zoth
+					["crs"] = { 162429, 157439 },	-- Fury of N'Zoth
 					["g"] = {
 						ach(14054),	-- Mythic: Carapace of N'Zoth
 						ach(14147),	-- Cleansing Treatment

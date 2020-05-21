@@ -270,19 +270,34 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(41614, {	-- Huge Stormrays
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(14, {	-- Huge Stormrays
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41275, {	-- Huge Stormrays
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(14, {	-- Huge Stormrays
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41615, {	-- Huge Stormrays
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(14, {	-- Huge Stormrays
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(46015, {	-- Idra'zuul (Invasion wq)
 					["lvl"] = 98,
@@ -322,19 +337,34 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(41602, {	-- Lively Stormrays
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(10, {	-- Lively Stormrays
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41274, {	-- Lively Stormrays
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(10, {	-- Lively Stormrays
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41603, {	-- Lively Stormrays
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(10, {	-- Lively Stormrays
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(46016, {	-- Magdrezoth (Invasion wq)
 					["lvl"] = 98,
@@ -415,9 +445,14 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(41276, {	-- Rocket Boot Fishing
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(21, {	-- Rocket Boot Fishing
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41927, {	-- Ruining the Runewood
 					["lvl"] = 110,
@@ -460,9 +495,14 @@ _.Zones =
 					["requireSkill"] = COOKING,
 				}),
 				q(41278, {	-- Slippery Stormrays
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(15, {	-- Slippery Stormrays
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41343, {	-- Solid Crabshell Fragment
 					["lvl"] = 110,
@@ -702,9 +742,14 @@ _.Zones =
 					},
 				}),
 				q(41277, {	-- Work Order: Stormrays
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(17, {	-- Work Order: Stormrays
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41344, {	-- Work Order: Stormscales
 					["lvl"] = 110,

@@ -246,19 +246,34 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(41280, {	-- Huge Runescale Koi
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(8, {	-- Huge Runescale Koi
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41616, {	-- Huge Runescale Koi
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(8, {	-- Huge Runescale Koi
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41617, {	-- Huge Runescale Koi
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(8, {	-- Huge Runescale Koi
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(44805, {	-- In the Thick of It
 					["lvl"] = 110,
@@ -294,19 +309,34 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(41279, {	-- Lively Runescale Koi
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(3, {	-- Lively Runescale Koi
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41605, {	-- Lively Runescale Koi
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(3, {	-- Lively Runescale Koi
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41604, {	-- Lively Runescale Koi
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(3, {	-- Lively Runescale Koi
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41537, {	-- Lively Starlight Roses
 					["lvl"] = 110,
@@ -446,8 +476,14 @@ _.Zones =
 					["isWorldQuest"] = true,
 				}),
 				q(41283, {	-- The Angler Mangler
-					["lvl"] = 110,
+					["requireSkill"] = FISHING,
 					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(24, {	-- The Angler Mangler
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(43435, {	-- The Battle Rages On
 					["lvl"] = 110,
@@ -692,9 +728,14 @@ _.Zones =
 					},
 				}),
 				q(41282, {	-- Work Order: Runescale Koi
-					["lvl"] = 110,
-					["isWorldQuest"] = true,
 					["requireSkill"] = FISHING,
+					["isWorldQuest"] = true,
+					["lvl"] = 110,
+					["g"] = {
+						crit(23, {	-- Work Order: Runescale Koi
+							["achievementID"] = 10598,	-- Fishing 'Round the Isles
+						}),
+					},
 				}),
 				q(41649, {	-- Work Order: Silkweave Slippers
 					["requireSkill"] = TAILORING,
