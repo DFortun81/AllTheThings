@@ -1454,17 +1454,28 @@ _.NeverImplemented =
 		q(48420),	-- Garothi Worldbreaker (triggered at the same time as above)
 		q(45461),	-- Felhounds of Sargeras
 		q(48422),	-- Felhounds of Sargeras (triggered at the same time as above)
+		q(45462),	-- Antoran High Command
+		q(48423),	-- Antoran High Command (triggered at the same time as above)
 		q(45464),	-- Eonar
 		q(48425),	-- Eonar (triggered at the same time as above)
 		q(49357),	-- Eonar (triggered at the same time as above)
 		q(45463),	-- Portal Keeper Hasabel
 		q(48424),	-- Portal Keeper Hasabel (triggered at the same time as above)
+		q(45465),	-- Imonar
+		q(48426),	-- Imonar (triggered at the same time as above)
 		q(45466),	-- Kingaroth
 		q(48427),	-- Kingaroth (triggered at the same time as above)
 		q(45467),	-- Varimathras
 		q(48428),	-- Varimathras (triggered at the same time as above)
 		q(45468),	-- The Coven of Shivarra
 		q(48429),	-- The Coven of Shivarra (triggered at the same time as above)
+		q(45469),	-- Aggramar
+		q(48430),	-- Aggramar (triggered at the same time as above)
+		q(49180),	-- Aggramar (triggered at the same time as above)
+		q(48431),	-- Argus
+		q(49184),	-- Argus (triggered at the same time as above)
+		q(49361),	-- Argus (triggered at the same time as above)
+		q(49475),	-- Argus (triggered at the same time as above)
 		
 		-------------------
 		--      BFA      --
@@ -2184,7 +2195,8 @@ _.NeverImplemented =
 		q(55923),	-- Sparkqueen P'Emp first kill
 		q(55933),	-- Steel Singer Freza first kill
 		q(55931),	-- The Kleptoboss first kill
-					-- The Rusty Prince first kill -- maybe 56713
+					-- The Rusty Prince first kill
+		q(56713),	-- seems to trigger on every Rusty Prince kill, along with 56182
 		q(55908),	-- The Scrap King first kill
 		q(55921),	-- Uncle T'Rogg first kill
 		q(57081),	-- First Mechanized Chest of the week(Minipack: Mechagon)-- Still need to narrow down exact trigger
