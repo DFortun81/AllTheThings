@@ -565,11 +565,21 @@ _.ExpansionFeatures =
 				}),
 				n(RARES, {
 					n(154578, {	-- Aqir Flayer
+						["description"] = "Shares a spawn with Aqir Goliath.  Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
 						["questID"] = 58612,
 						["isDaily"] = true,
 						["coords"] = {
-							{ 46.8, 58.5, 1527 },
-							{ 31.3, 51.4, 1527 },
+							{ 30.6, 14.8, 1527 },
+							{ 41.2, 24.8, 1527 },
+							{ 40.8, 38.2, 1527 },
+							{ 37.6, 47.8, 1527 },
+							{ 31.4, 51.2, 1527 },
+							{ 27.6, 55.0, 1527 },
+							{ 27.0, 58.6, 1527 },
+							{ 30.2, 63.6, 1527 },
+							{ 34.8, 68.8, 1527 },
+							{ 42.4, 60.2, 1527 },
+							{ 47.0, 56.2, 1527 },
 						},
 						["g"] = {
 							i(174224),	-- Greatsword of Cruelty
@@ -578,10 +588,25 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(154576, {	-- Aqir Titanus
+						["description"] = "Shares a spawn with Aqir Goliath.  Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
 						["questID"] = 58614,
 						["isDaily"] = true,
-						["coord"] = { 39.3, 36.8, 1527 },
-						["description"] = "Spawns in the sand dunes between Orsis and the Ruins of Ammon.",
+						["coords"] = {
+							{ 34.6, 18.4, 1527 },
+							{ 39.2, 22.2, 1527 },
+							{ 39.8, 35.2, 1527 },
+							{ 41.0, 42.6, 1527 },
+							{ 34.8, 44.8, 1527 },
+							{ 37.8, 49.6, 1527 },
+							{ 33.8, 51.2, 1527 },
+							{ 33.6, 58.0, 1527 },
+							{ 37.2, 53.0, 1527 },
+							{ 37.4, 58.8, 1527 },
+							{ 44.8, 58.6, 1527 },
+							{ 27.0, 51.6, 1527 },
+							{ 29.6, 66.6, 1527 },
+							{ 35.0, 66.6, 1527 },
+						},
 						["g"] = {
 							i(174224),	-- Greatsword of Cruelty
 							i(174227),	-- Writhing Feeler
@@ -620,9 +645,13 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(155531, {	-- Infested Wastewander Captain
+						["description"] = "Shares a spawn with Wastewander Host.  Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
 						["questID"] = 56823,
-						["coord"] = { 22.90, 59.42, 1527 },
 						["isDaily"] = true,
+						["coords"] = {
+							{ 17.6, 60.2, 1527 },
+							{ 25.6, 64.0, 1527 },
+						},
 						["g"] = {
 							i(174224),	-- Greatsword of Cruelty
 							i(174222),	-- Unspeakable Bloodletter
@@ -1778,11 +1807,24 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(162172, {	-- Aqir Warcaster
+						["description"] = "Shares a spawn with Aqir Voidcaster.  Coordinates are approximate areas where the rare may be found, but spawn camping will be less reliable than farming.",
 						["questID"] = 58694,
 						["isDaily"] = true,
 						["coords"] = {
-							{ 42.0, 37.8, 1527 },
-							{ 19.2, 59.1, 1527 },
+							{ 37.2, 14.8, 1527 },
+							{ 35.4, 22.8, 1527 },
+							{ 34.0, 26.8, 1527 },
+							{ 32.2, 31.4, 1527 },
+							{ 34.6, 31.8, 1527 },
+							{ 40.0, 36.6, 1527 },
+							{ 40.0, 46.2, 1527 },
+							{ 30.2, 51.2, 1527 },
+							{ 43.6, 55.8, 1527 },
+							{ 46.8, 60.6, 1527 },
+							{ 34.8, 68.6, 1527 },
+							{ 29.4, 62.6, 1527 },
+							{ 24.6, 58.4, 1527 },
+							{ 18.0, 63.0, 1527 },
 						},
 						["g"] = {
 							i(174224),	-- Greatsword of Cruelty
