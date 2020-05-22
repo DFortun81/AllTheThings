@@ -192,11 +192,27 @@ _.Instances = { tier(1, {	-- Classic
 					un(7, i(13522)),	-- Recipe: Flask of Chromatic Resistance
 					un(2, i(12871, { 	-- Chromatic Carapace
 						q(5167, { 	-- Legplates of the Chromatic Defier
-							un(2, i(12903)), 	-- Legguards of the Chromatic Defier
-							un(2, i(12945)),	-- Legplates of the Chromatic Defier
+							["cost"] = {
+								{ "i", 12871, 1 },	-- Chromatic Carapace
+								{ "i", 12607, 10 },	-- Brilliant Chromatic Scale
+								{ "i", 12938, 10 },	-- Blood of Heroes
+								{ "i", 12753, 5 },	-- Skin of Shadow
+							},
+							["g"] = {
+								un(2, i(12903)), 	-- Legguards of the Chromatic Defier
+								un(2, i(12945)),	-- Legplates of the Chromatic Defier
+							},
 						}),
 						q(5166, { 	-- Breastplate of the Chromatic Flight
-							un(2, i(12895)), 	-- Breastplate of the Chromatic Flight
+							["cost"] = {
+								{ "i", 12871, 1 },	-- Chromatic Carapace
+								{ "i", 12607, 10 },	-- Brilliant Chromatic Scale
+								{ "i", 12735, 10 },	-- Frayed Abomination Stitching
+								{ "i", 12938, 10 },	-- Blood of Heroes
+							},
+							["g"] = {
+								un(2, i(12895)),	-- Breastplate of the Chromatic Flight
+							},
 						}),
 					})),
 					un(2, i(12953)),	-- Dragoneye Coif
