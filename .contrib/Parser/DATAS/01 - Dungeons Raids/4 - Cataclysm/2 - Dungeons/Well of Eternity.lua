@@ -28,6 +28,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				q(30102, {	-- The Hour of Twilight
 					["provider"] = { "n", 57913 },	-- Chromie
 					["sourceQuests"] = { 30101 },	-- The Path of the Dragon Soul
+					["isBreadcrumb"] = true,
 				}),
 				q(30101, {	-- The Path of the Dragon Soul
 					["sourceQuests"] = { 30100 },	-- The Vainglorious
