@@ -98,7 +98,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = { 150190 },	-- HK-8 Aerial Oppression Unit
 						["g"] = {
 						--	i(168826),	-- Mechagon Peacekeeper. Only on Mythic or Mythic+
-							i(169385),	-- Microbot 8D
+						--	i(169385),	-- Microbot 8D
 							i(168742),	-- Forceful Adaptable Logic Board
 							i(168743),	-- Forceful Efficient Logic Board
 							i(168741),	-- Forceful Refined Logic Board
@@ -202,8 +202,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							144249,	-- Omega Buster
 						},
 						["g"] = {
-							i(168830),	-- Aerial Unit R-21/X
-							i(169378),	-- Golden Snorf
+						--	i(168830),	-- Aerial Unit R-21/X
+						--	i(169378),	-- Golden Snorf
 							i(169172, {	-- Blueprint: Perfectly Timed Differential
 								["questID"] = 55080,
 							}),

@@ -1,6 +1,7 @@
 ---------------------------------------------
 --     S E C R E T S     M O D U L E       --
 ---------------------------------------------
+--[[ commenting out until secret is finished
 _.Secrets =
 {
 	n(-807, {	-- Hivemind
@@ -260,4 +261,4 @@ _.Secrets =
 			}),
 		},
 	}),
-};
+};--]]

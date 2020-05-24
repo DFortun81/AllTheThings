@@ -12,6 +12,7 @@ _.Zones =
 						n(QUESTS, {
 							q(10917,  {  -- The Outcast's Plight
 								["provider"] = { "n", 22429 },	-- Vekax
+								["coord"] = { 47.7, 18.8, 111 },
 								["g"] = {
 									i(31800,  {  -- Outcasts Cache
 										i(28495),	-- Windwalker's Sash
@@ -26,10 +27,29 @@ _.Zones =
 								},
 							}),
 							q(10918,  {  -- More Feathers
+								["maxReputation"] = { 1011, HONORED },
 								["sourceQuests"] = { 10917 },	-- The Outcast's Plight
-								["description"] = "|cff66ccffGives reputation until Honored with Lower City|r",
 								["repeatable"] = true,
 								["provider"] = { "n", 22429 },	-- Vekax
+								["coord"] = { 47.7, 18.8, 111 },
+								["g"] = {
+									i(31800,  {  -- Outcasts Cache
+										i(28495),	-- Windwalker's Sash
+										i(28496),	-- Talonite's Belt
+										i(28497),	-- Dreadhawk's Girdle
+										i(28498),	-- Ravenguard's Baldric
+										i(28491),	-- Windwalker's Footwraps
+										i(28493),	-- Dreadhawk's Schynbald
+										i(28492),	-- Talonite's Boots
+										i(28494),	-- Ravenguard's Greaves
+									}),
+								},
+							}),
+							q(57581, {	-- Plucking Plumes
+								["minReputation"] = { 1011, HONORED },
+								["repeatable"] = true,
+								["provider"] = { "n", 22429 },	-- Vekax
+								["coord"] = { 47.7, 18.8, 111 },
 								["g"] = {
 									i(31800,  {  -- Outcasts Cache
 										i(28495),	-- Windwalker's Sash
