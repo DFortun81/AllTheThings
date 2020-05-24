@@ -59,6 +59,7 @@ _.Zones =
 								["sourceQuests"] = {
 									28338,	-- Deadwood of the North
 									28366,	-- Disarming Bears
+									28364,	-- The Chieftain's Key
 								},
 							}),
 							q(8481, {	-- The Root of All Evil
