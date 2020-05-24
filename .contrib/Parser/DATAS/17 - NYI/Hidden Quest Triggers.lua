@@ -1128,6 +1128,7 @@ _.NeverImplemented =
 		q(45447),	-- Rogue Order Hall - give a Noggenfogger coin to Marin Noggenfogger
 		q(43716),	-- Rogue Order Hall - loot spawned in the vault
 		q(43634),	-- Rogue Order Hall - looted the rogue vault
+		q(43719),	-- Rogue Order Hall - Rare Item One Obtained (looted the Suspicious Crate toy)
 		
 		q(38275),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 1 Mission Completed
 		q(42998),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 2 Mission Completed
@@ -1476,6 +1477,10 @@ _.NeverImplemented =
 		q(49184),	-- Argus (triggered at the same time as above)
 		q(49361),	-- Argus (triggered at the same time as above)
 		q(49475),	-- Argus (triggered at the same time as above)
+		q(49364),	-- Argus (triggered first time this character killed Argus on mythic)
+		q(49717),	-- Argus (triggered first time this character killed Argus on mythic)
+		q(49771),	-- Argus (triggered first time this character killed Argus on mythic)
+		
 		
 		-------------------
 		--      BFA      --

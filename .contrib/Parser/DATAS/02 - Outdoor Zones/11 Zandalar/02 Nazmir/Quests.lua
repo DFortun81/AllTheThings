@@ -685,11 +685,23 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				q(50085, {	-- A Message of Blood and Fire
+					["provider"] = { "n", 133471 },	-- Rokhan
+					["coord"] = { 45.4, 58.6, 863 },
+					["sourceQuest"] = 50082,	-- Target of Opportunity
+					["races"] = HORDE_ONLY,
+				}),
 				q(54964, {	-- A One-Way Ticket to the Heart
 					["provider"] = { "n", 149823 },	-- Magni Bronzebeard
 					["u"] = 40,	-- Retired with the implementation of 8.2
 					["coord"] = { 52.3, 68.6, 1382 },
 					["sourceQuest"] = 54940,	-- Necessity is the MOTHER
+				}),
+				q(49366, {	-- Aid the Wounded
+					["sourceQuest"] = 50934,	-- A Chance Sighting
+					["provider"] = { "o", 278197 },	-- Vial of Antidote
+					["coord"] = { 64.0, 50.3, 863 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(48857, {	-- All Hope is Lost
 					["provider"] = { "n", 127212 },	-- Ka'dran
@@ -699,12 +711,6 @@ _.Zones =
 						48825,	-- Power Denied
 						48823,	-- Projection Destruction
 					},
-				}),
-				q(50085, {	-- A Message of Blood and Fire
-					["provider"] = { "n", 133471 },	-- Rokhan
-					["coord"] = { 45.4, 58.6, 863 },
-					["sourceQuest"] = 50082,	-- Target of Opportunity
-					["races"] = HORDE_ONLY,
 				}),
 				q(50976, {	-- An Ancient Curse
 					["provider"] = { "o", 287081 },	-- Ancient Tablet
@@ -928,6 +934,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 49314,	-- Hunting Zardrax
 				}),
+				q(49484, {	-- Offering to Bwonsamdi [The Necropolis]
+					["u"] = 1,
+				}),
 				q(49777, {	-- On the Run
 					["provider"] = { "n", 130930 },	-- Zaluto
 					["coord"] = { 24.1, 53.1, 863 },
@@ -1102,11 +1111,8 @@ _.Zones =
 						i(159074),	-- Jarkadiax's Other Eye [Trinket]
 					},
 				}),
-				q(49366, {	-- Aid the Wounded
-					["sourceQuest"] = 50934,	-- A Chance Sighting
-					["provider"] = { "o", 278197 },	-- Vial of Antidote
-					["coord"] = { 64.0, 50.3, 863 },
-					["races"] = HORDE_ONLY,
+				q(50888, {	-- Urn of Ugussu [Terrace of Sorrows]
+					["u"] = 1,
 				}),
 				q(52480, {	-- WANTED: Ayame
 					["coord"] = { 62.3, 41.3, 863 },
@@ -1135,10 +1141,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 50933,	-- An Unfortunate Event
 				}),
-				-- Crieve's List
-				q(49484),	-- Offering to Bwonsamdi [The Necropolis]
-				q(49313),	-- Wun'ju's Trove [Terrace of Sorrows]
-				q(50888),	-- Urn of Ugussu [Terrace of Sorrows]
+				q(49313, {	-- Wun'ju's Trove [Terrace of Sorrows]
+					["u"] = 1,
+				}),
 			}),
 		}),
 	}),

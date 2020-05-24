@@ -840,6 +840,7 @@ _.Zones =
 				}),
 				n(-387,  {	-- Relics
 					i(140042),	-- Ancient Sacred Candle
+					i(141267),	-- Aspect of Disregard
 					i(140088),	-- Everblooming Sunflower
 					i(140044),	-- Felbat Heart
 					i(140045),	-- Fel-Cleansed Leystone Key

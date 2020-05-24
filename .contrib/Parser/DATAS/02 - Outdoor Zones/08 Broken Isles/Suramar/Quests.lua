@@ -159,7 +159,7 @@ _.Zones =
 				}),
 				q(44672, {	-- Ancient Mana
 					["coord"] = { 36.5, 46.9, 680 },
-					["provider"] = { "n", 97140 },	-- QFirst Arcanist Thalyssra
+					["provider"] = { "n", 97140 },	-- First Arcanist Thalyssra
 					["sourceQuest"] = 42229,	-- Shal'Aran
 					["g"] = {
 						i(141652),	-- Mana Divining Stone
