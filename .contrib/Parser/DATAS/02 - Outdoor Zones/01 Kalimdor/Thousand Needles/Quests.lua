@@ -688,7 +688,11 @@ _.Zones =
 					["provider"] = { "n", 40475 },	-- Jinky Twizzlefixxit
 					["coord"] = { 76.4, 73.6, 64 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 25515,	-- Down in the Deeps
+					["sourceQuests"] = {
+						25515,	-- Down in the Deeps
+						25517,	-- Bar Fight
+						25524,	-- In the Outhouse
+					},
 				}),
 				q(25585, {	-- Quiet the Cannons
 					["provider"] = { "n", 40475 },	-- Jinky Twizzlefixxit
