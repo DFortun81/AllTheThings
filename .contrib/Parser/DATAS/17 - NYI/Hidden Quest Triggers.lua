@@ -1532,6 +1532,7 @@ _.NeverImplemented =
 		q(49037),	-- triggered after getting achievement The Reining Champion
 		q(55494),	-- Torcali quest of the day completed
 		q(58881),	-- triggered when i fed the uldum friendly alpaca for the last time (not with the quest that gives the mount afterward, but the final feed)
+		q(59072),	-- speaking to Tasha Riley and joining the Council of Chaos in the BRD pet battle dungeon
 
 		q(54704),	-- War Campaign - triggered when turning in "Time for War"
 		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track
