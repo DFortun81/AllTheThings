@@ -1088,6 +1088,88 @@ profession(ARCHAEOLOGY, {
 			i(95379),	-- Remains of a Paragon
 			i(95377),	-- The Praying Mantid
 		}),
+		n(QUESTS, {
+			q(32686, {	-- Pristine Banner of the Mantid Empire
+				["lvl"] = 85,
+				["provider"] = { "i", 95383 },	-- Pristine Banner of the Mantid Empire
+				["requireSkill"] = ARCHAEOLOGY,
+				["g"] = {
+					crit(1, {	-- Pristine Banner of the Mantid Empire
+						["achievementID"] = 8219,	-- History of the Mantid
+					}),
+				},
+			}),
+			q(32687, {	-- Pristine Ancient Sap Feeder
+				["lvl"] = 85,
+				["provider"] = { "i", 95384 },	-- Pristine Ancient Sap Feeder
+				["requireSkill"] = ARCHAEOLOGY,
+				["g"] = {
+					crit(2, {	-- Pristine Ancient Sap Feeder
+						["achievementID"] = 8219,	-- History of the Mantid
+					}),
+				},
+			}),
+			q(32688, {	-- Pristine Praying Mantid
+				["lvl"] = 85,
+				["provider"] = { "i", 95385 },	-- Pristine Praying Mantid
+				["requireSkill"] = ARCHAEOLOGY,
+				["g"] = {
+					crit(3, {	-- Pristine Praying Mantid
+						["achievementID"] = 8219,	-- History of the Mantid
+					}),
+				},
+			}),
+			q(32689, {	-- Pristine Sound Beacon
+				["lvl"] = 85,
+				["provider"] = { "i", 95386 },	-- Pristine Sound Beacon
+				["requireSkill"] = ARCHAEOLOGY,
+				["g"] = {
+					crit(4, {	-- Pristine Sound Beacon
+						["achievementID"] = 8219,	-- History of the Mantid
+					}),
+				},
+			}),
+			q(32690, {	-- Pristine Remains of a Paragon
+				["lvl"] = 85,
+				["provider"] = { "i", 95387 },	-- Pristine Remains of a Paragon
+				["requireSkill"] = ARCHAEOLOGY,
+				["g"] = {
+					crit(5, {	-- Pristine Remains of a Paragon
+						["achievementID"] = 8219,	-- History of the Mantid
+					}),
+				},
+			}),
+			q(32691, {	-- Pristine Mantid Lamp
+				["lvl"] = 85,
+				["provider"] = { "i", 95388 },	-- Pristine Mantid Lamp
+				["requireSkill"] = ARCHAEOLOGY,
+				["g"] = {
+					crit(6, {	-- Pristine Mantid Lamp
+						["achievementID"] = 8219,	-- History of the Mantid
+					}),
+				},
+			}),
+			q(32692, {	-- Pristine Pollen Collector
+				["lvl"] = 85,
+				["provider"] = { "i", 95389 },	-- Pristine Pollen Collector
+				["requireSkill"] = ARCHAEOLOGY,
+				["g"] = {
+					crit(7, {	-- Pristine Pollen Collector
+						["achievementID"] = 8219,	-- History of the Mantid
+					}),
+				},
+			}),
+			q(32693, {	-- Pristine Kypari Sap Container
+				["lvl"] = 85,
+				["provider"] = { "i", 95390 },	-- Pristine Kypari Sap Container
+				["requireSkill"] = ARCHAEOLOGY,
+				["g"] = {
+					crit(8, {	-- Pristine Kypari Sap Container
+						["achievementID"] = 8219,	-- History of the Mantid
+					}),
+				},
+			}),
+		}),
 		n(-319, {	-- Weapons
 			i(95391),	-- Mantid Sky Reaver
 			i(95392),	-- Sonic Pulse Generator
