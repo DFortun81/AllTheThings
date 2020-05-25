@@ -192,6 +192,7 @@ _.Instances = { tier(1, {	-- Classic
 					un(7, i(13522)),	-- Recipe: Flask of Chromatic Resistance
 					un(2, i(12871, { 	-- Chromatic Carapace
 						q(5167, { 	-- Legplates of the Chromatic Defier
+							["u"] = 40,
 							["cost"] = {
 								{ "i", 12871, 1 },	-- Chromatic Carapace
 								{ "i", 12607, 10 },	-- Brilliant Chromatic Scale
@@ -204,6 +205,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(5166, { 	-- Breastplate of the Chromatic Flight
+							["u"] = 40,
 							["cost"] = {
 								{ "i", 12871, 1 },	-- Chromatic Carapace
 								{ "i", 12607, 10 },	-- Brilliant Chromatic Scale
