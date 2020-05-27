@@ -18,7 +18,7 @@ _.Zones =
 					["coord"] = { 59.2, 50.0, 83 },
 					["g"] = {
 						i(20013),	-- Recipe: Living Action Potion
-						un(2, i(13480)),	-- Recipe: Major Healing Potion
+						un(7, i(13480)),	-- Recipe: Major Healing Potion
 					},
 				}),
 				n(11187, {	-- Himmik <Food & Drink>

@@ -913,8 +913,6 @@ _.Zones =
 									}),
 								}),
 								n(-160, {	-- Mounts
-									i(163823),	-- Coldlight Surfrunner - wowhead
-									i(163821),	-- Juvenile Brineshell - wowhead
 									i(163585),	-- Surf Jelly
 								}),
 								n(-162, {	-- Pets
