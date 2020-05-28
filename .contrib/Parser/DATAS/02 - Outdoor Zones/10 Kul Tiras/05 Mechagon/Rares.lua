@@ -602,9 +602,9 @@ _.Zones =
 				--	possibly attach just the 'box of assorted parts' questID to the overall header instead of the box itself?
 					["modelScale"] = 4.2,
 					["creatureID"] = 150451,	-- Reclamation Rig (before being built)
-					["questID"] = 57132,	-- normal
-					["altQuests"] = { 55848 },	-- hardmode
-					["isDaily"] = true,
+				--	["questID"] = 57132,	-- normal
+				--	["altQuests"] = { 55848 },	-- hardmode
+				--	["isDaily"] = true,	-- for some reason with the quests attached it won't reset after dailies
 					["coord"] = { 70.0, 61.5, 1462 },
 					["g"] = {
 						i(168394, {	-- Box of Assorted Parts

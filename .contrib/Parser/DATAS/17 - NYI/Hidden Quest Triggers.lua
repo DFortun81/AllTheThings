@@ -2169,6 +2169,8 @@ _.NeverImplemented =
 	--	Mechagon
 		q(56089),	-- triggered on first rare kill — possibly blueprint looting?
 		q(56506),	-- triggered on third rare kill — was Mr. Fixthis for me, but someone else had it trigger on Arachnoid Harvester.  looted Performant Refined Logic Board and a Chain Ignitercoil
+		q(57132),	-- Reclamation Rig normal — putting here because with both quests attached with altQuests it doesn't roll over like dailies should
+		q(55848),	-- Reclamation Rig hardmode — putting here because with both quests attached with altQuests it doesn't roll over like dailies should
 		q(55913),	-- Arachnoid Harvester first kill
 		q(56996),	-- Armored Vaultbot first kill
 					-- Boilburn first kill  -- No first kill id
