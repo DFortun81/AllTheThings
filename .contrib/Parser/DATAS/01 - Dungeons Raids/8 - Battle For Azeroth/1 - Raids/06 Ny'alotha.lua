@@ -130,7 +130,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							157254,	-- Tek'ris
 						},
 						["g"] = {
-							i(174449),	-- Ra'kim (pet)
+							i(174448),	-- Aqir Hivespawn (PET!)
+							i(174449),	-- Ra'kim (PET!)
 							i(174106),	-- Qwor N'lyeth
 							i(172192),	-- The All-Seeing Eye
 							i(174154),	-- Nightmarish Chain Shackles
@@ -347,8 +348,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 					["g"] = {
 						ach(14023),	-- Realizing Your Potential
-						i(174448),	-- Aqir Hivespawn (pet)
-						i(174449),	-- Ra'kim (pet)
+						i(174448),	-- Aqir Hivespawn (PET!)
+						i(174449),	-- Ra'kim (PET!)
 						i(174106),	-- Qwor N'lyeth
 						i(172192),	-- The All-Seeing Eye
 						i(174154),	-- Nightmarish Chain Shackles
@@ -580,8 +581,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 					["g"] = {
 						ach(14023),	-- Realizing Your Potential
-						i(174448),	-- Aqir Hivespawn (pet)
-						i(174449),	-- Ra'kim (pet)
+						i(174448),	-- Aqir Hivespawn (PET!)
+						i(174449),	-- Ra'kim (PET!)
 						i(174106),	-- Qwor N'lyeth
 						i(172192),	-- The All-Seeing Eye
 						i(174154),	-- Nightmarish Chain Shackles
@@ -826,8 +827,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					["g"] = {
 						ach(14046),	-- Mythic: The Hivemind
 						ach(14023),	-- Realizing Your Potential
-						i(174448),	-- Aqir Hivespawn (pet)
-						i(174449),	-- Ra'kim (pet)
+						i(174448),	-- Aqir Hivespawn (PET!)
+						i(174449),	-- Ra'kim (PET!)
 						i(174106),	-- Qwor N'lyeth
 						i(172192),	-- The All-Seeing Eye
 						i(174154),	-- Nightmarish Chain Shackles
