@@ -2181,7 +2181,8 @@ _.NeverImplemented =
 		q(55932),	-- Earthbreaker Gulroc first kill
 		q(56994),	-- Enforcer KX-T57 first kill
 		q(55916),	-- Foul Manifestation first kill
-					-- Gear Checker Cogstar first kill
+		q(55915),	-- Fungarian Furor first kill
+		q(55934),	-- Gear Checker Cogstar first kill
 		q(55929),	-- Gemicide first kill
 					-- Gorged Gear-Cruncher first kill
 		q(55910),	-- Jawbreaker first kill

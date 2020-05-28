@@ -1008,12 +1008,13 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(158633, {	-- Gaze of N'Zoth
+						["description"] = "Can spawn anywhere in the Akhenet Fields.  Shares a spawn with Foul Observer.",
 						["questID"] = 57680,
-						["coord"] = { 55.0, 53.0, 1527 },
 						["isDaily"] = true,
+						["coord"] = { 55.0, 53.0, 1527 },
 						["g"] = {
 							i(175142, {	-- All-Seeing Right Eye
-								i(175140),	-- All-Seeing Eyes (toy)
+								i(175140),	-- All-Seeing Eyes (TOY!)
 							}),
 						},
 					}),
