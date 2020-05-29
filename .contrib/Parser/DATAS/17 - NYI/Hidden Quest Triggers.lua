@@ -1934,6 +1934,8 @@ _.NeverImplemented =
 		
 		
 	--	Tiragarde Sound
+		q(55627),	-- triggered additionally when completing the WQ to kill P4-N73R4.  this is not the first-time kill tracking quest for the rare, so i'm not sure what it's for
+		
 		-- Bonus Objectives
 		q(49300, {	-- Creature Corruption
 			["isWorldQuest"] = true,
@@ -1999,6 +2001,8 @@ _.NeverImplemented =
 		q(55413),	-- War Mode supply drop in Zuldazar
 		q(55259),	-- Triggers after turning 'Sleep, Eat, Repeat' (ID 55258) in to finish the achievement criteria 'Sleep, Eat, Repeat' (3) for How to Train Your Direhorn (ID 13542)
 		q(47436),	-- Picked Pa'ku for "Picking a Side"
+		q(50948),	-- Da White Shark, rare with no associated loot (treasure quest is in achievement section)
+		q(125816),	-- Sky Queen, rare with no associated loot
 		-- Bonus Objectives
 		q(47527, {	-- Rituals of Heresy
 			["isWorldQuest"] = true,

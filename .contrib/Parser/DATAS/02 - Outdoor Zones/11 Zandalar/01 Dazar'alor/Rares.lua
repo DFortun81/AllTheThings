@@ -7,10 +7,6 @@ _.Zones =
 	m(875, { 	-- Zandalar
 		m(1163, {	-- Dazar'alor
 			n(RARES, {
-				n(133208, {	-- Da White Shark
-					["questID"] = 50948,
-					["coord"] = { 59.2, 88.8, 1165 },
-				}),
 				n(120899, {	-- Kul'krazahn
 					["questID"] = 48333,
 					["coord"] = { 55.01, 83.61, 1165 },
@@ -29,11 +25,6 @@ _.Zones =
 					["g"] = {
 						i(161049),	-- Ferocious Devilsaur Legwraps
 					},
-				}),
-				n(125816, {	-- Sky Queen
-					["questID"] = 53567,
-					["coord"] = { 50.01, 84.2, 1165 },
-					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 		}),
