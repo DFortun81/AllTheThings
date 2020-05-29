@@ -181,6 +181,45 @@ _.Zones =
 						}),
 					}),
 				}),
+				n(155069, {	-- Honeyback Harvester
+					["description"] = "You can participate in Honeyback Harvester events as many times a day as you want, but there is a one-hour cooldown on being able to loot the final jelly left behind after the event ends.  If you can see the vignette star for the Harvester or a treasure icon surrounded by a spiky star, you are eligible for hourly loot.\n\nThe quests that drop from rares are weekly, but the rares may drop jelly even during the one-hour cooldown and even if you have already completed the specific rare's weekly quest.",
+					["coords"] = {
+						{ 25.6, 73.2, 942 },
+						{ 33.4, 32.8, 942 },
+						{ 40.9, 62.1, 942 },
+						{ 47.3, 32.1, 942 },
+						{ 57.1, 51.2, 942 },
+						{ 61.8, 30.9, 942 },
+						{ 63.0, 21.2, 942 },
+						{ 66.3, 69.9, 942 },
+						{ 72.3, 52.2, 942 },
+					},
+					["g"] = {
+						i(172491),	-- Papi (PET!)
+						i(172492),	-- Sunsoaked Flitter (PET!)
+						i(170175),	-- Technique: Glyph of Dire Bees
+					},
+				}),
+				n(154154, {	-- Honey Smasher
+					["questID"] = 57674,
+					["isDaily"] = true,
+					["coords"] = {
+						{ 59.6, 18.4, 942 },
+						{ 62.0, 15.4, 942 },
+					},
+					["g"] = {
+						i(169133, {	-- Crystallized Jelly
+							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(168825),	-- Rich Jelly
+								i(168828),	-- Royal Jelly
+								i(168822),	-- Thin Jelly
+							},
+						}),
+						i(172493),	-- Snarling Butterfly Crate (PET!)
+						i(172405),	-- Tome of Hex: Living Honey
+					},
+				}),
 				n(141043, {	-- Jakala the Cruel	
 					["description"] = "Due to phasing issues, in order to see this rare you need to enter Brennadam from the southern bridge at 57.6, 66.5.  This will trigger a cutscene and place you in the phase with the rare.",
 				--	doc marrtens and jakala both complete one another's quests.  it's unclear which quest specifically belongs to which rare.

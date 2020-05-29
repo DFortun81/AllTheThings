@@ -15,19 +15,19 @@ _.Zones =
 					n(QUESTS, {
 						q(56473, {	-- Envenomed Spider Fang
 							["provider"] = { "i", 169656 },	-- Envenomed Spider Fang
-							["isWeekly"] = true,	-- according to wowhead!
+							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 							["cr"] = 155172,	-- Trapdoor Bee Hunter
 						}),
 						q(56474, {	-- Hivekiller Stinger
 							["provider"] = { "i", 169655 },	-- Hivekiller Stinger
-							["isWeekly"] = true,	-- according to wowhead!
+							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 							["cr"] = 155171,	-- The Hivekiller
 						}),
-						q(56092, {	-- Hivethief's Jelly Stash (unknown questID)
+						q(56092, {	-- Hivethief's Jelly Stash
 							["provider"] = { "i", 169657 },	-- Hivethief's Jelly Stash
-							["isWeekly"] = true,	-- according to wowhead!
+							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 							["cr"] = 155055,	-- Gurg the Hivethief
 						}),
@@ -41,13 +41,13 @@ _.Zones =
 						}),
 						q(56144, {	-- Old Nasha's Paw
 							["provider"] = { "i", 169659 },	-- Old Nasha's Paw
-							["isWeekly"] = true,	-- according to wowhead!
+							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 							["cr"] = 155176,	-- Old Nasha
 						}),
 						q(56475, {	-- Spiral Yeti Horn
 							["provider"] = { "i", 169654 },	-- Spiral Yeti Horn
-							["isWeekly"] = true,	-- according to wowhead!
+							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 							["cr"] = 155059,	-- Yorag the Jelly Feaster
 						}),
@@ -61,48 +61,9 @@ _.Zones =
 						}),
 						q(56091, {	-- Usurper's Scent Gland
 							["provider"] = { "i", 169658 },	-- Usurper's Scent Gland
-							["isWeekly"] = true,	-- according to wowhead!
+							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
 							["cr"] = 155173,	-- Honeyback Usurper
-						}),
-					}),
-					n(RARES, {
-						n(155069, {	-- Honeyback Harvester
-							["description"] = "You can participate in Honeyback Harvester events as many times a day as you want, but there is a one-hour cooldown on being able to loot the final jelly left behind after the event ends.  If you can see the vignette star for the Harvester or a treasure icon surrounded by a spiky star, you are eligible for hourly loot.\n\nThe quests that drop from rares are weekly, but the rares may drop jelly even during the one-hour cooldown and even if you have already completed the specific rare's weekly quest.",
-							["coords"] = {
-								{ 25.6, 73.2, 942 },	-- *
-								{ 33.4, 32.8, 942 },	-- *
-								{ 40.9, 62.1, 942 },	-- *
-								{ 47.3, 32.1, 942 },	-- *
-								{ 57.1, 51.2, 942 },	-- *
-								{ 61.8, 30.9, 942 },	-- *
-								{ 63.0, 21.2, 942 },	-- *
-								{ 66.3, 69.9, 942 },	-- *
-								{ 72.3, 52.2, 942 },	-- *
-							},
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								i(172491),	-- Papi (PET!)
-								i(172492),	-- Sunsoaked Flitter (PET!)
-								i(170175),	-- Technique: Glyph of Dire Bees
-							},
-						}),
-						n(154154, {	-- Honey Smasher
-							["questID"] = 57674,
-							["isDaily"] = true,
-							["coords"] = {
-								{ 59.6, 18.4, 942 },
-								{ 62.0, 15.4, 942 },
-							},
-							["g"] = {
-								i(169133, {	-- Crystallized Jelly
-									i(168825),	-- Rich Jelly
-									i(168828),	-- Royal Jelly
-									i(168822),	-- Thin Jelly
-								}),
-								i(172493),	-- Snarling Butterfly Crate (PET!)
-								i(172405),	-- Tome of Hex: Living Honey
-							},
 						}),
 					}),
 					o(327230, {	-- Jelly Deposit
