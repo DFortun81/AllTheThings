@@ -13,6 +13,26 @@ _.Zones =
 							{"sub", "pvp_gear_base", -10014, -668, -9983 },	-- Deadly Gladiator: Season 5 Honor Gear
 							{"pop"},	-- Discard the Set header and acquire the children.
 						},
+						["g"] = {
+							un(2, i(28234)),	-- medallion of the alliance (rogue)
+							un(2, i(28235)),	-- medallion of the alliance (druid)
+							un(2, i(28236)),	-- medallion of the alliance (pala)
+							un(2, i(28237)),	-- medallion of the alliance (hunter)
+							un(2, i(28238)),	-- medallion of the alliance (mage)
+							un(2, i(30348)),	-- medallion of the alliance (warlock)
+							un(2, i(30349)),	-- medallion of the alliance (priest)
+							un(2, i(30350)),	-- medallion of the alliance (warrior)
+							un(2, i(30351)),	-- medallion of the alliance (shaman)
+							un(2, i(28240)),	-- medallion of the horde (rogue)
+							un(2, i(28241)),	-- medallion of the horde (druid)
+							un(2, i(28242)),	-- medallion of the horde (pala)
+							un(2, i(28243)),	-- medallion of the horde (hunter)
+							un(2, i(28239)),	-- medallion of the horde (mage)
+							un(2, i(30343)),	-- medallion of the horde (warlock)
+							un(2, i(30346)),	-- medallion of the horde (priest)
+							un(2, i(30344)),	-- medallion of the horde (warrior)
+							un(2, i(30345)),	-- medallion of the horde (shaman)
+						},
 					}),
 					n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
 						["description"] = "This vendor is not always present.",

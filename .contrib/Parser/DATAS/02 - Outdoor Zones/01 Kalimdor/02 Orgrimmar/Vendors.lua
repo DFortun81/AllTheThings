@@ -608,7 +608,6 @@ _.Zones =
 						i(16486), 	-- First Sergeant's Silk Cuffs
 						i(16497), 	-- First Sergeant's Leather Armguards
 						i(16532), 	-- First Sergeant's Mail Wristguards
-						un(2, i(24551)),	-- Talisman of the Horde
 						i(16533), 	-- Warlord's Silk Cowl
 						i(16534), 	-- General's Silk Trousers
 						i(16535), 	-- Warlord's Silk Raiment
@@ -728,6 +727,16 @@ _.Zones =
 						i(18436), 	-- First Sergeant's Dragonhide Armguards
 						i(18437), 	-- First Sergeant's Silk Cuffs
 						i(18427), 	-- Sergeant's Cloak
+						un(2, i(24551)),	-- Talisman of the Horde
+						un(2, i(28240)),	-- medallion of the horde (rogue)
+						un(2, i(28241)),	-- medallion of the horde (druid)
+						un(2, i(28242)),	-- medallion of the horde (pala)
+						un(2, i(28243)),	-- medallion of the horde (hunter)
+						un(2, i(28239)),	-- medallion of the horde (mage)
+						un(2, i(30343)),	-- medallion of the horde (warlock)
+						un(2, i(30346)),	-- medallion of the horde (priest)
+						un(2, i(30344)),	-- medallion of the horde (warrior)
+						un(2, i(30345)),	-- medallion of the horde (shaman)
 					},
 				}),
 				n(50323,  {	-- Frizzo Villamar <Bilgewater Cartel Quartermaster>

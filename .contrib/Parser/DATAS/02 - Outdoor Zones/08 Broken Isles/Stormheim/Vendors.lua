@@ -44,6 +44,12 @@ _.Zones =
 				n(106904, {	-- Valdemar Stormseeker <Valarjar Emissary>
 					["coord"] = { 60.2, 51.2, 634 },
 					["g"] = {
+						i(140225, {	-- Boon of the Salvager
+							["cost"] = 1275000,	-- 127,5g
+							["g"] = {
+								i(140225),	-- Salvaged Armor
+							},
+						}),
 						i(129149, {	-- Death's Door Charm (TOY!)
 							["cost"] = 5000000,	-- 500g
 						}),

@@ -40,6 +40,12 @@ _.Zones =
 						i(139686, {	-- Battlelord's Pauldrons
 							["cost"] = 5000000,	-- 500g
 						}),
+						i(140218, {	-- Boon of the Manaseeker
+							["cost"] = 1000000,	-- 100g
+							["g"] = {
+								i(140226),	-- Mana-Tinged Pack
+							},
+						}),
 						i(139600, {	-- Braided Manastring Cinch
 							["cost"] = 10000000,	-- 1,000g
 						}),

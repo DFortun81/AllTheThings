@@ -20,6 +20,12 @@ _.Zones =
 						i(23712, {	-- Ash'ana (PET!)
 							["cost"] = 5000000,	-- 500g
 						}),
+						i(140214, {	-- Boon of the Harvester 
+							["cost"] = 800000,	-- 80
+							["g"] = {
+								i(140222),	-- Harvested Goods
+							},
+						}),
 						i(140578, {	-- Dreamweaver Initiate's Tabard
 							["cost"] = 3000000,	-- 300g
 						}),

@@ -3,33 +3,6 @@
 ---------------------------------------------------------------------------
 _.NeverImplemented =
 {
-	tier(8, {	-- Battle for Azeroth
-		["g"] = bubbleDown({["u"]=1}, {
-			n(QUESTS, {
-				q(47860),	-- A Rude Awakening
-				q(48994),	-- Akunda the Liar
-				q(49331),	-- An Interesting Find
-				q(47671),	-- Ancient Lore
-				q(47672),	-- Ancient Lore
-				q(48845),	-- Cannon Cremation
-				q(48995),	-- Defeat Xenxuju
-				q(47318),	-- Fruit of the Desert
-				q(48775),	-- Last Respects
-				q(49337),	-- Matters of the Heart
-				q(49336),	-- Piecing Together the Past
-				q(48989),	-- Poisoned Intentions
-				q(50590),	-- Preface the Pitch
-				q(47325),	-- Reckless Vengeance
-				q(49672),	-- Servant of the Loa
-				q(47410),	-- Sethrak Sabotage
-				q(50951),	-- Sharing the Blessings
-				q(50687),	-- Skycaller Carcanet
-				q(48307),	-- Strange Totems
-				q(48990),	-- The Leader Calls
-				q(48838),	-- Water Reclamation
-			}),
-		}),
-	}),
 	n(-10052, {	-- BFA - Stuff that might gets added later duo changes/hotfixes/patches and/or similar
 		-- Future Emsembles!!
 		-- Leather Horde (you probably will learn both after learning one)
@@ -3371,6 +3344,11 @@ _.NeverImplemented =
 		un(1, i(38568)), 	-- Drakkari Charm Bracelet
 		un(1, i(134017)), 	-- Don Carlos' Famous Hat (testing version?)
 		un(1, i(38569)), 	-- Unknown
+		un(1, i(132132)),	-- Glowing Runstone
+		un(1, i(157776)),	-- Dire Missive
+		un(1, i(170484)),	-- dnt torn journal page #14
+		un(1, i(170487)),	-- dnt torn journal page #23
+		un(1, i(170488)),	-- dnt torn journal page #7
 		un(1, i(129111)),	-- Kvaldir Raiding Horn
 		un(1, i(130249)),	-- Waywatcher's Boon
 		un(1, i(38570)), 	-- Unknown
@@ -3418,6 +3396,7 @@ _.NeverImplemented =
 			un(1, i(5748)),	-- Centaur Longbow
 			un(1, i(108783)),   	-- Unknown
 			un(1, i(167144)),   	-- Unknown
+			un(1, i(174855)),	-- Bow of Calamity
 			un(1, i(154971)),	-- howdah-riers bow
 			un(1, i(115294)),	-- Spectral Longbow
 			un(1, i(109283)),   	-- 6.0 QA Combat Test Hunter Bow

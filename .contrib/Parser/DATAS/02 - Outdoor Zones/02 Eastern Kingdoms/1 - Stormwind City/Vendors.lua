@@ -3516,6 +3516,15 @@ _.Zones =
 						un(2, i(18862)),	-- Insignia of the Alliance [Priest]
 						un(2, i(18858)),	-- Insignia of the Alliance [Warlock]
 						un(2, i(18863)),	-- Insignia of the Alliance [Druid]
+						un(2, i(28234)),	-- medallion of the alliance (rogue)
+						un(2, i(28235)),	-- medallion of the alliance (druid)
+						un(2, i(28236)),	-- medallion of the alliance (pala)
+						un(2, i(28237)),	-- medallion of the alliance (hunter)
+						un(2, i(28238)),	-- medallion of the alliance (mage)
+						un(2, i(30348)),	-- medallion of the alliance (warlock)
+						un(2, i(30349)),	-- medallion of the alliance (priest)
+						un(2, i(30350)),	-- medallion of the alliance (warrior)
+						un(2, i(30351)),	-- medallion of the alliance (shaman)
 						un(2, i(28246)),	-- Band of Triumph
 						un(2, i(28247)),	-- Band of Dominance
 						un(2, i(18442)),	-- Master Sergeant's Insignia
@@ -4029,6 +4038,7 @@ _.Zones =
 						i(16437, {	-- Marshal's Silk Footwraps
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
+						un(2, i(25829)),	-- Talisman of the Alliance
 					},
 				}),
 				n(8665, {	-- Shylenai

@@ -861,6 +861,7 @@ _.WorldEvents =
 										i(171510),	-- Legguards of the Apostle
 										i(171623),	-- Necrogenic Belt
 										i(171624),	-- Preceptor's Bindings
+										i(171622),	-- Ring of Holy Cleansing
 										i(171625),	-- Saltarello Shoes
 										i(171520),	-- Serene Echoes
 										i(171621),	-- Shoulderplates of Bloodshed
@@ -897,6 +898,12 @@ _.WorldEvents =
 											["races"] = ALLIANCE_ONLY,
 										}),
 										i(171581, {	-- Baelgun's Heavy Crossbow
+											["races"] = ALLIANCE_ONLY,
+										}),									
+										i(171527, {	-- Band of the Traitor King
+											["races"] = HORDE_ONLY,
+										}),
+										i(171543, {	-- Band of Deplorable violence
 											["races"] = ALLIANCE_ONLY,
 										}),
 										i(171548, {	-- Belt of Deathly Dominion
@@ -1016,6 +1023,9 @@ _.WorldEvents =
 										i(171552, {	-- Legwraps of the Awakening
 											["races"] = HORDE_ONLY,
 										}),
+										i(171539, {	-- Lurid Manifestation
+											["races"] = HORDE_ONLY,
+										}),
 										i(171599, {	-- Mace of the Earthborn Chieftain
 											["races"] = HORDE_ONLY,
 										}),
@@ -1045,6 +1055,9 @@ _.WorldEvents =
 										}),
 										i(171611, {	-- Robes of the Sleepless
 											["races"] = HORDE_ONLY,
+										}),
+										i(171545, {	-- Signet of the Traitor King
+											["races"] = ALLIANCE_ONLY,
 										}),
 										i(171609, {	-- Shoulderpads of the Snow Bandit
 											["races"] = HORDE_ONLY,

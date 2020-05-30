@@ -32,6 +32,12 @@ _.Zones =
 						i(136919, {	-- Baby Elderhorn (PET!)
 							["cost"] = 5000000,		-- 500g
 						}),
+						i(140215, {	-- Boon of the Butcher
+							["cost"] = 800000,	-- 80g
+							["g"] = {
+								i(140224),	-- Butchered Meat
+							},
+						}),
 						i(131812, {	-- Darkshard Fragment (TOY!)
 							["cost"] = 5000000,		-- 500g
 						}),

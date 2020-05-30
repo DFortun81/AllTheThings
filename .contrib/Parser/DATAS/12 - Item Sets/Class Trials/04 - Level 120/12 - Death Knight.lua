@@ -21,6 +21,10 @@ _.GearSets =
 								},
 							},
 						},
+						{	-- Heart-Lesion Runeblade
+							["itemID"] = 170604,	-- Heart-Lesion Runeblade
+							["u"] = 1,
+						},
 						{	-- Heart-Lesion RuneBlade
 							["itemID"] = 1705604,	-- Heart-Lesion RuneBlade
 						},

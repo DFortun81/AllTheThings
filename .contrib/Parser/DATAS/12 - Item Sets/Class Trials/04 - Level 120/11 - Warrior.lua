@@ -23,6 +23,7 @@ _.GearSets =
 								},
 							},
 						},
+						un(1, i(170745)),	-- Oathsworn Axe
 						{	-- Oathsworn Greataxe
 							["itemID"] = 170743,	-- Oathsworn Greataxe
 						},

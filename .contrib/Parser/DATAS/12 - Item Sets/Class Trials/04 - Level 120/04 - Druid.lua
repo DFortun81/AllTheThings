@@ -22,13 +22,14 @@ _.GearSets =
 										},
 									},
 								},
-								{	-- Springrain Stave	*LA0404Balance
+								un(1, i(170625)),	-- Springrain Staff
+								{	-- Springrain Stave	
 									["itemID"] = 170611,	-- Springrain Stave
 								},
 								{	-- Springrain Headpiece	*LA0404Balance
 									["itemID"] = 170778,	-- Springrain Headpiece
 								},
-								un(1, i(170612)),	-- Springrain Medallion	*LA0404Balance
+								un(1, i(170612)),	-- Springrain Medallion	
 								{	-- Springrain Spaulders	*LA0404Balance
 									["itemID"] = 170780,	-- Springrain Spaulders
 								},
