@@ -575,7 +575,7 @@ _.Zones =
 					["sourceQuest"] = 2935,	-- Consult Master Gadrin
 				}),
 				q(39801, {	-- The Splintered Fleet
-					["sourceQuest"] = 38307,	-- The Warchief Beckons
+					["sourceQuest"] = 39698,	-- Making the Rounds
 					["lvl"] = 98,
 					["provider"] = { "n", 96686 },	-- Lady Sylvanas Windrunner <Banshee Queen>
 					["races"] = HORDE_ONLY,

@@ -156,12 +156,6 @@ _.ExpansionFeatures =
 						["lvl"] = 101,
 						["provider"] = { "n", 104795 },	-- Ritssyn Flamescowl
 					}),
-					q(39735, {	-- Stormheim
-						["sourceQuests"] = { 40824 },	-- The Path of the Dreadscar
-						["coord"] = { 65.7, 46.9, 717 },
-						["icon"] = "Interface\\Icons\\inv_misc_map_01",
-						["lvl"] = 98,
-					}),
 					q(42601, {	-- Tech It Up A Notch
 						["sourceQuests"] = { 42602 },	-- Troops in the Field
 						["classes"] = { 9 },	-- Warlock

@@ -1585,7 +1585,6 @@ _.Zones =
 						PRIEST,		-- Shadow
 						WARLOCK,	-- Affliction
 					},
-					["races"] = ALLIANCE_ONLY,	-- may not be alliance-only, but wowhead says it is, so /shrug
 				}),
 				q(44175, {	-- The World Awaits
 					["isWeekly"] = true,

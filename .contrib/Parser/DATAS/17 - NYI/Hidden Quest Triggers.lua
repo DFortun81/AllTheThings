@@ -1152,6 +1152,8 @@ _.NeverImplemented =
 		q(44618),	-- Rogue Order Hall - Tracking Quest: Mission 3 (complete third of 5 missions for order hall campaign) (probably a generic tracker ID rather than specific to rogue)
 		q(44619),	-- Rogue Order Hall - Tracking Quest: Mission 4 (complete fourth of 5 missions for order hall campaign) (probably a generic tracker ID rather than specific to rogue)
 		q(44620),	-- Rogue Order Hall - Tracking Quest: Mission 5 (complete fifth of 5 missions for order hall campaign) (probably a generic tracker ID rather than specific to rogue)
+		q(44621),	-- Rogue Order Hall - Tracking Quest: Mission 1
+		q(44622),	-- Rogue Order Hall - Tracking Quest: Mission 1
 		q(45447),	-- Rogue Order Hall - give a Noggenfogger coin to Marin Noggenfogger
 		q(43716),	-- Rogue Order Hall - loot spawned in the vault
 		q(43634),	-- Rogue Order Hall - looted the rogue vault

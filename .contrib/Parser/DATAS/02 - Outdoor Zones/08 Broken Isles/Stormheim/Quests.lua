@@ -361,7 +361,9 @@ _.Zones =
 					},
 				}),
 				q(38308, {	-- Eyes in the Overlook
+					["lvl"] = 98,
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 244453 },	-- Cullen's Scouting Report
 					["coord"] = { 36.7, 31.0, 634 },
 					["sourceQuests"] = { 38362 },	-- A Grim Trophy
 				}),
@@ -456,6 +458,8 @@ _.Zones =
 					["provider"] = { "n", 90866 },	-- Tinkmaster Overspark
 				}),
 				q(38317, {	-- Masters of Disguise
+					["lvl"] = 98,
+					["provider"] = { "n", 113911 },	-- Spymaster Knockwhistle
 					["sourceQuests"] = { 38308 },	-- Eyes in the Overlook
 					["races"] = HORDE_ONLY,
 					["coord"] = { 33.3, 31.4, 634 },
@@ -686,14 +690,20 @@ _.Zones =
 					["itemID"] = 138111,	-- Stormforged Grapple Launcher
 					["coord"] = { 36.9, 31.8, 634 },
 				}),
-				--[[
-				q(44700, {	-- Stormheim (probably granted by scouting map)
+				q(44700, {	-- Stormheim (A)
+					["lvl"] = 98,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "n", 107460 },	-- Archmage Landon
+					["coord"] = { 30.3, 40.6, 634 },
+					["altQuests"] = { 39735 },	-- Stormheim (A) from Scouting Map
 				}),
-				q(44701, {	-- Stormheim (probably granted by scouting map)
+				q(44701, {	-- Stormheim (H)
+					["lvl"] = 98,
 					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 107460 },	-- Archmage Landon
+					["coord"] = { 30.3, 40.6, 634 },
+					["altQuests"] = { 39864 },	-- Stormheim (H) from Scouting Map
 				}),
-				]]--
 				q(40005, {	-- Stormheim's Salvation
 					["sourceQuests"] = {
 						40004,	-- Break the Spine
@@ -839,9 +849,11 @@ _.Zones =
 					["provider"] = { "n", 108072 },	-- Sir Finley Mrrggglton
 				}),
 				q(38332, {	-- The Ranger Lord
+					["lvl"] = 98,
 					["races"] = HORDE_ONLY,
-					["coord"] = { 36.1, 27.5, 634 },
+					["sourceQuests"] = { 39801 },	-- The Splintered Fleet
 					["provider"] = { "n", 91473 },	-- Dread-Rider Cullen
+					["coord"] = { 36.1, 27.5, 634 },
 				}),
 				q(45486, {	-- The Reluctant Queen
 					["lvl"] = 110,
@@ -884,7 +896,7 @@ _.Zones =
 					["coord"] = { 75.5, 50.8, 634 },
 				}),
 				q(38360, {	-- The Windrunner's Fate
-					["sourceQuests"] = { 38322 },	-- The Ranger Lord
+					["sourceQuests"] = { 38332 },	-- The Ranger Lord
 					["races"] = HORDE_ONLY,
 					["coord"] = { 37.8, 21.6, 634 },
 					["provider"] = { "n", 91158 },	-- Nathanos Blightcaller
@@ -1099,7 +1111,7 @@ _.Zones =
 					},
 				}),
 				q(38361, {	-- Wrath of the Blightcaller
-					["sourceQuests"] = { 38322 },	-- The Ranger Lord
+					["sourceQuests"] = { 38332 },	-- The Ranger Lord
 					["races"] = HORDE_ONLY,
 					["coord"] = { 37.8, 21.6, 634 },
 					["provider"] = { "n", 91158 },	-- Nathanos Blightcaller

@@ -118,6 +118,16 @@ _.ExpansionFeatures =
 						un(40, q(44917, {	-- Return to Karazhan: The Tower of Power (No Tag but Mythic) 
 							un(2, i(142342)),	-- Glittering Pack (No Tag but Mythic) 
 						})),
+						q(39735, {	-- Stormheim (A)
+							["lvl"] = 98,
+							["races"] = ALLIANCE_ONLY,
+							["altQuests"] = { 44700 },	-- Stormheim (A) from Archmage Landon in Stormheim
+						}),
+						q(39864, {	-- Stormheim (H)
+							["lvl"] = 98,
+							["races"] = HORDE_ONLY,
+							["altQuests"] = { 44701 },	-- Stormheim (H) from Archmage Landon in Stormheim
+						}),
 						un(40, q(43555, {	-- The Arcway: Into the Arcway (Normal) -- 
 							un(2, i(141162)),	-- Unmarked Suramar Vault Crate (Normal)
 						})),

@@ -368,9 +368,6 @@ _.ExpansionFeatures =
 						["lvl"] = 101,
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 					}),
-					q(39864, {	-- Stormheim
-						["sourceQuests"] = { 41019 },	-- Actions on Azeroth
-					}),
 					q(43277, {	-- Tech It Up A Notch
 						["sourceQuests"] = { 43276 },	-- Troops in the Field
 						["classes"] = { 5 },	-- Priest
