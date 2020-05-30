@@ -687,6 +687,7 @@ _.NeverImplemented =
 		q(34600),	-- Shadowmoon Valley - Tracking Quest: Saw Vorka, Rangari Leave
 		q(34622),	-- Shadowmoon Valley - Tracking Quest: Saw Ner'zhul Leave
 		q(33839),	-- Shadowmoon Valley - Tracking Quest: Saw Naaru Purified
+		q(34599),	-- Shadowmoon Valley - Tracking Quest: Saw Yrel Leave Twilight Glade
 		q(36907),	-- Shadowmoon Valley - Tracking Quest: Defense of Karabor - Celebration Finished
 		q(33086),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 1
 		q(33165),	-- Shadowmoon Valley - Tracking Quest: The Root of Darkness - Stone 2
