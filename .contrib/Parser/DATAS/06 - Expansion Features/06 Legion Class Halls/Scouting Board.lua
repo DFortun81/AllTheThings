@@ -155,7 +155,14 @@ _.ExpansionFeatures =
 						q(45172, {	-- To Battle!
 							["provider"] = { "i", 143328 },	-- Battle Report
 							["g"] = {
-								 i(143606),	-- Satchel of Battlefield Spoils
+								 i(143606, {	-- Satchel of Battlefield Spoils
+									i(140413),	-- Grisly Souvenir
+									i(140414),	-- Fel-Loaded Dice
+									i(140417),	-- Battle-Tempered Hilt
+									i(140418),	-- "Borrowed" Soul Essence
+									i(140419),	-- Blindside Approach
+									i(140423),	-- Exhaustive Research
+								}),
 							},
 						}),
 					}),
@@ -214,7 +221,10 @@ _.ExpansionFeatures =
 						q(45179, {	-- Win the Crowed
 							["provider"] = { "i", 143478 },	-- Arena Invitation
 							["g"] = {
-								un(2, i(143607)),	-- Solider's Footlocker
+								un(2, i(143607, {	-- Solider's Footlocker
+									un(2, i(140415)),	--	Blaze of Glory
+									i(140423),	-- Exhaustive Research
+								})),
 							},
 							["u"] = 40,
 						}),

@@ -846,6 +846,7 @@ _.WorldEvents =
 							n(-10014, {	-- Wrath of the Lich King
 								n(15936, {	-- Heigan the Unclean
 									["g"] = bubbleDown({ ["u"] = 31 }, {	-- WoW Anniversary
+										i(171618),	-- Amulet of Autopsy
 										i(171515),	-- Bindings of the Decrepit
 										i(171509),	-- Breastplate of Tormented Rage
 										i(171516),	-- Chestguard of Bitter Charms

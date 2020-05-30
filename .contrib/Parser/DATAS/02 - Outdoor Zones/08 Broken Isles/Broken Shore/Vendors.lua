@@ -67,6 +67,9 @@ _.Zones =
 							i(146780),	-- Mail
 							i(146764),	-- Plate
 						})),
+						un(2, i(147837, {	-- Relinquished Relics
+							un(2, i(140086)),	-- Intact Infernal Palm (Fel)
+						})),
 					},
 				}),
 				n(120076, {	-- Treasure Master Iks'reeged

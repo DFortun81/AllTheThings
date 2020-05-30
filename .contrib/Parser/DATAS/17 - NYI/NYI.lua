@@ -656,6 +656,16 @@ _.NeverImplemented =
 			un(1, i(54723)),	-- Living Leggings
 			un(1, i(25796)),	-- Lurking Shadow Spaulders (only beta)
 			un(1, i(22273)),	-- Moonshadow Hood (Leather)
+			un(1, i(59790)),	-- Unknown
+			un(1, i(62697)),	-- Unknown
+			un(1, i(62698)),	-- Unknown
+			un(1, i(62699)),	-- Unknown
+			un(1, i(62700)),	-- Unknown
+			un(1, i(62701)),	-- Unknown
+			un(1, i(62702)),	-- Unknown
+			un(1, i(62703)),	-- Unknown
+			un(1, i(62704)),	-- Unknown
+			un(1, i(65099)),	-- Unknown
 			un(1, i(54691)),	-- Nightscape Tunic
 			un(1, i(107864)),	-- Unknown
 			un(1, i(107868)),	-- Unknown
@@ -1032,6 +1042,14 @@ _.NeverImplemented =
 			un(1, i(166410)),	-- Flaskzertauren Mail Shoulderguards
 			un(1, i(12105)),	-- Pridemail Leggings
 			un(1, i(37420)),	-- Sharkproof Boots
+			un(1, i(62715)),	-- Unknown
+			un(1, i(62716)),	-- Unknown
+			un(1, i(62717)),	-- Unknown
+			un(1, i(62718)),	-- Unknown
+			un(1, i(62719)),	-- Unknown
+			un(1, i(62720)),	-- Unknown
+			un(1, i(62721)),	-- Unknown
+			un(1, i(62722)),	-- Unknown
 			un(1, i(153381)),	-- aiguille-Scaler's wristguards
 			un(1, i(153382)),	-- aiguille-Scaler's gloves
 			un(1, i(153383)),	-- aiguille-Scaler's leggings
@@ -1583,6 +1601,13 @@ _.NeverImplemented =
 			un(1, i(167136)),	-- Unknown
 			un(1, i(33196)),	-- Unknown
 			un(1, i(13812)),	-- Ring of the Dawn
+			un(1, i(80955)),	-- scavenger's loop
+			un(1, i(80956)),	-- scavenger's ring
+			un(1, i(80957)),	-- scavenger's band
+			un(1, i(80958)),	-- scavenger's seal
+			un(1, i(80959)),	-- scavenger's signet
+			un(1, i(109391)),	-- unknown
+			un(1, i(110704)),	-- unknown
 			un(1, i(108813)),	-- Unknown
 			un(1, i(108820)),	-- Unknown
 			un(1, i(108821)),	-- Unknown
@@ -3615,6 +3640,31 @@ _.NeverImplemented =
 		n(-387,	{	-- Relics
 			un(1, i(132252)),	-- Owen Test Relic
 			un(1, i(130162)),   	-- Val-Sharah Artifact Gem #1
+			un(1, i(140070)),	-- Deep cave ice crystal (ptr only)
+			un(1, i(136988)),	-- qa combat test relic holy 1
+			un(1, i(136989)),	-- qa combat test relic arcane 1
+			un(1, i(136990)),	-- qa combat test relic blood 1
+			un(1, i(136991)),	-- qa combat test relic fel 1
+			un(1, i(136992)),	-- qa combat test relic fire 1
+			un(1, i(136993)),	-- qa combat test relic frost 1
+			un(1, i(136994)),	-- qa combat test relic iron 1
+			un(1, i(136995)),	-- qa combat test relic life 1
+			un(1, i(136996)),	-- qa combat test relic shadow 1
+			un(1, i(136998)),	-- qa combat test relic wind 1
+			un(1, i(136999)),	-- qa combat test relic holy 2
+			un(1, i(137000)),	-- qa combat test relic arcane 2
+			un(1, i(137001)),	-- qa combat test relic blood 2
+			un(1, i(137002)),	-- qa combat test relic fel 2
+			un(1, i(137003)),	-- qa combat test relic fire 2
+			un(1, i(137004)),	-- qa combat test relic frost 2
+			un(1, i(137005)),	-- qa combat test relic iron 2
+			un(1, i(137006)),	-- qa combat test relic life 2
+			un(1, i(137007)),	-- qa combat test relic shadow 2
+			un(1, i(137009)),	-- qa combat test relic wind 2
+			un(1, i(140411)),	-- clarity of voncivtion
+			un(1, i(140412)),	-- Reactive Intuition
+			un(1, i(140416)),	-- Conscience of the Victorious
+			un(1, i(140420)),	-- Battering Tempest
 		}),
 		n(-332, {	-- Shields
 			un(1, i(165617)),	-- Unknown

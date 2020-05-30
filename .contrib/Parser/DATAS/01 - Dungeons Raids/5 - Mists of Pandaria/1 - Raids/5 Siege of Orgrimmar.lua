@@ -59,6 +59,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						un(2, i(104924)),	-- Purified Bindings of Immerseus LFR
 						un(2, i(104926)),	-- Salt Water Sandals LFR
 						un(2, i(104925)),	-- Seal of Eternal Sorrow LFR
+						un(2, i(104928)),	-- Soul-Soaked Gloves LFR
 						un(2, i(104916)),	-- Treads of Unchained Hate LFR
 						un(2, i(104910)),	-- Trident of Corrupted Waters LFR
 						un(2, i(104930)),	-- Waterwalker Greatboots LFR
@@ -357,6 +358,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						un(2, i(104675)),	-- Purified Bindings of Immerseus Normal
 						un(2, i(104677)),	-- Salt Water Sandals Normal
 						un(2, i(104676)),	-- Seal of Eternal Sorrow Normal
+						un(2, i(104679)),	-- Soul-Soaked Gloves Normal
 						un(2, i(104667)),	-- Treads of Unchained Hate Normal
 						un(2, i(104661)),	-- Trident of Corrupted Waters Normal
 						un(2, i(104681)),	-- Waterwalker Greatboots Normal
@@ -673,6 +675,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						un(2, i(105175)),	-- Salt Water Sandals Heroic WF
 						un(2, i(103771)),	-- Seal of Eternal Sorrow Heroic
 						un(2, i(105174)),	-- Seal of Eternal Sorrow Heroic WF
+						un(2, i(103763)),	-- Soul-Soaked Gloves Heroic
+						un(2, i(105177)),	-- Soul-Soaked Gloves Heroic WF
 						un(2, i(103744)),	-- Treads of Unchained Hate Heroic
 						un(2, i(105165)),	-- Treads of Unchained Hate Heroic WF
 						un(2, i(103726)),	-- Trident of Corrupted Waters Heroic
@@ -1220,6 +1224,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						un(2, i(105424)),	-- Salt Water Sandals Mythic WF
 						un(2, i(104427)),	-- Seal of Eternal Sorrow Mythic
 						un(2, i(105423)),	-- Seal of Eternal Sorrow Mythic WF
+						un(2, i(104430)),	-- Soul-Soaked Gloves Mythic
+						un(2, i(105426)),	-- Soul-Soaked Gloves Mythic WF
 						un(2, i(104418)),	-- Treads of Unchained Hate Mythic
 						un(2, i(105414)),	-- Treads of Unchained Hate Mythic WF
 						un(2, i(104412)),	-- Trident of Corrupted Waters Mythic
