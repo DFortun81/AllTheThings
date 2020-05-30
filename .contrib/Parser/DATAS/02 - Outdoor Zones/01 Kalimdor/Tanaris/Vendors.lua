@@ -369,6 +369,18 @@ _.Zones =
 						un(2, i(30346)),	-- medallion of the horde (priest)
 						un(2, i(30344)),	-- medallion of the horde (warrior)
 						un(2, i(30345)),	-- medallion of the horde (shaman)
+						un(2, i(37865)),	-- medallion of the horde (epic)
+						un(2, i(38588)),	-- Medallion of the horde (dk)
+						un(2, i(69862)),	-- Medallion of the horde 
+						un(2, i(37864)),	-- medallion of the alliance (epic)
+						un(2, i(38589)),	-- Medallion of the alliance (dk)
+						un(2, i(69861)),	-- Medallion of the alliance 
+						un(2, i(34576)),	-- battlemaster's cruelty
+						un(2, i(34577)),	-- battlemaster's depravity
+						un(2, i(34578)),	-- battlemaster's determination
+						un(2, i(34579)),	-- battlemaster's audacity
+						un(2, i(34580)),	-- battlemaster's persevennerance
+						un(2, i(35327)),	-- battlemaster's alacrity
 					},
 				}),
 				n(6568,   {	-- Vizzklick <Tailoring Supplies>

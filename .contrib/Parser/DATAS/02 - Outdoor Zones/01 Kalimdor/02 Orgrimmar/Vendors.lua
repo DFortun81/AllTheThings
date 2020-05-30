@@ -401,6 +401,17 @@ _.Zones =
 						i(92070),	-- Houjin Satchel
 					},
 				}),
+				n(24520, {	-- Doris Volanthius <Armor Quartermaster> -- BC S4 Vendor for Trinkets
+					-- The NPC ID got reused — she was also >S11< Elite Vendor & >S9< Vendor
+					["coord"] = { 38.8, 69.8, 85 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						un(2, i(41587)),	-- battlemaster's celerity
+						un(2, i(41588)),	-- battlemaster's aggression
+						un(2, i(41589)),	-- battlemaster's resolve
+						un(2, i(41590)),	-- battlemaster's courage
+					},
+				}),
 				n(46593,  {	-- Doris Volanthius >S9< Elite <Vicious Gladiator>
 					["coord"] = { 38.8, 69.8, 85 },
 					["races"] = HORDE_ONLY,
@@ -737,6 +748,15 @@ _.Zones =
 						un(2, i(30346)),	-- medallion of the horde (priest)
 						un(2, i(30344)),	-- medallion of the horde (warrior)
 						un(2, i(30345)),	-- medallion of the horde (shaman)
+						un(2, i(37865)),	-- medallion of the horde (epic)
+						un(2, i(38588)),	-- Medallion of the horde (dk)
+						un(2, i(69862)),	-- Medallion of the horde 
+						un(2, i(34576)),	-- battlemaster's cruelty
+						un(2, i(34577)),	-- battlemaster's depravity
+						un(2, i(34578)),	-- battlemaster's determination
+						un(2, i(34579)),	-- battlemaster's audacity
+						un(2, i(34580)),	-- battlemaster's persevennerance
+						un(2, i(35327)),	-- battlemaster's alacrity
 					},
 				}),
 				n(50323,  {	-- Frizzo Villamar <Bilgewater Cartel Quartermaster>

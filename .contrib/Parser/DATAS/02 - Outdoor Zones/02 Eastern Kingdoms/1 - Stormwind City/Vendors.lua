@@ -2642,6 +2642,17 @@ _.Zones =
 						}),
 					},
 				}),
+				n(23446, {	-- Lieutenant Tristia -- BC S4 Vendor for Trinkets
+					-- The NPC ID got reused — she was also >S11< Elite Vendor & >S9< Vendor
+					["coord"] = { 75.0, 67.0, 84 },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						un(2, i(41587)),	-- battlemaster's celerity
+						un(2, i(41588)),	-- battlemaster's aggression
+						un(2, i(41589)),	-- battlemaster's resolve
+						un(2, i(41590)),	-- battlemaster's courage
+					},
+				}),
 				n(51255, {	--Lieutenant Tristia >S9< Elite <Vicious Gladiator>
 					["coord"] = { 75.0, 67.0, 84 },
 					["races"] = ALLIANCE_ONLY,
@@ -3525,6 +3536,15 @@ _.Zones =
 						un(2, i(30349)),	-- medallion of the alliance (priest)
 						un(2, i(30350)),	-- medallion of the alliance (warrior)
 						un(2, i(30351)),	-- medallion of the alliance (shaman)
+						un(2, i(37864)),	-- medallion of the alliance (epic)
+						un(2, i(38589)),	-- Medallion of the alliance (dk)
+						un(2, i(69861)),	-- Medallion of the alliance 
+						un(2, i(34576)),	-- battlemaster's cruelty
+						un(2, i(34577)),	-- battlemaster's depravity
+						un(2, i(34578)),	-- battlemaster's determination
+						un(2, i(34579)),	-- battlemaster's audacity
+						un(2, i(34580)),	-- battlemaster's persevennerance
+						un(2, i(35327)),	-- battlemaster's alacrity
 						un(2, i(28246)),	-- Band of Triumph
 						un(2, i(28247)),	-- Band of Dominance
 						un(2, i(18442)),	-- Master Sergeant's Insignia
