@@ -205,6 +205,7 @@ _.Zones =
 								n(-319, {	-- Weapons
 									i(163925),	-- Old Jon's Left Hand
 									i(169290),	-- Plundered Black Tooth Face-Splitter
+									i(164334),	-- Plundered Blade of Northern Kings
 									i(164355),	-- Plundered Essence Font Scepter
 									i(164357),	-- Plundered Twilight Pummeler
 									i(164356),	-- Plundered Twinscale Handblade
@@ -266,6 +267,7 @@ _.Zones =
 									i(164266),	-- Plundered Totem Barrier
 								}),
 								n(-319, {	-- Weapons
+									i(164337),	-- Plundered Amber Slinger
 									i(164267),	-- Plundered Biting Shot Longbow
 									i(164269),	-- Plundered Death Chatter Wand
 									i(164265),	-- Plundered Ice-Etched Axe
@@ -401,8 +403,17 @@ _.Zones =
 									i(163807),	-- Tinder Pup — may need to be moved to CBD section
 								}),
 								n(-319, {	-- Weapons
+									i(163927),	-- Brinebeard's Shanker — may need to be moved to CBD section
+									i(169290),	-- Plundered Black Tooth Face-Splitter
 									i(164334),	-- Plundered Blade of Northern Kings
 									i(164333),	-- Plundered Bow of the Chosen
+									i(164355),	-- Plundered Essence Font Scepter
+									i(164312),	-- Plundered Jinyu Longsword
+									i(164313),	-- Plundered Jinyu Spear
+									i(164303),	-- Plundered Splitblade Slicer
+									i(164357),	-- Plundered Twilight Pummeler
+									i(164356),	-- Plundered Twinscale Handblade
+									i(164306),	-- Plundered Waterspeaker's Spellblade
 									i(164354),	-- Plundered Wingblade Axe
 								}),
 							},
@@ -453,6 +464,10 @@ _.Zones =
 									i(163798),	-- Captain Nibs
 								}),
 								n(-319, {	-- Weapons
+									i(163927),	-- Brinebeard's Shanker — may need to be moved to CBD section
+									i(169290),	-- Plundered Black Tooth Face-Splitter
+									i(164334),	-- Plundered Blade of Northern Kings
+									i(164333),	-- Plundered Bow of the Chosen
 									i(164304),	-- Plundered Celestial Finblade
 									i(164312),	-- Plundered Jinyu Longsword
 									i(164313),	-- Plundered Jinyu Spear
@@ -535,19 +550,26 @@ _.Zones =
 									i(169322),	-- Adventurous Hopling Pack
 									i(163801),	-- Octopode Fry
 								}),
+								n(-332, {	-- Shields
+									i(164282),	-- Plundered Jadefury Shield
+								}),
 								n(-319, {	-- Weapons
 									i(168644),	-- Converted Carrot Carbine
 									i(164337),	-- Plundered Amber Slinger
 									i(164338),	-- Plundered Ambershaper's Egg
+									i(164350),	-- Plundered Dragon Roar-Barrel
 									i(169289),	-- Plundered Gourd Thumper
+									i(164314),	-- Plundered Hozen Chieftain's Stave
 									i(164265),	-- Plundered Ice-Etched Axe
-									i(164282),	-- Plundered Jadefury Shield
 									i(164281),	-- Plundered Jadestar Blade
+									i(164280),	-- Plundered Light-Binding Wand
 									i(164283),	-- Plundered Mogu Scepter
 									i(164335),	-- Plundered Paragon's Mace
 									i(164284),	-- Plundered Poleaxe of Intimidation
+									i(164353),	-- Plundered Scalebane Claymore
 									i(164336),	-- Plundered Swarmer's Blade
 									i(164359),	-- Plundered Tainted Scarab Stave
+									i(164268),	-- Plundered Troll Ceremonial Basher
 								}),
 							},
 						}),
@@ -597,9 +619,11 @@ _.Zones =
 									i(163807),	-- Tinder Pup — may need to be moved to CBD section
 								}),
 								n(-319, {	-- Weapons
+									i(164364),	-- Plundered Carapace Linked Longsword
 									i(164275),	-- Plundered Desert Hexxer
 									i(164292),	-- Plundered Petrified Tree
 									i(164296),	-- Plundered Tenderizing Crusher
+									i(164362),	-- Plundered Wand of Tentacle Horrors
 								}),
 							},
 						}),
@@ -640,8 +664,14 @@ _.Zones =
 									i(163795),	-- Oomgut Ritual Drum
 								}),
 								n(-319, {	-- Weapons
+									i(164267),	-- Plundered Biting Shot Longbow
 									i(164307),	-- Plundered Crag Basher
 									i(164314),	-- Plundered Hozen Chieftain's Stave
+									i(164281),	-- Plundered Jadestar Blade
+									i(164283),	-- Plundered Mogu Scepter
+									i(164284),	-- Plundered Poleaxe of Intimidation
+									i(164336),	-- Plundered Swarmer's Blade
+									i(164268),	-- Plundered Troll Ceremonial Basher
 								}),
 							},
 						}),
@@ -822,17 +852,29 @@ _.Zones =
 										i(164398),	-- Dragonrider's Boots
 									}),
 								}),
+								n(-332, {	-- Shields
+									i(164282),	-- Plundered Jadefury Shield
+								}),
 								n(-319, {	-- Weapons
+									i(164337),	-- Plundered Amber Slinger
+									i(164267),	-- Plundered Biting Shot Longbow
+									i(164307),	-- Plundered Crag Basher
 									i(164352),	-- Plundered Darkscale Blade
 									i(164350),	-- Plundered Dragon Roar-Barrel
 									i(164351),	-- Plundered Dragonfist Wand
 									i(164332),	-- Plundered Drillbore Fists
+									i(169289),	-- Plundered Gourd Thumper
+									i(164314),	-- Plundered Hozen Chieftain's Stave
+									i(164281),	-- Plundered Jadestar Blade
+									i(164283),	-- Plundered Mogu Scepter
 									i(164349),	-- Plundered Obsidian Scale Smasher
 									i(164335),	-- Plundered Paragon's Mace
 									i(164358),	-- Plundered Sand-Dweller's Scimitar
 									i(164360),	-- Plundered Sandstone Gavel
 									i(164353),	-- Plundered Scalebane Claymore
+									i(164291),	-- Plundered Seatusk Shiv
 									i(164359),	-- Plundered Tainted Scarab Stave
+									i(164268),	-- Plundered Troll Ceremonial Basher
 									i(164361),	-- Plundered Twinblade of the Tol'vir
 								}),
 							},
