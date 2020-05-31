@@ -3361,7 +3361,7 @@ app.SearchForLink = SearchForLink;
 
 -- Map Information Lib
 local function AddTomTomWaypoint(group, auto)
-	if TomTom and group.visible then
+	if TomTom and (group.visible or (app.Settings:Get("DebugMode"))) then
 		if group.coords or group.coord then
 			local opt = {
 				title = group.text or group.link,
