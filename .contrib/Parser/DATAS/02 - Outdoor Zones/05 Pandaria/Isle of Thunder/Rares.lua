@@ -201,6 +201,7 @@ _.Zones =
 					},
 				}),
 				i(92426, {	-- Sealed Tome of the Lost Legion
+					["spellID"] = 101508,	-- The Codex of Zerrath
 					["collectible"] = true,
 					["classes"] = { WARLOCK },
 					["crs"] = {
