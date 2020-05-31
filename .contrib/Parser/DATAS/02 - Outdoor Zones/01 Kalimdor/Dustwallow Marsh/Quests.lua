@@ -1036,6 +1036,7 @@ _.Zones =
 					["coord"] = { 68.3, 51.9, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27213,	-- The End of the Deserters
+					["isBreadcrumb"] = true,
 				}),
 				q(11225, {	-- The Hermit of Witch Hill
 					["u"] = 40,
