@@ -56,6 +56,20 @@ _.ExpansionFeatures =
 							un(7, i(55694)),	-- Nighthaven Shoulders
 							un(7, i(55703)),	-- Nighthaven Waistband
 							un(7, i(36701)),	-- Pine Needle Staff
+							un(7, i(55469)),	-- Rustmaul Greatsword
+							un(7, i(55460)),	-- Rustmaul Sword
+							un(7, i(55343)),	-- Rustmaul Staff
+							un(7, i(55451)),	-- Rustmaul Staff
+							un(7, i(55415)),	-- Rustmaul Spear
+							un(7, i(55397)),	-- Rustmaul Hammer
+							un(7, i(55388)),	-- Rustmaul Mace
+							un(7, i(55361)),	-- Rustmaul Gun
+							un(7, i(55352)),	-- Rustmaul Knuckles
+							un(7, i(55334)),	-- Rustmaul Dagger
+							un(7, i(55325)),	-- Rustmaul Crossbow
+							un(7, i(55307)),	-- Rustmaul Bow
+							un(7, i(55298)),	-- Rustmaul Broadaxe
+							un(7, i(55289)),	-- Rustmaul Axe
 							un(7, i(36659)),	-- Shivery Wand
 							un(7, i(55316)),	-- Sorrowmurk Cloak
 							un(7, i(55379)),	-- Sorrowmurk Crystal
