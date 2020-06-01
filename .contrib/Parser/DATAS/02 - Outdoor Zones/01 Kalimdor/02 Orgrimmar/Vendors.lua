@@ -405,11 +405,39 @@ _.Zones =
 					-- The NPC ID got reused — she was also >S11< Elite Vendor & >S9< Vendor
 					["coord"] = { 38.8, 69.8, 85 },
 					["races"] = HORDE_ONLY,
+					["u"] = 43,	-- Removed NPCs
 					["g"] = {
+						un(2, i(33065)),	-- Veterans Pendant of Dominance
+						un(2, i(33066)),	-- Veterans Pendant of triumph
+						un(2, i(33067)),	-- Veterans Pendant of conquest
+						un(2, i(33068)),	-- Veterans Pendant of salvation
+						un(2, i(33920)),	-- Vindicator's Pendant of conquest
+						un(2, i(33921)),	-- Vindicator's Pendant of dominance
+						un(2, i(33922)),	-- Vindicator's Pendant of salvation
+						un(2, i(33923)),	-- Vindicator's Pendant of triumph
+						un(2, i(35132)),	-- guardians pendant of conquest
+						un(2, i(35133)),	-- guardians pendant of dominance
+						un(2, i(35134)),	-- guardians pendant of salvation
+						un(2, i(35135)),	-- guardians pendant of triumph
+						un(2, i(35317)),	-- Vindicator's Pendant of reprive
+						un(2, i(35319)),	-- Vindicator's Pendant of subjugation
+						un(2, i(37928)),	-- guardians pendant of subjugation
+						un(2, i(37929)),	-- guardians pendant of reprieve
 						un(2, i(41587)),	-- battlemaster's celerity
 						un(2, i(41588)),	-- battlemaster's aggression
 						un(2, i(41589)),	-- battlemaster's resolve
 						un(2, i(41590)),	-- battlemaster's courage
+						un(2, i(33056)),	-- Veteran's Band of Dominance
+						un(2, i(33057)),	-- Veteran's Band of Triumph 
+						un(2, i(33064)),	-- Veteran's Band of Salvation
+						un(2, i(33853)),	-- Vindicator's Band of Dominance
+						un(2, i(33853)),	-- Vindicator's Band of Salvation
+						un(2, i(33853)),	-- Vindicator's Band of Triump
+						un(2, i(33853)),	-- guardians band of dominance
+						un(2, i(33853)),	-- guardians band of salvation
+						un(2, i(33853)),	-- guardians band of triump
+						un(2, i(33853)),	-- Vindicator's Band of subjugation
+						un(2, i(33853)),	-- guardians band of subjugation
 					},
 				}),
 				n(46593,  {	-- Doris Volanthius >S9< Elite <Vicious Gladiator>
@@ -422,17 +450,6 @@ _.Zones =
 					},
 					["g"] = {
 						n(-4178, {	-- Old Season 10 (Header Missing, need new Header)
-							un(2, i(33056)),	-- Veteran's Band of Dominance
-							un(2, i(33057)),	-- Veteran's Band of Triumph 
-							un(2, i(33064)),	-- Veteran's Band of Salvation
-							un(2, i(33853)),	-- Vindicator's Band of Dominance
-							un(2, i(33853)),	-- Vindicator's Band of Salvation
-							un(2, i(33853)),	-- Vindicator's Band of Triump
-							un(2, i(33853)),	-- guardians band of dominance
-							un(2, i(33853)),	-- guardians band of salvation
-							un(2, i(33853)),	-- guardians band of triump
-							un(2, i(33853)),	-- Vindicator's Band of subjugation
-							un(2, i(33853)),	-- guardians band of subjugation
 							un(2, i(70515)),	-- Vicious Gladiator's armwraps of accuracy. S10 Version
 							un(2, i(70516)),	-- Vicious Gladiator's armwrapf of alacrity. S10 Version
 							un(2, i(70523)),	-- Vicious Gladiator's belt of cruelty. S10 Version

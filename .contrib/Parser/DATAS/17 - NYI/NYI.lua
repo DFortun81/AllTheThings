@@ -82,16 +82,6 @@ _.NeverImplemented =
 		un(1, i(140704)),	-- Assassins Serrated Dagger
 		un(1, i(150599)),	-- Assassins Serrated Dagger
 		
-		-- Possible BC TW Gear (not in journal)
-		un(1, i(150450)),	-- Nether Shadow Tunic
-		un(1, i(150448)),	-- pauldrons of abyssal fury
-		un(1, i(150461)),	-- praetorians legguards
-		un(1, i(150465)),	-- myrmidons treads
-		un(1, i(150472)),	-- grips of silent justice
-		un(1, i(150449)),	-- wraps of precise flight
-		un(1, i(150457)),	-- bands of the coming storm
-		un(1, i(150502)),	-- touch of inspiration
-		
 	--	random stuff from the BFA world drop files that was commented out and cluttery, all show up as 'retrieving data'
 		i(159190),	--  Foxhollow Bracelets
 		i(159183),	--  Foxhollow Cord
@@ -1365,6 +1355,8 @@ _.NeverImplemented =
 			un(1, i(163457)),	-- Honorbound Centurion's Helmet
 			un(1, i(163454)),	-- Honorbound Centurion's Pauldrons
 			un(1, i(163462)),	-- Honorbound Centurion's Girdle
+			un(1, i(106147)),	-- Forstwolf Stalwart Chestpiece (beta only)
+			un(1, i(106155)),	-- karabor honor guard wristwraps (green version, beta only)
 			un(1, i(41759)),	-- unknown
 			un(1, i(42885)),	-- unknown
 			un(1, i(43848)),	-- unknown
@@ -1382,10 +1374,59 @@ _.NeverImplemented =
 			un(1, i(166412)),	-- flaskzertaurens plate pauldrons
 			un(1, i(27718)),	-- Aldor Defender's Legplates
 			un(1, i(12106)),	-- Boulderskin Breastplate
+			un(1, i(107877)),	-- unknown
 			un(1, i(107862)),	-- Unknown
 			un(1, i(107865)),	-- Unknown
 			un(1, i(107870)),	-- Unknown
 			un(1, i(107873)),	-- Unknown
+			un(1, i(107883)),	-- unknown
+			un(1, i(107886)),	-- unknown
+			un(1, i(107891)),	-- unknown
+			un(1, i(107985)),	-- unknown
+			un(1, i(107986)),	-- unknown
+			un(1, i(107987)),	-- unknown
+			un(1, i(107988)),	-- unknown
+			un(1, i(107989)),	-- unknown
+			un(1, i(107990)),	-- unknown
+			un(1, i(107991)),	-- unknown
+			un(1, i(107992)),	-- unknown
+			un(1, i(107993)),	-- unknown
+			un(1, i(107994)),	-- unknown
+			un(1, i(107995)),	-- unknown
+			un(1, i(107996)),	-- unknown
+			un(1, i(107997)),	-- unknown
+			un(1, i(107998)),	-- unknown
+			un(1, i(107999)),	-- unknown
+			un(1, i(108000)),	-- unknown
+			un(1, i(108001)),	-- unknown
+			un(1, i(108002)),	-- unknown
+			un(1, i(108003)),	-- unknown
+			un(1, i(108004)),	-- unknown
+			un(1, i(108005)),	-- unknown
+			un(1, i(108006)),	-- unknown
+			un(1, i(108007)),	-- unknown
+			un(1, i(108008)),	-- unknown
+			un(1, i(108009)),	-- unknown
+			un(1, i(108010)),	-- unknown
+			un(1, i(108011)),	-- unknown
+			un(1, i(108012)),	-- unknown
+			un(1, i(108013)),	-- unknown
+			un(1, i(108014)),	-- unknown
+			un(1, i(108015)),	-- unknown
+			un(1, i(108016)),	-- unknown
+			un(1, i(108017)),	-- unknown
+			un(1, i(108018)),	-- unknown
+			un(1, i(108019)),	-- unknown
+			un(1, i(108020)),	-- unknown
+			un(1, i(108021)),	-- unknown
+			un(1, i(108022)),	-- unknown
+			un(1, i(108023)),	-- unknown
+			un(1, i(108024)),	-- unknown
+			un(1, i(108025)),	-- unknown
+			un(1, i(108026)),	-- unknown
+			un(1, i(108027)),	-- unknown
+			un(1, i(108028)),	-- unknown
+			un(1, i(108029)),	-- unknown
 			un(1, i(25797)),	-- Crushing Grasp
 			un(1, i(29237)),	-- Warpath Bracers
 			un(1, i(37175)),	-- Glassy Silver Bracers
@@ -3415,6 +3456,21 @@ _.NeverImplemented =
 				"created 8.0.1.26871",	-- Never Implemented
 			},
 		},
+	}),
+	n(-173, {	-- Timewalking
+		-- Possible TW Gear (not in journal)
+		un(1, i(150450)),	-- Nether Shadow Tunic
+		un(1, i(150448)),	-- pauldrons of abyssal fury
+		un(1, i(150461)),	-- praetorians legguards
+		un(1, i(150465)),	-- myrmidons treads
+		un(1, i(150472)),	-- grips of silent justice
+		un(1, i(150449)),	-- wraps of precise flight
+		un(1, i(150457)),	-- bands of the coming storm
+		un(1, i(150502)),	-- touch of inspiration
+		un(1, i(150458)),	-- choker of endless nightmares
+		un(1, i(150501)),	-- translucent spellthread necklace
+		un(1, i(150508)),	-- pendant of titans
+		un(1, i(150515)),	-- nadina's pendant of purity
 	}),
 	n(-319, {	-- Weapons
 		n(-347, {	-- Bows
