@@ -284,6 +284,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 118214 },	-- Yiska
 						["sourceQuests"] = { 46246 },	-- Strike Them Down
 					}),
+					q(44238, {	-- Meditations on Fate
+						["classes"] = { MONK },
+						["lvl"] = 110,
+						["provider"] = { "n", 110817 },	-- Yushi
+					}),
 					q(41852, {	-- No Monk Left Behind
 						["classes"] = { MONK },
 						["lvl"] = 110,
