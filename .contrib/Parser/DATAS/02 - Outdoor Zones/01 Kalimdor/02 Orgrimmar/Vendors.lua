@@ -411,6 +411,9 @@ _.Zones =
 						un(2, i(33066)),	-- Veterans Pendant of triumph
 						un(2, i(33067)),	-- Veterans Pendant of conquest
 						un(2, i(33068)),	-- Veterans Pendant of salvation
+						un(2, i(33918)),	-- vindicator's band of salvation
+						un(2, i(33919)),	-- vindicator's band of triumph
+						un(2, i(37927)),	-- vindicator's band of subjugation
 						un(2, i(33920)),	-- Vindicator's Pendant of conquest
 						un(2, i(33921)),	-- Vindicator's Pendant of dominance
 						un(2, i(33922)),	-- Vindicator's Pendant of salvation
@@ -419,6 +422,10 @@ _.Zones =
 						un(2, i(35133)),	-- guardians pendant of dominance
 						un(2, i(35134)),	-- guardians pendant of salvation
 						un(2, i(35135)),	-- guardians pendant of triumph
+						un(2, i(35129)),	-- guardians band of dominance
+						un(2, i(35130)),	-- guardians band of salvation
+						un(2, i(35131)),	-- guardians band of triumph
+						un(2, i(37927)),	-- guardians band of subjugations
 						un(2, i(35317)),	-- Vindicator's Pendant of reprive
 						un(2, i(35319)),	-- Vindicator's Pendant of subjugation
 						un(2, i(37928)),	-- guardians pendant of subjugation
@@ -431,13 +438,7 @@ _.Zones =
 						un(2, i(33057)),	-- Veteran's Band of Triumph 
 						un(2, i(33064)),	-- Veteran's Band of Salvation
 						un(2, i(33853)),	-- Vindicator's Band of Dominance
-						un(2, i(33853)),	-- Vindicator's Band of Salvation
-						un(2, i(33853)),	-- Vindicator's Band of Triump
-						un(2, i(33853)),	-- guardians band of dominance
-						un(2, i(33853)),	-- guardians band of salvation
-						un(2, i(33853)),	-- guardians band of triump
-						un(2, i(33853)),	-- Vindicator's Band of subjugation
-						un(2, i(33853)),	-- guardians band of subjugation
+						un(2, i(35320)),	-- Vindicator's Band of subjugation
 					},
 				}),
 				n(46593,  {	-- Doris Volanthius >S9< Elite <Vicious Gladiator>
