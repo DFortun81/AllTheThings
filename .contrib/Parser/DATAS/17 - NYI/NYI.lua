@@ -3965,7 +3965,6 @@ _.NeverImplemented =
 	un(1, i(18316)),	-- Obsidian Bauble
 	un(1, i(19989)),	-- Tome of Devouring Shadows
 	un(1, i(32184)),	-- Chancellor's Painsaw
-	un(1, i(7188)),		--  Stormwind Guard Shield [This is used by NPC's]
 	un(1, i(18303)),	-- Nimble Buckler
 	un(1, i(18342)),	-- Quel'dorei Guard [NPC Shield I believe]
 	un(1, i(20502)),	-- Ironbark Shield [NPC Shield]

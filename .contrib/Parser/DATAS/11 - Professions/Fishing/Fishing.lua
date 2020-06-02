@@ -109,6 +109,21 @@ profession(FISHING, {
 		i(13916),	-- 92 Pound Mightfish
 		i(13917),	-- 103 Pound Mightfish
 	}),
+	i(168016, {	-- Hyper-Compressed Ocean
+		i(7188),		--  Stormwind Guard Shield
+		i(139405, {		-- Kul'Tiras Marine Issue Boots
+			["bonusID"] = 1812,
+		}),
+		i(139406, {		-- Sea Dog Boots
+			["bonusID"] = 1812,
+		}),
+		i(139407, {		-- Diver's Chain Boots
+			["bonusID"] = 1812,
+		}),
+		i(139408, {		-- Deck Sandals
+			["bonusID"] = 1812,
+		}),
+	}),
 	n(-217, {	-- Lures
 		i(133715, {		-- Ancient Vrykul Ring
 			["description"] = "This item will give you a buff that will allow you to see and fish from Oodelfjisk schools.",

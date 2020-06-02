@@ -54,18 +54,6 @@ _.WorldDrops =
 				i(141574),	-- Ulfgor's Greaves of Bravery
 			}),
 			n(-330, {	-- Feet
-				i(139405, {	-- Kul'Tiras Marine Issue Boots
-					["bonusID"] = 1812,
-				}),
-				i(139406, {	-- Sea Dog Boots
-					["bonusID"] = 1812,
-				}),
-				i(139407, {	-- Diver's Chain Boots
-					["bonusID"] = 1812,
-				}),
-				i(139408, {	-- Deck Sandals
-					["bonusID"] = 1812,
-				}),
 				i(141572),	-- Geta of Tay'Shute
 				i(141578),	-- Claud's War-Ravaged Boots
 			}),
