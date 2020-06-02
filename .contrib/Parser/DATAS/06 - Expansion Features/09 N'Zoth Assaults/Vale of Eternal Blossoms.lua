@@ -25,6 +25,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 160252 },	-- Blacktalon Agent
 						["g"] = {
 							i(174288),	-- Breath of Everlasting Spirit (once a week)
+							i(173810),	-- Darksight Potion
 						},
 					}),
 					q(58161, {	-- Minions of N'Zoth
