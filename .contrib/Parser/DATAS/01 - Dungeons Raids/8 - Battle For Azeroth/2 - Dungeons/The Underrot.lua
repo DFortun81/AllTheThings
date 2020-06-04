@@ -3,12 +3,13 @@
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	inst(1022, {	-- The Underrot
-		["lvl"] = 110,
+		["coord"] = { 51.6, 65.3, 863 },
 		["maps"] = {
 			1041,	-- The Underot
 			1042,	-- Ruin's Descent
 		},
-		["groups"] = {
+		["lvl"] = 110,
+		["g"] = {
 			n(-34, {	-- World Quests
 				q(52237, {	-- The Underrot: Restless Horror
 					["isWorldQuest"] = true,
@@ -24,7 +25,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						131318,	-- Elder Leaxa <Voice of G'huun>
 					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159652),	-- Leaxa's Thought-Piercer
 						i(159324),	-- Blood Elder's Bindings
 						i(159402),	-- Waistguard of Sanguine Fervor
@@ -37,7 +38,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						131817,	-- Cragmaw the Infested
 					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159653),	-- Bile-Stained Crawg Tusks
 						i(159134),	-- Heart-Piercing Stalacite
 						i(159433),	-- Phosphorescent Armplates
@@ -54,7 +55,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						131383,	-- Sporecaller Zancha
 					},
-					["groups"] =  bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] =  bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159654),	-- Corruption Borne Headlopper
 						i(159665),	-- Targee of the Ancient Warder
 						i(159292),	-- Sporecaller's Shroud
@@ -69,7 +70,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						133007,	-- Unbound Abomination
 					},
-					["groups"] =  bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] =  bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						ach(12500),	-- Underrot
 						i(159655),	-- Vile Exasanguinator
 						i(159446),	-- Greathelm of the Putrid Path
@@ -87,12 +88,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			d(2, {	-- Heroic
 				["lvl"] = 120,
-				["groups"] = {
+				["g"] = {
 					e(2157, {	-- Elder Leaxa
 						["crs"] = {
 							131318,	-- Elder Leaxa <Voice of G'huun>
 						},
-						["groups"] = {
+						["g"] = {
 							i(159652),	-- Leaxa's Thought-Piercer
 							i(159324),	-- Blood Elder's Bindings
 							i(159402),	-- Waistguard of Sanguine Fervor
@@ -105,7 +106,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = {
 							131817,	-- Cragmaw the Infested
 						},
-						["groups"] = {
+						["g"] = {
 							i(159653),	-- Bile-Stained Crawg Tusks
 							i(159134),	-- Heart-Piercing Stalacite
 							i(159433),	-- Phosphorescent Armplates
@@ -122,7 +123,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = {
 							131383,	-- Sporecaller Zancha
 						},
-						["groups"] = {
+						["g"] = {
 							i(159654),	-- Corruption Borne Headlopper
 							i(159665),	-- Targee of the Ancient Warder
 							i(159292),	-- Sporecaller's Shroud
@@ -137,7 +138,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = {
 							133007,	-- Unbound Abomination
 						},
-						["groups"] = {
+						["g"] = {
 							ach(12501),	-- Heroic: Underrot
 							i(159655),	-- Vile Exasanguinator
 							i(159446),	-- Greathelm of the Putrid Path
@@ -156,12 +157,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			d(23, {	-- Mythic
 				["lvl"] = 120,
-				["groups"] = {
+				["g"] = {
 					e(2157, {	-- Elder Leaxa
 						["crs"] = {
 							131318,	-- Elder Leaxa <Voice of G'huun>
 						},
-						["groups"] = {
+						["g"] = {
 							ach(12498),	-- Taint Nobody Got Time For That
 							i(159652),	-- Leaxa's Thought-Piercer
 							i(159324),	-- Blood Elder's Bindings
@@ -175,7 +176,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = {
 							131817,	-- Cragmaw the Infested
 						},
-						["groups"] = {
+						["g"] = {
 							i(159653),	-- Bile-Stained Crawg Tusks
 							i(159134),	-- Heart-Piercing Stalacite
 							i(159433),	-- Phosphorescent Armplates
@@ -192,7 +193,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = {
 							131383,	-- Sporecaller Zancha
 						},
-						["groups"] = {
+						["g"] = {
 							ach(12549),	-- Not a Fun Guy
 							i(159654),	-- Corruption Borne Headlopper
 							i(159665),	-- Targee of the Ancient Warder
@@ -208,7 +209,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = {
 							133007,	-- Unbound Abomination
 						},
-						["groups"] = {
+						["g"] = {
 							ach(12502),	-- Mythic: Underrot
 							ach(12499),	-- Sporely Alive
 							i(162520),	-- Recipe: Mystical Cauldron (Rank 2)

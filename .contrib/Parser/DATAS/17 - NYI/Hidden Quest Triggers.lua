@@ -1910,13 +1910,28 @@ _.NeverImplemented =
 
 	--	Nazmir
 		-- Bonus Objectives
+		q(48934, {	-- Mark of the Damned
+			["isWorldQuest"] = true,
+		}),
 		q(47996, {	-- Mawfiend Extermination
+			["isWorldQuest"] = true,
+		}),
+		q(48093, {	-- Nagating the Threat
 			["isWorldQuest"] = true,
 		}),
 		q(48588, {	-- Purge the Infection
 			["isWorldQuest"] = true,
 		}),
 		q(48852, {	-- Stopping Zardax
+			["isWorldQuest"] = true,
+		}),
+		q(47756, {	-- The Libation's Liberation
+			["isWorldQuest"] = true,
+		}),
+		q(51689, {	-- Tortollan Rescue
+			["isWorldQuest"] = true,
+		}),
+		q(49406, {	-- Zalamar Slaughter
 			["isWorldQuest"] = true,
 		}),
 		-- Chests
@@ -1931,6 +1946,8 @@ _.NeverImplemented =
 		q(49899),	-- Nazmir repeatable random chest
 		q(49924),	-- Nazmir repeatable random chest
 		q(49925),	-- Nazmir repeatable random chest
+		-- Quests
+		q(49179),	-- triggered after speaking to Witch Doctor Kejabu after killing Hir'eek, on quest "Upward and "Onward"
 
 	--	Stormsong Valley
 		q(51695),	-- Horde WarCampaign - "Reclaiming What's Ours" (ID 51696) using the horn to reclaim the Foothold
@@ -2050,6 +2067,9 @@ _.NeverImplemented =
 		q(50178, {	-- Trouble in the Rootway
 			["isWorldQuest"] = true,
 		}),
+		q(51992),	-- triggered when turning in "Of Dark Deeds and Dark Days"
+		q(51993),	-- triggered when turning in "Of Dark Deeds and Dark Days"
+		q(55257),	-- triggered after turning in "Held for Observation" in the "How to Train Your Direhorn" questline
 		-- Chests
 		q(49142),	-- Zuldazar repeatable random chest
 		q(50710),	-- Zuldazar repeatable random chest
@@ -2067,6 +2087,7 @@ _.NeverImplemented =
 		q(50727),	-- Zuldazar repeatable random chest
 		q(50728),	-- Zuldazar repeatable random chest
 		q(51346),	-- Zuldazar repeatable random chest
+		q(50729),	-- looted a chest in Zuldazar at 58.6, 81.1
 		q(51363),	-- Weekly m+ chest looted (Horde, probably alliance too?)
 		
 	-- Nazjatar

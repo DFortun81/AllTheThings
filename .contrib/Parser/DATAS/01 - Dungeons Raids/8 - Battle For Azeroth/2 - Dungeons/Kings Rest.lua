@@ -3,11 +3,12 @@
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	inst(1041, {	-- Kings' Rest
-		["lvl"] = 120,
+		["coord"] = { 37.6, 39.4, 862 },
 		["maps"] = {
 			1004,	-- Kings' Rest
 		},
-		["groups"] = {
+		["lvl"] = 120,
+		["g"] = {
 			n(-34, {	-- World Quests
 				q(51502, {	-- King's Rest: Kingsguard
 					["isWorldQuest"] = true,
@@ -25,7 +26,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			d(2,   {	-- Heroic
 				e(2165, {	-- The Golden Serpent
 					["crs"] = { 135322 },	-- The Golden Serpent
-					["groups"] = {
+					["g"] = {
 						i(159137),	-- Gilded Serpent's Tooth
 						i(159413),	-- Gauntlets of the Avian Sentinel
 						i(159369),	-- Belt of the Consecrateed Tomb
@@ -39,7 +40,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 				e(2171, {	-- Mchimba the Embalmer
 					["crs"] = { 134993 },	-- Mchimba the Embalmer
-					["groups"] = {
+					["g"] = {
 						i(159642),	-- Royal Purifier's Spaade
 						i(159667),	-- Vessel of Last Rites
 						i(159409),	-- Embalmer's Steadying Bracers
@@ -55,7 +56,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						135475,	-- Kula the Butcher
 						135472,	-- Zanazal the Wise
 					},
-					["groups"] = {
+					["g"] = {
 						i(160216),	-- Crackling Jade Kilij
 						i(159136),	-- Jeweled Dagger of Subjugation
 						i(159643),	-- Crossbow of Forgotten Majesty
@@ -68,7 +69,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 				e(2172, {	-- Dazar, The First King
 					["crs"] = { 136160 },	-- King Dazar <The First>
-					["groups"] = {
+					["g"] = {
 						ach(12848),	-- Kings' Rest
 						i(159644),	-- Geti'ikku, Cut of Death
 						i(159645),	-- Headcracker of Supplication
@@ -84,7 +85,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			d(23,  {	-- Mythic
-				["groups"] = {
+				["g"] = {
 					ach(12722, {	-- It Belongs in a Mausoleum!
 						{
 							["criteriaID"] = 1,	-- First trinket found
@@ -105,7 +106,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 					e(2165, {	-- The Golden Serpent
 						["crs"] = { 135322 },	-- The Golden Serpent
-						["groups"] = {
+						["g"] = {
 							i(159137),	-- Gilded Serpent's Tooth
 							i(159413),	-- Gauntlets of the Avian Sentinel
 							i(159369),	-- Belt of the Consecrateed Tomb
@@ -118,7 +119,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 					e(2171, {	-- Mchimba the Embalmer
 						["crs"] = { 134993 },	-- Mchimba the Embalmer
-						["groups"] = {
+						["g"] = {
 							ach(12721),	-- Wrap God
 							i(159642),	-- Royal Purifier's Spaade
 							i(159667),	-- Vessel of Last Rites
@@ -135,7 +136,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							135475,	-- Kula the Butcher
 							135472,	-- Zanazal the Wise
 						},
-						["groups"] = {
+						["g"] = {
 							i(160216),	-- Crackling Jade Kilij
 							i(159136),	-- Jeweled Dagger of Subjugation
 							i(159643),	-- Crossbow of Forgotten Majesty
@@ -148,12 +149,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 					e(2172, {	-- Dazar, The First King
 						["crs"] = { 136160 },	-- King Dazar <The First>
-						["groups"] = {
+						["g"] = {
 							ach(12848),	-- Kings' Rest
 							{
 								["achievementID"] = 12723,	-- How to Keep a Mummy
 								["description"] = "On the final boss of King's rest, there are two sarcophagi with 2 greenish stones in front of them, simply pull the boss and have 1 party member stand on each stone. Lights will start filling up around the bottom, when they are full it locks in and the right most sarcophagus will being to shake. Simply kill the boss at this point and Miimii is yours!",
-								["groups"] = {
+								["g"] = {
 									i(161214),	-- Thousand Year Old Mummy Wraps (PET!)
 								},
 							},

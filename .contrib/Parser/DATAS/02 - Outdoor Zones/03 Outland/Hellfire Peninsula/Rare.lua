@@ -20,6 +20,9 @@ _.Zones =
 						{ 56.6, 71.8, 100 },	-- east path, top
 					},
 					["g"] = {
+						crit(9, {	-- Fulgorge slain
+							["achievementID"] = 1312,	-- Bloody Rare
+						}),
 						i(31181),	-- Rockwurm Handwraps
 						i(31179),	-- Rockwurm Hide Gloves
 						i(31177),	-- Rockwurm Scale Gauntlets
@@ -38,6 +41,9 @@ _.Zones =
 						{ 67.8, 76.8, 100 },
 					},
 					["g"] = {
+						crit(14, {	-- Mekthorg the Wild slain
+							["achievementID"] = 1312,	-- Bloody Rare
+						}),
 						i(31174),	-- Demonweave Raiment 
 						i(31172),	-- Demon-Cured Tunic 
 						i(31170),	-- Demon-Forged Hauberk 
@@ -55,6 +61,9 @@ _.Zones =
 						{ 72.8, 59.4, 100 },
 					},
 					["g"] = {
+						crit(20, {	-- Vorakem Doomspeaker Slain
+							["achievementID"] = 1312,	-- Bloody Rare
+						}),
 						i(31185),	-- Legion Crown 
 						i(31184),	-- Legion Headguard 
 						i(31183),	-- Legion Coif 

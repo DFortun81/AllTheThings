@@ -10,7 +10,7 @@ _.Zones =
 			--	NEED LEATHER / MAIL AZERITE REWARDS FOR "STORM'S END" QUEST.  same as above, leather helm is added but shoulders are missing.
 				q(50616, {	-- A Bit of a Bind
 					["sourceQuests"] = { 49818 },	-- Trouble at Fort Daelin
-					["provider"] = { "n", 131002 },
+					["provider"] = { "n", 131002 },	-- Lieutenant Bauer
 					["coord"] = { 30.2, 59.2, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

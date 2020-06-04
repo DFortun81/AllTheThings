@@ -6,14 +6,8 @@ _.GearSets =
 {
 	n(-211, {	-- New Characters
 		["description"] = "You obtain these sets by creating an allied race with the specific class.  Contains Death Knight and Demon Hunter starting gear as well.",
-		["maps"] = {
-			1186,	-- Blackrock Depths (Dark Iron Dwarves)
-			971,	-- Telogrus Rift
-			652,	-- Thunder Totem (Highmountain Taurens)
-			940,	-- Upper Deck [Lightforged Draenei]
-		},
 		["g"] = {
-			cl(5, {	-- Priest
+			cl(5,  {	-- Priest
 				["classes"] = { PRIEST },
 				["g"] = {
 					i(157710),	-- Curate's Robe
@@ -25,7 +19,7 @@ _.GearSets =
 					i(157632),	-- Staff of Interwoven Power
 				},
 			}),
-			cl(8, {	-- Mage
+			cl(8,  {	-- Mage
 				["classes"] = { MAGE },
 				["g"] = {
 					i(157686),	-- Spellsculptor's Robe
@@ -37,7 +31,7 @@ _.GearSets =
 					i(157651),	-- Staff of Elemental Shaping
 				},
 			}),
-			cl(9, {	-- Warlock
+			cl(9,  {	-- Warlock
 				["classes"] = { WARLOCK },
 				["g"] = {
 					i(157734),	-- Felburner's Robe
@@ -61,7 +55,7 @@ _.GearSets =
 					i(157619),	-- Spire of Astral Force
 				},
 			}),
-			cl(4, {	-- Rogue
+			cl(4,  {	-- Rogue
 				["classes"] = { ROGUE },
 				["g"] = {
 					i(157714),	-- Nimblefinger Jerkin
@@ -107,7 +101,7 @@ _.GearSets =
 					i(123958),	-- Demon Hide Satchel
 				},
 			}),
-			cl(3, {	-- Hunter
+			cl(3,  {	-- Hunter
 				["classes"] = { HUNTER },
 				["g"] = {
 					i(157674),	-- Heartbonded Vest
@@ -119,7 +113,7 @@ _.GearSets =
 					i(157649),	-- Goldstring Recurve
 				},
 			}),
-			cl(7, {	-- Shaman
+			cl(7,  {	-- Shaman
 				["classes"] = { SHAMAN },
 				["g"] = {
 					i(157722),	-- Totem-Caller Tunic
@@ -132,7 +126,7 @@ _.GearSets =
 					i(157655),	-- Lightning-Binder's Bulwark
 				},
 			}),
-			cl(2, {	-- Paladin
+			cl(2,  {	-- Paladin
 				["classes"] = { PALADIN },
 				["g"] = {
 					i(157698),	-- Lightsoul Battleplate
@@ -144,7 +138,7 @@ _.GearSets =
 					i(157631),	-- Maul of Smiting
 				},
 			}),
-			cl(1, {	-- Warrior
+			cl(1,  {	-- Warrior
 				["classes"] = { WARRIOR },
 				["g"] = {
 					i(157738),	-- Warsinger's Breastplate
@@ -156,7 +150,7 @@ _.GearSets =
 					i(157643),	-- Helm-Hewer Greataxe
 				},
 			}),
-			cl(6, {	-- Death Knight
+			cl(6,  {	-- Death Knight
 				["classes"] = { DEATHKNIGHT },
 				["g"] = {
 					i(34652),	-- Archerus Knight's Hood

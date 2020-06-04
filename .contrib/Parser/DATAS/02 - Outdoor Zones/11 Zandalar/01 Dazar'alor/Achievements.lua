@@ -34,43 +34,44 @@ _.Zones =
 					},
 				}),
 				ach(12614, {	-- Loa Expections
+					-- replace with SQ?
 					["races"] = HORDE_ONLY,
-					["description"] = "The best spot to get this spot is in the \"Council Chambers\" where all six are in one spot.  You must complete the following quests in order to access the buff from each shrine:\n\nBwonsamdi -- \"Soulbound\" in Nazmir\nKrag'wa -- \"Krag'wa the Terrible\" in Nazmir\nPa'ku and Gonk -- Zanchuli Council storyline in Zandalar\nAkunda -- \"Akunda's Blessing\" in Vol'dun\nKimbul -- \"Mark of the Loa\" in Vol'dun.",
+					["description"] = "The best place to get this is in the \"Council Chambers\" where all six are in one spot.  You must complete the following quests in order to access the buff from each shrine:\n\nBwonsamdi -- \"Soulbound\" in Nazmir\nKrag'wa -- \"Krag'wa the Terrible\" in Nazmir\nPa'ku and Gonk -- Zanchuli Council storyline in Zandalar\nAkunda -- \"Akunda's Blessing\" in Vol'dun\nKimbul -- \"Mark of the Loa\" in Vol'dun.",
 					["coords"] = {
-						{ 44.80, 15.48, 1165 },	-- Building Entrance
-						{ 43.31, 34.11, 1165 },	-- Shrines
+						{ 44.8, 15.4, 1165 },	-- Building Entrance
+						{ 43.3, 34.1, 1165 },	-- Shrines
 					},
 					["g"] = {
+						crit(1),	-- Boon of Gonk
+						crit(2), 	-- Boon of Pa'ku
 						crit(3),	-- Boon of Akunda
 						crit(4),	-- Boon of Bwonsanmdi
-						crit(1),	-- Boon of Gonk
 						crit(5),	-- Boon of Kimbul
 						crit(6),	-- Boon of Krag'waa
-						crit(2), 	-- Boon of Pa'ku
 					},
 				}),
 				ach(13039, {	-- Paku'ai
-					["races"] = HORDE_ONLY,
-					["description"] = "Travel to following coordinates and click the totem for the easiest method to get the achievement.  All of these coordinates are listed in Dazar'alor except for 65.31, 33.97 which is located in Zuldazar.\n\n01. 45.11, 5.28 - Zuldazar\n02. 46.59, 19.99 - Zuldazar\n03. 49.56, 32.82 - Zuldazar\n04. 51.37, 40.96 - Zuldazar\n05. 58.31, 32.62 - Zuldazar\n06. 53.23, 18.94 - Zuldazar\n07. 42.84, 22.97 - Zuldazar\n08. 40.78, 11.08 - Zuldazar\n09. 41.36, 37.85 - Zuldazar\n10. 46.87, 85.53 - Zuldazar\n11. 44.68, 5.9 - Zuldazar\n12. 52.87, 12.41 - Zuldazar\n13. 52.94, 11.31 - Zuldazar\n14. 59.10, 10.64 - Zuldazar\n15. 41.36, 39.00 - Zuldazar\n16. 65.31, 33.97 - Dazar'alor\n17. 40.64, 84.30 - Zuldazar",
+					["description"] = "Travel to the coordinates provided and click the totem for the easiest method to get the achievement.",
 					["coords"] = {
-						{ 45.11, 5.28, 1165 },
-						{ 46.59, 19.99, 1165 },
-						{ 49.56, 32.82, 1165 },
-						{ 51.37, 40.96, 1165 },
-						{ 58.31, 32.62, 1165 },
-						{ 53.23, 18.94, 1165 },
-						{ 42.84, 22.97, 1165 },
-						{ 40.78, 11.08, 1165 },
-						{ 41.36, 37.85, 1165 },
-						{ 46.87, 85.53, 1165 },
-						{ 44.68, 5.9, 1165 },
-						{ 52.87, 12.41, 1165 },
-						{ 52.94, 11.31, 1165 },
-						{ 59.10, 10.64, 1165 },
-						{ 41.36, 39.00, 1165 },
-						{ 65.31, 33.97, 862 },
-						{ 40.64, 84.30, 1165 },
+						{ 45.1, 5.28, 1165 },
+						{ 46.5, 19.9, 1165 },
+						{ 49.5, 32.8, 1165 },
+						{ 51.3, 40.9, 1165 },
+						{ 58.3, 32.6, 1165 },
+						{ 53.2, 18.9, 1165 },
+						{ 42.8, 22.9, 1165 },
+						{ 40.7, 11.0, 1165 },
+						{ 41.3, 37.8, 1165 },
+						{ 46.8, 85.5, 1165 },
+						{ 44.6, 5.90, 1165 },
+						{ 52.8, 12.4, 1165 },
+						{ 52.9, 11.3, 1165 },
+						{ 59.1, 10.6, 1165 },
+						{ 41.3, 39.0, 1165 },
+						{ 40.6, 84.3, 1165 },
+						{ 65.3, 33.9, 862 },
 					},
+					["races"] = HORDE_ONLY,
 				}),
 				ach(13038, {	-- Raptari Rider
 					["races"] = HORDE_ONLY,

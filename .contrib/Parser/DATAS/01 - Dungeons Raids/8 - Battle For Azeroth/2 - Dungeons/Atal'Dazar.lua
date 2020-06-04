@@ -4,11 +4,12 @@
 
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	inst(968, {	-- Atal'Dazar
-		["lvl"] = 110,
+		["coord"] = { 43.5, 39.4, 862 },
 		["maps"] = {
 			934,	-- Atal'Dazar
 			935,	-- Sacrificial Pits
 		},
+		["lvl"] = 110,
 		["g"] = {
 			n(-4,  {	-- Achievements
 				ach(13020, {	-- Bow to Your Masters

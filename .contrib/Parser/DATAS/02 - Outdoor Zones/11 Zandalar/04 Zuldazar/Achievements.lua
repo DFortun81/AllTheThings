@@ -100,49 +100,59 @@ _.Zones =
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
 					["description"] = "Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",
 					["g"] = {
-						crit(4, {	-- Big Hunter Mon
-							["questID"] = 50332,	-- Big Hunter Mon
-							["provider"] = { "n", 113490 },	-- Jani
-							["coord"] = { 66.2, 16.6 },	-- Trashpile pick-up
-							["sourceQuests"] = {
-								51145,	-- Curse of Jani (Alliance)
-								47442,	-- Curse of Jani (Horde)
-							},
-						}),
 						crit(1, {	-- Golden Ravasaur Egg
-							["coord"] = { 71.69, 41.28 },	-- Trashpile turn-in
-							["itemID"] = 156963,	-- Golden Ravasaur Egg
+							["sourceQuests"] = {
+								51145,	-- Curse of Jani (A)
+								47442,	-- Curse of Jani (H)
+							},
 							["questID"] = 50308,
+							["itemID"] = 156963,	-- Golden Ravasaur Egg
+							["coord"] = { 71.6, 41.2, 862 },	-- Trashpile turn-in
 							["crs"] = {
 								131560,	-- Feral Ravasaur
 								122504,	-- Savagemane Ravasaur
 							},
-							["sourceQuests"] = {
-								51145,	-- Curse of Jani (Alliance)
-								47442,	-- Curse of Jani (Horde)
-							},
+						}),
+						crit(4, {	-- Big Hunter Mon
+							["sourceQuests"] = { 50332 },	-- Big Hunter Mon
+							["coord"] = { 66.2, 16.6, 862 },	-- Trashpile pick-up
 						}),
 						crit(7, {	-- The Great Hat Robbery
-							["provider"] = { "n", 133612 },	-- Jani
-							["coord"] = { 61.8, 46.8 },	-- Trashpile pick-up
-							["questID"] = 50381,	-- The Great Hat Robbery
-							["sourceQuests"] = {
-								51145,	-- Curse of Jani (Alliance)
-								47442,	-- Curse of Jani (Horde)
-							},
+							["sourceQuests"] = { 50381 },	-- The Great Hat Robbery
+							["coord"] = { 61.9, 46.9, 862 },
 						}),
 						crit(10, {	-- Feathered Viper Scale
-							["coord"] = { 62.73, 20.58 },	-- Trashpile turn-in
-							["itemID"] = 157794,	-- Feathered Viper Scale
+							["sourceQuests"] = {
+								51145,	-- Curse of Jani (A)
+								47442,	-- Curse of Jani (H)
+							},
 							["questID"] = 50431,
+							["itemID"] = 157794,	-- Feathered Viper Scale
+							["coord"] = { 62.7, 20.5, 862 },	-- Trashpile turn-in
 							["crs"] = {
 								132410,	-- Feathered Viper
 								132409,	-- Feathered Viper
 							},
-							["sourceQuests"] = {
-								51145,	-- Curse of Jani (Alliance)
-								47442,	-- Curse of Jani (Horde)
-							},
+						}),
+					},
+				}),
+				ach(13542, {	-- How to Train your Direhorn
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(1, {	-- Naptime
+							["sourceQuests"] = { 47310 },	-- Naptime
+						}),
+						crit(2, {	-- Held for Observation
+							["sourceQuests"] = { 52857 },	-- Held for Observation
+						}),
+						crit(3, {	-- Sleep, Eat, Repeat
+							["sourceQuests"] = { 55258 },	-- Sleep, Eat, Repeat
+						}),
+						crit(4, {	-- Torcali's Blessing
+						--	["sourceQuests"] = {  },	-- 
+						}),
+						crit(5, {	-- Wander Not Alone
+						--	["sourceQuests"] = {  },	-- 
 						}),
 					},
 				}),
@@ -332,6 +342,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				ach(11861, {	-- The Throne of Zuldazar
+					["collectible"] = false,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(1, {	-- Portents and Prophecies

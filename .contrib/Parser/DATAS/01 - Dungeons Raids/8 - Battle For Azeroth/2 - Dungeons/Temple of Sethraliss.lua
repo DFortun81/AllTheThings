@@ -3,12 +3,13 @@
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	inst(1030, {	-- Temple of Sethraliss
-		["lvl"] = 110,
+		["coord"] = { 51.9, 25.4, 864 },
 		["maps"] = {
 			1038,	-- Temple of Sethraliss
 			1043,	-- Atrium of Sethraliss
 		},
-		["groups"] = {
+		["lvl"] = 110,
+		["g"] = {
 			n(-34, {	-- World Quests
 				q(51378, {	-- Temple of Sethraliss: A Bazaar Menagerie
 					["isWorldQuest"] = true,
@@ -29,7 +30,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						133379,	-- Adderis
 						133944,	-- Aspix
 					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159636),	-- Staff of the Lightning Serpent
 						i(158370),	-- Twin-Strike Polearm
 						i(159380),	-- Arc-Glass Bindings
@@ -46,7 +47,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						133384,	-- Merektha
 					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(158714),	-- Swarm's Eedge
 						i(159637),	-- Snakeebite Recurvee
 						i(159437),	-- Fangproof Gauntlets
@@ -61,7 +62,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						133389,	-- Galvazzt
 					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(158369),	-- Galvanized Stormcrusher
 						i(159664),	-- Bulwark of Brimming Potential
 						i(159247),	-- Handwraps of Oscillating Polarity
@@ -73,7 +74,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 				e(2145, {	-- Avatar of Sethraliss
 					["crs"] = { 133392 },	-- Avatar of Sethraliss
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						ach(12504),	-- The Temple of Sethraliss
 						i(158373),	-- Resonating Crystal Scimitar
 						i(159318),	-- Hood of the Slithering Loa
@@ -90,13 +91,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			d(2, {	-- Heroic
 				["lvl"] = 120,
-				["groups"] = {
+				["g"] = {
 					e(2142, {	-- Adderis and Aspix
 						["crs"] = {
 							133379,	-- Adderis
 							133944,	-- Aspix
 						},
-						["groups"] = {
+						["g"] = {
 							i(159636),	-- Staff of the Lightning Serpent
 							i(158370),	-- Twin-Strike Polearm
 							i(159380),	-- Arc-Glass Bindings
@@ -113,7 +114,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = {
 							133384,	-- Merektha
 						},
-						["groups"] = {
+						["g"] = {
 							i(158714),	-- Swarm's Eedge
 							i(159637),	-- Snakeebite Recurvee
 							i(159437),	-- Fangproof Gauntlets
@@ -128,7 +129,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = {
 							133389,	-- Galvazzt
 						},
-						["groups"] = {
+						["g"] = {
 							i(158369),	-- Galvanized Stormcrusher
 							i(159664),	-- Bulwark of Brimming Potential
 							i(159247),	-- Handwraps of Oscillating Polarity
@@ -140,7 +141,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 					e(2145, {	-- Avatar of Sethraliss
 						["crs"] = { 133392 },	-- Avatar of Sethraliss
-						["groups"] = {
+						["g"] = {
 							ach(12505),	-- Heroic: The Temple of Sethraliss
 							i(158373),	-- Resonating Crystal Scimitar
 							i(159318),	-- Hood of the Slithering Loa
@@ -158,14 +159,14 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			d(23, {	-- Mythic
 				["lvl"] = 120,
-				["groups"] = {
+				["g"] = {
 					ach(12503),	-- Snake Eyes
 					e(2142, {	-- Adderis and Aspix
 						["crs"] = {
 							133379,	-- Adderis
 							133944,	-- Aspix
 						},
-						["groups"] = {
+						["g"] = {
 							i(159636),	-- Staff of the Lightning Serpent
 							i(158370),	-- Twin-Strike Polearm
 							i(159380),	-- Arc-Glass Bindings
@@ -182,7 +183,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = {
 							133384,	-- Merektha
 						},
-						["groups"] = {
+						["g"] = {
 							ach(12507),	-- Snake Eater
 							i(160832, {	-- Viable Cobra Egg
 								i(160831, {	-- Cracking Cobra Egg
@@ -203,7 +204,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = {
 							133389,	-- Galvazzt
 						},
-						["groups"] = {
+						["g"] = {
 							i(158369),	-- Galvanized Stormcrusher
 							i(159664),	-- Bulwark of Brimming Potential
 							i(159247),	-- Handwraps of Oscillating Polarity
@@ -215,7 +216,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 					e(2145, {	-- Avatar of Sethraliss
 						["crs"] = { 133392 },	-- Avatar of Sethraliss
-						["groups"] = {
+						["g"] = {
 							ach(12508),	-- Good Night, Sweet Prince
 							ach(12506),	-- Mythic: The Temple of Sethraliss
 							i(158373),	-- Resonating Crystal Scimitar

@@ -7,6 +7,9 @@ _.Zones =
 	m(875, { 	-- Zandalar
 		m(1163, {	-- Dazar'alor
 			n(QUESTS, {
+			--	TO SOLVE:
+				--	when does "who seeks the seekers?" become available?  seen as early as "the prophet's ploy," but may be available sooner.
+
 				q(58672, {	-- A Gathering of Champions
 					["coord"] = { 55.9, 30.3, 1163 },
 					["provider"] = { "n", 161458 },	-- Valeera Sanguinar
@@ -21,15 +24,16 @@ _.Zones =
 					["provider"] = { "n", 137818 },	-- Myxle "The Searat" Gutwrench
 				}),
 				q(49122, {	-- A Port in Peril
-					["provider"] = { "n", 127815 },	-- Zolani
-					["coord"] = { 49.9, 46.6, 1165 },
-					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						50881,	-- Royal Report
 						47432,	-- The Bargain is Struck (Paku)
 						48897,	-- The Bargain is Struck (Gonk)
 						49663,	-- False Prophecies
 					},
+					["provider"] = { "n", 127815 },	-- Zolani
+					["coord"] = { 49.9, 46.6, 1165 },
+					["races"] = HORDE_ONLY,
+					
 				}),
 				q(47437, {	-- Competitive Devotion
 					["sourceQuests"] = {
@@ -102,6 +106,16 @@ _.Zones =
 						47440,	-- Pa'ku, Master of Winds
 					},
 				}),
+				q(49421, {	-- Hunting Zul
+					["sourceQuests"] = {	-- one or the other
+						50433,	-- Zanchuli Disbanded
+						51111,	-- King or Prey
+					},
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
+					["coord"] = { 41.4, 72.2, 1164 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(56249, {	-- I Am the Trashmaster
 					--["sourceQuests"] = { },
 					["description"] = "You need to get Trashmaster's Mantle from K.U.-J.0. boss in Mechagon for this quest.",
@@ -119,17 +133,54 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 122320 },	-- Bladeguard Kaja
 				}),
+				q(49917, {	-- Kaja'mite? Kaja'must!
+				--	possibly a breadcrumb; kaja'mite ore bust can be picked up with no prereqs
+					["sourceQuests"] = { 49310 },	-- The Prophet's Ploy
+					["provider"] = { "n", 130932 },	-- Nok'tal
+					["coord"] = { 65.4, 82.6, 1164 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(51555, {	-- Keep Them On Task
+					["isBreadcrumb"] = true,
+					["sourceQuests"] = {	-- 'zanchuli disbanded' and 'king or prey' are breadcrumbs if you don't pick up the quest asap, it unlocked earlier
+						47509,	-- Terrace of the Chosen (may actually show up as late as "Mistress of Lies," which is when i noticed it.  but baine provided "Terrace" and after i did it this was available when i next went to town after "Mistress"
+						50433,	-- Zanchuli Disbanded
+						51111,	-- King or Prey
+					},
+					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
+					["coord"] = { 41.4, 72.2, 1164 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(52472, {	-- Make Loh Go
 					["sourceQuests"] = { 52131 },	-- We Need Each Other
 					["coord"] = { 56.3, 91.5, 1165 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 134346 },	-- Toki
 				}),
+				q(47521, {	-- Midnight in the Garden of the Loa
+					["sourceQuests"] = {
+						47518,	-- Raal
+						47520,	-- Walls Have Ears
+					},
+					["provider"] = { "n", 133324 },	-- Hexlord Raal
+					["coord"] = { 42.5, 9.5, 1165 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(48405, {	-- Mista Nice
 					["sourceQuests"] = { 48404 },	-- The Scamps
 					["coord"] = { 55.9, 88.8, 1165 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 125312 },	-- Scrollsage Rooka
+				}),
+				q(49768, {	-- Nesingwary's Trek
+					["sourceQuests"] = {
+						47439,	-- Gonk, Lord of the Pack
+						47440,	-- Pa'ku, Master of Winds
+					},
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 130785 },	-- Huntmaster Kil'ja
+					["coord"] = { 51.9, 41.5, 1165 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(47440, {	-- Pa'ku, Master of Winds
 					["sourceQuests"] = { 47438 },	-- Picking a Side
@@ -169,11 +220,39 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126684 },	-- Yazma
 				}),
+				q(47518, {	-- Raal
+					["sourceQuests"] = {
+						47915,	-- Rescuing the Taken
+						47897,	-- Zanchuli Traitors
+					},
+					["providers"] = {
+						{ "n", 123335 },	-- Wardruid Loti
+						{ "n", 133302 },	-- Druid of Gonk (Wardruid Loti)
+					},
+					["coord"] = { 39.4, 13.8, 1165 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(158399),	-- Rastari Wargreaves
+						i(158400),	-- Zanchuli Leggings
+						i(158401),	-- Torcalin Breeches
+						i(158402),	-- Jambani Pants
+						i(158668),	-- Jambani Cord
+						i(158669),	-- Torcalin Waistwrap
+						i(158670),	-- Zanchuli Waistwrap
+						i(158671),	-- Rastari Belt
+					},
+				}),
 				q(46930, {	-- Rastakhan
 					["sourceQuests"] = { 46957 },	-- Welcome to Zuldazar
 					["coord"] = { 49.9, 82.5, 1165 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 122661 },	-- General Jakra'zet
+				}),
+				q(47915, {	-- Rescuing the Taken
+					["sourceQuests"] = { 47509 },	-- Terrace of the Chosen
+					["provider"] = { "n", 124629 },	-- Kaza'jin the Wavebinder
+					["coord"] = { 42.6, 21.4, 1165 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(47434, {	-- Restraining Order
 					["sourceQuests"] = { 47433 },	-- Offensively Defensive
@@ -210,6 +289,13 @@ _.Zones =
 							["repeatable"] = true,
 						}),
 					},
+				}),
+				q(49940, {	-- Sandscar Breach
+					["sourceQuests"] = { 49426 },	-- The King's Gambit
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 131287 },	-- Natal'hakata
+					["coord"] = { 67.3, 71.6, 1164 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(52834, {	-- Seal of Wartorn Fate: Gold
 					["coord"] = { 53.9, 88.4, 1165 },
@@ -253,6 +339,15 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56030,	-- The Warchief's Order
 				}),
+				q(49758, {	-- Send the Signal!
+					["sourceQuests"] = { 
+					--	,	-- Sending Out an SOS (breadcrumb)
+						49310,	-- The Prophet's Ploy (last real quest required)
+					},
+					["provider"] = { "n", 140590 },	-- Captain Grez'ko
+					["coord"] = { 46.1, 94.5, 1165 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(57198, {	-- Sense of Obligation
 					["coord"] = { 51.5, 99.4, 1165 },
 					["races"] = HORDE_ONLY,
@@ -280,6 +375,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 120740 },	-- King Rastakhan
 				}),
+				q(47509, {	-- Terrace of the Chosen
+					["sourceQuests"] = { 49310 },	-- The Prophet's Ploy
+					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
+					["coord"] = { 41.4, 72.2, 1164 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(47432, {	-- The Bargain is Struck (Paku)
 					["sourceQuests"] = { 47440 },	-- Pa'ku, Master of Winds
 					["coord"] = { 49.9, 33.5, 1165 },
@@ -290,6 +391,13 @@ _.Zones =
 					["provider"] = { "n", 127489 },	-- Hexlord Raal
 					["coord"] = { 49.9, 33.5, 1165 },
 					["sourceQuest"] = 47439,	-- Gonk, Lord of the Pack
+					["races"] = HORDE_ONLY,
+				}),
+				q(47257, {	-- The Bones of Xibala (H)
+					["sourceQuests"] = { 49426 },	-- The King's Gambit
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 120168 },	-- Chronicler To'kini
+					["coord"] = { 69.5, 47.5, 1164 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51518, {	-- The Lost Spirit
@@ -326,11 +434,27 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["description"] = "Automated granted when logging in.",
 				}),
+				q(49965, {	-- The Warpack
+					["sourceQuests"] = {
+						49421,	-- Hunting Zul
+						47528,	-- Mistress of Lies
+						47741,	-- To Sacrifice a Loa
+					},
+					["provider"] = { "n", 129491 },	-- King Rastakhan
+					["coord"] = { 38.9, 27.2, 1165 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(46846, {	-- The Word of Zul
 					["sourceQuests"] = { 47514 },	-- zuldazar
 					["coord"] = { 50.0, 84.7, 1165 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126684 },	-- Yazma
+				}),
+				q(51101, {	-- The Wounded King
+					["sourceQuests"] = { 49310 },	-- The Prophet's Ploy
+					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
+					["coord"] = { 41.4, 72.2, 1164 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(47445, {	-- The Zanchuli Council
 					["sourceQuests"] = { 47514 },	-- Zuldazar
@@ -358,6 +482,19 @@ _.Zones =
 					["provider"] = { "n", 135775 },	-- Scouting Map
 					["sourceQuest"] = 52131,	-- We Need Each Other
 				}),
+				q(47520, {	-- Walls Have Ears
+					["sourceQuests"] = {
+						47897,	-- Zanchuli Traitors
+						47915,	-- Rescuing the Taken
+					},
+					["providers"] = {
+						{ "n", 123335 },	-- Wardruid Loti
+						{ "n", 133302 },	-- Druid of Gonk (Wardruid Loti)
+					},
+					["coord"] = { 39.4, 13.8, 1165 },
+					["races"] = HORDE_ONLY,
+					["maps"] = { 1164 },	-- Dazar'alor
+				}),
 				q(46957, {	-- Welcome to Zuldazar
 					["provider"] = { "n", 132332 },	-- Princess Talanji
 					["coord"] = { 57.9, 62.4, 862 },
@@ -380,12 +517,25 @@ _.Zones =
 					["provider"] = { "n", 161458 },	-- Valeera Sanguinar
 					["sourceQuest"] = 58582,	-- Return of the Black Prince
 				}),
+				q(49283, {	-- Who Seeks the Seekers?
+					["sourceQuests"] = { 49310 },	-- The Prophet's Ploy -- TODO: verify this. It was the earliest i've seen it become available but have additional requirements
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 128909 },	-- Shalo
+					["coord"] = { 57.8, 92.3, 1165 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(48456, {	-- Witch Doctor Jala
 					["sourceQuests"] = { 46926 },	-- Shakedown
 					["isBreadcrumb"] = true,
 					["coord"] = { 50.0, 84.9, 1165 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 135441 },	-- Zolani
+				}),
+				q(47897, {	-- Zanchuli Traitors
+					["sourceQuests"] = { 47509 },	-- Terrace of the Chosen
+					["provider"] = { "n", 124629 },	-- Kaza'jin the Wavebinder
+					["coord"] = { 42.6, 21.4, 1165 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(47514, {	-- Zuldazar
 					["coord"] = { 40.1, 69.1, 1164 },
@@ -437,6 +587,7 @@ _.Zones =
 					["sourceQuest"] = 52131,	-- We Need Each Other
 				}),
 				q(48535, {	-- Nazmir, the Forbidden Swamp
+					["isBreadcrumb"] = true,
 					["coord"] = { 51.6, 41.2, 1165 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126549 },
@@ -517,6 +668,13 @@ _.Zones =
 					["g"] = {
 						follower(1182),	-- Dread-Admiral Tattersail
 					},
+				}),
+				q(50538, {	-- The Missing Handler
+					["sourceQuests"] = { 50881 },	-- Royal Report
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 131287 },	-- Natal'hakata
+					["coord"] = { 68.7, 71.8, 1164 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(53761,  {	-- The Pirate's Treasure
 					["sourceQuests"] = { 53760 },	-- Unintended Consequences

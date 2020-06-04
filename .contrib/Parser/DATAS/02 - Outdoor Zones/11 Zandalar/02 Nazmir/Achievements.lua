@@ -231,6 +231,35 @@ _.Zones =
 						}),
 					},
 				}),
+				ach(11868, {	-- The Dark Heart of Nazmir [Note: Quest line starts here and a few quests are in the zone.  So we want to make them stand out amongst the crowd.]
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(1, {	-- Deep in the Swamp
+							["sourceQuests"] = { 47188 },	-- The Aid of the Loa
+						}),
+						crit(2, {	-- A Pact with Death
+							["sourceQuests"] = { 47250 },	-- We'll Meet Again
+						}),
+						crit(3, {	-- Undercover Sista
+							["sourceQuests"] = { 49082 },	-- Upward and Onward
+						}),
+						crit(4, {	-- Turtle Power
+							["sourceQuests"] = { 49160 },	-- Torga's Eternal Return
+						}),
+						crit(5, {	-- A Friend in the Frogs
+						--	["sourceQuests"] = {  },	-- 
+						}),
+						crit(6, {	-- Bring the Boom
+						--	["sourceQuests"] = {  },	-- 
+						}),
+						crit(7, {	-- Everything Contained
+						--	["sourceQuests"] = {  },	-- 
+						}),
+						crit(8, {	-- Bleeding the Blood Trolls
+						--	["sourceQuests"] = {  },	-- 
+						}),
+					},
+				}),
 				ach(13263, {	-- The Shadow Hunter
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 53782,	-- Mysteries of Death
