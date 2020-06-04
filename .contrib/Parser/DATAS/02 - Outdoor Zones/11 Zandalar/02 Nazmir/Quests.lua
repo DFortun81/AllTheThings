@@ -15,6 +15,20 @@ _.Zones =
 				
 				-- verify SQ for "a poisonous touch."  it wasn't available w/0 prereqs and i didn't see it until after turning in "staying hidden," but it may be available earlier.
 				
+				-- verify SQ for "a chance sighting."  i didn't see it until after i turned in "krag'wa's aid," but it may be available earlier
+				
+				-- verify whether or not "crawg free zone" is needed for "it seems you've made a friend" by turning it in last of the 4 quests.  i turned it in second to last, and the previous person who quested through turned in "bad juju"/"off with her head" last, so it seems those 3 are required)
+				
+				
+				q(50934, {	-- A Chance Sighting
+				--	SQ needs verification.  may be available earlier.
+					["sourceQuests"] = { 47697 },	-- Kragwa's Aid
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 131993 },	-- Yash
+					["coord"] = { 66.9, 41.9, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
 				
 				q(47244, {	-- A Culling of Souls
 					["sourceQuests"] = { 47241 },	-- The Shadow of Death
@@ -45,6 +59,18 @@ _.Zones =
 				}),
 				
 				
+				q(47622, {	-- A Magical Glow
+					["sourceQuests"] = { 47623 },	-- The Last Witch Doctor of Krag'wa
+					["provider"] = { "n", 120551 },	-- Krag'wa the Huge
+					["coord"] = { 75.3, 56.4, 863 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(158972),	-- Alluring Glowfly Lantern
+						i(158975),	-- Gilded Lilypad
+					},
+				}),
+				
+				
 				q(48402, {	-- A Poisonous Touch
 				--	SQ needs confirmation.  i didn't see it until after i finished "staying hidden" and picked up the next 2 quests for the area, but maybe it opens sooner.  was NOT available with 0 prereqs prior to starting dazar'alor.
 					["sourceQuests"] = { 47525 },	-- Staying Hidden
@@ -70,9 +96,33 @@ _.Zones =
 				}),
 				
 				
+				q(47621, {	-- A True Loa Feast
+					["sourceQuests"] = { 47623 },	-- The Last Witch Doctor of Krag'wa
+					["provider"] = { "n", 120551 },	-- Krag'wa the Huge
+					["coord"] = { 75.3, 56.4, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(49366, {	-- Aid the Wounded
+					["sourceQuests"] = { 50934 },	-- A Chance Sighting
+					["provider"] = { "o", 278197 },	-- Vial of Antidote
+					["coord"] = { 64.0, 50.3, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(50933, {	-- An Unfortunate Event
 					["provider"] = { "n", 135784 },	-- Imperial Guard
 					["coord"] = { 29.2, 52.0, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(49380, {	-- Bad Juju
+					["sourceQuests"] = { 49366 },	-- Aid the Wounded
+					["provider"] = { "n", 129165 },	-- Guard Satao
+					["coord"] = { 63.1, 52.6, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -125,6 +175,14 @@ _.Zones =
 				}),
 				
 				
+				q(49379, {	-- Crawg Free Zone
+					["sourceQuests"] = { 49370 },	-- Rescue the Chronicler
+					["provider"] = { "n", 129164 },	-- Chronicler Jabari
+					["coord"] = { 62.7, 53.5, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(48573, {	-- Crocolisk Life
 					["sourceQuests"] = { 48669 },	-- Urok, Terror of the Wetlands
 					["provider"] = { "n", 126713 },	-- Sur'jan
@@ -145,6 +203,14 @@ _.Zones =
 					["sourceQuests"] = { 49067 },	-- Beseeching Bwonsamdi
 					["provider"] = { "n", 127960 },	-- Lashk
 					["coord"] = { 56.5, 26.7, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(49378, {	-- Earn Their Trust
+					["sourceQuests"] = { 49370 },	-- Rescue the Chronicler
+					["provider"] = { "n", 129164 },	-- Chronicler Jabari
+					["coord"] = { 62.7, 53.5, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -216,7 +282,7 @@ _.Zones =
 						i(159038),	-- Loa Speaker's Bands
 						i(159039),	-- Nazmani Warplate Armguards
 						i(159041),	-- Ritual Flayer's Armbands
-					--	i(158631),	-- Wickerwoven Bindings	-- this is an alliance-only appearance that was granted to me when i learned Loa Speaker's Bands.  it doesn't appear to have any other source.
+						i(158631),	-- Wickerwoven Bindings	-- this is an alliance-only appearance that was granted to me when i learned Loa Speaker's Bands.  it doesn't appear to come from anywhere apart from this quest.
 					},
 				}),
 				
@@ -265,6 +331,23 @@ _.Zones =
 				}),
 				
 				
+				q(49382, {	-- It Seems You've Made a Friend
+				--	verify whether or not "crawg free zone" is needed
+					["sourceQuests"] = {
+						49380,	-- Bad Juju
+					--	49379,	-- Crawg Free Zone (may be required)
+						49378,	-- Earn Their Trust
+						49377,	-- Off With Her Head
+					},
+					["provider"] = { "n", 129164 },	-- Chronicler Jabari
+					["coord"] = { 63.1, 52.7, 863 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(156566),	-- Dart (PET!)
+					},
+				}),
+				
+				
 				q(49136, {	-- Jungo, Herald of G'huun
 					["sourceQuests"] = {
 						49132,	-- Crushing the Skullcrushers,
@@ -274,6 +357,40 @@ _.Zones =
 					["provider"] = { "n", 127961 },	-- Princess Talanji
 					["coord"] = { 56.5, 26.7, 863 },
 					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(47697, {	-- Krag'wa's Aid
+					["sourceQuests"] = { 47696 },	-- Krag'wa the Terrible
+					["provider"] = { "n", 124641 },	-- Shadow Hunter Mutumba
+					["coord"] = { 75.1, 56.5, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(48090, {	-- Krag'wa's Chosen
+					["provider"] = { "n", 125317 },	-- Shadow Hunter Narez
+					["coord"] = { 77.7, 53.2, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(47696, {	-- Krag'wa the Terrible
+					["sourceQuests"] = { 47540 },	-- Totemic Restoration
+					["provider"] = { "n", 120551 },	-- Krag'wa the Huge
+					["coord"] = { 75.3, 56.4, 863 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(159015),	-- Death-Pledged Boots
+						i(158986),	-- Death-Pledged Gloves
+						i(158985),	-- Loa Speaker's Handwraps
+						i(159014),	-- Loa Speaker's Sandals
+						i(158984),	-- Nazmani Warplate Battlegloves
+						i(159013),	-- Nazmani Warplate Stompers
+						i(159016),	-- Ritual Flayer's Footwraps
+						i(158983),	-- Ritual Flayer's Grips
+						i(158588),	-- Wickerwoven Walkers -- this is an alliance-only appearance that was granted to me when i learned Loa Speaker's Sandals.  it doesn't appear to come from anywhere apart from this quest.
+					},
 				}),
 				
 				
@@ -316,6 +433,24 @@ _.Zones =
 					["provider"] = { "n", 127958 },	-- Kisha
 					["coord"] = { 56.5, 26.7, 863 },
 					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(49377, {	-- Off With Her Head
+					["sourceQuests"] = { 49366 },	-- Aid the Wounded
+					["provider"] = { "n", 129165 },	-- Guard Satao
+					["coord"] = { 63.1, 52.6, 863 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(159092),	-- Grim Ritual Mace
+						i(159094),	-- Bloodsinger Wand
+						i(159089),	-- Amaki Scalper
+						i(159091),	-- Bloodrite Sticker
+						i(159093),	-- Marrow Drained Bonestaff
+						i(159090),	-- Crawgmother's Shortbow
+						i(159096),	-- Nagla's Headcracker
+						i(159095),	-- Bloodhunter Greatblade
+					},
 				}),
 				
 				
@@ -372,6 +507,14 @@ _.Zones =
 					["sourceQuests"] = { 47245 },	-- Getting the Message
 					["provider"] = { "n", 131213 },	-- Rokhan
 					["coord"] = { 67.4, 42.4, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(49370, {	-- Rescue the Chronicler
+					["sourceQuests"] = { 49366 },	-- Aid the Wounded
+					["provider"] = { "n", 129165 },	-- Guard Satao
+					["coord"] = { 63.1, 52.6, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -499,6 +642,17 @@ _.Zones =
 				}),
 				
 				
+				q(47623, {	-- The Last Witch Doctor of Krag'wa
+					["sourceQuests"] = {
+						47659,	-- Hunt the Hunter
+						47660,	-- Fallen Idols
+					},
+					["provider"] = { "n", 120551 },	-- Krag'wa the Huge
+					["coord"] = { 75.3, 56.3, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(47868, {	-- The Necropolis
 					["sourceQuests"] = { 49278 },	-- Spiritual Restoration
 					["provider"] = { "n", 124428 },	-- Hanzabu
@@ -566,10 +720,28 @@ _.Zones =
 				}),
 				
 				
+				q(47540, {	-- Totemic Restoration
+					["sourceQuests"] = {
+						47622,	-- A Magical Glow
+						47621,	-- A True Loa Feast
+					},
+					["provider"] = { "n", 120551 },	-- Krag'wa the Huge
+					["coord"] = { 75.3, 56.4, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(49082, {	-- Upward and Onward
 					["sourceQuests"] = { 49081 },	-- To Kill a Loa
 					["provider"] = { "n", 128276 },	-- Jo'chunga
 					["coord"] = { 31.2, 46.7, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(48092, {	-- Vengeance of the Frogs
+					["provider"] = { "n", 125317 },	-- Shadow Hunter Narez
+					["coord"] = { 77.7, 53.2, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -603,68 +775,10 @@ _.Zones =
 		["races"] = HORDE_ONLY,
 		["g"] = {
 			crit(5, {	-- A Friend of the Frogs
-				q(47622, {	-- A Magical Glow
-					["g"] = {
-						i(158972),	-- Alluring Glowfly Lantern
-						i(158975),	-- Gilded Lilypad
-					},
-					["provider"] = { "n", 120551 },	-- Krag'wa the Huge
-					["sourceQuests"] = { 47623 },	-- The Last Witch Doctor of Krag'wa
-					["races"] = HORDE_ONLY,
-				}),
-				q(47621, {	-- A True Loa Feast
-					["provider"] = { "n", 120551 },	-- Krag'wa the Huge
-					["sourceQuests"] = { 47623 },	-- The Last Witch Doctor of Krag'wa
-					["races"] = HORDE_ONLY,
-				}),
-				q(47696, {	-- Krag'wa the Terrible
-					["g"] = {
-						i(159015),	-- Death-Pledged Boots
-						i(158986),	-- Death-Pledged Gloves
-						i(158985),	-- Loa Speaker's Handwraps
-						i(159014),	-- Loa Speaker's Sandals
-						i(158984),	-- Nazmani Warplate Battlegloves
-						i(159013),	-- Nazmani Warplate Stompers
-						i(159016),	-- Ritual Flayer's Footwraps
-						i(158983),	-- Ritual Flayer's Grips
-					},
-					["provider"] = { "n", 120551 },	-- Krag'wa the Huge
-					["sourceQuests"] = { 47540 },	-- Totemic Restoration
-					["races"] = HORDE_ONLY,
-				}),
-				q(47697, {	-- Krag'wa's Aid
-					["provider"] = { "n", 124641 },	-- Shadow Hunter Mutumba
-					["sourceQuests"] = { 47696 },	-- Krag'wa the Terrible
-					["races"] = HORDE_ONLY,
-				}),
-				q(48090, {	-- Krag'wa's Chosen	[Note: One of 3 final Quest needed to trigger criteria]
-					["provider"] = { "n", 125317 },	-- Shadow Hunter Narez
-					["sourceQuests"] = { 47918 },	-- To Serve Krag'wa
-					["races"] = HORDE_ONLY,
-				}),
-				q(47623, {	-- The Last Witch Doctor of Krag'wa
-					["provider"] = { "n", 120551 },	-- Krag'wa the Huge
-					["sourceQuests"] = {
-						47659,	-- Hunt the Hunter,
-						47660,	-- Fallen Idol
-						48402,	-- A Poisonous Touch
-					},
-					["races"] = HORDE_ONLY,
-				}),
 				q(47918, {	-- To Serve Krag'wa
 					["provider"] = { "n", 120551 },	-- Krag'wa the Huge
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 47697 },	-- Krag'wa's Aid
-					["races"] = HORDE_ONLY,
-				}),
-				q(47540, {	-- Totemic Restoration
-					["provider"] = { "n", 120551 },	-- Krag'wa the Huge
-					["sourceQuests"] = { 47621, 47622, },	-- A True Loa Feast, A Magical Glow
-					["races"] = HORDE_ONLY,
-				}),
-				q(48092, {	-- Vengeance of the Frogs [Note: One of 3 final Quest needed to trigger criteria]
-					["provider"] = { "n", 125317 },	-- Shadow Hunter Narez
-					["sourceQuests"] = { 47918 },	-- To Serve Krag'wa
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -951,12 +1065,6 @@ _.Zones =
 			}),
 		},
 	}),
-				q(50934, {	-- A Chance Sighting
-					["provider"] = { "n", 131993 },	-- Yash
-					["coord"] = { 66.9, 41.9, 863 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
 				q(50085, {	-- A Message of Blood and Fire
 					["provider"] = { "n", 133471 },	-- Rokhan
 					["coord"] = { 45.4, 58.6, 863 },
@@ -968,12 +1076,6 @@ _.Zones =
 					["u"] = 40,	-- Retired with the implementation of 8.2
 					["coord"] = { 52.3, 68.6, 1382 },
 					["sourceQuests"] = { 54940 },	-- Necessity is the MOTHER
-				}),
-				q(49366, {	-- Aid the Wounded
-					["sourceQuests"] = { 50934 },	-- A Chance Sighting
-					["provider"] = { "o", 278197 },	-- Vial of Antidote
-					["coord"] = { 64.0, 50.3, 863 },
-					["races"] = HORDE_ONLY,
 				}),
 				q(48857, {	-- All Hope is Lost
 					["provider"] = { "n", 127212 },	-- Ka'dran
@@ -994,12 +1096,6 @@ _.Zones =
 					["coord"] = { 24.1, 53.2, 863 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 49778 },	-- Don't Go into the Light
-				}),
-				q(49380, {	-- Bad Juju
-					["provider"] = { "n", 129165 },	-- Guard Satao
-					["coord"] = { 63.1, 52.6, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 49366 },	-- Aid the Wounded
 				}),
 				q(48479, {	-- Bones for Protection
 					["provider"] = { "n", 126079 },	-- Koj'jun Deathwalker
@@ -1034,12 +1130,6 @@ _.Zones =
 						48823,	-- Projection Destruction
 					},
 				}),
-				q(49379, {	-- Crawg Free Zone
-					["provider"] = { "n", 129164 },	-- Chronicler Jabari
-					["coord"] = { 62.7, 53.5, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 49370 },	-- Rescue the Chronicler
-				}),
 				q(49479, {	-- Didn't Stop to Think if They Should
 					["provider"] = { "n", 126346 },	-- Chadwick Paxton
 					["coord"] = { 25.9, 36.1, 863 },
@@ -1059,12 +1149,6 @@ _.Zones =
 						49777,	-- On The Run
 						49774,	-- Won't Leaf Him to Die
 					},
-				}),
-				q(49378, {	-- Earn Their Trust
-					["provider"] = { "n", 129164 },	-- Chronicler Jabari
-					["coord"] = { 62.7, 53.5, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 49370 },	-- Rescue the Chronicler
 				}),
 				q(53781, {	-- Eyir
 					["provider"] = { "n", 122688 },	-- Bwonsamdi
@@ -1091,19 +1175,6 @@ _.Zones =
 					["sourceQuests"] = {
 						48825,	-- Power Denied
 						48823,	-- Projection Destruction
-					},
-				}),
-				q(49382, {	-- It Seems You've Made a Friend
-					["sourceQuests"] = {
-						49380,	-- Bad Juju
-						49377,	-- Off With Her Head
-						-- are 49378 and 49379 also required?
-					},
-					["provider"] = { "n", 129164 },	-- Chronicler Jabari
-					["coord"] = { 63.1, 52.7, 863 },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(156566),	-- Dart
 					},
 				}),
 				q(53780, {	-- Jailor of the Damned
@@ -1168,22 +1239,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 50933 },	-- An Unfortunate Event
 				}),
-				q(49377, {	-- Off With Her Head
-					["provider"] = { "n", 129165 },	-- Guard Satao
-					["coord"] = { 63.1, 52.6, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 49366 },	-- Aid the Wounded
-					["g"] = {
-						i(159092),	-- Grim Ritual Mace
-						i(159094),	-- Bloodsinger Wand
-						i(159089),	-- Amaki Scalper
-						i(159091),	-- Bloodrite Sticker
-						i(159093),	-- Marrow Drained Bonestaff
-						i(159090),	-- Crawgmother's Shortbow
-						i(159096),	-- Nagla's Headcracker
-						i(159095),	-- Bloodhunter Greatblade
-					},
-				}),
 				q(49484, {	-- Offering to Bwonsamdi [The Necropolis]
 					["u"] = 1,
 				}),
@@ -1219,12 +1274,6 @@ _.Zones =
 					["coord"] = { 24.1, 53.1, 863 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 49778 },	-- Don't Go into the Light
-				}),
-				q(49370, {	-- Rescue the Chronicler
-					["provider"] = { "n", 129165 },	-- Guard Satao
-					["coord"] = { 63.1, 52.6, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 49366 },	-- Aid the Wounded
 				}),
 				q(48499, {	-- Return to Dust
 					["provider"] = { "n", 126346 },	-- Chadwick Paxton

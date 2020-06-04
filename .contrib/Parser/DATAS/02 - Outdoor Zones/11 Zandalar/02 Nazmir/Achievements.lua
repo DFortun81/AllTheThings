@@ -247,7 +247,7 @@ _.Zones =
 							["sourceQuests"] = { 49160 },	-- Torga's Eternal Return
 						}),
 						crit(5, {	-- A Friend in the Frogs
-						--	["sourceQuests"] = {  },	-- 
+							["sourceQuests"] = { 47696 },	-- Krag'wa the Terrible
 						}),
 						crit(6, {	-- Bring the Boom
 						--	["sourceQuests"] = {  },	-- 

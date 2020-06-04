@@ -205,6 +205,7 @@ pet(73903, 338); 	-- Darkmoon Tonk
 pet(73765, 335); 	-- Darkmoon Turtle
 pet(73905, 339); 	-- Darkmoon Zeppelin
 pet(166449, 2544);	-- Darkshore Sentinel
+pet(156566, 2157);	-- Dart
 pet(48112, 232); 	-- Darting Hatchling
 pet(104161, 1330); 	-- Death Adder Hatchling
 pet(163809, 2464);	-- Deathsting Scorpid
