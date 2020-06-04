@@ -333,7 +333,7 @@ namespace ATT
             Console.WriteLine("COMMIT >>");
             using (Process p = new Process())
             {
-                var startInfo = new ProcessStartInfo("git", $"commit -m \"RELEASE: {version}\"")
+                var startInfo = new ProcessStartInfo("git", $"commit -m \"{CurrentBuildType.ToString().ToUpper()}: {version}\"")
                 {
                     UseShellExecute = false,
                     RedirectStandardOutput = true,
