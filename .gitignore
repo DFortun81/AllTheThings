@@ -1,3 +1,4 @@
+.contrib/.builds/
 .contrib/Harvesters/RAW/
 .contrib/Harvesters/RAW_eventDB.json
 .contrib/Harvesters/eventDB.json
