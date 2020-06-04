@@ -132,11 +132,12 @@ namespace ATT
 
                 // Write back the lines to the file.
                 File.WriteAllLines(tocFile.FullName, lines);
+                GitAddChange(tocFile.Name);
                 break;
             }
 
             // Attempt to Commit the TOC change to the Git
-            GitCommitChanges();
+            GitCommitChanges(version);
 
             // Determine the name of the ZIP File.
             var ZipFileName = Path.Combine(directory.FullName, $".contrib/.builds/{directory.Name}-{version.Replace('.', '_')}_{CurrentBuildType}.zip");
@@ -154,7 +155,6 @@ namespace ATT
             }
             Console.WriteLine("ZIP File Created Successfully:");
             Console.WriteLine(ZipFileName);
-            Console.ReadLine();
             Process.Start(Path.GetDirectoryName(ZipFileName));
         }
     
@@ -300,11 +300,88 @@ namespace ATT
         }
 
         /// <summary>
+        /// Attempt to add the path modification to the Git.
+        /// </summary>
+        /// <param name="path">The path.</param>
+        static void GitAddChange(string path)
+        {
+            // Commit all changes to the Git
+            Console.Write("COMMIT >> ");
+            Console.WriteLine(path);
+            Console.WriteLine(Path.GetFullPath("../.."));
+            using (Process p = new Process())
+            {
+                var startInfo = new ProcessStartInfo("git", $"add {path}")
+                {
+                    UseShellExecute = false,
+                    RedirectStandardOutput = true,
+                    WorkingDirectory = Path.GetFullPath("../..")
+                };
+                p.StartInfo = startInfo;
+                p.Start();
+                p.WaitForExit();
+            }
+        }
+
+        /// <summary>
         /// Attempt to commit the version changes to the Git.
         /// </summary>
-        static void GitCommitChanges()
+        /// <param name="version">The version.</param>
+        static void GitCommitChanges(string version)
         {
-            // TODO
+            // Commit all changes to the Git
+            Console.WriteLine("COMMIT >>");
+            using (Process p = new Process())
+            {
+                var startInfo = new ProcessStartInfo("git", $"commit -m \"RELEASE: {version}\"")
+                {
+                    UseShellExecute = false,
+                    RedirectStandardOutput = true,
+                    WorkingDirectory = Path.GetFullPath("../..")
+                };
+                p.StartInfo = startInfo;
+                p.Start();
+                p.WaitForExit();
+            }
+            Console.WriteLine("TAG >>");
+            using (Process p = new Process())
+            {
+                var startInfo = new ProcessStartInfo("git", $"tag {version}")
+                {
+                    UseShellExecute = false,
+                    RedirectStandardOutput = true,
+                    WorkingDirectory = Path.GetFullPath("../..")
+                };
+                p.StartInfo = startInfo;
+                p.Start();
+                p.WaitForExit();
+            }
+            Console.WriteLine("PUSH >>");
+            using (Process p = new Process())
+            {
+                var startInfo = new ProcessStartInfo("git", $"push origin master")
+                {
+                    UseShellExecute = false,
+                    RedirectStandardOutput = true,
+                    WorkingDirectory = Path.GetFullPath("../..")
+                };
+                p.StartInfo = startInfo;
+                p.Start();
+                p.WaitForExit();
+            }
+            Console.WriteLine("PUSH TAG >>");
+            using (Process p = new Process())
+            {
+                var startInfo = new ProcessStartInfo("git", $"push origin {version}")
+                {
+                    UseShellExecute = false,
+                    RedirectStandardOutput = true,
+                    WorkingDirectory = Path.GetFullPath("../..")
+                };
+                p.StartInfo = startInfo;
+                p.Start();
+                p.WaitForExit();
+            }
         }
 
         /// <summary>
@@ -316,19 +393,53 @@ namespace ATT
         static string GitGatherChanges(string oldversion, string version)
         {
             // Perform a git log between the two commits.
+            Console.WriteLine("LOG CHANGES >>");
             using (Process p = new Process())
             {
-                var startInfo = new ProcessStartInfo("git", $"log {oldversion}..{version} --pretty=format:\"%an: %s\"");
-                startInfo.UseShellExecute = false;
-                startInfo.RedirectStandardOutput = true;
-                startInfo.WorkingDirectory = Path.GetDirectoryName("../..");
+                var startInfo = new ProcessStartInfo("git", $"log {oldversion}..{version} --pretty=format:\"%an: %s\"")
+                {
+                    UseShellExecute = false,
+                    RedirectStandardOutput = true,
+                    WorkingDirectory = Path.GetFullPath("../..")
+                };
                 p.StartInfo = startInfo;
                 p.Start();
 
                 // Read the output stream first and then wait.
-                string output = p.StandardOutput.ReadToEnd();
+                string line;
+                var commitsByAuthor = new Dictionary<string, List<string>>();
+                while (!string.IsNullOrEmpty(line = p.StandardOutput.ReadLine()))
+                {
+                    var index = line.IndexOf(':');
+                    var author = line.Substring(0, index).Split('-')[0];
+                    var commit = line.Substring(index + 1).Trim();
+                    if (commitsByAuthor.TryGetValue(author, out List<string> commits)) commits.Add(commit);
+                    else commitsByAuthor[author] = new List<string> { commit };
+                }
                 p.WaitForExit();
-                return output;
+
+                var builder = new StringBuilder();
+                builder.Append(version).Append(" Release Notes");
+                foreach (var pair in commitsByAuthor)
+                {
+                    builder.AppendLine();
+                    builder.Append("Contributions made by ");
+                    builder.Append(pair.Key);
+                    builder.AppendLine(":");
+                    pair.Value.Reverse();
+                    foreach (var commit in pair.Value)
+                    {
+                        // Skip version number changes.
+                        if (commit.StartsWith("ALPHA: ") || commit.StartsWith("RELEASE: ") || commit.StartsWith("BETA: ")) continue;
+
+                        // Append a pretty summary of the author's changes.
+                        builder.Append("* ");
+                        if (commit.StartsWith("* ") || commit.StartsWith("- ")) builder.AppendLine(commit.Substring(2));
+                        else if (commit.StartsWith("*") || commit.StartsWith("-")) builder.AppendLine(commit.Substring(1));
+                        else builder.AppendLine(commit);
+                    }
+                }
+                return builder.ToString();
             }
         }
 
@@ -337,7 +448,20 @@ namespace ATT
         /// </summary>
         static void GitPull()
         {
-            // TODO
+            // Pull all changes from Git
+            Console.WriteLine("PULL >> ");
+            using (Process p = new Process())
+            {
+                var startInfo = new ProcessStartInfo("git", "pull")
+                {
+                    UseShellExecute = false,
+                    RedirectStandardOutput = true,
+                    WorkingDirectory = Path.GetDirectoryName("../..")
+                };
+                p.StartInfo = startInfo;
+                p.Start();
+                p.WaitForExit();
+            }
         }
 
         /// <summary>
