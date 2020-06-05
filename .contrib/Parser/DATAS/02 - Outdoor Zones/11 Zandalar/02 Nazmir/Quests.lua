@@ -135,11 +135,38 @@ _.Zones =
 				}),
 				
 				
+				q(49950, {	-- Blood Purification
+					["sourceQuests"] = {
+						49938,	-- Corrupted Earth
+						49935,	-- How to Repair a Titan Keeper
+						49937,	-- Recovering Remnants
+					},
+					["provider"] = { "n", 133941 },	-- Minor Corruption
+					["coord"] = { 69.2, 33.7, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(49440, {	-- Blood Troll on the Outside
 					["sourceQuests"] = { 49278 },	-- Spiritual Restoration
 					["provider"] = { "n", 122795 },	-- Witch Doctor Kejabu
 					["coord"] = { 39.5, 43.9, 863 },
 					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(49941, {	-- Bone Procession
+					["sourceQuests"] = {
+						49938,	-- Corrupted Earth
+						49935,	-- How to Repair a Titan Keeper
+						49937,	-- Recovering Remnants
+					},
+					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
+					["coord"] = { 68.6, 35.0, 863 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(159078),	-- Potency Manipulator
+					},
 				}),
 				
 				
@@ -175,6 +202,36 @@ _.Zones =
 				}),
 				
 				
+				q(49980, {	-- Containment Procedure
+					["sourceQuests"] = {
+						49955,	-- Not Fit for This Plane
+						49957,	-- Protocol Recovery
+						49956,	-- Void is Prohibited
+					},
+					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
+					["coord"] = { 72.5, 29.4, 863 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(159088),	-- Nazmani Hexblade
+						i(159085),	-- Ancient Loa-Blessed Mace
+						i(159083),	-- Degraded Empire Shortblade
+						i(159084),	-- Handscythe of the First City
+						i(159087),	-- Nazmani Longstaff
+						i(159082),	-- Fallen Nation Recurve
+						i(159081),	-- Fallen Nation Carver
+						i(159086),	-- Corrupted Tribe Headsmasher
+					},
+				}),
+				
+				
+				q(49938, {	-- Corrupted Earth
+					["sourceQuests"] = { 49932 },	-- Slumber No More
+					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
+					["coord"] = { 66.9, 38.8, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(49379, {	-- Crawg Free Zone
 					["sourceQuests"] = { 49370 },	-- Rescue the Chronicler
 					["provider"] = { "n", 129164 },	-- Chronicler Jabari
@@ -195,6 +252,14 @@ _.Zones =
 					["sourceQuests"] = { 49126 },	-- Forcing Fate's Hand
 					["provider"] = { "n", 127960 },	-- Lashk
 					["coord"] = { 58.5, 13.8, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(49569, {	-- Down by the Riverside
+					["sourceQuests"] = { 47602 },	-- Ready For Action
+					["provider"] = { "n", 126213 },	-- Princess Talanji
+					["coord"] = { 67.4, 42.2, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -234,6 +299,24 @@ _.Zones =
 				}),
 				
 				
+				q(47601, {	-- Field Evaluation
+					["sourceQuests"] = {
+						47711, 	-- Head of the Viper
+						47598,	-- Pilfering and Fencing
+						47596,	-- There Is No Plan "B"
+					},
+					["provider"] = { "n", 123544 },	-- Patch
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(158993),	-- Death-Pledged Legguards
+						i(158992),	-- Loa Speaker's Trousers
+						i(158991),	-- Nazmani Warplate Wargreaves
+						i(158994),	-- Ritual Flayer's Legwraps
+						i(155382),	-- Spare Stabilizer Band
+					},
+				}),
+				
+				
 				q(49126, {	-- Forcing Fate's Hand
 					["sourceQuests"] = { 49125 },	-- Negative Blood
 					["provider"] = { "n", 127958 },	-- Kisha
@@ -253,6 +336,17 @@ _.Zones =
 				}),
 				
 				
+				q(47711, {	-- Head of the Viper
+					["sourceQuests"] = {
+						47599,	-- Revenge: Served Hot
+						47597,	-- No Goblin Left Behind
+					},
+					["provider"] = { "n", 123544 },	-- Patch
+					["coord"] = { 82.3, 27.2, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(49079, {	-- Hir'eek, the Bat Loa
 					["sourceQuests"] = {
 						49078,	-- Poisoning the Brood
@@ -268,6 +362,14 @@ _.Zones =
 					["sourceQuests"] = { 48699 },	-- Sneaking into Zalamar
 					["provider"] = { "n", 127391 },	-- Bloodseeker Jo'chunga
 					["coord"] = { 33.3, 45.8, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(49935, {	-- How to Repair a Titan Keeper
+					["sourceQuests"] = { 49932 },	-- Slumber No More
+					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
+					["coord"] = { 66.9, 38.8, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -436,6 +538,26 @@ _.Zones =
 				}),
 				
 				
+				q(47597, {	-- No Goblin Left Behind
+					["sourceQuests"] = { 47631 },	-- Rendezvous with the Libation
+					["provider"] = { "n", 123178 },	-- Patch
+					["coord"] = { 74.5, 38.9, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(49955, {	-- Not Fit for This Plane
+					["sourceQuests"] = {
+						49950,	-- Blood Purification
+						49941,	-- Bone Procession
+						49949,	-- Unwelcome Undead
+					},
+					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
+					["coord"] = { 68.6, 35.0, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(49377, {	-- Off With Her Head
 					["sourceQuests"] = { 49366 },	-- Aid the Wounded
 					["provider"] = { "n", 129165 },	-- Guard Satao
@@ -458,6 +580,17 @@ _.Zones =
 					["sourceQuests"] = { 49314 },	-- Hunting Zardrax
 					["provider"] = { "n", 127216 },	-- Zardrax the Empowerer
 					["coord"] = { 30.9, 52.0, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(47598, {	-- Pilfering and Fencing
+					["sourceQuests"] = {
+						47599,	-- Revenge: Served Hot
+						47597,	-- No Goblin Left Behind
+					},
+					["provider"] = { "n", 123545 },	-- Newt
+					["coord"] = { 82.2, 27.3, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -487,10 +620,46 @@ _.Zones =
 				}),
 				
 				
+				q(49957, {	-- Protocol Recovery
+					["sourceQuests"] = {
+						49950,	-- Blood Purification
+						49941,	-- Bone Procession
+						49949,	-- Unwelcome Undead
+					},
+					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
+					["coord"] = { 68.6, 35.0, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(48574, {	-- Pulling Fangs
 					["sourceQuests"] = { 48669 },	-- Urok, Terror of the Wetlands
 					["provider"] = { "n", 126713 },	-- Sur'jan
 					["coord"] = { 38.8, 77.7, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(50076, {	-- Rally the Warriors
+					["sourceQuests"] = { 49569 },	-- Down by the Riverside
+					["provider"] = { "n", 121288 },	-- Princess Talanji
+					["coord"] = { 39.3, 78.1, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(47602, {	-- Ready For Action
+					["sourceQuests"] = { 47601 },	-- Field Evaluation
+					["provider"] = { "n", 123878 },	-- Patch
+					["coord"] = { 81.4, 26.2, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(49937, {	-- Recovering Remnants
+					["sourceQuests"] = { 49932 },	-- Slumber No More
+					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
+					["coord"] = { 66.9, 38.8, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -525,10 +694,41 @@ _.Zones =
 				}),
 				
 				
+				q(49985, {	-- Return to Gloom Hollow
+					["sourceQuests"] = { 49980 },	-- Containment Procedure
+					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
+					["coord"] = { 72.4, 29.3, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(47599, {	-- Revenge: Served Hot
+					["sourceQuests"] = { 47631 },	-- Rendezvous with the Libation
+					["provider"] = { "n", 123436 },	-- Ticker
+					["coord"] = { 74.7, 39.0, 863 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(159002),	-- Death-Pledged Girdle
+						i(159001),	-- Loa Speaker's Cinch
+						i(159000),	-- Nazmani Warplate Waistguard
+						i(159003),	-- Ritual Flayer's Waistwrap
+						i(159077),	-- Ticker's Spare Catalyst
+					},
+				}),
+				
+				
 				q(49131, {	-- Sanctifying Ground
 					["sourceQuests"] = { 49126 },	-- Forcing Fate's Hand
 					["provider"] = { "n", 127961 },	-- Princess Talanji
 					["coord"] = { 58.5, 13.8, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(49932, {	-- Slumber No More
+					["sourceQuests"] = { 47602 },	-- Ready For Action
+					["provider"] = { "n", 131978 },	-- Lashk
+					["coord"] = { 67.4, 41.9 , 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -669,6 +869,17 @@ _.Zones =
 				}),
 				
 				
+				q(47596, {	-- There Is No Plan "B"
+					["sourceQuests"] = {
+						47599,	-- Revenge: Served Hot
+						47597,	-- No Goblin Left Behind
+					},
+					["provider"] = { "n", 123548 },	-- Ticker
+					["coord"] = { 82.3, 27.2, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(47248, {	-- 'Til Death Do Us Part
 				--	SQ needs verification.
 					["sourceQuests"] = { 47880 },	-- A Tribute for Death
@@ -731,6 +942,18 @@ _.Zones =
 				}),
 				
 				
+				q(49949, {	-- Unwelcome Undead
+					["sourceQuests"] = {
+						49938,	-- Corrupted Earth
+						49935,	-- How to Repair a Titan Keeper
+						49937,	-- Recovering Remnants
+					},
+					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
+					["coord"] = { 68.6, 35.0, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(49082, {	-- Upward and Onward
 					["sourceQuests"] = { 49081 },	-- To Kill a Loa
 					["provider"] = { "n", 128276 },	-- Jo'chunga
@@ -742,6 +965,18 @@ _.Zones =
 				q(48092, {	-- Vengeance of the Frogs
 					["provider"] = { "n", 125317 },	-- Shadow Hunter Narez
 					["coord"] = { 77.7, 53.2, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(49956, {	-- Void is Prohibited
+					["sourceQuests"] = {
+						49950,	-- Blood Purification
+						49941,	-- Bone Procession
+						49949,	-- Unwelcome Undead
+					},
+					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
+					["coord"] = { 68.6, 35.0, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -782,228 +1017,20 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			crit(6, {	-- Bring the Boom
-				q(47601, {	-- Field Evaluation
-					["g"] = {
-						i(158993),	-- Death-Pledged Legguards
-						i(158992),	-- Loa Speaker's Trousers
-						i(158991),	-- Nazmani Warplate Wargreaves
-						i(158994),	-- Ritual Flayer's Legwraps
-						i(155382),	-- Spare Stabilizer Band
-					},
-					["provider"] = { "n", 123544 },	-- Patch
-					["sourceQuests"] = {
-						47596,	-- There Is No Plan "B"
-						47598,	-- Pilfering and Fencing
-						47711, 	-- Head of the Viper
-					},
-					["races"] = HORDE_ONLY,
-				}),
-				q(47711, {	-- Head of the Viper
-					["provider"] = { "n", 123544 },	-- Patch
-					["sourceQuests"] = {
-						47599,	-- Revenge: Served Hot
-						47597,	-- No Goblin Left Behind
-					},
-					["races"] = HORDE_ONLY,
-				}),
-				q(47597, {	-- No Goblin Left Behind
-					["provider"] = { "n", 123178 },	-- Patch
-					["sourceQuests"] = { 47631 },	-- Rendezvous with the Libation
-					["races"] = HORDE_ONLY,
-				}),
-				q(47598, {	-- Pilfering and Fencing
-					["provider"] = { "n", 123545 },	-- Newt
-					["sourceQuests"] = {
-						47599,	-- Revenge: Served Hot
-						47597,	-- No Goblin Left Behind
-					},
-					["races"] = HORDE_ONLY,
-				}),
-				q(47602, {	-- Ready For Action	[Note: Final Quest needed to trigger criteria]
-					["provider"] = { "n", 123878 },	-- Patch
-					["sourceQuests"] = { 47601 },	-- Field Evaluation
-					["races"] = HORDE_ONLY,
-				}),
-				q(47599, {	-- Revenge: Served Hot
-					["g"] = {
-						i(159002),	-- Death-Pledged Girdle
-						i(159001),	-- Loa Speaker's Cinch
-						i(159000),	-- Nazmani Warplate Waistguard
-						i(159003),	-- Ritual Flayer's Waistwrap
-						i(159077),	-- Ticker's Spare Catalyst
-					},
-					["provider"] = { "n", 123436 },	-- Ticker
-					["sourceQuests"] = { 47631 },	-- Rendezvous with the Libation
-					["races"] = HORDE_ONLY,
-				}),
-				q(47596, {	-- There Is No Plan "B"
-					["provider"] = { "n", 123548 },	-- Ticker
-					["sourceQuests"] = {
-						47599,	-- Revenge: Served Hot
-						47597,	-- No Goblin Left Behind
-					},
-					["races"] = HORDE_ONLY,
-				}),
-			}),
-			crit(7, {	-- Everything Contained
-				{	-- Slumber No More
-					["questID"] = 49932,
-					["provider"] = { "n", 131978 },	-- Lashk
-					["coord"] = { 67.4, 41.9 , 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 47602 },	-- Ready For Action
-				},
-				{	-- Corrupted Earth
-					["questID"] = 49938,
-					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
-					["coord"] = { 66.9, 38.8, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 49932 },	-- Slumber No More
-				},
-				{	-- How to Repair a Titan Keeper
-					["questID"] = 49935,
-					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
-					["coord"] = { 66.9, 38.8, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 49932 },	-- Slumber No More
-				},
-				{	-- Recovering Remnants
-					["questID"] = 49937,
-					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
-					["coord"] = { 66.9, 38.8, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 49932 },	-- Slumber No More
-				},
-				{	-- Blood Purification
-					["questID"] = 49950,
-					["provider"] = { "n", 133941 },	-- Minor Corruption
-					["coord"] = { 69.2, 33.7, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						49938,	-- Corrupted Earth
-						49935,	-- How to Repair a Titan Keeper
-						49937,	-- Recovering Remnants
-					},
-				},
-				{	-- Bone Procession
-					["questID"] = 49941,
-					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
-					["coord"] = { 68.6, 35.0, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						49938,	-- Corrupted Earth
-						49935,	-- How to Repair a Titan Keeper
-						49937,	-- Recovering Remnants
-					},
-					["g"] = {
-						i(159078),	-- Potency Manipulator
-					},
-				},
-				{	-- Unwelcome Undead
-					["questID"] = 49949,
-					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
-					["coord"] = { 68.6, 35.0, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						49938,	-- Corrupted Earth
-						49935,	-- How to Repair a Titan Keeper
-						49937,	-- Recovering Remnants
-					},
-				},
-				{	-- Not Fit for This Plane
-					["questID"] = 49955,
-					["provider"] = { "n", 131253 },	--
-					["coord"] = { 68.6, 35.0, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						49950,	-- Blood Purification
-						49941,	-- Bone Procession
-						49949,	-- Unwelcome Undead
-					},
-				},
-				{	-- Protocol Recovery
-					["questID"] = 49957,
-					["provider"] = { "n", 131253 },	--
-					["coord"] = { 68.6, 35.0, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						49950,	-- Blood Purification
-						49941,	-- Bone Procession
-						49949,	-- Unwelcome Undead
-					},
-				},
-				{	-- Void is Prohibited
-					["questID"] = 49956,
-					["provider"] = { "n", 131253 },	--
-					["coord"] = { 68.6, 35.0, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						49950,	-- Blood Purification
-						49941,	-- Bone Procession
-						49949,	-- Unwelcome Undead
-					},
-				},
-				{	-- Containment Procedure
-					["questID"] = 49980,
-					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
-					["coord"] = { 72.5, 29.4, 863 },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(159088),	-- Nazmani Hexblade
-						i(159085),	-- Ancient Loa-Blessed Mace
-						i(159083),	-- Degraded Empire Shortblade
-						i(159084),	-- Handscythe of the First City
-						i(159087),	-- Nazmani Longstaff
-						i(159082),	-- Fallen Nation Recurve
-						i(159081),	-- Fallen Nation Carver
-						i(159086),	-- Corrupted Tribe Headsmasher
-					},
-					["sourceQuests"] = {
-						49955,	-- Not Fit for This Plane
-						49957,	-- Protocol Recovery
-						49956,	-- Void is Prohibited
-					},
-				},
-				{	-- Return to Gloom Hollow
-					["questID"] = 49985,
-					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
-					["coord"] = { 72.4, 29.3, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 49980 },	-- Containment Procedure
-				},
-			}),
 			crit(8, {	-- Bleeding the Blood Trolls
-				{	-- Down by the Riverside
-					["questID"] = 49569,
-					["provider"] = { "n", 126213 },	-- Princess Talanji
-					["coord"] = { 67.4, 42.2, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 47602 },	-- Ready For Action
-				},
-				{	-- Rally the Warriors
-					["questID"] = 50076,
-					["provider"] = { "n", 121288 },	-- Princess Talanji
-					["coord"] = { 39.3, 78.1, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 49569 },	-- Down by the Riverside
-				},
-				{	-- The Battle of Bloodfire Ravine
-					["questID"] = 50138,
+				q(50138, {	-- The Battle of Bloodfire Ravine
 					["provider"] = { "n", 121288 },	-- Princess Talanji
 					["coord"] = { 39.3, 77.6, 863 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 50076 },	-- Rally the Warriors
-				},
-				{	-- Undying Totems
-					["questID"] = 50078,
+				}),
+				q(50078, {	-- Undying Totems
 					["provider"] = { "n", 132624 },	-- Zandalari War Priest
 					["coord"] = { 42.3, 72.5, 863 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 50076 },	-- Rally the Warriors
-				},
-				{	-- Boom goes the Bomb
-					["questID"] = 50079,
+				}),
+				q(50079, {	-- Boom goes the Bomb
 					["provider"] = { "n", 132988 },	-- Patch
 					["coord"] = { 44.9, 68.3, 863 },
 					["races"] = HORDE_ONLY,
@@ -1011,9 +1038,8 @@ _.Zones =
 						50138,	-- The Battle of Bloodfire Ravine
 						50078,	-- Undying Totems
 					},
-				},
-				{	-- The Road of Pain
-					["questID"] = 50081,
+				}),
+				q(50081, {	-- The Road of Pain
 					["provider"] = { "n", 132333 },	-- Princess Talanji
 					["coord"] = { 44.9, 68.6, 863 },
 					["races"] = HORDE_ONLY,
@@ -1021,9 +1047,8 @@ _.Zones =
 						50138,	-- The Battle of Bloodfire Ravine
 						50078,	-- Undying Totems
 					},
-				},
-				{	-- Target of Opportunity
-					["questID"] = 50082,
+				}),
+				q(50082, {	-- Target of Opportunity
 					["provider"] = { "n", 133125 },	-- Princess Talanji
 					["coord"] = { 44.1, 62.8, 863 },
 					["races"] = HORDE_ONLY,
@@ -1041,16 +1066,14 @@ _.Zones =
 						50079,	-- Boom goes the Bomb
 						50081,	-- The Road of Pain
 					},
-				},
-				{	-- Petitioning Krag'wa
-					["questID"] = 52073,
+				}),
+				q(52073, {	-- Petitioning Krag'wa
 					["provider"] = { "n", 133125 },	-- Princess Talanji
 					["coord"] = { 45.2, 60.5, 863 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 50082 },	-- Target of Opportunity
-				},
-				{	-- Ateena's Fall
-					["questID"] = 50087,
+				}),
+				q(50087, {	-- Ateena's Fall
 					["provider"] = { "n", 133476 },	--
 					["coord"] = { 49.3, 57.1, 863 },
 					["races"] = HORDE_ONLY,
@@ -1061,7 +1084,7 @@ _.Zones =
 						i(155332),	-- Ritual Flayer's Spaulders
 						i(159012),	-- Ritual Flayer's Jerkin
 					},
-				},
+				}),
 			}),
 		},
 	}),

@@ -14,6 +14,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["isWorldQuest"] = true,
 					["lvl"] = 120,
 				}),
+				q(51455, {	-- Shrine of the Storm: Cleansing Fonts
+					["isWorldQuest"] = true,
+					["lvl"] = 120,
+				}),
 				q(51456, {	-- Shrine of the Storm: Crawling Corruption
 					["isWorldQuest"] = true,
 					["lvl"] = 120,

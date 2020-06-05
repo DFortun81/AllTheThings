@@ -250,10 +250,10 @@ _.Zones =
 							["sourceQuests"] = { 47696 },	-- Krag'wa the Terrible
 						}),
 						crit(6, {	-- Bring the Boom
-						--	["sourceQuests"] = {  },	-- 
+							["sourceQuests"] = { 47601 },	-- Field Evaluation
 						}),
 						crit(7, {	-- Everything Contained
-						--	["sourceQuests"] = {  },	-- 
+							["sourceQuests"] = { 49985 },	-- Return to Gloom Hollow
 						}),
 						crit(8, {	-- Bleeding the Blood Trolls
 						--	["sourceQuests"] = {  },	-- 
