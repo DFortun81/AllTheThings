@@ -9,6 +9,10 @@ _.Zones =
 			n(QUESTS, {
 			--	TO SOLVE:
 				--	when does "who seeks the seekers?" become available?  seen as early as "the prophet's ploy," but may be available sooner.
+				
+				-- verify SQ for "the blood gate."  it may become available after "ateena's fall."  also, is "halting the empire's fall" (which sends you to baine, who offers this quest) a breadcrumb?  "the blood gate" isn't hidden like quests typically are when you have their breadcrumb in their log, so i'm not sure if "halting" is optional/disappears/becomes unavailable after doing "the blood gate."  also, is it available with *only* having done nazmir, or do you also have to finish the main zuldazar questline as well?
+				
+				-- figure out if "The Warchief's Order" and "The Warfront Looms" are breadcrumbs.  they're both auto-popup quests after you hit 120, unlock WQs, and relog.  they both direct you to go to dazar'alor and speak with an NPC to pursue nazjatar and the arathi warfront, respectively.
 
 				q(58672, {	-- A Gathering of Champions
 					["coord"] = { 55.9, 30.3, 1163 },
@@ -393,6 +397,14 @@ _.Zones =
 					["sourceQuest"] = 47439,	-- Gonk, Lord of the Pack
 					["races"] = HORDE_ONLY,
 				}),
+				q(47199, {	-- The Blood Gate
+				--	verify SQ -- may become available after "ateena's fall"
+					["sourceQuests"] = { 51244 },	-- What Rots Beneath
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
+					["coord"] = { 40.1, 70.7, 1164 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(47257, {	-- The Bones of Xibala (H)
 					["sourceQuests"] = { 49426 },	-- The King's Gambit
 					["isBreadcrumb"] = true,
@@ -431,8 +443,15 @@ _.Zones =
 					["provider"] = { "n", 125312 },	-- Scrollsage Rooka
 				}),
 				q(56030, {	-- The Warchief's Order
+				--	might be a breadcrumb?
+					["sourceQuests"] = { 52451 },	-- Uniting Zandalar
+					["description"] = "Automatically granted upon hitting 120 and completing Uniting Zandalar to unlock World Quests.  If it doesn't pop up, relog.",
 					["races"] = HORDE_ONLY,
-					["description"] = "Automated granted when logging in.",
+				}),
+				q(53207, {	-- The Warfront Looms
+				--	might be a breadcrumb?
+					["sourceQuests"] = { 52451 },	-- Uniting Zandalar
+					["description"] = "Automatically granted upon hitting 120 and completing Uniting Zandalar to unlock World Quests.  If it doesn't pop up, relog.  I had to relog twice to receive this quest.",
 				}),
 				q(49965, {	-- The Warpack
 					["sourceQuests"] = {

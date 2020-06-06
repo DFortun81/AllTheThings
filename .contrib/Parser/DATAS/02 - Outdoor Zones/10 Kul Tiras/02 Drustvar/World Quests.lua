@@ -9,10 +9,6 @@ _.Zones =
 				n(QUESTS, {
 --[[	raw quest list to check against
 				-- Unknown
-					q(51832, {	-- Beat Around The Bush
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(50195, {	-- Bilgemaul's Brigade
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -250,6 +246,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(51832, {	-- Beat Around The Bush
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(51917, {	-- Beshol
 						["lvl"] = 120,

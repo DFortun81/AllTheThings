@@ -108,10 +108,6 @@ _.Zones =
 					q(54781, {	-- UNUSED
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(52752, {	-- Vigilant Lookouts
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53440, {	-- WANTED: The Hornet
 						["races"] = HORDE_ONLY,
 					}),
@@ -771,6 +767,11 @@ _.Zones =
 								["achievementID"] = 12936,	-- Battle on Zandalar and Kul Tiras
 							}),
 						},
+					}),
+					q(52752, {	-- Vigilant Lookouts
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(53713, {	-- Wet Work: Bridgeport (Faction Assault WQ)
 						["lvl"] = 110,

@@ -19,6 +19,13 @@ _.Zones =
 				
 				-- verify whether or not "crawg free zone" is needed for "it seems you've made a friend" by turning it in last of the 4 quests.  i turned it in second to last, and the previous person who quested through turned in "bad juju"/"off with her head" last, so it seems those 3 are required)
 				
+				-- MAIL AZERITE REWARDS MISSING for #50087, "Ateena's Fall"
+				
+				-- figure out if "what rots beneath" is a breadcrumb
+				
+				-- this question is also in the dazar'alor file, but verify SQ for "the blood gate."  it may become available after "ateena's fall," not "halting the empire's fall."  also, is "halting the empire's fall" (which sends you to baine, who offers this quest) a breadcrumb?  "the blood gate" isn't hidden like quests typically are when you have their breadcrumb in their log, so i'm not sure if "halting" is optional/disappears/becomes unavailable after doing "the blood gate."  also, is it available with *only* having done nazmir, or do you also have to finish the main zuldazar questline as well?
+
+				
 				
 				q(50934, {	-- A Chance Sighting
 				--	SQ needs verification.  may be available earlier.
@@ -71,6 +78,22 @@ _.Zones =
 				}),
 				
 				
+				q(50085, {	-- A Message of Blood and Fire
+					["sourceQuests"] = { 50083 },	-- The Crawg Ma'da
+					["provider"] = { "n", 133338 },	-- Rokhan
+					["coord"] = { 48.3, 53.4, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(54964, {	-- A One-Way Ticket to the Heart
+					["sourceQuests"] = { 54940 },	-- Necessity is the MOTHER
+					["provider"] = { "n", 149823 },	-- Magni Bronzebeard
+					["coord"] = { 52.3, 68.6, 1382 },
+					["u"] = 40,	-- Legacy Quests — Retired with the implementation of 8.2
+				}),
+				
+				
 				q(48402, {	-- A Poisonous Touch
 				--	SQ needs confirmation.  i didn't see it until after i finished "staying hidden" and picked up the next 2 quests for the area, but maybe it opens sooner.  was NOT available with 0 prereqs prior to starting dazar'alor.
 					["sourceQuests"] = { 47525 },	-- Staying Hidden
@@ -112,6 +135,23 @@ _.Zones =
 				}),
 				
 				
+				q(48857, {	-- All Hope is Lost
+					["sourceQuests"] = {
+						48825,	-- Power Denied
+						48823,	-- Projection Destruction
+					},
+					["provider"] = { "n", 127212 },	-- Ka'dran
+					["coord"] = { 30.9, 52.0, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(50976, {	-- An Ancient Curse
+					["provider"] = { "o", 287081 },	-- Ancient Tablet
+					["coord"] = { 52.9, 75.9, 863 },
+				}),
+				
+				
 				q(50933, {	-- An Unfortunate Event
 					["provider"] = { "n", 135784 },	-- Imperial Guard
 					["coord"] = { 29.2, 52.0, 863 },
@@ -119,10 +159,35 @@ _.Zones =
 				}),
 				
 				
+				q(50087, {	-- Ateena's Fall
+					["sourceQuests"] = { 52073 },	-- Petitioning Krag'wa
+					["provider"] = { "n", 133476 },	-- Princess Talanji
+					["coord"] = { 49.3, 57.1, 863 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+					--	MAIL REWARDS NEEDED
+						i(155334),	-- Loa Speaker's Epaulets
+						i(159029),	-- Loa Speaker's Vestments
+						i(159010),	-- Nazmani Warplate Chestpiece
+						i(155333),	-- Nazmani Warplate Spaulders
+						i(155332),	-- Ritual Flayer's Spaulders
+						i(159012),	-- Ritual Flayer's Jerkin
+					},
+				}),
+				
+				
 				q(49380, {	-- Bad Juju
 					["sourceQuests"] = { 49366 },	-- Aid the Wounded
 					["provider"] = { "n", 129165 },	-- Guard Satao
 					["coord"] = { 63.1, 52.6, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(49779, {	-- Bad to the Bone
+					["sourceQuests"] = { 49778 },	-- Don't Go into the Light
+					["provider"] = { "n", 130930 },	-- Zaluto
+					["coord"] = { 24.1, 53.2, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -170,9 +235,48 @@ _.Zones =
 				}),
 				
 				
+				q(48479, {	-- Bones for Protection
+					["sourceQuests"] = {
+						48468,	-- Bwonsamdi's Deliverance
+						48473,	-- Respecting the Rites
+					},
+					["provider"] = { "n", 126079 },	-- Koj'jun Deathwalker
+					["coord"] = { 38.9, 59.9, 863 },
+				}),
+				
+				
+				q(50079, {	-- Boom goes the Bomb
+					["sourceQuests"] = {
+						50138,	-- The Battle of Bloodfire Ravine
+						50078,	-- Undying Totems
+					},
+					["provider"] = { "n", 132988 },	-- Patch
+					["coord"] = { 44.9, 68.3, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(48468, {	-- Bwonsamdi's Deliverance
 					["provider"] = { "n", 130481 },	-- Shinga Deathwalker
 					["coord"] = { 39.0, 59.9, 863 },
+				}),
+				
+				
+				q(49781, {	-- Catch Me if you Can
+					["sourceQuests"] = {
+						49779,	-- Bad To The Bone
+						49780,	-- Recovering Ancient Fire
+					},
+					["provider"] = { "n", 130930 },	-- Zaluto
+					["coord"] = { 24.1, 53.2, 863 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(155556),	-- Jin'Tiki's Signet
+						i(159046),	-- Loa Speaker's Footpads
+						i(159048),	-- Ritual Flayer's Treads
+						i(159047),	-- Death-Pledged Striders
+						i(159045),	-- Nazmani Warplate Boots
+					},
 				}),
 				
 				
@@ -199,6 +303,17 @@ _.Zones =
 						i(158979),	-- Nazmani Warplate Footguards
 						i(158982),	-- Ritual Flayer's Striders
 					},
+				}),
+				
+				
+				q(48856, {	-- Conduit Interruption
+					["sourceQuests"] = {
+						48825,	-- Power Denied
+						48823,	-- Projection Destruction
+					},
+					["provider"] = { "n", 127215 },	-- Shadow Hunter Da'jul
+					["coord"] = { 31.0, 52.0, 863 },
+					["races"] = HORDE_ONLY,
 				}),
 				
 				
@@ -252,6 +367,30 @@ _.Zones =
 					["sourceQuests"] = { 49126 },	-- Forcing Fate's Hand
 					["provider"] = { "n", 127960 },	-- Lashk
 					["coord"] = { 58.5, 13.8, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(49479, {	-- Didn't Stop to Think if They Should
+					["sourceQuests"] = {
+					--	not linking "Reuniting the Company" here to avoid infinite loop, since "No Mercy" isn't available until you're on "Reuniting"
+						48498,	-- No Mercy for Sithis
+						48497,	-- Show of Force
+					},
+					["provider"] = { "n", 126346 },	-- Chadwick Paxton
+					["coord"] = { 25.9, 36.1, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(49778, {	-- Don't Go into the Light
+					["sourceQuests"] = {
+						49776,	-- No Problem Tar Can't Solve
+						49777,	-- On The Run
+						49774,	-- Won't Leaf Him to Die
+					},
+					["provider"] = { "n", 131231 },	-- Jin'Tiki
+					["coord"] = { 24.1, 53.1, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -328,10 +467,27 @@ _.Zones =
 				}),
 				
 				
+				q(48492, {	-- Getting a Leg Up
+					["sourceQuests"] = { 49477 },	-- Surprise Backup
+					["provider"] = { "n", 126346 },	-- Chadwick Paxton
+					["coord"] = { 28.6, 43.8, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(47245, {	-- Getting the Message
 					["sourceQuests"] = { 49902 },	-- To Gloom Hollow
 					["provider"] = { "n", 131213 },	-- Rokhan
 					["coord"] = { 67.3, 42.3, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(50808, {	-- Halting the Empire's Fall
+				--	is this a breadcrumb?
+					["sourceQuests"] = { 51244 },	-- What Rots Beneath
+					["provider"] = { "n", 137113 },	-- Rokhan
+					["coord"] = { 51.8, 65.5, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -370,6 +526,17 @@ _.Zones =
 					["sourceQuests"] = { 49932 },	-- Slumber No More
 					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
 					["coord"] = { 66.9, 38.8, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(48855, {	-- Humbling the Terrors
+					["sourceQuests"] = {
+						48825,	-- Power Denied
+						48823,	-- Projection Destruction
+					},
+					["provider"] = { "n", 127215 },	-- Shadow Hunter Da'jul
+					["coord"] = { 31.0, 52.0, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -462,6 +629,40 @@ _.Zones =
 				}),
 				
 				
+				q(47919, {	-- Just Say No to Cannibalism
+					["sourceQuests"] = { 47924 },	-- Profanity Filter
+					["provider"] = { "n", 125024 },	-- Kajosh
+					["coord"] = { 51.7, 33.2, 863 },
+				}),
+				
+				
+				q(48478, {	-- Kel'vax's Home
+					["sourceQuests"] = {
+						48468,	-- Bwonsamdi's Deliverance
+						48473,	-- Respecting the Rites
+					},
+					["provider"] = { "n", 126080 },	-- Shinga Deathwalker
+					["coord"] = { 39.0, 59.9, 863 },
+					["g"] = {
+						i(158943),	-- Nazmani Warplate Treads
+						i(158944),	-- Loa Speaker's Footwraps
+						i(158945),	-- Death-Pledged Treads
+						i(158946),	-- Ritual Flayer's Footpads
+						i(155519),	-- Loa Speaker's Cuffs
+						i(155343),	-- Ritual Flayer's Bindings
+						i(155521),	-- Death-Pledged Bracers
+						i(155341),	-- Nazmani Warplate Vambraces
+					},
+				}),
+				
+				
+				q(47998, {	-- Killing Cannibals
+					["sourceQuests"] = { 47924 },	-- Profanity Filter
+					["provider"] = { "n", 124933 },	-- Kajosh
+					["coord"] = { 51.7, 33.2, 863 },
+				}),
+				
+				
 				q(47697, {	-- Krag'wa's Aid
 					["sourceQuests"] = { 47696 },	-- Krag'wa the Terrible
 					["provider"] = { "n", 124641 },	-- Shadow Hunter Mutumba
@@ -530,6 +731,26 @@ _.Zones =
 				}),
 				
 				
+				q(48590, {	-- My Head and Shoulders
+					["sourceQuests"] = {
+						48576,	-- Safe Flying
+						48577,	-- Terrorizing Their Eggs
+						48578,	-- There's No Eye in Skyterror
+					},
+					["provider"] = { "n", 126713 },
+					["coord"] = { 34.0, 78.6, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(54940, {	-- Necessity is the MOTHER
+					["sourceQuests"] = { 54939 },	-- Stubborn as a Bronzebeard
+					["provider"] = { "n", 149823 },
+					["coord"] = { 47.6, 16.2, 1381 },
+					["u"] = 40,	-- Legacy Quests — Retired with the implementation of 8.2
+				}),
+				
+				
 				q(49125, {	-- Negative Blood
 					["sourceQuests"] = { 49120 },	-- Speaking with the Dead
 					["provider"] = { "n", 127958 },	-- Kisha
@@ -542,6 +763,22 @@ _.Zones =
 					["sourceQuests"] = { 47631 },	-- Rendezvous with the Libation
 					["provider"] = { "n", 123178 },	-- Patch
 					["coord"] = { 74.5, 38.9, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(48498, {	-- No Mercy for Sithis
+					["sourceQuests"] = { 48496 },	-- Reuniting the Company
+					["provider"] = { "n", 126377 },	-- Ingrid Bellix
+					["coord"] = { 26.6, 37.9, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(49776, {	-- No Problem Tar Can't Solve
+					["sourceQuests"] = { 50933 },	-- An Unfortunate Event
+					["provider"] = { "n", 131231 },	-- Jin'Tiki
+					["coord"] = { 24.1, 53.1, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -580,6 +817,39 @@ _.Zones =
 					["sourceQuests"] = { 49314 },	-- Hunting Zardrax
 					["provider"] = { "n", 127216 },	-- Zardrax the Empowerer
 					["coord"] = { 30.9, 52.0, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(49777, {	-- On the Run
+					["sourceQuests"] = { 50933 },	-- An Unfortunate Event
+					["provider"] = { "n", 130930 },	-- Zaluto
+					["coord"] = { 24.1, 53.1, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(48869, {	-- Payback's a Lich
+					["sourceQuests"] = {
+						48857,	-- All Hope is Lost
+						48856,	-- Conduit Interruption
+						48855,	-- Humbling the Terrors
+					},
+					["provider"] = { "n", 127215 },	-- Shadow Hunter Da'jul
+					["coord"] = { 30.9, 52.1, 863 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(155378),	-- Zardax's Tattered Drape
+						i(155374),	-- Death Defier's Aegis
+						i(155375),	-- Ghoulish Blood Idol
+					},
+				}),
+				
+				
+				q(52073, {	-- Petitioning Krag'wa
+					["sourceQuests"] = { 50082 },	-- Target of Opportunity
+					["provider"] = { "n", 133125 },	-- Princess Talanji
+					["coord"] = { 45.2, 60.5, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -656,6 +926,14 @@ _.Zones =
 				}),
 				
 				
+				q(49780, {	-- Recovering Ancient Fire
+					["sourceQuests"] = { 49778 },	-- Don't Go into the Light
+					["provider"] = { "n", 131231 },	-- Jin'Tiki
+					["coord"] = { 24.1, 53.1, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(49937, {	-- Recovering Remnants
 					["sourceQuests"] = { 49932 },	-- Slumber No More
 					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
@@ -694,11 +972,37 @@ _.Zones =
 				}),
 				
 				
+				q(48499, {	-- Return to Dust
+					["sourceQuests"] = { 49479 },	-- Didn't Stop to Think if They Should
+					["provider"] = { "n", 126346 },	-- Chadwick Paxton
+					["coord"] = { 25.9, 36.1, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(49985, {	-- Return to Gloom Hollow
 					["sourceQuests"] = { 49980 },	-- Containment Procedure
 					["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
 					["coord"] = { 72.4, 29.3, 863 },
 					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(48496, {	-- Reuniting the Company
+					["sourceQuests"] = { 48492 },	-- Getting a Leg Up
+					["provider"] = { "n", 126346 },	-- Chadwick Paxton
+					["coord"] = { 28.6, 43.8, 863 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(158950),	-- Death-Pledged Grips
+						i(155342),	-- Death-Pledged Wristguards
+						i(158949),	-- Loa Speaker's Grips
+						i(155340),	-- Loa Speaker's Wristwraps
+						i(155520),	-- Nazmani Warplate Bracelets
+						i(158948),	-- Nazmani Warplate Handguards
+						i(158947),	-- Ritual Flayer's Handguards
+						i(155522),	-- Ritual Flayer's Wristwraps
+					},
 				}),
 				
 				
@@ -717,10 +1021,64 @@ _.Zones =
 				}),
 				
 				
+				q(48576, {	-- Safe Flying
+					["sourceQuests"] = {
+						48573,	-- Crocolisk Life
+						48574,	-- Pulling Fangs
+					},
+					["provider"] = { "n", 126713 },	-- Sur'jan
+					["coord"] = { 34.0, 78.7, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(49131, {	-- Sanctifying Ground
 					["sourceQuests"] = { 49126 },	-- Forcing Fate's Hand
 					["provider"] = { "n", 127961 },	-- Princess Talanji
 					["coord"] = { 58.5, 13.8, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(47925, {	-- Shoak's on the Menu
+					["sourceQuests"] = { 47924 },	-- Profanity Filter
+					["description"] = "You must complete this storyline for Shoak to appear in Gloom Hollow.",
+					["provider"] = { "n", 125024 },	-- Kajosh
+					["coord"] = { 51.7, 33.2, 863 },
+					["g"] = {
+						-- Quest can be completed by both factions but rewards are Horde only
+						i(158957, {	-- Death-Pledged Greaves
+							["races"] = HORDE_ONLY,
+						}),
+						i(158966, {	-- Death-Pledged Links
+							["races"] = HORDE_ONLY,
+						}),
+						i(158956, {	-- Loa Speaker's Pants
+							["races"] = HORDE_ONLY,
+						}),
+						i(158965, {	-- Loa Speaker's Sash
+							["races"] = HORDE_ONLY,
+						}),
+						i(158955, {	-- Nazmani Warplate Legguards
+							["races"] = HORDE_ONLY,
+						}),
+						i(158964, {	-- Nazmani Warplate Waistplate
+							["races"] = HORDE_ONLY,
+						}),
+						i(158958, {	-- Ritual Flayer's Trousers
+							["races"] = HORDE_ONLY,
+						}),
+						i(158967, {	-- Ritual Flayer's Waistband
+							["races"] = HORDE_ONLY,
+						}),
+					},
+				}),
+				
+				
+				q(48497, {	-- Show of Force
+					["sourceQuests"] = { 48492 },	-- Getting a Leg Up
+					["provider"] = { "n", 126346 },	-- Chadwick Paxton
+					["coord"] = { 28.6, 43.8, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -804,6 +1162,65 @@ _.Zones =
 				}),
 				
 				
+				q(54939, {	-- Stubborn as a Bronzebeard
+					["sourceQuests"] = { 54938 },	-- A Brother's Help
+					["provider"] = { "n", 149867 },	-- Magni Bronzebeard
+					["coord"] = { 57.8, 50.4, 863 },
+					["u"] = 40,	-- Legacy Quests — Retired with the implementation of 8.2
+				}),
+				
+				
+				q(49477, {	-- Surprise Backup
+					["isBreadcrumb"] = true,
+					["provider"] = { "o", 278577 },	-- Torn Horde Missive
+					["coord"] = { 34.0, 39.6, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(50444, {	-- Taking the Loa Road
+					["sourceQuests"] = {
+						51145,	-- Curse of Jani [Alliance]
+						47442,	-- Curse of Jani [Horde]
+					},
+					["provider"] = { "n", 136608 },	-- Jani
+					["coord"] = { 53.9, 74.1, 863 },
+				}),
+				
+				
+				q(50082, {	-- Target of Opportunity
+					["sourceQuests"] = {
+						50079,	-- Boom goes the Bomb
+						50081,	-- The Road of Pain
+					},
+					["provider"] = { "n", 133125 },	-- Princess Talanji
+					["coord"] = { 44.1, 62.8, 863 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(159025),	-- Nazmani Warplate Legplates
+						i(159026),	-- Loa Speaker's Legwraps
+						i(159027),	-- Death-Pledged Breeches
+						i(159028),	-- Ritual Flayer's Pants
+						i(159034),	-- Nazmani Warplate Greatbelt
+						i(159035),	-- Loa Speaker's Cincture
+						i(159036),	-- Death-Pledged Chain
+						i(159037),	-- Ritual Flayer's Girdle
+						i(158619),	-- Wickerwoven Waistband -- this is an alliance-only appearance that was granted to me when i learned Loa Speaker's Cincture.  it doesn't appear to come from anywhere apart from this quest.
+					},
+				}),
+				
+				
+				q(48577, {	-- Terrorizing Their Eggs
+					["sourceQuests"] = {
+						48573,	-- Crocolisk Life
+						48574,	-- Pulling Fangs
+					},
+					["provider"] = { "n", 126713 },	-- Sur'jan
+					["coord"] = { 34.0, 78.7, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(47247, {	-- That Which Haunts the Dead
 					["sourceQuests"] = { 47880 },	-- A Tribute for Death
 					["provider"] = { "n", 122688 },	-- Bwonsamdi
@@ -827,6 +1244,44 @@ _.Zones =
 					["provider"] = { "n", 121288 },	-- Princess Talanji
 					["coord"] = { 39.2, 79.0, 863 },
 					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(50138, {	-- The Battle of Bloodfire Ravine
+					["sourceQuests"] = { 50076 },	-- Rally the Warriors
+					["provider"] = { "n", 121288 },	-- Princess Talanji
+					["coord"] = { 39.3, 77.6, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(48584, {	-- The Blood of My Enemies
+					["sourceQuests"] = {
+						48576,	-- Safe Flying
+						48577,	-- Terrorizing Their Eggs
+						48578,	-- There's No Eye in Skyterror
+					},
+					["provider"] = { "n", 126713 },
+					["coord"] = { 34.0, 78.6, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(50083, {	-- The Crawg Ma'da
+					["sourceQuests"] = { 50082 },	-- Target of Opportunity
+					["provider"] = { "n", 133471 },	-- Rokhan
+					["coord"] = { 45.4, 58.6, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(48480, {	-- The Fall of Kel'vax
+					["sourceQuests"] = {
+						48479,	-- Bones for Protection
+						48478,	-- Kel'vax's Home
+					},
+					["provider"] = { "n", 126080 },	-- Shinga Deathwalker
+					["coord"] = { 39.0, 59.9, 863 },
 				}),
 				
 				
@@ -861,10 +1316,29 @@ _.Zones =
 				}),
 				
 				
+				q(50081, {	-- The Road of Pain
+					["sourceQuests"] = {
+						50138,	-- The Battle of Bloodfire Ravine
+						50078,	-- Undying Totems
+					},
+					["provider"] = { "n", 132333 },	-- Princess Talanji
+					["coord"] = { 44.9, 68.6, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(47241, {	-- The Shadow of Death
 					["sourceQuests"] = { 48535 },	-- Nazmir, the Forbidden Swamp
 					["provider"] = { "n", 121288 },	-- Princess Talanji
 					["coord"] = { 39.2, 79.0, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(51302, {	-- The Underrot: Sealing G'huun's Corruption
+					["sourceQuests"] = { 51244 },	-- What Rots Beneath
+					["provider"] = { "n", 137112 },	-- Titan Keeper Hezrel
+					["coord"] = { 51.7, 65.7, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -877,6 +1351,21 @@ _.Zones =
 					["provider"] = { "n", 123548 },	-- Ticker
 					["coord"] = { 82.3, 27.2, 863 },
 					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(48578, {	-- There's No Eye in Skyterror
+					["sourceQuests"] = {
+						48573,	-- Crocolisk Life
+						48574,	-- Pulling Fangs
+					},
+					["provider"] = { "n", 126713 },	-- Sur'jan
+					["coord"] = { 34.0, 78.7, 863 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(155377),	-- Drained Bone Band
+						i(159074),	-- Jarkadiax's Other Eye
+					},
 				}),
 				
 				
@@ -915,6 +1404,15 @@ _.Zones =
 				}),
 				
 				
+				q(47918, {	-- To Serve Krag'wa
+					["sourceQuests"] = { 47697 },	-- Krag'wa's Aid
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 120551 },	-- Krag'wa the Huge
+					["coord"] = { 75.4, 56.6, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(49064, {	-- Torga, the Turtle Loa
 					["sourceQuests"] = { 49185 },	-- Catching Up
 					["provider"] = { "n", 127960 },	-- Lashk
@@ -942,6 +1440,14 @@ _.Zones =
 				}),
 				
 				
+				q(50078, {	-- Undying Totems
+					["sourceQuests"] = { 50076 },	-- Rally the Warriors
+					["provider"] = { "n", 132624 },	-- Zandalari War Priest
+					["coord"] = { 42.3, 72.5, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(49949, {	-- Unwelcome Undead
 					["sourceQuests"] = {
 						49938,	-- Corrupted Earth
@@ -958,6 +1464,25 @@ _.Zones =
 					["sourceQuests"] = { 49081 },	-- To Kill a Loa
 					["provider"] = { "n", 128276 },	-- Jo'chunga
 					["coord"] = { 31.2, 46.7, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(48669, {	-- Urok, Terror of the Wetlands
+					["sourceQuests"] = { 47188 },	-- The Aid of the Loa
+					["provider"] = { "n", 126713 },	-- Sur'jan
+					["coord"] = { 38.8, 77.7, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(48591, {	-- Urok's True Death
+					["sourceQuests"] = {
+						48590,	-- My Head and Shoulders
+						48584,	-- The Blood of My Enemies
+					},
+					["provider"] = { "n", 131872 },	-- Sur'jan
+					["coord"] = { 28.8, 72.5, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -981,9 +1506,30 @@ _.Zones =
 				}),
 				
 				
-				q(52477, {	-- WANTED: Ayame
+				q(52480, {	-- WANTED: Ayame (A)
+					["provider"] = { "o", 293568 },	-- Wanted Poster
+					["coord"] = { 62.3, 41.3, 863 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(52477, {	-- WANTED: Ayame (H)
 					["provider"] = { "n", 131987 },	-- Crez
 					["coord"] = { 67.2, 40.8, 863 },
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(51139, {	-- WANTED: Tojek (A)
+					["provider"] = { "o", 287327 },	-- Scouting Report
+					["coord"] = { 62.1, 41.0, 863 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				
+				
+				q(51089, {	-- WANTED: Tojek (H)
+					["provider"] = { "o", 287232 },	-- Scouting Report
+					["coord"] = { 39.5, 79.9, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -996,183 +1542,28 @@ _.Zones =
 				}),
 				
 				
-				q(48669, {	-- Urok, Terror of the Wetlands
-					["sourceQuests"] = { 47188 },	-- The Aid of the Loa
-					["provider"] = { "n", 126713 },	-- Sur'jan
-					["coord"] = { 38.8, 77.7, 863 },
+				q(51244, {	-- What Rots Beneath
+				--	is this a breadcrumb?
+					["sourceQuests"] = { 50087 },	-- Ateena's Fall
+					["provider"] = { "n", 140656 },	-- Rokhan
+					["coord"] = { 50.5, 58.3, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				
 				
-				
-				
-	ach(11868, {	-- The Dark Heart of Nazmir [Note: Quest line starts here and a few quests are in the zone.  So we want to make them stand out amongst the crowd.]
-		["races"] = HORDE_ONLY,
-		["g"] = {
-			crit(5, {	-- A Friend of the Frogs
-				q(47918, {	-- To Serve Krag'wa
-					["provider"] = { "n", 120551 },	-- Krag'wa the Huge
-					["isBreadcrumb"] = true,
-					["sourceQuests"] = { 47697 },	-- Krag'wa's Aid
-					["races"] = HORDE_ONLY,
-				}),
-			}),
-			crit(8, {	-- Bleeding the Blood Trolls
-				q(50138, {	-- The Battle of Bloodfire Ravine
-					["provider"] = { "n", 121288 },	-- Princess Talanji
-					["coord"] = { 39.3, 77.6, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 50076 },	-- Rally the Warriors
-				}),
-				q(50078, {	-- Undying Totems
-					["provider"] = { "n", 132624 },	-- Zandalari War Priest
-					["coord"] = { 42.3, 72.5, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 50076 },	-- Rally the Warriors
-				}),
-				q(50079, {	-- Boom goes the Bomb
-					["provider"] = { "n", 132988 },	-- Patch
-					["coord"] = { 44.9, 68.3, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						50138,	-- The Battle of Bloodfire Ravine
-						50078,	-- Undying Totems
-					},
-				}),
-				q(50081, {	-- The Road of Pain
-					["provider"] = { "n", 132333 },	-- Princess Talanji
-					["coord"] = { 44.9, 68.6, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						50138,	-- The Battle of Bloodfire Ravine
-						50078,	-- Undying Totems
-					},
-				}),
-				q(50082, {	-- Target of Opportunity
-					["provider"] = { "n", 133125 },	-- Princess Talanji
-					["coord"] = { 44.1, 62.8, 863 },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(159025),	-- Nazmani Warplate Legplates
-						i(159026),	-- Loa Speaker's Legwraps
-						i(159027),	-- Death-Pledged Breeches
-						i(159028),	-- Ritual Flayer's Pants
-						i(159034),	-- Nazmani Warplate Greatbelt
-						i(159035),	-- Loa Speaker's Cincture
-						i(159036),	-- Death-Pledged Chain
-						i(159037),	-- Ritual Flayer's Girdle
-					},
-					["sourceQuests"] = {
-						50079,	-- Boom goes the Bomb
-						50081,	-- The Road of Pain
-					},
-				}),
-				q(52073, {	-- Petitioning Krag'wa
-					["provider"] = { "n", 133125 },	-- Princess Talanji
-					["coord"] = { 45.2, 60.5, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 50082 },	-- Target of Opportunity
-				}),
-				q(50087, {	-- Ateena's Fall
-					["provider"] = { "n", 133476 },	--
-					["coord"] = { 49.3, 57.1, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 52073 },	-- Petitioning Krag'wa
-					["g"] = {
-						i(159010),	-- Nazmani Warplate Chestpiece
-						i(155333),	-- Nazmani Warplate Spaulders
-						i(155332),	-- Ritual Flayer's Spaulders
-						i(159012),	-- Ritual Flayer's Jerkin
-					},
-				}),
-			}),
-		},
-	}),
-				q(50085, {	-- A Message of Blood and Fire
-					["provider"] = { "n", 133471 },	-- Rokhan
-					["coord"] = { 45.4, 58.6, 863 },
-					["sourceQuests"] = { 50082 },	-- Target of Opportunity
-					["races"] = HORDE_ONLY,
-				}),
-				q(54964, {	-- A One-Way Ticket to the Heart
-					["provider"] = { "n", 149823 },	-- Magni Bronzebeard
-					["u"] = 40,	-- Retired with the implementation of 8.2
-					["coord"] = { 52.3, 68.6, 1382 },
-					["sourceQuests"] = { 54940 },	-- Necessity is the MOTHER
-				}),
-				q(48857, {	-- All Hope is Lost
-					["provider"] = { "n", 127212 },	-- Ka'dran
-					["coord"] = { 30.9, 52.0, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						48825,	-- Power Denied
-						48823,	-- Projection Destruction
-					},
-				}),
-				q(50976, {	-- An Ancient Curse
-					["provider"] = { "o", 287081 },	-- Ancient Tablet
-					["coord"] = { 52.92, 75.96, 863 },
-					["lvl"] = 110,
-				}),
-				q(49779, {	-- Bad to the Bone
-					["provider"] = { "n", 130930 },	-- Zaluto
-					["coord"] = { 24.1, 53.2, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 49778 },	-- Don't Go into the Light
-				}),
-				q(48479, {	-- Bones for Protection
-					["provider"] = { "n", 126079 },	-- Koj'jun Deathwalker
-					["coord"] = { 38.9, 59.9, 863 },
-					["sourceQuests"] = {
-						48468,	-- Bwonsamdi's Deliverance
-						48473,	-- Respecting the Rites
-					},
-				}),
-				q(49781, {	-- Catch Me if you Can
-					["sourceQuests"] = {
-						49779,	-- Bad To The Bone
-						49780,	-- Recovering Ancient Fire
-					},
-					["provider"] = { "n", 130930 },	-- Zaluto
-					["coord"] = { 24.1, 53.2, 863 },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(155556),	-- Jin'Tiki's Signet
-						i(159046),	-- Loa Speaker's Footpads
-						i(159048),	-- Ritual Flayer's Treads
-						i(159047),	-- Death-Pledged Striders
-						i(159045),	-- Nazmani Warplate Boots
-					},
-				}),
-				q(48856, {	-- Conduit Interruption
-					["provider"] = { "n", 127215 },	-- Shadow Hunter Da'jul
-					["coord"] = { 31.0, 52.0, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						48825,	-- Power Denied
-						48823,	-- Projection Destruction
-					},
-				}),
-				q(49479, {	-- Didn't Stop to Think if They Should
-					["provider"] = { "n", 126346 },	-- Chadwick Paxton
-					["coord"] = { 25.9, 36.1, 863 },
-					["sourceQuests"] = {
-						48498,	-- No Mercy for Sithis
-						48496,	-- Reuniting the Company
-						48497,	-- Show of Force
-					},
-					["races"] = HORDE_ONLY,
-				}),
-				q(49778, {	-- Don't Go into the Light
+				q(49774, {	-- Won't Leaf Him to Die
+					["sourceQuests"] = { 50933 },	-- An Unfortunate Event
 					["provider"] = { "n", 131231 },	-- Jin'Tiki
 					["coord"] = { 24.1, 53.1, 863 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						49776,	-- No Problem Tar Can't Solve
-						49777,	-- On The Run
-						49774,	-- Won't Leaf Him to Die
-					},
 				}),
+				
+				
+				
+				
+				
+				
+				
 				q(53781, {	-- Eyir
 					["provider"] = { "n", 122688 },	-- Bwonsamdi
 					["lvl"] = 120,
@@ -1180,60 +1571,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 54145 },	-- The Loa of Death
 				}),
-				q(48492, {	-- Getting a Leg Up
-					["provider"] = { "n", 126346 },	-- Chadwick Paxton
-					["sourceQuests"] = { 49477 },	-- Surprise Backup
-					["races"] = HORDE_ONLY,
-				}),
-				q(50808, {	-- Halting the Empire's Fall
-					["provider"] = { "n", 137113 },	-- Rokhan
-					["coord"] = { 51.8, 65.5, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 51244 },	-- What Rots Beneath
-				}),
-				q(48855, {	-- Humbling the Terrors
-					["provider"] = { "n", 127215 },	-- Shadow Hunter Da'jul
-					["coord"] = { 31.0, 52.0, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						48825,	-- Power Denied
-						48823,	-- Projection Destruction
-					},
-				}),
 				q(53780, {	-- Jailor of the Damned
 					["provider"] = { "n", 122688 },	-- Bwonsamdi
 					["lvl"] = 120,
 					["coord"] = { 39.5, 24.6, 863 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 54145 },	-- The Loa of Death
-				}),
-				q(47919, {	-- Just Say No to Cannibalism
-					["provider"] = { "n", 125024 },	-- Kajosh
-					["coord"] = { 51.7, 33.2, 863 },
-					["sourceQuests"] = { 47924 },	-- Profanity Filter
-				}),
-				q(48478, {	-- Kel'vax's Home
-					["sourceQuests"] = {
-						48468,	-- Bwonsamdi's Deliverance
-						48473,	-- Respecting the Rites
-					},
-					["provider"] = { "n", 126080 },	-- Shinga Deathwalker
-					["coord"] = { 39.0, 59.9, 863 },
-					["g"] = {
-						i(158943),	-- Nazmani Warplate Treads
-						i(158944),	-- Loa Speaker's Footwraps
-						i(158945),	-- Death-Pledged Treads
-						i(158946),	-- Ritual Flayer's Footpads
-						i(155519),	-- Loa Speaker's Cuffs
-						i(155343),	-- Ritual Flayer's Bindings
-						i(155521),	-- Death-Pledged Bracers
-						i(155341),	-- Nazmani Warplate Vambraces
-					},
-				}),
-				q(47998, {	-- Killing Cannibals
-					["provider"] = { "n", 124933 },	-- Kajosh
-					["coord"] = { 51.7, 33.2, 863 },
-					["sourceQuests"] = { 47924 },	-- Profanity Filter
 				}),
 				q(53782, {	-- Mysteries of Death
 					["provider"] = { "n", 122688 },	-- Bwonsamdi
@@ -1245,143 +1588,11 @@ _.Zones =
 						53780,	-- Jailor of the Damned
 					},
 				}),
-				q(54940, {	-- Necessity is the MOTHER
-					["provider"] = { "n", 149823 },
-					["u"] = 40,	-- Retired with the implementation of 8.2
-					["coord"] = { 47.6, 16.2, 1381, },
-					["sourceQuests"] = { 54939 },	-- Stubborn as a Bronzebeard
-				}),
-				q(48498, {	-- No Mercy for Sithis
-					["provider"] = { "n", 126377 },	-- Ingrid Bellix
-					["sourceQuests"] = { 48496 },	-- Reuniting the Company
-					["races"] = HORDE_ONLY,
-				}),
-				q(49776, {	-- No Problem Tar Can't Solve
-					["provider"] = { "n", 131231 },	--
-					["coord"] = { 24.1, 53.1, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 50933 },	-- An Unfortunate Event
-				}),
-				q(49484, {	-- Offering to Bwonsamdi [The Necropolis]
-					["u"] = 1,
-				}),
-				q(49777, {	-- On the Run
-					["provider"] = { "n", 130930 },	-- Zaluto
-					["coord"] = { 24.1, 53.1, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 50933 },	-- An Unfortunate Event
-				}),
-				q(48869, {	-- Payback's a Lich
-					["sourceQuests"] = {
-						48857,	-- All Hope is Lost
-						48856,	-- Conduit Interruption
-						48855,	-- Humbling the Terrors
-					},
-					["provider"] = { "n", 127215 },	-- Shadow Hunter Da'jul
-					["coord"] = { 30.9, 52.1, 863 },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(155378),	-- Zardax's Tattered Drape
-						i(155374),	-- Death Defier's Aegis
-						i(155375),	-- Ghoulish Blood Idol
-					},
-				}),
 				q(48823, {	-- Projection Destruction
 					["provider"] = { "n", 127215 },	-- Shadow Hunter Da'jul
 					["coord"] = { 31.0, 52.0, 863 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] =  { 48854 },	-- Offer of Power
-				}),
-				q(49780, {	-- Recovering Ancient Fire
-					["provider"] = { "n", 131231 },	-- Jin'Tiki
-					["coord"] = { 24.1, 53.1, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 49778 },	-- Don't Go into the Light
-				}),
-				q(48499, {	-- Return to Dust
-					["provider"] = { "n", 126346 },	-- Chadwick Paxton
-					["coord"] = { 25.9, 36.1, 863 },
-					["sourceQuests"] = {
-						49479,	-- Didn't Stop to Think if They Should
-					},
-					["races"] = HORDE_ONLY,
-				}),
-				q(48496, {	-- Reuniting the Company
-					["provider"] = { "n", 126346 },	-- Chadwick Paxton
-					["sourceQuests"] = { 48492 },	-- Getting a Leg Up
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(158950),	-- Death-Pledged Grips
-						i(155342),	-- Death-Pledged Wristguards
-						i(158949),	-- Loa Speaker's Grips
-						i(155340),	-- Loa Speaker's Wristwraps
-						i(155520),	-- Nazmani Warplate Bracelets
-						i(158948),	-- Nazmani Warplate Handguards
-						i(158947),	-- Ritual Flayer's Handguards
-						i(155522),	-- Ritual Flayer's Wristwraps
-					},
-				}),
-				q(47925, {	-- Shoak's on the Menu
-					["provider"] = { "n", 125024 },	-- Kajosh
-					["coord"] = { 51.7, 33.2, 863 },
-					["description"] = "You must complete this storyline for Shoak to appear in Gloom Hollow.",
-					["sourceQuests"] = { 47924 },	-- Profanity Filter
-					["g"] = {
-						-- Quest can be completed by both factions but rewards are Horde only
-						i(158957, {	-- Death-Pledged Greaves
-							["races"] = HORDE_ONLY,
-						}),
-						i(158966, {	-- Death-Pledged Links
-							["races"] = HORDE_ONLY,
-						}),
-						i(158956, {	-- Loa Speaker's Pants
-							["races"] = HORDE_ONLY,
-						}),
-						i(158965, {	-- Loa Speaker's Sash
-							["races"] = HORDE_ONLY,
-						}),
-						i(158955, {	-- Nazmani Warplate Legguards
-							["races"] = HORDE_ONLY,
-						}),
-						i(158964, {	-- Nazmani Warplate Waistplate
-							["races"] = HORDE_ONLY,
-						}),
-						i(158958, {	-- Ritual Flayer's Trousers
-							["races"] = HORDE_ONLY,
-						}),
-						i(158967, {	-- Ritual Flayer's Waistband
-							["races"] = HORDE_ONLY,
-						}),
-					},
-				}),
-				q(48497, {	-- Show of Force
-					["provider"] = { "n", 126346 },	-- Chadwick Paxton
-					["sourceQuests"] = { 48492 },	-- Getting a Leg Up
-					["races"] = HORDE_ONLY,
-				}),
-				q(54939, {	-- Stubborn as a Bronzebeard
-					["provider"] = { "n", 149867 },	-- Magni Bronzebeard
-					["u"] = 40,	-- Retired with the implementation of 8.2
-					["coord"] = { 57.8, 50.4, 863 },
-					["sourceQuests"] = { 54938 },	-- A Brother's Help
-				}),
-				q(49477, {	-- Surprise Backup
-					["provider"] = { "o", 278577 },	-- Torn Horde Missive
-					["races"] = HORDE_ONLY,
-				}),
-				q(50083, {	-- The Crawg Ma'da
-					["provider"] = { "n", 133471 },	-- Rokhan
-					["coord"] = { 45.4, 58.6, 863 },
-					["sourceQuests"] = { 50082 },	-- Target of Opportunity
-					["races"] = HORDE_ONLY,
-				}),
-				q(48480, {	-- The Fall of Kel'vax
-					["provider"] = { "n", 126080 },	-- Shinga Deathwalker
-					["coord"] = { 39.0, 59.9, 863 },
-					["sourceQuests"] = {
-						48479,	-- Bones for Protection
-						48478,	-- Kel'vax's Home
-					},
 				}),
 				q(53476, {	-- The Great Sea Scrolls
 					["description"] = "You receive the item that starts this quest from looting any treasure chest.",
@@ -1399,58 +1610,6 @@ _.Zones =
 					["coord"] = { 39.5, 27.0, 863 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 53779 },	-- The Lies of a Loa
-				}),
-				q(51302, {	-- The Underrot: Sealing G'huun's Corruption
-					["provider"] = { "n", 137112 },	-- Titan Keeper Hezrel
-					["coord"] = { 51.7, 65.7, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 51244 },	-- What Rots Beneath
-				}),
-				q(48578, {	-- There's No Eye in Skyterror
-					["provider"] = { "n", 126713 }, -- Sur'jan
-					["coord"] = { 34, 78.6, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						48573,	-- Crocolisk Life
-						48574,	-- Pulling Fangs
-					},
-					["g"] = {
-						i(155377),	-- Drained Bone Band [Ring]
-						i(159074),	-- Jarkadiax's Other Eye [Trinket]
-					},
-				}),
-				q(50888, {	-- Urn of Ugussu [Terrace of Sorrows]
-					["u"] = 1,
-				}),
-				q(52480, {	-- WANTED: Ayame
-					["coord"] = { 62.3, 41.3, 863 },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 293568 },	-- Wanted Poster
-				}),
-				q(51139, {	-- WANTED: Tojek (A)
-					["coord"] = { 62.1, 41.0, 863 },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 287327 },	-- Scouting Report
-				}),
-				q(51089, {	-- WANTED: Tojek (H)
-					["coord"] = { 39.5, 79.9, 863 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 287232 },	-- Scouting Report
-				}),
-				q(51244, {	-- What Rots Beneath
-					["provider"] = { "n", 140656 },	-- Rokhan
-					["coord"] = { 50.5, 58.3, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 50087 },	-- Ateena's Fall
-				}),
-				q(49774, {	-- Won't Leaf Him to Die
-					["provider"] = { "n", 131231 },	-- Jin'Tiki
-					["coord"] = { 24.1, 53.1, 863 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 50933 },	-- An Unfortunate Event
-				}),
-				q(49313, {	-- Wun'ju's Trove [Terrace of Sorrows]
-					["u"] = 1,
 				}),
 			}),
 		}),

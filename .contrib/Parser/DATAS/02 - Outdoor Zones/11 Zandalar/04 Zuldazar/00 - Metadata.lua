@@ -8,8 +8,6 @@ _.Zones =
 			["achievementID"] = 12559,	-- Explore Zuldazar
 			["lvl"] = 110,
 			["maps"] = {
-				1166,	-- Zanchul
-				1167,	-- Zanchul 2
 				1176,	-- Breath of Pa'ku, middle level
 				1177,	-- Breath Of Pa'ku,	bottom level
 			},

@@ -36,10 +36,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(53027, {	-- Edge of Glory
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(52064, {	-- Fiendish Fields
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -301,6 +297,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(53027, {	-- Edge of Glory
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(53878, {	-- Emergency Extrication (Faction Assault WQ)
 						["isWorldQuest"] = true,

@@ -144,7 +144,12 @@ _.Zones =
 					},
 				}),
 				n(132011, {	-- Shoak
-					["description"] = "You must complete the quests |cFFFFD700Killing Cannibals|r, |cFFFFD700Just Say No to Cannibalism|r, and |cFFFFD700Shoak's on the Menu|r in order him to show up at Gloom Hollow.",
+					["sourceQuests"] = {
+						47919,	-- Just Say No to Cannibalism|r
+						47998,	-- Killing Cannibals
+						47925,	-- Shoak's on the Menu
+					},
+					["coord"] = { 66.9, 42.0, 863 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(163506, {	-- Accursed Hexxer

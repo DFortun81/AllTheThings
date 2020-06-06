@@ -21,6 +21,8 @@ _.Zones =
 				
 				-- possible that "hunting the hunter" only requires "predatory."  check!
 				
+				-- figure out if "prepare for a siege" is a breadcrumb for anything.  there was no follow-up quest to take so i'm not sure if this quest is a requirement for something or just flavor.
+				
 				n(-9, {		-- PvP
 					["lvl"] = 120,	-- Don't become available until this level.
 					["g"] = {
@@ -406,7 +408,7 @@ _.Zones =
 						47442,	-- Curse of Jani (H)
 					},
 					["provider"] = { "n", 113490 },	-- Jani
-					["coord"] = { 66.2, 16.6, 862 },	-- Trashpile pick-up
+					["coord"] = { 66.2, 16.6, 862 },
 				}),
 				q(50074, {	-- Brutal Boost
 					["sourceQuests"] = {
@@ -416,6 +418,15 @@ _.Zones =
 					},
 					["provider"] = { "n", 130905 },	-- Cala Cruzpot
 					["coord"] = { 64.1, 35.3, 862 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(47229, {	-- Bulwark of Torcali
+					["sourceQuests"] = {
+						47204,	-- The New Frontline
+						47205,	-- Warmother
+					},
+					["provider"] = { "n", 121601 },		-- Rokhan
+					["coord"] = { 56.9, 19.1, 862 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49286, {	-- Caged Wisdom
@@ -548,6 +559,13 @@ _.Zones =
 						i(158421),	-- Torcalin Treads
 						i(158422),	-- Jambani Treads
 					},
+				}),
+				q(55248, {	-- Greener Pastures
+					["sourceQuests"] = { 55258 },	-- Sleep, Eat, Repeat
+					["provider"] = { "n", 151319 },	-- Li'zal
+					["isDaily"] = true,
+					["coord"] = { 68.1, 41.7, 862 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(47418, {	-- Growing Pains
 					["sourceQuests"] = {
@@ -788,6 +806,12 @@ _.Zones =
 					["coord"] = { 66.8, 42.5, 862 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(52305, {	-- Nature Versus Nurture
+					["sourceQuests"] = { 50402 },	-- SKREEEE!
+					["provider"] = { "n", 135308 },	-- Wingminder Goja
+					["coord"] = { 70.8, 50.9, 863 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(49489, {	-- Needs a Little Body
 					["sourceQuests"] = { 49488 },	-- Tal'gurub
 					["provider"] = { "n", 129907 },	-- Zul the Prophet
@@ -850,6 +874,13 @@ _.Zones =
 					["provider"] = { "n", 123118 },	-- Trapper Custer
 					["coord"] = { 68.9, 19.4, 862 },
 				}),
+				q(47258, {	-- Prepare for a Siege
+				--	is this a breadcrumb?
+					["sourceQuests"] = { 47229 },	-- Bulwark of Torcali
+					["provider"] = { "n", 135890 },	-- King Rastakhan
+					["coord"] = { 60.0, 22.2, 862 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(51663, {	-- Preparing for the Fall
 					["sourceQuests"] = { 49492 },	-- Arrogance of Vol'jamba
 					["provider"] = { "o", 290750 },	-- Jambani Stockpile
@@ -900,6 +931,15 @@ _.Zones =
 						i(158389),	-- Torcalin Sabatons
 						i(158388),	-- Zanchuli Sandals
 					},
+				}),
+				q(47201, {	-- Rokhan
+					["sourceQuests"] = {
+						47198,	-- They Want Us Alive
+						47200,	-- Ticks
+					},
+					["provider"] = { "n", 121599 },	-- King Rastakhan
+					["coord"] = { 60.3, 22.0, 862 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(48025, {	-- Saving for Later
 					["sourceQuests"] = {
@@ -959,6 +999,12 @@ _.Zones =
 					["sourceQuests"] = { 50268 },	-- Give it a Little Juice
 					["provider"] = { "n", 130905 },	-- Cala Cruzpot
 					["coord"] = { 64.0, 35.4, 862 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(50402, {	-- SKREEEEE!
+					["sourceQuests"] = { 50394 },	-- Your Problem Now
+					["provider"] = { "n", 133678 },	-- Kua'fon
+					["coord"] = { 70.8, 50.9 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49680, {	-- Skycaller Soltok
@@ -1056,6 +1102,12 @@ _.Zones =
 					["coord"] = { 79.4, 16.8, 862 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(47204, {	-- The New Frontline
+					["sourceQuests"] = { 47201 },	-- Rokhan
+					["provider"] = { "n", 121601 },		-- Rokhan
+					["coord"] = { 56.9, 19.1, 862 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(47226, {	-- The Orphaned Hatchling
 					["sourceQuests"] = { 50538 },	-- The Missing Handler
 					["provider"] = { "n", 122939 },	-- Direhorn Hatchling
@@ -1139,6 +1191,12 @@ _.Zones =
 					["coord"] = { 64.1, 35.3, 862 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(47198, {	-- They Want Us Alive
+					["sourceQuests"] = { 47199 },	-- The Blood Gate
+					["provider"] = { "n", 121599 },		-- King Rastakhan
+					["coord"] = { 60.39, 22.03, 862 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(49309, {	-- Thunder's Fall
 					["sourceQuests"] = {
 						49147,	-- Show of Strength
@@ -1149,6 +1207,12 @@ _.Zones =
 					["coord"] = { 49.6, 64.5, 862 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(47200, {	-- Ticks
+					["sourceQuests"] = { 47199 },	-- The Blood Gate
+					["provider"] = { "n", 121599 },		-- King Rastakhan
+					["coord"] = { 60.39, 22.03, 862 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(49285, {	-- Tiny Treasures
 					["sourceQuests"] = { 49283 },	-- Who Seeks the Seekers?
 					["provider"] = { "n", 128888 },	-- Koba
@@ -1156,6 +1220,12 @@ _.Zones =
 					["g"] = {
 						i(156871),	-- Spitzy (TOY!)
 					},
+				}),
+				q(47741, {	-- To Sacrifice a Loa
+					["sourceQuests"] = { 47734 },	-- Partners in Heresy
+					["provider"] = { "n", 124655 },	-- King Rastakhan
+					["coord"] = { 74.9, 24.9, 862 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(51087, {	-- WANTED: Dark Chronicler (H)
 					["provider"] = { "o", 287229 },	-- Wanted: Dark Chronicler
@@ -1185,6 +1255,16 @@ _.Zones =
 					["provider"] = { "o", 271706 },	-- Hunters' Board
 					["coord"] = { 67.4, 17.9, 862 },
 				}),
+				q(47205, {	-- Warmother
+					["sourceQuests"] = { 47201 },	-- Rokhan
+					["provider"] = { "n", 121601 },		-- Rokhan
+					["coord"] = { 56.9, 19.10, 862 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(158653),	-- Bloodsiege Drape
+						i(162453),	-- Shazraka's Curse Ring
+					},
+				}),
 				q(51990, {	-- Wings for the Kraal
 					["sourceQuests"] = {
 						47311,	-- Headbutting 101
@@ -1210,6 +1290,12 @@ _.Zones =
 					["sourceQuests"] = { 47329 },	-- The Bloodwatcher Legacy
 					["provider"] = { "n", 131582 },	-- Examiner Tae'shara Bloodwatcher
 					["coord"] = { 43.9, 72.1, 862 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(50394, {	-- Your Problem Now
+					["sourceQuests"] = { 50393 },	-- A Child of Pa'ku
+					["provider"] = { "n", 127377 },	-- Pa'ku
+					["coord"] = { 71.4, 49.2 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49493, {	-- Zul's Ethical Dilemma
@@ -1304,12 +1390,12 @@ _.Zones =
 					["sourceQuests"] = { 49282 },	-- Morgrum's Extended Survey
 				}),
 				q(52210, {	-- Sending Out An SOS
+					["sourceQuests"] = { 47741 },	-- To Sacrifice a Loa -- TODO: verify this. Earliest point where this was available but may have additional requirements
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 141555 },	-- Baine Bloodhoof
 					["coord"] = { 41.4, 72.2, 1164 },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1164 },	-- Dazar'alor
-					["sourceQuests"] = { 47741 },	-- To Sacrifice a Loa -- TODO: verify this. Earliest point where this was available but may have additional requirements
-					["isBreadcrumb"] = true,
 				}),
 				q(49059, {	-- The Bones of Xibala (A)
 				--	["coord"] = { 40.0, 76.5, 862 },
@@ -1348,12 +1434,6 @@ _.Zones =
 					["provider"] = { "n", 129907 },	-- Zul the Prophet
 					["coord"] = { 62.8, 32.5, 862 },
 					["sourceQuests"] = { 49488 },	-- Tal'gurub
-					["races"] = HORDE_ONLY,
-				}),
-				q(47741, {	-- To Sacrifice a Loa
-					["provider"] = { "n", 124655 },	-- King Rastakhan
-					["coord"] = { 74.9, 24.9, 862 },
-					["sourceQuests"] = { 47734 },	-- Partners in Heresy
 					["races"] = HORDE_ONLY,
 				}),
 				q(53453, {	-- To Stomp or Not To Stomp
@@ -1403,19 +1483,10 @@ _.Zones =
 					["coord"] = { 68.2, 41.8, 862 },
 				}),
 				q(50954, {	-- Zandalar Forever!
-					["coord"] = { 60.05, 22.23, 862 },
+					["coord"] = { 60.0, 22.2, 862 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 135890 },		-- King Rastakhan
 					["sourceQuests"] = { 47229 },	-- Bulwark of Torcali
-				}),
-				q(47229, {	-- Bulwark of Torcali
-					["coord"] = { 56.91, 19.11, 862 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 121601 },		-- Rokhan
-					["sourceQuests"] = {
-						47204,	-- The New Frontline
-						47205,	-- Warmother
-					},
 				}),
 				q(56205, {	--  Just Ptrust Me On This
 					["races"] = HORDE_ONLY,
@@ -1423,43 +1494,6 @@ _.Zones =
 					["coord"] = { 71.5, 49.4, 862 },
 					["g"] = {
 						ach(13573),	-- How to Ptrain Your Pterrordax
-					},
-				}),
-				q(47201, {	-- Rokhan
-					["coord"] = { 60.39, 22.03, 862 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 121599 },		-- King Rastakhan
-					["sourceQuests"] = {
-						47198,	-- They Want Us Alive
-						47200,	-- Ticks
-					},
-				}),
-				q(47204, {	-- The New Frontline
-					["coord"] = { 56.91, 19.11, 862 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 121601 },		-- Rokhan
-					["sourceQuests"] = { 47201 },	-- Rokhan
-				}),
-				q(47198, {	-- They Want Us Alive
-					["coord"] = { 60.39, 22.03, 862 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 121599 },		-- King Rastakhan
-					["sourceQuests"] = { 47199 },	-- The Blood Gate
-				}),
-				q(47200, {	-- Ticks
-					["coord"] = { 60.39, 22.03, 862 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 121599 },		-- King Rastakhan
-					["sourceQuests"] = { 47199 },	-- The Blood Gate
-				}),
-				q(47205, {	-- Warmother
-					["coord"] = { 56.9, 19.10, 862 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 121601 },		-- Rokhan
-					["sourceQuests"] = { 47201 },	-- Rokhan
-					["g"] = {
-						i(158653),	-- Bloodsiege Drape
-						i(162453),	-- Shazraka's Curse Ring
 					},
 				}),
 				-- Start How to Train Your Direhorn Crit 4
@@ -1597,13 +1631,6 @@ _.Zones =
 					["coord"] = { 45.5, 35.8 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 52114 },	-- Honoring a True Leader
-				}),
-				q(55248, {	-- Greener Pastures
-					["provider"] = { "n", 151319 },	-- Li'zal
-					["coord"] = { 68.1, 41.7, 862 },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["sourceQuests"] = { 55253 },	-- A Show of Faith
 				}),
 				q(55251, {	-- A Daughter of Torcali
 					["provider"] = { "n", 151319 },	-- Li'zal

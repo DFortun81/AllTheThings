@@ -2048,9 +2048,11 @@ _.NeverImplemented =
 		q(50931),	-- Spoke to talanji when meeting with Rastakhan for the first time
 		q(55413),	-- War Mode supply drop in Zuldazar
 		q(55259),	-- Triggers after turning 'Sleep, Eat, Repeat' (ID 55258) in to finish the achievement criteria 'Sleep, Eat, Repeat' (3) for How to Train Your Direhorn (ID 13542)
+		q(52141),	-- after completing "SKREEEEE!" for How to Ptrain Your Pterrordax
 		q(47436),	-- Picked Pa'ku for "Picking a Side"
 		q(50948),	-- Da White Shark, rare with no associated loot (treasure quest is in achievement section)
-		q(125816),	-- Sky Queen, rare with no associated loot
+		q(47443),	-- switched loa alignment in Zuldazar to Gonk by speaking to Chronicler Ash'tari
+		q(53567),	-- Sky Queen, rare with no associated loot
 		-- Bonus Objectives
 		q(47527, {	-- Rituals of Heresy
 			["isWorldQuest"] = true,
@@ -2497,6 +2499,8 @@ _.NeverImplemented =
 		q(58545),	-- triggered together with 58543, 58544 and 59565. My first ever kill of Ra-den (happened on heroic)
 		q(59567),	-- kill Carapace of N'Zoth (Fury of N'Zoth)
 		q(59568),	-- N'Zoth killed on Heroic. Possibly the same for other difficulties?
+		q(58531),	-- triggered when killing N'zoth on Heroic for the first time, had previously only done LFR
+		q(58533),	-- triggered when killing N'zoth on Heroic for the first time, had previously only done LFR
 		q(58532),	-- triggered when killing N'Zoth in LFR
 		q(59531),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
 		q(59532),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
