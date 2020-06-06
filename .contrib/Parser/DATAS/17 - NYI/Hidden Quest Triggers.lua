@@ -1052,6 +1052,7 @@ _.NeverImplemented =
 		q(44297),	-- Tracking Quest - W2 - Jaina Gone
 		q(44659),	-- Dalaran - I Skipped The Intro Tracking Quest		
 		q(48984),	-- Antoran Wastes - triggered when combining the Smashed Portal Generator and other parts to make Vishak's Portal Generator
+		q(46717),	-- got achievement Burning Bridges and looted Qa'pla, Eredun War Order legendary, so one of the two
 		
 		-- demon hunter hidden demons - maybe add this to the zone maps?
 		q(42825),	-- kill Horkus in azsuna at 56.3, 59.7
@@ -1550,6 +1551,7 @@ _.NeverImplemented =
 		q(51722),	-- triggers when completing "Uniting Kul Tiras" (Alliance WQ unlock).  Completing one triggers all 4 WQ unlock quests (main/alt quests for both Alliance and Horde)
 		q(53800),	-- Battle for Darkshore — triggered after defeating Sira Moonwarden in Darkshore warfront
 		q(52212),	-- Battle for Stormgarde — triggered after defeating Rokhan on Heroic difficulty
+		q(51973),	-- looting chest with resources after Lost Caravan event in Battle for Stormgarde
 		q(53122),	-- A Season for Celebration — unused version of hallow's end quest?  triggered when i turned in the alliance version along with the other horde one
 		q(57244),	-- triggered when turning in #55618, "The Heart Forge"
 		q(55492),	-- not sure if this was when i hit Rank 8 with brawler's guild, when i purchased the ensemble, or when i handed in bag of chipped dice to the bouncer
@@ -1567,6 +1569,7 @@ _.NeverImplemented =
 		q(55494),	-- Torcali quest of the day completed
 		q(58881),	-- triggered when i fed the uldum friendly alpaca for the last time (not with the quest that gives the mount afterward, but the final feed)
 		q(59072),	-- speaking to Tasha Riley and joining the Council of Chaos in the BRD pet battle dungeon
+		q(47866),	-- triggered after step 8 of Lucid Nightmare secret
 
 		q(54704),	-- War Campaign - triggered when turning in "Time for War"
 		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track
@@ -1980,7 +1983,7 @@ _.NeverImplemented =
 		q(51946),	-- Stormsong Valley repeatable random chest
 		q(52989),	-- Stormsong Valley repeatable random chest
 		
-		
+
 	--	Tiragarde Sound
 		q(55627),	-- triggered additionally when completing the WQ to kill P4-N73R4.  this is not the first-time kill tracking quest for the rare, so i'm not sure what it's for
 		
@@ -2330,7 +2333,7 @@ _.NeverImplemented =
 		q(56943),	-- Animated Elemental Heart (Rank 1)
 		q(56947),	-- Animated Elemental Heart (Rank 1) — this + quest above popped at the same time after assembly.  was my first one, if that matters!
 		
-		-- Patch 8.3
+	-- Patch 8.3
 		-- 58013 triggered randomly during a Black Empire assault in uldum
 		q(55349),	-- Triggered shortly after "Network Diagnostics"
 		q(56935),	-- Triggered shortly after "Network Diagnostics"
@@ -2355,167 +2358,167 @@ _.NeverImplemented =
 		q(59132),	-- probably "Unwavering Resolve" achievement (upgrade cloak to rank 15)
 
 		-- Horrific Visions
-		-- Orgrimmar
-		--q(57841),	-- first horrific vision cleared as horde(moved to metadata)
-		q(58581),	-- first horrific vision cleared as horde
-		q(57039),	-- Valley of Spirits cleansed (Orgrimmar)
-		q(58896),	-- Valley of Spirits cleansed (Orgrimmar) - probably controls activation of the quick-navigation back to the start?
-		q(57029),	-- Valley of Spirits cleansed (Orgrimmar) - probably controls eligibility for looting bonus chest at the end
-		q(57129),	-- Valley of Wisdom cleansed (Orgrimmar)
-		q(57001),	-- Valley of Strength cleansed (Orgrimmar)
-		q(57372),	-- The Drag cleansed (Orgrimmar)
-		q(57028),	-- The Drag cleansed (Orgrimmar) - probably controls eligibility for looting bonus chest at the end
-		q(58577),	-- The Drag cleansed (Orgrimmar) - probably controls activation of the quick-navigation back to the start?
-		q(58895),	-- got this instead of 58577 after clearing The Drag
-		q(58969),	-- horrific vision of orgimmar
-		q(58891),	-- completed a wing
-		q(58580),	-- completed a wing
-		q(58972),	-- completed a wing
-		q(58892),	-- completed a wing
-		q(57031),	-- looted the chest from cleansing Valley of Wisdom at the end of the scenario
-		q(57030),	-- looted the chest from cleansing the Valley of Strength at the end of the scenario
-		q(57027),	-- triggers in the chest room at the end of the Orgrimmar scenario. Doesn't matter if you defeat Thrall or not
-		q(59044),	-- completed all objectives
-		q(58966),	-- triggered after completing all of zek'han's area but before killing the boss. Also triggers in Stormwind in valeria's wing
-		-- Stormwind
-		q(58968),	-- 3rd wing clear
-		q(58965),	-- triggered when going to Dwarven District (during the fight with 3 gnomes)
-		q(57153),	-- Dwarven District cleansed (Stormwind)
-		q(58970),	-- triggered when detonating explosives in Dwarven District
-		q(58894),	-- Dwarven District - kill the wing boss. Activates a portal to the cathedral district
-		q(58964),	-- taking portal from Dwarven District back to Cathedral
-		q(57216),	-- Old Town cleansed (Stormwind)
-		q(58967),	-- probably defeating Slavemaster Ul'rok in Trade District
-		q(57271),	-- Trade District cleansed (Stormwind)
-		q(58897),	-- triggered together with 57271
-		q(27282),	-- Mage Quarter cleansed (Stormwind)
-		q(58890),	-- Dwarven district
-		q(58893),	-- cleared mage quarter
-		q(57282),	-- cleared mage quarter
-		--q(57842),	-- end of vision clear - possibly only triggers when all other wings are cleared?(moved to metadata)
-		-- TODO:: Need to determine the alliance zones for the 4 area chests. They appear to be shared with horde except for the main boss chest
-		q(57360),	-- looted the chest in front of Alleria's image at the end of the scenario. Doesn't matter if you defeat her or not
-		q(58578),	-- looted the chest from cleansing the Dwarven District at the end of the scenario (could possibly be from looting "Spark of Inspiration" Rank 2)
+			-- Orgrimmar
+				--q(57841),	-- first horrific vision cleared as horde(moved to metadata)
+				q(58581),	-- first horrific vision cleared as horde
+				q(57039),	-- Valley of Spirits cleansed (Orgrimmar)
+				q(58896),	-- Valley of Spirits cleansed (Orgrimmar) - probably controls activation of the quick-navigation back to the start?
+				q(57029),	-- Valley of Spirits cleansed (Orgrimmar) - probably controls eligibility for looting bonus chest at the end
+				q(57129),	-- Valley of Wisdom cleansed (Orgrimmar)
+				q(57001),	-- Valley of Strength cleansed (Orgrimmar)
+				q(57372),	-- The Drag cleansed (Orgrimmar)
+				q(57028),	-- The Drag cleansed (Orgrimmar) - probably controls eligibility for looting bonus chest at the end
+				q(58577),	-- The Drag cleansed (Orgrimmar) - probably controls activation of the quick-navigation back to the start?
+				q(58895),	-- got this instead of 58577 after clearing The Drag
+				q(58969),	-- horrific vision of orgimmar
+				q(58891),	-- completed a wing
+				q(58580),	-- completed a wing
+				q(58972),	-- completed a wing
+				q(58892),	-- completed a wing
+				q(57031),	-- looted the chest from cleansing Valley of Wisdom at the end of the scenario
+				q(57030),	-- looted the chest from cleansing the Valley of Strength at the end of the scenario
+				q(57027),	-- triggers in the chest room at the end of the Orgrimmar scenario. Doesn't matter if you defeat Thrall or not
+				q(59044),	-- completed all objectives
+				q(58966),	-- triggered after completing all of zek'han's area but before killing the boss. Also triggers in Stormwind in valeria's wing
+			-- Stormwind
+				q(58968),	-- 3rd wing clear
+				q(58965),	-- triggered when going to Dwarven District (during the fight with 3 gnomes)
+				q(57153),	-- Dwarven District cleansed (Stormwind)
+				q(58970),	-- triggered when detonating explosives in Dwarven District
+				q(58894),	-- Dwarven District - kill the wing boss. Activates a portal to the cathedral district
+				q(58964),	-- taking portal from Dwarven District back to Cathedral
+				q(57216),	-- Old Town cleansed (Stormwind)
+				q(58967),	-- probably defeating Slavemaster Ul'rok in Trade District
+				q(57271),	-- Trade District cleansed (Stormwind)
+				q(58897),	-- triggered together with 57271
+				q(27282),	-- Mage Quarter cleansed (Stormwind)
+				q(58890),	-- Dwarven district
+				q(58893),	-- cleared mage quarter
+				q(57282),	-- cleared mage quarter
+				--q(57842),	-- end of vision clear - possibly only triggers when all other wings are cleared?(moved to metadata)
+				-- TODO:: Need to determine the alliance zones for the 4 area chests. They appear to be shared with horde except for the main boss chest
+				q(57360),	-- looted the chest in front of Alleria's image at the end of the scenario. Doesn't matter if you defeat her or not
+				q(58578),	-- looted the chest from cleansing the Dwarven District at the end of the scenario (could possibly be from looting "Spark of Inspiration" Rank 2)
 		
-		q(58579),	-- looted the Overflowing Azerite Geode (Rank 1)
-		--q(57845),	-- looted the Water Dancer's Technique (Rank 2) (Possibly only comes from valley of wisdom?)
-		q(58971),	-- killing Mail Muncher
-		--[[
-		q(57845)	-- probably triggers after clearing two corrupted areas + boss
-		q(58963)	-- got it while fighting Thrall after two corrupted areas
-		58840 - looted the chest in front of zekhan. Torn Page of Compednium, Vol.II and Sparks of Unwavering Strength dropped
-		57841, 58581 -- both triggered on the first run of the Vision of Orgrimmar after unlocking it, then killing Thrall immediately.
-						Possibly related to Mark of Boistrous Duty (Rank 1) dropping? Torn Page of Compendium, Vol. 1 (item 171353) as well? Need to run a few times to see if this is guaranteed or not
-		]]--
+			q(58579),	-- looted the Overflowing Azerite Geode (Rank 1)
+			--q(57845),	-- looted the Water Dancer's Technique (Rank 2) (Possibly only comes from valley of wisdom?)
+			q(58971),	-- killing Mail Muncher
+			--[[
+			q(57845)	-- probably triggers after clearing two corrupted areas + boss
+			q(58963)	-- got it while fighting Thrall after two corrupted areas
+			58840 - looted the chest in front of zekhan. Torn Page of Compednium, Vol.II and Sparks of Unwavering Strength dropped
+			57841, 58581 -- both triggered on the first run of the Vision of Orgrimmar after unlocking it, then killing Thrall immediately.
+			Possibly related to Mark of Boistrous Duty (Rank 1) dropping? Torn Page of Compendium, Vol. 1 (item 171353) as well? Need to run a few times to see if this is guaranteed or not
+			]]--
 
 		-- N'Zoth assaults
-		q(55689),	-- Uldum - Amathet cache
-		q(55690),	-- Uldum - Amathet cache
-		q(55691),	-- Uldum - Amathet cache
-		q(55692),	-- Uldum - Amathet Reliquary (requires tol'vir relic to open)
-		q(55698),	-- Uldum - Amathet cache
-		q(55699),	-- Uldum - Amathet cache
-		q(55700),	-- Uldum - Amathet cache
-		q(57623),	-- Uldum - Black Empire Cache
-		q(57624),	-- Uldum - Black Empire Cache
-		q(57625),	-- Uldum - Black Empire Cache
-		q(57626),	-- Uldum - Black Empire Cache
-		q(57627),	-- Uldum - Black Empire Cache
-		q(57635),	-- Uldum - Black Empire Cache
-		q(57628),	-- Uldum - Black Empire Coffer
-		q(58138),	-- Uldum - Infested Cache
-		q(58139),	-- Uldum - Infested Cache
-		q(58140),	-- Uldum - Infested Cache (24.52 55.08)
-		q(58141),	-- Uldum - Infested Cache
-		q(58142),	-- Uldum - Infested Cache
-		q(58137),	-- Uldum - Infested Strongbox
-		q(59054),	-- Looting a bounty in Uldum as Alliance (all 4 trigger at the same time)
-		q(59055),	-- Looting a bounty in Uldum as Alliance
-		q(59056),	-- Looting a bounty in Uldum as Alliance
-		q(59057),	-- Looting a bounty in Uldum as Alliance
-		q(57201),	-- Vale of Eternal Blossoms - Black Empire Cache
-		q(57200),	-- Vale of Eternal Blossoms - Black Empire Cache
-		q(57203),	-- Vale of Eternal Blossoms - Black Empire Cache
-		q(57197),	-- Vale of Eternal Blossoms - Black Empire Cache
-		q(57202),	-- Vale of Eternal Blossoms - Black Empire Cache
-		q(57199),	-- Vale of Eternal Blossoms - Black Empire Cache
-		q(57206),	-- Vale of Eternal Blossoms - Mogu Plunder
-		q(57208),	-- Vale of Eternal Blossoms - Mogu Plunder
-		q(57209),	-- Vale of Eternal Blossoms - Mogu Plunder
-		q(57211),	-- Vale of Eternal Blossoms - Mogu Plunder
-		q(57212),	-- Vale of Eternal Blossoms - Mogu Plunder
-		q(57213),	-- Vale of Eternal Blossoms - Mogu Plunder
-		q(57214),	-- Vale of Eternal Blossoms - Mogu Spoils
-		q(58224),	-- Vale of Eternal Blossoms - Ambered Cache
-		q(58225),	-- Vale of Eternal Blossoms - Ambered Cache
-		q(58226),	-- Vale of Eternal Blossoms - Ambered Cache
-		q(58227),	-- Vale of Eternal Blossoms - Ambered Cache
-		q(58228),	-- Vale of Eternal Blossoms - Ambered Cache
-		q(58770),	-- Vale of Eternal Blossoms - Ambered Coffer
+			q(55689),	-- Uldum - Amathet cache
+			q(55690),	-- Uldum - Amathet cache
+			q(55691),	-- Uldum - Amathet cache
+			q(55692),	-- Uldum - Amathet Reliquary (requires tol'vir relic to open)
+			q(55698),	-- Uldum - Amathet cache
+			q(55699),	-- Uldum - Amathet cache
+			q(55700),	-- Uldum - Amathet cache
+			q(57623),	-- Uldum - Black Empire Cache
+			q(57624),	-- Uldum - Black Empire Cache
+			q(57625),	-- Uldum - Black Empire Cache
+			q(57626),	-- Uldum - Black Empire Cache
+			q(57627),	-- Uldum - Black Empire Cache
+			q(57635),	-- Uldum - Black Empire Cache
+			q(57628),	-- Uldum - Black Empire Coffer
+			q(58138),	-- Uldum - Infested Cache
+			q(58139),	-- Uldum - Infested Cache
+			q(58140),	-- Uldum - Infested Cache (24.52 55.08)
+			q(58141),	-- Uldum - Infested Cache
+			q(58142),	-- Uldum - Infested Cache
+			q(58137),	-- Uldum - Infested Strongbox
+			q(59054),	-- Looting a bounty in Uldum as Alliance (all 4 trigger at the same time)
+			q(59055),	-- Looting a bounty in Uldum as Alliance
+			q(59056),	-- Looting a bounty in Uldum as Alliance
+			q(59057),	-- Looting a bounty in Uldum as Alliance
+			q(57201),	-- Vale of Eternal Blossoms - Black Empire Cache
+			q(57200),	-- Vale of Eternal Blossoms - Black Empire Cache
+			q(57203),	-- Vale of Eternal Blossoms - Black Empire Cache
+			q(57197),	-- Vale of Eternal Blossoms - Black Empire Cache
+			q(57202),	-- Vale of Eternal Blossoms - Black Empire Cache
+			q(57199),	-- Vale of Eternal Blossoms - Black Empire Cache
+			q(57206),	-- Vale of Eternal Blossoms - Mogu Plunder
+			q(57208),	-- Vale of Eternal Blossoms - Mogu Plunder
+			q(57209),	-- Vale of Eternal Blossoms - Mogu Plunder
+			q(57211),	-- Vale of Eternal Blossoms - Mogu Plunder
+			q(57212),	-- Vale of Eternal Blossoms - Mogu Plunder
+			q(57213),	-- Vale of Eternal Blossoms - Mogu Plunder
+			q(57214),	-- Vale of Eternal Blossoms - Mogu Spoils
+			q(58224),	-- Vale of Eternal Blossoms - Ambered Cache
+			q(58225),	-- Vale of Eternal Blossoms - Ambered Cache
+			q(58226),	-- Vale of Eternal Blossoms - Ambered Cache
+			q(58227),	-- Vale of Eternal Blossoms - Ambered Cache
+			q(58228),	-- Vale of Eternal Blossoms - Ambered Cache
+			q(58770),	-- Vale of Eternal Blossoms - Ambered Coffer
 		
 		-- "Combating the Corruption" completion flags. The IDs appear to be reused and aren't specific to any one mob. Track all mobs until we can make sense of the pattern.
-		q(58690),	-- Corrupted Acolyte - Vale of Eternal Blossoms, Corrupted Fleshbeast - Uldum?
-		q(58689),	-- Corrupted Doomsayer - Uldum
-		q(58691),	-- Corrupted Doomsayer/Bonestripper - Vale of Eternal Blossoms, Corrupted Putrification/Dominator - Uldum
-		q(57834),	-- this was listed as Corrupted Bonestripper in Uldum
-		q(58688),	-- Corrupted Mind Eater - Uldum
-		q(57666),	-- this was listed as "Corrupted Sanity Despoiler" in Uldum
+			q(58690),	-- Corrupted Acolyte - Vale of Eternal Blossoms, Corrupted Fleshbeast - Uldum?
+			q(58689),	-- Corrupted Doomsayer - Uldum
+			q(58691),	-- Corrupted Doomsayer/Bonestripper - Vale of Eternal Blossoms, Corrupted Putrification/Dominator - Uldum
+			q(57834),	-- this was listed as Corrupted Bonestripper in Uldum
+			q(58688),	-- Corrupted Mind Eater - Uldum
+			q(57666),	-- this was listed as "Corrupted Sanity Despoiler" in Uldum
 		
 		-- Mechagon unlock chain
-		-- NOTE: these are probably mixed up a bit, but the IDs are definitely trackers
-		q(57941),	-- Pegi Cogster talked to
-		q(57942),	-- Lanna Statiglow talked to
-		q(57939),	-- Quimby Sparklighter talked to
-		q(57940),	-- Yergin Galvaquad
-		q(57957),	-- Elya Codepunch talked to
-		q(57938),	-- Assember Hung talked to
+			-- NOTE: these are probably mixed up a bit, but the IDs are definitely trackers
+			q(57941),	-- Pegi Cogster talked to
+			q(57942),	-- Lanna Statiglow talked to
+			q(57939),	-- Quimby Sparklighter talked to
+			q(57940),	-- Yergin Galvaquad
+			q(57957),	-- Elya Codepunch talked to
+			q(57938),	-- Assember Hung talked to
 		
 		-- Ny'alotha raid
-		q(59557),	-- kill wrathion
-		q(59558),	-- kill Maut
-		q(58547),	-- kill skitra - probably triggers when first wing clears?
-		q(58548),	-- kill skitra - probably triggers when first wing clears?
-		q(58549),	-- kill skitra on heroic?
-		q(59559),	-- kill skitra - kill credit
-		q(59136),	-- after coming up the elevator after first wing. Likely the RP and respawn point reset
-		q(59561),	-- kill dark inquisitor xanesh
-		q(58539),	-- kill vexiona - probably triggers when the right wing is cleared
-		q(58540),	-- kill vexiona - probably triggers when the right wing is cleared
-		q(58541),	-- looted Dragon Heart from vexiona on heroic. May be different ID for different difficulties
-		q(59562),	-- kill vexiona - kill credit
-		q(59563),	-- kill shad'har
-		q(59046),	-- kill Jesh'ra, big add with 200 Mementos as loot
-		q(59047),	-- kill Sanguimar, big add with 200 Mementos as loot
-		q(59048),	-- kill Deresh of the Nothingness, big add with 200 Mementos as loot
-		q(59566),	-- kill drest'agath
-		q(59560),	-- kill hivemind
-		q(58535),	-- Il'gynoth wing clear. probably triggers the azerite beacon
-		q(58536),	-- Il'gynoth wing clear. triggers dialog?
-		q(58537),	-- looted eye of prophecy from il'gynoth on heroic. May be different ID for different difficulties
-		q(59564),	-- kill Il'gynoth
-		q(59565),	-- kill ra-den
-		q(58543),	-- kill ra-den - either the wing clear OR the beacon placement
-		q(58544),	-- kill ra-den - either the wing clear OR the beacon placement
-		q(58545),	-- triggered together with 58543, 58544 and 59565. My first ever kill of Ra-den (happened on heroic)
-		q(59567),	-- kill Carapace of N'Zoth (Fury of N'Zoth)
-		q(59568),	-- N'Zoth killed on Heroic. Possibly the same for other difficulties?
-		q(58531),	-- triggered when killing N'zoth on Heroic for the first time, had previously only done LFR
-		q(58533),	-- triggered when killing N'zoth on Heroic for the first time, had previously only done LFR
-		q(58532),	-- triggered when killing N'Zoth in LFR
-		q(59531),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
-		q(59532),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
-		q(59533),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
-		q(59134),	-- my guess is that it triggers after getting Malefic Core from N'Zoth. I got it on heroic and it wasn't present on my previous heroic kills
+			q(59557),	-- kill wrathion
+			q(59558),	-- kill Maut
+			q(58547),	-- kill skitra - probably triggers when first wing clears?
+			q(58548),	-- kill skitra - probably triggers when first wing clears?
+			q(58549),	-- kill skitra on heroic?
+			q(59559),	-- kill skitra - kill credit
+			q(59136),	-- after coming up the elevator after first wing. Likely the RP and respawn point reset
+			q(59561),	-- kill dark inquisitor xanesh
+			q(58539),	-- kill vexiona - probably triggers when the right wing is cleared
+			q(58540),	-- kill vexiona - probably triggers when the right wing is cleared
+			q(58541),	-- looted Dragon Heart from vexiona on heroic. May be different ID for different difficulties
+			q(59562),	-- kill vexiona - kill credit
+			q(59563),	-- kill shad'har
+			q(59046),	-- kill Jesh'ra, big add with 200 Mementos as loot
+			q(59047),	-- kill Sanguimar, big add with 200 Mementos as loot
+			q(59048),	-- kill Deresh of the Nothingness, big add with 200 Mementos as loot
+			q(59566),	-- kill drest'agath
+			q(59560),	-- kill hivemind
+			q(58535),	-- Il'gynoth wing clear. probably triggers the azerite beacon
+			q(58536),	-- Il'gynoth wing clear. triggers dialog?
+			q(58537),	-- looted eye of prophecy from il'gynoth on heroic. May be different ID for different difficulties
+			q(59564),	-- kill Il'gynoth
+			q(59565),	-- kill ra-den
+			q(58543),	-- kill ra-den - either the wing clear OR the beacon placement
+			q(58544),	-- kill ra-den - either the wing clear OR the beacon placement
+			q(58545),	-- triggered together with 58543, 58544 and 59565. My first ever kill of Ra-den (happened on heroic)
+			q(59567),	-- kill Carapace of N'Zoth (Fury of N'Zoth)
+			q(59568),	-- N'Zoth killed on Heroic. Possibly the same for other difficulties?
+			q(58531),	-- triggered when killing N'zoth on Heroic for the first time, had previously only done LFR
+			q(58533),	-- triggered when killing N'zoth on Heroic for the first time, had previously only done LFR
+			q(58532),	-- triggered when killing N'Zoth in LFR
+			q(59531),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
+			q(59532),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
+			q(59533),	-- all three triggered on first N'Zoth kill, which happened to be Ahead of the Curve also
+			q(59134),	-- my guess is that it triggers after getting Malefic Core from N'Zoth. I got it on heroic and it wasn't present on my previous heroic kills
 		
 		-- Azerite essences assembled with Encrypted Ny'alothan Text
-		q(58527),	-- Replicating Void Droplets (Rank 1 Formless Void)
-		q(58528),	-- Burgeoning Void Droplet (Rank 2 Formless Void)
-		q(58529),	-- Volatile Void Droplet (Rank 3 Formless Void). Renders the texts unusable.
+			q(58527),	-- Replicating Void Droplets (Rank 1 Formless Void)
+			q(58528),	-- Burgeoning Void Droplet (Rank 2 Formless Void)
+			q(58529),	-- Volatile Void Droplet (Rank 3 Formless Void). Renders the texts unusable.
 		
 		-- World Bosses
-		q(58510),	-- Vuk'laz the Earthbreaker first kill??
-		q(58514),	-- Vuk'laz the Earthbreaker bonus roll
-		q(58508),	-- Grand Empress Shek'zara first kill??
-		--q(58770),	-- Grand Empress Shek'zara bonus roll
+			q(58510),	-- Vuk'laz the Earthbreaker first kill??
+			q(58514),	-- Vuk'laz the Earthbreaker bonus roll
+			q(58508),	-- Grand Empress Shek'zara first kill??
+			--q(58770),	-- Grand Empress Shek'zara bonus roll
 	}),
 };

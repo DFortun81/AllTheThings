@@ -612,7 +612,7 @@ _.Zones =
 							["isDaily"] = true,
 							["g"] = {
 								i(169396),	-- Echoing Oozeling (PET!)
-								i(169850, {	-- Azeroth Mini Pack Mini Pack: Mechagon
+								i(169850, {	-- Azeroth Mini Pack: Mechagon
 									i(169844),	-- Azeroth Mini: Overspark
 									i(169852),	-- Azeroth Mini: Blastatron
 									i(169851),	-- Azeroth Mini: Cogstar
