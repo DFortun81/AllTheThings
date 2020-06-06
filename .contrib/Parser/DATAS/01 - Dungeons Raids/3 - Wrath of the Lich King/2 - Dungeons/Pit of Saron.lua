@@ -84,8 +84,10 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							36886,	-- Geist Ambusher
 							36879,	-- Plagueborn Horror
 							36842,	-- Wrathbone Coldwraith
+							36830,	-- Wrathbone Laborer
 							36893,	-- Ymirjar Flamebearer
 							31260,	-- Ymirjar Skycaller
+							36840,	-- Ymirjar Wrathbringer
 						},
 					}),
 				}),
