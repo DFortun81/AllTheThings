@@ -23,396 +23,326 @@ _.ExpansionFeatures =
 								["races"] = ALLIANCE_ONLY,
 							}),
 						}),
-						un(2, i(114120, {	-- Big Crate of Salvage
-						-- Only adding items where Salvage Crates was the only source
-							un(7, i(36533)),	-- Adorned Broadsword
-							un(7, i(36603)),	-- Archaic Longspear
-							un(7, i(25285)),	-- Bloodwood Wand
-							un(7, i(55631)),	-- Frayfeather Belt
-							un(7, i(55568)),	-- Frayfeather Bracers
-							un(7, i(55595)),	-- Frayfeather Gauntlets
-							un(7, i(55586)),	-- Frayfeather Greaves
-							un(7, i(55604)),	-- Frayfeather Helm
-							un(7, i(55613)),	-- Frayfeather Legguards
-							un(7, i(55622)),	-- Frayfeather Spaulders
-							un(7, i(55577)),	-- Frayfeather Vest
-							un(7, i(36505)),	-- Frosted Steel Mallet
-							un(7, i(55775)),	-- Galardell Cord
-							un(7, i(55748)),	-- Galardell Cowl
-							un(7, i(55739)),	-- Galardell Handwraps
-							un(7, i(55757)),	-- Galardell Leggings
-							un(7, i(55721)),	-- Galardell Robe
-							un(7, i(55730)),	-- Galardell Sandals
-							un(7, i(55766)),	-- Galardell Shoulderpads
-							un(7, i(55712)),	-- Galardell Wristwraps
-							un(7, i(36631)),	-- Horned Crossbow
-							un(7, i(25173)),	-- Master's Bo Staff
-							un(7, i(55640)),	-- Nighthaven Bindings
-							un(7, i(55658)),	-- Nighthaven Boots
-							un(7, i(55685)),	-- Nighthaven Britches
-							un(7, i(55667)),	-- Nighthaven Gloves
-							un(7, i(55676)),	-- Nighthaven Hood
-							un(7, i(55649)),	-- Nighthaven Jerkin
-							un(7, i(55694)),	-- Nighthaven Shoulders
-							un(7, i(55703)),	-- Nighthaven Waistband
-							un(7, i(36701)),	-- Pine Needle Staff
-							un(7, i(55469)),	-- Rustmaul Greatsword
-							un(7, i(55460)),	-- Rustmaul Sword
-							un(7, i(55343)),	-- Rustmaul Staff
-							un(7, i(55451)),	-- Rustmaul Staff
-							un(7, i(55415)),	-- Rustmaul Spear
-							un(7, i(55397)),	-- Rustmaul Hammer
-							un(7, i(55388)),	-- Rustmaul Mace
-							un(7, i(55361)),	-- Rustmaul Gun
-							un(7, i(55352)),	-- Rustmaul Knuckles
-							un(7, i(55334)),	-- Rustmaul Dagger
-							un(7, i(55325)),	-- Rustmaul Crossbow
-							un(7, i(55307)),	-- Rustmaul Bow
-							un(7, i(55298)),	-- Rustmaul Broadaxe
-							un(7, i(55289)),	-- Rustmaul Axe
-							un(7, i(36659)),	-- Shivery Wand
-							un(7, i(55316)),	-- Sorrowmurk Cloak
-							un(7, i(55379)),	-- Sorrowmurk Crystal
-							un(7, i(55370)),	-- Sorrowmurk Scepter
-							un(7, i(55442)),	-- Sorrowmurk Spellblade
-							un(7, i(55487)),	-- Sorrowmurk Wand
-							un(7, i(55505)),	-- Steelgrill Breastplate
-							un(7, i(55523)),	-- Steelgrill Gauntlets
-							un(7, i(55559)),	-- Steelgrill Girdle
-							un(7, i(55532)),	-- Steelgrill Helm
-							un(7, i(55541)),	-- Steelgrill Legplates
-							un(7, i(55550)),	-- Steelgrill Pauldrons
-							un(7, i(55514)),	-- Steelgrill Sabatons
-							un(7, i(55496)),	-- Steelgrill Vambraces
-							un(7, i(55433)),	-- Steelgrill Shield
-							un(7, i(36645)),	-- Tuskarr Boomstick
-							un(7, i(36617)),	-- Yielding Bow
-						})),
+						i(114120, {	-- Big Crate of Salvage
+							["u"] = 2,	-- BoP / BoA Item
+							["g"] = {
+								-- Only adding items where Salvage Crates was the only source
+								un(7, i(36533)),	-- Adorned Broadsword
+								un(7, i(36603)),	-- Archaic Longspear
+								un(7, i(25285)),	-- Bloodwood Wand
+								un(7, i(55631)),	-- Frayfeather Belt
+								un(7, i(55568)),	-- Frayfeather Bracers
+								un(7, i(55595)),	-- Frayfeather Gauntlets
+								un(7, i(55586)),	-- Frayfeather Greaves
+								un(7, i(55604)),	-- Frayfeather Helm
+								un(7, i(55613)),	-- Frayfeather Legguards
+								un(7, i(55622)),	-- Frayfeather Spaulders
+								un(7, i(55577)),	-- Frayfeather Vest
+								un(7, i(36505)),	-- Frosted Steel Mallet
+								un(7, i(55775)),	-- Galardell Cord
+								un(7, i(55748)),	-- Galardell Cowl
+								un(7, i(55739)),	-- Galardell Handwraps
+								un(7, i(55757)),	-- Galardell Leggings
+								un(7, i(55721)),	-- Galardell Robe
+								un(7, i(55730)),	-- Galardell Sandals
+								un(7, i(55766)),	-- Galardell Shoulderpads
+								un(7, i(55712)),	-- Galardell Wristwraps
+								un(7, i(36631)),	-- Horned Crossbow
+								un(7, i(25173)),	-- Master's Bo Staff
+								un(7, i(55640)),	-- Nighthaven Bindings
+								un(7, i(55658)),	-- Nighthaven Boots
+								un(7, i(55685)),	-- Nighthaven Britches
+								un(7, i(55667)),	-- Nighthaven Gloves
+								un(7, i(55676)),	-- Nighthaven Hood
+								un(7, i(55649)),	-- Nighthaven Jerkin
+								un(7, i(55694)),	-- Nighthaven Shoulders
+								un(7, i(55703)),	-- Nighthaven Waistband
+								un(7, i(36701)),	-- Pine Needle Staff
+								un(7, i(55469)),	-- Rustmaul Greatsword
+								un(7, i(55460)),	-- Rustmaul Sword
+								un(7, i(55343)),	-- Rustmaul Staff
+								un(7, i(55451)),	-- Rustmaul Staff
+								un(7, i(55415)),	-- Rustmaul Spear
+								un(7, i(55397)),	-- Rustmaul Hammer
+								un(7, i(55388)),	-- Rustmaul Mace
+								un(7, i(55361)),	-- Rustmaul Gun
+								un(7, i(55352)),	-- Rustmaul Knuckles
+								un(7, i(55334)),	-- Rustmaul Dagger
+								un(7, i(55325)),	-- Rustmaul Crossbow
+								un(7, i(55307)),	-- Rustmaul Bow
+								un(7, i(55298)),	-- Rustmaul Broadaxe
+								un(7, i(55289)),	-- Rustmaul Axe
+								un(7, i(36659)),	-- Shivery Wand
+								un(7, i(55316)),	-- Sorrowmurk Cloak
+								un(7, i(55379)),	-- Sorrowmurk Crystal
+								un(7, i(55370)),	-- Sorrowmurk Scepter
+								un(7, i(55442)),	-- Sorrowmurk Spellblade
+								un(7, i(55487)),	-- Sorrowmurk Wand
+								un(7, i(55505)),	-- Steelgrill Breastplate
+								un(7, i(55523)),	-- Steelgrill Gauntlets
+								un(7, i(55559)),	-- Steelgrill Girdle
+								un(7, i(55532)),	-- Steelgrill Helm
+								un(7, i(55541)),	-- Steelgrill Legplates
+								un(7, i(55550)),	-- Steelgrill Pauldrons
+								un(7, i(55514)),	-- Steelgrill Sabatons
+								un(7, i(55496)),	-- Steelgrill Vambraces
+								un(7, i(55433)),	-- Steelgrill Shield
+								un(7, i(36645)),	-- Tuskarr Boomstick
+								un(7, i(36617)),	-- Yielding Bow
+							},
+						}),
 						i(140590, {	-- Large Crate of Salvage
-							n(-140, { 	-- Communl
+							n(-140, { 	-- Communal
+								["classes"] = { PRIEST },
 								["g"] = {
-									i(119665),
-									i(119680),
-									i(119682),
-									i(119683),
-									i(119684),
-									i(119685),
-									i(119686),
-									i(119687),
-									i(119688),
-									i(119689),
-									i(119690),
+									i(119689),	-- Communal Bindings
+									i(119682),	-- Communal Boots
+									i(119684),	-- Communal Cowl
+									i(119683),	-- Communal Gloves
+									i(119687),	-- Communal Mantle
+									i(119685),	-- Communal Pants
+									i(119686),	-- Communal Robe
+									i(119688),	-- Communal Sash
+									i(119680),	-- Communal Staff
+									i(119690),	-- Communal Stave
+									i(119665),	-- Communal Wand
 								},
-								["classes"] = {5}
 							}),
 							n(-141, { 	-- Felsoul
+								["classes"] = { WARLOCK },
 								["g"] = {
-									i(119760),
-									i(119761),
-									i(119762),
-									i(119763),
-									i(119764),
-									i(119765),
-									i(119766),
-									i(119767),
-									i(119768),
-									i(119770),
+									i(119762),	-- Felsoul Cowl
+									i(119766),	-- Felsoul Cord
+									i(119761),	-- Felsoul Handwraps
+									i(119763),	-- Felsoul Leggings
+									i(119764),	-- Felsoul Robe
+									i(119760),	-- Felsoul Sandals
+									i(119765),	-- Felsoul Shoulderpads
+									i(119770),	-- Felsoul Staff
+									i(119768),	-- Felsoul Wand
+									i(119767),	-- Felsoul Wristwraps
 								},
-								["classes"] = {9}
 							}),
 							n(-142, { 	-- Heart-Lesion
+								["classes"] = { DEATHKNIGHT },
 								["g"] = {
-									i(119469),
-									i(119470),
-									i(119471),
-									i(119472),
-									i(119473),
-									i(119474),
-									i(119475),
-									i(119476),
-									i(119477),
-									i(119478),
-									i(119499),
+									i(119478),	-- Heart-Lesion Blade
+									i(119470),	-- Heart-Lesion Breastplate
+									i(119472),	-- Heart-Lesion Gauntlets
+									i(119476),	-- Heart-Lesion Girdle
+									i(119469),	-- Heart-Lesion Greatsword
+									i(119473),	-- Heart-Lesion Helm
+									i(119474),	-- Heart-Lesion Legplates
+									i(119475),	-- Heart-Lesion Pauldrons
+									i(119499),	-- Heart-Lesion Runeblade
+									i(119471),	-- Heart-Lesion Sabatons
+									i(119477),	-- Heart-Lesion Vambraces
 								},
-								["classes"] = {6}
 							}),
 							n(-143, { 	-- Lightdrinker
+								["classes"] = { ROGUE },
 								["g"] = {
-									i(119697),
-									i(119698),
-									i(119699),
-									i(119700),
-									i(119701),
-									i(119702),
-									i(119703),
-									i(119704),
-									i(119705),
-									i(119706),
-									i(119707),
+									i(119704),	-- Lightdrinker Bindings
+									i(119701),	-- Lightdrinker Britches
+									i(119698),	-- Lightdrinker Boots
+									i(119705),	-- Lightdrinker Dagger
+									i(119699),	-- Lightdrinker Gloves
+									i(119700),	-- Lightdrinker Hood
+									i(119697),	-- Lightdrinker Jerkin
+									i(119706),	-- Lightdrinker Shiv
+									i(119702),	-- Lightdrinker Shoulders
+									i(119707),	-- Lightdrinker Sword
+									i(119703),	-- Lightdrinker Waistband
 								},
-								["classes"] = {4}
 							}),
 							n(-144, { 	-- Mistdancer
+								["classes"] = { MONK },
 								["g"] = {
-									i(119581),
-									i(119583),
-									i(119584),
+									i(119589),	-- Mistdancer Cord
+									i(119590),	-- Mistdancer Cuffs
+									i(119584),	-- Mistdancer Footpads
 									i(119585),	-- Mistdancer Handguards
-									i(119586),
-									i(119587),
+									i(119586),	-- Mistdancer Helm
+									i(119587),	-- Mistdancer Legguards
 									i(119588),	-- Mistdancer Pauldrons
-									i(119589),
-									i(119590),
-									i(119602),
-									i(119605),
+									i(119581),	-- Mistdancer Spire
+									i(119602),	-- Mistdancer Staff
+									i(119605),	-- Mistdancer Sword
+									i(119583),	-- Mistdancer Vest
 								},
-								["classes"] = {10}
 							}),
 							n(-145, { 	-- Mountainsage
+								["classes"] = { MAGE },
 								["g"] = {
-									i(119566),
-									i(119567),
-									i(119568),
-									i(119569),
-									i(119570),
-									i(119571),
-									i(119572),
-									i(119573),
-									i(119574),
-									i(119576),
+									i(119572),	-- Mountainsage Cord
+									i(119567),	-- Mountainsage Handwraps
+									i(119568),	-- Mountainsage Hood
+									i(119569),	-- Mountainsage Leggings
+									i(119570),	-- Mountainsage Robe
+									i(119566),	-- Mountainsage Sandals
+									i(119571),	-- Mountainsage Shoulderpads
+									i(119576),	-- Mountainsage Staff
+									i(119574),	-- Mountainsage Wand
+									i(119573),	-- Mountainsage Wristwraps
 								},
-								["classes"] = {8}
 							}),
 							n(-146, { 	-- Oathsworn
+								["classes"] = { WARRIOR },
 								["g"] = {
-									i(119771),
-									i(119772),
-									i(119773),
-									i(119774),
-									i(119775),
-									i(119776),
-									i(119777),
-									i(119778),
-									i(119779),
-									i(119780),
-									i(119781),
-									i(119782),
+									i(119781),	-- Oathsworn Axe
+									i(119772),	-- Oathsworn Breastplate
+									i(119782),	-- Oathsworn Bulwark
+									i(119774),	-- Oathsworn Gauntlets
+									i(119778),	-- Oathsworn Girdle
+									i(119771),	-- Oathsworn Greataxe
+									i(119780),	-- Oathsworn Headchopper
+									i(119775),	-- Oathsworn Helm
+									i(119776),	-- Oathsworn Legplates
+									i(119777),	-- Oathsworn Pauldrons
+									i(119773),	-- Oathsworn Sabatons
+									i(119779),	-- Oathsworn Vambraces
 								},
-								["classes"] = {1}
 							}),
 							n(-147, { 	-- Springrain
+								["classes"] = { DRUID },
 								["g"] = {
-									i(119506),
-									i(119507),
-									i(119508),
-									i(119509),
-									i(119510),
-									i(119511),
-									i(119512),
-									i(119513),
-									i(119514),
-									i(119525),
-									i(119544),
+									i(119513),	-- Springrain Belt
+									i(119514),	-- Springrain Bracers
+									i(119508),	-- Springrain Grips
+									i(119509),	-- Springrain Headpiece
+									i(119510),	-- Springrain Leggings
+									i(119511),	-- Springrain Spaulders
+									i(119525),	-- Springrain Spear
+									i(119544),	-- Springrain Staff
+									i(119512),	-- Springrain Stave
+									i(119507),	-- Springrain Treads
+									i(119506),	-- Springrain Tunic
 								},
-								["classes"] = {11}
 							}),
 							n(-148, { 	-- Streamtalker
-								["classes"] = { 7 },	-- Shaman Only
+								["classes"] = { SHAMAN },
 								["g"] = {
-									{	-- Streamtalker Aegis [Elemental]
-										["itemID"] = 119725,	-- Streamtalker Aegis
-									},
-									{	-- Streamtalker Claws [Elemental]
-										["itemID"] = 119719,	-- Streamtalker Claws
-									},
-									{	-- Streamtalker Shield [Restoration]
-										["itemID"] = 119751,	-- Streamtalker Shield
-									},
-									{	-- Streamtalker Slicers [Restoration]
-										["itemID"] = 119745,	-- Streamtalker Slicers
-									},
-									{	-- Streamtalker Talons [Enhancement]
-										["itemID"] = 119729,	-- Streamtalker Talons
-									},
-									{	-- Streamtalker Coif [Elemental]
-										["itemID"] = 119723,	-- Streamtalker Coif
-									},
-									{	-- Streamtalker Cowl [Restoration]
-										["itemID"] = 119749,	-- Streamtalker Cowl
-										["u"] = 1,	-- Not available
-									},
-									{	-- Streamtalker Helm [Enhancement]
-										["itemID"] = 119733,	-- Streamtalker Helm
-										["u"] = 1,	-- Not available										
-									},
-									{	-- Streamtalker Choker [Enhancement]
-										["itemID"] = 119709,	-- Streamtalker Choker
-									},
-									{	-- Streamtalker Medallion [Elemental]
-										["itemID"] = 119714,	-- Streamtalker Medallion
-									},
-									{	-- Streamtalker Necklace [Restoration]
-										["itemID"] = 119739,	-- Streamtalker Necklace
-									},
-									{	-- Streamtalker Pauldrons [Elemental]
-										["itemID"] = 119726,	-- Streamtalker Pauldrons
-									},
-									{	-- Streamtalker Shoulderguards [Enhancement]
-										["itemID"] = 119735,	-- Streamtalker Shoulderguards
-										["u"] = 1,	-- Not available
-									},
-									{	-- Streamtalker Spaulders [Restoration]
-										["itemID"] = 119752,	-- Streamtalker Spaulders
-										["u"] = 1,	-- Not available
-									},
-									{	-- Streamtalker Cloak of Destruction [Elemental]
-										["itemID"] = 119744,	-- Streamtalker Cloak of Destruction
-										["u"] = 1,	-- Not available
-									},
-									{	-- Streamtalker Cloak of Rage [Enhancement]
-										["itemID"] = 119708,	-- Streamtalker Cloak of Rage
-										["u"] = 1,	-- Not available
-									},
-									{	-- Streamtalker Cloak of Wisdom [Restoration]
-										["itemID"] = 119738,	-- Streamtalker Cloak of Wisdom
-										["u"] = 1,	-- Not available
-									},
-									{	-- Streamtalker Chestguard [Enhancement]
-										["itemID"] = 119730,	-- Streamtalker Chestguard
-										["u"] = 1,	-- Not available										
-									},
-									{	-- Streamtalker Tunic [Elemental]
-										["itemID"] = 119720,	-- Streamtalker Tunic
-									},
-									{	-- Streamtalker Vest [Restoration]
-										["itemID"] = 119746,	-- Streamtalker Vest
-										["u"] = 1,	-- Not available										
-									},
-									{	-- Streamtalker Armbands [Elemental]
-										["itemID"] = 119728,	-- Streamtalker Armbands
-									},
-									{	-- Streamtalker Armguard [Enhancement]
-										["itemID"] = 119737,	-- Streamtalker Armguard
-										["u"] = 1,	-- Not available
-									},
-									{	-- Streamtalker Bracers [Restoration]
-										["itemID"] = 119754,	-- Streamtalker Bracers
-										["u"] = 1,	-- Not available									
-									},
-									{	-- Streamtalker Gloves [Elemental]
-										["itemID"] = 119722,	-- Streamtalker Gloves
-									},
-									{	-- Streamtalker Grips [Restoration]
-										["itemID"] = 119748,	-- Streamtalker Grips
-										["u"] = 1,	-- Not available
-									},
-									{	-- Streamtalker Handguards [Enhancement]
-										["itemID"] = 119732,	-- Streamtalker Handguards
-										["u"] = 1,	-- Not available										
-									},
-									{	-- Streamtalker Belt [Elemental]
-										["itemID"] = 119727,	-- Streamtalker Belt
-									},
-									{	-- Streamtalker Girdle [Restoration]
-										["itemID"] = 119753,	-- Streamtalker Girdle
-										["u"] = 1,	-- Not available
-									},
-									{	-- Streamtalker Waistguard [Enhancement]
-										["itemID"] = 119736,	-- Streamtalker Waistguard
-										["u"] = 1,	-- Not available
-									},
-									{	-- Streamtalker Leggings [Restoration]
-										["itemID"] = 119750,	-- Streamtalker Leggings
-										["u"] = 1,	-- Not available
-									},
-									{	-- Streamtalker Legguards [Enhancement]
-										["itemID"] = 119734,	-- Streamtalker Legguards
-										["u"] = 1,	-- Not available
-									},
-									{	-- Streamtalker Legwraps [Elemental]
-										["itemID"] = 119724,	-- Streamtalker Legwraps
-									},
-									{	-- Streamtalker Boots [Elemental]
-										["itemID"] = 119721,	-- Streamtalker Boots
-									},
-									{	-- Streamtalker Greaves [Enhancement]
-										["itemID"] = 119731,	-- Streamtalker Greaves
-										["u"] = 1,	-- Not available
-									},
-									{	-- Streamtalker Sabatons [Restoration]
-										["itemID"] = 119747,	-- Streamtalker Sabatons
-										["u"] = 1,	-- Not available
-									},
-									{	-- Streamtalker Band of Destruction [Elemental]
-										["itemID"] = 119717,	-- Streamtalker Band of Destruction
-									},
-									{	-- Streamtalker Band of Onslaught [Enhancement]
-										["itemID"] = 119711,	-- Streamtalker Band of Onslaught
-									},
-									{	-- Streamtalker Band of Wisdom [Restoration]
-										["itemID"] = 119742,	-- Streamtalker Band of Wisdom
-									},
-									{	-- Streamtalker Idol of Rage [Enhancement]
-										["itemID"] = 119710,	-- Streamtalker Idol of Rage
-									},
-									{	-- Streamtalker Idol of Destruction [Elemental]
-										["itemID"] = 119715,	-- Streamtalker Idol of Destruction
-									},
-									{	-- Streamtalker Idol of Wisdom [Restoration]
-										["itemID"] = 119740,	-- Streamtalker Idol of Wisdom
-									},
-									{	-- Streamtalker Ring of Destruction [Elemental]
-										["itemID"] = 119716,	-- Streamtalker Ring of Destruction
-									},
-									{	-- Streamtalker Ring of Onslaught [Enhancement]
-										["itemID"] = 119712,	-- Streamtalker Ring of Onslaught
-									},
-									{	-- Streamtalker Ring of Wisdom [Restoration]
-										["itemID"] = 119741,	-- Streamtalker Ring of Wisdom
-									},
-									{	-- Streamtalker Stone of Destruction [Elemental]
-										["itemID"] = 119718,	-- Streamtalker Stone of Destruction
-									},
-									{	-- Streamtalker Stone of Rage [Enhancement]
-										["itemID"] = 119713,	-- Streamtalker Stone of Rage
-									},
-									{	-- Streamtalker Stone of Wisdom [Restoration]
-										["itemID"] = 119743,	-- Streamtalker Stone of Wisdom
-									},
+									i(119725),	-- Streamtalker Aegis
+									i(119728),	-- Streamtalker Armbands
+									i(119737, {	-- Streamtalker Armguard
+										["u"] = 1,	-- Never Available
+									}),
+									i(119717),	-- Streamtalker Band of Destruction
+									i(119711),	-- Streamtalker Band of Onslaught
+									i(119742),	-- Streamtalker Band of Wisdom
+									i(119727),	-- Streamtalker Belt
+									i(119721),	-- Streamtalker Boots
+									i(119754, {	-- Streamtalker Bracers
+										["u"] = 1,	-- Never Available									
+									}),
+									i(119709),	-- Streamtalker Choker
+									i(119719),	-- Streamtalker Claws
+									i(119744, {	-- Streamtalker Cloak of Destruction
+										["u"] = 1,	-- Never Available
+									}),
+									i(119708, {	-- Streamtalker Cloak of Rage
+										["u"] = 1,	-- Never Available
+									}),
+									i(119738, {	-- Streamtalker Cloak of Wisdom
+										["u"] = 1,	-- Never Available
+									}),
+									i(119730, {	-- Streamtalker Chestguard
+										["u"] = 1,	-- Never Available										
+									}),
+									i(119723),	-- Streamtalker Coif
+									i(119749, {	-- Streamtalker Cowl
+										["u"] = 1,	-- Never Available
+									}),
+									i(119753, {	-- Streamtalker Girdle
+										["u"] = 1,	-- Never Available
+									}),
+									i(119722),	-- Streamtalker Gloves
+									i(119731, {	-- Streamtalker Greaves
+										["u"] = 1,	-- Never Available
+									}),
+									i(119748, {	-- Streamtalker Grips
+										["u"] = 1,	-- Never Available
+									}),
+									i(119732, {	-- Streamtalker Handguards
+										["u"] = 1,	-- Never Available										
+									}),
+									i(119733, {	-- Streamtalker Helm
+										["u"] = 1,	-- Never Available										
+									}),
+									i(119715),	-- Streamtalker Idol of Destruction
+									i(119710),	-- Streamtalker Idol of Rage
+									i(119740),	-- Streamtalker Idol of Wisdom
+									i(119750, {	-- Streamtalker Leggings
+										["u"] = 1,	-- Never Available
+									}),
+									i(119734, {	-- Streamtalker Legguards
+										["u"] = 1,	-- Never Available
+									}),
+									i(119724),	-- Streamtalker Legwraps
+									i(119714),	-- Streamtalker Medallion
+									i(119739),	-- Streamtalker Necklace
+									i(119726),	-- Streamtalker Pauldrons
+									i(119716),	-- Streamtalker Ring of Destruction
+									i(119712),	-- Streamtalker Ring of Onslaught
+									i(119741),	-- Streamtalker Ring of Wisdom
+									i(119747, {	-- Streamtalker Sabatons
+										["u"] = 1,	-- Never Available
+									}),
+									i(119751),	-- Streamtalker Shield
+									i(119735, {	-- Streamtalker Shoulderguards
+										["u"] = 1,	-- Never Available
+									}),
+									i(119745),	-- Streamtalker Slicers
+									i(119752, {	-- Streamtalker Spaulders
+										["u"] = 1,	-- Never Available
+									}),
+									i(119718),	-- Streamtalker Stone of Destruction
+									i(119713),	-- Streamtalker Stone of Rage
+									i(119743),	-- Streamtalker Stone of Wisdom
+									i(119729),	-- Streamtalker Talons
+									i(119720),	-- Streamtalker Tunic
+									i(119746, {	-- Streamtalker Vest
+										["u"] = 1,	-- Never Available										
+									}),
+									i(119736, {	-- Streamtalker Waistguard
+										["u"] = 1,	-- Never Available
+									}),
 								},
 							}),
 							n(-149, { 	-- Sunsoul
+								["classes"] = { PALADIN },
 								["g"] = {
-									i(119620),
-									i(119613),
-									i(119614),
-									i(119615),
-									i(119616),
-									i(119617),
-									i(119618),
-									i(119619),
-									i(119635),
-									i(119636),
-									i(119637),
-									i(119638),
-									i(119639),
+									i(119613),	-- Sunsoul Battleplate
+									i(119638),	-- Sunsoul Bulwark
+									i(119615),	-- Sunsoul Gauntlets
+									i(119619),	-- Sunsoul Girdle
+									i(119616),	-- Sunsoul Helm
+									i(119617),	-- Sunsoul Legplates
+									i(119618),	-- Sunsoul Pauldrons
+									i(119614),	-- Sunsoul Sabatons
+									i(119635),	-- Sunsoul Scepter
+									i(119636),	-- Sunsoul Shield
+									i(119637),	-- Sunsoul Sword
+									i(119620),	-- Sunsoul Vambraces
+									i(119639),	-- Sunsoul Warmaul
 								},
-								["classes"] = {2}
 							}),
 							n(-150, { 	-- Trailseeker
+								["classes"] = { HUNTER },
 								["g"] = {
-									i(119545),
-									i(119551),
-									i(119552),
-									i(119553),
-									i(119554),
-									i(119555),
-									i(119557),
-									i(119558),
-									i(119559),
+									i(119557),	-- Trailseeker Belt
+									i(119558),	-- Trailseeker Bracers
+									i(119545, {	-- Trailseeker Cloak of Rage
+										["u"] = 1,	-- Never Available
+									}),
+									i(119553),	-- Trailseeker Gauntlets
+									i(119552),	-- Trailseeker Greaves
+									i(119554),	-- Trailseeker Helm
+									i(119555),	-- Trailseeker Legguards
+									i(119559),	-- Trailseeker Shotgun
 									i(119556),	-- Trailseeker Spaulders
+									i(119551),	-- Trailseeker Vest
 								},
-								["classes"] = {3}
 							}),
 						}),
 					},

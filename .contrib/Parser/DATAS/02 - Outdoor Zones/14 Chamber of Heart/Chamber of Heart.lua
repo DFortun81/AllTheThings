@@ -454,6 +454,7 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 120,
 							["maps"] = { 1161 },	-- Boralus
+							["u"] = 40,	-- Legacy Quests (removed with 8.3)
 						}),
 						q(56267, {	-- Whispers of N'zoth (H)
 							["provider"] = { "n", 154465 },	-- Earthen Guardian
@@ -466,6 +467,7 @@ _.Zones =
 							["races"] = HORDE_ONLY,
 							["lvl"] = 120,
 							["maps"] = { 1165 },	-- Dazar'alor
+							["u"] = 40,	-- Legacy Quests (removed with 8.3)
 						}),
 						q(56186, {	-- Spies to the Left and Right
 							["provider"] = { "n", 152365 },	-- Kalecgos
@@ -475,6 +477,7 @@ _.Zones =
 								56267,	-- Whispers of N'zoth (H)
 							},
 							["lvl"] = 120,
+							["u"] = 40,	-- Legacy Quests (removed with 8.3)
 						}),
 						q(56187, {	-- Black Winged Shadow
 							["provider"] = { "n", 154500 },	-- Left
@@ -482,12 +485,14 @@ _.Zones =
 							["sourceQuest"] = 56186,	-- Spies to the Left and Right
 							["lvl"] = 120,
 							["maps"] = { 433 },	-- The Veiled Stair
+							["u"] = 40,	-- Legacy Quests (removed with 8.3)
 						}),
 						q(56188, {	-- To the Catacombs!
 							["provider"] = { "n", 154874 },	-- Blacktalon Watcher
 							["coord"] = { 47.8, 68.8, 13 },	-- Eastern Kingdoms (Burning Steppes, outside BWD)
 							["sourceQuest"] = 56187,	-- Black Winged Shadow
 							["lvl"] = 120,
+							["u"] = 40,	-- Legacy Quests (removed with 8.3)
 						}),
 						q(56189, {	-- On the Trail of the Black Prince
 							["provider"] = { "n", 154870 },	-- Slain Blacktalon Lookout
@@ -495,6 +500,7 @@ _.Zones =
 							["sourceQuest"] = 56188,	-- To the Catacombs!
 							["lvl"] = 120,
 							["maps"] = { 42 },	-- Deadwind Pass
+							["u"] = 40,	-- Legacy Quests (removed with 8.3)
 						}),
 						q(56190, {	-- Save Ebonhorn
 							["provider"] = { "n", 155191 },	-- Potion of Mental Clarity
@@ -502,12 +508,14 @@ _.Zones =
 							["sourceQuest"] = 56189,	-- On the Trail of the Black Prince
 							["lvl"] = 120,
 							["maps"] = { 46 },	-- Karazhan Catacombs
+							["u"] = 40,	-- Legacy Quests (removed with 8.3)
 						}),
 						q(56504, {	-- Wrathion's Journal
 							["provider"] = { "n", 151964 },	-- Spiritwalker Ebonhorn
 							["coord"] = { 46.3, 67.2, 1473 },	-- Chamber of Heart
 							["sourceQuest"] = 56190,	-- Save Ebonhorn
 							["lvl"] = 120,
+							["u"] = 40,	-- Legacy Quests (removed with 8.3)
 						}),
 						q(58506, {	-- Network Diagnostics
 							["lvl"] = 120,
