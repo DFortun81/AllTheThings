@@ -15,13 +15,13 @@ _.Instances = { tier(7, {	-- Legion
 		["g"] = {
 			n(QUESTS, {
 				q(45417, {	-- The Nighthold: Lord of the Shadow Council
+					["sourceQuests"] = { 44719 },	-- Breaching the Sanctum
+					["description"] = "Click on the Eye of Aman'thul after Gul'dan dies to complete the quest.",
 					["provider"] = { "n", 115367 },	-- Archmage Khadgar
-					["sourceQuest"] = 44719,	-- Breaching the Sanctum
-					["description"] = "Need to click on Eye of Aman'thul to complete quest after Gul'dan is dead.",
 				}),
 				q(45420, {	-- The Nighthold: The Eye of Aman'Thul
+					["sourceQuests"] = { 45417 },	-- The Nighthold: Lord of the Shadow Council
 					["provider"] = { "n", 106522 },	-- Archmage Khadgar
-					["sourceQuest"] = 45417,	-- The Nighthold: Lord of the Shadow Council
 				}),
 			}),
 			d(17, {		-- LFR
@@ -359,46 +359,51 @@ _.Instances = { tier(7, {	-- Legion
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
-						i(140150, {	-- Cache of Nightborne Treasures [Normal]
+						i(140150, {	-- Cache of Nightborne Treasures (Normal)
 							["u"] = 2,
 							["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
-						i(140175, {	-- Ancient Nightborne Tome [Normal]
-							["questID"] = 43914,	-- The Nighthold: Elisande [Normal]
+						i(140175, {	-- Ancient Nightborne Tome (Normal)
+							["questID"] = 43914,	-- The Nighthold: Elisande (Normal)
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140150)),	-- Cache of Nightborne Treasures [Normal]
+								un(2, i(140150)),	-- Cache of Nightborne Treasures (Normal)
 							},
 						}),
-						i(140174, {	-- Glowing Lily [Normal]
-							["questID"] = 43913,	-- The Nighthold: High Botanist Tel'arn [Normal]
+						i(140174, {	-- Glowing Lily (Normal)
+							["questID"] = 43913,	-- The Nighthold: High Botanist Tel'arn (Normal)
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140150)),	-- Cache of Nightborne Treasures [Normal]
+								un(2, i(140150)),	-- Cache of Nightborne Treasures (Normal)
 							},
 						}),
-						i(140149, {	-- Pulsauron Bindings [Normal]
-							["questID"] = 43889,	-- The Nighthold: Vaults [Normal]
+						i(140149, {	-- Pulsauron Bindings (Normal)
+							["questID"] = 43889,	-- The Nighthold: Vaults (Normal)
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140150)),	-- Cache of Nightborne Treasures [Normal]
+								un(2, i(140150)),	-- Cache of Nightborne Treasures (Normal)
 							},
 						}),
-						i(140177, {	-- Shred of Tattered Robe [Normal]
-							["questID"] = 43915,	-- The Nighthold: Gul'dan [Normal]
+						i(140177, {	-- Shred of Tattered Robe (Normal)
+							["questID"] = 43915,	-- The Nighthold: Gul'dan (Normal)
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140150)),	-- Cache of Nightborne Treasures [Normal]
+								un(2, i(140150)),	-- Cache of Nightborne Treasures (Normal)
 							},
 						}),
-						q(45381, {	-- The Nighthold: Talisman of the Shal'dorei [Normal]
+						q(45381, {	-- The Nighthold: Talisman of the Shal'dorei (Normal)
+							["description"] = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+							["altQuests"] = {
+								45382,	-- The Nighthold: Talisman of the Shal'dorei (Heroic)
+								45383,	-- The Nighthold: Talisman of the Shal'dorei (Mythic)
+							},
 							["provider"] = { "n", 110791 },	-- First Arcanist Thalyssra
 							["g"] = {
-								ig(141324),	-- Talisman of the Shal'dorei [Normal]
+								ig(141324),	-- Talisman of the Shal'dorei (Normal)
 							},
 						}),
 					},
@@ -655,8 +660,8 @@ _.Instances = { tier(7, {	-- Legion
 				cr(106643, e(1743, {	-- Elisande
 					ach(10838, crit(3)),	-- Nightspire / Elisande
 					ach(10699),	-- Infinitesimal
-					i(143656, {	-- Echo of Time [Normal]
-						["questID"] = 45381,	-- The Nighthold: Talisman of the Shal'dorei [Normal]
+					i(143656, {	-- Echo of Time (Normal)
+						["questID"] = 45381,	-- The Nighthold: Talisman of the Shal'dorei (Normal)
 					}),
 					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1]
 					i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2]
@@ -735,46 +740,48 @@ _.Instances = { tier(7, {	-- Legion
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
-						i(140152, {	-- Cache of Nightborne Treasures [Heroic]
+						i(140152, {	-- Cache of Nightborne Treasures (Heroic)
 							["u"] = 2,
 							["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
-						i(140472, {	-- Ancient Nightborne Tome [Heroic]
-							["questID"] = 43917,	-- The Nighthold: Elisande [Heroic]
+						i(140472, {	-- Ancient Nightborne Tome (Heroic)
+							["questID"] = 43917,	-- The Nighthold: Elisande (Heroic)
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140152)),	-- Cache of Nightborne Treasures [Heroic]
+								un(2, i(140152)),	-- Cache of Nightborne Treasures (Heroic)
 							},
 						}),
-						i(140178, {	-- Glowing Lily [Heroic]
-							["questID"] = 43916,	-- The Nighthold: High Botanist Tel'arn [Heroic]
+						i(140178, {	-- Glowing Lily (Heroic)
+							["questID"] = 43916,	-- The Nighthold: High Botanist Tel'arn (Heroic)
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140152)),	-- Cache of Nightborne Treasures [Heroic]
+								un(2, i(140152)),	-- Cache of Nightborne Treasures (Heroic)
 							},
 						}),
-						i(140151, {	-- Pulsauron Bindings [Heroic]
-							["questID"] = 43890,	-- The Nighthold: Vaults [Heroic]
+						i(140151, {	-- Pulsauron Bindings (Heroic)
+							["questID"] = 43890,	-- The Nighthold: Vaults (Heroic)
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140152)),	-- Cache of Nightborne Treasures [Heroic]
+								un(2, i(140152)),	-- Cache of Nightborne Treasures (Heroic)
 							},
 						}),
-						i(140180, {	-- Shred of Tattered Robe [Heroic]
-							["questID"] = 43918,	-- The Nighthold: Gul'dan [Heroic]
+						i(140180, {	-- Shred of Tattered Robe (Heroic)
+							["questID"] = 43918,	-- The Nighthold: Gul'dan (Heroic)
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140152)),	-- Cache of Nightborne Treasures [Heroic]
+								un(2, i(140152)),	-- Cache of Nightborne Treasures (Heroic)
 							},
 						}),
-						q(45382, {	-- The Nighthold: Talisman of the Shal'dorei [Heroic]
+						q(45382, {	-- The Nighthold: Talisman of the Shal'dorei (Heroic)
+							["description"] = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+							["altQuests"] = { 45383 },	-- The Nighthold: Talisman of the Shal'dorei (Mythic)
 							["provider"] = { "n", 110791 },	-- First Arcanist Thalyssra
 							["g"] = {
-								ig(141325),	-- Talisman of the Shal'dorei [Heroic]
+								ig(141325),	-- Talisman of the Shal'dorei (Heroic)
 							},
 						}),
 					},
@@ -1031,8 +1038,8 @@ _.Instances = { tier(7, {	-- Legion
 				cr(106643, e(1743, {	-- Elisande
 					ach(10838, crit(3)),	-- Nightspire / Elisande
 					ach(10699),	-- Infinitesimal
-					i(143657, {	-- Echo of Time [Heroic]
-						["questID"] = 45382,	-- The Nighthold: Talisman of the Shal'dorei [Heroic]
+					i(143657, {	-- Echo of Time (Heroic)
+						["questID"] = 45382,	-- The Nighthold: Talisman of the Shal'dorei (Heroic)
 					}),
 					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1]
 					i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2]
@@ -1114,46 +1121,47 @@ _.Instances = { tier(7, {	-- Legion
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
-						i(140154, {	-- Cache of Nightborne Treasures [Mythic]
+						i(140154, {	-- Cache of Nightborne Treasures (Mythic)
 							["u"] = 2,
 							["sym"] = {{"select", "instanceID", 786}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
-						i(140182, {	-- Ancient Nightborne Tome [Mythic]
-							["questID"] = 43920,	-- The Nighthold: Elisande [Mythic]
+						i(140182, {	-- Ancient Nightborne Tome (Mythic)
+							["questID"] = 43920,	-- The Nighthold: Elisande (Mythic)
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140154)),	-- Cache of Nightborne Treasures [Mythic]
+								un(2, i(140154)),	-- Cache of Nightborne Treasures (Mythic)
 							},
 						}),
-						i(140181, {	-- Glowing Lily [Mythic]
-							["questID"] = 43919,	-- The Nighthold: High Botanist Tel'arn [Mythic]
+						i(140181, {	-- Glowing Lily (Mythic)
+							["questID"] = 43919,	-- The Nighthold: High Botanist Tel'arn (Mythic)
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140154)),	-- Cache of Nightborne Treasures [Mythic]
+								un(2, i(140154)),	-- Cache of Nightborne Treasures (Mythic)
 							},
 						}),
-						i(140153, {	-- Pulsauron Bindings [Mythic]
-							["questID"] = 43891,	-- The Nighthold: Vaults [Mythic]
+						i(140153, {	-- Pulsauron Bindings (Mythic)
+							["questID"] = 43891,	-- The Nighthold: Vaults (Mythic)
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140154)),	-- Cache of Nightborne Treasures [Mythic]
+								un(2, i(140154)),	-- Cache of Nightborne Treasures (Mythic)
 							},
 						}),
-						i(140183, {	-- Shred of Tattered Robe [Mythic]
-							["questID"] = 43921,	-- The Nighthold: Gul'dan [Mythic]
+						i(140183, {	-- Shred of Tattered Robe (Mythic)
+							["questID"] = 43921,	-- The Nighthold: Gul'dan (Mythic)
 							["repeatable"] = true,
 							["u"] = 40,
 							["g"] = {
-								un(2, i(140154)),	-- Cache of Nightborne Treasures [Mythic]
+								un(2, i(140154)),	-- Cache of Nightborne Treasures (Mythic)
 							},
 						}),
-						q(45383, {	-- The Nighthold: Talisman of the Shal'dorei [Mythic]
+						q(45383, {	-- The Nighthold: Talisman of the Shal'dorei (Mythic)
+							["description"] = "Finishing this quest will grant you immediate access to Spellblade Aluriel, Krosus, and/or Elisande on Mythic difficulty each week.\n",
 							["provider"] = { "n", 110791 },	-- First Arcanist Thalyssra
 							["g"] = {
-								ig(141326),	-- Talisman of the Shal'dorei [Mythic]
+								ig(141326),	-- Talisman of the Shal'dorei (Mythic)
 							},
 						}),
 					},
@@ -1419,8 +1427,8 @@ _.Instances = { tier(7, {	-- Legion
 					ach(10838, crit(3)),	-- Nightspire / Elisande
 					ach(10849),	-- Mythic: Grand Magistrix Elisande
 					ach(10699),	-- Infinitesimal
-					i(143658, {	-- Echo of Time [Mythic]
-						["questID"] = 45383,	-- The Nighthold: Talisman of the Shal'dorei [Mythic]
+					i(143658, {	-- Echo of Time (Mythic)
+						["questID"] = 45383,	-- The Nighthold: Talisman of the Shal'dorei (Mythic)
 					}),
 					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1]
 					i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2]

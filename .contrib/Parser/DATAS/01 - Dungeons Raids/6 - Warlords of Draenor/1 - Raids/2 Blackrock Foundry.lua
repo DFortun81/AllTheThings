@@ -259,12 +259,12 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			d(14, {		-- Normal
 				n(QUESTS, {
 					q(37029, {	-- Sigil of the Black Hand
-						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
-						["description"] = "The quest giver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Normal Difficulty each week.",
+						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
 						["altQuests"] = { 
-							37030,	-- Sigil of the Black Hand [Heroic]
-							37031,	-- Sigil of the Black Hand [Mythic]
+							37030,	-- Sigil of the Black Hand (Heroic)
+							37031,	-- Sigil of the Black Hand (Mythic)
 						},
+						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
 					}),
 				}),
 				n(ZONEDROPS, {
@@ -837,9 +837,10 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			}),
 			d(15, {		-- Heroic
 				n(QUESTS, {
-					q(37030, {	-- Sigil of the Black Hand [Heroic]
+					q(37030, {	-- Sigil of the Black Hand (Heroic)
+						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+						["altQuests"] = { 37031 },	-- Sigil of the Black Hand (Mythic)
 						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
-						["altQuests"] = { 37031 },	-- Sigil of the Black Hand [Mythic]
 					}),
 				}),
 				n(ZONEDROPS, {
@@ -1406,9 +1407,9 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			}),
 			d(16, {		-- Mythic
 				n(QUESTS, {
-					q(37031, {	-- Sigil of the Black Hand [Mythic]
+					q(37031, {	-- Sigil of the Black Hand (Mythic)
+						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Mythic difficulty each week.",
 						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
-						["description"] = "The quest giver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Mythic Difficulty each week.",
 					}),
 				}),
 				n(ZONEDROPS, {

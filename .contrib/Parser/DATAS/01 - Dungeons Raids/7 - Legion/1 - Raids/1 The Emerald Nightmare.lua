@@ -291,9 +291,13 @@ _.Instances = { tier(7, {	-- Legion
 								un(2, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
 							},
 						}),
-						q(44283, {	-- The Emerald Nightmare: Piercing the Veil
+						q(44283, {	-- The Emerald Nightmare: Piercing the Veil (Normal)
+							["description"] = "Finishing this quest will grant you immediate access to Cenarius on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+							["altQuests"] = {
+								44284,	-- The Emerald Nightmare: Piercing the Veil (Heroic)
+								44285,	-- The Emerald Nightmare: Piercing the Veil (Mythic)
+							},
 							["provider"] = { "n", 106482 },	-- Malfurion Stormrage
-							["description"] = "The reward is skipping the 4 bosses and getting instantly to Cenarius.",
 						}),
 					},
 				}),
@@ -530,8 +534,9 @@ _.Instances = { tier(7, {	-- Legion
 							},
 						}),
 						q(44284, {	-- The Emerald Nightmare: Piercing the Veil [Heroic]
+							["description"] = "Finishing this quest will grant you immediate access to Cenarius on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+							["altQuests"] = { 44285 },	-- The Emerald Nightmare: Piercing the Veil (Mythic)
 							["provider"] = { "n", 106482 },	-- Malfurion Stormrage
-							["description"] = "The reward is skipping the 4 bosses and getting instantly to Cenarius.",
 						}),
 					},
 				}),
@@ -772,8 +777,8 @@ _.Instances = { tier(7, {	-- Legion
 							},
 						}),
 						q(44285, {	-- The Emerald Nightmare: Piercing the Veil [Mythic]
+							["description"] = "Finishing this quest will grant you immediate access to Cenarius on Mythic difficulty each week.\n",
 							["provider"] = { "n", 106482 },	-- Malfurion Stormrage
-							["description"] = "The reward is skipping the 4 bosses and getting instantly to Cenarius.",
 						}),
 					},
 				}),

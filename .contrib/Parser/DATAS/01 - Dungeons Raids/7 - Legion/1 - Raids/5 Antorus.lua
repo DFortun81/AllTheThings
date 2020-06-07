@@ -445,8 +445,24 @@ _.Instances = { tier(7, {	-- Legion
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
-						{
-							["itemID"] = 153504,	-- Cache of Antoran Treasures [Normal]
+						q(49032, {	-- Antorus, the Burning Throne: Dark Passage (Normal)
+							["description"] = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+							["altQuests"] = {
+								49075,	-- Antorus, the Burning Throne: Dark Passage (Heroic)
+								49076,	-- Antorus, the Burning Throne: Dark Passage (Mythic)
+							},
+							["provider"] = { "n", 125512 },	-- High Exarch Turalyon
+						}),
+						q(49133, {	-- Antorus, the Burning Throne: The Heart of Argus (Normal)
+							["sourceQuests"] = { 49032 },	-- Antorus, the Burning Throne: Dark Passage (Normal)
+							["description"] = "Finishing this quest will grant you immediate access to Aggramar on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+							["altQuests"] = {
+								49134,	-- Antorus, the Burning Throne: The Heart of Argus (Heroic)
+								49135,	-- Antorus, the Burning Throne: The Heart of Argus (Mythic)
+							},
+							["provider"] = { "n", 125682 },	-- Prophet Velen
+						}),
+						i(153504, {	-- Cache of Antoran Treasures (Normal)
 							["sym"] = {
 								{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
 								{"pop"},	-- Discard the Instance Header and acquire the children.
@@ -462,37 +478,37 @@ _.Instances = { tier(7, {	-- Legion
 									155831,	-- Pantheon's Blessing
 								},
 							},
-						},
+						}),
 						{
-							["itemID"] = 152314,	-- Azeroth Invasion Plans [Normal]
-							["questID"] = 48295,	-- Antoran High Command [Normal]
+							["itemID"] = 152314,	-- Azeroth Invasion Plans (Normal)
+							["questID"] = 48295,	-- Antoran High Command (Normal)
 							["repeatable"] = true,
 							["g"] = {
-								i(153504),	-- Cache of Antoran Treasures [Normal]
+								i(153504),	-- Cache of Antoran Treasures (Normal)
 							},
 						},
 						{
-							["itemID"] = 152318,	-- Discharged Shock Lance [Normal]
-							["questID"] = 48296,	-- The Soulhunter [Normal]
+							["itemID"] = 152318,	-- Discharged Shock Lance (Normal)
+							["questID"] = 48296,	-- The Soulhunter (Normal)
 							["repeatable"] = true,
 							["g"] = {
-								i(153504),	-- Cache of Antoran Treasures [Normal]
+								i(153504),	-- Cache of Antoran Treasures (Normal)
 							},
 						},
 						{
-							["itemID"] = 152326,	-- Sanguine Argunite [Normal]
-							["questID"] = 48298,	-- The Unmaker [Normal]
+							["itemID"] = 152326,	-- Sanguine Argunite (Normal)
+							["questID"] = 48298,	-- The Unmaker (Normal)
 							["repeatable"] = true,
 							["g"] = {
-								i(153504),	-- Cache of Antoran Treasures [Normal]
+								i(153504),	-- Cache of Antoran Treasures (Normal)
 							},
 						},
 						{
-							["itemID"] = 152322,	-- Sargerei Manifesto [Normal]
-							["questID"] = 48297,	-- The Burning Coven [Normal]
+							["itemID"] = 152322,	-- Sargerei Manifesto (Normal)
+							["questID"] = 48297,	-- The Burning Coven (Normal)
 							["repeatable"] = true,
 							["g"] = {
-								i(153504),	-- Cache of Antoran Treasures [Normal]
+								i(153504),	-- Cache of Antoran Treasures (Normal)
 							},
 						},
 					},
@@ -844,8 +860,19 @@ _.Instances = { tier(7, {	-- Legion
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
+						q(49075, {	-- Antorus, the Burning Throne: Dark Passage (Heroic)
+							["description"] = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+							["altQuests"] = { 49076 },	-- Antorus, the Burning Throne: Dark Passage (Mythic)
+							["provider"] = { "n", 125512 },	-- High Exarch Turalyon
+						}),
+						q(49134, {	-- Antorus, the Burning Throne: The Heart of Argus (Heroic)
+							["sourceQuests"] = { 49075 },	-- Antorus, the Burning Throne: Dark Passage (Heroic)
+							["description"] = "Finishing this quest will grant you immediate access to Aggramar on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+							["altQuests"] = { 49135 },	-- Antorus, the Burning Throne: The Heart of Argus (Mythic)
+							["provider"] = { "n", 125682 },	-- Prophet Velen
+						}),
 						{
-							["itemID"] = 153501,	-- Cache of Antoran Treasures [Heroic]
+							["itemID"] = 153501,	-- Cache of Antoran Treasures (Heroic)
 							["sym"] = {
 								{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
 								{"pop"},	-- Discard the Instance Header and acquire the children.
@@ -863,35 +890,35 @@ _.Instances = { tier(7, {	-- Legion
 							},
 						},
 						{
-							["itemID"] = 152315,	-- Azeroth Invasion Plans [Heroic]
-							["questID"] = 48299,	-- Antoran High Command [Heroic]
+							["itemID"] = 152315,	-- Azeroth Invasion Plans (Heroic)
+							["questID"] = 48299,	-- Antoran High Command (Heroic)
 							["repeatable"] = true,
 							["g"] = {
-								i(153501),	-- Cache of Antoran Treasures [Heroic]
+								i(153501),	-- Cache of Antoran Treasures (Heroic)
 							},
 						},
 						{
-							["itemID"] = 152319,	-- Discharged Shock Lance [Heroic]
-							["questID"] = 48300,	-- The Soulhunter [Heroic]
+							["itemID"] = 152319,	-- Discharged Shock Lance (Heroic)
+							["questID"] = 48300,	-- The Soulhunter (Heroic)
 							["repeatable"] = true,
 							["g"] = {
-								i(153501),	-- Cache of Antoran Treasures [Heroic]
+								i(153501),	-- Cache of Antoran Treasures (Heroic)
 							},
 						},
 						{
-							["itemID"] = 152327,	-- Sanguine Argunite [Heroic]
-							["questID"] = 48302,	-- The Unmaker [Heroic]
+							["itemID"] = 152327,	-- Sanguine Argunite (Heroic)
+							["questID"] = 48302,	-- The Unmaker (Heroic)
 							["repeatable"] = true,
 							["g"] = {
-								i(153501),	-- Cache of Antoran Treasures [Heroic]
+								i(153501),	-- Cache of Antoran Treasures (Heroic)
 							},
 						},
 						{
-							["itemID"] = 152323,	-- Sargerei Manifesto [Heroic]
-							["questID"] = 48301,	-- The Burning Coven [Heroic]
+							["itemID"] = 152323,	-- Sargerei Manifesto (Heroic)
+							["questID"] = 48301,	-- The Burning Coven (Heroic)
 							["repeatable"] = true,
 							["g"] = {
-								i(153501),	-- Cache of Antoran Treasures [Heroic]
+								i(153501),	-- Cache of Antoran Treasures (Heroic)
 							},
 						},
 					},
@@ -1251,8 +1278,17 @@ _.Instances = { tier(7, {	-- Legion
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
+						q(49076, {	-- Antorus, the Burning Throne: Dark Passage (Mythic)
+							["description"] = "Finishing this quest will grant you immediate access to Imonar the Soulhunter on Mythic difficulty each week.\n",
+							["provider"] = { "n", 125512 },	-- High Exarch Turalyon
+						}),
+						q(49135, {	-- Antorus, the Burning Throne: The Heart of Argus (Mythic)
+							["sourceQuests"] = { 49076 },	-- Antorus, the Burning Throne: Dark Passage (Mythic)
+							["description"] = "Finishing this quest will grant you immediate access to Aggramar on Mythic difficulty each week.\n",
+							["provider"] = { "n", 125682 },	-- Prophet Velen
+						}),
 						{
-							["itemID"] = 153503,	-- Cache of Antoran Treasures [Mythic]
+							["itemID"] = 153503,	-- Cache of Antoran Treasures (Mythic)
 							["sym"] = {
 								{"select", "instanceID", 946},	-- Select Antorus, the Burning Throne
 								{"pop"},	-- Discard the Instance Header and acquire the children.
@@ -1270,35 +1306,35 @@ _.Instances = { tier(7, {	-- Legion
 							},
 						},
 						{
-							["itemID"] = 152316,	-- Azeroth Invasion Plans [Mythic]
-							["questID"] = 48303,	-- Antoran High Command [Mythic]
+							["itemID"] = 152316,	-- Azeroth Invasion Plans (Mythic)
+							["questID"] = 48303,	-- Antoran High Command (Mythic)
 							["repeatable"] = true,
 							["g"] = {
-								i(153503),	-- Cache of Antoran Treasures [Mythic]
+								i(153503),	-- Cache of Antoran Treasures (Mythic)
 							},
 						},
 						{
-							["itemID"] = 152320,	-- Discharged Shock Lance [Mythic]
-							["questID"] = 48304,	-- The Soulhunter [Mythic]
+							["itemID"] = 152320,	-- Discharged Shock Lance (Mythic)
+							["questID"] = 48304,	-- The Soulhunter (Mythic)
 							["repeatable"] = true,
 							["g"] = {
-								i(153503),	-- Cache of Antoran Treasures [Mythic]
+								i(153503),	-- Cache of Antoran Treasures (Mythic)
 							},
 						},
 						{
-							["itemID"] = 152328,	-- Sanguine Argunite [Mythic]
-							["questID"] = 48306,	-- The Unmaker [Mythic]
+							["itemID"] = 152328,	-- Sanguine Argunite (Mythic)
+							["questID"] = 48306,	-- The Unmaker (Mythic)
 							["repeatable"] = true,
 							["g"] = {
-								i(153503),	-- Cache of Antoran Treasures [Mythic]
+								i(153503),	-- Cache of Antoran Treasures (Mythic)
 							},
 						},
 						{
-							["itemID"] = 152324,	-- Sargerei Manifesto [Mythic]
-							["questID"] = 48305,	-- The Burning Coven [Mythic]
+							["itemID"] = 152324,	-- Sargerei Manifesto (Mythic)
+							["questID"] = 48305,	-- The Burning Coven (Mythic)
 							["repeatable"] = true,
 							["g"] = {
-								i(153503),	-- Cache of Antoran Treasures [Mythic]
+								i(153503),	-- Cache of Antoran Treasures (Mythic)
 							},
 						},
 					},

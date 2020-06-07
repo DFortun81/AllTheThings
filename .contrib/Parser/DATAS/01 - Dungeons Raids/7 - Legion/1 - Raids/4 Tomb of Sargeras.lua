@@ -418,35 +418,43 @@ _.Instances = { tier(7, {	-- Legion
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
-						i(147519, {	-- Cache of Fel Treasures [Normal]
+						i(147519, {	-- Cache of Fel Treasures (Normal)
 							["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 14 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
-						i(147498, {	-- Encrusted Naga Scale [Normal]
-							["questID"] = 47115,	-- Tomb of Sargeras: The Tomb's Mistress [Normal]
+						i(147498, {	-- Encrusted Naga Scale (Normal)
+							["questID"] = 47115,	-- Tomb of Sargeras: The Tomb's Mistress (Normal)
 							["repeatable"] = true,
 							["g"] = {
-								i(147519),	-- Cache of Fel Treasures [Normal]
+								i(147519),	-- Cache of Fel Treasures (Normal)
 							},
 						}),
-						i(147510, {	-- Seal of the Deceiver [Normal]
-							["questID"] = 47127,	-- Tomb of Sargeras: The Deceiver [Normal]
+						i(147510, {	-- Seal of the Deceiver (Normal)
+							["questID"] = 47127,	-- Tomb of Sargeras: The Deceiver (Normal)
 							["repeatable"] = true,
 							["g"] = {
-								i(147519),	-- Cache of Fel Treasures [Normal]
+								i(147519),	-- Cache of Fel Treasures (Normal)
 							},
 						}),
-						i(147506, {	-- Wailing Soul [Normal]
-							["questID"] = 47123,	-- Tomb of Sargeras: The Fallen Avatar [Normal]
+						q(47725, {	-- Tomb of Sargeras: Aegwynn's Path (Normal)
+							["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+							["altQuests"] = {
+								47726,	-- Tomb of Sargeras: Aegwynn's Path (Heroic)
+								47727,	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
+							},
+							["provider"] = { "n", 119723 },	-- Image of Aegwynn
+						}),
+						i(147506, {	-- Wailing Soul (Normal)
+							["questID"] = 47123,	-- Tomb of Sargeras: The Fallen Avatar (Normal)
 							["repeatable"] = true,
 							["g"] = {
-								i(147519),	-- Cache of Fel Treasures [Normal]
+								i(147519),	-- Cache of Fel Treasures (Normal)
 							},
 						}),
-						i(147502, {	-- Worshipper's Scrawlings [Normal]
-							["questID"] = 47119,	-- Tomb of Sargeras: Free The Tormented [Normal]
+						i(147502, {	-- Worshipper's Scrawlings (Normal)
+							["questID"] = 47119,	-- Tomb of Sargeras: Free The Tormented (Normal)
 							["repeatable"] = true,
 							["g"] = {
-								i(147519),	-- Cache of Fel Treasures [Normal]
+								i(147519),	-- Cache of Fel Treasures (Normal)
 							},
 						}),
 					},
@@ -744,35 +752,40 @@ _.Instances = { tier(7, {	-- Legion
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
-						i(147520, {	-- Cache of Fel Treasures [Heroic]
+						i(147520, {	-- Cache of Fel Treasures (Heroic)
 							["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 15 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
-						i(147499, {	-- Encrusted Naga Scale [Heroic]
-							["questID"] = 47116,	-- Tomb of Sargeras: The Tomb's Mistress [Heroic]
+						i(147499, {	-- Encrusted Naga Scale (Heroic)
+							["questID"] = 47116,	-- Tomb of Sargeras: The Tomb's Mistress (Heroic)
 							["repeatable"] = true,
 							["g"] = {
-								i(147520),	-- Cache of Fel Treasures [Heroic]
+								i(147520),	-- Cache of Fel Treasures (Heroic)
 							},
 						}),
-						i(147511, {	-- Seal of the Deceiver [Heroic]
-							["questID"] = 47128,	-- Tomb of Sargeras: The Deceiver [Heroic]
+						i(147511, {	-- Seal of the Deceiver (Heroic)
+							["questID"] = 47128,	-- Tomb of Sargeras: The Deceiver (Heroic)
 							["repeatable"] = true,
 							["g"] = {
-								i(147520),	-- Cache of Fel Treasures [Heroic]
+								i(147520),	-- Cache of Fel Treasures (Heroic)
 							},
 						}),
-						i(147507, {	-- Wailing Soul [Heroic]
-							["questID"] = 47124,	-- Tomb of Sargeras: The Fallen Avatar [Heroic]
+						q(47726, {	-- Tomb of Sargeras: Aegwynn's Path (Heroic)
+							["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+							["altQuests"] = { 47727 },	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
+							["provider"] = { "n", 119723 },	-- Image of Aegwynn
+						}),
+						i(147507, {	-- Wailing Soul (Heroic)
+							["questID"] = 47124,	-- Tomb of Sargeras: The Fallen Avatar (Heroic)
 							["repeatable"] = true,
 							["g"] = {
-								i(147520),	-- Cache of Fel Treasures [Heroic]
+								i(147520),	-- Cache of Fel Treasures (Heroic)
 							},
 						}),
-						i(147503, {	-- Worshipper's Scrawlings [Heroic]
-							["questID"] = 47120,	-- Tomb of Sargeras: Free The Tormented [Heroic]
+						i(147503, {	-- Worshipper's Scrawlings (Heroic)
+							["questID"] = 47120,	-- Tomb of Sargeras: Free The Tormented (Heroic)
 							["repeatable"] = true,
 							["g"] = {
-								i(147520),	-- Cache of Fel Treasures [Heroic]
+								i(147520),	-- Cache of Fel Treasures (Heroic)
 							},
 						}),
 					},
@@ -1070,35 +1083,40 @@ _.Instances = { tier(7, {	-- Legion
 				n(QUESTS, {
 					["crs"] = CLASS_HALL_MISSION_TABLES,
 					["g"] = {
-						i(147521, {	-- Cache of Fel Treasures [Mythic]
+						i(147521, {	-- Cache of Fel Treasures (Mythic)
 							["sym"] = {{"select", "instanceID", 875}, {"pop"}, {"where", "difficultyID", 16 }, {"pop"}, {"is","encounterID"}, {"pop"}, {"isnt", "c"}, {"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 }},
 						}),
-						i(147500, {	-- Encrusted Naga Scale [Mythic]
-							["questID"] = 47117,	-- Tomb of Sargeras: The Tomb's Mistress [Mythic]
+						i(147500, {	-- Encrusted Naga Scale (Mythic)
+							["questID"] = 47117,	-- Tomb of Sargeras: The Tomb's Mistress (Mythic)
 							["repeatable"] = true,
 							["g"] = {
-								i(147521),	-- Cache of Fel Treasures [Mythic]
+								i(147521),	-- Cache of Fel Treasures (Mythic)
 							},
 						}),
-						i(147512, {	-- Seal of the Deceiver [Mythic]
-							["questID"] = 47129,	-- Tomb of Sargeras: The Deceiver [Mythic]
+						i(147512, {	-- Seal of the Deceiver (Mythic)
+							["questID"] = 47129,	-- Tomb of Sargeras: The Deceiver (Mythic)
 							["repeatable"] = true,
 							["g"] = {
-								i(147521),	-- Cache of Fel Treasures [Mythic]
+								i(147521),	-- Cache of Fel Treasures (Mythic)
 							},
 						}),
-						i(147508, {	-- Wailing Soul [Mythic]
-							["questID"] = 47125,	-- Tomb of Sargeras: The Fallen Avatar [Mythic]
+						q(47727, {	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
+							["description"] = "Finishing this quest will grant you access to Maiden of Vigilance after killing Goroth on Mythic difficulty each week.\n",
+							["altQuests"] = { 47727 },	-- Tomb of Sargeras: Aegwynn's Path (Mythic)
+							["provider"] = { "n", 119723 },	-- Image of Aegwynn
+						}),
+						i(147508, {	-- Wailing Soul (Mythic)
+							["questID"] = 47125,	-- Tomb of Sargeras: The Fallen Avatar (Mythic)
 							["repeatable"] = true,
 							["g"] = {
-								i(147521),	-- Cache of Fel Treasures [Mythic]
+								i(147521),	-- Cache of Fel Treasures (Mythic)
 							},
 						}),
-						i(147504, {	-- Worshipper's Scrawlings [Mythic]
-							["questID"] = 47121,	-- Tomb of Sargeras: Free The Tormented [Mythic]
+						i(147504, {	-- Worshipper's Scrawlings (Mythic)
+							["questID"] = 47121,	-- Tomb of Sargeras: Free The Tormented (Mythic)
 							["repeatable"] = true,
 							["g"] = {
-								i(147521),	-- Cache of Fel Treasures [Mythic]
+								i(147521),	-- Cache of Fel Treasures (Mythic)
 							},
 						}),
 					},

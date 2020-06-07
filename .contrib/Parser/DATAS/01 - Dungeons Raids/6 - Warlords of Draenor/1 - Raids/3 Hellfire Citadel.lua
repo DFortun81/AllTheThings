@@ -339,19 +339,22 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			d(14, {	-- Normal
 				n(QUESTS, {
 					q(39502, {	-- The Fel Spire
-						["provider"] = { "n", 95659 },	-- Archmage Khadgar
+						["description"] = "Finishing this quest will grant you immediate access to the Destructor's Rise on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+						["sourceQuests"] = { 39499 },	-- Well of Souls (Normal)
 						["altQuests"] = {
-							39504,	-- The Fel Spire [Heroic]
-							39505,	-- The Fel Spire [Mythic]
+							39504,	-- The Fel Spire (Heroic)
+							39505,	-- The Fel Spire (Mythic)
 						},
+						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["cost"] = { { "i", 128419, 4 } },	-- 4x Fel Essence
 					}),
 					q(39499, {	-- Well of Souls
-						["provider"] = { "n", 95659 },	-- Archmage Khadgar
+						["description"] = "Finishing this quest will grant you immediate access to the Upper Citadel on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
 						["altQuests"] = {
-							39500,	-- Well of Souls [Heroic]
-							39501,	-- Well of Souls [Mythic]
+							39500,	-- Well of Souls (Heroic)
+							39501,	-- Well of Souls (Mythic)
 						},
+						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["cost"] = { { "i", 128416, 4 } },	-- 4x Soul Remnant
 					}),
 				}),
@@ -750,16 +753,19 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					un(2, i(127785)),	-- Crystallized Fel
 				})),
 			}),
-			d(15, {		-- Heroic
+			d(15, {	-- Heroic
 				n(QUESTS, {
-					q(39504, {	-- The Fel Spire [Heroic]
+					q(39504, {	-- The Fel Spire (Heroic)
+						["description"] = "Finishing this quest will grant you immediate access to the Destructor's Rise on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+						["sourceQuests"] = { 39500 },	-- Well of Souls (Heroic)
+						["altQuests"] = { 39505 },	-- The Fel Spire (Mythic)
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
-						["altQuests"] = { 39505 },	-- The Fel Spire [Mythic]
 						["cost"] = { { "i", 128420, 4 } },	-- 4x Fel Essence
 					}),
-					q(39500, {	-- Well of Souls [Heroic]
+					q(39500, {	-- Well of Souls (Heroic)
+						["description"] = "Finishing this quest will grant you immediate access to the Upper Citadel on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+						["altQuests"] = { 39501 },	-- Well of Souls (Mythic)
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
-						["altQuests"] = { 39501 },	-- Well of Souls [Mythic]
 						["cost"] = { { "i", 128417, 4 } },	-- 4x Soul Remnant
 					}),
 				}),
@@ -1157,13 +1163,16 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					un(2, i(127785)),	-- Crystallized Fel
 				})),
 			}),
-			d(16, {		-- Mythic
+			d(16, {	-- Mythic
 				n(QUESTS, {
-					q(39505, {	-- The Fel Spire [Mythic]
+					q(39505, {	-- The Fel Spire (Mythic)
+						["description"] = "Finishing this quest will grant you immediate access to the Destructor's Rise on Mythic difficulty each week.\n",
+						["sourceQuests"] = { 39501 },	-- Well of Souls (Mythic)
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["cost"] = { { "i", 128421, 4 } },	-- 4x Fel Essence
 					}),
-					q(39501, {	-- Well of Souls [Mythic]
+					q(39501, {	-- Well of Souls (Mythic)
+						["description"] = "Finishing this quest will grant you immediate access to the Upper Citadel on Mythic difficulty each week.\n",
 						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["cost"] = { { "i", 128418, 4 } },	-- 4x Soul Remnant
 					}),
