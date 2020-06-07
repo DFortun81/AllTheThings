@@ -137,26 +137,19 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(RARES, {
-							i(118380, {	-- Hightfish Cap
-								["collectible"] = false,
-								["u"] = 15,
-								["crs"] = {
-									81171,	-- Frostdeep Cavedweller
-									85715,	-- Lunarfall Cavedweller
-								},
-							}),
-							i(118393, {	-- Tentacled Hat
-								["collectible"] = false,
-								["u"] = 15,
-								["crs"] = {
-									81171,	-- Frostdeep Cavedweller
-									85715,	-- Lunarfall Cavedweller
-								},
-							}),
 							i(112633, {	-- Frostdeep Minnow
 								n(81171, {	-- Frostdeep Cavedweller
-									i(46109), 	-- Sea Turtle
 									i(23720), 	-- Riding Turtle
+									i(46109), 	-- Sea Turtle
+									i(118380, {	-- Hightfish Cap
+										["collectible"] = false,
+										["u"] = 15,
+									}),
+									i(44983),	-- Strand Crawler
+									i(118393, {	-- Tentacled Hat
+										["collectible"] = false,
+										["u"] = 15,
+									}),
 								}),
 							}),
 						}),
