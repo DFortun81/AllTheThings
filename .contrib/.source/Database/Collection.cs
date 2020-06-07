@@ -96,16 +96,15 @@ namespace ATT
         #endregion
         #region Functionality
         /// <summary>
-        /// Export the data in this Container to a Comma-Separated Volume. (CSV)
+        /// Export the data in this Collection to a set of Comma-Separated Volume (CSV) files.
         /// This is traditionally used within Microsoft Excel.
         /// </summary>
-        /// <param name="filename">The full file name to write to.</param>
-        public void ExportToCSV(string filename)
+        /// <param name="directory">The directory to write to.</param>
+        public virtual void ExportToCSV(string directory)
         {
-            var directory = Path.Combine(Path.GetDirectoryName(filename), Path.GetFileNameWithoutExtension(filename));
-            Directory.CreateDirectory(directory);
             var builder = new StringBuilder();
             Export(builder);
+            Directory.CreateDirectory(directory);
             File.WriteAllText(Path.Combine(directory, "Summary.csv"), builder.ToString());
 
             // Export all of the associated Data tables.
@@ -219,9 +218,12 @@ namespace ATT
             var builder = new StringBuilder();
             foreach (var key in keys)
             {
-                if (i++ > 0) builder.Append(", ");
                 var container = (Container)temp[key].GetValue(this);
-                builder.Append(container.Total.Value).Append(' ').Append(key);
+                if (container.PartialTotal.Value > 0)
+                {
+                    if (i++ > 0) builder.Append(", ");
+                    builder.Append(container.Total.Value).Append(' ').Append(key);
+                }
             }
 
             return builder.ToString();

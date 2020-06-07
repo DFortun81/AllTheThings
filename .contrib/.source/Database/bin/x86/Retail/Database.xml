@@ -113,10 +113,10 @@
         </member>
         <member name="M:ATT.Collection.ExportToCSV(System.String)">
             <summary>
-            Export the data in this Container to a Comma-Separated Volume. (CSV)
+            Export the data in this Collection to a set of Comma-Separated Volume (CSV) files.
             This is traditionally used within Microsoft Excel.
             </summary>
-            <param name="filename">The full file name to write to.</param>
+            <param name="directory">The directory to write to.</param>
         </member>
         <member name="M:ATT.Collection.Export(System.Text.StringBuilder)">
             <summary>
@@ -366,6 +366,12 @@
             Update the Installation Folder Path for World of Warcraft from the Windows Registry.
             </summary>
         </member>
+        <member name="M:ATT.Database.ExportToCSV(System.String)">
+            <summary>
+            Export the database to a set of Comma-Separated Volume (CSV) files.
+            </summary>
+            <param name="directory">The directory to write to.</param>
+        </member>
         <member name="M:ATT.Database.SyncWithSavedVariables(System.String,System.Collections.Generic.Dictionary{System.String,ATT.WoWAccount})">
             <summary>
             Sync the database with the Saved Variables in the World of Warcraft Folder.
@@ -519,6 +525,13 @@
             The fully qualified realm name that represents this character.
             </summary>
         </member>
+        <member name="M:ATT.WoWCharacter.ExportToCSV(System.String)">
+            <summary>
+            Export the data in this Collection to a set of Comma-Separated Volume (CSV) files.
+            This is traditionally used within Microsoft Excel.
+            </summary>
+            <param name="directory">The directory to write to.</param>
+        </member>
         <member name="T:ATT.WoWAccount">
             <summary>
             Represents a player's individual WoW Account and its combined collection.
@@ -539,6 +552,13 @@
             Create an instance of the WoW Account class with an associated name.
             </summary>
             <param name="accountName">The name of the account.</param>
+        </member>
+        <member name="M:ATT.WoWAccount.ExportToCSV(System.String)">
+            <summary>
+            Export the data in this Collection to a set of Comma-Separated Volume (CSV) files.
+            This is traditionally used within Microsoft Excel.
+            </summary>
+            <param name="directory">The directory to write to.</param>
         </member>
         <member name="M:ATT.WoWAccount.Import(System.Collections.Generic.Dictionary{System.Object,System.Object})">
             <summary>

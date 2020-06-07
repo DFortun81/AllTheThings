@@ -85,6 +85,19 @@ namespace ATT
         /// <returns>The data in a more readable format.</returns>
         private static Dictionary<object, object> ParseFile(string filename)
         {
+            // Read the First Line of the File to see if we've already worked on this file. (if so, we don't need to sync)
+            foreach (var line in File.ReadLines(filename))
+            {
+                // Have we done work? If so, we don't need to parse this file nor sync.
+                if (line.StartsWith("-- Compressed"))
+                {
+                    // Considerations: Yeah, I realize it won't parse again if they delete the data files,
+                    // buuut, just login again and the next sync should grab it. Non-issue. - Crieve
+                    return null;  
+                }
+                break;
+            }
+
             Dictionary<object, object> data = null;
             try
             {

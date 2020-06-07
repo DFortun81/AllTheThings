@@ -36,6 +36,16 @@ namespace ATT
         #endregion
         #region Functionality
         /// <summary>
+        /// Export the data in this Collection to a set of Comma-Separated Volume (CSV) files.
+        /// This is traditionally used within Microsoft Excel.
+        /// </summary>
+        /// <param name="directory">The directory to write to.</param>
+        public override void ExportToCSV(string directory)
+        {
+            base.ExportToCSV(Path.Combine(directory, AccountName));
+        }
+
+        /// <summary>
         /// Import data from the saved variables associated with the account.
         /// </summary>
         /// <param name="savedVariables">The saved variables.</param>

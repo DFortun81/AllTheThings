@@ -16,20 +16,116 @@ namespace ATT
 {
     public partial class MainForm : Form
     {
+        #region Static Functionality
+        /// <summary>
+        /// Whether or not the addon should startup automatically.
+        /// </summary>
+        public static PropertyChanged<bool> StartupAutomatically { get; }
+
+        /// <summary>
+        /// Get whether or not the program should startup automatically.
+        /// </summary>
+        /// <returns></returns>
+        private static bool GetStartupAutomatically()
+        {
+            try
+            {
+                using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\ATT\ATT Sync Tool", true))
+                {
+                    if (key != null)
+                    {
+                        bool StartupAutomatically = Convert.ToBoolean(key.GetValue("StartupAutomatically", false));
+                        key.Close();
+                        return StartupAutomatically;
+                    }
+                    else
+                    {
+                        Registry.CurrentUser.CreateSubKey(@"SOFTWARE\ARR\ATT Sync Tool")?.Close();
+                        return true;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Trace.WriteLine(e);
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Set whether or not the program should startup automatically.
+        /// </summary>
+        /// <param name="startup">Whether or not to startup automatically.</param>
+        private static void SetStartupAutomatically(bool startup)
+        {
+            try
+            {
+                using (RegistryKey rk = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true))
+                {
+                    if (rk != null)
+                    {
+                        if (startup)
+                            rk.SetValue(Application.ProductName, Application.ExecutablePath);
+                        else
+                            rk.DeleteValue(Application.ProductName, false);
+                        rk.Close();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Trace.WriteLine(e);
+            }
+            try
+            {
+                using (RegistryKey rk = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\ATT\ATT Sync Tool", true))
+                {
+                    if (rk != null)
+                    {
+                        rk.SetValue("StartupAutomatically", startup ? 1 : 0);
+                        rk.Close();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Trace.WriteLine(e);
+            }
+            
+            Trace.WriteLine(startup ? "Start with Windows." : "Do NOT start with Windows.");
+        }
+
+        /// <summary>
+        /// Class contructor.
+        /// </summary>
+        static MainForm()
+        {
+            Tracer.Initialize();
+
+            // Cache whether or not the setting for starting the tool with Windows is turned on.
+            StartupAutomatically = new PropertyChanged<bool>(GetStartupAutomatically());
+            StartupAutomatically.OnValueChanged += SetStartupAutomatically;
+        }
+        #endregion
+
         public MainForm()
         {
             InitializeComponent();
+            Tracer.OnWrite += Tracer_OnWrite;
+            StartupAutomatically.OnValueChanged += StartupAutomatically_OnValueChanged;
             ATT.Database.Initialize();
         }
 
         ~MainForm()
         {
-            /*
-            Sentinel.StartupAutomatically.OnValueChanged -= StartupAutomatically_OnValueChanged;
+            StartupAutomatically.OnValueChanged -= StartupAutomatically_OnValueChanged;
             Tracer.OnWrite -= Tracer_OnWrite;
-            */
         }
 
+        /// <summary>
+        /// When the Startup Automatically value changes, notify the log.
+        /// </summary>
+        /// <param name="shouldStartupAutomatically">Whether the tool should startup automatically with windows.</param>
         private void StartupAutomatically_OnValueChanged(bool shouldStartupAutomatically)
         {
             if (InvokeRequired)
@@ -53,9 +149,6 @@ namespace ATT
             textBoxATT.Text += message;
         }
 
-        
-        
-        
 
         /// <summary>
         /// Sync the WTF folder with the ATT Database.
@@ -71,57 +164,9 @@ namespace ATT
                     timerOncePerHour.Start();
                 }
 
-                // Report that we have started syncing with the web application.
-                Trace.WriteLine("Syncing with ATT Database...");
-
-                // Write all of the account data into separate tables.
-                /*
-                foreach(var accountPair in Sentinel.RetailWoWAccounts)
-                {
-                    var accountID = 1;
-
-                    // Record all of the appearances that are flagged in the database already.
-                    var collected_appearances = Database.QueryDatabase($"SELECT [ID] FROM [RETAIL].[COLLECTION_APPEARANCES] WHERE [ACCOUNT_ID]={accountID};", delegate (IDataReader reader)
-                    {
-                        var dict = new Dictionary<long, bool>();
-                        while (reader.Read())
-                        {
-                            dict[reader.GetInt64(0)] = true;
-                        }
-                        return dict;
-                    });
-                    int count = 0;
-                    var insert = "INSERT INTO [RETAIL].[COLLECTION_APPEARANCES]([ACCOUNT_ID],[ID]) VALUES";
-                    var builder = new StringBuilder(insert);
-                    foreach(var pair in accountPair.Value.Appearances)
-                    {
-                        if (pair.Value == CollectedStatus.Collected)
-                        {
-                            if (collected_appearances.ContainsKey(pair.Key)) continue;
-                            if (count++ > 0)
-                            {
-                                if(count > 998)
-                                {
-                                    builder.Append(';');
-                                    Database.QueryDatabase(builder.ToString());
-                                    builder.Clear().Append(insert);
-                                    count = 1;
-                                }
-                                else builder.Append(',');
-                            }
-                            builder.Append('(').Append(accountID).Append(',').Append(pair.Key).Append(')');
-                        }
-                    }
-                    if(count > 0)
-                    {
-                        Database.QueryDatabase(builder.ToString());
-                    }
-                }
-                */
-                // TODO: Sync with the ATT Database.
-                //await Task.Delay(10000);
-
-                // Report that we finished syncing with the web application successfully.
+                // Sync the Saved Variables with the Database.
+                Trace.WriteLine("Syncing with ATT Saved Variables...");
+                ATT.Database.SyncWithSavedVariables();
                 Trace.WriteLine("Sync complete.");
                 buttonSyncNow.Enabled = true;
             }
@@ -129,7 +174,7 @@ namespace ATT
         
         private void FormMain_Shown(object sender, EventArgs e)
         {
-            //checkBoxStartUp.Checked = Sentinel.StartupAutomatically.Value;
+            checkBoxStartUp.Checked = StartupAutomatically.Value;
             Hide();
         }
 
@@ -183,7 +228,7 @@ namespace ATT
 
         private void checkBoxStartUp_CheckedChanged(object sender, EventArgs e)
         {
-            //Sentinel.StartupAutomatically.Value = checkBoxStartUp.Checked;
+            StartupAutomatically.Value = checkBoxStartUp.Checked;
         }
 
         private void buttonSyncNow_Click(object sender, EventArgs e)
@@ -193,18 +238,16 @@ namespace ATT
 
         private void buttonExportToCSV_Click(object sender, EventArgs e)
         {
-            /*
             var dialogResult = dialogExportAsCSV.ShowDialog();
             if (dialogResult == DialogResult.OK)
             {
                 Trace.WriteLine($"Exporting Account Data to CSV Files...{Environment.NewLine}\t{dialogExportAsCSV.SelectedPath}");
                 var directoryInfo = new DirectoryInfo(dialogExportAsCSV.SelectedPath);
                 if (!directoryInfo.Exists) directoryInfo.Create();
-                Sentinel.ExportToCSV(directoryInfo);
+                Database.ExportToCSV(directoryInfo.FullName);
                 Trace.WriteLine($"Finished exporting files.");
                 Process.Start("explorer.exe", dialogExportAsCSV.SelectedPath);
             }
-            */
         }
     }
 }

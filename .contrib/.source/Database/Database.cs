@@ -106,6 +106,28 @@ namespace ATT
         #endregion
         #region Static Functionality
         /// <summary>
+        /// Export the database to a set of Comma-Separated Volume (CSV) files.
+        /// </summary>
+        /// <param name="directory">The directory to write to.</param>
+        public static void ExportToCSV(string directory)
+        {
+            var builder = new StringBuilder("Available Accounts");
+            foreach (var account in ClassicWoWAccounts)
+            {
+                var path = Path.Combine(directory, "Classic");
+                builder.AppendLine().Append("Classic").Append(',').Append(account.Key);
+                account.Value.ExportToCSV(path);
+            }
+            foreach (var account in RetailWoWAccounts)
+            {
+                var path = Path.Combine(directory, "Retail");
+                builder.AppendLine().Append("Retail").Append(',').Append(account.Key);
+                account.Value.ExportToCSV(path);
+            }
+            System.IO.File.WriteAllText(Path.Combine(directory, "Account Summary.csv"), builder.ToString());
+        }
+
+        /// <summary>
         /// Sync the database with the Saved Variables in the World of Warcraft Folder.
         /// </summary>
         /// <param name="root">The root folder of the installation.</param>
@@ -139,18 +161,25 @@ namespace ATT
             var attDataDirectory = Path.Combine(rootDirectory.FullName, "ATT");
             foreach (var accountDirectory in accountDirectories)
             {
+                var modified = false;
                 var accountName = accountDirectory.Name;
                 if (!accounts.TryGetValue(accountName, out WoWAccount account))
                 {
                     account = new WoWAccount(accountName);
                     accounts[accountName] = account;
                     account.Load(attDataDirectory);
+                    modified = true;
                 }
 
                 // Import the Account Data from the Saved Variables folder.
-                account.Import(SavedVariables.Parse(accountDirectory));
-                Trace.WriteLine(account.ToString());
-                account.Save(attDataDirectory);
+                var savedVariables = SavedVariables.Parse(accountDirectory);
+                if (savedVariables != null)
+                {
+                    account.Import(savedVariables);
+                    account.Save(attDataDirectory);
+                    modified = true;
+                }
+                if(modified) Trace.WriteLine(account.ToString());
             }
         }
 
