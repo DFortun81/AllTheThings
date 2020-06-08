@@ -7,7 +7,7 @@ _.Zones =
 		m(897, {	-- Death's of Chromie Scenario
 			["lvl"] = 110,
 			["achievementID"] = 11941,
-			["description"] = "The Chromie Scenario sends you through multiple timeways to defeat Chromie's attackers. As you gain reputation with Chromie by killing mobs in the scenario, you will unlock more powerful abilities for Chromie to help speed up your run. Unlike past solo scenarios like Withered Army Training, you do not need to worry about gearing up--your gear is scaled up to 1000 and your player level is increased as well to 112. You can also fly inside this scenario--unusual for instanced content.\n\nEach scenario attempt lasts 15 minutes and the ultimate goal is to defeat 8 timeways in one attempt. Progress can be sped up through obtaining items that grant extra time, buffs from Chromie, and items which auto-complete a timeway threat.",
+			["description"] = "The Chromie Scenario sends you through multiple timeways to defeat Chromie's attackers. As you gain reputation with Chromie by killing mobs in the scenario, you will unlock more powerful abilities for Chromie to help speed up your run. Unlike past solo scenarios like Withered Army Training, you do not need to worry about gearing up--your gear is scaled up to 1000 and your player level is increased as well to 112. You can also fly inside this scenario--unusual for instanced content.\n\nEach scenario attempt lasts 15 minutes and the ultimate goal is to defeat 8 timeways in one attempt. Progress can be speed up through obtaining items that grant extra time, buffs from Chromie, and items which auto-complete a timeway threat.",
 			["maps"] = { 115, 898, 899, 900, 901, 902 },	-- Dragonblight / Scenario
 			["g"] = {
 				n(124764, {	-- Azure Dragonshrine Area
@@ -30,6 +30,9 @@ _.Zones =
 				}),
 				n(124765, {	-- Emerald Dragonshrine Area
 					n(QUESTS, {
+						q(47643, {	-- The Ancients' Wisdom
+							["description"] = "Kill the |cFFFFD700Dream Tormentors|r around each ancient.",
+						}),
 						q(47559, {	-- Gleaming Chronoshard
 							["crs"] = { 122875 },	-- Thalas Vylethorn
 							["provider"] = { "i", 150945 },	-- Gleaming Chronoshard
@@ -53,6 +56,10 @@ _.Zones =
 				}),
 				n(124762, {	-- Obsidian Dragonshrine Area
 					n(QUESTS, {
+						q(47644, {	-- Demonic Corestone
+							["crs"] = { 122528 },	-- Charredbone Goliath
+							["provider"] = { "i", 150938 },	-- Demonic Corestone
+						}),
 						q(47558, {	-- Fel-Touched Chronoshard
 							["crs"] = { 122871 },	-- Zorathides
 							["provider"] = { "i", 150944 },	-- Fel-Touched Chronoshard
@@ -91,6 +98,10 @@ _.Zones =
 							i(150939),	-- Soul Crystal Fragment
 						},
 					}),
+				}),
+				n(122345, {	-- Battle for the Well of Eternity
+				}),
+				n(122340, {	-- The Burning of Mount Hyjal
 				}),
 				n(122344, {	-- The Culling of Stratholme
 					n(QUESTS, {
@@ -133,7 +144,12 @@ _.Zones =
 							["sourceQuest"] = 47744,	-- Smoke, Meat, and Pretty Flowers
 						}),
 					}),
-					n(VENDORS, {	
+					n(VENDORS, {
+						n(123781, {	-- Emery Neill <Barkeep>
+							["g"] = {
+								i(151285),	-- Keg of Booty Bay Rum
+							},
+						}),
 						n(123782, {	-- Fras Siabi
 							["g"] = {
 								i(151284),	-- Flinty Firestarter
@@ -163,6 +179,54 @@ _.Zones =
 						}),
 					}),
 				}),
+				n(122339, {	-- The War for Andorhal
+					n(QUESTS, {
+						q(47773, {	-- Sky Ablaze With Cannonfire
+							["coord"] = { 43.9, 69.2, 899 },
+							["races"] = HORDE_ONLY,
+							["provider"] = { "n", 124154 },	-- Chromie
+							["repeatable"] = true,
+							["sourceQuest"] = 47559,	-- Gleaming Chronoshard
+							["g"] = {
+								i(151493),	-- Sands of Time
+							},
+						}),
+						q(47772, {	-- Sky Ablaze With Cannonfire
+							["races"] = ALLIANCE_ONLY,
+							["provider"] = { "n", 124154 },	-- Chromie
+							["repeatable"] = true,
+							["sourceQuest"] = 47559,	-- Gleaming Chronoshard
+							["g"] = {
+								i(151493),	-- Sands of Time
+							},
+						}),
+					}),
+					n(124100, {	-- Apothecary Tillings
+						["g"] = {
+							i(151368),	-- Experimental Alchemy Reagent
+						},
+					}),
+					n(-90, {	-- Elite
+						["g"] = {
+							i(151370),	-- Military Explosives
+						},
+					}),
+					n(124095, {	-- Gatzin Zapwrench
+						["g"] = {
+							i(151369),	-- Lightning Absorption Capsule
+						},
+					}),
+					n(124094, {	-- Potionmaster Donovan
+						["g"] = {
+							i(151368),	-- Experimental Alchemy Reagent
+						},
+					}),
+					n(124101, {	-- Roobi Skizzelvolt
+						["g"] = {
+							i(151369),	-- Lightning Absorption Capsule
+						},
+					}),
+				}),
 				n(QUESTS, {
 					q(48021, {	-- Chromie
 						["maps"] = { 627 },	-- Dalaran (Legion)
@@ -188,10 +252,6 @@ _.Zones =
 							i(151493),	-- Sands of Time
 						},
 					}),
-					q(47644, {	-- Demonic Corestone
-						["crs"] = { 122528 },	-- Charredbone Goliath
-						["provider"] = { "i", 150938 },	-- Demonic Corestone
-					}),
 					q(47904, {	-- Preserve the True Future
 						["coord"] = { 60.0, 54.5, 115 },
 						["provider"] = { "n", 27856 },	-- Chromie
@@ -207,28 +267,6 @@ _.Zones =
 						["g"] = {
 							i(1166),	-- Timewarped Badge x50
 						},
-					}),
-					q(47773, {	-- Sky Ablaze With Cannonfire
-						["coord"] = { 43.9, 69.2, 899 },
-						["races"] = HORDE_ONLY,
-						["provider"] = { "n", 124154 },	-- Chromie
-						["repeatable"] = true,
-						["sourceQuest"] = 47559,	-- Gleaming Chronoshard
-						["g"] = {
-							i(151493),	-- Sands of Time
-						},
-					}),
-					q(47772, {	-- Sky Ablaze With Cannonfire
-						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 124154 },	-- Chromie
-						["repeatable"] = true,
-						["sourceQuest"] = 47559,	-- Gleaming Chronoshard
-						["g"] = {
-							i(151493),	-- Sands of Time
-						},
-					}),
-					q(47643, {	-- The Ancients' Wisdom
-						["description"] = "Kill the |cFFFFD700Dream Tormentors|r around each ancient.",
 					}),
 					q(47543, {	-- The Day That Chromie Dies
 						["coord"] = { 60.0, 54.5, 115 },
