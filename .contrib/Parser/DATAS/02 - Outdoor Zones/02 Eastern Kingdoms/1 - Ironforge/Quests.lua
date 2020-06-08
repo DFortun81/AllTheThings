@@ -14,7 +14,10 @@ _.Zones =
 					["lvl"] = 100,
 					["g"] = {
 						i(122339),	-- Ancient Heirloom Scabbard
-					},	
+					},
+					["cost"] = {
+						{ "i", 122618, 25 },	-- Misprinted Draenic Coin
+					},
 				}),
 				q(2964,  {	-- A Future Task
 					["provider"] = { "n", 2916 },	-- Historian Karnik
@@ -223,7 +226,10 @@ _.Zones =
 					["lvl"] = 100,
 					["g"] = {
 						i(122340),	-- Timeworn Heirloom Armor Casing
-					},	
+					},
+					["cost"] = {
+						{ "i", 122618, 10 },	-- Misprinted Draenic Coin
+					},
 				}),
 				q(27272, {	-- Demisette Sends Word
 					["provider"] = { "n", 5173 },	-- Alexander Calder
@@ -546,7 +552,10 @@ _.Zones =
 					["lvl"] = 100,
 					["g"] = {
 						i(122338),	-- Ancient Heirloom Armor Casing
-					},	
+					},
+					["cost"] = {
+						{ "i", 122618, 5 },	-- Misprinted Draenic Coin
+					},
 				}),
 				q(725,   {	-- Passing Word of a Threat
 					["provider"] = { "n", 2916 },	-- Historian Karnik
@@ -774,7 +783,10 @@ _.Zones =
 					["lvl"] = 100,
 					["g"] = {
 						i(122341),	-- Timeworn Heirloom Scabbard
-					},	
+					},
+					["cost"] = {
+						{ "i", 122618, 50 },	-- Misprinted Draenic Coin
+					},
 				}),
 				q(3701,  {	-- The Smoldering Ruins of Thaurissan
 					["provider"] = { "n", 8879 },	-- Royal Historian Archersonus
