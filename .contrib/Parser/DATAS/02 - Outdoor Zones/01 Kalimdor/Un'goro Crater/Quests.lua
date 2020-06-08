@@ -376,6 +376,7 @@ _.Zones =
 					["sourceQuest"] = 4145,	-- Larion and Muigin
 				}),
 				q(24693, {	-- Mossy Pile
+					["description"] = "After completing this quest you won't be able to pick up |cFFFFD700Speak With Spraggle|r breadcrumb.",
 					["provider"] = { "n", 10977 },	-- Quixxil
 					["coord"] = { 54.8, 63.8, 78 },
 					["sourceQuest"] = 24691,	-- Peculiar Delicacies
@@ -466,6 +467,7 @@ _.Zones =
 					},
 				}),
 				q(24794, {	-- Speak With Spraggle
+					["description"] = "This quest won't be available if you complete |cFFFFD700Mossy Pile|r first.",
 					["provider"] = { "n", 10302 },	-- Krakle
 					["coord"] = { 55.3, 62.4, 78 },
 					["sourceQuest"] = 24742,	-- Finding the Source

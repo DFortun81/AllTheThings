@@ -14,6 +14,9 @@ _.Zones =
 								["provider"] = { "n", 87393 },	-- Sallee Silverclamp
 								["coord"] = { 50.4, 41.3, 550 },
 								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 118100, 1 },	-- Highmaul Relic
+								},
 							}),
 							q(37210, {	-- Aogexon's Fang
 								["provider"] = { "n", 87706 },	-- Gazmolf Futzwangler
@@ -39,6 +42,9 @@ _.Zones =
 								["provider"] = { "n", 87393 },	-- Sallee Silverclamp
 								["coord"] = { 50.4, 41.3, 550 },
 								["repeatable"] = true,
+								["cost"] = {
+									{ "i", 118099, 20 },	-- Gorian Artifact Fragment
+								},
 							}),
 							q(37223, {	-- Gagrog's Skull
 								["provider"] = { "n", 87706 },	-- Gazmolf Futzwangler
