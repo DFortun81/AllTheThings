@@ -1535,7 +1535,6 @@ app.L = {
 		[-3311] = BATTLEGROUND_HOLIDAY,		-- Call To Arms [LFD Queue]
 		[-3312] = "Turbulent Set",
 		[-3313] = "Grandiose Set",
-
 -- Island Expedition Sets
 		[-3315] = "Spider Acolyte",
 		[-3316] = "Hydraxian",
@@ -1572,7 +1571,7 @@ app.L = {
 		[-3338] = ISLANDS_HEADER,													-- Island Expeditions
 		[-3339] = LOOT_JOURNAL_ITEM_SETS,											-- Item Sets
 		[-3347] = "Black Tooth Grunt",
--- Additional Mail WQ Gear
+-- Chromie Scenario
 
 -- PvP Sets
 	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
@@ -1750,11 +1749,11 @@ app.L = {
 		[-10030] = select(1,GetCategoryInfo(15247)),	-- Toy Box
 		[-10031] = select(1,GetCategoryInfo(15248)),	-- Mounts
 		[-10032] = select(1,GetCategoryInfo(15259)),	-- Appearances
-		[-10033] = select(1,GetCategoryInfo(15256)),	-- Artifacts
-		[-10034] = select(1,GetCategoryInfo(15276)),	-- Missions
-		[-10035] = select(1,GetCategoryInfo(15238)),	-- Buildings
-		[-10036] = select(1,GetCategoryInfo(15239)),	-- Followers
-		[-10037] = select(1,GetCategoryInfo(15249)),	-- Invasions
+--		[-10033] = select(1,GetCategoryInfo(15256)),	-- Artifacts
+--		[-10034] = select(1,GetCategoryInfo(15276)),	-- Missions
+--		[-10035] = select(1,GetCategoryInfo(15238)),	-- Buildings
+--		[-10036] = select(1,GetCategoryInfo(15239)),	-- Followers
+--		[-10037] = select(1,GetCategoryInfo(15249)),	-- Invasions
 		[-10038] = select(1,GetCategoryInfo(15240)),	-- Missions
 		[-10039] = select(1,GetCategoryInfo(15242)),	-- Monuments
 		[-10040] = select(1,GetCategoryInfo(15250)),	-- Shipyard

@@ -3615,6 +3615,7 @@ _.NeverImplemented =
 			un(1, i(108791)),	-- Unknown
 			un(1, i(108792)),	-- Unknown
 			un(1, i(108793)),	-- Unknown
+			un(1, i(163930)),	-- Kovorks rattle
 			un(1, i(109279)),	-- Unknown
 			un(1, i(109383)),	-- Unknown
 			un(1, i(109404)),	-- Unknown
