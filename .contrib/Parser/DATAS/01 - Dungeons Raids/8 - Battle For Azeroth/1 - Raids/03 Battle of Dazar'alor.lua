@@ -76,7 +76,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 									144692,	-- Anathos Firecaller (A)
 									144691,	-- Ma'ra Grimfang (A)
 									144693,	-- Manceroy Flamefist (H)
-									148270,	-- Mestrah <The Illuminated> (H)
+									144690,	-- Mestrah <The Illuminated> (H)
 								},
 								["g"] = {
 									crit(3, {	-- Jadefire Masters (A)
@@ -376,7 +376,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							144692,	-- Anathos Firecaller (A)
 							144691,	-- Ma'ra Grimfang (A)
 							144693,	-- Manceroy Flamefist (H)
-							148270,	-- Mestrah <The Illuminated> (H)
+							144690,	-- Mestrah <The Illuminated> (H)
 						},
 						["g"] = {
 							crit(3, {	-- Jadefire Masters (A)
@@ -672,7 +672,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							144692,	-- Anathos Firecaller (A)
 							144691,	-- Ma'ra Grimfang (A)
 							144693,	-- Manceroy Flamefist (H)
-							148270,	-- Mestrah <The Illuminated> (H)
+							144690,	-- Mestrah <The Illuminated> (H)
 						},
 						["g"] = {
 							crit(3, {	-- Jadefire Masters (A)
@@ -970,7 +970,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							144692,	-- Anathos Firecaller (A)
 							144691,	-- Ma'ra Grimfang (A)
 							144693,	-- Manceroy Flamefist (H)
-							148270,	-- Mestrah <The Illuminated> (H)
+							144690,	-- Mestrah <The Illuminated> (H)
 						},
 						["g"] = {
 							crit(3, {	-- Jadefire Masters (A)

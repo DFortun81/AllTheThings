@@ -1463,10 +1463,12 @@ _.NeverImplemented =
 		q(45322),	-- Tichondrius
 		q(45323),	-- Krosus
 		q(46330),	-- Krosus (Heroic)
+		q(46331),	-- Krosus (Mythic)
 		q(45324),	-- High Botanist Tel'arn
 		q(45325),	-- Star Augur Etraeus
 		q(46328),	-- Triggers when the port to Elisande is activated
 		q(45326),	-- Elisande
+		q(45327),	-- Gul'dan (Mythic)
 	
 	-- Tomb of Sargeras
 		q(48643),	-- Goroth
@@ -1560,6 +1562,8 @@ _.NeverImplemented =
 		q(54771),	-- triggered when turning in #53701, "A Drust Cause," drustvar assault.  had WM on but i'm not sure if that's relevant
 		q(54782),	-- triggered when turning in #53711, "A Sound Defense," tiragarde sound assault.  had WM on but i'm not sure if that's relevant
 		q(54779),	-- triggered when turning in #54138, "Ritual Rampage," zuldazar assault.  had WM on but i'm not sure if that's relevant
+		q(54323),	-- triggered when turning in #53883, "Shores of Zuldazar," zuldazar assault.  had WM on
+		q(54780),	-- triggered when turning in #53883, "Shores of Zuldazar," zuldazar assault.  had WM on
 		q(57593),	-- triggered when talking to chromie in CoT during the 2019 anniversary event, before turning in #57249, "A Timely Invitation"
 		q(54035),	-- Blessing of the Night Warden unlock chain started
 		q(53956),	-- Triggered when turning in "We Are Coming" as alliance. Probably related to darkshore warfront unlock?
@@ -1570,6 +1574,7 @@ _.NeverImplemented =
 		q(58881),	-- triggered when i fed the uldum friendly alpaca for the last time (not with the quest that gives the mount afterward, but the final feed)
 		q(59072),	-- speaking to Tasha Riley and joining the Council of Chaos in the BRD pet battle dungeon
 		q(47866),	-- triggered after step 8 of Lucid Nightmare secret
+		q(57032),	-- triggered the first time i completed a +4 mythic and looted Converging Lens of the Focusing Iris (Rank 1)
 
 		q(54704),	-- War Campaign - triggered when turning in "Time for War"
 		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track
@@ -2018,6 +2023,7 @@ _.NeverImplemented =
 		q(50166),	-- Tiragarde Sound repeatable random chest
 		q(50952),	-- Tiragarde Sound repeatable random chest
 		q(53630),	-- Tiragarde Sound repeatable random chest (possibly different from others, it was Forgotten Treasure Chest at 79.57 20.22 in a small cave)
+		q(48594),	-- Tiragarde Sound Tol Dagor chest
 
 	-- Vol'dun
 		q(47647),	-- Monsters of Zem'lan - bonus quest
@@ -2096,6 +2102,7 @@ _.NeverImplemented =
 		q(51363),	-- Weekly m+ chest looted (Horde, probably alliance too?)
 		
 	-- Nazjatar
+		q(56659),	-- not sure precisely what triggered this -- selected Neri as my daily follower, refreshed, walked outside, picked up "Down into Nazjatar," and this popped
 		q(57167),	-- Killed Vyz'olgo the Mind-Taker. Probably related to a daily loot flag from the lieutenants
 		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance
 		q(56505),	-- Triggered when walking through the Alliance crash site as horde. Bodyguard dialog fires
@@ -2514,6 +2521,11 @@ _.NeverImplemented =
 			q(58527),	-- Replicating Void Droplets (Rank 1 Formless Void)
 			q(58528),	-- Burgeoning Void Droplet (Rank 2 Formless Void)
 			q(58529),	-- Volatile Void Droplet (Rank 3 Formless Void). Renders the texts unusable.
+			
+		-- Warfronts
+			q(53206),	-- Alliance Arathi Warfront unlock
+			q(53220),	-- Horde Arathi Warfront unlock
+			q(54410),	-- Horde Darkshore Warfront unlock
 		
 		-- World Bosses
 			q(58510),	-- Vuk'laz the Earthbreaker first kill??

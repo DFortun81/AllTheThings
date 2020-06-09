@@ -14,11 +14,6 @@ _.ExpansionFeatures =
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["altQuests"] = { 53206 },	-- Battle for Stromgarde unlock flag (A)
-					["g"] = {
-						n(-234, {	-- Warfront: The Battle for Stromgarde
-							q(53206),	-- Unlock
-						}),
-					},
 				}),
 				q(53212, {	-- Back to Zuldazar
 					["provider"] = { "n", 143019 },	-- Wistel Sliversnitch
@@ -28,11 +23,6 @@ _.ExpansionFeatures =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["altQuests"] = { 53220 },	-- Battle for Stromgarde unlock flag (H)
-					["g"] = {
-						n(-233, {	-- Warfront: The Battle for Stromgarde
-							q(53220),	-- Unlock
-						}),
-					},
 				}),
 				q(53153, { 	-- Death to the Defilers
 					["u"] = 2,
@@ -71,7 +61,7 @@ _.ExpansionFeatures =
 				q(53210, {	-- Touring the Front (H)
 					["provider"] = { "n", 143019 },	-- Wistel Sliversnitch
 					["races"] = HORDE_ONLY,
-					["coord"] = { 26.11, 35.59, 14 },
+					["coord"] = { 26.1, 35.5, 14 },
 					["altQuests"] = { 53220 },	-- Battle for Stromgarde unlock flag (H)
 					["sourceQuest"] = 53208,	-- To The Front
 					["lvl"] = 120,

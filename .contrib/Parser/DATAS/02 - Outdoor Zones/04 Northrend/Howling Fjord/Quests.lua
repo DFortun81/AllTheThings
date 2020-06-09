@@ -276,12 +276,17 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(13268, {	-- Cloth Scavenging (A)
+					["altQuests"] = {
+						13265,	-- Cloth Scavenging (A, Borean Tundra)
+						13272,	-- Cloth Scavenging (Neutral)
+					},
 					["coord"] = { 58.6, 62.6, 117 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26914 },	-- Benjamin Clegg
 					["requireSkill"] = TAILORING,
 				}),
 				q(13269, {	-- Cloth Scavenging (H)
+					["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable
 					["coord"] = { 79.4, 30.8, 117 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26964 },	-- Alexandra McQueen

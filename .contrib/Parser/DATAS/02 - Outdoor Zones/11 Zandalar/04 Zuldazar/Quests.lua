@@ -233,8 +233,8 @@ _.Zones =
 						}),
 						q(53053, {	-- To The Mugambala!
 							["provider"] = { "n", 138708 },	-- Garona Halforcen
-							["coord"] = { 58.4, 62.6, 862 },
-							["description"] = "You have to enable Warmode to get this quest.",
+							["coord"] = { 58.4, 62.6, 1165 },
+							["description"] = "You have to enable War Mode to get this quest.",
 							["races"] = HORDE_ONLY,
 							["lvl"] = 110,
 						}),
@@ -850,6 +850,13 @@ _.Zones =
 					["coord"] = { 42.7, 37.7, 862 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(50798, {	-- Out on a Limb
+					["sourceQuests"] = { 52305 },	-- Nature Versus Nurture
+					["provider"] = { "n", 135308 },	-- Wingminder Goja
+					["isDaily"] = true,
+					["coord"] = { 70.7, 50.8, 862 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(47734, {	-- Partners in Heresy
 					["sourceQuests"] = {
 						47736,	-- Heads Will Roll
@@ -1418,11 +1425,6 @@ _.Zones =
 						i(161142),	-- Zanchuli Crest
 						i(155258),	-- Zanchuli Raiment
 					},
-				}),
-				q(53437, {	-- The MOTHERLODE!!: Raw Deal
-					["coord"] = { 58.4, 62.6, 862 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 136683 },	-- Trade Prince Gallywix
 				}),
 				q(49276, {	-- The Thrill of Exploration
 					["coord"] = { 41.2, 71.4, 862 },

@@ -412,16 +412,22 @@ _.Zones =
 					["coord"] = { 69.5, 47.5, 1164 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(57376, {	-- The Hidden Need
+					["coord"] = { 51.5, 99.4, 1165 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 141961 },	-- Lilian Voss
+				}),
 				q(51518, {	-- The Lost Spirit
 					["provider"] = { "n", 140907 },	-- Bwonsamdi
 					["coord"] = { 45.0, 19.8, 1165 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 51517 },	-- You Owe Me a Spirit
 				}),
-				q(57376, {	-- The Hidden Need
-					["coord"] = { 51.5, 99.4, 1165 },
+				
+				q(53437, {	-- The MOTHERLODE!!: Raw Deal
+					["provider"] = { "n", 136683 },	-- Trade Prince Gallywix
+					["coord"] = { 58.4, 62.6, 1165 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 141961 },	-- Lilian Voss
 				}),
 				q(50835, {	-- The Port of Zandalar
 					["sourceQuests"] = { 47514 },	-- Zuldazar
@@ -452,6 +458,7 @@ _.Zones =
 				--	might be a breadcrumb?
 					["sourceQuests"] = { 52451 },	-- Uniting Zandalar
 					["description"] = "Automatically granted upon hitting 120 and completing Uniting Zandalar to unlock World Quests.  If it doesn't pop up, relog.  I had to relog twice to receive this quest.",
+					["races"] = HORDE_ONLY,
 				}),
 				q(49965, {	-- The Warpack
 					["sourceQuests"] = {
@@ -489,6 +496,19 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 120168 },	-- Chronicler To'kini
 				}),
+				q(53208, {	-- To the Front
+					["sourceQuests"] = { 53207 },	-- The Warfront Looms
+					["provider"] = { "n", 138949 },	-- Throk
+					["coord"] = { 52.9, 94.4, 1165 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
+				q(54042, {	-- Trouble in Darkshore
+					["provider"] = { "n", 149471 },	-- Dark Ranger Velonara
+					["coord"] = { 53.0, 94.3, 1165 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(49615, {	-- Trust of a King
 					["sourceQuests"] = { 47514 },	-- Zuldazar
 					["coord"] = { 40.1, 69.4, 1164 },
@@ -513,6 +533,12 @@ _.Zones =
 					["coord"] = { 39.4, 13.8, 1165 },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1164 },	-- Dazar'alor
+				}),
+				q(53209, {	-- Warfront Contribution
+					["provider"] = { "n", 138949 },	-- Throk
+					["coord"] = { 53.0, 94.3, 1165 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
 				}),
 				q(46957, {	-- Welcome to Zuldazar
 					["provider"] = { "n", 132332 },	-- Princess Talanji

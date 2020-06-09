@@ -66,7 +66,8 @@ _.Zones =
 						recipe(66659),	-- Transmute: Cardinal Ruby
 					},
 				}),
-				q(13272, {	-- Cloth Scavenging
+				q(13272, {	-- Cloth Scavenging (Neutral)
+					["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable.
 					["coord"] = { 36.1, 33.5, 125 },
 					["provider"] = { "n", 28699 },	-- Charles Worth
 					["requireSkill"] = TAILORING,
