@@ -28,10 +28,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(53950, {	-- Explosive Relief
-						["isWorldQuest"] = true,
-						["lvl"] = 110,
-					}),
 					q(52119, {	-- Goblin Azerite Extraction
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -46,10 +42,6 @@ _.Zones =
 					}),
 					q(47894, {	-- Jump Around
 						["races"] = ALLIANCE_ONLY,
-					}),
-					q(52805, {	-- Like Pulling Teeth
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
 					}),
 					q(49661, {	-- Locally Sourced Eggs
 						["races"] = ALLIANCE_ONLY,
@@ -324,10 +316,15 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(53951, {	-- Explosive Relief (Faction Assault WQ)
+					q(53951, {	-- Explosive Relief (A, Faction Assault WQ)
 						["lvl"] = 110,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(53950, {	-- Explosive Relief (H, Faction Assault WQ)
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
 					}),
 					q(51284, {	-- Falcon Hunt
 						["isWorldQuest"] = true,
@@ -445,10 +442,15 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(50295, {	-- Like Pulling Teeth
+					q(50295, {	-- Like Pulling Teeth (A)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(52805, {	-- Like Pulling Teeth (H)
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(53759, {	-- Look Out Below! (Faction Assault WQ)
 						["lvl"] = 110,

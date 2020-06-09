@@ -96,10 +96,6 @@ _.Zones =
 					q(50206, {	-- Strike Back
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(51765, {	-- Tangled Webs
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(48808, {	-- Thesis Statement
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -641,10 +637,15 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
-					q(51672, {	-- Tangled Webs
+					q(51672, {	-- Tangled Webs (A)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(51765, {	-- Tangled Webs (H)
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(54187, {	-- Tea for Two
 						["lvl"] = 120,

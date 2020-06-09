@@ -275,6 +275,13 @@ _.Zones =
 						i(158432),	-- Zanchuli Trousers
 					},
 				}),
+				q(55250, {	-- A Growing Appetite
+					["sourceQuests"] = { 55248 },	-- Greener Pastures
+					["races"] = HORDE_ONLY,
+					["provider"] = { "n", 151286 },		-- Child of Torcali
+					["isDaily"] = true,
+					["coord"] = { 68.2, 41.8, 862 },
+				}),
 				q(55252, {	-- A Loa Without a Temple
 					["sourceQuests"] = { 55254 },	-- An Unending Sleep
 					["provider"] = { "n", 121706 },	-- Beastlord L'kala
@@ -851,7 +858,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(50798, {	-- Out on a Limb
-					["sourceQuests"] = { 52305 },	-- Nature Versus Nurture
+					["sourceQuests"] = { 50402 },	-- SKREEEEE! (#1, prior to Nature Versus Nurture, during which this quest is available)
 					["provider"] = { "n", 135308 },	-- Wingminder Goja
 					["isDaily"] = true,
 					["coord"] = { 70.7, 50.8, 862 },
@@ -1008,10 +1015,17 @@ _.Zones =
 					["coord"] = { 64.0, 35.4, 862 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(50402, {	-- SKREEEEE!
+				q(50402, {	-- SKREEEEE! (#1)
 					["sourceQuests"] = { 50394 },	-- Your Problem Now
 					["provider"] = { "n", 133678 },	-- Kua'fon
 					["coord"] = { 70.8, 50.9 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(50796, {	-- SKREEEEE! (#2)
+					["sourceQuests"] = { 50798 },	-- Out on a Limb
+					["provider"] = { "n", 135279 },	-- Kua'fon
+					["isDaily"] = true,
+					["coord"] = { 70.7, 50.8, 862 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49680, {	-- Skycaller Soltok
@@ -1478,12 +1492,6 @@ _.Zones =
 				
 				
 				--	unsorted
-				q(55250, {	-- A Growing Appetite
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 151286 },		-- Child of Torcali
-					["isDaily"] = true,
-					["coord"] = { 68.2, 41.8, 862 },
-				}),
 				q(50954, {	-- Zandalar Forever!
 					["coord"] = { 60.0, 22.2, 862 },
 					["races"] = HORDE_ONLY,

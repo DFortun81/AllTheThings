@@ -95,6 +95,18 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126148 },	-- Witch Doctor Jala
 				}),
+				q(54494, {	-- Expanding Our Influence
+					["sourceQuests"] = {	-- while the SQs are part of the war campaign, the pursuit of upgrades/additional outposts is not, so i'm leaving this here
+						51985,	-- Return to Zuldazar (Drustvar foothold)
+						51986,	-- Return to Zuldazar (Stormsong Valley foothold)
+						51984,	-- Return to Zuldazar (Tiragarde Sound foothold)
+					},
+					["isBreadcrumb"] = true,	-- can't pick up/complete if you independently pursued upgrades
+					["provider"] = { "n", 135447 },	-- Ransa Greyfeather
+					["coord"] = { 58.0, 62.6, 862 },	-- technically Zuldazar, but on the Dazar'alor docks, so it makes more sense to be here
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(47423, {	-- Forbidden Practices
 					["sourceQuests"] = { 47445 },	-- The Zanchuli Council
 					["coord"] = { 45.0, 23.9, 1165 },
@@ -147,7 +159,7 @@ _.Zones =
 				q(51555, {	-- Keep Them On Task
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {	-- 'zanchuli disbanded' and 'king or prey' are breadcrumbs if you don't pick up the quest asap, it unlocked earlier
-						47509,	-- Terrace of the Chosen (may actually show up as late as "Mistress of Lies," which is when i noticed it.  but baine provided "Terrace" and after i did it this was available when i next went to town after "Mistress"
+						47509,	-- Terrace of the Chosen (may actually show up as late as "Mistress of Lies," which is when i noticed it.  but baine gave "Terrace" and after i did it this was available when i next went to town after "Mistress"
 						50433,	-- Zanchuli Disbanded
 						51111,	-- King or Prey
 					},

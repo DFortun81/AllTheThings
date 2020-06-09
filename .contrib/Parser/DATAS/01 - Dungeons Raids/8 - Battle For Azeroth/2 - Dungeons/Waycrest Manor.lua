@@ -30,7 +30,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			n(QUESTS, {
 				q(50990, {	-- Cutting Edge Poultry Science
-					["description"] = "This quest pops up when killing mobs in the kitchen.  It is unknown for certain if the World Quest \"Witchy Kitchen\"  is required.",
+					["description"] = "This quest pops up when killing mobs in the kitchen.  It is unknown for certain if the World Quest \"Witchy Kitchen\" is required.",
 					["g"] = {
 						i(160940),	-- Intact Chicken Brain
 					},
@@ -221,21 +221,24 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["lvl"] = 120,
 				["g"] = {
 					ach(12489, {	-- Losing My Profession
-						crit(1, {	-- Governess Tabitha
-							["creatureID"] = 131595,	-- Governess Tabitha
-						}),
-						crit(2, {	-- Head Vintner Justin
-							["creatureID"] = 131615,	-- Head Vintner Justin
-						}),
-						crit(3, {	-- Groundskeeper Lilith
-							["creatureID"] = 131617,	-- Groundskeeper Lilith
-						}),
-						crit(4, {	-- Seamstress Johanna
-							["creatureID"] = 131619,	-- Seamstress Johanna
-						}),
-						crit(5, {	-- Huntmaster Grath
-							["creatureID"] = 131853,	-- Huntmaster Grath
-						}),
+						["collectible"] = false,
+						["g"] = {
+							crit(1, {	-- Governess Tabitha
+								["creatureID"] = 131595,	-- Governess Tabitha
+							}),
+							crit(2, {	-- Head Vintner Justin
+								["creatureID"] = 131615,	-- Head Vintner Justin
+							}),
+							crit(3, {	-- Groundskeeper Lilith
+								["creatureID"] = 131617,	-- Groundskeeper Lilith
+							}),
+							crit(4, {	-- Seamstress Johanna
+								["creatureID"] = 131619,	-- Seamstress Johanna
+							}),
+							crit(5, {	-- Huntmaster Grath
+								["creatureID"] = 131853,	-- Huntmaster Grath
+							}),
+						},
 					}),
 					e(2125, {	-- Heartsbane Triad
 						["crs"] = {
@@ -256,9 +259,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2126, {	-- Soulbound Goliath
-						["crs"] = {
-							131667,	-- Soulbound Goliath
-						},
+						["crs"] = { 131667 },	-- Soulbound Goliath
 						["g"] = {
 							ach(12495),	-- Run Wild Like a Man On Fire
 							i(159659),	-- Sinister Wicker Talons

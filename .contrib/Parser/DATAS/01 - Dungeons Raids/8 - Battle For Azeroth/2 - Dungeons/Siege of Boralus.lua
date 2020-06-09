@@ -3,10 +3,12 @@
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	inst(1023, {	-- Freehold
-		["lvl"] = 120,
-		["maps"] = {
-			1162,	-- Siege of Boralus
+		["coords"] = {
+			{ 70.5, 35.3, 1161 },	-- Alliance, Boralus
+			{ 88.2, 50.9, 895 },	-- Horde, Tiragarde Sound
 		},
+		["maps"] = { 1162 },	-- Siege of Boralus
+		["lvl"] = 120,
 		["g"] = {
 			n(-34, {	-- World Quests
 				q(52761, {	-- Siege of Boralus: Blood Money
@@ -100,17 +102,17 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			d(23, {	-- Mythic
 				ach(12489, {	-- Losing My Profession
-					{
-						["criteriaID"] = 7,	-- Brutik Blackanvil
-						["creatureID"] = 141800,	-- Brutik Blackanvil
-					},
-					{
-						["criteriaID"] = 8,	-- Liz Vilepot
-						["creatureID"] = 141792,	-- Liz Vilepot
-					},
-					{
-						["criteriaID"] = 6,	-- Threshanator 3000
-						["creatureID"] = 141805,	-- Threshanator 3000
+					["collectible"] = false,
+					["g"] = {
+						crit(6, {	-- Threshanator 3000
+							["cr"] = 141805,	-- Threshanator 3000
+						}),
+						crit(7, {	-- Brutik Blackanvil
+							["cr"] = 141800,	-- Brutik Blackanvil
+						}),
+						crit(8, {	-- Liz Vilepot
+							["cr"] = 141792,	-- Liz Vilepot
+						}),
 					},
 				}),
 				e(2132, {	-- Chopper Redhook [1st Encounter - Alliance]
