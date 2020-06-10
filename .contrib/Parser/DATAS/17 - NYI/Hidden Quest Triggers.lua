@@ -1259,7 +1259,7 @@ _.NeverImplemented =
 		q(44506),	-- Levantus killID
 		q(44901),	-- Levantus bonus roll
 		q(47086),	-- Malificus killID
-	--	q(),	-- Malificus bonus roll
+		q(47089),	-- Malificus bonus roll
 		q(44507),	-- Nazak the Fiend killID
 		q(44902),	-- Nazak the Fiend bonus roll
 		q(44508),	-- Nithogg killID

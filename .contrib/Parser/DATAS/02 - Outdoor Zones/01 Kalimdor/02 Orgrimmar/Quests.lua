@@ -555,6 +555,7 @@ _.Zones =
 										["sourceQuest"] = 53898,	-- Strength and Honor
 									}),
 									q(53899, {	-- On the Outskirts
+										["races"] = HORDE_ONLY,
 										["lvl"] = 120,
 										["coord"] = { 49.0, 73.6, 85 },
 										["provider"] = { "n", 145416 },	-- Kiro

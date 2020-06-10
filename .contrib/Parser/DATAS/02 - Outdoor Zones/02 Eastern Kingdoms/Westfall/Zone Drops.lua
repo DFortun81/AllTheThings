@@ -80,6 +80,13 @@ _.Zones =
 						un(7, i(1189)),	-- Overseer's Ring
 					},
 				}),
+				i(4676, {	-- Skeletal Gauntlets (note: confirmed in 8.3 that they drop here too, not only in Stockades)
+					["crs"] = {
+						623,	-- Skeletal Miner
+						625,	-- Undead Dynamiter
+						624,	-- Undead Excavator
+					},
+				}),
 				i(2017, {	-- Glowing Leather Bracers
 					["u"] = 7,
 					["crs"] = { 785 },	-- Skeletal Warder
