@@ -253,6 +253,13 @@ _.Zones =
 					["coord"] = { 40.0, 76.5, 862 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(55251, {	-- A Daughter of Torcali
+					["sourceQuests"] = { 55250 },	-- A Growing Appetite
+					["provider"] = { "n", 151319 },	-- Li'zal
+					["isDaily"] = true,
+					["coord"] = { 68.1, 41.7, 862 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(50331, {	-- A Different Outcome
 					["sourceQuests"] = { 51407 },	-- Find Their Words
 					["isBreadcrumb"] = true,
@@ -281,6 +288,7 @@ _.Zones =
 					["provider"] = { "n", 151286 },		-- Child of Torcali
 					["isDaily"] = true,
 					["coord"] = { 68.2, 41.8, 862 },
+					["lvl"] = 120,
 				}),
 				q(55252, {	-- A Loa Without a Temple
 					["sourceQuests"] = { 55254 },	-- An Unending Sleep
@@ -298,6 +306,14 @@ _.Zones =
 					["provider"] = { "n", 131580 },	-- Apprentice Telemancer Astrandis
 					["coord"] = { 43.9, 72.1, 862 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(50801, {	-- A Nose for Trouble
+					["sourceQuests"] = { 50402 },	-- SKREEEE! (#1)
+					["provider"] = { "n", 135308 },	-- Wingminder Goja
+					["isDaily"] = true,
+					["coord"] = { 70.8, 50.9, 863 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
 				}),
 				q(55253, {	-- A Show of Faith
 					["sourceQuests"] = { 55252 },	-- A Loa Without a Temple
@@ -573,6 +589,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 68.1, 41.7, 862 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
 				}),
 				q(47418, {	-- Growing Pains
 					["sourceQuests"] = {
@@ -818,6 +835,7 @@ _.Zones =
 					["provider"] = { "n", 135308 },	-- Wingminder Goja
 					["coord"] = { 70.8, 50.9, 863 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
 				}),
 				q(49489, {	-- Needs a Little Body
 					["sourceQuests"] = { 49488 },	-- Tal'gurub
@@ -863,6 +881,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 70.7, 50.8, 862 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
 				}),
 				q(47734, {	-- Partners in Heresy
 					["sourceQuests"] = {
@@ -1020,6 +1039,7 @@ _.Zones =
 					["provider"] = { "n", 133678 },	-- Kua'fon
 					["coord"] = { 70.8, 50.9 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
 				}),
 				q(50796, {	-- SKREEEEE! (#2)
 					["sourceQuests"] = { 50798 },	-- Out on a Limb
@@ -1027,6 +1047,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 70.7, 50.8, 862 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
 				}),
 				q(49680, {	-- Skycaller Soltok
 					["sourceQuests"] = { 49940 },	-- Sandscar Breach (breadcrumb)
@@ -1318,6 +1339,7 @@ _.Zones =
 					["provider"] = { "n", 127377 },	-- Pa'ku
 					["coord"] = { 71.4, 49.2 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
 				}),
 				q(49493, {	-- Zul's Ethical Dilemma
 					["sourceQuests"] = { 49492 },	-- Arrogance of Vol'jamba
@@ -1641,13 +1663,6 @@ _.Zones =
 					["coord"] = { 45.5, 35.8 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 52114 },	-- Honoring a True Leader
-				}),
-				q(55251, {	-- A Daughter of Torcali
-					["provider"] = { "n", 151319 },	-- Li'zal
-					["coord"] = { 68.1, 41.7, 862 },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["sourceQuests"] = { 55253 },	-- A Show of Faith
 				}),
 				q(54756, {	-- Garbage for the Garbage God
 					["races"] = HORDE_ONLY,

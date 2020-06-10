@@ -3,11 +3,13 @@
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	inst(1012, {	-- The MOTHERLODE!!
-		["lvl"] = 110,
-		["maps"] = {
-			1010,	-- The Motherlode
+		["coords"] = {
+			{ 39.2, 71.5, 862 },	-- Alliance, Zuldazar
+			{ 44.3, 92.6, 1165 },	-- Horde, Dazar'alor
 		},
-		["groups"] = {
+		["maps"] = { 1010 },	-- The Motherlode
+		["lvl"] = 110,
+		["g"] = {
 			n(-34, {	-- World Quests
 				q(52295, {	-- The MOTHERLODE!!: Elementals on the Payroll
 					["lvl"] = 120,
@@ -33,10 +35,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			d(1, {	-- Normal
 				e(2109, {	-- Coin-Operated Crowd Pummeler
-					["crs"] = {
-						129214,	-- Coin-Operated Crowd Pummeler
-					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["crs"] = { 129214 },	-- Coin-Operated Crowd Pummeler
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159638),	-- Electro-Arm Bludgeoner
 						i(159663),	-- G0-4W4Y Crowd Repeller
 						i(158353),	-- Servo-Arm Bindings
@@ -48,10 +48,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 				e(2114, {	-- Azerokk
-					["crs"] = {
-						129227,	-- Azerokk
-					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["crs"] = { 129227 },	-- Azerokk
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(158357),	-- Bindings of Enraged Earth
 						i(158359),	-- Stonefury Vambraces
 						i(159231),	-- Mine Rat's Handwarmers
@@ -66,10 +64,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 				e(2115, {	-- Rixxa Fluxflame
-					["crs"] = {
-						129231,	-- Rixxa Fluxflame
-					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["crs"] = { 129231 },	-- Rixxa Fluxflame
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159639),	-- P.A.C.I.F.I.S.T.  Mk7
 						i(159287),	-- Cloak of Questionable Intent
 						i(159240),	-- Rixxa's Sweat-Wicking Cuffs
@@ -84,7 +80,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						129232,	-- Mogul Razdunk
 						132713,	-- Mogul Razdunk
 					},
-					["groups"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						ach(12844),  -- The MOTHERLODE!!
 						i(159641),	-- G3T-00t
 						i(158364),	-- High Altitude Turban
@@ -101,12 +97,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			d(2, {	-- Heroic
 				["lvl"] = 120,
-				["groups"] = {
+				["g"] = {
 					e(2109, {	-- Coin-Operated Crowd Pummeler
-						["crs"] = {
-							129214,	-- Coin-Operated Crowd Pummeler
-						},
-						["groups"] = {
+						["crs"] = { 129214 },	-- Coin-Operated Crowd Pummeler
+						["g"] = {
 							i(159638),	-- Electro-Arm Bludgeoner
 							i(159663),	-- G0-4W4Y Crowd Repeller
 							i(158353),	-- Servo-Arm Bindings
@@ -118,10 +112,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2114, {	-- Azerokk
-						["crs"] = {
-							129227,	-- Azerokk
-						},
-						["groups"] = {
+						["crs"] = { 129227 },	-- Azerokk
+						["g"] = {
 							i(158357),	-- Bindings of Enraged Earth
 							i(158359),	-- Stonefury Vambraces
 							i(159231),	-- Mine Rat's Handwarmers
@@ -136,10 +128,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2115, {	-- Rixxa Fluxflame
-						["crs"] = {
-							129231,	-- Rixxa Fluxflame
-						},
-						["groups"] = {
+						["crs"] = { 129231 },	-- Rixxa Fluxflame
+						["g"] = {
 							i(159639),	-- P.A.C.I.F.I.S.T.  Mk7
 							i(159287),	-- Cloak of Questionable Intent
 							i(159240),	-- Rixxa's Sweat-Wicking Cuffs
@@ -154,7 +144,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							129232,	-- Mogul Razdunk
 							132713,	-- Mogul Razdunk
 						},
-						["groups"] = {
+						["g"] = {
 							ach(12845),	-- Heroic: The MOTHERLODE!!
 							i(159641),	-- G3T-00t
 							i(158364),	-- High Altitude Turban
@@ -172,12 +162,10 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			d(23, {	-- Mythic
 				["lvl"] = 120,
-				["groups"] = {
+				["g"] = {
 					e(2109, {	-- Coin-Operated Crowd Pummeler
-						["crs"] = {
-							129214,	-- Coin-Operated Crowd Pummeler
-						},
-						["groups"] = {
+						["crs"] = { 129214 },	-- Coin-Operated Crowd Pummeler
+						["g"] = {
 							ach(12855),	-- Pitch Invasion
 							i(159638),	-- Electro-Arm Bludgeoner
 							i(159663),	-- G0-4W4Y Crowd Repeller
@@ -190,10 +178,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2114, {	-- Azerokk
-						["crs"] = {
-							129227,	-- Azerokk
-						},
-						["groups"] = {
+						["crs"] = { 129227 },	-- Azerokk
+						["g"] = {
 							i(158357),	-- Bindings of Enraged Earth
 							i(158359),	-- Stonefury Vambraces
 							i(159231),	-- Mine Rat's Handwarmers
@@ -208,10 +194,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2115, {	-- Rixxa Fluxflame
-						["crs"] = {
-							129231,	-- Rixxa Fluxflame
-						},
-						["groups"] = {
+						["crs"] = { 129231 },	-- Rixxa Fluxflame
+						["g"] = {
 							i(159639),	-- P.A.C.I.F.I.S.T.  Mk7
 							i(159287),	-- Cloak of Questionable Intent
 							i(159240),	-- Rixxa's Sweat-Wicking Cuffs
@@ -226,7 +210,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							129232,	-- Mogul Razdunk
 							132713,	-- Mogul Razdunk
 						},
-						["groups"] = {
+						["g"] = {
 							ach(12846),	-- Mythic: The MOTHERELODE!!
 							ach(12854),	-- Ready for Raiding VI
 							i(162520),	-- Recipe: Mystical Cauldron (Rank 2)

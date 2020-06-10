@@ -3,11 +3,12 @@
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	inst(1036, {	-- Shrine of the Storm
-		["lvl"] = 110,
+		["coord"] = { 78.8, 26.5, 942 },
 		["maps"] = {
 			1039,	-- Shrine of the Storm
 			1040,	-- Storm's End
 		},
+		["lvl"] = 110,
 		["g"] = {
 			n(-34,  {	-- World Quests
 				q(51453, {	-- Shrine of the Storm: Behold, Pure Water

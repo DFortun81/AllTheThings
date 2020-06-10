@@ -4,7 +4,7 @@
 
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	inst(1021, {	-- Waycrest Manor
-		["lvl"] = 110,
+		["coord"] = { 33.6, 12.6, 896 },
 		["maps"] = {
 			1015,	-- The Grand Foyer
 			1016,	-- The Cellar
@@ -12,6 +12,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			1018,	-- The Rupture
 			1029,	-- Waycrest Dimension
 		},
+		["lvl"] = 110,
 		["g"] = {
 			n(ZONEDROPS, {
 				i(168143, {	-- Purposefully Potent Potion

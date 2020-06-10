@@ -14,6 +14,7 @@ _.Zones =
 					i(157782, {	-- Pterrordax Egg
 						["questID"] = 50393,	-- A Child of Pa'ku
 						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 						["crs"] = {
 							126618,	-- Bloodrage Pterrordax
 							125207,	-- Peering Shrieker

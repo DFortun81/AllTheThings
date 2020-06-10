@@ -48,10 +48,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(51840, {	-- Oily Mess
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53288, {	-- Overgrown Anchor Weed
 						["requireSkill"] = HERBALISM,
 						["isWorldQuest"] = true,
@@ -533,6 +529,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(51840, {	-- Oily Mess
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(52939, {	-- Ordnance Orders
 						["lvl"] = 120,
