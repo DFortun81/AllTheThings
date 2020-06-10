@@ -3,8 +3,12 @@
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle for Azeroth
 	inst(1176, { 	-- Battle of Dazar'alor
-		["order"] = "03",
 		["isRaid"] = true,
+		["coords"] = {
+			{ 70.5, 35.3, 1161 },	-- Alliance, Boralus
+			{ 38.8, 2.40, 1165 },	-- Horde, Dazar'alor
+		},
+		["order"] = "03",
 		["maps"] = {
 			1348,	-- Zandalari Treasury
 			1352,	-- Port of Zandalar

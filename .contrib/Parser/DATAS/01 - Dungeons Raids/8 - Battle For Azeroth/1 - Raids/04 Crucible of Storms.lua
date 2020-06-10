@@ -3,14 +3,15 @@
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle for Azeroth
 	inst(1177, { 	-- Crucible of Storms
-		["order"] = "04",
 		["isRaid"] = true,
-		["lvl"] = 120,
+		["coord"] = { 83.8, 47.0, 942 },
+		["order"] = "04",
 		["maps"] = {
 			1345,	-- Shrine of Shadows
 			1346,	-- Tendril of Corruption
 			1363,	-- Introquest (Twist the Knife)
 		},
+		["lvl"] = 120,
 		["g"] = {
 			n(COMMON_BOSS_DROPS, {
 				["crs"] = {

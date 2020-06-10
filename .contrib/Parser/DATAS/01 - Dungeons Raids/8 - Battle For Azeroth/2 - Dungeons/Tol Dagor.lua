@@ -3,6 +3,7 @@
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	inst(1002, {	-- Tol Dagor
+		["coord"] = { 38.8, 70.1, 1169 },
 		["maps"] = {
 			974,	-- Tol Dagor
 			975,	-- The Drain

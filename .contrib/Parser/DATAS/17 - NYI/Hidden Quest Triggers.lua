@@ -1575,6 +1575,9 @@ _.NeverImplemented =
 		q(59072),	-- speaking to Tasha Riley and joining the Council of Chaos in the BRD pet battle dungeon
 		q(47866),	-- triggered after step 8 of Lucid Nightmare secret
 		q(57032),	-- triggered the first time i completed a +4 mythic and looted Converging Lens of the Focusing Iris (Rank 1)
+		q(57035),	-- triggered when completing a +4 mythic and looting Bursting Seed of Life (Rank 1)
+		q(53123),	-- triggered when turning in #53121, "Siege of Boralus," while on Horde War Campaign
+		q(52193),	-- triggered when turning in #52186, "The Bulk of the Guard," while on Horde War Campaign
 
 		q(54704),	-- War Campaign - triggered when turning in "Time for War"
 		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track
