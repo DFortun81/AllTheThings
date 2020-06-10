@@ -321,6 +321,7 @@ _.Zones =
 									}),
 								}),
 								n(-160, {	-- Mounts
+									i(166468),	-- Bloodgorged Hunter
 									i(166466),	-- Risen Mare
 								}),
 								n(-162, {	-- Pets
@@ -396,6 +397,7 @@ _.Zones =
 									i(163583),	-- Craghorn Chasm-Leaper 
 									i(166467),	-- Island Thunderscale
 									i(163585),	-- Surf Jelly
+									i(163584),	-- Twilight Avenger
 								}),
 								n(-162, {	-- Pets
 									i(163797),	-- Scuttle
@@ -499,6 +501,7 @@ _.Zones =
 									}),
 								}),
 								n(-160, {	-- Mounts
+									i(166468),	-- Bloodgorged Hunter
 									i(163583),	-- Craghorn Chasm-Leaper - wowhead
 									i(163585),	-- Surf Jelly
 								}),
@@ -544,6 +547,8 @@ _.Zones =
 									}),
 								}),
 								n(-160, {	-- Mounts
+									i(166468),	-- Bloodgorged Hunter
+									i(163583),	-- Craghorn Chasm-Leaper
 									i(163582),	-- Qinsho's Eternal Hound
 								}),
 								n(-162, {	-- Pets
@@ -614,6 +619,10 @@ _.Zones =
 										i(164544),	-- Wild Marauder Breeches
 										i(164542),	-- Wild Marauder Boots
 									}),
+								}),
+								n(-160, {	-- Mounts
+									i(166468),	-- Bloodgorged Hunter
+									i(163585),	-- Surf Jelly
 								}),
 								n(-162, {	-- Pets
 									i(163807),	-- Tinder Pup — may need to be moved to CBD section
@@ -740,6 +749,7 @@ _.Zones =
 									}),
 								}),
 								n(-160, {	-- Mounts
+									i(166468),	-- Bloodgorged Hunter
 									i(163585),	-- Surf Jelly
 								}),
 								n(-162, {	-- Pets
