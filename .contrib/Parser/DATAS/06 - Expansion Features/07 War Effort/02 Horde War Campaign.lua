@@ -1539,10 +1539,7 @@ _.ExpansionFeatures =
 					q(55778, {	-- Visions of Danger
 						["provider"] = { "n", 151848 },	-- Lor'themar Theron
 						["coord"] = { 48.5, 62.1, 1355 },
-						["sourceQuests"] = {
-							55869,	-- Clearing Out the Cache
-							55051,	-- A Display of Power
-						},
+						["sourceQuests"] = { 55051 },	-- A Display of Power
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 						["maps"] = { 1355 },	-- Nazjatar

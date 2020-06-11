@@ -413,6 +413,8 @@ _.Zones =
 						i(155022),	-- Freebooter Tunic
 						i(155039),	-- Navigator's Robes
 						i(155032),	-- Navigator's Circlet
+						i(155021),	-- Outrigger Chainmail
+						i(155033),	-- Outrigger Helm
 						i(155031),	-- Sea Raider's Greathelm
 						i(155020),	-- Sea Raider's Breastplate
 					},

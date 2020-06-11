@@ -7,7 +7,6 @@ _.Zones =
 		m(895, {	-- Tiragarde Sound
 			n(QUESTS, {
 		--	!! LEATHER/MAIL REWARDS NEEDED FOR QUEST 49404, "FAIRWIND'S 'FRIENDS'" !! — leather needs to be confirmed and mail is missing completely
-		--	!! MAIL REWARDS NEEDED FOR QUEST 50972, "PROUDMOORE'S PARLEY" !! — quest is actually in boralus, but pop out "A Sound Plan" crit 4 to guide you to the correct quest
 				q(49523, {	-- A Bad Deal
 					["sourceQuests"] = { 49522 },	-- Carentan's Payment
 					["coord"] = { 76.8, 85.9, 895 },

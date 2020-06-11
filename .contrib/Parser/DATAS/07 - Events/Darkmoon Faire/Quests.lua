@@ -286,6 +286,10 @@ _.WorldEvents =
 					}),
 				},
 			}),
+			q(29478, {	-- A Fizzy Fusion
+				["requireSkill"] = ALCHEMY,
+				["u"] = 40,	-- Legacy Quests
+			}),
 			q(29444, {	-- An Exotic Egg
 				["isMonthly"] = true,
 				["provider"] = { "i", 71636 },	-- Monstrous Egg
@@ -459,6 +463,10 @@ _.WorldEvents =
 						["achievementID"] = 6032,	-- Faire Favors
 					}),
 				},
+			}),
+			q(29483, {	-- Keeping the Faire Sparkling
+				["requireSkill"] = JEWELCRAFTING,
+				["u"] = 40,	-- Legacy Quests
 			}),
 			q(33756, {	-- Let's Keep Racing
 				["sourceQuests"] = { 37910 },	-- Welcome to the Darkmoon Races
