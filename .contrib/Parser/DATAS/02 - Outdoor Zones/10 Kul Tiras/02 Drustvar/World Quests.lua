@@ -107,10 +107,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(51738, {	-- Witches by the Dozen
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(52407, {	-- Work Order: Golden Beryl
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -748,10 +744,15 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(51682, {	-- Witches by the Dozen
+					q(51682, {	-- Witches by the Dozen (A)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(51738, {	-- Witches by the Dozen (H)
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(52424, {	-- Work Order: Battle Flag: Rallying Swiftness
 						["lvl"] = 120,

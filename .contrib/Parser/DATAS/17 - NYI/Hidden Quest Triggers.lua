@@ -1578,6 +1578,8 @@ _.NeverImplemented =
 		q(57035),	-- triggered when completing a +4 mythic and looting Bursting Seed of Life (Rank 1)
 		q(53123),	-- triggered when turning in #53121, "Siege of Boralus," while on Horde War Campaign
 		q(52193),	-- triggered when turning in #52186, "The Bulk of the Guard," while on Horde War Campaign
+		q(54635),	-- additional version of Mekkatorque's Battle Plans, presumably if you don't pick it up from a mob during "Killing on the Side," but idk how that could happen
+		q(58417),	-- triggered when starting the mission "Casting the Bait" while on "Under False Colors" during the Horde War Campaign
 
 		q(54704),	-- War Campaign - triggered when turning in "Time for War"
 		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track

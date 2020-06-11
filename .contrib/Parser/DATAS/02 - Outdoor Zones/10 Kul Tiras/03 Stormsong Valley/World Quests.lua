@@ -65,10 +65,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(53008, {	-- Sage Wisdom
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(52280, {	-- Sea Salt Flavored
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -646,6 +642,11 @@ _.Zones =
 								["achievementID"] = 13054,	-- Sabertron Assemble
 							}),
 						},
+					}),
+					q(53008, {	-- Sage Wisdom
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(53706, {	-- Salvage the Supplies (Faction Assault WQ)
 						["lvl"] = 110,

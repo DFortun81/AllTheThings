@@ -668,6 +668,7 @@ _.ExpansionFeatures =
 					}),
 					-- Death of a Tidesage
 					q(53066, {	-- Operation: Water Wise
+						["isBreadcrumb"] = true,	-- were these removed?  it used to be automatically offered upon meeting a rep requirement, but it didn't pop up for me even though i already had the reputation
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["sourceQuest"] = 51789,	-- What Remains of Marshal M. Valentine
 						["races"] = HORDE_ONLY,
@@ -742,6 +743,7 @@ _.ExpansionFeatures =
 					}),
 					-- At the Bottom of the Sea
 					q(53067, {	-- Operation: Bottom Feeder
+						["isBreadcrumb"] = true,	-- were these removed?  it used to be automatically offered upon meeting a rep requirement, but it didn't pop up for me even though i already had the reputation
 						["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 						["sourceQuest"] = 52122,	-- To Be Forsaken
 						["races"] = HORDE_ONLY,
@@ -1754,7 +1756,7 @@ _.ExpansionFeatures =
 					q(54754, {	-- For the Queen
 						["coord"] = { 81.4, 52.4, 49 },
 						["sourceQuest"] = 54106,	-- Tracking Tipoff
-						["description"] = "You have to choose between helping Saurfang or not betray Sylvanas. If you want to stick with Sylvanas you have to choose \"I won't betray my Warchief, Troll.\" to get this quest. You are not able to get the Toy \"Worn Cloak\" if you choose this quest.",
+						["description"] = "Your options are remaining loyal to Sylvanas or betraying her to help Saurfang.  |cfffd1818You can only get the \"Worn Cloak\" toy if you betray Sylvanas.|r\n\nTo help Sylvanas, choose \"I won't betray my Warchief, Troll.\" when you speak to Zekhan.\n\nTo help Saurfang, pick up the quest \"Grim Tidings\".\n",
 						["altQuests"] = { 54107 },  -- Grim Tidings
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
@@ -1763,7 +1765,7 @@ _.ExpansionFeatures =
 					q(54107, {	-- Grim Tidings
 						["provider"] = { "n", 146012 },	-- Zekhan
 						["coord"] = { 81.4, 52.4, 49 },
-						["description"] = "You have to choose between helping Saurfang or not betray Sylvanas. If you want to help Saurfang accept this Quest.",
+						["description"] = "Your options are remaining loyal to Sylvanas or betraying her to help Saurfang.  |cfffd1818You can only get the \"Worn Cloak\" toy if you betray Sylvanas.|r\n\nTo help Sylvanas, choose \"I won't betray my Warchief, Troll.\" when you speak to Zekhan.\n\nTo help Saurfang, pick up the quest \"Grim Tidings\".\n",
 						["sourceQuest"] = 54106,	-- Tracking Tipoff
 						["altQuests"] = { 54754 },  -- For the Queen
 						["races"] = HORDE_ONLY,

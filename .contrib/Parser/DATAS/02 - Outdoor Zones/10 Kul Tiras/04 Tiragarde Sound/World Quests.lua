@@ -28,10 +28,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52119, {	-- Goblin Azerite Extraction
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(52757, {	-- Grimestone Crimes
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -396,6 +392,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(52119, {	-- Goblin Azerite Extraction
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(51318, {	-- Go For the Boat
 						["isWorldQuest"] = true,
