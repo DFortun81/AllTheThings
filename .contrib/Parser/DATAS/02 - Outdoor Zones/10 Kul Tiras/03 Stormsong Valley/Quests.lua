@@ -6,7 +6,7 @@ _.Zones =
 	m(876, { 	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
 			n(QUESTS, {	-- [Finalized]
-			--	NEED LEATHER / MAIL AZERITE REWARDS FOR "STORM'S JUDGMENT" QUEST.  it looks like the leather chest was added, but the shoulders are still missing.
+			--	NEED MAIL AZERITE REWARDS FOR "STORM'S JUDGMENT" QUEST.
 			--	NEED LEATHER / MAIL AZERITE REWARDS FOR "STORM'S END" QUEST.  same as above, leather helm is added but shoulders are missing.
 				q(50616, {	-- A Bit of a Bind
 					["sourceQuests"] = { 49818 },	-- Trouble at Fort Daelin
@@ -1236,6 +1236,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(155168),	-- Darkwater Tunic
+						i(160878),	-- Darkwater Shoulderguards
 						i(155166),	-- Dread Corsair Breastplate
 						i(160880),	-- Dread Corsair Pauldrons
 						i(160877),	-- Tidespeaker Amice
