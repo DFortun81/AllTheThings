@@ -81,10 +81,6 @@ _.Zones =
 					q(47695, {	-- Sound the Alarm
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(51578, {	-- The Sea Runs Red
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(52056, {	-- The Tendrils of Fate
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -724,6 +720,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(51578, {	-- The Sea Runs Red
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(52010, {	-- The Tendrils of Fate
 						["isWorldQuest"] = true,

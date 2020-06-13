@@ -403,6 +403,8 @@ _.Zones =
 						i(155040),	-- Freebooter Shoulderpads — NEEDS CONFIRMATION
 						i(160858),	-- Navigator's Crown
 						i(155042),	-- Navigator's Mantle
+						i(160860),	-- Outrigger Coif
+						i(155043),	-- Outrigger Pauldrons
 						i(160861),	-- Sea Raider's Helmet
 						i(155041),	-- Sea Raider's Spaulders
 					},

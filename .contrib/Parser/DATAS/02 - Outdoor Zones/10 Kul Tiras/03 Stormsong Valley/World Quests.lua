@@ -77,10 +77,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(51811, {	-- Trapped Tortollans
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(52299, {	-- Whiplash
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -821,10 +817,15 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(51817, {	-- Trapped Tortollans
+					q(51817, {	-- Trapped Tortollans (A)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(51811, {	-- Trapped Tortollans (H)
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(52200, {	-- Turtle Tactics
 						["isWorldQuest"] = true,
