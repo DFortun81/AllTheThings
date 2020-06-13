@@ -440,7 +440,6 @@ _.WorldDrops =
 				i(866),		-- Monk's Staff
 				i(15278),	-- Solstice Staff
 				i(1607),	-- Soulkeeper
-				i(12532),	-- Spire of the Stoneshaper
 				i(1613),	-- Spiritchaser Staff
 				i(13000),	-- Staff of Hale Magefire
 				un(7, i(880)),	-- Staff of Horrors

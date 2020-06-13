@@ -100,6 +100,7 @@ _.Zones =
 					}),
 				}),
 				n(122345, {	-- Battle for the Well of Eternity
+				--	q(47832),	-- FLAG - Well of Eternity Complete
 				}),
 				n(122340, {	-- The Burning of Mount Hyjal
 				}),
