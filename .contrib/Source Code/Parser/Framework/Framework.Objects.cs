@@ -1006,6 +1006,7 @@ namespace ATT
                         case "u":
                         case "maps":
                         case "questID":
+                        case "altAchievements":
                         case "altQuestID":
                         case "altQuests":
                         case "sourceQuests":
@@ -1330,6 +1331,7 @@ namespace ATT
                     case "specs":
                     case "difficulties":
                     case "sourceQuests":
+                    case "altAchievements":
                     case "altQuests":
                     case "races":
                     case "maps":

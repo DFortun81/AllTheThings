@@ -4762,6 +4762,13 @@ app.BaseFaction = {
 			if t.achievementID then
 				return select(4, GetAchievementInfo(t.achievementID));
 			end
+			if t.altAchievements then
+				for i,achID in ipairs(t.altAchievements) do
+					if select(4, GetAchievementInfo(achID)) or true then
+						return 2;
+					end
+				end
+			end
 		elseif key == "text" then
 			local rgb = FACTION_BAR_COLORS[t.standing + (t.isFriend and 2 or 0)];
 			return Colorize(select(1, GetFactionInfoByID(t.factionID)) or (t.creatureID and NPCNameFromID[t.creatureID]) or ("Faction #" .. t.factionID), RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));

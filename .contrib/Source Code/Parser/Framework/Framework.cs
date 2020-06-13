@@ -334,6 +334,16 @@ namespace ATT
                 filter = (Objects.Filters)f;
             }
 
+            // Mark the achievement as referenced
+            if (data.TryGetValue("achID", out int achID))
+            {
+                // Remove itself from the list of altAchievements
+                if (data.TryGetValue("altAchievements", out List<object> altAchievements) && altAchievements != null && altAchievements.Count > 0)
+                {
+                    altAchievements.Remove(achID);
+                }
+            }
+
             // Mark the quest as referenced
             if (data.TryGetValue("questID", out int questID))
             {
@@ -1261,6 +1271,14 @@ namespace ATT
                 case "sourceQuestIDs":
                     {
                         return "sourceQuests";
+                    }
+
+                case "altAchieves":
+                case "altAchievements":
+                case "alternateAchieves":
+                case "alternateAchievements":
+                    {
+                        return "altAchievements";
                     }
 
                 case "altQuests":

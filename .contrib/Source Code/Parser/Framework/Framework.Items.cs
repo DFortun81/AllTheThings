@@ -391,6 +391,7 @@ namespace ATT
                     case "specs":
                     case "races":
                     case "sourceQuests":
+                    case "altAchievements":
                     case "altQuests":
                         {
                             MergeIntegerArrayData(item, field, value);
@@ -661,6 +662,7 @@ namespace ATT
                     case "c":
                     case "specs":
                     case "sourceQuests":
+                    case "altAchievements":
                     case "altQuests":
                     case "repeatable":
                     case "isLimited":

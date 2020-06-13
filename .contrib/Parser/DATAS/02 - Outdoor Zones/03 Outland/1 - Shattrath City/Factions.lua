@@ -208,6 +208,9 @@ _.Zones =
 				}),
 				faction(932,  {	-- The Aldor
 					["creatureID"] = 19321,	-- Quartermaster Endarin <Aldor Quartermaster>
+					["altAchievements"] = {
+						1205,	-- Hero of Shattrath
+					},
 					["g"] = {
 						n(QUESTS, {
 							q(10551, {	-- Allegiance to the Aldor
@@ -924,6 +927,9 @@ _.Zones =
 				}),
 				faction(934,  {	-- The Scryers
 					["creatureID"] = 19331,	-- Quartermaster Enuril <Scryer Quartermaster>
+					["altAchievements"] = {
+						1205,	-- Hero of Shattrath
+					},
 					["g"] = {
 						n(QUESTS, {
 							q(10552, {	-- Allegiance to the Scryers
