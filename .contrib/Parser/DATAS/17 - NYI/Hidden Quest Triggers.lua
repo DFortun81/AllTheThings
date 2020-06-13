@@ -386,6 +386,7 @@ _.NeverImplemented =
 		q(35913),	-- Stonecore (Heroic) reward quest
 		q(35403),	-- Vortex Pinnacle dungeon reward (Kill Asaad)
 		q(35411),	-- Zul'Gurub Reward Quest
+		q(35435),	-- Well of Eternity Reward Quest
 
 		q(28347),	-- Coffer of Promise TRACKING QUEST
 		q(25071),	-- FLAG - Purple Murloc

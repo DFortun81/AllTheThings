@@ -14,6 +14,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 			n(QUESTS, { 			
 				q(30104, {	-- Documenting the Timeways
 					["provider"] = { "n", 57864 },	-- Alurmi
+					["sourceQuests"] = { 
+						30097,	-- Archival Purposes
+						30096,	-- Murozond
+					},
 					["g"] = {
 						i(72880),	-- Alurmi's Ring
 						i(72881),	-- Treads of the Past
