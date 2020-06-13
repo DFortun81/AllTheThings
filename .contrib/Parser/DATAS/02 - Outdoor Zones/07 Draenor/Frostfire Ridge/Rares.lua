@@ -256,8 +256,9 @@ _.Zones =
 						{ 84.4, 48.0, 525 },
 						{ 86.6, 48.6, 525 },
 					},
+					["u"] = 45,	-- Broken Loot
 					["g"] = {	
-						i(119366),	-- Ogom's Manacles 
+						un(45, i(119366)),	-- Ogom's Manacles 
 					},
 				}),
 				n(78606, {	-- Pale Fishmonger

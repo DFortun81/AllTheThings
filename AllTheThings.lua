@@ -10369,7 +10369,14 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 						app.CreateItemSource(102105, 165684),	-- Gurubashi Empire Greatcloak
 					},
 				}),
-				
+				app.CreateNPC(-16, {	-- Rares
+					app.CreateNPC(87622, {	-- Ogom the Mangler
+						['description'] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assualt on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
+						['g'] = {
+							app.CreateItemSource(67041, 119366),
+						},
+					}),
+				}),
 			},
 		};
 		BuildGroups(self.data, self.data.g);
