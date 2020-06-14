@@ -224,6 +224,11 @@ _.ExpansionFeatures =
 									}),
 								},
 							}),
+							q(39255, {	-- Amphitheater of the Eternal
+								["isWeekly"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["u"] = 40,	-- Legacy Quests
+							}),
 							q(37767, {	-- Arcane Sanctum: Ko'ragh
 								["isWeekly"] = true,
 								["races"] = ALLIANCE_ONLY,
@@ -252,6 +257,16 @@ _.ExpansionFeatures =
 									currency(824),	-- Garrison Resources (175)
 								},
 							}),
+							q(39251, {	-- Court of Blood
+								["isWeekly"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["u"] = 40,	-- Legacy Quests
+							}),
+							q(39252, {	-- Deadeye's Vision
+								["isWeekly"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["u"] = 40,	-- Legacy Quests
+							}),
 							q(39259, {	-- Destructor's Rise
 								["isWeekly"] = true,
 								["races"] = ALLIANCE_ONLY,
@@ -265,6 +280,16 @@ _.ExpansionFeatures =
 								["g"] = {
 									currency(824),	-- Garrison Resources (175)
 								},
+							}),
+							q(39257, {	-- Grommash's Torment
+								["isWeekly"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["u"] = 40,	-- Legacy Quests
+							}),
+							q(39248, {	-- Hellfire Assault
+								["isWeekly"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["u"] = 40,	-- Legacy Quests
 							}),
 							q(37768, {	-- Imperator's Rise: Imperator Mar'gok
 								["isWeekly"] = true,
@@ -286,6 +311,11 @@ _.ExpansionFeatures =
 								["g"] = {
 									currency(824),	-- Garrison Resources (175)
 								},
+							}),
+							q(39254, {	-- Iskar's Clutch
+								["isWeekly"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["u"] = 40,	-- Legacy Quests
 							}),
 							q(39253, {	-- Maw of Souls
 								["isWeekly"] = true,
@@ -349,6 +379,16 @@ _.ExpansionFeatures =
 								["g"] = {
 									currency(824),	-- Garrison Resources (175)
 								},
+							}),
+							q(39258, {	-- The Felborne Breach
+								["isWeekly"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["u"] = 40,	-- Legacy Quests
+							}),
+							q(39249, {	-- The Iron Bulwark
+								["isWeekly"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["u"] = 40,	-- Legacy Quests
 							}),
 							q(37789, {	-- Upper Blackrock Spire
 								["isDaily"] = true,
