@@ -1,0 +1,32 @@
+-----------------------------------------------------
+--   D U N G E O N S  &  R A I D S  M O D U L E    --
+-----------------------------------------------------
+
+_.Instances = {
+	--	putting description + coords/cost on these because not all the information shows up in all places.  you can't see the coords or cost from the currency window, just the description, but you can plot coords if you pop the currencies out.
+	-- i didn't put cost on the ones that have choices because i didn't want it to seem like you needed all the different currencies/items to purchase seals, and i didn't put cost on warforged seals because you exchange 50 for 3, which we can't communicate clearly in anything other than a description
+	tier(5, {	-- Mists of Pandaria
+		n(-10045, {	-- Currency
+			["ordered"] = true,
+			["g"] = {
+				currency(697, {	-- Elder Charm of Good Fortune
+					["description"] = "Purchased from Commander Lo Ping in Townlong Steppes for 20 Lesser Charms of Good Fortune.  You also have a chance to get them from killing rares or opening Troves of the Thunder King on the Isle of Thunder.\n",
+					["coord"] = { 37.8, 64.6, 388 },	-- Commander Lo Ping, Townlong Steppes
+					["cost"] = { { "c", 738, 20 } },	-- 20x Lesser Charm of Good Fortune
+				}),
+				currency(752, {	-- Mogu Rune of Fate
+					["description"] = "Purchased from Mistweaver Ai on Timeless Isle for 1,000 Timeless Coins.\n",
+					["coord"] = { 42.8, 55.6, 554 },	-- Mistweaver Ai, Timeless Isle
+					["cost"] = { { "c", 777, 1000 } },	-- 1,000x Timeless Coin
+				}),
+				currency(776, {	-- Warforged Seal
+					["description"] = "Obtained via the repeatable quest \"Warforged Seals\" at your faction's shrine in Vale of Eternal Blossoms.  The quest costs 50 Lesser Charms of Good Fortune and gives you 3 seals.\n\nAlliance: Obtained from Elder Lin at Shrine of Seven Stars in the Vale of Eternal Blossoms.\n\nHorde: Obtained from Elder Liao at Shrine of Two Moons in the Vale of Eternal Blossoms.\n",
+					["coords"] = {
+						{ 85.2, 62.6, 390 },	-- Alliance, Vale of Eternal Blossoms, Elder Lin
+						{ 62.0, 20.6, 390 },	-- Horde, Vale of Eternal Blossoms, Elder Liao
+					},
+				}),
+			},
+		}),
+	}),
+};
