@@ -19,8 +19,8 @@ _.Instances = {
 		currency(776, {	-- Warforged Seal
 			["description"] = "Obtained via the repeatable quest \"Warforged Seals\" at your faction's shrine in Vale of Eternal Blossoms.  The quest costs 50 Lesser Charms of Good Fortune and gives you 3 seals.\n\nAlliance: Obtained from Elder Lin at Shrine of Seven Stars in the Vale of Eternal Blossoms.\n\nHorde: Obtained from Elder Liao at Shrine of Two Moons in the Vale of Eternal Blossoms.\n",
 			["coords"] = {
-				{ 85.2, 62.6,  },	-- Alliance, Vale of Eternal Blossoms, Elder Lin
-				{ 62.0, 20.6,  },	-- Horde, Vale of Eternal Blossoms, Elder Liao
+				{ 85.2, 62.6, 390 },	-- Alliance, Vale of Eternal Blossoms, Elder Lin
+				{ 62.0, 20.6, 390 },	-- Horde, Vale of Eternal Blossoms, Elder Liao
 			},
 		}),
 	}),
