@@ -244,6 +244,7 @@ _.ExpansionFeatures =
 			}),
 			i(163484, {	 -- Vorus'arak's Carapace
 				["coord"] = { 26.2, 50.6, 115 },
+				["cr"] = 139889,	-- Vorus'arak
 				["g"] = {
 					q(53180, {	-- Vorus'arak's Carapace
 						["provider"] = { "n", 26653 },	-- Kilix the Unraveler
