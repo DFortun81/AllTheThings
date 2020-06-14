@@ -10140,6 +10140,9 @@ function app:GetDataCache()
 		app:GetWindow("Unsorted").data = allData;
 		CacheFields(allData);
 	end
+	app.GetDataCache = function()
+		return app:GetWindow("Prime").data;
+	end
 	return allData;
 end
 function app:RefreshData(lazy, got, manual)
@@ -10206,15 +10209,17 @@ function app:GetWindow(suffix, parent, onUpdate)
 		window:SetScript("OnMouseUp", StopMovingOrSizing);
 		window:SetScript("OnHide", StopMovingOrSizing);
 		window:SetBackdrop(backdrop);
-		UpdateWindowColor(window, suffix);
+		window:SetBackdropBorderColor(1, 1, 1, 1);
+		window:SetBackdropColor(0, 0, 0, 1);
 		window:SetClampedToScreen(true);
 		window:SetToplevel(true);
 		window:EnableMouse(true);
 		window:SetMovable(true);
 		window:SetResizable(true);
 		window:SetPoint("CENTER");
-		window:SetMinResize(32, 32);
+		window:SetMinResize(96, 32);
 		window:SetSize(300, 300);
+		
 		window:SetUserPlaced(true);
 		window.data = {
 			['text'] = suffix,
@@ -10229,39 +10234,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 			}
 		};
 		window:Hide();
-		window.AddObject = function(self, info)
-			-- Bubble Up the Maps
-			local mapInfo;
-			local mapID = app.GetCurrentMapID();
-			if mapID then
-				local pos = C_Map.GetPlayerMapPosition(mapID, "player");
-				if pos then
-					local px, py = pos:GetXY();
-					info.coord = { px * 100, py * 100, mapID };
-				end
-				repeat
-					mapInfo = C_Map.GetMapInfo(mapID);
-					if mapInfo then
-						info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
-						mapID = mapInfo.parentMapID
-					end
-				until not mapInfo or not mapID;
-			end
-			
-			MergeObject(self.data.g, CreateObject(info));
-			MergeObject(self.rawData, info);
-			self:Update();
-		end
-		window.Clear = function(self)
-			if self.rawData then
-				wipe(self.rawData);
-			else
-				self.rawData = {};
-			end
-			app.SetDataMember(self.Suffix, self.rawData);
-			wipe(self.data.g);
-			self:Update();
-		end
 		
 		-- The Close Button. It's assigned as a local variable so you can change how it behaves.
 		window.CloseButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
