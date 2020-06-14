@@ -253,18 +253,25 @@ namespace ATT
                 // Compress the file into the ZIP File.
                 var filename = $"{rootPath}{file.Name}";
                 Console.WriteLine(filename);
-                if (file.Extension.ToLower() == ".lua")
+                switch(file.Extension.ToLower())
                 {
-                    // Add special build type command parsing / optimizations before writing source files.
-                    using (StreamWriter writer = new StreamWriter(zipFile.CreateEntry(filename).Open()))
-                    {
-                        CompressFile(writer, file.FullName);
-                    }
-                }
-                else
-                {
-                    // Non-Source Files can simply be copied over without modification.
-                    zipFile.CreateEntryFromFile(file.FullName, filename);
+                    case ".lua":
+                    case ".toc":
+                        // Add special build type command parsing / optimizations before writing source files.
+                        var builder = new StringBuilder();
+                        if (CompressFile(builder, file.FullName))
+                        {
+                            // Open the file stream for writing and dump the builder.
+                            using (StreamWriter writer = new StreamWriter(zipFile.CreateEntry(filename).Open()))
+                            {
+                                writer.Write(builder);
+                            }
+                        }
+                        break;
+                    default:
+                        // Non-Source Files can simply be copied over without modification.
+                        zipFile.CreateEntryFromFile(file.FullName, filename);
+                        break;
                 }
             }
         }
@@ -272,10 +279,12 @@ namespace ATT
         /// <summary>
         /// Compress the File into the ZIP Archive.
         /// </summary>
-        /// <param name="writer">The writer used by the ZIP Archive.</param>
+        /// <param name="builder">The builder used by the ZIP Archive.</param>
         /// <param name="fullname">The name of the file to write into the archive.</param>
-        static void CompressFile(StreamWriter writer, string fullname)
+        /// <returns>Whether or not to keep the file.</returns>
+        static bool CompressFile(StringBuilder builder, string fullname)
         {
+            int lineCount = 0;
             using (var reader = File.OpenText(fullname))
             {
                 string line, trimmedLine;
@@ -290,13 +299,32 @@ namespace ATT
                             if (line.TrimStart().StartsWith("// WARNING: END EXCLUDED DYNAMIC SECTION")) break;
                         }
                     }
+                    else if (trimmedLine.StartsWith("-- WARNING: DEV ONLY START"))
+                    {
+                        // This file will require parsing.
+                        while ((line = reader.ReadLine()) != null)
+                        {
+                            if (line.TrimStart().StartsWith("-- WARNING: DEV ONLY END")) break;
+                        }
+                    }
+                    else if (trimmedLine.StartsWith("# DEV ONLY START"))
+                    {
+                        // This file will require parsing.
+                        while ((line = reader.ReadLine()) != null)
+                        {
+                            if (line.TrimStart().StartsWith("# DEV ONLY END")) break;
+                        }
+                    }
                     else
                     {
-                        writer.WriteLine(line);
-                        writer.WriteLine();
+                        builder.AppendLine(line);
+                        ++lineCount;
                     }
                 }
             }
+
+            // If there ain't shit, delete it!
+            return lineCount > 0;
         }
 
         /// <summary>

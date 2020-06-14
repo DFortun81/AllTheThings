@@ -28,3 +28,6 @@ AllTheThings.lua
 db\FlightPathDB.lua
 db\RaceDB.lua
 db\Categories.lua
+# DEV ONLY START
+DevTools.lua
+# DEV ONLY END

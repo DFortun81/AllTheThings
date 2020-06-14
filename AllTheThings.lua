@@ -8448,6 +8448,7 @@ local function SetRowData(self, row, data)
 			-- This means the link is still rendering
 			text = RETRIEVING_DATA;
 			self.processingLinks = true;
+		-- WARNING: DEV ONLY START
 		elseif data.s and data.s < 1 then
 			-- If it doesn't, the source ID will need to be harvested.
 			local s, dressable = GetSourceID(text, data.itemID);
@@ -8485,6 +8486,7 @@ local function SetRowData(self, row, data)
 				data.s = nil;
 				data.parent.total = data.parent.total - 1;
 			end
+		-- WARNING: DEV ONLY END
 		end
 		local leftmost = row;
 		local relative = "LEFT";
