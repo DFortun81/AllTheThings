@@ -15,8 +15,7 @@ _.Instances = { tier(1, {	-- Classic
 		["coord"] = { 54.18, 83.25, 35 },	-- Molten Core, Blackrock Mountain [Blackrock Depths]
 		["groups"] = {
 			n(QUESTS, {
-				{
-					["questID"] = 7848,	-- Attunement to the Core
+				q(7848, {	-- Attunement to the Core
 					["altQuests"] = {
 						7487,	-- Attunement to the Core [Original??]
 					},
@@ -28,41 +27,25 @@ _.Instances = { tier(1, {	-- Classic
 						242, 243,	-- Blackrock Depths
 						35,	-- Blackrock Mountain
 					},
-				},
-				{
-					["questID"] = 7785,	-- Examine the Vessel
+				}),
+				q(7785, {	-- Examine the Vessel
 					["provider"] = { "n", 14347 },	-- Highlord Demitrian
 					["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
 					["coord"] = { 21.7, 8.6, 81 },	-- Silithus
 					["maps"] = { 81 },	-- Silithus
-					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 },	-- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
 					["lvl"] = 60,
 					["cost"] = {
 						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 						{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
 					},
-					["groups"] = {
+					["g"] = {
 						{
 							["itemID"] = 19016,	-- Vessel of Rebirth
 							["questID"] = 7785,	-- Examine the Vessel
 						},
 					},
-				},
-				{
-					["questID"] = 7787,	-- Rise, Thunderfury!
-					["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
-					["provider"] = { "n", 14347 },	-- Highlord Demitrian
-					["coord"] = { 21.7, 8.6, 81 },	-- Silithus
-					["maps"] = { 81 },	-- Silithus
-					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 },	-- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
-					["lvl"] = 60,
-					["groups"] = {
-						ach(428),	-- Thunderfury, Blessed Blade of the Windseeker
-						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
-					},
-				},
-				{
-					["questID"] = 7786,	-- Thunderaan the Windseeker
+				}),
+				q(7786, {	-- Thunderaan the Windseeker
 					["altQuests"] = {
 						7521,	-- Thunderaan the Windseeker [Original?]
 					},
@@ -70,7 +53,6 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 14347 },	-- Highlord Demitrian
 					["coord"] = { 21.7, 8.6, 81 },	-- Silithus
 					["maps"] = { 81 },	-- Silithus
-					["classes"] = { 12, 6, 3, 8, 10, 2, 4, 9, 1 },	-- Demon Hunter / Death Knight / Hunter / Mage / Monk / Paladin / Rogue / Warlock / Warrior
 					["lvl"] = 60,
 					["cost"] = {
 						{ "i", 17771, 10 },	-- Elementium Bar x10
@@ -78,10 +60,10 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
 						{ "i", 19017, 1 },	-- Essence of the Firelord
 					},
-					["groups"] = {
+					["g"] = {
 						n(14435, {	-- Prince Thunderaan <The Wind Seeker>
 							["description"] = "This is a 40 man raid boss. He will drop as many Dormant Wind Kissed Blades as there are people with the quest.",
-							["groups"] = {
+							["g"] = {
 								{
 									["itemID"] = 19018,	-- Dormant Wind Kissed Blade
 									["questID"] = 7787,	-- Rise, Thunderfury!
@@ -89,7 +71,20 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 					},
-				},
+				}),
+				q(7787, {	-- Rise, Thunderfury!
+					["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
+					["provider"] = { "n", 14347 },	-- Highlord Demitrian
+					["coord"] = { 21.7, 8.6, 81 },	-- Silithus
+					["maps"] = { 81 },	-- Silithus
+					["lvl"] = 60,
+					["groups"] = {
+						ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
+							["classes"] = { DEATHKNIGHT, HUNTER, PALADIN, WARRIOR },
+						}),
+						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
+					},
+				}),
 			}),
 			n(ZONEDROPS, {
 				i(16802, {	-- Arcanist Belt (Mage)
