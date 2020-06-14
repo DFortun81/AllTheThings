@@ -139,7 +139,7 @@ _.Zones =
 							["sourceQuests"] = { 55258 },	-- Sleep, Eat, Repeat
 						}),
 						crit(4, {	-- Torcali's Blessing
-						--	["sourceQuests"] = {  },	-- 
+							["sourceQuests"] = { 55507 },	-- Torcali's Blessing
 						}),
 						crit(5, {	-- Wander Not Alone
 						--	["sourceQuests"] = {  },	-- 
@@ -151,42 +151,14 @@ _.Zones =
 					["g"] = {
 						crit(1, {	-- Nature Versus Nurture
 							["sourceQuests"] = { 52305 },	-- Nature Versus Nurture
-							["description"] = "Must complete ~7 days worth of daily quests to fill Kua'fon's experience bar.",
+							["description"] = "Must complete ~7 daily quests to fill Kua'fon's experience bar.",
 						}),
 						crit(2, {	-- Room to Grow
-							["description"] = "Must complete ~14 days worth of daily quests to fill Kua'fon's experience bar.",
-							["g"] = {
-								q(50395, {	-- The Call of the Skies
-									["provider"] = { "n", 133678 },	-- Kua'fon
-									["coord"] = { 70.8, 50.9, 863 },
-									["races"] = HORDE_ONLY,
-									["sourceQuest"] = 52305,	-- Nature vs Nurture
-								}),
-								q(50401, {	-- Fear of Falling
-									["provider"] = { "n", 127377 },	-- Pa'ku
-									["coord"] = { 70.9, 50.8, 863 },
-									["races"] = HORDE_ONLY,
-									["sourceQuest"] = 50395,	-- The Call of the Skies
-									["g"] = {
-										i(158885),	-- Shimmerfin Flesh
-									},
-								}),
-								q(50412, {	-- Back to the Nest
-									["provider"] = { "n", 133678 },	-- Kua'fon
-									["coord"] = { 74.3, 51.9, 863 },
-									["races"] = HORDE_ONLY,
-									["sourceQuest"] = 50401,	-- Fear of Falling
-								}),
-								q(52447, {	-- Room to Grow
-									["provider"] = { "n", 135308 },	-- Wingminder Goja
-									["coord"] = { 70.8, 50.9, 863 },
-									["races"] = HORDE_ONLY,
-									["sourceQuest"] = 50412,	-- Back to the Nest
-								}),
-							},
+							["sourceQuests"] = { 52447 },	-- Room to Grow
+							["description"] = "Must complete ~14 daily quests to fill Kua'fon's experience bar.",
 						}),
 						crit(3, {	-- Eyes on the Skies
-							["description"] = "Must complete 4-7 days worth of daily quests to fill Kua'fon's experience bar.",
+							["description"] = "Must complete 4 to 7 daily quests to fill Kua'fon's experience bar.",
 							["g"] = {
 								q(50396, {	-- A Pterrible Fate
 									["provider"] = { "n", 133679 },	-- Kua'fon

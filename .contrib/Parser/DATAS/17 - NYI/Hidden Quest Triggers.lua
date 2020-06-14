@@ -1565,6 +1565,8 @@ _.NeverImplemented =
 		q(54779),	-- triggered when turning in #54138, "Ritual Rampage," zuldazar assault.  had WM on but i'm not sure if that's relevant
 		q(54323),	-- triggered when turning in #53883, "Shores of Zuldazar," zuldazar assault.  had WM on
 		q(54780),	-- triggered when turning in #53883, "Shores of Zuldazar," zuldazar assault.  had WM on
+		q(54314),	-- triggered when turning in #53939, "Breaching Boralus," tiragade sound assault.  had WM on
+		q(54769),	-- triggered when turning in #53939, "Breaching Boralus," tiragade sound assault.  had WM on
 		q(57593),	-- triggered when talking to chromie in CoT during the 2019 anniversary event, before turning in #57249, "A Timely Invitation"
 		q(54035),	-- Blessing of the Night Warden unlock chain started
 		q(53956),	-- Triggered when turning in "We Are Coming" as alliance. Probably related to darkshore warfront unlock?
@@ -1582,6 +1584,9 @@ _.NeverImplemented =
 		q(54635),	-- additional version of Mekkatorque's Battle Plans, presumably if you don't pick it up from a mob during "Killing on the Side," but idk how that could happen
 		q(58417),	-- triggered when starting the mission "Casting the Bait" while on "Under False Colors" during the Horde War Campaign
 		q(55135),	-- triggered after finishing the mission "Casting the Bait" during the Horde War Campaign
+		
+	--	OUTPOST UPGRADES
+		q(53744),	-- finishing the Horde mission "Swiftwind Post" (https://www.wowhead.com/mission=1964/swiftwind-post)
 
 		q(54704),	-- War Campaign - triggered when turning in "Time for War"
 		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track
@@ -2088,6 +2093,7 @@ _.NeverImplemented =
 		q(51992),	-- triggered when turning in "Of Dark Deeds and Dark Days"
 		q(51993),	-- triggered when turning in "Of Dark Deeds and Dark Days"
 		q(55257),	-- triggered after turning in "Held for Observation" in the "How to Train Your Direhorn" questline
+		q(55536),	-- triggered after turning in "Torcali's Blessing" in the "How to Train Your Direhorn" questline
 		-- Chests
 		q(49142),	-- Zuldazar repeatable random chest
 		q(50710),	-- Zuldazar repeatable random chest

@@ -65,10 +65,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52280, {	-- Sea Salt Flavored
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53042, {	-- Stormcaller
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -667,10 +663,15 @@ _.Zones =
 							}),
 						},
 					}),
-					q(52271, {	-- Sea Salt Flavored
+					q(52271, {	-- Sea Salt Flavored (A)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(52280, {	-- Sea Salt Flavored (H)
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(51759, {	-- Seabreaker Skoloth
 						["isWorldQuest"] = true,

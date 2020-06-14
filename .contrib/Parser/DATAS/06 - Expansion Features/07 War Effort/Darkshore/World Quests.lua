@@ -291,7 +291,7 @@ _.Zones =
 						currency(1717),	-- 7th Legion Service Medal
 					},
 				}),
-				q(54795, {	-- Granokk (H)
+				q(54791, {	-- Granokk (H)
 					["isWorldQuest"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
@@ -679,4 +679,3 @@ _.Zones =
 		}),
 	}),
 };
-				

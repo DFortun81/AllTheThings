@@ -81,10 +81,6 @@ _.Zones =
 					q(47695, {	-- Sound the Alarm
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(52056, {	-- The Tendrils of Fate
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(51622, {	-- Tidal Teachings
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -726,10 +722,15 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
-					q(52010, {	-- The Tendrils of Fate
+					q(52010, {	-- The Tendrils of Fate (A)
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
+					}),
+					q(52056, {	-- The Tendrils of Fate (H)
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(54237, {	-- Togoth Cruelarm (Faction Assault WQ)
 						["lvl"] = 110,

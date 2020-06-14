@@ -254,7 +254,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(55251, {	-- A Daughter of Torcali
-					["sourceQuests"] = { 55250 },	-- A Growing Appetite
+					["sourceQuests"] = { 55258 },	-- Sleep, Eat, Repeat
 					["provider"] = { "n", 151319 },	-- Li'zal
 					["isDaily"] = true,
 					["coord"] = { 68.1, 41.7, 862 },
@@ -283,7 +283,7 @@ _.Zones =
 					},
 				}),
 				q(55250, {	-- A Growing Appetite
-					["sourceQuests"] = { 55248 },	-- Greener Pastures
+					["sourceQuests"] = { 55258 },	-- Sleep, Eat, Repeat
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 151286 },		-- Child of Torcali
 					["isDaily"] = true,
@@ -415,6 +415,13 @@ _.Zones =
 					},
 					["provider"] = { "n", 125039 },	-- Trader Kro
 					["coord"] = { 79.2, 42.3, 862 },
+				}),
+				q(50412, {	-- Back to the Nest
+					["sourceQuests"] = { 50401 },	-- Fear of Falling
+					["provider"] = { "n", 133678 },	-- Kua'fon
+					["coord"] = { 74.3, 51.9, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
 				}),
 				q(48026, {	-- Beneath the Waves
 					["sourceQuests"] = { 49969 },	-- Awaken a God
@@ -552,6 +559,16 @@ _.Zones =
 					["provider"] = { "n", 129907 },	-- Zul the Prophet
 					["coord"] = { 65.6, 30.5, 862 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(50401, {	-- Fear of Falling
+					["sourceQuests"] = { 50395 },	-- The Call of the Skies
+					["provider"] = { "n", 127377 },	-- Pa'ku
+					["coord"] = { 70.9, 50.8, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+					["g"] = {
+						i(158885),	-- Shimmerfin Flesh
+					},
 				}),
 				q(51407, {	-- Find Their Words
 					["sourceQuests"] = { 49289 },	-- A Special Stone
@@ -875,6 +892,13 @@ _.Zones =
 					["coord"] = { 42.7, 37.7, 862 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(55506, { 	-- One Road Ends
+					["sourceQuests"] = { 55503 },	-- The Direhorn and the Saurid
+					["provider"] = { "n", 154607 },	-- Image of Torcali
+					["coord"] = { 52.4, 23.2, 1165 },	-- on the very edge of dazar'alor
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(50798, {	-- Out on a Limb
 					["sourceQuests"] = { 50402 },	-- SKREEEEE! (#1, prior to Nature Versus Nurture, during which this quest is available)
 					["provider"] = { "n", 135308 },	-- Wingminder Goja
@@ -973,6 +997,20 @@ _.Zones =
 					["provider"] = { "n", 121599 },	-- King Rastakhan
 					["coord"] = { 60.3, 22.0, 862 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(55505, { 	-- Roo'li's Memory
+					["sourceQuests"] = { 55506 },	-- One Road Ends
+					["provider"] = { "n", 152115 },	-- Koo'li
+					["coord"] = { 62.0, 49.6, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
+				q(52447, {	-- Room to Grow
+					["sourceQuests"] = { 50412 },	-- Back to the Nest
+					["provider"] = { "n", 135308 },	-- Wingminder Goja
+					["coord"] = { 70.8, 50.9, 863 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
 				}),
 				q(48025, {	-- Saving for Later
 					["sourceQuests"] = {
@@ -1093,6 +1131,20 @@ _.Zones =
 					["provider"] = { "n", 131582 },	-- Examiner Tae'shara Bloodwatcher
 					["coord"] = { 43.9, 72.1, 862 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(50395, {	-- The Call of the Skies
+					["sourceQuests"] = { 52305 },	-- Nature Versus Nurture
+					["provider"] = { "n", 133678 },	-- Kua'fon
+					["coord"] = { 70.8, 50.9, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
+				q(55503, { 	-- The Direhorn and the Saurid
+					["sourceQuests"] = { 55504 },	-- Wayshrines of Zuldazar
+					["provider"] = { "n", 154607 },	-- Image of Torcali
+					["coord"] = { 52.4, 23.2, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
 				}),
 				q(49424, {	-- The Full Prophecy
 					["sourceQuests"] = { 49965 },	-- The Warpack
@@ -1215,6 +1267,13 @@ _.Zones =
 					["coord"] = { 76.6, 48.5, 862 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(55462, { 	-- The Wanderer's Call
+					["sourceQuests"] = { 55258 },	-- Sleep, Eat, Repeat
+					["provider"] = { "n", 151999 },	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
+					["races"] = HORDE_ONLY,
+					["coord"] = { 68.2, 41.6, 862 },
+					["lvl"] = 120,
+				}),
 				q(47738, {	-- The Will of the Loa
 					["sourceQuests"] = { 51677 },	-- Mending Body and Soul
 					["provider"] = { "n", 132637 },	-- Jamil Abul'housin
@@ -1262,6 +1321,13 @@ _.Zones =
 					["g"] = {
 						i(156871),	-- Spitzy (TOY!)
 					},
+				}),
+				q(55507, { 	-- Torcali's Blessing
+					["sourceQuests"] = { 55505 },	-- Roo'li's Memory
+					["provider"] = { "n", 151257 },	-- Torcali <Loa of Wanderers>
+					["coord"] = { 68.2, 29.4, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
 				}),
 				q(47741, {	-- To Sacrifice a Loa
 					["sourceQuests"] = { 47734 },	-- Partners in Heresy
@@ -1495,6 +1561,13 @@ _.Zones =
 					["coord"] = { 51.6, 45.4, 862 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(55504, { 	-- Wayshrines of Zuldazar
+					["sourceQuests"] = { 55462 },	-- The Wanderer's Call
+					["provider"] = { "n", 151257 },	-- Torcali <Loa of Wanderers>
+					["races"] = HORDE_ONLY,
+					["coord"] = { 68.2, 29.6, 862 },
+					["lvl"] = 120,
+				}),
 				q(49769, {	-- Wreckage of the Cataclysm
 					["u"] = 1,	-- this doesn't appear to have ever made it live
 				}),
@@ -1530,51 +1603,11 @@ _.Zones =
 				}),
 				-- Start How to Train Your Direhorn Crit 4
 				q(55249, {	-- Away From the Herd
+					["provider"] = { "n", 151286 },	-- Child of Torcali
+					["isDaily"] = true,
 					["coord"] = { 68.2, 41.8, 862 },
 					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["provider"] = { "n", 151286 },	-- Child of Torcali
-				}),
-				q(55462, { 	-- The Wanderer's Call
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 151999 },	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
-					["coord"] = { 68.2, 41.6 },
-					["sourceQuests"] = { 55258 },	-- Sleep, Eat, Repeat
-				}),
-				q(55504, { 	-- Wayshrines of Zuldazar
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 151257 },	-- Torcali <Loa of Wanderers>
-					["coord"] = { 68.2, 29.6 },
-					["sourceQuests"] = { 55462 },	-- The Wanderer's Call
-				}),
-				q(55503, { 	-- The Direhorn and the Saurid
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 154607 },	-- Image of Torcali
-					["coord"] = { 52.4, 23.2 },
-					["sourceQuests"] = { 55504 },	-- Wayshrines of Zuldazar
-				}),
-				q(55506, { 	-- One Road Ends
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 154607 },	-- Image of Torcali
-					["coord"] = { 52.4, 23.2 },
-					["sourceQuests"] = { 55503 },	-- The Direhorn and the Saurid
-				}),
-				q(55505, { 	-- Roo'li's Memory
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 154607 },	-- Image of Torcali
-					["coord"] = { 62.0, 49.6 },
-					["sourceQuests"] = { 55506 },	-- One Road Ends
-				}),
-				q(55507, { 	-- Torcali's Blessing
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 151257 },	-- Torcali <Loa of Wanderers>
-					["coord"] = { 68.2, 29.4 },
-					["sourceQuests"] = { 55505 },	-- Roo'li's Memory
-					["g"] = {
-						crit(4, {	-- Torcali's Blessing
-							["achievementID"] = 13542,	-- How to Train Your Direhorn
-						}),
-					},
+					["lvl"] = 120,
 				}),
 				-- End How to Train Your Direhorn Crit 4
 				-- Start How to Train Your Direhorn Crit 5

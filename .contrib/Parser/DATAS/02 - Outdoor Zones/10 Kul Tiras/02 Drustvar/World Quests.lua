@@ -36,10 +36,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(51754, {	-- Dogged Tenacity
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53302, {	-- Flourishing Riverbud
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -86,10 +82,6 @@ _.Zones =
 						},		
 					}),
 					q(54627),	-- Paragon of the Order of Embers
-					q(51739, {	-- Rise of the Yetis
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(48515, {	-- Silver Blades
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -332,6 +324,11 @@ _.Zones =
 					q(51461, { 	-- Deathcap
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
+					}),
+					q(51754, {	-- Dogged Tenacity
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(54665, {	-- Duchess Fallensong (Faction Assault WQ)
 						["lvl"] = 110,
@@ -584,10 +581,15 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(51710, {	-- Rise of the Yetis
+					q(51710, {	-- Rise of the Yetis (A)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(51739, {	-- Rise of the Yetis (H)
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(52278, {	-- Rogue Azerite
 						["lvl"] = 120,
