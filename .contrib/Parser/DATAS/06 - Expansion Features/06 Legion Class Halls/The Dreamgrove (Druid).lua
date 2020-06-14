@@ -523,7 +523,7 @@ _.ExpansionFeatures =
 
 
 
-					spell(241857, {	-- Archdruid's Lunarwing Form
+					spell(231437, {	-- Archdruid's Lunarwing Form
 						q(46317, {	-- Talon's Call
 							["provider"] = { "n", 118105 },	-- Grovewarden Proudhorn
 							["sourceQuest"] = 46246,	-- Strike Them Down
@@ -532,18 +532,16 @@ _.ExpansionFeatures =
 						q(46318, {	-- Defense of Aviana
 							["provider"] = { "n", 106299 },	-- Thisalee Crow
 							["sourceQuest"] = 46317,	-- Talon's Call
-							["classes"] = {11},
+							["classes"] = { DRUID },
 						}),
 						q(46319, {	-- You Can't Take the Sky from Me
 							["provider"] = { "n", 106299 },	-- Thisalee Crow
 							["sourceQuest"] = 46318,	-- Defense of Aviana
-							["classes"] = {11},
+							["classes"] = { DRUID },
 							["g"] = {
-								{
-									["itemID"] = 143638, 
-									["mountID"] = 231437, 
-									["questID"] = 46319,
-								},	-- Moon-Kissed Feather
+								i(143638, {	-- Archdruid's Lunarwing Form (Druid)
+									["classes"] = { DRUID },
+								}),
 							},
 						}),
 					}),
@@ -596,15 +594,6 @@ _.ExpansionFeatures =
 					q(45172),	-- To Battle!
 					q(41413),	-- What Could Go Wrong?
 					q(45179),	-- Win the Crowd
-				--[[
-					q(46319, {	-- You Can't Take the Sky from Me
-						["g"] = {
-							{ ["itemID"] = 143638, ["mountID"] = 231437, ["questID"] = 46319 },	-- Moon-Kissed Feather
-						},
-						["lvl"] = 110,
-						["classes"] = {11}
-					}),
-					--]]
 					q(44232, {	-- The Grove Provides
 						i(139726),	-- Hood of the Dreamgrove
 					}),

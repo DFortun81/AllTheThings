@@ -155,7 +155,7 @@ i(151625, 239767);	-- Red Qiraji War Tank
 i(151626, 239766);	-- Sapphire Qiraji Resonating Crystal
 i(164762, 282682);	-- Kul Tiran Charger (Kul Tiran Allied Race)
 i(161330, 267274);	-- Mag'har Direwolf
-
+i(143638, 231437);	-- Archdruid's Lunarwing Form (Druid)
 
 ---------------
 -- PATCH 8.1 --
