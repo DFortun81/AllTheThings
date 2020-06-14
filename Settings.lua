@@ -2728,9 +2728,6 @@ MainListScaleSlider.Label:SetPoint("TOP", MainListScaleSlider, "BOTTOM", 0, 0);
 MainListScaleSlider.Label:SetText(MainListScaleSlider:GetValue());
 MainListScaleSlider:SetScript("OnValueChanged", function(self, newValue)
 	self.Label:SetText(newValue);
-	if newValue == settings:GetTooltipSetting("MainListScale") then
-		return 1;
-	end
 	settings:SetTooltipSetting("MainListScale", newValue)
 	app:GetWindow("Prime"):SetScale(newValue);
 end);
@@ -2756,9 +2753,6 @@ MiniListScaleSlider.Label:SetPoint("TOP", MiniListScaleSlider, "BOTTOM", 0, 0);
 MiniListScaleSlider.Label:SetText(MiniListScaleSlider:GetValue());
 MiniListScaleSlider:SetScript("OnValueChanged", function(self, newValue)
 	self.Label:SetText(newValue);
-	if newValue == settings:GetTooltipSetting("MiniListScale") then
-		return 1;
-	end
 	settings:SetTooltipSetting("MiniListScale", newValue)
 	for key,window in pairs(app.Windows) do
 		if key ~= "Prime" then
