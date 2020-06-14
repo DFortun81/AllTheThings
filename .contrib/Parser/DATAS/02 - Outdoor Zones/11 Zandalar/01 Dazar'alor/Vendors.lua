@@ -1219,6 +1219,7 @@ _.Zones =
 					},
 				}),
 				n(135447, {	-- Ransa Greyfeather <The Honorbound Emissary>
+					-- We need to move out outpost quests somewhere else because it now plots all those coordinates when plotting vendor
 					["coord"] = { 58.0, 62.6, 862 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -1533,7 +1534,7 @@ _.Zones =
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
 								mission(1964, {	-- Swiftwind Post
-									--["questID"] = ,	-- Triggers when completed
+									["questID"] = 53744,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
 									--["sourceQuests"] = {  },	-- Mission Start Trigger
 								}),
@@ -1541,7 +1542,7 @@ _.Zones =
 									["provider"] = { "n", 138704 },		-- Mission Command Table
 									["races"] = HORDE_ONLY,
 									["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
-									--["sourceQuests"] = {  },	-- Swiftwind Post Mission Complete
+									["sourceQuests"] = { 53744 },	-- Swiftwind Post Mission Complete
 								}),
 								q(52276, {	-- Swiftwind Post
 									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
@@ -1600,7 +1601,7 @@ _.Zones =
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
 								mission(1880, {	-- Wolf's Den
-									--["questID"] = ,	-- Triggers when completed
+									["questID"] = 53739,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
 									--["sourceQuests"] = {  },	-- Mission Start Trigger
 								}),
@@ -1608,7 +1609,7 @@ _.Zones =
 									["provider"] = { "n", 138704 },		-- Mission Command Table
 									["races"] = HORDE_ONLY,
 									["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
-									--["sourceQuests"] = {  },	-- Wolf's Den Mission Complete
+									["sourceQuests"] = { 53739 },	-- Wolf's Den Mission Complete
 								}),
 								q(52127, {	-- Wolf's Den
 									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller

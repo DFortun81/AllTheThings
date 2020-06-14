@@ -1584,10 +1584,6 @@ _.NeverImplemented =
 		q(54635),	-- additional version of Mekkatorque's Battle Plans, presumably if you don't pick it up from a mob during "Killing on the Side," but idk how that could happen
 		q(58417),	-- triggered when starting the mission "Casting the Bait" while on "Under False Colors" during the Horde War Campaign
 		q(55135),	-- triggered after finishing the mission "Casting the Bait" during the Horde War Campaign
-		
-	--	OUTPOST UPGRADES
-		q(53744),	-- finishing the Horde mission "Swiftwind Post" (https://www.wowhead.com/mission=1964/swiftwind-post)
-		q(53739),	-- finishing the Horde mission "The Wolf's Den" (https://www.wowhead.com/mission=1880/the-wolfs-den)
 
 		q(54704),	-- War Campaign - triggered when turning in "Time for War"
 		q(53147),	-- Zuldazar - Triggered when turning in "The Zanchuli Council". No idea what the ID is used to track

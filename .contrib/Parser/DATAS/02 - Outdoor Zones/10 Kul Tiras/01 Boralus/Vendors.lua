@@ -1860,6 +1860,7 @@ _.Zones =
 					},
 				}),
 				n(135446, {	-- Vindicator Jaelaana <7th Legion Emissary>
+					-- We need to move out outpost quests somewhere else because it now plots all those coordinates when plotting vendor
 					["coord"] = { 69.3, 24.9, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
