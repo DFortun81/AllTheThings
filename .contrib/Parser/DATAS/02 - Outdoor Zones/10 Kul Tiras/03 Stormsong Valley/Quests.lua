@@ -7,7 +7,7 @@ _.Zones =
 		m(942, {	-- Stormsong Valley
 			n(QUESTS, {	-- [Finalized]
 			--	NEED MAIL AZERITE REWARDS FOR "STORM'S JUDGMENT" QUEST.
-			--	NEED LEATHER / MAIL AZERITE REWARDS FOR "STORM'S END" QUEST.  same as above, leather helm is added but shoulders are missing.
+			--	NEED MAIL AZERITE REWARDS FOR "STORM'S END" QUEST.
 				q(50616, {	-- A Bit of a Bind
 					["sourceQuests"] = { 49818 },	-- Trouble at Fort Daelin
 					["provider"] = { "n", 131002 },	-- Lieutenant Bauer
@@ -1219,6 +1219,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(155180),	-- Darkwater Hood
+						i(155186),	-- Darkwater Shoulderpads
 						i(155177),	-- Dread Corsair Greathelm
 						i(155187),	-- Dread Corsair Shoulderplates
 						i(155178),	-- Tidespeaker Circlet
