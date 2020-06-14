@@ -210,7 +210,7 @@ settings.Initialize = function(self)
 	self:UpdateMode();
 	
 	if self:GetTooltipSetting("Auto:MainList") then
-		app:OpenMainList();
+		app:GetWindow("Prime"):Show();
 	end
 	if self:GetTooltipSetting("Auto:RaidAssistant") then
 		app:GetWindow("RaidAssistant"):Show();
@@ -2920,11 +2920,11 @@ function(self)
 		if app.AuctionModuleTabID then
 			if self:GetChecked() then
 				PanelTemplates_EnableTab(AuctionFrame, app.AuctionModuleTabID);
-				if app.OpenAuctionModule then app:OpenAuctionModule(); end
+				app:OpenAuctionModule();
 			else
 				PanelTemplates_DisableTab(AuctionFrame, app.AuctionModuleTabID);
 			end
-		elseif app.OpenAuctionModule then
+		else
 			app:OpenAuctionModule();
 		end
 	end

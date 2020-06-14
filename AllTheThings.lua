@@ -449,13 +449,6 @@ end
 	end
 end)();
 
-local backdrop = {
-	bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
-	edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
-	tile = true, tileSize = 16, edgeSize = 16, 
-	insets = { left = 4, right = 4, top = 4, bottom = 4 }
-};
-
 -- Game Tooltip Icon
 local GameTooltipIcon = CreateFrame("FRAME", nil, GameTooltip);
 GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
@@ -475,7 +468,12 @@ GameTooltipIcon:Hide();
 local GameTooltipModel, model, fi = CreateFrame("FRAME", "ATTGameTooltipModel", GameTooltip);
 GameTooltipModel:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
 GameTooltipModel:SetSize(128, 128);
-GameTooltipModel:SetBackdrop(backdrop);
+GameTooltipModel:SetBackdrop({
+	bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
+	edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
+	tile = true, tileSize = 16, edgeSize = 16, 
+	insets = { left = 4, right = 4, top = 4, bottom = 4 }
+});
 GameTooltipModel:SetBackdropBorderColor(1, 1, 1, 1);
 GameTooltipModel:SetBackdropColor(0, 0, 0, 1);
 GameTooltipModel.Models = {};
@@ -522,6 +520,12 @@ GameTooltipModel.SetCreatureID = function(self, creatureID)
 		end
 	end
 	self:Show();
+end
+GameTooltipModel.SetRotation = function(number)
+	GameTooltipModel.Model:SetFacing(number and ((number * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
+end
+GameTooltipModel.SetScale = function(number)
+	GameTooltipModel.Model:SetCamDistanceScale(number or 1);
 end
 GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 	if displayInfos then
@@ -3436,9 +3440,6 @@ local function ExportData(group)
 		SetDataMember("EXPORT_DATA", ExportDataRecursively(group, ""));
 	end
 end
-local function OpenMainList()
-	app:OpenWindow("Prime");
-end
 local function RefreshSavesCoroutine()
 	local waitTimer = 30;
 	while waitTimer > 0 do
@@ -3654,10 +3655,7 @@ local function RefreshCollections()
 				end
 			end
 		end
-		
-		-- Refresh the Collection Windows!
 		app:RefreshData(false, false, true);
-		collectgarbage();
 		
 		-- Report success.
 		app.print("Done refreshing collection.");
@@ -3683,8 +3681,6 @@ local function RefreshMountCollection()
 		
 		-- Wait a frame before harvesting item collection status.
 		coroutine.yield();
-		
-		-- Refresh the Collection Windows!
 		app:RefreshData(false, true);
 		
 		-- Wait 2 frames before refreshing states.
@@ -3743,11 +3739,10 @@ app.GetMapName = function(mapID)
 	end
 end
 app.ToggleMainList = function()
-	app:ToggleWindow("Prime");
+	app:GetWindow("Prime"):Toggle();
 end
 app.RefreshCollections = RefreshCollections;
 app.RefreshSaves = RefreshSaves;
-app.OpenMainList = OpenMainList;
 
 -- Tooltip Functions
 local function AttachTooltipRawSearchResults(self, group)
@@ -8046,9 +8041,39 @@ local function CreateMinimapButton()
 end
 app.CreateMinimapButton = CreateMinimapButton;
 
--- Row Helper Functions
+
+-- Panel Class Library
+(function()
+-- Shared Panel Functions
+local function OnCloseButtonPressed(self)
+	self:GetParent():Hide();
+end
+local function SetVisible(self, show)
+	if show then
+		self:Show();
+		self:Update();
+	else
+		self:Hide();
+	end
+end
+local function Toggle(self)
+	return SetVisible(self, not self:IsVisible());
+end
+
+
+-- OPTIMIZE THESE FOR THE LOVE OF GOD
+app.Windows = {};
+function app:UpdateWindows(force, got)
+	local anyUpdated = false;
+	for name, window in pairs(app.Windows) do
+		if window:Update(force, got) then
+			anyUpdated = true;
+		end
+	end
+	return anyUpdated;
+end
 local CreateRow;
-local function CreateMiniListForGroup(group)
+function app:CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
 	local suffix = BuildSourceTextForChat(group, 0) .. " -> " .. (group.text or "") .. (group.key and group[group.key] or "");
 	local popout = app.Windows[suffix];
@@ -8565,11 +8590,19 @@ local function SetRowData(self, row, data)
 		row:Hide();
 	end
 end
-local function UpdateVisibleRowData(self)
+local function Refresh(self)
+	if self:GetHeight() > 64 then self.ScrollBar:Show(); else self.ScrollBar:Hide(); end
+	if self:GetHeight() < 40 then
+		self.CloseButton:Hide();
+		self.Grip:Hide();
+	else
+		self.CloseButton:Show();
+		self.Grip:Show();
+	end
+	
 	-- If there is no raw data, then return immediately.
 	local rowData = rawget(self, "rowData");
 	if not rowData then return; end
-	if self:GetHeight() > 64 then self.ScrollBar:Show(); else self.ScrollBar:Hide(); end
 	
 	-- Make it so that if you scroll all the way down, you have the ability to see all of the text every time.
 	local totalRowCount = #rowData;
@@ -8613,7 +8646,7 @@ local function UpdateVisibleRowData(self)
 				while self.processingLinks do
 					self.processingLinks = nil;
 					coroutine.yield();
-					UpdateVisibleRowData(self);
+					self:Refresh();
 				end
 				if self.UpdateDone then
 					StartCoroutine(self:GetName()..":UpdateDone", function()
@@ -8638,9 +8671,6 @@ local function UpdateVisibleRowData(self)
 		self:Hide();
 	end
 end
-local function HideParent(self)
-	self:GetParent():Toggle();
-end
 local function IsSelfOrChild(self, focus)
 	-- This function helps validate that the focus is within the local hierarchy.
 	return focus and (self == focus or IsSelfOrChild(self, focus:GetParent()));
@@ -8663,8 +8693,7 @@ local function StartMovingOrSizing(self, fromChild)
 			self:StartSizing();
 			Push(self, "StartMovingOrSizing (Sizing)", function()
 				if self.isMoving then
-					--self:Update();
-					UpdateVisibleRowData(self);
+					self:Refresh();
 					return true;
 				end
 			end);
@@ -8699,7 +8728,7 @@ local function RowOnClick(self, button)
 				app.print("Finished Sorting.");
 			else
 				if self.index > 0 then
-					CreateMiniListForGroup(reference);
+					app:CreateMiniListForGroup(reference);
 				else
 					app.Settings:Open();
 				end
@@ -8856,7 +8885,7 @@ local function RowOnClick(self, button)
 					else
 						ExpandGroupsRecursively(reference, not reference.expanded, true);
 					end
-					app:UpdateWindows();
+					self:GetParent():GetParent():Update();
 					return true;
 				end
 			end
@@ -9397,9 +9426,6 @@ CreateRow = function(self)
 	ClearRowData(row);
 	return row;
 end
-
--- Collection Window Creation
-app.Windows = {};
 local function OnScrollBarMouseWheel(self, delta)
 	self.ScrollBar:SetValue(self.ScrollBar.CurrentValue - delta);
 end
@@ -9407,35 +9433,7 @@ local function OnScrollBarValueChanged(self, value)
 	local un = math.floor(value);
 	local up = un + 1;
 	self.CurrentValue = (up - value) > (-(un - value)) and un or up;
-	--self:GetParent():Update();
-	UpdateVisibleRowData(self:GetParent());
-end
-local function SetWindowVisibility(self, show)
-	if show then
-		self:Show();
-		self:Update();
-	else
-		self:Hide();
-		for i, self in pairs(app.Windows) do
-			if self:IsVisible() then
-				return;
-			end
-		end
-	end
-	
-	-- Return that at least one window is visible...
-	return true;
-end
-local function ToggleWindow(self)
-	return SetWindowVisibility(self, not self:IsVisible());
-end
-function app:OpenWindow(suffix)
-	local window = app.Windows[suffix];
-	if window then SetWindowVisibility(window, true); end
-end
-function app:ToggleWindow(suffix)
-	local window = app.Windows[suffix];
-	if window then ToggleWindow(window); end
+	self:GetParent():Refresh();
 end
 local function ProcessGroup(data, object)
 	if app.VisibilityFilter(object) then
@@ -9447,73 +9445,54 @@ local function ProcessGroup(data, object)
 		end
 	end
 end
-local function UpdateWindow(self, force, got)
-	-- If this window doesn't have data, do nothing.
-	if not self.data then return; end
-	if not self.rowData then
-		self.rowData = {};
-	else
-		wipe(self.rowData);
-	end
-	if self.data and (force or self:IsVisible()) then
-		self.data.expanded = true;
-		if self.shouldFullRefresh and (force or got) then
-			self.data.progress = 0;
-			self.data.total = 0;
-			UpdateGroups(self.data, self.data.g);
-		end
-		ProcessGroup(self.rowData, self.data);
-		
-		-- Does this user have everything?
-		if self.data.total then
-			if self.data.total <= self.data.progress then
-				if #self.rowData < 1 then
-					self.data.back = 1;
-					tinsert(self.rowData, self.data);
-				end
-				if self.missingData then
-					if got then app:PlayCompleteSound(); end
-					self.missingData = nil;
-				end
-				tinsert(self.rowData, {
-					["text"] = "No entries matching your filters were found.",
-					["description"] = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.",
-					["collectible"] = 1,
-					["collected"] = 1,
-					["back"] = 0.7
-				});
+local function Update(self, force, got)
+	if self.data then
+		--print((self.Suffix or self.suffix) .. ": Update", force, self:IsVisible());
+		if force or self:IsVisible() then
+			if not self.rowData then
+				self.rowData = {};
 			else
-				self.missingData = true;
+				wipe(self.rowData);
 			end
-		else
-			self.missingData = nil;
+			self.data.expanded = true;
+			if self.shouldFullRefresh and (force or got) then
+				self.data.progress = 0;
+				self.data.total = 0;
+				UpdateGroups(self.data, self.data.g);
+			end
+			ProcessGroup(self.rowData, self.data);
+			
+			-- Does this user have everything?
+			if self.data.total then
+				if self.data.total <= self.data.progress then
+					if #self.rowData < 1 then
+						self.data.back = 1;
+						tinsert(self.rowData, self.data);
+					end
+					if self.missingData then
+						if got then app:PlayCompleteSound(); end
+						self.missingData = nil;
+					end
+					tinsert(self.rowData, {
+						["text"] = "No entries matching your filters were found.",
+						["description"] = "If you believe this was in error, try activating 'Debug Mode'. One of your filters may be restricting the visibility of the group.",
+						["collectible"] = 1,
+						["collected"] = 1,
+						["back"] = 0.7
+					});
+				else
+					self.missingData = true;
+				end
+			else
+				self.missingData = nil;
+			end
+			
+			self:Refresh();
+			return true;
 		end
-		
-		UpdateVisibleRowData(self);
-		return true;
-	else
-		UpdateVisibleRowData(self);
 	end
 end
-local function UpdateWindowColor(self, suffix)
-	self:SetBackdropBorderColor(1, 1, 1, 1);
-	self:SetBackdropColor(0, 0, 0, 1);
-end
-function app:UpdateWindows(force, got)
-	local anyUpdated = false;
-	for name, window in pairs(app.Windows) do
-		if window:Update(force, got) then
-			--print(name .. ": Updated");
-			anyUpdated = true;
-		end
-	end
-	return anyUpdated;
-end
-function app:UpdateWindowColors()
-	for suffix, window in pairs(app.Windows) do
-		UpdateWindowColor(window, suffix);
-	end
-end
+
 function app:GetDataCache()
 	-- Update the Row Data by filtering raw data
 	local allData = app:GetWindow("Prime").data;
@@ -10145,6 +10124,15 @@ function app:GetDataCache()
 	end
 	return allData;
 end
+
+local backdrop = {
+	bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
+	edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
+	tile = true, tileSize = 16, edgeSize = 16, 
+	insets = { left = 4, right = 4, top = 4, bottom = 4 }
+};
+
+-- Collection Window Creation
 function app:RefreshData(lazy, got, manual)
 	--print("RefreshData(" .. tostring(lazy or false) .. ", " .. tostring(got or false) .. ")");
 	app.refreshDataForce = app.refreshDataForce or not lazy;
@@ -10183,7 +10171,6 @@ function app:RefreshData(lazy, got, manual)
 			app.lastMsg = msg;
 		end
 		wipe(searchCache);
-		collectgarbage();
 	end);
 end
 function app:GetWindow(suffix, parent, onUpdate)
@@ -10193,9 +10180,10 @@ function app:GetWindow(suffix, parent, onUpdate)
 		window = CreateFrame("FRAME", app:GetName() .. "-Window-" .. suffix, parent or UIParent);
 		app.Windows[suffix] = window;
 		window.Suffix = suffix;
-		window.Toggle = ToggleWindow;
-		window.Update = onUpdate or UpdateWindow;
-		window.SetVisible = SetWindowVisibility;
+		window.Refresh = Refresh;
+		window.BaseUpdate = Update;
+		window.Toggle = Toggle;
+		window.SetVisible = SetVisible;
 		if AllTheThingsSettings then
 			if suffix == "Prime" then
 				window:SetScale(app.Settings:GetTooltipSetting("MainListScale"));
@@ -10238,7 +10226,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		-- The Close Button. It's assigned as a local variable so you can change how it behaves.
 		window.CloseButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
 		window.CloseButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", 4, 3);
-		window.CloseButton:SetScript("OnClick", HideParent);
+		window.CloseButton:SetScript("OnClick", OnCloseButtonPressed);
 		
 		-- The Scroll Bar.
 		local scrollbar = CreateFrame("Slider", nil, window, "UIPanelScrollBarTemplate");
@@ -10262,6 +10250,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		grip:SetSize(16, 16);
 		grip:SetTexCoord(0,1,0,1);
 		grip:SetPoint("BOTTOMRIGHT", -5, 5);
+		window.Grip = grip;
 		
 		-- The Row Container. This contains all of the row frames.
 		local container = CreateFrame("FRAME", nil, window);
@@ -10272,10 +10261,20 @@ function app:GetWindow(suffix, parent, onUpdate)
 		container.rows = {};
 		scrollbar:SetValue(1);
 		container:Show();
+		
+		-- Update Function Pointers
+		if onUpdate then
+			window.Update = onUpdate;
+		else
+			window.Update = Update;
+		end
 		window:Update(true);
 	end
 	return window;
 end
+end)();
+
+
 
 -- Create the Primary Collection Window (this allows you to save the size and location)
 app:GetWindow("Prime"):SetSize(425, 305);
@@ -10303,11 +10302,11 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 						if app.Settings:GetTooltipSetting("Auto:BountyList") then
 							app.Settings:SetTooltipSetting("Auto:BountyList", false);
 							row.ref.saved = false;
-							UpdateWindow(self, true, got);
+							self:BaseUpdate(true, got);
 						else
 							app.Settings:SetTooltipSetting("Auto:BountyList", true);
 							row.ref.saved = true;
-							UpdateWindow(self, true, got);
+							self:BaseUpdate(true, got);
 						end
 						return true;
 					end,
@@ -10393,7 +10392,7 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 		self.data.indent = 0;
 		UpdateGroups(self.data, self.data.g);
 		self.data.visible = true;
-		UpdateWindow(self, true, got);
+		self:BaseUpdate(true, got);
 	end
 end);
 app:GetWindow("CosmicInfuser", UIParent, function(self)
@@ -10470,344 +10469,9 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 		self.data.back = 1;
 		BuildGroups(self.data, self.data.g);
 		UpdateGroups(self.data, self.data.g);
-		UpdateWindow(self, true);
+		self:BaseUpdate(true);
 	end
 end);
---[[--
--- Uncomment this section if you need to enable Debugger:
-app.ModelViewer = GameTooltipModel;
-app.ModelViewer.SetRotation = function(number)
-	GameTooltipModel.Model:SetFacing(number and ((number * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-end
-app.ModelViewer.SetScale = function(number)
-	GameTooltipModel.Model:SetCamDistanceScale(number or 1);
-end
--- CLEU binding only happens when debugger is enabled because of how expensive it can get in large mob farms
-app:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
-app.events.COMBAT_LOG_EVENT_UNFILTERED = function()
-	local _,event = CombatLogGetCurrentEventInfo();
-	if event == "UNIT_DIED" or event == "UNIT_DESTROYED" then
-		RefreshQuestCompletionState()
-	end
-end
--- This event is helpful for world objects used as treasures. Won't help with objects without rewards (e.g. cat statues in Nazjatar)
-app:RegisterEvent("LOOT_OPENED")
-app.events.LOOT_OPENED = function()
-	local guid = GetLootSourceInfo(1)
-	if guid then 
-		local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
-		if(type == "GameObject") then
-		  local text = GameTooltipTextLeft1:GetText()
-		  print('ObjectID: '..(npc_id or 'UNKNOWN').. ' || ' .. 'Name: ' .. (text or 'UNKNOWN'))
-		  RefreshQuestCompletionState()
-	   end
-	end
-end
-app:GetWindow("Debugger", UIParent, function(self)
-	if not self.initialized then
-		self.initialized = true;
-		self.data = {
-			['text'] = "Session History",
-			['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp", 
-			["description"] = "This keeps a visual record of all of the quests, maps, loot, and vendors that you have come into contact with since the session was started.",
-			['visible'] = true, 
-			['expanded'] = true,
-			['back'] = 1,
-			['options'] = {
-				{
-					['text'] = "Clear History",
-					['icon'] = "Interface\\Icons\\Ability_Rogue_FeignDeath.blp", 
-					["description"] = "Click this to fully clear this window.\n\nNOTE: If you click this by accident, use the dynamic Restore Buttons that this generates to reapply the data that was cleared.\n\nWARNING: If you reload the UI, the data stored in the Reload Button will be lost forever!",
-					['visible'] = true,
-					['count'] = 0,
-					['OnClick'] = function(row, button)
-						local copy = {};
-						for i,o in ipairs(self.rawData) do
-							tinsert(copy, o);
-						end
-						if #copy < 1 then
-							app.print("There is nothing to clear.");
-							return true;
-						end
-						row.ref.count = row.ref.count + 1;
-						tinsert(self.data.options, {
-							['text'] = "Restore Button " .. row.ref.count,
-							['icon'] = "Interface\\Icons\\ability_monk_roll.blp", 
-							["description"] = "Click this to restore your cleared data.\n\nNOTE: Each Restore Button houses different data.\n\nWARNING: This data will be lost forever when you reload your UI!",
-							['visible'] = true,
-							['data'] = copy,
-							['OnClick'] = function(row, button)
-								for i,info in ipairs(row.ref.data) do
-									MergeObject(self.data.g, CreateObject(info));
-									MergeObject(self.rawData, info);
-								end
-								self:Update();
-								return true;
-							end,
-						});
-						wipe(self.rawData);
-						wipe(self.data.g);
-						for i=#self.data.options,1,-1 do
-							tinsert(self.data.g, 1, self.data.options[i]);
-						end
-						self:Update();
-						return true;
-					end,
-				},
-			},
-			['g'] = {},
-		};
-		self.rawData = {};
-		
-		-- Setup Event Handlers and register for events
-		self:SetScript("OnEvent", function(self, e, ...)
-			print(e, ...);
-			if e == "VARIABLES_LOADED" then
-				if not AllTheThingsDebugData then
-					AllTheThingsDebugData = app.GetDataMember("Debugger", {});
-					app.SetDataMember("Debugger", nil);
-				end
-				self.rawData = AllTheThingsDebugData;
-				self.data.g = CreateObject(self.rawData);
-				for i=#self.data.options,1,-1 do
-					tinsert(self.data.g, 1, self.data.options[i]);
-				end
-				self:Update();
-			elseif e == "ZONE_CHANGED_NEW_AREA" or e == "NEW_WMO_CHUNK" then
-				-- Bubble Up the Maps
-				local mapInfo, info;
-				local mapID = app.GetCurrentMapID();
-				if mapID then
-					repeat
-						mapInfo = C_Map.GetMapInfo(mapID);
-						if mapInfo then
-							info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
-							mapID = mapInfo.parentMapID
-						end
-					until not mapInfo or not mapID;
-					
-					MergeObject(self.data.g, CreateObject(info));
-					MergeObject(self.rawData, info);
-					self:Update();
-				end
-			elseif e == "MERCHANT_SHOW" or e == "MERCHANT_UPDATE" then
-				MerchantFrame_SetFilter(MerchantFrame, 1);
-				C_Timer.After(0.6, function()
-					local guid = UnitGUID("npc");
-					local ty, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid;
-					if guid then ty, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid); end
-					if npc_id then
-						npc_id = tonumber(npc_id);
-						
-						-- Ignore vendor mount...
-						if npc_id == 62822 then
-							return true;
-						end
-						
-						local numItems = GetMerchantNumItems();
-						print("MERCHANT DETAILS", ty, npc_id, numItems);
-						
-						local rawGroups = {};
-						for i=1,numItems,1 do
-							local link = GetMerchantItemLink(i);
-							if link then
-								local name, texture, cost, quantity, numAvailable, isPurchasable, isUsable, extendedCost = GetMerchantItemInfo(i);
-								if extendedCost then
-									cost = {};
-									local itemCount = GetMerchantItemCostInfo(i);
-									for j=1,itemCount,1 do
-										local itemTexture, itemValue, itemLink = GetMerchantItemCostItem(i, j);
-										if itemLink then
-											-- print("  ", itemValue, itemLink, gsub(itemLink, "\124", "\124\124"));
-											local m = itemLink:match("currency:(%d+)");
-											if m then
-												-- Parse as a CURRENCY.
-												tinsert(cost, {"c", tonumber(m), itemValue});
-											else
-												-- Parse as an ITEM.
-												tinsert(cost, {"i", tonumber(itemLink:match("item:(%d+)")), itemValue});
-											end
-										end
-									end
-								end
-								
-								-- Parse as an ITEM LINK.
-								table.insert(rawGroups, {["itemID"] = tonumber(link:match("item:(%d+)")), ["cost"] = cost});
-							end
-						end
-						
-						local info = { [(ty == "GameObject") and "objectID" or "npcID"] = npc_id };
-						info.faction = UnitFactionGroup("npc");
-						info.text = UnitName("npc");
-						info.g = rawGroups;
-						self:AddObject(info);
-					end
-				end);
-			elseif e == "TRADE_SKILL_LIST_UPDATE" then
-				local tradeSkillID = AllTheThings.GetTradeSkillLine();
-				local currentCategoryGroup, currentCategoryID, categories = {}, -1, {};
-				local categoryList, rawGroups = {}, {};
-				local categoryIDs = { C_TradeSkillUI.GetCategories() };
-				for i = 1,#categoryIDs do
-					currentCategoryID = categoryIDs[i];
-					local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
-					if categoryData then
-						if not categories[currentCategoryID] then
-							local category = { 
-								["parentCategoryID"] = categoryData.parentCategoryID,
-								["categoryID"] = currentCategoryID,
-								["name"] = categoryData.name,
-								["g"] = {}
-							};
-							categories[currentCategoryID] = category;
-							table.insert(categoryList, category);
-						end
-					end
-				end
-				
-				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
-				for i = 1,#recipeIDs do
-					local spellRecipeInfo = {};
-					if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
-						currentCategoryID = spellRecipeInfo.categoryID;
-						if not categories[currentCategoryID] then
-							local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
-							if categoryData then
-								local category = { 
-									["parentCategoryID"] = categoryData.parentCategoryID,
-									["categoryID"] = currentCategoryID,
-									["name"] = categoryData.name, 
-									["g"] = {}
-								};
-								categories[currentCategoryID] = category;
-								table.insert(categoryList, category);
-							end
-						end
-						local recipe = {
-							["recipeID"] = spellRecipeInfo.recipeID,
-							["requireSkill"] = tradeSkillID,
-							["name"] = spellRecipeInfo.name,
-						};
-						if spellRecipeInfo.previousRecipeID then
-							recipe.previousRecipeID = spellRecipeInfo.previousRecipeID;
-						end
-						if spellRecipeInfo.nextRecipeID then
-							recipe.nextRecipeID = spellRecipeInfo.nextRecipeID;
-						end
-						table.insert(categories[currentCategoryID].g, recipe);
-					end
-				end
-				
-				-- Make each category parent have children. (not as gross as that sounds)
-				for i=#categoryList,1,-1 do
-					local category = categoryList[i];
-					if category.parentCategoryID then
-						local parentCategory = categories[category.parentCategoryID];
-						category.parentCategoryID = nil;
-						if parentCategory then
-							table.insert(parentCategory.g, 1, category); 
-							table.remove(categoryList, i);
-						end
-					end
-				end
-				
-				-- Now merge the categories into the raw groups table.
-				for i,category in ipairs(categoryList) do
-					table.insert(rawGroups, category);
-				end
-				local info = { 
-					["professionID"] = tradeSkillID, 
-					["icon"] = C_TradeSkillUI.GetTradeSkillTexture(tradeSkillID),
-					["name"] = C_TradeSkillUI.GetTradeSkillDisplayName(tradeSkillID),
-					["g"] = rawGroups
-				};
-				MergeObject(self.data.g, CreateObject(info));
-				MergeObject(self.rawData, info);
-				self:Update();
-			elseif e == "QUEST_DETAIL" then
-				local questStartItemID = ...;
-				local questID = GetQuestID();
-				if questID == 0 then return false; end
-				local npc = "questnpc";
-				local guid = UnitGUID(npc);
-				if not guid then
-					npc = "npc";
-					guid = UnitGUID(npc);
-				end
-				local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid;
-				if guid then type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid); end
-				print("QUEST_DETAIL", questStartItemID, " => Quest #", questID, type, npc_id);
-				
-				local rawGroups = {};
-				for i=1,GetNumQuestRewards(),1 do
-					local link = GetQuestItemLink("reward", i);
-					if link then table.insert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
-				end
-				for i=1,GetNumQuestChoices(),1 do
-					local link = GetQuestItemLink("choice", i);
-					if link then table.insert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
-				end
-				for i=1,GetNumQuestLogRewardSpells(questID),1 do
-					local texture, name, isTradeskillSpell, isSpellLearned, hideSpellLearnText, isBoostSpell, garrFollowerID, genericUnlock, spellID = GetQuestLogRewardSpell(i, questID);
-					if garrFollowerID then
-						table.insert(rawGroups, { ["followerID"] = garrFollowerID, ["name"] = name });
-					elseif spellID then
-						if isTradeskillSpell then
-							table.insert(rawGroups, { ["recipeID"] = spellID, ["name"] = name });
-						else
-							table.insert(rawGroups, { ["spellID"] = spellID, ["name"] = name });
-						end
-					end
-				end
-				
-				local info = { ["questID"] = questID, ["g"] = rawGroups };
-				if questStartItemID and questStartItemID > 0 then info.itemID = questStartItemID; end
-				if npc_id then
-					npc_id = tonumber(npc_id);
-					if type == "GameObject" then
-						info = { ["objectID"] = npc_id, ["text"] = UnitName(npc), ["g"] = { info } };
-					else
-						info.qgs = {npc_id};
-						info.name = UnitName(npc);
-					end
-					info.faction = UnitFactionGroup(npc);
-				end
-				self:AddObject(info);
-			elseif e == "CHAT_MSG_LOOT" then
-				local msg, player, a, b, c, d, e, f, g, h, i, j, k, l = ...;
-				local itemString = string.match(msg, "item[%-?%d:]+");
-				if itemString then
-					local rawGroups = {};
-					local itemID = GetItemInfoInstant(itemString);
-					table.insert(rawGroups, { ["itemID"] = itemID, ["s"] = app.GetSourceID(itemString, itemID) });
-					self:AddObject({ ["unit"] = j, ["g"] = rawGroups });
-				end
-			end
-		end);
-		self:RegisterEvent("VARIABLES_LOADED");
-		self:RegisterEvent("QUEST_DETAIL");
-		self:RegisterEvent("QUEST_LOOT_RECEIVED");
-		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
-		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
-		self:RegisterEvent("NEW_WMO_CHUNK");
-		self:RegisterEvent("MERCHANT_SHOW");
-		self:RegisterEvent("MERCHANT_UPDATE");
-		self:RegisterEvent("CHAT_MSG_LOOT");
-		--self:RegisterAllEvents();
-	end
-	
-	-- Update the window and all of its row data
-	if self.data.OnUpdate then self.data.OnUpdate(self.data); end
-	for i,g in ipairs(self.data.g) do
-		if g.OnUpdate then g.OnUpdate(g); end
-	end
-	self.data.index = 0;
-	self.data.back = 1;
-	self.data.indent = 0;
-	BuildGroups(self.data, self.data.g);
-	UpdateWindow(self, true);
-end):Show();
---]]--
 app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 	if not self.initialized then
 		self.initialized = true;
@@ -11220,7 +10884,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		self.data.indent = 0;
 		UpdateGroups(self.data, self.data.g);
 		self.data.visible = true;
-		UpdateWindow(self, true, got);
+		self:BaseUpdate(true, got);
 	end
 end);
 app:GetWindow("Harvester", UIParent, function(self)
@@ -11293,11 +10957,11 @@ app:GetWindow("Harvester", UIParent, function(self)
 						end
 					end
 				end
-				UpdateVisibleRowData(self);
+				self:Refresh();
 			end
 		end
 		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
-		UpdateWindow(self, true);
+		self:BaseUpdate(true);
 	end
 end);
 app:GetWindow("SourceFinder", UIParent, function(self)
@@ -11395,7 +11059,7 @@ app:GetWindow("SourceFinder", UIParent, function(self)
 		BuildGroups(self.data, self.data.g);
 		UpdateGroups(self.data, self.data.g);
 		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
-		UpdateWindow(self, true);
+		self:BaseUpdate(true);
 	end
 end);
 app:GetWindow("RaidAssistant", UIParent, function(self)
@@ -11625,7 +11289,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 								PVEFrame_ToggleFrame("GroupFinderFrame")
 							end
 							self.data = raidassistant;
-							UpdateWindow(self, true);
+							self:BaseUpdate(true);
 							return true;
 						end,
 						['OnUpdate'] = function(data)
@@ -11643,7 +11307,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 								PVEFrame_ToggleFrame("GroupFinderFrame")
 							end
 							self.data = raidassistant;
-							UpdateWindow(self, true);
+							self:BaseUpdate(true);
 							return true;
 						end,
 						['OnUpdate'] = function(data)
@@ -11830,7 +11494,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 		local visibilityFilter = app.VisibilityFilter;
 		app.VisibilityFilter = app.ObjectVisibilityFilter;
 		BuildGroups(self.data, self.data.g);
-		UpdateWindow(self, true);
+		self:BaseUpdate(true);
 		app.VisibilityFilter = visibilityFilter;
 	end
 end);
@@ -12257,7 +11921,7 @@ app:GetWindow("Random", UIParent, function(self)
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							self.data = filterHeader;
-							UpdateWindow(self, true);
+							self:BaseUpdate(true);
 							return true;
 						end,
 						['OnUpdate'] = function(data) 
@@ -12326,7 +11990,7 @@ app:GetWindow("Random", UIParent, function(self)
 		self.data.indent = 0;
 		BuildGroups(self.data, self.data.g);
 		UpdateGroups(self.data, self.data.g);
-		UpdateWindow(self, true);
+		self:BaseUpdate(true);
 	end
 end);
 app:GetWindow("Tradeskills", UIParent, function(self, ...)
@@ -12645,7 +12309,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 		self.data.progress = 0;
 		self.data.total = 0;
 		UpdateGroups(self.data, self.data.g);
-		UpdateWindow(self, ...);
+		self:BaseUpdate(...);
 	end
 end);
 app:GetWindow("WorldQuests", UIParent, function(self)
@@ -13378,7 +13042,6 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					MergeObject(self.data.g, CreateObject(o));
 				end
 				if not no then self:Update(); end
-				collectgarbage();
 			end
 			self.Sort = function(a, b)
 				if a.isRaid then
@@ -13417,9 +13080,365 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 		self.data.total = 0;
 		BuildGroups(self.data, self.data.g);
 		UpdateGroups(self.data, self.data.g);
-		UpdateWindow(self, true);
+		self:BaseUpdate(true);
 	end
 end);
+
+-- WARNING: DEV ONLY START
+--[[--
+-- Uncomment this section if you need to enable Debugger:
+-- CLEU binding only happens when debugger is enabled because of how expensive it can get in large mob farms
+app:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
+app.events.COMBAT_LOG_EVENT_UNFILTERED = function()
+	local _,event = CombatLogGetCurrentEventInfo();
+	if event == "UNIT_DIED" or event == "UNIT_DESTROYED" then
+		RefreshQuestCompletionState()
+	end
+end
+-- This event is helpful for world objects used as treasures. Won't help with objects without rewards (e.g. cat statues in Nazjatar)
+app:RegisterEvent("LOOT_OPENED")
+app.events.LOOT_OPENED = function()
+	local guid = GetLootSourceInfo(1)
+	if guid then 
+		local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
+		if(type == "GameObject") then
+		  local text = GameTooltipTextLeft1:GetText()
+		  print('ObjectID: '..(npc_id or 'UNKNOWN').. ' || ' .. 'Name: ' .. (text or 'UNKNOWN'))
+		  RefreshQuestCompletionState()
+	   end
+	end
+end
+app:GetWindow("Debugger", UIParent, function(self)
+	if not self.initialized then
+		self.initialized = true;
+		self.data = {
+			['text'] = "Session History",
+			['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp", 
+			["description"] = "This keeps a visual record of all of the quests, maps, loot, and vendors that you have come into contact with since the session was started.",
+			['visible'] = true, 
+			['expanded'] = true,
+			['back'] = 1,
+			['options'] = {
+				{
+					['text'] = "Clear History",
+					['icon'] = "Interface\\Icons\\Ability_Rogue_FeignDeath.blp", 
+					["description"] = "Click this to fully clear this window.\n\nNOTE: If you click this by accident, use the dynamic Restore Buttons that this generates to reapply the data that was cleared.\n\nWARNING: If you reload the UI, the data stored in the Reload Button will be lost forever!",
+					['visible'] = true,
+					['count'] = 0,
+					['OnClick'] = function(row, button)
+						local copy = {};
+						for i,o in ipairs(self.rawData) do
+							tinsert(copy, o);
+						end
+						if #copy < 1 then
+							app.print("There is nothing to clear.");
+							return true;
+						end
+						row.ref.count = row.ref.count + 1;
+						tinsert(self.data.options, {
+							['text'] = "Restore Button " .. row.ref.count,
+							['icon'] = "Interface\\Icons\\ability_monk_roll.blp", 
+							["description"] = "Click this to restore your cleared data.\n\nNOTE: Each Restore Button houses different data.\n\nWARNING: This data will be lost forever when you reload your UI!",
+							['visible'] = true,
+							['data'] = copy,
+							['OnClick'] = function(row, button)
+								for i,info in ipairs(row.ref.data) do
+									MergeObject(self.data.g, CreateObject(info));
+									MergeObject(self.rawData, info);
+								end
+								self:Update();
+								return true;
+							end,
+						});
+						wipe(self.rawData);
+						wipe(self.data.g);
+						for i=#self.data.options,1,-1 do
+							tinsert(self.data.g, 1, self.data.options[i]);
+						end
+						self:Update();
+						return true;
+					end,
+				},
+			},
+			['g'] = {},
+		};
+		self.rawData = {};
+		
+		local AddObject = function(info)
+			-- Bubble Up the Maps
+			local mapInfo;
+			local mapID = app.GetCurrentMapID();
+			if mapID then
+				local pos = C_Map.GetPlayerMapPosition(mapID, "player");
+				if pos then
+					local px, py = pos:GetXY();
+					info.coord = { px * 100, py * 100, mapID };
+				end
+				repeat
+					mapInfo = C_Map.GetMapInfo(mapID);
+					if mapInfo then
+						info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
+						mapID = mapInfo.parentMapID
+					end
+				until not mapInfo or not mapID;
+			end
+			
+			MergeObject(self.data.g, CreateObject(info));
+			MergeObject(self.rawData, info);
+			self:Update();
+		end
+		
+		
+		-- Setup Event Handlers and register for events
+		self:SetScript("OnEvent", function(self, e, ...)
+			print(e, ...);
+			if e == "VARIABLES_LOADED" then
+				if not AllTheThingsDebugData then
+					AllTheThingsDebugData = app.GetDataMember("Debugger", {});
+					app.SetDataMember("Debugger", nil);
+				end
+				self.rawData = AllTheThingsDebugData;
+				self.data.g = CreateObject(self.rawData);
+				for i=#self.data.options,1,-1 do
+					tinsert(self.data.g, 1, self.data.options[i]);
+				end
+				self:Update();
+			elseif e == "ZONE_CHANGED_NEW_AREA" or e == "NEW_WMO_CHUNK" then
+				-- Bubble Up the Maps
+				local mapInfo, info;
+				local mapID = app.GetCurrentMapID();
+				if mapID then
+					repeat
+						mapInfo = C_Map.GetMapInfo(mapID);
+						if mapInfo then
+							info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
+							mapID = mapInfo.parentMapID
+						end
+					until not mapInfo or not mapID;
+					
+					MergeObject(self.data.g, CreateObject(info));
+					MergeObject(self.rawData, info);
+					self:Update();
+				end
+			elseif e == "MERCHANT_SHOW" or e == "MERCHANT_UPDATE" then
+				MerchantFrame_SetFilter(MerchantFrame, 1);
+				C_Timer.After(0.6, function()
+					local guid = UnitGUID("npc");
+					local ty, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid;
+					if guid then ty, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid); end
+					if npc_id then
+						npc_id = tonumber(npc_id);
+						
+						-- Ignore vendor mount...
+						if npc_id == 62822 then
+							return true;
+						end
+						
+						local numItems = GetMerchantNumItems();
+						print("MERCHANT DETAILS", ty, npc_id, numItems);
+						
+						local rawGroups = {};
+						for i=1,numItems,1 do
+							local link = GetMerchantItemLink(i);
+							if link then
+								local name, texture, cost, quantity, numAvailable, isPurchasable, isUsable, extendedCost = GetMerchantItemInfo(i);
+								if extendedCost then
+									cost = {};
+									local itemCount = GetMerchantItemCostInfo(i);
+									for j=1,itemCount,1 do
+										local itemTexture, itemValue, itemLink = GetMerchantItemCostItem(i, j);
+										if itemLink then
+											-- print("  ", itemValue, itemLink, gsub(itemLink, "\124", "\124\124"));
+											local m = itemLink:match("currency:(%d+)");
+											if m then
+												-- Parse as a CURRENCY.
+												tinsert(cost, {"c", tonumber(m), itemValue});
+											else
+												-- Parse as an ITEM.
+												tinsert(cost, {"i", tonumber(itemLink:match("item:(%d+)")), itemValue});
+											end
+										end
+									end
+								end
+								
+								-- Parse as an ITEM LINK.
+								table.insert(rawGroups, {["itemID"] = tonumber(link:match("item:(%d+)")), ["cost"] = cost});
+							end
+						end
+						
+						local info = { [(ty == "GameObject") and "objectID" or "npcID"] = npc_id };
+						info.faction = UnitFactionGroup("npc");
+						info.text = UnitName("npc");
+						info.g = rawGroups;
+						AddObject(info);
+					end
+				end);
+			elseif e == "TRADE_SKILL_LIST_UPDATE" then
+				local tradeSkillID = AllTheThings.GetTradeSkillLine();
+				local currentCategoryGroup, currentCategoryID, categories = {}, -1, {};
+				local categoryList, rawGroups = {}, {};
+				local categoryIDs = { C_TradeSkillUI.GetCategories() };
+				for i = 1,#categoryIDs do
+					currentCategoryID = categoryIDs[i];
+					local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
+					if categoryData then
+						if not categories[currentCategoryID] then
+							local category = { 
+								["parentCategoryID"] = categoryData.parentCategoryID,
+								["categoryID"] = currentCategoryID,
+								["name"] = categoryData.name,
+								["g"] = {}
+							};
+							categories[currentCategoryID] = category;
+							table.insert(categoryList, category);
+						end
+					end
+				end
+				
+				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
+				for i = 1,#recipeIDs do
+					local spellRecipeInfo = {};
+					if C_TradeSkillUI.GetRecipeInfo(recipeIDs[i], spellRecipeInfo) then
+						currentCategoryID = spellRecipeInfo.categoryID;
+						if not categories[currentCategoryID] then
+							local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
+							if categoryData then
+								local category = { 
+									["parentCategoryID"] = categoryData.parentCategoryID,
+									["categoryID"] = currentCategoryID,
+									["name"] = categoryData.name, 
+									["g"] = {}
+								};
+								categories[currentCategoryID] = category;
+								table.insert(categoryList, category);
+							end
+						end
+						local recipe = {
+							["recipeID"] = spellRecipeInfo.recipeID,
+							["requireSkill"] = tradeSkillID,
+							["name"] = spellRecipeInfo.name,
+						};
+						if spellRecipeInfo.previousRecipeID then
+							recipe.previousRecipeID = spellRecipeInfo.previousRecipeID;
+						end
+						if spellRecipeInfo.nextRecipeID then
+							recipe.nextRecipeID = spellRecipeInfo.nextRecipeID;
+						end
+						table.insert(categories[currentCategoryID].g, recipe);
+					end
+				end
+				
+				-- Make each category parent have children. (not as gross as that sounds)
+				for i=#categoryList,1,-1 do
+					local category = categoryList[i];
+					if category.parentCategoryID then
+						local parentCategory = categories[category.parentCategoryID];
+						category.parentCategoryID = nil;
+						if parentCategory then
+							table.insert(parentCategory.g, 1, category); 
+							table.remove(categoryList, i);
+						end
+					end
+				end
+				
+				-- Now merge the categories into the raw groups table.
+				for i,category in ipairs(categoryList) do
+					table.insert(rawGroups, category);
+				end
+				local info = { 
+					["professionID"] = tradeSkillID, 
+					["icon"] = C_TradeSkillUI.GetTradeSkillTexture(tradeSkillID),
+					["name"] = C_TradeSkillUI.GetTradeSkillDisplayName(tradeSkillID),
+					["g"] = rawGroups
+				};
+				MergeObject(self.data.g, CreateObject(info));
+				MergeObject(self.rawData, info);
+				self:Update();
+			elseif e == "QUEST_DETAIL" then
+				local questStartItemID = ...;
+				local questID = GetQuestID();
+				if questID == 0 then return false; end
+				local npc = "questnpc";
+				local guid = UnitGUID(npc);
+				if not guid then
+					npc = "npc";
+					guid = UnitGUID(npc);
+				end
+				local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid;
+				if guid then type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid); end
+				print("QUEST_DETAIL", questStartItemID, " => Quest #", questID, type, npc_id);
+				
+				local rawGroups = {};
+				for i=1,GetNumQuestRewards(),1 do
+					local link = GetQuestItemLink("reward", i);
+					if link then table.insert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
+				end
+				for i=1,GetNumQuestChoices(),1 do
+					local link = GetQuestItemLink("choice", i);
+					if link then table.insert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
+				end
+				for i=1,GetNumQuestLogRewardSpells(questID),1 do
+					local texture, name, isTradeskillSpell, isSpellLearned, hideSpellLearnText, isBoostSpell, garrFollowerID, genericUnlock, spellID = GetQuestLogRewardSpell(i, questID);
+					if garrFollowerID then
+						table.insert(rawGroups, { ["followerID"] = garrFollowerID, ["name"] = name });
+					elseif spellID then
+						if isTradeskillSpell then
+							table.insert(rawGroups, { ["recipeID"] = spellID, ["name"] = name });
+						else
+							table.insert(rawGroups, { ["spellID"] = spellID, ["name"] = name });
+						end
+					end
+				end
+				
+				local info = { ["questID"] = questID, ["g"] = rawGroups };
+				if questStartItemID and questStartItemID > 0 then info.itemID = questStartItemID; end
+				if npc_id then
+					npc_id = tonumber(npc_id);
+					if type == "GameObject" then
+						info = { ["objectID"] = npc_id, ["text"] = UnitName(npc), ["g"] = { info } };
+					else
+						info.qgs = {npc_id};
+						info.name = UnitName(npc);
+					end
+					info.faction = UnitFactionGroup(npc);
+				end
+				AddObject(info);
+			elseif e == "CHAT_MSG_LOOT" then
+				local msg, player, a, b, c, d, e, f, g, h, i, j, k, l = ...;
+				local itemString = string.match(msg, "item[%-?%d:]+");
+				if itemString then
+					local rawGroups = {};
+					local itemID = GetItemInfoInstant(itemString);
+					table.insert(rawGroups, { ["itemID"] = itemID, ["s"] = app.GetSourceID(itemString, itemID) });
+					AddObject({ ["unit"] = j, ["g"] = rawGroups });
+				end
+			end
+		end);
+		self:RegisterEvent("VARIABLES_LOADED");
+		self:RegisterEvent("QUEST_DETAIL");
+		self:RegisterEvent("QUEST_LOOT_RECEIVED");
+		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
+		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+		self:RegisterEvent("NEW_WMO_CHUNK");
+		self:RegisterEvent("MERCHANT_SHOW");
+		self:RegisterEvent("MERCHANT_UPDATE");
+		self:RegisterEvent("CHAT_MSG_LOOT");
+		--self:RegisterAllEvents();
+	end
+	
+	-- Update the window and all of its row data
+	if self.data.OnUpdate then self.data.OnUpdate(self.data); end
+	for i,g in ipairs(self.data.g) do
+		if g.OnUpdate then g.OnUpdate(g); end
+	end
+	self.data.index = 0;
+	self.data.back = 1;
+	self.data.indent = 0;
+	BuildGroups(self.data, self.data.g);
+	self:BaseUpdate(true);
+end):Show();
+--]]--
+-- WARNING: DEV ONLY END
 
 hooksecurefunc(GameTooltip, "SetToyByItemID", function(self, itemID, ...)
 	local link = C_ToyBox_GetToyLink(itemID);
@@ -13474,7 +13493,9 @@ app.OpenAuctionModule = function(self)
 		
 		PanelTemplates_SetNumTabs (AuctionFrame, n);
 		PanelTemplates_EnableTab  (AuctionFrame, n);
-		app.OpenAuctionModule = nil;
+		
+		-- Garbage collect the function after this is executed.
+		app.OpenAuctionModule = function() end;
 		app.AuctionModuleTabID = n;
 		
 		-- Create the Auction Frame
@@ -13623,7 +13644,7 @@ app.OpenAuctionModule = function(self)
 				end
 			end
 			self.data.visible = true;
-			UpdateWindow(self, true);
+			self:BaseUpdate(true);
 		end);
 		window:SetPoint("TOPLEFT", AuctionFrame, "TOPRIGHT", 0, -10);
 		window:SetPoint("BOTTOMLEFT", AuctionFrame, "BOTTOMRIGHT", 0, 10);
@@ -14157,7 +14178,7 @@ SlashCmdList["AllTheThings"] = function(cmd)
 		
 		-- Search for the Link in the database
 		local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
-		if group then CreateMiniListForGroup(group); end
+		if group then app:CreateMiniListForGroup(group); end
 	else
 		-- Default command
 		app.ToggleMainList();
@@ -14264,7 +14285,6 @@ app.events.VARIABLES_LOADED = function()
 		AllTheThingsAD = { };
 		_G["AllTheThingsAD"] = AllTheThingsAD;
 	end
-	app:UpdateWindowColors();
 	
 	-- Cache information about the player.
 	local _, class, classIndex = UnitClass("player");
@@ -14501,6 +14521,7 @@ app.events.VARIABLES_LOADED = function()
 		for i,itemID in ipairs({ 31892, 31900, 31899, 31895, 31894, 31898, 31896, 31893 }) do reagentCache[itemID] = craftedItem; end
 	end
 	app:GetDataCache();
+	
 	Push(app, "WaitOnMountData", function()
 		-- Detect how many pets there are. If 0, Blizzard isn't ready yet.
 		if C_PetJournal.GetNumPets() < 1 then return true; end
