@@ -2035,6 +2035,7 @@ _.NeverImplemented =
 		q(48594),	-- Tiragarde Sound Tol Dagor chest
 
 	-- Vol'dun
+		q(49684),	-- triggered when picking the staff on "Armed and Ready"
 		q(47647),	-- Monsters of Zem'lan - bonus quest
 		q(50805),	-- Skycaller Shutdown - bonus quest
 		q(50805),	-- Skycaller Shutdown - bonus quest

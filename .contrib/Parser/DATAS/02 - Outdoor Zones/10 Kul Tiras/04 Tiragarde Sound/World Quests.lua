@@ -74,10 +74,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52804, {	-- Something Stirs in the Depths
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(47695, {	-- Sound the Alarm
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -596,6 +592,11 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(52804, {	-- Something Stirs in the Depths
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(50421, {	-- Sparring on the Spar
 						["lvl"] = 120,

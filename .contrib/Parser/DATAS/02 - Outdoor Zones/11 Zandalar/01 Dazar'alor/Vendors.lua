@@ -1377,27 +1377,25 @@ _.Zones =
 							["cost"] = 14000000,	-- 1,400g
 						}),
 						i(162533, {	-- Scouting Report: Hillcrest Pasture
-							--["questID"] = ,	-- Mission Start Trigger
 							["races"] = HORDE_ONLY,
 							["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
 								mission(1967, {	-- Hillcrest Pasture
-									--["questID"] = ,	-- Triggers when completed
+									["questID"] = 53743,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
-									--["sourceQuests"] = {  },	-- Mission Start Trigger
 								}),
 								q(52478, {	-- Mission Report: Hillcrest Pasture
-									["provider"] = { "n", 138704 },		-- Mission Command Table
+									["sourceQuests"] = { 53743 },	-- Hillcrest Pasture Mission Complete
+									["provider"] = { "n", 138704 },	-- Mission Command Table
+									["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
 									["races"] = HORDE_ONLY,
-									["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
-									--["sourceQuests"] = {  },	-- Hillcrest Pasture Mission Complete
 								}),
 								q(52479, {	-- Hillcrest Pasture
-									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
+									["sourceQuests"] = { 52478 },	-- Mission Report: Hillcrest Pasture
+									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+									["coord"] = { 58.4, 62.6, 862 },
 									["races"] = HORDE_ONLY,
-									["coord"] = { 58.44, 62.67, 862 },
-									["sourceQuests"] = { 52478 },		-- Mission Report: Hillcrest Pasture
 								}),
 							},
 						}),

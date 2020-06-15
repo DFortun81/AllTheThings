@@ -24,10 +24,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(51741, {	-- Bombarbment
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53312, {	-- Burnished Platinum
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -262,10 +258,15 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(51709, {	-- Bombarbment
+					q(51709, {	-- Bombarbment (A)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(51741, {	-- Bombarbment (H)
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(51468, {	-- Bonesquall
 						["lvl"] = 120,

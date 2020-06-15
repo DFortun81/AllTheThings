@@ -253,12 +253,21 @@ _.Zones =
 					["coord"] = { 40.0, 76.5, 862 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(55251, {	-- A Daughter of Torcali
+				q(55251, {	-- A Daughter of Torcali #1
 					["sourceQuests"] = { 55258 },	-- Sleep, Eat, Repeat
 					["provider"] = { "n", 151319 },	-- Li'zal
 					["isDaily"] = true,
 					["coord"] = { 68.1, 41.7, 862 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
+				q(55243, {	-- A Daughter of Torcali #2
+					["sourceQuests"] = { 55507 },	-- Torcali's Blessing
+					["provider"] = { "n", 151319 },	-- Li'zal
+					["isDaily"] = true,
+					["coord"] = { 68.1, 41.7, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
 				}),
 				q(50331, {	-- A Different Outcome
 					["sourceQuests"] = { 51407 },	-- Find Their Words
@@ -307,7 +316,7 @@ _.Zones =
 					["coord"] = { 43.9, 72.1, 862 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(50801, {	-- A Nose for Trouble
+				q(50801, {	-- A Nose for Ptrouble
 					["sourceQuests"] = { 50402 },	-- SKREEEE! (#1)
 					["provider"] = { "n", 135308 },	-- Wingminder Goja
 					["isDaily"] = true,
@@ -415,6 +424,14 @@ _.Zones =
 					},
 					["provider"] = { "n", 125039 },	-- Trader Kro
 					["coord"] = { 79.2, 42.3, 862 },
+				}),
+				q(55244, {	-- Away From the Herd
+					["sourceQuests"] = { 55243 },	-- A Daughter of Torcali #2
+					["provider"] = { "n", 152258 },	-- Child of Torcali
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
+					["coord"] = { 68.2, 41.8, 862 },
+					["lvl"] = 120,
 				}),
 				q(50412, {	-- Back to the Nest
 					["sourceQuests"] = { 50401 },	-- Fear of Falling
@@ -533,6 +550,14 @@ _.Zones =
 					["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 					["coord"] = { 66.8, 42.6, 862 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(55245, {	-- Eat Like a Direhorn
+					["sourceQuests"] = { 55243 },	-- A Daughter of Torcali #2
+					["provider"] = { "n", 152258 },	-- Child of Torcali
+					["isDaily"] = true,
+					["coord"] = { 68.2, 41.8, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
 				}),
 				q(49149, {	-- Embrace the Voodoo
 					["sourceQuests"] = {
@@ -873,6 +898,14 @@ _.Zones =
 					["coord"] = { 76.7, 16.3, 862 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(52317, {	-- No Ptake, Only Throw
+					["sourceQuests"] = { 50412 },	-- Back to the Nest
+					["provider"] = { "n", 141025 },	-- Kua'fon
+					["isDaily"] = true,
+					["coord"] = { 70.7, 51.1, 863 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(49145, {	-- No Troll Left Behind
 					["sourceQuests"] = { 49122 },	-- A Port in Peril
 					["provider"] = { "n", 127814 },	-- Habutu
@@ -1082,6 +1115,14 @@ _.Zones =
 				q(50796, {	-- SKREEEEE! (#2)
 					["sourceQuests"] = { 50798 },	-- Out on a Limb
 					["provider"] = { "n", 135279 },	-- Kua'fon
+					["isDaily"] = true,
+					["coord"] = { 70.7, 50.8, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
+				q(50839, {	-- SKREEEEE! (#3)
+					["sourceQuests"] = { 50412 },	-- Back to the Nest
+					["provider"] = { "n", 135455 },	-- Kua'fon
 					["isDaily"] = true,
 					["coord"] = { 70.7, 50.8, 862 },
 					["races"] = HORDE_ONLY,
@@ -1648,24 +1689,6 @@ _.Zones =
 				}),
 				-- End How to Train Your Direhorn Crit 5
 				-- End How to Train Your Direhorn Achievment
-				q(55245, {	-- Eat Like a Direhorn
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 152258 },	-- Child of Torcali
-					["coord"] = { 68.2, 41.8, 862 },
-					["isDaily"] = true,
-				}),
-				q(55243, {	-- A Daughter of Torcali
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 151319 },	-- Li'zal <Priestess of Torcali>
-					["coord"] = { 68.2, 41.8, 862 },
-					["isDaily"] = true,
-				}),
-				q(55244, {	-- Away From the Herd
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 152258 },	-- Child of Torcali
-					["coord"] = { 68.2, 41.8, 862 },
-					["isDaily"] = true,
-				}),
 				
 				q(51513, {	-- Zalazane Returns
 					["minReputation"] = { 2103, REVERED },
