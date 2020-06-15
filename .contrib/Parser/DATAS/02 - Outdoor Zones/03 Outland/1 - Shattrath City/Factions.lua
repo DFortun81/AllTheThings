@@ -301,6 +301,7 @@ _.Zones =
 							}),
 							q(10017, {	-- Strained Supplies
 								["description"] = "If you want to switch from Scryers to Aldor, use these quests to regain lost Aldor reputation.",
+								["repeatable"] = true,
 								["provider"] = { "n", 18597 },	-- Sha'nir
 							}),
 							q(10019, {	-- More Venom Sacs
