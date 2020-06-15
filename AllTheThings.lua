@@ -10813,10 +10813,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		local function OpenMiniList(id, show)
 			-- Determine whether or not to forcibly reshow the mini list.
 			local self = app:GetWindow("CurrentInstance");
-			if self.mapID == id then
-				return; -- Haha JK BRO
-			end
-			
 			if not self:IsVisible() then
 				if app.Settings:GetTooltipSetting("Auto:MiniList") then
 					if not self.openedOnLogin and not show then
@@ -10829,6 +10825,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				if show then self:Show(); end
 			else
 				show = true;
+			end
+			if self.mapID == id then
+				return; -- Haha JK BRO
 			end
 			
 			-- Cache that we're in the current map ID.
