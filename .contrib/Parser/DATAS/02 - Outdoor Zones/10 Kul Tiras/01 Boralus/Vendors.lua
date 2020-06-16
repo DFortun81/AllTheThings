@@ -1194,6 +1194,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(168025, {	-- Book of Schematics: Ub3r-Spanner
+							["spellID"] = 0,
 							["sourceQuest"] = 53949,	-- The Ub3r-Spanner (A)
 						}),
 					},
