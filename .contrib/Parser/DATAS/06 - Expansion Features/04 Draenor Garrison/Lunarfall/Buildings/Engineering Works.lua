@@ -24,13 +24,16 @@ _.ExpansionFeatures =
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(111921, {	-- Draenor Engineering
-										recipe(169080),	-- Gearspring Parts
-										recipe(162204),	-- Goblin Glider Kit
-										recipe(173308),	-- Mecha-Blast Rocket
-										i(120134),		-- Recipe: Secrets of Draenor Engineering
-										recipe(173309),	-- Shieldtronic Shield
-										recipe(162207),	-- Stealthman 54
-										recipe(169140),	-- Ultimate Gnomish Army Knife
+										["collectible"] = false,
+										["g"] = {
+											recipe(169080),	-- Gearspring Parts
+											recipe(162204),	-- Goblin Glider Kit
+											recipe(173308),	-- Mecha-Blast Rocket
+											i(120134),		-- Recipe: Secrets of Draenor Engineering
+											recipe(173309),	-- Shieldtronic Shield
+											recipe(162207),	-- Stealthman 54
+											recipe(169140),	-- Ultimate Gnomish Army Knife
+										},
 									}),
 									i(118490, {	-- Schematic: Blingtron 5000
 										["cost"] = { { "i", 119299, 1 }, },	-- 1x Secret of Draenor Engineering

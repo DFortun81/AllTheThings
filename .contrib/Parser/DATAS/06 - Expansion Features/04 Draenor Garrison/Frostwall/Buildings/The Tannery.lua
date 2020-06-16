@@ -20,14 +20,17 @@ _.ExpansionFeatures =
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									i(115358, {	-- Draenor Leatherworking
-										recipe(171391),	-- Burnished Leather
-										i(116319),	-- Recipe: Journeying Helm
-										i(116320),	-- Recipe: Journeying Robes
-										i(116321),	-- Recipe: Journeying Slacks
-										i(120130),	-- Recipe: Secrets of Draenor Leatherworking
-										i(116322),	-- Recipe: Traveling Helm
-										i(116324),	-- Recipe: Traveling Leggings
-										i(116323),	-- Recipe: Traveling Tunic
+										["collectible"] = false,
+										["g"] = {
+											recipe(171391),	-- Burnished Leather
+											i(116319),	-- Recipe: Journeying Helm
+											i(116320),	-- Recipe: Journeying Robes
+											i(116321),	-- Recipe: Journeying Slacks
+											i(120130),	-- Recipe: Secrets of Draenor Leatherworking
+											i(116322),	-- Recipe: Traveling Helm
+											i(116324),	-- Recipe: Traveling Leggings
+											i(116323),	-- Recipe: Traveling Tunic
+										},
 									}),
 									i(116328, {	-- Recipe: Brilliant Burnished Cloak
 										["cost"] = { { "i", 118721, 1 }, },	-- 1x Secret of Draenor Leatherworking

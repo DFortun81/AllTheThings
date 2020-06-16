@@ -14,11 +14,14 @@ _.ExpansionFeatures =
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(115356, {	-- Draenor Blacksmithing
-										i(116727),	-- Recipe: Smoldering Breastplate
-										i(116726),	-- Recipe: Smoldering Helm
-										i(116728),	-- Recipe: Smoldering Greaves
-										i(120129),	-- Recipe: Secrets of Draenor Blacksmithing
-										recipe(171690),	-- Truesteel Ingot
+										["collectible"] = false,
+										["g"] = {
+											i(116727),	-- Recipe: Smoldering Breastplate
+											i(116726),	-- Recipe: Smoldering Helm
+											i(116728),	-- Recipe: Smoldering Greaves
+											i(120129),	-- Recipe: Secrets of Draenor Blacksmithing
+											recipe(171690),	-- Truesteel Ingot
+										},
 									}),
 									i(119329, {	-- Recipe: Soul of the Forge
 										["cost"] = { { "i", 118720, 1 }, },	-- 1x Secret of Draenor Blacksmithing

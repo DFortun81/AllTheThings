@@ -14,11 +14,14 @@ _.ExpansionFeatures =
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(115357, {	-- Draenor Tailoring
-										i(114868),	-- Pattern: Sumptuous Cowl
-										i(114870),	-- Pattern: Sumptuous Leggings
-										i(114869),	-- Pattern: Sumptuous Robes
-										i(114851),	-- Recipe: Hexweave Cloth
-										i(120128),	-- Recipe: Secrets of Draenor Tailoring
+										["collectible"] = false,
+										["g"] = {
+											i(114868),	-- Pattern: Sumptuous Cowl
+											i(114870),	-- Pattern: Sumptuous Leggings
+											i(114869),	-- Pattern: Sumptuous Robes
+											i(114851),	-- Recipe: Hexweave Cloth
+											i(120128),	-- Recipe: Secrets of Draenor Tailoring
+										},
 									}),
 									i(114863, {	-- Pattern: Brilliant Hexweave Cloak
 										["cost"] = { { "i", 118722, 1 }, },	-- 1x Secret of Draenor Tailoring

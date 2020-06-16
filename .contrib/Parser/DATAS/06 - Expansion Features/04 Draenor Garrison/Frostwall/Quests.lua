@@ -607,7 +607,9 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 36594,	-- "Spare" Parts
 						["requireSkill"] = ENGINEERING,
 						["g"] = {
-							i(111921),	-- Draenor Engineering
+							i(111921, {	-- Draenor Engineering
+								["collectible"] = false,
+							}),
 							i(109258),	-- Engineering Works, lvl 1
 						},
 					}),

@@ -45,7 +45,8 @@ profession(ENCHANTING, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(111922, {		-- Draenor Enchanting
-						["spellID"] = 0,
+						--["spellID"] = 0,
+						["collectible"] = false,
 						["description"] = "This is a quest reward for completing the Enchanting Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
 						["g"] = {
 							recipe(177043),	-- Secrets of Draenor Enchanting
@@ -128,7 +129,8 @@ profession(ENCHANTING, {
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(111922, {		-- Draenor Enchanting
-						["spellID"] = 0,
+						--["spellID"] = 0,
+						["collectible"] = false,
 						["description"] = "This is a quest reward for completing the Enchanting Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Enchanter's Study for 100 gold.",
 						["g"] = {
 							recipe(177043),	-- Secrets of Draenor Enchanting

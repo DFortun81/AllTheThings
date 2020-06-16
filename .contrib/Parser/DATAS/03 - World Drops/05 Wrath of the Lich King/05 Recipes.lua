@@ -33,7 +33,9 @@ _.WorldDrops =
 				}),
 			}),
 			n(-185, { 	-- Inscription
-				i(45912),	-- Book of Glyph Mastery
+				i(45912, {	-- Book of Glyph Mastery
+					["collectible"] = false,
+				}),
 			}),
 			n(-186, { 	-- Jewelcrafting
 				i(41818, {	-- Design: Accurate Twilight Opal

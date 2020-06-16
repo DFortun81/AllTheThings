@@ -98,7 +98,9 @@ _.Zones =
 					["sourceQuest"] = 35104,	-- The Apprentice
 					["requireSkill"] = ALCHEMY,
 					["g"] = {
-						i(109558),	-- A Treatise on the Alchemy of Draenor
+						i(109558, {	-- A Treatise on the Alchemy of Draenor
+							["collectible"] = false,
+						}),
 						i(111812),	-- Alchemy Lab, lvl 1
 					},
 				}),
@@ -153,7 +155,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["requireSkill"] = LEATHERWORKING,
 					["g"] = {
-						i(115358),	-- Draenor Leatherworking
+						i(115358, {	-- Draenor Leatherworking
+							["collectible"] = false,
+						}),
 						i(117566),	-- Heavy Frostwolf Shroud
 						i(111818),	-- The Tannery, lvl 1
 					},
@@ -192,7 +196,9 @@ _.Zones =
 					["requireSkill"] = JEWELCRAFTING,
 					["g"] = {
 						i(115503),	-- Blazing Diamond Pendant
-						i(115359),	-- Draenor Jewelcrafting
+						i(115359, {	-- Draenor Jewelcrafting
+							["collectible"] = false,
+						}),
 						i(111814),	-- Gem Boutique, Level 1
 					},
 				}),
@@ -647,16 +653,19 @@ _.Zones =
 					["g"] = {
 						i(111815),	-- Scribe's Quarters, Level 1
 						i(111923, {	-- Draenor Inscription
-							i(120136),		-- Recipe: Secrets of Draenor Inscription
-							recipe(169081),	-- War Paints
-							recipe(167950, {	-- Research: Warbinder's Ink
-								i(113992),	-- Scribe's Research Notes
-							}),
-							recipe(175390),	-- Laughing Tarot
-							recipe(175389),	-- Ocean Tarot
-							recipe(175392),	-- Savage Tarot
-							recipe(166669),	-- Card of Omens
-							recipe(178497),	-- Warbinder's Ink
+							["collectible"] = false,
+							["g"] = {
+								i(120136),		-- Recipe: Secrets of Draenor Inscription
+								recipe(169081),	-- War Paints
+								recipe(167950, {	-- Research: Warbinder's Ink
+									i(113992),	-- Scribe's Research Notes
+								}),
+								recipe(175390),	-- Laughing Tarot
+								recipe(175389),	-- Ocean Tarot
+								recipe(175392),	-- Savage Tarot
+								recipe(166669),	-- Card of Omens
+								recipe(178497),	-- Warbinder's Ink
+							},
 						}),
 						i(116114),	-- Prestige Card: The Turn
 					},

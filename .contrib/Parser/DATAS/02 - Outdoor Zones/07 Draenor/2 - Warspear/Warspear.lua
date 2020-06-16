@@ -1462,18 +1462,21 @@ _.Zones =
 							["coord"] = { 60.4, 40.7, 624 },
 							["g"] = {
 								i(115359, {	-- Draenor Jewelcrafting
-									i(120131, {	-- Recipe: Secrets of Draenor Jewelcrafting **Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
-										i(116087),	-- Recipe: Glowing Blackrock Band
-										i(116081),	-- Recipe: Glowing Iron Band
-										i(116084),	-- Recipe: Glowing Iron Choker
-										i(116088),	-- Recipe: Shifting Blackrock Band
-										i(116082),	-- Recipe: Shifting Iron Band
-										i(116085),	-- Recipe: Shifting Iron Choker
-										i(116089),	-- Recipe: Whispering Blackrock Band
-										i(116083),	-- Recipe: Whispering Iron Band
-										i(116086),	-- Recipe: Whispering Iron Choker
-										recipe(170700),	-- Taladite Crystal
-									}),
+									["collectible"] = false,
+									["g"] = {
+										i(120131, {	-- Recipe: Secrets of Draenor Jewelcrafting **Teaches glowing blackrock band, glowing iron band, glowing iron choker, shifting iron band, shifting iron choker, shifting blackrock band, whispering blackrock band, whispering iron band, whispering iron choker, taladite crystal, secrets of draenor jewelcrafting.
+											i(116087),	-- Recipe: Glowing Blackrock Band
+											i(116081),	-- Recipe: Glowing Iron Band
+											i(116084),	-- Recipe: Glowing Iron Choker
+											i(116088),	-- Recipe: Shifting Blackrock Band
+											i(116082),	-- Recipe: Shifting Iron Band
+											i(116085),	-- Recipe: Shifting Iron Choker
+											i(116089),	-- Recipe: Whispering Blackrock Band
+											i(116083),	-- Recipe: Whispering Iron Band
+											i(116086),	-- Recipe: Whispering Iron Choker
+											recipe(170700),	-- Taladite Crystal
+										}),
+									},
 								}),
 								i(118723, {	-- Secret of Draenor Jewelcrafting
 									i(116096),	-- Recipe: Critical Strike Taladite
@@ -1524,16 +1527,19 @@ _.Zones =
 							["coord"] = { 75.3, 47.6, 624 },
 							["g"] = {
 								i(111923, {	-- Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
-									i(120136),		-- Recipe: Secrets of Draenor Inscription
-									recipe(169081),	-- War Paints
-									recipe(167950, {	-- Research: Warbinder's Ink
-										i(113992),	-- Scribe's Research Notes
-									}),
-									recipe(175390),	-- Laughing Tarot
-									recipe(175389),	-- Ocean Tarot
-									recipe(175392),	-- Savage Tarot
-									recipe(166669),	-- Card of Omens
-									recipe(178497),	-- Warbinder's Ink
+									["collectible"] = false,
+									["g"] = {
+										i(120136),		-- Recipe: Secrets of Draenor Inscription
+										recipe(169081),	-- War Paints
+										recipe(167950, {	-- Research: Warbinder's Ink
+											i(113992),	-- Scribe's Research Notes
+										}),
+										recipe(175390),	-- Laughing Tarot
+										recipe(175389),	-- Ocean Tarot
+										recipe(175392),	-- Savage Tarot
+										recipe(166669),	-- Card of Omens
+										recipe(178497),	-- Warbinder's Ink
+									},
 								}),
 								i(118605),	-- Technique: Crystalfire Spellstaff
 								i(118606),	-- Technique: Darkmoon Card of Draenor
@@ -1587,7 +1593,9 @@ _.Zones =
 						n(87552, {	-- Nik Steelrings
 							["coord"] = { 70.5, 38.9, 624 },
 							["g"] = {
-								i(111921),	-- Draenor Engineering
+								i(111921, {	-- Draenor Engineering
+									["collectible"] = false,
+								}),
 								i(119299, {	-- Secret of Draenor Engineering
 									i(118493),	-- Schematic: Didi's Delicate Assembly
 									i(118490),	-- Schematic: Blingtron 5000
@@ -1626,11 +1634,14 @@ _.Zones =
 							["coord"] = { 75.0, 37.9, 624 },
 							["g"] = {
 								i(115356, {	-- Draenor Blacksmithing
-									i(116727),		-- Recipe: Smoldering Breastplate
-									i(116726),		-- Recipe: Smoldering Helm
-									i(116728),		-- Recipe: Smoldering Greaves
-									recipe(171690),	-- Truesteel Ingot
-									i(120129),		-- Recipe: Secrets of Draenor Blacksmithing
+									["collectible"] = false,
+									["g"] = {
+										i(116727),		-- Recipe: Smoldering Breastplate
+										i(116726),		-- Recipe: Smoldering Helm
+										i(116728),		-- Recipe: Smoldering Greaves
+										recipe(171690),	-- Truesteel Ingot
+										i(120129),		-- Recipe: Secrets of Draenor Blacksmithing
+									},
 								}),
 								i(118720, {	-- Secret of Draenor Blacksmithing
 									i(119329),	-- Recipe: Soul of the Forge

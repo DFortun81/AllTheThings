@@ -7,7 +7,8 @@ profession(TAILORING, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(115357, {	-- Draenor Tailoring
-						["spellID"] = 0,
+						--["spellID"] = 0,
+						["collectible"] = false,
 						["description"] = "This is a quest reward for completing the Tailoring Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
 						["g"] = {
 							recipe(168835),	-- Hexweave Cloth
@@ -60,7 +61,8 @@ profession(TAILORING, {
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(115357, {	-- Draenor Tailoring
-						["spellID"] = 0,
+						--["spellID"] = 0,
+						["collectible"] = false,
 						["description"] = "This is a quest reward for completing the Tailoring Intro Warlords Quest that can drop from any Draenor mob. Also sold at the Tailoring Emporium for 100 gold.",
 						["g"] = {
 							recipe(168835),	-- Hexweave Cloth

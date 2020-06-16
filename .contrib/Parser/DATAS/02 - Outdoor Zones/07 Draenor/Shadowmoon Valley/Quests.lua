@@ -260,7 +260,9 @@ _.Zones =
 					["requireSkill"] = LEATHERWORKING,
 					["g"] = {
 						i(111818),	-- The Tannery, Level 1
-						i(115358),	-- Draenor Leatherworking
+						i(115358, {	-- Draenor Leatherworking
+							["collectible"] = false,
+						}),
 					},
 				}),
 				q(33814, {	-- Fast Expansion
@@ -589,7 +591,9 @@ _.Zones =
 					["sourceQuest"] = 35344,	-- The Missing Father
 					["requireSkill"] = ALCHEMY,
 					["g"] = {
-						i(109558),	-- A Treatise on the Alchemy of Draenor
+						i(109558, {	-- A Treatise on the Alchemy of Draenor
+							["collectible"] = false,
+						}),
 						i(111812),	-- Alchemy Lab, lvl 1
 					},
 				}),
@@ -632,7 +636,9 @@ _.Zones =
 					["sourceQuest"] = 36286,	-- Transponder 047-B
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
-						i(111921),	-- Draenor Engineering
+						i(111921, {	-- Draenor Engineering
+							["collectible"] = false,
+						}),
 						i(109258),	-- Engineering Works, lvl 1
 					},
 				}),
@@ -767,16 +773,19 @@ _.Zones =
 					["g"] = {
 						i(111815),	-- Scribe's Quarters, Level 1
 						i(111923, {	-- Draenor Inscription
-							i(120136),		-- Recipe: Secrets of Draenor Inscription
-							recipe(169081),	-- War Paints
-							recipe(167950, {	-- Research: Warbinder's Ink
-								i(113992),	-- Scribe's Research Notes
-							}),
-							recipe(175390),	-- Laughing Tarot
-							recipe(175389),	-- Ocean Tarot
-							recipe(175392),	-- Savage Tarot
-							recipe(166669),	-- Card of Omens
-							recipe(178497),	-- Warbinder's Ink
+							["collectible"] = false,
+							["g"] = {
+								i(120136),		-- Recipe: Secrets of Draenor Inscription
+								recipe(169081),	-- War Paints
+								recipe(167950, {	-- Research: Warbinder's Ink
+									i(113992),	-- Scribe's Research Notes
+								}),
+								recipe(175390),	-- Laughing Tarot
+								recipe(175389),	-- Ocean Tarot
+								recipe(175392),	-- Savage Tarot
+								recipe(166669),	-- Card of Omens
+								recipe(178497),	-- Warbinder's Ink
+							},
 						}),
 					},
 				}),
