@@ -1908,8 +1908,12 @@ _.ExpansionFeatures =
 					["g"] = {
 						n(ZONEDROPS, {
 							i(174837),	-- Decaying Fusion Core (14 day timer on this. use it at 78/65 during Amathet assault to get fast percentage)
-							i(171312),	-- Recipe: Void Focus
-							i(174491),	-- Tome of Unspeakable Delicacies
+							i(171312, {	-- Recipe: Void Focus
+								["spellID"] = 0,
+							}),
+							i(174491, {	-- Tome of Unspeakable Delicacies
+								["spellID"] = 0,
+							}),
 							i(174462),	-- Void Cocoon
 						}),
 					},
