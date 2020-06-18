@@ -22,7 +22,7 @@ _.Zones =
 					}
 				}),
 				ach(13036, {	-- A Loa of a Tale
-					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+					["collectible"] = false,
 					["g"] = {
 						crit(2,  {	-- Tales of de Loa: Bwonsamdi
 							["itemID"] = 163330,	-- Tales of de Loa: Bwonsamdi

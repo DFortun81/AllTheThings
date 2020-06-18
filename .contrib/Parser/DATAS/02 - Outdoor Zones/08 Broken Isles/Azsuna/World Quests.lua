@@ -801,13 +801,6 @@ _.Zones =
 						}),
 					},
 				}),
-				q(41652, {	-- Work Order: Deep Amber Loop
-					["requireSkill"] = JEWELCRAFTING,
-					["isWorldQuest"] = true,
-					["g"] = {
-						i(137838),	-- Design: Deep Amber Loop (Rank 3)
-					},
-				}),
 				q(41657, {	-- Work Order: Draughts of Raw Magic
 					["lvl"] = 110,
 					["isWorldQuest"] = true,

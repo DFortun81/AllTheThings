@@ -24,21 +24,21 @@ _.Zones =
 							["f"] = 55,	-- Consumable
 							["g"] = {
 								mission(2106, {	-- Upgrade: The Great Seal
+									["sourceQuests"] = { 54226 },	-- Outpost Upgrade Mission Trigger
 									["questID"] = 54294,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
-									["sourceQuests"] = { 54226 },	-- Outpost Upgrade Mission Trigger
 								}),
 								q(54225, {	-- Mission Report: The Great Seal
+									["sourceQuests"] = { 54294 },	-- Upgrade: The Great Seal Mission Complete
 									["provider"] = { "n", 138706 },		-- Mission Command Table
 									["races"] = HORDE_ONLY,
-									["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
-									["sourceQuests"] = { 54294 },	-- Upgrade: The Great Seal Mission Complete
+									["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
 								}),
 								q(54231, {	-- Outpost Upgrade: The Great Seal
+									["sourceQuests"] = { 54225 },	-- Mission Report: The Great Seal
 									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
 									["races"] = HORDE_ONLY,
-									["coord"] = { 58.44, 62.67, 862 },
-									["sourceQuests"] = { 54225 },	-- Mission Report: The Great Seal
+									["coord"] = { 58.4, 62.6, 862 },
 								}),
 							},
 						}),
@@ -156,7 +156,6 @@ _.Zones =
 							},
 						}),
 						i(162531, {	-- Scouting Report: Stonefist Watch
-							--["questID"] = ,	-- Mission Start Trigger
 							["races"] = HORDE_ONLY,
 							["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
@@ -164,7 +163,6 @@ _.Zones =
 								mission(1963, {	-- Stonefist Watch
 									--["questID"] = ,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
-									--["sourceQuests"] = {  },	-- Mission Start Trigger
 								}),
 								q(52221, {	-- Mission Report: Stonefist Watch
 									["provider"] = { "n", 138704 },		-- Mission Command Table
@@ -257,22 +255,23 @@ _.Zones =
 									["sourceQuests"] = { 53744 },	-- Swiftwind Post Mission Complete
 								}),
 								q(52276, {	-- Swiftwind Post
-									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
+									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 									["races"] = HORDE_ONLY,
 									["coord"] = { 58.44, 62.67, 862 },
-									["sourceQuests"] = { 52275 },		-- Mission Report: Swiftwind Post
+									["sourceQuests"] = { 52275 },	-- Mission Report: Swiftwind Post
 								}),
 								mission(2094, {	-- Nature Calls
-									--["questID"] = ,	-- Triggers when completed
+									["sourceQuests"] = { 52276 },	-- Swiftwind Post
 									["races"] = HORDE_ONLY,
-									["sourceQuests"] = { 52276 },		-- Swiftwind Post
+									["g"] = {
+										q(53102, {	-- Mission Report: Nature Calls
+											["provider"] = { "n", 138704 },	-- Mission Command Table
+											["races"] = HORDE_ONLY,
+											["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
+										}),
+									},
 								}),
-								q(53102, {	-- Mission Report: Nature Calls
-									["provider"] = { "n", 138704 },		-- Mission Command Table
-									["races"] = HORDE_ONLY,
-									["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
-									--["sourceQuests"] = {  },	-- Nature Calls Mission Complete
-								}),
+										
 								q(53103, {	-- Wicker Magic
 									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
 									["races"] = HORDE_ONLY,

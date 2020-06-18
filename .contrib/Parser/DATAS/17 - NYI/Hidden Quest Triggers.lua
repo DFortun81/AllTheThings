@@ -2041,6 +2041,8 @@ _.NeverImplemented =
 		q(50805),	-- Skycaller Shutdown - bonus quest
 		q(50805),	-- Skycaller Shutdown - bonus quest
 		q(51648),	-- Vol'dun - select "The Nimble" as your Akunda title during "Trial of Truth"
+		q(51649),	-- Vol'dun - select "the Serene" as your Akunda title during "Trial of Truth"
+		q(51650),	-- Vol'dun - select "the Courageous" as your Akunda title during "Trial of Truth"
 		q(49414),	-- Vol'dun - beat Akunda the Exalted to trigger the cinematic and phase the area
 		q(51685),	-- Vol'dun - triggers when turning in "Akunda's Blessing". Probably controls the activation of the Akunda buff idol in Dazar'alor
 		q(51684),	-- Vol'dun - triggers when turning in "Mark of the Loa". Probably controls the activation of the Kimbal buff idol in Dazar'alor
