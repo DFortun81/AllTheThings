@@ -1422,6 +1422,7 @@ _.NeverImplemented =
 		q(47749),	-- FLAG - Fight Plague With Fire Complete
 		q(47748),	-- FLAG - Holing Up Complete
 		q(48033),	-- FLAG - Well of Eternity Scene seen
+		q(47832),	-- FLAG - Well of Eternity Complete
 		q(47938),	-- Tracking Quest - kill Bloodfeast
 		q(47936),	-- Tracking Quest - kill Bonesunder
 		q(47934),	-- Tracking Quest - kill Dregmar Runebrand

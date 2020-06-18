@@ -36,18 +36,18 @@ _.Craftables =
 				i(41257),	-- Titansteel Destroyer
 			}),
 			filter(25, {	-- 1H Swords
-				i(41186, {	-- Corroded Saronite Edge
+				un(5, i(41186, {	-- Corroded Saronite Edge
 					["timeline"] = {
 						"added 3.0.1.8770",
 						"removed 4.0.1.13287",
 					},
-				}),
-				i(41187, {	-- Corroded Saronite Woundbringer
+				})),
+				un(5, i(41187, {	-- Corroded Saronite Woundbringer
 					["timeline"] = {
 						"added 3.0.1.8770",
 						"removed 4.0.1.13287",
 					},
-				}),
+				})),
 				i(43871),	-- Saronite Spellblade
 				i(41182),	-- Savage Cobalt Slicer
 				i(41239),	-- Sturdy Cobalt Quickblade
