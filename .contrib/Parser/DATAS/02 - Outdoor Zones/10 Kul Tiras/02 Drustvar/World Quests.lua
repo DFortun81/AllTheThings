@@ -55,10 +55,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 110,
 					}),
-					q(51743, {	-- More Valuable Than Gold
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53274, {	-- Overgrown Anchor Weed
 						["isWorldQuest"] = true,
 						["requireSkill"] = HERBALISM,
@@ -503,10 +499,15 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(51707, {	-- More Valuable Than Gold
+					q(51707, {	-- More Valuable Than Gold (A)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(51743, {	-- More Valuable Than Gold (H)
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(54650, {	-- Muk'luk (Faction Assault WQ)
 						["lvl"] = 110,

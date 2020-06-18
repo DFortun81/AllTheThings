@@ -1314,10 +1314,22 @@ _.Zones =
 					["coord"] = { 39.7, 17.8, 895 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(51368, {	-- WANTED: The Hornet
+				q(51368, {	-- WANTED: The Hornet (A)
 					["provider"] = { "o", 289313 },	-- WANTED: The Hornet
 					["coord"] = { 42.2, 22.9, 895 },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(53440, {	-- WANTED: The Hornet (H)
+					["sourceQuests"] = { 52127 },	-- The Wolf's Den
+					["provider"] = { "o", 298778 },	-- Wanted Poster
+					["coord"] = { 62.8, 14.0, 895 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53438, {	-- WANTED: Wyvern Poachers
+					["sourceQuests"] = { 52127 },	-- The Wolf's Den
+					["provider"] = { "o", 298778 },	-- Wanted Poster
+					["coord"] = { 62.8, 14.0, 895 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(49431, {	-- Warm and Cozy
 					["sourceQuests"] = { 49418 },	-- Big Boss
@@ -1419,12 +1431,6 @@ _.Zones =
 				}),
 				q(54781, {	-- UNUSED
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(53440, {	-- WANTED: The Hornet
-					["races"] = HORDE_ONLY,
-				}),
-				q(53438, {	-- WANTED: Wyvern Poachers
-					["races"] = HORDE_ONLY,
 				}),
 				q(50350, {	-- We Need a Chemist
 					["races"] = ALLIANCE_ONLY,

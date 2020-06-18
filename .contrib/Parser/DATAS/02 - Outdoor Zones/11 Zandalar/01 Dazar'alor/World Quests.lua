@@ -287,6 +287,12 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = HERBALISM,
 					}),
+					q(51014, {	-- Work Order: Tidespray Linen
+						["requireSkill"] = TAILORING,
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
 					q(52398, {	-- Work Order: Ultramarine Pigment
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,

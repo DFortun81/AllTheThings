@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(875, {	-- Zandalar
 		m(862, {	-- Zuldazar
-			n(-4, {	-- Achievements
+			n(-4, {		-- Achievements
 				ach(13020, {	-- Bow to Your Masters
 					["collectible"] = false,
 					["races"] = HORDE_ONLY,

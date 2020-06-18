@@ -819,6 +819,15 @@ _.Zones =
 					["provider"] = { "n", 128889 },	-- Deyon
 					["coord"] = { 73.7, 61.0, 862 },
 				}),
+				q(50842, {	-- Mast Effect
+					["sourceQuests"] = { 50412 },	-- Back to the Nest
+					["provider"] = { "n", 135308 },	-- Wingminder Goja
+					["isDaily"] = true,
+					["coord"] = { 70.7, 50.8, 862 },
+					["races"] = HORDE_ONLY,
+					["cost"] = { { "i", 158906, 8 } },	-- 8x Shimmerfin Flesh
+					["lvl"] = 120,
+				}),
 				q(50252, {	-- Mating Season Halftime
 					["sourceQuests"] = {
 						50074,	-- Brutal Boost

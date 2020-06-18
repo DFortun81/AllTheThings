@@ -12,10 +12,6 @@ _.Zones =
 					q(48104, {	-- A Greater Challenge
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(51671, {	-- Billy Goat Barber
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53279, {	-- Blooming Star Moss
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -186,10 +182,15 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(50296, {	-- Billy Goat Barber
+					q(50296, {	-- Billy Goat Barber (A)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(51671, {	-- Billy Goat Barber (H)
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(51669, {	-- Black-Eyed Bart
 						["lvl"] = 120,

@@ -234,7 +234,7 @@ _.ExpansionFeatures =
 				},
 				["g"] = {
 					q(53172, {	-- Venture Co. Business Plan
-						["description"] = "Pats along the road between The Crossroads and Ratchet",
+						["description"] = "Pats along the road between The Crossroads and Ratchet.",
 						["provider"] = { "n", 3658 },	-- Lizzarik <Weapon Dealer>
 					}),
 					crit(10, {
@@ -266,7 +266,7 @@ _.ExpansionFeatures =
 				},
 			}),
 			i(163487, {	 -- Wriggling Mass
-				["description"] = "Turn in @ old or new Silithus",
+				["description"] = "Can be turned in at old or new Silithus.",
 				["coord"] = { 40.0, 76.6, 81 },
 				["g"] = {
 					q(53183, {	-- Wriggling Mass
@@ -279,101 +279,128 @@ _.ExpansionFeatures =
 			}),
 			-- Rep Items
 			i(163217, {	-- Azeroth's Tear [Both]
-				["description"] = "|CFFFF0000Turn into Magni Bronzebeard in Silithus for Champions of Azeroth rep.|r",
+				["description"] = "|CFFFF0000Turn in to Magni Bronzebeard in Silithus for Champions of Azeroth rep.|r",
 				["coord"] = { 42.2, 44.2, 81 },
 				["g"] = {
 					q(53112, {	-- Azeroth's Tear
-						["provider"] = { "n", 130216 },	-- Magni Bronzebeard <The Speaker>
 						["repeatable"] = true,
+						["provider"] = { "n", 130216 },	-- Magni Bronzebeard <The Speaker>
+						["g"] = {
+							i(174502),	-- Tear of Azeroth
+						},
 					}),
 				},
 			}),
 			i(163616, {	-- Dented Coin [Alliance]
-				["description"] = "|CFFFF0000Turn into Cyrus Crestfall in Boralus for Proudmore Admiralty rep.|r",
+				["description"] = "|CFFFF0000Turn in to Cyrus Crestfall in Boralus for Proudmoore Admiralty rep.|r",
 				["coord"] = { 68.0, 22.0, 1161 },
 				["g"] = {
 					q(53118, {	-- Dented Coin
+						["repeatable"] = true,
 						["provider"] = { "n", 122370 },	-- Cyrus Crestfall <Harbormaster>
 						["races"] =  ALLIANCE_ONLY,
-						["repeatable"] = true,
+						["g"] = {
+							i(174504),	-- Proudmoore War Copper
+						},
 					}),
 				},
 			}),
 			i(163614, {	-- Exotic Spices [Alliance]
-				["description"] = "|CFFFF0000Turn into Xun Xun Sweetflower in Drustvar for Order of Embers rep.|r",
+				["description"] = "|CFFFF0000Turn in to Xun Xun Sweetflower in Drustvar for Order of Embers rep.|r",
 				["coord"] = { 20.6, 45.6, 896 },
 				["g"] = {
 					q(53120, {	-- Exotic Spices
+						["repeatable"] = true,
 						["provider"] = { "n", 136269 },	-- Xun Xun Sweetflower <Exotic Food & Spices>
 						["races"] =  ALLIANCE_ONLY,
-						["repeatable"] = true,
+						["g"] = {
+							i(174503),	-- Exotically Spiced Carrot
+						},
 					}),
 				},
 			}),
 			i(163619, {	-- Golden Beetle [Horde]
-				["description"] = "|CFFFF0000Turn into Krag'wa the Huge in Nazmir for Talanji's Expedition rep.|r",
+				["description"] = "|CFFFF0000Turn in to Krag'wa the Huge in Nazmir for Talanji's Expedition rep.|r",
 				["coord"] = { 75.6, 56.6, 863 },
 				["g"] = {
 					q(53114, {	-- Golden Beetle
+						["repeatable"] = true,
 						["provider"] = { "n", 120551 },	-- Krag'wa the Huge
 						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
+						["g"] = {
+							i(174506),	-- Golden Insect Wings
+						},
 					}),
 				},
 			}),
 			i(163620, {	-- Island Flotsam [Horde]
-				["description"] = "|CFFFF0000Turn into Jani in Dazar'alor for Zandalari Empire rep.|r",
+				["description"] = "|CFFFF0000Turn in to Jani in Dazar'alor for Zandalari Empire rep.|r",
 				["coord"] = { 35.4, 7.8, 1163 },
 				["g"] = {
 					q(53115, {	-- Island Flotsam
 						["description"] = "Must have unlocked Jani by doing the quest \"Pests\".",
+						["repeatable"] = true,
 						["provider"] = { "n", 126334 },	-- Jani <Loa of Scavengers>
 						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
+						["g"] = {
+							i(174518),	-- Jani Figurine
+						},
 					}),
 				},
 			}),
 			i(163615, {	-- Lost Sea Scroll [Alliance]
-				["description"] = "|CFFFF0000Turn into Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
+				["description"] = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
 				["coord"] = { 59.2, 68.6, 942 },
 				["g"] = {
 					q(53119, {	-- Lost Sea Scroll
+						["repeatable"] = true,
 						["provider"] = { "n", 130576 },	-- Brother Pike
 						["races"] =  ALLIANCE_ONLY,
-						["repeatable"] = true,
+						["g"] = {
+							i(174505),	-- Tide-Speaker's Tome
+						},
 					}),
 				},
 			}),
 			i(163617, {	-- Rusted Alliance Insignia
-				["description"] = "|CFFFF0000Turn into Vindicator Jaelaana in Boralus for 7th Legion rep.|r",
+				["description"] = "|CFFFF0000Turn in to Vindicator Jaelaana in Boralus for 7th Legion rep.|r",
 				["coord"] = { 69.2, 25.0, 1161 },
 				["g"] = {
 					q(53117, {	-- Rusted Alliance Insignia [Alliance]
+						["repeatable"] = true,
 						["provider"] = { "n", 135446 },	-- Vindicator Jaelaana <7th Legion Emissary>
 						["races"] =  ALLIANCE_ONLY,
-						["repeatable"] = true,
+						["g"] = {
+							i(174507),	-- Fallen Soldier's Insignia
+						},
 					}),
 				},
 			}),
 			i(163621, {	-- Rusted Horde Insignia
-				["description"] = "|CFFFF0000Turn into Ransa Greyfeather in Zuldazar for Honorbound rep.|r",
+				["description"] = "|CFFFF0000Turn in to Ransa Greyfeather in Zuldazar for Honorbound rep.|r",
 				["coord"] = { 58, 62.6, 862 },
 				["g"] = {
 					q(53116, {	-- Rusted Horde Insignia
+						["repeatable"] = true,
 						["provider"] = { "n", 135447 },	-- Ransa Greyfeather
 						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
+						["g"] = {
+							i(174508),	-- Fallen Soldier's Insignia
+						},
 					}),
 				},
 			}),
 			i(163618, {	-- Shimmering Shell [Horde]
-				["description"] = "|CFFFF0000Turn into Hoarder Jena in Vol'dun for Voldunai rep.|r",
+				["description"] = "|CFFFF0000Turn in to Hoarder Jena in Vol'dun for Voldunai rep.|r",
 				["coord"] = { 56.7, 49.8, 864 },
 				["g"] = {
 					q(53113, {	-- Shimmering Shell
+						["repeatable"] = true,
 						["provider"] = { "n", 135804 },	-- Hoarder Jena
 						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
+						["g"] = {
+							i(174501),	-- Ornate Voldunai Jewelry
+						},
 					}),
 				},
 			}),

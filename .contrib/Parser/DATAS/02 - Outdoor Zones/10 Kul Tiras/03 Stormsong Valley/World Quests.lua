@@ -20,10 +20,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52882, {	-- Controlled Burn
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(52004, {	-- Counter Intelligence
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -250,6 +246,11 @@ _.Zones =
 								["isWorldQuest"] = true,	-- putting it here so it doesn't show as unsorted
 							}),
 						},
+					}),
+					q(52882, {	-- Controlled Burn
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(52310, {	-- Corrupted Tideskipper
 						["lvl"] = 120,

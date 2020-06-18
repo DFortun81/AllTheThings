@@ -178,7 +178,8 @@ _.GearSets =
 		}),
 		i(173372, {	-- Cache of the Black Empire
 			i(173485),	-- Nefarious Tormentor's Leggings
-			i(173375),	-- Rajani Insignia
+			i(173375),	-- Rajani Insignia (BoP)
+			i(173374),	-- Rajani Insignia (BoA)
 		}),
 	}),
 };
