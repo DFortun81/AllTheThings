@@ -242,8 +242,11 @@ _.Zones =
 				}),
 				q(24932, {	-- Cutting Losses
 					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
+					["sourceQuests"] = {
+						25103,	-- Bootlegger Outpost
+						26889,	-- All Cheered Out
+					},
 					["coord"] = { 55.6, 60.8, 71 },
-					["sourceQuest"] = 25103,	-- Bootlegger Outpost
 				}),
 				q(25026, {	-- Darkest Mojo
 					["provider"] = { "n", 38927 },	-- Mazoga
