@@ -475,6 +475,7 @@ namespace ATT
                     {
                         // https://www.wowhead.com/skill=
                         case 40:    // Rogue Poisons
+                        case 149:   // Wolf Riding
                         case 150:   // Tiger Riding
                         case 762:   // Riding
                         case 849:   // Warlock
