@@ -316,12 +316,21 @@ _.Zones =
 					["coord"] = { 43.9, 72.1, 862 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(50801, {	-- A Nose for Ptrouble
+				q(50801, {	-- A Nose for Ptrouble #1
 					["sourceQuests"] = { 50402 },	-- SKREEEE! (#1)
 					["provider"] = { "n", 135308 },	-- Wingminder Goja
 					["isDaily"] = true,
 					["coord"] = { 70.8, 50.9, 863 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
+				q(50838, {	-- A Nose for Ptrouble #2
+					["sourceQuests"] = { 50412 },	-- Back to the Nest
+					["provider"] = { "n", 135308 },	-- Wingminder Goja
+					["isDaily"] = true,
+					["coord"] = { 70.7, 50.8, 862 },
+					["races"] = HORDE_ONLY,
+					["cost"] = { { "i", 158906, 8 } },	-- 8x Shimmerfin Flesh
 					["lvl"] = 120,
 				}),
 				q(55253, {	-- A Show of Faith

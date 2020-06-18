@@ -228,20 +228,32 @@ _.Zones =
 							["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
 						}),
 						i(163616, {	-- Dented Coin
-							--["questID"] = 53118,	-- Dented Coin
-							--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
-							["description"] = "Grants 250 reputation with Proudmoore Admiralty.",
-							["repeatable"] = true,
-							["races"] = ALLIANCE_ONLY,
+							["description"] = "|CFFFF0000Turn in to Cyrus Crestfall in Boralus for Proudmoore Admiralty rep.|r",
 							["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
+							["g"] = {
+								q(53118, {	-- Dented Coin
+									["repeatable"] = true,
+									["provider"] = { "n", 122370 },	-- Cyrus Crestfall <Harbormaster>
+									["races"] =  ALLIANCE_ONLY,
+									["g"] = {
+										i(174504),	-- Proudmoore War Copper
+									},
+								}),
+							},
 						}),
 						i(163614, {	-- Exotic Spices
-							--["questID"] = 53120,	-- Exotic Spices
-							--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
-							["description"] = "Grants 250 reputation with Order of Embers.",
-							["repeatable"] = true,
-							["races"] = ALLIANCE_ONLY,
+							["description"] = "|CFFFF0000Turn in to Xun Xun Sweetflower in Drustvar for Order of Embers rep.|r",
 							["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
+							["g"] = {
+								q(53120, {	-- Exotic Spices
+									["repeatable"] = true,
+									["provider"] = { "n", 136269 },	-- Xun Xun Sweetflower <Exotic Food & Spices>
+									["races"] =  ALLIANCE_ONLY,
+									["g"] = {
+										i(174503),	-- Exotically Spiced Carrot
+									},
+								}),
+							},
 						}),
 						i(166461, {	-- Gnarlwood Waveboard (TOY!)
 							["cost"] = { { "c", 1710, 300 }, },	-- 300x Seaferer's Dubloon
@@ -279,12 +291,18 @@ _.Zones =
 							["cost"] = { { "c", 1710, 35 }, },	-- 35x Seaferer's Dubloon
 						}),
 						i(163615, {	-- Lost Sea Scroll
-							--["questID"] = 53119,	-- Lost Sea Scroll
-							--Note!! We are commenting out the questID so we no longer show "Incomplete" on the item
-							["description"] = "Grants 250 reputation with Storm's Wake.",
-							["repeatable"] = true,
-							["races"] = ALLIANCE_ONLY,
+							["description"] = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
 							["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
+							["g"] = {
+								q(53119, {	-- Lost Sea Scroll
+									["repeatable"] = true,
+									["provider"] = { "n", 130576 },	-- Brother Pike
+									["races"] =  ALLIANCE_ONLY,
+									["g"] = {
+										i(174505),	-- Tide-Speaker's Tome
+									},
+								}),
+							},
 						}),
 						i(166749, {	-- Lyrics: Song of the Sea
 							["questID"] = 54859,
@@ -300,9 +318,20 @@ _.Zones =
 							["cost"] = { { "c", 1710, 1000 }, },	-- 1,000x Seaferer's Dubloon
 						}),
 						i(166501, {	-- Soggy Page
-							["description"] = "Grants 250 reputation with Tortollan Seekers.",
-							["repeatable"] = true,
+							["description"] = "|CFFFF0000Turn in to Collector Kojo in Stormsong Valley (Alliance) or Zuldazar (Horde) for Tortollan Seekers rep.|r",
 							["cost"] = { { "c", 1710, 100 }, },	-- 100x Seaferer's Dubloon
+							["g"] = {
+								q(54751, {	-- Soggy Page
+									["repeatable"] = true,
+									["providers"] = {
+										{ "n", 135793 },	-- Collector Kojo (A)
+										{ "n", 134345 },	-- Collector Kojo (H)
+									},
+									["g"] = {
+										i(174519),	-- Verdant Hills of Chokingvine - Page 17
+									},
+								}),
+							},
 						}),
 					},
 				}),

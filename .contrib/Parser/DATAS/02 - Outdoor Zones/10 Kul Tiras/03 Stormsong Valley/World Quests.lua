@@ -61,14 +61,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(53042, {	-- Stormcaller
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
-					q(52229, {	-- Too Much To Bear (might be Horde equivalent? didn't get this on Ally, only 52054)
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(52299, {	-- Whiplash
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -747,6 +739,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
+					q(53042, {	-- Stormcaller
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
 					q(51982, {	-- Storm's Rage (Faction Assault WQ)
 						["provider"] = { "n", 135800 },	-- Sister Lilyana <Storm's Wake Emissary>
 						["lvl"] = 110,
@@ -814,10 +811,15 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(52054, {	-- Too Much To Bear
+					q(52054, {	-- Too Much To Bear (A)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(52229, {	-- Too Much To Bear (H)
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(51817, {	-- Trapped Tortollans (A)
 						["lvl"] = 120,

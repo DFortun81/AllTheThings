@@ -520,6 +520,7 @@ app.L = {
 		[-394] = "Interface\\Icons\\achievement_dungeon_plaguewing",						-- The Plagueworks
 		[-395] = "Interface\\Icons\\achievement_dungeon_crimsonhall",						-- The Crimson Halls
 		[-396] = "Interface\\Icons\\achievement_dungeon_icecrown_frostwinghalls",			-- The Frostwing Halls
+		[-397] = "Interface\\Icons\\inv_icon_daily_mission_scroll",							-- Outposts
 		[-491] = "Interface\\Icons\\inv_misc_ticket_tarot_rogue",							-- Tarot Cards
 		[-494] = "Interface\\Icons\\Ability_Shaman_Ascendance",								-- Miscellaneous
 		[-498] = "Interface\\Icons\\inv_offhand_hyjal_d_01",								-- Twisting Nether (Demon Hunter Order Hall advancement)
@@ -1185,6 +1186,7 @@ app.L = {
 		[-394] = "The Plagueworks",												-- The Plagueworks
 		[-395] = "The Crimson Halls",											-- The Crimson Halls
 		[-396] = "The Frostwing Halls",											-- The Frostwing Halls
+		[-397] = "Outposts",													-- Outposts
 -- Blizzard Events and Anniversaries
 -- Lucetia Note: Leave these for now, some may be swapped to achieves instead.
 		[-488] = "War Chest",													-- Daily War Chest
