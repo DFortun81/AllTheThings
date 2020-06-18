@@ -34,8 +34,8 @@ _.Zones =
 				}),
 				q(24951, {	-- A Great Idea
 					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
-					["coord"] = { 55.6, 60.8, 71 },
 					["sourceQuest"] = 24933,	-- Chicken of the Desert
+					["coord"] = { 55.6, 60.8, 71 },
 				}),
 				q(8925,  {	-- A Portable Power Source
 					["provider"] = { "n", 16014 },	-- Mux Manascrambler
@@ -276,6 +276,7 @@ _.Zones =
 				}),
 				q(25060, {	-- Define "Crazy"
 					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
+					["sourceQuest"] = 24953,	-- Just Trying to Kill Some Bugs
 					["coord"] = { 49.9, 82.8, 71 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -530,8 +531,8 @@ _.Zones =
 				}),
 				q(24953, {	-- Just Trying to Kill Some Bugs
 					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
-					["coord"] = { 55.6, 60.8, 71 },
 					["sourceQuest"] = 24951,	-- A Great Idea
+					["coord"] = { 55.6, 60.8, 71 },
 					["g"] = {
 						i(56851),	-- Pendant of the Gaping Chasm
 						i(56852),	-- Mostly-Amazing Gloves
@@ -928,6 +929,7 @@ _.Zones =
 				}),
 				q(25063, {	-- Terrapination
 					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
+					["sourceQuest"] = 25062,	-- What We Came For
 					["coord"] = { 49.9, 82.8, 71 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1219,14 +1221,15 @@ _.Zones =
 				}),
 				q(25062, {	-- What We Came For
 					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
+					["sourceQuest"] = 25060,	-- Define "Crazy"
 					["coord"] = { 49.9, 82.8, 71 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25065, {	-- You Too, Brute?
 					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
+					["sourceQuest"] = 25063,	-- Terrapination
 					["coord"] = { 49.9, 82.8, 71 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 25063,	-- Terrapination
 					["g"] = {
 						i(56883),	-- Meatface Pummeler
 						i(56884),	-- "Smart Bracers"
