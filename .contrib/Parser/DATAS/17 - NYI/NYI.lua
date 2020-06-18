@@ -936,6 +936,31 @@ _.NeverImplemented =
 				un(1, i(96324)), -- Headpiece of the Witch Doctor
 				un(1, i(96325)), -- Kilt of the Witch Doctor
 				un(1, i(96326)), -- Shoulderwraps of the Witch Doctor
+				-- Not added boosted Gear
+				un(1, i(122010)),	-- Stormseeker vest
+				un(1, i(122012)),	-- Stormseeker sabatons
+				un(1, i(122013)),	-- Stormseeker grips
+				un(1, i(122014)),	-- Stormseeker coowl
+				un(1, i(122027)),	-- Stormseeker legigngs
+				un(1, i(122029)),	-- Stormseeker spaulders
+				un(1, i(122030)),	-- Stormseeker girdle
+				un(1, i(122031)),	-- Stormseeker bracers
+				un(1, i(123336)),	-- Stormseeker vest
+				un(1, i(123337)),	-- Stormseeker sabatons
+				un(1, i(123338)),	-- Stormseeker grips
+				un(1, i(123339)),	-- Stormseeker cowl
+				un(1, i(123340)),	-- Stormseeker leggings
+				un(1, i(123341)),	-- Stormseeker spaulders
+				un(1, i(123342)),	-- Stormseeker girdle
+				un(1, i(123343)),	-- Stormseeker bracers
+				un(1, i(123344)),	-- Stormseeker vest
+				un(1, i(123345)),	-- Stormseeker sabatons
+				un(1, i(123346)),	-- Stormseeker grips
+				un(1, i(123347)),	-- Stormseeker cowl
+				un(1, i(123348)),	-- Stormseeker legigngs
+				un(1, i(123349)),	-- Stormseeker spaulders
+				un(1, i(123350)),	-- Stormseeker gordöe
+				un(1, i(123351)),	-- Stormseeker bracers
 			}),
 			cl(3, {	-- Hunter
 				un(1, i(32133)),	-- Chancellor's Chain Armor
