@@ -130,12 +130,6 @@ _.WorldDrops =
 			i(6423),	-- Blackforge Greaves
 			i(4084),	-- Blackforge Leggings
 			i(4733),	-- Blackforge Pauldrons
-			i(1446, {	-- Blackrock Boots
-				["u"] = 7,	-- BoE Item
-			}),
-			i(1448, {	-- Blackrock Gauntlets
-				["u"] = 7,	-- BoE Item
-			}),
 			i(14950),	-- Bloodforged Belt
 			i(14956),	-- Bloodforged Bindings
 			i(14948),	-- Bloodforged Chestpiece
@@ -508,9 +502,6 @@ _.WorldDrops =
 			i(9291),	-- Field Plate Leggings
 			i(9292),	-- Field Plate Pauldrons
 			i(9285),	-- Field Plate Vambraces
-			i(10554, {	-- Foreman Pants
-				["u"] = 7,	-- Boe Item
-			}),
 			i(6382),	-- Forest Leather Belt
 			i(3057),	-- Forest Leather Boots
 			i(3202),	-- Forest Leather Bracers

@@ -86,7 +86,6 @@ _.Zones =
 					["coord"] = { 35.6, 15.6, 48 },
 					["g"] = {
 						un(7, i(2284)),	-- Rat Cloth Cloak
-						un(7, i(3305)),	-- Brackwater Leggings
 					},
 				}), 
 				n(1425,   {	-- Kubb

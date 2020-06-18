@@ -1383,6 +1383,7 @@ _.NeverImplemented =
 			un(1, i(106147)),	-- Forstwolf Stalwart Chestpiece (beta only)
 			un(1, i(106155)),	-- karabor honor guard wristwraps (green version, beta only)
 			un(1, i(41759)),	-- unknown
+			un(1, i(77870)),	-- Replica First Sergeant's Plate Bracers
 			un(1, i(42885)),	-- unknown
 			un(1, i(43848)),	-- unknown
 			un(1, i(39460)),	-- unknown
@@ -1513,6 +1514,8 @@ _.NeverImplemented =
 			un(1, i(150714)),	-- Travel-Worn Shawl
 			un(1, i(134579)),	-- Vanguard Cape
 			un(1, i(167150)),	-- Unknown
+			un(1, i(163354)),	-- 7th Legionnaire's War Cloak
+			un(1, i(163416)),	-- 7th Legionnaire's Drape
 			un(1, i(158582)),	-- Wickerweave Cloak (Bfa Beta Only)
 			un(1, i(108814)),	-- 6.0 PH Cloak Agi
 			un(1, i(108822)),	-- 6.0 PH Cloak STR
@@ -1841,7 +1844,6 @@ _.NeverImplemented =
 			un(1, i(20883)),	-- Unknown
 			un(1, i(20936)),	-- Unknown
 			un(1, i(20937)),	-- Unknown
-			un(1, i(171247)),	-- Abyssal Shard (Quest Version)
 			un(1, i(169958)),	-- Fragment of the Void
 			un(1, i(169959)),	-- Fragment of the Void
 			un(1, i(169960)),	-- Fragment of the Void

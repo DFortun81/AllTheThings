@@ -7,7 +7,7 @@ _.Zones =
 		m(27, {	-- Dun Morogh
 			m(469,  {	-- New Tinkertown [Above]
 				n(RARES, {
-					n(8503, { 	-- Gibblewilt NOTE: As of 8.0 npc still spawns but drops are still unconfirmed as obtainable again
+					n(8503, { 	-- Gibblewilt NOTE: As of 8.0 npc still spawns but drops are unobtainable
 						un(7, i(10554)),	-- Foreman Pants
 						un(7, i(10553)),	-- Foreman Vest
 					}),	

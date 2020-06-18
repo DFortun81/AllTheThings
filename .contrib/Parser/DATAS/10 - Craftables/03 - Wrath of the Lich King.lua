@@ -89,12 +89,12 @@ _.Craftables =
 				i(47591),	-- Breastplate of the White Knight
 				i(47592),	-- Breastplate of the White Knight
 				i(41129),	-- Brilliant Saronite Breastplate
-				i(41189, {	-- Chestplate of Conquest
+				un(5, i(41189, {	-- Chestplate of Conquest
 					["timeline"] = {
 						"added 3.0.1.8770",
 						"removed 4.0.1.13287",
 					},
-				}),
+				})),
 				i(39085),	-- Cobalt Chestpiece
 				i(43586),	-- Icebane Chestguard
 				i(42725),	-- Ornate Saronite Hauberk
@@ -149,12 +149,12 @@ _.Craftables =
 				i(39086),	-- Cobalt Legplates
 				i(41345),	-- Daunting Legplates
 				i(43588),	-- Icebane Treads
-				i(41190, {	-- Legplates of Conquest
+				un(5, i(41190, {	-- Legplates of Conquest
 					["timeline"] = {
 						"added 3.0.1.8770",
 						"removed 4.0.1.13287",
 					},
-				}),
+				})),
 				i(49903),	-- Legplates of Painful Death
 				i(42726),	-- Ornate Saronite Legplates
 				i(49904),	-- Pillars of Might

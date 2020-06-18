@@ -13,9 +13,6 @@ _.Zones =
 						{ 67.8, 58.8, 27 },
 						{ 66.2, 59.8, 27 },
 					},
-					["g"] = {
-						un(7, i(3283)),	-- Battle Chain Tunic
-					},
 				}),
 				n(1137, { 	-- Edan the Howler	
 				}),

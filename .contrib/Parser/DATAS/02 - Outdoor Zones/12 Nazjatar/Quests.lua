@@ -231,12 +231,18 @@ _.Zones =
 				["coord"] = { 37.9, 52.9, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56346,	-- Ancient Technology
+				["g"] = {
+					i(171247),	-- Abyssal Shard (Quest Version)
+				},
 			}),
 			q(56353, {	-- An Abyssal Opportunity
 				["provider"] = { "n", 154408 },	-- Rolm
 				["coord"] = { 49.3, 61.8, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56354,	-- Ancient Technology
+				["g"] = {
+					i(171247),	-- Abyssal Shard (Quest Version)
+				},
 			}),
 			q(56813, {	-- An Unexpected Friend
 				["provider"] = { "n", 149904 },	-- Neri Sharpfin
