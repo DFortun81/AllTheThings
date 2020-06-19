@@ -128,24 +128,24 @@ _.Zones =
 									["sourceQuests"] = { 53745 },	-- Mudfisher Cove Mission Complete
 									["provider"] = { "n", 138704 },	-- Mission Command Table
 									["races"] = HORDE_ONLY,
-									["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
+									["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
 								}),
 								q(52314, {	-- Mudfisher Cove
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 									["races"] = HORDE_ONLY,
-									["coord"] = { 58.44, 62.67, 862 },
+									["coord"] = { 58.4, 62.6, 862 },
 									["sourceQuests"] = { 52313 },	-- Mission Report: Mudfisher Cove
 								}),
 								mission(2095, {	-- Wicker Defense
-									--["questID"] = ,	-- Triggers when completed
-									["races"] = HORDE_ONLY,
 									["sourceQuests"] = { 52314 },	-- Mudfisher Cove
-								}),
-								q(53125, {	-- Mission Report: Into The Wicker
-									["provider"] = { "n", 138704 },		-- Mission Command Table
 									["races"] = HORDE_ONLY,
-									["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
-									--["sourceQuests"] = {  },	-- Wicker Defense Mission Complete
+									["g"] = {
+										q(53125, {	-- Mission Report: Into The Wicker
+											["provider"] = { "n", 138704 },		-- Mission Command Table
+											["races"] = HORDE_ONLY,
+											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
+										}),
+									},
 								}),
 								q(53126, {	-- The Wicker Totem
 									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
@@ -161,25 +161,25 @@ _.Zones =
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
 								mission(1963, {	-- Stonefist Watch
-									--["questID"] = ,	-- Triggers when completed
+									["questID"] = 53740,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
 								}),
 								q(52221, {	-- Mission Report: Stonefist Watch
+									["sourceQuests"] = { 53740 },	-- Stonefist Watch Mission Complete
 									["provider"] = { "n", 138704 },		-- Mission Command Table
+									["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
 									["races"] = HORDE_ONLY,
-									["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
-									--["sourceQuests"] = {  },	-- Stonefist Watch Mission Complete
 								}),
-								q(52314, {	-- Stonefist Watch
-									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
+								q(52222, {	-- Stonefist Watch
+									["sourceQuests"] = { 52221 },	-- Mission Report: Stonefist Watch
+									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 									["races"] = HORDE_ONLY,
-									["coord"] = { 58.44, 62.67, 862 },
-									["sourceQuests"] = { 52221 },		-- Mission Report: Stonefist Watch
+									["coord"] = { 58.4, 62.6, 862 },
 								}),
 								mission(2092, {	-- Spare Parts
 									--["questID"] = ,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
-									["sourceQuests"] = { 52314 },		-- Stonefist Watch
+									["sourceQuests"] = { 52222 },	-- Stonefist Watch
 								}),
 								q(53081, {	-- Mission Report: Spare Parts
 									["provider"] = { "n", 138704 },		-- Mission Command Table
@@ -344,8 +344,8 @@ _.Zones =
 								q(53152, {	-- Wolves For The Den
 									["sourceQuests"] = { 53151 },	-- Mission Report: Wolves For The Den
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-									["races"] = HORDE_ONLY,
 									["coord"] = { 58.4, 62.6, 862 },
+									["races"] = HORDE_ONLY,
 								}),
 							},
 						}),

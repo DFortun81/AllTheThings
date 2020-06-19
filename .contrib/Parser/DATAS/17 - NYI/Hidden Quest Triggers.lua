@@ -2050,6 +2050,8 @@ _.NeverImplemented =
 		q(47887),	-- Vol'dun - triggered when entering the Ashvane Encampment. Possibly controls the spawn of Randall Redmond?
 		q(50522),	-- Vol'dun - triggered after getting a food buff from the goldtusk inn's "All-You-Can-Eat Breakfast Buffet". Could also be related to feeding Tarkaj during "A Goldtusk Greeting"
 		-- Chests
+		q(51138),	-- clicking on sand pile to spawn Zem'lan's Buried Treasure
+		q(53005),	-- clicking on the fishing bobber to spawn Sandsunken Chest
 		q(50922),	-- Vol'dun repeatable random chest
 		q(50920),	-- Vol'dun repeatable random chest
 		q(51673),	-- Vol'dun repeatable random chest
@@ -2117,6 +2119,8 @@ _.NeverImplemented =
 		
 	-- Nazjatar
 		q(56659),	-- not sure precisely what triggered this -- selected Neri as my daily follower, refreshed, walked outside, picked up "Down into Nazjatar," and this popped
+		q(56664),	-- i flew into brinestone cove with neri as my follower.  she said, "we need to be careful down here.  the locals are definitely not friendly," and this quest popped immediately afterward
+		q(56669),	-- i flew into the area with snapdragons (west of the drowned market) and neri said, "the tamed snapdragons aren't producing venom anymore. our only way to harvest it is from the wild packs roaming here."  this quest popped immediately afterward
 		q(57167),	-- Killed Vyz'olgo the Mind-Taker. Probably related to a daily loot flag from the lieutenants
 		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance
 		q(56505),	-- Triggered when walking through the Alliance crash site as horde. Bodyguard dialog fires

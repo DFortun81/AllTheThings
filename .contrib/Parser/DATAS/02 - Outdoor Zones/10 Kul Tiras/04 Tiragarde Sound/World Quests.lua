@@ -73,10 +73,6 @@ _.Zones =
 					q(47695, {	-- Sound the Alarm
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(51622, {	-- Tidal Teachings
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(54781, {	-- UNUSED
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -730,6 +726,11 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(52056, {	-- The Tendrils of Fate (H)
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(51622, {	-- Tidal Teachings
 						["isWorldQuest"] = true,
 						["races"] = HORDE_ONLY,
 						["lvl"] = 120,

@@ -113,10 +113,11 @@ _.Zones =
 				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 			}),
 			q(55993, {	-- A Little Edge
+				["description"] = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
 				["provider"] = { "n", 153743 },	-- Kade Makreef
+				["isDaily"] = true,
 				["coord"] = { 26.0, 41.8, 1355 },
 				["races"] = HORDE_ONLY,
-				["isDaily"] = true,
 			}),
 			q(55662, {	-- Arcane Cache (A)
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
@@ -231,18 +232,12 @@ _.Zones =
 				["coord"] = { 37.9, 52.9, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 56346,	-- Ancient Technology
-				["g"] = {
-					i(171247),	-- Abyssal Shard (Quest Version)
-				},
 			}),
 			q(56353, {	-- An Abyssal Opportunity
 				["provider"] = { "n", 154408 },	-- Rolm
 				["coord"] = { 49.3, 61.8, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 56354,	-- Ancient Technology
-				["g"] = {
-					i(171247),	-- Abyssal Shard (Quest Version)
-				},
 			}),
 			q(56813, {	-- An Unexpected Friend
 				["provider"] = { "n", 149904 },	-- Neri Sharpfin
@@ -583,6 +578,7 @@ _.Zones =
 				["provider"] = { "n", 154075 },	-- Tracker Kenji
 			}),
 			q(55986, {	-- Break a Few Eggs (H)
+				["description"] = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
 				["provider"] = { "n", 153684 },	-- Caitfin Gills
 				["coord"] = { 70.2, 23.2, 1355 },
 				["races"] = HORDE_ONLY,
@@ -897,6 +893,7 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 			}),
 			q(55661, {	-- Fighting Venomous With Venom -- TODO:: verify sourceQuest
+				["description"] = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
 				["provider"] = { "n", 153777 },	-- Cando Mikfin
 				["coord"] = { 64.5, 48.5, 1355 },
 				["races"] = HORDE_ONLY,
@@ -1824,7 +1821,6 @@ _.Zones =
 				["provider"] = { "n", 153006 },	-- Bren Inkfin
 				["coord"] = { 38.0, 48.6, 1355 },
 				["sourceQuest"] = 55500,	-- Save A Friend
-				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 			}),
 			q(55565, {	-- Shoring Up Mana Reserves
