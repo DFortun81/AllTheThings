@@ -7,7 +7,6 @@ _.Zones =
 		m(379, {	-- Kun-Lai Summit
 			n(-362, {	-- Peak of Serenity
 				["description"] = "This area phases once you have begun the Monk Class Hall Campaign and may not be accessible again until you complete it.|r",
-				["races"] = { 25, 26 },	-- Pandaren
 				["classes"] = { 10 },	-- Monk
 				["icon"] = "Interface\\Icons\\ability_monk_legacyoftheemperor",
 				["g"] = {
