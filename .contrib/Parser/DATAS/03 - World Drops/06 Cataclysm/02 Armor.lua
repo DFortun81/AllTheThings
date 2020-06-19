@@ -113,6 +113,7 @@ _.WorldDrops =
 			}),
 			f(52,   {	-- Finger
 				i(66987),	-- Band of the Virtuous
+				i(67139),	-- Blauvelt's Family Crest
 				i(67136),	-- Gilnean Ring of Ruination
 				i(66942),	-- Immaculate Br'etc Signet
 				i(55419),	-- Mirkfallon Ring
