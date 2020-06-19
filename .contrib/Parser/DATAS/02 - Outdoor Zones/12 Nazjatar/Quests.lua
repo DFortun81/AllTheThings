@@ -1824,6 +1824,7 @@ _.Zones =
 				["provider"] = { "n", 153006 },	-- Bren Inkfin
 				["coord"] = { 38.0, 48.6, 1355 },
 				["sourceQuest"] = 55500,	-- Save A Friend
+				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 			}),
 			q(55565, {	-- Shoring Up Mana Reserves
