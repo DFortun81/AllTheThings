@@ -1819,6 +1819,7 @@ _.Zones =
 			}),
 			q(55766, {	-- She Sells These Shells
 				["provider"] = { "n", 153006 },	-- Bren Inkfin
+				["isDaily"] = true,
 				["coord"] = { 38.0, 48.6, 1355 },
 				["sourceQuest"] = 55500,	-- Save A Friend
 				["races"] = HORDE_ONLY,

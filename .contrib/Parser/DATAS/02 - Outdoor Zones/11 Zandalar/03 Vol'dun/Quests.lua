@@ -102,6 +102,14 @@ _.Zones =
 				}),
 				
 				
+				q(50551, {	-- Temple of Sethraliss: Avatar of the Loa
+					["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
+					["provider"] = { "n", 129588 },	-- Vorrik
+					["races"] = HORDE_ONLY,
+					["coord"] = { 27.0, 52.6, 864 },	-- Sanctuary of the Devoted (Vol'dun)
+				}),
+				
+				
 				q(50641, {	-- Break Their Ranks
 					["sourceQuests"] = { 47324 },	-- Unlikely Allies
 					["provider"] = { "n", 128696 },	-- Zissiah
@@ -302,6 +310,14 @@ _.Zones =
 					["provider"] = { "n", 137970 },	-- Vorrik
 					["coord"] = { 42.9, 35.7, 864 },	-- Bwoljin's Fall (Vol'dun)
 					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(50703, {	-- Informing the Horde
+					["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
+					["provider"] = { "n", 135133 },	-- Warguard Rakera
+					["races"] = HORDE_ONLY,
+					["coord"] = { 27, 52.6, 864 },	-- Sanctuary of the Devoted (Vol'dun)
 				}),
 				
 				
@@ -1065,12 +1081,6 @@ _.Zones =
 					["provider"] = { "n", 129453 },	-- Kenzou
 					["sourceQuests"] = { 48840 },	-- Ruins-Level Marketing
 				}),
-				q(50703, {	-- Informing the Horde
-					["provider"] = { "n", 135133 },	-- Warguard Rakera
-					["races"] = HORDE_ONLY,
-					["coord"] = { 27, 52.6, 864 },	-- Sanctuary of the Devoted (Vol'dun)
-					["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
-				}),
 				q(52024, {	-- Informing the Horde
 					["u"] = 40,
 					["coord"] = { 27.0, 52.5, 864 },
@@ -1335,12 +1345,6 @@ _.Zones =
 					["coord"] = { 43.3, 75.4, 864 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 48846 },	-- Liquid Motivation
-				}),
-				q(50551, {	-- Temple of Sethraliss: Avatar of the Loa
-					["provider"] = { "n", 129588 },	-- Vorrik
-					["races"] = HORDE_ONLY,
-					["coord"] = { 27, 52.6, 864 },	-- Sanctuary of the Devoted (Vol'dun)
-					["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
 				}),
 				q(51773, {	-- The Ashvane Threat
 					["provider"] = { "n", 126576 },	-- Razgaji
