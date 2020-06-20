@@ -279,7 +279,7 @@ _.Zones =
 				}),
 				q(25060, {	-- Define "Crazy"
 					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
-					["sourceQuest"] = 24953,	-- Just Trying to Kill Some Bugs
+					["sourceQuest"] = 25061,	-- Land's End
 					["coord"] = { 49.9, 82.8, 71 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -546,6 +546,7 @@ _.Zones =
 				q(25061, {	-- Land's End
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 11811 },	-- Narain Soothfancy
+					["sourceQuest"] = 24953,	-- Just Trying to Kill Some Bugs
 					["coord"] = { 55.2, 60.2, 71 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -932,7 +933,10 @@ _.Zones =
 				}),
 				q(25063, {	-- Terrapination
 					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
-					["sourceQuest"] = 25062,	-- What We Came For
+					["sourceQuests"] = {
+						25060,	-- Define "Crazy"
+						25062,	-- What We Came For
+					},
 					["coord"] = { 49.9, 82.8, 71 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1224,7 +1228,7 @@ _.Zones =
 				}),
 				q(25062, {	-- What We Came For
 					["provider"] = { "n", 39059 },	-- Kelsey Steelspark
-					["sourceQuest"] = 25060,	-- Define "Crazy"
+					["sourceQuest"] = 24953,	-- Just Trying to Kill Some Bugs
 					["coord"] = { 49.9, 82.8, 71 },
 					["races"] = ALLIANCE_ONLY,
 				}),
