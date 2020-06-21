@@ -122,6 +122,7 @@ app.L = {
 	["ABBREVIATIONS"] = {
 		["ALL THE THINGS"] = "ATT",
 		["Expansion Pre"] = "Pre",
+		["Expansion Features"] = "EF",
 		["Dungeons & Raids"] = "D&R",
 		["Classic -> "] = "",
 		["Burning Crusade"] = "BC",
@@ -154,7 +155,6 @@ app.L = {
 		["Emissary Quests"] = "Emissary",
 		["World Quests"] = "WQ",
 		["WoW Anniversary"] = "Anniversary",
-
 	};
 	["CUSTOM_DIFFICULTIES"] = {
 		[-1] = "Raid Finder (5.4)",

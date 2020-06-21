@@ -127,31 +127,31 @@ _.Zones =
 								q(52313, {	-- Mission Report: Mudfisher Cove
 									["sourceQuests"] = { 53745 },	-- Mudfisher Cove Mission Complete
 									["provider"] = { "n", 138704 },	-- Mission Command Table
-									["races"] = HORDE_ONLY,
 									["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
+									["races"] = HORDE_ONLY,
 								}),
 								q(52314, {	-- Mudfisher Cove
-									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-									["races"] = HORDE_ONLY,
-									["coord"] = { 58.4, 62.6, 862 },
 									["sourceQuests"] = { 52313 },	-- Mission Report: Mudfisher Cove
+									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+									["coord"] = { 58.4, 62.6, 862 },
+									["races"] = HORDE_ONLY,
 								}),
 								mission(2095, {	-- Wicker Defense
 									["sourceQuests"] = { 52314 },	-- Mudfisher Cove
 									["races"] = HORDE_ONLY,
 									["g"] = {
 										q(53125, {	-- Mission Report: Into The Wicker
-											["provider"] = { "n", 138704 },		-- Mission Command Table
-											["races"] = HORDE_ONLY,
+											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
+											["races"] = HORDE_ONLY,
 										}),
 									},
 								}),
 								q(53126, {	-- The Wicker Totem
-									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
+									["sourceQuests"] = { 53125 },	-- Mission Report: Into The Wicker
+									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+									["coord"] = { 58.4, 62.6, 862 },
 									["races"] = HORDE_ONLY,
-									["coord"] = { 58.44, 62.67, 862 },
-									["sourceQuests"] = { 53125 },		-- Mission Report: Into The Wicker
 								}),
 							},
 						}),
@@ -166,32 +166,32 @@ _.Zones =
 								}),
 								q(52221, {	-- Mission Report: Stonefist Watch
 									["sourceQuests"] = { 53740 },	-- Stonefist Watch Mission Complete
-									["provider"] = { "n", 138704 },		-- Mission Command Table
+									["provider"] = { "n", 138704 },	-- Mission Command Table
 									["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
 									["races"] = HORDE_ONLY,
 								}),
 								q(52222, {	-- Stonefist Watch
 									["sourceQuests"] = { 52221 },	-- Mission Report: Stonefist Watch
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-									["races"] = HORDE_ONLY,
 									["coord"] = { 58.4, 62.6, 862 },
+									["races"] = HORDE_ONLY,
 								}),
 								mission(2092, {	-- Spare Parts
-									--["questID"] = ,	-- Triggers when completed
-									["races"] = HORDE_ONLY,
 									["sourceQuests"] = { 52222 },	-- Stonefist Watch
-								}),
-								q(53081, {	-- Mission Report: Spare Parts
-									["provider"] = { "n", 138704 },		-- Mission Command Table
 									["races"] = HORDE_ONLY,
-									["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
-									--["sourceQuests"] = {  },	-- Spare Parts Mission Complete
+									["g"] = {
+										q(53081, {	-- Mission Report: Spare Parts
+											["provider"] = { "n", 138704 },	-- Mission Command Table
+											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
+											["races"] = HORDE_ONLY,
+										}),
+									},
 								}),
 								q(53082, {	-- Spare Parts
-									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
+									["sourceQuests"] = { 53081 },	-- Mission Report: Spare Parts
+									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+									["coord"] = { 58.4, 62.6, 862 },
 									["races"] = HORDE_ONLY,
-									["coord"] = { 58.44, 62.67, 862 },
-									["sourceQuests"] = { 53081 },		-- Mission Report: Into The Wicker
 								}),
 							},
 						}),

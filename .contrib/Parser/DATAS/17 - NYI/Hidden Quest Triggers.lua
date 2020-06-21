@@ -1969,7 +1969,9 @@ _.NeverImplemented =
 		-- Quests
 		q(49179),	-- triggered after speaking to Witch Doctor Kejabu after killing Hir'eek, on quest "Upward and "Onward"
 		-- Various
-		q(49368),	-- killed a Vilebone Ravager while on the "Agent of Death" WQ, and this quest popped.  not sure if it had to do with entering the area or killing the mob
+		q(49368, {	-- killed a Vilebone Ravager while on the "Agent of Death" WQ, and this quest popped.  not sure if it had to do with entering the area or killing the mob
+			["isWorldQuest"] = true,	-- for some reason, this shows up in /attwq for characters who haven't done it.  haunted!
+		}),
 
 	--	Stormsong Valley
 		q(51695),	-- Horde WarCampaign - "Reclaiming What's Ours" (ID 51696) using the horn to reclaim the Foothold

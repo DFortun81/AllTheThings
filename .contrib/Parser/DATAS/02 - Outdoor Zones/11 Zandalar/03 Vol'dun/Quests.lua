@@ -23,6 +23,13 @@ _.Zones =
 				}),
 				
 				
+				q(50755, {	-- A Meal for Birds
+					["provider"] = { "n", 137629 },	-- Mekaru
+					["coord"] = { 54.8, 42.4, 864 },	-- The Brine Basin (Vol'dun)
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(49334, {	-- A Powerful Prisoner
 					["sourceQuests"] = { 47324 },	-- Unlikely Allies
 					["provider"] = { "n", 128687 },	-- Serrik
@@ -31,6 +38,23 @@ _.Zones =
 					["g"] = {
 						i(155457),	-- Devoted Defender's Cloak
 						i(155454),	-- Devoted Defender's Band
+					},
+				}),
+				
+				
+				q(47322, {	-- Aided Escape
+					["provider"] = { "n", 137631 },	-- Neri
+					["coord"] = { 54.6, 42.4, 864 },	-- The Brine Basin (Vol'dun)
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(155388),	-- Exiled Veteran's Treads
+						i(155389),	-- Lastwind Sandals
+						i(155390),	-- Resilient Outcast's Boots
+						i(155391),	-- Scorching Sands Footpads
+						i(155409),	-- Exiled Veteran's Greatbelt
+						i(155410),	-- Lastwind Cord
+						i(155411),	-- Resilient Outcast's Chain
+						i(155412),	-- Scorching Sands Belt
 					},
 				}),
 				
@@ -231,6 +255,25 @@ _.Zones =
 				}),
 				
 				
+				q(48872, {	-- Expedite the Excavation
+					["sourceQuests"] = { 50536 },	-- Magic Decoder Device
+					["provider"] = { "n", 134148 },	-- Maaz
+					["coord"] = { 47.4, 72.8, 864 },	-- Zul'Ahjin (Vol'dun)
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(50596, {	-- Exterminate the Vermin
+					["sourceQuests"] = { 50536 },	-- Magic Decoder Device (appears while on quest while friendly to sethrak)
+					["provider"] = { "n", 134408 },	-- Foreman Jethek
+					["coords"] = {
+						{ 49.8, 74.6, 864 },	-- Zul'Ahjin (Vol'dun)
+						{ 49.8, 76.6, 864 },
+					},
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(49040, {	-- Fond Farewells
 					["sourceQuests"] = { 48895 },	-- The Perfect Offering
 					["description"] = "This version is available before completing Ending the Madness.",
@@ -349,6 +392,14 @@ _.Zones =
 				}),
 				
 				
+				q(48553, {	-- Let it Flow
+					["sourceQuests"] = { 51829 },	-- Ranah's Wrench
+					["provider"] = { "n", 126814 },	-- Ranah
+					["coord"] = { 53.8, 69.4, 864 },	-- Withering Gulch (Vol'dun)
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(49668, {	-- Light Up the Gulch
 					["sourceQuests"] = {
 						49666,	-- Make Them Fear Us
@@ -427,6 +478,17 @@ _.Zones =
 				}),
 				
 				
+				q(50535, {	-- Power of the Overseer
+					["sourceQuests"] = {
+						48872,	-- Expedite the Excavation
+						48871,	-- Rescue the Relics
+					},
+					["provider"] = { "n", 134148 },	-- Maaz
+					["coord"] = { 47.2, 72.8, 864 },	-- Zul'Ahjin (Vol'dun)
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
 				q(48993, {	-- Powerful Conductors
 					["sourceQuests"] = { 48895 },	-- The Perfect Offering
 					["provider"] = { "n", 127992 },	-- Akunda the Exalted
@@ -443,6 +505,14 @@ _.Zones =
 					["sourceQuests"] = { 47324 },	-- Unlikely Allies
 					["provider"] = { "n", 128696 },	-- Zissiah
 					["coord"] = { 27.2, 53.8, 864 },	-- Terrace of the Devoted (Vol'dun)
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(51829, {	-- Ranah's Wrench
+					["isBreadcrumb"] = true,
+					["provider"] = { "o", 291143 },	-- Ranah's Wrench
+					["coord"] = { 50.7, 64.7, 864 },	-- Atul'aman (Vol'dun)
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -470,6 +540,14 @@ _.Zones =
 					},
 					["provider"] = { "n", 127989 },	-- Meijani
 					["coord"] = { 53.0, 78.8, 864 },	-- Valley of Sorrows (Vol'dun)
+					["races"] = HORDE_ONLY,
+				}),
+				
+				
+				q(48871, {	-- Rescue the Relics
+					["sourceQuests"] = { 50536 },	-- Magic Decoder Device
+					["provider"] = { "n", 134148 },	-- Maaz
+					["coord"] = { 47.2, 72.8, 864 },	-- Zul'Ahjin (Vol'dun)
 					["races"] = HORDE_ONLY,
 				}),
 				
@@ -694,6 +772,26 @@ _.Zones =
 				}),
 				
 				
+				q(48554, {	-- The Source of the Problem
+					["sourceQuests"] = {
+						48553,	-- Let it Flow
+						48555,	-- We Can Salvage the Seeds
+						48551,	-- Wither Without Water
+					},
+					["provider"] = { "n", 126814 },	-- Ranah
+					["coord"] = { 53.8, 69.4, 864 },	-- Withering Gulch (Vol'dun)
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(155392),	-- Scorching Sands Grips
+						i(155393),	-- Exiled Veteran's Handguards
+						i(155394),	-- Lastwind Grips
+						i(155395),	-- Resilient Outcast's Gloves
+						i(155448),	-- Deserted Divining Rod
+						i(159975),	-- Scorched Plateau Defender
+					},
+				}),
+				
+				
 				q(47959, {	-- The Warguard's Trail
 					["sourceQuests"] = {
 						47321,	-- Knickknack Takeback
@@ -772,7 +870,20 @@ _.Zones =
 				}),
 				
 				
+				q(48555, {	-- We Can Salvage the Seeds
+					["sourceQuests"] = { 51829 },	-- Ranah's Wrench
+					["provider"] = { "n", 126814 },	-- Ranah
+					["coord"] = { 53.8, 69.4, 864 },	-- Withering Gulch (Vol'dun)
+					["races"] = HORDE_ONLY,
+				}),
 				
+				
+				q(48551, {	-- Wither Without Water
+					["sourceQuests"] = { 51829 },	-- Ranah's Wrench
+					["provider"] = { "n", 126814 },	-- Ranah
+					["coord"] = { 53.8, 69.4, 864 },	-- Withering Gulch (Vol'dun)
+					["races"] = HORDE_ONLY,
+				}),
 				
 				
 				
@@ -800,32 +911,12 @@ _.Zones =
 					["provider"] = { "o", 282498 },	-- Desert Flute
 					["races"] = HORDE_ONLY,
 				}),
-				q(50755, {	-- A Meal for Birds
-					["provider"] = { "n", 137629 },	-- Mekaru
-					["coord"] = { 54.8, 42.4, 864 },	-- The Brine Basin (Vol'dun)
-					["races"] = HORDE_ONLY,
-				}),
 				q(48327, {	-- A Strange Delivery
 					["provider"] = { "n", 125904 },	-- Norah
 					["coord"] = { 38.8, 77.4, 864 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 51062 },	-- Escaping Zem'lan
-				}),
-				q(47322, {	-- Aided Escape
-					["provider"] = { "n", 137631 },	-- Neri
-					["coord"] = { 54.6, 42.4, 864 },	-- The Brine Basin (Vol'dun)
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(155388),	-- Exiled Veteran's Treads
-						i(155389),	-- Lastwind Sandals
-						i(155390),	-- Resilient Outcast's Boots
-						i(155391),	-- Scorching Sands Footpads
-						i(155409),	-- Exiled Veteran's Greatbelt
-						i(155410),	-- Lastwind Cord
-						i(155411),	-- Resilient Outcast's Chain
-						i(155412),	-- Scorching Sands Belt
-					},
 				}),
 				q(47574, {	-- All Webbed Up
 					["provider"] = { "n", 134134 },	-- Tulu
@@ -994,21 +1085,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 48326 },	-- This Be Mutiny
 				}),
-				q(48872, {	-- Expedite the Excavation
-					["provider"] = { "n", 134148 },	-- Maaz
-					["coord"] = { 47.4, 72.8, 864 },	-- Zul'Ahjin (Vol'dun)
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 50536 },	-- Magic Decoder Device
-				}),
-				q(50596, {	-- Exterminate the Vermin
-					["provider"] = { "n", 134408 },	-- Foreman Jethek
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 50536 },	-- Magic Decoder Device
-					["coords"] = {
-						{ 49.8, 74.6, 864 },	-- Zul'Ahjin (Vol'dun)
-						{ 49.8, 76.6, 864 },
-					},
-				}),
 				q(49262, {	-- Gang Bustin'
 					["provider"] = { "n", 128618 },	-- Dockmaster Herrington
 					["coord"] = { 44.6, 88.2, 864 },
@@ -1114,12 +1190,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 50980 },	-- My Hungry Neighbor
-				}),
-				q(48553, {	-- Let it Flow -- aa
-					["provider"] = { "n", 126814 },	-- Ranah
-					["coord"] = { 53.8, 69.4, 864 },	-- Withering Gulch (Vol'dun)
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 51829 },	-- Ranah's Wrench
 				}),
 				q(48846, {	-- Liquid Motivation
 					["provider"] = { "n", 125862 },	-- Liquid Motivation
@@ -1231,15 +1301,6 @@ _.Zones =
 					["coord"] = { 36.6, 32.4, 864 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(50535, {	-- Power of the Overseer
-					["provider"] = { "n", 134148 },	-- Maaz
-					["coord"] = { 47.2, 72.8, 864 },	-- Zul'Ahjin (Vol'dun)
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						48872,	-- Expedite the Excavation
-						48871,	-- Rescue the Relics
-					},
-				}),
 				q(52129, {	-- Power Problems -- aa
 					["provider"] = { "n", 135179 },	-- Merd Archfeld
 					["coord"] = { 26.2, 73.6, 864 },
@@ -1256,22 +1317,10 @@ _.Zones =
 						50328,	-- Unconventional Aromatics
 					},
 				}),
-				q(51829, {	-- Ranah's Wrench -- aa
-					["provider"] = { "o", 291143 },	-- Ranah's Wrench
-					["coord"] = { 50.7, 64.7, 864 },	-- Atul'aman (Vol'dun)
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
 				q(48332, {	-- Ranishu Are Resources -- aa
 					["coord"] = { 45.3, 46.2, 864 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 129451 },	-- Omi
-				}),
-				q(48871, {	-- Rescue the Relics
-					["provider"] = { "n", 134148 },	-- Maaz
-					["coord"] = { 47.2, 72.8, 864 },	-- Zul'Ahjin (Vol'dun)
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 50536 },	-- Magic Decoder Device
 				}),
 				q(47564, {	-- Restocking the Buffet
 					["provider"] = { "n", 122725 },	-- Zulsan
@@ -1472,24 +1521,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 47571 },	-- The Elder's Wisdom
 				}),
-				q(48554, {	-- The Source of the Problem
-					["provider"] = { "n", 126814 },	-- Ranah
-					["coord"] = { 53.8, 69.4, 864 },	-- Withering Gulch (Vol'dun)
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = {
-						48553,	-- Let it Flow
-						48555,	-- We Can Salvage the Seeds
-						48551,	-- Wither Without Water
-					},
-					["g"] = {
-						i(155392),	-- Scorching Sands Grips
-						i(155393),	-- Exiled Veteran's Handguards
-						i(155394),	-- Lastwind Grips
-						i(155395),	-- Resilient Outcast's Gloves
-						i(155448),	-- Deserted Divining Rod
-						i(159975),	-- Scorched Plateau Defender
-					},
-				}),
 				q(48335, {	-- The Strongest Rope in Vol'dun
 					["provider"] = { "n", 129453 },	-- Kenzou
 					["coord"] = { 45.3, 46.2, 864 },
@@ -1604,18 +1635,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 273854 },	-- Backpack
 					["sourceQuests"] = { 48530 },	-- I Heard You Lost the Herd
-				}),
-				q(48555, {	-- We Can Salvage the Seeds -- aa
-					["provider"] = { "n", 126814 },	-- Ranah
-					["coord"] = { 53.8, 69.4, 864 },	-- Withering Gulch (Vol'dun)
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 51829 },	-- Ranah's Wrench
-				}),
-				q(48551, {	-- Wither Without Water -- aa
-					["provider"] = { "n", 126814 },	-- Ranah
-					["coord"] = { 53.8, 69.4, 864 },	-- Withering Gulch (Vol'dun)
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 51829 },	-- Ranah's Wrench
 				}),
 				q(47576, {	-- Wrath of the Tiger
 					["provider"] = { "n", 123052 },	-- Kimbul
