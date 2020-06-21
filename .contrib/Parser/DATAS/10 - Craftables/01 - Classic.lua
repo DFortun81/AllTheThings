@@ -793,7 +793,7 @@ _.Craftables =
 					i(7374),	-- Dusky Leather Armor
 					i(4256),	-- Guardian Armor
 					i(5782),	-- Thick Murloc Armor
-					h(i(4455)),	-- Raptor Hide Harness (Horde only)
+					i(4455),	-- Raptor Hide Harness
 					i(4255),	-- Green Leather Armor
 					i(2314),	-- Toughened Leather Armor
 					i(5781),	-- Murloc Scale Breastplate
