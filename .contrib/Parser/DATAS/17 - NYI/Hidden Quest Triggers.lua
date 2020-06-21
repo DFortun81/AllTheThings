@@ -1568,6 +1568,8 @@ _.NeverImplemented =
 		q(54780),	-- triggered when turning in #53883, "Shores of Zuldazar," zuldazar assault.  had WM on
 		q(54314),	-- triggered when turning in #53939, "Breaching Boralus," tiragade sound assault.  had WM on
 		q(54769),	-- triggered when turning in #53939, "Breaching Boralus," tiragade sound assault.  had WM on
+		q(54322),	-- triggered when turning in #53885, "Isolated Victory," vol'dun assault.  had WM on
+		q(54778),	-- triggered when turning in #53885, "Isolated Victory," vol'dun assault.  had WM on
 		q(57593),	-- triggered when talking to chromie in CoT during the 2019 anniversary event, before turning in #57249, "A Timely Invitation"
 		q(54035),	-- Blessing of the Night Warden unlock chain started
 		q(53956),	-- Triggered when turning in "We Are Coming" as alliance. Probably related to darkshore warfront unlock?
@@ -1966,6 +1968,8 @@ _.NeverImplemented =
 		q(49925),	-- Nazmir repeatable random chest
 		-- Quests
 		q(49179),	-- triggered after speaking to Witch Doctor Kejabu after killing Hir'eek, on quest "Upward and "Onward"
+		-- Various
+		q(49368),	-- killed a Vilebone Ravager while on the "Agent of Death" WQ, and this quest popped.  not sure if it had to do with entering the area or killing the mob
 
 	--	Stormsong Valley
 		q(51695),	-- Horde WarCampaign - "Reclaiming What's Ours" (ID 51696) using the horn to reclaim the Foothold

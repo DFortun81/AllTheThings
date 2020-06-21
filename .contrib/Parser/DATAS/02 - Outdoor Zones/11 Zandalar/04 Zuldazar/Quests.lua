@@ -23,6 +23,8 @@ _.Zones =
 				
 				-- figure out if "prepare for a siege" is a breadcrumb for anything.  there was no follow-up quest to take so i'm not sure if this quest is a requirement for something or just flavor.
 				
+				-- for "how to train your direhorn," i never got the version of "away from the herd" that is questID #55249, just #55244.  figure out if 55249 is used/unused and if/when it appears.
+				
 				n(-9, {		-- PvP
 					["lvl"] = 120,	-- Don't become available until this level.
 					["g"] = {
@@ -442,6 +444,16 @@ _.Zones =
 					["coord"] = { 68.2, 41.8, 862 },
 					["lvl"] = 120,
 				}),
+				q(55249, {	-- Away From the Herd
+				--	i never got this version of the quest, only 55244.  is this version unused or is there a specific set of circumstances under which it appears?
+				--	the quest directive is slightly different -- this one says "help your direhorn cheer up" and the one i got repeatedly says "play with your direhorn."
+				--	according to wowhead, this one comes from the NPC listed under "provider" here, and the one i got comes from 152258.  so possibly from a different place in the storyline?
+					["provider"] = { "n", 151286 },	-- Child of Torcali
+					["isDaily"] = true,
+					["coord"] = { 68.2, 41.8, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(50412, {	-- Back to the Nest
 					["sourceQuests"] = { 50401 },	-- Fear of Falling
 					["provider"] = { "n", 133678 },	-- Kua'fon
@@ -722,6 +734,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 				}),
+				q(55796, {	-- Heresy at the Crossroad
+					["sourceQuests"] = { 55795 },	-- Mountain On the Move
+					["provider"] = { "n", 151257 },	-- Torcali <Loa of Wanderers>
+					["coord"] = { 68.5, 29.9, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(49422, {	-- Heretics
 					["sourceQuests"] = { 49965 },	-- The Warpack
 					["provider"] = { "n", 129740 },	-- Gonk
@@ -883,6 +902,16 @@ _.Zones =
 					["provider"] = { "n", 130929 },	-- Witch Doctor Jangalar
 					["coord"] = { 64.1, 35.3, 862 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(55795, {	-- Mountain On the Move
+					["sourceQuests"] = { 55247 },	-- The Trust You've Earned
+					["providers"] = {
+						{ "n", 151319 },	-- Li'zal <Priestess of Torcali>
+						{ "n", 154673 },	-- Li'zal <Priestess of Torcali>
+					},
+					["coord"] = { 68.2, 41.9, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
 				}),
 				q(47310, {	-- Naptime
 					["sourceQuests"] = { 48581 },	-- A Good Spanking
@@ -1205,6 +1234,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 				}),
+				q(55797, {	-- The Direhorn Mother's Fury
+					["sourceQuests"] = { 55796 },	-- Heresy at the Crossroad
+					["provider"] = { "n", 151999 },	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
+					["coord"] = { 28.6, 89.6, 863 },	-- Nazmir
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(49424, {	-- The Full Prophecy
 					["sourceQuests"] = { 49965 },	-- The Warpack
 					["provider"] = { "n", 129561 },	-- Wardruid Loti
@@ -1326,6 +1362,13 @@ _.Zones =
 					["coord"] = { 76.6, 48.5, 862 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(55247, {	-- The Trust You've Earned
+					["sourceQuests"] = { 55507 },	-- Torcali's Blessing 
+					["provider"] = { "n", 151319 },	-- Li'zal <Priestess of Torcali>
+					["coord"] = { 68.3, 41.8, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(55462, { 	-- The Wanderer's Call
 					["sourceQuests"] = { 55258 },	-- Sleep, Eat, Repeat
 					["provider"] = { "n", 151999 },	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
@@ -1393,6 +1436,16 @@ _.Zones =
 					["provider"] = { "n", 124655 },	-- King Rastakhan
 					["coord"] = { 74.9, 24.9, 862 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(55798, {	-- Wander Not Alone
+					["sourceQuests"] = { 55797 },	-- The Direhorn Mother's Fury
+					["provider"] = { "n", 151999 },	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
+					["coord"] = { 23.3, 73.8, 863 },	-- Nazmir
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+					["g"] = {
+						i(168408),	-- Child of Torcali (MOUNT!)
+					},
 				}),
 				q(51087, {	-- WANTED: Dark Chronicler (H)
 					["provider"] = { "o", 287229 },	-- Wanted: Dark Chronicler
@@ -1660,54 +1713,6 @@ _.Zones =
 						ach(13573),	-- How to Ptrain Your Pterrordax
 					},
 				}),
-				-- Start How to Train Your Direhorn Crit 4
-				q(55249, {	-- Away From the Herd
-					["provider"] = { "n", 151286 },	-- Child of Torcali
-					["isDaily"] = true,
-					["coord"] = { 68.2, 41.8, 862 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
-				}),
-				-- End How to Train Your Direhorn Crit 4
-				-- Start How to Train Your Direhorn Crit 5
-				q(55247, {	-- The Trust You've Earned
-					["sourceQuests"] = { 55507 },	-- Torcali's Blessing 
-					--["coord"] = { 862 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 151319 },	-- Li'zal <Priestess of Torcali>
-				}),
-				q(55795, {	-- Mountain On the Move
-					["sourceQuests"] = { 55247 },	-- The Trust You've Earned
-					--["coord"] = { 862 },
-					["races"] = HORDE_ONLY,
-					--["provider"] = { "n", 151319 },	-- Li'zal <Priestess of Torcali>
-				}),
-				q(55796, {	-- Heresy at the Crossroad
-					["sourceQuests"] = { 55795 },	-- Mountain On the Move
-					--["coord"] = { 862 },
-					["races"] = HORDE_ONLY,
-					--["provider"] = { "n", 151319 },	-- Li'zal <Priestess of Torcali>
-				}),
-				q(55797, {	-- The Direhorn Mother's Fury
-					["sourceQuests"] = { 55796 },	-- Heresy at the Crossroad
-					--["coord"] = { 862 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 151999 },	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
-				}),
-				q(55798, {	-- Wander Not Alone
-					["sourceQuests"] = { 55797 },	-- The Direhorn Mother's Fury
-					--["coord"] = { 862 },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 151999 },	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
-					["g"] = {
-						crit(5, {	-- Wander Not Alone
-							["achievementID"] = 13542,	-- How to Train Your Direhorn
-						}),
-					},
-				}),
-				-- End How to Train Your Direhorn Crit 5
-				-- End How to Train Your Direhorn Achievment
-				
 				q(51513, {	-- Zalazane Returns
 					["minReputation"] = { 2103, REVERED },
 					["races"] = HORDE_ONLY,

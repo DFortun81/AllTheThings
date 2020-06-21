@@ -32,10 +32,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52064, {	-- Fiendish Fields
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53283, {	-- Flourishing Sea Stalks
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -295,9 +291,14 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(52011, {	-- Fiendish Fields
+					q(52011, {	-- Fiendish Fields (A)
 						["isWorldQuest"] = true,
 						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 120,
+					}),
+					q(52064, {	-- Fiendish Fields (H)
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
 						["lvl"] = 120,
 					}),
 					q(53715, {	-- Firewarden Viton Darkflare

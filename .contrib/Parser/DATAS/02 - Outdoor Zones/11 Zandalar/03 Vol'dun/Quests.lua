@@ -102,14 +102,6 @@ _.Zones =
 				}),
 				
 				
-				q(50551, {	-- Temple of Sethraliss: Avatar of the Loa
-					["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
-					["provider"] = { "n", 129588 },	-- Vorrik
-					["races"] = HORDE_ONLY,
-					["coord"] = { 27.0, 52.6, 864 },	-- Sanctuary of the Devoted (Vol'dun)
-				}),
-				
-				
 				q(50641, {	-- Break Their Ranks
 					["sourceQuests"] = { 47324 },	-- Unlikely Allies
 					["provider"] = { "n", 128696 },	-- Zissiah
@@ -609,6 +601,14 @@ _.Zones =
 				}),
 				
 				
+				q(50551, {	-- Temple of Sethraliss: Avatar of the Loa
+					["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
+					["provider"] = { "n", 129588 },	-- Vorrik
+					["races"] = HORDE_ONLY,
+					["coord"] = { 27.0, 52.6, 864 },	-- Sanctuary of the Devoted (Vol'dun)
+				}),
+				
+				
 				q(50904, {	-- The Abandoned Passage
 					["sourceQuests"] = { 50617 },	-- Atul'Aman
 					["provider"] = { "n", 135625 },	-- Vorrik
@@ -665,6 +665,7 @@ _.Zones =
 						i(159993),	-- Lastwind Legwraps
 						i(159994),	-- Resilient Outcast's Breeches
 						i(159995),	-- Scorching Sands Pants
+						i(158704),	-- Tidespeaker Legwraps (Alliance-only appearance granted by Lastwind Legwraps)
 					},
 				}),
 				

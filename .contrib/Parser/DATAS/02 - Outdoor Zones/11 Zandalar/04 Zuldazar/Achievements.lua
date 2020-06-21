@@ -142,7 +142,7 @@ _.Zones =
 							["sourceQuests"] = { 55507 },	-- Torcali's Blessing
 						}),
 						crit(5, {	-- Wander Not Alone
-						--	["sourceQuests"] = {  },	-- 
+							["sourceQuests"] = { 55798 },	-- Wander Not Alone
 						}),
 					},
 				}),
