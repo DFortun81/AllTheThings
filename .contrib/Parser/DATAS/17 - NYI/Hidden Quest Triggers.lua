@@ -1841,10 +1841,6 @@ _.NeverImplemented =
 		q(54911),	-- Opening a Darkshore chest
 		q(54912),	-- Opening a Darkshore chest
 		q(49695),	-- immediately after channeling on the drum finishes during "A Tribute For Death"
-		q(49367, {	-- when returning to Zo'bal Ruins during "We'll Meet Again"
-			["isWorldQuest"] = true,	-- without this field, this quest inexplicably shows up in /attwq for some characters
-			["races"] = HORDE_ONLY,	-- presumably, based on the description provided
-		}),
 		q(52294),	-- triggers with Krag'wa after accepting "The Last Witch Doctor of Krag'wa"
 		q(47530),	-- ???? [The Necropolis] (completed after soulbound, but not known)
 		q(47531),	-- triggered when turning in "Krag'wa the Terrible"
@@ -1869,7 +1865,7 @@ _.NeverImplemented =
 	-- Jani
 		q(50311),	-- give Jani the Golden Ravasaur Egg in Zuldazar
 		q(50430),	-- give Jani the Feathered Viper Scale in Zuldazar
-		q(50844),	-- give Jani the Charged Ranishu Antennae in Vol'dun
+		q(50884),	-- give Jani the Charged Ranishu Antennae in Vol'dun
 		q(50889),	-- give Jani the Polished Ringhorn Hoof in Vol'dun
 		q(50891),	-- give Jani the Sturdy Redrock Jaw in Vol'dun
 		q(50440),	-- give Jani the Nazwathan Relic in Nazmir
@@ -1969,6 +1965,10 @@ _.NeverImplemented =
 		-- Quests
 		q(49179),	-- triggered after speaking to Witch Doctor Kejabu after killing Hir'eek, on quest "Upward and "Onward"
 		-- Various
+		q(49367, {	-- when returning to Zo'bal Ruins during "We'll Meet Again".  i got it again on a character as a passing zandalari spirit said "what is happening?  i was sick in my bed... and now... where am i?" while standing at 36.5, 38.2.  the character has done 0 bfa quests
+			["isWorldQuest"] = true,	-- without this field, this quest inexplicably shows up in /attwq for some characters
+			["races"] = HORDE_ONLY,	-- presumably, based on the description provided
+		}),
 		q(49368, {	-- killed a Vilebone Ravager while on the "Agent of Death" WQ, and this quest popped.  not sure if it had to do with entering the area or killing the mob
 			["isWorldQuest"] = true,	-- for some reason, this shows up in /attwq for characters who haven't done it.  haunted!
 		}),
@@ -2058,6 +2058,7 @@ _.NeverImplemented =
 		-- Chests
 		q(51138),	-- clicking on sand pile to spawn Zem'lan's Buried Treasure
 		q(53005),	-- clicking on the fishing bobber to spawn Sandsunken Chest
+		q(47326),	-- clicking on the mine cart to get Ashvane Spoils
 		q(50922),	-- Vol'dun repeatable random chest
 		q(50920),	-- Vol'dun repeatable random chest
 		q(51673),	-- Vol'dun repeatable random chest
@@ -2126,6 +2127,7 @@ _.NeverImplemented =
 	-- Nazjatar
 		q(56659),	-- not sure precisely what triggered this -- selected Neri as my daily follower, refreshed, walked outside, picked up "Down into Nazjatar," and this popped
 		q(56664),	-- i flew into brinestone cove with neri as my follower.  she said, "we need to be careful down here.  the locals are definitely not friendly," and this quest popped immediately afterward
+		q(56680),	-- triggered right after another neri dialogue right after i accepted "the price is death" ("it's hard to imagine what we'll do once we don't have to fight to survive.  i look forward to figuring that out."
 		q(56669),	-- i flew into the area with snapdragons (west of the drowned market) and neri said, "the tamed snapdragons aren't producing venom anymore. our only way to harvest it is from the wild packs roaming here."  this quest popped immediately afterward
 		q(57167),	-- Killed Vyz'olgo the Mind-Taker. Probably related to a daily loot flag from the lieutenants
 		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance

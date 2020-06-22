@@ -836,6 +836,14 @@ _.Zones =
 					["coord"] = { 71.0, 29.8, 862 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(51146, {	-- Kua'fon's Day Off
+					["sourceQuests"] = { 50412 },	-- Back to the Nest
+					["provider"] = { "n", 135308 },	-- Wingminder Goja
+					["isDaily"] = true,
+					["coord"] = { 70.7, 51.0, 863 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(49681, {	-- Lil' Tika
 				--	unknown prereq, isn't available prior to starting dazar'alor like the other quests in the area
 					["provider"] = { "n", 130468 },	-- Lil' Tika

@@ -863,6 +863,7 @@ _.Zones =
 				},
 			}),
 			q(55985, {	-- Extra Shiny
+				["description"] = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
 				["provider"] = { "n", 153685 },	-- Mari Lazarfin
 				["coord"] = { 60.8, 30.9, 1355 },
 				["races"] = HORDE_ONLY,
@@ -2362,6 +2363,7 @@ _.Zones =
 				["description"] = "Requires |cFFFFD700Farseer Ori|r as your friend.",
 			}),
 			q(56225, {	-- Wanted: Lady Narjiss (H)
+				["description"] = "Requires |cFFFFD700Neri Sharpfin|r as your friend.",
 				["coord"] = { 47.9, 61.3, 1355 },
 				["isDaily"] = true,
 				["provider"] = { "o", 327585 },	-- Bounty Board

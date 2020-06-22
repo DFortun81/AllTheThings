@@ -202,10 +202,15 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(51815, {	-- Eggstermination
+					q(51815, {	-- Eggstermination (A)
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(50571, {	-- Eggstermination (H)
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(50969, {	-- Emergency Management
 						["lvl"] = 120,

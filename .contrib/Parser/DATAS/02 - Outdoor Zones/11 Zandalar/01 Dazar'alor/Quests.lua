@@ -23,7 +23,7 @@ _.Zones =
 							["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 							["f"] = 55,	-- Consumable
 							["g"] = {
-								mission(2106, {	-- Upgrade: The Great Seal
+								mi(2106, {	-- Upgrade: The Great Seal
 									["sourceQuests"] = { 54226 },	-- Outpost Upgrade Mission Trigger
 									["questID"] = 54294,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
@@ -48,7 +48,7 @@ _.Zones =
 							["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
-								mission(2108, {	-- Upgrade: Vulpera Hideaway
+								mi(2108, {	-- Upgrade: Vulpera Hideaway
 									--["questID"] = ,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
 									--["sourceQuests"] = {  },	-- Mission Start Trigger
@@ -73,7 +73,7 @@ _.Zones =
 							["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
-								mission(2107, {	-- Upgrade: Zul'jan Ruins
+								mi(2107, {	-- Upgrade: Zul'jan Ruins
 									--["questID"] = ,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
 									--["sourceQuests"] = {  },	-- Mission Start Trigger
@@ -97,7 +97,7 @@ _.Zones =
 							["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
-								mission(1967, {	-- Hillcrest Pasture
+								mi(1967, {	-- Hillcrest Pasture
 									["questID"] = 53743,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
 								}),
@@ -120,7 +120,7 @@ _.Zones =
 							["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
-								mission(1965, {	-- Mudfisher Cove
+								mi(1965, {	-- Mudfisher Cove
 									["questID"] = 53745,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
 								}),
@@ -136,7 +136,7 @@ _.Zones =
 									["coord"] = { 58.4, 62.6, 862 },
 									["races"] = HORDE_ONLY,
 								}),
-								mission(2095, {	-- Wicker Defense
+								mi(2095, {	-- Wicker Defense
 									["sourceQuests"] = { 52314 },	-- Mudfisher Cove
 									["races"] = HORDE_ONLY,
 									["g"] = {
@@ -160,7 +160,7 @@ _.Zones =
 							["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
-								mission(1963, {	-- Stonefist Watch
+								mi(1963, {	-- Stonefist Watch
 									["questID"] = 53740,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
 								}),
@@ -176,7 +176,7 @@ _.Zones =
 									["coord"] = { 58.4, 62.6, 862 },
 									["races"] = HORDE_ONLY,
 								}),
-								mission(2092, {	-- Spare Parts
+								mi(2092, {	-- Spare Parts
 									["sourceQuests"] = { 52222 },	-- Stonefist Watch
 									["races"] = HORDE_ONLY,
 									["g"] = {
@@ -201,39 +201,38 @@ _.Zones =
 							["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
-								mission(2067, {	-- Stonetusk Watch
-									--["questID"] = ,	-- Triggers when completed
+								mi(2067, {	-- Stonetusk Watch
+									["questID"] = 53742,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
-									--["sourceQuests"] = {  },	-- Mission Start Trigger
 								}),
 								q(52776, {	-- Mission Report: Stonetusk Watch
-									["provider"] = { "n", 138704 },		-- Mission Command Table
+									["sourceQuests"] = { 53742 },	-- Stonetusk Watch Mission Complete
+									["provider"] = { "n", 138704 },	-- Mission Command Table
 									["races"] = HORDE_ONLY,
-									["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
-									--["sourceQuests"] = {  },	-- Stonetusk Watch Mission Complete
+									["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
 								}),
 								q(52777, {	-- Stonetusk Watch
-									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
+									["sourceQuests"] = { 52776 },	-- Mission Report: Stonetusk Watch
+									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
+									["coord"] = { 58.4, 62.6, 862 },
 									["races"] = HORDE_ONLY,
-									["coord"] = { 58.44, 62.67, 862 },
-									["sourceQuests"] = { 52776 },		-- Mission Report: Stonetusk Watch
 								}),
-								mission(2093, {	-- Giant Slaying
-									--["questID"] = ,	-- Triggers when completed
+								mi(2093, {	-- Giant Slaying
+									["sourceQuests"] = { 52777 },	-- Stonetusk Watch
 									["races"] = HORDE_ONLY,
-									["sourceQuests"] = { 52777 },		-- Stonetusk Watch
-								}),
-								q(53100, {	-- Mission Report: Giant Slaying
-									["provider"] = { "n", 138704 },		-- Mission Command Table
-									["races"] = HORDE_ONLY,
-									["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
-									--["sourceQuests"] = {  },	-- Giant Slaying Mission Complete
+									["g"] = {
+										q(53100, {	-- Mission Report: Giant Slaying
+											["provider"] = { "n", 138704 },	-- Mission Command Table
+											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
+											["races"] = HORDE_ONLY,
+										}),
+									},
 								}),
 								q(53101, {	-- Nettin' Ettin
-									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
-									["races"] = HORDE_ONLY,
-									["coord"] = { 58.44, 62.67, 862 },
 									["sourceQuests"] = { 53100 },		-- Mission Report: Giant Slaying
+									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
+									["coord"] = { 58.4, 62.6, 862 },
+									["races"] = HORDE_ONLY,
 								}),
 							},
 						}),
@@ -243,7 +242,7 @@ _.Zones =
 							["cost"] = { { "c", 1560, 50 }, },	-- 50x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
-								mission(1964, {	-- Swiftwind Post
+								mi(1964, {	-- Swiftwind Post
 									["questID"] = 53744,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
 									--["sourceQuests"] = {  },	-- Mission Start Trigger
@@ -260,7 +259,7 @@ _.Zones =
 									["coord"] = { 58.44, 62.67, 862 },
 									["sourceQuests"] = { 52275 },	-- Mission Report: Swiftwind Post
 								}),
-								mission(2094, {	-- Nature Calls
+								mi(2094, {	-- Nature Calls
 									["sourceQuests"] = { 52276 },	-- Swiftwind Post
 									["races"] = HORDE_ONLY,
 									["g"] = {
@@ -286,7 +285,7 @@ _.Zones =
 							["cost"] = { { "c", 1560, 100 }, },	-- 100x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
-								mission(1966, {	-- Windfall Cavern
+								mi(1966, {	-- Windfall Cavern
 									--["questID"] = ,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
 									--["sourceQuests"] = {  },	-- Mission Start Trigger
@@ -312,7 +311,7 @@ _.Zones =
 							["g"] = {
 								
 							--	initial outpost setup
-								mission(1880, {	-- Wolf's Den
+								mi(1880, {	-- Wolf's Den
 									["questID"] = 53739,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
 								}),
@@ -328,7 +327,7 @@ _.Zones =
 									["coord"] = { 58.4, 62.6, 862 },
 									["races"] = HORDE_ONLY,
 								}),
-								mission(1957, {	-- Wolves For The Den
+								mi(1957, {	-- Wolves For The Den
 								--	there was no quest triggered when i completed this mission, so i've nested the quest it starts inside for visibility/to hopefully make it clearer that to get the next quest you have to start this mission from the command table.
 									["sourceQuests"] = { 52127 },	-- Wolf's Den
 									["races"] = HORDE_ONLY,
