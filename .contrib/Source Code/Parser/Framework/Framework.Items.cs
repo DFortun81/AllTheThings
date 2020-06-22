@@ -374,6 +374,7 @@ namespace ATT
                     case "mountID":
                     case "speciesID":
                     case "spellID":
+                    case "objectiveID":
                     case "f":
                     case "u":
                     case "b":
@@ -653,6 +654,7 @@ namespace ATT
                     case "achID":
                     case "requireSkill":
                     case "isToy":
+                    case "objectiveID":
                     case "f":
                     case "u":
                     case "b":

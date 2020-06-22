@@ -3361,7 +3361,7 @@ app.SearchForLink = SearchForLink;
 
 -- Map Information Lib
 local function AddTomTomWaypoint(group, auto)
-	if TomTom and (group.visible or (app.Settings:Get("DebugMode"))) then
+	if TomTom and (group.visible or (group.objectiveID and not group.saved) or (app.Settings:Get("DebugMode"))) then
 		if group.coords or group.coord then
 			local opt = {
 				title = group.text or group.link,
@@ -6391,6 +6391,74 @@ app.BaseQuest = {
 };
 app.CreateQuest = function(id, t)
 	return setmetatable(constructor(id, t, "questID"), app.BaseQuest);
+end
+app.BaseQuestObjective = {
+	__index = function(t, key)
+		if key == "key" then
+			return "objectiveID";
+		elseif key == "text" then
+			local questID = t.parent.questID;
+			if questID then
+				local objectives = C_QuestLog.GetQuestObjectives(questID);
+				if objectives then
+					local objective = objectives[t.objectiveID];
+					if objective then
+						return objective.text;
+					end
+				end
+				return RETRIEVING_DATA;
+			end
+			return "INVALID: Must be relative to a Quest Object.";
+		elseif key == "questID" then
+			return t.parent.questID;
+		elseif key == "objectiveID" then
+			return 1;
+		elseif key == "icon" then
+			if t.providers then
+				for k,v in pairs(t.providers) do
+					if v[2] > 0 then
+						if v[1] == "o" then
+							return L["OBJECT_ID_ICONS"][v[2]] or "Interface\\Worldmap\\Gear_64Grey"
+						elseif v[1] == "i" then
+							local _,_,_,_,icon = GetItemInfoInstant(v[2]);
+							if icon then
+								return icon
+							end
+						end
+					end
+				end
+			end
+			return t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
+		elseif key == "trackable" then
+			return true;
+		elseif key == "collectible" then
+			return false;
+		elseif key == "repeatable" then
+			return t.parent.repeatable;
+		elseif key == "saved" then
+			-- If the parent is saved, return immediately.
+			local saved = t.parent.saved;
+			if saved then return saved; end
+			
+			-- Check to see if the objective was completed.
+			local questID = t.parent.questID;
+			if questID then
+				local objectives = C_QuestLog.GetQuestObjectives(questID);
+				if objectives then
+					local objective = objectives[t.objectiveID];
+					if objective then
+						return objective.finished and 1;
+					end
+				end
+			end
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateQuestObjective = function(id, t)
+	return setmetatable(constructor(id, t, "objectiveID"), app.BaseQuestObjective);
 end
 local function RefreshQuestCompletionState(questID)
 	if questID ~= nil then

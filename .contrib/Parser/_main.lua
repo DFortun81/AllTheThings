@@ -696,6 +696,11 @@ quest = function(id, t)									-- Create a QUEST Object
 	return struct("questID", id, t);
 end
 q = quest;												-- Create a QUEST Object (alternative shortcut)
+questobjective = function(id, t)						-- Create a QUEST OBJECTIVE Object
+	return struct("objectiveID", id, t);
+end
+objective = questobjective;								-- Create a QUEST OBJECTIVE Object (alternative shortcut)
+qo = questobjective;									-- Create a QUEST OBJECTIVE Object (alternative shortcut)
 race = function(id, t)									-- Create a RACE Object
 	return struct("raceID", id, t);
 end

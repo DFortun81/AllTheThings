@@ -22,6 +22,7 @@ namespace ATT
             ObjectData.Create("mountID",            "mnt",          "_.CreateMount", "f", "spellID");
             ObjectData.Create("speciesID",          "p",            "_.CreateSpecies", "f", "spellID");
             ObjectData.Create("musicRollID",        "mr",           "_.CreateMusicRoll", "f", "spellID");
+            ObjectData.Create("objectiveID",        "qo",           "_.CreateQuestObjective", "f");
             ObjectData.Create("instanceID",         "inst",         "_.CreateInstance", "f");
             ObjectData.Create("artifactID",         "artifact",     "_.CreateArtifact", "f");
             ObjectData.Create<HeirloomData>("heirloomID", "heir",   "_.CreateHeirloom");
@@ -58,7 +59,7 @@ namespace ATT
             ObjectData.Create("tierID",             "t",            "_.CreateTier", "f");
             ObjectData.Create("professionID",       "prof",         "_.CreateProfession", "requireSkill");
             ObjectData.Create("vignetteID",         "v",            "_.CreateVignette", "f");
-            ObjectData.Create<NPCData>("creatureID", "n", "_.CreateNPC", "f");
+            ObjectData.Create<NPCData>("creatureID", "n",           "_.CreateNPC", "f");
             ObjectData.Create("f",                  "flt",          "_.CreateFilter");
         }
 
