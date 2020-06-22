@@ -1231,6 +1231,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 								["un"] = 21,	-- Midsummer Fire Festival
 							}),
 						},
+						["altQuests"] = { 11976 }	-- Ice Shards
 					}),
 					un(21, i(138838)),	-- Illusion: Deathfrost
 					un(21, i(35498)),	-- Formula: Enchant Weapon - Deathfrost
