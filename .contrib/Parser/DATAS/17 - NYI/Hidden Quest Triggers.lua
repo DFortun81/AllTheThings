@@ -2129,6 +2129,9 @@ _.NeverImplemented =
 		q(56664),	-- i flew into brinestone cove with neri as my follower.  she said, "we need to be careful down here.  the locals are definitely not friendly," and this quest popped immediately afterward
 		q(56680),	-- triggered right after another neri dialogue right after i accepted "the price is death" ("it's hard to imagine what we'll do once we don't have to fight to survive.  i look forward to figuring that out."
 		q(56669),	-- i flew into the area with snapdragons (west of the drowned market) and neri said, "the tamed snapdragons aren't producing venom anymore. our only way to harvest it is from the wild packs roaming here."  this quest popped immediately afterward
+		q(56683),	-- after poen dialogue in the area where the hydra rares spawn: "I was born in the slave pens.  My family was broken by the naga... I never had a chance to heal them."  yikes, dude
+		q(56544),	-- after poen dialogue in cave at 26.7, 42.2: "This is one of my favorite spots!  I always keep snacks in my pocket!  It works out great for everyone!"
+		q(56671),	-- after poen dialogue around 70, 48, the area with the snapdragons: "I helped a little elf girl find her doll here, once.  It made her so happy, even though there was so little of it left.  I hugged Mak so hard when I got back to Newhome."
 		q(57167),	-- Killed Vyz'olgo the Mind-Taker. Probably related to a daily loot flag from the lieutenants
 		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance
 		q(56505),	-- Triggered when walking through the Alliance crash site as horde. Bodyguard dialog fires

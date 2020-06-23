@@ -6,8 +6,8 @@ _.ExpansionFeatures =
 	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
 			n(-299, { 	-- Missions
-				["races"] = ALLIANCE_ONLY,
 				["description"] = "|cff66ccffVarious missions at your garrison, shipyard, or class hall offer these rewards.|r",
+				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					n(84698, {	-- Command Table
 						["modelScale"] = 2.5,
@@ -43,11 +43,11 @@ _.ExpansionFeatures =
 								ach(9139),	-- On a Massive Numbeer of Missions
 							}),
 							ach(9523, {	-- Patrolling Draenor
+								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 								["g"] = {
 									i(111971),	-- Barracks, Level 3 [Blueprints]
 									ach(9146), 	-- Patrolling Mission Specialist
 								},
-								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 							}),
 							ach(9143, {	-- The Rarer the Better
 								ach(9141),	-- A Rare Mission
@@ -56,47 +56,38 @@ _.ExpansionFeatures =
 							ach(9524, {	-- Treasure Master
 								ach(9145),	-- Treasure Mission Specialist
 							}),
-							mission(463, {	-- Bird Watching
+							mi(463, {	-- Bird Watching
 								i(118731, {	-- Spires of Arak Treasure Map
-									["g"] = {
-									},
 									["questID"] = 36467,
 								}),
 							}),
-							mission(462, {	-- Fields of Sorrow
+							mi(462, {	-- Fields of Sorrow
 								i(118730, {	-- Talador Treasure Map
-									["g"] = {
-									},
 									["questID"] = 36466,
 								}),
 							}),
-							mission(2,   {	-- Gronnlings Abound
+							mi(2,   {	-- Gronnlings Abound
 								i(112737, {	-- Contract: Ka'la of the Frostwolves
 									follower(153, {	-- Ka'la
-										["g"] = {
-										},
-										["description"] = "Press Shift+Click to refresh or relog once you obtain this follower",
+										["description"] = "Press Shift+Click to refresh or relog once you obtain this follower.",
 									}),
 								}),
 							}),
-							mission(464, {	-- Highplains Robbery
+							mi(464, {	-- Highplains Robbery
 								i(118732, {	-- Nagrand Treasure Map
-									["g"] = {
-									},
 									["questID"] = 36468,
 								}),
 							}),
-							mission(461, {	-- It's a Jungle Out There
+							mi(461, {	-- It's a Jungle Out There
 								i(118729, {	-- Gorgrond Treasure Map
-									["g"] = {
-									},
 									["questID"] = 36465,
 								}),
 							}),
-							mission(465, {	-- Tomb Raider
+							mi(335, {	-- The Bloodmane Scrolls
+								i(117492),	-- Relic of Rukhmar
+							}),
+							mi(465, {	-- Tomb Raider
 								i(118728, {	-- Shadowmoon Valley Treasure Map
-									["g"] = {
-									},
 									["questID"] = 36464,
 								}),
 							}),
@@ -482,19 +473,19 @@ _.ExpansionFeatures =
 							ach(10160, {	-- Naval Treasure Expert
 								ach(10159),		-- Naval Treasure Specialist
 							}),
-							mission(649, {	-- For Hate's Sake
+							mi(649, {	-- For Hate's Sake
 								["g"] = {
 									i(128172),	-- Captain Sander's Returned Band
 								},
 								["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle."
 							}),
-							mission(650, {	-- The House always wins
+							mi(650, {	-- The House always wins
 								["g"] = {
 									i(128173),	-- Admiral Taylor's Loyalty Ring
 								},
 								["description"] = "This rare mission has a chance to spawn after you build a level 3 Shipyard & completed the Quest Equipment Blueprint: Ghostly Spyglass, dropped from Captain Ironbeard in Tanaan Jungle."
 							}),
-							mission(616, {	-- The Wave Mistress
+							mi(616, {	-- The Wave Mistress
 								["g"] = {
 									i(128169),	-- Signet of the Third Fleet
 								},

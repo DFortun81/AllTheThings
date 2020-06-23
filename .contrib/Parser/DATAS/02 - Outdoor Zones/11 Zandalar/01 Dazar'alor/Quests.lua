@@ -286,15 +286,14 @@ _.Zones =
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
 								mi(1966, {	-- Windfall Cavern
-									--["questID"] = ,	-- Triggers when completed
+									["questID"] = 53741,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
-									--["sourceQuests"] = {  },	-- Mission Start Trigger
 								}),
 								q(52319, {	-- Mission Report: Windfall Cavern
+									["sourceQuests"] = { 53741 },	-- Windfall Cavern Mission Complete
 									["provider"] = { "n", 138704 },		-- Mission Command Table
+									["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location [Original]
 									["races"] = HORDE_ONLY,
-									["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
-									--["sourceQuests"] = {  },	-- Windfall Cavern Mission Complete
 								}),
 								q(52320, {	-- Windfall Cavern
 									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
