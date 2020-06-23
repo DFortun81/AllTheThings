@@ -1843,7 +1843,7 @@ _.NeverImplemented =
 			un(1, i(17409)),	-- Encrusted Crystal Fragment
 			un(1, i(20883)),	-- Unknown
 			un(1, i(20936)),	-- Unknown
-			un(1, i(20937)),	-- Unknown
+			un(1, i(20937)),	-- Unknownwwwwwwwwwww
 			un(1, i(169958)),	-- Fragment of the Void
 			un(1, i(169959)),	-- Fragment of the Void
 			un(1, i(169960)),	-- Fragment of the Void
@@ -3678,6 +3678,9 @@ _.NeverImplemented =
 			un(1, i(134755)),	-- Covert Hatchet
 			un(1, i(140713)),	-- Protectors 'axe
 			un(1, i(150608)),	-- Protectors 'axe
+			un(1, i(18582)),	-- twin blades of azzinoth
+			un(1, i(18583)),	-- warglaves of azzinoth right
+			un(1, i(18584)),	-- warglaves of azzinoth left
 			un(1, i(108803)),	-- Unknown - was under Legion>1Handed Swords
 			un(1, i(108804)),	-- Unknown - was under Legion>1Handed Swords
 			un(1, i(134562)),	-- Odyns Fury
