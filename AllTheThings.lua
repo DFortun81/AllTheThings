@@ -2348,11 +2348,16 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						paramB = itemID;
 					end
 					if #group > 0 then
-						local first = group[1];
-						if first.s then sourceID = first.s; end
-						if first.u and first.u == 7 and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
-							tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] });
-							tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE_PT2"] });
+						for i,j in ipairs(group) do
+							if j.itemID == itemID then
+								if j.s then
+									sourceID = j.s;
+								end
+								if j.u and j.u == 7 and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
+									tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] });
+									tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE_PT2"] });
+								end
+							end
 						end
 					end
 				else
@@ -2377,8 +2382,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			elseif paramA == "itemID" then
 				itemID = paramB;
 				if #group > 0 then
-					local first = group[1];
-					if first.s then sourceID = first.s; end
+					for i,j in ipairs(group) do
+						if j.itemID == itemID and j.s then
+							sourceID = j.s;
+						end
+					end
 				end
 			end
 			
