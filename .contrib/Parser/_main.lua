@@ -144,6 +144,7 @@ ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 };
 
 -- Common Custom NPCs used for headers
+ACHIEVEMENTS = -4
 COMMON_BOSS_DROPS = -1;
 QUESTS = -17;
 RARES = -16;
