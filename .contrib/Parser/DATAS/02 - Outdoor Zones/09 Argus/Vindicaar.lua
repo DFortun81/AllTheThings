@@ -489,56 +489,67 @@ _.Zones =
 						["modID"]  = 43,	-- Relinquished
 						["g"] = {
 							i(153211, {	-- Relinquished Hood
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished", {"INVTYPE_HEAD"}, 2, 4, 5, 6, 7 },	-- Cosmetic, Cloth, Leather, Mail, Plate Armor Only!
 								},
 							}),
 							i(153213, {	-- Relinquished Necklace
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished", {"INVTYPE_NECK"} },	-- Necks Only!
 								},
 							}),
 							i(153215, {	-- Relinquished Spaulders
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished", {"INVTYPE_SHOULDER"}, 2, 4, 5, 6, 7 },	-- Cosmetic, Cloth, Leather, Mail, Plate Armor Only!
 								},
 							}),
 							i(153209, {	-- Relinquished Cloak
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished", {"INVTYPE_CLOAK"}, 3 },	-- Cloak Only!
 								},
 							}),
 							i(153208, {	-- Relinquished Chestguard
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished", {"INVTYPE_CHEST","INVTYPE_ROBE"}, 2, 4, 5, 6, 7 },	-- Cosmetic, Cloth, Leather, Mail, Plate Armor Only!
 								},
 							}),
 							i(153206, {	-- Relinquished Bracers
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished", {"INVTYPE_WRIST"}, 2, 4, 5, 6, 7 },	-- Cosmetic, Cloth, Leather, Mail, Plate Armor Only!
 								},
 							}),
 							i(153210, {	-- Relinquished Gauntlets
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished", {"INVTYPE_HAND"}, 2, 4, 5, 6, 7 },	-- Cosmetic, Cloth, Leather, Mail, Plate Armor Only!
 								},
 							}),
 							i(153205, {	-- Relinquished Girdle
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished", {"INVTYPE_WAIST"}, 2, 4, 5, 6, 7 },	-- Cosmetic, Cloth, Leather, Mail, Plate Armor Only!
 								},
 							}),
 							i(153212, {	-- Relinquished Leggings
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished", {"INVTYPE_LEGS"}, 2, 4, 5, 6, 7 },	-- Cosmetic, Cloth, Leather, Mail, Plate Armor Only!
 								},
 							}),
 							i(153207, {	-- Relinquished Treads
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished", {"INVTYPE_FEET"}, 2, 4, 5, 6, 7 },	-- Cosmetic, Cloth, Leather, Mail, Plate Armor Only!
 								},
 							}),
 							i(153214, {	-- Relinquished Ring
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished", {"INVTYPE_FINGER"} },	-- Rings Only!
 									{"select", "mapID", 619},	-- The Broken Isles
@@ -550,56 +561,67 @@ _.Zones =
 								},
 							}),
 							i(153216, {	-- Relinquished Trinket
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished", {"INVTYPE_TRINKET"} },	-- Trinkets Only!
 								},
 							}),
 							i(153059, {	-- Relinquished Arcane Relic
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished_relic", "ARCANE" },	-- Arcane Relics Only!
 								},
 							}),
 							i(153060, {	-- Relinquished Blood Relic
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished_relic", "BLOOD" },	-- Blood Relics Only!
 								},
 							}),
 							i(153061, {	-- Relinquished Fel Relic
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished_relic", "FEL" },	-- Fel Relics Only!
 								},
 							}),
 							i(153062, {	-- Relinquished Fire Relic
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished_relic", "FIRE" },	-- Fire Relics Only!
 								},
 							}),
 							i(153063, {	-- Relinquished Frost Relic
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished_relic", "FROST" },	-- Frost Relics Only!
 								},
 							}),
 							i(153064, {	-- Relinquished Holy Relic
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished_relic", "HOLY" },	-- Holy Relics Only!
 								},
 							}),
 							i(153065, {	-- Relinquished Iron Relic
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished_relic", "IRON" },	-- Iron Relics Only!
 								},
 							}),
 							i(153066, {	-- Relinquished Life Relic
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished_relic", "LIFE" },	-- Life Relics Only!
 								},
 							}),
 							i(153067, {	-- Relinquished Shadow Relic
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished_relic", "SHADOW" },	-- Shadow Relics Only!
 								},
 							}),
 							i(153068, {	-- Relinquished Storm Relic
+								["cost"] = { { "c", 1508, 650 } },	-- 650x Veiled Argunite
 								["sym"] = {
 									{"sub", "legion_relinquished_relic", "STORM" },	-- Storm Relics Only!
 								},
