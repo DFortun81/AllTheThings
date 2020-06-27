@@ -921,6 +921,20 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 67866 },	-- Chen Stormstout
 				}),
+				q(31809, {	-- Remnants of Anger
+					["provider"] = { "i", 89317 },	-- Claw of Anger
+					["g"] = {
+						i(90912),	-- Angerforged Stompers
+						i(90914),	-- Boots of Raging Haze
+						i(90907),	-- Boots of Unbreakable Umbrage
+						i(90908),	-- Crushing Treads of Anger
+						i(90911),	-- Furyheart Treads
+						i(90909),	-- Intemperate Greatboots
+						i(90910),	-- Mindfire Sollerets
+						i(90913),	-- Sandals of the Shadow
+						i(90906),	-- Treads of Ardent Antagonism
+					},
+				}),
 				q(30618, {	-- Resupplying One Keg
 					["coord"] = { 57.7, 61.7, 379 },
 					["provider"] = { "n", 59695 },	-- Big Sal

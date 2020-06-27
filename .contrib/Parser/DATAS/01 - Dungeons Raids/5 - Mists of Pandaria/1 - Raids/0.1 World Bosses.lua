@@ -657,6 +657,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					}),
 					-- Mounts, Caches, and Quest Items!
 					i(87771),	-- Heavenly Onyx Cloud Serpent
+					{
+						["itemID"] = 89317,	-- Claw of Anger
+						["questID"] = 31809,	-- Remnants of Anger
+					},
 					i(90839, {	-- Cache of Sha-Touched Gold
 						i(86884),	-- Belt of Embodied Terror
 						i(86900),	-- Binder's Chain of Unending Summer
@@ -718,20 +722,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(48124),	-- Razormaw Hatchling
 						i(48126),	-- Razzashi Hatchling
 					}),
-					q(31809, {	-- Remnants of Anger
-						["provider"] = { "i", 89317 },	-- Claw of Anger
-						["g"] = {
-							i(90912),	-- Angerforged Stompers
-							i(90914),	-- Boots of Raging Haze
-							i(90907),	-- Boots of Unbreakable Umbrage
-							i(90908),	-- Crushing Treads of Anger
-							i(90911),	-- Furyheart Treads
-							i(90909),	-- Intemperate Greatboots
-							i(90910),	-- Mindfire Sollerets
-							i(90913),	-- Sandals of the Shadow
-							i(90906),	-- Treads of Ardent Antagonism
-						},
-					}),
+					
 					-- Necks
 					i(84892),	-- Malevolent Gladiator's Choker of Accuracy
 					i(84891),	-- Malevolent Gladiator's Choker of Proficiency
