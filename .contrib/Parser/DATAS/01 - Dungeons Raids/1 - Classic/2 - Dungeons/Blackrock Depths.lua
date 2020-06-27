@@ -54,7 +54,7 @@ _.Instances = { tier(1, {	-- Classic
 						["sourceQuests"] = { 27579 },	-- Into the Prison [Horde]
 					}),
 					q(4001, {	-- What Is Going On?
-						["u"] = 40,
+						["u"] = 40,	-- Legacy Quest
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 9020 },	-- Commander Gor'shak
 						["sourceQuest"] = 3982,	-- What Is Going On?
@@ -242,6 +242,12 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(12111)),	-- Lavaplate Gauntlets
 						un(2, i(12110)),	-- Raincaster Drape
 					},
+				}),
+				q(4324, {	-- Yuka Screwspigot
+					["u"] = 40,	-- Legacy Quest
+					["provider"] = { "n", 9706 },	-- Yorba Screwspigot
+					["isBreadcrumb"] = true,
+					["lvl"] = 48,
 				}),
 			}),
 			n(ZONEDROPS, {

@@ -25,10 +25,30 @@ _.Instances = { tier(1, {	-- Classic
 						un(2, i(15859)),	-- Seapost Girdle
 					},
 				}),
+				q(4941, {	-- Eitrigg's Wisdom
+					["u"] = 40,	-- Legacy Quest
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+					["provider"] = { "n", 9077 },	-- Warlord Goretooth
+					["sourceQuest"] = 4903,	-- Warlord's Command
+				}),
 				q(27440, {	-- Trolls, Ogres, and Orcs, Oh My!
 					i(65933),	-- Highlord's Chestpiece
 					i(65957),	-- Overlord's Legplates
 					i(65981),	-- War Master's Pauldrons
+				}),
+				q(4903,  {	-- Warlord's Command
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+					["provider"] = { "n", 9077 },	-- Warlord Goretooth
+					["g"] = {
+						un(2, i(13961)),	-- Halcyon's Muzzle
+						un(2, i(13959)),	-- Omokk's Girth Restrainer
+						un(2, i(13963)),	-- Voone's Vice Grips
+						un(2, i(13962)),	-- Vosh'gajin's Strand
+						un(2, i(13958)),	-- Wyrmthalak's Shackles
+					},
 				}),
 			}),
 			n(ZONEDROPS, {
