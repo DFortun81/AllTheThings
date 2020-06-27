@@ -82,6 +82,13 @@ _.Instances = { tier(1, {	-- Classic
 							un(2, i(15861)),	-- Swiftfoot Treads
 						},
 					}),
+					q(4907, {	-- Tinkee Steamboil
+						["u"] = 40,	-- Legacy Quest
+						["provider"] = { "n", 10468 },	-- Felnok Steelspring
+						["isBreadcrumb"] = true,
+						["lvl"] = 57,
+						["sourceQuests"] = { 4810 },	-- Return to Tinkee
+					}),
 					q(4867, { 	-- Urok Doomhowl
 						["u"] = 40,
 						["g"] = {

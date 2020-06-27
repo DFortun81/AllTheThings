@@ -981,17 +981,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 28422 },	-- The Sand, the Cider, and the Orb
 				}),
-				q(4903,  {	-- Warlord's Command
-					["u"] = 40,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(2, i(13961)),	-- Halcyon's Muzzle
-						un(2, i(13959)),	-- Omokk's Girth Restrainer
-						un(2, i(13963)),	-- Voone's Vice Grips
-						un(2, i(13962)),	-- Vosh'gajin's Strand
-						un(2, i(13958)),	-- Wyrmthalak's Shackles
-					},
-				}),
 				q(7722, {	-- What the Flux?
 					["u"] = 40,
 					["races"] = ALLIANCE_ONLY,
