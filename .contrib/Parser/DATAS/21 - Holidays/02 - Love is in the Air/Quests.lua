@@ -268,12 +268,18 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["coord"] = { 45.2, 73.8, 21 },	-- Silverpine Forest
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
+				["g"] = {
+					i(143542), -- Crown Co. "Kure-Everything" Tonic
+				},
 			}),
 			q(44559, {	-- Follow the Recipe (Horde)
 				["provider"] = { "o", 259806 },	-- Love Potion Recipe
 				["coord"] = { 45.2, 73.8, 21 },	-- Silverpine Forest
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
+				["g"] = {
+					i(143542), -- Crown Co. "Kure-Everything" Tonic
+				},
 			}),
 			q(24849, {	-- Hot On The Trail (Alliance)
 				["provider"] = { "n", 38325 },	-- Marion Sutton

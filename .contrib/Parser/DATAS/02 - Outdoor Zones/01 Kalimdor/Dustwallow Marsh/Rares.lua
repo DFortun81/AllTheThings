@@ -52,7 +52,10 @@ _.Zones =
 					["coord"] = { 76.0, 18.6, 70 },
 					["lvl"] = 110,
 					["g"] = {
-						i(142265)	-- Big Red Raygun
+						i(142265),	-- Big Red Raygun
+						i(142262),	-- Electrified Key
+						i(142263),	-- Machine Fluid
+						i(142264),	-- Drudge Fluid
 					},
 				}),
 				n(14231,  {	-- Drogoth the Roamer

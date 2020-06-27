@@ -35,6 +35,14 @@ _.Zones =
 				i(159797),	-- Shipwrecker Shield
 				i(159566),	-- Shipwrecker Spire
 				i(166846),	-- Spare Parts
+				i(169856, {	-- Spark-1351
+					["crs"] = {
+						151640,	-- Malfunctioning Scrapbot
+						151301,	-- Malfunctioning Scraphound
+						151683,	-- Malfunctioning Scrapboss
+						151740,	-- Malfunctioning Scrap Pup
+					},
+				}),
 				i(166971),	-- Empty Energy Cell
 				i(166970),	-- Energy Cell
 				i(170500),	-- Energy Cell

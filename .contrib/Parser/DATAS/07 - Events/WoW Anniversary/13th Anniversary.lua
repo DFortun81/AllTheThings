@@ -177,6 +177,7 @@ _.WorldEvents =
 			{	-- World Bosses
 				["npcID"] = -7,	-- World Bosses
 				["ordered"] = true,
+				["u"] = 31, -- WoW Anniversary Filter
 				["g"] = {
 					{	-- Azuregos [Azshara - Always Up]
 						["npcID"] = 121820,	-- Azuregos
@@ -186,6 +187,7 @@ _.WorldEvents =
 						["maps"] = {
 							76,	-- Azshara
 						},
+						["u"] = 31, -- WoW Anniversary Filter
 						["coords"] = {
 							{ 48.76, 83.82, 76 },
 						},
@@ -244,6 +246,7 @@ _.WorldEvents =
 						["maps"] = {
 							47,	-- Duskwood
 						},
+						["u"] = 31, -- WoW Anniversary Filter
 						["coords"] = {
 							{ 46.54, 39.73, 47 },
 						},
@@ -318,6 +321,7 @@ _.WorldEvents =
 						["maps"] = {
 							17,	-- Blasted Lands
 						},
+						["u"] = 31, -- WoW Anniversary Filter
 						["coords"] = {
 							{ 32.42, 48.21 ,17 },
 						},
@@ -372,6 +376,7 @@ _.WorldEvents =
 						["maps"] = {
 							26,	-- The Hinterlands
 						},
+						["u"] = 31, -- WoW Anniversary Filter
 						["coords"] = {
 							{ 62.87, 25.2, 26 },
 						},
@@ -446,6 +451,7 @@ _.WorldEvents =
 						["maps"] = {
 							63,	-- Ashenvale
 						},
+						["u"] = 31, -- WoW Anniversary Filter
 						["coords"] = {
 							{ 93.8, 40.8, 63 },
 						},
@@ -520,6 +526,7 @@ _.WorldEvents =
 						["maps"] = {
 							69,	-- Feralas
 						},
+						["u"] = 31, -- WoW Anniversary Filter
 						["coords"] = {
 							{ 50.93, 11.91, 69 },
 						},
