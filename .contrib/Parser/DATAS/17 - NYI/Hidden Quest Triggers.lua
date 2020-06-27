@@ -1586,6 +1586,7 @@ _.NeverImplemented =
 		q(57032),	-- triggered the first time i completed a +4 mythic and looted Converging Lens of the Focusing Iris (Rank 1)
 		q(57035),	-- triggered when completing a +4 mythic and looting Bursting Seed of Life (Rank 1)
 		q(57036),	-- triggered when completing a +7 mythic and looting Magnifying Lens of the Focusing Iris (Rank 2)
+		q(57034),	-- triggered when completing a +7 mythic and looting Replicating Seed of Abundance (Rank 2)
 		q(53123),	-- triggered when turning in #53121, "Siege of Boralus," while on Horde War Campaign
 		q(52193),	-- triggered when turning in #52186, "The Bulk of the Guard," while on Horde War Campaign
 		q(54635),	-- additional version of Mekkatorque's Battle Plans, presumably if you don't pick it up from a mob during "Killing on the Side," but idk how that could happen
