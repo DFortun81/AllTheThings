@@ -219,6 +219,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				},
 			}),
 			d(23, {	-- Mythic
+				["difficulties"] = { 8, 23 },
 				["lvl"] = 120,
 				["g"] = {
 					ach(12489, {	-- Losing My Profession

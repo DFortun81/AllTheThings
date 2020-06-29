@@ -638,6 +638,12 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = BLACKSMITHING,
 					}),
+					q(52341, {	-- Work Order: Monel-Hardened Stirrups
+						["requireSkill"] = BLACKSMITHING,
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
+					}),
 					q(52349, {	-- Work Order: Loa Loaf
 						["lvl"] = 120,
 						["requireSkill"] = COOKING,

@@ -257,6 +257,7 @@ _.Zones =
 						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
 					}),
 					i(174523, {	-- Waveswept Abyssal Conch
+						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 1721, 20 }, },	-- 20x Prismatic Manapearl
 					}),
 				},
@@ -1067,6 +1068,7 @@ _.Zones =
 						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
 					}),
 					i(174522, {	-- Waveswept Abyssal Conch
+						["races"] = ALLIANCE_ONLY,
 						["cost"] = { { "c", 1721, 20 }, },	-- 20x Prismatic Manapearl
 					}),
 				},

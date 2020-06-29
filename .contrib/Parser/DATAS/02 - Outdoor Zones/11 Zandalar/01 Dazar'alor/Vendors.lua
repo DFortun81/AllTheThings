@@ -235,7 +235,9 @@ _.Zones =
 									},
 								}),
 								i(174521),	-- Transferable Kernel of E-steam
-								i(174523),	-- Waveswept Abyssal Conch
+								i(174523, {	-- Waveswept Abyssal Conch
+									["races"] = HORDE_ONLY,
+								}),
 							}),
 						}),
 						i(173950, {	-- Crestfall Salvage

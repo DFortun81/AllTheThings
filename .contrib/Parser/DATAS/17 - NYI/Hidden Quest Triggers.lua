@@ -1796,6 +1796,7 @@ _.NeverImplemented =
 		q(54931),	-- first Cooking Impossible brawl win of the week? not general brawl victory cause it's 47144 and it still triggered
 		q(57064),	-- War Chest Azerite Essence Conflict and Strife (Rank 1)
 		q(57065),	-- War Chest Azerite Essence Conflict and Strife (Rank 2)
+		q(53565),	-- triggered after completing my first arena win in BFA (possibly season-specific but idk)
 
 
 	--	WORLD BOSSES

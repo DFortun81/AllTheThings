@@ -19,7 +19,10 @@ _.Instances = { tier(7, {	-- Legion
 				["crs"] = {
 					114284,	-- Opera Hall: Wikket
 					114261,	-- Opera Hall: Westfall Story
-					114328,	-- Opera Hall: Beautiful Beast
+					114330,	-- Opera Hall: Beautiful Beast — Babblet
+					114328,	-- Opera Hall: Beautiful Beast — Coggleston
+					114329,	-- Opera Hall: Beautiful Beast — Luminore
+					114522,	-- Opera Hall: Beautiful Beast — Mrs. Cauldrons
 					113971,	-- Maiden of Virtue
 					114262,	-- Attumen the Huntsman
 					114312,	-- Moroes
@@ -82,6 +85,9 @@ _.Instances = { tier(7, {	-- Legion
 					["crs"] = {
 						114339,	-- Barnes <The Stage Manager>
 						114328,	-- Coggleston
+						114330,	-- Babblet
+						114329,	-- Luminore
+						114522,	-- Mrs. Cauldrons
 					},
 					["g"] = {
 						i(142196),	-- Cinch of Improbable Desire
@@ -273,6 +279,9 @@ _.Instances = { tier(7, {	-- Legion
 					["crs"] = {
 						114339,	-- Barnes <The Stage Manager>
 						114328,	-- Coggleston
+						114330,	-- Babblet
+						114329,	-- Luminore
+						114522,	-- Mrs. Cauldrons
 					},
 					["g"] = {
 						crit(3, {	-- Beautiful Beast

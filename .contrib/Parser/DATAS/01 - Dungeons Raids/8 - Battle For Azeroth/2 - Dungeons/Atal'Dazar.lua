@@ -11,9 +11,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 		},
 		["lvl"] = 110,
 		["g"] = {
-			n(-4,  {	-- Achievements
+			n(ACHIEVEMENTS,  {	-- Achievements
 				ach(13020, {	-- Bow to Your Masters
-					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
+					["collectible"] = false,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(8, {	-- Rezan Respected
@@ -176,6 +176,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				},
 			}),
 			d(23, {	-- Mythic
+				["difficulties"] = { 8, 23 },
 				["lvl"] = 120,
 				["g"] = {
 					ach(12270),	-- Bringing Hexy Back

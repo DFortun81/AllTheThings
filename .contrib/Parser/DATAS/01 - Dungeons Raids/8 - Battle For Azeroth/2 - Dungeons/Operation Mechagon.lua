@@ -20,7 +20,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				i(170208),	-- Recipe: Potion of Unbridled Fury (Rank 3)
 				i(170209),	-- Recipe: Potion of Wild Mending (Rank 3)
 			}),
-			filter(101, {	-- Pet Battles
+			f(101, {	-- Pet Battles
 				p(2672, {	-- Alloyed Alleyrat
 					["crs"] = { 154789 },
 				}),
@@ -240,6 +240,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				},
 			}),
 			d(23, {	-- Mythic
+				["difficulties"] = { 8, 23 },
 				["lvl"] = 120,
 				["g"] = {
 					ach(13789),	-- Hertz Locker

@@ -370,14 +370,94 @@ _.Zones =
 								i(166495),	-- Tonguelasher
 							}),
 							n(-9961, {	-- Reputation
-								i(163217),	-- Azeroth's Tear
-								i(163616),	-- Dented Coin
-								i(163614),	-- Exotic Spices
-								i(163615),	-- Lost Sea Scroll
-								i(163617),	-- Rusted Alliance Insignia
-								i(166501),	-- Soggy Page
+								i(163217, {	-- Azeroth's Tear
+									["description"] = "|CFFFF0000Turn in to Magni Bronzebeard in Silithus for Champions of Azeroth rep.|r",
+									["coord"] = { 42.2, 44.2, 81 },
+									["g"] = {
+										q(53112, {	-- Azeroth's Tear
+											["repeatable"] = true,
+											["provider"] = { "n", 130216 },	-- Magni Bronzebeard <The Speaker>
+											["g"] = {
+												i(174502),	-- Tear of Azeroth
+											},
+										}),
+									},
+								}),
+								i(163616, {	-- Dented Coin
+									["description"] = "|CFFFF0000Turn in to Cyrus Crestfall in Boralus for Proudmoore Admiralty rep.|r",
+									["coord"] = { 68.0, 22.0, 1161 },
+									["g"] = {
+										q(53118, {	-- Dented Coin
+											["repeatable"] = true,
+											["provider"] = { "n", 122370 },	-- Cyrus Crestfall <Harbormaster>
+											["races"] =  ALLIANCE_ONLY,
+											["g"] = {
+												i(174504),	-- Proudmoore War Copper
+											},
+										}),
+									},
+								}),
+								i(163614, {	-- Exotic Spices
+									["description"] = "|CFFFF0000Turn in to Xun Xun Sweetflower in Drustvar for Order of Embers rep.|r",
+									["coord"] = { 20.6, 45.6, 896 },
+									["g"] = {
+										q(53120, {	-- Exotic Spices
+											["repeatable"] = true,
+											["provider"] = { "n", 136269 },	-- Xun Xun Sweetflower <Exotic Food & Spices>
+											["races"] =  ALLIANCE_ONLY,
+											["g"] = {
+												i(174503),	-- Exotically Spiced Carrot
+											},
+										}),
+									},
+								}),
+								i(163615, {	-- Lost Sea Scroll
+									["description"] = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
+									["coord"] = { 59.2, 68.6, 942 },
+									["g"] = {
+										q(53119, {	-- Lost Sea Scroll
+											["repeatable"] = true,
+											["provider"] = { "n", 130576 },	-- Brother Pike
+											["races"] =  ALLIANCE_ONLY,
+											["g"] = {
+												i(174505),	-- Tide-Speaker's Tome
+											},
+										}),
+									},
+								}),
+								i(163617, {	-- Rusted Alliance Insignia
+									["description"] = "|CFFFF0000Turn in to Vindicator Jaelaana in Boralus for 7th Legion rep.|r",
+									["coord"] = { 69.2, 25.0, 1161 },
+									["g"] = {
+										q(53117, {	-- Rusted Alliance Insignia
+											["repeatable"] = true,
+											["provider"] = { "n", 135446 },	-- Vindicator Jaelaana <7th Legion Emissary>
+											["races"] =  ALLIANCE_ONLY,
+											["g"] = {
+												i(174507),	-- Fallen Soldier's Insignia
+											},
+										}),
+									},
+								}),
+								i(166501, {	-- Soggy Page
+									["description"] = "|CFFFF0000Turn in to Collector Kojo in Stormsong Valley (Alliance) or Zuldazar (Horde) for Tortollan Seekers rep.|r",
+									["g"] = {
+										q(54751, {	-- Soggy Page
+											["repeatable"] = true,
+											["providers"] = {
+												{ "n", 135793 },	-- Collector Kojo (A)
+												{ "n", 134345 },	-- Collector Kojo (H)
+											},
+											["g"] = {
+												i(174519),	-- Verdant Hills of Chokingvine - Page 17
+											},
+										}),
+									},
+								}),
 								i(174521),	-- Transferable Kernel of E-steam
-								i(174522),	-- Waveswept Abyssal Conch
+								i(174522, {	-- Waveswept Abyssal Conch
+									["races"] = ALLIANCE_ONLY,
+								}),
 							}),
 						}),
 						i(173950, {	-- Crestfall Salvage

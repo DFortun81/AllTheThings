@@ -8,43 +8,54 @@ _.ExpansionFeatures =
 		n(-10067, {	-- Artifact
 			n(-227,	{	-- Victory
 				i(169687, {	-- Fragment of Zem'lan's Lost Treasure Map
-					i(169693),	-- Zem'Lans Lost Treasure Map
+					i(169693, {	-- Zem'Lans Lost Treasure Map
+						i(168616),	-- Stalwart Worldvein (Rank 2)
+					}),
 				}),
 			}),
 		}),
 		n(QUESTS, {
 			q(53436, { 	-- Azerite for the Alliance
 				["isWeekly"] = true,
+				["provider"] = { "n", 131290 },	-- Flynn
 				["coord"] = { 66.6, 35.5, 1161 },
 				["races"] = ALLIANCE_ONLY,
-				["provider"] = { "n", 131290 },	-- Flynn
+				["maps"] = { 1161 },	-- Boralus
 				["g"] = {
+					i(168615),	-- Volatile Worldvein (Rank 1)
 					i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
 					i(166999),	-- Treasure Map
 					i(169764, {	-- Worldvein Intelligence Reports
-						q(56533), 	-- Worldvein Rumors
+						["questID"] = 56533,	-- Worldvein Rumors
+						["g"] = {
+							i(168617),	-- Fluctuating Worldvein (Rank 3)
+						},
 					}),
-					i(170150),	-- Map to the Last Worldvein
+					i(170150, {	-- Map to the Last Worldvein
+						i(168618),	-- Brilliant Worldvein (Rank 4)
+					}),
 				},
-				["maps"] = { 1161 },	-- Boralus
 			}),
 			q(53435, {	-- Azerite for the Horde
 				["isWeekly"] = true,
+				["provider"] = { "n", 123000 },	-- Captain Rez'okun
 				["races"] = HORDE_ONLY,
 				["coord"] = { 44.60, 95.40, 1163 },
-				["provider"] = { "n", 123000 },	-- Captain Rez'okun
+				["maps"] = { 1163 },	-- Dazar'alor
 				["g"] = {
+					i(168615),	-- Volatile Worldvein (Rank 1)
 					i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
 					i(166999),	-- Treasure Map
 					i(169765, {	-- Worldvein Intelligence Reports
 						["questID"] = 56534,	-- Worldvein Rumors
 						["g"] = {
-							spell(302239),	-- Investigating the Rumors
+							i(168617),	-- Fluctuating Worldvein (Rank 3)
 						},
 					}),
-					i(170149),	-- Map to the Last WOrldvein
+					i(170149, {	-- Map to the Last Worldvein
+						i(168618),	-- Brilliant Worldvein (Rank 4)
+					}),
 				},
-				["maps"] = { 1163 },	-- Dazar'Alor
 			}),
 			-- Item drop quests
 			i(163470, {	 -- Ancient Crypt Key

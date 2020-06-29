@@ -161,6 +161,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				},
 			}),
 			d(23, {	-- Mythic
+				["difficulties"] = { 8, 23 },
 				["lvl"] = 120,
 				["g"] = {
 					e(2109, {	-- Coin-Operated Crowd Pummeler

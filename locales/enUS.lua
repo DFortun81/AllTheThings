@@ -121,6 +121,7 @@ app.L = {
 
 	["ABBREVIATIONS"] = {
 		["ALL THE THINGS"] = "ATT",
+		["Antorus, the Burning Throne"] = "Antorus",
 		["Expansion Pre"] = "Pre",
 		["Expansion Features"] = "EF",
 		["Dungeons & Raids"] = "D&R",

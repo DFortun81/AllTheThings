@@ -151,6 +151,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				},
 			}),
 			d(23, {	-- Mythic
+				["difficulties"] = { 8, 23 },
 				["lvl"] = 120,
 				["g"] = {
 					ach(12600),	-- Breath of the Shrine
@@ -173,9 +174,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 							134058,	-- Galecaller Faye
 						},
 						["g"] = {
-							{ -- Ensemble: Vestments of the Tidesages
+							i(162598, { -- Ensemble: Vestments of the Tidesages
 								["ignoreBonus"] = true,
-								["itemID"] = 162598,
 								["g"] = {
 									i(162592),	-- Hood of the Tidesages
 									i(162595),	-- Mantle of the Tidesages
@@ -185,7 +185,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 									i(162593),	-- Pantaloons of the Tidesages
 									i(162590),	-- Sandals of the Tidesages
 								},
-							},
+							}),
 							i(158371),	-- Seabreeze
 							i(159426),	-- Belt of the Unrelenting Gale
 							i(159419),	-- Ironhull's Reinforced Legplates
@@ -201,9 +201,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 						["g"] = {
 							ach(12601),	-- The Void Lies Sleeping
-							{ -- Ensemble: Vestments of the Tidesages
+							i(162598, { -- Ensemble: Vestments of the Tidesages
 								["ignoreBonus"] = true,
-								["itemID"] = 162598,
 								["g"] = {
 									i(162592),	-- Hood of the Tidesages
 									i(162595),	-- Mantle of the Tidesages
@@ -213,7 +212,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 									i(162593),	-- Pantaloons of the Tidesages
 									i(162590),	-- Sandals of the Tidesages
 								},
-							},
+							}),
 							i(159646),	-- Aq'mar, the Tidecaller
 							i(159289),	-- Void-Drenched Cape
 							i(159364),	-- Bindings of the Calling Depths

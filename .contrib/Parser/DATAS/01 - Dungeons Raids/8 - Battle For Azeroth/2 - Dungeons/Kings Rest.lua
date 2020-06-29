@@ -85,24 +85,21 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				}),
 			}),
 			d(23,  {	-- Mythic
+				["difficulties"] = { 8, 23 },
 				["g"] = {
 					ach(12722, {	-- It Belongs in a Mausoleum!
-						{
-							["criteriaID"] = 1,	-- First trinket found
-							["description"] = "The first trinket is in the first room. On the pedestal in the center of the room.",
-						},
-						{
-							["criteriaID"] = 2,	-- Second trinket found
+						crit(1, {	-- First trinket found
+							["description"] = "The first trinket is in the first room, on the pedestal in the center of the room.",
+						}),
+						crit(2, {	-- Second trinket found
 							["description"] = "The trinket is located on the inside of the stairwell that leads up to the closed door in the room that is next to the pedestal for the rejected serpent followers.",
-						},
-						{
-							["criteriaID"] = 3,	-- Third trinket found
-							["description"] = "At 44.29 / 32.69, the brute slams the ground and knocks you up. The trinket is on the ledge.",
-						},
-						{
-							["criteriaID"] = 4,	-- Fourth trinket found
+						}),
+						crit(3, {	-- Third trinket found
+							["description"] = "At 44.2 / 32.6, the brute slams the ground and knocks you up. The trinket is on the ledge.",
+						}),
+						crit(4, {	-- Fourth trinket found
 							["description"] = "It is on the right pillar after coming down the stairs to the final boss.",
-						},
+						}),
 					}),
 					e(2165, {	-- The Golden Serpent
 						["crs"] = { 135322 },	-- The Golden Serpent
@@ -151,13 +148,12 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						["crs"] = { 136160 },	-- King Dazar <The First>
 						["g"] = {
 							ach(12848),	-- Kings' Rest
-							{
-								["achievementID"] = 12723,	-- How to Keep a Mummy
-								["description"] = "On the final boss of King's rest, there are two sarcophagi with 2 greenish stones in front of them, simply pull the boss and have 1 party member stand on each stone. Lights will start filling up around the bottom, when they are full it locks in and the right most sarcophagus will being to shake. Simply kill the boss at this point and Miimii is yours!",
+							ach(12723, {	-- How to Keep a Mummy
+								["description"] = "On the final boss, there are two sarcophagi with 2 greenish stones in front of them.  Simply pull the boss and have 1 party member stand on each stone. Lights will start filling up around the bottom.  When they are full, it locks in and the rightmost sarcophagus will being to shake. Simply kill the boss at this point and Miimii is yours!",
 								["g"] = {
 									i(161214),	-- Thousand Year Old Mummy Wraps (PET!)
 								},
-							},
+							}),
 							i(159921),	-- Mummified Raptor Skull (MOUNT!)
 							i(159644),	-- Geti'ikku, Cut of Death
 							i(159645),	-- Headcracker of Supplication

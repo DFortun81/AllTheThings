@@ -55,7 +55,7 @@ _.Zones =
 				prof(JEWELCRAFTING, {
 					q(55578, {	-- Tol Dagor: Jewel of the Tides (H)
 						["provider"] = { "n", 150893 },	-- Shrine of the Sea
-						["coord"] = { 46.4, 23.5, 942 },
+						["coord"] = { 46.4, 23.5, 895 },
 						["modelScale"] = 2,
 						["sourceQuest"] = 49599,	-- The Missing Chapter (H)
 						["requireSkill"] = JEWELCRAFTING,
