@@ -323,7 +323,7 @@ _.Zones =
 					},
 				}),
 				n(155944, {	-- Otela <Time-Lost Baubles>
-					["coord"] = { 42.4, 71.6, 71 },
+					["coord"] = { 42.4, 71.6, 74 },
 					["g"] = {
 						i(170739, {	-- Sunswarmed Sand
 							["cost"] = { { "c", 1166, 10 }, },		-- 10x Timewarped Badge
