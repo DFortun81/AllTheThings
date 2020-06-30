@@ -20,7 +20,6 @@ _.Zones =
 				q(45776),	-- Keys are a Crutch
 				q(45653),	-- Kill it with Fire!
 				q(46046),	-- Life's a Lich
-				q(46754),	-- Magical Beasts
 				q(46755),	-- Mission: Felraging
 				q(45793),	-- Occultist Onslaught
 				q(45929),	-- Purging the Flames
@@ -196,6 +195,10 @@ _.Zones =
 					["isWorldQuest"] = true,
 					["lvl"] = 110,
 				}),
+				q(46754, {	-- Magical Beasts
+					["lvl"] = 110,
+					["isWorldQuest"] = true,
+				}),				
 				q(46948, {	-- Malificus
 					["lvl"] = 110,
 					["isWorldQuest"] = true,
