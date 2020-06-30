@@ -461,6 +461,7 @@ _.Zones =
 							}),
 						}),
 						i(173950, {	-- Crestfall Salvage
+							["modID"] = 14,
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
 							--[[
 							["sym"] = {
@@ -521,6 +522,7 @@ _.Zones =
 							},
 						}),
 						i(173949, {	-- Dread Chain Salvage
+							["modID"] = 14,
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
 							--[[
 							["sym"] = {
@@ -588,6 +590,7 @@ _.Zones =
 							},
 						}),
 						i(173988, {	-- Havenswood Salvage
+							["modID"] = 14,
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
 							--[[
 							["sym"] = {
@@ -646,6 +649,7 @@ _.Zones =
 							},
 						}),
 						i(173989, {	-- Jorundall Salvage
+							["modID"] = 14,
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
 							--[[
 							["sym"] = {
@@ -729,6 +733,7 @@ _.Zones =
 							},
 						}),
 						i(173991, {	-- Rotting Mire Salvage
+							["modID"] = 14,
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
 							--[[
 							["sym"] = {
@@ -789,6 +794,7 @@ _.Zones =
 							},
 						}),
 						i(173992, {	-- Skittering Hollow Salvage
+							["modID"] = 14,
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
 							--[[
 							["sym"] = {
@@ -824,6 +830,7 @@ _.Zones =
 							},
 						}),
 						i(173993, {	-- Snowblossom Salvage
+							["modID"] = 14,
 							["cost"] = { { "c", 1710, 175 }, },	-- 175x Seafarer's Dubloons
 							--[[
 							["sym"] = {
@@ -887,6 +894,7 @@ _.Zones =
 							},
 						}),
 						i(173990, {	-- Molten Cay Salvage
+							["modID"] = 14,
 							["cost"] = { { "c", 1710, 120 }, },	-- 120x Seafarer's Dubloons
 							--[[
 							["sym"] = {
@@ -945,6 +953,7 @@ _.Zones =
 							},
 						}),
 						i(173994, {	-- Un'gol Ruins Salvage
+							["modID"] = 14,
 							["cost"] = { { "c", 1710, 120 }, },	-- 120 Seafarer's Dubloons
 							--[[
 							["sym"] = {
@@ -993,6 +1002,7 @@ _.Zones =
 							},
 						}),
 						i(173996, {	-- Verdant Wilds Salvage
+							["modID"] = 14,
 							["cost"] = { { "c", 1710, 120 }, },	-- 120 Seafarer's Dubloons
 							--[[
 							["sym"] = {
@@ -1038,6 +1048,7 @@ _.Zones =
 							},
 						}),
 						i(173997, {	-- Whispering Reef Salvage Salvage
+							["modID"] = 14,
 							["cost"] = { { "c", 1710, 120 }, },	-- 120 Seafarer's Dubloons
 							--[[
 							["sym"] = {
@@ -1078,6 +1089,7 @@ _.Zones =
 							},
 						}),
 						i(173987, {	-- Elemental Salvage
+							["modID"] = 14,
 							["cost"] = { { "c", 1710, 75 }, },	-- 75 Seafarer's Dubloons
 							--[[
 							["sym"] = {
@@ -1151,6 +1163,7 @@ _.Zones =
 							},
 						}),
 						i(173995, {	-- Venture Co 'Salvage'
+							["modID"] = 14,
 							["cost"] = { { "c", 1710, 50 }, },	-- 50 Seafarer's Dubloons
 							--[[
 							["sym"] = {

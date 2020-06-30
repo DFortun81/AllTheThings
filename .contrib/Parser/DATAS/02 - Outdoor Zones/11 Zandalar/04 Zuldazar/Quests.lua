@@ -322,7 +322,7 @@ _.Zones =
 					["sourceQuests"] = { 50402 },	-- SKREEEE! (#1)
 					["provider"] = { "n", 135308 },	-- Wingminder Goja
 					["isDaily"] = true,
-					["coord"] = { 70.8, 50.9, 863 },
+					["coord"] = { 70.8, 50.9, 862 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 				}),
@@ -333,6 +333,21 @@ _.Zones =
 					["coord"] = { 70.7, 50.8, 862 },
 					["races"] = HORDE_ONLY,
 					["cost"] = { { "i", 158906, 8 } },	-- 8x Shimmerfin Flesh
+					["lvl"] = 120,
+				}),
+				q(50860, {	-- A Nose for Ptrouble #3
+					["sourceQuests"] = { 50900 },	-- Maybe When You're Older
+					["provider"] = { "n", 135308 },	-- Wingminder Goja
+					["isDaily"] = true,
+					["coord"] = { 70.8, 50.7, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
+				q(50396, {	-- A Pterrible Fate
+					["sourceQuests"] = { 52447 },	-- Room to Grow
+					["provider"] = { "n", 133679 },	-- Kua'fon
+					["coord"] = { 70.6, 51.0, 862 },
+					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 				}),
 				q(55253, {	-- A Show of Faith
@@ -600,6 +615,13 @@ _.Zones =
 					["coord"] = { 65.7, 30.2, 862 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(52748, {	-- Eyes on the Skies
+					["sourceQuests"] = { 50900 },	-- Maybe When You're Older
+					["provider"] = { "n", 135308 },	-- Wingminder Goja
+					["coord"] = { 70.8, 51.0, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(49663, {	-- False Prophecies
 					["sourceQuests"] = { 49905 },	-- Plot Twist
 					["provider"] = { "n", 129907 },	-- Zul the Prophet
@@ -840,7 +862,7 @@ _.Zones =
 					["sourceQuests"] = { 50412 },	-- Back to the Nest
 					["provider"] = { "n", 135308 },	-- Wingminder Goja
 					["isDaily"] = true,
-					["coord"] = { 70.7, 51.0, 863 },
+					["coord"] = { 70.7, 51.0, 862 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 				}),
@@ -872,6 +894,13 @@ _.Zones =
 					["provider"] = { "n", 130929 },	-- Witch Doctor Jangalar
 					["coord"] = { 64.1, 35.3, 862 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(50900, {	-- Maybe When You're Older
+					["sourceQuests"] = { 50887 },	-- Ptrust Fall
+					["provider"] = { "n", 135595 },	-- Pa'ku
+					["coord"] = { 72.4, 57.0, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
 				}),
 				q(51677, {	-- Mending Body and Soul
 					["sourceQuests"] = {
@@ -930,7 +959,7 @@ _.Zones =
 				q(52305, {	-- Nature Versus Nurture
 					["sourceQuests"] = { 50402 },	-- SKREEEE!
 					["provider"] = { "n", 135308 },	-- Wingminder Goja
-					["coord"] = { 70.8, 50.9, 863 },
+					["coord"] = { 70.8, 50.9, 862 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 				}),
@@ -957,7 +986,7 @@ _.Zones =
 					["sourceQuests"] = { 50412 },	-- Back to the Nest
 					["provider"] = { "n", 141025 },	-- Kua'fon
 					["isDaily"] = true,
-					["coord"] = { 70.7, 51.1, 863 },
+					["coord"] = { 70.7, 51.1, 862 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 				}),
@@ -1039,6 +1068,14 @@ _.Zones =
 					["coord"] = { 76.4, 48.7, 862 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(50887, {	-- Ptrust Fall
+					["sourceQuests"] = { 50886 },	-- Surrogate Wings
+					["provider"] = { "n", 135308 },	-- Wingminder Goja
+					["coord"] = { 70.8, 51.0, 862 },
+					["races"] = HORDE_ONLY,
+					["cost"] = { { "i", 158913, 1 } },	-- Huge Dragon Kite
+					["lvl"] = 120,
+				}),
 				q(47312, {	-- Queenfeather
 					["sourceQuests"] = {	-- probably!  might be available as early as picking up "the orphaned hatchling" or turning in "the missing handler."
 						47259,	-- Direhorn Daycare
@@ -1096,7 +1133,7 @@ _.Zones =
 				q(52447, {	-- Room to Grow
 					["sourceQuests"] = { 50412 },	-- Back to the Nest
 					["provider"] = { "n", 135308 },	-- Wingminder Goja
-					["coord"] = { 70.8, 50.9, 863 },
+					["coord"] = { 70.8, 50.9, 862 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 				}),
@@ -1215,6 +1252,13 @@ _.Zones =
 					["provider"] = { "n", 137075 },	-- Lieutenant Dennis Grimtale
 					["coord"] = { 76.6, 48.5, 862 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(50886, {	-- Surrogate Wings
+					["sourceQuests"] = { 50396 },	-- A Pterrible Fate
+					["provider"] = { "n", 127377 },	-- Pa'ku
+					["coord"] = { 71.4, 49.2, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
 				}),
 				q(47963, {	-- The Ancient One
 					["sourceQuests"] = { 47521 },	-- Midnight in the Garden of the Loa

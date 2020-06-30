@@ -138,6 +138,7 @@ app.L = {
 		["Normal"] = "N",
 		["Heroic"] = "H",
 		["Mythic"] = "M",
+		["Ny'alotha, the Waking City"] = "Ny'alotha",
 		["10 Player"] = "10M",
 		["10 Player (Heroic)"] = "10M (H)",
 		["25 Player"] = "25M",

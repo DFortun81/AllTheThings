@@ -1015,6 +1015,8 @@ _.NeverImplemented =
 		q(43511),	-- Kalec Arrives — triggered when turning in "The Power Within" at Azurewing Repose (starting Balance of Power)
 		q(45302),	-- 7.1.5 Class Hall - Brawlers Missions - Has Completed Any Brawlers Mission with Overmax - Tracking Quest — triggered when doing my first brawl for BFA
 		q(48974),	-- Unused Paragon quest, it seems the active one is #48977, "Supplies From the Army of the Light"
+		q(45311),	-- 7.1.5 Class Hall - Special - Brawlers - Fight 04 - Tracking Quest — completing "I've Got a Strange Feeling About This" mission while unlocking Meatball
+		q(45313),	-- 7.1.5 Class Hall - Brawlers - Fight 04 - Overmax Reward Credit - Tracking Quest — same as above
 		q(40584),	-- Azsuna - FLAG - Witnessed Drake Lift Crystal - triggers shortly after arriving in Azurewing Repose when turning in "Journey to the Repose"
 		q(46709),	-- Broken Isles - Ready for Crafted Legendary flag
 		q(47092),	-- Broken Isles - Working on Crafted Legendary
@@ -1654,6 +1656,8 @@ _.NeverImplemented =
 		q(56530),	-- IE-related mission — Tracking the Worldvein (done on Alliance, awarded Fluctuating Worldvein, Rank 3 Worldvein Resonance, popped while mission complete thing played)
 		q(57061),	-- popped when i manually refreshed after fully completing the mission / getting Fluctuating Worldvein in my inventory
 		q(57332),	-- using Map to the Last Worldvein to get mission The Last Worldvein (rank 4 Worldvein Resonance)
+		q(56910),	-- popped after finishing the mission The Last Worldvein (rank 4 Worldvein Resonance)
+		q(57062),	-- popped after finishing the mission The Last Worldvein (rank 4 Worldvein Resonance)
 		
 
 	--	PVP / WAR MODE
@@ -2091,6 +2095,7 @@ _.NeverImplemented =
 		q(50948),	-- Da White Shark, rare with no associated loot (treasure quest is in achievement section)
 		q(47443),	-- switched loa alignment in Zuldazar to Gonk by speaking to Chronicler Ash'tari
 		q(53567),	-- Sky Queen, rare with no associated loot
+		q(50844),	-- triggered when turning in #50900, "Maybe When You're Older," part of Kua'fon questline
 		-- Bonus Objectives
 		q(47527, {	-- Rituals of Heresy
 			["isWorldQuest"] = true,

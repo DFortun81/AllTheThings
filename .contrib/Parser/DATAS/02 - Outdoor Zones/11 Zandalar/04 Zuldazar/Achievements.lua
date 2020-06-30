@@ -158,42 +158,8 @@ _.Zones =
 							["description"] = "Must complete ~14 daily quests to fill Kua'fon's experience bar.",
 						}),
 						crit(3, {	-- Eyes on the Skies
+							["sourceQuests"] = { 52748 },	-- Eyes on the Skies
 							["description"] = "Must complete 4 to 7 daily quests to fill Kua'fon's experience bar.",
-							["g"] = {
-								q(50396, {	-- A Pterrible Fate
-									["provider"] = { "n", 133679 },	-- Kua'fon
-									["coord"] = { 70.6, 51.0, 863 },
-									["races"] = HORDE_ONLY,
-									["sourceQuest"] = 52447,	-- Room to Grow
-								}),
-								q(50886, {	-- Surrogate Wings
-									["provider"] = { "n", 127377 },	-- Pa'ku
-									["coord"] = { 71.4, 49.2, 863 },
-									["races"] = HORDE_ONLY,
-									["sourceQuest"] = 50396,	-- A Pterrible Fate
-								}),
-								q(50887, {	-- Ptrust Fall
-									["provider"] = { "n", 135308 },	-- Wingminder Goja
-									["coord"] = { 70.8, 51.0, 863 },
-									["races"] = HORDE_ONLY,
-									["sourceQuest"] = 50886,	-- Surrogate Wings
-									["g"] = {
-										i(158913),	-- Huge Dragon Kite (QI)
-									},
-								}),
-								q(50900, {	-- Maybe When You're Older
-									["provider"] = { "n", 135595 },	-- Pa'ku
-									["coord"] = { 72.4, 57.0, 863 },
-									["races"] = HORDE_ONLY,
-									["sourceQuest"] = 50887,	-- Ptrust Fall
-								}),
-								q(52748, {	-- Eyes on the Skies
-									["provider"] = { "n", 135308 },	-- Wingminder Goja
-									["coord"] = { 70.8, 51.0, 863 },
-									["races"] = HORDE_ONLY,
-									["sourceQuest"] = 50900,	-- Maybe When You're Older
-								}),
-							},
 						}),
 						crit(4, {	-- Down, But Not Out
 							q(50397, {	-- Aerial Aspirations
