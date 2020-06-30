@@ -689,7 +689,7 @@ _.ExpansionFeatures =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 						["g"] = {
-							i(173372),	-- Cache of the Black Empire
+							i(174958),	-- Cache of the Fallen Mogu
 						},
 					}),
 					q(58367, {	-- Baruk Demolisher
