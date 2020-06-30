@@ -8,6 +8,22 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		["maps"] = { 453, 454, 455 },
 		["lvl"] = 87,
 		["g"] = {
+			n(ZONEDROPS, {
+				i(87806, {	-- Ancient Mogu Key
+					["crs"] = {
+						61216,	-- Glintrok Hexxer
+						61242,	-- Glintrok Ironhide
+						61239,	-- Glintrok Oracle
+						61240,	-- Glintrok Skulker
+					},
+				}),
+				i(89428, {	-- Ancient Mogu Treasure
+					["description"] = "Contains some gold and a several green-quality gems.",
+					["cost"] = {
+						{ "i", 87806, 1 },	-- Ancient Mogu Key
+					},
+				}),
+			}),
 			n(QUESTS, { 						
 				q(31360, {	-- A New Lesson for the Master
 					["provider"] = { "n", 64432 },	-- Sinan the Dreamer
@@ -38,6 +54,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					},
 				}),
 			}),
+			
 			d(1,  {	-- Normal
 				e(708, {	-- Trial of the King
 					["crs"] = {
