@@ -197,6 +197,7 @@ _.Zones =
 				}),
 				q(46754, {	-- Magical Beasts
 					["lvl"] = 110,
+					["classes"] = { MAGE },
 					["isWorldQuest"] = true,
 				}),				
 				q(46948, {	-- Malificus
