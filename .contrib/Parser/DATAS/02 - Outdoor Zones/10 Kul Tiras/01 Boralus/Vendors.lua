@@ -338,8 +338,8 @@ _.Zones =
 				n(161091, {	-- Captain Nightrunner
 					["description"] = "We've compiled these lists from Wowhead, personal experience, and reports from ATT users, but they are incomplete (there isn't much to go on, and we can only collect so many Seafarer's Dubloons ourselves).\n\nIf you get an item from a box it's not listed under, please report it to the ATT Discord in the #errors or #bounty channel.  Thanks!\n",
 					["coord"] = { 66.2, 32.1, 1161 },
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					--["races"] = ALLIANCE_ONLY,		-- Commenting out for now.  This causes problems with the vendor tooltips on horde/alliance.
+					["g"] = bubbleDown({["modID"] = 0}, {
 						n(-11, {	-- Common Box Drops
 							n(-160, {	-- Mounts
 								["description"] = "Can drop from any epic or rare box.",
@@ -1210,7 +1210,7 @@ _.Zones =
 								}),
 							},
 						}),
-					},
+					}),
 				}),
 				n(136063, {	-- Cassandra Brennor <Leatherworking Trainer>
 					["coord"] = { 75.5, 12.6, 1161 },
