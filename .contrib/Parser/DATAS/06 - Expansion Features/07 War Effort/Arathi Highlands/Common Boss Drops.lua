@@ -4,9 +4,10 @@
 _.ExpansionFeatures =
 {
 	n(-10057, {	-- War Effort
-		m(14, {	-- Arathi Highlands
+		m(14, {		-- Arathi Highlands
 			n(COMMON_BOSS_DROPS, { -- [Tier 2]
 				["description"] = "These items can drop off any rare in the zone and in the warfront.",
+				["modID"] = 5,	-- This will inherently apply to all items within.
 				["crs"] = {
 					142709,	-- Beastrider Kama
 					142508,	-- Branchlord Aldrus
@@ -37,8 +38,7 @@ _.ExpansionFeatures =
 					142440,	-- Yogursa
 					142682,	-- Zalas Witherbark <Warband Leader>
 				},
-				["modID"] = 5,	-- This will inherently apply to all items within.
-				["groups"] = {
+				["g"] = {
 					-- ALLIANCE SET --
 					i(163891),	-- 7th Legionnaire's Aegis
 					i(163884),	-- 7th Legionnaire's Battle Hammer
@@ -56,38 +56,18 @@ _.ExpansionFeatures =
 					i(163888),	-- 7th Legionnaire's Wand
 					i(163893),	-- 7th Legionnaire's Warglaive
 					i(163883),	-- 7th Legionnaire's Warhammer
-					{	-- 7th Legionnaire's Silk Cloak
-						["itemID"] = 163246,	-- 7th Legionnaire's Silk Cloak
-						["classes"] = {
-							PRIEST,
-							MAGE,
-							WARLOCK,
-						},
-					},
-					{	-- 7th Legionnaire's Long Cloak
-						["itemID"] = 163347,	-- 7th Legionnaire's Long Cloak
-						["classes"] = {
-							DRUID,
-							ROGUE,
-							MONK,
-							DEMONHUNTER,
-						},
-					},
-					{	-- 7th Legionnaire's Chain Drape
-						["itemID"] = 163351,	-- 7th Legionnaire's Chain Drape
-						["classes"] = {
-							HUNTER,
-							SHAMAN,
-						},
-					},
-					{	-- 7th Legionnaire's Bloody Drape
-						["itemID"] = 163355,	-- 7th Legionnaire's Bloody Drape
-						["classes"] = {
-							PALADIN,
-							WARRIOR,
-							DEATHKNIGHT,
-						},
-					},
+					i(163246, {	-- 7th Legionnaire's Silk Cloak
+						["classes"] = { MAGE, PRIEST, WARLOCK },	-- Cloth
+					}),
+					i(163347, {	-- 7th Legionnaire's Long Cloak
+						["classes"] = { DEMONHUNTER, DRUID, MONK, ROGUE },	-- Leather
+					}),
+					i(163351, {	-- 7th Legionnaire's Chain Drape
+						["classes"] = { HUNTER, SHAMAN },	-- Mail
+					}),
+					i(163355, {	-- 7th Legionnaire's Bloody Drape
+						["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },	-- Plate
+					}),
 					i(163339),	-- 7th Legionnaire's Hood
 					i(163337),	-- 7th Legionnaire's Amice
 					i(163248),	-- 7th Legionnaire's Robes
@@ -137,38 +117,19 @@ _.ExpansionFeatures =
 					i(163873),	-- Honorbound Wand
 					i(163872),	-- Honorbound War Staff
 					i(163877),	-- Honorbound Warglaive
-					{	-- Honorbound Artificer's Cloak
-						["itemID"] = 163357,	-- Honorbound Artificer's Cloak
-						["classes"] = {
-							PRIEST,
-							MAGE,
-							WARLOCK,
-						},
-					},
-					{	-- Honorbound Outrider's Drape
-						["itemID"] = 163360,	-- Honorbound Outrider's Drape
-						["classes"] = {
-							DRUID,
-							ROGUE,
-							MONK,
-							DEMONHUNTER,
-						},
-					},
-					{	-- Honorbound Vanguard's Cloak
-						["itemID"] = 163366,	-- Honorbound Vanguard's Cloak
-						["classes"] = {
-							HUNTER,
-							SHAMAN,
-						},
-					},
-					{	-- Honorbound Centurion's Long Cloak
-						["itemID"] = 163368,	-- Honorbound Centurion's Long Cloak
-						["classes"] = {
-							PALADIN,
-							WARRIOR,
-							DEATHKNIGHT,
-						},
-					},
+					i(102653),	-- Honorbound Warhammer
+					i(163357, {	-- Honorbound Artificer's Cloak
+						["classes"] = { MAGE, PRIEST, WARLOCK },	-- Cloth
+					}),
+					i(163360, {	-- Honorbound Outrider's Drape
+						["classes"] = { DEMONHUNTER, DRUID, MONK, ROGUE },	-- Leather
+					}),
+					i(163366, {	-- Honorbound Vanguard's Cloak
+						["classes"] = { HUNTER, SHAMAN },	-- Mail
+					}),
+					i(163368, {	-- Honorbound Centurion's Long Cloak
+						["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },	-- Plate
+					}),
 					i(163426),	-- Honorbound Artificer's Guise
 					i(163424),	-- Honorbound Artificer's Amice
 					i(163280),	-- Honorbound Artificer's Robes

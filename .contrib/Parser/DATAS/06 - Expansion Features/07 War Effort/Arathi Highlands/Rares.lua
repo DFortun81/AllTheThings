@@ -6,411 +6,289 @@ _.ExpansionFeatures =
 	n(-10057, {	-- War Effort
 		m(14, {	-- Arathi Highlands
 			n(RARES, {
-				{	-- Beastmaster Kaman
-					["allianceQuestID"] = 53083, 	-- Beastrider Kama [Alliance]
-					["hordeQuestID"] = 53504,		-- Beastrider Kama [Horde]
-					["npcID"] = 142709,				-- Beastrider Kama
+				n(142709, {	-- Beastrider Kama
+					["allianceQuestID"] = 53083,	-- Beastrider Kama [Alliance]
+					["hordeQuestID"] = 53504,	-- Beastrider Kama [Horde]
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 65.39, 70.68 },
-					},
+					["coord"] = { 65.3, 70.6, 14 },
 					["g"] = {
-						{	-- Swift Albino Raptor
-							["itemID"] = 163644,	-- Swift Albino Raptor
-						},
+						i(163644),	-- Swift Albino Raptor
 					},
-				},
-				{	-- Branchlord Aldrus
+				}),
+				n(142508, {	-- Branchlord Aldrus
 					["allianceQuestID"] = 53013,	-- Branchlord Aldrus [Alliance]
-					["hordeQuestID"] = 53505,		-- Branchlord Aldrus [Horde]
-					["npcID"] = 142508,				-- Branchlord Aldrus
+					["hordeQuestID"] = 53505,	-- Branchlord Aldrus [Horde]
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 22.91, 22.21 },
-					},
+					["coord"] = { 22.9, 22.2, 14 },
 					["g"] = {	-- Aldrusian Sproutling
-						{
-							["itemID"] = 163650,	-- Aldrusian Sproutling
-						},
+						i(163650),	-- Aldrusian Sproutling
 					},
-				},
-				{	-- Burning Goliath
+				}),
+				n(141615, {	-- Burning Goliath
 					["allianceQuestID"] = 53017,	-- Burning Goliath [Alliance]
-					["hordeQuestID"] = 53506,		-- Burning Goliath [Horde]
-					["npcID"] = 141615,				-- Burning Goliath
+					["hordeQuestID"] = 53506,	-- Burning Goliath [Horde]
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 30.64, 44.74 },
-					},
+					["coord"] = { 30.6, 44.7, 14 },
 					["g"] = {
-						{	-- Burning Essence
-							["itemID"] = 163691,	-- Burning Essence
-						},
+						i(163691),	-- Burning Essence
 					},
-				},
-				{	-- Cresting Goliath
+				}),
+				n(141618, {	-- Cresting Goliath
 					["allianceQuestID"] = 53018,	-- Cresting Goliath [Alliance]
-					["hordeQuestID"] = 53531,		-- Cresting Goliath [Horde]
-					["npcID"] = 141618,				-- Cresting Goliath
+					["hordeQuestID"] = 53531,	-- Cresting Goliath [Horde]
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 61.86, 31.27 },
-					},
+					["coord"] = { 61.8, 31.2, 14 },
 					["g"] = {
-						{	-- Cresting Essence
-							["itemID"] = 163700,	-- Cresting Essence
-						},
+						i(163700),	-- Cresting Essence
 					},
-				},
-				{	-- Darbel Montrose
+				}),
+				n(142688, {	-- Darbel Montrose
 					["allianceQuestID"] = 53084,	-- Darbel Montrose [Alliance]
-					["hordeQuestID"] = 53507,		-- Darbel Montrose [Horde]
-					["npcID"] = 142688,				-- Darbel Montrose
+					["hordeQuestID"] = 53507,	-- Darbel Montrose [Horde]
+					["description"] = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
 					["isWeekly"] = true,
 					["coords"] = {
-						{ 50.41, 61.21 },			-- Horde Controlled
-						{ 50.72, 36.56 },			-- Alliance Controlled
+						{ 50.4, 61.2, 14 },	-- Horde-controlled
+						{ 50.7, 36.5, 14 },	-- Alliance-controlled
 					},
 					["g"] = {
-						{	-- Tiny Grimoire
-							["itemID"] = 163652,	-- Tiny Grimoire
-						},
+						i(163652),	-- Tiny Grimoire
 					},
-				},
-				{	-- Doomrider Helgrim [A Only]
-					["allianceQuestID"] = 53085,	-- Doomrider Helgrim [Alliance]
+				}),
+				n(142741, {	-- Doomrider Helgrim (Alliance-only)
+					["questID"] = 53085,	-- Doomrider Helgrim
 					["races"] = ALLIANCE_ONLY,
-					["npcID"] = 142741,				-- Doomrider Helgrim
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 53.81, 58.21 },
-					},
-					["description"] = "Only shows up when Alliance Controlled.",
+					["coord"] = { 53.8, 58.2, 14 },
+					["description"] = "Only shows up when Alliance-controlled.",
 					["g"] = {
-						{	-- Highland Mustang
-							["itemID"] = 163579,	-- Highland Mustang
-						},
+						i(163579),	-- Highland Mustang
 					},
-				},
-				{	-- Echo of Myzrael
+				}),
+				n(141668, {	-- Echo of Myzrael
 					["allianceQuestID"] = 53059,	-- Echo of Myzrael [Alliance]
-					["hordeQuestID"] = 53508,		-- Echo of Myzrael [Horde]
-					["npcID"] = 141668,				-- Echo of Myzrael
+					["hordeQuestID"] = 53508,	-- Echo of Myzrael [Horde]
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 57.07, 34.69 },
-					},
+					["coord"] = { 57.0, 34.6, 14 },
 					["g"] = {
-						{	-- Teeny Tiny Orb
-							["itemID"] = 163677,	-- Teeny Tiny Orb
-						},
+						i(163677),	-- Teeny Tiny Orb
 					},
-				},
-				{	-- Foulbelly
+				}),
+				n(142686, {	-- Foulbelly
 					["allianceQuestID"] = 53086,	-- Foulbelly [Alliance]
-					["hordeQuestID"] = 53509,		-- Foulbelly [Horde]
-					["npcID"] = 142686,				-- Foulbelly
+					["hordeQuestID"] = 53509,	-- Foulbelly [Horde]
+					["description"] = "Spawns at the back of the cave.",
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 28.64, 45.66 },			-- Cave Entrance
-						{ 23.11, 46.71 },			-- Foulbelly
-					},
+					["coord"] = { 28.6, 45.6, 14 },	-- Cave Entrance
 					["g"] = {
-						{	-- Foulbelly
-							["itemID"] = 163735,	-- Foulbelly
-						},
+						i(163735),	-- Foulbelly
 					},
-				},
-				{	-- Fozruk
+				}),
+				n(142433, {	-- Fozruk
 					["allianceQuestID"] = 53019,	-- Fozruk [Alliance]
-					["hordeQuestID"] = 53510,		-- Fozruk [Horde]
-					["npcID"] = 142433,				-- Fozruk
+					["hordeQuestID"] = 53510,	-- Fozruk [Horde]
 					["isWeekly"] = true,
-					["coords"] = {	-- Patrols, put start and ending path for coordinate plane.  Don't add anymore unless it's above the top point or below the bottom point
-						{ 60.94, 31.54 }, 			-- Top
-						{ 54.01, 55.41 },			-- Bottom
+					["coords"] = {
+						{ 59.4, 27.5, 14 },	-- Top
+						{ 54.0, 55.4, 14 },	-- Bottom
 					},
 					["g"] = {
-						{	-- Shard of Fozruk
-							["itemID"] = 163711,	-- Shard of Fozruk
-						},
+						i(163711),	-- Shard of Fozruk
 					},
-				},
-				{	-- Geomancer Flintdagger 
+				}),
+				n(142662, {	-- Geomancer Flintdagger
 					["allianceQuestID"] = 53060,	-- Geomancer Flintdagger [Alliance]
-					["hordeQuestID"] = 53511,		-- Geomancer Flintdagger [Horde]
-					["npcID"] = 142662,				-- Geomancer Flintdagger
+					["hordeQuestID"] = 53511,	-- Geomancer Flintdagger [Horde]
+					["description"] = "Spawns at the back of the cave.",
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 79.61, 30.31 },
-					},
+					["coord"] = { 78.1, 36.7, 14 },
 					["g"] = {
-						{		-- Brazier Cap
-							["itemID"] = 163713,	-- Brazier Cap
-						},
+						i(163713),	-- Brazier Cap
 					},
-				},
-				{	-- Horrific Apparition
+				}),
+				n(142725, {	-- Horrific Apparition
 					["allianceQuestID"] = 53087,	-- Horrific Apparition [Alliance]
-					["hordeQuestID"] = 53512,		-- Horrific Apparition [Horde]
-					["npcID"] = 142725,				-- Horrific Apparition
+					["hordeQuestID"] = 53512,	-- Horrific Apparition [Horde]
+					["description"] = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
 					["isWeekly"] = true,
 					["coords"] = {
-						{ 19.51, 60.91 },			-- Alliance NPC
-						{ 26.71, 32.61 },			-- Horde NPC
+						{ 19.5, 60.9, 14 },	-- Horde-controlled
+						{ 26.7, 32.6, 14 },	-- Alliance-controlled
 					},
 					["g"] = {
-						{	-- Spectral Visage
-							["itemID"] = 163736,	-- Spectral Visage
-						},
+						i(163736),	-- Spectral Visage
 					},
-				},
-				{	-- Knight-Captaian Aldrin [H Only]
-					["questID"] = 53088,			-- Knight-Captaian Aldrin
-					["npcID"] = 142739,				-- Knight-Captaian Aldrin
+				}),
+				n(142739, {	-- Knight-Captaian Aldrin
+					["questID"] = 53088,	-- Knight-Captaian Aldrin
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 49.01, 40.01 },
-					},
+					["coord"] = { 49.0, 40.0, 14 },
 					["races"] = HORDE_ONLY,
-					["description"] = "Only shows up when Horde Controlled.",
+					["description"] = "Only shows up when Horde-controlled.",
 					["g"] = {
-						{	-- Broken Highland Mustang
-							["itemID"] = 163578,	-- Broken Highland Mustang
-						},
+						i(163578),	-- Broken Highland Mustang
 					},
-				},
-				{	-- Kor'gresh Coldrage
+				}),
+				n(142112, {	-- Kor'gresh Coldrage
 					["allianceQuestID"] = 53058,	-- Kor'gresh Coldrage [Alliance]
-					["hordeQuestID"] = 53513,		-- Kor'gresh Coldrage [Horde]
-					["npcID"] = 142112,				-- Kor'gresh Coldrage
+					["hordeQuestID"] = 53513,	-- Kor'gresh Coldrage [Horde]
+					["description"] = "Spawns at the back of the cave.",
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 49.34, 84.25 },
-					},
+					["coord"] = { 48.2, 79.8, 14 },
 					["g"] = {
-						{	-- Coldrage's Cooler
-							["itemID"] = 163744,	-- Coldrage's Cooler
-						},
+						i(163744),	-- Coldrage's Cooler
 					},
-				},
-				{	-- Kovork
+				}),
+				n(142684, {	-- Kovork
 					["allianceQuestID"] = 53089,	-- Kovork [Alliance]
-					["hordeQuestID"] = 53514,		-- Kovork [Horde]
-					["npcID"] = 142684,				-- Kovork
+					["hordeQuestID"] = 53514,	-- Kovork [Horde]
+					["description"] = "Spawns at the front of the cave.",
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 28.64, 45.66 },			-- Cave Entrance
-						{ 25.01, 49.11 },			-- Kovork
-					},
+					["coord"] = { 28.6, 45.6, 14 },	-- Cave Entrance
 					["g"] = {
-						{	-- Kovork Kostume
-							["itemID"] = 163750,	-- Kovork Kostume
-						},
+						i(163750),	-- Kovork Kostume
 					},
-				},
-				{	-- Man-Hunter Rog
+				}),
+				n(142716, {	-- Man-Hunter Rog
 					["allianceQuestID"] = 53090,	-- Man-Hunter Rog [Alliance]
-					["hordeQuestID"] = 53515,		-- Man-Hunter Rog [Horde]
-					["npcID"] = 142716,				-- Man-Hunter Rog
-					["crs"] = {
-						142717,	-- SQUAAWK!
-					},
+					["hordeQuestID"] = 53515,	-- Man-Hunter Rog [Horde]
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 52.31, 72.41 },
-					},
+					["crs"] = { 142717 },	-- SQUAAWK!
+					["coord"] = { 51.8, 75.1, 14 },
 					["g"] = {
-						{	-- Mana-Warped Egg
-							["itemID"] = 163712,	-- Mana-Warped Egg
-						},
+						i(163712),	-- Mana-Warped Egg
 					},
-				},
-				{	-- Molok the Crusher
+				}),
+				n(141942, {	-- Molok the Crusher
 					["allianceQuestID"] = 53057,	-- Molok the Crusher [Alliance]
-					["hordeQuestID"] = 53516,		-- Molok the Crusher [Horde]
-					["npcID"] = 141942,				-- Molok the Crusher
+					["hordeQuestID"] = 53516,	-- Molok the Crusher [Horde]
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 47.67, 77.94 },
-					},
+					["coord"] = { 47.6, 77.9, 14 },
 					["g"] = {
-						{	-- Molok Morion
-							["itemID"] = 163775,	-- Molok Morion
-						},
+						i(163775),	-- Molok Morion
 					},
-				},
-				{	-- Nimar the Slayer
+				}),
+				n(142692, {	-- Nimar the Slayer
 					["allianceQuestID"] = 53091,	-- Nimar the Slayer [Alliance]
-					["hordeQuestID"] = 53517,		-- Nimar the Slayer [Horde]
-					["npcID"] = 142692,				-- Nimar the Slayer
+					["hordeQuestID"] = 53517,	-- Nimar the Slayer [Horde]
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 67.52, 61.01 },
-					},
+					["coord"] = { 67.5, 61.0, 14 },
 					["g"] = {
-						{	-- Witherbark Direwing
-							["itemID"] = 163706,	-- Witherbark Direwing
-						},
+						i(163706),	-- Witherbark Direwing
 					},
-				},
-				{	-- Overseer Krix 
+				}),
+				n(142423, {	-- Overseer Krix
 					["allianceQuestID"] = 53014,	-- Overseer Krix [Alliance]
-					["hordeQuestID"] = 53518,		-- Overseer Krix [Horde]
-					["npcID"] = 142423,				-- Overseer Krix
+					["hordeQuestID"] = 53518,	-- Overseer Krix [Horde]
+					["description"] = "Spawns at the back of the northern cave for Alliance and the southern cave for Horde.",
 					["isWeekly"] = true,
 					["coords"] = {
-						{ 33.0, 37.6 },				-- Horde Controlled
-						{ 27.0, 56.6 },				-- Alliance Controlled
+						{ 33.7, 36.7, 14 },	-- Horde-controlled
+						{ 27.4, 55.8, 14 },	-- Alliance-controlled
 					},
 					["g"] = {
-						{	-- Lil' Donkey
-							["itemID"] = 163646,	-- Lil' Donkey
-						},
+						i(163646),	-- Lil' Donkey
 					},
-				},
-				{	-- Plaguefeather
+				}),
+				n(142435, {	-- Plaguefeather
 					["allianceQuestID"] = 53020,	-- Plaguefeather [Alliance]
-					["hordeQuestID"] = 53519,		-- Plaguefeather [Horde]
-					["npcID"] = 142435,				-- Plaguefeather
+					["hordeQuestID"] = 53519,	-- Plaguefeather [Horde]
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 36.44, 62.81 },
-					},
+					["coord"] = { 36.4, 62.8, 14 },
 					["g"] = {
-						{	-- Plague Egg
-							["itemID"] = 163690,	-- Plague Egg
-						},
+						i(163690),	-- Plague Egg
 					},
-				},
-				{	-- Ragebeak
+				}),
+				n(142436, {	-- Ragebeak
 					["allianceQuestID"] = 53016,	-- Ragebeak [Alliance]
-					["hordeQuestID"] = 53522,		-- Ragebeak [Horde]
-					["npcID"] = 142436,				-- Ragebeak
+					["hordeQuestID"] = 53522,	-- Ragebeak [Horde]
+					["description"] = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
 					["isWeekly"] = true,
 					["coords"] = {
-						{ 11.91, 52.11 },			-- Horde Controlled
-						{ 18.51, 27.86 },			-- Alliance Controlled
+						{ 11.9, 52.1, 14 },	-- Horde-controlled
+						{ 18.5, 27.8, 14 },	-- Alliance-controlled
 					},
 					["g"] = {
-						{	-- Angry Egg
-							["itemID"] = 163689,	-- Angry Egg
-						},
+						i(163689),	-- Angry Egg
 					},
-				},
-				{	-- Rumbling Goliath
+				}),
+				n(141620, {	-- Rumbling Goliath
 					["allianceQuestID"] = 53021,	-- Rumbling Goliath [Alliance]
 					["hordeQuestID"] = 53523,	-- Rumbling Goliath [Horde]
-					["npcID"] = 141620,		-- Rumbling Goliath
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 29.76, 60.04 },
-					},
+					["coord"] = { 29.7, 60.0, 14 },
 					["g"] = {
-						{	-- Rumbling Essence
-							["itemID"] = 163701,	-- Rumbling Essence
-						},
+						i(163701),	-- Rumbling Essence
 					},
-				},
-				{	-- Ruul Onestone
+				}),
+				n(142683, {	-- Ruul Onestone
 					["allianceQuestID"] = 53092,	-- Ruul Onestone [Alliance]
-					["hordeQuestID"] = 53524,		-- Ruul Onestone [Horde]
-					["npcID"] = 142683,				-- Ruul Onestone
+					["hordeQuestID"] = 53524,	-- Ruul Onestone [Horde]
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 43.01, 57.01 },
-					},
+					["coord"] = { 42.8, 56.4, 14 },
 					["g"] = {
-						{	-- Magic Fun Rock
-							["itemID"] = 163741,	-- Magic Fun Rock
-						},
+						i(163741),	-- Magic Fun Rock
 					},
-				},
-				{	-- Singer
+				}),
+				n(142690, {	-- Singer
 					["allianceQuestID"] = 53093,	-- Singer [Alliance]
-					["hordeQuestID"] = 53525,		-- Singer [Horde]
-					["npcID"] = 142690,				-- Singer
+					["hordeQuestID"] = 53525,	-- Singer [Horde]
+					["description"] = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
 					["isWeekly"] = true,
 					["coords"] = {
-						{ 50.41, 57.61 },			-- Horde Controlled
-						{ 51.13, 39.95 },			-- Alliance Controlled
+						{ 50.4, 57.6, 14 },	-- Horde-controlled
+						{ 51.1, 39.9, 14 },	-- Alliance-controlled
 					},
 					["g"] = {
-						{	-- Syndicate Mask
-							["itemID"] = 163738,	-- Syndicate Mask
-						},
+						i(163738),	-- Syndicate Mask
 					},
-				},
-				{	-- Skullripper
+				}),
+				n(142437, {	-- Skullripper
 					["allianceQuestID"] = 53022,	-- Skullripper [Alliance]
-					["hordeQuestID"] = 53526,		-- Skullripper [Horde]
-					["npcID"] = 142437,				-- Skullripper
+					["hordeQuestID"] = 53526,	-- Skullripper [Horde]
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 56.61, 44.51 },
-					},
+					["coord"] = { 56.8, 45.1, 14 },
 					["g"] = {
-						{	-- Skullripper
-							["itemID"] = 163645,	-- Skullripper
-						},
+						i(163645),	-- Skullripper
 					},
-				},
-				{	-- Thundering Goliath
+				}),
+				n(141616, {	-- Thundering Goliath
 					["allianceQuestID"] = 53023,	-- Thundering Goliath [Alliance]
-					["hordeQuestID"] = 53527,		-- Thundering Goliath [Horde]
-					["npcID"] = 141616,				-- Thundering Goliath
+					["hordeQuestID"] = 53527,	-- Thundering Goliath [Horde]
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 46.31, 52.02 },
-					},
+					["coord"] = { 46.3, 52.0, 14 },
 					["g"] = {
-						{	-- Thundering Essence
-							["itemID"] = 163698,	-- Thundering Essence
-						},
+						i(163698),	-- Thundering Essence
 					},
-				},
-				{	-- Venomarus 
+				}),
+				n(142438, {	-- Venomarus
 					["allianceQuestID"] = 53024,	-- Venomarus [Alliance]
-					["hordeQuestID"] = 53528,		-- Venomarus [Horde]
-					["npcID"] = 142438,				-- Venomarus
+					["hordeQuestID"] = 53528,	-- Venomarus [Horde]
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 56.71, 54.11 },
-					},
+					["coord"] = { 56.7, 54.1, 14 },
 					["g"] = {
-						{	-- Fuzzy Creepling
-							["itemID"] = 163648,	-- Fuzzy Creepling
-						},
+						i(163648),	-- Fuzzy Creepling
 					},
-				},
-				{	-- Yogursa
+				}),
+				n(142440, {	-- Yogursa
 					["allianceQuestID"] = 53015,	-- Yogursa [Alliance]
-					["hordeQuestID"] = 53529,		-- Yogursa [Horde]
-					["npcID"] = 142440,				-- Yogursa
+					["hordeQuestID"] = 53529,	-- Yogursa [Horde]
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 14.01, 36.91 },
-					},
+					["coord"] = { 14.0, 36.9, 14 },
 					["g"] = {
-						{	-- Scabby
-							["itemID"] = 163684,	-- Scabby
-						},
+						i(163684),	-- Scabby
 					},
-				},
-				{	-- Zalas Witherbark <Warband Leader>
+				}),
+				n(142682, {	-- Zalas Witherbark <Warband Leader>
 					["allianceQuestID"] = 53094,	-- Zalas Witherbark <Warband Leader> [Alliance]
-					["hordeQuestID"] = 53530,		-- Zalas Witherbark <Warband Leader> [Horde]
-					["npcID"] = 142682,				-- Zalas Witherbark <Warband Leader>
+					["hordeQuestID"] = 53530,	-- Zalas Witherbark <Warband Leader> [Horde]
+					["description"] = "Spawns in the middle of the cave.",
 					["isWeekly"] = true,
-					["coords"] = {
-						{ 62.81, 80.81 },
-					},
+					["coord"] = { 63.2, 77.6, 14 },
 					["g"] = {
-						{	-- Witherbark Gong
-							["itemID"] = 163745,	-- Witherbark Gong
-						},
+						i(163745),	-- Witherbark Gong
 					},
-				},
+				}),
 			}),
 		}),
 	}),
