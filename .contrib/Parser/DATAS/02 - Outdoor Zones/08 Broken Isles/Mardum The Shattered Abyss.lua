@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(672, {	-- Mardum, the Shattered Abyss
-			["description"] = "|cff66ccffMardum, the Shattered Abyss, colloquially known simply as Mardum and originally called the Plane of Banishment) is a prison world that was created by Sargeras prior to his becoming the Fallen Titan to hold all the demons he killed in the Great Dark Beyond. After his decision to destroy all world-souls in the universe, Sargeras shattered Mardum to free the demons that would become his Burning Legion. This is the starting scenario for Demon Hunters.|r",
+			["description"] = "|cff66ccffMardum, the Shattered Abyss, colloquially known simply as Mardum and originally called the Plane of Banishment, is a prison world that was created by Sargeras prior to his becoming the Fallen Titan to hold all the demons he killed in the Great Dark Beyond. After his decision to destroy all world-souls in the universe, Sargeras shattered Mardum to free the demons that would become his Burning Legion. This is the starting scenario for Demon Hunters.|r",
 			["classes"] = { DEMONHUNTER },
 			["icon"] = "Interface\\Icons\\Achievement_boss_illidan",	-- Illidan
 			["maps"] = {
@@ -199,12 +199,18 @@ _.Zones =
 				}),
 				n(-212, {	-- Treasure Chest
 					o(246309, {	-- Small Treasure Chest
-						["questID"] = 40797,	-- Fel Crystal Fragments x2
+						["questID"] = 40797,
+						["g"] = {
+							i(129210),	-- Fel Crystal Fragments
+						},
 						["coord"] = { 23.1, 53.9, 672 },
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 					}),
 					o(244689, {	-- Small Treasure Chest
-						["questID"] = 39970,	-- Fel Crystal Fragments x2
+						["questID"] = 39970,
+						["g"] = {
+							i(129210),	-- Fel Crystal Fragments
+						},
 						["coord"] = { 34.9, 70.2, 672 },
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 					}),
@@ -217,17 +223,26 @@ _.Zones =
 						},
 					}),
 					o(245316, {	-- Small Treasure Chest
-						["questID"] = 40223,	-- Fel Crystal Fragments x1
+						["questID"] = 40223,
+						["g"] = {
+							i(129210),	-- Fel Crystal Fragments
+						},
 						["coord"] = { 42.2, 49.2, 672 },
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 					}),
 					o(246249, {	-- Small Treasure Chest
-						["questID"] = 40759,	-- Legion Healthstone
+						["questID"] = 40759,
+						["g"] = {
+							i(129210),	-- Fel Crystal Fragments
+						},
 						["coord"] = { 41.8, 37.6, 672 },
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 					}),
 					o(246147, {	-- Small Treasure Chest
-						["questID"] = 40743,	-- Fel Crystal Fragments x3
+						["questID"] = 40743,
+						["g"] = {
+							i(129210),	-- Fel Crystal Fragments
+						},
 						["coord"] = { 51.2, 50.8, 672 },
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 					}),
@@ -251,17 +266,26 @@ _.Zones =
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 					}),
 					o(244698, {	-- Small Treasure Chest
-						["questID"] = 39974,	-- Fel Crystal Fragments x2
+						["questID"] = 39974,
+						["g"] = {
+							i(129210),	-- Fel Crystal Fragments
+						},
 						["coord"] = { 66.6, 23.8, 672 },
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 					}),
 					o(245345, {	-- Small Treasure Chest
-						["questID"] = 40338,	-- Fel Crystal Fragments, Legion Healthstone x 2
+						["questID"] = 40338,
+						["g"] = {
+							i(129210),	-- Fel Crystal Fragments
+						},
 						["coord"] = { 76.3, 39.1, 672 },
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 					}),
 					o(246269, {	-- Small Treasure Chest
-						["questID"] = 40772,	-- Fel Crystal Fragments x2
+						["questID"] = 40772,
+						["g"] = {
+							i(129210),	-- Fel Crystal Fragments
+						},
 						["coords"] = {
 							{ 63.0, 21.0, 672 },
 							{ 50.2, 49.8, 675 },
@@ -282,7 +306,10 @@ _.Zones =
 						},
 					}),
 					o(245996, {	-- Small Treasure Chest
-						["questID"] = 40274,	-- Fel Crystal Fragments x1
+						["questID"] = 40274,
+						["g"] = {
+							i(129210),	-- Fel Crystal Fragments
+						},
 						["coord"] = { 78.7, 50.5, 672 },
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 					}),
@@ -292,7 +319,10 @@ _.Zones =
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 					}),
 					o(244700, {	-- Small Treasure Chest
-						["questID"] = 39976,	-- Fel Crystal Fragments x2
+						["questID"] = 39976,
+						["g"] = {
+							i(129210),	-- Fel Crystal Fragments
+						},
 						["coord"] = { 69.6, 42.3, 672 },
 						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 					}),
@@ -445,42 +475,66 @@ _.Zones =
 						}),
 						n(-212, {	-- Treasure Chest
 							o(246555, {	-- Small Treasure Chest
-								["questID"] = 40909,	-- Fel Crystal Fragments x1
+								["questID"] = 40909,
+								["g"] = {
+									i(129210),	-- Fel Crystal Fragments
+								},
 								["coord"] = { 58.7, 34.7, 677 },
 								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 							}),
 							o(246556, {	-- Small Treasure Chest
-								["questID"] = 40910,	-- Legion Healthstone
+								["questID"] = 40910,
+								["g"] = {
+									i(129210),	-- Fel Crystal Fragments
+								},
 								["coord"] = { 47.3, 54.6, 677 },
 								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 							}),
 							o(246557, {	-- Small Treasure Chest
-								["questID"] = 40911,	-- Legion Healthstone
+								["questID"] = 40911,
+								["g"] = {
+									i(129210),	-- Fel Crystal Fragments
+								},
 								["coord"] = { 32.1, 48.2, 678 },
 								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 							}),
 							o(246558, {	-- Small Treasure Chest
-								["questID"] = 40912,	-- Legion Healthstone
+								["questID"] = 40912,
+								["g"] = {
+									i(129210),	-- Fel Crystal Fragments
+								},
 								["coord"] = { 41.4, 32.9, 678 },
 								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 							}),
 							o(246560, {	-- Small Treasure Chest
-								["questID"] = 40914,	-- Fel Crystal Fragments x1
+								["questID"] = 40914,
+								["g"] = {
+									i(129210),	-- Fel Crystal Fragments
+								},
 								["coord"] = { 41.5, 63.6, 678 },
 								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 							}),
 							o(246559, {	-- Small Treasure Chest
-								["questID"] = 40913,	-- Fel Crystal Fragments x1
+								["questID"] = 40913,
+								["g"] = {
+									i(129210),	-- Fel Crystal Fragments
+								},
 								["coord"] = { 57.0, 40.2, 678 },
 								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 							}),
 							o(246561, {	-- Small Treasure Chest
-								["questID"] = 40915,	-- Fel Crystal Fragments x1
+								["questID"] = 40915,
+								["g"] = {
+									i(129210),	-- Fel Crystal Fragments
+								},
 								["coord"] = { 24.4, 9.9, 679 },
 								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 							}),
 							o(246562, {	-- Small Treasure Chest
-								["questID"] = 40916,	-- Fel Crystal Fragments x1
+								["questID"] = 40916,
+								["g"] = {
+									i(129210),	-- Fel Crystal Fragments
+								},
 								["coord"] = { 23.2, 81.6, 679 },
 								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
 							}),
