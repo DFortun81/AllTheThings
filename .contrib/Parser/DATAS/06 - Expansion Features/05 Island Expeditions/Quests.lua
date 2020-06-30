@@ -28,11 +28,15 @@ _.ExpansionFeatures =
 					i(169764, {	-- Worldvein Intelligence Reports
 						["questID"] = 56533,	-- Worldvein Rumors
 						["g"] = {
-							i(168617),	-- Fluctuating Worldvein (Rank 3)
+							i(168617, {	-- Fluctuating Worldvein (Rank 3)
+								["modID"] = 14,
+							}),
 						},
 					}),
 					i(170150, {	-- Map to the Last Worldvein
-						i(168618),	-- Brilliant Worldvein (Rank 4)
+						i(168618, {	-- Brilliant Worldvein (Rank 4)
+							--["modID"] = 31,
+						}),	
 					}),
 				},
 			}),
@@ -49,7 +53,9 @@ _.ExpansionFeatures =
 					i(169765, {	-- Worldvein Intelligence Reports
 						["questID"] = 56534,	-- Worldvein Rumors
 						["g"] = {
-							i(168617),	-- Fluctuating Worldvein (Rank 3)
+							i(168617, {	-- Fluctuating Worldvein (Rank 3)
+								["modID"] = 14,
+							}),
 						},
 					}),
 					i(170149, {	-- Map to the Last Worldvein
