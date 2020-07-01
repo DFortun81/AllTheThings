@@ -76,37 +76,37 @@ _.WorldEvents =
 						})),
 					}),
 					tier(5, {	-- Mists of Pandaria
-						un(6, ach(6849, {	-- Collector's Edition: Imperial Quilen
-							un(6, i(85870)),	-- Imperial Quilen
+						un(35, ach(6849, {	-- Collector's Edition: Imperial Quilen
+							un(35, i(85870)),	-- Imperial Quilen
 						})),
-						un(6, ach(6848, {	-- Collector's Edition: Lucky Quilen Cub
-							un(6, i(85871)),	-- Lucky Quilen Cub
+						un(35, ach(6848, {	-- Collector's Edition: Lucky Quilen Cub
+							un(35, i(85871)),	-- Lucky Quilen Cub
 						})),
 					}),
 					tier(6, {	-- Warlords of Draenor
-						un(6, ach(8917, {	-- Collector's Edition: Dread Hatchling
-							un(6, i(109014)),	-- Dread Hatchling
+						un(35, ach(8917, {	-- Collector's Edition: Dread Hatchling
+							un(35, i(109014)),	-- Dread Hatchling
 						})),
-						un(6, ach(8916, {	-- Collector's Edition: Dread Raven
-							un(6, i(109013)),	-- Reins of the Dread Raven
+						un(35, ach(8916, {	-- Collector's Edition: Dread Raven
+							un(35, i(109013)),	-- Reins of the Dread Raven
 						})),
 					}),
 					tier(7, {	-- Legion
-						un(6, ach(10321, {	-- Collector's Edition: Nibbles
-							un(6, i(128426)),	-- Nibbles
+						un(35, ach(10321, {	-- Collector's Edition: Nibbles
+							un(35, i(128426)),	-- Nibbles
 						})),
-						un(6, ach(10320, {	-- Collector's Edition: Illidari Felstalker
-							un(6, i(128425)),	-- Reins of the Illidari Felstalker
+						un(35, ach(10320, {	-- Collector's Edition: Illidari Felstalker
+							un(35, i(128425)),	-- Reins of the Illidari Felstalker
 						})),
 					}),
 					tier(8, {	-- Battle for Azeroth
-						un(6, h(ach(12230, {	-- Collector's Edition: Gilded Ravasaur
+						un(35, h(ach(12230, {	-- Collector's Edition: Gilded Ravasaur
 							i(153540),	-- Gilded Ravasaur
 						}))),
-						un(6, a(ach(12229, {	-- Collector's Edition: Seabraid Stallion
+						un(35, a(ach(12229, {	-- Collector's Edition: Seabraid Stallion
 							i(153539),	-- Seabraid Stallion
 						}))),
-						un(6, ach(12232, {	-- Collector's Edition: Tottle
+						un(35, ach(12232, {	-- Collector's Edition: Tottle
 							i(153541),	-- Tottle
 						})),
 					}),
