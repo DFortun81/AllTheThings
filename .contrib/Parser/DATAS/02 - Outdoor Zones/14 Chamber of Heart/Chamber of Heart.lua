@@ -827,6 +827,152 @@ _.Zones =
 									}),
 								},
 							}),
+							n(152194, {	-- MOTHER
+								["description"] = "MOTHER sells rank 3 essences for Echoes of Ny'alotha provided you have obtained them through other means on your account on at least one character.",
+								["coord"] = {48.15, 72.54, 1473 },
+								["g"] = {
+									i(168440, {	-- Gleaming Star Shard
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 24 },	-- Spirit of Preservation
+									}),
+									i(168444, {	-- Churning Blood of the Conquered
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 23 },	-- Blood of the Enemy
+									}),
+									i(168537, {	-- Tempered Azerite Formation
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 2 },		-- Azeroth's Undying Gift
+									}),
+									i(168559, {	-- Fetish of the Hidden Labyrinths
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 7 },	-- Anima of Life and Death
+									}),
+									i(168568, {	-- Null Force Nullifier
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 }, },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 13 },	-- Nullification Dynamo
+									}),
+									i(168575, {	-- Branch of Rejuvenating Rings
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 33 },	-- Touch of the Everlasting
+									}),
+									i(168580, {	-- Sphere of Leeched Mobility
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 3 },	-- Sphere of Suppression
+									}),
+									i(168613, {	-- Tempered Scale of the Scarlet Broodmother
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 12 },	-- The Crucible of Flame
+									}),
+									i(168617, {	-- Fluctuating Worldvein
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 4 },	-- Worldvein Resonance
+									}),
+									i(168622, {	-- Stabilizing Lens of the Focusing Iris
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 5 },	-- Essence of the Focusing Iris
+									}),
+									i(168839, {	-- Regenerating Barrier of the Depths
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 25 },	-- Aegis of the Deep
+									}),
+									i(168844, {	-- Perfection-Enhancing Gearbox
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 22 },	-- Vision of Perfection
+									}),
+									i(168848, {	-- Pearl of Perspicuous Intentions
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 27 },	-- Memory of Lucid Dreams
+									}),
+									i(168852, {	-- Stalwart Battlefield Memento
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 15 },	-- Ripple in Space
+									}),
+									i(168856, {	-- Resonating Elemental Heart
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 14 },	-- Condensed Life-Force
+									}),
+									i(168860, {	-- Enhanced Purification Protocols
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 6 },	-- Purification Protocol
+									}),
+									i(168865, {	-- Polarized Azerite Slivershards
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 28 },	-- The Unbound Force
+									}),
+									i(168922, {	-- Azerite-Fueled Timequartz
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 18 },	-- Artifice of Time
+									}),
+									i(168926, {	-- Lingering Seed of Renewal
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 20 },	-- Life-Binder's Invocation
+									}),
+									i(168930, {	-- Tome of the Quickening Tides
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 17 },	-- The Ever-Rising Tide
+									}),
+									i(168934, {	-- Calibrated Existence Gauge
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 19 },	-- The Well of Existence
+									}),
+									i(168943, {	-- Grid of Bursting Vitality
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 21 },	-- Vitality Conduit
+									}),
+									i(169900, {	-- Rib-Bone Choker of Dominance
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 32 },	-- Conflict and Strife
+									}),
+									i(173282, {	-- Token of Death's Glee
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 35 },	-- Breath of the Dying
+									}),
+									i(173290, {	-- Quickening Azerite Geode
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 36 },	-- Spark of Inspiration
+									}),
+									i(173310, {	-- Manual of Unbalanced Tactics
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 34 },	-- Strenghth of the Warden
+									}),
+									i(173885, {	-- Volatile Void Droplet
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 37 },	-- The Formless Void
+									}),
+									i(168938, {	-- Ward of Mutual Aid
+										["modID"] = 14,
+										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										--{ ["azeriteEssenceID"] = 16 },	-- Unwavering Ward
+									}),
+								},
+							}),
 							n(155496, {	-- Wrathion
 								["coord"] = { 46.2, 64.0, 1473 },
 								["g"] = {
