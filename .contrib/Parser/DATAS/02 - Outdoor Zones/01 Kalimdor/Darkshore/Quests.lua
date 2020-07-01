@@ -135,13 +135,20 @@ _.Zones =
 						33020,	-- Zenn Foulhoof
 					},
 				}),
-				q(53130, {	-- Bloodied Sentinel's Glaive
+				q(53129, {	-- Bloodied Sentinel's Glaive (Horde)
+					["lvl"] = 120,
+					["model"] = 1118879,
+					["coord"] = { 45.2, 17.9, 62 },
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 296536 },	-- Bloodied Sentinel's Glaive
+				}),
+				q(53130, {	-- Bloodied Sentinel's Glaive (Alliance)
 					["lvl"] = 120,
 					["model"] = 1118879,
 					["coord"] = { 45.2, 17.9, 62 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 296536 },	-- Bloodied Sentinel's Glaive
-				}),
+				}),	
 				q(13521, {	-- Buzzbox 413
 					["provider"] = { "n", 32977 },	-- Wizbang Cranktoggle
 					["coord"] = { 51.1, 19.6, 62 },
