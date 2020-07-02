@@ -5,7 +5,7 @@ _.ExpansionFeatures =
 {
 	n(-9965, {	-- Legion Class Hall
 		cl(1, {	-- Skyhold (Warrior)
-			["classes"] = { 1 },	-- Warrior
+			["classes"] = { WARRIOR },	-- Warrior
 			["lvl"] = 98,
 			["mapID"] = 695,	-- Skyhold (Warrior)
 			["g"] = {
@@ -78,22 +78,27 @@ _.ExpansionFeatures =
 							}),
 						}
 					}),
-					q(43643, {	-- Secrets of the Axes
-						["description"] = "Every day, there is a chance that speaking to Master Smith Helgar will offer a dialogue option, \"Is there an axe the equal to Strom'kar?\", which will end with being offered the quest Secrets of the Axes. When this quest is active, it is active region-wide, and everyone will have access to it for that day.\n\nThis sends you to speak to High Overlord Saurfang at Krasus' Landing in Dalaran. When done, jump back up to Skyhold and speak again to Master Smith Helgar, who will send you to the Circle of Wills to duel Saurfang.",
-						["provider"] = { "n", 96586 },	-- Master Smith Helgar
-						["g"] = {
-							i(139578, {	-- The Arcanite Bladebreaker
-								artifact(908),	-- Arms Warrior Hidden Artifact Skin
-							}),
-						},
-					}),
+					
+					
 					
 					
 					-- NASTY QUEST LIST
 					q(44057),	-- A "Noble" Event
+					q(41052, {	-- A Desperate Plea
+						["maps"] = { 627 },	-- Dalaran
+						["races"] = HORDE_ONLY,
+						["classes"] = { WARRIOR },	-- Warrior
+						["provider"] = { "n", 93775 },	-- Eitrigg
+					}),
 					q(45128),	-- A Glorious Reunion
 					q(46208),	-- A Godly Invitation
 					q(43425),	-- A Hero's Weapon
+					q(42814, {	-- An Important Mission
+						["maps"] = { 627 },	-- Dalaran
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 108961 },	-- Sergeant Dalton
+					}),
 					q(45180),	-- An Island of War
 					q(45986),	-- An Urgent Warning
 					q(44255),	-- Axe and You Shall Receive
@@ -101,84 +106,17 @@ _.ExpansionFeatures =
 					q(42607),	-- Captain Stahlstrom
 					q(43577),	-- Capturing the Gateway
 					q(44221),	-- Champion Armaments
-					q(42616),	-- Champion: Dvalen Ironrune
-					q(45873, {	-- Champion: Eitrigg
-						["races"] = HORDE_ONLY,
-					}),
-					q(42606),	-- Champion: Finna Bjornsdottir
-					q(42619),	-- Champion: Hodir
-					q(45876, {	-- Champion: Lord Darius Crowley
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(42605),	-- Champion: Ragnvald Drakeborn
-					q(42614),	-- Champion: Svergan Stormcloak
-					q(42618),	-- Champion: Thorim
-					q(42598),	-- Champions of Skyhold
-					q(47072),	-- Delivering Lost Knowledge
-					q(42918),	-- Demonic Runes
-					q(45173),	-- Desperate Times
-					q(42611),	-- Einar the Runecaster
-					q(46778),	-- Further Advancement
-					q(46155),	-- Furthering Knowledge
-					q(45987),	-- Investigate the Broken Shore
-					q(42204),	-- Jorhuttam
-					q(39191),	-- Legacy of the Icebreaker
-					q(43586),	-- Maw of Souls: Message to Helya
-					q(43604),	-- Maw of Souls: Ymiron's Broken Blade
-					q(43949),	-- More Weapons of Legend
-					q(39654),	-- Odyn and the Valarjar
-					q(42597),	-- Odyn's Summons
-					q(42107),	-- On the Trail of the Great Worm
-					q(44417),	-- One More Legend
-					q(43585),	-- Preparing For War
-					q(43975),	-- Recruiting Shieldmaidens
-					q(42609),	-- Recruiting the Troops
-					q(44849),	-- Recruitment Drive
-					q(44889),	-- Resource Management
-					q(46267),	-- Return of the Battlelord
-					q(42815, {	-- Return to the Broken Shore
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(38904, {	-- Return to the Broken Shore
-						["races"] = HORDE_ONLY,
-					}),
-					q(42651),	-- Svergan's Promise
-					q(46173),	-- Tactical Planning
-					q(43750),	-- The Call of Battle
-					q(39214),	-- The Eye of Odyn
-					q(42974),	-- The Fate of Hodir
-					q(39192),	-- The Forge of Odyn
-					q(39530),	-- The Forgening
-					q(42193),	-- The Gjallarhorn
-					q(40043),	-- The Hunter of Heroes
-					q(44222),	-- The Might of the Val'kyr
-					q(41105),	-- The Sword of Kings
-					q(46207),	-- The Trial of Rage
-					q(40585),	-- Thus Begins the War
-					q(45172),	-- To Battle!
-					q(42110),	-- To the Summit!
-					q(42610),	-- Troops in the Field
-					q(43090),	-- Ulduar's Oath
-					q(40579),	-- Weapons of Legend
-					q(44667),	-- Will of the Valarjar
-					q(45179),	-- Win the Crowd										
-					q(46207, {	-- The Trial of Rage
-						i(142232),	-- Iron Reins of the Bloodthirsty War Wyrm
-					}),
-					q(44255, {	-- Axe and You Shall Receive
-						i(139684),	-- Battlelord's Helmet
-					}),
-					q(42974, {	-- The Fate of Hodir
-						i(139681),	-- Battlelord's Chest
-					}),
-					q(43090, {	-- Ulduar's Oath
-						i(139688),	-- Battlelord's Bracers
-					}),
-					--Followers Sort later
 					q(42616, {	-- Champion: Dvalen Ironrune
 						["provider"] = { "n", 112766 },	-- Dvalen Ironrune
 						["g"] = {
 							follower(714),	-- Dvalen Ironrune
+						},
+					}),
+					q(45873, {	-- Champion: Eitrigg
+						["provider"] = { "n", 117479 },	-- Eitrigg
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							follower(989),	-- Lord Darius Crowley / Eitrigg
 						},
 					}),
 					q(42606, {	-- Champion: Finna Bjornsdottir
@@ -193,28 +131,9 @@ _.ExpansionFeatures =
 							follower(715),	-- Hodir
 						},
 					}),
-					q(42204, {	-- Jorhuttam
-						["provider"] = { "n", 106271 },	-- Jarum Skymane
-						["g"] = {
-							follower(711),	-- Hymdall
-						},
-					}),
-					q(43604, {	-- Maw of Souls: Ymiron's Broken Blade
-						--["provider"] = { "n",  },	-- Autoaccept while on the chain
-						["g"] = {
-							follower(712),	-- King Ymiron
-						},
-					}),
 					q(45876, {	-- Champion: Lord Darius Crowley
 						["provider"] = { "n", 117480 },	-- Lord Darius Crowley
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							follower(989),	-- Lord Darius Crowley / Eitrigg
-						},
-					}),
-					q(45873, {	-- Champion: Eitrigg
-						["provider"] = { "n", 117479 },	-- Eitrigg
-						["races"] = HORDE_ONLY,
 						["g"] = {
 							follower(989),	-- Lord Darius Crowley / Eitrigg
 						},
@@ -236,6 +155,118 @@ _.ExpansionFeatures =
 						["g"] = {
 							follower(713),	-- Thorim
 						},
+					}),
+					q(42598),	-- Champions of Skyhold
+					q(47072),	-- Delivering Lost Knowledge
+					q(42918),	-- Demonic Runes
+					q(45173),	-- Desperate Times
+					q(42611),	-- Einar the Runecaster
+					q(46778),	-- Further Advancement
+					q(46155),	-- Furthering Knowledge
+					q(45987),	-- Investigate the Broken Shore
+					q(42204, {	-- Jorhuttam
+						["provider"] = { "n", 106271 },	-- Jarum Skymane
+						["g"] = {
+							follower(711),	-- Hymdall
+						},
+					}),
+					q(39191),	-- Legacy of the Icebreaker
+					q(43586),	-- Maw of Souls: Message to Helya
+					q(43604, {	-- Maw of Souls: Ymiron's Broken Blade
+						--["provider"] = { "n",  },	-- Autoaccept while on the chain
+						["g"] = {
+							follower(712),	-- King Ymiron
+						},
+					}),
+					q(43949),	-- More Weapons of Legend
+					q(39654, {	-- Odyn and the Valarjar
+						["coord"] = { 59.0, 29.7, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 93823 },	-- Danica the Reclaimer
+						["sourceQuests"] = {
+							42815,	-- Return to the Broken Shore (A)
+							38904,	-- Return to the Broken Shore (H)
+						},
+					}),
+					q(42597),	-- Odyn's Summons
+					q(42107),	-- On the Trail of the Great Worm
+					q(44417),	-- One More Legend
+					q(43585),	-- Preparing For War
+					q(43975),	-- Recruiting Shieldmaidens
+					q(42609),	-- Recruiting the Troops
+					q(44849),	-- Recruitment Drive
+					q(44889),	-- Resource Management
+					q(46267),	-- Return of the Battlelord
+					q(42815, {	-- Return to the Broken Shore (A)
+						["maps"] = { 627 },	-- Dalaran
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96183 },	-- Danath Trollbane
+						["sourceQuest"] = 42814,	-- An Important Mission
+					}),
+					q(38904, {	-- Return to the Broken Shore (H)
+						["maps"] = { 627 },	-- Dalaran
+						["coord"] = { 75.0, 46.2, 627 },
+						["races"] = HORDE_ONLY,
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 93773 },	-- High Overlord Saurfang
+						["sourceQuest"] = 41052,	-- A Desperate Plea
+					}),
+					q(43643, {	-- Secrets of the Axes
+						["description"] = "Every day, there is a chance that speaking to Master Smith Helgar will offer a dialogue option, \"Is there an axe the equal to Strom'kar?\", which will end with being offered the quest Secrets of the Axes. When this quest is active, it is active region-wide, and everyone will have access to it for that day.\n\nThis sends you to speak to High Overlord Saurfang at Krasus' Landing in Dalaran. When done, jump back up to Skyhold and speak again to Master Smith Helgar, who will send you to the Circle of Wills to duel Saurfang.",
+						["provider"] = { "n", 96586 },	-- Master Smith Helgar
+						["g"] = {
+							i(139578, {	-- The Arcanite Bladebreaker
+								artifact(908),	-- Arms Warrior Hidden Artifact Skin
+							}),
+						},
+					}),
+					q(42651),	-- Svergan's Promise
+					q(46173),	-- Tactical Planning
+					q(43750),	-- The Call of Battle
+					q(39214, {	-- The Eye of Odyn
+						["coord"] = { 59.6, 83.7, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 100622 },	-- Danica the Reclaimer
+						["description"] = "Available after obtaining your first artifact weapon.",
+					}),
+					q(42974),	-- The Fate of Hodir
+					q(39192),	-- The Forge of Odyn
+					q(39530),	-- The Forgening
+					q(42193),	-- The Gjallarhorn
+					q(40043),	-- The Hunter of Heroes
+					q(44222),	-- The Might of the Val'kyr
+					q(41105),	-- The Sword of Kings
+					q(46207),	-- The Trial of Rage
+					q(40585, {	-- Thus Begins the War
+						["coord"] = { 59.7, 13.3, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
+						["sourceQuest"] = 39214,	-- The Eye of Odyn
+					}),
+					q(45172),	-- To Battle!
+					q(42110),	-- To the Summit!
+					q(42610),	-- Troops in the Field
+					q(43090),	-- Ulduar's Oath
+					q(40579, {	-- Weapons of Legend
+						["coord"] = { 58.3, 84.9, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96469 },	-- Odyn
+						["sourceQuest"] = 39654,	-- Odyn and the Valarjar
+					}),
+					q(44667),	-- Will of the Valarjar
+					q(45179),	-- Win the Crowd										
+					q(46207, {	-- The Trial of Rage
+						i(142232),	-- Iron Reins of the Bloodthirsty War Wyrm
+					}),
+					q(44255, {	-- Axe and You Shall Receive
+						i(139684),	-- Battlelord's Helmet
+					}),
+					q(42974, {	-- The Fate of Hodir
+						i(139681),	-- Battlelord's Chest
+					}),
+					q(43090, {	-- Ulduar's Oath
+						i(139688),	-- Battlelord's Bracers
 					}),
 				}),
 				n(VENDORS, {

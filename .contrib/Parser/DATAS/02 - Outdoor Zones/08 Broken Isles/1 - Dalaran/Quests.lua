@@ -91,11 +91,6 @@ _.Zones =
 						{ "n", 119531 },	-- Muninn
 					},
 				}),
-				q(41052, {	-- A Desperate Plea
-					["classes"] = { WARRIOR },	-- Warrior
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 93775 },	-- Eitrigg
-				}),
 				q(46083, {	-- A Few Things First
 					["sourceQuests"] = { 46071 },	-- The Hammer of Dalaran
 					["classes"] = { PALADIN },
@@ -274,11 +269,6 @@ _.Zones =
 				q(42001, {	-- Aluneth, Greatstaff of the Magna
 					["classes"] = { MAGE },
 					["provider"] = { "n", 102700 },	-- Meryl Felstorm
-				}),
-				q(42814, {	-- An Important Mission
-					["classes"] = { WARRIOR },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 108961 },	-- Sergeant Dalton
 				}),
 				q(46065, {	-- An Impossible Foe
 					["classes"] = { WARRIOR, ROGUE, DEATHKNIGHT, SHAMAN, MAGE, DRUID },
@@ -1183,18 +1173,6 @@ _.Zones =
 				q(45238, {	-- Return to Karazhan: Cubic Cynosure
 					["sourceQuests"] = { 45160 },	-- Cubic Currents
 					["provider"] = { "n", 93538 },	-- Dariness the Learned
-				}),
-				q(42815, {	-- Return to the Broken Shore
-					["sourceQuests"] = { 42814 },	-- An Important Mission
-					["classes"] = { WARRIOR },
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 96183 },	-- Danath Trollbane
-				}),
-				q(38904, {	-- Return to the Broken Shore
-					["sourceQuests"] = { 41052 },	-- A Desperate Plea
-					["classes"] = { WARRIOR },
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 93773 },	-- High Overlord Saurfang
 				}),
 				q(42608, {	-- Rise, Champions
 					["classes"] = { WARLOCK },

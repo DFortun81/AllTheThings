@@ -1102,7 +1102,6 @@ _.NeverImplemented =
 		q(44382),	-- Demon Hunter Order Hall - Vengeance Chosen — chose to pursue Vengeance artifact while on "In Pursuit of Power"
 		q(44638),	-- Demon Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Demon Hunter - Chapter 1.5 - Pacing Mission — triggers when "Additional Accoutrements" is completed
 		
-	-- Druid Order Hall
 		q(41194),	-- Druid Order Hall - Remulos Tracker - When you enter the Dreamway the first time
 		q(40703),	-- Druid Order Hall - Restoration Chosen (First)
 		q(40781),	-- Druid Order Hall - Balance Chosen (First)
@@ -1181,6 +1180,11 @@ _.NeverImplemented =
 		q(44499),	-- Shaman Order Hall - Snowfang Tracking Quest
 		q(44653),	-- Shaman Order Hall - Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 1
 		q(44654),	-- Shaman Order Hall - Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 2A-5
+		
+		q(40582),	-- Warrior Order Hall - Arms chosen first
+		q(40581),	-- Warrior Order Hall - Fury chosen first
+		q(40580),	-- Warrior Order Hall - Protection chosen first
+		q(39174),	-- Warrior Order Hall - Guiding Light Tutorialized - pops when you get your first artifact weapon and go back to Skyhold
 		
 	--	Professions
 	--	Archaeology
