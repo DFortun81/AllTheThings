@@ -162,6 +162,9 @@ _.Zones =
 										}),
 									},
 								}),
+								i(173948, {	-- Glittering Abyssal Conch
+									["races"] = HORDE_ONLY,
+								}),
 								i(163619, {	-- Golden Beetle
 									["description"] = "|CFFFF0000Turn in to Krag'wa the Huge in Nazmir for Talanji's Expedition rep.|r",
 									["coord"] = { 75.6, 56.6, 863 },

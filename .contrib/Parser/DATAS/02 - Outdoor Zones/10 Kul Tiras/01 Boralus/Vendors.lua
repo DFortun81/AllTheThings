@@ -411,6 +411,9 @@ _.Zones =
 										}),
 									},
 								}),
+								i(173947, {	-- Glittering Abyssal Conch
+									["races"] = ALLIANCE_ONLY,
+								}),
 								i(163615, {	-- Lost Sea Scroll
 									["description"] = "|CFFFF0000Turn in to Brother Pike in Stormsong Valley for Storm's Wake rep.|r",
 									["coord"] = { 59.2, 68.6, 942 },

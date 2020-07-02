@@ -237,6 +237,8 @@ i(146939, 1894);	-- Wardens Insignia [The Wardens]
 		i(174521, 2391);	-- Transferable Kernel of E-steam (+250, Rustbolt Resistance)
 	
 	-- Nazjatar
+		i(173948, 2373);	-- Glittering Abyssal Conch (Unshackled)
+		i(173947, 2400);	-- Glittering Abyssal Conch (Waveblade Ankoan)
 		i(174523, 2373);	-- Waveswept Abyssal Conch (Unshackled)
 		i(174522, 2400);	-- Waveswept Abyssal Conch (Waveblade Ankoan)
 	
