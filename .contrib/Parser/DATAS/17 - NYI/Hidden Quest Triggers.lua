@@ -2144,6 +2144,8 @@ _.NeverImplemented =
 		q(56683),	-- after poen dialogue in the area where the hydra rares spawn: "I was born in the slave pens.  My family was broken by the naga... I never had a chance to heal them."  yikes, dude
 		q(56544),	-- after poen dialogue in cave at 26.7, 42.2: "This is one of my favorite spots!  I always keep snacks in my pocket!  It works out great for everyone!"
 		q(56671),	-- after poen dialogue around 70, 48, the area with the snapdragons: "I helped a little elf girl find her doll here, once.  It made her so happy, even though there was so little of it left.  I hugged Mak so hard when I got back to Newhome."
+		q(56701),	-- vim brineheart dialogue, triggered around 43.5, 70.5: "Without Neri, we would have scattered with the current.  She brought us together."
+		q(56711),	-- vim brineheart dialogue, triggered around 33.4, 39.3 after picking up #55980, "Turn the Scale" — "I won't always be around to protect Newhome." "If these scales can help keep our people safe, then they're worth the effort."
 		q(57167),	-- Killed Vyz'olgo the Mind-Taker. Probably related to a daily loot flag from the lieutenants
 		q(57097),	-- ??? Triggered after the cutscene for "Scouting the Palace" in Nazjatar on Alliance
 		q(56505),	-- Triggered when walking through the Alliance crash site as horde. Bodyguard dialog fires

@@ -1052,6 +1052,7 @@ _.Zones =
 				["sourceQuest"] = 56235,	-- Down Into Nazjatar
 			}),
 			q(56803, {	-- Just A Friend
+				["description"] = "Offered when |cFFFFD700Vim Brineheart|r reaches rank 2.",
 				["provider"] = { "n", 149906 },	-- Vim Brineheart
 				["coord"] = { 50.8, 65.2, 1355 },
 				["races"] = HORDE_ONLY,
@@ -1248,6 +1249,14 @@ _.Zones =
 				["isDaily"] = true,
 				["coord"] = { 37.2, 19.2, 1355 },
 				["races"] = ALLIANCE_ONLY,
+			}),
+			q(55877, {	-- Plug the Geysers (H)
+				["sourceQuests"] = { 55500 },	-- Save a Friend
+				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
+				["provider"] = { "n", 153522 },	-- Scout Tuli
+				["isDaily"] = true,
+				["coord"] = { 48.0, 46.6, 1355 },
+				["races"] = HORDE_ONLY,
 			}),
 			q(56157, {	-- Plug the Geysers
 				["provider"] = { "n", 154246 },	-- Apprentice Inari
@@ -2232,6 +2241,7 @@ _.Zones =
 				["isDaily"] = true,
 			}),
 			q(55980, {	-- Turn the Scale (H)
+				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
 				["provider"] = { "n", 153543 },	-- Krato Flipperfoot
 				["coord"] = { 34.4, 37.8, 1355 },
 				["races"] = HORDE_ONLY,
