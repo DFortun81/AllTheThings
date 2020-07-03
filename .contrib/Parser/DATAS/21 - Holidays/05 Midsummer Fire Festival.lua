@@ -714,8 +714,8 @@ _.Holidays =  bubbleDown({["u"] = 21},
 									["maps"] = { 81 },	-- Silithus
 								}),
 								crit(10, {	-- Southern Barrens
-									["coord"] = { 41.0, 68.0, 10 },
-									["maps"] = { 10 },	-- Southern Barrens
+									["coord"] = { 41.0, 68.0, 199 },
+									["maps"] = { 199 },	-- Southern Barrens
 								}),
 								crit(11, {	-- Stonetalon Mountains
 									["coord"] = { 53.0, 62.0, 65 },
@@ -2785,9 +2785,9 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28927, {	-- Honor the Flame — Southern Barrens
 				["isYearly"] = true,
-				["coord"] = { 41.0, 68.0, 10 },
+				["coord"] = { 41.0, 68.0, 199 },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 10 },	-- Southern Barrens
+				["maps"] = { 199 },	-- Southern Barrens
 				["provider"] = { "n", 51587 },	-- The Southern Barrens Flame Keeper
 			}),
 			q(11856, {	-- Honor the Flame — Stonetalon Mountains
