@@ -1383,6 +1383,7 @@ _.NeverImplemented =
 		q(39533),	-- Durguth — WQ rare in suramar, attached WQ to rare so his special drop shows in /attwq
 		q(45511),	-- Highmountain - WQ rare: Olokk the Shipbreaker
 		q(45512),	-- Highmountain - WQ rare: Mawat'aki
+		q(48381),	-- Obsidian Deathwarder, Highmountain rare with no associated loot
 		q(45477),	-- Suramar - WQ rare: Sorallus
 		q(45502),	-- Suramar - WQ rare: Selenyi
 		q(45503),	-- Suramar - WQ rare: Colerian
