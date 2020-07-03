@@ -3610,29 +3610,62 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					103,	-- The Exodar
 				},
 				["g"] = {
-					un(21, i(23247, {	-- Burning Blossom
-						n(-3199, {
-							["g"] = { -- Midsummer Reveler Set
-								un(21, i(23324)),	-- Mantle of the Fire Festival
-								un(21, i(34685)),	-- Vestment of Summer
-								un(21, i(34683)),	-- Sandals of Summer
-							},
+					n(-3199, { -- Midsummer Reveler Set
+						i(23324, {	-- Mantle of the Fire Festival
+							["u"] = 21,
+							["cost"] = { { "i", 23247, 100 }, },	-- Burning Blossom
 						}),
-						i(34599, {	-- Juggling Torch (Item)
-							["achievementID"] = 272,	-- Torch Juggler
-							["criteriaID"] = 1,	-- Torch Juggler Criteria
-							["description"] = "You will need ten (10) of these torches to complete the Torch Juggler achievement.",
+						i(34685, {	-- Vestment of Summer
+							["u"] = 21,
+							["cost"] = { { "i", 23247, 100 }, },	-- Burning Blossom
 						}),
-						un(21, i(34686)),	-- Brazier of Dancing Flames
-						un(21, i(116439)),	-- Blazing Cindercrawler Pet
-						un(21, i(23083)),	-- Captured Flame Pet
-						un(21, i(141714)),	-- Igneous Flameling Pet
-						un(21, i(116440)),	-- Burning Defender's Medallion (TOY!)
-						un(21, i(116435)),	-- Cozy Bonfire (TOY!)
-						un(21, i(141649)),	-- Set of Matches (TOY!)
-						un(21, i(74278)),	-- Helm of the Fire Festival
-						un(21, i(166746)),	-- Fire Eater's Hearthstone (TOY!)
-					})),
+						i(34683, {	-- Sandals of Summer
+							["u"] = 21,
+							["cost"] = { { "i", 23247, 200 }, },	-- Burning Blossom
+						}),
+					}),
+					i(34599, {	-- Juggling Torch (Item)
+						["achievementID"] = 272,	-- Torch Juggler
+						["criteriaID"] = 1,	-- Torch Juggler Criteria
+						["description"] = "You will need ten (10) of these torches to complete the Torch Juggler achievement.",
+						["cost"] = { { "i", 23247, 5 }, },	-- Burning Blossom
+					}),
+					i(34686, {	-- Brazier of Dancing Flames
+						["u"] = 21,
+						["cost"] = { { "i", 23247, 350 }, },	-- Burning Blossom
+					}),
+					i(116439, {	-- Blazing Cindercrawler Pet
+						["u"] = 21,
+						["cost"] = { { "i", 23247, 350 }, },	-- Burning Blossom
+					}),
+					i(23083, {	-- Captured Flame Pet
+						["u"] = 21,
+						["cost"] = { { "i", 23247, 350 }, },	-- Burning Blossom
+					}),
+					i(141714, {	-- Igneous Flameling Pet
+						["u"] = 21,
+						["cost"] = { { "i", 23247, 350 }, },	-- Burning Blossom
+					}),
+					i(116440, {	-- Burning Defender's Medallion (TOY!)
+						["u"] = 21,
+						["cost"] = { { "i", 23247, 500 }, },	-- Burning Blossom
+					}),
+					i(116435, {	-- Cozy Bonfire (TOY!)
+						["u"] = 21,
+						["cost"] = { { "i", 23247, 350 }, },	-- Burning Blossom
+					}),
+					i(141649, {	-- Set of Matches (TOY!)
+						["u"] = 21,
+						["cost"] = { { "i", 23247, 500 }, },	-- Burning Blossom
+					}),
+					i(74278, {	-- Helm of the Fire Festival
+						["u"] = 21,
+						["cost"] = { { "i", 23247, 350 }, },	-- Burning Blossom
+					}),
+					i(166746, {	-- Fire Eater's Hearthstone (TOY!)
+						["u"] = 21,
+						["cost"] = { { "i", 23247, 300 }, },	-- Burning Blossom
+					}),
 				},
 			}),
 			n(26124, {	-- Midsummer Merchant (Horde Vendor)
@@ -3650,29 +3683,62 @@ _.Holidays =  bubbleDown({["u"] = 21},
 					110,	-- Silvermoon City
 				},
 				["g"] = {
-					un(21, i(23247, {	-- Burning Blossom
-						n(-3199, {	-- Midsummer Reveler Set
-							["g"] = {
-								un(21, i(23324)),	-- Mantle of the Fire Festival
-								un(21, i(34685)),	-- Vestment of Summer
-								un(21, i(34683)),	-- Sandals of Summer
-							},
+					n(-3199, { -- Midsummer Reveler Set
+						i(23324, {	-- Mantle of the Fire Festival
+							["u"] = 21,
+							["cost"] = { { "i", 23247, 100 }, },	-- Burning Blossom
 						}),
-						i(34599, {	-- Juggling Torch (Item)
-							["achievementID"] = 272,	-- Torch Juggler
-							["criteriaID"] = 1,	-- Torch Juggler Criteria
-							["description"] = "You will need ten (10) of these torches to complete the Torch Juggler achievement.",
+						i(34685, {	-- Vestment of Summer
+							["u"] = 21,
+							["cost"] = { { "i", 23247, 100 }, },	-- Burning Blossom
 						}),
-						un(21, i(34686)),	-- Brazier of Dancing Flames
-						un(21, i(116439)),	-- Blazing Cindercrawler Pet
-						un(21, i(23083)),	-- Captured Flame Pet
-						un(21, i(141714)),	-- Igneous Flameling Pet
-						un(21, i(116440)),	-- Burning Defender's Medallion (TOY!)
-						un(21, i(116435)),	-- Cozy Bonfire (TOY!)
-						un(21, i(141649)),	-- Set of Matches (TOY!)
-						un(21, i(74278)),	-- Helm of the Fire Festival
-						un(21, i(166746)),	-- Fire Eater's Hearthstone (TOY!)
-					})),
+						i(34683, {	-- Sandals of Summer
+							["u"] = 21,
+							["cost"] = { { "i", 23247, 200 }, },	-- Burning Blossom
+						}),
+					}),
+					i(34599, {	-- Juggling Torch (Item)
+						["achievementID"] = 272,	-- Torch Juggler
+						["criteriaID"] = 1,	-- Torch Juggler Criteria
+						["description"] = "You will need ten (10) of these torches to complete the Torch Juggler achievement.",
+						["cost"] = { { "i", 23247, 5 }, },	-- Burning Blossom
+					}),
+					i(34686, {	-- Brazier of Dancing Flames
+						["u"] = 21,
+						["cost"] = { { "i", 23247, 350 }, },	-- Burning Blossom
+					}),
+					i(116439, {	-- Blazing Cindercrawler Pet
+						["u"] = 21,
+						["cost"] = { { "i", 23247, 350 }, },	-- Burning Blossom
+					}),
+					i(23083, {	-- Captured Flame Pet
+						["u"] = 21,
+						["cost"] = { { "i", 23247, 350 }, },	-- Burning Blossom
+					}),
+					i(141714, {	-- Igneous Flameling Pet
+						["u"] = 21,
+						["cost"] = { { "i", 23247, 350 }, },	-- Burning Blossom
+					}),
+					i(116440, {	-- Burning Defender's Medallion (TOY!)
+						["u"] = 21,
+						["cost"] = { { "i", 23247, 500 }, },	-- Burning Blossom
+					}),
+					i(116435, {	-- Cozy Bonfire (TOY!)
+						["u"] = 21,
+						["cost"] = { { "i", 23247, 350 }, },	-- Burning Blossom
+					}),
+					i(141649, {	-- Set of Matches (TOY!)
+						["u"] = 21,
+						["cost"] = { { "i", 23247, 500 }, },	-- Burning Blossom
+					}),
+					i(74278, {	-- Helm of the Fire Festival
+						["u"] = 21,
+						["cost"] = { { "i", 23247, 350 }, },	-- Burning Blossom
+					}),
+					i(166746, {	-- Fire Eater's Hearthstone (TOY!)
+						["u"] = 21,
+						["cost"] = { { "i", 23247, 300 }, },	-- Burning Blossom
+					}),
 				},
 			}),
 		}),
