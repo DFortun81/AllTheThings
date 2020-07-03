@@ -2143,6 +2143,8 @@ _.NeverImplemented =
 			p(1751),
 		}))),
 		un(1, i(130145)),	-- Unknown
+		un(1, i(21168)),	-- Baby Shark
+		un(1, i(11903)),	-- Cat Carrier (Corrupted Kitten)
 		un(1, i(109602)),	-- Echo of Murmur (temp item)
 		un(1, i(169195)),	-- Golden Cricket
 		un(1, i(115469)),	-- Pet template

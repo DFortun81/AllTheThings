@@ -17,8 +17,13 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 64827 },	-- Hooded Crusader
 				}),
 				q(26993, {	-- Compendium of the Fallen
-					["u"] = 40,
+					["u"] = 40,	-- Legacy Quests
 					["provider"] = { "n", 44800 },	-- Dominic
+					["g"] = {
+						i(7748, {	-- Forcestone Buckler
+							["u"] = 2,	-- BoP / BoA item
+						}),
+					},
 				}),
 				q(26996, {	-- Right Under Their Noses
 					["u"] = 40,

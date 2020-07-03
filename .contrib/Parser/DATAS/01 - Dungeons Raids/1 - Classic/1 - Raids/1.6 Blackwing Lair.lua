@@ -10,8 +10,8 @@ _.Instances = { tier(1, {	-- Classic
 		["lvl"] = 50,
 		["mapID"] = 287,
 		["maps"] = { 288, 289, 290 },
-		["coord"] = { 64.29, 71.02, 33 },	-- Blackwing Lair, Blackrock Mountain [Blackrock Spire]
-		["groups"] = {
+		["coord"] = { 64.2, 71.0, 33 },	-- Blackwing Lair, Blackrock Mountain [Blackrock Spire]
+		["g"] = {
 			n(ZONEDROPS, {
 				i(19434, {	-- Band of Dark Dominion
 					["crs"] = {
@@ -83,9 +83,9 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				},
 			}),
-			e(1529, {	-- Razorgore the Untamed
-				["creatureID"] = 12435,
-				["groups"] = {
+			e(1529,  {	-- Razorgore the Untamed
+				["cr"] = 12435,	-- Razorgore the Untamed
+				["g"] = {
 					i(93036),	-- Unscathed Egg (Pet)
 					i(19334),	-- The Untamed Blade
 					i(19335),	-- Spineshatter
@@ -104,9 +104,9 @@ _.Instances = { tier(1, {	-- Classic
 					i(19337),	-- The Black Book
 				},
 			}),
-			e(1530, {	-- Vaelastrasz the Corrupt
-				["creatureID"] = 13020,
-				["groups"] = {
+			e(1530,  {	-- Vaelastrasz the Corrupt
+				["cr"] = 13020,	-- Vaelastrasz the Corrupt
+				["g"] = {
 					i(19346),	-- Dragonfang Blade
 					i(19348),	-- Red Dragonscale Protector
 					i(19372),	-- Helm of Endless Rage
@@ -124,9 +124,9 @@ _.Instances = { tier(1, {	-- Classic
 					i(19340),	-- Rune of Metamorphosis
 				},
 			}),
-			e(1531, {	-- Broodlord Lashlayer
-				["creatureID"] = 12017,
-				["groups"] = {
+			e(1531,  {	-- Broodlord Lashlayer
+				["cr"] = 12017,	-- Broodlord Lashlayer
+				["g"] = {
 					i(93037),	-- Blackwing Banner (Pet)
 					i(19351),	-- Maladath, Runed Blade of the Black Flight
 					i(19350),	-- Heartstriker
@@ -145,9 +145,9 @@ _.Instances = { tier(1, {	-- Classic
 					i(19342),	-- Venomous Totem
 				},
 			}),
-			e(1532, {	-- Firemaw
-				["creatureID"] = 11983,
-				["groups"] = {
+			e(1532,  {	-- Firemaw
+				["cr"] = 11983,	-- Firemaw
+				["g"] = {
 					i(19353),	-- Drake Talon Cleaver
 					i(19355),	-- Shadow Wing Focus Staff
 					i(19365),	-- Claw of the Black Drake
@@ -177,9 +177,9 @@ _.Instances = { tier(1, {	-- Classic
 				i(18562),	-- Elementium Ingot
 				i(44956),	-- Goblin's Guide to Elementium
 			}),
-			e(1533, {	-- Ebonroc
-				["creatureID"] = 14601,
-				["groups"] = {
+			e(1533,  {	-- Ebonroc
+				["cr"] = 14601,	-- Ebonroc
+				["g"] = {
 					i(19353),	-- Drake Talon Cleaver
 					i(19355),	-- Shadow Wing Focus Staff
 					i(19368),	-- Dragonbreath Hand Cannon
@@ -203,9 +203,9 @@ _.Instances = { tier(1, {	-- Classic
 					i(19395),	-- Rejuvenating Gem
 				},
 			}),
-			e(1534, {	-- Flamegor
-				["creatureID"] = 11981,
-				["groups"] = {
+			e(1534,  {	-- Flamegor
+				["cr"] = 11981,	-- Flamegor
+				["g"] = {
 					i(19353),	-- Drake Talon Cleaver
 					i(19357),	-- Herald of Woe
 					i(19355),	-- Shadow Wing Focus Staff
@@ -229,9 +229,9 @@ _.Instances = { tier(1, {	-- Classic
 					i(19431),	-- Styleen's Impeding Scarab
 				},
 			}),
-			e(1535, {	-- Chromaggus
-				["creatureID"] = 14020,
-				["groups"] = {
+			e(1535,  {	-- Chromaggus
+				["cr"] = 14020,	-- Chromaggus
+				["g"] = {
 					i(93038),	-- Whistle of Chromatic Bone
 					i(19352),	-- Chromatically Tempered Sword
 					i(19347),	-- Claw of Chromaggus
@@ -257,11 +257,11 @@ _.Instances = { tier(1, {	-- Classic
 					i(19391),	-- Shimmering Geta
 				},
 			}),
-			e(1536, {	-- Nefarian
-				["creatureID"] = 11583,
-				["groups"] = {
+			e(1536,  {	-- Nefarian
+				["cr"] = 11583,	-- Nefarian
+				["g"] = {
 					ach(685),	-- Blackwing Lair
-					i(19003, {	-- Head of Nefarian
+					i(19003,  {	-- Head of Nefarian (A)
 						q(7781, { 	-- The Lord of Blackrock
 							["races"] = ALLIANCE_ONLY,
 						}),
@@ -277,7 +277,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 					}),
-					i(19002, {	-- Head of Nefarian
+					i(19002,  {	-- Head of Nefarian (H)
 						q(7783, { 	-- The Lord of Blackrock
 							["races"] = HORDE_ONLY,
 						}),
@@ -292,6 +292,9 @@ _.Instances = { tier(1, {	-- Classic
 								i(19384),	-- Master Dragonslayer's Ring
 							},
 						}),
+					}),
+					i(170511, {	-- Head of Nefarian (Paladin, if A/H have already been looted)
+						["classes"] = PALADIN,	-- used for a hidden artifact appearance.  may come back and add more context/info later
 					}),
 					i(19364),	-- Ashkandi, Greatsword of the Brotherhood
 					i(19356),	-- Staff of the Shadow Flame
