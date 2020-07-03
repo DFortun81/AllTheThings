@@ -1204,7 +1204,6 @@ _.Zones =
 				q(46110),	-- Battle for Stormheim
 				q(42391),	-- Bite of the Beast
 				q(40857),	-- Bits and Pieces
-				q(42650),	-- Break the Bonds
 				q(40867),	-- Bubble Baubles
 				q(42389),	-- Calling Hilaire Home
 				q(42411),	-- Champion: Beastmaster Hilaire
@@ -1265,9 +1264,7 @@ _.Zones =
 				q(40146),	-- Seymour and Agnes
 				q(40404),	-- Show Legion Portal
 				q(41787),	-- Someone Else's Mess
-				q(42194),	-- Stolen Honor
 				q(40131),	-- Stonehide Leather Sample
-				q(42651),	-- Svergan's Promise
 				q(41163),	-- The Apocalypse Bringer
 				q(40541),	-- The Charge Within
 				q(41802),	-- The Gates of Valor

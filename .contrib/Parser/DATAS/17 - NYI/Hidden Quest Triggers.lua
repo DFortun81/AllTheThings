@@ -1082,6 +1082,7 @@ _.NeverImplemented =
 		
 		q(38894),	-- Generic Order Hall - Founded the order hall
 		q(43837),	-- Generic Order Hall - Tutorial - combat ally unlocked
+		q(44296),	-- Generic Order Hall - Triggers after recruiting your first two followers
 		q(43900),	-- Generic Order Hall - Tracking Quest: All - Troop A Enabled
 		q(43901),	-- Generic Order Hall - Tracking Quest: All - Troop B Enabled
 		q(43433),	-- Generic Order Hall - Tracking Quest: Tutorial - Troops Built
@@ -1089,6 +1090,8 @@ _.NeverImplemented =
 		q(42116),	-- Generic Order Hall - Tracking Quest: Chapter 2 Completed - triggers after completing your first order hall campaign effort
 		q(42118),	-- Generic Order Hall - Tracking Quest: Chapter 4 Completed — triggers after completing order hall campaign
 		q(45171),	-- Generic Order Hall - 7.1 Class Hall - Special - PVP - PVP Intro Mission - Tracking Quest
+		q(47661),	-- Generic Order Hall - [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze. Also triggers on warrior while on "On the Trail of the Great Worm"
+		q(47699),	-- Generic Order Hall - [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze. Also triggers on warrior while on "On the Trail of the Great Worm"
 		
 		q(40817),	-- Demon Hunter Order Hall - Twinblades of the Deceiver chosen first
 		q(40818),	-- Demon Hunter Order Hall - Aldrachi Warblades chosen first
@@ -1148,7 +1151,6 @@ _.NeverImplemented =
 		q(40842),	-- Rogue Order Hall - Kingslayers Chosen
 		q(44038),	-- Rogue Order Hall - Subtlety Chosen second
 		q(44378),	-- Rogue Order Hall - Subtlety Chosen third
-		q(44296),	-- Rogue Order Hall - Tracking Quest: Finished Rise, Champions
 		q(44651),	-- Rogue Order Hall - Tracking Quest: 7.0 Class Hall - Rogue - Chapter 1.5 - Pacing Mission (triggers when completing the "Spy Vs Spy" mission)
 		q(44652),	-- Rogue Order Hall - Tracking Quest: 7.0 Class Hall - Rogue - Chapter 2 - Troop B Recruiter Acquisition (triggers when completing the "Convincin' Old Yancey" mission)
 		q(42061),	-- Rogue Order Hall - Charge Trigger Hit - triggered after leaving the citadel during the Fangs of the Devourer scenario
@@ -1182,8 +1184,14 @@ _.NeverImplemented =
 		q(44654),	-- Shaman Order Hall - Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 2A-5
 		
 		q(40582),	-- Warrior Order Hall - Arms chosen first
+		q(43952),	-- Warrior Order Hall - Arms chosen second
+		q(44419),	-- Warrior Order Hall - Arms chosen third
 		q(40581),	-- Warrior Order Hall - Fury chosen first
+		q(43950),	-- Warrior Order Hall - Fury chosen second
+		q(44418),	-- Warrior Order Hall - Fury chosen third
 		q(40580),	-- Warrior Order Hall - Protection chosen first
+		q(43953),	-- Warrior Order Hall - Protection chosen second
+		q(44420),	-- Warrior Order Hall - Protection chosen third
 		q(39174),	-- Warrior Order Hall - Guiding Light Tutorialized - pops when you get your first artifact weapon and go back to Skyhold
 		q(44060),	-- Warrior Order Hall - Azsuna Teleport learned in Azurewing Repose
 		q(41359),	-- Warrior Order Hall - Highmountain Teleport learned in Thunder Totem
@@ -1223,8 +1231,6 @@ _.NeverImplemented =
 		q(47093),	-- Broken Shore - Choice: Tailoring
 	
 	--	DH class campaign
-		q(47661),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
-		q(47699),	-- [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze
 		q(44597),	-- Tracking Quest: Working with the Wardens 1 — these next quests are all part of DH quest 42731, "Working With the Wardens"
 		q(44598),	-- Tracking Quest: Working with the Wardens 2
 		q(44599),	-- Tracking Quest: Working with the Wardens 3
