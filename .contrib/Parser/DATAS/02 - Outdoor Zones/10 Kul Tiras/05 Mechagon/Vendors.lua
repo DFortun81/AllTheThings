@@ -58,7 +58,6 @@ _.Zones =
 							},
 						}),
 						i(168045),	-- Beastbot Powerpack
-						i(168222),	-- Encrypted Black Market Radio
 						i(168833, {	-- Experimental Adventurer Augmentation
 							i(169002),	-- Calibrated Hefty Cog
 							i(169007),	-- Laser-Etched Band

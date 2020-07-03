@@ -11,18 +11,25 @@ i(18595);	-- Blood Opal ("Retrieving Data" in-game)
 i(44626);	-- Cask of Aged Dalaran Red
 i(13509);	-- Clutch of Foresight
 i(23122);	-- Consecrated Sharpening Stone
+i(143542);	-- Crown Co. "Kure-Everything" Tonic
+i(142264);	-- Drudge Fluid
+i(142262);	-- Electrified Key
+i(168222);	-- Encrypted Black Market Radio
 i(13508);	-- Eye of Arachnida
+i(129210);	-- Fel Crystal Fragments
 i(44618);	-- Glass of Aged Dalaran Red
 i(18269);	-- Gordok Green Grog
 i(19296);	-- Greater Darkmoon Prize
 i(18284);	-- Kreeg's Stout Beatdown
 i(19297);	-- Lesser Darkmoon Prize
+i(142263);	-- Machine Fluid
 i(19298);	-- Minor Darkmoon Prize
 i(19425);	-- Mysterious Lockbox
 i(20834);	-- Ornate Spyglass XT ("Retrieving Data" in-game)
 i(23794);	-- Permanent Sheen of Zanza ("Retrieving Data" in-game)
 i(23795);	-- Permanent Spirit of Zanza ("Retrieving Data" in-game)
 i(23796);	-- Permanent Swiftness of Zanza ("Retrieving Data" in-game)
+i(169856);	-- Spark-1351
 i(1187);	-- Spiked Collar
 i(15723);	-- Tea with Sugar
 i(143858);	-- Twilight Cultist Cowl
