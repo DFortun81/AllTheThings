@@ -17,7 +17,7 @@ _.Zones =
 				},
 				["lvl"] = 110,
 				["g"] = {
-					n(-4,   {	-- Achievements
+					n(ACHIEVEMENTS, {
 						ach(13775, {	-- Essence Overload
 							ach(13772),	-- Essence Essentials
 							ach(13773),	-- Essence Gains
@@ -830,7 +830,14 @@ _.Zones =
 							n(152194, {	-- MOTHER
 								["description"] = "MOTHER sells rank 3 essences for Echoes of Ny'alotha provided you have obtained them through other means on your account on at least one character.",
 								["coord"] = {48.15, 72.54, 1473 },
-								["g"] = {	-- These are duplicated b/c they would not merge in the same item group.
+								["g"] = {
+									i(173363, {	-- Vessel of Horrific Visions
+										["cost"] = { { "c", 1803, 1750 }, }, -- 1750 Echoes of Ny'alotha
+									}),
+									i(175062, {	-- Malefic Core
+										["cost"] = { { "c", 1803, 2000 } },	-- 2000 Echoes of Ny'alotha
+									}),
+									-- These are duplicated b/c they would not merge in the same item group.
 									i(168839, {	-- Regenerating Barrier of the Depths
 										["modID"] = 14,
 										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha

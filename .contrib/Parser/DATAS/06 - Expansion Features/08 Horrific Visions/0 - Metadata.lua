@@ -295,9 +295,6 @@ _.ExpansionFeatures =
 						i(175062),	-- Malefic Core
 					}),
 				},
-				--[[ notes:
-				You can equip multiple masks at the same time, stacking their buffs/debuffs. Possible hard-mode related drops?
-				]]--
 			}),
 		},
 	}),

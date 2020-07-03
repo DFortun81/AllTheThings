@@ -971,7 +971,7 @@ _.NeverImplemented =
 		q(36825),	-- Fate of the Horde - triggered when turning in "Audience with the Warchief" as a demon hunter
 		q(40521),	-- Tracking Quest - W1 - Demon Attack Complete (Horde) - triggered after turning in "Demons Among Them"
 		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
-		q(44483),	-- Vendor Beckon Trigger - Druid, warrior (all classes?)
+		q(44483),	-- Vendor Beckon Trigger - Druid, Warrior (all classes?)
 		q(44484),	-- Vendor Beckon Trigger - Druid, Warrior (all classes?)
 		q(45533),	-- Legion Dungeon Reward Quest
 		q(44437),	-- Legion Sungeon Reward quest (Wrath of Azshara)
