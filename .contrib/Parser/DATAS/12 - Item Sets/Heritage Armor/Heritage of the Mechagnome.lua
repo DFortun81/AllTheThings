@@ -5,7 +5,7 @@ _.GearSets =
 {
 	n(-254, {	-- Heritage Armor
 		gs(1980, {	-- Heritage of the Mechagnome
-			["races"] = { 37 },	-- Mechagnome
+			["races"] = { MECHAGNOME },	-- Mechagnome
 			["g"] = {
 				i(173961),	-- Mechagnome Heritage Helmet
 				i(173963),	-- Mechagnome Heritage Shouldergaurds

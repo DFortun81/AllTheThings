@@ -3,41 +3,20 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	{	-- Heritage Armor
-		["npcID"] = -254,	-- Heritage Armor
-		["g"] = {
-			gs(1741, {	-- Heritage of Kul'Tiras
-				["g"] = {
-					{	-- Kul'Tiran Bicorne
-						["itemID"] = 165002,	-- Kul'Tiran Bicorne
-					},
-					{	-- Kul'Tiran Tasseled Pauldron
-						["itemID"] = 165003,	-- Kul'Tiran Tasseled Pauldron
-					},
-					{	-- Kul'Tiran Longcoat
-						["itemID"] = 165004,	-- Kul'Tiran Longcoat
-					},
-					{	-- Tabard of Kul'Tiras
-						["itemID"] = 165010,	-- Tabard of Kul'Tiras
-					},
-					{	-- Kul'Tiran Bracers
-						["itemID"] = 165009,	-- Kul'Tiran Bracers
-					},
-					{	-- Kul'Tiran Gloves
-						["itemID"] = 165005,	-- Kul'Tiran Gloves
-					},
-					{	-- Kul'Tiran Cinch
-						["itemID"] = 165006,	-- Kul'Tiran Cinch
-					},
-					{	-- Kul'Tiran Britches
-						["itemID"] = 165007,	-- Kul'Tiran Britches
-					},
-					{	-- Kul'Tiran Boots
-						["itemID"] = 165008,	-- Kul'Tiran Boots
-					},
-				},
-				["races"] = { 32 },
-			}),
-		},
-	},
+	n(-254, {	-- Heritage Armor
+		gs(1741, {	-- Heritage of Kul'Tiras
+			["races"] = { KULTIRAN },
+			["g"] = {
+				i(165002),	-- Kul'Tiran Bicorne
+				i(165003),	-- Kul'Tiran Tasseled Pauldron
+				i(165004),	-- Kul'Tiran Longcoat
+				i(165010),	-- Tabard of Kul'Tiras
+				i(165009),	-- Kul'Tiran Bracers
+				i(165005),	-- Kul'Tiran Gloves
+				i(165006),	-- Kul'Tiran Cinch
+				i(165007),	-- Kul'Tiran Britches
+				i(165008),	-- Kul'Tiran Boots
+			},
+		}),
+	}),
 };

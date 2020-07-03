@@ -3,41 +3,19 @@
 -----------------------------------------------------
 _.GearSets = 
 {
-	{	-- Heritage Armor
-		["npcID"] = -254,	-- Heritage Armor
-		["g"] = {
-			gs(1525, {	-- Heritage of the Lightforged
-				["races"] = { 30 },
-				["g"] = {
-					{	-- Lightforged Gorget
-						["itemID"] = 156699,	-- Lightforged Gorget
-					},
-					{	-- Lightforged Pauldrons
-						["itemID"] = 156700,	-- Lightforged Pauldrons
-					},
-					{	-- Lightforged Chestguard
-						["itemID"] = 156701,	-- Lightforged Chestguard
-					},
-					{	-- Lightforged Tabard
-						["itemID"] = 157756,	-- Lightforged Tabard
-					},
-					{	-- Lightforged Bracers
-						["itemID"] = 156706,	-- Lightforged Bracers
-					},
-					{	-- Lightforged Gloves
-						["itemID"] = 156702,	-- Lightforged Gloves
-					},
-					{	-- Lightforged Girdle
-						["itemID"] = 156703,	-- Lightforged Girdle
-					},
-					{	-- Lightforged Legplates
-						["itemID"] = 156704,	-- Lightforged Legplates
-					},
-					{	-- Lightforged Hoofguards
-						["itemID"] = 156705,	-- Lightforged Hoofguards
-					},
-				},
-			}),
-		},
-	},	
+	n(-254, {	-- Heritage Armor
+		gs(1525, {	-- Heritage of the Lightforged
+			["races"] = { LIGHTFORGED },
+			["g"] = {
+				i(156699),	-- Lightforged Gorget
+				i(156700),	-- Lightforged Pauldrons
+				i(156701),	-- Lightforged Chestguard
+				i(156706),	-- Lightforged Bracers
+				i(156702),	-- Lightforged Gloves
+				i(156703),	-- Lightforged Girdle
+				i(156704),	-- Lightforged Legplates
+				i(156705),	-- Lightforged Hoofguards
+			},
+		}),
+	}),
 };
