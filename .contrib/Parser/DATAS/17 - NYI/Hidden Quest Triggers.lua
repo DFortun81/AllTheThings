@@ -971,8 +971,8 @@ _.NeverImplemented =
 		q(36825),	-- Fate of the Horde - triggered when turning in "Audience with the Warchief" as a demon hunter
 		q(40521),	-- Tracking Quest - W1 - Demon Attack Complete (Horde) - triggered after turning in "Demons Among Them"
 		q(8237),	-- In the Blink of an Eye - dalaran transported to the broken isles
-		q(44483),	-- Vendor Beckon Trigger - Druid
-		q(44484),	-- Vendor Beckon Trigger - Druid
+		q(44483),	-- Vendor Beckon Trigger - Druid, warrior (all classes?)
+		q(44484),	-- Vendor Beckon Trigger - Druid, Warrior (all classes?)
 		q(45533),	-- Legion Dungeon Reward Quest
 		q(44437),	-- Legion Sungeon Reward quest (Wrath of Azshara)
 		q(38305),	-- Cenarius, Keeper of the Grove — unused version of quest 40122
@@ -1192,6 +1192,10 @@ _.NeverImplemented =
 		q(40580),	-- Warrior Order Hall - Protection chosen first
 		q(43953),	-- Warrior Order Hall - Protection chosen second
 		q(44420),	-- Warrior Order Hall - Protection chosen third
+		q(44658),	-- Warrior Order Hall - "On the Trail of the Great Worm" mission complete
+		q(44633),	-- Warrior Order Hall - "Aiding the Valkyra" mission complete
+		q(44634),	-- Warrior Order Hall - "Lost at Sea" mission complete
+		q(44635),	-- Warrior Order Hall - "Enslaved by Sea Giants" mission complete
 		q(39174),	-- Warrior Order Hall - Guiding Light Tutorialized - pops when you get your first artifact weapon and go back to Skyhold
 		q(44060),	-- Warrior Order Hall - Azsuna Teleport learned in Azurewing Repose
 		q(41359),	-- Warrior Order Hall - Highmountain Teleport learned in Thunder Totem

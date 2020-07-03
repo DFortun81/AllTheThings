@@ -999,7 +999,6 @@ _.Zones =
 				q(42376),	-- Inquisitor Tivos
 				q(46023),	-- Investigate the Broken Shore
 				q(43957),	-- Jade Darkhaven
-				q(42204),	-- Jorhuttam
 				q(43815),	-- Karthax
 				q(39989),	-- Keepers of the Hammer
 				q(38907),	-- Keepers of the Hammer
@@ -1051,7 +1050,6 @@ _.Zones =
 				q(38790),	-- Rethu's Pick
 				q(38794),	-- Rethu's Sacrifice
 				q(44917),	-- Return to Karazhan: The Tower of Power
-				q(42202),	-- Revenge, Served Cold
 				q(38803),	-- Rin'thissa
 				q(42519),	-- Rise, Champions
 				q(41837),	-- Rockaway Bully

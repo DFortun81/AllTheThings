@@ -163,7 +163,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42614, {	-- Champion: Svergan Stormcloak
+						["coord"] = { 52.0, 82.6, 695 },
+						["classes"] = { WARRIOR },
 						["provider"] = { "n", 107986 },	-- Svergan Stormcloak
+						["sourceQuest"] = 42107,	-- On the Trail of the Great Worm
 						["g"] = {
 							follower(710),	-- Svergan Stormcloak
 						},
@@ -193,9 +196,15 @@ _.ExpansionFeatures =
 					q(46155),	-- Furthering Knowledge
 					q(45987),	-- Investigate the Broken Shore
 					q(42204, {	-- Jorhuttam
+						["maps"] = { 650 },	-- Highmountain
+						["coord"] = { 53.8, 87.8, 650 },
 						["provider"] = { "n", 106271 },	-- Jarum Skymane
+						["sourceQuest"] = 42202,	-- Revenge, Served Cold
 						["g"] = {
 							follower(711),	-- Hymdall
+							crit(3, {	-- Complete the first order campaign effort
+								["achievementID"] = 10461,	-- Fighting with Style: Classic
+							}),
 						},
 					}),
 					q(39191),	-- Legacy of the Icebreaker
@@ -239,8 +248,18 @@ _.ExpansionFeatures =
 						["classes"] = { WARRIOR },
 						["provider"] = { "n", 96469 },	-- Odyn
 					}),
-					q(43585),	-- Preparing For War
-					q(43975),	-- Recruiting Shieldmaidens
+					q(43585, {	-- Preparing For War
+						["coord"] = { 58.3, 84.7, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96469 },	-- Odyn
+						["sourceQuest"] = 42204,	-- Jorhuttam
+					}),
+					q(43975, {	-- Recruiting Shieldmaidens
+						["coord"] = { 59.7, 13.3, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
+						["sourceQuest"] = 42204,	-- Jorhuttam
+					}),
 					q(42609, {	-- Recruiting the Troops
 						["coord"] = { 59.7, 13.4, 695 },
 						["classes"] = { WARRIOR },
@@ -264,6 +283,13 @@ _.ExpansionFeatures =
 						["classes"] = { WARRIOR },
 						["provider"] = { "n", 93773 },	-- High Overlord Saurfang
 						["sourceQuest"] = 41052,	-- A Desperate Plea
+					}),
+					q(42202, {	-- Revenge, Served Cold
+						["maps"] = { 650 },	-- Highmountain
+						["coord"] = { 53.8, 87.8, 650 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 106271 },	-- Jarum Skymane
+						["sourceQuest"] = 42110,	-- To the Summit!
 					}),
 					q(43643, {	-- Secrets of the Axes
 						["description"] = "Every day, there is a chance that speaking to Master Smith Helgar will offer a dialogue option, \"Is there an axe the equal to Strom'kar?\", which will end with being offered the quest Secrets of the Axes. When this quest is active, it is active region-wide, and everyone will have access to it for that day.\n\nThis sends you to speak to High Overlord Saurfang at Krasus' Landing in Dalaran. When done, jump back up to Skyhold and speak again to Master Smith Helgar, who will send you to the Circle of Wills to duel Saurfang.",
@@ -326,7 +352,12 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 39214,	-- The Eye of Odyn
 					}),
 					q(45172),	-- To Battle!
-					q(42110),	-- To the Summit!
+					q(42110, {	-- To the Summit!
+						["coord"] = { 55.9, 84.4, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 107987 },	-- Hymdall
+						["sourceQuest"] = 42107,	-- On the Trail of the Great Worm
+					}),
 					q(42610, {	-- Troops in the Field
 						["coord"] = { 59.7, 13.4, 695 },
 						["classes"] = { WARRIOR },
