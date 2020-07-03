@@ -617,59 +617,59 @@ _.Holidays =  bubbleDown({["u"] = 21},
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								crit(1,  {	-- Arathi Highlands
-									["coord"] = { 69.0, 42.0, 14 },
+									["coord"] = { 69.4, 42.6, 14 },
 									["maps"] = { 14 },	-- Arathi Highlands
 								}),
 								crit(2,  {	-- Badlands
-									["coord"] = { 19.0, 56.0, 15 },
+									["coord"] = { 23.1, 37.4, 15 },
 									["maps"] = { 15 },	-- Badlands
 								}),
 								crit(3,  {	-- Blasted Lands
-									["coord"] = { 46.0, 14.0, 17 },
+									["coord"] = { 46.2, 13.8, 17 },
 									["maps"] = { 17 },	-- Blasted Lands
 								}),
 								crit(4,  {	-- Burning Steppes
-									["coord"] = { 51.0, 29.0, 36 },
+									["coord"] = { 51.1, 29.2, 36 },
 									["maps"] = { 36 },	-- Burning Steppes
 								}),
 								crit(5,  {	-- Eversong Woods
-									["coord"] = { 46.0, 50.0, 94 },
+									["coord"] = { 46.4, 50.6, 94 },
 									["maps"] = { 94 },	-- Eversong Woods
 								}),
 								crit(6,  {	-- Ghostlands
-									["coord"] = { 46.0, 26.0, 95 },
+									["coord"] = { 46.6, 26.3, 95 },
 									["maps"] = { 95 },	-- Ghostlands
 								}),
 								crit(7,  {	-- Hillsbrad Foothills
-									["coord"] = { 55.0, 50.0, 25 },
+									["coord"] = { 54.7, 50.1, 25 },
 									["maps"] = { 25 },	-- Hillsbrad Foothills
 								}),
 								crit(8,  {	-- Northern Stranglethorn
-									["coord"] = { 40.0, 51.0, 50 },
+									["coord"] = { 40.6, 50.9, 50 },
 									["maps"] = { 50 },	-- Northern Stranglethorn
 								}),
 								crit(9,  {	-- Silverpine Forest
-									["coord"] = { 50.0, 38.0, 21 },
+									["coord"] = { 49.6, 38.2, 21 },
 									["maps"] = { 21 },	-- Silverpine Forest
 								}),
 								crit(10, {	-- Swamp of Sorrows
-									["coord"] = { 76.0, 14.0, 51 },
+									["coord"] = { 76.3, 13.8, 51 },
 									["maps"] = { 51 },	-- Swamp of Sorrows
 								}),
 								crit(11, {	-- The Cape of Stranglethorn
-									["coord"] = { 50.0, 70.0, 210 },
+									["coord"] = { 50.4, 70.4, 210 },
 									["maps"] = { 210 },	-- The Cape of Stranglethorn
 								}),
 								crit(12, {	-- The Hinterlands
-									["coord"] = { 76.0, 75.0, 26 },
+									["coord"] = { 76.6, 75.0, 26 },
 									["maps"] = { 26 },	-- The Hinterlands
 								}),
 								crit(13, {	-- Tirisfal Glades
-									["coord"] = { 57.0, 52.0, 18 },
+									["coord"] = { 57.2, 51.8, 18 },
 									["maps"] = { 18 },	-- Tirisfal Glades
 								}),
 								crit(14, {	-- Western Plaguelands
-									["coord"] = { 29.0, 57.0, 22 },
+									["coord"] = { 29.2, 57.3, 22 },
 									["maps"] = { 22 },	-- Western Plaguelands
 								}),
 							},
@@ -678,15 +678,15 @@ _.Holidays =  bubbleDown({["u"] = 21},
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								crit(1,  {	-- Ashenvale
-									["coord"] = { 51.0, 66.0, 63 },
+									["coord"] = { 51.4, 66.1, 63 },
 									["maps"] = { 63 },	-- Ashenvale
 								}),
 								crit(2,  {	-- Azshara
-									["coord"] = { 60.0, 53.0, 76 },
+									["coord"] = { 60.8, 53.5, 76 },
 									["maps"] = { 76 },	-- Azshara
 								}),
 								crit(3,  {	-- Desolace
-									["coord"] = { 26.0, 76.0, 66 },
+									["coord"] = { 26.1, 76.9, 66 },
 									["maps"] = { 66 },	-- Desolace
 								}),
 								crit(4,  {	-- Durotar
@@ -698,11 +698,11 @@ _.Holidays =  bubbleDown({["u"] = 21},
 									["maps"] = { 70 },	-- Dustwallow Marsh
 								}),
 								crit(6,  {	-- Feralas
-									["coord"] = { 72.0, 47.0, 69 },
+									["coord"] = { 72.4, 47.8, 69 },
 									["maps"] = { 69 },	-- Feralas
 								}),
 								crit(7,  {	-- Mulgore
-									["coord"] = { 51.0, 59.0, 7 },
+									["coord"] = { 51.8, 59.3, 7 },
 									["maps"] = { 7 },	-- Mulgore
 								}),
 								crit(8,  {	-- Northern Barrens
@@ -710,7 +710,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 									["maps"] = { 10 },	-- Northern Barrens
 								}),
 								crit(9,  {	-- Silithus
-									["coord"] = { 51.0, 41.0, 81 },
+									["coord"] = { 50.9, 41.3, 81 },
 									["maps"] = { 81 },	-- Silithus
 								}),
 								crit(10, {	-- Southern Barrens
@@ -718,11 +718,11 @@ _.Holidays =  bubbleDown({["u"] = 21},
 									["maps"] = { 199 },	-- Southern Barrens
 								}),
 								crit(11, {	-- Stonetalon Mountains
-									["coord"] = { 53.0, 62.0, 65 },
+									["coord"] = { 52.9, 62.5, 65 },
 									["maps"] = { 65 },	-- Stonetalon Mountains
 								}),
 								crit(12, {	-- Tanaris
-									["coord"] = { 49.0, 27.0, 71 },
+									["coord"] = { 49.8, 27.9, 71 },
 									["maps"] = { 71 },	-- Tanaris
 								}),
 								crit(13, {	-- Un'goro Crater
@@ -730,7 +730,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 									["maps"] = { 78 },	-- Un'goro Crater
 								}),
 								crit(14, {	-- Winterspring
-									["coord"] = { 59.0, 35.0, 83 },
+									["coord"] = { 58.1, 47.5, 83 },
 									["maps"] = { 83 },	-- Winterspring
 								}),
 							},
@@ -2575,7 +2575,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11842, {	-- Honor the Flame — Badlands
 				["isYearly"] = true,
-				["coord"] = { 19.0, 56.0, 15 },
+				["coord"] = { 23.1, 37.4, 15 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 15 },	-- Badlands
 				["provider"] = { "n", 25925 },	-- Badlands Flame Keeper
