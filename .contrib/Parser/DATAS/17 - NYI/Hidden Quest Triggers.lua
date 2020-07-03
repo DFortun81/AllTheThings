@@ -1185,6 +1185,11 @@ _.NeverImplemented =
 		q(40581),	-- Warrior Order Hall - Fury chosen first
 		q(40580),	-- Warrior Order Hall - Protection chosen first
 		q(39174),	-- Warrior Order Hall - Guiding Light Tutorialized - pops when you get your first artifact weapon and go back to Skyhold
+		q(44060),	-- Warrior Order Hall - Azsuna Teleport learned in Azurewing Repose
+		q(41359),	-- Warrior Order Hall - Highmountain Teleport learned in Thunder Totem
+		q(41360),	-- Warrior Order Hall - Stormheim Teleport learned in Valdisdall
+		q(44062),	-- Warrior Order Hall - Suramar Teleport learned in Meredil
+		q(44061),	-- Warrior Order Hall - Val'sharah Teleport learned in Loriathil
 		
 	--	Professions
 	--	Archaeology
