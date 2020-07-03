@@ -2554,7 +2554,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 		--	HORDE "HONOR THE FLAME" QUESTS START HERE.
 			q(11840, {	-- Honor the Flame — Arathi Highlands
 				["isYearly"] = true,
-				["coord"] = { 69.0, 42.0, 14 },
+				["coord"] = { 69.4, 42.6, 14 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 14 },	-- Arathi Highlands
 				["provider"] = { "n", 25923 },	-- Arathi Flame Keeper
@@ -2589,7 +2589,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28930, {	-- Honor the Flame — Blasted Lands
 				["isYearly"] = true,
-				["coord"] = { 46.0, 14.0, 17 },
+				["coord"] = { 46.2, 13.8, 17 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 17 },	-- Blasted Lands
 				["provider"] = { "n", 51603 },	-- Blasted Lands Flame Keeper
@@ -2603,7 +2603,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11844, {	-- Honor the Flame — Burning Steppes
 				["isYearly"] = true,
-				["coord"] = { 51.0, 29.0, 36 },
+				["coord"] = { 51.1, 29.2, 36 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 36 },	-- Burning Steppes
 				["provider"] = { "n", 25927 },	-- Burning Steppes Flame Keeper
@@ -2652,7 +2652,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11848, {	-- Honor the Flame — Eversong Woods
 				["isYearly"] = true,
-				["coord"] = { 46.0, 50.0, 94 },
+				["coord"] = { 46.4, 50.6, 94 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 94 },	-- Eversong Woods
 				["provider"] = { "n", 25931 },	-- Eversong Woods Flame Keeper
@@ -2673,7 +2673,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11850, {	-- Honor the Flame — Ghostlands
 				["isYearly"] = true,
-				["coord"] = { 46.0, 26.0, 95 },
+				["coord"] = { 46.9, 26.3, 95 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 95 },	-- Ghostlands
 				["provider"] = { "n", 25933 },	-- Ghostlands Flame Keeper
@@ -2694,7 +2694,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11853, {	-- Honor the Flame — Hillsbrad Foothills
 				["isYearly"] = true,
-				["coord"] = { 55.0, 50.0, 25 },
+				["coord"] = { 54.7, 50.1, 25 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 25 },	-- Hillsbrad Foothills
 				["provider"] = { "n", 25935 },	-- Hillsbrad Flame Keeper
@@ -2750,7 +2750,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28924, {	-- Honor the Flame — Northern Stranglethorn
 				["isYearly"] = true,
-				["coord"] = { 40.0, 51.0, 50 },
+				["coord"] = { 40.6, 50.9, 50 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 50 },	-- Northern Stranglethorn
 				["provider"] = { "n", 51582 },	-- Northern Stranglethorn Vale Flame Keeper
@@ -2778,7 +2778,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11584, {	-- Honor the Flame — Silverpine Forest
 				["isYearly"] = true,
-				["coord"] = { 50.0, 38.0, 21 },
+				["coord"] = { 49.6, 38.2, 21 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 21 },	-- Silverpine Forest
 				["provider"] = { "n", 25939 },	-- Silverpine Forest Flame Keeper
@@ -2813,7 +2813,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11857, {	-- Honor the Flame — Swamp of Sorrows
 				["isYearly"] = true,
-				["coord"] = { 76.0, 14.0, 51 },
+				["coord"] = { 76.3, 13.8, 51 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 51 },	-- Swamp of Sorrows
 				["provider"] = { "n", 25941 },	-- Swamp of Sorrows Flame Keeper
@@ -2834,28 +2834,28 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11837, {	-- Honor the Flame — The Cape of Stranglethorn
 				["isYearly"] = true,
-				["coord"] = { 50.0, 70.0, 210 },
+				["coord"] = { 50.4, 70.4, 210 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 210 },	-- The Cape of Stranglethorn
 				["provider"] = { "n", 25920 },	-- Cape of Stranglethorn Flame Keeper
 			}),
 			q(11860, {	-- Honor the Flame — The Hinterlands
 				["isYearly"] = true,
-				["coord"] = { 76.0, 75.0, 26 },
+				["coord"] = { 76.6, 75.0, 26 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 26 },	-- The Hinterlands
 				["provider"] = { "n", 25944 },	-- The Hinterlands Flame Keeper
 			}),
 			q(11862, {	-- Honor the Flame — Tirisfal Glades
 				["isYearly"] = true,
-				["coord"] = { 57.0, 52.0, 18 },
+				["coord"] = { 57.2, 51.8, 18 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 18 },	-- Tirisfal Glades
 				["provider"] = { "n", 25946 },	-- Tirisfal Glades Flame Keeper
 			}),
 			q(28946, {	-- Honor the Flame — Twilight Highlands
 				["isYearly"] = true,
-				["coord"] = { 53.0, 46.0, 241 },
+				["coord"] = { 53.1, 46.2, 241 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 241 },	-- Twilight Highlands
 				["provider"] = { "n", 51651 },	-- Twilight Highlands Flame Keeper
@@ -2897,7 +2897,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28931, {	-- Honor the Flame — Western Plaguelands
 				["isYearly"] = true,
-				["coord"] = { 29.0, 57.0, 22 },
+				["coord"] = { 29.2, 57.3, 22 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 22 },	-- Western Plaguelands
 				["provider"] = { "n", 51604 },	-- Western Plaguelands Flame Keeper
