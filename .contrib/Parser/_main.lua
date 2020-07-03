@@ -128,6 +128,23 @@ MONK = 10;
 DRUID = 11;
 DEMONHUNTER = 12;
 
+TANKS = {
+	DEATHKNIGHT,
+	DEMONHUNTER,
+	DRUID,
+	MONK,
+	PALADIN,
+	WARRIOR
+}
+
+HEALERS = {
+	DRUID,
+	MONK,
+	PALADIN,
+	PRIEST,
+	SHAMAN
+}
+
 ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 	WARRIOR,
 	PALADIN,

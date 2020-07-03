@@ -841,6 +841,7 @@ _.Zones =
 									i(168839, {	-- Regenerating Barrier of the Depths
 										["modID"] = 14,
 										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										["classes"] = TANKS,
 									}),
 									i(168839, {	-- Regenerating Barrier of the Depths
 										{ ["azeriteEssenceID"] = 25 },	-- Aegis of the Deep
@@ -848,6 +849,7 @@ _.Zones =
 									i(168559, {	-- Fetish of the Hidden Labyrinths
 										["modID"] = 14,
 										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										["classes"] = TANKS,
 									}),
 									i(168559, {	-- Fetish of the Hidden Labyrinths
 										{ ["azeriteEssenceID"] = 7 },	-- Anima of Life and Death
@@ -855,6 +857,7 @@ _.Zones =
 									i(168922, {	-- Azerite-Fueled Timequartz
 										["modID"] = 14,
 										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										["classes"] = HEALERS,
 									}),
 									i(168922, {	-- Azerite-Fueled Timequartz
 										{ ["azeriteEssenceID"] = 18 },	-- Artifice of Time
@@ -862,6 +865,7 @@ _.Zones =
 									i(168537, {	-- Tempered Azerite Formation
 										["modID"] = 14,
 										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										["classes"] = TANKS,
 									}),
 									i(168537, {	-- Tempered Azerite Formation
 										{ ["azeriteEssenceID"] = 2 },		-- Azeroth's Undying Gift
@@ -904,6 +908,7 @@ _.Zones =
 									i(168926, {	-- Lingering Seed of Renewal
 										["modID"] = 14,
 										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										["classes"] = HEALERS,
 									}),
 									i(168926, {	-- Lingering Seed of Renewal
 										{ ["azeriteEssenceID"] = 20 },	-- Life-Binder's Invocation
@@ -918,6 +923,7 @@ _.Zones =
 									i(168568, {	-- Null Force Nullifier
 										["modID"] = 14,
 										["cost"] = { { "c", 1803, 2500 }, },	-- 2500 Echoes of Ny'alotha
+										["classes"] = TANKS,
 									}),
 									i(168568, {	-- Null Force Nullifier
 										{ ["azeriteEssenceID"] = 13 },	-- Nullification Dynamo
@@ -946,6 +952,7 @@ _.Zones =
 									i(168580, {	-- Sphere of Leeched Mobility
 										["modID"] = 14,
 										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										["classes"] = TANKS,
 									}),
 									i(168580, {	-- Sphere of Leeched Mobility
 										{ ["azeriteEssenceID"] = 3 },	-- Sphere of Suppression
@@ -953,6 +960,7 @@ _.Zones =
 									i(168440, {	-- Gleaming Star Shard
 										["modID"] = 14,
 										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										["classes"] = HEALERS,
 									}),
 									i(168440, {	-- Gleaming Star Shard
 										{ ["azeriteEssenceID"] = 24 },	-- Spirit of Preservation
@@ -960,6 +968,7 @@ _.Zones =
 									i(173310, {	-- Manual of Unbalanced Tactics
 										["modID"] = 14,
 										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										["classes"] = TANKS,
 									}),
 									i(173310, {	-- Manual of Unbalanced Tactics
 										{ ["azeriteEssenceID"] = 34 },	-- Strenghth of the Warden
@@ -974,6 +983,7 @@ _.Zones =
 									i(168930, {	-- Tome of the Quickening Tides
 										["modID"] = 14,
 										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										["classes"] = HEALERS,
 									}),
 									i(168930, {	-- Tome of the Quickening Tides
 										{ ["azeriteEssenceID"] = 17 },	-- The Ever-Rising Tide
@@ -995,6 +1005,7 @@ _.Zones =
 									i(168934, {	-- Calibrated Existence Gauge
 										["modID"] = 14,
 										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										["classes"] = HEALERS,
 									}),
 									i(168934, {	-- Calibrated Existence Gauge
 										{ ["azeriteEssenceID"] = 19 },	-- The Well of Existence
@@ -1002,6 +1013,7 @@ _.Zones =
 									i(168575, {	-- Branch of Rejuvenating Rings
 										["modID"] = 14,
 										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										["classes"] = TANKS,
 									}),
 									i(168575, {	-- Branch of Rejuvenating Rings
 										{ ["azeriteEssenceID"] = 33 },	-- Touch of the Everlasting
@@ -1009,6 +1021,7 @@ _.Zones =
 									i(168938, {	-- Ward of Mutual Aid
 										["modID"] = 14,
 										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										["classes"] = HEALERS,
 									}),
 									i(168938, {	-- Ward of Mutual Aid
 										{ ["azeriteEssenceID"] = 16 },	-- Unwavering Ward
@@ -1023,6 +1036,7 @@ _.Zones =
 									i(168943, {	-- Grid of Bursting Vitality
 										["modID"] = 14,
 										["cost"] = { { "c", 1803, 2500 } },	-- 2500 Echoes of Ny'alotha
+										["classes"] = HEALERS,
 									}),
 									i(168943, {	-- Grid of Bursting Vitality
 										{ ["azeriteEssenceID"] = 21 },	-- Vitality Conduit
