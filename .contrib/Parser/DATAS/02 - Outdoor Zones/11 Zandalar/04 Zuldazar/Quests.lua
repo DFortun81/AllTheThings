@@ -319,7 +319,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(50801, {	-- A Nose for Ptrouble #1
-					["sourceQuests"] = { 50402 },	-- SKREEEE! (#1)
+					["sourceQuests"] = { 50402 },	-- SKREEEEE! (#1)
 					["provider"] = { "n", 135308 },	-- Wingminder Goja
 					["isDaily"] = true,
 					["coord"] = { 70.8, 50.9, 862 },
@@ -957,7 +957,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(52305, {	-- Nature Versus Nurture
-					["sourceQuests"] = { 50402 },	-- SKREEEE!
+					["sourceQuests"] = { 50402 },	-- SKREEEEE!
 					["provider"] = { "n", 135308 },	-- Wingminder Goja
 					["coord"] = { 70.8, 50.9, 862 },
 					["races"] = HORDE_ONLY,
@@ -1217,6 +1217,14 @@ _.Zones =
 					["provider"] = { "n", 135455 },	-- Kua'fon
 					["isDaily"] = true,
 					["coord"] = { 70.7, 50.8, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
+				q(50841, {	-- SKREEEEE! (#4)
+					["sourceQuests"] = { 50900 },	-- Maybe When You're Older
+					["provider"] = { "n", 135502 },	-- Kua'fon
+					["isDaily"] = true,
+					["coord"] = { 70.8, 50.6, 862 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 				}),

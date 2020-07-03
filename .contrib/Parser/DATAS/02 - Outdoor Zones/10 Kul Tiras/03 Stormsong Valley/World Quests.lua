@@ -20,10 +20,6 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
 					}),
-					q(52004, {	-- Counter Intelligence
-						["isWorldQuest"] = true,
-						["lvl"] = 120,
-					}),
 					q(53318, {	-- Ductile Platinum
 						["isWorldQuest"] = true,
 						["lvl"] = 120,
@@ -243,6 +239,11 @@ _.Zones =
 					q(52310, {	-- Corrupted Tideskipper
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
+					}),
+					q(52004, {	-- Counter Intelligence
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 120,
 					}),
 					q(52306, {	-- Croaker
 						["lvl"] = 120,
