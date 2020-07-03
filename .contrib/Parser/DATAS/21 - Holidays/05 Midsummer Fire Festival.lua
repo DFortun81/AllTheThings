@@ -2561,14 +2561,14 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11841, {	-- Honor the Flame — Ashenvale
 				["isYearly"] = true,
-				["coord"] = { 51.0, 66.0, 63 },
+				["coord"] = { 51.4, 66.1, 63 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 63 },	-- Ashenvale
 				["provider"] = { "n", 25884 },	-- Ashenvale Flame Keeper
 			}),
 			q(28923, {	-- Honor the Flame — Azshara
 				["isYearly"] = true,
-				["coord"] = { 60.0, 53.0, 76 },
+				["coord"] = { 60.8, 53.5, 76 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 76 },	-- Azshara
 				["provider"] = { "n", 51575 },	-- Azshara Flame Keeper
@@ -2624,7 +2624,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11845, {	-- Honor the Flame — Desolace
 				["isYearly"] = true,
-				["coord"] = { 26.0, 76.0, 66 },
+				["coord"] = { 26.1, 76.9, 66 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 66 },	-- Desolace
 				["provider"] = { "n", 25928 },	-- Desolace Flame Keeper
@@ -2659,7 +2659,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11849, {	-- Honor the Flame — Feralas
 				["isYearly"] = true,
-				["coord"] = { 72.0, 47.0, 69 },
+				["coord"] = { 72.4, 47.8, 69 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 69 },	-- Feralas
 				["provider"] = { "n", 25932 },	-- Feralas Flame Keeper
@@ -2715,7 +2715,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11852, {	-- Honor the Flame — Mulgore
 				["isYearly"] = true,
-				["coord"] = { 51.0, 59.0, 7 },
+				["coord"] = { 51.8, 59.3, 7 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 7 },	-- Mulgore
 				["provider"] = { "n", 25936 },	-- Mulgore Flame Keeper
@@ -2771,7 +2771,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11836, {	-- Honor the Flame — Silithus
 				["isYearly"] = true,
-				["coord"] = { 51.0, 41.0, 81 },
+				["coord"] = { 50.9, 41.3, 81 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 81 },	-- Silithus
 				["provider"] = { "n", 25919 },	-- Silithus Flame Keeper
@@ -2792,7 +2792,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11856, {	-- Honor the Flame — Stonetalon Mountains
 				["isYearly"] = true,
-				["coord"] = { 53.0, 62.0, 65 },
+				["coord"] = { 52.9, 62.5, 65 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 65 },	-- Stonetalon Mountains
 				["provider"] = { "n", 25940 },	-- Stonetalon Flame Keeper
@@ -2820,7 +2820,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11838, {	-- Honor the Flame — Tanaris
 				["isYearly"] = true,
-				["coord"] = { 49.0, 27.0, 71 },
+				["coord"] = { 49.8, 27.9, 71 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 71 },	-- Tanaris
 				["provider"] = { "n", 25921 },	-- Tanaris Flame Keeper
@@ -2862,7 +2862,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(28949, {	-- Honor the Flame — Uldum
 				["isYearly"] = true,
-				["coord"] = { 53.0, 34.0, 249 },
+				["coord"] = { 53.2, 34.5, 249 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 249 },	-- Uldum
 				["provider"] = { "n", 51652 },	-- Uldum Flame Keeper
@@ -2904,7 +2904,7 @@ _.Holidays =  bubbleDown({["u"] = 21},
 			}),
 			q(11839, {	-- Honor the Flame — Winterspring
 				["isYearly"] = true,
-				["coord"] = { 59.0, 35.0, 83 },
+				["coord"] = { 58.1, 47.5, 83 },
 				["races"] = HORDE_ONLY,
 				["maps"] = { 83 },	-- Winterspring
 				["provider"] = { "n", 25922 },	-- Winterspring Flame Keeper
