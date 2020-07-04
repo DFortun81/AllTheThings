@@ -13,6 +13,12 @@ _.Zones =
 					crit(4),	-- Rustbolt Armory
 					crit(5),	-- Reclamation Rig
 				}),
+				ach(13623, {	-- Fighting on Two Fronts
+					["collectible"] = false,
+					["g"] = {
+						crit(2),	-- Kill Players in Mechagon
+					},
+				}),
 				ach(13555, {	-- Junkyard Tinkmaster
 					title(403),	-- Junkyard
 					ach(13475),	-- Junkyard Scavenger

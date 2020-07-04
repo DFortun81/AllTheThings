@@ -43,6 +43,7 @@ _.Zones =
 										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
 									},
 								}),
+								i(169614),	-- Call to Arms Distinction
 							},
 						}),
 						q(56650, {	-- Call to Arms: Mechagon
@@ -60,6 +61,7 @@ _.Zones =
 										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
 									},
 								}),
+								i(169614),	-- Call to Arms Distinction
 							},
 						}),
 						q(56148, {	-- Call to Arms: Nazjatar
@@ -78,6 +80,7 @@ _.Zones =
 										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
 									},
 								}),
+								i(169614),	-- Call to Arms Distinction
 							},
 						}),
 						q(52954, { 	-- Call to Arms: Nazmir
@@ -95,6 +98,7 @@ _.Zones =
 										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
 									},
 								}),
+								i(169614),	-- Call to Arms Distinction
 							},
 						}),
 						q(52957, { 	-- Call to Arms: Stormsong Valley
@@ -112,6 +116,7 @@ _.Zones =
 										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
 									},
 								}),
+								i(169614),	-- Call to Arms Distinction
 							},
 						}),
 						q(52956, {	-- Call to Arms: Tirigarde Sound
@@ -129,6 +134,7 @@ _.Zones =
 										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
 									},
 								}),
+								i(169614),	-- Call to Arms Distinction
 							},
 						}),
 						q(59016, { 	-- Call to Arms: Uldum
@@ -146,6 +152,7 @@ _.Zones =
 										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
 									},
 								}),
+								i(169614),	-- Call to Arms Distinction
 							},
 						}),
 						q(59017, { 	-- Call to Arms: Vale of Eternal Blossoms
@@ -163,6 +170,7 @@ _.Zones =
 										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
 									},
 								}),
+								i(169614),	-- Call to Arms Distinction
 							},
 						}),
 						q(52953, { 	-- Call to Arms: Vol'dun
@@ -180,6 +188,7 @@ _.Zones =
 										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
 									},
 								}),
+								i(169614),	-- Call to Arms Distinction
 							},
 						}),
 						q(52952, { 	-- Call to Arms: Zuldazar
@@ -197,6 +206,7 @@ _.Zones =
 										{ "modID", 47 },	-- blue.  still the wrong ilvl because i can't also apply 2, but it looks better
 									},
 								}),
+								i(169614),	-- Call to Arms Distinction
 							},
 						}),
 						q(53338, { 	-- Prove Your Worth

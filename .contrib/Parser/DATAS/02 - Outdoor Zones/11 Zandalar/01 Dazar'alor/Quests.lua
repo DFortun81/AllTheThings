@@ -349,7 +349,6 @@ _.Zones =
 						}),
 					},
 				}),
-
 				q(58672, {	-- A Gathering of Champions
 					["coord"] = { 55.9, 30.3, 1163 },
 					["provider"] = { "n", 161458 },	-- Valeera Sanguinar

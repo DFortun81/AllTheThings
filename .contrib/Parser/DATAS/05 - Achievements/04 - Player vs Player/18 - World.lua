@@ -42,6 +42,12 @@ _.Achievements =
 						ach(12857),		-- Trial by Combat
 						ach(12856),		-- The First Rule of Dueler's Guild
 					}),
+					ach(13623, {	-- Fighting on Two Fronts
+						crit(1),	-- Acquire Nazjatar Battle Commendations
+						crit(2),	-- Kill Players in Mechagon
+						crit(3),	-- Kill Players in Nazjatar
+						crit(4),	-- Loot 5 War Supply Chests in Nazjatar
+					}),
 					ach(11474, {	-- Free For All, More For Me
 						a(i(129280)),	-- Reins of the Prestigious War Steed
 						h(i(143864)),	-- Reins of the Prestigious War Wolf

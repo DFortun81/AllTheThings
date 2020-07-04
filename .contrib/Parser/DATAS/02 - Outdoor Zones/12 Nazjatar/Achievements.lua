@@ -5,6 +5,14 @@ _.Zones =
 {
 	m(1355, {	-- Nazjatar
 		n(-4, {		-- Achievements
+			ach(13623, {	-- Fighting on Two Fronts
+				["collectible"] = false,
+				["g"] = {
+					crit(1),	-- Acquire Nazjatar Battle Commendations
+					crit(3),	-- Kill players in Nazjatar
+					crit(4),	-- Loot 5 War Supply Chests in Nazjatar
+				},
+			}),
 			ach(13715, {	-- From the Belly of the Jelly
 				["filterID"] = 101,	-- Battle Pet
 			}),

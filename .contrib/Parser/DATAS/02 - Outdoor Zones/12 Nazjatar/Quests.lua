@@ -778,7 +778,9 @@ _.Zones =
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 55481,	-- Scouting the Palace
 				["g"] = {
-					i(168850),	-- Time-Lost Battlefield Memento
+					i(168850, {	-- Time-Lost Battlefield Memento (Rank 1)
+						az(15, 1),	-- Ripple in Space (Rank 1)
+					}),
 				},
 			}),
 			q(56128, {	-- Drowning the Horde
@@ -787,7 +789,9 @@ _.Zones =
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 57010,	-- Harnessing the Power
 				["g"] = {
-					i(168850),	-- Time-Lost Battlefield Memento
+					i(168850, {	-- Time-Lost Battlefield Memento (Rank 1)
+						az(15, 1),	-- Ripple in Space (Rank 1)
+					}),
 				},
 			}),
 			q(56001, {	-- Drunk Angry Murlocs

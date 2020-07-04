@@ -266,6 +266,28 @@ _.Zones =
 				["coord"] = { 38.1, 55.4, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
+					i(168851, {	-- Enduring Battlefield Memento (Rank 2)
+						["description"] = "Requires completing the achievement |cffffff00Fighting on Two Fronts|r.\n",
+						["cost"] = { { "i", 168802, 20 }, },	-- 20x Nazjatar Battle Commendation
+						["g"] = {
+							az(15, 2),	-- Ripple in Space (Rank 2)
+						},
+					}),
+					i(168852, {	-- Stalwart Battlefield Memento (Rank 3)
+						["cost"] = {
+							{ "i", 168802, 50 },	-- 50x Nazjatar Battle Commendation
+							{ "i", 169614, 10 },	-- 10x Call to Arms Distinction
+						},
+						["g"] = {
+							az(15, 3),	-- Ripple in Space (Rank 3)
+						},
+					}),
+					i(168853, {	-- Glinting Battlefield Memento (Rank 4)
+						["cost"] = { { "i", 168802, 5 }, },		-- 5x Nazjatar Battle Commendation
+						["g"] = {
+							az(15, 4),	-- Ripple in Space (Rank 4)
+						},
+					}),
 					i(169275, {	-- Alliance War Banner (TOY!)
 						["cost"] = { { "i", 168802, 10 }, },	-- 10x Nazjatar Battle Commendation
 					}),
@@ -275,17 +297,11 @@ _.Zones =
 					i(169357, {	-- Chitterspine Devourer (PET!)
 						["cost"] = { { "i", 168802, 30 }, },	-- 30x Nazjatar Battle Commendation
 					}),
-					i(168851, {	-- Enduring Battlefield Memento
-						["cost"] = { { "i", 168802, 20 }, },	-- 20x Nazjatar Battle Commendation
-					}),
 					i(169539, {	-- Formula: Notorious Combatant's Sorcerous Scepter (Rank 2)
 						["cost"] = { { "i", 137642, 2 }, },		-- 2x Mark of Honor
 					}),
 					i(169540, {	-- Formula: Notorious Combatant's Sorcerous Scepter (Rank 3)
 						["cost"] = { { "i", 137642, 4 }, },		-- 4x Mark of Honor
-					}),
-					i(168853, {	-- Glinting Battlefield Memento
-						["cost"] = { { "i", 168802, 5 }, },		-- 5x Nazjatar Battle Commendation
 					}),
 					i(169203, {	-- Inkscale Deepseeker (MOUNT!)
 						["cost"] = { { "i", 168802, 150 }, },	-- 150x Nazjatar Battle Commendation
@@ -482,32 +498,42 @@ _.Zones =
 					i(169544, {	-- Recipe: Notorious Combatant's Stormsteel Destroyer (Rank 3)
 						["cost"] = { { "i", 137642, 4 }, },		-- 4x Mark of Honor
 					}),
-					i(168852, {	-- Stalwart Battlefield Memento
-						["cost"] = {
-							{ "i", 168802, 50 },	-- 50x Nazjatar Battle Commendation
-							{ "i", 169614, 10 },	-- 10x Call to Arms Distinction
-						},
-					}),
 				},
 			}),
 			n(154652, {	-- Dazzerian <Nazjatar PvP Quartermaster>
 				["coord"] = { 48.8, 60.6, 1355 },
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(168851, {	-- Enduring Battlefield Memento (Rank 2)
+						["description"] = "Requires completing the achievement |cffffff00Fighting on Two Fronts|r.\n",
+						["cost"] = { { "i", 168802, 20 }, },	-- 20x Nazjatar Battle Commendation
+						["g"] = {
+							az(15, 2),	-- Ripple in Space (Rank 2)
+						},
+					}),
+					i(168852, {	-- Stalwart Battlefield Memento (Rank 3)
+						["cost"] = {
+							{ "i", 168802, 50 },	-- 50x Nazjatar Battle Commendation
+							{ "i", 169614, 10 },	-- 10x Call to Arms Distinction
+						},
+						["g"] = {
+							az(15, 3),	-- Ripple in Space (Rank 3)
+						},
+					}),
+					i(168853, {	-- Glinting Battlefield Memento (Rank 4)
+						["cost"] = { { "i", 168802, 5 }, },		-- 5x Nazjatar Battle Commendation
+						["g"] = {
+							az(15, 4),	-- Ripple in Space (Rank 4)
+						},
+					}),
 					i(169357, {	-- Chitterspine Devourer (PET!)
 						["cost"] = { { "i", 168802, 30 }, },	-- 30x Nazjatar Battle Commendation
-					}),
-					i(168851, {	-- Enduring Battlefield Memento
-						["cost"] = { { "i", 168802, 20 }, },	-- 20x Nazjatar Battle Commendation
 					}),
 					i(169539, {	-- Formula: Notorious Combatant's Sorcerous Scepter (Rank 2)
 						["cost"] = { { "i", 137642, 2 }, },		-- 2x Mark of Honor
 					}),
 					i(169540, {	-- Formula: Notorious Combatant's Sorcerous Scepter (Rank 3)
 						["cost"] = { { "i", 137642, 4 }, },		-- 4x Mark of Honor
-					}),
-					i(168853, {	-- Glinting Battlefield Memento
-						["cost"] = { { "i", 168802, 5 }, },		-- 5x Nazjatar Battle Commendation
 					}),
 					i(169276, {	-- Horde War Banner (TOY!)
 						["cost"] = { { "i", 168802, 10 }, },	-- 10x Nazjatar Battle Commendation
@@ -709,12 +735,6 @@ _.Zones =
 					}),
 					i(169544, {	-- Recipe: Notorious Combatant's Stormsteel Destroyer (Rank 3)
 						["cost"] = { { "i", 137642, 4 }, },		-- 4x Mark of Honor
-					}),
-					i(168852, {	-- Stalwart Battlefield Memento
-						["cost"] = {
-							{ "i", 168802, 50 },	-- 50x Nazjatar Battle Commendation
-							{ "i", 169614, 10 },	-- 10x Call to Arms Distinction
-						},
 					}),
 				},
 			}),

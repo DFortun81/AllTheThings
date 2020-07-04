@@ -4,6 +4,10 @@
 _.Essences = 
 {
 	n(-853, {	-- All Roles
+		az(15, 1),	-- Ripple in Space (Rank 1)
+		az(15, 2),	-- Ripple in Space (Rank 2)
+		az(15, 3),	-- Ripple in Space (Rank 3)
+		az(15, 4),	-- Ripple in Space (Rank 4)
 		az(12, 1),	-- The Crucible of Flame (Rank 1)
 		az(12, 2),	-- The Crucible of Flame (Rank 2)
 		az(12, 3),	-- The Crucible of Flame (Rank 3)

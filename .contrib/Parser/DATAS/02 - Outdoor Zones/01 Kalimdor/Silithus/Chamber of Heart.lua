@@ -1071,6 +1071,7 @@ _.Zones =
 										},
 									}),
 									i(168940, {	-- Ward of Unimaginable Brilliance (Rank 4)
+										["description"] = "Requires completing the achievement |cffffff00Through the Depths of Visions|r.\n",
 										["classes"] = HEALERS,
 										["g"] = {
 											az(16, 4),	-- Unwavering Ward (Rank 4)
