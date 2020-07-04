@@ -9,7 +9,9 @@ _.ExpansionFeatures =
 			n(-227,	{	-- Victory
 				i(169687, {	-- Fragment of Zem'lan's Lost Treasure Map
 					i(169693, {	-- Zem'Lans Lost Treasure Map
-						i(168616),	-- Stalwart Worldvein (Rank 2)
+						i(168616, {	-- Stalwart Worldvein (Rank 2)
+							az(4, 2),	-- Worldvein Resonance (Rank 2)
+						}),
 					}),
 				}),
 			}),
@@ -22,7 +24,9 @@ _.ExpansionFeatures =
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 1161 },	-- Boralus
 				["g"] = {
-					i(168615),	-- Volatile Worldvein (Rank 1)
+					i(168615, {	-- Volatile Worldvein (Rank 1)
+						az(4, 1),	-- Worldvein Resonance (Rank 1)
+					}),
 					i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
 					i(166999),	-- Treasure Map
 					i(169764, {	-- Worldvein Intelligence Reports
@@ -30,12 +34,16 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(168617, {	-- Fluctuating Worldvein (Rank 3)
 								["modID"] = 14,
+								["g"] = {
+									az(4, 3),	-- Worldvein Resonance (Rank 3)
+								},
 							}),
 						},
 					}),
 					i(170150, {	-- Map to the Last Worldvein
 						i(168618, {	-- Brilliant Worldvein (Rank 4)
 							--["modID"] = 31,
+							az(4, 4),	-- Worldvein Resonance (Rank 4)
 						}),	
 					}),
 				},
@@ -47,7 +55,9 @@ _.ExpansionFeatures =
 				["coord"] = { 44.60, 95.40, 1163 },
 				["maps"] = { 1163 },	-- Dazar'alor
 				["g"] = {
-					i(168615),	-- Volatile Worldvein (Rank 1)
+					i(168615, {	-- Volatile Worldvein (Rank 1)
+						az(4, 1),	-- Worldvein Resonance (Rank 1)
+					}),
 					i(166883),	-- Treasure Map (Displayed when hovering over the quest on the map.)
 					i(166999),	-- Treasure Map
 					i(169765, {	-- Worldvein Intelligence Reports
@@ -55,11 +65,16 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(168617, {	-- Fluctuating Worldvein (Rank 3)
 								["modID"] = 14,
+								["g"] = {
+									az(4, 3),	-- Worldvein Resonance (Rank 3)
+								},
 							}),
 						},
 					}),
 					i(170149, {	-- Map to the Last Worldvein
-						i(168618),	-- Brilliant Worldvein (Rank 4)
+						i(168618, {	-- Brilliant Worldvein (Rank 4)
+							az(4, 4),	-- Worldvein Resonance (Rank 4)
+						}),	
 					}),
 				},
 			}),

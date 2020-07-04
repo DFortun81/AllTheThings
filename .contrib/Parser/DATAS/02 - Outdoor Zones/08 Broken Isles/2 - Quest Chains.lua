@@ -8,7 +8,7 @@ _.Zones =
 			["order"] = "02",
 			["lvl"] = 98,
 			["g"] = {
-				n(-4, {	-- Achievements
+				n(ACHIEVEMENTS, {	-- Achievements
 					ach(11427, {	-- No Shellfish Endeavor
 						i(143660),	-- Mrgrglhjorn
 					}),
@@ -106,77 +106,77 @@ _.Zones =
 						q(43532),	-- The Nighthold: Darkness Calls
 						q(43533, {	-- Balance of Power
 							cl(1, {
-							  ["groups"] = {
+							  ["g"] = {
 								artifact(805),
 								artifact(669),
 								artifact(164),
 							  }
 							  }),
 							cl(2, {
-							  ["groups"] = {
+							  ["g"] = {
 								artifact(16),
 								artifact(545),
 								artifact(856),
 							  }
 							}),
 							cl(3, {
-							  ["groups"] = {
+							  ["g"] = {
 								artifact(219),
 								artifact(462),
 								artifact(481),
 							  }
 							}),
 							cl(4, {
-							  ["groups"] = {
+							  ["g"] = {
 								artifact(237),
 								artifact(765),
 								artifact(71),
 							  }
 							}),
 							cl(5, {
-							  ["groups"] = {
+							  ["g"] = {
 								artifact(735),
 								artifact(753),
 								artifact(255),
 							  }
 							}),
 							cl(6, {
-							  ["groups"] = {
+							  ["g"] = {
 								artifact(368),
 								artifact(371),
 								artifact(403),
 							  }
 							}),
 							cl(7, {
-							  ["groups"] = {
+							  ["g"] = {
 								artifact(310),
 								artifact(682),
 								artifact(781),
 							  }
 							}),
 							cl(8, {
-							  ["groups"] = {
+							  ["g"] = {
 								artifact(184),
 								artifact(499),
 								artifact(134),
 							  }
 							}),
 							cl(9, {
-							  ["groups"] = {
+							  ["g"] = {
 								artifact(198),
 								artifact(329),
 								artifact(818),
 							  }
 							}),
 							cl(10, {
-							  ["groups"] = {
+							  ["g"] = {
 								artifact(517),
 								artifact(348),
 								artifact(525),
 							  }
 							}),
 							cl(11, {
-							  ["groups"] = {
+							  ["g"] = {
 								artifact(419),
 								artifact(54),
 								artifact(434),
@@ -184,7 +184,7 @@ _.Zones =
 							  }
 							}),
 							cl(12, {
-							  ["groups"] = {
+							  ["g"] = {
 								artifact(36),
 								artifact(563),
 							  }
@@ -386,6 +386,7 @@ _.Zones =
 								q(44414, {	-- Felspawns of Lothros
 									["description"] = "This quest can only be completed while in the Ravencrest's Legacy scenario.",
 									["sourceQuest"] = 44479,	-- Ravencrest's Legacy
+									["altQuests"] = { 44479 },	-- Ravencrest's Legacy
 									["providers"] = {
 										{ "n", 113361 },	-- Captain Jarod Shadowsong
 										{ "n", 113829 },	-- Captain Jarod Shadowsong
@@ -395,6 +396,7 @@ _.Zones =
 								q(44415, {	-- The Red Axe
 									["description"] = "This quest can only be completed while in the Ravencrest's Legacy scenario.",
 									["sourceQuest"] = 44414,	-- Felspawns of Lothros
+									["altQuests"] = { 44479 },	-- Ravencrest's Legacy
 									["providers"] = {
 										{ "n", 113361 },	-- Captain Jarod Shadowsong
 										{ "n", 113829 },	-- Captain Jarod Shadowsong
@@ -405,8 +407,9 @@ _.Zones =
 									["description"] = "This quest can only be completed while in the Ravencrest's Legacy scenario.",
 									["sourceQuest"] = 44415,	-- The Red Axe
 									["provider"] = { "n", 113355 },	-- Broxigar the Red
+									["altQuests"] = { 44479 },	-- Ravencrest's Legacy
 									["lvl"] = 110,
-									["groups"] = {
+									["g"] = {
 										i(139932),	-- Belt of Shadowsong
 										i(140002),	-- Broxigar's Girdle
 										i(139902),	-- Defiler's Cord
@@ -521,7 +524,7 @@ _.Zones =
 							["sourceQuest"] = 45174,	-- The Hunt for Illidan Stormrage
 							["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
 							["lvl"] = 110,
-							["groups"] = {
+							["g"] = {
 								i(139930),	-- Belt of the Netherwalker
 								i(139978),	-- Boots of the Illidari Crusade
 								i(139933),	-- Footpads of the Illidari Crusade
@@ -536,7 +539,7 @@ _.Zones =
 							["sourceQuest"] = 45175,	-- Soul Prism of the Illidari
 							["provider"] = { "n", 89398 },	-- Allari the Souleater <Illidari>
 							["lvl"] = 110,
-							["groups"] = {
+							["g"] = {
 								i(139988),	-- Blazing Purpose Mantle
 								i(140021),	-- Crusader's Inferno Pauldrons
 								i(139941),	-- Gloves of the Shadow's Return

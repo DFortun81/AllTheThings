@@ -12,6 +12,10 @@ _.Essences =
 		az(37, 2),	-- The Formless Void (Rank 2)
 		az(37, 3),	-- The Formless Void (Rank 3)
 		az(37, 4),	-- The Formless Void (Rank 4)
+		az(4, 1),	-- Worldvein Resonance (Rank 1)
+		az(4, 2),	-- Worldvein Resonance (Rank 2)
+		az(4, 3),	-- Worldvein Resonance (Rank 3)
+		az(4, 4),	-- Worldvein Resonance (Rank 4)
 	}),
 	n(-854, {	-- DPS
 		az(35, 1),	-- Breath of the Dying (Rank 1)
