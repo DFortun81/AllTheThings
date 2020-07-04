@@ -184,7 +184,7 @@ _.Zones =
 							["cost"] = { { "i", 169325, 1 } },	-- Petrified Ebony Scale (QI)
 							["g"] = {
 								i(168611, {	-- Petrified Ebony Scale
-									{ ["azeriteEssenceID"] = 12 },	-- The Crusible of Flame (Rank 1)
+									{ ["azeriteEssenceID"] = 12, ["rank"] = 1 },	-- The Crusible of Flame (Rank 1)
 								}),
 							},
 						}),
