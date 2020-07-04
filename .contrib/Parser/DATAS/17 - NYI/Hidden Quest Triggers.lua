@@ -1088,6 +1088,7 @@ _.NeverImplemented =
 		q(43433),	-- Generic Order Hall - Tracking Quest: Tutorial - Troops Built
 		q(42115),	-- Generic Order Hall - Tracking Quest: Chapter 1 completed - Triggers when you complete the quest that gets your first order hall upgrade
 		q(42116),	-- Generic Order Hall - Tracking Quest: Chapter 2 Completed - triggers after completing your first order hall campaign effort
+		q(42117),	-- Generic Order Hall - Tracking Quest: Chapter 3 Completed — triggers after completing the first dungeon quest from your order hall leader. Order hall bracers unlock
 		q(42118),	-- Generic Order Hall - Tracking Quest: Chapter 4 Completed — triggers after completing order hall campaign
 		q(45171),	-- Generic Order Hall - 7.1 Class Hall - Special - PVP - PVP Intro Mission - Tracking Quest
 		q(47661),	-- Generic Order Hall - [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze. Also triggers on warrior while on "On the Trail of the Great Worm"
@@ -1240,7 +1241,6 @@ _.NeverImplemented =
 		q(44599),	-- Tracking Quest: Working with the Wardens 3
 		q(44600),	-- Tracking Quest: Working with the Wardens 4
 		q(44601),	-- Tracking Quest: Working with the Wardens 5
-		q(42117),	-- Tracking Quest: Chapter 3 Completed — triggered when turning in "two worthies" after recruiting Belath Dawnblade and Matron Mother Malevolence on DH
 		q(44602),	-- Tracking Quest: Preparations for Invasion 1 — completing first mission on DH class campaign quest "Preparations for Invasion"
 		q(44604),	-- Tracking Quest: Preparations for Invasion 2
 		q(44605),	-- Tracking Quest: Preparations for Invasion 3

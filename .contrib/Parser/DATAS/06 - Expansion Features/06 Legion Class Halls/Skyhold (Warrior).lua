@@ -7,7 +7,11 @@ _.ExpansionFeatures =
 		cl(1, {	-- Skyhold (Warrior)
 			["classes"] = { WARRIOR },	-- Warrior
 			["lvl"] = 98,
-			["mapID"] = 695,	-- Skyhold (Warrior)
+			["maps"] = {
+				695,	-- Skyhold (Warrior)
+				744,	-- Ulduar (Scenario map for "Ulduar's Oath")
+				746,	-- Ulduar, The Halls of Winter (Scenario map for "Ulduar's Oath")
+			},
 			["g"] = {
 				gt(408, {	-- For Honor and Glory
 					i(141069, {	-- Skyhold Chest of Riches
@@ -83,7 +87,6 @@ _.ExpansionFeatures =
 
 
 					-- NASTY QUEST LIST
-					q(44057),	-- A "Noble" Event
 					q(41052, {	-- A Desperate Plea
 						["maps"] = { 627 },	-- Dalaran
 						["races"] = HORDE_ONLY,
@@ -101,8 +104,24 @@ _.ExpansionFeatures =
 					}),
 					q(45180),	-- An Island of War
 					q(45986),	-- An Urgent Warning
-					q(44255),	-- Axe and You Shall Receive
-					q(43506),	-- Black Rook Hold: Greater Power
+					q(44255, {	-- Axe and You Shall Receive
+						["lvl"] = 110,
+						["coord"] = { 56.2, 27.0, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 112392 },	-- Quartermaster Durnolf
+						["g"] = {
+							i(139684),	-- Battlelord's Greathelm
+						},
+					}),
+					q(43506, {	-- Black Rook Hold: Greater Power
+						["coord"] = { 58.3, 84.6, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96469 },	-- Odyn
+						["sourceQuests"] = {
+							42918,	-- Demonic Runes
+							44667,	-- Will of the Valarjar
+						},
+					}),
 					q(42650, {	-- Break the Bonds
 						["maps"] = { 634 },
 						["coord"] = { 63.8, 47.2, 634 },
@@ -116,10 +135,18 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
 						["sourceQuest"] = 42598,	-- Champions of Skyhold
 					}),
-					q(43577),	-- Capturing the Gateway
+					q(43577, {	-- Capturing the Gateway
+						["coord"] = { 58.3, 84.6, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96469 },	-- Odyn
+						["sourceQuest"] = 43506,	-- Black Rook Hold: Greater Power
+					}),
 					q(44221),	-- Champion Armaments
 					q(42616, {	-- Champion: Dvalen Ironrune
+						["coord"] = { 57.1, 75.0, 695 },
+						["classes"] = { WARRIOR },
 						["provider"] = { "n", 112766 },	-- Dvalen Ironrune
+						["sourceQuest"] = 43090,	-- Ulduar's Oath
 						["g"] = {
 							follower(714),	-- Dvalen Ironrune
 						},
@@ -172,7 +199,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42618, {	-- Champion: Thorim
+						["coord"] = { 59.5, 75.2, 695 },
+						["classes"] = { WARRIOR },
 						["provider"] = { "n", 112765 },	-- Thorim
+						["sourceQuest"] = 43090,	-- Ulduar's Oath
 						["g"] = {
 							follower(713),	-- Thorim
 						},
@@ -184,7 +214,12 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 42597,	-- Odyn's Summons
 					}),
 					q(47072),	-- Delivering Lost Knowledge
-					q(42918),	-- Demonic Runes
+					q(42918, {	-- Demonic Runes
+						["coord"] = { 58.3, 84.6, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96469 },	-- Odyn
+						["sourceQuest"] = 43090,	-- Ulduar's Oath
+					}),
 					q(45173),	-- Desperate Times
 					q(42611, {	-- Einar the Runecaster
 						["coord"] = { 59.7, 13.3, 695 },
@@ -209,9 +244,20 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(39191),	-- Legacy of the Icebreaker
-					q(43586),	-- Maw of Souls: Message to Helya
+					q(43586, {	-- Maw of Souls: Message to Helya
+						["lvl"] = 110,
+						["coord"] = { 58.3, 84.6, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96469 },	-- Odyn
+						["sourceQuest"] = 43585,	-- Preparing For War
+					}),
 					q(43604, {	-- Maw of Souls: Ymiron's Broken Blade
-						--["provider"] = { "n",  },	-- Autoaccept while on the chain
+						["crs"] = { 96756 },	-- Ymiron, the Fallen King
+						["lvl"] = 110,
+						["maps"] = { 706 },	-- Maw of Souls
+						["classes"] = { WARRIOR },
+						["provider"] = { "i", 139619 },	-- Ymiron's Broken Blade
+						["sourceQuest"] = 43586,	-- Maw of Souls: Message to Helya (not really the sourceQuest, but you have to either have it or have completed it to get the item to drop)
 						["g"] = {
 							follower(712),	-- King Ymiron
 						},
@@ -328,7 +374,9 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 100622 },	-- Danica the Reclaimer
 						["description"] = "Available after obtaining your first artifact weapon.",
 					}),
-					q(42974),	-- The Fate of Hodir
+					q(42974, {	-- The Fate of Hodir
+						i(139681),	-- Battlelord's Chest
+					}),
 					q(39192),	-- The Forge of Odyn
 					q(39530),	-- The Forgening
 					q(42193, {	-- The Gjallarhorn
@@ -345,7 +393,9 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 96469 },	-- Odyn
 						["description"] = "Pursue your artifact weapon for Arms.",
 					}),
-					q(46207),	-- The Trial of Rage
+					q(46207, {	-- The Trial of Rage
+						i(142232),	-- Iron Reins of the Bloodthirsty War Wyrm
+					}),
 					q(40585, {	-- Thus Begins the War
 						["coord"] = { 59.7, 13.3, 695 },
 						["classes"] = { WARRIOR },
@@ -365,27 +415,28 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
 						["sourceQuest"] = 42609,	-- Recruiting the Troops
 					}),
-					q(43090),	-- Ulduar's Oath
+					q(43090, {	-- Ulduar's Oath
+						["coord"] = { 58.3, 84.6, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96469 },	-- Odyn
+						["sourceQuest"] = 43586,	-- Maw of Souls: Message to Helya
+						["g"] = {
+							i(139688),	-- Battlelord's Bracers
+						},
+					}),
 					q(40579, {	-- Weapons of Legend
 						["coord"] = { 58.3, 84.9, 695 },
 						["classes"] = { WARRIOR },
 						["provider"] = { "n", 96469 },	-- Odyn
 						["sourceQuest"] = 39654,	-- Odyn and the Valarjar
 					}),
-					q(44667),	-- Will of the Valarjar
+					q(44667, {	-- Will of the Valarjar
+						["coord"] = { 58.3, 84.6, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96469 },	-- Odyn
+						["sourceQuest"] = 43090,	-- Ulduar's Oath
+					}),
 					q(45179),	-- Win the Crowd
-					q(46207, {	-- The Trial of Rage
-						i(142232),	-- Iron Reins of the Bloodthirsty War Wyrm
-					}),
-					q(44255, {	-- Axe and You Shall Receive
-						i(139684),	-- Battlelord's Helmet
-					}),
-					q(42974, {	-- The Fate of Hodir
-						i(139681),	-- Battlelord's Chest
-					}),
-					q(43090, {	-- Ulduar's Oath
-						i(139688),	-- Battlelord's Bracers
-					}),
 				}),
 				n(VENDORS, {
 					n(112392, {	-- Quartermaster Durnolf
