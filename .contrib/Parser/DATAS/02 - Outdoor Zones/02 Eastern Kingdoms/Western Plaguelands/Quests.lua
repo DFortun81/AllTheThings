@@ -6,6 +6,21 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(22, {	-- Western Plaguelands
 			n(QUESTS, {
+				q(5093, {	-- A Call to Arms: The Plaguelands!
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 10880 },	-- Warcaller Gorlach
+				}),
+				q(5094, {	-- A Call to Arms: The Plaguelands!
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 10879 },	-- Harbinger Balthazad
+				}),
+				q(5095, {	-- A Call to Arms: The Plaguelands!
+					["u"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 10881 },	-- Bluff Runner Windstrider
+				}),
 				q(26954, {	-- A Different Approach
 					["provider"] = { "n", 44456 },	-- Adrine Towhide
 					["coord"] = { 48.8, 54.7, 22 },
@@ -327,6 +342,7 @@ _.Zones =
 				}),
 				q(5944,  {	-- In Dreams
 					["u"] = 40,
+					["provider"] = { "n", 1842 },	-- Highlord Taelan Fordring <Highlord of the Scarlet Crusade>
 					["g"] = {
 						un(2, i(16058)),	-- Fordring's Seal
 						un(2, i(15411)),	-- Mark of Fordring

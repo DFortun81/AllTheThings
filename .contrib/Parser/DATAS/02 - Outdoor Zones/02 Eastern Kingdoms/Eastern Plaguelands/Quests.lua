@@ -441,6 +441,10 @@ _.Zones =
 					["coord"] = { 50.5, 20.1, 23 },
 					["sourceQuests"] = { 27522 },	-- Beat it Out of Them
 				}),
+				q(5543, {	-- Blood Tinged Skies
+					["u"] = 40,
+					["provider"] = { "n", 1855 },	-- Tirion Fordring
+				}),
 				q(9665, {	-- Bolstering Our Defenses
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
@@ -464,6 +468,10 @@ _.Zones =
 						i(62983),	-- Cowl of the Noxious Glade
 						i(62982),	-- Light-Touched Pendant
 					},
+				}),
+				q(5544, {	-- Carrion Grubbage
+					["u"] = 40,
+					["provider"] = { "n", 1855 },	-- Tirion Fordring
 				}),
 				q(27453, {	-- Catalysm
 					["provider"] = { "n", 11035 },	-- Betina Bigglezink
@@ -524,6 +532,10 @@ _.Zones =
 				q(27529, {	-- Defenders of Darrowshire
 					["provider"] = { "n", 45831 },	-- Crusader Kevin Frost
 					["coord"] = { 27.6, 20.8, 23 },
+				}),
+				q(5542, {	-- Demon Dogs
+					["u"] = 40,
+					["provider"] = { "n", 1855 },	-- Tirion Fordring
 				}),
 				q(6135,  {	-- Duskwing, Oh How I Hate Thee...
 					["u"] = 40,
@@ -590,6 +602,10 @@ _.Zones =
 						un(2, i(22678)),	-- Talisman of Ascendance
 						un(2, i(22656)),	-- The Purifier
 					},
+				}),
+				q(5861, {	-- Find Myranda
+					["u"] = 40,
+					["provider"] = { "n", 1855 },	-- Tirion Fordring
 				}),
 				q(27555, {	-- Fiona's Lucky Charm
 					["provider"] = { "n", 45400 },	-- Fiona's Caravan
@@ -875,6 +891,18 @@ _.Zones =
 					["coord"] = { 61.5, 43.2, 23 },
 					["sourceQuests"] = { 27488 },	-- Impatience
 				}),
+				q(5781, {	-- Of Forgotten Memories
+					["u"] = 40,
+					["provider"] = { "n", 1855 },	-- Tirion Fordring
+				}),
+				q(5845, {	-- Of Lost Honor
+					["u"] = 40,
+					["provider"] = { "n", 1855 },	-- Tirion Fordring
+				}),
+				q(5846, {	-- Of Love and Family (1/2)
+					["u"] = 40,
+					["provider"] = { "n", 1855 },	-- Tirion Fordring
+				}),
 				q(27373, {	-- Onward, to Light's Hope Chapel
 					["provider"] = { "n", 45417 },	-- Fiona
 					["coord"] = { 9.0, 66.5, 23 },
@@ -933,6 +961,10 @@ _.Zones =
 						un(2, i(18022)),	-- Royal Seal of Alexis
 					},
 				}),
+				q(5742, {	-- Redemption
+					["u"] = 40,
+					["provider"] = { "n", 1855 },	-- Tirion Fordring
+				}),
 				q(5941, {	-- Return to Chromie
 					["u"] = 40,
 					["provider"] = { "n", 11063 },	-- Carlin Redpath
@@ -963,6 +995,10 @@ _.Zones =
 					["provider"] = { "n", 16112 },	-- Crusade Commander Korfax
 					["coord"] = { 75.3, 76.1, 23 },
 					["sourceQuests"] = { 27462 },	-- To Take the Barracks
+				}),
+				q(5862, {	-- Scarlet Subterfuge
+					["u"] = 40,
+					["provider"] = { "n", 11872 },	-- Myranda the Hag
 				}),
 				q(27528, {	-- Scourged Mass
 					["provider"] = { "n", 45831 },	-- Crusader Kevin Frost
@@ -1184,6 +1220,11 @@ _.Zones =
 					["sourceQuests"] = { 27526 },	-- Gidwin's Fate Revealed
 					["isBreadcrumb"] = true,
 				}),
+				q(6133, {	-- The Ranger Lord's Behest
+					["u"] = 40,
+					["provider"] = { "n", 11878 },	-- Nathanos Blightcaller <Champion of the Banshee Queen>
+					["races"] = HORDE_ONLY,
+				}),
 				q(5281, {	-- The Restless Souls
 					["u"] = 40,
 					["provider"] = { "n", 11038 },	-- Caretaker Alen
@@ -1215,9 +1256,14 @@ _.Zones =
 					["coord"] = { 75.3, 76.1, 23 },
 					["sourceQuests"] = { 27462 },	-- To Take the Barracks
 				}),
-				q(27451, {	-- To Kill With Purpose
-					["provider"] = { "n", 11035 },	-- Betina Bigglezink
-					["coord"] = { 53.2, 54.5, 23 },
+				q(5281, {	-- The Restless Souls
+					["u"] = 40,
+					["provider"] = { "n", 11038 },	-- Caretaker Alen
+				}),
+				q(6022, {	-- To Kill With Purpose (Legacy)
+					["u"] = 40,
+					["provider"] = { "n", 11878 },	-- Nathanos Blightcaller <Champion of the Banshee Queen>
+					["races"] = HORDE_ONLY,
 				}),
 				q(27461, {	-- To Take the Abbey
 					["coord"] = { 77.5, 79.4, 23 },
@@ -1246,6 +1292,11 @@ _.Zones =
 						27392,	-- I'm Not Supposed to Tell You This
 						27384,	-- Pamela's Doll
 					},
+				}),
+				q(6042, {	-- Un-Life's Little Annoyances
+					["u"] = 40,
+					["provider"] = { "n", 11878 },	-- Nathanos Blightcaller <Champion of the Banshee Queen>
+					["races"] = HORDE_ONLY,
 				}),
 				q(27559, {	-- Vex'tul's Armbands
 					["provider"] = { "n", 45400 },	-- Fiona's Caravan
