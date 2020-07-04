@@ -24,6 +24,26 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 		--	,	-- Locus of Infinite Truth
 		},
 		["g"] = {
+			n(-852, {	-- Azerite Essences
+				i(173883, {	-- Replicating Void Droplets (Rank 1)
+					["cost"] = { { "i", 174279, 15 } },	-- 15x Encrypted Ny'alothan Text
+					["g"] = {
+						az(37, 1),	-- The Formless Void (Rank 1)
+					},
+				}),
+				i(173884, {	-- Burgeoning Void Droplet (Rank 2)
+					["cost"] = { { "i", 174279, 30 } },	-- 30x Encrypted Ny'alothan Text
+					["g"] = {
+						az(37, 2),	-- The Formless Void (Rank 2)
+					},
+				}),
+				i(173885, {	-- Volatile Void Droplet (Rank 3)
+					["cost"] = { { "i", 174279, 60 } },	-- 60x Encrypted Ny'alothan Text
+					["g"] = {
+						az(37, 3),	-- The Formless Void (Rank 3)
+					},
+				}),
+			}),
 			n(COMMON_BOSS_DROPS, {
 				i(171202),	-- Vantus Rune Technique: Ny'alotha, the Waking City(Rank 1)
 				i(171201),	-- Vantus Rune Technique: Ny'alotha, the Waking City(Rank 2)
@@ -951,11 +971,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 								},
 							}),
 						}),
-						ach(14069),	-- Cutting Edge: N'Zoth, the Corruptor
+						ach(14069),		-- Cutting Edge: N'Zoth, the Corruptor
 						ach(14055, {	-- Mythic: N'Zoth, the Corruptor
 							title(417),	-- the Uncorrupted
 						}),
 						ach(14148),	-- Peer Pressure
+						i(173886, {	-- Bursting Void Droplet
+							az(37, 4),	-- The Formless Void (Rank 4)
+						}),
 						i(175062),	-- Malefic Core
 						i(174452),	-- Eye of Corruption (Pet)
 						i(174279),	-- Encrypted Ny'alothan Text

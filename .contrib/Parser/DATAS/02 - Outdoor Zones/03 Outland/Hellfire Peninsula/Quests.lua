@@ -122,12 +122,14 @@ _.Zones =
 					["sourceQuest"] = 9374,	-- Arelion's Journal
 				}),
 				q(10288, {	-- Arrival in Outland (A)
+					["isBreadcrumb"] = true,
 					["coord"] = { 87.3, 50.7, 100 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 19229 },	-- Commander Duron
 					["sourceQuests"] = { 49862 },	-- To Outland [Breadcrumb]
 				}),
 				q(10120, {	-- Arrival in Outland (H)
+					["isBreadcrumb"] = true,
 					["coord"] = { 87.3, 49.8, 100 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 19253 },	-- Lieutenant General Orion
@@ -930,12 +932,14 @@ _.Zones =
 					["provider"] = { "n", 19344 },	-- Legassi
 				}),
 				q(10875, {	-- Report to Nazgrel
+					["isBreadcrumb"] = true,
 					["coord"] = { 52.2, 36.4, 100 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 16588 },	-- Apothecary Antonivich
 					["sourceQuests"] = { 10838 },	-- The Demonaic Scryer
 				}),
 				q(10291, {	-- Report to Nazgrel
+					["isBreadcrumb"] = true,
 					["coord"] = { 55.8, 36.8, 100 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 19255 },	-- General Krakork

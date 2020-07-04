@@ -17,6 +17,15 @@ _.ExpansionFeatures =
 		},
 		["g"] = {
 			n(-10076, {	-- Assault: The Black Empire
+				n(-853, {	-- Azerite Essences
+					i(168574, {	-- Petrified Living Bark
+						["classes"] = TANKS,
+						["cost"] = { { "i", 174288, 3 } },	-- 3x Breath of Everlasting Spirit
+						["g"] = {
+							az(33, 2),	-- Touch of the Everlasting (Rank 2)
+						},
+					}),
+				}),
 				n(QUESTS, {
 					-- Lesser Visions dailies
 					q(58168, {	-- A Dark, Glaring Reality
@@ -24,8 +33,9 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "n", 160252 },	-- Blacktalon Agent
 						["g"] = {
-							i(174288),	-- Breath of Everlasting Spirit (once a week)
-							i(173810),	-- Darksight Potion
+							i(174288, {	-- Breath of Everlasting Spirit (once a week)
+								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+							}),
 						},
 					}),
 					q(58161, {	-- Minions of N'Zoth
@@ -33,7 +43,9 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "n", 160252 },	-- Blacktalon Agent
 						["g"] = {
-							i(174288),	-- Breath of Everlasting Spirit (once a week)
+							i(174288, {	-- Breath of Everlasting Spirit (once a week)
+								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+							}),
 						},
 					}),
 					q(58167, {	-- Preventative Measures
@@ -41,7 +53,9 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "n", 160252 },	-- Blacktalon Agent
 						["g"] = {
-							i(174288),	-- Breath of Everlasting Spirit (once a week)
+							i(174288, {	-- Breath of Everlasting Spirit (once a week)
+								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+							}),
 						},
 					}),
 					q(58156, {	-- Vanquishing the Darkness
@@ -50,7 +64,9 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 160252 },	-- Blacktalon Agent
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors (is it really a prereq? should it be on all lesser visions quest?)
 						["g"] = {
-							i(174288),	-- Breath of Everlasting Spirit (once a week)
+							i(174288, {	-- Breath of Everlasting Spirit (once a week)
+								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+							}),
 						},
 					}),
 					q(58155, {	-- A Hand in the Dark
@@ -59,7 +75,9 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 160252 },
 						["sourceQuest"] = 56771,	-- Time-Lost Warriors (is it really a prereq? should it be on all lesser visions quest?)
 						["g"] = {
-							i(174288),	-- Breath of Everlasting Spirit (once a week)
+							i(174288, {	-- Breath of Everlasting Spirit (once a week)
+								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+							}),
 						},
 					}),
 					-- Dailies
@@ -1284,6 +1302,22 @@ _.ExpansionFeatures =
 					p(2865, {	-- Voidskimmer
 					}),
 				}),
+				n(-169, { 	-- Emissary Quests
+					q(58096, {	-- Supplies from the Rajani
+						["repeatable"] = true,
+						["g"] = {
+							i(174483, {	-- Rajani Supplies
+								i(168576, {	-- Roots of Magnificent Revival (Rank 4)
+									["classes"] = TANKS,
+									["g"] = {
+										az(33, 4),	-- Touch of the Everlasting (Rank 4)
+									},
+								}),
+								i(174479),	-- Jade Defender (PET!)
+							}),
+						},
+					}),
+				}),
 				n(-38,  {	-- Professions
 					prof(FISHING, {
 						i(174456, {	-- Bottle of Gloop (pet)
@@ -1327,16 +1361,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 154418 },	-- Ra-den
 						["sourceQuest"] = 56541,	-- The Engine of Nalak'sha
 						["g"] = {
-							i(168573),	-- Death-Resistant Leaf (Rank 1)
-							i(168436),	-- Focused Star Point (Rank 1)
-						},
-					}),
-					q(58096, {	-- Supplies from the Rajani
-						["repeatable"] = true,
-						["g"] = {
-							i(174483, {	-- Rajani Supplies
-								i(174479),	-- Jade Defender (pet)
+							i(168573, {	-- Death-Resistant Leaf (Rank 1)
+								["classes"] = TANKS,
+								["g"] = {
+									az(33, 1),	-- Touch of the Everlasting (Rank 1)
+								},
 							}),
+							i(168436),	-- Focused Star Point (Rank 1)
 						},
 					}),
 					q(56541, {	-- The Engine of Nalak'sha
@@ -1392,8 +1423,24 @@ _.ExpansionFeatures =
 					n(160711, {	-- Zhang Ku
 						["coord"] = { 44.5, 75.4, 1530 },
 						["g"] = {
+							i(168573, {	-- Death-Resistant Leaf (Rank 1)
+								["classes"] = TANKS,
+								["g"] = {
+									az(33, 1),	-- Touch of the Everlasting (Rank 1)
+								},
+							}),
 							i(168436, {	-- Focused Star Point (Rank 1)
 								["cost"] = { { "c", 1719, 10 }, },	-- 10x Corrupted Memento
+							}),
+							i(168440, {	-- Gleaming Star Shard (Rank 3)
+								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
+							}),
+							i(168575, {	-- Branch of Rejuvenating Rings (Rank 3)
+								["classes"] = TANKS,
+								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
+								["g"] = {
+									az(33, 3),	-- Touch of the Everlasting (Rank 3)
+								},
 							}),
 							i(174649, {	-- Rajani Warserpent
 								["cost"] = { { "i", 174230, 1 }, },	-- Pristine Cloud Serpent Scale
@@ -1410,12 +1457,7 @@ _.ExpansionFeatures =
 							i(174647, {	-- Rajani Tabard
 								["cost"] = 2400000,	-- 240g
 							}),
-							i(168440, {	-- Gleaming Star Shard (Rank 3)
-								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
-							}),
-							i(168575, {	-- Branch of Rejuvenating Rings (Rank 3)
-								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
-							}),
+							
 							i(174905, {	-- Troop Requisition: Rajani Sparkcaller
 								["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 								["questID"] = 58907,

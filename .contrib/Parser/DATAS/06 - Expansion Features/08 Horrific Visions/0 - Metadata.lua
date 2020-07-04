@@ -10,7 +10,7 @@ _.ExpansionFeatures =
 			1473,	-- Chamber of the Heart
 		},
 		["g"] = {
-			n(-4, {	-- Achievements
+			n(ACHIEVEMENTS, {
 				--[[
 					TODO:: review this section later. This reduces duplication and shows content
 						   in the right areas, but isn't exactly nice to look at
@@ -61,6 +61,21 @@ _.ExpansionFeatures =
 				}),
 				ach(14060),	-- Unwavering Resolve
 				ach(14061),	-- We have the Technology
+			}),
+			n(-852, {	-- Azerite Essences
+				i(173310, {	-- Manual of Unbalanced Tactics (Rank 3)
+					["classes"] = TANKS,
+					["cost"] = { { "i", 174287, 45 } },	-- 45x Spark of Unwavering Strength
+					["g"] = {
+						az(34, 3),	-- Strength of the Warden (Rank 3)
+					},
+				}),
+				i(173290, {	-- Quickening Azerite Geode (Rank 3)
+					["cost"] = { { "i", 174287, 45 } },	-- 45x Spark of Unwavering Strength
+					["g"] = {
+						az(36, 3),	-- Spark of Inspiration (Rank 3)
+					},
+				}),
 			}),
 			n(QUESTS, {
 				["description"] = "Mogs are looted at the end from a full clear with that specific mask on.",
@@ -198,6 +213,17 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(-10082, {	-- Lost Area
+						o(332704, {	-- Corrupted Chest
+							i(173289, {	-- Pulsing Azerite Geode
+								az(36, 2),	-- Spark of Inspiration (Rank 2)
+							}),
+							i(173309, {	-- Water Dancer's Technique (Rank 2)
+								["classes"] = TANKS,
+								["g"] = {
+									az(34, 2),	-- Strength of the Warden (Rank 2)
+								},
+							}),
+						}),
 						n(155098, {	-- Rexxar
 							["description"] = "Defeat Rexxar and his creatures in the Valley of Honor.",
 							["g"] = {
@@ -207,12 +233,19 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(152089, {	-- Thrall
+						i(173308, {	-- Mark of Boistrous Duty (Rank 1)
+							["classes"] = TANKS,
+							["g"] = {
+								az(34, 1),	-- Strength of the Warden (Rank 1)
+							},
+						}),
+						i(173288, {	-- Overflowing Azerite Geode (Rank 1)
+							az(36, 1),	-- Spark of Inspiration (Rank 1)
+						}),
 						i(174461),	-- Swirling Black Bottle (PET!) -- Thrall
 						i(174646),	-- Void-Link Frostwolf Collar (PET!) - Thrall
 						i(174287, {	-- Sparks of Unwavering Strength
-							i(173308),	-- Mark of Boistrous Duty (Rank 1)
 							i(168936),	-- Ward of Unwavering Hope (Rank 1)
-							i(173288),	-- Overflowing Azerite Geode (Rank 1)
 						}),
 						i(175054),	-- Melee Veterans Contract
 						i(175052),	-- Mounted Veterans Contract
@@ -263,6 +296,14 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(-10082, {	-- Lost Area
+						o(332704, {	-- Corrupted Chest
+							i(173309, {	-- Water Dancer's Technique (Rank 2)
+								["classes"] = TANKS,
+								["g"] = {
+									az(34, 2),	-- Strength of the Warden (Rank 2)
+								},
+							}),
+						}),
 						n(158157, {	-- Overlord Mathias Shaw
 							["description"] = "Assist Valeera with some Defias Company downsizing in Old Town.",
 							["g"] = {
@@ -279,12 +320,19 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(152718, {	-- Alleria Windrunner
+						i(173308, {	-- Mark of Boistrous Duty (Rank 1)
+							["classes"] = TANKS,
+							["g"] = {
+								az(34, 1),	-- Strength of the Warden (Rank 1)
+							},
+						}),
+						i(173288, {	-- Overflowing Azerite Geode (Rank 1)
+							az(36, 1),	-- Spark of Inspiration (Rank 1)
+						}),
 						i(174461),	-- Swirling Black Bottle (PET!)
 						i(174459),	-- Voidwoven Cat Collar (PET!)
 						i(174287, {	-- Sparks of Unwavering Strength
-							i(173308),	-- Mark of Boistrous Duty (Rank 1)
 							i(168936),	-- Ward of Unwavering Hope (Rank 1)
-							i(173288),	-- Overflowing Azerite Geode (Rank 1)
 						}),
 						i(175054),	-- Melee Veterans Contract
 						i(175052),	-- Mounted Veterans Contract

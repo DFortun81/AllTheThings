@@ -12,6 +12,7 @@ i(44626);	-- Cask of Aged Dalaran Red
 i(13509);	-- Clutch of Foresight
 i(23122);	-- Consecrated Sharpening Stone
 i(143542);	-- Crown Co. "Kure-Everything" Tonic
+i(173810);	-- Darksight Potion
 i(142264);	-- Drudge Fluid
 i(142262);	-- Electrified Key
 i(168222);	-- Encrypted Black Market Radio

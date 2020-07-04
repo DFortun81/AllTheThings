@@ -813,6 +813,13 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-10076, {	-- Assault: The Black Empire
+				i(168574, {	-- Petrified Living Bark
+					["classes"] = TANKS,
+					["cost"] = { { "i", 174288, 3 } },	-- 3x Breath of Everlasting Spirit
+					["g"] = {
+						az(33, 2),	-- Touch of the Everlasting (Rank 2)
+					},
+				}),
 				n(QUESTS, {
 					-- Lesser Visions dailies
 					q(58168, {	-- A Dark, Glaring Reality
@@ -820,8 +827,9 @@ _.ExpansionFeatures =
 						["isDaily"] = true,
 						["provider"] = { "n", 160252 },	-- Blacktalon Agent
 						["g"] = {
-							i(174288),	-- Breath of Everlasting Spirit (once a week)
-							i(173810),	-- Darksight Potion
+							i(174288, {	-- Breath of Everlasting Spirit (once a week)
+								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+							}),
 						},
 					}),
 					q(58151, {	-- Minions of N'Zoth
@@ -829,7 +837,9 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 160252 },	-- Blacktalon Agent
 						["isDaily"] = true,
 						["g"] = {
-							i(174288),	-- Breath of Everlasting Spirit (once a week)
+							i(174288, {	-- Breath of Everlasting Spirit (once a week)
+								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+							}),
 						},
 					}),
 					q(58156, {	-- Vanquishing the Darkness
@@ -837,7 +847,9 @@ _.ExpansionFeatures =
 						["isDaily"] = true, -- TODO:: probably a weekly
 						["provider"] = { "n", 160252 },	-- Blacktalon Agent
 						["g"] = {
-							i(174288),	-- Breath of Everlasting Spirit (once a week)
+							i(174288, {	-- Breath of Everlasting Spirit (once a week)
+								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+							}),
 						},
 					}),
 					q(57874, {	-- Visions of a Dark Destiny -- is it still in game?
@@ -845,7 +857,9 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 160252 },	-- Blacktalon Agent
 						["u"] = 1,	-- Never Available
 						["g"] = {
-							i(174288),	-- Breath of Everlasting Spirit (once a week)
+							i(174288, {	-- Breath of Everlasting Spirit (once a week)
+								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+							}),
 						},
 					}),
 					q(58155, {	-- A Hand in the Dark
@@ -853,7 +867,9 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 160252 },	-- Blacktalon Agent
 						["isDaily"] = true,
 						["g"] = {
-							i(174288),	-- Breath of Everlasting Spirit (once a week)
+							i(174288, {	-- Breath of Everlasting Spirit (once a week)
+								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",
+							}),
 						},
 					}),
 					-- Dailies
@@ -1546,6 +1562,16 @@ _.ExpansionFeatures =
 					pet(2864, {	-- Void-Scarred Locust
 					}),
 				}),
+				n(-169, { 	-- Emissary Quests
+					q(58097, {	-- Supplies from the Uldum Accord
+						["repeatable"] = true,
+						["g"] = {
+							i(174484, {	-- Uldum Accord Supplies
+								i(174481),	-- Cursed Dune Watcher
+							}),
+						},
+					}),
+				}),
 				n(-38,	{	-- Professions
 					prof(FISHING, {
 						i(174456, {	-- Bottle of Gloop (pet)
@@ -1760,14 +1786,6 @@ _.ExpansionFeatures =
 						["coord"] = { 68.9, 52.7, 1527 },
 						["provider"] = { "n", 154532 },	-- Magni Bronzebeard
 						["sourceQuest"] = 57221,	-- Re-origination
-					}),
-					q(58097, {	-- Supplies from the Uldum Accord
-						["repeatable"] = true,
-						["g"] = {
-							i(174484, {	-- Uldum Accord Supplies
-								i(174481),	-- Cursed Dune Watcher
-							}),
-						},
 					}),
 					q(56376, {	-- Surfacing Threats
 						["lvl"] = 120,
