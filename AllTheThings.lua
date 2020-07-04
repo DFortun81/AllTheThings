@@ -5543,10 +5543,16 @@ local function GetHolidayCache()
 		SetTempDataMember("HOLIDAY_CACHE", cache);
 		SetDataMember("HOLIDAY_CACHE", cache);
 		local date = C_Calendar.GetDate();
-		C_Calendar.SetAbsMonth(date.month, date.year);
+		if date.month > 8 then
+			C_Calendar.SetAbsMonth(date.month - 8, date.year);
+		else
+			C_Calendar.SetAbsMonth(date.month + 4, date.year - 1);
+		end
+		
 		for month=1,12,1 do
 			C_Calendar.SetMonth(1);
-			for day=1,31,1 do
+			local monthInfo = C_Calendar.GetMonthInfo();
+			for day=1,monthInfo.numDays,1 do
 				local numEvents = C_Calendar.GetNumDayEvents(0, day);
 				if numEvents > 0 then
 					for index=1,numEvents,1 do
