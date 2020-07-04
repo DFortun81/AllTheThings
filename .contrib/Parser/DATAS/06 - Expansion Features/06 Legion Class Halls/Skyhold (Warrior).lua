@@ -198,6 +198,7 @@ _.ExpansionFeatures =
 					q(42204, {	-- Jorhuttam
 						["maps"] = { 650 },	-- Highmountain
 						["coord"] = { 53.8, 87.8, 650 },
+						["classes"] = { WARRIOR },
 						["provider"] = { "n", 106271 },	-- Jarum Skymane
 						["sourceQuest"] = 42202,	-- Revenge, Served Cold
 						["g"] = {
