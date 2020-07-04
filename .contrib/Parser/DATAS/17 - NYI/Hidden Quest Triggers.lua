@@ -1570,6 +1570,7 @@ _.NeverImplemented =
 		]]--
 		
 	--	VARIOUS
+		q(49294),	-- Nazmir - triggers when Hanzabu talks about the Zo'bal shrine
 		q(49683),	-- Vol'dun - chose the daggers for Nisha at the start of Vol'dun
 		q(52781),	-- use zidormi in arathi highlands to travel to the past
 		q(47332),	-- Your Next Move - triggers when you pick up your first zone on the scouting map (e.g. Zuldazar as horde)
