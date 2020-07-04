@@ -666,6 +666,8 @@ _.Zones =
 								artifact(921),	-- Find Hidden Artifact Skin
 							}),
 							i(141296),	-- Ancient Mana Basin
+							i(147418),	-- Arcane Remnant of Falanaar
+							i(147416),	-- Arcane Tablet of Falanaar
 							i(141297),	-- Arcano-Shower
 							i(141298),	-- Displacer Meditation Stone
 							i(140780),	-- Fal'dorei Egg

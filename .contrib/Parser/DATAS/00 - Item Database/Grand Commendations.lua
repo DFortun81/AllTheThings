@@ -166,7 +166,8 @@ i(120172, 1711);	-- Vileclaw's Claw [Steamwheedle Preservation]
 i(117492, 1515);	-- Relic of Rukhmar [Arakkoa Outcasts]
 
 -- Legion
-
+i(147418, 1859);	-- Arcane Remnant of Falanaar [The Nightfallen]
+i(147416, 1859);	-- Arcane Tablet of Falanaar [The Nightfallen]
 i(152959, 2170);	-- Argussian Reach Insignia [Argussian Reach]
 i(152960, 2170);	-- Argussian Reach Insignia [Argussian Reach]
 i(152957, 2165);	-- Army of the Light Insignia [Army of the Light]

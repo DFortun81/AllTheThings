@@ -813,11 +813,17 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-10076, {	-- Assault: The Black Empire
-				i(168574, {	-- Petrified Living Bark
+				i(168574, {	-- Petrified Living Bark (Rank 2)
 					["classes"] = TANKS,
 					["cost"] = { { "i", 174288, 3 } },	-- 3x Breath of Everlasting Spirit
 					["g"] = {
 						az(33, 2),	-- Touch of the Everlasting (Rank 2)
+					},
+				}),
+				i(173281, {	-- Token of Death's Mark (Rank 2)
+					["cost"] = { { "i", 174288, 3 } },	-- 3x Breath of Everlasting Spirit
+					["g"] = {
+						az(35, 2),	-- Breath of the Dying (Rank 2)
 					},
 				}),
 				n(QUESTS, {
@@ -1566,6 +1572,9 @@ _.ExpansionFeatures =
 					q(58097, {	-- Supplies from the Uldum Accord
 						["repeatable"] = true,
 						["g"] = {
+							i(173283, {	-- Token of a Brilliant Death (Rank 4)
+								az(35, 4),	-- Breath of the Dying (Rank 4)
+							}),
 							i(174484, {	-- Uldum Accord Supplies
 								i(174481),	-- Cursed Dune Watcher
 							}),
@@ -1793,7 +1802,9 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 155095 },	-- King Phaoris
 						["sourceQuest"] = 56472,	-- The Uldum Accord
 						["g"] = {
-							i(173280),	-- Token of Death's Door
+							i(173280, {	-- Token of Death's Door (Rank 1)
+								az(35, 1),	-- Breath of the Dying (Rank 1)
+							}),
 						},
 					}),
 					q(56209, {	-- The Halls of Origination
@@ -1890,6 +1901,12 @@ _.ExpansionFeatures =
 					n(160714, {	-- Provisioner Qorra
 						["coord"] = { 55.1, 32.9, 1527 },
 						["g"] = {
+							i(173282, {	-- Token of Death's Glee (Rank 3)
+								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
+								["g"] = {
+									az(35, 3),	-- Breath of the Dying (Rank 3)
+								},
+							}),
 							i(174925, {	-- Void Tendril Pet Leash
 								["cost"] = { { "c", 1719, 1 }, },	-- 1x Corrupted Memento
 							}),
@@ -1914,9 +1931,6 @@ _.ExpansionFeatures =
 							}),
 							i(174754, {	-- Wastewander Skyterror
 								["cost"] = 228000000,	-- 22,800g
-							}),
-							i(173282, {	-- Token of Death's Glee (Rank 3)
-								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
 							}),
 						},
 					}),

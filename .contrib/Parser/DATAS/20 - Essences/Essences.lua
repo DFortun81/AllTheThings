@@ -14,6 +14,10 @@ _.Essences =
 		az(37, 4),	-- The Formless Void (Rank 4)
 	}),
 	n(-854, {	-- DPS
+		az(35, 1),	-- Breath of the Dying (Rank 1)
+		az(35, 2),	-- Breath of the Dying (Rank 2)
+		az(35, 3),	-- Breath of the Dying (Rank 3)
+		az(35, 4),	-- Breath of the Dying (Rank 4)
 		az(36, 1),	-- Spark of Inspiration (Rank 1)
 		az(36, 2),	-- Spark of Inspiration (Rank 2)
 		az(36, 3),	-- Spark of Inspiration (Rank 3)

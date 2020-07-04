@@ -30,6 +30,8 @@ i(20834);	-- Ornate Spyglass XT ("Retrieving Data" in-game)
 i(23794);	-- Permanent Sheen of Zanza ("Retrieving Data" in-game)
 i(23795);	-- Permanent Spirit of Zanza ("Retrieving Data" in-game)
 i(23796);	-- Permanent Swiftness of Zanza ("Retrieving Data" in-game)
+i(141015);	-- Scroll of Town Portal: Kal'delar
+i(141013);	-- Scroll of Town Portal: Shala'nir
 i(169856);	-- Spark-1351
 i(1187);	-- Spiked Collar
 i(15723);	-- Tea with Sugar
