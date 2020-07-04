@@ -1070,6 +1070,12 @@ _.Zones =
 											az(34, 4),	-- Strength of the Warden (Rank 4)
 										},
 									}),
+									i(168940, {	-- Ward of Unimaginable Brilliance (Rank 4)
+										["classes"] = HEALERS,
+										["g"] = {
+											az(16, 4),	-- Unwavering Ward (Rank 4)
+										},
+									}),
 									i(174876, {	-- Gouged Eye of N'Zoth
 										["cost"] = { { "c", 1719, 25000 }, },	-- 25,000 Corrupted Mementos
 									}),

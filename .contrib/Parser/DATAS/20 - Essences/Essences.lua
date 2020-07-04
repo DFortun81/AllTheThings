@@ -26,6 +26,10 @@ _.Essences =
 	n(-855, {	-- Healers
 		["classes"] = HEALERS,
 		["g"] = {
+			az(16, 1),	-- Unwavering Ward (Rank 1)
+			az(16, 2),	-- Unwavering Ward (Rank 2)
+			az(16, 3),	-- Unwavering Ward (Rank 3)
+			az(16, 4),	-- Unwavering Ward (Rank 4)
 		},
 	}),
 	n(-856, {	-- Tanks

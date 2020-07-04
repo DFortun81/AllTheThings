@@ -76,6 +76,13 @@ _.ExpansionFeatures =
 						az(36, 3),	-- Spark of Inspiration (Rank 3)
 					},
 				}),
+				i(168938, {	-- Ward of Mutual Aid (Rank 3)
+					["classes"] = HEALERS,
+					["cost"] = { { "i", 174287, 45 } },	-- 45x Spark of Unwavering Strength
+					["g"] = {
+						az(16, 3),	-- Unwavering Ward (Rank 3)
+					},
+				}),
 			}),
 			n(QUESTS, {
 				["description"] = "Mogs are looted at the end from a full clear with that specific mask on.",
@@ -214,8 +221,14 @@ _.ExpansionFeatures =
 					}),
 					n(-10082, {	-- Lost Area
 						o(332704, {	-- Corrupted Chest
-							i(173289, {	-- Pulsing Azerite Geode
+							i(173289, {	-- Pulsing Azerite Geode (Rank 2)
 								az(36, 2),	-- Spark of Inspiration (Rank 2)
+							}),
+							i(168937, {	-- Ward of Reciprocation (Rank 2)
+								["classes"] = HEALERS,
+								["g"] = {
+									az(16, 2),	-- Unwavering Ward (Rank 2)
+								},
 							}),
 							i(173309, {	-- Water Dancer's Technique (Rank 2)
 								["classes"] = TANKS,
@@ -242,11 +255,15 @@ _.ExpansionFeatures =
 						i(173288, {	-- Overflowing Azerite Geode (Rank 1)
 							az(36, 1),	-- Spark of Inspiration (Rank 1)
 						}),
+						i(168936, {	-- Ward of Unwavering Hope (Rank 1)
+							["classes"] = HEALERS,
+							["g"] = {
+								az(16, 1),	-- Unwavering Ward (Rank 1)
+							},
+						}),
 						i(174461),	-- Swirling Black Bottle (PET!) -- Thrall
 						i(174646),	-- Void-Link Frostwolf Collar (PET!) - Thrall
-						i(174287, {	-- Sparks of Unwavering Strength
-							i(168936),	-- Ward of Unwavering Hope (Rank 1)
-						}),
+						i(174287),	-- Sparks of Unwavering Strength
 						i(175054),	-- Melee Veterans Contract
 						i(175052),	-- Mounted Veterans Contract
 						i(175053),	-- Ranged Veterans Contract
@@ -297,6 +314,15 @@ _.ExpansionFeatures =
 					}),
 					n(-10082, {	-- Lost Area
 						o(332704, {	-- Corrupted Chest
+							i(173289, {	-- Pulsing Azerite Geode (Rank 2)
+								az(36, 2),	-- Spark of Inspiration (Rank 2)
+							}),
+							i(168937, {	-- Ward of Reciprocation (Rank 2)
+								["classes"] = HEALERS,
+								["g"] = {
+									az(16, 2),	-- Unwavering Ward (Rank 2)
+								},
+							}),
 							i(173309, {	-- Water Dancer's Technique (Rank 2)
 								["classes"] = TANKS,
 								["g"] = {
@@ -329,11 +355,15 @@ _.ExpansionFeatures =
 						i(173288, {	-- Overflowing Azerite Geode (Rank 1)
 							az(36, 1),	-- Spark of Inspiration (Rank 1)
 						}),
+						i(168936, {	-- Ward of Unwavering Hope (Rank 1)
+							["classes"] = HEALERS,
+							["g"] = {
+								az(16, 1),	-- Unwavering Ward (Rank 1)
+							},
+						}),
 						i(174461),	-- Swirling Black Bottle (PET!)
 						i(174459),	-- Voidwoven Cat Collar (PET!)
-						i(174287, {	-- Sparks of Unwavering Strength
-							i(168936),	-- Ward of Unwavering Hope (Rank 1)
-						}),
+						i(174287),	-- Sparks of Unwavering Strength
 						i(175054),	-- Melee Veterans Contract
 						i(175052),	-- Mounted Veterans Contract
 						i(175053),	-- Ranged Veterans Contract
