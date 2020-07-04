@@ -2240,6 +2240,7 @@ _.NeverImplemented =
 		q(56598),	-- Elderspawn Nalaada first kill
 		q(56610),	-- Garnetscale first kill
 		q(56597),	-- Iridescent Glimmershell first kill
+		q(57260),	-- Iridescent Glimmershell looted with WM on
 		q(56596),	-- Kelpwillow first kill
 		q(57082),	-- Lost Algan Benthic loot
 		q(56609),	-- Mirecrawler first kill
