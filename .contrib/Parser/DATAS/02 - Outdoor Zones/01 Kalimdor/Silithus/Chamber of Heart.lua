@@ -280,7 +280,7 @@ _.Zones =
 							["maps"] = { 1475 },	-- The Emerald Dream
 							["g"] = {
 								i(168612, {	-- Dreamglow Dragonscale
-									{ ["azeriteEssenceID"] = 12 },	-- The Crusible of Flame (Rank 2)
+									{ ["azeriteEssenceID"] = 12, ["rank"] = 2 },	-- The Crusible of Flame (Rank 2)
 								}),
 							},
 						}),
@@ -354,7 +354,7 @@ _.Zones =
 							},
 							["g"] = {
 								i(168613, {	-- Tempered Scale of the Scarlet Broodmother
-									{ ["azeriteEssenceID"] = 12 },	-- The Crusible of Flame (Rank 3)
+									{ ["azeriteEssenceID"] = 12, ["rank"] = 3 },	-- The Crusible of Flame (Rank 3)
 								}),
 							},
 						}),
@@ -432,7 +432,7 @@ _.Zones =
 							["cost"] = { { "i", 169292, 1 } },	-- Charged Scale of the Blue Aspect (QI)
 							["g"] = { 
 								i(168614, {	-- Charged Scale of the Blue Aspect
-									{ ["azeriteEssenceID"] = 12 },	-- The Crusible of Flame (Rank 4)
+									{ ["azeriteEssenceID"] = 12, ["rank"] = 4 },	-- The Crusible of Flame (Rank 4)
 								}),
 							},
 						}),

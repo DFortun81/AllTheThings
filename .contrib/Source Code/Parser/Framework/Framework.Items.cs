@@ -379,6 +379,7 @@ namespace ATT
                     case "u":
                     case "b":
                     case "r":
+                    case "rank":
                     case "ilvl":
                     case "lvl":
                     case "q":
@@ -658,6 +659,7 @@ namespace ATT
                     case "f":
                     case "u":
                     case "b":
+                    case "rank":
                     case "ilvl":
                     case "lvl":
                     case "q":

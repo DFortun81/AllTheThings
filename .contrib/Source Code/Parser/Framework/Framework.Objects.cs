@@ -929,6 +929,7 @@ namespace ATT
                     {
                         case "description":
                         case "lvl":
+                        case "rank":
                         case "races":
                         case "classes":
                         case "coords":
@@ -999,6 +1000,7 @@ namespace ATT
                         case "text":
                         case "title":
                         case "icon":
+                        case "rank":
                         case "lvl":
                         case "coords":
                         case "crs":
@@ -1289,6 +1291,7 @@ namespace ATT
                     case "f":
                     case "u":
                     case "b":
+                    case "rank":
                     case "ilvl":
                     case "lvl":
                     case "q":

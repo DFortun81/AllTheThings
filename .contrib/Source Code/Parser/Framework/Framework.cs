@@ -1155,6 +1155,12 @@ namespace ATT
                         return "lvl";
                     }
 
+                case "rank":
+                case "azeriteRank":
+                    {
+                        return "rank";
+                    }
+
                 case "isRepeatable":
                 case "repeatable":
                     {
