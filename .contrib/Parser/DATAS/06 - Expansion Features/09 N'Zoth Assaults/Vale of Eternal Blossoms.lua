@@ -17,12 +17,25 @@ _.ExpansionFeatures =
 		},
 		["g"] = {
 			n(-10076, {	-- Assault: The Black Empire
-				n(-853, {	-- Azerite Essences
-					i(168574, {	-- Petrified Living Bark
+				n(-852, {	-- Azerite Essences
+					i(168574, {	-- Petrified Living Bark (Rank 2)
 						["classes"] = TANKS,
 						["cost"] = { { "i", 174288, 3 } },	-- 3x Breath of Everlasting Spirit
 						["g"] = {
 							az(33, 2),	-- Touch of the Everlasting (Rank 2)
+						},
+					}),
+					i(168439, {	-- Swirling Star Dust (Rank 2)
+						["classes"] = HEALERS,
+						["cost"] = { { "i", 174288, 3 } },	-- 3x Breath of Everlasting Spirit
+						["g"] = {
+							az(24, 2),	-- Spirit of Preservation (Rank 2)
+						},
+					}),
+					i(173281, {	-- Token of Death's Mark (Rank 2)
+						["cost"] = { { "i", 174288, 3 } },	-- 3x Breath of Everlasting Spirit
+						["g"] = {
+							az(35, 2),	-- Breath of the Dying (Rank 2)
 						},
 					}),
 				}),
@@ -1307,6 +1320,12 @@ _.ExpansionFeatures =
 						["repeatable"] = true,
 						["g"] = {
 							i(174483, {	-- Rajani Supplies
+								i(168816, {	-- Pulsing Star Heart (Rank 4)
+									["classes"] = HEALERS,
+									["g"] = {
+										az(24, 4),	-- Spirit of Preservation (Rank 4)
+									},
+								}),
 								i(168576, {	-- Roots of Magnificent Revival (Rank 4)
 									["classes"] = TANKS,
 									["g"] = {
@@ -1367,7 +1386,12 @@ _.ExpansionFeatures =
 									az(33, 1),	-- Touch of the Everlasting (Rank 1)
 								},
 							}),
-							i(168436),	-- Focused Star Point (Rank 1)
+							i(168436, {	-- Focused Star Point (Rank 1)
+								["classes"] = HEALERS,
+								["g"] = {
+									az(24, 1),	-- Spirit of Preservation (Rank 1)
+								},
+							}),
 						},
 					}),
 					q(56541, {	-- The Engine of Nalak'sha
@@ -1431,9 +1455,16 @@ _.ExpansionFeatures =
 							}),
 							i(168436, {	-- Focused Star Point (Rank 1)
 								["cost"] = { { "c", 1719, 10 }, },	-- 10x Corrupted Memento
+								["g"] = {
+									az(24, 1),	-- Spirit of Preservation (Rank 1)
+								},
 							}),
 							i(168440, {	-- Gleaming Star Shard (Rank 3)
+								["classes"] = HEALERS,
 								["cost"] = { { "c", 1719, 50 }, },	-- 50x Corrupted Memento
+								["g"] = {
+									az(24, 3),	-- Spirit of Preservation (Rank 3)
+								},
 							}),
 							i(168575, {	-- Branch of Rejuvenating Rings (Rank 3)
 								["classes"] = TANKS,

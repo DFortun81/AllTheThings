@@ -813,18 +813,20 @@ _.ExpansionFeatures =
 				}),
 			}),
 			n(-10076, {	-- Assault: The Black Empire
-				i(168574, {	-- Petrified Living Bark (Rank 2)
-					["classes"] = TANKS,
-					["cost"] = { { "i", 174288, 3 } },	-- 3x Breath of Everlasting Spirit
-					["g"] = {
-						az(33, 2),	-- Touch of the Everlasting (Rank 2)
-					},
-				}),
-				i(173281, {	-- Token of Death's Mark (Rank 2)
-					["cost"] = { { "i", 174288, 3 } },	-- 3x Breath of Everlasting Spirit
-					["g"] = {
-						az(35, 2),	-- Breath of the Dying (Rank 2)
-					},
+				n(-852, {	-- Azerite Essences
+					i(168574, {	-- Petrified Living Bark (Rank 2)
+						["classes"] = TANKS,
+						["cost"] = { { "i", 174288, 3 } },	-- 3x Breath of Everlasting Spirit
+						["g"] = {
+							az(33, 2),	-- Touch of the Everlasting (Rank 2)
+						},
+					}),
+					i(173281, {	-- Token of Death's Mark (Rank 2)
+						["cost"] = { { "i", 174288, 3 } },	-- 3x Breath of Everlasting Spirit
+						["g"] = {
+							az(35, 2),	-- Breath of the Dying (Rank 2)
+						},
+					}),
 				}),
 				n(QUESTS, {
 					-- Lesser Visions dailies

@@ -26,6 +26,10 @@ _.Essences =
 	n(-855, {	-- Healers
 		["classes"] = HEALERS,
 		["g"] = {
+			az(24, 1),	-- Spirit of Preservation (Rank 1)
+			az(24, 2),	-- Spirit of Preservation (Rank 2)
+			az(24, 3),	-- Spirit of Preservation (Rank 3)
+			az(24, 4),	-- Spirit of Preservation (Rank 4)
 			az(16, 1),	-- Unwavering Ward (Rank 1)
 			az(16, 2),	-- Unwavering Ward (Rank 2)
 			az(16, 3),	-- Unwavering Ward (Rank 3)
