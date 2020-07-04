@@ -4402,7 +4402,15 @@ app.BaseAzeriteEssence = {
 			return true;
 		elseif key == "collected" then
 			local info = t.info;
-			if info and info.unlocked then return 1; end
+			if info and info.unlocked then
+				if t.rank and info.rank then
+					if info.rank >= t.rank then
+						return 1;
+					end
+				else
+					return 1;
+				end
+			end
 		elseif key == "text" then
 			return t.link;
 		elseif key == "lvl" then
