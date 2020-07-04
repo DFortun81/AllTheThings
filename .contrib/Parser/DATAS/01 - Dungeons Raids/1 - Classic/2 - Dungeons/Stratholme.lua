@@ -16,6 +16,10 @@ _.Instances = { tier(1, {	-- Classic
 						q(27185, {	-- Cutting the Competition
 							["provider"] = { "n", 45201 },	-- Master Craftsman Wilhelm
 						}),
+						q(5848, {	-- Of Love and Family (2/2)
+							["u"] = 40,
+							["provider"] = { "n", 11936 },	-- Artist Renfray
+						}),
 						q(27305, {	-- Of Love and Family
 							["provider"] = { "n", 45200 },	-- Crusade Commander Eligor Dawnbringer
 						}),
@@ -279,6 +283,10 @@ _.Instances = { tier(1, {	-- Classic
 				["coord"] = { 43.76, 17.52, 23 },	-- Stratholme [Undead Side], Eastern Plaguelands
 				["groups"] = {
 					n(QUESTS, {
+						q(5263, {	-- Above and Beyond
+							["u"] = 40,
+							["provider"] = { "n", 11039 },	-- Duke Nicholas Zverenhoff <The Argent Dawn>
+						}),
 						q(27359, {	-- Argent Reinforcements
 							["provider"] = { "n", 45330 },	-- Archmage Angela Dosantos
 						}),

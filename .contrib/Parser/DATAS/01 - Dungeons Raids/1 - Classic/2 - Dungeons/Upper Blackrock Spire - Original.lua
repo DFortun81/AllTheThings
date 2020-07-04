@@ -21,6 +21,10 @@ _.Instances = { tier(1, {	-- Classic
 							un(2, i(16309)),	-- Drakefire Amulet
 						},
 					}),
+					q(5164, {	-- Catalogue of the Wayward
+						["u"] = 40,
+						["provider"] = { "n", 10976 },	-- Jeziba
+					}),
 					q(4765, {	-- Delivery to Ridgewell
 						["u"] = 40,
 						["races"] = ALLIANCE_ONLY,
@@ -82,6 +86,10 @@ _.Instances = { tier(1, {	-- Classic
 							un(2, i(15861)),	-- Swiftfoot Treads
 						},
 					}),
+					q(5160, {	-- The Matron Protectorate
+						["u"] = 40,
+						["provider"] = { "n", 10740 },	-- Awbee
+					}),
 					q(4907, {	-- Tinkee Steamboil
 						["u"] = 40,	-- Legacy Quest
 						["provider"] = { "n", 10468 },	-- Felnok Steelspring
@@ -100,6 +108,14 @@ _.Instances = { tier(1, {	-- Classic
 						["provider"] = { "n", 16073 },	-- Spirit of Lord Valthalak
 						["lvl"] = 58,
 						["sourceQuest"] = 8995,	-- Mea Culpa, Lord Valthalak
+					}),
+					q(5161, {	-- Wrath of the Blue Flight (1/2)
+						["u"] = 40,
+						["provider"] = { "n", 10929 },	-- Haleh
+					}),
+					q(5162, {	-- Wrath of the Blue Flight (2/2)
+						["u"] = 40,
+						["provider"] = { "n", 10929 },	-- Haleh
 					}),
 				}),
 				n(ZONEDROPS, {

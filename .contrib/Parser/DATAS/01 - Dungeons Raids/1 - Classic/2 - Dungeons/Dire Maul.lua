@@ -332,6 +332,13 @@ _.Instances = { tier(1, {	-- Classic
 								un(2, i(18470)),	-- Royal Seal of Eldre'Thalas
 							},
 						}),
+						q(5518, {	-- The Gordok Ogre Suit
+							["u"] = 40,
+							["provider"] = { "n", 14338 },	-- Knot Thimblejack
+							["g"] = {
+								i(18258),	-- Gordok Ogre Suit
+							},
+						}),
 						q(27119, {	-- The Gordok Ogre Suit
 							["provider"] = { "n", 14338 },	-- Knot Thimblejack
 							["g"] = {

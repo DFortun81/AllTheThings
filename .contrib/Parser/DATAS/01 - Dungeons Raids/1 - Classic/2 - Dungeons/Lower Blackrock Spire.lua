@@ -43,11 +43,11 @@ _.Instances = { tier(1, {	-- Classic
 					["lvl"] = 55,
 					["provider"] = { "n", 9077 },	-- Warlord Goretooth
 					["g"] = {
-						un(2, i(13961)),	-- Halcyon's Muzzle
-						un(2, i(13959)),	-- Omokk's Girth Restrainer
-						un(2, i(13963)),	-- Voone's Vice Grips
-						un(2, i(13962)),	-- Vosh'gajin's Strand
-						un(2, i(13958)),	-- Wyrmthalak's Shackles
+						un(34, i(13961)),	-- Halcyon's Muzzle
+						un(34, i(13959)),	-- Omokk's Girth Restrainer
+						un(34, i(13963)),	-- Voone's Vice Grips
+						un(34, i(13962)),	-- Vosh'gajin's Strand
+						un(34, i(13958)),	-- Wyrmthalak's Shackles
 					},
 				}),
 			}),
