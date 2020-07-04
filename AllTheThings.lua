@@ -9654,6 +9654,17 @@ function app:GetDataCache()
 		end
 		
 		-- Azerite Essences
+		if app.Categories.Essences then
+			db = {}
+			db.lvl = 120
+			db.expanded = false
+			db.text = "Azerite Essences"
+			db.icon = "Interface\\ICONS\\Inv_heartofazeroth"
+			db.description = "Essences have two effects on them, one major and one minor power.\n\nPlayers may place an Essence in every unlocked Major or Minor slot in the Heart of Azeroth.\n\nThe major power will only be activated if the Essence is placed in the central Major slot.\n\nThe minor power will be activated if the Essence is placed in any Minor slot or the central Major slot.\n\nThe same Essence cannot be placed in multiple slots.\n\nEssences must be learned at the Heart Forge, but can be swapped out in any Rest Area."
+			db.g = app.Categories.Essences
+			table.insert(g, db)
+		end
+		--[[ automated category replaced by manual database. leaving this here temporarily as a reference point
 		db = {};
 		db.g = {};
 		db.lvl = 120;
@@ -9680,7 +9691,7 @@ function app:GetDataCache()
 		db.icon = "Interface\\ICONS\\Inv_heartofazeroth";
 		db.description = "Essences have two effects on them, one major and one minor power.\n\nPlayers may place an Essence in every unlocked Major or Minor slot in the Heart of Azeroth.\n\nThe major power will only be activated if the Essence is placed in the central Major slot.\n\nThe minor power will be activated if the Essence is placed in any Minor slot or the central Major slot.\n\nThe same Essence cannot be placed in multiple slots.\n\nEssences must be learned at the Heart Forge, but can be swapped out in any Rest Area.";
 		table.insert(g, db);
-		
+		]]--
 		-- Expansion Features
 		if app.Categories.ExpansionFeatures then
 			db = {};
