@@ -1196,9 +1196,13 @@ _.Zones =
 						},
 					}),
 					q(40193,  {	-- Getting the Kinks Out
+						["sourceQuests"] = { 40192 },	-- Claw of the Land
+						["isBreadcrumb"] = true,
 						["provider"] = { "n", 98931 },	-- Thanid Glowergold
 					}),
 					q(40190,  {	-- Hardening the Hide
+						["sourceQuests"] = { 40189 },	-- Naga Know-How
+						["isBreadcrumb"] = true,
 						["provider"] = { "n", 93522 },	-- Diane Cannings
 					}),
 					q(40177,  {	-- Leather Lady

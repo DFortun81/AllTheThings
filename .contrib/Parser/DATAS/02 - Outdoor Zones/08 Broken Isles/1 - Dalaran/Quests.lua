@@ -1464,6 +1464,7 @@ _.Zones =
 				}),
 				q(46200, {	-- The Matter Resolved... For Now...
 					["provider"] = { "n", 118954 },	-- Night Elf Warrior
+					["classes"] = { DRUID, MONK, PALADIN, PRIEST, SHAMAN },	-- Legion healing classes
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42231, {	-- The Mysterious Paladin
