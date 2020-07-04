@@ -74,7 +74,9 @@ _.GroupFinder =
 						i(173595),	-- Trailseeker Greaves
 						i(173597),	-- Trailseeker Helm
 						i(173598),	-- Trailseeker Legguards
-						i(173599),	-- Trailseeker Spaulders (invisible model, uncollectible)
+						i(173599, {	-- Trailseeker Spaulders 
+							["modID"] = 11,
+						}),
 						i(173594),	-- Trailseeker Vest
 					},
 				}),
@@ -104,7 +106,9 @@ _.GroupFinder =
 						i(173612),	-- Mistdancer Handguards
 						i(173613),	-- Mistdancer Helm
 						i(173614),	-- Mistdancer Legguards
-						i(173615),	-- Mistdancer Pauldrons (invisible model, uncollectible)
+						i(173615, {	-- Mistdancer Pauldrons
+							["modID"] = 11,
+						}),
 						i(173610),	-- Mistdancer Vest
 						i(173547),	-- Staff of the Jade Mist
 						i(173548),	-- Sword of Singing Wind
