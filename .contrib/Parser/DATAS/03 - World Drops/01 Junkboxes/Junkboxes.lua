@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-_.WorldDrops = 
+_.WorldDrops =
 {
 	n(-165, { 	-- Junkboxes
 		["description"] = "These items have a small chance of dropping from junkboxes.",
@@ -44,45 +44,45 @@ _.WorldDrops =
 				i(68163),	-- The Twilight Blade
 				i(68161),	-- Krol Decapitator
 			}),
-			i(16885, { 	-- Heavy Junkbox 
+			i(16885, { 	-- Heavy Junkbox
 				i(1728),	-- Teebu's Blazing Longsword [Discord Confirmation - Luce]
-				i(16215),	-- Formula: Enchant Boots Greater Stamina   
-				i(16218),	-- Formula: Enchant Bracer Superior Versatility 
-				i(14494),	-- Pattern: Brightcloth Pants     
-				i(15746),	-- Pattern: Chimeric Leggings     
-				i(15755),	-- Pattern: Chimeric Vest     
-				i(15743),	-- Pattern: Heavy Scorpid Belt    
-				i(14499),	-- Pattern: Mooncloth Bag     
-				i(12689),	-- Plans: Radiant Breastplate     
-				i(12695),	-- Plans: Radiant Gloves     
-				i(12683),	-- Plans: Thorium Belt     
-				i(12693),	-- Plans: Thorium Boots     
-				i(12684),	-- Plans: Thorium Bracers     
-				i(12694),	-- Plans: Thorium Helm     
-				i(12704),	-- Plans: Thorium Leggings     
-				i(12691),	-- Plans: Wildthorn Mail     
-				i(2163),	-- Shadowblade       
-				i(12044),	-- Arctic Pendant      
-				i(12014),	-- Arctic Ring      
-				i(21953),	-- Design Emerald Owl     
-				i(21949),	-- Design Ruby Serpent     
-				i(12057),	-- Dragonscale Band  
-				i(12046),	-- Jungle Necklace      
-				i(12002),	-- Marble Circle      
-				i(12034),	-- Marble Necklace      
-				i(12004),	-- Obsidian Band      
+				i(16215),	-- Formula: Enchant Boots Greater Stamina
+				i(16218),	-- Formula: Enchant Bracer Superior Versatility
+				i(14494),	-- Pattern: Brightcloth Pants
+				i(15746),	-- Pattern: Chimeric Leggings
+				i(15755),	-- Pattern: Chimeric Vest
+				i(15743),	-- Pattern: Heavy Scorpid Belt
+				i(14499),	-- Pattern: Mooncloth Bag
+				i(12689),	-- Plans: Radiant Breastplate
+				i(12695),	-- Plans: Radiant Gloves
+				i(12683),	-- Plans: Thorium Belt
+				i(12693),	-- Plans: Thorium Boots
+				i(12684),	-- Plans: Thorium Bracers
+				i(12694),	-- Plans: Thorium Helm
+				i(12704),	-- Plans: Thorium Leggings
+				i(12691),	-- Plans: Wildthorn Mail
+				i(2163),	-- Shadowblade
+				i(12044),	-- Arctic Pendant
+				i(12014),	-- Arctic Ring
+				i(21953),	-- Design Emerald Owl
+				i(21949),	-- Design Ruby Serpent
+				i(12057),	-- Dragonscale Band
+				i(12046),	-- Jungle Necklace
+				i(12002),	-- Marble Circle
+				i(12034),	-- Marble Necklace
+				i(12004),	-- Obsidian Band
 				i(12035),	-- Obsidian Pendant
-				i(12026),	-- Quicksilver Pendant      
-				i(11991),	-- Quicksilver Ring      
-				i(12056),	-- Ring Of The Heavens    
-				i(11976),	-- Sardonyx Knuckle      
-				i(12025),	-- Selenium Chain      
-				i(11990),	-- Selenium Loop      
-				i(11977),	-- Serpentine Loop      
-				i(7910),	-- Star Ruby      
-				i(12055),	-- Stardust Band      
-				i(12015),	-- Swamp Ring      
-				i(11989),	-- Vanadium Loop      
+				i(12026),	-- Quicksilver Pendant
+				i(11991),	-- Quicksilver Ring
+				i(12056),	-- Ring Of The Heavens
+				i(11976),	-- Sardonyx Knuckle
+				i(12025),	-- Selenium Chain
+				i(11990),	-- Selenium Loop
+				i(11977),	-- Serpentine Loop
+				i(7910),	-- Star Ruby
+				i(12055),	-- Stardust Band
+				i(12015),	-- Swamp Ring
+				i(11989),	-- Vanadium Loop
 			}),
 			i(16884, { 	-- Sturdy Junkbox
 				i(11974),	-- Aquamarine Ring
@@ -202,21 +202,21 @@ _.WorldDrops =
 			}),
 			i(29569, { 	-- Strong Junkbox
 				i(4354), 	-- Pattern: Rich Purple Silk Shirt [Discord Confirmation - Luce]
-				i(12002),	-- Formula: Enchant Bracer Superior Stamina   
-				i(15746),	-- Plans: Radiant Leggings     
-				i(2163),	-- The Night Blade 
-				i(16218),	-- Demonic Bone Ring     
-				i(12046),	-- Dragonscale Band      
-				i(12034),	-- Granite Necklace      
-				i(12004),	-- Jungle Ring      
-				i(12035),	-- Obsidian Band      
-				i(14494),	-- Obsidian Pendant      
-				i(15755),	-- Prismatic Pendant      
-				i(15743),	-- Quicksilver Pendant      
-				i(14499),	-- Quicksilver Ring      
-				i(12689),	-- Ring Of The Heavens    
-				i(12695),	-- Swamp Pendant      
-				i(12683),	-- Vermilion Necklace      
+				i(12002),	-- Formula: Enchant Bracer Superior Stamina
+				i(15746),	-- Plans: Radiant Leggings
+				i(2163),	-- The Night Blade
+				i(16218),	-- Demonic Bone Ring
+				i(12046),	-- Dragonscale Band
+				i(12034),	-- Granite Necklace
+				i(12004),	-- Jungle Ring
+				i(12035),	-- Obsidian Band
+				i(14494),	-- Obsidian Pendant
+				i(15755),	-- Prismatic Pendant
+				i(15743),	-- Quicksilver Pendant
+				i(14499),	-- Quicksilver Ring
+				i(12689),	-- Ring Of The Heavens
+				i(12695),	-- Swamp Pendant
+				i(12683),	-- Vermilion Necklace
 			}),
 			i(88165, { 	-- Vine-Cracked Junkbox
 				i(88149),	-- The Gloaming Blade

@@ -1,16 +1,16 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
 --[[
 8.0 Pre-Patch alignment complete
-To do: 
+TODO:
 1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
 2) Add [Reward] tag
 3) Source to local files if applicable
 ]]--
 
-_.Achievements = 
+_.Achievements =
 {
 	n(-9963, {	-- Pet Battles
 		["groups"] = {
@@ -651,7 +651,7 @@ _.Achievements =
 						crit(6),		-- Tainted Waveling (Serpentshrine Cavern - Hydross the Unstable)
 						crit(7),		-- Coilfang Stalker (Serpentshrine Cavern - Lady Vashj)
 						crit(8),		-- Pocket Reaver (The Eye - Void Reaver)
-						crit(9),		-- Lesser Voidcaller (The Eye - High Astromancer Solarian) 
+						crit(9),		-- Lesser Voidcaller (The Eye - High Astromancer Solarian)
 						crit(10),		-- Phoenix Hawk Hatchling (The Eye - Al'ar)
 					}),
 					ach(9824, {		-- Raiding with Leashes III: Drinkin' From the Sunwell*

@@ -1,8 +1,9 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-_.Achievements = 
+-- TODO: split into separate faction achievs?
+_.Achievements =
 {
 	n(-9968, {	-- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
 		["groups"] = {
@@ -80,7 +81,7 @@ _.Achievements =
 					un(2, ach(11692)),		-- Going On Seventeen
 					un(2, a(ach(433, {		-- Grand Marshal
 						un(39, a(title(14))),	-- Grand Marshal
-					}))),				
+					}))),
 					un(2, a(ach(8485))),	-- Grievous Combatant (Alliance)
 					un(2, h(ach(8484))),	-- Grievous Combatant (Horde)
 					un(2, a(ach(8382))),	-- Grievous Conquest (Alliance)
@@ -95,7 +96,7 @@ _.Achievements =
 					un(2, h(ach(9215))),	-- Hero of Warspear - This requires a rep at Exalted
 					un(2, h(ach(443, {		-- High Warlord
 						un(39, h(title(28))),	-- High Warlord
-					}))),	
+					}))),
 					un(2, h(ach(617))),		-- Immortal No More
 					un(2, a(ach(439, {		-- Knight
 						un(39, a(title(6))),	-- Knight
@@ -178,7 +179,7 @@ _.Achievements =
 					un(2, ach(1310)),		-- Storm the Beach
 					un(2, ach(1309, {		-- Strand of the Ancients Veteran
 							un(2, ach(1308)),	-- Strand of the Ancients Victory
-					})),				
+					})),
 					un(2, ach(1174, {		-- The Arena Master
 						un(39, title(50)),	-- Arena Master
 					})),
@@ -191,7 +192,7 @@ _.Achievements =
 						["hordeAchievementID"] = 10990,		-- Top Honors [Horde]
 						["u"] = 2,							-- Removed in Patch 8.0
 					},
-					
+
 					un(2, ach(12109)),		-- Twenty-One Arms Salute
 					un(2, a(ach(8218))),	-- Tyrannical Conquest (Alliance)
 					un(2, h(ach(8093))),	-- Tyrannical Conquest (Horde)
@@ -213,7 +214,7 @@ _.Achievements =
 						["allianceAchievementID"] = 10089,	-- Wild Conquest [Alliance]
 						["hordeAchievementID"] = 10088,		-- Wild Conquest [Horde]
 						["u"] = 2,							-- Removed in Patch 6.2.2
-					},	
+					},
 					un(2, ach(11691)),		-- You Are Sixteen
 				},
 			}),

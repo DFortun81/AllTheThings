@@ -1,16 +1,16 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
 --[[
 8.0 Pre-Patch alignment complete
-To do: 
+TODO:
 1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
 2) Add [Reward] tag
 3) Source to local files if applicable
 ]]--
 
-_.Achievements = 
+_.Achievements =
 {
 	n(-9964, {	-- Collections
 		["groups"] = {
@@ -73,7 +73,7 @@ _.Achievements =
 						crit(54), 		-- Ruby Droplet
 						crit(55), 		-- Azure Crane Chick
 						crit(56), 		-- Ashleaf Spriteling
-					}),	
+					}),
 					ach(9909, { 	-- Heirloom Hoarder (35)
 						{	-- Clinking Present
 							["itemID"] = 122718,	-- Clinking Present
@@ -94,22 +94,22 @@ _.Achievements =
 					ach(10053, {	-- I Found Pepe! (Various Draenor see criteria)
 						["groups"] = {
 							{
-								["achievementID"] = 10053,	-- I Found Pepe! (Achievement)	
+								["achievementID"] = 10053,	-- I Found Pepe! (Achievement)
 								["criteriaID"] = 1,			-- Pirate Pepe (Spires of Arak 54.1 83.6)
 								["description"] = "Located in Spires of Arak at 54.1 83.6"
 							},
 							{
-								["achievementID"] = 10053,	-- I Found Pepe! (Achievement)	
+								["achievementID"] = 10053,	-- I Found Pepe! (Achievement)
 								["criteriaID"] = 2,			-- Viking Pepe (Nagrand 80.1 50.4)
 								["description"] = "Located in Nagrand at 80.1 50.4"
 							},
 							{
-								["achievementID"] = 10053,	-- I Found Pepe! (Achievement)	
+								["achievementID"] = 10053,	-- I Found Pepe! (Achievement)
 								["criteriaID"] = 3,			-- Knight Pepe (Talador 51.0 63.3)
 								["description"] = "Located in Talador at 51.0 63.3"
 							},
 							{
-								["achievementID"] = 10053,	-- I Found Pepe! (Achievement)	
+								["achievementID"] = 10053,	-- I Found Pepe! (Achievement)
 								["criteriaID"] = 4,			-- Ninja Pepe (Gorgrond 47.5 41.3)
 								["description"] = "Located in Gorgrond at 47.5 41.3"
 							},

@@ -1,5 +1,5 @@
---------------------------------------------------
---          Z O N E S       M O D U L E          --
+---------------------------------------------------
+--          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 _.Zones =
 {
@@ -133,7 +133,7 @@ _.Zones =
 				["isDaily"] = true,
 				["coord"] = { 53.1, 28.3, 1355 },
 				["sourceQuest"] = 55500,	-- Save a Friend
-				["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",	
+				["description"] = "Requires |cFFFFD700Poen Gillbrack|r as your friend.",
 				["races"] = HORDE_ONLY,
 			}),
 			q(55983, {	-- A Safer Place (A)
@@ -186,17 +186,17 @@ _.Zones =
 					i(170520),	-- 7th Legionnaire's Hood
 					i(170519),	-- 7th Legionnaire's Amice
 					i(170514),	-- 7th Legionnaire's Robes
-					
+
 					-- Leather
 					i(170522),	-- 7th Legionnaire's Visage
 					i(170521),	-- 7th Legionnaire's Mantle
 					i(170515),	-- 7th Legionnaire's Vest
-					
+
 					-- Mail
 					i(170524),	-- 7th Legionnaire's Helm
 					i(170523),	-- 7th Legionnaire's Monnion
 					i(170525),	-- 7th Legionnaire's Chainmail
-					
+
 					-- Plate
 					i(170527),	-- 7th Legionnaire's Headpiece
 					i(170526),	-- 7th Legionnaire's Shoulderplates
@@ -685,7 +685,7 @@ _.Zones =
 					i(170275),	-- Honorbound Warmaul
 					i(163874),	-- Honorbound Decapitator
 					--i(163871),	-- Honorbound Pigstricker
-					i(163872),	-- Honorbound War Staff 
+					i(163872),	-- Honorbound War Staff
 					i(163868),	-- Honorbound Dagger
 					i(163876),	-- Honorbound Focus
 					i(163880),	-- Honorbound Gladius
@@ -1068,7 +1068,7 @@ _.Zones =
 				["provider"] = { "n", 149906 },	-- Vim Brineheart
 				["coord"] = { 50.8, 65.2, 1355 },
 				["races"] = HORDE_ONLY,
-				--["sourceQuest"] = 
+				--["sourceQuest"] =
 			}),
 			q(56150, {	-- Kill the Kritch (A)
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
@@ -1125,7 +1125,7 @@ _.Zones =
 				},
 			}),
 			q(55868, {	-- Let the Residue Lead You (H)
-				["provider"] = { "n", 153422 },	-- 
+				["provider"] = { "n", 153422 },	-- Chief Telemancer Oculeth
 				["coord"] = { 38.8, 30.4, 1355 },
 				["races"] = HORDE_ONLY,
 				["sourceQuests"] = {
@@ -1301,7 +1301,6 @@ _.Zones =
 				["description"] = "Requires |cFFFFD700Vim Brineheart|r as your friend.",
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
-				
 			}),
 			q(56160, {	-- Plug the Geysers
 				["sourceQuests"] = { 56156 },	-- A Tempered Blade
@@ -1514,7 +1513,7 @@ _.Zones =
 					56156,	-- A Tempered Blade (A)
 					55500,	-- Save a Friend (H)
 				},
-			}),			
+			}),
 			q(55720, {	-- Requisition: A Few Seaweed
 				["isDaily"] = true,
 				["providers"] = {
@@ -1575,7 +1574,7 @@ _.Zones =
 					55500,	-- Save A Friend (H)
 				},
 			}),
-			q(55792, {	-- Requisition: More Cone Shells 	
+			q(55792, {	-- Requisition: More Cone Shells
 				["isDaily"] = true,
 				["providers"] = {
 					{ "n", 154436 },	-- Craftsman Azama (A)
@@ -1661,7 +1660,7 @@ _.Zones =
 					{ 50.4, 66.2, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (A)				
+					56156,	-- A Tempered Blade (A)
 					55500,	-- Save a Friend (H)
 				},
 			}),
@@ -1676,7 +1675,7 @@ _.Zones =
 					{ 49.3, 61.5, 1355 },	-- Horde
 				},
 				["sourceQuests"] = {
-					56156,	-- A Tempered Blade (A)				
+					56156,	-- A Tempered Blade (A)
 					55500,	-- Save a Friend (H)
 				},
 			}),
@@ -2605,7 +2604,7 @@ _.Zones =
 				["g"] = {
 					i(169915),	-- Poen's Stashed Supplies
 				},
-			}),					
+			}),
 		}),
 	}),
 };

@@ -1,7 +1,9 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
-_.Achievements = 
+
+-- TODO: reformat this file
+_.Achievements =
 {
 	n(-9958, {	-- Player vs Player
 		n(-9997, {	-- Ashran
@@ -18,7 +20,7 @@ _.Achievements =
 					{	-- Blood Elf Ear // Worgen Snout
 						["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]
 						["hordeAchievementID"] = 9103,		-- Bounty Hunter [Horde]
-						["criteriaID"] = 2,			-- Blood Elf Ear // Worgen Snout 
+						["criteriaID"] = 2,			-- Blood Elf Ear // Worgen Snout
 					},
 					{	-- Tauren Hoof // Severed Night Elf Head
 						["allianceAchievementID"] = 9104,	-- Bounty Hunter [Alliance]

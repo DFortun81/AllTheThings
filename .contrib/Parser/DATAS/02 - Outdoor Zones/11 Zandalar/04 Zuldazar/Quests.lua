@@ -6,25 +6,25 @@ _.Zones =
 	m(875, {	-- Zandalar
 		m(862, {	-- Zuldazar
 			n(QUESTS, {
-			--	shit that needs solving: 
+			--	shit that needs solving:
 				--	what unlocks "productive pests"/"crabulous feast"?  the other two quests in the area (76.4, 48.7) are available with no prerequisites, not even starting the zuldazar/dazar'alor, but as soon as you land in the port of dazar'alor for the first time after the pre-BFA stuff.
-				
+
 				--	when does "keep them on task" (breadcrumb for area mentioned above) unlock?  could be as early as "terrace of the chosen" or as late as "mistress of lies," which is when i saw it.
-				
+
 				--	when are "sandscar breach" and "the bones of xibala" available?  i picked them up after "the king's gambit," but they may be available slightly earlier.
-				
+
 				--	when does "who seeks the seekers?" (in dazar'alor) become available?  seen as early as "the prophet's ploy," but may be available sooner.
-				
+
 				--	when does "king da'ka" become available?  didn't see it until after i picked up the breadcrumb for the area after turning in "the prophet's ploy," but may be available sooner.  "kaja'mite ore dust" (in the same area) requires zero prereqs, not even the intro to dazar'alor, but this quest wasn't available then.
-				
+
 				-- when does "lil' tika" become available?  saw it after "the king's gambit" but not sure if that's the requirement to unlock.  the other quests in the area are available prior to doing any quests in dazar'alor or zuldazar.
-				
+
 				-- possible that "hunting the hunter" only requires "predatory."  check!
-				
+
 				-- figure out if "prepare for a siege" is a breadcrumb for anything.  there was no follow-up quest to take so i'm not sure if this quest is a requirement for something or just flavor.
-				
+
 				-- for "how to train your direhorn," i never got the version of "away from the herd" that is questID #55249, just #55244.  figure out if 55249 is used/unused and if/when it appears.
-				
+
 				n(-9, {		-- PvP
 					["lvl"] = 120,	-- Don't become available until this level.
 					["g"] = {
@@ -479,7 +479,7 @@ _.Zones =
 						i(155300),	-- Jambani Deflector
 						i(159763),	-- Jambani Hex Focus
 						i(155302),	-- Idol of Vol'jamba
-					},	
+					},
 				}),
 				q(49901, {	-- Atal'Dazar: Yazma the Fallen Priestess
 					["sourceQuests"] = { 49426 },	-- The King's Gambit
@@ -557,7 +557,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(49286, {	-- Caged Wisdom
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						49284,	-- Perfect Tidings
 						49285,	-- Tiny Treasures
 					},
@@ -567,7 +567,7 @@ _.Zones =
 				q(49425, {	-- City of Gold
 					["sourceQuests"] = {
 						49422,	-- Heretics
-						49424,	-- The Full Prophecy	
+						49424,	-- The Full Prophecy
 					},
 					["provider"] = { "n", 129703 },	-- Hexlord Raal
 					["coord"] = { 49.6, 38.0, 862 },
@@ -589,7 +589,7 @@ _.Zones =
 					["sourceQuests"] = {
 						49144,	-- Wrath of the Zandalari
 						49145,	-- No Troll Left Behind
-						49146,	-- Spirits' Belongings	
+						49146,	-- Spirits' Belongings
 					},
 					["provider"] = { "n", 127815 },	-- Zolani
 					["coord"] = { 47.9, 60.4, 862 },
@@ -642,7 +642,7 @@ _.Zones =
 				q(49149, {	-- Embrace the Voodoo
 					["sourceQuests"] = {
 						49145,	-- No Troll Left Behind
-						49146,	-- Spirits' Belongings	
+						49146,	-- Spirits' Belongings
 						49144,	-- Wrath of the Zandalari
 					},
 					["provider"] = { "n", 127837 },	-- Kaza'jin the Wavebinder
@@ -1214,12 +1214,11 @@ _.Zones =
 					["sourceQuests"] = {
 						49144,	-- Wrath of the Zandalari
 						49145,	-- No Troll Left Behind
-						49146,	-- Spirits' Belongings	
+						49146,	-- Spirits' Belongings
 					},
 					["provider"] = { "n", 127814 },	-- Habutu
 					["coord"] = { 47.9, 60.4, 862 },
 					["races"] = HORDE_ONLY,
-					
 					["g"] = {
 						i(155304),	-- Stormbinder Signet Ring
 						i(158412),	-- Zanchuli Cuffs
@@ -1422,7 +1421,7 @@ _.Zones =
 						i(155259),	-- Jambani Shoulderpads
 						i(155251),	-- Zanchuli Cowl
 						i(155261),	-- Zanchuli Mantle
-					},	
+					},
 				}),
 				q(49814, {	-- The Scent for a Brutosaur
 					["sourceQuests"] = { 49810 },	-- Monstrous Matchmaker
@@ -1467,7 +1466,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(55247, {	-- The Trust You've Earned
-					["sourceQuests"] = { 55507 },	-- Torcali's Blessing 
+					["sourceQuests"] = { 55507 },	-- Torcali's Blessing
 					["provider"] = { "n", 151319 },	-- Li'zal <Priestess of Torcali>
 					["coord"] = { 68.3, 41.8, 862 },
 					["races"] = HORDE_ONLY,
@@ -1608,7 +1607,7 @@ _.Zones =
 					["sourceQuests"] = { 49122 },	-- A Port in Peril
 					["provider"] = { "n", 127815 },	-- Zolani
 					["coord"] = { 47.9, 60.4, 862 },
-					["races"] = HORDE_ONLY,	
+					["races"] = HORDE_ONLY,
 				}),
 				q(47228, {	-- Xibalan Ecology (H)
 					["sourceQuests"] = { 47329 },	-- The Bloodwatcher Legacy
@@ -1641,17 +1640,17 @@ _.Zones =
 					["coord"] = { 64.4, 28.5, 862 },
 					["races"] = HORDE_ONLY,
 				}),
-				
-				
-				
-				
-				
 
 
 
 
 
-				
+
+
+
+
+
+
 				q(53449, {	-- Apes of Wrath
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 129589 },	-- The Monkey King
@@ -1800,8 +1799,8 @@ _.Zones =
 					["provider"] = { "n", 122760 },	-- Wardruid Loti
 					["sourceQuests"] = { 47741 },	-- To Sacrifice a Loa
 				}),
-				
-				
+
+
 				--	unsorted
 				q(50954, {	-- Zandalar Forever!
 					["coord"] = { 60.0, 22.2, 862 },

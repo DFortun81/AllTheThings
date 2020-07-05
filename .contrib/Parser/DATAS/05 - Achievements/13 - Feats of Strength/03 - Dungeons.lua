@@ -1,5 +1,5 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
 _.Achievements =
@@ -117,7 +117,7 @@ _.Achievements =
 						un(39, title(291)),	-- the Mine Master
 					})),
 					un(2, ach(8434, {		-- Challenge Master: Gate of the Setting Sun
-						un(39, title(241)),	-- ,Defender of the Wall
+						un(39, title(241)),	-- , Defender of the Wall
 					})),
 					un(2, ach(9625, {		-- Challenge Master: Grimrail Depot
 						un(39, title(299)),	-- the Grimrail Suplexer
@@ -147,7 +147,7 @@ _.Achievements =
 						un(39, title(247)),	-- Siegebreaker
 					})),
 					un(2, ach(9623, {		-- Challenge Master: Skyreach
-						un(39, title(294)),	-- ,Scion of Rukhmar
+						un(39, title(294)),	-- , Scion of Rukhmar
 					})),
 					un(2, ach(8431, {		-- Challenge Master: Stormstout Brewery
 						un(39, title(248)),	-- Stormbrewer
@@ -159,10 +159,10 @@ _.Achievements =
 						un(39, title(298)),	-- the Violet Guardian
 					})),
 					un(2, ach(9627, {		-- Challenge Master: Upper Blackrock Spire
-						un(39, title(296, {	-- ,Lord of Blackrock
+						un(39, title(296, {	-- , Lord of Blackrock
 							["description"] = "Must earn with a male character.",
 						})),
-						un(39, title(297, {	-- ,Lady of Blackrock
+						un(39, title(297, {	-- , Lady of Blackrock
 							["description"] = "Must earn with a female character.",
 						})),
 					})),

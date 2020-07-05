@@ -1,16 +1,16 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
 --[[
 8.0 Pre-Patch alignment complete
-To do: 
+TODO:
 1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
 2) Add [Reward] tag
 3) Source to local files if applicable
 ]]--
 
-_.Achievements = 
+_.Achievements =
 {
 	n(-9962, {	-- World Events
 		["groups"] = bubbleDown({["u"] = 21}, {
@@ -118,7 +118,7 @@ _.Achievements =
 						crit(6),		-- Zul'Drak
 						crit(7),		-- Grizzly Hills
 						crit(8),		-- Crystalsong Forest
-					})),	
+					})),
 					a(ach(1030, {	-- Extinguishing Outland (Alliance)
 						crit(1),		-- Blade's Edge Mountains
 						crit(2),		-- Hellfire Peninsula

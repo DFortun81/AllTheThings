@@ -1,16 +1,16 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
 --[[
 8.0 Pre-Patch alignment complete
-To do: 
+TODO:
 1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
 2) Add [Reward] tag
 3) Source to local files if applicable
 ]]--
 
-_.Achievements = 
+_.Achievements =
 {
 	n(-9968, {	-- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
 		["groups"] = {
@@ -141,7 +141,7 @@ _.Achievements =
 						["classes"] = { 4 },
 					}),
 					un(2, ach(2923)),		-- Iron Dwarf, Medium Rare (10 player)
-					un(2, ach(2924)),		-- Iron Dwarf, Medium Rare (25 player)				
+					un(2, ach(2924)),		-- Iron Dwarf, Medium Rare (25 player)
 					un(2, ach(705)),		-- Master of Arms
 					un(2, ach(559)),		-- Needy
 					un(2, a(ach(7946))),	-- Now You're Just Showing Off (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
@@ -188,10 +188,10 @@ _.Achievements =
 						["classes"] = { 5 },
 					})),
 					un(2, a(ach(7940))),	-- The Second Rule of Brawler's Guild (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
-					un(2, h(ach(7939))),	-- The Second Rule of Brawler's Guild (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**					
+					un(2, h(ach(7939))),	-- The Second Rule of Brawler's Guild (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
 					un(2, ach(2018)),		-- Timear Foresees
 					un(2, a(ach(7937))),	-- You Are Not Your $#*@! Legplates (Season 1) (Alliance) **Can't find any commentary on whether this is still available in Legion season or not.**
-					un(2, h(ach(8020))),	-- You Are Not Your $#*@! Legplates (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**					
+					un(2, h(ach(8020))),	-- You Are Not Your $#*@! Legplates (Season 1) (Horde) **Can't find any commentary on whether this is still available in Legion season or not.**
 					un(2, ach(8697)),		-- You're Doing it Wrong (Level 90)
 				},
 			}),

@@ -1,8 +1,9 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-_.Achievements = 
+-- TODO: reformat this file
+_.Achievements =
 {
 	n(-9959, {	-- Dungeons & Raids
 		["groups"] = {
@@ -661,7 +662,7 @@ _.Achievements =
 					{	-- Straight Six
 						["achievementID"] = 6686,	-- Straight Six
 					},
-					{	-- Strike!	
+					{	-- Strike!
 						["achievementID"] = 8537,	-- Strike!
 					},
 					{	-- Swallow Your Pride

@@ -8,7 +8,7 @@ _.Zones =
 			n(QUESTS, {
 				--[[
 					55623 triggered after killing crazed trogg, but isn't a killID for him. Not sure what this is from
-					
+
 					Scrappy can be found at (70.5,30.5) and requires an energy cell to revive him
 					R33-DR - 63.4, 57.0 interactive "data analyzer" npc. Possibly part of a puzzle?
 				]]--
@@ -1374,7 +1374,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(56501, {	-- Taking the Air Out	— TO DO: figure out if you need to be on "A Direct Approach" to get this -- this quest wasn't offered my second time doing "A Direct Approach, but "Waste Not" was.  maybe they cycle?
+				q(56501, {	-- Taking the Air Out	— TODO: figure out if you need to be on "A Direct Approach" to get this -- this quest wasn't offered my second time doing "A Direct Approach, but "Waste Not" was.  maybe they cycle?
 					["isDaily"] = true,
 					["itemID"] = 169682,	-- Venture Co. Rocket Box
 					["crs"] = {
@@ -1558,7 +1558,7 @@ _.Zones =
 				}),
 				i(169682, {	-- Venture Co. Rocket Box
 					["questID"] = 56501,	-- Taking The Air Out -- only available during "Unprofitable Ventures"? Is this also considered a daily, then?
-					["coord"] = { 42.8, 41.9, 862 }, 
+					["coord"] = { 42.8, 41.9, 862 },
 					["crs"] = {
 						155259,	-- Lifting Specialist Gogo
 					},
@@ -1605,7 +1605,7 @@ _.Zones =
 					["coord"] = { 70.8, 39.1, 1462 },
 					["sourceQuest"] = 55210,	-- Batteries Not Included
 				}),
-				q(56324, {	-- Your First Charge Ain't Free! 
+				q(56324, {	-- Your First Charge Ain't Free!
 					["provider"] = { "n", 154534 },	-- Flux
 					["coord"] = { 61.2, 37.4, 1462 },
 					["repeatable"] = true,	-- repeatable when the tower is up to craft filled energy cells

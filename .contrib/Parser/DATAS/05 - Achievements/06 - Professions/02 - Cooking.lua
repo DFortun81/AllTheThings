@@ -1,16 +1,16 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
 --[[
 8.0 Pre-Patch alignment complete
-To do: 
+TODO:
 1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
 2) Add [Reward] tag
 3) Source to local files if applicable
 ]]--
 
-_.Achievements = 
+_.Achievements =
 {
 	n(-9960, {	-- Professions
 		["groups"] = {
@@ -103,7 +103,7 @@ _.Achievements =
 								["hordeAchievementID"] = 5844,		-- Let's Do Lunch: Undercity [Horde]
 								["criteriaID"] = 5,	-- Spice Bread Aplenty [Alliance] // Would You Like Some Flies With That? [Horde]
 							},
-						},	
+						},
 					},
 					{  -- Let's Do Lunch: Stormwind/Orgrimmar
 						["allianceAchievementID"] = 5474,	-- Let's Do Lunch: Stormwind [Alliance]
@@ -134,7 +134,7 @@ _.Achievements =
 								["hordeAchievementID"] = 5475,		-- Let's Do Lunch: Orgrimmar [Horde]
 								["criteriaID"] = 5,	-- The King's Cider [Alliance] // Stealing Credit [Horde]
 							},
-						},	
+						},
 					},
 					{  -- Let's Do Lunch: Ironforge/Thunder Bluff
 						["allianceAchievementID"] = 5841,	-- Let's Do Lunch: Ironforge [Alliance]
@@ -165,7 +165,7 @@ _.Achievements =
 								["hordeAchievementID"] = 5843,		-- Let's Do Lunch: Thunder Bluff [Horde]
 								["criteriaID"] = 5,	-- I Need to Cask a Favor [Alliance] // Perfectly Picked Portions [Horde]
 							},
-						},	
+						},
 					},
 					ach(7306, {		-- Master of Pandaren Cooking
 						title(202),		-- , Master of the Ways
@@ -217,7 +217,7 @@ _.Achievements =
 								["hordeAchievementID"] = 1783,		-- Our Daily Bread [Horde]
 								["criteriaID"] = 5,	-- Mustard Dogs! [Alliance] // [Horde]
 							},
-						},	
+						},
 					},
 					ach(124),		-- Outland Cook
 					ach(1780, {		-- Second That Emotion
@@ -350,7 +350,7 @@ _.Achievements =
 								["hordeAchievementID"] = 12746,		-- The Zandalari Menu [Horde]
 								["criteriaID"] = 12, -- Swamp Fish 'n Chips [Alliance] // [Horde]
 							},
-						},	
+						},
 					},
 					ach(10762, {	-- The Legion Menu
 						crit(1),		-- Salt and Pepper Shank

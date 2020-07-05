@@ -23,7 +23,7 @@ _.Zones =
 							i(170203, {	-- Flopping Fish (TOY!)
 								crit(22, {	-- Flopping Fish
 									["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-								}),		
+								}),
 							}),
 							i(170469),	-- Memento of the Deeps
 							i(169198),	-- Royal Snapdragon (MOUNT!)
@@ -50,7 +50,7 @@ _.Zones =
 							i(170203, {	-- Flopping Fish (TOY!)
 								crit(22, {	-- Flopping Fish
 									["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
-								}),		
+								}),
 							}),
 							i(170469),	-- Memento of the Deeps
 							i(169198),	-- Royal Snapdragon (MOUNT!)

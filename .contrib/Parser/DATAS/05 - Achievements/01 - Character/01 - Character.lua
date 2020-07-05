@@ -1,8 +1,8 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-_.Achievements = 
+_.Achievements =
 {
 	n(-10051, {	-- Character
 		["groups"] = {
@@ -56,7 +56,7 @@ _.Achievements =
 				ach(5455),		-- Got My Mind On My Money (50,000)
 				ach(5456),		-- Got My Mind On My Money (100,000)
 			}),
-			ach(12544, {	-- Level 120	
+			ach(12544, {	-- Level 120
 				ach(6),			-- Level 10
 				ach(7),			-- Level 20
 				ach(8),			-- Level 30

@@ -1,22 +1,22 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
 --[[
 8.0 Pre-Patch alignment complete
-To do: 
+TODO:
 1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
 2) Add [Reward] tag
 3) Source to local files if applicable
 ]]--
 
-_.Achievements = 
+_.Achievements =
 {
 	n(-9958, {	-- Player vs Player
 		["achievementID"] = 12412,
 		["g"] = {
 			n(-10001, {	-- Seething Shore
-				["maps"] = { 
+				["maps"] = {
 					907,	-- Seething Shore
 					-- 907 doubles as the trial map, but i feel like it's better to have it show the achievements in the BG for consistency across battlegrounds.  confusing for trials, but oh well!
 				},

@@ -1,16 +1,16 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
 --[[
 8.0 Pre-Patch alignment complete
-To do: 
+TODO:
 1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
 2) Add [Reward] tag
 3) Source to local files if applicable
 ]]--
 
-_.Achievements = 
+_.Achievements =
 {
 	n(-9968, {	-- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
 		["groups"] = {
@@ -46,7 +46,7 @@ _.Achievements =
 								un(4, i(90150)),	-- Reach of the Golden King
 								un(4, i(90153)),	-- Mantle of the Golden King
 								un(4, i(90149)),	-- Chestplate of the Golden King
-								un(4, i(90152)),	-- Greaves of the Golden King								
+								un(4, i(90152)),	-- Greaves of the Golden King
 							},
 							["f"] = 58,
 						})),
@@ -124,7 +124,7 @@ _.Achievements =
 								un(4, i(90100)),	-- Greathelm of the Holy Warrior
 								un(4, i(90101)),	-- Legplates of the Holy Warrior
 								un(4, i(90102)),	-- Shoulderplate of the Holy Warrior
-								un(4, i(90103)),	-- Wristguards of the Holy Warrior								
+								un(4, i(90103)),	-- Wristguards of the Holy Warrior
 							},
 							["f"] = 58,
 						})),

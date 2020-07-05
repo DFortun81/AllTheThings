@@ -1,16 +1,16 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
 --[[
 8.0 Pre-Patch alignment complete
-To do: 
+TODO:
 1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
 2) Add [Reward] tag
 3) Source to local files if applicable
 ]]--
 
-_.Achievements = 
+_.Achievements =
 {
 	n(-10055, {	-- Expansion Features
 		n(-10059, {	-- Pandaria Scenarios
@@ -65,7 +65,7 @@ _.Achievements =
 				["maps"] = { 520, 521 },
 			}),
 			ach(8010, 8013, {	-- Domination Point (H), Lion's Landing (A)
-				["maps"] = { 
+				["maps"] = {
 					498,	-- Domination Point
 					486,	-- Lion's Landing
 				},
@@ -110,7 +110,7 @@ _.Achievements =
 				["maps"] = { 520, 521 },
 			}),
 			ach(8327, {			-- Heroic: The Secrets of Ragefire (The Secrets of Ragefire)
-				["maps"] = { 522 },	-- The Secrets of Ragefire 
+				["maps"] = { 522 },	-- The Secrets of Ragefire
 			}),
 			ach(7992, {			-- I Used To Love Them (A Little Patience)
 				["maps"] = { 487 },	-- A Little Patience
@@ -154,7 +154,7 @@ _.Achievements =
 				["maps"] = { 483 },	-- Dustwallow Marsh (Theramore's Fall)
 			}),
 			ach(8011, 8014, {	-- Number Five is Alive (A, H)
-				["maps"] = { 
+				["maps"] = {
 					498,	-- Domination Point
 					486,	-- Lion's Landing
 				},
@@ -197,7 +197,7 @@ _.Achievements =
 				["maps"] = { 450 },	-- Unga Ingoo
 			}),
 			ach(8295, {			-- The Few, the Proud, the Gob Squad (The Secrets of Ragefire)
-				["maps"] = { 522 },	-- The Secrets of Ragefire 
+				["maps"] = { 522 },	-- The Secrets of Ragefire
 			}),
 			ach(7232, {			-- The Keg Runner (Unga Ingoo)
 				["maps"] = { 450 },	-- Unga Ingoo
@@ -206,7 +206,7 @@ _.Achievements =
 				["maps"] = { 447 },	-- A Brewing Storm
 			}),
 			ach(8294, {			-- The Secrets of Ragefire (The Secrets of Ragefire)
-				["maps"] = { 522 },	-- The Secrets of Ragefire 
+				["maps"] = { 522 },	-- The Secrets of Ragefire
 			}),
 			ach(7523, 7524, {	-- Theramore's Fall (A, H)
 				["maps"] = { 483 },	-- Dustwallow Marsh (Theramore's Fall)
@@ -215,7 +215,7 @@ _.Achievements =
 				["maps"] = { 450 },	-- Unga Ingoo
 			}),
 			ach(8012, 8015, {	-- Waste Not, Want Not (A, H)
-				["maps"] = { 
+				["maps"] = {
 					498,	-- Domination Point
 					486,	-- Lion's Landing
 				},

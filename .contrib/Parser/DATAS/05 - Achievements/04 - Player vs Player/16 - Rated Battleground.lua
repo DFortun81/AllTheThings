@@ -1,16 +1,16 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
 --[[
 8.0 Pre-Patch alignment complete
-To do: 
+TODO:
 1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
 2) Add [Reward] tag
 3) Source to local files if applicable
 ]]--
 
-_.Achievements = 
+_.Achievements =
 {
 	n(-9958, {	-- Player vs Player
 		["groups"] = {
@@ -117,7 +117,7 @@ _.Achievements =
 					})),
 					a(ach(5329, {	-- Warbound Veteran of the Alliance
 						a(i(70909)),	-- Reins of the Vicious War Steed
-						a(title(145)),	-- Warbound 
+						a(title(145)),	-- Warbound
 						a(ach(5823, {	-- Veteran of the Alliance II
 							a(i(70909)),	-- Reins of the Vicious War Steed
 						})),

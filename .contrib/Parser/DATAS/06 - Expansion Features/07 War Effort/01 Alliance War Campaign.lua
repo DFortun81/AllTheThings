@@ -80,17 +80,17 @@ _.ExpansionFeatures =
 						i(163654),	-- 7th Legionnaire's Circlet
 						i(163653),	-- 7th Legionnaire's Mantle
 						i(163676),	-- 7th Legionnaire's Raiment
-						
+
 						-- Leather
 						i(163656),	-- 7th Legionnaire's Mask
 						i(163655),	-- 7th Legionnaire's Shoulderpads
 						i(163657),	-- 7th Legionnaire's Tunic
-						
+
 						-- Mail
 						i(163659),	-- 7th Legionnaire's Skullcap
 						i(163658),	-- 7th Legionnaire's Spaulders
 						i(163660),	-- 7th Legionnaire's Chainmail
-						
+
 						-- Plate
 						i(163662),	-- 7th Legionnaire's Helmet
 						i(163661),	-- 7th Legionnaire's Pauldrons
@@ -1163,7 +1163,7 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { 54206 },	-- The Sleeper Agent
 					}),
-				--	MISCHIEF MANAGED STARTS HERE	— NEED TO DO ON CLOTH/LEATHER/PLATE
+				--	MISCHIEF MANAGED STARTS HERE	TODO: NEED TO DO ON CLOTH/LEATHER/PLATE
 					q(54169, {	-- The Treasury Heist
 						["provider"] = { "n", 146982 },	-- Lady Jaina Proudmoore
 						["coord"] = { 40.6, 70.7, 862 },	-- Zuldazar
@@ -1182,7 +1182,7 @@ _.ExpansionFeatures =
 							i(163394),	-- 7th Legionnaire's Helm
 							i(163389),	-- 7th Legionnaire's Monnion
 							i(163398),	-- 7th Legionnaire's Chainmail
-							-- Need to do this criteria on leather and plate to get other rewards
+							-- TODO: Need to do this criteria on leather and plate to get other rewards
 						},
 					}),
 				--	BETWEEN MISCHIEF MANAGED AND HE WHO WALKS IN THE LIGHT
@@ -1344,7 +1344,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 55784 },	-- Payment in Kind
 						["coord"] = { 85.7, 31.7, 84 },	-- Stormwind
 						["races"] = ALLIANCE_ONLY,
-						["maps"] = { 
+						["maps"] = {
 							84,		-- Stormwind
 							1479,	-- Baine Rescue (Scenario)
 						},

@@ -408,7 +408,7 @@ _.ExpansionFeatures =
 						["isWorldQuest"] = true,
 					}),
 					q(56177, {	-- Void Conduit
-						-- note: looks like this questID can appear in multiple places. Possible for the other versions to do the same?
+						-- TODO: note: looks like this questID can appear in multiple places. Possible for the other versions to do the same?
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 						["coords"] = {
@@ -436,7 +436,7 @@ _.ExpansionFeatures =
 			n(-10077, {	-- Assault: The Warring Clans
 				n(QUESTS, {
 					-- Assault questline
-					q(57067, {	-- Mogu at the Gates	-- showed up when the Warring Clans assault was up. is there a pre-req? 
+					q(57067, {	-- Mogu at the Gates	-- showed up when the Warring Clans assault was up. is there a pre-req?
 						["coord"] = { 44.7, 73.8, 1530 },
 						["provider"] = { "n", 154444 },	-- Stormspeaker Qian
 					}),
@@ -1488,7 +1488,6 @@ _.ExpansionFeatures =
 							i(174647, {	-- Rajani Tabard
 								["cost"] = 2400000,	-- 240g
 							}),
-							
 							i(174905, {	-- Troop Requisition: Rajani Sparkcaller
 								["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 								["questID"] = 58907,

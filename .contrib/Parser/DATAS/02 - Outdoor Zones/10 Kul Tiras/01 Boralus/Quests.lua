@@ -650,7 +650,7 @@ _.Zones =
 					["sourceQuest"] = 54946,	-- Report to Gila
 				}),
 				q(51488, {	-- Archived Knowledge
-					["sourceQuests"] = { 51487 },	-- Searching for Answers 
+					["sourceQuests"] = { 51487 },	-- Searching for Answers
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 137871 },	-- Taelia
 					-- NOTE: This might have to move to a different map. - Crieve
@@ -863,7 +863,7 @@ _.Zones =
 					},
 				}),
 				q(47952, {	-- The Missing Fleet
-					["sourceQuests"] = { 47962 },	-- Stormsong Valley 
+					["sourceQuests"] = { 47962 },	-- Stormsong Valley
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 121235 },	-- Taelia
 				}),
@@ -914,7 +914,7 @@ _.Zones =
 					["provider"] = { "n", 122370 },	-- Cyrus Crestfall
 				}),
 				q(49715, {	-- Trouble at Greystone Keep
-					["sourceQuests"] = { 50790 },	-- Hot Pursuit 
+					["sourceQuests"] = { 50790 },	-- Hot Pursuit
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 130377 },	-- Courier Gerald

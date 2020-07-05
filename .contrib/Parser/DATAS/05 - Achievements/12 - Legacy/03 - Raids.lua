@@ -1,16 +1,16 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
 --[[
 8.0 Pre-Patch alignment complete
-To do: 
+TODO:
 1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
 2) Add [Reward] tag
 3) Source to local files if applicable
 ]]--
 
-_.Achievements = 
+_.Achievements =
 {
 	n(-9968, {	-- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
 		["groups"] = {
@@ -139,7 +139,7 @@ _.Achievements =
 						un(2, ach(2915)),	-- Nuked from Orbit (10 player)
 						un(2, ach(2914)),	-- Orbital Devastation (10 player)
 						un(2, ach(2913)),	-- Orbital Bombardment (10 player)
-					})),						
+					})),
 					un(2, ach(3057, {	-- Orbit-uary (25 player)
 						un(2, ach(2917)),	-- Nuked from Orbit (25 player)
 						un(2, ach(2916)),	-- Orbital Devastation (25 player)

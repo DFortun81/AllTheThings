@@ -177,7 +177,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = {
 							42671,	-- Rise, Champions (Kayn) — must be on this quest
 							42670,	-- Rise, Champions (Altruis) — must be on this quest
-						}, 
+						},
 						["provider"] = { "n", 108326 },  -- Asha Ravensong
 						["coord"] = { 56.2, 38.9, 720 },
 						["lvl"] = 101,
@@ -891,7 +891,7 @@ _.ExpansionFeatures =
 								["cost"] = 5000000,	-- 500g
 							}),
 						},
-					}),	
+					}),
 				}),
 			},
 		}),

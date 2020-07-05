@@ -1,5 +1,5 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
 _.Achievements =
@@ -9,6 +9,7 @@ _.Achievements =
 			n(-9979, {	-- Cataclysm
 				["groups"] = {
 					ach(5318, 5319),  -- 20,000 Leagues Under the Sea (Vashj'ir) (Alliance) / (Horde)
+					-- TODO: commented code?
 					--[[a(ach(5318)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Alliance)
 					h(ach(5319)),	-- 20,000 Leagues Under the Sea (Vashj'ir) (Horde)]]
 					ach(5868, {		-- And the Meek Shall Inherit Kalimdor (Mount Hyjal)

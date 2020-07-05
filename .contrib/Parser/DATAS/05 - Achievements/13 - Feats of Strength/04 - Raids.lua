@@ -1,7 +1,8 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
+-- TODO: replace class numbers with names
 _.Achievements =
 {
 	n(-9969, {	-- Feats of Strength

@@ -1,11 +1,11 @@
 --------------------------------------------------
---   G R O U P    F I N D E R    M O D U L E    --
+--    G R O U P   F I N D E R   M O D U L E     --
 --------------------------------------------------
 
 _.GroupFinder =
 {
 	n(-10, {	-- Party Sync
-	--	["description"] = "",	-- Add a description here about how to get rewards when we figure it out!  
+	--	["description"] = "",	-- TODO: Add a description here about how to get rewards when we figure it out!
 		["g"] = {
 			i(171305, {	-- Salvaged Cache of Goods
 				cl(6,  {	-- Death Knight
@@ -27,21 +27,21 @@ _.GroupFinder =
 				cl(12, {	-- Demon Hunter
 					["g"] = {	-- Confirmed obtaining all this stuff on horde DH.  If anything it has to do with spec.
 						i(173688),	-- Illidari Belt
-						i(173683),	-- Illidari Blindfold 
-						i(173687),	-- Illidari Boots	
-						i(173686),	-- Illidari Bracers 
-						i(173684),	-- Illidari Gloves 
+						i(173683),	-- Illidari Blindfold
+						i(173687),	-- Illidari Boots
+						i(173686),	-- Illidari Bracers
+						i(173684),	-- Illidari Gloves
 						i(173682),	-- Illidari Leggings
-						i(173685),	-- Illidari Robe 
+						i(173685),	-- Illidari Robe
 						i(173681),	-- Illidari Shoulders
-						i(173676),	-- Illidari Belt	
-						i(173673),	-- Illidari Blindfold 
+						i(173676),	-- Illidari Belt
+						i(173673),	-- Illidari Blindfold
 						i(173680),	-- Illidari Boots
 						i(173675),	-- Illidari Bracers
 						i(173678),	-- Illidari Gloves
 						i(173674),	-- Illidari Leggings
-						i(173677),	-- Illidari Robe 
-						i(173679),	-- Illidari Shoulders	
+						i(173677),	-- Illidari Robe
+						i(173679),	-- Illidari Shoulders
 						i(173672),	-- Illidari Warglaive
 					},
 				}),
@@ -74,7 +74,7 @@ _.GroupFinder =
 						i(173595),	-- Trailseeker Greaves
 						i(173597),	-- Trailseeker Helm
 						i(173598),	-- Trailseeker Legguards
-						i(173599, {	-- Trailseeker Spaulders 
+						i(173599, {	-- Trailseeker Spaulders
 							["modID"] = 11,
 						}),
 						i(173594),	-- Trailseeker Vest

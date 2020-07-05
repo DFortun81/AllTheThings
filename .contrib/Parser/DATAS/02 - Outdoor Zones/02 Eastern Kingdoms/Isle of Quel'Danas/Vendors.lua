@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(122, {	-- Isle of Quel'Danas
 			n(VENDORS, {
-			-- TO DO: Olus
+			-- TODO: Olus
 				n(25032, {	-- Eldara Dawnrunner <Shattered Sun Quartermaster>
 					["coord"] = { 47.2, 30.7, 122 },
 					["g"] = {
@@ -311,7 +311,7 @@ _.Zones =
 				}),
 				n(26089, {	-- Kayri <Exotic Gear Purveyor>
 					["coord"] = { 50.2, 39.7, 122 },
-					["g"] = {		
+					["g"] = {
 						i(32809),	-- Veteran's Chain Bracers
 						i(32797),	-- Veteran's Chain Girdle
 						i(32785),	-- Veteran's Chain Sabatons
@@ -1175,7 +1175,7 @@ _.Zones =
 						i(34563, {	-- Treads of Absolution
 							["cost"] = { { "i", 34856, 1 }, },	-- Boots of the Forgotten Conqueror
 						}),
-					},	
+					},
 				}),
 				n(25977, {	-- Yrma <Transmuter of Sin'dorei Relics>
 					["coord"] = { 50.2, 28.2 },

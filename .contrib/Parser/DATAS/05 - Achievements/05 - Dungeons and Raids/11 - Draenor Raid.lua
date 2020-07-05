@@ -1,20 +1,20 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
 --[[
 8.0 Pre-Patch alignment complete
-To do: 
+TODO:
 1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
 2) Add [Reward] tag
 3) Source to local files if applicable
 ]]--
 
-_.Achievements = 
+_.Achievements =
 {
 	n(-9959, {	-- Dungeons & Raids
 		["groups"] = {
-			n(-10011, {	-- Draenor Raid 
+			n(-10011, {	-- Draenor Raid
 				["groups"] = {
 					ach(8975),		-- A Fungus Among Us
 					ach(9972, {		-- A Race Against Slime

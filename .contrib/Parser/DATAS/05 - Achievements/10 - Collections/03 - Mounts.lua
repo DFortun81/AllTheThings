@@ -1,16 +1,16 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
 --[[
 8.0 Pre-Patch alignment complete
-To do: 
+TODO:
 1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
 2) Add [Reward] tag
 3) Source to local files if applicable
 ]]--
 
-_.Achievements = 
+_.Achievements =
 {
 	n(-9964, {	-- Collections
 		["groups"] = {
@@ -30,7 +30,7 @@ _.Achievements =
 					{	-- No Stable Big Enough [350 Mounts]
 						["allianceAchievementID"] = 12932,	-- No Stable Big Enough [Alliance] (350)
 						["hordeAchievementID"] = 12931,		-- No Stable Big Enough [Horde] (350)
-						["g"] = {					
+						["g"] = {
 							{	-- No Stable Big Enough [350 Mounts]
 								["allianceAchievementID"] = 12932,	-- No Stable Big Enough [Alliance] (350)
 								["hordeAchievementID"] = 12931,		-- No Stable Big Enough [Horde] (350)
@@ -41,7 +41,7 @@ _.Achievements =
 					{	-- Lord of the Reins [300 Mounts]
 						["allianceAchievementID"] = 10356,	-- Lord of the Reins [Alliance] (300)
 						["hordeAchievementID"] = 10355,		-- Lord of the Reins [Horde] (300)
-						["g"] = {	
+						["g"] = {
 							{	-- Lord of the Reins [300 Mounts]
 								["allianceAchievementID"] = 10356,	-- Lord of the Reins [Alliance] (300)
 								["hordeAchievementID"] = 10355,		-- Lord of the Reins [Horde] (300)

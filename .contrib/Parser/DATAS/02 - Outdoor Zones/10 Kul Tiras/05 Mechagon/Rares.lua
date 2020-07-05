@@ -594,7 +594,7 @@ _.Zones =
 					},
 				}),
 				n(150448, {	-- Reclamaton Rig
-				--	TO DO: figure out questIDs for:
+				--	TODO: figure out questIDs for:
 					--	hardmode rig (irradiated box of assorted parts)
 					--	irradiated undercoat usage (may not have associated quest and may just be based on the shirt's timer)
 				--	verify that epic recycling requisition is daily.  possibly repeatable?

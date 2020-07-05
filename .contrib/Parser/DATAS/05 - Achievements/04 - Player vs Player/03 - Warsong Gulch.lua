@@ -1,16 +1,16 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
 --[[
 8.0 Pre-Patch alignment complete
-To do: 
+TODO:
 1) Review crit items to see if achievements / items / etc can replace them to provide more information when looking at them in the ATT lists
 2) Add [Reward] tag
 3) Source to local files if applicable
 ]]--
 
-_.Achievements = 
+_.Achievements =
 {
 	n(-9958, {	-- Player vs Player
 		["g"] = {
@@ -20,7 +20,7 @@ _.Achievements =
 					1339,	-- Warsong Gulch (BG)
 				},
 				["g"] = {
-					ach(1172, {	-- Master of Warsong Gulch	
+					ach(1172, {	-- Master of Warsong Gulch
 						ach(167, {		-- Warsong Gulch Veteran
 							ach(166),	-- Warsong Gulch Victory
 						}),
@@ -41,10 +41,10 @@ _.Achievements =
 						--h(ach(1252)),	-- Supreme Defender (Horde)
 						ach(207), 		-- Save the Day
 					}),
-					ach(1259), 		-- Not So Fast	
+					ach(1259), 		-- Not So Fast
 					ach(713, 712),	-- Silverwing Sentinel [A] / Warsong Outrider [H]
 					--a(ach(713)),	-- Silverwing Sentinel (Alliance)
-					--h(ach(712)),	-- Warsong Outrider (Horde)			
+					--h(ach(712)),	-- Warsong Outrider (Horde)
 				},
 			}),
 		},

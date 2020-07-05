@@ -1,8 +1,9 @@
 --------------------------------------------------
---   A C H I E V E M E N T S    M O D U L E    --
+--    A C H I E V E M E N T S    M O D U L E    --
 --------------------------------------------------
 
-_.Achievements = 
+-- TODO: reformat this file
+_.Achievements =
 {
 	n(-9959, {	-- Dungeons & Raids
 		["groups"] = {
@@ -1469,10 +1470,10 @@ _.Achievements =
 								["titleID"] = 107,	-- of the Nightfall
 							},
 							{	-- Twilight Duo (10 player)
-								["achievementID"] = 2050,	-- Twilight Duo (10 player) 
+								["achievementID"] = 2050,	-- Twilight Duo (10 player)
 							},
 							{	-- Twilight Assist (10 player)
-								["achievementID"] = 2049,	-- Twilight Assist (10 player) 
+								["achievementID"] = 2049,	-- Twilight Assist (10 player)
 							},
 						},
 					},
@@ -1483,10 +1484,10 @@ _.Achievements =
 								["titleID"] = 89,	-- Twilight Vanquisher
 							},
 							{	-- Twilight Duo (25 player)
-								["achievementID"] = 2053,	-- Twilight Duo (25 player) 
+								["achievementID"] = 2053,	-- Twilight Duo (25 player)
 							},
 							{	-- Twilight Assist (25 player)
-								["achievementID"] = 2052,	-- Twilight Assist (25 player) 
+								["achievementID"] = 2052,	-- Twilight Assist (25 player)
 							},
 						},
 					},

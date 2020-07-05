@@ -1,5 +1,5 @@
 --------------------------------------------------
---	G R O U P	 F I N D E R	 M O D U L E	 --
+--    G R O U P   F I N D E R   M O D U L E     --
 --------------------------------------------------
 
 _.GroupFinder =
@@ -7,6 +7,7 @@ _.GroupFinder =
 	tier(3, {	-- Wrath of the Lich King
 		i(156688, {	-- Icy Satchel of Helpful Goods
 			["lvl"] = 59,	-- may be 58
+			-- TODO: uncomment?
 			-- ["description"] = "|cff66ccffRewarded for completing a random dungeon in the level 58 - ??? range.|r", (NOTE: Unsure of start/end points.  Not positive about 58, but I think LK dungeons now open at the same time as BC.  Unavailable on a level 84 character, so this bracket ends sometime before that.  Commenting out until confirmation.)
 			["g"] = {
 				i(112348),	-- Snow-Coated Cloth Cap*
