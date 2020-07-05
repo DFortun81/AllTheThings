@@ -86,6 +86,11 @@ _.Zones =
 					},
 				}),
 				q(44720, {	-- A Call to Action
+					["lvl"] = 110,
+					["coords"] = {
+						{ 44.6, 64.1, 646 },	-- Broken Shore
+						{ 73.8, 41.6, 627 },	-- Dalaran
+					},
 					["providers"] = {
 						{ "n", 114946 },	-- Muninn
 						{ "n", 119531 },	-- Muninn
