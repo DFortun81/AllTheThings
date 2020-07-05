@@ -71,7 +71,7 @@ _.Achievements =
 			ach(12913, { 	-- Honor Level 200
 				title(325), 	-- , Bound By Honor
 			}),
-			ach(12914,{  	-- Honor Level 250
+			ach(12914, {  	-- Honor Level 250
 				i(140407), 		-- Prestigious Midnight Courser
 			}),
 			ach(12915, { 	-- Honor Level 300

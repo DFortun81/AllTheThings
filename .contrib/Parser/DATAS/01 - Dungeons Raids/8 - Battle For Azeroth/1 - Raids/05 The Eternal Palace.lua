@@ -18,7 +18,30 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			1520,
 		},
 		["g"] = {
-			filter(101, {	-- Pet Battles
+			n(-852, {	-- Azerite Essences
+				i(168328, {	-- Hardened Azerite Formation (Rank 1)
+					["classes"] = TANKS,
+					["cost"] = { { "i", 169694, 9 } },	-- 9x Aqueous Reliquary
+					["g"] = {
+						az(2, 1),	-- Azeroth's Undying Gift (Rank 1)
+					},
+				}),
+				i(168536, {	-- Recrystallizing Azerite Formation (Rank 2)
+					["classes"] = TANKS,
+					["cost"] = { { "i", 169694, 18 } },	-- 18x Aqueous Reliquary
+					["g"] = {
+						az(2, 2),	-- Azeroth's Undying Gift (Rank 2)
+					},
+				}),
+				i(168537, {	-- Tempered Azerite Formation (Rank 3)
+					["classes"] = TANKS,
+					["cost"] = { { "i", 169694, 36 } },	-- 36x Aqueous Reliquary
+					["g"] = {
+						az(2, 3),	-- Azeroth's Undying Gift (Rank 3)
+					},
+				}),
+			}),
+			f(101, {	-- Battle Pet
 				p(2657, {	-- Blackchasm Crawler
 					["crs"] = { 154718 },
 				}),
@@ -227,7 +250,6 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							i(169348),	-- Zanj'ir Poker
 							i(169694),	-- Aqueous Reliquary
 							i(168854),	-- Animated Elemental Heart
-							i(168328),	-- Hardened Azerite Formation
 							i(168941),	-- Vitality Redistribution Lattice
 							i(168275),	-- Anu-Azshara, Staff of the Eternal
 							--i(168895),	-- Mel'nalore, Javelin of Suramar	-- Removed from game?
@@ -440,7 +462,6 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(169348),	-- Zanj'ir Poker
 						i(169694),	-- Aqueous Reliquary
 						i(168854),	-- Animated Elemental Heart
-						i(168328),	-- Hardened Azerite Formation
 						i(168941),	-- Vitality Redistribution Lattice
 						i(168275),	-- Anu-Azshara, Staff of the Eternal
 						--i(168895),	-- Mel'nalore, Javelin of Suramar	-- Removed from game?
@@ -655,7 +676,6 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(169694),	-- Aqueous Reliquary
 						i(168942),	-- Mesh of Expanding Vitality
 						i(168855),	-- Pulsing Elemental Hearth
-						i(168536),	-- Recrystalizing Azerite Formation
 						i(168275),	-- Anu-Azshara, Staff of the Eternal
 						--i(168895),	-- Mel'nalore, Javelin of Suramar	-- Removed from game?
 						i(168887),	-- Gloves of Incomparable Beauty
@@ -875,9 +895,14 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 							["achievementID"] = 13725,	-- The Circle of Stars
 						}),
 						ach(13768),	-- The Best of Us
+						i(168538, {	-- Dazzling Azerite Formation (Rank 4)
+							["classes"] = TANKS,
+							["g"] = {
+								az(2, 4),	-- Azeroth's Undying Gift (Rank 4)
+							},
+						}),
 						i(169348),	-- Zanj'ir Poker
 						i(169694),	-- Aqueous Reliquary
-						i(168538),	-- Dazzling Azerite Formation
 						i(168857),	-- Sparkling Elemental Heart
 						i(168944),	-- Web of Unbridled Vitality
 						i(168275),	-- Anu-Azshara, Staff of the Eternal
