@@ -4,6 +4,10 @@
 _.Essences =
 {
 	n(-853, {	-- All Roles
+		az(27, 1),	-- Memory of Lucid Dreams (Rank 1)
+		az(27, 2),	-- Memory of Lucid Dreams (Rank 2)
+		az(27, 3),	-- Memory of Lucid Dreams (Rank 3)
+		az(27, 4),	-- Memory of Lucid Dreams (Rank 4)
 		az(15, 1),	-- Ripple in Space (Rank 1)
 		az(15, 2),	-- Ripple in Space (Rank 2)
 		az(15, 3),	-- Ripple in Space (Rank 3)

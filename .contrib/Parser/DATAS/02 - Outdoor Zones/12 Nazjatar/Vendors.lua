@@ -185,6 +185,20 @@ _.Zones =
 				["coord"] = { 51.0, 65.5, 1355 },
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(168848, {	-- Pearl of Perspicuous Intentions (Rank 3)
+						["description"] = "Requires completing the achievement |cffffff00Nautical Battlefield Training|r.\n",
+						["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
+						["g"] = {
+							az(27, 2),	-- Memory of Lucid Dreams (Rank 3)
+						},
+					}),
+					i(168849, {	-- Pearl of Luminous Designs (Rank 4)
+						["description"] = "Requires completing the achievement |cffffff00Aqua Team Murder Force|r.\n",
+						["cost"] = { { "c", 1721, 75 }, },	-- 75x Prismatic Manapearl
+						["g"] = {
+							az(27, 4),	-- Memory of Lucid Dreams (Rank 4)
+						},
+					}),
 					i(168929, {	-- Codex of the Never-Ending Tides
 						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
 					}),
@@ -211,12 +225,6 @@ _.Zones =
 					}),
 					i(169607, {	-- Formula: Accord of Versatility (Rank 3)
 						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(168849, {	-- Pearl of Luminous Designs
-						["cost"] = { { "c", 1721, 75 }, },	-- 75x Prismatic Manapearl
-					}),
-					i(168848, {	-- Pearl of Perspicuous Intentions
-						["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
 					}),
 					i(168865, {	-- Polazired Azerite Slivershards
 						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
@@ -1015,6 +1023,20 @@ _.Zones =
 				["coord"] = { 38.0, 55.7, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
+					i(168848, {	-- Pearl of Perspicuous Intentions (Rank 3)
+						["description"] = "Requires completing the achievement |cffffff00Nautical Battlefield Training|r.\n",
+						["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
+						["g"] = {
+							az(27, 2),	-- Memory of Lucid Dreams (Rank 3)
+						},
+					}),
+					i(168849, {	-- Pearl of Luminous Designs (Rank 4)
+						["description"] = "Requires completing the achievement |cffffff00Aqua Team Murder Force|r.\n",
+						["cost"] = { { "c", 1721, 75 }, },	-- 75x Prismatic Manapearl
+						["g"] = {
+							az(27, 4),	-- Memory of Lucid Dreams (Rank 4)
+						},
+					}),
 					i(168929, {	-- Codex of the Never-Ending Tides
 						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
 					}),
@@ -1038,12 +1060,6 @@ _.Zones =
 					}),
 					i(169533, {	-- Formula: Accord of Versatility (Rank 3)
 						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(168849, {	-- Pearl of Luminous Designs
-						["cost"] = { { "c", 1721, 75 }, },	-- 75x Prismatic Manapearl
-					}),
-					i(168848, {	-- Pearl of Perspicuous Intentions
-						["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
 					}),
 					i(168865, {	-- Polazired Azerite Slivershards
 						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
