@@ -7,10 +7,18 @@ _.Zones =
 		m(1462, {	-- Mechagon
 			n(-169, { 	-- Emissary Quests
 				q(55348, {	-- Supplies from the Rustbolt Resistance
-					["lvl"] = 120,
 					["repeatable"] = true,
+					["lvl"] = 120,
 					["g"] = {
 						i(170061, {	-- Rustbolt Supplies
+							i(168935, {	-- Existence Vibrancy Display (Rank 4)
+								["modelScale"] = 3,
+								["classes"] = HEALERS,
+								["model"] = 2974000,
+								["g"] = {
+									az(19, 4),	-- The Well of Existence (Rank 4)
+								},
+							}),
 							i(168569, {	-- Null Force Visualizer (Rank 4)
 								["modelScale"] = 3,
 								["classes"] = TANKS,
@@ -42,10 +50,6 @@ _.Zones =
 										["achievementID"] = 13479,	-- Junkyard Architect
 									}),
 								},
-							}),
-							i(168935, {	-- Existence Vibrancy Display
-								["model"] = 2974000,
-								["modelScale"] = 3,
 							}),
 							i(168861, {	-- Ultimate Purification Protocols
 								["model"] = 2958033,

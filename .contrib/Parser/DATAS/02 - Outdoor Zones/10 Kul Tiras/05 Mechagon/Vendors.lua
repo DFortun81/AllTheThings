@@ -129,6 +129,39 @@ _.Zones =
 								az(13, 3),	-- Nullification Dynamo (Rank 3)
 							},
 						}),
+						i(168932, {	-- Reactive Existence Battery (Rank 1)
+							["minReputation"] = { 2391, FRIENDLY },
+							["classes"] = HEALERS,
+							["cost"] = {
+								{ "i", 169610, 2 },	-- 2x Spare Crate
+								{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
+							},
+							["g"] = {
+								az(19, 1),	-- The Well of Existence (Rank 1)
+							},
+						}),
+						i(168933, {	-- Enhanced Existence Capacitor (Rank 2)
+							["minReputation"] = { 2391, HONORED },
+							["classes"] = HEALERS,
+							["cost"] = {
+								{ "i", 169610, 8 },	-- 8x Spare Crate
+								{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
+							},
+							["g"] = {
+								az(19, 2),	-- The Well of Existence (Rank 2)
+							},
+						}),
+						i(168934, {	-- Calibrated Existence Gauge (Rank 3)
+							["minReputation"] = { 2391, REVERED },
+							["classes"] = HEALERS,
+							["cost"] = {
+								{ "i", 169610, 30 },	-- 30x Spare Crate
+								{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
+							},
+							["g"] = {
+								az(19, 3),	-- The Well of Existence (Rank 3)
+							},
+						}),
 						i(169112, {	-- Blueprint: Advanced Adventurer Augment
 							["questID"] = 56145,
 							["cost"] = 20480000,	-- 2,048g
@@ -156,19 +189,7 @@ _.Zones =
 								}),
 							},
 						}),
-						i(168934, {	-- Calibrated Existence Gauge (Rank 3)
-							["cost"] = {
-								{ "i", 169610, 30 },	-- 30x Spare Crate
-								{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
-							},
-						}),
 						i(167672),	-- Cyclotronic Blast
-						i(168933, {	-- Enhanced Existence Capacitor (Rank 2)
-							["cost"] = {
-								{ "i", 169610, 8 },	-- 8x Spare Crate
-								{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
-							},
-						}),
 						i(168860, {	-- Enhanced Purification Protocols (Rank 3)
 							["cost"] = {
 								{ "i", 169610, 30 },	-- 30x Spare Crate
@@ -179,12 +200,6 @@ _.Zones =
 							["cost"] = 5000000,	-- 500g
 						}),
 						i(167693),	-- Neural Autonomy
-						i(168932, {	-- Reactive Existence Battery (Rank 1)
-							["cost"] = {
-								{ "i", 169610, 2 },	-- 2x Spare Crate
-								{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
-							},
-						}),
 						i(169547, {	-- Recipe: Contract: Rustbolt Resistance
 							["cost"] = 14000000,	-- 1,400g
 						}),
