@@ -61,6 +61,10 @@ _.Essences =
 	n(-856, {	-- Tanks
 		["classes"] = TANKS,
 		["g"] = {
+			az(25, 1),	-- Aegis of the Deep (Rank 1)
+			az(25, 2),	-- Aegis of the Deep (Rank 2)
+			az(25, 3),	-- Aegis of the Deep (Rank 3)
+			az(25, 4),	-- Aegis of the Deep (Rank 4)
 			az(34, 1),	-- Strength of the Warden (Rank 1)
 			az(34, 2),	-- Strength of the Warden (Rank 2)
 			az(34, 3),	-- Strength of the Warden (Rank 3)

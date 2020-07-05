@@ -185,6 +185,30 @@ _.Zones =
 				["coord"] = { 51.0, 65.5, 1355 },
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(168837, {	-- Depth Forged Aegis (Rank 1)
+						["minReputation"] = { 2373, FRIENDLY },
+						["classes"] = TANKS,
+						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+						["g"] = {
+							az(25, 1),	-- Aegis of the Deep (Rank 1)
+						},
+					}),
+					i(168838, {	-- Enduring Bulwark of the Depths (Rank 2)
+						["minReputation"] = { 2373, HONORED },
+						["classes"] = TANKS,
+						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
+						["g"] = {
+							az(25, 2),	-- Aegis of the Deep (Rank 2)
+						},
+					}),
+					i(168839, {	-- Regenerating Barrier of the Depths (Rank 3)
+						["minReputation"] = { 2373, REVERED },
+						["classes"] = TANKS,
+						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
+						["g"] = {
+							az(25, 3),	-- Aegis of the Deep (Rank 3)
+						},
+					}),
 					i(168848, {	-- Pearl of Perspicuous Intentions (Rank 3)
 						["description"] = "Requires completing the achievement |cffffff00Nautical Battlefield Training|r.\n",
 						["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
@@ -207,12 +231,6 @@ _.Zones =
 					}),
 					i(169365, {	-- Damplight Slug (PET!)
 						["cost"] = 5000000,	-- 500g
-					}),
-					i(168837, {	-- Depth Forged Aegis
-						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					}),
-					i(168838, {	-- Enduring Bulwark of the Depths
-						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
 					}),
 					i(169604, {	-- Formula: Accord of Critical Strike (Rank 3)
 						["cost"] = 14000000,	-- 1,400g
@@ -243,9 +261,6 @@ _.Zones =
 					}),
 					un(1, i(169601)),	-- Recipe: Potion of Reconstitution (Rank 3)
 					un(1, i(170076)),	-- Recipe: Unagi Skewer
-					i(168839, {	-- Regenerating Barrier of the Depths
-						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
-					}),
 					i(168864, {	-- Sharpened Azerite Slivershards
 						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
 					}),
@@ -1023,6 +1038,30 @@ _.Zones =
 				["coord"] = { 38.0, 55.7, 1355 },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
+					i(168837, {	-- Depth Forged Aegis (Rank 1)
+						["minReputation"] = { 2400, FRIENDLY },
+						["classes"] = TANKS,
+						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+						["g"] = {
+							az(25, 1),	-- Aegis of the Deep (Rank 1)
+						},
+					}),
+					i(168838, {	-- Enduring Bulwark of the Depths (Rank 2)
+						["minReputation"] = { 2400, HONORED },
+						["classes"] = TANKS,
+						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
+						["g"] = {
+							az(25, 2),	-- Aegis of the Deep (Rank 2)
+						},
+					}),
+					i(168839, {	-- Regenerating Barrier of the Depths (Rank 3)
+						["minReputation"] = { 2373, REVERED },
+						["classes"] = TANKS,
+						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
+						["g"] = {
+							az(25, 3),	-- Aegis of the Deep (Rank 3)
+						},
+					}),
 					i(168848, {	-- Pearl of Perspicuous Intentions (Rank 3)
 						["description"] = "Requires completing the achievement |cffffff00Nautical Battlefield Training|r.\n",
 						["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
@@ -1042,12 +1081,6 @@ _.Zones =
 					}),
 					i(163073, {	-- Conch of Wa'mundi
 						["cost"] = 65000000,	-- 6,500g
-					}),
-					i(168837, {	-- Depth Forged Aegis
-						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					}),
-					i(168838, {	-- Enduring Bulwark of the Depths
-						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
 					}),
 					i(169530, {	-- Formula: Accord of Critical Strike (Rank 3)
 						["cost"] = 14000000,	-- 1,400g
@@ -1081,9 +1114,6 @@ _.Zones =
 					}),
 					i(169493, {	-- Recipe: Potion of Reconstitution (Rank 3)
 						["u"] = 1,	-- NYI
-					}),
-					i(168839, {	-- Regenerating Barrier of the Depths
-						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
 					}),
 					i(168864, {	-- Sharpened Azerite Slivershards
 						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl

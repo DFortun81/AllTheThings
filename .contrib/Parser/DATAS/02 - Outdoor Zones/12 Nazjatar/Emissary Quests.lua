@@ -14,6 +14,12 @@ _.Zones =
 					i(169940, {	-- Unshackled Supplies
 						["races"] = HORDE_ONLY,
 						["g"] = {
+							i(168840, {	-- Resplendent Bastion of the Depths (Rank 4)
+								["classes"] = TANKS,
+								["g"] = {
+									az(25, 4),	-- Aegis of the Deep (Rank 4)
+								},
+							}),
 							i(170203, {	-- Flopping Fish (TOY!)
 								crit(22, {	-- Flopping Fish
 									["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
@@ -35,6 +41,12 @@ _.Zones =
 					i(169939, {	-- Ankoan Supplies
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
+							i(168840, {	-- Resplendent Bastion of the Depths (Rank 4)
+								["classes"] = TANKS,
+								["g"] = {
+									az(25, 4),	-- Aegis of the Deep (Rank 4)
+								},
+							}),
 							i(170203, {	-- Flopping Fish (TOY!)
 								crit(22, {	-- Flopping Fish
 									["achievementID"] = 13692,	-- Give Me the Biggest Bag You've Got
