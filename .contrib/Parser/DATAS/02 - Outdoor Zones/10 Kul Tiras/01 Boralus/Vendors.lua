@@ -1983,7 +1983,12 @@ _.Zones =
 							["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
 						}),
 						i(168560, {	-- Fetish of the Gilded Catacombs (Rank 4)
+							["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
+							["classes"] = TANKS,
 							["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
+							["g"] = {
+								az(7, 4),	-- Anima of Life and Death (Rank 4)
+							},
 						}),
 						i(168927, {	-- Seed of Vibrant Blooms (Rank 4)
 							["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum

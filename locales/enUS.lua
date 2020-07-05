@@ -631,6 +631,7 @@ app.L = {
 		[-854] = "Interface\\Icons\\spell_fire_twilightpyroblast",							-- DPS
 		[-855] = "Interface\\Icons\\spell_nature_healingwavegreater",						-- Healers
 		[-856] = "Interface\\Icons\\ability_warrior_shieldwall",							-- Tanks
+		[-857] = "Interface\\Icons\\inv_relics_hourglass",									-- Mythic+
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
 		[-3178] = "Interface\\Icons\\achievement_boss_warlord_kalithresh",					-- Tier 3.5
@@ -1386,6 +1387,7 @@ app.L = {
 		[-854] = "DPS",															-- DPS
 		[-855] = "Healers",														-- Healers
 		[-856] = "Tanks",														-- Tanks
+		[-857] = "Mythic+",														-- Mythic+
 
 -- Temporarily Header
 
