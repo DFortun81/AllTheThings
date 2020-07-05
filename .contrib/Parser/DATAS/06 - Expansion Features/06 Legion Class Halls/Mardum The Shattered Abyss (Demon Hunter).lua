@@ -619,6 +619,7 @@ _.ExpansionFeatures =
 					q(42920, {	-- The Invasion of Niskara (Altruis)
 						["sourceQuests"] = { 42810 },	-- A Final Offer
 						["provider"] = { "n", 98646 },	-- Jace Darkweaver
+						["classes"] = { DEMONHUNTER },
 						["coord"] = { 59.0, 74.0, 721 },
 						["maps"] = { 714 },	-- Niskara
 						["lvl"] = 110,
@@ -626,6 +627,7 @@ _.ExpansionFeatures =
 					q(42809, {	-- The Invasion of Niskara (Kayn)
 						["sourceQuests"] = { 42810 },	-- A Final Offer
 						["provider"] = { "n", 98646 },	-- Jace Darkweaver
+						["classes"] = { DEMONHUNTER },
 						["coord"] = { 59.0, 74.0, 721 },
 						["maps"] = { 714 },	-- Niskara
 						["lvl"] = 110,
