@@ -1197,6 +1197,9 @@ _.NeverImplemented =
 		q(44633),	-- Warrior Order Hall - "Aiding the Valkyra" mission complete
 		q(44634),	-- Warrior Order Hall - "Lost at Sea" mission complete
 		q(44635),	-- Warrior Order Hall - "Enslaved by Sea Giants" mission complete
+		q(44551),	-- Warrior Order Hall - "Investigate Felsoul Hold" mission complete
+		q(44552),	-- Warrior Order Hall - "Preparing Our Arrival" mission complete
+		q(44553),	-- Warrior Order Hall - "Last Chance" mission complete
 		q(39174),	-- Warrior Order Hall - Guiding Light Tutorialized - pops when you get your first artifact weapon and go back to Skyhold
 		q(44060),	-- Warrior Order Hall - Azsuna Teleport learned in Azurewing Repose
 		q(41359),	-- Warrior Order Hall - Highmountain Teleport learned in Thunder Totem

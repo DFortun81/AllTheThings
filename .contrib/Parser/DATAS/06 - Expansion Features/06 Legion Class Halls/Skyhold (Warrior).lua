@@ -95,7 +95,17 @@ _.ExpansionFeatures =
 					}),
 					q(45128),	-- A Glorious Reunion
 					q(46208),	-- A Godly Invitation
-					q(43425),	-- A Hero's Weapon
+					q(43425, {	-- A Hero's Weapon
+						["coord"] = { 58.3, 84.6, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96469 },	-- Odyn
+						["sourceQuest"] = 42974,	-- The Fate of Hodir
+						["g"] = {
+							artifact(793),	-- Arms (Vengeance of the Fallen)
+							artifact(656),	-- Fury (Arm of the Dragonrider)
+							artifact(146),	-- Protection (Arm of the Fallen King)
+						},
+					}),
 					q(42814, {	-- An Important Mission
 						["maps"] = { 627 },	-- Dalaran
 						["races"] = ALLIANCE_ONLY,
@@ -168,7 +178,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42619, {	-- Champion: Hodir
+						["coord"] = { 59.7, 78.4, 695 },
+						["classes"] = { WARRIOR },
 						["provider"] = { "n", 113583 },	-- Hodir
+						["sourceQuest"] = 42974,	-- The Fate of Hodir
 						["g"] = {
 							follower(715),	-- Hodir
 						},
@@ -375,7 +388,14 @@ _.ExpansionFeatures =
 						["description"] = "Available after obtaining your first artifact weapon.",
 					}),
 					q(42974, {	-- The Fate of Hodir
-						i(139681),	-- Battlelord's Chest
+						["coord"] = { 58.3, 84.6, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96469 },	-- Odyn
+						["sourceQuest"] = 43577,	-- Capturing the Gateway
+						["g"] = {
+							title(62),	-- Battlelord %s
+							i(139681),	-- Battlelord's Chest
+						},
 					}),
 					q(39192),	-- The Forge of Odyn
 					q(39530),	-- The Forgening
