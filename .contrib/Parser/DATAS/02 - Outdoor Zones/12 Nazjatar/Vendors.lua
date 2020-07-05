@@ -209,6 +209,30 @@ _.Zones =
 							az(25, 3),	-- Aegis of the Deep (Rank 3)
 						},
 					}),
+					i(168928, {	-- Tablet of the Balancing Tides (Rank 1)
+						["minReputation"] = { 2373, FRIENDLY },
+						["classes"] = HEALERS,
+						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+						["g"] = {
+							az(17, 1),	-- The Ever-Rising Tide (Rank 1)
+						},
+					}),
+					i(168929, {	-- Codex of the Never-Ending Tides (Rank 2)
+						["minReputation"] = { 2373, HONORED },
+						["classes"] = HEALERS,
+						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
+						["g"] = {
+							az(17, 2),	-- The Ever-Rising Tide (Rank 2)
+						},
+					}),
+					i(168930, {	-- Tome of the Quickening Tides (Rank 3)
+						["minReputation"] = { 2373, REVERED },
+						["classes"] = HEALERS,
+						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
+						["g"] = {
+							az(17, 3),	-- The Ever-Rising Tide (Rank 3)
+						},
+					}),
 					i(168848, {	-- Pearl of Perspicuous Intentions (Rank 3)
 						["description"] = "Requires completing the achievement |cffffff00Nautical Battlefield Training|r.\n",
 						["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
@@ -222,9 +246,6 @@ _.Zones =
 						["g"] = {
 							az(27, 4),	-- Memory of Lucid Dreams (Rank 4)
 						},
-					}),
-					i(168929, {	-- Codex of the Never-Ending Tides
-						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
 					}),
 					i(171151, {	-- Conch of Wa'mundi
 						["cost"] = 65000000,	-- 6,500g
@@ -266,12 +287,6 @@ _.Zones =
 					}),
 					i(169274, {	-- Tabard of the Unshackled
 						["cost"] = 6250000,	-- 625g
-					}),
-					i(168928, {	-- Tablet of the Balancing Tides
-						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					}),
-					i(168930, {	-- Tome of the Quickening Tides
-						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
 					}),
 					i(168479, {	-- Troop Requisition
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
@@ -1055,11 +1070,35 @@ _.Zones =
 						},
 					}),
 					i(168839, {	-- Regenerating Barrier of the Depths (Rank 3)
-						["minReputation"] = { 2373, REVERED },
+						["minReputation"] = { 2400, REVERED },
 						["classes"] = TANKS,
 						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
 						["g"] = {
 							az(25, 3),	-- Aegis of the Deep (Rank 3)
+						},
+					}),
+					i(168928, {	-- Tablet of the Balancing Tides (Rank 1)
+						["minReputation"] = { 2400, FRIENDLY },
+						["classes"] = HEALERS,
+						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+						["g"] = {
+							az(17, 1),	-- The Ever-Rising Tide (Rank 1)
+						},
+					}),
+					i(168929, {	-- Codex of the Never-Ending Tides (Rank 2)
+						["minReputation"] = { 2400, HONORED },
+						["classes"] = HEALERS,
+						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
+						["g"] = {
+							az(17, 2),	-- The Ever-Rising Tide (Rank 2)
+						},
+					}),
+					i(168930, {	-- Tome of the Quickening Tides (Rank 3)
+						["minReputation"] = { 2400, REVERED },
+						["classes"] = HEALERS,
+						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
+						["g"] = {
+							az(17, 3),	-- The Ever-Rising Tide (Rank 3)
 						},
 					}),
 					i(168848, {	-- Pearl of Perspicuous Intentions (Rank 3)
@@ -1075,9 +1114,6 @@ _.Zones =
 						["g"] = {
 							az(27, 4),	-- Memory of Lucid Dreams (Rank 4)
 						},
-					}),
-					i(168929, {	-- Codex of the Never-Ending Tides
-						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
 					}),
 					i(163073, {	-- Conch of Wa'mundi
 						["cost"] = 65000000,	-- 6,500g
@@ -1120,12 +1156,6 @@ _.Zones =
 					}),
 					i(168610, {	-- Tabard of the Waveblade Ankoan
 						["cost"] = 6250000,	-- 625g
-					}),
-					i(168928, {	-- Tablet of the Balancing Tides
-						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
-					}),
-					i(168930, {	-- Tome of the Quickening Tides
-						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
 					}),
 					i(168480, {	-- Troop Requisition
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
