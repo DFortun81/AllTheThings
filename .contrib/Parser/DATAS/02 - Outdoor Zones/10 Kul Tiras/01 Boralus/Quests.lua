@@ -284,7 +284,12 @@ _.Zones =
 							["g"] = {
 								i(168920),	-- Azerite-Encrusted Timequartz (Rank 1)
 								i(168442),	-- Roiling Blood of the Vanquished (Rank 1)
-								i(168578),	-- Sphere of Suppressed Force (Rank 1)
+								i(168578, {	-- Sphere of Suppressed Force (Rank 1)
+									["classes"] = TANKS,
+									["g"] = {
+										az(3, 1),	-- Sphere of Suppression (Rank 1)
+									},
+								}),
 							},
 						}),
 					},

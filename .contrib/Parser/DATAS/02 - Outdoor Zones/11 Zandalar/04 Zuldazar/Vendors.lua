@@ -785,17 +785,37 @@ _.Zones =
 						i(168442, {	-- Roiling Blood of the Vanquished (Rank 1)
 							["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor
 						}),
-						i(168581, {	-- Sphere of Incandescent Neutralization (Rank 4)
-							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-						}),
-						i(168580, {	-- Sphere of Leeched Mobility
-							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-						}),
 						i(168578, {	-- Sphere of Suppressed Force (Rank 1)
+							["sourceQuests"] = { 56500 },	-- Storming the Battlefields
+							["classes"] = TANKS,
 							["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor
+							["g"] = {
+								az(3, 1),	-- Sphere of Suppression (Rank 1)
+							},
 						}),
 						i(168579, {	-- Sphere of Unrestrained Fury (Rank 2)
+							["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
+							["classes"] = TANKS,
 							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+							["g"] = {
+								az(3, 2),	-- Sphere of Suppression (Rank 2)
+							},
+						}),
+						i(168580, {	-- Sphere of Leeched Mobility (Rank 3)
+							["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
+							["classes"] = TANKS,
+							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
+							["g"] = {
+								az(3, 3),	-- Sphere of Suppression (Rank 3)
+							},
+						}),
+						i(168581, {	-- Sphere of Incandescent Neutralization (Rank 4)
+							["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
+							["classes"] = TANKS,
+							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
+							["g"] = {
+								az(3, 4),	-- Sphere of Suppression (Rank 4)
+							},
 						}),
 						i(168923, {	-- Unburdened Azerite Timequartz
 							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
