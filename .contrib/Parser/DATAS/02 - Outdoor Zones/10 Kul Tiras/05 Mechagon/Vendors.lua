@@ -129,6 +129,36 @@ _.Zones =
 								az(13, 3),	-- Nullification Dynamo (Rank 3)
 							},
 						}),
+						i(168858, {	-- Titan Purification Protocols (Rank 1)
+							["minReputation"] = { 2391, FRIENDLY },
+							["cost"] = {
+								{ "i", 169610, 2 },	-- 2x Spare Crate
+								{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
+							},
+							["g"] = {
+								az(6, 1),	-- Purification Protocol (Rank 1)
+							},
+						}),
+						i(168859, {	-- Targeted Purification Protocols (Rank 2)
+							["minReputation"] = { 2391, HONORED },
+							["cost"] = {
+								{ "i", 169610, 8 },	-- 8x Spare Crate
+								{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
+							},
+							["g"] = {
+								az(6, 2),	-- Purification Protocol (Rank 2)
+							},
+						}),
+						i(168860, {	-- Enhanced Purification Protocols (Rank 3)
+							["minReputation"] = { 2391, REVERED },
+							["cost"] = {
+								{ "i", 169610, 30 },	-- 30x Spare Crate
+								{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
+							},
+							["g"] = {
+								az(6, 3),	-- Purification Protocol (Rank 3)
+							},
+						}),
 						i(168932, {	-- Reactive Existence Battery (Rank 1)
 							["minReputation"] = { 2391, FRIENDLY },
 							["classes"] = HEALERS,
@@ -190,12 +220,6 @@ _.Zones =
 							},
 						}),
 						i(167672),	-- Cyclotronic Blast
-						i(168860, {	-- Enhanced Purification Protocols (Rank 3)
-							["cost"] = {
-								{ "i", 169610, 30 },	-- 30x Spare Crate
-								{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
-							},
-						}),
 						i(169380, {	-- Mustyfur Snooter (PET!)
 							["cost"] = 5000000,	-- 500g
 						}),
@@ -227,18 +251,6 @@ _.Zones =
 						i(168534, {	-- Schematic: Ub3r-Module: Ub3r-Coil
 							["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
 							["cost"] = 14000000,	-- 1,400g
-						}),
-						i(168859, {	-- Targeted Purification Protocols (Rank 2)
-							["cost"] = {
-								{ "i", 169610, 8 },	-- 8x Spare Crate
-								{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
-							},
-						}),
-						i(168858, {	-- Titan Purification Protocols (Rank 1)
-							["cost"] = {
-								{ "i", 169610, 2 },	-- 2x Spare Crate
-								{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
-							},
 						}),
 					},
 				}),

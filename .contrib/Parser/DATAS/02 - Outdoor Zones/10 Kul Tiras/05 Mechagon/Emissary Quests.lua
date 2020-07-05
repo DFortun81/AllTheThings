@@ -27,6 +27,13 @@ _.Zones =
 									az(13, 4),	-- Nullification Dynamo (Rank 4)
 								},
 							}),
+							i(168861, {	-- Ultimate Purification Protocols (Rank 4)
+								["modelScale"] = 4,
+								["model"] = 2958033,
+								["g"] = {
+									az(6, 4),	-- Purification Protocol (Rank 4)
+								},
+							}),
 							i(168906, {	-- Blueprint: Holographic Digitalization Relay
 								["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
 								["g"] = {
@@ -50,10 +57,6 @@ _.Zones =
 										["achievementID"] = 13479,	-- Junkyard Architect
 									}),
 								},
-							}),
-							i(168861, {	-- Ultimate Purification Protocols
-								["model"] = 2958033,
-								["modelScale"] = 4,
 							}),
 							i(168368),	-- Recipe: Famine Evaluator And Snack Table (Rank 3)
 						}),
