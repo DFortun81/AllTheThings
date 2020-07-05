@@ -282,7 +282,12 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["coord"] = { 56.4, 25.8, 1161 },
 							["g"] = {
-								i(168920),	-- Azerite-Encrusted Timequartz (Rank 1)
+								i(168920, {	-- Azerite-Encrusted Timequartz (Rank 1)
+									["classes"] = HEALERS,
+									["g"] = {
+										az(18, 1),	-- Artifice of Time (Rank 1)
+									},
+								}),
 								i(168442),	-- Roiling Blood of the Vanquished (Rank 1)
 								i(168578, {	-- Sphere of Suppressed Force (Rank 1)
 									["classes"] = TANKS,

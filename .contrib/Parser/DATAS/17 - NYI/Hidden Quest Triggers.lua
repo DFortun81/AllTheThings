@@ -172,7 +172,6 @@ _.NeverImplemented =
 		q(47466),	-- Bonus roll on Emeriss during anniversary event
 		
 		-- Darkmoon Faire
-		q(29474),	-- Putting Trash to Good Use - triggers after completing Putting Trash to Good Use (questID 29510)
 		q(30557),	-- [DNT] A Captured Banner TRACKER - triggers after completing A Captured Banner (questID 29456)
 		q(30553),	-- [DNT] A Curious Crystal TRACKER - triggers after completing A Curious Crystal (questID 29443)
 		q(30562),	-- [DNT] A Fizzy Fusion TRACKER - triggers after completing A Fizzy Fusion (questID 29506)

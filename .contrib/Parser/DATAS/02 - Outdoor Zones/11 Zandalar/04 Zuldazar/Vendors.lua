@@ -771,13 +771,36 @@ _.Zones =
 							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
 						}),
 						i(168920, {	-- Azerite-Encrusted Timequartz (Rank 1)
+							["sourceQuests"] = { 56500 },	-- Storming the Battlefields
+							["classes"] = HEALERS,
 							["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor
-						}),
-						i(168922, {	-- Azerite-Fueled Timequartz (Rank 3)
-							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+							["g"] = {
+								az(18, 1),	-- Artifice of Time (Rank 1)
+							},
 						}),
 						i(168921, {	-- Azerite-Infused Timequartz (Rank 2)
+							["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
+							["classes"] = HEALERS,
 							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+							["g"] = {
+								az(18, 2),	-- Artifice of Time (Rank 2)
+							},
+						}),
+						i(168922, {	-- Azerite-Fueled Timequartz (Rank 3)
+							["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
+							["classes"] = HEALERS,
+							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+							["g"] = {
+								az(18, 3),	-- Artifice of Time (Rank 3)
+							},
+						}),
+						i(168923, {	-- Unburdened Azerite Timequartz (Rank 4)
+							["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
+							["classes"] = HEALERS,
+							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
+							["g"] = {
+								az(18, 4),	-- Artifice of Time (Rank 4)
+							},
 						}),
 						i(168444, {	-- Churning Blood of the Conquered
 							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
@@ -816,9 +839,6 @@ _.Zones =
 							["g"] = {
 								az(3, 4),	-- Sphere of Suppression (Rank 4)
 							},
-						}),
-						i(168923, {	-- Unburdened Azerite Timequartz
-							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
 						}),
 					},
 				}),

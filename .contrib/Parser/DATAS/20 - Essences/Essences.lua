@@ -48,6 +48,10 @@ _.Essences =
 	n(-855, {	-- Healers
 		["classes"] = HEALERS,
 		["g"] = {
+			az(18, 1),	-- Artifice of Time (Rank 1)
+			az(18, 2),	-- Artifice of Time (Rank 2)
+			az(18, 3),	-- Artifice of Time (Rank 3)
+			az(18, 4),	-- Artifice of Time (Rank 4)
 			az(24, 1),	-- Spirit of Preservation (Rank 1)
 			az(24, 2),	-- Spirit of Preservation (Rank 2)
 			az(24, 3),	-- Spirit of Preservation (Rank 3)

@@ -550,6 +550,10 @@ _.WorldEvents =
 			q(29484, {	-- Putting the Crunch in the Frog
 				["u"] = 40,	-- Legacy Quests
 			}),
+			q(29474, {	-- Putting Trash to Good Use
+				["requireSkill"] = ENCHANTING,
+				["u"] = 40,	-- Legacy Quests
+			}),
 			q(29510, {	-- Putting Trash to Good Use
 				["requireSkill"] = ENCHANTING,
 				["isMonthly"] = true,
