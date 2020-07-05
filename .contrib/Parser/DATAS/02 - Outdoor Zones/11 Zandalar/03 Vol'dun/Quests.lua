@@ -424,6 +424,7 @@ _.Zones =
 				
 				q(50596, {	-- Exterminate the Vermin
 					["sourceQuests"] = { 50536 },	-- Magic Decoder Device (appears while on quest while friendly to sethrak)
+					["description"] = "Use the Scepter of Prescience in the building at 47.73 to get the snake disguise to pick up this quest.",
 					["provider"] = { "n", 134408 },	-- Foreman Jethek
 					["coords"] = {
 						{ 49.8, 74.6, 864 },	-- Zul'Ahjin (Vol'dun)
