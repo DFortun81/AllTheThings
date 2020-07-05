@@ -36,6 +36,10 @@ _.Essences =
 		az(4, 4),	-- Worldvein Resonance (Rank 4)
 	}),
 	n(-854, {	-- DPS
+		az(23, 1),	-- Blood of the Enemy (Rank 1)
+		az(23, 2),	-- Blood of the Enemy (Rank 2)
+		az(23, 3),	-- Blood of the Enemy (Rank 3)
+		az(23, 4),	-- Blood of the Enemy (Rank 4)
 		az(35, 1),	-- Breath of the Dying (Rank 1)
 		az(35, 2),	-- Breath of the Dying (Rank 2)
 		az(35, 3),	-- Breath of the Dying (Rank 3)

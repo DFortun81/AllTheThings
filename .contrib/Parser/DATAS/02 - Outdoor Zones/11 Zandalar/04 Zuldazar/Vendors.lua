@@ -764,12 +764,6 @@ _.Zones =
 					["coord"] = { 51.6, 58.2, 862 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(168443, {	-- Agitated Blood of the Dominated (Rank 2)
-							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-						}),
-						i(168814, {	-- Animated Blood of the Decimated (Rank 4)
-							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-						}),
 						i(168920, {	-- Azerite-Encrusted Timequartz (Rank 1)
 							["sourceQuests"] = { 56500 },	-- Storming the Battlefields
 							["classes"] = HEALERS,
@@ -802,11 +796,33 @@ _.Zones =
 								az(18, 4),	-- Artifice of Time (Rank 4)
 							},
 						}),
-						i(168444, {	-- Churning Blood of the Conquered
-							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-						}),
 						i(168442, {	-- Roiling Blood of the Vanquished (Rank 1)
+							["sourceQuests"] = { 56500 },	-- Storming the Battlefields
 							["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor
+							["g"] = {
+								az(23, 1),	-- Blood of the Enemy (Rank 1)
+							},
+						}),
+						i(168443, {	-- Agitated Blood of the Dominated (Rank 2)
+							["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
+							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
+							["g"] = {
+								az(23, 2),	-- Blood of the Enemy (Rank 2)
+							},
+						}),
+						i(168444, {	-- Churning Blood of the Conquered (Rank 3)
+							["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
+							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
+							["g"] = {
+								az(23, 3),	-- Blood of the Enemy (Rank 3)
+							},
+						}),
+						i(168814, {	-- Animated Blood of the Decimated (Rank 4)
+							["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
+							["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
+							["g"] = {
+								az(23, 4),	-- Blood of the Enemy (Rank 4)
+							},
 						}),
 						i(168578, {	-- Sphere of Suppressed Force (Rank 1)
 							["sourceQuests"] = { 56500 },	-- Storming the Battlefields

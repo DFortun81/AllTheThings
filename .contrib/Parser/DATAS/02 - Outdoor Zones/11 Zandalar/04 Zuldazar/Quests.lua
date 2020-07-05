@@ -273,7 +273,9 @@ _.Zones =
 										az(18, 1),	-- Artifice of Time (Rank 1)
 									},
 								}),
-								i(168442),	-- Roiling Blood of the Vanquished (Rank 1)
+								i(168442, {	-- Roiling Blood of the Vanquished (Rank 1)
+									az(23, 1),	-- Blood of the Enemy (Rank 1)
+								}),
 								i(168578, {	-- Sphere of Suppressed Force (Rank 1)
 									["classes"] = TANKS,
 									["g"] = {
