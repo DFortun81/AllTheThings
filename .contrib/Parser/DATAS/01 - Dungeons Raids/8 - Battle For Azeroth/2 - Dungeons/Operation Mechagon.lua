@@ -20,6 +20,14 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				i(170208),	-- Recipe: Potion of Unbridled Fury (Rank 3)
 				i(170209),	-- Recipe: Potion of Wild Mending (Rank 3)
 			}),
+			n(-852, {	-- Azerite Essences
+				i(168844, {	-- Perfection-Enhancing Gearbox (Rank 3)
+					["cost"] = { { "i", 4, 169774 } },	-- 4x Progression Sprocket
+					["g"] = {
+						az(22, 3),	-- Vision of Perfection (Rank 3)
+					},
+				}),
+			}),
 			f(101, {	-- Pet Battles
 				p(2672, {	-- Alloyed Alleyrat
 					["crs"] = { 154789 },
@@ -206,12 +214,13 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 								144249,	-- Omega Buster
 							},
 							["g"] = {
-							--	i(168830),	-- Aerial Unit R-21/X
 							--	i(169378),	-- Golden Snorf
+								i(168842, {	-- Engine of Mecha-Perfection (Rank 1)
+									az(22, 1),	-- Vision of Perfection (Rank 1)
+								}),
 								i(169172, {	-- Blueprint: Perfectly Timed Differential
 									["questID"] = 55080,
 								}),
-								i(168842),	-- Engine of Mecha-Perfection (Rank 1)
 								i(168671),	-- Electromagnetic Resistors
 								i(168747),	-- Performant Adaptable Logic Board
 								i(168749),	-- Performant Effective Logic Board
@@ -243,7 +252,14 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["difficulties"] = { 8, 23 },
 				["lvl"] = 120,
 				["g"] = {
-					ach(13789),	-- Hertz Locker
+					ach(13789, {	-- Hertz Locker
+						["description"] = "After completing the achievement, speak to Prince Erazmin on Mechagon Island to get the essence.  You must already have the Rank 3 version.",
+						["g"] = {
+							i(168845, {	-- Mecha-Perfection Turbo (Rank 4)
+								az(22, 4),	-- Vision of Perfection (Rank 4)
+							}),
+						},
+					}),
 					n(-379, {	-- Junkyard
 						e(2357, {	-- King Gobbamak
 							["crs"] = { 150159 },	-- King Gobbamak
@@ -410,13 +426,16 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 								144249,	-- Omega Buster
 							},
 							["g"] = {
-								ach(13624),	-- Keep DPS-ing and Nobody Explodes
-								i(168830),	-- Aerial Unit R-21/X
+								ach(13624, {	-- Keep DPS-ing and Nobody Explodes
+									i(168830),	-- Aerial Unit R-21/X
+								}),
 								i(169378),	-- Golden Snorf
+								i(168842, {	-- Engine of Mecha-Perfection (Rank 1)
+									az(22, 1),	-- Vision of Perfection (Rank 1)
+								}),
 								i(169172, {	-- Blueprint: Perfectly Timed Differential
 									["questID"] = 55080,
 								}),
-								i(168842),	-- Engine of Mecha-Perfection (Rank 1)
 								i(168671),	-- Electromagnetic Resistors
 								i(168747),	-- Performant Adaptable Logic Board
 								i(168749),	-- Performant Effective Logic Board

@@ -28,6 +28,9 @@ _.Zones =
 				n(150359, {	-- Pascal-K1N6
 					["coord"] = { 71.4, 32.3, 1462 },
 					["g"] = {
+						i(168843, {	-- Perfectly Timed Differential (Rank 2)
+							az(22, 2),	-- Vision of Perfection (Rank 2)
+						}),
 						i(168047, {	-- Rustbolt Kegerator
 							q(55535),	-- The Tipsy Tinkerer
 						}),
