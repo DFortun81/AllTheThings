@@ -6,125 +6,6 @@ _.Zones =
 	m(619, {	-- The Broken Isles
 		m(646, {	-- Broken Shore
 			n(QUESTS, {
-			--[[	putting this in achievements file, commenting out until quests have been confirmed and moved
-				ach(11546, {	-- Breaching the Tomb
-					crit(3, {	-- Begin Construction
-						q(46773, {	-- The Command Center
-							["provider"] = { "n", 120183 },	-- Commander Chambers
-							["sourceQuests"] = { 46245 },	-- Begin Construction
-						}),
-						q(46772, {	-- The Mage Tower
-							["provider"] = { "n", 120183 },	-- Commander Chambers
-							["sourceQuests"] = { 46245 },	-- Begin Construction
-						}),
-						q(46774, {	-- The Nether Disruptor
-							["provider"] = { "n", 120183 },	-- Commander Chambers
-							["sourceQuests"] = { 46245 },	-- Begin Construction
-						}),
-					}),
-					crit(7, {	-- Champions of Legionfall
-						q(47137, {	-- Champions of Legionfall
-							["provider"] = { "n", 116576 },	-- Maiev Shadowsong
-							["sourceQuests"] = { 46247 },	-- Defending Broken Isles
-							["g"] = {
-								cl(MONK, {
-									["classes"] = { MONK },
-									["g"] = {
-										q(45440, {	-- A Brewing Situation
-											["provider"] = { "n", 116929 },	-- Brewmaster Blancee
-											["sourceQuests"] = { 47137 },	-- Champions of Legionfall
-										}),
-										q(45404, {	-- Panic at the Brewery
-											["provider"] = { "n", 119664 },	-- Brewmaster Almai
-											["sourceQuests"] = { 45440 },	-- A Brewing Situation
-										}),
-										q(45459, {	-- Storming the Legion
-											["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
-											["sourceQuests"] = { 45404 },	-- Panic at the Brewery
-										}),
-										q(45574, {	-- Fel Ingredients
-											["provider"] = { "n", 117305 },	-- Brewmaster Almai
-											["sourceQuests"] = { 45459 },	-- Storming the Legion
-										}),
-										q(45449, {	-- Alchemist Koryla
-											["provider"] = { "n", 117305 },	-- Brewer Almai
-											["sourceQuests"] = { 45459 },	-- Storming the Legion
-										}),
-										q(45545, {	-- Barrel Toss
-											["provider"] = { "n", 117305 },	-- Brewer Almai
-											["sourceQuests"] = { 45459 },	-- Storming the Legion
-										}),
-										q(46320, {	-- Hope For a Cure
-											["provider"] = { "n", 117305 },	-- Brewer Almai
-											["sourceQuests"] = { 45574, 45449, 45545 },	-- Fel Ingredients / Alchemist Koryla / Barrel Toss
-										}),
-										q(45442, {	-- Not Felling Well
-											["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
-											["sourceQuests"] = { 46320 },	-- Hope For a Cure
-										}),
-										q(45771, {	-- A Time for Everything
-											["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
-											["sourceQuests"] = { 45442 },	-- Not Felling Well
-										}),
-										q(45790, {	-- Champion: Almai
-											["provider"] = { "n", 117504 },	-- Brewer Almai
-											["sourceQuests"] = { 45771 },	-- A Time for Everything
-										}),
-									},
-								}),
-							},
-						}),
-					}),
-					crit(8, {	-- Shard Times
-						q(46251, {	-- Shard Times
-							["provider"] = { "n", 116302 },	-- Archmage Khadgar
-							["sourceQuests"] = { 47137 },	-- Champions of Legionfall
-						}),
-					}),
-					crit(9, {	-- Mark of the Sentinax
-						q(47139, {	-- Mark of the Sentinax
-							["provider"] = { "n", 117873 },	-- Illidan Stormrage
-							["sourceQuests"] = { 46251 },	-- Shard Times
-						}),
-					}),
-					crit(10, {	-- Self-Fulfilling Prophecy
-						q(46248, {	-- Self-Fulfilling Prophecy
-							["provider"] = { "n", 120372 },	-- Prophet Velen
-							["sourceQuests"] = { 47139 },	-- Mark of the Sentinax
-						}),
-					}),
-					crit(11, {	-- Intolerable Infestation
-						q(46252, {	-- Intolerable Infestation
-							["provider"] = { "n", 116576 },	-- Maiev Shadowsong
-							["sourceQuests"] = { 46248 },	-- Self-Fulfilling Prophecy
-						}),
-					}),
-					crit(12, {	-- Relieved of Thier Valuables
-						q(46769, {	-- Relieved of Their Valuables
-							["provider"] = { "n", 116302 },	-- Archmage Khadgar
-							["sourceQuests"] = { 46252 },	-- Intolerable Infestation
-						}),
-					}),
-					crit(13, {	-- Take Out the Head...
-						q(46250, {	-- Take Out the Head...
-							["provider"] = { "n", 116576 },	-- Maiev Shadowsong
-							["sourceQuests"] = { 46769 },	-- Relieved of Their Valuables
-						}),
-					}),
-					crit(14, {	-- Championing Our Cause
-						q(46249, {	-- Championing Our Cause
-							["provider"] = { "n", 116302 },	-- Archmage Khadgar
-							["sourceQuests"] = { 46250 },	-- Take Out the Head...
-						}),
-					}),
-					crit(15, {	-- Strike Them Down
-						q(46246, {	-- Strike Them Down
-							["provider"] = { "n", 116576 },	-- Maiev Shadowsong
-							["sourceQuests"] = { 46249 },	-- Championing Our Cause
-						}),
-					}),
-				}),
-			--]]
 				q(46268, {	-- A Found Memento
 					["provider"] = { "o", 268478 },	-- Battered Trinket
 					["races"] = ALLIANCE_ONLY,
@@ -274,7 +155,6 @@ _.Zones =
 					["coord"] = { 39.6, 71.7, 646 },
 					["lvl"] = 110,
 				}),
-				
 				q(46252, {	-- Intolerable Infestation
 					["sourceQuests"] = { 46248 },	-- Self-Fulfilling Prophecy
 					["provider"] = { "n", 116576 },	-- Maiev Shadowsong
@@ -376,6 +256,12 @@ _.Zones =
 					["coord"] = { 52.1, 21.3, 646 },
 					["lvl"] = 110,
 				}),
+				q(47067, {	-- Seeking Lost Knowledge
+					["u"] = 2,
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+					["coord"] = { 44.6, 63.2, 646 },
+					["lvl"] = 110,
+				}),
 				q(46248, {	-- Self-Fulfilling Prophecy
 					["sourceQuests"] = { 47139 },	-- Mark of the Sentinax
 					["provider"] = { "n", 120372 },	-- Prophet Velen
@@ -401,7 +287,6 @@ _.Zones =
 					["coord"] = { 39.6, 71.7, 646 },
 					["lvl"] = 110,
 				}),
-				
 				q(46246, {	-- Strike Them Down
 					["sourceQuests"] = { 46249 },	-- Championing Our Cause
 					["provider"] = { "n", 116576 },	-- Maiev Shadowsong
@@ -435,10 +320,7 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(47000, {	-- The Council's Call
-					["sourceQuests"] = {
-						45030,	-- The Fel-Etched Bone
-						46765,	-- The Broken Shore: Investigating the Legion
-					},
+					["sourceQuest"] = 46765,	-- The Broken Shore: Investigating the Legion
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["coord"] = { 44.6, 63.2, 646 },
 					["lvl"] = 110,
@@ -466,10 +348,16 @@ _.Zones =
 					},
 				}),
 				q(46935, {	-- The Shadow of the Sentinax
-				--	unsure if this has any other prerequisites aside from unlocking broken shore in general.
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 					["provider"] = { "i", 147356 },	-- Broken Sentinax Beacon
 					["lvl"] = 110,
+				}),
+				q(54120, {	-- To Orgrimmar
+					["provider"] = { "n", 145965 },	-- Spirit of Vol'jin
+					["lvl"] = 120,
+					["coord"] = { 62.3, 30.4, 646 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 53778 },	-- Where He Fell
 				}),
 				q(46509, {	-- Tomb Raidering
 					["sourceQuests"] = { 46501 },	-- Grave Robbin'
@@ -496,7 +384,13 @@ _.Zones =
 					["coord"] = { 39.6, 71.7, 646 },
 					["lvl"] = 110,
 				}),
-				
+				q(53778, {	-- Where He Fell
+					["provider"] = { "n", 145965 },	-- Spirit of Vol'jin
+					["lvl"] = 120,
+					["coord"] = { 63.2, 33.3, 646 },
+					["races"] = HORDE_ONLY,
+					["sourceQuests"] = { 53776 },	-- To the Broken Shore
+				}),
 
 
 
@@ -548,7 +442,6 @@ _.Zones =
 						PRIEST,		-- Discipline
 						WARLOCK,	-- Destruction
 					},
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47034, {	-- Legion Threat: The Necromancer
 					["isBreadcrumb"] = true,
@@ -599,21 +492,10 @@ _.Zones =
 					["provider"] = { "n", 106011 },	-- Jace Darkweaver
 					["classes"] = { PRIEST },
 				}),
-				q(47067, {	-- Seeking Lost Knowledge
-					["u"] = 2,
-					["provider"] = { "n", 116302 },	-- Archmage Khadgar
-				}),
 				q(46317, {	-- Talon's Call
 					["provider"] = { "n", 118105 },	-- Grovewarden Proudhorn
 					["sourceQuests"] = { 46246 },	-- Strike Them Down
 					["classes"] = { DRUID },
-				}),
-				q(54120, {	-- To Orgrimmar
-					["provider"] = { "n", 145965 },	-- Spirit of Vol'jin
-					["lvl"] = 120,
-					["coord"] = { 62.3, 30.4, 646 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 53778 },	-- Where He Fell
 				}),
 				q(46675, {	-- To Track a Demon
 					["lvl"] = 110,
@@ -624,15 +506,7 @@ _.Zones =
 						{ "n", 120084 },	-- Druid of the Talon
 					},
 				}),
-				q(53778, {	-- Where He Fell
-					["provider"] = { "n", 145965 },	-- Spirit of Vol'jin
-					["lvl"] = 120,
-					["coord"] = { 63.2, 33.3, 646 },
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 53776 },	-- To the Broken Shore
-				}),
 				--[[
-				q(44057),	-- A "Noble" Event
 				q(45571),	-- A Bit of Espionage
 				q(45343),	-- A Curious Contagion
 				q(46208),	-- A Godly Invitation
@@ -750,7 +624,6 @@ _.Zones =
 				q(46789),	-- Further Advancement
 				q(47045),	-- Further Progress
 				q(46125),	-- Furthering Knowledge
-				q(46501),	-- Grave Robbin'
 				q(46320),	-- Hope For a Cure
 				q(45831),	-- Hunter
 				q(40136),	-- Immaculate Stonehide Leather
@@ -793,7 +666,6 @@ _.Zones =
 				q(41967),	-- Out of the Darkness
 				q(45824),	-- Paladin
 				q(46802),	-- Paragon of the Legionfall Armies
-				q(46253),	-- Pillars of Creation
 				q(39832),	-- Plans and Preparations
 				q(45823),	-- Priest
 				q(45556),	-- Ready to Strike
@@ -846,7 +718,6 @@ _.Zones =
 				q(45830),	-- Shaman
 				q(45346),	-- Shambling Specimens
 				q(45586),	-- Shield Amplification
-				q(46510),	-- Ship Graveyard
 				q(46499),	-- Spiders, Huh?
 				q(43265),	-- Spread the Word
 				q(45025),	-- Stealing the Source of Power
@@ -908,7 +779,6 @@ _.Zones =
 				q(45027),	-- To the Broken Shore
 				q(45349),	-- To the Broken Shore
 				q(46675),	-- To Track a Demon
-				q(46509),	-- Tomb Raidering
 				q(47054),	-- Touched By Fate
 				q(41922),	-- Traitor!
 				q(43267),	-- Troops in the Field
@@ -922,7 +792,6 @@ _.Zones =
 				q(45822),	-- Warrior
 				q(45385),	-- We Must be Prepared!
 				q(45103),	-- We Ride!
-				q(46511),	-- We're Treasure Hunters
 				q(45179),	-- Win the Crowd
 				q(46069),	-- Worthy of the Title
 				q(46256),	-- X Treasures Found, 1 Challenge Attempted
