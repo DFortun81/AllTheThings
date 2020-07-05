@@ -32,6 +32,7 @@ i(23795);	-- Permanent Spirit of Zanza ("Retrieving Data" in-game)
 i(23796);	-- Permanent Swiftness of Zanza ("Retrieving Data" in-game)
 i(141015);	-- Scroll of Town Portal: Kal'delar
 i(141013);	-- Scroll of Town Portal: Shala'nir
+i(141655);	-- Shimmering Ancient Mana Cluster
 i(169856);	-- Spark-1351
 i(1187);	-- Spiked Collar
 i(15723);	-- Tea with Sugar
@@ -59,6 +60,7 @@ i(17410);	-- Zinfizzlex's Portable Shredder Unit
 
 -- "Toy"
 i(9282);	-- Blue Punch Card
+i(171987);	-- Champions of Azeroth Survival Kit
 i(6351);	-- Dented Crate
 i(2460);	-- Elixir of Tongues
 i(13874);	-- Heavy Crate

@@ -1,10 +1,10 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
-_.GearSets = 
+_.GearSets =
 {
 	n(-5350, {	-- Class Trial Item Sets
-		n(-155, {	-- Level 110
+		n(-155, {	-- Level 120
 			["groups"] = {
 				n(-150, {	-- Trailseeker
 					["classes"] = { HUNTER },

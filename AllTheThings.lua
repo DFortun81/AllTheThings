@@ -9671,6 +9671,7 @@ function app:GetDataCache()
 			table.insert(g, db)
 		end
 		--[[ automated category replaced by manual database. leaving this here temporarily as a reference point
+		-- TODO: Remove commented code when finished with essences.
 		db = {};
 		db.g = {};
 		db.lvl = 120;

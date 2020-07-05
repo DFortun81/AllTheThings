@@ -1,16 +1,17 @@
 -----------------------------------------------------
 --       G E A R     S E T S     M O D U L E       --
 -----------------------------------------------------
-_.GearSets = 
+_.GearSets =
 {
 	n(-5350, {	-- Class Trial Item Sets
 		n(-154, {	-- Level 110
 			["groups"] = {
 				n(-145, {	-- Mountainsage
+					["classes"] = { MAGE },
 					["groups"] = {
 						{	-- Mountainsage Wand	*LA0207
 							["itemID"] = 153828,	-- Mountainsage Wand
-							["u"] = 1,	-- Not availablee	
+							["u"] = 1,	-- Not availablee
 						},
 						{	-- Mountainsage Staff	*LA0207
 							["itemID"] = 153830,	-- Mountainsage Stave
@@ -58,7 +59,6 @@ _.GearSets =
 							["itemID"] = 153816,	-- Mountainsage Idol of Destruction
 						},
 					},
-					["classes"] = { 8 }
 				}),
 			},
 		}),

@@ -26,12 +26,12 @@ _.WorldEvents =
 				n(-550, {	-- Starcraft Collector's Edition
 					n(-564, {	-- Starcraft II: Wings of Liberty
 						un(6, ach(4824, {	-- Collector's Edition: Mini Thor
-							un(6, i(56806)),	-- Mini Thor 
+							un(6, i(56806)),	-- Mini Thor
 						})),
 					}),
 					n(-565, {	-- Starcraft II: Heart of the Swarm
 						un(6, ach(7842, {	-- Collector's Edition: Baneling
-							un(6, i(90177)),	-- Baneling 
+							un(6, i(90177)),	-- Baneling
 						})),
 					}),
 					n(-576, {	-- Starcraft II: Legacy of the Void
@@ -117,7 +117,7 @@ _.WorldEvents =
 						un(6, i(172177)),	-- Illusion: Wraithchill
 						q(57686, {	-- The Eternal Traveler
 							["provider"] = { "n", 158635 },	-- Xolartios <Eternal Traveler>
-							["description"] = "You need to purcase a Collector's Edition of Shadowlands to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",
+							["description"] = "You need to purchase a Collector's Edition of Shadowlands to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",
 							["u"] = 6,
 							["g"] = {
 								spell(309452, {	-- Vestments of the Eternal Traveler
