@@ -72,6 +72,10 @@ _.Essences =
 			az(16, 2),	-- Unwavering Ward (Rank 2)
 			az(16, 3),	-- Unwavering Ward (Rank 3)
 			az(16, 4),	-- Unwavering Ward (Rank 4)
+			az(21, 1),	-- Vitality Conduit (Rank 1)
+			az(21, 2),	-- Vitality Conduit (Rank 2)
+			az(21, 3),	-- Vitality Conduit (Rank 3)
+			az(21, 4),	-- Vitality Conduit (Rank 4)
 		},
 	}),
 	n(-856, {	-- Tanks

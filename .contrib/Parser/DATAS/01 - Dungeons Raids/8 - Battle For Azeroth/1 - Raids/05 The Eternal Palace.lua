@@ -40,6 +40,27 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						az(2, 3),	-- Azeroth's Undying Gift (Rank 3)
 					},
 				}),
+				i(168941, {	-- Vitality Redistribution Lattice (Rank 1)
+					["classes"] = HEALERS,
+					["cost"] = { { "i", 169694, 9 } },	-- 9x Aqueous Reliquary
+					["g"] = {
+						az(21, 1),	-- Vitality Conduit (Rank 1)
+					},
+				}),
+				i(168942, {	-- Mesh of Expanding Vitality (Rank 2)
+					["classes"] = HEALERS,
+					["cost"] = { { "i", 169694, 18 } },	-- 18x Aqueous Reliquary
+					["g"] = {
+						az(21, 2),	-- Vitality Conduit (Rank 2)
+					},
+				}),
+				i(168943, {	-- Grid of Bursting Vitality (Rank 3)
+					["classes"] = HEALERS,
+					["cost"] = { { "i", 169694, 36 } },	-- 36x Aqueous Reliquary
+					["g"] = {
+						az(21, 3),	-- Vitality Conduit (Rank 3)
+					},
+				}),
 			}),
 			f(101, {	-- Battle Pet
 				p(2657, {	-- Blackchasm Crawler
@@ -901,10 +922,15 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 								az(2, 4),	-- Azeroth's Undying Gift (Rank 4)
 							},
 						}),
+						i(168944, {	-- Web of Unbridled Vitality (Rank 4)
+							["classes"] = HEALERS,
+							["g"] = {
+								az(21, 4),	-- Vitality Conduit (Rank 4)
+							},
+						}),
 						i(169348),	-- Zanj'ir Poker
 						i(169694),	-- Aqueous Reliquary
 						i(168857),	-- Sparkling Elemental Heart
-						i(168944),	-- Web of Unbridled Vitality
 						i(168275),	-- Anu-Azshara, Staff of the Eternal
 						--i(168895),	-- Mel'nalore, Javelin of Suramar	-- Removed from game?
 						i(168887),	-- Gloves of Incomparable Beauty
