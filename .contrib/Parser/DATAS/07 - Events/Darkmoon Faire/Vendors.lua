@@ -499,7 +499,9 @@ _.WorldEvents =
 					}),
 					i(75040),	-- Flimsy Darkmoon Balloon
 					i(75041),	-- Flimsy Green Balloon
-					i(75042),	-- Flimsy Yellow Balloon (TOY!)
+					i(75042, {	-- Flimsy Yellow Balloon (TOY!)
+						["cost"] = 800,
+					}),
 					i(164969, {	-- Horse Balloon (PET!)
 						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
 					}),
