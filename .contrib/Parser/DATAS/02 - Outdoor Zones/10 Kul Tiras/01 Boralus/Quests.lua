@@ -7,9 +7,38 @@ _.Zones =
 	m(876, {	-- Kul'Tiras
 		m(1161, {	-- Boralus
 			n(QUESTS, {
-				n(-9, {		-- PvP
+				n(-9, {	-- PvP
 					["lvl"] = 120,
 					["g"] = {
+						n(-852, {	-- Azerite Essences
+							i(169902, {	-- Finger-Bone Trophy of Battle (Rank 1)
+								["description"] = "Requires earning 500 Conquest and opening your weekly chest.\n",
+								["g"] = {
+									az(32, 1),	-- Conflict and Strife (Rank 1)
+								},
+							}),
+							i(169901, {	-- Etched Bone Trophy of the Vanquished (Rank 2)
+								["description"] = "Requires reaching 1,000 rating in PvP and opening your next weekly chest.\n",
+								["g"] = {
+									az(32, 2),	-- Conflict and Strife (Rank 2)
+								},
+							}),
+							i(169900, {	-- Rib-Bone Choker of Dominance (Rank 3)
+								["description"] = "The amount of |cff9832dfBurgeoning Battlefield Furor|r you receive from your weekly chest varies depending on your rating.\n\nUnranked - 1\nCombatant - 3\nChallenger - 5\nRival - 6\nDuelist - 8\nElite - 10\n",
+								["cost"] = { { "i", 169590, 15 } },	-- 15x Burgeoning Battlefield Furor
+								["g"] = {
+									az(32, 3),	-- Conflict and Strife (Rank 3)
+								},
+							}),
+							i(169899, {	-- Polished Skull Trophy (Rank 4)
+								["description"] = "Requires reaching Elite rating in PvP and opening your next weekly chest.\n",
+								["cost"] = { { "i", 169590, 15 } },	-- 15x Burgeoning Battlefield Furor
+								["u"] = 14,	-- PvP Elite/Gladiator
+								["g"] = {
+									az(32, 4),	-- Conflict and Strife (Rank 4)
+								},
+							}),
+						}),
 						q(54978, {	-- Against Overwhelming Odds
 							["provider"] = { "n", 135614 },	-- Master Mathias Shaw
 							["isWeekly"] = true,

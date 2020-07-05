@@ -4,6 +4,12 @@
 _.Essences =
 {
 	n(-853, {	-- All Roles
+		az(32, 1),	-- Conflict and Strife (Rank 1)
+		az(32, 2),	-- Conflict and Strife (Rank 2)
+		az(32, 3),	-- Conflict and Strife (Rank 3)
+		az(32, 4, {	-- Conflict and Strife (Rank 4)
+			["u"] = 14,	-- PvP Elite/Gladiator
+		}),
 		az(27, 1),	-- Memory of Lucid Dreams (Rank 1)
 		az(27, 2),	-- Memory of Lucid Dreams (Rank 2)
 		az(27, 3),	-- Memory of Lucid Dreams (Rank 3)
