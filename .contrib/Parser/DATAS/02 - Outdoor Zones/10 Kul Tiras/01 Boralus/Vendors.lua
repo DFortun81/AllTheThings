@@ -1996,7 +1996,6 @@ _.Zones =
 					},
 				}),
 				n(149045, { -- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
-					["currencyID"] = 1718,	-- Titan Residuum
 					["coord"] = { 71.7, 13.7, 1161 },
 					["g"] = {
 						i(168623, {	-- Biconcavic Lens of the Focusing Iris (Rank 4)
@@ -2011,7 +2010,12 @@ _.Zones =
 							},
 						}),
 						i(168927, {	-- Seed of Vibrant Blooms (Rank 4)
+							["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
+							["classes"] = HEALERS,
 							["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
+							["g"] = {
+								az(20, 4),	-- Life-Binder's Invocation (Rank 4)
+							},
 						}),
 					},
 				}),

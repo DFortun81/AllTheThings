@@ -1463,7 +1463,12 @@ _.Zones =
 							},
 						}),
 						i(168927, {	-- Seed of Vibrant Blooms (Rank 4)
+							["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
+							["classes"] = HEALERS,
 							["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
+							["g"] = {
+								az(20, 4),	-- Life-Binder's Invocation (Rank 4)
+							},
 						}),
 					--	this gear currently doesn't display the correct version that the vendor sells, and it's also all duplicated gear from BFA mythics.  commenting out until someone figures out a better way to display it.
 				--[[	i(155860),	-- Spymaster's Wrap
