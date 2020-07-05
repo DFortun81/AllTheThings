@@ -93,7 +93,17 @@ _.ExpansionFeatures =
 						["classes"] = { WARRIOR },	-- Warrior
 						["provider"] = { "n", 93775 },	-- Eitrigg
 					}),
-					q(45128),	-- A Glorious Reunion
+					q(45128, {	-- A Glorious Reunion
+						["maps"] = { 649 },	-- Helheim
+						["coord"] = { 34.3, 28.5, 649 },	-- Helheim
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 116193 },	-- Aerylia
+						["sourceQuests"] = {
+							44850,	-- Arming the Army
+							45118,	-- Helya's Horn
+							45834,	-- Stolen Souls
+						},
+					}),
 					q(46208),	-- A Godly Invitation
 					q(43425, {	-- A Hero's Weapon
 						["coord"] = { 58.3, 84.6, 695 },
@@ -114,6 +124,13 @@ _.ExpansionFeatures =
 					}),
 					q(45180),	-- An Island of War
 					q(45986),	-- An Urgent Warning
+					q(44850, {	-- Arming the Army
+						["maps"] = { 649 },	-- Helheim
+						["coord"] = { 34.3, 28.5, 649 },	-- Helheim
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 116193 },	-- Aerylia
+						["sourceQuest"] = 44849,	-- Recruitment Drive
+					}),
 					q(44255, {	-- Axe and You Shall Receive
 						["lvl"] = 110,
 						["coord"] = { 56.2, 27.0, 695 },
@@ -162,8 +179,11 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(45873, {	-- Champion: Eitrigg
-						["provider"] = { "n", 117479 },	-- Eitrigg
+						["coord"] = { 59.9, 83.8, 695 },
 						["races"] = HORDE_ONLY,
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 117479 },	-- Eitrigg
+						["sourceQuest"] = 46267,	-- Return of the Battlelord
 						["g"] = {
 							follower(989),	-- Lord Darius Crowley / Eitrigg
 						},
@@ -187,8 +207,11 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(45876, {	-- Champion: Lord Darius Crowley
-						["provider"] = { "n", 117480 },	-- Lord Darius Crowley
+						["coord"] = { 59.9, 83.8, 695 },
 						["races"] = ALLIANCE_ONLY,
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 117480 },	-- Lord Darius Crowley
+						["sourceQuest"] = 46267,	-- Return of the Battlelord
 						["g"] = {
 							follower(989),	-- Lord Darius Crowley / Eitrigg
 						},
@@ -240,8 +263,20 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
 						["sourceQuest"] = 42610,	-- Troops in the Field
 					}),
-					q(46778),	-- Further Advancement
+					q(46778, {	-- Further Advancement
+						["coord"] = { 59.7, 13.4, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
+						["sourceQuest"] = 46267,	-- Return of the Battlelord
+					}),
 					q(46155),	-- Furthering Knowledge
+					q(45118, {	-- Helya's Horn
+						["maps"] = { 649 },	-- Helheim
+						["coord"] = { 34.3, 28.5, 649 },	-- Helheim
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 116193 },	-- Aerylia
+						["sourceQuest"] = 44849,	-- Recruitment Drive
+					}),
 					q(45987),	-- Investigate the Broken Shore
 					q(42204, {	-- Jorhuttam
 						["maps"] = { 650 },	-- Highmountain
@@ -255,6 +290,12 @@ _.ExpansionFeatures =
 								["achievementID"] = 10461,	-- Fighting with Style: Classic
 							}),
 						},
+					}),
+					q(45634, {	-- Kvaldir on Call
+						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 69.8, 34.7, 646 },
+						["classes"] = { WARRIOR },
+						["sourceQuest"] = 44889,	-- Resource Management
 					}),
 					q(39191),	-- Legacy of the Icebreaker
 					q(43586, {	-- Maw of Souls: Message to Helya
@@ -274,6 +315,36 @@ _.ExpansionFeatures =
 						["g"] = {
 							follower(712),	-- King Ymiron
 						},
+					}),
+					q(45649, {	-- Mission: Search and Rescue (A)
+						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 73.7, 31.2, 646 },
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 117475 },	-- Lord Darius Crowley
+						["sourceQuest"] = 45648,	-- Missing in Action: Lord Darius Crowley
+					}),
+					q(45647, {	-- Mission: Search and Rescue (H)
+						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 73.7, 31.2, 646 },
+						["races"] = HORDE_ONLY,
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 117471 },	-- Eitrigg
+						["sourceQuest"] = 45632,	-- Missing in Action: Eitrigg
+					}),
+					q(45632, {	-- Missing in Action: Eitrigg
+						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 69.8, 34.7, 646 },
+						["races"] = HORDE_ONLY,
+						["classes"] = { WARRIOR },
+						["sourceQuest"] = 44889,	-- Resource Management
+					}),
+					q(45648, {	-- Missing in Action: Lord Darius Crowley
+						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 69.8, 34.7, 646 },
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { WARRIOR },
+						["sourceQuest"] = 44889,	-- Resource Management
 					}),
 					q(43949, {	-- More Weapons of Legend
 						["lvl"] = 102,
@@ -308,6 +379,22 @@ _.ExpansionFeatures =
 						["classes"] = { WARRIOR },
 						["provider"] = { "n", 96469 },	-- Odyn
 					}),
+					q(45650, {	-- Operation Felrage (A)
+						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 73.7, 31.2, 646 },
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 117475 },	-- Lord Darius Crowley
+						["sourceQuest"] = 45648,	-- Missing in Action: Lord Darius Crowley
+					}),
+					q(45633, {	-- Operation Felrage (H)
+						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 73.7, 31.2, 646 },
+						["races"] = HORDE_ONLY,
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 117471 },	-- Eitrigg
+						["sourceQuest"] = 45632,	-- Missing in Action: Eitrigg
+					}),
 					q(43585, {	-- Preparing For War
 						["coord"] = { 58.3, 84.7, 695 },
 						["classes"] = { WARRIOR },
@@ -326,9 +413,31 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
 						["sourceQuest"] = 42607,	-- Captain Stahlstrom
 					}),
-					q(44849),	-- Recruitment Drive
-					q(44889),	-- Resource Management
-					q(46267),	-- Return of the Battlelord
+					q(44849, {	-- Recruitment Drive
+						["coord"] = { 58.3, 84.6, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96469 },	-- Odyn
+						["sourceQuest"] = 46173,	-- Tactical Planning
+					}),
+					q(44889, {	-- Resource Management
+						["coord"] = { 58.3, 84.6, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96469 },	-- Odyn
+						["sourceQuest"] = 45128,	-- A Glorious Reunion
+					}),
+					q(46267, {	-- Return of the Battlelord
+						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 69.8, 34.7, 646 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 116858 },	-- Danica the Reclaimer
+						["sourceQuests"] = {
+							45634,	-- Kvaldir on Call
+							45649,	-- Mission: Search and Rescue (A)
+							45647,	-- Mission: Search and Rescue (H)
+							45650,	-- Operation Felrage (A)
+							45633,	-- Operation Felrage (H)
+						},
+					}),
 					q(42815, {	-- Return to the Broken Shore (A)
 						["maps"] = { 627 },	-- Dalaran
 						["races"] = ALLIANCE_ONLY,
@@ -367,6 +476,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 106720 },	-- Svergan Stormcloak
 						["sourceQuest"] = 42193,	-- The Gjallarhorn
 					}),
+					q(45834, {	-- Stolen Souls
+						["maps"] = { 649 },	-- Helheim
+						["coord"] = { 34.3, 28.5, 649 },	-- Helheim
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 116193 },	-- Aerylia
+						["sourceQuest"] = 44849,	-- Recruitment Drive
+					}),
 					q(42651, {	-- Svergan's Promise
 						["maps"] = { 634 },	-- Stormheim
 						["coord"] = { 70.8, 38.1, 634 },
@@ -374,7 +490,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 106720 },	-- Svergan Stormcloak
 						["sourceQuest"] = 42650,	-- Break the Bonds
 					}),
-					q(46173),	-- Tactical Planning
+					q(46173, {	-- Tactical Planning
+						["coord"] = { 58.3, 84.6, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96469 },	-- Odyn
+						["sourceQuest"] = 47137,	-- Champions of Legionfall (have to be on it, not technically a sourceQuest)
+					}),
 					q(43750, {	-- The Call of Battle
 						["coord"] = { 59.7, 13.4, 695 },
 						["classes"] = { WARRIOR },

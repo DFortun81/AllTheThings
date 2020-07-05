@@ -759,7 +759,6 @@ _.Zones =
 				q(46031),	-- Investigate the Broken Shore
 				q(39757),	-- Keeping Your Edge
 				q(44082),	-- Knights of the Ebon Blade
-				q(45634),	-- Kvaldir on Call
 				q(45614),	-- Lady Remor'za
 				q(46688),	-- Leather of the Ancients
 				q(38804),	-- Lyrelle
@@ -778,12 +777,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(45345),	-- Mischievous Sprites
-				q(45632, {	-- Missing in Action: Eitrigg
-					["races"] = HORDE_ONLY,
-				}),
-				q(45648, {	-- Missing in Action: Lord Darius Crowley
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(45827),	-- Monk
 				q(46676),	-- Nature's Touch
 				q(44264),	-- Neltharion's Lair
