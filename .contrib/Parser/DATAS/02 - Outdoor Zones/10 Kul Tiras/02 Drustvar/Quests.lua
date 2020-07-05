@@ -11,6 +11,7 @@ _.Zones =
 					["sourceQuests"] = { 50763 },	-- One Last Request
 					["description"] = "After completing the quest \"One Last Request\" you can return back to the house, go upstairs and it will be in the dresser.",
 					["coord"] = { 24.3, 14.9, 896 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50970, {	-- A Farmer's Fate
 					["sourceQuests"] = { 48622 },	-- The Vanishing Lord
