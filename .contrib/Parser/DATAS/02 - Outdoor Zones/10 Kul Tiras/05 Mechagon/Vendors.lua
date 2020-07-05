@@ -96,6 +96,39 @@ _.Zones =
 				n(150716, {	-- Stolen Royal Vendorbot
 					["coord"] = { 73.7, 36.9, 1462 },
 					["g"] = {
+						i(168400, {	-- Null Force Containment Unit (Rank 1)
+							["minReputation"] = { 2391, FRIENDLY },
+							["classes"] = TANKS,
+							["cost"] = {
+								{ "i", 169610, 2 },	-- 2x Spare Crate
+								{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
+							},
+							["g"] = {
+								az(13, 1),	-- Nullification Dynamo (Rank 1)
+							},
+						}),
+						i(168566, {	-- Null Force Cooling Unit (Rank 2)
+							["minReputation"] = { 2391, HONORED },
+							["classes"] = TANKS,
+							["cost"] = {
+								{ "i", 169610, 8 },	-- 8x Spare Crate
+								{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
+							},
+							["g"] = {
+								az(13, 2),	-- Nullification Dynamo (Rank 2)
+							},
+						}),
+						i(168568, {	-- Null Force Nullifier (Rank 3)
+							["minReputation"] = { 2391, REVERED },
+							["classes"] = TANKS,
+							["cost"] = {
+								{ "i", 169610, 30 },	-- 30x Spare Crate
+								{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
+							},
+							["g"] = {
+								az(13, 3),	-- Nullification Dynamo (Rank 3)
+							},
+						}),
 						i(169112, {	-- Blueprint: Advanced Adventurer Augment
 							["questID"] = 56145,
 							["cost"] = 20480000,	-- 2,048g
@@ -146,24 +179,6 @@ _.Zones =
 							["cost"] = 5000000,	-- 500g
 						}),
 						i(167693),	-- Neural Autonomy
-						i(168400, {	-- Null Force Containment Unit (Rank 1)
-							["cost"] = {
-								{ "i", 169610, 2 },	-- 2x Spare Crate
-								{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
-							},
-						}),
-						i(168566, {	-- Null Force Cooling Unit (Rank 2)
-							["cost"] = {
-								{ "i", 169610, 8 },	-- 8x Spare Crate
-								{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
-							},
-						}),
-						i(168568, {	-- Null Force Nullifier (Rank 3)
-							["cost"] = {
-								{ "i", 169610, 30 },	-- 30x Spare Crate
-								{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
-							},
-						}),
 						i(168932, {	-- Reactive Existence Battery (Rank 1)
 							["cost"] = {
 								{ "i", 169610, 2 },	-- 2x Spare Crate

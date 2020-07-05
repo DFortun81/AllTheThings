@@ -11,6 +11,14 @@ _.Zones =
 					["repeatable"] = true,
 					["g"] = {
 						i(170061, {	-- Rustbolt Supplies
+							i(168569, {	-- Null Force Visualizer (Rank 4)
+								["modelScale"] = 3,
+								["classes"] = TANKS,
+								["model"] = 2924336,
+								["g"] = {
+									az(13, 4),	-- Nullification Dynamo (Rank 4)
+								},
+							}),
 							i(168906, {	-- Blueprint: Holographic Digitalization Relay
 								["questID"] = 56086,	-- Blueprint: Holographic Digitalization Relay
 								["g"] = {
@@ -37,10 +45,6 @@ _.Zones =
 							}),
 							i(168935, {	-- Existence Vibrancy Display
 								["model"] = 2974000,
-								["modelScale"] = 3,
-							}),
-							i(168569, {	-- Null Force Visualizer
-								["model"] = 2924336,
 								["modelScale"] = 3,
 							}),
 							i(168861, {	-- Ultimate Purification Protocols
