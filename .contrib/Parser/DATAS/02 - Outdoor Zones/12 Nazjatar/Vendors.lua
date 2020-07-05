@@ -233,6 +233,27 @@ _.Zones =
 							az(17, 3),	-- The Ever-Rising Tide (Rank 3)
 						},
 					}),
+					i(168863, {	-- Unbound Azerite Slivershards (Rank 1)
+						["minReputation"] = { 2373, FRIENDLY },
+						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+						["g"] = {
+							az(28, 1),	-- The Unbound Force (Rank 1)
+						},
+					}),
+					i(168864, {	-- Sharpened Azerite Slivershards (Rank 2)
+						["minReputation"] = { 2373, HONORED },
+						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
+						["g"] = {
+							az(28, 2),	-- The Unbound Force (Rank 2)
+						},
+					}),
+					i(168865, {	-- Polazired Azerite Slivershards (Rank 3)
+						["minReputation"] = { 2373, REVERED },
+						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
+						["g"] = {
+							az(28, 3),	-- The Unbound Force (Rank 3)
+						},
+					}),
 					i(168848, {	-- Pearl of Perspicuous Intentions (Rank 3)
 						["description"] = "Requires completing the achievement |cffffff00Nautical Battlefield Training|r.\n",
 						["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
@@ -265,9 +286,6 @@ _.Zones =
 					i(169607, {	-- Formula: Accord of Versatility (Rank 3)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(168865, {	-- Polazired Azerite Slivershards
-						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
-					}),
 					i(169549, {	-- Recipe: Contract: Unshackled
 						["cost"] = 14000000,	-- 1,400g
 					}),
@@ -282,17 +300,11 @@ _.Zones =
 					}),
 					un(1, i(169601)),	-- Recipe: Potion of Reconstitution (Rank 3)
 					un(1, i(170076)),	-- Recipe: Unagi Skewer
-					i(168864, {	-- Sharpened Azerite Slivershards
-						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
-					}),
 					i(169274, {	-- Tabard of the Unshackled
 						["cost"] = 6250000,	-- 625g
 					}),
 					i(168479, {	-- Troop Requisition
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
-					}),
-					i(168863, {	-- Unbound Azerite Slivershards
-						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
 					}),
 					i(174523, {	-- Waveswept Abyssal Conch
 						["races"] = HORDE_ONLY,
@@ -1101,6 +1113,27 @@ _.Zones =
 							az(17, 3),	-- The Ever-Rising Tide (Rank 3)
 						},
 					}),
+					i(168863, {	-- Unbound Azerite Slivershards (Rank 1)
+						["minReputation"] = { 2400, FRIENDLY },
+						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
+						["g"] = {
+							az(28, 1),	-- The Unbound Force (Rank 1)
+						},
+					}),
+					i(168864, {	-- Sharpened Azerite Slivershards (Rank 2)
+						["minReputation"] = { 2400, HONORED },
+						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
+						["g"] = {
+							az(28, 2),	-- The Unbound Force (Rank 2)
+						},
+					}),
+					i(168865, {	-- Polazired Azerite Slivershards (Rank 3)
+						["minReputation"] = { 2400, REVERED },
+						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
+						["g"] = {
+							az(28, 3),	-- The Unbound Force (Rank 3)
+						},
+					}),
 					i(168848, {	-- Pearl of Perspicuous Intentions (Rank 3)
 						["description"] = "Requires completing the achievement |cffffff00Nautical Battlefield Training|r.\n",
 						["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
@@ -1130,9 +1163,6 @@ _.Zones =
 					i(169533, {	-- Formula: Accord of Versatility (Rank 3)
 						["cost"] = 14000000,	-- 1,400g
 					}),
-					i(168865, {	-- Polazired Azerite Slivershards
-						["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
-					}),
 					i(169364, {	-- Prismatic Softshell (PET!)
 						["cost"] = 5000000,	-- 500g
 					}),
@@ -1151,17 +1181,11 @@ _.Zones =
 					i(169493, {	-- Recipe: Potion of Reconstitution (Rank 3)
 						["u"] = 1,	-- NYI
 					}),
-					i(168864, {	-- Sharpened Azerite Slivershards
-						["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
-					}),
 					i(168610, {	-- Tabard of the Waveblade Ankoan
 						["cost"] = 6250000,	-- 625g
 					}),
 					i(168480, {	-- Troop Requisition
 						["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
-					}),
-					i(168863, {	-- Unbound Azerite Slivershards
-						["cost"] = { { "c", 1721, 5 }, },	-- 5x Prismatic Manapearl
 					}),
 					i(174522, {	-- Waveswept Abyssal Conch
 						["races"] = ALLIANCE_ONLY,

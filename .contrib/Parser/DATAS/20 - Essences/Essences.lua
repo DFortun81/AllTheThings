@@ -44,6 +44,10 @@ _.Essences =
 		az(36, 2),	-- Spark of Inspiration (Rank 2)
 		az(36, 3),	-- Spark of Inspiration (Rank 3)
 		az(36, 4),	-- Spark of Inspiration (Rank 4)
+		az(28, 1),	-- The Unbound Force (Rank 1)
+		az(28, 2),	-- The Unbound Force (Rank 2)
+		az(28, 3),	-- The Unbound Force (Rank 3)
+		az(28, 4),	-- The Unbound Force (Rank 4)
 	}),
 	n(-855, {	-- Healers
 		["classes"] = HEALERS,

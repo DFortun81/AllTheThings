@@ -14,6 +14,9 @@ _.Zones =
 					i(169940, {	-- Unshackled Supplies
 						["races"] = HORDE_ONLY,
 						["g"] = {
+							i(168866, {	-- Incandescent Azerite Slivershards (Rank 4)
+								az(28, 4),	-- The Unbound Force (Rank 4)
+							}),
 							i(168840, {	-- Resplendent Bastion of the Depths (Rank 4)
 								["classes"] = TANKS,
 								["g"] = {
