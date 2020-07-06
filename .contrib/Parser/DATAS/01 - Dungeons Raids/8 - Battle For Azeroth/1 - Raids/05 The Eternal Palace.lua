@@ -40,6 +40,24 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						az(2, 3),	-- Azeroth's Undying Gift (Rank 3)
 					},
 				}),
+				i(168854, {	-- Animated Elemental Heart (Rank 1)
+					["cost"] = { { "i", 169694, 9 } },	-- 9x Aqueous Reliquary
+					["g"] = {
+						az(14, 1),	-- Condensed Life-Force (Rank 1)
+					},
+				}),
+				i(168855, {	-- Pulsing Elemental Heart (Rank 2)
+					["cost"] = { { "i", 169694, 18 } },	-- 18x Aqueous Reliquary
+					["g"] = {
+						az(14, 2),	-- Condensed Life-Force (Rank 2)
+					},
+				}),
+				i(168856, {	-- Resonating Elemental Heart (Rank 3)
+					["cost"] = { { "i", 169694, 36 } },	-- 36x Aqueous Reliquary
+					["g"] = {
+						az(14, 3),	-- Condensed Life-Force (Rank 3)
+					},
+				}),
 				i(168941, {	-- Vitality Redistribution Lattice (Rank 1)
 					["classes"] = HEALERS,
 					["cost"] = { { "i", 169694, 9 } },	-- 9x Aqueous Reliquary
@@ -922,6 +940,9 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 								az(2, 4),	-- Azeroth's Undying Gift (Rank 4)
 							},
 						}),
+						i(168857, {	-- Sparkling Elemental Heart (Rank 4)
+							az(14, 4),	-- Condensed Life-Force (Rank 4)
+						}),
 						i(168944, {	-- Web of Unbridled Vitality (Rank 4)
 							["classes"] = HEALERS,
 							["g"] = {
@@ -930,7 +951,6 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						}),
 						i(169348),	-- Zanj'ir Poker
 						i(169694),	-- Aqueous Reliquary
-						i(168857),	-- Sparkling Elemental Heart
 						i(168275),	-- Anu-Azshara, Staff of the Eternal
 						--i(168895),	-- Mel'nalore, Javelin of Suramar	-- Removed from game?
 						i(168887),	-- Gloves of Incomparable Beauty
