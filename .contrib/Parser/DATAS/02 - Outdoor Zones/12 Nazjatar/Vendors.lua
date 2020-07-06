@@ -333,6 +333,7 @@ _.Zones =
 						},
 					}),
 					i(168853, {	-- Glinting Battlefield Memento (Rank 4)
+						["description"] = "Requires completing the achievement |cffffff00Supplying the Assassins|r.\n",
 						["cost"] = { { "i", 168802, 5 }, },		-- 5x Nazjatar Battle Commendation
 						["g"] = {
 							az(15, 4),	-- Ripple in Space (Rank 4)
