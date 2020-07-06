@@ -2386,6 +2386,7 @@ _.NeverImplemented =
 	--	Raids
 	--	Uldir
 		q(53269),	-- killed Taloc the Corrupted in LFR
+		q(51730),	-- killed Mythrax the Unraveler on Mythic
 
 	--	Battle of Dazar'alor
 		q(54963),	-- LFR, cinematic at the start of Siege of Dazar'alor wing

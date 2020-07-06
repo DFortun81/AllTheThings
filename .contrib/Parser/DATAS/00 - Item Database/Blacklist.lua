@@ -18,6 +18,7 @@ i(142262);	-- Electrified Key
 i(168222);	-- Encrypted Black Market Radio
 i(13508);	-- Eye of Arachnida
 i(129210);	-- Fel Crystal Fragments
+i(127768);	-- Fel Petal
 i(44618);	-- Glass of Aged Dalaran Red
 i(18269);	-- Gordok Green Grog
 i(19296);	-- Greater Darkmoon Prize
