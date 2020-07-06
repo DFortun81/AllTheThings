@@ -30,6 +30,24 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				},
 			}),
+			i(168620, {	-- Converging Lens of the Focusing Iris (Rank 1)
+				["description"] = "Requires completing a +4 Mythic and looting the chest at the end of the dungeon.\n",
+				["g"] = {
+					az(5, 1),	-- Essence of the Focusing Iris (Rank 1)
+				},
+			}),
+			i(168621, {	-- Magnifying Lens of the Focusing Iris (Rank 2)
+				["description"] = "Requires completing a +7 Mythic and looting the chest at the end of the dungeon.\n",
+				["g"] = {
+					az(5, 2),	-- Essence of the Focusing Iris (Rank 2)
+				},
+			}),
+			i(168622, {	-- Stabilizing Lens of the Focusing Iris (Rank 3)
+				["description"] = "The amount of |cff9832dfFocused Life Anima|r you receive from your weekly chest varies depending on the highest Mythic+ you completed during the previous week.\n\n+2 to +3 - 1\n+4 to +6 - 2\n+7 to +9 - 3\n+10 to +14 - 5\n+15 or higher - 8\n\nIf you have already earned a Rank 3 Mythic+ essence, you will receive more Anima in your weekly chest.\n",
+				["g"] = {
+					az(5, 3),	-- Essence of the Focusing Iris (Rank 3)
+				},
+			}),
 			i(168924, {	-- Bursting Seed of Life (Rank 1)
 				["description"] = "Requires completing a +4 Mythic and looting the chest at the end of the dungeon.\n",
 				["classes"] = HEALERS,

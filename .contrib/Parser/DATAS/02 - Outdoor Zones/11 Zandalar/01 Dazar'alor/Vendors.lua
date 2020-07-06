@@ -1452,7 +1452,11 @@ _.Zones =
 					["coord"] = { 53.9, 88.9, 1165 },
 					["g"] = {
 						i(168623, {	-- Biconcavic Lens of the Focusing Iris (Rank 4)
+							["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
 							["cost"] = { { "c", 1718, 800 }, },	-- 800x Titan Residuum
+							["g"] = {
+								az(5, 4),	-- Essence of the Focusing Iris (Rank 4)
+							},
 						}),
 						i(168560, {	-- Fetish of the Gilded Catacombs (Rank 4)
 							["description"] = "Requires completing the achievement |cffffff00Battle for Azeroth Keystone Master|r.\n",
