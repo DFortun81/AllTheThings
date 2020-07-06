@@ -49,7 +49,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				}),
 				q(11911,{ 	-- Quickening
-					["provider"] = { "n", 11911 },	-- Image of Warmage Kaitlyn
+					["provider"] = { "n", 55536 },	-- Image of Warmage Kaitlyn
 					["g"] = {
 						i(42768), 	-- Boots of the Unbowed Protector
 						i(42767),	-- Invigorating Sabatons

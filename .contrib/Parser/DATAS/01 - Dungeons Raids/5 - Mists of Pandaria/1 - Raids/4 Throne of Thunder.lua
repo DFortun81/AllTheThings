@@ -19,11 +19,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			515,	-- Hidden Cell
 		},
 		["coord"] = { 63.4, 32.6, 504 },	-- Throne of Thunder, Isle of Thunder
-		["groups"] = {
+		["g"] = {
 			n(QUESTS, {
 				i(97153, {	-- Spoils of the Thunder King
 					["description"] = "This bag contains gold, flasks, reagents, epic necklaces, and has chance to drop a Primal Egg.",
-					["groups"] = {
+					["g"] = {
 						i(94295),	-- Primal Egg
 						i(95202),	-- Necklace of the Terra-Cotta Archer
 						i(95203),	-- Necklace of the Terra-Cotta Invoker
@@ -34,7 +34,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				}),
 				un(2, i(95343, {	-- Treasures of the Thunder
 					["description"] = "Since the introduction of Legacy Loot this bag is only obtainable if you queue up as a Level 91-100 for the intended raid.  If you are 101+ then you will need to seek out each item based on their original sources.  This change occured in Patch 8.0.1",
-					["groups"] = {
+					["g"] = {
 						i(94295),	-- Primal Egg
 						i(95961),	-- Abandoned Zandalari Firecord
 						i(95962),	-- Abandoned Zandalari Shadowgirdle
@@ -72,13 +72,13 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				}),
 				n(-176, {	-- Weekly World Events
 					["description"] = "Only one of these quests are available in the raid at a time. As you progress through the raid, you should see ",
-					["groups"] = {
+					["g"] = {
 						{
 							["questID"] = 32711,	-- Agony and Anima
 							["provider"] = { "n", 70243 },	-- Quest Giver: Archritualist Kelada
 							["collectible"] = false,
 							["isWeekly"] = true,
-							["groups"] = {
+							["g"] = {
 								i(97153),	-- Spoils of the Thunder King
 							},
 						},
@@ -90,7 +90,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							},
 							["collectible"] = false,
 							["isWeekly"] = true,
-							["groups"] = {
+							["g"] = {
 								i(97153),	-- Spoils of the Thunder King
 							},
 						},
@@ -99,7 +99,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							["provider"] = { "n", 70440 },	-- Quest Giver: Monara <The Last Queen>
 							["collectible"] = false,
 							["isWeekly"] = true,
-							["groups"] = {
+							["g"] = {
 								i(97153),	-- Spoils of the Thunder King
 							},
 						},
@@ -108,7 +108,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							["provider"] = { "n", 70430 },	-- Quest Giver: Rocky Horror
 							["collectible"] = false,
 							["isWeekly"] = true,
-							["groups"] = {
+							["g"] = {
 								i(97153),	-- Spoils of the Thunder King
 							},
 						},
@@ -117,7 +117,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							["provider"] = { "n", 70429 },	-- Quest Giver: Flesh'rok the Diseased <Primordial Saurok Horror>
 							["collectible"] = false,
 							["isWeekly"] = true,
-							["groups"] = {
+							["g"] = {
 								i(97153),	-- Spoils of the Thunder King
 							},
 						},
@@ -126,7 +126,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							["provider"] = { "n", 70276 },	-- Quest Giver: No'ku Stormsayer <Lord of Tempest>
 							["collectible"] = false,
 							["isWeekly"] = true,
-							["groups"] = {
+							["g"] = {
 								i(97153),	-- Spoils of the Thunder King
 							},
 						},
@@ -135,7 +135,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							["provider"] = { "n", 69843 },	-- Quest Giver: Zao'cho <The Emperor's Shield>
 							["collectible"] = false,
 							["isWeekly"] = true,
-							["groups"] = {
+							["g"] = {
 								i(97153),	-- Spoils of the Thunder King
 							},
 						},
@@ -181,7 +181,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					69911,	-- Zandalari Warlord
 					69455,	-- Zandalari Water-Binder
 				},
-				["groups"] =  {
+				["g"] =  {
 					i(95202),	-- Necklace of the Terra-Cotta Archer
 					i(95203),	-- Necklace of the Terra-Cotta Invoker
 					i(95204),	-- Necklace of the Terra-Cotta Mender
@@ -235,10 +235,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			d(  7, {	-- LFR
 				["description"] = "|cff66ccffSpeak to Lorewalker Han at Seat of Knowledge in Vale of Eternal Blossoms to queue for LFR. \nLoot from this LFR is NOT tradeable to others in group.|r",
 				["coord"] = { 83.0, 30.6, 390 },	-- Seat of Knowledge, Vale of Eternal Blossoms
-				["groups"] = {
+				["g"] = {
 					n(COMMON_BOSS_DROPS, {
 						["description"] = "These can drop from any of the bosses other than Ra-den.",
 						["crs"] = {
+							80633,	-- Lorewalker Han
 							69465,	-- Jin'rokh the Breaker
 							68476,	-- Horridon
 							69131,	-- Frost King Malakk
@@ -246,17 +247,22 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							69134,	-- Kazra'jin
 							69078,	-- Sul the Sandrawler
 							67977,	-- Tortos
-							70212,	-- Megaera (Flaming Head)
+							70212,	-- Flaming Head
+							70247,	-- Venomous Head
+							70235,	-- Frozen Head
 							69712,	-- Ji-Kun
 							68036,	-- Durumu the Forgotten
 							69017,	-- Primordius
 							69427,	-- Dark Animus
 							68078,	-- Iron Qon
+							68079,	-- Ro'shak
+							68080,	-- Quet'zal
+							68081,	-- Dam'ren
 							68904,	-- Suen <Mistress of Anger>
 							68905,	-- Lu'lin <Mistress of Solitude>
 							68397,	-- Lei Shen
 						},
-						["groups"] = {
+						["g"] = {
 							i(95877),	-- Bo-Ris, Horror in the Night
 							i(95862),	-- Darkwood Spiritstaff
 							i(95875),	-- Greatsword of Frozen Hells
@@ -285,7 +291,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["crs"] = {
 							80633,	-- Lorewalker Han <Raid Finder Storyteller>
 						},
-						["groups"] = {
+						["g"] = {
 							cr(69465, e(827, {	-- Jin'rokh the Breaker
 								i(95343), 	-- Treasures of the Thunder King
 								i(95640),	-- Soulblade of the Breaking Storm
@@ -341,7 +347,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									69134,	-- Kazra'jin
 									69078,	-- Sul the Sandrawler
 								},
-								["groups"] = {
+								["g"] = {
 									i(95856, {		-- Gauntlets of the Crackling Conqueror
 										i(95911),	-- Lightning Emperor's Gauntlets
 										i(95916),	-- Lightning Emperor's Gloves
@@ -393,7 +399,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["crs"] = {
 							80633,	-- Lorewalker Han <Raid Finder Storyteller>
 						},
-						["groups"] = {
+						["g"] = {
 							i(98132, {	-- Shado-Pan Geyser Gun
 								["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
 							}),
@@ -427,7 +433,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									70235,	-- Frozen Head <Head of Megaera>
 									70247,	-- Venomous Head <Head of Megaera>
 								},
-								["groups"] = {
+								["g"] = {
 									i(95343), 	-- Treasures of the Thunder King
 									i(95698),	-- Megaera's Poisoned Fang
 									i(95710),	-- Fetish of the Hydra
@@ -452,7 +458,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							})),
 							n(68220, {			-- Gastropod
 								["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
-								["groups"] = {	
+								["g"] = {	
 									i(98136)	-- Gastropod Shell
 								},
 							}),
@@ -506,7 +512,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["crs"] = {
 							80633,	-- Lorewalker Han <Raid Finder Storyteller>
 						},
-						["groups"] = {
+						["g"] = {
 							cr(68036, e(818, {	-- Durumu the Forgotten
 								i(95343), 	-- Treasures of the Thunder King
 								i(95743),	-- Ritual Dagger of the Mind's Eye
@@ -560,7 +566,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								["crs"] = {
 									69756,	-- Anima Orb
 								},
-								["groups"] = {
+								["g"] = {
 									i(95823, {	-- Chest of the Crackling Conqueror
 										i(95910),	-- Lightning Emperor's Battleplate
 										i(95915),	-- Lightning Emperor's Breastplate
@@ -611,7 +617,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["crs"] = {
 							80633,	-- Lorewalker Han <Raid Finder Storyteller>
 						},
-						["groups"] = {
+						["g"] = {
 							cr(68078, e(817, {	-- Iron Qon
 								["crs"] = {
 									68081,	-- Dam'ren <The Frozen Sage>
@@ -619,7 +625,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									68080,	-- Quet'zal <The Stormcaller>
 									68079,	-- Ro'shak <The Molten Flare>
 								},
-								["groups"] = {
+								["g"] = {
 									i(95956, {	-- Shoulders of the Crackling Conqueror
 										i(95919),	-- Lightning Emperor's Mantle
 										i(95914),	-- Lightning Emperor's Pauldrons
@@ -668,7 +674,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									68904,	-- Suen <Mistress of Anger>
 									68905,	-- Lu'lin <Mistress of Solitude>
 								},
-								["groups"] = {
+								["g"] = {
 									i(95880, {	-- Helm of the Crackling Conqueror
 										i(95922),	-- Lightning Emperor's Faceguard
 										i(95917),	-- Lightning Emperor's Headguard
@@ -742,7 +748,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			d(1, {		-- Normal
 				["ignoreBonus"] = true,
 				["difficulties"] = { 3, 4 },
-				["groups"] = {
+				["g"] = {
 					n(COMMON_BOSS_DROPS, {
 						["description"] = "These can drop from any of the bosses other than Ra-den.",
 						["crs"] = {
@@ -763,7 +769,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							68905,	-- Lu'lin <Mistress of Solitude>
 							68397,	-- Lei Shen
 						},
-						["groups"] = {
+						["g"] = {
 							n(-355, {	-- Thunderforged
 								i(96249),	-- Bo-Ris, Horror in the Night
 								i(96234),	-- Darkwood Spiritstaff
@@ -916,7 +922,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							69134,	-- Kazra'jin
 							69078,	-- Sul the Sandrawler
 						},
-						["groups"] = {
+						["g"] = {
 							ach(8073),	-- Cage Match
 							i(95575, {	-- Gauntlets of the Crackling Conqueror
 								i(95281),	-- Lightning Emperor's Gauntlets
@@ -1032,7 +1038,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							70235,	-- Frozen Head <Head of Megaera>
 							70247,	-- Venomous Head <Head of Megaera>
 						},
-						["groups"] = {
+						["g"] = {
 							ach(8082),	-- Head Case
 							i(94788),	-- Megaera's Poisoned Fang
 							i(94796),	-- Fetish of the Hydra
@@ -1078,7 +1084,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 					n(68220, {			-- Gastropod
 						["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
-						["groups"] = {	
+						["g"] = {	
 							i(98136)	-- Gastropod Shell
 						},
 					}),
@@ -1237,7 +1243,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["crs"] = {
 							69756,	-- Anima Orb
 						},
-						["groups"] = {
+						["g"] = {
 							ach(8081),	-- Ritualist Who?
 							i(95574, {	-- Chest of the Crackling Conqueror
 								i(95280),	-- Lightning Emperor's Battleplate
@@ -1302,7 +1308,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							68080,	-- Quet'zal <The Stormcaller>
 							68079,	-- Ro'shak <The Molten Flare>
 						},
-						["groups"] = {
+						["g"] = {
 							ach(8087),	-- Can't Touch This
 							i(95578, {	-- Shoulders of the Crackling Conqueror
 								i(95289),	-- Lightning Emperor's Mantle
@@ -1364,7 +1370,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							68904,	-- Suen <Mistress of Anger>
 							68905,	-- Lu'lin <Mistress of Solitude>
 						},
-						["groups"] = {
+						["g"] = {
 							{	-- From Dusk 'til Dawn
 								["achievementID"] = 8086,	-- From Dusk 'til Dawn
 							},
@@ -1474,7 +1480,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 			d(  2, {	-- Heroic
 				["ignoreBonus"] = true,
 				["difficulties"] = { 5, 6 },
-				["groups"] = {
+				["g"] = {
 					n(COMMON_BOSS_DROPS, {
 						["description"] = "These can drop from any of the bosses other than Ra-den.",
 						["crs"] = {
@@ -1495,7 +1501,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							68905,	-- Lu'lin <Mistress of Solitude>
 							68397,	-- Lei Shen
 						},
-						["groups"] = {
+						["g"] = {
 							n(-355, {	-- Thunderforged
 								i(96979),	-- Lost Shoulders of Fire
 								i(96981),	-- Lost Shoulders of Fluidity
@@ -1650,7 +1656,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							69134,	-- Kazra'jin
 							69078,	-- Sul the Sandrawler
 						},
-						["groups"] = {
+						["g"] = {
 							ach(8073),	-- Cage Match
 							ach(8058),	-- Heroic: Council of Elders
 							i(96600, {	-- Gauntlets of the Crackling Conqueror
@@ -1768,7 +1774,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							70235,	-- Frozen Head <Head of Megaera>
 							70247,	-- Venomous Head <Head of Megaera>
 						},
-						["groups"] = {
+						["g"] = {
 							ach(8082),	-- Head Case
 							ach(8060),	-- Heroic: Megaera
 							i(96442),	-- Megaera's Poisoned Fang
@@ -1815,7 +1821,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 					n(68220, {			-- Gastropod
 						["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
-						["groups"] = {	
+						["g"] = {	
 							i(98136),	-- Gastropod Shell
 						},
 					}),
@@ -1977,7 +1983,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["crs"] = {
 							69756,	-- Anima Orb
 						},
-						["groups"] = {
+						["g"] = {
 							ach(8064),	-- Heroic: Dark Animus
 							ach(8081),	-- Ritualist Who?
 							i(96567, {	-- Chest of the Crackling Conqueror
@@ -2043,7 +2049,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							68080,	-- Quet'zal <The Stormcaller>
 							68079,	-- Ro'shak <The Molten Flare>
 						},
-						["groups"] = {
+						["g"] = {
 							ach(8087),	-- Can't Touch This
 							ach(8065),	-- Heroic: Iron Qon
 							i(96700, {	-- Shoulders of the Crackling Conqueror
@@ -2106,7 +2112,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							68904,	-- Suen <Mistress of Anger>
 							68905,	-- Lu'lin <Mistress of Solitude>
 						},
-						["groups"] = {
+						["g"] = {
 							{	-- From Dusk 'til Dawn
 								["achievementID"] = 8086,	-- From Dusk 'til Dawn
 							},
