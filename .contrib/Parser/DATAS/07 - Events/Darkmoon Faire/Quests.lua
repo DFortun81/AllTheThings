@@ -1,7 +1,8 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
--- //Add quests that were removed, but kept (Quests)
+
+-- TODO: Add quests that were removed, but kept (Quests)
 _.WorldEvents =
 {
 	m(407, {	-- Darkmoon Island

@@ -458,7 +458,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							})),
 							n(68220, {			-- Gastropod
 								["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
-								["g"] = {	
+								["g"] = {
 									i(98136)	-- Gastropod Shell
 								},
 							}),
@@ -840,7 +840,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(94729),	-- Jin'rokh's Soulcrystal
 						i(95510),	-- Sign of the Bloodied God
 						i(94512),	-- Renataki's Soul Charm
-						n(-355, {	-- Thunderforged	
+						n(-355, {	-- Thunderforged
 							i(96012),	-- Soulblade of the Breaking Storm
 							i(96004),	-- Worldbreaker's Stormscythe
 							i(95998),	-- Lightning-Eye Hood
@@ -984,7 +984,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 					})),
 					i(98132, {	-- Shado-Pan Geyser Gun
-						["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.", 
+						["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
 					}),
 					cr(67977, e(825, {	-- Tortos
 						ach(8077),	-- One-Up
@@ -1029,7 +1029,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(96069),	-- Tortos' Shellseizers
 							i(96068),	-- Refreshing Abalone Girdle
 							i(96054),	-- Quakestompers
-						}),	
+						}),
 					})),
 					cr(70212, e(821, {	-- Megaera (Flaming Head)
 						["crs"] = {
@@ -1059,7 +1059,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(94795),	-- Spinescale Seal
 							i(94521),	-- Breath of the Hydra
 							i(94520),	-- Inscribed Bag of Hydra-Spawn
-							n(-355, {	-- Thunderforged	
+							n(-355, {	-- Thunderforged
 								i(96070),	-- Megaera's Poisoned Fang
 								i(96082),	-- Fetish of the Hydra
 								i(96085),	-- Hood of Smoldering Flesh
@@ -1084,7 +1084,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 					n(68220, {			-- Gastropod
 						["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
-						["g"] = {	
+						["g"] = {
 							i(98136)	-- Gastropod Shell
 						},
 					}),
@@ -1144,7 +1144,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(96093),	-- Featherflight Belt
 							i(96098),	-- Fabled Feather of Ji-Kun
 							i(96099),	-- Ji-Kun's Rising Winds
-						}),	
+						}),
 					})),
 					cr(68036, e(818, {	-- Durumu the Forgotten
 						ach(8098),	-- You Said Crossing the Streams Was Bad
@@ -1189,7 +1189,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(96106),	-- Treads of the Blind Eye
 							i(96114),	-- Durumu's Captive Eyeball
 							i(96109),	-- Durumu's Severed Tentacle
-						}),	
+						}),
 					})),
 					cr(69017, e(820, {	-- Primordius
 						ach(8037),	-- Genectically Unmodified Organism
@@ -1237,7 +1237,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(96129),	-- Primordius' Talisman of Rage
 							i(96135),	-- Stolen Relic of Zuldazar
 							i(96120),	-- Talisman of Bloodlust
-						}),	
+						}),
 					})),
 					cr(69427, e(824, {	-- Dark Animus
 						["crs"] = {
@@ -1298,7 +1298,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(96141),	-- Gore-Soaked Gear
 								i(96144),	-- Cha-Ye's Essence of Brilliance
 								i(96151),	-- Delicate Vial of the Sanguinaire
-							}),	
+							}),
 						},
 					})),
 					cr(68078, e(817, {	-- Iron Qon
@@ -1362,7 +1362,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(96156),	-- Dam'ren's Frozen Footguards
 								i(96159),	-- Spurs of the Storm Cavalry
 								i(96157),	-- Ro'shak's Remembrance
-							}),	
+							}),
 						},
 					})),
 					cr(68905, e(829, {	-- Twin Consorts (Lu'lin)
@@ -1426,7 +1426,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(96169),	-- Girdle of Night and Day
 								i(96170),	-- Tidal Force Treads
 								i(96171),	-- Gaze of the Twins
-							}),	
+							}),
 						},
 					})),
 					cr(68397, e(832, {	-- Lei Shen
@@ -1473,7 +1473,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(96174),	-- Rune of Re-Origination
 							i(96183),	-- Soul Barrier
 							i(96186),	-- Unerring Vision of Lei Shen
-						}),	
+						}),
 					})),
 				},
 			}),
@@ -1525,28 +1525,28 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(97130),	-- Tia-Tia, the Scything Star
 								i(96977),	-- Zeeg's Ancient Kegsmasher
 								i(96994),	-- Visage of the Doomed
-							}),	
-							i(96607),	-- Lost Shoulders of Fire	
-							i(96609),	-- Lost Shoulders of Fluidity	
-							i(96608),	-- Lost Shoulders of Healing	
-							i(96612),	-- Forgotten Mantle of the Moon	
-							i(96613),	-- Forgotten Mantle of the Sun	
-							i(96614),	-- Abandoned Spaulders of Arrowflight	
-							i(96615),	-- Abandoned Spaulders of Renewal	
-							i(96618),	-- Reconstructed Bloody Shoulderplates	
-							i(96617),	-- Reconstructed Furious Shoulderplates	
-							i(96616),	-- Reconstructed Holy Shoulderplates	
-							i(96621),	-- Bo-Ris, Horror in the Night	
-							i(96606),	-- Darkwood Spiritstaff	
-							i(96620),	-- Do-tharak, the Swordbreaker	
-							i(96604),	-- Fyn's Flickering Dagger	
-							i(96619),	-- Greatsword of Frozen Hells	
-							i(96602),	-- Invocation of the Dawn	
-							i(96611),	-- Jerthud, Graceful Hand of the Savior	
-							i(96603),	-- Miracoran, the Vehement Chord	
-							i(96610),	-- Nadagast's Exsanguinator	
-							i(97127),	-- Tia-Tia, the Scything Star	
-							i(96605),	-- Zeeg's Ancient Kegsmasher	
+							}),
+							i(96607),	-- Lost Shoulders of Fire
+							i(96609),	-- Lost Shoulders of Fluidity
+							i(96608),	-- Lost Shoulders of Healing
+							i(96612),	-- Forgotten Mantle of the Moon
+							i(96613),	-- Forgotten Mantle of the Sun
+							i(96614),	-- Abandoned Spaulders of Arrowflight
+							i(96615),	-- Abandoned Spaulders of Renewal
+							i(96618),	-- Reconstructed Bloody Shoulderplates
+							i(96617),	-- Reconstructed Furious Shoulderplates
+							i(96616),	-- Reconstructed Holy Shoulderplates
+							i(96621),	-- Bo-Ris, Horror in the Night
+							i(96606),	-- Darkwood Spiritstaff
+							i(96620),	-- Do-tharak, the Swordbreaker
+							i(96604),	-- Fyn's Flickering Dagger
+							i(96619),	-- Greatsword of Frozen Hells
+							i(96602),	-- Invocation of the Dawn
+							i(96611),	-- Jerthud, Graceful Hand of the Savior
+							i(96603),	-- Miracoran, the Vehement Chord
+							i(96610),	-- Nadagast's Exsanguinator
+							i(97127),	-- Tia-Tia, the Scything Star
+							i(96605),	-- Zeeg's Ancient Kegsmasher
 							i(96622),	-- Visage of the Doomed
 						},
 					}),
@@ -1594,7 +1594,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(96749),	-- Jin'rokh's Soulcrystal
 							i(96740),	-- Sign of the Bloodied God
 							i(96741),	-- Renataki's Soul Charm
-						}),	
+						}),
 					})),
 					cr(68476, e(819, {	-- Horridon
 						ach(8038),	-- Cretaceous Collector
@@ -1715,11 +1715,11 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(96781),	-- Bad Juju
 								i(96793),	-- Fortitude of the Zandalari
 								i(96785),	-- Wushoolay's Final Choice
-							}),	
+							}),
 						},
 					})),
 					i(98132, {	-- Shado-Pan Geyser Gun
-						["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.", 
+						["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
 					}),
 					cr(67977, e(825, {	-- Tortos
 						ach(8059),	-- Heroic: Tortos
@@ -1821,7 +1821,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					})),
 					n(68220, {			-- Gastropod
 						["description"] = "Go up and give this mob a BIG HUG...just kidding; stay out of its melee range.",
-						["g"] = {	
+						["g"] = {
 							i(98136),	-- Gastropod Shell
 						},
 					}),
@@ -1928,7 +1928,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(96850),	-- Treads of the Blind Eye
 							i(96858),	-- Durumu's Captive Eyeball
 							i(96853),	-- Durumu's Severed Tentacle
-						}),	
+						}),
 					})),
 					cr(69017, e(820, {	-- Primordius
 						ach(8037),	-- Genectically Unmodified Organism
@@ -1977,7 +1977,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(96873),	-- Primordius' Talisman of Rage
 							i(96879),	-- Stolen Relic of Zuldazar
 							i(96864),	-- Talisman of Bloodlust
-						}),	
+						}),
 					})),
 					cr(69427, e(824, {	-- Dark Animus
 						["crs"] = {
@@ -2039,7 +2039,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(96885),	-- Gore-Soaked Gear
 								i(96888),	-- Cha-Ye's Essence of Brilliance
 								i(96895),	-- Delicate Vial of the Sanguinaire
-							}),	
+							}),
 						},
 					})),
 					cr(68078, e(817, {	-- Iron Qon
@@ -2151,7 +2151,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(96538),	-- Shield of Twinned Despair
 							i(96544),	-- Moonjade Necklace
 							i(96537),	-- Passionfire Choker
-							i(96536),	-- Robes of the Moon Lotus	
+							i(96536),	-- Robes of the Moon Lotus
 							i(96540),	-- Bracers of the Midnight Comet
 							i(96545),	-- Fingers of the Night
 							i(96541),	-- Girdle of Night and Day
@@ -2169,7 +2169,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(96913),	-- Girdle of Night and Day
 								i(96914),	-- Tidal Force Treads
 								i(96915),	-- Gaze of the Twins
-							}),	
+							}),
 						},
 					})),
 					cr(68397, e(832, {	-- Lei Shen
@@ -2224,7 +2224,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(96918),	-- Rune of Re-Origination
 							i(96927),	-- Soul Barrier
 							i(96930),	-- Unerring Vision of Lei Shen
-						}),	
+						}),
 					})),
 					cr(69473, e(831, {	-- Ra-den
 						un(2, ach(8260)),	-- Cutting Edge: Ra-den

@@ -269,7 +269,7 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(46251, {	-- Shard Times
-				--	could theoretically attach each class's champion recruitment to this, which would possibly make more sense?  DH's is 45391
+				-- TODO: could theoretically attach each class's champion recruitment to this, which would possibly make more sense?  DH's is 45391
 					["sourceQuests"] = { 47137 },	-- Champions of Legionfall
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["coord"] = { 44.6, 63.2, 646 },
@@ -401,7 +401,7 @@ _.Zones =
 
 
 
-			-- unconfirmed or old af data that needs to be re-confirmed anyway
+			-- TODO: unconfirmed or old af data that needs to be re-confirmed anyway
 				q(45425, {	-- Grovebound
 					["sourceQuests"] = { 46677 },	-- Prick of a Thistle
 					["classes"]= { DRUID },

@@ -375,7 +375,7 @@ _.WorldEvents =
 						}),
 						i(78252, {	-- Replica Feralheart Vest
 							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
-						}),	
+						}),
 					}),
 					gs(855, {	-- Sorcerer's Regalia
 						i(78202, {	-- Replica Sorcerer's Belt
@@ -403,7 +403,7 @@ _.WorldEvents =
 							["cost"] = { { "c", 515, 75 }, },	-- 75x Darkmoon Prize Ticket
 						}),
 					}),
-					gs(859, {	-- Soulforge Armor	
+					gs(859, {	-- Soulforge Armor
 						i(78311, {	-- Replica Soulforge Belt
 							["cost"] = { { "c", 515, 55 }, },	-- 55x Darkmoon Prize Ticket
 						}),
@@ -829,7 +829,7 @@ _.WorldEvents =
 					i(73903, {	-- Darkmoon Tonk  (PET!)
 						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
 					}),
-					i(73765, {	-- Darkmoon Turtle  (PET!)					
+					i(73765, {	-- Darkmoon Turtle  (PET!)
 						["cost"] = { { "c", 515, 90 }, },	-- 90x Darkmoon Prize Ticket
 					}),
 					i(73905, {	-- Darkmoon Zeppelin  (PET!)

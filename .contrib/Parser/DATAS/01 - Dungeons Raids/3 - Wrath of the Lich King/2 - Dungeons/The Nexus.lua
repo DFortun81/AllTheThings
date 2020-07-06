@@ -2,6 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
+-- TODO: reformat achievs here
 _.Instances = { tier(3, {	-- Wrath of the Lich King
 	inst(281, { 	-- The Nexus
 		["lvl"] = 59,
@@ -94,7 +95,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(35601),	-- Drakonid Arm Blade
 					i(35602),	-- Chiseled Stalagmite Pauldrons
 					i(37153),	-- Gloves of the Crystal Gardener
-					i(157559), 	-- Chilly Cinch 
+					i(157559), 	-- Chilly Cinch
 					i(37152),	-- Girdle of Ice
 					i(37155),	-- Frozen Forest Kilt
 					i(35603),	-- Greaves of the Blue Flight
@@ -174,7 +175,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(35601),	-- Drakonid Arm Blade
 						i(35602),	-- Chiseled Stalagmite Pauldrons
 						i(37153),	-- Gloves of the Crystal Gardener
-						i(157559), 	-- Chilly Cinch 
+						i(157559), 	-- Chilly Cinch
 						i(37152),	-- Girdle of Ice
 						i(37155),	-- Frozen Forest Kilt
 						i(35603),	-- Greaves of the Blue Flight

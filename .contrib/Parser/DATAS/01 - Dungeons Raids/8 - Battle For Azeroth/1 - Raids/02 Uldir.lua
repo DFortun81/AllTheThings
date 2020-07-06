@@ -19,7 +19,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			1382, 	-- Neck Upgrade Quest #2 -- The Oblivion Door
 		},
 		["g"] = {
-			n(QUESTS, { 
+			n(QUESTS, {
 				spell(281237, {	-- Reorigination Array
 					["description"] = "As mentioned above, Reorigination Array can stack up to 10 times, and the tooltip reveals how this system works. Every week, there is a hidden mini-quest to defeat 3 bosses in Uldir, this objective can be completed in any difficulty. You do not need to have any Azerite Armor from Uldir to progress in these quests. Completing this quest will reward you with one stack of Reorigination Array while in Uldir permanently.\n\nThe track of the complete upgrade system is achieved by a dozen different flag quests, listed below. Note, however, that these quests don't have database entries as they only serve as flags, but can be actually queried in-game for their completion. The first part of the system controls how many bosses have been killed in Uldir for that week:",
 					["g"] = {
@@ -105,7 +105,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					i(162521),	-- Recipe: Mystical Cauldron (Rank 3)
 				},
 			}),
-			d(17,  {	-- LFR 
+			d(17,  {	-- LFR
 				n(ZONEDROPS, {
 					i(161071),	-- Bloody Experimenter's Wraps
 					i(160612),	-- Spellbound Specimen Handlers
@@ -230,7 +230,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						},
 					}),
 					e(2195, {	-- Zul, Reborn
-						["crs"] = { 138967 },	-- Zul 
+						["crs"] = { 138967 },	-- Zul
 						["g"] = {
 							crit(3, {	-- Zul, Reborn
 								["achievementID"] = 12522,	-- Crimson Descent
@@ -378,7 +378,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(160628),	-- Fused Monstrosity Stompers
 						i(160648),	-- Frenetic Corpuscle
 					},
-				}),							
+				}),
 				e(2169, {	-- Zek'voz, Herald of N'zoth
 					["crs"] = {
 						134445,	-- Zek'voz <Herald of N'zoth>
@@ -579,7 +579,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(160628),	-- Fused Monstrosity Stompers
 						i(160648),	-- Frenetic Corpuscle
 					},
-				}),							
+				}),
 				e(2169, {	-- Zek'voz, Herald of N'zoth
 					["crs"] = {
 						134445,	-- Zek'voz <Herald of N'zoth>
@@ -790,7 +790,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						i(160628),	-- Fused Monstrosity Stompers
 						i(160648),	-- Frenetic Corpuscle
 					},
-				}),							
+				}),
 				e(2169, {	-- Zek'voz, Herald of N'zoth
 					["crs"] = {
 						134445,	-- Zek'voz <Herald of N'zoth>

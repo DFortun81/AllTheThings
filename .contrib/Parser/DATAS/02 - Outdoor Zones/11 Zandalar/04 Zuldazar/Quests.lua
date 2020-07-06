@@ -6,7 +6,7 @@ _.Zones =
 	m(875, {	-- Zandalar
 		m(862, {	-- Zuldazar
 			n(QUESTS, {
-			--	shit that needs solving:
+			-- TODO: shit that needs solving:
 				--	what unlocks "productive pests"/"crabulous feast"?  the other two quests in the area (76.4, 48.7) are available with no prerequisites, not even starting the zuldazar/dazar'alor, but as soon as you land in the port of dazar'alor for the first time after the pre-BFA stuff.
 
 				--	when does "keep them on task" (breadcrumb for area mentioned above) unlock?  could be as early as "terrace of the chosen" or as late as "mistress of lies," which is when i saw it.

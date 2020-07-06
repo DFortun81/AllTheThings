@@ -122,12 +122,12 @@ _.Zones =
 					["lvl"] = 110,
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["coord"] = { 28.8, 48.8, 627 },
-					["classes"] = { 
-						PALADIN, 
-						PRIEST, 
-						SHAMAN, 
-						MONK, 
-						DRUID 
+					["classes"] = {
+						PALADIN,
+						PRIEST,
+						SHAMAN,
+						MONK,
+						DRUID
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -136,7 +136,7 @@ _.Zones =
 					["sourceQuests"] = { 46340 },	-- The Gates Are Closed
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["coord"] = { 28.8, 48.8, 627 },
-					["classes"] = { 
+					["classes"] = {
 						MAGE,		-- Arcane
 						PALADIN,	-- Retribution
 						ROGUE,		-- Assassination
@@ -160,13 +160,13 @@ _.Zones =
 					["lvl"] = 110,
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["coord"] = { 28.8, 48.8, 627 },
-					["classes"] = { 
-						HUNTER, 
-						PRIEST, 
+					["classes"] = {
+						HUNTER,
+						PRIEST,
 						MAGE, 	-- Frost
-						WARLOCK, 
-						DEMONHUNTER, 
-						DRUID 
+						WARLOCK,
+						DEMONHUNTER,
+						DRUID
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -322,7 +322,7 @@ _.Zones =
 				}),
 				q(44914, {	-- Arms: The Thieving Apprentice
 					["lvl"] = 110,
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						44821,	-- In Dire Need
 						47032,	-- Legion Threat: Azshara
 					},
@@ -438,7 +438,7 @@ _.Zones =
 				}),
 				q(40710, {	-- Blade in Twilight
 					["classes"] = { PRIEST },
-					["providers"] = { 
+					["providers"] = {
 						{ "n", 101314 },	-- Alonsus Faol
 						{ "n", 110564 },	-- Alonsus Faol
 					},
@@ -1105,7 +1105,7 @@ _.Zones =
 				}),
 				q(45412, {	-- Protection: Aid of the Illidari (Warrior) -- this is still obtainable, confirmed in 8.3
 					["lvl"] = 110,
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						47030,	-- Legion Threat: Dalaran Inflitration
 						44821,	-- In Dire Need
 					},

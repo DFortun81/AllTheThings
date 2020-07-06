@@ -743,7 +743,7 @@ app.L = {
 		[-3342] = "Interface\\Icons\\inv_helm_cloth_vrykulcaster_b_01",						-- Fallen Runelord
 		[-3343] = "Interface\\Icons\\inv_helmet_153",										-- Choking Winter
 		[-3344] = "Interface\\Icons\\inv_helmet_157",										-- Frostsworn
-		[-3345] = "Interface\\Icons\\Inv_helmet_151",		
+		[-3345] = "Interface\\Icons\\Inv_helmet_151",
 		[-3347] = "Interface\\Icons\\inv_plate_draenorlfr_c_01helm",						-- Black Tooth Grunt
 
 		[-4189] = "Interface\\Icons\\achievement_legionpvptier4",							-- Instance Item Sets, PvP
@@ -917,7 +917,7 @@ app.L = {
 		[-10060] = "Interface\\Icons\\achievement_arena_3v3_1",						-- Arena of Annihilation (Scenario)
 		[-10061] = "Interface\\Icons\\achievement_faction_celestials",				-- The Four Celestials
 		[-10070] = "Interface\\Icons\\Paladin_Protection",							--
-		[-10071] = "Interface\\Icons\\Paladin_Protection",							-- 
+		[-10071] = "Interface\\Icons\\Paladin_Protection",							--
 		[-10072] = "Interface\\Icons\\ability_deathwing_assualtaspects",			-- N'Zoth Assault
 		[-10073] = "Interface\\Icons\\spell_arcane_teleportorgrimmar",				-- Horrific Vision of Orgrimmar
 		[-10074] = "Interface\\Icons\\spell_arcane_teleportstormwind",				-- Horrific Vision of Stomrwind
@@ -1381,7 +1381,7 @@ app.L = {
 		[-851] = "Irontide Chest",												-- Irontide Chest
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
-		
+
 		[-852] = "Azerite Essences",											-- Azerite Essences
 		[-853] = "All Roles",													-- All Roles
 		[-854] = "DPS",															-- DPS

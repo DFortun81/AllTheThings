@@ -482,7 +482,7 @@ _.Zones =
 								}),
 								n(-160, {	-- Mounts
 									i(166468),	-- Bloodgorged Hunter
-									i(163583),	-- Craghorn Chasm-Leaper 
+									i(163583),	-- Craghorn Chasm-Leaper
 									i(166467),	-- Island Thunderscale
 									i(163585),	-- Surf Jelly
 									i(163584),	-- Twilight Avenger
@@ -943,7 +943,7 @@ _.Zones =
 							["cost"] = { { "c", 1710, 50 }, },	-- 50 Seafarer's Dubloons
 							--[[
 							["sym"] = {
-								{"sub", "islandexpeditions_sets", -45, -3327 },	-- Mail / Dragonrider Set		
+								{"sub", "islandexpeditions_sets", -45, -3327 },	-- Mail / Dragonrider Set
 							},
 							]]--
 							["g"] = {
