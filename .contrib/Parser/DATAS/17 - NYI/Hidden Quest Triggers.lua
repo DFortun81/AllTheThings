@@ -1226,6 +1226,7 @@ _.NeverImplemented =
 		q(38549),	-- FLAG: Demonsteel Helm Crafted
 		q(47096),	-- Broken Shore - Choice: Blacksmithing
 	--	Leatherworking
+		q(44351),	-- FLAG: Upgrade First Crafted Item - triggers when you the first legion armour item (may not be LW specific)
 		q(47094),	-- Broken Shore - Choice: Leatherworking (L) - triggers when you choose to craft the leather legendary at Eliezer Hammerbeard (Nether Disruptor)
 		q(47095),	-- Broken Shore - Choice: Leatherworking (M) - triggers when you choose to craft the mail legendary at Eliezer Hammerbeard (Nether Disruptor)
 	--	Tailoring
