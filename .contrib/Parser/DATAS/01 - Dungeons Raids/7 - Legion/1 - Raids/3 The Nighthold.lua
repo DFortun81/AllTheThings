@@ -289,7 +289,9 @@ _.Instances = { tier(7, {	-- Legion
 							i(140835),	-- Unkindled Ember
 						})),
 						cr(106643, e(1743, {	-- Elisande
-							ach(10838, crit(3)),	-- Nightspire / Elisande
+							crit(3, {	-- Elisande
+								["achievementID"] = 10838,	-- Nightspire
+							}),
 							i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1]
 							i(137762),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 2]
 							i(138332),	-- Doomblade Cowl
@@ -661,6 +663,7 @@ _.Instances = { tier(7, {	-- Legion
 					ach(10838, crit(3)),	-- Nightspire / Elisande
 					ach(10699),	-- Infinitesimal
 					i(143656, {	-- Echo of Time (Normal)
+						["altQuests"] = { 45382, 45383 },	-- The Nighthold: Talisman of the Shal'dorei (H, M)
 						["questID"] = 45381,	-- The Nighthold: Talisman of the Shal'dorei (Normal)
 					}),
 					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1]
@@ -1036,9 +1039,12 @@ _.Instances = { tier(7, {	-- Legion
 					i(140841),	-- Tempest of the Heavens
 				})),
 				cr(106643, e(1743, {	-- Elisande
-					ach(10838, crit(3)),	-- Nightspire / Elisande
+					crit(3, {	-- Elisande
+						["achievementID"] = 10838,	-- Nightspire
+					}),
 					ach(10699),	-- Infinitesimal
 					i(143657, {	-- Echo of Time (Heroic)
+						["altQuests"] = { 45383 },	-- The Nighthold: Talisman of the Shal'dorei (M)
 						["questID"] = 45382,	-- The Nighthold: Talisman of the Shal'dorei (Heroic)
 					}),
 					i(139650),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 1]

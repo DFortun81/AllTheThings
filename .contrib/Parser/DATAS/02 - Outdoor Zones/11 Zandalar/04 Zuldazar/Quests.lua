@@ -673,6 +673,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 				}),
+				q(50930, {	-- Falling with Style
+					["sourceQuests"] = { 50900 },	-- Maybe When You're Older
+					["provider"] = { "n", 135308 },	-- Wingminder Goja
+					["isDaily"] = true,
+					["coord"] = { 70.8, 50.7, 862 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 120,
+				}),
 				q(49663, {	-- False Prophecies
 					["sourceQuests"] = { 49905 },	-- Plot Twist
 					["provider"] = { "n", 129907 },	-- Zul the Prophet

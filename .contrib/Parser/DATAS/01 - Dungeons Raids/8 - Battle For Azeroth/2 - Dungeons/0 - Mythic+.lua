@@ -24,10 +24,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			i(168559, {	-- Fetish of the Hidden Labyrinths (Rank 3)
 				["description"] = "The amount of |cff9832dfFocused Life Anima|r you receive from your weekly chest varies depending on the highest Mythic+ you completed during the previous week.\n\n+2 to +3 - 1\n+4 to +6 - 2\n+7 to +9 - 3\n+10 to +14 - 5\n+15 or higher - 8\n\nIf you have already earned a Rank 3 Mythic+ essence, you will receive more Anima in your weekly chest.\n",
 				["classes"] = TANKS,
+				["cost"] = { { "i", 169491, 15 } },	-- 15x Focused Life Anima
 				["g"] = {
-					az(7, 3, {	-- Anima of Life and Death (Rank 3)
-						["cost"] = { { "i", 169491, 15 } },	-- 15x Focused Life Anima
-					}),
+					az(7, 3),	-- Anima of Life and Death (Rank 3)
 				},
 			}),
 			i(168620, {	-- Converging Lens of the Focusing Iris (Rank 1)
@@ -65,10 +64,9 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			i(168926, {	-- Lingering Seed of Renewal (Rank 3)
 				["description"] = "The amount of |cff9832dfFocused Life Anima|r you receive from your weekly chest varies depending on the highest Mythic+ you completed during the previous week.\n\n+2 to +3 - 1\n+4 to +6 - 2\n+7 to +9 - 3\n+10 to +14 - 5\n+15 or higher - 8\n\nIf you have already earned a Rank 3 Mythic+ essence, you will receive more Anima in your weekly chest.\n",
 				["classes"] = HEALERS,
+				["cost"] = { { "i", 169491, 15 } },	-- 15x Focused Life Anima
 				["g"] = {
-					az(20, 3, {	-- Life-Binder's Invocation (Rank 3)
-						["cost"] = { { "i", 169491, 15 } },	-- 15x Focused Life Anima
-					}),
+					az(20, 3),	-- Life-Binder's Invocation (Rank 3)
 				},
 			}),
 		},

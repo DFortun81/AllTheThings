@@ -40,6 +40,7 @@ i(15723);	-- Tea with Sugar
 i(143858);	-- Twilight Cultist Cowl
 i(143857);	-- Twilight Cultist Mantle
 i(143855);	-- Twilight Cultist Robe
+i(168003);	-- Unstable Manapearl
 i(13514);	-- Wail of the Banshee
 
 

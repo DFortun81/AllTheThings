@@ -51,10 +51,6 @@ _.Zones =
 					q(48604, {	-- Home Again, Home Again
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(54692, {	-- Magister Crystalynn
-						["isWorldQuest"] = true,
-						["lvl"] = 110,
-					}),
 					q(53274, {	-- Overgrown Anchor Weed
 						["isWorldQuest"] = true,
 						["requireSkill"] = HERBALISM,
@@ -489,6 +485,11 @@ _.Zones =
 						["lvl"] = 110,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
+					}),
+					q(54692, {	-- Magister Crystalynn
+						["isWorldQuest"] = true,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
 					}),
 					q(51433, {	-- Matron Morana
 						["lvl"] = 120,

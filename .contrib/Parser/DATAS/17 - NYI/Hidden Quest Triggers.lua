@@ -1493,6 +1493,7 @@ _.NeverImplemented =
 		q(45321),	-- Spellblade Aluriel
 		q(45322),	-- Tichondrius
 		q(45323),	-- Krosus
+		q(46329),	-- Krosus (Normal)
 		q(46330),	-- Krosus (Heroic)
 		q(46331),	-- Krosus (Mythic)
 		q(45324),	-- High Botanist Tel'arn
