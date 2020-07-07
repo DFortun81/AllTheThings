@@ -1484,6 +1484,7 @@ _.NeverImplemented =
 		q(46664),	-- Odyn (Mythic)
 		q(45430),	-- Guarm
 		q(45431),	-- Helya
+		q(45227),	-- Tracking Quest — popped for Carbion shortly after Mythic Helya (character's first time doing either Mythic or Heroic ToV)
 
 	-- Nighthold
 		q(45318),	-- Skorpyron

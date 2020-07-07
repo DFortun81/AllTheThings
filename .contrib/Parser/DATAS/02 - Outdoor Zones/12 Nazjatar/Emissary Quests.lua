@@ -50,10 +50,19 @@ _.Zones =
 					i(169939, {	-- Ankoan Supplies
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
+							i(168866, {	-- Incandescent Azerite Slivershards (Rank 4)
+								az(28, 4),	-- The Unbound Force (Rank 4)
+							}),
 							i(168840, {	-- Resplendent Bastion of the Depths (Rank 4)
 								["classes"] = TANKS,
 								["g"] = {
 									az(25, 4),	-- Aegis of the Deep (Rank 4)
+								},
+							}),
+							i(168931, {	-- Vellum of Illuminating Tides (Rank 4)
+								["classes"] = HEALERS,
+								["g"] = {
+									az(17, 4),	-- The Ever-Rising Tide (Rank 4)
 								},
 							}),
 							i(170203, {	-- Flopping Fish (TOY!)
