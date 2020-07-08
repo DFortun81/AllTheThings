@@ -75,7 +75,23 @@ _.Zones =
 						["lvl"] = 120,
 					}),	
 				}),
+				prof(COOKING, {
+					q(54469, {	-- Fresh Dishes (A)
+						["provider"] = { "n", 136052 },	-- "Cap'n" Byron Mehlsack <Cooking Trainer>
+						["coord"] = { 71.2, 10.8, 1161 },
+						["requireSkill"] = COOKING,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 110,
+					}),
+				}),
 				prof(ENCHANTING, {
+					q(54473, {	-- Enchanted Formulae (H)
+						["provider"] = { "n", 136041 },	-- Emily Fairweather <Enchanting Trainer>
+						["coord"] = { 74.1, 11.4, 1161 },
+						["requireSkill"] = ENCHANTING,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 110,
+					}),
 					q(54005, {	-- What the Drust Knew (A)
 						["provider"] = { "n", 136041 },	-- Emily Fairweather
 						["coord"] = { 74.2, 11.3, 1161 },
@@ -678,6 +694,13 @@ _.Zones =
 						["sourceQuest"] = 55214,	-- Seam Stress
 						["requireSkill"] = TAILORING,
 						["lvl"] = 120,
+					}),
+					q(54483, {	-- Tailored Training (A)
+						["provider"] = { "n", 136071 },	-- Daniel Brineweaver <Tailoring Trainer>
+						["coord"] = { 76.8, 11.2, 1161 },
+						["requireSkill"] = TAILORING,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 110,
 					}),
 					q(53869, {	-- Killing Time
 						["provider"] = { "n", 151134 },	-- Timeweaver Delormi

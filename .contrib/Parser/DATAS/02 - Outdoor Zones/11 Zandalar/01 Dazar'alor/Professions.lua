@@ -64,7 +64,23 @@ _.Zones =
 						["lvl"] = 120,
 					}),	
 				}),
+				prof(COOKING, {
+					q(54470, {	-- Fresh Dishes (H)
+						["provider"] = { "n", 141549 },	-- T'sarah the Royal Chef <Cooking Trainer>
+						["coord"] = { 28.5, 50.0, 1164 },
+						["requireSkill"] = COOKING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+					}),
+				}),
 				prof(ENCHANTING, {
+					q(54474, {	-- Enchanted Formulae (H)
+						["provider"] = { "n", 122702 },	-- Enchantress Quinni <Enchanting Trainer>
+						["coord"] = { 47.0, 35.8, 1165 },
+						["requireSkill"] = ENCHANTING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+					}),
 					-- Tools of Trade Questline
 					q(54161, {	-- What the Drust Knew (H)
 						["provider"] = { "n", 122702 },	-- Enchantress Quinni
@@ -660,6 +676,13 @@ _.Zones =
 						["sourceQuest"] = 55214,	-- Seam Stress
 						["requireSkill"] = TAILORING,
 						["lvl"] = 120,
+					}),
+					q(54484, {	-- Tailored Training (H)
+						["provider"] = { "n", 122700 },	-- Pin'jin the Patient <Tailoring Trainer>
+						["coord"] = { 44.5, 33.9, 1165 },
+						["requireSkill"] = TAILORING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
 					}),
 					q(53869, {	-- Killing Time
 						["provider"] = { "n", 151134 },	-- Timeweaver Delormi
