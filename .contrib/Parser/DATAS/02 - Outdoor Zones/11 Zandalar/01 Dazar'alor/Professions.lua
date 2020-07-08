@@ -65,6 +65,13 @@ _.Zones =
 					}),	
 				}),
 				prof(ENCHANTING, {
+					q(54474, {	-- Enchanted Formulae (H)
+						["provider"] = { "n", 122702 },	-- Enchantress Quinni <Enchanting Trainer>
+						["coord"] = { 47.0, 35.8, 1165 },
+						["requireSkill"] = ENCHANTING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+					}),
 					-- Tools of Trade Questline
 					q(54161, {	-- What the Drust Knew (H)
 						["provider"] = { "n", 122702 },	-- Enchantress Quinni

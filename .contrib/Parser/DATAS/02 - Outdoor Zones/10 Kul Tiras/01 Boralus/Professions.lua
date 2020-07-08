@@ -76,6 +76,13 @@ _.Zones =
 					}),	
 				}),
 				prof(ENCHANTING, {
+					q(54473, {	-- Enchanted Formulae (H)
+						["provider"] = { "n", 136041 },	-- Emily Fairweather <Enchanting Trainer>
+						["coord"] = { 74.1, 11.4, 1161 },
+						["requireSkill"] = ENCHANTING,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 110,
+					}),
 					q(54005, {	-- What the Drust Knew (A)
 						["provider"] = { "n", 136041 },	-- Emily Fairweather
 						["coord"] = { 74.2, 11.3, 1161 },
