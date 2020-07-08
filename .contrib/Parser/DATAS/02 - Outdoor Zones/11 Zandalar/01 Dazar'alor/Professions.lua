@@ -64,6 +64,15 @@ _.Zones =
 						["lvl"] = 120,
 					}),	
 				}),
+				prof(COOKING, {
+					q(54470, {	-- Fresh Dishes (H)
+						["provider"] = { "n", 141549 },	-- T'sarah the Royal Chef <Cooking Trainer>
+						["coord"] = { 28.5, 50.0, 1164 },
+						["requireSkill"] = COOKING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+					}),
+				}),
 				prof(ENCHANTING, {
 					q(54474, {	-- Enchanted Formulae (H)
 						["provider"] = { "n", 122702 },	-- Enchantress Quinni <Enchanting Trainer>

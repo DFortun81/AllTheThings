@@ -75,6 +75,15 @@ _.Zones =
 						["lvl"] = 120,
 					}),	
 				}),
+				prof(COOKING, {
+					q(54469, {	-- Fresh Dishes (A)
+						["provider"] = { "n", 136052 },	-- "Cap'n" Byron Mehlsack <Cooking Trainer>
+						["coord"] = { 71.2, 10.8, 1161 },
+						["requireSkill"] = COOKING,
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 110,
+					}),
+				}),
 				prof(ENCHANTING, {
 					q(54473, {	-- Enchanted Formulae (H)
 						["provider"] = { "n", 136041 },	-- Emily Fairweather <Enchanting Trainer>
