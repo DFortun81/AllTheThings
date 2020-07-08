@@ -661,6 +661,13 @@ _.Zones =
 						["requireSkill"] = TAILORING,
 						["lvl"] = 120,
 					}),
+					q(54484, {	-- Tailored Training (H)
+						["provider"] = { "n", 122700 },	-- Pin'jin the Patient <Tailoring Trainer>
+						["coord"] = { 44.5, 33.9, 1165 },
+						["requireSkill"] = TAILORING,
+						["races"] = HORDE_ONLY,
+						["lvl"] = 110,
+					}),
 					q(53869, {	-- Killing Time
 						["provider"] = { "n", 151134 },	-- Timeweaver Delormi
 						["coord"] = { 71.6, 39.8, 115 },
