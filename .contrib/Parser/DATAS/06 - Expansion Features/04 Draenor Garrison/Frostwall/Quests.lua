@@ -816,6 +816,15 @@ _.ExpansionFeatures =
 							i(119457),	-- Handaxe of Trials
 						},
 					}),
+					q(38287, {	-- Raw Beast Hides
+						["providers"] = {
+							{ "n", 91033 },	-- Zeezu (Horde)
+							{ "n", 91024 },	-- Jake the Fox (Alliance)
+						},
+						["isDaily"] = true,
+						["cost"] = { "i", 110609, 50 },	-- 50x Raw Beast Hide
+						["lvl"] = 90,
+					}),
 					o(233263,{	-- Shamanstone: Blessing of the Wolf
 						["questID"] = 33977,	-- Blessing of the Wolf
 						["races"] = HORDE_ONLY,

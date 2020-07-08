@@ -767,6 +767,15 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 79243 },	-- Baros Alexston
 						["races"] = ALLIANCE_ONLY,
 					}),
+					q(38287, {	-- Raw Beast Hides
+						["providers"] = {
+							{ "n", 91033 },	-- Zeezu (Horde)
+							{ "n", 91024 },	-- Jake the Fox (Alliance)
+						},
+						["isDaily"] = true,
+						["cost"] = { "i", 110609, 50 },	-- 50x Raw Beast Hide
+						["lvl"] = 90,
+					}),
 					q(37288, {	-- Resources in Ashran
 					--	unknown SQ.  wowhead says level requirement is 92, but i didn't see this until i hit 100 and upgraded to a level 3 garrison
 					--	possible that you have to pick up 'outpost building assembly notes,' which are awarded by specific quests in spires of arak and gorgrond
