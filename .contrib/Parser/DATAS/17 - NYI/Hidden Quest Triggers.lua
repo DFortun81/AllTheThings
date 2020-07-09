@@ -2300,6 +2300,8 @@ _.NeverImplemented =
 		q(56488),	-- Killed Herald of Salgos
 		q(55891),	-- Killed Herald of Salgos
 		q(56484),	-- Killed Moghiea
+		q(56479),	-- Killed Omus
+		q(56722),	-- Killed Omus
 		q(56487),	-- Killed Salgos, the Eternal
 		q(56732),	-- Killed Salgos, the Eternal
 		q(56486),	-- Killed Spawn of Salgos
