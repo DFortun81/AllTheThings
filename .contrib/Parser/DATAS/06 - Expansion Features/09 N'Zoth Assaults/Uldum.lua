@@ -1638,6 +1638,7 @@ _.ExpansionFeatures =
 							["coord"] = { 55.6, 35.3, 1527 },
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
 							["sourceQuest"] = 58808,	-- Encased in Amber
+							["isDaily"] = true,
 						}),
 						q(58810, {	-- Coming Out of His Shell
 							["coord"] = { 55.6, 35.3, 1527 },

@@ -3,9 +3,9 @@
 -----------------------------------------------------
 _.Instances = { tier(8, {	-- Battle for Azeroth
 	inst(1179, { 	-- The Eternal Palace
-		["order"] = "05",
 		["isRaid"] = true,
-		["lvl"] = 120,
+		["coord"] = { 50.5, 11.9, 1355 },
+		["order"] = "05",
 		["maps"] = {
 			1512,
 			1513,
@@ -17,6 +17,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			1519,
 			1520,
 		},
+		["lvl"] = 120,
 		["g"] = {
 			n(-852, {	-- Azerite Essences
 				i(168328, {	-- Hardened Azerite Formation (Rank 1)
@@ -447,7 +448,10 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2359, {	-- The Queen's Court
-					["cr"] = 152853,
+					["crs"] = {
+						152852,	-- Pashmar the Fanatical
+						152853,	-- Silivaz the Zealous
+					},
 					["g"] = {
 						crit(3, {	-- The Queen's Court
 							["achievementID"] = 13719,	-- Depths of the Devoted
@@ -658,7 +662,10 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2359, {	-- The Queen's Court
-					["cr"] = 152853,
+					["crs"] = {
+						152852,	-- Pashmar the Fanatical
+						152853,	-- Silivaz the Zealous
+					},
 					["g"] = {
 						crit(3, {	-- The Queen's Court
 							["achievementID"] = 13719,	-- Depths of the Devoted
@@ -876,7 +883,10 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 					},
 				}),
 				e(2359, {	-- The Queen's Court
-					["cr"] = 152853,
+					["crs"] = {
+						152852,	-- Pashmar the Fanatical
+						152853,	-- Silivaz the Zealous
+					},
 					["g"] = {
 						ach(13731),	-- Mythic:The Queen's Court
 						crit(3, {	-- The Queen's Court

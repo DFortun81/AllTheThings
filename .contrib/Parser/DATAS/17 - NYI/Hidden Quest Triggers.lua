@@ -1400,7 +1400,6 @@ _.NeverImplemented =
 		q(45506),	-- Suramar - WQ rare: Oglok the Furious
 		q(45505),	-- Suramar - WQ rare: Scythemaster Cil'raman
 		q(45474),	-- Suramar - WQ rare: Volshax, Breaker of Will
-		q(45488),	-- Val'Sharah - WQ: Nylaathria the Forgotten
 
 	--	Treasures
 		q(40692),	-- 7.0 Suramar - Treasure 000 - The Drift - L (DLA) — suramar treasure in cliffside at 58.6, 33.8
@@ -1564,6 +1563,7 @@ _.NeverImplemented =
 		q(53743),	--
 		q(53744),	--
 		q(53745),	--
+		q(54410),	--
 		q(56624),	--
 		q(56625),	--
 		q(56626),	--
@@ -2395,15 +2395,16 @@ _.NeverImplemented =
 		q(55024),	-- LFR, moving into the hallway after Opulence (not a killID -- this triggered in chat while i was in combat with the trash in the hall)
 
 	--	Eternal Palace
-		q(56527),	-- Queen Azshara killed (LFR)
 		q(55754),	-- Abyssal Commander Sivara HC LootID
-		q(55755),	-- Radiance of Azshara HC LootID
-		q(55756),	-- Orgozoa HC LootID
 		q(55757),	-- Blackwater Behemoth HC LootID
+		q(55755),	-- Radiance of Azshara HC LootID
 		q(55758),	-- Lady Ashvane HC LootID
+		q(55756),	-- Orgozoa HC LootID
 		q(55760),	-- Queen's Court HC LootID
-		q(55761),	-- Queen Azshara HC LootID
 		q(55759),	-- Za'qul post-encounter RP
+		q(56527),	-- Queen Azshara killed (LFR)
+		q(56526),	-- Queen Azshara killed (Normal)
+		q(55761),	-- Queen Azshara HC LootID
 
 		-- Aqueous Reliquary LootIDs (This is a guess ... have to determine which ID is for which difficulty, - sadidorf)
 		q(56961),	-- Radiance of Azshara Aqueous Reliquary LFR? LootID
