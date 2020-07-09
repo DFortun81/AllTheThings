@@ -117,7 +117,7 @@ _.ExpansionFeatures =
 					i(163873),	-- Honorbound Wand
 					i(163872),	-- Honorbound War Staff
 					i(163877),	-- Honorbound Warglaive
-					i(102653),	-- Honorbound Warhammer
+					i(166337),	-- Honorbound Warhammer
 					i(163357, {	-- Honorbound Artificer's Cloak
 						["classes"] = { MAGE, PRIEST, WARLOCK },	-- Cloth
 					}),
