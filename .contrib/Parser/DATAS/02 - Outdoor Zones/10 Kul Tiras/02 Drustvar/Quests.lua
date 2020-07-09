@@ -1408,6 +1408,17 @@ _.Zones =
 				}),
 			}),
 			n(QUESTS, {	-- [Horde]
+				q(53465, {	-- Tea Party (H)
+					["provider"] = { "n", 143908 },	-- Mangled Body
+					["sourceQuests"] = { 53464 },	-- The Village of Glenbrook
+					["coord"] = { 54.6, 49.0, 896 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(53464, {	-- The Village of Glenbrook (H)
+					["provider"] = { "o", 270917 },	-- Glenbrook Register
+					["coord"] = { 55.6, 41.1, 896 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(51240, {	-- WANTED: Anchorface
 					--["objectID"] = 288214,	-- Wanted Poster
 					["coord"] = { 19.57, 43.65, 896 },
@@ -1448,8 +1459,6 @@ _.Zones =
 				q(50206, {	-- Strike Back
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(53465),	-- Tea Party
-				q(53464),	-- The Village of Glenbrook (not sure about this one, marked as completed on my ally char)
 				q(48808, {	-- Thesis Statement
 					["races"] = ALLIANCE_ONLY,
 				}),

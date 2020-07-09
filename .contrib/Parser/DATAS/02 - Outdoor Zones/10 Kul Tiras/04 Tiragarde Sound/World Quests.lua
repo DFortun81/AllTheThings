@@ -72,12 +72,6 @@ _.Zones =
 					q(54781, {	-- UNUSED
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(53440, {	-- WANTED: The Hornet
-						["races"] = HORDE_ONLY,
-					}),
-					q(53438, {	-- WANTED: Wyvern Poachers
-						["races"] = HORDE_ONLY,
-					}),
 					q(50350, {	-- We Need a Chemist
 						["races"] = ALLIANCE_ONLY,
 					}),
