@@ -2298,6 +2298,32 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 			
 			group = regroup;
+		elseif paramA == "azeriteEssenceID" then
+			local regroup = {};
+			local rank = ...;
+			if app.Settings:Get("AccountMode") then
+				for i,j in ipairs(group) do
+					if j.rank == rank and app.RecursiveUnobtainableFilter(j) then
+						if j.mapID or j.parent == nil or j.parent.parent == nil then
+							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+						else
+							tinsert(regroup, j);
+						end
+					end
+				end
+			else
+				for i,j in ipairs(group) do
+					if j.rank == rank and app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
+						if j.mapID or j.parent == nil or j.parent.parent == nil then
+							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+						else
+							tinsert(regroup, j);
+						end
+					end
+				end
+			end
+			
+			group = regroup;
 		elseif paramA == "titleID" then
 			-- Don't do anything
 			local regroup = {};
@@ -9097,7 +9123,10 @@ local function RowOnEnter(self)
 		if reference.f and reference.f > 0 and app.Settings:GetTooltipSetting("filterID") then GameTooltip:AddDoubleLine(L["FILTER_ID"], tostring(L["FILTER_ID_TYPES"][reference.f])); end
 		if reference.achievementID and app.Settings:GetTooltipSetting("achievementID") then GameTooltip:AddDoubleLine(L["ACHIEVEMENT_ID"], tostring(reference.achievementID)); end
 		if reference.artifactID and app.Settings:GetTooltipSetting("artifactID") then GameTooltip:AddDoubleLine(L["ARTIFACT_ID"], tostring(reference.artifactID)); end
-		if reference.azeriteEssenceID and app.Settings:GetTooltipSetting("azeriteEssenceID") then GameTooltip:AddDoubleLine(L["AZERITE_ESSENCE_ID"], tostring(reference.azeriteEssenceID)); end
+		if reference.azeriteEssenceID then
+			if app.Settings:GetTooltipSetting("azeriteEssenceID") then GameTooltip:AddDoubleLine(L["AZERITE_ESSENCE_ID"], tostring(reference.azeriteEssenceID)); end
+			AttachTooltipSearchResults(GameTooltip, "azeriteEssenceID:" .. reference.azeriteEssenceID .. (reference.rank or 0), SearchForField, "azeriteEssenceID", reference.azeriteEssenceID, reference.rank);
+		end
 		if reference.difficultyID and app.Settings:GetTooltipSetting("difficultyID") then GameTooltip:AddDoubleLine(L["DIFFICULTY_ID"], tostring(reference.difficultyID)); end
 		if app.Settings:GetTooltipSetting("creatureID") then 
 			if reference.creatureID then
