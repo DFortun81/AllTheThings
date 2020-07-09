@@ -7,13 +7,11 @@ _.Zones =
 	m(875, { 	-- Zandalar
 		m(1163, {	-- Dazar'alor
 			n(QUESTS, {
-			--	TO SOLVE:
-				--	when does "who seeks the seekers?" become available?  seen as early as "the prophet's ploy," but may be available sooner.
-				
+			-- TODO: TO SOLVE:
+				-- when does "who seeks the seekers?" become available?  seen as early as "the prophet's ploy," but may be available sooner.
 				-- verify SQ for "the blood gate."  it may become available after "ateena's fall."  also, is "halting the empire's fall" (which sends you to baine, who offers this quest) a breadcrumb?  "the blood gate" isn't hidden like quests typically are when you have their breadcrumb in their log, so i'm not sure if "halting" is optional/disappears/becomes unavailable after doing "the blood gate."  also, is it available with *only* having done nazmir, or do you also have to finish the main zuldazar questline as well?
-				
 				-- figure out if "The Warchief's Order" and "The Warfront Looms" are breadcrumbs.  they're both auto-popup quests after you hit 120, unlock WQs, and relog.  they both direct you to go to dazar'alor and speak with an NPC to pursue nazjatar and the arathi warfront, respectively.
-				
+
 				n(-397, {	-- Outposts
 					["description"] = "Horde Outposts allow you to set up additional bases in Kul Tiras.  You can buy Scouting Reports from Ransa, the vendor next to The Banshee's Wail.  Each one will start a mission on your Mission Command Table.  After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
 					["g"] = {
@@ -270,7 +268,6 @@ _.Zones =
 										}),
 									},
 								}),
-										
 								q(53103, {	-- Wicker Magic
 									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
 									["races"] = HORDE_ONLY,
@@ -308,7 +305,6 @@ _.Zones =
 							["cost"] = { { "c", 1560, 50 }, },	-- 50x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
-								
 							--	initial outpost setup
 								mi(1880, {	-- Wolf's Den
 									["questID"] = 53739,	-- Triggers when completed
@@ -372,7 +368,6 @@ _.Zones =
 					["provider"] = { "n", 127815 },	-- Zolani
 					["coord"] = { 49.9, 46.6, 1165 },
 					["races"] = HORDE_ONLY,
-					
 				}),
 				q(47437, {	-- Competitive Devotion
 					["sourceQuests"] = {
@@ -691,8 +686,8 @@ _.Zones =
 					["sourceQuest"] = 56030,	-- The Warchief's Order
 				}),
 				q(49758, {	-- Send the Signal!
-					["sourceQuests"] = { 
-					--	,	-- Sending Out an SOS (breadcrumb)
+					["sourceQuests"] = {
+						--,	-- Sending Out an SOS (breadcrumb)
 						49310,	-- The Prophet's Ploy (last real quest required)
 					},
 					["provider"] = { "n", 140590 },	-- Captain Grez'ko
@@ -770,7 +765,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 51517 },	-- You Owe Me a Spirit
 				}),
-				
 				q(53437, {	-- The MOTHERLODE!!: Raw Deal
 					["provider"] = { "n", 136683 },	-- Trade Prince Gallywix
 					["coord"] = { 58.4, 62.6, 1165 },
@@ -936,8 +930,8 @@ _.Zones =
 					["sourceQuest"] = 52131,	-- We Need Each Other
 				}),
 
-			-- unsorted
-				
+			-- TODO: unsorted
+
 				q(54439, {	-- Crucible of Storms: Relics of Shadow
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 53763 },	-- Twist the Knife

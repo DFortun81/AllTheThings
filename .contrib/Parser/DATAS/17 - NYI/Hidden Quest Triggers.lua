@@ -1401,7 +1401,7 @@ _.NeverImplemented =
 		q(45505),	-- Suramar - WQ rare: Scythemaster Cil'raman
 		q(45474),	-- Suramar - WQ rare: Volshax, Breaker of Will
 		q(45488),	-- Val'Sharah - WQ rare: Nylaathria the Forgotten
-		
+
 
 	--	Treasures
 		q(40692),	-- 7.0 Suramar - Treasure 000 - The Drift - L (DLA) — suramar treasure in cliffside at 58.6, 33.8
@@ -1557,15 +1557,6 @@ _.NeverImplemented =
 		--[[ All of these pop up with brand new characters. Something account-wide triggers these. Possibly related to certain kinds of transmog events
 		q(51994),	--
 		q(52969),	--
-		q(53123),	--
-		q(53739),	--
-		q(53740),	--
-		q(53741),	--
-		q(53742),	--
-		q(53743),	--
-		q(53744),	--
-		q(53745),	--
-		q(54410),	--
 		q(56624),	--
 		q(56625),	--
 		q(56626),	--

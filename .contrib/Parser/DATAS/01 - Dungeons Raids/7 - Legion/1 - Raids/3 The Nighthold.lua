@@ -1,6 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+
 dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
 _.Instances = { tier(7, {	-- Legion
 	inst(786, { 	-- The Nighthold
@@ -202,7 +203,7 @@ _.Instances = { tier(7, {	-- Legion
 							i(140845),	-- Glistening Meteorite Shard
 							i(140833),	-- Sundered Comet
 							i(140841),	-- Tempest of the Heavens
-						})),	
+						})),
 						e(1761, {	-- High Botanist Tel'arn
 							["crs"] = {
 								109040,	-- Arcanist Tel'arn

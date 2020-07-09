@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S       M O D U L E          --
 ---------------------------------------------------
+
 _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
@@ -58,7 +59,7 @@ _.Zones =
 						["lvl"] = 120,
 						["g"] = {
 							i(163601),	-- Overgrown Anchor Weed (QI)
-						},							
+						},
 					}),
 					q(53282, {	-- Overgrown Anchor Weed
 						["isWorldQuest"] = true,
@@ -67,7 +68,7 @@ _.Zones =
 						["lvl"] = 120,
 						["g"] = {
 							i(163601),	-- Overgrown Anchor Weed (QI)
-						},		
+						},
 					}),
 					q(54627),	-- Paragon of the Order of Embers
 					q(48515, {	-- Silver Blades
@@ -107,7 +108,7 @@ _.Zones =
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 					}),
-]]--				
+]]--
 					q(53701, {	-- A Drust Cause (Faction Assault WQ)
 						["lvl"] = 110,
 						["isDaily"] = true,
@@ -178,7 +179,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 					}),
 					q(51612, { 	-- Azerite Empowerment
-						["lvl"] = 120,	
+						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
 					q(51608, {	-- Azerite Madness
@@ -852,7 +853,7 @@ _.Zones =
 						-- Include the two extras.
 						{"select", "itemID", 166671},	-- Waycrest Guard's Cloak
 						{"finalize"},	-- Push the items to the finalized list.
-						
+
 						{"select", "mapID", 896},	-- Drustvar
 						{"pop"},	-- Discard the Map Header and acquire the children.
 						{"where", "npcID", -34 },	-- Select the World Quests Header.
@@ -861,7 +862,7 @@ _.Zones =
 						{"pop"},	-- Discard the Item Set Header and acquire the children.
 						{"is", "itemID" },	-- Select the Items.
 						{"invtype", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET" },	-- Only include a couple of inventory types.
-						
+
 						{"merge"},	-- Merge the finalized items back into the processing queue.
 						{"postprocess"},	-- Post Process the search results to ensure no duplicate keys exist.
 					},
