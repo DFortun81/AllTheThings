@@ -1007,6 +1007,17 @@ namespace ATT
                                 return Convert.ToInt32(aRef).CompareTo(bRef);
                             }
                         }
+
+                        // If a contains a cost, then try to get it.
+                        if (a.TryGetValue("cost", out aRef))
+                        {
+                            // If b contains a cost, then try to get it.
+                            if (b.TryGetValue("cost", out bRef))
+                            {
+                                // Both have a cost, compare them!
+                                return Convert.ToInt32(aRef).CompareTo(bRef);
+                            }
+                        }
                     }
                     return first;
                 }

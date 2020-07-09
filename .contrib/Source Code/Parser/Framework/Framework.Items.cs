@@ -282,6 +282,7 @@ namespace ATT
                     case "link":
                     case "bonusID":
                     case "modID":
+                    case "rank":
                     case "artifactID":
                     case "visualID":
                     case "itemID":
@@ -379,7 +380,6 @@ namespace ATT
                     case "u":
                     case "b":
                     case "r":
-                    case "rank":
                     case "ilvl":
                     case "lvl":
                     case "q":
