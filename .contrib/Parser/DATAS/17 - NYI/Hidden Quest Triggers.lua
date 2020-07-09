@@ -1400,6 +1400,8 @@ _.NeverImplemented =
 		q(45506),	-- Suramar - WQ rare: Oglok the Furious
 		q(45505),	-- Suramar - WQ rare: Scythemaster Cil'raman
 		q(45474),	-- Suramar - WQ rare: Volshax, Breaker of Will
+		q(45488),	-- Val'Sharah - WQ rare: Nylaathria the Forgotten
+		
 
 	--	Treasures
 		q(40692),	-- 7.0 Suramar - Treasure 000 - The Drift - L (DLA) — suramar treasure in cliffside at 58.6, 33.8
