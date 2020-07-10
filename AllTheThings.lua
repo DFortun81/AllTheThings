@@ -9360,6 +9360,107 @@ local function RowOnEnter(self)
 			end
 		end
 		
+		-- Calculate Best Drop Percentage. (Legacy Loot Mode)
+		if reference.itemID and not reference.speciesID and not reference.spellID then
+			local numSpecializations = GetNumSpecializations();
+			if numSpecializations and numSpecializations > 0 then
+				local encounterID = GetRelativeValue(reference.parent, "encounterID");
+				if encounterID then
+					local difficultyID = GetRelativeValue(reference.parent, "difficultyID");
+					local encounterCache = fieldCache["encounterID"][encounterID];
+					if encounterCache then
+						local itemList = {};
+						for i,encounter in ipairs(encounterCache) do
+							if encounter.g and GetRelativeValue(encounter.parent, "difficultyID") == difficultyID then
+								SearchForRelativeItems(encounter, itemList);
+							end
+						end
+						local specHits = {};
+						for i,item in ipairs(itemList) do
+							local specs = item.specs;
+							if specs then
+								for j,spec in ipairs(specs) do
+									specHits[spec] = (specHits[spec] or 0) + 1;
+								end
+							end
+						end
+						
+						local totalItems = #itemList;
+						local currentSpecID = select(1, GetSpecializationInfo(GetSpecialization()));
+						
+						local specs = reference.specs;
+						if specs and #specs > 0 then
+							local mySpecs = {};
+							for i=1,numSpecializations,1 do
+								mySpecs[select(1, GetSpecializationInfo(i))] = true;
+							end
+							
+							-- Available for one or more loot specialization.
+							local least, bestSpecID = 99999999;
+							local matchingSpecs = {};
+							for i,spec in ipairs(specs) do
+								local specHit = specHits[spec] or 0;
+								if mySpecs[spec] then
+									matchingSpecs[spec] = true;
+									
+									-- For Personal Loot!
+									if specHit < least then
+										least = specHit;
+										bestSpecID = spec;
+									end
+								end
+							end
+							if bestSpecID then
+								local chance = (1 / specHits[bestSpecID]) * 100;
+								local id, name, description, icon = GetSpecializationInfoByID(bestSpecID);
+								GameTooltip:AddDoubleLine(C_Loot.IsLegacyLootModeEnabled() and "Bonus Roll" or "Personal Loot",  GetNumberWithZeros(chance, 2) .. "% (" .. GetNumberWithZeros(chance / 5, 2) .. "%) |T" .. icon .. ":0|t " .. name);
+							end
+							if C_Loot.IsLegacyLootModeEnabled() then
+								local most, bestLegacySpecID = 0, -1;
+								for spec,_ in ipairs(mySpecs) do
+									local specHit = specHits[spec] or 0;
+									if not matchingSpecs[spec] then
+										if specHit > most then
+											most = specHit;
+											bestLegacySpecID = spec;
+										end
+									end
+								end
+								if bestLegacySpecID < 0 then
+									bestLegacySpecID = select(1, GetSpecializationInfo(1));
+								end
+								
+								local legacyMatchChance = ((1 / specHits[bestSpecID]) * 100) / 5;
+								local legacyNoMatchChance = ((1 / (totalItems - specHits[bestLegacySpecID])) * 100) * (4/5);
+								if legacyMatchChance > legacyNoMatchChance then
+									local id, name, description, icon = GetSpecializationInfoByID(bestSpecID);
+									GameTooltip:AddDoubleLine("Legacy Loot", GetNumberWithZeros(legacyMatchChance, 2) .. "% |T" .. icon .. ":0|t " .. name);
+								else
+									local id, name, description, icon = GetSpecializationInfoByID(bestLegacySpecID);
+									GameTooltip:AddDoubleLine("Legacy Loot", GetNumberWithZeros(legacyNoMatchChance, 2) .. "% |T" .. icon .. ":0|t " .. name);
+								end
+							end
+						elseif C_Loot.IsLegacyLootModeEnabled() then
+							-- Not available at all, best loot spec is the one with the most number of items in it.
+							local most, bestSpecID = 0;
+							for i=1,numSpecializations,1 do
+								local id = GetSpecializationInfo(i);
+								local specHit = specHits[id] or 0;
+								if specHit > most then
+									most = specHit;
+									bestSpecID = i;
+								end
+							end
+							if bestSpecID then
+								local id, name, description, icon = GetSpecializationInfo(bestSpecID);
+								GameTooltip:AddDoubleLine("Legacy Loot", GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);
+							end
+						end
+					end
+				end
+			end
+		end
+		
 		-- Show Quest Prereqs
 		if reference.sourceQuests and not reference.saved then
 			local prereqs, bc = {}, {};
