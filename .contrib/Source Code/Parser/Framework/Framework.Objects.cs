@@ -929,7 +929,6 @@ namespace ATT
                     {
                         case "description":
                         case "lvl":
-                        case "rank":
                         case "races":
                         case "classes":
                         case "coords":
@@ -963,6 +962,7 @@ namespace ATT
                         case "npcID":
                         case "bonusID":
                         case "modID":
+                        case "rank":
                         case "creatureID":
                         case "criteriaID":
                         case "ilvl":
@@ -1000,7 +1000,6 @@ namespace ATT
                         case "text":
                         case "title":
                         case "icon":
-                        case "rank":
                         case "lvl":
                         case "coords":
                         case "crs":
@@ -1053,6 +1052,7 @@ namespace ATT
                         case "itemID":
                         case "npcID":
                         case "modID":
+                        case "rank":
                         case "creatureID":
                         case "criteriaID":
                         case "displayID":   // This is now dynamic!
@@ -1696,7 +1696,28 @@ namespace ATT
                     if (mostSignificantID == "itemID")
                     {
                         // For Items, also keep track of the Bonus IDs to allow more than one per list.
-                        if (data2.TryGetValue("bonusID", out object fieldRef))
+                        if (data2.TryGetValue("rank", out object fieldRef))
+                        {
+                            // The data we're merging has a Rank. (we only want to merge them if they're the same!)
+                            var rank = Convert.ToInt32(fieldRef);
+                            foreach (var entryRef in container)
+                            {
+                                // Cache the container entry for comparisons.
+                                var temp = entryRef as Dictionary<string, object>;
+                                if (temp == null) continue;
+
+                                // Compare the most significant IDs and if they match, this is what I'm looking for!
+                                if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
+                                {
+                                    if (temp.TryGetValue("rank", out fieldRef) && fieldRef.Equals(rank))
+                                    {
+                                        entry = temp;
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                        else if (data2.TryGetValue("bonusID", out fieldRef))
                         {
                             // The data we're merging has a Bonus ID. (we only want to merge them if they're the same!)
                             var bonusID = Convert.ToInt32(fieldRef);
@@ -1738,7 +1759,7 @@ namespace ATT
                                 }
                             }
                         }
-                        else
+                        else 
                         {
                             // The item does not have a Bonus ID or a Mod ID, so we can simply merge with the first one.
                             foreach (var entryRef in container)
@@ -1798,6 +1819,48 @@ namespace ATT
                                         entry = temp;
                                         break;
                                     }
+                                }
+                            }
+                        }
+                    }
+                    else if (mostSignificantID == "azeriteEssenceID")
+                    {
+                        // For Essences, also keep track of the ranks to allow more than one per list.
+                        if (data2.TryGetValue("rank", out object fieldRef))
+                        {
+                            // The data we're merging has a Rank. (we only want to merge them if they're the same!)
+                            var rank = Convert.ToInt32(fieldRef);
+                            foreach (var entryRef in container)
+                            {
+                                // Cache the container entry for comparisons.
+                                var temp = entryRef as Dictionary<string, object>;
+                                if (temp == null) continue;
+
+                                // Compare the most significant IDs and if they match, this is what I'm looking for!
+                                if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
+                                {
+                                    if (temp.TryGetValue("rank", out fieldRef) && fieldRef.Equals(rank))
+                                    {
+                                        entry = temp;
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                        else
+                        {
+                            // The item does not have a Bonus ID or a Mod ID, so we can simply merge with the first one.
+                            foreach (var entryRef in container)
+                            {
+                                // Cache the container entry for comparisons.
+                                var temp = entryRef as Dictionary<string, object>;
+                                if (temp == null) continue;
+
+                                // Compare the most significant IDs and if they match, this is what I'm looking for!
+                                if (temp.TryGetValue(mostSignificantID, out fieldRef) && fieldRef.Equals(id))
+                                {
+                                    entry = temp;
+                                    break;
                                 }
                             }
                         }

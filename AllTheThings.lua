@@ -2298,6 +2298,32 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 			
 			group = regroup;
+		elseif paramA == "azeriteEssenceID" then
+			local regroup = {};
+			local rank = ...;
+			if app.Settings:Get("AccountMode") then
+				for i,j in ipairs(group) do
+					if j.rank == rank and app.RecursiveUnobtainableFilter(j) then
+						if j.mapID or j.parent == nil or j.parent.parent == nil then
+							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+						else
+							tinsert(regroup, j);
+						end
+					end
+				end
+			else
+				for i,j in ipairs(group) do
+					if j.rank == rank and app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
+						if j.mapID or j.parent == nil or j.parent.parent == nil then
+							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+						else
+							tinsert(regroup, j);
+						end
+					end
+				end
+			end
+			
+			group = regroup;
 		elseif paramA == "titleID" then
 			-- Don't do anything
 			local regroup = {};
@@ -3205,6 +3231,16 @@ end
 app.SearchForField = SearchForField;
 
 -- Item Information Lib
+local function SearchForRelativeItems(group, listing)
+	if group and group.g then
+		for i,subgroup in ipairs(group.g) do
+			SearchForRelativeItems(subgroup, listing);
+			if subgroup.itemID then
+				tinsert(listing, subgroup);
+			end
+		end
+	end
+end
 local function SearchForSourceIDQuickly(sourceID)
 	if sourceID and sourceID > 0 and app:GetDataCache() then
 		local group = rawget(rawget(fieldCache, "s"),sourceID);
@@ -4770,15 +4806,15 @@ app.BaseFaction = {
 				SetDataSubMember("CollectedFactions", t.factionID, 1);
 				return 1;
 			end
-			if t.achievementID then
-				return select(4, GetAchievementInfo(t.achievementID));
-			end
 			if t.altAchievements then
 				for i,achID in ipairs(t.altAchievements) do
 					if select(4, GetAchievementInfo(achID)) or true then
 						return 2;
 					end
 				end
+			end
+			if t.achievementID then
+				return select(4, GetAchievementInfo(t.achievementID));
 			end
 		elseif key == "text" then
 			local rgb = FACTION_BAR_COLORS[t.standing + (t.isFriend and 2 or 0)];
@@ -9087,7 +9123,10 @@ local function RowOnEnter(self)
 		if reference.f and reference.f > 0 and app.Settings:GetTooltipSetting("filterID") then GameTooltip:AddDoubleLine(L["FILTER_ID"], tostring(L["FILTER_ID_TYPES"][reference.f])); end
 		if reference.achievementID and app.Settings:GetTooltipSetting("achievementID") then GameTooltip:AddDoubleLine(L["ACHIEVEMENT_ID"], tostring(reference.achievementID)); end
 		if reference.artifactID and app.Settings:GetTooltipSetting("artifactID") then GameTooltip:AddDoubleLine(L["ARTIFACT_ID"], tostring(reference.artifactID)); end
-		if reference.azeriteEssenceID and app.Settings:GetTooltipSetting("azeriteEssenceID") then GameTooltip:AddDoubleLine(L["AZERITE_ESSENCE_ID"], tostring(reference.azeriteEssenceID)); end
+		if reference.azeriteEssenceID then
+			if app.Settings:GetTooltipSetting("azeriteEssenceID") then GameTooltip:AddDoubleLine(L["AZERITE_ESSENCE_ID"], tostring(reference.azeriteEssenceID)); end
+			AttachTooltipSearchResults(GameTooltip, "azeriteEssenceID:" .. reference.azeriteEssenceID .. (reference.rank or 0), SearchForField, "azeriteEssenceID", reference.azeriteEssenceID, reference.rank);
+		end
 		if reference.difficultyID and app.Settings:GetTooltipSetting("difficultyID") then GameTooltip:AddDoubleLine(L["DIFFICULTY_ID"], tostring(reference.difficultyID)); end
 		if app.Settings:GetTooltipSetting("creatureID") then 
 			if reference.creatureID then
@@ -9318,6 +9357,107 @@ local function RowOnEnter(self)
 			if right and right ~= "" and right ~= "---" then
 				GameTooltipTextRight1:SetText(right);
 				GameTooltipTextRight1:Show();
+			end
+		end
+		
+		-- Calculate Best Drop Percentage. (Legacy Loot Mode)
+		if reference.itemID and not reference.speciesID and not reference.spellID then
+			local numSpecializations = GetNumSpecializations();
+			if numSpecializations and numSpecializations > 0 then
+				local encounterID = GetRelativeValue(reference.parent, "encounterID");
+				if encounterID then
+					local difficultyID = GetRelativeValue(reference.parent, "difficultyID");
+					local encounterCache = fieldCache["encounterID"][encounterID];
+					if encounterCache then
+						local itemList = {};
+						for i,encounter in ipairs(encounterCache) do
+							if encounter.g and GetRelativeValue(encounter.parent, "difficultyID") == difficultyID then
+								SearchForRelativeItems(encounter, itemList);
+							end
+						end
+						local specHits = {};
+						for i,item in ipairs(itemList) do
+							local specs = item.specs;
+							if specs then
+								for j,spec in ipairs(specs) do
+									specHits[spec] = (specHits[spec] or 0) + 1;
+								end
+							end
+						end
+						
+						local totalItems = #itemList;
+						local currentSpecID = select(1, GetSpecializationInfo(GetSpecialization()));
+						
+						local specs = reference.specs;
+						if specs and #specs > 0 then
+							local mySpecs = {};
+							for i=1,numSpecializations,1 do
+								mySpecs[select(1, GetSpecializationInfo(i))] = true;
+							end
+							
+							-- Available for one or more loot specialization.
+							local least, bestSpecID = 99999999;
+							local matchingSpecs = {};
+							for i,spec in ipairs(specs) do
+								local specHit = specHits[spec] or 0;
+								if mySpecs[spec] then
+									matchingSpecs[spec] = true;
+									
+									-- For Personal Loot!
+									if specHit < least then
+										least = specHit;
+										bestSpecID = spec;
+									end
+								end
+							end
+							if bestSpecID then
+								local chance = (1 / specHits[bestSpecID]) * 100;
+								local id, name, description, icon = GetSpecializationInfoByID(bestSpecID);
+								GameTooltip:AddDoubleLine(C_Loot.IsLegacyLootModeEnabled() and "Bonus Roll" or "Personal Loot",  GetNumberWithZeros(chance, 2) .. "% (" .. GetNumberWithZeros(chance / 5, 2) .. "%) |T" .. icon .. ":0|t " .. name);
+							end
+							if C_Loot.IsLegacyLootModeEnabled() then
+								local most, bestLegacySpecID = 0, -1;
+								for spec,_ in ipairs(mySpecs) do
+									local specHit = specHits[spec] or 0;
+									if not matchingSpecs[spec] then
+										if specHit > most then
+											most = specHit;
+											bestLegacySpecID = spec;
+										end
+									end
+								end
+								if bestLegacySpecID < 0 then
+									bestLegacySpecID = select(1, GetSpecializationInfo(1));
+								end
+								
+								local legacyMatchChance = ((1 / specHits[bestSpecID]) * 100) / 5;
+								local legacyNoMatchChance = ((1 / (totalItems - specHits[bestLegacySpecID])) * 100) * (4/5);
+								if legacyMatchChance > legacyNoMatchChance then
+									local id, name, description, icon = GetSpecializationInfoByID(bestSpecID);
+									GameTooltip:AddDoubleLine("Legacy Loot", GetNumberWithZeros(legacyMatchChance, 2) .. "% |T" .. icon .. ":0|t " .. name);
+								else
+									local id, name, description, icon = GetSpecializationInfoByID(bestLegacySpecID);
+									GameTooltip:AddDoubleLine("Legacy Loot", GetNumberWithZeros(legacyNoMatchChance, 2) .. "% |T" .. icon .. ":0|t " .. name);
+								end
+							end
+						elseif C_Loot.IsLegacyLootModeEnabled() then
+							-- Not available at all, best loot spec is the one with the most number of items in it.
+							local most, bestSpecID = 0;
+							for i=1,numSpecializations,1 do
+								local id = GetSpecializationInfo(i);
+								local specHit = specHits[id] or 0;
+								if specHit > most then
+									most = specHit;
+									bestSpecID = i;
+								end
+							end
+							if bestSpecID then
+								local id, name, description, icon = GetSpecializationInfo(bestSpecID);
+								GameTooltip:AddDoubleLine("Legacy Loot", GetNumberWithZeros((1 / (totalItems - specHits[id])) * 100, 2) .. "% |T" .. icon .. ":0|t " .. name);
+							end
+						end
+					end
+				end
 			end
 		end
 		
