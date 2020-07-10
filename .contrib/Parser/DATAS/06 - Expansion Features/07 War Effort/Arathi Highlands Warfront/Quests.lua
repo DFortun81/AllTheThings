@@ -49,6 +49,12 @@ _.ExpansionFeatures =
 				q(53669, {	-- The Altar's Power
 					["races"] = HORDE_ONLY,
 				}),
+				q(53671, {	-- The Circle's Power
+					["races"] = HORDE_ONLY,
+				}),
+				q(53676, {	-- The Circle's Power
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(53675, {	-- Welcome to the Workshop
 					["races"] = ALLIANCE_ONLY,
 				}),

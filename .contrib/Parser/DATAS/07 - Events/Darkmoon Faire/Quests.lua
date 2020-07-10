@@ -398,6 +398,9 @@ _.WorldEvents =
 					i(93724),	-- Darkmoon Game Prize
 				},
 			}),
+			q(29485, {	-- Fun for the Little Ones
+				["u"] = 40,	-- Legacy Quests
+			}),
 			q(29507, {	-- Fun for the Little Ones
 				["requireSkill"] = ARCHAEOLOGY,
 				["description"] = "Requires |CFFFFD70050 Fossil Archaeology Fragments|r to complete.",

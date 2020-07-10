@@ -66,7 +66,7 @@ _.Zones =
 							},
 						}),
 						i(165750, {	-- Outpost Upgrade: Zul'jan Ruins
-							--["questID"] = ,	-- Mission Start Trigger
+							["questID"] = 54238,	-- Mission Start Trigger
 							["races"] = HORDE_ONLY,
 							["cost"] = { { "c", 1560, 500 }, },	-- 500x War Resources
 							["f"] = 55,	-- Consumable; Might change to Misc later
@@ -74,7 +74,7 @@ _.Zones =
 								mi(2107, {	-- Upgrade: Zul'jan Ruins
 									--["questID"] = ,	-- Triggers when completed
 									["races"] = HORDE_ONLY,
-									--["sourceQuests"] = {  },	-- Mission Start Trigger
+									["sourceQuests"] = { 54238 },	-- Mission Start Trigger
 								}),
 								q(54239, {	-- Mission Report: Zul'jan Ruins
 									["provider"] = { "n", 138704 },		-- Mission Command Table
