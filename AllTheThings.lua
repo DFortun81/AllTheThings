@@ -4806,15 +4806,15 @@ app.BaseFaction = {
 				SetDataSubMember("CollectedFactions", t.factionID, 1);
 				return 1;
 			end
-			if t.achievementID then
-				return select(4, GetAchievementInfo(t.achievementID));
-			end
 			if t.altAchievements then
 				for i,achID in ipairs(t.altAchievements) do
 					if select(4, GetAchievementInfo(achID)) or true then
 						return 2;
 					end
 				end
+			end
+			if t.achievementID then
+				return select(4, GetAchievementInfo(t.achievementID));
 			end
 		elseif key == "text" then
 			local rgb = FACTION_BAR_COLORS[t.standing + (t.isFriend and 2 or 0)];
