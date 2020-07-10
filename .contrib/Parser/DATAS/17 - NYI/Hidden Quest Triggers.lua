@@ -2203,8 +2203,8 @@ _.NeverImplemented =
 		q(56543),	-- Triggered when walking into Kelfin Pocket for the first time. Follower dialog goes off (horde)
 		q(56507),	-- Triggered randomly while in nazjatar
 		q(56658),	-- Triggered randomly while in Nazjatar
-		q(56679),	-- Triggered randomly while in Nazjatar, after Neri says "One day, there will be no more shackles."
 		q(56670),	-- Triggered randomly while in Nazjatar
+		q(56679),	-- Triggered randomly while in Nazjatar, after Neri says "One day, there will be no more shackles."
 		q(56724),	-- Triggered when killing Arcane Amalgamation in mardivas' lab. Probably used to disable something else in the room
 		q(55604),	-- Triggers after unlocking or making a purchase from Mrrl (Once per day)
 		q(56901),	-- Triggers after buying Mrrl's secret trader stock (requires cloak with special stock trait). Received 170162 - waterlogged toolbox first
