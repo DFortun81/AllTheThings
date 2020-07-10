@@ -6,31 +6,6 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(210, {	-- The Cape of Stranglethorn
 			n(RARES, {
-				o(179697, {	-- Arena Treasure Chest (FFA PvP)
-					["description"] = "WARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM\nThose are the times the chest spawns.\nNote: The spawn times are SERVER time, not local time.",
-					["modelID"] = 219372,
-					["coord"] = { 46.6, 26.1, 210 },
-					["g"] = {
-						i(18706, {	-- Arena Master
-							["questID"] = 7810,	-- Arena Master
-							["g"] = {
-								ach(396, {		-- Arena Grandmaster
-								--	questID 7838
-									["description"] = "You must gather 12x Arena Master trinkets on ONE character. Once you have the achievement, the next time you open the chest on any character you can get the Defending Champion in addition to the other spoils.",
-									["g"] = {
-										i(126948)		-- Defending Champion (BoA Trinket)
-									},
-								}),
-							},
-						}),
-						i(122222),		-- Music Roll: Angelic
-						i(18711),		-- Arena Bands
-						i(18710),		-- Arena Bracers
-						i(18712),		-- Arena Vambracers
-						i(18709),		-- Arena Wristguards
-						i(15236)		-- Moon Cleaver
-					},
-				}),
 				n(14491,  {	-- Kurmokk
 					["coords"] = {
 						{ 58.0, 47.8, 210 },

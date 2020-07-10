@@ -62,11 +62,15 @@ _.Zones =
 					},
 				}),
 				q(7838,  {	-- Arena Grandmaster
-					["sourceQuest"] = 7810,	-- Arena Master
-					["repeatable"] = true,
-					["coord"] = { 45.0, 25.4, 210 },
 					["provider"] = { "n", 14508 },	-- Short John Mithril
+					["sourceQuest"] = 7810,	-- Arena Master
+					["coord"] = { 45.0, 25.4, 210 },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 18706, 12 },	-- Arena Master
+					},
 					["g"] = {
+						ach(396),	-- Arena Grandmaster
 						i(19024),	-- Arena Grand Master
 					},
 				}),

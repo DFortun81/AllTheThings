@@ -1891,6 +1891,7 @@ app.L = {
 		[177491] = "Interface\\Icons\\inv_cask_01",
 		[179485] = "Interface\\Icons\\Ability_Hunter_TrapLauncher",
 		[179501] = "Interface\\Icons\\INV_Crate_01",
+		[179697] = "Interface\\Icons\\INV_Box_02", 
 		[179827] = "Interface\\Icons\\INV_inscription_scrollofwisdom_01",
 		[179832] = "Interface\\Icons\\inv_misc_armorkit_06",
 		[180366] = "Interface\\Icons\\INV_Fishingpole_02",
