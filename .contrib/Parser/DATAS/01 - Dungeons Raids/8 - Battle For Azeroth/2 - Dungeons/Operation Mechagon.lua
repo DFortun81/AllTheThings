@@ -22,7 +22,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			n(-852, {	-- Azerite Essences
 				i(168844, {	-- Perfection-Enhancing Gearbox (Rank 3)
-					["cost"] = { { "i", 4, 169774 } },	-- 4x Progression Sprocket
+					["cost"] = { { "i", 169774, 4 } },	-- 4x Progression Sprocket
 					["g"] = {
 						az(22, 3),	-- Vision of Perfection (Rank 3)
 					},

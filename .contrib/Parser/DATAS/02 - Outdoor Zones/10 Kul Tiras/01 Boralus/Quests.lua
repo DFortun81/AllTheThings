@@ -433,38 +433,41 @@ _.Zones =
 							["f"] = 55,	-- Consumable; Might change to Misc later
 							["g"] = {
 								mi(2089, {	-- Mistvine Ledge
+									--["sourceQuests"] = {  },	-- Mission Start Trigger
+									["altQuests"] = { 53306 },	-- Jungle Escort
 									--["questID"] = ,	-- Triggers when completed
 									["races"] = ALLIANCE_ONLY,
-									--["sourceQuests"] = {  },	-- Mission Start Trigger
 								}),
 								q(52962, {	-- Mission Report: Mistvine Ledge
+									--["sourceQuests"] = {  },	-- Mistvine Ledge Mission Complete
+									["altQuests"] = { 53306 },	-- Jungle Escort
 									["provider"] = { "n", 138704 },		-- Mission Command Table
 									["races"] = ALLIANCE_ONLY,
 									["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
-									--["sourceQuests"] = {  },	-- Mistvine Ledge Mission Complete
 								}),
 								q(52963, {	-- Mistvine Ledge
-									["provider"] = { "n", 135612 },		-- Halford Wyrmbane
+									["sourceQuests"] = { 52962 },	-- Mission Report: Mistvine Ledge
+									["altQuests"] = { 53306 },	-- Jungle Escort
+									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
 									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
-									["sourceQuests"] = { 52962 },		-- Mission Report: Mistvine Ledge
 								}),
 								mi(2100, {	-- Jungle Escort
-									--["questID"] = ,	-- Triggers when completed
+									["sourceQuests"] = { 52963 },	-- Mistvine Ledge
 									["races"] = ALLIANCE_ONLY,
-									["sourceQuests"] = { 52963 },		-- Mistvine Ledge
-								}),
-								q(53306, {	-- Mission Report: Jungle Escort
-									["provider"] = { "n", 138704 },		-- Mission Command Table
-									["races"] = ALLIANCE_ONLY,
-									["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
-									--["sourceQuests"] = {  },	-- Jungle Escort Mission Complete
+									["g"] = {
+										q(53306, {	-- Mission Report: Jungle Escort
+											["provider"] = { "n", 138704 },		-- Mission Command Table
+											["coord"] = { 70.5, 27.2, 1161 },	-- Boralus
+											["races"] = ALLIANCE_ONLY,
+										}),
+									},
 								}),
 								q(53307, {	-- Jungle Escort
-									["provider"] = { "n", 135612 },		-- Halford Wyrmbane
+									["sourceQuests"] = { 53306 },	-- Mission Report: Jungle Escort
+									["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 									["races"] = ALLIANCE_ONLY,
 									["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
-									["sourceQuests"] = { 53306 },		-- Mission Report: Jungle Escort
 								}),
 							},
 						}),

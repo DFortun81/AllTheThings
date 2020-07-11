@@ -19,9 +19,11 @@ i(168222);	-- Encrypted Black Market Radio
 i(13508);	-- Eye of Arachnida
 i(129210);	-- Fel Crystal Fragments
 i(127768);	-- Fel Petal
+i(37431);	-- Fetch Ball
 i(44618);	-- Glass of Aged Dalaran Red
 i(18269);	-- Gordok Green Grog
 i(19296);	-- Greater Darkmoon Prize
+i(43626);	-- Happy Pet Snack
 i(18284);	-- Kreeg's Stout Beatdown
 i(19297);	-- Lesser Darkmoon Prize
 i(142263);	-- Machine Fluid

@@ -632,6 +632,10 @@ app.L = {
 		[-855] = "Interface\\Icons\\spell_nature_healingwavegreater",						-- Healers
 		[-856] = "Interface\\Icons\\ability_warrior_shieldwall",							-- Tanks
 		[-857] = "Interface\\Icons\\inv_relics_hourglass",									-- Mythic+
+		[-858] = "Interface\\Icons\\inv_smallazeritefragment",								-- Rank 1
+		[-859] = "Interface\\Icons\\inv_tinyazeritesplinter",								-- Rank 2
+		[-860] = "Interface\\Icons\\inv_smallazeriteshard",									-- Rank 3
+		[-861] = "Interface\\Icons\\inv_smallazeritecluster",								-- Rank 4
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
 		[-3178] = "Interface\\Icons\\achievement_boss_warlord_kalithresh",					-- Tier 3.5
@@ -1388,6 +1392,10 @@ app.L = {
 		[-855] = "Healers",														-- Healers
 		[-856] = "Tanks",														-- Tanks
 		[-857] = "Mythic+",														-- Mythic+
+		[-858] = "Rank 1",														-- Rank 1
+		[-859] = "Rank 2",														-- Rank 2
+		[-860] = "Rank 3",														-- Rank 3
+		[-861] = "Rank 4",														-- Rank 4
 
 -- Temporarily Header
 
@@ -1891,7 +1899,7 @@ app.L = {
 		[177491] = "Interface\\Icons\\inv_cask_01",
 		[179485] = "Interface\\Icons\\Ability_Hunter_TrapLauncher",
 		[179501] = "Interface\\Icons\\INV_Crate_01",
-		[179697] = "Interface\\Icons\\INV_Box_02", 
+		[179697] = "Interface\\Icons\\INV_Box_02",
 		[179827] = "Interface\\Icons\\INV_inscription_scrollofwisdom_01",
 		[179832] = "Interface\\Icons\\inv_misc_armorkit_06",
 		[180366] = "Interface\\Icons\\INV_Fishingpole_02",

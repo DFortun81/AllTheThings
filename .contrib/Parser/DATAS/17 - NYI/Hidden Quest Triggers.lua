@@ -386,6 +386,7 @@ _.NeverImplemented =
 		q(35309),	-- Shadowfang Keep heroic completion (Kill Lord Godfrey)
 		q(35911),	-- Stonecore Reward Quest
 		q(35913),	-- Stonecore (Heroic) reward quest
+		q(35366),	-- Throne of the Tides Bonus Reward (kill Mindbender Ghur'sha, triggered in Timewalking)
 		q(35403),	-- Vortex Pinnacle dungeon reward (Kill Asaad)
 		q(35411),	-- Zul'Gurub Reward Quest
 		q(35435),	-- Well of Eternity Reward Quest
@@ -795,7 +796,7 @@ _.NeverImplemented =
 		q(39172),	-- Fel Legendary Pet Tracking Quest 14 — Skrillix
 		q(39173),	-- Fel Legendary Pet Tracking Quest 15 — Defiled Earth
 
-	--	DUNGEONS
+	--	DUNGEONS & RAIDS
 		q(35960),	-- Auchindoun Reward Quest
 		q(35957),	-- Bloodmaul Slag Mines Reward Quest (triggered at the end of normal BSM)
 		q(34533),	-- Bloodmaul Slag Mines Challenge Mode - Bronze Addition (Nth)
@@ -840,6 +841,8 @@ _.NeverImplemented =
 		q(35963),	-- Warlords Heroic Dungeon Reward Quest (triggered at the end of Mythic Grimrail Depot)
 		q(35962),	-- Warlords Max Level Dungeon Reward Quest (triggered at the end of Normal Grimrail Depot)
 		q(36277),	-- Warlords Max Level Dungeon Bonus Reward
+		q(34405),	-- DEPRECATED - REUSE — looting Blackrock Ore chest after Operator Thogar in LFR Blackrock Foundry
+
 
 	--	GARRISON
 		q(36793),	-- Frostfire Ridge - Founded Garrison - triggers after using the Master Surveyor during "Establish Your Garrison"
