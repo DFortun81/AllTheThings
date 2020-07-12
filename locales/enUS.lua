@@ -638,6 +638,18 @@ app.L = {
 		[-861] = "Interface\\Icons\\inv_smallazeritecluster",								-- Rank 4
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
+		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2201] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2202] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2203] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2204] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2205] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2206] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2207] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2208] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2209] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2210] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
+		[-2211] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
 		[-3178] = "Interface\\Icons\\achievement_boss_warlord_kalithresh",					-- Tier 3.5
 		[-3181] = "Interface\\Icons\\achievement_boss_ossiriantheunscarred",				-- Cenarion Circle Set (Ruins of Ahn'Qiraj)
 		[-3183] = "Interface\\Icons\\achievement_boss_hakkar",								-- Tier 1.5
@@ -1403,6 +1415,20 @@ app.L = {
 
 -- Weapon Sets
 		[-2000] = GetSpellInfo(41433),											-- Twin Blades of Azzinoth
+
+-- Warrior order hall lore items
+		[-2200] = "Great Odyn and the Firelord",
+		[-2201] = "The Wanderer and the Serpent",
+		[-2202] = "Halls of GOld and Glory",
+		[-2203] = "The Keeper's Eye",
+		[-2204] = "First of the Val'kyr",
+		[-2205] = "The Sealing of the Halls of Valor",
+		[-2206] = "His Name Is Dragonblood",
+		[-2207] = "The Last Words of Asgrim the Dreadkiller",
+		[-2208] = "A Shieldmaiden's Creed",
+		[-2209] = "The Prophecy of Rythas the Oracle",
+		[-2210] = "The Lessons of the Blacklist",
+		[-2211] = "Volund's Folly",
 
 -- Other Sets
 		[-3159] = GARRISON_TIER.." 6.5 "..WARDROBE_SETS,
