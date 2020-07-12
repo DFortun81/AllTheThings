@@ -163,6 +163,7 @@ _.ExpansionFeatures =
 					}),
 					mission(1505, {	-- A Good Dust Up
 						q(45172, {	-- To Battle!
+							["u"] = 40,
 							["provider"] = { "i", 143328 },	-- Battle Report
 							["g"] = {
 								 i(143606, {	-- Satchel of Battlefield Spoils

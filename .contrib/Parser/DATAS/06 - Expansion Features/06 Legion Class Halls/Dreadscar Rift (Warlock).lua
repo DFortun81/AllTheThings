@@ -262,7 +262,6 @@ _.ExpansionFeatures =
 					q(41156),	-- The Power Possessed
 					q(40712),	-- The Power Possessed
 					q(46243),	-- The Wrathsteed of Xoroth
-					q(45172),	-- To Battle!
 					q(45027),	-- To the Broken Shore
 					q(44227),	-- Unleashing our Wrath
 					q(44682),	-- Unparalleled Power						

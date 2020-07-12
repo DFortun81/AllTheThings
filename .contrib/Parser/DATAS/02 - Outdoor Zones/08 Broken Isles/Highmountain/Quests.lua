@@ -1099,7 +1099,6 @@ _.Zones =
 				q(40954),	-- The Unseen Path
 				q(44055),	-- They Have A Pitlord
 				q(39878),	-- Thunder Struck
-				q(45172),	-- To Battle!
 				q(45349),	-- To the Broken Shore
 				q(42110),	-- To the Summit!
 				q(44035),	-- Torrentius

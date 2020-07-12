@@ -611,7 +611,6 @@ _.ExpansionFeatures =
 					q(40698),	-- Purity of Form
 					q(43061),	-- Silkweave Bandages (Repeatable hand in quest but always returns false for completed even when the overarching quest(41907) is completed)
 					q(43058),	-- Spiced Rib Roast (Repeatable hand in quest but always returns false for completed even when the overarching quest(41907) is completed)
-					q(45172),	-- To Battle!
 					--]]
 					--[[ Artifact Appearance  Quests Commented Out For Now
 					q(43359, {	-- A Hero's Weapon

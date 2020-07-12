@@ -776,7 +776,6 @@ _.ExpansionFeatures =
 					q(45994),	-- Investigate the Broken Shore
 					q(46333),	-- Livin' on the Ledge
 					q(41096),	-- Time is of the Essence
-					q(45172),	-- To Battle!
 					q(42131),	-- Unexpected Visitors
 					q(44224),	-- Unleashing our Wrath
 					q(43557, {	-- Violet Hold

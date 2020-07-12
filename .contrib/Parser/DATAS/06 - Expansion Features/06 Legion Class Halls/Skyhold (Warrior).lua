@@ -555,7 +555,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
 						["sourceQuest"] = 39214,	-- The Eye of Odyn
 					}),
-					q(45172),	-- To Battle!
 					q(42110, {	-- To the Summit!
 						["coord"] = { 55.9, 84.4, 695 },
 						["classes"] = { WARRIOR },

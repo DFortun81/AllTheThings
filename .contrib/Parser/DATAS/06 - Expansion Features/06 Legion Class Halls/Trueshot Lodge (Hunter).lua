@@ -113,7 +113,6 @@ _.ExpansionFeatures =
 					}),
 					q(40385),	-- The Spear in the Shadow
 					q(40954),	-- The Unseen Path
-					q(45172),	-- To Battle!
 					q(42525),	-- Troops in the Field
 					q(44211),	-- Unseen Armaments
 					q(44212),	-- Unseen Fate

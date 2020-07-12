@@ -838,7 +838,6 @@ _.Zones =
 				q(46127, {	-- Thwarting the Twins
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(45172),	-- To Battle!
 				q(45027),	-- To the Broken Shore
 				q(45349),	-- To the Broken Shore
 				q(46675),	-- To Track a Demon

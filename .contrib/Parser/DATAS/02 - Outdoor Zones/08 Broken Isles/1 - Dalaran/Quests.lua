@@ -1610,7 +1610,6 @@ _.Zones =
 					["coord"] = { 44.9, 28.8, 627 },
 					["lvl"] = 110,
 				}),
-			--	q(45172),	-- To Battle! -- granted by mission board
 				q(42002, {	-- To Northrend
 					["sourceQuests"] = { 42000 },	-- Seeker of Truth
 					["classes"] = { PALADIN },

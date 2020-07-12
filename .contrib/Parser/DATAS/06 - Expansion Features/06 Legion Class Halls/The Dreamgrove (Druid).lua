@@ -588,7 +588,6 @@ _.ExpansionFeatures =
 					}),
 					q(40651),	-- The Seed of Ages
 					q(42040),	-- The Way to Nordrassil
-					q(45172),	-- To Battle!
 					q(41413),	-- What Could Go Wrong?
 					q(44232, {	-- The Grove Provides
 						i(139726),	-- Hood of the Dreamgrove

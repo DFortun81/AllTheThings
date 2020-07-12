@@ -288,7 +288,6 @@ _.ExpansionFeatures =
 					q(46335),	-- The Vault of the Tirisgarde
 					q(42959),	-- Three Is a Lucky Number
 					q(44310),	-- Thrice the Power
-					q(45172),	-- To Battle!
 					q(42687, {	-- Troops in the Field
 						["classes"] = { MAGE },
 						["lvl"] = 101,
