@@ -4157,7 +4157,7 @@ app.L = {
 		{0, "", ""}, -- 3
 		{0, "", ""}, -- 4
 		{0, "", ""}, -- 5
-		{2, "|CFFFF0000Item is included in Collector's Edition's, you can still find these for sale online in very low quantities.|r", "Collector's Edition (6)"}, -- Little Hope -- 6
+		{1, "|CFFFF0000Item is included in Collector's Edition's, you can still find these for sale online in very low quantities.|r", "Collector's Edition (6)"}, -- Little Hope -- 6
 		{0, "", ""}, -- 7
 		{3, "|CFFFF0000The recipe to learn to craft this item has been removed and the item is Bind on Equip. This can be crafted or posted on the Auction House.|r", "Recipe: BoE Craftable Removed (8)"}, -- There is Hope -- 8
 		{3, "|CFFFF0000The source of this item has been removed and is only available with the Black Market Auction House.|r", "Black Market AH [BMAH] (9)"}, -- There is Hope -- 9
@@ -4165,9 +4165,9 @@ app.L = {
 		{3, "|CFFFF0000This item is Bind on Pickup but can be obtained if you have access to the items to summon the boss.|r", "Requires Summoning Items (11)"}, -- There is Hope -- 11
 		{0, "", ""}, -- 12
 		{1, "|CFFFF0000Your followers are too high and the mission for the cache will no longer spawn.|r", "Legacy Cache (13)"}, -- 13
-		{2, "|CFFFF0000These items can't be purchased unless you have the required PvP Rating or were in the Top % of that season.|r", "PvP Elite/Gladiator (14)"}, -- 14
+		{3, "|CFFFF0000These items can't be purchased unless you have the required PvP Rating or were in the Top % of that season.|r", "PvP Elite/Gladiator (14)"}, -- 14
 		{1, "|CFFFF0000This item has a Source ID (Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes / Unlearnable (15)"}, -- 15
-		{2, "|CFFFF0000These items require either attending Blizzcon or purchasing a virtual ticket.  You may also find codes on various sites for high prices.|r", "Blizzcon (16)"},--16
+		{1, "|CFFFF0000These items require either attending Blizzcon or purchasing a virtual ticket.  You may also find codes on various sites for high prices.|r", "Blizzcon (16)"},--16
 		{6, "|CFF00FFDEMay require Lunar Festival to be active to obtain this item.|r", "Lunar Festival (17)"},--17
 		{7, "|CFF00FFDEMay require Love is In the Air to be active to obtain this item.|r", "Love is In the Air (18)"},--18
 		{8, "|CFF00FFDEMay require Noblegarden to be active to obtain this item.|r", "Noblegarden (19)"},--19
@@ -4189,10 +4189,10 @@ app.L = {
 		{3, "|CFFFF0000This item is purchased from the In-Game Store.|r", "In-Game Store (35)"}, --35
 		{21, "|CFFFF0000This was obtainable only during the WoW Anniversary when it was active and is no longer available.|r\n", "WoW Anniversary [Removed] (36)"}, -- 36
 		{0, "", ""}, --37
-		{4, "|CFFFF0000These items are only available for players that completed the Legendary Cloak quest chain during Mists of Pandaria or via the BMAH|r", "Ordos - Legendary Cloak (38)"}, --38
+		{1, "|CFFFF0000These items are only available for players that completed the Legendary Cloak quest chain during Mists of Pandaria or via the BMAH|r", "Ordos - Legendary Cloak (38)"}, --38
 		{0, "", ""}, --39
 		{0, "", ""}, -- 40
-		{4, "|CFFFF0000These appearances are only available for players that completed the respective Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances (41)"}, -- 41
+		{1, "|CFFFF0000These appearances are only available for players that completed the respective Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances (41)"}, -- 41
 		{21, "|CFFFF0000These appearances are only available during the weekly Timewalking Event.\nOnly dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}, -- 42
 		{0, "", ""}, -- 43
 		{0, "", ""}, -- 44
