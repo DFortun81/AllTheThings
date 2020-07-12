@@ -5342,25 +5342,26 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112913),	-- Skeer's Bloodsoaked Talisman
 				})),
 				cr(71865, e(869, {	-- Garrosh Hellscream
-					{  -- Conqueror of Orgrimmar/Liberator of Orgrimmar
-						["allianceAchievementID"] = 8679,	-- Conqueror of Orgrimmar [Alliance]
-						["hordeAchievementID"] = 8680,		-- Liberator of Orgrimmar [Horde]
+					ach(8679, {	-- Conqueror of Orgrimmar
+						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							{
-								["allianceAchievementID"] = 8679,	-- Conqueror of Orgrimmar [Alliance]
-								["hordeAchievementID"] = 8680,		-- Liberator of Orgrimmar [Horde]
-								["titleID"] = 211,	-- Conqueror of Orgrimmar [Alliance]
-								["titleID"] = 212,	-- Liberator of Orgrimmar [Horde]
-							},
+							title(211, {	-- Conqueror of Orgrimmar
+								["races"] = ALLIANCE_ONLY,
+							}),
 						},
-					},
-					{	-- Downfall: Garrosh Hellscream
+					}),
+					ach(8680, {	-- Liberator of Orgrimmar
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							title(212, {	-- Liberator of Orgrimmar
+								["races"] = HORDE_ONLY,
+							}),
+						},
+					}),
+					crit(3, {	-- Garrosh Hellscream
 						["achievementID"] = 8462,	-- Downfall
-						["criteriaID"] = 3,	-- Garrosh Hellscream
-					},
-					{	-- Strike!	
-						["achievementID"] = 8537,	-- Strike!
-					},
+					}),
+					ach(8537),	-- Strike!
 					i(105858),	-- Essence of the Cursed Conqueror
 					i(105857),	-- Essence of the Cursed Protector
 					i(105859),	-- Essence of the Cursed Vanquisher
@@ -6716,41 +6717,29 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(112913),	-- Skeer's Bloodsoaked Talisman
 				})),
 				cr(71865, e(869, {	-- Garrosh Hellscream
-					{	-- Conqueror of Orgrimmar
-						["achievementID"] = 8679,	-- Conqueror of Orgrimmar
+					ach(8679, {	-- Conqueror of Orgrimmar
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							{	-- <Name> Conqueror of Orgrimmar
-								["titleID"] = 211,	-- <Name> Conqueror of Orgrimmar
+							title(211, {	-- Conqueror of Orgrimmar
 								["races"] = ALLIANCE_ONLY,
-							},
+							}),
 						},
-					},
-					{	-- Downfall: Garrosh Hellscream
-						["achievementID"] = 8462,	-- Downfall
-						["criteriaID"] = 3,	-- Garrosh Hellscream
-					},
-					{	-- Liberator of Orgrimmar
-						["achievementID"] = 8680,	-- Liberator of Orgrimmar
+					}),
+					ach(8680, {	-- Liberator of Orgrimmar
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							{	-- <Name> Liberator of Orgrimmar
-								["titleID"] = 212,	-- <Name> Liberator of Orgrimmar
+							title(212, {	-- Liberator of Orgrimmar
 								["races"] = HORDE_ONLY,
-							},
+							}),
 						},
-					},
-					{	-- Mythic: Garrosh Hellscream
-						["achievementID"] = 8482,	-- Mythic: Garrosh Hellscream
-						["g"] = {
-							{	-- ,Hellscream's Downfall
-								["titleID"] = 214,	-- ,Hellscream's Downfall
-							},
-						},
-					},
-					{	-- Strike!	
-						["achievementID"] = 8537,	-- Strike!
-					},
+					}),
+					crit(3, {	-- Garrosh Hellscream
+						["achievementID"] = 8462,	-- Downfall
+					}),
+					ach(8482, {	-- Mythic: Garrosh Hellscream
+						title(214),	-- ,Hellscream's Downfall
+					}),
+					ach(8537),	-- Strike!
 					{	-- Essence of the Cursed Conqueror [Priest / Warlock / Priest]
 						["itemID"] = 105867,	-- Essence of the Cursed Conqueror
 						["classes"] = {
