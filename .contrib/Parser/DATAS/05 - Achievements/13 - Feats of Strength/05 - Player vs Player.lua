@@ -71,7 +71,7 @@ _.Achievements =
 							["u"] = 4,
 							["g"] = {
 								title(79, {	-- Dread Gladiator <Name>
-									["u"] = 37,
+									["u"] = REMOVED_FROM_GAME,
 								}),
 							},
 						}),
@@ -141,7 +141,7 @@ _.Achievements =
 							["u"] = 4,
 							["g"] = {
 								title(80, {	-- Sinister Gladiator <Name>
-									["u"] = 37,
+									["u"] = REMOVED_FROM_GAME,
 								}),
 							},
 						}),
@@ -205,7 +205,7 @@ _.Achievements =
 							["u"] = 4,
 							["g"] = {
 								title(402, {	-- Notorious Gladiator <Name>
-									["u"] = 37,
+									["u"] = REMOVED_FROM_GAME,
 								}),
 							},
 						}),
@@ -281,7 +281,7 @@ _.Achievements =
 						--	["u"] = 4, S3
 							["g"] = {
 								title(665, {	-- Corrupted Gladiator <Name>
-								--	["u"] = 37, S3
+								--	["u"] = REMOVED_FROM_GAME, -- S3
 								}),
 							},
 						}),

@@ -1230,7 +1230,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					ach(4080, {		-- A Tribute to Dedicated Insanity
-						un(37, title(136)),	-- the Argent Defender
+						un(REMOVED_FROM_GAME, title(136)),	-- the Argent Defender
 					}),
 					a(ach(4156, {	-- A Tribute to Immortality
 						un(REMOVED_FROM_GAME, a(i(49096))),		-- Crusader's White Warhorse

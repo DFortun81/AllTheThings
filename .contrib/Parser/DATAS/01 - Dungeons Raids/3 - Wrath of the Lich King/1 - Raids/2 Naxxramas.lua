@@ -21,7 +21,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["groups"] = {
 						{
 							["titleID"] = 109,	-- The Undying
-							["u"] = 37,
+							["u"] = REMOVED_FROM_GAME,
 						},
 					},
 				},
@@ -888,7 +888,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["groups"] = {
 						{
 							["titleID"] = 108,	-- The Immortal
-							["u"] = 37,
+							["u"] = REMOVED_FROM_GAME,
 						},
 					},
 				},
@@ -1922,7 +1922,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								["groups"] = {
 									{
 										["titleID"] = 90,	-- %, Conqueror of Naxxramas
-										["u"] = 37,
+										["u"] = REMOVED_FROM_GAME,
 									},
 								},
 							},

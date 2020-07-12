@@ -133,7 +133,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								["crs"] = { 53833 },	-- Volcanus <Firelord>
 								["questID"] = 29234,	-- Delegation
 							}),
-							un(37, title(146, {	-- <Name>, Blessed Defender of Nordrassil
+							un(REMOVED_FROM_GAME, title(146, {	-- <Name>, Blessed Defender of Nordrassil
 								["collectible"] = false,
 								["description"] = "You only have this title for as long as you are in tree form. :(",
 							})),
