@@ -36,7 +36,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				}),
 			}),
 			d(-1, {	-- Raid Finder (Pre-Patch 6.0) >> Items marked "Raid Finder" after 6.0 <<
-				["u"] = 12,
+				["u"] = REMOVED_FROM_GAME,
 				["ignoreBonus"] = true,
 				["description"] = "This version of the instance was the original Raid Finder difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 				["g"] = {
@@ -319,7 +319,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				},
 			}),
 			d(-2, {	-- Flexible (Pre-Patch 6.0) >> Items unmarked after 6.0, used to be marked "Flexible" <<
-				["u"] = 12,
+				["u"] = REMOVED_FROM_GAME,
 				["ignoreBonus"] = true,
 				["description"] = "This version of the instance was the original Flexible difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 				["g"] = {
@@ -618,7 +618,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				},
 			}),
 			d(-3, {	-- Normal (Pre-Patch 6.0) >> Items marked "Heroic" after 6.0 <<
-				["u"] = 12,
+				["u"] = REMOVED_FROM_GAME,
 				["ignoreBonus"] = true,
 				["description"] = "This version of the instance was the original Normal difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 				["g"] = {
@@ -1167,7 +1167,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				},
 			}),
 			d(-4, {	-- Heroic (Pre-Patch 6.0) >> Items marked "Mythic" after 6.0 <<
-				["u"] = 12,
+				["u"] = REMOVED_FROM_GAME,
 				["ignoreBonus"] = true,
 				["description"] = "This version of the instance was the original Heroic difficulty mode. The loot all had unique item IDs for each difficulty tier as well as their Warforged variants similar to how ToT was done. Blizzard changed their design philosophy for the better with Patch 6.0 and chose to reuse an item's ID and apply a bonus ID rather than creating a brand new item ID with the same base stats.",
 				["g"] = {

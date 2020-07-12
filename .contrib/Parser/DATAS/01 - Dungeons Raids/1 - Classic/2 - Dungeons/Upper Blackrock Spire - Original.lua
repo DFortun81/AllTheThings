@@ -5,7 +5,7 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(559, { 	-- Upper Blackrock Spire
-		["u"] = 12,
+		["u"] = REMOVED_FROM_GAME,
 		["lvl"] = 55,
 		["mapID"] = 616,
 		["maps"] = { 617, 618 },
@@ -187,7 +187,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				n(10899, {	-- Goraluk Anvilcrack
-					["u"] = 12,	-- Legacy Boss
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(18779, { 	-- Bottom Half of Advanced Armorsmithing: Volume 1
 							["description"] = "Combine with the Top Half of Advanced Armorsmithing: Volume 1.",

@@ -13,7 +13,7 @@ _.Instances = { tier(1, {	-- Classic
 		["g"] = {
 			d(9, {	-- 40 Player (Legacy)
 				["ignoreBonus"] = true,
-				["u"] = 12,
+				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					e(1651, {	-- Onyxia (Legacy)
 						["crs"] = { 10184 },	-- Onyxia

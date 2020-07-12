@@ -1021,16 +1021,16 @@ L["UNOBTAINABLE_ITEM_REASONS"] = {
     -- {header, description, name}, header: header id, 1-3 as above, 4 is legacy.
     {1, "|CFFFF0000This was never available to players.|r", "Never Available (1)"}, -- No Hope -- 1
 	{1, "|CFFFF0000This has been removed from the game.|r", "Removed From Game (2)"}, -- No Hope -- 2
-    {1, "", ""}, -- No Hope -- 3 (deprecated, turned into removed from game)
-    {1, "|CFFFF0000要获得此奖励所需的成就目标不再能达成，或有时间限制。|r", "绝版成就 (4)"}, -- Little Hope -- 4
-    {2, "|CFFFF0000制造此物品的配方已被移除，且此物品拾取后绑定，因此只有已习得此配方的玩家才能获得。|r", "配方移除的绑定物品 (5)"}, -- Little Hope -- 5
+    {1, "", ""}, -- 3
+    {1, "", ""}, -- 4
+    {1, "", ""}, -- 5
     {2, "|CFFFF0000此物品是典藏版的一部分。网上可能仍有极小数量出售。|r", "典藏版 (6)"}, -- Little Hope -- 6
     {3, "|CFFFF0000此物品的获得方式已被移除，但此物品是装备后绑定，或者是可装笼的宠物。|r", "装绑物品 (7)"}, -- There is Hope -- 7
     {3, "|CFFFF0000制造此物品的配方已被移除，且此物品装备后绑定，因此仍然可以制造和交易。|r", "配方移除的装绑物品 (8)"}, -- There is Hope -- 8
     {3, "|CFFFF0000此物品的获得方式已被移除，只能从黑市拍卖行获得。|r", "黑市拍卖行 (9)"}, -- There is Hope -- 9
     {3, "|CFFFF0000此物品通过TCG卡牌获得，卡牌不再发行，但网络上、黑市拍卖行甚至交易行仍可能出现。国服也可能有积分兑换活动。|r", "TCG卡牌 (10)"}, -- There is Hope -- 10
     {3, "|CFFFF0000此物品拾取后绑定，但是如果你有召唤首领所需的物品仍可获得。|r", "需要召唤道具 (11)"}, -- There is Hope -- 11
-    {4, "|CFFFF0000副本或首领已绝版。|r", "绝版副本 (12)"}, -- 12
+    {1, "", ""}, -- 12
     {1, "|CFFFF0000你的追随者等级过高，奖励此物品的任务不再刷新。|r", "绝版物资 (13)"}, -- 13
     {2, "|CFFFF0000此物品无法购买，除非你在对应赛季的PvP评分或排名达标。|r", "PvP Elite/Gladiator (14)"}, -- 14
     {1, "|CFFFF0000This item has a Source ID (Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes / Unlearnable (15)"}, -- 15

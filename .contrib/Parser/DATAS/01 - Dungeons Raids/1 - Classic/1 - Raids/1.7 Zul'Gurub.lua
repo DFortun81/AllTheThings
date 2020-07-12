@@ -6,7 +6,7 @@ _.Instances = { tier(1, {	-- Classic
 	inst(76, { 	-- Zul'Gurub
 		["description"] = "Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",
 		["order"] = "04",
-		["u"] = 12,
+		["u"] = REMOVED_FROM_GAME,
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 58,
@@ -1436,7 +1436,7 @@ _.Instances = { tier(1, {	-- Classic
 					["cr"] = 11368,	-- Bloodseeker Bat
 				}),
 			}),
-			un(12, n(14517, {	-- High Priestess Jeklik
+			un(REMOVED_FROM_GAME, n(14517, {	-- High Priestess Jeklik
 				un(REMOVED_FROM_GAME, i(19928)),	-- Animist's Spaulders
 				un(REMOVED_FROM_GAME, i(19918)),	-- Jeklik's Crusher
 				un(REMOVED_FROM_GAME, i(19923)),	-- Jeklik's Opaline Talisman
@@ -1446,7 +1446,7 @@ _.Instances = { tier(1, {	-- Classic
 				un(REMOVED_FROM_GAME, i(19915)),	-- Zulian Defender
 				un(7, i(19767)),	-- Primal Bat Leather
 			})),
-			un(12, n(14507, {	-- High Priest Venoxis
+			un(REMOVED_FROM_GAME, n(14507, {	-- High Priest Venoxis
 				{
 					["itemID"] = 22216,	-- Venoxis's Venom Sac
 					["questID"] = 9023,	-- The Perfect Poison
@@ -1459,7 +1459,7 @@ _.Instances = { tier(1, {	-- Classic
 				un(REMOVED_FROM_GAME, i(19900)),	-- Zulian Stone Axe
 				un(REMOVED_FROM_GAME, i(19907)),	-- Zulian Tigerhide Cloak
 			})),
-			un(12, n(14510, {	-- High Priestess Mar'li
+			un(REMOVED_FROM_GAME, n(14510, {	-- High Priestess Mar'li
 				un(REMOVED_FROM_GAME, i(19925)),	-- Band of Jin
 				un(REMOVED_FROM_GAME, i(19919)),	-- Bloodstained Greaves
 				un(REMOVED_FROM_GAME, i(20032)),	-- Flowing Ritual Robes
@@ -1467,7 +1467,7 @@ _.Instances = { tier(1, {	-- Classic
 				un(REMOVED_FROM_GAME, i(19927)),	-- Mar'li's Touch
 				un(REMOVED_FROM_GAME, i(19871)),	-- Talisman of Protection
 			})),
-			un(12, n(11382, {	-- Bloodlord Mandokir
+			un(REMOVED_FROM_GAME, n(11382, {	-- Bloodlord Mandokir
 				un(9, i(19872)),	-- Swift Razzashi Raptor
 				un(REMOVED_FROM_GAME, i(19877)),	-- Animist's Leggings
 				un(REMOVED_FROM_GAME, i(19869)),	-- Blooddrenched Grips
@@ -1496,29 +1496,29 @@ _.Instances = { tier(1, {	-- Classic
 					{ "i", 19931, 1 },	-- Gurubashi Mojo Madness
 				},
 				["groups"] = {
-					un(12, n(15082, {	-- Gri'lek
+					un(REMOVED_FROM_GAME, n(15082, {	-- Gri'lek
 						un(REMOVED_FROM_GAME, i(19939)),	-- Gri'lek's Blood
 						un(REMOVED_FROM_GAME, i(19961)),	-- Gri'lek's Grinder
 						un(REMOVED_FROM_GAME, i(19962)),	-- Gri'lek Carver
 					})),
-					un(12, n(15083, {	-- Hazza'rah
+					un(REMOVED_FROM_GAME, n(15083, {	-- Hazza'rah
 						un(REMOVED_FROM_GAME, i(19942)),	-- Hazza'rah's Dream Thread
 						un(REMOVED_FROM_GAME, i(19967)),	-- Thoughtblighter
 						un(REMOVED_FROM_GAME, i(19968)),	-- Fiery Retributer
 					})),
-					un(12, n(15084, {	-- Renataki
+					un(REMOVED_FROM_GAME, n(15084, {	-- Renataki
 						un(REMOVED_FROM_GAME, i(19940)),	-- Renataki's Tooth
 						un(REMOVED_FROM_GAME, i(19963)),	-- Pitchfork of Madness
 						un(REMOVED_FROM_GAME, i(19964)),	-- Renataki's Soul Conduit
 					})),
-					un(12, n(15085, {	-- Wushoolay
+					un(REMOVED_FROM_GAME, n(15085, {	-- Wushoolay
 						un(REMOVED_FROM_GAME, i(19941)),	-- Wushoolay's Mane
 						un(REMOVED_FROM_GAME, i(19965)),	-- Wushoolay's Poker
 						un(REMOVED_FROM_GAME, i(19993)),	-- Hoodoo Hunting Bow
 					})),
 				},
 			}),
-			un(12, n(14509, {	-- High Priest Thekal
+			un(REMOVED_FROM_GAME, n(14509, {	-- High Priest Thekal
 				un(9, i(19902)),	-- Swift Zulian Tiger
 				un(REMOVED_FROM_GAME, i(19897)),	-- Betrayer's Boots
 				un(REMOVED_FROM_GAME, i(20266)),	-- Peacekeeper Leggings
@@ -1541,7 +1541,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 				},
 			}),
-			un(12, n(15114, {	-- Gahz'ranka
+			un(REMOVED_FROM_GAME, n(15114, {	-- Gahz'ranka
 				["sourceQuest"] = 8227,	-- Nat's Measuring Tape
 				["description"] = "You can fish up Zulian Mudskunk from the Muddy Churning Waters in the instance and the lures can be purchased from Nat Pagle once you have turned in Nat's Measuring Tape.",
 				["cost"] = {
@@ -1561,7 +1561,7 @@ _.Instances = { tier(1, {	-- Classic
 					}
 				},
 			})),
-			un(12, n(14515, {	-- High Priestess Arlokk
+			un(REMOVED_FROM_GAME, n(14515, {	-- High Priestess Arlokk
 				un(REMOVED_FROM_GAME, i(19910)),	-- Arlokk's Grasp
 				un(REMOVED_FROM_GAME, i(19922)),	-- Arlokk's Hoodoo Stick
 				un(REMOVED_FROM_GAME, i(19913)),	-- Bloodsoaked Greaves
@@ -1569,7 +1569,7 @@ _.Instances = { tier(1, {	-- Classic
 				un(REMOVED_FROM_GAME, i(19909)),	-- Will of Arlokk
 				un(REMOVED_FROM_GAME, i(19914)),	-- Panther Hide Sack
 			})),
-			un(12, n(11380, {	-- Jin'do the Hexxer
+			un(REMOVED_FROM_GAME, n(11380, {	-- Jin'do the Hexxer
 				un(REMOVED_FROM_GAME, i(19892)),	-- Animist's Boots
 				un(REMOVED_FROM_GAME, i(19889)),	-- Blooddrenched Leggings
 				un(REMOVED_FROM_GAME, i(19894)),	-- Bloodsoaked Gauntlets
@@ -1584,7 +1584,7 @@ _.Instances = { tier(1, {	-- Classic
 				un(REMOVED_FROM_GAME, i(19886)),	-- The Hexxer's Cover
 				un(REMOVED_FROM_GAME, i(22637)),	-- Primal Hakkari Idol
 			})),
-			un(12, n(14834, {	-- Hakkar the Soulflayer
+			un(REMOVED_FROM_GAME, n(14834, {	-- Hakkar the Soulflayer
 				{
 					["itemID"] = 19802,	-- Heart of Hakkar
 					["u"] = 40,			-- Legacy Quest Item

@@ -5,14 +5,14 @@
 _.Instances = { tier(2, {	-- Burning Crusade
 	inst(77, { 	-- Zul'Aman
 		["order"] = "09",
-		["u"] = 12,
+		["u"] = REMOVED_FROM_GAME,
 		["isRaid"] = true,
 		["lvl"] = 68,
 		["maps"] = { 333 },
 		["coord"] = { 81.8, 64.3, 95 },	-- Zul'Aman, Ghostlands
 		["groups"] = {
 			d(1, {	-- Normal (Legacy)
-				["u"] = 12,
+				["u"] = REMOVED_FROM_GAME,
 				["groups"] = {
 					n(QUESTS, { 
 						{

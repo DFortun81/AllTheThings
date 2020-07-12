@@ -4,7 +4,7 @@
 
 _.Instances = { tier(1, {	-- Classic
 	n(-7, {	-- World Bosses
-		["u"] = 12,
+		["u"] = REMOVED_FROM_GAME,
 		["order"] = "00",
 		["ordered"] = true,
 		["isRaid"] = true,

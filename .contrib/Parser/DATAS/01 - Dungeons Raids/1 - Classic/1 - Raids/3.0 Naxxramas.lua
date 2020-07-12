@@ -5,7 +5,7 @@
 _.Instances = { tier(1, {	-- Classic
 	inst(754, { 	-- Naxxramas
 		["order"] = "07",
-		["u"] = 12,
+		["u"] = REMOVED_FROM_GAME,
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 60,
@@ -13,7 +13,7 @@ _.Instances = { tier(1, {	-- Classic
 		["groups"] = {
 			d(9, {	-- 40 Player (Legacy)
 				["ignoreBonus"] = true,
-				["u"] = 12,
+				["u"] = REMOVED_FROM_GAME,
 				["sourceQuest"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
 				["groups"] = {
 					n(-10066, {	-- Legendary Questline
