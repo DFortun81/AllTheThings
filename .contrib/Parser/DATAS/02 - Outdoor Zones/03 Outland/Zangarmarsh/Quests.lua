@@ -98,7 +98,7 @@ _.Zones =
 					["coord"] = { 80.4, 64.7, 102 },
 				}),
 				q(9715,  {	-- Bring Me A Shrubbery!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 17856 },	-- Gzhun'tt
 				}),
 				q(9814,  {	-- Burstcap Mushrooms, Mon!
@@ -159,7 +159,7 @@ _.Zones =
 					},
 				}),
 				q(9876,  {	-- Failed Incursion
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 17841 },	-- Ysiel Windsinger
 					["sourceQuest"] = 9732,	-- Return to the Marsh
 				}),
@@ -271,7 +271,7 @@ _.Zones =
 					},
 				}),
 				q(9738,  {	-- Lost in Action
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 17884 },	-- Watcher Jhang
 					["g"] = {
 						i(25541),	-- Cenarion Ring of Casting
@@ -370,7 +370,7 @@ _.Zones =
 					},
 				}),
 				q(9717,  {	-- Oh, It's On!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 17857 },	-- T'shu
 				}),
 				q(9701,  {	-- Observing the Sporelings
@@ -397,7 +397,7 @@ _.Zones =
 					},
 				}),
 				q(9765,  {	-- Preparing for War
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 17841 },	-- Ysiel Windsinger
 					["sourceQuest"] = 9764,	-- Orders from Lady Vashj
 				}),
@@ -455,7 +455,7 @@ _.Zones =
 					},
 				}),
 				q(9719,  {	-- Stalk the Stalker
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 17866 },	-- Khn'nix
 					["g"] = {
 						i(28109),	-- Essence Infused Mushroom
@@ -579,7 +579,7 @@ _.Zones =
 					["coord"] = { 80.4, 64.2, 102 },
 				}),
 				q(9763,  {	-- The Warlord's Hideout
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 17884 },	-- Watcher Jhang
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(28181)),	-- Earthwarden's Coif

@@ -14,7 +14,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["coords"] = {
 							{ 53.6, 38.6, 27 },
 						},
-						["u"] = 40,	-- Legacy Quests
+						["u"] = REMOVED_FROM_GAME,
 						["maps"] = {
 							27,	-- Dun Morogh
 						},
@@ -31,7 +31,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["coords"] = {
 							{ 42.6, 17.6, 1 },
 						},
-						["u"] = 40,	-- Legacy Quests
+						["u"] = REMOVED_FROM_GAME,
 						["maps"] = {
 							1,	-- Durotar
 						},
@@ -48,7 +48,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["coords"] = {
 							{ 53.6, 38.6, 27 },
 						},
-						["u"] = 40,	-- Legacy Quests
+						["u"] = REMOVED_FROM_GAME,
 						["maps"] = {
 							27,	-- Dun Morogh
 						},
@@ -65,7 +65,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["coords"] = {
 							{ 42.6, 17.6, 1 },
 						},
-						["u"] = 40,	-- Legacy Quests
+						["u"] = REMOVED_FROM_GAME,
 						["maps"] = {
 							1,	-- Durotar
 						},
@@ -82,7 +82,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["coords"] = {
 							{ 53.6, 38.6, 27 },
 						},
-						["u"] = 40,	-- Legacy Quests
+						["u"] = REMOVED_FROM_GAME,
 						["maps"] = {
 							27,	-- Dun Morogh
 						},
@@ -99,7 +99,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["coords"] = {
 							{ 42.6, 17.6, 1 },
 						},
-						["u"] = 40,	-- Legacy Quests
+						["u"] = REMOVED_FROM_GAME,
 						["maps"] = {
 							1,	-- Durotar
 						},
@@ -110,7 +110,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["isYearly"] = true,
 					}),
 					q(11454, {	-- Seek the Saboteurs
-						["u"] = 40,	-- Legacy Quests
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "o", 186881 },	-- Dark Iron Sabotage Plans
 						["maps"] = {
 							1,	-- Durotar
@@ -129,7 +129,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["coords"] = {
 							{ 56, 37.1, 1 },
 						},
-						["u"] = 40,	-- Legacy Quests
+						["u"] = REMOVED_FROM_GAME,
 						["maps"] = {
 							27,	-- Dun Morogh
 						},
@@ -146,7 +146,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["coords"] = {
 							{ 40.7, 17.4, 1 },
 						},
-						["u"] = 40,	-- Legacy Quests
+						["u"] = REMOVED_FROM_GAME,
 						["maps"] = {
 							1,	-- Durotar
 						},
@@ -182,13 +182,13 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["provider"] = { "n", 27584 },	-- Darna Honeybock
 						["maps"] = { 27, },	-- Dun Morogh
 						["sourceQuests"] = { 11442, },	-- Welcome to Brewfest! (Alliance)
-						["u"] = 40,	-- Legacy Quest/Quest Item
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(12318, {	-- Save Brewfest! (Horde)
 						["provider"] = { "n", 28329 },	-- Slurpo Fizzykeg
 						["maps"] = { 1, },	-- Durotar
 						["sourceQuests"] = { 11447, },	-- Welcome to Brewfest! (Horde)
-						["u"] = 40,	-- Legacy Quest/Quest Item
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					--[[
 					q(12062, {	-- Insult Coren Direbrew
@@ -202,13 +202,13 @@ _.Holidays = bubbleDown({["u"] = 24},
 					i(34028, {	-- "Honorary Brewer" Hand Stamp (Alliance)
 						["g"] = {
 							q(11419, {	-- Brewfest Riding Rams
-								["u"] = 40,	-- Legacy Quests
+								["u"] = REMOVED_FROM_GAME,
 								["maps"] = { 27, },	-- Dun Morogh
 								["races"] = ALLIANCE_ONLY,
 							}),
 						},
 						["races"] = ALLIANCE_ONLY,
-						["u"] = 40,	-- Legacy Quest/Quest Item
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(33978, {	-- "Honorary Brewer" Hand Stamp (Horde)
 						["g"] = {
@@ -216,11 +216,11 @@ _.Holidays = bubbleDown({["u"] = 24},
 								
 								["maps"] = { 1, },	-- Durotar
 								["races"] = HORDE_ONLY,
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 							}),
 						},
 						["races"] = HORDE_ONLY,
-						["u"] = 40,	-- Legacy Quest/Quest Item
+						["u"] = REMOVED_FROM_GAME,
 					}),
 				}),
 			},

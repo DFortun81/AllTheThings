@@ -392,7 +392,7 @@ _.Zones =
 									["coord"] = { 52.2, 13.6, 84 },
 									["races"] = ALLIANCE_ONLY,
 									["lvl"] = 110,
-									["u"] = 40,
+									["u"] = REMOVED_FROM_GAME,
 								}),
 							},
 						}),
@@ -463,7 +463,7 @@ _.Zones =
 					["coord"] = { 26.4, 78.7, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(336,   {	-- A Noble Brew
 					["provider"] = { "n", 1435 },	-- Zardeth of the Black Claw
@@ -471,7 +471,7 @@ _.Zones =
 					["sourceQuest"] = 335,	-- A Noble Brew
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(58496, {	-- An Unwelcome Advisor
 					["races"] = ALLIANCE_ONLY,
@@ -517,7 +517,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 84,
 					["provider"] = { "o", 205198 },	-- Pile of Explosives
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(63919)),	-- Corruption-Seeking Chestguard
 						un(REMOVED_FROM_GAME, i(63918)),	-- Detective's Shoulderplates
@@ -556,7 +556,7 @@ _.Zones =
 					["coord"] = { 57.6, 47.8, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2933)),	-- Seal of Wrynn
 					},
@@ -580,7 +580,7 @@ _.Zones =
 					["coord"] = { 59.6, 34.0, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1942,  {	-- Astral Knot Garment
 					["provider"] = { "n", 1309 },	-- Wynne Larson
@@ -589,7 +589,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 					["lvl"] = 26,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(9516)),	-- Astral Knot Blouse
 						un(REMOVED_FROM_GAME, i(7511)),	-- Astral Knot Robe
@@ -622,7 +622,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(29100, {	-- Bwemba's Spirit
 					["provider"] = { "n", 52654 },	-- Bwemba
@@ -654,7 +654,7 @@ _.Zones =
 					["coord"] = { 65.2, 21.2, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2036)),	-- Dusty Mining Gloves
 						un(REMOVED_FROM_GAME, i(2037)),	-- Tunneler's Boots
@@ -716,7 +716,7 @@ _.Zones =
 					["sourceQuest"] = 6281,	-- Continue to Stormwind
 					["races"] = { HUMAN },
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(58708, {	-- Fame Waits for Gnome One
 					["coord"] = { 52.7, 14.1, 84 },
@@ -750,7 +750,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1782,  {	-- Furen's Armor
 					["provider"] = { "n", 5413 },	-- Furen Longbeard
@@ -759,7 +759,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6972)),	-- Fire-Hardened Hauberk
 					},
@@ -770,7 +770,7 @@ _.Zones =
 					["sourceQuest"] = 50371,	-- Summons to Stormwind
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),	
 				q(39800, {	-- Greymane's Gambit
 					["provider"] = { "n", 96663 },	-- Genn Greymane
@@ -796,7 +796,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6971)),	-- Fire Hardened Coif
 					},
@@ -808,7 +808,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(333,   {	-- Harlan Needs a Resupply
 					["provider"] = { "n", 1427 },	-- Harlan Bagley
@@ -822,7 +822,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 					["lvl"] = 26,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(53370, {	-- Hour of Reckoning
 					["provider"] = { "n", 144095 },	-- Master Mathias Shaw
@@ -886,7 +886,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 22,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(32665, {	-- Learn To Ride
 					["description"] = "This quest is available to Pandaren upon reaching level 20.",
@@ -918,7 +918,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 					["lvl"] = 15,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(7509),	-- Manaweave Robe	-- NOTE: Item still available
 					},
@@ -941,14 +941,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 22,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1364,  {	-- Mazen's Behest
 					["provider"] = { "n", 5386 },	-- Acolyte Dellis
 					["coord"] = { 51.6, 73.8, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10747)),	-- Teacher's Sash
 						un(REMOVED_FROM_GAME, i(10748)),	-- Wanderlust Boots
@@ -968,7 +968,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(7508),	-- Ley Orb		-- NOTE: Item still available
 						i(9513),	-- Ley Staff	-- NOTE: Item still available
@@ -979,7 +979,7 @@ _.Zones =
 					["coord"] = { 33.2, 39.4, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 84,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(63927)),	-- Machine-Linker Girdle
 						un(REMOVED_FROM_GAME, i(63926)),	-- Reconstructing Hauberk
@@ -998,7 +998,7 @@ _.Zones =
 					["coord"] = { 66.8, 43.8, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(1893)),	-- Miner's Revenge
 					},
@@ -1011,7 +1011,7 @@ _.Zones =
 					["coord"] = { 85.6, 31.8, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 56,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(16996)),	-- Gorewood Bow
 						un(REMOVED_FROM_GAME, i(16998)),	-- Sacred Protector
@@ -1032,14 +1032,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 					["lvl"] = 26,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(40661, {	-- Protect the Home Front
 					["provider"] = { "n", 101004 },	-- Elerion Bladedancer
 					["coord"] = { 40.4, 77.8, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 98,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(32307, {	-- Reader for the Dead Tongue
 					["provider"] = { "n", 5496 },	-- Sandahl (Stormwind City)
@@ -1053,7 +1053,7 @@ _.Zones =
 					["coord"] = { 52.8, 86.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6677)),	-- Spellcrafter Wand
 					},
@@ -1085,7 +1085,7 @@ _.Zones =
 					["sourceQuest"] = 6261,	-- Dungar Longdrink
 					["races"] = { HUMAN },
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26370, {	-- Return to Sentinel Hill
 					["providers"] = {
@@ -1112,7 +1112,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
 					["lvl"] = 30,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(32317, {	-- Seeking the Soulstones
 					["provider"] = { "n", 5496 },	-- Sandahl
@@ -1139,7 +1139,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7298)),	-- Blade of Cunning
 					},
@@ -1166,7 +1166,7 @@ _.Zones =
 					["provider"] = { "n", 2504 },	-- Donyal Tovald
 					["coord"] = { 84.6, 24.2, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(55146, {	-- Stranger in a Strange Lane
 					["provider"] = { "n", 133362 },	-- Ambassador Moorgard
@@ -1177,7 +1177,7 @@ _.Zones =
 				q(50371, {	-- Summons to Stormwind
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(42740, {	-- The Battle for Broken Shore
 					["provider"] = { "n", 108916 },	-- Knight Dameron
@@ -1207,7 +1207,7 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(1739, {	-- The Binding
-					["u"] = 40,	-- Legacy Quest
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6122 },	-- Gakin the Darkbinder
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
@@ -1373,7 +1373,7 @@ _.Zones =
 				q(29158, {	-- The Zandalar Representative
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 85,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(46727, {	-- Tides of War
 					["provider"] = { "n", 142930 },	-- Halford Wyrmbane
@@ -1452,7 +1452,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 					["lvl"] = 26,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(28405, {	-- Weapons of Darkness
 					["provider"] = { "n", 928 },	-- Lord Grayson Shadowbreaker
@@ -1486,7 +1486,7 @@ _.Zones =
 					["sourceQuest"] = 49976,	-- Gifts of the Fallen
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 110,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1698,  {	-- Yorus Barleybrew
 					["provider"] = { "n", 5479 },	-- Wu Shen
@@ -1494,7 +1494,7 @@ _.Zones =
 					["races"] = exclude(DRAENEI, ALLIANCE_ONLY),	-- All alliance races except Draenei
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(397,   {	-- You Have Served Us Well
 					["provider"] = { "n", 1435 },	-- Zardeth of the Black Claw
@@ -1503,7 +1503,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"]	= { WARLOCK },
 					["lvl"] = 25,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3556)),	-- Dread Mage Hat 
 					},

@@ -8,7 +8,7 @@ _.Zones =
 			n(QUESTS, {
 				q(283,   {	-- A Dark Threat Looms
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2907)),	-- Dwarven Tree Chopper
 						un(REMOVED_FROM_GAME, i(2908)),	-- Thornblade
@@ -16,7 +16,7 @@ _.Zones =
 				}),
 				q(26155, {	-- A Dark Threat, Remembered
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(59012)),	-- Disarming Gloves
 						un(REMOVED_FROM_GAME, i(59011)),	-- Nicolette's Robes
@@ -37,14 +37,14 @@ _.Zones =
 				}),
 				q(704,   {	-- Agmond's Fate
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4980)),	-- Prospector Gloves
 					},
 				}),
 				q(257,   {	-- A Hunter's Boast
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(59004)),	-- Daryl's Bow
 						un(REMOVED_FROM_GAME, i(2903)),	-- Daryl's Hunting Bow
@@ -54,7 +54,7 @@ _.Zones =
 				}),
 				q(258,   {	-- A Hunter's Challenge
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(59000)),	-- Daryl's Axe
 						un(REMOVED_FROM_GAME, i(3572)),		-- Daryl's Shortsword
@@ -75,7 +75,7 @@ _.Zones =
 					["sourceQuest"] = 273,	-- Resupplying the Excavation (Legacy)
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26846, {	-- A Nasty Exploit
 					["sourceQuests"] = { 26844 },	-- Kobold and Kobolder
@@ -105,7 +105,7 @@ _.Zones =
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 6241 },	-- Bailor Stonehand
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26147, {	-- Bigger and Uglier
 					["sourceQuests"] = { 26146 },	-- In Defense of the King's Lands
@@ -121,7 +121,7 @@ _.Zones =
 				}),
 				q(2038,  {	-- Bingles' Missing Supplies
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12522)),	-- Bingles' Flying Gloves
 						un(REMOVED_FROM_GAME, i(58975)),	-- Gnomish All-Purpose Ray Gun
@@ -155,7 +155,7 @@ _.Zones =
 				}),
 				q(385,   {	-- Crocolisk Hunting
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(59007)),	-- Croc-Scale Gloves
 						un(REMOVED_FROM_GAME, i(59006)),	-- Croc-Skin Boots
@@ -169,13 +169,13 @@ _.Zones =
 					["provider"] = { "n", 44859 },	-- Safety Warden Pipsy
 				}),
 				q(13652, {	-- Defense of the Stonewrought Dam
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(298,   {	-- Excavation Progress Report
 					["provider"] = { "n", 1344 },	-- Prospector Ironband
 					["coord"] = { 65.9, 65.6, 48 },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(13656, {	-- Explorers' League Document (1 of 6)
 					["coord"] = { 36.7, 61.1, 48 },
@@ -226,7 +226,7 @@ _.Zones =
 				}),
 				q(307,   {	-- Filthy Paws (U)
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3166)),	-- Ironheart Chain
 						un(REMOVED_FROM_GAME, i(3160)),	-- Ironplate Buckler
@@ -251,7 +251,7 @@ _.Zones =
 				}),
 				q(297,   {	-- Gathering Idols (U)
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(5241)),	-- Dwarven Flamestick
 						un(REMOVED_FROM_GAME, i(3154)),	-- Thelsamar Axe
@@ -311,7 +311,7 @@ _.Zones =
 				}),
 				q(217,   {	-- In Defense of the King's Lands (U)
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6187)),	-- Dwarven Defender
 						un(REMOVED_FROM_GAME, i(1436)),	-- Frontier Britches
@@ -374,7 +374,7 @@ _.Zones =
 				}),
 				q(416,   {	-- Rat Catching
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(58977)), 	-- Algaz Shield
 						un(REMOVED_FROM_GAME, i(3217)),	-- Foreman Belt
@@ -387,7 +387,7 @@ _.Zones =
 					["coord"] = { 37.2, 47.4, 48 },
 					["sourceQuest"] = 298,	-- Excavation Progress Report
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(13639, {	-- Resupplying the Excavation
 					["provider"] = { "n", 1105 },	-- Jern Hornhelm
@@ -400,11 +400,11 @@ _.Zones =
 					["coord"] = { 37.2, 47.4, 48 },
 					["sourceQuest"] = 302,	-- Powder to Ironband
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(25117, {	-- Scout's Dishonor
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(59016)),	-- Clue-Finder's Leggings
 						un(REMOVED_FROM_GAME, i(59015)),	-- Bracers of Alarm
@@ -445,7 +445,7 @@ _.Zones =
 				}),
 				q(1338,  {	-- Stormpike's Order
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["altQuests"] = { 13636 },
 				}),
 				q(13636, {	-- Stormpike's Orders
@@ -468,7 +468,7 @@ _.Zones =
 				}),
 				q(13638, {	-- The Captured Mountaineer
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27016, {	-- The Joy of Boar Hunting
 					["coord"] = { 83.4, 65.4, 48 },
@@ -491,7 +491,7 @@ _.Zones =
 					},
 				}),
 				q(418,   {	-- Thelsamar Blood Sausages
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1963 },	-- Vidra Hearthstove
 					["g"] = {
@@ -524,7 +524,7 @@ _.Zones =
 					["provider"] = { "n", 44859 },	-- Safety Warden Pipsy
 				}),
 				q(271,   {	-- Vyrin's Revenge (#1)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1156 },	-- Vyrin Swiftwind
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -535,7 +535,7 @@ _.Zones =
 					["provider"] = { "n", 1156 },	-- Vyrin Swiftwind
 				}),
 				q(271,   {	-- Vyrin's Revenge (#2)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1187 },	-- Daryl the Youngling
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 271,	-- Vyrin's Revenge (#1)
@@ -554,7 +554,7 @@ _.Zones =
 				}),
 				q(256,   {	-- WANTED: Chok'sul
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(59028)),	-- Bluntnose's Signet
 						un(REMOVED_FROM_GAME, i(59026)), 	-- Bounty Hunter's Bracers

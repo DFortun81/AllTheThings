@@ -331,12 +331,12 @@ _.Zones =
 					["provider"] = { "n", 27255 },	-- Nishera the Garden Keeper
 				}),
 				q(13242, {	-- Darkness Stirs
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 31333 },	-- Alexstrasza the Life-Binder
 				}),
 				q(13167, {	-- Death to the Traitor King
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 26653 },	-- Kilix the Unraveler
 					["g"] = {
 						i(44358),	-- Kilix's Silk Slippers
@@ -381,7 +381,7 @@ _.Zones =
 					},
 				}),
 				q(13182, {	-- Don't Forget the Eggs!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 26653 },	-- Kilix the Unraveler
 					["g"] = {
 						i(44362),	-- Expelling Gauntlets

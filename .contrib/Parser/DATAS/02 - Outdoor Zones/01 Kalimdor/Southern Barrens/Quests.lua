@@ -166,7 +166,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(913,   {	-- Cry of the Thunderhawk
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3387 },	-- Jorn Skyseer
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 907,	-- Enraged Thunder Lizards
@@ -299,7 +299,7 @@ _.Zones =
 					},
 				}),
 				q(24898, {	-- Going, Going, Guano!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(25106, {	-- Hands Off Me Dig!
 					["provider"] = { "n", 39155 },	-- Marley Twinbraid
@@ -533,7 +533,7 @@ _.Zones =
 					},
 				}),
 				q(849,   {	-- Revenge of Gann
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3341 },	-- Gann Stonespire
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 846,	-- Revenge of Gann
@@ -803,7 +803,7 @@ _.Zones =
 					},
 				}),
 				q(893,   {	-- Weapons of Choice
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3433 },	-- Tatternack Steelforge
 					["races"] = HORDE_ONLY,
 					["g"] = {

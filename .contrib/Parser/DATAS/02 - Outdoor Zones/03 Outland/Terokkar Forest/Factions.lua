@@ -22,7 +22,7 @@ _.Zones =
 							["provider"] = { "n", 23306 },	-- Hazzik
 							["coord"] = { 64.2, 66.9, 108 },
 							["sourceQuest"] = 11029,	-- A Shabby Disguise
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								i(32720),	-- Time-Lost Offering
 							},

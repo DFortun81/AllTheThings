@@ -10,7 +10,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["groups"] = {
 			n(QUESTS, {
 				q(10216,  {	-- Safety is Job One
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 19670 },	-- Artificer Morphalius
 				}),
 				q(29572, {	-- Safety is Job One

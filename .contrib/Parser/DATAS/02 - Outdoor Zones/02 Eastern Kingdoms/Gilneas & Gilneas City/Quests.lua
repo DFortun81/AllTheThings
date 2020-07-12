@@ -69,7 +69,7 @@ _.Zones =
 						},
 					}),
 					q(14266, {	-- Charge
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 35839 },	-- Sergeant Cleese
 						["sourceQuest"] = 14265,	-- Your Instructor
 						["coord"] = { 67.60, 64.31, 202 },
@@ -77,7 +77,7 @@ _.Zones =
 						["classes"] = { 1 },	-- Warrior
 					}),
 					q(14274, {	-- Corruption
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 35869 },	-- Vitus Darkwalker
 						["sourceQuest"] = 14273,	-- Shady Associates
 						["coord"] = { 71.43, 64.45, 202 },
@@ -91,7 +91,7 @@ _.Zones =
 						["races"] = { 22 },	-- Worgen
 					}),
 					q(14272, {	-- Eviscerate
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 35871 },	-- Loren the Fence
 						["sourceQuest"] = 14269,	-- Someone's Looking for You
 						["coord"] = { 71.43, 65.78, 202 },
@@ -119,7 +119,7 @@ _.Zones =
 						},
 					}),
 					q(14281, {	-- Frost Nova
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 35872 },	-- Myriam Spellwalker
 						["sourceQuest"] = 14277,	-- Arcane Inquiries
 						["coord"] = { 68.01, 64.68, 202 },
@@ -139,7 +139,7 @@ _.Zones =
 						["races"] = { 22 },	-- Worgen
 					}),
 					q(14279, {	-- Learning the Word
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 35870 },	-- Sister Almyra
 						["sourceQuest"] = 14278,	-- Seek the Sister
 						["coord"] = { 70.40, 65.57, 202 },
@@ -158,7 +158,7 @@ _.Zones =
 						["races"] = { 22 },	-- Worgen
 					}),
 					q(14283, {	-- Moonfire
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 35873 },	-- Celestine of the Harvest
 						["sourceQuest"] = 14280,	-- The Winds Know Your Name... Apparently
 						["coord"] = { 70.18, 65.88, 202 },
@@ -327,7 +327,7 @@ _.Zones =
 						["sourceQuest"] = 14078,	-- Lockdown!
 					}),
 					q(14276, {	-- Steady Shot
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 35874 },	-- Huntsman Blake
 						["sourceQuest"] = 14275,	-- Someone's Keeping Track of You
 						["coord"] = { 71.50, 61.33, 202 },

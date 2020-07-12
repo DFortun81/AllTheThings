@@ -156,73 +156,73 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(46809, {	-- Delivering Lost Knowledge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 44.7, 63.2, 646 },
 					["classes"] = { DEATHKNIGHT },
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				}),
 				q(47069, {	-- Delivering Lost Knowledge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 44.7, 63.2, 646 },
 					["classes"] = { MONK },
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				}),
 				q(47070, {	-- Delivering Lost Knowledge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 44.7, 63.2, 646 },
 					["classes"] = { MAGE },
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				}),
 				q(47071, {	-- Delivering Lost Knowledge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 44.7, 63.2, 646 },
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				}),
 				q(47072, {	-- Delivering Lost Knowledge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 44.7, 63.2, 646 },
 					["classes"] = { WARRIOR },
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				}),
 				q(47073, {	-- Delivering Lost Knowledge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 44.7, 63.2, 646 },
 					["classes"] = { HUNTER },
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				}),
 				q(47074, {	-- Delivering Lost Knowledge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 44.7, 63.2, 646 },
 					["classes"] = { SHAMAN },
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				}),
 				q(47075, {	-- Delivering Lost Knowledge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 44.7, 63.2, 646 },
 					["classes"] = { DRUID },
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				}),
 				q(47076, {	-- Delivering Lost Knowledge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 44.7, 63.2, 646 },
 					["classes"] = { WARLOCK },
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				}),
 				q(47077, {	-- Delivering Lost Knowledge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 44.7, 63.2, 646 },
 					["classes"] = { PRIEST },
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				}),
 				q(47078, {	-- Delivering Lost Knowledge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 44.7, 63.2, 646 },
 					["classes"] = { DEMONHUNTER },
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 				}),
 				q(47079, {	-- Delivering Lost Knowledge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 44.7, 63.2, 646 },
 					["classes"] = { ROGUE },
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar

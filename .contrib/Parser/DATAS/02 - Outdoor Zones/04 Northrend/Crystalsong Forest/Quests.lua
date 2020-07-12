@@ -7,7 +7,7 @@ _.Zones =
 		m(127, {	-- Crystalsong Forest
 			n(QUESTS, {
 				q(39210, {	-- The Magical Kingdom of Dalaran
-					["u"] = 40, -- this version doesn't appear to exist anymore
+					["u"] = REMOVED_FROM_GAME, -- this version doesn't appear to exist anymore
 					["isBreadcrumb"] = true,
 				}),
 			}),

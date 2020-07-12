@@ -61,7 +61,7 @@ _.Zones =
 					},
 				}),
 				q(1667,  {	-- Dead-tooth Jack
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -126,7 +126,7 @@ _.Zones =
 					["sourceQuest"] = 40,	-- A Fishy Peril
 				}),
 				q(5624,  {	-- Garments of the Light
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { HUMAN },
 					["classes"] = { PRIEST },
 					["g"] = {
@@ -169,7 +169,7 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(14079, {	-- Learn to Ride in Elwynn Forest
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(85,    {	-- Lost Necklace
@@ -197,7 +197,7 @@ _.Zones =
 					["sourceQuest"] = 111,	-- Speak with Gramma
 				}),
 				q(7678,  {	-- Palomino Exchange
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 384 },	-- Katie Hunter
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -236,7 +236,7 @@ _.Zones =
 					["sourceQuest"] = 45,	-- Discover Rolf's Fate
 				}),
 				q(2158,  {	-- Rest and Relaxation
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6774 },	-- Falkhaan Isenstrider
 					["lvl"] = 4,
 					["coord"] = { 45.3, 49.0, 37 },
@@ -335,7 +335,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(7677,  {	-- White Stallion Exchange
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 384 },	-- Katie Hunter
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

@@ -830,7 +830,7 @@ _.Zones =
 					["provider"] = { "n", 122641 },	-- Yazma
 				}),
 				q(52139, {	-- To Matters at Hand
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["sourceQuests"] = { 46931 },	-- Speaker of the Horde
 					["isBreadcrumb"] = true,	-- for "We Need Each Other"
 					["coord"] = { 34.5, 41.5, 1163 },
@@ -1019,7 +1019,7 @@ _.Zones =
 					["provider"] = { "n", 134345 },	-- Collector Kojo
 				}),
 				q(54166, {	-- Set Sail
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["lvl"] = 110,
 					["isWeekly"] = true,
 					["races"] = HORDE_ONLY,

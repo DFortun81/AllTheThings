@@ -15,18 +15,18 @@ _.Instances = { tier(1, {	-- Classic
 				un(REMOVED_FROM_GAME, ach(2188)),	-- Leeeeeeeeeeeeeroy!
 				n(QUESTS, {
 					q(6602, {	-- Blood of the Black Dragon Champion
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(16309)),	-- Drakefire Amulet
 						},
 					}),
 					q(5164, {	-- Catalogue of the Wayward
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 10976 },	-- Jeziba
 					}),
 					q(4765, {	-- Delivery to Ridgewell
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(15860)),	-- Blinkstrike Armguards
@@ -34,14 +34,14 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					q(6502, {	-- Drakefire Amulet
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(16309)),	-- Drakefire Amulet
 						},
 					}),
 					q(4974, {	-- For The Horde!
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(13965)),	-- Blackhand's Breadth
@@ -50,7 +50,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					q(6102, {	-- General Drakkisath's Demise
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(13965)),	-- Blackhand's Breadth
@@ -59,7 +59,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					q(27445, { 	-- General Drakkisath, Hand of Nefarian
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(66001)), 	-- Aeyla's Staff
 							un(REMOVED_FROM_GAME, i(65934)), 	-- Staff of the Second Orb
@@ -68,53 +68,53 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					q(4866, {	-- Mother's Milk
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(15873)),	-- Ragged John's Neverending Cup
 						},
 					}),
 					q(4743, {	-- Seal of Ascension
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(12344)),	-- Seal of Ascension
 						},
 					}),
 					q(4768, {	-- The Darkstone Tablet
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(15860)),	-- Blinkstrike Armguards
 							un(REMOVED_FROM_GAME, i(15861)),	-- Swiftfoot Treads
 						},
 					}),
 					q(5160, {	-- The Matron Protectorate
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 10740 },	-- Awbee
 					}),
 					q(4907, {	-- Tinkee Steamboil
-						["u"] = 40,	-- Legacy Quest
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 10468 },	-- Felnok Steelspring
 						["isBreadcrumb"] = true,
 						["lvl"] = 57,
 						["sourceQuests"] = { 4810 },	-- Return to Tinkee
 					}),
 					q(4867, { 	-- Urok Doomhowl
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(15867)),	-- Prismcharm
 						},
 					}),
 					q(8996, {	-- Return to Bodley
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 16073 },	-- Spirit of Lord Valthalak
 						["lvl"] = 58,
 						["sourceQuest"] = 8995,	-- Mea Culpa, Lord Valthalak
 					}),
 					q(5161, {	-- Wrath of the Blue Flight (1/2)
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 10929 },	-- Haleh
 					}),
 					q(5162, {	-- Wrath of the Blue Flight (2/2)
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 10929 },	-- Haleh
 					}),
 				}),
@@ -215,7 +215,7 @@ _.Instances = { tier(1, {	-- Classic
 					un(7, i(13522)),	-- Recipe: Flask of Chromatic Resistance
 					un(REMOVED_FROM_GAME, i(12871, { 	-- Chromatic Carapace
 						q(5167, { 	-- Legplates of the Chromatic Defier
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["cost"] = {
 								{ "i", 12871, 1 },	-- Chromatic Carapace
 								{ "i", 12607, 10 },	-- Brilliant Chromatic Scale
@@ -228,7 +228,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(5166, { 	-- Breastplate of the Chromatic Flight
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["cost"] = {
 								{ "i", 12871, 1 },	-- Chromatic Carapace
 								{ "i", 12607, 10 },	-- Brilliant Chromatic Scale

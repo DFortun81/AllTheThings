@@ -274,7 +274,7 @@ _.Zones =
 						},
 					}),
 					q(25750, {	-- Curious Distraction (A)
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {	-- rewards were moved to another quest so they're still collectible
 							i(59697),	-- Keenstone Helm
@@ -283,7 +283,7 @@ _.Zones =
 						},
 					}),
 					q(25961, {	-- Curious Distraction (H)
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["g"] = {	-- rewards were moved to another quest so they're still collectible
 							i(59694),	-- Keenstone Helm

@@ -26,7 +26,7 @@ _.Zones =
 				}),
 				n(-176, { 	-- Weekly World Events
 					["provider"] = { "n", 111246 },	-- Archmage Timear
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						q(44164, {	-- A Burning Path Through Time
 							["isWeekly"] = true,	-- This is a Weekly Quest
@@ -279,7 +279,7 @@ _.Zones =
 					["classes"] = { WARRIOR, ROGUE, DEATHKNIGHT, SHAMAN, MAGE, DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 117871 },	-- War Councilor Victoria
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(40267, {	-- An Unexpected Message
 					["classes"] = { MAGE },
@@ -458,7 +458,7 @@ _.Zones =
 						{ "n", 90431 },	-- Archmage Ansirem Runeweaver
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
 					},
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(47024, {	-- Brewmaster: Aid of the Illidari
 					["sourceQuests"] = { 47030 },	-- Legion Threat: Dalaran Infiltration
@@ -468,7 +468,7 @@ _.Zones =
 						{ "n", 90431 },	-- Archmage Ansirem Runeweaver
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
 					},
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(40392, {	-- Call of the Marksman
 					["sourceQuests"] = { 41540 },	-- Rendezvous with the Courier
@@ -807,7 +807,7 @@ _.Zones =
 					["provider"] = { "n", 113686 },	-- Archmage Khadgar
 				}),
 				q(46744, {	-- Greater Power for Greater Threats
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["isBreadcrumb"] = true,
 					["providers"] = {
 						{ "n", 90417 },	-- Archmage Khadgar
@@ -822,7 +822,7 @@ _.Zones =
 						{ "n", 90431 },	-- Archmage Ansirem Runeweaver
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
 					},
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(47043, {	-- Havoc: The Thieving Apprentice
 					["sourceQuests"] = { 44821 },	-- In Dire Need
@@ -896,7 +896,7 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(44184, {	-- In the Blink of an Eye
-					["u"] = 40,	-- Changed to make the Tranquil Mind item Bop to stop abusing of class trials
+					["u"] = REMOVED_FROM_GAME,	-- Changed to make the Tranquil Mind item Bop to stop abusing of class trials
 					["g"] = {
 						i(143780),	-- Tome of the Tranquil Mind
 					},
@@ -920,7 +920,7 @@ _.Zones =
 					["classes"] = { PALADIN, PRIEST, SHAMAN, DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 90418 },	-- Archmage Modera
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(38907, {	-- Keepers of the Hammer
 					["sourceQuests"] = { 39733 },	-- The Lone Mountain
@@ -937,7 +937,7 @@ _.Zones =
 					["sourceQuests"] = { 45416 },	-- The Highlord's Return
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 90431 },	-- Archmage Ansirem Runeweaver
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(46074, {	-- Leather to Legendary
 					["sourceQuests"] = { 46083 },	-- A Few Things First
@@ -1009,7 +1009,7 @@ _.Zones =
 					["sourceQuests"] = { 45627 },	-- Feltotem's Fall
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(40384, {	-- Needs of the Hunters
 					["classes"] = { HUNTER },
@@ -1100,7 +1100,7 @@ _.Zones =
 						{ "n", 90431 },	-- Archmage Ansirem Runeweaver
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
 					},
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(45412, {	-- Protection: Aid of the Illidari (Warrior) -- this is still obtainable, confirmed in 8.3
 					["lvl"] = 110,
@@ -1122,7 +1122,7 @@ _.Zones =
 					["sourceQuests"] = { 46127 },	-- Thwarting the Twins
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 90463 },	-- Archmage Karlain
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(40823, {	-- Rebuilding the Council
 					["classes"] = { WARLOCK },
@@ -1386,7 +1386,7 @@ _.Zones =
 				q(45904, {	-- The God-Queen's Gift
 					["classes"] = { PALADIN, ROGUE, SHAMAN, MAGE, WARLOCK },
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(41112, {	-- The Great Akazamzarak
 					["sourceQuests"] = { 41125 },	-- Unlocked Potential
@@ -1406,10 +1406,10 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(47221, {	-- The Hand of Fate (A)
-					["u"] = 40,	-- Legacy Quests — old version that used to be automatically provided
+					["u"] = REMOVED_FROM_GAME, -- old version that used to be automatically provided
 				}),
 				q(47835, {	-- The Hand of Fate (H)
-					["u"] = 40,	-- Legacy Quests — old version that used to be automatically provided
+					["u"] = REMOVED_FROM_GAME, -- old version that used to be automatically provided
 				}),
 				q(40731, {	-- The Heart of the Dreadscar
 					["sourceQuests"] = {
@@ -1430,7 +1430,7 @@ _.Zones =
 					["classes"] = { WARRIOR, ROGUE, DEATHKNIGHT, SHAMAN, MAGE, DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 90418 },	-- Archmage Modera
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(37689, {	-- The Imposter
 					["provider"] = { "n", 111049 },	-- Master Mathias Shaw
@@ -1546,7 +1546,7 @@ _.Zones =
 					["provider"] = { "n", 98000 },	-- Scouting Map
 				}),
 				q(44174, {	-- The Very Best
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["isWeekly"] = true,
 					["provider"] = { "n", 111246 },	-- Archmage Timear
 				}),
@@ -1677,7 +1677,7 @@ _.Zones =
 					},
 				}),
 				q(41125, {	-- Unlocked Potential
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { MAGE },
 					["provider"] = { "n", 102700 },	-- Meryl Felstorm
 					["sourceQuests"] = { 41114 },	-- The Champion's Return
@@ -1743,7 +1743,7 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(46206, {	-- Whispers of a Frightened World
-					["u"] = 40,	-- Legacy Quests — version that used to be automatically given?
+					["u"] = REMOVED_FROM_GAME, -- version that used to be automatically given?
 				}),
 				q(47019, {	-- Windwalker: Rumblings Near Feltotem
 					["sourceQuests"] = {
@@ -1763,7 +1763,7 @@ _.Zones =
 				}),
 				q(45908, {	-- Xylem's Gift
 					["provider"] = { "n", 105081 },	-- Archmage Kalec
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 --[[
 				The following quests have been removed from the game:

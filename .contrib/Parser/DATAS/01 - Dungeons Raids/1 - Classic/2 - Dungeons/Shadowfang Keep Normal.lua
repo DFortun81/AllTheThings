@@ -287,21 +287,21 @@ _.Instances = { tier(1, {	-- Classic
 				["g"] = {
 					n(QUESTS, {
 						q(1014, {	-- Arugal Must Die
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(6414)),	-- Seal of Sylvanas
 							},
 						}),
 						q(1098, {	-- Deathstalkers in Shadowfang
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(3324)),	-- Ghostly Mantle
 							},
 						}),
 						q(1013, {	-- The Book of Ur
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(6335)),	-- Grizzled Boots
@@ -309,7 +309,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(1740, {	-- The Orb of Soran'ruk
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["classes"] = { WARLOCK },
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(6898)),	-- Orb of Soran'ruk
@@ -317,12 +317,12 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(1654, {	-- The Test of Righteousness
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["races"] = ALLIANCE_ONLY,
 							["classes"] = { PALADIN },
 							["g"] = {
 								q(1806, {	-- The Test of Righteousness
-									["u"] = 40,
+									["u"] = REMOVED_FROM_GAME,
 									["classes"] = { PALADIN },
 									["g"] = {
 										un(REMOVED_FROM_GAME, i(6953)),	-- Verigan's Fist

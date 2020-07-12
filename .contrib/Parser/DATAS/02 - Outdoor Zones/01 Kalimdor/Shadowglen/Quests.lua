@@ -14,7 +14,7 @@ _.Zones =
 						["isBreadcrumb"] = true,
 					}),
 					q(31168, {	-- Calligraphed Sigil
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 2077 },	-- Melithar Staghelm
 						["classes"] = { MONK },
 						["races"] = { NIGHTELF, WORGEN },
@@ -37,7 +37,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,	-- Crieve got this on his Human Warrior, was originally marked Night Elf only. (not true)
 					}),
 					q(3118,  {	-- Encrypted Sigil
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 2077 },	-- Melithar Staghelm
 						["races"] = { NIGHTELF },
 						["classes"] = { ROGUE },
@@ -49,7 +49,7 @@ _.Zones =
 						["sourceQuest"] = 28713,	-- The Balance of Nature
 					}),
 					q(3119,  {	-- Hallowed Sigil
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 2077 },	-- Melithar Staghelm
 						["races"] = { NIGHTELF },
 						["classes"] = { PRIEST },
@@ -61,7 +61,7 @@ _.Zones =
 						["sourceQuest"] = 28723,	-- Priestess of the Moon
 					}),
 					q(26949, {	-- Learning the Word
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 3595 },	-- Shanda
 						["races"] = { NIGHTELF },
 						["classes"] = { PRIEST },
@@ -88,7 +88,7 @@ _.Zones =
 						["sourceQuest"] = 28727,	-- Vile Touch
 					}),
 					q(3116,  {	-- Simple Sigil
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 2079 },	-- Ilthalaine
 						["classes"] = { WARRIOR },
 						["races"] = { NIGHTELF, WORGEN },

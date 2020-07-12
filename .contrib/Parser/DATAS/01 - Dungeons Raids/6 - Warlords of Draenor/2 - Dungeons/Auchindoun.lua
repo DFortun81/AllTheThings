@@ -447,7 +447,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109794),	-- Verdant Plate Treads
 						i(110005),	-- Crystalline Blood Drop
 						i(110010),	-- Mote of Corruption
-						un(40, i(114240)),	-- Corrupted Blood of Teron'gor
+						un(REMOVED_FROM_GAME, i(114240)),	-- Corrupted Blood of Teron'gor
 					})),
 				},
 			}),
@@ -658,7 +658,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109794),	-- Verdant Plate Treads
 						i(110005),	-- Crystalline Blood Drop
 						i(110010),	-- Mote of Corruption
-						un(40, i(114240)),	-- Corrupted Blood of Teron'gor
+						un(REMOVED_FROM_GAME, i(114240)),	-- Corrupted Blood of Teron'gor
 					})),
 				},
 			}),

@@ -16,7 +16,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["provider"] = { "n", 55007 },	-- Exarch Larethor
 				}),
 				q(11492, {	-- Hard to Kill
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 24848 },	-- Kalecgos
 					["sourceQuest"] = 11490,	-- The Scryer's Scryer
 				}),
@@ -33,7 +33,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["sourceQuest"] = 29684,	-- Severed Communications
 				}),
 				q(29683, {	-- The Scryer's Scryer
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(29687, {	-- Twisted Associations
 					["provider"] = { "n", 55007 },	-- Exarch Larethor

@@ -7,7 +7,7 @@ _.Zones =
 		m(80, {	-- Moonglade
 			n(QUESTS, {
 				q(5527,  {	-- A Reliquary of Purity
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11801 },	-- Rabine Saturna
 					["lvl"] = 56,
 				}),
@@ -16,7 +16,7 @@ _.Zones =
 				}),
 				q(5061,  {	-- Aquatic Form
 					["hordeQuestID"] = 31,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11802 },	-- Dendrite Starblaze
 					["classes"] = { DRUID },
 					["races"] = HORDE_ONLY,
@@ -35,7 +35,7 @@ _.Zones =
 					},
 				}),
 				q(40962, {	-- Dark Waters
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 102432 },	-- Malfurion Stormrage
 					["lvl"] = 100,
 					["sourceQuest"] = 40904,	-- Shadow of the Defiler
@@ -72,7 +72,7 @@ _.Zones =
 					["sourceQuest"] = 46924,	-- The Wolf's Tale
 				}),
 				q(5526,  {	-- Shards of the Felvine
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11801 },	-- Rabine Saturna
 					["lvl"] = 56,
 					["g"] = {
@@ -81,7 +81,7 @@ _.Zones =
 					},
 				}),
 				q(8446, {	-- Shrouded in Nightmare
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "i", 20644 },	-- Nightmare Engulfed Object
 				}),
 				q(45528, {	-- The Befouled Barrows
@@ -148,7 +148,7 @@ _.Zones =
 					["sourceQuest"] = 29302,	-- Unlocking the Secrets Within
 				}),
 				q(6845,  {	-- Uncovering Past Secrets
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11939 },	-- Umber
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(18402)),	-- Glowing Crystal Ring
@@ -156,7 +156,7 @@ _.Zones =
 					},
 				}),
 				q(1185,  {	-- Under the Chitin Was...
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11939 },	-- Umber
 					["sourceQuest"] = 6845,	-- Uncovering Past Secrets
 				}),
@@ -167,7 +167,7 @@ _.Zones =
 					["sourceQuest"] = 29298,	-- A Smoke-Stained Locket
 				}),
 				q(8447,  {	-- Waking Legends
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11832 },	-- Keeper Remulos
 					["lvl"] = 60,
 					["sourceQuest"] = 8446,	-- Shrouded in Nightmare
@@ -176,7 +176,7 @@ _.Zones =
 					},
 				}),
 				q(1124,  {	-- Wasteland
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11801 },	-- Rabine Saturna
 					["lvl"] = 56,
 					["sourceQuest"] = 1123,	-- Rabine Saturna

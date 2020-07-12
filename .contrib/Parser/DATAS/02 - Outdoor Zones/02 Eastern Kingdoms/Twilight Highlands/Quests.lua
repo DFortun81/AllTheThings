@@ -1684,7 +1684,7 @@ _.Zones =
 					["provider"] = { "n", 48046 },	-- Ella Forgehammer
 				}),
 				q(28236, {	-- The Lost Brother
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27812, {	-- The Loyalty of Clan Mullan
 					["sourceQuests"] = {

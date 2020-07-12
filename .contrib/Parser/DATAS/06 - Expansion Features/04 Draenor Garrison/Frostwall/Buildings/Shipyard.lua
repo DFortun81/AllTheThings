@@ -42,16 +42,16 @@ _.ExpansionFeatures =
 								["sourceQuest"] = 39675,	-- Equipping Our Fleet
 							}),
 							q(39057, {	-- Command of the Seas
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["provider"] = { "n", 92213 },	-- Archmage Khadgar
 							}),
 							q(39003, {	-- Cooking the Books
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["provider"] = { "n", 92213 },	-- Archmage Khadgar
 								["sourceQuest"] = 39000,	-- We Don't Need No Library Card
 							}),
 							q(39004, {	-- Darkness Incarnate
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["provider"] = { "n", 92213 },	-- Archmage Khadgar
 							}),
 							q(39401, {	-- Destroying the Competition
@@ -59,7 +59,7 @@ _.ExpansionFeatures =
 								["sourceQuest"] = 39243,	-- Naval Commander
 							}),
 							q(37840, {	-- Draenor's Blessing
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["provider"] = { "n", 92213 },	-- Archmage Khadgar
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(124634)),	-- Thorasus, the Stone Heart of Draenor
@@ -86,11 +86,11 @@ _.ExpansionFeatures =
 								["sourceQuest"] = 38259,	-- All Hands on Deck
 							}),
 							q(39697, {	-- Master vs. Commander
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["provider"] = { "n", 92213 },	-- Archmage Khadgar
 								["sourceQuest"] = 39057,	-- Command of the Seas
 								["g"] = {
-									 un(40, i(128693)),	-- Draenic Sea Chart
+									 un(REMOVED_FROM_GAME, i(128693)),	-- Draenic Sea Chart
 								},
 							}),
 							q(39243, {	-- Naval Commander
@@ -106,7 +106,7 @@ _.ExpansionFeatures =
 								["sourceQuest"] = 39236,	-- Let's Get To Work
 							}),
 							q(37841, {	-- The Final Assault
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["provider"] = { "n", 90233 },	-- Archmage Khadgar
 								["sourceQuest"] = 37837,	-- An Inside Job
 							}),
@@ -115,11 +115,11 @@ _.ExpansionFeatures =
 								["sourceQuest"] = 39242,	-- Ship Shape
 							}),
 							q(37835, {	-- The Shadow War
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["provider"] = { "n", 83823 },	-- Archmage Khadgar
 							}),
 							q(39000, {	-- We Don't Need No Library Card
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["provider"] = { "n", 92213 },	-- Archmage Khadgar
 								["sourceQuest"] = 39024,	-- Call of the Archmage
 							}),

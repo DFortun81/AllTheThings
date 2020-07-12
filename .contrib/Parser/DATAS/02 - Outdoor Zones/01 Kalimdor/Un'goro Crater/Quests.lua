@@ -7,12 +7,12 @@ _.Zones =
 		m(78, {	-- Un'Goro Crater
 			n(QUESTS, {
 				q(3941,  {	-- A Gnome's Assistance
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8737 },	-- Linken
 					["sourceQuest"] = 3914,	-- Linken's Sword
 				}),
 				q(4491,  {	-- A Little Help From My Friends
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9999 },	-- Ringo
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(11910)),	-- Bejeweled Legguards
@@ -50,7 +50,7 @@ _.Zones =
 					},
 				}),
 				q(3844,  {	-- A Wrecked Raft
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 161505 },	-- A Wrecked Raft
 				}),
 				q(24855, {	-- Aberrant Flora
@@ -69,7 +69,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(3883, {	-- Alien Ecology
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9271 },	-- Hol'anyee Marshal
 				}),
 				q(24866, {	-- An Abandoned Research Camp
@@ -81,7 +81,7 @@ _.Zones =
 					["coord"] = { 30.6, 51.1, 78 },
 				}),
 				q(4501,  {	-- Beware of Pterrordax
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 174682 },	-- Beware of Pterrordax
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(11919)),	-- Cragplate Greaves
@@ -99,7 +99,7 @@ _.Zones =
 					},
 				}),
 				q(4148, {	-- Bloodpetal Zapper
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 9118 },	-- Larion
 					["sourceQuest"] = 4146,	-- Zapper Fuel
@@ -115,16 +115,16 @@ _.Zones =
 					["sourceQuest"] = 24719,	-- Claws of White
 				}),
 				q(4243, {	-- Chasing A-Me 01
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9618 },	-- Karna Remtravel
 				}),
 				q(4244, {	-- Chasing A-Me 01
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9623 },	-- A-Me 01
 					["sourceQuest"] = 4243,	-- Chasing A-Me 01
 				}),
 				q(4245, {	-- Chasing A-Me 01
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9623 },	-- A-Me 01
 					["sourceQuest"] = 4244,	-- Chasing A-Me 01
 				}),
@@ -204,7 +204,7 @@ _.Zones =
 					},
 				}),
 				q(4284, {	-- Crystals of Power
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9117 },	-- J.D. Collie
 				}),
 				q(24720, {	-- Crystals of Power
@@ -212,7 +212,7 @@ _.Zones =
 					["coord"] = { 54.1, 62.5, 78 },
 				}),
 				q(5150,  {	-- Dadanga is Hungry!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9274 },	-- Dadanga
 					["repeatable"] = true,
 					["g"] = {
@@ -230,7 +230,7 @@ _.Zones =
 					["sourceQuest"] = 24703,	-- An Important Lesson
 				}),
 				q(3881, {	-- Expedition Salvation
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9270 },	-- Williden Marshal
 				}),
 				q(24695, {	-- Ever Watching From Above
@@ -249,7 +249,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(974,   {	-- Finding the Source
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10302 },	-- Krakle
 				}),
 				q(24742, {	-- Finding the Source
@@ -305,17 +305,17 @@ _.Zones =
 					["provider"] = { "o", 161526 },	-- Crate of Foodstuffs
 				}),
 				q(3845,  {	-- It's a Secret to Everybody
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 161504 },	-- A Small Pack
 					["sourceQuest"] = 3844,	-- It's a Secret to Everybody
 				}),
 				q(3908,  {	-- It's a Secret to Everybody
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8737 },	-- Linken
 					["sourceQuest"] = 3845,	-- It's a Secret to Everybody
 				}),
 				q(3962,  {	-- It's Dangerous to Go Alone
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8737 },	-- Linken
 					["sourceQuest"] = 3961,	-- Linken's Adventure -- todo: Add this quest line. Maybe blizzard will bring it back!
 					["g"] = {
@@ -325,17 +325,17 @@ _.Zones =
 					},
 				}),
 				q(4145, {	-- Larion and Muigin
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 9118 },	-- Larion
 				}),
 				q(3961,  {	-- Linken's Adventure
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9117 },	-- J.D. Collie
 					["sourceQuest"] = 4005,	-- Aquementas
 				}),
 				q(3942,  {	-- Linken's Memory
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9117 },	-- J.D. Collie
 					["sourceQuest"] = 3941,	-- A Gnome's Assistance
 				}),
@@ -345,13 +345,13 @@ _.Zones =
 					["sourceQuest"] = 24794,	-- Speak with Spraggle
 				}),
 				q(4492,  {	-- Lost!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9997 },	-- Spraggle Frock
 				--	["coord"] = { 54.9, 62.6, 78 },
 				--	["sourceQuest"] = 24794,	-- Speak with Spraggle
 				}),
 				q(4321, {	-- Making Sense of It
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9117 },	-- J.D. Collie
 					["sourceQuests"] = {
 						4287,	-- The Eastern Pylon
@@ -370,7 +370,7 @@ _.Zones =
 					},
 				}),
 				q(4147, {	-- Marvon's Workshop
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 9118 },	-- Larion
 					["sourceQuest"] = 4145,	-- Larion and Muigin
@@ -397,7 +397,7 @@ _.Zones =
 					["sourceQuest"] = 24714,	-- Chasing A-Me 01
 				}),
 				q(24716, {	-- Returning A-Me 01
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(45051, {	-- Reverse Blacksmithing
 					["provider"] = { "n", 115923 },	-- Ko'Zan
@@ -407,7 +407,7 @@ _.Zones =
 					["requireSkill"] = BLACKSMITHING,
 				}),
 				q(3882,  {	-- Roll the Bones
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9272 },	-- Spark Nilminer
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(11908)),	-- Archaeologist's Quarry Boots
@@ -448,7 +448,7 @@ _.Zones =
 					},
 				}),
 				q(4503,  {	-- Shizzle's Flyer
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9998 },	-- Shizzle
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(11915)),	-- Shizzle's Drizzle Blocker
@@ -479,7 +479,7 @@ _.Zones =
 					["sourceQuest"] = 24693,	-- Mossy Pile
 				}),
 				q(4289, {	-- The Apes of Un'Goro
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
 				}),
 				q(24717, {	-- The Apes of Un'Goro
@@ -488,7 +488,7 @@ _.Zones =
 					["sourceQuest"] = 24701,	-- Marshal's Refuse
 				}),
 				q(4292,  {	-- The Bait for Lar'korwi
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
 					["sourceQuest"] = 4291,	-- The Scent of Lar'korwi
 					["g"] = {
@@ -525,7 +525,7 @@ _.Zones =
 					["sourceQuest"] = 24695,	-- Ever Watching From Above
 				}),
 				q(4287, {	-- The Eastern Pylon
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9117 },	-- J.D. Collie
 					["sourceQuest"] = 4284,	-- Crystals of Power
 				}),
@@ -543,7 +543,7 @@ _.Zones =
 					["sourceQuest"] = 24703,	-- An Important Lesson
 				}),
 				q(4290, {	-- The Fare of Lar'korwi
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
 				}),
 				q(24731, {	-- The Fare of Lar'korwi
@@ -566,7 +566,7 @@ _.Zones =
 					["sourceQuest"] = 24730,	-- Roll the Bones
 				}),
 				q(4301,  {	-- The Mighty U'cha
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
 					["sourceQuest"] = 4289,	-- The Apes of Un'Goro
 					["g"] = {
@@ -584,12 +584,12 @@ _.Zones =
 					},
 				}),
 				q(980,   {	-- The New Springs
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10302 },	-- Krakle
 					["sourceQuest"] = 974,	-- Finding the Source
 				}),
 				q(4285, {	-- The Northern Pylon
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9117 },	-- J.D. Collie
 					["sourceQuest"] = 4284,	-- Crystals of Power
 				}),
@@ -599,7 +599,7 @@ _.Zones =
 					["sourceQuest"] = 24717,	-- The Apes of Un'Goro
 				}),
 				q(4291, {	-- The Scent of Lar'korwi
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
 					["sourceQuest"] = 4290,	-- The Fare of Lar'korwi
 				}),
@@ -628,7 +628,7 @@ _.Zones =
 					},
 				}),
 				q(4288, {	-- The Western Pylon
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9117 },	-- J.D. Collie
 					["sourceQuest"] = 4284,	-- Crystals of Power
 				}),
@@ -666,7 +666,7 @@ _.Zones =
 					},
 				}),
 				q(3884,  {	-- Williden's Journal
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "i", 11116 },	-- A Mangled Journal
 				}),
 				q(24688, {	-- Zen'Aliri

@@ -17,25 +17,25 @@ _.Zones =
 					},
 				}),
 				q(530,   {	-- A Husband's Revenge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3235)),	-- Ring of Scorn
 					},
 				}),
 				q(447,   {	-- A Recipe for Death
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1937 },	-- Apothecary Renferrel
 				}),
 				q(450,   {	-- A Recipe for Death
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2055 },	-- Master Apothecary Farenell
 					["sourceQuest"] = 447,	-- A Recipe for Death
 				}),
 				q(451,   { 	-- A Recipe for Death
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1937 },	-- Apothecary Renferrel
 					["sourceQuest"] = 450,	-- A Recipe for Death
@@ -63,31 +63,31 @@ _.Zones =
 					["sourceQuests"] = { 26965 },	-- The Warchief Cometh
 				}),
 				q(479,   {	-- Ambermill Investigations
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2121 },	-- Shadow Priest Allister
 					["sourceQuest"] = 482,	-- Dalaran's Intentions
 				}),
 				q(422,   {	-- Arugal's Folly
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
 					["sourceQuest"] = 421,	-- Prove Your Worth
 				}),
 				q(423,   {	-- Arugal's Folly
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
 					["sourceQuest"] = 422,	-- Arugal's Folly
 				}),
 				q(424,   {	-- Arugal's Folly
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
 					["sourceQuest"] = 423,	-- Arugal's Folly
 				}),
 				q(99,    { 	-- Arugal's Folly
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
 					["sourceQuest"] = 424,	-- Arugal's Folly
@@ -98,7 +98,7 @@ _.Zones =
 					},
 				}),
 				q(442,   { 	-- Assault on Fenris Isle
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3461)),	-- High Robe of the Adjudicator
@@ -112,14 +112,14 @@ _.Zones =
 					["sourceQuests"] = { 27045 },	-- Waiting to Exsanguinate
 				}),
 				q(516,   { 	-- Beren's Peril
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(5252)),	-- Wand of Decay
 					},
 				}),
 				q(477,   {	-- Border Crossings
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2121 },	-- Shadow Priest Allister
 				}),
@@ -157,13 +157,13 @@ _.Zones =
 					},
 				}),
 				q(481,   {	-- Dalar's Analysis
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2121 },	-- Shadow Priest Allister
 					["sourceQuest"] = 478,	-- Maps and Runes
 				}),
 				q(482,   {	-- Dalaran's Intentions
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
 					["sourceQuest"] = 481,	-- Dalar's Analysis
@@ -193,7 +193,7 @@ _.Zones =
 					["sourceQuests"] = { 27601 },	-- Cities in Dust
 				}),
 				q(435,   {	-- Escorting Erland
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1978 },	-- Deathstalker Erland
 				}),
@@ -282,13 +282,13 @@ _.Zones =
 					},
 				}),
 				q(425,   {	-- Ivar the Foul
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1950 },	-- Rane Yorick
 					["sourceQuest"] = 430,	-- Return to Quinn
 				}),
 				q(493,   {	-- Journey to Hillsbrad Foothills
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1937 },	-- Apothecary Renferrel
 				}),
@@ -305,7 +305,7 @@ _.Zones =
 					["sourceQuests"] = { 27099 },	-- No Escape
 				}),
 				q(428,   {	-- Lost Deathstalkers
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1952 },	-- High Executor Hadrec
 				}),
@@ -319,7 +319,7 @@ _.Zones =
 					},
 				}),
 				q(478,   {	-- Map and Runes
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 1627 },	-- Dalaran Crate
 					["sourceQuest"] = 477,	-- Border Crossings
@@ -403,12 +403,12 @@ _.Zones =
 					},
 				}),
 				q(421,   {	-- Prove Your Worth
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
 				}),
 				q(452,   { 	-- Pyrewood Ambush
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3450)),	-- Faerleia's Shield
@@ -441,13 +441,13 @@ _.Zones =
 					},
 				}),
 				q(448,   {	-- Report to Hadrec
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1937 },	-- Apothecary Renferrel
 					["sourceQuest"] = 446,	-- Thule Ravenclaw
 				}),
 				q(460,   {	-- Resting in Pieces
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 3317 },	-- A Talking Head
 					["crs"] = {
@@ -459,7 +459,7 @@ _.Zones =
 					},
 				}),
 				q(430,   {	-- Return to Quinn
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1937 },	-- Apothecary Renferrel
 					["sourceQuest"] = 429,	-- Wild Hearts
@@ -477,19 +477,19 @@ _.Zones =
 					["sourceQuests"] = { 27438 },	-- The Great Escape
 				}),
 				q(439,   {	-- Rot Hide Clues
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 1593 },	-- Corpse Laden Boat
 					["sourceQuest"] = 438,	-- The Decrepit Ferry
 				}),
 				q(443,   {	-- Rot Hide Ichor
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1952 },	-- High Executor Hadrec
 					["sourceQuest"] = 439,	-- Rot Hide Clues
 				}),
 				q(444,   {	-- Rot Hide Origins
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1937 },	-- Apothecary Renferrel
 					["sourceQuest"] = 443,	-- Rot Hide Ichor
@@ -520,7 +520,7 @@ _.Zones =
 					},
 				}),
 				q(3221, {	-- Speak with Renferrel
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1952 },	-- High Executor Hadrec
 					["sourceQuest"] = 449,	-- The Deathstalkers' Report
@@ -544,24 +544,24 @@ _.Zones =
 					["sourceQuests"] = { 27518 },	-- Transdimensional Warfare: Chapter III
 				}),
 				q(437,   {	-- The Dead Fields
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1952 },	-- High Executor Hadrec
 				}),
 				q(449,   {	-- The Deathstalkers' Report
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1950 },	-- Rane Yorick
 					["sourceQuest"] = 435,	-- Escorting Erland
 				}),
 				q(438,   {	-- The Decrepit Ferry
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1952 },	-- High Executor Hadrec
 					["sourceQuest"] = 437,	-- The Dead Fields
 				}),
 				q(440,   {	-- The Engraved Ring
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1952 },	-- High Executor Hadrec
 				}),
@@ -577,7 +577,7 @@ _.Zones =
 					},
 				}),
 				q(461,   {	-- The Hidden Niche
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 1599 },	-- Shallow Grave
 					["sourceQuest"] = 460,	-- Resting in Pieces
@@ -606,7 +606,7 @@ _.Zones =
 					},
 				}),
 				q(480,   { 	-- The Weaver
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3585)),	-- Camouflaged Tunic
@@ -624,7 +624,7 @@ _.Zones =
 					},
 				}),
 				q(9601, {	-- To The Bulwark
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
 					["classes"] = { 2 },	-- Paladin
 					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
@@ -674,7 +674,7 @@ _.Zones =
 					},
 				}),
 				q(491,   { 	-- Wand to Bethor
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3581)),	-- Serrated Knife
@@ -695,7 +695,7 @@ _.Zones =
 					},
 				}),
 				q(429,   {	-- Wild Hearts
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1950 },	-- Rane Yorick
 					["sourceQuest"] = 428,	-- Lost Deathstalkers
@@ -704,7 +704,7 @@ _.Zones =
 					},
 				}),
 				q(1359,  {	-- Zinge's Delivery
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1937 },	-- Apothecary Renferrel
 					["sourceQuest"] = 3221,	-- Speak with Renferrel

@@ -7,12 +7,12 @@ _.Zones =
 		m(1, {	-- Durotar
 			n(QUESTS, {
 				q(2161, {	-- A Peon's Budren
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 6786 },	-- Ukor
 				}),
 				q(818,   {	-- A Solvent Spirit
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3304 },	-- Master Vornal
 				}),
@@ -29,7 +29,7 @@ _.Zones =
 					["sourceQuest"] = 25262,	-- Skull Rock
 				}),
 				q(32872, {	-- Battlefield: Barrens Ally
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
 					["g"] = {
@@ -37,7 +37,7 @@ _.Zones =
 					},
 				}),
 				q(32862, {	-- Battlefield: Barrens Horde
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
 					["g"] = {
@@ -56,7 +56,7 @@ _.Zones =
 					},
 				}),
 				q(815,   {	-- Break a Few Eggs
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3191 },	-- Cook Torka
 				}),
@@ -76,13 +76,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7129)),	-- Brutal Gauntlets
 					},
 				}),
 				q(832, {	-- Burning Shadows
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(25924, {	-- Call of Duty
 					["provider"] = { "n", 41621 },	-- Commander Thorak
@@ -94,7 +94,7 @@ _.Zones =
 					},
 				}),
 				q(791,   {	-- Carry Your Weight
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3147 },	-- Furl Scornbrow
 				}),
@@ -111,16 +111,16 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(806,   {	-- Dark Storms
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3142 },	-- Orgnil Soulscar
 					["sourceQuest"] = 823,	-- Report to Orgnil
 				}),
 				q(25444, {	-- Da Perfect Spies
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(25480, {	-- Dance Of De Spirits
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 25470,	-- Lady Of Da Tigers
 				}),
 				q(40607, {	-- Demons Among Us
@@ -155,7 +155,7 @@ _.Zones =
 					["sourceQuests"] = { 40522 },	-- Fate of the Horde
 				}),
 				q(837,   {	-- Encroachment
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3139 },	-- Gar'Thok
 				}),
@@ -184,7 +184,7 @@ _.Zones =
 					},
 				}),
 				q(25446, {	-- Frogs Away!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 25444,	-- Da Perfect Spies
 				}),
 				q(25173, {	-- From Bad to Worse
@@ -195,13 +195,13 @@ _.Zones =
 					["sourceQuest"] = 25171,	-- Riding On
 				}),
 				q(825,   {	-- From The Wreckage...
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3139 },	-- Gar'Thok
 					["sourceQuest"] = 784,	-- Vanquish the Betrayers
 				}),
 				q(5648,  {	-- Garments of Spirituality
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3706 },	-- Tai'jin
 					["races"] = { TROLL },
 					["classes"] = { PRIEST },
@@ -253,7 +253,7 @@ _.Zones =
 				}),
 				q(1884, {	-- Ju-Ju Heaps
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { MAGE },
 					["g"] = {
 						i(9513),	-- Ley Staff
@@ -270,7 +270,7 @@ _.Zones =
 					},
 				}),
 				q(25470, {	-- Lady Of Da Tigers
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 25446,	-- Frogs Away!
 				}),
 				q(32671, {	-- Learn To Ride
@@ -281,7 +281,7 @@ _.Zones =
 					["DisablePartySync"] = true,
 				}),
 				q(14088, {	-- Learn to Ride in Durotar
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 46883 },	-- Riding Trainer Pamphlet
 				}),
@@ -292,7 +292,7 @@ _.Zones =
 					["description"] = "Talk to an Injured Razor Hill Grunt on the beach.",
 				}),
 				q(816,   {	-- Lost But Not Forgotten
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3193 },	-- Misha Tor'kren
 				}),
@@ -316,7 +316,7 @@ _.Zones =
 					["sourceQuests"] = { 38307 },	-- The Warchief Beckons
 				}),
 				q(828,   {	-- Margoz
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3142 },	-- Orgnil Soulscar
 					["sourceQuest"] = 806,	-- Dark Storms
@@ -351,17 +351,17 @@ _.Zones =
 					},
 				}),
 				q(808,   {	-- Minshina's Skull
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3188 },	-- Master Gadrin
 				}),
 				q(812,   {	-- Need for a Cure
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3190 },	-- Rhinag
 				}),
 				q(829,   {	-- Neeru Fireblade
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3208 },	-- Margoz
 					["sourceQuest"] = 827,	-- Skull Rock
@@ -373,12 +373,12 @@ _.Zones =
 					["sourceQuest"] = 25170,	-- Cleaning up the Coastline
 				}),
 				q(817,   {	-- Practical Prey
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3194 },	-- Vel'rin Fang
 				}),
 				q(25495, {	-- Preparin' For Battle
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 25461,	-- Trollin' For Volunteers
 				}),
 				q(25168, {	-- Purge the Valley
@@ -400,7 +400,7 @@ _.Zones =
 					["sourceQuest"] = 25187,	-- Lost in the Floods
 				}),
 				q(823,   {	-- Report to Orgnil
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3188 },	-- Master Gadrin
 				}),
@@ -439,7 +439,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(40982, {	-- Second Sight
 					["coord"] = { 45.8, 15.1, 1 },
@@ -469,7 +469,7 @@ _.Zones =
 					},
 				}),
 				q(827,   {	-- Skull Rock
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3208 },	-- Margoz
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -492,7 +492,7 @@ _.Zones =
 				}),
 				q(1883, {	-- Speak with Un'thuwa
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { MAGE },
 				}),
 				q(25177, {	-- Storming the Beaches
@@ -502,7 +502,7 @@ _.Zones =
 					["sourceQuest"] = 25173,	-- From Bad to Worse
 				}),
 				q(2937, {	-- Summoning Shadra
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3188 },	-- Master Gadrin
 					["sourceQuest"] = 2936,	-- The Spider God
@@ -516,12 +516,12 @@ _.Zones =
 				q(830, {	-- The Admiral's Orders
 					["provider"] = { "i", 4881 },	-- A Letter to Yvette
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(831, {	-- The Admiral's Orders
 					["provider"] = { "n", 3139 },	-- A Letter to Yvette
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(40518, {	-- The Battle for Broken Shore
 					["provider"] = { "n", 113547 },	-- Stone Guard Mukar
@@ -551,7 +551,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(924,   {	-- The Demon Seed
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3521 },	-- Ak'Zeloth
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -569,7 +569,7 @@ _.Zones =
 					["classes"] = { DEATHKNIGHT },
 				}),
 				q(2936, {	-- The Spider God
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3188 },	-- Master Gadrin
 					["sourceQuest"] = 2935,	-- Consult Master Gadrin
@@ -616,7 +616,7 @@ _.Zones =
 					["sourceQuest"] = 25196,	-- The Dranosh'ar Blockade
 				}),
 				q(786,   {	-- Thwarting Kolkar Aggression
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3140 },	-- Lar Prowltusk
 					["sourceQuest"] = 785,	-- A Strategic Alliance
@@ -632,7 +632,7 @@ _.Zones =
 					},
 				}),
 				q(25461, {	-- Trollin' For Volunteers
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 25480,	-- Dance Of De Spirits
 				}),
 				q(47867, {	-- Two If By Sea
@@ -651,7 +651,7 @@ _.Zones =
 					["sourceQuest"] = 25187,	-- Lost in the Floods
 				}),
 				q(784,   {	-- Vanquish the Betrayers
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3139 },	-- Gar'Thok
 				}),
@@ -675,12 +675,12 @@ _.Zones =
 					["coord"] = { 46.3, 22.8, 1 },
 				}),
 				q(826,   {	-- Zalazane
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3188 },	-- Master Gadrin
 				}),
 				q(25445, {	-- Zalazane's Fall
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 25495,	-- Preparin' For Battle
 				}),
 			}),

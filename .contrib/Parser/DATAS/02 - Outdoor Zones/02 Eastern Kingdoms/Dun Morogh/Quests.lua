@@ -7,7 +7,7 @@ _.Zones =
 		m(27, {	-- Dun Morogh
 			n(QUESTS, {
 				q(319,   {	-- A Favor for Evershine
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1374 },	-- Rejold Barleybrew
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -34,7 +34,7 @@ _.Zones =
 					},
 				}),
 				q(417,   {	-- A Pilot's Revenge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(1009)),	-- Compact Hammer
@@ -50,7 +50,7 @@ _.Zones =
 					},
 				}),	
 				q(7674,  {	-- Black Ram Exchange
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1261 },	-- Veron Amberstill
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -93,7 +93,7 @@ _.Zones =
 				}),
 				q(308,   {	-- Distracting Jarven
 					["repeatable"] = true,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1373 },	-- Jarven Thunderbrew
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -110,7 +110,7 @@ _.Zones =
 					["sourceQuest"] = 25986,	-- Trouble at the Lake
 				}),
 				q(318,   {	-- Evershine
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1378 },	-- Pilot Bellowfiz
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -127,12 +127,12 @@ _.Zones =
 					["sourceQuest"] = 25724,	-- Frostmane Aggression
 				}),
 				q(7673,  { -- Frost Ram Exchange
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1261 },	-- Veron Amberstill
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7673,  {	-- Frost Ram Exchange
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1261 },	-- Veron Amberstill
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -143,7 +143,7 @@ _.Zones =
 					["sourceQuest"] = 26373,	-- On to Kharanos
 				}),
 				q(5625,  {	-- Garments of the Light
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 3 },	-- Dwarf
 					["classes"] = { 5 },	-- Priest
 					["g"] = {
@@ -172,7 +172,7 @@ _.Zones =
 				}),
 				q(403,   {	-- Guarded Thunderbrew Barrel
 					["repeatable"] = true,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(25933, {	-- Help for the Quarry
 					["provider"] = { "n", 41578 },	-- Sergeant Flinterhammer
@@ -201,7 +201,7 @@ _.Zones =
 					},
 				}),
 				q(4126,  {	-- Hurley Blackbreath
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12000)),	-- Limb Cleaver
@@ -227,11 +227,11 @@ _.Zones =
 					["DisablePartySync"] = true,
 				}),
 				q(14084, {	-- Learn to Ride in Dun Morogh
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 7 },	-- gnome
 				}),
 				q(14083, {	-- Learn to Ride in Dun Morogh
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 3 },	-- dwarf
 				}),
 				q(412,   {	-- Operation Recombobulation
@@ -310,7 +310,7 @@ _.Zones =
 					["sourceQuest"] = 25932,	-- It's Raid Night Every Night
 				}),
 				q(320,   {	-- Return to Bellowfiz
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1374 },	-- Rejold Barleybrew
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -319,7 +319,7 @@ _.Zones =
 					["u"] = 43,
 					["g"] = {
 						q(311, {	-- Return to Marleth
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["races"] = ALLIANCE_ONLY,
 						}),
 					},
@@ -334,14 +334,14 @@ _.Zones =
 					},
 				}),
 				q(466,   {	-- Search for Incendicite
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3565)),	-- Beerstained Gloves
 					},
 				}),
 				q(317,   {	-- Stocking Jetsteam
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1378 },	-- Pilot Bellowfiz
 					["races"] = { 3, 7 },	-- Dwarf, Gnome
 				}),
@@ -363,7 +363,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24528, {	-- The Power of the Light
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 926 },	-- Bromos Grummner
 					["races"] = { 3 },	-- Dwarf
 					["classes"] = { 2 },	-- Paladin
@@ -381,7 +381,7 @@ _.Zones =
 					},
 				}),	
 				q(291,   {	-- The Reports
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1252 },	-- Senir Whitebeard
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -403,7 +403,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(400,   {	-- Tools for Steelgrill
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1872 },	-- Tharek Blackstone
 					["races"] = ALLIANCE_ONLY,
 				}),

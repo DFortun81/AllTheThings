@@ -250,7 +250,7 @@ _.Zones =
 							},
 						}),
 						q(57274, {	-- Quartermaster's Bounty
-							["u"] = 40,	-- Replaced with a new quest in Season 4
+							["u"] = REMOVED_FROM_GAME,	-- Replaced with a new quest in Season 4
 							["provider"] = { "n", 143555 },	-- Xander Silberman
 							["isWeekly"] = true,
 							["coord"] = { 51.6, 58.2, 875 },

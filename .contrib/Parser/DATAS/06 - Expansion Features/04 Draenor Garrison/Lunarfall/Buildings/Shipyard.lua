@@ -51,16 +51,16 @@ _.ExpansionFeatures =
 								}),
 							}),
 							q(39057, {	-- Command of the Seas
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["provider"] = { "n", 92213 },	-- Archmage Khadgar
 							}),
 							q(39003, {	-- Cooking the Books
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["provider"] = { "n", 92213 },	-- Archmage Khadgar
 								["sourceQuest"] = 39000,	-- We Don't Need No Library Card
 							}),
 							q(39004, {	-- Darkness Incarnate
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["provider"] = { "n", 92213 },	-- Archmage Khadgar
 							}),
 							q(39404, {	-- Destroying the Competition
@@ -94,7 +94,7 @@ _.ExpansionFeatures =
 								["sourceQuest"] = 38259,	-- All Hands on Deck
 							}),
 							q(37839, {	-- Light Be With You
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["provider"] = { "n", 92213 },	-- Archmage Khadgar
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
@@ -106,11 +106,11 @@ _.ExpansionFeatures =
 								},
 							}),
 							q(39697, {	-- Master vs. Commander
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["provider"] = { "n", 92213 },	-- Archmage Khadgar
 								["sourceQuest"] = 39057,	-- Command of the Seas
 								["g"] = {
-									 un(40, i(128693)),	-- Draenic Sea Chart
+									 un(REMOVED_FROM_GAME, i(128693)),	-- Draenic Sea Chart
 								},
 							}),
 							q(39056, {	-- Naval Commander
@@ -138,7 +138,7 @@ _.ExpansionFeatures =
 								["sourceQuest"] = 39054,	-- Shipbuilding
 							}),
 							q(37841, {	-- The Final Assault
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["provider"] = { "n", 90233 },	-- Archmage Khadgar
 								["sourceQuest"] = 37837,	-- An Inside Job
 							}),
@@ -149,7 +149,7 @@ _.ExpansionFeatures =
 								["sourceQuest"] = 39055,	-- Ship Shape
 							}),
 							q(37835, {	-- The Shadow War
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["provider"] = { "n", 83823 },	-- Archmage Khadgar
 							}),
 							q(39067, {	-- Upgrading The Fleet
@@ -159,7 +159,7 @@ _.ExpansionFeatures =
 								["sourceQuest"] = 39665,	-- A True Naval Commander
 							}),
 							q(39000, {	-- We Don't Need No Library Card
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["provider"] = { "n", 92213 },	-- Archmage Khadgar
 								["sourceQuest"] = 39024,	-- Call of the Archmage
 							}),

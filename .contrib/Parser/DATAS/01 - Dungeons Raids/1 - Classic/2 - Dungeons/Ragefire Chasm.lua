@@ -18,7 +18,7 @@ _.Instances = { tier(1, {	-- Classic
 					["races"] = HORDE_ONLY,
 				}),
 				q(26862, {	-- Elemental Tampering
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 44216 },	-- Bovaal Whitehorn
 					["races"] = HORDE_ONLY,
 				}),
@@ -31,12 +31,12 @@ _.Instances = { tier(1, {	-- Classic
 					["races"] = HORDE_ONLY,
 				}),
 				q(26856, {	-- Repel the Invasion
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 44217 },	-- Stone Guard Kurjack
 					["races"] = HORDE_ONLY,
 				}),
 				q(5724, {	-- Returning the Lost Satchel
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15452)),	-- Featherbead Bracers
@@ -44,10 +44,10 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(26859, {	-- Searching for the Lost Satchel
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26858, {	-- Taragaman the Hungerer
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 44217 },	-- Stone Guard Kurjack
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {

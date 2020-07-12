@@ -26,7 +26,7 @@ _.Zones =
 					["provider"] = { "n", 44082 },	-- Bronwyn Hewstrike
 				}),
 				q(617,   {	-- Akiris by the Bundle
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4117)),	-- Scorching Sash
 					},
@@ -177,7 +177,7 @@ _.Zones =
 					["sourceQuest"] = 26493,	-- There's Somebody Out There Who Wants It
 				}),
 				q(613,   {	-- Cracking Maury's Foot
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4129)),	-- Collection Plate
@@ -243,21 +243,21 @@ _.Zones =
 					["sourceQuest"] = 26550,	-- Backdoor Dealings
 				}),
 				q(628,   {	-- Excelsior
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4109)),	-- Excelsior Boots
 					},
 				}),
 				q(618,   {	-- Facing Negolash
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(4130),	-- Smotts' Compass NOTE: Now rewarded from quest 26602 A Dish Best Served Cold
 					},
 				}),
 				q(8554,  {	-- Facing Negolash
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4130),	-- Smotts' Compass NOTE: Now rewarded from quest 26602 A Dish Best Served Cold
@@ -270,7 +270,7 @@ _.Zones =
 					["requireSkill"] = ENGINEERING,
 				}),
 				q(26839, {	-- Get Away From It All!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26624, {	-- Getting In With the Bloodsail
 					["sourceQuests"] = { 26612 },	-- Details of the Attack
@@ -304,7 +304,7 @@ _.Zones =
 					["coord"] = { 46.2, 28.1, 210 },
 				}),
 				q(213,   {	-- Hostile Takeover
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4121)),	-- Gemmed Gloves
 					},
@@ -349,7 +349,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(576,   {	-- Keep An Eye Out
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(4114),	-- Darktide Cape NOTE: Awarded from new version of quest 26614
@@ -417,7 +417,7 @@ _.Zones =
 					["provider"] = { "n", 44083 },	-- Linzi Hewstrike
 				}),
 				q(630,   {	-- Message in a Bottle
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4118)),	-- Poobah's Nose Ring
 					},
@@ -449,7 +449,7 @@ _.Zones =
 					},
 				}),
 				q(573,   {	-- Mok'thardin's Enchantment
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4112)),	-- Choker of the High Shaman
@@ -586,7 +586,7 @@ _.Zones =
 					["provider"] = { "o", 204450 },	-- Captain Stillwater's Charts
 				}),
 				q(348,   {	-- Stranglethorn Fever
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4113)),	-- Medicine Blanket
 					},
@@ -637,7 +637,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(608,   {	-- The Bloodsail Buccaneers
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME,  i(4138)),	-- Blackwater Tunic
 					},
@@ -673,14 +673,14 @@ _.Zones =
 					["lvl"] = 35,
 				}),
 				q(614,   {	-- The Captain's Chest (A)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11469),	-- Bloodband Bracers NOTE: Awarded from new version of quest 26599
 					},
 				}),
 				q(8551,  {	-- The Captain's Chest (H)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(11469),	-- Bloodband Bracers NOTE: Awarded from new version of quest 26599
@@ -699,10 +699,10 @@ _.Zones =
 					["sourceQuests"] = 1040,	-- The Passage to Booty Bay
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(611,   {	-- The Curse of the Tides
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4120)),	-- Robe of Crystal Waters
@@ -722,7 +722,7 @@ _.Zones =
 					["provider"] = { "n", 2546 }, -- Fleet Master Firallon
 				}),
 				q(26837, {	-- The Explorers' League Digsite
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26697, {	-- The Final Voyage of the Brashtide
 					["sourceQuests"] = { 26695 },	-- Prepare for Takeoff
@@ -757,7 +757,7 @@ _.Zones =
 					["provider"] = { "n", 1449 },	-- Witch Doctor Unbagwa
 				}),
 				q(2760,  {	-- The Mithril Order
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7794 },	-- McGavan
 					["coord"] = { 43.8, 70.7, 210 },
 					["requireSkill"] = BLACKSMITHING,
@@ -819,7 +819,7 @@ _.Zones =
 					["provider"] = { "n", 2488 },	-- Deeg
 				}),
 				q(600,   {	-- Venture Company Mining
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(5253)),	-- Goblin Igniter
 						un(REMOVED_FROM_GAME, i(4128)),	-- Silver Spade
@@ -848,7 +848,7 @@ _.Zones =
 					["provider"] = { "n", 43504 },	-- Yancey Grillsen
 				}),
 				q(621,   {	-- Zanzil's Secret
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4131)),	-- Belt of Corruption

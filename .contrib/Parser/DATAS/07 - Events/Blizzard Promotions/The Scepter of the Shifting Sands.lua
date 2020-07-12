@@ -12,20 +12,20 @@ _.WorldEvents =
 					{
 						["questID"] = 8519,	-- A Pawn on the Eternal Board
 						-- objectID:180633 -- Crystalline Tear
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["itemID"] = 20949,	-- Magical Ledger
 						["questID"] = 8575,	-- Azuregos's Magical Ledger
 						["sourceQuest"] = 8555,	-- The Charge of the Dragonflights
 						["provider"] = { "n", 6109 },	-- Azuregos
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["questID"] = 8743,	-- Bang A Gong
 						["sourceQuest"] = 8742,	-- The Might of Kalimdor
 						-- objectID:180717 -- The Scarab Gong
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["groups"] = {
 							un(REMOVED_FROM_GAME, ach(416, {	-- Scarab Lord
 								["groups"] = {
@@ -40,13 +40,13 @@ _.WorldEvents =
 						["questID"] = 8606,	-- Decoy!
 						["sourceQuest"] = 8598,	-- rAnS0m
 						["provider"] = { "n", 11811 },	-- Narain Soothfancy
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["questID"] = 8586,	-- Dirge's Kickin' Chimaerok Chops
 						["sourceQuest"] = 8585,	-- The Isle of Dread!
 						["provider"] = { "n", 8125 },	-- Dirge Quikcleave <Butcher>
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["groups"] = {
 							un(7, i(21025)),	-- Recipe: Dirge's Kickin' Chimaerok Chops
 						},
@@ -55,25 +55,25 @@ _.WorldEvents =
 						["questID"] = 8597,	-- Draconic for Dummies
 						["sourceQuest"] = 8576,	-- Translating the Ledger
 						["provider"] = { "n", 11811 },	-- Narain Soothfancy
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["questID"] = 8733,	-- Eranikus, Tyrant of the Dream
 						["sourceQuest"] = 8555,	-- The Charge of the Dragonflights
 						["provider"] = { "n", 15362 },	-- Malfurion Stormrage
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["questID"] = 8599,	-- Love Song for Narain
 						["sourceQuest"] = 8597,	-- Draconic for Dummies
 						["provider"] = { "n", 15526 },	-- Meridith the Mermaiden
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["questID"] = 8730,	-- Nefarius's Corruption
 						["sourceQuest"] = 8555,	-- The Charge of the Dragonflights
 						["provider"] = { "n", 13020 },	-- Vaelastrasz the Corrupt
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["groups"] = {
 							un(REMOVED_FROM_GAME, i(21529)),	-- Amulet of Shadow Shielding
 							un(REMOVED_FROM_GAME, i(21530)),	-- Onyx Embedded Leggings
@@ -83,19 +83,19 @@ _.WorldEvents =
 						["questID"] = 8584,	-- Never Ask Me About My Business
 						["sourceQuest"] = 8576,	-- Translating the Ledger
 						["provider"] = { "n", 11811 },	-- Narain Soothfancy
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["questID"] = 8598,	-- rAnS0m
 						["sourceQuest"] = 8597,	-- Draconic for Dummies
 						["provider"] = { "n", 11811 },	-- Narain Soothfancy (objectID:180652 -- Freshly Dug Dirt)
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["questID"] = 8587,	-- Return to Narain
 						["sourceQuest"] = 8586,	-- Dirge's Kickin' Chimaerok Chops
 						["provider"] = { "n", 8125 },	-- Dirge Quikcleave <Butcher>
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["questID"] = 8578,	-- Scrying Goggles? No Problem!
@@ -104,38 +104,38 @@ _.WorldEvents =
 						["provider"] = { "n", 11811 },	-- Narain Soothfancy
 						["coord"] = { 65.2, 18.6, 71 },	-- Tanaris
 						["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["lvl"] = 60,
 					},
 					{
 						["questID"] = 8577,	-- Stewvul, Ex-B.F.F.
 						["sourceQuest"] = 8576,	-- Translating the Ledger
 						["provider"] = { "n", 11811 },	-- Narain Soothfancy
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["questID"] = 8741,	-- The Champion Returns
 						["sourceQuest"] = 8736,	-- The Nightmare Manifests
 						["provider"] = { "n", 11832 },	-- Keeper Remulos
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["questID"] = 8555,	-- The Charge of the Dragonflights
 						["sourceQuest"] = 8519,	-- A Pawn on the Eternal Board
 						["provider"] = { "n", 15192 },	-- Anachronos
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["questID"] = 8728,	-- The Good News and The Bad News
 						["sourceQuest"] = 8620,	-- The Only Prescription
 						["provider"] = { "n", 11811 },	-- Narain Soothfancy
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["questID"] = 8585,	-- The Isle of Dread!
 						["sourceQuest"] = 8584,	-- Never Ask Me About My Business
 						["provider"] = { "n", 8125 },	-- Dirge Quikcleave <Butcher>
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["questID"] = 8742,	-- The Might of Kalimdor
@@ -145,13 +145,13 @@ _.WorldEvents =
 							8741,	-- The Champion Returns
 						},
 						["provider"] = { "n", 15192 },	-- Anachronos
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["questID"] = 8736,	-- The Nightmare Manifests
 						["sourceQuest"] = 8735,	-- The Nightmare's Corruption
 						["provider"] = { "n", 11832 },	-- Keeper Remulos
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["groups"] = {
 							un(REMOVED_FROM_GAME, i(21531)),	-- Drake Tooth Necklace
 							un(REMOVED_FROM_GAME, i(21532)),	-- Drudge Boots
@@ -161,13 +161,13 @@ _.WorldEvents =
 						["questID"] = 8735,	-- The Nightmare's Corruption
 						["sourceQuest"] = 8734,	-- Tyrande and Remulos
 						["provider"] = { "n", 11832 },	-- Keeper Remulos
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["questID"] = 8620,	-- The Only Prescription
 						["sourceQuest"] = 8606,	-- Decoy!
 						["provider"] = { "n", 11811 },	-- Narain Soothfancy
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["groups"] = {
 							un(REMOVED_FROM_GAME, i(21517)),	-- Gnomish Turban of Psychic Might
 						},
@@ -176,7 +176,7 @@ _.WorldEvents =
 						["questID"] = 8729,	-- The Wrath of Neptulon
 						["sourceQuest"] = 8728,	-- The Good News and The Bad News
 						["provider"] = { "n", 11811 },	-- Narain Soothfancy
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["groups"] = {
 							un(REMOVED_FROM_GAME, i(21526)),	-- Band of Icy Depths
 							un(REMOVED_FROM_GAME, i(21527)),	-- Darkwater Robes
@@ -186,13 +186,13 @@ _.WorldEvents =
 						["questID"] = 8576,	-- Translating the Ledger
 						["sourceQuest"] = 8575,	-- Azuregos's Magical Ledger
 						["provider"] = { "n", 11811 },	-- Narain Soothfancy
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{
 						["questID"] = 8745,	-- Treasure of the Timeless One
 						["sourceQuest"] = 8742,	-- The Might of Kalimdor
 						["provider"] = { "n", 15693 },	-- Jonathan the Revelator
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["groups"] = {
 							un(REMOVED_FROM_GAME, ach(5533)),	-- Veteran of the Shifting Sands
 							un(REMOVED_FROM_GAME, i(21523)),	-- Fang of Krialstrasz
@@ -205,7 +205,7 @@ _.WorldEvents =
 						["questID"] = 8734,	-- Tyrande and Remulos
 						["sourceQuest"] = 8733,	-- Eranikus, Tyrant of the Dream
 						["provider"] = { "n", 15624 },	-- Forest Wisp
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					},
 				},
 			}),

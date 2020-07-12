@@ -30,7 +30,7 @@ _.Zones =
 					},
 				}),
 				q(24936, {	-- Body And Soul
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(52911)),	-- Yngwie's Vest
 						un(REMOVED_FROM_GAME, i(52957)),	-- Oomlot Staff

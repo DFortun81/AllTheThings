@@ -310,7 +310,7 @@ app.L = {
 		[-36] = "Interface\\Icons\\WoW_Token01", 											-- In-Game Shop
 		[-37] = "Interface\\Icons\\Garrison_Building_MageTower",							-- Discovery
 		[-38] = "Interface\\Icons\\achievement_general_workingasateam",						-- Professions
-		[-39] = "Interface\\Icons\\Inv_misc_book_17", 										-- Legacy Quest
+		[-39] = "Interface\\Icons\\Inv_misc_book_17", 									
 		[-40] = "Interface\\Icons\\Inv_misc_book_17", 										-- Legacy
 		[-41] = "Interface\\Icons\\TRADE_ARCHAEOLOGY", 										-- Cache of Madness
 		[-43] = "Interface\\Icons\\inv_chest_cloth_21",										-- Cloth Armor
@@ -4191,7 +4191,7 @@ app.L = {
 		{0, "", ""}, --37
 		{4, "|CFFFF0000These items are only available for players that completed the Legendary Cloak quest chain during Mists of Pandaria or via the BMAH|r", "Ordos - Legendary Cloak (38)"}, --38
 		{0, "", ""}, --39
-		{4, "|CFFFF0000This is a Legacy quest or quest item, and is no longer available.|r", "Legacy Quests (40)"}, -- 40
+		{0, "", ""}, -- 40
 		{4, "|CFFFF0000These appearances are only available for players that completed the respective Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances (41)"}, -- 41
 		{21, "|CFFFF0000These appearances are only available during the weekly Timewalking Event.\nOnly dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}, -- 42
 		{1, "|CFFFF0000This NPC or creature has been removed from the game.|r", "Removed NPCs (43)"}, -- 43

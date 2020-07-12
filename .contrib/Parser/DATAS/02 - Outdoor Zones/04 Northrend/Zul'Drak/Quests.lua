@@ -256,7 +256,7 @@ _.Zones =
 					["sourceQuest"] = 12677,	-- Hazardous Materials
 				}),
 				q(13098, {	-- For Posterity
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 30676 },	-- Chronicler Bah'Kini
 					["g"] = {
 						i(43177),	-- Voodoo Signet
@@ -266,7 +266,7 @@ _.Zones =
 					},
 				}),
 				q(13096, {	-- Gal'darah Must Pay
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 30671 },	-- Tol'mar
 					["g"] = {
 						i(43164),	-- Sly Mojo Sash
@@ -347,7 +347,7 @@ _.Zones =
 					["sourceQuest"] = 12661,	-- Infiltrating Voltarus
 				}),
 				q(13099, {	-- Just Checkin'
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 28527 },	-- Chronicler To'kini
 				}),
 				q(29836, {	-- Just Checkin' -- aa
@@ -428,7 +428,7 @@ _.Zones =
 					["sourceQuest"] = 12674,	-- Hell Hath a Fury
 				}),
 				q(13111, {	-- One of a Kind
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 30676 },	-- Chronicler Bah'Kini
 					["g"] = {
 						i(43171),	-- Fur-Lined Moccasins
@@ -806,7 +806,7 @@ _.Zones =
 				}),
 				q(12587, {	-- Troll Patrol
 					-- almost certainly the removed version
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 40.2, 66.6, 121 },
 					["isDaily"] = true,
 					["provider"] = { "n", 28039 },	-- Commander Kunz
@@ -940,7 +940,7 @@ _.Zones =
 					["sourceQuest"] = 12669,	-- So Far, So Bad
 				}),
 				q(39208, {	-- Zul'Drak
-					["u"] = 40, -- old quest from the adventure guide. Pretty sure this was removed
+					["u"] = REMOVED_FROM_GAME, -- old quest from the adventure guide. Pretty sure this was removed
 					["isBreadcrumb"] = true,
 				}),
 			}),

@@ -8,15 +8,15 @@ _.Zones =
 			n(QUESTS, {
 				q(11144, {	-- [DEPRECATED]Confirming the Suspicion
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(11214, {	-- [DEPRECATED]Mission to Mudsprocket
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(11201, {	-- [DEPRECATED]The Grimtotem Plot
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1258,  {	-- ... and Bugs
 					["provider"] = { "n", 4794 },	-- Morgan Stern
@@ -63,7 +63,7 @@ _.Zones =
 					},
 				}),
 				q(11148, {	-- Arms of the Grimtotems
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(33272)),	-- Biting Axe
@@ -72,7 +72,7 @@ _.Zones =
 					},
 				}),
 				q(1168,  {	-- Army of the Black Dragon
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4502 },	-- Tharg
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -89,7 +89,7 @@ _.Zones =
 					},
 				}),
 				q(11160, {	-- [DEPRECATED]Banner of the Stonemaul
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 23579 },	-- Brogg
 				}),
@@ -99,7 +99,7 @@ _.Zones =
 					["sourceQuest"] = 27407,	-- Bloodfen Feathers
 				}),
 				q(11158, {	-- [DEPRECATED]Bloodfen Feathers
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 23579 },	-- Brogg
 				}),
 				q(27407, {	-- Bloodfen Feathers
@@ -113,7 +113,7 @@ _.Zones =
 					["sourceQuest"] = 27246,	-- The Orc Report
 				}),
 				q(11217, {	-- [DEPRECATED]Catch a Dragon by the Tail
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 23570 },	-- Gizzix Grimegurgle
 				}),
 				q(27413, {	-- Catch a Dragon by the Tail
@@ -126,7 +126,7 @@ _.Zones =
 					},
 				}),
 				q(1958,  {	-- Celestial Power
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6546 },	-- Tabetha
 					["classes"] = { MAGE },
 					["g"] = {
@@ -135,7 +135,7 @@ _.Zones =
 					},
 				}),
 				q(1173,  {	-- Challenge Overlord Mok'Morokk
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4500 },	-- Overlord Mok'Morokk
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -157,7 +157,7 @@ _.Zones =
 					},
 				}),
 				q(11162, {	-- Challenge to the Black Dragonflight
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 23579 },	-- Brogg
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -180,7 +180,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(11183, {	-- Cleansing Witch Hill
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 23843 },	-- Mordant Grimsby
 				}),
@@ -202,7 +202,7 @@ _.Zones =
 					["sourceQuest"] = 27425,	-- A Grim Connection
 				}),
 				q(11174, {	-- [DEPRECATED]Corrosion Prevention
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27347, {	-- Corrosion Prevention
 					["provider"] = { "n", 23797 },	-- Moxie Steelgrille
@@ -216,7 +216,7 @@ _.Zones =
 					},
 				}),
 				q(626,   {	-- Cortello's Riddle
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 2555 },	-- Musty Scroll
 					["sourceQuest"] = 625,	-- Cortello's Riddle
 				}),
@@ -252,7 +252,7 @@ _.Zones =
 					},
 				}),
 				q(11156, {	-- [DEPRECATED]Direhorn Raiders
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 23600 },	-- Apprentice Morlann
 					["g"] = {
 						i(33240),	-- Grimtotem Earthbinder's Tunic
@@ -281,12 +281,12 @@ _.Zones =
 					["sourceQuest"] = 27211,	-- Propaganda War
 				}),
 				q(26991, {	-- Enemies Abroad
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4791 },	-- Nazeer Bloodpike
 				}),
 				q(1177,  {	-- Hungry!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4503 },	-- Mudcrush Durtfeet
 				}),
 				q(11211, {	-- Help for Mudsprocket
@@ -302,11 +302,11 @@ _.Zones =
 				}),
 				q(1949, {	-- Hidden Secrets
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { MAGE },
 				}),
 				q(1135,  {	-- Highperch Venom
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4456 },	-- Fiora Longears
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -324,7 +324,7 @@ _.Zones =
 					},
 				}),
 				q(1169,  {	-- Identifying the Brood
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4501 },	-- Draz'Zilb
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -350,12 +350,12 @@ _.Zones =
 					["sourceQuest"] = 27251,	-- The Call Him Smiling Jim
 				}),
 				q(11123, {	-- [DEPRECATED]Inspecting the Ruins
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
 				}),
 				q(11124, {	-- [DEPRECATED]Inspecting the Ruins
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4926 },	-- Krog
 				}),
@@ -372,7 +372,7 @@ _.Zones =
 				}),
 				q(1948, {	-- Items of Power
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { MAGE },
 				}),
 				q(27238, {	-- Jaina Must Know
@@ -382,7 +382,7 @@ _.Zones =
 					["sourceQuests"] = { 27237 },	-- Recover the Cargo
 				}),
 				q(1203,  {	-- Jarl Needs a Blade
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
 					["sourceQuest"] = 1206,	-- Jarl Needs Eyes
 				}),
@@ -398,7 +398,7 @@ _.Zones =
 					},
 				}),
 				q(1206,  {	-- Jarl Needs Eyes
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
 					["sourceQuest"] = 1218,	-- Soothing Spices
 				}),
@@ -408,7 +408,7 @@ _.Zones =
 					["sourceQuest"] = 27183,	-- Marsh Frog Legs
 				}),
 				q(11206, {	-- Justice Dispensed
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6546 },	-- Tabetha
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -435,7 +435,7 @@ _.Zones =
 					["sourceQuest"] = 27429,	-- Raze Direhorn Post!
 				}),
 				q(1269,  {	-- Lieutenant Paval Reethe
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 21042 },	-- Theramore Guard Badge
 				}),
@@ -456,7 +456,7 @@ _.Zones =
 					["provider"] = { "o", 21042 },	-- Theramore Guard Badge
 				}),
 				q(1952,  {	-- Mage's Wand
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6546 },	-- Tabetha
 					["classes"] = { MAGE },
 					["g"] = {
@@ -467,7 +467,7 @@ _.Zones =
 				}),
 				q(1957, {	-- Mana Surges
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { MAGE },
 				}),
 				q(27183, {	-- Marsh Frog Legs
@@ -489,7 +489,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(11200, {	-- More than Coincidence
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4926 },	-- Krog
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -542,7 +542,7 @@ _.Zones =
 					["sourceQuest"] = 27220,	-- Nat's Bargain
 				}),
 				q(1166,  {	-- Overlord Mok'Morokk's Concern
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4500 },	-- Overlord Mok'Morokk
 					["g"] = {
@@ -560,7 +560,7 @@ _.Zones =
 					},
 				}),
 				q(11152, {	-- Peace at Last
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(33230)),	-- Leggings of the Long Road
@@ -581,7 +581,7 @@ _.Zones =
 				}),
 				q(1956, {	-- Power in Uldaman
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { MAGE },
 				}),
 				q(27245, {	-- Prisoners of the Grimtotems (awarded "Prisoners of the Grimtotem" criteria)
@@ -603,7 +603,7 @@ _.Zones =
 					["sourceQuest"] = 27210,	-- Traitors Among Us
 				}),
 				q(1273,  {	-- Questioning Reethe
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4983 },	-- Ogron
 					["sourceQuest"] = 1269,	-- Lieutenant Paval Reethe
@@ -624,12 +624,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(11150, {	-- [DEPRECATED]Raze Direhorn Post!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 6546 },	-- Tabetha
 				}),
 				q(11205, {	-- [DEPRECATED]Raze Direhorn Post!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 6546 },	-- Tabetha
 				}),
@@ -663,13 +663,13 @@ _.Zones =
 					["sourceQuest"] = 27234,	-- Defias in Dustwallow?
 				}),
 				q(1262,  {	-- Report to Zor
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4791 },	-- Nazeer Bloodpike
 					["sourceQuest"] = 1261,	-- Marg Speaks
 				}),
 				q(11223, {	-- Return to Jaina
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(33250),	-- Archer's Wristguard NOTE: This is now available from Survey Alcaz Island or Twilight of the Dawn Runner
@@ -678,7 +678,7 @@ _.Zones =
 					},
 				}),
 				q(11204, {	-- Return to Krog
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4943 },	-- Mosarn
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -689,7 +689,7 @@ _.Zones =
 				}),
 				q(1953, {	-- Return to the Marsh
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { MAGE },
 				}),
 				q(27236, {	-- Secondhand Diving Gear
@@ -699,7 +699,7 @@ _.Zones =
 					["sourceQuest"] = 27235,	-- Renn McGill
 				}),
 				q(11207, {	-- Secure the Cargo!
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27348, {	-- Secure the Cargo!
 					["provider"] = { "n", 23797 },	-- Moxie Steelgrille
@@ -707,7 +707,7 @@ _.Zones =
 					["sourceQuest"] = 27346,	-- The Zeppelin Crash
 				}),
 				q(11203, {	-- [DEPRECATED]Seek Out Tabetha
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4926 },	-- Krog
 				}),
@@ -721,7 +721,7 @@ _.Zones =
 					},
 				}),
 				q(7541,  {	-- Service to the Horde
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4047 },	-- Zor Lonetree
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -735,11 +735,11 @@ _.Zones =
 					["provider"] = { "o", 205332 },	-- Wanted Poster (Broodqueen)
 				}),
 				q(1218,  {	-- Soothing Spices
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4792 },	-- "Swamp Eye" Jarl
 				}),
 				q(11159, {	-- [DEPRECATED]Spirits of Stonemaul Hold
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 23579 },	-- Brogg
 				}),
@@ -773,7 +773,7 @@ _.Zones =
 					},
 				}),
 				q(1268,  {	-- Suspicious Hoofprints
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 21015 },	-- Hoofprints
 				}),
@@ -803,7 +803,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2861, {	-- Tabetha's Task
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["maps"] = {
 						84,	-- Stormwind
 						85,	-- Orgrimmar
@@ -818,7 +818,7 @@ _.Zones =
 					},
 				}),
 				q(11198, {	-- Take Down Tethyr!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 23905 },	-- Major Mills
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -846,30 +846,30 @@ _.Zones =
 					["sourceQuest"] = 27260,	-- Lieutenant Paval Reethe
 				}),
 				q(1251,  {	-- The Black Shield
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 20992 },	-- Black Shield
 				}),
 				q(1321,  {	-- The Black Shield
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4926 },	-- Krog
 					["sourceQuest"] = 1251,	-- Black Shield
 				}),
 				q(1322,  {	-- The Black Shield
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5087 },	-- Do'gol
 					["sourceQuest"] = 1321,	-- Black Shield
 				}),
 				q(1323,  {	-- The Black Shield
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5087 },	-- Do'gol
 					["sourceQuest"] = 1322,	-- Black Shield
 				}),
 				q(1276,  {	-- The Black Shield
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4926 },	-- Krog
 					["sourceQuest"] = 1323,	-- The Black Shield
@@ -921,19 +921,19 @@ _.Zones =
 					["sourceQuest"] = 27256,	-- The Black Shield (#3)
 				}),
 				q(1170,  {	-- The Brood of Onyxia
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4501 },	-- Draz'Zilb
 					["sourceQuest"] = 1169,	-- Identifying the Brood
 				}),
 				q(1171,  {	-- The Brood of Onyxia
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4500 },	-- Overlord Mok'Morokk
 					["sourceQuest"] = 1170,	-- The Brood of Onyxia
 				}),
 				q(1172,  {	-- The Brood of Onyxia
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4501 },	-- Draz'Zilb
 					["sourceQuest"] = 1171,	-- The Brood of Onyxia
@@ -978,7 +978,7 @@ _.Zones =
 					["sourceQuest"] = 27287,	-- The Deserters
 				}),
 				q(11134, {	-- The End of the Deserters
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(33249),	-- Boots of the Skirmisher NOTE: This is still available from the new verison of the quest
@@ -1000,7 +1000,7 @@ _.Zones =
 					},
 				}),
 				q(11161, {	-- [DEPRECATED]The Essence of Enmity
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 23579 },	-- Brogg
 				}),
@@ -1011,7 +1011,7 @@ _.Zones =
 				}),
 				q(1955, {	-- The Exorcism
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { MAGE },
 				}),
 				q(27293, {	-- The Grimtotem Plot
@@ -1024,7 +1024,7 @@ _.Zones =
 					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(11169, {	-- The Grimtotem Weapon
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 23601 },	-- Apprentice Garion
 				}),
 				q(27336, {	-- The Grimtotem Weapon
@@ -1039,7 +1039,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(11225, {	-- The Hermit of Witch Hill
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4501 },	-- Draz'Zilb
 				}),
@@ -1051,11 +1051,11 @@ _.Zones =
 				}),
 				q(1954, {	-- The Infernal Orb
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { MAGE },
 				}),
 				q(1238,  {	-- The Lost Report
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 20985 },	-- Loose Dirt
 				}),
@@ -1065,7 +1065,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(1267,  {	-- The Missing Diplomat
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4967 },	-- Archmage Tervosh
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -1078,7 +1078,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(11173, {	-- [DEPRECATED]The Reagent Thief
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 23601 },	-- Apprentice Garion
 				}),
 				q(27339, {	-- The Reagent Thief
@@ -1092,7 +1092,7 @@ _.Zones =
 					},
 				}),
 				q(1239,  {	-- The Severed Head
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 20985 },	-- Loose Dirt
 					["sourceQuest"] = 1238,	-- The Lost Report
@@ -1104,13 +1104,13 @@ _.Zones =
 					["sourceQuest"] = 1201,	-- Theramore Spies
 				}),
 				q(1240,  {	-- The Troll Witchdoctor
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4791 },	-- Nazeer Bloodpike
 					["sourceQuest"] = 1239,	-- The Severed Head
 				}),
 				q(11181, {	-- The Witch's Bane
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 23843 },	-- Mordant Grimsby
 				}),
@@ -1120,7 +1120,7 @@ _.Zones =
 					["sourceQuest"] = 27188,	-- What's Haunting Witch Hill?
 				}),
 				q(11172, {	-- [DEPRECATED]The Zeppelin Crash
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 23600 },	-- Apprentice Morlann
 				}),
 				q(27346, {	-- The Zeppelin Crash
@@ -1151,7 +1151,7 @@ _.Zones =
 					["sourceQuest"] = 27216,	-- This Old Lighthouse
 				}),
 				q(2846,  {	-- Tiara of the Deep
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6546 },	-- Tabetha
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(9527)),	-- Spellshifter Rod
@@ -1209,7 +1209,7 @@ _.Zones =
 					},
 				}),
 				q(11184, {	-- [DEPRECATED]WANTED: Goreclaw the Ravenous
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27412, {	-- WANTED: Goreclaw the Ravenous
 					["provider"] = { "o", 186426 },	-- Wanted Poster (Goreclaw)
@@ -1222,7 +1222,7 @@ _.Zones =
 					},
 				}),
 				q(11180, {	-- What's Haunting Witch Hill?
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 23843 },	-- Mordant Grimsby
 				}),

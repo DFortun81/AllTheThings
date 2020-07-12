@@ -7,17 +7,17 @@ _.Zones =
 		m(22, {	-- Western Plaguelands
 			n(QUESTS, {
 				q(5093, {	-- A Call to Arms: The Plaguelands!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 10880 },	-- Warcaller Gorlach
 				}),
 				q(5094, {	-- A Call to Arms: The Plaguelands!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 10879 },	-- Harbinger Balthazad
 				}),
 				q(5095, {	-- A Call to Arms: The Plaguelands!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 10881 },	-- Bluff Runner Windstrider
 				}),
@@ -60,13 +60,13 @@ _.Zones =
 					},
 				}),
 				q(6390, {	-- A Plague Upon Thee
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 177491 },	-- Termite Barrel
 					["sourceQuest"] = 5902,	-- A Plague Upon Thee
 				}),
 				q(5153, {	-- A Strange Historian
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10927 },	-- Marlene Redpath
 					["sourceQuest"] = 5152,	-- Auntie Marlene
 				}),
@@ -84,14 +84,14 @@ _.Zones =
 					},
 				}),
 				q(211,   {	-- Alas, Andorhal
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(17759)),	-- Mark of Resolution
 					},
 				}),
 				q(105,   {	-- Alas, Andorhal
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(17759)),	-- Mark of Resolution
@@ -163,7 +163,7 @@ _.Zones =
 					},
 				}),
 				q(5401, {	-- Argent Dawn Commission
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 10840 },	-- Argent Officer Pureheart
 					["g"] = {
@@ -171,7 +171,7 @@ _.Zones =
 					},
 				}),
 				q(5503, {	-- Argent Dawn Commission
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11039 },	-- Duke Nicholas Zverenhoff
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12846)),	-- Argent Dawn Commission
@@ -195,17 +195,17 @@ _.Zones =
 					["sourceQuest"] = 27153,	-- The Good People of Hearthglen
 				}),
 				q(5021, {	-- Better Late Than Never
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10778 },	-- Janice Felstone
 				}),
 				q(5022, {	-- Better Late Than Never (A)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 175894 },	-- Janice's Parcel
 					["sourceQuest"] = 5021,	-- Better Late Than Never
 				}),
 				q(5023, {	-- Better Late Than Never (H)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 175894 },	-- Janice's Parcel
 					["sourceQuest"] = 5021,	-- Better Late Than Never
@@ -224,7 +224,7 @@ _.Zones =
 					},
 				}),
 				q(5210, {	-- Brother Carlin
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10667 },	-- Chromie
 					["sourceQuests"] = {
 						5168,	-- Heroes of Darrowshire
@@ -277,14 +277,14 @@ _.Zones =
 				}),
 				q(5408,  {	-- Corruptor's Scourgestones
 					["provider"] = { "n", 11039 },		-- Duke Nicholas Zverenhoff
-					["u"] = 40,			-- Removed in Patch 4.0.3
+					["u"] = REMOVED_FROM_GAME,			-- Removed in Patch 4.0.3
 					["coord"] = { 75.76, 53.81, 23 },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token -- Removed in Patch 4.0.3
 					},
 				}),
 				q(4972, {	-- Counting Out Time
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10667 },	-- Chromie
 					["sourceQuest"] = 4971,	-- A Matter of Time
 				}),
@@ -294,7 +294,7 @@ _.Zones =
 					["sourceQuest"] = 27057,	-- Return to the Stead
 				}),
 				q(5382, {	-- Doctor Theolen Krastinov, the Butcher
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11216 },	-- Eva Sarkhoff
 				}),
 				q(27157, {	-- Drudges... <Sigh>
@@ -312,14 +312,14 @@ _.Zones =
 					},
 				}),
 				q(4986,  {	-- Glyphed Oaken Branch
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15804)),	-- Cerise Drape
 					},
 				}),
 				q(4987,  {	-- Glyphed Oaken Branch
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15804)),	-- Cerise Drape
@@ -341,7 +341,7 @@ _.Zones =
 					["coord"] = { 48.5, 54.9, 22 },
 				}),
 				q(5944,  {	-- In Dreams
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 1842 },	-- Highlord Taelan Fordring <Highlord of the Scarlet Crusade>
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(16058)),	-- Fordring's Seal
@@ -353,7 +353,7 @@ _.Zones =
 				}),
 				q(5407,  {	-- Invader's Scourgestones [A]
 					["provider"] = { "n", 10840 },		-- Argent Officer Pureheart
-					["u"] = 40,			-- Removed in Patch 4.0.3
+					["u"] = REMOVED_FROM_GAME,			-- Removed in Patch 4.0.3
 					["coord"] = { 42.96, 83.55, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -384,7 +384,7 @@ _.Zones =
 --						["sourceQuests"] = {  },	--
 				}),
 				q(5515, {	-- Krastinov's Bag of Horrors
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11216 },	-- Eva Sarkhoff
 					["sourceQuest"] = 5382,	-- Doctor Theolen Krastinov, the Butcher
 				}),
@@ -404,18 +404,18 @@ _.Zones =
 					},
 				}),
 				q(5142, {	-- Little Pamela
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10927 },	-- Marlene Redpath
 				}),
 				q(5060,  {	-- Locked Away
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(13474)),	-- Farmer Dalson's Shotgun
 						un(REMOVED_FROM_GAME, i(13475)),	-- Dalson Family Wedding Ring
 					},
 				}),
 				q(5507, {	-- Mantles of the Dawn
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 10857 },	-- Argent Quartermaster Lightspark
 				}),
@@ -434,7 +434,7 @@ _.Zones =
 				}),
 				q(5408,  {	-- Minion's Scourgestones [A]
 					["provider"] = { "n", 10840 },		-- Argent Officer Pureheart
-					["u"] = 40,			-- Removed in Patch 4.0.3
+					["u"] = REMOVED_FROM_GAME,			-- Removed in Patch 4.0.3
 					["coord"] = { 43.0, 84.0, 22 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -442,7 +442,7 @@ _.Zones =
 					},
 				}),
 				q(5238,  {	-- Mission Accomplished!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15799)),	-- Heroic Commendation Medal
@@ -451,7 +451,7 @@ _.Zones =
 					},
 				}),
 				q(5058, {	-- Mrs. Dalson's Diary
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 175926 },	-- Mrs. Dalson's Diary
 				}),
 				q(26935, {	-- Northridge Lumber Mill
@@ -466,24 +466,24 @@ _.Zones =
 					["sourceQuest"] = 27013,	-- Too Close for Comfort
 				}),
 				q(5230, {	-- Return to the Bulwark
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 176361 },	-- Scourge Cauldron
 				}),
 				q(5232, {	-- Return to the Bulwark
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 177289 },	-- Scourge Cauldron
 					["sourceQuest"] = 5231,	-- Target: Dalson's Tears
 				}),
 				q(5234, {	-- Return to the Bulwark
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 176393 },	-- Scourge Cauldron
 					["sourceQuest"] = 5233,	-- Target: Writhing Haunt
 				}),
 				q(5236, {	-- Return to the Bulwark
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 176392 },	-- Scourge Cauldron
 					["sourceQuest"] = 5235,	-- Target: Gahrron's Withering
@@ -565,7 +565,7 @@ _.Zones =
 --						["sourceQuests"] = {  },	--
 				}),
 				q(5465, {	-- Soulbound Keepsake
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered
 					["sourceQuest"] = 5464,	-- Menethil's Gift
 				}),
@@ -620,7 +620,7 @@ _.Zones =
 					["sourceQuest"] = 27169,	-- Uther's Blessing
 				}),
 				q(5154, {	-- The Annals of Darrowshire
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10667 },	-- Chromie
 					["sourceQuest"] = 5153,	-- A Strange Historian
 				}),
@@ -631,7 +631,7 @@ _.Zones =
 					["isBreadcrumb"] = true,	-- for "Scourge First... Horde Later"
 				}),
 				q(5721, {	-- The Battle of Darrowshire
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10667 },	-- Chromie
 					["sourceQuest"] = 5941,	-- Return to Chromie
 				}),
@@ -657,7 +657,7 @@ _.Zones =
 					},
 				}),
 				q(5462, {	-- The Dying, Ras Frostwhisper
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11286 },	-- Magistrate Marduke
 					["sourceQuest"] = 5461,	-- The Human, Ras Frostwhisper
 				}),
@@ -683,19 +683,19 @@ _.Zones =
 					["sourceQuest"] = 27152,	-- Unusual Behavior... Even For Gnolls
 				}),
 				q(5461, {	-- The Human, Ras Frostwhisper
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11286 },	-- Magistrate Marduke
 					["sourceQuest"] = 5384,	-- Kirtonos the Herald
 				}),
 				q(5344,  {	-- The Last Barov
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(14023)),	-- Barov Peasant Caller
 					},
 				}),
 				q(5342,  {	-- The Last Barov
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(14022)),	-- Barov Peasant Caller
@@ -740,11 +740,11 @@ _.Zones =
 					},
 				}),
 				q(4984, {	-- The Wildlife Suffers Too
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10739 },	-- Mulgris Deepriver
 				}),
 				q(4985, {	-- The Wildlife Suffers Too
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10739 },	-- Mulgris Deepriver
 					["sourceQuest"] = 4984,	-- The Wildlife Suffers Too
 				}),
@@ -795,22 +795,22 @@ _.Zones =
 					},
 				}),
 				q(5051,  {	-- Two Halves Become One
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(13473)),	-- Felstone Good Luck Charm
 					},
 				}),
 				q(6004, {	-- Unfinished Business
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11610 },	-- Kirsta Deepshadow
 				}),
 				q(6023, {	-- Unfinished Business
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11610 },	-- Kirsta Deepshadow
 					["sourceQuest"] = 6004,	-- Unfinished Business
 				}),
 				q(6025, {	-- Unfinished Business
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11610 },	-- Kirsta Deepshadow
 					["sourceQuest"] = 6023,	-- Unfinished Business
 				}),

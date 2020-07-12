@@ -48,7 +48,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						i(21270, {	-- Gently Shaken Gift
 							["questID"] = 8767,
 							["description"] = "Gift from 2014 and was given to anyone who wasn't a spell caster.",
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(29, i(116692)),	-- Fuzzy Green Lounge Cushion
 								un(29, i(116689)),	-- Pineapple Lounge Cushion
@@ -60,7 +60,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						i(21271, {	-- Gently Shaken Gift
 							["questID"] = 8788,
 							["description"] = "Gift from 2014 and was given to spell casters.",
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(29, i(116692)),	-- Fuzzy Green Lounge Cushion
 								un(29, i(116689)),	-- Pineapple Lounge Cushion
@@ -72,7 +72,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						i(128652, {	-- Gently Shaken Gift
 							["questID"] = 39658,
 							["description"] = "Gift from 2015.",
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(29, i(116692)),	-- Fuzzy Green Lounge Cushion
 								un(29, i(116689)),	-- Pineapple Lounge Cushion
@@ -85,7 +85,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						i(139343, {	-- Gently Shaken Gift
 							["questID"] = 43364,
 							["description"] = "Gift from 2016.",
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(29, i(139337)),	-- Disposable Winter Veil Suits
 								un(29, i(116692)),	-- Fuzzy Green Lounge Cushion
@@ -99,7 +99,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						i(151345, {	-- Gently Shaken Gift
 							["questID"] = 43364,
 							["description"] = "Gift from 2017.  You will receive only one factions Hearthstation.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(29, i(151344, {	-- Hearthstation [H]
 									["races"] = HORDE_ONLY,
@@ -113,7 +113,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						i(162974, {	-- Gently Shaken Gift
 							["questID"] = 53011,
 							["description"] = "Gift from 2018.",
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(29, i(162973)),	-- Greatfather Winter's Hearthstone
 								un(29, i(128768)),	-- Candy Cane
@@ -154,7 +154,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						i(34426, {	-- Winter Veil Gift
 							["questID"] = 11528,
 							["description"] = "Gift from 2007.",
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								ach(1705),	-- Clockwork Rocket Bot
 								un(29, i(34425)),	-- Clockwork Rocket Bot
@@ -163,7 +163,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						i(34426, {	-- Winter Veil Gift
 							["questID"] = 13203,
 							["description"] = "Gift from 2008.",
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								ach(1706),	-- Crashin' Thrashin' Racer
 								un(29, i(37710)),	-- Crashin' Thrashin' Racer Controller
@@ -172,7 +172,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						i(46740, {	-- Winter Veil Gift
 							["questID"] = 13966,
 							["description"] = "Gift from 2009.",
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								ach(6059),	-- Red Rider Air Rifle
 								un(29, i(46725)),	-- Red Rider Air Rifle
@@ -181,7 +181,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						i(67443, {	-- Winter Veil Gift
 							["questID"] = 28878,
 							["description"] = "Gift from 2010.",
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								ach(6060),	-- MiniZep Controller
 								un(29, i(46709)),	-- MiniZep Controller
@@ -190,7 +190,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						i(70938, {	-- Winter Veil Gift
 							["questID"] = 29385,
 							["description"] = "Gift from 2011.",
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								ach(6061),	-- Gaudy Winter Veil Sweater
 								un(29, i(70923)),	-- Gaudy Winter Veil Sweater
@@ -199,7 +199,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						i(90892, {	-- Winter Veil Gift
 							["questID"] = 32106,
 							["description"] = "Gift from 2012.",
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								ach(7852),	-- They're Both Footballs?
 								un(29, i(90888)),	-- Foot Ball
@@ -209,7 +209,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						i(104319, {	-- Winter Veil Gift
 							["questID"] = 33252,
 							["description"] = "Gift from 2013.",
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								ach(8698),	-- Crashin' Thrashin' Flyer
 								un(29, i(104318)),	-- Crashin' Thrashin' Flyer Controller
@@ -218,7 +218,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						i(116761, {	-- Winter Veil Gift
 							["questID"] = 36617,
 							["description"] = "Gift from 2014.",
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								ach(9915),	-- Crashin' Thrashin' Shredder
 								un(29, i(116763)),	-- Crashin' Thrashin' Shredder Controller
@@ -227,7 +227,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						i(128653, {	-- Winter Veil Gift
 							["questID"] = 39659,
 							["description"] = "Gift from 2015.",
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								ach(10337),	-- Crashin' Thrashin' Flamer
 								un(29, i(108632)),	-- Crashin' Thrashin' Flamer Controller
@@ -236,7 +236,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						i(139341, {	-- Winter Veil Gift
 							["questID"] = 43363,
 							["description"] = "Gift from 2016.",
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								ach(10751),	-- Brr... It's Cold in Here
 								un(29, i(128636)),	-- Endothermic Blaster
@@ -245,7 +245,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						i(151350, {	-- Winter Veil Gift
 							["questID"] = 47751,
 							["description"] = "Gift from 2017. You will receive only one factions Toy Weapon Set.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								ach(11913),	-- Don't Play With That In The House
 								un(29, i(151349)),	-- Toy Weapon Set [A]
@@ -255,7 +255,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						i(162644, {	-- Winter Veil Gift
 							["questID"] = 52965,
 							["description"] = "Gift from 2018. You will receive only one factions Toy Armor Set.  In order to obtain the opposite factions, you will need to have a character on that side open this gift.",
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								ach(12850),	-- At Least You're Being Careful
 								un(29, i(162643, {	-- Toy Armor Set [A]

@@ -23,7 +23,7 @@ _.Zones =
 					}),
 					q(10593, {	-- An Ancient Evil [Horde]
 						["races"] = HORDE_ONLY,
-						["u"] = 40,	-- Legacy Quests
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							i(30696, {	-- Scourgebane
 								["u"] = REMOVED_FROM_GAME,

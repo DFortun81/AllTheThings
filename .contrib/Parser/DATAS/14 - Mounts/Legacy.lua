@@ -50,7 +50,7 @@ _.Mounts =
 		un(REMOVED_FROM_GAME, ach(8898, {	-- Challenge Warlord: Silver
 			un(REMOVED_FROM_GAME, i(116791)),	-- Challenger's War Yeti
 		})),
-		un(40, q(40962, {	-- Dark Waters
+		un(REMOVED_FROM_GAME, q(40962, {	-- Dark Waters
 			un(REMOVED_FROM_GAME, i(128422)),	-- Grove Warden
 		})),
 		un(REMOVED_FROM_GAME, ach(2138, {	-- Glory of the Raider (25 Player) Pre 3.1

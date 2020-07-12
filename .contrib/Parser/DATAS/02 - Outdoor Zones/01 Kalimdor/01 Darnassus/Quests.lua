@@ -57,7 +57,7 @@ _.Zones =
 					["sourceQuest"] = 4508,	-- Calm Before the Storm [Alliance]
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(11872)),	-- Eschewal Greaves
 						un(REMOVED_FROM_GAME, i(11870)),	-- Oblivion Orb
@@ -94,7 +94,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["provider"] = { "i", 46876 },	-- Riding Training Pamphlet
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27265, {	-- Lord Grayson Shadowbreaker
 					["provider"] = { "n", 35281 },	-- Rukua (Darnassus)
@@ -135,7 +135,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6973)),	-- Fire Hardened Leggings
 					},
@@ -208,7 +208,7 @@ _.Zones =
 					["coord"] = { 64.6, 53.0, 89 },
 					["races"] = { NIGHTELF },
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(6343, {	-- Return to Nyoma
 					["provider"] = { "n", 40552 },	-- Leora
@@ -224,7 +224,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1710, {	-- Sunscorched Shells
 					["provider"] = { "n", 6142 },	-- Mathiel
@@ -233,7 +233,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 25,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1039, {	-- The Barrens Port
 					["provider"] = { "n", 8026 },	-- Thyn'tel Bladeweaver
@@ -241,7 +241,7 @@ _.Zones =
 					["sourceQuest"] = 1038,	-- Velinde's Effects
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1686, {	-- The Shade of Elura
 					["provider"] = { "n", 4088 },	-- Elanaria
@@ -250,7 +250,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27269, {	-- The Temple of the Moon
 					["provider"] = { "n", 11401 },	-- Priestess Alathea
@@ -273,7 +273,7 @@ _.Zones =
 					["sourceQuest"] = 1037,	-- Velinde Starsong
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1683, {	-- Vorlus Vilehoof
 					["provider"] = { "n", 4088 },	-- Elanaria
@@ -282,7 +282,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1693, {	-- Weapons of Elunite
 					["provider"] = { "n", 6142 },	-- Mathiel
@@ -291,7 +291,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6966)),	-- Elunite Axe
 						un(REMOVED_FROM_GAME, i(6968)),	-- Elunite Hammer

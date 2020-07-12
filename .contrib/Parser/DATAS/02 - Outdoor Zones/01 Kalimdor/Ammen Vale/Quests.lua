@@ -33,7 +33,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(26968, {	-- Frost Nova
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16500 },	-- Valaatu
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
@@ -45,7 +45,7 @@ _.Zones =
 					["sourceQuest"] = 9293,	-- What Must Be Done...
 				}),
 				q(9288,  {	-- Hunter Training
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16499 },	-- Keilnei
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { HUNTER },
@@ -68,31 +68,31 @@ _.Zones =
 					["sourceQuest"] = 10302,	-- Volatile Mutations
 				}),
 				q(26970, {	-- Learning the Word
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16502 },	-- Zalduun
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PRIEST },
 				}),
 				q(9290,  {	-- Mage Training
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16500 },	-- Valaatu
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 				}),
 				q(9287,  {	-- Paladin Training
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16501 },	-- Aurelon
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 				}),
 				q(9291,  {	-- Priest Training
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16502 },	-- Zalduun
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PRIEST },
 				}),
 				q(26969, {	-- Primal Strike
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 17089 },	-- Firmanvaar
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { SHAMAN },
@@ -115,13 +115,13 @@ _.Zones =
 					["sourceQuest"] = 9409,	-- Urgent Delivery!
 				}),
 				q(9421,  {	-- Shaman Training
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 17089 },	-- Firmanvaar
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { SHAMAN },
 				}),
 				q(9305,  {	-- Spare Parts
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 17071 },	-- Technician Zhanaa
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -132,7 +132,7 @@ _.Zones =
 					["sourceQuest"] = 10302,	-- Volatile Mutations
 				}),
 				q(26963, {	-- Steadying Your Shot
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16499 },	-- Keilnei
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { HUNTER },
@@ -150,7 +150,7 @@ _.Zones =
 					["sourceQuest"] = 9311,	-- Blood Elf Spy
 				}),
 				q(26966, {	-- The Light's Power
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16501 },	-- Aurelon
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
@@ -165,7 +165,7 @@ _.Zones =
 					},
 				}),
 				q(31173, {	-- The Tiger Palm
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 63335 },	-- Mojo Stormstout
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MONK },
@@ -202,7 +202,7 @@ _.Zones =
 					},
 				}),
 				q(9289,  {	-- Warrior Training
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16503 },	-- Kore
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
@@ -220,7 +220,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(26958, {	-- Your First Lesson
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16503 },	-- Kore
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MONK },

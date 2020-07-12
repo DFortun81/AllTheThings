@@ -265,7 +265,7 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(57274, {	-- Quartermaster's Bounty
-							["u"] = 40,	-- Replaced with a new quest in Season 4
+							["u"] = REMOVED_FROM_GAME,	-- Replaced with a new quest in Season 4
 							["provider"] = { "n", 143560 },	-- Marshal Gabriel
 							["isWeekly"] = true,
 							["coord"] = { 56.4, 25.8, 1161 },

@@ -7,7 +7,7 @@ _.Zones =
 		m(15, {	-- Badlands
 			n(QUESTS, {
 				q(719,   {	-- A Dwarf and His Tools
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4978)),	-- Ryedol's Hammer
@@ -72,7 +72,7 @@ _.Zones =
 					},
 				}),
 				q(2258,  {	-- Badlands Reagent Run II
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6868 },	-- Quest Giver: Jarkal Mossmeld
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 2202 },	-- Source Quest: Uldaman Reagent Run
@@ -90,7 +90,7 @@ _.Zones =
 					["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
 				}),
 				q(703,   {	-- Barbequed Buzzard Wings
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 2817 },	-- Rigglefuz
 					["g"] = {
 						i(4609),	-- Recipe: Barbequed Buzzard Wing -- NOTE: item is still available
@@ -103,12 +103,12 @@ _.Zones =
 					["sourceQuests"] = { 27789 },	-- Troggish Troubles
 				}),
 				q(782,   {	-- Broken Alliances
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1068 },	-- Gorn
 				}),
 				q(793,   {	-- Broken Alliances
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1068 },	-- Gorn
 					["sourceQuest"] = 782,	-- Broken Alliances
@@ -120,22 +120,22 @@ _.Zones =
 					},
 				}),
 				q(713,   {	-- Coolant Heads Prevail
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
 				}),
 				q(3981, {	-- Commander Gor'shak
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 9081 },	-- Galamav the Marksman
 					["sourceQuest"] = 3906,	-- Disharmony of Flame
 				}),
 				q(1419,  {	-- Coyote Thieves
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5394 },	-- Neeka Bloodscar
 				}),
 				q(2340, {	-- Deliver the Gems
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 6868 },	-- Jarkal Mossmeld
 					["sourceQuest"] = 2339,	-- Find the Gems and Power Source
@@ -146,7 +146,7 @@ _.Zones =
 					["sourceQuests"] = { 27858, 27898 },	-- Rheastrasza's Gift (A, H)
 				}),
 				q(3906, {	-- Disharmony of Flame
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 9084 },	-- Thunderheart
 				}),
@@ -162,7 +162,7 @@ _.Zones =
 					},
 				}),
 				q(3821, {	-- Dreadmaul Rock
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 9082 },	-- Thal'trak Proudtusk
 				}),
@@ -187,7 +187,7 @@ _.Zones =
 					["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
 				}),
 				q(2339, {	-- Find the Gems and Power Source
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 6868 },	-- Jarkal Mossmeld
 					["sourceQuest"] = 2338,	-- Translating the Journal
@@ -199,7 +199,7 @@ _.Zones =
 				}),
 				q(1559, {	-- Flash Bomb Recipe
 					["requireSkill"] = ENGINEERING,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(6672),	-- Schematic: Flash Bomb
 					},
@@ -226,12 +226,12 @@ _.Zones =
 					["sourceQuests"] = { 27890 },	-- The Bad Dogs
 				}),
 				q(4122, {	-- Grark Lorkrub
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 9080 },	-- Lexlort
 				}),
 				q(714,   {	-- Gyro... What?
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
 					["sourceQuest"] = 713,	-- Coolant Heads Prevail
 				}),
@@ -260,7 +260,7 @@ _.Zones =
 					},
 				}),
 				q(1108,  {	-- Indurium
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4618 },	-- Martek the Exiled
 					["sourceQuest"] = 1106,	-- Martek the Exiled
 				}),
@@ -297,12 +297,12 @@ _.Zones =
 					["sourceQuests"] = { 27890 },	-- The Bad Dogs
 				}),
 				q(4081, {	-- KILL ON SIGHT: Dark Iron Dwarves
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 164867 },	-- WANTED
 				}),
 				q(4082, {	-- KILL ON SIGHT: High Ranking Dark Iron Officials
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 164868 },	-- KILL ON SIGHT
 				}),
@@ -315,14 +315,14 @@ _.Zones =
 					},
 				}),
 				q(715,   {	-- Liquid Stone
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 2920 },	-- Quest Giver: Lucien Tosselwrench
 					["g"] = {
 						un(7, i(4624)),	-- Recipe: Lesser Stoneshield Potion [REMOVED FROM GAME]
 					},
 				}),
 				q(4134,  {	-- Lost Thunderbrew Recipe
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12000)),	-- Limb Cleaver
@@ -330,21 +330,21 @@ _.Zones =
 					},
 				}),
 				q(739,   {	-- Murdaloc
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4983)),	-- Rock Pulverizer
 					},
 				}),
 				q(1137,  {	-- News for Fizzle
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6729)),	-- Fizzle's Zippy Lighter
 						un(REMOVED_FROM_GAME, i(6732)),	-- Gnomish Mechanic's Gloves
 					},
 				}),
 				q(2341,  {	-- Necklace Recovery, Take 3
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7888)),		-- Jarkal's Enhancing Necklace
@@ -366,19 +366,19 @@ _.Zones =
 					["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
 				}),
 				q(4981, {	-- Operative Bijou
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 9080 },	-- Lexlort
 				}),
 				q(705,   {	-- Pearl Diving
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4086)),	-- Flash Rifle
 						un(REMOVED_FROM_GAME, i(5248)),	-- Flash Wand
 					},
 				}),
 				q(2418,  {	-- Power Stones
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10358)),	-- Duracin Bracers
 						un(REMOVED_FROM_GAME, i(9522)),	-- Energized Stone Circle
@@ -386,12 +386,12 @@ _.Zones =
 					},
 				}),
 				q(1420,  {	-- Report to Helgrum
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5394 },	-- Neeka Bloodscar
 				}),
 				q(2361,  {	-- Restoring the Necklace
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7673)),		-- Talvash's Enhancing Necklace
@@ -438,7 +438,7 @@ _.Zones =
 					["sourceQuests"] = { 27897 },	-- The Hidden Clutch
 				}),
 				q(733,   {	-- Scrounging
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4653)),	-- Ironheel Boots
@@ -454,28 +454,28 @@ _.Zones =
 					["provider"] = { "n", 2785 },	-- Theldurin the Lost
 					["coord"] = { 51.6, 76.6, 15 },
 					["lvl"] = 30,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un2, i(4746),	-- Doomsayer's Robe
 					},
 				}),
 				q(716,   {	-- Stone Is Better than Cloth
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4979)),	-- Enchanted Stonecloth Bracers
 					},
 				}),
 				q(710,   {	-- Study of the Elements: Rock
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
 				}),
 				q(711,   {	-- Study of the Elements: Rock
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
 					["sourceQuest"] = 710,	-- Study of the Elements: Rock
 				}),
 				q(712,   {	-- Study of the Elements: Rock
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
 					["sourceQuest"] = 711,	-- Study of the Elements: Rock
 				}),
@@ -551,7 +551,7 @@ _.Zones =
 					["sourceQuests"] = { 27896 },	-- The Sorrow and the Fury
 				}),
 				q(3911, {	-- The Last Element
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 9078 },	-- Shadowmage Vivian Lagrave
 					["g"] = {
@@ -559,12 +559,12 @@ _.Zones =
 					},
 				}),
 				q(692,   {	-- The Lost Fragments
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 2785 },	-- Theldurin the Lost
 					["sourceQuest"] = 687,	-- Theldurin the Lost
 				}),
 				q(1139,  {	-- The Lost Tablets of Will
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6723)),		-- Medal of Courage
@@ -576,7 +576,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(4724,  {	-- The Pack Mistress
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15824)),	-- Astoria Robes
@@ -585,7 +585,7 @@ _.Zones =
 					},
 				}),
 				q(4063,  {	-- The Rise of the Machines
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
 					["sourceQuest"] = 4062,	-- The Rise of the Machines
@@ -739,7 +739,7 @@ _.Zones =
 					},
 				}),
 				q(734,   {	-- This Is Going to Be Hard
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
 					["sourceQuests"] = {
 						714,	-- Gyro... What?
@@ -747,12 +747,12 @@ _.Zones =
 					},
 				}),
 				q(777,   {	-- This Is Going to Be Hard
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 2920 },	-- Lucien Tosselwrench
 					["sourceQuest"] = 734,	-- This Is Going to Be Hard
 				}),
 				q(778,   {	-- This Is Going to Be Hard
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 2921 },	-- Lotwil Veriatus
 					["sourceQuest"] = 777,	-- This Is Going to Be Hard
 					["g"] = {
@@ -782,7 +782,7 @@ _.Zones =
 					["sourceQuest"] = 709,	-- Solution to Doom
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(728,   {	-- To the Undercity for Yagyin's Digest
 					["provider"] = { "n", 2785 },	-- Theldurin the Lost
@@ -790,16 +790,16 @@ _.Zones =
 					["sourceQuest"] = 709,	-- Solution to Doom
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(2338, {	-- Translating the Journal
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 6868 },	-- Jarkal Mossmeld
 					["sourceQuest"] = 2318,	-- Translating the Journal
 				}),
 				q(717,   {	-- Tremors of the Earth
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(11193)),	-- Blazewind Breastplate
@@ -819,17 +819,17 @@ _.Zones =
 					},
 				}),
 				q(2202,  {	-- Uldaman Reagent Run
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6868 },	-- Quest Giver: Jarkal Mossmeld
 					["sourceQuests"] = { 2258 },	-- Source Quest: Badlands Reagent Run
 				}),
 				q(9439, {	-- Unclaimed Baggage
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 17097 },	-- Advisor Sarophas
 				}),
 				q(3982, {	-- What Is Going On?
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 9020 },	-- Commander Gor'shak
 					["sourceQuest"] = 3981,	-- Commander Gor'shak

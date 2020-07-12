@@ -73,7 +73,7 @@ _.Zones =
 							["sourceQuest"] = 2756,	-- The Old Ways
 							["requireSkill"] = BLACKSMITHING,
 							["races"] = HORDE_ONLY,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(8663)),	-- Mithril Insignia
 							},
@@ -105,7 +105,7 @@ _.Zones =
 							["requireSkill"] = BLACKSMITHING,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 40,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(7994)),	-- Plans: Orcish War Leggings
 							},
@@ -258,7 +258,7 @@ _.Zones =
 							["requireSkill"] = FIRST_AID,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 25,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 					}),
 				}),

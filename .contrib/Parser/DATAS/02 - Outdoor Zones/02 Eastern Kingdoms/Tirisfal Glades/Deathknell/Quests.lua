@@ -27,7 +27,7 @@ _.Zones =
 						["isBreadcrumb"] = true,
 					}),
 					q(3096,  {	-- Encrypted Scroll
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
 						["races"] = { 5 },	-- undead
 						["classes"] = { 4 },	-- rogue
@@ -38,7 +38,7 @@ _.Zones =
 						["races"] = { 5 },	-- undead
 					}),
 					q(5650,  {	-- Garments of Darkness
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] =  { 5 },	-- Undead
 						["classes"] = { 5 },	-- Priest
 						["g"] = {
@@ -46,14 +46,14 @@ _.Zones =
 						},
 					}),
 					q(3098,  {	-- Glyphic Scroll
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
 						["sourceQuests"] = { 26800 },	-- Recruitment
 						["classes"] = { 8 },	-- mage
 						["races"] = { 5 },	-- undead
 					}),
 					q(3097,  {	-- Hallowed Scroll
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
 						["sourceQuests"] = { 26800 },	-- Recruitment
 						["classes"] = { 5 },	-- priest
@@ -63,20 +63,20 @@ _.Zones =
 						},
 					}),
 					q(24965, {	-- Magic Training
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 2124 },	-- Isabella
 						["sourceQuests"] = { 3098 },	-- Glyphic Scroll
 						["classes"] = { 8 },	-- Mage
 						["races"] = { 5 },	-- Undead
 					}),
 					q(6395, {	-- Marla's Last Wish
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 1661 },	-- Novice Elreth
 						["sourceQuest"] = 376,	-- The Damned
 					}),
 					q(380,   {	-- Night Web's Hollow
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 1570 },	-- Executor Arren
 					}),
@@ -100,18 +100,18 @@ _.Zones =
 						["sourceQuests"] = { 26801 },	-- Scourge on our Perimeter
 					}),
 					q(31148, {	-- Novice Elreth
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 					}),
 					q(24966, {	-- Of Light and Shadows
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 2123 },	-- Dark Cleric Duesten
 						["sourceQuests"] = { 3097 },	-- Hallowed Scroll
 						["races"] = { 5 },	-- undead
 						["classes"] = { 5 },	-- priest
 					}),
 					q(3901, {	-- Rattling the Rattlecages
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
 						["sourceQuest"] = 364,	-- The Mindless Ones
@@ -123,7 +123,7 @@ _.Zones =
 						["sourceQuests"] = { 25089 },	-- Beyond the Graves
 					}),
 					q(3902, {	-- Scavenging Deathknell
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 1740 },	-- Deathguard Saltain
 						["sourceQuest"] = 376,	-- The Damned
@@ -142,19 +142,19 @@ _.Zones =
 						["isBreadcrumb"] = true,
 					}),
 					q(3095,  {	-- Simple Scroll
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
 						["races"] = { 5 },	-- undead
 						["classes"] = { 1 },	-- warrior
 					}),
 					q(3099,  {	-- Tainted Scroll
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
 						["races"] = { 5 },	-- undead
 						["classes"] = { 9 },	-- warlock
 					}),
 					q(376,   {	-- The Damned
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 1661 },	-- Novice Elreth
 					}),
@@ -171,13 +171,13 @@ _.Zones =
 						["sourceQuests"] = { 24961 },	-- The Truth of the Grave
 					}),
 					q(364,   {	-- The Mindless Ones
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 1569 },	-- Shadow Priest Sarvis
 						["sourceQuest"] = 363,	-- Rude Awakening
 					}),
 					q(382,   {	-- The Red Messenger
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 1570 },	-- Executor Arren
 						["sourceQuest"] = 381,	-- The Scarlet Crusade
@@ -189,7 +189,7 @@ _.Zones =
 						["races"] = { 5 },	-- undead
 					}),
 					q(381,   {	-- The Scarlet Crusade
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 1570 },	-- Executor Arren
 						["sourceQuest"] = 380,	-- Night Web's Hollow
@@ -213,7 +213,7 @@ _.Zones =
 						["sourceQuests"] = { 28608 },	-- The Shadow Grave
 					}),
 					q(383,   {	-- Vital Intelligence
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 1570 },	-- Executor Arren
 						["sourceQuest"] = 382,	-- The Red Messenger

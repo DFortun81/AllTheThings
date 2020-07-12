@@ -284,7 +284,7 @@ _.Zones =
 						["sourceQuest"] = 26390,	-- Ending the Invasion
 					}),
 					q(346,   {	-- Return to Kristoff
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 951 },	-- Brother Paxton
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 347,	-- Rethban Ore

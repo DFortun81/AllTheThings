@@ -390,7 +390,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10212,  {	-- Hero of the Mag'har
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 4949 },	-- Thrall
 					["g"] = {
@@ -885,7 +885,7 @@ _.Zones =
 					},
 				}),
 				q(10175,  {	-- Thrall, Son of Durotan
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 18141 },	-- Greatmother Geyah
 					["sourceQuest"] = 10172,	-- There Is No Hope

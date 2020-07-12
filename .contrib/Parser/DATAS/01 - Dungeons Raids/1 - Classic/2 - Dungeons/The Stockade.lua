@@ -14,7 +14,7 @@ _.Instances = { tier(1, {	-- Classic
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(377, {	-- Crime and Punishment
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2033)),	-- Ambassador's Boots
@@ -33,7 +33,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(378, {	-- The Fury Runs Deep
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3562)),	-- Belt of Vindication
@@ -56,7 +56,7 @@ _.Instances = { tier(1, {	-- Classic
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(386, { 	-- What Comes Around...
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(1317)),	-- Hardened Root Staff

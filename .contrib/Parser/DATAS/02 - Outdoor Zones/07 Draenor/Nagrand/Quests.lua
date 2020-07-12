@@ -721,7 +721,7 @@ _.Zones =
 					["sourceQuest"] = 35838,	-- The Warlord's Council
 				}),
 				q(36004, {	-- Power Unleashed
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(118295)),	-- Timeless Solium Band of Brutality
 						un(REMOVED_FROM_GAME, i(118296)),	-- Timeless Solium Band of the Archmage
@@ -977,7 +977,7 @@ _.Zones =
 					["sourceQuest"] = 34899,	-- A Choice to Make
 				}),
 				q(35995, {	-- Tarnished Bronze
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(34869, {	-- Tastes Like Chicken
 					["provider"] = { "n", 81955 },	-- Digrem Orebar
@@ -1152,7 +1152,7 @@ _.Zones =
 					},
 				}),
 				q(36206, {	-- The Dragon's Tale
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(34964, {	-- The Farseer Awaits
 					["provider"] = { "n", 80003 },	-- Thrall

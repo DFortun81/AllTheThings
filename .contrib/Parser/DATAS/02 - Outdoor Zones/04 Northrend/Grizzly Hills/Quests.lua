@@ -100,7 +100,7 @@ _.Zones =
 					["sourceQuest"] = 12293,	-- Close the Deal
 				}),
 				q(12446, {	-- Always Seeking Solvent (A)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 23.0, 80.0, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 27495 },	-- Barblefink
@@ -111,7 +111,7 @@ _.Zones =
 					},
 				}),
 				q(12434, {	-- Always Seeking Solvent (H)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 11.1, 76.6, 116 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 27565 },	-- Gurtor

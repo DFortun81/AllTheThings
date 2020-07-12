@@ -13,7 +13,7 @@ _.Zones =
 					["sourceQuests"] = { 10835 },	-- Apothecary Antonivich
 				}),
 				q(9442,  {	-- A Debilitating Sickness
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 9441,	-- Envoy to the Mag'har
 					["provider"] = { "n", 17123 },	-- Earthcaller Ryga
 					["races"] = HORDE_ONLY,
@@ -57,7 +57,7 @@ _.Zones =
 					["sourceQuest"] = 10403,	-- Naladu
 				}),
 				q(9447,  {	-- Administering the Salve
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 9442,	-- A Debilitating Sickness
 					["provider"] = { "n", 17123 },	-- Earthcaller Ryga
 					["races"] = HORDE_ONLY,
@@ -172,7 +172,7 @@ _.Zones =
 					},
 				}),
 				q(45415, {	-- Between Worlds
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(9397,  {	-- Birds of a Feather
 					["coord"] = { 27.7, 60.3, 100 },
@@ -190,7 +190,7 @@ _.Zones =
 					["provider"] = { "n", 24937 },	-- Magistrix Seyla
 				}),
 				q(47025, {	-- Blood: Aid of the Illidari
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { 6 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -219,7 +219,7 @@ _.Zones =
 					},
 				}),
 				q(47024, {	-- Brewmaster: Aid of the Illidari
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10087, {	-- Burn It Up... For the Horde!
@@ -260,7 +260,7 @@ _.Zones =
 					},
 				}),
 				q(45414, {	-- Confirming Suspicions
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(10134, {	-- Crimson Crystal Clue
 					["crs"] = { 19188 },	-- Raging Colossus
@@ -303,12 +303,12 @@ _.Zones =
 					["lvl"] = 110,
 				}),
 				q(9587, {	-- Dark Tidings (A)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 23890 },	-- Ominous Letter
 				}),
 				q(9588, {	-- Dark Tidings (H)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 23892 },	-- Ominous Letter
 				}),
@@ -338,7 +338,7 @@ _.Zones =
 					["sourceQuest"] = 10903,	-- Return to Honor Hold
 				}),
 				q(10139, {	-- Dispatching the Commander
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(28057),	-- Bonechewer Berserker's Vest
@@ -400,7 +400,7 @@ _.Zones =
 					},
 				}),
 				q(10763, {	-- Dumphry's Request (removed, old BT key questline)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10396, {	-- Enemy of my Enemy...
@@ -410,7 +410,7 @@ _.Zones =
 					["sourceQuest"] = 10394,	-- Disruption - Forge Camp: Mageddon
 				}),
 				q(9441,  {	-- Envoy to the Mag'har
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 9438,	-- Messenger to Thrall
 					["provider"] = { "n", 4949 },	-- Thrall
 					["races"] = HORDE_ONLY
@@ -516,7 +516,7 @@ _.Zones =
 					["provider"] = { "n", 16851 },	-- Mirren Longbeard
 				}),
 				q(45413, {	-- Gathering Information
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(10382, {	-- Go to the Front
 					["coord"] = { 79.3, 33.8, 100 },
@@ -525,11 +525,11 @@ _.Zones =
 					["sourceQuest"] = 10163,	-- Mission: The Abyssal Shelf
 				}),
 				q(10762, {	-- Grand Master Dumphry (removed, old BT key questline)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10756, {	-- Grand Master Rohok
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3230 },	-- Nazgrel
 					["sourceQuest"] = 10755,	-- Entry Into the Citadel
@@ -548,12 +548,12 @@ _.Zones =
 					},
 				}),
 				q(47023, {	-- Guardian: Aid of the Illidari
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { 11 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9608, {	-- Heart of Rage
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 17558 },	-- Caza'rez
 				}),
@@ -638,11 +638,11 @@ _.Zones =
 					},
 				}),
 				q(10764, {	-- Hotter than Hell (removed, old BT key questline)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10758, {	-- Hotter than Hell
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 16583 },	-- Rohok
 					["sourceQuest"] = 10757,	-- Rohok's Request
@@ -799,7 +799,7 @@ _.Zones =
 					},
 				}),
 				q(9438,  {	-- Messenger to Thrall
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 9406,	-- The Mag'har
 					["provider"] = { "n", 3230 },	-- Nazgrel
 					["races"] = HORDE_ONLY,
@@ -913,12 +913,12 @@ _.Zones =
 					["provider"] = { "n", 16858 },	-- Grelag
 				}),
 				q(45412, {	-- Protection: Aid of the Illidari (Warrior)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { 1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47022, {	-- Protection: Aid of the Illidari (Paladin)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { 2 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1002,7 +1002,7 @@ _.Zones =
 					},
 				}),
 				q(10757, {	-- Rohok's Request
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 16583 },	-- Rohok
 					["sourceQuest"] = 10756,	-- Rohok's Request
@@ -1083,7 +1083,7 @@ _.Zones =
 					["sourceQuest"] = 10229,	-- Decipher the Tome
 				}),
 				q(9590, {	-- The Blood is Life
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 17558 },	-- Caza'rez
 					["g"] = { -- NOTE: rewards are available in a different quest
@@ -1335,7 +1335,7 @@ _.Zones =
 					["sourceQuest"] = 10143,	-- Expedition Point
 				}),
 				q(46314, {	-- Vengeance: Seeking Kor'vas
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10393, {	-- Vile Plans
@@ -1392,7 +1392,7 @@ _.Zones =
 					},
 				}),
 				q(9572, {	-- Weaken the Ramparts
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 17493 },	-- Stone Guard Stok'ton
 					["g"] = { -- NOTE: rewards now available from a different quest

@@ -41,7 +41,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(97832)),	-- Latent Kor'kron Belt (they had unique stats before 6.0)
 						un(REMOVED_FROM_GAME, i(97830)),	-- Latent Kor'kron Leggings (they had unique stats before 6.0)
 						un(REMOVED_FROM_GAME, i(97827)),	-- Latent Kor'kron Boots (they had unique stats before 6.0)
-						un(40, i(97990)),	-- Raptorhide Boxing Gloves
+						un(REMOVED_FROM_GAME, i(97990)),	-- Raptorhide Boxing Gloves
 						un(REMOVED_FROM_GAME, i(98561)),	-- Darkspear Battle Standard
 						un(REMOVED_FROM_GAME, i(98563)),	-- Rainstick
 					},

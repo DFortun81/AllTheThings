@@ -16,7 +16,7 @@ _.Zones =
 				}),
 				]]--
 				q(13986, {	-- An Injured Colleague
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 35471 },	-- Sorn Proudmane
 				}),
@@ -76,7 +76,7 @@ _.Zones =
 					},
 				}),
 				q(13159, {	-- Containment
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 31080 },	-- Warden Alturas
 					["sourceQuest"] = 13158,	-- Discretion is Key
 					["g"] = {
@@ -111,7 +111,7 @@ _.Zones =
 					},
 				}),
 				q(13158, {	-- Discretion is Key
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16128 },	-- Rhonin
 				}),
 				q(29829, {	-- Discretion is Key
@@ -208,12 +208,12 @@ _.Zones =
 					},
 				}),
 				q(29073, {	-- Make Haste to Orgrimmar!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 208317 },	-- Warchief's Command Board
 				}),
 				q(29071, {	-- Make Haste to Stormwind!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 208316 },	-- Hero's Call Board
 				}),
@@ -319,10 +319,10 @@ _.Zones =
 					},
 				}),
 				q(39209, {	-- Sholazar Basin -- Adventure Guide
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(39212, {	-- Sholazar Basin -- Adventure Guide
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(12974, {	-- The Champion's Call!
 					["coord"] = { 49.3, 45.9, 125 },
@@ -392,7 +392,7 @@ _.Zones =
 					},
 				}),
 				q(14160, {	-- Writ of Merit
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "i", 47246 },	-- Writ of Merit
 					["requireSkill"] = JEWELCRAFTING,
 				}),

@@ -13,7 +13,7 @@ _.Zones =
 					["provider"] = { "n", 41129 },	-- Surveyor Thurdan
 				}),
 				q(304,   {	-- A Grim Task
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2916)),	-- Gold Lion Shield
 						un(REMOVED_FROM_GAME, i(2917)),	-- Tranquil Ring
@@ -32,7 +32,7 @@ _.Zones =
 				}),
 				q(471,   {	-- Apprentice's Duties
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2545)),	-- Malleable Chain Leggings
 						un(REMOVED_FROM_GAME, i(3561)),	-- Resilient Poncho
@@ -54,7 +54,7 @@ _.Zones =
 				}),
 				q(275,   {	-- Blisters on The Land
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3558)),	-- Fen Keeper Robe
 						un(REMOVED_FROM_GAME, i(1273)),	-- Forest Chain
@@ -82,7 +82,7 @@ _.Zones =
 				}),
 				q(293,   {	-- Cleansing the Eye
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2943)),	-- Eye of Paleth
 					},
@@ -106,7 +106,7 @@ _.Zones =
 				}),
 				q(474,   {	-- Defeat Nek'rosh
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3209)),	-- Ancient War Sword
 						un(REMOVED_FROM_GAME, i(6194)),	-- Barreling Reaper
@@ -240,7 +240,7 @@ _.Zones =
 					["provider"] = { "n", 41615 },	-- Ferilon Leafborn
 				}),
 				q(647,   {	-- MacKreel's Moonshine
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(25926, {	-- Mired in Hatred
 					["coord"] = { 56.3, 40.4, 56 },
@@ -259,7 +259,7 @@ _.Zones =
 					["provider"] = { "n", 41086 },	-- Forba Slabchisel
 				}),
 				q(296,   {	-- Ormer's Revenge
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(5246)),	-- Excavation Rod
@@ -287,7 +287,7 @@ _.Zones =
 				}),
 				q(286,   {	-- Return the Statuette (U) 
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2950)),	-- Icicle Rod
 						un(REMOVED_FROM_GAME, i(2949)),	-- Mariner Boots
@@ -425,7 +425,7 @@ _.Zones =
 				}),
 				q(633,   {	-- The Thandol Span
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4504)),	-- Dwarven Guard Cloak
 						un(REMOVED_FROM_GAME, i(4505)),	-- Swampland Trousers
@@ -468,7 +468,7 @@ _.Zones =
 				}),
 				q(299,   {	-- Uncovering the Past
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2913)),	-- Silk Mantle of Gamn
 					},

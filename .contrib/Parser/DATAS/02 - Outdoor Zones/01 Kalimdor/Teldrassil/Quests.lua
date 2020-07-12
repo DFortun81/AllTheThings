@@ -34,7 +34,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),					
 				q(1581,  {	-- Elixirs for the Bladeleafs
 					["provider"] = { "n", 2083 },	-- Syral Bladeleaf
@@ -54,10 +54,10 @@ _.Zones =
 					["sourceQuest"] = 26757,	-- The Bounty of Teldrassil
 					["races"] = { NIGHTELF },
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(5621,  {	-- Garments of the Moon
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { NIGHTELF },
 					["classes"] = { PRIEST },
 					["g"] = {
@@ -183,7 +183,7 @@ _.Zones =
 					["sourceQuest"] = 26756,	-- Nessa Shadowsong
 					["races"] = { NIGHTELF },
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(32327, {	-- The Darnassus Mission
 					["provider"] = { "n", 68077 },	-- Fanlyr Silverthorn

@@ -448,7 +448,7 @@ _.ExpansionFeatures =
 						["maps"] = { 64 },	-- Thousand Needles
 					}),
 					q(43886, {	-- Speaking to the Wind
-						["u"] = 40,	-- Legacy Quest
+						["u"] = REMOVED_FROM_GAME,
 						["classes"] = { SHAMAN },
 						["lvl"] = 110,
 						["provider"] = { "n", 111739 },	-- Gorma Windspeaker
@@ -564,7 +564,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(40276, {	-- The Maelstrom Beckons
-						["u"] = 40,	-- Legacy Quest
+						["u"] = REMOVED_FROM_GAME,
 						["classes"] = { SHAMAN },
 						["lvl"] = 98,
 						["provider"] = { "n", 96528 },	-- Farseer Nobundo

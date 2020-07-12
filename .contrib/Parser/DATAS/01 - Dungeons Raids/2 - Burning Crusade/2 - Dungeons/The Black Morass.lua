@@ -13,7 +13,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["groups"] = {
 			n(QUESTS, {
 				q(10298,  {	-- Hero of the Brood
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 20201 },	-- Sa'at
 					["groups"] = {
 						i(29320),	-- Band of the Guardian
@@ -23,7 +23,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 				q(29673, {	-- The Black Morass
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(10297, {	-- The Opening of the Dark Portal
 					["provider"] = { "n", 20201 },	-- Sa'at

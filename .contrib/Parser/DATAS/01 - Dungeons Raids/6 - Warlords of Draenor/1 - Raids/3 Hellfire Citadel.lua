@@ -70,7 +70,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 			}),
 			d(17, {	-- LFR
 				n(ZONEDROPS, {
-					un(40, i(127115, {	-- Tome of Chaos
+					un(REMOVED_FROM_GAME, i(127115, {	-- Tome of Chaos
 						["crs"] = {
 							95068,	-- Hellfire Assault
 							90284,	-- Iron Reaver
@@ -368,7 +368,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124252),	-- Jungle Assassin's Footpads
 					i(124288),	-- Unhallowed Voidlink Boots
 					i(118840),	-- Firecrystal Chain
-					un(40, i(127115, {	-- Tome of Chaos
+					un(REMOVED_FROM_GAME, i(127115, {	-- Tome of Chaos
 						["crs"] = {
 							95068,	-- Hellfire Assault
 							90284,	-- Iron Reaver
@@ -779,7 +779,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124252),	-- Jungle Assassin's Footpads
 					i(124288),	-- Unhallowed Voidlink Boots
 					i(118840),	-- Firecrystal Chain
-					un(40, i(127115, {	-- Tome of Chaos
+					un(REMOVED_FROM_GAME, i(127115, {	-- Tome of Chaos
 						["crs"] = {
 							95068,	-- Hellfire Assault
 							90284,	-- Iron Reaver
@@ -1124,7 +1124,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				})),
 				cr(91331, e(1438, {	-- Archimonde
 					un(REMOVED_FROM_GAME, i(133762, {
-						un(40, q(40962, {
+						un(REMOVED_FROM_GAME, q(40962, {
 							un(REMOVED_FROM_GAME, i(128422)),  -- Reins of the Grove Warden Mount
 						})),
 					})),
@@ -1187,7 +1187,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 					i(124252),	-- Jungle Assassin's Footpads
 					i(124288),	-- Unhallowed Voidlink Boots
 					i(118840),	-- Firecrystal Chain
-					un(40, i(127115, {	-- Tome of Chaos
+					un(REMOVED_FROM_GAME, i(127115, {	-- Tome of Chaos
 						["crs"] = {
 							95068,	-- Hellfire Assault
 							90284,	-- Iron Reaver

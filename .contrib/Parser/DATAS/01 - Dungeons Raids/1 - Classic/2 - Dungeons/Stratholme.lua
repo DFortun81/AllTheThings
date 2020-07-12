@@ -17,7 +17,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 45201 },	-- Master Craftsman Wilhelm
 						}),
 						q(5848, {	-- Of Love and Family (2/2)
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 11936 },	-- Artist Renfray
 						}),
 						q(27305, {	-- Of Love and Family
@@ -197,7 +197,7 @@ _.Instances = { tier(1, {	-- Classic
 							["provider"] = { "n", 16031 },	-- Ysida Harmon
 							["sourceQuest"] = 8945,	-- Dead Man's Plea
 							["lvl"] = 58,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						n(ZONEDROPS, {
 							un(43, n(14684, { 	-- Balzaphon
@@ -284,7 +284,7 @@ _.Instances = { tier(1, {	-- Classic
 				["groups"] = {
 					n(QUESTS, {
 						q(5263, {	-- Above and Beyond
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 11039 },	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 						}),
 						q(27359, {	-- Argent Reinforcements
@@ -456,11 +456,11 @@ _.Instances = { tier(1, {	-- Classic
 					})),
 					n(-40, {	-- Legacy
 						n(QUESTS, {
-							un(40, q(5125, {	-- Aurius' Reckoning
+							un(REMOVED_FROM_GAME, q(5125, {	-- Aurius' Reckoning
 								un(REMOVED_FROM_GAME, i(17045)),	-- Blood of the Martyr
 								un(REMOVED_FROM_GAME, i(17044)),	-- Will of the Martyr
 							})),
-							un(40, q(9737, { 	-- True Masters of the Light
+							un(REMOVED_FROM_GAME, q(9737, { 	-- True Masters of the Light
 								["classes"] = { PALADIN },
 								["races"] = { 10 },
 								["groups"] = {

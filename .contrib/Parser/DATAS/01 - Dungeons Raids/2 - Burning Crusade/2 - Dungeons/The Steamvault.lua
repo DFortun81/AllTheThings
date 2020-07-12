@@ -19,7 +19,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					["provider"] = { "n", 54849 }, 		-- Naturalist Bite
 				}),
 				q(9764,  {	-- Orders from Lady Vashj
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "i", 24367 },	-- Orders from Lady Vashj
 				}),
 				q(29615, {	-- Windcaller Claw and the Water Thief

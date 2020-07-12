@@ -10,13 +10,13 @@ _.Instances = { tier(1, {	-- Classic
 		["groups"] = {
 			n(QUESTS, {
 				q(4982, {	-- Bijou's Belongings
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10257 },	-- Bijou
 					["sourceQuest"] = 4981,	-- Operative Bijou
 				}),
 				q(4983, {	-- Bijou's Reconnaissance Report
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10257 },	-- Bijou
 					["sourceQuest"] = 4982,	-- Bijou's Belongings
@@ -26,7 +26,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(4941, {	-- Eitrigg's Wisdom
-					["u"] = 40,	-- Legacy Quest
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["provider"] = { "n", 9077 },	-- Warlord Goretooth
@@ -38,7 +38,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(65981),	-- War Master's Pauldrons
 				}),
 				q(4903,  {	-- Warlord's Command
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["provider"] = { "n", 9077 },	-- Warlord Goretooth
@@ -143,7 +143,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(13166),	-- Slamshot Shoulders
 				i(13169),	-- Tressermane Leggings
 				i(12336, {	-- Gemstone of Spirestone
-					un(40, q(4742)),	-- Seal of Ascension
+					un(REMOVED_FROM_GAME, q(4742)),	-- Seal of Ascension
 				}),
 			})),
 			cr(9236, e(389, {	-- Shadow Hunter Vosh'gajin
@@ -175,7 +175,7 @@ _.Instances = { tier(1, {	-- Classic
 				un(REMOVED_FROM_GAME, i(13175)),	-- Voone's Twitchbow
 				un(REMOVED_FROM_GAME, i(13173)),	-- Broken Flightblade Throwing Axe
 				i(12335, {	-- Gemstone of Smolderthorn
-					un(40, q(4742)),	-- Seal of Ascension
+					un(REMOVED_FROM_GAME, q(4742)),	-- Seal of Ascension
 				}),
 			})),
 			n(9596, {	-- Bannok Grimaxe (Rare)
@@ -274,7 +274,7 @@ _.Instances = { tier(1, {	-- Classic
 				un(REMOVED_FROM_GAME, i(13148)), 	-- Chillpike [Disappeared sometime around 3.0]
 				un(REMOVED_FROM_GAME, i(13164)),	-- Heart of the Scale
 				i(12337, {	-- Gemstone of Bloodaxe
-					un(40, q(4742)),	-- Seal of Ascension
+					un(REMOVED_FROM_GAME, q(4742)),	-- Seal of Ascension
 				}),
 			})),
 			n(-40, {	-- Legacy
@@ -362,7 +362,7 @@ _.Instances = { tier(1, {	-- Classic
 								["questID"] = 5103,	-- Hot Fiery Death
 								["requireSkill"] = BLACKSMITHING,
 								["isBreadcrumb"] = true,
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 							},
 						},
 					}

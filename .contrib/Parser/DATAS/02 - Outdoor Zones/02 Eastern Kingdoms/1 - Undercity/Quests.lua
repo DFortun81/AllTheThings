@@ -7,7 +7,7 @@ _.Zones =
 		m(90, {	-- Undercity
 			n(QUESTS, {
 				q(4294, {	-- ... and a Batch of Ooze
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10136 },	-- Chemist Fuely
 				}),
@@ -24,22 +24,22 @@ _.Zones =
 					},
 				}),
 				q(7817, {	-- A Donation of Mageweave
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14729 },	-- Ralston Farnsley
 				}),
 				q(7818, {	-- A Donation of Runecloth
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14729 },	-- Ralston Farnsley
 				}),
 				q(7814, {	-- A Donation of Silk
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14729 },	-- Ralston Farnsley
 				}),
 				q(7813, {	-- A Donation of Wool
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 14729 },	-- Ralston Farnsley
 				}),
@@ -55,10 +55,10 @@ _.Zones =
 					["description"]	= "You get this Quest when you reach Prestige Rang 2.",
 					["races"] = HORDE_ONLY,
 					["lvl"] = 100,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(4293, {	-- A Sample of Slime...
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10136 },	-- Chemist Fuely
 				}),
@@ -75,13 +75,13 @@ _.Zones =
 					["coord"] = { 54.8, 76.3, 90 },
 					["sourceQuest"] = 3542,	-- Delivery to Andron Gant
 					["races"] = HORDE_ONLY,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(6521,  {	-- An Unholy Alliance
 					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
 					["coord"] = { 56.1, 92.1, 90 },
 					["races"] = HORDE_ONLY,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["groups"] = {
 						un(REMOVED_FROM_GAME, i(17042)),	-- Nail Splitter
 						un(REMOVED_FROM_GAME, i(17039)),	-- Skullbreaker
@@ -89,7 +89,7 @@ _.Zones =
 					},
 				}),
 				q(14353, {	-- An Unholy Alliance
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
 					["sourceQuest"] = 14352,	-- An Unholy Alliance
@@ -100,7 +100,7 @@ _.Zones =
 					},
 				}),
 				q(3784,  {	-- Assisting Arch Druid Runetotem
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6741 },	-- Innkeeper Norman
 				}),
 				q(1847,  {	-- Brutal Legguards
@@ -110,7 +110,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7132)),	-- Brutal Legguards
 					},
@@ -142,32 +142,32 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(515,   {	-- Elixir of Agony
 					["provider"] = { "n", 2055 },	-- Master Apothecary Faranell
 					["coord"] = { 48.6, 69.6, 90 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3749)),	-- High Apothecary Cloak
 						un(REMOVED_FROM_GAME, i(3747)),	-- Meditative Sash
 					},
 				}),
 				q(232,   {	-- Errand for Apothecary Zinge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5204 },	-- Apothecary Zinge
 				}),
 				q(238,   {	-- Errand for Apothecary Zinge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5204 },	-- Apothecary Zinge
 					["sourceQuest"] = 232,	-- Errand for Apothecary Zinge
 				}),
 				q(26867, {	-- Enemies Below
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10181 },	-- Lady Sylvanas Windrunner
 				}),
@@ -182,7 +182,7 @@ _.Zones =
 					["sourceQuest"] = 6628,	-- Test of Lore
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6806)),	-- Dancing Flame
 						un(REMOVED_FROM_GAME, i(6804)),	-- Windstorm Hammer
@@ -201,26 +201,26 @@ _.Zones =
 					["coord"] = { 53.8, 54.4, 90 },
 					["sourceQuest"] = 736,	-- The Star, the Hand and the Heart
 					["lvl"] = 30,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4984)),	-- Skull of Impending Doom
 					},
 				}),
 				q(1961, {	-- Gathering Materials
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { 8 },	-- Mage
 				}),
 				q(1109,  {	-- Going, Going, Guano
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2055 },	-- Master Apothecary Faranell
 				}),
 				q(24899, {	-- Going, Going, Guano!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(5050, {	-- Good Luck Charm
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8403 },	-- Jeremiah Payson
 					["sourceQuest"] = 5049,	-- The Jeremiah Blues
 				}),
@@ -241,13 +241,13 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(1113,  {	-- Hearts of Zeal
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2055 },	-- Master Apothecary Faranell
 					["sourceQuest"] = 1109,	-- Going, Going, Guano!
 				}),
 				q(243,   {	-- Into the Field
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5204 },	-- Apothecary Zinge
 					["sourceQuest"] = 238,	-- Errand for Apothecary Zinge
@@ -257,7 +257,7 @@ _.Zones =
 					["coord"] = { 56.3, 92.2, 90 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 33,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10711)),	-- Dragon's Blood Necklace
 						un(REMOVED_FROM_GAME, i(6803)),	-- Prophetic Cane
@@ -265,7 +265,7 @@ _.Zones =
 					},
 				}),
 				q(14355, {	-- Into The Scarlet Monastery
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
 					["g"] = {
@@ -276,7 +276,7 @@ _.Zones =
 				}),
 				q(1960, {	-- Investigate the Alchemist Shop
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { 8 },	-- Mage
 				}),
 				q(27335, {	-- Journey to Orgrimmar
@@ -297,7 +297,7 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(2995,  {	-- Lines of Communication
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 7825 },	-- Oran Snakewrithe
 				}),
@@ -417,7 +417,7 @@ _.Zones =
 					["coord"] = { 47.5, 73.3, 90 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15702)),	-- Chemist's Ring
 						un(REMOVED_FROM_GAME, i(15703)),	-- Chemist's Smock
@@ -453,24 +453,24 @@ _.Zones =
 					["coord"] = { 73.1, 32.8, 90 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(20642)),	-- Antiquated Nobleman's Tunic
 						un(REMOVED_FROM_GAME, i(20643)),	-- Undercity Reservist's Cap
 					},
 				}),
 				q(2342,  {	-- Reclaimed Treasures
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5651 },	-- Patrick Garrett
 				}),
 				q(1959, {	-- Report to Anastasia
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { 8 },	-- Mage
 				}),
 				q(366,   {	-- Return the Book
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 2, 5, 8, },	-- Orc, Undead, Troll
 					["provider"] = { "n", 1498 },	-- Bethor Iceshard
 					["sourceQuest"] = 357,	-- The Lich's Identity
@@ -486,7 +486,7 @@ _.Zones =
 					["coord"] = { 50.1, 68.0, 90 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10637)),	-- Brewer's Gloves
 						un(REMOVED_FROM_GAME, i(10638)),	-- Long Draping Cape
@@ -517,18 +517,18 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(3568,  {	-- Seeping Corruption
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 8390 },	-- Chemist Cuely
 				}),
 				q(3569, {	-- Seeping Corruption
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 8390 },	-- Chemist Cuely
 					["sourceQuest"] = 3568,	-- Seeping Corruption
 				}),
 				q(3570, {	-- Seeping Corruption
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 8390 },	-- Chemist Cuely
 					["sourceQuest"] = 3569,	-- Seeping Corruption
@@ -539,7 +539,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 8 },	-- Mage
 					["lvl"] = 15,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7510)),	-- Lesser Spellfire Robes
 					},
@@ -550,7 +550,7 @@ _.Zones =
 					["sourceQuest"] = 1159,	-- Test of Lore
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(6628,  {	-- Test of Lore
 					["provider"] = { "n", 4488 },	-- Parqual Fintallas
@@ -558,7 +558,7 @@ _.Zones =
 					["sourceQuest"] = 1160,	-- Test of Lore
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1882,  {	-- The Balnir Farmstead
 					["provider"] = { "n", 4568 },	-- Anastasia Hartwell
@@ -566,7 +566,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 8 },	-- Mage
 					["lvl"] = 15,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7507)),	-- Arcane Orb
 						un(REMOVED_FROM_GAME, i(9514)),	-- Arcane Staff
@@ -576,7 +576,7 @@ _.Zones =
 					["provider"] = { "n", 32376 },	-- Broll Bearmantle
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 71,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(44579)),	-- Medallion of Heroism
 						un(REMOVED_FROM_GAME, i(44591)),	-- Wrynn's Leggings of Foresight
@@ -591,7 +591,7 @@ _.Zones =
 					["provider"] = { "n", 31649 },	-- Vol'jin
 					["races"] = HORDE_ONLY,
 					["lvl"] = 71,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 13266,	-- A Life Without Regret
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(44579)),	-- Medallion of Heroism
@@ -604,7 +604,7 @@ _.Zones =
 					},
 				}),
 				q(1474, {	-- The Binding
-					["u"] = 40,	-- Legacy Quest
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5675 },	-- Carendin Halgar
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
@@ -613,17 +613,17 @@ _.Zones =
 					},				
 				}),
 				q(5961, {	-- The Champion of the Banshee Queen
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10181 },	-- Lady Sylvanas Windrunner
 				}),
 				q(495,   {	-- The Crown of Will
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2227 },	-- Sharlindra
 				}),
 				q(5049, {	-- The Jeremiah Blues
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10781 },	-- Royal Overseer Bauhaus
 					["sourceQuest"] = 5023,	-- Better Late Than Never
@@ -639,13 +639,13 @@ _.Zones =
 					},
 				}),
 				q(357,   {	-- The Lich's Identity
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1498 },	-- Bethor Iceshard
 					["sourceQuest"] = 405,	-- The Prodigal Lich
 				}),
 				q(1004,  {	-- The New Frontier
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 10879 },	-- Harbinger Balthazad
 				}),
@@ -654,7 +654,7 @@ _.Zones =
 					["coord"] = { 56.3, 92.2, 90 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15449)),	-- Ghastly Trousers
 						un(REMOVED_FROM_GAME, i(15450)),	-- Dredgemire Leggings
@@ -665,7 +665,7 @@ _.Zones =
 					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15449)),	-- Ghastly Trousers
 						un(REMOVED_FROM_GAME, i(15450)),	-- Dredgemire Leggings
@@ -706,7 +706,7 @@ _.Zones =
 					["sourceQuest"] = 728,	-- To the Undercity for Yagyin's Digest
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(42987, {	-- The Victor's Spoils
 					["provider"] = { "n", 109471 },	-- Lady Sylvanas Windrunner
@@ -716,7 +716,7 @@ _.Zones =
 					["lvl"] = 100,
 				}),
 				q(446,   {	-- Thule Ravenclaw
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1498 },	-- Bethor Iceshard
 				}),
@@ -725,19 +725,19 @@ _.Zones =
 					["coord"] = { 63.8, 49.5, 90 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 27,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2032)),	-- Gallan Cuffs
 						un(REMOVED_FROM_GAME, i(4443)),	-- Grim Pauldrons
 					},
 				}),
 				q(4133, {	-- Vivian Lagrave
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5204 },	-- Apothecary Zinge
 				}),
 				q(4769, {	-- Vivian Lagrave and the Darkstone Tablet
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5204 },	-- Apothecary Zinge
 				}),

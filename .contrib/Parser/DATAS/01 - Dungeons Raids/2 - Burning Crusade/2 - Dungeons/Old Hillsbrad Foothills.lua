@@ -13,14 +13,14 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["groups"] = {
 			n(QUESTS, {
 				q(10283,  {	-- Taretha's Diversion
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 18723 },	-- Erozion
 				}),
 				q(29598, {	-- Taretha's Diversion
 					["provider"] = { "n", 18723 },	-- Erozion
 				}),
 				q(10284,  {	-- Escape from Durnholde
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 17876 },	-- Thrall
 					["sourceQuest"] = 10283,	-- Taretha's Diversion
 					["groups"] = {
@@ -41,7 +41,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 				q(10285,  {	-- Return to Andormu
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 18723 },	-- Erozion
 					["sourceQuest"] = 10284,	-- Escape from Durnholde
 				}),

@@ -231,7 +231,7 @@ _.Zones =
 				prof(ENGINEERING, {
 					n(QUESTS, {
 						q(3637, {	-- Gnome Engineering
-							["u"] = 40,	-- Legacy
+							["u"] = REMOVED_FROM_GAME,
 							["races"] = HORDE_ONLY,
 							["requireSkill"] = ENGINEERING,
 							["provider"] = { "n", 4586 },	-- Graham Van Talen

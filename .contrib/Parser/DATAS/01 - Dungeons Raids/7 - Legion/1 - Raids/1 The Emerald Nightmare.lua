@@ -42,7 +42,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(139480, {	-- Corrupted Egg Fragment [Raid Finder]
 							["questID"] = 43546,	-- The Emerald Nightmare: Il'gynoth [Raid Finder]
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
 							},
@@ -50,7 +50,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140163, {	-- Tainted Moonglade Leaf [Raid Finder]
 							["questID"] = 43902,	-- The Emerald Nightmare: Fall of Cenarius [Raid Finder]
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
 							},
@@ -58,7 +58,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140164, {	-- Vial of Swirling Shadow [Raid Finder]
 							["questID"] = 43903,	-- The Emerald Nightmare: Xavius [Raid Finder]
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(139484)),	-- Cache of Nightmarish Treasures [Raid Finder]
 							},
@@ -270,7 +270,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(139481, {	-- Corrupted Egg Fragment [Normal]
 							["questID"] = 43547,	-- The Emerald Nightmare: Il'gynoth [Normal]
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
 							},
@@ -278,7 +278,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140165, {	-- Tainted Moonglade Leaf [Normal]
 							["questID"] = 43904,	-- The Emerald Nightmare: Fall of Cenarius [Normal]
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
 							},
@@ -286,7 +286,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140166, {	-- Vial of Swirling Shadow [Normal]
 							["questID"] = 43905,	-- The Emerald Nightmare: Xavius [Normal]
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(139486)),	-- Cache of Nightmarish Treasures [Normal]
 							},
@@ -512,7 +512,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(139482, {	-- Corrupted Egg Fragment [Heroic]
 							["questID"] = 43548,	-- The Emerald Nightmare: Il'gynoth [Heroic]
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
 							},
@@ -520,7 +520,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140167, {	-- Tainted Moonglade Leaf [Heroic]
 							["questID"] = 43906,	-- The Emerald Nightmare: Fall of Cenarius [Heroic]
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
 							},
@@ -528,7 +528,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140168, {	-- Vial of Swirling Shadow [Heroic]
 							["questID"] = 43907,	-- The Emerald Nightmare: Xavius [Heroic]
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(139487)),	-- Cache of Nightmarish Treasures [Heroic]
 							},
@@ -755,7 +755,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(139483, {	-- Corrupted Egg Fragment [Mythic]
 							["questID"] = 43549,	-- The Emerald Nightmare: Il'gynoth [Mythic]
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
 							},
@@ -763,7 +763,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140169, {	-- Tainted Moonglade Leaf [Mythic]
 							["questID"] = 43908,	-- The Emerald Nightmare: Fall of Cenarius [Mythic]
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
 							},
@@ -771,7 +771,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140170, {	-- Vial of Swirling Shadow [Mythic]
 							["questID"] = 43909,	-- The Emerald Nightmare: Xavius [Mythic]
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(139488)),	-- Cache of Nightmarish Treasures [Mythic]
 							},

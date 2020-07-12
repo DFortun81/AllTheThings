@@ -249,10 +249,10 @@ _.WorldEvents =
 							["sourceQuests"] = { 40755 },	-- Hiding in the Stacks
 						}),
 						q(43291, {	-- Defend (Dun Morogh)
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(43283, {	-- Demon Commander (Dun Morogh)
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(40755, {	-- Hiding in the Stacks
 							["groups"] = {
@@ -273,34 +273,34 @@ _.WorldEvents =
 							["sourceQuests"] = { 44500 },	-- Author! Author!
 						}),								
 						q(43301, {	-- Invasion: Azshara
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(43284, {	-- Invasion: Dun Morogh
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(42803, {	-- Invasion: Dun Morogh
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(43285, {	-- Invasion: Hillsbrad Foothills
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(42805, {	-- Invasion: Hillsbrad Foothills
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(43282, {	-- Invasion: Northern Barrens
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(42236, {	-- Invasion: Northern Barrens
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(43244, {	-- Invasion: Tanaris
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(42237, {	-- Invasion: Tanaris
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(43245, {	-- Invasion: Westfall
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(42970, {	-- The Diamond King
 							["provider"] = { "n", 113655 },	-- Brann Bronzebeard

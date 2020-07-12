@@ -40,7 +40,7 @@ _.Instances = { tier(1, {	-- Classic
 					["races"] = HORDE_ONLY,
 				}),
 				q(214, { 	-- Red Silk Bandanas
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6094)),		-- Piercing Axe
@@ -57,7 +57,7 @@ _.Instances = { tier(1, {	-- Classic
 					["sourceQuests"] = { 27756 },	-- The Foreman
 				}),
 				q(166, { 	-- The Defias Brotherhood
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6087)),		-- Chausses of Westfall
@@ -96,7 +96,7 @@ _.Instances = { tier(1, {	-- Classic
 					["sourceQuests"] = { 27842 },	-- Only the Beginning
 				}),
 				q(2040, { 	-- Underground Assault
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7606)),		-- Polar Gauntlets

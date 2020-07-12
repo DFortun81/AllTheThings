@@ -17,7 +17,7 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 64827 },	-- Hooded Crusader
 				}),
 				q(26993, {	-- Compendium of the Fallen
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 44800 },	-- Dominic
 					["g"] = {
 						i(7748, {	-- Forcestone Buckler
@@ -26,7 +26,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(26996, {	-- Right Under Their Noses
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 44800 },	-- Dominic
 				}),
 				q(31514, {	-- Unto Dust Thou Shalt Return
@@ -34,7 +34,7 @@ _.Instances = { tier(1, {	-- Classic
 					["sourceQuests"] = { 31513 },	-- Blades of the Anointed
 				}),
 				q(26994, {	-- Without Rhyme or Reason
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 44804 },	-- Dominic
 				}),
 			}),
@@ -188,7 +188,7 @@ _.Instances = { tier(1, {	-- Classic
 					n(-85, {	-- Graveyard
 						n(QUESTS, {
 							q(26972, {	-- The Dark Side of the Light
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(65964)),	-- Gloves of the "Pure"
@@ -199,7 +199,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(26950, {	-- The Dark Side of the Light
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(66032)),	-- Gloves of the "Pure"
@@ -247,7 +247,7 @@ _.Instances = { tier(1, {	-- Classic
 					n(-86, {	-- Library
 						n(QUESTS, {
 							q(26959, {	-- Stripping Their Defenses
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(66033)),	-- Band of the Arcanist
@@ -256,7 +256,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(26973, {	-- The Only True Path
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(65966)),	-- Band of the Arcanist
@@ -281,7 +281,7 @@ _.Instances = { tier(1, {	-- Classic
 					n(-87, {	-- Armory
 						n(QUESTS, {
 							q(26962, {	-- Stripping Their Offense
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(66034)), 	-- Breastplate of the Scarlet Monastery
@@ -292,7 +292,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(26974, {	-- The False Champion
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(65967)), 	-- Breastplate of the Scarlet Monastery
@@ -313,7 +313,7 @@ _.Instances = { tier(1, {	-- Classic
 					n(-88, {	-- Cathedral
 						n(QUESTS, {
 							q(26976, {	-- Battle for the Scarlet Monastery
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(65970)),	-- Band of Grandiose Delusions
@@ -322,7 +322,7 @@ _.Instances = { tier(1, {	-- Classic
 								},
 							}),
 							q(26967, {	-- Battle for the Scarlet Monastery
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(66035)),	-- Band of Wrath

@@ -92,14 +92,14 @@ _.Instances = { tier(1, {	-- Classic
 				["g"] = {
 					n(QUESTS, {
 						q(4771, { 	-- Dawn's Gambit
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(15854)), 	-- Dancing Sliver
 								un(REMOVED_FROM_GAME, i(15853)), 	-- Windreaper
 							},
 						}),
 						q(5384, { 	-- Kirtonos the Herald
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(15806)), 	-- Mirah's Song
 								un(REMOVED_FROM_GAME, i(15805)), 	-- Penelope's Rose
@@ -107,13 +107,13 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(27143, {	-- Barov Family Fortune
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(65923)),	-- Barov Servant Caller
 							},
 						}),
 						q(27148, {	-- School's Out Forever
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(65974)),	-- Discipline Rod
 								un(REMOVED_FROM_GAME, i(65925)),	-- Lucien's Boots
@@ -122,7 +122,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(7668, { 	-- The Darkreaver Menace
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["classes"] = { SHAMAN },
 							["races"] = HORDE_ONLY,
 							["g"] = {
@@ -131,7 +131,7 @@ _.Instances = { tier(1, {	-- Classic
 							},
 						}),
 						q(5262, {	-- The Truth Comes Crashing Down
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["crs" ] = { 10813 },	-- Balnazzar
 							["provider"] = { "i", 13250 },	-- Head of Balnazzar
 							["sourceQuest"] = 5251,	-- The Archivist

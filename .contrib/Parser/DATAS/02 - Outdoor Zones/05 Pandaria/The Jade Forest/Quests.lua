@@ -479,7 +479,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29744, {	-- Pupil of Nature
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 214871 },	-- Shattered Destroyer
 					["coord"] = { 48.5, 20.6, 371 },
 				}),

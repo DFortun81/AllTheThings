@@ -542,13 +542,13 @@ _.Zones =
 					["sourceQuest"] = 11720,	-- The Invasion of Gammoth
 				}),
 				q(13004, {	-- Gem Perfection (A)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26997 },	-- Alestos
 					["requireSkill"] = JEWELCRAFTING,
 				}),
 				q(13002, {	-- Gem Perfection (H)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 26982 },	-- Geba'li
 					["requireSkill"] = JEWELCRAFTING,
@@ -653,7 +653,7 @@ _.Zones =
 					["sourceQuest"] = 11864,	-- A Mission Statement
 				}),
 				q(13257, {	-- Herald of War
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 25256 },	-- High Overlord Saurfang
 					["sourceQuest"] = 13242,	-- Darkness Stirs

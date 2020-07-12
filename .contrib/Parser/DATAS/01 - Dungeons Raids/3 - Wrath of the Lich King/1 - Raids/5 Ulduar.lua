@@ -154,13 +154,13 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					q(13607, {	-- The Celestial Planetarium
 						["sourceQuest"] = 13604,	-- Archivum Data Disc
 						["provider"] = { "n", 33957 },	-- Prospector Loren
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(13606, {	-- Freya's Sigil
 						["sourceQuest"] = 13607,	-- The Celestial Planetarium
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = { 32906 },	-- Freya
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							i(45788, {	-- Freya's Sigil
 								["questID"] = 13606,	-- Freya's Sigil
@@ -171,7 +171,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["sourceQuest"] = 13607,	-- The Celestial Planetarium
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = { 32845 },	-- Hodir
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							i(45786, {	-- Hodir's Sigil
 								["questID"] = 13609,	-- Hodir's Sigil
@@ -182,7 +182,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["sourceQuest"] = 13607,	-- The Celestial Planetarium
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = { 33350 },	-- Mimiron
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							i(45787, {	-- Mimiron's Sigil
 								["questID"] = 13611,	-- Mimiron's Sigil
@@ -193,7 +193,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["sourceQuest"] = 13607,	-- The Celestial Planetarium
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = { 32865 },	-- Thorim
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							i(45784, {	-- Thorim's Sigil
 								["questID"] = 13610,	-- Thorim's Sigil
@@ -209,7 +209,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 						["provider"] = { "n", 33957 },	-- Prospector Loren
 						["crs"] = { 32871 },	-- Algalon the Observer
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							i(45875, {	-- Sack of Ulduar Spoils
 								i(45087),	-- Runed Orb

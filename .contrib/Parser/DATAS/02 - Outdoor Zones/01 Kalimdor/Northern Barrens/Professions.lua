@@ -12,13 +12,13 @@ _.Zones =
 				prof(ENGINEERING, {
 					n(QUESTS, {
 						q(3634, {	-- Gnome Engineering
-							["u"] = 40,	-- Legacy
+							["u"] = REMOVED_FROM_GAME,
 							["races"] = ALLIANCE_ONLY,
 							["requireSkill"] = ENGINEERING,
 							["provider"] = { "n", 3494 },	-- Tinkerwiz
 						}),
 						q(3635, {	-- Gnome Engineering
-							["u"] = 40,	-- Legacy
+							["u"] = REMOVED_FROM_GAME,
 							["races"] = HORDE_ONLY,
 							["requireSkill"] = ENGINEERING,
 							["provider"] = { "n", 3494 },	-- Tinkerwiz

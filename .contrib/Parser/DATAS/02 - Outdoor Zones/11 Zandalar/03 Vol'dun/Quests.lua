@@ -1669,14 +1669,14 @@ _.Zones =
 					},
 				}),
 				q(52024, {	-- Informing the Horde
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 27.0, 52.5, 864 },
 					["provider"] = { "n", 135133 },	-- Warguard Rakera
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 50702 },	-- Defeat Jakra'zet
 				}),
 				q(52023, {	-- Informing the Horde
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 27.0, 52.5, 864 },
 					["provider"] = { "n", 135133 },	-- Warguard Rakera
 					["races"] = HORDE_ONLY,

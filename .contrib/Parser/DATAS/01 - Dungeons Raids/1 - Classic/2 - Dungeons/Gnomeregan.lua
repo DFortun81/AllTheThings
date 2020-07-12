@@ -15,14 +15,14 @@ _.Instances = { tier(1, {	-- Classic
 		["g"] = {
 			n(QUESTS, {
 				q(2904, {	-- A Fine Mess
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(9536)),	-- Fairywing Mantle
 						un(REMOVED_FROM_GAME, i(9535)),	-- Fire-welded Bracers
 					},
 				}),
 				q(2930, {	-- Data Rescue
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(9604)),	-- Mechanic's Pipehammer
@@ -37,7 +37,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(2928, { 	-- Gyrodrillmatic Excavationators
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(9608)),	-- Shoni's Disarming Tool
@@ -55,7 +55,7 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "o", 142487 },	-- The Sparklematic 5200
 				}),
 				q(2841, {	-- Rig Wars
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(9623)),	-- Civinad Robes
@@ -64,7 +64,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(2929, {	-- The Grand Betrayal
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(9623)),	-- Civinad Robes

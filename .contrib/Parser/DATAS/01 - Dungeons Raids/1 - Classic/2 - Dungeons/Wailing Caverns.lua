@@ -22,7 +22,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(1487, {	-- Deviate Eradication
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5768 },	-- Ebru
 					["g"] = {
 						un(8, i(6476)),	-- Pattern: Deviate Scale Belt
@@ -31,7 +31,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(1486, {	-- Deviate Hides
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5767 },	-- Nalpak
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6480)),	-- Slick Deviate Leggings
@@ -42,19 +42,19 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 5767 },	-- Nalpak
 				}),
 				q(26879, {	-- Disciples of Naralex
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26873, {	-- Preemptive Methods
 					["provider"] = { "n", 5767 },	-- Nalpak
 				}),
 				q(3366, {	-- The Glowing Shard
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 3654 },	-- Mutanus the Devourer
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 10441 },	-- Glowing Shard
 				}),
 				q(6981, {	-- The Glowing Shard
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 3654 },	-- Mutanus the Devourer
 					["provider"] = { "i", 10441 },	-- Glowing Shard
 				}),

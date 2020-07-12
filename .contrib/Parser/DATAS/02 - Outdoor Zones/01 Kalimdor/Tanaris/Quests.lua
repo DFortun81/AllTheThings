@@ -22,13 +22,13 @@ _.Zones =
 					["coord"] = { 51.6, 28.6, 71 },
 					["sourceQuest"] = 2764,	-- Galvin's Finest Pupil
 					["requireSkill"] = BLACKSMITHING,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7987)),	-- Plans: Ornate Mithril Helm
 					},
 				}),
 				q(3913,  {	-- A Grave Situation
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9299 },	-- Gaeriyan
 					["sourceQuest"] = 3912,	-- Meet at the Grave
 				}),
@@ -42,14 +42,14 @@ _.Zones =
 					["coord"] = { 52.0, 27.0 , 71 },
 					["sourceQuest"] = 8924,	-- Hunting for Ectoplasm
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(8928,  {	-- A Shifty Merchant
 					["provider"] = { "n", 16014 },	-- Mux Manascrambler
 					["coord"] = { 52.0, 27.0 , 71 },
 					["sourceQuest"] = 8925,	-- A Portable Power Source
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26889, {	-- All Cheered Out
 					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
@@ -90,7 +90,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(841,   {	-- Another Power Source?
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7407 },	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -98,31 +98,31 @@ _.Zones =
 					},
 				}),
 				q(9269,  {	-- Atiesh, Greatstaff of the Guardian
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["classes"] = { DRUID },
 					["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 				}),
 				q(9270,  {	-- Atiesh, Greatstaff of the Guardian
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["classes"] = { MAGE },
 					["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 				}),
 				q(9271,  {	-- Atiesh, Greatstaff of the Guardian
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["classes"] = { WARLOCK },
 					["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 				}),
 				q(9257,  {	-- Atiesh, Greatstaff of the Guardian
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["classes"] = { PRIEST },
 					["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 				}),
 				q(9251,  {	-- Atiesh, the Befouled Greatstaff
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15192 },	-- Anachronos
 					["sourceQuest"] = 9250,	-- Frame of Atiesh
 				}),
@@ -154,7 +154,7 @@ _.Zones =
 						4494,	-- March of the Silithid [Horde]
 						4493,	-- March of the Silithid [Alliance]
 					},
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(25112, {	-- Butcherbot
 					["provider"] = { "n", 39178 },	-- Driz Plunkbow
@@ -165,14 +165,14 @@ _.Zones =
 					["coord"] = { 50.8, 27.0, 71 },
 					["sourceQuest"] = 4507,	-- Pawn Captures Queen
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(4509,  {	-- Calm Before the Storm (H)
 					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
 					["coord"] = { 50.8, 27.0, 71 },
 					["sourceQuest"] = 4507,	-- Pawn Captures Queen
 					["races"] = HORDE_ONLY,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(25166, {	-- Captain Dreadbeard (A)
 					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
@@ -212,7 +212,7 @@ _.Zones =
 					["sourceQuest"] = 24932,	-- Cutting Losses
 				}),
 				q(13825, {	-- Clamlette Surprise
-					["u"] = 40,	
+					["u"] = REMOVED_FROM_GAME,	
 					["provider"] = { "n", 40589 },	-- Dirge Quikcleave
 					["description"] = "This quest is only available if you learned Artisan Cooking before 3.1.0",
 					["requireSkill"] = COOKING,
@@ -233,7 +233,7 @@ _.Zones =
 					},
 				}),
 				q(8181,  {	-- Confront Yeh'kinya
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10460 },	-- Prospector Ironboot
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(20218)),	-- Faded Hakkari Cloak
@@ -284,12 +284,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2661, {	-- Delivery for Marin
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7583 },	-- Sprinkle
 					["sourceQuest"] = 2641,	-- Sprinkle's Secret Ingredient
 				}),
 				q(2874,  {	-- Deliver to MacKinley
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7881 },	-- Stoley
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(9637)),	-- Shinkicker Boots
@@ -305,7 +305,7 @@ _.Zones =
 						2772,	-- The World At Your Feet
 					},
 					["requireSkill"] = BLACKSMITHING,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10418)),	-- Glimmering Mithril Insignia
 					},
@@ -341,7 +341,7 @@ _.Zones =
 					["provider"] = { "i", 8623 },	-- OOX-17/TN Distress Beacon
 				}),
 				q(5802, {	-- Fire Plume Forged
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 5411 },	-- Krinkle Goodsteel
 					["sourceQuest"] = 5514,	-- Mold Rhymes With...
@@ -358,16 +358,16 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(9250,  {	-- Frame of Atiesh
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "i", 22727 },	-- Frame of Atiesh
 				}),
 				q(992,   {	-- Gadgetzan Water Survey
 					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, 71 },
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(3161,  {	-- Gahz'ridian
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7771 },	-- Marvon Rivetseeker
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10827)),	-- Surveyor's Tunic
@@ -428,14 +428,14 @@ _.Zones =
 						8921,	-- The Ectoplasmic Distiller [Horde]
 					},
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(25521, {	-- I'm With Scorpid
 					["provider"] = { "n", 40580 },	-- Gus Rustflutter
 					["coord"] = { 42.4, 24.2, 71 },
 				}),
 				q(7653,  {	-- Imperial Plate Belt
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
@@ -445,7 +445,7 @@ _.Zones =
 					},
 				}),
 				q(7654,  {	-- Imperial Plate Boots
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
@@ -455,7 +455,7 @@ _.Zones =
 					},
 				}),
 				q(7655,  {	-- Imperial Plate Bracer
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
@@ -465,7 +465,7 @@ _.Zones =
 					},
 				}),
 				q(7656,  {	-- Imperial Plate Chest
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
@@ -475,7 +475,7 @@ _.Zones =
 					},
 				}),
 				q(7657,  {	-- Imperial Plate Helm
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
@@ -485,7 +485,7 @@ _.Zones =
 					},
 				}),
 				q(7658,  {	-- Imperial Plate Leggings
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
@@ -495,7 +495,7 @@ _.Zones =
 					},
 				}),
 				q(7659,  {	-- Imperial Plate Shoulders
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 14567 },	-- Derotain Mudsipper <The Thorium Brotherhood>
 					["requireSkill"] = BLACKSMITHING,
 					["g"] = {
@@ -505,7 +505,7 @@ _.Zones =
 					},
 				}),
 				q(2606, {	-- In Good Taste
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7564 },	-- Marin Noggenfogger
 					["sourceQuest"] = 2605,	-- The Thirsty Goblin
 				}),
@@ -513,16 +513,16 @@ _.Zones =
 					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, 71 },
 					["sourceQuest"] = 10,	-- The Scrimshank Redemption
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(113,   {	-- Insect Part Analysis
 					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
 					["coord"] = { 50.8, 27.0, 71 },
 					["sourceQuest"] = 110,	-- Insect Part Analysis
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(3446, {	-- Into the Depths
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7771 },	-- Marvon Rivetseeker
 					["sourceQuest"] = 3444,	-- The Stone Circle
 				}),
@@ -562,7 +562,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(3914,  {	-- Linken's Sword
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 148504 },	-- A Conspicuous Gravestone
 					["sourceQuest"] = 3913,	-- A Grave Situation
 				}),
@@ -593,7 +593,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(1691, {	-- More Wastewander Justice
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7407 },	-- Chief Engineer Bilgewhizzle
 					["sourceQuest"] = 1690,	-- Wastewander Justice
 				}),
@@ -623,7 +623,7 @@ _.Zones =
 					},
 				}),
 				q(2662, {	-- Noggenfogger Elixir
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7564 },	-- Marin Noggenfogger
 					["sourceQuest"] = 2661,	-- Delivery for Marin
 				}),
@@ -634,7 +634,7 @@ _.Zones =
 					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, 71 },
 					["sourceQuest"] = 992,	-- Gadgetzan Water Survey
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(40881, {	-- Oil Rags to Riches
 					["coord"] = { 69.5, 68.4, 71 },
@@ -650,10 +650,10 @@ _.Zones =
 					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg
 					["coord"] = { 50.8, 27.0, 71 },
 					["sourceQuest"] = 4496,	-- Bungle in the Jungle
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(8365, {	-- Pirate Hats Ahoy!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15165 },	-- Haughty Modiste
 				}),
 				q(28881, {	-- Prospector Gunstan
@@ -692,7 +692,7 @@ _.Zones =
 					},
 				}),
 				q(864,   {	-- Return to Apothecary Zinge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7407 },	-- Chief Engineer Bilgewhizzle
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 654,	-- Tanaris Field Sampling
@@ -708,7 +708,7 @@ _.Zones =
 					["sourceQuest"] = 8928,	-- A Shifty Merchant
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(2977,  {	-- Return to Ironforge
 					["model"] = 201041,
@@ -717,7 +717,7 @@ _.Zones =
 					["sourceQuest"] = 2954,	-- The Stone Watcher
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(8978,  {	-- Return to Mokvar
 					["provider"] = { "n", 16014 },	-- Mux Manascrambler
@@ -725,7 +725,7 @@ _.Zones =
 					["sourceQuest"] = 8928,	-- A Shifty Merchant
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(53819, {	-- Return to the Nest
 					["provider"] = { "n", 151132 },	-- Feathers
@@ -740,7 +740,7 @@ _.Zones =
 					["sourceQuest"] = 2954,	-- The Stone Watcher
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(24905, {	-- Returning a Favor
 					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
@@ -754,14 +754,14 @@ _.Zones =
 					["coord"] = { 50.2, 27.5, 71 },
 					["sourceQuest"] = 113,	-- Insect Part Analysis
 					["races"] = HORDE_ONLY,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(162,   {	-- Rise of the Silithid [Alliance]
 					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, 71 },
 					["sourceQuest"] = 113,	-- Insect Part Analysis
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(25050, {	-- Rocket Rescue
 					["provider"] = { "n", 38535 },	-- Kelsey Steelspark
@@ -794,7 +794,7 @@ _.Zones =
 					},
 				}),
 				q(1189,  {	-- Safety First
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4708 },	-- Shreev
 					["sourceQuest"] = 1188,	-- Safety First
 					["g"] = {
@@ -837,7 +837,7 @@ _.Zones =
 					},
 				}),
 				q(2865, {	-- Scarab Shells
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7876 },	-- Tran'rek
 					["sourceQuest"] = 2864,	-- Tran'rek
 				}),
@@ -850,7 +850,7 @@ _.Zones =
 					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(3520, {	-- Screecher Spirits
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8579 },	-- Yeh'kinya
 				}),
 				q(25048, {	-- Seaside Salvage (A)
@@ -885,13 +885,13 @@ _.Zones =
 					},
 				}),
 				q(2876, {	-- Ship Schedules
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "i", 9250 },	-- Ship Schedule
 				}),
 				q(379,   {	-- Slake That Thirst
 					["provider"] = { "n", 7407 },	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 					["races"] = HORDE_ONLY,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(8524)),	-- Model 4711-FTZ Power Source
 					},
@@ -906,7 +906,7 @@ _.Zones =
 					},
 				}),
 				q(8366,  {	-- Southsea Shakedown
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7882 },	-- Security Chief Bilgewhizzle
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(20640)),	-- Southsea Head Bucket
@@ -914,21 +914,21 @@ _.Zones =
 					},
 				}),
 				q(2641, {	-- Sprinkle's Secret Ingredient
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7583 },	-- Sprinkle
 					["sourceQuest"] = 2606,	-- In Good Taste
 				}),
 				q(2873, {	-- Stoley's Shipment
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7881 },	-- Stoley
 					["sourceQuest"] = 2872,	-- Stoley's Debt
 				}),
 				q(4504, {	-- Super Sticky
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7876 },	-- Tran'rek
 				}),
 				q(654,   {	-- Tanaris Field Sampling
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 				}),
 				q(25063, {	-- Terrapination
@@ -941,7 +941,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(4787, {	-- The Ancient Egg
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8579 },	-- Yeh'kinya
 					["sourceQuest"] = 3527,	-- The Prophecy of Mosh'aru
 				}),
@@ -961,7 +961,7 @@ _.Zones =
 					["sourceQuest"] = 25017,	-- Ancient Obstacles
 				}),
 				q(5863,  {	-- The Dunemaul Compound
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11758 },	-- Andi Lynn
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(16739)),	-- Rugwood Mantle
@@ -973,7 +973,7 @@ _.Zones =
 					["coord"] = { 52.0, 27.0, 71 },
 					["sourceQuest"] = 8923,	-- A Supernatural Device
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(25421, {	-- The Grand Tablet (A)
 					["coord"] = { 37.8, 82.4, 71 },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
@@ -998,7 +998,7 @@ _.Zones =
 					},
 				}),
 				q(5065, {	-- The Lost Tablets of Mosh'aru
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10460 },	-- Prospector Ironboot
 					["sourceQuest"] = 3528,	-- The God Hakkar
 				}),
@@ -1007,13 +1007,13 @@ _.Zones =
 					["coord"] = { 51.6, 28.6, 71 },
 					["sourceQuest"] = 2764,	-- Galvin's Finest Pupil
 					["requireSkill"] = BLACKSMITHING,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7986)),	-- Plans: Ornate Mithril Breastplate
 					},
 				}),
 				q(3527, {	-- The Prophecy of Mosh'aru
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8579 },	-- Yeh'kinya
 					["sourceQuest"] = 3520,	-- Screecher Spirits
 				}),
@@ -1021,7 +1021,7 @@ _.Zones =
 					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, 71 },
 					["sourceQuest"] = 82,	-- Noxious Lair Investigation
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(25566, {	-- The Secrets of Uldum
 					["provider"] = { "n", 40109 },	-- Prospector Gunstan
@@ -1036,7 +1036,7 @@ _.Zones =
 					["sourceQuest"] = 25017,	-- Ancient Obstacles
 				}),
 				q(3444, {	-- The Stone Circle
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7771 },	-- Marvon Rivetseeker
 					["sourceQuests"] = {
 						3445,	-- The Sunken Temple (A)
@@ -1051,14 +1051,14 @@ _.Zones =
 						2946,	-- Seeing What Happens [Alliance]
 					},
 					["lvl"] = 45,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(2741, {	-- The Super Egg-O-Matic
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 142071 },	-- Egg-O-Matic
 				}),
 				q(2605, {	-- The Thirsty Goblin
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7564 },	-- Marin Noggenfogger
 				}),
 				q(26896, {	-- The Thunderdrome!
@@ -1074,7 +1074,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(10445, {	-- The Vials of Eternity (legacy version)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = 	{ "n", 19935 },	-- Soridormi
 				}),
 				q(13432, {	-- The Vials of Eternity
@@ -1091,13 +1091,13 @@ _.Zones =
 					["coord"] = { 51.6, 28.6, 71 },
 					["sourceQuest"] = 2764,	-- Galvin's Finest Pupil
 					["requireSkill"] = BLACKSMITHING,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7988)),	-- Plans: Ornate Mithril Boots
 					},
 				}),
 				q(3362, {	-- Thistleshrub Valley
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 7876 },	-- Tran'rek
 				}),
@@ -1168,7 +1168,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(1560,  {	-- Tooga's Quest
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 5955 },	-- Tooga
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(9642)),	-- Band of the Great Tortoise
@@ -1176,7 +1176,7 @@ _.Zones =
 					},
 				}),
 				q(3042, {	-- Troll Temper
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer
 				}),
 				q(24911, {	-- Tropical Paradise Beckons
@@ -1197,11 +1197,11 @@ _.Zones =
 					["sourceQuest"] = 24905,	-- Returning a Favor
 				}),
 				q(2875, {	-- WANTED: Andre Firebeard
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 142122 },	-- Wanted Poster
 				}),
 				q(2781, {	-- WANTED: Caliph Scorpidsting
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "o", 142122 },	-- Wanted Poster
 				}),
 				q(9268,  {	-- War at Sea
@@ -1211,11 +1211,11 @@ _.Zones =
 					["description"] = "Only available with reputations of Hated or Unfriendly with Gadgetzan",
 				}),
 				q(1690, {	-- Wastewander Justice
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7407 },	-- Chief Engineer Bilgewhizzle
 				}),
 				q(1707, {	-- Water Pouch Bounty
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7408 },	-- Spigot Operator Luglunket
 				}),
 				q(25070, {	-- What Lies Within

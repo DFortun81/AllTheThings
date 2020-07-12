@@ -122,7 +122,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 108961 },	-- Sergeant Dalton
 					}),
 					q(45986, {	-- An Urgent Warning
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["classes"] = { WARRIOR },
 						["provider"] = { "n", 118406 },	-- Injured Shieldmaiden
 						["isBreadcrumb"] = true,
@@ -284,7 +284,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 44849,	-- Recruitment Drive
 					}),
 					q(45987, {	-- Investigate the Broken Shore
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["coord"] = { 59.7, 13.4, 695 },
 						["classes"] = { WARRIOR },
 						["provider"] = { "n", 100635 },	-- Skyseer Ghrent
@@ -532,14 +532,14 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(39192, {	-- The Forge of Odyn
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["coord"] = { 41.0, 37.1, 695 },
 						["classes"] = { WARRIOR },
 						["provider"] = { "n", 96586 },	-- Master Smith Helgar
 						["sourceQuest"] = 39530,	-- The Forgening
 					}),
 					q(39530, {	-- The Forgening
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["coord"] = { 58.3, 84.6, 695 },
 						["classes"] = { WARRIOR },
 						["provider"] = { "n", 96469 },	-- Odyn
@@ -552,7 +552,7 @@ _.ExpansionFeatures =
 					}),
 					q(40043),	-- The Hunter of Heroes
 					q(44222, {	-- The Might of the Val'kyr
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["coord"] = { 72.6, 30.8, 695 },
 						["classes"] = { WARRIOR },
 						["provider"] = { "n", 111774 },	-- Matilda Skoptidottir

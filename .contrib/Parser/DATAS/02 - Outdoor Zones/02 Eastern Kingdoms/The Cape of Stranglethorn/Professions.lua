@@ -9,13 +9,13 @@ _.Zones =
 				prof(ENGINEERING, {
 					n(QUESTS, {
 						q(3642, {	-- The Pledge of Secrecy
-							["u"] = 40,	-- Legacy
+							["u"] = REMOVED_FROM_GAME,
 							["races"] = ALLIANCE_ONLY,
 							["requireSkill"] = ENGINEERING,
 							["provider"] = { "n", 7406 },	-- Oglethorpe Obnoticus
                         }),
                         q(3643, {	-- Show Your Work
-							["u"] = 40,	-- Legacy
+							["u"] = REMOVED_FROM_GAME,
 							["races"] = ALLIANCE_ONLY,
 							["requireSkill"] = ENGINEERING,
                             ["provider"] = { "n", 7406 },	-- Oglethorpe Obnoticus

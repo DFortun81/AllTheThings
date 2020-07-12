@@ -25,7 +25,7 @@ _.Zones =
 					["sourceQuest"] = 2977,	-- Return to Ironforge
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(34418)),	-- Scrying Wand
 						un(REMOVED_FROM_GAME, i(34419)),	-- Thorium Flight Blade
@@ -36,7 +36,7 @@ _.Zones =
 					["coord"] = { 38.4, 87.2, 87 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4535)),	-- Ironforge Memorial Ring
 					},
@@ -70,7 +70,7 @@ _.Zones =
 					["coord"] = { 77.4, 11.6, 87 },
 					["sourceQuest"] = 726,	-- Passing Word of a Threat
 					["lvl"] = 35,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4987)),	-- Dwarf Captain's Sword
 					},
@@ -89,7 +89,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(21996)),	-- Bracers of Heroism
 					},
@@ -100,7 +100,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22088)),	-- Soulforge Bracers
 					},
@@ -111,7 +111,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { HUNTER },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22011)),	-- Beastmaster's Bindings
 					},
@@ -122,7 +122,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22004)),	-- Darkmantle Bracers
 					},
@@ -133,7 +133,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PRIEST },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22079)),	-- Virtuous Bracers
 					},
@@ -144,7 +144,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { SHAMAN },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22095)),	-- Bindings of The Five Thunders
 					},
@@ -155,7 +155,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22063)),	-- Sorcerer's Bindings
 					},
@@ -166,7 +166,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22071)),	-- Deathmist Bracers
 					},
@@ -177,7 +177,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22108)),	-- Feralheart Bracers
 					},
@@ -198,7 +198,7 @@ _.Zones =
 					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(8960,  {	-- Bodley's Unfortunate Fate
 					["provider"] = { "n", 16013 },	-- Deliana
@@ -216,7 +216,7 @@ _.Zones =
 					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(38394, {	-- Completionism
 					["provider"] = { "n", 6294 },	-- Krom Stoutarm
@@ -250,7 +250,7 @@ _.Zones =
 					["coord"] = { 50.8, 5.6, 87 },
 					["sourceQuest"] = 736,	-- The Star, the Hand and the Heart
 					["lvl"] = 30,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4984)),	-- Skull of Impending Doom
 					},
@@ -271,7 +271,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6978)),	-- Umbral Axe
 						un(REMOVED_FROM_GAME, i(6982)),	-- Umbral Mace
@@ -294,7 +294,7 @@ _.Zones =
 					["coord"] = { 42.6, 53.8, 87 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1708,  {	-- Iron Coral
 					["provider"] = { "n", 6169 },	-- Klockmort Spannerspan
@@ -303,7 +303,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(8937,  {	-- Just Compensation (Warrior)
 					["provider"] = { "n", 16013 },	-- Deliana
@@ -312,7 +312,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(21994)), 	-- Belt of Heroism
 						un(REMOVED_FROM_GAME, i(21998)), 	-- Gauntlets of Heroism
@@ -325,7 +325,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22086)), 	-- Soulforge Belt
 						un(REMOVED_FROM_GAME, i(22090)), 	-- Soulforge Gauntlets
@@ -338,7 +338,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { HUNTER },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22010)), 	-- Beastmaster's Belt
 						un(REMOVED_FROM_GAME, i(22015)), 	-- Beastmaster's Gloves
@@ -351,7 +351,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22002)), 	-- Darkmantle Belt
 						un(REMOVED_FROM_GAME, i(22006)), 	-- Darkmantle Gloves
@@ -364,7 +364,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PRIEST },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22078)), 	-- Virtuous Belt 
 						un(REMOVED_FROM_GAME, i(22081)), 	-- Virtuous Gloves
@@ -377,7 +377,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { SHAMAN },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22098)), 	-- Cord of The Five Thunders
 						un(REMOVED_FROM_GAME, i(22099)), 	-- Gauntlets of The Five Thunders
@@ -390,7 +390,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22062)), 	-- Sorcerer's Belt 
 						un(REMOVED_FROM_GAME, i(22066)), 	-- Sorcerer's Gloves
@@ -403,7 +403,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22070)), 	-- Deathmist Belt
 						un(REMOVED_FROM_GAME, i(22077)), 	-- Deathmist Wraps
@@ -416,7 +416,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22106)), 	-- Feralheart Belt
 						un(REMOVED_FROM_GAME, i(22110)), 	-- Feralheart Gloves
@@ -437,7 +437,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6974)),	-- Fire Hardened Gauntlets
 					},
@@ -456,7 +456,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7507)),	-- Arcane Orb
 						un(REMOVED_FROM_GAME, i(9514)),	-- Arcane Staff
@@ -539,7 +539,7 @@ _.Zones =
 					["coord"] = { 75.0, 12.5, 87 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7746)),	-- Explorers' League Commendation
 					},
@@ -562,7 +562,7 @@ _.Zones =
 					["coord"] = { 77.4, 11.6, 87 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(726,   {	-- Passing Word of a Threat
 					["provider"] = { "n", 2918 },	-- Advisor Belgrum
@@ -570,7 +570,7 @@ _.Zones =
 					["sourceQuest"] = 725,	-- Passing Word of a Threat
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(2963,  {	-- Portents of Uldum
 					["provider"] = { "n", 5387 },	-- High Explorer Magellas
@@ -578,7 +578,7 @@ _.Zones =
 					["sourceQuest"] = 2439,	-- The Platinum Discs
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(302,   {	-- Powder to Ironband
 					["provider"] = { "n", 1356 },	-- Prospector Stormpike
@@ -586,7 +586,7 @@ _.Zones =
 					["sourceQuest"] = 301,	-- Report to Ironforge
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1453,  {	-- Reclaimers' Business in Desolace
 					["provider"] = { "n", 5637 },	-- Roetten Stonehammer
@@ -618,7 +618,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,	
 					["classes"] = { WARRIOR },						
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(21997)),	-- Breastplate of Heroism
 						un(REMOVED_FROM_GAME, i(21999)),	-- Helm of Heroism
@@ -631,7 +631,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },						
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22089)),	-- Soulforge Breastplate
 						un(REMOVED_FROM_GAME, i(22091)),	-- Soulforge Helm
@@ -644,7 +644,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { HUNTER },						
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22013)),	-- Beastmaster's Cap 
 						un(REMOVED_FROM_GAME, i(22060)),	-- Beastmaster's Tunic
@@ -657,7 +657,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },						
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22005)),	-- Darkmantle Cap
 						un(REMOVED_FROM_GAME, i(22009)),	-- Darkmantle Tunic
@@ -670,7 +670,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PRIEST },						
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22080)),	-- Virtuous Crown 
 						un(REMOVED_FROM_GAME, i(22083)),	-- Virtuous Robe
@@ -683,7 +683,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { SHAMAN },						
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22097)),	-- Coif of The Five Thunders 
 						un(REMOVED_FROM_GAME, i(22102)),	-- Vest of The Five Thunders
@@ -696,7 +696,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },						
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22065)),	-- Sorcerer's Crown
 						un(REMOVED_FROM_GAME, i(22069)),	-- Sorcerer's Robes
@@ -709,7 +709,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },						
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22074)),	-- Deathmist Mask 
 						un(REMOVED_FROM_GAME, i(22075)),	-- Deathmist Robe
@@ -722,7 +722,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },						
 					["lvl"] = 58,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22109)),	-- Feralheart Cowl 
 						un(REMOVED_FROM_GAME, i(22113)),	-- Feralheart Vest
@@ -734,7 +734,7 @@ _.Zones =
 					["sourceQuest"] = 2963,	-- Portents of Uldum
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(32317, {	-- Seeking the Soulstones
 					["provider"] = { "n", 5173 },	-- Alexander Calder
@@ -770,7 +770,7 @@ _.Zones =
 					["sourceQuest"] = 2278,	-- The Platinum Discs
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(9587)),	-- Thawpelt Sack
 					},
@@ -792,7 +792,7 @@ _.Zones =
 					["provider"] = { "n", 8879 },	-- Royal Historian Archersonus
 					["coord"] = { 38.4, 55.3, 87 },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12102)),	-- Ring of the Aristocrat
 					},
@@ -803,7 +803,7 @@ _.Zones =
 					["sourceQuest"] = 727,	-- To Ironforge for Yagyin's Digest
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),			
 				q(1789,  {	-- The Symbol of Life
 					["provider"] = { "n", 6179 },	-- Tiza Battleforge
@@ -830,7 +830,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
 					["lvl"] = 30,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1804,  {	-- Tome of the Cabal
 					["provider"] = { "n", 6294 },	-- Krom Stoutarm
@@ -839,7 +839,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
 					["lvl"] = 30,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27266, {	-- Wulf Calls
 					["provider"] = { "n", 5115 },	-- Daera Brightspear (Ironforge)

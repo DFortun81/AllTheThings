@@ -350,7 +350,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["coord"] = { 52.4, 77.0, 87 },
 						["races"] = HORDE_ONLY,
 						["maps"] = { 85 },	-- Orgrimmar
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["isYearly"] = true,
 						}),
 					q(8763, {	-- The Hero of the Day
@@ -358,7 +358,7 @@ _.Holidays = bubbleDown({["u"] = 29},
 						["coord"] = { 33.2, 67.8, 87 },
 						["races"] = ALLIANCE_ONLY,
 						["maps"] = { 87 },	-- Ironforge
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["isYearly"] = true,
 					}),
 ]]--

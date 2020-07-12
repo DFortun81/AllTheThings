@@ -28,7 +28,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(QUESTS, {
 				q(9053, {	-- A Better Ingredient
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
 					["classes"] = { DRUID },
 					["g"] = {
@@ -41,7 +41,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(8257, {	-- Blood of Morphaz
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8405 },	-- Ogtinc
 					["classes"] = { PRIEST },
 					["g"] = {
@@ -51,7 +51,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(8413, {	-- Da Voodoo
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6176 },	-- Bath'rah the Windwatcher
 					["classes"] = { SHAMAN },
 					["g"] = {
@@ -61,7 +61,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(8253, {	-- Destroy Morphaz
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8379 },	-- Archmage Xylem
 					["classes"] = { MAGE },
 					["g"] = {
@@ -78,7 +78,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(8418, {	-- Forging the Mightstone
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 10838 },	-- Commander Ashlam Valorfist
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
@@ -89,7 +89,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(1475, {	-- Into The Temple of Atal'Hakkar
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(1490)),	-- Guardian Talisman
@@ -99,7 +99,7 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 46077 },	-- Lord Itharius
 				}),
 				q(3447, {	-- Secret of the Circle
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10773, { 		-- Hakkari Urn
 							un(REMOVED_FROM_GAME, i(10781)),	-- Hakkari Breastplate
@@ -109,7 +109,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(8236, {	-- The Azure Key
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8379 },	-- Archmage Xylem
 					["classes"] = { ROGUE },
 					["g"] = {
@@ -122,7 +122,7 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 46077 },	-- Lord Itharius
 				}),
 				q(3528, {	-- The God Hakkar
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10749)),	-- Avenguard Helm
 						un(REMOVED_FROM_GAME, i(10750)),	-- Lifeforce Dirk
@@ -130,7 +130,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(27634, {	-- The God Hakkar
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10749)),	-- Avenguard Helm
 						un(REMOVED_FROM_GAME, i(10750)),	-- Lifeforce Dirk
@@ -138,7 +138,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(8232, {	-- The Green Drake
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 8405 },	-- Ogtinc
 					["classes"] = { HUNTER },
 					["g"] = {
@@ -148,14 +148,14 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(1445, {	-- [DEPRECATED]The Temple of Atal'Hakkar
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(1490)),	-- Guardian Talisman
 					},
 				}),
 				q(8422, {	-- Trolls of a Feather
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 14470 },	-- Impsy
 					["classes"] = { WARLOCK },
 					["g"] = {
@@ -165,7 +165,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				q(8425, {	-- Voodoo Feathers
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
 					["classes"] = { WARRIOR },
 					["g"] = {
@@ -367,7 +367,7 @@ _.Instances = { tier(1, {	-- Classic
 				ach(641),	-- Sunken Temple
 				i(10454, {	-- Essence of Eranikus
 					["questID"] = 3373,	-- The Essence of Eranikus
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10455)),	-- Chained Essence of Eranikus
 					},

@@ -232,13 +232,13 @@ _.WorldEvents =
 			}),
 			q(7981,  {	-- 1200 Tickets - Amulet of the Darkmoon
 				["provider"] = { "n", 14828 },	-- Gelvas Grimegate <Souvenir & Toy Prizes>
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					un(REMOVED_FROM_GAME, i(19491)),	-- Amulet of the Darkmoon
 				},
 			}),
 			q(7940,  {	-- 1200 Tickets - Orb of the Darkmoon
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 14828 },	-- Gelvas Grimegate <Souvenir & Toy Prizes>
 				["g"] = {
 					un(REMOVED_FROM_GAME, i(19426)),	-- Orb of the Darkmoon
@@ -259,7 +259,7 @@ _.WorldEvents =
 				},
 			}),
 			q(29447, {	-- A Curious Crystal
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29443, {	-- A Curious Crystal
 				["isMonthly"] = true,
@@ -289,7 +289,7 @@ _.WorldEvents =
 			}),
 			q(29478, {	-- A Fizzy Fusion
 				["requireSkill"] = ALCHEMY,
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29444, {	-- An Exotic Egg
 				["isMonthly"] = true,
@@ -306,7 +306,7 @@ _.WorldEvents =
 				},
 			}),
 			q(29449, {	-- An Intriguing Grimoire
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29445, {	-- An Intriguing Grimoire
 				["isMonthly"] = true,
@@ -323,7 +323,7 @@ _.WorldEvents =
 				},
 			}),
 			q(29450, {	-- A Wondrous Weapon
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29446, {	-- A Wondrous Weapon
 				["isMonthly"] = true,
@@ -367,7 +367,7 @@ _.WorldEvents =
 				},
 			}),
 			q(29480, {	-- Banners, Banners Everywhere!
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(33354, {	-- Den Mother's Demise
 				["creatureID"] = 71992,	-- Moonfang
@@ -399,7 +399,7 @@ _.WorldEvents =
 				},
 			}),
 			q(29485, {	-- Fun for the Little Ones
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29507, {	-- Fun for the Little Ones
 				["requireSkill"] = ARCHAEOLOGY,
@@ -414,7 +414,7 @@ _.WorldEvents =
 				},
 			}),
 			q(29479, {	-- Herbs for Healing
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29514, {	-- Herbs for Healing
 				["requireSkill"] = HERBALISM,
@@ -470,7 +470,7 @@ _.WorldEvents =
 			}),
 			q(29483, {	-- Keeping the Faire Sparkling
 				["requireSkill"] = JEWELCRAFTING,
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(33756, {	-- Let's Keep Racing
 				["sourceQuests"] = { 37910 },	-- Welcome to the Darkmoon Races
@@ -498,19 +498,19 @@ _.WorldEvents =
 				},
 			}),
 			q(7941,  {	-- More Armor Kits
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(7943,  {	-- More Bat Eyes
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(7939,  {	-- More Dense Grinding Stones
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(8223,  {	-- More Glowing Scorpid Blood
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(7942,  {	-- More Thorium Widgets
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(37868, {	-- More Big Racing!
 				["sourceQuests"] = { 37911 },	-- The Real Big Race
@@ -527,17 +527,17 @@ _.WorldEvents =
 				},
 			}),
 			q(29466, {	-- Plenty of Plump Frogs
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29512, {	-- Putting the Carnies Back Together Again
 				["requireSkill"] = FIRST_AID,
 				["isMonthly"] = true,
 				["provider"] = { "n", 14833 },	-- Chronos
 				["coord"] = { 54.9, 70.7, 407 },
-				["u"] = 40,	-- Legacy Quests — First Aid removed in 8.0.1 BfA Prepatch
+				["u"] = REMOVED_FROM_GAME, -- First Aid removed in 8.0.1 BfA Prepatch
 			}),
 			q(29484, {	-- Putting the Crunch in the Frog
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29509, {	-- Putting the Crunch in the Frog
 				["requireSkill"] = COOKING,
@@ -552,11 +552,11 @@ _.WorldEvents =
 				},
 			}),
 			q(29484, {	-- Putting the Crunch in the Frog
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29474, {	-- Putting Trash to Good Use
 				["requireSkill"] = ENCHANTING,
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29510, {	-- Putting Trash to Good Use
 				["requireSkill"] = ENCHANTING,
@@ -570,7 +570,7 @@ _.WorldEvents =
 				},
 			}),
 			q(29469, {	-- Rearm, Reuse, Recycle
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29518, {	-- Rearm, Reuse, Recycle
 				["requireSkill"] = MINING,
@@ -634,7 +634,7 @@ _.WorldEvents =
 				},
 			}),
 			q(29467, {	-- Talkin' Tonks
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29511, {	-- Talking' Tonks
 				["requireSkill"] = ENGINEERING,
@@ -720,7 +720,7 @@ _.WorldEvents =
 			q(29454, {	-- The Master Strategist
 				["isMonthly"] = true,
 				["provider"] = { "i", 71715 },	-- A Treatise on Strategy
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29451, {	-- The Master Strategist
 				["isMonthly"] = true,
@@ -875,11 +875,11 @@ _.WorldEvents =
 				},
 			}),
 			q(29471, {	-- Writing the Future
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 				["requireSkill"] = INSCRIPTION,
 			}),
 			q(7945, {	-- Your Fortune Awaits You...
-				["u"] = 40,	-- Legacy Quests
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "i", 19452 },	-- Sayge's Fortune #27
 			}),
 		}),

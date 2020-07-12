@@ -47,7 +47,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(565,   {	-- Bartolo's Yeti Fur Cloak
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2805)),	-- Yeti Fur Cloak
@@ -58,42 +58,42 @@ _.Zones =
 					["coord"] = { 33.5, 49.3, 25 },
 				}),
 				q(527,   {	-- Battle of Hillsbrad
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2215 },	-- High Executor Darthalia
 				}),
 				q(528,   {	-- Battle of Hillsbrad
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2215 },	-- High Executor Darthalia
 					["sourceQuest"] = 527,	-- Battle of Hillsbrad
 				}),
 				q(529,   {	-- Battle of Hillsbrad
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2215 },	-- High Executor Darthalia
 					["sourceQuest"] = 528,	-- Battle of Hillsbrad
 				}),
 				q(532,   {	-- Battle of Hillsbrad
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2215 },	-- High Executor Darthalia
 					["sourceQuest"] = 529,	-- Battle of Hillsbrad
 				}),
 				q(539,   {	-- Battle of Hillsbrad
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2215 },	-- High Executor Darthalia
 					["sourceQuest"] = 532,	-- Battle of Hillsbrad
 				}),
 				q(541,   {	-- Battle of Hillsbrad
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2215 },	-- High Executor Darthalia
 					["sourceQuest"] = 539,	-- Battle of Hillsbrad
 				}),
 				q(550,   {	-- Battle of Hillsbrad
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2215 },	-- High Executor Darthalia
 					["sourceQuest"] = 541,	-- Battle of Hillsbrad
@@ -105,19 +105,19 @@ _.Zones =
 					},
 				}),
 				q(506,   {	-- Blackmoore's Legacy
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2316 },	-- Gol'dir
 					["sourceQuest"] = 503,	-- Gol'dir
 				}),
 				q(1066,  {	-- Blood of Innocents
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2216 },	-- Apothecary Lydon
 					["sourceQuest"] = 1065,	-- Journey to Tarren Mill
 				}),
 				q(557,   {	-- Bracers of Binding
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2437 },	-- Keeper Bel'varil
 					["sourceQuest"] = 556,	-- Stone Tokens
@@ -165,13 +165,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(2935, {	-- Consult Master Gadrin
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2216 },	-- Apothecary Lydon
 					["sourceQuest"] = 2934,	-- Undamaged Venom Sac
 				}),
 				q(564,   {	-- Costly Menace
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3753)),	-- Shepherd's Girdle
@@ -180,7 +180,7 @@ _.Zones =
 					},
 				}),
 				q(504,   {	-- Crushridge Warmongers
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(5249)),	-- Burning Silver
@@ -194,13 +194,13 @@ _.Zones =
 					["sourceQuests"] = { 28587 },	-- Aid of the Frostwolf
 				}),
 				q(545,   {	-- Dalaran Patrols
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2410 },	-- Magus Wordeen Voidglare
 					["sourceQuest"] = 544,	-- Prison Break In
 				}),
 				q(567,   {	-- Dangerous!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3742)),	-- Bow of Plunder
@@ -283,37 +283,37 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(509,   {	-- Elixir of Agony
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2216 },	-- Apothecary Lydon
 					["sourceQuest"] = 502,	-- Elixir of Pain
 				}),
 				q(513,   {	-- Elixir of Agony
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2216 },	-- Apothecary Lydon
 					["sourceQuest"] = 509,	-- Elixir of Agony
 				}),
 				q(515,   {	-- Elixir of Agony
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2216 },	-- Apothecary Lydon
 					["sourceQuest"] = 513,	-- Elixir of Agony
 				}),
 				q(517,   {	-- Elixir of Agony
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2216 },	-- Apothecary Lydon
 					["sourceQuest"] = 515,	-- Elixir of Agony
 				}),
 				q(524,   {	-- Elixir of Agony
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2216 },	-- Apothecary Lydon
 					["sourceQuest"] = 517,	-- Elixir of Agony
 				}),
 				q(501,   {	-- Elixir of Pain
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2216 },	-- Apothecary Lydon
 					["sourceQuest"] = 499,	-- Elixir of Suffering
@@ -325,18 +325,18 @@ _.Zones =
 					},
 				}),
 				q(502,   {	-- Elixir of Pain
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2216 },	-- Apothecary Lydon
 					["sourceQuest"] = 501,	-- Elixir of Pain
 				}),
 				q(496,   {	-- Elixir of Suffering
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2216 },	-- Apothecary Lydon
 				}),
 				q(499,   {	-- Elixir of Suffering
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2216 },	-- Apothecary Lydon
 					["sourceQuest"] = 496,	-- Elixir of Suffering
@@ -387,7 +387,7 @@ _.Zones =
 					},
 				}),
 				q(503,   {	-- Gol'dir
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2229 },	-- Krusk
 					["sourceQuest"] = 533,	-- Infiltration
@@ -403,12 +403,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(552,   {	-- Helcular's Revenge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2429 },	-- Novice Thaivand
 				}),
 				q(553,   {	-- Helcular's Revenge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2429 },	-- Novice Thaivand
 					["sourceQuest"] = 552,	-- Helcular's Revenge
@@ -453,7 +453,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(547,   {	-- Humbert's Sword
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3751)),	-- Mercenary Leggings
@@ -461,7 +461,7 @@ _.Zones =
 					},
 				}),
 				q(1053,  {	-- In the Name of the Light
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6831)),	-- Black Menace
@@ -471,7 +471,7 @@ _.Zones =
 					},
 				}),
 				q(533,   {	-- Infiltration
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2229 },	-- Krusk
 				}),
@@ -529,7 +529,7 @@ _.Zones =
 					},
 				}),
 				q(507,   {	-- Lord Aliden Perenolde
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2229 },	-- Krusk
 					["sourceQuest"] = 506,	-- Blackmoore's Legacy
@@ -584,7 +584,7 @@ _.Zones =
 					["sourceQuests"] = { 28096 },	-- Welcome to the Machine
 				}),
 				q(544,   {	-- Prison Break In
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2410 },	-- Magus Wordeen Voidglare
 				}),
@@ -610,16 +610,16 @@ _.Zones =
 					["sourceQuests"] = { 28209 },	-- Freedom for Lydon
 				}),
 				q(1361,  {	-- Regthar Deathgate
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2229 },	-- Krusk
 				}),
 				q(9425, {	-- Report to Tarren Mill
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elves
 				}),
 				q(1067,  {	-- Return to Thunder Bluff
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2216 },	-- Apothecary Lydon
 					["sourceQuest"] = 1066,	-- Blood of Innocents
@@ -648,7 +648,7 @@ _.Zones =
 					["sourceQuests"] = { 28744 },	-- Ghouls Hate My Grains
 				}),
 				q(555,   {	-- Soothing Turtle Bisque
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 2430 },	-- Chef Jessen
 					["g"] = {
@@ -656,7 +656,7 @@ _.Zones =
 					},
 				}),
 				q(7321, {	-- [DEPRECATED] Soothing Turtle Bisque
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2393 },	-- Christoph Jeffcoat
 					["requireSkill"] = COOKING,
@@ -665,7 +665,7 @@ _.Zones =
 					},
 				}),
 				q(546,   {	-- [DEPRECATED] Souvenirs of Death
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3739)),	-- Skull Ring
@@ -680,7 +680,7 @@ _.Zones =
 					},
 				}),
 				q(556,   {	-- Stone Tokens
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2437 },	-- Keeper Bel'varil
 				}),
@@ -706,7 +706,7 @@ _.Zones =
 					["sourceQuests"] = { 28345 },	-- *Gurgle* HELP! *Gurgle*
 				}),
 				q(562,   {	-- Stormwind Ho!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3755)),	-- Fish Gutter
@@ -719,7 +719,7 @@ _.Zones =
 					["sourceQuests"] = { 28251 },	-- Trouble at Southshore
 				}),
 				q(505,   {	-- Syndicate Assassins
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3758)),	-- Crusader Belt
@@ -727,7 +727,7 @@ _.Zones =
 					},
 				}),
 				q(508,   {	-- Taretha's Gift
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2317 },	-- Elysa
 					["sourceQuest"] = 507,	-- Lord Aliden Perenolde
@@ -755,25 +755,25 @@ _.Zones =
 					-- TODO: does this always drop or is it only available after "No One Here Gets Out Alive" ?
 				}),
 				q(518,   {	-- The Crown of Will
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2278 },	-- Melisara
 					["sourceQuest"] = 495,	-- The Crown of Will
 				}),
 				q(519,   {	-- The Crown of Will
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2278 },	-- Melisara
 					["sourceQuest"] = 518,	-- The Crown of Will
 				}),
 				q(520,   {	-- The Crown of Will
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2278 },	-- Melisara
 					["sourceQuest"] = 519,	-- The Crown of Will
 				}),
 				q(521,   {	-- [DEPRECATED] The Crown of Will
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2278 },	-- Melisara
 					["sourceQuest"] = 520,	-- The Crown of Will
@@ -824,7 +824,7 @@ _.Zones =
 				q(676, {	-- The Hammer May Fall
 					["provider"] = { "n", 2770 },	-- Tallow
 					["races"] = HORDE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(28484, {	-- The Heart of the Matter
 					["provider"] = { "n", 2437 },	-- Keeper Bel'varil
@@ -844,7 +844,7 @@ _.Zones =
 					["sourceQuests"] = { 40267 },	-- An Unexpected Message
 				}),
 				q(498,   {	-- The Rescue
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3752)),	-- Grunt Vest
@@ -870,7 +870,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(494,   {	-- Time to Strike
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2214 },	-- Deathstalker Lesh
 				}),
@@ -916,7 +916,7 @@ _.Zones =
 					},
 				}),
 				q(2934, {	-- Undamaged Venom Sac
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2216 },	-- Apothecary Lydon
 					["sourceQuest"] = 2933,	-- Venom Bottles
@@ -925,12 +925,12 @@ _.Zones =
 					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(535,   {	-- Valik
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 2333 },	-- Henchman Valik
 				}),
 				q(2938,  {	-- Venom to the Undercity
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(10686)),	-- Aegis of Battle
@@ -939,7 +939,7 @@ _.Zones =
 					},
 				}),
 				q(1051,  { 	-- Vorrel's Revenge
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4643)), 	-- Grimsteel Cape
@@ -948,19 +948,19 @@ _.Zones =
 					},
 				}),
 				q(566,   {	-- WANTED: Baron Vardus
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2231)),	-- Inferno Robe
 					},
 				}),
 				q(549,   {	-- WANTED: Syndicate Personnel
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 1763 },	-- WANTED
 				}),
 				q(28619, {	-- Warchief's Command: Arathi Highlands!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["coord"] = { 56.5, 47.1, 25 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 207279 },	-- Warchief's Command Board
@@ -978,7 +978,7 @@ _.Zones =
 					},
 				}),
 				q(1792,  {	-- Whirlwind Weapon
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["classes"] = { 1 },	-- Warrior
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6975)),	-- Whirlwind Axe

@@ -7,7 +7,7 @@ _.Zones =
 		m(81, {	-- Silithus
 			n(QUESTS, {
 				q(9248,  {	-- A Humble Offering
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15282 },	-- Aurel Goldleaf
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22725)),	-- Band of Cenarius
@@ -22,7 +22,7 @@ _.Zones =
 					},
 				}),
 				q(8361,  {	-- Abyssal Contacts
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15306 },	-- Bor Wildmane
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(20603, { 	-- Bag of Spoils
@@ -33,7 +33,7 @@ _.Zones =
 					},
 				}),
 				q(8316,  {	-- Armaments of War (Warrior)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { WARRIOR },
 					["sourceQuest"] = 8315,	-- The Calling
@@ -43,7 +43,7 @@ _.Zones =
 					},
 				}),
 				q(8376,  {	-- Armaments of War (Paladin)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { PALADIN },
 					["sourceQuest"] = 8315,	-- The Calling
@@ -53,7 +53,7 @@ _.Zones =
 					},
 				}),
 				q(8377,  {	-- Armaments of War (Hunter)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { HUNTER },
 					["sourceQuest"] = 8315,	-- The Calling
@@ -63,7 +63,7 @@ _.Zones =
 					},
 				}),
 				q(8378,  {	-- Armaments of War (Rogue)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { ROGUE },
 					["sourceQuest"] = 8315,	-- The Calling
@@ -73,7 +73,7 @@ _.Zones =
 					},
 				}),
 				q(8379,  {	-- Armaments of War (Priest)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { PRIEST },
 					["sourceQuest"] = 8315,	-- The Calling
@@ -83,7 +83,7 @@ _.Zones =
 					},
 				}),
 				q(8380,  {	-- Armaments of War (Shaman)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { SHAMAN },
 					["sourceQuest"] = 8315,	-- The Calling
@@ -93,7 +93,7 @@ _.Zones =
 					},
 				}),
 				q(8381,  {	-- Armaments of War (Mage, Warlock)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { MAGE, WARLOCK },
 					["sourceQuest"] = 8315,	-- The Calling
@@ -104,7 +104,7 @@ _.Zones =
 					},
 				}),
 				q(8382,  {	-- Armaments of War (Druid)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["classes"] = { DRUID },
 					["sourceQuest"] = 8315,	-- The Calling
@@ -114,7 +114,7 @@ _.Zones =
 					},
 				}),
 				q(8331, {	-- Aurel Goldleaf
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["minReputation"] = { 609, FRIENDLY },
 				}),
 				q(8308,  {	-- Brann Bronzebeard's Lost Letter
@@ -142,11 +142,11 @@ _.Zones =
 					},
 				}),
 				q(8349, {	-- Bor Wildmane
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 				}),
 				q(8351, {	-- Bor Wishes to Speak
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 15282 },	-- Aurel Goldleaf
 				}),
@@ -162,12 +162,12 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(8800, {	-- Cenarion Battlegear
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 15540 },	-- Windcaller Kaldon
 				}),
 				q(8573,  {	-- Champion's Battlegear
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15176 },	-- Vargus
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(21180)),	-- Earthstrike
@@ -194,7 +194,7 @@ _.Zones =
 					},
 				}),
 				q(8332, {	-- Dukes of the COuncil
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 8331,	-- Aurel Goldleaf
 				}),
 				q(8319,  {	-- Encrypted Twilight Texts
@@ -209,10 +209,10 @@ _.Zones =
 					["sourceQuest"] = 8304,	-- Dearest Natalia
 				}),
 				q(8343, {	-- Goldleaf's Discovery
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1126,  {	-- Hive in the Tower
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 13220 },	-- Layo Starstrike
 					["sourceQuest"] = 1125,	-- The Spirits of Southwind
 				}),
@@ -230,7 +230,7 @@ _.Zones =
 					["requireSkill"] = COOKING,
 				}),
 				q(8341, {	-- Lords of the Council
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15282 },	-- Aurel Goldleaf
 					["g"] = {
 						i(20451),	-- Twilight Cultist Ring of Lordship
@@ -253,7 +253,7 @@ _.Zones =
 					["sourceQuest"] = 8278,	-- Noggle's Last Hope
 				}),
 				q(8288, {	-- Only One May Rise
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
 				}),
 				q(9416,  {	-- Report to General Kirika
@@ -268,7 +268,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(8352,  {	-- Scepter of the Council
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15306 },	-- Bor Wildmane
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(20602, { 	-- Chest of Spoils
@@ -279,7 +279,7 @@ _.Zones =
 					},
 				}),
 				q(9422, {	-- Scouring the Desert
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 17079 },	-- General Kirika
 				}),
@@ -288,21 +288,21 @@ _.Zones =
 					["coord"] = { 53.15, 35.12, 81 },
 				}),
 				q(8857,  {	-- Secrets of the Colossus - Ashi - Was only possible during the 10 hours of AQ opening
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15798 },	-- Colossus Researcher Nestor
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(21528)), 	-- Colossal Bag of Loot
 					},
 				}),
 				q(8858,  {	-- Secrets of the Colossus - Regal - Was only possible during the 10 hours of AQ opening
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15799 },	-- Colossus Researcher Eazel
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(21528)), 	-- Colossal Bag of Loot
 					},
 				}),
 				q(8859,  {	-- Secrets of the Colossus - Zora - Was only possible during the 10 hours of AQ opening
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15797 },	-- Colossus Researcher Sophia
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(21528)), 	-- Colossal Bag of Loot
@@ -325,7 +325,7 @@ _.Zones =
 					["requireSkill"] = COOKING,
 				}),
 				q(8348,  {	-- Signet of the Dukes
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15306 },	-- Bor Wildmane
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(20601, { 	-- Sack of Spoils
@@ -337,7 +337,7 @@ _.Zones =
 					},
 				}),
 				q(8574,  {	-- Stalwart's Battlegear
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15176 },	-- Vargus
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(21184)),	-- Deeprock Bracers
@@ -369,7 +369,7 @@ _.Zones =
 					},
 				}),
 				q(8315,  {	-- The Calling
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
 					["sourceQuest"] = 8314,	-- Unraveling the Mystery
 				}),
@@ -379,7 +379,7 @@ _.Zones =
 					["sourceQuest"] = 8284,	-- The Twilight Mystery
 				}),
 				q(8302,  {	-- The Hand of the Righteous (until Neutral)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
 					["repeatable"] = true,
 					["g"] = {
@@ -387,14 +387,14 @@ _.Zones =
 					},
 				}),
 				q(8301,  {	-- The Path of the Righteous
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(20402)),	-- 	Agent of Nozdormu
 					},
 				}),
 				q(9023,  {	-- The Perfect Poison
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16091 },	-- Dirk Thunderwood
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(22348)),	-- Doomulus Prime
@@ -406,7 +406,7 @@ _.Zones =
 					},
 				}),
 				q(1125,  {	-- The Spirits of Southwind
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 13220 },	-- Layo Starstrike
 					["sourceQuest"] = 1124,	-- Wasteland
 				}),
@@ -430,7 +430,7 @@ _.Zones =
 					["coord"] = { 53.2, 35.1, 81 },
 				}),
 				q(6844, {	-- Umber, Archivist
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 13220 },	-- Layo Starstrike
 					["sourceQuest"] = 1126,	-- Hive in the Tower
 				}),
@@ -443,7 +443,7 @@ _.Zones =
 					},
 				}),
 				q(8572,  {	-- Veteran's Battlegear
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15176 },	-- Vargus
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(21182)),	-- Band of Earthen Might
@@ -452,7 +452,7 @@ _.Zones =
 					},
 				}),
 				q(8548,  {	-- Volunteer's Battlegear
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15176 },	-- Vargus
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(21179)),	-- Band of Earthen Wrath
@@ -478,7 +478,7 @@ _.Zones =
 					},
 				}),
 				q(8286, {	-- What Tomorrow Brings
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
 				}),

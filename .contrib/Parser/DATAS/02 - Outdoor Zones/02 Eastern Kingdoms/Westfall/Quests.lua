@@ -11,7 +11,7 @@ _.Zones =
 					["coord"] = { 56.8, 47.2, 52 },
 					["races"] = { HUMAN },
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26320, {	-- A Vision of the Past
 					["sourceQuests"] = { 26319 },	-- Secrets Revealed
@@ -70,16 +70,16 @@ _.Zones =
 					["races"] = { HUMAN },
 					["sourceQuest"] = 6181,	-- A Swift Message
 					["lvl"] = 10,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(43287, {	-- Defend
-					["u"] = 40,	-- Legacy Quests (Legion prepatch)
+					["u"] = REMOVED_FROM_GAME,	-- (Legion prepatch)
 				}),
 				q(43287, {	-- Defend
-					["u"] = 40,	-- Legacy Quests (Legion prepatch)
+					["u"] = REMOVED_FROM_GAME,	-- (Legion prepatch)
 				}),
 				q(43242, {	-- Demon Commander
-					["u"] = 40,	-- Legacy Quests (Legion prepatch)
+					["u"] = REMOVED_FROM_GAME,	-- (Legion prepatch)
 				}),
 				q(26296, {	-- Evidence Collection
 					["sourceQuests"] = { 26292 },	-- To Moonbrook
@@ -155,10 +155,10 @@ _.Zones =
 					},
 				}),
 				q(43245, {	-- Invasion: Westfall
-					["u"] = 40,	-- Legacy Quests (Legion pre-patch)
+					["u"] = REMOVED_FROM_GAME,	-- (Legion pre-patch)
 				}),
 				q(42235, {	-- Invasion: Westfall
-					["u"] = 40,	-- Legacy Quests (Legion pre-patch)
+					["u"] = REMOVED_FROM_GAME,	-- (Legion pre-patch)
 				}),
 				q(26229, {	-- "I TAKE Candle!"
 					["sourceQuests"] = { 26215 },	-- Meet Two-Shoed Lou
@@ -205,7 +205,7 @@ _.Zones =
 				q(2359,  {	-- Klaven's Tower
 					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(18160),	-- Recipe: Thistle Tea
 						i(8046, {	-- Kearnen's Journal
@@ -252,7 +252,7 @@ _.Zones =
 					["provider"] = { "n", 42425 },	-- Captain Alpert
 				}),
 				q(153,   {	-- Red Leather Bandanas
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(3511, {	-- Cloak of the People's Militia
 							["u"] = REMOVED_FROM_GAME,
@@ -266,7 +266,7 @@ _.Zones =
 					},
 				}),
 				q(43288, {	-- Repel
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26322, {	-- Rise of the Brotherhood (secondary QG ID 234)
 					["sourceQuests"] = { 26320 },	-- A Vision of the Past
@@ -302,7 +302,7 @@ _.Zones =
 				}),
 				q(53,    {	-- Sweet Amber
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(744, {	-- Thunderbrew's Boot Flask
 							["u"] = REMOVED_FROM_GAME,
@@ -332,7 +332,7 @@ _.Zones =
 					["provider"] = { "n", 42425 },	-- Captain Alpert
 				}),
 				q(9,     {	-- The Killing Fields
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(3578, {	-- Harvester's Pants
 							["u"] = REMOVED_FROM_GAME,
@@ -349,7 +349,7 @@ _.Zones =
 					["provider"] = { "n", 878 },	-- Scout Galiaan
 				}),
 				q(14,    {	-- The People's Militia
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(1566, {	-- Edge of the People's Militia
 							["u"] = REMOVED_FROM_GAME,
@@ -366,7 +366,7 @@ _.Zones =
 					["classes"] = { DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 6182 },	-- Daphne Stilwell
-					["u"] = 40,	-- Legacy Quests
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(9607, {	-- Bastion of Stormwind
 							["u"] = REMOVED_FROM_GAME,

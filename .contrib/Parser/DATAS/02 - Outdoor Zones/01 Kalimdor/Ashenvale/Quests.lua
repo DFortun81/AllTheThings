@@ -71,13 +71,13 @@ _.Zones =
 					},
 				}),
 				q(6564, {	-- Allegiance to the Old Gods
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 4802 },	-- Blackfathom Tide Priestess
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 16790 },	-- Damp Note
 				}),
 				q(6565,  {	-- Allegiance to the Old Gods
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 12736 },	-- Je'neu Sancrea
 					["sourceQuest"] = 6564,	-- Allegiance to the Old Gods
@@ -87,12 +87,12 @@ _.Zones =
 					},
 				}),
 				q(6921, {	-- Amongst the Ruins
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 12736 },	-- Je'neu Sancrea
 				}),
 				q(1025,  {	-- An Aggressive Defense
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3691 },	-- Raene Wolfrunner
 					["coord"] = { 36.6, 49.6, 63 },
 					["races"] = ALLIANCE_ONLY,
@@ -104,7 +104,7 @@ _.Zones =
 					["sourceQuest"] = 1043,	-- The Scythe of Elune
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(5817)),	-- Lunaris Bow
 						un(REMOVED_FROM_GAME, i(5818)),	-- Moonbeam Wand
@@ -142,7 +142,7 @@ _.Zones =
 					["sourceQuest"] = 13805,	-- Pierce Their Heart!
 				}),
 				q(909,   {	-- Baron Aquanis
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "i", 16782 },	-- Strange Water Globe
 					["crs"] = { 12876 },	-- Baron Aquanis
 					["races"] = HORDE_ONLY,
@@ -154,7 +154,7 @@ _.Zones =
 					["sourceQuest"] = 13623,	-- Delivery for Orendil
 				}),
 				q(1010,  {	-- Bathran's Hair
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3847 },	-- Orendil Broadleaf
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -181,7 +181,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(26893, {	-- Blackfathom Deeps
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26894, {	-- Blackfathom Deeps
 					["provider"] = { "n", 34122 },	-- Commander Grimfang
@@ -196,7 +196,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(26898, {	-- Blackfathom Deeps
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 3691 },	-- Raene Wolfrunner
 				}),
@@ -293,7 +293,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1054,  {	-- Culling the Threat
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3691 },	-- Raene Wolfrunner
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -339,7 +339,7 @@ _.Zones =
 					["sourceQuest"] = 26449,	-- Never Again!
 				}),
 				q(9534, {	-- Destroy the Legion
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 17355 },	-- Valusha
 				}),
@@ -354,11 +354,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(9520, {	-- Diabolical Plans (A)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "i", 23777 },	-- Diabolical Plans
 				}),
 				q(9535, {	-- Diabolical Plans (H)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "i", 23797 },	-- Diabolical Plans
 				}),
 				q(26447, {	-- Diabolical Plans
@@ -411,12 +411,12 @@ _.Zones =
 					["sourceQuest"] = 26475,	-- Elune's Tear
 				}),
 				q(1016,  {	-- Elemental Bracers
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3885 },	-- Sentinel Velene Starstrike
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1033,  {	-- Elune's Tear
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3894 },	-- Pelturas Whitemoon
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1020,	-- Orendil's Cure
@@ -441,7 +441,7 @@ _.Zones =
 					},
 				}),
 				q(1035,  {	-- Fallen Sky Lake
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3894 },	-- Pelturas Whitemoon
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1034,	-- The Ruins of Stardust
@@ -470,7 +470,7 @@ _.Zones =
 					["sourceQuest"] = 13623,	-- Delivery For Orendil
 				}),
 				q(1011,  {	-- Forsaken Diseases
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3848 },	-- Kayneth Stillwind
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 4581,	-- Kayneth Stillwind
@@ -547,7 +547,7 @@ _.Zones =
 					},
 				}),
 				q(1012,  {	-- Insane Druids
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3848 },	-- Kayneth Stillwind
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1011,	-- Forsaken Diseases
@@ -578,13 +578,13 @@ _.Zones =
 					},
 				}),
 				q(1056,  {	-- Journey to Stonetalon Peak
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3996 },	-- Faldreas Goeth'Shael
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(4581,  {	-- Kayneth Stillwind
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3845 },	-- Shindrell Swiftfire
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -626,7 +626,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(1017,  {	-- Mage Summoner
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3885 },	-- Sentinel Velene Starstrike
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1016,	-- Elemental Bracers
@@ -678,7 +678,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,	
 				}),
 				q(9536, {	-- Never Again! (H)
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 17355 },	-- Valusha
 					["g"] = {
@@ -699,7 +699,7 @@ _.Zones =
 					},
 				}),
 				q(9522, {	-- Never Again!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 17303 },	-- Vindicator Vedaar
 					["sourceQuest"] = 9520,	-- Diabolical Plans
@@ -726,12 +726,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1070,  {	-- On Guard in Stonetalon
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4079 },	-- Sentinel Thenysil
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1020,  {	-- Orendil's Cure
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3847 },	-- Orendil Broadleaf
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1010,	-- Bathran's Hair
@@ -780,7 +780,7 @@ _.Zones =
 					},
 				}),
 				q(1134,  {	-- Pridewings of Stonetalon
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3845 },	-- Shindrell Swiftfire
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1008,	-- The Zoram Strand
@@ -794,13 +794,13 @@ _.Zones =
 					},
 				}),
 				q(1023,  {	-- Raene's Cleansing
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3891 },	-- Teronis' Corpse
 					["coord"] = { 20.3, 42.3, 63 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1046,  {	-- Raene's Cleansing
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3897 },	-- Krolg
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -855,7 +855,7 @@ _.Zones =
 					["sourceQuest"] = 13935,	-- Defend the Tree!
 				}),
 				q(9428, {	-- Report to Spintertree Post
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { BLOODELF },
 				}),
 				q(13626, {	-- Respect for the Fallen
@@ -895,7 +895,7 @@ _.Zones =
 					["sourceQuest"] = 26478,	-- Playing Possum
 				}),
 				q(1009,  {	-- Ruuzel
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3846 },	-- Talen
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1007,	-- The Ancient Statuettes
@@ -919,7 +919,7 @@ _.Zones =
 					["sourceQuest"] = 26449,	-- Never Again!
 				}),
 				q(1032,  {	-- Satyr Slaying!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3901 },	-- Illiyana
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1031,	-- The Branch of Cenarius
@@ -997,7 +997,7 @@ _.Zones =
 					["sourceQuest"] = 26468,	-- The Branch of Cenarius
 				}),
 				q(976,   {	-- Supplies to Auberdine
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 4484 },	-- Feero Ironhand
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -1023,7 +1023,7 @@ _.Zones =
 					},
 				}),
 				q(1007,  {	-- The Ancient Statuettes
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3846 },	-- Talen
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1034,7 +1034,7 @@ _.Zones =
 					["sourceQuest"] = 13617,	-- West to the Strand
 				}),
 				q(6383, {	-- The Ashenvale Hunt
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 12696 },	-- Senani Thunderheart
 				}),
@@ -1045,7 +1045,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(1031,  {	-- The Branch of Cenarius
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3920 },	-- Anilia
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1021,	-- Vile Satyr! Dryads in Danger!
@@ -1070,7 +1070,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(6563,  {	-- The Essence of Aku'Mai
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 12736 },	-- Je'neu Sancrea
 					["coord"] = { 11.6, 34.3, 63 },
 					["races"] = HORDE_ONLY,
@@ -1104,10 +1104,10 @@ _.Zones =
 					["coord"] = { 22.2, 52.8, 63 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(247,   {	-- The Hunt Completed
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 12696 },	-- Senani Thunderheart
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -1144,7 +1144,7 @@ _.Zones =
 					},
 				}),
 				q(6504,  {	-- The Lost Pages
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 12718 },	-- Gurda Ragescar
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -1158,7 +1158,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1034,  {	-- The Ruins of Stardust
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3894 },	-- Pelturas Whitemoon
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1033,	-- Elune's Tear
@@ -1175,7 +1175,7 @@ _.Zones =
 					["sourceQuest"] = 29303,	-- Tragedy and Family
 				}),
 				q(1008,  {	-- The Zoram Strand
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3845 },	-- Shindrell Swiftfire
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1306,10 +1306,10 @@ _.Zones =
 					["sourceQuest"] = 1022,	-- The Howling Vale
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1021,  {	-- Vile Satyr! Dryads in Danger!
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3901 },	-- Illiyana
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1356,31 +1356,31 @@ _.Zones =
 					},
 				}),
 				q(6546,  {	-- Warsong Outrunner Update
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 12864 },	-- Warsong Outrider
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 				}),
 				q(6545,  {	-- Warsong Runner Update
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 12863 },	-- Warsong Runner
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 				}),
 				q(6546,  {	-- Warsong Saw Blades
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 12724 },	-- Pixel
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 				}),
 				q(6547,  {	-- Warsong Scout Update
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 12862 },	-- Warsong Scout
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 				}),
 				q(6571,  {	-- Warsong Supplies
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11820 },	-- Locke Okarr
 					["races"] = HORDE_ONLY,
 					["g"] = {

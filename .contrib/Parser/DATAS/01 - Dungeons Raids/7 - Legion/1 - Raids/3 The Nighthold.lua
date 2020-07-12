@@ -36,7 +36,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140172, {	-- Ancient Nightborne Tome [Raid Finder]
 							["questID"] = 43911,	-- The Nighthold: Elisande [Raid Finder]
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(140148)),	-- Cache of Nightborne Treasures [Raid Finder]
 							},
@@ -44,7 +44,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140171, {	-- Glowing Lily [Raid Finder]
 							["questID"] = 43910,	-- The Nighthold: High Botanist Tel'arn [Raid Finder]
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(140148)),	-- Cache of Nightborne Treasures [Raid Finder]
 							},
@@ -52,7 +52,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140147, {	-- Pulsauron Bindings [Raid Finder]
 							["questID"] = 43882,	-- The Nighthold: Vaults [Raid Finder]
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(140148)),	-- Cache of Nightborne Treasures [Raid Finder]
 							},
@@ -60,7 +60,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140173, {	-- Shred of Tattered Robe [Raid Finder]
 							["questID"] = 43912,	-- The Nighthold: Gul'dan [Raid Finder]
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(140148)),	-- Cache of Nightborne Treasures [Raid Finder]
 							},
@@ -369,7 +369,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140175, {	-- Ancient Nightborne Tome (Normal)
 							["questID"] = 43914,	-- The Nighthold: Elisande (Normal)
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(140150)),	-- Cache of Nightborne Treasures (Normal)
 							},
@@ -377,7 +377,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140174, {	-- Glowing Lily (Normal)
 							["questID"] = 43913,	-- The Nighthold: High Botanist Tel'arn (Normal)
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(140150)),	-- Cache of Nightborne Treasures (Normal)
 							},
@@ -385,7 +385,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140149, {	-- Pulsauron Bindings (Normal)
 							["questID"] = 43889,	-- The Nighthold: Vaults (Normal)
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(140150)),	-- Cache of Nightborne Treasures (Normal)
 							},
@@ -393,7 +393,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140177, {	-- Shred of Tattered Robe (Normal)
 							["questID"] = 43915,	-- The Nighthold: Gul'dan (Normal)
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(140150)),	-- Cache of Nightborne Treasures (Normal)
 							},
@@ -751,7 +751,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140472, {	-- Ancient Nightborne Tome (Heroic)
 							["questID"] = 43917,	-- The Nighthold: Elisande (Heroic)
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(140152)),	-- Cache of Nightborne Treasures (Heroic)
 							},
@@ -759,7 +759,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140178, {	-- Glowing Lily (Heroic)
 							["questID"] = 43916,	-- The Nighthold: High Botanist Tel'arn (Heroic)
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(140152)),	-- Cache of Nightborne Treasures (Heroic)
 							},
@@ -767,7 +767,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140151, {	-- Pulsauron Bindings (Heroic)
 							["questID"] = 43890,	-- The Nighthold: Vaults (Heroic)
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(140152)),	-- Cache of Nightborne Treasures (Heroic)
 							},
@@ -775,7 +775,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140180, {	-- Shred of Tattered Robe (Heroic)
 							["questID"] = 43918,	-- The Nighthold: Gul'dan (Heroic)
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(140152)),	-- Cache of Nightborne Treasures (Heroic)
 							},
@@ -1135,7 +1135,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140182, {	-- Ancient Nightborne Tome (Mythic)
 							["questID"] = 43920,	-- The Nighthold: Elisande (Mythic)
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(140154)),	-- Cache of Nightborne Treasures (Mythic)
 							},
@@ -1143,7 +1143,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140181, {	-- Glowing Lily (Mythic)
 							["questID"] = 43919,	-- The Nighthold: High Botanist Tel'arn (Mythic)
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(140154)),	-- Cache of Nightborne Treasures (Mythic)
 							},
@@ -1151,7 +1151,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140153, {	-- Pulsauron Bindings (Mythic)
 							["questID"] = 43891,	-- The Nighthold: Vaults (Mythic)
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(140154)),	-- Cache of Nightborne Treasures (Mythic)
 							},
@@ -1159,7 +1159,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(140183, {	-- Shred of Tattered Robe (Mythic)
 							["questID"] = 43921,	-- The Nighthold: Gul'dan (Mythic)
 							["repeatable"] = true,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(140154)),	-- Cache of Nightborne Treasures (Mythic)
 							},

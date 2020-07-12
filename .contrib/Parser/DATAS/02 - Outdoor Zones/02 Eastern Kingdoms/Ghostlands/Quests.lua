@@ -7,7 +7,7 @@ _.Zones =
 		m(95, {	-- Ghostlands
 			n(QUESTS, {
 				q(10372, {	-- A Discreet Inquiry
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["classes"] = { 4 },
 				}),
@@ -37,7 +37,7 @@ _.Zones =
 					["classes"] = { 8 },	-- Mage
 				}),
 				q(9877,  {	-- A Restorative Draught
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 16240 },	-- Arcanist Janeda
 					["races"] = HORDE_ONLY,
 				}),
@@ -196,7 +196,7 @@ _.Zones =
 					},
 				}),
 				q(9491,  {	-- Greed
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["classes"] = { 4 },
 					["g"] = {
@@ -377,7 +377,7 @@ _.Zones =
 					},
 				}),
 				q(10548, {	-- The Sad Truth
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["classes"] = { 4 },
 					["g"] = {
@@ -393,7 +393,7 @@ _.Zones =
 --						["sourceQuests"] = {  },	-- UNKNOWN - requires unknown progression in zone.  Could not pick up on 110 who had done no quests.  Needs more testing.
 				}),
 				q(9529,  {	-- The Stone
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["races"] = { 10 },	-- Blood Elf
 					["classes"] = { 9 },	-- Warlock
 				}),

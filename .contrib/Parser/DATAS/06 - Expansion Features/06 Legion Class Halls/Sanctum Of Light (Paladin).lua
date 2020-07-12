@@ -23,7 +23,7 @@ _.ExpansionFeatures =
 						q(45890),	-- Ancestors and Enemies (also warrior?)
 						q(43493),	-- Black Rook Hold: Lord Ravencrest (also priest?)
 						q(44220, {	-- Blessing of the Order
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(43534),	-- Blood of Sargeras
 						q(44063),	-- Bolstering Your Arsenal
@@ -37,7 +37,7 @@ _.ExpansionFeatures =
 						q(45147),	-- Felstone Destruction (and warrior?)
 						q(39722),	-- Forging New Strength
 						q(46151, {	-- Furthering Knowledge
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(42844),	-- Growing Power
 						q(42774),	-- Hope Prevails

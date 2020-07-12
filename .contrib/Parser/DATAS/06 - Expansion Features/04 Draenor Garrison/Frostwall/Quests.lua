@@ -215,7 +215,7 @@ _.ExpansionFeatures =
 							q(39227, {	-- Amphitheater of the Eternal
 								["isWeekly"] = true,
 								["races"] = HORDE_ONLY,
-								["u"] = 40,	-- Legacy Quests
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							q(37757, {	-- Arcane Sanctum: Ko'ragh
 								["races"] = HORDE_ONLY,
@@ -248,12 +248,12 @@ _.ExpansionFeatures =
 							q(39222, {	-- Court of Blood
 								["isWeekly"] = true,
 								["races"] = HORDE_ONLY,
-								["u"] = 40,	-- Legacy Quests
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							q(39223, {	-- Deadeye's Vision
 								["isWeekly"] = true,
 								["races"] = HORDE_ONLY,
-								["u"] = 40,	-- Legacy Quests
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							q(39231, {	-- Destructor's Rise
 								["races"] = HORDE_ONLY,
@@ -272,12 +272,12 @@ _.ExpansionFeatures =
 							q(39229, {	-- Grommash's Torment
 								["isWeekly"] = true,
 								["races"] = HORDE_ONLY,
-								["u"] = 40,	-- Legacy Quests
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							q(39193, {	-- Hellfire Assault
 								["isWeekly"] = true,
 								["races"] = HORDE_ONLY,
-								["u"] = 40,	-- Legacy Quests
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							q(37758, {	-- Imperator's Rise: Imperator Mar'gok
 								["races"] = HORDE_ONLY,
@@ -303,7 +303,7 @@ _.ExpansionFeatures =
 							q(39226, {	-- Iskar's Clutch
 								["isWeekly"] = true,
 								["races"] = HORDE_ONLY,
-								["u"] = 40,	-- Legacy Quests
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							q(39225, {	-- Maw of Souls
 								["races"] = HORDE_ONLY,
@@ -371,12 +371,12 @@ _.ExpansionFeatures =
 							q(39230, {	-- The Felborne Breach
 								["isWeekly"] = true,
 								["races"] = HORDE_ONLY,
-								["u"] = 40,	-- Legacy Quests
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							q(39219, {	-- The Iron Bulwark
 								["isWeekly"] = true,
 								["races"] = HORDE_ONLY,
-								["u"] = 40,	-- Legacy Quests
+								["u"] = REMOVED_FROM_GAME,
 							}),
 							q(37787, {	-- Upper Blackrock Spire
 								["races"] = HORDE_ONLY,
@@ -650,7 +650,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(35988, {	-- Call of the Archmage
-						["u"] = 40,
+						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "n", 83858 },	-- Khadgar's Servant
 					}),
 					q(34193, {	-- Clearing the Garden

@@ -10,7 +10,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["groups"] = {
 			n(QUESTS, {
 				q(13204, {	-- Funky Fungi
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["cr"] = 30329,	-- Savage Cave Beast
 					["provider"] = { "i", 43512 },	-- Ooze-Covered Fungus
 				}),
@@ -23,7 +23,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(44352), 	-- Shoulderplates of the Abolished
 				}),
 				q(29810, {	-- The Faceless Ones
-					["u"] = 40,
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						i(44353), 	-- Epaulets of the Faceless Ones
 						i(44350),	-- Mantle of Thwarted Evil

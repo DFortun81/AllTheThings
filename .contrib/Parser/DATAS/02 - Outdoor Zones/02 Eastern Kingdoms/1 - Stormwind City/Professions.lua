@@ -64,7 +64,7 @@ _.Zones =
 							["requireSkill"] = BLACKSMITHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(8663)),	-- Mithril Insignia
 							},
@@ -75,7 +75,7 @@ _.Zones =
 							["requireSkill"] = BLACKSMITHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								un(REMOVED_FROM_GAME, i(9367)),	-- Plans: Golden Scale Gauntlets
 							},
@@ -175,7 +175,7 @@ _.Zones =
 							["repeatable"] = true,
 						}),
 						q(3630, {	-- Gnome Engineering
-							["u"] = 40,	-- Legacy
+							["u"] = REMOVED_FROM_GAME,
 							["requireSkill"] = ENGINEERING,
 							["provider"] = { "n", 5518 },	-- Lilliam Sparkspindle
 						}),

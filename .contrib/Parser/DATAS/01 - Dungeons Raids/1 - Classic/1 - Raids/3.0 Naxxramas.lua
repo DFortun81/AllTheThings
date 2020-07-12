@@ -92,13 +92,13 @@ _.Instances = { tier(1, {	-- Classic
 								9123,	-- The Dread Citadel - Naxxramas
 							},
 							["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Glacial Cloak
 							["questID"] = 9237,	-- Glacial Cloak
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								un(8, i(22658)),	-- Glacial Cloak
 							},
@@ -107,7 +107,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 9239,	-- Glacial Gloves
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								un(8, i(22654)),	-- Glacial Gloves
 							},
@@ -116,7 +116,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 9240,	-- Glacial Vest
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								un(8, i(22652)),	-- Glacial Vest
 							},
@@ -125,7 +125,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 9238,	-- Glacial Wrists
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								un(8, i(22655)),	-- Glacial Wrists
 							},
@@ -134,7 +134,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 9235,	-- Icebane Bracers
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								{	-- Plans: Icebane Bracers
 									["recipeID"] = 28244,	-- Plans: Icebane Bracers
@@ -146,7 +146,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 9236,	-- Icebane Breastplate
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								{	-- Plans: Icebane Breastplate
 									["recipeID"] = 28242,	-- Plans: Icebane Breastplate
@@ -158,7 +158,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 9234,	-- Icebane Gauntlets
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								{	-- Plans: Icebane Gauntlets
 									["recipeID"] = 28243,	-- Plans: Icebane Gauntlets
@@ -170,7 +170,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 9244,	-- Icy Scale Bracers
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								un(8, i(22665)),	-- Icy Scale Bracers
 							},
@@ -179,7 +179,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 9246,	-- Icy Scale Breastplate
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								un(8, i(22664)),	-- Icy Scale Breastplate
 							},
@@ -188,7 +188,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 9245,	-- Icy Scale Gauntlets
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								un(8, i(22666)),	-- Icy Scale Gauntlets
 							},
@@ -197,7 +197,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 9241,	-- Polar Bracers
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								un(8, i(22663)),	-- Polar Bracers
 							},
@@ -206,7 +206,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 9242,	-- Polar Gloves
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								un(8, i(22662)),	-- Polar Gloves
 							},
@@ -215,7 +215,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 9243,	-- Polar Tunic
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								un(8, i(22661)),	-- Polar Tunic
 							},
@@ -224,7 +224,7 @@ _.Instances = { tier(1, {	-- Classic
 							["questID"] = 9230,	-- Ramaladni's Icy Grasp
 							["sourceQuest"] = 9229,	-- The Fate of Ramaldni
 							["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								un(REMOVED_FROM_GAME, i(22707)),	-- Ramaladni's Icy Grasp
 							},
@@ -237,7 +237,7 @@ _.Instances = { tier(1, {	-- Classic
 								9122,	-- The Dread Citadel - Naxxramas [Revered]
 								9123,	-- The Dread Citadel - Naxxramas [Exalted]
 							},
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["cost"] = {
 								{ "i", 12363, 6 },	-- Arcane Crystal
 								{ "i", 14344, 2 },	-- Large Brilliant Shard
@@ -254,7 +254,7 @@ _.Instances = { tier(1, {	-- Classic
 								9121,	-- The Dread Citadel - Naxxramas [Honored]
 								9123,	-- The Dread Citadel - Naxxramas [Exalted]
 							},
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["cost"] = {
 								{ "i", 12363, 2 },	-- Arcane Crystal
 								{ "i", 20725, 1 },	-- Nexus Crystal
@@ -269,19 +269,19 @@ _.Instances = { tier(1, {	-- Classic
 								9121,	-- The Dread Citadel - Naxxramas [Honored]
 								9122,	-- The Dread Citadel - Naxxramas [Revered]
 							},
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- The Fate of Ramaldni
 							["questID"] = 9229,	-- The Fate of Ramaldni
 							["sourceQuest"] = 9033,	-- Echoes of War
 							["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- The Only Song I Know...
 							["questID"] = 9232,	-- The Only Song I Know...
 							["sourceQuest"] = 9033,	-- Echoes of War
 							["provider"] = { "n", 16376 },	-- Craftsman Wilhelm <Brotherhood of the Light>
-							["u"] = 40,
+							["u"] = REMOVED_FROM_GAME,
 							["groups"] = {
 								un(REMOVED_FROM_GAME, i(22700)),	-- Glacial Leggings
 								un(REMOVED_FROM_GAME, i(22699)),	-- Icebane Leggings
@@ -295,7 +295,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22418)),	-- Dreadnaught Helmet
 								},
@@ -305,7 +305,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22419)),	-- Dreadnaught Pauldrons
 								},
@@ -315,7 +315,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22416)),	-- Dreadnaught Breastplate
 								},
@@ -325,7 +325,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22423)),	-- Dreadnaught Bracers
 								},
@@ -335,7 +335,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22421)),	-- Dreadnaught Gauntlets
 								},
@@ -345,7 +345,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22422)),	-- Dreadnaught Waistguard
 								},
@@ -355,7 +355,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22417)),	-- Dreadnaught Legplates
 								},
@@ -365,7 +365,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16112 },	-- Korfax, Champion of the Light <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22420)),	-- Dreadnaught Sabatons
 								},
@@ -377,7 +377,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22428)),	-- Redemption Headpiece
 								},
@@ -387,7 +387,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22429)),	-- Redemption Spaulders
 								},
@@ -397,7 +397,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22424)),	-- Redemption Wristguards
 								},
@@ -407,7 +407,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22426)),	-- Redemption Handguards
 								},
@@ -417,7 +417,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22425)),	-- Redemption Tunic
 								},
@@ -427,7 +427,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22431)),	-- Redemption Girdle
 								},
@@ -437,7 +437,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22427)),	-- Redemption Legguards
 								},
@@ -447,7 +447,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16115 },	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22430)),	-- Redemption Boots
 								},
@@ -459,7 +459,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22438)),	-- Cryptstalker Headpiece
 								},
@@ -469,7 +469,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22439)),	-- Cryptstalker Spaulders
 								},
@@ -479,7 +479,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22436)),	-- Cryptstalker Tunic
 								},
@@ -489,7 +489,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22443)),	-- Cryptstalker Wristguards
 								},
@@ -499,7 +499,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22441)),	-- Cryptstalker Handguards
 								},
@@ -509,7 +509,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22442)),	-- Cryptstalker Girdle
 								},
@@ -519,7 +519,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22437)),	-- Cryptstalker Legguards
 								},
@@ -529,7 +529,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16132 },	-- Huntsman Leopold <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22440)),	-- Cryptstalker Boots
 								},
@@ -541,7 +541,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22478)),	-- Bonescythe Helmet
 								},
@@ -551,7 +551,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22479)),	-- Bonescythe Pauldrons
 								},
@@ -561,7 +561,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22476)),	-- Bonescythe Breastplate
 								},
@@ -571,7 +571,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22483)),	-- Bonescythe Bracers
 								},
@@ -581,7 +581,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22481)),	-- Bonescythe Gauntlets
 								},
@@ -591,7 +591,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22482)),	-- Bonescythe Waistguard
 								},
@@ -601,7 +601,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22477)),	-- Bonescythe Legplates
 								},
@@ -611,7 +611,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16131 },	-- Rohan the Assassin <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22480)),	-- Bonescythe Sabatons
 								},
@@ -623,7 +623,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22514)),	-- Circlet of Faith
 								},
@@ -633,7 +633,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22515)),	-- Shoulderpads of Faith
 								},
@@ -643,7 +643,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22512)),	-- Robe of Faith
 								},
@@ -653,7 +653,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22519)),	-- Bindings of Faith
 								},
@@ -663,7 +663,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22517)),	-- Gloves of Faith
 								},
@@ -673,7 +673,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22518)),	-- Belt of Faith
 								},
@@ -683,7 +683,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22513)),	-- Leggings of Faith
 								},
@@ -693,7 +693,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16113 },	-- Father Inigo Montoy <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22516)),	-- Sandals of Faith
 								},
@@ -705,7 +705,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22466)),	-- Earthshatter Headpiece
 								},
@@ -715,7 +715,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22467)),	-- Earthshatter Spaulders
 								},
@@ -725,7 +725,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22464)),	-- Earthshatter Tunic
 								},
@@ -735,7 +735,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22471)),	-- Earthshatter Wristguards
 								},
@@ -745,7 +745,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22469)),	-- Earthshatter Handguards
 								},
@@ -755,7 +755,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22470)),	-- Earthshatter Girdle
 								},
@@ -765,7 +765,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22465)),	-- Earthshatter Legguards
 								},
@@ -775,7 +775,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16134 },	-- Rimblat Earthshatter <The Earthen Ring>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22468)),	-- Earthshatter Boots
 								},
@@ -787,7 +787,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22498)),	-- Frostfire Circlet
 								},
@@ -797,7 +797,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22499)),	-- Frostfire Shoulderpads
 								},
@@ -807,7 +807,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22496)),	-- Frostfire Robe
 								},
@@ -817,7 +817,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22503)),	-- Frostfire Bindings
 								},
@@ -827,7 +827,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22501)),	-- Frostfire Gloves
 								},
@@ -837,7 +837,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22502)),	-- Frostfire Belt
 								},
@@ -847,7 +847,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22497)),	-- Frostfire Leggings
 								},
@@ -857,7 +857,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos <Brotherhood of the Light>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22500)),	-- Frostfire Sandals
 								},
@@ -869,7 +869,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22506)),	-- Plagueheart Circlet
 								},
@@ -879,7 +879,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22507)),	-- Plagueheart Shoulderpads
 								},
@@ -889,7 +889,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22504)),	-- Plagueheart Robe
 								},
@@ -899,7 +899,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22511)),	-- Plagueheart Bindings
 								},
@@ -909,7 +909,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22509)),	-- Plagueheart Gloves
 								},
@@ -919,7 +919,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22510)),	-- Plagueheart Belt
 								},
@@ -929,7 +929,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22505)),	-- Plagueheart Leggings
 								},
@@ -939,7 +939,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16133 },	-- Mataus the Wrathcaster <The Scarlet Crusade>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22508)),	-- Plagueheart Sandals
 								},
@@ -951,7 +951,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22490)),	-- Dreamwalker Headpiece
 								},
@@ -961,7 +961,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22491)),	-- Dreamwalker Spaulders
 								},
@@ -971,7 +971,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22488)),	-- Dreamwalker Tunic
 								},
@@ -981,7 +981,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22495)),	-- Dreamwalker Wristguards
 								},
@@ -991,7 +991,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22493)),	-- Dreamwalker Handguards
 								},
@@ -1001,7 +1001,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22494)),	-- Dreamwalker Girdle
 								},
@@ -1011,7 +1011,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22489)),	-- Dreamwalker Legguards
 								},
@@ -1021,7 +1021,7 @@ _.Instances = { tier(1, {	-- Classic
 								["sourceQuest"] = 9033,	-- Echoes of War
 								["repeatable"] = true,
 								["provider"] = { "n", 16135 },	-- Rayne <Cenarion Circle>
-								["u"] = 40,
+								["u"] = REMOVED_FROM_GAME,
 								["groups"] = {
 									un(9, i(22492)),	-- Dreamwalker Boots
 								},

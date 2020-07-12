@@ -91,7 +91,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["isDaily"] = true,
 			}),
 			q(24658, {	-- Crushing the Crown
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["coord"] = { 61.51, 75.28, 84 },	-- Stormwind
 				["races"] = ALLIANCE_ONLY,
@@ -100,7 +100,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["description"] = "Available until level 9.",
 			}),
 			q(24659, {	-- Crushing the Crown
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["coord"] = { 61.51, 75.28, 84 },	-- Stormwind
 				["races"] = ALLIANCE_ONLY,
@@ -109,7 +109,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["description"] = "Available until level 22.",
 			}),
 			q(24660, {	-- Crushing the Crown
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["coord"] = { 61.51, 75.28, 84 },	-- Stormwind
 				["races"] = ALLIANCE_ONLY,
@@ -118,7 +118,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["description"] = "Available until level 31.",
 			}),
 			q(24662, {	-- Crushing the Crown
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["coord"] = { 61.51, 75.28, 84 },	-- Stormwind
 				["races"] = ALLIANCE_ONLY,
@@ -127,7 +127,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["description"] = "Available until level 40.",
 			}),
 			q(24663, {	-- Crushing the Crown
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["coord"] = { 61.51, 75.28, 84 },	-- Stormwind
 				["races"] = ALLIANCE_ONLY,
@@ -136,7 +136,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["description"] = "Available until level 50.",
 			}),
 			q(24664, {	-- Crushing the Crown
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["coord"] = { 61.51, 75.28, 84 },	-- Stormwind
 				["races"] = ALLIANCE_ONLY,
@@ -145,7 +145,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["description"] = "Available until level 60.",
 			}),
 			q(24665, {	-- Crushing the Crown
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["coord"] = { 61.51, 75.28, 84 },	-- Stormwind
 				["races"] = ALLIANCE_ONLY,
@@ -154,7 +154,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["description"] = "Available until level 70.",
 			}),
 			q(24666, {	-- Crushing the Crown
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["coord"] = { 61.51, 75.28, 84 },	-- Stormwind
 				["races"] = ALLIANCE_ONLY,
@@ -163,7 +163,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["description"] = "Available until level 80.",
 			}),
 			q(28934, {	-- Crushing the Crown
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["coord"] = { 61.51, 75.28, 84 },	-- Stormwind
 				["races"] = ALLIANCE_ONLY,
@@ -179,7 +179,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["isDaily"] = true,
 			}),
 			q(24638, {	-- Crushing the Crown
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
 				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
 				["races"] = HORDE_ONLY,
@@ -188,7 +188,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["description"] = "Available until level 9.",
 			}),
 			q(24645, {	-- Crushing the Crown
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
 				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
 				["races"] = HORDE_ONLY,
@@ -197,7 +197,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["description"] = "Available until level 22.",
 			}),
 			q(24647, {	-- Crushing the Crown
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
 				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
 				["races"] = HORDE_ONLY,
@@ -206,7 +206,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["description"] = "Available until level 31.",
 			}),
 			q(24648, {	-- Crushing the Crown
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
 				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
 				["races"] = HORDE_ONLY,
@@ -215,7 +215,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["description"] = "Available until level 40.",
 			}),
 			q(24649, {	-- Crushing the Crown
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
 				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
 				["races"] = HORDE_ONLY,
@@ -224,7 +224,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["description"] = "Available until level 50.",
 			}),
 			q(24650, {	-- Crushing the Crown
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
 				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
 				["races"] = HORDE_ONLY,
@@ -233,7 +233,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["description"] = "Available until level 60.",
 			}),
 			q(24651, {	-- Crushing the Crown
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
 				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
 				["races"] = HORDE_ONLY,
@@ -242,7 +242,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["description"] = "Available until level 70.",
 			}),
 			q(24652, {	-- Crushing the Crown
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
 				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
 				["races"] = HORDE_ONLY,
@@ -251,7 +251,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["description"] = "Available until level 80.",
 			}),
 			q(28935, {	-- Crushing the Crown
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
 				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
 				["races"] = HORDE_ONLY,
@@ -286,14 +286,14 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["sourceQuest"] = 24850,	-- Snivel's Sweetheart
 			}),
 			q(24792, {	-- Man on the Inside (Alliance)
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 38066 },	-- Inspector Snip Snagglebolt
 				["maps"] = { 84 },	-- Stormwind City
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 24657 },	-- A Friendly Chat... (Alliance)
 			}),
 			q(24793, {	-- Man on the Inside (Horde)
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 38066 },	-- Inspector Snip Snagglebolt
 				["maps"] = { 85 },	-- Orgrimmar
 				["races"] = HORDE_ONLY,
@@ -335,7 +335,7 @@ _.Holidays = bubbleDown({["u"] = 18},
 				["isBreadcrumb"] = true,
 			}),
 			q(14488, {	-- You've Been Served
-				["u"] = 40,
+				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 38208 },	-- Investigator Fezzen Brasstacks
 				["maps"] = { 310 },	-- Shadowfang Keep
 				["isDaily"] = true,

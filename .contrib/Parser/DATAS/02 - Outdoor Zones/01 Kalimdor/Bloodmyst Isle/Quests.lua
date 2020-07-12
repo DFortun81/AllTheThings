@@ -52,7 +52,7 @@ _.Zones =
 					["provider"] = { "n", 17553 },	-- Caregiver Topher Loaal
 					["coord"] = { 55.8, 59.8, 106 },
 					["races"]= { 11 },	-- Draenei
-					["u"] = 40, 	-- Legacy Quest, quest moved to Azuremyst Isle 	
+					["u"] = REMOVED_FROM_GAME, -- quest moved to Azuremyst Isle 	
 				}),
 				q(9694,  {	-- Blood Watch
 					["provider"] = { "n", 17684 },	-- Vindicator Boros
@@ -324,7 +324,7 @@ _.Zones =
 					["coord"] = { 57.7, 53.9, 106 },
 					["sourceQuest"] = 9603,	-- Beds, Bandages, and Beyond
 					["races"] = { DRAENEI },
-					["u"] = 40, 	-- Legacy Quest, quest moved to Azuremyst Isle 
+					["u"] = REMOVED_FROM_GAME, -- quest moved to Azuremyst Isle 
 				}),
 				q(9548,  {	-- Pilfered Equipment
 					["provider"] = { "n", 17421 },	-- Clopper Wizbang
