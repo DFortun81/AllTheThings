@@ -770,7 +770,6 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(41064),	-- Cursed Forge of the Nathrezim
-					q(47078),	-- Delivering Lost Knowledge
 					q(43552),	-- Eye of Azshara
 					q(44226),	-- Fate Favors Us
 					q(46152),	-- Furthering Knowledge

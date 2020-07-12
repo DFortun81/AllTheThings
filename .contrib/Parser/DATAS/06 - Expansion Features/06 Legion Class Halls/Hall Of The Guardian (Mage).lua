@@ -183,7 +183,6 @@ _.ExpansionFeatures =
 					q(45846),	-- Chilled to the Core
 					q(45847),	-- Close to Home
 					q(42477),	-- Daio the Decrepit
-					q(47070),	-- Delivering Lost Knowledge
 					q(45354),	-- Dispersion of the Discs
 					q(46723),	-- Down the Rabbit Hole
 					q(42222),	-- Empyrean Society Report

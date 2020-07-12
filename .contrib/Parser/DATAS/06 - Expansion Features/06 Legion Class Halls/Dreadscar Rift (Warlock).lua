@@ -230,7 +230,6 @@ _.ExpansionFeatures =
 					q(46020),	-- Crystal Containment
 					q(42125),	-- Dark Whispers
 					q(40218),	-- Debt Repaid
-					q(47076),	-- Delivering Lost Knowledge
 					q(42100),	-- Empowering the Soul
 					q(46239),	-- Fel to the Core
 					q(41785),	-- Finding Fizzlebang

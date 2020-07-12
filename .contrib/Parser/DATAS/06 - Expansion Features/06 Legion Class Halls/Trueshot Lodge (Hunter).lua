@@ -49,7 +49,6 @@ _.ExpansionFeatures =
 					q(44043),	-- Continuing the Legend
 					q(45392),	-- Dark Memento
 					q(42654),	-- Darkheart Thicket: Nightmare Oak
-					q(47073),	-- Delivering Lost Knowledge
 					q(45551),	-- Devastating Effects
 					q(45555, {	-- Felbound Beasts
 						["classes"] = { 3 },	-- Hunter

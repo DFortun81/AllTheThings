@@ -559,7 +559,6 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 					}),
 					q(43403),	-- Defending the Isles
-					q(47075),	-- Delivering Lost Knowledge
 					q(42051),	-- Enter Nightmare
 					q(44235),	-- Essence of Fate
 					q(44236),	-- Essence of Fate

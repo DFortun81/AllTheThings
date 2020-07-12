@@ -601,7 +601,6 @@ _.ExpansionFeatures =
 					q(44057),	-- A "Noble" Event
 					q(43359),	-- A Hero's Weapon
 					q(46024),	-- An Urgent Warning
-					q(47069),	-- Delivering Lost Knowledge
 					q(44239),	-- Echo of a Celestial
 					q(46785),	-- Further Advancement
 					q(46157),	-- Furthering Knowledge
