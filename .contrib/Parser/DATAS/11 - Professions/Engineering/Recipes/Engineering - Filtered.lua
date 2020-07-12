@@ -340,7 +340,7 @@ profession(ENGINEERING, {
 						{
 							["name"] = "Hyper-Radiant Flame Reflector",
 							["recipeID"] = 23081,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["name"] = "Ice Deflector",
@@ -438,7 +438,7 @@ profession(ENGINEERING, {
 						{
 							["name"] = "Flawless Arcanite Rifle",
 							["recipeID"] = 19833,
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["name"] = "Lovingly Crafted Boomstick",

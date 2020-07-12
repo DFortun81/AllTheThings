@@ -122,7 +122,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						{	-- Design: Brilliant Living Ruby
 							["itemID"] = 24195,	-- Design: Brilliant Living Ruby
 							["spellID"] = 0,	-- This is now available via 35305, need to delink the old plans from the recipe
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						i(35307),	-- Design: Rigid Star of Elune (BoP version)
 						i(35304),	-- Design: Solid Star of Elune (BoP version)
@@ -223,7 +223,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 							{	-- Design: Brilliant Living Ruby
 								["itemID"] = 24195,	-- Design: Brilliant Living Ruby
 								["spellID"] = 0,	-- This is now available via 35305, need to delink the old plans from the recipe
-								["u"] = 7,
+								["u"] = REMOVED_FROM_GAME,
 							},
 							i(35307),	-- Design: Rigid Star of Elune (BoP version)
 							i(35304),	-- Design: Solid Star of Elune (BoP version)

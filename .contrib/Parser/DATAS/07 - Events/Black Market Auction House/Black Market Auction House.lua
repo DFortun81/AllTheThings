@@ -336,7 +336,7 @@ _.WorldEvents =
 			i(110678, {	-- Darkmoon Ticket Fanny Pack
 				["description"] = "Contains 250-500 Darkmoon Faire Tickets",
 			}),
-			un(7, i(128312)),	-- Elixir of the Rapid Mind
+			un(REMOVED_FROM_GAME, i(128312)),	-- Elixir of the Rapid Mind
 			un(9, i(45037)),	-- Epic Purple Shirt
 			{	-- Grimoire of the Four Winds
 				["itemID"] = 110672,	-- Grimoire of the Four Winds
@@ -347,16 +347,16 @@ _.WorldEvents =
 				-- Removed from BMAH with 7.3.5
 			},
 			-- Heart of Fear Heroic Trash Drops. Only where available from the BMAH while HoF was current Content.
-			un(7, i(86993)),	-- Darting Damselfly Cuffs
-			un(7, i(86994)),	-- Gleaming Moth Cuffs
-			un(7, i(86999)),	-- Inlaid Cricket Bracers
-			un(7, i(86997)),	-- Jagged Hornet Bracers
-			un(7, i(86998)),	-- Luminescent Firefly Wristguards
-			un(7, i(86996)),	-- Pearlescent Butterfly Wristbands
-			un(7, i(87000)),	-- Plated Locust Bracers
-			un(7, i(87001)),	-- Serrated Wasp Bracers
-			un(7, i(86992)),	-- Shining Cicada Bracers
-			un(7, i(86995)),	-- Smooth Beetle Wristbands
+			un(REMOVED_FROM_GAME, i(86993)),	-- Darting Damselfly Cuffs
+			un(REMOVED_FROM_GAME, i(86994)),	-- Gleaming Moth Cuffs
+			un(REMOVED_FROM_GAME, i(86999)),	-- Inlaid Cricket Bracers
+			un(REMOVED_FROM_GAME, i(86997)),	-- Jagged Hornet Bracers
+			un(REMOVED_FROM_GAME, i(86998)),	-- Luminescent Firefly Wristguards
+			un(REMOVED_FROM_GAME, i(86996)),	-- Pearlescent Butterfly Wristbands
+			un(REMOVED_FROM_GAME, i(87000)),	-- Plated Locust Bracers
+			un(REMOVED_FROM_GAME, i(87001)),	-- Serrated Wasp Bracers
+			un(REMOVED_FROM_GAME, i(86992)),	-- Shining Cicada Bracers
+			un(REMOVED_FROM_GAME, i(86995)),	-- Smooth Beetle Wristbands
 			{	-- Kor'kron Shaman's Treasure
 				["groups"] = {
 					i(105745),	-- Kor'kron Dark Shaman Cowl

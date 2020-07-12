@@ -1092,7 +1092,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(19943, {	-- Massive Mojo
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						14834,	-- Hakkar
 						11382,	-- Bloodlord Mandokir
@@ -1265,33 +1265,33 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(ZONEDROPS, {
 				un(REMOVED_FROM_GAME, i(19727)),	-- Blood Scythe
-				un(7, i(20263)),	-- Gurubashi Helm
+				un(REMOVED_FROM_GAME, i(20263)),	-- Gurubashi Helm
 				un(REMOVED_FROM_GAME, i(19908)),	-- Sceptre of Smiting
-				un(7, i(20261)),	-- Shadow Panther Hide Belt
-				un(7, i(20259)),	-- Shadow Panther Hide Gloves
-				un(7, i(20258)),	-- Zulian Ceremonial Staff
-				un(7, i(19921)),	-- Zulian Hacker
-				un(7, i(19708)),	-- Blue Hakkari Bijou
-				un(7, i(19713)),	-- Bronze Hakkari Bijou
-				un(7, i(19715)),	-- Gold Hakkari Bijou
-				un(7, i(19711)),	-- Green Hakkari Bijou
-				un(7, i(19710)),	-- Orange Hakkari Bijou
-				un(7, i(19712)),	-- Purple Hakkari Bijou
-				un(7, i(19707)),	-- Red Hakkari Bijou
-				un(7, i(19714)),	-- Silver Hakkari Bijou
-				un(7, i(19709)),	-- Yellow Hakkari Bijou
-				un(7, i(19706)),	-- Bloodscalp Coin
-				un(7, i(19701)),	-- Gurubashi Coin
-				un(7, i(19700)),	-- Hakkari Coin
-				un(7, i(19699)),	-- Razzashi Coin
-				un(7, i(19704)),	-- Sandfury Coin
-				un(7, i(19705)),	-- Skullsplitter Coin
-				un(7, i(19702)),	-- Vilebranch Coin
-				un(7, i(19703)),	-- Witherbark Coin
-				un(7, i(19698)),	-- Zulian Coin
+				un(REMOVED_FROM_GAME, i(20261)),	-- Shadow Panther Hide Belt
+				un(REMOVED_FROM_GAME, i(20259)),	-- Shadow Panther Hide Gloves
+				un(REMOVED_FROM_GAME, i(20258)),	-- Zulian Ceremonial Staff
+				un(REMOVED_FROM_GAME, i(19921)),	-- Zulian Hacker
+				un(REMOVED_FROM_GAME, i(19708)),	-- Blue Hakkari Bijou
+				un(REMOVED_FROM_GAME, i(19713)),	-- Bronze Hakkari Bijou
+				un(REMOVED_FROM_GAME, i(19715)),	-- Gold Hakkari Bijou
+				un(REMOVED_FROM_GAME, i(19711)),	-- Green Hakkari Bijou
+				un(REMOVED_FROM_GAME, i(19710)),	-- Orange Hakkari Bijou
+				un(REMOVED_FROM_GAME, i(19712)),	-- Purple Hakkari Bijou
+				un(REMOVED_FROM_GAME, i(19707)),	-- Red Hakkari Bijou
+				un(REMOVED_FROM_GAME, i(19714)),	-- Silver Hakkari Bijou
+				un(REMOVED_FROM_GAME, i(19709)),	-- Yellow Hakkari Bijou
+				un(REMOVED_FROM_GAME, i(19706)),	-- Bloodscalp Coin
+				un(REMOVED_FROM_GAME, i(19701)),	-- Gurubashi Coin
+				un(REMOVED_FROM_GAME, i(19700)),	-- Hakkari Coin
+				un(REMOVED_FROM_GAME, i(19699)),	-- Razzashi Coin
+				un(REMOVED_FROM_GAME, i(19704)),	-- Sandfury Coin
+				un(REMOVED_FROM_GAME, i(19705)),	-- Skullsplitter Coin
+				un(REMOVED_FROM_GAME, i(19702)),	-- Vilebranch Coin
+				un(REMOVED_FROM_GAME, i(19703)),	-- Witherbark Coin
+				un(REMOVED_FROM_GAME, i(19698)),	-- Zulian Coin
 				{
 					["itemID"] = 19821,	-- Punctured Voodoo Doll [Druid]
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1304,7 +1304,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19814,	-- Punctured Voodoo Doll [Rogue]
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1317,7 +1317,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19816,	-- Punctured Voodoo Doll [Hunter]
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1330,7 +1330,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19819,	-- Punctured Voodoo Doll [Warlock]
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1343,7 +1343,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19813,	-- Punctured Voodoo Doll [Warrior]
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1356,7 +1356,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19818,	-- Punctured Voodoo Doll [Mage]
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1369,7 +1369,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19820,	-- Punctured Voodoo Doll [Priest]
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1382,7 +1382,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19815,	-- Punctured Voodoo Doll [Paladin]
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1395,7 +1395,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				{
 					["itemID"] = 19817,	-- Punctured Voodoo Doll [Shaman]
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["cost"] = {
 						{ "i", 19939, 1 },	-- Gri'lek's Blood
 						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
@@ -1413,18 +1413,18 @@ _.Instances = { tier(1, {	-- Classic
 				},
 				["groups"] = {
 					i(19726, {	-- Bloodvine
-						["u"] = 7,
+						["u"] = REMOVED_FROM_GAME,
 					}),
 				},
 			}),
 			prof(MINING, {
 				i(19774, {	-- Souldarite
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
 			prof(SKINNING, {
 				i(19768, {	-- Primal Tiger Leather
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = {
 						11361,	-- Zulian Tiger
 						15067,	-- Zulian Stalker
@@ -1432,7 +1432,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				i(19767, {	-- Primal Bat Leather
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["cr"] = 11368,	-- Bloodseeker Bat
 				}),
 			}),
@@ -1444,7 +1444,7 @@ _.Instances = { tier(1, {	-- Classic
 				un(REMOVED_FROM_GAME, i(19920)),	-- Primalist's Band
 				un(REMOVED_FROM_GAME, i(20262)),	-- Seafury Boots
 				un(REMOVED_FROM_GAME, i(19915)),	-- Zulian Defender
-				un(7, i(19767)),	-- Primal Bat Leather
+				un(REMOVED_FROM_GAME, i(19767)),	-- Primal Bat Leather
 			})),
 			un(REMOVED_FROM_GAME, n(14507, {	-- High Priest Venoxis
 				{
@@ -1527,7 +1527,7 @@ _.Instances = { tier(1, {	-- Classic
 				un(REMOVED_FROM_GAME, i(19898)),	-- Seal of Jin
 				un(REMOVED_FROM_GAME, i(19896)),	-- Thekal's Grasp
 				un(REMOVED_FROM_GAME, i(19901)),	-- Zulian Slicer
-				un(7, i(19768)),	-- Primal Tiger Leather
+				un(REMOVED_FROM_GAME, i(19768)),	-- Primal Tiger Leather
 			})),
 			o(180366, {	-- Battered Tackle Box
 				["description"] = "Fishermen with 300 skill can interact with this to receive the quest item.",

@@ -9,7 +9,7 @@ _.Zones =
 				n(10819, { 	-- Baron Bloodbane
 					["coord"] = { 35.4, 21.2, 23 },
 					["g"] = {
-						un(7, i(16999)),	-- Royal Seal of Alexis
+						un(REMOVED_FROM_GAME, i(16999)),	-- Royal Seal of Alexis
 					},
 				}),
 				n(51042, { 	-- Bleakheart
@@ -79,7 +79,7 @@ _.Zones =
 						{ 35.2, 47.2, 23 },
 					},
 					["g"] = {
-						un(7, i(16039)),	-- Ta'Kierthan Songblade
+						un(REMOVED_FROM_GAME, i(16039)),	-- Ta'Kierthan Songblade
 					},
 				}),
 				n(10828, { 	-- Lynnia Abbendis

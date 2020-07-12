@@ -164,43 +164,43 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 					}),
 					n(ZONEDROPS, {
-						un(7, i(16254)),	-- Formula: Enchant Weapon - Lifestealing [Scholomance, Removed from game with revamp? Might have been added back in 7.3.5, but not sure.]
+						un(REMOVED_FROM_GAME, i(16254)),	-- Formula: Enchant Weapon - Lifestealing [Scholomance, Removed from game with revamp? Might have been added back in 7.3.5, but not sure.]
 						n(10495, { 	-- Diseased Ghoul
-							un(7, i(16714)),	-- Wildheart Bracers
+							un(REMOVED_FROM_GAME, i(16714)),	-- Wildheart Bracers
 						}),
 						n(10488, { 	-- Risen Construct
-							un(7, i(16710)),	-- Shadowcraft Bracers
+							un(REMOVED_FROM_GAME, i(16710)),	-- Shadowcraft Bracers
 						}),
 						n(10487, { 	-- Risen Protector
-							un(7, i(16722)),	-- Lightforge Bracers
+							un(REMOVED_FROM_GAME, i(16722)),	-- Lightforge Bracers
 						}),
 						n(10486, { 	-- Risen Warrior
-							un(7, i(16722)),	-- Lightforge Bracers
+							un(REMOVED_FROM_GAME, i(16722)),	-- Lightforge Bracers
 						}),
 						n(10469, { 	-- Scholomance Adept
-							un(7, i(16685)),	-- Magister's Belt
+							un(REMOVED_FROM_GAME, i(16685)),	-- Magister's Belt
 						}),
 						n(11582, { 	-- Scholomance Dark Summoner
-							un(7, i(15776)),	-- Pattern: Runic Leather Armor (now learned from trainer)
+							un(REMOVED_FROM_GAME, i(15776)),	-- Pattern: Runic Leather Armor (now learned from trainer)
 						}),
 						n(11257, { 	-- Scholomance Handler
-							un(7, i(16716)),	-- Wildheart Belt
+							un(REMOVED_FROM_GAME, i(16716)),	-- Wildheart Belt
 						}),
 						n(10477, { 	-- Scholomance Necromancer
-							un(7, i(16702)),	-- Dreadmist Belt
+							un(REMOVED_FROM_GAME, i(16702)),	-- Dreadmist Belt
 						}),
 						n(10472, { 	-- Scholomance Occultist
-							un(7, i(16710)),	-- Shadowcraft Bracers
+							un(REMOVED_FROM_GAME, i(16710)),	-- Shadowcraft Bracers
 						}),
 						n(10499, { 	-- Spectral Researcher
-							un(7, i(15773)),	-- Pattern: Wicked Leather Armor
-							un(7, i(16716)),	-- Wildheart Belt
+							un(REMOVED_FROM_GAME, i(15773)),	-- Pattern: Wicked Leather Armor
+							un(REMOVED_FROM_GAME, i(16716)),	-- Wildheart Belt
 						}),
 						n(10500, {	-- Spectral Teacher
-							un(7, i(16716)),	-- Wildheart Belt
+							un(REMOVED_FROM_GAME, i(16716)),	-- Wildheart Belt
 						}),
 						n(10478, { 	-- Splintered Skelton
-							un(7, i(16671)),	-- Bindings of Elements
+							un(REMOVED_FROM_GAME, i(16671)),	-- Bindings of Elements
 						}),
 					}),
 					n(10506, { 	-- Kirtonos the Herald
@@ -260,7 +260,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(REMOVED_FROM_GAME, i(14577)),	-- Skullsmoke Pants
 					}),
 					n(10508, {	-- Ras  Frostwhisper
-						un(7, i(13521)),	-- Recipe: Flask of Supreme Power
+						un(REMOVED_FROM_GAME, i(13521)),	-- Recipe: Flask of Supreme Power
 						un(REMOVED_FROM_GAME, i(13314)),	-- Alanna's Embrace
 						un(REMOVED_FROM_GAME, i(14487)),	-- Bonechill Hammer
 						un(REMOVED_FROM_GAME, i(14525)),	-- Boneclenched Gauntlets
@@ -305,7 +305,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(REMOVED_FROM_GAME, i(14621)),	-- Deathbone Sabatons
 						un(REMOVED_FROM_GAME, i(18682)),	-- Ghoul Skin Leggings
 						un(REMOVED_FROM_GAME, i(18683)),	-- Hammer of the Vesper
-						un(7, i(16684)),	-- Magister's Gloves
+						un(REMOVED_FROM_GAME, i(16684)),	-- Magister's Gloves
 						un(REMOVED_FROM_GAME, i(14631)),	-- Necropile Boots
 						un(REMOVED_FROM_GAME, i(14629)),	-- Necropile Cuffs
 						un(REMOVED_FROM_GAME, i(14632)),	-- Necropile Leggings
@@ -332,7 +332,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(REMOVED_FROM_GAME, i(14620)),	-- Deathbone Girdle
 						un(REMOVED_FROM_GAME, i(14623)),	-- Deathbone Legguards
 						un(REMOVED_FROM_GAME, i(14621)),	-- Deathbone Sabatons
-						un(7, i(16705)),	-- Dreadmist Wraps
+						un(REMOVED_FROM_GAME, i(16705)),	-- Dreadmist Wraps
 						un(REMOVED_FROM_GAME, i(18682)),	-- Ghoul Skin Leggings
 						un(REMOVED_FROM_GAME, i(18683)),	-- Hammer of the Vesper
 						un(REMOVED_FROM_GAME, i(14631)),	-- Necropile Boots
@@ -362,13 +362,13 @@ _.Instances = { tier(1, {	-- Classic
 						un(REMOVED_FROM_GAME, i(14621)),	-- Deathbone Sabatons
 						un(REMOVED_FROM_GAME, i(18682)),	-- Ghoul Skin Leggings
 						un(REMOVED_FROM_GAME, i(18683)),	-- Hammer of the Vesper
-						un(7, i(16684)),	-- Magister's Gloves
+						un(REMOVED_FROM_GAME, i(16684)),	-- Magister's Gloves
 						un(REMOVED_FROM_GAME, i(14631)),	-- Necropile Boots
 						un(REMOVED_FROM_GAME, i(14629)),	-- Necropile Cuffs
 						un(REMOVED_FROM_GAME, i(14632)),	-- Necropile Leggings
 						un(REMOVED_FROM_GAME, i(14633)),	-- Necropile Mantle
 						un(REMOVED_FROM_GAME, i(14626)),	-- Necropile Robe
-						un(7, i(16710)),	-- Shadowcraft Bracers
+						un(REMOVED_FROM_GAME, i(16710)),	-- Shadowcraft Bracers
 						un(REMOVED_FROM_GAME, i(18684)),	-- Dimly Opalescent Ring
 					}),
 					n(10502, {	-- Lady Illucia Barov
@@ -418,7 +418,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(REMOVED_FROM_GAME, i(14621)),	-- Deathbone Sabatons
 						un(REMOVED_FROM_GAME, i(18682)),	-- Ghoul Skin Leggings
 						un(REMOVED_FROM_GAME, i(18683)),	-- Hammer of the Vesper
-						un(7, i(16722)),	-- Lightforge Bracers
+						un(REMOVED_FROM_GAME, i(16722)),	-- Lightforge Bracers
 						un(REMOVED_FROM_GAME, i(14631)),	-- Necropile Boots
 						un(REMOVED_FROM_GAME, i(14629)),	-- Necropile Cuffs
 						un(REMOVED_FROM_GAME, i(14632)),	-- Necropile Leggings
@@ -451,11 +451,11 @@ _.Instances = { tier(1, {	-- Classic
 						un(REMOVED_FROM_GAME, i(14632)),	-- Necropile Leggings
 						un(REMOVED_FROM_GAME, i(14633)),	-- Necropile Mantle
 						un(REMOVED_FROM_GAME, i(14626)),	-- Necropile Robe
-						un(7, i(16716)),	-- Wildheart Belt
+						un(REMOVED_FROM_GAME, i(16716)),	-- Wildheart Belt
 						un(REMOVED_FROM_GAME, i(18684)),	-- Dimly Opalescent Ring
 					}),
 					n(1853, {	-- Darkmaster Gandling
-						un(7, i(14514)),	-- Pattern: Robe of the Void
+						un(REMOVED_FROM_GAME, i(14514)),	-- Pattern: Robe of the Void
 						un(REMOVED_FROM_GAME, i(16677)),	-- Beastalker's Cap
 						un(REMOVED_FROM_GAME, i(13938)),	-- Bonecreeper Stylus
 						un(REMOVED_FROM_GAME, i(13398)),	-- Boots of the Shrieker

@@ -517,7 +517,7 @@ _.Instances = { tier(1, {	-- Classic
 					["crs"] = {
 						8900,	-- Doomforge Arcanasmith
 					},
-					["u"] = 7,	-- now learned from trainer, schematic was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, schematic was removed from game
 				},
 				i(18661, {	-- Schematic: World Enlarger
 					["crs"] = {
@@ -605,7 +605,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(22240), 	-- Greaves of Withering Despaire
 				})),
 				cr(9025, e(370, {	-- Lord Roccor
-					un(7, i(11813)),	-- Formula: Smoking Heart of the Mountain [old BOE version that was removed]
+					un(REMOVED_FROM_GAME, i(11813)),	-- Formula: Smoking Heart of the Mountain [old BOE version that was removed]
 					i(45050),	-- Formula: Smoking Heart of the Mountain [BOP]
 					i(11631), 	-- Stoneshell Guard
 					i(22234), 	-- Mantle of Lost Hope

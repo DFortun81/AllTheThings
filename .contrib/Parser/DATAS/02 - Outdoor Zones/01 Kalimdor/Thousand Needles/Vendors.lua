@@ -11,7 +11,7 @@ _.Zones =
 					["g"] = {
 						i(13309, {	-- Schematic: Lovingly Crafted Boomstick
 							["spellID"] = 0,	-- now learned from trainer, schematic was removed from game
-							["u"] = 7, 
+							["u"] = REMOVED_FROM_GAME, 
 						}),
 					},
 				}),

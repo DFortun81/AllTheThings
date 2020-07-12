@@ -21,7 +21,7 @@ _.Zones =
 				n(2609, { 	-- Geomancer Flintdagger
 					["coord"] = { 79.6, 29.6, 14 },
 					["g"] = {
-						un(7, i(5742)),	-- Gemstone Dagger
+						un(REMOVED_FROM_GAME, i(5742)),	-- Gemstone Dagger
 						i(5743),	-- Prismstone Ring
 					},
 				}),
@@ -31,7 +31,7 @@ _.Zones =
 				n(2603, { 	-- Kovork
 					["coord"] = { 24.6, 44.8, 14 },
 					["g"] = {
-						un(7, i(5256)),	-- Kovork's Rattle
+						un(REMOVED_FROM_GAME, i(5256)),	-- Kovork's Rattle
 					},
 				}),
 				n(2604, { 	-- Molok the Crusher
@@ -40,8 +40,8 @@ _.Zones =
 				n(2606, { 	-- Nimar the Slayer
 					["coord"] = { 68.6, 66.7, 14 },
 					["g"] = {
-						un(7, i(5257)),	-- Dark Hooded Cape
-						un(7, i(2622)),	-- Nimar's Tribal Headdress
+						un(REMOVED_FROM_GAME, i(5257)),	-- Dark Hooded Cape
+						un(REMOVED_FROM_GAME, i(2622)),	-- Nimar's Tribal Headdress
 					},
 				}),
 				n(2779, { 	-- Prince Nazjak
@@ -70,7 +70,7 @@ _.Zones =
 					["coord"] = { 27.4, 27.8, 14 },
 					["g"] = {
 						i(5180),	-- Necklace of Harmony
-						un(7, i(5181)), 	-- Vibrant Silk Cape
+						un(REMOVED_FROM_GAME, i(5181)), 	-- Vibrant Silk Cape
 					},
 				}),
 				n(51040, { 	-- Snuffles

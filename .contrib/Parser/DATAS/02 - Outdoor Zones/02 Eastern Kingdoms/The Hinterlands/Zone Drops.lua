@@ -15,10 +15,10 @@ _.Zones =
 					},
 				}),
 				n(2644, {	-- Vilebranch Hideskinner
-					un(7, i(15760)),	-- Pattern: Ironfeather Breastplate
+					un(REMOVED_FROM_GAME, i(15760)),	-- Pattern: Ironfeather Breastplate
 				}),
 				n(2642, {	-- Vilebranch Shadowcaster
-					un(7, i(16214)),	-- Formula: Enchant Bracer - Greater Intellect
+					un(REMOVED_FROM_GAME, i(16214)),	-- Formula: Enchant Bracer - Greater Intellect
 				}),
 			}),
 		}),

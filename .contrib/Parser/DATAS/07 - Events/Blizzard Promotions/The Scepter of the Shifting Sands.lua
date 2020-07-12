@@ -48,7 +48,7 @@ _.WorldEvents =
 						["provider"] = { "n", 8125 },	-- Dirge Quikcleave <Butcher>
 						["u"] = REMOVED_FROM_GAME,
 						["groups"] = {
-							un(7, i(21025)),	-- Recipe: Dirge's Kickin' Chimaerok Chops
+							un(REMOVED_FROM_GAME, i(21025)),	-- Recipe: Dirge's Kickin' Chimaerok Chops
 						},
 					},
 					{

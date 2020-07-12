@@ -77,7 +77,7 @@ _.Zones =
 						{ 39.6, 50.6, 71 },
 					},
 					["g"] = {
-						un(7, i(17055)),	-- Changuk Smasher
+						un(REMOVED_FROM_GAME, i(17055)),	-- Changuk Smasher
 					},
 				}), 
 				n(39183, {	-- Scorpitar

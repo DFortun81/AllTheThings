@@ -15,7 +15,7 @@ _.ExpansionFeatures =
 								["provider"] = { "n", 87206 },	-- Ancient Trading Mechanism
 								["races"] = ALLIANCE_ONLY,
 								["g"] = addObject(
-									bubbleDown({["u"] = 7, ["description"] = "This item is no longer required to complete the Auctioning for Parts garrison quest."}, {
+									bubbleDown({["u"] = REMOVED_FROM_GAME, ["description"] = "This item is no longer required to complete the Auctioning for Parts garrison quest."}, {
 										i(118377, {	-- Universal Language Module
 											i(118333),	-- Universal Language Compensator [Part 1 of 3]
 											i(118334),	-- Universal Language Filter [Part 2 of 3]

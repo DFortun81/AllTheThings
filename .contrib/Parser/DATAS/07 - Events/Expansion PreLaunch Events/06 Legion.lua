@@ -320,7 +320,7 @@ _.WorldEvents =
 					}),
 					n(VENDORS, {
 						n(109912, {	-- Captive Wyrmtongue <Reluctant 'Quartermaster'>
-							un(7, i(136924)),	-- Felbat Pup Pet
+							un(REMOVED_FROM_GAME, i(136924)),	-- Felbat Pup Pet
 							un(REMOVED_FROM_GAME, i(141604)),	-- Glaive of the Fallen
 							un(REMOVED_FROM_GAME, i(138160)),	-- Infernal Cord
 							un(REMOVED_FROM_GAME, i(139172)),	-- Legionnaire's Fel Pendant
@@ -387,7 +387,7 @@ _.WorldEvents =
 					n(ZONEDROPS, {
 						n(112315, { 	-- Dread Infiltrator
 							["groups"] = {
-								un(7, i(140363)),	-- Pocket Fel Spreader Toy
+								un(REMOVED_FROM_GAME, i(140363)),	-- Pocket Fel Spreader Toy
 							},
 							["description"] = "Players with some sort of Sense Demons ability could get this mob to spawn from Doomsayers.",
 						}),

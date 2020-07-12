@@ -26,9 +26,9 @@ _.Zones =
 					["provider"] = { "n", 15306 },	-- Bor Wildmane
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(20603, { 	-- Bag of Spoils
-							un(7, i(20694)), 	-- Glowing Black Orb
-							un(7, i(20693)), 	-- Weighted Cloak
-							un(7, i(20692)),	-- Multicolored Band
+							un(REMOVED_FROM_GAME, i(20694)), 	-- Glowing Black Orb
+							un(REMOVED_FROM_GAME, i(20693)), 	-- Weighted Cloak
+							un(REMOVED_FROM_GAME, i(20692)),	-- Multicolored Band
 						})),
 					},
 				}),
@@ -272,9 +272,9 @@ _.Zones =
 					["provider"] = { "n", 15306 },	-- Bor Wildmane
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(20602, { 	-- Chest of Spoils
-							un(7, i(20721)),	-- Band of the Cultist
-							un(7, i(20722)), 	-- Crystal Slugthrower
-							un(7, i(20720)), 	-- Dark Whisper Blade
+							un(REMOVED_FROM_GAME, i(20721)),	-- Band of the Cultist
+							un(REMOVED_FROM_GAME, i(20722)), 	-- Crystal Slugthrower
+							un(REMOVED_FROM_GAME, i(20720)), 	-- Dark Whisper Blade
 						})),
 					},
 				}),
@@ -329,10 +329,10 @@ _.Zones =
 					["provider"] = { "n", 15306 },	-- Bor Wildmane
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(20601, { 	-- Sack of Spoils
-							un(7, i(20695)),	-- Abyssal War Beads
-							un(7, i(20696)),	-- Crystal Spiked Maul
-							un(7, i(20697)),	-- Crystalline Threaded Cape
-							un(7, i(20698)),	-- Elemental Attuned Blade
+							un(REMOVED_FROM_GAME, i(20695)),	-- Abyssal War Beads
+							un(REMOVED_FROM_GAME, i(20696)),	-- Crystal Spiked Maul
+							un(REMOVED_FROM_GAME, i(20697)),	-- Crystalline Threaded Cape
+							un(REMOVED_FROM_GAME, i(20698)),	-- Elemental Attuned Blade
 						})),
 					},
 				}),

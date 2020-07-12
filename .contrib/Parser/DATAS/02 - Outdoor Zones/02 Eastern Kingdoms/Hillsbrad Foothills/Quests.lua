@@ -176,7 +176,7 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3753)),	-- Shepherd's Girdle
 						un(REMOVED_FROM_GAME, i(3754)),	-- Shepherd's Gloves
-						un(7, i(3736)),	-- Recipe: Tasty Lion Steak (can be learned from a trainer but recipe no longer drops)
+						un(REMOVED_FROM_GAME, i(3736)),	-- Recipe: Tasty Lion Steak (can be learned from a trainer but recipe no longer drops)
 					},
 				}),
 				q(504,   {	-- Crushridge Warmongers
@@ -652,7 +652,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 2430 },	-- Chef Jessen
 					["g"] = {
-						un(7, i(3737)),	-- Recipe: Soothing Turtle Bisque
+						un(REMOVED_FROM_GAME, i(3737)),	-- Recipe: Soothing Turtle Bisque
 					},
 				}),
 				q(7321, {	-- [DEPRECATED] Soothing Turtle Bisque
@@ -661,7 +661,7 @@ _.Zones =
 					["provider"] = { "n", 2393 },	-- Christoph Jeffcoat
 					["requireSkill"] = COOKING,
 					["g"] = {
-						un(7, i(3737)),	-- Recipe: Soothing Turtle Bisque
+						un(REMOVED_FROM_GAME, i(3737)),	-- Recipe: Soothing Turtle Bisque
 					},
 				}),
 				q(546,   {	-- [DEPRECATED] Souvenirs of Death
@@ -849,7 +849,7 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3752)),	-- Grunt Vest
 						un(REMOVED_FROM_GAME, i(3733)),	-- Orcish War Chain
-						un(7, i(3734)),	-- Recipe: Big Bear Steak
+						un(REMOVED_FROM_GAME, i(3734)),	-- Recipe: Big Bear Steak
 					},
 				}),
 				q(28375, {	-- The Road to Purgation

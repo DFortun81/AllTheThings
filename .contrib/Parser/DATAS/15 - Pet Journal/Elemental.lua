@@ -49,7 +49,7 @@ _.PetJournal =
 		p(834),		-- Grinder
 		p(2545), 	-- Gust of Cyclarus
 		p(2591),	-- Happiness
-		un(7, p(1544)),	-- Hatespark the Tiny
+		un(REMOVED_FROM_GAME, p(1544)),	-- Hatespark the Tiny
 		p(2003),	-- Hearthy
 		p(2547), 	-- Hydrath Droplet
 		p(1949),	-- Igneous Flameling

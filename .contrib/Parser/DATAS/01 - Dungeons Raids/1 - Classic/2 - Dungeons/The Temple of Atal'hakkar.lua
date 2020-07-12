@@ -188,7 +188,7 @@ _.Instances = { tier(1, {	-- Classic
 						5280,	-- Nightmare Wyrmkin
 					},
 				}),
-				un(7, i(15733)),	-- Pattern: Green Dragonscale Leggings (old version)
+				un(REMOVED_FROM_GAME, i(15733)),	-- Pattern: Green Dragonscale Leggings (old version)
 				i(78345, {	-- Pattern: Green Dragonscale Leggings
 					["crs"] = {
 						5721,	-- Dreamscythe

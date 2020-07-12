@@ -18,7 +18,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				},
 				["g"] = {
 					i(69877),	-- Belt of a Thousand Gaping Mouths
-					un(7, i(67240)),	-- Belt of A Thousand Mouths [Replaced with 69877]
+					un(REMOVED_FROM_GAME, i(67240)),	-- Belt of A Thousand Mouths [Replaced with 69877]
 					i(67143),	-- Icebone Hauberk
 					i(67132),	-- Grips of the Failed Immortal
 					i(67150),	-- Arrowsinger Legguards
@@ -47,7 +47,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				},
 				["g"] = {
 					i(69842),	-- Garr's Reinforced Girdle of Memories
-					un(7, i(67235)), --	Garr's Girdle of Memories [Replaced with 69842]
+					un(REMOVED_FROM_GAME, i(67235)), --	Garr's Girdle of Memories [Replaced with 69842]
 					i(67147),	-- Je'Tze's Sparkling Tiara
 					i(67150),	-- Arrowsinger Legguards
 					i(67141),	-- Corefire Legplates
@@ -72,7 +72,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["maps"] = { 241 },	-- Twilight Highlands
 				["g"] = {
 					i(69844),	-- Vitreous Beak of Julak-Doom
-					un(7, i(67246)),	-- Beak of Julak-Doom [Replaced with 69844]
+					un(REMOVED_FROM_GAME, i(67246)),	-- Beak of Julak-Doom [Replaced with 69844]
 					i(67150),	-- Arrowsinger Legguards
 					i(67145),	-- Blockade's Lost Shield
 					i(67141),	-- Corefire Legplates
@@ -109,7 +109,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["maps"] = { 207 },	-- Deepholm
 				["g"] = {
 					i(69876),	-- Xariona's Spectral Gauntlets
-					un(7, i(67239)),	-- Xariona's Spectral Claws [Replaced with 69876]
+					un(REMOVED_FROM_GAME, i(67239)),	-- Xariona's Spectral Claws [Replaced with 69876]
 					i(67132),	-- Grips of the Failed Immortal
 					i(67148),	-- Kilt of Trollish Dreams
 					i(67144),	-- Pauldrons of Edward the Odd

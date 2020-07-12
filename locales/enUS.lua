@@ -4158,7 +4158,7 @@ app.L = {
 		{0, "", ""}, -- 4
 		{0, "", ""}, -- 5
 		{2, "|CFFFF0000Item is included in Collector's Edition's, you can still find these for sale online in very low quantities.|r", "Collector's Edition (6)"}, -- Little Hope -- 6
-		{3, "|CFFFF0000The source of this item has been removed, but the item is Bind on Equip or a cageable pet.|r", "BoE Item (7)"}, -- There is Hope -- 7
+		{0, "", ""}, -- 7
 		{3, "|CFFFF0000The recipe to learn to craft this item has been removed and the item is Bind on Equip. This can be crafted or posted on the Auction House.|r", "Recipe: BoE Craftable Removed (8)"}, -- There is Hope -- 8
 		{3, "|CFFFF0000The source of this item has been removed and is only available with the Black Market Auction House.|r", "Black Market AH [BMAH] (9)"}, -- There is Hope -- 9
 		{3, "|CFFFF0000Item from TCG card is no longer in print, but still purchaseable online, sometimes BMAH, and possibly AH.|r", "Trading Card  Game [TCG] (10)"}, -- There is Hope -- 10

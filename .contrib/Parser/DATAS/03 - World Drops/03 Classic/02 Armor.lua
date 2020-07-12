@@ -41,7 +41,7 @@ _.WorldDrops =
 				i(1315),	-- Lei of Lilies
 				i(12031),	-- Lodestone Necklace
 				i(12034),	-- Marble Necklace
-				un(7, i(5004)),	-- Mark of the Kirin Tor
+				un(REMOVED_FROM_GAME, i(5004)),	-- Mark of the Kirin Tor
 				i(12042),	-- Marsh Chain
 				i(13091),	-- Medallion of Grand Marshal Morris
 				i(1714),	-- Necklace of Calisea
@@ -58,7 +58,7 @@ _.WorldDrops =
 				i(12045),	-- Swamp Pendant
 				i(5029),	-- Talisman of the Naga Lord
 				i(12023),	-- Tellurium Necklace
-				un(7, i(18678)),	-- Tempestria's Frozen Necklace
+				un(REMOVED_FROM_GAME, i(18678)),	-- Tempestria's Frozen Necklace
 				i(12020),	-- Thallium Choker
 				i(12039),	-- Tundra Necklace
 				i(12024),	-- Vanadium Talisman
@@ -233,7 +233,7 @@ _.WorldDrops =
 				i(6564),	-- Shimmering Cloak
 				i(14420),	-- Silksand Cape
 				i(4713),	-- Silver-Thread Cloak
-				un(7, i(22782, {	-- Sin'dorei Cloak of Warding
+				un(REMOVED_FROM_GAME, i(22782, {	-- Sin'dorei Cloak of Warding
 					["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 				})),
 				i(14752),	-- Slayer's Cape
@@ -270,24 +270,24 @@ _.WorldDrops =
 			}),
 			n(-323, {	-- Chest
 				i(2800),	-- Black Velvet Robes
-				un(7, i(54784, {	-- Burnished Tunic
+				un(REMOVED_FROM_GAME, i(54784, {	-- Burnished Tunic
 					["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 				})),
 				i(17050),	-- Chan's Imperial Robes
 				i(13009),	-- Cow King's Hide
 				i(1717),	-- Double Link Tunic
 				i(13123),	-- Dreamwalker Armor
-				un(7, i(2016)),	-- Dusty Chain Armor
+				un(REMOVED_FROM_GAME, i(2016)),	-- Dusty Chain Armor
 				i(9434),	-- Elemental Raiment
-				un(7, i(2273)),	-- Guerrilla Armor (No info on where this originally droppped)
+				un(REMOVED_FROM_GAME, i(2273)),	-- Guerrilla Armor (No info on where this originally droppped)
 				i(13067),	-- Hydralick Armor
 				i(1981),	-- Icemail Jerkin
-				un(7, i(914)), 	-- Large Ogre Chain Vest
-				un(7, i(2234)),	-- Nightwalker Armor (blue version seen on AH 5/26/2019 so this may be dropping again, but don't know for sure.)
+				un(REMOVED_FROM_GAME, i(914)), 	-- Large Ogre Chain Vest
+				un(REMOVED_FROM_GAME, i(2234)),	-- Nightwalker Armor (blue version seen on AH 5/26/2019 so this may be dropping again, but don't know for sure.)
 				i(1715),	-- Polished Jazeraint Armor
 				i(1716),	-- Robe of the Magi
 				i(940),		-- Robes of Insight
-				un(7, i(120952, {	-- Slarkhide
+				un(REMOVED_FROM_GAME, i(120952, {	-- Slarkhide
 					["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 				})),
 				i(12988),	-- Starsight Tunic
@@ -303,7 +303,7 @@ _.WorldDrops =
 				i(9433),	-- Forgotten Wraps
 				i(13106),	-- Glowing Magical Bracelets
 				i(13135),	-- Lordly Armguards
-				un(7, i(897)),	-- Madwolf Bracers
+				un(REMOVED_FROM_GAME, i(897)),	-- Madwolf Bracers
 				i(13107),	-- Magiskull Cuffs
 				i(13012),	-- Yorgen Bracers
 			}),
@@ -346,7 +346,7 @@ _.WorldDrops =
 				i(13129),	-- Firemane Leggings
 				i(13074),	-- Golem Shard Leggings
 				i(2277),	-- Necromancer Leggings
-				un(7, i(2233)),	 -- Shadow Weaver Leggings
+				un(REMOVED_FROM_GAME, i(2233)),	 -- Shadow Weaver Leggings
 				i(13114),	-- Troll's Bane Leggings
 				i(13130),	-- Windrunner Legguards
 			}),
@@ -358,7 +358,7 @@ _.WorldDrops =
 				i(13099),	-- Moccasins of the White Hare
 				i(13068),	-- Obsidian Greaves
 				i(13124),	-- Ravasaur Scale Boots
-				un(7, i(5968)),	-- Rugged Boots (Added during WoD to Salvage Crates)
+				un(REMOVED_FROM_GAME, i(5968)),	-- Rugged Boots (Added during WoD to Salvage Crates)
 				i(13111),	-- Sandals of the Insurgent
 				i(13070),	-- Sapphiron's Scale Boots
 				i(12982),	-- Silver-Linked Footguards
@@ -377,8 +377,8 @@ _.WorldDrops =
 				i(7553),	-- Band of the Unicorn
 				i(5007),	-- Band of Thorns
 				i(11996),	-- Basalt Ring
-				un(7, i(6332)),	-- Black Pearl Ring
-				un(7, i(6199)),	-- Black Widow Band
+				un(REMOVED_FROM_GAME, i(6332)),	-- Black Pearl Ring
+				un(REMOVED_FROM_GAME, i(6199)),	-- Black Widow Band
 				i(4998),	-- Blood Ring
 				i(13093),	-- Blush Ember Ring
 				i(6440),	-- Brainlash
@@ -388,8 +388,8 @@ _.WorldDrops =
 				i(11993),	-- Clay Ring
 				i(11984),	-- Cobalt Ring
 				i(11994),	-- Coral Band
-				un(7, i(1077)),	-- Defias Mage Ring
-				un(7, i(1076)),	-- Defias Renegade Ring
+				un(REMOVED_FROM_GAME, i(1077)),	-- Defias Mage Ring
+				un(REMOVED_FROM_GAME, i(1076)),	-- Defias Renegade Ring
 				i(12054),	-- Demon Band
 				i(12058),	-- Demonic Bone Ring
 				i(12013),	-- Desert Ring
@@ -399,14 +399,14 @@ _.WorldDrops =
 				i(12010),	-- Fen Ring
 				i(12011),	-- Forest Hoop
 				i(942),	-- Freezing Band
-				un(7, i(18679)),	-- Frigid Ring
+				un(REMOVED_FROM_GAME, i(18679)),	-- Frigid Ring
 				i(12005),	-- Granite Ring
 				i(11997),	-- Greenstone Circle
-				un(7, i(18674)),	-- Hardened Stone Band
+				un(REMOVED_FROM_GAME, i(18674)),	-- Hardened Stone Band
 				i(5001),	-- Heart Ring
 				i(11973),	-- Hematite Link
 				i(18701),	-- Innervating Band
-				un(7, i(5010)),	-- Inscribed Gold Ring
+				un(REMOVED_FROM_GAME, i(5010)),	-- Inscribed Gold Ring
 				i(11987),	-- Iridium Circle
 				i(11995),	-- Ivory Band
 				i(11969),	-- Jacinth Circle
@@ -427,7 +427,7 @@ _.WorldDrops =
 				i(1993),	-- Ogremind Ring
 				i(12001),	-- Onyx Ring
 				i(11980),	-- Opal Ring
-				un(7, i(1189)),	-- Overseer's Ring
+				un(REMOVED_FROM_GAME, i(1189)),	-- Overseer's Ring
 				i(11979),	-- Peridot Circle
 				i(18343),	-- Petrified Band
 				i(2039),	-- Plains Ring
@@ -435,14 +435,14 @@ _.WorldDrops =
 				i(12017),	-- Prismatic Band
 				i(5743),	-- Prismstone Ring
 				i(11965),	-- Quartz Ring
-				un(7, i(5008)),	-- Quicksilver Ring
+				un(REMOVED_FROM_GAME, i(5008)),	-- Quicksilver Ring
 				i(11991),	-- Quicksilver Ring
 				i(12985),	-- Ring of Defense
 				i(1491),	-- Ring of Precision
 				i(1447),	-- Ring of Saviors
 				i(12056),	-- Ring of the Heavens
 				i(12052),	-- Ring of the Moon
-				un(7, i(1462)),	-- Ring of the Shadow
+				un(REMOVED_FROM_GAME, i(1462)),	-- Ring of the Shadow
 				i(2951),	-- Ring of the Underwood
 				i(862),	-- Runed Ring
 				i(11976),	-- Sardonyx Knuckle
@@ -490,8 +490,8 @@ _.WorldDrops =
 				i(4396),	-- Mechanical Dragonling
 				i(10576),	-- Mithril Mechanical Dragonling
 				i(7734),	-- Six Demon Bag
-				un(7, i(18665)),	-- The Eye of Shadow
-				un(7, i(14557)),	-- The Lion Horn of Stormwind
+				un(REMOVED_FROM_GAME, i(18665)),	-- The Eye of Shadow
+				un(REMOVED_FROM_GAME, i(14557)),	-- The Lion Horn of Stormwind
 				i(18639),	-- Ultra-Flash Shadow Reflector
 				i(11302),	-- Uther's Strength
 			}),

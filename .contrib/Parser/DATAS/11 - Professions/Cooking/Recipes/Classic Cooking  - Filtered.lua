@@ -9,20 +9,23 @@ profession(COOKING, {
 					["g"] = {
 						{	-- Dirge's Kickin' Chimaerok Chops
 							["recipeID"] = 25659,	-- Dirge's Kickin' Chimaerok Chops
-							["u"] = 7,				-- BoE removed from game
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{	-- Goldthorn Tea
 							["recipeID"] = 13028,	-- Goldthorn Tea
 							["u"] = REMOVED_FROM_GAME,	--Note!! Vendor was removed from game in 6.0.1 when RFD was revamped
-						},{	-- Lean Wolf Steak
+						},
+						{	-- Lean Wolf Steak
 							["recipeID"] = 15853,	-- Lean Wolf Steak
-							["u"] = 7,				-- BoE removed from game
-						},{	-- Big Bear Steak
+							["u"] = REMOVED_FROM_GAME,
+						},
+						{	-- Big Bear Steak
 							["recipeID"] = 3397,	-- Big Bear Steak
-							["u"] = 7,				-- BoE removed from game
-						},{	-- Lean Venison
+							["u"] = REMOVED_FROM_GAME,
+						},
+						{	-- Lean Venison
 							["recipeID"] = 6419,	-- Lean Venison
-							["u"] = 7,				-- BoE removed from game
+							["u"] = REMOVED_FROM_GAME,
 						},
 					}
 				},

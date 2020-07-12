@@ -89,9 +89,9 @@ _.Holidays = bubbleDown({["u"] = 29},
 									un(29, i(118572)),	-- Illusion: Flames of Ragnaros
 									un(29, i(128649)),	-- Illusion: Winter's Grasp
 									-- Appearances
-									un(7, i(66540)),	-- Miniature Winter Veil Tree (Level 85)
-									un(7, i(93625)),	-- Miniature Winter Veil Tree (Level 90)
-									un(7, i(117371)),	-- Miniature Winter Veil Tree (Level 1-110)
+									un(REMOVED_FROM_GAME, i(66540)),	-- Miniature Winter Veil Tree (Level 85)
+									un(REMOVED_FROM_GAME, i(93625)),	-- Miniature Winter Veil Tree (Level 90)
+									un(REMOVED_FROM_GAME, i(117371)),	-- Miniature Winter Veil Tree (Level 1-110)
 									un(29, i(143898)),	-- Miniature Winter Veil Tree (Level 1 - Cosmetic)
 									-- Trinkets
 									un(29, i(151351)),	-- Glowing Gift
@@ -275,9 +275,9 @@ _.Holidays = bubbleDown({["u"] = 29},
 									un(29, i(128649)),	-- Illusion: Winter's Grasp
 									un(29, i(118572)),	-- Illusion: Flames of Ragnaros
 									-- Appearances
-									un(7, i(66540)),	-- Miniature Winter Veil Tree (Level 85)
-									un(7, i(93625)),	-- Miniature Winter Veil Tree (Level 90)
-									un(7, i(117371)),	-- Miniature Winter Veil Tree (Level 1-110)
+									un(REMOVED_FROM_GAME, i(66540)),	-- Miniature Winter Veil Tree (Level 85)
+									un(REMOVED_FROM_GAME, i(93625)),	-- Miniature Winter Veil Tree (Level 90)
+									un(REMOVED_FROM_GAME, i(117371)),	-- Miniature Winter Veil Tree (Level 1-110)
 									un(29, i(143898)),	-- Miniature Winter Veil Tree (Level 1 - Cosmetic)
 								},
 							}),

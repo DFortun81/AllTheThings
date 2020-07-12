@@ -11,25 +11,25 @@ _.WorldDrops =
 			}),
 			n(-182, {	-- Enchanting
 				i(37341, {	-- Formula: Enchant Boots - Superior Agility
-					["u"] = 7,	-- now learned from trainer, formula was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
 				}),
 				i(37346, {	-- Formula: Enchant Bracer - Expertise
-					["u"] = 7,	-- formula was removed from game when expertise went away
+					["u"] = REMOVED_FROM_GAME,	-- formula was removed from game when expertise went away
 				}),
 				i(37337, {	-- Formula: Enchant Bracer - Greater Stats
-					["u"] = 7,	-- now learned from trainer, formula was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
 				}),
 				i(37336, {	-- Formula: Enchant Chest - Greater Dodge
-					["u"] = 7,	-- now learned from trainer, formula was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
 				}),
 				i(37348, {	-- Formula: Enchant Cloak - Haste
 					["u"] = REMOVED_FROM_GAME,	-- was replaced by Enchant Cloak - Greater Speed
 				}),
 				i(37343, {	-- Formula: Enchant Weapon - Exceptional Agility
-					["u"] = 7,	-- now learned from trainer, formula was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
 				}),
 				i(37329, {	-- Formula: Enchant Weapon - Exceptional Versatility
-					["u"] = 7,	-- now learned from trainer, formula was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
 				}),
 			}),
 			n(-185, { 	-- Inscription

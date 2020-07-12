@@ -204,16 +204,16 @@ _.Instances = { tier(1, {	-- Classic
 							}),
 						})),
 						un(REMOVED_FROM_GAME, n(1731, { 	-- Goblin Craftsman
-							un(7, i(1944)), 	-- Metalworking Gloves
+							un(REMOVED_FROM_GAME, i(1944)), 	-- Metalworking Gloves
 						})),
 						un(REMOVED_FROM_GAME, n(622, { 	-- Goblin Engineer
-							un(7, i(1936)), 	-- Goblin Screwdriver
+							un(REMOVED_FROM_GAME, i(1936)), 	-- Goblin Screwdriver
 						})),
 						un(REMOVED_FROM_GAME, n(3947, { 	-- Goblin Shipbuilder
-							un(7, i(1943)), 	-- Goblin Mail Leggings
+							un(REMOVED_FROM_GAME, i(1943)), 	-- Goblin Mail Leggings
 						})),
 						un(REMOVED_FROM_GAME, n(641, { 	-- Goblin Woodcarver
-							un(7, i(1945)), 	-- Woodworking Gloves
+							un(REMOVED_FROM_GAME, i(1945)), 	-- Woodworking Gloves
 						})),
 						un(REMOVED_FROM_GAME, n(646, { 	-- Mr. Smite
 							un(REMOVED_FROM_GAME, i(7230)),	-- Smite's Mighty Hammer

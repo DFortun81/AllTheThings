@@ -9,8 +9,8 @@ _.Zones =
 				n(520,  {	-- Brack
 					["coord"] = { 28.8, 72.8, 52 },
 					["g"] = {
-						un(7, i(2235)),		-- Brackclaw
-						un(7, i(6179)),		-- Privateer's Cape
+						un(REMOVED_FROM_GAME, i(2235)),		-- Brackclaw
+						un(REMOVED_FROM_GAME, i(6179)),		-- Privateer's Cape
 					},
 				}),
 				n(596,  {	-- Brainwashed Noble
@@ -21,7 +21,7 @@ _.Zones =
 						{ 42.8, 79.0, 52 },
 					},
 					["g"] = {
-						un(7, i(3902)),		-- Staff of Nobles
+						un(REMOVED_FROM_GAME, i(3902)),		-- Staff of Nobles
 					},
 				}),
 				n(573,  {	-- Foe Reaper 4000
@@ -32,7 +32,7 @@ _.Zones =
 						{ 62.6, 61.6, 52 },
 					},
 					["g"] = {
-						un(7, i(4434)),		-- Scarecrow Trousers
+						un(REMOVED_FROM_GAME, i(4434)),		-- Scarecrow Trousers
 					},
 				}),
 				n(626,  {	-- Foreman Thistlenettle
@@ -53,8 +53,8 @@ _.Zones =
 				n(572,  {	-- Leprithus
 					["coord"] = { 42.6, 28.8, 52 },
 					["g"] = {
-						un(7, i(1387)),		-- Ghoulfang
-						un(7, i(1314)),		-- Ghoul Fingers
+						un(REMOVED_FROM_GAME, i(1387)),		-- Ghoulfang
+						un(REMOVED_FROM_GAME, i(1314)),		-- Ghoul Fingers
 					},
 				}),
 				n(599,  {	-- Marisa du'Paige
@@ -66,14 +66,14 @@ _.Zones =
 						{ 29.6, 61.4, 52 },
 					},
 					["g"] = {
-						un(7, i(3019)),		-- Noble's Robe
-						un(7, i(4660)), 	-- Walking Boots
+						un(REMOVED_FROM_GAME, i(3019)),		-- Noble's Robe
+						un(REMOVED_FROM_GAME, i(4660)), 	-- Walking Boots
 					},
 				}),
 				n(1424, {	-- Master Digger
 					["coord"] = { 46.2, 18.6, 52 },
 					["g"] = {
-						un(7, i(6205)),		-- Burrowing Shovel
+						un(REMOVED_FROM_GAME, i(6205)),		-- Burrowing Shovel
 					},
 				}),			
 				n(506,  {	-- Sergeant Brashclaw
@@ -82,8 +82,8 @@ _.Zones =
 						{ 60.0, 74.8, 52 },
 					},
 					["g"] = {
-						un(7, i(2203)),		-- Brashclaw's Chopper
-						un(7, i(2204)),		-- Brashclaw's Skewer
+						un(REMOVED_FROM_GAME, i(2203)),		-- Brashclaw's Chopper
+						un(REMOVED_FROM_GAME, i(2204)),		-- Brashclaw's Skewer
 					},
 				}),
 				n(519,  {	-- Slark
@@ -92,8 +92,8 @@ _.Zones =
 						{ 49.8, 10.4, 52 },
 					},
 					["g"] = {
-						un(7, i(3188)),		-- Coral Claymore
-						un(7, i(6180)),		-- Slarkskin
+						un(REMOVED_FROM_GAME, i(3188)),		-- Coral Claymore
+						un(REMOVED_FROM_GAME, i(6180)),		-- Slarkskin
 					},
 				}),
 				n(462,  {	-- Vultros
@@ -105,9 +105,9 @@ _.Zones =
 						{ 56.0, 34.4, 52 },
 					},
 					["g"] = {
-						un(7, i(5971)),		-- Feathered Cape
+						un(REMOVED_FROM_GAME, i(5971)),		-- Feathered Cape
 						i(115348),	-- Feathered Cape
-						un(7, i(4454)),		-- Talon of Vultros
+						un(REMOVED_FROM_GAME, i(4454)),		-- Talon of Vultros
 						i(115349),	-- Talon of Vultros
 					},
 				}),

@@ -24,7 +24,7 @@ profession(ALCHEMY, {
 					["g"] = {
 						{
 							["recipeID"] = 4508,--[[Discolored Healing Potion]]
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["recipeID"] = 24366,--[[Greater Dreamless Sleep Potion]]
@@ -32,19 +32,19 @@ profession(ALCHEMY, {
 						},
 						{
 							["recipeID"] = 17577,--[[Greater Arcane Protection Potion]]
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["recipeID"] = 17575,--[[Greater Frost Protection Potion]]
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["recipeID"] = 17578,--[[Greater Shadow Protection Potion]]
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["recipeID"] = 4942,--[[Lesser Stoneshield Potion]]
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["recipeID"] = 11452,--[[Restorative Potion]]
@@ -65,7 +65,7 @@ profession(ALCHEMY, {
 						},
 						{
 							["recipeID"] = 17571,--[[Elixir of the Mongoose]]
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 						{
 							["recipeID"] = 24365,--[[Mageblood Elixir]]
@@ -77,7 +77,7 @@ profession(ALCHEMY, {
 						},
 						{
 							["recipeID"] = 26277,--[[Elixir of Greater Firepower]]
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						},
 					},
 				},

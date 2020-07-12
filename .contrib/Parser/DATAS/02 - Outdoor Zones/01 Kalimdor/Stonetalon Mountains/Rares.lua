@@ -33,8 +33,8 @@ _.Zones =
 				n(4015, {	-- Pridewing Patriarch
 					["coord"] = { 55.6, 44.8, 65 },
 					["g"] = {
-						un(7, i(5751)), 	-- Webwing Cloak
-						un(7, i(5752)), 	-- Wyvern Tailspike
+						un(REMOVED_FROM_GAME, i(5751)), 	-- Webwing Cloak
+						un(REMOVED_FROM_GAME, i(5752)), 	-- Wyvern Tailspike
 					},
 				}),
 				n(50343, {	-- Quall

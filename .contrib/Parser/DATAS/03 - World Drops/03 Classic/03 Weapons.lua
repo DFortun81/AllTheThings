@@ -102,7 +102,7 @@ _.WorldDrops =
 				i(15243),	-- Deadly Kris
 				i(15246),	-- Demon Blade
 				i(4088),	-- Dreadblade
-				un(7, i(3336)),	-- Flesh Piercer (Originally a World Drop)
+				un(REMOVED_FROM_GAME, i(3336)),	-- Flesh Piercer (Originally a World Drop)
 				i(2164),	-- Gut Ripper
 				i(15242),	-- Honed Stiletto
 				i(3184),	-- Hook Dagger
@@ -223,7 +223,7 @@ _.WorldDrops =
 				i(15229),	-- Blesswind Hammer
 				i(13028),	-- Bludstone Hammer
 				i(13027),	-- Bonesnapper
-				un(7, i(4303)),	-- Cranial Thumper
+				un(REMOVED_FROM_GAME, i(4303)),	-- Cranial Thumper
 				i(13025),	-- Deadwood Sledge
 				i(15227),	-- Diamond-Tip Bludgeon
 				i(2194),	-- Diamond Hammer
@@ -246,10 +246,10 @@ _.WorldDrops =
 				i(1608),	-- Skullcrusher Mace
 				i(15228),	-- Smashing Star
 				i(4569),	-- Staunch Hammer
-				un(7, i(2267)),	-- Stonesplinter Mace
+				un(REMOVED_FROM_GAME, i(2267)),	-- Stonesplinter Mace
 				i(789),		-- Stout Battlehammer
 				i(1721),	-- Viking Warhammer
-				un(7, i(920)),	-- Wicked Spiked Mace
+				un(REMOVED_FROM_GAME, i(920)),	-- Wicked Spiked Mace
 			}),
 			n(-337, {	-- 2H Maces
 				i(15264),	-- Backbreaker
@@ -263,7 +263,7 @@ _.WorldDrops =
 				i(15266),	-- Fierce Mauler
 				i(15262),	-- Greater Maul
 				i(15259),	-- Hefty Battlehammer
-				un(7, i(911)),	-- Ironwood Treebranch
+				un(REMOVED_FROM_GAME, i(911)),	-- Ironwood Treebranch
 				i(3193),	-- Oak Mallet
 				i(15265),	-- Painbringer
 				i(12983),	-- Rakzur Club
@@ -338,7 +338,7 @@ _.WorldDrops =
 				i(14973),	-- Glorious Shield
 				i(4067),	-- Glyphed Buckler
 				i(7537),	-- Gothic Shield
-				un(7, i(2021)),	-- Green Carapace Shield (blue version seen on AH 4/23/2019 so this may be dropping again, but don't know for sure.)
+				un(REMOVED_FROM_GAME, i(2021)),	-- Green Carapace Shield (blue version seen on AH 4/23/2019 so this may be dropping again, but don't know for sure.)
 				i(15298),	-- Grizzly Buckler
 				i(15512),	-- Grunt's Shield
 				i(15621),	-- Gryphon Mail Buckler
@@ -428,7 +428,7 @@ _.WorldDrops =
 			n(-342, {	-- Staves
 				i(3185),	-- Acrobatic Staff
 				i(937),		-- Black Duskwood Staff
-				un(7, i(2013)),	-- Cryptbone Staff
+				un(REMOVED_FROM_GAME, i(2013)),	-- Cryptbone Staff
 				i(15274),	-- Diviner Long Staff
 				i(2072),	-- Dwarven Magestaff
 				i(944),		-- Elemental Mage Staff
@@ -442,7 +442,7 @@ _.WorldDrops =
 				i(1607),	-- Soulkeeper
 				i(1613),	-- Spiritchaser Staff
 				i(13000),	-- Staff of Hale Magefire
-				un(7, i(880)),	-- Staff of Horrors
+				un(REMOVED_FROM_GAME, i(880)),	-- Staff of Horrors
 				i(873),		-- Staff of Jordan
 				i(4566),	-- Sturdy Quarterstaff
 				i(1720),	-- Tanglewood Staff

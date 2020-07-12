@@ -23,13 +23,13 @@ _.Zones =
 						{ 56.3, 39.1, 31 }, -- spawn area
 					},
 					["g"] = {
-						un(7, i(2254)),	-- Icepane Warhammer
+						un(REMOVED_FROM_GAME, i(2254)),	-- Icepane Warhammer
 					},
 				}),
 				n(1271, {	-- Old Icebeard
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(2899)),	-- Wendigo Collar
+						un(REMOVED_FROM_GAME, i(2899)),	-- Wendigo Collar
 					},
 				}),
 			}),

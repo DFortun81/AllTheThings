@@ -700,7 +700,7 @@ _.Zones =
 					["provider"] = { "n", 1950 },	-- Rane Yorick
 					["sourceQuest"] = 428,	-- Lost Deathstalkers
 					["g"] = {
-						un(7, i(4597)),	-- Recipe: Discolored Healing Potion
+						un(REMOVED_FROM_GAME, i(4597)),	-- Recipe: Discolored Healing Potion
 					},
 				}),
 				q(1359,  {	-- Zinge's Delivery

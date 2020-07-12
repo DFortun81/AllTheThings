@@ -10,7 +10,7 @@ _.Zones =
 					["coord"] = { 51.6, 33.2, 80 },
 					["g"] = {
 						i(14488, {	-- Pattern: Runecloth Boots
-							["u"] = 7,	-- now learned from trainer, recipe was removed from game
+							["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
 						}),
 					},
 				}),

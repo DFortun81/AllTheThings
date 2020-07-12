@@ -27,14 +27,14 @@ _.Zones =
 						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(4213)), 	-- Grimoire of Doom
-							un(7, i(18665)), 	-- The Eye of Shadow
+							un(REMOVED_FROM_GAME, i(18665)), 	-- The Eye of Shadow
 						},
 					}),
 					n(8716,  { 	-- Dreadlord
 						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(4213)), 	-- Grimoire of Doom
-							un(7, i(18665)), 	-- The Eye of Shadow
+							un(REMOVED_FROM_GAME, i(18665)), 	-- The Eye of Shadow
 						},
 					}),
 					n(8304,  { 	-- Dreadscorn

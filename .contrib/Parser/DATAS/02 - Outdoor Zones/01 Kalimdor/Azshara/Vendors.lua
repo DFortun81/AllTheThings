@@ -9,8 +9,8 @@ _.Zones =
 				n(12957, {	-- Blimo Gadgetspring <Trade Supplies>
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(15751)),	-- Pattern: Blue Dragonscale Breastplate
-						un(7, i(15729)),	-- Pattern: Chimeric Gloves
+						un(REMOVED_FROM_GAME, i(15751)),	-- Pattern: Blue Dragonscale Breastplate
+						un(REMOVED_FROM_GAME, i(15729)),	-- Pattern: Chimeric Gloves
 					},
 				}),
 				n(49885, {	-- KTC Train-a-Tron Deluxe <Professions Trainer & Vendor>

@@ -18,7 +18,7 @@ _.Zones =
 					["coord"] = { 43.8, 49.1, 210 },
 					["g"] = {
 						i(5029),	-- Talisman of the Naga Lord
-						un(7, i(5028)),	-- Lord Sakrasis' Scepter
+						un(REMOVED_FROM_GAME, i(5028)),	-- Lord Sakrasis' Scepter
 					},
 				}),
 				n(1493,   {	-- Mok'rash the Cleaver

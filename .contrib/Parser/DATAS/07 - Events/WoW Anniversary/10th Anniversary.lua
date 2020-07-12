@@ -45,7 +45,7 @@ _.WorldEvents =
 					},
 					{	-- Hatespark the Tiny
 						["itemID"] = 118574,	-- Hatespark the Tiny
-						["u"] = 7,				-- BoE Pet Purchasable on AH Filter
+						["u"] = REMOVED_FROM_GAME,
 					},
 					{	-- Illusion: Flames of Ragnaros
 						["itemID"] = 118572,	-- Illusion: Flames of Ragnaros

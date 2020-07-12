@@ -12,29 +12,29 @@ _.Zones =
 				n(619,  {	-- Defias Conjurer
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(1933)), 	-- Staff of Conjuring
+						un(REMOVED_FROM_GAME, i(1933)), 	-- Staff of Conjuring
 					},
 				}),
 				n(1726, { 	-- Defias Magician
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(1928)), 	-- Defias Mage Staff
+						un(REMOVED_FROM_GAME, i(1928)), 	-- Defias Mage Staff
 					},
 				}),
 				n(121,  { 	-- Defias Pathstalker
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(832)),		-- Silver Defias Belt
+						un(REMOVED_FROM_GAME, i(832)),		-- Silver Defias Belt
 					},
 				}),
 				n(1725, { 	-- Defias Watchman
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(1925)), 	-- Defias Rapier
+						un(REMOVED_FROM_GAME, i(1925)), 	-- Defias Rapier
 					},
 				}),
 				n(832,  { 	-- Dust Devil (Reused ID is now Unbound Cyclone which is not attackable)
-					un(7, i(4290)), 	-- Dust Bowl
+					un(REMOVED_FROM_GAME, i(4290)), 	-- Dust Bowl
 				}),
 				i(1405, {	-- Foamspittle Staff
 					["crs"] = { 517 },	-- Murloc Oracle
@@ -45,14 +45,14 @@ _.Zones =
 				n(36,   {	-- Harvest Golem
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(816)),		-- Small Hand Blade
+						un(REMOVED_FROM_GAME, i(816)),		-- Small Hand Blade
 					},
 				}),
 				i(2088, {	-- Long Crawler Limb
 					["crs"] = { 831 },	-- Sea Crawler
 				}),
 				n(171,  { 	-- Murloc Warrior
-					un(7, i(1394)),		-- Driftwood Club
+					un(REMOVED_FROM_GAME, i(1394)),		-- Driftwood Club
 				}),
 				i(1958, {	-- Petrified Shinbone
 					["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
@@ -65,7 +65,7 @@ _.Zones =
 					["description"] = "Can drop from any mob in the zone, would recommend farming the Riverpaw Gnolls.",
 				}),
 				n(124,  {	-- Riverpaw Brute
-					un(7, i(826)),		-- Brutish Riverpaw Axe
+					un(REMOVED_FROM_GAME, i(826)),		-- Brutish Riverpaw Axe
 				}),
 				i(821,  {	-- Riverpaw Leather Vest
 					["crs"] = { 123 },	-- Riverpaw Mongrel
@@ -76,8 +76,8 @@ _.Zones =
 				n(125,  { 	-- Riverpaw Overseer
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(1190)),	-- Overseer's Cloak
-						un(7, i(1189)),	-- Overseer's Ring
+						un(REMOVED_FROM_GAME, i(1190)),	-- Overseer's Cloak
+						un(REMOVED_FROM_GAME, i(1189)),	-- Overseer's Ring
 					},
 				}),
 				i(4676, {	-- Skeletal Gauntlets (note: confirmed in 8.3 that they drop here too, not only in Stockades)
@@ -88,7 +88,7 @@ _.Zones =
 					},
 				}),
 				i(2017, {	-- Glowing Leather Bracers
-					["u"] = 7,
+					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 785 },	-- Skeletal Warder
 				}),
 				i(827,  {	-- Wicked Blackjack

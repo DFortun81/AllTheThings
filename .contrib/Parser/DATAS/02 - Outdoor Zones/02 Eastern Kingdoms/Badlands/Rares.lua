@@ -33,15 +33,15 @@ _.Zones =
 				n(7057,  {	-- Digmaster Shovelphlange
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(9375)),	-- Expert Goldmaker's Helmet
-						un(7, i(9378)),	-- Shovelphlange's Mining Axe
-						un(7, i(9382)),	-- Tromping Miner's Boots
+						un(REMOVED_FROM_GAME, i(9375)),	-- Expert Goldmaker's Helmet
+						un(REMOVED_FROM_GAME, i(9378)),	-- Shovelphlange's Mining Axe
+						un(REMOVED_FROM_GAME, i(9382)),	-- Tromping Miner's Boots
 					},
 				}),
 				n(2719,  { 	-- Dustbelcher Lord
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(1521)),	-- Lumbering Ogre Axe
+						un(REMOVED_FROM_GAME, i(1521)),	-- Lumbering Ogre Axe
 					},
 				}),
 				n(50726, { 	-- Kalixx

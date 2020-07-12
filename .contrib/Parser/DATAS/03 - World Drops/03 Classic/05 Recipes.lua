@@ -13,7 +13,7 @@ _.WorldDrops =
 				i(3396),	-- Recipe: Elixir of Lesser Agility
 				i(2553),	-- Recipe: Elixir of Minor Agility
 				i(6211),	-- Recipe: Elixir of Ogre's Strength
-				un(7, i(13491)),	-- Recipe: Elixir of the Mongoose [May no longer drop?]
+				un(REMOVED_FROM_GAME, i(13491)),	-- Recipe: Elixir of the Mongoose [May no longer drop?]
 				un(REMOVED_FROM_GAME, i(13493)),	-- Recipe: Greater Arcane Elixir
 				i(9296), 	-- Recipe: Gift of Arthas
 				i(13490),	-- Recipe: Greater Stoneshield Potion
@@ -93,7 +93,7 @@ _.WorldDrops =
 			n(-182, {	-- Enchanting
 				i(11038),	-- Formula: Enchant 2H Weapon - Lesser Versatility
 				i(16245, {	-- Formula: Enchant Boots - Greater Agility
-					["u"] = 7,	-- now learned from trainer, formula was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
 				}),
 				i(16215),	-- Formula: Enchant Boots - Greater Stamina
 				i(11167),	-- Formula: Enchant Boots - Lesser Versatility
@@ -121,7 +121,7 @@ _.WorldDrops =
 				i(10601),	-- Schematic: Bright-Eye Goggles
 				i(10603),	-- Schematic: Catseye Ultra Goggles
 				i(10607, {	-- Schematic: Deepdive Helmet
-					["u"] = 7,	-- now learned from trainer, schematic was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, schematic was removed from game
 				}),
 				i(6716),	-- Schematic: EZ-Thro Dynamite
 				i(4416),	-- Schematic: Goblin Land Mine
@@ -135,10 +135,10 @@ _.WorldDrops =
 				i(4409),	-- Schematic: Small Seaforium Charge
 				i(10608),	-- Schematic: Sniper Scope
 				i(10605, {	-- Schematic: Spellpower Goggles Xtreme
-					["u"] = 7,	-- now learned from trainer, schematic was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, schematic was removed from game
 				}),
 				i(16043, {	-- Schematic: Thorium Rifle
-					["u"] = 7,	-- now learned from trainer, schematic was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, schematic was removed from game
 				}),
 			}),
 			n(-186, { 	-- Jewelcrafting
@@ -180,15 +180,15 @@ _.WorldDrops =
 				i(4293),	-- Pattern: Hillman's Leather Vest
 				i(7363),	-- Pattern: Pilferer's Gloves
 				i(7288),	-- Pattern: Rugged Leather Pants
-				un(7, i(15745)),	-- Pattern: Runic Leather Belt (now taught by trainer)
-				un(7, i(15731)),	-- Pattern: Runic Leather Gauntlets (now taught by trainer)
-				un(7, i(15765)),	-- Pattern: Runic Leather Pants (now taught by trainer)
+				un(REMOVED_FROM_GAME, i(15745)),	-- Pattern: Runic Leather Belt (now taught by trainer)
+				un(REMOVED_FROM_GAME, i(15731)),	-- Pattern: Runic Leather Gauntlets (now taught by trainer)
+				un(REMOVED_FROM_GAME, i(15765)),	-- Pattern: Runic Leather Pants (now taught by trainer)
 				i(7453),	-- Pattern: Swift Boots
 				i(8385),	-- Pattern: Turtle Scale Gloves
 				i(15742),	-- Pattern: Warbear Harness (BoE version)
 				un(REMOVED_FROM_GAME, i(15754)),	-- Pattern: Warbear Woolies
 				i(2407),	-- Pattern: White Leather Jerkin
-				un(7, i(15757)),	-- Pattern: Wicked Leather Pants (now taught by trainer)
+				un(REMOVED_FROM_GAME, i(15757)),	-- Pattern: Wicked Leather Pants (now taught by trainer)
 			}),
 			n(-190, {	-- Tailoring
 				i(7085),	-- Pattern: Azure Shoulders
@@ -200,26 +200,26 @@ _.WorldDrops =
 				i(7084),	-- Pattern: Crimson Silk Shoulders
 				i(7086),	-- Pattern: Earthen Silk Belt
 				i(14492, {	-- Pattern: Felcloth Boots
-					["u"] = 7,	-- now learned from trainer, recipe was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
 				}),
 				i(14496, {	-- Pattern: Felcloth Hood
-					["u"] = 7,	-- now learned from trainer, recipe was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
 				}),
 				i(14506, {	-- Pattern: Felcloth Robe
-					["u"] = 7,	-- now learned from trainer, recipe was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
 				}),
 				i(14508, {	-- Pattern: Felcloth Shoulders
-					["u"] = 7,	-- now learned from trainer, recipe was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
 				}),
 				i(14474, {	-- Pattern: Frostweave Gloves
-					["u"] = 7,	-- now learned from trainer, recipe was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
 				}),
 				i(14489, {	-- Pattern: Frostweave Pants
-					["u"] = 7,	-- now learned from trainer, recipe was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
 				}),
 				i(14467),	-- Pattern: Frostweave Robe
 				i(14466, {	-- Pattern: Frostweave Tunic
-					["u"] = 7,	-- now learned from trainer, recipe was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
 				}),
 				i(14511),	-- Pattern: Gloves of Spell Mastery
 				i(2601),	-- Pattern: Gray Woolen Robe
@@ -246,7 +246,7 @@ _.WorldDrops =
 				i(4347),	-- Pattern: Reinforced Woolen Shoulders
 				i(4354),	-- Pattern: Rich Purple Silk Shirt
 				i(14470, {	-- Pattern: Runecloth Tunic
-					["u"] = 7,	-- now learned from trainer, recipe was removed from game
+					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
 				}),
 				i(4351),	-- Pattern: Shadow Hood
 				i(4353),	-- Pattern: Spider Belt

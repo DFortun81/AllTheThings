@@ -81,7 +81,7 @@ _.Instances = { tier(1, {	-- Classic
 							58590,	-- Scarlet Zealot
 						},
 					}),
-					un(7, i(7736)),	-- Fight Club
+					un(REMOVED_FROM_GAME, i(7736)),	-- Fight Club
 					i(7755),	-- Flintrock Shoulders
 					i(7754, {	-- Harbinger Boots
 						["crs"] = {
@@ -114,7 +114,7 @@ _.Instances = { tier(1, {	-- Classic
 							4283,	-- Scarlet Sentry
 						},
 					}),
-					un(7, i(7758)),	-- Ruthless Shiv
+					un(REMOVED_FROM_GAME, i(7758)),	-- Ruthless Shiv
 					i(10329),	-- Scarlet Belt
 					i(10332),	-- Scarlet Boots
 					i(10328),	-- Scarlet Chestpiece
@@ -144,7 +144,7 @@ _.Instances = { tier(1, {	-- Classic
 							58590,	-- Scarlet Zealot
 						},
 					}),
-					un(7, i(7760)),	-- Warchief Kilt
+					un(REMOVED_FROM_GAME, i(7760)),	-- Warchief Kilt
 					i(7727, {	-- Watchman Pauldrons
 						["crs"] = {
 							59746,	-- Scarlet Centurion

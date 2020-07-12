@@ -10,8 +10,8 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["groups"] = {
-						un(7, i(4437)),	-- Channeler's Staff
-						un(7, i(4436)),	-- Jewel-Encrusted Sash
+						un(REMOVED_FROM_GAME, i(4437)),	-- Channeler's Staff
+						un(REMOVED_FROM_GAME, i(4436)),	-- Jewel-Encrusted Sash
 					},
 				}),
 				n(47009, { 	-- Aquarius the Unbound
@@ -84,21 +84,21 @@ _.Zones =
 				n(2283,	 {	-- Ravenclaw Regent
 					["u"] = REMOVED_FROM_GAME,
 					["groups"] = {
-						un(7, i(6628)),	-- Raven's Claws
-						un(7, i(5969)),	-- Regent's Cloak
+						un(REMOVED_FROM_GAME, i(6628)),	-- Raven's Claws
+						un(REMOVED_FROM_GAME, i(5969)),	-- Regent's Cloak
 					},
 				}),
 				n(1944,  {	-- Rot Hide Bruiser
 					["u"] = REMOVED_FROM_GAME,
 					["groups"] = {
-						un(7, i(4439)),	-- Bruiser Club
-						un(7, i(5975)),	-- Ruffian Belt
+						un(REMOVED_FROM_GAME, i(4439)),	-- Bruiser Club
+						un(REMOVED_FROM_GAME, i(5975)),	-- Ruffian Belt
 					},
 				}),
 				n(1948,  {	-- Snarlmane
 					["u"] = REMOVED_FROM_GAME,
 					["groups"] = {
-						un(7, i(4445)),	-- Flesh Carver
+						un(REMOVED_FROM_GAME, i(4445)),	-- Flesh Carver
 					},
 				}),
 				n(47023, { 	-- Thule Ravenclaw

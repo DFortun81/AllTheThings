@@ -123,7 +123,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(REMOVED_FROM_GAME, i(14150)),	-- Robe of Evocation
 					})),
 					un(REMOVED_FROM_GAME, n(11517, {	-- Oggleflint
-						un(7, i(68194)),	-- Oggleflint's Inspirer
+						un(REMOVED_FROM_GAME, i(68194)),	-- Oggleflint's Inspirer
 					})),
 					un(REMOVED_FROM_GAME, n(11520, {	-- Taragaman the Hungerer
 						un(REMOVED_FROM_GAME, i(14148)),	-- Crystalline Cuffs

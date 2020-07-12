@@ -70,7 +70,7 @@ _.Instances = { tier(1, {	-- Classic
 						46382,	-- Petty Criminal
 					},
 				}),
-				un(7, i(1076)),	-- Defias Renegade Ring
+				un(REMOVED_FROM_GAME, i(1076)),	-- Defias Renegade Ring
 			}),
 			n(1720, {	-- Bruegal Ironknuckle
 				["u"] = REMOVED_FROM_GAME,

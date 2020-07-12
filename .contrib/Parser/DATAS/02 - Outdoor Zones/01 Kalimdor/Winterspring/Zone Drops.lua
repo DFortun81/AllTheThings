@@ -15,15 +15,15 @@ _.Zones =
 				}),
 				i(15761, {	-- Pattern: Frostsaber Gloves
 					["crs"] = { 7441 },	-- Winterfall Totemic
-					["u"] = 7,	-- BoE Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(15747, {	-- Pattern: Frostsaber Leggings
 					["crs"] = { 7440 },	-- Winterfall Den Watcher
-					["u"] = 7,	-- BoE Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(15779, {	-- Pattern: Frostsaber Tunic
 					["crs"] = { 7438 },	-- Winterfall Ursa
-					["u"] = 7,	-- BoE Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(14493, {	-- Pattern: Robe of Winter Night
 					["crs"] = { 7437 },	-- Cobalt Mageweaver
@@ -31,11 +31,11 @@ _.Zones =
 				}),
 				i(13497, {	-- Recipe: Greater Arcane Protection Potion
 					["crs"] = { 7437 },	-- Cobalt Mageweaver
-					["u"] = 7,	-- BoE Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(13495, {	-- Recipe: Greater Frost Protection Potion
 					["crs"] = { 7428 },	-- Frostmaul Giant
-					["u"] = 7,	-- BoE Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
 		}),

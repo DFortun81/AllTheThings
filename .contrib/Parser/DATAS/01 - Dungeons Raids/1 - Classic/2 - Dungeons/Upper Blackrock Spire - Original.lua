@@ -120,37 +120,37 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				n(ZONEDROPS, {
 					n(10318, {	-- Blackhand Assassin
-						un(7, i(15774)),	-- Pattern: Heavy Scorpid Shoulders
-						un(7, i(16713)),	-- Shadowcraft Belt
+						un(REMOVED_FROM_GAME, i(15774)),	-- Pattern: Heavy Scorpid Shoulders
+						un(REMOVED_FROM_GAME, i(16713)),	-- Shadowcraft Belt
 					}),
 					n(9817, { 	-- Blackhand Dreadweaver
-						un(7, i(16703)),	-- Dreadmist Bracers
+						un(REMOVED_FROM_GAME, i(16703)),	-- Dreadmist Bracers
 						un(REMOVED_FROM_GAME, i(13371)),	-- Father Flame
 					}),
 					n(10317, { 	-- Blackhand Elite
-						un(7, i(16247)),	-- Formula: Enchant 2H Weapon - Superior Impact
+						un(REMOVED_FROM_GAME, i(16247)),	-- Formula: Enchant 2H Weapon - Superior Impact
 					}),
 					n(10319, { 	-- Blackhand Iron Guard
-						un(7, i(16735)),	-- Bracers of Valor
+						un(REMOVED_FROM_GAME, i(16735)),	-- Bracers of Valor
 					}),
 					n(9818, { 	-- Blackhand Summoner
-						un(7, i(16696)),	-- Devout Belt
+						un(REMOVED_FROM_GAME, i(16696)),	-- Devout Belt
 					}),
 					n(	9819, {	-- Blackhand Veteran
 						un(REMOVED_FROM_GAME, i(13371)),	-- Father Flame
 					}),
 					n(10366, { 	-- Rage Talon Dragon Guard
-						un(7, i(16680)), 	-- Beaststalker's Belt
+						un(REMOVED_FROM_GAME, i(16680)), 	-- Beaststalker's Belt
 					}),
 					n(9096, { 	-- Rage Talon Dragonspawn
-						un(7, i(16681)),	-- Beaststalker's Bindings
+						un(REMOVED_FROM_GAME, i(16681)),	-- Beaststalker's Bindings
 						un(REMOVED_FROM_GAME, i(13371)),	-- Father Flame
 					}),
 					n(10372, { 	-- Rage Talon Fire Tongue
-						un(7, i(16683)),	-- Magister's Bindings
+						un(REMOVED_FROM_GAME, i(16683)),	-- Magister's Bindings
 					}),
 					n(10083, {	-- Rage Talon Flamescale
-						un(7, i(16673)), 	-- Cord of Elements
+						un(REMOVED_FROM_GAME, i(16673)), 	-- Cord of Elements
 						un(REMOVED_FROM_GAME, i(13371)),	-- Father Flame
 					}),
 					n(10258, {	-- Rookery Guardian
@@ -167,11 +167,11 @@ _.Instances = { tier(1, {	-- Classic
 					un(REMOVED_FROM_GAME, i(12929)),	-- Emberfury Talisman
 					un(REMOVED_FROM_GAME, i(12905)), 	-- Wildfire Cape
 					un(REMOVED_FROM_GAME, i(12927)),	-- Truestrike Shoulders
-					un(7, i(16672)),	-- Gauntlets of Elements
+					un(REMOVED_FROM_GAME, i(16672)),	-- Gauntlets of Elements
 					un(REMOVED_FROM_GAME, i(12926)),	-- Flaming Band
 				}),
 				n(10264, { 	-- Solakar Flamewreath
-					un(7, i(18657)),	-- Schematic: Hyper-Radiant Flame Reflector
+					un(REMOVED_FROM_GAME, i(18657)),	-- Schematic: Hyper-Radiant Flame Reflector
 					un(REMOVED_FROM_GAME, i(12606)), 	-- Crystallized Girdle
 					un(REMOVED_FROM_GAME, i(16695)), 	-- Devout Mantle
 					un(REMOVED_FROM_GAME, i(12589)),	-- Dustfeather Sash
@@ -201,7 +201,7 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 						i(12834, {	-- Plans: Arcanite Champion
 							["spellID"] = 0,	-- This is now available via the trainer, need to delink the old plans from the recipe
-							["u"] = 7,
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(12728),	-- Plans: Invulnerable Mail **Still in game as a general world drop now**
 						un(REMOVED_FROM_GAME, i(12837)),	-- Plans: Masterwork Stormhammer
@@ -212,7 +212,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 				n(10339, { 	-- Gyth
-					un(7, i(13522)),	-- Recipe: Flask of Chromatic Resistance
+					un(REMOVED_FROM_GAME, i(13522)),	-- Recipe: Flask of Chromatic Resistance
 					un(REMOVED_FROM_GAME, i(12871, { 	-- Chromatic Carapace
 						q(5167, { 	-- Legplates of the Chromatic Defier
 							["u"] = REMOVED_FROM_GAME,
@@ -304,7 +304,7 @@ _.Instances = { tier(1, {	-- Classic
 				n(10363, { 	-- General Drakkisath
 					un(REMOVED_FROM_GAME, ach(1307)),	-- Upper Blackrock Spire (Classic)
 					un(REMOVED_FROM_GAME, i(15730)),	-- Pattern: Red Dragonscale Breastplate
-					un(7, i(13519)),	-- Recipe: Flask of the Titans
+					un(REMOVED_FROM_GAME, i(13519)),	-- Recipe: Flask of the Titans
 					un(REMOVED_FROM_GAME, i(12592)),	-- Blackblade of Shahram
 					un(REMOVED_FROM_GAME, i(12602)),	-- Draconian Deflector
 					un(REMOVED_FROM_GAME, i(22253)),	-- Tome of the Lost

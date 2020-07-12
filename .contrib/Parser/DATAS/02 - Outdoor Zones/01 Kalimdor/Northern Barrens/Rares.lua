@@ -22,7 +22,7 @@ _.Zones =
 						{ 58.6, 77.6, 10 },
 					},
 					["g"] = {
-						un(7, i(7559)),	-- Runic Cane
+						un(REMOVED_FROM_GAME, i(7559)),	-- Runic Cane
 					},
 				}), 
 				n(5865, {	-- Dishu
@@ -40,8 +40,8 @@ _.Zones =
 						{ 61.6, 53.2, 10 },
 					},
 					["g"] = {
-						un(7, i(4768)),	-- Adept's Gloves
-						un(7, i(4771)),	-- Harvest Cloak
+						un(REMOVED_FROM_GAME, i(4768)),	-- Adept's Gloves
+						un(REMOVED_FROM_GAME, i(4771)),	-- Harvest Cloak
 					},
 				}), 
 				n(5836, {	-- Engineer Whirleygig
@@ -53,8 +53,8 @@ _.Zones =
 				n(3398, {	-- Gesharahan
 					["coord"] = { 40.0, 74.6, 10 },
 					["g"] = {
-						un(7, i(5183)),	-- Pulsating Hydra Heart
-						un(7, i(5182)),	-- Shiver Blade
+						un(REMOVED_FROM_GAME, i(5183)),	-- Pulsating Hydra Heart
+						un(REMOVED_FROM_GAME, i(5182)),	-- Shiver Blade
 					},
 				}),
 				n(5828, {	-- Humar the Pridelord
@@ -63,8 +63,8 @@ _.Zones =
 				n(3470, {	-- Rathorian
 					["coord"] = { 41.6, 39.6, 10 },
 					["g"] = {
-						un(7, i(5111)),	-- Rathorian's Cape
-						un(7, i(5112)),	-- Ritual Blade
+						un(REMOVED_FROM_GAME, i(5111)),	-- Rathorian's Cape
+						un(REMOVED_FROM_GAME, i(5112)),	-- Ritual Blade
 					},
 				}), 
 				n(5841, {	-- Rocklance
@@ -83,7 +83,7 @@ _.Zones =
 						{ 40.0, 45.6, 10 },
 					},
 					["g"] = {
-						un(7, i(1355)), 	-- Buckskin Cape
+						un(REMOVED_FROM_GAME, i(1355)), 	-- Buckskin Cape
 					},
 				}), 
 				n(5831, {	-- Swiftmane

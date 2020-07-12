@@ -63,8 +63,8 @@ _.Instances = { tier(1, {	-- Classic
 				n(5783, {	-- Kalldan Felmoon <Specialist Leatherworking Supplies>
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(6474)),	-- Pattern: Deviate Scale Cloak
-						un(7, i(6475)),	-- Pattern: Deviate Scale Gloves
+						un(REMOVED_FROM_GAME, i(6474)),	-- Pattern: Deviate Scale Cloak
+						un(REMOVED_FROM_GAME, i(6475)),	-- Pattern: Deviate Scale Gloves
 					},
 				}),
 			}),

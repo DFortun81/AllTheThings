@@ -218,7 +218,7 @@ _.Instances = { tier(1, {	-- Classic
 				n(4517, {	-- Death's Head Priest
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(3569)), 	-- Vicar's Robe
+						un(REMOVED_FROM_GAME, i(3569)), 	-- Vicar's Robe
 					},
 				}),
 				n(4428, {	-- Death Speaker Jargba <Death's Head Captain>

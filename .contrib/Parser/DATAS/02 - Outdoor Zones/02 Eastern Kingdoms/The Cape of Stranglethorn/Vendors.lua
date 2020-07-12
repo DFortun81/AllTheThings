@@ -115,10 +115,10 @@ _.Zones =
 					["coord"] = { 43.2, 70.2, 210 },
 					["g"] = {
 						i(13310, {	-- Schematic: Accurate Scope
-							["u"] = 7,	-- now learned from trainer, schematic was removed from game
+							["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, schematic was removed from game
 						}),
 						i(18651, {	-- Schematic: Truesilver Transformer
-							["u"] = 7,	-- now learned from trainer, schematic was removed from game
+							["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, schematic was removed from game
 						}),
 					},
 				}),

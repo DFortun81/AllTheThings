@@ -13,8 +13,8 @@ _.Zones =
 					["description"] = "This was only available during the Elemental Invasion.",
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(7, i(18673)),	-- Avalanchion's Stony Hide
-						un(7, i(18674)),	-- Hardened Stone Band
+						un(REMOVED_FROM_GAME, i(18673)),	-- Avalanchion's Stony Hide
+						un(REMOVED_FROM_GAME, i(18674)),	-- Hardened Stone Band
 					},
 				}),
 				n(6651, {	-- Gatekeeper Rageroar
@@ -30,7 +30,7 @@ _.Zones =
 						{ 63.6, 81.4, 76 },
 					},
 					["g"] = {
-						un(7, i(17054)),	-- Joonho's Mercy
+						un(REMOVED_FROM_GAME, i(17054)),	-- Joonho's Mercy
 					},
 				}), 
 				n(6649, {	-- Lady Sesspira

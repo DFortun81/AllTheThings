@@ -291,16 +291,16 @@ _.Instances = { tier(1, {	-- Classic
 							["u"] = REMOVED_FROM_GAME,
 							["sourceQuest"] = 5525,	-- Free Knot!
 							["g"] = {
-								un(7, i(18414)),	-- Pattern: Belt of the Archmage
-								un(7, i(18517)),	-- Pattern: Chromatic Cloak
+								un(REMOVED_FROM_GAME, i(18414)),	-- Pattern: Belt of the Archmage
+								un(REMOVED_FROM_GAME, i(18517)),	-- Pattern: Chromatic Cloak
 								un(REMOVED_FROM_GAME, i(18418)),	-- Pattern: Cloak of Warding
 								un(REMOVED_FROM_GAME, i(18415)),	-- Pattern: Felcloth Gloves
 								un(REMOVED_FROM_GAME, i(18514)),	-- Pattern: Girdle of Insight
-								un(7, i(18518)),	-- Pattern: Hide of the Wild
+								un(REMOVED_FROM_GAME, i(18518)),	-- Pattern: Hide of the Wild
 								un(REMOVED_FROM_GAME, i(18416)),	-- Pattern: Inferno Gloves
 								un(REMOVED_FROM_GAME, i(18515)),	-- Pattern: Mongoose Boots
 								un(REMOVED_FROM_GAME, i(18417)),	-- Pattern: Mooncloth Gloves
-								un(7, i(18519)),	-- Pattern: Shifting Cloak
+								un(REMOVED_FROM_GAME, i(18519)),	-- Pattern: Shifting Cloak
 								un(REMOVED_FROM_GAME, i(18516)),	-- Pattern: Swift Flight Bracers
 							},
 						}),

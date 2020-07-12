@@ -6,7 +6,7 @@ _.Zones =
 	m(13, {	-- Eastern Kingdoms
 		m(22, {	-- Western Plaguelands
 			n(ZONEDROPS, {
-				un(7, i(15771, {	-- Pattern: Living Breastplate
+				un(REMOVED_FROM_GAME, i(15771, {	-- Pattern: Living Breastplate
 					["crs"] = { 1813 },	-- Decaying Horror
 				})),
 				i(9296, {	-- Recipe: Gift of Arthas

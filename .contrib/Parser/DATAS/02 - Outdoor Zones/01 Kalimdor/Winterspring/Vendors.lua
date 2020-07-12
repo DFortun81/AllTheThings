@@ -18,7 +18,7 @@ _.Zones =
 					["coord"] = { 59.2, 50.0, 83 },
 					["g"] = {
 						i(20013),	-- Recipe: Living Action Potion
-						un(7, i(13480)),	-- Recipe: Major Healing Potion
+						un(REMOVED_FROM_GAME, i(13480)),	-- Recipe: Major Healing Potion
 					},
 				}),
 				n(11187, {	-- Himmik <Food & Drink>
@@ -74,7 +74,7 @@ _.Zones =
 						}),
 						i(32381, {	-- Schematic: Fused Wiring
 							["spellID"] = 0,
-							["u"] = 7,	-- now learned from trainer, schematic was removed from game
+							["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, schematic was removed from game
 						}),
 						i(18652, {	-- Schematic: Gyrofreeze Ice Reflector
 							["isLimited"] = true,
@@ -87,7 +87,7 @@ _.Zones =
 						}),
 						i(16047, {	-- Schematic: Thorium Tube
 							["spellID"] = 0,
-							["u"] = 7,	-- now learned from trainer, schematic was removed from game
+							["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, schematic was removed from game
 						}),
 					},
 				}),

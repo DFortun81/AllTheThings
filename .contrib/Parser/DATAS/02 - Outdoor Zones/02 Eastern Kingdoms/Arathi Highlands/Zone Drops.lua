@@ -8,7 +8,7 @@ _.Zones =
 			n(ZONEDROPS, {
 				i(5624,  {	-- Circlet of the Order
 					["crs"] = { 2584 },	-- Stromgarde Defender
-					["u"] = 7,	-- BoE Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(11166, {	-- Formula: Enchant Gloves - Skinning
 					["crs"] = {
@@ -19,7 +19,7 @@ _.Zones =
 				}),
 				i(3341,  {	-- Gauntlets of Ogre Strength
 					["crs"] = { 2564 },	-- Bounderfist Enforcer
-					["u"] = 7,	-- BoE Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(2623,  {	-- Holy Diadem
 					["crs"] = {
@@ -27,7 +27,7 @@ _.Zones =
 						2780,	-- Caretaker Nevlin
 						2781,	-- Caretaker Weston
 					},
-					["u"] = 7,	-- BoE Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				i(1993,  {	-- Ogremind Ring
 					["crs"] = {

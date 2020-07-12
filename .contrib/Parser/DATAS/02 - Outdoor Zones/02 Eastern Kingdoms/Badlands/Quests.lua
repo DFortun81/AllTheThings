@@ -318,7 +318,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 2920 },	-- Quest Giver: Lucien Tosselwrench
 					["g"] = {
-						un(7, i(4624)),	-- Recipe: Lesser Stoneshield Potion [REMOVED FROM GAME]
+						un(REMOVED_FROM_GAME, i(4624)),	-- Recipe: Lesser Stoneshield Potion [REMOVED FROM GAME]
 					},
 				}),
 				q(4134,  {	-- Lost Thunderbrew Recipe

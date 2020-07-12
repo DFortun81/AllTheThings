@@ -8,7 +8,7 @@ _.Zones =
 			n(ZONEDROPS, {
 				i(5773, {	-- Pattern: Robes of Arcana
 					["crs"] = { 2337 },	-- Dark Strand Voidcaller (removed in cata)
-					["u"] = 7,	-- BoE Item
+					["u"] = REMOVED_FROM_GAME,
 				}),
 			}),
 		}),
