@@ -2379,9 +2379,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 								if j.s then
 									sourceID = j.s;
 								end
-								if j.u and j.u == 7 and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
+								if j.u and (j.u == 2 or j.u == 7) and (not j.b or j.b == 2 or j.b == 3) and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
 									tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] });
-									tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE_PT2"] });
 								end
 							end
 						end

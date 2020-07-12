@@ -11,9 +11,9 @@ profession(LEATHERWORKING, {
 			["g"] = {
 				-- Legacy specializations for posterity
 				n(-40, { -- Legacy
-					un(34, recipe(10656)),  -- Dragonscale Leatherworking
-					un(34, recipe(10660)),  -- Tribal Leatherworking
-					un(34, recipe(10658)),  -- Elemental Leatherworking
+					un(REMOVED_FROM_GAME, recipe(10656)),  -- Dragonscale Leatherworking
+					un(REMOVED_FROM_GAME, recipe(10660)),  -- Tribal Leatherworking
+					un(REMOVED_FROM_GAME, recipe(10658)),  -- Elemental Leatherworking
 				}),
 				{
 					["name"] = "Materials",

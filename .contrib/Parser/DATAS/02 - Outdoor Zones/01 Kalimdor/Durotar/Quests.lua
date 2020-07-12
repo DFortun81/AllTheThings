@@ -345,9 +345,9 @@ _.Zones =
 						i(118219),	-- Harness of Forward Directions
 						i(131898),	-- Chestguard of Forward Directions
 						i(118218),	-- Girdle of Common Causes
-						un(34, i(67154)),	-- Staff of the Unwelcome
-						un(34, i(67157)),	-- Harness of Binding
-						un(34, i(67156)),	-- Girdle of Servitude
+						un(REMOVED_FROM_GAME, i(67154)),	-- Staff of the Unwelcome
+						un(REMOVED_FROM_GAME, i(67157)),	-- Harness of Binding
+						un(REMOVED_FROM_GAME, i(67156)),	-- Girdle of Servitude
 					},
 				}),
 				q(808,   {	-- Minshina's Skull

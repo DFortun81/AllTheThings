@@ -5,9 +5,9 @@ profession(TAILORING, {
 			["g"] = {
 				-- Legacy specilizations for posterity
 				n(-40, { -- Legacy
-					un(34, recipe(26801)),  -- Shadoweave Tailoring
-					un(34, recipe(26797)),  -- Spellfire Tailoring
-					un(34, recipe(26798)),  -- Mooncloth Tailoring
+					un(REMOVED_FROM_GAME, recipe(26801)),  -- Shadoweave Tailoring
+					un(REMOVED_FROM_GAME, recipe(26797)),  -- Spellfire Tailoring
+					un(REMOVED_FROM_GAME, recipe(26798)),  -- Mooncloth Tailoring
 				}),
 				{
 					["categoryID"] = 1000--[[Materials]],

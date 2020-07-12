@@ -364,8 +364,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 2057 },	-- Huldar
 					["g"] = {
-						un(34, i(3217)),	-- Foreman Belt
-						un(34, i(6188)),	-- Mud Stompers
+						un(REMOVED_FROM_GAME, i(3217)),	-- Foreman Belt
+						un(REMOVED_FROM_GAME, i(6188)),	-- Mud Stompers
 						i(58981),	-- Dastardly Bracers
 						i(58982),	-- Foreman Gloves
 						i(131204),	-- Foreman Handguards

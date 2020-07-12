@@ -32,9 +32,9 @@ _.Zones =
 				q(24936, {	-- Body And Soul
 					["u"] = 40,	-- Legacy Quests
 					["g"] = {
-						un(34, i(52911)),	-- Yngwie's Vest
-						un(34, i(52957)),	-- Oomlot Staff
-						un(34, i(52935)),	-- Pygmy Cloak
+						un(REMOVED_FROM_GAME, i(52911)),	-- Yngwie's Vest
+						un(REMOVED_FROM_GAME, i(52957)),	-- Oomlot Staff
+						un(REMOVED_FROM_GAME, i(52935)),	-- Pygmy Cloak
 					},
 				}),
 				q(25099, {	-- Borrow Bastia

@@ -4185,7 +4185,7 @@ app.L = {
 		{20, "|CFF00FFDEThis is obtainable only during the WoW Anniversary it was active.\nIt's a possibility future anniversaries may include this item.|r\n", "WoW Anniversary (31)"},--31
 		{4, "|CFFFF0000This is an original reward for this quest. The quest was later reworked with new rewards. If you did complete this quest it is likely this item will not be added to your transmog as Blizzard will add the rewards from the revamped quest.|r", "Reworked Rewards (32)"},--32
 		{1, "", ""}, -- 33
-		{4, "|CFFFF0000This item was a quest award from a Legacy Quest that is no longer obtainable.|r", "Legacy Quest Reward (34)"}, --34
+		{1, "", ""}, --34
 		{3, "|CFFFF0000This item is purchased from the In-Game Store.|r", "In-Game Store (35)"}, --35
 		{21, "|CFFFF0000This was obtainable only during the WoW Anniversary when it was active and is no longer available.|r\n", "WoW Anniversary [Removed] (36)"}, -- 36
 		{1, "|CFFFF0000This title is no longer obtainable in game.|r", "Titles (37)"}, --37

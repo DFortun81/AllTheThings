@@ -6,12 +6,12 @@ profession(BLACKSMITHING, {
 			["g"] = {
 				-- Legacy specilizations for posterity
 				n(-40, { -- Legacy
-					un(34, recipe(9788)),  -- Armorsmith
-					un(34, recipe(9787, {  -- Weaponsmith
+					un(REMOVED_FROM_GAME, recipe(9788)),  -- Armorsmith
+					un(REMOVED_FROM_GAME, recipe(9787, {  -- Weaponsmith
 						["groups"] = {
-							un(34, recipe(17041)),  -- Master Axesmith
-							un(34, recipe(17040)),  -- Master Hammersmith
-							un(34, recipe(17039)),  -- Master Swordsmith
+							un(REMOVED_FROM_GAME, recipe(17041)),  -- Master Axesmith
+							un(REMOVED_FROM_GAME, recipe(17040)),  -- Master Hammersmith
+							un(REMOVED_FROM_GAME, recipe(17039)),  -- Master Swordsmith
 						}
 					})),
 				}),
