@@ -6,7 +6,7 @@ _.Achievements =
 {
 	n(-9969, {	-- Feats of Strength
 		n(-10046, {	-- Promotions
-			un(16, ach(415)),		-- Big Blizzard Bear
+			un(REMOVED_FROM_GAME, ach(415)),		-- Big Blizzard Bear
 			un(REMOVED_FROM_GAME, ach(11064)),		-- Collector's Edition: Baby Winston
 			un(REMOVED_FROM_GAME, ach(7842)),		-- Collector's Edition: Baneling
 			un(REMOVED_FROM_GAME, ach(8917)),		-- Collector's Edition: Dread Hatchling
@@ -32,7 +32,7 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(8795)),		-- Collector's Edition: Treasure Goblin
 			un(REMOVED_FROM_GAME, ach(10309)),		-- Collector's Edition: Zeradar
 			un(REMOVED_FROM_GAME, ach(664)),		-- Collector's Edition: Zergling
-			un(16, ach(5378)),		-- Deathy
+			un(REMOVED_FROM_GAME, ach(5378)),		-- Deathy
 			un(REMOVED_FROM_GAME, ach(11210, {		-- Fight for the Alliance
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -48,7 +48,7 @@ _.Achievements =
 				},
 			})),
 			ach(10657),				-- Fledgling Hero of Warcraft
-			un(16, ach(9763)),		-- Grommloc
+			un(REMOVED_FROM_GAME, ach(9763)),		-- Grommloc
 			ach(8345, {				-- Hearthstoned
 				i(98618),			-- Hearthsteed
 			}),
@@ -58,17 +58,17 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(13196, {			-- Meat Marauder
 				i(164571),			-- Meat Wagon
 			})),
-			un(16, ach(6185)),		-- Murkablo
-			un(16, ach(8793)),		-- Murkalot
-			un(16, ach(10322)),		-- Murkidan
-			un(16, ach(411)),		-- Murky
-			un(16, ach(11294)),		-- Murloc Battlemasters
-			un(16, ach(412)),		-- Murloc Costume
+			un(REMOVED_FROM_GAME, ach(6185)),		-- Murkablo
+			un(REMOVED_FROM_GAME, ach(8793)),		-- Murkalot
+			un(REMOVED_FROM_GAME, ach(10322)),		-- Murkidan
+			un(REMOVED_FROM_GAME, ach(411)),		-- Murky
+			un(REMOVED_FROM_GAME, ach(11294)),		-- Murloc Battlemasters
+			un(REMOVED_FROM_GAME, ach(412)),		-- Murloc Costume
 			un(REMOVED_FROM_GAME, ach(3896)),		-- Onyx Panther (Korea only)
 			un(REMOVED_FROM_GAME, ach(10537)),		-- Patron of War
-			un(16, ach(11931)),		-- Rides of War
+			un(REMOVED_FROM_GAME, ach(11931)),		-- Rides of War
 			un(REMOVED_FROM_GAME, ach(12454)),		-- Salute to Starcraft
-			un(16, ach(3536)),		-- The Marine Marine
+			un(REMOVED_FROM_GAME, ach(3536)),		-- The Marine Marine
 			un(REMOVED_FROM_GAME, ach(414)),		-- Tyrael's Hilt
 			un(REMOVED_FROM_GAME, ach(9496, { 		-- Warlord's Deathwheel
 				["races"] = HORDE_ONLY,

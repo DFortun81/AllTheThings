@@ -21,7 +21,7 @@ _.PetJournal =
 		un(20, p(226)),		-- Curious Wolvar Hatchling
 		p(2850),			-- Cursed Dune Watcher
 		p(1329),			-- Dandelion Frolicker
-		un(16, p(294)),		-- Deathy
+		un(REMOVED_FROM_GAME, p(294)),		-- Deathy
 		p(1979, {			-- Dutiful Gruntling
 			["races"] = HORDE_ONLY,
 		}),
@@ -31,11 +31,11 @@ _.PetJournal =
 		p(119),				-- Father Winter's Helper
 		p(821),				-- Feral Vermling
 		p(1229),			-- Fiendish Imp
-		un(16, p(2778, {	-- Finduin (Blizzcon 2019)
+		un(REMOVED_FROM_GAME, p(2778, {	-- Finduin (Blizzcon 2019)
 			["races"] = ALLIANCE_ONLY,
 		})),
 		p(514),				-- Flayer Youngling
-		un(16, p(2777, {	-- Gillvanas (Blizzcon 2019)
+		un(REMOVED_FROM_GAME, p(2777, {	-- Gillvanas (Blizzcon 2019)
 			["races"] = HORDE_ONLY,
 		})),
 		p(2114),			-- Globe Yeti

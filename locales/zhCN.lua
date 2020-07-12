@@ -1024,7 +1024,7 @@ L["UNOBTAINABLE_ITEM_REASONS"] = {
     {0, "", ""}, -- 3
     {0, "", ""}, -- 4
     {0, "", ""}, -- 5
-    {1, "|CFFFF0000此物品是典藏版的一部分。网上可能仍有极小数量出售。|r", "典藏版 (6)"}, -- Little Hope -- 6
+    {0, "", ""}, -- 6
     {0, "", ""}, -- 7
     {0, "", ""}, -- 8
     {3, "|CFFFF0000此物品的获得方式已被移除，只能从黑市拍卖行获得。|r", "黑市拍卖行 (9)"}, -- There is Hope -- 9
@@ -1034,7 +1034,7 @@ L["UNOBTAINABLE_ITEM_REASONS"] = {
     {1, "|CFFFF0000你的追随者等级过高，奖励此物品的任务不再刷新。|r", "绝版物资 (13)"}, -- 13
     {3, "|CFFFF0000此物品无法购买，除非你在对应赛季的PvP评分或排名达标。|r", "PvP Elite/Gladiator (14)"}, -- 14
     {1, "|CFFFF0000This item has a Source ID (Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes / Unlearnable (15)"}, -- 15
-    {1, "|CFFFF0000此物品是参加嘉年华或购买虚拟门票的奖励。在网络上可能有高价出售的激活码。|r", "暴雪嘉年华 (16)"}, --16
+    {0, "", ""}, --16
     {6, "|CFF00FFDE只能在春节期间获得。|r", "春节 (17)"}, --17
     {7, "|CFF00FFDE只能在情人节期间获得。|r", "情人节 (18)"}, --18
     {8, "|CFF00FFDE只能在复活节期间获得。|r", "复活节 (19)"}, --19

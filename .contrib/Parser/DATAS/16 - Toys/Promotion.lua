@@ -7,13 +7,13 @@ _.Toys =
 		un(REMOVED_FROM_GAME, i(54653)),	-- Darkspear Pride (Horde) No Longer Available
 		un(REMOVED_FROM_GAME, i(172179)),	-- Eternal Traveler's Hearthstone
 		un(REMOVED_FROM_GAME, i(54651)),	-- Gnomeregan Pride (Alliance) No Longer Available
-		un(16, i(33079, {	-- Murloc Costume
+		un(REMOVED_FROM_GAME, i(33079, {	-- Murloc Costume
 			["model"] = 125041,
 		})),
-		un(16, i(163986, {	-- Orgrimmar Hero's War Banner
+		un(REMOVED_FROM_GAME, i(163986, {	-- Orgrimmar Hero's War Banner
 			["races"] = HORDE_ONLY,
 		})),
-		un(16, i(163987, {	-- Stormwind Champion's War Banner
+		un(REMOVED_FROM_GAME, i(163987, {	-- Stormwind Champion's War Banner
 			["races"] = ALLIANCE_ONLY,
 		})),
 		un(REMOVED_FROM_GAME, i(142542)), 	-- Tome of Town Portal
