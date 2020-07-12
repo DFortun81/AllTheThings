@@ -91,6 +91,18 @@ _.Instances = { tier(1, {	-- Classic
 			n(-40, {	-- Legacy
 				["g"] = {
 					n(QUESTS, {
+						un(REMOVED_FROM_GAME, q(8259, {	-- A More Fitting Reward (Post 1.7, Phase 4)
+							["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
+							["sourceQuest"] = 7668,	-- The Darkreaver Menace (Original: 1.4 till 1.7 only)
+							["altQuests"] = {
+								8258,	-- The Darkreaver Menace (New)
+							},
+							["classes"] = { SHAMAN },
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								un(REMOVED_FROM_GAME, i(20134)), 	-- Skyfury Helm
+							},
+						})),
 						q(4771, { 	-- Dawn's Gambit
 							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
@@ -121,15 +133,29 @@ _.Instances = { tier(1, {	-- Classic
 								un(REMOVED_FROM_GAME, i(65995)),	-- Signet of the Darkmaster
 							},
 						}),
-						q(7668, { 	-- The Darkreaver Menace
-							["u"] = REMOVED_FROM_GAME,
+						un(REMOVED_FROM_GAME, q(7668, {	-- The Darkreaver Menace (Original: 1.4 till 1.7 only)
+							["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
+							["sourceQuest"] = 7667,	-- Material Assistance
+							["cr"] = 14516,	-- Death Knight Darkreaver
 							["classes"] = { SHAMAN },
 							["races"] = HORDE_ONLY,
-							["g"] = {
-								un(32, i(18807)), 	-- Helm of Latent Power (1.4 till 1.7 only)
+							["groups"] = {
+								un(REMOVED_FROM_GAME, i(18807)), 	-- Helm of Latent Power
+							},
+						})),
+						un(REMOVED_FROM_GAME, q(8258, {	-- The Darkreaver Menace (Post 1.7, Phase 4)
+							["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
+							["sourceQuest"] = 7667,	-- Material Assistance
+							["altQuests"] = {
+								7668,	-- The Darkreaver Menace (Original)
+							},
+							["cr"] = 14516,	-- Death Knight Darkreaver
+							["classes"] = { SHAMAN },
+							["races"] = HORDE_ONLY,
+							["groups"] = {
 								un(REMOVED_FROM_GAME, i(20134)), 	-- Skyfury Helm
 							},
-						}),
+						})),
 						q(5262, {	-- The Truth Comes Crashing Down
 							["u"] = REMOVED_FROM_GAME,
 							["crs" ] = { 10813 },	-- Balnazzar

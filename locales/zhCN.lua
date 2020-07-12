@@ -1050,7 +1050,7 @@ L["UNOBTAINABLE_ITEM_REASONS"] = {
     {18, "|CFF00FFDE只能在冬幕节期间获得。|r", "冬幕节 (29)"}, --29
     {19, "|CFF00FFDE只能在荆棘谷钓鱼大赛获得。|r", "荆棘谷钓鱼大赛 (30) "}, --30
     {20, "|CFF00FFDE只能在魔兽世界周年庆期间获得。\n未来的周年庆中可能也可获得。|r\n", "魔兽世界周年庆 (31)"}, --31
-    {4, "|CFFFF0000这是此任务原本的奖励，后来任务重做了，也改变了奖励。If you did complete this quest it is likely this item will not be added to your transmog as Blizzard will add the rewards from the revamped quest.|r", "奖励已重做 (32)"}, --32
+    {0, "", ""}, --32
     {0, "", ""}, -- 33
     {0, "", ""}, --34
     {3, "|CFFFF0000在游戏内商城出售。|r", "游戏内商城 (35)"}, --35
@@ -1062,8 +1062,6 @@ L["UNOBTAINABLE_ITEM_REASONS"] = {
     {4, "|CFFFF0000这些外观只有完成了法师塔神器挑战，获得了基础配色的玩家才能获得。|r", "法师塔外观 (41)"}, -- 41
     {21, "|CFFFF0000这些外观只有在对应资料片的时空漫游周才能获得。|r", "时空漫游 (42)"}, -- 42
     {0, "", ""}, -- 43
-    {2, "|CFFFF0000只能从限定时间的黑市拍卖行中获得。|r", "限定时间的黑市 (44)"}, -- 44
+    {0, "", ""}, -- 44
     {1, "|CFFFF0000暴雪在7.3.2和8.0中的拾取改动使得一些物品无法掉落。目前影响的包括格鲁尔（TBC）、怒炉将军（黑石深渊）和、特迪斯·扭木（厄运之槌西）的掉落。|r", "拾取机制损坏 (45)"}, -- 45
-    {3, "|CFFFF0000此项只能从最高等级时的战争宝箱获得。|r", "入侵掉落 (46)"} -- 46
-    --	{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation broke Gruul' loot table.|r", "Gruul Non-Tier Loot (47)"}; -- 47
 }

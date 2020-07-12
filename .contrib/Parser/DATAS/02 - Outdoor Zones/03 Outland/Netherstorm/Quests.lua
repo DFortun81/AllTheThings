@@ -559,7 +559,10 @@ _.Zones =
 								i(30016),	-- X-52 Technician's Helm
 								i(30014),	-- X-52 Pilot's Leggings
 								i(134021),	-- X-52 Rocket Helmet (TOY!)
-								un(32, i(134012)),	-- X-52 Rocket Helm (Normal Reward till 7.0.1)
+								un(REMOVED_FROM_GAME, {
+									["itemID"] = 134012,	-- X-52 Rocket Helm (Normal Reward till 7.0.1)
+									["description"] = "This item was one of the original quest rewards. Blizzard does not give transmog for removed quest rewards.",
+								}),
 							},
 						}),								
 					}),

@@ -110,16 +110,11 @@ _.Holidays = bubbleDown({["u"] = 24},
 						["isYearly"] = true,
 					}),
 					q(11454, {	-- Seek the Saboteurs
-						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "o", 186881 },	-- Dark Iron Sabotage Plans
+						["u"] = REMOVED_FROM_GAME,
 						["maps"] = {
 							1,	-- Durotar
 							27,	-- Dun Morogh
-						},
-						["g"] = {
-							i(34140, {	-- Dark Iron Tankard
-								["u"] = 32,	-- Reworked Rewards
-							}),
 						},
 					}),
 					q(12020, {	-- This One Time, When I Was Drunk... (H)
@@ -156,28 +151,24 @@ _.Holidays = bubbleDown({["u"] = 24},
 								un(REMOVED_FROM_GAME, ach(1186)),	-- Down With The Dark Iron
 							},
 					}),
-					--[[
 					q(11486, {	-- The Best of Brews (Alliance)
+						["provider"] = { "n", 23872 },	-- Coren Direbrew
+						["sourceQuests"] = { 11454, },	-- Seek the Saboteurs
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(34140)),	-- Dark Iron Tankard
 						},
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 11454, },	-- Seek the Saboteurs
-						["provider"] = { "n", 23872 },	-- Coren Direbrew
-						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 242, },	-- Blackrock Depths
 					}),
 					q(11487, {	-- The Best of Brews (Horde)
+						["provider"] = { "n", 23872 },	-- Coren Direbrew
+						["sourceQuests"] = { 11454, },	-- Seek the Saboteurs
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(34140)),	-- Dark Iron Tankard
 						},
-						["provider"] = { "n", 23872 },	-- Coren Direbrew
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 11454, },	-- Seek the Saboteurs
-						["u"] = REMOVED_FROM_GAME,								
-						["maps"] = { 242, },	-- Blackrock Depths
 					}),
-					--]]
 					q(12318, {	-- Save Brewfest! (Alliance)
 						["provider"] = { "n", 27584 },	-- Darna Honeybock
 						["maps"] = { 27, },	-- Dun Morogh

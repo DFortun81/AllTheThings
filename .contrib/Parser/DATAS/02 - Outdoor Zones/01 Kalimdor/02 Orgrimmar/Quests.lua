@@ -1917,18 +1917,6 @@ _.Zones =
 						currency(515),	-- Darkmoon Prize Ticket
 					},
 				}),
-				q(8258,  {	-- The Darkreaver Menace
-					["provider"] = { "n", 13417 },	-- Sagorne Creststrider
-					["coord"] = { 39.2, 48.4, 85 },
-					["races"] = HORDE_ONLY,
-					["classes"] = { SHAMAN },
-					["lvl"] = 58,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(20134)),	-- Skyfury Helm
-						un(32, i(18807)),	-- Helm of Latent Power (1.4 till 1.7 only)
-					},
-				}),
 				q(4002, {	-- The Eastern Kingdoms
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,

@@ -4183,7 +4183,7 @@ app.L = {
 		{18, "|CFF00FFDEMay require Feast of Winter Veil to be active to obtain this item.|r", "Feast of Winter Veil (29)"},--29
 		{19, "|CFF00FFDEMay require Stranglethorn Fishing Extravaganza to be active.|r", "Stranglethorn Fishing Extravaganza (30) "},--30
 		{20, "|CFF00FFDEThis is obtainable only during the WoW Anniversary it was active.\nIt's a possibility future anniversaries may include this item.|r\n", "WoW Anniversary (31)"},--31
-		{4, "|CFFFF0000This is an original reward for this quest. The quest was later reworked with new rewards. If you did complete this quest it is likely this item will not be added to your transmog as Blizzard will add the rewards from the revamped quest.|r", "Reworked Rewards (32)"},--32
+		{0, "", ""}, --32
 		{0, "", ""}, -- 33
 		{0, "", ""}, --34
 		{3, "|CFFFF0000This item is purchased from the In-Game Store.|r", "In-Game Store (35)"}, --35
@@ -4195,9 +4195,7 @@ app.L = {
 		{4, "|CFFFF0000These appearances are only available for players that completed the respective Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances (41)"}, -- 41
 		{21, "|CFFFF0000These appearances are only available during the weekly Timewalking Event.\nOnly dungeons released during the featured expansion will be available.|r", "Timewalking (42)"}, -- 42
 		{0, "", ""}, -- 43
-		{2, "|CFFFF0000This Item was only available from the BMAH for a limited Time.|r", "BMAH Limited Time (44)"}, -- 44
+		{0, "", ""}, -- 44
 		{1, "|CFFFF0000Blizzard's Loot changes broke several Items and made them Unobtainable.\nHouse of Nobles Cape/Gurubashi Empire Greatcloak (both BFA Emissary Rewards) & Ogom the Mangler \nare currently broken and need to be fixed.|r", "Broken Loot (45)"}, -- 45
-	--	{3, "|CFFFF0000This item is only available from War Chests while under max level.|r", "Incursion Loot (46)"}, -- 46
-	--	{1, "|CFFFF0000With 8.0, Blizzard's Legacy Loot implementation broke Gruul' loot table.|r", "Gruul Non-Tier Loot (47)"}, -- 47
 	};
 };
