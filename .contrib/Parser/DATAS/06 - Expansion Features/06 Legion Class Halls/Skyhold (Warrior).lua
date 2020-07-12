@@ -122,7 +122,6 @@ _.ExpansionFeatures =
 						["classes"] = { WARRIOR },
 						["provider"] = { "n", 108961 },	-- Sergeant Dalton
 					}),
-					q(45180),	-- An Island of War
 					q(45986),	-- An Urgent Warning
 					q(44850, {	-- Arming the Army
 						["maps"] = { 649 },	-- Helheim
@@ -256,7 +255,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 96469 },	-- Odyn
 						["sourceQuest"] = 43090,	-- Ulduar's Oath
 					}),
-					q(45173),	-- Desperate Times
 					q(42611, {	-- Einar the Runecaster
 						["coord"] = { 59.7, 13.3, 695 },
 						["classes"] = { WARRIOR },
@@ -577,7 +575,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 96469 },	-- Odyn
 						["sourceQuest"] = 43090,	-- Ulduar's Oath
 					}),
-					q(45179),	-- Win the Crowd
 				}),
 				n(VENDORS, {
 					n(112392, {	-- Quartermaster Durnolf

@@ -761,7 +761,6 @@ _.ExpansionFeatures =
 
 					-- unconfirmed/unsourced
 					q(44057),	-- A "Noble" Event
-					q(45180),	-- An Island of War
 					q(45993),	-- An Urgent Warning
 					q(44223),	-- Champion Armaments
 					q(42653, {	-- Champion: Akama
@@ -772,7 +771,6 @@ _.ExpansionFeatures =
 					}),
 					q(41064),	-- Cursed Forge of the Nathrezim
 					q(47078),	-- Delivering Lost Knowledge
-					q(45173),	-- Desperate Times
 					q(43552),	-- Eye of Azshara
 					q(44226),	-- Fate Favors Us
 					q(46152),	-- Furthering Knowledge
@@ -785,7 +783,6 @@ _.ExpansionFeatures =
 					q(43557, {	-- Violet Hold
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(45179),	-- Win the Crowd
 					q(43186, {	-- I Am the Slayer!
 						i(139715),	-- Robes of
 					}),

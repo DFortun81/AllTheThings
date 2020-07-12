@@ -30,7 +30,6 @@ _.ExpansionFeatures =
 					q(40957),	-- A Strong Right Hand
 					q(42436),	-- Aiding Our Allies
 					q(41053),	-- Altar of the Eternal Hunt
-					un(40, q(45180)),	-- An Island of War
 					q(46022),	-- An Urgent Warning
 					q(42404, {	-- Assisting the Archmage
 						["maps"] = { 680 },	-- Suramar
@@ -51,9 +50,6 @@ _.ExpansionFeatures =
 					q(45392),	-- Dark Memento
 					q(42654),	-- Darkheart Thicket: Nightmare Oak
 					q(47073),	-- Delivering Lost Knowledge
-					q(45173, {	-- Desperate Times
-						["repeatable"] = true,
-					}),
 					q(45551),	-- Devastating Effects
 					q(45555, {	-- Felbound Beasts
 						["classes"] = { 3 },	-- Hunter
@@ -125,9 +121,6 @@ _.ExpansionFeatures =
 					q(42394),	-- Unseen Protection
 					q(42388),	-- Urgent Summons
 					q(44233),	-- Walk This Way
-					q(45179, {	-- Win the Crowd
-						["repeatable"] = true,
-					}),
 					q(46337, {	-- Night of the Wilds
 						["lvl"] = 110,
 						["classes"] = {3},

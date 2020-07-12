@@ -600,10 +600,8 @@ _.ExpansionFeatures =
 					--[[
 					q(44057),	-- A "Noble" Event
 					q(43359),	-- A Hero's Weapon
-					q(45180),	-- An Island of War
 					q(46024),	-- An Urgent Warning
 					q(47069),	-- Delivering Lost Knowledge
-					q(45173),	-- Desperate Times
 					q(44239),	-- Echo of a Celestial
 					q(46785),	-- Further Advancement
 					q(46157),	-- Furthering Knowledge
@@ -615,7 +613,6 @@ _.ExpansionFeatures =
 					q(43061),	-- Silkweave Bandages (Repeatable hand in quest but always returns false for completed even when the overarching quest(41907) is completed)
 					q(43058),	-- Spiced Rib Roast (Repeatable hand in quest but always returns false for completed even when the overarching quest(41907) is completed)
 					q(45172),	-- To Battle!
-					q(45179),	-- Win the Crowd
 					--]]
 					--[[ Artifact Appearance  Quests Commented Out For Now
 					q(43359, {	-- A Hero's Weapon

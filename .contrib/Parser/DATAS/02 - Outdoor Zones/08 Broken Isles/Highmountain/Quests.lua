@@ -921,7 +921,6 @@ _.Zones =
 				q(39646),	-- Albino Elderhorn
 				q(41053),	-- Altar of the Eternal Hunt
 				q(40413),	-- Amateur Hunters
-				q(45180),	-- An Island of War
 				q(46022),	-- An Urgent Warning
 				q(42505),	-- Arcanist Shal'iman
 				q(41823),	-- Ashes to Ashes
@@ -962,7 +961,6 @@ _.Zones =
 				q(44273),	-- Darkheart Thicket
 				q(42654),	-- Darkheart Thicket: Nightmare Oak
 				q(47073),	-- Delivering Lost Knowledge
-				q(45173),	-- Desperate Times
 				q(45796),	-- Destroying the Nest
 				q(45560),	-- Destruction: Rumblings Near Feltotem
 				q(45551),	-- Devastating Effects
@@ -1126,7 +1124,6 @@ _.Zones =
 				q(39880),	-- Waste Not
 				q(38786),	-- Where Respect is Due
 				q(41832),	-- White Water Terror
-				q(45179),	-- Win the Crowd
 				q(47019),	-- Windwalker: Rumblings Near Feltotem
 				q(41825),	-- Winged Menace
 				q(41761),	-- Winter Moose Roundup		  
