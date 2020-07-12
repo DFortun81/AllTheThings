@@ -8,71 +8,71 @@ _.WorldEvents =
 			n(-534, {	-- Collector's Edition
 				n(-551, {	-- Diablo Collector's Edition
 					n(-566, {	-- Diablo III
-						un(6, ach(7412, {	-- Collector's Edition: Fetish Shaman
-							un(6, i(76062)),	-- Fetish Shaman's Spear (Fetish Shaman)
+						un(REMOVED_FROM_GAME, ach(7412, {	-- Collector's Edition: Fetish Shaman
+							un(REMOVED_FROM_GAME, i(76062)),	-- Fetish Shaman's Spear (Fetish Shaman)
 						})),
 					}),
 					n(-575, {	-- Diablo III: Reaper of Souls
-						un(6, ach(8795, {	-- Collector's Edition: Treasure Goblin
-							un(6, i(106256)),	-- Treasure Goblin's Pack (Treasure Goblin)
+						un(REMOVED_FROM_GAME, ach(8795, {	-- Collector's Edition: Treasure Goblin
+							un(REMOVED_FROM_GAME, i(106256)),	-- Treasure Goblin's Pack (Treasure Goblin)
 						})),
 					}),
 				}),
 				n(-568, {	-- Overwatch: Origins
-					un(6, ach(11064, {	-- Collector's Edition: Baby Winston
-						un(6, i(134047)),	-- Baby Winston
+					un(REMOVED_FROM_GAME, ach(11064, {	-- Collector's Edition: Baby Winston
+						un(REMOVED_FROM_GAME, i(134047)),	-- Baby Winston
 					})),
 				}),
 				n(-550, {	-- Starcraft Collector's Edition
 					n(-564, {	-- Starcraft II: Wings of Liberty
-						un(6, ach(4824, {	-- Collector's Edition: Mini Thor
-							un(6, i(56806)),	-- Mini Thor
+						un(REMOVED_FROM_GAME, ach(4824, {	-- Collector's Edition: Mini Thor
+							un(REMOVED_FROM_GAME, i(56806)),	-- Mini Thor
 						})),
 					}),
 					n(-565, {	-- Starcraft II: Heart of the Swarm
-						un(6, ach(7842, {	-- Collector's Edition: Baneling
-							un(6, i(90177)),	-- Baneling
+						un(REMOVED_FROM_GAME, ach(7842, {	-- Collector's Edition: Baneling
+							un(REMOVED_FROM_GAME, i(90177)),	-- Baneling
 						})),
 					}),
 					n(-576, {	-- Starcraft II: Legacy of the Void
-						un(6, ach(10309, {	-- Collector's Edition: Zeradar
-							un(6, i(128423)),	-- Zeradar
+						un(REMOVED_FROM_GAME, ach(10309, {	-- Collector's Edition: Zeradar
+							un(REMOVED_FROM_GAME, i(128423)),	-- Zeradar
 						})),
 					}),
 				}),
 				n(-552, {	-- Warcraft 3 Reforged Spoils of War Edition
-					un(6, ach(13196, {	-- Meat Marauder
-						un(6, i(164571)),	-- Meat Wagon
+					un(REMOVED_FROM_GAME, ach(13196, {	-- Meat Marauder
+						un(REMOVED_FROM_GAME, i(164571)),	-- Meat Wagon
 					})),
 				}),
 				n(-544, {	-- WoW Collector's Edition
 					tier(1, {	-- Classic
-						un(6, ach(662, {	-- Collector's Edition: Mini-Diablo
-							un(6, i(13584)),	-- Diablo Stone (Mini-Diablo)
+						un(REMOVED_FROM_GAME, ach(662, {	-- Collector's Edition: Mini-Diablo
+							un(REMOVED_FROM_GAME, i(13584)),	-- Diablo Stone (Mini-Diablo)
 						})),
-						un(6, ach(663, {	-- Collector's Edition: Panda
-							un(6, i(13583)),	-- Panda Collar (Panda Cub)
+						un(REMOVED_FROM_GAME, ach(663, {	-- Collector's Edition: Panda
+							un(REMOVED_FROM_GAME, i(13583)),	-- Panda Collar (Panda Cub)
 						})),
-						un(6, ach(664, {	-- Collector's Edition: Zergling
-							un(6, i(13582)),	-- Zergling Leash (Zergling)
+						un(REMOVED_FROM_GAME, ach(664, {	-- Collector's Edition: Zergling
+							un(REMOVED_FROM_GAME, i(13582)),	-- Zergling Leash (Zergling)
 						})),
 					}),
 					tier(2, {	-- Burning Crusade
-						un(6, ach(665, {	-- Collector's Edition: Netherwhelp
-							un(6, i(25535)),	-- Netherwhelp's Collar (Netherwhelp)
+						un(REMOVED_FROM_GAME, ach(665, {	-- Collector's Edition: Netherwhelp
+							un(REMOVED_FROM_GAME, i(25535)),	-- Netherwhelp's Collar (Netherwhelp)
 						})),
 						n(-547, {	-- EU Only
-							un(6, i(30360)),	-- Lurky's Egg (Lurky)
+							un(REMOVED_FROM_GAME, i(30360)),	-- Lurky's Egg (Lurky)
 						}),
 					}),
 					tier(3, {	-- Wrath of the Lich King
-						un(6, ach(683, {	-- Collector's Edition: Frost Wyrm Whelp
-							un(6, i(39286)),	-- Frosty's Collar (Frosty)
+						un(REMOVED_FROM_GAME, ach(683, {	-- Collector's Edition: Frost Wyrm Whelp
+							un(REMOVED_FROM_GAME, i(39286)),	-- Frosty's Collar (Frosty)
 						})),
 					}),
 					tier(4, {	-- Cataclysm
-						un(6, ach(5377, {	-- Collector's Edition: Lil' Deathwing
-							un(6, i(62540)),	-- Lil' Deathwing
+						un(REMOVED_FROM_GAME, ach(5377, {	-- Collector's Edition: Lil' Deathwing
+							un(REMOVED_FROM_GAME, i(62540)),	-- Lil' Deathwing
 						})),
 					}),
 					tier(5, {	-- Mists of Pandaria
@@ -111,14 +111,14 @@ _.WorldEvents =
 						})),
 					}),
 					tier(9, {	-- Shadowlands
-						un(6, mount(307932)),	-- Ensorcelled Everwyrm
-						un(6, p(2779)),	-- Anima Wyrmling
-						un(6, i(172179)),	-- Eternal Traveler's Hearthstone
-						un(6, i(172177)),	-- Illusion: Wraithchill
+						un(REMOVED_FROM_GAME, mount(307932)),	-- Ensorcelled Everwyrm
+						un(REMOVED_FROM_GAME, p(2779)),	-- Anima Wyrmling
+						un(REMOVED_FROM_GAME, i(172179)),	-- Eternal Traveler's Hearthstone
+						un(REMOVED_FROM_GAME, i(172177)),	-- Illusion: Wraithchill
 						q(57686, {	-- The Eternal Traveler
 							["provider"] = { "n", 158635 },	-- Xolartios <Eternal Traveler>
 							["description"] = "You need to purchase a Collector's Edition of Shadowlands to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",
-							["u"] = 6,
+							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
 								spell(309452, {	-- Vestments of the Eternal Traveler
 									i(172075),	-- Eternal Traveler's Guise

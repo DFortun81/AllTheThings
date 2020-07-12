@@ -142,7 +142,7 @@ _.PetJournal =
 		p(1727),			-- Nursery Spider
 		p(236),				-- Obsidian Hatchling
 		p(43),				-- Orange Tabby Cat
-		un(6, p(92)),		-- Panda Cub
+		un(REMOVED_FROM_GAME, p(92)),		-- Panda Cub
 		p(301),				-- Panther Cub
 		p(1615),			-- Parched Lizard
 		p(1663),			-- Periwinkle Calf

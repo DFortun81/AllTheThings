@@ -70,7 +70,7 @@ _.PetJournal =
 		p(2158),	-- Mailemental
 		p(136),		-- Mana Wyrmling
 		p(500),		-- Minfernal
-		un(6, p(93)),	-- Mini Diablo
+		un(REMOVED_FROM_GAME, p(93)),	-- Mini Diablo
 		p(1156),	-- Mini Mindslayer
 		p(2832),	-- Muar
 		p(1604),	-- Nethaera's Light
@@ -107,7 +107,7 @@ _.PetJournal =
 		un(20, p(157)),		-- Willy
 		p(2535),	-- Wicker Wraith
 		p(1937),	-- Wondrous Wisdomball
-		un(6, p(1255)),	-- Zeradar
+		un(REMOVED_FROM_GAME, p(1255)),	-- Zeradar
 		un(REMOVED_FROM_GAME, p(247)),	-- Zipao Tiger
 		p(2550),	-- Zur'aj the Depleted
 	}),

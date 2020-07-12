@@ -59,7 +59,7 @@ _.PetJournal =
 		p(2717),	-- Microbot XD
 		p(666),		-- Micronax
 		p(2534),	-- Mini Spider Tank
-		un(6, p(258)),	-- Mini Thor
+		un(REMOVED_FROM_GAME, p(258)),	-- Mini Thor
 		p(2667),	-- Motorized Croaker
 		p(2714),	-- OOX-35/MG
 		p(261),		-- Personal World Destroyer

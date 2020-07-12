@@ -6,19 +6,19 @@ _.Mounts =
 	n(-31, { 	-- Promotion
 		un(16, i(43599)),	-- Big Blizzard Bear
 		un(REMOVED_FROM_GAME, i(118515)),	-- Cindermane Charger
-		un(6, i(109013)),	-- Dread Raven
+		un(REMOVED_FROM_GAME, i(109013)),	-- Dread Raven
 		un(REMOVED_FROM_GAME, i(106246)),	-- Emerald Hippogryph
 		mount(307932),	-- Ensorcelled Everwyrm
-		un(6, i(153540)),	-- Gilded Ravasaur
+		un(REMOVED_FROM_GAME, i(153540)),	-- Gilded Ravasaur
 		i(98618),			-- Hearthsteed
 		un(REMOVED_FROM_GAME, i(83086)), 	-- Heart of the Nightwing
-		un(6, i(128425)),	-- Illidari Felstalker
-		un(6, i(85870)),	-- Imperial Quilen
+		un(REMOVED_FROM_GAME, i(128425)),	-- Illidari Felstalker
+		un(REMOVED_FROM_GAME, i(85870)),	-- Imperial Quilen
 		un(REMOVED_FROM_GAME, i(164571)),	-- Meat Wagon
 		un(REMOVED_FROM_GAME, i(83086)),	-- Obsidian Nightwing
 		un(16, i(151617)),	-- Orgrimmar Interceptor Mount
 		un(REMOVED_FROM_GAME, i(143631)),	-- Primal Flamesaber
-		un(6, i(153539)),	-- Seabraid Stallion
+		un(REMOVED_FROM_GAME, i(153539)),	-- Seabraid Stallion
 		un(REMOVED_FROM_GAME, i(76889)),	-- Spectral Gryphon
 		un(REMOVED_FROM_GAME, i(76902)),	-- Spectral Wind Rider
 		un(16, i(151618)),	-- Stormwind Skychaser Mount

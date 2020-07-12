@@ -7,31 +7,31 @@ _.Achievements =
 	n(-9969, {	-- Feats of Strength
 		n(-10046, {	-- Promotions
 			un(16, ach(415)),		-- Big Blizzard Bear
-			un(6, ach(11064)),		-- Collector's Edition: Baby Winston
-			un(6, ach(7842)),		-- Collector's Edition: Baneling
-			un(6, ach(8917)),		-- Collector's Edition: Dread Hatchling
-			un(6, ach(8916)),		-- Collector's Edition: Dread Raven
-			un(6, ach(7412)),		-- Collector's Edition: Fetish Shaman
-			un(6, ach(683)),		-- Collector's Edition: Frost Wyrm Whelp
+			un(REMOVED_FROM_GAME, ach(11064)),		-- Collector's Edition: Baby Winston
+			un(REMOVED_FROM_GAME, ach(7842)),		-- Collector's Edition: Baneling
+			un(REMOVED_FROM_GAME, ach(8917)),		-- Collector's Edition: Dread Hatchling
+			un(REMOVED_FROM_GAME, ach(8916)),		-- Collector's Edition: Dread Raven
+			un(REMOVED_FROM_GAME, ach(7412)),		-- Collector's Edition: Fetish Shaman
+			un(REMOVED_FROM_GAME, ach(683)),		-- Collector's Edition: Frost Wyrm Whelp
 			ach(12230, {			-- Collector's Edition: Gilded Ravasaur
 				["races"] = HORDE_ONLY,
 			}),
-			un(6, ach(10320)),		-- Collector's Edition: Illidari Felstalker
-			un(6, ach(6849)),		-- Collector's Edition: Imperial Quilen
-			un(6, ach(5377)),		-- Collector's Edition: Lil' Deathwing
-			un(6, ach(6848)),		-- Collector's Edition: Lucky Quilen Cub
-			un(6, ach(4824)),		-- Collector's Edition: Mini Thor
-			un(6, ach(662)),		-- Collector's Edition: Mini-Diablo
-			un(6, ach(665)),		-- Collector's Edition: Netherwhelp
-			un(6, ach(10321)),		-- Collector's Edition: Nibbles
-			un(6, ach(663)),		-- Collector's Edition: Panda
+			un(REMOVED_FROM_GAME, ach(10320)),		-- Collector's Edition: Illidari Felstalker
+			un(REMOVED_FROM_GAME, ach(6849)),		-- Collector's Edition: Imperial Quilen
+			un(REMOVED_FROM_GAME, ach(5377)),		-- Collector's Edition: Lil' Deathwing
+			un(REMOVED_FROM_GAME, ach(6848)),		-- Collector's Edition: Lucky Quilen Cub
+			un(REMOVED_FROM_GAME, ach(4824)),		-- Collector's Edition: Mini Thor
+			un(REMOVED_FROM_GAME, ach(662)),		-- Collector's Edition: Mini-Diablo
+			un(REMOVED_FROM_GAME, ach(665)),		-- Collector's Edition: Netherwhelp
+			un(REMOVED_FROM_GAME, ach(10321)),		-- Collector's Edition: Nibbles
+			un(REMOVED_FROM_GAME, ach(663)),		-- Collector's Edition: Panda
 			ach(12229, {			-- Collector's Edition: Seabraid Stallion
 				["races"] = ALLIANCE_ONLY,
 			}),
-			un(6, ach(12232)),		-- Collector's Edition: Tottle
-			un(6, ach(8795)),		-- Collector's Edition: Treasure Goblin
-			un(6, ach(10309)),		-- Collector's Edition: Zeradar
-			un(6, ach(664)),		-- Collector's Edition: Zergling
+			un(REMOVED_FROM_GAME, ach(12232)),		-- Collector's Edition: Tottle
+			un(REMOVED_FROM_GAME, ach(8795)),		-- Collector's Edition: Treasure Goblin
+			un(REMOVED_FROM_GAME, ach(10309)),		-- Collector's Edition: Zeradar
+			un(REMOVED_FROM_GAME, ach(664)),		-- Collector's Edition: Zergling
 			un(16, ach(5378)),		-- Deathy
 			un(REMOVED_FROM_GAME, ach(11210, {		-- Fight for the Alliance
 				["races"] = ALLIANCE_ONLY,

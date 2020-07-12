@@ -65,7 +65,7 @@ _.PetJournal =
 		p(2118),	 		-- Docile Skyfin
 		un(10, p(169)),		-- Dragon Kite
 		p(537),				-- Dragonbone Hatchling
-		un(6, p(1386)),		-- Dread Hatchling
+		un(REMOVED_FROM_GAME, p(1386)),		-- Dread Hatchling
 		p(2431),			-- Dreadtick Leecher
 		p(1588),			-- Dusty Sporewing
 		p(1761),			-- Echo Batling

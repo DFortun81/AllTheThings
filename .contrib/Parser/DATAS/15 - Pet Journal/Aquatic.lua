@@ -168,7 +168,7 @@ _.PetJournal =
 		p(2559),	-- Tonguelasher
 		p(163), 	-- Toothy
 		p(2143, {	-- Tottle
-			["u"] = 6,	-- Collector's Edition
+			["u"] = REMOVED_FROM_GAME,
 		}),
 		p(2415),	-- Tragg the Curious
 		p(65), 		-- Tree Frog

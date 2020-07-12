@@ -7,7 +7,7 @@ _.PetJournal =
 		p(2072),	-- Ageless Bronze Drake
 		p(1385),	-- Albino Chimaeraling
 		p(2779, {	-- Anima Wyrmling
-			["u"] = 6,	-- Collector's Edition
+			["u"] = REMOVED_FROM_GAME,
 		}),
 		p(57),		-- Azure Whelpling
 		p(2583),	-- Azure Windseeker
@@ -35,7 +35,7 @@ _.PetJournal =
 		p(1533),	-- Lanticore Spawnling
 		p(2468),	-- Laughing Stonekin
 		p(268, {	-- Lil' Deathwing
-			["u"] = 6,	-- Collector's Edition
+			["u"] = REMOVED_FROM_GAME,
 		}),
 		p(2621, {	-- Lil' Nefarian
 			["u"] = 31,	-- WoW Anniversary
@@ -43,7 +43,7 @@ _.PetJournal =
 		p(320),		-- Lil' Tarecgosa
 		p(557),		-- Nether Faerie Dragon
 		p(131, {	-- Netherwhelp
-			["u"] = 6,	-- Collector's Edition
+			["u"] = REMOVED_FROM_GAME,
 		}),
 		p(1165),	-- Nexus Whelpling
 		p(1723),	-- Nightmare Whelpling
