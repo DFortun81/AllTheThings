@@ -160,7 +160,7 @@ _.Zones =
 					},
 				}),
 				q(26522, {	-- Faces of Evil (duplicate, NYI)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(26357, {	-- Faces of Evil (H)
 					["provider"] = { "n", 42624 },	-- Kotonga
@@ -204,7 +204,7 @@ _.Zones =
 					},
 				}),
 				q(26527, {	-- Gryphon Master Talonaxe
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(26518, {	-- Heads Up (A)
 					["provider"] = { "n", 43157 },	-- Doran Steelwing
@@ -658,7 +658,7 @@ _.Zones =
 					["sourceQuests"] = { 26381 },	-- The Eye of Shadra
 				}),
 				q(26282, {	-- The Favor of Akil'darah
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(7843,  {	-- The Final Message to the Wildhammer
 					["u"] = 40,

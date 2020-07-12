@@ -29,7 +29,7 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 36665,--[[Netherflame Robe]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 28207,--[[Glacial Vest]]
@@ -42,7 +42,7 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 36672,--[[Lifeblood Bracers]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 28209,--[[Glacial Wrists]]
@@ -55,11 +55,11 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 36670,--[[Lifeblood Belt]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 36667,--[[Netherflame Belt]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					},
 				},
@@ -77,7 +77,7 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 36669,--[[Lifeblood Leggings]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					},
 				},
@@ -86,7 +86,7 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 36668,--[[Netherflame Boots]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					},
 				},

@@ -390,7 +390,7 @@ _.Zones =
 					["provider"] = { "n", 8115 },	-- Witch Doctor Uzer'i
 				}),
 				q(25305, {	-- Never Look Back
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(25403, {	-- Ogre Abduction (A)
 					["provider"] = { "n", 40052 },	-- Estulan

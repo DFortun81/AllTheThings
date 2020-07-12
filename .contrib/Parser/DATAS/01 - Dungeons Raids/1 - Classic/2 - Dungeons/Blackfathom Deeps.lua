@@ -98,7 +98,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(REMOVED_FROM_GAME, i(56699)),	-- Aluwyn's Legguards
 						un(REMOVED_FROM_GAME, i(56697)),	-- Blackfathom Mace
 						un(REMOVED_FROM_GAME, i(56698)),	-- Gift of the Enigmatic Tree
-						un(1, i(7000)),		-- Heartwood Girdle
+						un(NEVER_IMPLEMENTED, i(7000)),		-- Heartwood Girdle
 						un(REMOVED_FROM_GAME, i(6998)),		-- Nimbus Boots
 					},
 				}),

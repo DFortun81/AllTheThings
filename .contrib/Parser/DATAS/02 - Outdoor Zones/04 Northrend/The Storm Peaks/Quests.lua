@@ -375,7 +375,7 @@ _.Zones =
 					["sourceQuests"] = { 12984 },	-- Valduran the Stormborn
 				}),
 				q(12890, {	-- If Size Mattered... (NYI?)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(12975, {	-- In Memoriam
 					["provider"] = { "n", 30105 },	-- King Jokkum
@@ -729,7 +729,7 @@ _.Zones =
 					["sourceQuests"] = { 12979 },	-- Armor of Darkness
 				}),
 				q(13417, {	-- The Brothers Bronzebeard	-- scrapped version? no qg on wowhead, and this isn't the version of the quest i received (i got the next quest, 12973)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(12973, {	-- The Brothers Bronzebeard

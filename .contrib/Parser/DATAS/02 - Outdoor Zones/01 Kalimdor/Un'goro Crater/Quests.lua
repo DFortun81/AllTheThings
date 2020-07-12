@@ -670,7 +670,7 @@ _.Zones =
 					["provider"] = { "i", 11116 },	-- A Mangled Journal
 				}),
 				q(24688, {	-- Zen'Aliri
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 					["provider"] = { "n", 38263 },	-- Ithis Moonwarden
 				}),
 			}),

@@ -10,7 +10,7 @@ _.ExpansionFeatures =
 				n(COMMON_BOSS_DROPS, { -- [Tier 2]
 					["groups"] = bubbleDown({["modID"] = 5}, {
 									-- ALLIANCE SET --
-						un(1, i(164966)),	-- Glade Warden's Glaive
+						un(NEVER_IMPLEMENTED, i(164966)),	-- Glade Warden's Glaive
 						i(166898),	-- Sentinel's Blade
 						i(165628),	-- Sentinel's Branch
 						i(165637),	-- Sentinel's Bulwark

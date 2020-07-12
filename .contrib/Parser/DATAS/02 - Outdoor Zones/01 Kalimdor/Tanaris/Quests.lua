@@ -628,7 +628,7 @@ _.Zones =
 					["sourceQuest"] = 2661,	-- Delivery for Marin
 				}),
 				q(38890, {	-- Not Dead Yet! -- never went live
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(82,    {	-- Noxious Lair Investigation
 					["provider"] = { "n", 7724 },	-- Senior Surveyor Fizzledowser
@@ -847,7 +847,7 @@ _.Zones =
 					["sourceQuest"] = 25112,	-- Butcherbot
 				}),
 				q(38892, {	-- Scouting Report -- never went live
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(3520, {	-- Screecher Spirits
 					["u"] = 40,

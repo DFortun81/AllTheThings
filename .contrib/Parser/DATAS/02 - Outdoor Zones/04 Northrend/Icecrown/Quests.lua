@@ -1086,7 +1086,7 @@ _.Zones =
 					["sourceQuest"] = 13157,	-- The Crusaders' Pinnacle
 				}),
 				q(13184, {	-- Outliving Usefulness (NYI)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(13168, {	-- Parting Gifts
 					["coord"] = { 44.0, 24.5, 118 },
@@ -1120,7 +1120,7 @@ _.Zones =
 					},
 				}),
 				q(13176, {	-- Preparing the Delivery (NYI)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(13220, {	-- Putting Olakin Back Together Again
 					["coord"] = { 35.3, 66.3, 118 },
@@ -1159,7 +1159,7 @@ _.Zones =
 					["sourceQuest"] = 13092,	-- Reading the Bones
 				}),
 				q(13175, {	-- Regaining Control (NYI)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(13321, {	-- Retest Now (A)
 					["races"] = ALLIANCE_ONLY,
@@ -1358,10 +1358,10 @@ _.Zones =
 					},
 				}),
 				q(14447, {	-- Takes One to Know One (NYI)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(14448, {	-- Takes One to Know One (NYI)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(13288, {	-- That's Abominable! (A)
 					["races"] = ALLIANCE_ONLY,

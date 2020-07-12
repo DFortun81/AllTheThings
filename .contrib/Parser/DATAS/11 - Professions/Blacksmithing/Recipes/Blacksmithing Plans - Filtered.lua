@@ -41,22 +41,22 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Arcanite Rod	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic]
 							["recipeID"] = 20201,	-- Arcanite Rod
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 							["description"] = "These are the Arcanite Rod plans. They were removed in Patch 5.0.4.",
 						},
 						{	-- Golden Rod	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic]
 							["recipeID"] = 14379,	-- Golden Rod
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 							["description"] = "These are the Golden Rod plans. They were removed in Patch 5.0.4.",
 						},
 						{	-- Silver Rod	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic]
 							["recipeID"] = 7818,	-- Silver Rod
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 							["description"] = "These are the Silver Rod plans. They were removed in Patch 5.0.4.",
 						},
 						{	-- Truesilver Rod	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic]
 							["recipeID"] = 14380,	-- Truesilver Rod
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 							["description"] = "These are the Truesilver Rod plans. They were removed in Patch 5.0.4.",
 						},
 					},
@@ -180,15 +180,15 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Hardened Draenic Steel Helm
 							["recipeID"] = 153646--[[Hardened Draenic Steel Helm]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Peerless Draenic Steel Helm
 							["recipeID"] = 153659--[[Peerless Draenic Steel Helm]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Draenic Steel Helm
 							["recipeID"] = 153608--[[Draenic Steel Helm]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						}
 					}
 				},
@@ -245,15 +245,15 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Hardened Draenic Steel Shoulders
 							["recipeID"] = 153648--[[Hardened Draenic Steel Shoulders]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Peerless Draenic Steel Shoulders
 							["recipeID"] = 153661--[[Peerless Draenic Steel Shoulders]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Draenic Steel Shoulders
 							["recipeID"] = 153610--[[Draenic Steel Shoulders]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						}
 					}
 				},
@@ -360,22 +360,22 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Ironforge Chain
 							["recipeID"] = 8366--[[Ironforge Chain]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Copper Chain Vest
 							["recipeID"] = 3321--[[Copper Chain Vest]]
 						},
 						{	-- Hardened Draenic Steel Chestplate
 							["recipeID"] = 153643--[[Hardened Draenic Steel Chestplate]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Peerless Draenic Steel Chestplate
 							["recipeID"] = 153656--[[Peerless Draenic Steel Chestplate]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Draenic Steel Chestplate
 							["recipeID"] = 153605--[[Draenic Steel Chestplate]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Rough Copper Vest
 							["recipeID"] = 12260--[[Rough Copper Vest]]
@@ -431,7 +431,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Mithril Scale Gloves
 							["recipeID"] = 9942--[[Mithril Scale Gloves]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Heavy Mithril Gauntlet
 							["recipeID"] = 9928--[[Heavy Mithril Gauntlet]]
@@ -448,7 +448,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Ironforge Gauntlets
 							["recipeID"] = 8368--[[Ironforge Gauntlets]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Silvered Bronze Gauntlets
 							["recipeID"] = 3333--[[Silvered Bronze Gauntlets]]
@@ -461,15 +461,15 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Hardened Draenic Steel Gauntlets
 							["recipeID"] = 153645--[[Hardened Draenic Steel Gauntlets]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Peerless Draenic Steel Gauntlets
 							["recipeID"] = 153658--[[Peerless Draenic Steel Gauntlets]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Draenic Steel Gauntlets
 							["recipeID"] = 153607--[[Draenic Steel Gauntlets]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						}
 					}
 				},
@@ -503,18 +503,18 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Rough Bronze Bracers
 							["recipeID"] = 2671--[[Rough Bronze Bracers]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Runed Copper Bracers
 							["recipeID"] = 2664--[[Runed Copper Bracers]]
 						},
 						{	-- Hardened Draenic Steel Wristwraps
 							["recipeID"] = 153650--[[Hardened Draenic Steel Wristwraps]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Draenic Steel Wristwraps
 							["recipeID"] = 153612--[[Draenic Steel Wristwraps]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Copper Bracers
 							["recipeID"] = 2663--[[Copper Bracers]]
@@ -559,15 +559,15 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Hardened Draenic Steel Girdle
 							["recipeID"] = 153649--[[Hardened Draenic Steel Girdle]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Peerless Draenic Steel Wristwraps
 							["recipeID"] = 153663--[[Peerless Draenic Steel Wristwraps]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Draenic Steel Girdle
 							["recipeID"] = 153611--[[Draenic Steel Girdle]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						}
 					}
 				},
@@ -631,15 +631,15 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Hardened Draenic Steel Legguards
 							["recipeID"] = 153647--[[Hardened Draenic Steel Legguards]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Peerless Draenic Steel Legguards
 							["recipeID"] = 153660--[[Peerless Draenic Steel Legguards]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Draenic Steel Legguards
 							["recipeID"] = 153609--[[Draenic Steel Legguards]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Copper Chain Pants
 							["recipeID"] = 2662--[[Copper Chain Pants]]
@@ -694,15 +694,15 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Hardened Draenic Steel Warboots
 							["recipeID"] = 153644--[[Hardened Draenic Steel Warboots]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Peerless Draenic Steel Warboots
 							["recipeID"] = 153657--[[Peerless Draenic Steel Warboots]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Draenic Steel Warboots
 							["recipeID"] = 153606--[[Draenic Steel Warboots]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Copper Chain Boots
 							["recipeID"] = 3319--[[Copper Chain Boots]]
@@ -717,15 +717,15 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Hardened Draenic Steel Bulwark
 							["recipeID"] = 153655--[[Hardened Draenic Steel Bulwark]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Peerless Draenic Steel Bulwark
 							["recipeID"] = 153668--[[Peerless Draenic Steel Bulwark]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Draenic Steel Bulwark
 							["recipeID"] = 153631--[[Draenic Steel Bulwark]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						}
 					}
 				},
@@ -799,7 +799,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Rune Edge
 							["recipeID"] = 16980--[[Rune Edge]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Serenity
 							["recipeID"] = 16983--[[Serenity]]
@@ -832,14 +832,14 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Inlaid Thorium Hammer
 							["recipeID"] = 16967--[[Inlaid Thorium Hammer]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Light Earthforged Blade
 							["recipeID"] = 36125--[[Light Earthforged Blade]]
 						},
 						{	-- Thorium Greatsword
 							["recipeID"] = 16960--[[Thorium Greatsword]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Truesilver Champion
 							["recipeID"] = 10015--[[Truesilver Champion]],
@@ -971,51 +971,51 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Hardened Draenic Steel Dagger
 							["recipeID"] = 153653--[[Hardened Draenic Steel Dagger]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Hardened Draenic Steel Mace
 							["recipeID"] = 153654--[[Hardened Draenic Steel Mace]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Hardened Draenic Steel Sword
 							["recipeID"] = 153652--[[Hardened Draenic Steel Sword]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Hardened Draenic Steel War Axe
 							["recipeID"] = 153651--[[Hardened Draenic Steel War Axe]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Peerless Draenic Steel Dagger
 							["recipeID"] = 153666--[[Peerless Draenic Steel Dagger]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Peerless Draenic Steel Mace
 							["recipeID"] = 153667--[[Peerless Draenic Steel Mace]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Peerless Draenic Steel Sword
 							["recipeID"] = 153665--[[Peerless Draenic Steel Sword]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Peerless Draenic Steel War Axe
 							["recipeID"] = 153664--[[Peerless Draenic Steel War Axe]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Draenic Steel Dagger
 							["recipeID"] = 153629--[[Draenic Steel Dagger]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Draenic Steel Mace
 							["recipeID"] = 153630--[[Draenic Steel Mace]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Draenic Steel Sword
 							["recipeID"] = 153628--[[Draenic Steel Sword]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Draenic Steel War Axe
 							["recipeID"] = 153627--[[Draenic Steel War Axe]],
-							["u"] = 1,	-- Actually WOD recipe and never made it out of Beta
+							["u"] = NEVER_IMPLEMENTED,	-- Actually WOD recipe and never made it out of Beta
 						},
 						{	-- Copper Axe
 							["recipeID"] = 2738--[[Copper Axe]]

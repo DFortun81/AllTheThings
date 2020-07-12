@@ -298,7 +298,7 @@ _.Zones =
 					["coord"] = { 53.2, 38.2, 100 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(1, i(25847)),	-- Plans: Eternium Rod
+						un(REMOVED_FROM_GAME, i(25847)),	-- Plans: Eternium Rod
 						i(23638, {	-- Plans: Lesser Ward of Shielding
 							["isLimited"] = true,
 						}),

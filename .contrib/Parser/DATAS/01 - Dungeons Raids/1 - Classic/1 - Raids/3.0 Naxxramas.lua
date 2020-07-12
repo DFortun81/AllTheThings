@@ -1162,7 +1162,7 @@ _.Instances = { tier(1, {	-- Classic
 							n(16062, {	-- Highlord Mograine <The Ashbringer>
 								{
 									["itemID"] = 13262,	-- Ashbringer
-									["u"] = 1,	-- Never Implemented
+									["u"] = NEVER_IMPLEMENTED,
 									["description"] = "This is here so that you can quickly compare the Corrupted Ashbringer with the original Ashbringer model. It was never available to players.\n\nThis weapon was eventually turned into an Artifact weapon with an updated model for the Legion expansion for Retribution Paladins.",
 									["collectible"] = false,
 								},

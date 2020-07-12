@@ -455,7 +455,7 @@ profession(COOKING, {
 				recipe(3376),	-- Curiously Tasty Omelet
 				recipe(24418),	-- Heavy Crocolisk Stew
 				recipe(3399),	-- Tasty Lion Steak
-				un(1, recipe(13028)),	-- Goldthorn Tea
+				un(NEVER_IMPLEMENTED, recipe(13028)),	-- Goldthorn Tea
 				recipe(7828),	-- Rockscale Cod
 				recipe(4094),	-- Barbecued Buzzard Wing
 				recipe(15863),	-- Carrion Surprise
@@ -527,9 +527,9 @@ profession(COOKING, {
 		tier(3, {	-- Wrath
 			["groups"] = bubbleDown({["requireSkill"] = COOKING},  {
 				-- Note!! Only commenting out actual items as Automation takes care of the recipes themselves
-				un(1, i(34126)),	-- Recipe: Shoveltusk Soup
-				un(1, i(39692)),	-- Recipe: Succulent Orca Stew
-				un(1, i(39644)),	-- Recipe: Kungaloosh
+				un(NEVER_IMPLEMENTED, i(34126)),	-- Recipe: Shoveltusk Soup
+				un(NEVER_IMPLEMENTED, i(39692)),	-- Recipe: Succulent Orca Stew
+				un(NEVER_IMPLEMENTED, i(39644)),	-- Recipe: Kungaloosh
 				--[[
 				recipe(57421),	-- Northern Stew
 				recipe(58523),	-- Bad Clams
@@ -736,10 +736,10 @@ profession(COOKING, {
 		--]]
 		tier(6, {	-- WoD
 			["groups"] = bubbleDown({["requireSkill"] = COOKING},  {
-				un(1, recipe(169696)),		-- Marinated Elekk Steak (Never made it to Live)
-				un(1, recipe(169699)),		-- Seasoned Elekk Ribeye (Never made it to Live)
-				un(1, recipe(169701)),		-- Seasoned Elekk Ribeye (Never made it to Live)
-				un(1, recipe(169693)),		-- Whole Pot-Roasted Elekk (Never made it to Live)
+				un(NEVER_IMPLEMENTED, recipe(169696)),		-- Marinated Elekk Steak (Never made it to Live)
+				un(NEVER_IMPLEMENTED, recipe(169699)),		-- Seasoned Elekk Ribeye (Never made it to Live)
+				un(NEVER_IMPLEMENTED, recipe(169701)),		-- Seasoned Elekk Ribeye (Never made it to Live)
+				un(NEVER_IMPLEMENTED, recipe(169693)),		-- Whole Pot-Roasted Elekk (Never made it to Live)
 				--[[
 				recipe(161001),		-- Saberfish Broth
 				recipe(161002),		-- Grilled Saberfish

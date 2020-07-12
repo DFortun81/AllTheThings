@@ -481,7 +481,7 @@ _.Zones =
 					},
 				}),
 				q(9749,  {	-- They're Alive! Maybe... (duplicate, never went live)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(9696,  {	-- Translations...
 					["provider"] = { "n", 17684 },	-- Vindicator Boros
@@ -490,7 +490,7 @@ _.Zones =
 					["sourceQuest"] = 9779,	-- Intercepting the Message
 				}),
 				q(9750,  {	-- UNUSED Urgent Delivery
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(9671,  {	-- Urgent Delivery
 					["provider"] = { "n", 17703 },	-- Messenger Hermesius

@@ -907,10 +907,10 @@ _.Zones =
 					["sourceQuest"] = 34899,	-- A Choice to Make
 				}),
 				q(35389, {	-- Silence the Call (duplicate, never went live)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(35391, {	-- Silence the Call (duplicate, never went live)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(35084, {	-- Silence the Call
 					--["objectID"] = 233263,	-- Shamanstone
@@ -1246,7 +1246,7 @@ _.Zones =
 					},
 				}),
 				q(35392, {	-- The Nether Approaches
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(35087, {	-- The Nether Approaches
 					--["objectID"] = 233263,	-- Shamanstone
@@ -1347,7 +1347,7 @@ _.Zones =
 					},
 				}),
 				q(35390, {	-- The Shadow Over Oshu'gun	(replaced by 35088 before going live)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(35088, { 	-- The Shadow of the Void
 					--["objectID"] = 233263,	-- Shamanstone
@@ -1369,7 +1369,7 @@ _.Zones =
 					},
 				}),
 				q(35388, {	-- The Void March (duplicate, never went live)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(35086, {	-- The Void March
 					--["objectID"] = 233263,	-- Shamanstone
@@ -1429,7 +1429,7 @@ _.Zones =
 					["sourceQuest"] = 34598,	-- The Missing Caravan
 				}),
 				q(35387, {	-- Through the Nether (duplicate, never went live)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(35085, {	-- Through the Nether
 					--["objectID"] = 233263,	-- Shamanstone

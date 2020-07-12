@@ -54,7 +54,7 @@ _.Zones =
 									i(25737),	-- Pattern: Heavy Clefthoof Boots
 									i(25736),	-- Pattern: Heavy Clefthoof Leggings
 									i(25735),	-- Pattern: Heavy Clefthoof Vest
-									un(1, i(24315)),	-- Pattern: Heavy Netherweave Net
+									un(NEVER_IMPLEMENTED, i(24315)),	-- Pattern: Heavy Netherweave Net
 									i(29721),	-- Pattern: Nethercleft Leg Armor
 									i(23618),	-- Plans: Adamantite Sharpening Stone
 									i(28632),	-- Plans: Adamantite Weightstone

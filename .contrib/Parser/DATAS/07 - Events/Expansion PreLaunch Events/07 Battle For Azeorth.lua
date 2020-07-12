@@ -121,7 +121,7 @@ _.WorldEvents =
 								}, 
 							}),
 							q(52220, {	-- Dragon Attack
-								["u"] = 1,
+								["u"] = NEVER_IMPLEMENTED,
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 52197 },	-- Long Away
 							}),
@@ -292,7 +292,7 @@ _.WorldEvents =
 								["sourceQuests"] = { 50738 },	-- A Timely Arrival
 							}),	
 							q(53550, {	-- A Change in Leadership
-								["u"] = 1,
+								["u"] = NEVER_IMPLEMENTED,
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 50879 },	-- The Trees Have Ears
 							}),

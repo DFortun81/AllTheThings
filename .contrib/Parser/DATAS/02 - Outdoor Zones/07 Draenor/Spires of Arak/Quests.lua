@@ -1052,7 +1052,7 @@ _.Zones =
 					},
 				}),
 				q(34565, {	-- Tearing Up Talador
-					["u"] = 1,	-- triggered after turning in "Ikky" (34898) but never made it to live servers
+					["u"] = NEVER_IMPLEMENTED,	-- triggered after turning in "Ikky" (34898) but never made it to live servers
 				}),
 				q(35895, {	-- Terokk's Fall
 					["sourceQuests"] = { 35897 },	-- The Missing Piece
@@ -1104,7 +1104,7 @@ _.Zones =
 					["provider"] = { "n", 86475 },	-- Talon Guard Kurekk
 				}),
 				q(36796, {	-- The Flock's Revenge
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(35010, {	-- The High Ravenspeaker
 					["sourceQuests"] = { 34991 },	-- To the... Rescue?

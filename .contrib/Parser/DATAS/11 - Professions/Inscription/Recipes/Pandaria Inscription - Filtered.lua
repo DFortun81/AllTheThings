@@ -81,7 +81,7 @@ profession(INSCRIPTION, {
 						},
 						{	-- Mystery of the Mists
 							["recipeID"] = 130407--[[Mystery of the Mists]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					}
 				},

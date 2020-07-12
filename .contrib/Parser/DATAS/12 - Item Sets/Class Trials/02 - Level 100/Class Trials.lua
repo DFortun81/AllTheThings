@@ -52,7 +52,7 @@ _.GearSets =
 					["classes"] = { MAGE },
 					["groups"] = {
 						i(129525),	-- Mountainsage Staff
-						un(1, i(129523)),	-- Mountainsage Wand
+						un(NEVER_IMPLEMENTED, i(129523)),	-- Mountainsage Wand
 						i(129517),	-- Mountainsage Hood
 						i(129510),	-- Mountainsage Medallion
 						i(129524),	-- Mountainsage Cloak of Destruction

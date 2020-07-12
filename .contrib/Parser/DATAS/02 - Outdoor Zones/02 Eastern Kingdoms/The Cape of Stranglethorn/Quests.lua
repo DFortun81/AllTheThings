@@ -153,7 +153,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(26718, {	-- Breadcrumb to Badlands
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(26665, {	-- Call of Booty
 					["provider"] = { "o", 204450 },	-- Captain Stillwater's Charts
@@ -745,7 +745,7 @@ _.Zones =
 					},
 				}),
 				q(26590, {	-- The Holy Water of Clarity
-					["u"] = 1,	-- TODO:: verify if there a special condition for this version
+					["u"] = NEVER_IMPLEMENTED,
 					["provider"] = { "n", 43096 },	-- Flem Gizzix
 					["coord"] = { 33.6, 29.1, 210 },
 					["races"] = HORDE_ONLY,

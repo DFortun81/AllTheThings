@@ -9,15 +9,15 @@ _.Zones =
 				n(58713, {	-- Anthea Ironpaw <Master of the Wok>
 					["coord"] = { 52.8, 51.8, 376 },
 					["g"] = {
-						un(1, i(87231)),	-- Recipe: Banquet of the Wok
+						un(NEVER_IMPLEMENTED, i(87231)),	-- Recipe: Banquet of the Wok
 						recipe(125594),		-- Banquet of the Wok
-						un(1, i(87233)),	-- Recipe: Great Banquet of the Wok
+						un(NEVER_IMPLEMENTED, i(87233)),	-- Recipe: Great Banquet of the Wok
 						recipe(125595),		-- Great Banquet of the Wok
-						un(1, i(74666)),	-- Recipe: Sauteed Carrots
+						un(NEVER_IMPLEMENTED, i(74666)),	-- Recipe: Sauteed Carrots
 						recipe(104301),		-- Sauteed Carrots
-						un(1, i(74668)),	-- Recipe: Sea Mist Rice Noodles
+						un(NEVER_IMPLEMENTED, i(74668)),	-- Recipe: Sea Mist Rice Noodles
 						recipe(104303),		-- Sea Mist Rice Noodles
-						un(1, i(74667)),	-- Recipe: Valley Stir Fry
+						un(NEVER_IMPLEMENTED, i(74667)),	-- Recipe: Valley Stir Fry
 						recipe(104302),		-- Valley Stir Fry
 					},
 				}),
@@ -333,10 +333,10 @@ _.Zones =
 				n(58717, {	-- Bobo Ironpaw <Master of the Brew>
 					["coord"] = { 53.0, 52.0, 376 },
 					["g"] = {
-						un(1, i(87247)),	-- Recipe: Banquet of the Brew
+						un(NEVER_IMPLEMENTED, i(87247)),	-- Recipe: Banquet of the Brew
 						recipe(125602),		-- Banquet of the Brew
 						recipe(124052),		-- Ginseng Tea
-						un(1, i(87249)),	-- Recipe: Great Banquet of the Brew
+						un(NEVER_IMPLEMENTED, i(87249)),	-- Recipe: Great Banquet of the Brew
 						recipe(125603),		-- Great Banquet of the Brew
 						recipe(124053),		-- Jade Witch Brew
 						recipe(124054),		-- Mad Brewer's Breakfast
@@ -1421,30 +1421,30 @@ _.Zones =
 				n(58716, {	-- Jian Ironpaw <Master of the Oven>
 					["coord"] = { 53.2, 51.6, 376 },
 					["g"] = {
-						un(1, i(87243)),	-- Recipe: Banquet of the Oven
+						un(NEVER_IMPLEMENTED, i(87243)),	-- Recipe: Banquet of the Oven
 						recipe(125600),		-- Banquet of the Oven
-						un(1, i(74677)),	-- Recipe: Chun Tian Spring Rolls
+						un(NEVER_IMPLEMENTED, i(74677)),	-- Recipe: Chun Tian Spring Rolls
 						recipe(104312),		-- Chun Tian Spring Rolls
-						un(1, i(87245)),	-- Recipe: Great Banquet of the Oven
+						un(NEVER_IMPLEMENTED, i(87245)),	-- Recipe: Great Banquet of the Oven
 						recipe(125601),		-- Great Banquet of the Oven
-						un(1, i(74676)),	-- Recipe: Twin Fish Platter
+						un(NEVER_IMPLEMENTED, i(74676)),	-- Recipe: Twin Fish Platter
 						recipe(104311),		-- Twin Fish Platter
-						un(1, i(74675)),	-- Recipe: Wildfowl Roast
+						un(NEVER_IMPLEMENTED, i(74675)),	-- Recipe: Wildfowl Roast
 						recipe(104310),		-- Wildfowl Roast
 					},
 				}),
 				n(58712, {	-- Kol Ironpaw <Master of the Grill>
 					["coord"] = { 53.0, 51.4, 376 },
 					["g"] = {
-						un(1, i(87227)),	-- Recipe: Banquet of the Grill
+						un(NEVER_IMPLEMENTED, i(87227)),	-- Recipe: Banquet of the Grill
 						recipe(125141),		-- Banquet of the Grill
-						un(1, i(74665)),	-- Recipe: Black Pepper Ribs and Shrimp
+						un(NEVER_IMPLEMENTED, i(74665)),	-- Recipe: Black Pepper Ribs and Shrimp
 						recipe(104300),		-- Black Pepper Ribs and Shrimp
-						un(1, i(74663)),	-- Recipe: Charbroiled Tiger Steak
+						un(NEVER_IMPLEMENTED, i(74663)),	-- Recipe: Charbroiled Tiger Steak
 						recipe(104298),		-- Charbroiled Tiger Steak
-						un(1, i(74664)),	-- Recipe: Eternal Blossom Fish
+						un(NEVER_IMPLEMENTED, i(74664)),	-- Recipe: Eternal Blossom Fish
 						recipe(104299),		-- Eternal Blossom Fish
-						un(1, i(87229)),	-- Recipe: Great Banquet of the Grill
+						un(NEVER_IMPLEMENTED, i(87229)),	-- Recipe: Great Banquet of the Grill
 						recipe(125142),		-- Great Banquet of the Grill
 					},
 				}),
@@ -1492,15 +1492,15 @@ _.Zones =
 				n(58714, {	-- Mei Mei Ironpaw <Master of the Pot>
 					["coord"] = { 52.6, 51.6, 376 },
 					["g"] = {
-						un(1, i(87235)),	-- Recipe: Banquet of the Pot
+						un(NEVER_IMPLEMENTED, i(87235)),	-- Recipe: Banquet of the Pot
 						recipe(125596),		-- Banquet of the Pot
-						un(1, i(74670)),	-- Recipe: Braised Turtle
+						un(NEVER_IMPLEMENTED, i(74670)),	-- Recipe: Braised Turtle
 						recipe(104305),		-- Braised Turtle
-						un(1, i(87237)),	-- Recipe: Great Banquet of the Pot
+						un(NEVER_IMPLEMENTED, i(87237)),	-- Recipe: Great Banquet of the Pot
 						recipe(125597),		-- Great Banquet of the Pot
-						un(1, i(74671)),	-- Recipe: Mogu Fish Stew
+						un(NEVER_IMPLEMENTED, i(74671)),	-- Recipe: Mogu Fish Stew
 						recipe(104306),		-- Mogu Fish Stew
-						un(1, i(74669)),	-- Recipe: Swirling Mist Soup
+						un(NEVER_IMPLEMENTED, i(74669)),	-- Recipe: Swirling Mist Soup
 						recipe(104304),		-- Swirling Mist Soup
 					},
 				}),
@@ -1905,15 +1905,15 @@ _.Zones =
 				n(58715, {	-- Yan Ironpaw <Master of the Steamer>
 					["coord"] = { 52.6, 51.6, 376 },
 					["g"] = {
-						un(1, i(87239)),	-- Recipe: Banquet of the Steamer
+						un(NEVER_IMPLEMENTED, i(87239)),	-- Recipe: Banquet of the Steamer
 						recipe(125598),		-- Banquet of the Steamer
-						un(1, i(74673)),	-- Recipe: Fire Spirit Salmon
+						un(NEVER_IMPLEMENTED, i(74673)),	-- Recipe: Fire Spirit Salmon
 						recipe(104308),		-- Fire Spirit Salmon
-						un(1, i(87241)),	-- Recipe: Great Banquet of the Steamer
+						un(NEVER_IMPLEMENTED, i(87241)),	-- Recipe: Great Banquet of the Steamer
 						recipe(125599),		-- Great Banquet of the Steamer
-						un(1, i(74672)),	-- Recipe: Shrimp Dumplings
+						un(NEVER_IMPLEMENTED, i(74672)),	-- Recipe: Shrimp Dumplings
 						recipe(104307),		-- Shrimp Dumplings
-						un(1, i(74674)),	-- Recipe: Steamed Crab Surprise
+						un(NEVER_IMPLEMENTED, i(74674)),	-- Recipe: Steamed Crab Surprise
 						recipe(104309),		-- Steamed Crab Surprise
 					},
 				}),

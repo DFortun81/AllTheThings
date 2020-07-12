@@ -86,9 +86,9 @@ _.ExpansionFeatures =
 									i(116764, {	-- Small Pouch of Coins
 										["description"] = "This item contains 1-5 gold. DON'T WASTE YOUR SECRETS!\n\nSide note: This gold counts toward gold-looting achievements. (Got My Mind on My Money, etc.)",
 									}),
-									un(1, i(108421)),	-- Plans: Blackrock Crucibles and Their Uses
-									un(1, i(122550)),	-- Recipe: Powerful Steelforged Essence
-									un(1, i(122552)),	-- Recipe: Powerful Truesteel Essence
+									un(NEVER_IMPLEMENTED, i(108421)),	-- Plans: Blackrock Crucibles and Their Uses
+									un(NEVER_IMPLEMENTED, i(122550)),	-- Recipe: Powerful Steelforged Essence
+									un(NEVER_IMPLEMENTED, i(122552)),	-- Recipe: Powerful Truesteel Essence
 								},
 							}),
 						}),

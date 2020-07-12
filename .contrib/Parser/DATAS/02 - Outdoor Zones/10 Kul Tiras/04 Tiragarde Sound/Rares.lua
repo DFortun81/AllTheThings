@@ -343,9 +343,9 @@ _.Zones =
 				}),
 				n(132052, {	-- Vol'Jim			
 					["description"] = "It looks like this NPC didn't make it to live from beta.",
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {			
-						un(1, i(155074)),	-- Toll Enforcer	
+						un(NEVER_IMPLEMENTED, i(155074)),	-- Toll Enforcer	
 					}),	
 				}),		
 				n(137176, {	-- Walter Ferrell

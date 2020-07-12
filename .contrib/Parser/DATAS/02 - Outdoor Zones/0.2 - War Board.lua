@@ -136,7 +136,7 @@ _.Zones =
 				["isBreadcrumb"] = true,
 			}),
 			q(39189, {	-- Warchief's Command: Nagrand! (NYI - duplicate?)
-				["u"] = 1,
+				["u"] = NEVER_IMPLEMENTED,
 			}),
 			q(39196, {	-- Warchief's Command: Nagrand! (Outland)
 				["isBreadcrumb"] = true,

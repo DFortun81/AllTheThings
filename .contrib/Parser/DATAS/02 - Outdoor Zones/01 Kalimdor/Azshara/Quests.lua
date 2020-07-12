@@ -1092,7 +1092,7 @@ _.Zones =
 					["sourceQuest"] = 14134,	-- The Captain's Logs
 				}),
 				q(14231, {	-- Useless quest record
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(14118, {	-- Venison for the Troops
 					["provider"] = { "n", 8576 },	-- Ag'tor Bloodfist

@@ -322,7 +322,7 @@ _.Zones =
 					["sourceQuest"] = 26652,	-- Ghost Hair Thread
 				}),
 				q(26673, {	-- REUSE - BREADCRUMB (completed when turning in "Roland's Doom" (26670)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(43393, {	-- Rising Shadows
 					["provider"] = { "n", 110684 },	-- Natalie Seline

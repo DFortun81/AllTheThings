@@ -26,15 +26,15 @@ profession(COOKING, {
 					["g"] = {
 						{
 							["recipeID"] = 145170,--[[Grand Deluxe Noodle Cart Kit]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 145167,--[[Grand Noodle Cart Kit]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 145197,--[[Grand Pandaren Treasure Noodle Cart Kit]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					}
 				}

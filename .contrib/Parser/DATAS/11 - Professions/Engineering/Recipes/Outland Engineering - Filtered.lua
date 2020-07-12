@@ -284,7 +284,7 @@ profession(ENGINEERING, {
 						{
 							["name"] = "Blue Smoke Flare",
 							["recipeID"] = 30343,
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["name"] = "Green Smoke Flare",
@@ -297,7 +297,7 @@ profession(ENGINEERING, {
 						{
 							["name"] = "Red Smoke Flare",
 							["recipeID"] = 30342,
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["name"] = "White Smoke Flare",

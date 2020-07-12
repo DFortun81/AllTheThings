@@ -294,7 +294,7 @@ _.Zones =
 							["bonusID"] = 4776,	-- leveling item
 							["lvl"] = 110,	-- will show 120 otherwise
 						}),
-						un(1, i(160468, {	-- Longfang Paws
+						un(NEVER_IMPLEMENTED, i(160468, {	-- Longfang Paws
 							["crs"] = { 127901 },	-- Henry Breakwater
 						})),
 					},

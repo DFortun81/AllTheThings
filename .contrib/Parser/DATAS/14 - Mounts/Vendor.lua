@@ -84,7 +84,7 @@ _.Mounts =
 		i(25475),	-- Blue Wind Rider
 		i(116775),	-- Breezestrider Stallion
 		i(128481),	-- Bristling Hellboar
-		un(1, i(128480)),	-- Bristling Hellboar
+		un(NEVER_IMPLEMENTED, i(128480)),	-- Bristling Hellboar
 		i(91005, {	-- Brown Dragon Turtle [Panda Only]
 			["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 		}),

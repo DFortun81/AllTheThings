@@ -17,19 +17,19 @@ _.ExpansionFeatures =
 					--The next four items will be marked as NYI in the event that they are hotfixed or added in the future
 					--and people can report that they are dropping.
 					i(164286, {	-- Plundered Runecaster's Mantle
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 						["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT Discord!.",
 					}),
 					i(164285, {	-- Plundered Shoveltusk-Hide Shoulders
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 						["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT Discord!.",
 					}),
 					i(164287, {	-- Plundered Dragonrider Spaulders
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 						["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT Discord!.",
 					}),
 					i(164288, {	-- Plundered Gjalerbron Pauldrons
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 						["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT Discord!.",
 					}),
 					n(-43, {	-- Cloth
@@ -287,7 +287,7 @@ _.ExpansionFeatures =
 							i(164523),	-- Rattling Bone Hauberk
 							i(164530),	-- Rattling Bone Armplates
 							i(164524),	-- Rattling Bone Crushers
-							un(1, i(164525)),	-- Rattling Bone Greatbelt
+							un(NEVER_IMPLEMENTED, i(164525)),	-- Rattling Bone Greatbelt
 							i(164527),	-- Rattling Bone Legguards
 							i(164529),	-- Rattling Bone Warboots
 						}),
@@ -409,16 +409,16 @@ _.ExpansionFeatures =
 					--The next three items will be marked as NYI in the event that they are hotfixed or added in the future
 					--and people can report that they are dropping.
 					i(164372, {	-- Jinyu Light Globe
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 						["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT Discord!.",
 					}),
 					i(164377, {	-- Regenerating Banana Bunch
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 						["description"] = "This item was removed from the game database in 8.1.\nIf you get this as a drop please report to the ATT Discord!.",
 					}),
 					--Note!! The below item doesn't show up in the files at all.  It returns "Retrieving Information".
 					i(164371, {	-- Yaungol Oil Stove
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 						["description"] = "This item was removed from the game database in 8.0.\nIf you get this as a drop please report to the ATT Discord!.",
 					}),
 				}),

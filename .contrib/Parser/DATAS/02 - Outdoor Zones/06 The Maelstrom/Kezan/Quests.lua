@@ -112,7 +112,7 @@ _.Zones =
 					["sourceQuests"] = { 14071 },	-- Rolling with my Homies
 				}),
 				q(24521, {	-- Report For Tryouts (NYI)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(14121, {	-- Robbing Hoods
 					["coord"] = { 60.0, 78.1, 194 },
@@ -137,7 +137,7 @@ _.Zones =
 					},
 				}),
 				q(28606, {	-- The Keys to the Hot Rod
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(28607, {	-- The Keys to the Hot Rod
 					["coord"] = { 58.3, 76.4, 194 },

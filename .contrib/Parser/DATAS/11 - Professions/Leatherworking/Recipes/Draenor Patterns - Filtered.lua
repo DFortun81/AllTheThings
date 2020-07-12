@@ -15,7 +15,7 @@ profession(LEATHERWORKING, {
 					["g"] = {
 						{
 							["recipeID"] = 171713,--[[Burnished Leather]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					}
 				},
@@ -86,7 +86,7 @@ profession(LEATHERWORKING, {
 					["g"] = {
 						{
 							["recipeID"] = 173416,	--Small Football
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						}
 					}
 				}

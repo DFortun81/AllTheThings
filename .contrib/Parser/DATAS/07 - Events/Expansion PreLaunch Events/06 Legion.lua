@@ -155,7 +155,7 @@ _.WorldEvents =
 						["groups"] = {
 							{
 								["itemID"] = 150611,	-- Guardian's Oaken Spear
-								["u"] = 1,
+								["u"] = NEVER_IMPLEMENTED,
 							},
 							{
 								["itemID"] = 140716,	-- Guardian's Oaken Spear
@@ -179,7 +179,7 @@ _.WorldEvents =
 							},
 							{
 								["itemID"] = 150584,	-- Pike of Feral Rage
-								["u"] = 1,
+								["u"] = NEVER_IMPLEMENTED,
 							},
 							{
 								["itemID"] = 140689,	-- Pike of Feral Rage
@@ -203,7 +203,7 @@ _.WorldEvents =
 							},
 							{
 								["itemID"] = 150613,	-- Survivalist's Hunting Spear
-								["u"] = 1,
+								["u"] = NEVER_IMPLEMENTED,
 							},
 							{
 								["itemID"] = 140718,	-- Survivalist's Hunting Spear

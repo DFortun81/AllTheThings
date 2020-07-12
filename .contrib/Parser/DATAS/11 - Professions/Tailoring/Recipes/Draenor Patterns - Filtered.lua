@@ -34,7 +34,7 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 169669,--[[Hexweave Cloth]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					},
 				},
@@ -49,11 +49,11 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 168851,--[[Miniature Flying Carpet]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 173415,--[Murloc Chew Toy]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					},
 				},

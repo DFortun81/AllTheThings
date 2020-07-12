@@ -665,7 +665,7 @@ _.Zones =
 					["isBreadcrumb"] = true,	-- for "A Warm Welcome"
 				}),
 				q(9733,  {	-- Warning the Cenarion Circle (NYI)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(9724,  {	-- Warning the Cenarion Circle
 					["provider"] = { "n", 17841 },	-- Ysiel Windsinger

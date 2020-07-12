@@ -863,7 +863,7 @@ _.ExpansionFeatures =
 					q(57874, {	-- Visions of a Dark Destiny -- is it still in game?
 						["coord"] = { 56.6, 31.7, 1527 },
 						["provider"] = { "n", 160252 },	-- Blacktalon Agent
-						["u"] = 1,	-- Never Available
+						["u"] = NEVER_IMPLEMENTED,
 						["g"] = {
 							i(174288, {	-- Breath of Everlasting Spirit (once a week)
 								["description"] = "Awarded once a week upon completion of your first Visions of Darkness quest.",

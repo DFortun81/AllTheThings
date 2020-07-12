@@ -50,7 +50,7 @@ _.Zones =
 						},
 					}),
 					q(34817, {	-- Altar Altercation - never implemented but gets flagged completed
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(35933, {	-- Azeroth's Last Stand
 						["provider"] = { "n", 78558 },	-- Archmage Khadgar
@@ -85,7 +85,7 @@ _.Zones =
 					}),
 					q(34435, {	-- Find Ga'nar - never implemented. Flagged completed when turning in "Yrel"
 						["races"] = HORDE_ONLY,
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(34442, {	-- Ga'nar of the Frostwolf
 						["provider"] = { "n", 78996 },	-- Farseer Drek'Thar
@@ -158,7 +158,7 @@ _.Zones =
 						},
 					}),
 					q(34438, {	-- Regarding Enormous Tanks - never implemented. Flagged completed when turning in "The Shadow of the Worldbreaker"
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(35747, {	-- Taking a Trip to the Top of the Tank
 						["provider"] = { "n", 78563 },	-- Archmage Khadgar
@@ -266,7 +266,7 @@ _.Zones =
 						["sourceQuest"] = 34429,	-- Kill Your Hundred
 					}),
 					q(34426, {	-- Yrel - this version was never implemented. Flagged as completed when turning in "A Potential Ally"
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 				}),
 			},

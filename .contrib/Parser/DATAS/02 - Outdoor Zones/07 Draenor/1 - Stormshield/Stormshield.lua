@@ -444,7 +444,7 @@ _.Zones =
 										recipe(158908),	-- Breath of Haste [Ring]
 										recipe(158909),	-- Breath of Mastery
 										recipe(158896),	-- Breath of Versatility [Neck]
-										un(1, recipe(158910)),	-- Breath of Mastery
+										un(NEVER_IMPLEMENTED, recipe(158910)),	-- Breath of Mastery
 										recipe(158911),	-- Breath of Versatility
 										recipe(159236),	-- Mark of the Shattered Hand
 									},
@@ -1432,10 +1432,10 @@ _.Zones =
 								i(118614),	-- Technique: Volatile Crystal
 								i(118615),	-- Technique: Warmaster's Firestick
 								i(118610),	-- Technique: Weapon Crystal
-								un(1, i(118608)),	-- Technique: Greater Weapon Crystal
-								un(1, i(120266)),	-- Technique: Greater Ensorcelled Tarot
-								un(1, i(122548)),	-- Technique: Powerful Ensorcelled Tarot
-								un(1, i(122553)),	-- Technique: Powerful Weapon Crystal
+								un(NEVER_IMPLEMENTED, i(118608)),	-- Technique: Greater Weapon Crystal
+								un(NEVER_IMPLEMENTED, i(120266)),	-- Technique: Greater Ensorcelled Tarot
+								un(NEVER_IMPLEMENTED, i(122548)),	-- Technique: Powerful Ensorcelled Tarot
+								un(NEVER_IMPLEMENTED, i(122553)),	-- Technique: Powerful Weapon Crystal
 							},
 						}),
 						n(87048, {	-- Katherine Joplin <Alchemy Recipes>
@@ -1459,12 +1459,12 @@ _.Zones =
 									},
 								}),
 								i(112042),	-- Recipe: Draenic Channeled Mana Potion
-								un(1, i(112043)),	-- Recipe: Draenic Mana Potion
+								un(NEVER_IMPLEMENTED, i(112043)),	-- Recipe: Draenic Mana Potion
 								i(112041),	-- Recipe: Draenic Armor Potion
 								i(112038),	-- Recipe: Draenic Agility Potion
 								i(112039),	-- Recipe: Draenic Intellect Potion
 								i(112040),	-- Recipe: Draenic Strength Potion
-								un(1, i(120132)),	-- Recipe: Secrets of Draenor Alchemy
+								un(NEVER_IMPLEMENTED, i(120132)),	-- Recipe: Secrets of Draenor Alchemy
 								i(118700, {	-- Secret of Draenor Alchemy
 									i(112023),	-- Recipe: Draenic Philosopher's Stone
 									i(112045),	-- Recipe: Draenic Rejuvenation Potion
@@ -1605,7 +1605,7 @@ _.Zones =
 									}),
 								}),
 								i(108421, {	-- Plans: Blackrock Crucibles and Their Uses
-									["u"] = 1,
+									["u"] = NEVER_IMPLEMENTED,
 								}),
 								i(122550, {	-- Recipe: Powerful Steelforged Essence
 									["u"] = REMOVED_FROM_GAME,

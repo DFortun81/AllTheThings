@@ -22,7 +22,7 @@ _.Zones =
 							["isLimited"] = true,
 						}),
 						i(25846, {	-- Plans: Adamantite Rod
-							["u"] = 1,	-- Never Available
+							["u"] = NEVER_IMPLEMENTED,
 						}),
 					},
 				}),

@@ -143,7 +143,7 @@ profession(JEWELCRAFTING, {
 						},
 						{	-- Silver Rose Pendant
 							["recipeID"] = 25614--[[Silver Rose Pendant]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Pendant of the Agate Shield
 							["recipeID"] = 25610--[[Pendant of the Agate Shield]]

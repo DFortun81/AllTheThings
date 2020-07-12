@@ -1021,7 +1021,7 @@ _.Zones =
 					["sourceQuest"] = 27292,	-- Return to Krog
 				}),
 				q(27309, {	-- The Grimtotem Plot
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(11169, {	-- The Grimtotem Weapon
 					["u"] = 40,

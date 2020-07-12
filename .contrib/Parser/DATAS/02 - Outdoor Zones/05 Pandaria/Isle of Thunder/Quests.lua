@@ -650,7 +650,7 @@ _.Zones =
 					["provider"] = { "n", 67660 },	-- Archmage Aethas Sunreaver
 				}),
 				q(32534, {	-- The Skumblade Threat (NYI)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(32572, {	-- The Sleepless Legion (A)
 					["isDaily"] = true,

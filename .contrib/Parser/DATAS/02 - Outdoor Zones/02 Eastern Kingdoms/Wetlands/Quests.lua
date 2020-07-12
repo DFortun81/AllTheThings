@@ -149,7 +149,7 @@ _.Zones =
 					["provider"] = { "n", 41128 },	-- Dunlor Marblebeard
 				}),
 				q(26138, {	-- Ferilon Leafborn
-					["u"] = 1,	-- Never Available
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(25721, {	-- Fight the Flood
 					["sourceQuests"] = { 25770 },	-- Keg Run

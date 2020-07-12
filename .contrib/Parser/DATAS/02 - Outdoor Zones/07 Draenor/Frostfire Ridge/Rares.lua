@@ -332,7 +332,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 40.4, 12.6, 525 },
 					["g"] = {	
-						un(1, i(119409, {	-- Icebound Bloodmaul Spire
+						un(NEVER_IMPLEMENTED, i(119409, {	-- Icebound Bloodmaul Spire
 							["description"] = "There are reports that this drops from this rare. This rare is only lootable once, but it appears this may either not drop anymore, or you may only have the one chance per toon to loot it. Please let us know if you get this item to drop.",
 						})),
 					},

@@ -328,7 +328,7 @@ _.WorldEvents =
 			n(-319, {	-- Weapons
 				un(9, i(39769)),	-- Arcanite Ripper
 				un(9, i(90176)),	-- Flintlocke's Blasthammer
-				un(1, i(110591)),	-- Flintlocke's Blasthammer
+				un(NEVER_IMPLEMENTED, i(110591)),	-- Flintlocke's Blasthammer
 				un(9, i(44924)),	-- Sun-Lute of the Phoenix King
 			}),	
 			i(50379),	-- Battered Hilt (Alliance)

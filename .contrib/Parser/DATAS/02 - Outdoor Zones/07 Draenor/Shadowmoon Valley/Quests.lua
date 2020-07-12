@@ -204,7 +204,7 @@ _.Zones =
 					--["objectID"] = 230933,	-- Defense Pylon Central Control Console
 				}),
 				q(33267, {	-- [Deprecated}
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(34355, {	-- Dirty Rats
 					["sourceQuests"] = { 

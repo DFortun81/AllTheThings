@@ -922,7 +922,7 @@ _.Zones =
 					["sourceQuest"] = 2933,	-- Venom Bottles
 				}),
 				q(28752, {	-- Unstoppable Onslaught (REMOVED in Beta)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(535,   {	-- Valik
 					["u"] = 40,

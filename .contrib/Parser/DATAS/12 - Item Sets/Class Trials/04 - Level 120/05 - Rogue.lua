@@ -27,7 +27,7 @@ _.GearSets =
 						{	-- Lightdrinker Hood
 							["itemID"] = 170874,	-- Lightdrinker Hood
 						},
-						un(1, i(170705)),	-- Lightdrinker Choker
+						un(NEVER_IMPLEMENTED, i(170705)),	-- Lightdrinker Choker
 						{	-- Lightdrinker Shoulders
 							["itemID"] = 170876,	-- Lightdrinker Shoulders
 						},

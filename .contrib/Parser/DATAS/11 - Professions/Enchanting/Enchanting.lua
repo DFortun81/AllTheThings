@@ -56,7 +56,7 @@ profession(ENCHANTING, {
 							recipe(158907),	-- Breath of Critical Strike [Ring]
 							recipe(158908),	-- Breath of Haste [Ring]
 							recipe(158909),	-- Breath of Mastery
-							un(1, recipe(158910)),	-- Breath of Mastery
+							un(NEVER_IMPLEMENTED, recipe(158910)),	-- Breath of Mastery
 							recipe(158911),	-- Breath of Versatility
 							recipe(159236),	-- Mark of the Shattered Hand
 						},
@@ -109,7 +109,7 @@ profession(ENCHANTING, {
 					spell(175071),	-- Illusion: Frostbrand
 					spell(173719),	-- Illusion: Greater Spellpower
 					spell(173724),	-- Illusion: Hidden
-					un(1, spell(181870)),	-- Illusion: Holy Infusion
+					un(NEVER_IMPLEMENTED, spell(181870)),	-- Illusion: Holy Infusion
 					spell(175070),	-- Illusion: Jade Spirit
 					spell(173725),	-- Illusion: Landslide
 					spell(173726),	-- Illusion: Lifestealing
@@ -140,7 +140,7 @@ profession(ENCHANTING, {
 							recipe(158907),	-- Breath of Critical Strike [Ring]
 							recipe(158908),	-- Breath of Haste [Ring]
 							recipe(158909),	-- Breath of Mastery
-							un(1, recipe(158910)),	-- Breath of Mastery
+							un(NEVER_IMPLEMENTED, recipe(158910)),	-- Breath of Mastery
 							recipe(158911),	-- Breath of Versatility
 							recipe(159236),	-- Mark of the Shattered Hand
 						},
@@ -176,7 +176,7 @@ profession(ENCHANTING, {
 					}),
 				},
 			}),
-			un(1, i(120135)),	-- Recipe: Secrets of Draenor Enchanting
+			un(NEVER_IMPLEMENTED, i(120135)),	-- Recipe: Secrets of Draenor Enchanting
 		},
 	}),
 	n(-492, {	-- Illusions -- these should probably be moved to Craftable Items

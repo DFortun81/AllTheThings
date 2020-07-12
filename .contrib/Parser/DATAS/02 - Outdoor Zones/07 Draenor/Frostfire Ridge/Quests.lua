@@ -29,7 +29,7 @@ _.Zones =
 					["sourceQuest"] = 34364,	-- For the Horde!
 				}),
 				q(36079, {	-- A Hero's Welcome
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(33125, {	-- A Proper Parting
@@ -578,10 +578,10 @@ _.Zones =
 					},
 				}),
 				q(33380, {	-- REUSE - never used
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(33407, {	-- REUSE - never used
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(34216, {	-- Safe Passage
 					["provider"] = { "n", 72814 },	-- Cordana Felsong
@@ -713,7 +713,7 @@ _.Zones =
 					["sourceQuest"] = 33010,	-- The Iron Wolf
 				}),
 				q(35251, {	-- The Bounty of Bladespire	-- never implemented
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(33410, {	-- The Butcher of Bladespire
 					["provider"] = { "n", 75186 },	-- Thrall
@@ -836,7 +836,7 @@ _.Zones =
 					["provider"] = { "o", 231100 },	-- Icevine
 				}),
 				q(34734, {	-- The Loyalty of Olin Umberhide -- never implemented
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(34102, {	-- The Mark of Defiance
 					["coord"] = { 82.6, 69.8, 525 },

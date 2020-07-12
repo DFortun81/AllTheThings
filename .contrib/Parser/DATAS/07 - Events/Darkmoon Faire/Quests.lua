@@ -33,7 +33,7 @@ _.WorldEvents =
 				["f"] = 104,	-- Quest Items
 				["g"] = {
 					q(7906,  {	-- Darkmoon Cards - Beast (NYI?)
-						["u"] = 1,
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(7907,  {	-- Darkmoon Beast Deck
 						["repeatable"] = true,
@@ -351,7 +351,7 @@ _.WorldEvents =
 				},
 			}),
 			q(29468, {	-- Baby Needs Two Pair of Shoes
-				["u"] = 1,
+				["u"] = NEVER_IMPLEMENTED,
 				["requireSkill"] = BLACKSMITHING,
 			}),
 			q(29520, {	-- Banners, Banners Everywhere!

@@ -361,7 +361,7 @@ _.Zones =
 					},
 				}),
 				q(13524, {	-- Escape from Silverbrook (NYI - appears to be a duplicate)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(12453, {	-- Eyes Above
 					["coord"] = { 22.5, 62.8, 116 },

@@ -394,7 +394,7 @@ profession(JEWELCRAFTING, {
 						},
 						{	-- Arcanite Sword Pendant
 							["recipeID"] = 26918--[[Arcanite Sword Pendant]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						}
 					}
 				},
@@ -483,7 +483,7 @@ profession(JEWELCRAFTING, {
 						},
 						{	-- Blood Crown
 							["recipeID"] = 26920--[[Blood Crown]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						}
 					}
 				},
@@ -530,7 +530,7 @@ profession(JEWELCRAFTING, {
 						},
 						{	-- Primal Stone Statue
 							["recipeID"] = 32810--[[Primal Stone Statue]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Prismatic Black Diamond
 							["recipeID"] = 62941--[[Prismatic Black Diamond]]

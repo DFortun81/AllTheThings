@@ -932,7 +932,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26412, {	-- The Mosh'Ogg Bounty (NYI - dupe)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(26399, {	-- The Mosh'Ogg Bounty
 					["provider"] = { "n", 42814 },	-- Skeezy Whillzap

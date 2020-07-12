@@ -307,7 +307,7 @@ _.Zones =
 					["sourceQuest"] = 13596,	-- Twilight Plans
 				}),
 				q(26379, {	-- In Aid of the Refugees
-					["u"] = 1,	-- this one doesn't appear to have ever been added. If you get this version, please include how you got it
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(13885, {	-- In Defense of Darkshore
 					["provider"] = { "n", 34301 },	-- Kathrena Winterwisp

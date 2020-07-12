@@ -631,7 +631,7 @@ _.Zones =
 					["sourceQuest"] = 27276,	-- Together Again
 				}),
 				q(28601, {	-- Old Puttery
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(28124, {	-- On to the Bulwark
 					["provider"] = { "n", 47471 },	-- Pao'ka Swiftmountain
@@ -1052,7 +1052,7 @@ _.Zones =
 					["sourceQuest"] = 25871,	-- Save the Sentinel
 				}),
 				q(28143, {	-- To the Withering (didn't encounter this version in game)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 					["sourceQuest"] = 28140,	-- The Elder Crone
 				}),
 				q(28142, {	-- To the Withering

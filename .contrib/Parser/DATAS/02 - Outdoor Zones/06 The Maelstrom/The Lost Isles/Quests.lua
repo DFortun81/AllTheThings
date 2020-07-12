@@ -43,7 +43,7 @@ _.Zones =
 					["sourceQuests"] = { 25098 },	-- The Warchief Wants You
 				}),
 				q(25124, {	-- Brute Brutality
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 					["provider"] = { "n", 39199 },	-- Assistant Greely
 					["sourceQuests"] = { 25110 },	-- Kaja'Cola Gives you IDEAS!™
 				}),
@@ -123,7 +123,7 @@ _.Zones =
 					["sourceQuests"] = { 14239 },	-- Don't Go Into the Light!
 				}),
 				q(14474, {	-- Goblin Escape Pods (duplicate. NYI?)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(25207, {	-- Good-bye, Sweet Oil
 					["coord"] = { 51.4, 13.0, 174 },

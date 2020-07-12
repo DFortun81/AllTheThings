@@ -7,7 +7,7 @@ _.WorldDrops =
 		f(200, {	-- Recipes
 			un(REMOVED_FROM_GAME, i(49177)),	-- Tome of Cold Weather Flight
 			n(-180, {	-- Alchemy
-				un(1, i(112022)),	-- Recipe: Mighty Shadow Protection Potion
+				un(NEVER_IMPLEMENTED, i(112022)),	-- Recipe: Mighty Shadow Protection Potion
 			}),
 			n(-182, {	-- Enchanting
 				i(37341, {	-- Formula: Enchant Boots - Superior Agility

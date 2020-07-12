@@ -104,7 +104,7 @@ _.Zones =
 					["sourceQuest"] = 25685,	-- The First Step
 				}),
 				q(35499, {	-- Blow up towers
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(25716, {	-- Cultists at our Doorstep
 					["provider"] = { "n", 5385 },	-- Watcher Mahar Ba

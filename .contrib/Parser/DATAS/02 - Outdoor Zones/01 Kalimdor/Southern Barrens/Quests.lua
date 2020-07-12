@@ -773,7 +773,7 @@ _.Zones =
 					["sourceQuest"] = 25027,	-- You Flicked a Fine Vine to Leaf Me
 				}),
 				q(24568, {	-- To the Walls!
-					["u"] = 1,	-- Never Available — beta only
+					["u"] = NEVER_IMPLEMENTED,
 					["provider"] = { "n", 37717 },	-- Winnoa Pineforest
 				}),
 				q(25028, {	-- Trouble From the Ground Up
@@ -829,7 +829,7 @@ _.Zones =
 					["sourceQuest"] = 24601,	-- The Nightmare Scar
 				}),
 				q(25198, {	-- Winnoa Pineforest
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(25082, {	-- Working the Bugs Out
 					["provider"] = { "n", 39085 },	-- Logan Talonstrike

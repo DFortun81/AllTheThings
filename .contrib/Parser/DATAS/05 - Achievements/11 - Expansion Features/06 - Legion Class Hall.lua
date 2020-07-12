@@ -147,7 +147,7 @@ _.Achievements =
 					ach(10706),		-- Training the Troops (5)
 				}),
 				ach(11223), 		-- Legendary Research
-				un(1, ach(11339)),	-- Legion's Bane — Appears this was not introduced but still showing on WoWhead, flagging as NYI and leaving here to be safe
+				un(NEVER_IMPLEMENTED, ach(11339)),	-- Legion's Bane — Appears this was not introduced but still showing on WoWhead, flagging as NYI and leaving here to be safe
 				ach(11217, {		-- Many Many Missions, Handle It! (500)
 					ach(11216),		-- So Many Missions (100)
 					ach(11215),		-- Quite a Few Missions (50)

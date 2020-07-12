@@ -148,7 +148,7 @@ _.Zones =
 					},
 				}),
 				q(10925, {	-- Evil Draws Near (NYI - never left beta)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(10228, {	-- Ezekiel
 					["provider"] = { "n", 19417 },	-- Ramdor the Mad
@@ -336,10 +336,10 @@ _.Zones =
 					["u"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(1, i(25967)),	-- Eagle Crested Pauldrons
-						un(1, i(25968)),	-- Shalassi Sentry's Epaulets
-						un(1, i(25969)),	-- Rapscallion's Touch
-						un(1, i(25970)),	-- Shalassi Oracle's Sandals
+						un(NEVER_IMPLEMENTED, i(25967)),	-- Eagle Crested Pauldrons
+						un(NEVER_IMPLEMENTED, i(25968)),	-- Shalassi Sentry's Epaulets
+						un(NEVER_IMPLEMENTED, i(25969)),	-- Rapscallion's Touch
+						un(NEVER_IMPLEMENTED, i(25970)),	-- Shalassi Oracle's Sandals
 					},
 				}),
 				q(10926, {	-- Return to Sha'tari Base Camp
@@ -572,7 +572,7 @@ _.Zones =
 					--["sourceQuest"] = 10852,	-- Missing Friends
 				}),
 				q(10841, {	-- The Vengeful Harbinger
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(10869, {	-- Thin the Flock
 					["provider"] = { "n", 18713 },	-- Lieutenant Gravelhammer

@@ -23,7 +23,7 @@ _.GearSets =
 						{	-- Trailseeker Helm
 							["itemID"] = 170802,	-- Trailseeker Helm
 						},
-						un(1, i(170633)),	-- Trailseeker Choker
+						un(NEVER_IMPLEMENTED, i(170633)),	-- Trailseeker Choker
 						{	-- Trailseeker Spaulders
 							["itemID"] = 170804,	-- Trailseeker Spaulders
 						},

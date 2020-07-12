@@ -48,11 +48,11 @@ profession(ALCHEMY, {
 						},
 						{
 							["recipeID"] = 11452,--[[Restorative Potion]]
-							["u"] = 1,										
+							["u"] = NEVER_IMPLEMENTED,										
 						},
 						{
 							["recipeID"] = 17579,--[[Greater Holy Protection Potion]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					},
 				},

@@ -142,7 +142,7 @@ _.PetJournal =
 		p(201),				-- Plump Turkey
 		p(409),				-- Polly
 		p(2452),			-- Poro
-		un(1, p(2541)),		-- Proper Parrot
+		un(NEVER_IMPLEMENTED, p(2541)),		-- Proper Parrot
 		p(309),				-- Pterrordax Hatchling
 		p(1907),			-- Pygmy Owl
 		p(2835),			-- Ra'kim

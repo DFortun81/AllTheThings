@@ -14,7 +14,7 @@ _.GearSets =
 						{	-- Mountainsage Hood	*LA0207
 							["itemID"] = 170809,	-- Mountainsage Hood
 						},
-						un(1, i(170640)),	-- Mountainsage Medallion
+						un(NEVER_IMPLEMENTED, i(170640)),	-- Mountainsage Medallion
 						{	-- Mountainsage Shoulderpads	*LA0207
 							["itemID"] = 170812,	-- Mountainsage Shoulderpads
 						},

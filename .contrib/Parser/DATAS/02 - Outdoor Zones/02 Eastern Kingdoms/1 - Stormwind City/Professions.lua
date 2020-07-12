@@ -345,7 +345,7 @@ _.Zones =
 							["lvl"] = 60,
 							["g"] = {
 								recipe(19093),		-- Onyxia Scale Cloak
-								un(1, i(15769)), 	-- Pattern: Onyxia Scale Cloak
+								un(REMOVED_FROM_GAME, i(15769)), 	-- Pattern: Onyxia Scale Cloak
 							},
 						}),
 					}),

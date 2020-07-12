@@ -21,7 +21,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Titanium Rod	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic]
 							["recipeID"] = 55732--[[Titanium Rod]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 							["description"] = "These are the Titanium Rod plans. They were removed in Patch 5.0.4.",
 						},
 					},
@@ -327,12 +327,12 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Socket Bracer	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic]
 							["recipeID"] = 55628--[[Socket Bracer]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 							["description"] = "These are the Socket Bracer plans. They were removed in Patch 5.0.4.",
 						},
 						{	-- Socket Gloves	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic]
 							["recipeID"] = 55641--[[Socket Gloves]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 							["description"] = "These are the Socket Gloves plans. They were removed in Patch 5.0.4.",
 						},
 					},
@@ -424,7 +424,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Sure-Fire Shuriken	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic]
 							["recipeID"] = 55202--[[Sure-Fire Shuriken]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 							["description"] = "These are the Sure-Fire Shuriken plans. They were removed in Patch 5.0.4.",
 						},
 					}

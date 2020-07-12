@@ -3681,7 +3681,7 @@ _.Zones =
 							["races"] = { 25, 26 },
 						}),
 						i(91016, {	-- Reins of the Great Red Dragon Turtle
-							["u"] = 1,	-- Never Available
+							["u"] = NEVER_IMPLEMENTED,
 						}),
 					},
 				}),

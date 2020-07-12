@@ -31,7 +31,7 @@ _.PVP =
 			},
 			{	-- Reins of the Onyx War Hyena
 				["itemID"] = 166417,	-- Reins of the Onyx War Hyena
-				["u"] = 1,		-- Nobody obtained it since Season 2 start. Hopefully will be added later
+				["u"] = NEVER_IMPLEMENTED,		-- Nobody obtained it since Season 2 start. Hopefully will be added later
 			},
 			{	-- Vicious Saddle
 				["itemID"] = 103533,	-- Vicious Saddle

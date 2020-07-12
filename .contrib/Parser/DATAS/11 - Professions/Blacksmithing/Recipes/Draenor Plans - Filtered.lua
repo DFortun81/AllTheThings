@@ -18,7 +18,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Truesteel Ingot
 							["recipeID"] = 171718--[[Truesteel Ingot]],
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						}
 					}
 				},

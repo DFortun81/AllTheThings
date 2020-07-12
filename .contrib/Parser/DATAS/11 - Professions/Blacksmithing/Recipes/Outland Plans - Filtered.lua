@@ -427,7 +427,7 @@ profession(BLACKSMITHING, {
 						},
 						{	-- Felsteel Whisper Knives	[Recipe appears to be removed as of 8.0 but including here for posterity in case it's reintroduced or needed for Classic]
 							["recipeID"] = 34983,	-- Felsteel Whisper Knives
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 							["description"] = "These are the Felsteel Whisper Knives plans. They were removed in Patch 5.0.4.",
 						},
 					}

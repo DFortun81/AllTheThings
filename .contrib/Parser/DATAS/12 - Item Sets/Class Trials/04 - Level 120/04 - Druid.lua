@@ -14,10 +14,10 @@ _.GearSets =
 								i(170617), -- Springrain Spear	*LA0404Balance
 								i(170611), -- Springrain Stave	*LA0404Balance
 							}),
-							un(1, i(170625)),	-- Springrain Staff
+							un(NEVER_IMPLEMENTED, i(170625)),	-- Springrain Staff
 							i(170611),	-- Springrain Stave
 							i(170778),	-- Springrain Headpiece	*LA0404Balance
-							un(1, i(170612)),	-- Springrain Medallion
+							un(NEVER_IMPLEMENTED, i(170612)),	-- Springrain Medallion
 							i(170780),	-- Springrain Spaulders	*LA0404Balance
 							i(170624),	-- Springrain Cloak of Destruction	*LA0404Balance
 							i(170775),	-- Springrain Tunic	*LA0404Balance
@@ -38,11 +38,11 @@ _.GearSets =
 							}),
 							i(170617),	-- Springrain Spear	*LA0422Feral
 							i(170786),	-- Springrain Helm *LA0422Feral
-							un(1, i(170627)),	-- Springrain Choker
-							un(1, i(170606)),	-- Springrain Choker
-							un(1, i(170619)),	-- Springrain Necklace
+							un(NEVER_IMPLEMENTED, i(170627)),	-- Springrain Choker
+							un(NEVER_IMPLEMENTED, i(170606)),	-- Springrain Choker
+							un(NEVER_IMPLEMENTED, i(170619)),	-- Springrain Necklace
 							i(170888),	-- Springrain Pauldrons *LA0422Feral
-							un(1, i(170626)),	-- Springrain Cloak of Durability [NYI]
+							un(NEVER_IMPLEMENTED, i(170626)),	-- Springrain Cloak of Durability [NYI]
 							i(170605),	-- Springrain Cloak of Rage *LA0422Feral
 							i(170783),	-- Springrain Vest *LA0422Feral
 							i(170790),	-- Springrain Cuffs
@@ -50,14 +50,14 @@ _.GearSets =
 							i(170789),	-- Springrain Cord *LA0422Feral
 							i(170787),	-- Springrain Legguards *LA0422Feral
 							i(170784),	-- Springrain Footpads *LA0422Feral
-							un(1, i(170630)),	-- Springrain Band of Durability [NYI]
+							un(NEVER_IMPLEMENTED, i(170630)),	-- Springrain Band of Durability [NYI]
 							i(170609),	-- Springrain Band of Onslaught [NYI]
-							un(1, i(170614)),	-- Springrain Band of Wisdom *LA0422Feral
-							un(1, i(170628)),	-- Springrain Idol of Durability [NYI]
+							un(NEVER_IMPLEMENTED, i(170614)),	-- Springrain Band of Wisdom *LA0422Feral
+							un(NEVER_IMPLEMENTED, i(170628)),	-- Springrain Idol of Durability [NYI]
 							i(170607),	-- Springrain Idol of Rage *LA0422Feral
-							un(1, i(170629)),	-- Springrain Ring of Durability [NYI]
+							un(NEVER_IMPLEMENTED, i(170629)),	-- Springrain Ring of Durability [NYI]
 							i(170608),	-- Springrain Ring of Onslaught *LA0422Feral
-							un(1, i(170631)),	-- Springrain Stone of Durability [NYI]
+							un(NEVER_IMPLEMENTED, i(170631)),	-- Springrain Stone of Durability [NYI]
 							i(170610),	-- Springrain Stone of Rage *LA0422Feral
 						}),
 						n(-9927, {	-- Restoration

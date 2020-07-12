@@ -342,7 +342,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(28057),	-- Bonechewer Berserker's Vest
-						un(1, i(28054)),	-- Fleshripper's Bladed Chestplate
+						un(NEVER_IMPLEMENTED, i(28054)),	-- Fleshripper's Bladed Chestplate
 						i(28055),	-- Gilded Crimson Chestplate
 						i(28052),	-- Goldweave Tunic
 						i(28051),	-- Jerkin of the Untamed Spirit
@@ -497,7 +497,7 @@ _.Zones =
 					["sourceQuests"] = { 10123 },	-- Felspark Ravine
 				}),
 				q(10207, {	-- Forward Base: Reaver's Fall REUSE (NYI)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(10295, {  -- From the Abyss
 					["coord"] = { 61.8, 81.5, 100 },
@@ -753,7 +753,7 @@ _.Zones =
 					["description"] = "Only available during |cFFFFD700Arelion's Mistress|r.",
 				}),
 				q(10062, {	-- Looking to the Leadership (NYI from beta)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(10057, {	-- Looking to the Leadership
 					["coord"] = { 50.8, 60.3, 100 },
@@ -812,13 +812,13 @@ _.Zones =
 					},
 				}),
 				q(10125, {	-- Mission: Disrupt Communications (NYI)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(10401, {	-- Mission: End All, Be All (NYI)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(10149, {	-- Mission: End All, Be All (NYI)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(10146, {	-- Mission: Gateways Murketh and Shaadraz (A)
 					["coord"] = { 71.3, 62.7, 100 },
@@ -987,7 +987,7 @@ _.Zones =
 					},
 				}),
 				q(9734,  {	-- Return to the Marsh (NYI)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(10388, {	-- Return to Thrallmar
 					["races"] = HORDE_ONLY,
@@ -1150,10 +1150,10 @@ _.Zones =
 					["sourceQuest"] = 10792,	-- Zeth'Gor Must Burn!
 				}),
 				q(10386, {	-- The Fel Reaver Slayer (NYI)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(10387, {	-- The Fel Reaver Slayer (NYI)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(9420,  {  -- The Finest Down
 					["coord"] = { 23.9, 72.3, 100 },
@@ -1294,7 +1294,7 @@ _.Zones =
 					["sourceQuest"] = 10047,	-- The Path of Glory
 				}),
 				q(10061, {	-- The Unyielding (NYI, replaced by Unyielding Souls in beta)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(9405,  {	-- The Warchief's Mandate
 					["coord"] = { 55.0, 35.9, 100 },
@@ -1409,10 +1409,10 @@ _.Zones =
 					["sourceQuest"] = 10143,	-- Expedition Point
 				}),
 				q(10088, {	-- When This Mine's a-Rockin' (NYI?)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(10214, {	-- When This Mine's a-Rockin' (NYI?)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(10344, {	-- Wing Commander Gryphongar
 					["coord"] = { 78.4, 34.9, 100 },

@@ -20,7 +20,7 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 12083,--[[Stormcloth Headband]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					}
 				},
@@ -29,7 +29,7 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 12087,--[[Stormcloth Shoulders]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					}
 				},
@@ -54,7 +54,7 @@ profession(TAILORING, {
 						},
 						{
 							["recipeID"] = 7636,--[[Green Woolen Robe]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 44958,--[[Red Winter Clothes]]
@@ -66,7 +66,7 @@ profession(TAILORING, {
 						},
 						{
 							["recipeID"] = 12068,--[[Stormcloth Vest]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					}
 				},
@@ -81,7 +81,7 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 12063,--[[Stormcloth Gloves]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					}
 				},
@@ -90,7 +90,7 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 12062,--[[Stormcloth Pants]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 24092,--[[Bloodvine Leggings]]
@@ -103,7 +103,7 @@ profession(TAILORING, {
 					["g"] = {
 						{
 							["recipeID"] = 12090,--[[Stormcloth Boots]]
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{
 							["recipeID"] = 24093,--[[Bloodvine Boots]]
@@ -111,7 +111,7 @@ profession(TAILORING, {
 						},
 						{
 							["recipeID"] = 8778,	-- Boots of Darkness
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 					}
 				},

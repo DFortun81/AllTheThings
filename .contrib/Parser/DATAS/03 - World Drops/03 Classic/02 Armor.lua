@@ -18,13 +18,13 @@ _.WorldDrops =
 				i(13112),	-- Winged Helm
 			}),
 			f(51,   {	-- Neck
-				un(1, i(21793)),	-- Arcanite Sword Pendant
+				un(NEVER_IMPLEMENTED, i(21793)),	-- Arcanite Sword Pendant
 				i(12044),	-- Arctic Pendant
 				i(12028),	-- Basalt Necklace
 				i(12019),	-- Cerulean Talisman
 				i(5003),	-- Crystal Starfire Medallion
 				i(12043),	-- Desert Choker
-				un(1, i(5005)),	-- Emberspark Pendant
+				un(NEVER_IMPLEMENTED, i(5005)),	-- Emberspark Pendant
 				i(12040),	-- Forest Pendant
 				i(13088),	-- Gazlowe's Charm
 				i(5002),	-- Glowing Green Talisman

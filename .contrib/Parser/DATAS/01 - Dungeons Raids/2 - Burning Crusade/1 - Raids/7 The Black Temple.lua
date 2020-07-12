@@ -965,7 +965,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				{	-- Plans: Swiftsteel Shoulders
 					["itemID"] = 35532,	-- Plans: Swiftsteel Shoulders
 					["spellID"] = 0,	-- This is now available via 32737, need to delink the old plans from the recipe
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				},
 			}),
 			n(QUESTS, {

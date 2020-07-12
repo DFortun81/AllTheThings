@@ -291,7 +291,7 @@ _.Zones =
 					["sourceQuest"] = 9671,	-- Urgent Delivery
 				}),
 				q(9751,  {	-- The Bloodcurse Legacy (duplicate, never implemented?)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 					["provider"] = { "n", 17240 },	-- Admiral Odesyus
 					["coord"] = { 47.0, 70.2, 97 },
 					["races"] = ALLIANCE_ONLY,

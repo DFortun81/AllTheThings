@@ -40,15 +40,15 @@ _.GearSets =
 						},
 						{	-- Sunsoul Amulet
 							["itemID"] = 170685,	-- Sunsoul Amulet
-							["u"] = 1,	-- 
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Sunsoul Necklace
 							["itemID"] = 170668,	-- Sunsoul Necklace
-							["u"] = 1,	-- 
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Sunsoul Pendant
 							["itemID"] = 170679,	-- Sunsoul Pendant
-							["u"] = 1,	-- 
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Sunsoul Pauldrons
 							["itemID"] = 170836,	-- Sunsoul Pauldrons

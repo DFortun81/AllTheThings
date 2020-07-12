@@ -369,7 +369,7 @@ _.Achievements =
 					})),
 					ach(13037, {	-- Torcanata
 						["races"] = HORDE_ONLY,
-						["u"] = 1,	-- Never Implemented
+						["u"] = NEVER_IMPLEMENTED,
 					}),
 					ach(13517, {	-- Two Sides To Every Tale
 						i(168055),		-- Bloodflank Charger (mount)

@@ -106,7 +106,7 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Onyxia Scale Breastplate
 							["recipeID"] = 19106,
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Polar Tunic
 							["recipeID"] = 28219,
@@ -285,7 +285,7 @@ profession(LEATHERWORKING, {
 						},
 						{	-- Nightscape Cloak
 							["recipeID"] = 10550,
-							["u"] = 1,
+							["u"] = NEVER_IMPLEMENTED,
 						},
 						{	-- Shifting Cloak
 							["recipeID"] = 22928,

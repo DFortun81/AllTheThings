@@ -695,7 +695,7 @@ _.Zones =
 					},
 				}),
 				q(33923, {	-- Demons? In Auchindoun?
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(34092, {	-- Desperate Measures
 					["provider"] = { "n", 77799 },	-- Restalaan
@@ -766,7 +766,7 @@ _.Zones =
 					},
 				}),
 				q(33974, {	-- Dying Wish -- duplicate quest, different ID
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(33973, {	-- Dying Wish
 					["provider"] = { "n", 77031 },	-- Ahm
@@ -982,7 +982,7 @@ _.Zones =
 					["coord"] = { 36.1, 65.0, 535 },
 				}),
 				q(34691, {	-- Just the Beginning
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(34448, {	-- Kaelynara Sunchaser
 					["provider"] = { "n", 78513 },	-- Archmage Elandra
@@ -1154,7 +1154,7 @@ _.Zones =
 					},
 				}),
 				q(34677, {	-- NOT USED
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(35227, {	-- Ogre Diplomacy
 					["provider"] = { "n", 75392 },	-- Exarch Maladaar
@@ -1314,7 +1314,7 @@ _.Zones =
 					},
 				}),
 				q(34570, {	-- REUSE
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(36012, {	-- Reverse Piracy
 					["u"] = 40,

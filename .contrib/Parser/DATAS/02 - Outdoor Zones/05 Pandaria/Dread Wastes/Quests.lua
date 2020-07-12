@@ -342,7 +342,7 @@ _.Zones =
 					["sourceQuest"] = 31066,	-- A Cry From Darkness
 				}),
 				q(31679, {	-- Extending Our Coverage (NYI - duplicate)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(31465, {	-- Extracting Answers
 					["coord"] = { 56.2, 58.2, 422 },
@@ -396,7 +396,7 @@ _.Zones =
 					},
 				}),
 				q(31129, {	-- Fate of the Stormstouts (NYI - appears to be an used duplicate?)
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 					["coord"] = { 50.4, 12.0, 422 },
 					["provider"] = { "n", 62779 },	-- Chen Stormstout
 				}),
@@ -929,7 +929,7 @@ _.Zones =
 					["sourceQuest"] = 31006,	-- The Klaxxi Council
 				}),
 				q(31174, {	-- The Dread Vos (NYI - completes when you turn in "Amber is Life")
-					["u"] = 1,
+					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(31689, {	-- The Dreadsworn
 					["coord"] = { 55.0, 35.4, 422 },
