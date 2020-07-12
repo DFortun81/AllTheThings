@@ -10513,6 +10513,25 @@ function app:GetWindow(suffix, parent, onUpdate)
 	end
 	return window;
 end
+function app:BuildSearchResponse(groups, field, value)
+	if groups then
+		local t;
+		for i,group in ipairs(groups) do
+			local v = group[field];
+			if v and (v == value --[[or (field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)]]) then
+				if not t then t = {}; end
+				tinsert(t, CloneData(group));
+			elseif group.g then
+				local response = app:BuildSearchResponse(group.g, field, value);
+				if response then
+					if not t then t = {}; end
+					tinsert(t, setmetatable({g=response}, { __index = group }));
+				end
+			end
+		end
+		return t;
+	end
+end
 end)();
 
 
@@ -12340,6 +12359,20 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 					for i,group in ipairs(app.Categories.Professions) do
 						if group.requireSkill == tradeSkillID then
 							self.data = CloneData(group);
+							local requireSkill = self.data.requireSkill;
+							local response = app:BuildSearchResponse(app.Categories.Instances, "requireSkill", requireSkill);
+							if response then tinsert(self.data.g, {text=GROUP_FINDER,icon = "Interface\\LFGFRAME\\LFGIcon-ReturntoKarazhan",g=response}); end
+							response = app:BuildSearchResponse(app.Categories.Zones, "requireSkill", requireSkill);
+							if response then tinsert(self.data.g, {text=BUG_CATEGORY2,icon = "Interface/ICONS/INV_Misc_Map_01",g=response});  end
+							response = app:BuildSearchResponse(app.Categories.WorldDrops, "requireSkill", requireSkill);
+							if response then tinsert(self.data.g, {text=TRANSMOG_SOURCE_4,icon = "Interface/ICONS/INV_Misc_Map_01",g=response});  end
+							response = app:BuildSearchResponse(app.Categories.ExpansionFeatures, "requireSkill", requireSkill);
+							if response then tinsert(self.data.g, {text=GetCategoryInfo(15301),icon = "Interface\\ICONS\\Achievement_Battleground_TempleOfKotmogu_02_Green",g=response});  end
+							response = app:BuildSearchResponse(app.Categories.WorldEvents, "requireSkill", requireSkill)
+							if response then tinsert(self.data.g, app.CreateDifficulty(18, {icon = "Interface\\Icons\\inv_misc_celebrationcake_01",g=response}));  end
+							response = app:BuildSearchResponse(app.Categories.Craftables, "requireSkill", requireSkill);
+							if response then tinsert(self.data.g, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = "Interface\\ICONS\\ability_repair",g=response});  end
+							
 							self.data.indent = 0;
 							self.data.visible = true;
 							BuildGroups(self.data, self.data.g);
