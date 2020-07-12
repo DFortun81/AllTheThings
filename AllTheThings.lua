@@ -10516,16 +10516,31 @@ end
 function app:BuildSearchResponse(groups, field, value)
 	if groups then
 		local t;
-		for i,group in ipairs(groups) do
-			local v = group[field];
-			if v and (v == value --[[or (field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)]]) then
-				if not t then t = {}; end
-				tinsert(t, CloneData(group));
-			elseif group.g then
-				local response = app:BuildSearchResponse(group.g, field, value);
-				if response then
+		if type(field) == "function" then
+			for i,group in ipairs(groups) do
+				if field(group) then
 					if not t then t = {}; end
-					tinsert(t, setmetatable({g=response}, { __index = group }));
+					tinsert(t, CloneData(group));
+				elseif group.g then
+					local response = app:BuildSearchResponse(group.g, field, value);
+					if response then
+						if not t then t = {}; end
+						tinsert(t, setmetatable({g=response}, { __index = group }));
+					end
+				end
+			end
+		else
+			for i,group in ipairs(groups) do
+				local v = group[field];
+				if v and v == value then
+					if not t then t = {}; end
+					tinsert(t, CloneData(group));
+				elseif group.g then
+					local response = app:BuildSearchResponse(group.g, field, value);
+					if response then
+						if not t then t = {}; end
+						tinsert(t, setmetatable({g=response}, { __index = group }));
+					end
 				end
 			end
 		end
@@ -12370,7 +12385,11 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							if response then tinsert(self.data.g, {text=GetCategoryInfo(15301),icon = "Interface\\ICONS\\Achievement_Battleground_TempleOfKotmogu_02_Green",g=response});  end
 							response = app:BuildSearchResponse(app.Categories.WorldEvents, "requireSkill", requireSkill)
 							if response then tinsert(self.data.g, app.CreateDifficulty(18, {icon = "Interface\\Icons\\inv_misc_celebrationcake_01",g=response}));  end
-							response = app:BuildSearchResponse(app.Categories.Craftables, "requireSkill", requireSkill);
+							response = app:BuildSearchResponse(app.Categories.Craftables, function(o)
+								if (o.npcID and o.npcID < 0 and o.text == group.text) or (o.requireSkill and o.requireSkill == requireSkill) then
+									return true;
+								end
+							end);
 							if response then tinsert(self.data.g, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = "Interface\\ICONS\\ability_repair",g=response});  end
 							
 							self.data.indent = 0;
