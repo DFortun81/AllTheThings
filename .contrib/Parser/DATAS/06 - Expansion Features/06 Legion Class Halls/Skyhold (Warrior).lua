@@ -473,8 +473,9 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 42110,	-- To the Summit!
 					}),
 					q(43643, {	-- Secrets of the Axes
-						["description"] = "Every day, there is a chance that speaking to Master Smith Helgar will offer a dialogue option, \"Is there an axe the equal to Strom'kar?\", which will end with being offered the quest Secrets of the Axes. When this quest is active, it is active region-wide, and everyone will have access to it for that day.\n\nThis sends you to speak to High Overlord Saurfang at Krasus' Landing in Dalaran. When done, jump back up to Skyhold and speak again to Master Smith Helgar, who will send you to the Circle of Wills to duel Saurfang.",
+						["coord"] = { 41.0, 37.1, 695 },
 						["provider"] = { "n", 96586 },	-- Master Smith Helgar
+						["description"] = "Every day, there is a chance that speaking to Master Smith Helgar will offer a dialogue option, \"Is there an axe the equal to Strom'kar?\", which will end with being offered the quest Secrets of the Axes. When this quest is active, it is active region-wide, and everyone will have access to it for that day.\n\nThis sends you to speak to High Overlord Saurfang at Krasus' Landing in Dalaran. When done, jump back up to Skyhold and speak again to Master Smith Helgar, who will send you to the Circle of Wills to duel Saurfang.",
 						["g"] = {
 							i(139578, {	-- The Arcanite Bladebreaker
 								artifact(908),	-- Arms Warrior Hidden Artifact Skin
@@ -530,8 +531,19 @@ _.ExpansionFeatures =
 							i(139681),	-- Battlelord's Chest
 						},
 					}),
-					q(39192),	-- The Forge of Odyn
-					q(39530),	-- The Forgening
+					q(39192, {	-- The Forge of Odyn
+						["u"] = 40,
+						["coord"] = { 41.0, 37.1, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96586 },	-- Master Smith Helgar
+						["sourceQuest"] = 39530,	-- The Forgening
+					}),
+					q(39530, {	-- The Forgening
+						["u"] = 40,
+						["coord"] = { 58.3, 84.6, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 96469 },	-- Odyn
+					}),
 					q(42193, {	-- The Gjallarhorn
 						["coord"] = { 55.9, 84.4, 695 },
 						["classes"] = { WARRIOR },
@@ -539,7 +551,12 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 43750,	-- The Call of Battle
 					}),
 					q(40043),	-- The Hunter of Heroes
-					q(44222),	-- The Might of the Val'kyr
+					q(44222, {	-- The Might of the Val'kyr
+						["u"] = 40,
+						["coord"] = { 72.6, 30.8, 695 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 111774 },	-- Matilda Skoptidottir
+					}),
 					q(41105, {	-- The Sword of Kings
 						["coord"] = { 58.3, 84.6, 695 },
 						["classes"] = { WARRIOR },
